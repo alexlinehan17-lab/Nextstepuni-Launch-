@@ -75,3 +75,18 @@ interface ModuleProps {
 - Firebase config is in `firebase.ts`; hosting config in `firebase.json`
 - Tailwind theme customization (fonts, colors) is in `index.html` via CDN config, not a tailwind.config file
 - All module components use default exports for clean lazy-loading in `moduleRegistry.ts`
+
+## Working With This Codebase
+
+**Always build-check after changes.** There are no tests or linting — `npm run build` is the only verification. Run it after any non-trivial change.
+
+**Batch module awareness.** Changes to `ModuleLayout`, `ModuleShared`, the `ModuleTheme` type, or the module props interface can affect all 43 module files. Confirm the scope before editing.
+
+**Tailwind CDN constraint.** Class strings must be written as full literals — never dynamically constructed (e.g. `` `bg-${color}-500` `` won't work). This is why `moduleThemes.ts` spells out every class per color. Any new theme tokens must follow this pattern.
+
+**Creating a new module:**
+1. Create `components/NewModule.tsx` — import a theme from `moduleThemes`, define `SectionDefinition[]`, use `ModuleLayout` + `ModuleShared` primitives, `export default`
+2. Add a `lazy(() => import(...))` entry in `moduleRegistry.ts`
+3. Add course metadata in `courseData.ts` (id, category, title, subtitle, description, sectionsCount, tags)
+
+**Firestore security rules.** `request.resource.data` only exists for write operations. Never use it in `allow read` rules — it will silently fail all reads. Always split into separate `allow read` and `allow write` when write rules reference `request.resource.data`.
