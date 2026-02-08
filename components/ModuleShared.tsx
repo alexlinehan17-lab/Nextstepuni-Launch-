@@ -1,0 +1,121 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Flag } from 'lucide-react';
+import { ModuleTheme } from '../types';
+
+interface HighlightProps {
+  children?: React.ReactNode;
+  description: string;
+  theme: ModuleTheme;
+}
+
+export const Highlight = ({ children, description, theme }: HighlightProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <span className="relative inline-block mx-0.5">
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          setIsOpen(!isOpen);
+        }}
+        className={`relative inline-flex items-center px-2 py-0.5 font-bold ${theme.highlightBg} ${theme.highlightText} rounded-md cursor-help ${theme.highlightHover} transition-all duration-300 ${theme.highlightDecor} underline decoration-2 underline-offset-4`}
+      >
+        <span className="not-italic">{children}</span>
+      </button>
+      <AnimatePresence>
+        {isOpen && (
+          <>
+            <div className="fixed inset-0 z-[60]" onClick={() => setIsOpen(false)} />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 10, x: "-50%" }}
+              animate={{ opacity: 1, scale: 1, y: 0, x: "-50%" }}
+              exit={{ opacity: 0, scale: 0.9, y: 10, x: "-50%" }}
+              className="absolute z-[70] bottom-full left-1/2 mb-6 w-72 p-6 bg-stone-900/95 text-white text-xs rounded-2xl shadow-2xl pointer-events-auto leading-relaxed border border-white/10 backdrop-blur-xl whitespace-normal text-left"
+              style={{ transformOrigin: 'bottom center' }}
+            >
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[10px] border-t-stone-900/95"></div>
+              <p className={`font-sans font-bold ${theme.tooltipAccent} mb-2 uppercase tracking-[0.2em] text-[9px]`}>The Academic Insight</p>
+              <p className="text-stone-200 font-medium">{description}</p>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+    </span>
+  );
+};
+
+interface ReadingSectionProps {
+  title: string;
+  eyebrow: string;
+  icon: any;
+  children?: React.ReactNode;
+  theme: ModuleTheme;
+}
+
+export const ReadingSection = ({ title, eyebrow, icon: Icon, children, theme }: ReadingSectionProps) => (
+  <article className="animate-fade-in">
+    <header className="mb-12 text-left relative">
+      <div className="absolute -left-16 top-0 hidden xl:block">
+        <div className={`w-12 h-12 rounded-2xl bg-stone-900 flex items-center justify-center ${theme.readingIconColor} shadow-xl border border-white/10`}>
+          <Icon size={24} />
+        </div>
+      </div>
+      <span className={`inline-flex items-center gap-2 px-3 py-1 ${theme.readingEyebrowBg} ${theme.readingEyebrowText} text-[10px] font-semibold tracking-[0.2em] uppercase rounded-full mb-4`}>
+        {eyebrow}
+      </span>
+      <h2 className="font-serif text-3xl md:text-5xl leading-tight tracking-tight text-stone-900 font-semibold">
+        {title}
+      </h2>
+    </header>
+    <div className="prose prose-stone prose-lg max-w-none space-y-8 text-stone-600 leading-relaxed font-serif overflow-visible">
+      {children}
+    </div>
+  </article>
+);
+
+interface MicroCommitmentProps {
+  children?: React.ReactNode;
+  theme: ModuleTheme;
+}
+
+export const MicroCommitment = ({ children, theme }: MicroCommitmentProps) => (
+  <div className={`my-12 p-8 ${theme.microBg} border-2 border-dashed ${theme.microBorder} rounded-3xl`}>
+    <div className="flex items-start gap-5">
+      <div className={`w-11 h-11 rounded-xl ${theme.microIconBg} text-white flex items-center justify-center shrink-0 mt-1 shadow-lg ${theme.microIconShadow}`}>
+        <Flag size={20} />
+      </div>
+      <div>
+        <h4 className={`font-bold ${theme.microTitle} text-sm uppercase tracking-widest`}>Your Mission (Under 5 Mins)</h4>
+        <div className="text-stone-600 mt-2 font-medium leading-relaxed">
+          {children}
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+interface ActivityRingProps {
+  progress: number;
+  color?: string;
+}
+
+export const ActivityRing = ({ progress, color = "#f59e0b" }: ActivityRingProps) => {
+  const radius = 35;
+  const circumference = 2 * Math.PI * radius;
+  const offset = circumference - (progress / 100) * circumference;
+
+  return (
+    <div className="relative flex items-center justify-center w-24 h-24 mx-auto mb-4">
+      <svg className="w-full h-full -rotate-90 overflow-visible" viewBox="0 0 96 96">
+        <circle cx="48" cy="48" r={radius} stroke={color} strokeWidth="10" fill="transparent" className="opacity-10" />
+        <motion.circle cx="48" cy="48" r={radius} stroke={color} strokeWidth="10" fill="transparent" strokeDasharray={circumference} initial={{ strokeDashoffset: circumference }} animate={{ strokeDashoffset: offset }} transition={{ duration: 1.5, ease: "easeOut" }} strokeLinecap="round" style={{ filter: `drop-shadow(0 0 8px ${color}55)` }} />
+      </svg>
+    </div>
+  );
+};

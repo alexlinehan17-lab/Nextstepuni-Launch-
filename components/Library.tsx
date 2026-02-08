@@ -87,7 +87,7 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
     >
       {/* Category Pill */}
       <div className={`absolute top-6 left-6 z-20 px-3 py-1 rounded-full ${pillBgColor} border border-black/10 dark:border-white/10`}>
-        <p className={`text-[9px] font-black uppercase tracking-wider text-white`}>{categoryTitle}</p>
+        <p className={`text-[9px] font-semibold uppercase tracking-wider text-white`}>{categoryTitle}</p>
       </div>
 
       {/* Background Aura Glow */}
@@ -110,12 +110,12 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
             </MotionDiv>
             
             <div className="flex flex-col items-end">
-              <span className="font-mono text-[9px] font-black uppercase tracking-[0.4em] text-stone-400 dark:text-stone-500">Unit // 0{index + 1}</span>
+              <span className="font-mono text-[9px] font-semibold uppercase tracking-[0.2em] text-stone-400 dark:text-stone-500">Unit // 0{index + 1}</span>
               {isCompleted && <span className="text-[8px] font-bold text-emerald-500 uppercase tracking-widest mt-1">Validated</span>}
             </div>
           </div>
 
-          <h3 className="font-serif text-2xl md:text-3xl text-stone-900 dark:text-white mb-4 leading-tight font-bold italic tracking-tight">
+          <h3 className="font-serif text-2xl md:text-3xl text-stone-900 dark:text-white mb-4 leading-tight font-semibold tracking-tight">
             {course.title}
           </h3>
           
@@ -146,7 +146,7 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
           <div className="absolute inset-0 bg-stone-100/40 dark:bg-black/40 backdrop-blur-[2px] flex items-center justify-center z-20">
             <div className="bg-white/80 dark:bg-stone-900/80 px-4 py-2 rounded-full border border-white/20 shadow-xl flex items-center gap-2">
                <Lock size={12} className="text-stone-400" />
-               <span className="text-[10px] font-black uppercase tracking-widest text-stone-400">Locked</span>
+               <span className="text-[10px] font-semibold uppercase tracking-wider text-stone-400">Locked</span>
             </div>
           </div>
         )}
@@ -175,7 +175,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
       
       {/* Texture & Atmospheric Lighting */}
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-[-20%] left-[-10%] w-[70vw] h-[70vw] bg-blue-500/5 blur-[150px] rounded-full" />
+        <div className="absolute top-[-20%] left-[-10%] w-[70vw] h-[70vw] bg-[#DA7756]/[0.06] blur-[150px] rounded-full" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-emerald-500/5 blur-[120px] rounded-full" />
         <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:48px_48px] opacity-10"></div>
       </div>
@@ -189,7 +189,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
             <div className="h-10 w-px bg-stone-200/50 dark:bg-stone-700" />
             <div>
               <p className="font-mono text-[9px] font-bold text-stone-400 dark:text-stone-500 uppercase tracking-[0.5em] mb-1">Navigation Hub</p>
-              <h1 className="font-serif font-bold text-2xl tracking-tight text-stone-900 dark:text-white italic">{title}</h1>
+              <h1 className="font-serif font-semibold text-2xl tracking-tight text-stone-900 dark:text-white">{title}</h1>
             </div>
           </div>
           <div className="w-14 h-14 bg-stone-900 dark:bg-white rounded-2xl flex items-center justify-center text-white dark:text-black shadow-2xl rotate-3">
@@ -210,19 +210,19 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
             className="md:col-span-6 flex flex-col md:flex-row items-center justify-between p-8 rounded-[2rem] bg-stone-900 dark:bg-white/5 border border-white/10 mb-2 relative overflow-hidden"
           >
             <div className="relative z-10">
-              <h2 className="text-white font-serif text-3xl md:text-4xl font-bold italic tracking-tight">Mission Briefing</h2>
+              <h2 className="text-white font-serif text-3xl md:text-4xl font-semibold tracking-tight">Mission Briefing</h2>
               <p className="text-stone-400 dark:text-stone-500 font-mono text-[10px] uppercase tracking-[0.4em] mt-2">Select a unit to initialize protocol sequence</p>
             </div>
             <div className="mt-6 md:mt-0 flex items-center gap-6 relative z-10">
                <div className="flex flex-col items-end">
                   <span className="text-white text-xl font-bold">{overallProgress}%</span>
-                  <span className="text-stone-500 text-[9px] font-black uppercase tracking-widest">Category Progress</span>
+                  <span className="text-stone-500 text-[9px] font-semibold uppercase tracking-wider">Category Progress</span>
                </div>
-               <div className="w-12 h-12 rounded-full bg-blue-500/20 border border-blue-500/30 flex items-center justify-center text-blue-500">
+               <div className="w-12 h-12 rounded-full bg-[#DA7756]/20 border border-[#DA7756]/30 flex items-center justify-center text-[#DA7756]">
                   <Sparkles size={24} className="animate-pulse" />
                </div>
             </div>
-            <div className="absolute right-0 top-0 w-64 h-64 bg-blue-500/10 blur-[80px] -mr-32 -mt-32"></div>
+            <div className="absolute right-0 top-0 w-64 h-64 bg-[#DA7756]/10 blur-[80px] -mr-32 -mt-32"></div>
           </MotionDiv>
 
           {courses.map((course, idx) => {
@@ -257,7 +257,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
 
       <footer className="mt-24 py-16 border-t border-stone-200/50 dark:border-white/5 w-full text-center relative z-10">
         <div className="inline-flex items-center gap-6 px-12 py-5 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-full shadow-sm">
-          <Hash size={16} className="text-blue-500" />
+          <Hash size={16} className="text-[#DA7756]" />
           <p className="font-mono text-[10px] font-bold text-stone-400 dark:text-stone-500 uppercase tracking-[0.4em]">Protocol // V.4.2.0-Alpha</p>
         </div>
       </footer>

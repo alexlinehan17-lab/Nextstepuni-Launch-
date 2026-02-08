@@ -1,113 +1,19 @@
-
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  ArrowLeft, CheckCircle2, ArrowRight, 
-  Lock, Flag, HeartPulse, Calculator, Shield, Zap, Wrench, Brain, RotateCcw, HeartHandshake
+import {
+  HeartPulse, Calculator, Shield, Zap, Wrench, Brain, RotateCcw, HeartHandshake
 } from 'lucide-react';
+import { ModuleProgress } from '../types';
+import { orangeTheme } from '../moduleThemes';
+import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { ModuleLayout } from './ModuleLayout';
 
-type ModuleProgress = {
-  unlockedSection: number;
-};
-
-interface ProcrastinationModuleProps {
-  onBack: () => void;
-  progress: ModuleProgress;
-  onProgressUpdate: (progress: ModuleProgress) => void;
-}
-
-const Highlight = ({ children, description, color = "bg-orange-100/40", textColor = "text-orange-900", decorColor = "decoration-orange-400/40", hoverColor="hover:bg-orange-200/60" }: { children?: React.ReactNode, description: string, color?: string, textColor?: string, decorColor?: string, hoverColor?: string }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <span className="relative inline-block mx-0.5">
-      <button 
-        onClick={(e) => {
-          e.stopPropagation();
-          setIsOpen(!isOpen);
-        }}
-        className={`relative inline-flex items-center px-2 py-0.5 font-bold ${color} ${textColor} rounded-md cursor-help ${hoverColor} transition-all duration-300 ${decorColor} underline decoration-2 underline-offset-4`}
-      >
-        <span className="not-italic">{children}</span>
-      </button>
-      <AnimatePresence>
-        {isOpen && (
-          <>
-            <div className="fixed inset-0 z-[60]" onClick={() => setIsOpen(false)} />
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9, y: 10, x: "-50%" }}
-              animate={{ opacity: 1, scale: 1, y: 0, x: "-50%" }}
-              exit={{ opacity: 0, scale: 0.9, y: 10, x: "-50%" }}
-              className="absolute z-[70] bottom-full left-1/2 mb-6 w-72 p-6 bg-stone-900/95 text-white text-xs rounded-2xl shadow-2xl pointer-events-auto leading-relaxed border border-white/10 backdrop-blur-xl whitespace-normal text-left"
-              style={{ transformOrigin: 'bottom center' }}
-            >
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[10px] border-t-stone-900/95"></div>
-              <p className="font-sans font-bold text-orange-400 mb-2 uppercase tracking-[0.2em] text-[9px]">The Academic Insight</p>
-              <p className="text-stone-200 font-medium">{description}</p>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
-    </span>
-  );
-};
-
-const ReadingSection = ({ title, eyebrow, icon: Icon, children }: { title: string, eyebrow: string, icon: any, children: React.ReactNode }) => (
-  <article className="animate-fade-in">
-    <header className="mb-12 text-left relative">
-      <div className="absolute -left-16 top-0 hidden xl:block">
-        <div className="w-12 h-12 rounded-2xl bg-stone-900 flex items-center justify-center text-orange-400 shadow-xl border border-white/10">
-          <Icon size={24} />
-        </div>
-      </div>
-      <span className="inline-flex items-center gap-2 px-3 py-1 bg-orange-50 text-orange-600 text-[10px] font-black tracking-[0.4em] uppercase rounded-full mb-4">
-        {eyebrow}
-      </span>
-      <h2 className="font-serif text-4xl md:text-6xl leading-tight tracking-tighter text-stone-900 font-bold italic">
-        {title}
-      </h2>
-    </header>
-    <div className="prose prose-stone prose-lg max-w-none space-y-8 text-stone-600 leading-relaxed font-sans text-justify overflow-visible">
-      {children}
-    </div>
-  </article>
-);
-
-const MicroCommitment = ({ children }: { children: React.ReactNode }) => (
-  <div className="my-12 p-8 bg-orange-50/50 border-2 border-dashed border-orange-200 rounded-3xl">
-    <div className="flex items-start gap-5">
-      <div className="w-11 h-11 rounded-xl bg-orange-500 text-white flex items-center justify-center shrink-0 mt-1 shadow-lg shadow-orange-500/20">
-        <Flag size={20} />
-      </div>
-      <div>
-        <h4 className="font-bold text-orange-800 text-sm uppercase tracking-widest">Your Mission (Under 5 Mins)</h4>
-        <div className="text-stone-600 mt-2 font-medium leading-relaxed">
-          {children}
-        </div>
-      </div>
-    </div>
-  </div>
-);
-
-const ActivityRing = ({ progress, color = "#f97316" }: { progress: number, color?: string }) => {
-  const radius = 35;
-  const circumference = 2 * Math.PI * radius;
-  const offset = circumference - (progress / 100) * circumference;
-
-  return (
-    <div className="relative flex items-center justify-center w-24 h-24 mx-auto mb-4">
-      <svg className="w-full h-full -rotate-90 overflow-visible" viewBox="0 0 96 96">
-        <circle cx="48" cy="48" r={radius} stroke={color} strokeWidth="10" fill="transparent" className="opacity-10"/>
-        <motion.circle cx="48" cy="48" r={radius} stroke={color} strokeWidth="10" fill="transparent" strokeDasharray={circumference} initial={{ strokeDashoffset: circumference }} animate={{ strokeDashoffset: offset }} transition={{ duration: 1.5, ease: "easeOut" }} strokeLinecap="round" style={{ filter: `drop-shadow(0 0 8px ${color}55)` }}/>
-      </svg>
-    </div>
-  );
-};
+const theme = orangeTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 
@@ -121,14 +27,14 @@ const ProcrastinationEquation = () => {
             <input type="range" min="1" max="100" value={value} onChange={e => setter(parseInt(e.target.value))} className="w-full accent-orange-500" />
         </div>
     );
-    
+
     return(
         <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-bold text-stone-800 text-center italic">The Procrastination Equation</h4>
+            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Procrastination Equation</h4>
             <p className="text-center text-sm text-stone-500 mb-8">Adjust the sliders to see what drives your motivation.</p>
             <div className="p-6 bg-stone-900 rounded-2xl text-center mb-8">
                 <p className="text-sm text-stone-400">Your Motivation Score:</p>
-                <p className="text-5xl font-black text-white tracking-tighter"><motion.span initial={{}} animate={{}}>{Math.round(utility)}</motion.span></p>
+                <p className="text-5xl font-semibold text-white tracking-tighter"><motion.span initial={{}} animate={{}}>{Math.round(utility)}</motion.span></p>
             </div>
             <div className="grid grid-cols-2 gap-6">
                 <Slider name="E" value={vars.E} setter={v => setVars({...vars, E:v})} label="Expectancy (Belief)" />
@@ -149,12 +55,12 @@ const IfThenAutopilot = () => {
 
     return(
          <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-bold text-stone-800 text-center italic">The "If-Then" Autopilot</h4>
+            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The "If-Then" Autopilot</h4>
             <p className="text-center text-sm text-stone-500 mb-8">Pre-load a decision to bypass willpower. Click to create a plan.</p>
             <div className="flex justify-center">
                 <button onClick={createPlan} className="px-5 py-3 bg-orange-500 text-white font-bold rounded-lg text-sm">Create Plan</button>
             </div>
-            {plan && 
+            {plan &&
             <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6 p-4 bg-stone-900 rounded-xl text-white text-center font-mono text-sm">
                 Plan created: IF <span className="text-rose-400">{plan.if}</span>, THEN <span className="text-emerald-400">{plan.then}</span>
             </motion.div>}
@@ -175,10 +81,10 @@ const GuiltSpiral = () => {
         setGuilt(10);
         setAvoidance(10);
     }
-    
+
     return(
         <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-bold text-stone-800 text-center italic">The Guilt Spiral</h4>
+             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Guilt Spiral</h4>
              <p className="text-center text-sm text-stone-500 mb-8">"Tough love" doesn't work. It just adds more negative emotion to the fire.</p>
              <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
@@ -204,26 +110,28 @@ const CircuitBreaker = () => {
     const containsAction = reframe.toLowerCase().includes('i will');
     return(
          <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-bold text-stone-800 text-center italic">The Circuit Breaker</h4>
+            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Circuit Breaker</h4>
             <p className="text-center text-sm text-stone-500 mb-8">Rewrite this self-critical thought into a self-forgiving, action-oriented statement.</p>
             <p className="p-4 bg-rose-50 border border-rose-200 rounded-xl text-center font-mono text-rose-800 mb-4">"I'm so useless, I wasted the whole day."</p>
             <textarea value={reframe} onChange={e => setReframe(e.target.value)} placeholder="Your new script..." className="w-full h-24 p-4 bg-stone-50 border-2 border-stone-200 rounded-xl focus:outline-none focus:border-orange-400" />
             {(containsForgive || containsAction) &&
                 <div className="mt-4 grid grid-cols-2 gap-2 text-xs">
-                    <p className={containsForgive ? 'text-emerald-600 font-bold' : 'text-stone-400'}>✓ Contains Self-Forgiveness</p>
-                    <p className={containsAction ? 'text-emerald-600 font-bold' : 'text-stone-400'}>✓ Bridges to Action</p>
+                    <p className={containsForgive ? 'text-emerald-600 font-bold' : 'text-stone-400'}>Contains Self-Forgiveness</p>
+                    <p className={containsAction ? 'text-emerald-600 font-bold' : 'text-stone-400'}>Bridges to Action</p>
                 </div>
             }
         </div>
     );
 }
 
-
 // --- MODULE COMPONENT ---
-export const ProcrastinationModule: React.FC<ProcrastinationModuleProps> = ({ onBack, progress, onProgressUpdate }) => {
-  const [activeSection, setActiveSection] = useState(progress.unlockedSection);
-  const unlockedSection = progress.unlockedSection;
-  
+// NOTE: The original file was truncated at 272 lines (cut off mid-sidebar).
+// All extractable content sections have been preserved below. The sidebar/footer
+// code was in the truncated portion and is now handled by ModuleLayout.
+// Content for sections 0-7 was not present in the original file's return block
+// (the file cut off before the <main> content area), so section content is
+// reconstructed based on the section definitions and interactive components available.
+const ProcrastinationModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
     { id: 'real-reason', title: 'The Real Reason You Delay', eyebrow: '01 // Not Laziness', icon: HeartPulse },
     { id: 'amygdala-hijack', title: 'The Amygdala Hijack', eyebrow: '02 // Brain Battle', icon: Brain },
@@ -235,38 +143,76 @@ export const ProcrastinationModule: React.FC<ProcrastinationModuleProps> = ({ on
     { id: 'scaffolding-focus', title: 'Scaffolding Your Focus', eyebrow: '08 // The Toolkit', icon: Wrench },
   ];
 
-  useEffect(() => {
-    setActiveSection(progress.unlockedSection);
-  }, [progress.unlockedSection]);
-
-  const handleCompleteSection = () => {
-    if (activeSection === unlockedSection && unlockedSection < sections.length) {
-      onProgressUpdate({ unlockedSection: unlockedSection + 1 });
-    }
-    if (activeSection < sections.length - 1) {
-      setActiveSection(activeSection + 1);
-    } else {
-      onBack();
-    }
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const handleJumpToSection = (index: number) => {
-    if (index <= unlockedSection) {
-      setActiveSection(index);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  };
-
-  const handlePrev = () => {
-    if (activeSection > 0) {
-      setActiveSection(activeSection - 1);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  };
-
-  const progressPercentage = sections.length > 0 ? (unlockedSection / sections.length) * 100 : 0;
-
   return (
-    <div className="min-h-screen bg-[#FBFBF9] text-stone-900 font-sans flex flex-col md:flex-row overflow-x-hidden">
-      <aside className="w-full md:w-80 bg-white border-r border-stone-200 sticky top-0 md:h-screen z-40 p-8 flex flex-col">
+    <ModuleLayout
+      moduleNumber="02"
+      moduleTitle="Procrastination Protocol"
+      theme={theme}
+      sections={sections}
+      onBack={onBack}
+      progress={progress}
+      onProgressUpdate={onProgressUpdate}
+    >
+      {(activeSection) => (
+        <>
+          {activeSection === 0 && (
+            <ReadingSection title="The Real Reason You Delay." eyebrow="Step 1" icon={HeartPulse} theme={theme}>
+              <p>Procrastination is not laziness. It is an <Highlight description="An emotion-regulation strategy where the brain prioritizes short-term mood repair over long-term goals. You're not avoiding the task; you're avoiding the negative emotion the task triggers." theme={theme}>emotional regulation problem</Highlight>. When you look at a maths textbook and feel a wave of dread, your brain's primary goal shifts from "learn calculus" to "make this feeling go away." The easiest way to do that? Avoid the task entirely.</p>
+              <p>This is a critical reframe. You are not broken or lazy. Your brain is doing exactly what it's designed to do: protect you from perceived threats. The problem is that it has miscategorized a maths book as a threat. Understanding this is the first step to dismantling the cycle.</p>
+            </ReadingSection>
+          )}
+          {activeSection === 1 && (
+            <ReadingSection title="The Amygdala Hijack." eyebrow="Step 2" icon={Brain} theme={theme}>
+              <p>The neural mechanism behind procrastination is a battle between two brain regions. Your <Highlight description="The brain's threat-detection centre. It triggers the fight-or-flight response when it perceives danger, including the 'danger' of a difficult or boring task." theme={theme}>amygdala</Highlight> (the alarm system) fires a distress signal when it detects a threatening task. Your <Highlight description="The 'CEO' of the brain, responsible for planning, impulse control, and long-term decision-making. In adolescence, it is still developing, making it easier for the amygdala to 'win'." theme={theme}>Prefrontal Cortex (PFC)</Highlight> (the CEO) should override this, but in the adolescent brain, it's still under construction.</p>
+              <p>The result is an <Highlight description="When the emotional brain (amygdala) overwhelms the rational brain (PFC), hijacking your decision-making. This is why you 'know' you should study but still reach for your phone." theme={theme}>Amygdala Hijack</Highlight>. Your emotional brain overwhelms your rational brain. This is why "just try harder" is useless advice. You need strategies that work *with* your brain's architecture, not against it.</p>
+            </ReadingSection>
+          )}
+          {activeSection === 2 && (
+            <ReadingSection title="The Procrastination Equation." eyebrow="Step 3" icon={Calculator} theme={theme}>
+              <p>Psychologist Piers Steel formalized procrastination into a single equation: <Highlight description="Motivation = (Expectancy x Value) / (Impulsiveness x Delay). This formula shows that your motivation to do a task is determined by four variables you can consciously manipulate." theme={theme}>Motivation = (Expectancy x Value) / (Impulsiveness x Delay)</Highlight>. This gives you four levers to pull.</p>
+              <p>**Expectancy:** Your belief you can succeed. Low confidence = high procrastination. **Value:** How rewarding or meaningful the task feels. **Impulsiveness:** Your susceptibility to distractions. **Delay:** How far away the deadline is. A task that is boring, feels impossible, is easily interrupted, and has a distant deadline is a recipe for maximum procrastination.</p>
+              <ProcrastinationEquation />
+            </ReadingSection>
+          )}
+          {activeSection === 3 && (
+            <ReadingSection title="The Ego's Defence System." eyebrow="Step 4" icon={Shield} theme={theme}>
+              <p>Procrastination is also a <Highlight description="A psychological strategy to protect your self-image. By not trying, you can attribute failure to lack of effort rather than lack of ability, which is less threatening to your ego." theme={theme}>self-handicapping strategy</Highlight>. If you don't study and get a bad grade, you can tell yourself: "Well, I didn't really try." This protects your ego from the more terrifying conclusion: "I tried my best and I'm still not good enough."</p>
+              <p>This is a Faustian bargain. You trade long-term success for short-term psychological safety. Recognizing this pattern is crucial. The antidote is a <Highlight description="The belief that your abilities can be developed through effort. It decouples your performance from your identity, making failure a data point, not a verdict." theme={theme}>Growth Mindset</Highlight>, which makes failure safe by redefining it as a learning event, not a measure of your worth.</p>
+            </ReadingSection>
+          )}
+          {activeSection === 4 && (
+            <ReadingSection title="The Guilt Cycle." eyebrow="Step 5" icon={RotateCcw} theme={theme}>
+              <p>Most people respond to procrastination with self-criticism: "I'm so lazy. What's wrong with me?" This feels like accountability, but it's actually the worst thing you can do. Self-criticism generates <Highlight description="A negative emotional state that, ironically, fuels the very avoidance cycle it's trying to break. More guilt leads to more negative emotion, which leads to more avoidance." theme={theme}>guilt and shame</Highlight>, which are negative emotions. And what does your brain do with negative emotions? It tries to avoid them--by procrastinating more.</p>
+              <p>This creates a vicious downward spiral: Procrastinate &#8594; Feel Guilty &#8594; More Negative Emotion &#8594; Procrastinate More &#8594; Feel More Guilty. "Tough love" doesn't break this cycle; it accelerates it.</p>
+              <GuiltSpiral />
+            </ReadingSection>
+          )}
+          {activeSection === 5 && (
+            <ReadingSection title="The Forgiveness Protocol." eyebrow="Step 6" icon={HeartHandshake} theme={theme}>
+              <p>The scientifically-proven circuit breaker for the guilt spiral is <Highlight description="Research by Dr. Michael Wohl showed that students who forgave themselves for procrastinating on a first exam were LESS likely to procrastinate on the next one. Self-compassion reduces the negative emotion that fuels avoidance." theme={theme}>Self-Forgiveness</Highlight>. A landmark study by Dr. Michael Wohl found that students who forgave themselves for procrastinating on their first exam were significantly less likely to procrastinate on their second.</p>
+              <p>This isn't about letting yourself off the hook. It's about breaking the emotional chain reaction. The script is simple: "I procrastinated. That's a human thing to do. I forgive myself. Now, what is the smallest possible step I can take right now?"</p>
+              <CircuitBreaker />
+            </ReadingSection>
+          )}
+          {activeSection === 6 && (
+            <ReadingSection title="The 'If-Then' Protocol." eyebrow="Step 7" icon={Zap} theme={theme}>
+              <p>Willpower is a limited resource, especially for a developing brain. The most effective anti-procrastination strategy is one that bypasses willpower entirely: the <Highlight description="A pre-commitment strategy (also called Implementation Intentions) where you pre-load a decision: 'IF [trigger], THEN [action].' This automates the behavior, removing the need for an in-the-moment willpower battle." theme={theme}>"If-Then" Plan</Highlight>. By pre-loading a decision, you automate the response and remove the negotiation your brain is so good at losing.</p>
+              <p>The formula: **IF** [Trigger/Situation], **THEN** I will [Specific Action]. For example: "IF it is 4:30 PM, THEN I will open my Maths textbook to page 1 and do the first question." The key is to make the action tiny and specific. You're not committing to "study Maths for 2 hours." You're committing to opening a book.</p>
+              <IfThenAutopilot />
+            </ReadingSection>
+          )}
+          {activeSection === 7 && (
+            <ReadingSection title="Scaffolding Your Focus." eyebrow="Step 8" icon={Wrench} theme={theme}>
+              <p>Now you have the psychological tools. The final step is to scaffold your environment to make starting easy and staying focused automatic. This means using techniques like the <Highlight description="A time-management method where you work in focused 25-minute intervals ('Pomodoros') separated by 5-minute breaks. It makes tasks feel finite and manageable." theme={theme}>Pomodoro Technique</Highlight> to make tasks feel finite, and environmental design to remove distractions.</p>
+              <p>The ultimate goal is to build a system where starting is effortless and stopping requires effort. This is the opposite of your current default, where starting requires enormous effort and stopping (to check your phone) is effortless. Flip the script.</p>
+              <MicroCommitment theme={theme}>
+                <p>Right now, identify the ONE task you've been avoiding the most. Write down one "If-Then" plan for it. Make the action so small it feels almost silly. That's the point.</p>
+              </MicroCommitment>
+            </ReadingSection>
+          )}
+        </>
+      )}
+    </ModuleLayout>
+  );
+};
+export default ProcrastinationModule;

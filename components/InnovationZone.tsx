@@ -378,7 +378,7 @@ const AcademicJourneyGame: React.FC = () => {
 
         return (
              <MotionDiv initial={{opacity: 0}} animate={{opacity: 1}} className="text-center">
-                <h3 className="font-serif text-3xl font-bold italic text-purple-600 dark:text-purple-400 mb-4">{endScene.title}</h3>
+                <h3 className="font-serif text-3xl font-semibold text-purple-600 dark:text-purple-400 mb-4">{endScene.title}</h3>
                 <p className="text-stone-600 dark:text-stone-300 mb-8">{endScene.text}</p>
                 <h4 className="font-bold mb-4 text-stone-800 dark:text-white">Your Journey Log:</h4>
                 <div className="text-left space-y-4 max-h-96 overflow-y-auto p-4 bg-stone-100 dark:bg-white/5 rounded-xl border border-stone-200 dark:border-white/10 relative">
@@ -447,7 +447,7 @@ const AcademicJourneyGame: React.FC = () => {
             >
                 <div className="border-b border-stone-200 dark:border-white/10 pb-4 mb-6">
                     <p className="text-xs font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400">{currentScene.phase} - {currentScene.month}</p>
-                    <h3 className="font-serif text-3xl font-bold italic text-stone-900 dark:text-white">{currentScene.title}</h3>
+                    <h3 className="font-serif text-3xl font-semibold text-stone-900 dark:text-white">{currentScene.title}</h3>
                 </div>
 
                 <p className="text-stone-600 dark:text-stone-300 leading-relaxed mb-8">{currentScene.text}</p>
@@ -504,7 +504,7 @@ const ToolCard: React.FC<{title: string, description: string, icon: React.Elemen
 );
 
 
-export const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack }) => {
+const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack }) => {
     const [activeTool, setActiveTool] = useState<string | null>(null);
 
     const tools = [
@@ -527,7 +527,7 @@ export const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack }) => {
             <div className="h-10 w-px bg-stone-200/50 dark:bg-stone-700" />
             <div>
               <p className="font-mono text-[9px] font-bold text-stone-400 dark:text-stone-500 uppercase tracking-[0.5em] mb-1">Experimental Division</p>
-              <h1 className="font-serif font-bold text-2xl tracking-tight text-stone-900 dark:text-white italic">The Innovation Zone</h1>
+              <h1 className="font-serif font-semibold text-2xl tracking-tight text-stone-900 dark:text-white">The Innovation Zone</h1>
             </div>
           </div>
           <div className="w-14 h-14 bg-purple-500 dark:bg-purple-400 rounded-2xl flex items-center justify-center text-white shadow-2xl rotate-3">
@@ -546,7 +546,7 @@ export const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack }) => {
                     exit={{ opacity: 0 }}
                 >
                     <div className="text-center mb-12">
-                        <h2 className="font-serif text-5xl font-bold italic text-stone-900 dark:text-white">Experimental Tools</h2>
+                        <h2 className="font-serif text-5xl font-semibold text-stone-900 dark:text-white">Experimental Tools</h2>
                         <p className="max-w-xl mx-auto mt-4 text-stone-500 dark:text-stone-400">A collection of interactive simulations and utilities designed to help you master the key concepts from the Learning Lab.</p>
                     </div>
                     <div className="space-y-4">
@@ -580,3 +580,4 @@ export const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack }) => {
     </div>
   );
 };
+export default InnovationZone;

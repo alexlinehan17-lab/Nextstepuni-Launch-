@@ -80,10 +80,10 @@ const ActivityRing = ({
         />
       </svg>
       <div className="absolute flex flex-col items-center justify-center leading-none">
-        <span className="text-[14px] font-black text-stone-900 dark:text-white tracking-tighter">
+        <span className="text-[14px] font-semibold text-stone-900 dark:text-white tracking-tighter">
           {Math.round(progress)}
         </span>
-        <span className="text-[6px] font-black uppercase text-stone-400 dark:text-white/30 -mt-0.5">%</span>
+        <span className="text-[6px] font-semibold uppercase text-stone-400 dark:text-white/30 -mt-0.5">%</span>
       </div>
     </div>
   );
@@ -126,7 +126,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
       transition={{ duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }}
       onClick={onClick}
       onMouseMove={handleMouseMove}
-      className={`group relative overflow-hidden rounded-[2.5rem] bg-white/80 dark:bg-white/5 backdrop-blur-2xl border border-stone-200/50 dark:border-white/10 cursor-pointer transition-all duration-500 hover:border-blue-500/30 dark:hover:border-white/20 shadow-xl hover:shadow-2xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.3)] ${className}`}
+      className={`group relative overflow-hidden rounded-[2.5rem] bg-white/80 dark:bg-white/5 backdrop-blur-2xl border border-stone-200/50 dark:border-white/10 cursor-pointer transition-all duration-500 hover:border-[#DA7756]/30 dark:hover:border-white/20 shadow-xl hover:shadow-2xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.3)] ${className}`}
     >
       {/* Localized Glow Effect */}
       <MotionDiv
@@ -158,11 +158,11 @@ const BentoTile: React.FC<BentoTileProps> = ({
           </div>
           
           <div className="flex items-center gap-2 mb-2">
-            <p className="font-mono text-[10px] font-black uppercase tracking-[0.4em] text-stone-400 dark:text-white/40">
+            <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-400 dark:text-white/40">
               {subtitle}
             </p>
           </div>
-          <h3 className="font-serif text-2xl md:text-3xl text-stone-900 dark:text-white leading-tight font-bold italic tracking-tight">
+          <h3 className="font-serif text-2xl md:text-3xl text-stone-900 dark:text-white leading-tight font-semibold tracking-tight">
             {title}
           </h3>
         </div>
@@ -170,7 +170,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
         <div className="mt-8 flex items-center justify-between gap-6 pt-6 border-t border-stone-100 dark:border-white/5">
             <div className="flex flex-col">
               <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-stone-400 dark:text-white/40 mb-1">Initialization</span>
-              <span className="text-[9px] font-black uppercase tracking-[0.2em] text-stone-300 dark:text-white/10 group-hover:text-stone-900 dark:group-hover:text-white transition-colors duration-500">Protocol Secure</span>
+              <span className="text-[9px] font-semibold uppercase tracking-[0.2em] text-stone-300 dark:text-white/10 group-hover:text-stone-900 dark:group-hover:text-white transition-colors duration-500">Protocol Secure</span>
             </div>
             
             <div className="transition-all duration-500 transform group-hover:scale-110">
@@ -264,18 +264,18 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     : [];
 
   return (
-    <div className="min-h-screen bg-[#FDFCFB] dark:bg-stone-950 overflow-x-hidden relative flex flex-col items-center pt-16 md:pt-32 pb-32 transition-colors duration-500 selection:bg-blue-500/10 dark:selection:bg-blue-500/20">
+    <div className="min-h-screen bg-[#FDFCFB] dark:bg-stone-950 overflow-x-hidden relative flex flex-col items-center pt-16 md:pt-32 pb-32 transition-colors duration-500 selection:bg-[#DA7756]/10 dark:selection:bg-[#DA7756]/20">
 
        {/* Background elements */}
       <div className="fixed inset-0 z-0 pointer-events-none">
-        <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-br from-blue-500/5 to-transparent blur-[80px]" />
+        <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-br from-[#DA7756]/[0.06] to-transparent blur-[80px]" />
         <div className="absolute bottom-0 right-0 w-1/2 h-full bg-gradient-to-tl from-amber-500/5 to-transparent blur-[80px]" />
         <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:32px_32px] opacity-20 dark:opacity-50"></div>
       </div>
       
       <div className="relative z-10 w-full max-w-7xl px-6">
         <header className="text-center mb-16">
-          <h1 className="font-serif text-6xl md:text-8xl text-black dark:text-white tracking-tighter leading-none italic font-bold dark:drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+          <h1 className="font-serif text-5xl md:text-7xl text-black dark:text-white tracking-tighter leading-none font-semibold dark:drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
             Learning Lab
           </h1>
           <p className="max-w-2xl mx-auto mt-4 text-stone-500 dark:text-stone-400">
@@ -310,14 +310,14 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
         
         {/* Module Search */}
         <div className="mt-24">
-            <h2 className="text-center font-serif text-3xl font-bold italic mb-2 text-stone-800 dark:text-white">Module Cross-Reference</h2>
+            <h2 className="text-center font-serif text-3xl font-semibold mb-2 text-stone-800 dark:text-white">Module Cross-Reference</h2>
             <p className="text-center text-sm text-stone-500 dark:text-stone-400 mb-8 max-w-md mx-auto">Filter modules by up to two tags to find connections and build a deeper web of knowledge.</p>
             <div className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto mb-12">
                 {allTags.map(tag => (
                     <button 
                         key={tag}
                         onClick={() => handleTagClick(tag)}
-                        className={`px-3 py-1.5 text-xs font-bold rounded-full border-2 transition-all duration-300 ${selectedTags.includes(tag) ? 'bg-blue-500 text-white border-blue-500' : 'bg-white dark:bg-white/5 border-stone-200 dark:border-white/10 hover:border-blue-300 dark:hover:border-blue-500/50'}`}
+                        className={`px-3 py-1.5 text-xs font-bold rounded-full border-2 transition-all duration-300 ${selectedTags.includes(tag) ? 'bg-[#DA7756] text-white border-[#DA7756]' : 'bg-white dark:bg-white/5 border-stone-200 dark:border-white/10 hover:border-[#DA7756]/40 dark:hover:border-[#DA7756]/50'}`}
                     >
                         {tag}
                     </button>

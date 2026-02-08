@@ -27,18 +27,25 @@ Requires `GEMINI_API_KEY` set in `.env.local` for Google Gemini API integration.
 
 **Entry flow:** `index.html` → `index.tsx` → `App.tsx`
 
-**App.tsx** (~916 lines) is the central orchestrator. It manages:
+**App.tsx** (~310 lines) is the central orchestrator. It manages:
 - Authentication state via Firebase `onAuthStateChanged`
 - User progress persistence (Firestore `users/{uid}` and `progress/{uid}` collections)
 - Route-like navigation via local state (no router library — views switch based on state)
-- Lazy loading of all 43 educational modules via `React.lazy()`
+
+**Root-level modules:**
+- `moduleRegistry.ts` — Lazy-loads all 43 educational modules + InnovationZone via `React.lazy()` with default imports
+- `courseData.ts` — Course metadata definitions (titles, descriptions, categories, tags) and `categoryColorMap`
+- `moduleThemes.ts` — Per-color Tailwind theme objects (literal class strings required for CDN scanning)
+- `types.ts` — Shared types: `ModuleProgress`, `UserProgress`, `SectionDefinition`, `ModuleTheme`
 
 **Key components in `components/`:**
-- `Auth.tsx` — Login/registration modal with Firebase Auth. Has a dev bypass login button. Local admin account: username "admin", password "admin123".
+- `Auth.tsx` — Login/registration modal with Firebase Auth. Admin login uses Firebase Auth with the `admin@nextstep.app` account (password managed in Firebase Console, not in code).
 - `KnowledgeTree.tsx` — Main navigation hub showing categories with activity ring progress indicators
 - `Library.tsx` — Grid view of modules within a category using `BentoModuleTile` components
 - `AdminDashboard.tsx` — Admin-only analytics view
-- `*Module.tsx` (43 files) — Individual educational modules, each following the same props interface
+- `ModuleLayout.tsx` — Shared sidebar + content layout used by all educational modules
+- `ModuleShared.tsx` — Reusable UI primitives: `Highlight`, `ReadingSection`, `MicroCommitment`, `ActivityRing`
+- `*Module.tsx` (43 files) — Individual educational modules, each using `ModuleLayout` with default exports
 
 **Module component interface:**
 ```typescript
@@ -58,14 +65,13 @@ interface ModuleProps {
 - All components are functional with hooks; no class components
 - Styling: Tailwind utility classes with dark mode (`dark:` prefix), glass-morphism effects, custom gradients
 - Animations: Framer Motion wrappers (`MotionDiv`, `MotionButton` with `as any` cast)
-- Reusable patterns: `Highlight` (interactive tooltip), `ReadingSection` (content block), `ActivityRing` (SVG progress)
+- Reusable UI primitives in `ModuleShared.tsx`: `Highlight` (interactive tooltip), `ReadingSection` (content block), `MicroCommitment` (action prompt), `ActivityRing` (SVG progress)
 - All source files carry Apache-2.0 license headers
 - Constants use UPPER_SNAKE_CASE; components use PascalCase; handlers use `handle` prefix
 
 ## Notable Details
 
-- `nextstepuni-app/` subdirectory is a duplicate/mirror of the root project structure
-- `types.ts` exists at root but is empty — shared types are defined inline in `App.tsx`
-- User avatars generated via DiceBear API (`api.dicebear.com/7.x/adventurer/svg`)
+- User avatars generated via DiceBear API (`api.dicebear.com/9.x/notionists-neutral/svg`)
 - Firebase config is in `firebase.ts`; hosting config in `firebase.json`
 - Tailwind theme customization (fonts, colors) is in `index.html` via CDN config, not a tailwind.config file
+- All module components use default exports for clean lazy-loading in `moduleRegistry.ts`

@@ -5,7 +5,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { CourseData } from './Library';
-import { SessionUser } from './Auth';
+import { SessionUser, getAvatarUrl } from './Auth';
 import { GraduationCap } from 'lucide-react';
 import { CategoryType } from './KnowledgeTree';
 import { db } from '../firebase';
@@ -70,7 +70,7 @@ const StudentProgressCard: React.FC<{ user: SessionUser; userProgress: UserProgr
   return (
     <div className="bg-white dark:bg-stone-900/50 border border-stone-200/50 dark:border-white/10 rounded-2xl p-6 shadow-sm">
       <div className="flex items-center gap-4 border-b border-stone-200/50 dark:border-white/10 pb-4 mb-4">
-        <img src={`https://api.dicebear.com/7.x/adventurer/svg?seed=${user.avatar}`} alt="User Avatar" className="w-12 h-12 rounded-full bg-stone-200" />
+        <img src={getAvatarUrl(user.avatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-stone-200" />
         <div>
           <p className="font-bold text-stone-800 dark:text-white">{user.name}</p>
           <p className="text-xs text-stone-500">Overall Progress: {overallProgress.toFixed(0)}%</p>
@@ -146,7 +146,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses }) =>
         <div className="flex items-center gap-4 mb-8">
             <GraduationCap size={32} className="text-stone-700 dark:text-stone-300"/>
             <div>
-                 <h1 className="font-serif text-4xl font-bold text-stone-900 dark:text-white italic">Admin Dashboard</h1>
+                 <h1 className="font-serif text-3xl font-semibold text-stone-900 dark:text-white">Admin Dashboard</h1>
                  <p className="text-stone-500 dark:text-stone-400">Student Progress Overview</p>
             </div>
         </div>
