@@ -126,7 +126,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
       transition={{ duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }}
       onClick={onClick}
       onMouseMove={handleMouseMove}
-      className={`group relative overflow-hidden rounded-2xl bg-white/80 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 cursor-pointer transition-all duration-500 hover:border-indigo-500/30 dark:hover:border-white/20 shadow-xl hover:shadow-2xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.3)] ${className}`}
+      className={`group relative overflow-hidden rounded-2xl bg-white/80 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 cursor-pointer transition-all duration-500 hover:border-[#CC785C]/30 dark:hover:border-white/20 shadow-xl hover:shadow-2xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.3)] ${className}`}
     >
       {/* Localized Glow Effect */}
       <MotionDiv
@@ -266,12 +266,12 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     : [];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-zinc-950 overflow-x-hidden relative flex flex-col items-center pt-16 md:pt-32 pb-32 transition-colors duration-500 selection:bg-indigo-500/10 dark:selection:bg-indigo-500/20">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 overflow-x-hidden relative flex flex-col items-center pt-16 md:pt-32 pb-32 transition-colors duration-500 selection:bg-[#CC785C]/10 dark:selection:bg-[#CC785C]/20">
 
        {/* Ambient mesh background */}
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-[-20%] left-[-10%] w-[60vw] h-[60vw] rounded-full bg-indigo-500/[0.05] dark:bg-indigo-500/[0.03] blur-[120px]" />
-        <div className="absolute bottom-[-15%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-[#3b82f6]/[0.04] dark:bg-[#3b82f6]/[0.02] blur-[120px]" />
+        <div className="absolute top-[-20%] left-[-10%] w-[60vw] h-[60vw] rounded-full bg-[#CC785C]/[0.05] dark:bg-[#CC785C]/[0.03] blur-[120px]" />
+        <div className="absolute bottom-[-15%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-[#D4A27F]/[0.04] dark:bg-[#D4A27F]/[0.02] blur-[120px]" />
         <div className="absolute top-[30%] left-[60%] w-[30vw] h-[30vw] rounded-full bg-amber-500/[0.03] dark:bg-amber-500/[0.015] blur-[100px]" />
       </div>
 
@@ -319,7 +319,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                     <button 
                         key={tag}
                         onClick={() => handleTagClick(tag)}
-                        className={`px-3 py-1.5 text-xs font-bold rounded-full border-2 transition-all duration-300 ${selectedTags.includes(tag) ? 'bg-indigo-500 text-white border-indigo-500' : 'bg-white dark:bg-white/5 border-zinc-200 dark:border-white/10 hover:border-indigo-500/40 dark:hover:border-indigo-500/50'}`}
+                        className={`px-3 py-1.5 text-xs font-bold rounded-full border-2 transition-all duration-300 ${selectedTags.includes(tag) ? 'bg-[#CC785C] text-white border-[#CC785C]' : 'bg-white dark:bg-white/5 border-zinc-200 dark:border-white/10 hover:border-[#CC785C]/40 dark:hover:border-[#CC785C]/50'}`}
                     >
                         {tag}
                     </button>

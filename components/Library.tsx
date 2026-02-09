@@ -168,15 +168,15 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
   const unlockedIndex = courses.length; // For now, all modules in a category are unlocked by default
 
   return (
-    <div className="min-h-screen bg-white dark:bg-zinc-950 transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pt-32 pb-48">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pt-32 pb-48">
       
       {/* Ambient mesh background */}
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-[-20%] left-[-10%] w-[60vw] h-[60vw] rounded-full bg-indigo-500/[0.05] dark:bg-indigo-500/[0.03] blur-[120px]" />
-        <div className="absolute bottom-[-15%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-[#3b82f6]/[0.04] dark:bg-[#3b82f6]/[0.02] blur-[120px]" />
+        <div className="absolute top-[-20%] left-[-10%] w-[60vw] h-[60vw] rounded-full bg-[#CC785C]/[0.05] dark:bg-[#CC785C]/[0.03] blur-[120px]" />
+        <div className="absolute bottom-[-15%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-[#D4A27F]/[0.04] dark:bg-[#D4A27F]/[0.02] blur-[120px]" />
       </div>
 
-      <header className="fixed top-0 left-0 right-0 z-[60] bg-white/60 dark:bg-zinc-950/60 backdrop-blur-2xl border-b border-zinc-200/50 dark:border-white/5 px-10 py-6">
+      <header className="fixed top-0 left-0 right-0 z-[60] bg-[#FAFAF7]/60 dark:bg-zinc-950/60 backdrop-blur-2xl border-b border-zinc-200/50 dark:border-white/5 px-10 py-6">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-8">
             <button onClick={onBack} className="tactile-button p-3 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 transition-all hover:scale-105 active:scale-95">
@@ -214,11 +214,11 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
                   <span className="text-white text-xl font-bold">{overallProgress}%</span>
                   <span className="text-zinc-500 text-[9px] font-semibold uppercase tracking-wider">Category Progress</span>
                </div>
-               <div className="w-12 h-12 rounded-full bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-500">
+               <div className="w-12 h-12 rounded-full bg-[#CC785C]/20 border border-[#CC785C]/30 flex items-center justify-center text-[#CC785C]">
                   <Sparkles size={24} className="animate-pulse" />
                </div>
             </div>
-            <div className="absolute right-0 top-0 w-64 h-64 bg-indigo-500/10 blur-[80px] -mr-32 -mt-32"></div>
+            <div className="absolute right-0 top-0 w-64 h-64 bg-[#CC785C]/10 blur-[80px] -mr-32 -mt-32"></div>
           </MotionDiv>
 
           {courses.map((course, idx) => {
@@ -253,7 +253,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
 
       <footer className="mt-24 py-16 border-t border-zinc-200/50 dark:border-white/5 w-full text-center relative z-10">
         <div className="inline-flex items-center gap-6 px-12 py-5 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-full shadow-sm">
-          <Hash size={16} className="text-indigo-500" />
+          <Hash size={16} className="text-[#CC785C]" />
           <p className="font-mono text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.2em]">NextStepUni Learning Lab</p>
         </div>
       </footer>

@@ -207,15 +207,15 @@ const App: React.FC = () => {
         <div className="flex flex-col items-center justify-center min-h-screen text-center p-8 relative overflow-hidden">
           {/* Warm ambient background */}
           <div className="fixed inset-0 z-0 pointer-events-none">
-            <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-gradient-to-br from-indigo-500/[0.07] to-transparent rounded-full blur-[100px]" />
+            <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-gradient-to-br from-[#CC785C]/[0.07] to-transparent rounded-full blur-[100px]" />
             <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-gradient-to-tl from-amber-500/[0.05] to-transparent rounded-full blur-[100px]" />
-            <div className="absolute top-[40%] left-[50%] -translate-x-1/2 w-[40%] h-[30%] bg-gradient-to-b from-purple-500/[0.03] to-transparent rounded-full blur-[80px]" />
+            <div className="absolute top-[40%] left-[50%] -translate-x-1/2 w-[40%] h-[30%] bg-gradient-to-b from-[#D4A27F]/[0.03] to-transparent rounded-full blur-[80px]" />
           </div>
 
           <img src="/pwc-logo.png" alt="PwC" className="absolute top-8 left-8 h-24 md:h-32 object-contain z-10" />
 
           <div className="relative z-10 flex flex-col items-center">
-            <p className="text-xs font-semibold uppercase tracking-wider text-indigo-500/70 mb-6">The Learning Lab</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-[#CC785C]/70 mb-6">The Learning Lab</p>
             <h1 className="font-serif text-5xl md:text-7xl text-black dark:text-white tracking-tighter leading-none font-semibold">
               Nextstepuni
             </h1>
@@ -292,7 +292,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-zinc-950 transition-colors duration-500">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
       <div className="fixed top-6 right-6 z-[100]">
         {user ? (
           <UserProfile user={user} onLogout={handleLogout} darkMode={darkMode} setDarkMode={setDarkMode} />

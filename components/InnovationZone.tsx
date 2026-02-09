@@ -613,9 +613,9 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack }) => {
     const currentTool = tools.find(t => t.id === activeTool);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-zinc-950 transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pt-32 pb-24">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pt-32 pb-24">
 
-      <header className="fixed top-0 left-0 right-0 z-[60] bg-white/60 dark:bg-zinc-950/60 backdrop-blur-2xl border-b border-zinc-200/50 dark:border-white/5 px-10 py-6">
+      <header className="fixed top-0 left-0 right-0 z-[60] bg-[#FAFAF7]/60 dark:bg-zinc-950/60 backdrop-blur-2xl border-b border-zinc-200/50 dark:border-white/5 px-10 py-6">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-8">
             <MotionButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={onBack} className="tactile-button p-3 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 transition-all">

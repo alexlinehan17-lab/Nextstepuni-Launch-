@@ -68,7 +68,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   const progressPercentage = sections.length > 0 ? (unlockedSection / sections.length) * 100 : 0;
 
   return (
-    <div className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-white font-sans flex flex-col md:flex-row overflow-x-hidden transition-colors duration-500">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-white font-sans flex flex-col md:flex-row overflow-x-hidden transition-colors duration-500">
       <aside className="w-full md:w-80 bg-zinc-50 dark:bg-zinc-900 border-r border-zinc-200/60 dark:border-white/10 sticky top-0 md:h-screen z-40 p-8 flex flex-col">
         <div className="flex items-center gap-4 mb-12">
           <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={onBack} className="p-2 rounded-full transition-all border border-zinc-200/50 dark:border-white/10 shadow-sm bg-white dark:bg-zinc-800">
@@ -116,8 +116,8 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
 
       <main className="flex-grow flex flex-col items-center py-10 md:py-24 px-6 md:px-16 overflow-y-auto h-screen relative">
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute top-[-10%] right-[-15%] w-[50vw] h-[50vw] rounded-full bg-indigo-500/[0.03] dark:bg-indigo-500/[0.015] blur-[100px]" />
-          <div className="absolute bottom-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-[#3b82f6]/[0.03] dark:bg-[#3b82f6]/[0.015] blur-[100px]" />
+          <div className="absolute top-[-10%] right-[-15%] w-[50vw] h-[50vw] rounded-full bg-[#CC785C]/[0.03] dark:bg-[#CC785C]/[0.015] blur-[100px]" />
+          <div className="absolute bottom-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-[#D4A27F]/[0.03] dark:bg-[#D4A27F]/[0.015] blur-[100px]" />
         </div>
         <div className="w-full max-w-4xl relative z-10">
           <AnimatePresence mode="wait">
