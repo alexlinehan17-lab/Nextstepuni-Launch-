@@ -27,12 +27,12 @@ const AttributionSorter = () => {
     const [choice, setChoice] = useState<{ [key: string]: boolean }>({});
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Control Panel</h4>
-            <p className="text-center text-sm text-stone-500 mb-8">Scenario: You fail a test. Which of these reasons are actually within your control?</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Control Panel</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Scenario: You fail a test. Which of these reasons are actually within your control?</p>
             <div className="space-y-3">
                 {reasons.map(reason => (
-                    <button key={reason.text} onClick={() => setChoice({...choice, [reason.text]: !choice[reason.text]})} className={`w-full p-4 rounded-xl border-2 text-left font-bold text-sm transition-all ${choice[reason.text] ? (reason.control ? 'bg-emerald-50 border-emerald-300' : 'bg-rose-50 border-rose-300') : 'bg-stone-50 border-stone-200 hover:bg-stone-100'}`}>
+                    <button key={reason.text} onClick={() => setChoice({...choice, [reason.text]: !choice[reason.text]})} className={`w-full p-4 rounded-xl border-2 text-left font-bold text-sm transition-all ${choice[reason.text] ? (reason.control ? 'bg-emerald-50 border-emerald-300' : 'bg-rose-50 border-rose-300') : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}>
                         {reason.text}
                         {choice[reason.text] && <span className={`ml-2 font-semibold text-xs ${reason.control ? 'text-emerald-600' : 'text-rose-600'}`}>{reason.control ? '(CONTROLLABLE)' : '(UNCONTROLLABLE)'}</span>}
                     </button>
@@ -60,9 +60,9 @@ const AttributionReframeDrill = () => {
   };
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-      <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Attribution Reframe Drill</h4>
-      <p className="text-center text-sm text-stone-500 mb-8">Click on a self-defeating thought to transform it into an empowering one.</p>
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Attribution Reframe Drill</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Click on a self-defeating thought to transform it into an empowering one.</p>
       <div className="space-y-4">
         {examples.map((ex) => (
           <motion.div
@@ -86,7 +86,7 @@ const AttributionReframeDrill = () => {
                 "{flipped.includes(ex.id) ? ex.adaptive : ex.maladaptive}"
               </motion.p>
             </AnimatePresence>
-             <div className="absolute bottom-2 right-3 text-stone-300 flex items-center gap-1 text-[9px] font-bold">
+             <div className="absolute bottom-2 right-3 text-zinc-300 flex items-center gap-1 text-[9px] font-bold">
               <RotateCcw size={10} />
               REFRAME
             </div>

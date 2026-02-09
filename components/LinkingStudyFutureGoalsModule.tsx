@@ -30,8 +30,8 @@ const MotivationCalculator = () => {
     );
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Motivation Calculator</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Motivation Calculator</h4>
             <div className="grid grid-cols-2 gap-6 items-center">
                 <div className="space-y-4">
                     <Slider label="Expectancy (Belief I can do it)" value={vars.E} setter={v => setVars({...vars, E:v})}/>
@@ -39,7 +39,7 @@ const MotivationCalculator = () => {
                     <Slider label="Cost (Stress, boredom, time)" value={vars.C} setter={v => setVars({...vars, C:v})}/>
                 </div>
                 <div className="text-center">
-                     <p className="text-sm text-stone-500">Your Motivation Score:</p>
+                     <p className="text-sm text-zinc-500 dark:text-zinc-400">Your Motivation Score:</p>
                      <p className="text-6xl font-semibold text-rose-500 tracking-tighter">{Math.round(motivation)}</p>
                 </div>
             </div>
@@ -52,13 +52,13 @@ const WOOPPlanner = () => {
     const update = (field: string, value: string) => setData(prev => ({...prev, [field]: value}));
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">My WOOP Blueprint</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">My WOOP Blueprint</h4>
             <div className="space-y-4 mt-6">
-                <input value={data.wish} onChange={e => update('wish', e.target.value)} placeholder="WISH: What do you want to achieve?" className="w-full p-3 bg-stone-50 rounded-lg"/>
-                <input value={data.outcome} onChange={e => update('outcome', e.target.value)} placeholder="OUTCOME: What's the best feeling if you do?" className="w-full p-3 bg-stone-50 rounded-lg"/>
-                <input value={data.obstacle} onChange={e => update('obstacle', e.target.value)} placeholder="OBSTACLE: What *inside you* holds you back?" className="w-full p-3 bg-stone-50 rounded-lg"/>
-                <input value={data.plan} onChange={e => update('plan', e.target.value)} placeholder="PLAN: If [obstacle], then I will..." className="w-full p-3 bg-stone-50 rounded-lg"/>
+                <input value={data.wish} onChange={e => update('wish', e.target.value)} placeholder="WISH: What do you want to achieve?" className="w-full p-3 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg"/>
+                <input value={data.outcome} onChange={e => update('outcome', e.target.value)} placeholder="OUTCOME: What's the best feeling if you do?" className="w-full p-3 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg"/>
+                <input value={data.obstacle} onChange={e => update('obstacle', e.target.value)} placeholder="OBSTACLE: What *inside you* holds you back?" className="w-full p-3 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg"/>
+                <input value={data.plan} onChange={e => update('plan', e.target.value)} placeholder="PLAN: If [obstacle], then I will..." className="w-full p-3 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg"/>
             </div>
         </div>
     );
@@ -75,20 +75,20 @@ const TransferableSkillsMatrix = () => {
     ];
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Transferable Skills Matrix</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Transferable Skills Matrix</h4>
             <div className="mt-6 flow-root">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-                        <table className="min-w-full divide-y divide-stone-200">
+                        <table className="min-w-full divide-y divide-zinc-200">
                             <thead>
                                 <tr>
-                                    <th className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-stone-900">LC Activity</th>
-                                    <th className="px-3 py-3.5 text-left text-sm font-semibold text-stone-900">Corporate/Life Skill</th>
-                                    <th className="px-3 py-3.5 text-left text-sm font-semibold text-stone-900">Career Application</th>
+                                    <th className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-zinc-900">LC Activity</th>
+                                    <th className="px-3 py-3.5 text-left text-sm font-semibold text-zinc-900">Corporate/Life Skill</th>
+                                    <th className="px-3 py-3.5 text-left text-sm font-semibold text-zinc-900">Career Application</th>
                                 </tr>
                             </thead>
-                            <tbody className="divide-y divide-stone-100">
+                            <tbody className="divide-y divide-zinc-100">
                                 {skills.map(item => (
                                     <tr key={item.activity} onMouseEnter={() => setActiveRow(item.activity)} onMouseLeave={() => setActiveRow(null)} className="hover:bg-rose-50 cursor-pointer">
                                         <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium">{item.activity}</td>

@@ -21,10 +21,10 @@ const theme = purpleTheme;
 const PinballSimulator = () => {
     const [mode, setMode] = useState<'focused' | 'diffuse'>('focused');
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Pinball Metaphor</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">Toggle between modes to see how your thoughts travel.</p>
-             <div className="w-full h-64 bg-stone-900 rounded-2xl p-4 relative overflow-hidden">
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Pinball Metaphor</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Toggle between modes to see how your thoughts travel.</p>
+             <div className="w-full h-64 bg-zinc-900 rounded-2xl p-4 relative overflow-hidden">
                 <AnimatePresence>
                     {mode === 'focused' && [...Array(25)].map((_, i) => <motion.div key={`f${i}`} initial={{opacity:0, scale:0}} animate={{opacity:1, scale:1}} exit={{opacity:0, scale:0}} className="absolute w-4 h-4 bg-purple-400 rounded-full" style={{top: `${10 + Math.random()*80}%`, left: `${10 + Math.random()*80}%`}} />)}
                     {mode === 'diffuse' && [...Array(8)].map((_, i) => <motion.div key={`d${i}`} initial={{opacity:0, scale:0}} animate={{opacity:1, scale:1}} exit={{opacity:0, scale:0}} className="absolute w-4 h-4 bg-purple-400 rounded-full" style={{top: `${10 + Math.random()*80}%`, left: `${10 + Math.random()*80}%`}} />)}
@@ -32,7 +32,7 @@ const PinballSimulator = () => {
              </div>
              <div className="flex justify-center gap-4 mt-6">
                 <button onClick={() => setMode('focused')} className="px-4 py-2 bg-purple-100 text-purple-800 rounded-lg">Focused Mode</button>
-                <button onClick={() => setMode('diffuse')} className="px-4 py-2 bg-stone-100 text-stone-800 rounded-lg">Diffuse Mode</button>
+                <button onClick={() => setMode('diffuse')} className="px-4 py-2 bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-white rounded-lg">Diffuse Mode</button>
              </div>
         </div>
     );

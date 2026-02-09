@@ -18,7 +18,7 @@ export const LoadingSpinner: React.FC = () => (
       animate={{ rotate: 360 }}
       transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
     >
-      <Loader size={36} className="text-stone-300 dark:text-stone-700" />
+      <Loader size={36} className="text-zinc-300 dark:text-zinc-700" />
     </MotionDiv>
   </div>
 );

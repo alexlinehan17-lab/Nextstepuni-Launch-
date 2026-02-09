@@ -21,9 +21,9 @@ const theme = yellowTheme;
 const ErrorSignalVisualizer = () => {
     const [mindset, setMindset] = useState<'fixed' | 'growth' | null>(null);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Brain on "Yet"</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">Scenario: You make a mistake on a Maths problem. Which brain is yours?</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Brain on "Yet"</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Scenario: You make a mistake on a Maths problem. Which brain is yours?</p>
              <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
                     <h5 className="font-bold mb-2">The "I Can't" Brain (Fixed)</h5>
@@ -32,7 +32,7 @@ const ErrorSignalVisualizer = () => {
                        <path d="M 40 40 C 45 40 48 30 52 30 S 57 40 60 40" stroke="#f43f5e" strokeWidth="1" fill="none" />
                        <text x="50" y="20" textAnchor="middle" fontSize="6" fill="#f43f5e">Small 'Pe' Wave</text>
                     </svg>
-                    <p className="text-xs text-stone-500 mt-2">The brain "looks away" from the error to protect the ego. No learning occurs.</p>
+                    <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-2">The brain "looks away" from the error to protect the ego. No learning occurs.</p>
                 </div>
                  <div className="text-center">
                     <h5 className="font-bold mb-2">The "I Can't... Yet" Brain (Growth)</h5>
@@ -41,7 +41,7 @@ const ErrorSignalVisualizer = () => {
                        <path d="M 40 40 C 45 40 48 5 52 5 S 57 40 60 40" stroke="#10b981" strokeWidth="3" fill="none" />
                        <text x="50" y="20" textAnchor="middle" fontSize="6" fill="#10b981">Large 'Pe' Wave</text>
                     </svg>
-                    <p className="text-xs text-stone-500 mt-2">The brain leans in, allocating massive attention to the error. Learning is triggered.</p>
+                    <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-2">The brain leans in, allocating massive attention to the error. Learning is triggered.</p>
                 </div>
              </div>
         </div>
@@ -53,22 +53,22 @@ const YetAudit = () => {
     const [action, setAction] = useState('');
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-stone-900 rounded-[3rem] border border-white/10 shadow-2xl text-white">
+        <div className="my-10 p-8 md:p-12 bg-zinc-900 rounded-2xl border border-white/10 shadow-2xl text-white">
             <h4 className="font-serif text-3xl font-semibold text-center mb-8">Your "Yet" Audit</h4>
             <div className="space-y-6 max-w-xl mx-auto">
                 <div>
                     <p className="text-xs font-bold uppercase tracking-widest text-yellow-400 mb-2">1. IDENTIFY THE BLOCK</p>
-                    <input value={block} onChange={e => setBlock(e.target.value)} placeholder="e.g., I can't write a good Irish essay" className="w-full bg-white/5 rounded-lg p-3 text-sm text-stone-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
+                    <input value={block} onChange={e => setBlock(e.target.value)} placeholder="e.g., I can't write a good Irish essay" className="w-full bg-white dark:bg-zinc-800/5 rounded-lg p-3 text-sm text-zinc-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
                 </div>
                 <div>
                     <p className="text-xs font-bold uppercase tracking-widest text-yellow-400 mb-2">2. ADD "YET"</p>
-                    <div className="p-3 bg-white/10 rounded-lg text-sm text-stone-300 min-h-[44px]">
+                    <div className="p-3 bg-white dark:bg-zinc-800/10 rounded-lg text-sm text-zinc-300 min-h-[44px]">
                         {block ? `I can't write a good Irish essay... yet.` : <span className="opacity-50">...</span>}
                     </div>
                 </div>
                 <div>
                     <p className="text-xs font-bold uppercase tracking-widest text-yellow-400 mb-2">3. BRIDGE TO ACTION</p>
-                    <input value={action} onChange={e => setAction(e.target.value)} placeholder="...so I will ask my teacher for one example tomorrow." className="w-full bg-white/5 rounded-lg p-3 text-sm text-stone-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
+                    <input value={action} onChange={e => setAction(e.target.value)} placeholder="...so I will ask my teacher for one example tomorrow." className="w-full bg-white dark:bg-zinc-800/5 rounded-lg p-3 text-sm text-zinc-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
                 </div>
             </div>
         </div>

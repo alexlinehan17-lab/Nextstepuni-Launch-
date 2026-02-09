@@ -28,6 +28,7 @@ export interface CourseData {
   gradient: string;
   accentColor: string;
   auraColor?: string;
+  pillBgColor: string;
 }
 
 type UserProgress = {
@@ -70,7 +71,7 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
     return "md:col-span-3 lg:col-span-2";
   };
   
-  const pillBgColor = course.accentColor.replace('text-', 'bg-');
+  const pillBgColor = course.pillBgColor;
 
 
   return (
@@ -80,7 +81,7 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: index * 0.05, ease: [0.16, 1, 0.3, 1] }}
       whileHover={isUnlocked ? { scale: 1.03 } : {}}
-      className={`group relative overflow-hidden rounded-[2rem] transition-all duration-500 ${getSpanClass(index)} 
+      className={`group relative overflow-hidden rounded-xl transition-all duration-500 ${getSpanClass(index)} 
         ${isUnlocked ? 'cursor-pointer hover:shadow-2xl' : 'cursor-not-allowed'}
       `}
       onClick={isUnlocked ? onClick : undefined}
@@ -91,50 +92,46 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
       </div>
 
       {/* Background Aura Glow */}
-      <div className={`absolute -inset-20 opacity-0 group-hover:opacity-20 transition-opacity duration-700 blur-[100px] pointer-events-none -z-10 ${course.accentColor.replace('text-', 'bg-')}`}></div>
+      <div className={`absolute -inset-20 opacity-0 group-hover:opacity-20 transition-opacity duration-700 blur-[100px] pointer-events-none -z-10 ${course.pillBgColor}`}></div>
 
       {/* Glass Surface */}
-      <div className="h-full w-full bg-white/40 dark:bg-white/5 backdrop-blur-3xl border border-stone-200/50 dark:border-white/10 p-8 pt-16 flex flex-col justify-between relative z-10 overflow-hidden">
-        
-        {/* Subtle Noise/Grain texture for depth */}
-        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] pointer-events-none"></div>
-
+      <div className="h-full w-full bg-white/40 dark:bg-white/5 backdrop-blur-3xl border border-zinc-200/50 dark:border-white/10 p-8 pt-16 flex flex-col justify-between relative z-10 overflow-hidden">
         <div>
           <div className="flex items-center justify-between mb-8">
             <MotionDiv 
               className={`w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-500 shadow-sm 
-                ${isCompleted ? 'bg-emerald-500 text-white' : isUnlocked ? 'bg-stone-900 dark:bg-white text-white dark:text-stone-900' : 'bg-stone-200 dark:bg-stone-800 text-stone-400'}`}
+                ${isCompleted ? 'bg-emerald-500 text-white' : isUnlocked ? 'bg-zinc-900 dark:bg-white text-white dark:text-zinc-900' : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-400'}`}
               whileHover={isUnlocked ? { x: 5, y: -2 } : {}}
             >
               {isCompleted ? <CheckCircle2 size={28} /> : !isUnlocked ? <Lock size={24} /> : <Icon size={28} strokeWidth={1.5} />}
             </MotionDiv>
             
             <div className="flex flex-col items-end">
-              <span className="font-mono text-[9px] font-semibold uppercase tracking-[0.2em] text-stone-400 dark:text-stone-500">Unit // 0{index + 1}</span>
-              {isCompleted && <span className="text-[8px] font-bold text-emerald-500 uppercase tracking-widest mt-1">Validated</span>}
+              <span className="font-mono text-[9px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Module {index + 1}</span>
+              {isCompleted && <span className="text-[8px] font-bold text-emerald-500 uppercase tracking-widest mt-1">Complete</span>}
             </div>
           </div>
 
-          <h3 className="font-serif text-2xl md:text-3xl text-stone-900 dark:text-white mb-4 leading-tight font-semibold tracking-tight">
+          <h3 className="font-serif text-2xl md:text-3xl text-zinc-900 dark:text-white mb-4 leading-tight font-semibold tracking-tight">
             {course.title}
           </h3>
           
-          <p className="text-stone-500 dark:text-stone-400 text-sm leading-relaxed font-medium line-clamp-3 mb-8">
+          <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed font-medium line-clamp-3 mb-8">
             {course.description}
           </p>
         </div>
 
-        <div className="flex items-center justify-between mt-auto pt-6 border-t border-stone-200/30 dark:border-white/5">
+        <div className="flex items-center justify-between mt-auto pt-6 border-t border-zinc-200/30 dark:border-white/5">
           <div className="flex gap-2">
             {course.tags.slice(0, 2).map(tag => (
-              <span key={tag} className="px-2.5 py-1 rounded-full bg-stone-100 dark:bg-white/5 text-stone-400 dark:text-stone-500 text-[9px] font-bold uppercase tracking-wider">
+              <span key={tag} className="px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-white/5 text-zinc-400 dark:text-zinc-500 text-[9px] font-bold uppercase tracking-wider">
                 {tag}
               </span>
             ))}
           </div>
           {isUnlocked && (
             <MotionDiv 
-              className="text-stone-900 dark:text-white"
+              className="text-zinc-900 dark:text-white"
               whileHover={{ x: 5 }}
             >
               <ChevronRight size={20} />
@@ -143,10 +140,10 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
         </div>
 
         {!isUnlocked && (
-          <div className="absolute inset-0 bg-stone-100/40 dark:bg-black/40 backdrop-blur-[2px] flex items-center justify-center z-20">
-            <div className="bg-white/80 dark:bg-stone-900/80 px-4 py-2 rounded-full border border-white/20 shadow-xl flex items-center gap-2">
-               <Lock size={12} className="text-stone-400" />
-               <span className="text-[10px] font-semibold uppercase tracking-wider text-stone-400">Locked</span>
+          <div className="absolute inset-0 bg-zinc-100/40 dark:bg-black/40 backdrop-blur-[2px] flex items-center justify-center z-20">
+            <div className="bg-white/80 dark:bg-zinc-900/80 px-4 py-2 rounded-full border border-white/20 shadow-xl flex items-center gap-2">
+               <Lock size={12} className="text-zinc-400" />
+               <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400">Locked</span>
             </div>
           </div>
         )}
@@ -171,28 +168,27 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
   const unlockedIndex = courses.length; // For now, all modules in a category are unlocked by default
 
   return (
-    <div className="min-h-screen bg-[#FDFCFB] dark:bg-[#0A0A0B] transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pt-32 pb-48">
+    <div className="min-h-screen bg-white dark:bg-zinc-950 transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pt-32 pb-48">
       
-      {/* Texture & Atmospheric Lighting */}
+      {/* Ambient mesh background */}
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-[-20%] left-[-10%] w-[70vw] h-[70vw] bg-[#DA7756]/[0.06] blur-[150px] rounded-full" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-emerald-500/5 blur-[120px] rounded-full" />
-        <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:48px_48px] opacity-10"></div>
+        <div className="absolute top-[-20%] left-[-10%] w-[60vw] h-[60vw] rounded-full bg-indigo-500/[0.05] dark:bg-indigo-500/[0.03] blur-[120px]" />
+        <div className="absolute bottom-[-15%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-[#3b82f6]/[0.04] dark:bg-[#3b82f6]/[0.02] blur-[120px]" />
       </div>
 
-      <header className="fixed top-0 left-0 right-0 z-[60] bg-white/60 dark:bg-[#0A0A0B]/60 backdrop-blur-2xl border-b border-stone-200/50 dark:border-white/5 px-10 py-6">
+      <header className="fixed top-0 left-0 right-0 z-[60] bg-white/60 dark:bg-zinc-950/60 backdrop-blur-2xl border-b border-zinc-200/50 dark:border-white/5 px-10 py-6">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-8">
-            <button onClick={onBack} className="tactile-button p-3 rounded-full bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 transition-all hover:scale-105 active:scale-95">
-              <ArrowLeft size={18} className="text-stone-900 dark:text-white" />
+            <button onClick={onBack} className="tactile-button p-3 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 transition-all hover:scale-105 active:scale-95">
+              <ArrowLeft size={18} className="text-zinc-900 dark:text-white" />
             </button>
-            <div className="h-10 w-px bg-stone-200/50 dark:bg-stone-700" />
+            <div className="h-10 w-px bg-zinc-200/50 dark:bg-zinc-700" />
             <div>
-              <p className="font-mono text-[9px] font-bold text-stone-400 dark:text-stone-500 uppercase tracking-[0.5em] mb-1">Navigation Hub</p>
-              <h1 className="font-serif font-semibold text-2xl tracking-tight text-stone-900 dark:text-white">{title}</h1>
+              <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">Category</p>
+              <h1 className="font-serif font-semibold text-2xl tracking-tight text-zinc-900 dark:text-white">{title}</h1>
             </div>
           </div>
-          <div className="w-14 h-14 bg-stone-900 dark:bg-white rounded-2xl flex items-center justify-center text-white dark:text-black shadow-2xl rotate-3">
+          <div className="w-14 h-14 bg-zinc-900 dark:bg-white rounded-2xl flex items-center justify-center text-white dark:text-black shadow-2xl rotate-3">
             <FlaskConical size={24} strokeWidth={1.5} />
           </div>
         </div>
@@ -207,22 +203,22 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
           <MotionDiv 
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="md:col-span-6 flex flex-col md:flex-row items-center justify-between p-8 rounded-[2rem] bg-stone-900 dark:bg-white/5 border border-white/10 mb-2 relative overflow-hidden"
+            className="md:col-span-6 flex flex-col md:flex-row items-center justify-between p-8 rounded-xl bg-zinc-900 dark:bg-white/5 border border-white/10 mb-2 relative overflow-hidden"
           >
             <div className="relative z-10">
-              <h2 className="text-white font-serif text-3xl md:text-4xl font-semibold tracking-tight">Mission Briefing</h2>
-              <p className="text-stone-400 dark:text-stone-500 font-mono text-[10px] uppercase tracking-[0.4em] mt-2">Select a unit to initialize protocol sequence</p>
+              <h2 className="text-white font-serif text-3xl md:text-4xl font-semibold tracking-tight">Overview</h2>
+              <p className="text-zinc-400 dark:text-zinc-500 font-mono text-[10px] uppercase tracking-[0.2em] mt-2">Choose a module to get started</p>
             </div>
             <div className="mt-6 md:mt-0 flex items-center gap-6 relative z-10">
                <div className="flex flex-col items-end">
                   <span className="text-white text-xl font-bold">{overallProgress}%</span>
-                  <span className="text-stone-500 text-[9px] font-semibold uppercase tracking-wider">Category Progress</span>
+                  <span className="text-zinc-500 text-[9px] font-semibold uppercase tracking-wider">Category Progress</span>
                </div>
-               <div className="w-12 h-12 rounded-full bg-[#DA7756]/20 border border-[#DA7756]/30 flex items-center justify-center text-[#DA7756]">
+               <div className="w-12 h-12 rounded-full bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-500">
                   <Sparkles size={24} className="animate-pulse" />
                </div>
             </div>
-            <div className="absolute right-0 top-0 w-64 h-64 bg-[#DA7756]/10 blur-[80px] -mr-32 -mt-32"></div>
+            <div className="absolute right-0 top-0 w-64 h-64 bg-indigo-500/10 blur-[80px] -mr-32 -mt-32"></div>
           </MotionDiv>
 
           {courses.map((course, idx) => {
@@ -245,20 +241,20 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
           <MotionDiv 
              initial={{ opacity: 0 }}
              whileInView={{ opacity: 1 }}
-             className="md:col-span-6 flex flex-col items-center justify-center py-20 mt-12 rounded-[2.5rem] border border-dashed border-stone-200 dark:border-white/10"
+             className="md:col-span-6 flex flex-col items-center justify-center py-20 mt-12 rounded-2xl border border-dashed border-zinc-200 dark:border-white/10"
           >
-             <div className="w-20 h-20 bg-stone-50 dark:bg-white/5 rounded-full flex items-center justify-center text-stone-300 dark:text-stone-700 mb-6">
+             <div className="w-20 h-20 bg-zinc-50 dark:bg-white/5 rounded-full flex items-center justify-center text-zinc-300 dark:text-zinc-700 mb-6">
                 <Hash size={32} strokeWidth={1} />
              </div>
-             <p className="font-mono text-[10px] font-bold uppercase tracking-[0.8em] text-stone-400 dark:text-stone-600 translate-x-[0.4em]">End of Transmission</p>
+             <p className="font-mono text-[10px] font-bold uppercase tracking-[0.3em] text-zinc-400 dark:text-zinc-600 translate-x-[0.15em]">End of Category</p>
           </MotionDiv>
         </div>
       </main>
 
-      <footer className="mt-24 py-16 border-t border-stone-200/50 dark:border-white/5 w-full text-center relative z-10">
-        <div className="inline-flex items-center gap-6 px-12 py-5 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-full shadow-sm">
-          <Hash size={16} className="text-[#DA7756]" />
-          <p className="font-mono text-[10px] font-bold text-stone-400 dark:text-stone-500 uppercase tracking-[0.4em]">Protocol // V.4.2.0-Alpha</p>
+      <footer className="mt-24 py-16 border-t border-zinc-200/50 dark:border-white/5 w-full text-center relative z-10">
+        <div className="inline-flex items-center gap-6 px-12 py-5 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-full shadow-sm">
+          <Hash size={16} className="text-indigo-500" />
+          <p className="font-mono text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.2em]">NextStepUni Learning Lab</p>
         </div>
       </footer>
     </div>

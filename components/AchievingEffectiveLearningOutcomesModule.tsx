@@ -23,24 +23,24 @@ const IllusionOfCompetenceChart = () => {
     const stttData = { prediction: 40, reality: 61 };
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Great Deception</h4>
-            <p className="text-center text-sm text-stone-500 mb-8">Data from Roediger & Karpicke (2006) reveals the gap between what *feels* effective and what *is* effective.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Great Deception</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Data from Roediger & Karpicke (2006) reveals the gap between what *feels* effective and what *is* effective.</p>
             <div className="grid grid-cols-2 gap-4 mb-8">
                 <div className="text-center">
                     <h5 className="font-bold mb-2">Passive Rereading (SSSS)</h5>
-                    <div className="h-48 w-full bg-stone-100 rounded-lg flex items-end">
+                    <div className="h-48 w-full bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-end">
                         <motion.div className="w-full bg-teal-400 rounded-t-lg" initial={{height:0}} animate={{height: `${view === 'prediction' ? ssssData.prediction : ssssData.reality}%`}} transition={{type: 'spring', stiffness: 100}}/>
                     </div>
                 </div>
                 <div className="text-center">
                      <h5 className="font-bold mb-2">Active Recall (STTT)</h5>
-                     <div className="h-48 w-full bg-stone-100 rounded-lg flex items-end">
+                     <div className="h-48 w-full bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-end">
                         <motion.div className="w-full bg-indigo-400 rounded-t-lg" initial={{height:0}} animate={{height: `${view === 'prediction' ? stttData.prediction : stttData.reality}%`}} transition={{type: 'spring', stiffness: 100}}/>
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center gap-2 p-1 bg-stone-100 rounded-full">
+            <div className="flex justify-center gap-2 p-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">
                 <button onClick={() => setView('prediction')} className={`px-4 py-2 text-xs font-bold rounded-full ${view === 'prediction' ? 'bg-white shadow' : ''}`}>Student Prediction (JOL)</button>
                 <button onClick={() => setView('reality')} className={`px-4 py-2 text-xs font-bold rounded-full ${view === 'reality' ? 'bg-white shadow' : ''}`}>Actual Test Results (1 Week Later)</button>
             </div>

@@ -21,14 +21,14 @@ const AttentionDeficitCalculator = () => {
     const timeLost = checks * 23.25;
     const deepWorkTime = 60 - timeLost;
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Attention Deficit Calculator</h4>
-             <p className="text-center text-sm text-stone-500 mb-6">Each phone check costs ~23 mins of focus. See the damage.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Attention Deficit Calculator</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Each phone check costs ~23 mins of focus. See the damage.</p>
              <div>
                 <label className="font-bold text-sm">Phone checks per hour: {checks}</label>
                 <input type="range" min="0" max="10" value={checks} onChange={e=>setChecks(parseInt(e.target.value))} className="w-full"/>
              </div>
-             <div className="mt-6 p-4 bg-stone-900 rounded-xl text-center text-white">
+             <div className="mt-6 p-4 bg-zinc-900 rounded-xl text-center text-white">
                 Deep Work Time Achieved: <span className={`font-bold text-2xl ${deepWorkTime > 0 ? 'text-emerald-400' : 'text-rose-400'}`}>{deepWorkTime.toFixed(1)} minutes</span>
              </div>
         </div>

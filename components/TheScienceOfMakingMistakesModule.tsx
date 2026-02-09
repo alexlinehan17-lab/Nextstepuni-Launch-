@@ -19,9 +19,9 @@ const theme = redTheme;
 const BrainSignalVisualizer = () => {
     const [active, setActive] = useState(false);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Brain's Two Signals</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">When you make a mistake, your brain sends two distinct signals in less than half a second.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Brain's Two Signals</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">When you make a mistake, your brain sends two distinct signals in less than half a second.</p>
              <div className="w-full max-w-lg mx-auto h-32 relative">
                 <svg viewBox="0 0 300 100" className="w-full h-full absolute inset-0">
                     <path d="M0 50 L 300 50" stroke="#e5e7eb" strokeWidth="1" />
@@ -35,16 +35,16 @@ const BrainSignalVisualizer = () => {
                 {active && <>
                     <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{delay:0.2}}} className="absolute top-0 left-[75px] -translate-x-1/2 text-center text-xs">
                         <p className="font-bold text-rose-600">ERN Signal</p>
-                        <p className="text-stone-500">The "Alarm"</p>
+                        <p className="text-zinc-500 dark:text-zinc-400">The "Alarm"</p>
                     </motion.div>
                     <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{delay:0.5}}} className="absolute bottom-0 left-[190px] -translate-x-1/2 text-center text-xs">
                         <p className="font-bold text-emerald-600">Pe Signal</p>
-                        <p className="text-stone-500">The "Analysis"</p>
+                        <p className="text-zinc-500 dark:text-zinc-400">The "Analysis"</p>
                     </motion.div>
                 </>}
              </div>
              <div className="text-center mt-8">
-                <button onClick={() => setActive(!active)} className="px-5 py-3 bg-stone-800 text-white font-bold rounded-lg text-sm">{active ? "Reset" : "Make a Mistake"}</button>
+                <button onClick={() => setActive(!active)} className="px-5 py-3 bg-zinc-800 text-white font-bold rounded-lg text-sm">{active ? "Reset" : "Make a Mistake"}</button>
              </div>
         </div>
     );

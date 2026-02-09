@@ -23,11 +23,11 @@ const MyelinWrapper = () => {
     const speed = 10 + (wraps * 9); // Speed from 10 to 100
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Myelin Wrapper</h4>
-            <p className="text-center text-sm text-stone-500 mb-8">Each time you practice a skill, you add a layer of myelin, making the signal faster.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Myelin Wrapper</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Each time you practice a skill, you add a layer of myelin, making the signal faster.</p>
             <div className="flex justify-center items-center h-24">
-                <div className="relative w-64 h-2 bg-stone-200 rounded-full">
+                <div className="relative w-64 h-2 bg-zinc-200 rounded-full">
                      <div className="absolute inset-0 flex items-center">
                         <motion.div
                             className="w-full h-2 bg-blue-300 rounded-full"
@@ -47,9 +47,9 @@ const MyelinWrapper = () => {
                 <button onClick={() => setWraps(w => Math.min(w + 1, maxWraps))} className="px-5 py-3 bg-amber-500 text-white font-bold rounded-lg shadow-lg hover:bg-amber-600 transition-colors text-sm">Practice Skill</button>
                 <div className="text-center">
                     <p className="font-mono text-2xl font-bold">{speed} <span className="text-sm">m/s</span></p>
-                    <p className="text-xs font-bold uppercase tracking-widest text-stone-400">Signal Speed</p>
+                    <p className="text-xs font-bold uppercase tracking-widest text-zinc-400">Signal Speed</p>
                 </div>
-                 <button onClick={() => setWraps(0)} className="text-xs text-stone-400">Reset</button>
+                 <button onClick={() => setWraps(0)} className="text-xs text-zinc-400">Reset</button>
              </div>
         </div>
     )
@@ -65,16 +65,16 @@ const DeepPracticeSorter = () => {
     const [choice, setChoice] = useState<{[key: string]: 'naive' | 'deep' | null}>({});
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Deep vs. Naive Practice</h4>
-            <p className="text-center text-sm text-stone-500 mb-8">Which of these activities trigger myelin growth?</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Deep vs. Naive Practice</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Which of these activities trigger myelin growth?</p>
             <div className="space-y-4">
                 {activities.map(act => (
-                    <div key={act.name} className="p-4 bg-stone-50 border border-stone-200 rounded-lg flex justify-between items-center">
+                    <div key={act.name} className="p-4 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-lg flex justify-between items-center">
                         <span className="font-bold text-sm">{act.name}</span>
                         <div className="flex gap-2">
-                           <button onClick={() => setChoice({...choice, [act.name]:'naive'})} className={`px-2 py-1 text-xs font-bold rounded ${choice[act.name] === 'naive' && act.type === 'naive' ? 'bg-emerald-200 text-emerald-800' : choice[act.name] === 'naive' && act.type === 'deep' ? 'bg-rose-200 text-rose-800' : 'bg-stone-200'}`}>Naive</button>
-                           <button onClick={() => setChoice({...choice, [act.name]:'deep'})} className={`px-2 py-1 text-xs font-bold rounded ${choice[act.name] === 'deep' && act.type === 'deep' ? 'bg-emerald-200 text-emerald-800' : choice[act.name] === 'deep' && act.type === 'naive' ? 'bg-rose-200 text-rose-800' : 'bg-stone-200'}`}>Deep</button>
+                           <button onClick={() => setChoice({...choice, [act.name]:'naive'})} className={`px-2 py-1 text-xs font-bold rounded ${choice[act.name] === 'naive' && act.type === 'naive' ? 'bg-emerald-200 text-emerald-800' : choice[act.name] === 'naive' && act.type === 'deep' ? 'bg-rose-200 text-rose-800' : 'bg-zinc-200'}`}>Naive</button>
+                           <button onClick={() => setChoice({...choice, [act.name]:'deep'})} className={`px-2 py-1 text-xs font-bold rounded ${choice[act.name] === 'deep' && act.type === 'deep' ? 'bg-emerald-200 text-emerald-800' : choice[act.name] === 'deep' && act.type === 'naive' ? 'bg-rose-200 text-rose-800' : 'bg-zinc-200'}`}>Deep</button>
                         </div>
                     </div>
                 ))}

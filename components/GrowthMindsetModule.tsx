@@ -31,38 +31,38 @@ const MindsetDiagnostic = () => {
   const isComplete = answers.every(a => a !== null);
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-      <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Mindset Diagnostic</h4>
-      <p className="text-center text-sm text-stone-500 mb-8">Which thought sounds more like you in a tough situation?</p>
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Mindset Diagnostic</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Which thought sounds more like you in a tough situation?</p>
       <div className="space-y-6">
         {/* Question 1 */}
         <div>
-          <p className="text-sm font-bold text-center text-stone-600 mb-3">When I fail at something...</p>
+          <p className="text-sm font-bold text-center text-zinc-600 dark:text-zinc-300 mb-3">When I fail at something...</p>
           <div className="grid grid-cols-2 gap-3">
-            <button onClick={() => handleAnswer(0, 'fixed')} className={`p-4 rounded-xl text-xs text-center border-2 ${answers[0] === 'fixed' ? 'bg-rose-500 text-white border-rose-500' : 'bg-stone-50 border-stone-200 hover:bg-stone-100'}`}>A) I feel like I'm a failure.</button>
-            <button onClick={() => handleAnswer(0, 'growth')} className={`p-4 rounded-xl text-xs text-center border-2 ${answers[0] === 'growth' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-stone-50 border-stone-200 hover:bg-stone-100'}`}>B) I feel like I need to try a new strategy.</button>
+            <button onClick={() => handleAnswer(0, 'fixed')} className={`p-4 rounded-xl text-xs text-center border-2 ${answers[0] === 'fixed' ? 'bg-rose-500 text-white border-rose-500' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}>A) I feel like I'm a failure.</button>
+            <button onClick={() => handleAnswer(0, 'growth')} className={`p-4 rounded-xl text-xs text-center border-2 ${answers[0] === 'growth' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}>B) I feel like I need to try a new strategy.</button>
           </div>
         </div>
         {/* Question 2 */}
          <div>
-          <p className="text-sm font-bold text-center text-stone-600 mb-3">If a subject is hard for me...</p>
+          <p className="text-sm font-bold text-center text-zinc-600 dark:text-zinc-300 mb-3">If a subject is hard for me...</p>
           <div className="grid grid-cols-2 gap-3">
-            <button onClick={() => handleAnswer(1, 'fixed')} className={`p-4 rounded-xl text-xs text-center border-2 ${answers[1] === 'fixed' ? 'bg-rose-500 text-white border-rose-500' : 'bg-stone-50 border-stone-200 hover:bg-stone-100'}`}>A) It means I'm probably not smart enough for it.</button>
-            <button onClick={() => handleAnswer(1, 'growth')} className={`p-4 rounded-xl text-xs text-center border-2 ${answers[1] === 'growth' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-stone-50 border-stone-200 hover:bg-stone-100'}`}>B) It means I have a great opportunity to learn.</button>
+            <button onClick={() => handleAnswer(1, 'fixed')} className={`p-4 rounded-xl text-xs text-center border-2 ${answers[1] === 'fixed' ? 'bg-rose-500 text-white border-rose-500' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}>A) It means I'm probably not smart enough for it.</button>
+            <button onClick={() => handleAnswer(1, 'growth')} className={`p-4 rounded-xl text-xs text-center border-2 ${answers[1] === 'growth' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}>B) It means I have a great opportunity to learn.</button>
           </div>
         </div>
         {/* Question 3 */}
          <div>
-          <p className="text-sm font-bold text-center text-stone-600 mb-3">I believe my intelligence is something...</p>
+          <p className="text-sm font-bold text-center text-zinc-600 dark:text-zinc-300 mb-3">I believe my intelligence is something...</p>
           <div className="grid grid-cols-2 gap-3">
-            <button onClick={() => handleAnswer(2, 'fixed')} className={`p-4 rounded-xl text-xs text-center border-2 ${answers[2] === 'fixed' ? 'bg-rose-500 text-white border-rose-500' : 'bg-stone-50 border-stone-200 hover:bg-stone-100'}`}>A) That I can't change very much.</button>
-            <button onClick={() => handleAnswer(2, 'growth')} className={`p-4 rounded-xl text-xs text-center border-2 ${answers[2] === 'growth' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-stone-50 border-stone-200 hover:bg-stone-100'}`}>B) That I can grow with effort.</button>
+            <button onClick={() => handleAnswer(2, 'fixed')} className={`p-4 rounded-xl text-xs text-center border-2 ${answers[2] === 'fixed' ? 'bg-rose-500 text-white border-rose-500' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}>A) That I can't change very much.</button>
+            <button onClick={() => handleAnswer(2, 'growth')} className={`p-4 rounded-xl text-xs text-center border-2 ${answers[2] === 'growth' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}>B) That I can grow with effort.</button>
           </div>
         </div>
       </div>
       <AnimatePresence>
       {isComplete && (
-        <motion.div initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} className="mt-8 p-6 rounded-2xl bg-stone-900 text-white">
+        <motion.div initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} className="mt-8 p-6 rounded-2xl bg-zinc-900 text-white">
           <p className="text-center font-bold">
             {score === 3 && <span className="text-emerald-400">Result: You're operating with a strong Growth Mindset OS!</span>}
             {score === 2 && <span className="text-amber-400">Result: You're leaning towards Growth, with some Fixed-Mindset code still running.</span>}
@@ -79,9 +79,9 @@ const NeuroplasticityVisualizer = () => {
   const [connections, setConnections] = useState(0);
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-      <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Brain Rewiring Simulator</h4>
-      <p className="text-center text-sm text-stone-500 mb-8">Every time you practice, you strengthen the physical connections in your brain.</p>
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Brain Rewiring Simulator</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Every time you practice, you strengthen the physical connections in your brain.</p>
 
       <div className="h-40 flex justify-center items-center">
         <svg width="250" height="100" viewBox="0 0 250 100">
@@ -107,7 +107,7 @@ const NeuroplasticityVisualizer = () => {
         <button onClick={() => setConnections(c => Math.min(c + 1, 5))} className="px-6 py-3 bg-amber-500 text-white font-bold rounded-lg shadow-lg hover:bg-amber-600 transition-colors">
           Practice a Skill
         </button>
-        <button onClick={() => setConnections(0)} className="ml-4 text-xs text-stone-400">Reset</button>
+        <button onClick={() => setConnections(0)} className="ml-4 text-xs text-zinc-400">Reset</button>
       </div>
     </div>
   );
@@ -118,9 +118,9 @@ const ReframeChallenge = () => {
     const containsYet = reframe.toLowerCase().includes('yet');
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The "Yet" Reframe Challenge</h4>
-            <p className="text-center text-sm text-stone-500 mb-8">Upgrade this fixed thought into a growth mindset statement using the power of "yet".</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The "Yet" Reframe Challenge</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Upgrade this fixed thought into a growth mindset statement using the power of "yet".</p>
             <div className="p-6 bg-rose-50 border border-rose-200 rounded-2xl mb-4">
                 <p className="text-rose-800 text-center font-mono"><strong>Fixed Thought:</strong> "I'm just not a maths person."</p>
             </div>
@@ -128,7 +128,7 @@ const ReframeChallenge = () => {
                 value={reframe}
                 onChange={(e) => setReframe(e.target.value)}
                 placeholder="Your growth reframe..."
-                className="w-full h-24 bg-stone-50 border-2 border-stone-100 rounded-2xl p-4 focus:border-amber-500 outline-none transition-colors"
+                className="w-full h-24 bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-100 rounded-2xl p-4 focus:border-amber-500 outline-none transition-colors"
             />
              <AnimatePresence>
                 {containsYet && (

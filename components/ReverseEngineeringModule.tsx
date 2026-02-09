@@ -17,14 +17,14 @@ const theme = skyTheme;
 const PlanningParadoxVisualizer = () => {
     const [plan, setPlan] = useState<'forward' | 'reverse' | null>(null);
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Planning Paradox</h4>
-            <p className="text-center text-sm text-stone-500 mb-6">How does your effort get distributed over 6 months?</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Planning Paradox</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">How does your effort get distributed over 6 months?</p>
             <div className="flex justify-center gap-3 mb-6">
                 <button onClick={() => setPlan('forward')} className={`px-4 py-2 text-sm font-bold rounded-lg border-2 ${plan === 'forward' ? 'bg-rose-500 text-white border-rose-500' : 'bg-rose-50 text-rose-800 border-rose-200'}`}>Forward Plan</button>
                 <button onClick={() => setPlan('reverse')} className={`px-4 py-2 text-sm font-bold rounded-lg border-2 ${plan === 'reverse' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-emerald-50 text-emerald-800 border-emerald-200'}`}>Reverse Plan</button>
             </div>
-            <div className="w-full h-10 bg-stone-100 rounded-lg">
+            <div className="w-full h-10 bg-zinc-100 dark:bg-zinc-800 rounded-lg">
                 <motion.div
                     className={`h-full rounded-lg ${plan === 'forward' ? 'bg-rose-500' : 'bg-emerald-500'}`}
                     initial={{ width: '0%', clipPath: 'polygon(0 0, 0% 0, 0% 100%, 0% 100%)' }}
@@ -32,7 +32,7 @@ const PlanningParadoxVisualizer = () => {
                     transition={{ duration: 2, ease: 'easeInOut', times: [0, 0.8, 1]}}
                 />
             </div>
-            <div className="grid grid-cols-3 text-xs text-stone-400 mt-2"><span>Start</span><span className="text-center">Mid-Point</span><span className="text-right">Exam</span></div>
+            <div className="grid grid-cols-3 text-xs text-zinc-400 mt-2"><span>Start</span><span className="text-center">Mid-Point</span><span className="text-right">Exam</span></div>
         </div>
     );
 };
@@ -44,14 +44,14 @@ const BackwardDesignSorter = () => {
         { id: 3, text: "Plan Learning Experiences (The Study)", stage: 3 },
     ]);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Backward Design Protocol</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">Drag the steps into the correct order for a reverse-engineered plan.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Backward Design Protocol</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Drag the steps into the correct order for a reverse-engineered plan.</p>
              <Reorder.Group axis="y" values={items} onReorder={setItems} className="space-y-3 max-w-sm mx-auto">
                 {items.map((item, i) => (
-                    <Reorder.Item key={item.id} value={item} className={`p-4 rounded-xl shadow-sm flex items-center gap-4 cursor-grabbing border ${item.stage === i + 1 ? 'bg-emerald-50 border-emerald-300' : 'bg-stone-50 border-stone-200'}`}>
-                        <span className={`font-semibold text-2xl ${item.stage === i + 1 ? 'text-emerald-500' : 'text-stone-300'}`}>{i + 1}</span>
-                        <span className="font-bold text-stone-700">{item.text}</span>
+                    <Reorder.Item key={item.id} value={item} className={`p-4 rounded-xl shadow-sm flex items-center gap-4 cursor-grabbing border ${item.stage === i + 1 ? 'bg-emerald-50 border-emerald-300' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700'}`}>
+                        <span className={`font-semibold text-2xl ${item.stage === i + 1 ? 'text-emerald-500' : 'text-zinc-300'}`}>{i + 1}</span>
+                        <span className="font-bold text-zinc-700 dark:text-zinc-200">{item.text}</span>
                     </Reorder.Item>
                 ))}
              </Reorder.Group>
@@ -74,20 +74,20 @@ const ImplementationChecklist = () => {
     const progress = (items.filter(i => i.checked).length / items.length) * 100;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Implementation Checklist</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">Follow these steps to build your own reverse-engineered schedule.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Implementation Checklist</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Follow these steps to build your own reverse-engineered schedule.</p>
              <div className="space-y-3 mb-6">
                 {items.map(item => (
-                    <div key={item.id} onClick={() => toggleCheck(item.id)} className={`p-4 rounded-xl flex items-center gap-4 cursor-pointer border-2 transition-all ${item.checked ? 'bg-sky-50 border-sky-200' : 'bg-stone-50 border-stone-200'}`}>
-                        <div className={`w-6 h-6 rounded-md flex items-center justify-center ${item.checked ? 'bg-sky-500 text-white' : 'bg-stone-200'}`}>
+                    <div key={item.id} onClick={() => toggleCheck(item.id)} className={`p-4 rounded-xl flex items-center gap-4 cursor-pointer border-2 transition-all ${item.checked ? 'bg-sky-50 border-sky-200' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700'}`}>
+                        <div className={`w-6 h-6 rounded-md flex items-center justify-center ${item.checked ? 'bg-sky-500 text-white' : 'bg-zinc-200'}`}>
                             {item.checked && <CheckCircle2 size={14}/>}
                         </div>
-                        <span className={`font-bold text-sm ${item.checked ? 'text-stone-500 line-through' : 'text-stone-700'}`}>{item.text}</span>
+                        <span className={`font-bold text-sm ${item.checked ? 'text-zinc-500 dark:text-zinc-400 line-through' : 'text-zinc-700 dark:text-zinc-200'}`}>{item.text}</span>
                     </div>
                 ))}
              </div>
-             <div className="w-full h-2 bg-stone-100 rounded-full"><motion.div className="h-full bg-sky-500 rounded-full" animate={{width: `${progress}%`}} /></div>
+             <div className="w-full h-2 bg-zinc-100 dark:bg-zinc-800 rounded-full"><motion.div className="h-full bg-sky-500 rounded-full" animate={{width: `${progress}%`}} /></div>
         </div>
     );
 }

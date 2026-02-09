@@ -20,9 +20,9 @@ const NarrativeSwitcher = () => {
     const [script, setScript] = useState<'idle' | 'contamination' | 'redemption'>('idle');
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Narrative Switcher</h4>
-            <p className="text-center text-sm text-stone-500 mb-8">Pivotal Moment: You fail an important mock exam. Which story do you tell?</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Narrative Switcher</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Pivotal Moment: You fail an important mock exam. Which story do you tell?</p>
             <div className="flex justify-center gap-4">
                 <button onClick={() => setScript('contamination')} className={`px-4 py-2 text-xs font-bold rounded-lg transition-all ${script === 'contamination' ? 'bg-rose-500 text-white shadow-md' : 'bg-rose-100 text-rose-800'}`}>Contamination Script</button>
                 <button onClick={() => setScript('redemption')} className={`px-4 py-2 text-xs font-bold rounded-lg transition-all ${script === 'redemption' ? 'bg-emerald-500 text-white shadow-md' : 'bg-emerald-100 text-emerald-800'}`}>Redemption Script</button>
@@ -72,13 +72,13 @@ const NarrativeSwitcher = () => {
 const AgencyCommunionBalancer = () => {
     const [balance, setBalance] = useState(0); // -1 for Agency, 1 for Communion, 0 for balanced
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Agency & Communion Balancer</h4>
-             <p className="text-center text-sm text-stone-500 mb-12">Click the narrative statement that builds the most robust identity.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Agency & Communion Balancer</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-12">Click the narrative statement that builds the most robust identity.</p>
              <div className="h-40 flex justify-center items-center">
                 <motion.div animate={{rotate: balance * 15}} className="w-56 h-20 relative">
-                    <div className="w-full h-2 bg-stone-300 absolute bottom-0 left-0" />
-                    <div className="w-2 h-4 bg-stone-300 absolute bottom-0 left-1/2 -translate-x-1/2" />
+                    <div className="w-full h-2 bg-zinc-300 absolute bottom-0 left-0" />
+                    <div className="w-2 h-4 bg-zinc-300 absolute bottom-0 left-1/2 -translate-x-1/2" />
                     <div className="w-12 h-12 bg-blue-100 rounded-md absolute -left-6 -bottom-1" />
                     <div className="w-12 h-12 bg-emerald-100 rounded-md absolute -right-6 -bottom-1" />
                 </motion.div>
@@ -86,19 +86,19 @@ const AgencyCommunionBalancer = () => {
              <div className="grid grid-cols-3 gap-2 mt-6">
                 <button
                     onClick={() => setBalance(-1)}
-                    className={`p-2 text-xs border-2 rounded-lg transition-all ${balance === -1 ? 'border-blue-500 bg-blue-50' : 'border-stone-200'}`}
+                    className={`p-2 text-xs border-2 rounded-lg transition-all ${balance === -1 ? 'border-blue-500 bg-blue-50' : 'border-zinc-200 dark:border-zinc-700'}`}
                 >
                     "I did it all myself." (Pure Agency)
                 </button>
                 <button
                     onClick={() => setBalance(0)}
-                    className={`p-2 text-xs border-2 rounded-lg transition-all ${balance === 0 ? 'border-indigo-500 bg-indigo-50' : 'border-stone-200'}`}
+                    className={`p-2 text-xs border-2 rounded-lg transition-all ${balance === 0 ? 'border-indigo-500 bg-indigo-50' : 'border-zinc-200 dark:border-zinc-700'}`}
                 >
                     "I worked hard to honor my family's sacrifices." (Balanced)
                 </button>
                 <button
                     onClick={() => setBalance(1)}
-                    className={`p-2 text-xs border-2 rounded-lg transition-all ${balance === 1 ? 'border-emerald-500 bg-emerald-50' : 'border-stone-200'}`}
+                    className={`p-2 text-xs border-2 rounded-lg transition-all ${balance === 1 ? 'border-emerald-500 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}
                 >
                     "I only survived because of others." (Pure Communion)
                 </button>
@@ -108,22 +108,22 @@ const AgencyCommunionBalancer = () => {
 };
 
 const DesirableDifficultyChart = () => (
-    <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-         <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Chart: The Illusion of Fluency</h4>
-         <p className="text-center text-sm text-stone-500 mb-8">"Easy" learning feels good, but "hard" learning builds lasting knowledge.</p>
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Chart: The Illusion of Fluency</h4>
+         <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">"Easy" learning feels good, but "hard" learning builds lasting knowledge.</p>
          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="text-left">
                 <h5 className="font-bold mb-4 text-center">Easy Learning (Re-reading)</h5>
                 <div className="space-y-4">
                     <div>
-                        <span className="text-xs font-bold text-stone-500">Feeling of Learning:</span>
-                        <div className="w-full bg-stone-100 rounded-full h-5 mt-1 overflow-hidden">
+                        <span className="text-xs font-bold text-zinc-500 dark:text-zinc-400">Feeling of Learning:</span>
+                        <div className="w-full bg-zinc-100 dark:bg-zinc-800 rounded-full h-5 mt-1 overflow-hidden">
                             <motion.div initial={{width: 0}} animate={{width: '90%'}} className="h-full bg-fuchsia-400 rounded-full" />
                         </div>
                     </div>
                     <div>
-                        <span className="text-xs font-bold text-stone-500">Long-term Retention:</span>
-                        <div className="w-full bg-stone-100 rounded-full h-5 mt-1 overflow-hidden">
+                        <span className="text-xs font-bold text-zinc-500 dark:text-zinc-400">Long-term Retention:</span>
+                        <div className="w-full bg-zinc-100 dark:bg-zinc-800 rounded-full h-5 mt-1 overflow-hidden">
                             <motion.div initial={{width: 0}} animate={{width: '20%'}} className="h-full bg-indigo-400 rounded-full" />
                         </div>
                     </div>
@@ -133,14 +133,14 @@ const DesirableDifficultyChart = () => (
                 <h5 className="font-bold mb-4 text-center">Hard Learning (Practice Qs)</h5>
                 <div className="space-y-4">
                      <div>
-                        <span className="text-xs font-bold text-stone-500">Feeling of Learning:</span>
-                        <div className="w-full bg-stone-100 rounded-full h-5 mt-1 overflow-hidden">
+                        <span className="text-xs font-bold text-zinc-500 dark:text-zinc-400">Feeling of Learning:</span>
+                        <div className="w-full bg-zinc-100 dark:bg-zinc-800 rounded-full h-5 mt-1 overflow-hidden">
                             <motion.div initial={{width: 0}} animate={{width: '30%'}} className="h-full bg-fuchsia-400 rounded-full" />
                         </div>
                     </div>
                     <div>
-                        <span className="text-xs font-bold text-stone-500">Long-term Retention:</span>
-                        <div className="w-full bg-stone-100 rounded-full h-5 mt-1 overflow-hidden">
+                        <span className="text-xs font-bold text-zinc-500 dark:text-zinc-400">Long-term Retention:</span>
+                        <div className="w-full bg-zinc-100 dark:bg-zinc-800 rounded-full h-5 mt-1 overflow-hidden">
                             <motion.div initial={{width: 0}} animate={{width: '85%'}} className="h-full bg-indigo-400 rounded-full" />
                         </div>
                     </div>
@@ -206,16 +206,16 @@ const StrategicAdvantageModule: React.FC<{ onBack: () => void; progress: ModuleP
             <ReadingSection title="Your Redemption Script." eyebrow="Step 5" icon={FileText} theme={theme}>
               <p>You have the power to be the author of your own story. This module has given you the tools of narrative construction: the ability to turn contamination into redemption, to balance agency with communion, and to reframe difficulty as a desirable advantage. Now it's time to put it into practice.</p>
               <p>The final step is to build your own mini-"Failure Resume." By taking a past failure and actively converting it into an asset, you are practicing the core skill of resilient identity construction. You are forging your own redemption script, turning the lead of your past into the gold of your future.</p>
-              <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-                <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">My Redemption Story</h4>
+              <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">My Redemption Story</h4>
                  <div className="mt-6 space-y-4">
                     <div>
-                        <label className="block text-xs font-semibold text-stone-600 uppercase ml-4 mb-2">The Failure (Pivotal Moment):</label>
-                        <select className="w-full p-4 bg-stone-50 border-2 border-stone-100 rounded-xl focus:outline-none focus:border-indigo-500"><option>Failed a mock exam</option><option>Missed an assignment deadline</option><option>Didn't understand a topic in class</option></select>
+                        <label className="block text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 mb-2">The Failure (Pivotal Moment):</label>
+                        <select className="w-full p-4 bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-100 rounded-xl focus:outline-none focus:border-indigo-500"><option>Failed a mock exam</option><option>Missed an assignment deadline</option><option>Didn't understand a topic in class</option></select>
                     </div>
                      <div>
-                        <label className="block text-xs font-semibold text-stone-600 uppercase ml-4 mb-2">The Lesson (Your Asset):</label>
-                        <textarea placeholder="What is the single most valuable lesson, skill, or piece of wisdom you gained from this experience?" className="w-full h-24 p-4 bg-stone-50 border-2 border-stone-100 rounded-xl focus:outline-none focus:border-indigo-500"></textarea>
+                        <label className="block text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 mb-2">The Lesson (Your Asset):</label>
+                        <textarea placeholder="What is the single most valuable lesson, skill, or piece of wisdom you gained from this experience?" className="w-full h-24 p-4 bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-100 rounded-xl focus:outline-none focus:border-indigo-500"></textarea>
                     </div>
                 </div>
               </div>

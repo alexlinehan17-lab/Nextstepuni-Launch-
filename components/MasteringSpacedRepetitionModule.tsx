@@ -70,9 +70,9 @@ const ForgettingCurveVisualizer = () => {
     };
 
     return (
-        <div className="my-10 p-6 md:p-8 bg-stone-900 rounded-[3rem] border border-white/10 shadow-2xl text-white shadow-[inset_0_2px_4px_0_rgba(255,255,255,0.05)]">
+        <div className="my-10 p-6 md:p-8 bg-zinc-900 rounded-2xl border border-white/10 shadow-2xl text-white shadow-[inset_0_2px_4px_0_rgba(255,255,255,0.05)]">
             <h4 className="font-serif text-2xl font-semibold text-center italic">The Forgetting Curve</h4>
-            <p className="text-center text-sm text-stone-400 mb-8">Click review points on the timeline to fight the curve.</p>
+            <p className="text-center text-sm text-zinc-400 mb-8">Click review points on the timeline to fight the curve.</p>
 
             <div className="relative h-56">
                 <svg viewBox={`0 0 ${viewboxWidth} ${viewboxHeight}`} className="w-full h-full overflow-visible">
@@ -115,22 +115,22 @@ const ForgettingCurveVisualizer = () => {
              <div className="relative grid grid-cols-4 gap-2 pt-4 -mt-4">
                 {reviewPoints.map((point, index) => (
                     <div key={index} className="text-center col-start-2" style={{ gridColumnStart: index + 2 }}>
-                        <p className="text-xs text-stone-400 mt-2">Day {point.day}</p>
+                        <p className="text-xs text-zinc-400 mt-2">Day {point.day}</p>
                     </div>
                 ))}
             </div>
 
-            <div className="mt-8 grid grid-cols-2 gap-4 items-center bg-white/5 p-4 rounded-xl">
+            <div className="mt-8 grid grid-cols-2 gap-4 items-center bg-white dark:bg-zinc-800/5 p-4 rounded-xl">
                 <div>
-                    <p className="flex items-center gap-2 text-xs font-bold uppercase text-stone-400"><TrendingDown size={14} className="text-rose-400"/>Baseline</p>
+                    <p className="flex items-center gap-2 text-xs font-bold uppercase text-zinc-400"><TrendingDown size={14} className="text-rose-400"/>Baseline</p>
                     <p className="text-3xl font-semibold text-rose-400 tracking-tighter">{retention.baseline}%</p>
                 </div>
                  <div className="text-right">
-                    <p className="flex items-center justify-end gap-2 text-xs font-bold uppercase text-stone-400"><Clock size={14} className="text-sky-400"/>Your Retention</p>
+                    <p className="flex items-center justify-end gap-2 text-xs font-bold uppercase text-zinc-400"><Clock size={14} className="text-sky-400"/>Your Retention</p>
                     <p className="text-3xl font-semibold text-sky-400 tracking-tighter">{currentRetention}%</p>
                 </div>
                  <div className="col-span-2 text-center">
-                    <button onClick={() => setReviews([false, false, false])} className="inline-flex items-center gap-2 text-xs text-stone-500 hover:text-white transition-colors px-3 py-1 rounded-full hover:bg-white/10"><RefreshCcw size={12}/>Reset</button>
+                    <button onClick={() => setReviews([false, false, false])} className="inline-flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 hover:text-white transition-colors px-3 py-1 rounded-full hover:bg-white/10"><RefreshCcw size={12}/>Reset</button>
                  </div>
             </div>
         </div>
@@ -149,12 +149,12 @@ const OptimalScheduleCalculator = () => {
     };
 
     return(
-         <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Optimal Schedule Calculator</h4>
-             <p className="text-center text-sm text-stone-500 mb-6">Based on the landmark Cepeda et al. (2008) research.</p>
+         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Optimal Schedule Calculator</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Based on the landmark Cepeda et al. (2008) research.</p>
              <div className="flex items-center justify-center gap-4">
                  <label className="font-bold">My test is in:</label>
-                 <select value={ri} onChange={e => setRi(e.target.value)} className="p-2 bg-stone-100 rounded-lg">
+                 <select value={ri} onChange={e => setRi(e.target.value)} className="p-2 bg-zinc-100 dark:bg-zinc-800 rounded-lg">
                     <option value="1_week">1 Week</option>
                     <option value="1_month">1 Month</option>
                     <option value="3_months">3 Months</option>
@@ -224,19 +224,19 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
            {activeSection === 5 && (
             <ReadingSection title="Your Spacing Blueprint." eyebrow="Step 6" icon={Wrench} theme={theme}>
               <p>You now have the science to defeat the Forgetting Curve. The timing of your study is as important as the content. This section provides a simple, actionable heuristic to put this into practice immediately, even without software.</p>
-              <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-                <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Actionable Advice: The Heuristic Planner</h4>
-                <p className="text-center text-sm text-stone-500 mb-8">For any test or exam, follow this simple rule-of-thumb schedule.</p>
+              <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Actionable Advice: The Heuristic Planner</h4>
+                <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">For any test or exam, follow this simple rule-of-thumb schedule.</p>
                 <div className="grid grid-cols-3 gap-4 text-center">
-                    <div className="p-4 bg-stone-50 rounded-xl">
+                    <div className="p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl">
                         <p className="font-bold">Day 1: Learn</p>
                         <p className="text-xs mt-1">First exposure to the material in class.</p>
                     </div>
-                     <div className="p-4 bg-stone-50 rounded-xl">
+                     <div className="p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl">
                         <p className="font-bold">Day 2-3: First Review</p>
                         <p className="text-xs mt-1">Review the material using Active Recall. This is the most critical review.</p>
                     </div>
-                     <div className="p-4 bg-stone-50 rounded-xl">
+                     <div className="p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl">
                         <p className="font-bold">Day 7 (or before test): Final Review</p>
                         <p className="text-xs mt-1">A final active recall session to consolidate the memory.</p>
                     </div>

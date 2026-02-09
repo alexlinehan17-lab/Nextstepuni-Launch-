@@ -32,19 +32,19 @@ const TriageSimulator = () => {
 
     if (qIndex >= questions.length) {
         return (
-            <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl text-center">
-                <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Triage Complete</h4>
+            <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Triage Complete</h4>
                 <button onClick={() => {setQIndex(0); setChoices(Array(questions.length).fill(null));}} className="mt-4 px-4 py-2 bg-amber-500 text-white font-bold text-sm rounded-lg">Run Drill Again</button>
             </div>
         );
     }
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Triage Drill</h4>
-            <p className="text-center text-sm text-stone-500 mb-8">Reading time has started. Quickly categorize this question.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Triage Drill</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Reading time has started. Quickly categorize this question.</p>
             <AnimatePresence mode="wait">
-            <motion.div key={qIndex} initial={{opacity:0, x:20}} animate={{opacity:1, x:0}} exit={{opacity:0, x:-20}} className="p-6 bg-stone-100 border border-stone-200 rounded-2xl text-center font-bold text-stone-700 min-h-[100px] flex items-center justify-center">
+            <motion.div key={qIndex} initial={{opacity:0, x:20}} animate={{opacity:1, x:0}} exit={{opacity:0, x:-20}} className="p-6 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl text-center font-bold text-zinc-700 dark:text-zinc-200 min-h-[100px] flex items-center justify-center">
                 {questions[qIndex].text}
             </motion.div>
             </AnimatePresence>
@@ -64,14 +64,14 @@ const MPMCalculator = () => {
     const mpm = (time - buffer) / marks;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Minutes-Per-Mark (MPM) Calculator</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Minutes-Per-Mark (MPM) Calculator</h4>
              <div className="grid grid-cols-3 gap-4 mt-6">
-                <div><label className="text-xs font-bold">Total Time (mins)</label><input type="number" value={time} onChange={e=>setTime(parseInt(e.target.value))} className="w-full p-2 bg-stone-100 rounded-md" /></div>
-                <div><label className="text-xs font-bold">Total Marks</label><input type="number" value={marks} onChange={e=>setMarks(parseInt(e.target.value))} className="w-full p-2 bg-stone-100 rounded-md" /></div>
-                <div><label className="text-xs font-bold">Buffer (mins)</label><input type="number" value={buffer} onChange={e=>setBuffer(parseInt(e.target.value))} className="w-full p-2 bg-stone-100 rounded-md" /></div>
+                <div><label className="text-xs font-bold">Total Time (mins)</label><input type="number" value={time} onChange={e=>setTime(parseInt(e.target.value))} className="w-full p-2 bg-zinc-100 dark:bg-zinc-800 rounded-md" /></div>
+                <div><label className="text-xs font-bold">Total Marks</label><input type="number" value={marks} onChange={e=>setMarks(parseInt(e.target.value))} className="w-full p-2 bg-zinc-100 dark:bg-zinc-800 rounded-md" /></div>
+                <div><label className="text-xs font-bold">Buffer (mins)</label><input type="number" value={buffer} onChange={e=>setBuffer(parseInt(e.target.value))} className="w-full p-2 bg-zinc-100 dark:bg-zinc-800 rounded-md" /></div>
              </div>
-             <div className="mt-6 p-4 bg-stone-900 rounded-xl text-center text-white">
+             <div className="mt-6 p-4 bg-zinc-900 rounded-xl text-center text-white">
                 Your MPM is <span className="font-bold text-2xl text-amber-400">{mpm.toFixed(2)}</span>. A 20-mark question gets <span className="font-bold text-amber-400">{(mpm*20).toFixed(1)}</span> minutes.
              </div>
         </div>
@@ -81,12 +81,12 @@ const MPMCalculator = () => {
 const BoxBreathingVisualizer = () => {
     const steps = ["Inhale...", "Hold...", "Exhale...", "Hold..."];
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl flex flex-col items-center">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">4-4-4-4 Box Breathing</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">Feeling panicked? Run this protocol.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl flex flex-col items-center">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">4-4-4-4 Box Breathing</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Feeling panicked? Run this protocol.</p>
              <div className="w-32 h-32 relative flex items-center justify-center">
                 <motion.div
-                    className="w-full h-full border-4 border-stone-200 rounded-lg"
+                    className="w-full h-full border-4 border-zinc-200 dark:border-zinc-700 rounded-lg"
                     animate={{ rotate: [0, 90, 180, 270, 360] }}
                     transition={{ duration: 16, repeat: Infinity, ease: 'linear' }}
                 />

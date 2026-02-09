@@ -19,8 +19,8 @@ const ChallengeThreatSimulator = () => {
     const isChallenge = resources >= 50;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Challenge vs. Threat State</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Challenge vs. Threat State</h4>
              <div className="grid grid-cols-2 gap-8 items-center mt-8">
                 <div className="text-center">
                     <p className="font-bold text-sm">Demands (The Exam)</p>
@@ -28,7 +28,7 @@ const ChallengeThreatSimulator = () => {
                 </div>
                 <div className="text-center">
                     <p className="font-bold text-sm">Your Resources</p>
-                    <div className="h-8 w-full bg-stone-100 rounded-full mt-2"><motion.div className="h-full bg-emerald-400 rounded-full" animate={{width: `${resources}%`}} /></div>
+                    <div className="h-8 w-full bg-zinc-100 dark:bg-zinc-800 rounded-full mt-2"><motion.div className="h-full bg-emerald-400 rounded-full" animate={{width: `${resources}%`}} /></div>
                 </div>
              </div>
              <div className="flex justify-center gap-2 mt-4"><span className="font-bold">Resource Level:</span><input type="range" value={resources} onChange={e => setResources(parseInt(e.target.value))} /></div>
@@ -44,12 +44,12 @@ const CircadianShifter = () => {
     const shifts = Math.ceil(((wakeTime - 7) * 60) / 15);
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Circadian Rhythm Shifter</h4>
-             <p className="text-center text-sm text-stone-500 mb-6">Input your current weekend wake-up time to get your 4-week 'Phase Advance' plan.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Circadian Rhythm Shifter</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Input your current weekend wake-up time to get your 4-week 'Phase Advance' plan.</p>
              <div className="flex items-center justify-center gap-4">
                 <label className="font-bold">Current Wake-up:</label>
-                <input type="time" value={`${String(Math.floor(wakeTime)).padStart(2,'0')}:${String((wakeTime % 1)*60).padStart(2,'0')}`} onChange={e => setWakeTime(parseInt(e.target.value.split(':')[0]) + parseInt(e.target.value.split(':')[1])/60)} className="p-2 bg-stone-100 rounded-lg"/>
+                <input type="time" value={`${String(Math.floor(wakeTime)).padStart(2,'0')}:${String((wakeTime % 1)*60).padStart(2,'0')}`} onChange={e => setWakeTime(parseInt(e.target.value.split(':')[0]) + parseInt(e.target.value.split(':')[1])/60)} className="p-2 bg-zinc-100 dark:bg-zinc-800 rounded-lg"/>
              </div>
              {wakeTime > 7 && <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-xl text-center">
                 <p className="font-bold text-amber-800">Your Protocol:</p>
@@ -70,14 +70,14 @@ const TaperPlanner = () => {
     const currentData = taperData[day as keyof typeof taperData] || taperData[Object.keys(taperData).reverse().find(d => parseInt(d) >= day) as any];
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Academic Taper Planner</h4>
-             <p className="text-center text-sm text-stone-500 mb-6">Move the slider to see how your training changes in the final week.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Academic Taper Planner</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Move the slider to see how your training changes in the final week.</p>
              <label className="font-bold">Days Before Exam: {day}</label>
              <input type="range" min="1" max="7" value={day} onChange={e => setDay(parseInt(e.target.value))} className="w-full" />
              <div className="grid grid-cols-3 gap-4 mt-4 text-center">
-                <div><p className="font-bold text-sm">Study Volume</p><div className="h-24 bg-stone-100 rounded-lg flex items-end mt-2"><motion.div className="w-full bg-blue-400 rounded-t-lg" animate={{height: `${currentData.volume}%`}} /></div></div>
-                <div><p className="font-bold text-sm">Intensity</p><div className="h-24 bg-stone-100 rounded-lg flex items-end mt-2"><motion.div className="w-full bg-rose-400 rounded-t-lg" animate={{height: `${currentData.intensity}%`}} /></div></div>
+                <div><p className="font-bold text-sm">Study Volume</p><div className="h-24 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-end mt-2"><motion.div className="w-full bg-blue-400 rounded-t-lg" animate={{height: `${currentData.volume}%`}} /></div></div>
+                <div><p className="font-bold text-sm">Intensity</p><div className="h-24 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-end mt-2"><motion.div className="w-full bg-rose-400 rounded-t-lg" animate={{height: `${currentData.intensity}%`}} /></div></div>
                 <div><p className="font-bold text-sm">Activity</p><div className="h-24 flex items-center justify-center mt-2 font-bold">{currentData.activity}</div></div>
              </div>
         </div>
@@ -105,8 +105,8 @@ const CognitiveWarmup = () => {
 
     if(drill === 'math') {
         return (
-             <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl text-center">
-                <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Calculation Sprint</h4>
+             <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Calculation Sprint</h4>
                 <p>1. 15 x 12 = ?</p>
                 <p>2. What is 25% of 180?</p>
                 <button onClick={() => setDrill('none')} className="text-xs mt-4">Back</button>
@@ -116,23 +116,23 @@ const CognitiveWarmup = () => {
 
     if(drill === 'verbal') {
         return (
-            <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl text-center">
-                <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Verbal Fluency Drill</h4>
+            <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Verbal Fluency Drill</h4>
                 <p>For 60 seconds, list as many words as you can that start with the letter 'P'.</p>
                 <p className="text-4xl font-bold my-4">{time}</p>
-                <textarea value={words} onChange={e => setWords(e.target.value)} className="w-full h-24 bg-stone-100 rounded-lg p-2" disabled={time === 0} />
+                <textarea value={words} onChange={e => setWords(e.target.value)} className="w-full h-24 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-2" disabled={time === 0} />
                 <button onClick={resetVerbal} className="text-xs mt-4">Reset</button>
             </div>
         );
     }
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl text-center">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Cognitive Warm-Up</h4>
-             <p className="text-sm text-stone-500 mb-6">Choose your drill to prime your brain for action.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Cognitive Warm-Up</h4>
+             <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Choose your drill to prime your brain for action.</p>
              <div className="flex justify-center gap-4">
-                <button onClick={() => resetVerbal()} className="p-4 bg-stone-100 rounded-lg">Verbal Fluency</button>
-                <button onClick={() => setDrill('math')} className="p-4 bg-stone-100 rounded-lg">Math Sprint</button>
+                <button onClick={() => resetVerbal()} className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-lg">Verbal Fluency</button>
+                <button onClick={() => setDrill('math')} className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-lg">Math Sprint</button>
              </div>
         </div>
     );

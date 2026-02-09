@@ -30,21 +30,21 @@ const ExplanatoryStyleQuiz = () => {
     const isComplete = answers.every(a => a !== null);
 
     return (
-      <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-        <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Self-Talk Diagnostic</h4>
-        <p className="text-center text-sm text-stone-500 mb-8">You fail a test. Which voice is louder in your head?</p>
+      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Self-Talk Diagnostic</h4>
+        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">You fail a test. Which voice is louder in your head?</p>
         <div className="space-y-6">
             <div>
                 <p className="text-center font-bold mb-2">"This means I'm stupid." vs "This means my strategy was wrong."</p>
-                <div className="grid grid-cols-2 gap-3"><button onClick={() => handleAnswer(0, 'pessimistic')} className={`p-4 rounded-xl border-2 ${answers[0] === 'pessimistic' ? 'bg-rose-500 text-white' : 'bg-stone-50'}`}>A</button><button onClick={() => handleAnswer(0, 'optimistic')} className={`p-4 rounded-xl border-2 ${answers[0] === 'optimistic' ? 'bg-emerald-500 text-white' : 'bg-stone-50'}`}>B</button></div>
+                <div className="grid grid-cols-2 gap-3"><button onClick={() => handleAnswer(0, 'pessimistic')} className={`p-4 rounded-xl border-2 ${answers[0] === 'pessimistic' ? 'bg-rose-500 text-white' : 'bg-zinc-50'}`}>A</button><button onClick={() => handleAnswer(0, 'optimistic')} className={`p-4 rounded-xl border-2 ${answers[0] === 'optimistic' ? 'bg-emerald-500 text-white' : 'bg-zinc-50'}`}>B</button></div>
             </div>
              <div>
                 <p className="text-center font-bold mb-2">"I'll never get this." vs "I'll try again tomorrow."</p>
-                <div className="grid grid-cols-2 gap-3"><button onClick={() => handleAnswer(1, 'pessimistic')} className={`p-4 rounded-xl border-2 ${answers[1] === 'pessimistic' ? 'bg-rose-500 text-white' : 'bg-stone-50'}`}>A</button><button onClick={() => handleAnswer(1, 'optimistic')} className={`p-4 rounded-xl border-2 ${answers[1] === 'optimistic' ? 'bg-emerald-500 text-white' : 'bg-stone-50'}`}>B</button></div>
+                <div className="grid grid-cols-2 gap-3"><button onClick={() => handleAnswer(1, 'pessimistic')} className={`p-4 rounded-xl border-2 ${answers[1] === 'pessimistic' ? 'bg-rose-500 text-white' : 'bg-zinc-50'}`}>A</button><button onClick={() => handleAnswer(1, 'optimistic')} className={`p-4 rounded-xl border-2 ${answers[1] === 'optimistic' ? 'bg-emerald-500 text-white' : 'bg-zinc-50'}`}>B</button></div>
             </div>
              <div>
                 <p className="text-center font-bold mb-2">"This ruins everything." vs "This is just one subject."</p>
-                <div className="grid grid-cols-2 gap-3"><button onClick={() => handleAnswer(2, 'pessimistic')} className={`p-4 rounded-xl border-2 ${answers[2] === 'pessimistic' ? 'bg-rose-500 text-white' : 'bg-stone-50'}`}>A</button><button onClick={() => handleAnswer(2, 'optimistic')} className={`p-4 rounded-xl border-2 ${answers[2] === 'optimistic' ? 'bg-emerald-500 text-white' : 'bg-stone-50'}`}>B</button></div>
+                <div className="grid grid-cols-2 gap-3"><button onClick={() => handleAnswer(2, 'pessimistic')} className={`p-4 rounded-xl border-2 ${answers[2] === 'pessimistic' ? 'bg-rose-500 text-white' : 'bg-zinc-50'}`}>A</button><button onClick={() => handleAnswer(2, 'optimistic')} className={`p-4 rounded-xl border-2 ${answers[2] === 'optimistic' ? 'bg-emerald-500 text-white' : 'bg-zinc-50'}`}>B</button></div>
             </div>
         </div>
          {isComplete && <p className="text-center mt-4 text-sm font-bold">{score > 1 ? <span className="text-emerald-600">Your explanatory style is optimistic and builds resilience.</span> : <span className="text-rose-600">Your explanatory style is pessimistic and may be eroding your resilience.</span>}</p>}

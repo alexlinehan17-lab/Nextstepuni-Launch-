@@ -43,26 +43,26 @@ const PointsCalculator = () => {
     const totalPoints = subjectPoints.sort((a, b) => b - a).slice(0, 6).reduce((sum, p) => sum + p, 0);
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">CAO Points Calculator</h4>
-            <p className="text-center text-sm text-stone-500 mb-8">See how the "Best Six" and Maths Bonus work in practice.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">CAO Points Calculator</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">See how the "Best Six" and Maths Bonus work in practice.</p>
             <div className="space-y-3">
                 {subjects.map((s, i) => (
-                    <div key={i} className={`p-3 rounded-lg flex items-center gap-4 ${i === 0 ? 'bg-amber-50' : 'bg-stone-50'}`}>
+                    <div key={i} className={`p-3 rounded-lg flex items-center gap-4 ${i === 0 ? 'bg-amber-50' : 'bg-zinc-50'}`}>
                         <span className="font-bold text-sm w-24">{i === 0 ? 'Maths' : `Subject ${i+1}`}</span>
-                        <select value={s.level} onChange={e => updateSubject(i, 'level', e.target.value)} className="p-1 rounded-md bg-white border border-stone-200">
+                        <select value={s.level} onChange={e => updateSubject(i, 'level', e.target.value)} className="p-1 rounded-md bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700">
                             <option value="hl">Higher</option>
                             <option value="ol">Ordinary</option>
                         </select>
-                        <select value={s.grade} onChange={e => updateSubject(i, 'grade', e.target.value)} className="p-1 rounded-md bg-white border border-stone-200">
+                        <select value={s.grade} onChange={e => updateSubject(i, 'grade', e.target.value)} className="p-1 rounded-md bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700">
                             {grades.map(g => <option key={g.grade} value={g.grade}>{g.grade}</option>)}
                         </select>
                         <span className="ml-auto font-bold text-lg">{subjectPoints[i]}</span>
                     </div>
                 ))}
             </div>
-            <div className="mt-8 p-6 bg-stone-900 rounded-2xl text-center">
-                <p className="text-sm font-bold text-stone-400">Total "Best Six" Points:</p>
+            <div className="mt-8 p-6 bg-zinc-900 rounded-2xl text-center">
+                <p className="text-sm font-bold text-zinc-400">Total "Best Six" Points:</p>
                 <p className="text-5xl font-semibold text-white">{totalPoints}</p>
             </div>
         </div>
@@ -79,23 +79,23 @@ const SubjectClusterExplorer = () => {
     const isHighlighted = (subject: string) => activeCluster && clusters[activeCluster as keyof typeof clusters].includes(subject);
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Syllabus Overlap Explorer</h4>
-            <p className="text-center text-sm text-stone-500 mb-6">Click a cluster to see how subjects connect and reduce your workload.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Syllabus Overlap Explorer</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Click a cluster to see how subjects connect and reduce your workload.</p>
             <div className="flex justify-center gap-3 mb-6">
                 <button onClick={() => setActiveCluster('Lab Science')} className={`px-4 py-2 text-sm font-bold rounded-lg border-2 ${activeCluster === 'Lab Science' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-emerald-50 text-emerald-800 border-emerald-200'}`}>Lab Science</button>
                 <button onClick={() => setActiveCluster('Business')} className={`px-4 py-2 text-sm font-bold rounded-lg border-2 ${activeCluster === 'Business' ? 'bg-sky-500 text-white border-sky-500' : 'bg-sky-50 text-sky-800 border-sky-200'}`}>Business</button>
                 <button onClick={() => setActiveCluster(null)} className="text-xs">Reset</button>
             </div>
             <div className="grid grid-cols-3 gap-3 text-center">
-                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Biology') ? 'border-emerald-400 bg-emerald-50' : 'border-stone-200'}`}>Biology</div>
-                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Ag Science') ? 'border-emerald-400 bg-emerald-50' : 'border-stone-200'}`}>Ag Science</div>
-                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Home Ec') ? 'border-emerald-400 bg-emerald-50' : 'border-stone-200'}`}>Home Ec</div>
-                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Physics') ? 'border-emerald-400 bg-emerald-50' : 'border-stone-200'}`}>Physics</div>
-                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Applied Maths') ? 'border-emerald-400 bg-emerald-50' : 'border-stone-200'}`}>Applied Maths</div>
-                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Business') ? 'border-sky-400 bg-sky-50' : 'border-stone-200'}`}>Business</div>
-                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Accounting') ? 'border-sky-400 bg-sky-50' : 'border-stone-200'}`}>Accounting</div>
-                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Economics') ? 'border-sky-400 bg-sky-50' : 'border-stone-200'}`}>Economics</div>
+                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Biology') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Biology</div>
+                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Ag Science') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Ag Science</div>
+                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Home Ec') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Home Ec</div>
+                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Physics') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Physics</div>
+                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Applied Maths') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Applied Maths</div>
+                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Business') ? 'border-sky-400 bg-sky-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Business</div>
+                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Accounting') ? 'border-sky-400 bg-sky-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Accounting</div>
+                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Economics') ? 'border-sky-400 bg-sky-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Economics</div>
             </div>
         </div>
     );
@@ -111,11 +111,11 @@ const CommandWordDecoder = () => {
     const [selected, setSelected] = useState(words[0]);
 
     return (
-         <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Command Word Decoder</h4>
-            <p className="text-center text-sm text-stone-500 mb-8">Misinterpreting this word is the #1 cause of losing marks.</p>
+         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Command Word Decoder</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Misinterpreting this word is the #1 cause of losing marks.</p>
             <div className="flex justify-center flex-wrap gap-2 mb-6">
-                {words.map(w => <button key={w.word} onClick={() => setSelected(w)} className={`px-4 py-2 font-mono text-sm rounded-lg border-2 ${selected.word === w.word ? 'bg-red-500 text-white border-red-500' : 'bg-stone-100 border-stone-200'}`}>{w.word}</button>)}
+                {words.map(w => <button key={w.word} onClick={() => setSelected(w)} className={`px-4 py-2 font-mono text-sm rounded-lg border-2 ${selected.word === w.word ? 'bg-red-500 text-white border-red-500' : 'bg-zinc-100 border-zinc-200 dark:border-zinc-700'}`}>{w.word}</button>)}
             </div>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                  <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-lg">

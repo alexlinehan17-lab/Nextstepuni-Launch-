@@ -6,41 +6,48 @@
 import { CategoryType } from './components/KnowledgeTree';
 import { CourseData } from './components/Library';
 
-export const categoryColorMap: Record<CategoryType, { gradient: string; accentColor: string; auraColor: string }> = {
+export const categoryColorMap: Record<CategoryType, { gradient: string; accentColor: string; auraColor: string; pillBgColor: string }> = {
   'architecture-mindset': {
-    gradient: 'bg-gradient-to-tr from-blue-100 via-white to-stone-50',
+    gradient: 'bg-gradient-to-tr from-blue-50 via-white to-zinc-50',
     accentColor: 'text-blue-700',
     auraColor: 'hover:shadow-[0_20px_50px_rgba(59,130,246,0.15)]',
+    pillBgColor: 'bg-blue-700',
   },
   'science-growth': {
-    gradient: 'bg-gradient-to-tr from-amber-100 via-white to-stone-50',
+    gradient: 'bg-gradient-to-tr from-amber-50 via-white to-zinc-50',
     accentColor: 'text-amber-700',
     auraColor: 'hover:shadow-[0_20px_50px_rgba(245,158,11,0.15)]',
+    pillBgColor: 'bg-amber-700',
   },
   'learning-cheat-codes': {
-    gradient: 'bg-gradient-to-tr from-teal-100 via-white to-stone-50',
+    gradient: 'bg-gradient-to-tr from-teal-50 via-white to-zinc-50',
     accentColor: 'text-teal-700',
     auraColor: 'hover:shadow-[0_20px_50px_rgba(13,148,136,0.15)]',
+    pillBgColor: 'bg-teal-700',
   },
   'subject-specific-science': {
-    gradient: 'bg-gradient-to-tr from-slate-100 via-white to-stone-50',
+    gradient: 'bg-gradient-to-tr from-slate-50 via-white to-zinc-50',
     accentColor: 'text-slate-700',
     auraColor: 'hover:shadow-[0_20px_50px_rgba(71,85,105,0.15)]',
+    pillBgColor: 'bg-slate-700',
   },
   'exam-zone': {
-    gradient: 'bg-gradient-to-tr from-red-100 via-white to-stone-50',
+    gradient: 'bg-gradient-to-tr from-red-50 via-white to-zinc-50',
     accentColor: 'text-red-700',
     auraColor: 'hover:shadow-[0_20px_50px_rgba(220,38,38,0.15)]',
+    pillBgColor: 'bg-red-700',
   },
   'the-shield': {
-    gradient: 'bg-gradient-to-tr from-indigo-100 via-white to-stone-50',
+    gradient: 'bg-gradient-to-tr from-indigo-50 via-white to-zinc-50',
     accentColor: 'text-indigo-700',
     auraColor: 'hover:shadow-[0_20px_50px_rgba(79,70,229,0.15)]',
+    pillBgColor: 'bg-indigo-700',
   },
   'the-launchpad': {
-    gradient: 'bg-gradient-to-tr from-rose-100 via-white to-stone-50',
+    gradient: 'bg-gradient-to-tr from-rose-50 via-white to-zinc-50',
     accentColor: 'text-rose-700',
     auraColor: 'hover:shadow-[0_20px_50px_rgba(225,29,72,0.15)]',
+    pillBgColor: 'bg-rose-700',
   },
 };
 
@@ -509,8 +516,8 @@ export const categoryTitles: Record<CategoryType, string> = {
 
 export const ALL_COURSES: CourseData[] = COURSE_DEFINITIONS.map(course => {
   const colors = categoryColorMap[course.category] || {
-    gradient: 'bg-gradient-to-tr from-stone-100 via-white to-stone-50',
-    accentColor: 'text-stone-700',
+    gradient: 'bg-gradient-to-tr from-zinc-50 via-white to-zinc-50',
+    accentColor: 'text-zinc-700',
     auraColor: 'hover:shadow-[0_20px_50px_rgba(71,85,105,0.15)]',
   };
   return {

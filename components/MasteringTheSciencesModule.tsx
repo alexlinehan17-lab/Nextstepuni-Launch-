@@ -21,9 +21,9 @@ const CurlyArrowDrill = () => {
     const [end, setEnd] = useState(false);
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl text-center">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">"Curly Arrow" Drill</h4>
-            <p className="text-sm text-stone-500 mb-6">Draw the arrow for this step: Cl\u207b attacking a carbocation.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">"Curly Arrow" Drill</h4>
+            <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Draw the arrow for this step: Cl\u207b attacking a carbocation.</p>
             <div className="flex justify-center items-center gap-4 text-3xl font-mono">
                 <button onClick={() => setStart(true)} className="relative p-2">Cl<span className="absolute -top-1 -right-1 text-lg">-</span></button>
                 <span>+</span>

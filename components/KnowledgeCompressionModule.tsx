@@ -69,11 +69,11 @@ const SyllabusDeconstructor = () => {
     const colors = ["#e0f2f1", "#b2dfdb", "#80cbc4", "#4db6ac", "#26a69a"];
 
     return (
-        <div className="my-10 p-4 md:p-8 bg-white rounded-[2rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Syllabus Deconstructor</h4>
-            <p className="text-center text-sm text-stone-500 mb-6">{mathsSyllabus.subject}</p>
+        <div className="my-10 p-4 md:p-8 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Syllabus Deconstructor</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">{mathsSyllabus.subject}</p>
 
-            <div className="w-full h-[500px] bg-stone-50 rounded-lg p-2 flex flex-col gap-2">
+            <div className="w-full h-[500px] bg-zinc-50 dark:bg-zinc-800/50 rounded-lg p-2 flex flex-col gap-2">
                 {mathsSyllabus.strands.map(strand => {
                     const strandTotalFreq = strand.topics.reduce((sum, topic) => sum + topic.frequency, 0);
                     const strandFlex = (strandTotalFreq / totalFrequency) * 100;
@@ -85,7 +85,7 @@ const SyllabusDeconstructor = () => {
                                     <motion.div
                                         key={topic.name}
                                         style={{flexGrow: topicFlex, backgroundColor: colors[topic.frequency-1]}}
-                                        className="rounded-md p-2 text-xs font-bold text-stone-800 cursor-pointer flex items-center justify-center text-center"
+                                        className="rounded-md p-2 text-xs font-bold text-zinc-800 dark:text-white cursor-pointer flex items-center justify-center text-center"
                                         whileHover={{scale: 1.05, zIndex: 10}}
                                         onClick={() => setSelectedTopic(topic)}
                                     >
@@ -103,11 +103,11 @@ const SyllabusDeconstructor = () => {
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 10 }}
-                        className="mt-4 p-4 bg-stone-900 text-white rounded-xl"
+                        className="mt-4 p-4 bg-zinc-900 text-white rounded-xl"
                     >
                         <h5 className="font-bold text-teal-300">{selectedTopic.name}</h5>
                         <p className="text-sm mt-1">{selectedTopic.details}</p>
-                        <button onClick={() => setSelectedTopic(null)} className="text-xs text-stone-400 mt-2">Close</button>
+                        <button onClick={() => setSelectedTopic(null)} className="text-xs text-zinc-400 mt-2">Close</button>
                     </motion.div>
                 )}
             </AnimatePresence>

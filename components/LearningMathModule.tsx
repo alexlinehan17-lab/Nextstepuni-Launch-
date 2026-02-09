@@ -27,16 +27,16 @@ const PartialCreditCalculator = () => {
     else if(steps.formula) marks = 5;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Partial Credit Calculator</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">Scenario: 10-mark Scale D Question. How many marks do you get?</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Partial Credit Calculator</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Scenario: 10-mark Scale D Question. How many marks do you get?</p>
              <div className="grid grid-cols-2 gap-3">
                 <button onClick={() => setSteps(s => ({...s, formula: !s.formula}))} className={`p-4 rounded-xl border-2 ${steps.formula ? 'bg-emerald-50' : ''}`}>Wrote correct formula</button>
                 <button onClick={() => setSteps(s => ({...s, sub: !s.sub}))} className={`p-4 rounded-xl border-2 ${steps.sub ? 'bg-emerald-50' : ''}`}>Substituted a value</button>
                 <button onClick={() => setSteps(s => ({...s, slip: !s.slip, blunder: false}))} className={`p-4 rounded-xl border-2 ${steps.slip ? 'bg-amber-50' : ''}`}>Made a minor calculation 'Slip'</button>
                 <button onClick={() => setSteps(s => ({...s, blunder: !s.blunder, slip: false}))} className={`p-4 rounded-xl border-2 ${steps.blunder ? 'bg-rose-50' : ''}`}>Made a major concept 'Blunder'</button>
              </div>
-             <div className="mt-8 p-4 bg-stone-900 rounded-xl text-center text-white">
+             <div className="mt-8 p-4 bg-zinc-900 rounded-xl text-center text-white">
                 You get <span className="font-bold text-2xl text-gray-400">{marks}/10</span> marks.
             </div>
         </div>
@@ -55,15 +55,15 @@ const ProblemSorter = () => {
     };
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Problem Sorter</h4>
-            <p className="text-center text-sm text-stone-500 mb-8">Train your discriminative skills: Is it a Permutation (order matters) or a Combination (order doesn't)?</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Problem Sorter</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Train your discriminative skills: Is it a Permutation (order matters) or a Combination (order doesn't)?</p>
             {problems.map(p => (
                 <div key={p.id} className="mb-4">
-                    <p className="p-4 bg-stone-100 rounded-lg text-center font-bold">{p.text}</p>
+                    <p className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-center font-bold">{p.text}</p>
                     <div className="grid grid-cols-2 gap-2 mt-2">
-                        <button onClick={() => handleChoice(p.id, 'p')} className={`p-2 rounded-lg border-2 ${choice[p.id] && (choice[p.id] === 'p' && p.type === 'p' ? 'bg-emerald-100 border-emerald-300' : choice[p.id] === 'p' ? 'bg-rose-100 border-rose-300' : 'bg-stone-100 border-stone-200')}`}>Permutation</button>
-                        <button onClick={() => handleChoice(p.id, 'c')} className={`p-2 rounded-lg border-2 ${choice[p.id] && (choice[p.id] === 'c' && p.type === 'c' ? 'bg-emerald-100 border-emerald-300' : choice[p.id] === 'c' ? 'bg-rose-100 border-rose-300' : 'bg-stone-100 border-stone-200')}`}>Combination</button>
+                        <button onClick={() => handleChoice(p.id, 'p')} className={`p-2 rounded-lg border-2 ${choice[p.id] && (choice[p.id] === 'p' && p.type === 'p' ? 'bg-emerald-100 border-emerald-300' : choice[p.id] === 'p' ? 'bg-rose-100 border-rose-300' : 'bg-zinc-100 border-zinc-200 dark:border-zinc-700')}`}>Permutation</button>
+                        <button onClick={() => handleChoice(p.id, 'c')} className={`p-2 rounded-lg border-2 ${choice[p.id] && (choice[p.id] === 'c' && p.type === 'c' ? 'bg-emerald-100 border-emerald-300' : choice[p.id] === 'c' ? 'bg-rose-100 border-rose-300' : 'bg-zinc-100 border-zinc-200 dark:border-zinc-700')}`}>Combination</button>
                     </div>
                 </div>
             ))}
@@ -76,15 +76,15 @@ const ErrorLog = () => {
     const [type, setType] = useState<string | null>(null);
 
     return(
-         <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">My Error Log</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">Log a mistake from a practice question to turn it into a learning opportunity.</p>
+         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">My Error Log</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Log a mistake from a practice question to turn it into a learning opportunity.</p>
              <div className="space-y-4">
-                <textarea value={error} onChange={e => setError(e.target.value)} placeholder="Describe the mistake..." className="w-full h-24 p-4 bg-stone-50 border-2 rounded-xl focus:outline-none focus:border-gray-400"></textarea>
+                <textarea value={error} onChange={e => setError(e.target.value)} placeholder="Describe the mistake..." className="w-full h-24 p-4 bg-zinc-50 dark:bg-zinc-800/50 border-2 rounded-xl focus:outline-none focus:border-gray-400"></textarea>
                 <div className="grid grid-cols-3 gap-2">
-                    <button onClick={() => setType('Concept')} className={`p-2 text-xs rounded-lg border-2 ${type === 'Concept' ? 'bg-gray-800 text-white' : 'bg-stone-100'}`}>Concept Error</button>
-                    <button onClick={() => setType('Procedural')} className={`p-2 text-xs rounded-lg border-2 ${type === 'Procedural' ? 'bg-gray-800 text-white' : 'bg-stone-100'}`}>Procedural Error</button>
-                    <button onClick={() => setType('Reading')} className={`p-2 text-xs rounded-lg border-2 ${type === 'Reading' ? 'bg-gray-800 text-white' : 'bg-stone-100'}`}>Reading Error</button>
+                    <button onClick={() => setType('Concept')} className={`p-2 text-xs rounded-lg border-2 ${type === 'Concept' ? 'bg-gray-800 text-white' : 'bg-zinc-100'}`}>Concept Error</button>
+                    <button onClick={() => setType('Procedural')} className={`p-2 text-xs rounded-lg border-2 ${type === 'Procedural' ? 'bg-gray-800 text-white' : 'bg-zinc-100'}`}>Procedural Error</button>
+                    <button onClick={() => setType('Reading')} className={`p-2 text-xs rounded-lg border-2 ${type === 'Reading' ? 'bg-gray-800 text-white' : 'bg-zinc-100'}`}>Reading Error</button>
                 </div>
              </div>
              {error && type && <p className="text-center mt-4 text-sm font-bold text-emerald-600">Error logged. Now you won't make it again.</p>}

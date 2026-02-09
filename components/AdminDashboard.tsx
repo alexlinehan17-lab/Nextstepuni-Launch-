@@ -68,12 +68,12 @@ const StudentProgressCard: React.FC<{ user: SessionUser; userProgress: UserProgr
   const overallProgress = allCourses.length > 0 ? totalProgressSum / allCourses.length : 0;
 
   return (
-    <div className="bg-white dark:bg-stone-900/50 border border-stone-200/50 dark:border-white/10 rounded-2xl p-6 shadow-sm">
-      <div className="flex items-center gap-4 border-b border-stone-200/50 dark:border-white/10 pb-4 mb-4">
-        <img src={getAvatarUrl(user.avatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-stone-200" />
+    <div className="bg-white dark:bg-zinc-900/50 border border-zinc-200/50 dark:border-white/10 rounded-2xl p-6 shadow-sm">
+      <div className="flex items-center gap-4 border-b border-zinc-200/50 dark:border-white/10 pb-4 mb-4">
+        <img src={getAvatarUrl(user.avatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
         <div>
-          <p className="font-bold text-stone-800 dark:text-white">{user.name}</p>
-          <p className="text-xs text-stone-500">Overall Progress: {overallProgress.toFixed(0)}%</p>
+          <p className="font-bold text-zinc-800 dark:text-white">{user.name}</p>
+          <p className="text-xs text-zinc-500">Overall Progress: {overallProgress.toFixed(0)}%</p>
         </div>
       </div>
       <div className="space-y-3 max-h-64 overflow-y-auto pr-2">
@@ -82,10 +82,10 @@ const StudentProgressCard: React.FC<{ user: SessionUser; userProgress: UserProgr
           return (
             <div key={category.id}>
               <div className="flex justify-between items-center">
-                <p className="text-xs font-medium text-stone-600 dark:text-stone-400 truncate">{category.title}</p>
-                <p className="text-xs font-bold text-stone-500 dark:text-stone-300">{categoryProgress.toFixed(0)}%</p>
+                <p className="text-xs font-medium text-zinc-600 dark:text-zinc-400 truncate">{category.title}</p>
+                <p className="text-xs font-bold text-zinc-500 dark:text-zinc-300">{categoryProgress.toFixed(0)}%</p>
               </div>
-              <div className="w-full bg-stone-200 dark:bg-stone-700 rounded-full h-2 mt-1">
+              <div className="w-full bg-zinc-200 dark:bg-zinc-700 rounded-full h-2 mt-1">
                 <MotionDiv
                   className={`h-2 rounded-full ${categoryProgress >= 100 ? 'bg-emerald-500' : 'bg-blue-500'}`}
                   initial={{ width: 0 }}
@@ -144,10 +144,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses }) =>
     <div className="min-h-screen w-full p-8 pt-24">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-4 mb-8">
-            <GraduationCap size={32} className="text-stone-700 dark:text-stone-300"/>
+            <GraduationCap size={32} className="text-zinc-700 dark:text-zinc-300"/>
             <div>
-                 <h1 className="font-serif text-3xl font-semibold text-stone-900 dark:text-white">Admin Dashboard</h1>
-                 <p className="text-stone-500 dark:text-stone-400">Student Progress Overview</p>
+                 <h1 className="font-serif text-3xl font-semibold text-zinc-900 dark:text-white">Admin Dashboard</h1>
+                 <p className="text-zinc-500 dark:text-zinc-400">Student Progress Overview</p>
             </div>
         </div>
 
@@ -165,8 +165,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses }) =>
             ))}
             </div>
         ) : (
-            <div className="text-center py-16 border border-dashed border-stone-300 dark:border-stone-700 rounded-2xl">
-                <p className="text-stone-500">No student accounts found or data could not be loaded.</p>
+            <div className="text-center py-16 border border-dashed border-zinc-300 dark:border-zinc-700 rounded-2xl">
+                <p className="text-zinc-500">No student accounts found or data could not be loaded.</p>
             </div>
         )}
       </div>

@@ -19,12 +19,12 @@ const theme = cyanTheme;
 const PFCShutdownSimulator = () => {
     const [stress, setStress] = useState(false);
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl text-center">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">PFC Shutdown Simulator</h4>
-             <p className="text-sm text-stone-500 mb-6">Click to see what happens when your Amygdala hijacks your brain.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">PFC Shutdown Simulator</h4>
+             <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Click to see what happens when your Amygdala hijacks your brain.</p>
              <div className="flex justify-center items-center gap-4">
                 <motion.div animate={{opacity: stress ? 1: 0.3}} className="text-center"><Zap size={48} className="text-rose-500 mx-auto"/><p className="font-bold">Amygdala</p></motion.div>
-                <motion.div className="w-24 h-1 bg-stone-300" animate={{backgroundColor: stress ? '#ef4444' : '#3b82f6'}} />
+                <motion.div className="w-24 h-1 bg-zinc-300" animate={{backgroundColor: stress ? '#ef4444' : '#3b82f6'}} />
                 <motion.div animate={{opacity: stress ? 0.3: 1}} className="text-center"><Brain size={48} className="text-blue-500 mx-auto"/><p className="font-bold">PFC</p></motion.div>
              </div>
              <button onClick={() => setStress(!stress)} className="mt-6 px-4 py-2 bg-rose-500 text-white font-bold text-sm rounded-lg">{stress ? 'De-escalate' : 'Trigger Stress'}</button>
@@ -34,8 +34,8 @@ const PFCShutdownSimulator = () => {
 
 const ArousalReappraisal = () => {
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Arousal Reappraisal</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Arousal Reappraisal</h4>
              <div className="relative h-48 w-full">
                 <div className="absolute top-4 left-4 p-3 bg-rose-100 text-rose-800 rounded-lg font-bold">Anxiety</div>
                 <div className="absolute top-4 right-4 p-3 bg-emerald-100 text-emerald-800 rounded-lg font-bold">Excitement</div>
@@ -45,14 +45,14 @@ const ArousalReappraisal = () => {
                     <path d="M 20 10 Q 100 120 180 10" stroke="#ef4444" strokeWidth="2" strokeDasharray="4"/>
                 </svg>
              </div>
-             <p className="text-center text-sm text-stone-500">It's easier to shift valence (Anxiety &#8594; Excitement) than to change arousal state (Anxiety &#8594; Calm).</p>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400">It's easier to shift valence (Anxiety &#8594; Excitement) than to change arousal state (Anxiety &#8594; Calm).</p>
         </div>
     );
 };
 
 const BoxBreathing = () => (
-     <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl text-center">
-         <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Box Breathing</h4>
+     <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
+         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Box Breathing</h4>
          <div className="w-24 h-24 mx-auto my-6 relative">
              <motion.div className="w-full h-full border-4 border-cyan-300 rounded-lg" animate={{rotate: 360}} transition={{duration: 16, repeat: Infinity, ease: 'linear'}}/>
              <motion.div className="absolute w-4 h-4 bg-cyan-500 rounded-full" style={{top: -8, left:'50%', x:'-50%'}} animate={{offsetDistance: "100%"}} transition={{duration: 16, repeat: Infinity, ease: 'linear'}}/>

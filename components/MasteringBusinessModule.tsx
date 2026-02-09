@@ -24,14 +24,14 @@ const ABQLinkDrill = () => {
         "LINK: In the text, 'Mary holds weekly meetings to get staff feedback on new menu ideas...'"
     ];
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">ABQ "Link" Methodology Drill</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">ABQ "Link" Methodology Drill</h4>
              <AnimatePresence mode="wait">
-                <motion.div key={step} initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} exit={{opacity:0, y:-10}} className="mt-6 p-6 bg-stone-100 rounded-2xl min-h-[80px] flex items-center justify-center">
+                <motion.div key={step} initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} exit={{opacity:0, y:-10}} className="mt-6 p-6 bg-zinc-100 dark:bg-zinc-800 rounded-2xl min-h-[80px] flex items-center justify-center">
                     <p className="font-mono text-center text-sm">{steps[step]}</p>
                 </motion.div>
              </AnimatePresence>
-             <div className="flex justify-center mt-6"><button onClick={() => setStep(s => (s + 1) % steps.length)} className="px-4 py-2 bg-stone-800 text-white text-xs font-bold rounded-lg">Next Step</button></div>
+             <div className="flex justify-center mt-6"><button onClick={() => setStep(s => (s + 1) % steps.length)} className="px-4 py-2 bg-zinc-800 text-white text-xs font-bold rounded-lg">Next Step</button></div>
         </div>
     );
 };

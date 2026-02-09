@@ -32,10 +32,10 @@ const CognitiveLoadBalancer = () => {
     );
 
     return (
-         <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Cognitive Load Balancer</h4>
-            <p className="text-center text-sm text-stone-500 mb-6">Your Working Memory is limited. Keep the total load below 100% and maximize Germane load to learn effectively.</p>
-            <div className="w-full h-8 bg-stone-100 rounded-full flex overflow-hidden mb-6">
+         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Cognitive Load Balancer</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Your Working Memory is limited. Keep the total load below 100% and maximize Germane load to learn effectively.</p>
+            <div className="w-full h-8 bg-zinc-100 dark:bg-zinc-800 rounded-full flex overflow-hidden mb-6">
                 <motion.div className="h-full bg-blue-500" animate={{width: `${loads.intrinsic}%`}} />
                 <motion.div className="h-full bg-rose-500" animate={{width: `${loads.extraneous}%`}} />
                 <motion.div className="h-full bg-teal-500" animate={{width: `${loads.germane}%`}} />
@@ -45,7 +45,7 @@ const CognitiveLoadBalancer = () => {
                 <Slider name="Extraneous Load" value={loads.extraneous} setter={val => setLoads({...loads, extraneous: val})} color="rose"/>
                 <Slider name="Germane Load" value={loads.germane} setter={val => setLoads({...loads, germane: val})} color="teal"/>
             </div>
-            <div className={`mt-6 p-4 rounded-xl text-center text-white font-bold ${overload ? 'bg-rose-500' : learning ? 'bg-emerald-500' : 'bg-stone-400'}`}>
+            <div className={`mt-6 p-4 rounded-xl text-center text-white font-bold ${overload ? 'bg-rose-500' : learning ? 'bg-emerald-500' : 'bg-zinc-400'}`}>
                 {overload ? 'COGNITIVE OVERLOAD! NO LEARNING.' : learning ? 'OPTIMAL LEARNING IN PROGRESS!' : 'LOW LEARNING. INCREASE GERMANE LOAD.'}
             </div>
         </div>
@@ -55,15 +55,15 @@ const CognitiveLoadBalancer = () => {
 const StairsEscalator = () => {
     const [choice, setChoice] = useState<'stairs' | 'escalator' | null>(null);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Stairs vs. Escalator</h4>
-            <p className="text-center text-sm text-stone-500 mb-6">Which path leads to real learning?</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Stairs vs. Escalator</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Which path leads to real learning?</p>
             <div className="grid grid-cols-2 gap-4">
-                <button onClick={() => setChoice('escalator')} className="p-4 bg-stone-100 border-2 border-stone-200 rounded-xl text-center"><strong>The Escalator:</strong> A perfectly clear lecture, re-reading your notes.</button>
-                <button onClick={() => setChoice('stairs')} className="p-4 bg-stone-100 border-2 border-stone-200 rounded-xl text-center"><strong>The Stairs:</strong> Struggling with a past paper, trying to explain a topic.</button>
+                <button onClick={() => setChoice('escalator')} className="p-4 bg-zinc-100 dark:bg-zinc-800 border-2 border-zinc-200 dark:border-zinc-700 rounded-xl text-center"><strong>The Escalator:</strong> A perfectly clear lecture, re-reading your notes.</button>
+                <button onClick={() => setChoice('stairs')} className="p-4 bg-zinc-100 dark:bg-zinc-800 border-2 border-zinc-200 dark:border-zinc-700 rounded-xl text-center"><strong>The Stairs:</strong> Struggling with a past paper, trying to explain a topic.</button>
             </div>
             {choice &&
-            <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6 p-4 rounded-xl text-sm text-white bg-stone-900">
+            <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6 p-4 rounded-xl text-sm text-white bg-zinc-900">
                 {choice === 'escalator' && <p><strong>You chose the escalator.</strong> It feels smooth and effortless. You arrive at the top (the answer) quickly. But your muscles (your brain) did no work. The feeling of fluency is high, but long-term learning is low.</p>}
                 {choice === 'stairs' && <p><strong>You chose the stairs.</strong> It's slow and feels hard. You might stumble (make mistakes). But this effort is what strengthens your cardiovascular system (your long-term memory). The feeling of learning is low, but the actual result is high.</p>}
             </motion.div>}
@@ -88,9 +88,9 @@ const OptimizedFrictionEngine = () => {
   if (isOptimal) resultText = "OPTIMAL LEARNING ENGAGED: You've achieved Optimized Friction!";
 
   return (
-    <div className="my-12 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-      <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Optimized Friction Engine</h4>
-      <p className="text-center text-sm text-stone-500 mb-8">Calibrate the three core variables to achieve true learning.</p>
+    <div className="my-12 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Optimized Friction Engine</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Calibrate the three core variables to achieve true learning.</p>
 
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="w-full md:w-1/3 flex justify-center items-center h-48">
@@ -101,7 +101,7 @@ const OptimizedFrictionEngine = () => {
           >
             <motion.div className="absolute inset-0 rounded-full bg-teal-500 opacity-10" animate={{ scale: [1, 1.2, 1], opacity: isOptimal ? [0.1, 0.3, 0.1] : 0.1 }} transition={{ duration: 2, repeat: Infinity }} />
             <motion.div className="absolute inset-2 rounded-full bg-teal-500 opacity-20" animate={{ scale: [1, 1.1, 1], opacity: isOptimal ? [0.2, 0.4, 0.2] : 0.2 }} transition={{ duration: 1.5, repeat: Infinity, delay: 0.5 }}/>
-            <div className="absolute inset-4 rounded-full bg-white border-4 border-teal-500 flex items-center justify-center">
+            <div className="absolute inset-4 rounded-full bg-white dark:bg-zinc-800 border-4 border-teal-500 flex items-center justify-center">
               <Puzzle size={32} className="text-teal-600" />
             </div>
           </motion.div>
@@ -110,19 +110,19 @@ const OptimizedFrictionEngine = () => {
           {/* ZPD CONTROL */}
           <div>
             <div className="flex items-center gap-2 mb-2">
-                <Scaling size={16} className="text-stone-500"/>
+                <Scaling size={16} className="text-zinc-500 dark:text-zinc-400"/>
                 <p className="text-sm font-bold">1. Zone of Proximal Development</p>
             </div>
-            <div className="grid grid-cols-3 gap-1 bg-stone-100 p-1 rounded-full">
+            <div className="grid grid-cols-3 gap-1 bg-zinc-100 dark:bg-zinc-800 p-1 rounded-full">
               {zpdLabels.map((label, i) => (
-                <button key={label} onClick={() => setZpd(i)} className={`py-2 text-xs font-bold rounded-full transition-colors ${zpd === i ? 'text-white shadow-md' : 'text-stone-500'}`} style={{backgroundColor: zpd === i ? zpdColors[i] : 'transparent'}}>{label.split(' (')[0]}</button>
+                <button key={label} onClick={() => setZpd(i)} className={`py-2 text-xs font-bold rounded-full transition-colors ${zpd === i ? 'text-white shadow-md' : 'text-zinc-500 dark:text-zinc-400'}`} style={{backgroundColor: zpd === i ? zpdColors[i] : 'transparent'}}>{label.split(' (')[0]}</button>
               ))}
             </div>
           </div>
           {/* EXTRANEOUS LOAD CONTROL */}
            <div>
              <div className="flex items-center gap-2 mb-2">
-                <ZapOff size={16} className="text-stone-500"/>
+                <ZapOff size={16} className="text-zinc-500 dark:text-zinc-400"/>
                 <p className="text-sm font-bold">2. Extraneous Load (Minimize)</p>
             </div>
             <input type="range" min="0" max="100" value={extraneousLoad} onChange={e => setExtraneousLoad(parseInt(e.target.value))} className="w-full accent-rose-500" />
@@ -130,14 +130,14 @@ const OptimizedFrictionEngine = () => {
           {/* DESIRABLE DIFFICULTIES CONTROL */}
            <div>
             <div className="flex items-center gap-2 mb-2">
-                <Puzzle size={16} className="text-stone-500"/>
+                <Puzzle size={16} className="text-zinc-500 dark:text-zinc-400"/>
                 <p className="text-sm font-bold">3. Desirable Difficulties (Maximize)</p>
             </div>
             <input type="range" min="0" max="100" value={desirableDifficulties} onChange={e => setDesirableDifficulties(parseInt(e.target.value))} className="w-full accent-emerald-500" />
            </div>
         </div>
       </div>
-       <div className={`mt-8 p-4 rounded-xl text-center text-sm font-bold transition-all ${isOptimal ? 'bg-emerald-100 text-emerald-800' : 'bg-stone-100 text-stone-600'}`}>
+       <div className={`mt-8 p-4 rounded-xl text-center text-sm font-bold transition-all ${isOptimal ? 'bg-emerald-100 text-emerald-800' : 'bg-zinc-100 text-zinc-600 dark:text-zinc-300'}`}>
          {resultText}
       </div>
     </div>

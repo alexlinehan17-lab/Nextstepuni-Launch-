@@ -20,14 +20,14 @@ const theme = orangeTheme;
 
 const AllostaticLoadVisualizer = () => {
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Leaving Cert Allostatic Load</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">Your brain's "wear and tear" isn't constant. It builds over time and spikes during exam clusters.</p>
-             <div className="w-full h-40 bg-stone-50 rounded-lg p-4">
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Leaving Cert Allostatic Load</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Your brain's "wear and tear" isn't constant. It builds over time and spikes during exam clusters.</p>
+             <div className="w-full h-40 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg p-4">
                 <svg viewBox="0 0 500 100" className="w-full h-full" preserveAspectRatio="none">
                     <path d="M 0 90 C 100 80, 200 60, 300 50 L 400 40 L 410 20 L 420 40 L 430 30 L 440 10 L 450 35 L 500 30" fill="none" stroke="#f97316" strokeWidth="3" />
-                    <text x="50" y="95" fontSize="10" className="fill-stone-400">5th Year</text>
-                    <text x="350" y="95" fontSize="10" className="fill-stone-400">6th Year</text>
+                    <text x="50" y="95" fontSize="10" className="fill-zinc-400">5th Year</text>
+                    <text x="350" y="95" fontSize="10" className="fill-zinc-400">6th Year</text>
                     <text x="450" y="95" fontSize="10" className="fill-rose-500 font-bold">Exams</text>
                 </svg>
              </div>
@@ -39,10 +39,10 @@ const SleepCycleArchitect = () => {
     const [sleepHours, setSleepHours] = useState(8);
     const remLost = Math.max(0, (8 - sleepHours) * 25); // Rough calc
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Sleep Cycle Architect</h4>
-            <p className="text-center text-sm text-stone-500 mb-8">Use the slider to see what happens when you cut sleep short. Notice what gets cut first.</p>
-            <div className="h-24 w-full bg-stone-100 rounded-lg flex">
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Sleep Cycle Architect</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Use the slider to see what happens when you cut sleep short. Notice what gets cut first.</p>
+            <div className="h-24 w-full bg-zinc-100 dark:bg-zinc-800 rounded-lg flex">
                 <div className="h-full bg-slate-400" style={{width: `${(sleepHours/9)*100}%`}}>
                     {/* Cycles */}
                     <div className="h-full w-full flex">

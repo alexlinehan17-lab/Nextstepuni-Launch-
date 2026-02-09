@@ -17,8 +17,8 @@ const theme = emeraldTheme;
 const DopingSimulator = () => {
     const [doping, setDoping] = useState<'n'|'p'|null>(null);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Semiconductor Doping</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Semiconductor Doping</h4>
             <div className="flex justify-center gap-4 my-4">
                 <button onClick={()=>setDoping('n')} className="px-4 py-2 bg-blue-100 text-blue-800 rounded-lg">N-Type Doping</button>
                 <button onClick={()=>setDoping('p')} className="px-4 py-2 bg-rose-100 text-rose-800 rounded-lg">P-Type Doping</button>

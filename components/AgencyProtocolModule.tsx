@@ -26,10 +26,10 @@ const FlipCard = ({ front, back, frontIcon: FrontIcon, backIcon: BackIcon }: { f
         animate={{ rotateY: isFlipped ? 180 : 0 }}
         transition={{ duration: 0.6, ease: 'easeInOut' }}
       >
-        <div className="absolute w-full h-full [backface-visibility:hidden] rounded-3xl p-6 flex flex-col items-center justify-center text-center border border-stone-200 bg-white shadow-lg cursor-pointer group">
-          <FrontIcon size={32} className="mb-4 text-stone-400 group-hover:text-blue-500 transition-colors"/>
-          <p className="text-sm font-bold leading-snug text-stone-700">{front}</p>
-          <div className="absolute bottom-4 right-4 flex items-center gap-1 text-stone-300 group-hover:text-blue-500 transition-colors">
+        <div className="absolute w-full h-full [backface-visibility:hidden] rounded-3xl p-6 flex flex-col items-center justify-center text-center border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 shadow-lg cursor-pointer group">
+          <FrontIcon size={32} className="mb-4 text-zinc-400 group-hover:text-blue-500 transition-colors"/>
+          <p className="text-sm font-bold leading-snug text-zinc-700 dark:text-zinc-200">{front}</p>
+          <div className="absolute bottom-4 right-4 flex items-center gap-1 text-zinc-300 group-hover:text-blue-500 transition-colors">
             <RotateCcw size={10} />
             <span className="text-[9px] font-bold">FLIP</span>
           </div>
@@ -65,15 +65,15 @@ const MindsetSorter = () => {
   };
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-      <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Driver vs. Passenger Diagnostic</h4>
-      <p className="text-center text-sm text-stone-500 mb-8">After a bad result, sort these thoughts into the correct lane.</p>
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Driver vs. Passenger Diagnostic</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">After a bad result, sort these thoughts into the correct lane.</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[200px]">
         <div className="p-6 bg-rose-50 border-2 border-dashed border-rose-200 rounded-3xl">
            <h5 className="font-bold text-rose-700 mb-4 text-center">Passenger Lane</h5>
            <AnimatePresence>
              {passenger.map(p => (
-                <motion.div layoutId={`${p.id}`} key={p.id} className="p-4 bg-white rounded-xl shadow-sm text-sm font-medium text-stone-700 text-center mb-2">
+                <motion.div layoutId={`${p.id}`} key={p.id} className="p-4 bg-white dark:bg-zinc-800 rounded-xl shadow-sm text-sm font-medium text-zinc-700 dark:text-zinc-200 text-center mb-2">
                    "{p.text}"
                 </motion.div>
              ))}
@@ -83,7 +83,7 @@ const MindsetSorter = () => {
            <h5 className="font-bold text-blue-700 mb-4 text-center">Driver Lane</h5>
             <AnimatePresence>
              {driver.map(d => (
-                <motion.div layoutId={`${d.id}`} key={d.id} className="p-4 bg-white rounded-xl shadow-sm text-sm font-medium text-stone-700 text-center mb-2">
+                <motion.div layoutId={`${d.id}`} key={d.id} className="p-4 bg-white dark:bg-zinc-800 rounded-xl shadow-sm text-sm font-medium text-zinc-700 dark:text-zinc-200 text-center mb-2">
                    "{d.text}"
                 </motion.div>
              ))}
@@ -93,7 +93,7 @@ const MindsetSorter = () => {
       <div className="mt-8 flex flex-wrap justify-center gap-3">
         <AnimatePresence>
           {thoughts.map(thought => (
-             <motion.button layoutId={`${thought.id}`} key={thought.id} onClick={() => handleSort(thought)} className="p-4 bg-stone-100 border border-stone-200 rounded-xl text-sm font-bold text-stone-800 hover:bg-stone-200 transition-colors">
+             <motion.button layoutId={`${thought.id}`} key={thought.id} onClick={() => handleSort(thought)} className="p-4 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl text-sm font-bold text-zinc-800 dark:text-white hover:bg-zinc-200 dark:hover:bg-zinc-600 transition-colors">
                "{thought.text}"
              </motion.button>
           ))}
@@ -145,10 +145,10 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
               <MicroCommitment theme={theme}>
                 <p>Open your phone's calendar right now. Schedule a 15-minute slot for tomorrow called 'Driving Practice' and use it to do the small action you list below.</p>
               </MicroCommitment>
-              <div className="my-10 p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl space-y-6">
-                <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Program Your Destination</h4>
-                <div className="space-y-3"><label className="block text-[10px] font-semibold text-stone-600 uppercase ml-4 text-left">The Destination (Your Dream Course/Career):</label><input value={futureSelf} onChange={(e) => setFutureSelf(e.target.value)} placeholder="e.g., Computer Science at Trinity, Physiotherapy" className="w-full bg-stone-50 border-2 border-stone-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
-                <div className="space-y-3"><label className="block text-[10px] font-semibold text-stone-600 uppercase ml-4 text-left">The First Turn (One Small Action Tomorrow):</label><input value={dailyAction} onChange={(e) => setDailyAction(e.target.value)} placeholder="e.g., Do 20 minutes of Maths revision before school" className="w-full bg-stone-50 border-2 border-stone-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
+              <div className="my-10 p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl space-y-6">
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Program Your Destination</h4>
+                <div className="space-y-3"><label className="block text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 text-left">The Destination (Your Dream Course/Career):</label><input value={futureSelf} onChange={(e) => setFutureSelf(e.target.value)} placeholder="e.g., Computer Science at Trinity, Physiotherapy" className="w-full bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
+                <div className="space-y-3"><label className="block text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 text-left">The First Turn (One Small Action Tomorrow):</label><input value={dailyAction} onChange={(e) => setDailyAction(e.target.value)} placeholder="e.g., Do 20 minutes of Maths revision before school" className="w-full bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
                 {futureSelf && dailyAction && <motion.div initial={{opacity:0}} animate={{opacity:1}} className="text-center pt-4 text-blue-600 font-bold text-sm">Route locked in. The journey starts now.</motion.div>}
               </div>
             </ReadingSection>
@@ -171,16 +171,16 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
                <MicroCommitment theme={theme}>
                 <p>Look at your notes from your hardest subject. Find one thing you don't fully understand. Write it down on a post-it note and stick it to your school journal as a reminder to ask the teacher tomorrow.</p>
               </MicroCommitment>
-               <div className="my-10 p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-                  <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Branching Scenario: The Confusion</h4>
-                  <p className="text-center text-sm text-stone-500 mb-8">You don't understand the teacher's explanation. What's your move?</p>
+               <div className="my-10 p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+                  <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Branching Scenario: The Confusion</h4>
+                  <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">You don't understand the teacher's explanation. What's your move?</p>
                   <div className="space-y-4 max-w-lg mx-auto">
-                    <button onClick={() => setScenarioChoice('passive')} className="w-full text-left p-4 bg-stone-50 hover:bg-stone-100 rounded-xl border border-stone-200 transition-all"><strong>Passenger Move:</strong> Say nothing and hope you figure it out later.</button>
-                    <button onClick={() => setScenarioChoice('agentic')} className="w-full text-left p-4 bg-stone-50 hover:bg-stone-100 rounded-xl border border-stone-200 transition-all"><strong>Driver Move:</strong> Ask a strategic question to clarify.</button>
+                    <button onClick={() => setScenarioChoice('passive')} className="w-full text-left p-4 bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-xl border border-zinc-200 dark:border-zinc-700 transition-all"><strong>Passenger Move:</strong> Say nothing and hope you figure it out later.</button>
+                    <button onClick={() => setScenarioChoice('agentic')} className="w-full text-left p-4 bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-xl border border-zinc-200 dark:border-zinc-700 transition-all"><strong>Driver Move:</strong> Ask a strategic question to clarify.</button>
                   </div>
                   <AnimatePresence>
                   {scenarioChoice && (
-                    <motion.div initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} className="mt-8 p-6 rounded-2xl bg-stone-900 text-white">
+                    <motion.div initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} className="mt-8 p-6 rounded-2xl bg-zinc-900 text-white">
                       {scenarioChoice === 'passive' && <p><strong className="text-rose-400">Roadblock:</strong> You've missed a turn. The feeling of being "lost" grows, making it harder to catch up later.</p>}
                       {scenarioChoice === 'agentic' && <p><strong className="text-emerald-400">Success:</strong> You get a clear direction, help others in the car, and show the teacher you're a co-pilot, not just a passenger. This is Agentic Engagement.</p>}
                     </motion.div>
@@ -197,12 +197,12 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
               <MicroCommitment theme={theme}>
                 <p>Write this 'Reframe' on a small piece of paper: "This is hard because it's a high-level problem. Solving it is a step toward my goal." Fold it up and put it in your wallet or pencil case.</p>
               </MicroCommitment>
-              <div className="my-10 p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl flex flex-col items-center gap-6">
-                <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Mental Suspension System</h4>
-                <p className="text-sm text-stone-500 -mt-4">Next time you hit a mental pothole, run this script:</p>
-                <div className="w-full max-w-md text-left bg-stone-50 p-6 rounded-2xl border border-stone-200 space-y-4">
-                  <p className={`font-mono text-sm transition-opacity ${reframe ? 'text-stone-400' : 'text-rose-600 font-bold'}`}>&gt; Initial thought: "This is too hard. I can't do it."</p>
-                  <button onClick={() => setReframe(true)} className={`w-full text-left font-mono text-sm transition-opacity ${reframe ? 'text-blue-600 font-bold' : 'text-stone-400'}`}>&gt; Reframe: "This is hard because it's a high-level problem. This is what progress feels like."</button>
+              <div className="my-10 p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl flex flex-col items-center gap-6">
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Mental Suspension System</h4>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400 -mt-4">Next time you hit a mental pothole, run this script:</p>
+                <div className="w-full max-w-md text-left bg-zinc-50 dark:bg-zinc-800/50 p-6 rounded-2xl border border-zinc-200 dark:border-zinc-700 space-y-4">
+                  <p className={`font-mono text-sm transition-opacity ${reframe ? 'text-zinc-400' : 'text-rose-600 font-bold'}`}>&gt; Initial thought: "This is too hard. I can't do it."</p>
+                  <button onClick={() => setReframe(true)} className={`w-full text-left font-mono text-sm transition-opacity ${reframe ? 'text-blue-600 font-bold' : 'text-zinc-400'}`}>&gt; Reframe: "This is hard because it's a high-level problem. This is what progress feels like."</button>
                 </div>
               </div>
             </ReadingSection>
@@ -242,23 +242,23 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
             <ReadingSection title="Your Route Plan: Building Your Driver Identity." eyebrow="Step 6" icon={Map} theme={theme}>
               <p>A Driver identity isn't something you find; it's something you build through deliberate, daily action. It's the route plan that guides you when motivation is low and the road is long. First, arrange your protocol components into your personal pre-drive checklist.</p>
 
-              <div className="my-10 p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl space-y-6">
-                <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Assemble Your Pre-Drive Checklist</h4>
+              <div className="my-10 p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl space-y-6">
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Assemble Your Pre-Drive Checklist</h4>
                 <Reorder.Group axis="y" values={battlePlanItems} onReorder={setBattlePlanItems} className="space-y-3 max-w-md mx-auto">
                   {battlePlanItems.map(item => (
-                    <Reorder.Item key={item.id} value={item} className="p-4 bg-stone-50 rounded-xl shadow-sm flex items-center gap-4 cursor-grabbing border border-stone-200">
-                      <ChevronsUpDown className="text-stone-400" />
-                      <span className="font-bold text-stone-700">{item.text}</span>
+                    <Reorder.Item key={item.id} value={item} className="p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl shadow-sm flex items-center gap-4 cursor-grabbing border border-zinc-200 dark:border-zinc-700">
+                      <ChevronsUpDown className="text-zinc-400" />
+                      <span className="font-bold text-zinc-700 dark:text-zinc-200">{item.text}</span>
                     </Reorder.Item>
                   ))}
                 </Reorder.Group>
               </div>
 
-              <div className="my-10 p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl space-y-6">
-                <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Finalise Your Route Plan</h4>
-                <div className="space-y-3"><label className="block text-[10px] font-semibold text-stone-600 uppercase ml-4 text-left">My Destination (LC Goal):</label><input placeholder="e.g., 500 points to get Engineering at UCD" className="w-full bg-stone-50 border-2 border-stone-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
-                <div className="space-y-3"><label className="block text-[10px] font-semibold text-stone-600 uppercase ml-4 text-left">My Custom Engine (My Advantage):</label><input placeholder="e.g., I'm good at staying calm under pressure." className="w-full bg-stone-50 border-2 border-stone-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
-                <div className="space-y-3"><label className="block text-[10px] font-semibold text-stone-600 uppercase ml-4 text-left">My First Turn (Classroom Hack):</label><input placeholder="e.g., Tomorrow in Maths, I will ask the teacher to explain the 'why' behind one formula." className="w-full bg-stone-50 border-2 border-stone-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
+              <div className="my-10 p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl space-y-6">
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Finalise Your Route Plan</h4>
+                <div className="space-y-3"><label className="block text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 text-left">My Destination (LC Goal):</label><input placeholder="e.g., 500 points to get Engineering at UCD" className="w-full bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
+                <div className="space-y-3"><label className="block text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 text-left">My Custom Engine (My Advantage):</label><input placeholder="e.g., I'm good at staying calm under pressure." className="w-full bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
+                <div className="space-y-3"><label className="block text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 text-left">My First Turn (Classroom Hack):</label><input placeholder="e.g., Tomorrow in Maths, I will ask the teacher to explain the 'why' behind one formula." className="w-full bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
               </div>
             </ReadingSection>
           )}

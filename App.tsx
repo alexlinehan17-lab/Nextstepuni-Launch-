@@ -24,7 +24,7 @@ const UserProfile = ({ user, onLogout, darkMode, setDarkMode }: { user: SessionU
   return (
     <div className="relative">
       <button onClick={() => setIsOpen(!isOpen)} className="flex items-center gap-2">
-        <img src={getAvatarUrl(user.avatar)} alt="User Avatar" className="w-10 h-10 rounded-full bg-stone-200" />
+        <img src={getAvatarUrl(user.avatar)} alt="User Avatar" className="w-10 h-10 rounded-full bg-zinc-200" />
       </button>
       <AnimatePresence>
         {isOpen && (
@@ -32,18 +32,18 @@ const UserProfile = ({ user, onLogout, darkMode, setDarkMode }: { user: SessionU
             initial={{ opacity: 0, y: -10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
-            className="absolute top-full right-0 mt-2 w-64 bg-white dark:bg-[#1a1a1a] border border-stone-200/50 dark:border-white/[0.08] rounded-2xl shadow-[0_24px_64px_rgba(0,0,0,0.12)] dark:shadow-[0_24px_64px_rgba(0,0,0,0.5)] p-4"
+            className="absolute top-full right-0 mt-2 w-64 bg-white dark:bg-zinc-900 border border-zinc-200/50 dark:border-white/[0.08] rounded-2xl shadow-[0_24px_64px_rgba(0,0,0,0.12)] dark:shadow-[0_24px_64px_rgba(0,0,0,0.5)] p-4"
           >
-            <div className="flex items-center gap-3 border-b border-stone-200/50 dark:border-white/10 pb-3 mb-3">
-              <img src={getAvatarUrl(user.avatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-stone-200" />
+            <div className="flex items-center gap-3 border-b border-zinc-200/50 dark:border-white/10 pb-3 mb-3">
+              <img src={getAvatarUrl(user.avatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
               <div>
-                <p className="font-bold text-stone-800 dark:text-white">{user.name}</p>
-                <p className="text-xs text-stone-500">{user.isAdmin ? 'Admin' : 'Student'}</p>
+                <p className="font-bold text-zinc-800 dark:text-white">{user.name}</p>
+                <p className="text-xs text-zinc-500">{user.isAdmin ? 'Admin' : 'Student'}</p>
               </div>
             </div>
 
-            <button onClick={() => setDarkMode(!darkMode)} className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-stone-100 dark:hover:bg-white/5">
-                <span className="text-sm font-medium text-stone-700 dark:text-stone-300">Theme</span>
+            <button onClick={() => setDarkMode(!darkMode)} className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5">
+                <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Theme</span>
                  <AnimatePresence mode="wait">
                     {darkMode ? (
                       <motion.div key="sun" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} transition={{ duration: 0.2 }}>
@@ -51,12 +51,12 @@ const UserProfile = ({ user, onLogout, darkMode, setDarkMode }: { user: SessionU
                       </motion.div>
                     ) : (
                       <motion.div key="moon" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} transition={{ duration: 0.2 }}>
-                        <Moon size={16} className="text-stone-600" />
+                        <Moon size={16} className="text-zinc-600" />
                       </motion.div>
                     )}
                 </AnimatePresence>
             </button>
-            <button onClick={onLogout} className="w-full flex items-center gap-2 p-2 rounded-lg hover:bg-stone-100 dark:hover:bg-white/5 mt-1">
+            <button onClick={onLogout} className="w-full flex items-center gap-2 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5 mt-1">
               <LogOut size={16} className="text-rose-500" />
               <span className="text-sm font-medium text-rose-500">Log Out</span>
             </button>
@@ -207,7 +207,7 @@ const App: React.FC = () => {
         <div className="flex flex-col items-center justify-center min-h-screen text-center p-8 relative overflow-hidden">
           {/* Warm ambient background */}
           <div className="fixed inset-0 z-0 pointer-events-none">
-            <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-gradient-to-br from-[#DA7756]/[0.07] to-transparent rounded-full blur-[100px]" />
+            <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-gradient-to-br from-indigo-500/[0.07] to-transparent rounded-full blur-[100px]" />
             <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-gradient-to-tl from-amber-500/[0.05] to-transparent rounded-full blur-[100px]" />
             <div className="absolute top-[40%] left-[50%] -translate-x-1/2 w-[40%] h-[30%] bg-gradient-to-b from-purple-500/[0.03] to-transparent rounded-full blur-[80px]" />
           </div>
@@ -215,15 +215,15 @@ const App: React.FC = () => {
           <img src="/pwc-logo.png" alt="PwC" className="absolute top-8 left-8 h-24 md:h-32 object-contain z-10" />
 
           <div className="relative z-10 flex flex-col items-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#DA7756]/70 mb-6">The Learning Lab</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-indigo-500/70 mb-6">The Learning Lab</p>
             <h1 className="font-serif text-5xl md:text-7xl text-black dark:text-white tracking-tighter leading-none font-semibold">
               Nextstepuni
             </h1>
-            <p className="mt-4 text-lg text-stone-500 dark:text-stone-400 max-w-md">Science-backed strategies to give you an unfair advantage in your exams.</p>
+            <p className="mt-4 text-lg text-zinc-500 dark:text-zinc-400 max-w-md">Science-backed strategies to give you an unfair advantage in your exams.</p>
             <div className="mt-10">
               <Auth onLoginSuccess={handleLoginSuccess} />
             </div>
-            <p className="mt-6 text-xs text-stone-400 dark:text-stone-500">A Nextstepuni / PwC Collaboration</p>
+            <p className="mt-6 text-xs text-zinc-400 dark:text-zinc-500">A Nextstepuni / PwC Collaboration</p>
           </div>
 
           <button
@@ -292,7 +292,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#FDFCFB] dark:bg-[radial-gradient(ellipse_at_center,_#111_0%,#0A0A0B_80%)] transition-colors duration-500">
+    <div className="min-h-screen bg-white dark:bg-zinc-950 transition-colors duration-500">
       <div className="fixed top-6 right-6 z-[100]">
         {user ? (
           <UserProfile user={user} onLogout={handleLogout} darkMode={darkMode} setDarkMode={setDarkMode} />

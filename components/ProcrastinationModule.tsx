@@ -29,11 +29,11 @@ const ProcrastinationEquation = () => {
     );
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Procrastination Equation</h4>
-            <p className="text-center text-sm text-stone-500 mb-8">Adjust the sliders to see what drives your motivation.</p>
-            <div className="p-6 bg-stone-900 rounded-2xl text-center mb-8">
-                <p className="text-sm text-stone-400">Your Motivation Score:</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Procrastination Equation</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Adjust the sliders to see what drives your motivation.</p>
+            <div className="p-6 bg-zinc-900 rounded-2xl text-center mb-8">
+                <p className="text-sm text-zinc-400">Your Motivation Score:</p>
                 <p className="text-5xl font-semibold text-white tracking-tighter"><motion.span initial={{}} animate={{}}>{Math.round(utility)}</motion.span></p>
             </div>
             <div className="grid grid-cols-2 gap-6">
@@ -54,14 +54,14 @@ const IfThenAutopilot = () => {
     };
 
     return(
-         <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The "If-Then" Autopilot</h4>
-            <p className="text-center text-sm text-stone-500 mb-8">Pre-load a decision to bypass willpower. Click to create a plan.</p>
+         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The "If-Then" Autopilot</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Pre-load a decision to bypass willpower. Click to create a plan.</p>
             <div className="flex justify-center">
                 <button onClick={createPlan} className="px-5 py-3 bg-orange-500 text-white font-bold rounded-lg text-sm">Create Plan</button>
             </div>
             {plan &&
-            <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6 p-4 bg-stone-900 rounded-xl text-white text-center font-mono text-sm">
+            <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6 p-4 bg-zinc-900 rounded-xl text-white text-center font-mono text-sm">
                 Plan created: IF <span className="text-rose-400">{plan.if}</span>, THEN <span className="text-emerald-400">{plan.then}</span>
             </motion.div>}
         </div>
@@ -83,22 +83,22 @@ const GuiltSpiral = () => {
     }
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Guilt Spiral</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">"Tough love" doesn't work. It just adds more negative emotion to the fire.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Guilt Spiral</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">"Tough love" doesn't work. It just adds more negative emotion to the fire.</p>
              <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
                     <p className="font-bold text-sm text-rose-600 mb-2">Guilt Meter</p>
-                    <div className="w-full h-6 bg-stone-100 rounded-full"><motion.div className="h-full bg-rose-500 rounded-full" initial={{width: "10%"}} animate={{width: `${guilt}%`}} /></div>
+                    <div className="w-full h-6 bg-zinc-100 dark:bg-zinc-800 rounded-full"><motion.div className="h-full bg-rose-500 rounded-full" initial={{width: "10%"}} animate={{width: `${guilt}%`}} /></div>
                 </div>
                 <div className="text-center">
                     <p className="font-bold text-sm text-orange-600 mb-2">Urge to Avoid</p>
-                    <div className="w-full h-6 bg-stone-100 rounded-full"><motion.div className="h-full bg-orange-500 rounded-full" initial={{width: "10%"}} animate={{width: `${avoidance}%`}} /></div>
+                    <div className="w-full h-6 bg-zinc-100 dark:bg-zinc-800 rounded-full"><motion.div className="h-full bg-orange-500 rounded-full" initial={{width: "10%"}} animate={{width: `${avoidance}%`}} /></div>
                 </div>
             </div>
              <div className="flex justify-center gap-4">
                 <button onClick={addCriticism} className="px-4 py-2 bg-rose-100 text-rose-800 text-xs font-bold rounded-lg">Add Self-Criticism</button>
-                <button onClick={reset} className="px-4 py-2 bg-stone-100 text-stone-800 text-xs font-bold rounded-lg">Reset</button>
+                <button onClick={reset} className="px-4 py-2 bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-white text-xs font-bold rounded-lg">Reset</button>
              </div>
         </div>
     );
@@ -109,15 +109,15 @@ const CircuitBreaker = () => {
     const containsForgive = reframe.toLowerCase().includes('forgive');
     const containsAction = reframe.toLowerCase().includes('i will');
     return(
-         <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Circuit Breaker</h4>
-            <p className="text-center text-sm text-stone-500 mb-8">Rewrite this self-critical thought into a self-forgiving, action-oriented statement.</p>
+         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Circuit Breaker</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Rewrite this self-critical thought into a self-forgiving, action-oriented statement.</p>
             <p className="p-4 bg-rose-50 border border-rose-200 rounded-xl text-center font-mono text-rose-800 mb-4">"I'm so useless, I wasted the whole day."</p>
-            <textarea value={reframe} onChange={e => setReframe(e.target.value)} placeholder="Your new script..." className="w-full h-24 p-4 bg-stone-50 border-2 border-stone-200 rounded-xl focus:outline-none focus:border-orange-400" />
+            <textarea value={reframe} onChange={e => setReframe(e.target.value)} placeholder="Your new script..." className="w-full h-24 p-4 bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-200 dark:border-zinc-700 rounded-xl focus:outline-none focus:border-orange-400" />
             {(containsForgive || containsAction) &&
                 <div className="mt-4 grid grid-cols-2 gap-2 text-xs">
-                    <p className={containsForgive ? 'text-emerald-600 font-bold' : 'text-stone-400'}>Contains Self-Forgiveness</p>
-                    <p className={containsAction ? 'text-emerald-600 font-bold' : 'text-stone-400'}>Bridges to Action</p>
+                    <p className={containsForgive ? 'text-emerald-600 font-bold' : 'text-zinc-400'}>Contains Self-Forgiveness</p>
+                    <p className={containsAction ? 'text-emerald-600 font-bold' : 'text-zinc-400'}>Bridges to Action</p>
                 </div>
             }
         </div>

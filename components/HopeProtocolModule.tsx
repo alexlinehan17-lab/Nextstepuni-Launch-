@@ -24,9 +24,9 @@ const HopeDiagnostic = () => {
     { myth: "Hope is the same as optimism.", fact: "FALSE. Optimism is a general belief that things will be okay. Hope is the specific belief that YOU can MAKE things okay through planning and effort." },
   ];
   return (
-    <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl space-y-8">
-      <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Hope Circuit Diagnostic</h4>
-      <p className="text-center text-sm text-stone-500 -mt-4">Let's bust some common myths about where hope comes from.</p>
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl space-y-8">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Hope Circuit Diagnostic</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 -mt-4">Let's bust some common myths about where hope comes from.</p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {myths.map((item, i) => <MythBusterCard key={i} front={item.myth} back={item.fact} />)}
       </div>
@@ -44,8 +44,8 @@ const MythBusterCard: React.FC<MythBusterCardProps> = ({ front, back }) => {
   return (
     <div className="w-full h-40 [perspective:1000px]" onClick={() => setIsFlipped(!isFlipped)}>
       <motion.div className="relative w-full h-full transition-transform duration-700" style={{ transformStyle: 'preserve-3d' }} animate={{ rotateX: isFlipped ? 180 : 0 }}>
-        <div className="absolute w-full h-full [backface-visibility:hidden] rounded-3xl p-6 flex flex-col items-center justify-center text-center border-2 border-dashed border-stone-300 bg-stone-50 cursor-pointer group">
-          <p className="text-sm font-bold leading-snug text-stone-700">{front}</p>
+        <div className="absolute w-full h-full [backface-visibility:hidden] rounded-3xl p-6 flex flex-col items-center justify-center text-center border-2 border-dashed border-zinc-300 bg-zinc-50 dark:bg-zinc-800/50 cursor-pointer group">
+          <p className="text-sm font-bold leading-snug text-zinc-700 dark:text-zinc-200">{front}</p>
         </div>
         <div className="absolute w-full h-full [backface-visibility:hidden] rounded-3xl p-4 flex flex-col items-center justify-center text-center border-2 border-emerald-700 bg-emerald-600 text-white shadow-lg" style={{ transform: 'rotateX(180deg)' }}>
           <p className="text-xs font-bold leading-snug">{back}</p>
@@ -56,14 +56,14 @@ const MythBusterCard: React.FC<MythBusterCardProps> = ({ front, back }) => {
 };
 
 const BrainMismatchDiagram = () => (
-  <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl flex flex-col items-center">
-    <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic mb-2">Adolescent Brain: System Mismatch</h4>
-    <p className="text-center text-sm text-stone-500 mb-12 max-w-md">Your emotional 'accelerator' is at full volume, while your rational 'brakes' are still being fine-tuned.</p>
+  <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl flex flex-col items-center">
+    <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic mb-2">Adolescent Brain: System Mismatch</h4>
+    <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-12 max-w-md">Your emotional 'accelerator' is at full volume, while your rational 'brakes' are still being fine-tuned.</p>
 
     <div className="w-full max-w-sm h-56 flex justify-around items-end gap-8 px-4">
       {/* Limbic System Bar */}
       <div className="w-full flex flex-col items-center h-full">
-        <div className="flex-grow w-16 bg-stone-100 rounded-t-lg overflow-hidden relative">
+        <div className="flex-grow w-16 bg-zinc-100 dark:bg-zinc-800 rounded-t-lg overflow-hidden relative">
           <motion.div
             className="absolute bottom-0 w-full bg-rose-500"
             initial={{ height: "90%" }}
@@ -74,13 +74,13 @@ const BrainMismatchDiagram = () => (
         </div>
         <div className="text-center mt-4">
           <p className="font-bold text-rose-600">Limbic System</p>
-          <p className="text-xs text-stone-500">The Accelerator (Max Volume)</p>
+          <p className="text-xs text-zinc-500 dark:text-zinc-400">The Accelerator (Max Volume)</p>
         </div>
       </div>
 
       {/* Prefrontal Cortex Bar */}
       <div className="w-full flex flex-col items-center h-full">
-        <div className="flex-grow w-16 bg-stone-100 rounded-t-lg overflow-hidden relative">
+        <div className="flex-grow w-16 bg-zinc-100 dark:bg-zinc-800 rounded-t-lg overflow-hidden relative">
           <motion.div
             className="absolute bottom-0 w-full bg-emerald-500"
             initial={{ height: "0%" }}
@@ -88,7 +88,7 @@ const BrainMismatchDiagram = () => (
             transition={{ duration: 2, delay: 0.5, ease: "easeOut" }}
           />
            <motion.div
-            className="absolute bottom-0 w-full h-[30%] bg-white"
+            className="absolute bottom-0 w-full h-[30%] bg-white dark:bg-zinc-800"
             initial={{ opacity: 0 }}
             animate={{ opacity: [0, 0.5, 0] }}
             transition={{ duration: 1, repeat: Infinity, ease: "easeInOut", delay: 1 }}
@@ -96,7 +96,7 @@ const BrainMismatchDiagram = () => (
         </div>
         <div className="text-center mt-4">
           <p className="font-bold text-emerald-600">Prefrontal Cortex</p>
-          <p className="text-xs text-stone-500">The Brakes (Fine-Tuning)</p>
+          <p className="text-xs text-zinc-500 dark:text-zinc-400">The Brakes (Fine-Tuning)</p>
         </div>
       </div>
     </div>
@@ -117,9 +117,9 @@ const DopamineDial = () => {
   const offset = circumference - (motivation / 100) * circumference;
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-      <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Interactive: The Dopamine Dial</h4>
-      <p className="text-center text-sm text-stone-500 mb-8">Scenario: You need to study for a history exam. Choose your thought process.</p>
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Interactive: The Dopamine Dial</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Scenario: You need to study for a history exam. Choose your thought process.</p>
 
       <div className="w-full flex justify-center items-end h-24">
         <svg width="160" height="80" viewBox="0 0 160 80" className="overflow-visible">
@@ -151,7 +151,7 @@ const DopamineDial = () => {
 
       <AnimatePresence>
         {choice !== 'none' && (
-          <motion.div initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} className="mt-8 p-6 rounded-2xl bg-stone-900 text-white">
+          <motion.div initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} className="mt-8 p-6 rounded-2xl bg-zinc-900 text-white">
             {choice === 'cold' && <p><strong className="text-blue-400">Result:</strong> A small motivational increase. The task is abstract and lacks an immediate reward signal for your brain.</p>}
             {choice === 'hot' && <p><strong className="text-rose-400">Result:</strong> Major dopamine boost! Vividly simulating future success makes the reward feel real *now*, flooding your brain with the motivation to start.</p>}
           </motion.div>
@@ -181,27 +181,27 @@ const HopeMap = () => {
   };
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl space-y-8">
-      <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">My Hope Circuit Blueprint</h4>
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl space-y-8">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">My Hope Circuit Blueprint</h4>
       <div>
-        <label className="block text-xs font-semibold text-stone-600 uppercase ml-4 mb-2">The Power Source (Your Goal)</label>
-        <input value={goal} onChange={(e) => setGoal(e.target.value)} placeholder="e.g., Get a H2 in Leaving Cert Maths" className="w-full bg-stone-50 border-2 border-stone-100 rounded-xl p-4 focus:border-emerald-500 outline-none transition-colors" />
+        <label className="block text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 mb-2">The Power Source (Your Goal)</label>
+        <input value={goal} onChange={(e) => setGoal(e.target.value)} placeholder="e.g., Get a H2 in Leaving Cert Maths" className="w-full bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-100 rounded-xl p-4 focus:border-emerald-500 outline-none transition-colors" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <label className="block text-xs font-semibold text-stone-600 uppercase ml-4 mb-2">The Wiring (Pathways)</label>
+          <label className="block text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 mb-2">The Wiring (Pathways)</label>
           <div className="space-y-2">
             {pathways.map((p, i) => (
-              <input key={i} value={p} onChange={(e) => updatePathway(i, e.target.value)} placeholder={`Route ${i + 1}`} className="w-full bg-stone-50 border-2 border-stone-100 rounded-xl p-3 focus:border-emerald-500 outline-none transition-colors" />
+              <input key={i} value={p} onChange={(e) => updatePathway(i, e.target.value)} placeholder={`Route ${i + 1}`} className="w-full bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-100 rounded-xl p-3 focus:border-emerald-500 outline-none transition-colors" />
             ))}
           </div>
           <button onClick={addPathway} className="mt-2 text-xs font-bold text-emerald-600 hover:text-emerald-800">+ Add another route</button>
         </div>
         <div>
-          <label className="block text-xs font-semibold text-stone-600 uppercase ml-4 mb-2">Short Circuits (Obstacles)</label>
+          <label className="block text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 mb-2">Short Circuits (Obstacles)</label>
           <div className="space-y-2">
             {obstacles.map((o, i) => (
-              <input key={i} value={o} onChange={(e) => updateObstacle(i, e.target.value)} placeholder={`Potential problem ${i + 1}`} className="w-full bg-stone-50 border-2 border-stone-100 rounded-xl p-3 focus:border-emerald-500 outline-none transition-colors" />
+              <input key={i} value={o} onChange={(e) => updateObstacle(i, e.target.value)} placeholder={`Potential problem ${i + 1}`} className="w-full bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-100 rounded-xl p-3 focus:border-emerald-500 outline-none transition-colors" />
             ))}
           </div>
           <button onClick={addObstacle} className="mt-2 text-xs font-bold text-emerald-600 hover:text-emerald-800">+ Add another problem</button>
@@ -219,11 +219,11 @@ const CortisolSimulator = () => {
     'high-hope': "M0,50 C40,50 60,10 100,10 L250,10 C300,10 320,70 400,80",
   }
   return (
-     <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-        <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Cortisol Curve Simulator</h4>
-        <p className="text-center text-sm text-stone-500 mb-2">Stressor Detected: Bad Mock Exam Result.</p>
-        <p className="text-center text-sm text-stone-500 mb-8">How does your system respond?</p>
-        <div className="bg-stone-50/50 p-6 rounded-2xl">
+     <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Cortisol Curve Simulator</h4>
+        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Stressor Detected: Bad Mock Exam Result.</p>
+        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">How does your system respond?</p>
+        <div className="bg-zinc-50/50 p-6 rounded-2xl">
           <svg viewBox="0 0 400 100" className="w-full h-auto">
             <AnimatePresence>
             <motion.path

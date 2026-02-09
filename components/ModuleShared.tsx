@@ -24,7 +24,7 @@ export const Highlight = ({ children, description, theme }: HighlightProps) => {
           e.stopPropagation();
           setIsOpen(!isOpen);
         }}
-        className={`relative inline-flex items-center px-2 py-0.5 font-bold ${theme.highlightBg} ${theme.highlightText} rounded-md cursor-help ${theme.highlightHover} transition-all duration-300 ${theme.highlightDecor} underline decoration-2 underline-offset-4`}
+        className={`relative inline-flex items-center px-2 py-0.5 font-bold ${theme.highlightBg} dark:bg-white/10 ${theme.highlightText} dark:text-white rounded-md cursor-help ${theme.highlightHover} transition-all duration-300 ${theme.highlightDecor} underline decoration-2 underline-offset-4`}
       >
         <span className="not-italic">{children}</span>
       </button>
@@ -36,12 +36,12 @@ export const Highlight = ({ children, description, theme }: HighlightProps) => {
               initial={{ opacity: 0, scale: 0.9, y: 10, x: "-50%" }}
               animate={{ opacity: 1, scale: 1, y: 0, x: "-50%" }}
               exit={{ opacity: 0, scale: 0.9, y: 10, x: "-50%" }}
-              className="absolute z-[70] bottom-full left-1/2 mb-6 w-72 p-6 bg-stone-900/95 text-white text-xs rounded-2xl shadow-2xl pointer-events-auto leading-relaxed border border-white/10 backdrop-blur-xl whitespace-normal text-left"
+              className="absolute z-[70] bottom-full left-1/2 mb-6 w-72 p-6 bg-zinc-900/95 text-white text-xs rounded-2xl shadow-2xl pointer-events-auto leading-relaxed border border-white/10 backdrop-blur-xl whitespace-normal text-left"
               style={{ transformOrigin: 'bottom center' }}
             >
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[10px] border-t-stone-900/95"></div>
-              <p className={`font-sans font-bold ${theme.tooltipAccent} mb-2 uppercase tracking-[0.2em] text-[9px]`}>The Academic Insight</p>
-              <p className="text-stone-200 font-medium">{description}</p>
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[10px] border-t-zinc-900/95"></div>
+              <p className={`font-sans font-bold ${theme.tooltipAccent} mb-2 uppercase tracking-wider text-[9px]`}>Key Insight</p>
+              <p className="text-zinc-200 font-medium">{description}</p>
             </motion.div>
           </>
         )}
@@ -62,18 +62,18 @@ export const ReadingSection = ({ title, eyebrow, icon: Icon, children, theme }: 
   <article className="animate-fade-in">
     <header className="mb-12 text-left relative">
       <div className="absolute -left-16 top-0 hidden xl:block">
-        <div className={`w-12 h-12 rounded-2xl bg-stone-900 flex items-center justify-center ${theme.readingIconColor} shadow-xl border border-white/10`}>
+        <div className={`w-12 h-12 rounded-2xl bg-zinc-900 flex items-center justify-center ${theme.readingIconColor} shadow-xl border border-white/10`}>
           <Icon size={24} />
         </div>
       </div>
-      <span className={`inline-flex items-center gap-2 px-3 py-1 ${theme.readingEyebrowBg} ${theme.readingEyebrowText} text-[10px] font-semibold tracking-[0.2em] uppercase rounded-full mb-4`}>
+      <span className={`inline-flex items-center gap-2 px-3 py-1 ${theme.readingEyebrowBg} ${theme.readingEyebrowText} text-[10px] font-semibold tracking-wider uppercase rounded-full mb-4`}>
         {eyebrow}
       </span>
-      <h2 className="font-serif text-3xl md:text-5xl leading-tight tracking-tight text-stone-900 font-semibold">
+      <h2 className="font-serif text-3xl md:text-5xl leading-tight tracking-tight text-zinc-900 dark:text-white font-semibold">
         {title}
       </h2>
     </header>
-    <div className="prose prose-stone prose-lg max-w-none space-y-8 text-stone-600 leading-relaxed font-serif overflow-visible">
+    <div className="prose prose-stone dark:prose-invert prose-lg max-w-none space-y-8 text-zinc-600 dark:text-zinc-300 leading-relaxed font-serif overflow-visible">
       {children}
     </div>
   </article>
@@ -91,8 +91,8 @@ export const MicroCommitment = ({ children, theme }: MicroCommitmentProps) => (
         <Flag size={20} />
       </div>
       <div>
-        <h4 className={`font-bold ${theme.microTitle} text-sm uppercase tracking-widest`}>Your Mission (Under 5 Mins)</h4>
-        <div className="text-stone-600 mt-2 font-medium leading-relaxed">
+        <h4 className={`font-bold ${theme.microTitle} dark:text-white text-sm uppercase tracking-widest`}>Quick Challenge (Under 5 Mins)</h4>
+        <div className="text-zinc-600 dark:text-zinc-300 mt-2 font-medium leading-relaxed">
           {children}
         </div>
       </div>

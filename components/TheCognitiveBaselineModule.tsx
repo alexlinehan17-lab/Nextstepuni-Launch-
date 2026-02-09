@@ -30,18 +30,18 @@ const CognitiveBaselineChecklist = () => {
     ];
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">My Cognitive Baseline Checklist</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">This isn't a "nice to have" list. This is the biological minimum for high performance.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">My Cognitive Baseline Checklist</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">This isn't a "nice to have" list. This is the biological minimum for high performance.</p>
              <div className="space-y-4">
                 {items.map(item => (
-                    <div key={item.key} onClick={() => toggleCheck(item.key)} className={`p-4 rounded-2xl border-2 flex items-center gap-4 cursor-pointer transition-all ${checks[item.key] ? 'bg-emerald-50 border-emerald-300' : 'bg-stone-50 border-stone-200'}`}>
-                        <div className={`w-8 h-8 rounded-full flex items-center justify-center text-white ${checks[item.key] ? 'bg-emerald-500' : 'bg-stone-300'}`}>
+                    <div key={item.key} onClick={() => toggleCheck(item.key)} className={`p-4 rounded-2xl border-2 flex items-center gap-4 cursor-pointer transition-all ${checks[item.key] ? 'bg-emerald-50 border-emerald-300' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700'}`}>
+                        <div className={`w-8 h-8 rounded-full flex items-center justify-center text-white ${checks[item.key] ? 'bg-emerald-500' : 'bg-zinc-300'}`}>
                             {checks[item.key] && <CheckCircle2 size={16} />}
                         </div>
                         <div>
                             <p className="font-bold">{item.label}</p>
-                            <p className="text-xs text-stone-500">{item.details}</p>
+                            <p className="text-xs text-zinc-500 dark:text-zinc-400">{item.details}</p>
                         </div>
                     </div>
                 ))}

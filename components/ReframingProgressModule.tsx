@@ -46,20 +46,20 @@ const KanbanBoard = () => {
     };
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Kanban Flow</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">Drag tasks to the "Done" column to secure a "Win".</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Kanban Flow</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Drag tasks to the "Done" column to secure a "Win".</p>
              <div className="grid grid-cols-3 gap-4">
                 {['todo', 'doing', 'done'].map(col => (
-                    <div key={col} data-column={col} className="kanban-col p-4 bg-stone-50 rounded-2xl min-h-[200px]">
-                        <h5 className="font-bold text-center text-sm uppercase tracking-widest text-stone-500">{col} {col === 'done' && `(${wins})`}</h5>
+                    <div key={col} data-column={col} className="kanban-col p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-2xl min-h-[200px]">
+                        <h5 className="font-bold text-center text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-400">{col} {col === 'done' && `(${wins})`}</h5>
                         <div className="mt-4 space-y-2">
                             {tasks.filter(t => t.column === col).map(task => (
                                 <motion.div
                                     key={task.id}
                                     drag
                                     onDragEnd={(e, info) => onDragEnd(info, task)}
-                                    className="p-3 bg-white rounded-lg shadow-sm text-sm font-semibold cursor-grab active:cursor-grabbing"
+                                    className="p-3 bg-white dark:bg-zinc-800 rounded-lg shadow-sm text-sm font-semibold cursor-grab active:cursor-grabbing"
                                 >{task.text}</motion.div>
                             ))}
                         </div>
@@ -91,9 +91,9 @@ const RetrospectiveLog = () => {
     };
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Retrospective Log</h4>
-            <p className="text-center text-sm text-stone-500 mb-8">Rate your confidence. Let the "Worst First" rule decide your next move.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Retrospective Log</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Rate your confidence. Let the "Worst First" rule decide your next move.</p>
             {topics.map(t => (
                 <div key={t.name} className="flex items-center justify-between p-2">
                     <span className="font-bold">{t.name}</span>
@@ -105,7 +105,7 @@ const RetrospectiveLog = () => {
                 </div>
             ))}
              <div className="mt-6 text-center">
-                 <button onClick={findNext} className="px-4 py-2 bg-stone-800 text-white text-xs font-bold rounded-lg">Find Next Task</button>
+                 <button onClick={findNext} className="px-4 py-2 bg-zinc-800 text-white text-xs font-bold rounded-lg">Find Next Task</button>
                  <p className="mt-4 text-sm">Next up: <span className="font-bold text-teal-600">{nextTopic}</span></p>
              </div>
         </div>

@@ -4,12 +4,18 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-    ArrowLeft, Lightbulb, Zap, Clock, Brain, SlidersHorizontal, Shield, User, Repeat, Wrench, RotateCcw,
-    Heart, TrendingUp, Users, BookOpen, Sun, ArrowDown, GitBranch
+import {
+    ArrowLeft, Lightbulb, Zap, Clock, Shield, Wrench, RotateCcw,
+    TrendingUp, Users, BookOpen, GitBranch, ChevronDown, ChevronUp, BookMarked
 } from 'lucide-react';
+import {
+    type GameState, type Choice, type Scene, type HistoryItem, type StatKey, type Phase,
+    STORY_DATA, ROUTE_RESOLVERS, INITIAL_GAME_STATE, PHASE_METADATA,
+    ARCHETYPES, STAT_TO_MODULES, STAT_LABELS, STAT_COLORS, STAT_BG_COLORS,
+    getStatGrade, getKeyTurningPoints, getWeakestStat,
+} from './journeySimulatorData';
 
 const MotionDiv = motion.div as any;
 const MotionButton = motion.button as any;
@@ -18,299 +24,24 @@ interface InnovationZoneProps {
   onBack: () => void;
 }
 
-type GameState = {
-    energy: number;
-    academicCap: number;
-    socialSupport: number;
-    systemSavvy: number;
-    resilience: number;
+const STAT_ICONS: Record<StatKey, React.ElementType> = {
+    energy: Zap,
+    academicCap: TrendingUp,
+    socialSupport: Users,
+    systemSavvy: BookOpen,
+    resilience: Shield,
 };
 
-type Choice = {
-    text: string;
-    effects: Partial<GameState>;
-    nextSceneId: string;
-};
+// ─── StatBar ─────────────────────────────────────────────────────────────────
 
-type LogicGate = {
-    condition: (state: GameState) => boolean;
-    nextSceneId: string;
-}
-
-type Scene = {
-    id: string;
-    phase: 'Foundation' | 'Pressure Cooker' | 'Final Stretch';
-    month: string;
-    title: string;
-    text: string;
-    choices?: Choice[];
-    logicGates?: LogicGate[];
-    defaultNextSceneId?: string;
-};
-
-type HistoryItem = {
-    scene: Scene;
-    choiceText: string;
-    effects: Partial<GameState>;
-};
-
-
-const STORY_DATA: { [key: string]: Scene } = {
-    'START': {
-        id: 'START',
-        phase: 'Foundation',
-        month: 'September',
-        title: "The First Week Back",
-        text: "It's the first week of 6th year. The air is thick with talk of points and the CAO. A friend who got into college last year tells you, 'You should definitely apply for the HEAR scheme, it's a game-changer for getting in.'",
-        choices: [
-            { text: "Look into it. Sounds like a priority.", effects: { systemSavvy: 15, energy: -5 }, nextSceneId: 'MATHS_CLASS' },
-            { text: "Maybe later. I need to focus on just studying for now.", effects: { systemSavvy: -10, academicCap: 5 }, nextSceneId: 'MATHS_CLASS' },
-        ],
-    },
-    'MATHS_CLASS': {
-        id: 'MATHS_CLASS',
-        phase: 'Foundation',
-        month: 'October',
-        title: "The Pace of Higher Maths",
-        text: "Your Higher Level Maths teacher is moving at lightning speed through Complex Numbers. You're starting to feel lost, but you don't want to look stupid by asking a question.",
-        choices: [
-            { text: "Stay quiet and try to figure it out yourself later.", effects: { academicCap: -10, resilience: -5 }, nextSceneId: 'FIRST_BAD_GRADE' },
-            { text: "Ask the teacher to explain it again after class.", effects: { academicCap: 10, socialSupport: 5, energy: -5 }, nextSceneId: 'FIRST_BAD_GRADE' },
-        ],
-    },
-    'FIRST_BAD_GRADE': {
-        id: 'FIRST_BAD_GRADE',
-        phase: 'Foundation',
-        month: 'October',
-        title: "The First Bad Grade",
-        text: "You get back your first big test in English. It's a H4. Your heart sinks. What's your immediate internal story?",
-        choices: [
-            { text: "'This proves I'm not a H1 student.' Spend the evening feeling demotivated.", effects: { resilience: -15, energy: -10 }, nextSceneId: 'STUDY_METHOD_CHOICE' },
-            { text: "'This is data. I haven't mastered this *yet*. I'll review the feedback tomorrow.'", effects: { resilience: 10, academicCap: 5 }, nextSceneId: 'STUDY_METHOD_CHOICE' },
-        ]
-    },
-    'STUDY_METHOD_CHOICE': {
-        id: 'STUDY_METHOD_CHOICE',
-        phase: 'Foundation',
-        month: 'November',
-        title: "Sunday Night Study",
-        text: "It's a Sunday night and you have a big Biology test on Friday. You have a 2-hour study block. What's the plan?",
-        choices: [
-            { text: "Passive Power-through: Re-read and highlight the key chapters. It feels productive.", effects: { energy: -5, academicCap: 5 }, nextSceneId: 'FORGETTING_CURVE_CRISIS' },
-            { text: "Active Recall Assault: Close the book and 'blurt' everything you know onto a page. It feels hard.", effects: { energy: -15, academicCap: 15, resilience: 5 }, nextSceneId: 'STUDY_TECHNIQUE_UPGRADE' },
-        ]
-    },
-    'FORGETTING_CURVE_CRISIS': {
-        id: 'FORGETTING_CURVE_CRISIS',
-        phase: 'Foundation',
-        month: 'November',
-        title: "The 'I Forgot Everything' Moment",
-        text: "You spent all weekend highlighting Biology chapters. Today, your teacher gives a pop quiz and your mind is a total blank. The 'Illusion of Competence' has struck. How do you react?",
-        choices: [
-            { text: "Mindset Shift: 'I haven't mastered this YET.' Switch to Active Recall tonight.", effects: { resilience: 15, academicCap: 10, energy: -10 }, nextSceneId: 'PART_TIME_JOB' },
-            { text: "Fixed Frustration: 'I'm just not a Science person.' Go back to re-reading.", effects: { resilience: -10, academicCap: -5, energy: -5 }, nextSceneId: 'PART_TIME_JOB' },
-        ],
-    },
-    'STUDY_TECHNIQUE_UPGRADE': {
-        id: 'STUDY_TECHNIQUE_UPGRADE',
-        phase: 'Foundation',
-        month: 'November',
-        title: "Technique Upgrade",
-        text: "Because you chose Active Recall, your brain flagged the information as important. The pop quiz felt challenging, but you could retrieve most of the key facts. You feel a surge of confidence.",
-        choices: [
-            { text: "Double down: 'This works. I'll build Spaced Repetition into my routine.'", effects: { academicCap: 10, systemSavvy: 10 }, nextSceneId: 'PART_TIME_JOB' },
-            { text: "Get complacent: 'Great, I can ease off a bit now.'", effects: { academicCap: -5, energy: 5 }, nextSceneId: 'PART_TIME_JOB' },
-        ],
-    },
-    'PART_TIME_JOB': {
-        id: 'PART_TIME_JOB',
-        phase: 'Foundation',
-        month: 'December',
-        title: "Work-Life Balance",
-        text: "Your boss at your weekend job asks if you can cover an extra shift on Thursday night. It's good money, but it's a big study night for you.",
-        choices: [
-            { text: "Take the shift. The money is too important right now.", effects: { energy: -20, academicCap: -10 }, nextSceneId: 'MOCKS_LOOM' },
-            { text: "Politely decline. 'The Leaving' has to come first.", effects: { resilience: 5, academicCap: 5, energy: -5 }, nextSceneId: 'MOCKS_LOOM' },
-        ],
-    },
-     'MOCKS_LOOM': {
-        id: 'MOCKS_LOOM',
-        phase: 'Pressure Cooker',
-        month: 'January',
-        title: "The Mocks Are Looming",
-        text: "It's the week before the Mocks. You feel completely overwhelmed by the amount of material you need to cover. The panic is starting to set in.",
-        choices: [
-            { text: "Panic-cram: Pull two all-nighters for your weakest subjects.", effects: { academicCap: 10, energy: -40, resilience: -15 }, nextSceneId: 'BURNOUT_CHECK' },
-            { text: "Strategic Triage: Use Interleaving on high-yield topics and protect your sleep schedule.", effects: { academicCap: 15, energy: -10, resilience: 10, systemSavvy: 5 }, nextSceneId: 'BURNOUT_CHECK' },
-        ],
-    },
-    'BURNOUT_CHECK': {
-        id: 'BURNOUT_CHECK',
-        phase: 'Pressure Cooker',
-        month: 'February',
-        title: "Energy Check",
-        text: "Checking your energy levels...",
-        logicGates: [
-            { condition: (state) => state.energy < 30, nextSceneId: 'BURNOUT_RECOVERY' }
-        ],
-        defaultNextSceneId: 'CAO_DEADLINE'
-    },
-    'BURNOUT_RECOVERY': {
-        id: 'BURNOUT_RECOVERY',
-        phase: 'Pressure Cooker',
-        month: 'March',
-        title: "Strategic Reset",
-        text: "You've hit a wall. You're exhausted and the Mocks were brutal. You feel like quitting the Higher Level paper.",
-        choices: [
-            { text: "The 'Grit' Protocol: Take 2 days off entirely to recharge energy, then simplify the goal.", effects: { energy: 40, resilience: 20, academicCap: -5 }, nextSceneId: 'ADVANCED_STRATEGY_CHECK' },
-            { text: "Push Through: Force yourself to study 4 hours tonight with caffeine.", effects: { energy: -20, academicCap: 5, resilience: -15 }, nextSceneId: 'ACUTE_EXHAUSTION' },
-        ],
-    },
-    'ACUTE_EXHAUSTION': {
-        id: 'ACUTE_EXHAUSTION',
-        phase: 'Pressure Cooker',
-        month: 'March',
-        title: "Acute Exhaustion",
-        text: "You pushed through the exhaustion. You walk into class feeling wired on caffeine and no sleep. You read a question and... nothing. Your mind is a total blank.",
-        choices: [
-            { text: "Breathe. Use the Physiological Sigh to reset. Ask for help after class.", effects: { resilience: 20, energy: -10, socialSupport: 5 }, nextSceneId: 'ADVANCED_STRATEGY_CHECK' },
-            { text: "Panic. The catastrophic thoughts take over. Say nothing.", effects: { resilience: -20, academicCap: -10, energy: -10 }, nextSceneId: 'ADVANCED_STRATEGY_CHECK' },
-        ],
-    },
-    'CAO_DEADLINE': {
-        id: 'CAO_DEADLINE',
-        phase: 'Pressure Cooker',
-        month: 'February',
-        title: "The CAO Deadline",
-        text: "The CAO deadline is this week. You're torn between a 'dream' course that feels like a reach and a 'safe' PLC or lower-points course that feels more realistic.",
-        choices: [
-            { text: "Be realistic. Put the safer options down first.", effects: { systemSavvy: 5, resilience: -5 }, nextSceneId: 'ADVANCED_STRATEGY_CHECK' },
-            { text: "Shoot for the stars. Put the dream course as #1.", effects: { resilience: 10, systemSavvy: 5 }, nextSceneId: 'ADVANCED_STRATEGY_CHECK' },
-        ],
-    },
-    'ADVANCED_STRATEGY_CHECK': {
-        id: 'ADVANCED_STRATEGY_CHECK',
-        phase: 'Pressure Cooker',
-        month: 'March',
-        title: "Competence Check",
-        text: "Checking your academic progress...",
-        logicGates: [
-            { condition: (state) => state.academicCap > 70, nextSceneId: 'INTERLEAVING_CHOICE' }
-        ],
-        defaultNextSceneId: 'FINAL_STRETCH_START'
-    },
-    'INTERLEAVING_CHOICE': {
-        id: 'INTERLEAVING_CHOICE',
-        phase: 'Pressure Cooker',
-        month: 'April',
-        title: "Advanced Strategy: Interleaving",
-        text: "You're feeling confident with your subjects. A teacher mentions a study technique called 'Interleaving'. It sounds harder than just focusing on one topic at a time.",
-        choices: [
-            { text: "Stick with what works: Blocked practice. Master one topic before moving on.", effects: { academicCap: 5, energy: -5 }, nextSceneId: 'FINAL_STRETCH_START' },
-            { text: "Try Interleaving: Mix up different topics in one study session. It feels messy but effective.", effects: { academicCap: 15, energy: -10, resilience: 5 }, nextSceneId: 'FINAL_STRETCH_START' },
-        ],
-    },
-    'FINAL_STRETCH_START': {
-        id: 'FINAL_STRETCH_START',
-        phase: 'Final Stretch',
-        month: 'April',
-        title: "The Final Push",
-        text: "It's April. The final push. Your teacher gives you a heavy-duty revision plan.",
-        choices: [
-            { text: "Follow their plan blindly.", effects: { systemSavvy: 5 }, nextSceneId: 'PEER_SUPPORT_CHOICE' },
-            { text: "Adapt the plan to my own weak areas using a Retrospective Log.", effects: { systemSavvy: 10, resilience: 5, academicCap: 5 }, nextSceneId: 'PEER_SUPPORT_CHOICE' },
-        ]
-    },
-     'PEER_SUPPORT_CHOICE': {
-        id: 'PEER_SUPPORT_CHOICE',
-        phase: 'Final Stretch',
-        month: 'May',
-        title: "The Protégé Effect",
-        text: "A classmate you're friendly with is panicking about a key topic in Maths that you've mastered. They ask if you could spend a couple of hours explaining it to them. It would eat into your own revision time.",
-        choices: [
-            { text: "Help them out. Explaining it will probably strengthen my own understanding anyway.", effects: { socialSupport: 15, academicCap: 5, energy: -10, resilience: 5 }, nextSceneId: 'GAME_DAY_PREP' },
-            { text: "Sorry, I need to focus on my own weak areas. It's too close to the exams.", effects: { socialSupport: -10, academicCap: 10, energy: -5 }, nextSceneId: 'GAME_DAY_PREP' },
-        ],
-    },
-    'GAME_DAY_PREP': {
-        id: 'GAME_DAY_PREP',
-        phase: 'Final Stretch',
-        month: 'June',
-        title: "Game Day Prep",
-        text: "It's the night before your first exam. What's the final move?",
-        choices: [
-            { text: "Last-minute cramming session until 2 AM.", effects: { energy: -30, academicCap: 5 }, nextSceneId: 'END_LOGIC' },
-            { text: "Pack my bag, do a 10-minute review, and get a full night's sleep.", effects: { energy: 20, resilience: 10 }, nextSceneId: 'END_LOGIC' },
-        ],
-    },
-    'END_LOGIC': {
-        id: 'END_LOGIC',
-        phase: 'Final Stretch',
-        month: 'June',
-        title: "Results Day",
-        text: "Calculating your outcome...",
-        logicGates: [
-            { condition: (state) => state.resilience > 70 && state.socialSupport > 60, nextSceneId: 'END_PATHFINDER' },
-            { condition: (state) => state.academicCap > 80 && state.energy > 50, nextSceneId: 'END_EXPERT' },
-            { condition: (state) => state.socialSupport > 70 && state.systemSavvy > 60, nextSceneId: 'END_MENTOR' },
-            { condition: (state) => state.academicCap > 65 && state.systemSavvy > 50, nextSceneId: 'END_GOOD' },
-            { condition: (state) => state.resilience > 50, nextSceneId: 'END_PLC' },
-        ],
-        defaultNextSceneId: 'END_REPEAT'
-    },
-    'END_GOOD': {
-        id: 'END_GOOD',
-        phase: 'Final Stretch',
-        month: 'August',
-        title: "Offer Received!",
-        text: "Congratulations! Your hard work and strategic planning paid off. You received an offer for one of your top choices. Your ability to manage your resources, seek help when needed, and stay resilient under pressure was the key to your success. The next chapter begins now.",
-    },
-    'END_PLC': {
-        id: 'END_PLC',
-        phase: 'Final Stretch',
-        month: 'August',
-        title: "A Different Path",
-        text: "The points didn't line up for your first choice this time, but your journey isn't over. You've secured a place in a brilliant PLC course that acts as a direct pathway to your dream degree next year. Your resilience means you see this not as a setback, but as a strategic stepping stone.",
-    },
-    'END_REPEAT': {
-        id: 'END_REPEAT',
-        phase: 'Final Stretch',
-        month: 'August',
-        title: "Another Lap",
-        text: "It was a tough year, and the results weren't what you hoped for. But your journey has given you immense resilience and social support. You've decided to repeat, armed with a year's worth of wisdom and a much clearer strategy. This isn't failure; it's the start of your comeback story.",
-    },
-    'END_PATHFINDER': {
-        id: 'END_PATHFINDER',
-        phase: 'Final Stretch',
-        month: 'August',
-        title: "The Resilient Pathfinder",
-        text: "The points came in, and you got your course. But more than that, you navigated the year with incredible resilience. You're known as the person who never gives up and always has time to help a friend. You've already started mentoring younger students, showing them the ropes.",
-    },
-    'END_EXPERT': {
-        id: 'END_EXPERT',
-        phase: 'Final Stretch',
-        month: 'August',
-        title: "The Efficiency Expert",
-        text: "You crushed it. Your disciplined, science-backed approach to study paid off with a stellar points total. You didn't just learn the material; you learned how to learn. Your energy management was flawless, and you enter college with a powerful cognitive toolkit that will serve you for life.",
-    },
-    'END_MENTOR': {
-        id: 'END_MENTOR',
-        phase: 'Final Stretch',
-        month: 'August',
-        title: "The Community Mentor",
-        text: "You not only got your course but you became a master of the system. You understood every grant, scheme, and deadline, and shared that knowledge freely. Your friends and family see you as the go-to person for advice, and you've built a powerful support network that will be your foundation for success in college and beyond.",
-    },
-};
-
-
-const StatBar = ({ icon: Icon, label, value, color }: { icon: any, label: string, value: number, color: string }) => (
+const StatBar = ({ icon: Icon, label, value, color }: { icon: React.ElementType; label: string; value: number; color: string }) => (
     <div>
         <div className="flex items-center gap-2">
             <Icon size={16} className={color}/>
-            <p className="text-xs font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400">{label}</p>
+            <p className="text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">{label}</p>
         </div>
-        <div className="w-full bg-stone-200 dark:bg-white/10 rounded-full h-2.5 mt-1">
-            <MotionDiv 
+        <div className="w-full bg-zinc-200 dark:bg-white/10 rounded-full h-2.5 mt-1">
+            <MotionDiv
                 className={`h-2.5 rounded-full ${color.replace('text-', 'bg-')}`}
                 initial={{ width: '0%' }}
                 animate={{ width: `${value}%` }}
@@ -319,190 +50,556 @@ const StatBar = ({ icon: Icon, label, value, color }: { icon: any, label: string
     </div>
 );
 
+// ─── ChoiceFeedback ──────────────────────────────────────────────────────────
 
-const AcademicJourneyGame: React.FC = () => {
-    const [gameState, setGameState] = useState<GameState>({
-        energy: 60,
-        academicCap: 30,
-        socialSupport: 50,
-        systemSavvy: 20,
-        resilience: 40,
-    });
-    const [currentSceneId, setCurrentSceneId] = useState('START');
-    const [history, setHistory] = useState<HistoryItem[]>([]);
+type FeedbackState = {
+    effects: Partial<GameState>;
+    moduleLink?: Choice['moduleLink'];
+};
 
-    let currentScene = STORY_DATA[currentSceneId];
-    
-    if (currentScene && currentScene.logicGates) {
-        let nextScene = currentScene.defaultNextSceneId;
-        for (const gate of currentScene.logicGates) {
-            if (gate.condition(gameState)) {
-                nextScene = gate.nextSceneId;
-                break;
+const ChoiceFeedback: React.FC<{ feedback: FeedbackState; onComplete: () => void }> = ({ feedback, onComplete }) => {
+    return (
+        <MotionDiv
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            onClick={onComplete}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 backdrop-blur-sm cursor-pointer"
+        >
+            <MotionDiv
+                initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.9, y: -20 }}
+                transition={{ duration: 0.3, ease: 'easeOut' }}
+                className="bg-white dark:bg-zinc-900 rounded-2xl p-6 max-w-sm w-full mx-4 shadow-2xl border border-zinc-200 dark:border-white/10"
+            >
+                <div className="flex flex-wrap items-center justify-center gap-4 mb-4">
+                    {Object.entries(feedback.effects).map(([stat, value], index) => {
+                        const Icon = STAT_ICONS[stat as StatKey];
+                        const isPositive = (value as number) >= 0;
+                        return (
+                            <MotionDiv
+                                key={stat}
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: index * 0.1 }}
+                                className="flex items-center gap-1.5"
+                            >
+                                <Icon size={16} className={isPositive ? 'text-emerald-500' : 'text-rose-500'} />
+                                <span className={`font-mono text-sm font-bold ${isPositive ? 'text-emerald-500' : 'text-rose-500'}`}>
+                                    {isPositive ? '+' : ''}{value}
+                                </span>
+                            </MotionDiv>
+                        );
+                    })}
+                </div>
+
+                {feedback.moduleLink && (
+                    <MotionDiv
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3 }}
+                        className="bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700/30 rounded-xl p-4"
+                    >
+                        <div className="flex items-center gap-2 mb-2">
+                            <BookMarked size={14} className="text-purple-600 dark:text-purple-400" />
+                            <p className="text-xs font-bold text-purple-600 dark:text-purple-400">{feedback.moduleLink.moduleTitle}</p>
+                        </div>
+                        <p className="text-xs text-purple-700 dark:text-purple-300 leading-relaxed">{feedback.moduleLink.insight}</p>
+                    </MotionDiv>
+                )}
+
+                <p className="text-center text-[10px] text-zinc-400 dark:text-zinc-500 mt-3">Click anywhere to continue</p>
+            </MotionDiv>
+        </MotionDiv>
+    );
+};
+
+// ─── PhaseTransition ─────────────────────────────────────────────────────────
+
+const PhaseTransition: React.FC<{ phase: Phase; gameState: GameState; onComplete: () => void }> = ({ phase, gameState, onComplete }) => {
+    useEffect(() => {
+        const timer = setTimeout(onComplete, 4000);
+        return () => clearTimeout(timer);
+    }, [onComplete]);
+
+    const meta = PHASE_METADATA.find(p => p.name === phase);
+
+    return (
+        <MotionDiv
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            onClick={onComplete}
+            className="cursor-pointer"
+        >
+            <div className="bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 rounded-xl p-10 text-center">
+                <MotionDiv
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
+                >
+                    <p className="text-xs font-bold uppercase tracking-[0.3em] text-purple-600 dark:text-purple-400 mb-2">
+                        {meta?.months}
+                    </p>
+                    <h2 className="font-serif text-4xl font-semibold text-zinc-900 dark:text-white mb-3">
+                        {phase}
+                    </h2>
+                    <p className="text-zinc-500 dark:text-zinc-400 max-w-md mx-auto mb-8">
+                        {meta?.subtitle}
+                    </p>
+                </MotionDiv>
+
+                <MotionDiv
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 }}
+                    className="grid grid-cols-5 gap-3 max-w-lg mx-auto"
+                >
+                    {(Object.keys(gameState) as StatKey[]).map(stat => {
+                        const Icon = STAT_ICONS[stat];
+                        return (
+                            <div key={stat} className="text-center">
+                                <Icon size={16} className={`${STAT_COLORS[stat]} mx-auto mb-1`} />
+                                <div className="w-full bg-zinc-200 dark:bg-white/10 rounded-full h-1.5">
+                                    <div className={`h-1.5 rounded-full ${STAT_BG_COLORS[stat]}`} style={{ width: `${gameState[stat]}%` }} />
+                                </div>
+                                <p className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 mt-1">{gameState[stat]}</p>
+                            </div>
+                        );
+                    })}
+                </MotionDiv>
+
+                <MotionDiv
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 1 }}
+                    className="mt-6"
+                >
+                    <p className="text-[10px] text-zinc-400 dark:text-zinc-500">Click to continue</p>
+                </MotionDiv>
+            </div>
+        </MotionDiv>
+    );
+};
+
+// ─── Phase Colors (literal strings for Tailwind CDN) ─────────────────────────
+
+const PHASE_TREE_COLORS: Record<Phase, { dot: string; line: string; label: string; labelBg: string }> = {
+    'Foundation': { dot: 'bg-blue-500', line: 'bg-blue-200 dark:bg-blue-800', label: 'text-blue-700 dark:text-blue-300', labelBg: 'bg-blue-100 dark:bg-blue-900/30' },
+    'Pressure Cooker': { dot: 'bg-amber-500', line: 'bg-amber-200 dark:bg-amber-800', label: 'text-amber-700 dark:text-amber-300', labelBg: 'bg-amber-100 dark:bg-amber-900/30' },
+    'Final Stretch': { dot: 'bg-rose-500', line: 'bg-rose-200 dark:bg-rose-800', label: 'text-rose-700 dark:text-rose-300', labelBg: 'bg-rose-100 dark:bg-rose-900/30' },
+};
+
+// ─── ReportCard ──────────────────────────────────────────────────────────────
+
+const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: HistoryItem[]; onRestart: () => void }> = ({ endingId, gameState, history, onRestart }) => {
+    const [showLog, setShowLog] = useState(false);
+    const archetype = ARCHETYPES[endingId];
+    const endScene = STORY_DATA[endingId];
+    const turningPoints = getKeyTurningPoints(history);
+    const weakestStat = getWeakestStat(gameState);
+    const recommendedModules = STAT_TO_MODULES[weakestStat];
+
+    // Compute branching path tree data
+    const pathNodes = history.map((item) => {
+        const choices = item.scene.choices || [];
+        const chosenChoice = choices.find(c => c.text === item.choiceText);
+        const chosenNext = chosenChoice?.nextSceneId;
+        const branches: string[] = [];
+        for (const alt of choices) {
+            if (alt.text !== item.choiceText && alt.nextSceneId !== chosenNext) {
+                if (alt.nextSceneId.startsWith('__')) continue;
+                const altScene = STORY_DATA[alt.nextSceneId];
+                if (altScene) branches.push(altScene.title);
             }
         }
-        if(nextScene) {
-            currentScene = STORY_DATA[nextScene];
-            setCurrentSceneId(nextScene);
-        }
-    }
+        return { title: item.scene.title, phase: item.scene.phase, branches };
+    });
 
-    const handleChoice = (choice: Choice) => {
-        const currentChoiceScene = STORY_DATA[currentSceneId];
-        const newGameState = { ...gameState };
-        
-        for (const [key, value] of Object.entries(choice.effects)) {
-            newGameState[key as keyof GameState] = Math.max(0, Math.min(100, newGameState[key as keyof GameState] + value));
-        }
+    const phases: Phase[] = ['Foundation', 'Pressure Cooker', 'Final Stretch'];
+    const groupedPath = phases
+        .map(phase => ({ phase, nodes: pathNodes.filter(n => n.phase === phase) }))
+        .filter(g => g.nodes.length > 0);
 
-        setHistory([...history, { scene: currentChoiceScene, choiceText: choice.text, effects: choice.effects }]);
-        setGameState(newGameState);
-        setCurrentSceneId(choice.nextSceneId);
-    };
-    
-    const restartGame = () => {
-        setGameState({ energy: 60, academicCap: 30, socialSupport: 50, systemSavvy: 20, resilience: 40 });
-        setCurrentSceneId('START');
-        setHistory([]);
-    };
+    return (
+        <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6">
+            {/* A. Archetype Badge */}
+            <div className={`${archetype?.accentBg || 'bg-zinc-100 dark:bg-white/5'} rounded-2xl p-8 text-center border border-zinc-200/50 dark:border-white/10`}>
+                <div className="text-5xl mb-4">{archetype?.icon || '🎓'}</div>
+                <h3 className={`font-serif text-3xl font-semibold mb-3 ${archetype?.accentColor || 'text-zinc-900 dark:text-white'}`}>
+                    {endScene?.title || 'Results Day'}
+                </h3>
+                <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-lg mx-auto">
+                    {archetype?.description || endScene?.text}
+                </p>
+            </div>
 
-    const renderEndScreen = () => {
-        const endScene = STORY_DATA[currentSceneId];
-        const statIcons: { [key: string]: React.ElementType } = {
-            energy: Zap,
-            academicCap: TrendingUp,
-            socialSupport: Users,
-            systemSavvy: BookOpen,
-            resilience: Shield
-        };
-
-        return (
-             <MotionDiv initial={{opacity: 0}} animate={{opacity: 1}} className="text-center">
-                <h3 className="font-serif text-3xl font-semibold text-purple-600 dark:text-purple-400 mb-4">{endScene.title}</h3>
-                <p className="text-stone-600 dark:text-stone-300 mb-8">{endScene.text}</p>
-                <h4 className="font-bold mb-4 text-stone-800 dark:text-white">Your Journey Log:</h4>
-                <div className="text-left space-y-4 max-h-96 overflow-y-auto p-4 bg-stone-100 dark:bg-white/5 rounded-xl border border-stone-200 dark:border-white/10 relative">
-                    {history.map((item, index) => (
-                        <div key={index} className="relative pl-8">
-                            <div className="absolute top-1 left-0 flex flex-col items-center">
-                                <div className="w-6 h-6 rounded-full bg-purple-200 dark:bg-purple-800 flex items-center justify-center ring-4 ring-stone-100 dark:ring-white/5">
-                                    <GitBranch size={14} className="text-purple-600 dark:text-purple-300"/>
-                                </div>
-                                 {index < history.length - 1 && <div className="w-px h-full bg-stone-300 dark:bg-stone-700 mt-1" style={{height: 'calc(100% + 1rem)'}} />}
+            {/* B. Stat Letter Grades */}
+            <div>
+                <h4 className="font-bold text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-3 text-center">Your Grades</h4>
+                <div className="grid grid-cols-5 gap-3">
+                    {(Object.keys(gameState) as StatKey[]).map(stat => {
+                        const grade = getStatGrade(gameState[stat]);
+                        const Icon = STAT_ICONS[stat];
+                        return (
+                            <div key={stat} className="bg-white/50 dark:bg-white/5 border border-zinc-200 dark:border-white/10 rounded-xl p-3 text-center">
+                                <Icon size={16} className={`${STAT_COLORS[stat]} mx-auto mb-1`} />
+                                <p className={`font-serif text-2xl font-bold ${grade.color}`}>{grade.letter}</p>
+                                <p className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 mt-0.5">{STAT_LABELS[stat]}</p>
                             </div>
+                        );
+                    })}
+                </div>
+            </div>
 
-                            <p className="font-bold text-sm text-stone-800 dark:text-stone-200">{item.scene.month}: {item.scene.title}</p>
-                            
-                            <div className="mt-2 space-y-2">
-                                {item.scene.choices?.map(choice => {
-                                    const isChosen = choice.text === item.choiceText;
+            {/* C. Key Turning Points */}
+            {turningPoints.length > 0 && (
+                <div>
+                    <h4 className="font-bold text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-3 text-center">Key Turning Points</h4>
+                    <div className="space-y-2">
+                        {turningPoints.map((item, index) => (
+                            <div key={index} className="bg-white/50 dark:bg-white/5 border border-zinc-200 dark:border-white/10 rounded-xl p-4">
+                                <div className="flex items-center gap-2 mb-1">
+                                    <p className="text-xs font-bold text-purple-600 dark:text-purple-400">{item.scene.month}</p>
+                                    <span className="text-zinc-300 dark:text-zinc-600">|</span>
+                                    <p className="text-xs font-bold text-zinc-700 dark:text-zinc-300">{item.scene.title}</p>
+                                </div>
+                                <p className="text-sm text-zinc-600 dark:text-zinc-400">{item.choiceText}</p>
+                                <div className="flex items-center gap-3 mt-2">
+                                    {Object.entries(item.effects).map(([stat, value]) => {
+                                        const Icon = STAT_ICONS[stat as StatKey];
+                                        const isPositive = (value as number) >= 0;
+                                        return (
+                                            <div key={stat} className="flex items-center gap-1">
+                                                <Icon size={12} className={isPositive ? 'text-emerald-500' : 'text-rose-500'} />
+                                                <span className={`font-mono text-xs font-bold ${isPositive ? 'text-emerald-500' : 'text-rose-500'}`}>
+                                                    {isPositive ? '+' : ''}{value}
+                                                </span>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
+
+            {/* D. Recommended Modules */}
+            <div>
+                <h4 className="font-bold text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1 text-center">Recommended For You</h4>
+                <p className="text-xs text-zinc-400 dark:text-zinc-500 text-center mb-3">Based on your weakest area: {STAT_LABELS[weakestStat]}</p>
+                <div className="space-y-2">
+                    {recommendedModules.map(mod => (
+                        <div key={mod.moduleId} className="flex items-center gap-3 bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700/30 rounded-xl p-3">
+                            <BookMarked size={16} className="text-purple-600 dark:text-purple-400 flex-shrink-0" />
+                            <p className="text-sm font-semibold text-purple-700 dark:text-purple-300">{mod.moduleTitle}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* E. Branching Path Tree */}
+            <div>
+                <h4 className="font-bold text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-3 text-center">Your Path</h4>
+                <div className="bg-white/50 dark:bg-white/5 border border-zinc-200 dark:border-white/10 rounded-xl p-5 overflow-x-auto">
+                    {groupedPath.map((group, gi) => {
+                        const colors = PHASE_TREE_COLORS[group.phase];
+                        return (
+                            <div key={group.phase} className={gi > 0 ? 'mt-4' : ''}>
+                                <div className={`inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider mb-3 ${colors.label} ${colors.labelBg}`}>
+                                    {group.phase}
+                                </div>
+                                {group.nodes.map((node, ni) => {
+                                    const isLastInGroup = ni === group.nodes.length - 1;
+                                    const isLastOverall = gi === groupedPath.length - 1 && isLastInGroup;
                                     return (
-                                        <div key={choice.text} className={`p-3 rounded-lg border-2 text-xs transition-all ${isChosen ? 'bg-white dark:bg-white/10 border-purple-400/50' : 'bg-transparent border-transparent opacity-40'}`}>
-                                            <p className={`${isChosen ? 'font-bold' : ''}`}>{choice.text}</p>
-                                            {isChosen && (
-                                                <div className="flex items-center gap-3 mt-2 border-t border-stone-200 dark:border-white/10 pt-2">
-                                                    {Object.entries(item.effects).map(([stat, value]) => {
-                                                        const Icon = statIcons[stat];
-                                                        const isPositive = value >= 0;
-                                                        return (
-                                                            <div key={stat} className="flex items-center gap-1">
-                                                                <Icon size={12} className={isPositive ? 'text-emerald-500' : 'text-rose-500'} />
-                                                                <span className={`font-mono text-xs font-bold ${isPositive ? 'text-emerald-500' : 'text-rose-500'}`}>{isPositive ? '+' : ''}{value}</span>
-                                                            </div>
-                                                        );
-                                                    })}
-                                                </div>
-                                            )}
+                                        <div key={ni} className="flex items-stretch">
+                                            {/* Dot + line */}
+                                            <div className="flex flex-col items-center mr-3 flex-shrink-0" style={{ width: 12 }}>
+                                                <div className={`w-2.5 h-2.5 rounded-full flex-shrink-0 ${colors.dot}`} />
+                                                {!isLastOverall && <div className={`w-px flex-grow ${isLastInGroup ? 'bg-zinc-200 dark:bg-zinc-700' : colors.line}`} />}
+                                            </div>
+                                            {/* Label + branches */}
+                                            <div className={`${isLastOverall ? '' : 'pb-2'} min-w-0`}>
+                                                <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 leading-tight">{node.title}</p>
+                                                {node.branches.map((branch, bi) => (
+                                                    <div key={bi} className="flex items-center gap-1.5 mt-1 ml-1">
+                                                        <div className="w-4 border-t border-dashed border-zinc-300 dark:border-zinc-600 flex-shrink-0" />
+                                                        <div className="w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-600 flex-shrink-0" />
+                                                        <p className="text-[10px] text-zinc-400 dark:text-zinc-500 italic truncate">{branch}</p>
+                                                    </div>
+                                                ))}
+                                            </div>
                                         </div>
                                     );
                                 })}
                             </div>
+                        );
+                    })}
+                    {/* End node */}
+                    <div className="flex items-center mt-3 pt-3 border-t border-zinc-200 dark:border-white/10">
+                        <div className="flex-shrink-0 mr-3 text-center" style={{ width: 12 }}>
+                            <span className="text-sm">{archetype?.icon || '🎓'}</span>
                         </div>
-                    ))}
-                     <div className="text-center pt-4">
-                        <ArrowDown size={16} className="text-stone-400 dark:text-stone-600 mx-auto animate-bounce"/>
-                     </div>
+                        <p className={`text-xs font-bold ${archetype?.accentColor || 'text-zinc-700 dark:text-zinc-300'}`}>
+                            {endScene?.title || 'Results Day'}
+                        </p>
+                    </div>
                 </div>
+            </div>
 
-                <MotionButton onClick={restartGame} className="mt-8 group flex items-center justify-center gap-2 mx-auto px-6 py-3 bg-stone-800 text-white font-bold text-sm rounded-full shadow-lg hover:bg-purple-600 transition-colors">
-                  Play Again <RotateCcw size={16} />
+            {/* F. Collapsible Journey Log */}
+            <div>
+                <button
+                    onClick={() => setShowLog(!showLog)}
+                    className="w-full flex items-center justify-center gap-2 text-sm font-bold text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors py-2"
+                >
+                    {showLog ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                    {showLog ? 'Hide' : 'Show'} Full Journey Log ({history.length} decisions)
+                </button>
+                {showLog && (
+                    <MotionDiv
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        className="overflow-hidden"
+                    >
+                        <div className="text-left space-y-4 max-h-96 overflow-y-auto p-4 bg-zinc-100 dark:bg-white/5 rounded-xl border border-zinc-200 dark:border-white/10 mt-2">
+                            {history.map((item, index) => (
+                                <div key={index} className="relative pl-8">
+                                    <div className="absolute top-1 left-0 flex flex-col items-center">
+                                        <div className="w-6 h-6 rounded-full bg-purple-200 dark:bg-purple-800 flex items-center justify-center ring-4 ring-zinc-100 dark:ring-white/5">
+                                            <GitBranch size={14} className="text-purple-600 dark:text-purple-300"/>
+                                        </div>
+                                        {index < history.length - 1 && <div className="w-px h-full bg-zinc-300 dark:bg-zinc-700 mt-1" style={{height: 'calc(100% + 1rem)'}} />}
+                                    </div>
+                                    <p className="font-bold text-sm text-zinc-800 dark:text-zinc-200">{item.scene.month}: {item.scene.title}</p>
+                                    <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">{item.choiceText}</p>
+                                    <div className="flex items-center gap-2 mt-1">
+                                        {Object.entries(item.effects).map(([stat, value]) => {
+                                            const Icon = STAT_ICONS[stat as StatKey];
+                                            const isPositive = (value as number) >= 0;
+                                            return (
+                                                <div key={stat} className="flex items-center gap-0.5">
+                                                    <Icon size={10} className={isPositive ? 'text-emerald-500' : 'text-rose-500'} />
+                                                    <span className={`font-mono text-[10px] font-bold ${isPositive ? 'text-emerald-500' : 'text-rose-500'}`}>
+                                                        {isPositive ? '+' : ''}{value}
+                                                    </span>
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </MotionDiv>
+                )}
+            </div>
+
+            {/* Play Again */}
+            <div className="text-center">
+                <MotionButton
+                    onClick={onRestart}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-zinc-800 dark:bg-white text-white dark:text-zinc-900 font-bold text-sm rounded-full shadow-lg hover:bg-purple-600 dark:hover:bg-purple-400 transition-colors"
+                >
+                    Play Again <RotateCcw size={16} />
                 </MotionButton>
-            </MotionDiv>
+            </div>
+        </MotionDiv>
+    );
+};
+
+// ─── AcademicJourneyGame ─────────────────────────────────────────────────────
+
+const AcademicJourneyGame: React.FC = () => {
+    const [gameState, setGameState] = useState<GameState>({ ...INITIAL_GAME_STATE });
+    const [currentSceneId, setCurrentSceneId] = useState('START');
+    const [history, setHistory] = useState<HistoryItem[]>([]);
+    const [currentPhase, setCurrentPhase] = useState<Phase>('Foundation');
+    const [showPhaseTransition, setShowPhaseTransition] = useState(false);
+    const [pendingSceneId, setPendingSceneId] = useState<string | null>(null);
+    const [feedbackState, setFeedbackState] = useState<FeedbackState | null>(null);
+
+    const currentScene = STORY_DATA[currentSceneId];
+    const isEndScene = currentSceneId.startsWith('END_');
+
+    const advanceToScene = useCallback((sceneId: string, newState: GameState) => {
+        const targetScene = STORY_DATA[sceneId];
+        if (targetScene && targetScene.phase !== currentPhase) {
+            setShowPhaseTransition(true);
+            setCurrentPhase(targetScene.phase);
+            setPendingSceneId(sceneId);
+        } else {
+            setCurrentSceneId(sceneId);
+        }
+    }, [currentPhase]);
+
+    const handleChoice = useCallback((choice: Choice) => {
+        const currentChoiceScene = STORY_DATA[currentSceneId];
+        const newGameState = { ...gameState };
+
+        for (const [key, value] of Object.entries(choice.effects)) {
+            newGameState[key as StatKey] = Math.max(0, Math.min(100, newGameState[key as StatKey] + value));
+        }
+
+        setHistory(prev => [...prev, {
+            scene: currentChoiceScene,
+            choiceText: choice.text,
+            effects: choice.effects,
+            moduleLink: choice.moduleLink,
+        }]);
+        setGameState(newGameState);
+
+        // Resolve route if it's an invisible logic gate
+        let targetSceneId = choice.nextSceneId;
+        if (targetSceneId.startsWith('__') && ROUTE_RESOLVERS[targetSceneId]) {
+            targetSceneId = ROUTE_RESOLVERS[targetSceneId](newGameState);
+        }
+
+        // Show feedback overlay, then advance
+        setFeedbackState({ effects: choice.effects, moduleLink: choice.moduleLink });
+        setPendingSceneId(targetSceneId);
+    }, [currentSceneId, gameState]);
+
+    const handleFeedbackComplete = useCallback(() => {
+        setFeedbackState(null);
+        if (pendingSceneId) {
+            const targetScene = STORY_DATA[pendingSceneId];
+            if (targetScene && targetScene.phase !== currentPhase) {
+                setShowPhaseTransition(true);
+                setCurrentPhase(targetScene.phase);
+                // pendingSceneId stays set for after phase transition
+            } else {
+                setCurrentSceneId(pendingSceneId);
+                setPendingSceneId(null);
+            }
+        }
+    }, [pendingSceneId, currentPhase]);
+
+    const handlePhaseTransitionComplete = useCallback(() => {
+        setShowPhaseTransition(false);
+        if (pendingSceneId) {
+            setCurrentSceneId(pendingSceneId);
+            setPendingSceneId(null);
+        }
+    }, [pendingSceneId]);
+
+    const restartGame = useCallback(() => {
+        setGameState({ ...INITIAL_GAME_STATE });
+        setCurrentSceneId('START');
+        setHistory([]);
+        setCurrentPhase('Foundation');
+        setShowPhaseTransition(false);
+        setPendingSceneId(null);
+        setFeedbackState(null);
+    }, []);
+
+    // End screen
+    if (isEndScene) {
+        return (
+            <div className="bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 rounded-xl p-8">
+                <ReportCard endingId={currentSceneId} gameState={gameState} history={history} onRestart={restartGame} />
+            </div>
+        );
+    }
+
+    // Phase transition interstitial
+    if (showPhaseTransition) {
+        return (
+            <AnimatePresence mode="wait">
+                <PhaseTransition key={currentPhase} phase={currentPhase} gameState={gameState} onComplete={handlePhaseTransitionComplete} />
+            </AnimatePresence>
         );
     }
 
     if (!currentScene || !currentScene.choices) {
-        return renderEndScreen();
+        return null;
     }
-    
+
     return (
-        <div className="bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-stone-200/50 dark:border-white/10 rounded-[2rem] p-8">
-            <AnimatePresence mode="wait">
-            <MotionDiv 
-                key={currentSceneId}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.4, ease: 'easeInOut' }}
-            >
-                <div className="border-b border-stone-200 dark:border-white/10 pb-4 mb-6">
-                    <p className="text-xs font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400">{currentScene.phase} - {currentScene.month}</p>
-                    <h3 className="font-serif text-3xl font-semibold text-stone-900 dark:text-white">{currentScene.title}</h3>
-                </div>
+        <>
+            <div className="bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 rounded-xl p-8">
+                <AnimatePresence mode="wait">
+                    <MotionDiv
+                        key={currentSceneId}
+                        initial={{ opacity: 0, x: 20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -20 }}
+                        transition={{ duration: 0.4, ease: 'easeInOut' }}
+                    >
+                        <div className="border-b border-zinc-200 dark:border-white/10 pb-4 mb-6">
+                            <p className="text-xs font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400">{currentScene.phase} - {currentScene.month}</p>
+                            <h3 className="font-serif text-3xl font-semibold text-zinc-900 dark:text-white">{currentScene.title}</h3>
+                        </div>
 
-                <p className="text-stone-600 dark:text-stone-300 leading-relaxed mb-8">{currentScene.text}</p>
+                        <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed mb-8">{currentScene.text}</p>
 
-                <div className="space-y-3 mb-8">
-                    {currentScene.choices.map((choice, index) => (
-                        <MotionButton
-                            key={index}
-                            onClick={() => handleChoice(choice)}
-                            whileHover={{ scale: 1.02 }}
-                            whileTap={{ scale: 0.98 }}
-                            className="w-full text-left p-4 rounded-xl bg-stone-100 dark:bg-white/5 border border-stone-200 dark:border-white/10 hover:bg-stone-200 dark:hover:bg-white/10 transition-colors font-semibold text-stone-700 dark:text-stone-200"
-                        >
-                            {choice.text}
-                        </MotionButton>
-                    ))}
-                </div>
-                
-                <div>
-                    <h4 className="font-bold text-sm uppercase tracking-widest text-stone-500 dark:text-stone-400 mb-4 text-center">Life Dashboard</h4>
-                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <StatBar icon={Zap} label="Energy" value={gameState.energy} color="text-amber-500" />
-                        <StatBar icon={TrendingUp} label="Academic Mastery" value={gameState.academicCap} color="text-blue-500" />
-                        <StatBar icon={Users} label="Social Support" value={gameState.socialSupport} color="text-emerald-500" />
-                        <StatBar icon={BookOpen} label="System Savvy" value={gameState.systemSavvy} color="text-purple-500" />
-                        <StatBar icon={Shield} label="Resilience" value={gameState.resilience} color="text-rose-500" />
-                    </div>
-                </div>
+                        <div className="space-y-3 mb-8">
+                            {currentScene.choices.map((choice, index) => (
+                                <MotionButton
+                                    key={index}
+                                    onClick={() => handleChoice(choice)}
+                                    whileHover={{ scale: 1.02 }}
+                                    whileTap={{ scale: 0.98 }}
+                                    className="w-full text-left p-4 rounded-xl bg-zinc-100 dark:bg-white/5 border border-zinc-200 dark:border-white/10 hover:bg-zinc-200 dark:hover:bg-white/10 transition-colors font-semibold text-zinc-700 dark:text-zinc-200"
+                                >
+                                    {choice.text}
+                                </MotionButton>
+                            ))}
+                        </div>
 
-            </MotionDiv>
+                        <div>
+                            <h4 className="font-bold text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4 text-center">Life Dashboard</h4>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <StatBar icon={Zap} label="Energy" value={gameState.energy} color="text-amber-500" />
+                                <StatBar icon={TrendingUp} label="Academic Mastery" value={gameState.academicCap} color="text-blue-500" />
+                                <StatBar icon={Users} label="Social Support" value={gameState.socialSupport} color="text-emerald-500" />
+                                <StatBar icon={BookOpen} label="System Savvy" value={gameState.systemSavvy} color="text-purple-500" />
+                                <StatBar icon={Shield} label="Resilience" value={gameState.resilience} color="text-rose-500" />
+                            </div>
+                        </div>
+                    </MotionDiv>
+                </AnimatePresence>
+            </div>
+
+            {/* Choice Feedback Overlay */}
+            <AnimatePresence>
+                {feedbackState && (
+                    <ChoiceFeedback feedback={feedbackState} onComplete={handleFeedbackComplete} />
+                )}
             </AnimatePresence>
-        </div>
+        </>
     );
 };
 
-const ToolCard: React.FC<{title: string, description: string, icon: React.ElementType, onClick: () => void, disabled?: boolean, accentColor?: string}> = 
+// ─── ToolCard ────────────────────────────────────────────────────────────────
+
+const ToolCard: React.FC<{title: string, description: string, icon: React.ElementType, onClick: () => void, disabled?: boolean, accentColor?: string}> =
 ({ title, description, icon: Icon, onClick, disabled = false, accentColor = 'text-purple-500' }) => (
     <MotionButton
         onClick={onClick}
         disabled={disabled}
         whileHover={{ scale: disabled ? 1 : 1.03 }}
-        className={`w-full text-left p-6 rounded-2xl border-2 transition-all ${disabled ? 'bg-stone-50 dark:bg-white/5 border-stone-200 dark:border-white/10 opacity-50 cursor-not-allowed' : 'bg-white/50 dark:bg-white/10 border-stone-200/80 dark:border-white/15 hover:border-purple-300 dark:hover:border-purple-500/50 cursor-pointer'}`}
+        className={`w-full text-left p-6 rounded-2xl border-2 transition-all ${disabled ? 'bg-zinc-50 dark:bg-white/5 border-zinc-200 dark:border-white/10 opacity-50 cursor-not-allowed' : 'bg-white/50 dark:bg-white/10 border-zinc-200/80 dark:border-white/15 hover:border-purple-300 dark:hover:border-purple-500/50 cursor-pointer'}`}
     >
         <div className="flex items-center gap-4">
-            <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${disabled ? 'bg-stone-200 dark:bg-white/10' : 'bg-purple-100 dark:bg-purple-900/50'}`}>
-                <Icon size={24} className={disabled ? 'text-stone-400 dark:text-stone-600' : accentColor} />
+            <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${disabled ? 'bg-zinc-200 dark:bg-white/10' : 'bg-purple-100 dark:bg-purple-900/50'}`}>
+                <Icon size={24} className={disabled ? 'text-zinc-400 dark:text-zinc-600' : accentColor} />
             </div>
             <div>
-                <h3 className="font-bold text-stone-800 dark:text-white">{title}</h3>
-                <p className="text-xs text-stone-500 dark:text-stone-400">{disabled ? "Coming Soon..." : description}</p>
+                <h3 className="font-bold text-zinc-800 dark:text-white">{title}</h3>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400">{disabled ? "Coming Soon..." : description}</p>
             </div>
         </div>
     </MotionButton>
 );
 
+// ─── InnovationZone ──────────────────────────────────────────────────────────
 
 const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack }) => {
     const [activeTool, setActiveTool] = useState<string | null>(null);
@@ -514,20 +611,20 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack }) => {
     ];
 
     const currentTool = tools.find(t => t.id === activeTool);
-    
+
   return (
-    <div className="min-h-screen bg-[#FDFCFB] dark:bg-stone-950 transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pt-32 pb-24">
-      
-      <header className="fixed top-0 left-0 right-0 z-[60] bg-white/60 dark:bg-stone-950/60 backdrop-blur-2xl border-b border-stone-200/50 dark:border-white/5 px-10 py-6">
+    <div className="min-h-screen bg-white dark:bg-zinc-950 transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pt-32 pb-24">
+
+      <header className="fixed top-0 left-0 right-0 z-[60] bg-white/60 dark:bg-zinc-950/60 backdrop-blur-2xl border-b border-zinc-200/50 dark:border-white/5 px-10 py-6">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-8">
-            <MotionButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={onBack} className="tactile-button p-3 rounded-full bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 transition-all">
-              <ArrowLeft size={18} className="text-stone-900 dark:text-white" />
+            <MotionButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={onBack} className="tactile-button p-3 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 transition-all">
+              <ArrowLeft size={18} className="text-zinc-900 dark:text-white" />
             </MotionButton>
-            <div className="h-10 w-px bg-stone-200/50 dark:bg-stone-700" />
+            <div className="h-10 w-px bg-zinc-200/50 dark:bg-zinc-700" />
             <div>
-              <p className="font-mono text-[9px] font-bold text-stone-400 dark:text-stone-500 uppercase tracking-[0.5em] mb-1">Experimental Division</p>
-              <h1 className="font-serif font-semibold text-2xl tracking-tight text-stone-900 dark:text-white">The Innovation Zone</h1>
+              <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">Explore</p>
+              <h1 className="font-serif font-semibold text-2xl tracking-tight text-zinc-900 dark:text-white">The Innovation Zone</h1>
             </div>
           </div>
           <div className="w-14 h-14 bg-purple-500 dark:bg-purple-400 rounded-2xl flex items-center justify-center text-white shadow-2xl rotate-3">
@@ -539,19 +636,19 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack }) => {
       <main className="flex-grow w-full max-w-4xl px-6 pt-16 relative z-10">
          <AnimatePresence mode="wait">
             {!activeTool ? (
-                <MotionDiv 
+                <MotionDiv
                     key="tool-grid"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                 >
                     <div className="text-center mb-12">
-                        <h2 className="font-serif text-5xl font-semibold text-stone-900 dark:text-white">Experimental Tools</h2>
-                        <p className="max-w-xl mx-auto mt-4 text-stone-500 dark:text-stone-400">A collection of interactive simulations and utilities designed to help you master the key concepts from the Learning Lab.</p>
+                        <h2 className="font-serif text-5xl font-semibold text-zinc-900 dark:text-white">Experimental Tools</h2>
+                        <p className="max-w-xl mx-auto mt-4 text-zinc-500 dark:text-zinc-400">A collection of interactive simulations and utilities designed to help you master the key concepts from the Learning Lab.</p>
                     </div>
                     <div className="space-y-4">
                         {tools.map(tool => (
-                            <ToolCard 
+                            <ToolCard
                                 key={tool.id}
                                 title={tool.title}
                                 description={tool.description}
@@ -563,13 +660,13 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack }) => {
                     </div>
                 </MotionDiv>
             ) : (
-                <MotionDiv 
+                <MotionDiv
                     key="active-tool"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                 >
-                    <MotionButton onClick={() => setActiveTool(null)} className="flex items-center gap-2 text-sm font-bold text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white mb-8">
+                    <MotionButton onClick={() => setActiveTool(null)} className="flex items-center gap-2 text-sm font-bold text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white mb-8">
                         <ArrowLeft size={16} /> Back to Tools
                     </MotionButton>
                     {currentTool?.component}

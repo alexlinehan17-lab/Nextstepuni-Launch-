@@ -21,9 +21,9 @@ const theme = cyanTheme;
 const GlassBoxUnfolder = () => {
     const [isUnfolded, setIsUnfolded] = useState(false);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl flex flex-col items-center">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The "Glass Box" Model</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">This is the fundamental mental model for orthographic projection.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl flex flex-col items-center">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The "Glass Box" Model</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">This is the fundamental mental model for orthographic projection.</p>
              <div className="w-48 h-48 [perspective:1000px] mb-8">
                 <motion.div className="relative w-full h-full" style={{ transformStyle: 'preserve-3d', transform: 'rotateX(-20deg) rotateY(-30deg)' }} animate={{scale: isUnfolded ? 0.8 : 1}}>
                     {/* Front */}
@@ -43,16 +43,16 @@ const CycleOfModelling = () => {
     const steps = ["Decomposition", "Internalization", "Simulation", "Externalization", "Re-Internalization"];
     const [activeStep, setActiveStep] = useState(0);
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Cycle of Modelling</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">This is the active hypothesis-testing process your brain runs.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Cycle of Modelling</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">This is the active hypothesis-testing process your brain runs.</p>
              <div className="flex justify-between mb-2">
-                {steps.map((step, i) => <div key={step} className={`w-1/5 text-center text-xs font-bold ${i <= activeStep ? 'text-cyan-600' : 'text-stone-300'}`}>{step}</div>)}
+                {steps.map((step, i) => <div key={step} className={`w-1/5 text-center text-xs font-bold ${i <= activeStep ? 'text-cyan-600' : 'text-zinc-300'}`}>{step}</div>)}
              </div>
-             <div className="w-full h-2 bg-stone-100 rounded-full"><motion.div className="h-full bg-cyan-500 rounded-full" animate={{width: `${(activeStep / (steps.length - 1)) * 100}%`}} /></div>
+             <div className="w-full h-2 bg-zinc-100 dark:bg-zinc-800 rounded-full"><motion.div className="h-full bg-cyan-500 rounded-full" animate={{width: `${(activeStep / (steps.length - 1)) * 100}%`}} /></div>
              <div className="flex justify-center gap-2 mt-4">
-                <button onClick={() => setActiveStep(s => Math.max(0, s-1))} className="px-3 py-1 text-xs bg-stone-200 rounded-md">Prev</button>
-                <button onClick={() => setActiveStep(s => Math.min(steps.length-1, s+1))} className="px-3 py-1 text-xs bg-stone-200 rounded-md">Next</button>
+                <button onClick={() => setActiveStep(s => Math.max(0, s-1))} className="px-3 py-1 text-xs bg-zinc-200 rounded-md">Prev</button>
+                <button onClick={() => setActiveStep(s => Math.min(steps.length-1, s+1))} className="px-3 py-1 text-xs bg-zinc-200 rounded-md">Next</button>
              </div>
         </div>
     );

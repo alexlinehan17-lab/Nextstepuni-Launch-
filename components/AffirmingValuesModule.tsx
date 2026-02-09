@@ -30,15 +30,15 @@ const ValuesSelector = () => {
     };
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Core Values Audit</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">Select your top 3 most important personal values.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Core Values Audit</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Select your top 3 most important personal values.</p>
              <div className="flex flex-wrap justify-center gap-3">
                 {values.map(value => (
                     <motion.button
                         key={value}
                         onClick={() => handleSelect(value)}
-                        className={`px-4 py-2 text-sm font-bold rounded-full border-2 transition-all ${selected.includes(value) ? 'bg-blue-500 text-white border-blue-500' : 'bg-stone-50 border-stone-200'}`}
+                        className={`px-4 py-2 text-sm font-bold rounded-full border-2 transition-all ${selected.includes(value) ? 'bg-blue-500 text-white border-blue-500' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700'}`}
                         whileHover={{y: -2}}
                     >
                         {value}
@@ -48,7 +48,7 @@ const ValuesSelector = () => {
              {selected.length === 3 && (
                 <div className="mt-8">
                     <h5 className="font-bold text-center">Your 15-Minute Writing Prompt:</h5>
-                    <p className="p-4 bg-stone-100 rounded-xl mt-2 text-center text-sm">Choose ONE of these values: <span className="font-bold">{selected.join(', ')}</span>. Write for 15 minutes about why this value is important to you and describe a time when you lived up to it.</p>
+                    <p className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-xl mt-2 text-center text-sm">Choose ONE of these values: <span className="font-bold">{selected.join(', ')}</span>. Write for 15 minutes about why this value is important to you and describe a time when you lived up to it.</p>
                 </div>
              )}
         </div>

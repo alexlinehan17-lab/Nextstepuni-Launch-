@@ -62,7 +62,7 @@ const ActivityRing = ({
           stroke="currentColor"
           strokeWidth={strokeWidth}
           fill="transparent"
-          className="text-stone-100 dark:text-white/5"
+          className="text-zinc-100 dark:text-white/5"
         />
         <MotionCircle
           cx={size / 2}
@@ -80,10 +80,10 @@ const ActivityRing = ({
         />
       </svg>
       <div className="absolute flex flex-col items-center justify-center leading-none">
-        <span className="text-[14px] font-semibold text-stone-900 dark:text-white tracking-tighter">
+        <span className="text-[14px] font-semibold text-zinc-900 dark:text-white tracking-tighter">
           {Math.round(progress)}
         </span>
-        <span className="text-[6px] font-semibold uppercase text-stone-400 dark:text-white/30 -mt-0.5">%</span>
+        <span className="text-[6px] font-semibold uppercase text-zinc-400 dark:text-white/30 -mt-0.5">%</span>
       </div>
     </div>
   );
@@ -126,11 +126,11 @@ const BentoTile: React.FC<BentoTileProps> = ({
       transition={{ duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }}
       onClick={onClick}
       onMouseMove={handleMouseMove}
-      className={`group relative overflow-hidden rounded-[2.5rem] bg-white/80 dark:bg-white/5 backdrop-blur-2xl border border-stone-200/50 dark:border-white/10 cursor-pointer transition-all duration-500 hover:border-[#DA7756]/30 dark:hover:border-white/20 shadow-xl hover:shadow-2xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.3)] ${className}`}
+      className={`group relative overflow-hidden rounded-2xl bg-white/80 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 cursor-pointer transition-all duration-500 hover:border-indigo-500/30 dark:hover:border-white/20 shadow-xl hover:shadow-2xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.3)] ${className}`}
     >
       {/* Localized Glow Effect */}
       <MotionDiv
-        className="pointer-events-none absolute -inset-px rounded-[2.5rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        className="pointer-events-none absolute -inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
         style={{
           background: useMotionTemplate`
             radial-gradient(
@@ -146,31 +146,31 @@ const BentoTile: React.FC<BentoTileProps> = ({
         <div>
           <div className="flex items-center justify-between mb-8">
             <div 
-              className="w-14 h-14 rounded-2xl bg-white dark:bg-white/5 flex items-center justify-center border border-stone-100 dark:border-white/10 shadow-sm"
+              className="w-14 h-14 rounded-2xl bg-white dark:bg-white/5 flex items-center justify-center border border-zinc-100 dark:border-white/10 shadow-sm"
               style={{ color: accentHex }}
             >
               <Icon size={28} strokeWidth={1.5} />
             </div>
             
             <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-4 group-hover:translate-x-0">
-               <ArrowRight size={20} className="text-stone-400 dark:text-white/40" />
+               <ArrowRight size={20} className="text-zinc-400 dark:text-white/40" />
             </div>
           </div>
           
           <div className="flex items-center gap-2 mb-2">
-            <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-400 dark:text-white/40">
+            <p className="font-mono text-[10px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-white/40">
               {subtitle}
             </p>
           </div>
-          <h3 className="font-serif text-2xl md:text-3xl text-stone-900 dark:text-white leading-tight font-semibold tracking-tight">
+          <h3 className="font-serif text-2xl md:text-3xl text-zinc-900 dark:text-white leading-tight font-semibold tracking-tight">
             {title}
           </h3>
         </div>
 
-        <div className="mt-8 flex items-center justify-between gap-6 pt-6 border-t border-stone-100 dark:border-white/5">
+        <div className="mt-8 flex items-center justify-between gap-6 pt-6 border-t border-zinc-100 dark:border-white/5">
             <div className="flex flex-col">
-              <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-stone-400 dark:text-white/40 mb-1">Initialization</span>
-              <span className="text-[9px] font-semibold uppercase tracking-[0.2em] text-stone-300 dark:text-white/10 group-hover:text-stone-900 dark:group-hover:text-white transition-colors duration-500">Protocol Secure</span>
+              <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-zinc-400 dark:text-white/40 mb-1">Progress</span>
+              <span className="text-[9px] font-semibold uppercase tracking-wider text-zinc-300 dark:text-white/10 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors duration-500">Active</span>
             </div>
             
             <div className="transition-all duration-500 transform group-hover:scale-110">
@@ -179,7 +179,9 @@ const BentoTile: React.FC<BentoTileProps> = ({
         </div>
       </div>
       
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.01)_1px,transparent_1px)] dark:bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:32px_32px] opacity-20 pointer-events-none"></div>
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-[-30%] right-[-20%] w-[60%] h-[60%] rounded-full opacity-30 dark:opacity-20 blur-[60px]" style={{ backgroundColor: accentHex + '10' }} />
+      </div>
     </MotionDiv>
   );
 };
@@ -205,7 +207,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     { 
       id: 'architecture-mindset', 
       title: "The Architecture of your Mindset", 
-      subtitle: "Primary Pillar // 01",
+      subtitle: "Pillar 01",
       icon: Layout, 
       hex: "#3b82f6", 
       className: "md:col-span-4" 
@@ -213,7 +215,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     { 
       id: 'science-growth', 
       title: "The Science of Growth", 
-      subtitle: "Primary Pillar // 02",
+      subtitle: "Pillar 02",
       icon: Sprout, 
       hex: "#f59e0b",
       className: "md:col-span-2" 
@@ -221,7 +223,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     { 
       id: 'learning-cheat-codes', 
       title: "The Science of Learning Effectively", 
-      subtitle: "Primary Pillar // 03",
+      subtitle: "Pillar 03",
       icon: Zap, 
       hex: "#14b8a6", // Teal
       className: "md:col-span-2" 
@@ -229,7 +231,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
      { 
       id: 'subject-specific-science', 
       title: "Subject Specific Science", 
-      subtitle: "Specialist Module",
+      subtitle: "Specialist",
       icon: Beaker, 
       hex: "#6b7280", // Gray
       className: "md:col-span-2" 
@@ -237,7 +239,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     { 
       id: 'exam-zone', 
       title: "Exam Strategy and Points Maximisation", 
-      subtitle: "Final Pillar // 04",
+      subtitle: "Pillar 04",
       icon: Target, 
       hex: "#ef4444", // Red
       className: "md:col-span-2" 
@@ -264,21 +266,21 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     : [];
 
   return (
-    <div className="min-h-screen bg-[#FDFCFB] dark:bg-stone-950 overflow-x-hidden relative flex flex-col items-center pt-16 md:pt-32 pb-32 transition-colors duration-500 selection:bg-[#DA7756]/10 dark:selection:bg-[#DA7756]/20">
+    <div className="min-h-screen bg-white dark:bg-zinc-950 overflow-x-hidden relative flex flex-col items-center pt-16 md:pt-32 pb-32 transition-colors duration-500 selection:bg-indigo-500/10 dark:selection:bg-indigo-500/20">
 
-       {/* Background elements */}
-      <div className="fixed inset-0 z-0 pointer-events-none">
-        <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-br from-[#DA7756]/[0.06] to-transparent blur-[80px]" />
-        <div className="absolute bottom-0 right-0 w-1/2 h-full bg-gradient-to-tl from-amber-500/5 to-transparent blur-[80px]" />
-        <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:32px_32px] opacity-20 dark:opacity-50"></div>
+       {/* Ambient mesh background */}
+      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-[-20%] left-[-10%] w-[60vw] h-[60vw] rounded-full bg-indigo-500/[0.05] dark:bg-indigo-500/[0.03] blur-[120px]" />
+        <div className="absolute bottom-[-15%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-[#3b82f6]/[0.04] dark:bg-[#3b82f6]/[0.02] blur-[120px]" />
+        <div className="absolute top-[30%] left-[60%] w-[30vw] h-[30vw] rounded-full bg-amber-500/[0.03] dark:bg-amber-500/[0.015] blur-[100px]" />
       </div>
-      
+
       <div className="relative z-10 w-full max-w-7xl px-6">
         <header className="text-center mb-16">
           <h1 className="font-serif text-5xl md:text-7xl text-black dark:text-white tracking-tighter leading-none font-semibold dark:drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
             Learning Lab
           </h1>
-          <p className="max-w-2xl mx-auto mt-4 text-stone-500 dark:text-stone-400">
+          <p className="max-w-2xl mx-auto mt-4 text-zinc-500 dark:text-zinc-400">
             A dynamic, science-backed curriculum designed to give you an unfair advantage in your final school exams. Select a pillar to begin.
           </p>
         </header>
@@ -299,7 +301,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
           ))}
            <BentoTile 
               title="The Innovation Zone"
-              subtitle="Experimental Division"
+              subtitle="Explore"
               icon={Rocket}
               accentHex="#8b5cf6" // Purple
               onClick={onGoToInnovationZone}
@@ -310,14 +312,14 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
         
         {/* Module Search */}
         <div className="mt-24">
-            <h2 className="text-center font-serif text-3xl font-semibold mb-2 text-stone-800 dark:text-white">Module Cross-Reference</h2>
-            <p className="text-center text-sm text-stone-500 dark:text-stone-400 mb-8 max-w-md mx-auto">Filter modules by up to two tags to find connections and build a deeper web of knowledge.</p>
+            <h2 className="text-center font-serif text-3xl font-semibold mb-2 text-zinc-800 dark:text-white">Find Modules by Topic</h2>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8 max-w-md mx-auto">Filter modules by up to two tags to find connections and build a deeper web of knowledge.</p>
             <div className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto mb-12">
                 {allTags.map(tag => (
                     <button 
                         key={tag}
                         onClick={() => handleTagClick(tag)}
-                        className={`px-3 py-1.5 text-xs font-bold rounded-full border-2 transition-all duration-300 ${selectedTags.includes(tag) ? 'bg-[#DA7756] text-white border-[#DA7756]' : 'bg-white dark:bg-white/5 border-stone-200 dark:border-white/10 hover:border-[#DA7756]/40 dark:hover:border-[#DA7756]/50'}`}
+                        className={`px-3 py-1.5 text-xs font-bold rounded-full border-2 transition-all duration-300 ${selectedTags.includes(tag) ? 'bg-indigo-500 text-white border-indigo-500' : 'bg-white dark:bg-white/5 border-zinc-200 dark:border-white/10 hover:border-indigo-500/40 dark:hover:border-indigo-500/50'}`}
                     >
                         {tag}
                     </button>

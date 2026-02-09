@@ -25,9 +25,9 @@ const DualTrackPlanner = () => {
     const currentPlan = plan === 'rescue' ? rescuePlan : masteryPlan;
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Dual-Track Strategy Planner</h4>
-             <div className="flex justify-center gap-2 p-1 bg-stone-100 rounded-full my-6 max-w-sm mx-auto">
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Dual-Track Strategy Planner</h4>
+             <div className="flex justify-center gap-2 p-1 bg-zinc-100 dark:bg-zinc-800 rounded-full my-6 max-w-sm mx-auto">
                 <button onClick={() => setPlan('rescue')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${plan === 'rescue' ? 'bg-white shadow' : ''}`}>Rescue Plan (Pass)</button>
                 <button onClick={() => setPlan('mastery')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${plan === 'mastery' ? 'bg-white shadow' : ''}`}>Mastery Plan (H1)</button>
             </div>
@@ -35,7 +35,7 @@ const DualTrackPlanner = () => {
                 {Object.entries(currentPlan).map(([component, value]) => (
                     <div key={component}>
                         <p className="font-bold text-sm">{component}</p>
-                        <div className="w-full h-24 bg-stone-100 rounded-lg mt-2 flex items-end">
+                        <div className="w-full h-24 bg-zinc-100 dark:bg-zinc-800 rounded-lg mt-2 flex items-end">
                             <motion.div className="w-full bg-sky-400 rounded-t-lg" initial={{height:0}} animate={{height: `${value*2}%`}}/>
                         </div>
                         <p className="text-xl font-bold mt-1">{value}%</p>
@@ -59,8 +59,8 @@ const OralBlueprintSliders = () => {
     );
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Oral Exam Blueprint</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Oral Exam Blueprint</h4>
             <div className="grid grid-cols-2 gap-6 items-center">
                 <div className="space-y-4">
                     <Slider label="Pronunciation (20%)" value={quadrants.pron} setter={v => setQuadrants({...quadrants, pron: v})}/>
@@ -69,7 +69,7 @@ const OralBlueprintSliders = () => {
                     <Slider label="Communication (30%)" value={quadrants.comm} setter={v => setQuadrants({...quadrants, comm: v})}/>
                 </div>
                 <div className="text-center">
-                     <p className="text-sm text-stone-500">Your Oral Grade:</p>
+                     <p className="text-sm text-zinc-500 dark:text-zinc-400">Your Oral Grade:</p>
                      <p className="text-6xl font-semibold text-sky-500 tracking-tighter">{Math.round(totalScore)}%</p>
                 </div>
             </div>
@@ -88,12 +88,12 @@ const ParagraphSorter = () => {
     const isCorrect = items.every((item, i) => item.id === correctOrder[i]);
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">Paragraph Algorithm</h4>
-            <p className="text-center text-sm text-stone-500 mb-6">Drag these components into the correct order to build a perfect essay paragraph.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Paragraph Algorithm</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Drag these components into the correct order to build a perfect essay paragraph.</p>
             <Reorder.Group axis="y" values={items} onReorder={setItems} className="space-y-2 max-w-sm mx-auto">
                 {items.map(item => (
-                    <Reorder.Item key={item.id} value={item} className="p-4 bg-stone-100 rounded-lg text-center font-bold text-stone-700 cursor-grab active:cursor-grabbing">
+                    <Reorder.Item key={item.id} value={item} className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-center font-bold text-zinc-700 dark:text-zinc-200 cursor-grab active:cursor-grabbing">
                         {item.text}
                     </Reorder.Item>
                 ))}

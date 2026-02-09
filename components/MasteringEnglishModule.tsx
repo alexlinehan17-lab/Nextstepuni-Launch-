@@ -27,8 +27,8 @@ const PCLMGrader = () => {
     const grade = total >= 90 ? 'H1' : total >= 80 ? 'H2' : total >= 70 ? 'H3' : 'H4';
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">PCLM Grader</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">PCLM Grader</h4>
             <div className="grid grid-cols-2 gap-6 items-center">
                 <div className="space-y-2">
                     <input type="range" value={pclm.p} onChange={e => setPclm({...pclm, p: parseInt(e.target.value)})} className="w-full"/>

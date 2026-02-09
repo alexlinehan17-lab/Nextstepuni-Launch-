@@ -53,18 +53,18 @@ const DweckExperimentSimulator = () => {
 
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Dweck Experiment Simulator</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">You just aced a test. Now, walk through the experiment and see the consequences.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Dweck Experiment Simulator</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">You just aced a test. Now, walk through the experiment and see the consequences.</p>
 
              <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
                     <p className="font-bold text-sm text-rose-600 mb-2">Resilience Meter</p>
-                    <div className="w-full h-4 bg-stone-100 rounded-full"><motion.div className="h-full bg-rose-500 rounded-full" initial={{width: "50%"}} animate={{width: `${resilience}%`}} /></div>
+                    <div className="w-full h-4 bg-zinc-100 dark:bg-zinc-800 rounded-full"><motion.div className="h-full bg-rose-500 rounded-full" initial={{width: "50%"}} animate={{width: `${resilience}%`}} /></div>
                 </div>
                 <div className="text-center">
                     <p className="font-bold text-sm text-lime-600 mb-2">Performance Meter</p>
-                    <div className="w-full h-4 bg-stone-100 rounded-full"><motion.div className="h-full bg-lime-500 rounded-full" initial={{width: "50%"}} animate={{width: `${performance}%`}} /></div>
+                    <div className="w-full h-4 bg-zinc-100 dark:bg-zinc-800 rounded-full"><motion.div className="h-full bg-lime-500 rounded-full" initial={{width: "50%"}} animate={{width: `${performance}%`}} /></div>
                 </div>
             </div>
 
@@ -80,8 +80,8 @@ const DweckExperimentSimulator = () => {
                     {step === 1 && <>
                         <p className="font-bold mb-4">Phase 2: Choose your next task</p>
                          <div className="grid grid-cols-2 gap-4">
-                            <button onClick={() => handleTask('easy')} className="p-4 bg-stone-100 border-2 border-stone-200 rounded-xl">An easy one (to look smart)</button>
-                            <button onClick={() => handleTask('hard')} className="p-4 bg-stone-100 border-2 border-stone-200 rounded-xl">A hard one (to learn more)</button>
+                            <button onClick={() => handleTask('easy')} className="p-4 bg-zinc-100 dark:bg-zinc-800 border-2 border-zinc-200 dark:border-zinc-700 rounded-xl">An easy one (to look smart)</button>
+                            <button onClick={() => handleTask('hard')} className="p-4 bg-zinc-100 dark:bg-zinc-800 border-2 border-zinc-200 dark:border-zinc-700 rounded-xl">A hard one (to learn more)</button>
                         </div>
                     </>}
                     {step === 2 && <p className="font-bold text-blue-600">You chose the <span className="underline">{taskChoice}</span> task...</p>}
@@ -90,7 +90,7 @@ const DweckExperimentSimulator = () => {
                         <p className="font-bold text-lime-600 mb-4">Phase 4: Final Results</p>
                         {praiseType === 'person' && <p>Because your identity was tied to being "smart", failure was devastating. Your resilience and subsequent performance dropped.</p>}
                         {praiseType === 'process' && <p>Because your identity was tied to "working hard", the failure was seen as a challenge. Your resilience and subsequent performance increased.</p>}
-                        <button onClick={reset} className="mt-4 px-4 py-2 bg-stone-800 text-white font-bold rounded-lg text-xs">Run Again</button>
+                        <button onClick={reset} className="mt-4 px-4 py-2 bg-zinc-800 text-white font-bold rounded-lg text-xs">Run Again</button>
                     </>}
                 </motion.div>
             </AnimatePresence>
@@ -101,9 +101,9 @@ const DweckExperimentSimulator = () => {
 const ErrorSignalVisualizer = () => {
     const [active, setActive] = useState(false);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white rounded-[3rem] border border-stone-200 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-stone-800 text-center italic">The Brain's Error Signal</h4>
-             <p className="text-center text-sm text-stone-500 mb-8">When you make a mistake, your brain sends two signals. The second signal (Pe) is where the magic happens.</p>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Brain's Error Signal</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">When you make a mistake, your brain sends two signals. The second signal (Pe) is where the magic happens.</p>
              <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
                     <h5 className="font-bold mb-2">Fixed Mindset Brain</h5>
@@ -113,7 +113,7 @@ const ErrorSignalVisualizer = () => {
                        {active && <motion.path initial={{pathLength:0}} animate={{pathLength:1}} exit={{pathLength:0}} d="M 40 40 C 45 40 48 30 52 30 S 57 40 60 40" stroke="#f43f5e" strokeWidth="1" fill="none" />}
                        </AnimatePresence>
                     </svg>
-                    <p className="text-xs text-stone-500 mt-2">A small "Pe" signal. The brain notices the error but quickly "looks away" to protect the ego.</p>
+                    <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-2">A small "Pe" signal. The brain notices the error but quickly "looks away" to protect the ego.</p>
                 </div>
                  <div className="text-center">
                     <h5 className="font-bold mb-2">Growth Mindset Brain</h5>
@@ -123,11 +123,11 @@ const ErrorSignalVisualizer = () => {
                        {active && <motion.path initial={{pathLength:0}} animate={{pathLength:1}} exit={{pathLength:0}} d="M 40 40 C 45 40 48 5 52 5 S 57 40 60 40" stroke="#10b981" strokeWidth="3" fill="none" />}
                        </AnimatePresence>
                     </svg>
-                    <p className="text-xs text-stone-500 mt-2">A large "Pe" signal. The brain allocates massive attention to the error, analysing it to learn from it.</p>
+                    <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-2">A large "Pe" signal. The brain allocates massive attention to the error, analysing it to learn from it.</p>
                 </div>
              </div>
              <div className="text-center mt-8">
-                <button onClick={() => setActive(!active)} className="px-5 py-3 bg-stone-800 text-white font-bold rounded-lg text-sm">{active ? "Reset Signal" : "Make an Error"}</button>
+                <button onClick={() => setActive(!active)} className="px-5 py-3 bg-zinc-800 text-white font-bold rounded-lg text-sm">{active ? "Reset Signal" : "Make an Error"}</button>
              </div>
         </div>
     );
