@@ -502,6 +502,15 @@ const COURSE_DEFINITIONS = [
     sectionsCount: 7,
     tags: ['Productivity', 'Performance Psych'],
   },
+  {
+    id: 'points-optimization-protocol',
+    category: 'exam-zone',
+    title: 'The 625 Blueprint',
+    subtitle: 'The Statistical Optimization Protocol',
+    description: 'Treat the Leaving Cert as a mathematical optimization problem. Use real H1 rate data, grade economics, and marking scheme mechanics to engineer your maximum possible score.',
+    sectionsCount: 7,
+    tags: ['Exam Tactics', 'Productivity'],
+  },
 ] as const;
 
 export const categoryTitles: Record<CategoryType, string> = {

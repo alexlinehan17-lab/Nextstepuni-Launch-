@@ -65,4 +65,5 @@ export const moduleComponents: { [key: string]: ModuleComponent } = {
   'applied-sciences-protocol': lazy(() => import('./components/AppliedSciencesModule')),
   'digital-distraction-protocol': lazy(() => import('./components/DigitalDistractionModule')),
   'mastering-the-creatives-protocol': lazy(() => import('./components/MasteringTheCreativesModule')),
+  'points-optimization-protocol': lazy(() => import('./components/PointsOptimizationModule')),
 };
