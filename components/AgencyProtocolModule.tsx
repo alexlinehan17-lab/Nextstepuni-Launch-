@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence, Reorder } from 'framer-motion';
 import {
   Target, Users, Settings, ShieldAlert, Zap, Map,
-  RotateCcw, Lightbulb, Activity, Brain, ChevronsUpDown
+  Lightbulb, Activity, Brain, ChevronsUpDown
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { blueTheme } from '../moduleThemes';
@@ -19,24 +19,25 @@ const theme = blueTheme;
 const FlipCard = ({ front, back, frontIcon: FrontIcon, backIcon: BackIcon }: { front: React.ReactNode, back: React.ReactNode, frontIcon: any, backIcon: any }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   return (
-    <div className="w-full h-48 [perspective:1000px]" onClick={() => setIsFlipped(!isFlipped)}>
+    <div className="w-full h-52 [perspective:1000px] cursor-pointer" onClick={() => setIsFlipped(!isFlipped)}>
       <motion.div
-        className="relative w-full h-full transition-transform duration-700"
+        className="relative w-full h-full"
         style={{ transformStyle: 'preserve-3d' }}
         animate={{ rotateY: isFlipped ? 180 : 0 }}
-        transition={{ duration: 0.6, ease: 'easeInOut' }}
+        transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
       >
-        <div className="absolute w-full h-full [backface-visibility:hidden] rounded-3xl p-6 flex flex-col items-center justify-center text-center border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 shadow-lg cursor-pointer group">
-          <FrontIcon size={32} className="mb-4 text-zinc-400 group-hover:text-blue-500 transition-colors"/>
-          <p className="text-sm font-bold leading-snug text-zinc-700 dark:text-zinc-200">{front}</p>
-          <div className="absolute bottom-4 right-4 flex items-center gap-1 text-zinc-300 group-hover:text-blue-500 transition-colors">
-            <RotateCcw size={10} />
-            <span className="text-[9px] font-bold">FLIP</span>
+        <div className="absolute w-full h-full [backface-visibility:hidden] rounded-xl p-6 flex flex-col items-center justify-center text-center border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 group hover:border-zinc-300 dark:hover:border-zinc-600 transition-colors">
+          <div className="w-10 h-10 rounded-lg bg-zinc-100 dark:bg-zinc-700 flex items-center justify-center mb-4">
+            <FrontIcon size={20} className="text-zinc-500 dark:text-zinc-400"/>
           </div>
+          <p className="text-sm font-semibold leading-snug text-zinc-700 dark:text-zinc-200">{front}</p>
+          <p className="absolute bottom-3 right-4 text-[9px] font-medium tracking-wider text-zinc-300 dark:text-zinc-600 uppercase">Tap to reveal</p>
         </div>
-        <div className="absolute w-full h-full [backface-visibility:hidden] rounded-3xl p-6 flex flex-col items-center justify-center text-center border border-blue-700 bg-blue-600 text-white shadow-2xl shadow-blue-500/20" style={{ transform: 'rotateY(180deg)' }}>
-          <BackIcon size={32} className="mb-4 text-blue-200"/>
-          <p className="text-sm font-bold leading-snug">{back}</p>
+        <div className="absolute w-full h-full [backface-visibility:hidden] rounded-xl p-6 flex flex-col items-center justify-center text-center bg-zinc-900 dark:bg-white text-white dark:text-zinc-900" style={{ transform: 'rotateY(180deg)' }}>
+          <div className="w-10 h-10 rounded-lg bg-white/10 dark:bg-zinc-900/10 flex items-center justify-center mb-4">
+            <BackIcon size={20} className="text-white/70 dark:text-zinc-900/70"/>
+          </div>
+          <p className="text-sm font-semibold leading-snug">{back}</p>
         </div>
       </motion.div>
     </div>
@@ -65,12 +66,12 @@ const MindsetSorter = () => {
   };
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Driver vs. Passenger Diagnostic</h4>
+    <div className="my-10 p-8 md:p-10 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Driver vs. Passenger Diagnostic</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">After a bad result, sort these thoughts into the correct lane.</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[200px]">
-        <div className="p-6 bg-rose-50 border-2 border-dashed border-rose-200 rounded-3xl">
-           <h5 className="font-bold text-rose-700 mb-4 text-center">Passenger Lane</h5>
+        <div className="p-6 bg-rose-50/50 border border-rose-200 rounded-xl">
+           <h5 className="font-semibold text-rose-700 mb-4 text-center text-sm">Passenger Lane</h5>
            <AnimatePresence>
              {passenger.map(p => (
                 <motion.div layoutId={`${p.id}`} key={p.id} className="p-4 bg-white dark:bg-zinc-800 rounded-xl shadow-sm text-sm font-medium text-zinc-700 dark:text-zinc-200 text-center mb-2">
@@ -79,8 +80,8 @@ const MindsetSorter = () => {
              ))}
            </AnimatePresence>
         </div>
-         <div className="p-6 bg-blue-50 border-2 border-dashed border-blue-200 rounded-3xl">
-           <h5 className="font-bold text-blue-700 mb-4 text-center">Driver Lane</h5>
+         <div className="p-6 bg-blue-50/50 border border-blue-200 rounded-xl">
+           <h5 className="font-semibold text-blue-700 mb-4 text-center text-sm">Driver Lane</h5>
             <AnimatePresence>
              {driver.map(d => (
                 <motion.div layoutId={`${d.id}`} key={d.id} className="p-4 bg-white dark:bg-zinc-800 rounded-xl shadow-sm text-sm font-medium text-zinc-700 dark:text-zinc-200 text-center mb-2">

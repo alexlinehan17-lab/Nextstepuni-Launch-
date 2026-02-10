@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  Code, SlidersHorizontal, UserX, Recycle, Flag, RotateCcw
+  Code, SlidersHorizontal, UserX, Recycle, Flag
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { amberTheme } from '../moduleThemes';
@@ -60,18 +60,18 @@ const AttributionReframeDrill = () => {
   };
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Attribution Reframe Drill</h4>
+    <div className="my-10 p-8 md:p-10 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Attribution Reframe Drill</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Click on a self-defeating thought to transform it into an empowering one.</p>
-      <div className="space-y-4">
+      <div className="space-y-3">
         {examples.map((ex) => (
           <motion.div
             key={ex.id}
             onClick={() => handleFlip(ex.id)}
-            className="p-6 rounded-2xl cursor-pointer border-2 border-dashed relative min-h-[100px] flex items-center justify-center"
+            className="p-6 rounded-xl cursor-pointer border relative min-h-[100px] flex items-center justify-center transition-colors"
             animate={{
-              backgroundColor: flipped.includes(ex.id) ? 'rgba(236, 253, 245, 1)' : 'rgba(254, 242, 242, 1)',
-              borderColor: flipped.includes(ex.id) ? 'rgb(110 231 183)' : 'rgb(254 202 202)'
+              backgroundColor: flipped.includes(ex.id) ? 'rgba(236, 253, 245, 1)' : 'rgba(250, 250, 247, 1)',
+              borderColor: flipped.includes(ex.id) ? 'rgb(167 243 208)' : 'rgb(229 228 223)'
             }}
           >
             <AnimatePresence mode="wait">
@@ -81,15 +81,14 @@ const AttributionReframeDrill = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
-                className={`font-mono text-sm text-center ${flipped.includes(ex.id) ? 'text-emerald-800' : 'text-rose-800'}`}
+                className={`text-sm text-center font-medium ${flipped.includes(ex.id) ? 'text-emerald-800' : 'text-zinc-600 dark:text-zinc-400'}`}
               >
                 "{flipped.includes(ex.id) ? ex.adaptive : ex.maladaptive}"
               </motion.p>
             </AnimatePresence>
-             <div className="absolute bottom-2 right-3 text-zinc-300 flex items-center gap-1 text-[9px] font-bold">
-              <RotateCcw size={10} />
-              REFRAME
-            </div>
+            <p className="absolute bottom-2.5 right-4 text-[9px] font-medium tracking-wider text-zinc-300 dark:text-zinc-600 uppercase">
+              {flipped.includes(ex.id) ? 'Reframed' : 'Tap to reframe'}
+            </p>
           </motion.div>
         ))}
       </div>

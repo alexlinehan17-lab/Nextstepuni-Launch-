@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Flag } from 'lucide-react';
+import { Zap } from 'lucide-react';
 import { ModuleTheme } from '../types';
 
 interface HighlightProps {
@@ -85,14 +85,14 @@ interface MicroCommitmentProps {
 }
 
 export const MicroCommitment = ({ children, theme }: MicroCommitmentProps) => (
-  <div className={`my-12 p-8 ${theme.microBg} border-2 border-dashed ${theme.microBorder} rounded-3xl`}>
-    <div className="flex items-start gap-5">
-      <div className={`w-11 h-11 rounded-xl ${theme.microIconBg} text-white flex items-center justify-center shrink-0 mt-1 shadow-lg ${theme.microIconShadow}`}>
-        <Flag size={20} />
+  <div className={`my-12 border-l-[3px] ${theme.microBorder} bg-white dark:bg-zinc-900 rounded-r-xl p-8`}>
+    <div className="flex items-start gap-4">
+      <div className={`w-9 h-9 rounded-lg ${theme.microIconBg} text-white flex items-center justify-center shrink-0`}>
+        <Zap size={16} />
       </div>
       <div>
-        <h4 className={`font-bold ${theme.microTitle} dark:text-white text-sm uppercase tracking-widest`}>Quick Challenge (Under 5 Mins)</h4>
-        <div className="text-zinc-600 dark:text-zinc-300 mt-2 font-medium leading-relaxed">
+        <p className={`text-[10px] font-semibold uppercase tracking-[0.15em] ${theme.microTitle} dark:text-zinc-300 mb-2`}>Quick Challenge</p>
+        <div className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
           {children}
         </div>
       </div>

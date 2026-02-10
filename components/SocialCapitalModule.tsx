@@ -35,16 +35,16 @@ const SocialCapitalSorter = () => {
     };
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Social Capital Sorter</h4>
+        <div className="my-10 p-8 md:p-10 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Social Capital Sorter</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Sort these connections into the correct network.</p>
              <div className="grid grid-cols-2 gap-4">
-                <div className="p-4 bg-emerald-50 border-2 border-dashed border-emerald-200 rounded-2xl min-h-[150px]">
-                    <h5 className="font-bold text-emerald-700 text-center mb-2">Bonding (Safety Net)</h5>
+                <div className="p-4 bg-emerald-50/50 border border-emerald-200 rounded-xl min-h-[150px]">
+                    <h5 className="font-semibold text-emerald-700 text-center mb-2 text-sm">Bonding (Safety Net)</h5>
                     {bonding.map(b => <motion.div layoutId={`item-${b.id}`} key={b.id} className="text-xs p-2 bg-white dark:bg-zinc-800 rounded-md text-center font-bold mb-2 shadow-sm">{b.text}</motion.div>)}
                 </div>
-                <div className="p-4 bg-blue-50 border-2 border-dashed border-blue-200 rounded-2xl min-h-[150px]">
-                    <h5 className="font-bold text-blue-700 text-center mb-2">Bridging (Ladder)</h5>
+                <div className="p-4 bg-blue-50/50 border border-blue-200 rounded-xl min-h-[150px]">
+                    <h5 className="font-semibold text-blue-700 text-center mb-2 text-sm">Bridging (Ladder)</h5>
                     {bridging.map(b => <motion.div layoutId={`item-${b.id}`} key={b.id} className="text-xs p-2 bg-white dark:bg-zinc-800 rounded-md text-center font-bold mb-2 shadow-sm">{b.text}</motion.div>)}
                 </div>
              </div>

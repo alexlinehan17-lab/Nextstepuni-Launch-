@@ -42,13 +42,14 @@ interface MythBusterCardProps {
 const MythBusterCard: React.FC<MythBusterCardProps> = ({ front, back }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   return (
-    <div className="w-full h-40 [perspective:1000px]" onClick={() => setIsFlipped(!isFlipped)}>
-      <motion.div className="relative w-full h-full transition-transform duration-700" style={{ transformStyle: 'preserve-3d' }} animate={{ rotateX: isFlipped ? 180 : 0 }}>
-        <div className="absolute w-full h-full [backface-visibility:hidden] rounded-3xl p-6 flex flex-col items-center justify-center text-center border-2 border-dashed border-zinc-300 bg-zinc-50 dark:bg-zinc-800/50 cursor-pointer group">
-          <p className="text-sm font-bold leading-snug text-zinc-700 dark:text-zinc-200">{front}</p>
+    <div className="w-full h-44 [perspective:1000px] cursor-pointer" onClick={() => setIsFlipped(!isFlipped)}>
+      <motion.div className="relative w-full h-full" style={{ transformStyle: 'preserve-3d' }} animate={{ rotateX: isFlipped ? 180 : 0 }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}>
+        <div className="absolute w-full h-full [backface-visibility:hidden] rounded-xl p-6 flex flex-col items-center justify-center text-center border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-600 transition-colors">
+          <p className="text-sm font-semibold leading-snug text-zinc-700 dark:text-zinc-200">{front}</p>
+          <p className="absolute bottom-3 right-4 text-[9px] font-medium tracking-wider text-zinc-300 dark:text-zinc-600 uppercase">Tap to reveal</p>
         </div>
-        <div className="absolute w-full h-full [backface-visibility:hidden] rounded-3xl p-4 flex flex-col items-center justify-center text-center border-2 border-emerald-700 bg-emerald-600 text-white shadow-lg" style={{ transform: 'rotateX(180deg)' }}>
-          <p className="text-xs font-bold leading-snug">{back}</p>
+        <div className="absolute w-full h-full [backface-visibility:hidden] rounded-xl p-5 flex flex-col items-center justify-center text-center bg-zinc-900 dark:bg-white text-white dark:text-zinc-900" style={{ transform: 'rotateX(180deg)' }}>
+          <p className="text-xs font-semibold leading-snug">{back}</p>
         </div>
       </motion.div>
     </div>

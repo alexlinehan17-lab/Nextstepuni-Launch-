@@ -161,7 +161,7 @@ const OptimalScheduleCalculator = () => {
                     <option value="6_months">6 Months</option>
                  </select>
              </div>
-             <div className="mt-6 p-6 bg-sky-50 border-2 border-dashed border-sky-200 rounded-2xl text-center">
+             <div className="mt-6 p-6 bg-sky-50/50 border border-sky-200 rounded-xl text-center">
                 <p className="text-sm text-sky-800">Optimal Review Gap (ISI):</p>
                 <p className="font-bold text-2xl text-sky-600">{schedules[ri as keyof typeof schedules].gap}</p>
                 <p className="text-xs text-sky-500 mt-4"><strong>Actionable Advice:</strong> {schedules[ri as keyof typeof schedules].example}</p>
