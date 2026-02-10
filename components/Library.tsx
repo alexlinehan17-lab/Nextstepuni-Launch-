@@ -13,6 +13,7 @@ import {
   Zap, Brain, Target, Shield, Compass, Star, Hash
 } from 'lucide-react';
 import { CategoryType } from './KnowledgeTree';
+import { CompletionVines } from './CompletionVines';
 
 // FIX: Cast motion components to any to bypass broken type definitions
 const MotionDiv = motion.div as any;
@@ -48,15 +49,17 @@ export interface BentoModuleTileProps {
   index: number;
   isUnlocked: boolean;
   isCompleted: boolean;
+  progressPercent?: number;
   onClick: () => void;
   categoryTitle: string;
 }
 
-export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({ 
-  course, 
-  index, 
-  isUnlocked, 
-  isCompleted, 
+export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
+  course,
+  index,
+  isUnlocked,
+  isCompleted,
+  progressPercent = 0,
   onClick,
   categoryTitle
 }) => {
@@ -145,6 +148,8 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
           </div>
         )}
       </div>
+
+      <CompletionVines progress={isCompleted ? 100 : progressPercent} />
     </MotionDiv>
   );
 };
@@ -214,13 +219,15 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
           {courses.map((course, idx) => {
             const progress = userProgress[course.id];
             const isCompleted = progress && progress.unlockedSection >= course.sectionsCount - 1;
+            const pct = progress ? Math.min(100, (progress.unlockedSection / Math.max(1, course.sectionsCount - 1)) * 100) : 0;
             return (
-              <BentoModuleTile 
+              <BentoModuleTile
                 key={course.id}
                 course={course}
                 index={idx}
                 isUnlocked={idx <= unlockedIndex}
                 isCompleted={isCompleted}
+                progressPercent={pct}
                 onClick={() => onSelectCourse(course.id)}
                 categoryTitle={title}
               />

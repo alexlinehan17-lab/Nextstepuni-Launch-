@@ -10,6 +10,7 @@ import {
   Layout, ArrowRight, Sparkles, Beaker
 } from 'lucide-react';
 import { CourseData, BentoModuleTile } from './Library';
+import { CompletionVines } from './CompletionVines';
 
 // FIX: Cast motion components to any to bypass broken type definitions
 const MotionDiv = motion.div as any;
@@ -118,7 +119,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
       onClick={onClick}
       className={`group relative overflow-hidden rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 cursor-pointer transition-all duration-300 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-md ${className}`}
     >
-      <div className="p-8 h-full flex flex-col justify-between">
+      <div className="p-8 h-full flex flex-col justify-between relative z-10">
         <div>
           <div className="flex items-center justify-between mb-8">
             <div
@@ -148,6 +149,8 @@ const BentoTile: React.FC<BentoTileProps> = ({
             <ActivityRing progress={progress} color={accentHex} />
         </div>
       </div>
+
+      <CompletionVines progress={progress} />
     </MotionDiv>
   );
 };
@@ -296,13 +299,15 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                         {filteredCourses.map((course, index) => {
                             const progress = userProgress[course.id];
                             const isCompleted = progress && progress.unlockedSection >= course.sectionsCount - 1;
+                            const pct = progress ? Math.min(100, (progress.unlockedSection / Math.max(1, course.sectionsCount - 1)) * 100) : 0;
                             return (
-                                <BentoModuleTile 
-                                    key={course.id} 
+                                <BentoModuleTile
+                                    key={course.id}
                                     course={course}
                                     index={index}
                                     isUnlocked={true}
                                     isCompleted={isCompleted}
+                                    progressPercent={pct}
                                     onClick={() => onSelectModule(course.id)}
                                     categoryTitle={categoryTitles[course.category]}
                                 />
