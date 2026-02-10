@@ -24,8 +24,8 @@ const HopeDiagnostic = () => {
     { myth: "Hope is the same as optimism.", fact: "FALSE. Optimism is a general belief that things will be okay. Hope is the specific belief that YOU can MAKE things okay through planning and effort." },
   ];
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl space-y-8">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Hope Circuit Diagnostic</h4>
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 space-y-8">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Hope Circuit Diagnostic</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 -mt-4">Let's bust some common myths about where hope comes from.</p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {myths.map((item, i) => <MythBusterCard key={i} front={item.myth} back={item.fact} />)}
@@ -57,8 +57,8 @@ const MythBusterCard: React.FC<MythBusterCardProps> = ({ front, back }) => {
 };
 
 const BrainMismatchDiagram = () => (
-  <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl flex flex-col items-center">
-    <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic mb-2">Adolescent Brain: System Mismatch</h4>
+  <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 flex flex-col items-center">
+    <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center mb-2">Adolescent Brain: System Mismatch</h4>
     <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-12 max-w-md">Your emotional 'accelerator' is at full volume, while your rational 'brakes' are still being fine-tuned.</p>
 
     <div className="w-full max-w-sm h-56 flex justify-around items-end gap-8 px-4">
@@ -118,8 +118,8 @@ const DopamineDial = () => {
   const offset = circumference - (motivation / 100) * circumference;
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Interactive: The Dopamine Dial</h4>
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Interactive: The Dopamine Dial</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Scenario: You need to study for a history exam. Choose your thought process.</p>
 
       <div className="w-full flex justify-center items-end h-24">
@@ -146,13 +146,13 @@ const DopamineDial = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-        <button onClick={() => handleChoice('cold')} className="p-4 bg-blue-50 border-2 border-blue-200 rounded-xl text-left text-sm hover:bg-blue-100 transition-colors"><strong>"Cold" Cognition:</strong> "I need to study history."</button>
-        <button onClick={() => handleChoice('hot')} className="p-4 bg-rose-50 border-2 border-rose-200 rounded-xl text-left text-sm hover:bg-rose-100 transition-colors"><strong>"Hot" Cognition (EFT):</strong> "Imagine acing that exam..."</button>
+        <button onClick={() => handleChoice('cold')} className="p-4 bg-blue-50 border border-blue-200 rounded-xl text-left text-sm hover:bg-blue-100 transition-colors"><strong>"Cold" Cognition:</strong> "I need to study history."</button>
+        <button onClick={() => handleChoice('hot')} className="p-4 bg-rose-50 border border-rose-200 rounded-xl text-left text-sm hover:bg-rose-100 transition-colors"><strong>"Hot" Cognition (EFT):</strong> "Imagine acing that exam..."</button>
       </div>
 
       <AnimatePresence>
         {choice !== 'none' && (
-          <motion.div initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} className="mt-8 p-6 rounded-2xl bg-zinc-900 text-white">
+          <motion.div initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} className="mt-8 p-6 rounded-xl bg-zinc-900 text-white">
             {choice === 'cold' && <p><strong className="text-blue-400">Result:</strong> A small motivational increase. The task is abstract and lacks an immediate reward signal for your brain.</p>}
             {choice === 'hot' && <p><strong className="text-rose-400">Result:</strong> Major dopamine boost! Vividly simulating future success makes the reward feel real *now*, flooding your brain with the motivation to start.</p>}
           </motion.div>
@@ -182,18 +182,18 @@ const HopeMap = () => {
   };
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl space-y-8">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">My Hope Circuit Blueprint</h4>
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 space-y-8">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">My Hope Circuit Blueprint</h4>
       <div>
         <label className="block text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 mb-2">The Power Source (Your Goal)</label>
-        <input value={goal} onChange={(e) => setGoal(e.target.value)} placeholder="e.g., Get a H2 in Leaving Cert Maths" className="w-full bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-100 rounded-xl p-4 focus:border-emerald-500 outline-none transition-colors" />
+        <input value={goal} onChange={(e) => setGoal(e.target.value)} placeholder="e.g., Get a H2 in Leaving Cert Maths" className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-4 focus:border-emerald-500 outline-none transition-colors" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label className="block text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 mb-2">The Wiring (Pathways)</label>
           <div className="space-y-2">
             {pathways.map((p, i) => (
-              <input key={i} value={p} onChange={(e) => updatePathway(i, e.target.value)} placeholder={`Route ${i + 1}`} className="w-full bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-100 rounded-xl p-3 focus:border-emerald-500 outline-none transition-colors" />
+              <input key={i} value={p} onChange={(e) => updatePathway(i, e.target.value)} placeholder={`Route ${i + 1}`} className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-3 focus:border-emerald-500 outline-none transition-colors" />
             ))}
           </div>
           <button onClick={addPathway} className="mt-2 text-xs font-bold text-emerald-600 hover:text-emerald-800">+ Add another route</button>
@@ -202,7 +202,7 @@ const HopeMap = () => {
           <label className="block text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 mb-2">Short Circuits (Obstacles)</label>
           <div className="space-y-2">
             {obstacles.map((o, i) => (
-              <input key={i} value={o} onChange={(e) => updateObstacle(i, e.target.value)} placeholder={`Potential problem ${i + 1}`} className="w-full bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-100 rounded-xl p-3 focus:border-emerald-500 outline-none transition-colors" />
+              <input key={i} value={o} onChange={(e) => updateObstacle(i, e.target.value)} placeholder={`Potential problem ${i + 1}`} className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-3 focus:border-emerald-500 outline-none transition-colors" />
             ))}
           </div>
           <button onClick={addObstacle} className="mt-2 text-xs font-bold text-emerald-600 hover:text-emerald-800">+ Add another problem</button>
@@ -220,11 +220,11 @@ const CortisolSimulator = () => {
     'high-hope': "M0,50 C40,50 60,10 100,10 L250,10 C300,10 320,70 400,80",
   }
   return (
-     <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Cortisol Curve Simulator</h4>
+     <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Cortisol Curve Simulator</h4>
         <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Stressor Detected: Bad Mock Exam Result.</p>
         <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">How does your system respond?</p>
-        <div className="bg-zinc-50/50 p-6 rounded-2xl">
+        <div className="bg-zinc-50/50 p-6 rounded-xl">
           <svg viewBox="0 0 400 100" className="w-full h-auto">
             <AnimatePresence>
             <motion.path
@@ -244,8 +244,8 @@ const CortisolSimulator = () => {
           </svg>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-          <button onClick={() => setResponseType('low-hope')} className="p-4 bg-rose-50 border-2 border-rose-200 rounded-xl text-left text-sm"><strong>Low-Hope Response:</strong> "This is pointless, I'm just bad at this subject." <span className="block text-xs text-rose-500 mt-1">Result: Flattened cortisol curve, prolonged stress.</span></button>
-          <button onClick={() => setResponseType('high-hope')} className="p-4 bg-emerald-50 border-2 border-emerald-200 rounded-xl text-left text-sm"><strong>High-Hope Response:</strong> "Okay, that didn't work. What's a new plan I can try?" <span className="block text-xs text-emerald-500 mt-1">Result: Healthy cortisol recovery, stress buffered.</span></button>
+          <button onClick={() => setResponseType('low-hope')} className="p-4 bg-rose-50 border border-rose-200 rounded-xl text-left text-sm"><strong>Low-Hope Response:</strong> "This is pointless, I'm just bad at this subject." <span className="block text-xs text-rose-500 mt-1">Result: Flattened cortisol curve, prolonged stress.</span></button>
+          <button onClick={() => setResponseType('high-hope')} className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl text-left text-sm"><strong>High-Hope Response:</strong> "Okay, that didn't work. What's a new plan I can try?" <span className="block text-xs text-emerald-500 mt-1">Result: Healthy cortisol recovery, stress buffered.</span></button>
         </div>
      </div>
   );

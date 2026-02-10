@@ -17,8 +17,8 @@ const theme = skyTheme;
 const CognitionShiftVisualizer = () => {
     const [isHot, setIsHot] = useState(false);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Hot vs. Cold Cognition</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Hot vs. Cold Cognition</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Click the button to simulate what happens to your brain under exam stress.</p>
              <div className="flex justify-center items-center gap-4">
                 <div className="text-center">
@@ -39,8 +39,8 @@ const CognitionShiftVisualizer = () => {
 };
 
 const PhysiologicalSighGuide = () => (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
-         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Physiological Sigh</h4>
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Physiological Sigh</h4>
          <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Your emergency brake for acute panic. Repeat 3 times.</p>
          <div className="flex justify-center items-center gap-8">
             <motion.div initial={{scale:0.5}} animate={{scale:[1, 1, 0.5, 0.5]}} transition={{duration:6, repeat: Infinity, times:[0, 0.4, 0.5, 1]}} className="w-20 h-20 rounded-full bg-sky-300 flex items-center justify-center font-bold">Inhale 1</motion.div>

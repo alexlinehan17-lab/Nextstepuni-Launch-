@@ -19,8 +19,8 @@ const theme = cyanTheme;
 const PFCShutdownSimulator = () => {
     const [stress, setStress] = useState(false);
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">PFC Shutdown Simulator</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">PFC Shutdown Simulator</h4>
              <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Click to see what happens when your Amygdala hijacks your brain.</p>
              <div className="flex justify-center items-center gap-4">
                 <motion.div animate={{opacity: stress ? 1: 0.3}} className="text-center"><Zap size={48} className="text-rose-500 mx-auto"/><p className="font-bold">Amygdala</p></motion.div>
@@ -34,8 +34,8 @@ const PFCShutdownSimulator = () => {
 
 const ArousalReappraisal = () => {
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Arousal Reappraisal</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Arousal Reappraisal</h4>
              <div className="relative h-48 w-full">
                 <div className="absolute top-4 left-4 p-3 bg-rose-100 text-rose-800 rounded-lg font-bold">Anxiety</div>
                 <div className="absolute top-4 right-4 p-3 bg-emerald-100 text-emerald-800 rounded-lg font-bold">Excitement</div>
@@ -51,8 +51,8 @@ const ArousalReappraisal = () => {
 };
 
 const BoxBreathing = () => (
-     <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
-         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Box Breathing</h4>
+     <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Box Breathing</h4>
          <div className="w-24 h-24 mx-auto my-6 relative">
              <motion.div className="w-full h-full border-4 border-cyan-300 rounded-lg" animate={{rotate: 360}} transition={{duration: 16, repeat: Infinity, ease: 'linear'}}/>
              <motion.div className="absolute w-4 h-4 bg-cyan-500 rounded-full" style={{top: -8, left:'50%', x:'-50%'}} animate={{offsetDistance: "100%"}} transition={{duration: 16, repeat: Infinity, ease: 'linear'}}/>

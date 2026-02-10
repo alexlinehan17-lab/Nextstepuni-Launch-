@@ -21,17 +21,17 @@ const theme = cyanTheme;
 const GlassBoxUnfolder = () => {
     const [isUnfolded, setIsUnfolded] = useState(false);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl flex flex-col items-center">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The "Glass Box" Model</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 flex flex-col items-center">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "Glass Box" Model</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">This is the fundamental mental model for orthographic projection.</p>
              <div className="w-48 h-48 [perspective:1000px] mb-8">
                 <motion.div className="relative w-full h-full" style={{ transformStyle: 'preserve-3d', transform: 'rotateX(-20deg) rotateY(-30deg)' }} animate={{scale: isUnfolded ? 0.8 : 1}}>
                     {/* Front */}
-                    <motion.div className="absolute w-48 h-48 border-2 border-cyan-500 bg-cyan-500/10 flex items-center justify-center" style={{transformOrigin: 'bottom'}} animate={{rotateX: isUnfolded ? -90 : 0, y: isUnfolded ? 96 : 0 }}><span className="font-bold">ELEVATION</span></motion.div>
+                    <motion.div className="absolute w-48 h-48 border border-cyan-500 bg-cyan-500/10 flex items-center justify-center" style={{transformOrigin: 'bottom'}} animate={{rotateX: isUnfolded ? -90 : 0, y: isUnfolded ? 96 : 0 }}><span className="font-bold">ELEVATION</span></motion.div>
                     {/* Top */}
-                    <motion.div className="absolute w-48 h-48 border-2 border-cyan-500 bg-cyan-500/10 flex items-center justify-center" style={{transformOrigin: 'top'}} animate={{transform: `rotateX(90deg) translateZ(96px)`, rotateX: isUnfolded ? -90 : 90, y: isUnfolded ? -96 : 0}}><span className="font-bold">PLAN</span></motion.div>
+                    <motion.div className="absolute w-48 h-48 border border-cyan-500 bg-cyan-500/10 flex items-center justify-center" style={{transformOrigin: 'top'}} animate={{transform: `rotateX(90deg) translateZ(96px)`, rotateX: isUnfolded ? -90 : 90, y: isUnfolded ? -96 : 0}}><span className="font-bold">PLAN</span></motion.div>
                      {/* Side */}
-                    <motion.div className="absolute w-48 h-48 border-2 border-cyan-500 bg-cyan-500/10 flex items-center justify-center" style={{transformOrigin: 'left'}} animate={{transform: `rotateY(-90deg) translateZ(96px)`, rotateY: isUnfolded ? 90 : -90, x: isUnfolded ? -96 : 0}}><span className="font-bold">END VIEW</span></motion.div>
+                    <motion.div className="absolute w-48 h-48 border border-cyan-500 bg-cyan-500/10 flex items-center justify-center" style={{transformOrigin: 'left'}} animate={{transform: `rotateY(-90deg) translateZ(96px)`, rotateY: isUnfolded ? 90 : -90, x: isUnfolded ? -96 : 0}}><span className="font-bold">END VIEW</span></motion.div>
                 </motion.div>
              </div>
              <button onClick={() => setIsUnfolded(!isUnfolded)} className="px-4 py-2 bg-cyan-500 text-white font-bold rounded-lg">{isUnfolded ? 'Fold Box' : 'Unfold Box'}</button>
@@ -43,8 +43,8 @@ const CycleOfModelling = () => {
     const steps = ["Decomposition", "Internalization", "Simulation", "Externalization", "Re-Internalization"];
     const [activeStep, setActiveStep] = useState(0);
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Cycle of Modelling</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Cycle of Modelling</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">This is the active hypothesis-testing process your brain runs.</p>
              <div className="flex justify-between mb-2">
                 {steps.map((step, i) => <div key={step} className={`w-1/5 text-center text-xs font-bold ${i <= activeStep ? 'text-cyan-600' : 'text-zinc-300'}`}>{step}</div>)}

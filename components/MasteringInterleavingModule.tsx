@@ -25,8 +25,8 @@ const StudyPlannerInteractive = () => {
     const schedule = planType === 'blocked' ? blockedSchedule : interleavedSchedule;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Weekly Schedule Architect</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Weekly Schedule Architect</h4>
             <div className="flex justify-center gap-2 p-1 bg-zinc-100 dark:bg-zinc-800 rounded-full my-6 max-w-sm mx-auto">
                 <button onClick={() => setPlanType('blocked')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${planType === 'blocked' ? 'bg-white shadow' : ''}`}>Blocked Schedule</button>
                 <button onClick={() => setPlanType('interleaved')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${planType === 'interleaved' ? 'bg-white shadow' : ''}`}>Interleaved Schedule</button>
@@ -55,15 +55,15 @@ const ProblemTypeSpotter = () => {
     ];
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Problem Spotter</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Problem Spotter</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Calculus: Don't solve. Just identify the correct rule.</p>
              {problems.map(p => (
                 <div key={p.id} className="mb-4">
                     <p className="text-center font-mono bg-zinc-100 dark:bg-zinc-800 p-4 rounded-xl mb-2">{p.text}</p>
                     <div className="grid grid-cols-2 gap-2">
-                        <button onClick={() => setChoice({...choice, [p.id]:'chain'})} className={`p-2 text-xs rounded-lg border-2 ${choice[p.id] && (choice[p.id] === 'chain' && p.correct === 'chain' ? 'bg-emerald-100 border-emerald-300' : choice[p.id] === 'chain' ? 'bg-rose-100 border-rose-300' : 'bg-zinc-100 border-zinc-200 dark:border-zinc-700')}`}>Chain Rule</button>
-                        <button onClick={() => setChoice({...choice, [p.id]:'product'})} className={`p-2 text-xs rounded-lg border-2 ${choice[p.id] && (choice[p.id] === 'product' && p.correct === 'product' ? 'bg-emerald-100 border-emerald-300' : choice[p.id] === 'product' ? 'bg-rose-100 border-rose-300' : 'bg-zinc-100 border-zinc-200 dark:border-zinc-700')}`}>Product Rule</button>
+                        <button onClick={() => setChoice({...choice, [p.id]:'chain'})} className={`p-2 text-xs rounded-lg border ${choice[p.id] && (choice[p.id] === 'chain' && p.correct === 'chain' ? 'bg-emerald-100 border-emerald-300' : choice[p.id] === 'chain' ? 'bg-rose-100 border-rose-300' : 'bg-zinc-100 border-zinc-200 dark:border-zinc-700')}`}>Chain Rule</button>
+                        <button onClick={() => setChoice({...choice, [p.id]:'product'})} className={`p-2 text-xs rounded-lg border ${choice[p.id] && (choice[p.id] === 'product' && p.correct === 'product' ? 'bg-emerald-100 border-emerald-300' : choice[p.id] === 'product' ? 'bg-rose-100 border-rose-300' : 'bg-zinc-100 border-zinc-200 dark:border-zinc-700')}`}>Product Rule</button>
                     </div>
                 </div>
              ))}
@@ -100,17 +100,17 @@ const RetrospectiveRevisionLog = () => {
     }
 
     return (
-         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Retrospective Revision Log</h4>
+         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Retrospective Revision Log</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Update your confidence after studying. The "Worst First" rule will guide you.</p>
              <div className="space-y-3">
                 {topics.map(topic => (
                     <div key={topic.name} className="p-3 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-lg flex justify-between items-center">
                         <span className="font-bold text-sm">{topic.name}</span>
                         <div className="flex gap-1">
-                            <button onClick={() => updateStatus(topic.name, 'red')} className={`w-6 h-6 rounded-full border-2 ${topic.status === 'red' ? 'bg-rose-500 border-rose-600' : 'bg-rose-200 border-rose-300'}`}></button>
-                            <button onClick={() => updateStatus(topic.name, 'amber')} className={`w-6 h-6 rounded-full border-2 ${topic.status === 'amber' ? 'bg-amber-500 border-amber-600' : 'bg-amber-200 border-amber-300'}`}></button>
-                            <button onClick={() => updateStatus(topic.name, 'green')} className={`w-6 h-6 rounded-full border-2 ${topic.status === 'green' ? 'bg-emerald-500 border-emerald-600' : 'bg-emerald-200 border-emerald-300'}`}></button>
+                            <button onClick={() => updateStatus(topic.name, 'red')} className={`w-6 h-6 rounded-full border ${topic.status === 'red' ? 'bg-rose-500 border-rose-600' : 'bg-rose-200 border-rose-300'}`}></button>
+                            <button onClick={() => updateStatus(topic.name, 'amber')} className={`w-6 h-6 rounded-full border ${topic.status === 'amber' ? 'bg-amber-500 border-amber-600' : 'bg-amber-200 border-amber-300'}`}></button>
+                            <button onClick={() => updateStatus(topic.name, 'green')} className={`w-6 h-6 rounded-full border ${topic.status === 'green' ? 'bg-emerald-500 border-emerald-600' : 'bg-emerald-200 border-emerald-300'}`}></button>
                         </div>
                     </div>
                 ))}

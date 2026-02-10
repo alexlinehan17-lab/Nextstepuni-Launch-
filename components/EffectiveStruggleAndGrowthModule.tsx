@@ -32,8 +32,8 @@ const CognitiveLoadBalancer = () => {
     );
 
     return (
-         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Cognitive Load Balancer</h4>
+         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Cognitive Load Balancer</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Your Working Memory is limited. Keep the total load below 100% and maximize Germane load to learn effectively.</p>
             <div className="w-full h-8 bg-zinc-100 dark:bg-zinc-800 rounded-full flex overflow-hidden mb-6">
                 <motion.div className="h-full bg-blue-500" animate={{width: `${loads.intrinsic}%`}} />
@@ -55,12 +55,12 @@ const CognitiveLoadBalancer = () => {
 const StairsEscalator = () => {
     const [choice, setChoice] = useState<'stairs' | 'escalator' | null>(null);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Stairs vs. Escalator</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Stairs vs. Escalator</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Which path leads to real learning?</p>
             <div className="grid grid-cols-2 gap-4">
-                <button onClick={() => setChoice('escalator')} className="p-4 bg-zinc-100 dark:bg-zinc-800 border-2 border-zinc-200 dark:border-zinc-700 rounded-xl text-center"><strong>The Escalator:</strong> A perfectly clear lecture, re-reading your notes.</button>
-                <button onClick={() => setChoice('stairs')} className="p-4 bg-zinc-100 dark:bg-zinc-800 border-2 border-zinc-200 dark:border-zinc-700 rounded-xl text-center"><strong>The Stairs:</strong> Struggling with a past paper, trying to explain a topic.</button>
+                <button onClick={() => setChoice('escalator')} className="p-4 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl text-center"><strong>The Escalator:</strong> A perfectly clear lecture, re-reading your notes.</button>
+                <button onClick={() => setChoice('stairs')} className="p-4 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl text-center"><strong>The Stairs:</strong> Struggling with a past paper, trying to explain a topic.</button>
             </div>
             {choice &&
             <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6 p-4 rounded-xl text-sm text-white bg-zinc-900">
@@ -88,8 +88,8 @@ const OptimizedFrictionEngine = () => {
   if (isOptimal) resultText = "OPTIMAL LEARNING ENGAGED: You've achieved Optimized Friction!";
 
   return (
-    <div className="my-12 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Optimized Friction Engine</h4>
+    <div className="my-12 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Optimized Friction Engine</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Calibrate the three core variables to achieve true learning.</p>
 
       <div className="flex flex-col md:flex-row items-center gap-8">

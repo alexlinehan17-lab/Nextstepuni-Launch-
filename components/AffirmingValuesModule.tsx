@@ -30,15 +30,15 @@ const ValuesSelector = () => {
     };
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Core Values Audit</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Core Values Audit</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Select your top 3 most important personal values.</p>
              <div className="flex flex-wrap justify-center gap-3">
                 {values.map(value => (
                     <motion.button
                         key={value}
                         onClick={() => handleSelect(value)}
-                        className={`px-4 py-2 text-sm font-bold rounded-full border-2 transition-all ${selected.includes(value) ? 'bg-blue-500 text-white border-blue-500' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700'}`}
+                        className={`px-4 py-2 text-sm font-bold rounded-full border transition-all ${selected.includes(value) ? 'bg-blue-500 text-white border-blue-500' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700'}`}
                         whileHover={{y: -2}}
                     >
                         {value}

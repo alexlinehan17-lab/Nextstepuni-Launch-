@@ -26,14 +26,14 @@ const PartialCreditCalculator = () => {
     if(steps.blunder) {marks = 3; grade="Low Partial (Blunder)"}
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Partial Credit Calculator</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Partial Credit Calculator</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Scenario: A 10-mark D-Scale question. Check the steps you complete.</p>
             <div className="grid grid-cols-2 gap-4">
-                <button onClick={() => setSteps({...steps, formula: !steps.formula})} className={`p-4 rounded-xl border-2 ${steps.formula ? 'bg-emerald-100' : ''}`}>Wrote correct formula</button>
-                <button onClick={() => setSteps({...steps, substitution: !steps.substitution})} className={`p-4 rounded-xl border-2 ${steps.substitution ? 'bg-emerald-100' : ''}`}>Attempted substitution</button>
-                <button onClick={() => setSteps({...steps, slip: !steps.slip, blunder: false})} className={`p-4 rounded-xl border-2 ${steps.slip ? 'bg-amber-100' : ''}`}>Made a minor 'Slip'</button>
-                <button onClick={() => setSteps({...steps, blunder: !steps.blunder, slip: false})} className={`p-4 rounded-xl border-2 ${steps.blunder ? 'bg-rose-100' : ''}`}>Made a major 'Blunder'</button>
+                <button onClick={() => setSteps({...steps, formula: !steps.formula})} className={`p-4 rounded-xl border ${steps.formula ? 'bg-emerald-100' : ''}`}>Wrote correct formula</button>
+                <button onClick={() => setSteps({...steps, substitution: !steps.substitution})} className={`p-4 rounded-xl border ${steps.substitution ? 'bg-emerald-100' : ''}`}>Attempted substitution</button>
+                <button onClick={() => setSteps({...steps, slip: !steps.slip, blunder: false})} className={`p-4 rounded-xl border ${steps.slip ? 'bg-amber-100' : ''}`}>Made a minor 'Slip'</button>
+                <button onClick={() => setSteps({...steps, blunder: !steps.blunder, slip: false})} className={`p-4 rounded-xl border ${steps.blunder ? 'bg-rose-100' : ''}`}>Made a major 'Blunder'</button>
             </div>
             <div className="mt-8 p-4 bg-zinc-900 rounded-xl text-center text-white">
                 You get <span className="font-bold text-2xl text-red-400">{marks}/10</span> ({grade})
@@ -45,8 +45,8 @@ const PartialCreditCalculator = () => {
 const OralPivotSimulator = () => {
     const [response, setResponse] = useState<null|'short'|'pivot'>(null);
     return(
-         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Oral Exam Pivot Simulator</h4>
+         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Oral Exam Pivot Simulator</h4>
             <p className="text-center font-bold text-zinc-700 dark:text-zinc-200 mb-2">Examiner: "How was your weekend?"</p>
             <div className="grid grid-cols-2 gap-4">
                 <button onClick={() => setResponse('short')} className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-xl"><strong>A:</strong> "It was grand, I went to the cinema."</button>

@@ -43,8 +43,8 @@ const PointsCalculator = () => {
     const totalPoints = subjectPoints.sort((a, b) => b - a).slice(0, 6).reduce((sum, p) => sum + p, 0);
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">CAO Points Calculator</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">CAO Points Calculator</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">See how the "Best Six" and Maths Bonus work in practice.</p>
             <div className="space-y-3">
                 {subjects.map((s, i) => (
@@ -61,7 +61,7 @@ const PointsCalculator = () => {
                     </div>
                 ))}
             </div>
-            <div className="mt-8 p-6 bg-zinc-900 rounded-2xl text-center">
+            <div className="mt-8 p-6 bg-zinc-900 rounded-xl text-center">
                 <p className="text-sm font-bold text-zinc-400">Total "Best Six" Points:</p>
                 <p className="text-5xl font-semibold text-white">{totalPoints}</p>
             </div>
@@ -79,23 +79,23 @@ const SubjectClusterExplorer = () => {
     const isHighlighted = (subject: string) => activeCluster && clusters[activeCluster as keyof typeof clusters].includes(subject);
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Syllabus Overlap Explorer</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Syllabus Overlap Explorer</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Click a cluster to see how subjects connect and reduce your workload.</p>
             <div className="flex justify-center gap-3 mb-6">
-                <button onClick={() => setActiveCluster('Lab Science')} className={`px-4 py-2 text-sm font-bold rounded-lg border-2 ${activeCluster === 'Lab Science' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-emerald-50 text-emerald-800 border-emerald-200'}`}>Lab Science</button>
-                <button onClick={() => setActiveCluster('Business')} className={`px-4 py-2 text-sm font-bold rounded-lg border-2 ${activeCluster === 'Business' ? 'bg-sky-500 text-white border-sky-500' : 'bg-sky-50 text-sky-800 border-sky-200'}`}>Business</button>
+                <button onClick={() => setActiveCluster('Lab Science')} className={`px-4 py-2 text-sm font-bold rounded-lg border ${activeCluster === 'Lab Science' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-emerald-50 text-emerald-800 border-emerald-200'}`}>Lab Science</button>
+                <button onClick={() => setActiveCluster('Business')} className={`px-4 py-2 text-sm font-bold rounded-lg border ${activeCluster === 'Business' ? 'bg-sky-500 text-white border-sky-500' : 'bg-sky-50 text-sky-800 border-sky-200'}`}>Business</button>
                 <button onClick={() => setActiveCluster(null)} className="text-xs">Reset</button>
             </div>
             <div className="grid grid-cols-3 gap-3 text-center">
-                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Biology') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Biology</div>
-                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Ag Science') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Ag Science</div>
-                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Home Ec') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Home Ec</div>
-                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Physics') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Physics</div>
-                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Applied Maths') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Applied Maths</div>
-                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Business') ? 'border-sky-400 bg-sky-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Business</div>
-                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Accounting') ? 'border-sky-400 bg-sky-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Accounting</div>
-                <div className={`p-3 rounded-lg border-2 ${isHighlighted('Economics') ? 'border-sky-400 bg-sky-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Economics</div>
+                <div className={`p-3 rounded-lg border ${isHighlighted('Biology') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Biology</div>
+                <div className={`p-3 rounded-lg border ${isHighlighted('Ag Science') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Ag Science</div>
+                <div className={`p-3 rounded-lg border ${isHighlighted('Home Ec') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Home Ec</div>
+                <div className={`p-3 rounded-lg border ${isHighlighted('Physics') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Physics</div>
+                <div className={`p-3 rounded-lg border ${isHighlighted('Applied Maths') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Applied Maths</div>
+                <div className={`p-3 rounded-lg border ${isHighlighted('Business') ? 'border-sky-400 bg-sky-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Business</div>
+                <div className={`p-3 rounded-lg border ${isHighlighted('Accounting') ? 'border-sky-400 bg-sky-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Accounting</div>
+                <div className={`p-3 rounded-lg border ${isHighlighted('Economics') ? 'border-sky-400 bg-sky-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Economics</div>
             </div>
         </div>
     );
@@ -111,11 +111,11 @@ const CommandWordDecoder = () => {
     const [selected, setSelected] = useState(words[0]);
 
     return (
-         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Command Word Decoder</h4>
+         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Command Word Decoder</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Misinterpreting this word is the #1 cause of losing marks.</p>
             <div className="flex justify-center flex-wrap gap-2 mb-6">
-                {words.map(w => <button key={w.word} onClick={() => setSelected(w)} className={`px-4 py-2 font-mono text-sm rounded-lg border-2 ${selected.word === w.word ? 'bg-red-500 text-white border-red-500' : 'bg-zinc-100 border-zinc-200 dark:border-zinc-700'}`}>{w.word}</button>)}
+                {words.map(w => <button key={w.word} onClick={() => setSelected(w)} className={`px-4 py-2 font-mono text-sm rounded-lg border ${selected.word === w.word ? 'bg-red-500 text-white border-red-500' : 'bg-zinc-100 border-zinc-200 dark:border-zinc-700'}`}>{w.word}</button>)}
             </div>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                  <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-lg">

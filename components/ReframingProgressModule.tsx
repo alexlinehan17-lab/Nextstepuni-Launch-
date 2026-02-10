@@ -46,12 +46,12 @@ const KanbanBoard = () => {
     };
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Kanban Flow</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Kanban Flow</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Drag tasks to the "Done" column to secure a "Win".</p>
              <div className="grid grid-cols-3 gap-4">
                 {['todo', 'doing', 'done'].map(col => (
-                    <div key={col} data-column={col} className="kanban-col p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-2xl min-h-[200px]">
+                    <div key={col} data-column={col} className="kanban-col p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl min-h-[200px]">
                         <h5 className="font-bold text-center text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-400">{col} {col === 'done' && `(${wins})`}</h5>
                         <div className="mt-4 space-y-2">
                             {tasks.filter(t => t.column === col).map(task => (
@@ -91,16 +91,16 @@ const RetrospectiveLog = () => {
     };
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Retrospective Log</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Retrospective Log</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Rate your confidence. Let the "Worst First" rule decide your next move.</p>
             {topics.map(t => (
                 <div key={t.name} className="flex items-center justify-between p-2">
                     <span className="font-bold">{t.name}</span>
                     <div className="flex gap-1">
-                        <button onClick={() => updateStatus(t.name, 'red')} className={`w-6 h-6 rounded-full border-2 ${t.status === 'red' ? 'bg-rose-500 border-rose-600' : 'bg-rose-200'}`} />
-                        <button onClick={() => updateStatus(t.name, 'amber')} className={`w-6 h-6 rounded-full border-2 ${t.status === 'amber' ? 'bg-amber-500 border-amber-600' : 'bg-amber-200'}`} />
-                        <button onClick={() => updateStatus(t.name, 'green')} className={`w-6 h-6 rounded-full border-2 ${t.status === 'green' ? 'bg-emerald-500 border-emerald-600' : 'bg-emerald-200'}`} />
+                        <button onClick={() => updateStatus(t.name, 'red')} className={`w-6 h-6 rounded-full border ${t.status === 'red' ? 'bg-rose-500 border-rose-600' : 'bg-rose-200'}`} />
+                        <button onClick={() => updateStatus(t.name, 'amber')} className={`w-6 h-6 rounded-full border ${t.status === 'amber' ? 'bg-amber-500 border-amber-600' : 'bg-amber-200'}`} />
+                        <button onClick={() => updateStatus(t.name, 'green')} className={`w-6 h-6 rounded-full border ${t.status === 'green' ? 'bg-emerald-500 border-emerald-600' : 'bg-emerald-200'}`} />
                     </div>
                 </div>
             ))}

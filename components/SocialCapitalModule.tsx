@@ -72,15 +72,15 @@ const NotionsDecoder = () => {
     ];
     const [selected, setSelected] = useState(0);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The "Notions" Decoder</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "Notions" Decoder</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Translate the language of 'smart shaming' into the language of success.</p>
             <div className="flex flex-wrap justify-center gap-2 mb-6">
                 {phrases.map((p, i) => (
-                    <button key={p.insult} onClick={() => setSelected(i)} className={`px-4 py-2 text-sm font-bold rounded-lg border-2 ${selected === i ? 'bg-violet-500 text-white border-violet-500' : 'bg-zinc-100 border-zinc-200 dark:border-zinc-700'}`}>{p.insult}</button>
+                    <button key={p.insult} onClick={() => setSelected(i)} className={`px-4 py-2 text-sm font-bold rounded-lg border ${selected === i ? 'bg-violet-500 text-white border-violet-500' : 'bg-zinc-100 border-zinc-200 dark:border-zinc-700'}`}>{p.insult}</button>
                 ))}
             </div>
-             <div className="p-6 bg-zinc-900 rounded-2xl text-center text-white font-mono">
+             <div className="p-6 bg-zinc-900 rounded-xl text-center text-white font-mono">
                 {phrases[selected].reframe}
              </div>
         </div>
@@ -97,8 +97,8 @@ const NetworkAudit = () => {
     ]);
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">My Network Map</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">My Network Map</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Who is in your network? Who could you add?</p>
              <div className="h-80 w-full bg-zinc-50 dark:bg-zinc-800/50 rounded-lg relative">
                 {nodes.map(node => (

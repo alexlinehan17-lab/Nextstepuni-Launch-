@@ -29,10 +29,10 @@ const ProcrastinationEquation = () => {
     );
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Procrastination Equation</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Procrastination Equation</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Adjust the sliders to see what drives your motivation.</p>
-            <div className="p-6 bg-zinc-900 rounded-2xl text-center mb-8">
+            <div className="p-6 bg-zinc-900 rounded-xl text-center mb-8">
                 <p className="text-sm text-zinc-400">Your Motivation Score:</p>
                 <p className="text-5xl font-semibold text-white tracking-tighter"><motion.span initial={{}} animate={{}}>{Math.round(utility)}</motion.span></p>
             </div>
@@ -54,8 +54,8 @@ const IfThenAutopilot = () => {
     };
 
     return(
-         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The "If-Then" Autopilot</h4>
+         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "If-Then" Autopilot</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Pre-load a decision to bypass willpower. Click to create a plan.</p>
             <div className="flex justify-center">
                 <button onClick={createPlan} className="px-5 py-3 bg-orange-500 text-white font-bold rounded-lg text-sm">Create Plan</button>
@@ -83,8 +83,8 @@ const GuiltSpiral = () => {
     }
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Guilt Spiral</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Guilt Spiral</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">"Tough love" doesn't work. It just adds more negative emotion to the fire.</p>
              <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
@@ -109,11 +109,11 @@ const CircuitBreaker = () => {
     const containsForgive = reframe.toLowerCase().includes('forgive');
     const containsAction = reframe.toLowerCase().includes('i will');
     return(
-         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Circuit Breaker</h4>
+         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Circuit Breaker</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Rewrite this self-critical thought into a self-forgiving, action-oriented statement.</p>
             <p className="p-4 bg-rose-50 border border-rose-200 rounded-xl text-center font-mono text-rose-800 mb-4">"I'm so useless, I wasted the whole day."</p>
-            <textarea value={reframe} onChange={e => setReframe(e.target.value)} placeholder="Your new script..." className="w-full h-24 p-4 bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-200 dark:border-zinc-700 rounded-xl focus:outline-none focus:border-orange-400" />
+            <textarea value={reframe} onChange={e => setReframe(e.target.value)} placeholder="Your new script..." className="w-full h-24 p-4 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl focus:outline-none focus:border-orange-400" />
             {(containsForgive || containsAction) &&
                 <div className="mt-4 grid grid-cols-2 gap-2 text-xs">
                     <p className={containsForgive ? 'text-emerald-600 font-bold' : 'text-zinc-400'}>Contains Self-Forgiveness</p>

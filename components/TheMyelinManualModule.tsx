@@ -23,8 +23,8 @@ const MyelinWrapper = () => {
     const speed = 10 + (wraps * 9); // Speed from 10 to 100
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Myelin Wrapper</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Myelin Wrapper</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Each time you practice a skill, you add a layer of myelin, making the signal faster.</p>
             <div className="flex justify-center items-center h-24">
                 <div className="relative w-64 h-2 bg-zinc-200 rounded-full">
@@ -44,7 +44,7 @@ const MyelinWrapper = () => {
                 </div>
             </div>
              <div className="flex justify-center items-center gap-6 mt-8">
-                <button onClick={() => setWraps(w => Math.min(w + 1, maxWraps))} className="px-5 py-3 bg-amber-500 text-white font-bold rounded-lg shadow-lg hover:bg-amber-600 transition-colors text-sm">Practice Skill</button>
+                <button onClick={() => setWraps(w => Math.min(w + 1, maxWraps))} className="px-5 py-3 bg-amber-500 text-white font-bold rounded-lg hover:bg-amber-600 transition-colors text-sm">Practice Skill</button>
                 <div className="text-center">
                     <p className="font-mono text-2xl font-bold">{speed} <span className="text-sm">m/s</span></p>
                     <p className="text-xs font-bold uppercase tracking-widest text-zinc-400">Signal Speed</p>
@@ -65,8 +65,8 @@ const DeepPracticeSorter = () => {
     const [choice, setChoice] = useState<{[key: string]: 'naive' | 'deep' | null}>({});
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Deep vs. Naive Practice</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Deep vs. Naive Practice</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Which of these activities trigger myelin growth?</p>
             <div className="space-y-4">
                 {activities.map(act => (

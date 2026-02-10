@@ -53,8 +53,8 @@ const DweckExperimentSimulator = () => {
 
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Dweck Experiment Simulator</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Dweck Experiment Simulator</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">You just aced a test. Now, walk through the experiment and see the consequences.</p>
 
              <div className="grid grid-cols-2 gap-6 mb-8">
@@ -73,15 +73,15 @@ const DweckExperimentSimulator = () => {
                     {step === 0 && <>
                         <p className="font-bold mb-4">Phase 1: Choose your praise</p>
                         <div className="grid grid-cols-2 gap-4">
-                            <button onClick={() => handlePraise('person')} className="p-4 bg-rose-50 border-2 border-rose-200 rounded-xl">"You must be smart at this."</button>
-                            <button onClick={() => handlePraise('process')} className="p-4 bg-emerald-50 border-2 border-emerald-200 rounded-xl">"You must have worked hard at this."</button>
+                            <button onClick={() => handlePraise('person')} className="p-4 bg-rose-50 border border-rose-200 rounded-xl">"You must be smart at this."</button>
+                            <button onClick={() => handlePraise('process')} className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl">"You must have worked hard at this."</button>
                         </div>
                     </>}
                     {step === 1 && <>
                         <p className="font-bold mb-4">Phase 2: Choose your next task</p>
                          <div className="grid grid-cols-2 gap-4">
-                            <button onClick={() => handleTask('easy')} className="p-4 bg-zinc-100 dark:bg-zinc-800 border-2 border-zinc-200 dark:border-zinc-700 rounded-xl">An easy one (to look smart)</button>
-                            <button onClick={() => handleTask('hard')} className="p-4 bg-zinc-100 dark:bg-zinc-800 border-2 border-zinc-200 dark:border-zinc-700 rounded-xl">A hard one (to learn more)</button>
+                            <button onClick={() => handleTask('easy')} className="p-4 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl">An easy one (to look smart)</button>
+                            <button onClick={() => handleTask('hard')} className="p-4 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl">A hard one (to learn more)</button>
                         </div>
                     </>}
                     {step === 2 && <p className="font-bold text-blue-600">You chose the <span className="underline">{taskChoice}</span> task...</p>}
@@ -101,8 +101,8 @@ const DweckExperimentSimulator = () => {
 const ErrorSignalVisualizer = () => {
     const [active, setActive] = useState(false);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Brain's Error Signal</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Brain's Error Signal</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">When you make a mistake, your brain sends two signals. The second signal (Pe) is where the magic happens.</p>
              <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">

@@ -23,8 +23,8 @@ const HungryManExperiment = () => {
     let retention = method === 'passive' ? 37 : method === 'ei' ? 72 : 0;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The "Hungry Man" Experiment</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "Hungry Man" Experiment</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">See the dramatic effect of asking "Why?" on your memory.</p>
             <div className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-xl text-center font-mono mb-6">"The hungry man got in the car."</div>
             <div className="grid grid-cols-2 gap-4">
@@ -44,16 +44,16 @@ const HungryManExperiment = () => {
 const FlashcardFlipper = () => {
     const [isFlipped, setIsFlipped] = useState(false);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Flashcard 2.0</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Flashcard 2.0</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Stop making "what" cards. Start making "why" cards.</p>
             <div className="w-full h-48 [perspective:1000px]" onClick={() => setIsFlipped(!isFlipped)}>
                 <motion.div className="relative w-full h-full" style={{transformStyle: 'preserve-3d'}} animate={{rotateY: isFlipped ? 180 : 0}}>
-                    <div className="absolute w-full h-full [backface-visibility:hidden] rounded-2xl bg-zinc-900 text-white flex flex-col items-center justify-center p-4">
+                    <div className="absolute w-full h-full [backface-visibility:hidden] rounded-xl bg-zinc-900 text-white flex flex-col items-center justify-center p-4">
                         <p className="text-xs text-zinc-400 mb-2">FRONT</p>
                         <p className="font-bold">Why is the left ventricle wall thicker than the right?</p>
                     </div>
-                    <div className="absolute w-full h-full [backface-visibility:hidden] rounded-2xl bg-emerald-500 text-white flex flex-col items-center justify-center p-4" style={{transform: 'rotateY(180deg)'}}>
+                    <div className="absolute w-full h-full [backface-visibility:hidden] rounded-xl bg-emerald-500 text-white flex flex-col items-center justify-center p-4" style={{transform: 'rotateY(180deg)'}}>
                         <p className="text-xs text-emerald-200 mb-2">BACK</p>
                         <p className="font-bold text-sm">Because it pumps blood to the whole body (high pressure), while the right only pumps to the lungs (low pressure).</p>
                     </div>

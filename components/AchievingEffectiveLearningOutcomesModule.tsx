@@ -23,8 +23,8 @@ const IllusionOfCompetenceChart = () => {
     const stttData = { prediction: 40, reality: 61 };
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Great Deception</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Great Deception</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Data from Roediger & Karpicke (2006) reveals the gap between what *feels* effective and what *is* effective.</p>
             <div className="grid grid-cols-2 gap-4 mb-8">
                 <div className="text-center">

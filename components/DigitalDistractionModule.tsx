@@ -21,8 +21,8 @@ const AttentionDeficitCalculator = () => {
     const timeLost = checks * 23.25;
     const deepWorkTime = 60 - timeLost;
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Attention Deficit Calculator</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Attention Deficit Calculator</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Each phone check costs ~23 mins of focus. See the damage.</p>
              <div>
                 <label className="font-bold text-sm">Phone checks per hour: {checks}</label>

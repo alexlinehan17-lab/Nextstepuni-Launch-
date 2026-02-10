@@ -25,8 +25,8 @@ const ThoughtRecord = () => {
     const steps = ['Situation', 'Emotion', 'Negative Thought', 'Evidence For', 'Evidence Against', 'Alternative', 'Re-Rate'];
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Thought Record</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Thought Record</h4>
              <div className="flex justify-between my-4"><div className="w-full h-1 bg-zinc-100 dark:bg-zinc-800 rounded-full"><motion.div className="h-1 bg-slate-500 rounded-full" animate={{width: `${(step / (steps.length - 1)) * 100}%`}}/></div></div>
              <AnimatePresence mode="wait">
              <motion.div key={step} initial={{opacity:0, x:20}} animate={{opacity:1, x:0}} exit={{opacity:0, x:-20}} >
@@ -54,8 +54,8 @@ const GradedExposureHierarchy = () => {
         { id: 3, text: "Attempt one question (timed)", suds: 80 },
     ]);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Exposure Hierarchy Builder</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Exposure Hierarchy Builder</h4>
              <Reorder.Group axis="y" values={items} onReorder={setItems} className="space-y-2 mt-6">
                 {items.map(item => (
                     <Reorder.Item key={item.id} value={item} className="p-3 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex justify-between items-center cursor-grab active:cursor-grabbing">
@@ -86,11 +86,11 @@ const PassengersOnBus = () => {
     }, [busState, thoughts]);
 
     return (
-         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Passengers on the Bus</h4>
+         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Passengers on the Bus</h4>
              <div className="h-32 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-4 relative overflow-hidden">
                 <motion.div className="absolute" animate={{x: busState === 'driving' ? '150%' : '50%'}} transition={{duration: busState === 'driving' ? 5 : 0.5}}><Bus size={48} className="text-slate-700"/></motion.div>
-                {thought && <div className="absolute top-4 left-1/2 p-2 bg-white dark:bg-zinc-800 rounded-lg text-xs shadow-lg">{thought}</div>}
+                {thought && <div className="absolute top-4 left-1/2 p-2 bg-white dark:bg-zinc-800 rounded-lg text-xs">{thought}</div>}
              </div>
              <div className="grid grid-cols-2 gap-4 mt-4">
                 <button onClick={() => setBusState('stopped')} className="p-4 bg-rose-100 text-rose-800 rounded-xl">Argue with Passenger (Bus Stops)</button>

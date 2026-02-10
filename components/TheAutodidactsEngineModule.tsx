@@ -38,16 +38,16 @@ const FourHighlighterAudit = () => {
     `.replace(/<span class="(bg-blue-200|bg-green-200|bg-yellow-200|bg-red-300)">/g, '<span class="$1 px-1 rounded-sm">');
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Four-Highlighter Audit</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Four-Highlighter Audit</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Click the highlighters to audit the paragraph below.</p>
             <div className="flex justify-center flex-wrap gap-3 mb-6">
-                <button onClick={() => setActiveHighlighter(activeHighlighter === 'purpose' ? null : 'purpose')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border-2 ${activeHighlighter === 'purpose' ? 'bg-blue-500 text-white border-blue-500' : 'bg-blue-50 text-blue-800 border-blue-200'}`}> <Highlighter size={16}/> Purpose</button>
-                <button onClick={() => setActiveHighlighter(activeHighlighter === 'coherence' ? null : 'coherence')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border-2 ${activeHighlighter === 'coherence' ? 'bg-green-500 text-white border-green-500' : 'bg-green-50 text-green-800 border-green-200'}`}> <Highlighter size={16}/> Coherence</button>
-                <button onClick={() => setActiveHighlighter(activeHighlighter === 'language' ? null : 'language')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border-2 ${activeHighlighter === 'language' ? 'bg-yellow-400 text-yellow-900 border-yellow-500' : 'bg-yellow-50 text-yellow-800 border-yellow-200'}`}> <Highlighter size={16}/> Language</button>
-                <button onClick={() => setActiveHighlighter(activeHighlighter === 'mechanics' ? null : 'mechanics')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border-2 ${activeHighlighter === 'mechanics' ? 'bg-red-500 text-white border-red-500' : 'bg-red-50 text-red-800 border-red-200'}`}> <Highlighter size={16}/> Mechanics</button>
+                <button onClick={() => setActiveHighlighter(activeHighlighter === 'purpose' ? null : 'purpose')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'purpose' ? 'bg-blue-500 text-white border-blue-500' : 'bg-blue-50 text-blue-800 border-blue-200'}`}> <Highlighter size={16}/> Purpose</button>
+                <button onClick={() => setActiveHighlighter(activeHighlighter === 'coherence' ? null : 'coherence')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'coherence' ? 'bg-green-500 text-white border-green-500' : 'bg-green-50 text-green-800 border-green-200'}`}> <Highlighter size={16}/> Coherence</button>
+                <button onClick={() => setActiveHighlighter(activeHighlighter === 'language' ? null : 'language')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'language' ? 'bg-yellow-400 text-yellow-900 border-yellow-500' : 'bg-yellow-50 text-yellow-800 border-yellow-200'}`}> <Highlighter size={16}/> Language</button>
+                <button onClick={() => setActiveHighlighter(activeHighlighter === 'mechanics' ? null : 'mechanics')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'mechanics' ? 'bg-red-500 text-white border-red-500' : 'bg-red-50 text-red-800 border-red-200'}`}> <Highlighter size={16}/> Mechanics</button>
             </div>
-            <div className="bg-zinc-50 p-6 rounded-2xl border border-zinc-200 dark:border-zinc-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: textWithSpans }} />
+            <div className="bg-zinc-50 p-6 rounded-xl border border-zinc-200 dark:border-zinc-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: textWithSpans }} />
         </div>
     );
 };

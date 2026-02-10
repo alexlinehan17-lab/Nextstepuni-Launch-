@@ -23,8 +23,8 @@ const HistoryGrader = () => {
     const grade = total >= 90 ? 'H1' : total >= 80 ? 'H2' : total >= 70 ? 'H3' : total >= 60 ? 'H4' : 'H5';
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">CM/OE Grader</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">CM/OE Grader</h4>
             <div className="grid grid-cols-2 gap-6 items-center">
                 <div className="space-y-4">
                     <div><label className="text-xs font-bold">CM (Content): {cm}/60</label><input type="range" min="0" max="60" value={cm} onChange={e=>setCm(parseInt(e.target.value))} className="w-full"/></div>
@@ -43,8 +43,8 @@ const CourseworkCalculator = () => {
     const [project, setProject] = useState(90);
     const required = Math.max(0, (450 - project*0.2) / 0.8); // 450 is 90% of 500 for H1
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Coursework Advantage</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Coursework Advantage</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">See how your 20% project changes the exam requirement for a H1.</p>
              <div>
                 <label className="font-bold text-sm">Your Project Grade: {project}%</label>

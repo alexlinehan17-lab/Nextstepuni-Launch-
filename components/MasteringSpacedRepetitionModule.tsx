@@ -70,8 +70,8 @@ const ForgettingCurveVisualizer = () => {
     };
 
     return (
-        <div className="my-10 p-6 md:p-8 bg-zinc-900 rounded-2xl border border-white/10 shadow-2xl text-white shadow-[inset_0_2px_4px_0_rgba(255,255,255,0.05)]">
-            <h4 className="font-serif text-2xl font-semibold text-center italic">The Forgetting Curve</h4>
+        <div className="my-10 p-6 md:p-8 bg-zinc-900 rounded-xl border border-white/10 text-white shadow-[inset_0_2px_4px_0_rgba(255,255,255,0.05)]">
+            <h4 className="font-serif text-2xl font-semibold text-center">The Forgetting Curve</h4>
             <p className="text-center text-sm text-zinc-400 mb-8">Click review points on the timeline to fight the curve.</p>
 
             <div className="relative h-56">
@@ -149,8 +149,8 @@ const OptimalScheduleCalculator = () => {
     };
 
     return(
-         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Optimal Schedule Calculator</h4>
+         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Optimal Schedule Calculator</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Based on the landmark Cepeda et al. (2008) research.</p>
              <div className="flex items-center justify-center gap-4">
                  <label className="font-bold">My test is in:</label>
@@ -224,8 +224,8 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
            {activeSection === 5 && (
             <ReadingSection title="Your Spacing Blueprint." eyebrow="Step 6" icon={Wrench} theme={theme}>
               <p>You now have the science to defeat the Forgetting Curve. The timing of your study is as important as the content. This section provides a simple, actionable heuristic to put this into practice immediately, even without software.</p>
-              <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Actionable Advice: The Heuristic Planner</h4>
+              <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Actionable Advice: The Heuristic Planner</h4>
                 <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">For any test or exam, follow this simple rule-of-thumb schedule.</p>
                 <div className="grid grid-cols-3 gap-4 text-center">
                     <div className="p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl">

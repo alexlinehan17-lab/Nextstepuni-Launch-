@@ -69,8 +69,8 @@ const SyllabusDeconstructor = () => {
     const colors = ["#e0f2f1", "#b2dfdb", "#80cbc4", "#4db6ac", "#26a69a"];
 
     return (
-        <div className="my-10 p-4 md:p-8 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Syllabus Deconstructor</h4>
+        <div className="my-10 p-4 md:p-8 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Syllabus Deconstructor</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">{mathsSyllabus.subject}</p>
 
             <div className="w-full h-[500px] bg-zinc-50 dark:bg-zinc-800/50 rounded-lg p-2 flex flex-col gap-2">

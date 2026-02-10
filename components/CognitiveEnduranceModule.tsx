@@ -20,8 +20,8 @@ const theme = orangeTheme;
 
 const AllostaticLoadVisualizer = () => {
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Leaving Cert Allostatic Load</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Leaving Cert Allostatic Load</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Your brain's "wear and tear" isn't constant. It builds over time and spikes during exam clusters.</p>
              <div className="w-full h-40 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg p-4">
                 <svg viewBox="0 0 500 100" className="w-full h-full" preserveAspectRatio="none">
@@ -39,8 +39,8 @@ const SleepCycleArchitect = () => {
     const [sleepHours, setSleepHours] = useState(8);
     const remLost = Math.max(0, (8 - sleepHours) * 25); // Rough calc
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Sleep Cycle Architect</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Sleep Cycle Architect</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Use the slider to see what happens when you cut sleep short. Notice what gets cut first.</p>
             <div className="h-24 w-full bg-zinc-100 dark:bg-zinc-800 rounded-lg flex">
                 <div className="h-full bg-slate-400" style={{width: `${(sleepHours/9)*100}%`}}>

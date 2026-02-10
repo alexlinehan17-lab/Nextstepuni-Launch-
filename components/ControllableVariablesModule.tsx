@@ -28,8 +28,8 @@ const GlycemicIndexSimulator = () => {
     }
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Glycemic Index Simulator</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Glycemic Index Simulator</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Choose a breakfast and see what it does to your blood sugar over 3 hours.</p>
             <div className="w-full h-32 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg p-4">
                 <svg viewBox="0 0 500 100" className="w-full h-full" preserveAspectRatio="none">
@@ -61,12 +61,12 @@ const HighPerformanceChecklist = () => {
     ];
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">High-Performance Checklist</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">High-Performance Checklist</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">This is the blueprint for a perfect study day, based on your biology.</p>
             <div className="space-y-3">
                 {items.map(item => (
-                    <div key={item.key} onClick={() => toggle(item.key)} className={`p-4 rounded-xl border-2 flex items-center gap-4 cursor-pointer ${checks[item.key] ? 'bg-emerald-50 border-emerald-200' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700'}`}>
+                    <div key={item.key} onClick={() => toggle(item.key)} className={`p-4 rounded-xl border flex items-center gap-4 cursor-pointer ${checks[item.key] ? 'bg-emerald-50 border-emerald-200' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700'}`}>
                         <span className="font-mono text-xs font-bold w-12">{item.time}</span>
                         <div className="flex-grow">
                             <p className="font-bold text-sm">{item.task}</p>

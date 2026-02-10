@@ -20,18 +20,18 @@ const theme = roseTheme;
 const RoleModelSelector = () => {
     const [choice, setChoice] = useState<null | 'mastery' | 'coping'>(null);
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Which Story Builds More Belief?</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Which Story Builds More Belief?</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">You're struggling with a subject. Which of these role models is more helpful?</p>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <button onClick={() => setChoice('mastery')} className={`p-6 rounded-2xl text-left border-2 flex flex-col justify-between h-48 ${choice === 'mastery' ? 'bg-blue-500 text-white border-blue-500' : 'bg-zinc-50 hover:bg-zinc-100 dark:hover:bg-zinc-700 border-zinc-200 dark:border-zinc-700'}`}>
+                <button onClick={() => setChoice('mastery')} className={`p-6 rounded-xl text-left border flex flex-col justify-between h-48 ${choice === 'mastery' ? 'bg-blue-500 text-white border-blue-500' : 'bg-zinc-50 hover:bg-zinc-100 dark:hover:bg-zinc-700 border-zinc-200 dark:border-zinc-700'}`}>
                     <div>
                         <p className="font-bold text-lg">The Genius (Mastery Model)</p>
                         <p className="text-xs mt-1">A past pupil who got 625 points, found school easy, and is now a doctor.</p>
                     </div>
                     <p className="text-xs font-mono self-end">"Just work hard."</p>
                 </button>
-                 <button onClick={() => setChoice('coping')} className={`p-6 rounded-2xl text-left border-2 flex flex-col justify-between h-48 ${choice === 'coping' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-zinc-50 hover:bg-zinc-100 dark:hover:bg-zinc-700 border-zinc-200 dark:border-zinc-700'}`}>
+                 <button onClick={() => setChoice('coping')} className={`p-6 rounded-xl text-left border flex flex-col justify-between h-48 ${choice === 'coping' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-zinc-50 hover:bg-zinc-100 dark:hover:bg-zinc-700 border-zinc-200 dark:border-zinc-700'}`}>
                     <div>
                         <p className="font-bold text-lg">The Grafter (Coping Model)</p>
                         <p className="text-xs mt-1">A past pupil who failed their mocks, changed their study habits, and got into their dream course.</p>
@@ -47,8 +47,8 @@ const RoleModelSelector = () => {
 const IcebergInteractive = () => {
     const [inputs, setInputs] = useState<string[]>([]);
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Success Iceberg</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Success Iceberg</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Success is what people see. Process is what it takes. List the "invisible" parts of success.</p>
             <div className="max-w-md mx-auto">
                 <div className="bg-blue-100 p-4 rounded-t-2xl text-center font-bold text-blue-800">Visible Success</div>

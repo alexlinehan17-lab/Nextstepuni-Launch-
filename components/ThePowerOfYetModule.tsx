@@ -21,8 +21,8 @@ const theme = yellowTheme;
 const ErrorSignalVisualizer = () => {
     const [mindset, setMindset] = useState<'fixed' | 'growth' | null>(null);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Brain on "Yet"</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Brain on "Yet"</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Scenario: You make a mistake on a Maths problem. Which brain is yours?</p>
              <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
@@ -53,7 +53,7 @@ const YetAudit = () => {
     const [action, setAction] = useState('');
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-zinc-900 rounded-2xl border border-white/10 shadow-2xl text-white">
+        <div className="my-10 p-8 md:p-12 bg-zinc-900 rounded-xl border border-white/10 text-white">
             <h4 className="font-serif text-3xl font-semibold text-center mb-8">Your "Yet" Audit</h4>
             <div className="space-y-6 max-w-xl mx-auto">
                 <div>

@@ -79,11 +79,11 @@ const ActivityRing = ({
           strokeLinecap="round"
         />
       </svg>
-      <div className="absolute flex flex-col items-center justify-center leading-none">
-        <span className="text-[14px] font-semibold text-zinc-900 dark:text-white tracking-tighter">
+      <div className="absolute flex items-baseline justify-center leading-none">
+        <span className="text-[13px] font-semibold text-zinc-900 dark:text-white">
           {Math.round(progress)}
         </span>
-        <span className="text-[6px] font-semibold uppercase text-zinc-400 dark:text-white/30 -mt-0.5">%</span>
+        <span className="text-[8px] font-semibold text-zinc-400 dark:text-white/30 ml-px">%</span>
       </div>
     </div>
   );

@@ -19,8 +19,8 @@ const theme = redTheme;
 const BrainSignalVisualizer = () => {
     const [active, setActive] = useState(false);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Brain's Two Signals</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Brain's Two Signals</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">When you make a mistake, your brain sends two distinct signals in less than half a second.</p>
              <div className="w-full max-w-lg mx-auto h-32 relative">
                 <svg viewBox="0 0 300 100" className="w-full h-full absolute inset-0">

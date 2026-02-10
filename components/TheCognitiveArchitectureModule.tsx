@@ -21,8 +21,8 @@ const theme = fuchsiaTheme;
 const MemoryFlowVisualizer = () => {
   const [attention, setAttention] = useState(false);
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Memory Pipeline</h4>
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Memory Pipeline</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Information is either lost or transferred. Attention is the gatekeeper.</p>
       <div className="flex items-center justify-between text-center font-bold text-xs h-24">
         <span>Sensory</span>
@@ -67,8 +67,8 @@ const WorkingMemorySimulator = () => {
 
   if (result !== null) {
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Results</h4>
+      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Results</h4>
         <p>You correctly recalled {result} out of {items.length} items.</p>
         <p className="text-xs text-zinc-500 dark:text-zinc-400">The original items were: {items.join(', ')}</p>
         <button onClick={startGame} className="mt-4 px-4 py-2 bg-fuchsia-500 text-white font-bold text-sm rounded-lg">Try Again</button>
@@ -77,15 +77,15 @@ const WorkingMemorySimulator = () => {
   }
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">STM Bottleneck Test</h4>
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">STM Bottleneck Test</h4>
       {!showItems && items.length === 0 && <button onClick={startGame} className="px-4 py-2 bg-fuchsia-500 text-white font-bold text-sm rounded-lg">Start</button>}
 
       {showItems && <p className="text-3xl font-mono tracking-widest">{items.join(' ')}</p>}
 
       {!showItems && items.length > 0 &&
         <div>
-          <input value={inputValue} onChange={e => setInputValue(e.target.value)} placeholder="Type the numbers, separated by spaces" className="w-full p-2 border-2 rounded-md"/>
+          <input value={inputValue} onChange={e => setInputValue(e.target.value)} placeholder="Type the numbers, separated by spaces" className="w-full p-2 border rounded-md"/>
           <button onClick={checkAnswer} className="mt-4 px-4 py-2 bg-emerald-500 text-white font-bold text-sm rounded-lg">Check Answer</button>
         </div>
       }

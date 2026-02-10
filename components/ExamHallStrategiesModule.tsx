@@ -32,26 +32,26 @@ const TriageSimulator = () => {
 
     if (qIndex >= questions.length) {
         return (
-            <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
-                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Triage Complete</h4>
+            <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Triage Complete</h4>
                 <button onClick={() => {setQIndex(0); setChoices(Array(questions.length).fill(null));}} className="mt-4 px-4 py-2 bg-amber-500 text-white font-bold text-sm rounded-lg">Run Drill Again</button>
             </div>
         );
     }
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Triage Drill</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Triage Drill</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Reading time has started. Quickly categorize this question.</p>
             <AnimatePresence mode="wait">
-            <motion.div key={qIndex} initial={{opacity:0, x:20}} animate={{opacity:1, x:0}} exit={{opacity:0, x:-20}} className="p-6 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl text-center font-bold text-zinc-700 dark:text-zinc-200 min-h-[100px] flex items-center justify-center">
+            <motion.div key={qIndex} initial={{opacity:0, x:20}} animate={{opacity:1, x:0}} exit={{opacity:0, x:-20}} className="p-6 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl text-center font-bold text-zinc-700 dark:text-zinc-200 min-h-[100px] flex items-center justify-center">
                 {questions[qIndex].text}
             </motion.div>
             </AnimatePresence>
             <div className="grid grid-cols-3 gap-3 mt-6">
-                <button onClick={() => handleChoice('green')} className="p-4 bg-emerald-100 text-emerald-800 font-bold rounded-xl border-2 border-emerald-200 hover:border-emerald-400">Green</button>
-                <button onClick={() => handleChoice('amber')} className="p-4 bg-amber-100 text-amber-800 font-bold rounded-xl border-2 border-amber-200 hover:border-amber-400">Amber</button>
-                <button onClick={() => handleChoice('red')} className="p-4 bg-rose-100 text-rose-800 font-bold rounded-xl border-2 border-rose-200 hover:border-rose-400">Red</button>
+                <button onClick={() => handleChoice('green')} className="p-4 bg-emerald-100 text-emerald-800 font-bold rounded-xl border border-emerald-200 hover:border-emerald-400">Green</button>
+                <button onClick={() => handleChoice('amber')} className="p-4 bg-amber-100 text-amber-800 font-bold rounded-xl border border-amber-200 hover:border-amber-400">Amber</button>
+                <button onClick={() => handleChoice('red')} className="p-4 bg-rose-100 text-rose-800 font-bold rounded-xl border border-rose-200 hover:border-rose-400">Red</button>
             </div>
         </div>
     )
@@ -64,8 +64,8 @@ const MPMCalculator = () => {
     const mpm = (time - buffer) / marks;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Minutes-Per-Mark (MPM) Calculator</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Minutes-Per-Mark (MPM) Calculator</h4>
              <div className="grid grid-cols-3 gap-4 mt-6">
                 <div><label className="text-xs font-bold">Total Time (mins)</label><input type="number" value={time} onChange={e=>setTime(parseInt(e.target.value))} className="w-full p-2 bg-zinc-100 dark:bg-zinc-800 rounded-md" /></div>
                 <div><label className="text-xs font-bold">Total Marks</label><input type="number" value={marks} onChange={e=>setMarks(parseInt(e.target.value))} className="w-full p-2 bg-zinc-100 dark:bg-zinc-800 rounded-md" /></div>
@@ -81,8 +81,8 @@ const MPMCalculator = () => {
 const BoxBreathingVisualizer = () => {
     const steps = ["Inhale...", "Hold...", "Exhale...", "Hold..."];
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl flex flex-col items-center">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">4-4-4-4 Box Breathing</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 flex flex-col items-center">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">4-4-4-4 Box Breathing</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Feeling panicked? Run this protocol.</p>
              <div className="w-32 h-32 relative flex items-center justify-center">
                 <motion.div

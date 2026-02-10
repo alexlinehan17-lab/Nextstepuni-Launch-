@@ -24,8 +24,8 @@ const StrengthMeter = () => {
     if (method === 'active') { retrieval = 40; storage = 85; }
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Storage vs. Retrieval Strength</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Storage vs. Retrieval Strength</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Choose a study method to see its effect on your memory.</p>
              <div className="grid grid-cols-2 gap-4 mb-8">
                 <div className="text-center">
@@ -58,15 +58,15 @@ const StudyMethodAuditor = () => {
     const selectedMethod = methods.find(m => m.id === selectedId);
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Study Method Auditor</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Study Method Auditor</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Click a study method to get your Active Recall rating.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {methods.map(method => (
                     <button
                         key={method.id}
                         onClick={() => setSelectedId(method.id)}
-                        className={`p-4 rounded-xl text-sm font-bold border-2 transition-all ${selectedId === method.id ? 'bg-zinc-200 border-zinc-300' : 'bg-zinc-50 hover:bg-zinc-100 dark:hover:bg-zinc-700 border-zinc-200 dark:border-zinc-700'}`}
+                        className={`p-4 rounded-xl text-sm font-bold border transition-all ${selectedId === method.id ? 'bg-zinc-200 border-zinc-300' : 'bg-zinc-50 hover:bg-zinc-100 dark:hover:bg-zinc-700 border-zinc-200 dark:border-zinc-700'}`}
                     >
                         {method.name}
                     </button>
@@ -78,7 +78,7 @@ const StudyMethodAuditor = () => {
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 10 }}
-                        className={`mt-6 p-4 rounded-2xl border-2 ${selectedMethod.type === 'active' ? 'bg-emerald-50 border-emerald-200' : 'bg-rose-50 border-rose-200'}`}
+                        className={`mt-6 p-4 rounded-xl border ${selectedMethod.type === 'active' ? 'bg-emerald-50 border-emerald-200' : 'bg-rose-50 border-rose-200'}`}
                     >
                         <div className="flex items-center gap-3">
                             <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white ${selectedMethod.type === 'active' ? 'bg-emerald-500' : 'bg-rose-500'}`}>

@@ -19,8 +19,8 @@ const ChallengeThreatSimulator = () => {
     const isChallenge = resources >= 50;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Challenge vs. Threat State</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Challenge vs. Threat State</h4>
              <div className="grid grid-cols-2 gap-8 items-center mt-8">
                 <div className="text-center">
                     <p className="font-bold text-sm">Demands (The Exam)</p>
@@ -44,8 +44,8 @@ const CircadianShifter = () => {
     const shifts = Math.ceil(((wakeTime - 7) * 60) / 15);
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Circadian Rhythm Shifter</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Circadian Rhythm Shifter</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Input your current weekend wake-up time to get your 4-week 'Phase Advance' plan.</p>
              <div className="flex items-center justify-center gap-4">
                 <label className="font-bold">Current Wake-up:</label>
@@ -70,8 +70,8 @@ const TaperPlanner = () => {
     const currentData = taperData[day as keyof typeof taperData] || taperData[Object.keys(taperData).reverse().find(d => parseInt(d) >= day) as any];
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Academic Taper Planner</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Academic Taper Planner</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Move the slider to see how your training changes in the final week.</p>
              <label className="font-bold">Days Before Exam: {day}</label>
              <input type="range" min="1" max="7" value={day} onChange={e => setDay(parseInt(e.target.value))} className="w-full" />
@@ -105,8 +105,8 @@ const CognitiveWarmup = () => {
 
     if(drill === 'math') {
         return (
-             <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
-                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Calculation Sprint</h4>
+             <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Calculation Sprint</h4>
                 <p>1. 15 x 12 = ?</p>
                 <p>2. What is 25% of 180?</p>
                 <button onClick={() => setDrill('none')} className="text-xs mt-4">Back</button>
@@ -116,8 +116,8 @@ const CognitiveWarmup = () => {
 
     if(drill === 'verbal') {
         return (
-            <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
-                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Verbal Fluency Drill</h4>
+            <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Verbal Fluency Drill</h4>
                 <p>For 60 seconds, list as many words as you can that start with the letter 'P'.</p>
                 <p className="text-4xl font-bold my-4">{time}</p>
                 <textarea value={words} onChange={e => setWords(e.target.value)} className="w-full h-24 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-2" disabled={time === 0} />
@@ -127,8 +127,8 @@ const CognitiveWarmup = () => {
     }
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl text-center">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Cognitive Warm-Up</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Cognitive Warm-Up</h4>
              <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Choose your drill to prime your brain for action.</p>
              <div className="flex justify-center gap-4">
                 <button onClick={() => resetVerbal()} className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-lg">Verbal Fluency</button>

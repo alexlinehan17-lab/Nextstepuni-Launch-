@@ -26,8 +26,8 @@ const JugglingStudyVisualizer = () => {
     const currentData = data[scan-1];
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">The Juggling Study (2004)</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Juggling Study (2004)</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Proof that learning physically changes your brain's grey matter.</p>
              <div className="w-full max-w-xs mx-auto h-48 flex justify-center items-end">
                 <motion.div
@@ -50,12 +50,12 @@ const JugglingStudyVisualizer = () => {
 const StudyMethodGrader = () => {
     const [method, setMethod] = useState<'passive' | 'active' | null>(null);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 shadow-xl">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center italic">Study Method Grader</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Study Method Grader</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Which study method sends a stronger signal to build your brain?</p>
              <div className="grid grid-cols-2 gap-4">
-                <button onClick={() => setMethod('passive')} className="p-4 bg-rose-50 border-2 border-rose-200 rounded-xl text-center"><strong>Passive Re-reading:</strong> "I'll just read my notes again."</button>
-                <button onClick={() => setMethod('active')} className="p-4 bg-emerald-50 border-2 border-emerald-200 rounded-xl text-center"><strong>Active Recall:</strong> "I'll try to explain this from memory."</button>
+                <button onClick={() => setMethod('passive')} className="p-4 bg-rose-50 border border-rose-200 rounded-xl text-center"><strong>Passive Re-reading:</strong> "I'll just read my notes again."</button>
+                <button onClick={() => setMethod('active')} className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl text-center"><strong>Active Recall:</strong> "I'll try to explain this from memory."</button>
              </div>
              {method &&
              <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6">
