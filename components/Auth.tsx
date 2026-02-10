@@ -4,8 +4,9 @@
 */
 
 import React, { useState, MouseEvent } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ArrowRight, User as UserIcon, Key, Eye, EyeOff, Shield, User as StudentIcon, ArrowLeft } from 'lucide-react';
+import { X, ArrowRight, User as UserIcon, Key, Eye, EyeOff, Shield, User as StudentIcon, ArrowLeft, ChevronDown } from 'lucide-react';
 import { auth, db } from '../firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
@@ -25,6 +26,10 @@ export type SessionUser = {
 
 interface AuthProps {
   onLoginSuccess: (user: SessionUser) => void;
+  buttonLabel?: string;
+  buttonClassName?: string;
+  showChevron?: boolean;
+  initialStep?: 'initial' | 'login' | 'create';
 }
 
 // 4 male-leaning, 4 female-leaning seeds for notionists-neutral
@@ -38,8 +43,10 @@ export function getAvatarUrl(seed: string): string {
   return `https://api.dicebear.com/9.x/notionists-neutral/svg?seed=${seed}&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf`;
 }
 
-export const Auth: React.FC<AuthProps> = ({ onLoginSuccess }) => {
+export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonClassName, showChevron, initialStep }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownTimeout = React.useRef<ReturnType<typeof setTimeout> | null>(null);
   const [step, setStep] = useState<'initial' | 'login' | 'create'>('initial');
   const [loginView, setLoginView] = useState<'choice' | 'student' | 'admin'>('choice');
   const [error, setError] = useState('');
@@ -57,10 +64,10 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess }) => {
   const [showCreatePassword, setShowCreatePassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   
-  const handleOpen = () => {
+  const openModal = (toStep: 'initial' | 'login' | 'create', loginAs?: 'choice' | 'student' | 'admin') => {
     setIsOpen(true);
-    setStep('initial');
-    setLoginView('choice');
+    setStep(toStep);
+    setLoginView(loginAs ?? 'choice');
     setError('');
     setLoginName('');
     setLoginPassword('');
@@ -71,6 +78,17 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess }) => {
     setShowLoginPassword(false);
     setShowCreatePassword(false);
     setShowConfirmPassword(false);
+    setDropdownOpen(false);
+  };
+
+  const handleOpen = () => openModal(initialStep ?? 'initial');
+
+  const handleDropdownEnter = () => {
+    if (dropdownTimeout.current) clearTimeout(dropdownTimeout.current);
+    setDropdownOpen(true);
+  };
+  const handleDropdownLeave = () => {
+    dropdownTimeout.current = setTimeout(() => setDropdownOpen(false), 150);
   };
 
   const handleClose = () => {
@@ -188,11 +206,40 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess }) => {
 
   return (
     <>
-      <button onClick={handleOpen} className="px-5 py-2 text-sm font-medium bg-zinc-900/5 dark:bg-white/[0.08] text-zinc-700 dark:text-white/80 rounded-full hover:bg-zinc-900/10 dark:hover:bg-white/[0.12] hover:text-zinc-900 dark:hover:text-white transition-all border border-zinc-200/50 dark:border-white/[0.06]">
-        Log in
-      </button>
+      {showChevron ? (
+        <div className="relative" onMouseEnter={handleDropdownEnter} onMouseLeave={handleDropdownLeave}>
+          <button onClick={handleOpen} className={buttonClassName ?? "px-5 py-2 text-sm font-medium bg-zinc-900/5 dark:bg-white/[0.08] text-zinc-700 dark:text-white/80 rounded-full hover:bg-zinc-900/10 dark:hover:bg-white/[0.12] hover:text-zinc-900 dark:hover:text-white transition-all border border-zinc-200/50 dark:border-white/[0.06]"}>
+            <span className="flex items-center gap-0">
+              <span className="pr-3.5">{buttonLabel ?? "Log in"}</span>
+              <span className="border-l border-white/20 pl-3">
+                <ChevronDown size={16} className={`transition-transform duration-300 ${dropdownOpen ? 'rotate-180' : ''}`} />
+              </span>
+            </span>
+          </button>
+          <AnimatePresence>
+            {dropdownOpen && (
+              <MotionDiv
+                initial={{ opacity: 0, y: -4, scale: 0.96 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: -4, scale: 0.96 }}
+                transition={{ duration: 0.15, ease: [0.16, 1, 0.3, 1] }}
+                className="absolute top-full right-0 mt-2 w-52 bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-white/[0.08] rounded-xl shadow-lg shadow-black/[0.08] dark:shadow-black/40 overflow-hidden py-1"
+              >
+                <button onClick={() => openModal('login', 'student')} className="w-full text-left px-4 py-2.5 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-white/[0.06] transition-colors font-medium">Student login</button>
+                <button onClick={() => openModal('create')} className="w-full text-left px-4 py-2.5 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-white/[0.06] transition-colors font-medium">Create account</button>
+                <div className="border-t border-zinc-100 dark:border-white/[0.06] my-1" />
+                <button onClick={() => openModal('login', 'admin')} className="w-full text-left px-4 py-2.5 text-sm text-zinc-400 dark:text-zinc-500 hover:bg-zinc-100 dark:hover:bg-white/[0.06] transition-colors">Admin login</button>
+              </MotionDiv>
+            )}
+          </AnimatePresence>
+        </div>
+      ) : (
+        <button onClick={handleOpen} className={buttonClassName ?? "px-5 py-2 text-sm font-medium bg-zinc-900/5 dark:bg-white/[0.08] text-zinc-700 dark:text-white/80 rounded-full hover:bg-zinc-900/10 dark:hover:bg-white/[0.12] hover:text-zinc-900 dark:hover:text-white transition-all border border-zinc-200/50 dark:border-white/[0.06]"}>
+          {buttonLabel ?? "Log in"}
+        </button>
+      )}
 
-      <AnimatePresence>
+      {createPortal(<AnimatePresence>
         {isOpen && (
           <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/60 flex items-center justify-center z-[200] p-4" onClick={handleClose}>
             <MotionDiv initial={{ scale: 0.96, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.96, opacity: 0 }} transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }} className="relative bg-white dark:bg-zinc-900 border border-zinc-200/50 dark:border-white/[0.08] rounded-2xl w-full max-w-sm shadow-[0_24px_64px_rgba(0,0,0,0.12)] dark:shadow-[0_24px_64px_rgba(0,0,0,0.5)] overflow-hidden" onClick={(e: MouseEvent<HTMLDivElement>) => e.stopPropagation()}>
@@ -275,7 +322,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess }) => {
             </MotionDiv>
           </MotionDiv>
         )}
-      </AnimatePresence>
+      </AnimatePresence>, document.body)}
     </>
   );
 };

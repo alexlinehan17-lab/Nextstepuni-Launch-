@@ -210,25 +210,114 @@ const App: React.FC = () => {
 
     if (!user) {
       return (
-        <div className="flex flex-col items-center justify-center min-h-screen text-center p-8 relative">
+        <div className="relative min-h-screen flex flex-col">
+          {/* ── Navbar ── */}
+          <nav className="fixed top-0 left-0 right-0 h-16 z-[100] bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-200/50 dark:border-white/[0.06]">
+            <div className="max-w-6xl mx-auto h-full px-6 flex items-center justify-between">
+              {/* Left: Logo */}
+              <img src="/nextstepuni-logo.png" alt="Nextstepuni" className="h-10 w-auto" />
+              {/* Right: Log in */}
+              <Auth
+                onLoginSuccess={handleLoginSuccess}
+                buttonLabel="Log in"
+                buttonClassName="px-5 py-2.5 text-sm font-medium bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors"
+                showChevron
+                initialStep="login"
+              />
+            </div>
+          </nav>
 
-          <div className="flex flex-col items-center">
-            <div className="w-16 h-1 bg-[#CC785C] rounded-full mb-8" />
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#CC785C] mb-6">The Learning Lab</p>
-            <h1 className="font-serif text-5xl md:text-7xl text-zinc-900 dark:text-white tracking-tight leading-none font-semibold">
-              Nextstepuni
-            </h1>
-            <p className="mt-6 text-lg text-zinc-500 dark:text-zinc-400 max-w-lg leading-relaxed">Science-backed strategies to give you an unfair advantage in your exams.</p>
-            <div className="mt-12">
-              <Auth onLoginSuccess={handleLoginSuccess} />
-            </div>
-            <div className="mt-10 flex items-center gap-3">
-              <div className="w-8 h-px bg-zinc-300 dark:bg-zinc-700" />
-              <p className="text-xs text-zinc-400 dark:text-zinc-500 tracking-wide">A Nextstepuni / PwC Collaboration</p>
-              <div className="w-8 h-px bg-zinc-300 dark:bg-zinc-700" />
-            </div>
+          {/* ── Gradient blobs ── */}
+          <div className="fixed inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+            <div className="absolute top-[15%] right-[10%] w-[500px] h-[500px] rounded-full bg-[#CC785C]/[0.07] blur-[100px] animate-blob-1" />
+            <div className="absolute bottom-[20%] left-[5%] w-[450px] h-[450px] rounded-full bg-yellow-300/[0.09] blur-[100px] animate-blob-2" />
+            <div className="absolute top-[40%] left-[30%] w-[400px] h-[400px] rounded-full bg-orange-200/[0.08] blur-[120px] animate-blob-3" />
           </div>
 
+          {/* ── Hero ── */}
+          <div className="flex-1 flex flex-col items-center justify-center text-center px-6 pt-16 relative z-10">
+            <h1 className="font-serif text-5xl md:text-7xl text-zinc-900 dark:text-white tracking-tight leading-[1.08] font-semibold max-w-3xl">
+              {[
+                { text: 'Science-backed', delay: 0 },
+                { text: 'strategies', delay: 0.05 },
+                { text: 'to', delay: 0.1 },
+                { text: 'give', delay: 0.15 },
+                { text: 'you', delay: 0.2 },
+                { text: 'an', delay: 0.25 },
+              ].map((w, i) => (
+                <span key={i} className="inline-block overflow-hidden align-bottom pb-[0.15em] mb-[-0.15em]">
+                  <motion.span
+                    className="inline-block"
+                    initial={{ y: '100%' }}
+                    animate={{ y: 0 }}
+                    transition={{ duration: 0.7, delay: w.delay, ease: [0.16, 1, 0.3, 1] }}
+                  >{w.text}</motion.span>
+                </span>
+              )).reduce<React.ReactNode[]>((acc, el, i) => i === 0 ? [el] : [...acc, ' ', el], [])}
+              {' '}
+              <span className="inline-block overflow-hidden align-bottom pb-[0.15em] mb-[-0.15em]">
+                <motion.span
+                  className="inline-block px-1"
+                  initial={{ y: '100%' }}
+                  animate={{ y: 0 }}
+                  transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                  style={{ backgroundImage: 'linear-gradient(to top, rgba(250, 204, 21, 0.45) 35%, transparent 35%)', boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' } as React.CSSProperties}
+                >unfair advantage</motion.span>
+              </span>
+              {' '}
+              {[
+                { text: 'in', delay: 0.4 },
+                { text: 'your', delay: 0.45 },
+                { text: 'exams.', delay: 0.5 },
+              ].map((w, i) => (
+                <span key={i} className="inline-block overflow-hidden align-bottom pb-[0.15em] mb-[-0.15em]">
+                  <motion.span
+                    className="inline-block"
+                    initial={{ y: '100%' }}
+                    animate={{ y: 0 }}
+                    transition={{ duration: 0.7, delay: w.delay, ease: [0.16, 1, 0.3, 1] }}
+                  >{w.text}</motion.span>
+                </span>
+              )).reduce<React.ReactNode[]>((acc, el, i) => i === 0 ? [el] : [...acc, ' ', el], [])}
+            </h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-8 text-lg text-zinc-500 dark:text-zinc-400 max-w-xl leading-relaxed"
+            >
+              Master proven learning techniques used by top students. Build better study habits, retain more, and perform when it counts.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.75, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-12"
+            >
+              <Auth
+                onLoginSuccess={handleLoginSuccess}
+                buttonLabel="Start Learning"
+                buttonClassName="px-8 py-3.5 text-base font-medium bg-[#CC785C] text-white rounded-full hover:bg-[#B56A50] transition-colors shadow-lg shadow-[#CC785C]/20"
+                initialStep="create"
+              />
+            </motion.div>
+          </div>
+
+          {/* ── PwC Collaboration ── */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="pb-10 pt-6 flex items-center justify-center gap-3"
+          >
+            <div className="w-8 h-px bg-zinc-300 dark:bg-zinc-700" />
+            <p className="text-xs text-zinc-400 dark:text-zinc-500 tracking-wide">A Nextstepuni / PwC Collaboration</p>
+            <div className="w-8 h-px bg-zinc-300 dark:bg-zinc-700" />
+          </motion.div>
+
+          {/* ── DEV: Skip Login ── */}
           <button
             onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })}
             className="fixed bottom-4 left-4 px-3 py-1 bg-red-600/20 text-red-400 border border-red-600/30 rounded-full text-xs font-mono hover:bg-red-600/40"
@@ -307,13 +396,11 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
-      <div className="fixed top-6 right-6 z-[100]">
-        {user ? (
+      {user && (
+        <div className="fixed top-6 right-6 z-[100]">
           <UserProfile user={user} onLogout={handleLogout} darkMode={darkMode} setDarkMode={setDarkMode} />
-        ) : !isLoadingAuth ? (
-          <Auth onLoginSuccess={handleLoginSuccess} />
-        ) : null}
-      </div>
+        </div>
+      )}
 
       {renderContent()}
     </div>
