@@ -4,9 +4,9 @@
 */
 
 import React, { useState } from 'react';
-import { motion, useMotionValue, useMotionTemplate, AnimatePresence } from 'framer-motion';
-import { 
-  Sprout, Zap, Rocket, Target, FlaskConical, 
+import { motion, AnimatePresence } from 'framer-motion';
+import {
+  Sprout, Zap, Rocket, Target, FlaskConical,
   Layout, ArrowRight, Sparkles, Beaker
 } from 'lucide-react';
 import { CourseData, BentoModuleTile } from './Library';
@@ -100,87 +100,53 @@ interface BentoTileProps {
   delay?: number
 }
 
-const BentoTile: React.FC<BentoTileProps> = ({ 
-  icon: Icon, 
-  title, 
-  subtitle, 
-  onClick, 
+const BentoTile: React.FC<BentoTileProps> = ({
+  icon: Icon,
+  title,
+  subtitle,
+  onClick,
   accentHex,
   progress = 0,
   className = "",
   delay = 0
 }) => {
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-
-  function handleMouseMove({ currentTarget, clientX, clientY }: React.MouseEvent) {
-    const { left, top } = currentTarget.getBoundingClientRect();
-    mouseX.set(clientX - left);
-    mouseY.set(clientY - top);
-  }
-
   return (
     <MotionDiv
-      initial={{ opacity: 0, scale: 0.95, y: 20 }}
-      animate={{ opacity: 1, scale: 1, y: 0 }}
-      transition={{ duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }}
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay, ease: [0.16, 1, 0.3, 1] }}
       onClick={onClick}
-      onMouseMove={handleMouseMove}
-      className={`group relative overflow-hidden rounded-2xl bg-white/80 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 cursor-pointer transition-all duration-500 hover:border-[#CC785C]/30 dark:hover:border-white/20 shadow-xl hover:shadow-2xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.3)] ${className}`}
+      className={`group relative overflow-hidden rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 cursor-pointer transition-all duration-300 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-md ${className}`}
     >
-      {/* Localized Glow Effect */}
-      <MotionDiv
-        className="pointer-events-none absolute -inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-        style={{
-          background: useMotionTemplate`
-            radial-gradient(
-              600px circle at ${mouseX}px ${mouseY}px,
-              ${accentHex}15,
-              transparent 80%
-            )
-          `,
-        }}
-      />
-
-      <div className="relative z-10 p-8 h-full flex flex-col justify-between">
+      <div className="p-8 h-full flex flex-col justify-between">
         <div>
           <div className="flex items-center justify-between mb-8">
-            <div 
-              className="w-14 h-14 rounded-2xl bg-white dark:bg-white/5 flex items-center justify-center border border-zinc-100 dark:border-white/10 shadow-sm"
-              style={{ color: accentHex }}
+            <div
+              className="w-12 h-12 rounded-xl flex items-center justify-center"
+              style={{ color: accentHex, backgroundColor: accentHex + '12' }}
             >
-              <Icon size={28} strokeWidth={1.5} />
+              <Icon size={24} strokeWidth={1.5} />
             </div>
-            
-            <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-4 group-hover:translate-x-0">
-               <ArrowRight size={20} className="text-zinc-400 dark:text-white/40" />
+
+            <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+               <ArrowRight size={18} className="text-zinc-400 dark:text-zinc-500" />
             </div>
           </div>
-          
-          <div className="flex items-center gap-2 mb-2">
-            <p className="font-mono text-[10px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-white/40">
-              {subtitle}
-            </p>
-          </div>
+
+          <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-zinc-400 dark:text-zinc-500 mb-2">
+            {subtitle}
+          </p>
           <h3 className="font-serif text-2xl md:text-3xl text-zinc-900 dark:text-white leading-tight font-semibold tracking-tight">
             {title}
           </h3>
         </div>
 
-        <div className="mt-8 flex items-center justify-between gap-6 pt-6 border-t border-zinc-100 dark:border-white/5">
+        <div className="mt-8 flex items-center justify-between gap-6 pt-6 border-t border-zinc-100 dark:border-zinc-800">
             <div className="flex flex-col">
-              <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-zinc-400 dark:text-white/40 mb-1">Progress</span>
-              <span className="text-[9px] font-semibold uppercase tracking-wider text-zinc-300 dark:text-white/10 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors duration-500">Active</span>
+              <span className="text-[10px] font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Progress</span>
             </div>
-            
-            <div className="transition-all duration-500 transform group-hover:scale-110">
-               <ActivityRing progress={progress} color={accentHex} />
-            </div>
+            <ActivityRing progress={progress} color={accentHex} />
         </div>
-      </div>
-      
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-[-30%] right-[-20%] w-[60%] h-[60%] rounded-full opacity-30 dark:opacity-20 blur-[60px]" style={{ backgroundColor: accentHex + '10' }} />
       </div>
     </MotionDiv>
   );
@@ -266,22 +232,16 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     : [];
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 overflow-x-hidden relative flex flex-col items-center pt-16 md:pt-32 pb-32 transition-colors duration-500 selection:bg-[#CC785C]/10 dark:selection:bg-[#CC785C]/20">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 overflow-x-hidden relative flex flex-col items-center pt-16 md:pt-32 pb-32 transition-colors duration-500 selection:bg-[#CC785C]/20">
 
-       {/* Ambient mesh background */}
-      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-[-20%] left-[-10%] w-[60vw] h-[60vw] rounded-full bg-[#CC785C]/[0.05] dark:bg-[#CC785C]/[0.03] blur-[120px]" />
-        <div className="absolute bottom-[-15%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-[#D4A27F]/[0.04] dark:bg-[#D4A27F]/[0.02] blur-[120px]" />
-        <div className="absolute top-[30%] left-[60%] w-[30vw] h-[30vw] rounded-full bg-amber-500/[0.03] dark:bg-amber-500/[0.015] blur-[100px]" />
-      </div>
-
-      <div className="relative z-10 w-full max-w-7xl px-6">
-        <header className="text-center mb-16">
-          <h1 className="font-serif text-5xl md:text-7xl text-black dark:text-white tracking-tighter leading-none font-semibold dark:drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+      <div className="w-full max-w-7xl px-6">
+        <header className="text-center mb-20">
+          <div className="w-12 h-1 bg-[#CC785C] rounded-full mx-auto mb-6" />
+          <h1 className="font-serif text-5xl md:text-7xl text-zinc-900 dark:text-white tracking-tight leading-none font-semibold">
             Learning Lab
           </h1>
-          <p className="max-w-2xl mx-auto mt-4 text-zinc-500 dark:text-zinc-400">
-            A dynamic, science-backed curriculum designed to give you an unfair advantage in your final school exams. Select a pillar to begin.
+          <p className="max-w-xl mx-auto mt-5 text-zinc-500 dark:text-zinc-400 leading-relaxed">
+            A science-backed curriculum designed to give you an unfair advantage in your final school exams. Select a pillar to begin.
           </p>
         </header>
 
@@ -319,7 +279,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                     <button 
                         key={tag}
                         onClick={() => handleTagClick(tag)}
-                        className={`px-3 py-1.5 text-xs font-bold rounded-full border-2 transition-all duration-300 ${selectedTags.includes(tag) ? 'bg-[#CC785C] text-white border-[#CC785C]' : 'bg-white dark:bg-white/5 border-zinc-200 dark:border-white/10 hover:border-[#CC785C]/40 dark:hover:border-[#CC785C]/50'}`}
+                        className={`px-3.5 py-1.5 text-xs font-medium rounded-lg border transition-all duration-200 ${selectedTags.includes(tag) ? 'bg-[#CC785C] text-white border-[#CC785C]' : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:border-zinc-300 dark:hover:border-zinc-700'}`}
                     >
                         {tag}
                     </button>

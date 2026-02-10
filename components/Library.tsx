@@ -80,9 +80,9 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
       whileInView={{ opacity: 1, scale: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: index * 0.05, ease: [0.16, 1, 0.3, 1] }}
-      whileHover={isUnlocked ? { scale: 1.03 } : {}}
-      className={`group relative overflow-hidden rounded-xl transition-all duration-500 ${getSpanClass(index)} 
-        ${isUnlocked ? 'cursor-pointer hover:shadow-2xl' : 'cursor-not-allowed'}
+      whileHover={isUnlocked ? { scale: 1.01 } : {}}
+      className={`group relative overflow-hidden rounded-xl transition-all duration-300 ${getSpanClass(index)}
+        ${isUnlocked ? 'cursor-pointer hover:shadow-md' : 'cursor-not-allowed'}
       `}
       onClick={isUnlocked ? onClick : undefined}
     >
@@ -91,11 +91,8 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
         <p className={`text-[9px] font-semibold uppercase tracking-wider text-white`}>{categoryTitle}</p>
       </div>
 
-      {/* Background Aura Glow */}
-      <div className={`absolute -inset-20 opacity-0 group-hover:opacity-20 transition-opacity duration-700 blur-[100px] pointer-events-none -z-10 ${course.pillBgColor}`}></div>
-
-      {/* Glass Surface */}
-      <div className="h-full w-full bg-white/40 dark:bg-white/5 backdrop-blur-3xl border border-zinc-200/50 dark:border-white/10 p-8 pt-16 flex flex-col justify-between relative z-10 overflow-hidden">
+      {/* Clean Surface */}
+      <div className="h-full w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 pt-16 flex flex-col justify-between relative z-10 overflow-hidden">
         <div>
           <div className="flex items-center justify-between mb-8">
             <MotionDiv 
@@ -140,8 +137,8 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
         </div>
 
         {!isUnlocked && (
-          <div className="absolute inset-0 bg-zinc-100/40 dark:bg-black/40 backdrop-blur-[2px] flex items-center justify-center z-20">
-            <div className="bg-white/80 dark:bg-zinc-900/80 px-4 py-2 rounded-full border border-white/20 shadow-xl flex items-center gap-2">
+          <div className="absolute inset-0 bg-zinc-50/80 dark:bg-zinc-950/80 flex items-center justify-center z-20">
+            <div className="bg-white dark:bg-zinc-900 px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-800 flex items-center gap-2">
                <Lock size={12} className="text-zinc-400" />
                <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400">Locked</span>
             </div>
@@ -169,26 +166,20 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
 
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pt-32 pb-48">
-      
-      {/* Ambient mesh background */}
-      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-[-20%] left-[-10%] w-[60vw] h-[60vw] rounded-full bg-[#CC785C]/[0.05] dark:bg-[#CC785C]/[0.03] blur-[120px]" />
-        <div className="absolute bottom-[-15%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-[#D4A27F]/[0.04] dark:bg-[#D4A27F]/[0.02] blur-[120px]" />
-      </div>
 
-      <header className="fixed top-0 left-0 right-0 z-[60] bg-[#FAFAF7]/60 dark:bg-zinc-950/60 backdrop-blur-2xl border-b border-zinc-200/50 dark:border-white/5 px-10 py-6">
+      <header className="fixed top-0 left-0 right-0 z-[60] bg-zinc-50 dark:bg-zinc-950 border-b border-zinc-200 dark:border-zinc-800 px-10 py-6">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-8">
-            <button onClick={onBack} className="tactile-button p-3 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 transition-all hover:scale-105 active:scale-95">
+            <button onClick={onBack} className="p-2.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800">
               <ArrowLeft size={18} className="text-zinc-900 dark:text-white" />
             </button>
-            <div className="h-10 w-px bg-zinc-200/50 dark:bg-zinc-700" />
+            <div className="h-10 w-px bg-zinc-200 dark:bg-zinc-800" />
             <div>
               <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">Category</p>
               <h1 className="font-serif font-semibold text-2xl tracking-tight text-zinc-900 dark:text-white">{title}</h1>
             </div>
           </div>
-          <div className="w-14 h-14 bg-zinc-900 dark:bg-white rounded-2xl flex items-center justify-center text-white dark:text-black shadow-2xl rotate-3">
+          <div className="w-12 h-12 bg-zinc-900 dark:bg-white rounded-xl flex items-center justify-center text-white dark:text-zinc-900">
             <FlaskConical size={24} strokeWidth={1.5} />
           </div>
         </div>
@@ -200,25 +191,24 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 auto-rows-fr">
           
           {/* Bento Header Strip */}
-          <MotionDiv 
+          <MotionDiv
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="md:col-span-6 flex flex-col md:flex-row items-center justify-between p-8 rounded-xl bg-zinc-900 dark:bg-white/5 border border-white/10 mb-2 relative overflow-hidden"
+            className="md:col-span-6 flex flex-col md:flex-row items-center justify-between p-8 rounded-xl bg-zinc-900 dark:bg-zinc-900 border border-zinc-800 mb-2"
           >
-            <div className="relative z-10">
+            <div>
               <h2 className="text-white font-serif text-3xl md:text-4xl font-semibold tracking-tight">Overview</h2>
-              <p className="text-zinc-400 dark:text-zinc-500 font-mono text-[10px] uppercase tracking-[0.2em] mt-2">Choose a module to get started</p>
+              <p className="text-zinc-400 text-[11px] uppercase tracking-[0.15em] mt-2">Choose a module to get started</p>
             </div>
-            <div className="mt-6 md:mt-0 flex items-center gap-6 relative z-10">
+            <div className="mt-6 md:mt-0 flex items-center gap-6">
                <div className="flex flex-col items-end">
                   <span className="text-white text-xl font-bold">{overallProgress}%</span>
-                  <span className="text-zinc-500 text-[9px] font-semibold uppercase tracking-wider">Category Progress</span>
+                  <span className="text-zinc-500 text-[10px] font-semibold uppercase tracking-wider">Progress</span>
                </div>
-               <div className="w-12 h-12 rounded-full bg-[#CC785C]/20 border border-[#CC785C]/30 flex items-center justify-center text-[#CC785C]">
-                  <Sparkles size={24} className="animate-pulse" />
+               <div className="w-10 h-10 rounded-lg bg-[#CC785C]/15 flex items-center justify-center text-[#CC785C]">
+                  <Sparkles size={20} />
                </div>
             </div>
-            <div className="absolute right-0 top-0 w-64 h-64 bg-[#CC785C]/10 blur-[80px] -mr-32 -mt-32"></div>
           </MotionDiv>
 
           {courses.map((course, idx) => {
@@ -238,23 +228,16 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
           })}
 
           {/* Sequence Terminated Bento Tile */}
-          <MotionDiv 
-             initial={{ opacity: 0 }}
-             whileInView={{ opacity: 1 }}
-             className="md:col-span-6 flex flex-col items-center justify-center py-20 mt-12 rounded-2xl border border-dashed border-zinc-200 dark:border-white/10"
-          >
-             <div className="w-20 h-20 bg-zinc-50 dark:bg-white/5 rounded-full flex items-center justify-center text-zinc-300 dark:text-zinc-700 mb-6">
-                <Hash size={32} strokeWidth={1} />
-             </div>
-             <p className="font-mono text-[10px] font-bold uppercase tracking-[0.3em] text-zinc-400 dark:text-zinc-600 translate-x-[0.15em]">End of Category</p>
-          </MotionDiv>
+          <div className="md:col-span-6 flex flex-col items-center justify-center py-16 mt-8 border-t border-zinc-200 dark:border-zinc-800">
+             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-600">End of Category</p>
+          </div>
         </div>
       </main>
 
-      <footer className="mt-24 py-16 border-t border-zinc-200/50 dark:border-white/5 w-full text-center relative z-10">
-        <div className="inline-flex items-center gap-6 px-12 py-5 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-full shadow-sm">
-          <Hash size={16} className="text-[#CC785C]" />
-          <p className="font-mono text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.2em]">NextStepUni Learning Lab</p>
+      <footer className="mt-16 py-12 border-t border-zinc-200 dark:border-zinc-800 w-full text-center">
+        <div className="inline-flex items-center gap-3">
+          <div className="w-4 h-1 bg-[#CC785C] rounded-full" />
+          <p className="text-[11px] font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.15em]">NextStepUni Learning Lab</p>
         </div>
       </footer>
     </div>

@@ -32,7 +32,7 @@ const UserProfile = ({ user, onLogout, darkMode, setDarkMode }: { user: SessionU
             initial={{ opacity: 0, y: -10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
-            className="absolute top-full right-0 mt-2 w-64 bg-white dark:bg-zinc-900 border border-zinc-200/50 dark:border-white/[0.08] rounded-2xl shadow-[0_24px_64px_rgba(0,0,0,0.12)] dark:shadow-[0_24px_64px_rgba(0,0,0,0.5)] p-4"
+            className="absolute top-full right-0 mt-2 w-64 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-lg p-4"
           >
             <div className="flex items-center gap-3 border-b border-zinc-200/50 dark:border-white/10 pb-3 mb-3">
               <img src={getAvatarUrl(user.avatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
@@ -71,7 +71,7 @@ const App: React.FC = () => {
   const [viewState, setViewState] = useState<'tree' | 'category' | 'module' | 'innovation-zone'>('tree');
   const [currentCategory, setCurrentCategory] = useState<CategoryType | null>(null);
   const [currentModuleId, setCurrentModuleId] = useState<string | null>(null);
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [user, setUser] = useState<SessionUser | null>(null);
   const [userProgress, setUserProgress] = useState<UserProgress>({});
   const [isLoadingAuth, setIsLoadingAuth] = useState(true);
@@ -204,26 +204,25 @@ const App: React.FC = () => {
 
     if (!user) {
       return (
-        <div className="flex flex-col items-center justify-center min-h-screen text-center p-8 relative overflow-hidden">
-          {/* Warm ambient background */}
-          <div className="fixed inset-0 z-0 pointer-events-none">
-            <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-gradient-to-br from-[#CC785C]/[0.07] to-transparent rounded-full blur-[100px]" />
-            <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-gradient-to-tl from-amber-500/[0.05] to-transparent rounded-full blur-[100px]" />
-            <div className="absolute top-[40%] left-[50%] -translate-x-1/2 w-[40%] h-[30%] bg-gradient-to-b from-[#D4A27F]/[0.03] to-transparent rounded-full blur-[80px]" />
-          </div>
+        <div className="flex flex-col items-center justify-center min-h-screen text-center p-8 relative">
 
-          <img src="/pwc-logo.png" alt="PwC" className="absolute top-8 left-8 h-24 md:h-32 object-contain z-10" />
+          <img src="/pwc-logo.png" alt="PwC" className="absolute top-8 left-8 h-24 md:h-32 object-contain" />
 
-          <div className="relative z-10 flex flex-col items-center">
-            <p className="text-xs font-semibold uppercase tracking-wider text-[#CC785C]/70 mb-6">The Learning Lab</p>
-            <h1 className="font-serif text-5xl md:text-7xl text-black dark:text-white tracking-tighter leading-none font-semibold">
+          <div className="flex flex-col items-center">
+            <div className="w-16 h-1 bg-[#CC785C] rounded-full mb-8" />
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#CC785C] mb-6">The Learning Lab</p>
+            <h1 className="font-serif text-5xl md:text-7xl text-zinc-900 dark:text-white tracking-tight leading-none font-semibold">
               Nextstepuni
             </h1>
-            <p className="mt-4 text-lg text-zinc-500 dark:text-zinc-400 max-w-md">Science-backed strategies to give you an unfair advantage in your exams.</p>
-            <div className="mt-10">
+            <p className="mt-6 text-lg text-zinc-500 dark:text-zinc-400 max-w-lg leading-relaxed">Science-backed strategies to give you an unfair advantage in your exams.</p>
+            <div className="mt-12">
               <Auth onLoginSuccess={handleLoginSuccess} />
             </div>
-            <p className="mt-6 text-xs text-zinc-400 dark:text-zinc-500">A Nextstepuni / PwC Collaboration</p>
+            <div className="mt-10 flex items-center gap-3">
+              <div className="w-8 h-px bg-zinc-300 dark:bg-zinc-700" />
+              <p className="text-xs text-zinc-400 dark:text-zinc-500 tracking-wide">A Nextstepuni / PwC Collaboration</p>
+              <div className="w-8 h-px bg-zinc-300 dark:bg-zinc-700" />
+            </div>
           </div>
 
           <button
