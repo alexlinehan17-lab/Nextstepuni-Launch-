@@ -1216,7 +1216,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                 if (progressDoc.exists()) {
                     const data = progressDoc.data();
                     if (data.subjectProfile) {
-                        setSubjectProfile(data.subjectProfile as StudentSubjectProfile);
+                        setSubjectProfile({ restDays: [], ...data.subjectProfile } as StudentSubjectProfile);
                     }
                 }
             } catch (e) {
@@ -1252,7 +1252,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const tools = [
         { id: 'journey', title: 'Academic Journey Simulator', description: 'Navigate the choices of your final school year.', icon: GitBranch, needsProfile: false, component: <AcademicJourneyGame onSelectModule={onSelectModule} user={user} savedJourneyResult={savedJourneyResult} onJourneyComplete={onJourneyComplete} /> },
         { id: 'focus', title: 'Deep Focus Timer', description: 'A customizable timer based on the Pomodoro technique.', icon: Clock, needsProfile: false, disabled: true },
-        { id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true, component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} /> : null },
+        { id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true, component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); } } }} /> : null },
     ];
 
     const currentTool = tools.find(t => t.id === activeTool);

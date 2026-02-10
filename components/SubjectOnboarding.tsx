@@ -5,16 +5,15 @@
 
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ArrowRight, ArrowLeft, Check, BookOpen, Calendar, GraduationCap, ChevronDown } from 'lucide-react';
+import { X, ArrowRight, ArrowLeft, Check, Calendar, GraduationCap, CalendarOff } from 'lucide-react';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
   LC_SUBJECTS, SUBJECT_GROUP_LABELS, getGradesForLevel, getPointsForGrade,
-  getGradeIndex, isValidTarget,
+  getGradeIndex, DAYS_OF_WEEK,
   type LCSubject,
 } from './subjectData';
 
 const MotionDiv = motion.div as any;
-const MotionButton = motion.button as any;
 
 interface SubjectOnboardingProps {
   user: { uid: string };
@@ -23,7 +22,8 @@ interface SubjectOnboardingProps {
   onClose: () => void;
 }
 
-type Step = 1 | 2 | 3 | 4 | 5;
+type Step = 1 | 2 | 3 | 4 | 5 | 6;
+const TOTAL_STEPS = 6;
 
 // ─── Subject Color Map (literal Tailwind strings for CDN) ───────────────────
 
@@ -36,13 +36,26 @@ const GROUP_COLORS: Record<LCSubject['group'], { bg: string; border: string; tex
   creative: { bg: 'bg-rose-50 dark:bg-rose-900/20', border: 'border-rose-200 dark:border-rose-800/40', text: 'text-rose-700 dark:text-rose-300', selectedBg: 'bg-rose-100 dark:bg-rose-900/40', selectedBorder: 'border-rose-400 dark:border-rose-500' },
 };
 
+// ─── Grade pill color helpers (literal Tailwind for CDN) ────────────────────
+
+function getCurrentGradePillClass(isSelected: boolean): string {
+  return isSelected
+    ? 'bg-zinc-800 dark:bg-white text-white dark:text-zinc-900 border-zinc-800 dark:border-white shadow-sm'
+    : 'bg-white dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500';
+}
+
+function getTargetGradePillClass(isSelected: boolean): string {
+  return isSelected
+    ? 'bg-purple-600 dark:bg-purple-500 text-white border-purple-600 dark:border-purple-500 shadow-sm'
+    : 'bg-white dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-purple-400 dark:hover:border-purple-500';
+}
+
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
 function getDefaultExamDate(): string {
-  // First Wednesday of June in current year
   const year = new Date().getFullYear();
-  const june1 = new Date(year, 5, 1); // June 1
-  const dayOfWeek = june1.getDay(); // 0=Sun
+  const june1 = new Date(year, 5, 1);
+  const dayOfWeek = june1.getDay();
   const daysUntilWed = (3 - dayOfWeek + 7) % 7;
   const firstWed = new Date(year, 5, 1 + daysUntilWed);
   return firstWed.toISOString().split('T')[0];
@@ -56,24 +69,26 @@ function getDaysUntil(dateStr: string): number {
   return Math.ceil((target.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
 }
 
+const DAY_SHORTS: Record<string, string> = {
+  Monday: 'Mon', Tuesday: 'Tue', Wednesday: 'Wed', Thursday: 'Thu',
+  Friday: 'Fri', Saturday: 'Sat', Sunday: 'Sun',
+};
+
 // ─── Component ──────────────────────────────────────────────────────────────
 
 const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingProfile, onComplete, onClose }) => {
   const isEditMode = !!existingProfile;
 
-  // Step state
   const [step, setStep] = useState<Step>(isEditMode ? 2 : 1);
   const [direction, setDirection] = useState(1);
 
   // Subject selection
   const [selectedSubjects, setSelectedSubjects] = useState<Set<string>>(() => {
-    if (existingProfile) {
-      return new Set(existingProfile.subjects.map(s => s.subjectName));
-    }
+    if (existingProfile) return new Set(existingProfile.subjects.map(s => s.subjectName));
     return new Set<string>();
   });
 
-  // Grade configuration per subject
+  // Grade configs
   const [subjectConfigs, setSubjectConfigs] = useState<Record<string, { level: Level; currentGrade: Grade; targetGrade: Grade }>>(() => {
     if (existingProfile) {
       const configs: Record<string, { level: Level; currentGrade: Grade; targetGrade: Grade }> = {};
@@ -85,19 +100,18 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingPro
     return {};
   });
 
-  // Exam date
   const [examDate, setExamDate] = useState(existingProfile?.examStartDate || getDefaultExamDate());
+
+  // Rest days
+  const [restDays, setRestDays] = useState<Set<string>>(() => {
+    if (existingProfile?.restDays) return new Set(existingProfile.restDays);
+    return new Set<string>();
+  });
 
   // ─── Navigation ─────────────────────────────────────────────────────────
 
-  const goNext = () => {
-    setDirection(1);
-    setStep(s => Math.min(5, s + 1) as Step);
-  };
-  const goBack = () => {
-    setDirection(-1);
-    setStep(s => Math.max(1, s - 1) as Step);
-  };
+  const goNext = () => { setDirection(1); setStep(s => Math.min(TOTAL_STEPS, s + 1) as Step); };
+  const goBack = () => { setDirection(-1); setStep(s => Math.max(1, s - 1) as Step); };
 
   // ─── Subject toggle ─────────────────────────────────────────────────────
 
@@ -108,13 +122,10 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingPro
         next.delete(name);
       } else {
         next.add(name);
-        // Initialize config if not present
         if (!subjectConfigs[name]) {
-          const lcSubject = LC_SUBJECTS.find(s => s.name === name);
-          const defaultLevel: Level = 'higher';
           setSubjectConfigs(prev => ({
             ...prev,
-            [name]: { level: defaultLevel, currentGrade: 'H4' as Grade, targetGrade: 'H2' as Grade },
+            [name]: { level: 'higher' as Level, currentGrade: 'H4' as Grade, targetGrade: 'H2' as Grade },
           }));
         }
       }
@@ -132,16 +143,11 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingPro
       if (field === 'level') {
         const newLevel = value as Level;
         next.level = newLevel;
-        // Reset grades to sensible defaults for new level
         const grades = getGradesForLevel(newLevel);
-        next.currentGrade = grades[3]; // 4th grade
-        next.targetGrade = grades[1]; // 2nd grade
+        next.currentGrade = grades[3];
+        next.targetGrade = grades[1];
       } else if (field === 'currentGrade') {
         next.currentGrade = value as Grade;
-        // If target is now worse than current, adjust
-        if (getGradeIndex(next.targetGrade) > getGradeIndex(value as Grade)) {
-          // target index is higher (worse), keep as is but it'll be invalid — user can fix
-        }
         if (getGradeIndex(next.targetGrade) > getGradeIndex(next.currentGrade)) {
           next.targetGrade = next.currentGrade;
         }
@@ -153,23 +159,28 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingPro
     });
   };
 
+  // ─── Rest day toggle ────────────────────────────────────────────────────
+
+  const toggleRestDay = (day: string) => {
+    setRestDays(prev => {
+      const next = new Set(prev);
+      if (next.has(day)) next.delete(day); else next.add(day);
+      return next;
+    });
+  };
+
   // ─── Build final profile ────────────────────────────────────────────────
 
   const buildProfile = (): StudentSubjectProfile => {
     const subjects: StudentSubject[] = Array.from(selectedSubjects).map(name => {
       const config = subjectConfigs[name] || { level: 'higher' as Level, currentGrade: 'H4' as Grade, targetGrade: 'H2' as Grade };
-      return {
-        subjectName: name,
-        level: config.level,
-        currentGrade: config.currentGrade,
-        targetGrade: config.targetGrade,
-      };
+      return { subjectName: name, level: config.level, currentGrade: config.currentGrade, targetGrade: config.targetGrade };
     });
-
     const now = new Date().toISOString();
     return {
       subjects,
       examStartDate: examDate,
+      restDays: Array.from(restDays),
       createdAt: existingProfile?.createdAt || now,
       updatedAt: now,
     };
@@ -210,18 +221,16 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingPro
       case 2: return selectedSubjects.size > 0;
       case 3: {
         for (const name of selectedSubjects) {
-          const config = subjectConfigs[name];
-          if (!config) return false;
+          if (!subjectConfigs[name]) return false;
         }
         return true;
       }
       case 4: return examDate.length > 0 && getDaysUntil(examDate) > 0;
-      case 5: return true;
+      case 5: return restDays.size < 7; // must have at least 1 study day
+      case 6: return true;
       default: return false;
     }
   };
-
-  // ─── Animation variants ─────────────────────────────────────────────────
 
   const stepVariants = {
     hidden: (dir: number) => ({ opacity: 0, x: dir > 0 ? 50 : -50 }),
@@ -231,39 +240,33 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingPro
 
   const daysLeft = getDaysUntil(examDate);
 
-  // ─── Render ─────────────────────────────────────────────────────────────
-
   return (
     <MotionDiv
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
       className="fixed inset-0 bg-black/60 flex items-center justify-center z-[200] p-4"
       onClick={onClose}
     >
       <MotionDiv
-        initial={{ scale: 0.96, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        exit={{ scale: 0.96, opacity: 0 }}
+        initial={{ scale: 0.96, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.96, opacity: 0 }}
         transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
         className="relative bg-white dark:bg-zinc-900 border border-zinc-200/50 dark:border-white/[0.08] rounded-2xl w-full max-w-lg shadow-[0_24px_64px_rgba(0,0,0,0.12)] dark:shadow-[0_24px_64px_rgba(0,0,0,0.5)] overflow-hidden max-h-[90vh] flex flex-col"
         onClick={(e: React.MouseEvent) => e.stopPropagation()}
       >
-        {/* Close button */}
+        {/* Close */}
         <button onClick={onClose} className="absolute top-5 right-5 text-zinc-400 dark:text-white/25 hover:text-zinc-600 dark:hover:text-white/50 transition-colors z-10">
           <X size={18} />
         </button>
 
         {/* Progress dots */}
         <div className="flex items-center justify-center gap-2 pt-6 px-8">
-          {[1, 2, 3, 4, 5].map(s => (
+          {Array.from({ length: TOTAL_STEPS }, (_, i) => i + 1).map(s => (
             <div key={s} className={`h-1.5 rounded-full transition-all duration-300 ${
               s === step ? 'w-8 bg-purple-500' : s < step ? 'w-4 bg-purple-300 dark:bg-purple-700' : 'w-4 bg-zinc-200 dark:bg-zinc-700'
             }`} />
           ))}
         </div>
 
-        {/* Content area */}
+        {/* Content */}
         <div className="p-8 flex-1 overflow-y-auto min-h-0">
           <AnimatePresence mode="wait" custom={direction}>
 
@@ -289,7 +292,6 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingPro
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
                   Tap to select. <span className="font-semibold text-purple-600 dark:text-purple-400">{selectedSubjects.size} selected</span>
                 </p>
-
                 <div className="space-y-5">
                   {Object.entries(groupedSubjects).map(([group, subjects]) => {
                     const colors = GROUP_COLORS[group as LCSubject['group']];
@@ -302,13 +304,9 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingPro
                           {subjects.map(subj => {
                             const selected = selectedSubjects.has(subj.name);
                             return (
-                              <button
-                                key={subj.name}
-                                onClick={() => toggleSubject(subj.name)}
+                              <button key={subj.name} onClick={() => toggleSubject(subj.name)}
                                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all ${
-                                  selected
-                                    ? `${colors.selectedBg} ${colors.selectedBorder} ${colors.text}`
-                                    : `${colors.bg} ${colors.border} text-zinc-500 dark:text-zinc-400 hover:${colors.text}`
+                                  selected ? `${colors.selectedBg} ${colors.selectedBorder} ${colors.text}` : `${colors.bg} ${colors.border} text-zinc-500 dark:text-zinc-400`
                                 }`}
                               >
                                 {selected && <Check size={12} className="inline mr-1 -mt-0.5" />}
@@ -324,61 +322,106 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingPro
               </MotionDiv>
             )}
 
-            {/* Step 3: Grade Configuration */}
+            {/* Step 3: Grade Configuration — Segmented pill buttons */}
             {step === 3 && (
               <MotionDiv key="step3" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <h2 className="font-serif text-xl font-semibold text-zinc-900 dark:text-white mb-1">Set Your Grades</h2>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">For each subject, set your level, current grade, and target grade.</p>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-2">
+                  For each subject, tap your <span className="font-bold text-zinc-700 dark:text-zinc-200">current</span> grade, then your <span className="font-bold text-purple-600 dark:text-purple-400">target</span>.
+                </p>
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="flex items-center gap-1.5 text-[10px] font-semibold text-zinc-500 dark:text-zinc-400">
+                    <span className="w-3 h-3 rounded bg-zinc-800 dark:bg-white inline-block" /> Current
+                  </span>
+                  <span className="flex items-center gap-1.5 text-[10px] font-semibold text-zinc-500 dark:text-zinc-400">
+                    <span className="w-3 h-3 rounded bg-purple-600 dark:bg-purple-500 inline-block" /> Target
+                  </span>
+                </div>
 
-                <div className="space-y-3">
+                <div className="space-y-4">
                   {Array.from(selectedSubjects).map(name => {
                     const config = subjectConfigs[name] || { level: 'higher' as Level, currentGrade: 'H4' as Grade, targetGrade: 'H2' as Grade };
                     const grades = getGradesForLevel(config.level);
                     const lcSubject = LC_SUBJECTS.find(s => s.name === name);
                     const groupColor = lcSubject ? GROUP_COLORS[lcSubject.group] : GROUP_COLORS.stem;
+                    const currentIdx = getGradeIndex(config.currentGrade);
+                    const targetIdx = getGradeIndex(config.targetGrade);
 
                     return (
-                      <div key={name} className="p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.03] border border-zinc-200/50 dark:border-white/[0.06]">
-                        <p className={`text-xs font-bold mb-2 ${groupColor.text}`}>{name}</p>
-                        <div className="flex items-center gap-2">
-                          {/* Level */}
-                          <select
-                            value={config.level}
-                            onChange={(e) => updateConfig(name, 'level', e.target.value)}
-                            className="flex-1 px-2 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-xs font-medium text-zinc-900 dark:text-white"
-                          >
-                            <option value="higher">Higher</option>
-                            <option value="ordinary">Ordinary</option>
-                          </select>
-
-                          {/* Current Grade */}
-                          <div className="flex-1">
-                            <p className="text-[9px] text-zinc-400 dark:text-zinc-500 font-semibold mb-0.5">Current</p>
-                            <select
-                              value={config.currentGrade}
-                              onChange={(e) => updateConfig(name, 'currentGrade', e.target.value)}
-                              className="w-full px-2 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-xs font-medium text-zinc-900 dark:text-white"
+                      <div key={name} className="rounded-xl bg-zinc-50 dark:bg-white/[0.03] border border-zinc-200/50 dark:border-white/[0.06] overflow-hidden">
+                        {/* Subject header row */}
+                        <div className="flex items-center justify-between px-4 pt-3 pb-2">
+                          <span className={`text-sm font-bold ${groupColor.text}`}>{name}</span>
+                          <div className="flex items-center gap-1 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-0.5">
+                            <button
+                              onClick={() => updateConfig(name, 'level', 'higher')}
+                              className={`px-2.5 py-1 rounded-md text-[10px] font-bold transition-all ${
+                                config.level === 'higher'
+                                  ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
+                                  : 'text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300'
+                              }`}
                             >
-                              {grades.map(g => <option key={g} value={g}>{g}</option>)}
-                            </select>
-                          </div>
-
-                          {/* Arrow */}
-                          <ArrowRight size={14} className="text-zinc-300 dark:text-zinc-600 flex-shrink-0 mt-3" />
-
-                          {/* Target Grade */}
-                          <div className="flex-1">
-                            <p className="text-[9px] text-zinc-400 dark:text-zinc-500 font-semibold mb-0.5">Target</p>
-                            <select
-                              value={config.targetGrade}
-                              onChange={(e) => updateConfig(name, 'targetGrade', e.target.value)}
-                              className="w-full px-2 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-xs font-medium text-zinc-900 dark:text-white"
+                              Higher
+                            </button>
+                            <button
+                              onClick={() => updateConfig(name, 'level', 'ordinary')}
+                              className={`px-2.5 py-1 rounded-md text-[10px] font-bold transition-all ${
+                                config.level === 'ordinary'
+                                  ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
+                                  : 'text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300'
+                              }`}
                             >
-                              {grades.filter(g => getGradeIndex(g) <= getGradeIndex(config.currentGrade)).map(g => (
-                                <option key={g} value={g}>{g}</option>
-                              ))}
-                            </select>
+                              Ordinary
+                            </button>
                           </div>
+                        </div>
+
+                        {/* Grade pills */}
+                        <div className="px-4 pb-3">
+                          <div className="flex gap-1">
+                            {grades.map((g, gi) => {
+                              const isCurrent = g === config.currentGrade;
+                              const isTarget = g === config.targetGrade;
+                              const isBetween = gi > targetIdx && gi < currentIdx;
+
+                              return (
+                                <button
+                                  key={g}
+                                  onClick={() => {
+                                    // If clicking at or better than current → set as target
+                                    // If clicking at or worse than target → set as current
+                                    if (gi <= targetIdx) {
+                                      updateConfig(name, 'targetGrade', g);
+                                    } else if (gi >= currentIdx) {
+                                      updateConfig(name, 'currentGrade', g);
+                                    } else {
+                                      // Clicked between: set as current (most common intent)
+                                      updateConfig(name, 'currentGrade', g);
+                                    }
+                                  }}
+                                  className={`flex-1 py-1.5 rounded-lg text-[11px] font-bold border transition-all ${
+                                    isTarget ? getTargetGradePillClass(true)
+                                    : isCurrent ? getCurrentGradePillClass(true)
+                                    : isBetween ? 'bg-purple-50 dark:bg-purple-900/15 text-purple-400 dark:text-purple-500 border-purple-200 dark:border-purple-800/40'
+                                    : getCurrentGradePillClass(false)
+                                  }`}
+                                >
+                                  {g}
+                                </button>
+                              );
+                            })}
+                          </div>
+                          {/* Improvement indicator */}
+                          {targetIdx < currentIdx && (
+                            <div className="flex items-center justify-between mt-2 px-0.5">
+                              <span className="text-[10px] text-zinc-400 dark:text-zinc-500">
+                                {config.currentGrade} <ArrowRight size={8} className="inline -mt-0.5" /> {config.targetGrade}
+                              </span>
+                              <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400">
+                                +{getPointsForGrade(config.targetGrade, lcSubject?.isMaths || false) - getPointsForGrade(config.currentGrade, lcSubject?.isMaths || false)} pts
+                              </span>
+                            </div>
+                          )}
                         </div>
                       </div>
                     );
@@ -396,14 +439,9 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingPro
                   </div>
                   <h2 className="font-serif text-xl font-semibold text-zinc-900 dark:text-white mb-1">When Do Exams Start?</h2>
                   <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">We'll use this to plan your study intensity.</p>
-
-                  <input
-                    type="date"
-                    value={examDate}
-                    onChange={(e) => setExamDate(e.target.value)}
+                  <input type="date" value={examDate} onChange={(e) => setExamDate(e.target.value)}
                     className="w-full max-w-xs mx-auto px-4 py-3 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 text-center text-lg font-semibold text-zinc-900 dark:text-white"
                   />
-
                   {daysLeft > 0 && (
                     <div className="mt-6 p-4 rounded-xl bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700/30">
                       <p className="text-3xl font-bold font-mono text-purple-600 dark:text-purple-400">{daysLeft}</p>
@@ -414,9 +452,47 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingPro
               </MotionDiv>
             )}
 
-            {/* Step 5: Summary */}
+            {/* Step 5: Rest Days */}
             {step === 5 && (
               <MotionDiv key="step5" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+                <div className="text-center py-2">
+                  <div className="w-14 h-14 mx-auto mb-5 rounded-2xl bg-rose-100 dark:bg-rose-900/40 flex items-center justify-center">
+                    <CalendarOff size={28} className="text-rose-600 dark:text-rose-400" />
+                  </div>
+                  <h2 className="font-serif text-xl font-semibold text-zinc-900 dark:text-white mb-1">Rest Days</h2>
+                  <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">Tap any days where study isn't possible. Your sessions will be redistributed across the remaining days.</p>
+
+                  <div className="grid grid-cols-7 gap-2 max-w-sm mx-auto">
+                    {DAYS_OF_WEEK.map(day => {
+                      const isRest = restDays.has(day);
+                      return (
+                        <button
+                          key={day}
+                          onClick={() => toggleRestDay(day)}
+                          className={`flex flex-col items-center gap-1 py-3 rounded-xl border-2 transition-all ${
+                            isRest
+                              ? 'bg-rose-50 dark:bg-rose-900/30 border-rose-400 dark:border-rose-500 text-rose-600 dark:text-rose-400'
+                              : 'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-zinc-400 dark:hover:border-zinc-500'
+                          }`}
+                        >
+                          <span className="text-[10px] font-bold uppercase">{DAY_SHORTS[day]}</span>
+                          {isRest && <X size={14} className="text-rose-500 dark:text-rose-400" />}
+                          {!isRest && <Check size={14} className="text-emerald-500 dark:text-emerald-400" />}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-6">
+                    {7 - restDays.size} study {7 - restDays.size === 1 ? 'day' : 'days'} per week{restDays.size > 0 ? ` — ${restDays.size} rest ${restDays.size === 1 ? 'day' : 'days'}` : ''}
+                  </p>
+                </div>
+              </MotionDiv>
+            )}
+
+            {/* Step 6: Summary */}
+            {step === 6 && (
+              <MotionDiv key="step6" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <h2 className="font-serif text-xl font-semibold text-zinc-900 dark:text-white mb-1">Your Study Profile</h2>
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Review your subjects and grades before saving.</p>
 
@@ -459,9 +535,9 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingPro
                   </p>
                 </div>
 
-                <div className="flex items-center justify-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
-                  <Calendar size={12} />
-                  <span>Exams start {examDate} — {daysLeft} days away</span>
+                <div className="flex items-center justify-center gap-4 text-xs text-zinc-400 dark:text-zinc-500">
+                  <span className="flex items-center gap-1"><Calendar size={12} /> {daysLeft} days left</span>
+                  <span className="flex items-center gap-1"><CalendarOff size={12} /> {restDays.size} rest {restDays.size === 1 ? 'day' : 'days'}</span>
                 </div>
               </MotionDiv>
             )}
@@ -469,30 +545,22 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingPro
           </AnimatePresence>
         </div>
 
-        {/* Footer navigation */}
+        {/* Footer */}
         <div className="p-6 pt-0 flex items-center justify-between gap-3">
           {step > 1 ? (
-            <button
-              onClick={goBack}
-              className="flex items-center gap-1.5 text-sm font-medium text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
-            >
+            <button onClick={goBack} className="flex items-center gap-1.5 text-sm font-medium text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
               <ArrowLeft size={14} /> Back
             </button>
-          ) : (
-            <div />
-          )}
+          ) : <div />}
 
-          {step < 5 ? (
-            <button
-              onClick={goNext}
-              disabled={!canProceed()}
+          {step < TOTAL_STEPS ? (
+            <button onClick={goNext} disabled={!canProceed()}
               className="flex items-center gap-2 px-6 py-2.5 bg-purple-600 dark:bg-purple-500 text-white font-semibold text-sm rounded-xl hover:bg-purple-700 dark:hover:bg-purple-600 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
             >
               {step === 1 ? 'Get Started' : 'Continue'} <ArrowRight size={14} />
             </button>
           ) : (
-            <button
-              onClick={() => onComplete(buildProfile())}
+            <button onClick={() => onComplete(buildProfile())}
               className="flex items-center gap-2 px-6 py-2.5 bg-emerald-600 dark:bg-emerald-500 text-white font-semibold text-sm rounded-xl hover:bg-emerald-700 dark:hover:bg-emerald-600 transition-colors"
             >
               <Check size={14} /> {isEditMode ? 'Update & Save' : 'Save & Continue'}

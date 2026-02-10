@@ -21,6 +21,7 @@ export interface StudentSubject {
 export interface StudentSubjectProfile {
   subjects: StudentSubject[];
   examStartDate: string; // ISO date string, e.g. "2026-06-03"
+  restDays: string[];    // e.g. ["Saturday", "Sunday"] — days with no study
   createdAt: string;
   updatedAt: string;
 }

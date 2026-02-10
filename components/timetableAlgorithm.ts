@@ -142,7 +142,8 @@ export function allocateSessions(
 export function generateWeeklyTimetable(
   allocations: SessionAllocation[],
   weeksUntilExam: number,
-  weekOffset: number = 0
+  weekOffset: number = 0,
+  restDays: string[] = []
 ): WeeklyTimetable {
   const effectiveWeeks = Math.max(0, weeksUntilExam - weekOffset);
   const intensity = computeIntensityFactor(effectiveWeeks);
@@ -152,6 +153,14 @@ export function generateWeeklyTimetable(
   const practiceRatio = 0.1 + intensity * 0.6; // 10% → 70%
   const revisionRatio = 0.1 + intensity * 0.1;  // 10% → 20%
   // Rest is new-learning
+
+  // Determine available day indices (exclude rest days)
+  const restDaySet = new Set(restDays);
+  const availableDayIndices = DAYS_OF_WEEK
+    .map((day, i) => ({ day, i }))
+    .filter(d => !restDaySet.has(d.day))
+    .map(d => d.i);
+  const numAvailable = availableDayIndices.length || 1; // fallback to at least 1
 
   // Build blocks for each subject
   const allBlocks: StudyBlock[] = [];
@@ -176,8 +185,7 @@ export function generateWeeklyTimetable(
     }
   }
 
-  // Distribute blocks across 7 days with maximum spacing
-  // For each subject, compute ideal day indices (evenly spaced)
+  // Distribute blocks across available days with maximum spacing
   const dayAssignments: StudyBlock[][] = Array.from({ length: 7 }, () => []);
 
   for (const alloc of allocations) {
@@ -185,9 +193,10 @@ export function generateWeeklyTimetable(
     const count = subjectBlocks.length;
     if (count === 0) continue;
 
-    // Evenly space across 7 days
+    // Evenly space across available days only
     for (let i = 0; i < count; i++) {
-      const dayIndex = Math.floor((i * 7) / count + hashString(alloc.subjectName) % 3) % 7;
+      const slotIndex = (Math.floor((i * numAvailable) / count) + hashString(alloc.subjectName) % Math.max(1, numAvailable)) % numAvailable;
+      const dayIndex = availableDayIndices[slotIndex];
       dayAssignments[dayIndex].push(subjectBlocks[i]);
     }
   }

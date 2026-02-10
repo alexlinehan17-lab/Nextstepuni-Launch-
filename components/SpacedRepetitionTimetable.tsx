@@ -7,7 +7,7 @@ import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ChevronLeft, ChevronRight, BookOpen, RotateCcw, Target,
-  Clock, Calendar, TrendingUp, Settings, HelpCircle, X, ArrowRight, AlertTriangle,
+  Clock, Calendar, TrendingUp, Settings, HelpCircle, X, ArrowRight, AlertTriangle, CalendarOff,
 } from 'lucide-react';
 import { type StudentSubjectProfile, type StudyBlock, DAYS_OF_WEEK, LC_SUBJECTS, getPointsForGrade, type Grade } from './subjectData';
 import {
@@ -22,6 +22,7 @@ const MotionButton = motion.button as any;
 interface SpacedRepetitionTimetableProps {
   profile: StudentSubjectProfile;
   onOpenSettings: () => void;
+  onRestDaysChange?: (restDays: string[]) => void;
 }
 
 // ─── Subject Color Map (literal Tailwind strings for CDN constraint) ────────
@@ -151,14 +152,27 @@ const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> =
 
 // ─── Main Component ─────────────────────────────────────────────────────────
 
-const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, onOpenSettings }) => {
+const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, onOpenSettings, onRestDaysChange }) => {
   const [weekOffset, setWeekOffset] = useState(0);
   const [selectedDay, setSelectedDay] = useState(0); // For mobile view
   const [showExplainer, setShowExplainer] = useState(false);
+  const [restDays, setRestDays] = useState<Set<string>>(() => new Set(profile.restDays || []));
+
+  const toggleRestDay = (day: string) => {
+    setRestDays(prev => {
+      const next = new Set(prev);
+      if (next.has(day)) next.delete(day); else next.add(day);
+      if (next.size >= 7) return prev; // must keep at least 1 study day
+      onRestDaysChange?.(Array.from(next));
+      return next;
+    });
+  };
 
   const weeksUntilExam = computeWeeksUntilExam(profile.examStartDate);
 
   const priorities = useMemo(() => computeSubjectPriorities(profile.subjects), [profile.subjects]);
+
+  const restDaysArray = useMemo(() => Array.from(restDays), [restDays]);
 
   const allocations = useMemo(
     () => allocateSessions(priorities, Math.max(0, weeksUntilExam - weekOffset)),
@@ -166,8 +180,8 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   );
 
   const timetable = useMemo(
-    () => generateWeeklyTimetable(allocations, weeksUntilExam, weekOffset),
-    [allocations, weeksUntilExam, weekOffset]
+    () => generateWeeklyTimetable(allocations, weeksUntilExam, weekOffset, restDaysArray),
+    [allocations, weeksUntilExam, weekOffset, restDaysArray]
   );
 
   const weekStart = getWeekStartDate(weekOffset);
@@ -238,6 +252,32 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         >
           <ChevronRight size={16} className="text-zinc-600 dark:text-zinc-300" />
         </MotionButton>
+      </div>
+
+      {/* Rest day toggles */}
+      <div className="flex items-center gap-2">
+        <CalendarOff size={14} className="text-zinc-400 dark:text-zinc-500 flex-shrink-0" />
+        <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 flex-shrink-0">Rest</span>
+        <div className="flex gap-1 flex-1">
+          {DAY_SHORTS.map((short, i) => {
+            const dayName = DAYS_OF_WEEK[i];
+            const isRest = restDays.has(dayName);
+            return (
+              <button
+                key={dayName}
+                onClick={() => toggleRestDay(dayName)}
+                className={`flex-1 py-1 rounded-md text-[10px] font-bold transition-all border ${
+                  isRest
+                    ? 'bg-rose-100 dark:bg-rose-900/30 border-rose-300 dark:border-rose-600 text-rose-600 dark:text-rose-400 line-through'
+                    : 'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:border-rose-300 dark:hover:border-rose-600'
+                }`}
+                title={isRest ? `${dayName}: rest day` : `${dayName}: study day`}
+              >
+                {short}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {/* Mobile: Day selector tabs */}
