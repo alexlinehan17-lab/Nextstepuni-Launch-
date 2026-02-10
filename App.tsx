@@ -6,7 +6,7 @@
 
 import React, { useState, useEffect, Suspense } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, LogOut } from 'lucide-react';
+import { Sun, Moon, LogOut, ArrowLeft } from 'lucide-react';
 import { Library } from './components/Library';
 import { KnowledgeTree, CategoryType } from './components/KnowledgeTree';
 import { LoadingSpinner } from './components/LoadingSpinner';
@@ -71,6 +71,8 @@ const App: React.FC = () => {
   const [viewState, setViewState] = useState<'tree' | 'category' | 'module' | 'innovation-zone'>('tree');
   const [currentCategory, setCurrentCategory] = useState<CategoryType | null>(null);
   const [currentModuleId, setCurrentModuleId] = useState<string | null>(null);
+  const [cameFromJourney, setCameFromJourney] = useState(false);
+  const [journeyResult, setJourneyResult] = useState<{ endingId: string; finalStats?: any } | null>(null);
   const [darkMode, setDarkMode] = useState(false);
   const [user, setUser] = useState<SessionUser | null>(null);
   const [userProgress, setUserProgress] = useState<UserProgress>({});
@@ -175,6 +177,7 @@ const App: React.FC = () => {
   };
 
   const handleSelectModule = (moduleId: string) => {
+    setCameFromJourney(viewState === 'innovation-zone');
     setCurrentModuleId(moduleId);
     setViewState('module');
   };
@@ -185,12 +188,15 @@ const App: React.FC = () => {
 
   const handleBackToTree = () => {
     setCurrentCategory(null);
+    setCameFromJourney(false);
     setViewState('tree');
   };
 
   const handleBackToCategory = () => {
     setCurrentModuleId(null);
-    if (currentCategory) {
+    if (cameFromJourney) {
+      setViewState('innovation-zone');
+    } else if (currentCategory) {
       setViewState('category');
     } else {
       setViewState('tree');
@@ -205,8 +211,6 @@ const App: React.FC = () => {
     if (!user) {
       return (
         <div className="flex flex-col items-center justify-center min-h-screen text-center p-8 relative">
-
-          <img src="/pwc-logo.png" alt="PwC" className="absolute top-8 left-8 h-24 md:h-32 object-contain" />
 
           <div className="flex flex-col items-center">
             <div className="w-16 h-1 bg-[#CC785C] rounded-full mb-8" />
@@ -266,7 +270,7 @@ const App: React.FC = () => {
     if (viewState === 'innovation-zone') {
         return (
           <Suspense fallback={<LoadingSpinner />}>
-            <InnovationZone onBack={handleBackToTree} />
+            <InnovationZone onBack={handleBackToTree} onSelectModule={handleSelectModule} user={user} autoOpenJourney={cameFromJourney} savedJourneyResult={journeyResult} onJourneyComplete={setJourneyResult} />
           </Suspense>
         );
     }
@@ -276,6 +280,17 @@ const App: React.FC = () => {
       if (ModuleComponent) {
         return (
           <Suspense fallback={<LoadingSpinner />}>
+            {cameFromJourney && (
+              <div className="fixed top-0 left-0 right-0 z-[80] bg-purple-600 dark:bg-purple-500">
+                <button
+                  onClick={handleBackToCategory}
+                  className="w-full flex items-center justify-center gap-2 py-2 text-white text-xs font-bold hover:bg-purple-700 dark:hover:bg-purple-600 transition-colors"
+                >
+                  <ArrowLeft size={14} />
+                  Back to Journey Results
+                </button>
+              </div>
+            )}
             <ModuleComponent
               onBack={handleBackToCategory}
               progress={userProgress[currentModuleId] || { unlockedSection: 0 }}
