@@ -5,7 +5,9 @@
 
 import {
   type StudentSubject, type StudyBlock, type DaySchedule, type WeeklyTimetable, type Grade,
+  type TimetableCompletions,
   LC_SUBJECTS, DAYS_OF_WEEK, getPointsForGrade, getGradeIndex, HIGHER_GRADES, ORDINARY_GRADES,
+  toDateKey,
 } from './subjectData';
 
 // ─── Priority Scoring ───────────────────────────────────────────────────────
@@ -228,6 +230,72 @@ function seededRandom(seed: number): number {
   // Simple seeded PRNG
   const x = Math.sin(seed * 9301 + 49297) * 49297;
   return x - Math.floor(x);
+}
+
+// ─── Streak Computation ─────────────────────────────────────────────────────
+
+/**
+ * Walks backwards from `today` counting consecutive study days with completions.
+ * Rest days are skipped entirely (they don't break or extend streaks).
+ * If today is a study day with no completions yet, the streak is preserved
+ * (user still has time today).
+ */
+export function computeStreak(
+  completions: TimetableCompletions,
+  restDays: string[],
+  today: Date = new Date()
+): { currentStreak: number; lastActiveDate: string } {
+  const restSet = new Set(restDays);
+  // Day names matching DAYS_OF_WEEK indexing (0=Mon..6=Sun)
+  const dayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+  const getDayName = (d: Date): string => {
+    const jsDay = d.getDay(); // 0=Sun
+    const idx = jsDay === 0 ? 6 : jsDay - 1; // convert to 0=Mon
+    return dayNames[idx];
+  };
+
+  const todayKey = toDateKey(today);
+  const todayDayName = getDayName(today);
+  const todayIsRest = restSet.has(todayDayName);
+  const todayHasCompletions = (completions[todayKey]?.length ?? 0) > 0;
+
+  let streak = 0;
+  let lastActiveDate = '';
+
+  // If today is a study day and has completions, count it
+  if (!todayIsRest && todayHasCompletions) {
+    streak = 1;
+    lastActiveDate = todayKey;
+  }
+
+  // Walk backwards from yesterday
+  const cursor = new Date(today);
+  cursor.setHours(0, 0, 0, 0);
+  for (let i = 1; i <= 365; i++) {
+    cursor.setDate(cursor.getDate() - 1);
+    const key = toDateKey(cursor);
+    const dayName = getDayName(cursor);
+
+    if (restSet.has(dayName)) continue; // skip rest days
+
+    const dayCompletions = completions[key]?.length ?? 0;
+    if (dayCompletions > 0) {
+      streak++;
+      if (!lastActiveDate) lastActiveDate = key;
+    } else {
+      break; // streak broken
+    }
+  }
+
+  // If today is a study day with no completions, streak is preserved from yesterday
+  // (already handled — we started counting from yesterday in the walk)
+  // Update lastActiveDate if we found completions but today had none
+  if (!todayIsRest && !todayHasCompletions && streak > 0 && !lastActiveDate) {
+    // lastActiveDate would have been set in the loop
+  }
+
+  return { currentStreak: streak, lastActiveDate: lastActiveDate || todayKey };
 }
 
 function interleaveBlocks(blocks: StudyBlock[]): StudyBlock[] {

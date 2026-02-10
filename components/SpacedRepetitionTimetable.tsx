@@ -8,8 +8,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   ChevronLeft, ChevronRight, BookOpen, RotateCcw, Target,
   Clock, Calendar, TrendingUp, Settings, HelpCircle, X, ArrowRight, AlertTriangle, CalendarOff,
+  CheckCircle, Flame,
 } from 'lucide-react';
-import { type StudentSubjectProfile, type StudyBlock, DAYS_OF_WEEK, LC_SUBJECTS, getPointsForGrade, type Grade } from './subjectData';
+import {
+  type StudentSubjectProfile, type StudyBlock, DAYS_OF_WEEK, LC_SUBJECTS, getPointsForGrade, type Grade,
+  type TimetableCompletions, type TimetableStreak, getBlockId, toDateKey,
+} from './subjectData';
 import {
   computeSubjectPriorities, allocateSessions, generateWeeklyTimetable,
   computeWeeksUntilExam, computeIntensityFactor,
@@ -23,6 +27,9 @@ interface SpacedRepetitionTimetableProps {
   profile: StudentSubjectProfile;
   onOpenSettings: () => void;
   onRestDaysChange?: (restDays: string[]) => void;
+  completions?: TimetableCompletions;
+  streak?: TimetableStreak;
+  onToggleCompletion?: (dateKey: string, blockId: string, completed: boolean) => void;
 }
 
 // ─── Subject Color Map (literal Tailwind strings for CDN constraint) ────────
@@ -92,22 +99,47 @@ function formatDateShort(date: Date): string {
 
 // ─── StudyBlockCard ─────────────────────────────────────────────────────────
 
-const StudyBlockCard: React.FC<{ block: StudyBlock }> = ({ block }) => {
+const StudyBlockCard: React.FC<{ block: StudyBlock; completed?: boolean; onToggle?: () => void }> = ({ block, completed, onToggle }) => {
   const color = getSubjectColor(block.subjectName);
   const typeConfig = SESSION_TYPE_CONFIG[block.sessionType];
   const TypeIcon = typeConfig.icon;
 
-  return (
-    <div className={`p-2 rounded-lg ${color.bg} border ${color.border} transition-colors`}>
+  const inner = (
+    <>
       <div className="flex items-center gap-1.5 mb-0.5">
-        <div className={`w-2 h-2 rounded-full ${color.dot} flex-shrink-0`} />
-        <p className={`text-[10px] font-bold truncate ${color.text}`}>{block.subjectName}</p>
+        {completed
+          ? <CheckCircle size={10} className="text-emerald-500 dark:text-emerald-400 flex-shrink-0" />
+          : <div className={`w-2 h-2 rounded-full ${color.dot} flex-shrink-0`} />
+        }
+        <p className={`text-[10px] font-bold truncate ${completed ? 'line-through text-emerald-600 dark:text-emerald-400' : color.text}`}>{block.subjectName}</p>
       </div>
       <div className="flex items-center gap-1 ml-3.5">
-        <TypeIcon size={9} className="text-zinc-400 dark:text-zinc-500" />
-        <span className="text-[9px] text-zinc-400 dark:text-zinc-500">{typeConfig.label}</span>
-        <span className="text-[9px] text-zinc-300 dark:text-zinc-600 ml-auto">{block.durationMinutes}m</span>
+        <TypeIcon size={9} className={completed ? 'text-emerald-400 dark:text-emerald-500' : 'text-zinc-400 dark:text-zinc-500'} />
+        <span className={`text-[9px] ${completed ? 'text-emerald-400 dark:text-emerald-500' : 'text-zinc-400 dark:text-zinc-500'}`}>{typeConfig.label}</span>
+        <span className={`text-[9px] ml-auto ${completed ? 'text-emerald-300 dark:text-emerald-600' : 'text-zinc-300 dark:text-zinc-600'}`}>{block.durationMinutes}m</span>
       </div>
+    </>
+  );
+
+  if (onToggle) {
+    return (
+      <MotionButton
+        whileTap={{ scale: 0.97 }}
+        onClick={onToggle}
+        className={`w-full text-left p-2 rounded-lg border transition-all ${
+          completed
+            ? 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800/40 opacity-75'
+            : `${color.bg} ${color.border}`
+        }`}
+      >
+        {inner}
+      </MotionButton>
+    );
+  }
+
+  return (
+    <div className={`p-2 rounded-lg ${color.bg} border ${color.border} transition-colors`}>
+      {inner}
     </div>
   );
 };
@@ -152,7 +184,7 @@ const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> =
 
 // ─── Main Component ─────────────────────────────────────────────────────────
 
-const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, onOpenSettings, onRestDaysChange }) => {
+const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion }) => {
   const [weekOffset, setWeekOffset] = useState(0);
   const [selectedDay, setSelectedDay] = useState(0); // For mobile view
   const [showExplainer, setShowExplainer] = useState(false);
@@ -198,6 +230,58 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
   const DAY_SHORTS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
+  // Helper: get date key for a day index (0=Mon) in the current week view
+  const getDateKeyForDay = (dayIndex: number): string => {
+    const d = new Date(weekStart);
+    d.setDate(weekStart.getDate() + dayIndex);
+    return toDateKey(d);
+  };
+
+  // Helper: check if a block is completed for a given day
+  const isBlockCompleted = (dayIndex: number, blockIndex: number, block: StudyBlock): boolean => {
+    const dateKey = getDateKeyForDay(dayIndex);
+    const blockId = getBlockId(block, blockIndex);
+    return completions[dateKey]?.includes(blockId) ?? false;
+  };
+
+  // Helper: toggle handler for a block
+  const handleBlockToggle = (dayIndex: number, blockIndex: number, block: StudyBlock) => {
+    if (!onToggleCompletion) return;
+    const dateKey = getDateKeyForDay(dayIndex);
+    const blockId = getBlockId(block, blockIndex);
+    const completed = completions[dateKey]?.includes(blockId) ?? false;
+    onToggleCompletion(dateKey, blockId, !completed);
+  };
+
+  // Today focus: compute today's day index within this week
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const todayKey = toDateKey(today);
+  const jsDay = today.getDay(); // 0=Sun
+  const todayDayIndex = jsDay === 0 ? 6 : jsDay - 1; // 0=Mon
+  const isCurrentWeek = weekOffset === 0;
+  const todaySchedule = isCurrentWeek ? timetable[todayDayIndex] : null;
+  const todayHasSessions = todaySchedule ? todaySchedule.blocks.length > 0 : false;
+  const showTodayView = isCurrentWeek && todayHasSessions;
+
+  // Today's completion stats
+  const todayCompletedIds = completions[todayKey] ?? [];
+  const todayBlocks = todaySchedule?.blocks ?? [];
+  const todayCompletedCount = todayBlocks.filter((block, bi) => {
+    const blockId = getBlockId(block, bi);
+    return todayCompletedIds.includes(blockId);
+  }).length;
+  const todayTotalCount = todayBlocks.length;
+  const todayAllDone = todayTotalCount > 0 && todayCompletedCount >= todayTotalCount;
+  const todayProgress = todayTotalCount > 0 ? todayCompletedCount / todayTotalCount : 0;
+
+  // "Next Up" — first uncompleted session today
+  const nextUpIndex = todayBlocks.findIndex((block, bi) => {
+    const blockId = getBlockId(block, bi);
+    return !todayCompletedIds.includes(blockId);
+  });
+  const nextUpBlock = nextUpIndex >= 0 ? todayBlocks[nextUpIndex] : null;
+
   return (
     <div className="space-y-6">
       {/* Header */}
@@ -242,6 +326,12 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
             <Calendar size={12} className="text-amber-600 dark:text-amber-400" />
             <span className="text-xs font-bold text-amber-600 dark:text-amber-400">{daysUntilExam} days left</span>
           </div>
+          {streak.currentStreak > 0 && (
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-700/30">
+              <Flame size={12} className="text-orange-600 dark:text-orange-400" />
+              <span className="text-xs font-bold text-orange-600 dark:text-orange-400">{streak.currentStreak} day streak</span>
+            </div>
+          )}
         </div>
 
         <MotionButton
@@ -280,6 +370,59 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         </div>
       </div>
 
+      {/* Today Focus View */}
+      {showTodayView && (
+        <MotionDiv
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 rounded-xl p-5"
+        >
+          <div className="flex items-center gap-4">
+            {/* Progress Ring */}
+            <div className="relative w-16 h-16 flex-shrink-0">
+              <svg viewBox="0 0 48 48" className="w-16 h-16 -rotate-90">
+                <circle cx="24" cy="24" r="20" fill="none" strokeWidth="3"
+                  className="stroke-zinc-200 dark:stroke-white/10" />
+                <motion.circle
+                  cx="24" cy="24" r="20" fill="none" strokeWidth="3"
+                  strokeLinecap="round"
+                  className="stroke-emerald-500"
+                  initial={{ strokeDashoffset: 2 * Math.PI * 20 }}
+                  animate={{ strokeDashoffset: 2 * Math.PI * 20 * (1 - todayProgress) }}
+                  transition={{ duration: 0.6, ease: 'easeOut' }}
+                  style={{ strokeDasharray: 2 * Math.PI * 20 }}
+                />
+              </svg>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-sm font-bold font-mono text-zinc-700 dark:text-zinc-200">
+                  {todayCompletedCount}/{todayTotalCount}
+                </span>
+              </div>
+            </div>
+
+            {/* Today Info */}
+            <div className="flex-1 min-w-0">
+              <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-1">Today</p>
+              {todayAllDone ? (
+                <div>
+                  <p className="text-sm font-bold text-emerald-600 dark:text-emerald-400">All done for today!</p>
+                  <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-0.5">Great work. Rest up and come back tomorrow.</p>
+                </div>
+              ) : nextUpBlock ? (
+                <div>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-1">Next up</p>
+                  <div className="flex items-center gap-2">
+                    <div className={`w-2.5 h-2.5 rounded-full ${getSubjectColor(nextUpBlock.subjectName).dot} flex-shrink-0`} />
+                    <span className="text-sm font-bold text-zinc-800 dark:text-zinc-200 truncate">{nextUpBlock.subjectName}</span>
+                    <span className="text-xs text-zinc-400 dark:text-zinc-500 flex-shrink-0">{SESSION_TYPE_CONFIG[nextUpBlock.sessionType].label} · {nextUpBlock.durationMinutes}m</span>
+                  </div>
+                </div>
+              ) : null}
+            </div>
+          </div>
+        </MotionDiv>
+      )}
+
       {/* Mobile: Day selector tabs */}
       <div className="md:hidden flex gap-1 overflow-x-auto pb-1">
         {DAY_SHORTS.map((day, i) => (
@@ -311,7 +454,12 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
           >
             {timetable[selectedDay].blocks.length > 0 ? (
               timetable[selectedDay].blocks.map((block, bi) => (
-                <StudyBlockCard key={bi} block={block} />
+                <StudyBlockCard
+                  key={bi}
+                  block={block}
+                  completed={isBlockCompleted(selectedDay, bi, block)}
+                  onToggle={onToggleCompletion ? () => handleBlockToggle(selectedDay, bi, block) : undefined}
+                />
               ))
             ) : (
               <div className="text-center py-8 text-zinc-400 dark:text-zinc-500 text-sm">Rest day</div>
@@ -331,7 +479,12 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
             <div className="space-y-1.5 min-h-[120px]">
               {day.blocks.length > 0 ? (
                 day.blocks.map((block, bi) => (
-                  <StudyBlockCard key={bi} block={block} />
+                  <StudyBlockCard
+                    key={bi}
+                    block={block}
+                    completed={isBlockCompleted(di, bi, block)}
+                    onToggle={onToggleCompletion ? () => handleBlockToggle(di, bi, block) : undefined}
+                  />
                 ))
               ) : (
                 <div className="flex items-center justify-center h-24 text-[10px] text-zinc-300 dark:text-zinc-600 italic">Rest</div>

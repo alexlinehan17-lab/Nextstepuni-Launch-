@@ -152,3 +152,27 @@ export function isValidTarget(current: Grade, target: Grade): boolean {
   if (current.charAt(0) !== target.charAt(0)) return false;
   return getGradeIndex(target) <= getGradeIndex(current);
 }
+
+// ─── Timetable Completion Tracking ──────────────────────────────────────────
+
+/** Completions keyed by ISO date "YYYY-MM-DD" → array of block IDs */
+export type TimetableCompletions = Record<string, string[]>;
+
+export interface TimetableStreak {
+  currentStreak: number;
+  lastActiveDate: string; // "YYYY-MM-DD" or ""
+  longestStreak: number;
+}
+
+/** Returns a stable block ID: "SubjectName|sessionType|blockIndex" */
+export function getBlockId(block: StudyBlock, blockIndex: number): string {
+  return `${block.subjectName}|${block.sessionType}|${blockIndex}`;
+}
+
+/** Returns "YYYY-MM-DD" for a Date */
+export function toDateKey(date: Date): string {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, '0');
+  const d = String(date.getDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}

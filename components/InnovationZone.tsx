@@ -12,13 +12,15 @@ import {
     Lock, MapPin, Sparkles, AlertTriangle, MessageCircle, BookOpenCheck,
     ClipboardCheck, Home, School, Library, Coffee, Wifi, ArrowUp, ArrowDown,
     Trophy, Compass, Brain, HandHelping, Target, ArrowUpRight, Award, Megaphone,
-    Flame, Scale, GraduationCap, Settings, CalendarDays
+    Flame, Scale, GraduationCap, Settings, CalendarDays, Calculator
 } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { type StudentSubjectProfile } from './subjectData';
+import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak } from './subjectData';
+import { computeStreak } from './timetableAlgorithm';
 import SubjectOnboarding from './SubjectOnboarding';
 import SpacedRepetitionTimetable from './SpacedRepetitionTimetable';
+import CAOPointsSimulator from './CAOPointsSimulator';
 import {
     type GameState, type Choice, type Scene, type HistoryItem, type StatKey, type Phase,
     type Mood, type Location,
@@ -1206,6 +1208,9 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const [subjectProfile, setSubjectProfile] = useState<StudentSubjectProfile | null>(null);
     const [showOnboarding, setShowOnboarding] = useState(false);
     const [profileLoaded, setProfileLoaded] = useState(false);
+    const [pendingToolId, setPendingToolId] = useState<string | null>(null);
+    const [timetableCompletions, setTimetableCompletions] = useState<TimetableCompletions>({});
+    const [timetableStreak, setTimetableStreak] = useState<TimetableStreak>({ currentStreak: 0, lastActiveDate: '', longestStreak: 0 });
 
     // Load subject profile from Firebase
     useEffect(() => {
@@ -1218,6 +1223,12 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     if (data.subjectProfile) {
                         setSubjectProfile({ restDays: [], ...data.subjectProfile } as StudentSubjectProfile);
                     }
+                    if (data.timetableCompletions) {
+                        setTimetableCompletions(data.timetableCompletions as TimetableCompletions);
+                    }
+                    if (data.timetableStreak) {
+                        setTimetableStreak(data.timetableStreak as TimetableStreak);
+                    }
                 }
             } catch (e) {
                 console.error('Failed to load subject profile:', e);
@@ -1227,10 +1238,14 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         loadProfile();
     }, [user?.uid]);
 
-    // Handle onboarding completion — save to Firebase
+    // Handle onboarding completion — save to Firebase and auto-open pending tool
     const handleOnboardingComplete = useCallback(async (profile: StudentSubjectProfile) => {
         setSubjectProfile(profile);
         setShowOnboarding(false);
+        if (pendingToolId) {
+            setActiveTool(pendingToolId);
+            setPendingToolId(null);
+        }
         if (user?.uid) {
             try {
                 await setDoc(doc(db, 'progress', user.uid), { subjectProfile: profile }, { merge: true });
@@ -1238,21 +1253,62 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                 console.error('Failed to save subject profile:', e);
             }
         }
-    }, [user?.uid]);
+    }, [user?.uid, pendingToolId]);
+
+    // Handle timetable session toggle
+    const handleToggleCompletion = useCallback(async (dateKey: string, blockId: string, completed: boolean) => {
+        // Optimistic state update
+        setTimetableCompletions(prev => {
+            const updated = { ...prev };
+            const dayArr = [...(updated[dateKey] ?? [])];
+            if (completed) {
+                if (!dayArr.includes(blockId)) dayArr.push(blockId);
+            } else {
+                const idx = dayArr.indexOf(blockId);
+                if (idx >= 0) dayArr.splice(idx, 1);
+            }
+            // Clean up empty entries
+            if (dayArr.length === 0) {
+                delete updated[dateKey];
+            } else {
+                updated[dateKey] = dayArr;
+            }
+
+            // Recompute streak
+            const restDays = subjectProfile?.restDays ?? [];
+            const { currentStreak, lastActiveDate } = computeStreak(updated, restDays);
+            const newLongest = Math.max(timetableStreak.longestStreak, currentStreak);
+            const newStreak: TimetableStreak = { currentStreak, lastActiveDate, longestStreak: newLongest };
+            setTimetableStreak(newStreak);
+
+            // Persist to Firebase
+            if (user?.uid) {
+                setDoc(doc(db, 'progress', user.uid), {
+                    timetableCompletions: updated,
+                    timetableStreak: newStreak,
+                }, { merge: true }).catch(e => console.error('Failed to save completions:', e));
+            }
+
+            return updated;
+        });
+    }, [subjectProfile?.restDays, timetableStreak.longestStreak, user?.uid]);
 
     // Tool click gate: if tool needs subjects and no profile exists, show onboarding
     const handleToolClick = useCallback((toolId: string, needsProfile: boolean) => {
+        if (needsProfile && !profileLoaded) return; // still loading from Firebase
         if (needsProfile && !subjectProfile) {
+            setPendingToolId(toolId);
             setShowOnboarding(true);
             return;
         }
         setActiveTool(toolId);
-    }, [subjectProfile]);
+    }, [subjectProfile, profileLoaded]);
 
     const tools = [
         { id: 'journey', title: 'Academic Journey Simulator', description: 'Navigate the choices of your final school year.', icon: GitBranch, needsProfile: false, component: <AcademicJourneyGame onSelectModule={onSelectModule} user={user} savedJourneyResult={savedJourneyResult} onJourneyComplete={onJourneyComplete} /> },
+        { id: 'cao-simulator', title: 'CAO Points Simulator', description: 'Explore how grade changes affect your CAO points.', icon: Calculator, needsProfile: true, component: subjectProfile ? <CAOPointsSimulator profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} /> : null },
         { id: 'focus', title: 'Deep Focus Timer', description: 'A customizable timer based on the Pomodoro technique.', icon: Clock, needsProfile: false, disabled: true },
-        { id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true, component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); } } }} /> : null },
+        { id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true, component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); } } }} /> : null },
     ];
 
     const currentTool = tools.find(t => t.id === activeTool);
@@ -1309,8 +1365,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                                 title={tool.title}
                                 description={tool.description}
                                 icon={tool.icon}
-                                onClick={() => !tool.disabled && handleToolClick(tool.id, tool.needsProfile)}
-                                disabled={tool.disabled}
+                                onClick={() => !tool.disabled && !(tool.needsProfile && !profileLoaded) && handleToolClick(tool.id, tool.needsProfile)}
+                                disabled={tool.disabled || (tool.needsProfile && !profileLoaded)}
                             />
                         ))}
                     </div>
@@ -1338,7 +1394,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             user={user}
             existingProfile={subjectProfile || undefined}
             onComplete={handleOnboardingComplete}
-            onClose={() => setShowOnboarding(false)}
+            onClose={() => { setShowOnboarding(false); setPendingToolId(null); }}
           />
         )}
       </AnimatePresence>
