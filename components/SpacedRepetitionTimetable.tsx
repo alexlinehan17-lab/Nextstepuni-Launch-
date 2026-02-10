@@ -7,9 +7,9 @@ import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ChevronLeft, ChevronRight, BookOpen, RotateCcw, Target,
-  Clock, Calendar, TrendingUp, Settings, HelpCircle, X, ArrowRight,
+  Clock, Calendar, TrendingUp, Settings, HelpCircle, X, ArrowRight, AlertTriangle,
 } from 'lucide-react';
-import { type StudentSubjectProfile, type StudyBlock, DAYS_OF_WEEK } from './subjectData';
+import { type StudentSubjectProfile, type StudyBlock, DAYS_OF_WEEK, LC_SUBJECTS, getPointsForGrade, type Grade } from './subjectData';
 import {
   computeSubjectPriorities, allocateSessions, generateWeeklyTimetable,
   computeWeeksUntilExam, computeIntensityFactor,
@@ -352,9 +352,9 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-amber-50 dark:bg-amber-900/15 border border-amber-200 dark:border-amber-700/30">
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400 mb-1">Difficulty Multiplier</p>
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400 mb-1">Efficiency Multiplier</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
-                      Subjects where you're currently weaker get a boost. Moving from H7 to H5 is harder than H2 to H1 — the multiplier reflects this diminishing-returns curve.
+                      Subjects where you're currently weaker get a boost. Going from H2 to H1 is much harder than H7 to H5 — your study time is better spent where grade jumps come more easily.
                     </p>
                   </div>
                 </div>
@@ -406,7 +406,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                           </span>
                           <span className="text-zinc-400 dark:text-zinc-500 font-mono">x</span>
                           <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 font-bold">
-                            {p.difficultyMultiplier.toFixed(2)} difficulty
+                            {p.difficultyMultiplier.toFixed(2)} efficiency
                           </span>
                           <span className="text-zinc-400 dark:text-zinc-500 font-mono">=</span>
                           <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 font-bold">
@@ -419,10 +419,10 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                           {p.pointsGain === 0
                             ? `Already at your target — this subject receives minimum sessions to maintain.`
                             : p.difficultyMultiplier >= 0.7
-                              ? `Currently at ${p.currentGrade}, so the difficulty multiplier is high (${p.difficultyMultiplier.toFixed(2)}) — each grade jump requires more effort from this starting point.`
+                              ? `Currently at ${p.currentGrade}, so the efficiency multiplier is high (${p.difficultyMultiplier.toFixed(2)}) — grade jumps are more achievable from this level, so your study time goes further here.`
                               : p.difficultyMultiplier >= 0.5
-                                ? `At ${p.currentGrade}, the difficulty multiplier is moderate (${p.difficultyMultiplier.toFixed(2)}) — grade jumps are achievable but take consistent work.`
-                                : `Starting from ${p.currentGrade}, the difficulty multiplier is lower (${p.difficultyMultiplier.toFixed(2)}) because improvement is relatively easier from a strong base.`
+                                ? `At ${p.currentGrade}, the efficiency multiplier is moderate (${p.difficultyMultiplier.toFixed(2)}) — improvement is possible but takes consistent work.`
+                                : `Starting from ${p.currentGrade}, the efficiency multiplier is lower (${p.difficultyMultiplier.toFixed(2)}) because you're already strong — each further grade jump is harder to achieve (diminishing returns).`
                           }
                         </p>
                       </div>
@@ -430,6 +430,96 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                   })}
                 </div>
               </div>
+
+              {/* Projected CAO Points — Best 6 */}
+              {(() => {
+                // Compute target points per subject
+                const subjectTargetPoints = priorities.map(p => {
+                  const lcSubject = LC_SUBJECTS.find(s => s.name === p.subjectName);
+                  const isMaths = lcSubject?.isMaths || false;
+                  return {
+                    subjectName: p.subjectName,
+                    targetGrade: p.targetGrade,
+                    targetPoints: getPointsForGrade(p.targetGrade, isMaths),
+                    isMaths,
+                  };
+                });
+
+                // Sort by target points descending to find best 6
+                const sorted = [...subjectTargetPoints].sort((a, b) => b.targetPoints - a.targetPoints);
+                const best6 = sorted.slice(0, 6);
+                const outside = sorted.slice(6);
+                const projectedTotal = best6.reduce((sum, s) => sum + s.targetPoints, 0);
+
+                // Non-maths subjects outside best 6 are candidates for deprioritization
+                const deprioritiseCandidates = outside.filter(s => !s.isMaths);
+
+                return (
+                  <div className="space-y-3">
+                    {/* Projected total */}
+                    <div className="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-900/15 border border-emerald-200 dark:border-emerald-700/30">
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-2">Projected CAO Points (Best 6)</p>
+                      <div className="flex items-baseline gap-2 mb-3">
+                        <p className="text-4xl font-bold font-mono text-emerald-600 dark:text-emerald-400">{projectedTotal}</p>
+                        <p className="text-sm text-emerald-500 dark:text-emerald-500 font-semibold">/ 625</p>
+                      </div>
+                      <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
+                        If you hit your target grade in every subject, your <span className="font-bold">best 6</span> will total <span className="font-bold text-emerald-600 dark:text-emerald-400">{projectedTotal} points</span>. Only your top 6 subjects count for CAO.
+                      </p>
+                      <div className="mt-3 space-y-1">
+                        {best6.map((s, i) => (
+                          <div key={s.subjectName} className="flex items-center justify-between text-xs">
+                            <div className="flex items-center gap-2">
+                              <span className="text-[10px] font-bold text-emerald-500 dark:text-emerald-400 w-3">{i + 1}.</span>
+                              <div className={`w-2 h-2 rounded-full ${getSubjectColor(s.subjectName).dot}`} />
+                              <span className="font-semibold text-zinc-700 dark:text-zinc-300">{s.subjectName}</span>
+                              {s.isMaths && <span className="text-[9px] text-indigo-500 dark:text-indigo-400 font-bold">+25</span>}
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <span className="text-zinc-400 dark:text-zinc-500 font-medium">{s.targetGrade}</span>
+                              <span className="font-mono font-bold text-emerald-600 dark:text-emerald-400">{s.targetPoints}</span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Deprioritise suggestion */}
+                    {deprioritiseCandidates.length > 0 && (
+                      <div className="p-4 rounded-xl bg-amber-50 dark:bg-amber-900/15 border border-amber-200 dark:border-amber-700/30">
+                        <div className="flex items-start gap-2 mb-2">
+                          <AlertTriangle size={14} className="text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
+                          <p className="text-[10px] font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400">Subjects Outside Your Best 6</p>
+                        </div>
+                        <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed mb-3">
+                          Based on your target grades, <span className="font-bold">{deprioritiseCandidates.map(s => s.subjectName).join(' and ')}</span> {deprioritiseCandidates.length === 1 ? 'falls' : 'fall'} outside your top 6. Since only your best 6 count for CAO, you could consider focusing less time here and more on your counting subjects.
+                        </p>
+
+                        <div className="space-y-1 mb-3">
+                          {deprioritiseCandidates.map(s => (
+                            <div key={s.subjectName} className="flex items-center justify-between text-xs p-2 rounded-lg bg-amber-100/50 dark:bg-amber-900/20">
+                              <div className="flex items-center gap-2">
+                                <div className={`w-2 h-2 rounded-full ${getSubjectColor(s.subjectName).dot}`} />
+                                <span className="font-semibold text-zinc-700 dark:text-zinc-300">{s.subjectName}</span>
+                              </div>
+                              <span className="font-mono text-amber-600 dark:text-amber-400 font-bold">{s.targetGrade} — {s.targetPoints} pts</span>
+                            </div>
+                          ))}
+                        </div>
+
+                        <div className="p-3 rounded-lg bg-rose-50 dark:bg-rose-900/15 border border-rose-200 dark:border-rose-700/30">
+                          <div className="flex items-start gap-2">
+                            <AlertTriangle size={12} className="text-rose-500 dark:text-rose-400 flex-shrink-0 mt-0.5" />
+                            <p className="text-[10px] text-rose-700 dark:text-rose-300 leading-relaxed">
+                              <span className="font-bold">High-risk strategy.</span> Only deprioritise a subject if you're confident you're significantly stronger in at least 6 others. Unexpected results on exam day can mean a "safe" subject becomes the one you need. The timetable still allocates minimum sessions to every subject for safety.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              })()}
 
               {/* Session count & intensity note */}
               <div className="p-4 rounded-xl bg-purple-50 dark:bg-purple-900/15 border border-purple-200 dark:border-purple-700/30">
