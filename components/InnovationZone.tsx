@@ -12,10 +12,13 @@ import {
     Lock, MapPin, Sparkles, AlertTriangle, MessageCircle, BookOpenCheck,
     ClipboardCheck, Home, School, Library, Coffee, Wifi, ArrowUp, ArrowDown,
     Trophy, Compass, Brain, HandHelping, Target, ArrowUpRight, Award, Megaphone,
-    Flame, Scale, GraduationCap
+    Flame, Scale, GraduationCap, Settings, CalendarDays
 } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
+import { type StudentSubjectProfile } from './subjectData';
+import SubjectOnboarding from './SubjectOnboarding';
+import SpacedRepetitionTimetable from './SpacedRepetitionTimetable';
 import {
     type GameState, type Choice, type Scene, type HistoryItem, type StatKey, type Phase,
     type Mood, type Location,
@@ -1200,11 +1203,56 @@ const ToolCard: React.FC<{title: string, description: string, icon: React.Elemen
 
 const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, autoOpenJourney, savedJourneyResult, onJourneyComplete }) => {
     const [activeTool, setActiveTool] = useState<string | null>(autoOpenJourney ? 'journey' : null);
+    const [subjectProfile, setSubjectProfile] = useState<StudentSubjectProfile | null>(null);
+    const [showOnboarding, setShowOnboarding] = useState(false);
+    const [profileLoaded, setProfileLoaded] = useState(false);
+
+    // Load subject profile from Firebase
+    useEffect(() => {
+        if (!user?.uid) { setProfileLoaded(true); return; }
+        const loadProfile = async () => {
+            try {
+                const progressDoc = await getDoc(doc(db, 'progress', user.uid));
+                if (progressDoc.exists()) {
+                    const data = progressDoc.data();
+                    if (data.subjectProfile) {
+                        setSubjectProfile(data.subjectProfile as StudentSubjectProfile);
+                    }
+                }
+            } catch (e) {
+                console.error('Failed to load subject profile:', e);
+            }
+            setProfileLoaded(true);
+        };
+        loadProfile();
+    }, [user?.uid]);
+
+    // Handle onboarding completion — save to Firebase
+    const handleOnboardingComplete = useCallback(async (profile: StudentSubjectProfile) => {
+        setSubjectProfile(profile);
+        setShowOnboarding(false);
+        if (user?.uid) {
+            try {
+                await setDoc(doc(db, 'progress', user.uid), { subjectProfile: profile }, { merge: true });
+            } catch (e) {
+                console.error('Failed to save subject profile:', e);
+            }
+        }
+    }, [user?.uid]);
+
+    // Tool click gate: if tool needs subjects and no profile exists, show onboarding
+    const handleToolClick = useCallback((toolId: string, needsProfile: boolean) => {
+        if (needsProfile && !subjectProfile) {
+            setShowOnboarding(true);
+            return;
+        }
+        setActiveTool(toolId);
+    }, [subjectProfile]);
 
     const tools = [
-        { id: 'journey', title: 'Academic Journey Simulator', description: 'Navigate the choices of your final school year.', icon: GitBranch, component: <AcademicJourneyGame onSelectModule={onSelectModule} user={user} savedJourneyResult={savedJourneyResult} onJourneyComplete={onJourneyComplete} /> },
-        { id: 'focus', title: 'Deep Focus Timer', description: 'A customizable timer based on the Pomodoro technique.', icon: Clock, disabled: true },
-        { id: 'planner', title: 'Retrospective Timetable', description: 'A data-driven study planner based on your confidence.', icon: Wrench, disabled: true }
+        { id: 'journey', title: 'Academic Journey Simulator', description: 'Navigate the choices of your final school year.', icon: GitBranch, needsProfile: false, component: <AcademicJourneyGame onSelectModule={onSelectModule} user={user} savedJourneyResult={savedJourneyResult} onJourneyComplete={onJourneyComplete} /> },
+        { id: 'focus', title: 'Deep Focus Timer', description: 'A customizable timer based on the Pomodoro technique.', icon: Clock, needsProfile: false, disabled: true },
+        { id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true, component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} /> : null },
     ];
 
     const currentTool = tools.find(t => t.id === activeTool);
@@ -1224,8 +1272,19 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
               <h1 className="font-serif font-semibold text-2xl tracking-tight text-zinc-900 dark:text-white">The Innovation Zone</h1>
             </div>
           </div>
-          <div className="w-12 h-12 bg-purple-500 dark:bg-purple-400 rounded-xl flex items-center justify-center text-white">
-            <Lightbulb size={24} strokeWidth={1.5} />
+          <div className="flex items-center gap-3">
+            {subjectProfile && (
+              <button
+                onClick={() => setShowOnboarding(true)}
+                className="p-2.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800"
+                title="Edit subjects"
+              >
+                <Settings size={16} className="text-zinc-500 dark:text-zinc-400" />
+              </button>
+            )}
+            <div className="w-12 h-12 bg-purple-500 dark:bg-purple-400 rounded-xl flex items-center justify-center text-white">
+              <Lightbulb size={24} strokeWidth={1.5} />
+            </div>
           </div>
         </div>
       </header>
@@ -1250,7 +1309,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                                 title={tool.title}
                                 description={tool.description}
                                 icon={tool.icon}
-                                onClick={() => !tool.disabled && setActiveTool(tool.id)}
+                                onClick={() => !tool.disabled && handleToolClick(tool.id, tool.needsProfile)}
                                 disabled={tool.disabled}
                             />
                         ))}
@@ -1271,6 +1330,18 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             )}
         </AnimatePresence>
       </main>
+
+      {/* Subject Onboarding Modal */}
+      <AnimatePresence>
+        {showOnboarding && user && (
+          <SubjectOnboarding
+            user={user}
+            existingProfile={subjectProfile || undefined}
+            onComplete={handleOnboardingComplete}
+            onClose={() => setShowOnboarding(false)}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 };
