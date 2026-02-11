@@ -56,10 +56,43 @@ export interface ModuleTheme {
   activityRingColor: string;
 }
 
+export interface StudyReflection {
+  dateKey: string;
+  blockId: string;
+  subjectName: string;
+  sessionType: 'new-learning' | 'practice' | 'revision';
+  reflection: string;
+  pointsEarned: number;
+  timestamp: number;
+}
+
+export interface PointsData {
+  totalEarned: number;
+  totalSpent: number;
+}
+
+export interface PointsTransaction {
+  type: 'skip-session' | 'rest-day-pass' | 'unlock-avatar' | 'unlock-theme';
+  cost: number;
+  dateKey: string;
+  detail?: string;
+  timestamp: number;
+}
+
+export interface CosmeticUnlocks {
+  avatarSeeds: string[];
+  themeColors: string[];
+}
+
+export interface EarnedRest {
+  skippedSessions: string[];
+  restDayPasses: string[];
+}
+
 export interface UserSettings {
   language: string;
   avatar: string;
   darkMode: boolean;
-  studyReminders: boolean;
+
   defaultWorkMinutes: number;
 }

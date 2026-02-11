@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   ChevronLeft, ChevronRight, BookOpen, RotateCcw, Target,
   Clock, Calendar, TrendingUp, Settings, HelpCircle, X, ArrowRight, AlertTriangle, CalendarOff,
-  CheckCircle, Flame, BarChart3,
+  CheckCircle, Flame, BarChart3, Star, ShoppingBag, BookMarked,
 } from 'lucide-react';
 import {
   type StudentSubjectProfile, type StudyBlock, DAYS_OF_WEEK, LC_SUBJECTS, getPointsForGrade, type Grade,
@@ -30,6 +30,10 @@ interface SpacedRepetitionTimetableProps {
   completions?: TimetableCompletions;
   streak?: TimetableStreak;
   onToggleCompletion?: (dateKey: string, blockId: string, completed: boolean) => void;
+  points?: number;
+  onOpenShop?: () => void;
+  onOpenJournal?: () => void;
+  skippedSessions?: string[];
 }
 
 // ─── Subject Color Map (literal Tailwind strings for CDN constraint) ────────
@@ -99,10 +103,24 @@ function formatDateShort(date: Date): string {
 
 // ─── StudyBlockCard ─────────────────────────────────────────────────────────
 
-const StudyBlockCard: React.FC<{ block: StudyBlock; completed?: boolean; onToggle?: () => void }> = ({ block, completed, onToggle }) => {
+const StudyBlockCard: React.FC<{ block: StudyBlock; completed?: boolean; skipped?: boolean; onToggle?: () => void }> = ({ block, completed, skipped, onToggle }) => {
   const color = getSubjectColor(block.subjectName);
   const typeConfig = SESSION_TYPE_CONFIG[block.sessionType];
   const TypeIcon = typeConfig.icon;
+
+  if (skipped) {
+    return (
+      <div className="p-2 rounded-lg border-2 border-dashed border-zinc-300 dark:border-zinc-600 bg-zinc-50/50 dark:bg-zinc-800/30 opacity-60">
+        <div className="flex items-center gap-1.5 mb-0.5">
+          <div className="w-2 h-2 rounded-full bg-zinc-400 dark:bg-zinc-500 flex-shrink-0" />
+          <p className="text-[10px] font-bold truncate text-zinc-400 dark:text-zinc-500 line-through">{block.subjectName}</p>
+        </div>
+        <div className="flex items-center gap-1 ml-3.5">
+          <span className="text-[9px] text-zinc-400 dark:text-zinc-500 italic">Skipped</span>
+        </div>
+      </div>
+    );
+  }
 
   const inner = (
     <>
@@ -184,7 +202,8 @@ const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> =
 
 // ─── Main Component ─────────────────────────────────────────────────────────
 
-const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion }) => {
+const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, points = 0, onOpenShop, onOpenJournal, skippedSessions = [] }) => {
+  const skippedSet = useMemo(() => new Set(skippedSessions), [skippedSessions]);
   const [weekOffset, setWeekOffset] = useState(0);
   const [selectedDay, setSelectedDay] = useState(0); // For mobile view
   const [showExplainer, setShowExplainer] = useState(false);
@@ -279,6 +298,13 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
     return completions[dateKey]?.includes(blockId) ?? false;
   };
 
+  // Helper: check if a block is skipped (earned rest)
+  const isBlockSkipped = (dayIndex: number, blockIndex: number, block: StudyBlock): boolean => {
+    const dateKey = getDateKeyForDay(dayIndex);
+    const blockId = getBlockId(block, blockIndex);
+    return skippedSet.has(`${dateKey}|${blockId}`);
+  };
+
   // Helper: toggle handler for a block
   const handleBlockToggle = (dayIndex: number, blockIndex: number, block: StudyBlock) => {
     if (!onToggleCompletion) return;
@@ -320,13 +346,8 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex items-start justify-between">
-        <div>
-          <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">Spaced Repetition Timetable</h2>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
-            Week of {formatDateShort(weekStart)} — {formatDateShort(weekEnd)}
-          </p>
-        </div>
+      <div className="flex items-center justify-between">
+        <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">Spaced Repetition Timetable</h2>
         <button
           onClick={onOpenSettings}
           className="p-2.5 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors"
@@ -348,35 +369,9 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
           <ChevronLeft size={16} className="text-zinc-600 dark:text-zinc-300" />
         </MotionButton>
 
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700/30">
-            <TrendingUp size={12} className="text-purple-600 dark:text-purple-400" />
-            <span className="text-xs font-bold text-purple-600 dark:text-purple-400">{totalSessions} sessions</span>
-          </div>
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700/30">
-            <Clock size={12} className="text-blue-600 dark:text-blue-400" />
-            <span className="text-xs font-bold text-blue-600 dark:text-blue-400">{totalHours}h {remainingMins}m</span>
-          </div>
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/30">
-            <Calendar size={12} className="text-amber-600 dark:text-amber-400" />
-            <span className="text-xs font-bold text-amber-600 dark:text-amber-400">{daysUntilExam} days left</span>
-          </div>
-          {streak.currentStreak > 0 && (
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-700/30">
-              <Flame size={12} className="text-orange-600 dark:text-orange-400" />
-              <span className="text-xs font-bold text-orange-600 dark:text-orange-400">{streak.currentStreak} day streak</span>
-            </div>
-          )}
-          <button
-            onClick={() => setStudyHoursRange(r => r === 'week' ? 'month' : r === 'month' ? 'all' : 'week')}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-700/30 hover:bg-emerald-100 dark:hover:bg-emerald-900/30 transition-colors cursor-pointer"
-            title="Click to cycle: this week / this month / all time"
-          >
-            <BarChart3 size={12} className="text-emerald-600 dark:text-emerald-400" />
-            <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">{studiedHours}h {studiedRemainingMins}m</span>
-            <span className="text-[9px] text-emerald-500 dark:text-emerald-500">{studyHoursRangeLabel}</span>
-          </button>
-        </div>
+        <span className="text-sm font-semibold text-zinc-600 dark:text-zinc-300">
+          {formatDateShort(weekStart)} — {formatDateShort(weekEnd)}
+        </span>
 
         <MotionButton
           whileHover={{ scale: 1.05 }}
@@ -386,6 +381,89 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         >
           <ChevronRight size={16} className="text-zinc-600 dark:text-zinc-300" />
         </MotionButton>
+      </div>
+
+      {/* Stats dashboard */}
+      <div className="bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 rounded-xl p-4">
+        <div className="flex items-center gap-4">
+          {/* Stats grid */}
+          <div className="flex-1 grid grid-cols-3 gap-x-6 gap-y-3">
+            {/* Row 1 */}
+            <div className="flex items-center gap-2">
+              <TrendingUp size={14} className="text-purple-500 flex-shrink-0" />
+              <div>
+                <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{totalSessions}</p>
+                <p className="text-[10px] text-zinc-400 dark:text-zinc-500">sessions</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              <Clock size={14} className="text-blue-500 flex-shrink-0" />
+              <div>
+                <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{totalHours}h {remainingMins}m</p>
+                <p className="text-[10px] text-zinc-400 dark:text-zinc-500">planned</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              <Calendar size={14} className="text-amber-500 flex-shrink-0" />
+              <div>
+                <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{daysUntilExam}</p>
+                <p className="text-[10px] text-zinc-400 dark:text-zinc-500">days left</p>
+              </div>
+            </div>
+            {/* Row 2 */}
+            <div className="flex items-center gap-2">
+              <Flame size={14} className="text-orange-500 flex-shrink-0" />
+              <div>
+                <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{streak.currentStreak} day{streak.currentStreak !== 1 ? 's' : ''}</p>
+                <p className="text-[10px] text-zinc-400 dark:text-zinc-500">streak</p>
+              </div>
+            </div>
+            <button
+              onClick={() => setStudyHoursRange(r => r === 'week' ? 'month' : r === 'month' ? 'all' : 'week')}
+              className="flex items-center gap-2 hover:bg-zinc-100 dark:hover:bg-white/5 -m-1 p-1 rounded-lg transition-colors cursor-pointer text-left"
+              title="Click to cycle: this week / this month / all time"
+            >
+              <BarChart3 size={14} className="text-emerald-500 flex-shrink-0" />
+              <div>
+                <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{studiedHours}h {studiedRemainingMins}m</p>
+                <p className="text-[10px] text-zinc-400 dark:text-zinc-500">studied {studyHoursRangeLabel}</p>
+              </div>
+            </button>
+            <div className="flex items-center gap-2">
+              <Star size={14} className="text-yellow-500 flex-shrink-0" />
+              <div>
+                <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{points}</p>
+                <p className="text-[10px] text-zinc-400 dark:text-zinc-500">points</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Action buttons */}
+          {(onOpenShop || onOpenJournal) && (
+            <div className="flex flex-col gap-2 border-l border-zinc-200 dark:border-white/10 pl-4">
+              {onOpenShop && (
+                <button
+                  onClick={onOpenShop}
+                  className="flex items-center gap-2 px-3 py-2 rounded-lg bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700/30 hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-colors"
+                  title="Reward Shop"
+                >
+                  <ShoppingBag size={14} className="text-purple-600 dark:text-purple-400" />
+                  <span className="text-xs font-bold text-purple-600 dark:text-purple-400">Shop</span>
+                </button>
+              )}
+              {onOpenJournal && (
+                <button
+                  onClick={onOpenJournal}
+                  className="flex items-center gap-2 px-3 py-2 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-200 dark:border-indigo-700/30 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors"
+                  title="Study Journal"
+                >
+                  <BookMarked size={14} className="text-indigo-600 dark:text-indigo-400" />
+                  <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400">Journal</span>
+                </button>
+              )}
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Rest day toggles */}
@@ -502,6 +580,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                   key={bi}
                   block={block}
                   completed={isBlockCompleted(selectedDay, bi, block)}
+                  skipped={isBlockSkipped(selectedDay, bi, block)}
                   onToggle={onToggleCompletion ? () => handleBlockToggle(selectedDay, bi, block) : undefined}
                 />
               ))
@@ -527,6 +606,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                     key={bi}
                     block={block}
                     completed={isBlockCompleted(di, bi, block)}
+                    skipped={isBlockSkipped(di, bi, block)}
                     onToggle={onToggleCompletion ? () => handleBlockToggle(di, bi, block) : undefined}
                   />
                 ))

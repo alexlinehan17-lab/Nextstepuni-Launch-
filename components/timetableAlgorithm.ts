@@ -243,9 +243,11 @@ function seededRandom(seed: number): number {
 export function computeStreak(
   completions: TimetableCompletions,
   restDays: string[],
-  today: Date = new Date()
+  today: Date = new Date(),
+  restDayPasses: string[] = []
 ): { currentStreak: number; lastActiveDate: string } {
   const restSet = new Set(restDays);
+  const restPassSet = new Set(restDayPasses);
   // Day names matching DAYS_OF_WEEK indexing (0=Mon..6=Sun)
   const dayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
@@ -257,7 +259,7 @@ export function computeStreak(
 
   const todayKey = toDateKey(today);
   const todayDayName = getDayName(today);
-  const todayIsRest = restSet.has(todayDayName);
+  const todayIsRest = restSet.has(todayDayName) || restPassSet.has(todayKey);
   const todayHasCompletions = (completions[todayKey]?.length ?? 0) > 0;
 
   let streak = 0;
@@ -277,7 +279,7 @@ export function computeStreak(
     const key = toDateKey(cursor);
     const dayName = getDayName(cursor);
 
-    if (restSet.has(dayName)) continue; // skip rest days
+    if (restSet.has(dayName) || restPassSet.has(key)) continue; // skip rest days and rest day passes
 
     const dayCompletions = completions[key]?.length ?? 0;
     if (dayCompletions > 0) {

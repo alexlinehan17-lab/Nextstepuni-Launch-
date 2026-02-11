@@ -6,9 +6,10 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Check } from 'lucide-react';
+import { X, Check, Lock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { AVATAR_SEEDS, getAvatarUrl } from './Auth';
+import { EXTRA_AVATAR_SEEDS } from './RewardShopModal';
 import { UserSettings } from '../types';
 
 const MotionDiv = motion.div as any;
@@ -18,9 +19,10 @@ interface SettingsModalProps {
   onClose: () => void;
   settings: UserSettings;
   updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void;
+  unlockedAvatarSeeds?: string[];
 }
 
-const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, settings, updateSetting }) => {
+const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, settings, updateSetting, unlockedAvatarSeeds = [] }) => {
   const { t } = useTranslation();
   const [showSaved, setShowSaved] = useState(false);
 
@@ -98,35 +100,40 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, settings
                       <img src={getAvatarUrl(seed)} alt={seed} className="w-full h-full rounded-lg" />
                     </button>
                   ))}
-                </div>
-              </section>
-
-              {/* Study Reminders */}
-              <section>
-                <div className="flex items-center justify-between">
-                  <div>
-                    <h3 className="text-sm font-medium text-zinc-900 dark:text-white">
-                      {t('settings.reminders')}
-                    </h3>
-                    <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
-                      {t('settings.remindersDesc')}
-                    </p>
-                  </div>
-                  <button
-                    onClick={() => {
-                      updateSetting('studyReminders', !settings.studyReminders);
-                      flash();
-                    }}
-                    className={`relative w-11 h-6 rounded-full transition-colors ${
-                      settings.studyReminders ? 'bg-[#CC785C]' : 'bg-zinc-200 dark:bg-zinc-700'
-                    }`}
-                  >
-                    <div
-                      className={`absolute top-1 w-4 h-4 rounded-full bg-white shadow transition-transform ${
-                        settings.studyReminders ? 'translate-x-6' : 'translate-x-1'
-                      }`}
-                    />
-                  </button>
+                  {EXTRA_AVATAR_SEEDS.map(seed => {
+                    const isUnlocked = unlockedAvatarSeeds.includes(seed);
+                    return (
+                      <div key={seed} className="relative" title={isUnlocked ? seed : 'Unlock in Reward Shop'}>
+                        <button
+                          onClick={() => {
+                            if (isUnlocked) {
+                              updateSetting('avatar', seed);
+                              flash();
+                            }
+                          }}
+                          disabled={!isUnlocked}
+                          className={`w-full rounded-xl aspect-square p-1.5 transition-all ${
+                            isUnlocked
+                              ? settings.avatar === seed
+                                ? 'ring-2 ring-[#CC785C] bg-[#CC785C]/10'
+                                : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'
+                              : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] cursor-not-allowed'
+                          }`}
+                        >
+                          <img
+                            src={getAvatarUrl(seed)}
+                            alt={seed}
+                            className={`w-full h-full rounded-lg ${!isUnlocked ? 'grayscale opacity-30' : ''}`}
+                          />
+                        </button>
+                        {!isUnlocked && (
+                          <div className="absolute bottom-0.5 right-0.5 w-4 h-4 rounded-full bg-zinc-400 dark:bg-zinc-600 flex items-center justify-center">
+                            <Lock size={8} className="text-white" />
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
               </section>
 

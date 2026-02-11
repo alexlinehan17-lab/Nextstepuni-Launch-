@@ -15,7 +15,7 @@ const DEFAULT_SETTINGS: UserSettings = {
   language: 'en',
   avatar: '',
   darkMode: false,
-  studyReminders: false,
+
   defaultWorkMinutes: 25,
 };
 

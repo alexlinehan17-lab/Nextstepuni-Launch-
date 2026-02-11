@@ -192,6 +192,7 @@ const App: React.FC = () => {
   const [isLoadingAuth, setIsLoadingAuth] = useState(true);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [passportOpen, setPassportOpen] = useState(false);
+  const [unlockedAvatarSeeds, setUnlockedAvatarSeeds] = useState<string[]>([]);
   const { settings, updateSetting, isLoaded: settingsLoaded } = useSettings(user?.uid, user?.avatar);
   const { streak } = useStreak(user?.uid);
   const { todayMood, setMood } = useMood(user?.uid);
@@ -235,7 +236,11 @@ const App: React.FC = () => {
               isAdmin: false,
             });
             if (progressDoc.exists()) {
-              setUserProgress(progressDoc.data() as UserProgress);
+              const progressData = progressDoc.data();
+              setUserProgress(progressData as UserProgress);
+              if (progressData.cosmeticUnlocks?.avatarSeeds) {
+                setUnlockedAvatarSeeds(progressData.cosmeticUnlocks.avatarSeeds);
+              }
             } else {
               setUserProgress({});
             }
@@ -515,6 +520,7 @@ const App: React.FC = () => {
             onClose={() => setSettingsOpen(false)}
             settings={settings}
             updateSetting={updateSetting}
+            unlockedAvatarSeeds={unlockedAvatarSeeds}
           />
           <StudyPassportModal
             isOpen={passportOpen}

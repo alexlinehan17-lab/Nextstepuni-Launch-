@@ -16,12 +16,16 @@ import {
 } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak } from './subjectData';
+import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak, type StudyBlock, getBlockId, toDateKey } from './subjectData';
 import { computeStreak } from './timetableAlgorithm';
+import { type StudyReflection, type PointsData, type CosmeticUnlocks, type EarnedRest } from '../types';
 import SubjectOnboarding from './SubjectOnboarding';
 import SpacedRepetitionTimetable from './SpacedRepetitionTimetable';
 import CAOPointsSimulator from './CAOPointsSimulator';
 import DeepFocusTimer from './DeepFocusTimer';
+import ReflectionModal from './ReflectionModal';
+import StudyJournalModal from './StudyJournalModal';
+import RewardShopModal from './RewardShopModal';
 import {
     type GameState, type Choice, type Scene, type HistoryItem, type StatKey, type Phase,
     type Mood, type Location,
@@ -1212,6 +1216,13 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const [pendingToolId, setPendingToolId] = useState<string | null>(null);
     const [timetableCompletions, setTimetableCompletions] = useState<TimetableCompletions>({});
     const [timetableStreak, setTimetableStreak] = useState<TimetableStreak>({ currentStreak: 0, lastActiveDate: '', longestStreak: 0 });
+    const [reflections, setReflections] = useState<StudyReflection[]>([]);
+    const [pointsData, setPointsData] = useState<PointsData>({ totalEarned: 0, totalSpent: 0 });
+    const [cosmeticUnlocks, setCosmeticUnlocks] = useState<CosmeticUnlocks>({ avatarSeeds: [], themeColors: [] });
+    const [earnedRest, setEarnedRest] = useState<EarnedRest>({ skippedSessions: [], restDayPasses: [] });
+    const [pendingCompletion, setPendingCompletion] = useState<{ dateKey: string; blockId: string; subjectName: string; sessionType: 'new-learning' | 'practice' | 'revision' } | null>(null);
+    const [showRewardShop, setShowRewardShop] = useState(false);
+    const [showJournal, setShowJournal] = useState(false);
 
     // Load subject profile from Firebase
     useEffect(() => {
@@ -1229,6 +1240,18 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     }
                     if (data.timetableStreak) {
                         setTimetableStreak(data.timetableStreak as TimetableStreak);
+                    }
+                    if (data.reflections) {
+                        setReflections(data.reflections as StudyReflection[]);
+                    }
+                    if (data.pointsData) {
+                        setPointsData(data.pointsData as PointsData);
+                    }
+                    if (data.cosmeticUnlocks) {
+                        setCosmeticUnlocks(data.cosmeticUnlocks as CosmeticUnlocks);
+                    }
+                    if (data.earnedRest) {
+                        setEarnedRest(data.earnedRest as EarnedRest);
                     }
                 }
             } catch (e) {
@@ -1256,9 +1279,16 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         }
     }, [user?.uid, pendingToolId]);
 
-    // Handle timetable session toggle
-    const handleToggleCompletion = useCallback(async (dateKey: string, blockId: string, completed: boolean) => {
-        // Optimistic state update
+    // Compute streak multiplier from current streak
+    const getStreakMultiplier = useCallback((streak: number): number => {
+        if (streak >= 14) return 2.5;
+        if (streak >= 7) return 2.0;
+        if (streak >= 3) return 1.5;
+        return 1.0;
+    }, []);
+
+    // Core toggle logic (used directly for unchecking, or after reflection for completing)
+    const executeToggle = useCallback((dateKey: string, blockId: string, completed: boolean, extraFirestoreData?: Record<string, any>) => {
         setTimetableCompletions(prev => {
             const updated = { ...prev };
             const dayArr = [...(updated[dateKey] ?? [])];
@@ -1268,31 +1298,137 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                 const idx = dayArr.indexOf(blockId);
                 if (idx >= 0) dayArr.splice(idx, 1);
             }
-            // Clean up empty entries
             if (dayArr.length === 0) {
                 delete updated[dateKey];
             } else {
                 updated[dateKey] = dayArr;
             }
 
-            // Recompute streak
             const restDays = subjectProfile?.restDays ?? [];
-            const { currentStreak, lastActiveDate } = computeStreak(updated, restDays);
+            const { currentStreak, lastActiveDate } = computeStreak(updated, restDays, new Date(), earnedRest.restDayPasses);
             const newLongest = Math.max(timetableStreak.longestStreak, currentStreak);
             const newStreak: TimetableStreak = { currentStreak, lastActiveDate, longestStreak: newLongest };
             setTimetableStreak(newStreak);
 
-            // Persist to Firebase
             if (user?.uid) {
                 setDoc(doc(db, 'progress', user.uid), {
                     timetableCompletions: updated,
                     timetableStreak: newStreak,
+                    ...extraFirestoreData,
                 }, { merge: true }).catch(e => console.error('Failed to save completions:', e));
             }
 
             return updated;
         });
-    }, [subjectProfile?.restDays, timetableStreak.longestStreak, user?.uid]);
+    }, [subjectProfile?.restDays, timetableStreak.longestStreak, user?.uid, earnedRest.restDayPasses]);
+
+    // Handle timetable session toggle — gates completions through reflection modal
+    const handleToggleCompletion = useCallback(async (dateKey: string, blockId: string, completed: boolean) => {
+        if (completed) {
+            // Parse blockId format: "SubjectName|sessionType|blockIndex"
+            const parts = blockId.split('|');
+            const subjectName = parts[0];
+            const sessionType = (parts[1] || 'new-learning') as 'new-learning' | 'practice' | 'revision';
+            setPendingCompletion({ dateKey, blockId, subjectName, sessionType });
+        } else {
+            // Unchecking — proceed directly
+            executeToggle(dateKey, blockId, false);
+        }
+    }, [executeToggle]);
+
+    // Handle reflection submission — calculates points and completes the block
+    const handleReflectionSubmit = useCallback((reflectionText: string) => {
+        if (!pendingCompletion) return;
+        const { dateKey, blockId, subjectName, sessionType } = pendingCompletion;
+
+        const basePoints = 10;
+        const multiplier = getStreakMultiplier(timetableStreak.currentStreak);
+        const earned = Math.round(basePoints * multiplier);
+
+        const newReflection: StudyReflection = {
+            dateKey,
+            blockId,
+            subjectName,
+            sessionType,
+            reflection: reflectionText,
+            pointsEarned: earned,
+            timestamp: Date.now(),
+        };
+
+        const updatedReflections = [...reflections, newReflection];
+        const updatedPointsData: PointsData = {
+            totalEarned: pointsData.totalEarned + earned,
+            totalSpent: pointsData.totalSpent,
+        };
+
+        setReflections(updatedReflections);
+        setPointsData(updatedPointsData);
+        setPendingCompletion(null);
+
+        // Check for perfect day bonus after this completion
+        // We need to check after the toggle completes, so we pass extra data
+        executeToggle(dateKey, blockId, true, {
+            reflections: updatedReflections,
+            pointsData: updatedPointsData,
+        });
+    }, [pendingCompletion, timetableStreak.currentStreak, reflections, pointsData, getStreakMultiplier, executeToggle]);
+
+    // Handle spending points in the reward shop
+    const handleSpendPoints = useCallback((type: 'skip-session' | 'rest-day-pass' | 'unlock-avatar' | 'unlock-theme', detail?: string) => {
+        const costs: Record<string, number> = {
+            'skip-session': 20,
+            'rest-day-pass': 60,
+            'unlock-avatar': 50,
+            'unlock-theme': 40,
+        };
+        const cost = costs[type];
+        const balance = pointsData.totalEarned - pointsData.totalSpent;
+        if (balance < cost) return;
+
+        const updatedPointsData: PointsData = {
+            totalEarned: pointsData.totalEarned,
+            totalSpent: pointsData.totalSpent + cost,
+        };
+        setPointsData(updatedPointsData);
+
+        const todayKey = toDateKey(new Date());
+        let updatedEarnedRest = earnedRest;
+        let updatedCosmeticUnlocks = cosmeticUnlocks;
+
+        if (type === 'skip-session' && detail) {
+            updatedEarnedRest = {
+                ...earnedRest,
+                skippedSessions: [...earnedRest.skippedSessions, detail],
+            };
+            setEarnedRest(updatedEarnedRest);
+        } else if (type === 'rest-day-pass') {
+            updatedEarnedRest = {
+                ...earnedRest,
+                restDayPasses: [...earnedRest.restDayPasses, todayKey],
+            };
+            setEarnedRest(updatedEarnedRest);
+        } else if (type === 'unlock-avatar' && detail) {
+            updatedCosmeticUnlocks = {
+                ...cosmeticUnlocks,
+                avatarSeeds: [...cosmeticUnlocks.avatarSeeds, detail],
+            };
+            setCosmeticUnlocks(updatedCosmeticUnlocks);
+        } else if (type === 'unlock-theme' && detail) {
+            updatedCosmeticUnlocks = {
+                ...cosmeticUnlocks,
+                themeColors: [...cosmeticUnlocks.themeColors, detail],
+            };
+            setCosmeticUnlocks(updatedCosmeticUnlocks);
+        }
+
+        if (user?.uid) {
+            setDoc(doc(db, 'progress', user.uid), {
+                pointsData: updatedPointsData,
+                earnedRest: updatedEarnedRest,
+                cosmeticUnlocks: updatedCosmeticUnlocks,
+            }, { merge: true }).catch(e => console.error('Failed to save purchase:', e));
+        }
+    }, [pointsData, earnedRest, cosmeticUnlocks, user?.uid]);
 
     // Tool click gate: if tool needs subjects and no profile exists, show onboarding
     const handleToolClick = useCallback((toolId: string, needsProfile: boolean) => {
@@ -1309,7 +1445,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         { id: 'journey', title: 'Academic Journey Simulator', description: 'Navigate the choices of your final school year.', icon: GitBranch, needsProfile: false, component: <AcademicJourneyGame onSelectModule={onSelectModule} user={user} savedJourneyResult={savedJourneyResult} onJourneyComplete={onJourneyComplete} /> },
         { id: 'cao-simulator', title: 'CAO Points Simulator', description: 'Explore how grade changes affect your CAO points.', icon: Calculator, needsProfile: true, component: subjectProfile ? <CAOPointsSimulator profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} /> : null },
         { id: 'focus', title: 'Deep Focus Timer', description: 'Pomodoro timer tied to your study timetable.', icon: Clock, needsProfile: false, component: <DeepFocusTimer profile={subjectProfile ?? undefined} completions={timetableCompletions} onToggleCompletion={handleToggleCompletion} /> },
-        { id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true, component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); } } }} /> : null },
+        { id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true, component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); } } }} /> : null },
     ];
 
     const currentTool = tools.find(t => t.id === activeTool);
@@ -1399,6 +1535,34 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
           />
         )}
       </AnimatePresence>
+
+      {/* Reflection Modal */}
+      <ReflectionModal
+        isOpen={!!pendingCompletion}
+        subjectName={pendingCompletion?.subjectName ?? ''}
+        sessionType={pendingCompletion?.sessionType ?? 'new-learning'}
+        basePoints={10}
+        streakMultiplier={getStreakMultiplier(timetableStreak.currentStreak)}
+        onSubmit={handleReflectionSubmit}
+        onCancel={() => setPendingCompletion(null)}
+      />
+
+      {/* Study Journal Modal */}
+      <StudyJournalModal
+        isOpen={showJournal}
+        onClose={() => setShowJournal(false)}
+        reflections={reflections}
+      />
+
+      {/* Reward Shop Modal */}
+      <RewardShopModal
+        isOpen={showRewardShop}
+        onClose={() => setShowRewardShop(false)}
+        pointsBalance={pointsData.totalEarned - pointsData.totalSpent}
+        cosmeticUnlocks={cosmeticUnlocks}
+        earnedRest={earnedRest}
+        onSpend={handleSpendPoints}
+      />
     </div>
   );
 };
