@@ -383,87 +383,51 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         </MotionButton>
       </div>
 
-      {/* Stats dashboard */}
-      <div className="bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 rounded-xl p-4">
-        <div className="flex items-center gap-4">
-          {/* Stats grid */}
-          <div className="flex-1 grid grid-cols-3 gap-x-6 gap-y-3">
-            {/* Row 1 */}
-            <div className="flex items-center gap-2">
-              <TrendingUp size={14} className="text-purple-500 flex-shrink-0" />
-              <div>
-                <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{totalSessions}</p>
-                <p className="text-[10px] text-zinc-400 dark:text-zinc-500">sessions</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-2">
-              <Clock size={14} className="text-blue-500 flex-shrink-0" />
-              <div>
-                <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{totalHours}h {remainingMins}m</p>
-                <p className="text-[10px] text-zinc-400 dark:text-zinc-500">planned</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-2">
-              <Calendar size={14} className="text-amber-500 flex-shrink-0" />
-              <div>
-                <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{daysUntilExam}</p>
-                <p className="text-[10px] text-zinc-400 dark:text-zinc-500">days left</p>
-              </div>
-            </div>
-            {/* Row 2 */}
-            <div className="flex items-center gap-2">
-              <Flame size={14} className="text-orange-500 flex-shrink-0" />
-              <div>
-                <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{streak.currentStreak} day{streak.currentStreak !== 1 ? 's' : ''}</p>
-                <p className="text-[10px] text-zinc-400 dark:text-zinc-500">streak</p>
-              </div>
-            </div>
-            <button
-              onClick={() => setStudyHoursRange(r => r === 'week' ? 'month' : r === 'month' ? 'all' : 'week')}
-              className="flex items-center gap-2 hover:bg-zinc-100 dark:hover:bg-white/5 -m-1 p-1 rounded-lg transition-colors cursor-pointer text-left"
-              title="Click to cycle: this week / this month / all time"
-            >
-              <BarChart3 size={14} className="text-emerald-500 flex-shrink-0" />
-              <div>
-                <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{studiedHours}h {studiedRemainingMins}m</p>
-                <p className="text-[10px] text-zinc-400 dark:text-zinc-500">studied {studyHoursRangeLabel}</p>
-              </div>
-            </button>
-            <div className="flex items-center gap-2">
-              <Star size={14} className="text-yellow-500 flex-shrink-0" />
-              <div>
-                <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{points}</p>
-                <p className="text-[10px] text-zinc-400 dark:text-zinc-500">points</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Action buttons */}
-          {(onOpenShop || onOpenJournal) && (
-            <div className="flex flex-col gap-2 border-l border-zinc-200 dark:border-white/10 pl-4">
-              {onOpenShop && (
-                <button
-                  onClick={onOpenShop}
-                  className="flex items-center gap-2 px-3 py-2 rounded-lg bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700/30 hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-colors"
-                  title="Reward Shop"
-                >
-                  <ShoppingBag size={14} className="text-purple-600 dark:text-purple-400" />
-                  <span className="text-xs font-bold text-purple-600 dark:text-purple-400">Shop</span>
-                </button>
-              )}
-              {onOpenJournal && (
-                <button
-                  onClick={onOpenJournal}
-                  className="flex items-center gap-2 px-3 py-2 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-200 dark:border-indigo-700/30 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors"
-                  title="Study Journal"
-                >
-                  <BookMarked size={14} className="text-indigo-600 dark:text-indigo-400" />
-                  <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400">Journal</span>
-                </button>
-              )}
-            </div>
-          )}
+      {/* Stat pills */}
+      <div className="flex flex-wrap items-center gap-2">
+        <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700/30">
+          <Clock size={12} className="text-blue-600 dark:text-blue-400" />
+          <span className="text-xs font-bold text-blue-600 dark:text-blue-400">{totalHours}h {remainingMins}m</span>
         </div>
+        {streak.currentStreak > 0 && (
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-700/30">
+            <Flame size={12} className="text-orange-600 dark:text-orange-400" />
+            <span className="text-xs font-bold text-orange-600 dark:text-orange-400">{streak.currentStreak} day streak</span>
+          </div>
+        )}
+        <button
+          onClick={() => setStudyHoursRange(r => r === 'week' ? 'month' : r === 'month' ? 'all' : 'week')}
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-700/30 hover:bg-emerald-100 dark:hover:bg-emerald-900/30 transition-colors cursor-pointer"
+          title="Click to cycle: this week / this month / all time"
+        >
+          <BarChart3 size={12} className="text-emerald-600 dark:text-emerald-400" />
+          <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">{studiedHours}h {studiedRemainingMins}m</span>
+          <span className="text-[9px] text-emerald-500 dark:text-emerald-500">{studyHoursRangeLabel}</span>
+        </button>
+        <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-700/30">
+          <Star size={12} className="text-yellow-600 dark:text-yellow-400" />
+          <span className="text-xs font-bold text-yellow-600 dark:text-yellow-400">{points} pts</span>
+        </div>
+        {onOpenShop && (
+          <button
+            onClick={onOpenShop}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700/30 hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-colors"
+            title="Reward Shop"
+          >
+            <ShoppingBag size={12} className="text-purple-600 dark:text-purple-400" />
+            <span className="text-xs font-bold text-purple-600 dark:text-purple-400">Shop</span>
+          </button>
+        )}
+        {onOpenJournal && (
+          <button
+            onClick={onOpenJournal}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-200 dark:border-indigo-700/30 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors"
+            title="Study Journal"
+          >
+            <BookMarked size={12} className="text-indigo-600 dark:text-indigo-400" />
+            <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400">Journal</span>
+          </button>
+        )}
       </div>
 
       {/* Rest day toggles */}
