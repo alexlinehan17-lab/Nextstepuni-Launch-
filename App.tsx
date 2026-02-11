@@ -6,25 +6,31 @@
 
 import React, { useState, useEffect, Suspense } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, LogOut, ArrowLeft } from 'lucide-react';
+import { Sun, Moon, LogOut, ArrowLeft, Settings } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import './i18n';
 import { Library } from './components/Library';
 import { KnowledgeTree, CategoryType } from './components/KnowledgeTree';
 import { LoadingSpinner } from './components/LoadingSpinner';
 import { Auth, SessionUser, getAvatarUrl } from './components/Auth';
 import { AdminDashboard } from './components/AdminDashboard';
+import SettingsModal from './components/SettingsModal';
 import { auth, db } from './firebase';
 import { onAuthStateChanged, signOut, User as FirebaseUser } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { ModuleProgress, UserProgress } from './types';
+import { ModuleProgress, UserProgress, UserSettings } from './types';
 import { moduleComponents, InnovationZone } from './moduleRegistry';
 import { ALL_COURSES, categoryTitles } from './courseData';
+import { useSettings } from './hooks/useSettings';
 
-const UserProfile = ({ user, onLogout, darkMode, setDarkMode }: { user: SessionUser, onLogout: () => void, darkMode: boolean, setDarkMode: (v: boolean) => void }) => {
+const UserProfile = ({ user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride }: { user: SessionUser, onLogout: () => void, settings: UserSettings, updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void, onOpenSettings: () => void, avatarOverride: string }) => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const displayAvatar = avatarOverride || user.avatar;
   return (
     <div className="relative">
       <button onClick={() => setIsOpen(!isOpen)} className="flex items-center gap-2">
-        <img src={getAvatarUrl(user.avatar)} alt="User Avatar" className="w-10 h-10 rounded-full bg-zinc-200" />
+        <img src={getAvatarUrl(displayAvatar)} alt="User Avatar" className="w-10 h-10 rounded-full bg-zinc-200" />
       </button>
       <AnimatePresence>
         {isOpen && (
@@ -35,17 +41,17 @@ const UserProfile = ({ user, onLogout, darkMode, setDarkMode }: { user: SessionU
             className="absolute top-full right-0 mt-2 w-64 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-lg p-4"
           >
             <div className="flex items-center gap-3 border-b border-zinc-200/50 dark:border-white/10 pb-3 mb-3">
-              <img src={getAvatarUrl(user.avatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
+              <img src={getAvatarUrl(displayAvatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
               <div>
                 <p className="font-bold text-zinc-800 dark:text-white">{user.name}</p>
-                <p className="text-xs text-zinc-500">{user.isAdmin ? 'Admin' : 'Student'}</p>
+                <p className="text-xs text-zinc-500">{user.isAdmin ? t('profile.admin') : t('profile.student')}</p>
               </div>
             </div>
 
-            <button onClick={() => setDarkMode(!darkMode)} className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5">
-                <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Theme</span>
+            <button onClick={() => updateSetting('darkMode', !settings.darkMode)} className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5">
+                <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{t('profile.theme')}</span>
                  <AnimatePresence mode="wait">
-                    {darkMode ? (
+                    {settings.darkMode ? (
                       <motion.div key="sun" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} transition={{ duration: 0.2 }}>
                         <Sun size={16} className="text-amber-400" />
                       </motion.div>
@@ -56,9 +62,13 @@ const UserProfile = ({ user, onLogout, darkMode, setDarkMode }: { user: SessionU
                     )}
                 </AnimatePresence>
             </button>
+            <button onClick={() => { setIsOpen(false); onOpenSettings(); }} className="w-full flex items-center gap-2 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5 mt-1">
+              <Settings size={16} className="text-zinc-500" />
+              <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{t('profile.settings')}</span>
+            </button>
             <button onClick={onLogout} className="w-full flex items-center gap-2 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5 mt-1">
               <LogOut size={16} className="text-rose-500" />
-              <span className="text-sm font-medium text-rose-500">Log Out</span>
+              <span className="text-sm font-medium text-rose-500">{t('profile.logout')}</span>
             </button>
           </motion.div>
         )}
@@ -68,15 +78,17 @@ const UserProfile = ({ user, onLogout, darkMode, setDarkMode }: { user: SessionU
 }
 
 const App: React.FC = () => {
+  const { t } = useTranslation();
   const [viewState, setViewState] = useState<'tree' | 'category' | 'module' | 'innovation-zone'>('tree');
   const [currentCategory, setCurrentCategory] = useState<CategoryType | null>(null);
   const [currentModuleId, setCurrentModuleId] = useState<string | null>(null);
   const [cameFromJourney, setCameFromJourney] = useState(false);
   const [journeyResult, setJourneyResult] = useState<{ endingId: string; finalStats?: any } | null>(null);
-  const [darkMode, setDarkMode] = useState(false);
   const [user, setUser] = useState<SessionUser | null>(null);
   const [userProgress, setUserProgress] = useState<UserProgress>({});
   const [isLoadingAuth, setIsLoadingAuth] = useState(true);
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const { settings, updateSetting, isLoaded: settingsLoaded } = useSettings(user?.uid, user?.avatar);
 
   // Set up the real-time auth listener
   useEffect(() => {
@@ -136,15 +148,6 @@ const App: React.FC = () => {
 
     return () => unsubscribe(); // Cleanup subscription on unmount
   }, []);
-
-  // Sync dark mode state with document class
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [darkMode]);
 
   const handleLoginSuccess = (loggedInUser: SessionUser) => {
     setUser(loggedInUser);
@@ -219,7 +222,7 @@ const App: React.FC = () => {
               {/* Right: Log in */}
               <Auth
                 onLoginSuccess={handleLoginSuccess}
-                buttonLabel="Log in"
+                buttonLabel={t('nav.login')}
                 buttonClassName="px-5 py-2.5 text-sm font-medium bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors"
                 showChevron
                 initialStep="login"
@@ -237,23 +240,16 @@ const App: React.FC = () => {
           {/* ── Hero ── */}
           <div className="flex-1 flex flex-col items-center justify-center text-center px-6 pt-16 relative z-10">
             <h1 className="font-serif text-5xl md:text-7xl text-zinc-900 dark:text-white tracking-tight leading-[1.08] font-semibold max-w-3xl">
-              {[
-                { text: 'Science-backed', delay: 0 },
-                { text: 'strategies', delay: 0.05 },
-                { text: 'to', delay: 0.1 },
-                { text: 'give', delay: 0.15 },
-                { text: 'you', delay: 0.2 },
-                { text: 'an', delay: 0.25 },
-              ].map((w, i) => (
+              {t('hero.title1').split(' ').map((word, i, arr) => (
                 <span key={i} className="inline-block overflow-hidden align-bottom pb-[0.15em] mb-[-0.15em]">
                   <motion.span
                     className="inline-block"
                     initial={{ y: '100%' }}
                     animate={{ y: 0 }}
-                    transition={{ duration: 0.7, delay: w.delay, ease: [0.16, 1, 0.3, 1] }}
-                  >{w.text}</motion.span>
+                    transition={{ duration: 0.7, delay: i * 0.05, ease: [0.16, 1, 0.3, 1] }}
+                  >{word}{i < arr.length - 1 ? '\u00A0' : ''}</motion.span>
                 </span>
-              )).reduce<React.ReactNode[]>((acc, el, i) => i === 0 ? [el] : [...acc, ' ', el], [])}
+              ))}
               {' '}
               <span className="inline-block overflow-hidden align-bottom pb-[0.15em] mb-[-0.15em]">
                 <motion.span
@@ -262,23 +258,19 @@ const App: React.FC = () => {
                   animate={{ y: 0 }}
                   transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
                   style={{ backgroundImage: 'linear-gradient(to top, rgba(250, 204, 21, 0.45) 35%, transparent 35%)', boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' } as React.CSSProperties}
-                >unfair advantage</motion.span>
+                >{t('hero.highlight')}</motion.span>
               </span>
               {' '}
-              {[
-                { text: 'in', delay: 0.4 },
-                { text: 'your', delay: 0.45 },
-                { text: 'exams.', delay: 0.5 },
-              ].map((w, i) => (
+              {t('hero.title2').split(' ').map((word, i, arr) => (
                 <span key={i} className="inline-block overflow-hidden align-bottom pb-[0.15em] mb-[-0.15em]">
                   <motion.span
                     className="inline-block"
                     initial={{ y: '100%' }}
                     animate={{ y: 0 }}
-                    transition={{ duration: 0.7, delay: w.delay, ease: [0.16, 1, 0.3, 1] }}
-                  >{w.text}</motion.span>
+                    transition={{ duration: 0.7, delay: 0.4 + i * 0.05, ease: [0.16, 1, 0.3, 1] }}
+                  >{word}{i < arr.length - 1 ? '\u00A0' : ''}</motion.span>
                 </span>
-              )).reduce<React.ReactNode[]>((acc, el, i) => i === 0 ? [el] : [...acc, ' ', el], [])}
+              ))}
             </h1>
 
             <motion.p
@@ -287,7 +279,7 @@ const App: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
               className="mt-8 text-lg text-zinc-500 dark:text-zinc-400 max-w-xl leading-relaxed"
             >
-              Master proven learning techniques used by top students. Build better study habits, retain more, and perform when it counts.
+              {t('hero.subtitle')}
             </motion.p>
 
             <motion.div
@@ -298,7 +290,7 @@ const App: React.FC = () => {
             >
               <Auth
                 onLoginSuccess={handleLoginSuccess}
-                buttonLabel="Start Learning"
+                buttonLabel={t('nav.startLearning')}
                 buttonClassName="px-8 py-3.5 text-base font-medium bg-[#CC785C] text-white rounded-full hover:bg-[#B56A50] transition-colors shadow-lg shadow-[#CC785C]/20"
                 initialStep="create"
               />
@@ -313,7 +305,7 @@ const App: React.FC = () => {
             className="pb-10 pt-6 flex items-center justify-center gap-3"
           >
             <div className="w-8 h-px bg-zinc-300 dark:bg-zinc-700" />
-            <p className="text-xs text-zinc-400 dark:text-zinc-500 tracking-wide">A Nextstepuni / PwC Collaboration</p>
+            <p className="text-xs text-zinc-400 dark:text-zinc-500 tracking-wide">{t('hero.collab')}</p>
             <div className="w-8 h-px bg-zinc-300 dark:bg-zinc-700" />
           </motion.div>
 
@@ -398,11 +390,20 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
       {user && (
         <div className="fixed top-6 right-6 z-[100]">
-          <UserProfile user={user} onLogout={handleLogout} darkMode={darkMode} setDarkMode={setDarkMode} />
+          <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} />
         </div>
       )}
 
       {renderContent()}
+
+      {user && (
+        <SettingsModal
+          isOpen={settingsOpen}
+          onClose={() => setSettingsOpen(false)}
+          settings={settings}
+          updateSetting={updateSetting}
+        />
+      )}
     </div>
   );
 };

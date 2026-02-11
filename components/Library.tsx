@@ -7,11 +7,12 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  ArrowLeft, FlaskConical, CheckCircle2, 
+import {
+  ArrowLeft, FlaskConical, CheckCircle2,
   ChevronRight, Lock, Sparkles, BookOpen,
   Zap, Brain, Target, Shield, Compass, Star, Hash
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { CategoryType } from './KnowledgeTree';
 
 // FIX: Cast motion components to any to bypass broken type definitions
@@ -60,6 +61,7 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
   onClick,
   categoryTitle
 }) => {
+  const { t } = useTranslation();
   const icons = [BookOpen, Zap, Brain, Target, Shield, Compass, Star];
   const Icon = icons[index % icons.length];
 
@@ -105,7 +107,7 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
             
             <div className="flex flex-col items-end">
               <span className="font-mono text-[9px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Module {index + 1}</span>
-              {isCompleted && <span className="text-[8px] font-bold text-emerald-500 uppercase tracking-widest mt-1">Complete</span>}
+              {isCompleted && <span className="text-[8px] font-bold text-emerald-500 uppercase tracking-widest mt-1">{t('library.complete')}</span>}
             </div>
           </div>
 
@@ -140,7 +142,7 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
           <div className="absolute inset-0 bg-zinc-50/80 dark:bg-zinc-950/80 flex items-center justify-center z-20">
             <div className="bg-white dark:bg-zinc-900 px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-800 flex items-center gap-2">
                <Lock size={12} className="text-zinc-400" />
-               <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400">Locked</span>
+               <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400">{t('library.locked')}</span>
             </div>
           </div>
         )}
@@ -150,6 +152,7 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
 };
 
 export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse, onBack, userProgress }) => {
+  const { t } = useTranslation();
   const calculateCategoryProgress = () => {
     if (courses.length === 0) return 0;
     const totalCourses = courses.length;
@@ -175,7 +178,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
             </button>
             <div className="h-10 w-px bg-zinc-200 dark:bg-zinc-800" />
             <div>
-              <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">Category</p>
+              <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">{t('library.category')}</p>
               <h1 className="font-serif font-semibold text-2xl tracking-tight text-zinc-900 dark:text-white">{title}</h1>
             </div>
           </div>
@@ -197,13 +200,13 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
             className="md:col-span-6 flex flex-col md:flex-row items-center justify-between p-8 rounded-xl bg-zinc-900 dark:bg-zinc-900 border border-zinc-800 mb-2"
           >
             <div>
-              <h2 className="text-white font-serif text-3xl md:text-4xl font-semibold tracking-tight">Overview</h2>
-              <p className="text-zinc-400 text-[11px] uppercase tracking-[0.15em] mt-2">Choose a module to get started</p>
+              <h2 className="text-white font-serif text-3xl md:text-4xl font-semibold tracking-tight">{t('library.overview')}</h2>
+              <p className="text-zinc-400 text-[11px] uppercase tracking-[0.15em] mt-2">{t('library.chooseModule')}</p>
             </div>
             <div className="mt-6 md:mt-0 flex items-center gap-6">
                <div className="flex flex-col items-end">
                   <span className="text-white text-xl font-bold">{overallProgress}%</span>
-                  <span className="text-zinc-500 text-[10px] font-semibold uppercase tracking-wider">Progress</span>
+                  <span className="text-zinc-500 text-[10px] font-semibold uppercase tracking-wider">{t('tree.progress')}</span>
                </div>
                <div className="w-10 h-10 rounded-lg bg-[#CC785C]/15 flex items-center justify-center text-[#CC785C]">
                   <Sparkles size={20} />
@@ -229,7 +232,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
 
           {/* Sequence Terminated Bento Tile */}
           <div className="md:col-span-6 flex flex-col items-center justify-center py-16 mt-8 border-t border-zinc-200 dark:border-zinc-800">
-             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-600">End of Category</p>
+             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-600">{t('library.endOfCategory')}</p>
           </div>
         </div>
       </main>

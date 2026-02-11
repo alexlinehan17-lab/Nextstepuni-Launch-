@@ -55,3 +55,11 @@ export interface ModuleTheme {
   // ActivityRing
   activityRingColor: string;
 }
+
+export interface UserSettings {
+  language: string;
+  avatar: string;
+  darkMode: boolean;
+  studyReminders: boolean;
+  defaultWorkMinutes: number;
+}

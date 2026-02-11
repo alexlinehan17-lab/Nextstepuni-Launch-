@@ -1,0 +1,166 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
+import { motion, AnimatePresence } from 'framer-motion';
+import { X, Check } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import { AVATAR_SEEDS, getAvatarUrl } from './Auth';
+import { UserSettings } from '../types';
+
+const MotionDiv = motion.div as any;
+
+interface SettingsModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  settings: UserSettings;
+  updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void;
+}
+
+const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, settings, updateSetting }) => {
+  const { t } = useTranslation();
+  const [showSaved, setShowSaved] = useState(false);
+
+  const flash = () => {
+    setShowSaved(true);
+    setTimeout(() => setShowSaved(false), 1200);
+  };
+
+  return createPortal(
+    <AnimatePresence>
+      {isOpen && (
+        <MotionDiv
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 bg-black/60 flex items-center justify-center z-[200] p-4"
+          onClick={onClose}
+        >
+          <MotionDiv
+            initial={{ scale: 0.96, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.96, opacity: 0 }}
+            transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="relative bg-white dark:bg-zinc-900 border border-zinc-200/50 dark:border-white/[0.08] rounded-2xl w-full max-w-md shadow-[0_24px_64px_rgba(0,0,0,0.12)] dark:shadow-[0_24px_64px_rgba(0,0,0,0.5)] overflow-hidden max-h-[90vh] overflow-y-auto"
+            onClick={(e: React.MouseEvent) => e.stopPropagation()}
+          >
+            {/* Header */}
+            <div className="flex items-center justify-between p-6 pb-0">
+              <h2 className="font-sans text-xl font-semibold text-zinc-900 dark:text-white tracking-tight">
+                {t('settings.title')}
+              </h2>
+              <div className="flex items-center gap-3">
+                <AnimatePresence>
+                  {showSaved && (
+                    <MotionDiv
+                      initial={{ opacity: 0, x: 10 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: 10 }}
+                      className="flex items-center gap-1 text-emerald-500 text-xs font-medium"
+                    >
+                      <Check size={14} />
+                      {t('settings.saved')}
+                    </MotionDiv>
+                  )}
+                </AnimatePresence>
+                <button
+                  onClick={onClose}
+                  className="text-zinc-400 dark:text-white/25 hover:text-zinc-600 dark:hover:text-white/50 transition-colors"
+                >
+                  <X size={18} />
+                </button>
+              </div>
+            </div>
+
+            <div className="p-6 space-y-8">
+              {/* Avatar */}
+              <section>
+                <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
+                  {t('settings.avatar')}
+                </h3>
+                <div className="grid grid-cols-4 gap-2.5">
+                  {AVATAR_SEEDS.map(seed => (
+                    <button
+                      key={seed}
+                      onClick={() => {
+                        updateSetting('avatar', seed);
+                        flash();
+                      }}
+                      className={`rounded-xl aspect-square p-1.5 transition-all ${
+                        settings.avatar === seed
+                          ? 'ring-2 ring-[#CC785C] bg-[#CC785C]/10'
+                          : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'
+                      }`}
+                    >
+                      <img src={getAvatarUrl(seed)} alt={seed} className="w-full h-full rounded-lg" />
+                    </button>
+                  ))}
+                </div>
+              </section>
+
+              {/* Study Reminders */}
+              <section>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h3 className="text-sm font-medium text-zinc-900 dark:text-white">
+                      {t('settings.reminders')}
+                    </h3>
+                    <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+                      {t('settings.remindersDesc')}
+                    </p>
+                  </div>
+                  <button
+                    onClick={() => {
+                      updateSetting('studyReminders', !settings.studyReminders);
+                      flash();
+                    }}
+                    className={`relative w-11 h-6 rounded-full transition-colors ${
+                      settings.studyReminders ? 'bg-[#CC785C]' : 'bg-zinc-200 dark:bg-zinc-700'
+                    }`}
+                  >
+                    <div
+                      className={`absolute top-1 w-4 h-4 rounded-full bg-white shadow transition-transform ${
+                        settings.studyReminders ? 'translate-x-6' : 'translate-x-1'
+                      }`}
+                    />
+                  </button>
+                </div>
+              </section>
+
+              {/* Default Timer Duration */}
+              <section>
+                <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
+                  {t('settings.timerDuration')}
+                </h3>
+                <div className="flex gap-2">
+                  {[25, 50].map(mins => (
+                    <button
+                      key={mins}
+                      onClick={() => {
+                        updateSetting('defaultWorkMinutes', mins);
+                        flash();
+                      }}
+                      className={`px-5 py-2.5 rounded-xl text-sm font-medium transition-all ${
+                        settings.defaultWorkMinutes === mins
+                          ? 'bg-[#CC785C]/10 text-[#CC785C] ring-2 ring-[#CC785C]'
+                          : 'bg-zinc-50 dark:bg-white/[0.04] text-zinc-700 dark:text-zinc-300 ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'
+                      }`}
+                    >
+                      {t('settings.timerMinutes', { count: mins })}
+                    </button>
+                  ))}
+                </div>
+              </section>
+            </div>
+          </MotionDiv>
+        </MotionDiv>
+      )}
+    </AnimatePresence>,
+    document.body
+  );
+};
+
+export default SettingsModal;

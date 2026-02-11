@@ -9,6 +9,7 @@ import {
   Sprout, Zap, Rocket, Target, FlaskConical,
   Layout, ArrowRight, Sparkles, Beaker
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { CourseData, BentoModuleTile } from './Library';
 
 // FIX: Cast motion components to any to bypass broken type definitions
@@ -110,6 +111,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
   className = "",
   delay = 0
 }) => {
+  const { t } = useTranslation();
   return (
     <MotionDiv
       initial={{ opacity: 0, y: 16 }}
@@ -134,8 +136,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
           </div>
 
           <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-zinc-400 dark:text-zinc-500 mb-2">
-            {subtitle}
-          </p>
+            {subtitle}</p>
           <h3 className="font-serif text-2xl md:text-3xl text-zinc-900 dark:text-white leading-tight font-semibold tracking-tight">
             {title}
           </h3>
@@ -143,7 +144,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
 
         <div className="mt-8 flex items-center justify-between gap-6 pt-6 border-t border-zinc-100 dark:border-zinc-800">
             <div className="flex flex-col">
-              <span className="text-[10px] font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Progress</span>
+              <span className="text-[10px] font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">{t('tree.progress')}</span>
             </div>
             <ActivityRing progress={progress} color={accentHex} />
         </div>
@@ -153,6 +154,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
 };
 
 export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, allCourses, onSelectModule, categoryTitles, userProgress }) => {
+  const { t } = useTranslation();
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   
   const getCategoryProgress = (category: CategoryType) => {
@@ -238,10 +240,10 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
         <header className="text-center mb-20">
           <div className="w-12 h-1 bg-[#CC785C] rounded-full mx-auto mb-6" />
           <h1 className="font-serif text-5xl md:text-7xl text-zinc-900 dark:text-white tracking-tight leading-none font-semibold">
-            Learning Lab
+            {t('tree.learningLab')}
           </h1>
           <p className="max-w-xl mx-auto mt-5 text-zinc-500 dark:text-zinc-400 leading-relaxed">
-            A science-backed curriculum designed to give you an unfair advantage in your final school exams. Select a pillar to begin.
+            {t('tree.subtitle')}
           </p>
         </header>
 
@@ -272,8 +274,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
         
         {/* Module Search */}
         <div className="mt-24">
-            <h2 className="text-center font-serif text-3xl font-semibold mb-2 text-zinc-800 dark:text-white">Find Modules by Topic</h2>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8 max-w-md mx-auto">Filter modules by up to two tags to find connections and build a deeper web of knowledge.</p>
+            <h2 className="text-center font-serif text-3xl font-semibold mb-2 text-zinc-800 dark:text-white">{t('tree.findModules')}</h2>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8 max-w-md mx-auto">{t('tree.findModulesDesc')}</p>
             <div className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto mb-12">
                 {allTags.map(tag => (
                     <button 
