@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   ChevronLeft, ChevronRight, BookOpen, RotateCcw, Target,
   Clock, Calendar, TrendingUp, Settings, HelpCircle, X, ArrowRight, AlertTriangle, CalendarOff,
-  CheckCircle, Flame,
+  CheckCircle, Flame, BarChart3,
 } from 'lucide-react';
 import {
   type StudentSubjectProfile, type StudyBlock, DAYS_OF_WEEK, LC_SUBJECTS, getPointsForGrade, type Grade,
@@ -189,6 +189,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   const [selectedDay, setSelectedDay] = useState(0); // For mobile view
   const [showExplainer, setShowExplainer] = useState(false);
   const [restDays, setRestDays] = useState<Set<string>>(() => new Set(profile.restDays || []));
+  const [studyHoursRange, setStudyHoursRange] = useState<'week' | 'month' | 'all'>('week');
 
   const toggleRestDay = (day: string) => {
     setRestDays(prev => {
@@ -205,6 +206,40 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   const priorities = useMemo(() => computeSubjectPriorities(profile.subjects), [profile.subjects]);
 
   const restDaysArray = useMemo(() => Array.from(restDays), [restDays]);
+
+  // Compute total studied minutes from completions based on selected range
+  const studiedMinutes = useMemo(() => {
+    const now = new Date();
+    const allDateKeys = Object.keys(completions);
+
+    let filteredKeys: string[];
+    if (studyHoursRange === 'all') {
+      filteredKeys = allDateKeys;
+    } else if (studyHoursRange === 'month') {
+      const y = now.getFullYear();
+      const m = String(now.getMonth() + 1).padStart(2, '0');
+      const monthPrefix = `${y}-${m}`;
+      filteredKeys = allDateKeys.filter(k => k.startsWith(monthPrefix));
+    } else {
+      // 'week' — current Mon–Sun
+      const weekStartDate = getWeekStartDate(0);
+      const weekEndDate = new Date(weekStartDate);
+      weekEndDate.setDate(weekStartDate.getDate() + 6);
+      const startKey = toDateKey(weekStartDate);
+      const endKey = toDateKey(weekEndDate);
+      filteredKeys = allDateKeys.filter(k => k >= startKey && k <= endKey);
+    }
+
+    let totalBlocks = 0;
+    for (const key of filteredKeys) {
+      totalBlocks += completions[key].length;
+    }
+    return totalBlocks * 45;
+  }, [completions, studyHoursRange]);
+
+  const studiedHours = Math.floor(studiedMinutes / 60);
+  const studiedRemainingMins = studiedMinutes % 60;
+  const studyHoursRangeLabel = studyHoursRange === 'week' ? 'this week' : studyHoursRange === 'month' ? 'this month' : 'all time';
 
   const allocations = useMemo(
     () => allocateSessions(priorities, Math.max(0, weeksUntilExam - weekOffset)),
@@ -332,6 +367,15 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
               <span className="text-xs font-bold text-orange-600 dark:text-orange-400">{streak.currentStreak} day streak</span>
             </div>
           )}
+          <button
+            onClick={() => setStudyHoursRange(r => r === 'week' ? 'month' : r === 'month' ? 'all' : 'week')}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-700/30 hover:bg-emerald-100 dark:hover:bg-emerald-900/30 transition-colors cursor-pointer"
+            title="Click to cycle: this week / this month / all time"
+          >
+            <BarChart3 size={12} className="text-emerald-600 dark:text-emerald-400" />
+            <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">{studiedHours}h {studiedRemainingMins}m</span>
+            <span className="text-[9px] text-emerald-500 dark:text-emerald-500">{studyHoursRangeLabel}</span>
+          </button>
         </div>
 
         <MotionButton
