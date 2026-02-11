@@ -82,12 +82,13 @@ export function useSettings(uid?: string, userAvatar?: string) {
     }
   }, [settings.darkMode]);
 
-  // Sync language with i18next
-  useEffect(() => {
-    if (i18n.language !== settings.language) {
-      i18n.changeLanguage(settings.language);
-    }
-  }, [settings.language]);
+  // Language picker is disabled for now — always force English
+  // When re-enabling, uncomment the sync below:
+  // useEffect(() => {
+  //   if (i18n.language !== settings.language) {
+  //     i18n.changeLanguage(settings.language);
+  //   }
+  // }, [settings.language]);
 
   const updateSetting = useCallback(<K extends keyof UserSettings>(key: K, value: UserSettings[K]) => {
     setSettings(prev => {

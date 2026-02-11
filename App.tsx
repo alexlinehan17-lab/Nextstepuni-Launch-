@@ -6,7 +6,7 @@
 
 import React, { useState, useEffect, Suspense } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, LogOut, ArrowLeft, Settings } from 'lucide-react';
+import { Sun, Moon, LogOut, ArrowLeft, Settings, Flame, ChevronRight, Trophy, Waves, Scale, Zap, CloudRain, Award } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import './i18n';
 import { Library } from './components/Library';
@@ -15,6 +15,7 @@ import { LoadingSpinner } from './components/LoadingSpinner';
 import { Auth, SessionUser, getAvatarUrl } from './components/Auth';
 import { AdminDashboard } from './components/AdminDashboard';
 import SettingsModal from './components/SettingsModal';
+import StudyPassportModal from './components/StudyPassportModal';
 import { auth, db } from './firebase';
 import { onAuthStateChanged, signOut, User as FirebaseUser } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
@@ -22,8 +23,35 @@ import { ModuleProgress, UserProgress, UserSettings } from './types';
 import { moduleComponents, InnovationZone } from './moduleRegistry';
 import { ALL_COURSES, categoryTitles } from './courseData';
 import { useSettings } from './hooks/useSettings';
+import { useStreak, StreakData } from './hooks/useStreak';
+import { useMood } from './hooks/useMood';
+import { useTodaysFocus, FocusRecommendation } from './hooks/useTodaysFocus';
 
-const UserProfile = ({ user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride }: { user: SessionUser, onLogout: () => void, settings: UserSettings, updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void, onOpenSettings: () => void, avatarOverride: string }) => {
+const MOOD_OPTIONS = [
+  { key: 'calm', icon: Waves, label: 'Calm' },
+  { key: 'balanced', icon: Scale, label: 'Balanced' },
+  { key: 'energized', icon: Zap, label: 'Energized' },
+  { key: 'stressed', icon: CloudRain, label: 'Stressed' },
+] as const;
+
+interface UserProfileProps {
+  user: SessionUser;
+  onLogout: () => void;
+  settings: UserSettings;
+  updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void;
+  onOpenSettings: () => void;
+  avatarOverride: string;
+  streak: StreakData;
+  todayMood: string | null;
+  onSetMood: (mood: string) => void;
+  recommendation: FocusRecommendation | null;
+  onSelectModule: (moduleId: string) => void;
+  onOpenPassport: () => void;
+  completedCount: number;
+  totalCount: number;
+}
+
+const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, todayMood, onSetMood, recommendation, onSelectModule, onOpenPassport, completedCount, totalCount }) => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const displayAvatar = avatarOverride || user.avatar;
@@ -38,8 +66,9 @@ const UserProfile = ({ user, onLogout, settings, updateSetting, onOpenSettings, 
             initial={{ opacity: 0, y: -10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
-            className="absolute top-full right-0 mt-2 w-64 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-lg p-4"
+            className="absolute top-full right-0 mt-2 w-72 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-lg p-4 max-h-[80vh] overflow-y-auto"
           >
+            {/* User info */}
             <div className="flex items-center gap-3 border-b border-zinc-200/50 dark:border-white/10 pb-3 mb-3">
               <img src={getAvatarUrl(displayAvatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
               <div>
@@ -48,28 +77,102 @@ const UserProfile = ({ user, onLogout, settings, updateSetting, onOpenSettings, 
               </div>
             </div>
 
-            <button onClick={() => updateSetting('darkMode', !settings.darkMode)} className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5">
-                <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{t('profile.theme')}</span>
-                 <AnimatePresence mode="wait">
-                    {settings.darkMode ? (
-                      <motion.div key="sun" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} transition={{ duration: 0.2 }}>
-                        <Sun size={16} className="text-amber-400" />
-                      </motion.div>
-                    ) : (
-                      <motion.div key="moon" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} transition={{ duration: 0.2 }}>
-                        <Moon size={16} className="text-zinc-600" />
-                      </motion.div>
-                    )}
-                </AnimatePresence>
-            </button>
-            <button onClick={() => { setIsOpen(false); onOpenSettings(); }} className="w-full flex items-center gap-2 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5 mt-1">
-              <Settings size={16} className="text-zinc-500" />
-              <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{t('profile.settings')}</span>
-            </button>
-            <button onClick={onLogout} className="w-full flex items-center gap-2 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5 mt-1">
-              <LogOut size={16} className="text-rose-500" />
-              <span className="text-sm font-medium text-rose-500">{t('profile.logout')}</span>
-            </button>
+            {/* Study Streak */}
+            <div className="flex items-center gap-3 p-2 mb-1">
+              <div className="w-8 h-8 rounded-lg bg-orange-50 dark:bg-orange-500/10 flex items-center justify-center">
+                <Flame size={16} className="text-orange-500" />
+              </div>
+              <div className="flex-1">
+                <p className="text-sm font-semibold text-zinc-800 dark:text-white">
+                  {streak.currentStreak} day streak
+                </p>
+                {streak.longestStreak > 1 && (
+                  <p className="text-[10px] text-zinc-400 dark:text-zinc-500">
+                    Longest: {streak.longestStreak} days
+                  </p>
+                )}
+              </div>
+            </div>
+
+            {/* Today's Focus */}
+            <div className="border-t border-zinc-200/50 dark:border-white/10 pt-3 mt-2 mb-2">
+              <p className="text-[10px] font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 px-2 mb-2">Today's Focus</p>
+              {recommendation && recommendation.reason !== 'all-complete' ? (
+                <button
+                  onClick={() => { setIsOpen(false); onSelectModule(recommendation.moduleId); }}
+                  className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5 group"
+                >
+                  <p className="text-sm font-medium text-zinc-700 dark:text-zinc-300 text-left line-clamp-1 pr-2">{recommendation.title}</p>
+                  <ChevronRight size={14} className="text-zinc-400 dark:text-zinc-500 shrink-0 group-hover:translate-x-0.5 transition-transform" />
+                </button>
+              ) : (
+                <div className="flex items-center gap-2 p-2">
+                  <Trophy size={14} className="text-amber-500" />
+                  <p className="text-sm font-medium text-amber-600 dark:text-amber-400">All modules complete!</p>
+                </div>
+              )}
+            </div>
+
+            {/* Mood Check-in */}
+            <div className="border-t border-zinc-200/50 dark:border-white/10 pt-3 mt-2 mb-2">
+              <p className="text-[10px] font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 px-2 mb-2">How are you feeling?</p>
+              <div className="flex items-center justify-center gap-2 px-2">
+                {MOOD_OPTIONS.map(({ key, icon: Icon, label }) => (
+                  <button
+                    key={key}
+                    onClick={() => onSetMood(key)}
+                    title={label}
+                    className={`w-9 h-9 rounded-full flex items-center justify-center transition-all ${
+                      todayMood === key
+                        ? 'text-[#CC785C] bg-[#CC785C]/10 ring-2 ring-[#CC785C]'
+                        : 'text-zinc-400 dark:text-zinc-500 hover:bg-zinc-100 dark:hover:bg-white/5'
+                    }`}
+                  >
+                    <Icon size={16} />
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Study Passport */}
+            <div className="border-t border-zinc-200/50 dark:border-white/10 pt-2 mt-2 mb-2">
+              <button
+                onClick={() => { setIsOpen(false); onOpenPassport(); }}
+                className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5"
+              >
+                <div className="w-8 h-8 rounded-lg bg-purple-50 dark:bg-purple-500/10 flex items-center justify-center">
+                  <Award size={16} className="text-purple-500" />
+                </div>
+                <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">Study Passport</span>
+                <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500">{completedCount}/{totalCount}</span>
+              </button>
+            </div>
+
+            {/* Existing: Theme, Settings, Log Out */}
+            <div className="border-t border-zinc-200/50 dark:border-white/10 pt-2 mt-2">
+              <button onClick={() => updateSetting('darkMode', !settings.darkMode)} className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5">
+                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{t('profile.theme')}</span>
+                   <AnimatePresence mode="wait">
+                      {settings.darkMode ? (
+                        <motion.div key="sun" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} transition={{ duration: 0.2 }}>
+                          <Sun size={16} className="text-amber-400" />
+                        </motion.div>
+                      ) : (
+                        <motion.div key="moon" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} transition={{ duration: 0.2 }}>
+                          <Moon size={16} className="text-zinc-600" />
+                        </motion.div>
+                      )}
+                  </AnimatePresence>
+              </button>
+              <button onClick={() => { setIsOpen(false); onOpenSettings(); }} className="w-full flex items-center gap-2 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5 mt-1">
+                <Settings size={16} className="text-zinc-500" />
+                <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{t('profile.settings')}</span>
+              </button>
+              <button onClick={onLogout} className="w-full flex items-center gap-2 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5 mt-1">
+                <LogOut size={16} className="text-rose-500" />
+                <span className="text-sm font-medium text-rose-500">{t('profile.logout')}</span>
+              </button>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -88,7 +191,16 @@ const App: React.FC = () => {
   const [userProgress, setUserProgress] = useState<UserProgress>({});
   const [isLoadingAuth, setIsLoadingAuth] = useState(true);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [passportOpen, setPassportOpen] = useState(false);
   const { settings, updateSetting, isLoaded: settingsLoaded } = useSettings(user?.uid, user?.avatar);
+  const { streak } = useStreak(user?.uid);
+  const { todayMood, setMood } = useMood(user?.uid);
+  const { recommendation } = useTodaysFocus(userProgress, ALL_COURSES);
+
+  const completedCount = ALL_COURSES.filter(c => {
+    const p = userProgress[c.id];
+    return p && p.unlockedSection >= c.sectionsCount - 1;
+  }).length;
 
   // Set up the real-time auth listener
   useEffect(() => {
@@ -390,19 +502,28 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
       {user && (
         <div className="fixed top-6 right-6 z-[100]">
-          <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} />
+          <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} todayMood={todayMood} onSetMood={setMood} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} completedCount={completedCount} totalCount={ALL_COURSES.length} />
         </div>
       )}
 
       {renderContent()}
 
       {user && (
-        <SettingsModal
-          isOpen={settingsOpen}
-          onClose={() => setSettingsOpen(false)}
-          settings={settings}
-          updateSetting={updateSetting}
-        />
+        <>
+          <SettingsModal
+            isOpen={settingsOpen}
+            onClose={() => setSettingsOpen(false)}
+            settings={settings}
+            updateSetting={updateSetting}
+          />
+          <StudyPassportModal
+            isOpen={passportOpen}
+            onClose={() => setPassportOpen(false)}
+            userProgress={userProgress}
+            allCourses={ALL_COURSES}
+            categoryTitles={categoryTitles}
+          />
+        </>
       )}
     </div>
   );
