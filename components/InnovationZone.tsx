@@ -21,6 +21,7 @@ import { computeStreak } from './timetableAlgorithm';
 import SubjectOnboarding from './SubjectOnboarding';
 import SpacedRepetitionTimetable from './SpacedRepetitionTimetable';
 import CAOPointsSimulator from './CAOPointsSimulator';
+import DeepFocusTimer from './DeepFocusTimer';
 import {
     type GameState, type Choice, type Scene, type HistoryItem, type StatKey, type Phase,
     type Mood, type Location,
@@ -1307,7 +1308,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const tools = [
         { id: 'journey', title: 'Academic Journey Simulator', description: 'Navigate the choices of your final school year.', icon: GitBranch, needsProfile: false, component: <AcademicJourneyGame onSelectModule={onSelectModule} user={user} savedJourneyResult={savedJourneyResult} onJourneyComplete={onJourneyComplete} /> },
         { id: 'cao-simulator', title: 'CAO Points Simulator', description: 'Explore how grade changes affect your CAO points.', icon: Calculator, needsProfile: true, component: subjectProfile ? <CAOPointsSimulator profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} /> : null },
-        { id: 'focus', title: 'Deep Focus Timer', description: 'A customizable timer based on the Pomodoro technique.', icon: Clock, needsProfile: false, disabled: true },
+        { id: 'focus', title: 'Deep Focus Timer', description: 'Pomodoro timer tied to your study timetable.', icon: Clock, needsProfile: false, component: <DeepFocusTimer profile={subjectProfile ?? undefined} completions={timetableCompletions} onToggleCompletion={handleToggleCompletion} /> },
         { id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true, component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); } } }} /> : null },
     ];
 
