@@ -384,7 +384,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
       </div>
 
       {/* Stat pills */}
-      <div className="flex flex-wrap items-center gap-2">
+      <div className="flex flex-wrap items-center justify-center gap-2">
         <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700/30">
           <Clock size={12} className="text-blue-600 dark:text-blue-400" />
           <span className="text-xs font-bold text-blue-600 dark:text-blue-400">{totalHours}h {remainingMins}m</span>

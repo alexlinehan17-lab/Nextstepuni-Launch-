@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     ArrowLeft, ArrowRight, Lightbulb, Zap, Clock, Shield, Wrench, RotateCcw,
@@ -17,7 +17,7 @@ import {
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak, type StudyBlock, getBlockId, toDateKey } from './subjectData';
-import { computeStreak } from './timetableAlgorithm';
+import { computeStreak, computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, computeWeeksUntilExam } from './timetableAlgorithm';
 import { type StudyReflection, type PointsData, type CosmeticUnlocks, type EarnedRest } from '../types';
 import SubjectOnboarding from './SubjectOnboarding';
 import SpacedRepetitionTimetable from './SpacedRepetitionTimetable';
@@ -1441,6 +1441,36 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         setActiveTool(toolId);
     }, [subjectProfile, profileLoaded]);
 
+    // Compute today's skippable blocks for the reward shop
+    const skippableBlocks = useMemo(() => {
+        if (!subjectProfile) return [];
+        const today = new Date();
+        const todayKey = toDateKey(today);
+        const jsDay = today.getDay();
+        const todayDayIndex = jsDay === 0 ? 6 : jsDay - 1;
+
+        const priorities = computeSubjectPriorities(subjectProfile.subjects);
+        const weeksUntilExam = computeWeeksUntilExam(subjectProfile.examStartDate);
+        const allocations = allocateSessions(priorities, weeksUntilExam);
+        const restDaysArray = subjectProfile.restDays || [];
+        const timetable = generateWeeklyTimetable(allocations, weeksUntilExam, 0, restDaysArray);
+        const todayBlocks = timetable[todayDayIndex]?.blocks ?? [];
+
+        const completedIds = timetableCompletions[todayKey] ?? [];
+        const skippedSet = new Set(earnedRest.skippedSessions);
+
+        return todayBlocks
+            .map((block, bi) => {
+                const blockId = getBlockId(block, bi);
+                const fullId = `${todayKey}|${blockId}`;
+                const isCompleted = completedIds.includes(blockId);
+                const isSkipped = skippedSet.has(fullId);
+                if (isCompleted || isSkipped) return null;
+                return { blockId, fullId, subjectName: block.subjectName, sessionType: block.sessionType };
+            })
+            .filter((b): b is { blockId: string; fullId: string; subjectName: string; sessionType: string } => b !== null);
+    }, [subjectProfile, timetableCompletions, earnedRest.skippedSessions]);
+
     const tools = [
         { id: 'journey', title: 'Academic Journey Simulator', description: 'Navigate the choices of your final school year.', icon: GitBranch, needsProfile: false, component: <AcademicJourneyGame onSelectModule={onSelectModule} user={user} savedJourneyResult={savedJourneyResult} onJourneyComplete={onJourneyComplete} /> },
         { id: 'cao-simulator', title: 'CAO Points Simulator', description: 'Explore how grade changes affect your CAO points.', icon: Calculator, needsProfile: true, component: subjectProfile ? <CAOPointsSimulator profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} /> : null },
@@ -1562,6 +1592,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         cosmeticUnlocks={cosmeticUnlocks}
         earnedRest={earnedRest}
         onSpend={handleSpendPoints}
+        skippableBlocks={skippableBlocks}
       />
     </div>
   );

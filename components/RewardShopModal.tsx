@@ -3,10 +3,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Star, Coffee, CalendarOff, Lock, Check, ShoppingBag, Palette } from 'lucide-react';
+import { X, Star, Coffee, CalendarOff, Lock, Check, ShoppingBag, Palette, ChevronRight } from 'lucide-react';
 import { type CosmeticUnlocks, type EarnedRest } from '../types';
 import { getAvatarUrl } from './Auth';
 
@@ -16,6 +16,13 @@ const MotionButton = motion.button as any;
 // Extra avatar seeds beyond the base 8
 export const EXTRA_AVATAR_SEEDS = ['Luna', 'Kai', 'Suki', 'Dara', 'Nico', 'Asha', 'Finn', 'Yuki'];
 
+interface SkippableBlock {
+  blockId: string;
+  fullId: string;
+  subjectName: string;
+  sessionType: string;
+}
+
 interface RewardShopModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -23,11 +30,19 @@ interface RewardShopModalProps {
   cosmeticUnlocks: CosmeticUnlocks;
   earnedRest: EarnedRest;
   onSpend: (type: 'skip-session' | 'rest-day-pass' | 'unlock-avatar' | 'unlock-theme', detail?: string) => void;
+  skippableBlocks?: SkippableBlock[];
 }
 
+const SESSION_TYPE_LABELS: Record<string, string> = {
+  'new-learning': 'New Learning',
+  'practice': 'Practice',
+  'revision': 'Revision',
+};
+
 const RewardShopModal: React.FC<RewardShopModalProps> = ({
-  isOpen, onClose, pointsBalance, cosmeticUnlocks, earnedRest, onSpend,
+  isOpen, onClose, pointsBalance, cosmeticUnlocks, earnedRest, onSpend, skippableBlocks = [],
 }) => {
+  const [pickingSession, setPickingSession] = useState(false);
   const canAfford = (cost: number) => pointsBalance >= cost;
 
   return createPortal(
@@ -81,30 +96,82 @@ const RewardShopModal: React.FC<RewardShopModalProps> = ({
                 </h3>
                 <div className="space-y-2">
                   {/* Skip a Session */}
-                  <div className="flex items-center justify-between p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.03] border border-zinc-200/50 dark:border-white/[0.06]">
-                    <div className="flex items-center gap-3">
-                      <div className="w-9 h-9 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
-                        <Coffee size={18} className="text-blue-500 dark:text-blue-400" />
+                  <div className="rounded-xl bg-zinc-50 dark:bg-white/[0.03] border border-zinc-200/50 dark:border-white/[0.06] overflow-hidden">
+                    <div className="flex items-center justify-between p-3">
+                      <div className="flex items-center gap-3">
+                        <div className="w-9 h-9 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+                          <Coffee size={18} className="text-blue-500 dark:text-blue-400" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-bold text-zinc-700 dark:text-zinc-200">Skip a Session</p>
+                          <p className="text-[10px] text-zinc-400 dark:text-zinc-500">Skip one session without breaking your streak</p>
+                        </div>
                       </div>
-                      <div>
-                        <p className="text-sm font-bold text-zinc-700 dark:text-zinc-200">Skip a Session</p>
-                        <p className="text-[10px] text-zinc-400 dark:text-zinc-500">Skip one session without breaking your streak</p>
-                      </div>
+                      {!pickingSession ? (
+                        <MotionButton
+                          onClick={() => setPickingSession(true)}
+                          disabled={!canAfford(20) || skippableBlocks.length === 0}
+                          whileHover={canAfford(20) && skippableBlocks.length > 0 ? { scale: 1.05 } : {}}
+                          whileTap={canAfford(20) && skippableBlocks.length > 0 ? { scale: 0.95 } : {}}
+                          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                            canAfford(20) && skippableBlocks.length > 0
+                              ? 'bg-purple-600 text-white hover:bg-purple-700'
+                              : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-400 dark:text-zinc-500 cursor-not-allowed'
+                          }`}
+                        >
+                          <Star size={10} />
+                          20 pts
+                        </MotionButton>
+                      ) : (
+                        <button
+                          onClick={() => setPickingSession(false)}
+                          className="text-[10px] font-medium text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
+                        >
+                          Cancel
+                        </button>
+                      )}
                     </div>
-                    <MotionButton
-                      onClick={() => onSpend('skip-session', 'pending')}
-                      disabled={!canAfford(20)}
-                      whileHover={canAfford(20) ? { scale: 1.05 } : {}}
-                      whileTap={canAfford(20) ? { scale: 0.95 } : {}}
-                      className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                        canAfford(20)
-                          ? 'bg-purple-600 text-white hover:bg-purple-700'
-                          : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-400 dark:text-zinc-500 cursor-not-allowed'
-                      }`}
-                    >
-                      <Star size={10} />
-                      20 pts
-                    </MotionButton>
+                    <AnimatePresence>
+                      {pickingSession && (
+                        <MotionDiv
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: 'auto', opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.2 }}
+                          className="overflow-hidden"
+                        >
+                          <div className="px-3 pb-3 space-y-1.5">
+                            <p className="text-[10px] font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">
+                              Choose a session to skip
+                            </p>
+                            {skippableBlocks.length === 0 ? (
+                              <p className="text-xs text-zinc-400 dark:text-zinc-500 py-2 text-center">
+                                No sessions left to skip today
+                              </p>
+                            ) : (
+                              skippableBlocks.map(block => (
+                                <button
+                                  key={block.fullId}
+                                  onClick={() => {
+                                    onSpend('skip-session', block.fullId);
+                                    setPickingSession(false);
+                                  }}
+                                  className="w-full flex items-center justify-between p-2 rounded-lg bg-white dark:bg-white/[0.04] border border-zinc-200/50 dark:border-white/[0.06] hover:border-blue-300 dark:hover:border-blue-600 transition-all group"
+                                >
+                                  <div className="text-left">
+                                    <p className="text-xs font-bold text-zinc-700 dark:text-zinc-200">{block.subjectName}</p>
+                                    <p className="text-[10px] text-zinc-400 dark:text-zinc-500">
+                                      {SESSION_TYPE_LABELS[block.sessionType] || block.sessionType}
+                                    </p>
+                                  </div>
+                                  <ChevronRight size={14} className="text-zinc-300 dark:text-zinc-600 group-hover:text-blue-400 transition-colors" />
+                                </button>
+                              ))
+                            )}
+                          </div>
+                        </MotionDiv>
+                      )}
+                    </AnimatePresence>
                   </div>
 
                   {/* Rest Day Pass */}
