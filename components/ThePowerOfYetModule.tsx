@@ -18,33 +18,139 @@ import { ModuleLayout } from './ModuleLayout';
 const theme = yellowTheme;
 
 // --- INTERACTIVE COMPONENTS ---
-const ErrorSignalVisualizer = () => {
-    const [mindset, setMindset] = useState<'fixed' | 'growth' | null>(null);
-    return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Brain on "Yet"</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Scenario: You make a mistake on a Maths problem. Which brain is yours?</p>
-             <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                    <h5 className="font-bold mb-2">The "I Can't" Brain (Fixed)</h5>
-                    <svg viewBox="0 0 100 50" className="w-full h-auto">
-                       <path d="M 0 40 L 100 40" stroke="#e5e7eb" strokeWidth="1" />
-                       <path d="M 40 40 C 45 40 48 30 52 30 S 57 40 60 40" stroke="#f43f5e" strokeWidth="1" fill="none" />
-                       <text x="50" y="20" textAnchor="middle" fontSize="6" fill="#f43f5e">Small 'Pe' Wave</text>
-                    </svg>
-                    <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-2">The brain "looks away" from the error to protect the ego. No learning occurs.</p>
-                </div>
-                 <div className="text-center">
-                    <h5 className="font-bold mb-2">The "I Can't... Yet" Brain (Growth)</h5>
-                    <svg viewBox="0 0 100 50" className="w-full h-auto">
-                       <path d="M 0 40 L 100 40" stroke="#e5e7eb" strokeWidth="1" />
-                       <path d="M 40 40 C 45 40 48 5 52 5 S 57 40 60 40" stroke="#10b981" strokeWidth="3" fill="none" />
-                       <text x="50" y="20" textAnchor="middle" fontSize="6" fill="#10b981">Large 'Pe' Wave</text>
-                    </svg>
-                    <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-2">The brain leans in, allocating massive attention to the error. Learning is triggered.</p>
-                </div>
-             </div>
+const YetReframe = () => {
+    const statements = [
+      { fixed: "I can't do Honours Maths", yet: "I can't do Honours Maths... yet", shift: "Difficulty = challenge to overcome" },
+      { fixed: "I'm terrible at Irish essays", yet: "I'm terrible at Irish essays... yet", shift: "Weakness = area of future growth" },
+      { fixed: "I don't understand Chemistry", yet: "I don't understand Chemistry... yet", shift: "Confusion = starting point, not endpoint" },
+      { fixed: "I'll never get the points I need", yet: "I'll never get the points I need... yet", shift: "Gap = distance to close, not a wall" },
+    ];
+
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
+    const [reframed, setReframed] = useState<Set<number>>(new Set());
+
+    const handleClick = (index: number) => {
+      if (reframed.has(index)) return;
+      setActiveIndex(index);
+      setTimeout(() => {
+        setReframed(prev => new Set(prev).add(index));
+      }, 600);
+    };
+
+    const engagementPct = Math.round((reframed.size / statements.length) * 100);
+
+    return (
+      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "Yet" Reframe</h4>
+        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Click each fixed statement to add "yet" and watch the cognitive shift.</p>
+
+        {/* Engagement meter */}
+        <div className="mb-6">
+          <div className="flex items-center justify-between mb-1.5">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Brain Engagement</span>
+            <span className="text-[10px] font-bold text-yellow-600 dark:text-yellow-400">{engagementPct}%</span>
+          </div>
+          <div className="w-full h-2.5 bg-zinc-100 dark:bg-zinc-900 rounded-full overflow-hidden">
+            <motion.div
+              className="h-full rounded-full bg-gradient-to-r from-rose-400 via-yellow-400 to-emerald-400"
+              animate={{ width: `${engagementPct}%` }}
+              transition={{ type: 'spring', stiffness: 80, damping: 15 }}
+            />
+          </div>
         </div>
+
+        <div className="space-y-3">
+          {statements.map((s, i) => {
+            const isReframed = reframed.has(i);
+            const isAnimating = activeIndex === i && !isReframed;
+
+            return (
+              <motion.button
+                key={i}
+                onClick={() => handleClick(i)}
+                disabled={isReframed}
+                className={`w-full text-left p-4 rounded-xl border transition-all ${
+                  isReframed
+                    ? 'bg-emerald-50 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800/40'
+                    : 'bg-zinc-50 dark:bg-zinc-900/30 border-zinc-200 dark:border-zinc-700 hover:border-yellow-300 dark:hover:border-yellow-700 cursor-pointer'
+                }`}
+                layout
+              >
+                <div className="flex items-start gap-3">
+                  {/* Status indicator */}
+                  <motion.div
+                    animate={{
+                      backgroundColor: isReframed ? '#10b981' : '#e4e4e7',
+                      scale: isAnimating ? [1, 1.3, 1] : 1,
+                    }}
+                    className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
+                  >
+                    {isReframed && (
+                      <motion.svg
+                        initial={{ pathLength: 0 }}
+                        animate={{ pathLength: 1 }}
+                        transition={{ duration: 0.3 }}
+                        viewBox="0 0 16 16"
+                        className="w-3.5 h-3.5"
+                      >
+                        <motion.path
+                          d="M3 8 L6.5 11.5 L13 5"
+                          fill="none"
+                          stroke="white"
+                          strokeWidth="2.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          initial={{ pathLength: 0 }}
+                          animate={{ pathLength: 1 }}
+                        />
+                      </motion.svg>
+                    )}
+                  </motion.div>
+
+                  <div className="flex-1 min-w-0">
+                    <AnimatePresence mode="wait">
+                      {isReframed ? (
+                        <motion.div
+                          key="reframed"
+                          initial={{ opacity: 0, y: 4 }}
+                          animate={{ opacity: 1, y: 0 }}
+                        >
+                          <p className="font-semibold text-sm text-emerald-700 dark:text-emerald-300">{s.yet}</p>
+                          <p className="text-[11px] text-emerald-600/70 dark:text-emerald-400/60 mt-1">{s.shift}</p>
+                        </motion.div>
+                      ) : (
+                        <motion.div key="fixed">
+                          <p className={`font-semibold text-sm ${isAnimating ? 'text-rose-500 line-through' : 'text-zinc-700 dark:text-zinc-300'}`}>
+                            {s.fixed}
+                          </p>
+                          {!isAnimating && (
+                            <p className="text-[11px] text-zinc-400 dark:text-zinc-500 mt-1">Tap to reframe</p>
+                          )}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                </div>
+              </motion.button>
+            );
+          })}
+        </div>
+
+        {reframed.size === statements.length && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-6 p-4 bg-yellow-50 dark:bg-yellow-950/20 rounded-xl border border-yellow-200 dark:border-yellow-800/40 text-center"
+          >
+            <p className="text-sm font-semibold text-yellow-700 dark:text-yellow-300">Every "I can't" is just an "I can't yet" waiting to be unlocked.</p>
+            <p className="text-xs text-yellow-600/70 dark:text-yellow-400/60 mt-1">That single word keeps your brain engaged with the error instead of shutting down.</p>
+          </motion.div>
+        )}
+
+        {reframed.size > 0 && reframed.size < statements.length && (
+          <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mt-4">{statements.length - reframed.size} more to go...</p>
+        )}
+      </div>
     );
 };
 
@@ -117,7 +223,7 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
             <ReadingSection title="The Brain on 'Yet'." eyebrow="Step 3" icon={Brain} theme={theme}>
               <p>This isn't just a mental trick; it has a direct effect on your brain's hardware. When you make a mistake, your brain produces a signal called the <Highlight description="The 'Error Positivity' signal is a brainwave that shows you're paying conscious attention to a mistake. A bigger 'Pe' wave means you're more likely to learn from the error." theme={theme}>Pe (Error Positivity)</Highlight>. It's the physical sign that you're leaning in to analyse your failure.</p>
               <p>Research shows that people with a fixed mindset have a very small Pe signal. Their brain detects the error but quickly "looks away" to protect the ego. People with a growth mindset have a huge Pe signal--they allocate massive attention to the mistake. The word "yet" is a cognitive cue that tells your brain, "This task is not over," keeping your brain in that high-Pe state of engagement and analysis.</p>
-              <ErrorSignalVisualizer />
+              <YetReframe />
             </ReadingSection>
           )}
            {activeSection === 3 && (

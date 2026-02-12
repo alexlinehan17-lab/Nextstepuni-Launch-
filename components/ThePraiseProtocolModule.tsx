@@ -100,36 +100,211 @@ const DweckExperimentSimulator = () => {
 
 const ErrorSignalVisualizer = () => {
     const [active, setActive] = useState(false);
-    return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Brain's Error Signal</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">When you make a mistake, your brain sends two signals. The second signal (Pe) is where the magic happens.</p>
-             <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                    <h5 className="font-bold mb-2">Fixed Mindset Brain</h5>
-                    <svg viewBox="0 0 100 50" className="w-full h-auto">
-                       <path d="M0 25 L 20 25 C 25 25 28 10 32 10 S 37 40 40 40 L 100 40" stroke="#f43f5e" strokeWidth="2" fill="none" />
-                       <AnimatePresence>
-                       {active && <motion.path initial={{pathLength:0}} animate={{pathLength:1}} exit={{pathLength:0}} d="M 40 40 C 45 40 48 30 52 30 S 57 40 60 40" stroke="#f43f5e" strokeWidth="1" fill="none" />}
-                       </AnimatePresence>
-                    </svg>
-                    <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-2">A small "Pe" signal. The brain notices the error but quickly "looks away" to protect the ego.</p>
-                </div>
-                 <div className="text-center">
-                    <h5 className="font-bold mb-2">Growth Mindset Brain</h5>
-                    <svg viewBox="0 0 100 50" className="w-full h-auto">
-                        <path d="M0 25 L 20 25 C 25 25 28 10 32 10 S 37 40 40 40 L 100 40" stroke="#10b981" strokeWidth="2" fill="none" />
-                       <AnimatePresence>
-                       {active && <motion.path initial={{pathLength:0}} animate={{pathLength:1}} exit={{pathLength:0}} d="M 40 40 C 45 40 48 5 52 5 S 57 40 60 40" stroke="#10b981" strokeWidth="3" fill="none" />}
-                       </AnimatePresence>
-                    </svg>
-                    <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-2">A large "Pe" signal. The brain allocates massive attention to the error, analysing it to learn from it.</p>
-                </div>
-             </div>
-             <div className="text-center mt-8">
-                <button onClick={() => setActive(!active)} className="px-5 py-3 bg-zinc-800 text-white font-bold rounded-lg text-sm">{active ? "Reset Signal" : "Make an Error"}</button>
-             </div>
+    const [showExplainer, setShowExplainer] = useState(false);
+
+    // SVG dimensions
+    const W = 400, H = 100;
+    const midY = H / 2;
+    const errorX = W * 0.35; // where error occurs on timeline
+
+    // Build waveform path: baseline noise → ERN spike (same for both) → Pe response (differs)
+    const buildPath = (peAmplitude: number) => {
+      const points: string[] = [];
+      const step = 2;
+      for (let x = 0; x <= W; x += step) {
+        let y = midY;
+        // Baseline noise (small random-looking sine mix)
+        const noise = Math.sin(x * 0.15) * 2 + Math.sin(x * 0.3) * 1.5 + Math.cos(x * 0.08) * 1;
+        y += noise;
+
+        if (active) {
+          // ERN spike (identical for both) - sharp negative deflection at error point
+          const ernDist = x - errorX;
+          if (ernDist > 0 && ernDist < 30) {
+            const ernT = ernDist / 30;
+            const ernWave = Math.sin(ernT * Math.PI) * -22;
+            y += ernWave;
+          }
+          // Pe wave (differs by mindset) - positive deflection after ERN
+          const peDist = x - (errorX + 35);
+          if (peDist > 0 && peDist < 80) {
+            const peT = peDist / 80;
+            const peWave = Math.sin(peT * Math.PI) * peAmplitude;
+            y += peWave;
+          }
+        }
+
+        points.push(`${x === 0 ? 'M' : 'L'} ${x} ${y.toFixed(1)}`);
+      }
+      return points.join(' ');
+    };
+
+    const fixedPath = buildPath(8);   // Small Pe
+    const growthPath = buildPath(32);  // Large Pe
+
+    const traces = [
+      { label: 'Fixed Mindset', path: fixedPath, color: '#f43f5e', peLabel: 'Small Pe', peDesc: 'Brain looks away to protect ego', bgClass: 'bg-rose-50 dark:bg-rose-950/20', borderClass: 'border-rose-200 dark:border-rose-800/40', labelClass: 'text-rose-600 dark:text-rose-400' },
+      { label: 'Growth Mindset', path: growthPath, color: '#10b981', peLabel: 'Large Pe', peDesc: 'Brain allocates attention to learn', bgClass: 'bg-emerald-50 dark:bg-emerald-950/20', borderClass: 'border-emerald-200 dark:border-emerald-800/40', labelClass: 'text-emerald-600 dark:text-emerald-400' },
+    ];
+
+    return (
+      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Brain's Error Signal</h4>
+        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">When you make a mistake, your brain fires two signals. The second (Pe) is where mindset changes everything.</p>
+
+        <div className="space-y-4">
+          {traces.map((trace, i) => (
+            <div key={i} className={`p-4 rounded-xl border ${trace.bgClass} ${trace.borderClass}`}>
+              <div className="flex items-center justify-between mb-2">
+                <p className={`text-xs font-bold uppercase tracking-wider ${trace.labelClass}`}>{trace.label}</p>
+                {active && (
+                  <motion.p
+                    initial={{ opacity: 0, x: 10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.6 }}
+                    className={`text-[10px] font-bold ${trace.labelClass}`}
+                  >
+                    {trace.peLabel} — {trace.peDesc}
+                  </motion.p>
+                )}
+              </div>
+
+              <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto" preserveAspectRatio="none">
+                {/* Gridlines */}
+                {[0.25, 0.5, 0.75].map(t => (
+                  <line key={t} x1={0} y1={H * t} x2={W} y2={H * t} stroke="currentColor" className="text-zinc-200 dark:text-zinc-700" strokeWidth="0.5" />
+                ))}
+                {/* Baseline center */}
+                <line x1={0} y1={midY} x2={W} y2={midY} stroke="currentColor" className="text-zinc-300 dark:text-zinc-600" strokeWidth="0.8" strokeDasharray="4 4" />
+
+                {/* Error marker */}
+                {active && (
+                  <>
+                    <motion.line
+                      x1={errorX} y1={4} x2={errorX} y2={H - 4}
+                      stroke={trace.color}
+                      strokeWidth="1"
+                      strokeDasharray="3 3"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 0.4 }}
+                    />
+                    <motion.text
+                      x={errorX}
+                      y={10}
+                      textAnchor="middle"
+                      fill={trace.color}
+                      className="text-[8px] font-bold"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 0.6 }}
+                    >
+                      ERROR
+                    </motion.text>
+                    {/* Pe region shading */}
+                    <motion.rect
+                      x={errorX + 35}
+                      y={2}
+                      width={80}
+                      height={H - 4}
+                      rx={4}
+                      fill={trace.color}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 0.06 }}
+                      transition={{ delay: 0.4 }}
+                    />
+                    <motion.text
+                      x={errorX + 75}
+                      y={H - 6}
+                      textAnchor="middle"
+                      fill={trace.color}
+                      className="text-[7px] font-bold"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 0.5 }}
+                      transition={{ delay: 0.5 }}
+                    >
+                      Pe WINDOW
+                    </motion.text>
+                  </>
+                )}
+
+                {/* Signal trace */}
+                <motion.path
+                  d={trace.path}
+                  fill="none"
+                  stroke={trace.color}
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  initial={active ? { pathLength: 0 } : { pathLength: 1 }}
+                  animate={{ pathLength: 1 }}
+                  transition={{ duration: active ? 1.8 : 0, ease: 'easeOut' }}
+                />
+              </svg>
+
+              {/* Axis labels */}
+              <div className="flex justify-between mt-1">
+                <span className="text-[9px] text-zinc-400 dark:text-zinc-500">0 ms</span>
+                <span className="text-[9px] text-zinc-400 dark:text-zinc-500">Time</span>
+                <span className="text-[9px] text-zinc-400 dark:text-zinc-500">800 ms</span>
+              </div>
+            </div>
+          ))}
         </div>
+
+        {/* Phase legend */}
+        {active && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1 }}
+            className="mt-4 flex justify-center gap-6"
+          >
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-sm bg-zinc-400" />
+              <span className="text-[10px] text-zinc-500 dark:text-zinc-400">ERN (Error detected — same for both)</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-sm bg-lime-500" />
+              <span className="text-[10px] text-zinc-500 dark:text-zinc-400">Pe (Attention to error — differs by mindset)</span>
+            </div>
+          </motion.div>
+        )}
+
+        <div className="flex justify-center gap-3 mt-6">
+          <button
+            onClick={() => setActive(!active)}
+            className="px-6 py-2.5 bg-lime-500 text-white font-bold text-sm rounded-xl hover:bg-lime-600 shadow-lg shadow-lime-500/20 transition-all"
+          >
+            {active ? 'Reset Signal' : 'Make an Error'}
+          </button>
+          {active && (
+            <motion.button
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              onClick={() => setShowExplainer(!showExplainer)}
+              className="px-5 py-2.5 bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-bold text-sm rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-600 transition-all"
+            >
+              {showExplainer ? 'Hide Explanation' : 'What am I looking at?'}
+            </motion.button>
+          )}
+        </div>
+
+        <AnimatePresence>
+          {showExplainer && active && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              className="overflow-hidden"
+            >
+              <div className="mt-6 p-5 bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-700 space-y-3">
+                <p className="text-sm text-zinc-700 dark:text-zinc-300"><strong>ERN (Error-Related Negativity)</strong> is the first signal -- it fires within 100ms of making a mistake. Both mindsets produce the same ERN. Your brain always detects the error.</p>
+                <p className="text-sm text-zinc-700 dark:text-zinc-300"><strong>Pe (Error Positivity)</strong> is the second signal -- it fires 200-500ms later. This is where mindset changes everything. It measures how much <em>attention</em> your brain allocates to processing the mistake.</p>
+                <p className="text-sm text-zinc-700 dark:text-zinc-300">A <strong className="text-rose-500">fixed mindset</strong> brain produces a tiny Pe -- it notices the error but quickly disengages to protect the ego. A <strong className="text-emerald-500">growth mindset</strong> brain produces a massive Pe -- it leans into the error, analysing what went wrong so it can correct course. This is why growth-minded students improve after mistakes while fixed-minded students repeat them.</p>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     );
 };
 
