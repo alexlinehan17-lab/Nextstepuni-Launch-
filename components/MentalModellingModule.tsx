@@ -19,22 +19,224 @@ const theme = cyanTheme;
 // --- INTERACTIVE COMPONENTS ---
 
 const GlassBoxUnfolder = () => {
-    const [isUnfolded, setIsUnfolded] = useState(false);
-    return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 flex flex-col items-center">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "Glass Box" Model</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">This is the fundamental mental model for orthographic projection.</p>
-             <div className="w-48 h-48 [perspective:1000px] mb-8">
-                <motion.div className="relative w-full h-full" style={{ transformStyle: 'preserve-3d', transform: 'rotateX(-20deg) rotateY(-30deg)' }} animate={{scale: isUnfolded ? 0.8 : 1}}>
-                    {/* Front */}
-                    <motion.div className="absolute w-48 h-48 border border-cyan-500 bg-cyan-500/10 flex items-center justify-center" style={{transformOrigin: 'bottom'}} animate={{rotateX: isUnfolded ? -90 : 0, y: isUnfolded ? 96 : 0 }}><span className="font-bold">ELEVATION</span></motion.div>
-                    {/* Top */}
-                    <motion.div className="absolute w-48 h-48 border border-cyan-500 bg-cyan-500/10 flex items-center justify-center" style={{transformOrigin: 'top'}} animate={{transform: `rotateX(90deg) translateZ(96px)`, rotateX: isUnfolded ? -90 : 90, y: isUnfolded ? -96 : 0}}><span className="font-bold">PLAN</span></motion.div>
-                     {/* Side */}
-                    <motion.div className="absolute w-48 h-48 border border-cyan-500 bg-cyan-500/10 flex items-center justify-center" style={{transformOrigin: 'left'}} animate={{transform: `rotateY(-90deg) translateZ(96px)`, rotateY: isUnfolded ? 90 : -90, x: isUnfolded ? -96 : 0}}><span className="font-bold">END VIEW</span></motion.div>
+    const [activeView, setActiveView] = useState<'front' | 'top' | 'side' | null>(null);
+    const [revealed, setRevealed] = useState(new Set<string>());
+    const [showLayout, setShowLayout] = useState(false);
+
+    const handleView = (v: 'front' | 'top' | 'side') => {
+        setActiveView(v);
+        setRevealed(prev => new Set(prev).add(v));
+        if (showLayout) setShowLayout(false);
+    };
+
+    /* Isometric projection */
+    const S = 22, CX = 155, CY = 120;
+    const iso = (x: number, y: number, z: number): [number, number] => [
+        CX + (x - y) * 0.866 * S,
+        CY + (x + y) * 0.5 * S - z * S,
+    ];
+    const pts = (verts: number[][]): string =>
+        verts.map(([x, y, z]) => iso(x, y, z).join(',')).join(' ');
+
+    /* L-shape: base 3x2x1, tower 1x2x3. Visible faces back-to-front */
+    const shapeFaces = [
+        { v: [[0,0,3],[1,0,3],[1,2,3],[0,2,3]], fill: '#a5f3fc' },
+        { v: [[1,0,1],[3,0,1],[3,2,1],[1,2,1]], fill: '#a5f3fc' },
+        { v: [[1,0,1],[1,2,1],[1,2,3],[1,0,3]], fill: '#0891b2' },
+        { v: [[3,0,0],[3,2,0],[3,2,1],[3,0,1]], fill: '#0891b2' },
+        { v: [[0,0,0],[3,0,0],[3,0,1],[1,0,1],[1,0,3],[0,0,3]], fill: '#22d3ee' },
+    ];
+
+    /* Glass box 3x2x3 */
+    const boxEdges: number[][][] = [
+        [[0,0,0],[3,0,0]], [[3,0,0],[3,2,0]], [[3,2,0],[0,2,0]], [[0,2,0],[0,0,0]],
+        [[0,0,3],[3,0,3]], [[3,0,3],[3,2,3]], [[3,2,3],[0,2,3]], [[0,2,3],[0,0,3]],
+        [[0,0,0],[0,0,3]], [[3,0,0],[3,0,3]], [[3,2,0],[3,2,3]], [[0,2,0],[0,2,3]],
+    ];
+    const boxFaces: Record<string, number[][]> = {
+        front: [[0,0,0],[3,0,0],[3,0,3],[0,0,3]],
+        top:   [[0,0,3],[3,0,3],[3,2,3],[0,2,3]],
+        side:  [[3,0,0],[3,2,0],[3,2,3],[3,0,3]],
+    };
+
+    const vc = {
+        front: { label: 'Front', sub: 'Elevation', color: '#06b6d4' },
+        top:   { label: 'Top', sub: 'Plan', color: '#10b981' },
+        side:  { label: 'Side', sub: 'End View', color: '#a855f7' },
+    };
+
+    const allRevealed = revealed.size === 3;
+
+    return (
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "Glass Box" Model</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Click each view to see how the 3D object projects onto the glass faces.</p>
+            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">Reveal all three, then flatten the box into a drawing layout.</p>
+
+            {/* View buttons */}
+            <div className="flex justify-center gap-2 mb-6 flex-wrap">
+                {(['front', 'top', 'side'] as const).map(v => {
+                    const isActive = activeView === v;
+                    const isSeen = revealed.has(v);
+                    return (
+                        <button key={v} onClick={() => handleView(v)}
+                            className={`px-3 py-2 text-xs font-bold rounded-lg border transition-all ${
+                                isActive ? 'text-white border-transparent'
+                                : isSeen ? 'border-transparent'
+                                : 'bg-zinc-50 dark:bg-zinc-900/30 text-zinc-500 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 cursor-pointer'
+                            }`}
+                            style={
+                                isActive ? { backgroundColor: vc[v].color }
+                                : isSeen ? { backgroundColor: vc[v].color + '18', color: vc[v].color }
+                                : undefined
+                            }
+                        >
+                            {vc[v].label} ({vc[v].sub})
+                        </button>
+                    );
+                })}
+            </div>
+
+            <AnimatePresence mode="wait">
+                {!showLayout ? (
+                    <motion.div key="explorer" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                        <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
+                            {/* Isometric 3D view */}
+                            <div className="bg-zinc-50 dark:bg-zinc-900/30 rounded-xl border border-zinc-200 dark:border-zinc-700 p-3">
+                                <svg viewBox="0 0 310 220" className="w-full" style={{ maxWidth: 320 }}>
+                                    {/* Glass box wireframe */}
+                                    {boxEdges.map(([a, b], i) => {
+                                        const [x1, y1] = iso(a[0], a[1], a[2]);
+                                        const [x2, y2] = iso(b[0], b[1], b[2]);
+                                        return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#a1a1aa" strokeWidth="0.7" strokeDasharray="4 2" opacity="0.4" />;
+                                    })}
+
+                                    {/* Highlighted glass face */}
+                                    {activeView && (
+                                        <motion.polygon key={activeView} points={pts(boxFaces[activeView])}
+                                            fill={vc[activeView].color} fillOpacity={0.15}
+                                            stroke={vc[activeView].color} strokeWidth="1.5" strokeDasharray="6 3"
+                                            initial={{ opacity: 0 }} animate={{ opacity: 1 }} />
+                                    )}
+
+                                    {/* L-shape solid faces */}
+                                    {shapeFaces.map((f, i) => (
+                                        <polygon key={i} points={pts(f.v)} fill={f.fill} stroke="#0e7490" strokeWidth="0.8" strokeLinejoin="round" />
+                                    ))}
+
+                                    {/* Face labels */}
+                                    {(() => {
+                                        const [fx, fy] = iso(1.5, -0.4, 1.5);
+                                        const [tx, ty] = iso(1.5, 1, 3.5);
+                                        const [sx, sy] = iso(3.5, 1, 1.5);
+                                        return <>
+                                            <text x={fx} y={fy} textAnchor="middle" className="text-[6px] font-bold" fill={activeView === 'front' ? vc.front.color : '#a1a1aa'}>ELEVATION</text>
+                                            <text x={tx} y={ty} textAnchor="middle" className="text-[6px] font-bold" fill={activeView === 'top' ? vc.top.color : '#a1a1aa'}>PLAN</text>
+                                            <text x={sx} y={sy} textAnchor="middle" className="text-[6px] font-bold" fill={activeView === 'side' ? vc.side.color : '#a1a1aa'}>END VIEW</text>
+                                        </>;
+                                    })()}
+                                </svg>
+                            </div>
+
+                            {/* 2D projection panel */}
+                            <AnimatePresence mode="wait">
+                                {activeView && (
+                                    <motion.div key={activeView}
+                                        initial={{ opacity: 0, x: 16 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -16 }}
+                                        className="flex flex-col items-center min-w-[160px]"
+                                    >
+                                        <p className="text-[10px] font-bold uppercase tracking-wider mb-3" style={{ color: vc[activeView].color }}>
+                                            2D Projection: {vc[activeView].sub}
+                                        </p>
+                                        <div className="p-4 rounded-xl border" style={{ backgroundColor: vc[activeView].color + '08', borderColor: vc[activeView].color + '30' }}>
+                                            {activeView === 'front' && (
+                                                <svg viewBox="0 0 106 106" width="120" height="120">
+                                                    <path d="M 8 98 L 98 98 L 98 68 L 38 68 L 38 8 L 8 8 Z"
+                                                        fill="#06b6d415" stroke="#06b6d4" strokeWidth="2" strokeLinejoin="round" />
+                                                </svg>
+                                            )}
+                                            {activeView === 'top' && (
+                                                <svg viewBox="0 0 106 76" width="120" height="86">
+                                                    <rect x="8" y="8" width="90" height="60" rx="1"
+                                                        fill="#10b98115" stroke="#10b981" strokeWidth="2" />
+                                                    <line x1="38" y1="8" x2="38" y2="68" stroke="#10b981" strokeWidth="1" strokeDasharray="4 3" />
+                                                </svg>
+                                            )}
+                                            {activeView === 'side' && (
+                                                <svg viewBox="0 0 76 106" width="86" height="120">
+                                                    <rect x="8" y="8" width="60" height="90" rx="1"
+                                                        fill="#a855f715" stroke="#a855f7" strokeWidth="2" />
+                                                    <line x1="8" y1="68" x2="68" y2="68" stroke="#a855f7" strokeWidth="1" strokeDasharray="4 3" />
+                                                </svg>
+                                            )}
+                                        </div>
+                                        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-3 max-w-[220px] text-center">
+                                            {activeView === 'front' && 'Looking straight at the front face — you see the distinctive L-profile.'}
+                                            {activeView === 'top' && 'Looking straight down — the full footprint. The dashed line shows the hidden step.'}
+                                            {activeView === 'side' && 'Looking from the side — base and tower overlap into a rectangle. The dashed line marks the base top.'}
+                                        </p>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </div>
+                    </motion.div>
+                ) : (
+                    <motion.div key="layout" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                        <div className="bg-zinc-50 dark:bg-zinc-900/30 rounded-xl border border-zinc-200 dark:border-zinc-700 p-4">
+                            <svg viewBox="0 0 260 260" className="w-full mx-auto" style={{ maxWidth: 380, display: 'block' }}>
+                                {/* Plan (top, green) */}
+                                <rect x="30" y="10" width="90" height="60" fill="#10b98112" stroke="#10b981" strokeWidth="1.5" rx="2" />
+                                <line x1="60" y1="10" x2="60" y2="70" stroke="#10b981" strokeWidth="0.8" strokeDasharray="3 2" />
+                                <text x="75" y="44" textAnchor="middle" className="text-[8px] font-bold" fill="#10b981">PLAN</text>
+
+                                {/* Elevation (bottom-left, cyan) — L-profile */}
+                                <path d="M 30 90 L 60 90 L 60 150 L 120 150 L 120 180 L 30 180 Z"
+                                    fill="#06b6d412" stroke="#06b6d4" strokeWidth="1.5" strokeLinejoin="round" />
+                                <text x="45" y="170" textAnchor="middle" className="text-[7px] font-bold" fill="#06b6d4">ELEVATION</text>
+
+                                {/* End View (bottom-right, purple) */}
+                                <rect x="140" y="90" width="60" height="90" fill="#a855f712" stroke="#a855f7" strokeWidth="1.5" rx="2" />
+                                <line x1="140" y1="150" x2="200" y2="150" stroke="#a855f7" strokeWidth="0.8" strokeDasharray="3 2" />
+                                <text x="170" y="135" textAnchor="middle" className="text-[7px] font-bold" fill="#a855f7">END VIEW</text>
+
+                                {/* Projection lines: plan to elevation (vertical) */}
+                                <line x1="30" y1="70" x2="30" y2="90" stroke="#a1a1aa" strokeWidth="0.6" strokeDasharray="2 2" />
+                                <line x1="60" y1="70" x2="60" y2="90" stroke="#a1a1aa" strokeWidth="0.6" strokeDasharray="2 2" />
+                                <line x1="120" y1="70" x2="120" y2="90" stroke="#a1a1aa" strokeWidth="0.6" strokeDasharray="2 2" />
+
+                                {/* Projection lines: elevation to end view (horizontal) */}
+                                <line x1="120" y1="90" x2="140" y2="90" stroke="#a1a1aa" strokeWidth="0.6" strokeDasharray="2 2" />
+                                <line x1="120" y1="150" x2="140" y2="150" stroke="#a1a1aa" strokeWidth="0.6" strokeDasharray="2 2" />
+                                <line x1="120" y1="180" x2="140" y2="180" stroke="#a1a1aa" strokeWidth="0.6" strokeDasharray="2 2" />
+
+                                {/* 45 degree transfer line */}
+                                <line x1="120" y1="70" x2="140" y2="90" stroke="#a1a1aa" strokeWidth="0.5" strokeDasharray="2 2" opacity="0.6" />
+                            </svg>
+                            <p className="text-center text-xs text-zinc-500 dark:text-zinc-400 mt-3">
+                                The glass box unfolded flat — this is your standard drawing layout. Projection lines connect corresponding edges across views.
+                            </p>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
+            {/* Flatten button */}
+            {allRevealed && (
+                <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="text-center mt-6">
+                    <button onClick={() => { setShowLayout(!showLayout); setActiveView(null); }}
+                        className="px-4 py-2.5 text-sm font-bold rounded-lg bg-cyan-500 hover:bg-cyan-600 text-white transition-colors"
+                    >
+                        {showLayout ? 'Back to 3D Box' : 'Flatten to Drawing Layout'}
+                    </button>
                 </motion.div>
-             </div>
-             <button onClick={() => setIsUnfolded(!isUnfolded)} className="px-4 py-2 bg-cyan-500 text-white font-bold rounded-lg">{isUnfolded ? 'Fold Box' : 'Unfold Box'}</button>
+            )}
+
+            {/* Progress hint */}
+            {revealed.size > 0 && revealed.size < 3 && !showLayout && (
+                <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mt-4">
+                    {3 - revealed.size} view{3 - revealed.size > 1 ? 's' : ''} remaining...
+                </p>
+            )}
         </div>
     );
 };

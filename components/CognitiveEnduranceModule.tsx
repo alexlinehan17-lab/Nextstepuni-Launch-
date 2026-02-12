@@ -19,18 +19,144 @@ const theme = orangeTheme;
 // --- INTERACTIVE COMPONENTS ---
 
 const AllostaticLoadVisualizer = () => {
+    const W = 400, H = 190;
+    const padL = 8, padR = 8, padT = 20, padB = 42;
+    const chartW = W - padL - padR;
+    const chartH = H - padT - padB;
+    const toX = (pct: number) => padL + pct * chartW;
+    const toY = (pct: number) => padT + chartH - pct * chartH;
+
+    // Timeline data: [x position %, stress level 0-1]
+    const points: [number, number][] = [
+        [0, 0.06], [0.05, 0.10], [0.12, 0.16],
+        [0.18, 0.24], [0.22, 0.30], [0.26, 0.24],
+        [0.34, 0.22], [0.40, 0.18],
+        [0.44, 0.10], [0.48, 0.08],             // summer dip
+        [0.52, 0.15], [0.58, 0.26], [0.64, 0.38],
+        [0.68, 0.44], [0.72, 0.42], [0.76, 0.52],
+        [0.80, 0.60], [0.84, 0.68], [0.87, 0.74],
+        [0.89, 0.68],                            // brief calm
+        [0.91, 0.86], [0.925, 0.76],             // exam spikes
+        [0.94, 0.92], [0.955, 0.82],
+        [0.97, 0.96], [0.985, 0.88], [1.0, 0.78],
+    ];
+
+    const coords = points.map(([px, py]) => [toX(px), toY(py)]);
+    let curvePath = `M ${coords[0][0]} ${coords[0][1]}`;
+    for (let i = 1; i < coords.length; i++) {
+        const [x, y] = coords[i];
+        const [px, py] = coords[i - 1];
+        curvePath += ` C ${px + (x - px) * 0.4} ${py}, ${px + (x - px) * 0.6} ${y}, ${x} ${y}`;
+    }
+    const areaPath = curvePath + ` L ${toX(1)} ${toY(0)} L ${toX(0)} ${toY(0)} Z`;
+
+    const phases = [
+        { start: 0, end: 0.40, label: '5th Year' },
+        { start: 0.40, end: 0.50, label: 'Summer' },
+        { start: 0.50, end: 0.78, label: '6th Year' },
+        { start: 0.78, end: 0.89, label: 'Pre-Exam' },
+        { start: 0.89, end: 1.0, label: 'Exams' },
+    ];
+
+    const yLevels = [
+        { pct: 0, label: 'Low' },
+        { pct: 0.33, label: 'Moderate' },
+        { pct: 0.66, label: 'High' },
+        { pct: 1.0, label: 'Critical' },
+    ];
+
     return (
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Leaving Cert Allostatic Load</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Your brain's "wear and tear" isn't constant. It builds over time and spikes during exam clusters.</p>
-             <div className="w-full h-40 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg p-4">
-                <svg viewBox="0 0 500 100" className="w-full h-full" preserveAspectRatio="none">
-                    <path d="M 0 90 C 100 80, 200 60, 300 50 L 400 40 L 410 20 L 420 40 L 430 30 L 440 10 L 450 35 L 500 30" fill="none" stroke="#f97316" strokeWidth="3" />
-                    <text x="50" y="95" fontSize="10" className="fill-zinc-400">5th Year</text>
-                    <text x="350" y="95" fontSize="10" className="fill-zinc-400">6th Year</text>
-                    <text x="450" y="95" fontSize="10" className="fill-rose-500 font-bold">Exams</text>
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Leaving Cert Allostatic Load</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Your brain's "wear and tear" builds over time and spikes during exam clusters.</p>
+            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">This is why endurance training matters — not just knowledge.</p>
+
+            <div className="bg-zinc-50 dark:bg-zinc-900/30 rounded-xl border border-zinc-200 dark:border-zinc-700 p-2 mb-4">
+                <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto">
+                    <defs>
+                        <linearGradient id="alLoadFill" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stopColor="#ef4444" stopOpacity="0.18" />
+                            <stop offset="50%" stopColor="#f97316" stopOpacity="0.08" />
+                            <stop offset="100%" stopColor="#f97316" stopOpacity="0" />
+                        </linearGradient>
+                        <linearGradient id="alStroke" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0%" stopColor="#fb923c" />
+                            <stop offset="65%" stopColor="#f97316" />
+                            <stop offset="85%" stopColor="#ef4444" />
+                            <stop offset="100%" stopColor="#dc2626" />
+                        </linearGradient>
+                    </defs>
+
+                    {/* Danger zone band */}
+                    <rect x={padL} y={padT} width={chartW} height={chartH * 0.28} fill="#ef4444" opacity="0.04" />
+                    <line x1={padL} y1={toY(0.72)} x2={W - padR} y2={toY(0.72)}
+                        stroke="#ef4444" strokeWidth="0.6" strokeDasharray="4 3" opacity="0.3" />
+                    <text x={W - padR - 4} y={toY(0.72) - 4} textAnchor="end"
+                        className="text-[5px] font-bold" fill="#ef4444" opacity="0.5">DANGER ZONE</text>
+
+                    {/* Y-axis gridlines + labels */}
+                    {yLevels.map(({ pct, label }) => (
+                        <g key={label}>
+                            <line x1={padL} y1={toY(pct)} x2={W - padR} y2={toY(pct)}
+                                stroke="#d4d4d8" strokeWidth="0.4" opacity="0.6" />
+                            <text x={padL + 4} y={toY(pct) - 4} textAnchor="start"
+                                className="text-[5.5px]" fill="#a1a1aa">{label}</text>
+                        </g>
+                    ))}
+
+                    {/* Phase dividers + labels */}
+                    {phases.map(({ start, end, label }, i) => {
+                        const isExam = label === 'Exams';
+                        const isPreExam = label === 'Pre-Exam';
+                        const isSummer = label === 'Summer';
+                        return (
+                            <g key={label}>
+                                {i > 0 && (
+                                    <line x1={toX(start)} y1={padT} x2={toX(start)} y2={H - padB}
+                                        stroke="#d4d4d8" strokeWidth="0.5" strokeDasharray="3 3" opacity="0.4" />
+                                )}
+                                <text x={toX((start + end) / 2)} y={H - padB + 14}
+                                    textAnchor="middle"
+                                    className="text-[7px] font-bold"
+                                    fill={isExam ? '#dc2626' : isPreExam ? '#ef4444' : isSummer ? '#10b981' : '#a1a1aa'}
+                                >
+                                    {label}
+                                </text>
+                            </g>
+                        );
+                    })}
+
+                    {/* Shaded area under curve */}
+                    <path d={areaPath} fill="url(#alLoadFill)" />
+
+                    {/* Main curve */}
+                    <motion.path
+                        d={curvePath}
+                        fill="none"
+                        stroke="url(#alStroke)"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        initial={{ pathLength: 0 }}
+                        animate={{ pathLength: 1 }}
+                        transition={{ duration: 2, ease: 'easeOut' }}
+                    />
+
+                    {/* Summer recovery annotation */}
+                    <circle cx={toX(0.48)} cy={toY(0.08)} r="3" fill="#10b981" />
+                    <text x={toX(0.48)} y={toY(0.08) + 12} textAnchor="middle"
+                        className="text-[5px] font-semibold" fill="#10b981">Recovery</text>
+
+                    {/* Peak load annotation */}
+                    <circle cx={toX(0.97)} cy={toY(0.96)} r="3" fill="#dc2626" />
+                    <text x={toX(0.97)} y={toY(0.96) - 7} textAnchor="middle"
+                        className="text-[5px] font-bold" fill="#dc2626">Peak Load</text>
+
                 </svg>
-             </div>
+            </div>
+
+            <p className="text-center text-xs text-zinc-500 dark:text-zinc-400">
+                The exam spikes aren't the real danger — it's the <span className="font-semibold text-orange-600 dark:text-orange-400">accumulated load underneath</span> that determines whether you crash or endure.
+            </p>
         </div>
     );
 };
