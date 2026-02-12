@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 import {
   Link2, Brain, Wand2, Gamepad2, Briefcase, Wind
 } from 'lucide-react';
@@ -14,25 +14,6 @@ import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = fuchsiaTheme;
-
-// --- INTERACTIVE COMPONENTS ---
-
-const WOOPPlanner = () => {
-    const [data, setData] = useState({wish: '', outcome: '', obstacle: '', plan: ''});
-    const update = (field: string, value: string) => setData(prev => ({...prev, [field]: value}));
-
-    return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">My WOOP Blueprint</h4>
-            <div className="space-y-4 mt-6">
-                <input value={data.wish} onChange={e => update('wish', e.target.value)} placeholder="WISH: What do you want to achieve?" className="w-full p-3 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg"/>
-                <input value={data.outcome} onChange={e => update('outcome', e.target.value)} placeholder="OUTCOME: What's the best feeling if you do?" className="w-full p-3 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg"/>
-                <input value={data.obstacle} onChange={e => update('obstacle', e.target.value)} placeholder="OBSTACLE: What *inside you* holds you back?" className="w-full p-3 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg"/>
-                <input value={data.plan} onChange={e => update('plan', e.target.value)} placeholder="PLAN: If [obstacle], then I will..." className="w-full p-3 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg"/>
-            </div>
-        </div>
-    );
-};
 
 // --- MODULE COMPONENT ---
 const ConnectingEducationToGoalsModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
@@ -84,8 +65,10 @@ const ConnectingEducationToGoalsModule: React.FC<{ onBack: () => void; progress:
           {activeSection === 4 && (
             <ReadingSection title="Playbook: The 'Why'." eyebrow="Step 5" icon={Gamepad2} theme={theme}>
               <p>This is where theory becomes action. The first phase is to build your "why"--a Future Time Perspective strong enough to withstand the stress of the exam year. There are two core exercises.</p>
-              <p>The first is the <Highlight description="A powerful, four-step goal-setting strategy: Wish, Outcome, Obstacle, Plan. It combines positive thinking with a realistic assessment of barriers." theme={theme}>WOOP Method</Highlight>. It's a scientifically-validated way to connect a long-term goal to your immediate actions. The second is <Highlight description="A brief writing exercise about your core personal values (e.g., family, creativity). It has been proven to buffer the brain against stress and raise grades in low-SES students." theme={theme}>Self-Affirmation Journaling</Highlight>, which acts as a psychological shield against "Stereotype Threat" (the fear that 'people like me' don't succeed).</p>
-              <WOOPPlanner />
+              <p>The first is <Highlight description="A brief writing exercise about your core personal values (e.g., family, creativity). It has been proven to buffer the brain against stress and raise grades in low-SES students." theme={theme}>Self-Affirmation Journaling</Highlight>, which acts as a psychological shield against "Stereotype Threat" (the fear that 'people like me' don't succeed). The second is a <Highlight description="A powerful, four-step goal-setting strategy: Wish, Outcome, Obstacle, Plan. It combines positive thinking with a realistic assessment of barriers. Covered in detail in the Best Possible Self module." theme={theme}>goal-obstacle planning method</Highlight> that forces you to pair your dream with the internal barriers that could stop it--then pre-plan solutions.</p>
+              <MicroCommitment theme={theme}>
+                <p>Take 5 minutes right now to write about one personal value that matters deeply to you (family, creativity, independence, helping others). Then write one sentence connecting that value to your schoolwork. This is Self-Affirmation in action.</p>
+              </MicroCommitment>
             </ReadingSection>
           )}
           {activeSection === 5 && (

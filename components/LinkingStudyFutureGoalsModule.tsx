@@ -5,7 +5,7 @@
 */
 
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import {
   Link2, Brain, Wand2, Gamepad2, Briefcase, DraftingCompass, Wind
 } from 'lucide-react';
@@ -45,23 +45,6 @@ const MotivationCalculator = () => {
             </div>
         </div>
     )
-};
-
-const WOOPPlanner = () => {
-    const [data, setData] = useState({wish: '', outcome: '', obstacle: '', plan: ''});
-    const update = (field: string, value: string) => setData(prev => ({...prev, [field]: value}));
-
-    return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">My WOOP Blueprint</h4>
-            <div className="space-y-4 mt-6">
-                <input value={data.wish} onChange={e => update('wish', e.target.value)} placeholder="WISH: What do you want to achieve?" className="w-full p-3 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg"/>
-                <input value={data.outcome} onChange={e => update('outcome', e.target.value)} placeholder="OUTCOME: What's the best feeling if you do?" className="w-full p-3 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg"/>
-                <input value={data.obstacle} onChange={e => update('obstacle', e.target.value)} placeholder="OBSTACLE: What *inside you* holds you back?" className="w-full p-3 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg"/>
-                <input value={data.plan} onChange={e => update('plan', e.target.value)} placeholder="PLAN: If [obstacle], then I will..." className="w-full p-3 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg"/>
-            </div>
-        </div>
-    );
 };
 
 const TransferableSkillsMatrix = () => {
@@ -112,7 +95,7 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
     { id: 'friction-point', title: 'The "Why Bother?" Problem', eyebrow: '01 // The Anatomy of Friction', icon: Wind },
     { id: 'horizon-of-purpose', title: 'The Horizon of Purpose', eyebrow: '02 // Future Time Perspective', icon: DraftingCompass },
     { id: 'writing-cure', title: 'The "Writing Cure"', eyebrow: '03 // Utility Value Interventions', icon: Wand2 },
-    { id: 'woop-protocol', title: 'From Dream to Plan', eyebrow: '04 // The WOOP Protocol', icon: Gamepad2 },
+    { id: 'dream-to-plan', title: 'From Dream to Plan', eyebrow: '04 // Mental Contrasting', icon: Gamepad2 },
     { id: 'becoming-the-author', title: 'Becoming the Author', eyebrow: '05 // Narrative & Autonomy', icon: Brain },
     { id: 'career-training', title: 'Curriculum as Career Training', eyebrow: '06 // Reframing the Work', icon: Briefcase },
     { id: 'purpose-protocol', title: 'The Purpose Protocol', eyebrow: '07 // The Action Plan', icon: Link2 },
@@ -145,9 +128,11 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
           )}
            {activeSection === 3 && (
             <ReadingSection title="From Dream to Plan." eyebrow="Step 4" icon={Gamepad2} theme={theme}>
-              <p>Just having a goal isn't enough. Research shows that pure positive fantasizing can actually lower your energy. To turn a dream into a plan, you need a tool called <Highlight description="A powerful, four-step goal-setting strategy developed by Gabriele Oettingen, based on the science of Mental Contrasting with Implementation Intentions." theme={theme}>WOOP</Highlight>: Wish, Outcome, Obstacle, Plan.</p>
-              <p>The magic is in the <strong>Obstacle</strong> step. By vividly imagining the internal barrier that stops you (e.g., "I get distracted by my phone"), you can create an "If-Then" plan to deal with it automatically. This transforms the obstacle from a motivation-killer into a trigger for a pre-planned, positive response.</p>
-              <WOOPPlanner />
+              <p>Just having a goal isn't enough. Research shows that pure positive fantasizing can actually <strong>lower</strong> your energy. The antidote is <Highlight description="A cognitive strategy where you vividly imagine your desired future, then immediately contrast it with the reality of the obstacles standing in your way. This creates a 'necessity to act' signal in the brain." theme={theme}>Mental Contrasting</Highlight>--deliberately pairing your dream with the internal barriers that could derail it.</p>
+              <p>The key insight: when you confront the obstacle <strong>before</strong> it happens, your brain pre-loads a solution. "If I get distracted by my phone, then I will put it in the kitchen." This transforms barriers from motivation-killers into triggers for pre-planned responses. The obstacle becomes the cue, not the excuse.</p>
+              <MicroCommitment theme={theme}>
+                <p>Think of your biggest study goal this week. Now name the single biggest internal obstacle (not "time" — something inside you, like "I'll get bored" or "I'll feel overwhelmed"). Finally, write one "If [obstacle], then I will [action]" sentence. You've just turned your barrier into a plan.</p>
+              </MicroCommitment>
             </ReadingSection>
           )}
            {activeSection === 4 && (
@@ -166,7 +151,7 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
           {activeSection === 6 && (
             <ReadingSection title="The Purpose Protocol." eyebrow="Step 7" icon={Link2} theme={theme}>
               <p>You now have the scientific toolkit to re-wire the connection between your present effort and your future self. This is the <strong>Purpose Protocol</strong>, a 5-phase plan for building sustainable motivation.</p>
-              <p><strong>Phase 1: The Audit.</strong> For each subject, ask "Why am I doing this?" If the only answer is "points," that's a friction point. Apply the Utility Value Writing exercise. <strong>Phase 2: The Vision.</strong> Spend 15 minutes writing a detailed description of your "Best Possible Self" 5 years from now. Then, use WOOP to plan your next study session. <strong>Phase 3: The Craft.</strong> Find one assignment this week and "course craft" it to make it your own. <strong>Phase 4: The Habit.</strong> Use "Tiny Habits" to make starting the work so small it's impossible to fail. <strong>Phase 5: Re-Authoring.</strong> If you feel stuck, externalize the problem ("The stress is visiting me") and map your skills from other areas (like gaming) to your schoolwork.</p>
+              <p><strong>Phase 1: The Audit.</strong> For each subject, ask "Why am I doing this?" If the only answer is "points," that's a friction point. Apply the Utility Value Writing exercise. <strong>Phase 2: The Vision.</strong> Spend 15 minutes writing a detailed description of your "Best Possible Self" 5 years from now. Then, use Mental Contrasting to pair your vision with your biggest obstacle. <strong>Phase 3: The Craft.</strong> Find one assignment this week and "course craft" it to make it your own. <strong>Phase 4: The Habit.</strong> Use "Tiny Habits" to make starting the work so small it's impossible to fail. <strong>Phase 5: Re-Authoring.</strong> If you feel stuck, externalize the problem ("The stress is visiting me") and map your skills from other areas (like gaming) to your schoolwork.</p>
               <MicroCommitment theme={theme}>
                 <p>Pick one phase, one protocol. Just one. Commit to trying it for one week. You're not just studying; you're becoming the architect of your own purpose.</p>
               </MicroCommitment>

@@ -7,7 +7,7 @@
 import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-    ArrowLeft, ArrowRight, Lightbulb, Zap, Clock, Shield, Wrench, RotateCcw,
+    ArrowLeft, ArrowRight, Zap, Clock, Shield, Wrench, RotateCcw,
     TrendingUp, Users, BookOpen, GitBranch, ChevronDown, ChevronUp, BookMarked,
     Lock, MapPin, Sparkles, AlertTriangle, MessageCircle, BookOpenCheck,
     ClipboardCheck, Home, School, Library, Coffee, Wifi, ArrowUp, ArrowDown,
@@ -1505,9 +1505,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                 <Settings size={16} className="text-zinc-500 dark:text-zinc-400" />
               </button>
             )}
-            <div className="w-12 h-12 bg-purple-500 dark:bg-purple-400 rounded-xl flex items-center justify-center text-white">
-              <Lightbulb size={24} strokeWidth={1.5} />
-            </div>
           </div>
         </div>
       </header>

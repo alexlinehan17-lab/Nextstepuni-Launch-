@@ -79,40 +79,153 @@ const MPMCalculator = () => {
 }
 
 const BoxBreathingVisualizer = () => {
-    const steps = ["Inhale...", "Hold...", "Exhale...", "Hold..."];
+    const [active, setActive] = useState(false);
+    const [phase, setPhase] = useState(0);
+    const [count, setCount] = useState(4);
+    const [cycle, setCycle] = useState(0);
+    const totalCycles = 3;
+
+    const phases = [
+      { label: 'Breathe In', color: 'text-cyan-500' },
+      { label: 'Hold', color: 'text-sky-400' },
+      { label: 'Breathe Out', color: 'text-teal-500' },
+      { label: 'Hold', color: 'text-sky-400' },
+    ];
+
+    const arcColors = ['#06b6d4', '#38bdf8', '#14b8a6', '#38bdf8'];
+    const radius = 88;
+
+    const getArcPath = (index: number) => {
+      const startAngle = (index * 90 - 90) * (Math.PI / 180);
+      const endAngle = ((index + 1) * 90 - 90) * (Math.PI / 180);
+      const x1 = 100 + radius * Math.cos(startAngle);
+      const y1 = 100 + radius * Math.sin(startAngle);
+      const x2 = 100 + radius * Math.cos(endAngle);
+      const y2 = 100 + radius * Math.sin(endAngle);
+      return `M ${x1} ${y1} A ${radius} ${radius} 0 0 1 ${x2} ${y2}`;
+    };
+
+    const breathScale = phase === 0 ? 1.3 : phase === 2 ? 0.7 : phase === 1 ? 1.3 : 0.7;
+
+    React.useEffect(() => {
+      if (!active) return;
+      const interval = setInterval(() => {
+        setCount(c => {
+          if (c <= 1) {
+            setPhase(p => {
+              const next = (p + 1) % 4;
+              if (next === 0) {
+                setCycle(cy => {
+                  if (cy + 1 >= totalCycles) {
+                    setActive(false);
+                    return 0;
+                  }
+                  return cy + 1;
+                });
+              }
+              return next;
+            });
+            return 4;
+          }
+          return c - 1;
+        });
+      }, 1000);
+      return () => clearInterval(interval);
+    }, [active]);
+
+    const handleStart = () => {
+      setPhase(0);
+      setCount(4);
+      setCycle(0);
+      setActive(true);
+    };
+
+    const done = !active && cycle === 0 && phase === 0;
+
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 flex flex-col items-center">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">4-4-4-4 Box Breathing</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Feeling panicked? Run this protocol.</p>
-             <div className="w-32 h-32 relative flex items-center justify-center">
-                <motion.div
-                    className="w-full h-full border-4 border-zinc-200 dark:border-zinc-700 rounded-lg"
-                    animate={{ rotate: [0, 90, 180, 270, 360] }}
-                    transition={{ duration: 16, repeat: Infinity, ease: 'linear' }}
-                />
-                 <motion.div
-                    className="absolute w-4 h-4 bg-amber-500 rounded-full"
-                    style={{ top: '-8px', left: '50%', x: '-50%'}}
-                    animate={{
-                        x: ['-50%', '-50%', 'calc(-50% + 64px)', 'calc(-50% + 64px)', 'calc(-50% - 64px)', 'calc(-50% - 64px)', '-50%', '-50%'],
-                        y: [0, '128px', '128px', 0, 0, '128px', '128px', 0],
-                    }}
-                    transition={{ duration: 16, repeat: Infinity, ease: 'linear', times: [0, 0.25, 0.25, 0.5, 0.5, 0.75, 0.75, 1]}}
-                />
-                 <AnimatePresence mode="wait">
-                    <motion.p
-                        key={Math.floor(Date.now() / 4000) % 4}
-                        className="absolute font-bold"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        {steps[Math.floor(Date.now() / 4000) % 4]}
-                    </motion.p>
-                 </AnimatePresence>
+     <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">4-4-4-4 Box Breathing</h4>
+         <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Feeling panicked? Run this protocol. 4 seconds per phase, 3 cycles.</p>
+
+         <div className="flex justify-center mb-6">
+           <div className="relative w-52 h-52">
+             <svg viewBox="0 0 200 200" className="w-full h-full absolute inset-0">
+               {[0, 1, 2, 3].map(i => (
+                 <motion.path
+                   key={i}
+                   d={getArcPath(i)}
+                   fill="none"
+                   stroke={arcColors[i]}
+                   strokeWidth={active && i === phase ? 6 : 3}
+                   strokeLinecap="round"
+                   animate={{
+                     opacity: active ? (i === phase ? 1 : 0.2) : 0.15,
+                     strokeWidth: active && i === phase ? 6 : 3,
+                   }}
+                   transition={{ duration: 0.4 }}
+                 />
+               ))}
+             </svg>
+
+             <div className={`absolute -top-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 0 ? 'text-cyan-500 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Inhale</div>
+             <div className={`absolute top-1/2 -right-10 -translate-y-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 1 ? 'text-sky-400 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Hold</div>
+             <div className={`absolute -bottom-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 2 ? 'text-teal-500 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Exhale</div>
+             <div className={`absolute top-1/2 -left-8 -translate-y-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 3 ? 'text-sky-400 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Hold</div>
+
+             <div className="absolute inset-0 flex items-center justify-center">
+               <motion.div
+                 animate={{
+                   scale: active ? breathScale : 1,
+                 }}
+                 transition={{ duration: 3.8, ease: 'easeInOut' }}
+                 className="w-28 h-28 rounded-full bg-cyan-50 dark:bg-cyan-950/30 border-2 border-cyan-200 dark:border-cyan-800/50 flex flex-col items-center justify-center"
+               >
+                 {active ? (
+                   <>
+                     <motion.p
+                       key={`${phase}-${count}`}
+                       initial={{ scale: 1.2, opacity: 0 }}
+                       animate={{ scale: 1, opacity: 1 }}
+                       className="text-3xl font-bold text-cyan-600 dark:text-cyan-400"
+                     >
+                       {count}
+                     </motion.p>
+                     <p className={`text-[10px] font-bold ${phases[phase].color}`}>{phases[phase].label}</p>
+                   </>
+                 ) : (
+                   <p className="text-xs font-semibold text-zinc-400 dark:text-zinc-500">Ready</p>
+                 )}
+               </motion.div>
              </div>
-        </div>
+           </div>
+         </div>
+
+         {active && (
+           <div className="flex justify-center gap-2 mb-6">
+             {Array.from({ length: totalCycles }).map((_, i) => (
+               <div key={i} className={`w-2 h-2 rounded-full transition-colors ${i < cycle ? 'bg-cyan-500' : i === cycle ? 'bg-cyan-300' : 'bg-zinc-200 dark:bg-zinc-700'}`} />
+             ))}
+           </div>
+         )}
+
+         <div className="flex justify-center">
+           {!active ? (
+             <button
+               onClick={handleStart}
+               className="px-6 py-2.5 bg-cyan-500 text-white font-bold text-sm rounded-xl hover:bg-cyan-600 shadow-lg shadow-cyan-500/20 transition-all"
+             >
+               {done ? 'Begin' : 'Start Again'}
+             </button>
+           ) : (
+             <button
+               onClick={() => setActive(false)}
+               className="px-6 py-2.5 bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-bold text-sm rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-600 transition-all"
+             >
+               Stop
+             </button>
+           )}
+         </div>
+    </div>
     );
 }
 
