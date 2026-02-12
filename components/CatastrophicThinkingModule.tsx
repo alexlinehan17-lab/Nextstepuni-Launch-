@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence, Reorder } from 'framer-motion';
 import {
-  MessageSquare, BrainCircuit, BookOpen, Wrench, Layers, Shield, Zap, Flag, Bus
+  MessageSquare, BrainCircuit, BookOpen, Wrench, Layers, Shield, Zap, Flag
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { slateTheme } from '../moduleThemes';
@@ -68,34 +68,168 @@ const GradedExposureHierarchy = () => {
     );
 };
 
+interface Passenger {
+  id: number;
+  text: string;
+  state: 'shouting' | 'acknowledged';
+}
+
 const PassengersOnBus = () => {
-    const [busState, setBusState] = useState<'driving'|'stopped'>('driving');
-    const [thought, setThought] = useState('');
+    const [passengers, setPassengers] = useState<Passenger[]>([
+      { id: 1, text: "You're going to fail.", state: 'shouting' },
+      { id: 2, text: "You're not smart enough.", state: 'shouting' },
+      { id: 3, text: "Everyone else is doing better.", state: 'shouting' },
+    ]);
+    const [argued, setArgued] = useState(0);
 
-    const thoughts = ["You're going to fail.", "You're not smart enough.", "Turn back now."];
+    const shoutingCount = passengers.filter(p => p.state === 'shouting').length;
+    const totalCount = passengers.length;
+    const allAcknowledged = shoutingCount === 0 && totalCount > 0;
 
-    React.useEffect(() => {
-        let interval: any;
-        if(busState === 'driving') {
-             interval = setInterval(() => {
-                setThought(thoughts[Math.floor(Math.random() * thoughts.length)]);
-                setTimeout(() => setThought(''), 1500);
-            }, 3000);
-        }
-        return () => clearInterval(interval);
-    }, [busState, thoughts]);
+    const spawnThoughts = [
+      "You'll embarrass yourself.",
+      "It's too late to catch up.",
+      "You should just give up.",
+      "What if you blank out completely?",
+    ];
+
+    const handleArgue = (id: number) => {
+      setArgued(a => a + 1);
+      // Arguing makes the thought louder and spawns a new one
+      const spawnText = spawnThoughts[argued % spawnThoughts.length];
+      setPassengers(prev => [
+        ...prev.map(p => p.id === id ? { ...p, text: p.text.toUpperCase() } : p),
+        { id: Date.now(), text: spawnText, state: 'shouting' },
+      ]);
+    };
+
+    const handleAcknowledge = (id: number) => {
+      setPassengers(prev =>
+        prev.map(p => p.id === id ? { ...p, state: 'acknowledged' } : p)
+      );
+    };
+
+    const handleReset = () => {
+      setPassengers([
+        { id: 1, text: "You're going to fail.", state: 'shouting' },
+        { id: 2, text: "You're not smart enough.", state: 'shouting' },
+        { id: 3, text: "Everyone else is doing better.", state: 'shouting' },
+      ]);
+      setArgued(0);
+    };
+
+    // Speed indicator
+    const speed = allAcknowledged ? 'Full Speed' : shoutingCount <= 1 ? 'Cruising' : shoutingCount <= 3 ? 'Slowing' : 'Stalled';
+    const speedColor = allAcknowledged ? 'text-emerald-500' : shoutingCount <= 1 ? 'text-emerald-400' : shoutingCount <= 3 ? 'text-amber-500' : 'text-rose-500';
+    const barWidth = allAcknowledged ? 100 : Math.max(5, Math.round(100 - (shoutingCount / Math.max(1, totalCount)) * 100));
+    const barColor = allAcknowledged ? 'bg-emerald-500' : shoutingCount <= 1 ? 'bg-emerald-400' : shoutingCount <= 3 ? 'bg-amber-500' : 'bg-rose-500';
 
     return (
          <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Passengers on the Bus</h4>
-             <div className="h-32 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-4 relative overflow-hidden">
-                <motion.div className="absolute" animate={{x: busState === 'driving' ? '150%' : '50%'}} transition={{duration: busState === 'driving' ? 5 : 0.5}}><Bus size={48} className="text-slate-700"/></motion.div>
-                {thought && <div className="absolute top-4 left-1/2 p-2 bg-white dark:bg-zinc-800 rounded-lg text-xs">{thought}</div>}
-             </div>
-             <div className="grid grid-cols-2 gap-4 mt-4">
-                <button onClick={() => setBusState('stopped')} className="p-4 bg-rose-100 text-rose-800 rounded-xl">Argue with Passenger (Bus Stops)</button>
-                <button onClick={() => setBusState('driving')} className="p-4 bg-emerald-100 text-emerald-800 rounded-xl">Acknowledge & Drive (Bus Moves)</button>
-             </div>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">You're driving toward your goal. Negative thoughts are passengers shouting at you.</p>
+            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">You can't kick them off. But you can choose how to respond.</p>
+
+            {/* Speed indicator */}
+            <div className="mb-6 p-4 bg-zinc-50 dark:bg-zinc-900/50 rounded-xl">
+              <div className="flex justify-between items-center mb-2">
+                <p className="text-xs font-bold text-zinc-500 dark:text-zinc-400">Progress Toward Your Goal</p>
+                <p className={`text-xs font-bold ${speedColor}`}>{speed}</p>
+              </div>
+              <div className="w-full h-2.5 bg-zinc-200 dark:bg-zinc-700 rounded-full overflow-hidden">
+                <motion.div
+                  className={`h-full rounded-full ${barColor}`}
+                  animate={{ width: `${barWidth}%` }}
+                  transition={{ type: 'spring', damping: 15, stiffness: 80 }}
+                />
+              </div>
+            </div>
+
+            {/* Passenger cards */}
+            <div className="space-y-3 mb-6">
+              <AnimatePresence>
+                {passengers.map(p => (
+                  <motion.div
+                    key={p.id}
+                    initial={{ opacity: 0, y: -10, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.9 }}
+                    transition={{ duration: 0.3 }}
+                    className={`p-4 rounded-xl border flex items-center justify-between gap-3 transition-colors ${
+                      p.state === 'shouting'
+                        ? 'bg-rose-50 dark:bg-rose-950/20 border-rose-200 dark:border-rose-800/50'
+                        : 'bg-zinc-50 dark:bg-zinc-900/30 border-zinc-200 dark:border-zinc-700'
+                    }`}
+                  >
+                    <div className="flex-1 min-w-0">
+                      <p className={`text-sm font-medium ${
+                        p.state === 'shouting'
+                          ? 'text-rose-700 dark:text-rose-300'
+                          : 'text-zinc-400 dark:text-zinc-500 line-through'
+                      }`}>
+                        {p.state === 'shouting' && (
+                          <motion.span
+                            animate={{ opacity: [1, 0.5, 1] }}
+                            transition={{ duration: 1.5, repeat: Infinity }}
+                            className="inline-block w-2 h-2 rounded-full bg-rose-500 mr-2 align-middle"
+                          />
+                        )}
+                        "{p.text}"
+                      </p>
+                      {p.state === 'acknowledged' && (
+                        <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-1">Still here. No longer in control.</p>
+                      )}
+                    </div>
+                    {p.state === 'shouting' && (
+                      <div className="flex gap-2 shrink-0">
+                        <button
+                          onClick={() => handleArgue(p.id)}
+                          className="px-3 py-1.5 text-[11px] font-bold bg-rose-100 dark:bg-rose-900/40 text-rose-700 dark:text-rose-300 rounded-lg hover:bg-rose-200 dark:hover:bg-rose-900/60 transition-colors"
+                        >
+                          Argue
+                        </button>
+                        <button
+                          onClick={() => handleAcknowledge(p.id)}
+                          className="px-3 py-1.5 text-[11px] font-bold bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-lg hover:bg-emerald-200 dark:hover:bg-emerald-900/60 transition-colors"
+                        >
+                          Acknowledge
+                        </button>
+                      </div>
+                    )}
+                  </motion.div>
+                ))}
+              </AnimatePresence>
+            </div>
+
+            {/* Feedback */}
+            {argued > 0 && shoutingCount > 3 && (
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="text-xs text-rose-500 dark:text-rose-400 font-medium text-center mb-4"
+              >
+                Notice: arguing created {passengers.length - 3} new thought{passengers.length - 3 > 1 ? 's' : ''}. Fighting thoughts makes them multiply.
+              </motion.p>
+            )}
+
+            {allAcknowledged && (
+              <motion.div
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="p-4 bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 rounded-xl text-sm text-emerald-700 dark:text-emerald-300 font-medium text-center mb-4"
+              >
+                The passengers are still on the bus — but you're driving. That's defusion.
+              </motion.div>
+            )}
+
+            <div className="flex justify-center">
+              <button
+                onClick={handleReset}
+                className="px-4 py-2 text-xs font-bold bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-600 transition-colors"
+              >
+                Reset
+              </button>
+            </div>
         </div>
     );
 }
