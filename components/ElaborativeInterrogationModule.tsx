@@ -63,6 +63,180 @@ const FlashcardFlipper = () => {
     );
 };
 
+const WHY_CHAIN_FACTS = [
+  {
+    fact: 'The left ventricle wall is thicker than the right ventricle wall.',
+    hints: [
+      'e.g. Because it needs to pump blood further…',
+      'e.g. Because the systemic circuit is longer…',
+      'e.g. Because blood must reach every cell…',
+    ],
+  },
+  {
+    fact: 'Plants appear green in colour.',
+    hints: [
+      'e.g. Because they reflect green wavelengths of light…',
+      'e.g. Because chlorophyll absorbs red and blue light…',
+      'e.g. Because those wavelengths drive photosynthesis most efficiently…',
+    ],
+  },
+  {
+    fact: 'Metals are good conductors of electricity.',
+    hints: [
+      'e.g. Because they have free-moving electrons…',
+      'e.g. Because metallic bonding leaves delocalised electrons…',
+      'e.g. Because delocalised electrons can carry charge through the lattice…',
+    ],
+  },
+];
+
+const CHAIN_COLORS = [
+  { border: 'border-l-zinc-400', bg: 'bg-zinc-50 dark:bg-zinc-700', label: 'text-zinc-500 dark:text-zinc-400' },
+  { border: 'border-l-blue-500', bg: 'bg-blue-50 dark:bg-blue-900/30', label: 'text-blue-600 dark:text-blue-400' },
+  { border: 'border-l-violet-500', bg: 'bg-violet-50 dark:bg-violet-900/30', label: 'text-violet-600 dark:text-violet-400' },
+  { border: 'border-l-emerald-500', bg: 'bg-emerald-50 dark:bg-emerald-900/30', label: 'text-emerald-600 dark:text-emerald-400' },
+];
+
+const DEPTH_LABELS = ['Starting Fact', 'Level 1', 'Level 2', 'Level 3'];
+
+const WhyChainBuilder = () => {
+  const [selectedFactIndex, setSelectedFactIndex] = useState<number | null>(null);
+  const [chain, setChain] = useState<string[]>([]);
+  const [currentInput, setCurrentInput] = useState('');
+  const [askingWhy, setAskingWhy] = useState(false);
+
+  const handleSelectFact = (index: number) => {
+    setSelectedFactIndex(index);
+    setChain([WHY_CHAIN_FACTS[index].fact]);
+    setCurrentInput('');
+    setAskingWhy(false);
+  };
+
+  const handleSubmitAnswer = () => {
+    if (!currentInput.trim()) return;
+    setChain((prev) => [...prev, currentInput.trim()]);
+    setCurrentInput('');
+    setAskingWhy(false);
+  };
+
+  const handleStartOver = () => {
+    setSelectedFactIndex(null);
+    setChain([]);
+    setCurrentInput('');
+    setAskingWhy(false);
+  };
+
+  const isComplete = chain.length === 4;
+  const currentLevel = chain.length;
+  const fact = selectedFactIndex !== null ? WHY_CHAIN_FACTS[selectedFactIndex] : null;
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Why-Chain Builder</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Pick a fact, then keep asking "Why?" to build deeper understanding.</p>
+
+      {selectedFactIndex === null ? (
+        <div className="space-y-3">
+          <p className="text-sm font-medium text-zinc-600 dark:text-zinc-300 text-center mb-2">Choose a starting fact:</p>
+          {WHY_CHAIN_FACTS.map((item, i) => (
+            <button key={i} onClick={() => handleSelectFact(i)} className="w-full text-left p-4 rounded-lg border border-zinc-200 dark:border-zinc-600 hover:border-pink-400 dark:hover:border-pink-400 transition-colors bg-zinc-50 dark:bg-zinc-700 text-zinc-800 dark:text-zinc-100 text-sm">
+              {item.fact}
+            </button>
+          ))}
+        </div>
+      ) : (
+        <div className="space-y-0">
+          {/* Chain links */}
+          <AnimatePresence>
+            {chain.map((text, i) => (
+              <React.Fragment key={i}>
+                {i > 0 && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="flex justify-center py-2 text-zinc-400 dark:text-zinc-500 text-xl select-none"
+                  >
+                    ↓
+                  </motion.div>
+                )}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, ease: 'easeOut' }}
+                  className={`p-4 rounded-lg border-l-4 ${CHAIN_COLORS[i].border} ${CHAIN_COLORS[i].bg}`}
+                >
+                  <span className={`text-xs font-semibold uppercase tracking-wide ${CHAIN_COLORS[i].label}`}>{DEPTH_LABELS[i]}</span>
+                  <p className="text-sm text-zinc-800 dark:text-zinc-100 mt-1">{text}</p>
+                </motion.div>
+              </React.Fragment>
+            ))}
+          </AnimatePresence>
+
+          {/* Why button or input or completion */}
+          {!isComplete && !askingWhy && (
+            <div className="flex justify-center py-4">
+              <motion.button
+                onClick={() => setAskingWhy(true)}
+                className="px-6 py-2.5 rounded-full bg-pink-500 text-white font-semibold text-sm shadow-lg hover:bg-pink-600 transition-colors"
+                animate={{ scale: [1, 1.05, 1] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+              >
+                Why?
+              </motion.button>
+            </div>
+          )}
+
+          {!isComplete && askingWhy && fact && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="mt-4 space-y-3"
+            >
+              <div className="flex justify-center py-2 text-zinc-400 dark:text-zinc-500 text-xl select-none">↓</div>
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  value={currentInput}
+                  onChange={(e) => setCurrentInput(e.target.value)}
+                  onKeyDown={(e) => { if (e.key === 'Enter') handleSubmitAnswer(); }}
+                  placeholder={fact.hints[currentLevel - 1] || 'Type your explanation…'}
+                  className="flex-1 px-4 py-2.5 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-700 text-sm text-zinc-800 dark:text-zinc-100 placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-pink-400"
+                  autoFocus
+                />
+                <button
+                  onClick={handleSubmitAnswer}
+                  disabled={!currentInput.trim()}
+                  className="px-5 py-2.5 rounded-lg bg-pink-500 text-white text-sm font-semibold disabled:opacity-40 hover:bg-pink-600 transition-colors"
+                >
+                  Submit
+                </button>
+              </div>
+            </motion.div>
+          )}
+
+          {isComplete && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="mt-6 p-6 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-700 text-center space-y-3"
+            >
+              <p className="font-serif text-lg font-semibold text-emerald-800 dark:text-emerald-300">You've built a 4-level deep understanding.</p>
+              <p className="text-sm text-emerald-700 dark:text-emerald-400">Each "Why?" created a new connection in your long-term memory. This is why elaboration beats rote learning.</p>
+              <button
+                onClick={handleStartOver}
+                className="mt-3 px-5 py-2 rounded-full bg-zinc-800 dark:bg-zinc-200 text-white dark:text-zinc-800 text-sm font-semibold hover:opacity-80 transition-opacity"
+              >
+                Start Over
+              </button>
+            </motion.div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+};
+
 // --- MODULE COMPONENT ---
 const ElaborativeInterrogationModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
@@ -96,6 +270,7 @@ const ElaborativeInterrogationModule: React.FC<{ onBack: () => void; progress: M
             <ReadingSection title="The STEM Toolkit." eyebrow="Step 3" icon={Cpu} theme={theme}>
               <p>For STEM subjects, EI is your secret weapon against rote learning. In Biology, it helps you bridge the gap between understanding a concept and knowing the specific keywords the marking scheme demands. Asking "Why is the cell membrane semi-permeable?" forces you to retrieve the key ideas of phospholipids and proteins.</p>
               <p>In Maths, EI is brilliant for <Highlight description="Understanding the 'why' behind a mathematical rule or formula, rather than just memorizing the 'how'." theme={theme}>conceptual understanding</Highlight>. Asking "Why does the integral of a velocity-time graph give distance?" cements the core idea. However, it's inefficient for <Highlight description="The ability to perform mathematical procedures quickly and accurately. This is built through repetitive practice, not constant questioning." theme={theme}>procedural fluency</Highlight>. Don't stop to ask "why" during every line of a long calculation in an exam; build that fluency through practice beforehand.</p>
+              <WhyChainBuilder />
             </ReadingSection>
           )}
            {activeSection === 3 && (

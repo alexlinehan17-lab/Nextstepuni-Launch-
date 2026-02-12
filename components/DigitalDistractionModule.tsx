@@ -103,6 +103,252 @@ const AttentionDeficitCalculator = () => {
     );
 };
 
+// --- PHASED DETOX ROADMAP ---
+const PHASES = [
+  {
+    number: 1,
+    title: 'Foundation',
+    range: 'Sept — Dec',
+    color: 'blue',
+    items: [
+      'Turn off all non-essential notifications',
+      'Set up a phone charging station outside bedroom',
+      'Install a website blocker (Cold Turkey / Freedom)',
+      "Create a 'study mode' shortcut on your phone",
+      'Tell one friend about your digital boundaries',
+    ],
+  },
+  {
+    number: 2,
+    title: 'Fortification',
+    range: 'Jan — Mar',
+    color: 'amber',
+    items: [
+      'Switch to greyscale mode during study hours',
+      'Delete social media apps (use browser only)',
+      "Set up scheduled 'online windows' (e.g. 6-7pm)",
+      'Create a distraction log — note every urge for one week',
+      'Establish a phone-free morning routine (first 30 min)',
+    ],
+  },
+  {
+    number: 3,
+    title: 'Monk Mode',
+    range: 'Apr — Jun',
+    color: 'rose',
+    items: [
+      'Remove all social media from phone completely',
+      'Use a basic phone or leave smartphone at home during study',
+      'Block all non-essential websites 24/7',
+      "Implement 'airplane mode' during all study blocks",
+      'Complete a full weekend digital detox',
+    ],
+  },
+] as const;
+
+const phaseStyles: Record<string, { accent: string; accentBg: string; checkBg: string; checkBorder: string; completedBorder: string; completedGlow: string; badge: string; text: string }> = {
+  blue: {
+    accent: 'border-l-blue-500',
+    accentBg: 'bg-blue-500',
+    checkBg: 'bg-blue-500',
+    checkBorder: 'border-blue-300 dark:border-blue-600',
+    completedBorder: 'border-blue-400 dark:border-blue-500',
+    completedGlow: 'shadow-blue-200/50 dark:shadow-blue-900/30',
+    badge: 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300',
+    text: 'text-blue-600 dark:text-blue-400',
+  },
+  amber: {
+    accent: 'border-l-amber-500',
+    accentBg: 'bg-amber-500',
+    checkBg: 'bg-amber-500',
+    checkBorder: 'border-amber-300 dark:border-amber-600',
+    completedBorder: 'border-amber-400 dark:border-amber-500',
+    completedGlow: 'shadow-amber-200/50 dark:shadow-amber-900/30',
+    badge: 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300',
+    text: 'text-amber-600 dark:text-amber-400',
+  },
+  rose: {
+    accent: 'border-l-rose-500',
+    accentBg: 'bg-rose-500',
+    checkBg: 'bg-rose-500',
+    checkBorder: 'border-rose-300 dark:border-rose-600',
+    completedBorder: 'border-rose-400 dark:border-rose-500',
+    completedGlow: 'shadow-rose-200/50 dark:shadow-rose-900/30',
+    badge: 'bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300',
+    text: 'text-rose-600 dark:text-rose-400',
+  },
+};
+
+const MotionDiv = motion.div as any;
+
+const PhasedDetoxRoadmap = () => {
+  const [checked, setChecked] = useState<Set<string>>(new Set());
+
+  const toggle = (key: string) => {
+    setChecked((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  };
+
+  const totalChecked = checked.size;
+  const totalItems = PHASES.reduce((s, p) => s + p.items.length, 0);
+  const allDone = totalChecked === totalItems;
+
+  /* Progress line: fraction of phases completed (by items) */
+  let cumulativeChecked = 0;
+  const phaseCompletions = PHASES.map((phase) => {
+    const phaseChecked = phase.items.filter((_, i) => checked.has(`${phase.number}-${i}`)).length;
+    cumulativeChecked += phaseChecked;
+    return { phaseChecked, phaseTotal: phase.items.length, done: phaseChecked === phase.items.length };
+  });
+  const progressPct = Math.round((totalChecked / totalItems) * 100);
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      {/* Header */}
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+        Phased Detox Roadmap
+      </h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-2">
+        Progressively build your digital fortress across the school year.
+      </p>
+
+      {/* Overall progress */}
+      <div className="text-center mb-8">
+        <MotionDiv
+          key={totalChecked}
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          className="inline-block"
+        >
+          <span className={`text-4xl font-bold tabular-nums ${allDone ? 'text-emerald-500' : 'text-zinc-700 dark:text-zinc-200'}`}>
+            {totalChecked}
+          </span>
+          <span className="text-lg font-bold text-zinc-400 ml-1">/ {totalItems}</span>
+        </MotionDiv>
+        <p className="text-sm font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">barriers activated</p>
+      </div>
+
+      {/* Timeline */}
+      <div className="relative pl-8 md:pl-10">
+        {/* Vertical progress line */}
+        <div className="absolute left-3 md:left-4 top-0 bottom-0 w-1 rounded-full bg-zinc-200 dark:bg-zinc-700">
+          <motion.div
+            className="w-full rounded-full bg-emerald-500"
+            animate={{ height: `${progressPct}%` }}
+            transition={{ type: 'spring', stiffness: 80, damping: 18 }}
+          />
+        </div>
+
+        <div className="space-y-8">
+          {PHASES.map((phase, pi) => {
+            const style = phaseStyles[phase.color];
+            const pc = phaseCompletions[pi];
+            const phaseDone = pc.done;
+
+            return (
+              <MotionDiv
+                key={phase.number}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: pi * 0.12 }}
+                className={`relative rounded-xl border-l-4 ${style.accent} border border-zinc-200 dark:border-zinc-700 p-5 md:p-6 transition-shadow duration-500 ${phaseDone ? `${style.completedBorder} shadow-lg ${style.completedGlow}` : ''}`}
+              >
+                {/* Dot on timeline */}
+                <div className={`absolute -left-[calc(2rem+10px)] md:-left-[calc(2.5rem+10px)] top-6 w-5 h-5 rounded-full border-4 border-white dark:border-zinc-800 ${phaseDone ? 'bg-emerald-500' : style.accentBg}`} />
+
+                {/* Phase header */}
+                <div className="flex flex-wrap items-center gap-2 mb-3">
+                  <span className={`text-xs font-bold px-2.5 py-0.5 rounded-full ${style.badge}`}>
+                    Phase {phase.number}
+                  </span>
+                  <h5 className="font-serif text-lg font-semibold text-zinc-800 dark:text-white">
+                    {phase.title}
+                  </h5>
+                  <span className="text-xs text-zinc-400 dark:text-zinc-500 ml-auto">{phase.range}</span>
+                </div>
+
+                {/* Progress count */}
+                <p className={`text-xs font-semibold mb-3 ${style.text}`}>
+                  {pc.phaseChecked}/{pc.phaseTotal} complete
+                </p>
+
+                {/* Checklist */}
+                <ul className="space-y-2.5">
+                  {phase.items.map((item, ii) => {
+                    const key = `${phase.number}-${ii}`;
+                    const isChecked = checked.has(key);
+                    return (
+                      <li key={key}>
+                        <button
+                          onClick={() => toggle(key)}
+                          className="flex items-start gap-3 w-full text-left group"
+                        >
+                          {/* Custom checkbox */}
+                          <MotionDiv
+                            className={`mt-0.5 flex-shrink-0 w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors ${isChecked ? `${style.checkBg} border-transparent` : `${style.checkBorder} bg-white dark:bg-zinc-900`}`}
+                            animate={isChecked ? { scale: [1, 1.25, 1] } : { scale: 1 }}
+                            transition={{ duration: 0.25 }}
+                          >
+                            {isChecked && (
+                              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="text-white">
+                                <path d="M2.5 6L5 8.5L9.5 3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                              </svg>
+                            )}
+                          </MotionDiv>
+                          <span className={`text-sm leading-snug transition-colors ${isChecked ? 'line-through text-zinc-400 dark:text-zinc-500' : 'text-zinc-700 dark:text-zinc-300 group-hover:text-zinc-900 dark:group-hover:text-white'}`}>
+                            {item}
+                          </span>
+                        </button>
+                      </li>
+                    );
+                  })}
+                </ul>
+
+                {/* Phase completion badge */}
+                <AnimatePresence>
+                  {phaseDone && (
+                    <MotionDiv
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: 'auto' }}
+                      exit={{ opacity: 0, height: 0 }}
+                      className="mt-4 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 text-center text-sm font-semibold text-emerald-700 dark:text-emerald-300"
+                    >
+                      Phase {phase.number} complete
+                    </MotionDiv>
+                  )}
+                </AnimatePresence>
+              </MotionDiv>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Celebration message */}
+      <AnimatePresence>
+        {allDone && (
+          <MotionDiv
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+            className="mt-8 p-5 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-300 dark:border-emerald-700 text-center"
+          >
+            <p className="font-serif text-lg font-semibold text-emerald-700 dark:text-emerald-300">
+              Full digital fortress activated.
+            </p>
+            <p className="text-sm text-emerald-600 dark:text-emerald-400 mt-1">
+              You&apos;ve removed every barrier between you and deep focus.
+            </p>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
 // --- MODULE COMPONENT ---
 const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
@@ -169,6 +415,7 @@ const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleP
           {activeSection === 6 && (
             <ReadingSection title="The Roadmap." eyebrow="Step 7" icon={Map} theme={theme}>
               <p>Implementing these barriers is a phased process over the Leaving Cert cycle. <strong>Phase 1: The Audit (Sept - Dec).</strong> Install RescueTime, identify your time sinks, and start with a Level 1 detox (phone out of the room at night). <strong>Phase 2: The Hardening (Jan - Mar).</strong> Introduce software blockers, an "Offline Internet," and "batch" your social communication. <strong>Phase 3: The Sprint (Apr - June).</strong> This is "Monk Mode." Switch to a "dumb phone," use "Locked Mode" on laptops, and consider deactivating social media accounts.</p>
+              <PhasedDetoxRoadmap />
               <MicroCommitment theme={theme}>
                 <p>Tonight, take your phone charger out of your bedroom and move it to the kitchen. This is your first, most important step in building a wall of friction.</p>
               </MicroCommitment>

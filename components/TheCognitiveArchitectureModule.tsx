@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Server, Filter, Archive, BrainCircuit, Moon, ClipboardCheck
@@ -36,6 +36,266 @@ const MemoryFlowVisualizer = () => {
       </div>
     </div>
   );
+};
+
+const MotionDiv = motion.div as any;
+
+// --- Chunking Challenge ---
+const CONSONANTS = 'BCDFGHJKLMNPQRSTVWXYZ'.split('');
+const CHUNKED_SETS = [
+  ['FBI', 'CIA', 'NSA', 'BBC'],
+  ['NBA', 'NFL', 'MLB', 'NHL'],
+  ['BMW', 'KFC', 'CNN', 'MTV'],
+  ['USB', 'GPS', 'VPN', 'PDF'],
+  ['DNA', 'MRI', 'CPR', 'NHS'],
+];
+
+type ChallengePhase = 'idle' | 'memorise' | 'recall' | 'scored';
+type ChallengeRound = 1 | 2;
+
+const generateRandomLetters = (): string[] => {
+  const letters: string[] = [];
+  for (let i = 0; i < 12; i++) {
+    letters.push(CONSONANTS[Math.floor(Math.random() * CONSONANTS.length)]);
+  }
+  return letters;
+};
+
+const pickChunkedSet = (): string[] => {
+  return CHUNKED_SETS[Math.floor(Math.random() * CHUNKED_SETS.length)];
+};
+
+const scoreAnswer = (correct: string[], answer: string): number => {
+  const cleaned = answer.toUpperCase().replace(/[^A-Z]/g, '');
+  let hits = 0;
+  for (let i = 0; i < correct.length; i++) {
+    if (cleaned[i] === correct[i]) hits++;
+  }
+  return hits;
+};
+
+const ChunkingChallenge = () => {
+  const [round, setRound] = useState<ChallengeRound>(1);
+  const [phase, setPhase] = useState<ChallengePhase>('idle');
+  const [countdown, setCountdown] = useState(5);
+  const [letters, setLetters] = useState<string[]>([]);
+  const [chunks, setChunks] = useState<string[]>([]);
+  const [input, setInput] = useState('');
+  const [scoreR1, setScoreR1] = useState<number | null>(null);
+  const [scoreR2, setScoreR2] = useState<number | null>(null);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const clearTimer = () => {
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
+  };
+
+  useEffect(() => {
+    return () => clearTimer();
+  }, []);
+
+  const startMemorisePhase = (letterArr: string[]) => {
+    setLetters(letterArr);
+    setPhase('memorise');
+    setCountdown(5);
+    setInput('');
+
+    clearTimer();
+    let t = 5;
+    timerRef.current = setInterval(() => {
+      t -= 1;
+      setCountdown(t);
+      if (t <= 0) {
+        clearTimer();
+        setPhase('recall');
+      }
+    }, 1000);
+  };
+
+  const handleStartRound1 = () => {
+    setRound(1);
+    setScoreR1(null);
+    setScoreR2(null);
+    const randomLetters = generateRandomLetters();
+    startMemorisePhase(randomLetters);
+  };
+
+  const handleStartRound2 = () => {
+    setRound(2);
+    const chunked = pickChunkedSet();
+    setChunks(chunked);
+    const allLetters = chunked.join('').split('');
+    startMemorisePhase(allLetters);
+  };
+
+  const handleSubmit = () => {
+    const score = scoreAnswer(letters, input);
+    if (round === 1) {
+      setScoreR1(score);
+      setPhase('scored');
+    } else {
+      setScoreR2(score);
+      setPhase('scored');
+    }
+  };
+
+  const handleReset = () => {
+    clearTimer();
+    setPhase('idle');
+    setRound(1);
+    setScoreR1(null);
+    setScoreR2(null);
+    setLetters([]);
+    setChunks([]);
+    setInput('');
+    setCountdown(5);
+  };
+
+  const displayLetters = () => {
+    if (round === 2 && chunks.length > 0) {
+      return chunks.join('   ');
+    }
+    return letters.join(' ');
+  };
+
+  // --- Results view ---
+  if (scoreR1 !== null && scoreR2 !== null) {
+    const maxBar = 12;
+    return (
+      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Results</h4>
+        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-8">How did chunking change your recall?</p>
+
+        <div className="space-y-6 max-w-md mx-auto">
+          {/* Unchunked bar */}
+          <div>
+            <div className="flex justify-between text-sm font-semibold mb-1">
+              <span className="text-zinc-700 dark:text-zinc-300">Unchunked (Random)</span>
+              <span className="text-rose-600 dark:text-rose-400">{scoreR1}/12</span>
+            </div>
+            <div className="h-6 w-full bg-zinc-100 dark:bg-zinc-700 rounded-full overflow-hidden">
+              <MotionDiv
+                initial={{ width: 0 }}
+                animate={{ width: `${(scoreR1 / maxBar) * 100}%` }}
+                transition={{ duration: 0.8, ease: 'easeOut' }}
+                className="h-full bg-rose-500 rounded-full"
+              />
+            </div>
+          </div>
+
+          {/* Chunked bar */}
+          <div>
+            <div className="flex justify-between text-sm font-semibold mb-1">
+              <span className="text-zinc-700 dark:text-zinc-300">Chunked (Acronyms)</span>
+              <span className="text-emerald-600 dark:text-emerald-400">{scoreR2}/12</span>
+            </div>
+            <div className="h-6 w-full bg-zinc-100 dark:bg-zinc-700 rounded-full overflow-hidden">
+              <MotionDiv
+                initial={{ width: 0 }}
+                animate={{ width: `${(scoreR2 / maxBar) * 100}%` }}
+                transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
+                className="h-full bg-emerald-500 rounded-full"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 p-4 bg-fuchsia-50 dark:bg-fuchsia-900/20 border border-fuchsia-200 dark:border-fuchsia-800 rounded-lg text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">
+          <strong>Same number of letters.</strong> But chunking compressed 12 items into 4 meaningful groups — well within your working memory's ~4 slot limit. This is why experts outperform novices: they chunk information into larger, meaningful units.
+        </div>
+
+        <div className="flex justify-center mt-6">
+          <button onClick={handleReset} className="px-5 py-2.5 bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold text-sm rounded-lg transition-colors">
+            Try Again
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // --- Idle: prompt to start ---
+  if (phase === 'idle') {
+    return (
+      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">The Chunking Challenge</h4>
+        <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-6 max-w-md mx-auto">Can you memorise 12 letters in 5 seconds? Two rounds will show you the power of chunking.</p>
+        <button onClick={handleStartRound1} className="px-5 py-2.5 bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold text-sm rounded-lg transition-colors">
+          Start Round 1
+        </button>
+      </div>
+    );
+  }
+
+  // --- Memorise phase ---
+  if (phase === 'memorise') {
+    return (
+      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">
+          {round === 1 ? 'Round 1: Random Letters' : 'Round 2: Chunked Letters'}
+        </h4>
+        <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-6">Memorise these letters!</p>
+
+        <MotionDiv
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="text-3xl md:text-4xl font-mono tracking-widest text-zinc-800 dark:text-white py-4"
+        >
+          {displayLetters()}
+        </MotionDiv>
+
+        <div className="mt-6">
+          <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-fuchsia-100 dark:bg-fuchsia-900/40 text-fuchsia-600 dark:text-fuchsia-300 text-2xl font-bold">
+            {countdown}
+          </span>
+        </div>
+      </div>
+    );
+  }
+
+  // --- Recall phase ---
+  if (phase === 'recall') {
+    return (
+      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">
+          {round === 1 ? 'Round 1: Recall' : 'Round 2: Recall'}
+        </h4>
+        <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-6">Type the 12 letters you saw (no spaces needed).</p>
+        <input
+          value={input}
+          onChange={e => setInput(e.target.value)}
+          placeholder="e.g. XKMBRF..."
+          maxLength={24}
+          autoFocus
+          className="w-full max-w-sm mx-auto block p-3 text-center text-lg font-mono tracking-widest border border-zinc-300 dark:border-zinc-600 rounded-lg bg-white dark:bg-zinc-900 text-zinc-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
+        />
+        <button
+          onClick={handleSubmit}
+          disabled={input.trim().length === 0}
+          className="mt-4 px-5 py-2.5 bg-emerald-500 hover:bg-emerald-600 disabled:opacity-40 text-white font-bold text-sm rounded-lg transition-colors"
+        >
+          Submit
+        </button>
+      </div>
+    );
+  }
+
+  // --- Scored (between rounds) ---
+  if (phase === 'scored' && round === 1) {
+    return (
+      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">Round 1 Score</h4>
+        <p className="text-4xl font-bold text-rose-500 mt-4">{scoreR1}/12</p>
+        <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-6">Now let's try the same task — but with chunked letters.</p>
+        <button onClick={handleStartRound2} className="px-5 py-2.5 bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold text-sm rounded-lg transition-colors">
+          Start Round 2
+        </button>
+      </div>
+    );
+  }
+
+  return null;
 };
 
 const WorkingMemorySimulator = () => {
@@ -119,6 +379,7 @@ const TheCognitiveArchitectureModule: React.FC<{ onBack: () => void; progress: M
             <ReadingSection title="The Working Memory Bottleneck." eyebrow="Step 2" icon={Filter} theme={theme}>
               <p>Your Short-Term Memory, or <Highlight description="The part of your mind that holds and actively manipulates a small amount of information for a short time. It's the 'RAM' of your brain." theme={theme}>Working Memory</Highlight>, is the biggest bottleneck in your learning. It's shockingly limited. Classic research suggested you can hold about 7 items, but for complex Leaving Cert topics, it's more like <strong>4 'chunks' of information</strong>.</p>
               <p>Even worse, without active effort, this information decays in about <strong>15-30 seconds</strong>. This is why you can read a whole page of a textbook and have no memory of it. The information entered your working memory but evaporated before it could be processed. Cramming jams this bottleneck, creating a fragile memory that feels strong but is quickly erased.</p>
+              <ChunkingChallenge/>
               <WorkingMemorySimulator/>
             </ReadingSection>
           )}

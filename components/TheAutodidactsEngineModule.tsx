@@ -14,9 +14,243 @@ import { cyanTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
+const MotionDiv = motion.div as any;
+
 const theme = cyanTheme;
 
 // --- INTERACTIVE COMPONENTS ---
+
+interface SplitPageProblem {
+  title: string;
+  equation: string;
+  steps: {
+    prompt: string;
+    expert: string;
+    keywords: string[];
+  }[];
+}
+
+const PROBLEMS: SplitPageProblem[] = [
+  {
+    title: 'Quadratic Equation',
+    equation: 'Solve: 2x\u00B2 + 5x \u2212 3 = 0',
+    steps: [
+      { prompt: 'Identify a, b, and c', expert: 'a = 2, b = 5, c = \u22123', keywords: ['2', '5', '-3'] },
+      { prompt: 'Write the quadratic formula', expert: 'x = (\u2212b \u00B1 \u221A(b\u00B2\u22124ac)) / 2a', keywords: ['b', '4ac', '2a', '\u00B1'] },
+      { prompt: 'Substitute values', expert: 'x = (\u22125 \u00B1 \u221A(25 + 24)) / 4', keywords: ['-5', '25', '24', '4'] },
+      { prompt: 'Simplify under the root', expert: 'x = (\u22125 \u00B1 \u221A49) / 4 = (\u22125 \u00B1 7) / 4', keywords: ['49', '7', '-5'] },
+      { prompt: 'Find both solutions', expert: 'x = 2/4 = 0.5  or  x = \u221212/4 = \u22123', keywords: ['0.5', '-3'] },
+    ],
+  },
+  {
+    title: 'Simultaneous Equations',
+    equation: 'Solve: 3x + 2y = 12  and  x \u2212 y = 1',
+    steps: [
+      { prompt: 'Rearrange the second equation for x', expert: 'x = 1 + y', keywords: ['1', 'y', 'x'] },
+      { prompt: 'Substitute into the first equation', expert: '3(1 + y) + 2y = 12 \u2192 3 + 3y + 2y = 12', keywords: ['1', 'y', '12', '3y', '2y'] },
+      { prompt: 'Solve for y', expert: '5y = 9 \u2192 y = 9/5 = 1.8', keywords: ['5y', '9', '1.8'] },
+      { prompt: 'Back-substitute to find x', expert: 'x = 1 + 1.8 = 2.8', keywords: ['2.8', '1.8'] },
+      { prompt: 'State the full solution', expert: 'x = 2.8, y = 1.8', keywords: ['2.8', '1.8'] },
+    ],
+  },
+];
+
+const SplitPageSimulator = () => {
+  const [problemIndex, setProblemIndex] = useState(0);
+  const [userInputs, setUserInputs] = useState<string[]>(['', '', '', '', '']);
+  const [revealed, setRevealed] = useState<boolean[]>([false, false, false, false, false]);
+  const [currentStep, setCurrentStep] = useState(0);
+  const [finished, setFinished] = useState(false);
+
+  const problem = PROBLEMS[problemIndex];
+
+  const resetState = () => {
+    setUserInputs(['', '', '', '', '']);
+    setRevealed([false, false, false, false, false]);
+    setCurrentStep(0);
+    setFinished(false);
+  };
+
+  const handleInputChange = (index: number, value: string) => {
+    const next = [...userInputs];
+    next[index] = value;
+    setUserInputs(next);
+  };
+
+  const handleReveal = (index: number) => {
+    const next = [...revealed];
+    next[index] = true;
+    setRevealed(next);
+    if (index < 4) {
+      setCurrentStep(index + 1);
+    } else {
+      setFinished(true);
+    }
+  };
+
+  const checkMatch = (index: number): boolean => {
+    const input = userInputs[index].toLowerCase();
+    const step = problem.steps[index];
+    const matched = step.keywords.filter((kw) => input.includes(kw.toLowerCase()));
+    return matched.length >= Math.ceil(step.keywords.length / 2);
+  };
+
+  const matchCount = problem.steps.reduce((acc, _, i) => acc + (revealed[i] && checkMatch(i) ? 1 : 0), 0);
+
+  const switchProblem = () => {
+    setProblemIndex((prev) => (prev + 1) % PROBLEMS.length);
+    resetState();
+  };
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+        Split-Page Simulator
+      </h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">
+        Attempt each step, then reveal the expert solution to see where your understanding breaks down.
+      </p>
+
+      {/* Problem Statement */}
+      <div className="mb-8 p-5 bg-cyan-50 dark:bg-cyan-950/40 border border-cyan-200 dark:border-cyan-800 rounded-xl text-center">
+        <span className="text-xs font-bold uppercase tracking-widest text-cyan-600 dark:text-cyan-400">
+          {problem.title}
+        </span>
+        <p className="mt-2 font-mono text-lg font-semibold text-zinc-800 dark:text-white">
+          {problem.equation}
+        </p>
+      </div>
+
+      {/* Steps */}
+      <div className="space-y-4">
+        {problem.steps.map((step, i) => {
+          const unlocked = i <= currentStep;
+          const isRevealed = revealed[i];
+          const match = isRevealed ? checkMatch(i) : null;
+
+          return (
+            <MotionDiv
+              key={`${problemIndex}-${i}`}
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: unlocked ? 1 : 0.4, y: 0 }}
+              transition={{ duration: 0.3, delay: i * 0.05 }}
+              className={`rounded-xl border p-5 transition-colors ${
+                isRevealed
+                  ? match
+                    ? 'border-emerald-300 dark:border-emerald-600 bg-emerald-50/50 dark:bg-emerald-950/20'
+                    : 'border-amber-300 dark:border-amber-600 bg-amber-50/50 dark:bg-amber-950/20'
+                  : 'border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800/60'
+              }`}
+            >
+              {/* Step Header */}
+              <div className="flex items-center gap-3 mb-3">
+                <span
+                  className={`flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-full text-xs font-bold ${
+                    isRevealed
+                      ? match
+                        ? 'bg-emerald-500 text-white'
+                        : 'bg-amber-500 text-white'
+                      : 'bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300'
+                  }`}
+                >
+                  {i + 1}
+                </span>
+                <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-200">
+                  {step.prompt}
+                </span>
+              </div>
+
+              {unlocked ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {/* User Attempt */}
+                  <div>
+                    <label className="block text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-1.5">
+                      Your Attempt
+                    </label>
+                    <input
+                      type="text"
+                      value={userInputs[i]}
+                      onChange={(e) => handleInputChange(i, e.target.value)}
+                      disabled={isRevealed}
+                      placeholder="Type your answer..."
+                      className="w-full px-4 py-2.5 text-sm bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400 dark:focus:ring-cyan-600 disabled:opacity-60 text-zinc-800 dark:text-white placeholder:text-zinc-400"
+                    />
+                  </div>
+
+                  {/* Expert Solution / Reveal Button */}
+                  <div>
+                    <label className="block text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-1.5">
+                      Expert Solution
+                    </label>
+                    <AnimatePresence mode="wait">
+                      {isRevealed ? (
+                        <MotionDiv
+                          key="expert"
+                          initial={{ opacity: 0, x: 20 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ duration: 0.35 }}
+                          className={`px-4 py-2.5 text-sm rounded-lg font-mono ${
+                            match
+                              ? 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-200'
+                              : 'bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-200'
+                          }`}
+                        >
+                          <span>{step.expert}</span>
+                          {!match && (
+                            <span className="block mt-1 text-xs italic text-amber-600 dark:text-amber-400">
+                              Compare your approach
+                            </span>
+                          )}
+                        </MotionDiv>
+                      ) : (
+                        <button
+                          onClick={() => handleReveal(i)}
+                          disabled={!userInputs[i].trim()}
+                          className="w-full px-4 py-2.5 text-sm font-semibold rounded-lg bg-cyan-600 hover:bg-cyan-700 text-white disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                        >
+                          Reveal Expert Solution
+                        </button>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                </div>
+              ) : (
+                <div className="h-10 rounded-lg bg-zinc-100 dark:bg-zinc-700/40 flex items-center justify-center">
+                  <span className="text-xs text-zinc-400 dark:text-zinc-500">Complete the previous step to unlock</span>
+                </div>
+              )}
+            </MotionDiv>
+          );
+        })}
+      </div>
+
+      {/* Summary */}
+      <AnimatePresence>
+        {finished && (
+          <MotionDiv
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mt-8 p-6 rounded-xl bg-cyan-50 dark:bg-cyan-950/30 border border-cyan-200 dark:border-cyan-800 text-center"
+          >
+            <p className="text-lg font-semibold text-zinc-800 dark:text-white mb-2">
+              You matched {matchCount}/5 steps.
+            </p>
+            <p className="text-sm text-zinc-600 dark:text-zinc-300 max-w-lg mx-auto">
+              The Split-Page Method forces you to attempt before you peek &mdash; this is active recall in disguise. Every mismatch is a learning opportunity, not a failure.
+            </p>
+            <button
+              onClick={switchProblem}
+              className="mt-5 px-6 py-2.5 text-sm font-semibold rounded-lg bg-cyan-600 hover:bg-cyan-700 text-white transition-colors"
+            >
+              Try Another Problem
+            </button>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
 
 const FourHighlighterAudit = () => {
     const [activeHighlighter, setActiveHighlighter] = useState<string | null>(null);
@@ -94,6 +328,7 @@ const TheAutodidactsEngineModule: React.FC<{ onBack: () => void; progress: Modul
             <ReadingSection title="The Maths Loop." eyebrow="Step 3" icon={Brain} theme={theme}>
               <p>In a subject like Maths, the "Teacher Proxy" is a full worked solution or marking scheme. The protocol is the <Highlight description="A technique where a student covers a worked solution, attempts only the first line, then uncovers the first line of the solution to compare. This creates a line-by-line feedback loop." theme={theme}>Split-Page Method</Highlight>. You cover the solution, attempt just one line of the problem, stop, then uncover the expert's first line. This creates a high-fidelity micro-feedback loop.</p>
               <p>If your step matches, you continue. If it's a mismatch, the learning begins. You must perform <Highlight description="The act of explaining a concept or the logic of a step to yourself. This forces deeper processing and is one of the most effective ways to build robust understanding." theme={theme}>Self-Explanation</Highlight>--writing down in your own words why the expert's step was better than yours. This forces you to confront the gap in your understanding and manually amplifies the learning signal in your brain.</p>
+              <SplitPageSimulator />
             </ReadingSection>
           )}
           {activeSection === 3 && (

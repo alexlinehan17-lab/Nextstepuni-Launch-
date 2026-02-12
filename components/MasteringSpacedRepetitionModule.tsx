@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Clock, BarChart2, CalendarDays, RadioTower, Wrench, Brain, RefreshCcw, TrendingDown
@@ -286,6 +286,205 @@ const ForgettingCurveVisualizer = () => {
 };
 
 
+const MotionDiv = motion.div as any;
+
+const CrammingVsSpacingShowdown = () => {
+  type Phase = 'idle' | 'day1' | 'day7' | 'day30' | 'done';
+  const [phase, setPhase] = useState<Phase>('idle');
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const clearTimers = () => {
+    if (timerRef.current) clearTimeout(timerRef.current);
+  };
+
+  useEffect(() => {
+    return () => clearTimers();
+  }, []);
+
+  const runExperiment = () => {
+    clearTimers();
+    setPhase('day1');
+    timerRef.current = setTimeout(() => {
+      setPhase('day7');
+      timerRef.current = setTimeout(() => {
+        setPhase('day30');
+        timerRef.current = setTimeout(() => {
+          setPhase('done');
+        }, 3000);
+      }, 3000);
+    }, 3000);
+  };
+
+  const reset = () => {
+    clearTimers();
+    setPhase('idle');
+  };
+
+  const scores: Record<string, { crammer: number; spacer: number }> = {
+    day1: { crammer: 85, spacer: 72 },
+    day7: { crammer: 35, spacer: 68 },
+    day30: { crammer: 12, spacer: 55 },
+  };
+
+  const currentPhaseKey = phase === 'done' ? 'day30' : phase;
+  const crammerScore = phase === 'idle' ? 0 : scores[currentPhaseKey as keyof typeof scores]?.crammer ?? 0;
+  const spacerScore = phase === 'idle' ? 0 : scores[currentPhaseKey as keyof typeof scores]?.spacer ?? 0;
+
+  const phaseLabel = (() => {
+    switch (phase) {
+      case 'day1': return 'Day 1: Cramming wins!';
+      case 'day7': return 'Day 7: Spacing wins by nearly 2x';
+      case 'day30':
+      case 'done': return 'Day 30: Crammer forgot almost everything';
+      default: return '';
+    }
+  })();
+
+  const transitionText = (() => {
+    switch (phase) {
+      case 'day7': return '7 days pass...';
+      case 'day30':
+      case 'done': return '30 days pass...';
+      default: return '';
+    }
+  })();
+
+  const barMaxH = 200;
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+        Cramming vs. Spacing Showdown
+      </h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">
+        Two students study the same 6 hours total. Who remembers more?
+      </p>
+      <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-8">
+        Run the experiment and watch what happens over time.
+      </p>
+
+      {/* Two lanes */}
+      <div className="grid grid-cols-2 gap-4 md:gap-6 mb-6">
+        {/* Crammer lane */}
+        <div className="p-4 md:p-6 bg-rose-50 dark:bg-rose-950/20 rounded-xl border border-rose-200 dark:border-rose-800/40 text-center">
+          <p className="font-bold text-rose-700 dark:text-rose-300 text-lg mb-1">Crammer</p>
+          <p className="text-xs text-rose-500 dark:text-rose-400 mb-6">6 hours the night before</p>
+          <div className="flex justify-center items-end mb-3" style={{ height: barMaxH }}>
+            <MotionDiv
+              className="w-16 md:w-20 rounded-t-lg bg-rose-400 dark:bg-rose-500 relative"
+              initial={{ height: 0 }}
+              animate={{ height: (crammerScore / 100) * barMaxH }}
+              transition={{ duration: 1, ease: 'easeOut' }}
+            >
+              {phase !== 'idle' && (
+                <MotionDiv
+                  className="absolute -top-7 left-0 right-0 text-center font-bold text-sm text-rose-700 dark:text-rose-300"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.8 }}
+                >
+                  {crammerScore}%
+                </MotionDiv>
+              )}
+            </MotionDiv>
+          </div>
+          <div className="h-1 bg-rose-200 dark:bg-rose-800/40 rounded-full" />
+        </div>
+
+        {/* Spacer lane */}
+        <div className="p-4 md:p-6 bg-emerald-50 dark:bg-emerald-950/20 rounded-xl border border-emerald-200 dark:border-emerald-800/40 text-center">
+          <p className="font-bold text-emerald-700 dark:text-emerald-300 text-lg mb-1">Spacer</p>
+          <p className="text-xs text-emerald-500 dark:text-emerald-400 mb-6">1 hour across 6 different days</p>
+          <div className="flex justify-center items-end mb-3" style={{ height: barMaxH }}>
+            <MotionDiv
+              className="w-16 md:w-20 rounded-t-lg bg-emerald-400 dark:bg-emerald-500 relative"
+              initial={{ height: 0 }}
+              animate={{ height: (spacerScore / 100) * barMaxH }}
+              transition={{ duration: 1, ease: 'easeOut' }}
+            >
+              {phase !== 'idle' && (
+                <MotionDiv
+                  className="absolute -top-7 left-0 right-0 text-center font-bold text-sm text-emerald-700 dark:text-emerald-300"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.8 }}
+                >
+                  {spacerScore}%
+                </MotionDiv>
+              )}
+            </MotionDiv>
+          </div>
+          <div className="h-1 bg-emerald-200 dark:bg-emerald-800/40 rounded-full" />
+        </div>
+      </div>
+
+      {/* Transition text */}
+      {transitionText && (
+        <MotionDiv
+          key={transitionText}
+          className="text-center text-lg font-serif font-semibold text-zinc-600 dark:text-zinc-300 mb-3"
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          {transitionText}
+        </MotionDiv>
+      )}
+
+      {/* Phase label */}
+      {phaseLabel && (
+        <MotionDiv
+          key={phaseLabel}
+          className={`text-center text-sm font-bold mb-6 ${
+            phase === 'day1'
+              ? 'text-rose-600 dark:text-rose-400'
+              : 'text-emerald-600 dark:text-emerald-400'
+          }`}
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          {phaseLabel}
+        </MotionDiv>
+      )}
+
+      {/* Final insight panel */}
+      {phase === 'done' && (
+        <MotionDiv
+          className="p-6 bg-sky-50 dark:bg-sky-950/20 rounded-xl border border-sky-200 dark:border-sky-800/40 text-center mb-6"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <p className="text-sm text-sky-800 dark:text-sky-200 font-medium leading-relaxed">
+            Same total study time. Radically different long-term results. Spacing works because each retrieval strengthens storage strength.
+          </p>
+        </MotionDiv>
+      )}
+
+      {/* Buttons */}
+      <div className="flex justify-center">
+        {phase === 'idle' && (
+          <button
+            onClick={runExperiment}
+            className="px-6 py-3 bg-sky-500 hover:bg-sky-600 text-white font-bold text-sm rounded-xl transition-colors"
+          >
+            Run Experiment
+          </button>
+        )}
+        {(phase === 'done') && (
+          <button
+            onClick={reset}
+            className="px-5 py-2.5 text-sm font-bold rounded-xl text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 transition-colors"
+          >
+            Reset
+          </button>
+        )}
+      </div>
+    </div>
+  );
+};
+
 const OptimalScheduleCalculator = () => {
     const [ri, setRi] = useState<string>('1_week');
 
@@ -345,6 +544,7 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
             <ReadingSection title="The Cramming Paradox." eyebrow="Step 2" icon={BarChart2} theme={theme}>
                 <p>If cramming is so bad, why does everyone do it? Because of a metacognitive trap called the <Highlight description="The common student experience where massed practice (cramming) leads to high immediate test performance but catastrophic long-term forgetting, reinforcing an ineffective study habit." theme={theme}>Cramming Paradox</Highlight>. For tests that happen immediately after studying (minutes or hours), cramming works. It keeps information active in your temporary working memory, creating a powerful "Illusion of Competence."</p>
                 <p>This gives you a false sense of security. You score well on the immediate test, which "rewards" the cramming behaviour. But the information never gets consolidated into long-term memory. As the research shows, for the same amount of study time, <Highlight description="Also called Distributed Practice. The method of spreading study sessions out over time, which is proven to be vastly superior to cramming for long-term retention." theme={theme}>Spaced Practice</Highlight> can triple the durability of your memory.</p>
+                <CrammingVsSpacingShowdown />
             </ReadingSection>
           )}
            {activeSection === 2 && (
