@@ -14,47 +14,207 @@ import { ModuleLayout } from './ModuleLayout';
 const theme = amberTheme;
 
 // --- INTERACTIVE COMPONENTS ---
+const triageQuestions = [
+    { text: 'Q1 — Comprehension: Read the passage and answer parts (a) to (d) on language and style.', subject: 'Paper 1', marks: 50, correct: 'green' as const, reason: 'Comprehension has guided sub-parts and predictable question types. 50 reliable marks — always do this first.' },
+    { text: 'Q5 — Composing: Write a personal essay in which you explore a moment that changed your perspective.', subject: 'Paper 1', marks: 100, correct: 'red' as const, reason: '100-mark essay is the biggest question on the paper. Needs planning, structure, and your best writing. Plan it during reading time, write it last when you know how much time you have.' },
+    { text: 'Q3 — Functional Writing: Write a letter to a newspaper editor arguing for or against a proposed local development.', subject: 'Paper 1', marks: 50, correct: 'green' as const, reason: 'Functional writing has a clear format and structure. If you know the conventions (address, date, register), this is fast, bankable marks.' },
+    { text: 'Q7 — Single Text: "Macbeth\'s downfall is entirely of his own making." Discuss with reference to the play.', subject: 'Paper 2', marks: 60, correct: 'amber' as const, reason: 'You know the play, but a 60-mark discuss question needs a structured argument with embedded quotes. Do it on your second pass with a clear plan.' },
+    { text: 'Q2(b) — Comprehension: Identify three persuasive techniques used in Text 2 and comment on their effectiveness.', subject: 'Paper 1', marks: 15, correct: 'green' as const, reason: 'A short, targeted comprehension question — spot the techniques, write a line on each. Quick marks with low risk.' },
+    { text: 'Q9 — Comparative Study: Compare how the theme of power is explored in at least two of your studied texts.', subject: 'Paper 2', marks: 70, correct: 'red' as const, reason: '70-mark comparative is the highest-stakes question on Paper 2. Needs a mode (theme, cultural context, or general vision) and sustained cross-referencing. Plan extensively, write last.' },
+    { text: 'Q8 — Poetry: Discuss how the poetry of a studied poet appealed to both your mind and your emotions.', subject: 'Paper 2', marks: 50, correct: 'amber' as const, reason: 'Poetry requires careful quote selection and close reading. You know the poems, but crafting a strong response takes focus — do it second pass.' },
+    { text: 'Q4 — Comprehension: Summarise the main argument of Text 3 in your own words (max 80 words).', subject: 'Paper 1', marks: 15, correct: 'green' as const, reason: 'A short summary with a word limit — read, condense, write. Minimal risk, fast completion.' },
+];
+
 const TriageSimulator = () => {
-    const questions = [
-        { id: 1, text: "A 'Describe' question on a topic you know well.", difficulty: 'green' },
-        { id: 2, text: "An 'Evaluate' question that requires a long essay plan.", difficulty: 'amber' },
-        { id: 3, text: "A multi-step maths problem on a topic you're weak on.", difficulty: 'red' },
-    ];
+    const [phase, setPhase] = useState<'ready' | 'drill' | 'done'>('ready');
     const [qIndex, setQIndex] = useState(0);
-    const [choices, setChoices] = useState<(string|null)[]>(Array(questions.length).fill(null));
+    const [choices, setChoices] = useState<(string | null)[]>(Array(triageQuestions.length).fill(null));
+    const [showFeedback, setShowFeedback] = useState(false);
+    const [timeLeft, setTimeLeft] = useState(40);
+    const [startTime, setStartTime] = useState(0);
+    const [answerTimes, setAnswerTimes] = useState<number[]>([]);
+    const [lastAnswerTime, setLastAnswerTime] = useState(0);
+
+    const colorMap = { green: { bg: 'bg-emerald-100 dark:bg-emerald-900/30', border: 'border-emerald-300 dark:border-emerald-700', text: 'text-emerald-700 dark:text-emerald-300', label: 'Do First', dot: 'bg-emerald-500' }, amber: { bg: 'bg-amber-100 dark:bg-amber-900/30', border: 'border-amber-300 dark:border-amber-700', text: 'text-amber-700 dark:text-amber-300', label: 'Do Second', dot: 'bg-amber-500' }, red: { bg: 'bg-rose-100 dark:bg-rose-900/30', border: 'border-rose-300 dark:border-rose-700', text: 'text-rose-700 dark:text-rose-300', label: 'Do Last', dot: 'bg-rose-500' } };
+
+    React.useEffect(() => {
+        if (phase !== 'drill' || showFeedback) return;
+        if (timeLeft <= 0) { setPhase('done'); return; }
+        const t = setTimeout(() => setTimeLeft(s => s - 1), 1000);
+        return () => clearTimeout(t);
+    }, [phase, timeLeft, showFeedback]);
+
+    const startDrill = () => {
+        setPhase('drill');
+        setQIndex(0);
+        setChoices(Array(triageQuestions.length).fill(null));
+        setAnswerTimes([]);
+        setTimeLeft(40);
+        setShowFeedback(false);
+        const now = Date.now();
+        setStartTime(now);
+        setLastAnswerTime(now);
+    };
 
     const handleChoice = (choice: string) => {
+        if (showFeedback) return;
+        const now = Date.now();
+        const elapsed = (now - lastAnswerTime) / 1000;
+        setLastAnswerTime(now);
+        setAnswerTimes(prev => [...prev, elapsed]);
         const newChoices = [...choices];
         newChoices[qIndex] = choice;
         setChoices(newChoices);
-        setTimeout(() => setQIndex(q => Math.min(q + 1, questions.length)), 1000);
+        setShowFeedback(true);
+        setTimeout(() => {
+            setShowFeedback(false);
+            if (qIndex + 1 >= triageQuestions.length) { setPhase('done'); }
+            else { setQIndex(q => q + 1); }
+        }, 1800);
     };
 
-    if (qIndex >= questions.length) {
+    const score = choices.filter((c, i) => c === triageQuestions[i].correct).length;
+    const totalTime = ((Date.now() - startTime) / 1000);
+
+    if (phase === 'ready') {
         return (
             <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
-                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Triage Complete</h4>
-                <button onClick={() => {setQIndex(0); setChoices(Array(questions.length).fill(null));}} className="mt-4 px-4 py-2 bg-amber-500 text-white font-bold text-sm rounded-lg">Run Drill Again</button>
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">Triage Drill</h4>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-2 max-w-md mx-auto">Reading time has started. You have <strong className="text-zinc-700 dark:text-zinc-200">40 seconds</strong> to categorise 8 exam questions as:</p>
+                <div className="flex justify-center gap-3 mb-6">
+                    {(['green', 'amber', 'red'] as const).map(c => (
+                        <span key={c} className={`px-3 py-1 rounded-full text-xs font-bold ${colorMap[c].bg} ${colorMap[c].text} border ${colorMap[c].border}`}>{colorMap[c].label}</span>
+                    ))}
+                </div>
+                <button onClick={startDrill} className="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm rounded-lg transition-colors">Start Triage</button>
             </div>
         );
     }
 
-    return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Triage Drill</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Reading time has started. Quickly categorize this question.</p>
+    if (phase === 'done') {
+        return (
+            <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Triage Results</h4>
+                <div className="flex justify-center gap-4 my-5">
+                    <div className="text-center px-5 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-700">
+                        <div className="text-2xl font-bold text-zinc-800 dark:text-white">{score}/{triageQuestions.length}</div>
+                        <div className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">Correct</div>
+                    </div>
+                    <div className="text-center px-5 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-700">
+                        <div className="text-2xl font-bold text-zinc-800 dark:text-white">{Math.round(totalTime)}s</div>
+                        <div className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">Total Time</div>
+                    </div>
+                    <div className="text-center px-5 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-700">
+                        <div className="text-2xl font-bold text-zinc-800 dark:text-white">{answerTimes.length > 0 ? (answerTimes.reduce((a,b) => a+b, 0) / answerTimes.length).toFixed(1) : '—'}s</div>
+                        <div className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">Avg / Question</div>
+                    </div>
+                </div>
+                <div className="space-y-2.5 mb-6">
+                    {triageQuestions.map((q, i) => {
+                        const got = choices[i];
+                        const correct = got === q.correct;
+                        const c = colorMap[q.correct];
+                        return (
+                            <div key={i} className={`p-3 rounded-lg border ${correct ? `${c.bg} ${c.border}` : 'bg-zinc-50 dark:bg-zinc-700/50 border-zinc-200 dark:border-zinc-600'}`}>
+                                <div className="flex items-start gap-2.5">
+                                    <span className={`mt-1 w-2 h-2 rounded-full flex-shrink-0 ${c.dot}`} />
+                                    <div className="flex-1 min-w-0">
+                                        <div className="flex items-center gap-2 flex-wrap">
+                                            <span className="text-xs font-bold text-zinc-400">{q.subject} · {q.marks}m</span>
+                                            {correct ? (
+                                                <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">Correct</span>
+                                            ) : (
+                                                <span className="text-xs font-bold text-rose-600 dark:text-rose-400">You said {got ? colorMap[got as keyof typeof colorMap].label : 'nothing'} — should be {c.label}</span>
+                                            )}
+                                            {answerTimes[i] !== undefined && <span className="text-xs text-zinc-400">{answerTimes[i].toFixed(1)}s</span>}
+                                        </div>
+                                        <p className="text-sm text-zinc-600 dark:text-zinc-300 mt-0.5">{q.text}</p>
+                                        {!correct && <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 italic">{q.reason}</p>}
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+                {score < triageQuestions.length && (
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400 text-center mb-4 italic">The goal is speed <strong>and</strong> accuracy. In the real exam, a wrong triage means wasting time on hard questions while easy marks go uncollected.</p>
+                )}
+                <div className="text-center">
+                    <button onClick={startDrill} className="px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm rounded-lg transition-colors">Run Drill Again</button>
+                </div>
+            </div>
+        );
+    }
+
+    const q = triageQuestions[qIndex];
+    const isCorrect = showFeedback && choices[qIndex] === q.correct;
+    const isWrong = showFeedback && choices[qIndex] !== q.correct;
+    const timerPct = (timeLeft / 40) * 100;
+
+    return (
+        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <div className="flex items-center justify-between mb-4">
+                <h4 className="font-serif text-lg font-semibold text-zinc-800 dark:text-white">Triage Drill</h4>
+                <div className="flex items-center gap-3">
+                    <span className="text-xs font-bold text-zinc-400">{qIndex + 1} / {triageQuestions.length}</span>
+                    <span className={`text-sm font-bold tabular-nums ${timeLeft <= 10 ? 'text-rose-500' : 'text-zinc-600 dark:text-zinc-300'}`}>{timeLeft}s</span>
+                </div>
+            </div>
+            {/* Timer bar */}
+            <div className="w-full h-1.5 bg-zinc-100 dark:bg-zinc-700 rounded-full mb-5">
+                <motion.div className={`h-full rounded-full ${timeLeft <= 10 ? 'bg-rose-500' : 'bg-amber-500'}`} animate={{ width: `${timerPct}%` }} transition={{ duration: 0.3 }} />
+            </div>
+            {/* Question card */}
             <AnimatePresence mode="wait">
-            <motion.div key={qIndex} initial={{opacity:0, x:20}} animate={{opacity:1, x:0}} exit={{opacity:0, x:-20}} className="p-6 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl text-center font-bold text-zinc-700 dark:text-zinc-200 min-h-[100px] flex items-center justify-center">
-                {questions[qIndex].text}
-            </motion.div>
+                <motion.div key={qIndex} initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }}
+                    className={`p-5 rounded-xl border min-h-[100px] flex flex-col justify-center mb-5 transition-colors ${
+                        isCorrect ? 'bg-emerald-50 dark:bg-emerald-900/30 border-emerald-300 dark:border-emerald-700' :
+                        isWrong ? 'bg-rose-50 dark:bg-rose-900/30 border-rose-300 dark:border-rose-700' :
+                        'bg-zinc-50 dark:bg-zinc-700/50 border-zinc-200 dark:border-zinc-600'
+                    }`}>
+                    <div className="flex items-center gap-2 mb-2">
+                        <span className="text-xs font-bold text-amber-600 dark:text-amber-400">{q.subject}</span>
+                        <span className="text-xs text-zinc-400">·</span>
+                        <span className="text-xs font-semibold text-zinc-400">{q.marks} marks</span>
+                    </div>
+                    <p className="font-semibold text-zinc-700 dark:text-zinc-200 text-sm">{q.text}</p>
+                    {showFeedback && (
+                        <motion.p initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} className={`text-xs mt-3 italic ${isCorrect ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
+                            {isCorrect ? 'Correct! ' : `Not quite — this is "${colorMap[q.correct].label}". `}{q.reason}
+                        </motion.p>
+                    )}
+                </motion.div>
             </AnimatePresence>
-            <div className="grid grid-cols-3 gap-3 mt-6">
-                <button onClick={() => handleChoice('green')} className="p-4 bg-emerald-100 text-emerald-800 font-bold rounded-xl border border-emerald-200 hover:border-emerald-400">Green</button>
-                <button onClick={() => handleChoice('amber')} className="p-4 bg-amber-100 text-amber-800 font-bold rounded-xl border border-amber-200 hover:border-amber-400">Amber</button>
-                <button onClick={() => handleChoice('red')} className="p-4 bg-rose-100 text-rose-800 font-bold rounded-xl border border-rose-200 hover:border-rose-400">Red</button>
+            {/* Choice buttons */}
+            <div className="grid grid-cols-3 gap-3">
+                {(['green', 'amber', 'red'] as const).map(c => {
+                    const cm = colorMap[c];
+                    const selected = showFeedback && choices[qIndex] === c;
+                    const isAnswer = showFeedback && q.correct === c;
+                    return (
+                        <button key={c} onClick={() => handleChoice(c)} disabled={showFeedback}
+                            className={`p-3 rounded-xl font-bold text-sm border transition-all ${
+                                isAnswer ? `${cm.bg} ${cm.text} ${cm.border} ring-2 ring-offset-1 ring-emerald-500` :
+                                selected && !isAnswer ? 'bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 border-rose-300 dark:border-rose-700' :
+                                `${cm.bg} ${cm.text} ${cm.border} hover:opacity-80`
+                            } ${showFeedback ? 'cursor-default' : 'cursor-pointer'}`}>
+                            <div className={`w-3 h-3 rounded-full ${cm.dot} mx-auto mb-1.5`} />
+                            {cm.label}
+                        </button>
+                    );
+                })}
+            </div>
+            {/* Progress dots */}
+            <div className="flex justify-center gap-1.5 mt-5">
+                {triageQuestions.map((_, i) => (
+                    <div key={i} className={`w-2 h-2 rounded-full transition-colors ${
+                        i < qIndex ? (choices[i] === triageQuestions[i].correct ? 'bg-emerald-500' : 'bg-rose-500') :
+                        i === qIndex ? 'bg-amber-500' : 'bg-zinc-200 dark:bg-zinc-600'
+                    }`} />
+                ))}
             </div>
         </div>
-    )
+    );
 }
 
 const MPMCalculator = () => {

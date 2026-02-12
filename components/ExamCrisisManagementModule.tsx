@@ -15,25 +15,149 @@ const theme = skyTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 const CognitionShiftVisualizer = () => {
-    const [isHot, setIsHot] = useState(false);
-    return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Hot vs. Cold Cognition</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Click the button to simulate what happens to your brain under exam stress.</p>
-             <div className="flex justify-center items-center gap-4">
-                <div className="text-center">
-                    <motion.div animate={{opacity: isHot ? 0.3 : 1}}><Brain size={48} className="text-blue-500 mx-auto"/></motion.div>
-                    <p className="font-bold text-sm mt-2">PFC (Cold)</p>
+    const [stress, setStress] = useState(20);
+
+    // Yerkes-Dodson: performance peaks around 45, collapses after 70
+    const perf = stress <= 45
+        ? 0.15 + (stress / 45) * 0.85
+        : Math.max(0.05, 1.0 - ((stress - 45) / 55) * 1.1);
+    const pfcPct = Math.max(5, Math.round((1 - stress / 100) * 100));
+    const amygPct = Math.max(5, Math.round((stress / 100) * 100));
+
+    const stages = [
+        { min: 0, max: 15, label: 'Calm', desc: 'Low arousal. Relaxed but unfocused — not enough adrenaline to perform.', color: '#60a5fa' },
+        { min: 15, max: 35, label: 'Focused', desc: 'Mild stress sharpens attention. PFC is fully online and working memory is strong.', color: '#34d399' },
+        { min: 35, max: 55, label: 'Optimal', desc: 'Peak performance zone. The right amount of adrenaline — alert, fast, accurate.', color: '#10b981' },
+        { min: 55, max: 72, label: 'Anxious', desc: 'Stress is tipping. Working memory starts to narrow. You re-read questions without absorbing them.', color: '#f59e0b' },
+        { min: 72, max: 88, label: 'Panic', desc: 'Amygdala hijack in progress. Heart racing, shallow breathing. PFC is losing control.', color: '#f97316' },
+        { min: 88, max: 101, label: 'Going Blank', desc: 'Full shutdown. You stare at the page and nothing comes. The PFC has gone offline.', color: '#ef4444' },
+    ];
+    const stage = stages.find(s => stress >= s.min && stress < s.max) || stages[stages.length - 1];
+
+    // SVG curve
+    const W = 420, H = 200;
+    const padL = 36, padR = 24, padT = 28, padB = 36;
+    const chartW = W - padL - padR, chartH = H - padT - padB;
+    const toX = (f: number) => padL + f * chartW;
+    const toY = (f: number) => padT + (1 - f) * chartH;
+
+    // Build Yerkes-Dodson curve
+    const curvePoints: { x: number; y: number }[] = [];
+    for (let i = 0; i <= 100; i += 2) {
+        const p = i <= 45
+            ? 0.15 + (i / 45) * 0.85
+            : Math.max(0.05, 1.0 - ((i - 45) / 55) * 1.1);
+        curvePoints.push({ x: toX(i / 100), y: toY(p) });
+    }
+    let curvePath = `M ${curvePoints[0].x} ${curvePoints[0].y}`;
+    for (let i = 1; i < curvePoints.length; i++) {
+        const prev = curvePoints[i - 1];
+        const cur = curvePoints[i];
+        const cx1 = prev.x + (cur.x - prev.x) * 0.4;
+        const cx2 = prev.x + (cur.x - prev.x) * 0.6;
+        curvePath += ` C ${cx1} ${prev.y}, ${cx2} ${cur.y}, ${cur.x} ${cur.y}`;
+    }
+    // Area path
+    const areaPath = curvePath + ` L ${curvePoints[curvePoints.length - 1].x} ${toY(0)} L ${curvePoints[0].x} ${toY(0)} Z`;
+
+    const dotX = toX(stress / 100);
+    const dotY = toY(perf);
+
+    return (
+        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Hot vs. Cold Cognition</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-5">Drag the slider to see how stress affects your brain during an exam.</p>
+
+            {/* SVG Curve */}
+            <svg viewBox={`0 0 ${W} ${H}`} className="w-full mb-1">
+                <defs>
+                    <linearGradient id="perf-grad" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0%" stopColor="#60a5fa" stopOpacity="0.15" />
+                        <stop offset="35%" stopColor="#10b981" stopOpacity="0.2" />
+                        <stop offset="55%" stopColor="#f59e0b" stopOpacity="0.15" />
+                        <stop offset="100%" stopColor="#ef4444" stopOpacity="0.1" />
+                    </linearGradient>
+                    <linearGradient id="perf-stroke" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0%" stopColor="#60a5fa" />
+                        <stop offset="35%" stopColor="#10b981" />
+                        <stop offset="55%" stopColor="#f59e0b" />
+                        <stop offset="100%" stopColor="#ef4444" />
+                    </linearGradient>
+                </defs>
+                {/* Grid */}
+                {[0.25, 0.5, 0.75, 1.0].map(v => (
+                    <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#a1a1aa" strokeOpacity="0.12" strokeDasharray="3 3" />
+                ))}
+                <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#a1a1aa" strokeOpacity="0.25" />
+                {/* Optimal zone band */}
+                <rect x={toX(0.30)} y={padT} width={toX(0.60) - toX(0.30)} height={chartH} fill="#10b981" fillOpacity="0.06" rx="4" />
+                <text x={(toX(0.30) + toX(0.60)) / 2} y={toY(0) - 4} fontSize="7" fill="#10b981" textAnchor="middle" fontWeight="700" opacity="0.6">OPTIMAL ZONE</text>
+                {/* Area fill */}
+                <path d={areaPath} fill="url(#perf-grad)" />
+                {/* Curve line */}
+                <path d={curvePath} fill="none" stroke="url(#perf-stroke)" strokeWidth="2.5" strokeLinecap="round" />
+                {/* Vertical tracking line */}
+                <line x1={dotX} x2={dotX} y1={dotY} y2={toY(0)} stroke={stage.color} strokeWidth="1" strokeDasharray="4 3" opacity="0.5" />
+                {/* Dot */}
+                <circle cx={dotX} cy={dotY} r="5" fill={stage.color} stroke="#fff" strokeWidth="2" />
+                <circle cx={dotX} cy={dotY} r="9" fill={stage.color} fillOpacity="0.15" />
+                {/* Y-axis */}
+                <text x={padL - 4} y={toY(1.0) + 3} fontSize="8" fill="#a1a1aa" textAnchor="end" fontWeight="600">High</text>
+                <text x={padL - 4} y={toY(0) + 3} fontSize="8" fill="#a1a1aa" textAnchor="end" fontWeight="600">Low</text>
+                <text x={padL - 4} y={toY(0.5) + 3} fontSize="7" fill="#a1a1aa" textAnchor="end">Med</text>
+                {/* X-axis labels */}
+                <text x={toX(0)} y={toY(0) + 14} fontSize="8" fill="#a1a1aa" textAnchor="middle" fontWeight="600">Low</text>
+                <text x={toX(0.5)} y={toY(0) + 14} fontSize="8" fill="#a1a1aa" textAnchor="middle" fontWeight="600">Moderate</text>
+                <text x={toX(1)} y={toY(0) + 14} fontSize="8" fill="#a1a1aa" textAnchor="middle" fontWeight="600">Extreme</text>
+                {/* Axis titles */}
+                <text x={padL - 4} y={toY(0.5) - 14} fontSize="8" fill="#71717a" textAnchor="end" fontWeight="700" transform={`rotate(-90, ${padL - 16}, ${toY(0.5)})`}>Performance</text>
+                <text x={toX(0.5)} y={toY(0) + 28} fontSize="8" fill="#71717a" textAnchor="middle" fontWeight="700">Stress / Arousal</text>
+            </svg>
+
+            {/* Slider */}
+            <div className="px-2">
+                <input type="range" min="0" max="100" value={stress} onChange={e => setStress(Number(e.target.value))}
+                    className="w-full h-2 rounded-full appearance-none cursor-pointer"
+                    style={{ accentColor: stage.color, background: `linear-gradient(to right, #60a5fa, #10b981 35%, #f59e0b 55%, #ef4444)` }} />
+            </div>
+
+            {/* Stage label + description */}
+            <div className="mt-5 flex items-start gap-4 p-4 rounded-xl border transition-colors" style={{ borderColor: stage.color + '40', backgroundColor: stage.color + '0a' }}>
+                <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: stage.color + '20' }}>
+                    {stress < 55 ? <Brain size={20} style={{ color: stage.color }} /> : <Zap size={20} style={{ color: stage.color }} />}
                 </div>
-                <div className="w-24 text-center">&harr;</div>
-                <div className="text-center">
-                     <motion.div animate={{opacity: isHot ? 1 : 0.3}}><Zap size={48} className="text-rose-500 mx-auto"/></motion.div>
-                     <p className="font-bold text-sm mt-2">Amygdala (Hot)</p>
+                <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 mb-1">
+                        <span className="font-bold text-sm" style={{ color: stage.color }}>{stage.label}</span>
+                        <span className="text-xs text-zinc-400">Stress: {stress}%</span>
+                    </div>
+                    <p className="text-sm text-zinc-600 dark:text-zinc-300">{stage.desc}</p>
                 </div>
-             </div>
-             <div className="text-center mt-6">
-                <button onClick={() => setIsHot(!isHot)} className="px-4 py-2 bg-rose-500 text-white font-bold text-sm rounded-lg">{isHot ? 'De-escalate Threat' : 'Trigger Threat'}</button>
-             </div>
+            </div>
+
+            {/* PFC vs Amygdala bars */}
+            <div className="grid grid-cols-2 gap-3 mt-4">
+                <div className="p-3 rounded-lg bg-zinc-50 dark:bg-zinc-700/50">
+                    <div className="flex items-center justify-between mb-1.5">
+                        <span className="text-xs font-bold text-blue-600 dark:text-blue-400 flex items-center gap-1"><Brain size={12} /> PFC (Cold)</span>
+                        <span className="text-xs font-bold text-zinc-500">{pfcPct}%</span>
+                    </div>
+                    <div className="w-full h-2 bg-zinc-200 dark:bg-zinc-600 rounded-full">
+                        <motion.div className="h-full bg-blue-500 rounded-full" animate={{ width: `${pfcPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }} />
+                    </div>
+                    <p className="text-xs text-zinc-400 mt-1">Logic, planning, working memory</p>
+                </div>
+                <div className="p-3 rounded-lg bg-zinc-50 dark:bg-zinc-700/50">
+                    <div className="flex items-center justify-between mb-1.5">
+                        <span className="text-xs font-bold text-rose-600 dark:text-rose-400 flex items-center gap-1"><Zap size={12} /> Amygdala (Hot)</span>
+                        <span className="text-xs font-bold text-zinc-500">{amygPct}%</span>
+                    </div>
+                    <div className="w-full h-2 bg-zinc-200 dark:bg-zinc-600 rounded-full">
+                        <motion.div className="h-full bg-rose-500 rounded-full" animate={{ width: `${amygPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }} />
+                    </div>
+                    <p className="text-xs text-zinc-400 mt-1">Fear, threat detection, survival mode</p>
+                </div>
+            </div>
         </div>
     );
 };
