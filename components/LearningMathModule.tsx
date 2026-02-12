@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Target, Brain, SlidersHorizontal, AlertTriangle, PenTool, Key, BookOpen, Wrench
@@ -71,6 +71,227 @@ const ProblemSorter = () => {
     );
 }
 
+const MotionDiv = motion.div as any;
+
+type PaperQuestion = {
+  id: number;
+  text: string;
+  answer: 'paper1' | 'paper2';
+  explanation: string;
+};
+
+const PAPER_QUESTIONS: PaperQuestion[] = [
+  { id: 1, text: 'Solve 2x\u00B2 + 5x \u2212 3 = 0', answer: 'paper1', explanation: 'Pure algebra \u2192 Paper 1' },
+  { id: 2, text: 'A farmer encloses a field with 200\u202Fm of fencing. Find the maximum area.', answer: 'paper2', explanation: 'Real-world context \u2192 Paper 2' },
+  { id: 3, text: 'Differentiate f(x) = 3x\u2074 \u2212 2x + 7', answer: 'paper1', explanation: 'Pure calculus \u2192 Paper 1' },
+  { id: 4, text: 'A survey of 100 students found that 60 play sport. Find the margin of error.', answer: 'paper2', explanation: 'Statistics in context \u2192 Paper 2' },
+  { id: 5, text: 'Prove that \u221A2 is irrational.', answer: 'paper1', explanation: 'Pure proof \u2192 Paper 1' },
+  { id: 6, text: 'A ball is thrown upward at 20\u202Fm/s. When does it reach maximum height?', answer: 'paper2', explanation: 'Applied context \u2192 Paper 2' },
+  { id: 7, text: 'Find the sum of the first 20 terms of the series 3 + 6 + 12 + \u2026', answer: 'paper1', explanation: 'Pure sequences \u2192 Paper 1' },
+  { id: 8, text: 'The probability of rain on any day is 0.3. Find P(rain on exactly 2 of 5 days).', answer: 'paper2', explanation: 'Probability in context \u2192 Paper 2' },
+  { id: 9, text: 'Solve |2x \u2212 3| > 5', answer: 'paper1', explanation: 'Pure algebra \u2192 Paper 1' },
+  { id: 10, text: 'A company\u2019s profit is modelled by P(x) = \u22122x\u00B2 + 40x \u2212 100. Find the break-even points.', answer: 'paper2', explanation: 'Real-world modelling \u2192 Paper 2' },
+  { id: 11, text: 'Find the equation of the line perpendicular to 3x + 4y = 12 passing through (1, 2).', answer: 'paper1', explanation: 'Pure coordinate geometry \u2192 Paper 1' },
+  { id: 12, text: 'A clinical trial tests a new drug. 45 out of 200 patients improved. Conduct a hypothesis test at 5% significance.', answer: 'paper2', explanation: 'Statistics in context \u2192 Paper 2' },
+];
+
+function shuffleArray<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+const PaperPredictorGame = () => {
+  const [phase, setPhase] = useState<'intro' | 'playing' | 'results'>('intro');
+  const [questions, setQuestions] = useState<PaperQuestion[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [score, setScore] = useState(0);
+  const [streak, setStreak] = useState(0);
+  const [bestStreak, setBestStreak] = useState(0);
+  const [feedback, setFeedback] = useState<{ correct: boolean; explanation: string } | null>(null);
+  const [elapsedTime, setElapsedTime] = useState(0);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const startTimeRef = useRef<number>(0);
+
+  const startGame = () => {
+    const shuffled = shuffleArray(PAPER_QUESTIONS);
+    setQuestions(shuffled);
+    setCurrentIndex(0);
+    setScore(0);
+    setStreak(0);
+    setBestStreak(0);
+    setFeedback(null);
+    setElapsedTime(0);
+    setPhase('playing');
+    startTimeRef.current = Date.now();
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = setInterval(() => {
+      setElapsedTime(Math.floor((Date.now() - startTimeRef.current) / 1000));
+    }, 500);
+  };
+
+  const handleAnswer = (answer: 'paper1' | 'paper2') => {
+    if (feedback) return;
+    const q = questions[currentIndex];
+    const correct = answer === q.answer;
+
+    if (correct) {
+      const newStreak = streak + 1;
+      setScore(s => s + 1);
+      setStreak(newStreak);
+      if (newStreak > bestStreak) setBestStreak(newStreak);
+    } else {
+      setStreak(0);
+    }
+
+    setFeedback({ correct, explanation: q.explanation });
+
+    const delay = correct ? 400 : 1200;
+    setTimeout(() => {
+      const nextIndex = currentIndex + 1;
+      if (nextIndex >= questions.length) {
+        if (timerRef.current) clearInterval(timerRef.current);
+        setElapsedTime(Math.floor((Date.now() - startTimeRef.current) / 1000));
+        setPhase('results');
+      } else {
+        setCurrentIndex(nextIndex);
+      }
+      setFeedback(null);
+    }, delay);
+  };
+
+  const formatTime = (s: number) => {
+    const mins = Math.floor(s / 60);
+    const secs = s % 60;
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
+  };
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Paper Predictor</h4>
+
+      {phase === 'intro' && (
+        <div className="text-center mt-6">
+          <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-2">
+            <strong>Paper 1</strong> = Pure / Technical. <strong>Paper 2</strong> = Context / Applied.
+          </p>
+          <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">Can you sort 12 question stems as fast as possible?</p>
+          <button
+            onClick={startGame}
+            className="px-8 py-3 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-semibold text-sm hover:opacity-90 transition-opacity"
+          >
+            Start Game
+          </button>
+        </div>
+      )}
+
+      {phase === 'playing' && questions.length > 0 && (
+        <div className="mt-6">
+          {/* Stats pills */}
+          <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
+            <span className="px-3 py-1 rounded-full text-xs font-medium bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300">
+              {currentIndex + 1} / {questions.length}
+            </span>
+            <span className="px-3 py-1 rounded-full text-xs font-medium bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300">
+              Score: {score}
+            </span>
+            <span className="px-3 py-1 rounded-full text-xs font-medium bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300">
+              Streak: {streak}
+            </span>
+            <span className="px-3 py-1 rounded-full text-xs font-medium bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300">
+              {formatTime(elapsedTime)}
+            </span>
+          </div>
+
+          {/* Question card */}
+          <AnimatePresence mode="wait">
+            <MotionDiv
+              key={questions[currentIndex].id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.25 }}
+              className={`p-6 md:p-8 rounded-xl border-2 transition-colors duration-200 ${
+                feedback === null
+                  ? 'border-zinc-200 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-900/50'
+                  : feedback.correct
+                  ? 'border-emerald-400 bg-emerald-50 dark:bg-emerald-900/20'
+                  : 'border-rose-400 bg-rose-50 dark:bg-rose-900/20'
+              }`}
+            >
+              <p className="text-center text-lg md:text-xl font-medium text-zinc-800 dark:text-white leading-relaxed">
+                {questions[currentIndex].text}
+              </p>
+              {feedback && !feedback.correct && (
+                <p className="text-center text-sm text-rose-600 dark:text-rose-400 mt-4 font-medium">
+                  {feedback.explanation}
+                </p>
+              )}
+            </MotionDiv>
+          </AnimatePresence>
+
+          {/* Answer buttons */}
+          <div className="grid grid-cols-2 gap-3 mt-6">
+            <button
+              onClick={() => handleAnswer('paper1')}
+              disabled={feedback !== null}
+              className="p-4 rounded-xl border-2 border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-semibold text-base hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Paper 1
+            </button>
+            <button
+              onClick={() => handleAnswer('paper2')}
+              disabled={feedback !== null}
+              className="p-4 rounded-xl border-2 border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 font-semibold text-base hover:bg-amber-100 dark:hover:bg-amber-900/50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Paper 2
+            </button>
+          </div>
+        </div>
+      )}
+
+      {phase === 'results' && (
+        <div className="mt-6 text-center">
+          {/* Score display */}
+          <div className="mb-6">
+            <p className="text-5xl font-bold text-zinc-800 dark:text-white">{score}<span className="text-2xl text-zinc-400 dark:text-zinc-500">/{questions.length}</span></p>
+            <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
+              {Math.round((score / questions.length) * 100)}% accuracy in {formatTime(elapsedTime)}
+            </p>
+          </div>
+
+          {/* Result stats */}
+          <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
+            <span className="px-3 py-1 rounded-full text-xs font-medium bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300">
+              Best streak: {bestStreak}
+            </span>
+            <span className="px-3 py-1 rounded-full text-xs font-medium bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300">
+              Time: {formatTime(elapsedTime)}
+            </span>
+          </div>
+
+          {/* Summary insight */}
+          <div className="p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-700 mb-6">
+            <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
+              <strong>Paper 1</strong> = pure maths (algebra, calculus, proofs). <strong>Paper 2</strong> = maths in context (statistics, applied problems, modelling).
+            </p>
+          </div>
+
+          <button
+            onClick={startGame}
+            className="px-8 py-3 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-semibold text-sm hover:opacity-90 transition-opacity"
+          >
+            Play Again
+          </button>
+        </div>
+      )}
+    </div>
+  );
+};
+
 const ErrorLog = () => {
     const [error, setError] = useState('');
     const [type, setType] = useState<string | null>(null);
@@ -130,6 +351,7 @@ const LearningMathModule: React.FC<{ onBack: () => void; progress: ModuleProgres
             <ReadingSection title="The Two Papers." eyebrow="Step 2" icon={BookOpen} theme={theme}>
               <p>The exam is split into two papers designed to test different cognitive skills. <strong>Paper 1</strong> is the <strong>"Technical"</strong> paper. It's heavily weighted towards Algebra, Calculus, and Number. It rewards <Highlight description="The ability to perform mathematical operations (like solving equations or differentiating) quickly and accurately." theme={theme}>procedural fluency</Highlight> and is less "wordy."</p>
               <p><strong>Paper 2</strong> is the <strong>"Contextual"</strong> paper. This is the test of interpretation and spatial reasoning, covering Statistics, Probability, Geometry, and Trigonometry. It's often described as "volatile" because a single novel diagram can throw off students who rely on memorized procedures rather than a deep understanding of the concepts.</p>
+              <PaperPredictorGame />
             </ReadingSection>
           )}
           {activeSection === 2 && (

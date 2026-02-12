@@ -36,6 +36,274 @@ const ABQLinkDrill = () => {
     );
 };
 
+// --- ABQ ANSWER SCAFFOLD ---
+const ABQ_SCENARIOS = [
+  {
+    extract: 'TechStart Ltd grew from 5 to 50 employees in 18 months. The CEO now finds herself dealing with staff conflicts, missed deadlines, and communication breakdowns between departments.',
+    prompt: 'Identify and explain ONE management challenge facing TechStart Ltd.',
+    models: {
+      state: 'TechStart Ltd is experiencing difficulties associated with the Growth phase of a business, specifically poor delegation and communication.',
+      explain: 'As a business grows rapidly, the original management style becomes ineffective. Tasks that the owner once handled personally must now be delegated, and formal communication structures are needed.',
+      link: 'This is evident in TechStart Ltd where "communication breakdowns between departments" and "missed deadlines" indicate the CEO has not yet adapted her management approach to the larger organisation.',
+    },
+    keywords: {
+      state: ['growth', 'delegation', 'management', 'crisis', 'rapid', 'communication', 'phase'],
+      link: ['"', 'communication', 'deadlines', 'breakdowns', 'TechStart'],
+    },
+  },
+  {
+    extract: 'FreshBake Bakery has been losing customers to a new competitor offering gluten-free and vegan options. Sales have dropped 15% in six months. The owner, Mary, has always focused on traditional recipes.',
+    prompt: 'Advise Mary on a strategy to respond to the competitive threat.',
+    models: {
+      state: 'Mary should conduct market research and consider product diversification to respond to changing consumer demands.',
+      explain: 'Market research involves gathering data on consumer preferences and competitor offerings. Product diversification means expanding the product range to include new options that meet emerging trends.',
+      link: 'FreshBake is losing customers because the competitor offers "gluten-free and vegan options" that Mary\'s "traditional recipes" do not include. By adding these products, she can recapture lost market share.',
+    },
+    keywords: {
+      state: ['market research', 'diversif', 'strategy', 'consumer', 'product', 'demand'],
+      link: ['"', 'gluten', 'vegan', 'traditional', 'FreshBake', 'Mary'],
+    },
+  },
+  {
+    extract: 'GreenClean Ltd, an eco-friendly cleaning company, wants to expand from Dublin into Cork and Galway. They have \u20AC50,000 in savings and a strong social media presence with 20,000 followers.',
+    prompt: 'Evaluate ONE source of finance suitable for GreenClean\u2019s expansion.',
+    models: {
+      state: 'GreenClean could use retained earnings (their \u20AC50,000 savings) as an internal source of finance for the expansion.',
+      explain: 'Retained earnings are profits that have been kept in the business rather than distributed. This is an internal source with no interest charges or loss of ownership, but it depletes the company\u2019s cash reserves.',
+      link: 'GreenClean has "\u20AC50,000 in savings" which could fund initial setup costs in Cork and Galway. However, this may leave limited working capital for day-to-day operations during the expansion.',
+    },
+    keywords: {
+      state: ['retained', 'earnings', 'savings', 'internal', 'finance', 'source'],
+      link: ['"', '50,000', 'savings', 'Cork', 'Galway', 'GreenClean', 'expansion'],
+    },
+  },
+];
+
+const STEP_LABELS = ['STATE', 'EXPLAIN', 'LINK'] as const;
+const STEP_INSTRUCTIONS = [
+  'State the theory or concept that applies to this case.',
+  'Explain the theory in your own words \u2014 what does it mean?',
+  'Link the theory back to the case study using a direct quote.',
+];
+
+const ABQAnswerScaffold = () => {
+  const [scenarioIdx, setScenarioIdx] = useState(0);
+  const [stepIdx, setStepIdx] = useState(0);
+  const [inputs, setInputs] = useState(['', '', '']);
+  const [revealed, setRevealed] = useState([false, false, false]);
+  const [completed, setCompleted] = useState(false);
+  const [allDone, setAllDone] = useState(false);
+
+  const scenario = ABQ_SCENARIOS[scenarioIdx];
+
+  const checkQuality = (text: string, step: number): 'good' | 'partial' => {
+    const lower = text.toLowerCase();
+    if (step === 1) {
+      return lower.length > 40 ? 'good' : 'partial';
+    }
+    const kws = step === 0 ? scenario.keywords.state : scenario.keywords.link;
+    const hits = kws.filter((kw) => lower.includes(kw.toLowerCase())).length;
+    return hits >= 2 ? 'good' : 'partial';
+  };
+
+  const handleReveal = () => {
+    const next = [...revealed];
+    next[stepIdx] = true;
+    setRevealed(next);
+  };
+
+  const handleNext = () => {
+    if (stepIdx < 2) {
+      setStepIdx(stepIdx + 1);
+    } else {
+      setCompleted(true);
+    }
+  };
+
+  const handleNextScenario = () => {
+    if (scenarioIdx < ABQ_SCENARIOS.length - 1) {
+      setScenarioIdx(scenarioIdx + 1);
+      setStepIdx(0);
+      setInputs(['', '', '']);
+      setRevealed([false, false, false]);
+      setCompleted(false);
+    } else {
+      setAllDone(true);
+    }
+  };
+
+  const handleInputChange = (value: string) => {
+    const next = [...inputs];
+    next[stepIdx] = value;
+    setInputs(next);
+  };
+
+  const assembledAnswer = `${inputs[0]} ${inputs[1]} ${inputs[2]}`.trim();
+  const MotionDiv = motion.div as any;
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+        ABQ Answer Builder
+      </h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2">
+        Master the State &rarr; Explain &rarr; Link formula that the examiner rewards.
+      </p>
+      <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mt-1 font-medium">
+        Scenario {scenarioIdx + 1} / {ABQ_SCENARIOS.length}
+      </p>
+
+      {/* Case extract */}
+      <div className="mt-8 p-5 bg-zinc-50 dark:bg-zinc-900 rounded-lg border-l-4 border-zinc-400 dark:border-zinc-500">
+        <p className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-2">
+          Case Extract
+        </p>
+        <p className="text-sm text-zinc-700 dark:text-zinc-300 italic leading-relaxed">
+          {scenario.extract}
+        </p>
+      </div>
+
+      {/* Theory prompt */}
+      <p className="mt-5 text-sm font-bold text-zinc-800 dark:text-white">
+        {scenario.prompt}
+      </p>
+
+      {allDone ? (
+        <MotionDiv
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mt-8 p-6 bg-emerald-50 dark:bg-emerald-900/30 rounded-xl border border-emerald-200 dark:border-emerald-700"
+        >
+          <p className="text-sm font-semibold text-emerald-800 dark:text-emerald-300 text-center">
+            All 3 scenarios complete.
+          </p>
+          <p className="text-sm text-zinc-700 dark:text-zinc-300 mt-3 leading-relaxed text-center">
+            The ABQ is worth <strong>80 marks</strong> &mdash; nearly a quarter of the paper. The
+            State-Explain-Link structure is non-negotiable. Every answer without a direct quote from
+            the case study is leaving marks on the table.
+          </p>
+        </MotionDiv>
+      ) : completed ? (
+        <MotionDiv
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mt-8"
+        >
+          <p className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-3">
+            Your Assembled SEL Answer
+          </p>
+          <div className="p-5 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl border border-emerald-200 dark:border-emerald-700">
+            <p className="text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed">
+              {assembledAnswer}
+            </p>
+          </div>
+          <div className="flex justify-center mt-6">
+            <button
+              onClick={handleNextScenario}
+              className="px-5 py-2.5 bg-zinc-800 dark:bg-zinc-200 text-white dark:text-zinc-900 text-xs font-bold rounded-lg hover:opacity-90 transition-opacity"
+            >
+              {scenarioIdx < ABQ_SCENARIOS.length - 1 ? 'Next Scenario \u2192' : 'Finish \u2713'}
+            </button>
+          </div>
+        </MotionDiv>
+      ) : (
+        <div className="mt-6 space-y-4">
+          {STEP_LABELS.map((label, i) => {
+            const isActive = i === stepIdx;
+            const isDone = revealed[i];
+            const isLocked = i > stepIdx;
+            const quality = isDone ? checkQuality(inputs[i], i) : null;
+            const borderColor =
+              quality === 'good'
+                ? 'border-emerald-400 dark:border-emerald-500'
+                : quality === 'partial'
+                ? 'border-amber-400 dark:border-amber-500'
+                : 'border-zinc-200 dark:border-zinc-700';
+
+            return (
+              <MotionDiv
+                key={label}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: isLocked ? 0.4 : 1, y: 0 }}
+                transition={{ delay: i * 0.08 }}
+                className={`p-5 rounded-xl border-2 ${borderColor} bg-white dark:bg-zinc-800 transition-colors`}
+              >
+                {/* Step header */}
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="flex items-center justify-center w-7 h-7 rounded-full bg-zinc-800 dark:bg-zinc-200 text-white dark:text-zinc-900 text-xs font-bold">
+                    {i + 1}
+                  </span>
+                  <span className="text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+                    {label}
+                  </span>
+                </div>
+
+                {isActive && (
+                  <MotionDiv
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    className="overflow-hidden"
+                  >
+                    <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-3">
+                      {STEP_INSTRUCTIONS[i]}
+                    </p>
+                    <textarea
+                      value={inputs[i]}
+                      onChange={(e) => handleInputChange(e.target.value)}
+                      rows={3}
+                      placeholder={`Write your ${label} here...`}
+                      className="w-full p-3 text-sm bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 rounded-lg text-zinc-800 dark:text-zinc-200 placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-400 dark:focus:ring-zinc-500 resize-none"
+                    />
+                    {!isDone && (
+                      <button
+                        onClick={handleReveal}
+                        disabled={inputs[i].trim().length < 10}
+                        className="mt-3 px-4 py-2 bg-zinc-800 dark:bg-zinc-200 text-white dark:text-zinc-900 text-xs font-bold rounded-lg disabled:opacity-40 hover:opacity-90 transition-opacity"
+                      >
+                        Check Against Model
+                      </button>
+                    )}
+                  </MotionDiv>
+                )}
+
+                {isDone && (
+                  <MotionDiv
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                  >
+                    {/* Show user input if not active step */}
+                    {!isActive && (
+                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-3 italic">
+                        {inputs[i]}
+                      </p>
+                    )}
+                    <div className="p-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg border border-emerald-200 dark:border-emerald-700">
+                      <p className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-1">
+                        Model Answer
+                      </p>
+                      <p className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">
+                        {scenario.models[label.toLowerCase() as 'state' | 'explain' | 'link']}
+                      </p>
+                    </div>
+                    {isActive && (
+                      <button
+                        onClick={handleNext}
+                        className="mt-3 px-4 py-2 bg-zinc-800 dark:bg-zinc-200 text-white dark:text-zinc-900 text-xs font-bold rounded-lg hover:opacity-90 transition-opacity"
+                      >
+                        {stepIdx < 2 ? 'Continue to next step \u2192' : 'See assembled answer'}
+                      </button>
+                    )}
+                  </MotionDiv>
+                )}
+              </MotionDiv>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+};
+
 // --- MODULE COMPONENT ---
 const MasteringBusinessModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
@@ -78,6 +346,7 @@ const MasteringBusinessModule: React.FC<{ onBack: () => void; progress: ModulePr
                 <p>The 2026 ABQ will almost certainly feature a business in a "growth crisis"--a company that has launched successfully but is struggling with internal chaos. You will act as a consultant. Your job is to apply theory to solve their problems.</p>
                 <p>The golden rule is the <Highlight description="The non-negotiable, 3-part structure for ABQ answers: State the theory, Explain it in your own words, and Link it with a direct quote from the text." theme={theme}>"Link" Methodology</Highlight>. Failure to quote directly from the case study is the single biggest cause of lost marks. It's a mechanical process: State, Explain, Link. Master this algorithm.</p>
                 <ABQLinkDrill />
+                <ABQAnswerScaffold />
             </ReadingSection>
           )}
            {activeSection === 3 && (

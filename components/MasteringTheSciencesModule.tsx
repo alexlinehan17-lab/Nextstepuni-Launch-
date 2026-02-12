@@ -179,6 +179,259 @@ const CurlyArrowDrill = () => {
     );
 };
 
+// --- KEYWORD PRECISION TESTER ---
+const KEYWORD_QUESTIONS = [
+  {
+    definition: 'The movement of molecules from an area of high concentration to an area of low concentration',
+    options: ['Diffusion', 'Osmosis', 'Spreading'],
+    correctIndex: 0,
+  },
+  {
+    definition: 'The movement of water from a region of high water concentration to a region of low water concentration across a semi-permeable membrane',
+    options: ['Diffusion', 'Osmosis', 'Absorption'],
+    correctIndex: 1,
+  },
+  {
+    definition: 'The breakdown of large insoluble molecules into small soluble molecules',
+    options: ['Digestion', 'Decomposition', 'Metabolism'],
+    correctIndex: 0,
+  },
+  {
+    definition: 'A substance that speeds up a chemical reaction without being used up',
+    options: ['Catalyst', 'Enzyme', 'Activator'],
+    correctIndex: 0,
+  },
+  {
+    definition: 'An organism that makes its own food',
+    options: ['Producer', 'Autotroph', 'Plant'],
+    correctIndex: 1,
+  },
+  {
+    definition: 'The process by which green plants make food using sunlight',
+    options: ['Respiration', 'Synthesis', 'Photosynthesis'],
+    correctIndex: 2,
+  },
+  {
+    definition: 'A change in the structure of a protein due to heat or pH',
+    options: ['Denaturation', 'Degradation', 'Destruction'],
+    correctIndex: 0,
+  },
+  {
+    definition: 'The basic structural and functional unit of life',
+    options: ['Organism', 'Cell', 'Tissue'],
+    correctIndex: 1,
+  },
+  {
+    definition: 'An organism that feeds on dead organic matter',
+    options: ['Decomposer', 'Saprophyte', 'Scavenger'],
+    correctIndex: 1,
+  },
+  {
+    definition: 'A group of similar cells that perform the same function',
+    options: ['Organ', 'Tissue', 'System'],
+    correctIndex: 1,
+  },
+];
+
+const MotionDiv = motion.div as any;
+
+function fisherYatesShuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+interface ShuffledQuestion {
+  definition: string;
+  options: string[];
+  correctIndex: number;
+}
+
+function buildShuffledRound(): ShuffledQuestion[] {
+  const shuffledQuestions = fisherYatesShuffle(KEYWORD_QUESTIONS);
+  return shuffledQuestions.map((q) => {
+    const originalOptions = q.options;
+    const correctTerm = originalOptions[q.correctIndex];
+    const shuffledOptions = fisherYatesShuffle(originalOptions);
+    const newCorrectIndex = shuffledOptions.indexOf(correctTerm);
+    return { definition: q.definition, options: shuffledOptions, correctIndex: newCorrectIndex };
+  });
+}
+
+const KeywordPrecisionTester = () => {
+  const [questions, setQuestions] = useState<ShuffledQuestion[]>(() => buildShuffledRound());
+  const [current, setCurrent] = useState(0);
+  const [score, setScore] = useState(0);
+  const [streak, setStreak] = useState(0);
+  const [bestStreak, setBestStreak] = useState(0);
+  const [selected, setSelected] = useState<number | null>(null);
+  const [wasCorrect, setWasCorrect] = useState<boolean | null>(null);
+  const [done, setDone] = useState(false);
+
+  const q = questions[current];
+
+  const handleSelect = (idx: number) => {
+    if (selected !== null) return;
+    setSelected(idx);
+    const correct = idx === q.correctIndex;
+    setWasCorrect(correct);
+    if (correct) {
+      setScore((s) => s + 1);
+      setStreak((s) => {
+        const next = s + 1;
+        setBestStreak((b) => Math.max(b, next));
+        return next;
+      });
+    } else {
+      setStreak(0);
+    }
+    const delay = correct ? 1000 : 1500;
+    setTimeout(() => {
+      if (current < questions.length - 1) {
+        setCurrent((c) => c + 1);
+        setSelected(null);
+        setWasCorrect(null);
+      } else {
+        setDone(true);
+      }
+    }, delay);
+  };
+
+  const handlePlayAgain = () => {
+    setQuestions(buildShuffledRound());
+    setCurrent(0);
+    setScore(0);
+    setStreak(0);
+    setSelected(null);
+    setWasCorrect(null);
+    setDone(false);
+  };
+
+  const resultMessage =
+    score >= 9
+      ? "Examiner-ready precision. You're speaking the marking scheme's language."
+      : score >= 6
+        ? 'Good, but a few synonyms slipped in. Each wrong keyword is a lost mark.'
+        : "The synonyms feel right, but the examiner only accepts exact terms. This is Biology's hidden trap.";
+
+  const optionBtnClass = (idx: number) => {
+    const base = 'px-5 py-3 rounded-full border-2 text-sm font-semibold transition-all';
+    if (selected === null) {
+      return `${base} border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-200 hover:border-emerald-400 dark:hover:border-emerald-600 cursor-pointer`;
+    }
+    if (idx === q.correctIndex) {
+      return `${base} border-emerald-400 bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300`;
+    }
+    if (idx === selected && idx !== q.correctIndex) {
+      return `${base} border-rose-400 bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300`;
+    }
+    return `${base} border-zinc-200 dark:border-zinc-700 text-zinc-400 dark:text-zinc-500 opacity-50`;
+  };
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Keyword Precision Tester</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">
+        In Biology, close enough is zero marks. Only the exact SEC keyword scores.
+      </p>
+
+      {/* Stats pills */}
+      <div className="flex items-center justify-center gap-3 mb-6">
+        <span className="px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/20 text-xs font-bold text-emerald-700 dark:text-emerald-300">
+          Score: {score}/{questions.length}
+        </span>
+        <span className="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-900 text-xs font-bold text-zinc-600 dark:text-zinc-300">
+          Streak: {streak}
+        </span>
+        <span className="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-900 text-xs font-bold text-zinc-600 dark:text-zinc-300">
+          Best: {bestStreak}
+        </span>
+      </div>
+
+      {/* Progress bar */}
+      <div className="mb-6">
+        <div className="flex items-center justify-between mb-1.5">
+          <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Progress</span>
+          <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400">
+            {done ? questions.length : current}/{questions.length}
+          </span>
+        </div>
+        <div className="w-full h-2 bg-zinc-100 dark:bg-zinc-900 rounded-full overflow-hidden">
+          <motion.div
+            className="h-full rounded-full bg-emerald-400"
+            animate={{ width: `${((done ? questions.length : current) / questions.length) * 100}%` }}
+            transition={{ type: 'spring', stiffness: 80, damping: 15 }}
+          />
+        </div>
+      </div>
+
+      {!done ? (
+        <AnimatePresence mode="wait">
+          <MotionDiv key={current} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}>
+            {/* Definition card */}
+            <div className="p-5 bg-zinc-50 dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-700 mb-5">
+              <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-2">Definition</p>
+              <p className="text-base font-medium text-zinc-800 dark:text-white leading-relaxed">{q.definition}</p>
+            </div>
+
+            {/* Option buttons */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-5">
+              {q.options.map((opt, idx) => (
+                <button
+                  key={opt}
+                  onClick={() => handleSelect(idx)}
+                  disabled={selected !== null}
+                  className={optionBtnClass(idx)}
+                >
+                  {opt}
+                </button>
+              ))}
+            </div>
+
+            {/* Feedback */}
+            <AnimatePresence>
+              {wasCorrect === true && (
+                <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}
+                  className="p-3 bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/40 rounded-xl text-center">
+                  <p className="text-xs text-emerald-700 dark:text-emerald-300">
+                    Correct — this is the exact term the examiner is looking for.
+                  </p>
+                </MotionDiv>
+              )}
+              {wasCorrect === false && (
+                <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}
+                  className="p-3 bg-rose-50 dark:bg-rose-950/20 border border-rose-200 dark:border-rose-800/40 rounded-xl text-center">
+                  <p className="text-xs text-rose-700 dark:text-rose-300">
+                    Close, but the marking scheme specifically requires <strong>{q.options[q.correctIndex]}</strong>.
+                  </p>
+                </MotionDiv>
+              )}
+            </AnimatePresence>
+          </MotionDiv>
+        </AnimatePresence>
+      ) : (
+        <MotionDiv initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
+          className="p-6 bg-emerald-50 dark:bg-emerald-950/20 rounded-xl border border-emerald-200 dark:border-emerald-800/40 text-center">
+          <p className="text-4xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">{score}/{questions.length}</p>
+          <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-300 mb-3">{resultMessage}</p>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <span className="px-3 py-1 rounded-full bg-white dark:bg-zinc-800 text-xs font-bold text-zinc-600 dark:text-zinc-300">
+              Best Streak: {bestStreak}
+            </span>
+          </div>
+          <button onClick={handlePlayAgain}
+            className="px-5 py-2.5 text-sm font-bold rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition-colors">
+            Play Again
+          </button>
+        </MotionDiv>
+      )}
+    </div>
+  );
+};
+
 // --- MODULE COMPONENT ---
 const MasteringTheSciencesModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
@@ -214,6 +467,7 @@ const MasteringTheSciencesModule: React.FC<{ onBack: () => void; progress: Modul
           {activeSection === 1 && (
             <ReadingSection title="Biology: Precision & Breadth." eyebrow="Step 2" icon={Leaf} theme={theme}>
               <p>Biology rewards breadth of knowledge and, above all, <Highlight description="The marking scheme demands specific, non-negotiable keywords. Synonyms are often rejected. 'Specificity' or 'induced fit model' must be used for the active site." theme={theme}>terminological precision</Highlight>. An answer without the correct keyword is worthless. Definitions must be memorized verbatim. The exam structure is 5-3-4 (5/7 shorts, 3/4 experiments, 4/6 longs), and omitting any of the 22 mandatory experiments is a dangerous strategy. Beware the <Highlight description="In Section A, an incorrect third answer to a two-part question can cancel out a correct one. Adhere strictly to the quantity requested." theme={theme}>'Surplus Answer' Risk</Highlight> in short questions.</p>
+              <KeywordPrecisionTester />
             </ReadingSection>
           )}
           {activeSection === 2 && (
