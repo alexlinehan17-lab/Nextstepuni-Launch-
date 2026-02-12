@@ -5,7 +5,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Target, Brain, SlidersHorizontal, Shield, Moon, Utensils, Zap, Wind } from 'lucide-react';
+import { Target, Brain, SlidersHorizontal, Shield, Moon, Utensils, Zap, Wind, Leaf, Droplet, Coffee, X } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { amberTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
@@ -88,28 +88,37 @@ const TaperPlanner = () => {
 interface FoodItem {
   id: number;
   name: string;
-  emoji: string;
   category: string;
   score: number;
 }
 
 const FOODS: FoodItem[] = [
-  { id: 1, name: 'Porridge oats', emoji: '🥣', category: 'Low-GI', score: 3 },
-  { id: 2, name: 'Wholegrain toast', emoji: '🍞', category: 'Low-GI', score: 2 },
-  { id: 3, name: 'Banana', emoji: '🍌', category: 'Low-GI', score: 2 },
-  { id: 4, name: 'Natural yoghurt', emoji: '🥛', category: 'Low-GI', score: 2 },
-  { id: 5, name: 'Blueberries', emoji: '🫐', category: 'Low-GI', score: 2 },
-  { id: 6, name: 'Scrambled eggs', emoji: '🥚', category: 'Protein', score: 3 },
-  { id: 7, name: 'Peanut butter', emoji: '🥜', category: 'Protein', score: 2 },
-  { id: 8, name: 'Almonds', emoji: '🌰', category: 'Protein', score: 2 },
-  { id: 9, name: 'Sugar cereal (Coco Pops)', emoji: '🥣', category: 'High-GI', score: -2 },
-  { id: 10, name: 'White bread with jam', emoji: '🍯', category: 'High-GI', score: -1 },
-  { id: 11, name: 'Energy drink', emoji: '⚡', category: 'High-GI + Caffeine', score: -3 },
-  { id: 12, name: 'Chocolate bar', emoji: '🍫', category: 'High-GI', score: -2 },
-  { id: 13, name: 'Black coffee (moderate)', emoji: '☕', category: 'Caffeine', score: 1 },
-  { id: 14, name: 'Glass of water', emoji: '💧', category: 'Hydration', score: 2 },
-  { id: 15, name: 'Nothing (skip breakfast)', emoji: '🚫', category: 'Empty', score: -4 },
+  { id: 1, name: 'Porridge oats', category: 'Low-GI', score: 3 },
+  { id: 2, name: 'Wholegrain toast', category: 'Low-GI', score: 2 },
+  { id: 3, name: 'Banana', category: 'Low-GI', score: 2 },
+  { id: 4, name: 'Natural yoghurt', category: 'Low-GI', score: 2 },
+  { id: 5, name: 'Blueberries', category: 'Low-GI', score: 2 },
+  { id: 6, name: 'Scrambled eggs', category: 'Protein', score: 3 },
+  { id: 7, name: 'Peanut butter', category: 'Protein', score: 2 },
+  { id: 8, name: 'Almonds', category: 'Protein', score: 2 },
+  { id: 9, name: 'Sugar cereal (Coco Pops)', category: 'High-GI', score: -2 },
+  { id: 10, name: 'White bread with jam', category: 'High-GI', score: -1 },
+  { id: 11, name: 'Energy drink', category: 'High-GI + Caffeine', score: -3 },
+  { id: 12, name: 'Chocolate bar', category: 'High-GI', score: -2 },
+  { id: 13, name: 'Black coffee (moderate)', category: 'Caffeine', score: 1 },
+  { id: 14, name: 'Glass of water', category: 'Hydration', score: 2 },
+  { id: 15, name: 'Nothing (skip breakfast)', category: 'Empty', score: -4 },
 ];
+
+const FoodIcon = ({ category, size = 'md' }: { category: string; size?: 'sm' | 'md' }) => {
+  const cls = size === 'md' ? 'w-6 h-6' : 'w-4 h-4';
+  if (category === 'Low-GI') return <Leaf className={`${cls} text-emerald-500`} />;
+  if (category === 'Protein') return <Shield className={`${cls} text-blue-500`} />;
+  if (category.includes('High-GI')) return <Zap className={`${cls} text-rose-500`} />;
+  if (category === 'Caffeine') return <Coffee className={`${cls} text-amber-600`} />;
+  if (category === 'Hydration') return <Droplet className={`${cls} text-sky-500`} />;
+  return <X className={`${cls} text-zinc-400`} />;
+};
 
 const categoryBadgeClass = (category: string): string => {
   if (category.includes('High-GI')) return 'bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300';
@@ -157,14 +166,14 @@ const EnergyCurve = ({ level }: { level: 'high' | 'medium' | 'low' }) => {
       <div className="flex items-end gap-2 text-xs text-zinc-400 dark:text-zinc-500 mb-1">
         <span>High</span>
       </div>
-      <svg viewBox="0 0 380 100" className="w-full h-24" preserveAspectRatio="none">
+      <svg viewBox="0 0 380 80" className="w-full h-20" preserveAspectRatio="none">
         <defs>
           <linearGradient id={`grad-${level}`} x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stopColor={c.color} stopOpacity="0.3" />
             <stop offset="100%" stopColor={c.color} stopOpacity="0.02" />
           </linearGradient>
         </defs>
-        <path d={`${c.path} L 380 100 L 0 100 Z`} fill={`url(#grad-${level})`} />
+        <path d={`${c.path} L 380 80 L 0 80 Z`} fill={`url(#grad-${level})`} />
         <motion.path
           d={c.path}
           fill="none"
@@ -175,11 +184,13 @@ const EnergyCurve = ({ level }: { level: 'high' | 'medium' | 'low' }) => {
           animate={{ pathLength: 1 }}
           transition={{ duration: 1.2, ease: 'easeOut' }}
         />
-        <text x="5" y="98" fontSize="10" fill="#a1a1aa">7am</text>
-        <text x="115" y="98" fontSize="10" fill="#a1a1aa">9:30am</text>
-        <text x="250" y="98" fontSize="10" fill="#a1a1aa">11:30am</text>
-        <text x="340" y="98" fontSize="10" fill="#a1a1aa">1pm</text>
       </svg>
+      <div className="flex justify-between text-xs text-zinc-400 dark:text-zinc-500 mt-1 px-1">
+        <span>7am</span>
+        <span>9:30am</span>
+        <span>11:30am</span>
+        <span>1pm</span>
+      </div>
       <div className="flex items-end gap-2 text-xs text-zinc-400 dark:text-zinc-500 mt-1">
         <span>Low</span>
       </div>
@@ -247,7 +258,7 @@ const PreExamMealBuilder = () => {
               }`}
             >
               <div className="flex items-center gap-2">
-                <span className="text-2xl">{food.emoji}</span>
+                <FoodIcon category={food.category} />
                 <div className="min-w-0">
                   <p className="text-sm font-semibold text-zinc-800 dark:text-white leading-tight truncate">
                     {food.name}
@@ -292,7 +303,7 @@ const PreExamMealBuilder = () => {
                 exit={{ scale: 0.8, opacity: 0 }}
                 className="flex items-center gap-1.5 bg-white dark:bg-zinc-800 px-3 py-1.5 rounded-full border border-zinc-200 dark:border-zinc-700 text-sm"
               >
-                <span>{food.emoji}</span>
+                <FoodIcon category={food.category} size="sm" />
                 <span className="font-medium text-zinc-700 dark:text-zinc-200">{food.name}</span>
                 {scored && (
                   <span
@@ -359,8 +370,8 @@ const PreExamMealBuilder = () => {
           <div className="mt-5 space-y-2">
             {selectedFoods.map((food) => (
               <div key={food.id} className="flex items-center justify-between text-sm px-3 py-2 bg-zinc-50 dark:bg-zinc-900/50 rounded-lg">
-                <span className="text-zinc-700 dark:text-zinc-300">
-                  {food.emoji} {food.name}
+                <span className="flex items-center gap-1.5 text-zinc-700 dark:text-zinc-300">
+                  <FoodIcon category={food.category} size="sm" /> {food.name}
                 </span>
                 <span
                   className={`font-bold ${food.score >= 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}

@@ -727,7 +727,7 @@ const wrapSections: WRAPSection[] = [
     {
         title: 'Crisis Plan',
         prompt: 'When you\'re in crisis, what specific actions will you take?',
-        suggestions: ['Call a trusted person', 'Use physiological sigh breathing', 'Go for a walk outside', 'Take a full day off studying', 'Contact a helpline (Childline: 1800 66 66 66)'],
+        suggestions: ['Call a trusted person', 'Use physiological sigh breathing', 'Go for a walk outside', 'Take a full day off studying'],
         accentColor: '#3b82f6',
         accentBg: 'bg-blue-50 dark:bg-blue-900/20',
         accentBorder: 'border-blue-200 dark:border-blue-800',
