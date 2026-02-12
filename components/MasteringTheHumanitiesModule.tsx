@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  Key, Landmark, Globe, FileBadge2, Brain, Wrench
+  Key, Landmark, Globe, Brain, Wrench
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { pinkTheme } from '../moduleThemes';
@@ -39,33 +39,14 @@ const HistoryGrader = () => {
     );
 };
 
-const CourseworkCalculator = () => {
-    const [project, setProject] = useState(90);
-    const required = Math.max(0, (450 - project*0.2) / 0.8); // 450 is 90% of 500 for H1
-    return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Coursework Advantage</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">See how your 20% project changes the exam requirement for a H1.</p>
-             <div>
-                <label className="font-bold text-sm">Your Project Grade: {project}%</label>
-                <input type="range" min="40" max="100" value={project} onChange={e=>setProject(parseInt(e.target.value))} className="w-full"/>
-             </div>
-             <div className="mt-6 p-4 bg-zinc-900 rounded-xl text-center text-white">
-                Required Exam Mark for H1: <span className="font-bold text-2xl text-pink-400">{required.toFixed(1)}%</span>
-             </div>
-        </div>
-    );
-}
-
 // --- MODULE COMPONENT ---
 const MasteringTheHumanitiesModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
     { id: 'hidden-curriculum', title: 'The Hidden Curriculum', eyebrow: '01 // The Master Key', icon: Key },
     { id: 'history-engine', title: 'The History Engine', eyebrow: '02 // CM + OE', icon: Landmark },
     { id: 'geography-algorithm', title: 'The Geography Algorithm', eyebrow: '03 // SRPs', icon: Globe },
-    { id: 'coursework-advantage', title: 'The Coursework Advantage', eyebrow: '04 // Banking Marks', icon: FileBadge2 },
-    { id: 'universal-toolkit', title: 'The Universal Toolkit', eyebrow: '05 // The PEE Chain', icon: Brain },
-    { id: 'blueprint', title: 'Your Blueprint', eyebrow: '06 // The Action Plan', icon: Wrench },
+    { id: 'universal-toolkit', title: 'The Universal Toolkit', eyebrow: '04 // The PEE Chain', icon: Brain },
+    { id: 'blueprint', title: 'Your Blueprint', eyebrow: '05 // The Action Plan', icon: Wrench },
   ];
 
   return (
@@ -99,19 +80,12 @@ const MasteringTheHumanitiesModule: React.FC<{ onBack: () => void; progress: Mod
             </ReadingSection>
           )}
           {activeSection === 3 && (
-            <ReadingSection title="The Coursework Advantage." eyebrow="Step 4" icon={FileBadge2} theme={theme}>
-              <p>The single most effective statistical intervention you can make is to maximize your coursework grade. For subjects like History (RSR), Geography (Fieldwork), and Politics & Society (Citizenship Project), 20% of your final grade is "banked" before you even enter the exam hall. This is a massive strategic advantage.</p>
-              <p>A student who gets 90/100 (18%) on their project only needs 72% on the written paper to get a H1. A student with a 50/100 project (10%) needs 80%--a much harder task under pressure. This is a controllable variable you must optimize.</p>
-              <CourseworkCalculator/>
-            </ReadingSection>
-          )}
-          {activeSection === 4 && (
-            <ReadingSection title="The Universal Toolkit." eyebrow="Step 5" icon={Brain} theme={theme}>
+            <ReadingSection title="The Universal Toolkit." eyebrow="Step 4" icon={Brain} theme={theme}>
               <p>While the currencies differ, the underlying structure of a good argument is universal. The <Highlight description="A robust heuristic for essay writing: plan 3-4 distinct arguments, structure each paragraph using PEE, and in discursive subjects, consider 3 perspectives (Thesis, Antithesis, Synthesis)." theme={theme}>"Rule of Three"</Highlight> is a powerful framework. Plan <strong>3 core arguments</strong> for every essay. Structure each paragraph using the <strong>PEE chain</strong>: <strong>P</strong>oint (your topic sentence), <strong>E</strong>vidence (your fact, quote, or SRP), and <strong>E</strong>xplanation (the "So what?" factor that links the evidence back to your point).</p>
             </ReadingSection>
           )}
-          {activeSection === 5 && (
-            <ReadingSection title="Your Blueprint." eyebrow="Step 6" icon={Wrench} theme={theme}>
+          {activeSection === 4 && (
+            <ReadingSection title="Your Blueprint." eyebrow="Step 5" icon={Wrench} theme={theme}>
               <p>You now have the decryption key for the Humanities exams. You understand the different "currencies" and the universal structures. Your task now is to become a "grade engineer"--to consciously align every answer you write with the specific demands of the marking scheme.</p>
               <MicroCommitment theme={theme}>
                 <p>Go to the SEC website and download the marking scheme for your favourite Humanities subject. Spend 10 minutes reading it. This is no longer just an exam; it's a system you are learning to master.</p>

@@ -162,17 +162,142 @@ const CognitionShiftVisualizer = () => {
     );
 };
 
-const PhysiologicalSighGuide = () => (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
-         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Physiological Sigh</h4>
-         <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Your emergency brake for acute panic. Repeat 3 times.</p>
-         <div className="flex justify-center items-center gap-8">
-            <motion.div initial={{scale:0.5}} animate={{scale:[1, 1, 0.5, 0.5]}} transition={{duration:6, repeat: Infinity, times:[0, 0.4, 0.5, 1]}} className="w-20 h-20 rounded-full bg-sky-300 flex items-center justify-center font-bold">Inhale 1</motion.div>
-            <motion.div initial={{scale:0.5}} animate={{scale:[0.5, 1, 0.5, 0.5]}} transition={{duration:6, repeat: Infinity, times:[0, 0.4, 0.5, 1]}} className="w-16 h-16 rounded-full bg-sky-300 flex items-center justify-center font-bold">Inhale 2</motion.div>
-            <motion.div initial={{scale:1}} animate={{scale:[1, 1, 0.5, 1]}} transition={{duration:6, repeat: Infinity, times:[0, 0.5, 0.9, 1]}} className="w-24 h-24 rounded-full bg-sky-500 text-white flex items-center justify-center font-bold">Exhale</motion.div>
-         </div>
-    </div>
-);
+const PhysiologicalSighGuide = () => {
+    const [running, setRunning] = useState(false);
+    const [cycle, setCycle] = useState(0);
+    const [phase, setPhase] = useState<'idle' | 'inhale1' | 'inhale2' | 'exhale' | 'done'>('idle');
+    const [progress, setProgress] = useState(0);
+    const totalCycles = 3;
+
+    // Phase durations in ms
+    const durations = { inhale1: 1800, inhale2: 1000, exhale: 4000 };
+
+    React.useEffect(() => {
+        if (!running || phase === 'idle' || phase === 'done') return;
+        const dur = durations[phase];
+        const interval = 30;
+        let elapsed = 0;
+        const timer = setInterval(() => {
+            elapsed += interval;
+            setProgress(Math.min(1, elapsed / dur));
+            if (elapsed >= dur) {
+                clearInterval(timer);
+                setProgress(0);
+                if (phase === 'inhale1') setPhase('inhale2');
+                else if (phase === 'inhale2') setPhase('exhale');
+                else if (phase === 'exhale') {
+                    if (cycle + 1 >= totalCycles) { setPhase('done'); setRunning(false); }
+                    else { setCycle(c => c + 1); setPhase('inhale1'); }
+                }
+            }
+        }, interval);
+        return () => clearInterval(timer);
+    }, [running, phase, cycle]);
+
+    const start = () => { setCycle(0); setPhase('inhale1'); setProgress(0); setRunning(true); };
+    const reset = () => { setRunning(false); setPhase('idle'); setCycle(0); setProgress(0); };
+
+    const phaseConfig = {
+        idle: { label: '', instruction: '', color: '#a1a1aa', scale: 0.45 },
+        inhale1: { label: 'Inhale', instruction: 'Breathe in through your nose', color: '#0ea5e9', scale: 0.45 + progress * 0.35 },
+        inhale2: { label: 'Inhale', instruction: 'Quick second sip of air', color: '#0ea5e9', scale: 0.8 + progress * 0.2 },
+        exhale: { label: 'Exhale', instruction: 'Slow exhale through your mouth', color: '#6366f1', scale: 1.0 - progress * 0.55 },
+        done: { label: '', instruction: '', color: '#10b981', scale: 0.45 },
+    };
+    const cfg = phaseConfig[phase];
+
+    // SVG breathing circle
+    const cx = 100, cy = 100, maxR = 80;
+    const r = maxR * cfg.scale;
+    const circumference = 2 * Math.PI * 44;
+
+    return (
+        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Physiological Sigh</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Your emergency brake for acute panic. Two quick inhales, one long exhale.</p>
+
+            <div className="flex flex-col items-center">
+                {/* Breathing circle */}
+                <div className="relative w-48 h-48 mb-4">
+                    <svg viewBox="0 0 200 200" className="w-full h-full">
+                        {/* Outer ring track */}
+                        <circle cx={cx} cy={cy} r="44" fill="none" stroke="#e5e7eb" strokeWidth="3" className="dark:opacity-20" />
+                        {/* Progress ring */}
+                        {phase !== 'idle' && phase !== 'done' && (
+                            <circle cx={cx} cy={cy} r="44" fill="none" stroke={cfg.color} strokeWidth="3" strokeLinecap="round"
+                                strokeDasharray={circumference} strokeDashoffset={circumference * (1 - progress)}
+                                transform={`rotate(-90 ${cx} ${cy})`} />
+                        )}
+                        {phase === 'done' && (
+                            <circle cx={cx} cy={cy} r="44" fill="none" stroke="#10b981" strokeWidth="3" strokeDasharray={circumference} strokeDashoffset={0}
+                                transform={`rotate(-90 ${cx} ${cy})`} />
+                        )}
+                        {/* Breathing bubble */}
+                        <motion.circle cx={cx} cy={cy} fill={cfg.color} fillOpacity="0.12"
+                            animate={{ r }} transition={{ type: 'tween', ease: 'easeInOut', duration: 0.15 }} />
+                        <motion.circle cx={cx} cy={cy} fill={cfg.color} fillOpacity="0.08"
+                            animate={{ r: r + 8 }} transition={{ type: 'tween', ease: 'easeInOut', duration: 0.15 }} />
+                    </svg>
+                    {/* Center text */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center">
+                        {phase === 'idle' && (
+                            <button onClick={start} className="px-5 py-2.5 bg-sky-500 hover:bg-sky-600 text-white font-bold text-sm rounded-lg transition-colors">Begin</button>
+                        )}
+                        {phase === 'done' && (
+                            <div className="text-center">
+                                <p className="text-sm font-bold text-emerald-600 dark:text-emerald-400 mb-2">Complete</p>
+                                <button onClick={reset} className="px-4 py-1.5 bg-zinc-200 dark:bg-zinc-600 text-zinc-700 dark:text-zinc-200 font-bold text-xs rounded-lg">Again</button>
+                            </div>
+                        )}
+                        {phase !== 'idle' && phase !== 'done' && (
+                            <div className="text-center">
+                                <p className="text-lg font-bold" style={{ color: cfg.color }}>{cfg.label}</p>
+                                <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5 max-w-[120px]">{cfg.instruction}</p>
+                            </div>
+                        )}
+                    </div>
+                </div>
+
+                {/* Cycle indicators */}
+                <div className="flex items-center gap-2 mb-3">
+                    {Array.from({ length: totalCycles }).map((_, i) => (
+                        <div key={i} className={`w-2.5 h-2.5 rounded-full transition-colors ${
+                            i < cycle || phase === 'done' ? 'bg-emerald-500' : i === cycle && running ? 'bg-sky-500' : 'bg-zinc-200 dark:bg-zinc-600'
+                        }`} />
+                    ))}
+                    <span className="text-xs text-zinc-400 ml-1">{phase === 'done' ? '3/3' : running ? `${cycle + 1}/3` : '0/3'}</span>
+                </div>
+
+                {/* Phase timeline */}
+                {running && phase !== 'done' && (
+                    <div className="flex items-center gap-1.5 text-xs font-bold">
+                        <span className={phase === 'inhale1' ? 'text-sky-500' : phase === 'inhale2' || phase === 'exhale' ? 'text-emerald-500' : 'text-zinc-300 dark:text-zinc-600'}>Inhale 1</span>
+                        <span className="text-zinc-300 dark:text-zinc-600">&rarr;</span>
+                        <span className={phase === 'inhale2' ? 'text-sky-500' : phase === 'exhale' ? 'text-emerald-500' : 'text-zinc-300 dark:text-zinc-600'}>Inhale 2</span>
+                        <span className="text-zinc-300 dark:text-zinc-600">&rarr;</span>
+                        <span className={phase === 'exhale' ? 'text-indigo-500' : 'text-zinc-300 dark:text-zinc-600'}>Exhale</span>
+                    </div>
+                )}
+
+                {/* Technique summary */}
+                <div className="mt-5 grid grid-cols-3 gap-3 w-full max-w-sm text-center">
+                    <div className="p-2.5 rounded-lg bg-sky-50 dark:bg-sky-900/20 border border-sky-200 dark:border-sky-800">
+                        <p className="text-xs font-bold text-sky-600 dark:text-sky-400">Inhale 1</p>
+                        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">Sharp nose breath</p>
+                    </div>
+                    <div className="p-2.5 rounded-lg bg-sky-50 dark:bg-sky-900/20 border border-sky-200 dark:border-sky-800">
+                        <p className="text-xs font-bold text-sky-600 dark:text-sky-400">Inhale 2</p>
+                        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">Quick sip on top</p>
+                    </div>
+                    <div className="p-2.5 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-200 dark:border-indigo-800">
+                        <p className="text-xs font-bold text-indigo-600 dark:text-indigo-400">Exhale</p>
+                        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">Long slow mouth</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
 
 // --- MODULE COMPONENT ---
 const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {

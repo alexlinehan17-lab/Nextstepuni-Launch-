@@ -469,7 +469,7 @@ const COURSE_DEFINITIONS = [
     title: 'Mastering the Humanities',
     subtitle: 'The Grade Optimisation Protocol',
     description: 'Deconstruct the "hidden curriculum" of History, Geography, and Politics & Society to transform your strategic application and maximize your grade.',
-    sectionsCount: 6,
+    sectionsCount: 5,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
