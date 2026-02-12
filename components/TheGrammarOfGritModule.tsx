@@ -17,6 +17,210 @@ const theme = blueTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 
+const MotionDiv = motion.div as any;
+
+const ThoughtReframer = () => {
+  const [thought, setThought] = useState('');
+  const [personal, setPersonal] = useState(false);
+  const [pervasive, setPervasive] = useState(false);
+  const [permanent, setPermanent] = useState(false);
+
+  const optimisticCount = [personal, pervasive, permanent].filter(Boolean).length;
+  const resiliencePercent = Math.round((optimisticCount / 3) * 100);
+
+  const getReframedThought = () => {
+    if (!thought.trim()) return null;
+    if (optimisticCount === 0) return thought;
+    if (optimisticCount === 3) {
+      return `My approach to "${thought.trim()}" isn't working yet — but it's one specific area I can improve with the right strategy.`;
+    }
+    const parts: string[] = [];
+    if (personal) {
+      parts.push('it\'s about the situation, not me');
+    }
+    if (pervasive) {
+      parts.push('it\'s only this one area');
+    }
+    if (permanent) {
+      parts.push('it\'s temporary');
+    }
+    return `"${thought.trim()}" — but ${parts.join(', and ')}.`;
+  };
+
+  const reframedThought = getReframedThought();
+
+  const thoughtColorClass =
+    optimisticCount === 0
+      ? 'text-rose-600 dark:text-rose-400'
+      : optimisticCount === 3
+        ? 'text-emerald-600 dark:text-emerald-400'
+        : 'text-amber-600 dark:text-amber-400';
+
+  const barColorClass =
+    optimisticCount === 0
+      ? 'bg-rose-500'
+      : optimisticCount === 3
+        ? 'bg-emerald-500'
+        : 'bg-amber-500';
+
+  const toggleItems: {
+    label: string;
+    pessimistic: string;
+    optimistic: string;
+    value: boolean;
+    onToggle: () => void;
+  }[] = [
+    {
+      label: 'Personal → Specific',
+      pessimistic: "It's about me",
+      optimistic: "It's about this situation",
+      value: personal,
+      onToggle: () => setPersonal(!personal),
+    },
+    {
+      label: 'Pervasive → Limited',
+      pessimistic: 'It affects everything',
+      optimistic: "It's just this one area",
+      value: pervasive,
+      onToggle: () => setPervasive(!pervasive),
+    },
+    {
+      label: 'Permanent → Temporary',
+      pessimistic: 'It will always be this way',
+      optimistic: "It's temporary",
+      value: permanent,
+      onToggle: () => setPermanent(!permanent),
+    },
+  ];
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+        Thought Reframer
+      </h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">
+        Type a negative thought, then flip the 3 Ps to rewrite the script.
+      </p>
+
+      {/* Input */}
+      <div className="mb-8">
+        <input
+          type="text"
+          value={thought}
+          onChange={(e) => setThought(e.target.value)}
+          placeholder={"e.g. I'm terrible at maths"}
+          className="w-full px-5 py-4 rounded-xl border border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-900 text-zinc-800 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 text-base focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+        />
+      </div>
+
+      {/* Toggles */}
+      <div className="space-y-5 mb-8">
+        {toggleItems.map((item) => (
+          <div key={item.label} className="flex flex-col sm:flex-row sm:items-center gap-3">
+            <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 w-full sm:w-44 shrink-0">
+              {item.label}
+            </span>
+            <div className="flex items-center gap-3 flex-1 min-w-0">
+              <span
+                className={`text-xs font-medium transition-colors truncate ${
+                  !item.value
+                    ? 'text-rose-600 dark:text-rose-400 font-bold'
+                    : 'text-zinc-400 dark:text-zinc-500'
+                }`}
+              >
+                {item.pessimistic}
+              </span>
+              <button
+                onClick={item.onToggle}
+                className={`relative w-14 h-7 rounded-full shrink-0 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                  item.value ? 'bg-emerald-500' : 'bg-rose-500'
+                }`}
+                aria-label={`Toggle ${item.label}`}
+              >
+                <MotionDiv
+                  className="absolute top-0.5 w-6 h-6 rounded-full bg-white shadow-md"
+                  animate={{ left: item.value ? '1.75rem' : '0.125rem' }}
+                  transition={{ type: 'spring', stiffness: 500, damping: 30 }}
+                />
+              </button>
+              <span
+                className={`text-xs font-medium transition-colors truncate ${
+                  item.value
+                    ? 'text-emerald-600 dark:text-emerald-400 font-bold'
+                    : 'text-zinc-400 dark:text-zinc-500'
+                }`}
+              >
+                {item.optimistic}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Reframed thought display */}
+      {thought.trim() && reframedThought && (
+        <MotionDiv
+          key={optimisticCount}
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          className="mb-8 p-5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700"
+        >
+          <p className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-2">
+            {optimisticCount === 0
+              ? 'Pessimistic Framing'
+              : optimisticCount === 3
+                ? 'Optimistic Reframe'
+                : 'Partially Reframed'}
+          </p>
+          <p className={`text-base font-medium italic ${thoughtColorClass}`}>
+            {reframedThought}
+          </p>
+          {optimisticCount === 3 && (
+            <MotionDiv
+              initial={{ scale: 0, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.2, type: 'spring', stiffness: 400, damping: 15 }}
+              className="mt-3 text-center text-emerald-600 dark:text-emerald-400 text-sm font-bold"
+            >
+              All 3 Ps reframed — you have full control of the narrative.
+            </MotionDiv>
+          )}
+        </MotionDiv>
+      )}
+
+      {/* Resilience Score bar */}
+      <div>
+        <div className="flex items-center justify-between mb-2">
+          <span className="text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+            Resilience Score
+          </span>
+          <span className={`text-sm font-bold ${thoughtColorClass}`}>
+            {resiliencePercent}%
+          </span>
+        </div>
+        <div className="w-full h-3 bg-zinc-200 dark:bg-zinc-700 rounded-full overflow-hidden">
+          <MotionDiv
+            className={`h-full rounded-full ${barColorClass}`}
+            initial={{ width: '0%' }}
+            animate={{
+              width:
+                resiliencePercent === 0
+                  ? '0%'
+                  : resiliencePercent === 33
+                    ? '33%'
+                    : resiliencePercent === 67
+                      ? '67%'
+                      : '100%',
+            }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const ExplanatoryStyleQuiz = () => {
     const [answers, setAnswers] = useState<( 'pessimistic' | 'optimistic' | null)[]>([null, null, null]);
     const score = answers.filter(a => a === 'optimistic').length;
@@ -91,6 +295,7 @@ const TheGrammarOfGritModule: React.FC<{ onBack: () => void; progress: ModulePro
           {activeSection === 2 && (
             <ReadingSection title="The Re-Write Protocol." eyebrow="Step 3" icon={Recycle} theme={theme}>
               <p>You can train your brain to adopt a more optimistic style. This is called <Highlight description="A core technique of Cognitive Behavioural Therapy (CBT) where you learn to identify, challenge, and change your negative automatic thoughts." theme={theme}>Cognitive Restructuring</Highlight>. When you catch yourself using one of the 3 Ps, you must consciously "re-write" the script. For example, "I'm useless at Maths" (Personal, Permanent) becomes "My study method for trigonometry isn't working yet" (Specific, Temporary).</p>
+              <ThoughtReframer />
               <MicroCommitment theme={theme}><p>Take one negative thought you had about school this week. Write it down. Now, try to rewrite it, changing one of the '3 Ps'. Turn a 'Personal' blame into a 'Specific' strategy problem.</p></MicroCommitment>
             </ReadingSection>
           )}

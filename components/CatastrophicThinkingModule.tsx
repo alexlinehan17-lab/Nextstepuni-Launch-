@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence, Reorder } from 'framer-motion';
 import {
-  MessageSquare, BrainCircuit, BookOpen, Wrench, Layers, Shield, Zap, Flag
+  MessageSquare, BrainCircuit, BookOpen, Wrench, Layers, Shield, Zap, Flag, ArrowDown
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { slateTheme } from '../moduleThemes';
@@ -234,6 +234,163 @@ const PassengersOnBus = () => {
     );
 }
 
+const MotionDiv = motion.div as any;
+
+const CHAIN_LENGTH = 5;
+
+const chainColors = [
+  { bg: 'bg-rose-50 dark:bg-rose-950/30', border: 'border-rose-200 dark:border-rose-800/50', text: 'text-rose-700 dark:text-rose-300', label: 'text-rose-500', dot: 'bg-rose-500', arrow: 'text-rose-400' },
+  { bg: 'bg-orange-50 dark:bg-orange-950/30', border: 'border-orange-200 dark:border-orange-800/50', text: 'text-orange-700 dark:text-orange-300', label: 'text-orange-500', dot: 'bg-orange-500', arrow: 'text-orange-400' },
+  { bg: 'bg-amber-50 dark:bg-amber-950/30', border: 'border-amber-200 dark:border-amber-800/50', text: 'text-amber-700 dark:text-amber-300', label: 'text-amber-500', dot: 'bg-amber-500', arrow: 'text-amber-400' },
+  { bg: 'bg-zinc-50 dark:bg-zinc-800/50', border: 'border-zinc-200 dark:border-zinc-700', text: 'text-zinc-700 dark:text-zinc-300', label: 'text-zinc-500', dot: 'bg-zinc-400', arrow: 'text-zinc-400' },
+  { bg: 'bg-emerald-50 dark:bg-emerald-950/30', border: 'border-emerald-200 dark:border-emerald-800/50', text: 'text-emerald-700 dark:text-emerald-300', label: 'text-emerald-500', dot: 'bg-emerald-500', arrow: 'text-emerald-400' },
+];
+
+const DownwardArrowDrill = () => {
+  const [entries, setEntries] = useState<string[]>(['']);
+  const [committed, setCommitted] = useState<boolean[]>([false]);
+  const [showReflection, setShowReflection] = useState(false);
+
+  const currentStep = committed.filter(Boolean).length;
+
+  const handleChange = (index: number, value: string) => {
+    setEntries(prev => {
+      const next = [...prev];
+      next[index] = value;
+      return next;
+    });
+  };
+
+  const handleNext = (index: number) => {
+    if (!entries[index].trim()) return;
+    setCommitted(prev => {
+      const next = [...prev];
+      next[index] = true;
+      return next;
+    });
+    if (index + 1 < CHAIN_LENGTH) {
+      setEntries(prev => [...prev, '']);
+      setCommitted(prev => [...prev, false]);
+    } else {
+      setShowReflection(true);
+    }
+  };
+
+  const handleReset = () => {
+    setEntries(['']);
+    setCommitted([false]);
+    setShowReflection(false);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent, index: number) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      handleNext(index);
+    }
+  };
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Downward Arrow</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">Follow the fear to its end. Ask "And then what?" until the catastrophe dissolves.</p>
+
+      <div className="flex flex-col items-center">
+        {entries.map((entry, index) => (
+          <React.Fragment key={index}>
+            {/* Animated arrow between entries */}
+            {index > 0 && (
+              <MotionDiv
+                initial={{ opacity: 0, y: -8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.1 }}
+                className="flex flex-col items-center my-2"
+              >
+                <div className={`w-0.5 h-6 ${chainColors[Math.min(index, CHAIN_LENGTH - 1)].dot}`} />
+                <ArrowDown className={`w-5 h-5 ${chainColors[Math.min(index, CHAIN_LENGTH - 1)].arrow}`} />
+              </MotionDiv>
+            )}
+
+            {/* Entry card */}
+            <MotionDiv
+              initial={{ opacity: 0, y: 16, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              className="w-full"
+            >
+              <div className={`p-4 rounded-xl border ${chainColors[Math.min(index, CHAIN_LENGTH - 1)].bg} ${chainColors[Math.min(index, CHAIN_LENGTH - 1)].border}`}>
+                <p className={`text-[10px] font-bold uppercase tracking-wider mb-2 ${chainColors[Math.min(index, CHAIN_LENGTH - 1)].label}`}>
+                  {index === 0 ? 'Your worst fear' : `Level ${index + 1}: And then what?`}
+                </p>
+
+                {committed[index] ? (
+                  <p className={`text-sm font-medium ${chainColors[Math.min(index, CHAIN_LENGTH - 1)].text}`}>"{entry}"</p>
+                ) : (
+                  <div className="flex flex-col gap-3">
+                    <input
+                      type="text"
+                      value={entry}
+                      onChange={e => handleChange(index, e.target.value)}
+                      onKeyDown={e => handleKeyDown(e, index)}
+                      placeholder={index === 0 ? "I'll fail my exam" : "If that happened, then..."}
+                      className="w-full p-3 text-sm bg-white dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-700 rounded-lg text-zinc-800 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-slate-400 dark:focus:ring-slate-500"
+                    />
+                    <button
+                      onClick={() => handleNext(index)}
+                      disabled={!entry.trim()}
+                      className="self-end px-4 py-2 text-xs font-bold bg-slate-600 hover:bg-slate-700 text-white rounded-lg transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                    >
+                      {index + 1 < CHAIN_LENGTH ? 'And then what happens?' : 'See the full chain'}
+                    </button>
+                  </div>
+                )}
+              </div>
+            </MotionDiv>
+          </React.Fragment>
+        ))}
+      </div>
+
+      {/* Reflection panel */}
+      <AnimatePresence>
+        {showReflection && (
+          <MotionDiv
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mt-8 p-6 bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-700"
+          >
+            <h5 className="font-serif text-lg font-semibold text-zinc-800 dark:text-white text-center mb-4">Look at your chain.</h5>
+
+            <div className="space-y-2 mb-6">
+              {entries.filter((_, i) => committed[i]).map((entry, index) => (
+                <div key={index} className={`p-3 rounded-lg border ${chainColors[index].bg} ${chainColors[index].border} flex items-center gap-3`}>
+                  <span className={`shrink-0 w-2 h-2 rounded-full ${chainColors[index].dot}`} />
+                  <p className={`text-sm ${chainColors[index].text}`}>{entry}</p>
+                </div>
+              ))}
+            </div>
+
+            <p className="text-center text-sm text-zinc-600 dark:text-zinc-400 mb-2">Is your final answer really as catastrophic as the first one felt?</p>
+            <p className="text-center text-sm font-medium text-emerald-600 dark:text-emerald-400">Most catastrophic chains end somewhere manageable. The fear lives in the ambiguity — not the reality.</p>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
+
+      {/* Reset button */}
+      {currentStep > 0 && (
+        <div className="flex justify-center mt-6">
+          <button
+            onClick={handleReset}
+            className="px-4 py-2 text-xs font-bold bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-600 transition-colors"
+          >
+            Start Over
+          </button>
+        </div>
+      )}
+    </div>
+  );
+};
+
 // --- MODULE COMPONENT ---
 const CatastrophicThinkingModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
@@ -285,6 +442,7 @@ const CatastrophicThinkingModule: React.FC<{ onBack: () => void; progress: Modul
           {activeSection === 4 && (
             <ReadingSection title="Decatastrophizing." eyebrow="Step 5" icon={Layers} theme={theme}>
               <p>This technique doesn't promise "it will all be fine." Instead, it confronts the worst-case scenario head-on to strip it of its terror. It's called the <Highlight description="A CBT technique where you follow a catastrophic thought to its conclusion by repeatedly asking 'And then what?' to reveal that the ultimate outcome is manageable." theme={theme}>Downward Arrow</Highlight> technique. By following the "what if" chain to its end, you realize the ultimate outcome is survivable, and you create a "Plan B."</p>
+              <DownwardArrowDrill />
             </ReadingSection>
           )}
           {activeSection === 5 && (

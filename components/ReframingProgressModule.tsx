@@ -70,6 +70,142 @@ const KanbanBoard = () => {
     );
 };
 
+const BANKED_SUBJECTS = [
+  { name: 'Irish', banked: 40, detail: 'Oral 40%' },
+  { name: 'English', banked: 0, detail: 'No coursework' },
+  { name: 'Maths', banked: 0, detail: 'No coursework' },
+  { name: 'French', banked: 20, detail: 'Oral 20%' },
+  { name: 'German', banked: 20, detail: 'Oral 20%' },
+  { name: 'Spanish', banked: 20, detail: 'Oral 20%' },
+  { name: 'History', banked: 20, detail: 'RSR 20%' },
+  { name: 'Geography', banked: 20, detail: 'Fieldwork 20%' },
+  { name: 'Biology', banked: 0, detail: 'No coursework' },
+  { name: 'Chemistry', banked: 0, detail: 'No coursework' },
+  { name: 'Physics', banked: 0, detail: 'No coursework' },
+  { name: 'Business', banked: 0, detail: 'No coursework' },
+  { name: 'Art', banked: 50, detail: 'Practical 50%' },
+  { name: 'Music', banked: 50, detail: 'Practical 50%' },
+  { name: 'Home Economics', banked: 20, detail: 'Journal 20%' },
+  { name: 'Ag Science', banked: 25, detail: 'Project 25%' },
+  { name: 'Engineering', banked: 50, detail: 'Project 50%' },
+  { name: 'Technology', banked: 50, detail: 'Project 50%' },
+  { name: 'DCG', banked: 50, detail: 'Project 50%' },
+  { name: 'Construction Studies', banked: 50, detail: 'Project 50%' },
+];
+
+const MotionDiv = motion.div as any;
+
+const BankedGradeCalculator = () => {
+  const [selected, setSelected] = useState<string[]>([]);
+
+  const toggle = (name: string) => {
+    setSelected(prev =>
+      prev.includes(name)
+        ? prev.filter(n => n !== name)
+        : prev.length >= 8
+          ? prev
+          : [...prev, name]
+    );
+  };
+
+  const selectedSubjects = BANKED_SUBJECTS.filter(s => selected.includes(s.name));
+  const avgBanked = selectedSubjects.length > 0
+    ? Math.round(selectedSubjects.reduce((sum, s) => sum + s.banked, 0) / selectedSubjects.length)
+    : 0;
+
+  const getMessage = (avg: number) => {
+    if (avg === 0) return 'Select your subjects above to see how much of your grade is already banked.';
+    if (avg <= 10) return `${avg}% of your points are already decided before you sit down in June. Every mark counts.`;
+    if (avg <= 20) return `${avg}% of your points are already decided before you sit down in June. That is a serious head start — make them count.`;
+    return `${avg}% of your points are already decided before you sit down in June. That is a massive advantage — treat these marks like gold.`;
+  };
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Banked Grade Calculator</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">
+        Select your 6–8 subjects to see how much of your final grade is already secured.
+      </p>
+
+      {/* Subject toggles */}
+      <div className="flex flex-wrap justify-center gap-2 mb-10">
+        {BANKED_SUBJECTS.map(subject => {
+          const isSelected = selected.includes(subject.name);
+          return (
+            <button
+              key={subject.name}
+              onClick={() => toggle(subject.name)}
+              className={
+                isSelected
+                  ? 'px-3 py-1.5 rounded-full text-xs font-bold transition-all bg-teal-500 text-white shadow-sm'
+                  : 'px-3 py-1.5 rounded-full text-xs font-bold transition-all bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-600'
+              }
+            >
+              {subject.name}
+            </button>
+          );
+        })}
+      </div>
+
+      {selected.length > 0 && (
+        <p className="text-xs text-center text-zinc-400 dark:text-zinc-500 mb-6">
+          {selected.length} / 8 subjects selected
+        </p>
+      )}
+
+      {/* Stacked bars */}
+      <AnimatePresence mode="popLayout">
+        {selectedSubjects.map(subject => (
+          <MotionDiv
+            key={subject.name}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.25 }}
+            className="mb-4"
+          >
+            <div className="flex items-center justify-between mb-1">
+              <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-200">{subject.name}</span>
+              <span className="text-xs text-zinc-400 dark:text-zinc-500">{subject.detail}</span>
+            </div>
+            <div className="flex h-5 w-full rounded-full overflow-hidden bg-zinc-200 dark:bg-zinc-700">
+              {subject.banked > 0 && (
+                <MotionDiv
+                  initial={{ width: 0 }}
+                  animate={{ width: `${subject.banked}%` }}
+                  transition={{ duration: 0.5, ease: 'easeOut' }}
+                  className="bg-teal-500 rounded-l-full flex items-center justify-center"
+                >
+                  <span className="text-[10px] font-bold text-white">{subject.banked}%</span>
+                </MotionDiv>
+              )}
+              <div
+                className="bg-zinc-300 dark:bg-zinc-600 flex items-center justify-center flex-1"
+                style={{ borderRadius: subject.banked === 0 ? '9999px' : '0 9999px 9999px 0' }}
+              >
+                <span className="text-[10px] font-bold text-zinc-500 dark:text-zinc-400">{100 - subject.banked}%</span>
+              </div>
+            </div>
+          </MotionDiv>
+        ))}
+      </AnimatePresence>
+
+      {/* Average summary */}
+      {selectedSubjects.length > 0 && (
+        <MotionDiv
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="mt-8 p-6 bg-teal-50 dark:bg-teal-900/20 rounded-xl border border-teal-200 dark:border-teal-800 text-center"
+        >
+          <p className="text-4xl font-serif font-bold text-teal-600 dark:text-teal-400">{avgBanked}%</p>
+          <p className="text-xs uppercase tracking-widest font-bold text-teal-500 dark:text-teal-500 mt-1 mb-3">Average Banked</p>
+          <p className="text-sm text-zinc-600 dark:text-zinc-300">{getMessage(avgBanked)}</p>
+        </MotionDiv>
+      )}
+    </div>
+  );
+};
+
 const RetrospectiveLog = () => {
     const [topics, setTopics] = useState([
         { name: "Ecology", status: 'red', last: null },
@@ -145,6 +281,7 @@ const ReframingProgressModule: React.FC<{ onBack: () => void; progress: ModulePr
             <ReadingSection title="The 'Banked Grade' Heist." eyebrow="Step 3" icon={PieChart} theme={theme}>
                 <p>The structure of the Leaving Cert allows for a strategic "heist." A significant portion of your final grade can be secured months before the written exams. These <Highlight description="Coursework, practical projects, and oral exams that are completed before June. They are immune to exam-day nerves and represent the ultimate 'early wins'." theme={theme}>'Banked Grades'</Highlight> are your safety net.</p>
                 <p>For a student taking Irish (40% Oral), History (20% RSR), and Geography (20% Field Study), <strong>80% of a subject equivalent</strong> is secured before June. This realization must fundamentally alter your study prioritization in the spring of your 6th year.</p>
+                <BankedGradeCalculator />
             </ReadingSection>
           )}
           {activeSection === 3 && (

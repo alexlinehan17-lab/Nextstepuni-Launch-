@@ -17,6 +17,210 @@ const theme = blueTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 
+const MotionDiv = motion.div as any;
+const MotionButton = motion.button as any;
+
+type MemoryBlock = {
+  label: string;
+  threatened: boolean;
+};
+
+const INITIAL_BLOCKS: MemoryBlock[] = [
+  { label: 'Recall', threatened: false },
+  { label: 'Reasoning', threatened: false },
+  { label: 'Analysis', threatened: false },
+  { label: 'Focus', threatened: false },
+  { label: 'Planning', threatened: false },
+  { label: 'Comprehension', threatened: false },
+  { label: 'Logic', threatened: false },
+  { label: 'Creativity', threatened: false },
+  { label: 'Attention', threatened: false },
+  { label: 'Connections', threatened: false },
+  { label: 'Evaluation', threatened: false },
+  { label: 'Synthesis', threatened: false },
+];
+
+const THREAT_LABELS = [
+  'Self-doubt',
+  'Worry',
+  'Am I good enough?',
+  'They expect me to fail',
+  'I don\'t belong',
+];
+
+const THREAT_INDICES = [2, 5, 8, 10, 11];
+
+const WorkingMemoryGrid = () => {
+  const [phase, setPhase] = useState<'full' | 'threatened' | 'restored'>('full');
+  const [blocks, setBlocks] = useState<MemoryBlock[]>(INITIAL_BLOCKS);
+  const [animating, setAnimating] = useState(false);
+
+  const activeCount = blocks.filter(b => !b.threatened).length;
+  const percentage = Math.round((activeCount / blocks.length) * 100);
+
+  const handleSimulateThreat = () => {
+    if (animating) return;
+    setAnimating(true);
+    const newBlocks = [...INITIAL_BLOCKS];
+    let step = 0;
+
+    const interval = setInterval(() => {
+      if (step < THREAT_INDICES.length) {
+        const idx = THREAT_INDICES[step];
+        newBlocks[idx] = { label: THREAT_LABELS[step], threatened: true };
+        setBlocks([...newBlocks]);
+        step++;
+      } else {
+        clearInterval(interval);
+        setPhase('threatened');
+        setAnimating(false);
+      }
+    }, 500);
+  };
+
+  const handleActivateShield = () => {
+    if (animating) return;
+    setAnimating(true);
+    const currentBlocks = [...blocks];
+    const threatenedIndices = THREAT_INDICES.slice().reverse();
+    let step = 0;
+
+    const interval = setInterval(() => {
+      if (step < threatenedIndices.length) {
+        const idx = threatenedIndices[step];
+        currentBlocks[idx] = { ...INITIAL_BLOCKS[idx], threatened: false };
+        setBlocks([...currentBlocks]);
+        step++;
+      } else {
+        clearInterval(interval);
+        setPhase('restored');
+        setAnimating(false);
+      }
+    }, 400);
+  };
+
+  const handleReset = () => {
+    setBlocks([...INITIAL_BLOCKS]);
+    setPhase('full');
+  };
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+        Working Memory Under Threat
+      </h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">
+        See how stereotype threat hijacks your cognitive resources — and how affirmation restores them.
+      </p>
+
+      {/* Percentage indicator */}
+      <div className="flex justify-center mb-6">
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100 dark:bg-zinc-700 rounded-full">
+          <span className="text-sm font-mono font-bold text-zinc-600 dark:text-zinc-300">
+            Working Memory:
+          </span>
+          <MotionDiv
+            key={percentage}
+            initial={{ scale: 1.3, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+            className={`text-lg font-mono font-bold ${
+              percentage === 100
+                ? 'text-blue-600 dark:text-blue-400'
+                : percentage < 70
+                ? 'text-red-500 dark:text-red-400'
+                : 'text-amber-500 dark:text-amber-400'
+            }`}
+          >
+            {percentage}%
+          </MotionDiv>
+        </div>
+      </div>
+
+      {/* Grid */}
+      <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 max-w-md mx-auto mb-8">
+        {blocks.map((block, i) => (
+          <MotionDiv
+            key={i}
+            layout
+            animate={{
+              backgroundColor: block.threatened ? undefined : undefined,
+              scale: block.threatened ? [1, 0.9, 1] : 1,
+            }}
+            transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+            className={`relative flex items-center justify-center rounded-lg h-16 sm:h-18 text-center px-1 ${
+              block.threatened
+                ? 'bg-red-100 dark:bg-red-900/40 border-2 border-red-300 dark:border-red-700'
+                : 'bg-blue-100 dark:bg-blue-900/40 border-2 border-blue-300 dark:border-blue-700'
+            }`}
+          >
+            <MotionDiv
+              key={block.label}
+              initial={{ opacity: 0, y: 4 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+              className={`text-xs font-bold leading-tight ${
+                block.threatened
+                  ? 'text-red-700 dark:text-red-300'
+                  : 'text-blue-700 dark:text-blue-300'
+              }`}
+            >
+              {block.label}
+            </MotionDiv>
+          </MotionDiv>
+        ))}
+      </div>
+
+      {/* Buttons */}
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+        {phase === 'full' && (
+          <MotionButton
+            onClick={handleSimulateThreat}
+            disabled={animating}
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.97 }}
+            className="px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-bold text-sm rounded-full shadow-lg transition-colors disabled:opacity-50"
+          >
+            Simulate Exam Pressure
+          </MotionButton>
+        )}
+        {phase === 'threatened' && (
+          <MotionButton
+            onClick={handleActivateShield}
+            disabled={animating}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.97 }}
+            className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold text-sm rounded-full shadow-lg transition-colors disabled:opacity-50"
+          >
+            Activate Shield (Values Affirmation)
+          </MotionButton>
+        )}
+        {phase === 'restored' && (
+          <MotionDiv
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="flex flex-col items-center gap-3"
+          >
+            <p className="text-sm font-bold text-blue-600 dark:text-blue-400 text-center">
+              Full capacity restored. Affirming your values frees your working memory.
+            </p>
+            <MotionButton
+              onClick={handleReset}
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.97 }}
+              className="px-5 py-2 bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-600 text-zinc-700 dark:text-zinc-200 font-bold text-sm rounded-full transition-colors"
+            >
+              Reset Demo
+            </MotionButton>
+          </MotionDiv>
+        )}
+      </div>
+    </div>
+  );
+};
+
 const ValuesSelector = () => {
     const values = ["Family", "Friendship", "Creativity", "Kindness", "Humour", "Ambition", "Community", "Independence", "Learning"];
     const [selected, setSelected] = useState<string[]>([]);
@@ -80,10 +284,13 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
       {(activeSection) => (
         <>
           {activeSection === 0 && (
+            <>
             <ReadingSection title="The Invisible Threat." eyebrow="Step 1" icon={AlertTriangle} theme={theme}>
               <p>In a high-stakes situation like the Leaving Cert, your brain is on high alert for threats. For students from disadvantaged backgrounds, there's an extra, invisible threat in the room: the fear that a poor performance will confirm a negative stereotype about your group. This is called <Highlight description="A situational predicament in which individuals are at risk of confirming negative stereotypes about their social group. This adds extra cognitive load, which can impair performance." theme={theme}>Stereotype Threat</Highlight>.</p>
               <p>It's a cognitive tax. Part of your precious working memory gets hijacked by this background anxiety, leaving less capacity for the actual exam questions. This isn't just "in your head"--it's a measurable physiological stress response that can sabotage your performance, even if you know the material perfectly.</p>
             </ReadingSection>
+            <WorkingMemoryGrid />
+            </>
           )}
            {activeSection === 1 && (
             <ReadingSection title="The Psychological Shield." eyebrow="Step 2" icon={Shield} theme={theme}>

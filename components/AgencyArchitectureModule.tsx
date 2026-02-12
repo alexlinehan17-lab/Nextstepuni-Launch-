@@ -17,6 +17,151 @@ const theme = amberTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 
+const MotionDiv = motion.div as any;
+
+const AttributionMapper = () => {
+  const [locus, setLocus] = useState(50);
+  const [stability, setStability] = useState(50);
+  const [controllability, setControllability] = useState(50);
+
+  // Internal (high locus) + Unstable (low stability) + Controllable (low controllability) = growth
+  // Optimism score: locus contributes positively when high, stability when low, controllability when low
+  const optimismScore = (locus / 100) + (1 - stability / 100) + (1 - controllability / 100); // 0–3
+
+  const getLabel = (): { text: string; color: string } => {
+    if (optimismScore >= 2.2) return { text: 'Growth Attribution', color: 'emerald' };
+    if (optimismScore <= 1.0) return { text: 'Helplessness Risk', color: 'rose' };
+    return { text: 'Mixed', color: 'amber' };
+  };
+
+  const getExplanation = (): string => {
+    const isInternal = locus >= 55;
+    const isStable = stability >= 55;
+    const isControllable = controllability <= 45;
+
+    if (isInternal && !isStable && isControllable) {
+      return "This is the ideal growth attribution. You take ownership, see it as temporary, and believe you can change it. This pattern fuels motivation and resilience.";
+    }
+    if (!isInternal && isStable && !isControllable) {
+      return "You see this as someone else's fault, permanent, and out of your control. This is the classic pattern behind learned helplessness — it kills motivation because effort feels pointless.";
+    }
+    if (isInternal && isStable && !isControllable) {
+      return "You see this as permanent and out of your control — this is the pattern that leads to learned helplessness. Try reframing: what specific strategy could you change?";
+    }
+    if (!isInternal && !isStable && isControllable) {
+      return "You see this as external and temporary, but believe you can act on it. That's a resilient stance, though taking more ownership could help you grow even faster.";
+    }
+    if (isInternal && isStable && isControllable) {
+      return "You take ownership and feel you can act, but seeing it as permanent may weigh you down. Try reframing: is this really forever, or just this situation?";
+    }
+    if (!isInternal && isStable && isControllable) {
+      return "You see the cause as external and permanent but feel you can still act. Consider whether more ownership of the cause would give you a clearer path forward.";
+    }
+    if (!isInternal && !isStable && !isControllable) {
+      return "You see this as external, temporary, and beyond your control. That can feel comforting, but look for the part you can influence — even small actions build agency.";
+    }
+    if (isInternal && !isStable && !isControllable) {
+      return "You own the cause and see it as temporary, but feel powerless to change it. The missing piece is controllability — what one small lever could you pull?";
+    }
+    // Neutral / middle ground
+    return "Your attribution sits in the middle ground. Try pushing the sliders to the extremes to see how different stories about failure lead to very different emotional outcomes.";
+  };
+
+  const label = getLabel();
+
+  const labelBgClass = label.color === 'emerald'
+    ? 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300'
+    : label.color === 'rose'
+    ? 'bg-rose-100 dark:bg-rose-900/40 text-rose-700 dark:text-rose-300'
+    : 'bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300';
+
+  const borderClass = label.color === 'emerald'
+    ? 'border-emerald-200 dark:border-emerald-700'
+    : label.color === 'rose'
+    ? 'border-rose-200 dark:border-rose-700'
+    : 'border-amber-200 dark:border-amber-700';
+
+  const sliders: { label: string; leftLabel: string; rightLabel: string; leftExample: string; rightExample: string; value: number; setter: (v: number) => void }[] = [
+    {
+      label: 'Locus',
+      leftLabel: 'External',
+      rightLabel: 'Internal',
+      leftExample: '"The teacher marked unfairly"',
+      rightExample: '"I didn\'t prepare well"',
+      value: locus,
+      setter: setLocus,
+    },
+    {
+      label: 'Stability',
+      leftLabel: 'Unstable',
+      rightLabel: 'Stable',
+      leftExample: '"I had an off day"',
+      rightExample: '"I\'m always like this"',
+      value: stability,
+      setter: setStability,
+    },
+    {
+      label: 'Controllability',
+      leftLabel: 'Controllable',
+      rightLabel: 'Uncontrollable',
+      leftExample: '"I can change my approach"',
+      rightExample: '"There\'s nothing I can do"',
+      value: controllability,
+      setter: setControllability,
+    },
+  ];
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Attribution Mapper</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-10">
+        Think of a recent setback or bad result. Map how you interpreted it:
+      </p>
+
+      <div className="space-y-8">
+        {sliders.map((s) => (
+          <div key={s.label}>
+            <p className="text-sm font-bold text-zinc-700 dark:text-zinc-200 mb-1 text-center">{s.label}</p>
+            <div className="flex items-center gap-3">
+              <div className="flex flex-col items-end w-28 shrink-0">
+                <span className="text-xs font-semibold text-zinc-600 dark:text-zinc-300">{s.leftLabel}</span>
+                <span className="text-[10px] text-zinc-400 dark:text-zinc-500 italic text-right">{s.leftExample}</span>
+              </div>
+              <input
+                type="range"
+                min={0}
+                max={100}
+                value={s.value}
+                onChange={(e) => s.setter(Number(e.target.value))}
+                className="w-full"
+              />
+              <div className="flex flex-col items-start w-28 shrink-0">
+                <span className="text-xs font-semibold text-zinc-600 dark:text-zinc-300">{s.rightLabel}</span>
+                <span className="text-[10px] text-zinc-400 dark:text-zinc-500 italic text-left">{s.rightExample}</span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <MotionDiv
+        key={label.text}
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.35 }}
+        className={`mt-10 p-6 rounded-xl border ${borderClass} text-center`}
+      >
+        <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${labelBgClass}`}>
+          {label.text}
+        </span>
+        <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
+          {getExplanation()}
+        </p>
+      </MotionDiv>
+    </div>
+  );
+};
+
 const AttributionSorter = () => {
     const reasons = [
         { text: "I didn't use the right study method.", type: 'internal', control: true },
@@ -130,6 +275,7 @@ const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleP
           {activeSection === 1 && (
             <ReadingSection title="The Three Dimensions." eyebrow="Step 2" icon={SlidersHorizontal} theme={theme}>
               <p>Every story you tell yourself about a failure can be broken down along three dimensions. <strong>1. Locus of Control:</strong> Is the cause <Highlight description="Attributing an outcome to something about yourself (e.g., your effort, your ability)." theme={theme}>Internal</Highlight> (about you) or <Highlight description="Attributing an outcome to something outside of yourself (e.g., the teacher, the situation)." theme={theme}>External</Highlight> (about the world)? <strong>2. Stability:</strong> Is the cause <Highlight description="A cause that is perceived as permanent and unchangeable (e.g., 'I'm just not a maths person')." theme={theme}>Stable</Highlight> (permanent) or <Highlight description="A cause that is perceived as temporary and changeable (e.g., 'I didn't study enough for this specific test')." theme={theme}>Unstable</Highlight> (temporary)? <strong>3. Controllability:</strong> Is the cause something you can change, or not?</p>
+              <AttributionMapper/>
               <AttributionSorter/>
             </ReadingSection>
           )}

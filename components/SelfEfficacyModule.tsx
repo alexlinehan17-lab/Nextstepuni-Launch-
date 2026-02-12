@@ -16,7 +16,220 @@ import { ModuleLayout } from './ModuleLayout';
 
 const theme = roseTheme;
 
+const MotionPolygon = motion.polygon as any;
+
 // --- INTERACTIVE COMPONENTS ---
+
+const EFFICACY_DOMAINS = [
+  'Maths & Problem Solving',
+  'Essay Writing',
+  'Memorisation & Recall',
+  'Exam Performance Under Pressure',
+  'Staying Focused for Long Sessions',
+  'Understanding New Concepts',
+];
+
+const EfficacyRadar: React.FC = () => {
+  const [values, setValues] = useState<number[]>([5, 5, 5, 5, 5, 5]);
+
+  const size = 300;
+  const cx = size / 2;
+  const cy = size / 2;
+  const maxR = 110;
+
+  const angleStep = (2 * Math.PI) / 6;
+  const startAngle = -Math.PI / 2; // top
+
+  const pointOnHex = (index: number, radius: number) => {
+    const angle = startAngle + index * angleStep;
+    return {
+      x: cx + radius * Math.cos(angle),
+      y: cy + radius * Math.sin(angle),
+    };
+  };
+
+  const hexagonPoints = (radius: number) =>
+    Array.from({ length: 6 }, (_, i) => {
+      const pt = pointOnHex(i, radius);
+      return `${pt.x},${pt.y}`;
+    }).join(' ');
+
+  const dataPoints = values.map((v, i) => {
+    const r = (v / 10) * maxR;
+    const pt = pointOnHex(i, r);
+    return `${pt.x},${pt.y}`;
+  }).join(' ');
+
+  const labelPositions = EFFICACY_DOMAINS.map((_, i) => {
+    const pt = pointOnHex(i, maxR + 28);
+    return pt;
+  });
+
+  const average = values.reduce((a, b) => a + b, 0) / values.length;
+
+  const lowDomains = EFFICACY_DOMAINS.filter((_, i) => values[i] <= 3);
+  const allHigh = values.every((v) => v >= 7);
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+        Self-Efficacy Radar
+      </h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">
+        Rate your belief in your ability across these 6 domains (1 = no confidence, 10 = total confidence).
+      </p>
+
+      {/* Radar Chart */}
+      <div className="flex justify-center mb-8">
+        <svg
+          viewBox={`0 0 ${size} ${size}`}
+          className="w-full max-w-xs"
+          style={{ overflow: 'visible' }}
+        >
+          {/* Grid hexagons */}
+          {[0.33, 0.66, 1].map((scale) => (
+            <polygon
+              key={scale}
+              points={hexagonPoints(maxR * scale)}
+              fill="none"
+              stroke="currentColor"
+              className="text-zinc-200 dark:text-zinc-600"
+              strokeWidth="1"
+            />
+          ))}
+
+          {/* Axis lines */}
+          {Array.from({ length: 6 }, (_, i) => {
+            const pt = pointOnHex(i, maxR);
+            return (
+              <line
+                key={i}
+                x1={cx}
+                y1={cy}
+                x2={pt.x}
+                y2={pt.y}
+                stroke="currentColor"
+                className="text-zinc-200 dark:text-zinc-600"
+                strokeWidth="0.5"
+              />
+            );
+          })}
+
+          {/* Data polygon */}
+          <MotionPolygon
+            points={dataPoints}
+            fill="rgba(225,29,72,0.15)"
+            stroke="#e11d48"
+            strokeWidth="2"
+            initial={false}
+            animate={{ points: dataPoints }}
+            transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+          />
+
+          {/* Data point dots */}
+          {values.map((v, i) => {
+            const r = (v / 10) * maxR;
+            const pt = pointOnHex(i, r);
+            return (
+              <circle
+                key={i}
+                cx={pt.x}
+                cy={pt.y}
+                r="4"
+                fill="#e11d48"
+              />
+            );
+          })}
+
+          {/* Labels */}
+          {labelPositions.map((pt, i) => (
+            <text
+              key={i}
+              x={pt.x}
+              y={pt.y}
+              textAnchor="middle"
+              dominantBaseline="middle"
+              className="fill-zinc-600 dark:fill-zinc-300"
+              fontSize="9"
+              fontWeight="500"
+            >
+              {EFFICACY_DOMAINS[i].length > 20
+                ? EFFICACY_DOMAINS[i].split(' ').reduce<string[]>((lines, word) => {
+                    const current = lines[lines.length - 1];
+                    if (current && (current + ' ' + word).length <= 18) {
+                      lines[lines.length - 1] = current + ' ' + word;
+                    } else {
+                      lines.push(word);
+                    }
+                    return lines;
+                  }, []).map((line, li) => (
+                    <tspan key={li} x={pt.x} dy={li === 0 ? '0' : '1.1em'}>
+                      {line}
+                    </tspan>
+                  ))
+                : EFFICACY_DOMAINS[i]}
+            </text>
+          ))}
+        </svg>
+      </div>
+
+      {/* Sliders */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 max-w-2xl mx-auto mb-8">
+        {EFFICACY_DOMAINS.map((domain, i) => (
+          <div key={domain}>
+            <div className="flex justify-between items-baseline mb-1">
+              <label className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+                {domain}
+              </label>
+              <span className="text-sm font-bold text-rose-600 dark:text-rose-400 tabular-nums">
+                {values[i]}
+              </span>
+            </div>
+            <input
+              type="range"
+              min={1}
+              max={10}
+              value={values[i]}
+              onChange={(e) => {
+                const next = [...values];
+                next[i] = Number(e.target.value);
+                setValues(next);
+              }}
+              className="w-full h-2 rounded-lg appearance-none cursor-pointer bg-zinc-200 dark:bg-zinc-600 accent-rose-500"
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Score & Insight */}
+      <div className="text-center">
+        <p className="text-lg font-semibold text-zinc-800 dark:text-white">
+          Self-Efficacy Score:{' '}
+          <span className="text-rose-600 dark:text-rose-400">{average.toFixed(1)}/10</span>
+        </p>
+        {lowDomains.length > 0 && (
+          <motion.p
+            key={lowDomains.join(',')}
+            initial={{ opacity: 0, y: 4 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-3 text-sm text-amber-700 dark:text-amber-400"
+          >
+            Your belief in <span className="font-bold">{lowDomains[0]}</span> is low — this module will show you how to build it up.
+          </motion.p>
+        )}
+        {allHigh && lowDomains.length === 0 && (
+          <motion.p
+            initial={{ opacity: 0, y: 4 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-3 text-sm text-emerald-700 dark:text-emerald-400 font-semibold"
+          >
+            Strong foundation — now let's make it bulletproof.
+          </motion.p>
+        )}
+      </div>
+    </div>
+  );
+};
 const RoleModelSelector = () => {
     const [choice, setChoice] = useState<null | 'mastery' | 'coping'>(null);
     return (
@@ -98,10 +311,13 @@ const SelfEfficacyModule: React.FC<{ onBack: () => void; progress: ModuleProgres
       {(activeSection) => (
         <>
           {activeSection === 0 && (
-            <ReadingSection title="The Belief Barrier." eyebrow="Step 1" icon={Brain} theme={theme}>
-              <p>Let's get one thing straight: the biggest barrier to your success isn't a lack of talent. It's a lack of belief. In psychology, this core belief in your own ability is called <Highlight description="The conviction that you have the power to organize and execute the actions needed to get things done. It's not about having the skill; it's about believing you can use it." theme={theme}>Self-Efficacy</Highlight>. It's the engine that drives effort, persistence, and resilience.</p>
-              <p>Think of it like this: a car might have a full tank of petrol (your knowledge and skills), but if the driver doesn't believe they can actually drive, the car is going nowhere. For students from tough backgrounds, society often spends years convincing you that you don't belong in the driver's seat. This module is about grabbing the keys.</p>
-            </ReadingSection>
+            <>
+              <ReadingSection title="The Belief Barrier." eyebrow="Step 1" icon={Brain} theme={theme}>
+                <p>Let's get one thing straight: the biggest barrier to your success isn't a lack of talent. It's a lack of belief. In psychology, this core belief in your own ability is called <Highlight description="The conviction that you have the power to organize and execute the actions needed to get things done. It's not about having the skill; it's about believing you can use it." theme={theme}>Self-Efficacy</Highlight>. It's the engine that drives effort, persistence, and resilience.</p>
+                <p>Think of it like this: a car might have a full tank of petrol (your knowledge and skills), but if the driver doesn't believe they can actually drive, the car is going nowhere. For students from tough backgrounds, society often spends years convincing you that you don't belong in the driver's seat. This module is about grabbing the keys.</p>
+              </ReadingSection>
+              <EfficacyRadar />
+            </>
           )}
           {activeSection === 1 && (
             <ReadingSection title="How Belief is Built." eyebrow="Step 2" icon={Target} theme={theme}>
