@@ -18,33 +18,136 @@ const theme = roseTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 
-const MotivationCalculator = () => {
-    const [vars, setVars] = useState({ E: 50, V: 50, C: 50 });
-    const motivation = (vars.E * vars.V) / (vars.C + 1);
+const WhyBotherAudit = () => {
+    const subjects = [
+      'English', 'Irish', 'Maths', 'History', 'Geography', 'Biology',
+      'Chemistry', 'Physics', 'Business', 'Economics', 'French', 'Art',
+    ];
 
-    const Slider = ({ label, value, setter }: { label: string, value: number, setter: (val: number) => void}) => (
-        <div>
-            <label className="text-xs font-bold">{label} ({value})</label>
-            <input type="range" min="1" max="100" value={value} onChange={e => setter(parseInt(e.target.value))} className="w-full accent-rose-500" />
-        </div>
-    );
+    const [selected, setSelected] = useState<Set<string>>(new Set());
+    const [ratings, setRatings] = useState<{ [key: string]: number }>({});
+
+    const toggleSubject = (s: string) => {
+      setSelected(prev => {
+        const next = new Set(prev);
+        if (next.has(s)) { next.delete(s); } else if (next.size < 7) { next.add(s); }
+        return next;
+      });
+    };
+
+    const setRating = (subject: string, value: number) => {
+      setRatings(prev => ({ ...prev, [subject]: value }));
+    };
+
+    const ratedSubjects = Array.from(selected).filter(s => ratings[s] !== undefined);
+    const frictionPoints = ratedSubjects.filter(s => (ratings[s] ?? 0) <= 2);
+    const allRated = ratedSubjects.length === selected.size && selected.size > 0;
+
+    const ratingLabels = [
+      { value: 1, label: 'None', desc: 'No connection to my future', color: 'bg-rose-500 text-white' },
+      { value: 2, label: 'Weak', desc: 'Vague connection at best', color: 'bg-amber-500 text-white' },
+      { value: 3, label: 'Some', desc: 'I can see a partial link', color: 'bg-yellow-400 text-zinc-800' },
+      { value: 4, label: 'Strong', desc: 'Clear link to my goals', color: 'bg-emerald-500 text-white' },
+    ];
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Motivation Calculator</h4>
-            <div className="grid grid-cols-2 gap-6 items-center">
-                <div className="space-y-4">
-                    <Slider label="Expectancy (Belief I can do it)" value={vars.E} setter={v => setVars({...vars, E:v})}/>
-                    <Slider label="Value (How useful/enjoyable is it?)" value={vars.V} setter={v => setVars({...vars, V:v})}/>
-                    <Slider label="Cost (Stress, boredom, time)" value={vars.C} setter={v => setVars({...vars, C:v})}/>
-                </div>
-                <div className="text-center">
-                     <p className="text-sm text-zinc-500 dark:text-zinc-400">Your Motivation Score:</p>
-                     <p className="text-6xl font-semibold text-rose-500 tracking-tighter">{Math.round(motivation)}</p>
-                </div>
-            </div>
+      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "Why Bother?" Audit</h4>
+        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Select your subjects, then rate how connected each one feels to your future goals.</p>
+
+        {/* Subject picker */}
+        <div className="mb-6">
+          <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-2">Select your subjects (up to 7)</p>
+          <div className="flex flex-wrap gap-2">
+            {subjects.map(s => (
+              <button
+                key={s}
+                onClick={() => toggleSubject(s)}
+                className={`px-3 py-1.5 text-xs font-bold rounded-lg border transition-all ${
+                  selected.has(s)
+                    ? 'bg-rose-500 text-white border-rose-500'
+                    : 'bg-zinc-50 dark:bg-zinc-900/30 text-zinc-600 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-rose-300'
+                }`}
+              >
+                {s}
+              </button>
+            ))}
+          </div>
         </div>
-    )
+
+        {/* Rating cards */}
+        {selected.size > 0 && (
+          <div className="space-y-3 mb-6">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Rate utility value — how useful does this feel for your future?</p>
+            {Array.from(selected).map(s => (
+              <div
+                key={s}
+                className={`p-4 rounded-xl border transition-all ${
+                  ratings[s] !== undefined
+                    ? ratings[s] <= 2
+                      ? 'bg-rose-50 dark:bg-rose-950/20 border-rose-200 dark:border-rose-800/40'
+                      : 'bg-emerald-50 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800/40'
+                    : 'bg-zinc-50 dark:bg-zinc-900/30 border-zinc-200 dark:border-zinc-700'
+                }`}
+              >
+                <div className="flex items-center justify-between mb-2.5">
+                  <p className="text-sm font-bold text-zinc-800 dark:text-white">{s}</p>
+                  {ratings[s] !== undefined && (
+                    <motion.span
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      className={`text-[10px] font-bold ${ratings[s] <= 2 ? 'text-rose-500' : 'text-emerald-500'}`}
+                    >
+                      {ratings[s] <= 2 ? 'Friction Point' : 'Connected'}
+                    </motion.span>
+                  )}
+                </div>
+                <div className="flex gap-2">
+                  {ratingLabels.map(r => (
+                    <button
+                      key={r.value}
+                      onClick={() => setRating(s, r.value)}
+                      className={`flex-1 py-1.5 text-[10px] font-bold rounded-lg border transition-all ${
+                        ratings[s] === r.value
+                          ? `${r.color} border-transparent`
+                          : 'bg-white dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400'
+                      }`}
+                    >
+                      {r.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Results */}
+        {allRated && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="p-5 bg-zinc-50 dark:bg-zinc-900/30 rounded-xl border border-zinc-200 dark:border-zinc-700"
+          >
+            {frictionPoints.length > 0 ? (
+              <>
+                <p className="text-sm font-semibold text-zinc-800 dark:text-white mb-1">
+                  You have {frictionPoints.length} friction point{frictionPoints.length > 1 ? 's' : ''}: {frictionPoints.join(', ')}
+                </p>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                  These are the subjects where "why bother?" is loudest. Their Utility Value feels low, which makes the Cost feel unbearable. The rest of this module will teach you how to reframe them.
+                </p>
+              </>
+            ) : (
+              <>
+                <p className="text-sm font-semibold text-emerald-600 dark:text-emerald-400 mb-1">No friction points detected.</p>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400">You already see strong connections between your subjects and your future. This module will help you strengthen and articulate those connections even further.</p>
+              </>
+            )}
+          </motion.div>
+        )}
+      </div>
+    );
 };
 
 const TransferableSkillsMatrix = () => {
@@ -109,7 +212,7 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
             <ReadingSection title="The 'Why Bother?' Problem." eyebrow="Step 1" icon={Wind} theme={theme}>
               <p>The feeling of "why bother?" isn't laziness. It's a rational calculation your brain makes when the cost of a task outweighs its value. The science for this is called <Highlight description="A theory of motivation that posits that your level of motivation is a product of your expectation of success (Expectancy) and the value you place on the task (Value)." theme={theme}>Expectancy-Value Theory (EVT)</Highlight>. Motivation collapses when the <Highlight description="The perceived negative aspects of a task, like stress, boredom, or the time it takes away from other activities." theme={theme}>Cost</Highlight> feels higher than the <Highlight description="The usefulness of a task for achieving your future goals. It's the most stable and powerful form of motivation for schoolwork." theme={theme}>Utility Value</Highlight>.</p>
               <p>In the Leaving Cert, the "points race" often disconnects the work you're doing from any real-world purpose, reducing its Utility Value to zero. This makes the work feel like "drudgery," which massively increases its psychological Cost. This module is about flipping that equation back in your favour.</p>
-              <MotivationCalculator />
+              <WhyBotherAudit />
             </ReadingSection>
           )}
           {activeSection === 1 && (

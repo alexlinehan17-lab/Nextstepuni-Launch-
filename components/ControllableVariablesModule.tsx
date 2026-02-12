@@ -19,30 +19,198 @@ const theme = slateTheme;
 // --- INTERACTIVE COMPONENTS ---
 
 const GlycemicIndexSimulator = () => {
-    const [food, setFood] = useState<'none' | 'high' | 'low'>('none');
+    const [selected, setSelected] = useState<Set<'high' | 'low'>>(new Set());
 
-    const pathData = {
-        none: "M0 80 L 500 80",
-        high: "M0 80 C 100 10, 150 10, 200 60 C 250 110, 300 110, 500 90",
-        low: "M0 80 C 100 70, 200 60, 500 50",
-    }
+    const toggle = (type: 'high' | 'low') => {
+      setSelected(prev => {
+        const next = new Set(prev);
+        if (next.has(type)) next.delete(type); else next.add(type);
+        return next;
+      });
+    };
 
-    return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Glycemic Index Simulator</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Choose a breakfast and see what it does to your blood sugar over 3 hours.</p>
-            <div className="w-full h-32 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg p-4">
-                <svg viewBox="0 0 500 100" className="w-full h-full" preserveAspectRatio="none">
-                     <motion.path d={pathData[food]} fill="none" stroke="#f59e0b" strokeWidth="3" transition={{type: 'spring', damping: 15, stiffness: 100}}/>
-                     <text x="5" y="15" fontSize="8" fill="#9ca3af">High Energy</text>
-                     <text x="5" y="95" fontSize="8" fill="#9ca3af">Low Energy</text>
-                </svg>
-            </div>
-             <div className="flex justify-center gap-4 mt-6">
-                <button onClick={() => setFood('high')} className="px-4 py-2 bg-rose-100 text-rose-800 text-xs font-bold rounded-lg">Sugary Cereal (High-GI)</button>
-                <button onClick={() => setFood('low')} className="px-4 py-2 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-lg">Porridge (Low-GI)</button>
-             </div>
+    // Chart dimensions (inside padding)
+    const W = 360, H = 160;
+    const padL = 40, padR = 16, padT = 16, padB = 28;
+    const chartW = W - padL - padR;
+    const chartH = H - padT - padB;
+
+    // Map data points to SVG coords
+    const toX = (hour: number) => padL + (hour / 3) * chartW;
+    const toY = (level: number) => padT + chartH - (level / 100) * chartH; // 0-100 scale
+
+    // Blood sugar curves (hour, level) — baseline is ~50
+    const highGI = [
+      [0, 50], [0.3, 65], [0.5, 88], [0.75, 92], [1, 78], [1.3, 55], [1.6, 35], [2, 30], [2.5, 38], [3, 45],
+    ] as [number, number][];
+
+    const lowGI = [
+      [0, 50], [0.5, 58], [1, 65], [1.5, 68], [2, 66], [2.5, 62], [3, 58],
+    ] as [number, number][];
+
+    // Build smooth path from points
+    const buildPath = (points: [number, number][]) => {
+      if (points.length < 2) return '';
+      const coords = points.map(([h, l]) => [toX(h), toY(l)]);
+      let d = `M ${coords[0][0]} ${coords[0][1]}`;
+      for (let i = 1; i < coords.length; i++) {
+        const prev = coords[i - 1];
+        const curr = coords[i];
+        const cpx = (prev[0] + curr[0]) / 2;
+        d += ` C ${cpx} ${prev[1]}, ${cpx} ${curr[1]}, ${curr[0]} ${curr[1]}`;
+      }
+      return d;
+    };
+
+    const highPath = buildPath(highGI);
+    const lowPath = buildPath(lowGI);
+
+    // Focus zone band (optimal blood sugar ~55-75)
+    const focusTop = toY(75);
+    const focusBottom = toY(55);
+
+    const hours = [0, 1, 2, 3];
+    const levels = [
+      { val: 25, label: 'Low' },
+      { val: 50, label: 'Normal' },
+      { val: 75, label: 'High' },
+    ];
+
+    return (
+      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Glycemic Index Simulator</h4>
+        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Toggle each breakfast to compare what happens to your blood sugar over 3 hours.</p>
+
+        {/* Buttons */}
+        <div className="flex justify-center gap-3 mb-6">
+          <button
+            onClick={() => toggle('high')}
+            className={`px-4 py-2 text-xs font-bold rounded-lg border transition-all ${
+              selected.has('high')
+                ? 'bg-rose-500 text-white border-rose-500'
+                : 'bg-rose-50 text-rose-700 border-rose-200 hover:border-rose-400'
+            }`}
+          >
+            Sugary Cereal (High-GI)
+          </button>
+          <button
+            onClick={() => toggle('low')}
+            className={`px-4 py-2 text-xs font-bold rounded-lg border transition-all ${
+              selected.has('low')
+                ? 'bg-emerald-500 text-white border-emerald-500'
+                : 'bg-emerald-50 text-emerald-700 border-emerald-200 hover:border-emerald-400'
+            }`}
+          >
+            Porridge (Low-GI)
+          </button>
         </div>
+
+        {/* Chart */}
+        <div className="bg-zinc-50 dark:bg-zinc-900/30 rounded-xl border border-zinc-200 dark:border-zinc-700 p-2">
+          <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto">
+            {/* Focus zone band */}
+            <rect
+              x={padL} y={focusTop}
+              width={chartW} height={focusBottom - focusTop}
+              fill="currentColor"
+              className="text-emerald-100 dark:text-emerald-900/20"
+            />
+            <text
+              x={padL + 4} y={focusTop + 11}
+              className="text-[7px] font-bold"
+              fill="#10b981"
+              opacity={0.6}
+            >
+              FOCUS ZONE
+            </text>
+
+            {/* Gridlines */}
+            {levels.map(l => (
+              <line key={l.val} x1={padL} y1={toY(l.val)} x2={W - padR} y2={toY(l.val)} stroke="currentColor" className="text-zinc-200 dark:text-zinc-700" strokeWidth="0.5" />
+            ))}
+            {hours.map(h => (
+              <line key={h} x1={toX(h)} y1={padT} x2={toX(h)} y2={H - padB} stroke="currentColor" className="text-zinc-200 dark:text-zinc-700" strokeWidth="0.5" />
+            ))}
+
+            {/* Y-axis labels */}
+            {levels.map(l => (
+              <text key={l.val} x={padL - 4} y={toY(l.val) + 3} textAnchor="end" className="text-[7px]" fill="#a1a1aa">{l.label}</text>
+            ))}
+
+            {/* X-axis labels */}
+            {hours.map(h => (
+              <text key={h} x={toX(h)} y={H - padB + 14} textAnchor="middle" className="text-[7px]" fill="#a1a1aa">{h}h</text>
+            ))}
+
+            {/* High-GI path */}
+            {selected.has('high') && (
+              <>
+                <motion.path
+                  d={highPath}
+                  fill="none"
+                  stroke="#f43f5e"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  initial={{ pathLength: 0 }}
+                  animate={{ pathLength: 1 }}
+                  transition={{ duration: 1.2, ease: 'easeOut' }}
+                />
+                {/* Crash annotation */}
+                <motion.g
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.8 }}
+                >
+                  <line x1={toX(1.6)} y1={toY(35)} x2={toX(1.6)} y2={toY(35) - 18} stroke="#f43f5e" strokeWidth="0.8" strokeDasharray="2 2" />
+                  <text x={toX(1.6)} y={toY(35) - 22} textAnchor="middle" className="text-[6px] font-bold" fill="#f43f5e">CRASH</text>
+                </motion.g>
+              </>
+            )}
+
+            {/* Low-GI path */}
+            {selected.has('low') && (
+              <motion.path
+                d={lowPath}
+                fill="none"
+                stroke="#10b981"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                initial={{ pathLength: 0 }}
+                animate={{ pathLength: 1 }}
+                transition={{ duration: 1.2, ease: 'easeOut' }}
+              />
+            )}
+          </svg>
+        </div>
+
+        {/* Legend / insight */}
+        {selected.size > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-4 flex justify-center gap-5"
+          >
+            {selected.has('high') && (
+              <div className="flex items-center gap-2">
+                <div className="w-5 h-1 rounded-full bg-rose-500" />
+                <span className="text-[10px] text-zinc-500 dark:text-zinc-400">Spike then crash — focus lost by hour 2</span>
+              </div>
+            )}
+            {selected.has('low') && (
+              <div className="flex items-center gap-2">
+                <div className="w-5 h-1 rounded-full bg-emerald-500" />
+                <span className="text-[10px] text-zinc-500 dark:text-zinc-400">Steady release — stays in focus zone for 3 hours</span>
+              </div>
+            )}
+          </motion.div>
+        )}
+
+        {selected.size === 0 && (
+          <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mt-4">Select a breakfast to see its blood sugar curve.</p>
+        )}
+      </div>
     );
 };
 

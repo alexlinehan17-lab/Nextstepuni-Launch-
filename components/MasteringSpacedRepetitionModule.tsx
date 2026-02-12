@@ -18,122 +18,270 @@ const theme = skyTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 const ForgettingCurveVisualizer = () => {
-    const [reviews, setReviews] = useState([false, false, false]);
+    const [reviewCount, setReviewCount] = useState(0);
 
-    const reviewPoints = [ { day: 1, x: 125 }, { day: 3, x: 250 }, { day: 7, x: 375 }];
-    const viewboxWidth = 500;
-    const viewboxHeight = 150;
+    // Review schedule: day 1, 3, 7, 14 — with increasing stability
+    const reviewSchedule = [
+      { day: 1, stability: 2.5, label: 'Review 1 (Day 1)' },
+      { day: 3, stability: 6, label: 'Review 2 (Day 3)' },
+      { day: 7, stability: 14, label: 'Review 3 (Day 7)' },
+      { day: 14, stability: 35, label: 'Review 4 (Day 14)' },
+    ];
 
-    const generatePathData = (activeReviews: boolean[]) => {
-        let path = `M 0 5`;
-        let lastY = 5;
-        const decayFactors = [0.6, 0.4, 0.2, 0.1];
+    const totalDays = 30;
 
-        const activeReviewXs = reviewPoints.map(p => p.x).filter((_, i) => activeReviews[i]);
-        const allPoints = [0, ...activeReviewXs, viewboxWidth];
+    // Chart dimensions — extra padding for labels
+    const W = 400, H = 200;
+    const padL = 40, padR = 16, padT = 20, padB = 36;
+    const chartW = W - padL - padR;
+    const chartH = H - padT - padB;
+    const toX = (day: number) => padL + (day / totalDays) * chartW;
+    const toY = (pct: number) => padT + chartH - (pct / 100) * chartH;
 
-        for (let i = 0; i < allPoints.length - 1; i++) {
-            const startX = allPoints[i];
-            const currentY = (i > 0) ? 5 : 5;
+    // Build retention data as segments between review points
+    const buildCurvePoints = (numReviews: number): [number, number][] => {
+      const activeReviews = reviewSchedule.slice(0, numReviews);
+      const reviewDays = activeReviews.map(r => r.day);
+      const points: [number, number][] = [];
 
-            if (i > 0) path += ` L ${startX} 5`;
+      let stability = 1.2;
+      let retentionAtReset = 100;
+      let lastResetDay = 0;
 
-            const endX = allPoints[i];
-            const duration = allPoints[i + 1] - startX;
-            const endY = currentY + (viewboxHeight - 10) * decayFactors[i];
-
-            path += ` C ${startX + duration * 0.3} ${currentY}, ${endX + duration * 0.7} ${endY}, ${allPoints[i+1]} ${endY}`;
-            lastY = endY;
+      // Generate smooth sample points between resets
+      const addSegment = (fromDay: number, toDay: number, stab: number, startR: number) => {
+        const steps = Math.max(8, Math.round((toDay - fromDay) * 2));
+        for (let i = 0; i <= steps; i++) {
+          const day = fromDay + (i / steps) * (toDay - fromDay);
+          const elapsed = day - fromDay;
+          const retention = startR * Math.exp(-elapsed / stab);
+          points.push([day, Math.max(3, Math.min(100, retention))]);
         }
-        return { path, lastY };
+      };
+
+      // Build segments between reviews
+      const breakpoints = [...reviewDays.filter(d => d > 0), totalDays];
+      for (const bp of breakpoints) {
+        addSegment(lastResetDay, bp, stability, retentionAtReset);
+
+        const review = activeReviews.find(r => r.day === bp);
+        if (review) {
+          const elapsed = bp - lastResetDay;
+          const retentionAtReview = retentionAtReset * Math.exp(-elapsed / stability);
+          const boosted = Math.min(98, retentionAtReview + (100 - retentionAtReview) * 0.9);
+          points.push([bp, boosted]); // vertical jump
+          lastResetDay = bp;
+          stability = review.stability;
+          retentionAtReset = boosted;
+        }
+      }
+
+      // If no reviews reach totalDays, add the base decay
+      if (breakpoints[breakpoints.length - 1] !== totalDays || breakpoints.length === 1) {
+        addSegment(lastResetDay, totalDays, stability, retentionAtReset);
+      }
+
+      return points;
     };
 
-    const { path: activePath, lastY: activeLastY } = generatePathData(reviews);
-    const baselinePath = `M 0 5 C ${viewboxWidth*0.3} 5, ${viewboxWidth*0.7} ${viewboxHeight - 20}, ${viewboxWidth} ${viewboxHeight - 20}`;
-    const activeAreaPath = activePath + ` L ${viewboxWidth} ${viewboxHeight} L 0 ${viewboxHeight} Z`;
-    const baselineAreaPath = baselinePath + ` L ${viewboxWidth} ${viewboxHeight} L 0 ${viewboxHeight} Z`;
+    const baselinePoints = buildCurvePoints(0);
+    const activePoints = buildCurvePoints(reviewCount);
 
-    const retention = { baseline: 21, r0: 21, r1: 55, r2: 78, r3: 95 };
-    const currentReviewCount = reviews.filter(Boolean).length;
-    const currentRetention = retention[`r${currentReviewCount}` as keyof typeof retention];
+    // Smooth cubic bezier path builder
+    const buildPath = (points: [number, number][]) => {
+      if (points.length < 2) return '';
+      const coords = points.map(([d, r]) => [toX(d), toY(r)]);
+      let path = `M ${coords[0][0]} ${coords[0][1]}`;
 
-    const handleReviewClick = (index: number) => {
-        const newReviews = [...reviews];
-        newReviews[index] = !newReviews[index];
-        // Ensure sequential activation for a clearer story
-        if (newReviews[index]) {
-            for (let i = 0; i <= index; i++) newReviews[i] = true;
+      for (let i = 1; i < coords.length; i++) {
+        const [x, y] = coords[i];
+        const [px, py] = coords[i - 1];
+        // Detect vertical jump (review reset) — use straight line
+        if (Math.abs(x - px) < 1) {
+          path += ` L ${x} ${y}`;
         } else {
-             for (let i = index; i < newReviews.length; i++) newReviews[i] = false;
+          // Smooth cubic bezier
+          const cpx1 = px + (x - px) * 0.4;
+          const cpx2 = px + (x - px) * 0.6;
+          path += ` C ${cpx1} ${py}, ${cpx2} ${y}, ${x} ${y}`;
         }
-        setReviews(newReviews);
+      }
+      return path;
     };
+
+    const baselinePath = buildPath(baselinePoints);
+    const activePath = buildPath(activePoints);
+
+    const finalRetention = Math.round(activePoints[activePoints.length - 1][1]);
+    const baselineRetention = Math.round(baselinePoints[baselinePoints.length - 1][1]);
+
+    const dayMarkers = [0, 5, 10, 15, 20, 25, 30];
+    const retentionMarkers = [0, 25, 50, 75, 100];
+
+    // Segment colors for cascading effect
+    const segmentColors = ['#0ea5e9', '#06b6d4', '#14b8a6', '#10b981'];
 
     return (
-        <div className="my-10 p-6 md:p-8 bg-zinc-900 rounded-xl border border-white/10 text-white shadow-[inset_0_2px_4px_0_rgba(255,255,255,0.05)]">
-            <h4 className="font-serif text-2xl font-semibold text-center">The Forgetting Curve</h4>
-            <p className="text-center text-sm text-zinc-400 mb-8">Click review points on the timeline to fight the curve.</p>
+      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Forgetting Curve</h4>
+        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Each review doesn't just refresh the memory — it makes the decay slower.</p>
+        <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">Add reviews one at a time and watch the curve flatten.</p>
 
-            <div className="relative h-56">
-                <svg viewBox={`0 0 ${viewboxWidth} ${viewboxHeight}`} className="w-full h-full overflow-visible">
-                    <defs>
-                        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-                            <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-                            <feMerge>
-                                <feMergeNode in="coloredBlur"/>
-                                <feMergeNode in="SourceGraphic"/>
-                            </feMerge>
-                        </filter>
-                        <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="#0ea5e9" stopOpacity="0.4"/><stop offset="100%" stopColor="#0ea5e9" stopOpacity="0"/></linearGradient>
-                        <linearGradient id="redGradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="#ef4444" stopOpacity="0.2"/><stop offset="100%" stopColor="#ef4444" stopOpacity="0"/></linearGradient>
-                    </defs>
+        {/* Chart */}
+        <div className="bg-zinc-50 dark:bg-zinc-900/30 rounded-xl border border-zinc-200 dark:border-zinc-700 p-2 mb-4">
+          <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto">
+            <defs>
+              <linearGradient id="srActiveGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#0ea5e9" stopOpacity="0.15" />
+                <stop offset="100%" stopColor="#0ea5e9" stopOpacity="0" />
+              </linearGradient>
+            </defs>
 
-                    {/* Y-Axis Labels */}
-                    <text x="-10" y="10" fontSize="10" fill="#6b7280" textAnchor="end">100%</text>
-                    <text x="-10" y={viewboxHeight-5} fontSize="10" fill="#6b7280" textAnchor="end">0%</text>
+            {/* Gridlines */}
+            {retentionMarkers.map(pct => (
+              <g key={pct}>
+                <line x1={padL} y1={toY(pct)} x2={W - padR} y2={toY(pct)} stroke="currentColor" className="text-zinc-200 dark:text-zinc-700" strokeWidth="0.5" />
+                <text x={padL - 5} y={toY(pct) + 3} textAnchor="end" className="text-[7px]" fill="#a1a1aa">{pct}%</text>
+              </g>
+            ))}
+            {dayMarkers.map(d => (
+              <g key={d}>
+                <line x1={toX(d)} y1={padT} x2={toX(d)} y2={H - padB} stroke="currentColor" className="text-zinc-200 dark:text-zinc-700" strokeWidth="0.5" />
+                <text x={toX(d)} y={H - padB + 14} textAnchor="middle" className="text-[7px]" fill="#a1a1aa">{d === 0 ? 'Learn' : `${d}d`}</text>
+              </g>
+            ))}
 
-                    {/* Baseline Curve */}
-                    <path d={baselineAreaPath} fill="url(#redGradient)" />
-                    <path d={baselinePath} stroke="#ef4444" strokeWidth="2" strokeDasharray="4 4" fill="none" />
-                    <circle cx={viewboxWidth} cy={viewboxHeight - 20} r="4" fill="#ef4444" />
+            {/* Axis labels */}
+            <text x={padL + 2} y={padT - 6} textAnchor="start" className="text-[7px] font-bold" fill="#a1a1aa">Retention</text>
+            <text x={W - padR} y={H - 4} textAnchor="end" className="text-[7px] font-bold" fill="#a1a1aa">Days</text>
 
-                    {/* Active Curve */}
-                    <motion.path d={activeAreaPath} fill="url(#skyGradient)" initial={{opacity:0}} animate={{opacity:1}} transition={{ duration: 0.7, ease: "easeInOut" }} />
-                    <motion.path d={activePath} stroke="#0ea5e9" strokeWidth="3" fill="none" style={{filter: 'drop-shadow(0 0 5px #0ea5e9)'}} transition={{ duration: 0.7, ease: "easeInOut" }} />
-                    <motion.circle cx={viewboxWidth} cy={activeLastY} r="4" fill="#0ea5e9" style={{filter: 'drop-shadow(0 0 5px #0ea5e9)'}} transition={{ duration: 0.7, ease: "easeInOut" }} />
+            {/* Baseline curve (no reviews) */}
+            <path d={baselinePath} fill="none" stroke="#d4d4d8" strokeWidth="1.5" strokeDasharray="5 3" className="dark:opacity-40" />
 
-                    {/* Interactive Points */}
-                    {reviewPoints.map((point, i) => (
-                        <g key={`point-${i}`} onClick={() => handleReviewClick(i)} className="cursor-pointer">
-                            <circle cx={point.x} cy="5" r="8" fill="#0ea5e9" fillOpacity={reviews[i] ? 1 : 0.2} style={{filter: 'drop-shadow(0 0 8px #0ea5e9aa)'}}/>
-                            <circle cx={point.x} cy="5" r="4" fill="white" />
-                        </g>
-                    ))}
-                </svg>
-            </div>
+            {/* Shaded area under active curve */}
+            {reviewCount > 0 && (
+              <motion.path
+                key={`fill-${reviewCount}`}
+                d={`${activePath} L ${toX(totalDays)} ${toY(0)} L ${toX(0)} ${toY(0)} Z`}
+                fill="url(#srActiveGrad)"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              />
+            )}
 
-             <div className="relative grid grid-cols-4 gap-2 pt-4 -mt-4">
-                {reviewPoints.map((point, index) => (
-                    <div key={index} className="text-center col-start-2" style={{ gridColumnStart: index + 2 }}>
-                        <p className="text-xs text-zinc-400 mt-2">Day {point.day}</p>
-                    </div>
-                ))}
-            </div>
+            {/* Active curve */}
+            <motion.path
+              key={`curve-${reviewCount}`}
+              d={activePath}
+              fill="none"
+              stroke={segmentColors[Math.max(0, reviewCount - 1)] || '#0ea5e9'}
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: 1 }}
+              transition={{ duration: 1.2, ease: 'easeOut' }}
+            />
 
-            <div className="mt-8 grid grid-cols-2 gap-4 items-center bg-white dark:bg-zinc-800/5 p-4 rounded-xl">
-                <div>
-                    <p className="flex items-center gap-2 text-xs font-bold uppercase text-zinc-400"><TrendingDown size={14} className="text-rose-400"/>Baseline</p>
-                    <p className="text-3xl font-semibold text-rose-400 tracking-tighter">{retention.baseline}%</p>
-                </div>
-                 <div className="text-right">
-                    <p className="flex items-center justify-end gap-2 text-xs font-bold uppercase text-zinc-400"><Clock size={14} className="text-sky-400"/>Your Retention</p>
-                    <p className="text-3xl font-semibold text-sky-400 tracking-tighter">{currentRetention}%</p>
-                </div>
-                 <div className="col-span-2 text-center">
-                    <button onClick={() => setReviews([false, false, false])} className="inline-flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 hover:text-white transition-colors px-3 py-1 rounded-full hover:bg-white/10"><RefreshCcw size={12}/>Reset</button>
-                 </div>
-            </div>
+            {/* Review point markers */}
+            {reviewSchedule.slice(0, reviewCount).map((r, i) => (
+              <g key={i}>
+                <motion.circle
+                  cx={toX(r.day)} cy={toY(98)}
+                  r="4"
+                  fill={segmentColors[i]}
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 0.3, type: 'spring' }}
+                />
+                <motion.line
+                  x1={toX(r.day)} y1={padT} x2={toX(r.day)} y2={H - padB}
+                  stroke={segmentColors[i]}
+                  strokeWidth="0.8"
+                  strokeDasharray="2 2"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 0.3 }}
+                  transition={{ delay: 0.2 }}
+                />
+              </g>
+            ))}
+
+            {/* Endpoint dots */}
+            <circle cx={toX(totalDays)} cy={toY(baselineRetention)} r="3" fill="#d4d4d8" />
+            <motion.circle
+              key={`end-${reviewCount}`}
+              cx={toX(totalDays)} cy={toY(finalRetention)}
+              r="4"
+              fill={segmentColors[Math.max(0, reviewCount - 1)] || '#0ea5e9'}
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.8 }}
+            />
+          </svg>
         </div>
+
+        {/* Review buttons */}
+        <div className="flex justify-center gap-2 mb-5">
+          {reviewSchedule.map((r, i) => (
+            <button
+              key={i}
+              onClick={() => setReviewCount(i + 1)}
+              disabled={i + 1 <= reviewCount}
+              className={`px-3 py-2 text-[10px] font-bold rounded-lg border transition-all ${
+                i < reviewCount
+                  ? 'text-white border-transparent'
+                  : i === reviewCount
+                    ? 'bg-sky-50 dark:bg-sky-950/20 text-sky-700 dark:text-sky-300 border-sky-200 dark:border-sky-800/40 hover:border-sky-400 cursor-pointer'
+                    : 'bg-zinc-50 dark:bg-zinc-900/30 text-zinc-400 dark:text-zinc-500 border-zinc-200 dark:border-zinc-700 opacity-50 cursor-not-allowed'
+              }`}
+              style={i < reviewCount ? { backgroundColor: segmentColors[i] } : undefined}
+            >
+              {r.label}
+            </button>
+          ))}
+          {reviewCount > 0 && (
+            <button
+              onClick={() => setReviewCount(0)}
+              className="px-3 py-2 text-[10px] font-bold rounded-lg text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700 hover:border-zinc-400"
+            >
+              Reset
+            </button>
+          )}
+        </div>
+
+        {/* Retention comparison */}
+        <div className="grid grid-cols-2 gap-3">
+          <div className="p-3 bg-zinc-50 dark:bg-zinc-900/30 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-1">No Review (Day 30)</p>
+            <p className="text-2xl font-bold text-zinc-400">{baselineRetention}%</p>
+          </div>
+          <div className={`p-3 rounded-xl border text-center ${
+            reviewCount > 0
+              ? 'bg-sky-50 dark:bg-sky-950/20 border-sky-200 dark:border-sky-800/40'
+              : 'bg-zinc-50 dark:bg-zinc-900/30 border-zinc-200 dark:border-zinc-700'
+          }`}>
+            <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-1">
+              {reviewCount > 0 ? `${reviewCount} Review${reviewCount > 1 ? 's' : ''} (Day 30)` : 'Add Reviews'}
+            </p>
+            <p className={`text-2xl font-bold ${reviewCount > 0 ? 'text-sky-500' : 'text-zinc-400'}`}>{finalRetention}%</p>
+          </div>
+        </div>
+
+        {/* Stability insight */}
+        {reviewCount > 0 && (
+          <motion.p
+            key={reviewCount}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-center text-xs text-zinc-500 dark:text-zinc-400 mt-4"
+          >
+            {reviewCount === 1 && 'After 1 review, the memory is slightly more stable — but still fragile.'}
+            {reviewCount === 2 && 'After 2 reviews, the decay is noticeably slower. The curve is flattening.'}
+            {reviewCount === 3 && 'After 3 reviews, the memory is becoming durable. Notice how much flatter the curve is.'}
+            {reviewCount === 4 && 'After 4 spaced reviews, retention at day 30 is dramatically higher. Each review made the memory progressively harder to forget.'}
+          </motion.p>
+        )}
+      </div>
     );
 };
 
