@@ -49,7 +49,7 @@ const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleP
 
   return (
     <ModuleLayout
-      moduleNumber="07"
+      moduleNumber="08"
       moduleTitle="Digital Distractions"
       theme={theme}
       sections={sections}
@@ -98,7 +98,7 @@ const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleP
           )}
           {activeSection === 6 && (
             <ReadingSection title="The Roadmap." eyebrow="Step 7" icon={Map} theme={theme}>
-              <p>Implementing these barriers is a phased process over the Leaving Cert cycle. **Phase 1: The Audit (Sept - Dec).** Install RescueTime, identify your time sinks, and start with a Level 1 detox (phone out of the room at night). **Phase 2: The Hardening (Jan - Mar).** Introduce software blockers, an "Offline Internet," and "batch" your social communication. **Phase 3: The Sprint (Apr - June).** This is "Monk Mode." Switch to a "dumb phone," use "Locked Mode" on laptops, and consider deactivating social media accounts.</p>
+              <p>Implementing these barriers is a phased process over the Leaving Cert cycle. <strong>Phase 1: The Audit (Sept - Dec).</strong> Install RescueTime, identify your time sinks, and start with a Level 1 detox (phone out of the room at night). <strong>Phase 2: The Hardening (Jan - Mar).</strong> Introduce software blockers, an "Offline Internet," and "batch" your social communication. <strong>Phase 3: The Sprint (Apr - June).</strong> This is "Monk Mode." Switch to a "dumb phone," use "Locked Mode" on laptops, and consider deactivating social media accounts.</p>
               <MicroCommitment theme={theme}>
                 <p>Tonight, take your phone charger out of your bedroom and move it to the kitchen. This is your first, most important step in building a wall of friction.</p>
               </MicroCommitment>

@@ -18,52 +18,81 @@ const theme = indigoTheme;
 // --- INTERACTIVE COMPONENTS ---
 const NarrativeSwitcher = () => {
     const [script, setScript] = useState<'idle' | 'contamination' | 'redemption'>('idle');
+    const [animKey, setAnimKey] = useState(0);
+
+    const contamination = [
+      { text: '"I failed the mock."', tone: 'neutral' as const },
+      { text: '"I\'m just not smart enough."', tone: 'bad' as const },
+      { text: '"Everyone else got it. What\'s wrong with me?"', tone: 'bad' as const },
+      { text: '"There\'s no point trying harder."', tone: 'bad' as const },
+      { text: '"I give up."', tone: 'bad' as const },
+    ];
+
+    const redemption = [
+      { text: '"I failed the mock."', tone: 'neutral' as const },
+      { text: '"That stings. But now I know exactly where the gaps are."', tone: 'good' as const },
+      { text: '"I\'m going to target those weak areas this week."', tone: 'good' as const },
+      { text: '"I\'ll do 3 past papers focused on the topics I got wrong."', tone: 'good' as const },
+      { text: '"This failure just became my study plan."', tone: 'good' as const },
+    ];
+
+    const handleSelect = (type: 'contamination' | 'redemption') => {
+      setScript(type);
+      setAnimKey(k => k + 1);
+    };
+
+    const toneStyles = {
+      neutral: 'bg-zinc-100 dark:bg-zinc-700/50 text-zinc-700 dark:text-zinc-300 border-zinc-200 dark:border-zinc-600',
+      bad: 'bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-800/50',
+      good: 'bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800/50',
+    };
+
+    const renderSequence = (steps: typeof contamination, active: boolean) => (
+      <div className="space-y-3">
+        {steps.map((step, i) => (
+          <motion.div
+            key={`${animKey}-${i}`}
+            initial={active ? { opacity: 0, y: 10 } : { opacity: 0.3 }}
+            animate={active ? { opacity: 1, y: 0 } : { opacity: 0.3 }}
+            transition={active ? { delay: i * 0.4, duration: 0.4 } : { duration: 0.3 }}
+            className={`p-3 rounded-lg border text-sm font-medium ${active ? toneStyles[step.tone] : 'bg-zinc-50 dark:bg-zinc-800/30 text-zinc-300 dark:text-zinc-600 border-zinc-100 dark:border-zinc-800'}`}
+          >
+            {i > 0 && active && (
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: i * 0.4 + 0.1 }}
+                className="mr-1.5"
+              >
+                →
+              </motion.span>
+            )}
+            {step.text}
+          </motion.div>
+        ))}
+      </div>
+    );
 
     return (
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Narrative Switcher</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Pivotal Moment: You fail an important mock exam. Which story do you tell?</p>
-            <div className="flex justify-center gap-4">
-                <button onClick={() => setScript('contamination')} className={`px-4 py-2 text-xs font-bold rounded-lg transition-all ${script === 'contamination' ? 'bg-rose-500 text-white shadow-md' : 'bg-rose-100 text-rose-800'}`}>Contamination Script</button>
-                <button onClick={() => setScript('redemption')} className={`px-4 py-2 text-xs font-bold rounded-lg transition-all ${script === 'redemption' ? 'bg-emerald-500 text-white shadow-md' : 'bg-emerald-100 text-emerald-800'}`}>Redemption Script</button>
+            <div className="flex justify-center gap-4 mb-8">
+                <button onClick={() => handleSelect('contamination')} className={`px-5 py-2.5 text-xs font-bold rounded-lg transition-all ${script === 'contamination' ? 'bg-rose-500 text-white shadow-lg shadow-rose-500/20' : 'bg-rose-100 text-rose-800 hover:bg-rose-200'}`}>Contamination Script</button>
+                <button onClick={() => handleSelect('redemption')} className={`px-5 py-2.5 text-xs font-bold rounded-lg transition-all ${script === 'redemption' ? 'bg-emerald-500 text-white shadow-lg shadow-emerald-500/20' : 'bg-emerald-100 text-emerald-800 hover:bg-emerald-200'}`}>Redemption Script</button>
             </div>
-            <div className="mt-8 h-24 flex items-center justify-center">
-                <svg viewBox="0 0 300 100" className="w-full h-auto overflow-visible">
-                    {/* Static elements */}
-                    <circle cx="50" cy="50" r="10" fill="#6366f1" />
-                    <path d="M 60 50 L 125 50" stroke="#d1d5db" strokeWidth="2" strokeDasharray="4"/>
-
-                    {/* Animated Path Drawing */}
-                    <AnimatePresence>
-                        {script === 'redemption' && (
-                            <motion.path
-                                key="redemption-path"
-                                d="M 125 50 Q 175 25 250 25"
-                                stroke="#10b981"
-                                strokeWidth="3"
-                                fill="none"
-                                initial={{ pathLength: 0 }}
-                                animate={{ pathLength: 1 }}
-                                exit={{ pathLength: 0 }}
-                                transition={{ duration: 1, ease: "easeInOut" }}
-                            />
-                        )}
-                        {script === 'contamination' && (
-                            <motion.path
-                                key="contamination-path"
-                                d="M 125 50 Q 175 75 250 75"
-                                stroke="#f43f5e"
-                                strokeWidth="3"
-                                fill="none"
-                                initial={{ pathLength: 0 }}
-                                animate={{ pathLength: 1 }}
-                                exit={{ pathLength: 0 }}
-                                transition={{ duration: 1, ease: "easeInOut" }}
-                            />
-                        )}
-                    </AnimatePresence>
-                </svg>
-            </div>
+            {script !== 'idle' && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <p className={`text-xs font-bold uppercase tracking-wider mb-3 ${script === 'contamination' ? 'text-rose-500' : 'text-zinc-300 dark:text-zinc-600'}`}>Contamination Script</p>
+                  {renderSequence(contamination, script === 'contamination')}
+                </div>
+                <div>
+                  <p className={`text-xs font-bold uppercase tracking-wider mb-3 ${script === 'redemption' ? 'text-emerald-500' : 'text-zinc-300 dark:text-zinc-600'}`}>Redemption Script</p>
+                  {renderSequence(redemption, script === 'redemption')}
+                </div>
+              </div>
+            )}
         </div>
     );
 };

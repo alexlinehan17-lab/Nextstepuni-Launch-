@@ -32,12 +32,14 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   finishButtonText = 'Complete Section',
   children,
 }) => {
-  const [activeSection, setActiveSection] = useState(progress.unlockedSection);
+  const [activeSection, setActiveSection] = useState(
+    progress.unlockedSection >= sections.length ? 0 : progress.unlockedSection
+  );
   const unlockedSection = progress.unlockedSection;
 
   useEffect(() => {
-    setActiveSection(progress.unlockedSection);
-  }, [progress.unlockedSection]);
+    setActiveSection(progress.unlockedSection >= sections.length ? 0 : progress.unlockedSection);
+  }, [progress.unlockedSection, sections.length]);
 
   const handleCompleteSection = () => {
     if (activeSection === unlockedSection && unlockedSection < sections.length) {
@@ -75,7 +77,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
             <ArrowLeft size={16} className="text-zinc-700 dark:text-zinc-300" />
           </motion.button>
           <div>
-            <p className={`text-[9px] font-semibold ${theme.sidebarModuleText} uppercase tracking-[0.2em] mb-0.5 underline`}>Module {moduleNumber}</p>
+            <p className={`text-[9px] font-semibold ${theme.sidebarModuleText} uppercase tracking-[0.2em] mb-0.5 underline`}>Unit {moduleNumber}</p>
             <h1 className="font-serif font-semibold text-lg tracking-tight text-zinc-900 dark:text-white">{moduleTitle}</h1>
           </div>
         </div>

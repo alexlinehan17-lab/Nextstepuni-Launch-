@@ -61,7 +61,7 @@ const AchievingEffectiveLearningOutcomesModule: React.FC<{ onBack: () => void; p
   ];
 
   return (
-    <ModuleLayout moduleNumber="01" moduleTitle="Effective Learning Outcomes" theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
+    <ModuleLayout moduleNumber="12" moduleTitle="Effective Learning Outcomes" theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
       {(activeSection) => (
         <>
           {activeSection === 0 && (
@@ -98,7 +98,7 @@ const AchievingEffectiveLearningOutcomesModule: React.FC<{ onBack: () => void; p
            {activeSection === 5 && (
             <ReadingSection title="Your Action Plan." eyebrow="Step 6" icon={ClipboardCheck} theme={theme}>
                 <p>You now have the scientific evidence. The final step is to apply it. You must abandon the comfort of passive review and embrace the "desirable difficulty" of active retrieval. The key takeaways are simple but transformative.</p>
-                <p>**The "Book Closed" Rule:** Never judge how well you know something with the book open in front of you. That's just fluency talking. Close the book, then ask yourself what you know. **Embrace Disfluency:** Understand that the feeling of "struggle" is the feeling of learning happening. If studying feels easy, it's probably ineffective. **Stop Dropping Items:** Don't stop testing yourself on something just because you got it right once. Continued retrieval is what arrests the forgetting curve. </p>
+                <p><strong>The "Book Closed" Rule:</strong> Never judge how well you know something with the book open in front of you. That's just fluency talking. Close the book, then ask yourself what you know. <strong>Embrace Disfluency:</strong> Understand that the feeling of "struggle" is the feeling of learning happening. If studying feels easy, it's probably ineffective. <strong>Stop Dropping Items:</strong> Don't stop testing yourself on something just because you got it right once. Continued retrieval is what arrests the forgetting curve. </p>
                 <MicroCommitment theme={theme}>
                     <p>For your next study session, commit to this: for every 30 minutes, spend 10 minutes reading/reviewing, and 20 minutes testing yourself on what you just read. You will double your retention.</p>
                 </MicroCommitment>

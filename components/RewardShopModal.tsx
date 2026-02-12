@@ -104,7 +104,7 @@ const RewardShopModal: React.FC<RewardShopModalProps> = ({
                         </div>
                         <div>
                           <p className="text-sm font-bold text-zinc-700 dark:text-zinc-200">Skip a Session</p>
-                          <p className="text-[10px] text-zinc-400 dark:text-zinc-500">Skip one session without breaking your streak</p>
+                          <p className="text-[10px] text-zinc-400 dark:text-zinc-500">Skip one of today's sessions without breaking your streak</p>
                         </div>
                       </div>
                       {!pickingSession ? (

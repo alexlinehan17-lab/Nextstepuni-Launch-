@@ -130,7 +130,7 @@ const ExamHallStrategiesModule: React.FC<{ onBack: () => void; progress: ModuleP
 
   return (
     <ModuleLayout
-      moduleNumber="03"
+      moduleNumber="04"
       moduleTitle="Exam Hall Strategies"
       theme={theme}
       sections={sections}
@@ -142,7 +142,7 @@ const ExamHallStrategiesModule: React.FC<{ onBack: () => void; progress: ModuleP
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Execution Gap." eyebrow="Step 1" icon={Cpu} theme={theme}>
-              <p>You can be the smartest person in the room, have every definition memorized, and still get a bad result. The gap between what you know (<Highlight description="What you have learned and stored in your long-term memory over months of study." theme={theme}>Competence</Highlight>) and what you can actually do on the day (<Highlight description="What you can retrieve and apply from your memory under the intense pressure of a timed exam." theme={theme}>Performance</Highlight>) is called the **Execution Gap**. This module is about closing that gap.</p>
+              <p>You can be the smartest person in the room, have every definition memorized, and still get a bad result. The gap between what you know (<Highlight description="What you have learned and stored in your long-term memory over months of study." theme={theme}>Competence</Highlight>) and what you can actually do on the day (<Highlight description="What you can retrieve and apply from your memory under the intense pressure of a timed exam." theme={theme}>Performance</Highlight>) is called the <strong>Execution Gap</strong>. This module is about closing that gap.</p>
               <p>The exam hall is not a library for quiet recall; it's a high-pressure, resource-management game. The pressure adds <Highlight description="The 'bad' mental workload that comes from things other than the question itself, like managing your panic, checking the clock, or trying to remember a formula." theme={theme}>Extraneous Cognitive Load</Highlight> to your brain, stealing the limited mental bandwidth you need for the actual questions. The strategies in this module are about minimizing that load so you can show what you really know.</p>
             </ReadingSection>
           )}
@@ -155,7 +155,7 @@ const ExamHallStrategiesModule: React.FC<{ onBack: () => void; progress: ModuleP
            {activeSection === 2 && (
             <ReadingSection title="Tactical Triage." eyebrow="Step 3" icon={ListFilter} theme={theme}>
               <p>Reading time is not for passively reading. It's for <Highlight description="An active process during reading time where you scan the entire paper and sort questions into categories of difficulty, like a medic at a disaster scene." theme={theme}>Tactical Triage</Highlight>. Just like in an emergency room, your goal isn't to save every "patient" (question) perfectly; it's to get the most marks possible with your limited time.</p>
-              <p>Use a **Traffic Light System**: **Green** questions are "low-hanging fruit" you're 100% confident you can answer quickly. **Amber** questions are ones you know how to do but will take time or complex calculation. **Red** questions are "time sinks"--topics you're weak on or don't immediately understand. Your first job is to find 2-3 "Green" questions to serve as your <Highlight description="The first easy questions you attempt, regardless of their position on the paper. They build confidence, calm your nerves, and create psychological momentum." theme={theme}>Anchor Questions</Highlight>.</p>
+              <p>Use a <strong>Traffic Light System</strong>: <strong>Green</strong> questions are "low-hanging fruit" you're 100% confident you can answer quickly. <strong>Amber</strong> questions are ones you know how to do but will take time or complex calculation. <strong>Red</strong> questions are "time sinks"--topics you're weak on or don't immediately understand. Your first job is to find 2-3 "Green" questions to serve as your <Highlight description="The first easy questions you attempt, regardless of their position on the paper. They build confidence, calm your nerves, and create psychological momentum." theme={theme}>Anchor Questions</Highlight>.</p>
               <TriageSimulator />
             </ReadingSection>
           )}
@@ -182,7 +182,7 @@ const ExamHallStrategiesModule: React.FC<{ onBack: () => void; progress: ModuleP
           {activeSection === 6 && (
             <ReadingSection title="The Training Protocol." eyebrow="Step 7" icon={HardHat} theme={theme}>
               <p>These strategies are skills. They must be trained. After every practice test, you must use an <Highlight description="A post-exam reflection tool that forces you to analyze your errors by process ('I misread the question,' 'I ran out of time') not just by content ('I didn't know the date')." theme={theme}>Exam Wrapper</Highlight> to analyze your performance. Did your triage work? Did you stick to your time budget?</p>
-              <p>You must also run specific drills. **Triage Drills**: Give yourself 5 minutes with a past paper to *only* categorize questions as Green, Amber, or Red. **Dump Sprints**: Practice writing your dump sheet until it takes less than 3 minutes. **Hard Stop Drills**: Do questions with a strict timer and force yourself to stop when it rings. This builds the discipline you need to execute under pressure.</p>
+              <p>You must also run specific drills. <strong>Triage Drills</strong>: Give yourself 5 minutes with a past paper to *only* categorize questions as Green, Amber, or Red. <strong>Dump Sprints</strong>: Practice writing your dump sheet until it takes less than 3 minutes. <strong>Hard Stop Drills</strong>: Do questions with a strict timer and force yourself to stop when it rings. This builds the discipline you need to execute under pressure.</p>
               <MicroCommitment theme={theme}><p>For your next practice test, do a full "Exam Wrapper" analysis afterwards. Don't just check the answers; analyze *how* you took the test.</p></MicroCommitment>
             </ReadingSection>
           )}

@@ -19,29 +19,126 @@ const theme = orangeTheme;
 
 const ProcrastinationEquation = () => {
     const [vars, setVars] = useState({ E: 50, V: 50, I: 50, D: 50 });
-    const utility = (vars.E * vars.V) / (1 + (vars.I * vars.D / 100)); // Scaled for display
+    const utility = (vars.E * vars.V) / (1 + (vars.I * vars.D / 100));
+    const maxUtility = (100 * 100) / (1 + (1 * 1 / 100));
+    const pct = Math.min(100, Math.round((utility / maxUtility) * 100));
 
-    const Slider = ({ name, value, setter, label }: { name: keyof typeof vars, value: number, setter: (val: number) => void, label: string }) => (
-        <div>
-            <label className="text-xs font-bold">{label} ({value})</label>
-            <input type="range" min="1" max="100" value={value} onChange={e => setter(parseInt(e.target.value))} className="w-full accent-orange-500" />
-        </div>
-    );
+    const level = pct >= 65 ? 'high' : pct >= 35 ? 'medium' : 'low';
+    const levelColor = { high: 'text-emerald-500', medium: 'text-amber-500', low: 'text-rose-500' }[level];
+    const levelLabel = { high: 'High', medium: 'Medium', low: 'Low' }[level];
+    const ringColor = { high: '#10b981', medium: '#f59e0b', low: '#ef4444' }[level];
+
+    // Dynamic insight based on weakest variable
+    const getDiagnosis = () => {
+      const issues: string[] = [];
+      if (vars.E <= 30) issues.push("you don't believe you can succeed");
+      if (vars.V <= 30) issues.push("the task feels boring or meaningless");
+      if (vars.I >= 70) issues.push("you're highly susceptible to distractions");
+      if (vars.D >= 70) issues.push("the deadline feels far away");
+      if (issues.length === 0 && level === 'high') return "All four levers are working in your favour. This is a task you'll likely start without much resistance.";
+      if (issues.length === 0) return "No single factor is critical, but the overall balance could be stronger. Try boosting your belief or the task's value.";
+      return `Your motivation is ${level} because ${issues.join(' and ')}.`;
+    };
+
+    const levers: { key: keyof typeof vars; label: string; desc: string; icon: React.ReactNode; good: boolean }[] = [
+      { key: 'E', label: 'Expectancy', desc: 'Belief you can succeed', icon: <span className="font-bold text-lg text-emerald-500">E</span>, good: true },
+      { key: 'V', label: 'Value', desc: 'How rewarding it feels', icon: <span className="font-bold text-lg text-emerald-500">V</span>, good: true },
+      { key: 'I', label: 'Impulsiveness', desc: 'Distraction susceptibility', icon: <span className="font-bold text-lg text-rose-500">I</span>, good: false },
+      { key: 'D', label: 'Delay', desc: 'Distance to deadline', icon: <span className="font-bold text-lg text-rose-500">D</span>, good: false },
+    ];
+
+    // Ring gauge
+    const radius = 52;
+    const circumference = 2 * Math.PI * radius;
+    const offset = circumference - (pct / 100) * circumference;
 
     return(
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Procrastination Equation</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Adjust the sliders to see what drives your motivation.</p>
-            <div className="p-6 bg-zinc-900 rounded-xl text-center mb-8">
-                <p className="text-sm text-zinc-400">Your Motivation Score:</p>
-                <p className="text-5xl font-semibold text-white tracking-tighter"><motion.span initial={{}} animate={{}}>{Math.round(utility)}</motion.span></p>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Adjust the four levers to see what drives — or kills — your motivation.</p>
+            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-8">
+              <span className="text-emerald-500 font-semibold">Green levers</span> boost motivation. <span className="text-rose-500 font-semibold">Red levers</span> drain it.
+            </p>
+
+            {/* Gauge */}
+            <div className="flex justify-center mb-8">
+              <div className="relative w-36 h-36">
+                <svg viewBox="0 0 120 120" className="w-full h-full -rotate-90">
+                  <circle cx="60" cy="60" r={radius} fill="none" stroke="#e5e7eb" strokeWidth="10" className="dark:opacity-20" />
+                  <motion.circle
+                    cx="60" cy="60" r={radius} fill="none"
+                    stroke={ringColor}
+                    strokeWidth="10"
+                    strokeLinecap="round"
+                    strokeDasharray={circumference}
+                    animate={{ strokeDashoffset: offset }}
+                    transition={{ type: 'spring', damping: 20, stiffness: 80 }}
+                  />
+                </svg>
+                <div className="absolute inset-0 flex flex-col items-center justify-center">
+                  <motion.p
+                    key={pct}
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    className={`text-3xl font-bold ${levelColor}`}
+                  >
+                    {pct}%
+                  </motion.p>
+                  <p className={`text-xs font-semibold ${levelColor}`}>{levelLabel}</p>
+                </div>
+              </div>
             </div>
-            <div className="grid grid-cols-2 gap-6">
-                <Slider name="E" value={vars.E} setter={v => setVars({...vars, E:v})} label="Expectancy (Belief)" />
-                <Slider name="V" value={vars.V} setter={v => setVars({...vars, V:v})} label="Value (Enjoyment)" />
-                <Slider name="I" value={vars.I} setter={v => setVars({...vars, I:v})} label="Impulsiveness" />
-                <Slider name="D" value={vars.D} setter={v => setVars({...vars, D:v})} label="Delay (Deadline)" />
+
+            {/* Four levers */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+              {levers.map(lever => {
+                const val = vars[lever.key];
+                const barColor = lever.good
+                  ? 'bg-emerald-500'
+                  : 'bg-rose-500';
+                const trackBg = lever.good
+                  ? 'bg-emerald-100 dark:bg-emerald-900/30'
+                  : 'bg-rose-100 dark:bg-rose-900/30';
+                const direction = lever.good ? '↑ Increase' : '↓ Decrease';
+
+                return (
+                  <div key={lever.key} className="flex flex-col items-center p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-100 dark:border-zinc-800">
+                    <div className="mb-2">{lever.icon}</div>
+                    <p className="text-xs font-bold text-zinc-700 dark:text-zinc-200 text-center">{lever.label}</p>
+                    <p className="text-[10px] text-zinc-400 dark:text-zinc-500 text-center mb-3">{lever.desc}</p>
+
+                    {/* Vertical bar gauge */}
+                    <div className={`w-6 h-24 rounded-full ${trackBg} relative overflow-hidden mb-2`}>
+                      <motion.div
+                        className={`absolute bottom-0 w-full rounded-full ${barColor}`}
+                        animate={{ height: `${val}%` }}
+                        transition={{ type: 'spring', damping: 15, stiffness: 100 }}
+                      />
+                    </div>
+
+                    {/* Slider (hidden native, custom track above) */}
+                    <input
+                      type="range" min="1" max="100" value={val}
+                      onChange={e => setVars({...vars, [lever.key]: parseInt(e.target.value)})}
+                      className="w-full h-1.5 appearance-none rounded-full bg-zinc-200 dark:bg-zinc-700 cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-zinc-600 [&::-webkit-slider-thumb]:dark:bg-zinc-300 [&::-webkit-slider-thumb]:shadow-md"
+                    />
+
+                    <p className={`text-[9px] font-bold mt-2 ${lever.good ? 'text-emerald-500' : 'text-rose-500'}`}>{direction}</p>
+                  </div>
+                );
+              })}
             </div>
+
+            {/* Dynamic insight */}
+            <motion.div
+              key={getDiagnosis()}
+              initial={{ opacity: 0, y: 6 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+              className="p-4 bg-zinc-900 dark:bg-zinc-900 rounded-xl text-sm text-white"
+            >
+              <p><span className={`font-bold ${levelColor}`}>Diagnosis:</span> {getDiagnosis()}</p>
+            </motion.div>
         </div>
     );
 };
@@ -145,7 +242,7 @@ const ProcrastinationModule: React.FC<{ onBack: () => void; progress: ModuleProg
 
   return (
     <ModuleLayout
-      moduleNumber="02"
+      moduleNumber="11"
       moduleTitle="Procrastination Protocol"
       theme={theme}
       sections={sections}
@@ -170,7 +267,7 @@ const ProcrastinationModule: React.FC<{ onBack: () => void; progress: ModuleProg
           {activeSection === 2 && (
             <ReadingSection title="The Procrastination Equation." eyebrow="Step 3" icon={Calculator} theme={theme}>
               <p>Psychologist Piers Steel formalized procrastination into a single equation: <Highlight description="Motivation = (Expectancy x Value) / (Impulsiveness x Delay). This formula shows that your motivation to do a task is determined by four variables you can consciously manipulate." theme={theme}>Motivation = (Expectancy x Value) / (Impulsiveness x Delay)</Highlight>. This gives you four levers to pull.</p>
-              <p>**Expectancy:** Your belief you can succeed. Low confidence = high procrastination. **Value:** How rewarding or meaningful the task feels. **Impulsiveness:** Your susceptibility to distractions. **Delay:** How far away the deadline is. A task that is boring, feels impossible, is easily interrupted, and has a distant deadline is a recipe for maximum procrastination.</p>
+              <p><strong>Expectancy:</strong> Your belief you can succeed. Low confidence = high procrastination. <strong>Value:</strong> How rewarding or meaningful the task feels. <strong>Impulsiveness:</strong> Your susceptibility to distractions. <strong>Delay:</strong> How far away the deadline is. A task that is boring, feels impossible, is easily interrupted, and has a distant deadline is a recipe for maximum procrastination.</p>
               <ProcrastinationEquation />
             </ReadingSection>
           )}
@@ -197,7 +294,7 @@ const ProcrastinationModule: React.FC<{ onBack: () => void; progress: ModuleProg
           {activeSection === 6 && (
             <ReadingSection title="The 'If-Then' Protocol." eyebrow="Step 7" icon={Zap} theme={theme}>
               <p>Willpower is a limited resource, especially for a developing brain. The most effective anti-procrastination strategy is one that bypasses willpower entirely: the <Highlight description="A pre-commitment strategy (also called Implementation Intentions) where you pre-load a decision: 'IF [trigger], THEN [action].' This automates the behavior, removing the need for an in-the-moment willpower battle." theme={theme}>"If-Then" Plan</Highlight>. By pre-loading a decision, you automate the response and remove the negotiation your brain is so good at losing.</p>
-              <p>The formula: **IF** [Trigger/Situation], **THEN** I will [Specific Action]. For example: "IF it is 4:30 PM, THEN I will open my Maths textbook to page 1 and do the first question." The key is to make the action tiny and specific. You're not committing to "study Maths for 2 hours." You're committing to opening a book.</p>
+              <p>The formula: <strong>IF</strong> [Trigger/Situation], <strong>THEN</strong> I will [Specific Action]. For example: "IF it is 4:30 PM, THEN I will open my Maths textbook to page 1 and do the first question." The key is to make the action tiny and specific. You're not committing to "study Maths for 2 hours." You're committing to opening a book.</p>
               <IfThenAutopilot />
             </ReadingSection>
           )}

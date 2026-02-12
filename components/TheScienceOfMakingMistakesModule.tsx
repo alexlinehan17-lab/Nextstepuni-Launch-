@@ -100,7 +100,7 @@ const TheScienceOfMakingMistakesModule: React.FC<{ onBack: () => void; progress:
           )}
            {activeSection === 4 && (
             <ReadingSection title="Your Error Toolkit." eyebrow="Step 5" icon={Wrench} theme={theme}>
-              <p>The good news is you can train your brain to have a bigger Pe signal and be more resilient under pressure. It's a skill. The first step is to **de-shame mistakes**. See them as data, not as judgments on your character. Every error is a signpost pointing to exactly where you need to grow.</p>
+              <p>The good news is you can train your brain to have a bigger Pe signal and be more resilient under pressure. It's a skill. The first step is to <strong>de-shame mistakes</strong>. See them as data, not as judgments on your character. Every error is a signpost pointing to exactly where you need to grow.</p>
               <p>The most powerful tool for this is a <Highlight description="A dedicated notebook or document where you log every mistake you make in practice, diagnose its cause (e.g., slip, gap, misconception), and prescribe a specific action to fix it." theme={theme}>Mistake Log</Highlight>. This forces you to engage with your errors in a structured, analytical way. It's a manual override that forces your brain to generate a strong Pe signal. Don't just find your mistakes; interrogate them. They are your best teachers.</p>
                <MicroCommitment theme={theme}>
                 <p>For your next piece of homework, actively look for one mistake you made. Don't just correct it. Write down in one sentence *why* you made it. You've just started your first mistake log.</p>

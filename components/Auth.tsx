@@ -7,7 +7,6 @@ import React, { useState, MouseEvent } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ArrowRight, User as UserIcon, Key, Eye, EyeOff, Shield, User as StudentIcon, ArrowLeft, ChevronDown } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 import { auth, db } from '../firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
@@ -45,7 +44,6 @@ export function getAvatarUrl(seed: string): string {
 }
 
 export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonClassName, showChevron, initialStep }) => {
-  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownTimeout = React.useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -183,24 +181,24 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
       transition={{ duration: 0.3, ease: 'easeInOut' }}
       className="flex flex-col flex-grow justify-center"
     >
-      <h2 className="font-sans text-2xl font-semibold text-zinc-900 dark:text-white/95 mb-1 tracking-tight">{isAdmin ? t('auth.adminLogin') : t('auth.welcomeBack')}</h2>
-      <p className="text-zinc-500 dark:text-white/40 text-sm mb-8">{isAdmin ? t('auth.adminLoginDesc') : t('auth.welcomeBackDesc')}</p>
+      <h2 className="font-sans text-2xl font-semibold text-zinc-900 dark:text-white/95 mb-1 tracking-tight">{isAdmin ? 'Admin login' : 'Welcome back'}</h2>
+      <p className="text-zinc-500 dark:text-white/40 text-sm mb-8">{isAdmin ? 'Enter the admin password to continue.' : 'Sign in to pick up where you left off.'}</p>
       <form onSubmit={handleLogin} className="flex flex-col gap-3">
         {!isAdmin && <div className="relative">
           <UserIcon size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-white/25" />
-          <input type="text" value={loginName} onChange={(e) => setLoginName(e.target.value)} placeholder={t('auth.chooseUsername')} className={inputWithIconClass} autoFocus/>
+          <input type="text" value={loginName} onChange={(e) => setLoginName(e.target.value)} placeholder="Choose a username" className={inputWithIconClass} autoFocus/>
         </div>}
          <div className="relative">
           <Key size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-white/25" />
-          <input type={showLoginPassword ? "text" : "password"} value={loginPassword} onChange={(e) => setLoginPassword(e.target.value)} placeholder={t('auth.password')} className={inputWithBothClass} autoFocus={isAdmin}/>
+          <input type={showLoginPassword ? "text" : "password"} value={loginPassword} onChange={(e) => setLoginPassword(e.target.value)} placeholder="Password" className={inputWithBothClass} autoFocus={isAdmin}/>
            <button type="button" onClick={() => setShowLoginPassword(!showLoginPassword)} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-white/25 hover:text-zinc-600 dark:hover:text-white/50 transition-colors" aria-label={showLoginPassword ? "Hide password" : "Show password"}>
               {showLoginPassword ? <EyeOff size={16} /> : <Eye size={16} />}
            </button>
         </div>
         <AnimatePresence>{error && (<MotionP initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-xs text-red-400/90 font-medium">{error}</MotionP>)}</AnimatePresence>
-        <button type="submit" className="w-full bg-[#CC785C] text-white font-medium py-3 rounded-xl hover:bg-[#B56A50] transition-colors text-sm mt-1">{t('auth.continue')}</button>
+        <button type="submit" className="w-full bg-[#CC785C] text-white font-medium py-3 rounded-xl hover:bg-[#B56A50] transition-colors text-sm mt-1">Continue</button>
         <button type="button" onClick={() => setLoginView('choice')} className="flex items-center justify-center gap-1.5 text-sm text-zinc-400 dark:text-white/35 hover:text-zinc-600 dark:hover:text-white/60 w-full py-2 rounded-lg transition-colors mt-1">
-          <ArrowLeft size={14} /> {t('auth.back')}
+          <ArrowLeft size={14} /> Back
         </button>
       </form>
     </MotionDiv>
@@ -227,10 +225,10 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
                 transition={{ duration: 0.15, ease: [0.16, 1, 0.3, 1] }}
                 className="absolute top-full right-0 mt-2 w-52 bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-white/[0.08] rounded-xl shadow-lg shadow-black/[0.08] dark:shadow-black/40 overflow-hidden py-1"
               >
-                <button onClick={() => openModal('login', 'student')} className="w-full text-left px-4 py-2.5 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-white/[0.06] transition-colors font-medium">{t('auth.studentLogin')}</button>
-                <button onClick={() => openModal('create')} className="w-full text-left px-4 py-2.5 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-white/[0.06] transition-colors font-medium">{t('auth.createAccountBtn')}</button>
+                <button onClick={() => openModal('login', 'student')} className="w-full text-left px-4 py-2.5 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-white/[0.06] transition-colors font-medium">Student login</button>
+                <button onClick={() => openModal('create')} className="w-full text-left px-4 py-2.5 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-white/[0.06] transition-colors font-medium">Create account</button>
                 <div className="border-t border-zinc-100 dark:border-white/[0.06] my-1" />
-                <button onClick={() => openModal('login', 'admin')} className="w-full text-left px-4 py-2.5 text-sm text-zinc-400 dark:text-zinc-500 hover:bg-zinc-100 dark:hover:bg-white/[0.06] transition-colors">{t('auth.adminLogin')}</button>
+                <button onClick={() => openModal('login', 'admin')} className="w-full text-left px-4 py-2.5 text-sm text-zinc-400 dark:text-zinc-500 hover:bg-zinc-100 dark:hover:bg-white/[0.06] transition-colors">Admin login</button>
               </MotionDiv>
             )}
           </AnimatePresence>
@@ -251,16 +249,16 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
                 <AnimatePresence mode="wait">
                   {step === 'initial' && (
                     <MotionDiv key="initial" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={1} transition={{ duration: 0.3, ease: 'easeInOut' }} className="flex flex-col flex-grow justify-center">
-                      <h2 className="font-sans text-2xl font-semibold text-zinc-900 dark:text-white/95 mb-2 text-center tracking-tight">{t('auth.welcome')}</h2>
-                      <p className="text-zinc-500 dark:text-white/40 text-sm text-center mb-8">{t('auth.getStarted')}</p>
+                      <h2 className="font-sans text-2xl font-semibold text-zinc-900 dark:text-white/95 mb-2 text-center tracking-tight">Welcome</h2>
+                      <p className="text-zinc-500 dark:text-white/40 text-sm text-center mb-8">Get started with NextStepUni</p>
                       <div className="space-y-3">
                          <button onClick={() => { setStep('login'); setLoginView('choice'); setError(''); }} className="w-full text-left p-4 rounded-xl bg-zinc-50 dark:bg-white/[0.04] hover:bg-zinc-100 dark:hover:bg-white/[0.07] transition-all border border-zinc-200/50 dark:border-white/[0.08] hover:border-zinc-300 dark:hover:border-white/[0.15] group">
-                           <p className="font-medium text-zinc-900 dark:text-white/90 text-sm">{t('auth.haveAccount')}</p>
-                           <p className="text-xs text-zinc-500 dark:text-white/35 mt-0.5">{t('auth.haveAccountDesc')}</p>
+                           <p className="font-medium text-zinc-900 dark:text-white/90 text-sm">I have an account</p>
+                           <p className="text-xs text-zinc-500 dark:text-white/35 mt-0.5">Log in with your username.</p>
                          </button>
                          <button onClick={() => setStep('create')} className="w-full text-left p-4 rounded-xl bg-zinc-50 dark:bg-white/[0.04] hover:bg-zinc-100 dark:hover:bg-white/[0.07] transition-all border border-zinc-200/50 dark:border-white/[0.08] hover:border-zinc-300 dark:hover:border-white/[0.15] group">
-                           <p className="font-medium text-zinc-900 dark:text-white/90 text-sm">{t('auth.createNew')}</p>
-                           <p className="text-xs text-zinc-500 dark:text-white/35 mt-0.5">{t('auth.createNewDesc')}</p>
+                           <p className="font-medium text-zinc-900 dark:text-white/90 text-sm">Create a new account</p>
+                           <p className="text-xs text-zinc-500 dark:text-white/35 mt-0.5">Get started and save your progress.</p>
                          </button>
                       </div>
                     </MotionDiv>
@@ -269,20 +267,20 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
                   {step === 'login' && (
                     loginView === 'choice' ? (
                       <MotionDiv key="login-choice" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={-1} transition={{ duration: 0.3, ease: 'easeInOut' }} className="flex flex-col flex-grow justify-center">
-                        <h2 className="font-sans text-2xl font-semibold text-zinc-900 dark:text-white/95 mb-2 text-center tracking-tight">{t('auth.loginAs')}</h2>
-                        <p className="text-zinc-500 dark:text-white/40 text-sm text-center mb-8">{t('auth.chooseType')}</p>
+                        <h2 className="font-sans text-2xl font-semibold text-zinc-900 dark:text-white/95 mb-2 text-center tracking-tight">Log in as</h2>
+                        <p className="text-zinc-500 dark:text-white/40 text-sm text-center mb-8">Choose your account type</p>
                         <div className="space-y-3">
                            <button onClick={() => setLoginView('student')} className="w-full flex items-center gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-white/[0.04] hover:bg-zinc-100 dark:hover:bg-white/[0.07] transition-all border border-zinc-200/50 dark:border-white/[0.08] hover:border-zinc-300 dark:hover:border-white/[0.15]">
                              <div className="w-10 h-10 rounded-xl bg-[#CC785C]/10 flex items-center justify-center flex-shrink-0"><StudentIcon size={20} className="text-[#CC785C]"/></div>
-                             <div className="text-left"><p className="font-medium text-zinc-900 dark:text-white/90 text-sm">{t('auth.student')}</p><p className="text-xs text-zinc-500 dark:text-white/35 mt-0.5">{t('auth.studentDesc')}</p></div>
+                             <div className="text-left"><p className="font-medium text-zinc-900 dark:text-white/90 text-sm">Student</p><p className="text-xs text-zinc-500 dark:text-white/35 mt-0.5">Access your modules and progress.</p></div>
                            </button>
                            <button onClick={() => setLoginView('admin')} className="w-full flex items-center gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-white/[0.04] hover:bg-zinc-100 dark:hover:bg-white/[0.07] transition-all border border-zinc-200/50 dark:border-white/[0.08] hover:border-zinc-300 dark:hover:border-white/[0.15]">
                              <div className="w-10 h-10 rounded-xl bg-zinc-100 dark:bg-white/[0.06] flex items-center justify-center flex-shrink-0"><Shield size={20} className="text-zinc-400 dark:text-white/40"/></div>
-                             <div className="text-left"><p className="font-medium text-zinc-900 dark:text-white/90 text-sm">{t('auth.admin')}</p><p className="text-xs text-zinc-500 dark:text-white/35 mt-0.5">{t('auth.adminDesc')}</p></div>
+                             <div className="text-left"><p className="font-medium text-zinc-900 dark:text-white/90 text-sm">Admin</p><p className="text-xs text-zinc-500 dark:text-white/35 mt-0.5">View student dashboard.</p></div>
                            </button>
                         </div>
                         <button type="button" onClick={() => setStep('initial')} className="flex items-center justify-center gap-1.5 text-sm text-zinc-400 dark:text-white/35 hover:text-zinc-600 dark:hover:text-white/60 mt-8 w-full py-2 rounded-lg transition-colors">
-                          <ArrowLeft size={14} /> {t('auth.back')}
+                          <ArrowLeft size={14} /> Back
                         </button>
                       </MotionDiv>
                     ) : loginView === 'student' ? renderLoginForm(false) : renderLoginForm(true)
@@ -290,31 +288,31 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
 
                   {step === 'create' && (
                     <MotionDiv key="create" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={-1} transition={{ duration: 0.3, ease: 'easeInOut' }} className="flex flex-col flex-grow">
-                      <h2 className="font-sans text-2xl font-semibold text-zinc-900 dark:text-white/95 mb-1 tracking-tight">{t('auth.createAccount')}</h2>
-                      <p className="text-zinc-500 dark:text-white/40 text-sm mb-6">{t('auth.setupProfile')}</p>
+                      <h2 className="font-sans text-2xl font-semibold text-zinc-900 dark:text-white/95 mb-1 tracking-tight">Create account</h2>
+                      <p className="text-zinc-500 dark:text-white/40 text-sm mb-6">Set up your profile to get started.</p>
                       <form onSubmit={handleCreate} className="flex flex-col flex-grow gap-3">
                         <div className="relative">
                           <UserIcon size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-white/25" />
-                          <input type="text" value={createName} onChange={(e) => { setCreateName(e.target.value); setError(''); }} placeholder={t('auth.chooseUsername')} className={inputWithIconClass} autoFocus/>
+                          <input type="text" value={createName} onChange={(e) => { setCreateName(e.target.value); setError(''); }} placeholder="Choose a username" className={inputWithIconClass} autoFocus/>
                         </div>
                         <div className="relative">
                           <Key size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-white/25" />
-                          <input type={showCreatePassword ? "text" : "password"} value={createPassword} onChange={(e) => { setCreatePassword(e.target.value); setError(''); }} placeholder={t('auth.password')} className={inputWithBothClass} />
+                          <input type={showCreatePassword ? "text" : "password"} value={createPassword} onChange={(e) => { setCreatePassword(e.target.value); setError(''); }} placeholder="Password" className={inputWithBothClass} />
                           <button type="button" onClick={() => setShowCreatePassword(!showCreatePassword)} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-white/25 hover:text-zinc-600 dark:hover:text-white/50 transition-colors" aria-label={showCreatePassword ? "Hide password" : "Show password"}>{showCreatePassword ? <EyeOff size={16} /> : <Eye size={16} />}</button>
                         </div>
                         <div className="relative">
                           <Key size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-white/25" />
-                          <input type={showConfirmPassword ? "text" : "password"} value={confirmPassword} onChange={(e) => { setConfirmPassword(e.target.value); setError(''); }} placeholder={t('auth.confirmPassword')} className={inputWithBothClass} />
+                          <input type={showConfirmPassword ? "text" : "password"} value={confirmPassword} onChange={(e) => { setConfirmPassword(e.target.value); setError(''); }} placeholder="Confirm password" className={inputWithBothClass} />
                           <button type="button" onClick={() => setShowConfirmPassword(!showConfirmPassword)} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-white/25 hover:text-zinc-600 dark:hover:text-white/50 transition-colors" aria-label={showConfirmPassword ? "Hide password" : "Show password"}>{showConfirmPassword ? <EyeOff size={16} /> : <Eye size={16} />}</button>
                         </div>
-                        <p className="text-xs text-zinc-500 dark:text-white/35 mt-3 font-medium uppercase tracking-widest">{t('auth.chooseAvatar')}</p>
+                        <p className="text-xs text-zinc-500 dark:text-white/35 mt-3 font-medium uppercase tracking-widest">Choose your avatar</p>
                         <div className="grid grid-cols-4 gap-2.5">
                           {AVATAR_SEEDS.map((seed) => (<MotionButton key={seed} type="button" onClick={() => setSelectedAvatar(seed)} className={`rounded-xl aspect-square p-1.5 transition-all ${selectedAvatar === seed ? 'ring-2 ring-[#CC785C] bg-[#CC785C]/10' : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'}`} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}><img src={getAvatarUrl(seed)} alt="Avatar" className="w-full h-full rounded-lg"/></MotionButton>))}
                         </div>
                         <AnimatePresence>{error && (<MotionP initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-xs text-red-400/90 font-medium mt-1">{error}</MotionP>)}</AnimatePresence>
-                        <button type="submit" disabled={!isProfileComplete} className="w-full bg-[#CC785C] text-white font-medium py-3 mt-auto rounded-xl hover:bg-[#B56A50] transition-colors text-sm disabled:bg-zinc-100 dark:disabled:bg-white/[0.06] disabled:text-zinc-400 dark:disabled:text-white/20 disabled:cursor-not-allowed">{t('auth.createAccountBtn')}</button>
+                        <button type="submit" disabled={!isProfileComplete} className="w-full bg-[#CC785C] text-white font-medium py-3 mt-auto rounded-xl hover:bg-[#B56A50] transition-colors text-sm disabled:bg-zinc-100 dark:disabled:bg-white/[0.06] disabled:text-zinc-400 dark:disabled:text-white/20 disabled:cursor-not-allowed">Create account</button>
                         <button type="button" onClick={() => setStep('initial')} className="flex items-center justify-center gap-1.5 text-sm text-zinc-400 dark:text-white/35 hover:text-zinc-600 dark:hover:text-white/60 mt-1 w-full py-2 rounded-lg transition-colors">
-                          <ArrowLeft size={14} /> {t('auth.back')}
+                          <ArrowLeft size={14} /> Back
                         </button>
                       </form>
                     </MotionDiv>

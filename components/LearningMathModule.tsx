@@ -126,20 +126,20 @@ const LearningMathModule: React.FC<{ onBack: () => void; progress: ModuleProgres
           )}
            {activeSection === 1 && (
             <ReadingSection title="The Two Papers." eyebrow="Step 2" icon={BookOpen} theme={theme}>
-              <p>The exam is split into two papers designed to test different cognitive skills. **Paper 1** is the **"Technical"** paper. It's heavily weighted towards Algebra, Calculus, and Number. It rewards <Highlight description="The ability to perform mathematical operations (like solving equations or differentiating) quickly and accurately." theme={theme}>procedural fluency</Highlight> and is less "wordy."</p>
-              <p>**Paper 2** is the **"Contextual"** paper. This is the test of interpretation and spatial reasoning, covering Statistics, Probability, Geometry, and Trigonometry. It's often described as "volatile" because a single novel diagram can throw off students who rely on memorized procedures rather than a deep understanding of the concepts.</p>
+              <p>The exam is split into two papers designed to test different cognitive skills. <strong>Paper 1</strong> is the <strong>"Technical"</strong> paper. It's heavily weighted towards Algebra, Calculus, and Number. It rewards <Highlight description="The ability to perform mathematical operations (like solving equations or differentiating) quickly and accurately." theme={theme}>procedural fluency</Highlight> and is less "wordy."</p>
+              <p><strong>Paper 2</strong> is the <strong>"Contextual"</strong> paper. This is the test of interpretation and spatial reasoning, covering Statistics, Probability, Geometry, and Trigonometry. It's often described as "volatile" because a single novel diagram can throw off students who rely on memorized procedures rather than a deep understanding of the concepts.</p>
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="The Five Strands." eyebrow="Step 3" icon={SlidersHorizontal} theme={theme}>
               <p>The syllabus is divided into five interconnected strands. Questions are deliberately <Highlight description="Requiring students to combine knowledge from multiple strands (e.g., using Algebra to solve a Geometry problem)." theme={theme}>synoptic</Highlight>, so you can't study topics in isolation.</p>
-              <p>The strands are: 1) **Statistics & Probability** (literacy-heavy), 2) **Geometry & Trigonometry** (visual and spatial), 3) **Number** (the foundation, including Complex Numbers), 4) **Algebra** (the "language" of the course), and 5) **Functions & Calculus** (the heavyweight of Paper 1).</p>
+              <p>The strands are: 1) <strong>Statistics & Probability</strong> (literacy-heavy), 2) <strong>Geometry & Trigonometry</strong> (visual and spatial), 3) <strong>Number</strong> (the foundation, including Complex Numbers), 4) <strong>Algebra</strong> (the "language" of the course), and 5) <strong>Functions & Calculus</strong> (the heavyweight of Paper 1).</p>
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="Decoding the Marking Scheme." eyebrow="Step 4" icon={Key} theme={theme}>
               <p>Understanding how marks are awarded is your single greatest strategic asset. The SEC uses a <Highlight description="An ethos where marks are awarded for what is correct, not deducted for what is wrong. The goal is to reward any valid progress." theme={theme}>"Positive Marking"</Highlight> system. This is codified in the Scale System (A, B, C, D).</p>
-              <p>**Scale A** (0, 10) is rare. **Scale B** (0, 5, 10) is "hit or miss." But **Scale C** (0, 3, 7, 10) and **Scale D** (0, 3, 5, 8, 10) are the most common. The crucial insight is the "Low Partial" mark—you can get 30% of the marks for simply writing down the correct formula and attempting to substitute a value. This is a strategic goldmine.</p>
+              <p><strong>Scale A</strong> (0, 10) is rare. <strong>Scale B</strong> (0, 5, 10) is "hit or miss." But <strong>Scale C</strong> (0, 3, 7, 10) and <strong>Scale D</strong> (0, 3, 5, 8, 10) are the most common. The crucial insight is the "Low Partial" mark—you can get 30% of the marks for simply writing down the correct formula and attempting to substitute a value. This is a strategic goldmine.</p>
             </ReadingSection>
           )}
           {activeSection === 4 && (

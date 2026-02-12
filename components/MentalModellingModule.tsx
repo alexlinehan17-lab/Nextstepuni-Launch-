@@ -71,7 +71,7 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
 
   return (
     <ModuleLayout
-      moduleNumber="08"
+      moduleNumber="07"
       moduleTitle="Mental Modelling"
       theme={theme}
       sections={sections}
@@ -89,7 +89,7 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
           )}
            {activeSection === 1 && (
             <ReadingSection title="The Modelling Cycle." eyebrow="Step 2" icon={Workflow} theme={theme}>
-              <p>How does your brain build a mental model? It runs a 5-step cycle. 1) **Decomposition**: You break the 2D drawing on the exam paper into basic shapes (prisms, cones). 2) **Internalization**: You build a 3D model in your head based on these shapes. 3) **Simulation**: You mentally manipulate this model ("If I look from the side, what will it look like?"). 4) **Externalization**: You draw the line. 5) **Re-internalization**: You check if your drawing matches your mental simulation.</p>
+              <p>How does your brain build a mental model? It runs a 5-step cycle. 1) <strong>Decomposition</strong>: You break the 2D drawing on the exam paper into basic shapes (prisms, cones). 2) <strong>Internalization</strong>: You build a 3D model in your head based on these shapes. 3) <strong>Simulation</strong>: You mentally manipulate this model ("If I look from the side, what will it look like?"). 4) <strong>Externalization</strong>: You draw the line. 5) <strong>Re-internalization</strong>: You check if your drawing matches your mental simulation.</p>
               <p>Here's the key: novice students almost always skip Step 3. They rely on "procedural recipes" ("always draw this line at 45 degrees") instead of running the mental simulation. This works for standard questions, but collapses the moment a novel problem appears.</p>
               <CycleOfModelling />
             </ReadingSection>
@@ -119,7 +119,7 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
            {activeSection === 5 && (
             <ReadingSection title="The Training Plan." eyebrow="Step 6" icon={Pyramid} theme={theme}>
               <p>Mental modelling is a teachable skill, not a gift. Like any skill, it must be trained with "progressive overload," moving from simple to complex. The <Highlight description="A curriculum design that revisits spatial skills with increasing levels of abstraction, moving from physical objects to abstract verbal problems." theme={theme}>Spiral of Visualisation</Highlight> is a framework for this training.</p>
-              <p>**Phase 1: Concrete Manipulation.** Start with physical objects (LEGO, cardboard models). Hold them, rotate them, and sketch them. This is "Touch-See-Draw." **Phase 2: Guided Visualisation.** Use CAD. Before you create a feature, sketch what you *predict* it will look like. Then, compare your sketch to the result. This is "Predict-Verify-Reflect." **Phase 3: Abstract Visualisation.** Solve "Dark Room" problems, where the geometry is described only in words. This is the ultimate test of your mind's eye, and the final preparation for the exam.</p>
+              <p><strong>Phase 1: Concrete Manipulation.</strong> Start with physical objects (LEGO, cardboard models). Hold them, rotate them, and sketch them. This is "Touch-See-Draw." <strong>Phase 2: Guided Visualisation.</strong> Use CAD. Before you create a feature, sketch what you *predict* it will look like. Then, compare your sketch to the result. This is "Predict-Verify-Reflect." <strong>Phase 3: Abstract Visualisation.</strong> Solve "Dark Room" problems, where the geometry is described only in words. This is the ultimate test of your mind's eye, and the final preparation for the exam.</p>
             </ReadingSection>
           )}
         </>

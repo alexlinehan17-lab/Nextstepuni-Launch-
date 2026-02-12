@@ -128,14 +128,14 @@ const TheMyelinManualModule: React.FC<{ onBack: () => void; progress: ModuleProg
           {activeSection === 3 && (
             <ReadingSection title="The Mastery Metaphors." eyebrow="Step 4" icon={Microscope} theme={theme}>
               <p>To really get a grip on this, we can use a few powerful analogies for what's happening inside your head when you engage in Deep Practice.</p>
-              <p>Think of it as upgrading your home internet from dial-up to fibre optic **broadband**. Unmyelinated circuits are slow and have low bandwidth—they can only handle one simple idea at a time. A myelinated circuit can handle multiple complex ideas at once without "buffering." Or think of it as paving a **dirt road into a motorway**. The first time you learn something, it's slow and bumpy. With deep practice, you pave that road, allowing information to travel at high speed, automatically.</p>
+              <p>Think of it as upgrading your home internet from dial-up to fibre optic <strong>broadband</strong>. Unmyelinated circuits are slow and have low bandwidth—they can only handle one simple idea at a time. A myelinated circuit can handle multiple complex ideas at once without "buffering." Or think of it as paving a <strong>dirt road into a motorway</strong>. The first time you learn something, it's slow and bumpy. With deep practice, you pave that road, allowing information to travel at high speed, automatically.</p>
               <MyelinWrapper/>
             </ReadingSection>
           )}
            {activeSection === 4 && (
             <ReadingSection title="The Rules of Myelination." eyebrow="Step 5" icon={Construction} theme={theme}>
-                <p>Myelination follows a few simple, non-negotiable rules. First, **struggle is not optional**. Easy practice doesn't send the signal. You must operate in the "sweet spot" where you're making errors and correcting them. That error-correction loop is the sound of the construction crew getting to work.</p>
-                <p>Second, **it's permanent but slow**. Unlike short-term memory, myelin is robust. Once a skill is wrapped, it stays with you. This is why cramming (synaptic) fails for long-term retention, but deep practice (myelin) works. But it takes time—weeks of consistent practice. You can't build a motorway overnight. Every session of deep practice adds another thin layer of tape, another ring to the tree.</p>
+                <p>Myelination follows a few simple, non-negotiable rules. First, <strong>struggle is not optional</strong>. Easy practice doesn't send the signal. You must operate in the "sweet spot" where you're making errors and correcting them. That error-correction loop is the sound of the construction crew getting to work.</p>
+                <p>Second, <strong>it's permanent but slow</strong>. Unlike short-term memory, myelin is robust. Once a skill is wrapped, it stays with you. This is why cramming (synaptic) fails for long-term retention, but deep practice (myelin) works. But it takes time—weeks of consistent practice. You can't build a motorway overnight. Every session of deep practice adds another thin layer of tape, another ring to the tree.</p>
                 <MicroCommitment theme={theme}>
                     <p>Identify your "sweet spot" for one subject. What is a task that is not too easy (you get it all right) and not too hard (you get it all wrong)? That's your target zone for the next study session.</p>
                 </MicroCommitment>

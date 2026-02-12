@@ -123,7 +123,7 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
            {activeSection === 3 && (
             <ReadingSection title="The Action Bridge." eyebrow="Step 4" icon={Link} theme={theme}>
                 <p>"Yet" is powerful, but it's not magic. On its own, it's just wishful thinking. To be effective, "yet" must be tethered to a behavioral plan. This is the crucial third step of the protocol: the <Highlight description="A concrete, specific action that you will take to move from 'not yet' to 'can'. This tethers optimism to a behavioral plan." theme={theme}>Bridge to Action</Highlight>.</p>
-                <p>The full, powerful sentence isn't just "I can't do this yet." It's "I can't do this yet, *so I will*..." This simple addition prevents "Yet" from being an excuse and turns it into a launchpad. It links the optimistic mindset to a concrete, strategic next step. This is the full protocol: **1. Identify the Block, 2. Add "Yet", 3. Bridge to Action.**</p>
+                <p>The full, powerful sentence isn't just "I can't do this yet." It's "I can't do this yet, *so I will*..." This simple addition prevents "Yet" from being an excuse and turns it into a launchpad. It links the optimistic mindset to a concrete, strategic next step. This is the full protocol: <strong>1. Identify the Block, 2. Add "Yet", 3. Bridge to Action.</strong></p>
                 <MicroCommitment theme={theme}>
                   <p>Think of your toughest subject. Your Block might be "I can't understand Topic X." Your Bridge could be "I will watch one YouTube video explaining it tonight."</p>
                 </MicroCommitment>

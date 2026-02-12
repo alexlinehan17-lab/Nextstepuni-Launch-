@@ -117,8 +117,8 @@ const TheCognitiveArchitectureModule: React.FC<{ onBack: () => void; progress: M
           )}
           {activeSection === 1 && (
             <ReadingSection title="The Working Memory Bottleneck." eyebrow="Step 2" icon={Filter} theme={theme}>
-              <p>Your Short-Term Memory, or <Highlight description="The part of your mind that holds and actively manipulates a small amount of information for a short time. It's the 'RAM' of your brain." theme={theme}>Working Memory</Highlight>, is the biggest bottleneck in your learning. It's shockingly limited. Classic research suggested you can hold about 7 items, but for complex Leaving Cert topics, it's more like **4 'chunks' of information**.</p>
-              <p>Even worse, without active effort, this information decays in about **15-30 seconds**. This is why you can read a whole page of a textbook and have no memory of it. The information entered your working memory but evaporated before it could be processed. Cramming jams this bottleneck, creating a fragile memory that feels strong but is quickly erased.</p>
+              <p>Your Short-Term Memory, or <Highlight description="The part of your mind that holds and actively manipulates a small amount of information for a short time. It's the 'RAM' of your brain." theme={theme}>Working Memory</Highlight>, is the biggest bottleneck in your learning. It's shockingly limited. Classic research suggested you can hold about 7 items, but for complex Leaving Cert topics, it's more like <strong>4 'chunks' of information</strong>.</p>
+              <p>Even worse, without active effort, this information decays in about <strong>15-30 seconds</strong>. This is why you can read a whole page of a textbook and have no memory of it. The information entered your working memory but evaporated before it could be processed. Cramming jams this bottleneck, creating a fragile memory that feels strong but is quickly erased.</p>
               <WorkingMemorySimulator/>
             </ReadingSection>
           )}

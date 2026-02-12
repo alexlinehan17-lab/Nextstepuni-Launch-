@@ -7,7 +7,6 @@ import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Check, Lock } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 import { AVATAR_SEEDS, getAvatarUrl } from './Auth';
 import { EXTRA_AVATAR_SEEDS } from './RewardShopModal';
 import { UserSettings } from '../types';
@@ -23,7 +22,6 @@ interface SettingsModalProps {
 }
 
 const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, settings, updateSetting, unlockedAvatarSeeds = [] }) => {
-  const { t } = useTranslation();
   const [showSaved, setShowSaved] = useState(false);
 
   const flash = () => {
@@ -52,7 +50,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, settings
             {/* Header */}
             <div className="flex items-center justify-between p-6 pb-0">
               <h2 className="font-sans text-xl font-semibold text-zinc-900 dark:text-white tracking-tight">
-                {t('settings.title')}
+                Settings
               </h2>
               <div className="flex items-center gap-3">
                 <AnimatePresence>
@@ -64,7 +62,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, settings
                       className="flex items-center gap-1 text-emerald-500 text-xs font-medium"
                     >
                       <Check size={14} />
-                      {t('settings.saved')}
+                      Saved!
                     </MotionDiv>
                   )}
                 </AnimatePresence>
@@ -81,7 +79,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, settings
               {/* Avatar */}
               <section>
                 <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
-                  {t('settings.avatar')}
+                  Avatar
                 </h3>
                 <div className="grid grid-cols-4 gap-2.5">
                   {AVATAR_SEEDS.map(seed => (
@@ -140,7 +138,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, settings
               {/* Default Timer Duration */}
               <section>
                 <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
-                  {t('settings.timerDuration')}
+                  Default Timer Duration
                 </h3>
                 <div className="flex gap-2">
                   {[25, 50].map(mins => (
@@ -156,7 +154,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, settings
                           : 'bg-zinc-50 dark:bg-white/[0.04] text-zinc-700 dark:text-zinc-300 ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'
                       }`}
                     >
-                      {t('settings.timerMinutes', { count: mins })}
+                      {`${mins} minutes`}
                     </button>
                   ))}
                 </div>

@@ -37,18 +37,6 @@ export const categoryColorMap: Record<CategoryType, { gradient: string; accentCo
     auraColor: 'hover:shadow-[0_20px_50px_rgba(220,38,38,0.15)]',
     pillBgColor: 'bg-red-700',
   },
-  'the-shield': {
-    gradient: 'bg-gradient-to-tr from-indigo-50 via-white to-zinc-50',
-    accentColor: 'text-indigo-700',
-    auraColor: 'hover:shadow-[0_20px_50px_rgba(79,70,229,0.15)]',
-    pillBgColor: 'bg-indigo-700',
-  },
-  'the-launchpad': {
-    gradient: 'bg-gradient-to-tr from-rose-50 via-white to-zinc-50',
-    accentColor: 'text-rose-700',
-    auraColor: 'hover:shadow-[0_20px_50px_rgba(225,29,72,0.15)]',
-    pillBgColor: 'bg-rose-700',
-  },
 };
 
 const COURSE_DEFINITIONS = [
@@ -517,8 +505,6 @@ export const categoryTitles: Record<CategoryType, string> = {
   'architecture-mindset': 'The Architecture of your Mindset',
   'science-growth': 'The Science of Growth',
   'learning-cheat-codes': 'The Science of Learning Effectively',
-  'the-shield': 'The Shield',
-  'the-launchpad': 'The Launchpad',
   'exam-zone': 'Exam Strategy and Points Maximisation',
   'subject-specific-science': 'Subject Specific Science',
 };

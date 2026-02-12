@@ -104,7 +104,7 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
            {activeSection === 4 && (
             <ReadingSection title="Your Pre-Exam Protocol." eyebrow="Step 5" icon={UserCheck} theme={theme}>
               <p>You now have a scientifically-proven tool to protect your brain under pressure. The final step is to turn it into a concrete, pre-exam ritual. Before every major exam (especially the Mocks and the Leaving Cert itself), you will run the Self-Affirmation Protocol.</p>
-              <p>The steps are simple: **1. Identify your core values.** **2. Choose the one that feels most important to you right now.** **3. Write for 15 minutes.** This isn't an essay; it's a private reflection. Write about why the value is important and describe a specific time you lived up to it. This isn't a "nice to have"; it's a cognitive warm-up as important as checking your pens.</p>
+              <p>The steps are simple: <strong>1. Identify your core values.</strong> <strong>2. Choose the one that feels most important to you right now.</strong> <strong>3. Write for 15 minutes.</strong> This isn't an essay; it's a private reflection. Write about why the value is important and describe a specific time you lived up to it. This isn't a "nice to have"; it's a cognitive warm-up as important as checking your pens.</p>
               <ValuesSelector />
               <MicroCommitment theme={theme}>
                 <p>Take the values you selected above. Create a recurring event in your phone's calendar for the morning of every exam you have this year, with the title: "15 Min Values Affirmation." You've just weaponized positive psychology.</p>

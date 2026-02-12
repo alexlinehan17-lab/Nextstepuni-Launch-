@@ -82,8 +82,8 @@ const TheGrammarOfGritModule: React.FC<{ onBack: () => void; progress: ModulePro
           )}
           {activeSection === 1 && (
             <ReadingSection title="The 3 Ps of Failure." eyebrow="Step 2" icon={HeartCrack} theme={theme}>
-              <p>A pessimistic explanatory style, which erodes grit, interprets failure through three toxic lenses: **Personal** ("It's my fault; I'm stupid"), **Pervasive** ("I ruin everything I touch"), and **Permanent** ("It's always going to be this way"). This isn't just negative thinking; it's a specific grammatical structure that leads to learned helplessness.</p>
-              <p>An optimistic, resilient style does the opposite. It sees failure as **External/Specific** ("The strategy was wrong"), **Specific** ("I messed up this one thing"), and **Temporary** ("I'll do better next time"). This isn't about lying to yourself; it's about a disciplined, strategic choice to focus on what you can control.</p>
+              <p>A pessimistic explanatory style, which erodes grit, interprets failure through three toxic lenses: <strong>Personal</strong> ("It's my fault; I'm stupid"), <strong>Pervasive</strong> ("I ruin everything I touch"), and <strong>Permanent</strong> ("It's always going to be this way"). This isn't just negative thinking; it's a specific grammatical structure that leads to learned helplessness.</p>
+              <p>An optimistic, resilient style does the opposite. It sees failure as <strong>External/Specific</strong> ("The strategy was wrong"), <strong>Specific</strong> ("I messed up this one thing"), and <strong>Temporary</strong> ("I'll do better next time"). This isn't about lying to yourself; it's about a disciplined, strategic choice to focus on what you can control.</p>
             </ReadingSection>
           )}
           {activeSection === 2 && (
@@ -95,7 +95,7 @@ const TheGrammarOfGritModule: React.FC<{ onBack: () => void; progress: ModulePro
            {activeSection === 3 && (
             <ReadingSection title="The Role of Self-Compassion." eyebrow="Step 4" icon={Shield} theme={theme}>
                 <p>A harsh inner critic doesn't build resilience; it creates shame, which is a powerful de-motivator. <Highlight description="Treating yourself with the same kindness you would offer a friend who is struggling. It's a powerful antidote to the shame that can follow failure." theme={theme}>Self-compassion</Highlight> is the antidote. It allows you to acknowledge a failure without letting it define you. It's the difference between "I failed" and "I am a failure."</p>
-                <p>It has three parts: 1) **Self-Kindness**: Treat yourself like you'd treat a mate. 2) **Common Humanity**: Remember that everyone messes up. 3) **Mindfulness**: Acknowledge the feeling without letting it consume you.</p>
+                <p>It has three parts: 1) <strong>Self-Kindness</strong>: Treat yourself like you'd treat a mate. 2) <strong>Common Humanity</strong>: Remember that everyone messes up. 3) <strong>Mindfulness</strong>: Acknowledge the feeling without letting it consume you.</p>
             </ReadingSection>
           )}
            {activeSection === 4 && (

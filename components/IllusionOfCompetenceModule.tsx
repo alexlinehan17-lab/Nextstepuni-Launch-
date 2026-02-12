@@ -18,24 +18,205 @@ const theme = tealTheme;
 // --- INTERACTIVE COMPONENTS ---
 
 const ForgettingCurveSimulator = () => {
-    const [reviews, setReviews] = useState(0);
-    const retention = reviews === 0 ? 3 : reviews === 1 ? 45 : reviews === 2 ? 75 : 95;
+    const [pins, setPins] = useState<number[]>([]);
+
+    const togglePin = (day: number) => {
+      if (day === 0) return;
+      setPins(prev => prev.includes(day) ? prev.filter(d => d !== day) : [...prev, day].sort((a, b) => a - b));
+    };
+
+    // Calculate retention at each day given review pins
+    // After learning/review, retention decays: R(t) = 100 * e^(-t/S)
+    // Each review resets retention to ~95% and increases stability S
+    const getRetentionCurve = (reviewDays: number[]): number[] => {
+      const points: number[] = [];
+      let lastReviewDay = 0;
+      let stability = 1.5; // initial half-life in days (fast decay)
+      let retentionAtReview = 100;
+
+      for (let day = 0; day <= 7; day++) {
+        const elapsed = day - lastReviewDay;
+        const retention = retentionAtReview * Math.exp(-elapsed / stability);
+        points.push(Math.max(5, Math.min(100, retention)));
+
+        if (reviewDays.includes(day) && day > 0) {
+          lastReviewDay = day;
+          stability = stability * 2.2; // each review more than doubles stability
+          retentionAtReview = Math.min(98, retention + (100 - retention) * 0.85);
+        }
+      }
+      return points;
+    };
+
+    const baselineCurve = getRetentionCurve([]);
+    const activeCurve = getRetentionCurve(pins);
+
+    // SVG chart dimensions
+    const chartLeft = 44;
+    const chartRight = 380;
+    const chartTop = 10;
+    const chartBottom = 170;
+    const chartW = chartRight - chartLeft;
+    const chartH = chartBottom - chartTop;
+
+    const toX = (day: number) => chartLeft + (day / 7) * chartW;
+    const toY = (pct: number) => chartBottom - (pct / 100) * chartH;
+
+    const buildPath = (curve: number[]) => {
+      return curve.map((val, i) => {
+        const x = toX(i);
+        const y = toY(val);
+        if (i === 0) return `M ${x} ${y}`;
+        // Use quadratic bezier for smooth curve between points
+        const prevX = toX(i - 1);
+        const prevY = toY(curve[i - 1]);
+        const cpX = (prevX + x) / 2;
+        return `C ${cpX} ${prevY}, ${cpX} ${y}, ${x} ${y}`;
+      }).join(' ');
+    };
+
+    const finalRetention = Math.round(activeCurve[7]);
+    const dayLabels = ['Learn', '1', '2', '3', '4', '5', '6', '7'];
 
     return (
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Forgetting Curve</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Without review, you forget ~80% of what you learn in 24 hours.</p>
-            <div className="w-full h-48 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg p-4">
-                 <svg viewBox="0 0 100 100" className="w-full h-full" preserveAspectRatio="none">
-                    <motion.path d={`M 0 5 C 20 10, 40 40, 100 ${100-retention}`} fill="none" stroke="#14b8a6" strokeWidth="3" transition={{type: 'spring', damping: 10}}/>
-                    <path d={`M 0 5 C 20 10, 40 40, 100 97`} fill="none" stroke="#e5e7eb" strokeWidth="2" strokeDasharray="4"/>
-                 </svg>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Click on days to place review sessions and see how spacing fights forgetting.</p>
+            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">You have 3 reviews to place. Where will you put them?</p>
+
+            {/* Chart */}
+            <div className="w-full overflow-visible">
+              <svg viewBox="0 0 400 220" className="w-full h-auto">
+                {/* Y-axis gridlines and labels */}
+                {[0, 25, 50, 75, 100].map(pct => (
+                  <g key={pct}>
+                    <line x1={chartLeft} y1={toY(pct)} x2={chartRight} y2={toY(pct)} stroke="#e5e7eb" strokeWidth="0.5" className="dark:opacity-20" />
+                    <text x={chartLeft - 6} y={toY(pct) + 4} textAnchor="end" fontSize="9" fill="#a1a1aa">{pct}%</text>
+                  </g>
+                ))}
+
+                {/* Baseline curve (no reviews) - dashed */}
+                <path d={buildPath(baselineCurve)} fill="none" stroke="#d4d4d8" strokeWidth="2" strokeDasharray="6 4" className="dark:opacity-40" />
+
+                {/* Active curve with reviews */}
+                <motion.path
+                  key={pins.join(',')}
+                  d={buildPath(activeCurve)}
+                  fill="none"
+                  stroke="#14b8a6"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  initial={{ pathLength: 0 }}
+                  animate={{ pathLength: 1 }}
+                  transition={{ duration: 0.8, ease: 'easeOut' }}
+                />
+
+                {/* Shaded area under active curve */}
+                <motion.path
+                  key={`fill-${pins.join(',')}`}
+                  d={`${buildPath(activeCurve)} L ${toX(7)} ${chartBottom} L ${toX(0)} ${chartBottom} Z`}
+                  fill="url(#tealGrad)"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 0.15 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                />
+                <defs>
+                  <linearGradient id="tealGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#14b8a6" />
+                    <stop offset="100%" stopColor="#14b8a6" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
+
+                {/* Day markers along x-axis */}
+                {dayLabels.map((label, i) => {
+                  const isPin = pins.includes(i);
+                  const isClickable = i > 0 && (isPin || pins.length < 3);
+                  return (
+                    <g key={i}>
+                      {/* Vertical pin line */}
+                      {isPin && (
+                        <motion.line
+                          x1={toX(i)} y1={toY(activeCurve[i])} x2={toX(i)} y2={chartBottom}
+                          stroke="#14b8a6" strokeWidth="1" strokeDasharray="3 3"
+                          initial={{ opacity: 0 }} animate={{ opacity: 0.5 }}
+                        />
+                      )}
+                      {/* Dot on curve */}
+                      {isPin && (
+                        <motion.circle
+                          cx={toX(i)} cy={toY(activeCurve[i])} r="4"
+                          fill="#14b8a6"
+                          initial={{ scale: 0 }} animate={{ scale: 1 }}
+                          transition={{ type: 'spring', stiffness: 300, damping: 15 }}
+                        />
+                      )}
+                      {/* Clickable day button area */}
+                      <g
+                        onClick={() => isClickable ? togglePin(i) : undefined}
+                        style={{ cursor: isClickable ? 'pointer' : i === 0 ? 'default' : 'not-allowed' }}
+                      >
+                        <rect
+                          x={toX(i) - 16} y={chartBottom + 6} width="32" height="28" rx="6"
+                          fill={isPin ? '#14b8a6' : i === 0 ? '#f4f4f5' : '#f4f4f5'}
+                          stroke={isPin ? '#0d9488' : '#e4e4e7'}
+                          strokeWidth="1"
+                          className={isPin ? '' : 'dark:fill-zinc-700 dark:stroke-zinc-600'}
+                        />
+                        <text
+                          x={toX(i)} y={chartBottom + 24}
+                          textAnchor="middle" fontSize="9"
+                          fontWeight={isPin || i === 0 ? 'bold' : 'normal'}
+                          fill={isPin ? 'white' : '#71717a'}
+                        >
+                          {i === 0 ? label : `Day ${label}`}
+                        </text>
+                        {isPin && (
+                          <text x={toX(i)} y={chartBottom + 48} textAnchor="middle" fontSize="8" fill="#14b8a6" fontWeight="bold">Review</text>
+                        )}
+                      </g>
+                    </g>
+                  );
+                })}
+
+                {/* Axis labels */}
+                <text x={(chartLeft + chartRight) / 2} y={chartBottom + 60} textAnchor="middle" fontSize="10" fill="#a1a1aa" fontWeight="bold">Time (Days)</text>
+              </svg>
             </div>
-            <p className="text-center font-bold mt-4">Retention after 1 Week: <span className="text-teal-600">{retention}%</span></p>
-            <div className="flex justify-center gap-2 mt-4">
-                <button onClick={() => setReviews(reviews + 1)} className="px-3 py-1 text-xs bg-zinc-200 rounded-md">Add Review</button>
-                <button onClick={() => setReviews(0)} className="px-3 py-1 text-xs bg-zinc-200 rounded-md">Reset</button>
+
+            {/* Result + controls */}
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-2">
+              <div className="text-center sm:text-left">
+                <p className="text-sm text-zinc-500 dark:text-zinc-400">Retention after 7 days:</p>
+                <p className="text-3xl font-bold text-teal-600">{finalRetention}%
+                  <span className="text-sm font-normal text-zinc-400 ml-2">
+                    {pins.length === 0 ? '(no reviews)' : `(${pins.length} review${pins.length > 1 ? 's' : ''})`}
+                  </span>
+                </p>
+              </div>
+              <button
+                onClick={() => setPins([])}
+                className="px-4 py-2 text-xs font-bold bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-600 transition-colors"
+              >
+                Reset
+              </button>
             </div>
+
+            {/* Insight message */}
+            {pins.length === 3 && (
+              <motion.div
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                className={`mt-4 p-4 rounded-xl text-sm font-medium ${
+                  finalRetention >= 70
+                    ? 'bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/50'
+                    : 'bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800/50'
+                }`}
+              >
+                {finalRetention >= 70
+                  ? 'Well spaced! Spreading reviews over the week keeps your retention high. This is the power of spaced repetition.'
+                  : 'Try spacing your reviews further apart. Bunching them together wastes their power — your brain needs time between reviews to consolidate.'}
+              </motion.div>
+            )}
         </div>
     );
 };
@@ -75,7 +256,7 @@ const IllusionOfCompetenceModule: React.FC<{ onBack: () => void; progress: Modul
 
   return (
     <ModuleLayout
-      moduleNumber="01"
+      moduleNumber="10"
       moduleTitle="Overcoming Illusions of Competence"
       theme={theme}
       sections={sections}

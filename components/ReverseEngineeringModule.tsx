@@ -105,7 +105,7 @@ const ReverseEngineeringModule: React.FC<{ onBack: () => void; progress: ModuleP
 
   return (
     <ModuleLayout
-      moduleNumber="02"
+      moduleNumber="03"
       moduleTitle="Reverse Engineering"
       theme={theme}
       sections={sections}

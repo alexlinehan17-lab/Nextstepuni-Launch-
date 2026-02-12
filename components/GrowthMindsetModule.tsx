@@ -155,7 +155,7 @@ const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
 
   return (
     <ModuleLayout
-      moduleNumber="01"
+      moduleNumber="13"
       moduleTitle="The Growth Protocol"
       theme={theme}
       sections={sections}

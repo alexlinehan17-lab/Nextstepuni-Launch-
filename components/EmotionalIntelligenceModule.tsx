@@ -95,7 +95,7 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
           {activeSection === 1 && (
             <ReadingSection title="What is Emotional Intelligence?" eyebrow="Step 2" icon={Brain} theme={theme}>
               <p><Highlight description="The capacity to be aware of, control, and express one's emotions, and to handle interpersonal relationships judiciously and empathetically." theme={theme}>Emotional Intelligence (EI)</Highlight> isn't about being "nice." In an academic context, it's a set of high-level cognitive skills for monitoring and regulating your internal state. High EI doesn't mean you don't feel stress; it means you can use that stress as fuel (<Highlight description="A positive, motivating form of stress that can improve performance." theme={theme}>eustress</Highlight>) instead of letting it become a debilitating force.</p>
-              <p>For the Leaving Cert, we can break EI into three trainable skills: 1) **Emotional Awareness:** Noticing the physical signals of stress early. 2) **Emotional Understanding:** Correctly labeling the emotion. 3) **Emotional Regulation:** Using specific strategies to manage it.</p>
+              <p>For the Leaving Cert, we can break EI into three trainable skills: 1) <strong>Emotional Awareness:</strong> Noticing the physical signals of stress early. 2) <strong>Emotional Understanding:</strong> Correctly labeling the emotion. 3) <strong>Emotional Regulation:</strong> Using specific strategies to manage it.</p>
             </ReadingSection>
           )}
           {activeSection === 2 && (
@@ -127,7 +127,7 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
           {activeSection === 6 && (
             <ReadingSection title="The Integrated Timeline." eyebrow="Step 7" icon={ClipboardCheck} theme={theme}>
               <p>You now have a complete toolkit of top-down and bottom-up strategies. The final step is to integrate them into a clear timeline.</p>
-              <p><strong>Months Before:</strong> Build resilience. Practice daily Body Scans and learn Box Breathing when stress is low. **Morning Of:** Arousal regulation is key. Eat the "Exam Breakfast," stay away from panicked friends, and use the "Get Excited" reframe. **In The Hall:** If panic hits, use the "Paper Panic" drill: Stop, Breathe (3 cycles of Box Breathing), Micro-PMR (clench toes), and Re-engage with the easiest question. **Post-Exam:** A strict Post-Mortem Ban is essential to contain anxiety for the next paper.</p>
+              <p><strong>Months Before:</strong> Build resilience. Practice daily Body Scans and learn Box Breathing when stress is low. <strong>Morning Of:</strong> Arousal regulation is key. Eat the "Exam Breakfast," stay away from panicked friends, and use the "Get Excited" reframe. <strong>In The Hall:</strong> If panic hits, use the "Paper Panic" drill: Stop, Breathe (3 cycles of Box Breathing), Micro-PMR (clench toes), and Re-engage with the easiest question. <strong>Post-Exam:</strong> A strict Post-Mortem Ban is essential to contain anxiety for the next paper.</p>
               <MicroCommitment theme={theme}><p>Choose one protocol from this module. Commit to practicing it for 5 minutes every day for one week. You are not just studying; you are training your nervous system.</p></MicroCommitment>
             </ReadingSection>
           )}

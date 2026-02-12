@@ -51,7 +51,7 @@ const BimodalBrainModule: React.FC<{ onBack: () => void; progress: ModuleProgres
 
   return (
     <ModuleLayout
-      moduleNumber="09"
+      moduleNumber="08"
       moduleTitle="The Bimodal Brain"
       theme={theme}
       sections={sections}

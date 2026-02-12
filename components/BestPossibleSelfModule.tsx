@@ -81,7 +81,7 @@ const BestPossibleSelfModule: React.FC<{ onBack: () => void; progress: ModulePro
            {activeSection === 3 && (
             <ReadingSection title="The WOOP Method." eyebrow="Step 4" icon={Zap} theme={theme}>
                 <p>This process of combining a positive vision with a realistic obstacle is the core of the <Highlight description="A powerful, four-step goal-setting strategy: Wish, Outcome, Obstacle, Plan. It combines positive thinking with a realistic assessment of barriers." theme={theme}>WOOP Method</Highlight>. It's a simple but profound algorithm for turning wishes into action.</p>
-                <p>1. **Wish:** What is your most important goal? 2. **Outcome:** What is the best feeling or result if you achieve it? 3. **Obstacle:** What is the main thing *inside you* that stands in the way? 4. **Plan:** Create an "If [Obstacle], then I will [Action]" plan.</p>
+                <p>1. <strong>Wish:</strong> What is your most important goal? 2. <strong>Outcome:</strong> What is the best feeling or result if you achieve it? 3. <strong>Obstacle:</strong> What is the main thing *inside you* that stands in the way? 4. <strong>Plan:</strong> Create an "If [Obstacle], then I will [Action]" plan.</p>
             </ReadingSection>
           )}
            {activeSection === 4 && (

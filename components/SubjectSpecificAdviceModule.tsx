@@ -72,7 +72,7 @@ const SubjectSpecificAdviceModule: React.FC<{ onBack: () => void; progress: Modu
 
   return (
     <ModuleLayout
-      moduleNumber="05"
+      moduleNumber="02"
       moduleTitle="Subject Specific Advice"
       theme={theme}
       sections={sections}

@@ -133,14 +133,14 @@ const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleP
           )}
           {activeSection === 2 && (
             <ReadingSection title="The Pessimist's Script." eyebrow="Step 3" icon={UserX} theme={theme}>
-              <p>The most dangerous story your brain can write is the "pessimistic explanatory style." It attributes failure to causes that are **Internal, Stable, and Uncontrollable**. For example: "I failed the test (bad event) because I am stupid (Internal, Stable, Uncontrollable)."</p>
+              <p>The most dangerous story your brain can write is the "pessimistic explanatory style." It attributes failure to causes that are <strong>Internal, Stable, and Uncontrollable</strong>. For example: "I failed the test (bad event) because I am stupid (Internal, Stable, Uncontrollable)."</p>
               <p>This is a psychological poison. It leads directly to a state of <Highlight description="A psychological state where a person feels powerless to change their situation, leading to passivity and giving up. It's the end-point of a pessimistic explanatory style." theme={theme}>Learned Helplessness</Highlight>. If you believe the cause of your failure is a permanent, unchangeable part of who you are, then there's no point in trying again. Your motivation collapses, not because you're lazy, but because your brain has logically concluded that effort is futile.</p>
             </ReadingSection>
           )}
            {activeSection === 3 && (
             <ReadingSection title="The Agency Re-Write." eyebrow="Step 4" icon={Recycle} theme={theme}>
               <p>The good news is that you can consciously re-write this script. This is called <Highlight description="A cognitive-behavioral technique where individuals are explicitly taught to change their attributions for failure from internal, stable, and uncontrollable causes to external or internal, unstable, and controllable ones." theme={theme}>Attributional Retraining</Highlight>. It's a proven psychological intervention that builds resilience and improves academic performance.</p>
-              <p>The goal is to shift your explanations towards causes that are **Internal, Unstable, and Controllable**. "I failed the test because I am stupid" becomes "I failed the test because my *strategy* was ineffective." The cause is still internal (giving you agency), but it's unstable (you can change your strategy) and controllable. This isn't just wordplay; it's a fundamental shift in your brain's operating system that turns a dead end into a learning opportunity.</p>
+              <p>The goal is to shift your explanations towards causes that are <strong>Internal, Unstable, and Controllable</strong>. "I failed the test because I am stupid" becomes "I failed the test because my *strategy* was ineffective." The cause is still internal (giving you agency), but it's unstable (you can change your strategy) and controllable. This isn't just wordplay; it's a fundamental shift in your brain's operating system that turns a dead end into a learning opportunity.</p>
               <AttributionReframeDrill />
             </ReadingSection>
           )}

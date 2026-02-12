@@ -9,19 +9,16 @@ import {
   Sprout, Zap, Rocket, Target, FlaskConical,
   Layout, ArrowRight, Sparkles, Beaker
 } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 import { CourseData, BentoModuleTile } from './Library';
 
 // FIX: Cast motion components to any to bypass broken type definitions
 const MotionDiv = motion.div as any;
 const MotionCircle = motion.circle as any;
 
-export type CategoryType = 
-  | 'architecture-mindset' 
-  | 'science-growth' 
-  | 'learning-cheat-codes' 
-  | 'the-shield' 
-  | 'the-launchpad' 
+export type CategoryType =
+  | 'architecture-mindset'
+  | 'science-growth'
+  | 'learning-cheat-codes'
   | 'exam-zone'
   | 'subject-specific-science';
 
@@ -111,7 +108,6 @@ const BentoTile: React.FC<BentoTileProps> = ({
   className = "",
   delay = 0
 }) => {
-  const { t } = useTranslation();
   return (
     <MotionDiv
       initial={{ opacity: 0, y: 16 }}
@@ -144,7 +140,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
 
         <div className="mt-8 flex items-center justify-between gap-6 pt-6 border-t border-zinc-100 dark:border-zinc-800">
             <div className="flex flex-col">
-              <span className="text-[10px] font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">{t('tree.progress')}</span>
+              <span className="text-[10px] font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Progress</span>
             </div>
             <ActivityRing progress={progress} color={accentHex} />
         </div>
@@ -154,7 +150,6 @@ const BentoTile: React.FC<BentoTileProps> = ({
 };
 
 export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, allCourses, onSelectModule, categoryTitles, userProgress }) => {
-  const { t } = useTranslation();
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   
   const getCategoryProgress = (category: CategoryType) => {
@@ -175,42 +170,42 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     { 
       id: 'architecture-mindset', 
       title: "The Architecture of your Mindset", 
-      subtitle: "Pillar 01",
-      icon: Layout, 
-      hex: "#3b82f6", 
-      className: "md:col-span-4" 
+      subtitle: "Module 01",
+      icon: Layout,
+      hex: "#3b82f6",
+      className: "md:col-span-4"
     },
-    { 
-      id: 'science-growth', 
-      title: "The Science of Growth", 
-      subtitle: "Pillar 02",
-      icon: Sprout, 
+    {
+      id: 'science-growth',
+      title: "The Science of Growth",
+      subtitle: "Module 02",
+      icon: Sprout,
       hex: "#f59e0b",
-      className: "md:col-span-2" 
+      className: "md:col-span-2"
     },
-    { 
-      id: 'learning-cheat-codes', 
-      title: "The Science of Learning Effectively", 
-      subtitle: "Pillar 03",
-      icon: Zap, 
+    {
+      id: 'learning-cheat-codes',
+      title: "The Science of Learning Effectively",
+      subtitle: "Module 03",
+      icon: Zap,
       hex: "#14b8a6", // Teal
-      className: "md:col-span-2" 
+      className: "md:col-span-2"
     },
-     { 
-      id: 'subject-specific-science', 
-      title: "Subject Specific Science", 
-      subtitle: "Specialist",
-      icon: Beaker, 
+     {
+      id: 'subject-specific-science',
+      title: "Subject Specific Science",
+      subtitle: "Module 04",
+      icon: Beaker,
       hex: "#6b7280", // Gray
-      className: "md:col-span-2" 
+      className: "md:col-span-2"
     },
-    { 
-      id: 'exam-zone', 
-      title: "Exam Strategy and Points Maximisation", 
-      subtitle: "Pillar 04",
-      icon: Target, 
+    {
+      id: 'exam-zone',
+      title: "Exam Strategy and Points Maximisation",
+      subtitle: "Module 05",
+      icon: Target,
       hex: "#ef4444", // Red
-      className: "md:col-span-2" 
+      className: "md:col-span-2"
     },
   ];
 
@@ -240,10 +235,10 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
         <header className="text-center mb-20">
           <div className="w-12 h-1 bg-[#CC785C] rounded-full mx-auto mb-6" />
           <h1 className="font-serif text-5xl md:text-7xl text-zinc-900 dark:text-white tracking-tight leading-none font-semibold">
-            {t('tree.learningLab')}
+            Learning Lab
           </h1>
           <p className="max-w-xl mx-auto mt-5 text-zinc-500 dark:text-zinc-400 leading-relaxed">
-            {t('tree.subtitle')}
+            A science-backed curriculum designed to give you an unfair advantage in your final school exams. Select a module to begin.
           </p>
         </header>
 
@@ -274,8 +269,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
         
         {/* Module Search */}
         <div className="mt-24">
-            <h2 className="text-center font-serif text-3xl font-semibold mb-2 text-zinc-800 dark:text-white">{t('tree.findModules')}</h2>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8 max-w-md mx-auto">{t('tree.findModulesDesc')}</p>
+            <h2 className="text-center font-serif text-3xl font-semibold mb-2 text-zinc-800 dark:text-white">Find Units by Topic</h2>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8 max-w-md mx-auto">Filter units by up to two tags to find connections and build a deeper web of knowledge.</p>
             <div className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto mb-12">
                 {allTags.map(tag => (
                     <button 

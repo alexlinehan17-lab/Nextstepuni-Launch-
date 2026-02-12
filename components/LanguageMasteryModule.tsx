@@ -145,7 +145,7 @@ const LanguageMasteryModule: React.FC<{ onBack: () => void; progress: ModuleProg
            {activeSection === 2 && (
             <ReadingSection title="Examiner Forensics." eyebrow="Step 3" icon={Brain} theme={theme}>
               <p>Chief Examiner Reports are the exam's "black box recorder," telling us exactly why students fail and succeed. The biggest <Highlight description="Errors that cap a student's grade, regardless of other strengths." theme={theme}>"Killer Error"</Highlight> is the "Rote Learning Penalty"—reciting a pre-learned essay that doesn't answer the question. This gets punished heavily in the Communication quadrant.</p>
-              <p>Conversely, there are clear <Highlight description="Skills that reliably signal a top-tier student to an examiner." theme={theme}>"H1 Differentiators."</Highlight> In French and Spanish, the number one differentiator is the spontaneous, correct use of the **Subjunctive Mood**. In German, it's mastery of word order—the **"Verb Kicker"** rule. These aren't just grammar points; they are signals of high-level Language Awareness.</p>
+              <p>Conversely, there are clear <Highlight description="Skills that reliably signal a top-tier student to an examiner." theme={theme}>"H1 Differentiators."</Highlight> In French and Spanish, the number one differentiator is the spontaneous, correct use of the <strong>Subjunctive Mood</strong>. In German, it's mastery of word order—the <strong>"Verb Kicker"</strong> rule. These aren't just grammar points; they are signals of high-level Language Awareness.</p>
             </ReadingSection>
           )}
           {activeSection === 3 && (

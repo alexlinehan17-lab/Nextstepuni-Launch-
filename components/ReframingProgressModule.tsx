@@ -144,7 +144,7 @@ const ReframingProgressModule: React.FC<{ onBack: () => void; progress: ModulePr
           {activeSection === 2 && (
             <ReadingSection title="The 'Banked Grade' Heist." eyebrow="Step 3" icon={PieChart} theme={theme}>
                 <p>The structure of the Leaving Cert allows for a strategic "heist." A significant portion of your final grade can be secured months before the written exams. These <Highlight description="Coursework, practical projects, and oral exams that are completed before June. They are immune to exam-day nerves and represent the ultimate 'early wins'." theme={theme}>'Banked Grades'</Highlight> are your safety net.</p>
-                <p>For a student taking Irish (40% Oral), History (20% RSR), and Geography (20% Field Study), **80% of a subject equivalent** is secured before June. This realization must fundamentally alter your study prioritization in the spring of your 6th year.</p>
+                <p>For a student taking Irish (40% Oral), History (20% RSR), and Geography (20% Field Study), <strong>80% of a subject equivalent</strong> is secured before June. This realization must fundamentally alter your study prioritization in the spring of your 6th year.</p>
             </ReadingSection>
           )}
           {activeSection === 3 && (
@@ -163,7 +163,7 @@ const ReframingProgressModule: React.FC<{ onBack: () => void; progress: ModulePr
           {activeSection === 5 && (
             <ReadingSection title="The Retrospective Log." eyebrow="Step 6" icon={CalendarClock} theme={theme}>
                 <p>Standard timetables fail because they are prospective—they guess what you'll need to study. A <Highlight description="A data-driven revision system where you record what you've studied and your confidence level (Red/Amber/Green), then decide what to study next based on your weakest, oldest topic." theme={theme}>Retrospective Log</Highlight> is based on actual performance. It naturally enforces Spaced Repetition and Interleaving.</p>
-                <p>The rule is simple: **"Worst First."** When you sit down to study, you don't follow a pre-written plan. You look at your log and ask two questions: "What am I Red/Amber in?" and "What has the oldest date?" This algorithmic approach removes decision fatigue and ensures you are always working on your biggest weaknesses.</p>
+                <p>The rule is simple: <strong>"Worst First."</strong> When you sit down to study, you don't follow a pre-written plan. You look at your log and ask two questions: "What am I Red/Amber in?" and "What has the oldest date?" This algorithmic approach removes decision fatigue and ensures you are always working on your biggest weaknesses.</p>
                 <RetrospectiveLog/>
             </ReadingSection>
           )}

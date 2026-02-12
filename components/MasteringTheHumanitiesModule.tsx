@@ -70,7 +70,7 @@ const MasteringTheHumanitiesModule: React.FC<{ onBack: () => void; progress: Mod
 
   return (
     <ModuleLayout
-      moduleNumber="04"
+      moduleNumber="07"
       moduleTitle="Mastering the Humanities"
       theme={theme}
       sections={sections}
@@ -107,7 +107,7 @@ const MasteringTheHumanitiesModule: React.FC<{ onBack: () => void; progress: Mod
           )}
           {activeSection === 4 && (
             <ReadingSection title="The Universal Toolkit." eyebrow="Step 5" icon={Brain} theme={theme}>
-              <p>While the currencies differ, the underlying structure of a good argument is universal. The <Highlight description="A robust heuristic for essay writing: plan 3-4 distinct arguments, structure each paragraph using PEE, and in discursive subjects, consider 3 perspectives (Thesis, Antithesis, Synthesis)." theme={theme}>"Rule of Three"</Highlight> is a powerful framework. Plan **3 core arguments** for every essay. Structure each paragraph using the **PEE chain**: **P**oint (your topic sentence), **E**vidence (your fact, quote, or SRP), and **E**xplanation (the "So what?" factor that links the evidence back to your point).</p>
+              <p>While the currencies differ, the underlying structure of a good argument is universal. The <Highlight description="A robust heuristic for essay writing: plan 3-4 distinct arguments, structure each paragraph using PEE, and in discursive subjects, consider 3 perspectives (Thesis, Antithesis, Synthesis)." theme={theme}>"Rule of Three"</Highlight> is a powerful framework. Plan <strong>3 core arguments</strong> for every essay. Structure each paragraph using the <strong>PEE chain</strong>: <strong>P</strong>oint (your topic sentence), <strong>E</strong>vidence (your fact, quote, or SRP), and <strong>E</strong>xplanation (the "So what?" factor that links the evidence back to your point).</p>
             </ReadingSection>
           )}
           {activeSection === 5 && (

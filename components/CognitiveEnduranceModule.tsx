@@ -81,7 +81,7 @@ const CognitiveEnduranceModule: React.FC<{ onBack: () => void; progress: ModuleP
 
   return (
     <ModuleLayout
-      moduleNumber="10"
+      moduleNumber="06"
       moduleTitle="Cognitive Endurance"
       theme={theme}
       sections={sections}
@@ -116,7 +116,7 @@ const CognitiveEnduranceModule: React.FC<{ onBack: () => void; progress: ModuleP
             <ReadingSection title="The In-Exam Toolkit." eyebrow="Step 4" icon={HeartPulse} theme={theme}>
                 <p>Anxiety is the enemy of endurance. It hijacks your brain, diverting blood flow from your rational <Highlight description="The 'CEO' of your brain, responsible for executive functions like working memory and impulse control. Its function is severely impaired by stress and fatigue." theme={theme}>Prefrontal Cortex (PFC)</Highlight> to your emotional <Highlight description="The brain's primitive fear centre. When it becomes overactive, it can 'hijack' the PFC, leading to a 'blanking out' phenomenon." theme={theme}>amygdala</Highlight>. You need tools to manage this in real-time.</p>
                 <p>The fastest way to calm your nervous system is the <Highlight description="A specific breathing pattern (two sharp inhales through the nose, one long exhale through the mouth) that reinflates collapsed air sacs in the lungs, rapidly offloading carbon dioxide and reducing autonomic arousal." theme={theme}>Physiological Sigh</Highlight>. It takes less than 10 seconds. When you feel panic rising after a tough question, this is your emergency brake.</p>
-                <p>For your eyes, use the **20-20-20 Rule**: every 20 minutes, look at something 20 feet away for 20 seconds. This relaxes your eye muscles and fights the visual fatigue that causes headaches and slows reading speed.</p>
+                <p>For your eyes, use the <strong>20-20-20 Rule</strong>: every 20 minutes, look at something 20 feet away for 20 seconds. This relaxes your eye muscles and fights the visual fatigue that causes headaches and slows reading speed.</p>
             </ReadingSection>
           )}
            {activeSection === 4 && (

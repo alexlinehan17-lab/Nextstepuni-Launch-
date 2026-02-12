@@ -51,7 +51,7 @@ const MasteringTheCreativesModule: React.FC<{ onBack: () => void; progress: Modu
           {activeSection === 2 && (
             <ReadingSection title="Music: The Algorithm of Melody." eyebrow="Step 3" icon={SlidersHorizontal} theme={theme}>
               <p>The 16-bar melody question is not a test of your inner Mozart; it's a structural engineering problem. You can get full marks by treating it like a puzzle with clear rules. Before you write a single note, run your "pre-flight check": What's the Key Signature? The Time Signature? What's the instrument's range?</p>
-              <p>The most reliable structure is the A-A1-B-A2 formula. **A** is given. **A1** is a response that starts the same but ends differently, usually with a <Highlight description="The process of changing from one key to another. A mandatory part of the melody composition question." theme={theme}>modulation</Highlight> to a new key. **B** is the contrast--go higher, change the rhythm. **A2** is the return home, resolving firmly back in the original key. It's an algorithm, not a whim.</p>
+              <p>The most reliable structure is the A-A1-B-A2 formula. <strong>A</strong> is given. <strong>A1</strong> is a response that starts the same but ends differently, usually with a <Highlight description="The process of changing from one key to another. A mandatory part of the melody composition question." theme={theme}>modulation</Highlight> to a new key. <strong>B</strong> is the contrast--go higher, change the rhythm. <strong>A2</strong> is the return home, resolving firmly back in the original key. It's an algorithm, not a whim.</p>
             </ReadingSection>
           )}
            {activeSection === 3 && (

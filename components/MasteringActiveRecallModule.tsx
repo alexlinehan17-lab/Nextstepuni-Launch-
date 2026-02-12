@@ -111,7 +111,7 @@ const MasteringActiveRecallModule: React.FC<{ onBack: () => void; progress: Modu
   ];
 
   return (
-    <ModuleLayout moduleNumber="02" moduleTitle="Mastering Active Recall" theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
+    <ModuleLayout moduleNumber="01" moduleTitle="Mastering Active Recall" theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
       {(activeSection) => (
         <>
           {activeSection === 0 && (
@@ -148,7 +148,7 @@ const MasteringActiveRecallModule: React.FC<{ onBack: () => void; progress: Modu
           {activeSection === 5 && (
             <ReadingSection title="Your Recall Toolkit." eyebrow="Step 6" icon={Wrench} theme={theme}>
               <p>You now understand the science. Active recall is the single most powerful tool in your academic arsenal. To master it, you need to follow three core rules derived from the research, and audit your own current methods.</p>
-              <p>1. **Embrace Disfluency:** Understand that the feeling of "struggle" is the feeling of learning. If it feels easy, it's probably ineffective. 2. **The "Book Closed" Rule:** Never judge how well you know something with the book open. That's just fluency, not learning. 3. **Stop Dropping Items:** Continue to test yourself on material even after you get it right. Continued retrieval is what arrests the forgetting curve. </p>
+              <p>1. <strong>Embrace Disfluency:</strong> Understand that the feeling of "struggle" is the feeling of learning. If it feels easy, it's probably ineffective. 2. <strong>The "Book Closed" Rule:</strong> Never judge how well you know something with the book open. That's just fluency, not learning. 3. <strong>Stop Dropping Items:</strong> Continue to test yourself on material even after you get it right. Continued retrieval is what arrests the forgetting curve. </p>
               <StudyMethodAuditor />
               <MicroCommitment theme={theme}>
                 <p>For your next study session, try the 20/80 rule. Spend 20% of your time consuming information (reading, watching) and 80% of your time actively recalling it (self-quizzing, explaining it out loud).</p>

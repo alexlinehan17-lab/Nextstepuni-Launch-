@@ -183,7 +183,7 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
   ];
 
   return (
-    <ModuleLayout moduleNumber="03" moduleTitle="Spaced Repetition" theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
+    <ModuleLayout moduleNumber="02" moduleTitle="Spaced Repetition" theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
       {(activeSection) => (
         <>
           {activeSection === 0 && (
@@ -208,7 +208,7 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
           {activeSection === 3 && (
             <ReadingSection title="The Optimal Schedule." eyebrow="Step 4" icon={CalendarDays} theme={theme}>
               <p>So, what is the perfect gap between study sessions? There's no single magic number. Landmark research by Cepeda and Pashler found that the <Highlight description="The Inter-Study Interval (ISI) is the time gap between your study sessions." theme={theme}>Optimal Gap</Highlight> depends entirely on when you need to remember the information—the <Highlight description="The Retention Interval (RI) is the time between your last study session and the final test." theme={theme}>Retention Interval</Highlight>.</p>
-              <p>Their "Ridgeline Rule" gives us a practical ratio: to maximize recall, your review gap should be roughly **5-20%** of the time until the test. For a test in a week, you need a short gap (1-2 days). For a test in 6 months, you need a much longer gap (e.g., 3 weeks). This is because a longer gap allows for more forgetting, creating a more "desirable difficulty" and triggering a stronger memory consolidation process for the long haul.</p>
+              <p>Their "Ridgeline Rule" gives us a practical ratio: to maximize recall, your review gap should be roughly <strong>5-20%</strong> of the time until the test. For a test in a week, you need a short gap (1-2 days). For a test in 6 months, you need a much longer gap (e.g., 3 weeks). This is because a longer gap allows for more forgetting, creating a more "desirable difficulty" and triggering a stronger memory consolidation process for the long haul.</p>
               <OptimalScheduleCalculator />
             </ReadingSection>
           )}

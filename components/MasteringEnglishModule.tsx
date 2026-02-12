@@ -94,7 +94,7 @@ const MasteringEnglishModule: React.FC<{ onBack: () => void; progress: ModulePro
           )}
            {activeSection === 4 && (
             <ReadingSection title="The Comparative Study." eyebrow="Step 5" icon={BarChart} theme={theme}>
-                <p>For Higher Level 2026, the three comparative modes are **Cultural Context**, **General Vision and Viewpoint (GVV)**, and **Literary Genre**. Crucially, "Theme or Issue" is NOT a mode for Higher Level. Preparing it is a catastrophic waste of time.</p>
+                <p>For Higher Level 2026, the three comparative modes are <strong>Cultural Context</strong>, <strong>General Vision and Viewpoint (GVV)</strong>, and <strong>Literary Genre</strong>. Crucially, "Theme or Issue" is NOT a mode for Higher Level. Preparing it is a catastrophic waste of time.</p>
                 <p>The key to a H1 is a link-heavy structure. Avoid discussing your texts sequentially. Instead, weave them together in each paragraph, comparing and contrasting them based on the mode. The <Highlight description="A study technique where you identify 4-5 key moments in each text that can be flexibly applied to any of the comparative modes." theme={theme}>"Key Moment" Matrix</Highlight> is the most effective way to prepare for this.</p>
             </ReadingSection>
           )}

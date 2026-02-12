@@ -146,7 +146,7 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
            {activeSection === 3 && (
             <ReadingSection title="From Dream to Plan." eyebrow="Step 4" icon={Gamepad2} theme={theme}>
               <p>Just having a goal isn't enough. Research shows that pure positive fantasizing can actually lower your energy. To turn a dream into a plan, you need a tool called <Highlight description="A powerful, four-step goal-setting strategy developed by Gabriele Oettingen, based on the science of Mental Contrasting with Implementation Intentions." theme={theme}>WOOP</Highlight>: Wish, Outcome, Obstacle, Plan.</p>
-              <p>The magic is in the **Obstacle** step. By vividly imagining the internal barrier that stops you (e.g., "I get distracted by my phone"), you can create an "If-Then" plan to deal with it automatically. This transforms the obstacle from a motivation-killer into a trigger for a pre-planned, positive response.</p>
+              <p>The magic is in the <strong>Obstacle</strong> step. By vividly imagining the internal barrier that stops you (e.g., "I get distracted by my phone"), you can create an "If-Then" plan to deal with it automatically. This transforms the obstacle from a motivation-killer into a trigger for a pre-planned, positive response.</p>
               <WOOPPlanner />
             </ReadingSection>
           )}
@@ -165,7 +165,7 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
           )}
           {activeSection === 6 && (
             <ReadingSection title="The Purpose Protocol." eyebrow="Step 7" icon={Link2} theme={theme}>
-              <p>You now have the scientific toolkit to re-wire the connection between your present effort and your future self. This is the **Purpose Protocol**, a 5-phase plan for building sustainable motivation.</p>
+              <p>You now have the scientific toolkit to re-wire the connection between your present effort and your future self. This is the <strong>Purpose Protocol</strong>, a 5-phase plan for building sustainable motivation.</p>
               <p><strong>Phase 1: The Audit.</strong> For each subject, ask "Why am I doing this?" If the only answer is "points," that's a friction point. Apply the Utility Value Writing exercise. <strong>Phase 2: The Vision.</strong> Spend 15 minutes writing a detailed description of your "Best Possible Self" 5 years from now. Then, use WOOP to plan your next study session. <strong>Phase 3: The Craft.</strong> Find one assignment this week and "course craft" it to make it your own. <strong>Phase 4: The Habit.</strong> Use "Tiny Habits" to make starting the work so small it's impossible to fail. <strong>Phase 5: Re-Authoring.</strong> If you feel stuck, externalize the problem ("The stress is visiting me") and map your skills from other areas (like gaming) to your schoolwork.</p>
               <MicroCommitment theme={theme}>
                 <p>Pick one phase, one protocol. Just one. Commit to trying it for one week. You're not just studying; you're becoming the architect of your own purpose.</p>

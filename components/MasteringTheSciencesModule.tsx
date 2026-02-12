@@ -79,7 +79,7 @@ const MasteringTheSciencesModule: React.FC<{ onBack: () => void; progress: Modul
            {activeSection === 3 && (
             <ReadingSection title="Physics: Abstract Logic." eyebrow="Step 4" icon={Atom} theme={theme}>
               <p>Physics rewards the application of abstract concepts to novel problems. Section A is your experimental portfolio and the source of "easy" marks if you master <Highlight description="Key protocols like ensuring the independent variable is on the X-axis and calculating slope from the line of best fit, not table points." theme={theme}>graphing protocols</Highlight>. All derivations must be learned by heart, including the geometric steps.</p>
-              <p>For novel questions, your secret weapon is <Highlight description="Using the units of physical quantities to deduce or check a formula (e.g., if Force is in N and Area is in m\u00b2, Pressure must be N/m\u00b2)." theme={theme}>Unit Algebra</Highlight>. Forgetting to convert from cm to m is the single most frequent cause of lost marks. Always double-check your calculator is in **Degree** mode for trigonometric functions.</p>
+              <p>For novel questions, your secret weapon is <Highlight description="Using the units of physical quantities to deduce or check a formula (e.g., if Force is in N and Area is in m\u00b2, Pressure must be N/m\u00b2)." theme={theme}>Unit Algebra</Highlight>. Forgetting to convert from cm to m is the single most frequent cause of lost marks. Always double-check your calculator is in <strong>Degree</strong> mode for trigonometric functions.</p>
             </ReadingSection>
           )}
            {activeSection === 4 && (

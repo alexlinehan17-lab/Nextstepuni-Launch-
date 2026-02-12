@@ -153,7 +153,7 @@ const GameDayModule: React.FC<{ onBack: () => void; progress: ModuleProgress; on
 
   return (
     <ModuleLayout
-      moduleNumber="08"
+      moduleNumber="06"
       moduleTitle="Game Day Protocol"
       theme={theme}
       sections={sections}

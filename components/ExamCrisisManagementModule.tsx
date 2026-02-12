@@ -64,7 +64,7 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
 
   return (
     <ModuleLayout
-      moduleNumber="04"
+      moduleNumber="05"
       moduleTitle="Exam Crisis Management"
       theme={theme}
       sections={sections}
@@ -109,13 +109,13 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
           {activeSection === 5 && (
             <ReadingSection title="Crisis Planning: The WRAP." eyebrow="Step 6" icon={ClipboardList} theme={theme}>
               <p>Elite performers don't just react to crises; they plan for them. The <Highlight description="The Wellness Recovery Action Plan is a structured system for identifying your personal triggers and creating a pre-planned response to a crisis." theme={theme}>WRAP Framework</Highlight> is a tool for doing just that. It moves you from a state of panic to executing a pre-planned protocol.</p>
-              <p>Your Academic WRAP has four parts. **1. Daily Maintenance:** What do you need to do every day to stay well? **2. Triggers:** What external events throw you off? **3. Early Warning Signs:** What are your internal signals of rising stress? **4. Crisis Plan:** Your "Break Glass" protocol for a full-blown panic attack. By writing this down *before* the crisis, you outsource the decision-making to your calm, rational self.</p>
+              <p>Your Academic WRAP has four parts. <strong>1. Daily Maintenance:</strong> What do you need to do every day to stay well? <strong>2. Triggers:</strong> What external events throw you off? <strong>3. Early Warning Signs:</strong> What are your internal signals of rising stress? <strong>4. Crisis Plan:</strong> Your "Break Glass" protocol for a full-blown panic attack. By writing this down *before* the crisis, you outsource the decision-making to your calm, rational self.</p>
             </ReadingSection>
           )}
           {activeSection === 6 && (
             <ReadingSection title="The 7-Day Taper." eyebrow="Step 7" icon={Flag} theme={theme}>
               <p>This is where it all comes together. The final week before the exams is your "Taper." Just like an athlete, you reduce the training load to allow your body and mind to recover and peak at the right moment. This is not the time for cramming.</p>
-              <p>Your 7-day taper should include: **Caffeine Resensitization** (T-7 days), **Circadian Entrainment** (T-5 days, waking up at exam time), and **Nutritional Priming** (T-3 days, shifting to low-GI foods and hyper-hydrating). The day before the exam, you stop all heavy study. You are no longer building knowledge; you are preparing the machine that will deploy it.</p>
+              <p>Your 7-day taper should include: <strong>Caffeine Resensitization</strong> (T-7 days), <strong>Circadian Entrainment</strong> (T-5 days, waking up at exam time), and <strong>Nutritional Priming</strong> (T-3 days, shifting to low-GI foods and hyper-hydrating). The day before the exam, you stop all heavy study. You are no longer building knowledge; you are preparing the machine that will deploy it.</p>
               <MicroCommitment theme={theme}>
                 <p>Take out your calendar. Find the date one week before your first exam. Create an event called "Begin 7-Day Taper." You've just taken the first step to becoming a Cognitive Athlete.</p>
               </MicroCommitment>

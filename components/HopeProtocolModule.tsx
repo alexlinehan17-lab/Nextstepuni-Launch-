@@ -163,51 +163,123 @@ const DopamineDial = () => {
 };
 
 const HopeMap = () => {
+  const [step, setStep] = useState(0);
   const [goal, setGoal] = useState('');
-  const [pathways, setPathways] = useState(['']);
-  const [obstacles, setObstacles] = useState(['']);
+  const [pathway, setPathway] = useState('');
+  const [obstacle, setObstacle] = useState('');
+  const [solution, setSolution] = useState('');
 
-  const addPathway = () => setPathways([...pathways, '']);
-  const addObstacle = () => setObstacles([...obstacles, '']);
+  const steps = [
+    { label: 'Goal', prompt: 'What is your goal?', hint: 'Be specific. Not "do well in Maths" but "Get a H2 in Leaving Cert Maths by June."' },
+    { label: 'Pathway', prompt: 'What is your first route to get there?', hint: 'The first concrete step or strategy. e.g., "Complete 3 past papers per week starting in January."' },
+    { label: 'Obstacle', prompt: 'What could block this pathway?', hint: 'Be honest. What is the most likely thing to derail you? e.g., "I lose motivation after a bad result."' },
+    { label: 'Solution', prompt: 'How will you get around it?', hint: 'Pre-load the fix. e.g., "If I get a bad result, I will review my mistakes and adjust my plan, not quit."' },
+  ];
 
-  const updatePathway = (index: number, value: string) => {
-    const newPathways = [...pathways];
-    newPathways[index] = value;
-    setPathways(newPathways);
-  };
-  const updateObstacle = (index: number, value: string) => {
-    const newObstacles = [...obstacles];
-    newObstacles[index] = value;
-    setObstacles(newObstacles);
-  };
+  const values = [goal, pathway, obstacle, solution];
+  const setters = [setGoal, setPathway, setObstacle, setSolution];
+  const canAdvance = values[step]?.trim().length > 0;
+  const isComplete = step === 4;
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 space-y-8">
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">My Hope Circuit Blueprint</h4>
-      <div>
-        <label className="block text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 mb-2">The Power Source (Your Goal)</label>
-        <input value={goal} onChange={(e) => setGoal(e.target.value)} placeholder="e.g., Get a H2 in Leaving Cert Maths" className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-4 focus:border-emerald-500 outline-none transition-colors" />
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <label className="block text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 mb-2">The Wiring (Pathways)</label>
-          <div className="space-y-2">
-            {pathways.map((p, i) => (
-              <input key={i} value={p} onChange={(e) => updatePathway(i, e.target.value)} placeholder={`Route ${i + 1}`} className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-3 focus:border-emerald-500 outline-none transition-colors" />
-            ))}
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Build your circuit one component at a time.</p>
+
+      {/* Progress dots */}
+      <div className="flex justify-center gap-2 mb-8">
+        {steps.map((s, i) => (
+          <div key={i} className="flex items-center gap-2">
+            <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 ${
+              i < step ? 'bg-emerald-500 text-white' : i === step && !isComplete ? 'bg-emerald-100 text-emerald-700 ring-2 ring-emerald-500' : isComplete ? 'bg-emerald-500 text-white' : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-400'
+            }`}>
+              {i < step || isComplete ? '✓' : i + 1}
+            </div>
+            {i < steps.length - 1 && (
+              <div className={`w-8 h-0.5 transition-all duration-300 ${i < step || isComplete ? 'bg-emerald-500' : 'bg-zinc-200 dark:bg-zinc-700'}`} />
+            )}
           </div>
-          <button onClick={addPathway} className="mt-2 text-xs font-bold text-emerald-600 hover:text-emerald-800">+ Add another route</button>
-        </div>
-        <div>
-          <label className="block text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 mb-2">Short Circuits (Obstacles)</label>
-          <div className="space-y-2">
-            {obstacles.map((o, i) => (
-              <input key={i} value={o} onChange={(e) => updateObstacle(i, e.target.value)} placeholder={`Potential problem ${i + 1}`} className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-3 focus:border-emerald-500 outline-none transition-colors" />
-            ))}
-          </div>
-          <button onClick={addObstacle} className="mt-2 text-xs font-bold text-emerald-600 hover:text-emerald-800">+ Add another problem</button>
-        </div>
+        ))}
       </div>
+
+      <AnimatePresence mode="wait">
+        {!isComplete ? (
+          <motion.div
+            key={step}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{ duration: 0.3 }}
+            className="space-y-4"
+          >
+            <p className="text-xs font-semibold text-emerald-600 uppercase tracking-wider">{steps[step].label}</p>
+            <p className="font-serif text-xl font-semibold text-zinc-800 dark:text-white">{steps[step].prompt}</p>
+            <p className="text-sm text-zinc-500 dark:text-zinc-400">{steps[step].hint}</p>
+            <input
+              value={values[step]}
+              onChange={(e) => setters[step](e.target.value)}
+              placeholder="Type your answer here..."
+              className="w-full bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-700 rounded-xl p-4 focus:border-emerald-500 outline-none transition-colors text-zinc-800 dark:text-white"
+              autoFocus
+            />
+            <div className="flex justify-between items-center pt-2">
+              <button
+                onClick={() => setStep(step - 1)}
+                className={`text-sm font-medium text-zinc-400 hover:text-zinc-600 transition-colors ${step === 0 ? 'invisible' : ''}`}
+              >
+                Back
+              </button>
+              <button
+                onClick={() => setStep(step + 1)}
+                disabled={!canAdvance}
+                className={`px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${
+                  canAdvance
+                    ? 'bg-emerald-500 text-white hover:bg-emerald-600 shadow-lg shadow-emerald-500/20'
+                    : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-400 cursor-not-allowed'
+                }`}
+              >
+                {step === 3 ? 'Complete Blueprint' : 'Next'}
+              </button>
+            </div>
+          </motion.div>
+        ) : (
+          <motion.div
+            key="complete"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4 }}
+            className="space-y-4"
+          >
+            <div className="bg-zinc-900 dark:bg-zinc-900 rounded-xl p-6 space-y-4 text-white">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center"><Zap size={16} /></div>
+                <div><p className="text-[10px] uppercase tracking-wider text-emerald-400 font-semibold">The Power Source</p><p className="font-semibold">{goal}</p></div>
+              </div>
+              <div className="w-0.5 h-4 bg-zinc-700 ml-4" />
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center"><Waypoints size={16} /></div>
+                <div><p className="text-[10px] uppercase tracking-wider text-emerald-400 font-semibold">The Wiring</p><p className="font-semibold">{pathway}</p></div>
+              </div>
+              <div className="w-0.5 h-4 bg-zinc-700 ml-4" />
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-rose-500 flex items-center justify-center"><Shield size={16} /></div>
+                <div><p className="text-[10px] uppercase tracking-wider text-rose-400 font-semibold">Short Circuit</p><p className="font-semibold">{obstacle}</p></div>
+              </div>
+              <div className="w-0.5 h-4 bg-zinc-700 ml-4" />
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center"><Activity size={16} /></div>
+                <div><p className="text-[10px] uppercase tracking-wider text-emerald-400 font-semibold">The Fix</p><p className="font-semibold">{solution}</p></div>
+              </div>
+            </div>
+            <button
+              onClick={() => { setStep(0); setGoal(''); setPathway(''); setObstacle(''); setSolution(''); }}
+              className="w-full text-center text-sm font-medium text-zinc-400 hover:text-zinc-600 transition-colors pt-2"
+            >
+              Start a new blueprint
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
