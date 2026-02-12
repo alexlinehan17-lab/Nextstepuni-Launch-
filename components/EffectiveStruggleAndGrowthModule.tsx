@@ -181,6 +181,37 @@ const StairsEscalator = () => {
     );
 };
 
+const IllusionOfCompetenceChart = () => {
+    const [view, setView] = useState<'prediction' | 'reality'>('prediction');
+    const ssssData = { prediction: 90, reality: 40 };
+    const stttData = { prediction: 40, reality: 61 };
+
+    return (
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Great Deception</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Data from Roediger & Karpicke (2006) reveals the gap between what *feels* effective and what *is* effective.</p>
+            <div className="grid grid-cols-2 gap-4 mb-8">
+                <div className="text-center">
+                    <h5 className="font-bold mb-2">Passive Rereading (SSSS)</h5>
+                    <div className="h-48 w-full bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-end">
+                        <motion.div className="w-full bg-teal-400 rounded-t-lg" initial={{height:0}} animate={{height: `${view === 'prediction' ? ssssData.prediction : ssssData.reality}%`}} transition={{type: 'spring', stiffness: 100}}/>
+                    </div>
+                </div>
+                <div className="text-center">
+                     <h5 className="font-bold mb-2">Active Recall (STTT)</h5>
+                     <div className="h-48 w-full bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-end">
+                        <motion.div className="w-full bg-indigo-400 rounded-t-lg" initial={{height:0}} animate={{height: `${view === 'prediction' ? stttData.prediction : stttData.reality}%`}} transition={{type: 'spring', stiffness: 100}}/>
+                    </div>
+                </div>
+            </div>
+            <div className="flex justify-center gap-2 p-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">
+                <button onClick={() => setView('prediction')} className={`px-4 py-2 text-xs font-bold rounded-full ${view === 'prediction' ? 'bg-white shadow' : ''}`}>Student Prediction (JOL)</button>
+                <button onClick={() => setView('reality')} className={`px-4 py-2 text-xs font-bold rounded-full ${view === 'reality' ? 'bg-white shadow' : ''}`}>Actual Test Results (1 Week Later)</button>
+            </div>
+        </div>
+    );
+};
+
 const ScenarioDiagnosis = () => {
   const scenarios = [
     {
@@ -385,6 +416,8 @@ const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress:
               <p>Our intuition tells us that learning should feel easy. We think that if a teacher explains something perfectly and we understand it without any friction, that's a sign of great learning. This is the <Highlight description="The mistaken belief that learning which feels fluent and easy is effective. In reality, deep, long-term learning requires effortful processing and cognitive friction." theme={theme}>Intuitive Fallacy of Ease</Highlight>, and it's the single biggest trap students fall into.</p>
               <p>The science is clear: our subjective feeling of learning is often the exact opposite of what's actually happening in our brains. Easy learning feels good but is forgotten quickly. Hard, effortful learning feels bad but sticks. It's the difference between taking an escalator and taking the stairs. Only one of them makes you stronger.</p>
               <StairsEscalator />
+              <p>This isn't just a feeling — it's a measurable phenomenon. In a landmark study, students who passively re-read material predicted they'd remember 90% of it. Students who used active recall predicted only 40%. But when tested a week later, the passive group scored just 40%, while the active group scored 61%. The strategy that felt worse was dramatically more effective. Toggle the chart below to see the shocking gap between confidence and reality.</p>
+              <IllusionOfCompetenceChart />
             </ReadingSection>
           )}
            {activeSection === 1 && (
@@ -407,6 +440,8 @@ const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress:
             <ReadingSection title="The Engine of Memory." eyebrow="Step 4" icon={Puzzle} theme={theme}>
               <p>So why is the "sweet spot" so effortful? Because of how memory works. Psychologist Robert Bjork discovered that memory has two strengths: <Highlight description="How easily you can recall a piece of information right now. It's high right after you study but fades quickly." theme={theme}>Retrieval Strength</Highlight> (how easy it is to access now) and <Highlight description="How deeply a memory is embedded in your brain. This only increases through effortful recall and is what we mean by 'learning'." theme={theme}>Storage Strength</Highlight> (how well you've actually learned it).</p>
               <p>Here's the paradox: your brain only increases Storage Strength when Retrieval Strength is *low*. In other words, you have to forget something a little bit before your brain will put in the effort to store it properly for the long term. This is why re-reading your notes feels easy (high retrieval strength) but does nothing for long-term memory. You need the "desirable difficulty" of struggling to remember.</p>
+              <p>The definitive proof of this came from <Highlight description="A 2006 study by Henry Roediger and Jeffrey Karpicke that demonstrated the dramatic superiority of retrieval practice over passive rereading for long-term retention, even when students themselves predicted the opposite." theme={theme}>Roediger & Karpicke</Highlight> (2006), who ran one of the most cited experiments in learning science. They had two groups of students study a text passage. One group re-read it four times (SSSS). The other group read it once and then practiced recalling it three times (STTT). After five minutes, the re-readers performed slightly better — confirming that passive review works fine in the very short term. But after one week, the results flipped dramatically: the re-readers had forgotten more than half of the material, while the active recall group retained significantly more. This is the <Highlight description="The finding that the act of retrieving information from memory strengthens that memory far more than simply re-studying the information. Testing is not just an assessment — it is a powerful learning event." theme={theme}>Testing Effect</Highlight> in action.</p>
+              <p>What makes this study so important is that the re-readers were also more *confident* in their learning. They predicted higher scores. They felt like they knew the material better. But feeling and reality diverged completely. The students who struggled through active recall — who felt less confident, who made mistakes, who found the process uncomfortable — were the ones who actually learned. This is the engine of memory: the struggle to retrieve is the signal that tells your brain "this matters, store it properly."</p>
             </ReadingSection>
           )}
           {activeSection === 4 && (
@@ -419,8 +454,9 @@ const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress:
             <ReadingSection title="Recalibrate Your Dashboard." eyebrow="Step 6" icon={BarChartHorizontal} theme={theme}>
               <p>Your brain is wired to conserve energy. It prefers the escalator to the stairs. This means your internal "dashboard"—your feeling about how well you're learning—is fundamentally unreliable. You have to consciously recalibrate it.</p>
               <p>From now on, when learning feels slow, frustrating, and difficult, that's not a sign you should stop. It's a sign that you're in the sweet spot. It's the sensation of your brain rewiring itself. You're not "confused"; you're building schema. You're not "slow"; you're building storage strength. If it feels like a struggle, it's working.</p>
+              <p>Here's a powerful bonus: embracing this kind of regular, low-stakes self-testing doesn't just improve your memory — it also dramatically reduces exam anxiety. This is the Anxiety Paradox. Anxiety often comes from uncertainty: you *think* you know the material, but you've never actually tested that belief until the high-stakes exam. Frequent self-quizzing is a process of <Highlight description="The act of accurately judging your own level of knowledge. Low-stakes testing calibrates your metacognition, eliminating the surprise and anxiety of a high-stakes exam because you already know exactly what you know and what you don't." theme={theme}>Metacognitive Calibration</Highlight> — it strips away the Illusion of Competence and replaces it with honest self-knowledge. When you test yourself regularly, you walk into the exam knowing exactly what you know and what you don't. There are no surprises, no panic. You've already faced the struggle in a safe environment.</p>
               <MicroCommitment theme={theme}>
-                <p>The next time you struggle with a problem, say this out loud: "This is not failure. This is the feeling of my brain getting stronger."</p>
+                <p>Commit to the <strong>10/20 Rule</strong>: for every 30-minute study session, spend only 10 minutes reading or reviewing the material, and then spend 20 minutes testing yourself with the book closed. Write everything you can remember, do practice questions, or explain the topic out loud. This single shift — from mostly reading to mostly recalling — will transform your retention and eliminate exam-day surprises. Start with your very next study session.</p>
               </MicroCommitment>
             </ReadingSection>
           )}

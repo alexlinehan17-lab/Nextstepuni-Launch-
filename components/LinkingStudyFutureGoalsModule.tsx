@@ -7,7 +7,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import {
-  Link2, Brain, Wand2, Gamepad2, Briefcase, DraftingCompass, Wind
+  Link2, Brain, Wand2, Gamepad2, Briefcase, DraftingCompass, Wind, GraduationCap
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { roseTheme } from '../moduleThemes';
@@ -201,7 +201,8 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
     { id: 'dream-to-plan', title: 'From Dream to Plan', eyebrow: '04 // Mental Contrasting', icon: Gamepad2 },
     { id: 'becoming-the-author', title: 'Becoming the Author', eyebrow: '05 // Narrative & Autonomy', icon: Brain },
     { id: 'career-training', title: 'Curriculum as Career Training', eyebrow: '06 // Reframing the Work', icon: Briefcase },
-    { id: 'purpose-protocol', title: 'The Purpose Protocol', eyebrow: '07 // The Action Plan', icon: Link2 },
+    { id: 'structural-levers', title: 'Hacking the System', eyebrow: '07 // The Structural Levers', icon: GraduationCap },
+    { id: 'purpose-protocol', title: 'The Purpose Protocol', eyebrow: '08 // The Protocol', icon: Link2 },
   ];
 
   return (
@@ -224,6 +225,7 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
            {activeSection === 2 && (
             <ReadingSection title="The 'Writing Cure'." eyebrow="Step 3" icon={Wand2} theme={theme}>
               <p>How do you forge that link? One of the most robust interventions in psychology is the <Highlight description="A simple, evidence-based exercise where students write briefly about how their schoolwork is relevant to their own lives. It is proven to boost interest and grades, especially for struggling students." theme={theme}>Utility Value Intervention</Highlight>. The act of articulating the connection yourself forces your brain to "internalize" the value. You move from "the teacher says this is important" to "I see how this helps me."</p>
+              <p>There's a complementary writing technique that works as a psychological shield: <Highlight description="A brief writing exercise about your core personal values (e.g., family, creativity, independence). It has been proven to buffer the brain against stress and raise grades, particularly in students from low-SES backgrounds." theme={theme}>Self-Affirmation Journaling</Highlight>. By spending a few minutes writing about your deepest personal values--family, creativity, helping others--you create a buffer against <Highlight description="The anxiety that arises from the fear of confirming a negative stereotype about your social group, which can suppress academic performance." theme={theme}>Stereotype Threat</Highlight>, the fear that "people like me don't succeed here." Research shows this simple exercise narrows achievement gaps by reminding students that their identity is larger than any single exam or grade.</p>
               <MicroCommitment theme={theme}>
                 <p>Pick one subject you're studying this week. Now, think of one specific way it could be useful to (a) you in the future, (b) a family member, or (c) solving a problem you care about. You've just run your first Utility Value Intervention.</p>
               </MicroCommitment>
@@ -242,6 +244,8 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
             <ReadingSection title="Becoming the Author." eyebrow="Step 5" icon={Brain} theme={theme}>
                 <p>Feeling a lack of purpose often comes from a lack of control. <Highlight description="A psychological theory that states we have three core needs: Autonomy (control), Competence (capability), and Relatedness (connection)." theme={theme}>Self-Determination Theory (SDT)</Highlight> shows that we are most motivated when we feel we have <Highlight description="The feeling of being in control of your own actions and life. It's about acting from a sense of choice, not coercion." theme={theme}>Autonomy</Highlight>. The Leaving Cert can feel like it strips this away.</p>
                 <p>You can reclaim your autonomy through <Highlight description="A technique where you slightly modify how you approach your schoolwork to better align it with your personal strengths and interests." theme={theme}>Course Crafting</Highlight>. This isn't about changing the assignment, but about changing your *approach* to it. If you have to write a History essay but you love art, write about the history of art. This act of choice transforms the motivation from "controlled" (have to) to "autonomous" (want to).</p>
+                <p>There's also a deeper identity mechanism at play. <Highlight description="A theory stating that we are motivated to act in ways that are congruent with our identities. When a task feels 'like me,' difficulty is interpreted as importance; when it feels alien, difficulty signals impossibility." theme={theme}>Identity-Based Motivation (IBM)</Highlight> theory explains how your sense of self determines whether struggle feels validating or crushing. When a task feels congruent with your identity--"I'm the kind of person who does this"--difficulty is read as a signal of <strong>importance</strong>. ("This is hard, so it must be worth it.") But when a task feels alien, the same difficulty triggers the <Highlight description="A mental shortcut where the brain interprets difficulty on an identity-incongruent task as proof that it's impossible, rather than proof that it matters." theme={theme}>"Impossibility Heuristic"</Highlight>. ("This is hard, so it's not for people like me.")</p>
+                <p>This is why Course Crafting and narrative autonomy matter so much: they shift the identity frame. When you author your own approach, the task starts to feel "like you," and the very struggle that once felt like a wall becomes evidence that you're on a path worth walking.</p>
             </ReadingSection>
           )}
            {activeSection === 5 && (
@@ -252,7 +256,18 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
             </ReadingSection>
           )}
           {activeSection === 6 && (
-            <ReadingSection title="The Purpose Protocol." eyebrow="Step 7" icon={Link2} theme={theme}>
+            <ReadingSection title="Hacking the System." eyebrow="Step 7" icon={GraduationCap} theme={theme}>
+              <p>The Irish education system has real structural barriers--the "grinds" industry, hidden costs, information asymmetry. But it also has powerful structural levers designed specifically to level the playing field. Understanding these is not optional; it's a critical part of your strategy. These are not handouts. They are tools, and knowing how to use them is a skill in itself.</p>
+              <p>The <Highlight description="Higher Education Access Route: A scheme that offers reduced-points places at third level to students from socio-economically disadvantaged backgrounds. Eligibility is based on indicators like family income, school DEIS status, and parental education." theme={theme}>HEAR (Higher Education Access Route)</Highlight> scheme offers reduced CAO points for college entry to students from socio-economically disadvantaged backgrounds. Eligibility is assessed on indicators like family income, whether your school is DEIS, and parental education levels. If you qualify, this can mean the difference of 30-50 points on your required score--a game-changer. Applications open in the autumn of 6th year through the CAO, and missing the deadline means missing the opportunity entirely.</p>
+              <p>The <Highlight description="Disability Access Route to Education: A scheme that supports students whose education has been significantly impacted by a disability. It provides both reduced points and additional college supports." theme={theme}>DARE (Disability Access Route to Education)</Highlight> scheme is the parallel route for students whose education has been impacted by a disability--whether physical, sensory, learning (like dyslexia or ADHD), or psychological. DARE doesn't just offer reduced points; it also connects you with in-college supports like assistive technology, exam accommodations, and dedicated advisors.</p>
+              <p>Finally, the <Highlight description="Student Universal Support Ireland: The main financial support scheme for third-level education in Ireland. It covers fees and provides maintenance grants based on household income and distance from college." theme={theme}>SUSI (Student Universal Support Ireland)</Highlight> grant is the primary financial lifeline. It covers tuition fees and provides a maintenance grant for living costs. Crucially, the maintenance grant has distance tiers: if you live more than 30km from your college, you qualify for the higher "non-adjacent" rate, which can mean thousands of euro in additional support. Check the distance from your home to your course--not the college campus generally, but the specific building where your course is based.</p>
+              <MicroCommitment theme={theme}>
+                <p>Do a quick audit right now. (1) Does your family income fall under the HEAR thresholds? Is your school a DEIS school? (2) Do you have a diagnosed disability that has impacted your education? (3) How far is your home from your target college? If any answer is "yes" or "over 30km," you have a structural lever to pull. Write down which schemes to research this week.</p>
+              </MicroCommitment>
+            </ReadingSection>
+          )}
+          {activeSection === 7 && (
+            <ReadingSection title="The Purpose Protocol." eyebrow="Step 8" icon={Link2} theme={theme}>
               <p>You now have the scientific toolkit to re-wire the connection between your present effort and your future self. This is the <strong>Purpose Protocol</strong>, a 5-phase plan for building sustainable motivation.</p>
               <p><strong>Phase 1: The Audit.</strong> For each subject, ask "Why am I doing this?" If the only answer is "points," that's a friction point. Apply the Utility Value Writing exercise. <strong>Phase 2: The Vision.</strong> Spend 15 minutes writing a detailed description of your "Best Possible Self" 5 years from now. Then, use Mental Contrasting to pair your vision with your biggest obstacle. <strong>Phase 3: The Craft.</strong> Find one assignment this week and "course craft" it to make it your own. <strong>Phase 4: The Habit.</strong> Use "Tiny Habits" to make starting the work so small it's impossible to fail. <strong>Phase 5: Re-Authoring.</strong> If you feel stuck, externalize the problem ("The stress is visiting me") and map your skills from other areas (like gaming) to your schoolwork.</p>
               <MicroCommitment theme={theme}>

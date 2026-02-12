@@ -198,9 +198,8 @@ export const ARCHETYPES: Record<string, Archetype> = {
 
 export const STAT_TO_MODULES: Record<StatKey, { moduleId: string; moduleTitle: string }[]> = {
   energy: [
-    { moduleId: 'cognitive-baseline-protocol', moduleTitle: 'The Cognitive Baseline Protocol' },
-    { moduleId: 'game-day-protocol', moduleTitle: "Game Day: The Athlete's Protocol" },
     { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow' },
+    { moduleId: 'game-day-protocol', moduleTitle: "Game Day: The Athlete's Protocol" },
   ],
   academicCap: [
     { moduleId: 'mastering-active-recall-protocol', moduleTitle: 'Mastering Active Recall' },
@@ -517,7 +516,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Set a boundary: No studying after 8pm. Use evenings for friends and rest.",
         effects: { energy: 15, socialSupport: 10, academicCap: -5 },
         nextSceneId: 'PART_TIME_JOB',
-        moduleLink: { moduleId: 'cognitive-baseline-protocol', moduleTitle: 'The Cognitive Baseline Protocol', insight: 'Your brain consolidates learning during rest and sleep, not during extra cramming.' },
+        moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'Your brain consolidates learning during rest and sleep, not during extra cramming.' },
       },
       {
         text: "Double down. The exams won't wait. Sacrifice everything for study.",
@@ -617,7 +616,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Take the shift. The money is too important right now.",
         effects: { energy: -20, academicCap: -10 },
         nextSceneId: 'JOB_CONSEQUENCES',
-        moduleLink: { moduleId: 'connecting-education-to-goals-protocol', moduleTitle: 'Connecting Education to Goals', insight: 'Short-term financial gains can undermine long-term outcomes. Connect today\'s choices to your future self.' },
+        moduleLink: { moduleId: 'linking-study-future-goals-protocol', moduleTitle: 'Linking Study to Future Goals', insight: 'Short-term financial gains can undermine long-term outcomes. Connect today\'s choices to your future self.' },
       },
       {
         text: "Politely decline. 'The Leaving' has to come first.",
@@ -713,7 +712,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Push Through: Force yourself to study 4 hours tonight with caffeine.",
         effects: { energy: -20, academicCap: 5, resilience: -15 },
         nextSceneId: 'ACUTE_EXHAUSTION',
-        moduleLink: { moduleId: 'cognitive-baseline-protocol', moduleTitle: 'The Cognitive Baseline Protocol', insight: 'Below a critical sleep threshold, your brain literally cannot form new long-term memories.' },
+        moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'Below a critical sleep threshold, your brain literally cannot form new long-term memories.' },
       },
     ],
   },
@@ -1071,7 +1070,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Use the extra time for rest. Your energy reserves need rebuilding.",
         effects: { energy: 20, resilience: 10 },
         nextSceneId: 'MOCKS_LOOM',
-        moduleLink: { moduleId: 'cognitive-baseline-protocol', moduleTitle: 'The Cognitive Baseline Protocol', insight: 'Rest is not laziness — it\'s a strategic investment in your cognitive baseline.' },
+        moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'Rest is not laziness — it\'s a strategic investment in your cognitive baseline.' },
       },
     ],
   },
@@ -1169,7 +1168,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Channel the calm into a productive morning study session.",
         effects: { academicCap: 10, energy: 5 },
         nextSceneId: 'PEER_SUPPORT',
-        moduleLink: { moduleId: 'cognitive-baseline-protocol', moduleTitle: 'The Cognitive Baseline Protocol', insight: 'Post-anxiety calm creates a window of heightened focus. Use it strategically.' },
+        moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'Post-anxiety calm creates a window of heightened focus. Use it strategically.' },
       },
     ],
   },

@@ -123,7 +123,7 @@ const COURSE_DEFINITIONS = [
   },
   {
     id: 'illusion-of-competence-protocol',
-    category: 'architecture-mindset',
+    category: 'learning-cheat-codes',
     title: 'Overcoming Illusions of Competence',
     subtitle: 'The Fluency Illusion Protocol',
     description: 'Deconstruct the cognitive biases that trick you into feeling confident when you\'re unprepared, and learn the science-backed strategies to build real, durable knowledge.',
@@ -156,15 +156,6 @@ const COURSE_DEFINITIONS = [
     description: 'Learn the neurobiology of exam stress and master the "top-down" and "bottom-up" strategies to transform anxiety into a high-performance state.',
     sectionsCount: 8,
     tags: ['Performance Psych', 'Resilience'],
-  },
-  {
-    id: 'connecting-education-to-goals-protocol',
-    category: 'architecture-mindset',
-    title: 'Connecting Education to Goals',
-    subtitle: 'The Purpose Protocol',
-    description: 'Synthesizing research on Future Time Perspective and Self-Determination Theory to forge a powerful, resilient link between today\'s effort and tomorrow\'s success.',
-    sectionsCount: 6,
-    tags: ['Motivation', 'Mindset'],
   },
   {
     id: 'neuroplasticity-protocol',
@@ -213,7 +204,7 @@ const COURSE_DEFINITIONS = [
   },
   {
     id: 'autodidact-engine-protocol',
-    category: 'science-growth',
+    category: 'learning-cheat-codes',
     title: 'Using Feedback Loops',
     subtitle: 'The Autodidact\'s Engine',
     description: 'Become your own teacher by learning to build autonomous feedback loops. This is the science of Deliberate Practice without a coach.',
@@ -230,15 +221,6 @@ const COURSE_DEFINITIONS = [
     tags: ['Mindset', 'Resilience'],
   },
   {
-    id: 'cognitive-baseline-protocol',
-    category: 'science-growth',
-    title: 'The Cognitive Baseline Protocol',
-    subtitle: 'Your Brain\'s Fuel & Maintenance',
-    description: 'Your brain is a high-performance machine. This module provides the user manual for its biological needs: sleep, nutrition, and hydration. Learn the non-negotiable minimums for high-level thinking.',
-    sectionsCount: 6,
-    tags: ['Brain Science', 'Performance Psych'],
-  },
-  {
     id: 'controllable-variables-protocol',
     category: 'science-growth',
     title: 'Using Controllable Variables to Grow',
@@ -249,7 +231,7 @@ const COURSE_DEFINITIONS = [
   },
   {
     id: 'reframing-progress-protocol',
-    category: 'science-growth',
+    category: 'architecture-mindset',
     title: 'Reframing Progress',
     subtitle: 'The Outcome-Based Protocol',
     description: 'Shift from measuring "hours logged" to "wins secured." This module gives you the project management tools to study smarter, not just harder.',
@@ -262,17 +244,8 @@ const COURSE_DEFINITIONS = [
     title: 'Linking Study to Future Goals',
     subtitle: 'The Architecture of Purpose',
     description: 'Deconstruct the "why bother?" problem and learn the science of linking today\'s effort to tomorrow\'s success. This is the antidote to burnout.',
-    sectionsCount: 7,
+    sectionsCount: 8,
     tags: ['Motivation', 'Productivity'],
-  },
-  {
-    id: 'achieving-effective-learning-outcomes-protocol',
-    category: 'science-growth',
-    title: 'Achieving Effective Learning Outcomes',
-    subtitle: 'The Cognitive Architecture of Friction',
-    description: 'Synthesizing key learning theories to define the \'sweet spot\' of difficulty where real learning happens. Re-calibrate your internal dashboard for what growth feels like.',
-    sectionsCount: 6,
-    tags: ['Learning Strategy', 'Brain Science'],
   },
   {
     id: 'growth-mindset-protocol',
@@ -465,7 +438,7 @@ const COURSE_DEFINITIONS = [
   },
   {
     id: 'mastering-the-humanities-protocol',
-    category: 'exam-zone',
+    category: 'subject-specific-science',
     title: 'Mastering the Humanities',
     subtitle: 'The Grade Optimisation Protocol',
     description: 'Deconstruct the "hidden curriculum" of History, Geography, and Politics & Society to transform your strategic application and maximize your grade.',
@@ -474,7 +447,7 @@ const COURSE_DEFINITIONS = [
   },
   {
     id: 'digital-distraction-protocol',
-    category: 'exam-zone',
+    category: 'learning-cheat-codes',
     title: 'Creating Barriers for Digital Distractions',
     subtitle: 'The Cognitive Sovereignty Protocol',
     description: 'A blueprint for reclaiming your focus from the attention economy, using neuroscience-backed hardware, software, and behavioral barriers.',

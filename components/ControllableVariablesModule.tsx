@@ -7,7 +7,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  Cpu, Moon, Coffee, Zap, ClipboardCheck, CheckCircle2
+  Cpu, Moon, Coffee, Zap, Repeat, ClipboardCheck, CheckCircle2
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { slateTheme } from '../moduleThemes';
@@ -256,7 +256,8 @@ const ControllableVariablesModule: React.FC<{ onBack: () => void; progress: Modu
     { id: 'sleep', title: 'The Save Button: Sleep', eyebrow: '02 // The Foundation', icon: Moon },
     { id: 'nutrition', title: 'The Fuel Supply: Nutrition', eyebrow: '03 // The Energy', icon: Coffee },
     { id: 'exercise', title: 'The Upgrade: Exercise', eyebrow: '04 // The Catalyst', icon: Zap },
-    { id: 'blueprint', title: 'The High-Performance Blueprint', eyebrow: '05 // The Plan', icon: ClipboardCheck },
+    { id: 'vicious-cycle', title: 'The Vicious Cycle', eyebrow: '05 // The Feedback Loop', icon: Repeat },
+    { id: 'blueprint', title: 'The High-Performance Blueprint', eyebrow: '06 // Your Protocol', icon: ClipboardCheck },
   ];
 
   return (
@@ -274,6 +275,7 @@ const ControllableVariablesModule: React.FC<{ onBack: () => void; progress: Modu
           {activeSection === 0 && (
             <ReadingSection title="The Performance Engine." eyebrow="Step 1" icon={Cpu} theme={theme}>
               <p>Students often treat their brains like a disembodied intellect, ignoring the fact that learning, memory, and focus are biological processes. Your brain is not a computer; it's a high-performance engine. Its output is strictly constrained by its inputs and maintenance schedule. The emerging consensus from neuroscience is that your "capacity to learn" is not a fixed trait but a dynamic state that fluctuates based on three core physiological pillars: <Highlight description="The 'save button' for your memory, where learning is consolidated." theme={theme}>Sleep</Highlight>, <Highlight description="The fuel supply for your neurons, determining your ability to focus." theme={theme}>Nutrition</Highlight>, and <Highlight description="The upgrade mechanism that physically enhances your brain's ability to learn." theme={theme}>Exercise</Highlight>.</p>
+              <p>At the centre of this engine is your <Highlight description="The 'CEO' of your brain, located behind your forehead. It's responsible for working memory, inhibitory control, and complex decision-making. It's the last part of the brain to fully mature." theme={theme}>Prefrontal Cortex (PFC)</Highlight>--the academic command centre that allows you to hold a complex Maths problem in your head or structure an English essay. During your teenage years, this area is undergoing a massive renovation, making it incredibly powerful but also uniquely vulnerable. When deprived of sleep or stable energy, your brain performs a ruthless triage, functionally decoupling the rational PFC from the emotional amygdala--a process called <Highlight description="The breakdown of communication between the rational prefrontal cortex and the emotional amygdala caused by sleep or energy deprivation. This leaves you neurologically predisposed to anxiety and poor decision-making." theme={theme}>Neural Decoupling</Highlight>. You're not just tired; your hardware is compromised.</p>
               <p>This module provides a scientifically grounded blueprint for the Leaving Cert student. It moves beyond generic advice to explain the mechanisms of memory and focus, providing actionable protocols. The strategic shift is from "time management" to <Highlight description="The superior strategy of focusing on the biological inputs (sleep, food, exercise) that determine the quality and quantity of your available mental energy." theme={theme}>energy management</Highlight>.</p>
             </ReadingSection>
           )}
@@ -281,6 +283,7 @@ const ControllableVariablesModule: React.FC<{ onBack: () => void; progress: Modu
             <ReadingSection title="The Save Button: Sleep." eyebrow="Step 2" icon={Moon} theme={theme}>
               <p>Learning is a two-stage process. The first stage, <Highlight description="The initial process of taking in new information when you are awake. These memory traces are fragile." theme={theme}>encoding</Highlight>, happens when you study. But this new information is fragile, temporarily stored in your brain's 'RAM'--the <Highlight description="A seahorse-shaped structure in the brain that acts as a temporary buffer for new memories." theme={theme}>hippocampus</Highlight>. Without the second stage, <Highlight description="The process by which fragile, short-term memories are stabilized and transferred to the neocortex for long-term storage. This happens primarily during sleep." theme={theme}>consolidation</Highlight>, that learning is erased. Sleep is the "save button." A student who studies for five hours but sleeps for five has learned less than a student who studies for three and sleeps for eight.</p>
               <p>Your brain cycles through different types of sleep. <Highlight description="Deep, non-rapid eye movement sleep that is critical for consolidating declarative memories (facts, dates, definitions)." theme={theme}>Slow-Wave Sleep (SWS)</Highlight>, dominant in the first half of the night, is for saving facts. <Highlight description="A stage of sleep characterized by vivid dreams and crucial for procedural memory (skills), creative problem-solving, and emotional regulation." theme={theme}>REM Sleep</Highlight>, dominant in the second half, is for making connections and solving problems. Cutting sleep short disproportionately sacrifices REM sleep, killing your creativity and problem-solving ability for the next day.</p>
+              <p>The data on sleep deprivation is sobering. After just one week of 5-hour nights, students' working memory accuracy drops by a catastrophic <Highlight description="A landmark sleep study finding: restricting sleep to 5 hours per night for one week causes a 17% drop in working memory accuracy--enough to turn an A into a C." theme={theme}>17%</Highlight>--enough to turn an A into a C. Even more striking is the <Highlight description="The scientifically established fact that after 17-19 hours of continuous wakefulness, your cognitive impairment is equivalent to having a Blood Alcohol Concentration (BAC) of 0.05%." theme={theme}>Intoxication Equivalence</Highlight>: after 17-19 hours awake, your cognitive impairment equals a Blood Alcohol Concentration of 0.05%. If you wake up at 6 AM, by 11 PM you are functionally as impaired as someone who is legally drunk. And "weekend catch-up" is a myth--two nights of recovery sleep are not enough to restore your executive functions.</p>
             </ReadingSection>
           )}
           {activeSection === 2 && (
@@ -297,12 +300,18 @@ const ControllableVariablesModule: React.FC<{ onBack: () => void; progress: Modu
             </ReadingSection>
           )}
           {activeSection === 4 && (
-            <ReadingSection title="The High-Performance Blueprint." eyebrow="Step 5" icon={ClipboardCheck} theme={theme}>
+            <ReadingSection title="The Vicious Cycle." eyebrow="Step 5" icon={Repeat} theme={theme}>
+              <p>Sleep and nutrition are not separate issues. They are locked in a vicious feedback loop. Sleep loss disrupts the hormones that regulate hunger--specifically <Highlight description="Sleep deprivation suppresses leptin (the 'I'm full' hormone) and elevates ghrelin (the 'I'm hungry' hormone), making you biologically crave high-calorie, high-carbohydrate foods." theme={theme}>leptin and ghrelin</Highlight>--making you biologically crave high-calorie, high-carbohydrate foods. You wake up tired, so you're primed to choose the sugary cereal over the eggs.</p>
+              <p>That high-sugar food then disrupts your sleep. The blood glucose fluctuations can interfere with <Highlight description="Deep, non-rapid eye movement sleep that is critical for consolidating declarative memories (facts, dates, definitions). Disrupted by blood sugar instability." theme={theme}>Slow-Wave Sleep (SWS)</Highlight>, the deep sleep stage crucial for memory consolidation. So, poor sleep leads to poor diet, which leads to even poorer sleep. Over a semester, this cycle cumulatively erodes your brain's executive function. Recognising this loop is the first step to breaking it--and that starts with stabilising either end: better sleep hygiene or a low-GI breakfast.</p>
+            </ReadingSection>
+          )}
+          {activeSection === 5 && (
+            <ReadingSection title="The High-Performance Blueprint." eyebrow="Step 6" icon={ClipboardCheck} theme={theme}>
               <p>By integrating the science of this "Cognitive Triad," we can construct an actionable blueprint for the Leaving Cert student. This approach shifts the focus from the flawed model of "time management" to the superior model of "energy management."</p>
               <p>The following checklist is based on an optimized daily routine for a non-school day. It is designed to align with your natural adolescent circadian rhythms, maximize BDNF production, and ensure proper memory consolidation. This is not an aspirational goal; it is the evidence-based protocol for high performance.</p>
               <HighPerformanceChecklist />
               <MicroCommitment theme={theme}>
-                <p>Pick ONE item from this checklist that you are not currently doing. Just one. For the next seven days, commit to implementing that single change. Notice the effect it has on your energy and focus.</p>
+                <p><strong>The Breakfast Experiment:</strong> Try two mornings with different breakfasts. <strong>Day 1:</strong> Eat a high-sugar breakfast (sugary cereal, fruit juice, white toast). At 10:30 AM, rate your energy and focus from 1-10. <strong>Day 2:</strong> Eat a low-sugar, high-protein breakfast (porridge, eggs, yogurt). At 10:30 AM, rate your energy and focus from 1-10. Compare the results--feel the data for yourself.</p>
               </MicroCommitment>
             </ReadingSection>
           )}
