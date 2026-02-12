@@ -62,4 +62,9 @@ export const moduleComponents: { [key: string]: ModuleComponent } = {
   'mastering-the-creatives-protocol': lazy(() => import('./components/MasteringTheCreativesModule')),
   'points-optimization-protocol': lazy(() => import('./components/PointsOptimizationModule')),
   'learning-radar-protocol': lazy(() => import('./components/TheLearningRadarModule')),
+  'note-taking-paradox-protocol': lazy(() => import('./components/TheNoteTakingParadoxModule')),
+  'teaching-effect-protocol': lazy(() => import('./components/TheTeachingEffectModule')),
+  'cognitive-load-protocol': lazy(() => import('./components/TheCognitiveLoadModule')),
+  'implementation-protocol': lazy(() => import('./components/TheImplementationProtocolModule')),
+  'context-effect-protocol': lazy(() => import('./components/TheContextEffectModule')),
 };
