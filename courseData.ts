@@ -446,6 +446,15 @@ const COURSE_DEFINITIONS = [
     tags: ['Productivity', 'Performance Psych'],
   },
   {
+    id: 'learning-radar-protocol',
+    category: 'learning-cheat-codes',
+    title: 'The Learning Radar',
+    subtitle: 'The Metacognitive Calibration Protocol',
+    description: 'Discover why most students can\'t accurately judge what they know — and learn the trainable skill of metacognitive calibration backed by Kornell, Bjork, Dunning, and Kruger.',
+    sectionsCount: 6,
+    tags: ['Learning Strategy', 'Brain Science'],
+  },
+  {
     id: 'points-optimization-protocol',
     category: 'exam-zone',
     title: 'The 625 Blueprint',

@@ -61,4 +61,5 @@ export const moduleComponents: { [key: string]: ModuleComponent } = {
   'digital-distraction-protocol': lazy(() => import('./components/DigitalDistractionModule')),
   'mastering-the-creatives-protocol': lazy(() => import('./components/MasteringTheCreativesModule')),
   'points-optimization-protocol': lazy(() => import('./components/PointsOptimizationModule')),
+  'learning-radar-protocol': lazy(() => import('./components/TheLearningRadarModule')),
 };
