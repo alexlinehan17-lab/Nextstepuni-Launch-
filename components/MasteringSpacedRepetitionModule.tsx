@@ -286,6 +286,164 @@ const ForgettingCurveVisualizer = () => {
 };
 
 
+const RetentionCurveComparison = () => {
+    const [revealed, setRevealed] = useState(false);
+
+    const W = 440, H = 260;
+    const padL = 8, padR = 8, padT = 28, padB = 44;
+    const chartW = W - padL - padR, chartH = H - padT - padB;
+    const toX = (f: number) => padL + f * chartW;
+    const toY = (f: number) => padT + (1 - f) * chartH;
+
+    const days = ['Day 1', 'Day 3', 'Day 7', 'Day 14', 'Day 21', 'Day 30'];
+    // The Crammer: single massive session, Ebbinghaus forgetting curve
+    const cramRetention = [0.95, 0.60, 0.35, 0.20, 0.12, 0.08];
+    // The Spacer: spaced reviews with increasing intervals
+    const spacerRetention = [0.55, 0.42, 0.60, 0.50, 0.65, 0.58];
+    // Stress lines
+    const cramStress = [0.10, 0.15, 0.30, 0.55, 0.80, 0.95];
+    const spacerStress = [0.20, 0.18, 0.15, 0.12, 0.10, 0.08];
+
+    const buildArea = (data: number[]) => {
+        const pts = data.map((v, i) => ({ x: toX(i / (data.length - 1)), y: toY(v) }));
+        let d = `M ${pts[0].x} ${toY(0)} L ${pts[0].x} ${pts[0].y}`;
+        for (let i = 1; i < pts.length; i++) {
+            const cx1 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.4;
+            const cx2 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.6;
+            d += ` C ${cx1} ${pts[i - 1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`;
+        }
+        d += ` L ${pts[pts.length - 1].x} ${toY(0)} Z`;
+        return d;
+    };
+
+    const buildLine = (data: number[]) => {
+        const pts = data.map((v, i) => ({ x: toX(i / (data.length - 1)), y: toY(v) }));
+        let d = `M ${pts[0].x} ${pts[0].y}`;
+        for (let i = 1; i < pts.length; i++) {
+            const cx1 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.4;
+            const cx2 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.6;
+            d += ` C ${cx1} ${pts[i - 1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`;
+        }
+        return d;
+    };
+
+    const cramPhases = [
+        { label: 'Feels great', x1: 0, x2: 0.33, color: '#fca5a5' },
+        { label: 'Fading fast', x1: 0.33, x2: 0.66, color: '#f87171' },
+        { label: 'Gone', x1: 0.66, x2: 1, color: '#ef4444' },
+    ];
+    const spacerPhases = [
+        { label: 'Learn + review', x1: 0, x2: 0.33, color: '#6ee7b7' },
+        { label: 'Spaces widen', x1: 0.33, x2: 0.66, color: '#34d399' },
+        { label: 'Locked in', x1: 0.66, x2: 1, color: '#10b981' },
+    ];
+
+    const Chart = ({ effort, stress, phases, areaColor, areaId, stressColor, label }: {
+        effort: number[]; stress: number[]; phases: { label: string; x1: number; x2: number; color: string }[];
+        areaColor: string; areaId: string; stressColor: string; label: string;
+    }) => (
+        <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
+            <defs>
+                <linearGradient id={areaId} x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor={areaColor} stopOpacity="0.5" />
+                    <stop offset="100%" stopColor={areaColor} stopOpacity="0.05" />
+                </linearGradient>
+            </defs>
+            {/* Grid lines */}
+            {[0.25, 0.5, 0.75, 1.0].map(v => (
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />
+            ))}
+            {/* Baseline */}
+            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#a1a1aa" strokeOpacity="0.3" />
+            {/* Retention area */}
+            <motion.path
+                d={buildArea(effort)}
+                fill={`url(#${areaId})`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+            />
+            {/* Retention line */}
+            <motion.path
+                d={buildLine(effort)}
+                fill="none" stroke={areaColor} strokeWidth="2.5" strokeLinecap="round"
+                initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
+                transition={{ duration: 1.2, ease: 'easeOut' }}
+            />
+            {/* Stress line (dashed) */}
+            <motion.path
+                d={buildLine(stress)}
+                fill="none" stroke={stressColor} strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
+                initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
+                transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
+            />
+            {/* Retention dots */}
+            {effort.map((v, i) => (
+                <motion.circle key={i} cx={toX(i / (effort.length - 1))} cy={toY(v)} r="3.5" fill={areaColor}
+                    initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 * i + 0.3 }}
+                />
+            ))}
+            {/* Y-axis labels */}
+            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text>
+            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>
+            {/* Day labels */}
+            {days.map((m, i) => (
+                <text key={m} x={toX(i / (days.length - 1))} y={toY(0) + 14} fontSize="9" fill="#a1a1aa" textAnchor="middle" fontWeight="600">{m}</text>
+            ))}
+            {/* Phase labels */}
+            {phases.map((p, i) => (
+                <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
+            ))}
+            {/* Chart label */}
+            <text x={W / 2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">{label}</text>
+            {/* Legend */}
+            <line x1={W - padR - 100} x2={W - padR - 84} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
+            <text x={W - padR - 80} y={17} fontSize="8" fill="#a1a1aa">Retention</text>
+            <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke={stressColor} strokeWidth="1.5" strokeDasharray="4 2" />
+            <text x={W - padR - 24} y={17} fontSize="8" fill="#a1a1aa">Stress</text>
+        </svg>
+    );
+
+    return (
+        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Retention Crossover</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Same material. Same student. Two different strategies.</p>
+
+            {!revealed ? (
+                <div className="text-center">
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Most students cram before exams. What does their retention actually look like over 30 days?</p>
+                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-sky-500 text-white hover:bg-sky-600 transition-colors">
+                        Reveal the Crossover
+                    </button>
+                </div>
+            ) : (
+                <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
+                    <div className="grid md:grid-cols-2 gap-4 mb-5">
+                        <div className="rounded-lg border border-rose-200 dark:border-rose-900 bg-rose-50/50 dark:bg-rose-950/20 p-3">
+                            <Chart effort={cramRetention} stress={cramStress} phases={cramPhases}
+                                areaColor="#ef4444" areaId="cram-grad" stressColor="#f59e0b" label="The Crammer" />
+                        </div>
+                        <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
+                            <Chart effort={spacerRetention} stress={spacerStress} phases={spacerPhases}
+                                areaColor="#10b981" areaId="spacer-grad" stressColor="#f59e0b" label="The Spacer" />
+                        </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-4 text-sm">
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
+                            <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Cramming</strong> gives an illusion of mastery. Retention peaks immediately then collapses. By exam day, you're relearning from scratch.</p>
+                        </div>
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
+                            <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Spacing</strong> feels slower, but each review strengthens the memory trace. By exam day, the material is deeply encoded.</p>
+                        </div>
+                    </div>
+                </motion.div>
+            )}
+        </div>
+    );
+};
+
 const MotionDiv = motion.div as any;
 
 const CrammingVsSpacingShowdown = () => {
@@ -543,6 +701,7 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
           {activeSection === 1 && (
             <ReadingSection title="The Cramming Paradox." eyebrow="Step 2" icon={BarChart2} theme={theme}>
                 <p>If cramming is so bad, why does everyone do it? Because of a metacognitive trap called the <Highlight description="The common student experience where massed practice (cramming) leads to high immediate test performance but catastrophic long-term forgetting, reinforcing an ineffective study habit." theme={theme}>Cramming Paradox</Highlight>. For tests that happen immediately after studying (minutes or hours), cramming works. It keeps information active in your temporary working memory, creating a powerful "Illusion of Competence."</p>
+                <RetentionCurveComparison />
                 <p>This gives you a false sense of security. You score well on the immediate test, which "rewards" the cramming behaviour. But the information never gets consolidated into long-term memory. As the research shows, for the same amount of study time, <Highlight description="Also called Distributed Practice. The method of spreading study sessions out over time, which is proven to be vastly superior to cramming for long-term retention." theme={theme}>Spaced Practice</Highlight> can triple the durability of your memory.</p>
                 <CrammingVsSpacingShowdown />
             </ReadingSection>

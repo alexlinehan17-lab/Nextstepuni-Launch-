@@ -201,6 +201,164 @@ const GuiltSpiral = () => {
     );
 };
 
+const GuiltSpiralComparison = () => {
+    const [revealed, setRevealed] = useState(false);
+
+    const W = 440, H = 260;
+    const padL = 8, padR = 8, padT = 28, padB = 44;
+    const chartW = W - padL - padR, chartH = H - padT - padB;
+    const toX = (f: number) => padL + f * chartW;
+    const toY = (f: number) => padT + (1 - f) * chartH;
+
+    const xLabels = ['Trigger', '+1hr', '+3hr', '+1 day', '+3 days', '+1 week'];
+
+    // Left chart: The Guilt Spiral
+    const guiltEmotion = [0.25, 0.38, 0.52, 0.70, 0.85, 0.97];
+    const guiltProductivity = [0.50, 0.40, 0.28, 0.18, 0.10, 0.05];
+    // Right chart: The Self-Forgiveness Path
+    const forgiveEmotion = [0.25, 0.45, 0.30, 0.18, 0.12, 0.08];
+    const forgiveProductivity = [0.50, 0.30, 0.45, 0.55, 0.62, 0.68];
+
+    const buildArea = (data: number[]) => {
+        const pts = data.map((v, i) => ({ x: toX(i / (data.length - 1)), y: toY(v) }));
+        let d = `M ${pts[0].x} ${toY(0)} L ${pts[0].x} ${pts[0].y}`;
+        for (let i = 1; i < pts.length; i++) {
+            const cx1 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.4;
+            const cx2 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.6;
+            d += ` C ${cx1} ${pts[i - 1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`;
+        }
+        d += ` L ${pts[pts.length - 1].x} ${toY(0)} Z`;
+        return d;
+    };
+
+    const buildLine = (data: number[]) => {
+        const pts = data.map((v, i) => ({ x: toX(i / (data.length - 1)), y: toY(v) }));
+        let d = `M ${pts[0].x} ${pts[0].y}`;
+        for (let i = 1; i < pts.length; i++) {
+            const cx1 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.4;
+            const cx2 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.6;
+            d += ` C ${cx1} ${pts[i - 1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`;
+        }
+        return d;
+    };
+
+    const guiltPhases = [
+        { label: 'Guilt hits', x1: 0, x2: 0.33, color: '#fca5a5' },
+        { label: 'Avoidance grows', x1: 0.33, x2: 0.66, color: '#f87171' },
+        { label: 'Paralysis', x1: 0.66, x2: 1, color: '#ef4444' },
+    ];
+    const forgivePhases = [
+        { label: 'Acknowledge', x1: 0, x2: 0.33, color: '#6ee7b7' },
+        { label: 'Forgive & plan', x1: 0.33, x2: 0.66, color: '#34d399' },
+        { label: 'Back on track', x1: 0.66, x2: 1, color: '#10b981' },
+    ];
+
+    const Chart = ({ primary, secondary, phases, areaColor, areaId, areaData, secondaryColor, label }: {
+        primary: number[]; secondary: number[]; phases: { label: string; x1: number; x2: number; color: string }[];
+        areaColor: string; areaId: string; areaData: number[]; secondaryColor: string; label: string;
+    }) => (
+        <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
+            <defs>
+                <linearGradient id={areaId} x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor={areaColor} stopOpacity="0.5" />
+                    <stop offset="100%" stopColor={areaColor} stopOpacity="0.05" />
+                </linearGradient>
+            </defs>
+            {/* Grid lines */}
+            {[0.25, 0.5, 0.75, 1.0].map(v => (
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />
+            ))}
+            {/* Baseline */}
+            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#a1a1aa" strokeOpacity="0.3" />
+            {/* Area fill */}
+            <motion.path
+                d={buildArea(areaData)}
+                fill={`url(#${areaId})`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+            />
+            {/* Primary line (solid) — Negative Emotion */}
+            <motion.path
+                d={buildLine(primary)}
+                fill="none" stroke={areaColor} strokeWidth="2.5" strokeLinecap="round"
+                initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
+                transition={{ duration: 1.2, ease: 'easeOut' }}
+            />
+            {/* Secondary line (dashed) — Productivity */}
+            <motion.path
+                d={buildLine(secondary)}
+                fill="none" stroke={secondaryColor} strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
+                initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
+                transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
+            />
+            {/* Primary dots */}
+            {primary.map((v, i) => (
+                <motion.circle key={i} cx={toX(i / (primary.length - 1))} cy={toY(v)} r="3.5" fill={areaColor}
+                    initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 * i + 0.3 }}
+                />
+            ))}
+            {/* Y-axis labels */}
+            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text>
+            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>
+            {/* X-axis labels */}
+            {xLabels.map((m, i) => (
+                <text key={m} x={toX(i / (xLabels.length - 1))} y={toY(0) + 14} fontSize="9" fill="#a1a1aa" textAnchor="middle" fontWeight="600">{m}</text>
+            ))}
+            {/* Phase labels */}
+            {phases.map((p, i) => (
+                <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
+            ))}
+            {/* Chart label */}
+            <text x={W / 2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">{label}</text>
+            {/* Legend */}
+            <line x1={W - padR - 120} x2={W - padR - 104} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
+            <text x={W - padR - 100} y={17} fontSize="8" fill="#a1a1aa">Negative Emotion</text>
+            <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke={secondaryColor} strokeWidth="1.5" strokeDasharray="4 2" />
+            <text x={W - padR - 24} y={17} fontSize="8" fill="#a1a1aa">Productivity</text>
+        </svg>
+    );
+
+    return (
+        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Guilt Divergence</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Same procrastination event. Two completely different outcomes.</p>
+
+            {!revealed ? (
+                <div className="text-center">
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">After procrastinating, most students beat themselves up. But what if the data shows that's the worst possible response?</p>
+                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-orange-500 text-white hover:bg-orange-600 transition-colors">
+                        Reveal the Divergence
+                    </button>
+                </div>
+            ) : (
+                <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
+                    <div className="grid md:grid-cols-2 gap-4 mb-5">
+                        <div className="rounded-lg border border-rose-200 dark:border-rose-900 bg-rose-50/50 dark:bg-rose-950/20 p-3">
+                            <Chart primary={guiltEmotion} secondary={guiltProductivity} phases={guiltPhases}
+                                areaColor="#ef4444" areaId="guilt-grad" areaData={guiltEmotion} secondaryColor="#f59e0b" label="The Guilt Spiral" />
+                        </div>
+                        <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
+                            <Chart primary={forgiveEmotion} secondary={forgiveProductivity} phases={forgivePhases}
+                                areaColor="#10b981" areaId="forgive-grad" areaData={forgiveProductivity} secondaryColor="#f59e0b" label="The Self-Forgiveness Path" />
+                        </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-4 text-sm">
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
+                            <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Self-punishment</strong> after procrastination feels productive but creates a feedback loop. Guilt &#8594; avoidance &#8594; more guilt. Within days, you're stuck in learned helplessness.</p>
+                        </div>
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
+                            <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Self-forgiveness</strong> breaks the loop. Acknowledging the slip without judgement allows your prefrontal cortex to re-engage. Research shows self-forgivers procrastinate less next time.</p>
+                        </div>
+                    </div>
+                </motion.div>
+            )}
+        </div>
+    );
+};
+
 const CircuitBreaker = () => {
     const [reframe, setReframe] = useState('');
     const containsForgive = reframe.toLowerCase().includes('forgive');
@@ -283,6 +441,7 @@ const ProcrastinationModule: React.FC<{ onBack: () => void; progress: ModuleProg
             <ReadingSection title="The Guilt Cycle." eyebrow="Step 5" icon={RotateCcw} theme={theme}>
               <p>Most people respond to procrastination with self-criticism: "I'm so lazy. What's wrong with me?" This feels like accountability, but it's actually the worst thing you can do. Self-criticism generates <Highlight description="A negative emotional state that, ironically, fuels the very avoidance cycle it's trying to break. More guilt leads to more negative emotion, which leads to more avoidance." theme={theme}>guilt and shame</Highlight>, which are negative emotions. And what does your brain do with negative emotions? It tries to avoid them--by procrastinating more.</p>
               <p>This creates a vicious downward spiral: Procrastinate &#8594; Feel Guilty &#8594; More Negative Emotion &#8594; Procrastinate More &#8594; Feel More Guilty. "Tough love" doesn't break this cycle; it accelerates it.</p>
+              <GuiltSpiralComparison />
               <GuiltSpiral />
             </ReadingSection>
           )}

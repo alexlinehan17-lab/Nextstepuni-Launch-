@@ -16,6 +16,164 @@ import { ModuleLayout } from './ModuleLayout';
 const theme = cyanTheme;
 
 // --- INTERACTIVE COMPONENTS ---
+const StressResponseComparison = () => {
+    const [revealed, setRevealed] = useState(false);
+
+    const W = 540, H = 280;
+    const padL = 8, padR = 8, padT = 28, padB = 56;
+    const chartW = W - padL - padR, chartH = H - padT - padB;
+    const toX = (f: number) => padL + f * chartW;
+    const toY = (f: number) => padT + (1 - f) * chartH;
+
+    const labels = ['Calm', 'Mild stress', 'Moderate', 'High stress', 'Panic', 'Meltdown'];
+    const pfcData = [0.90, 0.82, 0.68, 0.45, 0.25, 0.12];
+    const amygData = [0.10, 0.22, 0.40, 0.62, 0.82, 0.95];
+
+    const buildArea = (data: number[]) => {
+        const pts = data.map((v, i) => ({ x: toX(i / (data.length - 1)), y: toY(v) }));
+        let d = `M ${pts[0].x} ${toY(0)} L ${pts[0].x} ${pts[0].y}`;
+        for (let i = 1; i < pts.length; i++) {
+            const cx1 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.4;
+            const cx2 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.6;
+            d += ` C ${cx1} ${pts[i - 1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`;
+        }
+        d += ` L ${pts[pts.length - 1].x} ${toY(0)} Z`;
+        return d;
+    };
+
+    const buildLine = (data: number[]) => {
+        const pts = data.map((v, i) => ({ x: toX(i / (data.length - 1)), y: toY(v) }));
+        let d = `M ${pts[0].x} ${pts[0].y}`;
+        for (let i = 1; i < pts.length; i++) {
+            const cx1 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.4;
+            const cx2 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.6;
+            d += ` C ${cx1} ${pts[i - 1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`;
+        }
+        return d;
+    };
+
+    const phases = [
+        { label: 'Thinking zone', x1: 0, x2: 0.33, color: '#10b981' },
+        { label: 'Tipping point', x1: 0.33, x2: 0.66, color: '#f59e0b' },
+        { label: 'Survival mode', x1: 0.66, x2: 1, color: '#ef4444' },
+    ];
+
+    const Chart = () => (
+        <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
+            <defs>
+                <linearGradient id="pfc-grad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#10b981" stopOpacity="0.4" />
+                    <stop offset="100%" stopColor="#10b981" stopOpacity="0.03" />
+                </linearGradient>
+                <linearGradient id="amyg-grad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#ef4444" stopOpacity="0.4" />
+                    <stop offset="100%" stopColor="#ef4444" stopOpacity="0.03" />
+                </linearGradient>
+            </defs>
+            {/* Grid lines */}
+            {[0.25, 0.5, 0.75, 1.0].map(v => (
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />
+            ))}
+            {/* Baseline */}
+            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#a1a1aa" strokeOpacity="0.3" />
+            {/* PFC area */}
+            <motion.path
+                d={buildArea(pfcData)}
+                fill="url(#pfc-grad)"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+            />
+            {/* Amygdala area */}
+            <motion.path
+                d={buildArea(amygData)}
+                fill="url(#amyg-grad)"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.15 }}
+            />
+            {/* PFC line */}
+            <motion.path
+                d={buildLine(pfcData)}
+                fill="none" stroke="#10b981" strokeWidth="2.5" strokeLinecap="round"
+                initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
+                transition={{ duration: 1.2, ease: 'easeOut' }}
+            />
+            {/* Amygdala line */}
+            <motion.path
+                d={buildLine(amygData)}
+                fill="none" stroke="#ef4444" strokeWidth="2.5" strokeLinecap="round"
+                initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
+                transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
+            />
+            {/* PFC dots */}
+            {pfcData.map((v, i) => (
+                <motion.circle key={`pfc-${i}`} cx={toX(i / (pfcData.length - 1))} cy={toY(v)} r="3.5" fill="#10b981"
+                    initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 * i + 0.3 }}
+                />
+            ))}
+            {/* Amygdala dots */}
+            {amygData.map((v, i) => (
+                <motion.circle key={`amyg-${i}`} cx={toX(i / (amygData.length - 1))} cy={toY(v)} r="3.5" fill="#ef4444"
+                    initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 * i + 0.5 }}
+                />
+            ))}
+            {/* Y-axis labels */}
+            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text>
+            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>
+            {/* X-axis labels */}
+            {labels.map((m, i) => (
+                <text key={m} x={toX(i / (labels.length - 1))} y={toY(0) + 14} fontSize="8" fill="#a1a1aa" textAnchor="middle" fontWeight="600">{m}</text>
+            ))}
+            {/* Phase labels */}
+            {phases.map((p, i) => (
+                <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
+            ))}
+            {/* Chart label */}
+            <text x={W / 2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">Brain Activity Under Exam Stress</text>
+            {/* Legend */}
+            <line x1={W - padR - 168} x2={W - padR - 152} y1={14} y2={14} stroke="#10b981" strokeWidth="2" />
+            <text x={W - padR - 148} y={17} fontSize="8" fill="#a1a1aa">Prefrontal Cortex</text>
+            <line x1={W - padR - 64} x2={W - padR - 48} y1={14} y2={14} stroke="#ef4444" strokeWidth="2" />
+            <text x={W - padR - 44} y={17} fontSize="8" fill="#a1a1aa">Amygdala</text>
+        </svg>
+    );
+
+    return (
+        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Neural Tug of War</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">As stress rises, your thinking brain loses the battle.</p>
+
+            {!revealed ? (
+                <div className="text-center">
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Your brain has two competing systems fighting for control during an exam. What happens as the pressure builds?</p>
+                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-sky-500 text-white hover:bg-sky-600 transition-colors">
+                        See the Neural Shift
+                    </button>
+                </div>
+            ) : (
+                <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
+                    <div className="mb-5">
+                        <div className="rounded-lg border border-zinc-200 dark:border-zinc-700 bg-zinc-50/50 dark:bg-zinc-900/20 p-3">
+                            <Chart />
+                        </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-4 text-sm">
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
+                            <span className="text-emerald-500 text-lg mt-0.5">&#x1F9E0;</span>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Your PFC</strong> handles planning, working memory, and rational thinking. It's your exam brain. But it shuts down as cortisol rises.</p>
+                        </div>
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
+                            <span className="text-rose-500 text-lg mt-0.5">&#x26A1;</span>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Your amygdala</strong> handles threat detection and survival. It hijacks control when stress crosses the tipping point. You can't think clearly in survival mode.</p>
+                        </div>
+                    </div>
+                </motion.div>
+            )}
+        </div>
+    );
+};
+
 const PFCShutdownSimulator = () => {
     const [stressed, setStressed] = useState(false);
 
@@ -512,6 +670,7 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
             <ReadingSection title="The Neurobiology of Stress." eyebrow="Step 1" icon={Cpu} theme={theme}>
               <p>Exam stress isn't a character flaw; it's a predictable neuroendocrine response. Your brain's alarm system, the <Highlight description="The Hypothalamic-Pituitary-Adrenal axis is the body's central stress response system. When a threat is perceived, it releases a cascade of hormones, culminating in cortisol." theme={theme}>HPA Axis</Highlight>, floods your system with cortisol. In the short term, this is good--it sharpens focus. But the Leaving Cert is a chronic stressor.</p>
               <p>Under chronic stress, high levels of cortisol effectively take your <Highlight description="The 'CEO' of your brain, responsible for planning, logic, and working memory. It is the last part of the brain to fully mature, making it vulnerable during adolescence." theme={theme}>Prefrontal Cortex (PFC)</Highlight> "offline." This is the biological reason for "going blank." Your brain has prioritized survival over cognition. Understanding this isn't an excuse; it's the first step to taking back control.</p>
+              <StressResponseComparison />
               <PFCShutdownSimulator />
             </ReadingSection>
           )}

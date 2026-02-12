@@ -18,6 +18,165 @@ const theme = orangeTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 
+const AllostaticLoadComparison = () => {
+    const [revealed, setRevealed] = useState(false);
+
+    const W = 440, H = 260;
+    const padL = 8, padR = 8, padT = 28, padB = 44;
+    const chartW = W - padL - padR, chartH = H - padT - padB;
+    const toX = (f: number) => padL + f * chartW;
+    const toY = (f: number) => padT + (1 - f) * chartH;
+
+    const months = ['Sep', 'Nov', 'Jan', 'Mar', 'May', 'Jun'];
+    // No Recovery: stress climbs monotonically, accelerating at end
+    const noRecStress = [0.15, 0.30, 0.45, 0.62, 0.82, 0.98];
+    // No Recovery: performance starts OK then drops as load accumulates
+    const noRecPerf = [0.70, 0.65, 0.55, 0.42, 0.30, 0.18];
+    // Strategic Recovery: stress rises but dips from recovery windows
+    const recStress = [0.15, 0.28, 0.22, 0.38, 0.32, 0.40];
+    // Strategic Recovery: performance stays high with slight improvement
+    const recPerf = [0.70, 0.68, 0.72, 0.70, 0.75, 0.78];
+
+    const buildArea = (data: number[]) => {
+        const pts = data.map((v, i) => ({ x: toX(i / (data.length - 1)), y: toY(v) }));
+        let d = `M ${pts[0].x} ${toY(0)} L ${pts[0].x} ${pts[0].y}`;
+        for (let i = 1; i < pts.length; i++) {
+            const cx1 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.4;
+            const cx2 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.6;
+            d += ` C ${cx1} ${pts[i - 1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`;
+        }
+        d += ` L ${pts[pts.length - 1].x} ${toY(0)} Z`;
+        return d;
+    };
+
+    const buildLine = (data: number[]) => {
+        const pts = data.map((v, i) => ({ x: toX(i / (data.length - 1)), y: toY(v) }));
+        let d = `M ${pts[0].x} ${pts[0].y}`;
+        for (let i = 1; i < pts.length; i++) {
+            const cx1 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.4;
+            const cx2 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.6;
+            d += ` C ${cx1} ${pts[i - 1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`;
+        }
+        return d;
+    };
+
+    const noRecPhases = [
+        { label: 'Manageable', x1: 0, x2: 0.33, color: '#fca5a5' },
+        { label: 'Accumulating', x1: 0.33, x2: 0.66, color: '#f87171' },
+        { label: 'Burnout', x1: 0.66, x2: 1, color: '#ef4444' },
+    ];
+    const recPhases = [
+        { label: 'Build + recover', x1: 0, x2: 0.33, color: '#6ee7b7' },
+        { label: 'Sustain', x1: 0.33, x2: 0.66, color: '#34d399' },
+        { label: 'Peak form', x1: 0.66, x2: 1, color: '#10b981' },
+    ];
+
+    const Chart = ({ primary, secondary, phases, areaColor, areaId, areaData, label }: {
+        primary: number[]; secondary: number[]; phases: { label: string; x1: number; x2: number; color: string }[];
+        areaColor: string; areaId: string; areaData: number[]; label: string;
+    }) => (
+        <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
+            <defs>
+                <linearGradient id={areaId} x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor={areaColor} stopOpacity="0.5" />
+                    <stop offset="100%" stopColor={areaColor} stopOpacity="0.05" />
+                </linearGradient>
+            </defs>
+            {/* Grid lines */}
+            {[0.25, 0.5, 0.75, 1.0].map(v => (
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />
+            ))}
+            {/* Baseline */}
+            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#a1a1aa" strokeOpacity="0.3" />
+            {/* Area fill */}
+            <motion.path
+                d={buildArea(areaData)}
+                fill={`url(#${areaId})`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+            />
+            {/* Primary line (solid — Stress Load) */}
+            <motion.path
+                d={buildLine(primary)}
+                fill="none" stroke={areaColor} strokeWidth="2.5" strokeLinecap="round"
+                initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
+                transition={{ duration: 1.2, ease: 'easeOut' }}
+            />
+            {/* Secondary line (dashed — Performance) */}
+            <motion.path
+                d={buildLine(secondary)}
+                fill="none" stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
+                initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
+                transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
+            />
+            {/* Primary dots */}
+            {primary.map((v, i) => (
+                <motion.circle key={i} cx={toX(i / (primary.length - 1))} cy={toY(v)} r="3.5" fill={areaColor}
+                    initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 * i + 0.3 }}
+                />
+            ))}
+            {/* Y-axis labels */}
+            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text>
+            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>
+            {/* Month labels */}
+            {months.map((m, i) => (
+                <text key={m} x={toX(i / (months.length - 1))} y={toY(0) + 14} fontSize="9" fill="#a1a1aa" textAnchor="middle" fontWeight="600">{m}</text>
+            ))}
+            {/* Phase labels */}
+            {phases.map((p, i) => (
+                <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
+            ))}
+            {/* Chart label */}
+            <text x={W / 2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">{label}</text>
+            {/* Legend */}
+            <line x1={W - padR - 108} x2={W - padR - 92} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
+            <text x={W - padR - 88} y={17} fontSize="8" fill="#a1a1aa">Stress Load</text>
+            <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="4 2" />
+            <text x={W - padR - 24} y={17} fontSize="8" fill="#a1a1aa">Performance</text>
+        </svg>
+    );
+
+    return (
+        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Recovery Effect</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Same exams. Same syllabus. One student recovers strategically.</p>
+
+            {!revealed ? (
+                <div className="text-center">
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Two students face the same Leaving Cert year. What happens when one builds in strategic recovery?</p>
+                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-orange-500 text-white hover:bg-orange-600 transition-colors">
+                        Reveal the Recovery Effect
+                    </button>
+                </div>
+            ) : (
+                <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
+                    <div className="grid md:grid-cols-2 gap-4 mb-5">
+                        <div className="rounded-lg border border-rose-200 dark:border-rose-900 bg-rose-50/50 dark:bg-rose-950/20 p-3">
+                            <Chart primary={noRecStress} secondary={noRecPerf} phases={noRecPhases}
+                                areaColor="#ef4444" areaId="norec-grad" areaData={noRecStress} label="No Recovery Protocol" />
+                        </div>
+                        <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
+                            <Chart primary={recStress} secondary={recPerf} phases={recPhases}
+                                areaColor="#10b981" areaId="rec-grad" areaData={recPerf} label="Strategic Recovery" />
+                        </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-4 text-sm">
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
+                            <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Without recovery</strong>, stress compounds like debt with interest. By May, your allostatic load is so high that studying becomes counterproductive — you're running on fumes.</p>
+                        </div>
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
+                            <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Strategic recovery</strong> — proper sleep, exercise, NSDR — creates deliberate dips in the stress curve. You arrive at exams with cognitive reserves intact.</p>
+                        </div>
+                    </div>
+                </motion.div>
+            )}
+        </div>
+    );
+};
+
 const AllostaticLoadVisualizer = () => {
     const W = 400, H = 190;
     const padL = 8, padR = 8, padT = 20, padB = 42;
@@ -361,6 +520,7 @@ const CognitiveEnduranceModule: React.FC<{ onBack: () => void; progress: ModuleP
               <p>The Leaving Cert isn't a sprint; it's a marathon. Success isn't just about knowing the material. It's about being able to access that knowledge at 4 PM on a Friday after a brutal week of exams. This is <Highlight description="The ability to sustain high-level mental performance, maintain focus, and resist distraction over extended periods of effortful thinking." theme={theme}>Cognitive Endurance</Highlight>.</p>
               <p>It's a biological skill, not a measure of willpower. Your brain is an organ that consumes 20% of your body's energy. Under the chronic stress of the Leaving Cert, your brain accumulates "wear and tear"—a concept scientists call <Highlight description="The cumulative physiological 'wear and tear' on the body and brain that results from chronic stress. High allostatic load impairs PFC function and emotional regulation." theme={theme}>Allostatic Load</Highlight>. Building cognitive endurance is about training your brain to handle this load.</p>
               <AllostaticLoadVisualizer />
+              <AllostaticLoadComparison />
             </ReadingSection>
           )}
            {activeSection === 1 && (

@@ -388,6 +388,163 @@ const ScenarioDiagnosis = () => {
 }
 
 
+const ConfidenceRetentionParadox = () => {
+    const [revealed, setRevealed] = useState(false);
+
+    const W = 440, H = 260;
+    const padL = 8, padR = 8, padT = 28, padB = 44;
+    const chartW = W - padL - padR, chartH = H - padT - padB;
+    const toX = (f: number) => padL + f * chartW;
+    const toY = (f: number) => padT + (1 - f) * chartH;
+
+    const days = ['Day 0', 'Day 1', 'Day 3', 'Day 7', 'Day 14', 'Day 30'];
+    // Passive Re-reading: Confidence stays high, Retention crashes
+    const passiveConfidence = [0.90, 0.88, 0.82, 0.78, 0.72, 0.68];
+    const passiveRetention  = [0.85, 0.55, 0.38, 0.28, 0.22, 0.18];
+    // Active Recall: Confidence starts low and stays moderate, Retention holds
+    const activeConfidence = [0.35, 0.40, 0.45, 0.50, 0.55, 0.60];
+    const activeRetention  = [0.50, 0.52, 0.55, 0.58, 0.60, 0.61];
+
+    const buildArea = (data: number[]) => {
+        const pts = data.map((v, i) => ({ x: toX(i / (data.length - 1)), y: toY(v) }));
+        let d = `M ${pts[0].x} ${toY(0)} L ${pts[0].x} ${pts[0].y}`;
+        for (let i = 1; i < pts.length; i++) {
+            const cx1 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.4;
+            const cx2 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.6;
+            d += ` C ${cx1} ${pts[i - 1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`;
+        }
+        d += ` L ${pts[pts.length - 1].x} ${toY(0)} Z`;
+        return d;
+    };
+
+    const buildLine = (data: number[]) => {
+        const pts = data.map((v, i) => ({ x: toX(i / (data.length - 1)), y: toY(v) }));
+        let d = `M ${pts[0].x} ${pts[0].y}`;
+        for (let i = 1; i < pts.length; i++) {
+            const cx1 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.4;
+            const cx2 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.6;
+            d += ` C ${cx1} ${pts[i - 1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`;
+        }
+        return d;
+    };
+
+    const passivePhases = [
+        { label: 'Feels easy', x1: 0, x2: 0.33, color: '#fca5a5' },
+        { label: 'Still confident', x1: 0.33, x2: 0.66, color: '#f87171' },
+        { label: 'Exam shock', x1: 0.66, x2: 1, color: '#ef4444' },
+    ];
+    const activePhases = [
+        { label: 'Feels hard', x1: 0, x2: 0.33, color: '#6ee7b7' },
+        { label: 'Building', x1: 0.33, x2: 0.66, color: '#34d399' },
+        { label: 'Exam ready', x1: 0.66, x2: 1, color: '#10b981' },
+    ];
+
+    const Chart = ({ confidence, retention, phases, areaColor, areaId, areaData, label }: {
+        confidence: number[]; retention: number[]; phases: { label: string; x1: number; x2: number; color: string }[];
+        areaColor: string; areaId: string; areaData: number[]; label: string;
+    }) => (
+        <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
+            <defs>
+                <linearGradient id={areaId} x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor={areaColor} stopOpacity="0.5" />
+                    <stop offset="100%" stopColor={areaColor} stopOpacity="0.05" />
+                </linearGradient>
+            </defs>
+            {/* Grid lines */}
+            {[0.25, 0.5, 0.75, 1.0].map(v => (
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />
+            ))}
+            {/* Baseline */}
+            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#a1a1aa" strokeOpacity="0.3" />
+            {/* Area fill */}
+            <motion.path
+                d={buildArea(areaData)}
+                fill={`url(#${areaId})`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+            />
+            {/* Confidence line (solid — primary) */}
+            <motion.path
+                d={buildLine(confidence)}
+                fill="none" stroke={areaColor} strokeWidth="2.5" strokeLinecap="round"
+                initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
+                transition={{ duration: 1.2, ease: 'easeOut' }}
+            />
+            {/* Retention line (dashed — secondary) */}
+            <motion.path
+                d={buildLine(retention)}
+                fill="none" stroke={areaColor} strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
+                initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
+                transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
+            />
+            {/* Confidence dots */}
+            {confidence.map((v, i) => (
+                <motion.circle key={i} cx={toX(i / (confidence.length - 1))} cy={toY(v)} r="3.5" fill={areaColor}
+                    initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 * i + 0.3 }}
+                />
+            ))}
+            {/* Y-axis labels */}
+            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text>
+            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>
+            {/* Day labels */}
+            {days.map((d, i) => (
+                <text key={d} x={toX(i / (days.length - 1))} y={toY(0) + 14} fontSize="9" fill="#a1a1aa" textAnchor="middle" fontWeight="600">{d}</text>
+            ))}
+            {/* Phase labels */}
+            {phases.map((p, i) => (
+                <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
+            ))}
+            {/* Chart label */}
+            <text x={W / 2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">{label}</text>
+            {/* Legend */}
+            <line x1={W - padR - 108} x2={W - padR - 92} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
+            <text x={W - padR - 88} y={17} fontSize="8" fill="#a1a1aa">Confidence</text>
+            <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke={areaColor} strokeWidth="1.5" strokeDasharray="4 2" />
+            <text x={W - padR - 24} y={17} fontSize="8" fill="#a1a1aa">Retention</text>
+        </svg>
+    );
+
+    return (
+        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Confidence Trap</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">What feels best works worst. What feels worst works best.</p>
+
+            {!revealed ? (
+                <div className="text-center">
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Most students judge their learning by how confident they feel. What does that confidence actually track over time?</p>
+                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-teal-500 text-white hover:bg-teal-600 transition-colors">
+                        Reveal the Trap
+                    </button>
+                </div>
+            ) : (
+                <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
+                    <div className="grid md:grid-cols-2 gap-4 mb-5">
+                        <div className="rounded-lg border border-rose-200 dark:border-rose-900 bg-rose-50/50 dark:bg-rose-950/20 p-3">
+                            <Chart confidence={passiveConfidence} retention={passiveRetention} phases={passivePhases}
+                                areaColor="#ef4444" areaId="passive-grad" areaData={passiveConfidence} label="Passive Re-reading" />
+                        </div>
+                        <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
+                            <Chart confidence={activeConfidence} retention={activeRetention} phases={activePhases}
+                                areaColor="#10b981" areaId="active-grad" areaData={activeRetention} label="Active Recall" />
+                        </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-4 text-sm">
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
+                            <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Re-reading</strong> creates fluency — the material feels familiar. But recognition isn't recall. When the exam asks you to produce answers, the knowledge isn't there.</p>
+                        </div>
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
+                            <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Active recall</strong> feels effortful and uncertain. But that struggle is the learning happening. Each retrieval strengthens the memory trace.</p>
+                        </div>
+                    </div>
+                </motion.div>
+            )}
+        </div>
+    );
+};
+
 // --- MODULE COMPONENT ---
 const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
@@ -416,6 +573,7 @@ const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress:
           {activeSection === 0 && (
             <ReadingSection title="The Fallacy of Ease." eyebrow="Step 1" icon={Thermometer} theme={theme}>
               <p>Our intuition tells us that learning should feel easy. We think that if a teacher explains something perfectly and we understand it without any friction, that's a sign of great learning. This is the <Highlight description="The mistaken belief that learning which feels fluent and easy is effective. In reality, deep, long-term learning requires effortful processing and cognitive friction." theme={theme}>Intuitive Fallacy of Ease</Highlight>, and it's the single biggest trap students fall into.</p>
+              <ConfidenceRetentionParadox />
               <p>The science is clear: our subjective feeling of learning is often the exact opposite of what's actually happening in our brains. Easy learning feels good but is forgotten quickly. Hard, effortful learning feels bad but sticks. It's the difference between taking an escalator and taking the stairs. Only one of them makes you stronger.</p>
               <StairsEscalator />
               <p>This isn't just a feeling — it's a measurable phenomenon. In a landmark study, students who passively re-read material predicted they'd remember 90% of it. Students who used active recall predicted only 40%. But when tested a week later, the passive group scored just 40%, while the active group scored 61%. The strategy that felt worse was dramatically more effective. Toggle the chart below to see the shocking gap between confidence and reality.</p>
