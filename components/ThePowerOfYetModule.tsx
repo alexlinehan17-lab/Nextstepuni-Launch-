@@ -159,22 +159,23 @@ const YetAudit = () => {
     const [action, setAction] = useState('');
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-zinc-900 rounded-xl border border-white/10 text-white">
-            <h4 className="font-serif text-3xl font-semibold text-center mb-8">Your "Yet" Audit</h4>
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your "Yet" Audit</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Run your own block through the Identify-Append-Bridge protocol.</p>
             <div className="space-y-6 max-w-xl mx-auto">
                 <div>
-                    <p className="text-xs font-bold uppercase tracking-widest text-yellow-400 mb-2">1. IDENTIFY THE BLOCK</p>
-                    <input value={block} onChange={e => setBlock(e.target.value)} placeholder="e.g., I can't write a good Irish essay" className="w-full bg-white dark:bg-zinc-800/5 rounded-lg p-3 text-sm text-zinc-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
+                    <p className="text-xs font-bold uppercase tracking-widest text-yellow-600 dark:text-yellow-400 mb-2">1. Identify the Block</p>
+                    <input value={block} onChange={e => setBlock(e.target.value)} placeholder="e.g., I can't write a good Irish essay" className="w-full bg-zinc-50 dark:bg-zinc-900/50 rounded-lg p-3 text-sm text-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
                 </div>
                 <div>
-                    <p className="text-xs font-bold uppercase tracking-widest text-yellow-400 mb-2">2. ADD "YET"</p>
-                    <div className="p-3 bg-white dark:bg-zinc-800/10 rounded-lg text-sm text-zinc-300 min-h-[44px]">
-                        {block ? `I can't write a good Irish essay... yet.` : <span className="opacity-50">...</span>}
+                    <p className="text-xs font-bold uppercase tracking-widest text-yellow-600 dark:text-yellow-400 mb-2">2. Add "Yet"</p>
+                    <div className={`p-3 rounded-lg text-sm min-h-[44px] border ${block ? 'bg-emerald-50 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800/40 text-emerald-700 dark:text-emerald-300' : 'bg-zinc-50 dark:bg-zinc-900/50 border-zinc-200 dark:border-zinc-700 text-zinc-400 dark:text-zinc-500'}`}>
+                        {block ? `${block}... yet.` : '...'}
                     </div>
                 </div>
                 <div>
-                    <p className="text-xs font-bold uppercase tracking-widest text-yellow-400 mb-2">3. BRIDGE TO ACTION</p>
-                    <input value={action} onChange={e => setAction(e.target.value)} placeholder="...so I will ask my teacher for one example tomorrow." className="w-full bg-white dark:bg-zinc-800/5 rounded-lg p-3 text-sm text-zinc-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
+                    <p className="text-xs font-bold uppercase tracking-widest text-yellow-600 dark:text-yellow-400 mb-2">3. Bridge to Action</p>
+                    <input value={action} onChange={e => setAction(e.target.value)} placeholder="...so I will ask my teacher for one example tomorrow." className="w-full bg-zinc-50 dark:bg-zinc-900/50 rounded-lg p-3 text-sm text-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
                 </div>
             </div>
         </div>
