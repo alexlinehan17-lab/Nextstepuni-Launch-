@@ -17,19 +17,164 @@ const theme = emeraldTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 const CurlyArrowDrill = () => {
-    const [start, setStart] = useState(false);
-    const [end, setEnd] = useState(false);
+    const [current, setCurrent] = useState(0);
+    const [selected, setSelected] = useState<'a' | 'b' | null>(null);
+    const [isCorrect, setIsCorrect] = useState(false);
+    const [score, setScore] = useState(0);
 
-    return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">"Curly Arrow" Drill</h4>
-            <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Draw the arrow for this step: Cl\u207b attacking a carbocation.</p>
-            <div className="flex justify-center items-center gap-4 text-3xl font-mono">
-                <button onClick={() => setStart(true)} className="relative p-2">Cl<span className="absolute -top-1 -right-1 text-lg">-</span></button>
-                <span>+</span>
-                <button onClick={() => setEnd(true)} className="relative p-2">C<span className="absolute -top-1 -right-1 text-lg">+</span></button>
+    const scenarios = [
+        { a: { formula: 'Cl\u207b', label: 'Chloride ion', isSource: true }, b: { formula: 'C\u207a', label: 'Carbocation', isSource: false },
+          explanation: 'Cl\u207b has a lone pair (electron-rich) \u2192 donates to the electron-poor C\u207a.' },
+        { a: { formula: 'H\u207a', label: 'Proton', isSource: false }, b: { formula: 'OH\u207b', label: 'Hydroxide ion', isSource: true },
+          explanation: 'OH\u207b is electron-rich \u2192 arrow goes from OH\u207b lone pair to H\u207a.' },
+        { a: { formula: 'BF\u2083', label: 'Boron trifluoride', isSource: false }, b: { formula: 'NH\u2083', label: 'Ammonia', isSource: true },
+          explanation: 'NH\u2083 has a lone pair on nitrogen \u2192 donates to electron-deficient boron.' },
+        { a: { formula: 'C=C', label: 'Alkene (\u03c0 bond)', isSource: true }, b: { formula: 'H\u207a', label: 'Proton', isSource: false },
+          explanation: 'The \u03c0 bond is an electron source \u2192 arrow from C=C to H\u207a.' },
+        { a: { formula: 'CH\u2083\u207a', label: 'Methyl cation', isSource: false }, b: { formula: 'H\u2082O', label: 'Water', isSource: true },
+          explanation: 'H\u2082O has lone pairs \u2192 donates electrons to the electron-poor CH\u2083\u207a.' },
+    ];
+
+    const s = scenarios[current];
+    const done = current >= scenarios.length;
+
+    const handleSelect = (choice: 'a' | 'b') => {
+        if (isCorrect) return;
+        setSelected(choice);
+        const right = (choice === 'a' && s.a.isSource) || (choice === 'b' && s.b.isSource);
+        if (right) {
+            setIsCorrect(true);
+            setScore(prev => prev + 1);
+        }
+    };
+
+    const handleNext = () => {
+        setCurrent(prev => prev + 1);
+        setSelected(null);
+        setIsCorrect(false);
+    };
+
+    const btnClass = (side: 'a' | 'b') => {
+        const isSource = side === 'a' ? s?.a.isSource : s?.b.isSource;
+        const base = 'flex-1 max-w-[150px] p-4 rounded-xl border-2 text-center transition-all';
+        if (isCorrect) {
+            return isSource
+                ? `${base} border-emerald-400 bg-emerald-50 dark:bg-emerald-950/20`
+                : `${base} border-zinc-200 dark:border-zinc-700 opacity-40`;
+        }
+        if (selected === side && !isSource) {
+            return `${base} border-rose-300 bg-rose-50/50 dark:bg-rose-950/10 dark:border-rose-800/40`;
+        }
+        return `${base} border-zinc-200 dark:border-zinc-700 hover:border-emerald-300 dark:hover:border-emerald-700 cursor-pointer`;
+    };
+
+    /* Curly arrow SVG: curves from source side to sink side */
+    const arrowLR = 'M 6 18 Q 24 -2 42 18'; // left → right
+    const arrowRL = 'M 42 18 Q 24 -2 6 18'; // right → left
+    const headLR = '39,12 45,20 38,20';
+    const headRL = '9,12 3,20 10,20';
+
+    return (
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Curly Arrow Drill</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Curly arrows always flow from electron SOURCE to electron SINK.</p>
+            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">Click the electron source in each pair.</p>
+
+            {/* Progress */}
+            <div className="mb-6">
+                <div className="flex items-center justify-between mb-1.5">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Progress</span>
+                    <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400">{Math.min(current + (isCorrect ? 1 : 0), scenarios.length)}/{scenarios.length}</span>
+                </div>
+                <div className="w-full h-2 bg-zinc-100 dark:bg-zinc-900 rounded-full overflow-hidden">
+                    <motion.div
+                        className="h-full rounded-full bg-emerald-400"
+                        animate={{ width: `${(Math.min(current + (isCorrect ? 1 : 0), scenarios.length) / scenarios.length) * 100}%` }}
+                        transition={{ type: 'spring', stiffness: 80, damping: 15 }}
+                    />
+                </div>
             </div>
-            {start && end && <p className="text-emerald-600 font-bold mt-4">Correct! Arrow from electron source (Cl\u207b) to electron sink (C\u207a).</p>}
+
+            {!done ? (
+                <AnimatePresence mode="wait">
+                    <motion.div key={current} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}>
+                        <p className="text-center text-xs text-zinc-500 dark:text-zinc-400 mb-4">
+                            Which is the electron <span className="font-bold text-emerald-600 dark:text-emerald-400">SOURCE</span>?
+                        </p>
+
+                        {/* Reaction pair */}
+                        <div className="flex items-center justify-center gap-3 mb-4">
+                            <button onClick={() => handleSelect('a')} disabled={isCorrect} className={btnClass('a')}>
+                                <p className="text-2xl font-mono font-bold text-zinc-800 dark:text-white">{s.a.formula}</p>
+                                <p className="text-[10px] text-zinc-500 dark:text-zinc-400 mt-1">{s.a.label}</p>
+                            </button>
+
+                            <div className="flex-shrink-0 w-12 h-6 flex items-center justify-center">
+                                {isCorrect ? (
+                                    <motion.svg initial={{ opacity: 0 }} animate={{ opacity: 1 }} width="48" height="24" viewBox="0 0 48 24">
+                                        <motion.path
+                                            d={s.a.isSource ? arrowLR : arrowRL}
+                                            fill="none" stroke="#10b981" strokeWidth="2.5" strokeLinecap="round"
+                                            initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
+                                            transition={{ duration: 0.5 }}
+                                        />
+                                        <motion.polygon
+                                            points={s.a.isSource ? headLR : headRL}
+                                            fill="#10b981"
+                                            initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+                                            transition={{ delay: 0.4 }}
+                                        />
+                                    </motion.svg>
+                                ) : (
+                                    <span className="text-lg font-bold text-zinc-300 dark:text-zinc-600">+</span>
+                                )}
+                            </div>
+
+                            <button onClick={() => handleSelect('b')} disabled={isCorrect} className={btnClass('b')}>
+                                <p className="text-2xl font-mono font-bold text-zinc-800 dark:text-white">{s.b.formula}</p>
+                                <p className="text-[10px] text-zinc-500 dark:text-zinc-400 mt-1">{s.b.label}</p>
+                            </button>
+                        </div>
+
+                        {/* Feedback */}
+                        <AnimatePresence>
+                            {selected && !isCorrect && (
+                                <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+                                    className="text-center text-xs text-rose-500 dark:text-rose-400 mb-3">
+                                    That&apos;s the electron sink — it&apos;s electron-poor. Try the source.
+                                </motion.p>
+                            )}
+                        </AnimatePresence>
+                        {isCorrect && (
+                            <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}
+                                className="p-3 bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/40 rounded-xl text-center mb-4"
+                            >
+                                <p className="text-xs text-emerald-700 dark:text-emerald-300">{s.explanation}</p>
+                            </motion.div>
+                        )}
+                        {isCorrect && (
+                            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center">
+                                <button onClick={handleNext}
+                                    className="px-4 py-2 text-sm font-bold rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition-colors">
+                                    {current < scenarios.length - 1 ? 'Next Reaction' : 'See Results'}
+                                </button>
+                            </motion.div>
+                        )}
+                    </motion.div>
+                </AnimatePresence>
+            ) : (
+                <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
+                    className="p-5 bg-emerald-50 dark:bg-emerald-950/20 rounded-xl border border-emerald-200 dark:border-emerald-800/40 text-center"
+                >
+                    <p className="text-3xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">{score}/{scenarios.length}</p>
+                    <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-300">
+                        {score === scenarios.length ? 'Perfect! You understand the source \u2192 sink principle.' : 'Remember: electrons always flow from rich to poor.'}
+                    </p>
+                    <p className="text-xs text-emerald-600/70 dark:text-emerald-400/60 mt-2">
+                        The curly arrow always starts at the electron source (lone pair or bond) and points to the electron sink (electron-deficient atom).
+                    </p>
+                </motion.div>
+            )}
         </div>
     );
 };

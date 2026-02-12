@@ -428,15 +428,6 @@ const COURSE_DEFINITIONS = [
     tags: ['Exam Tactics', 'Productivity'],
   },
   {
-    id: 'subject-specific-advice-protocol',
-    category: 'exam-zone',
-    title: 'Subject Specific Advice',
-    subtitle: 'The Decryption Key',
-    description: 'Deconstruct the specific marking algorithms for each subject to transform your approach from passive learning to active "Grade Engineering".',
-    sectionsCount: 6,
-    tags: ['Exam Tactics', 'Subject Strategy'],
-  },
-  {
     id: 'reverse-engineering-protocol',
     category: 'exam-zone',
     title: 'Reverse Engineering Your Schedule',

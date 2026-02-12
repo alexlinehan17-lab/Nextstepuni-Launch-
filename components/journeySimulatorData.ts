@@ -861,7 +861,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Follow their plan blindly. They know best.",
         effects: { systemSavvy: 5, academicCap: 5 },
         nextSceneId: 'EXAM_ANXIETY',
-        moduleLink: { moduleId: 'subject-specific-advice-protocol', moduleTitle: 'Subject Specific Advice', insight: 'Generic plans work for average results. Elite performance requires personalised strategy.' },
+        moduleLink: { moduleId: 'points-optimization-protocol', moduleTitle: 'Points Optimization', insight: 'Generic plans work for average results. Elite performance requires personalised strategy.' },
       },
       {
         text: "Adapt the plan to my own weak areas using a Retrospective Log.",

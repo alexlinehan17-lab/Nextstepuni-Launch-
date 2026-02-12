@@ -47,30 +47,97 @@ const DualTrackPlanner = () => {
 };
 
 const OralBlueprintSliders = () => {
-    const [quadrants, setQuadrants] = useState({ pron: 50, vocab: 50, struct: 50, comm: 50 });
-    const weights = { pron: 0.2, vocab: 0.2, struct: 0.3, comm: 0.3 };
-    const totalScore = (quadrants.pron * weights.pron) + (quadrants.vocab * weights.vocab) + (quadrants.struct * weights.struct) + (quadrants.comm * weights.comm);
+    const [q, setQ] = useState({ pron: 50, vocab: 50, struct: 50, comm: 50 });
 
-    const Slider = ({label, value, setter}: {label:string, value:number, setter:(v:number)=>void}) => (
-        <div>
-            <label className="text-xs font-bold">{label} ({value}%)</label>
-            <input type="range" min="0" max="100" value={value} onChange={e => setter(parseInt(e.target.value))} className="w-full accent-sky-500"/>
-        </div>
-    );
+    const sliders = [
+        { key: 'pron' as const, label: 'Pronunciation', weight: 20 },
+        { key: 'vocab' as const, label: 'Vocabulary', weight: 20 },
+        { key: 'struct' as const, label: 'Structure', weight: 30 },
+        { key: 'comm' as const, label: 'Communication', weight: 30 },
+    ];
+
+    const totalScore = Math.round(sliders.reduce((s, sl) => s + q[sl.key] * (sl.weight / 100), 0));
+
+    const getGrade = (score: number) => {
+        if (score >= 90) return { label: 'H1', color: '#10b981' };
+        if (score >= 80) return { label: 'H2', color: '#06b6d4' };
+        if (score >= 70) return { label: 'H3', color: '#0ea5e9' };
+        if (score >= 60) return { label: 'H4', color: '#3b82f6' };
+        if (score >= 50) return { label: 'H5', color: '#f59e0b' };
+        if (score >= 40) return { label: 'H6', color: '#f97316' };
+        return { label: 'H7', color: '#ef4444' };
+    };
+    const grade = getGrade(totalScore);
 
     return (
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Oral Exam Blueprint</h4>
-            <div className="grid grid-cols-2 gap-6 items-center">
-                <div className="space-y-4">
-                    <Slider label="Pronunciation (20%)" value={quadrants.pron} setter={v => setQuadrants({...quadrants, pron: v})}/>
-                    <Slider label="Vocabulary (20%)" value={quadrants.vocab} setter={v => setQuadrants({...quadrants, vocab: v})}/>
-                    <Slider label="Structure (30%)" value={quadrants.struct} setter={v => setQuadrants({...quadrants, struct: v})}/>
-                    <Slider label="Communication (30%)" value={quadrants.comm} setter={v => setQuadrants({...quadrants, comm: v})}/>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Adjust each quadrant to see how the weighted marking scheme affects your grade.</p>
+            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-8">Structure + Communication = 60% of marks. Focus there.</p>
+
+            {/* Slider cards */}
+            <div className="space-y-5 mb-8">
+                {sliders.map(s => {
+                    const value = q[s.key];
+                    const contribution = Math.round(value * (s.weight / 100));
+                    return (
+                        <div key={s.key}>
+                            <div className="flex items-center justify-between mb-2">
+                                <div className="flex items-center gap-2">
+                                    <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-200">{s.label}</span>
+                                    <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-sky-100 dark:bg-sky-950/30 text-sky-600 dark:text-sky-400">{s.weight}%</span>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                    <span className="text-sm font-bold text-zinc-700 dark:text-zinc-200">{value}</span>
+                                    <span className="text-[10px] text-zinc-400 dark:text-zinc-500">= {contribution} marks</span>
+                                </div>
+                            </div>
+                            <div className="w-full h-1.5 bg-zinc-100 dark:bg-zinc-900 rounded-full overflow-hidden mb-2">
+                                <motion.div
+                                    className="h-full rounded-full bg-sky-400"
+                                    animate={{ width: `${value}%` }}
+                                    transition={{ type: 'spring', stiffness: 120, damping: 20 }}
+                                />
+                            </div>
+                            <input type="range" min="0" max="100" value={value}
+                                onChange={e => setQ({ ...q, [s.key]: parseInt(e.target.value) })}
+                                className="w-full accent-sky-500" />
+                        </div>
+                    );
+                })}
+            </div>
+
+            {/* Score panel */}
+            <div className="p-5 rounded-xl border" style={{ backgroundColor: grade.color + '08', borderColor: grade.color + '30' }}>
+                <p className="text-[10px] font-bold uppercase tracking-wider text-center text-zinc-400 dark:text-zinc-500 mb-2">Weighted Oral Grade</p>
+                <div className="flex items-center justify-center gap-3 mb-4">
+                    <motion.span
+                        key={totalScore}
+                        className="text-4xl font-bold"
+                        style={{ color: grade.color }}
+                        initial={{ scale: 0.9 }}
+                        animate={{ scale: 1 }}
+                    >
+                        {totalScore}%
+                    </motion.span>
+                    <span className="text-lg font-bold px-3 py-1 rounded-full"
+                        style={{ backgroundColor: grade.color + '18', color: grade.color }}>
+                        {grade.label}
+                    </span>
                 </div>
-                <div className="text-center">
-                     <p className="text-sm text-zinc-500 dark:text-zinc-400">Your Oral Grade:</p>
-                     <p className="text-6xl font-semibold text-sky-500 tracking-tighter">{Math.round(totalScore)}%</p>
+                <div className="w-full h-2.5 bg-white/50 dark:bg-zinc-800/50 rounded-full overflow-hidden">
+                    <motion.div
+                        className="h-full rounded-full"
+                        style={{ backgroundColor: grade.color }}
+                        animate={{ width: `${totalScore}%` }}
+                        transition={{ type: 'spring', stiffness: 80, damping: 18 }}
+                    />
+                </div>
+                <div className="flex justify-between mt-1.5 px-0.5">
+                    {['H7','H6','H5','H4','H3','H2','H1'].map(g => (
+                        <span key={g} className={`text-[7px] ${grade.label === g ? 'font-bold' : ''}`}
+                            style={{ color: grade.label === g ? grade.color : '#a1a1aa' }}>{g}</span>
+                    ))}
                 </div>
             </div>
         </div>

@@ -163,32 +163,169 @@ const AllostaticLoadVisualizer = () => {
 
 const SleepCycleArchitect = () => {
     const [sleepHours, setSleepHours] = useState(8);
-    const remLost = Math.max(0, (8 - sleepHours) * 25); // Rough calc
+
+    const W = 400, H = 170;
+    const padL = 6, padR = 6, padT = 16, padB = 28;
+    const chartW = W - padL - padR;
+    const chartH = H - padT - padB;
+    const maxH = 9;
+    const toX = (h: number) => padL + (h / maxH) * chartW;
+    const toY = (d: number) => padT + d * chartH; // 0=awake(top), 1=deep(bottom)
+
+    /* Hypnogram waypoints: [hour, depth 0-1]
+       Early cycles: deep NREM dominant. Late cycles: REM dominant. */
+    const wave: [number, number][] = [
+        [0, 0], [0.2, 0.3], [0.5, 0.75], [0.8, 0.95], [1.1, 0.85],
+        [1.3, 0.5], [1.45, 0.12], [1.55, 0.12],    // Cycle 1 REM (short)
+        [1.65, 0.05],
+        [1.85, 0.35], [2.1, 0.8], [2.4, 0.9], [2.6, 0.6],
+        [2.8, 0.12], [3.1, 0.12],                   // Cycle 2 REM
+        [3.2, 0.05],
+        [3.4, 0.3], [3.7, 0.55], [3.9, 0.45],
+        [4.1, 0.12], [4.55, 0.12],                  // Cycle 3 REM (longer)
+        [4.65, 0.05],
+        [4.85, 0.25], [5.1, 0.35],
+        [5.3, 0.12], [6.0, 0.12],                   // Cycle 4 REM (long)
+        [6.1, 0.05],
+        [6.3, 0.2],
+        [6.5, 0.12], [7.5, 0.12],                   // Cycle 5 REM (very long)
+        [7.7, 0.08], [8.0, 0.05], [8.5, 0],
+    ];
+
+    const coords = wave.map(([h, d]) => [toX(h), toY(d)]);
+    let curvePath = `M ${coords[0][0]} ${coords[0][1]}`;
+    for (let i = 1; i < coords.length; i++) {
+        const [x, y] = coords[i];
+        const [px, py] = coords[i - 1];
+        curvePath += ` C ${px + (x - px) * 0.4} ${py}, ${px + (x - px) * 0.6} ${y}, ${x} ${y}`;
+    }
+    const areaPath = curvePath + ` L ${coords[coords.length - 1][0]} ${toY(0)} L ${toX(0)} ${toY(0)} Z`;
+
+    /* REM regions for highlight + loss calculation */
+    const remRegions = [
+        { start: 1.45, end: 1.55 },
+        { start: 2.8, end: 3.1 },
+        { start: 4.1, end: 4.55 },
+        { start: 5.3, end: 6.0 },
+        { start: 6.5, end: 7.5 },
+    ];
+    const totalRemMin = remRegions.reduce((s, r) => s + (r.end - r.start) * 60, 0);
+    const lostRemMin = remRegions.reduce((s, r) => {
+        if (sleepHours >= r.end) return s;
+        if (sleepHours <= r.start) return s + (r.end - r.start) * 60;
+        return s + (r.end - sleepHours) * 60;
+    }, 0);
+    const remLostPct = Math.round((lostRemMin / totalRemMin) * 100);
+
+    const stages = [
+        { d: 0, label: 'Awake' },
+        { d: 0.5, label: 'Light' },
+        { d: 1.0, label: 'Deep' },
+    ];
+    const hourMarks = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
     return (
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Sleep Cycle Architect</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Use the slider to see what happens when you cut sleep short. Notice what gets cut first.</p>
-            <div className="h-24 w-full bg-zinc-100 dark:bg-zinc-800 rounded-lg flex">
-                <div className="h-full bg-slate-400" style={{width: `${(sleepHours/9)*100}%`}}>
-                    {/* Cycles */}
-                    <div className="h-full w-full flex">
-                        {[...Array(5)].map((_, i) => (
-                            <div key={i} className={`h-full border-r border-white/20 relative ${i*2 > sleepHours ? 'opacity-20' : ''}`} style={{width: '20%'}}>
-                                <div className="absolute bottom-0 w-full h-1/2 bg-blue-400" />
-                                <div className="absolute bottom-1/2 w-full h-1/4 bg-sky-300" />
-                            </div>
-                        ))}
-                    </div>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Drag the slider to cut your sleep short and see what gets sacrificed.</p>
+            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">The REM-rich later cycles are the first to go.</p>
+
+            <div className="bg-zinc-50 dark:bg-zinc-900/30 rounded-xl border border-zinc-200 dark:border-zinc-700 p-2 mb-4">
+                <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto">
+                    <defs>
+                        <linearGradient id="sleepFill" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stopColor="#818cf8" stopOpacity="0.03" />
+                            <stop offset="100%" stopColor="#4f46e5" stopOpacity="0.2" />
+                        </linearGradient>
+                    </defs>
+
+                    {/* Stage gridlines */}
+                    {stages.map(({ d, label }) => (
+                        <g key={label}>
+                            <line x1={padL} y1={toY(d)} x2={W - padR} y2={toY(d)}
+                                stroke="#d4d4d8" strokeWidth="0.4" opacity="0.5" />
+                            <text x={padL + 4} y={toY(d) - 4} textAnchor="start"
+                                className="text-[5.5px]" fill="#a1a1aa">{label}</text>
+                        </g>
+                    ))}
+
+                    {/* Hour tick marks */}
+                    {hourMarks.map(h => (
+                        <g key={h}>
+                            <line x1={toX(h)} y1={H - padB} x2={toX(h)} y2={H - padB + 4}
+                                stroke="#d4d4d8" strokeWidth="0.5" />
+                            <text x={toX(h)} y={H - padB + 13} textAnchor="middle"
+                                className="text-[6px]" fill="#a1a1aa">{h}h</text>
+                        </g>
+                    ))}
+
+                    {/* REM highlight bands */}
+                    {remRegions.map((r, i) => (
+                        <rect key={i} x={toX(r.start)} y={padT}
+                            width={toX(r.end) - toX(r.start)} height={chartH * 0.18}
+                            fill="#f59e0b" opacity="0.12" rx="1" />
+                    ))}
+                    {/* REM label on wider bands */}
+                    {remRegions.slice(2).map((r, i) => (
+                        <text key={i} x={toX((r.start + r.end) / 2)} y={padT + 9}
+                            textAnchor="middle" className="text-[4.5px] font-bold" fill="#d97706" opacity="0.7">REM</text>
+                    ))}
+
+                    {/* Shaded area under curve */}
+                    <path d={areaPath} fill="url(#sleepFill)" />
+
+                    {/* Hypnogram wave */}
+                    <path d={curvePath} fill="none" stroke="#6366f1" strokeWidth="2" strokeLinecap="round" />
+
+                    {/* Cut-off overlay */}
+                    <rect x={toX(sleepHours)} y={0} width={W - toX(sleepHours)} height={H}
+                        fill="currentColor" className="text-zinc-100 dark:text-zinc-800" opacity="0.82" />
+
+                    {/* Wake-up line */}
+                    {sleepHours < 9 && (
+                        <>
+                            <line x1={toX(sleepHours)} y1={padT - 2} x2={toX(sleepHours)} y2={H - padB}
+                                stroke="#ef4444" strokeWidth="1.5" strokeDasharray="4 3" />
+                            <text x={toX(sleepHours)} y={padT - 5} textAnchor="middle"
+                                className="text-[5.5px] font-bold" fill="#ef4444">WAKE UP</text>
+                        </>
+                    )}
+                </svg>
+            </div>
+
+            {/* Slider */}
+            <div className="px-2">
+                <input type="range" min="4" max="9" step="0.5" value={sleepHours}
+                    onChange={e => setSleepHours(parseFloat(e.target.value))}
+                    className="w-full accent-orange-500" />
+                <div className="flex justify-between items-center mt-1">
+                    <span className="text-[10px] text-zinc-400 dark:text-zinc-500">4 hours</span>
+                    <span className="text-sm font-bold text-zinc-700 dark:text-zinc-200">{sleepHours} hours of sleep</span>
+                    <span className="text-[10px] text-zinc-400 dark:text-zinc-500">9 hours</span>
                 </div>
             </div>
-            <input type="range" min="4" max="9" step="0.5" value={sleepHours} onChange={e => setSleepHours(parseFloat(e.target.value))} className="w-full mt-4" />
-            <div className="text-center font-bold mt-2">{sleepHours.toFixed(1)} hours of sleep</div>
+
+            {/* Legend */}
+            <div className="flex justify-center gap-5 mt-4 mb-3">
+                <div className="flex items-center gap-1.5">
+                    <div className="w-3 h-2 rounded-sm bg-indigo-400" />
+                    <span className="text-[10px] text-zinc-500 dark:text-zinc-400">NREM (Deep + Light)</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                    <div className="w-3 h-2 rounded-sm bg-amber-400" />
+                    <span className="text-[10px] text-zinc-500 dark:text-zinc-400">REM Sleep</span>
+                </div>
+            </div>
+
+            {/* REM loss warning */}
             <AnimatePresence>
-            {remLost > 0 &&
-                <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-4 p-4 bg-rose-50 border border-rose-200 rounded-xl text-center text-sm">
-                   You've lost approximately <span className="font-bold text-rose-600">{remLost}%</span> of your critical REM sleep, impairing problem-solving and emotional regulation.
-                </motion.div>
-            }
+                {remLostPct > 0 && (
+                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+                        className="mt-3 p-4 bg-rose-50 dark:bg-rose-950/20 border border-rose-200 dark:border-rose-800/40 rounded-xl text-center text-sm text-zinc-700 dark:text-zinc-300"
+                    >
+                        You've lost approximately <span className="font-bold text-rose-600 dark:text-rose-400">{remLostPct}%</span> of your REM sleep — impairing problem-solving and emotional regulation.
+                    </motion.div>
+                )}
             </AnimatePresence>
         </div>
     );

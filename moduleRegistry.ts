@@ -47,7 +47,6 @@ export const moduleComponents: { [key: string]: ModuleComponent } = {
   'achieving-effective-learning-outcomes-protocol': lazy(() => import('./components/AchievingEffectiveLearningOutcomesModule')),
   'exam-hall-strategies-protocol': lazy(() => import('./components/ExamHallStrategiesModule')),
   'exam-crisis-management-protocol': lazy(() => import('./components/ExamCrisisManagementModule')),
-  'subject-specific-advice-protocol': lazy(() => import('./components/SubjectSpecificAdviceModule')),
   'growth-mindset-protocol': lazy(() => import('./components/GrowthMindsetModule')),
   'controllable-variables-protocol': lazy(() => import('./components/ControllableVariablesModule')),
   'reframing-progress-protocol': lazy(() => import('./components/ReframingProgressModule')),

@@ -15,18 +15,177 @@ const theme = emeraldTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 const DopingSimulator = () => {
-    const [doping, setDoping] = useState<'n'|'p'|null>(null);
-    return(
+    const [mode, setMode] = useState<'pure' | 'n' | 'p'>('pure');
+    const [viewed, setViewed] = useState(new Set<string>(['pure']));
+
+    const handleMode = (m: 'pure' | 'n' | 'p') => {
+        setMode(m);
+        setViewed(prev => new Set(prev).add(m));
+    };
+
+    const cx = 150, cy = 105, dist = 58, ar = 20;
+    const neighbors = [
+        { x: cx, y: cy - dist },
+        { x: cx + dist, y: cy },
+        { x: cx, y: cy + dist },
+        { x: cx - dist, y: cy },
+    ];
+
+    const label = mode === 'pure' ? 'Si' : mode === 'n' ? 'P' : 'B';
+    const group = mode === 'pure' ? 'IV' : mode === 'n' ? 'V' : 'III';
+    const valence = mode === 'pure' ? 4 : mode === 'n' ? 5 : 3;
+    const color = mode === 'pure' ? '#71717a' : mode === 'n' ? '#3b82f6' : '#f43f5e';
+    const bgColor = mode === 'pure' ? '#e4e4e7' : mode === 'n' ? '#dbeafe' : '#ffe4e6';
+
+    const info = {
+        pure: {
+            title: 'Pure Silicon (Intrinsic)',
+            desc: 'All 4 valence electrons are locked in covalent bonds with neighbours.',
+            result: 'No free charge carriers \u2192 poor conductor.',
+        },
+        n: {
+            title: 'N-Type Doping (Phosphorus)',
+            desc: 'Phosphorus has 5 valence electrons. Four bond with Si, but the 5th is free to move.',
+            result: 'Free electron = mobile negative charge carrier \u2192 conducts.',
+        },
+        p: {
+            title: 'P-Type Doping (Boron)',
+            desc: 'Boron has only 3 valence electrons. It can\u2019t complete all 4 bonds, leaving a gap.',
+            result: 'Missing electron = \u201chole\u201d = mobile positive charge carrier \u2192 conducts.',
+        },
+    };
+
+    const allViewed = viewed.size === 3;
+
+    return (
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Semiconductor Doping</h4>
-            <div className="flex justify-center gap-4 my-4">
-                <button onClick={()=>setDoping('n')} className="px-4 py-2 bg-blue-100 text-blue-800 rounded-lg">N-Type Doping</button>
-                <button onClick={()=>setDoping('p')} className="px-4 py-2 bg-rose-100 text-rose-800 rounded-lg">P-Type Doping</button>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">See how adding impurities creates free charge carriers in silicon.</p>
+            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">Toggle between states to understand N-type and P-type doping.</p>
+
+            {/* Toggle */}
+            <div className="flex justify-center gap-1 p-1 bg-zinc-100 dark:bg-zinc-900/50 rounded-full mb-6 max-w-xs mx-auto">
+                {([['pure', 'Pure Si'], ['n', 'N-Type'], ['p', 'P-Type']] as const).map(([key, lbl]) => (
+                    <button key={key} onClick={() => handleMode(key)}
+                        className={`flex-1 px-3 py-2 text-xs font-bold rounded-full transition-all ${
+                            mode === key
+                                ? 'bg-white dark:bg-zinc-700 shadow-sm text-zinc-800 dark:text-white'
+                                : 'text-zinc-500 dark:text-zinc-400'
+                        }`}
+                    >
+                        {lbl}
+                    </button>
+                ))}
             </div>
-            {doping && <p className="text-center text-sm">{doping === 'n' ? 'Introducing Phosphorus (Group V) creates a free electron.' : 'Introducing Boron (Group III) creates a "hole".'}</p>}
+
+            {/* Lattice SVG */}
+            <div className="bg-zinc-50 dark:bg-zinc-900/30 rounded-xl border border-zinc-200 dark:border-zinc-700 p-3 mb-4">
+                <svg viewBox="0 0 300 210" className="w-full mx-auto" style={{ maxWidth: 340 }}>
+                    {/* Bonds */}
+                    {neighbors.map((n, i) => {
+                        const isHole = mode === 'p' && i === 0;
+                        return (
+                            <line key={`b-${i}`}
+                                x1={cx} y1={cy} x2={n.x} y2={n.y}
+                                stroke={isHole ? '#f43f5e' : '#d4d4d8'}
+                                strokeWidth={isHole ? '1.5' : '2'}
+                                strokeDasharray={isHole ? '4 3' : 'none'}
+                                opacity={isHole ? 0.5 : 0.8}
+                            />
+                        );
+                    })}
+
+                    {/* Shared electron pairs on bonds */}
+                    {neighbors.map((n, i) => {
+                        const isHole = mode === 'p' && i === 0;
+                        const dx = n.x - cx, dy = n.y - cy;
+                        const len = Math.sqrt(dx * dx + dy * dy);
+                        const px = (-dy / len) * 3.5, py = (dx / len) * 3.5;
+                        const mx = cx + dx * 0.5, my = cy + dy * 0.5;
+                        return (
+                            <g key={`dots-${i}`}>
+                                <circle cx={mx + px} cy={my + py} r="2.5"
+                                    fill={isHole ? 'none' : '#a1a1aa'}
+                                    stroke={isHole ? '#f43f5e' : 'none'}
+                                    strokeWidth="1" strokeDasharray={isHole ? '2 1.5' : ''} />
+                                <circle cx={mx - px} cy={my - py} r="2.5" fill="#a1a1aa" />
+                            </g>
+                        );
+                    })}
+
+                    {/* Neighbor Si atoms */}
+                    {neighbors.map((n, i) => (
+                        <g key={`a-${i}`}>
+                            <circle cx={n.x} cy={n.y} r={ar} fill="#fafafa" stroke="#d4d4d8" strokeWidth="1.5" className="dark:fill-zinc-800 dark:stroke-zinc-600" />
+                            <text x={n.x} y={n.y + 4} textAnchor="middle" className="text-[10px] font-bold" fill="#71717a">Si</text>
+                        </g>
+                    ))}
+
+                    {/* Center atom */}
+                    <motion.g key={mode} initial={{ scale: 0.85 }} animate={{ scale: 1 }} transition={{ type: 'spring', stiffness: 200 }}>
+                        <circle cx={cx} cy={cy} r={ar + 2} fill={bgColor} stroke={color} strokeWidth="2" />
+                        <text x={cx} y={cy + 5} textAnchor="middle" className="text-[11px] font-bold" fill={color}>{label}</text>
+                    </motion.g>
+                    <text x={cx} y={cy + ar + 16} textAnchor="middle" className="text-[6px]" fill={color}>Group {group} \u00b7 {valence}e\u207b</text>
+
+                    {/* Free electron (N-type) */}
+                    {mode === 'n' && (
+                        <>
+                            <motion.g
+                                animate={{ x: [0, 14, -6, 12, 0], y: [0, -10, 8, -14, 0] }}
+                                transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut' }}
+                            >
+                                <circle cx={cx + 36} cy={cy - 36} r="7" fill="#3b82f6" />
+                                <text x={cx + 36} y={cy - 33.5} textAnchor="middle" className="text-[5px] font-bold" fill="white">e\u207b</text>
+                            </motion.g>
+                            <text x={cx + 58} y={cy - 48} textAnchor="start" className="text-[7px] font-bold" fill="#3b82f6">FREE</text>
+                            <text x={cx + 58} y={cy - 39} textAnchor="start" className="text-[7px] font-bold" fill="#3b82f6">ELECTRON</text>
+                        </>
+                    )}
+
+                    {/* Hole (P-type) */}
+                    {mode === 'p' && (
+                        <>
+                            <motion.circle
+                                cx={cx} cy={cy - dist * 0.5}
+                                r="8" fill="none" stroke="#f43f5e" strokeWidth="2" strokeDasharray="3 2"
+                                animate={{ scale: [1, 1.2, 1], opacity: [0.8, 1, 0.8] }}
+                                transition={{ repeat: Infinity, duration: 1.5 }}
+                            />
+                            <text x={cx + 14} y={cy - dist * 0.5 + 3} textAnchor="start" className="text-[7px] font-bold" fill="#f43f5e">HOLE</text>
+                        </>
+                    )}
+
+                    {/* Conductivity label */}
+                    <text x={285} y={200} textAnchor="end" className="text-[7px] font-bold"
+                        fill={mode === 'pure' ? '#a1a1aa' : color}>
+                        {mode === 'pure' ? 'INSULATOR' : 'CONDUCTOR'}
+                    </text>
+                </svg>
+            </div>
+
+            {/* Info panel */}
+            <AnimatePresence mode="wait">
+                <motion.div key={mode} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}
+                    className="p-4 rounded-xl border text-center"
+                    style={{ backgroundColor: color + '08', borderColor: color + '25' }}
+                >
+                    <p className="text-[10px] font-bold uppercase tracking-wider mb-1.5" style={{ color }}>{info[mode].title}</p>
+                    <p className="text-sm text-zinc-700 dark:text-zinc-300 mb-1">{info[mode].desc}</p>
+                    <p className="text-xs font-semibold" style={{ color }}>{info[mode].result}</p>
+                </motion.div>
+            </AnimatePresence>
+
+            {/* PN Junction insight */}
+            {allViewed && (
+                <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+                    className="text-center text-xs text-zinc-500 dark:text-zinc-400 mt-4">
+                    When N-type and P-type meet, electrons fill holes at the boundary \u2014 forming the <span className="font-semibold text-emerald-600 dark:text-emerald-400">PN Junction</span>, the foundation of every diode and transistor.
+                </motion.p>
+            )}
         </div>
     );
-}
+};
 
 // --- MODULE COMPONENT ---
 const AppliedSciencesModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {

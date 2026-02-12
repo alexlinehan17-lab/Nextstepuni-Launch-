@@ -15,24 +15,159 @@ const theme = skyTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 const PlanningParadoxVisualizer = () => {
-    const [plan, setPlan] = useState<'forward' | 'reverse' | null>(null);
-    return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Planning Paradox</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">How does your effort get distributed over 6 months?</p>
-            <div className="flex justify-center gap-3 mb-6">
-                <button onClick={() => setPlan('forward')} className={`px-4 py-2 text-sm font-bold rounded-lg border ${plan === 'forward' ? 'bg-rose-500 text-white border-rose-500' : 'bg-rose-50 text-rose-800 border-rose-200'}`}>Forward Plan</button>
-                <button onClick={() => setPlan('reverse')} className={`px-4 py-2 text-sm font-bold rounded-lg border ${plan === 'reverse' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-emerald-50 text-emerald-800 border-emerald-200'}`}>Reverse Plan</button>
-            </div>
-            <div className="w-full h-10 bg-zinc-100 dark:bg-zinc-800 rounded-lg">
-                <motion.div
-                    className={`h-full rounded-lg ${plan === 'forward' ? 'bg-rose-500' : 'bg-emerald-500'}`}
-                    initial={{ width: '0%', clipPath: 'polygon(0 0, 0% 0, 0% 100%, 0% 100%)' }}
-                    animate={plan === 'forward' ? { width: '100%', clipPath: ['polygon(0 0, 0% 0, 0% 100%, 0% 100%)', 'polygon(0 0, 10% 0, 95% 100%, 0% 100%)', 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)']} : { width: '100%', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'}}
-                    transition={{ duration: 2, ease: 'easeInOut', times: [0, 0.8, 1]}}
+    const [revealed, setRevealed] = useState(false);
+
+    const W = 440, H = 260;
+    const padL = 8, padR = 8, padT = 28, padB = 44;
+    const chartW = W - padL - padR, chartH = H - padT - padB;
+    const toX = (f: number) => padL + f * chartW;
+    const toY = (f: number) => padT + (1 - f) * chartH;
+
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
+    // Forward plan: minimal effort early, exponential panic at end
+    const fwdEffort = [0.08, 0.10, 0.15, 0.30, 0.72, 1.0];
+    // Reverse plan: steady, strategic, tapers down for rest before exams
+    const revEffort = [0.70, 0.65, 0.60, 0.55, 0.45, 0.30];
+    // Stress lines
+    const fwdStress = [0.12, 0.15, 0.25, 0.55, 0.85, 1.0];
+    const revStress = [0.30, 0.25, 0.22, 0.20, 0.18, 0.10];
+
+    const buildArea = (data: number[]) => {
+        const pts = data.map((v, i) => ({ x: toX(i / (data.length - 1)), y: toY(v) }));
+        let d = `M ${pts[0].x} ${toY(0)} L ${pts[0].x} ${pts[0].y}`;
+        for (let i = 1; i < pts.length; i++) {
+            const cx1 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.4;
+            const cx2 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.6;
+            d += ` C ${cx1} ${pts[i - 1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`;
+        }
+        d += ` L ${pts[pts.length - 1].x} ${toY(0)} Z`;
+        return d;
+    };
+
+    const buildLine = (data: number[]) => {
+        const pts = data.map((v, i) => ({ x: toX(i / (data.length - 1)), y: toY(v) }));
+        let d = `M ${pts[0].x} ${pts[0].y}`;
+        for (let i = 1; i < pts.length; i++) {
+            const cx1 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.4;
+            const cx2 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.6;
+            d += ` C ${cx1} ${pts[i - 1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`;
+        }
+        return d;
+    };
+
+    const fwdPhases = [
+        { label: 'Procrastinate', x1: 0, x2: 0.33, color: '#fca5a5' },
+        { label: 'Catch up', x1: 0.33, x2: 0.66, color: '#f87171' },
+        { label: 'Cram & panic', x1: 0.66, x2: 1, color: '#ef4444' },
+    ];
+    const revPhases = [
+        { label: 'Set targets & past papers', x1: 0, x2: 0.33, color: '#6ee7b7' },
+        { label: 'Fill gaps & refine', x1: 0.33, x2: 0.66, color: '#34d399' },
+        { label: 'Taper & rest', x1: 0.66, x2: 1, color: '#10b981' },
+    ];
+
+    const Chart = ({ effort, stress, phases, areaColor, areaId, stressColor, label }: {
+        effort: number[]; stress: number[]; phases: { label: string; x1: number; x2: number; color: string }[];
+        areaColor: string; areaId: string; stressColor: string; label: string;
+    }) => (
+        <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
+            <defs>
+                <linearGradient id={areaId} x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor={areaColor} stopOpacity="0.5" />
+                    <stop offset="100%" stopColor={areaColor} stopOpacity="0.05" />
+                </linearGradient>
+            </defs>
+            {/* Grid lines */}
+            {[0.25, 0.5, 0.75, 1.0].map(v => (
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />
+            ))}
+            {/* Baseline */}
+            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#a1a1aa" strokeOpacity="0.3" />
+            {/* Effort area */}
+            <motion.path
+                d={buildArea(effort)}
+                fill={`url(#${areaId})`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+            />
+            {/* Effort line */}
+            <motion.path
+                d={buildLine(effort)}
+                fill="none" stroke={areaColor} strokeWidth="2.5" strokeLinecap="round"
+                initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
+                transition={{ duration: 1.2, ease: 'easeOut' }}
+            />
+            {/* Stress line (dashed) */}
+            <motion.path
+                d={buildLine(stress)}
+                fill="none" stroke={stressColor} strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
+                initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
+                transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
+            />
+            {/* Effort dots */}
+            {effort.map((v, i) => (
+                <motion.circle key={i} cx={toX(i / (effort.length - 1))} cy={toY(v)} r="3.5" fill={areaColor}
+                    initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 * i + 0.3 }}
                 />
-            </div>
-            <div className="grid grid-cols-3 text-xs text-zinc-400 mt-2"><span>Start</span><span className="text-center">Mid-Point</span><span className="text-right">Exam</span></div>
+            ))}
+            {/* Y-axis labels */}
+            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text>
+            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>
+            {/* Month labels */}
+            {months.map((m, i) => (
+                <text key={m} x={toX(i / (months.length - 1))} y={toY(0) + 14} fontSize="9" fill="#a1a1aa" textAnchor="middle" fontWeight="600">{m}</text>
+            ))}
+            {/* Phase labels */}
+            {phases.map((p, i) => (
+                <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
+            ))}
+            {/* Chart label */}
+            <text x={W / 2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">{label}</text>
+            {/* Legend */}
+            <line x1={W - padR - 88} x2={W - padR - 72} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
+            <text x={W - padR - 68} y={17} fontSize="8" fill="#a1a1aa">Effort</text>
+            <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke={stressColor} strokeWidth="1.5" strokeDasharray="4 2" />
+            <text x={W - padR - 24} y={17} fontSize="8" fill="#a1a1aa">Stress</text>
+        </svg>
+    );
+
+    return (
+        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Planning Paradox</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Two students. Same 6 months. Opposite strategies.</p>
+
+            {!revealed ? (
+                <div className="text-center">
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Most students start at the beginning and plan forward. What does that effort curve actually look like?</p>
+                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-sky-500 text-white hover:bg-sky-600 transition-colors">
+                        Reveal the Paradox
+                    </button>
+                </div>
+            ) : (
+                <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
+                    <div className="grid md:grid-cols-2 gap-4 mb-5">
+                        <div className="rounded-lg border border-rose-200 dark:border-rose-900 bg-rose-50/50 dark:bg-rose-950/20 p-3">
+                            <Chart effort={fwdEffort} stress={fwdStress} phases={fwdPhases}
+                                areaColor="#ef4444" areaId="fwd-grad" stressColor="#f59e0b" label="Forward Planner" />
+                        </div>
+                        <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
+                            <Chart effort={revEffort} stress={revStress} phases={revPhases}
+                                areaColor="#10b981" areaId="rev-grad" stressColor="#f59e0b" label="Reverse Planner" />
+                        </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-4 text-sm">
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
+                            <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Low effort early</strong> feels comfortable but creates a debt. Stress explodes in the final weeks when it's too late to fill gaps.</p>
+                        </div>
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
+                            <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Front-loaded effort</strong> feels harder at first, but stress decreases over time. You arrive at the exam rested and confident.</p>
+                        </div>
+                    </div>
+                </motion.div>
+            )}
         </div>
     );
 };
