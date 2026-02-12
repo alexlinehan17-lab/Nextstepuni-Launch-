@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Cpu, Moon, Coffee, Zap, Repeat, ClipboardCheck, CheckCircle2
@@ -214,6 +214,291 @@ const GlycemicIndexSimulator = () => {
     );
 };
 
+const MotionDiv = motion.div as any;
+
+const WAKE_OPTIONS = [
+  { label: '6:00 AM', hour: 6 },
+  { label: '7:00 AM', hour: 7 },
+  { label: '8:00 AM', hour: 8 },
+  { label: '9:00 AM', hour: 9 },
+];
+
+const formatTime = (hour24: number): string => {
+  const h = Math.floor(hour24) % 24;
+  const m = Math.round((hour24 - Math.floor(hour24)) * 60);
+  const period = h >= 12 ? 'PM' : 'AM';
+  const display = h === 0 ? 12 : h > 12 ? h - 12 : h;
+  return `${display}:${m.toString().padStart(2, '0')} ${period}`;
+};
+
+const getZone = (hoursAwake: number): { color: string; bgColor: string; label: string } => {
+  if (hoursAwake < 12) return { color: '#22c55e', bgColor: 'rgba(34,197,94,0.15)', label: 'Sharp' };
+  if (hoursAwake < 15) return { color: '#eab308', bgColor: 'rgba(234,179,8,0.15)', label: 'Declining' };
+  if (hoursAwake < 17) return { color: '#f97316', bgColor: 'rgba(249,115,22,0.15)', label: 'Impaired — equivalent to 0.03% BAC' };
+  if (hoursAwake < 19) return { color: '#ef4444', bgColor: 'rgba(239,68,68,0.15)', label: 'Severely Impaired — equivalent to 0.05% BAC (legally drunk)' };
+  return { color: '#991b1b', bgColor: 'rgba(153,27,27,0.2)', label: 'Dangerous — equivalent to 0.08%+ BAC' };
+};
+
+const getMilestone = (hoursAwake: number): string | null => {
+  if (hoursAwake >= 19) return 'You are now LEGALLY DRUNK in terms of cognitive function';
+  if (hoursAwake >= 17) return 'You are now as impaired as someone who has been drinking';
+  if (hoursAwake >= 16) return 'Working memory reduced by 30%';
+  return null;
+};
+
+const CognitiveImpairmentClock = () => {
+  const [wakeHour, setWakeHour] = useState<number | null>(null);
+  const [hoursAwake, setHoursAwake] = useState(0);
+  const [playing, setPlaying] = useState(false);
+  const [paused, setPaused] = useState(false);
+  const [finished, setFinished] = useState(false);
+  const [lastMilestone, setLastMilestone] = useState<string | null>(null);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const MAX_HOURS = 22;
+
+  useEffect(() => {
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, []);
+
+  const startAnimation = () => {
+    if (wakeHour === null) return;
+    setHoursAwake(0);
+    setFinished(false);
+    setLastMilestone(null);
+    setPlaying(true);
+    setPaused(false);
+
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    let current = 0;
+    intervalRef.current = setInterval(() => {
+      current += 0.5;
+      setHoursAwake(current);
+
+      const milestone = getMilestone(current);
+      if (milestone) setLastMilestone(milestone);
+
+      if (current >= MAX_HOURS) {
+        if (intervalRef.current) clearInterval(intervalRef.current);
+        intervalRef.current = null;
+        setPlaying(false);
+        setFinished(true);
+      }
+    }, 500);
+  };
+
+  const togglePause = () => {
+    if (paused) {
+      let current = hoursAwake;
+      intervalRef.current = setInterval(() => {
+        current += 0.5;
+        setHoursAwake(current);
+
+        const milestone = getMilestone(current);
+        if (milestone) setLastMilestone(milestone);
+
+        if (current >= MAX_HOURS) {
+          if (intervalRef.current) clearInterval(intervalRef.current);
+          intervalRef.current = null;
+          setPlaying(false);
+          setFinished(true);
+        }
+      }, 500);
+      setPaused(false);
+    } else {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+      intervalRef.current = null;
+      setPaused(true);
+    }
+  };
+
+  const reset = () => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    intervalRef.current = null;
+    setWakeHour(null);
+    setHoursAwake(0);
+    setPlaying(false);
+    setPaused(false);
+    setFinished(false);
+    setLastMilestone(null);
+  };
+
+  const zone = getZone(hoursAwake);
+  const meterPercent = Math.min((hoursAwake / MAX_HOURS) * 100, 100);
+  const currentTime = wakeHour !== null ? formatTime(wakeHour + hoursAwake) : '';
+  const impairedTime = wakeHour !== null ? formatTime(wakeHour + 17) : '';
+  const decliningTime = wakeHour !== null ? formatTime(wakeHour + 15) : '';
+
+  // Meter gradient stops
+  const meterGradient = `linear-gradient(to right, #22c55e 0%, #22c55e 54%, #eab308 54%, #eab308 68%, #f97316 68%, #f97316 77%, #ef4444 77%, #ef4444 86%, #991b1b 86%, #991b1b 100%)`;
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+        Cognitive Impairment Clock
+      </h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">
+        Pick your wake-up time and watch how wakefulness erodes your brain power throughout the day.
+      </p>
+
+      {/* Wake time selection */}
+      {!playing && !finished && (
+        <MotionDiv
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="flex flex-col items-center gap-5"
+        >
+          <p className="text-sm font-medium text-zinc-600 dark:text-zinc-300">What time do you wake up?</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {WAKE_OPTIONS.map(opt => (
+              <button
+                key={opt.hour}
+                onClick={() => { setWakeHour(opt.hour); setHoursAwake(0); setFinished(false); setLastMilestone(null); }}
+                className={`px-5 py-2.5 text-sm font-bold rounded-lg border transition-all ${
+                  wakeHour === opt.hour
+                    ? 'bg-slate-700 text-white border-slate-700 dark:bg-slate-500 dark:border-slate-500'
+                    : 'bg-zinc-50 text-zinc-700 border-zinc-200 hover:border-zinc-400 dark:bg-zinc-700 dark:text-zinc-200 dark:border-zinc-600 dark:hover:border-zinc-400'
+                }`}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
+          {wakeHour !== null && (
+            <MotionDiv initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}>
+              <button
+                onClick={startAnimation}
+                className="mt-2 px-8 py-3 bg-slate-700 hover:bg-slate-800 dark:bg-slate-500 dark:hover:bg-slate-400 text-white font-bold rounded-xl transition-all text-sm"
+              >
+                Play Day
+              </button>
+            </MotionDiv>
+          )}
+        </MotionDiv>
+      )}
+
+      {/* Animation in progress */}
+      {(playing || paused) && wakeHour !== null && (
+        <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6">
+          {/* Clock display */}
+          <div className="text-center">
+            <p className="text-6xl md:text-7xl font-mono font-bold text-zinc-800 dark:text-white tracking-tight">
+              {currentTime}
+            </p>
+            <p className="mt-2 text-lg font-semibold" style={{ color: zone.color }}>
+              {Math.floor(hoursAwake)} hours awake
+            </p>
+          </div>
+
+          {/* Impairment meter */}
+          <div className="space-y-2">
+            <div className="flex justify-between text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">
+              <span>Sharp</span>
+              <span>Declining</span>
+              <span>Impaired</span>
+              <span>Drunk</span>
+            </div>
+            <div className="relative h-6 rounded-full overflow-hidden bg-zinc-100 dark:bg-zinc-700">
+              <div
+                className="absolute inset-0 rounded-full"
+                style={{ background: meterGradient, opacity: 0.25 }}
+              />
+              <MotionDiv
+                className="h-full rounded-full"
+                style={{ background: meterGradient, width: `${meterPercent}%` }}
+                initial={false}
+                animate={{ width: `${meterPercent}%` }}
+                transition={{ duration: 0.4, ease: 'linear' }}
+              />
+            </div>
+          </div>
+
+          {/* Zone label */}
+          <MotionDiv
+            key={zone.label}
+            initial={{ opacity: 0, y: 4 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center px-4 py-2 rounded-lg mx-auto max-w-md"
+            style={{ backgroundColor: zone.bgColor }}
+          >
+            <p className="text-sm font-bold" style={{ color: zone.color }}>{zone.label}</p>
+          </MotionDiv>
+
+          {/* Milestone flash */}
+          {lastMilestone && (
+            <MotionDiv
+              key={lastMilestone}
+              initial={{ opacity: 0, scale: 0.85 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+              className="text-center p-4 rounded-xl border-2 border-red-300 dark:border-red-700 bg-red-50 dark:bg-red-900/20"
+            >
+              <p className="text-sm md:text-base font-extrabold text-red-700 dark:text-red-400">
+                {lastMilestone}
+              </p>
+            </MotionDiv>
+          )}
+
+          {/* Controls */}
+          <div className="flex justify-center gap-3 pt-2">
+            <button
+              onClick={togglePause}
+              className="px-5 py-2 text-xs font-bold rounded-lg border border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200 hover:border-zinc-400 transition-all"
+            >
+              {paused ? 'Resume' : 'Pause'}
+            </button>
+            <button
+              onClick={reset}
+              className="px-5 py-2 text-xs font-bold rounded-lg border border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200 hover:border-zinc-400 transition-all"
+            >
+              Reset
+            </button>
+          </div>
+        </MotionDiv>
+      )}
+
+      {/* Finished summary */}
+      {finished && wakeHour !== null && (
+        <MotionDiv
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="space-y-5"
+        >
+          <div className="text-center space-y-3">
+            <p className="text-5xl md:text-6xl font-mono font-bold text-red-600 dark:text-red-400">
+              {impairedTime}
+            </p>
+            <p className="text-sm text-zinc-500 dark:text-zinc-400">
+              This is when you become cognitively impaired.
+            </p>
+          </div>
+
+          <div className="bg-zinc-50 dark:bg-zinc-900/40 rounded-xl p-6 space-y-3 border border-zinc-200 dark:border-zinc-700">
+            <p className="text-sm text-zinc-700 dark:text-zinc-300">
+              <span className="font-bold">If you wake at {formatTime(wakeHour)}</span>, your cognition starts declining by{' '}
+              <span className="font-bold" style={{ color: '#eab308' }}>{decliningTime}</span> and you are cognitively impaired by{' '}
+              <span className="font-bold" style={{ color: '#ef4444' }}>{impairedTime}</span>.
+            </p>
+            <p className="text-sm font-bold text-red-700 dark:text-red-400">
+              Studying after {impairedTime} is like studying drunk.
+            </p>
+          </div>
+
+          <div className="flex justify-center">
+            <button
+              onClick={reset}
+              className="px-8 py-3 bg-slate-700 hover:bg-slate-800 dark:bg-slate-500 dark:hover:bg-slate-400 text-white font-bold rounded-xl transition-all text-sm"
+            >
+              Try a Different Wake Time
+            </button>
+          </div>
+        </MotionDiv>
+      )}
+    </div>
+  );
+};
+
 const HighPerformanceChecklist = () => {
     const [checks, setChecks] = useState<{[key: string]: boolean}>({});
     const toggle = (key: string) => setChecks(prev => ({...prev, [key]: !prev[key]}));
@@ -286,6 +571,7 @@ const ControllableVariablesModule: React.FC<{ onBack: () => void; progress: Modu
               <p>Learning is a two-stage process. The first stage, <Highlight description="The initial process of taking in new information when you are awake. These memory traces are fragile." theme={theme}>encoding</Highlight>, happens when you study. But this new information is fragile, temporarily stored in your brain's 'RAM'--the <Highlight description="A seahorse-shaped structure in the brain that acts as a temporary buffer for new memories." theme={theme}>hippocampus</Highlight>. Without the second stage, <Highlight description="The process by which fragile, short-term memories are stabilized and transferred to the neocortex for long-term storage. This happens primarily during sleep." theme={theme}>consolidation</Highlight>, that learning is erased. Sleep is the "save button." A student who studies for five hours but sleeps for five has learned less than a student who studies for three and sleeps for eight.</p>
               <p>Your brain cycles through different types of sleep. <Highlight description="Deep, non-rapid eye movement sleep that is critical for consolidating declarative memories (facts, dates, definitions)." theme={theme}>Slow-Wave Sleep (SWS)</Highlight>, dominant in the first half of the night, is for saving facts. <Highlight description="A stage of sleep characterized by vivid dreams and crucial for procedural memory (skills), creative problem-solving, and emotional regulation." theme={theme}>REM Sleep</Highlight>, dominant in the second half, is for making connections and solving problems. Cutting sleep short disproportionately sacrifices REM sleep, killing your creativity and problem-solving ability for the next day.</p>
               <p>The data on sleep deprivation is sobering. After just one week of 5-hour nights, students' working memory accuracy drops by a catastrophic <Highlight description="A landmark sleep study finding: restricting sleep to 5 hours per night for one week causes a 17% drop in working memory accuracy--enough to turn an A into a C." theme={theme}>17%</Highlight>--enough to turn an A into a C. Even more striking is the <Highlight description="The scientifically established fact that after 17-19 hours of continuous wakefulness, your cognitive impairment is equivalent to having a Blood Alcohol Concentration (BAC) of 0.05%." theme={theme}>Intoxication Equivalence</Highlight>: after 17-19 hours awake, your cognitive impairment equals a Blood Alcohol Concentration of 0.05%. If you wake up at 6 AM, by 11 PM you are functionally as impaired as someone who is legally drunk. And "weekend catch-up" is a myth--two nights of recovery sleep are not enough to restore your executive functions.</p>
+              <CognitiveImpairmentClock />
             </ReadingSection>
           )}
           {activeSection === 2 && (

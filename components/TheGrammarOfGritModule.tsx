@@ -114,15 +114,15 @@ const ThoughtReframer = () => {
       </div>
 
       {/* Toggles */}
-      <div className="space-y-5 mb-8">
+      <div className="space-y-6 mb-8">
         {toggleItems.map((item) => (
-          <div key={item.label} className="flex flex-col sm:flex-row sm:items-center gap-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 w-full sm:w-44 shrink-0">
+          <div key={item.label} className="flex flex-col items-center gap-2">
+            <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
               {item.label}
             </span>
-            <div className="flex items-center gap-3 flex-1 min-w-0">
+            <div className="flex items-center gap-4">
               <span
-                className={`text-xs font-medium transition-colors truncate ${
+                className={`text-xs font-medium text-right w-40 sm:w-48 shrink-0 transition-colors ${
                   !item.value
                     ? 'text-rose-600 dark:text-rose-400 font-bold'
                     : 'text-zinc-400 dark:text-zinc-500'
@@ -144,7 +144,7 @@ const ThoughtReframer = () => {
                 />
               </button>
               <span
-                className={`text-xs font-medium transition-colors truncate ${
+                className={`text-xs font-medium text-left w-40 sm:w-48 shrink-0 transition-colors ${
                   item.value
                     ? 'text-emerald-600 dark:text-emerald-400 font-bold'
                     : 'text-zinc-400 dark:text-zinc-500'

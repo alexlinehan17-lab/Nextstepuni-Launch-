@@ -142,6 +142,201 @@ const ReframeChallenge = () => {
 };
 
 
+const feedbackPairs = [
+  {
+    verdict: "This essay is poorly written.",
+    data: "Your argument structure needs clearer topic sentences and supporting evidence in each paragraph.",
+    shift: "Shift: vague verdict \u2192 specific, actionable data",
+  },
+  {
+    verdict: "You're just not a maths person.",
+    data: "Your current approach to maths isn't working yet. Let's identify which specific steps are causing confusion.",
+    shift: "Shift: identity label \u2192 strategy problem",
+  },
+  {
+    verdict: "This is careless work.",
+    data: "There are 4 calculation errors here. A final check-through step would catch these.",
+    shift: "Shift: character judgment \u2192 countable, fixable issue",
+  },
+  {
+    verdict: "You should know this by now.",
+    data: "This concept hasn't stuck yet. Try explaining it to someone else to find where your understanding breaks down.",
+    shift: "Shift: time-based shame \u2192 retrieval practice suggestion",
+  },
+  {
+    verdict: "Disappointing result.",
+    data: "You scored 52%. The areas to focus on are Q3 and Q5 \u2014 those are the highest-value gaps to close.",
+    shift: "Shift: emotional verdict \u2192 strategic data",
+  },
+  {
+    verdict: "You need to try harder.",
+    data: "Your effort needs to be more targeted. Spend 20 minutes on active recall instead of 40 minutes re-reading.",
+    shift: "Shift: vague effort demand \u2192 specific method change",
+  },
+];
+
+const writeYourOwnTranslations = [
+  "That feedback is pointing to a specific skill gap I can work on \u2014 it\u2019s data, not a label.",
+  "This tells me my current strategy isn\u2019t working yet. Time to try a different approach.",
+  "The feedback is about my method, not my ability. I can adjust and improve.",
+];
+
+const MotionDiv = motion.div as any;
+
+const FeedbackTranslator = () => {
+  const [flipped, setFlipped] = useState<boolean[]>(Array(6).fill(false));
+  const [customFeedback, setCustomFeedback] = useState('');
+  const [selectedTranslation, setSelectedTranslation] = useState<number | null>(null);
+
+  const translatedCount = flipped.filter(Boolean).length;
+  const allTranslated = translatedCount === 6;
+
+  const handleFlip = (index: number) => {
+    if (flipped[index]) return;
+    const next = [...flipped];
+    next[index] = true;
+    setFlipped(next);
+  };
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+        Feedback Translator
+      </h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-2">
+        Click each card to translate harsh "verdict language" into constructive "data language."
+      </p>
+      <p className="text-center text-xs font-semibold text-amber-600 dark:text-amber-400 mb-8">
+        {translatedCount}/6 translated
+      </p>
+
+      <div className="space-y-4">
+        {feedbackPairs.map((pair, i) => (
+          <div key={i}>
+            <AnimatePresence mode="wait">
+              {!flipped[i] ? (
+                <MotionDiv
+                  key={`verdict-${i}`}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, rotateY: 90 }}
+                  transition={{ duration: 0.3 }}
+                  onClick={() => handleFlip(i)}
+                  className="cursor-pointer p-6 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 hover:shadow-md transition-shadow"
+                >
+                  <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-rose-500 dark:text-rose-400 mb-2">
+                    Verdict
+                  </span>
+                  <p className="font-serif italic text-rose-800 dark:text-rose-200 text-base">
+                    "{pair.verdict}"
+                  </p>
+                  <p className="text-[11px] text-rose-400 dark:text-rose-500 mt-2">Click to translate</p>
+                </MotionDiv>
+              ) : (
+                <MotionDiv
+                  key={`data-${i}`}
+                  initial={{ opacity: 0, rotateY: -90 }}
+                  animate={{ opacity: 1, rotateY: 0 }}
+                  transition={{ duration: 0.35 }}
+                  className="p-6 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800"
+                >
+                  <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-emerald-500 dark:text-emerald-400 mb-2">
+                    Data
+                  </span>
+                  <p className="text-emerald-900 dark:text-emerald-100 text-base font-medium">
+                    "{pair.data}"
+                  </p>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-3 italic">
+                    {pair.shift}
+                  </p>
+                </MotionDiv>
+              )}
+            </AnimatePresence>
+          </div>
+        ))}
+      </div>
+
+      <AnimatePresence>
+        {allTranslated && (
+          <MotionDiv
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-8 p-6 rounded-xl bg-zinc-900 text-white text-center"
+          >
+            <p className="font-bold text-emerald-400">
+              You've learned to hear data, not verdicts.
+            </p>
+            <p className="text-sm text-zinc-400 mt-1">
+              Every piece of feedback is a GPS coordinate, not a destination.
+            </p>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
+
+      {/* Write Your Own section */}
+      <div className="mt-10 pt-8 border-t border-zinc-200 dark:border-zinc-700">
+        <h5 className="font-serif text-lg font-semibold text-zinc-800 dark:text-white text-center mb-2">
+          Write Your Own
+        </h5>
+        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-4">
+          Type a piece of feedback you've received, then pick the translation that fits best.
+        </p>
+        <input
+          type="text"
+          value={customFeedback}
+          onChange={(e) => {
+            setCustomFeedback(e.target.value);
+            setSelectedTranslation(null);
+          }}
+          placeholder="e.g. You always make silly mistakes..."
+          className="w-full bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 rounded-xl px-4 py-3 text-sm focus:border-amber-500 outline-none transition-colors"
+        />
+        <AnimatePresence>
+          {customFeedback.trim().length > 0 && (
+            <MotionDiv
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              className="mt-4 space-y-3"
+            >
+              <p className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
+                Pick your growth translation:
+              </p>
+              {writeYourOwnTranslations.map((t, i) => (
+                <button
+                  key={i}
+                  onClick={() => setSelectedTranslation(i)}
+                  className={`w-full text-left p-4 rounded-xl border text-sm transition-colors ${
+                    selectedTranslation === i
+                      ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-300 dark:border-emerald-700 text-emerald-800 dark:text-emerald-200 font-medium'
+                      : 'bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                  }`}
+                >
+                  {t}
+                </button>
+              ))}
+              <AnimatePresence>
+                {selectedTranslation !== null && (
+                  <MotionDiv
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-center"
+                  >
+                    <p className="text-sm text-emerald-700 dark:text-emerald-300 font-medium">
+                      You just turned a verdict into data. That's the growth mindset in action.
+                    </p>
+                  </MotionDiv>
+                )}
+              </AnimatePresence>
+            </MotionDiv>
+          )}
+        </AnimatePresence>
+      </div>
+    </div>
+  );
+};
+
+
 // --- MODULE COMPONENT ---
 const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
@@ -210,6 +405,7 @@ const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
             <ReadingSection title="Feedback is Fuel, Not a Verdict." eyebrow="Step 5" icon={MessageSquareQuote} theme={theme}>
               <p>A fixed mindset hears criticism and thinks: "They're telling me I'm stupid." It treats feedback as a final verdict on your ability. This is why people with a fixed mindset get defensive or give up when they get a bad grade or tough correction from a teacher.</p>
               <p>A growth mindset hears the exact same criticism and thinks: "They're giving me data I can use to improve." It sees feedback as fuel for the engine. It's not about you, it's about your current strategy. A bad grade isn't a label, it's a diagnostic telling you where the path needs more work. Learning to separate your performance from your identity is a critical upgrade.</p>
+              <FeedbackTranslator />
               <MicroCommitment theme={theme}>
                 <p>Go back to a piece of work where you got a lower grade than you wanted. Find one comment from the teacher and write down what strategy it's telling you to try next time.</p>
               </MicroCommitment>

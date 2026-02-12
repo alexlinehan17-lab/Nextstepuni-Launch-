@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import {
   BrainCircuit, Wrench, BookOpen, BarChart3, ClipboardCheck, ShieldCheck
@@ -74,6 +74,212 @@ const StudyMethodGrader = () => {
     );
 }
 
+const GRID_COLS = 12;
+const GRID_ROWS = 8;
+const TOTAL_CELLS = GRID_COLS * GRID_ROWS;
+
+const getPathColor = (walked: number): string => {
+  if (walked <= 0) return '#4ade80'; // green-400 — fresh grass
+  if (walked === 1) return '#86efac'; // green-300 — slightly bent
+  if (walked === 2) return '#bef264'; // lime-300 — worn grass
+  if (walked === 3) return '#d9f99d'; // lime-200 — yellowing
+  if (walked === 4) return '#fde68a'; // amber-200 — well-trodden
+  return '#d4a373'; // warm brown — established dirt path
+};
+
+const DesirePathMaker = () => {
+  const [grid, setGrid] = useState<number[]>(() => new Array(TOTAL_CELLS).fill(0));
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [resultMessage, setResultMessage] = useState<string | null>(null);
+  const animationRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Clean up any running animation on unmount
+  useEffect(() => {
+    return () => {
+      if (animationRef.current) clearTimeout(animationRef.current);
+    };
+  }, []);
+
+  const strongPathCount = useCallback((g: number[]) => g.filter(v => v >= 3).length, []);
+
+  const handleCellClick = (index: number) => {
+    if (isAnimating) return;
+    setResultMessage(null);
+    setGrid(prev => {
+      const next = [...prev];
+      next[index] = Math.min(next[index] + 1, 5);
+      return next;
+    });
+  };
+
+  const handleDaysPass = () => {
+    if (isAnimating) return;
+    setResultMessage(null);
+    setGrid(prev => prev.map(v => Math.max(v - 1, 0)));
+  };
+
+  const handleReset = () => {
+    if (isAnimating) return;
+    setGrid(new Array(TOTAL_CELLS).fill(0));
+    setResultMessage(null);
+  };
+
+  // Animate a sequence of cell walks, then call onDone with the final grid
+  const animateWalks = (steps: number[][], onDone: (finalGrid: number[]) => void) => {
+    setIsAnimating(true);
+    setResultMessage(null);
+    const freshGrid = new Array(TOTAL_CELLS).fill(0);
+    setGrid(freshGrid);
+
+    let currentGrid = [...freshGrid];
+    let stepIndex = 0;
+
+    const tick = () => {
+      if (stepIndex >= steps.length) {
+        setIsAnimating(false);
+        onDone(currentGrid);
+        return;
+      }
+      const batch = steps[stepIndex];
+      currentGrid = [...currentGrid];
+      batch.forEach(cellIdx => {
+        currentGrid[cellIdx] = Math.min(currentGrid[cellIdx] + 1, 5);
+      });
+      setGrid([...currentGrid]);
+      stepIndex++;
+      animationRef.current = setTimeout(tick, 180);
+    };
+    animationRef.current = setTimeout(tick, 300);
+  };
+
+  // Cramming: scatter walks across many random cells, each visited ~1 time
+  const handleCramming = () => {
+    if (isAnimating) return;
+    const steps: number[][] = [];
+    const allCells = Array.from({ length: TOTAL_CELLS }, (_, i) => i);
+    // Shuffle and pick 40 random cells, each walked once across 10 batches
+    const shuffled = [...allCells].sort(() => Math.random() - 0.5);
+    const picked = shuffled.slice(0, 40);
+    for (let i = 0; i < 10; i++) {
+      const batch = picked.slice(i * 4, (i + 1) * 4);
+      steps.push(batch);
+    }
+    animateWalks(steps, (finalGrid) => {
+      const strong = strongPathCount(finalGrid);
+      setResultMessage(`Cramming result: ${strong} strong pathway${strong !== 1 ? 's' : ''} formed. Scattered effort, weak connections.`);
+    });
+  };
+
+  // Spaced Repetition: walk the same narrow path repeatedly
+  const handleSpacedRepetition = () => {
+    if (isAnimating) return;
+    // Create a clear diagonal-ish path through the grid
+    const pathCells: number[] = [];
+    for (let row = 1; row <= 6; row++) {
+      const col = Math.min(2 + row, GRID_COLS - 1);
+      pathCells.push(row * GRID_COLS + col);
+      if (col + 1 < GRID_COLS) pathCells.push(row * GRID_COLS + col + 1);
+    }
+    // Walk the same path 5 times (10 steps)
+    const steps: number[][] = [];
+    for (let rep = 0; rep < 5; rep++) {
+      // Split path into two batches per repetition
+      steps.push(pathCells.slice(0, Math.ceil(pathCells.length / 2)));
+      steps.push(pathCells.slice(Math.ceil(pathCells.length / 2)));
+    }
+    animateWalks(steps, (finalGrid) => {
+      const strong = strongPathCount(finalGrid);
+      setResultMessage(`Spaced repetition result: ${strong} strong pathway${strong !== 1 ? 's' : ''} formed! Focused repetition builds lasting connections.`);
+    });
+  };
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+        Desire Path Maker
+      </h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">
+        Click cells to walk on them. Repeat the same path to build strong neural connections — or scatter your effort and watch them fade.
+      </p>
+
+      {/* Grid */}
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: `repeat(${GRID_COLS}, 1fr)`,
+          gap: '3px',
+          maxWidth: '480px',
+          margin: '0 auto',
+        }}
+      >
+        {grid.map((walked, idx) => (
+          <motion.div
+            key={idx}
+            onClick={() => handleCellClick(idx)}
+            style={{
+              backgroundColor: getPathColor(walked),
+              aspectRatio: '1',
+              borderRadius: '4px',
+              cursor: isAnimating ? 'default' : 'pointer',
+              transition: 'background-color 0.3s ease',
+            }}
+            whileHover={!isAnimating ? { scale: 1.2 } : undefined}
+            whileTap={!isAnimating ? { scale: 0.9 } : undefined}
+          />
+        ))}
+      </div>
+
+      {/* Counter */}
+      <p className="text-center text-sm font-semibold text-zinc-700 dark:text-zinc-300 mt-4">
+        Neural pathways strengthened: {strongPathCount(grid)}
+      </p>
+
+      {/* Controls */}
+      <div className="flex flex-wrap justify-center gap-3 mt-6">
+        <button
+          onClick={handleDaysPass}
+          disabled={isAnimating}
+          className="px-4 py-2 text-xs font-bold rounded-full bg-zinc-100 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200 hover:bg-zinc-200 dark:hover:bg-zinc-600 disabled:opacity-40 transition-colors"
+        >
+          Days Pass (Decay)
+        </button>
+        <button
+          onClick={handleCramming}
+          disabled={isAnimating}
+          className="px-4 py-2 text-xs font-bold rounded-full bg-rose-100 dark:bg-rose-900 text-rose-700 dark:text-rose-200 hover:bg-rose-200 dark:hover:bg-rose-800 disabled:opacity-40 transition-colors"
+        >
+          Cramming Pattern
+        </button>
+        <button
+          onClick={handleSpacedRepetition}
+          disabled={isAnimating}
+          className="px-4 py-2 text-xs font-bold rounded-full bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-200 hover:bg-emerald-200 dark:hover:bg-emerald-800 disabled:opacity-40 transition-colors"
+        >
+          Spaced Repetition Pattern
+        </button>
+        <button
+          onClick={handleReset}
+          disabled={isAnimating}
+          className="px-4 py-2 text-xs font-bold rounded-full bg-zinc-100 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200 hover:bg-zinc-200 dark:hover:bg-zinc-600 disabled:opacity-40 transition-colors"
+        >
+          Reset
+        </button>
+      </div>
+
+      {/* Result message after animation */}
+      {resultMessage && (
+        <motion.p
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center text-sm font-medium text-zinc-600 dark:text-zinc-300 mt-4 px-4"
+        >
+          {resultMessage}
+        </motion.p>
+      )}
+    </div>
+  );
+};
+
 // --- MODULE COMPONENT ---
 const NeuroplasticityProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
@@ -115,6 +321,7 @@ const NeuroplasticityProtocolModule: React.FC<{ onBack: () => void; progress: Mo
             <ReadingSection title="The Rulebook of Learning." eyebrow="Step 3" icon={BookOpen} theme={theme}>
               <p>How does your brain know which connections to prune and which to myelinate? It follows a simple, powerful rule from 1949 known as <Highlight description="The foundational principle of neuroplasticity, often summarized as 'Cells that fire together, wire together.' It means that when two neurons are active at the same time, the connection between them gets stronger." theme={theme}>Hebbian Theory</Highlight>: "Cells that fire together, wire together." Every time you have a thought or practice a skill, you're sending an electrical signal through a chain of neurons. The more you fire that chain, the stronger the physical connections between those neurons become.</p>
               <p>We can think of this with two analogies. For strengthening connections, imagine a field of tall grass. The first time you walk across (study a topic once), you bend the grass, but it springs back. If you walk the same "Desire Path" repeatedly, you wear a permanent trail. For speed, think of an "Orchestra." To make music, different sections need their signals to arrive at the same time. Myelination is your brain's conductor, adjusting the speed of different pathways so your thoughts are perfectly timed and synchronized.</p>
+              <DesirePathMaker />
             </ReadingSection>
           )}
           {activeSection === 3 && (

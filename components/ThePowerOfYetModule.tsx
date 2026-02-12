@@ -154,6 +154,288 @@ const YetReframe = () => {
     );
 };
 
+const BRIDGE_SCENARIOS = [
+  {
+    yet: "I can't write good essays... yet",
+    goal: "Write H1-level essays",
+    strong: [
+      "Write one paragraph and compare to the marking scheme",
+      "Highlight 3 techniques in a sample H1 essay",
+      "Rewrite my weakest paragraph using feedback",
+    ],
+    weak: [
+      "Read more",
+      "Try harder next time",
+      "Just write longer essays",
+    ],
+  },
+  {
+    yet: "I can't solve quadratic equations... yet",
+    goal: "Confidently solve quadratics",
+    strong: [
+      "Do 3 practice problems from Chapter 5 tonight",
+      "Watch a worked example and reattempt",
+      "Ask my teacher to explain the factoring step",
+    ],
+    weak: [
+      "Try harder",
+      "Study more",
+      "Hope for the best",
+    ],
+  },
+  {
+    yet: "I can't remember History dates... yet",
+    goal: "Recall key dates confidently",
+    strong: [
+      "Make 10 flashcards for the key dates this week",
+      "Create a timeline poster for my wall",
+      "Test myself every morning for 5 minutes",
+    ],
+    weak: [
+      "Read the chapter again",
+      "Try to concentrate more",
+      "Highlight everything",
+    ],
+  },
+];
+
+const WEAK_FEEDBACK = [
+  "Too vague — what specifically will you do?",
+  "That's wishful thinking — name a concrete step.",
+  "Not a strategy — try something measurable.",
+];
+
+const BridgeBuilder = () => {
+  const [scenarioIdx, setScenarioIdx] = useState(0);
+  const [placedStrong, setPlacedStrong] = useState<string[]>([]);
+  const [usedWeak, setUsedWeak] = useState<Set<string>>(new Set());
+  const [feedback, setFeedback] = useState<string | null>(null);
+  const [wobbling, setWobbling] = useState<string | null>(null);
+
+  const scenario = BRIDGE_SCENARIOS[scenarioIdx];
+  const bridgeComplete = placedStrong.length >= 3;
+
+  const [shuffled, setShuffled] = useState(() => shuffle(scenario.strong, scenario.weak));
+
+  function shuffle(strong: string[], weak: string[]) {
+    const arr = [...strong, ...weak];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  const handleNewScenario = () => {
+    const next = (scenarioIdx + 1) % BRIDGE_SCENARIOS.length;
+    setScenarioIdx(next);
+    setPlacedStrong([]);
+    setUsedWeak(new Set());
+    setFeedback(null);
+    setWobbling(null);
+    const s = BRIDGE_SCENARIOS[next];
+    setShuffled(shuffle(s.strong, s.weak));
+  };
+
+  const handleAction = (action: string) => {
+    if (bridgeComplete) return;
+    if (placedStrong.includes(action) || usedWeak.has(action)) return;
+
+    const isStrong = scenario.strong.includes(action);
+
+    if (isStrong) {
+      setPlacedStrong(prev => [...prev, action]);
+      setFeedback(null);
+      setWobbling(null);
+    } else {
+      const weakIdx = scenario.weak.indexOf(action);
+      const msg = WEAK_FEEDBACK[weakIdx >= 0 && weakIdx < WEAK_FEEDBACK.length ? weakIdx : 0];
+      setWobbling(action);
+      setFeedback(msg);
+      setTimeout(() => {
+        setUsedWeak(prev => new Set(prev).add(action));
+        setWobbling(null);
+        setFeedback(null);
+      }, 1500);
+    }
+  };
+
+  const MotionDiv = motion.div as any;
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+        Bridge Builder
+      </h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">
+        Build a bridge from "Yet" to your goal by choosing <strong>specific, concrete</strong> actions.
+      </p>
+      <p className="text-center text-xs font-semibold text-yellow-600 dark:text-yellow-400 mb-8">
+        Bridge strength: {placedStrong.length}/3 planks
+      </p>
+
+      {/* Bridge Scene */}
+      <div className="relative flex items-end justify-center gap-0 mb-8 select-none" style={{ minHeight: 180 }}>
+        {/* Left cliff */}
+        <div className="flex flex-col items-center z-10">
+          <div className="bg-zinc-300 dark:bg-zinc-600 rounded-t-xl w-28 md:w-36 h-24 flex items-center justify-center px-2">
+            <p className="text-[11px] md:text-xs font-semibold text-zinc-700 dark:text-zinc-200 text-center leading-tight">
+              {scenario.yet}
+            </p>
+          </div>
+          <div className="bg-zinc-400 dark:bg-zinc-700 w-28 md:w-36 h-4 rounded-b-sm" />
+        </div>
+
+        {/* Bridge gap */}
+        <div className="relative flex-1 max-w-[240px] md:max-w-[300px]" style={{ minHeight: 120 }}>
+          {/* Chasm background */}
+          <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-zinc-200 dark:from-zinc-900 to-transparent rounded-b-lg" />
+
+          {/* Planks */}
+          <div className="absolute bottom-4 left-0 right-0 flex gap-1 justify-center items-end px-1">
+            {[0, 1, 2].map(i => {
+              const placed = i < placedStrong.length;
+              return (
+                <MotionDiv
+                  key={i}
+                  initial={placed ? { opacity: 0, y: -30, rotateZ: -5 } : { opacity: 0.3 }}
+                  animate={
+                    placed
+                      ? { opacity: 1, y: 0, rotateZ: 0 }
+                      : { opacity: 0.15 }
+                  }
+                  transition={{ type: 'spring', stiffness: 200, damping: 18, delay: placed ? 0.1 : 0 }}
+                  className={`h-5 md:h-6 rounded-sm flex items-center justify-center ${
+                    placed
+                      ? 'bg-emerald-400 dark:bg-emerald-500 shadow-md'
+                      : 'bg-zinc-200 dark:bg-zinc-700 border border-dashed border-zinc-300 dark:border-zinc-600'
+                  }`}
+                  style={{ flex: 1, minWidth: 0 }}
+                >
+                  {placed && (
+                    <span className="text-[8px] md:text-[9px] font-bold text-white truncate px-1">
+                      Plank {i + 1}
+                    </span>
+                  )}
+                </MotionDiv>
+              );
+            })}
+          </div>
+
+          {/* Wobbling weak plank overlay */}
+          <AnimatePresence>
+            {wobbling && (
+              <MotionDiv
+                key="wobble"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{
+                  opacity: [0, 1, 1, 0],
+                  y: [-20, 0, 0, 40],
+                  rotateZ: [0, -3, 3, 8],
+                }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1.5, times: [0, 0.15, 0.7, 1] }}
+                className="absolute bottom-4 left-1/2 -translate-x-1/2 h-5 md:h-6 w-1/3 rounded-sm bg-rose-400 dark:bg-rose-500 shadow-md flex items-center justify-center"
+              >
+                <span className="text-[8px] md:text-[9px] font-bold text-white">Crack!</span>
+              </MotionDiv>
+            )}
+          </AnimatePresence>
+        </div>
+
+        {/* Right cliff */}
+        <div className="flex flex-col items-center z-10">
+          <div className="bg-emerald-200 dark:bg-emerald-900/60 rounded-t-xl w-28 md:w-36 h-24 flex items-center justify-center px-2 border border-emerald-300 dark:border-emerald-800/50">
+            <p className="text-[11px] md:text-xs font-semibold text-emerald-700 dark:text-emerald-300 text-center leading-tight">
+              {scenario.goal}
+            </p>
+          </div>
+          <div className="bg-emerald-300 dark:bg-emerald-800 w-28 md:w-36 h-4 rounded-b-sm" />
+        </div>
+      </div>
+
+      {/* Feedback banner */}
+      <AnimatePresence>
+        {feedback && (
+          <MotionDiv
+            key="feedback"
+            initial={{ opacity: 0, y: -6 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -6 }}
+            className="mb-4 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/20 border border-rose-200 dark:border-rose-800/40 text-center"
+          >
+            <p className="text-xs font-semibold text-rose-600 dark:text-rose-400">{feedback}</p>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
+
+      {/* Completion celebration */}
+      <AnimatePresence>
+        {bridgeComplete && (
+          <MotionDiv
+            key="celebrate"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="mb-4 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/40 text-center"
+          >
+            <p className="text-base font-bold text-emerald-700 dark:text-emerald-300">
+              Bridge Complete!
+            </p>
+            <p className="text-xs text-emerald-600/80 dark:text-emerald-400/70 mt-1">
+              With specific actions, "yet" becomes a launchpad, not a wish.
+            </p>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
+
+      {/* Action blocks */}
+      {!bridgeComplete && (
+        <div>
+          <p className="text-xs font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3 text-center">
+            Choose an action to place on the bridge
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-w-xl mx-auto">
+            {shuffled.map(action => {
+              const isPlaced = placedStrong.includes(action);
+              const isDiscarded = usedWeak.has(action);
+              const isWobbling = wobbling === action;
+              const disabled = isPlaced || isDiscarded || isWobbling;
+
+              return (
+                <MotionDiv
+                  key={action}
+                  whileHover={!disabled ? { scale: 1.02 } : {}}
+                  whileTap={!disabled ? { scale: 0.98 } : {}}
+                  onClick={() => !disabled && handleAction(action)}
+                  className={`p-3 rounded-lg border text-left text-sm transition-colors ${
+                    isPlaced
+                      ? 'bg-emerald-50 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800/40 text-emerald-600 dark:text-emerald-400 opacity-60'
+                      : isDiscarded
+                        ? 'bg-zinc-100 dark:bg-zinc-900/40 border-zinc-200 dark:border-zinc-700 text-zinc-400 dark:text-zinc-600 line-through opacity-40'
+                        : 'bg-zinc-50 dark:bg-zinc-900/30 border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-yellow-300 dark:hover:border-yellow-700 cursor-pointer'
+                  }`}
+                >
+                  {action}
+                </MotionDiv>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* New Scenario button */}
+      <div className="mt-6 text-center">
+        <button
+          onClick={handleNewScenario}
+          className="text-xs font-semibold text-yellow-600 dark:text-yellow-400 hover:text-yellow-700 dark:hover:text-yellow-300 transition-colors underline underline-offset-2"
+        >
+          New Scenario
+        </button>
+      </div>
+    </div>
+  );
+};
+
 const YetAudit = () => {
     const [block, setBlock] = useState('');
     const [action, setAction] = useState('');
@@ -233,6 +515,7 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
             <ReadingSection title="The Action Bridge." eyebrow="Step 4" icon={Link} theme={theme}>
                 <p>"Yet" is powerful, but it's not magic. On its own, it's just wishful thinking. To be effective, "yet" must be tethered to a behavioral plan. This is the crucial third step of the protocol: the <Highlight description="A concrete, specific action that you will take to move from 'not yet' to 'can'. This tethers optimism to a behavioral plan." theme={theme}>Bridge to Action</Highlight>.</p>
                 <p>The full, powerful sentence isn't just "I can't do this yet." It's "I can't do this yet, *so I will*..." This simple addition prevents "Yet" from being an excuse and turns it into a launchpad. It links the optimistic mindset to a concrete, strategic next step. This is the full protocol: <strong>1. Identify the Block, 2. Add "Yet", 3. Bridge to Action.</strong></p>
+                <BridgeBuilder />
                 <MicroCommitment theme={theme}>
                   <p>Think of your toughest subject. Your Block might be "I can't understand Topic X." Your Bridge could be "I will watch one YouTube video explaining it tonight."</p>
                 </MicroCommitment>
