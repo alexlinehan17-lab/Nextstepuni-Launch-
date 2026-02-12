@@ -252,7 +252,7 @@ const ABQAnswerScaffold = () => {
                       onChange={(e) => handleInputChange(e.target.value)}
                       rows={3}
                       placeholder={`Write your ${label} here...`}
-                      className="w-full p-3 text-sm bg-zinc-50 dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-600 rounded-lg text-zinc-800 dark:text-zinc-200 placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-400 focus:ring-1 focus:ring-zinc-400 dark:focus:ring-zinc-400 resize-none transition-colors"
+                      className="w-full p-3 text-sm bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 rounded-lg text-zinc-800 dark:text-zinc-200 placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-500 resize-none transition-colors"
                     />
                     {!isDone && (
                       <button
