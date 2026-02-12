@@ -206,118 +206,159 @@ const AmygdalaHijackSimulator = () => {
   const connectionWidth = Math.max(1, 4 - stressLevel * 3);
   const cortisolHeight = stressLevel * 100;
 
+  const MotionDiv = motion.div as any;
+
   return (
     <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Amygdala Hijack Simulator</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">See how stress hijacks your brain — then use recovery techniques to take control back.</p>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12">
-        {/* Brain Diagram */}
-        <div className="relative w-full max-w-sm">
-          <svg viewBox="0 0 300 260" className="w-full">
-            {/* Brain outline */}
-            <ellipse cx="150" cy="130" rx="130" ry="110" fill="none" stroke="#a1a1aa" strokeWidth="1.5" strokeDasharray="4 3" opacity={0.4} />
-
-            {/* Connection bridge */}
-            <motion.line
-              x1="150" y1="85" x2="150" y2="155"
-              stroke="#a1a1aa"
-              strokeWidth={connectionWidth}
-              style={{ opacity: connectionOpacity }}
-              strokeDasharray={stressLevel > 0.5 ? '6 4' : 'none'}
-            />
-            <motion.text
-              x="170" y="125" fontSize="9" fill="#a1a1aa"
-              style={{ opacity: connectionOpacity }}
-            >
-              connection
-            </motion.text>
-
-            {/* Prefrontal Cortex (top) */}
-            <motion.rect
-              x="75" y="30" width="150" height="60" rx="16"
+      {/* Two-panel brain dashboard */}
+      <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto_1fr] gap-4 sm:gap-0 items-stretch max-w-2xl mx-auto mb-6">
+        {/* Prefrontal Cortex Card */}
+        <div
+          className="rounded-xl p-6 border text-center transition-all duration-500"
+          style={{
+            borderColor: stressLevel > 0.6 ? '#d4d4d8' : '#93c5fd',
+            backgroundColor: stressLevel > 0.6 ? '#fafafa' : '#eff6ff',
+            opacity: Math.max(0.4, 1 - stressLevel * 0.6),
+          }}
+        >
+          <div
+            className="w-12 h-12 rounded-full mx-auto mb-3 flex items-center justify-center text-lg transition-all duration-500"
+            style={{
+              backgroundColor: stressLevel > 0.6 ? '#e4e4e7' : '#dbeafe',
+              color: stressLevel > 0.6 ? '#a1a1aa' : '#3b82f6',
+            }}
+          >
+            &#x1f9e0;
+          </div>
+          <p className="text-sm font-bold transition-colors duration-500" style={{ color: stressLevel > 0.6 ? '#a1a1aa' : '#1e40af' }}>
+            Prefrontal Cortex
+          </p>
+          <p className="text-xs mt-1 transition-colors duration-500" style={{ color: stressLevel > 0.6 ? '#d4d4d8' : '#60a5fa' }}>
+            Rational Thinking
+          </p>
+          <div className="mt-4 h-2 w-full rounded-full overflow-hidden" style={{ backgroundColor: stressLevel > 0.6 ? '#e4e4e7' : '#bfdbfe' }}>
+            <div
+              className="h-full rounded-full transition-all duration-500"
               style={{
-                fill: `rgba(59, 130, 246, ${pfcOpacity})`,
-                transition: 'fill 0.3s ease',
-              }}
-            />
-            <text x="150" y="56" textAnchor="middle" fontSize="13" fontWeight="bold"
-              style={{ fill: stressLevel > 0.6 ? '#9ca3af' : '#1e3a5f', transition: 'fill 0.3s ease' }}>
-              Prefrontal Cortex
-            </text>
-            <text x="150" y="74" textAnchor="middle" fontSize="10"
-              style={{ fill: stressLevel > 0.6 ? '#9ca3af' : '#3b82f6', transition: 'fill 0.3s ease' }}>
-              Rational Thinking
-            </text>
-
-            {/* Amygdala (center/deeper) */}
-            <motion.ellipse
-              cx="150" cy="185" rx="50" ry="35"
-              style={{
-                fill: `rgba(239, 68, 68, ${Math.max(0.15, amygdalaGlow)})`,
-                transition: 'fill 0.3s ease',
-              }}
-            />
-            {stressLevel > 0.5 && (
-              <motion.ellipse
-                cx="150" cy="185" rx="55" ry="40"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: [0.2, 0.4, 0.2] }}
-                transition={{ repeat: Infinity, duration: 1.5 }}
-                fill="none"
-                stroke="rgba(239, 68, 68, 0.4)"
-                strokeWidth="2"
-              />
-            )}
-            <text x="150" y="182" textAnchor="middle" fontSize="13" fontWeight="bold"
-              style={{ fill: stressLevel > 0.5 ? '#fef2f2' : '#7f1d1d', transition: 'fill 0.3s ease' }}>
-              Amygdala
-            </text>
-            <text x="150" y="198" textAnchor="middle" fontSize="10"
-              style={{ fill: stressLevel > 0.5 ? '#fecaca' : '#ef4444', transition: 'fill 0.3s ease' }}>
-              Threat Response
-            </text>
-
-            {/* Hijack label */}
-            {hijackLabel && !balanced && (
-              <motion.g initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }}>
-                <rect x="85" y="230" width="130" height="26" rx="6" fill="#dc2626" />
-                <text x="150" y="247" textAnchor="middle" fontSize="11" fontWeight="bold" fill="white">
-                  AMYGDALA HIJACK
-                </text>
-              </motion.g>
-            )}
-
-            {/* Balanced label */}
-            {balanced && (
-              <motion.g initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }}>
-                <rect x="100" y="230" width="100" height="26" rx="6" fill="#16a34a" />
-                <text x="150" y="247" textAnchor="middle" fontSize="11" fontWeight="bold" fill="white">
-                  BALANCED
-                </text>
-              </motion.g>
-            )}
-          </svg>
-        </div>
-
-        {/* Cortisol Meter */}
-        <div className="flex flex-col items-center gap-2">
-          <p className="text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Cortisol</p>
-          <div className="w-8 h-40 bg-zinc-100 dark:bg-zinc-700 rounded-full overflow-hidden relative border border-zinc-200 dark:border-zinc-600">
-            <motion.div
-              className="absolute bottom-0 left-0 right-0 rounded-full"
-              style={{
-                height: `${cortisolHeight}%`,
-                backgroundColor: stressLevel > 0.7 ? '#dc2626' : stressLevel > 0.4 ? '#f59e0b' : '#22c55e',
-                transition: 'height 0.3s ease, background-color 0.3s ease',
+                width: `${Math.max(5, (1 - stressLevel) * 100)}%`,
+                backgroundColor: stressLevel > 0.6 ? '#d4d4d8' : '#3b82f6',
               }}
             />
           </div>
-          <p className="text-xs text-zinc-500 dark:text-zinc-400 font-medium">
-            {stressLevel < 0.15 ? 'Low' : stressLevel < 0.5 ? 'Moderate' : stressLevel < 0.8 ? 'High' : 'Extreme'}
+          <p className="text-[10px] mt-2 font-semibold uppercase tracking-widest transition-colors duration-500" style={{ color: stressLevel > 0.6 ? '#a1a1aa' : '#3b82f6' }}>
+            {stressLevel < 0.3 ? 'Online' : stressLevel < 0.6 ? 'Weakening' : 'Offline'}
+          </p>
+        </div>
+
+        {/* Connection indicator */}
+        <div className="hidden sm:flex flex-col items-center justify-center px-4 gap-1.5">
+          {[0, 1, 2, 3, 4].map(i => (
+            <div
+              key={i}
+              className="w-2 h-2 rounded-full transition-all duration-500"
+              style={{
+                backgroundColor: stressLevel > (i * 0.2 + 0.1) ? '#e4e4e7' : '#a1a1aa',
+                opacity: stressLevel > (i * 0.2 + 0.1) ? 0.3 : 1,
+              }}
+            />
+          ))}
+          <p className="text-[9px] text-zinc-400 dark:text-zinc-500 font-medium mt-1 writing-mode-vertical" style={{ writingMode: 'vertical-rl' as any }}>
+            {stressLevel < 0.3 ? 'CONNECTED' : stressLevel < 0.7 ? 'WEAKENING' : 'SEVERED'}
+          </p>
+        </div>
+
+        {/* Amygdala Card */}
+        <div
+          className="rounded-xl p-6 border text-center transition-all duration-500"
+          style={{
+            borderColor: stressLevel > 0.5 ? '#fca5a5' : '#e4e4e7',
+            backgroundColor: stressLevel > 0.5 ? '#fef2f2' : '#fafafa',
+            boxShadow: stressLevel > 0.7 ? '0 0 30px rgba(239, 68, 68, 0.15)' : 'none',
+          }}
+        >
+          <div
+            className="w-12 h-12 rounded-full mx-auto mb-3 flex items-center justify-center text-lg transition-all duration-500"
+            style={{
+              backgroundColor: stressLevel > 0.5 ? '#fee2e2' : '#f4f4f5',
+              color: stressLevel > 0.5 ? '#ef4444' : '#a1a1aa',
+            }}
+          >
+            &#x26a0;&#xfe0f;
+          </div>
+          <p className="text-sm font-bold transition-colors duration-500" style={{ color: stressLevel > 0.5 ? '#dc2626' : '#71717a' }}>
+            Amygdala
+          </p>
+          <p className="text-xs mt-1 transition-colors duration-500" style={{ color: stressLevel > 0.5 ? '#f87171' : '#a1a1aa' }}>
+            Threat Response
+          </p>
+          <div className="mt-4 h-2 w-full rounded-full overflow-hidden" style={{ backgroundColor: stressLevel > 0.5 ? '#fecaca' : '#e4e4e7' }}>
+            <div
+              className="h-full rounded-full transition-all duration-500"
+              style={{
+                width: `${Math.max(5, stressLevel * 100)}%`,
+                backgroundColor: stressLevel > 0.7 ? '#dc2626' : stressLevel > 0.4 ? '#f59e0b' : '#a1a1aa',
+              }}
+            />
+          </div>
+          <p className="text-[10px] mt-2 font-semibold uppercase tracking-widest transition-colors duration-500" style={{ color: stressLevel > 0.5 ? '#dc2626' : '#a1a1aa' }}>
+            {stressLevel < 0.3 ? 'Dormant' : stressLevel < 0.6 ? 'Alert' : 'Hijacking'}
           </p>
         </div>
       </div>
+
+      {/* Cortisol bar + status */}
+      <div className="max-w-2xl mx-auto mb-2">
+        <div className="flex items-center justify-between mb-1.5">
+          <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Cortisol Level</span>
+          <span className="text-[10px] font-bold uppercase tracking-widest" style={{
+            color: stressLevel > 0.7 ? '#dc2626' : stressLevel > 0.4 ? '#f59e0b' : '#22c55e',
+          }}>
+            {stressLevel < 0.15 ? 'Low' : stressLevel < 0.5 ? 'Moderate' : stressLevel < 0.8 ? 'High' : 'Extreme'}
+          </span>
+        </div>
+        <div className="h-3 w-full rounded-full overflow-hidden bg-zinc-100 dark:bg-zinc-700">
+          <div
+            className="h-full rounded-full transition-all duration-300"
+            style={{
+              width: `${cortisolHeight}%`,
+              backgroundColor: stressLevel > 0.7 ? '#dc2626' : stressLevel > 0.4 ? '#f59e0b' : '#22c55e',
+            }}
+          />
+        </div>
+      </div>
+
+      {/* Status label */}
+      <AnimatePresence mode="wait">
+        {hijackLabel && !balanced && (
+          <MotionDiv
+            key="hijack"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            className="text-center mt-4"
+          >
+            <span className="inline-block px-4 py-1.5 rounded-full bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 text-xs font-bold uppercase tracking-widest">
+              Amygdala Hijack
+            </span>
+          </MotionDiv>
+        )}
+        {balanced && (
+          <MotionDiv
+            key="balanced"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            className="text-center mt-4"
+          >
+            <span className="inline-block px-4 py-1.5 rounded-full bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 text-xs font-bold uppercase tracking-widest">
+              Balanced
+            </span>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
 
       {/* Scenario Buttons */}
       <div className="mt-10">
@@ -521,16 +562,16 @@ const AmygdalaHijackSimulator = () => {
       {/* Balanced celebration */}
       <AnimatePresence>
         {balanced && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
-            className="mt-8 text-center"
+          <MotionDiv
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            className="mt-4 text-center"
           >
             <p className="text-sm font-semibold text-emerald-600 dark:text-emerald-400">
-              You restored the connection between your prefrontal cortex and amygdala. Rational thinking is back online.
+              You restored the connection. Rational thinking is back online.
             </p>
-          </motion.div>
+          </MotionDiv>
         )}
       </AnimatePresence>
 
