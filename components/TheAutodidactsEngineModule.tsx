@@ -68,6 +68,8 @@ const TheAutodidactsEngineModule: React.FC<{ onBack: () => void; progress: Modul
     <ModuleLayout
       moduleNumber="06"
       moduleTitle="Using Feedback Loops"
+      moduleSubtitle="The Autodidact's Engine"
+      moduleDescription="Become your own teacher by learning to build autonomous feedback loops. This is the science of Deliberate Practice without a coach."
       theme={theme}
       sections={sections}
       onBack={onBack}

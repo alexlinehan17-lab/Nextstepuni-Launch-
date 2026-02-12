@@ -315,6 +315,8 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
     <ModuleLayout
       moduleNumber="05"
       moduleTitle="Exam Crisis Management"
+      moduleSubtitle="The Cognitive Athlete's Playbook"
+      moduleDescription={`Learn the neurobiology of exam stress and master the physiological protocols to maintain mental stamina and overcome the "Blank Mind" phenomenon.`}
       theme={theme}
       sections={sections}
       onBack={onBack}

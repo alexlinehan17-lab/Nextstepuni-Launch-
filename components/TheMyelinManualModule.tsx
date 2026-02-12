@@ -98,6 +98,8 @@ const TheMyelinManualModule: React.FC<{ onBack: () => void; progress: ModuleProg
     <ModuleLayout
       moduleNumber="02"
       moduleTitle="The Myelin Manual"
+      moduleSubtitle="The Neurobiology of Mastery"
+      moduleDescription={`Reframe "struggle" from a sign of failure into the biological trigger for building faster, more efficient brain circuits. This is the science of Deep Practice.`}
       theme={theme}
       sections={sections}
       onBack={onBack}

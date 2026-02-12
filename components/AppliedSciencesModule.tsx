@@ -202,6 +202,8 @@ const AppliedSciencesModule: React.FC<{ onBack: () => void; progress: ModuleProg
     <ModuleLayout
       moduleNumber="06"
       moduleTitle="Mastering Applied Sciences"
+      moduleSubtitle="The 2026 Technical Briefs"
+      moduleDescription="A deep dive into the 2026 briefs for Engineering, DCG, CS, Construction &amp; Technology, blending theory with project strategy."
       theme={theme}
       sections={sections}
       onBack={onBack}

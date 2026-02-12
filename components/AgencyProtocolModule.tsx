@@ -130,6 +130,8 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
     <ModuleLayout
       moduleNumber="01"
       moduleTitle="The Driver's Manual"
+      moduleSubtitle="The Driver's Manual"
+      moduleDescription="Synthesising research on motivation and identity, this module provides the blueprint for becoming the &quot;Origin&quot; of your academic success."
       theme={theme}
       sections={sections}
       onBack={onBack}

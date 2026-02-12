@@ -126,7 +126,7 @@ const ReframingProgressModule: React.FC<{ onBack: () => void; progress: ModulePr
   ];
 
   return (
-    <ModuleLayout moduleNumber="10" moduleTitle="Reframing Progress" theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
+    <ModuleLayout moduleNumber="10" moduleTitle="Reframing Progress" moduleSubtitle="The Outcome-Based Protocol" moduleDescription={`Shift from measuring "hours logged" to "wins secured." This module gives you the project management tools to study smarter, not just harder.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
       {(activeSection) => (
         <>
           {activeSection === 0 && (

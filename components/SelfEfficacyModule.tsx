@@ -87,6 +87,8 @@ const SelfEfficacyModule: React.FC<{ onBack: () => void; progress: ModuleProgres
     <ModuleLayout
       moduleNumber="09"
       moduleTitle="Self Efficacy"
+      moduleSubtitle="The Architecture of Agency"
+      moduleDescription={`Move beyond "trying harder" and learn the science of building bulletproof belief in your own ability.`}
       theme={theme}
       sections={sections}
       onBack={onBack}

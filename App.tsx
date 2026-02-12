@@ -226,6 +226,7 @@ const App: React.FC = () => {
         setCameFromJourney(state.fromJourney || false);
         setViewState('module');
       }
+      window.scrollTo(0, 0);
       isPopstateRef.current = false;
     };
     window.addEventListener('popstate', handlePopState);
@@ -330,6 +331,7 @@ const App: React.FC = () => {
   const handleSelectCategory = (category: CategoryType) => {
     setCurrentCategory(category);
     setViewState('category');
+    window.scrollTo(0, 0);
     if (!isPopstateRef.current) {
       window.history.pushState({ view: 'category', category }, '');
     }
@@ -340,6 +342,7 @@ const App: React.FC = () => {
     setCameFromJourney(fromJourney);
     setCurrentModuleId(moduleId);
     setViewState('module');
+    window.scrollTo(0, 0);
     if (!isPopstateRef.current) {
       window.history.pushState({ view: 'module', moduleId, category: currentCategory, fromJourney }, '');
     }
@@ -347,6 +350,7 @@ const App: React.FC = () => {
 
   const handleGoToInnovationZone = () => {
     setViewState('innovation-zone');
+    window.scrollTo(0, 0);
     if (!isPopstateRef.current) {
       window.history.pushState({ view: 'innovation-zone' }, '');
     }
@@ -480,6 +484,7 @@ const App: React.FC = () => {
 
     if (viewState === 'tree') {
       return <KnowledgeTree
+        key="knowledge-tree"
         onSelectCategory={handleSelectCategory}
         onGoToInnovationZone={handleGoToInnovationZone}
         allCourses={ALL_COURSES}

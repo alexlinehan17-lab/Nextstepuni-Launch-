@@ -12,6 +12,8 @@ import { ActivityRing } from './ModuleShared';
 interface ModuleLayoutProps {
   moduleNumber: string;
   moduleTitle: string;
+  moduleSubtitle?: string;
+  moduleDescription?: string;
   theme: ModuleTheme;
   sections: SectionDefinition[];
   onBack: () => void;
@@ -24,6 +26,8 @@ interface ModuleLayoutProps {
 export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   moduleNumber,
   moduleTitle,
+  moduleSubtitle,
+  moduleDescription,
   theme,
   sections,
   onBack,
@@ -81,6 +85,13 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
             <h1 className="font-serif font-semibold text-lg tracking-tight text-zinc-900 dark:text-white">{moduleTitle}</h1>
           </div>
         </div>
+
+        {(moduleSubtitle || moduleDescription) && (
+          <div className="mb-8 -mt-4">
+            {moduleSubtitle && <p className={`text-[11px] font-bold ${theme.sidebarActiveEyebrow} uppercase tracking-widest mb-1.5`}>{moduleSubtitle}</p>}
+            {moduleDescription && <p className="text-[11px] leading-relaxed text-zinc-400 dark:text-zinc-500">{moduleDescription}</p>}
+          </div>
+        )}
 
         <div className="flex-grow overflow-y-auto no-scrollbar pr-2">
           <div className="space-y-4 relative">

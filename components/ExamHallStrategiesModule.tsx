@@ -405,6 +405,8 @@ const ExamHallStrategiesModule: React.FC<{ onBack: () => void; progress: ModuleP
     <ModuleLayout
       moduleNumber="04"
       moduleTitle="Exam Hall Strategies"
+      moduleSubtitle="The Operational Playbook"
+      moduleDescription={`Deconstruct the exam hall as a resource-management challenge and learn the operational tactics used by elite performers to close the "Execution Gap".`}
       theme={theme}
       sections={sections}
       onBack={onBack}

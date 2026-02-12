@@ -54,6 +54,8 @@ const BestPossibleSelfModule: React.FC<{ onBack: () => void; progress: ModulePro
     <ModuleLayout
       moduleNumber="04"
       moduleTitle="Best Possible Self"
+      moduleSubtitle="The Future-Proofing Protocol"
+      moduleDescription="Learn how to turn vague daydreams into actionable plans using the scientifically-proven WOOP method for goal achievement."
       theme={theme}
       sections={sections}
       onBack={onBack}

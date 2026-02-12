@@ -626,6 +626,8 @@ const PointsOptimizationModule: React.FC<{
     <ModuleLayout
       moduleNumber="09"
       moduleTitle="The 625 Blueprint"
+      moduleSubtitle="The Statistical Optimization Protocol"
+      moduleDescription="Treat the Leaving Cert as a mathematical optimization problem. Use real H1 rate data, grade economics, and marking scheme mechanics to engineer your maximum possible score."
       theme={theme}
       sections={sections}
       onBack={onBack}

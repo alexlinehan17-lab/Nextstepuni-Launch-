@@ -244,6 +244,8 @@ const ProcrastinationModule: React.FC<{ onBack: () => void; progress: ModuleProg
     <ModuleLayout
       moduleNumber="11"
       moduleTitle="Procrastination Protocol"
+      moduleSubtitle="The Architecture of Delay Protocol"
+      moduleDescription={`Go beyond "laziness" and understand the real science of why you delay. Learn to master your motivation with evidence-based strategies.`}
       theme={theme}
       sections={sections}
       onBack={onBack}

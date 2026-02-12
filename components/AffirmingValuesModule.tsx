@@ -69,6 +69,8 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
     <ModuleLayout
       moduleNumber="03"
       moduleTitle="Affirming Values"
+      moduleSubtitle="The Psychological Shield Protocol"
+      moduleDescription="Learn the science of &quot;stereotype threat&quot; and how a 15-minute writing exercise can act as a psychological shield in high-stakes exams."
       theme={theme}
       sections={sections}
       onBack={onBack}

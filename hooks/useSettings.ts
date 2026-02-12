@@ -4,7 +4,6 @@
  */
 
 import { useState, useEffect, useCallback } from 'react';
-import i18n from '../i18n';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { UserSettings } from '../types';
@@ -81,14 +80,6 @@ export function useSettings(uid?: string, userAvatar?: string) {
       document.documentElement.classList.remove('dark');
     }
   }, [settings.darkMode]);
-
-  // Language picker is disabled for now — always force English
-  // When re-enabling, uncomment the sync below:
-  // useEffect(() => {
-  //   if (i18n.language !== settings.language) {
-  //     i18n.changeLanguage(settings.language);
-  //   }
-  // }, [settings.language]);
 
   const updateSetting = useCallback(<K extends keyof UserSettings>(key: K, value: UserSettings[K]) => {
     setSettings(prev => {

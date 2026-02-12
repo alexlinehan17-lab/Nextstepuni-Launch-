@@ -66,6 +66,8 @@ const TheGrammarOfGritModule: React.FC<{ onBack: () => void; progress: ModulePro
     <ModuleLayout
       moduleNumber="05"
       moduleTitle="The Grammar of Grit"
+      moduleSubtitle="The Language of Resilience Protocol"
+      moduleDescription="Discover how the words you use to define yourself can either build resilience or create fragility in the face of failure."
       theme={theme}
       sections={sections}
       onBack={onBack}

@@ -264,6 +264,8 @@ const ControllableVariablesModule: React.FC<{ onBack: () => void; progress: Modu
     <ModuleLayout
       moduleNumber="09"
       moduleTitle="Controllable Variables"
+      moduleSubtitle="The Biological Blueprint"
+      moduleDescription="Learn to manage your brain as a biological system. This module covers the non-negotiable inputs of Sleep, Nutrition, and Exercise required for high performance."
       theme={theme}
       sections={sections}
       onBack={onBack}

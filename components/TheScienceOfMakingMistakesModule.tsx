@@ -65,6 +65,8 @@ const TheScienceOfMakingMistakesModule: React.FC<{ onBack: () => void; progress:
     <ModuleLayout
       moduleNumber="05"
       moduleTitle="The Science of Mistakes"
+      moduleSubtitle="The Neural Architecture of Failure"
+      moduleDescription="Learn why your brain's reaction to mistakes predicts success, and how to rewire it for resilience under pressure in high-stakes exams."
       theme={theme}
       sections={sections}
       onBack={onBack}

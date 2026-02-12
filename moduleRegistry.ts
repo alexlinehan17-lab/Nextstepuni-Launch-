@@ -20,7 +20,6 @@ export const moduleComponents: { [key: string]: ModuleComponent } = {
   'affirming-values-protocol': lazy(() => import('./components/AffirmingValuesModule')),
   'best-possible-self-protocol': lazy(() => import('./components/BestPossibleSelfModule')),
   'grammar-of-grit-protocol': lazy(() => import('./components/TheGrammarOfGritModule')),
-  'social-capital-protocol': lazy(() => import('./components/SocialCapitalModule')),
   'agency-architecture-protocol': lazy(() => import('./components/AgencyArchitectureModule')),
   'strategic-advantage-protocol': lazy(() => import('./components/StrategicAdvantageModule')),
   'self-efficacy-protocol': lazy(() => import('./components/SelfEfficacyModule')),

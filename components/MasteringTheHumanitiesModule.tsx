@@ -53,6 +53,8 @@ const MasteringTheHumanitiesModule: React.FC<{ onBack: () => void; progress: Mod
     <ModuleLayout
       moduleNumber="07"
       moduleTitle="Mastering the Humanities"
+      moduleSubtitle="The Grade Optimisation Protocol"
+      moduleDescription="Deconstruct the &quot;hidden curriculum&quot; of History, Geography, and Politics &amp; Society to transform your strategic application and maximize your grade."
       theme={theme}
       sections={sections}
       onBack={onBack}

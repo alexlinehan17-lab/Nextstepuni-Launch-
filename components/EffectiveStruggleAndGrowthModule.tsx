@@ -403,6 +403,8 @@ const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress:
     <ModuleLayout
       moduleNumber="04"
       moduleTitle="Effective Struggle"
+      moduleSubtitle="The Cognitive Architecture of Friction"
+      moduleDescription={`Synthesizing key learning theories to define the "sweet spot" of difficulty where real learning happens.`}
       theme={theme}
       sections={sections}
       onBack={onBack}

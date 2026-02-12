@@ -111,6 +111,8 @@ const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleP
     <ModuleLayout
       moduleNumber="07"
       moduleTitle="Controlling the Controllables"
+      moduleSubtitle="The Attribution Retraining Protocol"
+      moduleDescription="Learn to distinguish between what you can and cannot control, and rewire your brain to see failure as feedback, not a final verdict."
       theme={theme}
       sections={sections}
       onBack={onBack}

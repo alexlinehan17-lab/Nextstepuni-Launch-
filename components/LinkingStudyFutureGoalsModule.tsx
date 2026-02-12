@@ -206,7 +206,7 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
   ];
 
   return (
-    <ModuleLayout moduleNumber="11" moduleTitle="Linking Study to Goals" theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
+    <ModuleLayout moduleNumber="11" moduleTitle="Linking Study to Goals" moduleSubtitle="The Architecture of Purpose" moduleDescription={`Deconstruct the "why bother?" problem and learn the science of linking today's effort to tomorrow's success. This is the antidote to burnout.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
       {(activeSection) => (
         <>
           {activeSection === 0 && (

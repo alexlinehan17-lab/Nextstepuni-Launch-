@@ -86,15 +86,6 @@ const COURSE_DEFINITIONS = [
     tags: ['Mindset', 'Resilience'],
   },
   {
-    id: 'social-capital-protocol',
-    category: 'architecture-mindset',
-    title: 'The Social Capital Protocol',
-    subtitle: 'The Network Engineering Protocol',
-    description: 'Understand the invisible social forces that shape your success and learn how to engineer your network for upward mobility.',
-    sectionsCount: 5,
-    tags: ['Exam Tactics', 'Productivity'],
-  },
-  {
     id: 'agency-architecture-protocol',
     category: 'architecture-mindset',
     title: 'Controlling the Controllables',

@@ -53,6 +53,8 @@ const BimodalBrainModule: React.FC<{ onBack: () => void; progress: ModuleProgres
     <ModuleLayout
       moduleNumber="08"
       moduleTitle="The Bimodal Brain"
+      moduleSubtitle="The Bimodal Brain Protocol"
+      moduleDescription="Your brain has two gears. Learn to switch between intense focus and creative relaxation to unlock deep learning and solve complex problems."
       theme={theme}
       sections={sections}
       onBack={onBack}

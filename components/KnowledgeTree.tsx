@@ -88,9 +88,10 @@ const ActivityRing = ({
 };
 
 interface BentoTileProps {
-  icon: any, 
-  title: string, 
-  subtitle: string, 
+  icon: any,
+  title: string,
+  subtitle: string,
+  description?: string,
   onClick: () => void,
   accentHex: string,
   progress?: number,
@@ -102,6 +103,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
   icon: Icon,
   title,
   subtitle,
+  description,
   onClick,
   accentHex,
   progress = 0,
@@ -136,6 +138,9 @@ const BentoTile: React.FC<BentoTileProps> = ({
           <h3 className="font-serif text-2xl md:text-3xl text-zinc-900 dark:text-white leading-tight font-semibold tracking-tight">
             {title}
           </h3>
+          {description && (
+            <p className="mt-3 text-[12px] leading-relaxed text-zinc-400 dark:text-zinc-500">{description}</p>
+          )}
         </div>
 
         <div className="mt-8 flex items-center justify-between gap-6 pt-6 border-t border-zinc-100 dark:border-zinc-800">
@@ -167,10 +172,11 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
   };
 
   const modules = [
-    { 
-      id: 'architecture-mindset', 
-      title: "The Architecture of your Mindset", 
+    {
+      id: 'architecture-mindset',
+      title: "The Architecture of your Mindset",
       subtitle: "Module 01",
+      description: "Build the psychological foundations for academic success. This module covers identity, beliefs, emotional regulation, and the resilience you need to thrive under pressure.",
       icon: Layout,
       hex: "#3b82f6",
       className: "md:col-span-4"
@@ -179,6 +185,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
       id: 'science-growth',
       title: "The Science of Growth",
       subtitle: "Module 02",
+      description: "Understand how your brain physically changes through effort. The neuroscience of learning, neuroplasticity, and why struggle is the engine of growth.",
       icon: Sprout,
       hex: "#f59e0b",
       className: "md:col-span-2"
@@ -187,24 +194,27 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
       id: 'learning-cheat-codes',
       title: "The Science of Learning Effectively",
       subtitle: "Module 03",
+      description: "The practical techniques and study methods that separate high performers from everyone else. Active recall, spaced repetition, interleaving, and more.",
       icon: Zap,
-      hex: "#14b8a6", // Teal
+      hex: "#14b8a6",
       className: "md:col-span-2"
     },
      {
       id: 'subject-specific-science',
       title: "Subject Specific Science",
       subtitle: "Module 04",
+      description: "Subject-by-subject deconstruction of the Leaving Cert exams. The marking schemes, the hidden curriculum, and the strategies that unlock top grades in each subject.",
       icon: Beaker,
-      hex: "#6b7280", // Gray
+      hex: "#6b7280",
       className: "md:col-span-2"
     },
     {
       id: 'exam-zone',
       title: "Exam Strategy and Points Maximisation",
       subtitle: "Module 05",
+      description: "Cross-subject exam tactics, scheduling, crisis management, and the performance psychology you need to execute on the day.",
       icon: Target,
-      hex: "#ef4444", // Red
+      hex: "#ef4444",
       className: "md:col-span-2"
     },
   ];
@@ -230,7 +240,6 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
 
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 overflow-x-hidden relative flex flex-col items-center pt-16 md:pt-32 pb-32 transition-colors duration-500 selection:bg-[#CC785C]/20">
-
       <div className="w-full max-w-7xl px-6">
         <header className="text-center mb-20">
           <div className="w-12 h-1 bg-[#CC785C] rounded-full mx-auto mb-6" />
@@ -244,10 +253,11 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
 
         <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
           {modules.map((mod, i) => (
-            <BentoTile 
+            <BentoTile
               key={mod.id}
               title={mod.title}
               subtitle={mod.subtitle}
+              description={mod.description}
               icon={mod.icon}
               accentHex={mod.hex}
               onClick={() => onSelectCategory(mod.id as CategoryType)}
@@ -256,11 +266,12 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
               delay={i * 0.1}
             />
           ))}
-           <BentoTile 
+           <BentoTile
               title="The Innovation Zone"
               subtitle="Explore"
+              description="Your personal AI-powered study companion. Use the Journey Simulator to stress-test your study habits, get personalised feedback, and discover which units will have the biggest impact on your performance."
               icon={Rocket}
-              accentHex="#8b5cf6" // Purple
+              accentHex="#8b5cf6"
               onClick={onGoToInnovationZone}
               className="md:col-span-6"
               delay={modules.length * 0.1}

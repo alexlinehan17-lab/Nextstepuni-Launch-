@@ -498,6 +498,8 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
     <ModuleLayout
       moduleNumber="13"
       moduleTitle="Emotional Intelligence"
+      moduleSubtitle="The Stress Management Protocol"
+      moduleDescription={`Learn the neurobiology of exam stress and master the "top-down" and "bottom-up" strategies to transform anxiety into a high-performance state.`}
       theme={theme}
       sections={sections}
       onBack={onBack}
