@@ -84,6 +84,307 @@ const TaperPlanner = () => {
     )
 }
 
+// --- PRE-EXAM MEAL BUILDER ---
+interface FoodItem {
+  id: number;
+  name: string;
+  emoji: string;
+  category: string;
+  score: number;
+}
+
+const FOODS: FoodItem[] = [
+  { id: 1, name: 'Porridge oats', emoji: '🥣', category: 'Low-GI', score: 3 },
+  { id: 2, name: 'Wholegrain toast', emoji: '🍞', category: 'Low-GI', score: 2 },
+  { id: 3, name: 'Banana', emoji: '🍌', category: 'Low-GI', score: 2 },
+  { id: 4, name: 'Natural yoghurt', emoji: '🥛', category: 'Low-GI', score: 2 },
+  { id: 5, name: 'Blueberries', emoji: '🫐', category: 'Low-GI', score: 2 },
+  { id: 6, name: 'Scrambled eggs', emoji: '🥚', category: 'Protein', score: 3 },
+  { id: 7, name: 'Peanut butter', emoji: '🥜', category: 'Protein', score: 2 },
+  { id: 8, name: 'Almonds', emoji: '🌰', category: 'Protein', score: 2 },
+  { id: 9, name: 'Sugar cereal (Coco Pops)', emoji: '🥣', category: 'High-GI', score: -2 },
+  { id: 10, name: 'White bread with jam', emoji: '🍯', category: 'High-GI', score: -1 },
+  { id: 11, name: 'Energy drink', emoji: '⚡', category: 'High-GI + Caffeine', score: -3 },
+  { id: 12, name: 'Chocolate bar', emoji: '🍫', category: 'High-GI', score: -2 },
+  { id: 13, name: 'Black coffee (moderate)', emoji: '☕', category: 'Caffeine', score: 1 },
+  { id: 14, name: 'Glass of water', emoji: '💧', category: 'Hydration', score: 2 },
+  { id: 15, name: 'Nothing (skip breakfast)', emoji: '🚫', category: 'Empty', score: -4 },
+];
+
+const categoryBadgeClass = (category: string): string => {
+  if (category.includes('High-GI')) return 'bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300';
+  if (category === 'Low-GI') return 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300';
+  if (category === 'Protein') return 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300';
+  if (category === 'Caffeine') return 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300';
+  if (category === 'Hydration') return 'bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300';
+  return 'bg-zinc-100 text-zinc-600 dark:bg-zinc-700 dark:text-zinc-300';
+};
+
+const MotionDiv = motion.div as any;
+
+const EnergyCurve = ({ level }: { level: 'high' | 'medium' | 'low' }) => {
+  const curves = {
+    high: {
+      path: 'M 0 70 C 30 30, 60 25, 100 28 C 140 31, 200 30, 260 35 C 300 38, 340 40, 380 42',
+      color: '#10b981',
+      bg: 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800',
+      label: 'Sustained energy. Your brain has steady glucose for 3+ hours. No crash.',
+    },
+    medium: {
+      path: 'M 0 60 C 30 25, 60 30, 120 50 C 160 60, 180 35, 220 55 C 260 65, 300 45, 380 60',
+      color: '#f59e0b',
+      bg: 'bg-amber-50 dark:bg-amber-900/20 border-amber-200 dark:border-amber-800',
+      label: 'Decent, but some crash risk. Consider swapping high-GI items for complex carbs.',
+    },
+    low: {
+      path: 'M 0 70 C 20 10, 50 5, 80 15 C 110 70, 140 85, 200 88 C 240 90, 300 90, 380 92',
+      color: '#ef4444',
+      bg: 'bg-rose-50 dark:bg-rose-900/20 border-rose-200 dark:border-rose-800',
+      label: 'Sugar spike followed by a crash at ~10:30am. Your working memory will suffer mid-exam.',
+    },
+  };
+
+  const c = curves[level];
+
+  return (
+    <MotionDiv
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className={`mt-6 p-5 rounded-xl border ${c.bg}`}
+    >
+      <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-200 mb-3">Energy Curve (Exam Morning)</p>
+      <div className="flex items-end gap-2 text-xs text-zinc-400 dark:text-zinc-500 mb-1">
+        <span>High</span>
+      </div>
+      <svg viewBox="0 0 380 100" className="w-full h-24" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id={`grad-${level}`} x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor={c.color} stopOpacity="0.3" />
+            <stop offset="100%" stopColor={c.color} stopOpacity="0.02" />
+          </linearGradient>
+        </defs>
+        <path d={`${c.path} L 380 100 L 0 100 Z`} fill={`url(#grad-${level})`} />
+        <motion.path
+          d={c.path}
+          fill="none"
+          stroke={c.color}
+          strokeWidth="3"
+          strokeLinecap="round"
+          initial={{ pathLength: 0 }}
+          animate={{ pathLength: 1 }}
+          transition={{ duration: 1.2, ease: 'easeOut' }}
+        />
+        <text x="5" y="98" fontSize="10" fill="#a1a1aa">7am</text>
+        <text x="115" y="98" fontSize="10" fill="#a1a1aa">9:30am</text>
+        <text x="250" y="98" fontSize="10" fill="#a1a1aa">11:30am</text>
+        <text x="340" y="98" fontSize="10" fill="#a1a1aa">1pm</text>
+      </svg>
+      <div className="flex items-end gap-2 text-xs text-zinc-400 dark:text-zinc-500 mt-1">
+        <span>Low</span>
+      </div>
+      <p className="mt-3 text-sm font-medium text-zinc-700 dark:text-zinc-300">{c.label}</p>
+    </MotionDiv>
+  );
+};
+
+const PreExamMealBuilder = () => {
+  const [selected, setSelected] = useState<number[]>([]);
+  const [scored, setScored] = useState(false);
+
+  const toggleFood = (id: number) => {
+    if (scored) return;
+    setSelected((prev) => {
+      if (prev.includes(id)) return prev.filter((f) => f !== id);
+      if (prev.length >= 5) return prev;
+      return [...prev, id];
+    });
+  };
+
+  const totalScore = selected.reduce((sum, id) => {
+    const food = FOODS.find((f) => f.id === id);
+    return sum + (food?.score ?? 0);
+  }, 0);
+
+  const energyLevel: 'high' | 'medium' | 'low' = totalScore >= 8 ? 'high' : totalScore >= 3 ? 'medium' : 'low';
+
+  const reset = () => {
+    setSelected([]);
+    setScored(false);
+  };
+
+  const selectedFoods = selected.map((id) => FOODS.find((f) => f.id === id)!);
+
+  return (
+    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+        Pre-Exam Meal Builder
+      </h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">
+        Build your exam morning breakfast. Your brain needs the right fuel.
+      </p>
+
+      {/* Food Grid */}
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+        {FOODS.map((food) => {
+          const isSelected = selected.includes(food.id);
+          const isDisabled = !isSelected && selected.length >= 5;
+          return (
+            <MotionDiv
+              key={food.id}
+              whileTap={!scored && !isDisabled ? { scale: 0.96 } : {}}
+              onClick={() => !isDisabled && toggleFood(food.id)}
+              className={`relative p-3 rounded-xl border-2 transition-colors cursor-pointer select-none ${
+                scored
+                  ? isSelected
+                    ? 'border-amber-400 bg-amber-50 dark:bg-amber-900/20'
+                    : 'border-zinc-100 dark:border-zinc-700 opacity-40'
+                  : isSelected
+                  ? 'border-amber-400 bg-amber-50 dark:bg-amber-900/20'
+                  : isDisabled
+                  ? 'border-zinc-100 dark:border-zinc-700 opacity-40 cursor-not-allowed'
+                  : 'border-zinc-200 dark:border-zinc-700 hover:border-amber-300 dark:hover:border-amber-600'
+              }`}
+            >
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">{food.emoji}</span>
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold text-zinc-800 dark:text-white leading-tight truncate">
+                    {food.name}
+                  </p>
+                  <span
+                    className={`inline-block mt-1 text-xs font-medium px-2 py-0.5 rounded-full ${categoryBadgeClass(food.category)}`}
+                  >
+                    {food.category}
+                  </span>
+                </div>
+              </div>
+              {isSelected && (
+                <MotionDiv
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  className="absolute top-1 right-1 w-5 h-5 rounded-full bg-amber-400 flex items-center justify-center text-white text-xs font-bold"
+                >
+                  {selected.indexOf(food.id) + 1}
+                </MotionDiv>
+              )}
+            </MotionDiv>
+          );
+        })}
+      </div>
+
+      {/* Plate Area */}
+      {selected.length > 0 && (
+        <MotionDiv
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mt-8 p-5 rounded-xl bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-700"
+        >
+          <p className="text-sm font-semibold text-zinc-600 dark:text-zinc-300 mb-3">
+            Your Plate ({selected.length}/5)
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {selectedFoods.map((food) => (
+              <MotionDiv
+                key={food.id}
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.8, opacity: 0 }}
+                className="flex items-center gap-1.5 bg-white dark:bg-zinc-800 px-3 py-1.5 rounded-full border border-zinc-200 dark:border-zinc-700 text-sm"
+              >
+                <span>{food.emoji}</span>
+                <span className="font-medium text-zinc-700 dark:text-zinc-200">{food.name}</span>
+                {scored && (
+                  <span
+                    className={`ml-1 font-bold ${food.score >= 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}
+                  >
+                    {food.score >= 0 ? '+' : ''}{food.score}
+                  </span>
+                )}
+                {!scored && (
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      toggleFood(food.id);
+                    }}
+                    className="ml-1 text-zinc-400 hover:text-rose-500 text-xs font-bold"
+                  >
+                    ×
+                  </button>
+                )}
+              </MotionDiv>
+            ))}
+          </div>
+        </MotionDiv>
+      )}
+
+      {/* Score Button / Results */}
+      {!scored && selected.length >= 3 && (
+        <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-6 text-center">
+          <button
+            onClick={() => setScored(true)}
+            className="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl transition-colors"
+          >
+            Score My Meal
+          </button>
+        </MotionDiv>
+      )}
+
+      {!scored && selected.length < 3 && selected.length > 0 && (
+        <p className="mt-4 text-center text-sm text-zinc-400 dark:text-zinc-500">
+          Select at least 3 items to score your meal.
+        </p>
+      )}
+
+      {scored && (
+        <MotionDiv initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
+          <div className="mt-6 text-center">
+            <p className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">Total Score</p>
+            <p
+              className={`text-4xl font-bold ${
+                totalScore >= 8
+                  ? 'text-emerald-600 dark:text-emerald-400'
+                  : totalScore >= 3
+                  ? 'text-amber-600 dark:text-amber-400'
+                  : 'text-rose-600 dark:text-rose-400'
+              }`}
+            >
+              {totalScore >= 0 ? '+' : ''}{totalScore}
+            </p>
+          </div>
+
+          <EnergyCurve level={energyLevel} />
+
+          {/* Per-item breakdown */}
+          <div className="mt-5 space-y-2">
+            {selectedFoods.map((food) => (
+              <div key={food.id} className="flex items-center justify-between text-sm px-3 py-2 bg-zinc-50 dark:bg-zinc-900/50 rounded-lg">
+                <span className="text-zinc-700 dark:text-zinc-300">
+                  {food.emoji} {food.name}
+                </span>
+                <span
+                  className={`font-bold ${food.score >= 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}
+                >
+                  {food.score >= 0 ? '+' : ''}{food.score}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-6 text-center">
+            <button
+              onClick={reset}
+              className="px-5 py-2.5 bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-600 text-zinc-700 dark:text-zinc-200 font-semibold rounded-xl transition-colors"
+            >
+              Build Another Meal
+            </button>
+          </div>
+        </MotionDiv>
+      )}
+    </div>
+  );
+};
+
 const CognitiveWarmup = () => {
     const [drill, setDrill] = useState<'none'|'verbal'|'math'>('none');
     const [time, setTime] = useState(60);
@@ -201,6 +502,7 @@ const GameDayModule: React.FC<{ onBack: () => void; progress: ModuleProgress; on
            {activeSection === 5 && (
             <ReadingSection title="Game Day: The Warm-Up." eyebrow="Step 6" icon={Utensils} theme={theme}>
               <p>The morning of the exam is about managing the natural spike in cortisol and adrenaline and channeling it into focus. Do not hit snooze. Immediately hydrate with 500ml of water. Get 10 minutes of morning sunlight to anchor your circadian rhythm. Your breakfast must be Low-GI.</p>
+              <PreExamMealBuilder />
               <p>Just as an athlete warms up their muscles, you must warm up your brain. Passively reading notes is useless. You need a <Highlight description="Active priming exercises (e.g., verbal fluency drills, simple calculations) performed 20-30 minutes before an exam to lower the 'activation threshold' of the relevant neural circuits." theme={theme}>Cognitive Warm-Up</Highlight>. This gets the relevant brain areas perfused with blood and "online" before you open the paper.</p>
               <CognitiveWarmup />
             </ReadingSection>

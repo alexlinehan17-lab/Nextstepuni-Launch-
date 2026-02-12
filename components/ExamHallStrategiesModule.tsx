@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Cpu, ClipboardList, ListFilter, PlayCircle, BarChart2, HeartPulse, HardHat } from 'lucide-react';
 import { ModuleProgress } from '../types';
@@ -389,6 +389,445 @@ const BoxBreathingVisualizer = () => {
     );
 }
 
+const dumpSheetFacts = [
+    { text: 'Area of circle = \u03C0r\u00B2', keys: [/\u03C0r/i, /pi r/i] },
+    { text: 'Photosynthesis: 6CO\u2082 + 6H\u2082O \u2192 C\u2086H\u2081\u2082O\u2086 + 6O\u2082', keys: [/photosynthesis/i, /6CO2/i, /C6H12O6/i] },
+    { text: '1916 Rising: 24\u201330 April', keys: [/1916/i], combo: [/april/i, /24/] },
+    { text: '\u2018Fair is foul, and foul is fair\u2019 \u2014 Macbeth, Act 1', keys: [/fair is foul/i, /foul is fair/i] },
+    { text: 'GDP = C + I + G + (X \u2212 M)', keys: [/GDP/i, /C \+ I \+ G/i] },
+    { text: 'Mitosis: PMAT (Prophase, Metaphase, Anaphase, Telophase)', keys: [/PMAT/i], combo: [/mitosis/i, /prophase|metaphase/i] },
+    { text: 'Speed = Distance \u00F7 Time', keys: [/speed/i], combo: [/speed/i, /distance/i] },
+    { text: 'Peig Sayers: \u2018Is fearr Gaeilge briste n\u00E1 B\u00E9arla cliste\u2019', keys: [/fearr/i, /Gaeilge briste/i] },
+    { text: 'Quadratic formula: x = (\u2212b \u00B1 \u221A(b\u00B2\u22124ac)) / 2a', keys: [/quadratic/i, /\-b \u00B1/i, /b\u00B2-4ac/i, /b2-4ac/i] },
+    { text: 'Igneous, Sedimentary, Metamorphic \u2014 3 rock types', keys: [/igneous/i, /sedimentary/i, /metamorphic/i] },
+];
+
+const checkFactRecalled = (factIndex: number, text: string): boolean => {
+    const fact = dumpSheetFacts[factIndex];
+    // If any single key matches, it's recalled
+    if (fact.keys.some(k => k.test(text))) return true;
+    // If there's a combo requirement (all patterns in combo must match)
+    if (fact.combo && fact.combo.every(k => k.test(text))) return true;
+    return false;
+};
+
+const MotionDiv = motion.div as any;
+
+const DumpSheetBuilder = () => {
+    const [phase, setPhase] = useState<'ready' | 'memorise' | 'recall' | 'results'>('ready');
+    const [memoriseTime, setMemoriseTime] = useState(30);
+    const [recallTime, setRecallTime] = useState(60);
+    const [recallText, setRecallText] = useState('');
+    const [results, setResults] = useState<boolean[]>([]);
+    const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+    useEffect(() => {
+        return () => {
+            if (intervalRef.current) clearInterval(intervalRef.current);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (phase === 'memorise') {
+            intervalRef.current = setInterval(() => {
+                setMemoriseTime(t => {
+                    if (t <= 1) {
+                        if (intervalRef.current) clearInterval(intervalRef.current);
+                        setPhase('recall');
+                        return 0;
+                    }
+                    return t - 1;
+                });
+            }, 1000);
+            return () => { if (intervalRef.current) clearInterval(intervalRef.current); };
+        }
+    }, [phase]);
+
+    useEffect(() => {
+        if (phase === 'recall') {
+            setRecallTime(60);
+            intervalRef.current = setInterval(() => {
+                setRecallTime(t => {
+                    if (t <= 1) {
+                        if (intervalRef.current) clearInterval(intervalRef.current);
+                        setPhase('results');
+                        return 0;
+                    }
+                    return t - 1;
+                });
+            }, 1000);
+            return () => { if (intervalRef.current) clearInterval(intervalRef.current); };
+        }
+    }, [phase]);
+
+    useEffect(() => {
+        if (phase === 'results') {
+            const r = dumpSheetFacts.map((_, i) => checkFactRecalled(i, recallText));
+            setResults(r);
+        }
+    }, [phase]);
+
+    const startDrill = () => {
+        setPhase('memorise');
+        setMemoriseTime(30);
+        setRecallTime(60);
+        setRecallText('');
+        setResults([]);
+    };
+
+    const tryAgain = () => {
+        setPhase('ready');
+        setRecallText('');
+        setResults([]);
+    };
+
+    const timerColor = (time: number, total: number) => {
+        const pct = time / total;
+        if (pct > 0.5) return 'text-emerald-500';
+        if (pct > 0.2) return 'text-amber-500';
+        return 'text-rose-500';
+    };
+
+    const timerBarColor = (time: number, total: number) => {
+        const pct = time / total;
+        if (pct > 0.5) return 'bg-emerald-500';
+        if (pct > 0.2) return 'bg-amber-500';
+        return 'bg-rose-500';
+    };
+
+    if (phase === 'ready') {
+        return (
+            <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Dump Sheet Drill</h4>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-6 max-w-lg mx-auto">Practice the brain dump that should be your first action in every exam.</p>
+                <div className="flex flex-col items-center gap-3 mb-6">
+                    <div className="flex items-center gap-4 text-xs font-semibold text-zinc-500 dark:text-zinc-400">
+                        <span className="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-700">30s to memorise</span>
+                        <span className="text-zinc-300 dark:text-zinc-600">&rarr;</span>
+                        <span className="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-700">60s to recall</span>
+                        <span className="text-zinc-300 dark:text-zinc-600">&rarr;</span>
+                        <span className="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-700">See your score</span>
+                    </div>
+                </div>
+                <button onClick={startDrill} className="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm rounded-lg transition-colors">Start Drill</button>
+            </div>
+        );
+    }
+
+    if (phase === 'memorise') {
+        const pct = (memoriseTime / 30) * 100;
+        return (
+            <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+                <div className="flex items-center justify-between mb-2">
+                    <h4 className="font-serif text-lg font-semibold text-zinc-800 dark:text-white">Memorise These Facts</h4>
+                    <span className={`text-2xl font-bold tabular-nums ${timerColor(memoriseTime, 30)}`}>{memoriseTime}s</span>
+                </div>
+                <div className="w-full h-1.5 bg-zinc-100 dark:bg-zinc-700 rounded-full mb-6">
+                    <motion.div className={`h-full rounded-full ${timerBarColor(memoriseTime, 30)}`} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    {dumpSheetFacts.map((fact, i) => (
+                        <MotionDiv
+                            key={i}
+                            initial={{ opacity: 0, y: 8 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: i * 0.05 }}
+                            className="p-3 rounded-lg bg-zinc-50 dark:bg-zinc-700/50 border border-zinc-200 dark:border-zinc-600"
+                        >
+                            <span className="text-xs font-bold text-amber-600 dark:text-amber-400 mr-2">{i + 1}.</span>
+                            <span className="text-sm font-medium text-zinc-700 dark:text-zinc-200" style={{ fontFamily: 'ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace' }}>{fact.text}</span>
+                        </MotionDiv>
+                    ))}
+                </div>
+            </div>
+        );
+    }
+
+    if (phase === 'recall') {
+        const pct = (recallTime / 60) * 100;
+        return (
+            <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+                <div className="flex items-center justify-between mb-2">
+                    <h4 className="font-serif text-lg font-semibold text-zinc-800 dark:text-white">Write Everything You Remember</h4>
+                    <span className={`text-2xl font-bold tabular-nums ${timerColor(recallTime, 60)}`}>{recallTime}s</span>
+                </div>
+                <div className="w-full h-1.5 bg-zinc-100 dark:bg-zinc-700 rounded-full mb-4">
+                    <motion.div className={`h-full rounded-full ${timerBarColor(recallTime, 60)}`} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
+                </div>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Don't worry about order or exact wording.</p>
+                <textarea
+                    value={recallText}
+                    onChange={e => setRecallText(e.target.value)}
+                    disabled={recallTime <= 0}
+                    placeholder="Start typing everything you remember..."
+                    className="w-full h-48 p-4 bg-zinc-50 dark:bg-zinc-700/50 border border-zinc-200 dark:border-zinc-600 rounded-xl text-sm text-zinc-700 dark:text-zinc-200 placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-amber-500/50 resize-none transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                    autoFocus
+                />
+            </div>
+        );
+    }
+
+    // Results phase
+    const score = results.filter(Boolean).length;
+    return (
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Results</h4>
+            <div className="text-center my-5">
+                <div className="inline-block px-6 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-700">
+                    <span className="text-3xl font-bold text-zinc-800 dark:text-white">{score}</span>
+                    <span className="text-lg text-zinc-500 dark:text-zinc-400">/{dumpSheetFacts.length} recalled</span>
+                </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+                {dumpSheetFacts.map((fact, i) => {
+                    const recalled = results[i];
+                    return (
+                        <MotionDiv
+                            key={i}
+                            initial={{ opacity: 0, y: 8 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: i * 0.05 }}
+                            className={`p-3 rounded-lg border flex items-start gap-2.5 ${
+                                recalled
+                                    ? 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-300 dark:border-emerald-700'
+                                    : 'bg-rose-50 dark:bg-rose-900/20 border-rose-300 dark:border-rose-700'
+                            }`}
+                        >
+                            <span className={`mt-0.5 flex-shrink-0 text-sm font-bold ${recalled ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
+                                {recalled ? '\u2713' : '\u2717'}
+                            </span>
+                            <span className="text-sm font-medium text-zinc-700 dark:text-zinc-200" style={{ fontFamily: 'ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace' }}>{fact.text}</span>
+                        </MotionDiv>
+                    );
+                })}
+            </div>
+            <div className="p-4 rounded-xl bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 mb-6">
+                <p className="text-sm text-amber-800 dark:text-amber-300 leading-relaxed">In the real exam, your dump sheet prevents interference — facts written down can't be displaced by exam stress. Do this in the first 2 minutes of every paper.</p>
+            </div>
+            <div className="text-center">
+                <button onClick={tryAgain} className="px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm rounded-lg transition-colors">Try Again</button>
+            </div>
+        </div>
+    );
+};
+
+const attackQuestions = [
+    { id: 'q1', label: 'Q1: Short Questions (10 x 3 marks)', marks: 30, difficulty: 'green' as const },
+    { id: 'q2', label: 'Q2: Essay on Theme of Ambition', marks: 60, difficulty: 'amber' as const },
+    { id: 'q3', label: 'Q3: Algebra & Functions', marks: 50, difficulty: 'green' as const },
+    { id: 'q4', label: 'Q4: Unseen Poetry Analysis', marks: 40, difficulty: 'red' as const },
+    { id: 'q5', label: 'Q5: Experiment: Effect of pH on Enzyme', marks: 30, difficulty: 'green' as const },
+    { id: 'q6', label: 'Q6: Extended Response: Evaluate Impact of WW2', marks: 50, difficulty: 'amber' as const },
+];
+
+const optimalOrder = ['q3', 'q1', 'q5', 'q2', 'q6', 'q4'];
+
+const difficultyConfig = {
+    green: { bg: 'bg-emerald-100 dark:bg-emerald-900/30', text: 'text-emerald-700 dark:text-emerald-300', border: 'border-emerald-300 dark:border-emerald-700', dot: 'bg-emerald-500', label: 'Confident' },
+    amber: { bg: 'bg-amber-100 dark:bg-amber-900/30', text: 'text-amber-700 dark:text-amber-300', border: 'border-amber-300 dark:border-amber-700', dot: 'bg-amber-500', label: 'Manageable' },
+    red: { bg: 'bg-rose-100 dark:bg-rose-900/30', text: 'text-rose-700 dark:text-rose-300', border: 'border-rose-300 dark:border-rose-700', dot: 'bg-rose-500', label: 'Hardest' },
+};
+
+const shuffleArray = <T,>(arr: T[]): T[] => {
+    const copy = [...arr];
+    for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+};
+
+const OrderOfAttackOptimizer = () => {
+    const [displayOrder, setDisplayOrder] = useState(() => shuffleArray(attackQuestions));
+    const [sequence, setSequence] = useState<string[]>([]);
+    const [checked, setChecked] = useState(false);
+
+    const handleClickQuestion = (id: string) => {
+        if (checked) return;
+        if (sequence.includes(id)) {
+            setSequence(prev => prev.filter(s => s !== id));
+        } else {
+            setSequence(prev => [...prev, id]);
+        }
+    };
+
+    const getZone = (position: number): 'green' | 'amber' | 'red' => {
+        if (position < 3) return 'green';
+        if (position < 5) return 'amber';
+        return 'red';
+    };
+
+    const computeScore = () => {
+        let correct = 0;
+        sequence.forEach((id, i) => {
+            const q = attackQuestions.find(aq => aq.id === id)!;
+            const zone = getZone(i);
+            if (q.difficulty === zone) correct++;
+        });
+        return correct;
+    };
+
+    const handleCheck = () => {
+        setChecked(true);
+    };
+
+    const handleReset = () => {
+        setChecked(false);
+        setSequence([]);
+        setDisplayOrder(shuffleArray(attackQuestions));
+    };
+
+    const score = checked ? computeScore() : 0;
+
+    return (
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Order of Attack</h4>
+            <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8 text-center max-w-lg mx-auto">Sequence these 6 exam questions for maximum momentum. Click questions in the order you would attempt them.</p>
+
+            <div className="flex flex-col md:flex-row gap-6">
+                {/* Question cards */}
+                <div className="flex-1 space-y-2.5">
+                    <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Questions</p>
+                    {displayOrder.map(q => {
+                        const dc = difficultyConfig[q.difficulty];
+                        const selected = sequence.includes(q.id);
+                        const seqNum = selected ? sequence.indexOf(q.id) + 1 : null;
+                        return (
+                            <MotionDiv
+                                key={q.id}
+                                onClick={() => handleClickQuestion(q.id)}
+                                whileHover={!checked ? { scale: 1.01 } : {}}
+                                whileTap={!checked ? { scale: 0.98 } : {}}
+                                className={`p-4 rounded-xl border cursor-pointer transition-all ${
+                                    selected
+                                        ? 'bg-zinc-100 dark:bg-zinc-700/40 border-zinc-200 dark:border-zinc-600 opacity-50'
+                                        : 'bg-zinc-50 dark:bg-zinc-700/50 border-zinc-200 dark:border-zinc-600 hover:border-amber-300 dark:hover:border-amber-600'
+                                } ${checked ? 'cursor-default' : ''}`}
+                            >
+                                <div className="flex items-center gap-3">
+                                    {seqNum && (
+                                        <span className="w-6 h-6 rounded-full bg-amber-500 text-white text-xs font-bold flex items-center justify-center flex-shrink-0">{seqNum}</span>
+                                    )}
+                                    <div className="flex-1 min-w-0">
+                                        <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-200">{q.label}</p>
+                                        <div className="flex items-center gap-2 mt-1">
+                                            <span className="text-xs font-bold text-zinc-400">{q.marks} marks</span>
+                                            <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold ${dc.bg} ${dc.text} border ${dc.border}`}>{dc.label}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </MotionDiv>
+                        );
+                    })}
+                </div>
+
+                {/* Sequence list */}
+                <div className="md:w-64 flex-shrink-0">
+                    <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Your Sequence</p>
+                    <div className="space-y-2 min-h-[120px]">
+                        <AnimatePresence>
+                            {sequence.map((id, i) => {
+                                const q = attackQuestions.find(aq => aq.id === id)!;
+                                const dc = difficultyConfig[q.difficulty];
+                                const zone = getZone(i);
+                                const inZone = checked && q.difficulty === zone;
+                                const outZone = checked && q.difficulty !== zone;
+                                return (
+                                    <MotionDiv
+                                        key={id}
+                                        initial={{ opacity: 0, x: 20 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        exit={{ opacity: 0, x: -20 }}
+                                        className={`p-3 rounded-lg border flex items-center gap-2.5 ${
+                                            inZone ? 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-300 dark:border-emerald-700' :
+                                            outZone ? 'bg-rose-50 dark:bg-rose-900/20 border-rose-300 dark:border-rose-700' :
+                                            'bg-zinc-50 dark:bg-zinc-700/50 border-zinc-200 dark:border-zinc-600'
+                                        }`}
+                                    >
+                                        <span className={`w-6 h-6 rounded-full text-white text-xs font-bold flex items-center justify-center flex-shrink-0 ${
+                                            inZone ? 'bg-emerald-500' : outZone ? 'bg-rose-500' : 'bg-amber-500'
+                                        }`}>{i + 1}</span>
+                                        <div className="min-w-0">
+                                            <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-200 truncate">{q.label.split(':')[0]}</p>
+                                            <div className="flex items-center gap-1.5">
+                                                <span className={`w-1.5 h-1.5 rounded-full ${dc.dot}`} />
+                                                <span className="text-[10px] text-zinc-400">{q.marks}m</span>
+                                            </div>
+                                        </div>
+                                    </MotionDiv>
+                                );
+                            })}
+                        </AnimatePresence>
+                        {sequence.length === 0 && !checked && (
+                            <p className="text-xs text-zinc-400 dark:text-zinc-500 italic text-center py-6">Click questions to build your sequence...</p>
+                        )}
+                    </div>
+
+                    {/* Check / Try Again button */}
+                    <div className="mt-4">
+                        {!checked ? (
+                            <button
+                                onClick={handleCheck}
+                                disabled={sequence.length < 6}
+                                className={`w-full py-2.5 font-bold text-sm rounded-lg transition-all ${
+                                    sequence.length === 6
+                                        ? 'bg-amber-500 hover:bg-amber-600 text-white'
+                                        : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-400 dark:text-zinc-500 cursor-not-allowed'
+                                }`}
+                            >
+                                {sequence.length === 6 ? 'Check Strategy' : `Select ${6 - sequence.length} more`}
+                            </button>
+                        ) : (
+                            <button
+                                onClick={handleReset}
+                                className="w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm rounded-lg transition-colors"
+                            >
+                                Try Again
+                            </button>
+                        )}
+                    </div>
+                </div>
+            </div>
+
+            {/* Feedback */}
+            {checked && (
+                <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="mt-8">
+                    <div className="flex items-center justify-center gap-3 mb-5">
+                        <div className="text-center px-5 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-700">
+                            <div className="text-2xl font-bold text-zinc-800 dark:text-white">{score}/6</div>
+                            <div className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">In Optimal Zone</div>
+                        </div>
+                    </div>
+
+                    <div className="p-5 rounded-xl bg-zinc-50 dark:bg-zinc-700/50 border border-zinc-200 dark:border-zinc-600 mb-5">
+                        <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-3">Optimal Order</p>
+                        <div className="space-y-1.5">
+                            {optimalOrder.map((id, i) => {
+                                const q = attackQuestions.find(aq => aq.id === id)!;
+                                const dc = difficultyConfig[q.difficulty];
+                                return (
+                                    <div key={id} className="flex items-center gap-2.5">
+                                        <span className="w-5 h-5 rounded-full bg-zinc-300 dark:bg-zinc-600 text-zinc-600 dark:text-zinc-300 text-[10px] font-bold flex items-center justify-center flex-shrink-0">{i + 1}</span>
+                                        <span className={`w-1.5 h-1.5 rounded-full ${dc.dot}`} />
+                                        <span className="text-xs text-zinc-600 dark:text-zinc-300">{q.label}</span>
+                                        <span className="text-[10px] text-zinc-400">{q.marks}m</span>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+
+                    <div className="p-5 rounded-xl bg-amber-50 dark:bg-amber-900/15 border border-amber-200 dark:border-amber-800/40">
+                        <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
+                            <strong className="text-zinc-800 dark:text-white">Why this order?</strong> Greens first builds confidence and banks marks early. Your brain warms up on familiar material, creating <strong>psychological momentum</strong>. Within each colour zone, tackle the highest-mark questions first to maximise early points. Save the hardest question (Red) for last — by then you are in flow state and have already secured most of your grade.
+                        </p>
+                    </div>
+                </MotionDiv>
+            )}
+        </div>
+    );
+};
+
 // --- MODULE COMPONENT ---
 const ExamHallStrategiesModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
@@ -425,6 +864,7 @@ const ExamHallStrategiesModule: React.FC<{ onBack: () => void; progress: ModuleP
             <ReadingSection title="Cognitive Offloading." eyebrow="Step 2" icon={ClipboardList} theme={theme}>
               <p>In the first few minutes of an exam, your stress hormones spike, which can block access to your memory. The <Highlight description="A pre-memorized sheet of high-yield, high-volatility information that you write down from memory at the very start of the exam before you even look at the questions." theme={theme}>"Dump Sheet"</Highlight> is a proactive strategy to combat this. It's about getting the most fragile, important information out of your head and onto paper before stress can erase it.</p>
               <p>This isn't cheating; it's <Highlight description="The act of moving information from your limited biological working memory to a physical resource (like paper), freeing up mental capacity to focus on problem-solving." theme={theme}>Cognitive Offloading</Highlight>. The sheet should contain "High-Yield, High-Volatility" information: things that are easy to forget under pressure but are likely to be useful (e.g., key quotes, formulas, dates, acronyms). You must rehearse writing it until it's a 3-minute automatic motor skill.</p>
+              <DumpSheetBuilder />
             </ReadingSection>
           )}
            {activeSection === 2 && (
@@ -438,6 +878,7 @@ const ExamHallStrategiesModule: React.FC<{ onBack: () => void; progress: ModuleP
             <ReadingSection title="Order of Attack." eyebrow="Step 4" icon={PlayCircle} theme={theme}>
               <p>Starting at Question 1 is a rookie mistake. It gives control to the examiner, who may have put a difficult question first. You need to become a <Highlight description="A concept from cybersecurity where an attacker seeks the easiest path to breach a system. In an exam, you should act like one, seeking the easiest path to accumulate marks." theme={theme}>"Work-Averse Attacker"</Highlight>, extracting the maximum marks for the minimum effort. This means attacking the "Green" questions first, no matter where they are.</p>
               <p>This builds <Highlight description="The psychological phenomenon where early success creates a virtuous cycle of confidence and dopamine release, improving focus and making subsequent harder tasks feel more manageable." theme={theme}>Psychological Momentum</Highlight>. If you can't figure out a question in 30 seconds (the "30-Second Rule"), skip it immediately. The <Highlight description="The subconscious mind continues to work on a problem even after you've moved on. When you return to the question later, the solution often appears 'obvious.'" theme={theme}>Incubation Effect</Highlight> means your brain will keep working on it in the background.</p>
+              <OrderOfAttackOptimizer />
             </ReadingSection>
           )}
           {activeSection === 4 && (

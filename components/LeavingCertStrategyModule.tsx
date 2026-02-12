@@ -131,6 +131,245 @@ const CommandWordDecoder = () => {
     );
 }
 
+// --- EXAM DAY TIMELINE BUILDER ---
+
+interface TimelineActivity {
+    id: number;
+    label: string;
+    time: number;
+    isBad: boolean;
+    warning: string;
+    optimalOrder: number;
+}
+
+const TIMELINE_ACTIVITIES: TimelineActivity[] = [
+    { id: 1, label: 'Wake up & hydrate', time: 5, isBad: false, warning: '', optimalOrder: 1 },
+    { id: 2, label: '10 minutes of sunlight or bright light', time: 10, isBad: false, warning: '', optimalOrder: 2 },
+    { id: 3, label: 'Low-GI breakfast (porridge, eggs, toast)', time: 15, isBad: false, warning: '', optimalOrder: 3 },
+    { id: 4, label: 'Review dump sheet notes (not new material)', time: 15, isBad: false, warning: '', optimalOrder: 4 },
+    { id: 5, label: 'Pack exam bag (pens, calculator, ID)', time: 5, isBad: false, warning: '', optimalOrder: 5 },
+    { id: 6, label: 'Physiological sigh (2 inhales + 1 exhale)', time: 2, isBad: false, warning: '', optimalOrder: 6 },
+    { id: 7, label: 'Travel to exam centre', time: 20, isBad: false, warning: '', optimalOrder: 7 },
+    { id: 8, label: 'Arrive 15 minutes early', time: 15, isBad: false, warning: '', optimalOrder: 8 },
+    { id: 9, label: 'Cram new material frantically', time: 10, isBad: true, warning: 'Cramming new material before an exam triggers anxiety and interferes with consolidated knowledge.' , optimalOrder: -1 },
+    { id: 10, label: 'Check social media and messages', time: 10, isBad: true, warning: 'Social media activates your stress response and scatters your focus.', optimalOrder: -1 },
+];
+
+const formatTime = (totalMinutes: number): string => {
+    const hours = Math.floor(totalMinutes / 60);
+    const mins = totalMinutes % 60;
+    const h = 7 + hours;
+    return `${h}:${mins.toString().padStart(2, '0')}`;
+};
+
+const MotionDiv = motion.div as any;
+
+const ExamDayTimelineBuilder = () => {
+    const [sequence, setSequence] = useState<TimelineActivity[]>([]);
+    const [flashWarning, setFlashWarning] = useState<string | null>(null);
+    const [showFeedback, setShowFeedback] = useState(false);
+
+    const selectedIds = new Set(sequence.map(a => a.id));
+
+    const handleAddActivity = (activity: TimelineActivity) => {
+        if (selectedIds.has(activity.id)) return;
+        if (showFeedback) return;
+
+        if (activity.isBad) {
+            setFlashWarning(activity.warning);
+            setTimeout(() => setFlashWarning(null), 3000);
+        }
+
+        setSequence(prev => [...prev, activity]);
+    };
+
+    const handleReset = () => {
+        setSequence([]);
+        setFlashWarning(null);
+        setShowFeedback(false);
+    };
+
+    const handleCheckPlan = () => {
+        setShowFeedback(true);
+    };
+
+    const getRunningTime = (index: number): number => {
+        let total = 0;
+        for (let i = 0; i < index; i++) {
+            total += sequence[i].time;
+        }
+        return total;
+    };
+
+    const goodActivities = TIMELINE_ACTIVITIES.filter(a => !a.isBad);
+    const optimalSequence = goodActivities.sort((a, b) => a.optimalOrder - b.optimalOrder);
+
+    const hasBadChoices = sequence.some(a => a.isBad);
+    const totalMinutes = sequence.reduce((sum, a) => sum + a.time, 0);
+
+    return (
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Exam Morning Planner</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Build your optimal exam morning routine. Order matters.</p>
+
+            {/* Warning flash */}
+            <AnimatePresence>
+                {flashWarning && (
+                    <MotionDiv
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        className="mb-6 p-4 bg-rose-50 dark:bg-rose-900/30 border border-rose-300 dark:border-rose-700 rounded-lg text-rose-700 dark:text-rose-300 text-sm font-medium text-center"
+                    >
+                        {flashWarning}
+                    </MotionDiv>
+                )}
+            </AnimatePresence>
+
+            {/* Activity cards */}
+            <div className="mb-8">
+                <p className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Click to add to your timeline:</p>
+                <div className="flex flex-wrap gap-2">
+                    {TIMELINE_ACTIVITIES.map(activity => {
+                        const isSelected = selectedIds.has(activity.id);
+                        return (
+                            <button
+                                key={activity.id}
+                                onClick={() => handleAddActivity(activity)}
+                                disabled={isSelected || showFeedback}
+                                className={`px-3 py-2 text-xs font-medium rounded-lg border transition-all ${
+                                    isSelected
+                                        ? 'bg-zinc-100 dark:bg-zinc-700 text-zinc-400 dark:text-zinc-500 border-zinc-200 dark:border-zinc-600 cursor-default opacity-50'
+                                        : activity.isBad
+                                            ? 'bg-rose-50 dark:bg-rose-900/20 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-700 hover:bg-rose-100 dark:hover:bg-rose-900/40 cursor-pointer'
+                                            : 'bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-700 hover:bg-emerald-100 dark:hover:bg-emerald-900/40 cursor-pointer'
+                                }`}
+                            >
+                                {activity.label}
+                                <span className="ml-2 text-zinc-400 dark:text-zinc-500">{activity.time}m</span>
+                            </button>
+                        );
+                    })}
+                </div>
+            </div>
+
+            {/* Timeline */}
+            {sequence.length > 0 && (
+                <div className="mb-6">
+                    <p className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Your Morning Timeline:</p>
+                    <div className="relative pl-16 space-y-0">
+                        {sequence.map((activity, index) => {
+                            const startMin = getRunningTime(index);
+                            const timeLabel = formatTime(startMin);
+                            return (
+                                <MotionDiv
+                                    key={activity.id}
+                                    initial={{ opacity: 0, x: -20 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="relative flex items-stretch"
+                                >
+                                    {/* Time label */}
+                                    <span className="absolute left-[-64px] top-3 text-xs font-mono font-bold text-zinc-500 dark:text-zinc-400 w-12 text-right">
+                                        {timeLabel}
+                                    </span>
+                                    {/* Vertical line */}
+                                    {index < sequence.length - 1 && (
+                                        <div className="absolute left-0 top-6 bottom-0 w-px bg-zinc-300 dark:bg-zinc-600" style={{ left: '-1px' }} />
+                                    )}
+                                    {/* Dot */}
+                                    <div className={`absolute w-2 h-2 rounded-full top-4 ${activity.isBad ? 'bg-rose-500' : 'bg-emerald-500'}`} style={{ left: '-5px' }} />
+                                    {/* Activity card */}
+                                    <div className={`ml-4 mb-3 p-3 rounded-lg border-l-4 flex-1 ${
+                                        activity.isBad
+                                            ? 'border-l-rose-500 bg-rose-50 dark:bg-rose-900/20'
+                                            : 'border-l-emerald-500 bg-emerald-50 dark:bg-emerald-900/20'
+                                    }`}>
+                                        <div className="flex items-center gap-2">
+                                            {activity.isBad && <span className="text-rose-500 text-sm">&#9888;</span>}
+                                            <span className={`text-sm font-medium ${activity.isBad ? 'text-rose-700 dark:text-rose-300' : 'text-emerald-700 dark:text-emerald-300'}`}>
+                                                {activity.label}
+                                            </span>
+                                            <span className="ml-auto text-xs text-zinc-400 dark:text-zinc-500">{activity.time} min</span>
+                                        </div>
+                                    </div>
+                                </MotionDiv>
+                            );
+                        })}
+                        {/* End time */}
+                        <div className="relative">
+                            <span className="absolute left-[-64px] top-0 text-xs font-mono font-bold text-zinc-500 dark:text-zinc-400 w-12 text-right">
+                                {formatTime(totalMinutes)}
+                            </span>
+                            <div className={`absolute w-2 h-2 rounded-full top-1 ${totalMinutes > 140 ? 'bg-rose-500' : 'bg-zinc-400'}`} style={{ left: '-5px' }} />
+                            <p className="ml-4 text-xs text-zinc-400 dark:text-zinc-500">
+                                {totalMinutes > 140
+                                    ? `Total: ${totalMinutes} min \u2014 You may be cutting it close!`
+                                    : `Total: ${totalMinutes} min`
+                                }
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* Action buttons */}
+            {sequence.length > 0 && !showFeedback && (
+                <div className="flex justify-center gap-3 mt-6">
+                    <button onClick={handleCheckPlan} className="px-5 py-2 text-sm font-bold rounded-lg bg-red-500 text-white hover:bg-red-600 transition-colors">
+                        Check My Plan
+                    </button>
+                    <button onClick={handleReset} className="px-5 py-2 text-sm font-bold rounded-lg border border-zinc-300 dark:border-zinc-600 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors">
+                        Start Over
+                    </button>
+                </div>
+            )}
+
+            {/* Feedback */}
+            <AnimatePresence>
+                {showFeedback && (
+                    <MotionDiv
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.4 }}
+                        className="mt-8 space-y-4"
+                    >
+                        {hasBadChoices && (
+                            <div className="p-4 bg-rose-50 dark:bg-rose-900/20 border border-rose-200 dark:border-rose-700 rounded-lg">
+                                <p className="text-sm font-bold text-rose-700 dark:text-rose-300 mb-2">Bad Choices Detected:</p>
+                                {sequence.filter(a => a.isBad).map(a => (
+                                    <p key={a.id} className="text-sm text-rose-600 dark:text-rose-400 ml-2">&#9888; <strong>{a.label}</strong> &mdash; {a.warning}</p>
+                                ))}
+                            </div>
+                        )}
+
+                        <div className="p-4 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-700 rounded-lg">
+                            <p className="text-sm font-bold text-emerald-700 dark:text-emerald-300 mb-2">Optimal Morning Sequence:</p>
+                            <ol className="list-decimal list-inside space-y-1">
+                                {optimalSequence.map(a => (
+                                    <li key={a.id} className="text-sm text-emerald-600 dark:text-emerald-400">{a.label} <span className="text-zinc-400">({a.time} min)</span></li>
+                                ))}
+                            </ol>
+                        </div>
+
+                        <div className="p-5 bg-zinc-900 dark:bg-zinc-950 rounded-xl text-center">
+                            <p className="text-sm text-zinc-200 leading-relaxed italic">
+                                &ldquo;A calm, structured morning routine primes your prefrontal cortex for peak performance. Chaos primes your amygdala for panic.&rdquo;
+                            </p>
+                        </div>
+
+                        <div className="flex justify-center mt-4">
+                            <button onClick={handleReset} className="px-5 py-2 text-sm font-bold rounded-lg border border-zinc-300 dark:border-zinc-600 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors">
+                                Start Over
+                            </button>
+                        </div>
+                    </MotionDiv>
+                )}
+            </AnimatePresence>
+        </div>
+    );
+};
+
 // --- MODULE COMPONENT ---
 const LeavingCertStrategyModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
@@ -194,6 +433,7 @@ const LeavingCertStrategyModule: React.FC<{ onBack: () => void; progress: Module
             <ReadingSection title="Exam Day Protocol." eyebrow="Step 6" icon={HeartPulse} theme={theme}>
               <p>All your preparation is useless without effective execution in the arena. The exam hall is a high-pressure environment where physiological regulation is as important as academic knowledge.</p>
               <p>Master the <Highlight description="A protocol for the start of an exam: 30 seconds of tactical breathing to calm the nervous system, followed by a 'brain dump' of key formulas and quotes onto rough work paper to free up working memory." theme={theme}>"First 5 Minutes" Protocol</Highlight> to manage panic. Adhere to a <Highlight description="A strict timing plan where you move on when the allocated time for a question is up, no matter what. The 'first marks' of the next question are always easier than the 'last marks' of the current one." theme={theme}>Non-Negotiable Contract</Highlight> for time management. And finally, use the Post-Exam Script Review in September as a final strategic lever for appeals and, more importantly, for learning.</p>
+              <ExamDayTimelineBuilder />
             </ReadingSection>
           )}
         </>

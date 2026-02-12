@@ -299,6 +299,671 @@ const PhysiologicalSighGuide = () => {
     );
 };
 
+const MotionDiv = motion.div as any;
+
+type CrisisResponse = {
+    text: string;
+    quality: 'bad' | 'ok' | 'good';
+    consequence: string;
+    explanation: string;
+};
+
+type CrisisScenario = {
+    situation: string;
+    responses: CrisisResponse[];
+};
+
+const crisisScenarios: CrisisScenario[] = [
+    {
+        situation: "You open the exam paper. Question 1 is on a topic you barely revised.",
+        responses: [
+            {
+                text: "Panic \u2014 read it again and again hoping it changes",
+                quality: 'bad',
+                consequence: "PFC goes offline. Amygdala takes over. You spiral.",
+                explanation: "Cortisol floods your system. Your working memory shrinks. You can\u2019t think clearly about Q2\u2013Q6 either.",
+            },
+            {
+                text: "Skip it and move on immediately",
+                quality: 'ok',
+                consequence: "Partial recovery. Anxiety lingers.",
+                explanation: "Smart tactically, but you haven\u2019t calmed your nervous system. The anxiety follows you to Q2.",
+            },
+            {
+                text: "Close your eyes. Take one physiological sigh. Then skip to your strongest question.",
+                quality: 'good',
+                consequence: "PFC stays online. You stay in control.",
+                explanation: "The sigh activates your vagus nerve, lowering cortisol in seconds. Starting with a strong question builds momentum. You can return to Q1 later with a clear head.",
+            },
+        ],
+    },
+    {
+        situation: "You\u2019re halfway through an essay and realise you\u2019ve been answering the wrong question.",
+        responses: [
+            {
+                text: "Scribble it all out and start over in a frenzy",
+                quality: 'bad',
+                consequence: "PFC goes offline. Amygdala takes over. You spiral.",
+                explanation: "Panic wastes 5+ minutes. Your handwriting deteriorates. The examiner sees chaos.",
+            },
+            {
+                text: "Keep going with the wrong answer \u2014 at least it\u2019s something",
+                quality: 'bad',
+                consequence: "PFC goes offline. Amygdala takes over. You spiral.",
+                explanation: "You\u2019ll score near zero for relevance. The marking scheme rewards answering the actual question, not volume.",
+            },
+            {
+                text: "Draw a single line through it. Take a breath. Start the correct answer on the next page.",
+                quality: 'good',
+                consequence: "PFC stays online. You stay in control.",
+                explanation: "A single line is neat and acceptable. You preserve time, composure, and the examiner\u2019s goodwill. Partial marks on the correct question beat full marks on the wrong one.",
+            },
+        ],
+    },
+    {
+        situation: "Your mind goes completely blank on a question you definitely know.",
+        responses: [
+            {
+                text: "Stare at the page harder until it comes back",
+                quality: 'bad',
+                consequence: "PFC goes offline. Amygdala takes over. You spiral.",
+                explanation: "This is retrieval-induced suppression. The harder you force it, the more blocked it becomes. Your amygdala interprets the blank as threat.",
+            },
+            {
+                text: "Write anything vaguely related and hope for the best",
+                quality: 'ok',
+                consequence: "Partial recovery. Anxiety lingers.",
+                explanation: "You might stumble onto a retrieval cue, but unstructured writing rarely scores well.",
+            },
+            {
+                text: "Write the topic title. List 3 related keywords. Sketch a quick mind map in the margin.",
+                quality: 'good',
+                consequence: "PFC stays online. You stay in control.",
+                explanation: "External cues bypass the retrieval block. Writing related concepts creates spreading activation \u2014 the memory network lights up and the answer surfaces.",
+            },
+        ],
+    },
+    {
+        situation: "You look at the clock and realise you have 20 minutes left but two full questions to answer.",
+        responses: [
+            {
+                text: "Pick one question and write a perfect answer, skip the other",
+                quality: 'bad',
+                consequence: "PFC goes offline. Amygdala takes over. You spiral.",
+                explanation: "Leaving a full question blank means zero marks. Diminishing returns mean your 8th paragraph on Q5 is worth less than a first paragraph on Q6.",
+            },
+            {
+                text: "Rush through both as fast as possible",
+                quality: 'ok',
+                consequence: "Partial recovery. Anxiety lingers.",
+                explanation: "Better than skipping one, but panic-writing produces illegible, unstructured answers.",
+            },
+            {
+                text: "Split the time: 10 minutes each. Write a clear introduction + 3 bullet-point arguments for each.",
+                quality: 'good',
+                consequence: "PFC stays online. You stay in control.",
+                explanation: "Structured bullet points with key terms score nearly as well as prose. The examiner can award marks for every valid point. Two partial answers beat one complete plus one blank.",
+            },
+        ],
+    },
+];
+
+const CrisisScenarioTrainer = () => {
+    const [scenarioIndex, setScenarioIndex] = useState(0);
+    const [chosenIndex, setChosenIndex] = useState<number | null>(null);
+    const [results, setResults] = useState<('bad' | 'ok' | 'good')[]>([]);
+    const [finished, setFinished] = useState(false);
+
+    const scenario = crisisScenarios[scenarioIndex];
+    const chosenResponse = chosenIndex !== null ? scenario.responses[chosenIndex] : null;
+
+    const handleChoose = (idx: number) => {
+        if (chosenIndex !== null) return;
+        setChosenIndex(idx);
+    };
+
+    const handleNext = () => {
+        if (chosenResponse) {
+            const newResults = [...results, chosenResponse.quality];
+            setResults(newResults);
+            if (scenarioIndex + 1 >= crisisScenarios.length) {
+                setFinished(true);
+            } else {
+                setScenarioIndex(s => s + 1);
+                setChosenIndex(null);
+            }
+        }
+    };
+
+    const handlePlayAgain = () => {
+        setScenarioIndex(0);
+        setChosenIndex(null);
+        setResults([]);
+        setFinished(false);
+    };
+
+    const optimalCount = results.filter(r => r === 'good').length;
+
+    const consequenceBg = (quality: 'bad' | 'ok' | 'good') => {
+        if (quality === 'bad') return 'bg-rose-50 dark:bg-rose-900/20 border-rose-200 dark:border-rose-800';
+        if (quality === 'ok') return 'bg-amber-50 dark:bg-amber-900/20 border-amber-200 dark:border-amber-800';
+        return 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800';
+    };
+
+    const consequenceTextColor = (quality: 'bad' | 'ok' | 'good') => {
+        if (quality === 'bad') return 'text-rose-700 dark:text-rose-300';
+        if (quality === 'ok') return 'text-amber-700 dark:text-amber-300';
+        return 'text-emerald-700 dark:text-emerald-300';
+    };
+
+    const consequenceAccent = (quality: 'bad' | 'ok' | 'good') => {
+        if (quality === 'bad') return 'text-rose-600 dark:text-rose-400';
+        if (quality === 'ok') return 'text-amber-600 dark:text-amber-400';
+        return 'text-emerald-600 dark:text-emerald-400';
+    };
+
+    return (
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Crisis Scenario Trainer</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Your brain will default to its training. Build the right instincts now.</p>
+
+            <AnimatePresence mode="wait">
+                {!finished ? (
+                    <MotionDiv
+                        key={`scenario-${scenarioIndex}`}
+                        initial={{ opacity: 0, y: 16 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -16 }}
+                        transition={{ duration: 0.3 }}
+                    >
+                        {/* Progress indicator */}
+                        <div className="flex items-center justify-between mb-6">
+                            <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">Scenario {scenarioIndex + 1}/4</span>
+                            <div className="flex gap-1.5">
+                                {crisisScenarios.map((_, i) => (
+                                    <div key={i} className={`w-2.5 h-2.5 rounded-full transition-colors ${
+                                        i < scenarioIndex ? 'bg-sky-500' : i === scenarioIndex ? 'bg-sky-400 ring-2 ring-sky-200 dark:ring-sky-800' : 'bg-zinc-200 dark:bg-zinc-600'
+                                    }`} />
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Situation card */}
+                        <div className="p-5 md:p-6 rounded-xl bg-zinc-900 dark:bg-zinc-950 border border-zinc-700 mb-6">
+                            <div className="flex items-start gap-3">
+                                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-rose-500/20 flex items-center justify-center mt-0.5">
+                                    <Zap size={16} className="text-rose-400" />
+                                </div>
+                                <p className="text-white font-medium text-base md:text-lg leading-relaxed">{scenario.situation}</p>
+                            </div>
+                        </div>
+
+                        {/* Response options */}
+                        <div className="space-y-3 mb-4">
+                            {scenario.responses.map((response, idx) => {
+                                const isChosen = chosenIndex === idx;
+                                const isRevealed = chosenIndex !== null;
+
+                                return (
+                                    <div key={idx}>
+                                        <button
+                                            onClick={() => handleChoose(idx)}
+                                            disabled={isRevealed}
+                                            className={`w-full text-left p-4 rounded-xl border-2 transition-all duration-200 ${
+                                                isRevealed
+                                                    ? isChosen
+                                                        ? response.quality === 'good'
+                                                            ? 'border-emerald-400 dark:border-emerald-500 bg-emerald-50/50 dark:bg-emerald-900/10'
+                                                            : response.quality === 'ok'
+                                                                ? 'border-amber-400 dark:border-amber-500 bg-amber-50/50 dark:bg-amber-900/10'
+                                                                : 'border-rose-400 dark:border-rose-500 bg-rose-50/50 dark:bg-rose-900/10'
+                                                        : 'border-zinc-100 dark:border-zinc-700 opacity-40'
+                                                    : 'border-zinc-200 dark:border-zinc-600 hover:border-sky-300 dark:hover:border-sky-600 hover:bg-sky-50/50 dark:hover:bg-sky-900/10 cursor-pointer'
+                                            }`}
+                                        >
+                                            <div className="flex items-start gap-3">
+                                                <span className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold mt-0.5 ${
+                                                    isRevealed && isChosen
+                                                        ? response.quality === 'good'
+                                                            ? 'bg-emerald-500 text-white'
+                                                            : response.quality === 'ok'
+                                                                ? 'bg-amber-500 text-white'
+                                                                : 'bg-rose-500 text-white'
+                                                        : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-500 dark:text-zinc-400'
+                                                }`}>
+                                                    {String.fromCharCode(65 + idx)}
+                                                </span>
+                                                <span className={`text-sm font-medium ${
+                                                    isRevealed && !isChosen ? 'text-zinc-400 dark:text-zinc-500' : 'text-zinc-700 dark:text-zinc-200'
+                                                }`}>{response.text}</span>
+                                            </div>
+                                        </button>
+
+                                        {/* Consequence panel */}
+                                        <AnimatePresence>
+                                            {isChosen && isRevealed && (
+                                                <MotionDiv
+                                                    initial={{ opacity: 0, height: 0 }}
+                                                    animate={{ opacity: 1, height: 'auto' }}
+                                                    exit={{ opacity: 0, height: 0 }}
+                                                    transition={{ duration: 0.35, ease: 'easeOut' }}
+                                                    className="overflow-hidden"
+                                                >
+                                                    <div className={`mt-2 p-4 rounded-xl border ${consequenceBg(response.quality)}`}>
+                                                        <p className={`text-sm font-bold mb-1.5 ${consequenceAccent(response.quality)}`}>
+                                                            {response.consequence}
+                                                        </p>
+                                                        <p className={`text-sm leading-relaxed ${consequenceTextColor(response.quality)}`}>
+                                                            {response.explanation}
+                                                        </p>
+                                                    </div>
+                                                </MotionDiv>
+                                            )}
+                                        </AnimatePresence>
+                                    </div>
+                                );
+                            })}
+                        </div>
+
+                        {/* Next button */}
+                        <AnimatePresence>
+                            {chosenIndex !== null && (
+                                <MotionDiv
+                                    initial={{ opacity: 0, y: 8 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.3, duration: 0.25 }}
+                                    className="flex justify-end mt-6"
+                                >
+                                    <button
+                                        onClick={handleNext}
+                                        className="px-5 py-2.5 bg-sky-500 hover:bg-sky-600 text-white font-bold text-sm rounded-lg transition-colors"
+                                    >
+                                        {scenarioIndex + 1 >= crisisScenarios.length ? 'See Results' : 'Next Scenario'}
+                                    </button>
+                                </MotionDiv>
+                            )}
+                        </AnimatePresence>
+                    </MotionDiv>
+                ) : (
+                    <MotionDiv
+                        key="results"
+                        initial={{ opacity: 0, y: 16 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -16 }}
+                        transition={{ duration: 0.35 }}
+                        className="text-center"
+                    >
+                        {/* Score */}
+                        <div className="mb-6">
+                            <div className={`inline-flex items-center justify-center w-20 h-20 rounded-full mb-4 ${
+                                optimalCount === 4 ? 'bg-emerald-100 dark:bg-emerald-900/30' :
+                                optimalCount >= 2 ? 'bg-amber-100 dark:bg-amber-900/30' :
+                                'bg-rose-100 dark:bg-rose-900/30'
+                            }`}>
+                                <span className={`text-3xl font-bold ${
+                                    optimalCount === 4 ? 'text-emerald-600 dark:text-emerald-400' :
+                                    optimalCount >= 2 ? 'text-amber-600 dark:text-amber-400' :
+                                    'text-rose-600 dark:text-rose-400'
+                                }`}>{optimalCount}/4</span>
+                            </div>
+                            <p className={`text-lg font-bold mb-1 ${
+                                optimalCount === 4 ? 'text-emerald-700 dark:text-emerald-300' :
+                                optimalCount >= 2 ? 'text-amber-700 dark:text-amber-300' :
+                                'text-rose-700 dark:text-rose-300'
+                            }`}>{optimalCount}/4 optimal responses</p>
+                        </div>
+
+                        {/* Feedback */}
+                        <div className={`p-5 rounded-xl border mb-6 ${
+                            optimalCount === 4 ? 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800' :
+                            optimalCount >= 2 ? 'bg-amber-50 dark:bg-amber-900/20 border-amber-200 dark:border-amber-800' :
+                            'bg-rose-50 dark:bg-rose-900/20 border-rose-200 dark:border-rose-800'
+                        }`}>
+                            <p className={`text-sm leading-relaxed ${
+                                optimalCount === 4 ? 'text-emerald-700 dark:text-emerald-300' :
+                                optimalCount >= 2 ? 'text-amber-700 dark:text-amber-300' :
+                                'text-rose-700 dark:text-rose-300'
+                            }`}>
+                                {optimalCount === 4
+                                    ? "You\u2019ve built exam-crisis muscle memory. When panic hits, your training will take over."
+                                    : optimalCount >= 2
+                                        ? "Good instincts, but some panic responses slipped through. Review the scenarios where you chose poorly."
+                                        : "Under pressure, your brain defaulted to panic. That\u2019s exactly why we practice. Run through these again."
+                                }
+                            </p>
+                        </div>
+
+                        {/* Scenario results summary */}
+                        <div className="flex justify-center gap-2 mb-6">
+                            {results.map((r, i) => (
+                                <div key={i} className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold text-white ${
+                                    r === 'good' ? 'bg-emerald-500' : r === 'ok' ? 'bg-amber-500' : 'bg-rose-500'
+                                }`}>
+                                    {i + 1}
+                                </div>
+                            ))}
+                        </div>
+
+                        <button
+                            onClick={handlePlayAgain}
+                            className="px-6 py-2.5 bg-sky-500 hover:bg-sky-600 text-white font-bold text-sm rounded-lg transition-colors"
+                        >
+                            Play Again
+                        </button>
+                    </MotionDiv>
+                )}
+            </AnimatePresence>
+        </div>
+    );
+};
+
+// --- WRAP BUILDER ---
+type WRAPSection = {
+    title: string;
+    prompt: string;
+    suggestions: string[];
+    accentColor: string;
+    accentBg: string;
+    accentBorder: string;
+    accentText: string;
+    accentRing: string;
+    accentPillBg: string;
+    accentPillBorder: string;
+    accentPillText: string;
+    accentPillSelectedBg: string;
+    accentPillSelectedText: string;
+    accentCardBorder: string;
+};
+
+const wrapSections: WRAPSection[] = [
+    {
+        title: 'Daily Maintenance',
+        prompt: 'What do you need to do EVERY DAY to stay mentally well during exam season?',
+        suggestions: ['8 hours sleep', 'Exercise or walk', 'Eat 3 meals', 'Talk to someone', 'Take breaks', 'Limit social media'],
+        accentColor: '#10b981',
+        accentBg: 'bg-emerald-50 dark:bg-emerald-900/20',
+        accentBorder: 'border-emerald-200 dark:border-emerald-800',
+        accentText: 'text-emerald-600 dark:text-emerald-400',
+        accentRing: 'ring-emerald-500',
+        accentPillBg: 'bg-emerald-50 dark:bg-emerald-900/20',
+        accentPillBorder: 'border-emerald-300 dark:border-emerald-700',
+        accentPillText: 'text-emerald-700 dark:text-emerald-300',
+        accentPillSelectedBg: 'bg-emerald-500 dark:bg-emerald-600',
+        accentPillSelectedText: 'text-white',
+        accentCardBorder: 'border-l-emerald-500',
+    },
+    {
+        title: 'Triggers',
+        prompt: 'What situations or events tend to push you toward crisis?',
+        suggestions: ['Poor exam result', 'Comparing myself to others', 'Falling behind schedule', 'Sleep deprivation', 'Conflict with family/friends'],
+        accentColor: '#f59e0b',
+        accentBg: 'bg-amber-50 dark:bg-amber-900/20',
+        accentBorder: 'border-amber-200 dark:border-amber-800',
+        accentText: 'text-amber-600 dark:text-amber-400',
+        accentRing: 'ring-amber-500',
+        accentPillBg: 'bg-amber-50 dark:bg-amber-900/20',
+        accentPillBorder: 'border-amber-300 dark:border-amber-700',
+        accentPillText: 'text-amber-700 dark:text-amber-300',
+        accentPillSelectedBg: 'bg-amber-500 dark:bg-amber-600',
+        accentPillSelectedText: 'text-white',
+        accentCardBorder: 'border-l-amber-500',
+    },
+    {
+        title: 'Warning Signs',
+        prompt: 'What are the early signs that you\'re heading into crisis?',
+        suggestions: ['Can\'t concentrate', 'Not sleeping', 'Withdrawing from people', 'Irritability', 'Feeling hopeless'],
+        accentColor: '#f43f5e',
+        accentBg: 'bg-rose-50 dark:bg-rose-900/20',
+        accentBorder: 'border-rose-200 dark:border-rose-800',
+        accentText: 'text-rose-600 dark:text-rose-400',
+        accentRing: 'ring-rose-500',
+        accentPillBg: 'bg-rose-50 dark:bg-rose-900/20',
+        accentPillBorder: 'border-rose-300 dark:border-rose-700',
+        accentPillText: 'text-rose-700 dark:text-rose-300',
+        accentPillSelectedBg: 'bg-rose-500 dark:bg-rose-600',
+        accentPillSelectedText: 'text-white',
+        accentCardBorder: 'border-l-rose-500',
+    },
+    {
+        title: 'Crisis Plan',
+        prompt: 'When you\'re in crisis, what specific actions will you take?',
+        suggestions: ['Call a trusted person', 'Use physiological sigh breathing', 'Go for a walk outside', 'Take a full day off studying', 'Contact a helpline (Childline: 1800 66 66 66)'],
+        accentColor: '#3b82f6',
+        accentBg: 'bg-blue-50 dark:bg-blue-900/20',
+        accentBorder: 'border-blue-200 dark:border-blue-800',
+        accentText: 'text-blue-600 dark:text-blue-400',
+        accentRing: 'ring-blue-500',
+        accentPillBg: 'bg-blue-50 dark:bg-blue-900/20',
+        accentPillBorder: 'border-blue-300 dark:border-blue-700',
+        accentPillText: 'text-blue-700 dark:text-blue-300',
+        accentPillSelectedBg: 'bg-blue-500 dark:bg-blue-600',
+        accentPillSelectedText: 'text-white',
+        accentCardBorder: 'border-l-blue-500',
+    },
+];
+
+const WRAPBuilder = () => {
+    const [step, setStep] = useState(0); // 0-3 = sections, 4 = complete
+    const [selections, setSelections] = useState<string[][]>([[], [], [], []]);
+    const [customInputs, setCustomInputs] = useState(['', '', '', '']);
+
+    const toggleItem = (sectionIdx: number, item: string) => {
+        setSelections(prev => {
+            const updated = prev.map(s => [...s]);
+            const idx = updated[sectionIdx].indexOf(item);
+            if (idx >= 0) updated[sectionIdx].splice(idx, 1);
+            else updated[sectionIdx].push(item);
+            return updated;
+        });
+    };
+
+    const addCustom = (sectionIdx: number) => {
+        const val = customInputs[sectionIdx].trim();
+        if (!val) return;
+        if (!selections[sectionIdx].includes(val)) {
+            setSelections(prev => {
+                const updated = prev.map(s => [...s]);
+                updated[sectionIdx].push(val);
+                return updated;
+            });
+        }
+        setCustomInputs(prev => {
+            const updated = [...prev];
+            updated[sectionIdx] = '';
+            return updated;
+        });
+    };
+
+    const handleNext = () => {
+        if (step < 3) setStep(s => s + 1);
+        else setStep(4);
+    };
+
+    const handleEdit = () => setStep(0);
+
+    const section = step < 4 ? wrapSections[step] : null;
+
+    return (
+        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Build Your WRAP</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">A personal crisis plan you write now, so you don't have to think under pressure.</p>
+
+            {/* Progress dots */}
+            <div className="flex items-center justify-center gap-2 mb-8">
+                {wrapSections.map((ws, i) => (
+                    <div key={i} className="flex items-center gap-2">
+                        <div
+                            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                                step === 4 || i < step
+                                    ? 'scale-100'
+                                    : i === step
+                                        ? 'scale-110 ring-2 ring-offset-2 ring-offset-white dark:ring-offset-zinc-800'
+                                        : 'bg-zinc-200 dark:bg-zinc-600'
+                            } ${i === step && step < 4 ? ws.accentRing : ''}`}
+                            style={{
+                                backgroundColor: step === 4 || i < step
+                                    ? wrapSections[i].accentColor
+                                    : i === step
+                                        ? wrapSections[i].accentColor
+                                        : undefined,
+                            }}
+                        />
+                        {i < 3 && (
+                            <div className={`w-6 h-0.5 rounded-full transition-colors ${
+                                step === 4 || i < step ? 'bg-zinc-300 dark:bg-zinc-600' : 'bg-zinc-200 dark:bg-zinc-700'
+                            }`} />
+                        )}
+                    </div>
+                ))}
+            </div>
+
+            <AnimatePresence mode="wait">
+                {step < 4 && section ? (
+                    <MotionDiv
+                        key={`wrap-step-${step}`}
+                        initial={{ opacity: 0, x: 24 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -24 }}
+                        transition={{ duration: 0.3 }}
+                    >
+                        {/* Step label */}
+                        <div className="flex items-center gap-2 mb-3">
+                            <span className={`text-xs font-bold uppercase tracking-wider ${section.accentText}`}>
+                                {section.title}
+                            </span>
+                            <span className="text-xs text-zinc-400 dark:text-zinc-500">Step {step + 1} of 4</span>
+                        </div>
+
+                        {/* Prompt */}
+                        <p className="text-base font-medium text-zinc-700 dark:text-zinc-200 mb-5">{section.prompt}</p>
+
+                        {/* Toggleable pills */}
+                        <div className="flex flex-wrap gap-2 mb-5">
+                            {section.suggestions.map(item => {
+                                const isSelected = selections[step].includes(item);
+                                return (
+                                    <button
+                                        key={item}
+                                        onClick={() => toggleItem(step, item)}
+                                        className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-200 ${
+                                            isSelected
+                                                ? `${section.accentPillSelectedBg} ${section.accentPillSelectedText} border-transparent`
+                                                : `${section.accentPillBg} ${section.accentPillBorder} ${section.accentPillText} hover:opacity-80`
+                                        }`}
+                                    >
+                                        {item}
+                                    </button>
+                                );
+                            })}
+                            {/* Show custom items as selected pills */}
+                            {selections[step]
+                                .filter(item => !section.suggestions.includes(item))
+                                .map(item => (
+                                    <button
+                                        key={item}
+                                        onClick={() => toggleItem(step, item)}
+                                        className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-200 ${section.accentPillSelectedBg} ${section.accentPillSelectedText} border-transparent`}
+                                    >
+                                        {item} &times;
+                                    </button>
+                                ))}
+                        </div>
+
+                        {/* Custom input */}
+                        <div className="flex gap-2 mb-6">
+                            <input
+                                type="text"
+                                value={customInputs[step]}
+                                onChange={e => {
+                                    const idx = step;
+                                    setCustomInputs(prev => {
+                                        const updated = [...prev];
+                                        updated[idx] = e.target.value;
+                                        return updated;
+                                    });
+                                }}
+                                onKeyDown={e => { if (e.key === 'Enter') addCustom(step); }}
+                                placeholder="Add your own..."
+                                className="flex-1 px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-700/50 text-sm text-zinc-700 dark:text-zinc-200 placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-offset-1"
+                                style={{ '--tw-ring-color': section.accentColor } as React.CSSProperties}
+                            />
+                            <button
+                                onClick={() => addCustom(step)}
+                                className="px-4 py-2 rounded-lg text-sm font-bold text-white transition-colors"
+                                style={{ backgroundColor: section.accentColor }}
+                            >
+                                Add
+                            </button>
+                        </div>
+
+                        {/* Next button */}
+                        <div className="flex justify-end">
+                            <button
+                                onClick={handleNext}
+                                className="px-6 py-2.5 bg-sky-500 hover:bg-sky-600 text-white font-bold text-sm rounded-lg transition-colors"
+                            >
+                                {step === 3 ? 'Complete My WRAP' : 'Next'}
+                            </button>
+                        </div>
+                    </MotionDiv>
+                ) : step === 4 ? (
+                    <MotionDiv
+                        key="wrap-complete"
+                        initial={{ opacity: 0, y: 16 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -16 }}
+                        transition={{ duration: 0.4 }}
+                    >
+                        {/* Completed WRAP card */}
+                        <div className="bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-lg overflow-hidden">
+                            {/* Card header */}
+                            <div className="px-6 py-5 bg-zinc-50 dark:bg-zinc-800/80 border-b border-zinc-200 dark:border-zinc-700">
+                                <h5 className="font-serif text-xl font-bold text-zinc-800 dark:text-white text-center">My Wellness Recovery Action Plan</h5>
+                            </div>
+
+                            {/* Card sections */}
+                            <div className="p-6 space-y-6">
+                                {wrapSections.map((ws, i) => (
+                                    <div key={i} className={`pl-4 border-l-4 ${ws.accentCardBorder}`}>
+                                        <h6 className={`text-sm font-bold uppercase tracking-wider mb-2 ${ws.accentText}`}>{ws.title}</h6>
+                                        {selections[i].length > 0 ? (
+                                            <ul className="space-y-1">
+                                                {selections[i].map((item, j) => (
+                                                    <li key={j} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                                                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: ws.accentColor }} />
+                                                        {item}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        ) : (
+                                            <p className="text-sm text-zinc-400 dark:text-zinc-500 italic">No items added</p>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Summary text */}
+                        <p className="mt-6 text-sm text-zinc-600 dark:text-zinc-300 text-center leading-relaxed font-medium">
+                            Screenshot this plan. Pin it on your wall. When crisis hits, you won't need to think -- just follow your plan.
+                        </p>
+
+                        {/* Edit button */}
+                        <div className="flex justify-center mt-5">
+                            <button
+                                onClick={handleEdit}
+                                className="px-6 py-2.5 bg-zinc-200 dark:bg-zinc-600 hover:bg-zinc-300 dark:hover:bg-zinc-500 text-zinc-700 dark:text-zinc-200 font-bold text-sm rounded-lg transition-colors"
+                            >
+                                Edit My WRAP
+                            </button>
+                        </div>
+                    </MotionDiv>
+                ) : null}
+            </AnimatePresence>
+        </div>
+    );
+};
+
 // --- MODULE COMPONENT ---
 const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
@@ -330,6 +995,7 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
               <p>Going "blank" in an exam isn't you being stupid or unprepared. It's a physiological crisis. It's a neurochemical event where your brain's alarm system hijacks its command centre. To beat it, you need to understand the two states your brain operates in: <Highlight description="Your calm, logical state. Your Prefrontal Cortex (PFC) is in charge, allowing for clear thinking and easy memory retrieval." theme={theme}>Cold Cognition</Highlight> and <Highlight description="Your stressed, survival state. Your Amygdala (threat detector) takes over, shutting down the PFC and blocking access to memory." theme={theme}>Hot Cognition</Highlight>.</p>
               <p>When you see a question you don't know, your brain can perceive it as a threat. This triggers an <Highlight description="The moment your emotional Amygdala hijacks your rational Prefrontal Cortex, flooding your system with stress hormones like cortisol and cutting the 'phone lines' to your memory." theme={theme}>Amygdala Hijack</Highlight>, switching you from "cold" to "hot" cognition. Your memory isn't gone; the connection is just temporarily offline. This isn't a knowledge problem; it's a hardware problem.</p>
               <CognitionShiftVisualizer />
+              <CrisisScenarioTrainer />
             </ReadingSection>
           )}
            {activeSection === 1 && (
@@ -361,6 +1027,7 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
             <ReadingSection title="Crisis Planning: The WRAP." eyebrow="Step 6" icon={ClipboardList} theme={theme}>
               <p>Elite performers don't just react to crises; they plan for them. The <Highlight description="The Wellness Recovery Action Plan is a structured system for identifying your personal triggers and creating a pre-planned response to a crisis." theme={theme}>WRAP Framework</Highlight> is a tool for doing just that. It moves you from a state of panic to executing a pre-planned protocol.</p>
               <p>Your Academic WRAP has four parts. <strong>1. Daily Maintenance:</strong> What do you need to do every day to stay well? <strong>2. Triggers:</strong> What external events throw you off? <strong>3. Early Warning Signs:</strong> What are your internal signals of rising stress? <strong>4. Crisis Plan:</strong> Your "Break Glass" protocol for a full-blown panic attack. By writing this down *before* the crisis, you outsource the decision-making to your calm, rational self.</p>
+              <WRAPBuilder />
             </ReadingSection>
           )}
           {activeSection === 6 && (
