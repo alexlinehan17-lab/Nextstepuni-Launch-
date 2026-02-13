@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { blueTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = blueTheme;
@@ -288,6 +288,9 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
             <ReadingSection title="The Invisible Threat." eyebrow="Step 1" icon={AlertTriangle} theme={theme}>
               <p>In a high-stakes situation like the Leaving Cert, your brain is on high alert for threats. For students from disadvantaged backgrounds, there's an extra, invisible threat in the room: the fear that a poor performance will confirm a negative stereotype about your group. This is called <Highlight description="A situational predicament in which individuals are at risk of confirming negative stereotypes about their social group. This adds extra cognitive load, which can impair performance." theme={theme}>Stereotype Threat</Highlight>.</p>
               <p>It's a cognitive tax. Part of your precious working memory gets hijacked by this background anxiety, leaving less capacity for the actual exam questions. This isn't just "in your head"--it's a measurable physiological stress response that can sabotage your performance, even if you know the material perfectly.</p>
+              <PersonalStory name="Alex" role="Founder, NextStepUni">
+                <p>I know what this feels like. Walking into an exam hall, part of my brain was always running a background programme: "People from Togher don't get these kinds of results." I didn't have a name for it then, but it was stereotype threat. I was fighting the exam and fighting that voice at the same time — and I didn't realise it was costing me marks until I learned the science behind it.</p>
+              </PersonalStory>
             </ReadingSection>
             <WorkingMemoryGrid />
             </>

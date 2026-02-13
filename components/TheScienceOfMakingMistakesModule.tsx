@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = redTheme;
@@ -618,6 +618,9 @@ const TheScienceOfMakingMistakesModule: React.FC<{ onBack: () => void; progress:
             <ReadingSection title="The Brain's Alarm." eyebrow="Step 1" icon={AlertTriangle} theme={theme}>
               <p>When you make a mistake—a typo, a wrong turn in a maths problem—your brain registers it instantly. Before you are even consciously aware of it, an electrical signal called the <Highlight description="A neural signal of error detection that occurs within 50 milliseconds of a mistake. It is an unconscious 'uh-oh' signal originating from the anterior cingulate cortex." theme={theme}>Error-Related Negativity (ERN)</Highlight> fires. It's a super-fast, automatic "uh-oh" moment.</p>
               <p>Think of it as your brain's smoke detector. It's a primitive, unconscious alarm that goes off when your actions don't match your intentions. This signal is crucial, but it's not the part that drives learning. It's what happens next that separates high-performers from the rest.</p>
+              <PersonalStory name="Alex" role="Founder, NextStepUni">
+                <p>Failing the Junior Cert was the biggest mistake of my early life. At the time, it felt like a verdict — proof that school wasn't for me. It took me a long time to realise that the failure itself wasn't the problem. The problem was that I looked away from it instead of leaning in. When I finally did lean in, that failure became the single most useful piece of data I ever received.</p>
+              </PersonalStory>
             </ReadingSection>
           )}
            {activeSection === 1 && (

@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { amberTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = amberTheme;
@@ -270,6 +270,9 @@ const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleP
             <ReadingSection title="The Story of Failure." eyebrow="Step 1" icon={Code} theme={theme}>
               <p>When something bad happens, your brain instantly writes a story to explain why. This story is called an <Highlight description="A concept from social psychology referring to the causal explanations people generate for events. Your attributional style is a powerful predictor of your resilience and motivation." theme={theme}>attribution</Highlight>. It's the "source code" for your motivation. A resilient mindset isn't about being positive; it's about telling yourself the right kind of story after a failure.</p>
               <p>The core principle is to focus on what you can control. The Stoic philosophers called this the <Highlight description="The ancient Stoic principle of dividing the world into things you can control (your thoughts, your actions) and things you cannot (external events, other people's opinions)." theme={theme}>Dichotomy of Control</Highlight>. The research is clear: students who focus their energy on what they can control, and let go of what they can't, are more resilient and academically successful.</p>
+              <PersonalStory name="Alex" role="Founder, NextStepUni">
+                <p>After I failed my Junior Cert, I had a long list of things I couldn't control. Where I grew up, the crowds I'd been in, the things that had happened. In 4th year I made a decision to stop looking at that list. I focused on the one thing I could control: how I studied. I read the academic papers, I built a system, and I worked it every day. That was the only variable I changed — and it changed everything.</p>
+              </PersonalStory>
             </ReadingSection>
           )}
           {activeSection === 1 && (

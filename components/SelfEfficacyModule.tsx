@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { roseTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = roseTheme;
@@ -315,6 +315,9 @@ const SelfEfficacyModule: React.FC<{ onBack: () => void; progress: ModuleProgres
               <ReadingSection title="The Belief Barrier." eyebrow="Step 1" icon={Brain} theme={theme}>
                 <p>Let's get one thing straight: the biggest barrier to your success isn't a lack of talent. It's a lack of belief. In psychology, this core belief in your own ability is called <Highlight description="The conviction that you have the power to organize and execute the actions needed to get things done. It's not about having the skill; it's about believing you can use it." theme={theme}>Self-Efficacy</Highlight>. It's the engine that drives effort, persistence, and resilience.</p>
                 <p>Think of it like this: a car might have a full tank of petrol (your knowledge and skills), but if the driver doesn't believe they can actually drive, the car is going nowhere. For students from tough backgrounds, society often spends years convincing you that you don't belong in the driver's seat. This module is about grabbing the keys.</p>
+                <PersonalStory name="Alex" role="Founder, NextStepUni">
+                  <p>Nobody in my life ever told me I was capable of getting high points. Not because they were cruel — they just didn't have that frame of reference. When you grow up in Togher, "belief in your academic ability" isn't something anyone talks about. I didn't lack talent. I lacked a single person who made me believe the driver's seat was mine to take.</p>
+                </PersonalStory>
               </ReadingSection>
               <EfficacyRadar />
             </>

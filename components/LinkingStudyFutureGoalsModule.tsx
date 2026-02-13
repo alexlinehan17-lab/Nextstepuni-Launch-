@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { roseTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = roseTheme;
@@ -213,6 +213,9 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
             <ReadingSection title="The 'Why Bother?' Problem." eyebrow="Step 1" icon={Wind} theme={theme}>
               <p>The feeling of "why bother?" isn't laziness. It's a rational calculation your brain makes when the cost of a task outweighs its value. The science for this is called <Highlight description="A theory of motivation that posits that your level of motivation is a product of your expectation of success (Expectancy) and the value you place on the task (Value)." theme={theme}>Expectancy-Value Theory (EVT)</Highlight>. Motivation collapses when the <Highlight description="The perceived negative aspects of a task, like stress, boredom, or the time it takes away from other activities." theme={theme}>Cost</Highlight> feels higher than the <Highlight description="The usefulness of a task for achieving your future goals. It's the most stable and powerful form of motivation for schoolwork." theme={theme}>Utility Value</Highlight>.</p>
               <p>In the Leaving Cert, the "points race" often disconnects the work you're doing from any real-world purpose, reducing its Utility Value to zero. This makes the work feel like "drudgery," which massively increases its psychological Cost. This module is about flipping that equation back in your favour.</p>
+              <PersonalStory name="Alex" role="Founder, NextStepUni">
+                <p>I had the "why bother?" problem worse than most. Growing up in Togher, I couldn't see a single connection between what was happening in a classroom and anything that mattered in my life. School felt like it was designed for other people. It wasn't until I started reading the science of learning for myself that I realised the problem wasn't me — it was that nobody had ever shown me why any of it was worth the effort.</p>
+              </PersonalStory>
               <WhyBotherAudit />
             </ReadingSection>
           )}

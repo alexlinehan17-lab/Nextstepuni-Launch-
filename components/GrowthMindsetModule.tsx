@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { amberTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = amberTheme;
@@ -366,6 +366,9 @@ const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
             <ReadingSection title="The Two Brains: Fixed vs. Growth." eyebrow="Step 1" icon={Cpu} theme={theme}>
               <p>Imagine your brain is a computer. Some people believe it comes with "read-only" memory. You're born with a certain amount of intelligence, and that's that. This is the <Highlight description="The belief that your intelligence and abilities are static, unchangeable traits. People with this mindset avoid challenges to avoid 'proving' their limitations." theme={theme}>Fixed Mindset</Highlight>. It's an operating system that sees effort as pointless and failure as a permanent judgement.</p>
               <p>But the science shows your brain is more like a rewritable drive. Every time you learn something new, you're installing new software. This is the <Highlight description="The belief that intelligence can be developed through dedication and hard work. This view creates a love of learning and a resilience that is essential for great accomplishment." theme={theme}>Growth Mindset</Highlight>. It's an operating system that sees challenges as opportunities and failure as feedback. Which OS is your brain running right now?</p>
+              <PersonalStory name="Alex" role="Founder, NextStepUni">
+                <p>Growing up in Togher in Cork, I never saw school as something that mattered. I spent my time playing soccer and messing around — I genuinely believed the classroom wasn't for people like me. I fell in with the wrong crowds, started drinking, and was heading nowhere. I failed my Junior Cert, but honestly, I was on that path long before the results came out. The fixed mindset wasn't some concept in a textbook — it was my entire operating system, and I didn't even know it was running.</p>
+              </PersonalStory>
               <MindsetDiagnostic />
               <MicroCommitment theme={theme}>
                 <p>Listen to how you talk about school today. Catch one "fixed" thought (e.g., "I'm bad at Irish") and just notice it. You don't have to change it yet, just acknowledge you're running that piece of code.</p>
@@ -386,6 +389,9 @@ const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
             <ReadingSection title="The Most Powerful Word." eyebrow="Step 3" icon={RotateCcw} theme={theme}>
                 <p>A fixed mindset speaks in absolutes: "I can't do this." "I'm not good at this." These are dead ends. They shut down effort and kill motivation. The growth mindset has a simple but incredibly powerful software patch for this bug: the word "yet."</p>
                 <p>Adding "yet" to the end of a fixed statement instantly changes it from a verdict into a journey. "I can't do this" becomes "I can't do this... yet." "I'm not good at this" becomes "I'm not good at this... yet." It's a linguistic trick that tells your brain the story isn't over. It opens the door to new strategies and further effort, keeping your motivation circuit online.</p>
+                <PersonalStory name="Alex" role="Founder, NextStepUni">
+                  <p>After I lost one of my best friends during Junior Cert, my whole world shattered. In 4th year, something shifted. I started reading academic papers on how people actually learn, and I realised the voice that had been telling me "you can't do this" was just software, not fact. I built my own learning system from the science, and "I can't" slowly became "I can't yet." It felt fake at first. But I went from failing my Junior Cert to nearly 600 points in the Leaving Cert and a UCC Scholarship. The "yet" was real — I just had to give it time to prove itself.</p>
+                </PersonalStory>
                 <ReframeChallenge />
                 <MicroCommitment theme={theme}>
                     <p>The next time you hear a friend (or yourself) say a "fixed" statement like "I don't get this," add a gentle "...yet?" at the end. You're installing the software patch for them.</p>

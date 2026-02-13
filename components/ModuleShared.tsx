@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Zap } from 'lucide-react';
+import { Zap, Quote } from 'lucide-react';
 import { ModuleTheme } from '../types';
 
 interface HighlightProps {
@@ -96,6 +96,31 @@ export const MicroCommitment = ({ children, theme }: MicroCommitmentProps) => (
           {children}
         </div>
       </div>
+    </div>
+  </div>
+);
+
+interface PersonalStoryProps {
+  children: React.ReactNode;
+  name: string;
+  role?: string;
+}
+
+export const PersonalStory = ({ children, name, role }: PersonalStoryProps) => (
+  <div className="my-10 rounded-2xl bg-stone-50 dark:bg-stone-900/40 border border-stone-200/60 dark:border-stone-800/60 border-l-[3px] border-l-stone-400 dark:border-l-stone-600 p-8">
+    <div className="flex items-center gap-3 mb-4">
+      <div className="w-8 h-8 rounded-lg bg-stone-200 dark:bg-stone-800 flex items-center justify-center text-stone-500 dark:text-stone-400 shrink-0">
+        <Quote size={14} />
+      </div>
+      <div className="flex items-center gap-2">
+        <span className="text-sm font-bold text-stone-700 dark:text-stone-300">{name}</span>
+        {role && (
+          <span className="text-[10px] font-semibold uppercase tracking-wider text-stone-400 dark:text-stone-500">{role}</span>
+        )}
+      </div>
+    </div>
+    <div className="text-stone-600 dark:text-stone-400 text-sm leading-relaxed italic font-serif">
+      {children}
     </div>
   </div>
 );

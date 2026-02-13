@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { indigoTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = indigoTheme;
@@ -323,6 +323,9 @@ const StrategicAdvantageModule: React.FC<{ onBack: () => void; progress: ModuleP
             <ReadingSection title="The Story of You." eyebrow="Step 1" icon={Feather} theme={theme}>
               <p>You are a storyteller. The most important story you will ever tell is the one you tell yourself about your own life. This is your <Highlight description="Pioneered by psychologist Dan McAdams, this is the internalized, evolving story of the self that each person crafts to provide their life with a sense of meaning and purpose." theme={theme}>Narrative Identity</Highlight>. It's how you make sense of your past, present, and future.</p>
               <p>Society often hands students from tough backgrounds a ready-made story: a tale of deficit and struggle. This is a <Highlight description="A life story in which a positive event is ruined or spoiled by a subsequent negative event, leading to feelings of hopelessness and despair." theme={theme}>Contamination Script</Highlight>. Resilience is the act of radical authorship: rejecting that story and writing your own, a <Highlight description="A life story in which a negative event is 'redeemed' or transformed by a positive outcome, leading to growth, learning, and a sense of agency." theme={theme}>Redemption Script</Highlight> where adversity becomes the source of your strength.</p>
+              <PersonalStory name="Alex" role="Founder, NextStepUni">
+                <p>I had a contamination script running for years. Lad from Togher, wrong crowds, failed the Junior Cert — it would have been easy to let that be the whole story. But in 4th year I rewrote it. I spent the year reading academic papers, built my own learning system, and went from rock bottom to nearly 600 points and a UCC Scholarship. The story didn't change because the facts changed. The facts were the same. I just chose to write a different next chapter.</p>
+              </PersonalStory>
               <NarrativeSwitcher />
             </ReadingSection>
           )}

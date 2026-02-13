@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = redTheme;
@@ -642,6 +642,9 @@ const PointsOptimizationModule: React.FC<{
               <p>Here is the single most important number in the Leaving Certificate: <Highlight description="The difference between an H1 (100 points) and an H2 (88 points) is 12 points — the single largest drop between any two passing grades in the system." theme={theme}>12</Highlight>. That's the number of points you lose the moment you drop from an H1 to an H2. It's the steepest cliff in the entire grading system.</p>
               <p>Think about what that means. The difference between 89% and 90% in a single exam is not 1 point — it's <strong>12 points</strong> on the CAO scale. No other grade boundary has this kind of leverage. The drop from H2 to H3 is 11 points. From H3 to H4, it's also 11. But H1 to H2? That 12-point cliff means that for a student targeting 625, the margin for error is essentially zero. You cannot afford a single H2 in your best six subjects.</p>
               <p>This isn't about perfectionism — it's about understanding the mathematics of the system you're operating in. The grading architecture was designed in 2017 to reduce the pressure of marginal gains, but paradoxically, at the very top, it created the most punishing boundary in the entire scale. A student scoring 89% and a student scoring 90% are separated by a single percentage point in achievement but <strong>12 points</strong> in CAO currency.</p>
+              <PersonalStory name="Alex" role="Founder, NextStepUni">
+                <p>I went from failing my Junior Cert to nearly 600 points in the Leaving Cert. If someone had shown me this data — the grade economics, the maths bonus, the H1 rates — when I was in 4th year, I would have saved months of wasted effort. The system has rules, and once you understand them, you stop feeling like the game is rigged against you and start playing it strategically. That's what this module is for.</p>
+              </PersonalStory>
               <p>The strategic response? You don't aim for 90%. You aim for 93-95% in practice — building a buffer that absorbs exam-day volatility, unfamiliar questions, and marking variance. Use the calculator below to see exactly how each grade drop cascades through your total.</p>
               <GradeWaterfall />
               <MicroCommitment theme={theme}>

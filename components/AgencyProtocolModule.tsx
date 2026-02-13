@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { blueTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = blueTheme;
@@ -145,6 +145,9 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
             <ReadingSection title="Setting the Sat-Nav: Your Future is Calling." eyebrow="Step 1" icon={Target} theme={theme}>
               <p>Without a destination programmed into the Sat-Nav, you're just driving aimlessly. The same is true for school. You might know you want to go to college, but that's a vague spot on a map. To get there, you need a clear route, and that starts by connecting today's homework to tomorrow's destination.</p>
               <p>The science is clear: linking your daily study to a future career you want makes you far more likely to do the work. The solution is to stop seeing schoolwork as a chore and start seeing it as an <Highlight description="The scientifically-proven idea that every piece of study you do now is a direct deposit into your future self's bank account. This isn't just a nice thought; it's a powerful motivational tool." theme={theme}>Investment</Highlight> in your <Highlight description="A vivid, personal picture of who you want to become. Psychologists have shown this is a key tool for driving motivation, as it makes future rewards feel more immediate." theme={theme}>Possible Self</Highlight>. Every single action you take today builds the road to that future destination.</p>
+              <PersonalStory name="Alex" role="Founder, NextStepUni">
+                <p>For most of school, I had no destination programmed. Growing up in Togher, nobody in my world was talking about college courses or career paths. School was just something you showed up to — or didn't. I had no "Possible Self" because I'd never been shown one that looked like me. It wasn't until I lost my best friend and hit rock bottom that I even considered the idea that school could lead somewhere worth going.</p>
+              </PersonalStory>
               <MicroCommitment theme={theme}>
                 <p>Open your phone's calendar right now. Schedule a 15-minute slot for tomorrow called 'Driving Practice' and use it to do the small action you list below.</p>
               </MicroCommitment>
