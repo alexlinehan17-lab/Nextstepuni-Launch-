@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import {
   Link2, Brain, Wand2, Gamepad2, Briefcase, DraftingCompass, Wind, GraduationCap
@@ -13,30 +13,41 @@ import { ModuleProgress } from '../types';
 import { roseTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useModuleResponses } from '../hooks/useModuleResponses';
 
 const theme = roseTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 
-const WhyBotherAudit = () => {
+const WhyBotherAudit = ({ savedSubjects, savedRatings, onSave }: { savedSubjects?: string[]; savedRatings?: { [key: string]: number }; onSave?: (subjects: string[], ratings: { [key: string]: number }) => void }) => {
     const subjects = [
       'English', 'Irish', 'Maths', 'History', 'Geography', 'Biology',
       'Chemistry', 'Physics', 'Business', 'Economics', 'French', 'Art',
     ];
 
-    const [selected, setSelected] = useState<Set<string>>(new Set());
-    const [ratings, setRatings] = useState<{ [key: string]: number }>({});
+    const [selected, setSelected] = useState<Set<string>>(new Set(savedSubjects || []));
+    const [ratings, setRatings] = useState<{ [key: string]: number }>(savedRatings || {});
+
+    useEffect(() => {
+      if (savedSubjects) setSelected(new Set(savedSubjects));
+      if (savedRatings) setRatings(savedRatings);
+    }, [savedSubjects, savedRatings]);
 
     const toggleSubject = (s: string) => {
       setSelected(prev => {
         const next = new Set(prev);
         if (next.has(s)) { next.delete(s); } else if (next.size < 7) { next.add(s); }
+        onSave?.(Array.from(next), ratings);
         return next;
       });
     };
 
     const setRating = (subject: string, value: number) => {
-      setRatings(prev => ({ ...prev, [subject]: value }));
+      setRatings(prev => {
+        const next = { ...prev, [subject]: value };
+        onSave?.(Array.from(selected), next);
+        return next;
+      });
     };
 
     const ratedSubjects = Array.from(selected).filter(s => ratings[s] !== undefined);
@@ -194,6 +205,8 @@ const TransferableSkillsMatrix = () => {
 
 // --- MODULE COMPONENT ---
 const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const { responses, saveResponse, isLoaded } = useModuleResponses('linking-study-future-goals');
+
   const sections = [
     { id: 'friction-point', title: 'The "Why Bother?" Problem', eyebrow: '01 // The Anatomy of Friction', icon: Wind },
     { id: 'horizon-of-purpose', title: 'The Horizon of Purpose', eyebrow: '02 // Future Time Perspective', icon: DraftingCompass },
@@ -216,7 +229,7 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
               <PersonalStory name="Alex" role="Founder, NextStepUni">
                 <p>I had the "why bother?" problem worse than most. Growing up in Togher, I couldn't see a single connection between what was happening in a classroom and anything that mattered in my life. School felt like it was designed for other people. It wasn't until I started reading the science of learning for myself that I realised the problem wasn't me — it was that nobody had ever shown me why any of it was worth the effort.</p>
               </PersonalStory>
-              <WhyBotherAudit />
+              <WhyBotherAudit savedSubjects={responses['audit-subjects']} savedRatings={responses['audit-ratings']} onSave={(subjects, ratings) => { saveResponse('audit-subjects', subjects); saveResponse('audit-ratings', ratings); }} />
             </ReadingSection>
           )}
           {activeSection === 1 && (

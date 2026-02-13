@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Cpu, BrainCircuit, RotateCcw, Zap, MessageSquareQuote, Activity
@@ -13,19 +13,25 @@ import { ModuleProgress } from '../types';
 import { amberTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useModuleResponses } from '../hooks/useModuleResponses';
 
 const theme = amberTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 
-const MindsetDiagnostic = () => {
-  const [answers, setAnswers] = useState<( 'fixed' | 'growth' | null)[]>([null, null, null]);
+const MindsetDiagnostic = ({ savedAnswers, onSaveAnswers }: { savedAnswers?: ('fixed' | 'growth' | null)[]; onSaveAnswers?: (answers: ('fixed' | 'growth' | null)[]) => void }) => {
+  const [answers, setAnswers] = useState<( 'fixed' | 'growth' | null)[]>(savedAnswers || [null, null, null]);
   const score = answers.filter(a => a === 'growth').length;
+
+  useEffect(() => {
+    if (savedAnswers) setAnswers(savedAnswers);
+  }, [savedAnswers]);
 
   const handleAnswer = (index: number, type: 'fixed' | 'growth') => {
     const newAnswers = [...answers];
     newAnswers[index] = type;
     setAnswers(newAnswers);
+    onSaveAnswers?.(newAnswers);
   };
 
   const isComplete = answers.every(a => a !== null);
@@ -113,9 +119,13 @@ const NeuroplasticityVisualizer = () => {
   );
 }
 
-const ReframeChallenge = () => {
-    const [reframe, setReframe] = useState('');
+const ReframeChallenge = ({ savedText, onSave }: { savedText?: string; onSave?: (text: string) => void }) => {
+    const [reframe, setReframe] = useState(savedText || '');
     const containsYet = reframe.toLowerCase().includes('yet');
+
+    useEffect(() => {
+      if (savedText !== undefined && savedText !== reframe) setReframe(savedText);
+    }, [savedText]);
 
     return(
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
@@ -127,6 +137,7 @@ const ReframeChallenge = () => {
             <textarea
                 value={reframe}
                 onChange={(e) => setReframe(e.target.value)}
+                onBlur={() => onSave?.(reframe)}
                 placeholder="Your growth reframe..."
                 className="w-full h-24 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-4 focus:border-amber-500 outline-none transition-colors"
             />
@@ -339,6 +350,8 @@ const FeedbackTranslator = () => {
 
 // --- MODULE COMPONENT ---
 const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const { responses, saveResponse, isLoaded } = useModuleResponses('growth-mindset-protocol');
+
   const sections = [
     { id: 'two-brains', title: 'The Two Brains: Fixed vs. Growth', eyebrow: '01 // The Operating System', icon: Cpu },
     { id: 'brain-muscle', title: 'Your Brain is Plastic', eyebrow: '02 // The Hardware Upgrade', icon: BrainCircuit },
@@ -369,7 +382,7 @@ const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
               <PersonalStory name="Alex" role="Founder, NextStepUni">
                 <p>Growing up in Togher in Cork, I never saw school as something that mattered. I spent my time playing soccer and messing around — I genuinely believed the classroom wasn't for people like me. I fell in with the wrong crowds, started drinking, and was heading nowhere. I failed my Junior Cert, but honestly, I was on that path long before the results came out. The fixed mindset wasn't some concept in a textbook — it was my entire operating system, and I didn't even know it was running.</p>
               </PersonalStory>
-              <MindsetDiagnostic />
+              <MindsetDiagnostic savedAnswers={responses['mindset-diagnostic']} onSaveAnswers={(a) => saveResponse('mindset-diagnostic', a)} />
               <MicroCommitment theme={theme}>
                 <p>Listen to how you talk about school today. Catch one "fixed" thought (e.g., "I'm bad at Irish") and just notice it. You don't have to change it yet, just acknowledge you're running that piece of code.</p>
               </MicroCommitment>
@@ -392,7 +405,7 @@ const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
                 <PersonalStory name="Alex" role="Founder, NextStepUni">
                   <p>After I lost one of my best friends during Junior Cert, my whole world shattered. In 4th year, something shifted. I started reading academic papers on how people actually learn, and I realised the voice that had been telling me "you can't do this" was just software, not fact. I built my own learning system from the science, and "I can't" slowly became "I can't yet." It felt fake at first. But I went from failing my Junior Cert to nearly 600 points in the Leaving Cert and a UCC Scholarship. The "yet" was real — I just had to give it time to prove itself.</p>
                 </PersonalStory>
-                <ReframeChallenge />
+                <ReframeChallenge savedText={responses['reframe-text']} onSave={(t) => saveResponse('reframe-text', t)} />
                 <MicroCommitment theme={theme}>
                     <p>The next time you hear a friend (or yourself) say a "fixed" statement like "I don't get this," add a gentle "...yet?" at the end. You're installing the software patch for them.</p>
                 </MicroCommitment>

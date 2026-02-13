@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import {
   BrainCircuit, Shield, AlertTriangle, UserCheck
@@ -12,6 +12,7 @@ import { ModuleProgress } from '../types';
 import { blueTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useModuleResponses } from '../hooks/useModuleResponses';
 
 const theme = blueTheme;
 
@@ -221,16 +222,25 @@ const WorkingMemoryGrid = () => {
   );
 };
 
-const ValuesSelector = () => {
+const ValuesSelector = ({ savedValues, onSave }: { savedValues?: string[]; onSave?: (values: string[]) => void }) => {
     const values = ["Family", "Friendship", "Creativity", "Kindness", "Humour", "Ambition", "Community", "Independence", "Learning"];
-    const [selected, setSelected] = useState<string[]>([]);
+    const [selected, setSelected] = useState<string[]>(savedValues || []);
+
+    useEffect(() => {
+      if (savedValues) setSelected(savedValues);
+    }, [savedValues]);
 
     const handleSelect = (value: string) => {
+        let next: string[];
         if (selected.includes(value)) {
-            setSelected(selected.filter(v => v !== value));
+            next = selected.filter(v => v !== value);
         } else if (selected.length < 3) {
-            setSelected([...selected, value]);
+            next = [...selected, value];
+        } else {
+            return;
         }
+        setSelected(next);
+        onSave?.(next);
     };
 
     return(
@@ -261,6 +271,8 @@ const ValuesSelector = () => {
 
 // --- MODULE COMPONENT ---
 const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const { responses, saveResponse, isLoaded } = useModuleResponses('affirming-values');
+
   const sections = [
     { id: 'invisible-threat', title: 'The Invisible Threat', eyebrow: '01 // The Problem', icon: AlertTriangle },
     { id: 'psychological-shield', title: 'The Psychological Shield', eyebrow: '02 // The Solution', icon: Shield },
@@ -317,7 +329,7 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
             <ReadingSection title="Your Pre-Exam Protocol." eyebrow="Step 5" icon={UserCheck} theme={theme}>
               <p>You now have a scientifically-proven tool to protect your brain under pressure. The final step is to turn it into a concrete, pre-exam ritual. Before every major exam (especially the Mocks and the Leaving Cert itself), you will run the Self-Affirmation Protocol.</p>
               <p>The steps are simple: <strong>1. Identify your core values.</strong> <strong>2. Choose the one that feels most important to you right now.</strong> <strong>3. Write for 15 minutes.</strong> This isn't an essay; it's a private reflection. Write about why the value is important and describe a specific time you lived up to it. This isn't a "nice to have"; it's a cognitive warm-up as important as checking your pens.</p>
-              <ValuesSelector />
+              <ValuesSelector savedValues={responses['selected-values']} onSave={(v) => saveResponse('selected-values', v)} />
               <MicroCommitment theme={theme}>
                 <p>Take the values you selected above. Create a recurring event in your phone's calendar for the morning of every exam you have this year, with the title: "15 Min Values Affirmation." You've just weaponized positive psychology.</p>
               </MicroCommitment>

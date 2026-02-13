@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   TrendingDown, Calculator, BarChart3, Scale, GitBranch, Layers, Target,
@@ -13,6 +13,7 @@ import { ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useModuleResponses } from '../hooks/useModuleResponses';
 
 const theme = redTheme;
 const MotionDiv = motion.div as any;
@@ -323,15 +324,24 @@ const ObjectivitySpectrum = () => {
 
 // ─── INTERACTIVE 5: Subject Synergy Map ─────────────────────────────────────
 
-const SynergyMap = () => {
-  const [selected, setSelected] = useState<string[]>([]);
+const SynergyMap = ({ savedSubjects, onSave }: { savedSubjects?: string[]; onSave?: (subjects: string[]) => void }) => {
+  const [selected, setSelected] = useState<string[]>(savedSubjects || []);
+
+  useEffect(() => {
+    if (savedSubjects) setSelected(savedSubjects);
+  }, [savedSubjects]);
 
   const toggleSubject = (name: string) => {
+    let next: string[];
     if (selected.includes(name)) {
-      setSelected(selected.filter(s => s !== name));
+      next = selected.filter(s => s !== name);
     } else if (selected.length < 7) {
-      setSelected([...selected, name]);
+      next = [...selected, name];
+    } else {
+      return;
     }
+    setSelected(next);
+    onSave?.(next);
   };
 
   const activeSynergies = useMemo(() => {
@@ -495,27 +505,35 @@ const SurplusCalculator = () => {
 
 // ─── INTERACTIVE 7: Portfolio Optimizer ──────────────────────────────────────
 
-const PortfolioOptimizer = () => {
-  const [portfolio, setPortfolio] = useState<{ subject: string; confidence: string }[]>([
-    { subject: 'Mathematics', confidence: 'H2' },
-    { subject: 'English', confidence: 'H2' },
-    { subject: 'Irish', confidence: 'H3' },
-    { subject: '', confidence: 'H2' },
-    { subject: '', confidence: 'H2' },
-    { subject: '', confidence: 'H2' },
-    { subject: '', confidence: 'H3' },
-  ]);
+const DEFAULT_PORTFOLIO = [
+  { subject: 'Mathematics', confidence: 'H2' },
+  { subject: 'English', confidence: 'H2' },
+  { subject: 'Irish', confidence: 'H3' },
+  { subject: '', confidence: 'H2' },
+  { subject: '', confidence: 'H2' },
+  { subject: '', confidence: 'H2' },
+  { subject: '', confidence: 'H3' },
+];
+
+const PortfolioOptimizer = ({ savedPortfolio, onSave }: { savedPortfolio?: { subject: string; confidence: string }[]; onSave?: (portfolio: { subject: string; confidence: string }[]) => void }) => {
+  const [portfolio, setPortfolio] = useState<{ subject: string; confidence: string }[]>(savedPortfolio || DEFAULT_PORTFOLIO);
+
+  useEffect(() => {
+    if (savedPortfolio) setPortfolio(savedPortfolio);
+  }, [savedPortfolio]);
 
   const updateSubject = (idx: number, subject: string) => {
     const next = [...portfolio];
     next[idx] = { ...next[idx], subject };
     setPortfolio(next);
+    onSave?.(next);
   };
 
   const updateConfidence = (idx: number, confidence: string) => {
     const next = [...portfolio];
     next[idx] = { ...next[idx], confidence };
     setPortfolio(next);
+    onSave?.(next);
   };
 
   const analysis = useMemo(() => {
@@ -612,6 +630,8 @@ const PointsOptimizationModule: React.FC<{
   progress: ModuleProgress;
   onProgressUpdate: (progress: ModuleProgress) => void;
 }> = ({ onBack, progress, onProgressUpdate }) => {
+  const { responses, saveResponse, isLoaded } = useModuleResponses('the-625-blueprint');
+
   const sections = [
     { id: 'the-cliff', title: 'The 12-Point Cliff', eyebrow: '01 // Grade Economics', icon: TrendingDown },
     { id: 'maths-multiplier', title: 'The Maths Multiplier', eyebrow: '02 // The Bonus Anomaly', icon: Calculator },
@@ -695,7 +715,7 @@ const PointsOptimizationModule: React.FC<{
               <p>The smartest students don't just study seven separate subjects — they exploit the <Highlight description="When two subjects share overlapping content, studying one simultaneously reinforces the other, effectively giving you a 2-for-1 return on study time." theme={theme}>hidden connections</Highlight> between them. The Leaving Cert curriculum is full of overlapping content, and a strategically chosen subject combination can dramatically reduce your total cognitive load.</p>
               <p>Consider the "Maths Block": Higher Maths, Applied Maths, and Physics. The mechanics section of Physics overlaps significantly with Applied Maths. Calculus in Maths supports both. A student studying all three is effectively getting a 3-for-1 return on certain topics. The "Life Science Block" (Biology, Chemistry, Ag Science) has similar overlaps — organic chemistry appears in both Chemistry and Biology, soil science in Ag Science relies on chemical concepts.</p>
               <p>Even languages create synergies — the grammar structures and essay techniques used in French transfer to Spanish and German. The critical question isn't just "what subjects do I like?" but "what subjects compound each other's value when studied together?"</p>
-              <SynergyMap />
+              <SynergyMap savedSubjects={responses['synergy-subjects']} onSave={(s) => saveResponse('synergy-subjects', s)} />
               <MicroCommitment theme={theme}>
                 <p>Select your actual subjects in the tool above. How many synergy connections light up? If you're getting zero connections, think about whether your study schedule could be restructured to study synergistic subjects back-to-back in the same session.</p>
               </MicroCommitment>
@@ -720,7 +740,7 @@ const PointsOptimizationModule: React.FC<{
               <p>Use the Portfolio Optimizer below to input your actual seven subjects and your honest, current grade expectations. Not your target grades — your realistic prediction based on how you're performing right now. The tool will calculate your projected total, objectivity score, and identify your highest-risk subjects.</p>
               <p>The output isn't a judgment — it's a diagnostic. If your projected total is 560, you're not "failing." You're 65 points away, which means you need to flip approximately 5-6 subjects from H2 to H1. That's your project plan for the year. Each H2→H1 flip is worth 12 points. Focus on the subjects where the flip is most achievable — typically your highest-yield, most objective subjects first.</p>
               <p>The post-pandemic landscape is shifting. The generous Post-Marking Adjustments of 2022-2024 are being tapered. You should prepare for 2019-standard marking rigour. That means aiming for 93-95% in practice to safely clear the 90% H1 threshold on exam day. The buffer is your insurance policy.</p>
-              <PortfolioOptimizer />
+              <PortfolioOptimizer savedPortfolio={responses['portfolio']} onSave={(p) => saveResponse('portfolio', p)} />
               <MicroCommitment theme={theme}>
                 <p>Complete the Portfolio Optimizer with your real subjects and honest grade expectations. Screenshot the result. This is your 625 Blueprint — the gap between your projected total and 625 is the exact project you need to manage between now and June.</p>
               </MicroCommitment>

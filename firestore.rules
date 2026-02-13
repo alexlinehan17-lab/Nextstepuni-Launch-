@@ -36,6 +36,11 @@ service cloud.firestore {
       allow read, write: if request.auth != null && request.auth.uid == userId;
     }
 
+    // Responses collection: each user can only read/write their own doc
+    match /responses/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
     // Default deny — no other collections are accessible
     match /{document=**} {
       allow read, write: if false;

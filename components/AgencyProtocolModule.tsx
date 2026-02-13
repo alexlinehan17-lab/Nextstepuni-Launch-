@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, Reorder } from 'framer-motion';
 import {
   Target, Users, Settings, ShieldAlert, Zap, Map,
@@ -13,6 +13,7 @@ import { ModuleProgress } from '../types';
 import { blueTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useModuleResponses } from '../hooks/useModuleResponses';
 
 const theme = blueTheme;
 
@@ -106,6 +107,7 @@ const MindsetSorter = () => {
 
 
 const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const { responses, saveResponse, isLoaded } = useModuleResponses('agency-protocol');
   const [futureSelf, setFutureSelf] = useState('');
   const [dailyAction, setDailyAction] = useState('');
   const [reframe, setReframe] = useState(false);
@@ -116,6 +118,14 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
     { id: 'hack', text: 'Take The Wheel (Classroom Hack)' },
   ]);
   const [scenarioChoice, setScenarioChoice] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (isLoaded) {
+      if (responses['futureSelf']) setFutureSelf(responses['futureSelf']);
+      if (responses['dailyAction']) setDailyAction(responses['dailyAction']);
+      if (responses['scenarioChoice']) setScenarioChoice(responses['scenarioChoice']);
+    }
+  }, [isLoaded]);
 
   const sections = [
     { id: 'destination-path', title: 'Setting the Sat-Nav', eyebrow: '01 // Your Destination', icon: Target },
@@ -153,8 +163,8 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
               </MicroCommitment>
               <div className="my-10 p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 space-y-6">
                 <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Program Your Destination</h4>
-                <div className="space-y-3"><label className="block text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 text-left">The Destination (Your Dream Course/Career):</label><input value={futureSelf} onChange={(e) => setFutureSelf(e.target.value)} placeholder="e.g., Computer Science at Trinity, Physiotherapy" className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
-                <div className="space-y-3"><label className="block text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 text-left">The First Turn (One Small Action Tomorrow):</label><input value={dailyAction} onChange={(e) => setDailyAction(e.target.value)} placeholder="e.g., Do 20 minutes of Maths revision before school" className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
+                <div className="space-y-3"><label className="block text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 text-left">The Destination (Your Dream Course/Career):</label><input value={futureSelf} onChange={(e) => setFutureSelf(e.target.value)} onBlur={() => saveResponse('futureSelf', futureSelf)} placeholder="e.g., Computer Science at Trinity, Physiotherapy" className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
+                <div className="space-y-3"><label className="block text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 text-left">The First Turn (One Small Action Tomorrow):</label><input value={dailyAction} onChange={(e) => setDailyAction(e.target.value)} onBlur={() => saveResponse('dailyAction', dailyAction)} placeholder="e.g., Do 20 minutes of Maths revision before school" className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
                 {futureSelf && dailyAction && <motion.div initial={{opacity:0}} animate={{opacity:1}} className="text-center pt-4 text-blue-600 font-bold text-sm">Route locked in. The journey starts now.</motion.div>}
               </div>
             </ReadingSection>
@@ -181,8 +191,8 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
                   <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Branching Scenario: The Confusion</h4>
                   <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">You don't understand the teacher's explanation. What's your move?</p>
                   <div className="space-y-4 max-w-lg mx-auto">
-                    <button onClick={() => setScenarioChoice('passive')} className="w-full text-left p-4 bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-xl border border-zinc-200 dark:border-zinc-700 transition-all"><strong>Passenger Move:</strong> Say nothing and hope you figure it out later.</button>
-                    <button onClick={() => setScenarioChoice('agentic')} className="w-full text-left p-4 bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-xl border border-zinc-200 dark:border-zinc-700 transition-all"><strong>Driver Move:</strong> Ask a strategic question to clarify.</button>
+                    <button onClick={() => { setScenarioChoice('passive'); saveResponse('scenarioChoice', 'passive'); }} className="w-full text-left p-4 bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-xl border border-zinc-200 dark:border-zinc-700 transition-all"><strong>Passenger Move:</strong> Say nothing and hope you figure it out later.</button>
+                    <button onClick={() => { setScenarioChoice('agentic'); saveResponse('scenarioChoice', 'agentic'); }} className="w-full text-left p-4 bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-xl border border-zinc-200 dark:border-zinc-700 transition-all"><strong>Driver Move:</strong> Ask a strategic question to clarify.</button>
                   </div>
                   <AnimatePresence>
                   {scenarioChoice && (

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Code, SlidersHorizontal, UserX, Recycle, Flag
@@ -12,6 +12,7 @@ import { ModuleProgress } from '../types';
 import { amberTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useModuleResponses } from '../hooks/useModuleResponses';
 
 const theme = amberTheme;
 
@@ -19,10 +20,18 @@ const theme = amberTheme;
 
 const MotionDiv = motion.div as any;
 
-const AttributionMapper = () => {
-  const [locus, setLocus] = useState(50);
-  const [stability, setStability] = useState(50);
-  const [controllability, setControllability] = useState(50);
+const AttributionMapper = ({ savedValues, onSave }: { savedValues?: { locus: number; stability: number; controllability: number }; onSave?: (values: { locus: number; stability: number; controllability: number }) => void }) => {
+  const [locus, setLocus] = useState(savedValues?.locus ?? 50);
+  const [stability, setStability] = useState(savedValues?.stability ?? 50);
+  const [controllability, setControllability] = useState(savedValues?.controllability ?? 50);
+
+  useEffect(() => {
+    if (savedValues) {
+      setLocus(savedValues.locus);
+      setStability(savedValues.stability);
+      setControllability(savedValues.controllability);
+    }
+  }, [savedValues]);
 
   // Internal (high locus) + Unstable (low stability) + Controllable (low controllability) = growth
   // Optimism score: locus contributes positively when high, stability when low, controllability when low
@@ -81,7 +90,14 @@ const AttributionMapper = () => {
     ? 'border-rose-200 dark:border-rose-700'
     : 'border-amber-200 dark:border-amber-700';
 
-  const sliders: { label: string; leftLabel: string; rightLabel: string; leftExample: string; rightExample: string; value: number; setter: (v: number) => void }[] = [
+  const handleSliderChange = (dimension: 'locus' | 'stability' | 'controllability', value: number) => {
+    const setters = { locus: setLocus, stability: setStability, controllability: setControllability };
+    setters[dimension](value);
+    const next = { locus, stability, controllability, [dimension]: value };
+    onSave?.(next);
+  };
+
+  const sliders: { label: string; leftLabel: string; rightLabel: string; leftExample: string; rightExample: string; value: number; dimension: 'locus' | 'stability' | 'controllability' }[] = [
     {
       label: 'Locus',
       leftLabel: 'External',
@@ -89,7 +105,7 @@ const AttributionMapper = () => {
       leftExample: '"The teacher marked unfairly"',
       rightExample: '"I didn\'t prepare well"',
       value: locus,
-      setter: setLocus,
+      dimension: 'locus',
     },
     {
       label: 'Stability',
@@ -98,7 +114,7 @@ const AttributionMapper = () => {
       leftExample: '"I had an off day"',
       rightExample: '"I\'m always like this"',
       value: stability,
-      setter: setStability,
+      dimension: 'stability',
     },
     {
       label: 'Controllability',
@@ -107,7 +123,7 @@ const AttributionMapper = () => {
       leftExample: '"I can change my approach"',
       rightExample: '"There\'s nothing I can do"',
       value: controllability,
-      setter: setControllability,
+      dimension: 'controllability',
     },
   ];
 
@@ -132,7 +148,7 @@ const AttributionMapper = () => {
                 min={0}
                 max={100}
                 value={s.value}
-                onChange={(e) => s.setter(Number(e.target.value))}
+                onChange={(e) => handleSliderChange(s.dimension, Number(e.target.value))}
                 className="w-full"
               />
               <div className="flex flex-col items-start w-28 shrink-0">
@@ -162,14 +178,18 @@ const AttributionMapper = () => {
   );
 };
 
-const AttributionSorter = () => {
+const AttributionSorter = ({ savedChoices, onSave }: { savedChoices?: { [key: string]: boolean }; onSave?: (choices: { [key: string]: boolean }) => void }) => {
     const reasons = [
         { text: "I didn't use the right study method.", type: 'internal', control: true },
         { text: "I'm just naturally bad at this subject.", type: 'internal', control: false },
         { text: "The test was unfairly hard.", type: 'external', control: false },
         { text: "I didn't put in enough focused effort.", type: 'internal', control: true },
     ];
-    const [choice, setChoice] = useState<{ [key: string]: boolean }>({});
+    const [choice, setChoice] = useState<{ [key: string]: boolean }>(savedChoices || {});
+
+    useEffect(() => {
+      if (savedChoices) setChoice(savedChoices);
+    }, [savedChoices]);
 
     return(
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
@@ -177,7 +197,7 @@ const AttributionSorter = () => {
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Scenario: You fail a test. Which of these reasons are actually within your control?</p>
             <div className="space-y-3">
                 {reasons.map(reason => (
-                    <button key={reason.text} onClick={() => setChoice({...choice, [reason.text]: !choice[reason.text]})} className={`w-full p-4 rounded-xl border text-left font-bold text-sm transition-all ${choice[reason.text] ? (reason.control ? 'bg-emerald-50 border-emerald-300' : 'bg-rose-50 border-rose-300') : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}>
+                    <button key={reason.text} onClick={() => { const next = {...choice, [reason.text]: !choice[reason.text]}; setChoice(next); onSave?.(next); }} className={`w-full p-4 rounded-xl border text-left font-bold text-sm transition-all ${choice[reason.text] ? (reason.control ? 'bg-emerald-50 border-emerald-300' : 'bg-rose-50 border-rose-300') : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}>
                         {reason.text}
                         {choice[reason.text] && <span className={`ml-2 font-semibold text-xs ${reason.control ? 'text-emerald-600' : 'text-rose-600'}`}>{reason.control ? '(CONTROLLABLE)' : '(UNCONTROLLABLE)'}</span>}
                     </button>
@@ -244,6 +264,8 @@ const AttributionReframeDrill = () => {
 
 // --- MODULE COMPONENT ---
 const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const { responses, saveResponse, isLoaded } = useModuleResponses('controlling-the-controllables');
+
   const sections = [
     { id: 'attribution-theory', title: 'The Story of Failure', eyebrow: '01 // The Source Code', icon: Code },
     { id: 'three-dimensions', title: 'The Three Dimensions', eyebrow: '02 // The Control Panel', icon: SlidersHorizontal },
@@ -278,8 +300,8 @@ const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleP
           {activeSection === 1 && (
             <ReadingSection title="The Three Dimensions." eyebrow="Step 2" icon={SlidersHorizontal} theme={theme}>
               <p>Every story you tell yourself about a failure can be broken down along three dimensions. <strong>1. Locus of Control:</strong> Is the cause <Highlight description="Attributing an outcome to something about yourself (e.g., your effort, your ability)." theme={theme}>Internal</Highlight> (about you) or <Highlight description="Attributing an outcome to something outside of yourself (e.g., the teacher, the situation)." theme={theme}>External</Highlight> (about the world)? <strong>2. Stability:</strong> Is the cause <Highlight description="A cause that is perceived as permanent and unchangeable (e.g., 'I'm just not a maths person')." theme={theme}>Stable</Highlight> (permanent) or <Highlight description="A cause that is perceived as temporary and changeable (e.g., 'I didn't study enough for this specific test')." theme={theme}>Unstable</Highlight> (temporary)? <strong>3. Controllability:</strong> Is the cause something you can change, or not?</p>
-              <AttributionMapper/>
-              <AttributionSorter/>
+              <AttributionMapper savedValues={responses['attribution-mapper']} onSave={(v) => saveResponse('attribution-mapper', v)} />
+              <AttributionSorter savedChoices={responses['attribution-sorter']} onSave={(c) => saveResponse('attribution-sorter', c)} />
             </ReadingSection>
           )}
           {activeSection === 2 && (
