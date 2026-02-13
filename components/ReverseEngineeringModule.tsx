@@ -242,7 +242,7 @@ const ReverseEngineeringModule: React.FC<{ onBack: () => void; progress: ModuleP
     <ModuleLayout
       moduleNumber="03"
       moduleTitle="Reverse Engineering"
-      moduleSubtitle="The Temporal Architecture Protocol"
+      moduleSubtitle="The Temporal Architecture"
       moduleDescription="Ditch the failed 'start-to-finish' study plan. Learn to plan backwards from your exam date to create a realistic, resilient, and effective study schedule."
       theme={theme}
       sections={sections}

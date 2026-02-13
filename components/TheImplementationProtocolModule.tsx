@@ -323,7 +323,7 @@ const TheImplementationProtocolModule: React.FC<{ onBack: () => void; progress: 
   return (
     <ModuleLayout
       moduleNumber="48"
-      moduleTitle="The Implementation Protocol"
+      moduleTitle="The Implementation Playbook"
       moduleSubtitle="The Intention-Action Blueprint"
       moduleDescription="Motivation doesn't predict action. Learn the single most powerful psychological technique for closing the gap between planning to study and actually doing it."
       theme={theme}

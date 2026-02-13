@@ -390,7 +390,7 @@ const TheCognitiveLoadModule: React.FC<{ onBack: () => void; progress: ModulePro
   return (
     <ModuleLayout
       moduleNumber="47"
-      moduleTitle="The Cognitive Load Protocol"
+      moduleTitle="Cognitive Load"
       moduleSubtitle="The Working Memory Blueprint"
       moduleDescription="Your working memory can hold only 4 items at once. Learn why most study sessions accidentally overload this bottleneck — and how to design sessions that respect your brain's limits."
       theme={theme}

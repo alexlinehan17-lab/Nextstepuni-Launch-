@@ -294,7 +294,7 @@ const NeuroplasticityProtocolModule: React.FC<{ onBack: () => void; progress: Mo
   return (
     <ModuleLayout
       moduleNumber="01"
-      moduleTitle="Neuroplasticity Protocol"
+      moduleTitle="Neuroplasticity"
       moduleSubtitle="Your Brain's User Manual"
       moduleDescription="Discover that your brain isn't fixed. Learn the science of how your brain physically changes when you study, and how to use this to your advantage."
       theme={theme}

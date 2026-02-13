@@ -620,7 +620,7 @@ const ThePraiseProtocolModule: React.FC<{ onBack: () => void; progress: ModulePr
   return (
     <ModuleLayout
       moduleNumber="03"
-      moduleTitle="The Praise Protocol"
+      moduleTitle="The Power of Praise"
       moduleSubtitle="The Architecture of Potential"
       moduleDescription="Learn how the language you use to interpret success and failure programs your brain for a fixed or growth mindset."
       theme={theme}

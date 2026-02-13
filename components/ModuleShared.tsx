@@ -36,7 +36,7 @@ export const Highlight = ({ children, description, theme }: HighlightProps) => {
               initial={{ opacity: 0, scale: 0.9, y: 10, x: "-50%" }}
               animate={{ opacity: 1, scale: 1, y: 0, x: "-50%" }}
               exit={{ opacity: 0, scale: 0.9, y: 10, x: "-50%" }}
-              className="absolute z-[70] bottom-full left-1/2 mb-6 w-72 p-6 bg-zinc-900/95 text-white text-xs rounded-2xl shadow-2xl pointer-events-auto leading-relaxed border border-white/10 backdrop-blur-xl whitespace-normal text-left"
+              className="absolute z-[70] bottom-full left-1/2 mb-6 w-72 max-w-[calc(100vw-2rem)] p-6 bg-zinc-900/95 text-white text-xs rounded-2xl shadow-2xl pointer-events-auto leading-relaxed border border-white/10 backdrop-blur-xl whitespace-normal text-left"
               style={{ transformOrigin: 'bottom center' }}
             >
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[10px] border-t-zinc-900/95"></div>

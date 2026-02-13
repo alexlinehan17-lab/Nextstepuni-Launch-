@@ -116,7 +116,7 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
                         {categoryComplete}/{categoryCourses.length}
                       </span>
                     </div>
-                    <div className="grid grid-cols-6 gap-3">
+                    <div className="grid grid-cols-4 sm:grid-cols-6 gap-3">
                       {categoryCourses.map((course, i) => {
                         const progress = userProgress[course.id];
                         const isComplete = progress && progress.unlockedSection >= course.sectionsCount - 1;

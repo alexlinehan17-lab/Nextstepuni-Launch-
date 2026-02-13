@@ -448,7 +448,7 @@ const MasteringTheSciencesModule: React.FC<{ onBack: () => void; progress: Modul
     <ModuleLayout
       moduleNumber="03"
       moduleTitle="Mastering the Sciences"
-      moduleSubtitle="The STEM Grade Optimization Protocol"
+      moduleSubtitle="The STEM Grade Optimization Guide"
       moduleDescription={`A strategic deconstruction of the STEM exams, revealing the "hidden curriculum" of Biology, Chemistry, Physics, and Ag Science.`}
       theme={theme}
       sections={sections}

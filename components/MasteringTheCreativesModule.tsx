@@ -431,7 +431,7 @@ const MasteringTheCreativesModule: React.FC<{ onBack: () => void; progress: Modu
     <ModuleLayout
       moduleNumber="07"
       moduleTitle="Mastering the Creatives"
-      moduleSubtitle="The Art, Music &amp; Film Protocol"
+      moduleSubtitle="The Art, Music &amp; Film Guide"
       moduleDescription="A strategic deconstruction of the 'creative' subjects, revealing them as learnable skills governed by process, not just talent."
       theme={theme}
       sections={sections}

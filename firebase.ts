@@ -6,7 +6,7 @@
 
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore, enableIndexedDbPersistence } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -25,5 +25,14 @@ const app = initializeApp(firebaseConfig);
 // Export the necessary Firebase services to be used throughout the app
 export const auth = getAuth(app);
 export const db = getFirestore(app);
+
+// Enable offline persistence for Firestore
+enableIndexedDbPersistence(db).catch((err) => {
+  if (err.code === 'failed-precondition') {
+    console.warn('Firestore persistence unavailable: multiple tabs open');
+  } else if (err.code === 'unimplemented') {
+    console.warn('Firestore persistence unavailable: browser not supported');
+  }
+});
 
 export default app;

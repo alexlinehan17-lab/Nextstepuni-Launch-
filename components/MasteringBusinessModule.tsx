@@ -319,7 +319,7 @@ const MasteringBusinessModule: React.FC<{ onBack: () => void; progress: ModulePr
     <ModuleLayout
       moduleNumber="05"
       moduleTitle="Mastering Business"
-      moduleSubtitle="The Grade Optimization Protocol"
+      moduleSubtitle="The Grade Optimization Guide"
       moduleDescription={`Deconstruct the Business exam for 2026, focusing on the ABQ, "outcome verbs", and the "SEE/SEEE" structure to engineer a H1.`}
       theme={theme}
       sections={sections}

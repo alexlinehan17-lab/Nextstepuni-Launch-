@@ -365,7 +365,7 @@ const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleP
     <ModuleLayout
       moduleNumber="08"
       moduleTitle="Digital Distractions"
-      moduleSubtitle="The Cognitive Sovereignty Protocol"
+      moduleSubtitle="The Cognitive Sovereignty Guide"
       moduleDescription="A blueprint for reclaiming your focus from the attention economy, using neuroscience-backed hardware, software, and behavioral barriers."
       theme={theme}
       sections={sections}

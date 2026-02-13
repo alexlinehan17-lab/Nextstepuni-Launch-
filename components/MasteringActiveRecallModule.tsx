@@ -111,7 +111,7 @@ const MasteringActiveRecallModule: React.FC<{ onBack: () => void; progress: Modu
   ];
 
   return (
-    <ModuleLayout moduleNumber="01" moduleTitle="Mastering Active Recall" moduleSubtitle="The Test Effect Protocol" moduleDescription={`Go beyond "practice testing" and learn the science of why active retrieval is the single most effective way to build durable, long-term memory.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
+    <ModuleLayout moduleNumber="01" moduleTitle="Mastering Active Recall" moduleSubtitle="The Test Effect" moduleDescription={`Go beyond "practice testing" and learn the science of why active retrieval is the single most effective way to build durable, long-term memory.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
       {(activeSection) => (
         <>
           {activeSection === 0 && (

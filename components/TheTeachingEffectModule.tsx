@@ -341,7 +341,7 @@ const TheTeachingEffectModule: React.FC<{ onBack: () => void; progress: ModulePr
     <ModuleLayout
       moduleNumber="46"
       moduleTitle="The Teaching Effect"
-      moduleSubtitle="The Protege Protocol"
+      moduleSubtitle="The Protégé Effect"
       moduleDescription="Learn why preparing to teach someone produces deeper learning than preparing for a test — even if you never actually teach."
       theme={theme}
       sections={sections}

@@ -6,7 +6,7 @@
 
 import React, { useState, useEffect, useRef, useCallback, Suspense } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, LogOut, ArrowLeft, Settings, Flame, ChevronRight, Trophy, Waves, Scale, Zap, CloudRain, Award } from 'lucide-react';
+import { Sun, Moon, LogOut, ArrowLeft, Settings, Flame, ChevronRight, ChevronLeft, Trophy, Waves, Scale, Zap, CloudRain, Award, Brain, Target, BookOpen, Shield, FlaskConical, BarChart3 } from 'lucide-react';
 import { Library } from './components/Library';
 import { KnowledgeTree, CategoryType } from './components/KnowledgeTree';
 import { LoadingSpinner } from './components/LoadingSpinner';
@@ -24,6 +24,9 @@ import { useSettings } from './hooks/useSettings';
 import { useStreak, StreakData } from './hooks/useStreak';
 import { useMood } from './hooks/useMood';
 import { useTodaysFocus, FocusRecommendation } from './hooks/useTodaysFocus';
+import { usePoints } from './hooks/usePoints';
+import DashboardView from './components/DashboardView';
+import LearningPathsView from './components/LearningPathsView';
 
 const MOOD_OPTIONS = [
   { key: 'calm', icon: Waves, label: 'Calm' },
@@ -45,11 +48,12 @@ interface UserProfileProps {
   recommendation: FocusRecommendation | null;
   onSelectModule: (moduleId: string) => void;
   onOpenPassport: () => void;
+  onGoToDashboard: () => void;
   completedCount: number;
   totalCount: number;
 }
 
-const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, todayMood, onSetMood, recommendation, onSelectModule, onOpenPassport, completedCount, totalCount }) => {
+const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, todayMood, onSetMood, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, completedCount, totalCount }) => {
   const [isOpen, setIsOpen] = useState(false);
   const displayAvatar = avatarOverride || user.avatar;
   return (
@@ -131,8 +135,17 @@ const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, upd
               </div>
             </div>
 
-            {/* Study Passport */}
+            {/* My Progress + Study Passport */}
             <div className="border-t border-zinc-200/50 dark:border-white/10 pt-2 mt-2 mb-2">
+              <button
+                onClick={() => { setIsOpen(false); onGoToDashboard(); }}
+                className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5"
+              >
+                <div className="w-8 h-8 rounded-lg bg-[#CC785C]/10 flex items-center justify-center">
+                  <BarChart3 size={16} className="text-[#CC785C]" />
+                </div>
+                <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">My Progress</span>
+              </button>
               <button
                 onClick={() => { setIsOpen(false); onOpenPassport(); }}
                 className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5"
@@ -177,8 +190,19 @@ const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, upd
   )
 }
 
+const RESEARCH_PAPERS = [
+  { title: 'Implicit Theories of Intelligence Predict Achievement Across an Adolescent Transition', authors: 'Blackwell, Trzesniewski & Dweck', year: 2007, journal: 'Child Development', description: 'Students who believed their intelligence could grow got better maths grades over two years, while "fixed mindset" students flatlined. Teaching students the brain can grow with effort actually reversed declining grades.' },
+  { title: 'Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis', authors: 'Cepeda, Pashler, Vul, Wixted & Rohrer', year: 2006, journal: 'Psychological Bulletin', description: 'After analysing 317 experiments, researchers confirmed that spreading study sessions over time beats cramming into one sitting for long-term memory. The optimal gap is roughly 10-20% of the time until your exam.' },
+  { title: 'Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention', authors: 'Roediger & Karpicke', year: 2006, journal: 'Psychological Science', description: 'Students who tested themselves on material remembered far more long-term than students who simply re-read. The act of pulling information out of memory — even without feedback — made it stick dramatically better.' },
+  { title: 'Reducing the Racial Achievement Gap: A Social-Psychological Intervention', authors: 'Cohen, Garcia, Apfel & Master', year: 2006, journal: 'Science', description: 'Students who spent just 15 minutes writing about their most important personal values saw the achievement gap narrow by 40%. This brief exercise protected against stereotype threat and freed up mental energy for learning.' },
+  { title: 'Neuroplasticity: Changes in Grey Matter Induced by Training', authors: 'Draganski, Gaser, Busch, Schuierer, Bogdahn & May', year: 2004, journal: 'Nature', description: 'People who learned to juggle showed visible growth in brain areas over three months — their grey matter physically expanded. One of the first studies to prove that learning literally changes the structure of the brain.' },
+  { title: 'The Role of Deliberate Practice in the Acquisition of Expert Performance', authors: 'Ericsson, Krampe & Tesch-Romer', year: 1993, journal: 'Psychological Review', description: 'Elite violinists had accumulated roughly twice as many hours of focused practice as less accomplished players by age 20. What people call "natural talent" is largely the result of structured, goal-directed practice.' },
+  { title: 'Enhancing Interest and Performance With a Utility Value Intervention', authors: 'Hulleman & Harackiewicz', year: 2009, journal: 'Journal of Educational Psychology', description: 'When students wrote short essays connecting schoolwork to their own lives, struggling students improved by nearly two-thirds of a letter grade. Making study feel personally relevant boosted both interest and performance.' },
+  { title: 'Stereotype Threat and the Intellectual Test Performance of African Americans', authors: 'Steele & Aronson', year: 1995, journal: 'Journal of Personality and Social Psychology', description: 'When a test was framed as measuring ability, disadvantaged students performed worse. When the same test was framed as a simple exercise, the gap vanished — proving that pressure from stereotypes directly drags down performance.' },
+];
+
 const App: React.FC = () => {
-  const [viewState, setViewState] = useState<'tree' | 'category' | 'module' | 'innovation-zone'>('tree');
+  const [viewState, setViewState] = useState<'tree' | 'category' | 'module' | 'innovation-zone' | 'dashboard' | 'learning-paths'>('tree');
   const [currentCategory, setCurrentCategory] = useState<CategoryType | null>(null);
   const [currentModuleId, setCurrentModuleId] = useState<string | null>(null);
   const [cameFromJourney, setCameFromJourney] = useState(false);
@@ -191,10 +215,12 @@ const App: React.FC = () => {
   const [unlockedAvatarSeeds, setUnlockedAvatarSeeds] = useState<string[]>([]);
   const { settings, updateSetting, isLoaded: settingsLoaded } = useSettings(user?.uid, user?.avatar);
   const { streak } = useStreak(user?.uid);
-  const { todayMood, setMood } = useMood(user?.uid);
+  const { todayMood, setMood, entries: moodEntries } = useMood(user?.uid);
   const { recommendation } = useTodaysFocus(userProgress, ALL_COURSES);
+  const pointsData = usePoints(user?.uid);
 
   const isPopstateRef = useRef(false);
+  const researchScrollRef = useRef<HTMLDivElement>(null);
 
   const completedCount = ALL_COURSES.filter(c => {
     const p = userProgress[c.id];
@@ -220,6 +246,14 @@ const App: React.FC = () => {
         setCurrentModuleId(null);
         setCameFromJourney(false);
         setViewState('innovation-zone');
+      } else if (state.view === 'dashboard') {
+        setCurrentModuleId(null);
+        setCameFromJourney(false);
+        setViewState('dashboard');
+      } else if (state.view === 'learning-paths') {
+        setCurrentModuleId(null);
+        setCameFromJourney(false);
+        setViewState('learning-paths');
       } else if (state.view === 'module') {
         setCurrentModuleId(state.moduleId);
         setCurrentCategory(state.category || null);
@@ -356,6 +390,22 @@ const App: React.FC = () => {
     }
   };
 
+  const handleGoToDashboard = () => {
+    setViewState('dashboard');
+    window.scrollTo(0, 0);
+    if (!isPopstateRef.current) {
+      window.history.pushState({ view: 'dashboard' }, '');
+    }
+  };
+
+  const handleGoToLearningPaths = () => {
+    setViewState('learning-paths');
+    window.scrollTo(0, 0);
+    if (!isPopstateRef.current) {
+      window.history.pushState({ view: 'learning-paths' }, '');
+    }
+  };
+
   const handleBackToTree = () => {
     window.history.back();
   };
@@ -396,8 +446,8 @@ const App: React.FC = () => {
           </div>
 
           {/* ── Hero ── */}
-          <div className="flex-1 flex flex-col items-center justify-center text-center px-6 pt-16 relative z-10">
-            <h1 className="font-serif text-5xl md:text-7xl text-zinc-900 dark:text-white tracking-tight leading-[1.08] font-semibold max-w-3xl">
+          <div className="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-16 relative z-10">
+            <h1 className="font-serif text-3xl sm:text-5xl md:text-7xl text-zinc-900 dark:text-white tracking-tight leading-[1.08] font-semibold max-w-3xl">
               {"Science-backed strategies to give you an".split(' ').map((word, i, arr) => (
                 <span key={i} className="inline-block overflow-hidden align-bottom pb-[0.15em] mb-[-0.15em]">
                   <motion.span
@@ -455,22 +505,138 @@ const App: React.FC = () => {
             </motion.div>
           </div>
 
+          {/* ── How It Works ── */}
+          <div className="relative z-10 px-6 pb-24">
+            <div className="max-w-5xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-80px' }}
+                transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+                className="text-center mb-16"
+              >
+                <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#CC785C] mb-3">How It Works</p>
+                <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-semibold text-zinc-900 dark:text-white">A complete system, not a collection of tips.</h2>
+              </motion.div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {[
+                  { icon: Brain, title: 'Rewire Your Mindset', description: 'Build the psychological foundations that separate top students from the rest.', delay: 0 },
+                  { icon: BookOpen, title: 'Learn How to Learn', description: 'Master active recall, spaced repetition, and other techniques backed by cognitive science.', delay: 0.1 },
+                  { icon: Target, title: 'Optimise Your Strategy', description: 'Use grade economics, subject synergies, and marking scheme mechanics to maximise your points.', delay: 0.2 },
+                  { icon: Shield, title: 'Perform Under Pressure', description: 'Develop exam-day protocols that protect your working memory when it matters most.', delay: 0.3 },
+                ].map((pillar, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-60px' }}
+                    transition={{ duration: 0.6, delay: pillar.delay, ease: [0.16, 1, 0.3, 1] }}
+                    className="group p-6 rounded-2xl bg-white/60 dark:bg-zinc-900/40 border border-zinc-200/60 dark:border-zinc-800/60 backdrop-blur-sm hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center mb-4 group-hover:bg-[#CC785C]/10 transition-colors">
+                      <pillar.icon size={20} className="text-zinc-500 dark:text-zinc-400 group-hover:text-[#CC785C] transition-colors" />
+                    </div>
+                    <h3 className="font-semibold text-zinc-900 dark:text-white text-sm mb-2">{pillar.title}</h3>
+                    <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">{pillar.description}</p>
+                  </motion.div>
+                ))}
+              </div>
+
+              {/* ── Stats row ── */}
+              <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+                {[
+                  { value: '43', label: 'Interactive Modules', accent: 'from-[#CC785C]/20 to-[#CC785C]/5', border: 'border-[#CC785C]/20', textColor: 'text-[#CC785C]' },
+                  { value: '7', label: 'Research-Backed Categories', accent: 'from-amber-400/20 to-amber-400/5', border: 'border-amber-400/20', textColor: 'text-amber-500 dark:text-amber-400' },
+                  { value: '250+', label: 'Activities & Exercises', accent: 'from-emerald-400/20 to-emerald-400/5', border: 'border-emerald-400/20', textColor: 'text-emerald-600 dark:text-emerald-400' },
+                ].map((stat, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-60px' }}
+                    transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                    className={`relative overflow-hidden rounded-2xl border ${stat.border} bg-gradient-to-br ${stat.accent} backdrop-blur-sm p-8 text-center`}
+                  >
+                    <div className="absolute inset-0 bg-white/40 dark:bg-zinc-900/40" />
+                    <div className="relative">
+                      <p className={`text-4xl sm:text-5xl font-bold font-mono ${stat.textColor}`}>{stat.value}</p>
+                      <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400 mt-2 tracking-wide uppercase">{stat.label}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* ── Recent Research ── */}
+          <div className="relative z-10 px-6 pt-8 pb-20">
+            <div className="max-w-5xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-80px' }}
+                transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+                className="flex items-end justify-between mb-10"
+              >
+                <div>
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#CC785C] mb-3">The Evidence</p>
+                  <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-semibold text-zinc-900 dark:text-white">Built on real research.</h2>
+                </div>
+                <div className="hidden sm:flex items-center gap-2">
+                  <button onClick={() => { if (researchScrollRef.current) researchScrollRef.current.scrollBy({ left: -researchScrollRef.current.offsetWidth * 0.75, behavior: 'smooth' }); }} className="w-10 h-10 rounded-full border border-zinc-200 dark:border-zinc-700 flex items-center justify-center text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+                    <ChevronLeft size={18} />
+                  </button>
+                  <button onClick={() => { if (researchScrollRef.current) researchScrollRef.current.scrollBy({ left: researchScrollRef.current.offsetWidth * 0.75, behavior: 'smooth' }); }} className="w-10 h-10 rounded-full border border-zinc-200 dark:border-zinc-700 flex items-center justify-center text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+                    <ChevronRight size={18} />
+                  </button>
+                </div>
+              </motion.div>
+
+              <div ref={researchScrollRef} className="flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                {RESEARCH_PAPERS.map((paper, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-40px' }}
+                    transition={{ duration: 0.5, delay: i * 0.05, ease: [0.16, 1, 0.3, 1] }}
+                    className="snap-start shrink-0 w-[320px] sm:w-[360px] flex flex-col justify-between p-6 rounded-2xl bg-white/60 dark:bg-zinc-900/40 border border-zinc-200/60 dark:border-zinc-800/60 backdrop-blur-sm"
+                  >
+                    <div>
+                      <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-3">{paper.journal} ({paper.year})</p>
+                      <h3 className="font-serif text-base font-semibold text-zinc-900 dark:text-white leading-snug mb-3">{paper.title}</h3>
+                      <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">{paper.description}</p>
+                    </div>
+                    <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-5 pt-4 border-t border-zinc-100 dark:border-zinc-800">{paper.authors}</p>
+                  </motion.div>
+                ))}
+              </div>
+
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                className="mt-10 flex items-center justify-center gap-3"
+              >
+                <FlaskConical size={14} className="text-[#CC785C]" />
+                <p className="text-sm text-zinc-500 dark:text-zinc-400">Every module is grounded in peer-reviewed research from journals like <span className="font-medium text-zinc-700 dark:text-zinc-300">Nature</span>, <span className="font-medium text-zinc-700 dark:text-zinc-300">Science</span>, and <span className="font-medium text-zinc-700 dark:text-zinc-300">Psychological Review</span>.</p>
+              </motion.div>
+            </div>
+          </div>
+
           {/* ── PwC Collaboration ── */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="pb-10 pt-6 flex items-center justify-center gap-3"
-          >
+          <div className="relative z-10 pb-10 pt-6 flex items-center justify-center gap-3">
             <div className="w-8 h-px bg-zinc-300 dark:bg-zinc-700" />
             <p className="text-xs text-zinc-400 dark:text-zinc-500 tracking-wide">A Nextstepuni / PwC Collaboration</p>
             <div className="w-8 h-px bg-zinc-300 dark:bg-zinc-700" />
-          </motion.div>
+          </div>
 
           {/* ── DEV: Skip Login ── */}
           <button
             onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })}
-            className="fixed bottom-4 left-4 px-3 py-1 bg-red-600/20 text-red-400 border border-red-600/30 rounded-full text-xs font-mono hover:bg-red-600/40"
+            className="fixed bottom-4 left-4 z-50 px-3 py-1 bg-red-600/20 text-red-400 border border-red-600/30 rounded-full text-xs font-mono hover:bg-red-600/40"
           >
             DEV: Skip Login
           </button>
@@ -482,11 +648,40 @@ const App: React.FC = () => {
       return <AdminDashboard allCourses={ALL_COURSES} />;
     }
 
+    if (viewState === 'dashboard') {
+      return (
+        <DashboardView
+          userProgress={userProgress}
+          allCourses={ALL_COURSES}
+          categoryTitles={categoryTitles}
+          streak={streak}
+          recommendation={recommendation}
+          moodEntries={moodEntries}
+          onSelectModule={handleSelectModule}
+          onBack={handleBackToTree}
+          pointsBalance={pointsData.balance}
+        />
+      );
+    }
+
+    if (viewState === 'learning-paths') {
+      return (
+        <LearningPathsView
+          allCourses={ALL_COURSES}
+          userProgress={userProgress}
+          onSelectModule={handleSelectModule}
+          onBack={handleBackToTree}
+        />
+      );
+    }
+
     if (viewState === 'tree') {
       return <KnowledgeTree
         key="knowledge-tree"
         onSelectCategory={handleSelectCategory}
         onGoToInnovationZone={handleGoToInnovationZone}
+        onGoToDashboard={handleGoToDashboard}
+        onGoToLearningPaths={handleGoToLearningPaths}
         allCourses={ALL_COURSES}
         onSelectModule={handleSelectModule}
         categoryTitles={categoryTitles}
@@ -549,7 +744,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
       {user && (
         <div className="fixed top-6 right-6 z-[100]">
-          <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} todayMood={todayMood} onSetMood={setMood} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} completedCount={completedCount} totalCount={ALL_COURSES.length} />
+          <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} todayMood={todayMood} onSetMood={setMood} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} onGoToDashboard={handleGoToDashboard} completedCount={completedCount} totalCount={ALL_COURSES.length} />
         </div>
       )}
 

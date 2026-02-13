@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Sprout, Zap, Rocket, Target, FlaskConical,
-  Layout, ArrowRight, Sparkles, Beaker
+  Layout, ArrowRight, Sparkles, Beaker, BarChart3, Compass
 } from 'lucide-react';
 import { CourseData, BentoModuleTile } from './Library';
 
@@ -29,6 +29,8 @@ type UserProgress = {
 interface KnowledgeTreeProps {
   onSelectCategory: (category: CategoryType) => void;
   onGoToInnovationZone: () => void;
+  onGoToDashboard: () => void;
+  onGoToLearningPaths: () => void;
   onSelectModule: (moduleId: string) => void;
   allCourses: CourseData[];
   categoryTitles: Record<CategoryType, string>;
@@ -154,7 +156,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
   );
 };
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, allCourses, onSelectModule, categoryTitles, userProgress }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, allCourses, onSelectModule, categoryTitles, userProgress }) => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   
   const getCategoryProgress = (category: CategoryType) => {
@@ -275,6 +277,26 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
               onClick={onGoToInnovationZone}
               className="md:col-span-6"
               delay={modules.length * 0.1}
+            />
+           <BentoTile
+              title="My Progress"
+              subtitle="Dashboard"
+              description="Track your modules completed, study streak, mood, and category progress all in one place."
+              icon={BarChart3}
+              accentHex="#CC785C"
+              onClick={onGoToDashboard}
+              className="md:col-span-3"
+              delay={(modules.length + 1) * 0.1}
+            />
+           <BentoTile
+              title="Learning Paths"
+              subtitle="Guided"
+              description="Follow curated sequences of modules designed to take you from foundation to mastery."
+              icon={Compass}
+              accentHex="#10b981"
+              onClick={onGoToLearningPaths}
+              className="md:col-span-3"
+              delay={(modules.length + 2) * 0.1}
             />
         </div>
         

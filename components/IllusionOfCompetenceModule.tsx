@@ -258,7 +258,7 @@ const IllusionOfCompetenceModule: React.FC<{ onBack: () => void; progress: Modul
     <ModuleLayout
       moduleNumber="10"
       moduleTitle="Overcoming Illusions of Competence"
-      moduleSubtitle="The Fluency Illusion Protocol"
+      moduleSubtitle="The Fluency Illusion"
       moduleDescription="Deconstruct the cognitive biases that trick you into feeling confident when you're unprepared, and learn the science-backed strategies to build real, durable knowledge."
       theme={theme}
       sections={sections}

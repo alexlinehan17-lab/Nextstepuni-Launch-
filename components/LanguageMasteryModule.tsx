@@ -187,7 +187,7 @@ const LanguageMasteryModule: React.FC<{ onBack: () => void; progress: ModuleProg
     <ModuleLayout
       moduleNumber="02"
       moduleTitle="Mastering Languages"
-      moduleSubtitle="The Language Mastery Protocol"
+      moduleSubtitle="The Language Mastery Guide"
       moduleDescription="A strategic deconstruction of the MFL exams, providing a bifurcated strategy for both foundational proficiency and top-tier performance."
       theme={theme}
       sections={sections}

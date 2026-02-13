@@ -337,7 +337,7 @@ const HopeProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgres
   return (
     <ModuleLayout
       moduleNumber="02"
-      moduleTitle="The Hope Protocol"
+      moduleTitle="The Science of Hope"
       moduleSubtitle="Your Brain's Engineering Manual"
       moduleDescription="Explore the neurobiology of hope, learning how to engineer the mental circuits for motivation and resilience under pressure."
       theme={theme}

@@ -330,7 +330,7 @@ const LearningMathModule: React.FC<{ onBack: () => void; progress: ModuleProgres
   return (
     <ModuleLayout
       moduleNumber="01"
-      moduleTitle="The Maths Protocol"
+      moduleTitle="Mastering Maths"
       moduleSubtitle="Deconstructing the Exam"
       moduleDescription="A strategic deep-dive into the structure, marking schemes, and high-yield topics of the Leaving Cert Higher Level Maths exam."
       theme={theme}

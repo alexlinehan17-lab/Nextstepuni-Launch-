@@ -408,7 +408,7 @@ const CatastrophicThinkingModule: React.FC<{ onBack: () => void; progress: Modul
     <ModuleLayout
       moduleNumber="12"
       moduleTitle="Reframing Thoughts"
-      moduleSubtitle="The CBT Protocol"
+      moduleSubtitle="The CBT Toolkit"
       moduleDescription="Deconstruct the neurobiology of exam panic and learn the gold-standard psychological tools (CBT &amp; ACT) to dismantle catastrophic thinking and regain control."
       theme={theme}
       sections={sections}

@@ -782,7 +782,7 @@ const TheLearningRadarModule: React.FC<{ onBack: () => void; progress: ModulePro
     <ModuleLayout
       moduleNumber="44"
       moduleTitle="The Learning Radar"
-      moduleSubtitle="The Metacognitive Calibration Protocol"
+      moduleSubtitle="The Metacognitive Calibration Guide"
       moduleDescription="Discover why most students can't accurately judge what they know — and learn the trainable skill that fixes it."
       theme={theme}
       sections={sections}

@@ -364,7 +364,7 @@ const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
   return (
     <ModuleLayout
       moduleNumber="13"
-      moduleTitle="The Growth Protocol"
+      moduleTitle="The Growth Playbook"
       moduleSubtitle="The Mind's Operating System"
       moduleDescription={`Upgrade your brain's core operating system from "fixed" to "growth." This module deconstructs the science of neuroplasticity and gives you the tools to see challenges as opportunities.`}
       theme={theme}

@@ -275,7 +275,7 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
     <ModuleLayout
       moduleNumber="07"
       moduleTitle="Mental Modelling"
-      moduleSubtitle="The Mind's Eye Protocol"
+      moduleSubtitle="The Mind's Eye Method"
       moduleDescription="Learn to see the answer in your mind's eye. This module deconstructs the 'hidden curriculum' of subjects like DCG and Engineering, teaching you how to build robust mental simulations."
       theme={theme}
       sections={sections}

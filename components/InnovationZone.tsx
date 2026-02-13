@@ -12,7 +12,7 @@ import {
     Lock, MapPin, Sparkles, AlertTriangle, MessageCircle, BookOpenCheck,
     ClipboardCheck, Home, School, Library, Coffee, Wifi, ArrowUp, ArrowDown,
     Trophy, Compass, Brain, HandHelping, Target, ArrowUpRight, Award, Megaphone,
-    Flame, Scale, GraduationCap, Settings, CalendarDays, Calculator
+    Flame, Scale, GraduationCap, Settings, CalendarDays, Calculator, Layers
 } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -23,6 +23,8 @@ import SubjectOnboarding from './SubjectOnboarding';
 import SpacedRepetitionTimetable from './SpacedRepetitionTimetable';
 import CAOPointsSimulator from './CAOPointsSimulator';
 import DeepFocusTimer from './DeepFocusTimer';
+import FlashcardSystem from './FlashcardSystem';
+import { type FlashcardData } from './FlashcardSystem';
 import ReflectionModal from './ReflectionModal';
 import StudyJournalModal from './StudyJournalModal';
 import RewardShopModal from './RewardShopModal';
@@ -1223,6 +1225,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const [pendingCompletion, setPendingCompletion] = useState<{ dateKey: string; blockId: string; subjectName: string; sessionType: 'new-learning' | 'practice' | 'revision' } | null>(null);
     const [showRewardShop, setShowRewardShop] = useState(false);
     const [showJournal, setShowJournal] = useState(false);
+    const [flashcardData, setFlashcardData] = useState<FlashcardData>({ decks: [], reviewStreak: { currentStreak: 0, longestStreak: 0, lastReviewDate: '' }, reviewHistory: {} });
 
     // Load subject profile from Firebase
     useEffect(() => {
@@ -1252,6 +1255,9 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     }
                     if (data.earnedRest) {
                         setEarnedRest(data.earnedRest as EarnedRest);
+                    }
+                    if (data.flashcardDecks) {
+                        setFlashcardData(data.flashcardDecks as FlashcardData);
                     }
                 }
             } catch (e) {
@@ -1430,6 +1436,28 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         }
     }, [pointsData, earnedRest, cosmeticUnlocks, user?.uid]);
 
+    // Handle flashcard data change — persist to Firestore
+    const handleFlashcardDataChange = useCallback((newData: FlashcardData) => {
+        setFlashcardData(newData);
+        if (user?.uid) {
+            setDoc(doc(db, 'progress', user.uid), { flashcardDecks: newData }, { merge: true })
+                .catch(e => console.error('Failed to save flashcard data:', e));
+        }
+    }, [user?.uid]);
+
+    // Handle flashcard points earned
+    const handleFlashcardPointsEarn = useCallback((earned: number) => {
+        const updatedPointsData: PointsData = {
+            totalEarned: pointsData.totalEarned + earned,
+            totalSpent: pointsData.totalSpent,
+        };
+        setPointsData(updatedPointsData);
+        if (user?.uid) {
+            setDoc(doc(db, 'progress', user.uid), { pointsData: updatedPointsData }, { merge: true })
+                .catch(e => console.error('Failed to save flashcard points:', e));
+        }
+    }, [pointsData, user?.uid]);
+
     // Tool click gate: if tool needs subjects and no profile exists, show onboarding
     const handleToolClick = useCallback((toolId: string, needsProfile: boolean) => {
         if (needsProfile && !profileLoaded) return; // still loading from Firebase
@@ -1475,6 +1503,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         { id: 'journey', title: 'Academic Journey Simulator', description: 'Navigate the choices of your final school year.', icon: GitBranch, needsProfile: false, component: <AcademicJourneyGame onSelectModule={onSelectModule} user={user} savedJourneyResult={savedJourneyResult} onJourneyComplete={onJourneyComplete} /> },
         { id: 'cao-simulator', title: 'CAO Points Simulator', description: 'Explore how grade changes affect your CAO points.', icon: Calculator, needsProfile: true, component: subjectProfile ? <CAOPointsSimulator profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} /> : null },
         { id: 'focus', title: 'Deep Focus Timer', description: 'Pomodoro timer tied to your study timetable.', icon: Clock, needsProfile: false, component: <DeepFocusTimer profile={subjectProfile ?? undefined} completions={timetableCompletions} onToggleCompletion={handleToggleCompletion} /> },
+        { id: 'flashcards', title: 'Flashcard Studio', description: 'Create and review flashcards with spaced repetition scheduling.', icon: Layers, needsProfile: false, component: <FlashcardSystem data={flashcardData} onDataChange={handleFlashcardDataChange} onPointsEarn={handleFlashcardPointsEarn} subjectNames={subjectProfile?.subjects.map(s => s.subjectName)} /> },
         { id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true, component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); } } }} /> : null },
     ];
 

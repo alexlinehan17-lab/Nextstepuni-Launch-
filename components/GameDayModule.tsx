@@ -466,7 +466,7 @@ const GameDayModule: React.FC<{ onBack: () => void; progress: ModuleProgress; on
   return (
     <ModuleLayout
       moduleNumber="06"
-      moduleTitle="Game Day Protocol"
+      moduleTitle="Game Day: Peak Performance"
       moduleSubtitle="Peak Performance on Demand"
       moduleDescription="Transform your exam preparation by adopting the mindset and physiological protocols of an elite athlete. This is your playbook for peak performance."
       theme={theme}

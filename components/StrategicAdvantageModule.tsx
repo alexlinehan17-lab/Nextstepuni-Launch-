@@ -309,7 +309,7 @@ const StrategicAdvantageModule: React.FC<{ onBack: () => void; progress: ModuleP
     <ModuleLayout
       moduleNumber="08"
       moduleTitle="Your Strategic Advantage"
-      moduleSubtitle="The Narrative Identity Protocol"
+      moduleSubtitle="The Narrative Identity Playbook"
       moduleDescription="Discover how to turn your personal story of adversity into your greatest competitive advantage in academia and beyond."
       theme={theme}
       sections={sections}

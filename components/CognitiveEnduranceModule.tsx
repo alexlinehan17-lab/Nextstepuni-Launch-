@@ -505,7 +505,7 @@ const CognitiveEnduranceModule: React.FC<{ onBack: () => void; progress: ModuleP
     <ModuleLayout
       moduleNumber="06"
       moduleTitle="Cognitive Endurance"
-      moduleSubtitle="The Marathon Protocol"
+      moduleSubtitle="The Marathon Method"
       moduleDescription="The Leaving Cert isn't a sprint. Learn the science of mental stamina and train your brain to perform under the sustained pressure of the exam timetable."
       theme={theme}
       sections={sections}

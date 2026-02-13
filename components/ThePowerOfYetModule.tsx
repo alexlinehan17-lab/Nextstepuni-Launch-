@@ -479,7 +479,7 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
     <ModuleLayout
       moduleNumber="07"
       moduleTitle='The Power of "Yet"'
-      moduleSubtitle="The Persistence Protocol"
+      moduleSubtitle="The Persistence Playbook"
       moduleDescription="A simple, three-letter word that can rewire your brain for resilience. This module unpacks the neuroscience of error-processing and gives you a practical protocol to turn failure from a verdict into a fuel source."
       theme={theme}
       sections={sections}

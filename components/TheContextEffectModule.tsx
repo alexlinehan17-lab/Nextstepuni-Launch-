@@ -309,7 +309,7 @@ const TheContextEffectModule: React.FC<{ onBack: () => void; progress: ModulePro
     <ModuleLayout
       moduleNumber="49"
       moduleTitle="The Context Effect"
-      moduleSubtitle="The Environmental Encoding Protocol"
+      moduleSubtitle="The Environmental Encoding Guide"
       moduleDescription="Where you study changes what you remember. Learn why studying in multiple places beats one 'perfect' spot — and how to design environments that enhance your brain's encoding."
       theme={theme}
       sections={sections}

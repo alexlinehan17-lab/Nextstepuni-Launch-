@@ -384,7 +384,7 @@ const LeavingCertStrategyModule: React.FC<{ onBack: () => void; progress: Module
   return (
     <ModuleLayout
       moduleNumber="01"
-      moduleTitle="The Points Protocol"
+      moduleTitle="The Points Playbook"
       moduleSubtitle="The Economics of Academic Assessment"
       moduleDescription="Deconstruct the Leaving Cert as a points-based marketplace and learn the tactical framework for maximizing your score."
       theme={theme}

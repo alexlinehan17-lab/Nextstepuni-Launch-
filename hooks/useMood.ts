@@ -90,5 +90,5 @@ export function useMood(uid?: string) {
     });
   }, [uid, today]);
 
-  return { todayMood, setMood, isLoaded };
+  return { todayMood, setMood, isLoaded, entries: moodData.entries };
 }

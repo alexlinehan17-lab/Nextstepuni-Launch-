@@ -273,7 +273,7 @@ const MasteringEnglishModule: React.FC<{ onBack: () => void; progress: ModulePro
     <ModuleLayout
       moduleNumber="04"
       moduleTitle="Mastering English"
-      moduleSubtitle="The PCLM Protocol"
+      moduleSubtitle="The PCLM Framework"
       moduleDescription="A strategic deconstruction of the Leaving Cert English exam, focusing on mastering the PCLM marking scheme and optimizing for H1 performance."
       theme={theme}
       sections={sections}

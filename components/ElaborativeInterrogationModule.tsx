@@ -249,7 +249,7 @@ const ElaborativeInterrogationModule: React.FC<{ onBack: () => void; progress: M
   ];
 
   return (
-    <ModuleLayout moduleNumber="05" moduleTitle="Elaborative Interrogation" moduleSubtitle={`The "Why" Protocol`} moduleDescription="Move beyond rote learning by mastering the art of asking &quot;Why?&quot;. This module teaches you how to transform shallow facts into deep, interconnected knowledge for the new Leaving Cert." theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
+    <ModuleLayout moduleNumber="05" moduleTitle="Elaborative Interrogation" moduleSubtitle={`The "Why" Method`} moduleDescription="Move beyond rote learning by mastering the art of asking &quot;Why?&quot;. This module teaches you how to transform shallow facts into deep, interconnected knowledge for the new Leaving Cert." theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
       {(activeSection) => (
         <>
           {activeSection === 0 && (

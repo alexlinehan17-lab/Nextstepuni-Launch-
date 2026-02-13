@@ -306,7 +306,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
                           <button type="button" onClick={() => setShowConfirmPassword(!showConfirmPassword)} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-white/25 hover:text-zinc-600 dark:hover:text-white/50 transition-colors" aria-label={showConfirmPassword ? "Hide password" : "Show password"}>{showConfirmPassword ? <EyeOff size={16} /> : <Eye size={16} />}</button>
                         </div>
                         <p className="text-xs text-zinc-500 dark:text-white/35 mt-3 font-medium uppercase tracking-widest">Choose your avatar</p>
-                        <div className="grid grid-cols-4 gap-2.5">
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
                           {AVATAR_SEEDS.map((seed) => (<MotionButton key={seed} type="button" onClick={() => setSelectedAvatar(seed)} className={`rounded-xl aspect-square p-1.5 transition-all ${selectedAvatar === seed ? 'ring-2 ring-[#CC785C] bg-[#CC785C]/10' : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'}`} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}><img src={getAvatarUrl(seed)} alt="Avatar" className="w-full h-full rounded-lg"/></MotionButton>))}
                         </div>
                         <AnimatePresence>{error && (<MotionP initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-xs text-red-400/90 font-medium mt-1">{error}</MotionP>)}</AnimatePresence>

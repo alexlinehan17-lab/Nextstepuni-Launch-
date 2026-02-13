@@ -335,7 +335,7 @@ const TheNoteTakingParadoxModule: React.FC<{ onBack: () => void; progress: Modul
     <ModuleLayout
       moduleNumber="45"
       moduleTitle="The Note-Taking Paradox"
-      moduleSubtitle="The Generative Processing Protocol"
+      moduleSubtitle="The Generative Processing Method"
       moduleDescription="Discover why students who write more notes learn less — and master the science of note-taking that actually builds durable knowledge."
       theme={theme}
       sections={sections}
