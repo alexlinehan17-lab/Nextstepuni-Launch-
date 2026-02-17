@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { CourseData } from './Library';
 import { SessionUser, getAvatarUrl } from './Auth';
-import { GraduationCap } from 'lucide-react';
+import { GraduationCap, LogOut } from 'lucide-react';
 import { CategoryType } from './KnowledgeTree';
 import { db } from '../firebase';
 import { collection, getDocs } from 'firebase/firestore';
@@ -28,18 +28,19 @@ type AllUserProgress = {
 
 interface AdminDashboardProps {
   allCourses: CourseData[];
+  onLogout: () => void;
 }
 
 const CATEGORIES: { id: CategoryType; title: string }[] = [
     { id: 'architecture-mindset', title: 'The Architecture of your Mindset' },
     { id: 'science-growth', title: 'The Science of Growth' },
     { id: 'learning-cheat-codes', title: 'The Science of Learning Effectively' },
-    { id: 'subject-specific-science', title: 'Subject Specific Science' },
+    { id: 'subject-specific-science', title: 'Decoding the Subjects' },
     { id: 'exam-zone', title: 'Exam Strategy and Points Maximisation' },
 ];
 
 const StudentProgressCard: React.FC<{ user: SessionUser; userProgress: UserProgress; allCourses: CourseData[] }> = ({ user, userProgress, allCourses }) => {
-  
+
   const calculateCategoryProgress = (category: CategoryType) => {
       const categoryCourses = allCourses.filter(c => c.category === category);
       if (categoryCourses.length === 0) return 0;
@@ -52,7 +53,7 @@ const StudentProgressCard: React.FC<{ user: SessionUser; userProgress: UserProgr
           }
           return sum;
       }, 0);
-      
+
       return totalProgress / categoryCourses.length;
   };
 
@@ -64,7 +65,7 @@ const StudentProgressCard: React.FC<{ user: SessionUser; userProgress: UserProgr
     }
     return sum;
   }, 0);
-  
+
   const overallProgress = allCourses.length > 0 ? totalProgressSum / allCourses.length : 0;
 
   return (
@@ -101,7 +102,7 @@ const StudentProgressCard: React.FC<{ user: SessionUser; userProgress: UserProgr
   );
 };
 
-export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses }) => {
+export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLogout }) => {
     const [studentData, setStudentData] = useState<{ user: SessionUser; progress: UserProgress }[]>([]);
     const [isLoading, setIsLoading] = useState(true);
 
@@ -121,10 +122,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses }) =>
                     acc[doc.id] = doc.data();
                     return acc;
                 }, {} as AllUserProgress);
-                
-                // Combine data for each student
+
+                // Combine data for each student (exclude admin and GC accounts)
                 const combinedData = users
-                    .filter(u => !u.isAdmin)
+                    .filter(u => !u.isAdmin && (u as any).role !== 'gc' && (u as any).role !== 'admin')
                     .map(user => ({
                         user,
                         progress: allProgress[user.uid] || {}
@@ -143,12 +144,21 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses }) =>
   return (
     <div className="min-h-screen w-full p-8 pt-24">
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center gap-4 mb-8">
+        <div className="flex items-center justify-between mb-8">
+          <div className="flex items-center gap-4">
             <GraduationCap size={32} className="text-zinc-700 dark:text-zinc-300"/>
             <div>
                  <h1 className="font-serif text-3xl font-semibold text-zinc-900 dark:text-white">Admin Dashboard</h1>
                  <p className="text-zinc-500 dark:text-zinc-400">Student Progress Overview</p>
             </div>
+          </div>
+          <button
+            onClick={onLogout}
+            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors text-sm font-medium"
+          >
+            <LogOut size={16} />
+            Log Out
+          </button>
         </div>
 
         {isLoading ? (
@@ -156,9 +166,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses }) =>
         ) : studentData.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {studentData.map(data => (
-                <StudentProgressCard 
-                    key={data.user.uid} 
-                    user={data.user} 
+                <StudentProgressCard
+                    key={data.user.uid}
+                    user={data.user}
                     userProgress={data.progress}
                     allCourses={allCourses}
                 />

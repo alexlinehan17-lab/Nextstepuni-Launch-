@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect, useRef, useCallback, Suspense } from 'react';
+import React, { useState, useEffect, useRef, useCallback, Suspense, lazy } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon, LogOut, ArrowLeft, Settings, Flame, ChevronRight, ChevronLeft, Trophy, Waves, Scale, Zap, CloudRain, Award, Brain, Target, BookOpen, Shield, FlaskConical, BarChart3 } from 'lucide-react';
 import { Library } from './components/Library';
@@ -12,6 +12,7 @@ import { KnowledgeTree, CategoryType } from './components/KnowledgeTree';
 import { LoadingSpinner } from './components/LoadingSpinner';
 import { Auth, SessionUser, getAvatarUrl } from './components/Auth';
 import { AdminDashboard } from './components/AdminDashboard';
+import { GCDashboard } from './components/GCDashboard';
 import SettingsModal from './components/SettingsModal';
 import StudyPassportModal from './components/StudyPassportModal';
 import { auth, db } from './firebase';
@@ -27,6 +28,9 @@ import { useTodaysFocus, FocusRecommendation } from './hooks/useTodaysFocus';
 import { usePoints } from './hooks/usePoints';
 import DashboardView from './components/DashboardView';
 import LearningPathsView from './components/LearningPathsView';
+import { type StudentSubjectProfile } from './components/subjectData';
+
+const Onboarding = lazy(() => import('./components/Onboarding'));
 
 const MOOD_OPTIONS = [
   { key: 'calm', icon: Waves, label: 'Calm' },
@@ -202,7 +206,7 @@ const RESEARCH_PAPERS = [
 ];
 
 const App: React.FC = () => {
-  const [viewState, setViewState] = useState<'tree' | 'category' | 'module' | 'innovation-zone' | 'dashboard' | 'learning-paths'>('tree');
+  const [viewState, setViewState] = useState<'tree' | 'category' | 'module' | 'innovation-zone' | 'dashboard' | 'learning-paths' | 'onboarding'>('tree');
   const [currentCategory, setCurrentCategory] = useState<CategoryType | null>(null);
   const [currentModuleId, setCurrentModuleId] = useState<string | null>(null);
   const [cameFromJourney, setCameFromJourney] = useState(false);
@@ -210,6 +214,7 @@ const App: React.FC = () => {
   const [user, setUser] = useState<SessionUser | null>(null);
   const [userProgress, setUserProgress] = useState<UserProgress>({});
   const [isLoadingAuth, setIsLoadingAuth] = useState(true);
+  const [needsOnboarding, setNeedsOnboarding] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [passportOpen, setPassportOpen] = useState(false);
   const [unlockedAvatarSeeds, setUnlockedAvatarSeeds] = useState<string[]>([]);
@@ -269,10 +274,17 @@ const App: React.FC = () => {
 
   // Set initial history state when logged-in user lands on tree
   useEffect(() => {
-    if (user && !user.isAdmin && viewState === 'tree' && !window.history.state?.view) {
+    if (user && !user.isAdmin && user.role !== 'gc' && viewState === 'tree' && !window.history.state?.view) {
       window.history.replaceState({ view: 'tree' }, '');
     }
   }, [user, viewState]);
+
+  // Redirect to onboarding for users without a subject profile
+  useEffect(() => {
+    if (user && !user.isAdmin && user.role !== 'gc' && needsOnboarding && !isLoadingAuth && viewState === 'tree') {
+      setViewState('onboarding');
+    }
+  }, [user, needsOnboarding, isLoadingAuth, viewState]);
 
   // Set up the real-time auth listener
   useEffect(() => {
@@ -300,11 +312,14 @@ const App: React.FC = () => {
 
           if (userDoc.exists()) {
             const userData = userDoc.data();
+            const isGC = userData.role === 'gc';
             setUser({
               uid: firebaseUser.uid,
               name: userData.name,
-              avatar: userData.avatar,
+              avatar: userData.avatar || 'Charlie',
               isAdmin: false,
+              role: userData.role,
+              school: userData.school,
             });
             if (progressDoc.exists()) {
               const progressData = progressDoc.data();
@@ -312,8 +327,12 @@ const App: React.FC = () => {
               if (progressData.cosmeticUnlocks?.avatarSeeds) {
                 setUnlockedAvatarSeeds(progressData.cosmeticUnlocks.avatarSeeds);
               }
+              if (!progressData.subjectProfile) {
+                setNeedsOnboarding(true);
+              }
             } else {
               setUserProgress({});
+              setNeedsOnboarding(true);
             }
           } else {
              // This can happen if user creation was interrupted. Log them out.
@@ -404,6 +423,25 @@ const App: React.FC = () => {
     if (!isPopstateRef.current) {
       window.history.pushState({ view: 'learning-paths' }, '');
     }
+  };
+
+  const handleOnboardingComplete = async (profile: StudentSubjectProfile) => {
+    if (!user) return;
+    try {
+      const progressDocRef = doc(db, 'progress', user.uid);
+      await setDoc(progressDocRef, { subjectProfile: profile }, { merge: true });
+    } catch (error) {
+      console.error('Failed to save subject profile:', error);
+    }
+    setNeedsOnboarding(false);
+    setViewState('tree');
+    window.history.replaceState({ view: 'tree' }, '');
+  };
+
+  const handleOnboardingSkip = () => {
+    setNeedsOnboarding(false);
+    setViewState('tree');
+    window.history.replaceState({ view: 'tree' }, '');
   };
 
   const handleBackToTree = () => {
@@ -645,7 +683,11 @@ const App: React.FC = () => {
     }
 
     if (user.isAdmin) {
-      return <AdminDashboard allCourses={ALL_COURSES} />;
+      return <AdminDashboard allCourses={ALL_COURSES} onLogout={handleLogout} />;
+    }
+
+    if (user.role === 'gc' && user.school) {
+      return <GCDashboard school={user.school} onLogout={handleLogout} allCourses={ALL_COURSES} />;
     }
 
     if (viewState === 'dashboard') {
@@ -675,6 +717,14 @@ const App: React.FC = () => {
       );
     }
 
+    if (viewState === 'onboarding') {
+      return (
+        <Suspense fallback={<LoadingSpinner />}>
+          <Onboarding userName={user.name} onComplete={handleOnboardingComplete} onSkip={handleOnboardingSkip} />
+        </Suspense>
+      );
+    }
+
     if (viewState === 'tree') {
       return <KnowledgeTree
         key="knowledge-tree"
@@ -686,6 +736,15 @@ const App: React.FC = () => {
         onSelectModule={handleSelectModule}
         categoryTitles={categoryTitles}
         userProgress={userProgress}
+        userName={user?.name}
+        userAvatarSeed={(settings.avatar || user?.avatar) ?? undefined}
+        onLogout={handleLogout}
+        onOpenSettings={() => setSettingsOpen(true)}
+        onOpenPassport={() => setPassportOpen(true)}
+        settings={settings}
+        updateSetting={updateSetting}
+        completedCount={completedCount}
+        totalCount={ALL_COURSES.length}
       />;
     }
 
@@ -742,8 +801,8 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
-      {user && (
-        <div className="fixed top-6 right-6 z-[100]">
+      {user && viewState !== 'onboarding' && user.role !== 'gc' && !user.isAdmin && (
+        <div className={`fixed top-6 right-6 z-[100] ${viewState === 'tree' ? 'md:hidden' : ''}`}>
           <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} todayMood={todayMood} onSetMood={setMood} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} onGoToDashboard={handleGoToDashboard} completedCount={completedCount} totalCount={ALL_COURSES.length} />
         </div>
       )}

@@ -6,10 +6,11 @@
 import React, { useState, MouseEvent } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ArrowRight, User as UserIcon, Key, Eye, EyeOff, Shield, User as StudentIcon, ArrowLeft, ChevronDown } from 'lucide-react';
+import { X, ArrowRight, User as UserIcon, Key, Eye, EyeOff, Shield, User as StudentIcon, ArrowLeft, ChevronDown, School, GraduationCap } from 'lucide-react';
 import { auth, db } from '../firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
+import { SCHOOLS } from '../schoolData';
 
 // FIX: Cast motion components to any to bypass broken type definitions
 const MotionDiv = motion.div as any;
@@ -22,6 +23,8 @@ export type SessionUser = {
   name: string;
   avatar: string;
   isAdmin?: boolean;
+  role?: 'student' | 'gc' | 'admin';
+  school?: string;
 };
 
 interface AuthProps {
@@ -48,7 +51,8 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownTimeout = React.useRef<ReturnType<typeof setTimeout> | null>(null);
   const [step, setStep] = useState<'initial' | 'login' | 'create'>('initial');
-  const [loginView, setLoginView] = useState<'choice' | 'student' | 'admin'>('choice');
+  const [loginView, setLoginView] = useState<'choice' | 'student' | 'admin' | 'gc'>('choice');
+  const [gcSchool, setGcSchool] = useState('');
   const [error, setError] = useState('');
   
   // Login state
@@ -61,20 +65,23 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
   const [createPassword, setCreatePassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [selectedAvatar, setSelectedAvatar] = useState('');
+  const [selectedSchool, setSelectedSchool] = useState('');
   const [showCreatePassword, setShowCreatePassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   
-  const openModal = (toStep: 'initial' | 'login' | 'create', loginAs?: 'choice' | 'student' | 'admin') => {
+  const openModal = (toStep: 'initial' | 'login' | 'create', loginAs?: 'choice' | 'student' | 'admin' | 'gc') => {
     setIsOpen(true);
     setStep(toStep);
     setLoginView(loginAs ?? 'choice');
     setError('');
     setLoginName('');
     setLoginPassword('');
+    setGcSchool('');
     setCreateName('');
     setCreatePassword('');
     setConfirmPassword('');
     setSelectedAvatar('');
+    setSelectedSchool('');
     setShowLoginPassword(false);
     setShowCreatePassword(false);
     setShowConfirmPassword(false);
@@ -102,10 +109,24 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
     if (loginView === 'admin') {
       try {
         await signInWithEmailAndPassword(auth, 'admin@nextstep.app', loginPassword);
-        // onLoginSuccess will be triggered by onAuthStateChanged in App.tsx
         handleClose();
       } catch (error: any) {
         setError("Invalid admin credentials.");
+      }
+      return;
+    }
+
+    if (loginView === 'gc') {
+      if (!gcSchool || !loginPassword.trim()) {
+        setError("Please select your school and enter your password.");
+        return;
+      }
+      try {
+        const email = `gc-${gcSchool}@nextstep.app`;
+        await signInWithEmailAndPassword(auth, email, loginPassword);
+        handleClose();
+      } catch (error: any) {
+        setError("Invalid credentials.");
       }
       return;
     }
@@ -114,12 +135,10 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
       setError("Please enter your username and password.");
       return;
     }
-    
+
     try {
-      // Firebase Auth uses email for login, so we'll create a fake email from the username.
       const email = `${loginName.trim().toLowerCase()}@nextstep.app`;
       await signInWithEmailAndPassword(auth, email, loginPassword);
-      // onLoginSuccess will be triggered by onAuthStateChanged in App.tsx
       handleClose();
     } catch (error: any) {
       setError("Invalid username or password.");
@@ -129,7 +148,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
   const handleCreate = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
-    if (!createName.trim() || !selectedAvatar || !createPassword) {
+    if (!createName.trim() || !selectedAvatar || !createPassword || !selectedSchool) {
       setError("Please fill out all fields.");
       return;
     }
@@ -147,6 +166,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
         await setDoc(doc(db, "users", user.uid), {
             name: createName.trim(),
             avatar: selectedAvatar,
+            school: selectedSchool,
         });
 
         // onLoginSuccess will be triggered by onAuthStateChanged in App.tsx
@@ -162,7 +182,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
     }
   };
 
-  const isProfileComplete = createName.trim() !== '' && selectedAvatar !== '' && createPassword !== '' && createPassword === confirmPassword;
+  const isProfileComplete = createName.trim() !== '' && selectedAvatar !== '' && selectedSchool !== '' && createPassword !== '' && createPassword === confirmPassword;
 
   const stepVariants = {
     hidden: (direction: number) => ({ opacity: 0, x: direction > 0 ? 50 : -50 }),
@@ -204,6 +224,46 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
     </MotionDiv>
   );
 
+  const renderGCLoginForm = () => (
+    <MotionDiv
+      key="gc-login"
+      variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={1}
+      transition={{ duration: 0.3, ease: 'easeInOut' }}
+      className="flex flex-col flex-grow justify-center"
+    >
+      <h2 className="font-sans text-2xl font-semibold text-zinc-900 dark:text-white/95 mb-1 tracking-tight">Guidance Counsellor</h2>
+      <p className="text-zinc-500 dark:text-white/40 text-sm mb-8">Select your school and enter your password.</p>
+      <form onSubmit={handleLogin} className="flex flex-col gap-3">
+        <div className="relative">
+          <School size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-white/25 pointer-events-none" />
+          <select
+            value={gcSchool}
+            onChange={(e) => { setGcSchool(e.target.value); setError(''); }}
+            className={`${inputWithIconClass} appearance-none cursor-pointer ${!gcSchool ? 'text-zinc-400 dark:text-white/30' : ''}`}
+            autoFocus
+          >
+            <option value="" disabled>Select your school</option>
+            {SCHOOLS.map((s) => (
+              <option key={s.id} value={s.id}>{s.name}</option>
+            ))}
+          </select>
+        </div>
+        <div className="relative">
+          <Key size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-white/25" />
+          <input type={showLoginPassword ? "text" : "password"} value={loginPassword} onChange={(e) => setLoginPassword(e.target.value)} placeholder="Password" className={inputWithBothClass} />
+          <button type="button" onClick={() => setShowLoginPassword(!showLoginPassword)} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-white/25 hover:text-zinc-600 dark:hover:text-white/50 transition-colors" aria-label={showLoginPassword ? "Hide password" : "Show password"}>
+            {showLoginPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+          </button>
+        </div>
+        <AnimatePresence>{error && (<MotionP initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-xs text-red-400/90 font-medium">{error}</MotionP>)}</AnimatePresence>
+        <button type="submit" className="w-full bg-[#CC785C] text-white font-medium py-3 rounded-xl hover:bg-[#B56A50] transition-colors text-sm mt-1">Continue</button>
+        <button type="button" onClick={() => setLoginView('choice')} className="flex items-center justify-center gap-1.5 text-sm text-zinc-400 dark:text-white/35 hover:text-zinc-600 dark:hover:text-white/60 w-full py-2 rounded-lg transition-colors mt-1">
+          <ArrowLeft size={14} /> Back
+        </button>
+      </form>
+    </MotionDiv>
+  );
+
   return (
     <>
       {showChevron ? (
@@ -228,7 +288,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
                 <button onClick={() => openModal('login', 'student')} className="w-full text-left px-4 py-2.5 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-white/[0.06] transition-colors font-medium">Student login</button>
                 <button onClick={() => openModal('create')} className="w-full text-left px-4 py-2.5 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-white/[0.06] transition-colors font-medium">Create account</button>
                 <div className="border-t border-zinc-100 dark:border-white/[0.06] my-1" />
-                <button onClick={() => openModal('login', 'admin')} className="w-full text-left px-4 py-2.5 text-sm text-zinc-400 dark:text-zinc-500 hover:bg-zinc-100 dark:hover:bg-white/[0.06] transition-colors">Admin login</button>
+                <button onClick={() => openModal('login', 'gc')} className="w-full text-left px-4 py-2.5 text-sm text-zinc-400 dark:text-zinc-500 hover:bg-zinc-100 dark:hover:bg-white/[0.06] transition-colors">Guidance Counsellor</button>
               </MotionDiv>
             )}
           </AnimatePresence>
@@ -274,16 +334,16 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
                              <div className="w-10 h-10 rounded-xl bg-[#CC785C]/10 flex items-center justify-center flex-shrink-0"><StudentIcon size={20} className="text-[#CC785C]"/></div>
                              <div className="text-left"><p className="font-medium text-zinc-900 dark:text-white/90 text-sm">Student</p><p className="text-xs text-zinc-500 dark:text-white/35 mt-0.5">Access your modules and progress.</p></div>
                            </button>
-                           <button onClick={() => setLoginView('admin')} className="w-full flex items-center gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-white/[0.04] hover:bg-zinc-100 dark:hover:bg-white/[0.07] transition-all border border-zinc-200/50 dark:border-white/[0.08] hover:border-zinc-300 dark:hover:border-white/[0.15]">
-                             <div className="w-10 h-10 rounded-xl bg-zinc-100 dark:bg-white/[0.06] flex items-center justify-center flex-shrink-0"><Shield size={20} className="text-zinc-400 dark:text-white/40"/></div>
-                             <div className="text-left"><p className="font-medium text-zinc-900 dark:text-white/90 text-sm">Admin</p><p className="text-xs text-zinc-500 dark:text-white/35 mt-0.5">View student dashboard.</p></div>
+                           <button onClick={() => setLoginView('gc')} className="w-full flex items-center gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-white/[0.04] hover:bg-zinc-100 dark:hover:bg-white/[0.07] transition-all border border-zinc-200/50 dark:border-white/[0.08] hover:border-zinc-300 dark:hover:border-white/[0.15]">
+                             <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center flex-shrink-0"><GraduationCap size={20} className="text-emerald-500"/></div>
+                             <div className="text-left"><p className="font-medium text-zinc-900 dark:text-white/90 text-sm">Guidance Counsellor</p><p className="text-xs text-zinc-500 dark:text-white/35 mt-0.5">View your school's student progress.</p></div>
                            </button>
                         </div>
                         <button type="button" onClick={() => setStep('initial')} className="flex items-center justify-center gap-1.5 text-sm text-zinc-400 dark:text-white/35 hover:text-zinc-600 dark:hover:text-white/60 mt-8 w-full py-2 rounded-lg transition-colors">
                           <ArrowLeft size={14} /> Back
                         </button>
                       </MotionDiv>
-                    ) : loginView === 'student' ? renderLoginForm(false) : renderLoginForm(true)
+                    ) : loginView === 'gc' ? renderGCLoginForm() : loginView === 'student' ? renderLoginForm(false) : renderLoginForm(true)
                   )}
 
                   {step === 'create' && (
@@ -308,6 +368,20 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
                         <p className="text-xs text-zinc-500 dark:text-white/35 mt-3 font-medium uppercase tracking-widest">Choose your avatar</p>
                         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
                           {AVATAR_SEEDS.map((seed) => (<MotionButton key={seed} type="button" onClick={() => setSelectedAvatar(seed)} className={`rounded-xl aspect-square p-1.5 transition-all ${selectedAvatar === seed ? 'ring-2 ring-[#CC785C] bg-[#CC785C]/10' : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'}`} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}><img src={getAvatarUrl(seed)} alt="Avatar" className="w-full h-full rounded-lg"/></MotionButton>))}
+                        </div>
+                        <p className="text-xs text-zinc-500 dark:text-white/35 mt-3 font-medium uppercase tracking-widest">Your school</p>
+                        <div className="relative">
+                          <School size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-white/25 pointer-events-none" />
+                          <select
+                            value={selectedSchool}
+                            onChange={(e) => { setSelectedSchool(e.target.value); setError(''); }}
+                            className={`${inputWithIconClass} appearance-none cursor-pointer ${!selectedSchool ? 'text-zinc-400 dark:text-white/30' : ''}`}
+                          >
+                            <option value="" disabled>Select your school</option>
+                            {SCHOOLS.map((school) => (
+                              <option key={school.id} value={school.id}>{school.name}</option>
+                            ))}
+                          </select>
                         </div>
                         <AnimatePresence>{error && (<MotionP initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-xs text-red-400/90 font-medium mt-1">{error}</MotionP>)}</AnimatePresence>
                         <button type="submit" disabled={!isProfileComplete} className="w-full bg-[#CC785C] text-white font-medium py-3 mt-auto rounded-xl hover:bg-[#B56A50] transition-colors text-sm disabled:bg-zinc-100 dark:disabled:bg-white/[0.06] disabled:text-zinc-400 dark:disabled:text-white/20 disabled:cursor-not-allowed">Create account</button>

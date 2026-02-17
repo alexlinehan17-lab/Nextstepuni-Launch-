@@ -3,6 +3,16 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
+    // Helper: check if the requesting user is a GC
+    function isGC() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'gc';
+    }
+
+    // Helper: get the GC's school
+    function gcSchool() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
+    }
+
     // Users collection: each user can only read/write their own doc
     match /users/{userId} {
       allow read: if request.auth != null && request.auth.uid == userId;
@@ -11,6 +21,10 @@ service cloud.firestore {
       // Admin can read all user docs (for AdminDashboard)
       allow read: if request.auth != null
                   && request.auth.token.email == 'admin@nextstep.app';
+      // GC can read user docs where school matches their own school
+      allow read: if request.auth != null
+                  && isGC()
+                  && resource.data.school == gcSchool();
     }
 
     // Progress collection: each user can only read/write their own doc
@@ -19,6 +33,10 @@ service cloud.firestore {
       // Admin can read all progress docs (for AdminDashboard)
       allow read: if request.auth != null
                   && request.auth.token.email == 'admin@nextstep.app';
+      // GC can read progress docs for students in their school
+      allow read: if request.auth != null
+                  && isGC()
+                  && get(/databases/$(database)/documents/users/$(userId)).data.school == gcSchool();
     }
 
     // Settings collection: each user can only read/write their own doc
