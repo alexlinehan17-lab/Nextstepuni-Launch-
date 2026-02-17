@@ -54,8 +54,8 @@ const DweckExperimentSimulator = () => {
 
     return(
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Dweck Experiment Simulator</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">You just aced a test. Now, walk through the experiment and see the consequences.</p>
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Praise Experiment</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">You just aced a test. Walk through this experiment and see what happens next depending on what you're told.</p>
 
              <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
@@ -143,14 +143,14 @@ const ErrorSignalVisualizer = () => {
     const growthPath = buildPath(32);  // Large Pe
 
     const traces = [
-      { label: 'Fixed Mindset', path: fixedPath, color: '#f43f5e', peLabel: 'Small Pe', peDesc: 'Brain looks away to protect ego', bgClass: 'bg-rose-50 dark:bg-rose-950/20', borderClass: 'border-rose-200 dark:border-rose-800/40', labelClass: 'text-rose-600 dark:text-rose-400' },
-      { label: 'Growth Mindset', path: growthPath, color: '#10b981', peLabel: 'Large Pe', peDesc: 'Brain allocates attention to learn', bgClass: 'bg-emerald-50 dark:bg-emerald-950/20', borderClass: 'border-emerald-200 dark:border-emerald-800/40', labelClass: 'text-emerald-600 dark:text-emerald-400' },
+      { label: 'Fixed Mindset', path: fixedPath, color: '#f43f5e', peLabel: 'Small Pe', peDesc: 'Brain flinches away to protect your ego', bgClass: 'bg-rose-50 dark:bg-rose-950/20', borderClass: 'border-rose-200 dark:border-rose-800/40', labelClass: 'text-rose-600 dark:text-rose-400' },
+      { label: 'Growth Mindset', path: growthPath, color: '#10b981', peLabel: 'Large Pe', peDesc: 'Brain pays close attention to learn from it', bgClass: 'bg-emerald-50 dark:bg-emerald-950/20', borderClass: 'border-emerald-200 dark:border-emerald-800/40', labelClass: 'text-emerald-600 dark:text-emerald-400' },
     ];
 
     return (
       <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Brain's Error Signal</h4>
-        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">When you make a mistake, your brain fires two signals. The second (Pe) is where mindset changes everything.</p>
+        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">What Your Brain Does With Mistakes</h4>
+        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">When you make a mistake, your brain fires two signals. The second one is where your mindset makes all the difference.</p>
 
         <div className="space-y-4">
           {traces.map((trace, i) => (
@@ -297,9 +297,9 @@ const ErrorSignalVisualizer = () => {
               className="overflow-hidden"
             >
               <div className="mt-6 p-5 bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-700 space-y-3">
-                <p className="text-sm text-zinc-700 dark:text-zinc-300"><strong>ERN (Error-Related Negativity)</strong> is the first signal -- it fires within 100ms of making a mistake. Both mindsets produce the same ERN. Your brain always detects the error.</p>
-                <p className="text-sm text-zinc-700 dark:text-zinc-300"><strong>Pe (Error Positivity)</strong> is the second signal -- it fires 200-500ms later. This is where mindset changes everything. It measures how much <em>attention</em> your brain allocates to processing the mistake.</p>
-                <p className="text-sm text-zinc-700 dark:text-zinc-300">A <strong className="text-rose-500">fixed mindset</strong> brain produces a tiny Pe -- it notices the error but quickly disengages to protect the ego. A <strong className="text-emerald-500">growth mindset</strong> brain produces a massive Pe -- it leans into the error, analysing what went wrong so it can correct course. This is why growth-minded students improve after mistakes while fixed-minded students repeat them.</p>
+                <p className="text-sm text-zinc-700 dark:text-zinc-300"><strong>ERN (the first signal)</strong> fires within a tenth of a second of making a mistake. Both mindsets produce the same signal here. Your brain always spots the error.</p>
+                <p className="text-sm text-zinc-700 dark:text-zinc-300"><strong>Pe (the second signal)</strong> comes a fraction of a second later. This is where mindset makes the difference. It shows how much <em>attention</em> your brain gives to the mistake.</p>
+                <p className="text-sm text-zinc-700 dark:text-zinc-300">A <strong className="text-rose-500">fixed mindset</strong> brain produces a tiny Pe — it spots the error but quickly looks away to protect your ego. A <strong className="text-emerald-500">growth mindset</strong> brain produces a huge Pe — it zooms in on the error, trying to figure out what went wrong so it can do better next time. This is why growth-minded students improve after mistakes while fixed-minded students keep making the same ones.</p>
               </div>
             </motion.div>
           )}
@@ -609,11 +609,11 @@ const PraiseDecoderGame = () => {
 // --- MODULE COMPONENT ---
 const ThePraiseProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'praise-paradox', title: 'The Praise Paradox', eyebrow: '01 // The Framing Device', icon: MessageCircle },
-    { id: 'dweck-experiment', title: 'The Dweck Experiment', eyebrow: '02 // The Evidence', icon: BarChart },
-    { id: 'brain-on-praise', title: 'The Brain on Praise', eyebrow: '03 // The Neurobiology', icon: Brain },
+    { id: 'praise-paradox', title: 'The Praise Paradox', eyebrow: '01 // The Big Idea', icon: MessageCircle },
+    { id: 'dweck-experiment', title: 'The Praise Experiment', eyebrow: '02 // What Actually Happens', icon: BarChart },
+    { id: 'brain-on-praise', title: 'The Brain on Praise', eyebrow: '03 // What Your Brain Does', icon: Brain },
     { id: 'real-world-data', title: 'The Real World Data', eyebrow: '04 // The Gender Gap', icon: User },
-    { id: 'false-growth', title: 'The "Effort" Trap', eyebrow: '05 // False Growth Mindset', icon: AlertTriangle },
+    { id: 'false-growth', title: 'The "Effort" Trap', eyebrow: '05 // The Common Mistake', icon: AlertTriangle },
     { id: 'feedback-audit', title: 'The Feedback Audit', eyebrow: '06 // Your Action Plan', icon: Settings },
   ];
 
@@ -621,8 +621,8 @@ const ThePraiseProtocolModule: React.FC<{ onBack: () => void; progress: ModulePr
     <ModuleLayout
       moduleNumber="03"
       moduleTitle="The Power of Praise"
-      moduleSubtitle="The Architecture of Potential"
-      moduleDescription="Learn how the language you use to interpret success and failure programs your brain for a fixed or growth mindset."
+      moduleSubtitle="How Words Shape Your Mindset"
+      moduleDescription="The way people praise you — and the way you talk to yourself — can either set you up to grow or keep you stuck. Here's how to tell the difference."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -633,40 +633,40 @@ const ThePraiseProtocolModule: React.FC<{ onBack: () => void; progress: ModulePr
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Praise Paradox." eyebrow="Step 1" icon={MessageCircle} theme={theme}>
-              <p>We've been told our whole lives that praise builds confidence. But what if some types of praise are actually a psychological trap? This is the praise paradox. The words you hear—and the words you tell yourself—are not just encouragement; they are framing devices that program your brain's entire approach to success and failure.</p>
-              <p>The science, pioneered by Carol Dweck, splits praise into two categories. <Highlight description="Praise that focuses on innate, fixed traits like 'You're so smart' or 'You're a natural'. This praise is dangerous because it creates a Fixed Mindset." theme={theme}>Person Praise</Highlight> focuses on who you *are*. <Highlight description="Praise that focuses on controllable, unstable variables like effort, strategy, and process. E.g., 'You worked so hard on that.' This praise is powerful because it builds a Growth Mindset." theme={theme}>Process Praise</Highlight> focuses on what you *do*. One builds fragility, the other builds resilience. Understanding the difference is mission-critical.</p>
+              <p>We've been told our whole lives that praise builds confidence. But what if some types of praise are actually a trap? This is the praise paradox. The words you hear — and the words you tell yourself — aren't just nice things to say. They actually shape how your brain deals with success and failure going forward.</p>
+              <p>There are basically two types of praise. <Highlight description="This is when someone praises who you are — like saying 'You're so smart' or 'You're a natural.' It sounds nice, but it makes you afraid to mess up because you start thinking your ability is just something you either have or don't." theme={theme}>Person Praise</Highlight> focuses on who you *are*. <Highlight description="This is when someone praises what you did — like 'You worked really hard on that' or 'That was a great strategy.' This kind of praise is way more useful because it makes you want to keep trying and improving." theme={theme}>Process Praise</Highlight> focuses on what you *do*. One makes you fragile, the other makes you resilient. Knowing the difference is a game-changer.</p>
               <PraiseDecoderGame />
             </ReadingSection>
           )}
            {activeSection === 1 && (
-            <ReadingSection title="The Dweck Experiment." eyebrow="Step 2" icon={BarChart} theme={theme}>
-                <p>In a groundbreaking 1998 study, Mueller and Dweck revealed the immediate, devastating impact of person praise. They gave students a test, told them all they did well, and then gave them one of two sentences of praise: "You must be smart" (Person) or "You must have worked hard" (Process).</p>
-                <p>The results were shocking. The "smart" kids immediately became risk-averse, choosing easier tasks to protect their new label. When faced with a harder problem and failing, they gave up, their performance collapsed, and nearly 40% of them lied about their scores. The "hard-working" kids did the opposite: they sought out challenges, enjoyed the struggle, improved their performance after failure, and were three times more honest. Let's run the simulation.</p>
+            <ReadingSection title="The Praise Experiment." eyebrow="Step 2" icon={BarChart} theme={theme}>
+                <p>Here's an experiment that shows just how powerful one sentence of praise can be. A group of students were all given a test, told they did well, and then given one of two responses: "You must be smart" (Person Praise) or "You must have worked hard" (Process Praise). That's it — one sentence.</p>
+                <p>The results were wild. The "smart" kids immediately started playing it safe, choosing easier tasks so they wouldn't risk looking stupid. When they hit a harder problem and failed, they gave up, their scores tanked, and nearly 40% of them lied about how they did. The "hard-working" kids went the other way: they picked harder challenges, actually enjoyed the struggle, bounced back after failing, and were three times more honest about their scores. Let's run the simulation.</p>
                 <DweckExperimentSimulator />
             </ReadingSection>
           )}
            {activeSection === 2 && (
             <ReadingSection title="The Brain on Praise." eyebrow="Step 3" icon={Brain} theme={theme}>
-              <p>Why is the effect so dramatic? Because person and process praise engage different neural circuits. Praise is a social reward that triggers <Highlight description="The 'motivation molecule.' It's a neurotransmitter that drives your desire to pursue rewards." theme={theme}>dopamine</Highlight>. Process praise links that dopamine hit to the *action of effort*, effectively gamifying struggle and making you want to do it more. Person praise links dopamine to a *static identity*, making any failure a threat that causes a dopamine crash.</p>
-              <p>Even more powerfully, EEG studies show that when we make a mistake, our brains generate an error signal (the "Pe wave"). In a <Highlight description="The belief that intelligence is a fixed trait. People with this mindset see failure as a verdict on their innate ability." theme={theme}>Fixed Mindset</Highlight>, the Pe signal is tiny—the brain literally "looks away" from the mistake to protect its ego. In a <Highlight description="The belief that intelligence can be grown. People with this mindset see failure as an opportunity to learn and improve." theme={theme}>Growth Mindset</Highlight>, the Pe signal is huge—the brain allocates massive attentional resources to the error, desperate to learn from it.</p>
+              <p>Why does one sentence make such a big difference? Because the two types of praise light up different parts of your brain. When you get praised, your brain releases <Highlight description="A chemical in your brain that makes you feel good and want to do something again. It's basically your brain's reward signal." theme={theme}>dopamine</Highlight> — the feel-good chemical. Process praise connects that feeling to *the work you put in*, so your brain starts craving effort. Person praise connects it to *who you are*, so any failure feels like a personal attack and your motivation crashes.</p>
+              <p>It goes even deeper than that. When we make a mistake, our brains produce an error signal (called the "Pe wave"). With a <Highlight description="Thinking your intelligence is set in stone. If you believe this, every failure feels like proof you're just not good enough." theme={theme}>Fixed Mindset</Highlight>, that signal is tiny — your brain basically flinches away from the mistake to protect your ego. With a <Highlight description="Thinking your intelligence can grow with effort. If you believe this, failure is just information — a chance to figure out what went wrong and do better." theme={theme}>Growth Mindset</Highlight>, the signal is massive — your brain locks onto the mistake and tries to learn from it.</p>
               <ErrorSignalVisualizer />
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="The Real World Data." eyebrow="Step 4" icon={User} theme={theme}>
-              <p>This isn't just a lab finding. A landmark longitudinal study tracked families from when their children were toddlers until they were in 4th class. It found that the *percentage* of process praise parents used (which was, on average, a tiny 18%) directly predicted whether their child would have a growth mindset five years later. More process praise led to a stronger growth mindset, which in turn led to higher achievement in Maths and English.</p>
-              <p>The study also uncovered a stark gender gap. From as young as 14 months, boys tended to receive significantly more process praise ("You built that tower so high!"), while girls were more likely to be praised for their traits ("You're such a good girl"). This early linguistic conditioning provides a powerful explanation for why high-achieving girls can be more vulnerable to developing a fixed mindset later on.</p>
+              <p>This isn't just something that works in a lab. A long-term study followed families from when their kids were toddlers all the way through primary school. It found that the amount of process praise parents used (on average, just 18% of all praise) predicted whether their child would develop a growth mindset five years later. More process praise meant a stronger growth mindset, which led to better results in Maths and English.</p>
+              <p>The study also found a big gender gap. From as young as 14 months, boys tended to get more process praise ("You built that tower so high!"), while girls were more likely to hear trait-based praise ("You're such a good girl"). This difference in how boys and girls are talked to from a very young age helps explain why high-achieving girls can sometimes be more likely to develop a fixed mindset later on.</p>
             </ReadingSection>
           )}
           {activeSection === 4 && (
             <ReadingSection title="The 'Effort' Trap." eyebrow="Step 5" icon={AlertTriangle} theme={theme}>
-                <p>As these ideas became popular, a "False Growth Mindset" began to emerge. The most common error is equating a growth mindset with simply praising effort. Imagine a student fails a test after studying hard, and the teacher says, "Don't worry, you tried your best!" This is <Highlight description="Praise for effort that is disconnected from outcome. It's often used as a consolation prize and can signal that a person has reached the limit of their ability." theme={theme}>Consolation Praise</Highlight>, and it's toxic. It sends the message: "Your best isn't good enough, and there's nothing more you can do."</p>
-                <p>Effective process praise must be strategic. It links effort to *outcome* and *strategy*. A better response would be: "I can see you worked hard, but the study method you used didn't work. Let's look at your mistakes and find a new strategy." Effort is a vector, not a scalar; it must be pointed in the right direction.</p>
+                <p>As these ideas got popular, people started getting them wrong. The biggest mistake is thinking that a growth mindset just means praising effort. Imagine you fail a test after studying hard, and someone says, "Don't worry, you tried your best!" This is <Highlight description="When someone praises your effort but doesn't help you figure out what went wrong. It sounds kind, but it basically says 'you gave it everything and it still wasn't enough' — which is actually pretty discouraging." theme={theme}>Consolation Praise</Highlight>, and it actually does more harm than good. It sends the message: "Your best isn't good enough, and there's nothing more you can do."</p>
+                <p>Good process praise connects effort to *what worked* and *what didn't*. A better response would be: "I can see you worked hard, but the study method you used didn't click. Let's look at your mistakes and try a different approach." Effort on its own isn't enough — it has to be pointed in the right direction.</p>
             </ReadingSection>
           )}
            {activeSection === 5 && (
             <ReadingSection title="The Feedback Audit." eyebrow="Step 6" icon={Settings} theme={theme}>
-              <p>To install a Growth Mindset OS, you need to become a detective of the feedback in your environment—from teachers, family, and especially your own self-talk. The "Feedback Audit" is a tool to measure your current reality. For one day, listen for praise and categorise it. Is it Person, Process, or just Outcome-based ("Good job")?</p>
+              <p>Now that you know the difference, start paying attention to the feedback around you — from teachers, family, and especially how you talk to yourself. The "Feedback Audit" is simple: for one day, just notice the praise you hear and sort it. Is it Person Praise, Process Praise, or just vague outcome stuff ("Good job")?</p>
               <MicroCommitment theme={theme}>
                 <p>Tonight, when you're reviewing your day, think of one piece of feedback you received (from yourself or others). Was it Person or Process praise? Just noticing is the first step.</p>
               </MicroCommitment>

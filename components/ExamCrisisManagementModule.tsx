@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Cpu, Zap, Shield, Moon, Utensils, ClipboardList, Flag, Brain } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { skyTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = skyTheme;
@@ -25,12 +25,12 @@ const CognitionShiftVisualizer = () => {
     const amygPct = Math.max(5, Math.round((stress / 100) * 100));
 
     const stages = [
-        { min: 0, max: 15, label: 'Calm', desc: 'Low arousal. Relaxed but unfocused — not enough adrenaline to perform.', color: '#60a5fa' },
-        { min: 15, max: 35, label: 'Focused', desc: 'Mild stress sharpens attention. PFC is fully online and working memory is strong.', color: '#34d399' },
-        { min: 35, max: 55, label: 'Optimal', desc: 'Peak performance zone. The right amount of adrenaline — alert, fast, accurate.', color: '#10b981' },
-        { min: 55, max: 72, label: 'Anxious', desc: 'Stress is tipping. Working memory starts to narrow. You re-read questions without absorbing them.', color: '#f59e0b' },
-        { min: 72, max: 88, label: 'Panic', desc: 'Amygdala hijack in progress. Heart racing, shallow breathing. PFC is losing control.', color: '#f97316' },
-        { min: 88, max: 101, label: 'Going Blank', desc: 'Full shutdown. You stare at the page and nothing comes. The PFC has gone offline.', color: '#ef4444' },
+        { min: 0, max: 15, label: 'Calm', desc: 'Too relaxed. You\'re chilled out but not switched on — not enough energy to perform.', color: '#60a5fa' },
+        { min: 15, max: 35, label: 'Focused', desc: 'A bit of stress is sharpening you up. Your thinking brain is fully in charge and your memory is working well.', color: '#34d399' },
+        { min: 35, max: 55, label: 'Optimal', desc: 'The sweet spot. Just the right amount of adrenaline — you\'re alert, fast, and accurate.', color: '#10b981' },
+        { min: 55, max: 72, label: 'Anxious', desc: 'Stress is tipping over. Your focus is narrowing. You re-read questions without taking them in.', color: '#f59e0b' },
+        { min: 72, max: 88, label: 'Panic', desc: 'Your alarm brain is taking over. Heart racing, shallow breathing. Your thinking brain is losing control.', color: '#f97316' },
+        { min: 88, max: 101, label: 'Going Blank', desc: 'Full shutdown. You stare at the page and nothing comes. Your thinking brain has gone offline.', color: '#ef4444' },
     ];
     const stage = stages.find(s => stress >= s.min && stress < s.max) || stages[stages.length - 1];
 
@@ -111,7 +111,7 @@ const CognitionShiftVisualizer = () => {
                 <text x={toX(1)} y={toY(0) + 14} fontSize="8" fill="#a1a1aa" textAnchor="middle" fontWeight="600">Extreme</text>
                 {/* Axis titles */}
                 <text x={padL - 4} y={toY(0.5) - 14} fontSize="8" fill="#71717a" textAnchor="end" fontWeight="700" transform={`rotate(-90, ${padL - 16}, ${toY(0.5)})`}>Performance</text>
-                <text x={toX(0.5)} y={toY(0) + 28} fontSize="8" fill="#71717a" textAnchor="middle" fontWeight="700">Stress / Arousal</text>
+                <text x={toX(0.5)} y={toY(0) + 28} fontSize="8" fill="#71717a" textAnchor="middle" fontWeight="700">Stress Level</text>
             </svg>
 
             {/* Slider */}
@@ -139,7 +139,7 @@ const CognitionShiftVisualizer = () => {
             <div className="grid grid-cols-2 gap-3 mt-4">
                 <div className="p-3 rounded-lg bg-zinc-50 dark:bg-zinc-700/50">
                     <div className="flex items-center justify-between mb-1.5">
-                        <span className="text-xs font-bold text-blue-600 dark:text-blue-400 flex items-center gap-1"><Brain size={12} /> PFC (Cold)</span>
+                        <span className="text-xs font-bold text-blue-600 dark:text-blue-400 flex items-center gap-1"><Brain size={12} /> Thinking Brain</span>
                         <span className="text-xs font-bold text-zinc-500">{pfcPct}%</span>
                     </div>
                     <div className="w-full h-2 bg-zinc-200 dark:bg-zinc-600 rounded-full">
@@ -149,7 +149,7 @@ const CognitionShiftVisualizer = () => {
                 </div>
                 <div className="p-3 rounded-lg bg-zinc-50 dark:bg-zinc-700/50">
                     <div className="flex items-center justify-between mb-1.5">
-                        <span className="text-xs font-bold text-rose-600 dark:text-rose-400 flex items-center gap-1"><Zap size={12} /> Amygdala (Hot)</span>
+                        <span className="text-xs font-bold text-rose-600 dark:text-rose-400 flex items-center gap-1"><Zap size={12} /> Alarm Brain</span>
                         <span className="text-xs font-bold text-zinc-500">{amygPct}%</span>
                     </div>
                     <div className="w-full h-2 bg-zinc-200 dark:bg-zinc-600 rounded-full">
@@ -320,20 +320,20 @@ const crisisScenarios: CrisisScenario[] = [
             {
                 text: "Panic \u2014 read it again and again hoping it changes",
                 quality: 'bad',
-                consequence: "PFC goes offline. Amygdala takes over. You spiral.",
-                explanation: "Cortisol floods your system. Your working memory shrinks. You can\u2019t think clearly about Q2\u2013Q6 either.",
+                consequence: "Thinking brain shuts down. Alarm brain takes over. You spiral.",
+                explanation: "Stress hormones flood your system. Your ability to think shrinks. You can\u2019t focus on Q2\u2013Q6 either.",
             },
             {
                 text: "Skip it and move on immediately",
                 quality: 'ok',
                 consequence: "Partial recovery. Anxiety lingers.",
-                explanation: "Smart tactically, but you haven\u2019t calmed your nervous system. The anxiety follows you to Q2.",
+                explanation: "Smart tactically, but you haven\u2019t calmed your body down. The anxiety follows you to Q2.",
             },
             {
-                text: "Close your eyes. Take one physiological sigh. Then skip to your strongest question.",
+                text: "Close your eyes. Take one deep double-breath. Then skip to your strongest question.",
                 quality: 'good',
-                consequence: "PFC stays online. You stay in control.",
-                explanation: "The sigh activates your vagus nerve, lowering cortisol in seconds. Starting with a strong question builds momentum. You can return to Q1 later with a clear head.",
+                consequence: "Thinking brain stays online. You stay in control.",
+                explanation: "The breathing technique calms your nervous system in seconds. Starting with a strong question builds momentum. You can return to Q1 later with a clear head.",
             },
         ],
     },
@@ -343,19 +343,19 @@ const crisisScenarios: CrisisScenario[] = [
             {
                 text: "Scribble it all out and start over in a frenzy",
                 quality: 'bad',
-                consequence: "PFC goes offline. Amygdala takes over. You spiral.",
+                consequence: "Thinking brain shuts down. Alarm brain takes over. You spiral.",
                 explanation: "Panic wastes 5+ minutes. Your handwriting deteriorates. The examiner sees chaos.",
             },
             {
                 text: "Keep going with the wrong answer \u2014 at least it\u2019s something",
                 quality: 'bad',
-                consequence: "PFC goes offline. Amygdala takes over. You spiral.",
+                consequence: "Thinking brain shuts down. Alarm brain takes over. You spiral.",
                 explanation: "You\u2019ll score near zero for relevance. The marking scheme rewards answering the actual question, not volume.",
             },
             {
                 text: "Draw a single line through it. Take a breath. Start the correct answer on the next page.",
                 quality: 'good',
-                consequence: "PFC stays online. You stay in control.",
+                consequence: "Thinking brain stays online. You stay in control.",
                 explanation: "A single line is neat and acceptable. You preserve time, composure, and the examiner\u2019s goodwill. Partial marks on the correct question beat full marks on the wrong one.",
             },
         ],
@@ -366,20 +366,20 @@ const crisisScenarios: CrisisScenario[] = [
             {
                 text: "Stare at the page harder until it comes back",
                 quality: 'bad',
-                consequence: "PFC goes offline. Amygdala takes over. You spiral.",
-                explanation: "This is retrieval-induced suppression. The harder you force it, the more blocked it becomes. Your amygdala interprets the blank as threat.",
+                consequence: "Thinking brain shuts down. Alarm brain takes over. You spiral.",
+                explanation: "The harder you force it, the more blocked it becomes. Your brain interprets the blank as a threat and locks up even more.",
             },
             {
                 text: "Write anything vaguely related and hope for the best",
                 quality: 'ok',
                 consequence: "Partial recovery. Anxiety lingers.",
-                explanation: "You might stumble onto a retrieval cue, but unstructured writing rarely scores well.",
+                explanation: "You might accidentally jog your memory, but unstructured writing rarely scores well.",
             },
             {
                 text: "Write the topic title. List 3 related keywords. Sketch a quick mind map in the margin.",
                 quality: 'good',
-                consequence: "PFC stays online. You stay in control.",
-                explanation: "External cues bypass the retrieval block. Writing related concepts creates spreading activation \u2014 the memory network lights up and the answer surfaces.",
+                consequence: "Thinking brain stays online. You stay in control.",
+                explanation: "Writing things down gives your brain something to latch onto. Related words trigger connected memories \u2014 it\u2019s like opening one drawer that leads to another, and the answer surfaces.",
             },
         ],
     },
@@ -389,8 +389,8 @@ const crisisScenarios: CrisisScenario[] = [
             {
                 text: "Pick one question and write a perfect answer, skip the other",
                 quality: 'bad',
-                consequence: "PFC goes offline. Amygdala takes over. You spiral.",
-                explanation: "Leaving a full question blank means zero marks. Diminishing returns mean your 8th paragraph on Q5 is worth less than a first paragraph on Q6.",
+                consequence: "Thinking brain shuts down. Alarm brain takes over. You spiral.",
+                explanation: "Leaving a full question blank means zero marks. Your 8th paragraph on Q5 is worth way less than a first paragraph on Q6.",
             },
             {
                 text: "Rush through both as fast as possible",
@@ -401,8 +401,8 @@ const crisisScenarios: CrisisScenario[] = [
             {
                 text: "Split the time: 10 minutes each. Write a clear introduction + 3 bullet-point arguments for each.",
                 quality: 'good',
-                consequence: "PFC stays online. You stay in control.",
-                explanation: "Structured bullet points with key terms score nearly as well as prose. The examiner can award marks for every valid point. Two partial answers beat one complete plus one blank.",
+                consequence: "Thinking brain stays online. You stay in control.",
+                explanation: "Structured bullet points with key terms score nearly as well as full paragraphs. The examiner can award marks for every valid point. Two partial answers beat one complete plus one blank.",
             },
         ],
     },
@@ -967,21 +967,21 @@ const WRAPBuilder = () => {
 // --- MODULE COMPONENT ---
 const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'anatomy-of-blank', title: 'The Anatomy of "Going Blank"', eyebrow: '01 // Hot vs. Cold Cognition', icon: Cpu },
-    { id: 'blank-mind-protocol', title: 'The "Blank Mind" Protocol', eyebrow: '02 // Physiological Interventions', icon: Zap },
-    { id: 'social-containment', title: 'Social Containment', eyebrow: '03 // The Post-Mortem Ban', icon: Shield },
-    { id: 'cognitive-athlete-sleep', title: 'The Cognitive Athlete: Sleep', eyebrow: '04 // Sleep Architecture', icon: Moon },
-    { id: 'cognitive-athlete-nutrition', title: 'The Cognitive Athlete: Nutrition', eyebrow: '05 // Bio-Optimization', icon: Utensils },
-    { id: 'crisis-planning', title: 'Crisis Planning: The WRAP', eyebrow: '06 // The Pre-Planned Protocol', icon: ClipboardList },
-    { id: 'implementation', title: 'The 7-Day Taper', eyebrow: '07 // The Implementation Guide', icon: Flag },
+    { id: 'anatomy-of-blank', title: 'Why You "Go Blank"', eyebrow: '01 // Stress vs. Your Brain', icon: Cpu },
+    { id: 'blank-mind-protocol', title: 'The "Blank Mind" Fix', eyebrow: '02 // Body-Based Fixes', icon: Zap },
+    { id: 'social-containment', title: 'Protect Your Head After Exams', eyebrow: '03 // The Post-Exam Trap', icon: Shield },
+    { id: 'cognitive-athlete-sleep', title: 'Sleep: Your Secret Weapon', eyebrow: '04 // Sleep for Exams', icon: Moon },
+    { id: 'cognitive-athlete-nutrition', title: 'Food and Focus', eyebrow: '05 // Eating for Exam Day', icon: Utensils },
+    { id: 'crisis-planning', title: 'Your Personal Crisis Plan', eyebrow: '06 // Plan Before Panic Hits', icon: ClipboardList },
+    { id: 'implementation', title: 'The 7-Day Countdown', eyebrow: '07 // Your Final Week Plan', icon: Flag },
   ];
 
   return (
     <ModuleLayout
       moduleNumber="05"
       moduleTitle="Exam Crisis Management"
-      moduleSubtitle="The Cognitive Athlete's Playbook"
-      moduleDescription={`Learn the neurobiology of exam stress and master the physiological protocols to maintain mental stamina and overcome the "Blank Mind" phenomenon.`}
+      moduleSubtitle="Your Exam Survival Guide"
+      moduleDescription={`Understand why your brain freezes under pressure and learn practical techniques to stay calm, think clearly, and bounce back when things go wrong in an exam.`}
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -991,51 +991,54 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
       {(activeSection) => (
         <>
           {activeSection === 0 && (
-            <ReadingSection title="Anatomy of 'Going Blank'." eyebrow="Step 1" icon={Cpu} theme={theme}>
-              <p>Going "blank" in an exam isn't you being stupid or unprepared. It's a physiological crisis. It's a neurochemical event where your brain's alarm system hijacks its command centre. To beat it, you need to understand the two states your brain operates in: <Highlight description="Your calm, logical state. Your Prefrontal Cortex (PFC) is in charge, allowing for clear thinking and easy memory retrieval." theme={theme}>Cold Cognition</Highlight> and <Highlight description="Your stressed, survival state. Your Amygdala (threat detector) takes over, shutting down the PFC and blocking access to memory." theme={theme}>Hot Cognition</Highlight>.</p>
-              <p>When you see a question you don't know, your brain can perceive it as a threat. This triggers an <Highlight description="The moment your emotional Amygdala hijacks your rational Prefrontal Cortex, flooding your system with stress hormones like cortisol and cutting the 'phone lines' to your memory." theme={theme}>Amygdala Hijack</Highlight>, switching you from "cold" to "hot" cognition. Your memory isn't gone; the connection is just temporarily offline. This isn't a knowledge problem; it's a hardware problem.</p>
+            <ReadingSection title="Why You 'Go Blank'." eyebrow="Step 1" icon={Cpu} theme={theme}>
+              <p>Going "blank" in an exam isn't you being stupid or unprepared. It's a physical stress response. Your brain's alarm system hijacks its thinking centre. To beat it, you need to understand the two modes your brain works in: <Highlight description="Your calm, clear-headed mode. The thinking part of your brain is in charge, so you can reason things out and pull information from memory easily." theme={theme}>Cold Cognition</Highlight> and <Highlight description="Your stressed, panicky mode. The alarm part of your brain takes over, shutting down clear thinking and blocking your access to memories you definitely have." theme={theme}>Hot Cognition</Highlight>.</p>
+              <p>When you see a question you don't know, your brain can treat it as a threat. This triggers a <Highlight description="When your alarm brain hijacks your thinking brain. Stress hormones flood your system and cut the connection to your memory. You know the stuff -- you just can't reach it." theme={theme}>brain hijack</Highlight>, switching you from "cold" to "hot" mode. Your memory isn't gone; the connection is just temporarily cut off. This isn't a knowledge problem; it's a wiring problem.</p>
+              <PersonalStory name="Roisin" role="6th Year, Limerick">
+                <p>In my mocks, I opened the History paper and my mind just went completely white. I'd studied for weeks but I couldn't remember a single date. I sat there for about ten minutes just staring. Afterwards I was in bits -- I thought there was something wrong with me. Turns out it's just what stress does to your brain. Once I learned that, it stopped scaring me so much. In the real exam, the same thing started to happen, but this time I knew what it was and I had a plan.</p>
+              </PersonalStory>
               <CognitionShiftVisualizer />
               <CrisisScenarioTrainer />
             </ReadingSection>
           )}
            {activeSection === 1 && (
-            <ReadingSection title="The 'Blank Mind' Protocol." eyebrow="Step 2" icon={Zap} theme={theme}>
-                <p>Since the problem is physiological, the solution must be physiological. You can't "think" your way out of a panic because the thinking part of your brain is offline. You need to use your body to send a "safety" signal to your brain. This is called <Highlight description="Using bodily sensations and actions (like breathing) to influence your mental and emotional state, rather than trying to think your way calm." theme={theme}>bottom-up processing</Highlight>.</p>
-                <p>The fastest way to do this is the <Highlight description="An emergency breathing technique (two inhales, one long exhale) that re-inflates collapsed air sacs in your lungs, rapidly offloading CO2 and forcing your nervous system to calm down." theme={theme}>Physiological Sigh</Highlight>. It's your "hard reset" button. Once the initial chemical flood is stopped, you re-engage your PFC with a <Highlight description="The 5-4-3-2-1 technique of naming things you can see, feel, hear, smell, and taste. It forces your brain to process external sensory data, pulling it out of the internal panic loop." theme={theme}>Sensory Grounding</Highlight> exercise. Finally, you restart your cognitive engine with an <Highlight description="Deliberately finding the easiest possible question on the paper to answer. This micro-success triggers a small release of dopamine, which helps clear the cortisol 'fog' from your PFC." theme={theme}>'Easy Win'</Highlight>.</p>
+            <ReadingSection title="The 'Blank Mind' Fix." eyebrow="Step 2" icon={Zap} theme={theme}>
+                <p>Since the problem is physical, the fix has to be physical too. You can't "think" your way out of a panic because the thinking part of your brain is offline. You need to use your body to send a "you're safe" signal to your brain. The idea is simple: <Highlight description="Using your body (like your breathing) to calm your mind, instead of trying to think your way out of panic. Your body can reset your brain faster than your thoughts can." theme={theme}>calm the body first, and the mind follows</Highlight>.</p>
+                <p>The fastest way to do this is the <Highlight description="A quick breathing trick: two short inhales through your nose, then one long exhale through your mouth. It forces your nervous system to calm down in seconds. Think of it as a hard reset button." theme={theme}>Physiological Sigh</Highlight>. It's your "hard reset" button. Once the panic wave passes, you bring your thinking brain back online with a <Highlight description="The 5-4-3-2-1 trick: name 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, and 1 you can taste. It pulls your brain out of the panic loop and back into the real world." theme={theme}>Sensory Grounding</Highlight> exercise. Finally, you get your brain moving again with an <Highlight description="Find the easiest question on the paper and answer it first. That small success gives your brain a confidence boost and helps clear the stress fog so you can tackle the harder stuff." theme={theme}>'Easy Win'</Highlight>.</p>
                 <PhysiologicalSighGuide/>
             </ReadingSection>
           )}
           {activeSection === 2 && (
-            <ReadingSection title="Social Containment." eyebrow="Step 3" icon={Shield} theme={theme}>
-              <p>The crisis doesn't end when you put your pen down. The minutes after an exam are a minefield of <Highlight description="The contagious spread of anxiety through a peer group, often triggered by post-exam 'post-mortems.'" theme={theme}>Anxiety Contagion</Highlight>. Discussing answers with stressed-out friends is one of the worst things you can do. It elevates your cortisol levels, preventing the physiological recovery you need for the next exam.</p>
-              <p>This urge to compare answers is driven by a powerful psychological force called the <Highlight description="A psychological desire for a firm answer to a question and an aversion to ambiguity. The uncertainty of an exam result creates a cognitive 'open loop' that the brain desperately wants to close." theme={theme}>Need for Cognitive Closure (NFC)</Highlight>. You have to train the discipline to leave that loop open. This requires a strict <Highlight description="A personal rule to immediately exit the exam hall and avoid all discussion of the exam until the entire exam period is over." theme={theme}>"Post-Mortem Ban"</Highlight>. This isn't anti-social; it's a professional strategy to manage your mental stamina.</p>
+            <ReadingSection title="Protect Your Head After Exams." eyebrow="Step 3" icon={Shield} theme={theme}>
+              <p>The crisis doesn't end when you put your pen down. The minutes after an exam are a minefield of <Highlight description="When other people's stress rubs off on you. Standing around after an exam while everyone panics about answers is one of the fastest ways to wreck your head before the next paper." theme={theme}>catching other people's anxiety</Highlight>. Discussing answers with stressed-out friends is one of the worst things you can do. It keeps your stress levels high and stops you recovering for the next exam.</p>
+              <p>That urge to compare answers? It's driven by your brain's <Highlight description="Your brain hates not knowing. After an exam, the uncertainty is torture -- so your brain desperately wants to compare answers to close the loop. But doing that almost always makes you feel worse, not better." theme={theme}>desperation for answers</Highlight>. You have to train yourself to sit with the uncertainty. This means having a strict <Highlight description="A personal rule: walk out of the exam hall and don't discuss the paper with anyone until the entire exam period is over. Put your headphones in, text a mate about something else, just get away from the chat." theme={theme}>"Post-Exam Ban"</Highlight> on discussing the paper. This isn't anti-social; it's protecting your energy for the next exam.</p>
             </ReadingSection>
           )}
            {activeSection === 3 && (
-            <ReadingSection title="The Cognitive Athlete: Sleep." eyebrow="Step 4" icon={Moon} theme={theme}>
-              <p>You must treat the weeks before the Leaving Cert like a championship season. You are a <Highlight description="A model that treats academic performance like an athletic event, focusing on physiological optimization (sleep, nutrition) to maximize cognitive output." theme={theme}>Cognitive Athlete</Highlight>, and your brain is your primary muscle. Sleep is your most important training tool.</p>
-              <p>In the week before exams, you should engage in <Highlight description="The strategy of extending sleep duration in the days leading up to a period of sleep restriction to build a 'cognitive reserve' and mitigate the negative effects." theme={theme}>Sleep Banking</Highlight>--getting an extra hour of sleep per night. This builds a cognitive reserve that has been proven to protect against the effects of later sleep loss. During sleep, your brain also activates the <Highlight description="The brain's unique cleaning system, where cerebrospinal fluid flushes out metabolic waste products like adenosine that accumulate during waking hours and cause 'brain fog.'" theme={theme}>Glymphatic System</Highlight>, clearing out the toxins that impair focus.</p>
+            <ReadingSection title="Sleep: Your Secret Weapon." eyebrow="Step 4" icon={Moon} theme={theme}>
+              <p>Think of the weeks before the Leaving Cert like a championship season. Your brain is the muscle that matters most right now. And sleep is the single best thing you can do for it.</p>
+              <p>In the week before exams, try <Highlight description="Getting an extra hour of sleep per night in the days before exams. It builds up a reserve so that if you sleep badly the night before a paper, you've got a buffer and your brain still works well." theme={theme}>sleep banking</Highlight> -- getting an extra hour of sleep per night. This builds a reserve that protects you if you sleep badly the night before a paper. While you sleep, your brain also runs its own <Highlight description="While you sleep, your brain literally flushes out the waste that builds up during the day -- the stuff that causes brain fog and makes it hard to concentrate. Pulling an all-nighter means skipping this clean-up." theme={theme}>cleaning cycle</Highlight>, flushing out the waste that causes brain fog. Pulling an all-nighter means skipping that clean-up entirely.</p>
             </ReadingSection>
           )}
           {activeSection === 4 && (
-            <ReadingSection title="The Cognitive Athlete: Nutrition." eyebrow="Step 5" icon={Utensils} theme={theme}>
-              <p>Your brain runs on glucose, but it needs a steady supply, not a sugar rush. High <Highlight description="Foods that are rapidly digested, causing a quick spike and then a crash in blood sugar levels (e.g., sugary snacks, white bread)." theme={theme}>Glycemic Index (GI)</Highlight> foods cause a "crash" that coincides with the middle of an exam. Your pre-exam meal should be low-GI complex carbs and protein 3 hours before.</p>
-              <p>To maximize your alertness on the day, you can use caffeine strategically. <Highlight description="The process of gradually reducing caffeine intake in the 7-10 days before an exam to re-sensitize your brain's adenosine receptors." theme={theme}>Caffeine Tapering</Highlight> means a normal cup of coffee on exam day will have a much more powerful effect. Pairing it with L-Theanine (found in tea) can create "calm focus" without the jitters.</p>
+            <ReadingSection title="Food and Focus." eyebrow="Step 5" icon={Utensils} theme={theme}>
+              <p>Your brain runs on sugar from food, but it needs a steady supply, not a sugar rush. <Highlight description="Foods like sweets, white bread, and energy drinks that give you a quick spike of energy followed by a crash. That crash will hit you right in the middle of your exam." theme={theme}>Quick-burn foods</Highlight> (sweets, white bread, energy drinks) cause a crash that will hit you right in the middle of your exam. Your pre-exam meal should be slow-release stuff -- porridge, wholegrain toast, eggs -- about 3 hours before.</p>
+              <p>You can also use caffeine smartly. <Highlight description="Cutting back on coffee and energy drinks in the week before exams so that when you have a normal cup on exam morning, it actually hits properly instead of barely making a difference." theme={theme}>Caffeine tapering</Highlight> means cutting back on coffee and energy drinks in the week before exams. Then a normal cup on exam morning will actually wake you up properly. If tea is more your thing, even better -- it has a natural ingredient that gives you calm focus without the jitters.</p>
             </ReadingSection>
           )}
           {activeSection === 5 && (
-            <ReadingSection title="Crisis Planning: The WRAP." eyebrow="Step 6" icon={ClipboardList} theme={theme}>
-              <p>Elite performers don't just react to crises; they plan for them. The <Highlight description="The Wellness Recovery Action Plan is a structured system for identifying your personal triggers and creating a pre-planned response to a crisis." theme={theme}>WRAP Framework</Highlight> is a tool for doing just that. It moves you from a state of panic to executing a pre-planned protocol.</p>
-              <p>Your Academic WRAP has four parts. <strong>1. Daily Maintenance:</strong> What do you need to do every day to stay well? <strong>2. Triggers:</strong> What external events throw you off? <strong>3. Early Warning Signs:</strong> What are your internal signals of rising stress? <strong>4. Crisis Plan:</strong> Your "Break Glass" protocol for a full-blown panic attack. By writing this down *before* the crisis, you outsource the decision-making to your calm, rational self.</p>
+            <ReadingSection title="Your Personal Crisis Plan." eyebrow="Step 6" icon={ClipboardList} theme={theme}>
+              <p>The best time to make a plan for a crisis is before the crisis happens. The <Highlight description="A Wellness Recovery Action Plan. Basically, you write down what keeps you well, what stresses you out, and what you'll do if things go really wrong -- all while you're calm and thinking clearly." theme={theme}>WRAP</Highlight> is a tool for doing exactly that. Instead of panicking and making it up as you go, you follow a plan your calm self already wrote.</p>
+              <p>Your WRAP has four parts. <strong>1. Daily Maintenance:</strong> What do you need to do every day to stay well? <strong>2. Triggers:</strong> What external events throw you off? <strong>3. Early Warning Signs:</strong> What are the first signs you're heading toward a bad place? <strong>4. Crisis Plan:</strong> Your "break glass" instructions for when things get really bad. By writing this down now, while you're calm, you don't have to make decisions when you're panicking.</p>
               <WRAPBuilder />
             </ReadingSection>
           )}
           {activeSection === 6 && (
-            <ReadingSection title="The 7-Day Taper." eyebrow="Step 7" icon={Flag} theme={theme}>
-              <p>This is where it all comes together. The final week before the exams is your "Taper." Just like an athlete, you reduce the training load to allow your body and mind to recover and peak at the right moment. This is not the time for cramming.</p>
-              <p>Your 7-day taper should include: <strong>Caffeine Resensitization</strong> (T-7 days), <strong>Circadian Entrainment</strong> (T-5 days, waking up at exam time), and <strong>Nutritional Priming</strong> (T-3 days, shifting to low-GI foods and hyper-hydrating). The day before the exam, you stop all heavy study. You are no longer building knowledge; you are preparing the machine that will deploy it.</p>
+            <ReadingSection title="The 7-Day Countdown." eyebrow="Step 7" icon={Flag} theme={theme}>
+              <p>This is where it all comes together. The final week before the exams is your countdown. Just like an athlete before a final, you ease off to let your body and mind recover and peak at the right moment. This is not the time for cramming.</p>
+              <p>Your 7-day countdown should include: <strong>Cut back on caffeine</strong> (7 days out), <strong>Fix your sleep schedule</strong> (5 days out -- start waking up at exam time), and <strong>Switch to steady-energy food</strong> (3 days out -- porridge, pasta, plenty of water). The day before the exam, stop all heavy study. You're not building knowledge any more; you're getting your brain ready to use what it already knows.</p>
               <MicroCommitment theme={theme}>
-                <p>Take out your calendar. Find the date one week before your first exam. Create an event called "Begin 7-Day Taper." You've just taken the first step to becoming a Cognitive Athlete.</p>
+                <p>Take out your phone. Find the date one week before your first exam. Set a reminder called "Start 7-Day Countdown." That's it -- you've just taken the first step.</p>
               </MicroCommitment>
             </ReadingSection>
           )}

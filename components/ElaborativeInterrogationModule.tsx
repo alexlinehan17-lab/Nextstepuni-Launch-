@@ -221,8 +221,8 @@ const WhyChainBuilder = () => {
               transition={{ delay: 0.3 }}
               className="mt-6 p-6 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-700 text-center space-y-3"
             >
-              <p className="font-serif text-lg font-semibold text-emerald-800 dark:text-emerald-300">You've built a 4-level deep understanding.</p>
-              <p className="text-sm text-emerald-700 dark:text-emerald-400">Each "Why?" created a new connection in your long-term memory. This is why elaboration beats rote learning.</p>
+              <p className="font-serif text-lg font-semibold text-emerald-800 dark:text-emerald-300">Nice one — you've gone 4 levels deep.</p>
+              <p className="text-sm text-emerald-700 dark:text-emerald-400">Each "Why?" created a new connection in your memory. That's why this technique beats just reading your notes over and over.</p>
               <button
                 onClick={handleStartOver}
                 className="mt-3 px-5 py-2 rounded-full bg-zinc-800 dark:bg-zinc-200 text-white dark:text-zinc-800 text-sm font-semibold hover:opacity-80 transition-opacity"
@@ -240,55 +240,55 @@ const WhyChainBuilder = () => {
 // --- MODULE COMPONENT ---
 const ElaborativeInterrogationModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'why-engine', title: 'The "Why" Engine', eyebrow: '01 // The Mechanism', icon: HelpCircle },
-    { id: 'rules-of-road', title: 'The Rules of the Road', eyebrow: '02 // The Constraints', icon: BatteryWarning },
+    { id: 'why-engine', title: 'The "Why" Engine', eyebrow: '01 // How It Works', icon: HelpCircle },
+    { id: 'rules-of-road', title: 'The Rules of the Road', eyebrow: '02 // When It Works Best', icon: BatteryWarning },
     { id: 'stem-toolkit', title: 'The STEM Toolkit', eyebrow: '03 // Science & Maths', icon: Cpu },
     { id: 'humanities-engine', title: 'The Humanities Engine', eyebrow: '04 // Essays & Arguments', icon: BookCopy },
     { id: 'language-edge', title: 'The Language Edge', eyebrow: '05 // Gaeilge & Beyond', icon: Link },
-    { id: 'study-protocol', title: 'The EI Study Protocol', eyebrow: '06 // The Action Plan', icon: Wrench },
+    { id: 'study-protocol', title: 'Your Study Plan', eyebrow: '06 // The Action Plan', icon: Wrench },
   ];
 
   return (
-    <ModuleLayout moduleNumber="05" moduleTitle="Elaborative Interrogation" moduleSubtitle={`The "Why" Method`} moduleDescription="Move beyond rote learning by mastering the art of asking &quot;Why?&quot;. This module teaches you how to transform shallow facts into deep, interconnected knowledge for the new Leaving Cert." theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
+    <ModuleLayout moduleNumber="05" moduleTitle="Elaborative Interrogation" moduleSubtitle={`The "Why" Method`} moduleDescription="Stop just memorising facts and start actually understanding them by asking one simple question: &quot;Why?&quot;. This module shows you how to make what you study stick — and mean something — for the Leaving Cert." theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
       {(activeSection) => (
         <>
           {activeSection === 0 && (
             <ReadingSection title="The 'Why' Engine." eyebrow="Step 1" icon={HelpCircle} theme={theme}>
-              <p>Learning isn't about absorbing facts; it's about actively connecting them. <Highlight description="A powerful study technique that involves generating an explanation for why a fact or concept is true. It forces you to connect new information to your existing knowledge." theme={theme}>Elaborative Interrogation (EI)</Highlight> is a simple but profound technique that turns you from a passive reader into an active detective. The core of EI is asking one simple question: "Why is this true?"</p>
-              <p>When you ask "Why?", you force your brain to search its long-term memory for related information, creating a rich network of connections. This transforms an isolated, easy-to-forget fact into part of a memorable story.</p>
-              <p>This was powerfully demonstrated in the famous "hungry man" study. One group of students read a simple sentence like "The hungry man got into the car." A second group was told to ask "Why?". This second group inferred a reason ("...to go to a restaurant"), creating a richer memory. On a surprise test later, the "Why?" group's recall was almost double that of the passive readers (72% vs 37%).</p>
+              <p>Learning isn't about absorbing facts — it's about actively connecting them. <Highlight description="A study trick where you come up with an explanation for why something is true. Instead of just reading a fact, you ask 'Why?' and link it to stuff you already know." theme={theme}>Elaborative Interrogation (EI)</Highlight> is a simple but powerful technique that turns you from a passive reader into an active detective. The core of it is asking one simple question: "Why is this true?"</p>
+              <p>When you ask "Why?", you force your brain to dig through what it already knows and find connections. This turns a random, easy-to-forget fact into part of a bigger picture that actually sticks.</p>
+              <p>Here's a great example. One group of students read a simple sentence like "The hungry man got into the car." A second group was told to ask "Why?" after reading it. This second group came up with a reason ("...to go to a restaurant"), which gave their brains more to hold onto. On a surprise test later, the "Why?" group remembered almost double what the passive readers did (72% vs 37%).</p>
               <HungryManExperiment/>
             </ReadingSection>
           )}
            {activeSection === 1 && (
             <ReadingSection title="The Rules of the Road." eyebrow="Step 2" icon={BatteryWarning} theme={theme}>
-              <p>EI is a high-performance tool, but it has two critical operating constraints. First is the <Highlight description="The counterintuitive finding that EI is most effective when you already have some background knowledge. It's for deepening understanding, not for learning something from scratch." theme={theme}>Prior Knowledge Paradox</Highlight>. If you ask "Why?" about a topic you know nothing about, you'll just invent wrong answers. EI is a consolidation tool, not a first-contact tool.</p>
-              <p>Second, EI is mentally exhausting. It requires slow, effortful <Highlight description="A term from psychologist Daniel Kahneman for slow, deliberate, and analytical thinking. It's powerful but consumes a lot of mental energy." theme={theme}>System 2 thinking</Highlight>. Doing it when you're tired can lead to a state of <Highlight description="The idea that self-control and cognitive resources are finite. When you're depleted, your ability to perform effortful mental tasks (like EI) diminishes significantly." theme={theme}>Ego Depletion</Highlight>, making the strategy less effective. Use it during your high-energy study periods.</p>
+              <p>The "Why?" method is powerful, but it works best under the right conditions. First, there's the <Highlight description="Asking 'Why?' works best when you already know a bit about the topic. If you know nothing, you'll just guess — and probably guess wrong. Use it to go deeper, not to learn something brand new." theme={theme}>Prior Knowledge Paradox</Highlight>. If you ask "Why?" about a topic you know nothing about, you'll just make up wrong answers. This technique is for going deeper on stuff you've already started learning, not for meeting a topic for the first time.</p>
+              <p>Second, asking "Why?" is mentally tiring. It takes real <Highlight description="The slow, careful kind of thinking where you really have to concentrate. It's the opposite of autopilot — powerful, but it drains your energy fast." theme={theme}>focused thinking</Highlight>. If you try to do it when you're wrecked, your brain runs out of steam — a bit like <Highlight description="When your brain is running on empty. After a long day, you have less mental energy left for hard thinking, so save this technique for when you're fresh." theme={theme}>hitting a wall</Highlight> — and the whole thing becomes less effective. Save it for your best study hours, when you actually have energy.</p>
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="The STEM Toolkit." eyebrow="Step 3" icon={Cpu} theme={theme}>
-              <p>For STEM subjects, EI is your secret weapon against rote learning. In Biology, it helps you bridge the gap between understanding a concept and knowing the specific keywords the marking scheme demands. Asking "Why is the cell membrane semi-permeable?" forces you to retrieve the key ideas of phospholipids and proteins.</p>
-              <p>In Maths, EI is brilliant for <Highlight description="Understanding the 'why' behind a mathematical rule or formula, rather than just memorizing the 'how'." theme={theme}>conceptual understanding</Highlight>. Asking "Why does the integral of a velocity-time graph give distance?" cements the core idea. However, it's inefficient for <Highlight description="The ability to perform mathematical procedures quickly and accurately. This is built through repetitive practice, not constant questioning." theme={theme}>procedural fluency</Highlight>. Don't stop to ask "why" during every line of a long calculation in an exam; build that fluency through practice beforehand.</p>
+              <p>For STEM subjects, asking "Why?" is your secret weapon against just memorising without understanding. In Biology, it helps you connect what you understand to the specific keywords the marking scheme is looking for. Asking "Why is the cell membrane semi-permeable?" forces you to pull up the key ideas about phospholipids and proteins.</p>
+              <p>In Maths, asking "Why?" is brilliant for <Highlight description="Actually understanding why a formula or rule works, not just knowing how to use it. When you get the 'why', you can figure things out even if you forget the exact steps." theme={theme}>understanding the reasoning</Highlight>. Asking "Why does the integral of a velocity-time graph give distance?" locks in the core idea. However, it's not great for <Highlight description="Being able to do maths steps quickly and accurately without stopping to think about each one. You build this through practice and repetition, not by questioning every step." theme={theme}>speed and accuracy in calculations</Highlight>. Don't stop to ask "why" during every line of a long calculation in an exam — build that speed through practice beforehand.</p>
               <WhyChainBuilder />
             </ReadingSection>
           )}
            {activeSection === 3 && (
             <ReadingSection title="The Humanities Engine." eyebrow="Step 4" icon={BookCopy} theme={theme}>
-                <p>In essay subjects like History, EI is an "analytical engine." It shifts you from just describing what happened (narrative) to explaining *why* it happened (analysis). Instead of just stating "Collins signed the Treaty," you ask "Why did he sign it?" The answer becomes your thesis statement, instantly boosting your marks for argument and evaluation.</p>
-                <p>For Geography, which is built on <Highlight description="Significant Relevant Points (SRPs) are the building blocks of a Geography answer. Each one is a developed piece of factual information worth marks." theme={theme}>SRPs</Highlight>, EI automates the "Statement + Development" structure. Statement: "Earthquakes are common in Japan." EI Prompt: "Why?" Development: "Because Japan is on the convergence of four tectonic plates..." You've just created a perfect, two-mark SRP.</p>
+                <p>In essay subjects like History, asking "Why?" takes you from just describing what happened to explaining *why* it happened — and that's where the real marks are. Instead of just stating "Collins signed the Treaty," you ask "Why did he sign it?" The answer becomes the main argument in your essay, which instantly boosts your marks.</p>
+                <p>For Geography, which is built on <Highlight description="Significant Relevant Points — basically the building blocks of a Geography answer. Each SRP is a developed fact that's worth marks. The more good ones you have, the better your grade." theme={theme}>SRPs</Highlight>, asking "Why?" naturally creates the "Statement + Development" structure your teacher is always on about. Statement: "Earthquakes are common in Japan." Ask "Why?" Development: "Because Japan is on the convergence of four tectonic plates..." You've just created a perfect, two-mark SRP without even thinking about it.</p>
             </ReadingSection>
           )}
            {activeSection === 4 && (
             <ReadingSection title="The Language Edge." eyebrow="Step 5" icon={Link} theme={theme}>
-              <p>For the Irish Oral, rote-learning scripts is a recipe for disaster. The examiner is trained to spot them and will throw you off-script. EI is the key to building a flexible, robust "web of knowledge" around a topic. By recursively asking "Why?" ("Why do you play football?" {'\u2192'} "Because I like the team spirit." {'\u2192'} "Why is team spirit important?"), you build multiple connections.</p>
-              <p>This allows you to pivot naturally during the conversation. If the examiner asks about friends, you can link it back to the friends you made playing football. If they ask about health, you can talk about how football keeps you fit. You're no longer reciting a script; you're navigating a mental map you built yourself.</p>
+              <p>For the Irish Oral, learning scripts off by heart is a recipe for disaster. The examiner is trained to spot them and will deliberately throw you off-script. Asking "Why?" is the key to building a flexible web of ideas around a topic instead. By asking "Why?" over and over ("Why do you play football?" {'\u2192'} "Because I like the team spirit." {'\u2192'} "Why is team spirit important?"), you build loads of connections between your ideas.</p>
+              <p>This means you can go with the flow during the conversation. If the examiner asks about friends, you can link it back to the friends you made playing football. If they ask about health, you can talk about how football keeps you fit. You're no longer stuck reciting a script — you're talking naturally because you've actually thought about the topic from different angles.</p>
             </ReadingSection>
           )}
            {activeSection === 5 && (
-            <ReadingSection title="The EI Study Protocol." eyebrow="Step 6" icon={Wrench} theme={theme}>
-              <p>You have the science. Now, here is the simple, four-step protocol to integrate EI into your study routine.</p>
-              <p><strong>1. The Audit:</strong> Look at your notes and highlight the core facts. <strong>2. The Interrogation:</strong> For each fact, write "Why?" in the margin. <strong>3. The Elaboration:</strong> Answer the question in your own words. <strong>4. The Verification:</strong> Check your answer against the textbook to avoid learning errors. This cycle transforms passive note-taking into an active, memory-building process. One of the most powerful outputs of this is the "Why" flashcard.</p>
+            <ReadingSection title="Your Study Plan." eyebrow="Step 6" icon={Wrench} theme={theme}>
+              <p>You know why it works. Now here's a simple four-step plan to actually use it when you study.</p>
+              <p><strong>1. Highlight the facts:</strong> Look at your notes and highlight the main facts. <strong>2. Ask "Why?":</strong> For each fact, write "Why?" in the margin. <strong>3. Answer it yourself:</strong> Write an explanation in your own words. <strong>4. Check your answer:</strong> Compare it against the textbook to make sure you didn't get it wrong. This turns passive note-reading into something that actually builds your memory. One of the best things to come out of this is the "Why" flashcard.</p>
               <FlashcardFlipper />
               <MicroCommitment theme={theme}>
                 <p>Take one page of your notes from any subject. For the next 5 minutes, go through and simply write a "Why?" question next to every main fact or definition. That's the first step.</p>

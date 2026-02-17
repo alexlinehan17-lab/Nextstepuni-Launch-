@@ -4,11 +4,11 @@
  */
 
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Map, Repeat, Activity, Brain, Wrench } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { purpleTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = purpleTheme;
@@ -108,16 +108,16 @@ const ContextMemoryComparison = () => {
       ))}
       <text x={W / 2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">{label}</text>
       <line x1={W - padR - 120} x2={W - padR - 104} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
-      <text x={W - padR - 100} y={17} fontSize="8" fill="#a1a1aa">Encoding Strength</text>
+      <text x={W - padR - 100} y={17} fontSize="8" fill="#a1a1aa">Learning Strength</text>
       <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="4 2" />
-      <text x={W - padR - 24} y={17} fontSize="8" fill="#a1a1aa">Retrieval</text>
+      <text x={W - padR - 24} y={17} fontSize="8" fill="#a1a1aa">Recall</text>
     </svg>
   );
 
   return (
     <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Context-Dependent Memory</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">What happens to retrieval when the environment changes? Godden & Baddeley (1975).</p>
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">How Your Study Spot Affects Your Memory</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">What happens to your memory when the environment changes?</p>
 
       {!revealed ? (
         <div className="text-center">
@@ -139,11 +139,11 @@ const ContextMemoryComparison = () => {
           <div className="grid md:grid-cols-2 gap-4 text-sm">
             <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
               <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
-              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Same-context recall</strong> works because environmental cues aid retrieval. But exams are in a DIFFERENT context. If your memories depend on your study environment, they become fragile.</p>
+              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Same-place recall</strong> works because familiar surroundings help your brain find what it learned. But exams are in a DIFFERENT place. If your memories depend on your study spot, they become fragile.</p>
             </div>
             <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
               <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
-              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">When the exam hall strips away your study cues</strong>, context-dependent memories become inaccessible. You need context-INDEPENDENT knowledge that works anywhere.</p>
+              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">When the exam hall strips away all your familiar clues</strong>, place-dependent memories become unreachable. You need knowledge that works anywhere, not just in your bedroom.</p>
             </div>
           </div>
         </MotionDiv>
@@ -152,7 +152,148 @@ const ContextMemoryComparison = () => {
   );
 };
 
-// 2. NOISE LEVEL CURVE
+// 2. CONTEXT CUE EXPLORER (Section 1 interactive)
+const STUDY_CUES = [
+  { id: 'music', label: 'Music playing', emoji: '🎵', survivesExam: false },
+  { id: 'desk', label: 'Familiar desk', emoji: '🪑', survivesExam: false },
+  { id: 'coffee', label: 'Coffee / tea', emoji: '☕', survivesExam: false },
+  { id: 'pet', label: 'Pet nearby', emoji: '🐾', survivesExam: false },
+  { id: 'window', label: 'Window view', emoji: '🪟', survivesExam: false },
+  { id: 'lamp', label: 'Desk lamp', emoji: '💡', survivesExam: false },
+  { id: 'silence', label: 'Silence', emoji: '🤫', survivesExam: true },
+  { id: 'clock', label: 'Clock ticking', emoji: '🕐', survivesExam: true },
+  { id: 'people', label: 'Other people', emoji: '👥', survivesExam: true },
+  { id: 'notes', label: 'Written notes', emoji: '📝', survivesExam: false },
+  { id: 'snacks', label: 'Snacks', emoji: '🍫', survivesExam: false },
+  { id: 'hoodie', label: 'Comfy hoodie', emoji: '🧥', survivesExam: true },
+];
+
+const ContextCueExplorer = () => {
+  const [selectedCues, setSelectedCues] = useState<Set<string>>(new Set());
+  const [revealed, setRevealed] = useState(false);
+
+  const toggleCue = (id: string) => {
+    if (revealed) return;
+    setSelectedCues((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  };
+
+  const selectedCount = selectedCues.size;
+  const survivingCount = STUDY_CUES.filter((c) => selectedCues.has(c.id) && c.survivesExam).length;
+  const lostPercent = selectedCount > 0 ? Math.round(((selectedCount - survivingCount) / selectedCount) * 100) : 0;
+
+  return (
+    <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Study Environment Audit</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Pick the things that are around you when you study, then see how many of them will be there in the exam hall.</p>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5 mb-6">
+        {STUDY_CUES.map((cue) => {
+          const isSelected = selectedCues.has(cue.id);
+          return (
+            <button
+              key={cue.id}
+              onClick={() => toggleCue(cue.id)}
+              className={`flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium border transition-all duration-200 text-left ${
+                isSelected
+                  ? 'bg-purple-100 dark:bg-purple-900/40 border-purple-400 dark:border-purple-600 text-purple-700 dark:text-purple-300'
+                  : 'bg-zinc-50 dark:bg-zinc-700/50 border-zinc-200 dark:border-zinc-600 text-zinc-500 dark:text-zinc-400 hover:border-purple-300 dark:hover:border-purple-700'
+              } ${revealed ? 'cursor-default' : 'cursor-pointer'}`}
+            >
+              <span className="text-lg">{cue.emoji}</span>
+              <span>{cue.label}</span>
+            </button>
+          );
+        })}
+      </div>
+
+      {selectedCount > 0 && !revealed && (
+        <div className="text-center">
+          <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-3">{selectedCount} cue{selectedCount !== 1 ? 's' : ''} selected</p>
+          <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-purple-500 text-white hover:bg-purple-600 transition-colors">
+            See the Exam Hall
+          </button>
+        </div>
+      )}
+
+      <AnimatePresence>
+        {revealed && (
+          <MotionDiv initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
+              {/* Study room */}
+              <div className="rounded-lg border border-purple-200 dark:border-purple-900 bg-purple-50/50 dark:bg-purple-950/20 p-4">
+                <p className="text-sm font-bold text-purple-600 dark:text-purple-400 mb-2">Your Study Room — {selectedCount} cues</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {STUDY_CUES.filter((c) => selectedCues.has(c.id)).map((c) => (
+                    <span key={c.id} className="inline-flex items-center gap-1 px-2 py-1 rounded-md text-xs font-medium bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300">
+                      {c.emoji} {c.label}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              {/* Exam hall */}
+              <div className="rounded-lg border border-rose-200 dark:border-rose-900 bg-rose-50/50 dark:bg-rose-950/20 p-4">
+                <p className="text-sm font-bold text-rose-600 dark:text-rose-400 mb-2">The Exam Hall — {survivingCount} cue{survivingCount !== 1 ? 's' : ''} remain</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {STUDY_CUES.filter((c) => selectedCues.has(c.id) && c.survivesExam).map((c) => (
+                    <span key={c.id} className="inline-flex items-center gap-1 px-2 py-1 rounded-md text-xs font-medium bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300">
+                      {c.emoji} {c.label}
+                    </span>
+                  ))}
+                  {survivingCount === 0 && (
+                    <span className="text-xs text-rose-500 dark:text-rose-400 italic">Nothing matches — your brain has zero familiar clues to help you remember</span>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Stacked bar */}
+            <div className="mb-4">
+              <p className="text-xs font-bold text-zinc-500 dark:text-zinc-400 mb-1.5 uppercase tracking-wider">Memory clues that survive</p>
+              <div className="w-full h-7 rounded-full overflow-hidden flex bg-zinc-100 dark:bg-zinc-700">
+                {survivingCount > 0 && (
+                  <MotionDiv
+                    className="h-full bg-emerald-500 flex items-center justify-center"
+                    initial={{ width: 0 }}
+                    animate={{ width: `${100 - lostPercent}%` }}
+                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                  >
+                    <span className="text-[10px] font-bold text-white">{100 - lostPercent}% survive</span>
+                  </MotionDiv>
+                )}
+                <MotionDiv
+                  className="h-full bg-rose-500 flex items-center justify-center"
+                  initial={{ width: 0 }}
+                  animate={{ width: `${lostPercent}%` }}
+                  transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+                >
+                  <span className="text-[10px] font-bold text-white">{lostPercent}% lost</span>
+                </MotionDiv>
+              </div>
+            </div>
+
+            <div className="p-3 rounded-lg bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900">
+              <p className="text-sm text-zinc-600 dark:text-zinc-300">
+                <strong className="text-amber-600 dark:text-amber-400">You lost {lostPercent}% of the clues your brain uses to remember.</strong>{' '}
+                {lostPercent >= 75
+                  ? 'Your memories are tied tightly to your study spot. Studying in different places would help your brain remember without needing those clues.'
+                  : lostPercent >= 50
+                  ? 'More than half your clues disappear in the exam hall. Switching up your study spots would make a big difference.'
+                  : 'Some clues still survive, but mixing up where you study would make your knowledge even stronger.'}
+              </p>
+            </div>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+// 3. NOISE LEVEL CURVE
 const NoiseLevelCurve = () => {
   const [revealed, setRevealed] = useState(false);
 
@@ -206,7 +347,7 @@ const NoiseLevelCurve = () => {
   return (
     <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Noise-Performance Curve</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">The inverted-U relationship between noise level and cognitive performance. Mehta, Zhu & Cheema (2012).</p>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">How noise level affects how well your brain performs.</p>
 
       {!revealed ? (
         <div className="text-center">
@@ -281,11 +422,11 @@ const NoiseLevelCurve = () => {
           <div className="grid md:grid-cols-2 gap-4 mt-4 text-sm">
             <div className="flex items-start gap-2.5 p-3 rounded-lg bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-900">
               <span className="text-blue-500 text-lg mt-0.5">&#x1F3AF;</span>
-              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-blue-600 dark:text-blue-400">Focused tasks</strong> (maths problems, memorisation) perform best in quieter environments. Silence lets you concentrate without processing interference.</p>
+              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-blue-600 dark:text-blue-400">Focused tasks</strong> (maths problems, memorisation) work best in quiet spots. Silence lets you concentrate without your brain getting pulled in other directions.</p>
             </div>
             <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
               <span className="text-emerald-500 text-lg mt-0.5">&#x1F4A1;</span>
-              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Creative tasks</strong> (understanding concepts, making connections) benefit from moderate ambient noise. The slight processing difficulty pushes thinking into broader, more abstract modes.</p>
+              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Creative tasks</strong> (understanding concepts, making connections) benefit from a bit of background noise. The gentle buzz of a cafe nudges your brain into bigger-picture thinking.</p>
             </div>
           </div>
         </MotionDiv>
@@ -295,22 +436,314 @@ const NoiseLevelCurve = () => {
 };
 
 
+// 4. TASK ENVIRONMENT MATCHER (Section 3 interactive)
+const TASK_ITEMS = [
+  { id: 'maths', label: 'Maths past paper', correct: 'quiet' as const, reason: 'Maths needs careful step-by-step focus — noise breaks your concentration when you need it most.' },
+  { id: 'history', label: 'History essay planning', correct: 'moderate' as const, reason: 'Essay planning is creative work — a bit of background noise actually helps you think more broadly.' },
+  { id: 'vocab', label: 'Language vocabulary drill', correct: 'quiet' as const, reason: 'Memorising vocab needs sharp focus — even a little noise makes it harder to lock new words into your memory.' },
+  { id: 'physics', label: 'Physics concept mapping', correct: 'moderate' as const, reason: 'Connecting physics ideas is creative thinking — some background noise nudges your brain into bigger-picture mode.' },
+  { id: 'chem', label: 'Chemistry equation balancing', correct: 'quiet' as const, reason: 'Balancing equations is precise, step-by-step work — noise pulls your attention away from the details.' },
+  { id: 'english', label: 'English literature analysis', correct: 'moderate' as const, reason: 'Analysing literature means making connections between ideas — a bit of noise helps your brain think more creatively.' },
+];
+
+const TaskEnvironmentMatcher = () => {
+  const [answers, setAnswers] = useState<Record<string, 'quiet' | 'moderate'>>({});
+  const [submitted, setSubmitted] = useState(false);
+
+  const allAnswered = TASK_ITEMS.every((t) => answers[t.id]);
+  const score = submitted ? TASK_ITEMS.filter((t) => answers[t.id] === t.correct).length : 0;
+
+  const setAnswer = (id: string, val: 'quiet' | 'moderate') => {
+    if (submitted) return;
+    setAnswers((prev) => ({ ...prev, [id]: val }));
+  };
+
+  return (
+    <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Match the Task to the Environment</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">For each study task, decide: quiet or moderate noise?</p>
+
+      <div className="space-y-3 mb-6">
+        {TASK_ITEMS.map((task) => {
+          const answer = answers[task.id];
+          const isCorrect = submitted && answer === task.correct;
+          const isWrong = submitted && answer !== task.correct;
+          return (
+            <div key={task.id} className={`rounded-lg border p-3 transition-colors ${
+              submitted
+                ? isCorrect
+                  ? 'border-emerald-300 dark:border-emerald-700 bg-emerald-50/50 dark:bg-emerald-950/20'
+                  : 'border-rose-300 dark:border-rose-700 bg-rose-50/50 dark:bg-rose-950/20'
+                : 'border-zinc-200 dark:border-zinc-700 bg-zinc-50/50 dark:bg-zinc-900/30'
+            }`}>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-200 flex-1">{task.label}</p>
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => setAnswer(task.id, 'quiet')}
+                    className={`px-3 py-1.5 rounded-md text-xs font-bold border transition-all ${
+                      answer === 'quiet'
+                        ? 'bg-blue-100 dark:bg-blue-900/50 border-blue-400 dark:border-blue-600 text-blue-700 dark:text-blue-300'
+                        : 'bg-white dark:bg-zinc-700 border-zinc-200 dark:border-zinc-600 text-zinc-500 dark:text-zinc-400 hover:border-blue-300 dark:hover:border-blue-700'
+                    } ${submitted ? 'cursor-default' : 'cursor-pointer'}`}
+                  >
+                    Quiet
+                  </button>
+                  <button
+                    onClick={() => setAnswer(task.id, 'moderate')}
+                    className={`px-3 py-1.5 rounded-md text-xs font-bold border transition-all ${
+                      answer === 'moderate'
+                        ? 'bg-amber-100 dark:bg-amber-900/50 border-amber-400 dark:border-amber-600 text-amber-700 dark:text-amber-300'
+                        : 'bg-white dark:bg-zinc-700 border-zinc-200 dark:border-zinc-600 text-zinc-500 dark:text-zinc-400 hover:border-amber-300 dark:hover:border-amber-700'
+                    } ${submitted ? 'cursor-default' : 'cursor-pointer'}`}
+                  >
+                    Moderate Noise
+                  </button>
+                </div>
+              </div>
+              {submitted && (
+                <MotionDiv initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} transition={{ duration: 0.3 }}>
+                  <div className="mt-2 flex items-start gap-2">
+                    <span className={`text-sm mt-0.5 ${isCorrect ? 'text-emerald-500' : 'text-rose-500'}`}>
+                      {isCorrect ? '✓' : '✗'}
+                    </span>
+                    <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                      <strong className={isCorrect ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}>
+                        {isCorrect ? 'Correct' : `Correct answer: ${task.correct === 'quiet' ? 'Quiet' : 'Moderate Noise'}`}
+                      </strong>{' — '}
+                      {task.reason}
+                    </p>
+                  </div>
+                </MotionDiv>
+              )}
+            </div>
+          );
+        })}
+      </div>
+
+      {!submitted && allAnswered && (
+        <div className="text-center">
+          <button onClick={() => setSubmitted(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-purple-500 text-white hover:bg-purple-600 transition-colors">
+            Check My Answers
+          </button>
+        </div>
+      )}
+
+      <AnimatePresence>
+        {submitted && (
+          <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
+            <div className={`p-4 rounded-lg border text-center ${
+              score >= 5
+                ? 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-200 dark:border-emerald-900'
+                : score >= 3
+                ? 'bg-amber-50 dark:bg-amber-950/30 border-amber-200 dark:border-amber-900'
+                : 'bg-rose-50 dark:bg-rose-950/30 border-rose-200 dark:border-rose-900'
+            }`}>
+              <p className="text-3xl font-bold text-zinc-800 dark:text-white mb-1">{score}/{TASK_ITEMS.length}</p>
+              <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                {score === 6
+                  ? 'Perfect! You understand exactly how to match tasks to environments.'
+                  : score >= 4
+                  ? 'Strong intuition — the key principle is: focused/precise tasks need quiet, creative/conceptual tasks benefit from moderate noise.'
+                  : 'The rule of thumb: if a task needs precise, step-by-step processing, choose quiet. If it involves making connections or creative thinking, moderate noise helps.'}
+              </p>
+            </div>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+// 5. STUDY LOCATION PLANNER (Section 5 interactive)
+const PLANNER_SUBJECTS = ['Biology', 'Maths', 'English', 'History'];
+const PLANNER_DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
+const PLANNER_LOCATIONS = [
+  { id: 'none', label: '—', bgClass: 'bg-zinc-100 dark:bg-zinc-700', textClass: 'text-zinc-400 dark:text-zinc-500' },
+  { id: 'bedroom', label: 'Bedroom', bgClass: 'bg-blue-100 dark:bg-blue-900/50', textClass: 'text-blue-700 dark:text-blue-300' },
+  { id: 'kitchen', label: 'Kitchen', bgClass: 'bg-amber-100 dark:bg-amber-900/50', textClass: 'text-amber-700 dark:text-amber-300' },
+  { id: 'library', label: 'Library', bgClass: 'bg-emerald-100 dark:bg-emerald-900/50', textClass: 'text-emerald-700 dark:text-emerald-300' },
+  { id: 'cafe', label: 'Cafe', bgClass: 'bg-purple-100 dark:bg-purple-900/50', textClass: 'text-purple-700 dark:text-purple-300' },
+  { id: 'school', label: 'School', bgClass: 'bg-rose-100 dark:bg-rose-900/50', textClass: 'text-rose-700 dark:text-rose-300' },
+];
+
+const StudyLocationPlanner = () => {
+  // grid[subjectIndex][dayIndex] = locationIndex (0=none, 1-5=locations)
+  const [grid, setGrid] = useState<number[][]>(
+    PLANNER_SUBJECTS.map(() => PLANNER_DAYS.map(() => 0))
+  );
+  const [scored, setScored] = useState(false);
+
+  const cycleCell = (si: number, di: number) => {
+    if (scored) return;
+    setGrid((prev) => {
+      const next = prev.map((row) => [...row]);
+      next[si][di] = (next[si][di] + 1) % PLANNER_LOCATIONS.length;
+      return next;
+    });
+  };
+
+  const getSubjectScore = (subjectRow: number[]): number => {
+    const usedLocations = new Set(subjectRow.filter((v) => v > 0));
+    const filledDays = subjectRow.filter((v) => v > 0).length;
+    if (filledDays <= 1) return 0;
+    // Score = unique locations / filled days, scaled to 100
+    return Math.round((usedLocations.size / filledDays) * 100);
+  };
+
+  const subjectScores = grid.map(getSubjectScore);
+  const hasAnyFilled = grid.some((row) => row.some((v) => v > 0));
+  const overallScore = Math.round(subjectScores.reduce((a, b) => a + b, 0) / PLANNER_SUBJECTS.length);
+
+  const getVerdict = (score: number): { label: string; colorClass: string } => {
+    if (score >= 80) return { label: 'Great variety (strong)', colorClass: 'text-emerald-600 dark:text-emerald-400' };
+    if (score >= 50) return { label: 'Some variety', colorClass: 'text-amber-600 dark:text-amber-400' };
+    return { label: 'Stuck in one spot (risky)', colorClass: 'text-rose-600 dark:text-rose-400' };
+  };
+
+  // Ring gauge SVG
+  const ringRadius = 40;
+  const ringCircumference = 2 * Math.PI * ringRadius;
+  const ringOffset = ringCircumference - (overallScore / 100) * ringCircumference;
+
+  return (
+    <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Weekly Location Planner</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Click each cell to assign a study location. Mix up your spots across the week so your knowledge works anywhere.</p>
+
+      {/* Planner grid */}
+      <div className="overflow-x-auto mb-6">
+        <table className="w-full border-collapse text-center">
+          <thead>
+            <tr>
+              <th className="p-2 text-xs font-bold text-zinc-400 dark:text-zinc-500 text-left w-24"></th>
+              {PLANNER_DAYS.map((day) => (
+                <th key={day} className="p-2 text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">{day}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {PLANNER_SUBJECTS.map((subject, si) => (
+              <tr key={subject}>
+                <td className="p-2 text-sm font-semibold text-zinc-700 dark:text-zinc-200 text-left">{subject}</td>
+                {PLANNER_DAYS.map((_, di) => {
+                  const loc = PLANNER_LOCATIONS[grid[si][di]];
+                  return (
+                    <td key={di} className="p-1">
+                      <button
+                        onClick={() => cycleCell(si, di)}
+                        className={`w-full py-2 px-1 rounded-md text-[11px] font-bold border border-transparent transition-all duration-150 ${loc.bgClass} ${loc.textClass} ${scored ? 'cursor-default' : 'cursor-pointer hover:scale-105 active:scale-95'}`}
+                      >
+                        {loc.label}
+                      </button>
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Legend */}
+      <div className="flex flex-wrap justify-center gap-2 mb-6">
+        {PLANNER_LOCATIONS.slice(1).map((loc) => (
+          <span key={loc.id} className={`inline-flex items-center px-2 py-1 rounded-md text-[10px] font-bold ${loc.bgClass} ${loc.textClass}`}>
+            {loc.label}
+          </span>
+        ))}
+      </div>
+
+      {hasAnyFilled && !scored && (
+        <div className="text-center">
+          <button onClick={() => setScored(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-purple-500 text-white hover:bg-purple-600 transition-colors">
+            See My Score
+          </button>
+        </div>
+      )}
+
+      <AnimatePresence>
+        {scored && (
+          <MotionDiv initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
+            <div className="flex flex-col items-center mb-6">
+              <svg width="100" height="100" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r={ringRadius} fill="none" stroke="#e4e4e7" className="dark:stroke-zinc-700" strokeWidth="8" />
+                <motion.circle
+                  cx="50" cy="50" r={ringRadius}
+                  fill="none"
+                  stroke={overallScore >= 60 ? '#10b981' : overallScore >= 30 ? '#f59e0b' : '#ef4444'}
+                  strokeWidth="8"
+                  strokeLinecap="round"
+                  strokeDasharray={ringCircumference}
+                  strokeDashoffset={ringCircumference}
+                  animate={{ strokeDashoffset: ringOffset }}
+                  transition={{ duration: 1, ease: 'easeOut' }}
+                  transform="rotate(-90 50 50)"
+                />
+                <text x="50" y="46" textAnchor="middle" fontSize="18" fontWeight="bold" fill="currentColor" className="text-zinc-800 dark:text-white">{overallScore}</text>
+                <text x="50" y="60" textAnchor="middle" fontSize="9" fill="#a1a1aa">/ 100</text>
+              </svg>
+              <p className="text-sm font-bold text-zinc-700 dark:text-zinc-200 mt-2">Location Variety Score</p>
+            </div>
+
+            <div className="space-y-2">
+              {PLANNER_SUBJECTS.map((subject, si) => {
+                const s = subjectScores[si];
+                const v = getVerdict(s);
+                const filledDays = grid[si].filter((val) => val > 0).length;
+                return (
+                  <div key={subject} className="flex items-center gap-3 p-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-700">
+                    <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-200 w-20">{subject}</span>
+                    <div className="flex-1 h-2 rounded-full bg-zinc-200 dark:bg-zinc-700 overflow-hidden">
+                      <MotionDiv
+                        className={`h-full rounded-full ${s >= 80 ? 'bg-emerald-500' : s >= 50 ? 'bg-amber-500' : 'bg-rose-500'}`}
+                        initial={{ width: 0 }}
+                        animate={{ width: `${s}%` }}
+                        transition={{ duration: 0.6, ease: 'easeOut' }}
+                      />
+                    </div>
+                    <span className="text-xs font-bold w-8 text-right text-zinc-500 dark:text-zinc-400">{s}%</span>
+                    <span className={`text-xs font-bold w-44 text-right ${v.colorClass}`}>
+                      {filledDays === 0 ? 'No sessions planned' : v.label}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className="mt-4 p-3 rounded-lg bg-purple-50 dark:bg-purple-950/30 border border-purple-200 dark:border-purple-900">
+              <p className="text-sm text-zinc-600 dark:text-zinc-300">
+                {overallScore >= 70
+                  ? <><strong className="text-emerald-600 dark:text-emerald-400">Excellent variety!</strong> Your study plan means your knowledge will work anywhere, including the exam hall.</>
+                  : overallScore >= 40
+                  ? <><strong className="text-amber-600 dark:text-amber-400">Good start, but more variety would help.</strong> Try adding a second or third spot for each subject so your memories are not tied to one place.</>
+                  : <><strong className="text-rose-600 dark:text-rose-400">Your knowledge is stuck in one spot.</strong> Each subject should be studied in at least 2 different places across the week so you can remember it anywhere.</>
+                }
+              </p>
+            </div>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
 // --- MODULE COMPONENT ---
 const TheContextEffectModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'context-dependent-memory', title: 'Context-Dependent Memory', eyebrow: '01 // The Discovery', icon: Map },
-    { id: 'variation-advantage', title: 'The Variation Advantage', eyebrow: '02 // The Counterintuitive Fix', icon: Repeat },
-    { id: 'noise-question', title: 'The Noise Question', eyebrow: '03 // The Optimal Signal', icon: Activity },
-    { id: 'encoding-variability', title: 'Encoding Variability', eyebrow: '04 // The Science', icon: Brain },
-    { id: 'designing-environments', title: 'Designing Your Environments', eyebrow: '05 // The Protocol', icon: Wrench },
+    { id: 'context-dependent-memory', title: 'Why You Blank in the Exam Hall', eyebrow: '01 // The Problem', icon: Map },
+    { id: 'variation-advantage', title: "The 'Switch It Up' Fix", eyebrow: '02 // The Solution', icon: Repeat },
+    { id: 'noise-question', title: 'Does Noise Help or Hurt?', eyebrow: '03 // The Noise Question', icon: Activity },
+    { id: 'encoding-variability', title: 'Why Switching Spots Works', eyebrow: '04 // How It Works', icon: Brain },
+    { id: 'designing-environments', title: 'Setting Up Your Study Rotation', eyebrow: '05 // Your Game Plan', icon: Wrench },
   ];
 
   return (
     <ModuleLayout
       moduleNumber="49"
       moduleTitle="The Context Effect"
-      moduleSubtitle="The Environmental Encoding Guide"
-      moduleDescription="Where you study changes what you remember. Learn why studying in multiple places beats one 'perfect' spot — and how to design environments that enhance your brain's encoding."
+      moduleSubtitle="Where You Study Matters"
+      moduleDescription="Where you study changes what you remember. Learn why switching study spots beats sticking to one 'perfect' place."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -320,42 +753,48 @@ const TheContextEffectModule: React.FC<{ onBack: () => void; progress: ModulePro
       {(activeSection) => (
         <>
           {activeSection === 0 && (
-            <ReadingSection title="Context-Dependent Memory." eyebrow="Step 1" icon={Map} theme={theme}>
-              <p><Highlight description="Duncan Godden and Alan Baddeley conducted this experiment at the University of Stirling in 1975. Divers learned lists of 40 words either on dry land or 20 feet underwater. They were then tested in either the same or a different environment. The results demonstrated one of the most striking examples of context-dependent memory ever recorded." theme={theme}>Godden & Baddeley (1975)</Highlight> conducted one of psychology's most famous experiments. Divers learned word lists either underwater or on land, then were tested in either the same or different environment. Those tested in the same environment they learned in recalled approximately 40% more. Your brain doesn't just encode the information — it encodes the entire context: the room, the lighting, the sounds, even the smell.</p>
-              <p>These <Highlight description="Environmental details — sounds, smells, lighting, temperature, even your posture — that become associated with the information you're learning. Your brain uses these details as retrieval pathways, like bookmarks that help it find the right memory. The more cues available at retrieval that match those present at encoding, the easier the recall." theme={theme}>contextual cues</Highlight> become retrieval pathways. This is Context-Dependent Memory, and it explains why you can remember something perfectly in your bedroom but draw a blank in the exam hall. The exam hall is stripped of every environmental cue your brain associated with that knowledge.</p>
-              <p>The implications for students are profound. If you only ever study in one place, your memories become <Highlight description="When a memory is strongly associated with a specific context, it can only be reliably retrieved in that context. The knowledge exists in your brain, but without the right environmental cues to trigger retrieval, it feels inaccessible. This is not a failure of storage — it's a failure of retrieval." theme={theme}>context-bound</Highlight> — deeply tied to that specific environment. They feel solid and accessible in your bedroom. But move to an unfamiliar exam hall with fluorescent lights and rows of desks, and those same memories can suddenly feel unreachable. The knowledge is still there; your brain just can't find the path to it without its usual signposts.</p>
+            <ReadingSection title="Why You Blank in the Exam Hall." eyebrow="Step 1" icon={Map} theme={theme}>
+              <p>In one of psychology's most famous experiments, divers learned word lists either underwater or on dry land, then were tested in either the same or a different environment. The result? Those tested in the <Highlight description="The place where you study — the room, the sounds, the lighting — all get tangled up with what you learn. Your brain links the info to the surroundings, so the same surroundings help you remember." theme={theme}>same environment</Highlight> they learned in recalled about 40% more. Your brain doesn't just store the information — it stores the whole scene around you: the room, the lighting, the sounds, even the smell.</p>
+              <PersonalStory name="Aoife" role="5th Year, Cork">
+                <p>I used to do all my study in my bedroom with music on. I felt like I knew everything. Then I'd sit down in the exam hall and my mind would just go blank. I couldn't understand it — I'd studied for hours. It was like my brain left everything back in my room.</p>
+              </PersonalStory>
+              <p>These <Highlight description="Things in your surroundings — background noise, the feel of your chair, the lighting, even your posture — that get linked to what you're learning. Your brain uses them like bookmarks to find the right memory later." theme={theme}>study environment clues</Highlight> become the paths your brain uses to find what it learned. This is why you can remember something perfectly in your bedroom but draw a complete blank in the exam hall. The exam hall has stripped away every familiar clue your brain was relying on.</p>
+              <p>If you only ever study in one place, your memories become <Highlight description="When a memory is strongly linked to one specific place, you can only pull it back reliably in that place. The knowledge is still in your brain, but without the right surroundings your brain can't find it. It's not that you didn't learn it — your brain just lost the path to it." theme={theme}>stuck to that spot</Highlight> — deeply tied to that specific environment. They feel solid and easy to access in your bedroom. But move to an unfamiliar exam hall with fluorescent lights and rows of desks, and those same memories can suddenly feel unreachable. The knowledge is still there; your brain just can't find the path to it without its usual signposts.</p>
               <ContextMemoryComparison />
+              <ContextCueExplorer />
             </ReadingSection>
           )}
           {activeSection === 1 && (
-            <ReadingSection title="The Variation Advantage." eyebrow="Step 2" icon={Repeat} theme={theme}>
-              <p><Highlight description="Steven Smith, Arthur Glenberg, and Robert Bjork (University of Michigan) demonstrated that students who studied the same material in two different rooms recalled approximately 40% more words on a free-recall test than students who studied twice in the same room. This was one of the first experimental demonstrations that environmental variation could enhance memory." theme={theme}>Smith, Glenberg & Bjork (1978)</Highlight> found the solution: students who studied the same material in two different rooms recalled approximately 40% more than those who studied in the same room twice. This seems to contradict context-dependent memory, but it doesn't — it transcends it.</p>
-              <p>When you study in multiple environments, your brain can't rely on any single context as a cue, so it creates <Highlight description="Memory traces that are not bound to any particular environment. Instead of relying on contextual cues for retrieval, context-independent memories are associated with the content itself — the meaning, the structure, the relationships between ideas. This makes the knowledge portable, accessible in any setting including unfamiliar exam halls." theme={theme}>context-INDEPENDENT memory traces</Highlight>. The knowledge becomes portable — accessible anywhere, including the unfamiliar exam hall. Instead of encoding "this fact + my bedroom lamp + the sound of rain," your brain encodes "this fact + multiple diverse associations," creating a web of retrieval routes that doesn't depend on any single environment.</p>
-              <p><Highlight description="Robert Bjork and Andrew Richardson-Klavehn formalised this principle in their 1989 chapter on retrieval processes in memory. They argued that varying the conditions of encoding increases the number of retrieval cues associated with a memory, making it more accessible across a wider range of contexts. This became known as Encoding Variability Theory." theme={theme}>Bjork & Richardson-Klavehn (1989)</Highlight> explained this through Encoding Variability Theory: varied contexts create multiple retrieval routes to the same information. Each new environment adds a different set of associations — the hum of a cafe, the silence of a library, the kitchen radio in the background. When exam day arrives and none of those specific cues are present, it doesn't matter. Your brain has so many alternative pathways that at least some will activate, making the memory retrievable even in a completely novel setting.</p>
+            <ReadingSection title="The 'Switch It Up' Fix." eyebrow="Step 2" icon={Repeat} theme={theme}>
+              <p>Researchers found something surprising: students who studied the same material in <Highlight description="When you study the same thing in two different places, your brain can't rely on any single room to help it remember. So it stores the information in a way that works anywhere." theme={theme}>two different rooms</Highlight> recalled about 40% more than those who studied in the same room twice. This seems to go against what we just learned about your brain linking memories to places — but it actually goes one step further.</p>
+              <p>When you study in multiple places, your brain can't rely on any single place as a clue, so it creates <Highlight description="Memories that aren't tied to any one place. Instead of needing your bedroom lamp or the sound of rain to remember, your brain connects the info to the ideas themselves. That makes the knowledge portable — it works anywhere, including the exam hall." theme={theme}>location-proof memories</Highlight>. The knowledge becomes portable — it works anywhere, including an unfamiliar exam hall. Instead of storing "this fact + my bedroom lamp + the sound of rain," your brain stores "this fact + lots of different connections," creating a web of memory paths that doesn't depend on any single place.</p>
+              <p>This is sometimes called the <Highlight description="When you study the same thing in different places, each place adds a new set of connections to that memory. More connections means more ways your brain can find the information later, even in a totally new setting like an exam hall." theme={theme}>variety advantage</Highlight>: different study spots create multiple paths to the same information. Each new place adds a different set of connections — the hum of a cafe, the silence of a library, the kitchen radio in the background. When exam day arrives and none of those specific clues are around, it doesn't matter. Your brain has so many alternative paths that some of them will activate, letting you remember even in a completely new setting.</p>
             </ReadingSection>
           )}
           {activeSection === 2 && (
-            <ReadingSection title="The Noise Question." eyebrow="Step 3" icon={Activity} theme={theme}>
-              <p><Highlight description="Ravi Mehta (University of Illinois), Rui Zhu (University of British Columbia), and Amar Cheema (University of Virginia) published this finding in the Journal of Consumer Research (2012). They ran five experiments showing that moderate ambient noise (~70 dB) enhanced performance on creative tasks by inducing a higher level of construal — broader, more abstract processing — compared to both low noise (~50 dB) and high noise (~85 dB)." theme={theme}>Mehta, Zhu & Cheema (2012)</Highlight> published a surprising finding in the Journal of Consumer Research: moderate ambient noise (~70 decibels, roughly equivalent to a busy cafe) enhanced creative thinking compared to both silence and loud noise. The mechanism: moderate noise creates just enough processing difficulty — a form of <Highlight description="Robert Bjork's concept of desirable difficulties describes conditions that make learning feel harder during encoding but lead to stronger long-term retention. Moderate noise acts as a mild desirable difficulty by slightly disrupting focused processing, which paradoxically pushes the brain into broader, more abstract thinking patterns that benefit creative and conceptual tasks." theme={theme}>desirable difficulty</Highlight> — to push thinking from focused, analytical mode into broader, more abstract processing.</p>
-              <p>However, <Highlight description="James Szalma and Peter Hancock (University of Central Florida) conducted a comprehensive meta-analysis published in Psychological Bulletin (2011) covering decades of research on noise effects on performance. They found that noise consistently impaired performance on tasks requiring sustained attention, vigilance, and focused concentration, while the effects on simpler or more creative tasks were mixed or sometimes positive." theme={theme}>Szalma & Hancock's (2011) meta-analysis</Highlight> showed that for tasks requiring focused concentration — like mathematical problem-solving or detailed memorisation — quiet environments are superior. Noise interferes with the precise, sequential processing these tasks demand. The practical rule emerges clearly: use moderate noise for understanding and connecting ideas, use silence for memorisation and practice problems.</p>
-              <p>This means your study environment should match your task. Reading a history chapter to understand the narrative arc? A cafe might actually enhance your processing. Drilling past paper questions in maths or memorising vocabulary? You need silence. The environment isn't just a backdrop — it's an active ingredient in your cognitive processing. Designing your study sessions around this principle means deliberately choosing where you work based on what you're working on.</p>
+            <ReadingSection title="Does Noise Help or Hurt?" eyebrow="Step 3" icon={Activity} theme={theme}>
+              <p>Here's a surprising finding: moderate background noise (about the level of a busy cafe) actually <Highlight description="A bit of background buzz — like in a cafe — gives your brain just enough of a challenge to push it into bigger-picture thinking. It's not so loud that it distracts you, but it's enough to stop you from getting too narrowly focused." theme={theme}>boosts creative thinking</Highlight> compared to both total silence and loud noise. A bit of background buzz creates just enough of a challenge — a kind of <Highlight description="Sometimes making studying feel a little harder actually helps you learn better in the long run. A small amount of background noise is one example — it slightly disrupts your focus, which pushes your brain into a broader way of thinking that helps with creative tasks." theme={theme}>helpful challenge</Highlight> — to push your thinking from narrow, step-by-step mode into bigger-picture mode.</p>
+              <p>However, decades of research have shown that for tasks needing focused concentration — like maths problem-solving or detailed memorisation — <Highlight description="Research across many studies found that noise consistently hurts performance on tasks that need careful, focused attention. But for creative or big-picture tasks, a moderate amount of noise can sometimes help." theme={theme}>quiet is better</Highlight>. Noise gets in the way of the careful, step-by-step thinking these tasks need. The practical rule is simple: use moderate noise for understanding and connecting ideas, use silence for memorisation and practice problems.</p>
+              <p>This means your study environment should match your task. Reading a history chapter to understand the big picture? A cafe might actually help your thinking. Drilling past paper questions in maths or memorising vocabulary? You need silence. The environment isn't just a backdrop — it's an active ingredient in how well your brain works. Planning your study sessions around this means deliberately choosing where you work based on what you're working on.</p>
               <NoiseLevelCurve />
+              <TaskEnvironmentMatcher />
             </ReadingSection>
           )}
           {activeSection === 3 && (
-            <ReadingSection title="Encoding Variability." eyebrow="Step 4" icon={Brain} theme={theme}>
-              <p><Highlight description="In their 1989 chapter 'Retrieval Processes in Human Memory,' Bjork and Richardson-Klavehn formalised the theoretical framework: each study episode creates a unique memory trace that includes both the target information and the contextual features present during encoding. When the same material is studied in different contexts, multiple distinct traces are created, each with different contextual associations." theme={theme}>Bjork & Richardson-Klavehn (1989)</Highlight> formalised Encoding Variability Theory: every time you study the same material in a different context, you create a new set of associations. Each context adds different retrieval cues. The more diverse the cues, the more routes your brain has to access the memory. Think of it like building roads to a city — one road is vulnerable to a single blocked bridge, but five roads from different directions means you can always find a way through.</p>
-              <p>This is why studying the same flashcards on the bus, in your bedroom, and in the library creates stronger memories than studying them three times in the same spot. Each location wraps the information in a different contextual package. The bus adds the rumble of the engine and the movement. Your bedroom adds the familiar sounds of home. The library adds the particular quality of silence and the presence of other students. Each version of the memory is slightly different, and those differences create <Highlight description="The concept that memories are not stored as single, isolated traces but as overlapping networks of associations. Each study episode in a different context creates a new node in this network, with connections to both the target information and the unique contextual features. More nodes and connections mean more potential retrieval pathways, creating redundancy that protects against forgetting." theme={theme}>redundant retrieval pathways</Highlight>.</p>
-              <p><Highlight description="Steven Smith and Edward Vela (Texas A&M University) conducted a meta-analysis published in Memory & Cognition (2001) examining all available studies on environmental context-dependent memory. They confirmed that environmental variation during encoding reliably improves free recall. The effect size was modest (d ≈ 0.25) but consistent, and importantly, it stacked additively with other evidence-based techniques like spacing and interleaving." theme={theme}>Smith & Vela's (2001) meta-analysis</Highlight> confirmed: environmental variation during encoding improves free recall. The effect is modest but reliable, and it stacks with other techniques like spacing and interleaving. This is key — context variation isn't a replacement for other effective study strategies; it's a multiplier. When you combine varied environments with spaced retrieval practice and interleaved topics, the compound effect on long-term retention is substantially greater than any single technique alone.</p>
+            <ReadingSection title="Why Switching Spots Works." eyebrow="Step 4" icon={Brain} theme={theme}>
+              <p>Here's the science behind it: every time you study the same material in a different place, you create a <Highlight description="Each time you study in a new spot, your brain wraps the information in different surroundings — the sounds, the feel of the chair, the lighting. Each version gives your brain a different path to find that memory later." theme={theme}>new set of connections</Highlight>. Each place adds different clues. The more varied those clues are, the more routes your brain has to find the memory. Think of it like building roads to a city — one road is vulnerable to a single blocked bridge, but five roads from different directions means you can always find a way through.</p>
+              <p>This is why studying the same flashcards on the bus, in your bedroom, and in the library creates stronger memories than studying them three times in the same spot. Each location wraps the information in a different package. The bus adds the rumble of the engine and the movement. Your bedroom adds the familiar sounds of home. The library adds the particular quality of silence and the presence of other students. Each version of the memory is slightly different, and those differences create <Highlight description="Your brain doesn't store memories in just one place — it builds a web of connections. Each time you study in a new spot, you add another thread to that web. More threads means more ways to pull the memory back, so even if one path is blocked, others still work." theme={theme}>backup paths to the same information</Highlight>.</p>
+              <p>Research has confirmed that studying in different places reliably <Highlight description="Studies show this effect is real and consistent. It's not huge on its own, but it stacks on top of other good study habits like spaced repetition and mixing topics. Together, they make a much bigger difference." theme={theme}>improves how well you remember</Highlight>. The effect is not massive on its own, but it stacks with other good habits like spaced repetition and mixing topics. This is key — switching study spots is not a replacement for other good study strategies; it's a booster. When you combine varied locations with regular self-testing and mixed topics, the combined effect on long-term memory is much bigger than any single trick alone.</p>
             </ReadingSection>
           )}
           {activeSection === 4 && (
-            <ReadingSection title="Designing Your Environments." eyebrow="Step 5" icon={Wrench} theme={theme}>
-              <p>The research converges on a clear protocol. First: <Highlight description="The locations don't need to be exotic or specially designed. Research shows that even modest differences in environment — a different room in your house, a different seat in the library, a cafe versus your kitchen — are sufficient to create distinct contextual encoding. The key is genuine perceptual difference, not the quality of the space." theme={theme}>identify 2-3 study locations</Highlight> you can rotate between. They don't need to be fancy, just genuinely different — bedroom, kitchen table, library, cafe. The perceptual differences between these spaces are what create the distinct contextual traces your brain needs.</p>
-              <p>Second: study the same subject in at least two different locations across the week. This is the critical application of Encoding Variability Theory. Don't reserve the library for one subject and your bedroom for another — that just creates new context dependencies. Instead, study Biology in your bedroom on Monday and in the library on Wednesday. The same content, different contexts, multiple retrieval pathways. Third: <Highlight description="Mehta et al. (2012) demonstrated that the optimal noise level depends on the cognitive demands of the task. Creative and conceptual tasks benefit from moderate ambient noise (~70 dB), while focused analytical tasks perform best in quiet conditions (~50 dB). Planning your environment around your task type optimises both encoding and processing." theme={theme}>match noise level to task</Highlight> — quiet for practice problems and memorisation, moderate ambient for reading and understanding.</p>
-              <p>Fourth — and this is perhaps the most powerful technique: <Highlight description="Grant et al. (1998, Memory & Cognition) demonstrated that students who practised retrieval under conditions that matched the test environment showed significantly better transfer to the actual exam. By periodically studying in silence at a desk with a timer, you train your brain to retrieve under the exact conditions that matter most — recreating the sensory experience of the exam hall." theme={theme}>simulate exam conditions</Highlight> periodically. Study in silence at a desk with a timer, recreating the exam hall environment. This trains your brain to retrieve under the conditions that matter most. Grant et al. (1998) showed that students who practised retrieval in a novel environment showed better transfer to the actual exam setting. By deliberately practising in exam-like conditions, you're building retrieval pathways that will activate precisely when you need them.</p>
+            <ReadingSection title="Setting Up Your Study Rotation." eyebrow="Step 5" icon={Wrench} theme={theme}>
+              <p>The research points to a simple game plan. First: <Highlight description="Your study spots don't need to be fancy or special. Even small differences — a different room in your house, a different seat in the library, a cafe versus your kitchen — are enough. The key is that each place feels genuinely different." theme={theme}>pick 2-3 study spots</Highlight> you can rotate between. They don't need to be fancy, just genuinely different — bedroom, kitchen table, library, cafe. The differences between these spaces are what give your brain the variety it needs.</p>
+              <p>Second: study the same subject in at least two different spots across the week. Don't save the library for one subject and your bedroom for another — that just ties each subject to a new single place. Instead, study Biology in your bedroom on Monday and in the library on Wednesday. Same content, different places, more paths to the memory. Third: <Highlight description="The best noise level depends on what you're doing. Creative and big-picture tasks work better with a bit of background noise, while focused tasks like maths problems and memorisation work best in quiet." theme={theme}>match your noise level to your task</Highlight> — quiet for practice problems and memorisation, a bit of background noise for reading and understanding.</p>
+              <p>Fourth — and this might be the most powerful technique: <Highlight description="Research showed that students who practised remembering things in conditions similar to the exam did better in the actual exam. Sitting at a quiet desk with a timer recreates the feel of the exam hall, which trains your brain to work well in that setting." theme={theme}>practise in exam-like conditions</Highlight> every now and then. Sit at a quiet desk with a timer, recreating the exam hall as closely as you can. This trains your brain to pull back information under the conditions that actually matter. Research showed that students who practised remembering things in a new, unfamiliar setting did better in the real exam. By deliberately practising in exam-like conditions, you're building memory paths that will kick in exactly when you need them.</p>
+              <StudyLocationPlanner />
               <MicroCommitment theme={theme}>
-                <p>This week, take one subject you'd normally study in the same spot and split it across two different locations. Study the same material in your bedroom on Tuesday and in the school library or kitchen on Thursday. Notice how retrieving the same content in a different setting feels harder — that extra effort is building context-independent memory that will be accessible anywhere, including the exam hall.</p>
+                <p>This week, take one subject you'd normally study in the same spot and split it across two different locations. Study the same material in your bedroom on Tuesday and in the school library or kitchen on Thursday. Notice how remembering the same content in a different setting feels harder — that extra effort is what builds memories that work anywhere, including the exam hall.</p>
               </MicroCommitment>
             </ReadingSection>
           )}

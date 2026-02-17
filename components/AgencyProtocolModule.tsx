@@ -110,7 +110,6 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
   const { responses, saveResponse, isLoaded } = useModuleResponses('agency-protocol');
   const [futureSelf, setFutureSelf] = useState('');
   const [dailyAction, setDailyAction] = useState('');
-  const [reframe, setReframe] = useState(false);
   const [battlePlanItems, setBattlePlanItems] = useState([
     { id: 'goal', text: 'Program Your Destination (Goal)' },
     { id: 'advantage', text: 'Know Your Engine (Advantage)' },
@@ -140,8 +139,8 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
     <ModuleLayout
       moduleNumber="01"
       moduleTitle="The Driver's Manual"
-      moduleSubtitle="The Driver's Manual"
-      moduleDescription="Synthesising research on motivation and identity, this module provides the blueprint for becoming the &quot;Origin&quot; of your academic success."
+      moduleSubtitle="Taking the Wheel of Your Education"
+      moduleDescription="Learn how to stop being a passenger in your own school life and start driving toward the future you actually want."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -154,7 +153,7 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
           {activeSection === 0 && (
             <ReadingSection title="Setting the Sat-Nav: Your Future is Calling." eyebrow="Step 1" icon={Target} theme={theme}>
               <p>Without a destination programmed into the Sat-Nav, you're just driving aimlessly. The same is true for school. You might know you want to go to college, but that's a vague spot on a map. To get there, you need a clear route, and that starts by connecting today's homework to tomorrow's destination.</p>
-              <p>The science is clear: linking your daily study to a future career you want makes you far more likely to do the work. The solution is to stop seeing schoolwork as a chore and start seeing it as an <Highlight description="The scientifically-proven idea that every piece of study you do now is a direct deposit into your future self's bank account. This isn't just a nice thought; it's a powerful motivational tool." theme={theme}>Investment</Highlight> in your <Highlight description="A vivid, personal picture of who you want to become. Psychologists have shown this is a key tool for driving motivation, as it makes future rewards feel more immediate." theme={theme}>Possible Self</Highlight>. Every single action you take today builds the road to that future destination.</p>
+              <p>The science is clear: linking your daily study to a future career you want makes you far more likely to do the work. The solution is to stop seeing schoolwork as a chore and start seeing it as an <Highlight description="Every piece of study you do now is a direct deposit into your future self's bank account. It's not just homework — it's building the life you want." theme={theme}>Investment</Highlight> in your <Highlight description="A vivid picture of who you want to become. When you can actually see your future self clearly, today's effort feels worth it because you know exactly what you're working toward." theme={theme}>Possible Self</Highlight>. Every single action you take today builds the road to that future destination.</p>
               <PersonalStory name="Alex" role="Founder, NextStepUni">
                 <p>For most of school, I had no destination programmed. Growing up in Togher, nobody in my world was talking about college courses or career paths. School was just something you showed up to — or didn't. I had no "Possible Self" because I'd never been shown one that looked like me. It wasn't until I lost my best friend and hit rock bottom that I even considered the idea that school could lead somewhere worth going.</p>
               </PersonalStory>
@@ -172,8 +171,8 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
 
           {activeSection === 1 && (
             <ReadingSection title="Driver or Passenger? Seizing the Wheel." eyebrow="Step 2" icon={Users} theme={theme}>
-              <p>In the car of your education, you have two choices. You can be a 'Passenger', letting the teacher, your parents, or your friends decide the direction. You only do the work to avoid getting in trouble. This is being a <Highlight description="A term from a major psychological theory called Self-Determination Theory. A 'Pawn' feels their actions are controlled by external forces, like a piece on a chessboard." theme={theme}>Pawn</Highlight>, and it leads to shallow, rote learning that falls apart under exam pressure.</p>
-              <p>Or, you can be a 'Driver'—an <Highlight description="The opposite of a Pawn. An 'Origin' feels they are the true source of their own actions. This sense of control is a powerful predictor of academic success." theme={theme}>Origin</Highlight>—who grabs the steering wheel. You take <Highlight description="The experience that your actions come from your own choice and will, not from external pressure. You do the work because YOU have chosen to." theme={theme}>Academic Ownership</Highlight>. This isn't a personality trait you're born with; it's a choice you make every single day.</p>
+              <p>In the car of your education, you have two choices. You can be a 'Passenger', letting the teacher, your parents, or your friends decide the direction. You only do the work to avoid getting in trouble. This is being a <Highlight description="Someone who feels like their actions are controlled by other people — like a piece being moved around a chessboard. You do the work because someone told you to, not because you chose to." theme={theme}>Pawn</Highlight>, and it leads to shallow, rote learning that falls apart under exam pressure.</p>
+              <p>Or, you can be a 'Driver'—an <Highlight description="The opposite of a Pawn. You feel like the true source of your own actions. You're not being pushed — you're choosing to move. People who feel this way do far better in school." theme={theme}>Origin</Highlight>—who grabs the steering wheel. You take <Highlight description="You do the work because YOU have chosen to, not because someone is making you. It's your education, your choice, your future." theme={theme}>Academic Ownership</Highlight>. This isn't a personality trait you're born with; it's a choice you make every single day.</p>
               <MicroCommitment theme={theme}>
                 <p>Think of one class you have tomorrow where you usually act like a passenger. Decide on one small 'driver' move you can make – like asking one question or deliberately trying to connect the topic to your own interests.</p>
               </MicroCommitment>
@@ -183,7 +182,8 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
 
           {activeSection === 2 && (
             <ReadingSection title="The Driver's Controls: Hacking the Classroom." eyebrow="Step 3" icon={Settings} theme={theme}>
-               <p>Being a Driver isn't about ignoring the teacher; it's about working with them. You have controls—your questions, your comments, your focus—that influence the journey. Using them is called <Highlight description="Actively and constructively contributing to your own instruction. It's about personalising the material, expressing preferences, and giving feedback to the teacher so they can help you better." theme={theme}>Agentic Engagement</Highlight>. Your teachers need your feedback to provide both the clear directions you need (<Highlight description="Clear expectations, directions, and feedback from a teacher. This is like the road signs and markings on your journey." theme={theme}>Structure</Highlight>) and support for your motivation.</p>
+               <p>Being a Driver isn't about ignoring the teacher; it's about working with them. You have controls — your questions, your comments, your focus — that influence the journey. Using them is called <Highlight description="Instead of sitting quietly and hoping things make sense, you actively shape how you learn. You ask questions, tell the teacher what's clicking and what's not, and make the material relevant to you." theme={theme}>Agentic Engagement</Highlight>.</p>
+               <p>Think of it like this: if you're lost while driving and you don't tell the sat-nav, it can't reroute you. Your teachers are the same — they need your feedback to give you the clear directions (<Highlight description="The road signs of your education — clear instructions, expectations, and feedback from your teacher. Without them you're guessing. With them, you know exactly where you stand." theme={theme}>Structure</Highlight>) and support you actually need. The students who do best aren't the ones who sit in silence — they're the ones who speak up, ask questions, and treat every class like a two-way conversation.</p>
                <MicroCommitment theme={theme}>
                 <p>Look at your notes from your hardest subject. Find one thing you don't fully understand. Write it down on a post-it note and stick it to your school journal as a reminder to ask the teacher tomorrow.</p>
               </MicroCommitment>
@@ -208,17 +208,28 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
 
           {activeSection === 3 && (
             <ReadingSection title="Roadblocks & Potholes: When the Journey is Unfair." eyebrow="Step 4" icon={ShieldAlert} theme={theme}>
-              <p>Let's be real: not all roads are perfectly paved. If you're from a disadvantaged area, you face real <Highlight description="Systemic barriers like underfunded schools or fewer resources that make academic success harder. These are the potholes and unfair tolls on your educational road." theme={theme}>Structural Conditions</Highlight>. It's easy to see these roadblocks and think the journey is impossible for you.</p>
-              <p>This creates the most dangerous trap in education: interpreting <Highlight description="A common cognitive trap where academic struggle is seen as proof of personal limitation ('I'm not smart enough'), rather than a sign of a challenging and important task." theme={theme}>Difficulty as Impossibility</Highlight>. The moment the work gets hard, your brain defaults to: "See? This isn't for people like me." The key is to install a high-tech suspension system in your brain: a conscious, deliberate reframe. This is a skill, like learning to change gear.</p>
+              <p>Let's be real: not all roads are perfectly paved. If you're from a disadvantaged area, you face real <Highlight description="The real-world stuff that makes school harder for some people — things like fewer resources, less support at home, or schools that are stretched thin. None of it is your fault, but it is part of your road." theme={theme}>Structural Conditions</Highlight>. It's easy to see these roadblocks and think the journey is impossible for you.</p>
+              <p>This creates the most dangerous trap in education: interpreting <Highlight description="A mental trap where your brain confuses 'this is hard' with 'this isn't for me.' The work is supposed to be hard — that's what makes it worth something. Hard doesn't mean impossible." theme={theme}>Difficulty as Impossibility</Highlight>. The moment the work gets hard, your brain defaults to: "See? This isn't for people like me." The key is to install a high-tech suspension system in your brain: a conscious, deliberate reframe. This is a skill, like learning to change gear.</p>
               <MicroCommitment theme={theme}>
                 <p>Write this 'Reframe' on a small piece of paper: "This is hard because it's a high-level problem. Solving it is a step toward my goal." Fold it up and put it in your wallet or pencil case.</p>
               </MicroCommitment>
               <div className="my-10 p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 flex flex-col items-center gap-6">
                 <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Mental Suspension System</h4>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400 -mt-4">Next time you hit a mental pothole, run this script:</p>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400 -mt-4">When you hit a pothole, reframe it. Try one now:</p>
                 <div className="w-full max-w-md text-left bg-zinc-50 dark:bg-zinc-800/50 p-6 rounded-xl border border-zinc-200 dark:border-zinc-700 space-y-4">
-                  <p className={`font-mono text-sm transition-opacity ${reframe ? 'text-zinc-400' : 'text-rose-600 font-bold'}`}>&gt; Initial thought: "This is too hard. I can't do it."</p>
-                  <button onClick={() => setReframe(true)} className={`w-full text-left font-mono text-sm transition-opacity ${reframe ? 'text-blue-600 font-bold' : 'text-zinc-400'}`}>&gt; Reframe: "This is hard because it's a high-level problem. This is what progress feels like."</button>
+                  <p className="font-mono text-sm text-rose-600 font-bold">&gt; "I'll never be able for Higher Level Maths."</p>
+                  <div className="space-y-2">
+                    <label className="block text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-1">Your reframe:</label>
+                    <input
+                      value={responses['reframeText'] || ''}
+                      onChange={(e) => saveResponse('reframeText', e.target.value)}
+                      placeholder="e.g., Maths is hard right now, but I haven't tried every approach yet."
+                      className="w-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors"
+                    />
+                  </div>
+                  {responses['reframeText'] && (
+                    <motion.p initial={{opacity:0}} animate={{opacity:1}} className="font-mono text-sm text-emerald-600 font-bold">&gt; Suspension installed. You just turned a pothole into a speed bump.</motion.p>
+                  )}
                 </div>
               </div>
             </ReadingSection>
@@ -226,8 +237,8 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
 
           {activeSection === 4 && (
             <ReadingSection title="Your Unique Engine: The Power of Your Story." eyebrow="Step 5" icon={Zap} theme={theme}>
-              <p>Society often focuses on what students from disadvantaged backgrounds lack. This is a deficit mindset. We're flipping it. Your life experiences have equipped your car with a unique, custom-tuned engine that many other students with factory-standard parts don't have. This is your <Highlight description="A core concept from sociology. It means the valuable, valid skills and knowledge you bring from your home and community (e.g., resilience, social intelligence). It is your academic superpower." theme={theme}>Funds of Knowledge</Highlight>.</p>
-              <p>These aren't just 'life skills'; they are high-level cognitive and social assets that give you more horsepower for the Leaving Cert journey. Click the cards below to see how your 'street smarts' translate directly into academic power.</p>
+              <p>Society loves to focus on what students from disadvantaged backgrounds don't have. We're flipping that. Your life experiences have equipped your car with a unique, custom-tuned engine that many students with factory-standard parts simply don't have. This is your <Highlight description="The skills, street smarts, and real-world knowledge you've picked up from your life, your community, and your family. School doesn't always recognise them — but they're genuine advantages." theme={theme}>Funds of Knowledge</Highlight>.</p>
+              <p>These aren't just 'life skills' — they're genuine advantages that give you more horsepower for the Leaving Cert journey. Flip the cards below to see how your real-world experience translates directly into academic power.</p>
                <MicroCommitment theme={theme}>
                 <p>Tell one person today—a friend, a family member—about one of your 'Street Smarts' and how it's actually a superpower for school. Saying it out loud makes it real.</p>
               </MicroCommitment>
@@ -272,9 +283,9 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
 
               <div className="my-10 p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 space-y-6">
                 <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Finalise Your Route Plan</h4>
-                <div className="space-y-3"><label className="block text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 text-left">My Destination (LC Goal):</label><input placeholder="e.g., 500 points to get Engineering at UCD" className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
-                <div className="space-y-3"><label className="block text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 text-left">My Custom Engine (My Advantage):</label><input placeholder="e.g., I'm good at staying calm under pressure." className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
-                <div className="space-y-3"><label className="block text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 text-left">My First Turn (Classroom Hack):</label><input placeholder="e.g., Tomorrow in Maths, I will ask the teacher to explain the 'why' behind one formula." className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
+                <div className="space-y-3"><label className="block text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 text-left">My Destination (LC Goal):</label><input value={responses['routeDestination'] || ''} onChange={(e) => saveResponse('routeDestination', e.target.value)} placeholder="e.g., 500 points to get Engineering at UCD" className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
+                <div className="space-y-3"><label className="block text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 text-left">My Custom Engine (My Advantage):</label><input value={responses['routeEngine'] || ''} onChange={(e) => saveResponse('routeEngine', e.target.value)} placeholder="e.g., I'm good at staying calm under pressure." className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
+                <div className="space-y-3"><label className="block text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 text-left">My First Turn (Classroom Hack):</label><input value={responses['routeHack'] || ''} onChange={(e) => saveResponse('routeHack', e.target.value)} placeholder="e.g., Tomorrow in Maths, I will ask the teacher to explain the 'why' behind one formula." className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-4 focus:border-blue-500 outline-none transition-colors" /></div>
               </div>
             </ReadingSection>
           )}

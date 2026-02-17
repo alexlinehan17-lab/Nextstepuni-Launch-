@@ -296,7 +296,7 @@ const RetentionCurveComparison = () => {
     const toY = (f: number) => padT + (1 - f) * chartH;
 
     const days = ['Day 1', 'Day 3', 'Day 7', 'Day 14', 'Day 21', 'Day 30'];
-    // The Crammer: single massive session, Ebbinghaus forgetting curve
+    // The Crammer: single massive session, classic forgetting curve
     const cramRetention = [0.95, 0.60, 0.35, 0.20, 0.12, 0.08];
     // The Spacer: spaced reviews with increasing intervals
     const spacerRetention = [0.55, 0.42, 0.60, 0.50, 0.65, 0.58];
@@ -435,7 +435,7 @@ const RetentionCurveComparison = () => {
                         </div>
                         <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
                             <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
-                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Spacing</strong> feels slower, but each review strengthens the memory trace. By exam day, the material is deeply encoded.</p>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Spacing</strong> feels slower, but each review makes the memory stronger. By exam day, you actually know the material properly.</p>
                         </div>
                     </div>
                 </motion.div>
@@ -615,7 +615,7 @@ const CrammingVsSpacingShowdown = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="text-sm text-sky-800 dark:text-sky-200 font-medium leading-relaxed">
-            Same total study time. Radically different long-term results. Spacing works because each retrieval strengthens storage strength.
+            Same total study time. Completely different long-term results. Spacing works because every time you make your brain dig up a memory, it gets easier to find next time.
           </p>
         </MotionDiv>
       )}
@@ -656,7 +656,7 @@ const OptimalScheduleCalculator = () => {
     return(
          <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Optimal Schedule Calculator</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Based on the landmark Cepeda et al. (2008) research.</p>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Pick when your test is, and we'll tell you the best time to review.</p>
              <div className="flex items-center justify-center gap-4">
                  <label className="font-bold">My test is in:</label>
                  <select value={ri} onChange={e => setRi(e.target.value)} className="p-2 bg-zinc-100 dark:bg-zinc-800 rounded-lg">
@@ -667,7 +667,7 @@ const OptimalScheduleCalculator = () => {
                  </select>
              </div>
              <div className="mt-6 p-6 bg-sky-50/50 border border-sky-200 rounded-xl text-center">
-                <p className="text-sm text-sky-800">Optimal Review Gap (ISI):</p>
+                <p className="text-sm text-sky-800">Best gap between study sessions:</p>
                 <p className="font-bold text-2xl text-sky-600">{schedules[ri as keyof typeof schedules].gap}</p>
                 <p className="text-xs text-sky-500 mt-4"><strong>Actionable Advice:</strong> {schedules[ri as keyof typeof schedules].example}</p>
              </div>
@@ -681,48 +681,48 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
   const sections = [
     { id: 'forgetting-curve', title: 'The Forgetting Curve', eyebrow: '01 // The Default Setting', icon: Clock },
     { id: 'cramming-paradox', title: 'The Cramming Paradox', eyebrow: '02 // The Illusion of Speed', icon: BarChart2 },
-    { id: 'desirable-difficulty', title: 'Desirable Difficulty', eyebrow: '03 // The Brain\'s Trigger', icon: Brain },
-    { id: 'optimal-schedule', title: 'The Optimal Schedule', eyebrow: '04 // The Ridgeline Rule', icon: CalendarDays },
-    { id: 'algorithmic-tools', title: 'Algorithmic Tools', eyebrow: '05 // The Autopilot', icon: RadioTower },
+    { id: 'desirable-difficulty', title: 'The Struggle Sweet Spot', eyebrow: '03 // The Brain\'s Trigger', icon: Brain },
+    { id: 'optimal-schedule', title: 'The Best Review Schedule', eyebrow: '04 // When to Review', icon: CalendarDays },
+    { id: 'algorithmic-tools', title: 'Apps That Do It For You', eyebrow: '05 // The Autopilot', icon: RadioTower },
     { id: 'spacing-blueprint', title: 'Your Spacing Blueprint', eyebrow: '06 // The Action Plan', icon: Wrench },
   ];
 
   return (
-    <ModuleLayout moduleNumber="02" moduleTitle="Spaced Repetition" moduleSubtitle="The Forgetting Curve Method" moduleDescription={`Learn to defeat the "forgetting curve" by understanding the science of when and how often to review material for maximum long-term retention.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
+    <ModuleLayout moduleNumber="02" moduleTitle="Spaced Repetition" moduleSubtitle="The Forgetting Curve Method" moduleDescription={`Stop forgetting what you study. Learn when and how often to review so the stuff you learn actually sticks for the Leaving Cert and beyond.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
       {(activeSection) => (
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Forgetting Curve." eyebrow="Step 1" icon={Clock} theme={theme}>
-              <p>Your brain is designed to forget. This isn't a flaw; it's a feature. To survive, your brain has to constantly discard useless information. The problem is, it defaults to forgetting almost everything. This process was first mapped in 1885 by Hermann Ebbinghaus, who discovered the <Highlight description="The mathematical certainty that, without active reinforcement, your memory for new information will decay exponentially over time." theme={theme}>Forgetting Curve</Highlight>.</p>
-              <p>The curve is brutal. Without reviewing, you can lose over 50% of new information within an hour, and up to 80% within a day. This is why "cramming" is a catastrophic waste of time. To build lasting knowledge, you can't just put information *in* to your brain; you have to interrupt the process of it leaking *out*.</p>
+              <p>Your brain is designed to forget. This isn't a flaw -- it's actually a feature. To survive, your brain has to constantly clear out stuff it doesn't think you need. The problem is, it defaults to forgetting almost everything. This is called the <Highlight description="The natural pattern where your memory of something new fades quickly over time unless you go back and review it." theme={theme}>Forgetting Curve</Highlight>.</p>
+              <p>The curve is brutal. Without reviewing, you can lose over 50% of new information within an hour, and up to 80% within a day. This is why cramming is such a waste of time. To build lasting knowledge, you can't just put information *in* to your brain; you have to stop it from leaking *out*.</p>
               <ForgettingCurveVisualizer />
             </ReadingSection>
           )}
           {activeSection === 1 && (
             <ReadingSection title="The Cramming Paradox." eyebrow="Step 2" icon={BarChart2} theme={theme}>
-                <p>If cramming is so bad, why does everyone do it? Because of a metacognitive trap called the <Highlight description="The common student experience where massed practice (cramming) leads to high immediate test performance but catastrophic long-term forgetting, reinforcing an ineffective study habit." theme={theme}>Cramming Paradox</Highlight>. For tests that happen immediately after studying (minutes or hours), cramming works. It keeps information active in your temporary working memory, creating a powerful "Illusion of Competence."</p>
+                <p>If cramming is so bad, why does everyone do it? Because it tricks you. This is what we call the <Highlight description="The trap where cramming makes you feel like you've nailed it right after studying, but the knowledge falls apart within days -- so you keep cramming because it 'worked' last time." theme={theme}>Cramming Paradox</Highlight>. For tests that happen straight after studying (minutes or hours), cramming actually works. It keeps information floating in your short-term memory, making you feel like you know it all.</p>
                 <RetentionCurveComparison />
-                <p>This gives you a false sense of security. You score well on the immediate test, which "rewards" the cramming behaviour. But the information never gets consolidated into long-term memory. As the research shows, for the same amount of study time, <Highlight description="Also called Distributed Practice. The method of spreading study sessions out over time, which is proven to be vastly superior to cramming for long-term retention." theme={theme}>Spaced Practice</Highlight> can triple the durability of your memory.</p>
+                <p>This gives you a false sense of security. You score well on the immediate test, which "rewards" the cramming behaviour. But the information never actually makes it into your long-term memory. Here's the thing: for the same amount of study time, <Highlight description="Spreading your study sessions out over time instead of doing it all in one go. It feels slower, but it makes your memory way stronger and longer-lasting." theme={theme}>Spaced Practice</Highlight> can triple how long you actually remember something.</p>
                 <CrammingVsSpacingShowdown />
             </ReadingSection>
           )}
            {activeSection === 2 && (
-            <ReadingSection title="Desirable Difficulty." eyebrow="Step 3" icon={Brain} theme={theme}>
-              <p>Why is spacing so much more powerful? Because it leverages the "struggle" of forgetting. This is the principle of <Highlight description="A learning task that requires a considerable but desirable amount of effort, thereby improving long-term performance. Spacing creates this by allowing some forgetting to occur between sessions." theme={theme}>Desirable Difficulty</Highlight>. When you space out your study, you allow your memory to fade slightly. When you come back to review it, your brain has to work harder to retrieve it.</p>
-              <p>This effortful retrieval is a powerful biological signal. It tells your brain, "This information is important! I had to work hard to find it, so I should strengthen the pathway to make it easier next time." Cramming eliminates this difficulty; the information is always right there, so your brain sees no reason to invest the resources in building a strong, long-term memory trace.</p>
+            <ReadingSection title="The Struggle Sweet Spot." eyebrow="Step 3" icon={Brain} theme={theme}>
+              <p>Why is spacing so much more powerful? Because it uses the "struggle" of forgetting to your advantage. This is the idea behind <Highlight description="When studying feels a bit harder -- like when you've half-forgotten something and have to really think to recall it -- that extra effort actually makes the memory stick much better." theme={theme}>Desirable Difficulty</Highlight>. When you space out your study, you let your memory fade a little on purpose. When you come back to review it, your brain has to work harder to dig it up.</p>
+              <p>That extra effort is a powerful signal. It tells your brain, "This information is important! I had to work hard to find it, so I should make the pathway stronger for next time." Cramming skips this difficulty entirely -- the information is always right there in front of you, so your brain sees no reason to lock it in for the long term.</p>
             </ReadingSection>
           )}
           {activeSection === 3 && (
-            <ReadingSection title="The Optimal Schedule." eyebrow="Step 4" icon={CalendarDays} theme={theme}>
-              <p>So, what is the perfect gap between study sessions? There's no single magic number. Landmark research by Cepeda and Pashler found that the <Highlight description="The Inter-Study Interval (ISI) is the time gap between your study sessions." theme={theme}>Optimal Gap</Highlight> depends entirely on when you need to remember the information—the <Highlight description="The Retention Interval (RI) is the time between your last study session and the final test." theme={theme}>Retention Interval</Highlight>.</p>
-              <p>Their "Ridgeline Rule" gives us a practical ratio: to maximize recall, your review gap should be roughly <strong>5-20%</strong> of the time until the test. For a test in a week, you need a short gap (1-2 days). For a test in 6 months, you need a much longer gap (e.g., 3 weeks). This is because a longer gap allows for more forgetting, creating a more "desirable difficulty" and triggering a stronger memory consolidation process for the long haul.</p>
+            <ReadingSection title="The Best Review Schedule." eyebrow="Step 4" icon={CalendarDays} theme={theme}>
+              <p>So, what's the perfect gap between study sessions? There's no single magic number. The <Highlight description="The gap between your study sessions. The right gap depends on how far away your test is." theme={theme}>best review gap</Highlight> depends entirely on when you need to remember the information -- basically, how far away your <Highlight description="The time between your last study session and the actual test or exam." theme={theme}>test date</Highlight> is.</p>
+              <p>Here's a handy rule of thumb: your review gap should be roughly <strong>5-20%</strong> of the time until the test. For a test in a week, you need a short gap (1-2 days). For the Leaving Cert in 6 months, you need a much longer gap (e.g., 3 weeks). This is because a longer gap lets you forget a little more, which makes your brain work harder when you review -- and that extra effort is exactly what locks it in for the long term.</p>
               <OptimalScheduleCalculator />
             </ReadingSection>
           )}
            {activeSection === 4 && (
-            <ReadingSection title="Algorithmic Tools." eyebrow="Step 5" icon={RadioTower} theme={theme}>
-              <p>Managing the optimal schedule for thousands of facts across dozens of subjects is humanly impossible. This is where <Highlight description="Software (like Anki or SuperMemo) that uses algorithms based on the Forgetting Curve and Spacing Effect to automatically schedule reviews for individual pieces of information (like flashcards)." theme={theme}>Spaced Repetition Software (SRS)</Highlight> comes in. These tools are like a personal tutor for your memory.</p>
-              <p>Using an app like Anki, you create digital flashcards. Each time you review a card, you tell the algorithm how difficult it was ("Again," "Hard," "Good," "Easy"). The algorithm then uses this feedback to predict when you'll be on the verge of forgetting that specific card and schedules it for review at that precise moment. It automates the entire process of optimal scheduling, ensuring you review the right thing at the right time.</p>
+            <ReadingSection title="Apps That Do It For You." eyebrow="Step 5" icon={RadioTower} theme={theme}>
+              <p>Keeping track of the perfect review schedule for thousands of facts across all your subjects is basically impossible to do by hand. That's where <Highlight description="Free apps like Anki that automatically figure out when you're about to forget something and remind you to review it at just the right time." theme={theme}>Spaced Repetition Apps</Highlight> come in. Think of them as a personal tutor for your memory.</p>
+              <p>Using an app like Anki, you create digital flashcards. Each time you review a card, you tell the app how hard it was ("Again," "Hard," "Good," "Easy"). The app then uses your answers to figure out when you're about to forget that card and puts it in front of you at just the right moment. It takes all the guesswork out of scheduling -- you just show up and review whatever the app tells you to.</p>
               <MicroCommitment theme={theme}>
                 <p>Download Anki on your phone or computer. Don't worry about making cards yet. Just get the tool. This is the first step to building an automated, long-term memory system.</p>
               </MicroCommitment>
@@ -730,10 +730,10 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
           )}
            {activeSection === 5 && (
             <ReadingSection title="Your Spacing Blueprint." eyebrow="Step 6" icon={Wrench} theme={theme}>
-              <p>You now have the science to defeat the Forgetting Curve. The timing of your study is as important as the content. This section provides a simple, actionable heuristic to put this into practice immediately, even without software.</p>
+              <p>You now know how to beat the Forgetting Curve. When you study matters just as much as what you study. Here's a simple plan you can start using right now, even without any apps.</p>
               <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Actionable Advice: The Heuristic Planner</h4>
-                <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">For any test or exam, follow this simple rule-of-thumb schedule.</p>
+                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Simple Review Plan</h4>
+                <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">For any test or exam, follow this simple schedule.</p>
                 <div className="grid grid-cols-3 gap-4 text-center">
                     <div className="p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl">
                         <p className="font-bold">Day 1: Learn</p>
@@ -741,16 +741,16 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
                     </div>
                      <div className="p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl">
                         <p className="font-bold">Day 2-3: First Review</p>
-                        <p className="text-xs mt-1">Review the material using Active Recall. This is the most critical review.</p>
+                        <p className="text-xs mt-1">Review by testing yourself (don't just re-read). This is the most important review.</p>
                     </div>
                      <div className="p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl">
                         <p className="font-bold">Day 7 (or before test): Final Review</p>
-                        <p className="text-xs mt-1">A final active recall session to consolidate the memory.</p>
+                        <p className="text-xs mt-1">One last round of testing yourself to lock it in.</p>
                     </div>
                 </div>
               </div>
               <MicroCommitment theme={theme}>
-                <p>Pick one subject you have a test for in the next two weeks. Open your calendar and schedule two short review sessions for it between now and then, following the "Ridgeline Rule".</p>
+                <p>Pick one subject you have a test for in the next two weeks. Open your calendar and schedule two short review sessions for it between now and then, using the rule of thumb above.</p>
               </MicroCommitment>
             </ReadingSection>
           )}

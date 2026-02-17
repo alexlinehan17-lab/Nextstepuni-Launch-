@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Target, Brain, SlidersHorizontal, Shield, Moon, Utensils, Zap, Wind, Leaf, Droplet, Coffee, X } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { amberTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = amberTheme;
@@ -33,7 +33,7 @@ const ChallengeThreatSimulator = () => {
              </div>
              <div className="flex justify-center gap-2 mt-4"><span className="font-bold">Resource Level:</span><input type="range" value={resources} onChange={e => setResources(parseInt(e.target.value))} /></div>
              <div className={`mt-6 p-4 rounded-xl text-center font-bold text-white ${isChallenge ? 'bg-emerald-500' : 'bg-rose-500'}`}>
-                {isChallenge ? "CHALLENGE STATE: You feel 'pumped'. Blood vessels dilate, oxygen floods the brain. Go time." : "THREAT STATE: You feel 'scared'. Blood vessels constrict, PFC is impaired. 'Mind blanking' is likely."}
+                {isChallenge ? "CHALLENGE STATE: You feel 'pumped'. More blood and oxygen flow to your brain. Go time." : "THREAT STATE: You feel 'scared'. Your brain tightens up, thinking gets foggy. 'Mind blanking' is likely."}
              </div>
         </div>
     );
@@ -45,14 +45,14 @@ const CircadianShifter = () => {
 
     return(
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Circadian Rhythm Shifter</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Input your current weekend wake-up time to get your 4-week 'Phase Advance' plan.</p>
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Sleep Schedule Shifter</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Enter your current weekend wake-up time to get a 4-week plan for shifting it earlier.</p>
              <div className="flex items-center justify-center gap-4">
                 <label className="font-bold">Current Wake-up:</label>
                 <input type="time" value={`${String(Math.floor(wakeTime)).padStart(2,'0')}:${String((wakeTime % 1)*60).padStart(2,'0')}`} onChange={e => setWakeTime(parseInt(e.target.value.split(':')[0]) + parseInt(e.target.value.split(':')[1])/60)} className="p-2 bg-zinc-100 dark:bg-zinc-800 rounded-lg"/>
              </div>
              {wakeTime > 7 && <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-xl text-center">
-                <p className="font-bold text-amber-800">Your Protocol:</p>
+                <p className="font-bold text-amber-800">Your Plan:</p>
                 <p className="text-sm">Shift your alarm back by 15 mins every <span className="font-bold">3-4 days</span> for the next <span className="font-bold">{shifts}</span> shifts to reach your 7:00 AM target.</p>
              </div>}
         </div>
@@ -71,8 +71,8 @@ const TaperPlanner = () => {
 
     return (
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Academic Taper Planner</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Move the slider to see how your training changes in the final week.</p>
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Final Week Study Planner</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Move the slider to see how your study should change in the final week.</p>
              <label className="font-bold">Days Before Exam: {day}</label>
              <input type="range" min="1" max="7" value={day} onChange={e => setDay(parseInt(e.target.value))} className="w-full" />
              <div className="grid grid-cols-3 gap-4 mt-4 text-center">
@@ -440,8 +440,8 @@ const CognitiveWarmup = () => {
 
     return (
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Cognitive Warm-Up</h4>
-             <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Choose your drill to prime your brain for action.</p>
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Brain Warm-Up</h4>
+             <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Pick a quick drill to get your brain warmed up and ready.</p>
              <div className="flex justify-center gap-4">
                 <button onClick={() => resetVerbal()} className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-lg">Verbal Fluency</button>
                 <button onClick={() => setDrill('math')} className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-lg">Math Sprint</button>
@@ -453,13 +453,13 @@ const CognitiveWarmup = () => {
 // --- MODULE COMPONENT ---
 const GameDayModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'athlete-mindset', title: 'The Athlete Mindset', eyebrow: '01 // The Paradigm', icon: Target },
-    { id: 'macrocycle', title: 'The Macrocycle', eyebrow: '02 // 1 Month Out', icon: SlidersHorizontal },
-    { id: 'mesocycle', title: 'The Mesocycle', eyebrow: '03 // The Taper', icon: Brain },
+    { id: 'athlete-mindset', title: 'The Athlete Mindset', eyebrow: '01 // The Game Plan', icon: Target },
+    { id: 'macrocycle', title: '1 Month Out', eyebrow: '02 // Building Your Base', icon: SlidersHorizontal },
+    { id: 'mesocycle', title: 'The Final Week', eyebrow: '03 // The Wind-Down', icon: Brain },
     { id: 'mental-rehearsal', title: 'Mental Rehearsal', eyebrow: '04 // Visualization', icon: Shield },
-    { id: 'microcycle', title: 'The Microcycle', eyebrow: '05 // The Day Before', icon: Moon },
+    { id: 'microcycle', title: 'The Day Before', eyebrow: '05 // Setting Up', icon: Moon },
     { id: 'game-day-morning', title: 'Game Day Morning', eyebrow: '06 // The Warm-Up', icon: Utensils },
-    { id: 'in-the-arena', title: 'In The Arena', eyebrow: '07 // Execution', icon: Zap },
+    { id: 'in-the-arena', title: 'In The Arena', eyebrow: '07 // Go Time', icon: Zap },
     { id: 'recovery', title: 'Halftime & Post-Game', eyebrow: '08 // Recovery', icon: Wind },
   ];
 
@@ -468,7 +468,7 @@ const GameDayModule: React.FC<{ onBack: () => void; progress: ModuleProgress; on
       moduleNumber="06"
       moduleTitle="Game Day: Peak Performance"
       moduleSubtitle="Peak Performance on Demand"
-      moduleDescription="Transform your exam preparation by adopting the mindset and physiological protocols of an elite athlete. This is your playbook for peak performance."
+      moduleDescription="Train for the Leaving Cert the way athletes train for competition. Sleep, food, mindset, and a solid game plan -- this is your playbook for performing at your best when it counts."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -479,56 +479,59 @@ const GameDayModule: React.FC<{ onBack: () => void; progress: ModuleProgress; on
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Athlete Mindset." eyebrow="Step 1" icon={Target} theme={theme}>
-              <p>The Leaving Cert is not an academic test; it's an endurance event. Your brain consumes 20% of your body's oxygen and glucose. A 3-hour exam is a metabolic marathon. This module reframes you from a 'student' to an <Highlight description="A paradigm that treats academic performance as a physical discipline, prioritizing physiological optimization (sleep, nutrition, stress management) to maximize cognitive output." theme={theme}>Occupational Athlete</Highlight>. Your success is not just determined by what you know, but by the physiological state of the brain that's trying to access it.</p>
-              <p>The key to performance is engineering a <Highlight description="A physiological state where your brain perceives your resources (energy, preparation) as meeting or exceeding the demands of a task. It's characterized by adrenaline (for focus) and vasodilation (increased blood flow to the brain)." theme={theme}>Challenge State</Highlight> ("pumped") and avoiding a <Highlight description="A physiological state where demands are perceived to exceed resources. It's characterized by cortisol (stress hormone) and vasoconstriction, which impairs function of the Prefrontal Cortex, leading to 'mind blanking'." theme={theme}>Threat State</Highlight> ("scared"). This isn't about positive thinking; it's about tangible physiological interventions.</p>
+              <p>The Leaving Cert is not just an academic test -- it's an endurance event. Your brain uses 20% of your body's energy. A 3-hour exam is basically a marathon for your head. This module is about treating yourself like an <Highlight description="The idea that you're not just studying with your mind -- your body matters too. Sleep, food, and stress management all directly affect how well your brain performs on the day." theme={theme}>Exam Athlete</Highlight>. How well you do isn't just about what you know -- it's about the state your brain is in when it's trying to remember it all.</p>
+              <p>The goal is to get yourself into a <Highlight description="That 'I've got this' feeling. When you feel prepared and energised, your body sends more blood and oxygen to your brain. You think faster and stay focused." theme={theme}>Challenge State</Highlight> ("pumped") and avoid a <Highlight description="That 'I'm going to fail' feeling. When your brain thinks the exam is too much, stress hormones take over and your thinking brain basically shuts down. That's where 'mind blanking' comes from." theme={theme}>Threat State</Highlight> ("scared"). This isn't about positive thinking. It's about real, practical steps you can take to get your body and brain working together.</p>
+              <PersonalStory name="Aisling" role="6th Year, Limerick">
+                <p>Before my mocks, I used to just cram until 2am and hope for the best. I'd walk into the exam wrecked and my mind would go blank on stuff I definitely knew. When I started treating exam prep more like training -- sorting my sleep, eating properly, doing a warm-up routine -- it was like night and day. I wasn't any smarter, I was just less wrecked.</p>
+              </PersonalStory>
               <ChallengeThreatSimulator />
             </ReadingSection>
           )}
            {activeSection === 1 && (
-            <ReadingSection title="The Macrocycle: 1 Month Out." eyebrow="Step 2" icon={SlidersHorizontal} theme={theme}>
-              <p>In the final month, the focus shifts from accumulating new knowledge to consolidating what you have and standardizing your biology. This is the "Pre-Competition Phase." Your goal is to align your internal body clock with the external exam schedule through <Highlight description="The process of synchronizing your internal biological clock (circadian rhythm) to external cues, primarily the light-dark cycle." theme={theme}>Circadian Entrainment</Highlight>.</p>
-              <p>The average teenager is a "night owl," but exams start at 9:30 AM. You must systematically shift your sleep schedule. This is a gradual process. You also need to switch to a <Highlight description="A diet focused on foods that provide a slow, steady release of glucose (e.g., oats, whole grains) to avoid the 'spike and crash' cycle that impairs cognitive function." theme={theme}>Low-Glycemic Diet</Highlight> to ensure stable fuel for your brain.</p>
+            <ReadingSection title="1 Month Out: Building Your Base." eyebrow="Step 2" icon={SlidersHorizontal} theme={theme}>
+              <p>In the final month, the focus shifts from learning new stuff to locking in what you already know -- and getting your body into a good routine. Your main job right now is to get your <Highlight description="Getting your body clock in sync with exam times. If you've been going to bed at 1am and waking at 11am, you need to gradually shift that so you're sharp at 9:30am when the exam starts." theme={theme}>sleep schedule lined up with exam times</Highlight>.</p>
+              <p>Most teenagers are night owls, but exams start at 9:30 AM. You need to gradually shift your wake-up time -- not all at once, but bit by bit. You should also start eating more <Highlight description="Foods like porridge, wholegrain bread, and bananas that give you slow, steady energy instead of a sugar spike followed by a crash. Think fuel that lasts the whole exam, not just the first 20 minutes." theme={theme}>slow-release energy foods</Highlight> so your brain has steady fuel instead of a sugar crash halfway through the paper.</p>
               <CircadianShifter />
             </ReadingSection>
           )}
            {activeSection === 2 && (
-            <ReadingSection title="The Mesocycle: The Taper." eyebrow="Step 3" icon={Brain} theme={theme}>
-              <p>The final week is the most mismanaged period of study. The instinct is to cram, but the athletic model dictates the opposite: <Highlight description="The systematic reduction of training volume in the days before a competition. A 40-60% reduction can lead to a ~3% performance improvement." theme={theme}>Tapering</Highlight>. Performance = Fitness - Fatigue. Cramming maximizes fatigue, leading to a suboptimal performance even if your "fitness" (knowledge) is high.</p>
-              <p>The academic taper involves systematically reducing study *volume* while maintaining *intensity*. You do fewer hours, but those hours are high-quality active recall. Crucially, you must stop learning new material 3 days out to avoid <Highlight description="When new information interferes with the recall of older information. This is why last-minute cramming can make you forget things you knew perfectly." theme={theme}>retroactive interference</Highlight>.</p>
+            <ReadingSection title="The Final Week: Winding Down." eyebrow="Step 3" icon={Brain} theme={theme}>
+              <p>The last week before exams is where most students mess up. The instinct is to cram harder, but that's the opposite of what works. Athletes <Highlight description="Easing off in the days before a big event. Less volume, more rest. Cutting your study hours by 40-60% in the final days actually improves your performance because you go in fresh instead of burnt out." theme={theme}>ease off before a big event</Highlight> -- and you should too. Think of it this way: Performance = What You Know minus How Tired You Are. Cramming makes you exhausted, so even if you know loads, your brain can't access it properly.</p>
+              <p>In the final week, you do fewer hours but make those hours count -- testing yourself, not just reading over notes. And here's the big one: stop learning new material 3 days out. Last-minute cramming can actually cause <Highlight description="When new information messes up your ability to remember older stuff. It's why cramming the night before can make you forget things you knew perfectly well last week." theme={theme}>new stuff to push out old stuff</Highlight> you already knew.</p>
               <TaperPlanner />
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="Mental Rehearsal." eyebrow="Step 4" icon={Shield} theme={theme}>
-              <p>Top athletes don't just train their bodies; they train their minds through visualization. But there's a trap. <Highlight description="Visualizing the final result (e.g., getting 625 points). Research shows this can deplete energy and increase anxiety." theme={theme}>Outcome Visualization</Highlight> can be counterproductive.</p>
-              <p>The key is <Highlight description="Visualizing the specific steps of the process (e.g., waking up calm, reading the question, taking a breath). This 'mental rehearsal' prepares the brain for the specific stressors it will face, creating a pre-rehearsed coping mechanism." theme={theme}>Process Visualization</Highlight>. By repeatedly running a "mental movie" of exam day, you prepare your brain for what's coming. When you face a difficult question, your brain recognizes the scenario ("I've been here before") and triggers your rehearsed coping strategy instead of a panic response.</p>
+              <p>Top athletes don't just train their bodies -- they train their minds through visualization. But there's a trap. <Highlight description="Picturing the end result (e.g. getting 625 points or opening your CAO offer). This can actually make you feel like you've already achieved it, which drains your motivation and can increase anxiety." theme={theme}>Just picturing the result</Highlight> (like imagining your CAO points) can actually backfire.</p>
+              <p>What works is <Highlight description="Picturing the actual steps: waking up calm, walking into the hall, reading the first question, taking a breath before writing. When you've 'been there' in your head, your brain handles the real thing much better -- instead of panicking, it goes 'I know what to do here.'" theme={theme}>picturing the process</Highlight>. Run a "mental movie" of exam day in your head -- waking up, eating, walking in, reading the paper. When you hit a hard question on the day, your brain recognises the moment ("I've been here before") and stays calm instead of panicking.</p>
             </ReadingSection>
           )}
           {activeSection === 4 && (
-            <ReadingSection title="The Microcycle: Day Before." eyebrow="Step 5" icon={Moon} theme={theme}>
-              <p>The 24 hours before your first exam are about stability and anxiety mitigation. All heavy cognitive lifting must cease by 6:00 PM. The evening is for shifting into a "rest and digest" state. Complete the <Highlight description="A control ritual where you pack your clear pencil case, calculator, ID, and water bottle the night before to reduce 'cognitive load' on the morning of the exam." theme={theme}>"Packing" Ritual</Highlight> early.</p>
-              <p>Your dinner should be a "Cognitive Carb-Load"--a balanced meal of complex carbs and lean protein (e.g., chicken and sweet potato) to ensure your brain's glycogen stores are full. Finally, perform a <Highlight description="Writing down any lingering facts or worries before sleep to 'offload' them from your working memory, allowing your brain to switch off." theme={theme}>"Brain Dump"</Highlight> to clear your mind.</p>
+            <ReadingSection title="The Day Before." eyebrow="Step 5" icon={Moon} theme={theme}>
+              <p>The 24 hours before your first exam are about keeping things calm and steady. Stop any heavy studying by 6:00 PM. The evening is for winding down. Do your <Highlight description="Pack your clear pencil case, calculator, ID, exam number, and a bottle of water the night before. Getting this sorted early means one less thing to stress about in the morning." theme={theme}>"Packing" Ritual</Highlight> early so you're not scrambling in the morning.</p>
+              <p>For dinner, go for something filling with slow-release energy -- pasta, rice, potatoes with some protein (whatever you have -- chicken, beans, eggs, anything decent). The goal is to fill up your energy stores so your brain has fuel in the morning. Before bed, do a <Highlight description="Grab a page and write down anything still bouncing around your head -- facts you're worried about, things on your mind, whatever. Getting it out of your head and onto paper helps your brain switch off so you can actually sleep." theme={theme}>"Brain Dump"</Highlight>: write down anything still buzzing around your head so your brain can switch off.</p>
             </ReadingSection>
           )}
            {activeSection === 5 && (
             <ReadingSection title="Game Day: The Warm-Up." eyebrow="Step 6" icon={Utensils} theme={theme}>
-              <p>The morning of the exam is about managing the natural spike in cortisol and adrenaline and channeling it into focus. Do not hit snooze. Immediately hydrate with 500ml of water. Get 10 minutes of morning sunlight to anchor your circadian rhythm. Your breakfast must be Low-GI.</p>
+              <p>The morning of the exam is about channeling your nerves into focus. Don't hit snooze. Drink a glass of water straight away. If you can, get a few minutes of daylight (even standing by a window helps) -- it wakes your brain up properly. Eat a breakfast that gives you slow, steady energy (more on that below).</p>
               <PreExamMealBuilder />
-              <p>Just as an athlete warms up their muscles, you must warm up your brain. Passively reading notes is useless. You need a <Highlight description="Active priming exercises (e.g., verbal fluency drills, simple calculations) performed 20-30 minutes before an exam to lower the 'activation threshold' of the relevant neural circuits." theme={theme}>Cognitive Warm-Up</Highlight>. This gets the relevant brain areas perfused with blood and "online" before you open the paper.</p>
+              <p>Just as an athlete warms up before a match, you need to warm up your brain. Passively reading over notes doesn't do much. What actually helps is a quick <Highlight description="Short brain exercises -- like listing words that start with a certain letter, or doing a few quick mental sums -- done 20-30 minutes before the exam. It gets the thinking parts of your brain warmed up and ready to go before you open the paper." theme={theme}>brain warm-up</Highlight>. It gets the right parts of your brain fired up and ready before you even open the paper.</p>
               <CognitiveWarmup />
             </ReadingSection>
           )}
            {activeSection === 6 && (
             <ReadingSection title="In The Arena: Execution." eyebrow="Step 7" icon={Zap} theme={theme}>
-              <p>Create a psychological "bubble" on arrival. Headphones on, no panicked conversations. Upon entering the hall, perform the <Highlight description="Two sharp inhales through the nose, one long exhale through the mouth. The fastest tool to reduce autonomic arousal in real-time." theme={theme}>Physiological Sigh</Highlight> to calm your nervous system. For the first 5 minutes, do not write. Just read and breathe. This prevents the "panic misread."</p>
+              <p>When you arrive, put yourself in a bubble. Headphones in if you have them, or just keep to yourself -- avoid panicked conversations with other students. When you sit down, do the <Highlight description="A quick breathing trick: two sharp sniffs in through your nose, then one long, slow breath out through your mouth. It's the fastest way to calm your nerves in the moment." theme={theme}>Physiological Sigh</Highlight> (two quick sniffs in through your nose, one long breath out). For the first 5 minutes, don't write anything. Just read the paper and breathe. This stops you from misreading questions in a panic.</p>
             </ReadingSection>
           )}
            {activeSection === 7 && (
             <ReadingSection title="Halftime & Post-Game." eyebrow="Step 8" icon={Wind} theme={theme}>
-              <p>On days with two exams, the "halftime" break is critical. Eat a light lunch of protein and complex carbs to avoid a "food coma." A 10-20 minute "Power Nap" or a guided <Highlight description="Non-Sleep Deep Rest. A guided meditation that can restore dopamine levels and reduce cortisol more effectively than a nap for some people." theme={theme}>NSDR</Highlight> script is the most effective way to reset.</p>
-              <p>After each exam, the rule is absolute: a strict <Highlight description="The rule to avoid all discussion of an exam after it is finished. This prevents 'anxiety contagion' and keeps your brain out of a 'Threat State' for the next paper." theme={theme}>"Post-Mortem" Ban</Highlight>. The paper is done. Bin the mental file. Focus on the next game.</p>
+              <p>On days with two exams, the break between them is huge. Eat something that won't make you sleepy -- a sandwich, some fruit, whatever you can manage -- and avoid a massive heavy meal. If you can, a 10-20 minute nap or a quick <Highlight description="A guided relaxation technique you can find free on YouTube or Spotify. You lie down, close your eyes, and follow the instructions. It's not sleep, but it recharges your brain surprisingly well -- sometimes even better than a nap." theme={theme}>guided rest session (NSDR)</Highlight> is one of the best ways to recharge for the afternoon.</p>
+              <p>After each exam, one rule: <Highlight description="Don't talk about the exam you just did. Seriously. When everyone starts comparing answers, it spreads panic -- and that panic follows you into your next paper. The exam is done. Let it go." theme={theme}>don't talk about it</Highlight>. No comparing answers, no "what did you get for question 5?" The paper is done. Bin the mental file. Focus on the next one.</p>
               <MicroCommitment theme={theme}>
-                <p>Go to your calendar. Find the date one month before your first exam. Create an event: "Begin Macrocycle." You are no longer just a student. You are an athlete.</p>
+                <p>Go to your calendar (phone, wall, whatever you have). Find the date one month before your first exam. Set a reminder: "Start my game day prep." From that point on, you're not just studying -- you're training.</p>
               </MicroCommitment>
             </ReadingSection>
           )}

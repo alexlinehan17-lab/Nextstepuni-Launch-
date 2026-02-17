@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { grayTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = grayTheme;
@@ -307,20 +307,20 @@ const ABQAnswerScaffold = () => {
 // --- MODULE COMPONENT ---
 const MasteringBusinessModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'strategic-context', title: 'The Strategic Context for 2026', eyebrow: '01 // The Master Key', icon: Key },
-    { id: 'exam-architecture', title: 'The Exam Architecture', eyebrow: '02 // The Blueprint', icon: PieChart },
-    { id: 'abq-deep-dive', title: 'ABQ Deep Dive', eyebrow: '03 // The Pivot', icon: Briefcase },
-    { id: 'science-of-scoring', title: 'The Science of Scoring', eyebrow: '04 // Grade Engineering', icon: FileText },
-    { id: 'high-yield-tactics', title: 'High-Yield Tactics', eyebrow: '05 // The Toolkit', icon: Wrench },
-    { id: 'study-blueprint', title: 'The Study Blueprint', eyebrow: '06 // The Action Plan', icon: BrainCircuit },
+    { id: 'strategic-context', title: 'What You Need to Know for 2026', eyebrow: '01 // The Big Picture', icon: Key },
+    { id: 'exam-architecture', title: 'How the Paper Works', eyebrow: '02 // The Layout', icon: PieChart },
+    { id: 'abq-deep-dive', title: 'ABQ Deep Dive', eyebrow: '03 // The Game-Changer', icon: Briefcase },
+    { id: 'science-of-scoring', title: 'How to Pick Up Every Mark', eyebrow: '04 // Getting Better Marks', icon: FileText },
+    { id: 'high-yield-tactics', title: 'Quick Wins and Smart Moves', eyebrow: '05 // The Toolkit', icon: Wrench },
+    { id: 'study-blueprint', title: 'Your Study Plan', eyebrow: '06 // The Action Plan', icon: BrainCircuit },
   ];
 
   return (
     <ModuleLayout
       moduleNumber="05"
       moduleTitle="Mastering Business"
-      moduleSubtitle="The Grade Optimization Guide"
-      moduleDescription={`Deconstruct the Business exam for 2026, focusing on the ABQ, "outcome verbs", and the "SEE/SEEE" structure to engineer a H1.`}
+      moduleSubtitle="Your Complete Guide to Getting Top Marks"
+      moduleDescription={`Everything you need to crack the 2026 Business exam -- from the ABQ to the action words and the SEE/SEEE answer structure that examiners actually reward.`}
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -330,43 +330,46 @@ const MasteringBusinessModule: React.FC<{ onBack: () => void; progress: ModulePr
       {(activeSection) => (
         <>
           {activeSection === 0 && (
-            <ReadingSection title="The Strategic Context for 2026." eyebrow="Step 1" icon={Key} theme={theme}>
-              <p>The Leaving Cert Business exam isn't a test of memory; it's a test of <Highlight description="The ability to decode the specific rules and expectations of the exam, from timing to the precise meaning of 'outcome verbs'." theme={theme}>examination literacy</Highlight>. For 2026, the game is defined by one critical fact: the compulsory Applied Business Question (ABQ) will be based on <strong>Units 3, 4, and 5</strong>.</p>
-              <p>This is your strategic roadmap. It shifts the focus from the wider economy to the "engine room" of a business: management, HR, finance, and marketing. A weakness in these units cannot be hidden, making the ABQ the primary filter for H1 candidates.</p>
+            <ReadingSection title="What You Need to Know for 2026." eyebrow="Step 1" icon={Key} theme={theme}>
+              <p>The Leaving Cert Business exam is not just about remembering facts -- it is about knowing <Highlight description="Understanding how the exam works, what the questions are really asking, and what the examiner wants to see in your answer." theme={theme}>how the exam actually works</Highlight>. For 2026, the big thing to know is that the compulsory Applied Business Question (ABQ) will be based on <strong>Units 3, 4, and 5</strong>.</p>
+              <p>That means the focus is on the inside of a business: management, HR, finance, and marketing. You cannot dodge these topics -- they will definitely come up. If you are strong on these units, you are already halfway to top marks.</p>
             </ReadingSection>
           )}
            {activeSection === 1 && (
-            <ReadingSection title="The Exam Architecture." eyebrow="Step 2" icon={PieChart} theme={theme}>
-              <p>The 3-hour Higher Level paper is an endurance test split into three sections. <strong>Section 1 (Shorts)</strong> is your "return on investment" section, worth 20% of the marks for about 15% of the time. <strong>Section 2 (ABQ)</strong> is your high-risk, high-reward section, also worth 20%. <strong>Section 3 (Longs)</strong> is the marathon, worth 60% of the marks and requiring four full answers.</p>
-              <p>Your timing strategy is critical. A common H1 approach is to tackle the ABQ immediately after the Shorts to leverage mental freshness before the fatigue of the long questions sets in.</p>
+            <ReadingSection title="How the Paper Works." eyebrow="Step 2" icon={PieChart} theme={theme}>
+              <p>The Higher Level paper is 3 hours long and split into three sections. <strong>Section 1 (Short Questions)</strong> is your easiest marks -- worth 20% of the total and you can fly through them. <strong>Section 2 (ABQ)</strong> is the big one, also worth 20%, where you apply theory to a case study. <strong>Section 3 (Long Questions)</strong> is the main event, worth 60% of the marks -- you need to write four full answers.</p>
+              <p>Here is a smart timing tip: do the ABQ right after the Short Questions. Your brain is still fresh at that point, and you will write better answers than if you leave it until you are tired from the long questions.</p>
             </ReadingSection>
           )}
            {activeSection === 2 && (
             <ReadingSection title="ABQ Deep Dive." eyebrow="Step 3" icon={Briefcase} theme={theme}>
-                <p>The 2026 ABQ will almost certainly feature a business in a "growth crisis"--a company that has launched successfully but is struggling with internal chaos. You will act as a consultant. Your job is to apply theory to solve their problems.</p>
-                <p>The golden rule is the <Highlight description="The non-negotiable, 3-part structure for ABQ answers: State the theory, Explain it in your own words, and Link it with a direct quote from the text." theme={theme}>"Link" Methodology</Highlight>. Failure to quote directly from the case study is the single biggest cause of lost marks. It's a mechanical process: State, Explain, Link. Master this algorithm.</p>
+                <p>The 2026 ABQ will probably give you a business that is growing fast but running into problems -- things like staff issues, money troubles, or communication breakdowns. Your job is to read the case study and use your business theory to solve their problems.</p>
+                <p>The number one rule is <Highlight description="The must-use 3-step formula for ABQ answers: say what the theory is, explain it in your own words, then quote directly from the case study to prove it." theme={theme}>State, Explain, Link</Highlight>. The biggest reason students lose marks is forgetting to quote directly from the case study. Every single answer needs a direct quote. Think of it as a simple 3-step recipe: name the theory, explain it, then prove it with words from the text.</p>
                 <ABQLinkDrill />
                 <ABQAnswerScaffold />
             </ReadingSection>
           )}
            {activeSection === 3 && (
-            <ReadingSection title="The Science of Scoring." eyebrow="Step 4" icon={FileText} theme={theme}>
-              <p>To get a H1, you must write for the examiner. The marking scheme is a rigid code. The standard unit of currency is the "point," worth 5 marks in a long question. To secure these marks, you must use a structured formula: <Highlight description="The standard formula for a 5-mark point: State the point, Explain it, and give an Example." theme={theme}>"SEE"</Highlight>. For a H1, you need the advanced <Highlight description="The H1 version of the formula, expanding the 'Explain' part into two distinct sentences to ensure full marks are captured." theme={theme}>"SEEE"</Highlight> version.</p>
-              <p>You must also decode the <Highlight description="The specific verb used by the SEC in a question (e.g., State, Explain, Evaluate) which dictates the required depth and structure of your answer." theme={theme}>"Outcome Verb."</Highlight> "State" requires a list. "Explain" requires a definition. "Evaluate" requires a judgment, which is the key differentiator for top grades. Always add a separate mini-paragraph explicitly labelled <strong>"Evaluation:"</strong> to secure these marks.</p>
+            <ReadingSection title="How to Pick Up Every Mark." eyebrow="Step 4" icon={FileText} theme={theme}>
+              <p>To get top marks, you need to write the way the examiner wants to see it. Each "point" in a long question is worth 5 marks. The way to guarantee those marks is a simple formula called <Highlight description="A 3-step formula for each point: State it, Explain it, then give an Example. This is how you make sure the examiner can give you full marks." theme={theme}>SEE</Highlight> -- State, Explain, Example. If you are aiming for a H1, use the upgraded version called <Highlight description="The H1 version where you write two sentences of explanation instead of one, so the examiner has no excuse not to give you the marks." theme={theme}>SEEE</Highlight>, where you give two explanation sentences instead of one.</p>
+              <p>You also need to pay attention to the <Highlight description="The action word in the question (like State, Explain, or Evaluate) that tells you exactly how much detail the examiner expects. Get this wrong and you will either write too little or waste time." theme={theme}>action word</Highlight> in each question. "State" means just list the point. "Explain" means define it properly. "Evaluate" means give your opinion on whether it is good or bad -- and this is what separates H1 answers from the rest. When you see "Evaluate," always write a separate mini-paragraph starting with <strong>"Evaluation:"</strong> to make sure you grab those marks.</p>
             </ReadingSection>
           )}
           {activeSection === 4 && (
-            <ReadingSection title="High-Yield Tactics." eyebrow="Step 5" icon={Wrench} theme={theme}>
-              <p>In Section 1 (Short Questions), use the <Highlight description="The strategy of answering all available short questions (e.g., 10 or 12) to create a safety net, as only your best 8 will be counted." theme={theme}>"Surplus" Strategy</Highlight>: answer all the questions. It takes little extra time and insures you against a calculation error.</p>
-              <p>In Section 3 (Long Questions), avoid the <Highlight description="The phenomenon of writing lengthy paragraphs without any specific keywords or facts, which scores zero marks." theme={theme}>"Waffle" Phenomenon</Highlight> by using the SEEE structure. Every sentence must have a purpose. Also, avoid the <Highlight description="Making the same point twice using different words. Examiners will only award marks for it once." theme={theme}>"Repetition" Trap</Highlight> when asked for multiple "impacts" or "benefits"--make sure your points are distinct (e.g., one financial, one marketing).</p>
+            <ReadingSection title="Quick Wins and Smart Moves." eyebrow="Step 5" icon={Wrench} theme={theme}>
+              <p>In Section 1 (Short Questions), use the <Highlight description="Answer every short question on the paper, even the ones you are unsure about. Only your best answers count, so extra attempts are free insurance." theme={theme}>answer-everything approach</Highlight>: do all the short questions, not just the required number. Only your best answers count, so extra attempts cost you almost no time and protect you if you slip up on one.</p>
+              <p>In Section 3 (Long Questions), the biggest marks-killer is <Highlight description="Writing long paragraphs that sound nice but do not actually contain any real business terms or facts. The examiner cannot give marks for waffle." theme={theme}>waffle</Highlight> -- writing loads without actually saying anything specific. Stick to the SEEE structure so every sentence earns marks. Also watch out for <Highlight description="Saying the same thing twice in different words. The examiner will only give you marks for a point once, no matter how you phrase it." theme={theme}>repeating yourself</Highlight> when asked for multiple "impacts" or "benefits." Make sure each point is genuinely different -- for example, one about money, one about marketing, one about staff.</p>
+              <PersonalStory name="Roisin" role="6th Year, Limerick">
+                <p>I used to lose marks on the long questions because I would basically say the same thing three different ways. Once I started labelling my points (financial impact, marketing impact, staffing impact) I actually started getting full marks. It sounds simple but it made a huge difference.</p>
+              </PersonalStory>
             </ReadingSection>
           )}
            {activeSection === 5 && (
-            <ReadingSection title="The Study Blueprint." eyebrow="Step 6" icon={BrainCircuit} theme={theme}>
-              <p>Success is a marathon, not a sprint. Passive reading yields only 10% retention. <Highlight description="Actively testing yourself by retrieving information from memory. This is the most effective study method, yielding up to 60% retention." theme={theme}>Active Recall</Highlight> is the engine of learning. Use spider diagrams and flashcards to test yourself, not just to make notes.</p>
-              <p>Your study plan should be phased. <strong>Phase 1 (Sept-Dec):</strong> Deep dive on the ABQ units (3, 4, 5). <strong>Phase 2 (Jan-Mar):</strong> Cover the other units and begin timed long questions. <strong>Phase 3 (Apr-May):</strong> Use <Highlight description="Mixing questions from different units in a single study session to simulate the randomness of the exam and train your problem-spotting skills." theme={theme}>"Interleaved" Practice</Highlight> with past papers. This is not about just learning the material; it's about learning how to perform.</p>
+            <ReadingSection title="Your Study Plan." eyebrow="Step 6" icon={BrainCircuit} theme={theme}>
+              <p>Just reading over your notes does not work -- you forget most of it within a day. The trick is <Highlight description="Testing yourself from memory instead of just re-reading. It feels harder, but it is by far the best way to make things stick." theme={theme}>active recall</Highlight> -- actually testing yourself. Use spider diagrams and flashcards to pull information out of your head, not just put it in.</p>
+              <p>Break your study into three phases. <strong>Phase 1 (Sept-Dec):</strong> Focus hard on the ABQ units (3, 4, 5) since these are guaranteed to come up. <strong>Phase 2 (Jan-Mar):</strong> Cover the other units and start doing timed long questions. <strong>Phase 3 (Apr-May):</strong> Do <Highlight description="Mixing questions from different units in a single study session. This trains you to recognise what topic is being asked about, just like in the real exam." theme={theme}>mixed practice</Highlight> with past papers -- mix up the topics so you are ready for anything the exam throws at you.</p>
                <MicroCommitment theme={theme}>
-                <p>Go to your Business notes. Pick one topic. Create a one-page "spider diagram" summary of it *from memory*. Then, open the book and check what you missed. You've just started using active recall.</p>
+                <p>Go to your Business notes. Pick one topic. Create a one-page spider diagram summary of it from memory -- no peeking. Then open the book and check what you missed. That is active recall in action, and you have just done it.</p>
               </MicroCommitment>
             </ReadingSection>
           )}

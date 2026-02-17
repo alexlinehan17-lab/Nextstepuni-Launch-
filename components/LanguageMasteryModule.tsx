@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { skyTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = skyTheme;
@@ -26,7 +26,7 @@ const DualTrackPlanner = () => {
 
     return(
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Dual-Track Strategy Planner</h4>
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Study Plan Breakdown</h4>
              <div className="flex justify-center gap-2 p-1 bg-zinc-100 dark:bg-zinc-800 rounded-full my-6 max-w-sm mx-auto">
                 <button onClick={() => setPlan('rescue')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${plan === 'rescue' ? 'bg-white shadow' : ''}`}>Rescue Plan (Pass)</button>
                 <button onClick={() => setPlan('mastery')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${plan === 'mastery' ? 'bg-white shadow' : ''}`}>Mastery Plan (H1)</button>
@@ -156,8 +156,8 @@ const ParagraphSorter = () => {
 
     return (
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Paragraph Algorithm</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Drag these components into the correct order to build a perfect essay paragraph.</p>
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Paragraph Builder</h4>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Drag these into the right order to build a top-scoring essay paragraph.</p>
             <Reorder.Group axis="y" values={items} onReorder={setItems} className="space-y-2 max-w-sm mx-auto">
                 {items.map(item => (
                     <Reorder.Item key={item.id} value={item} className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-center font-bold text-zinc-700 dark:text-zinc-200 cursor-grab active:cursor-grabbing">
@@ -173,22 +173,22 @@ const ParagraphSorter = () => {
 // --- MODULE COMPONENT ---
 const LanguageMasteryModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'dual-track', title: 'The Dual-Track Imperative', eyebrow: '01 // The Strategy', icon: Target },
-    { id: 'oral-blueprint', title: 'The Oral Blueprint', eyebrow: '02 // The 25% Bank', icon: Mic },
-    { id: 'examiner-forensics', title: 'Examiner Forensics', eyebrow: '03 // Killer Errors vs H1 Differentiators', icon: Brain },
-    { id: 'vocab-vault', title: 'The Vocabulary Vault', eyebrow: '04 // SRS vs Goldlist', icon: Wrench },
-    { id: 'auditory-processing', title: 'Auditory Processing', eyebrow: '05 // The Aural Exam', icon: Headphones },
-    { id: 'reading-protocols', title: 'Reading Comprehension Protocols', eyebrow: '06 // Search & Extract', icon: BookOpen },
-    { id: 'written-algorithms', title: 'Written Production Algorithms', eyebrow: '07 // The Paragraph Engine', icon: PenSquare },
-    { id: 'mastery-plan', title: 'Your Mastery Plan', eyebrow: '08 // The Action Plan', icon: Languages },
+    { id: 'dual-track', title: 'Two Plans, One Goal', eyebrow: '01 // Your Game Plan', icon: Target },
+    { id: 'oral-blueprint', title: 'The Oral Exam', eyebrow: '02 // Bank 25% Early', icon: Mic },
+    { id: 'examiner-forensics', title: 'What Examiners Actually Want', eyebrow: '03 // Common Mistakes vs Top Marks', icon: Brain },
+    { id: 'vocab-vault', title: 'Building Your Vocabulary', eyebrow: '04 // Making Words Stick', icon: Wrench },
+    { id: 'auditory-processing', title: 'The Listening Exam', eyebrow: '05 // Training Your Ear', icon: Headphones },
+    { id: 'reading-protocols', title: 'Reading Comprehension', eyebrow: '06 // Find the Answer Fast', icon: BookOpen },
+    { id: 'written-algorithms', title: 'Writing Strong Essays', eyebrow: '07 // Building Great Paragraphs', icon: PenSquare },
+    { id: 'mastery-plan', title: 'Your Action Plan', eyebrow: '08 // Make It Happen', icon: Languages },
   ];
 
   return (
     <ModuleLayout
       moduleNumber="02"
       moduleTitle="Mastering Languages"
-      moduleSubtitle="The Language Mastery Guide"
-      moduleDescription="A strategic deconstruction of the MFL exams, providing a bifurcated strategy for both foundational proficiency and top-tier performance."
+      moduleSubtitle="Your Complete Guide to the Language Exams"
+      moduleDescription="Whether you're aiming to pass or chasing a H1, this module breaks down exactly how the Leaving Cert language exams work and how to get the most out of every section."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -198,55 +198,58 @@ const LanguageMasteryModule: React.FC<{ onBack: () => void; progress: ModuleProg
       {(activeSection) => (
         <>
           {activeSection === 0 && (
-            <ReadingSection title="The Dual-Track Imperative." eyebrow="Step 1" icon={Target} theme={theme}>
-              <p>The Leaving Cert MFL exam isn't one test; it's two. For students at risk of failing, the goal is <Highlight description="The ability to transact meaning despite grammatical errors. This is the 'Rescue Plan'." theme={theme}>Communicative Proficiency</Highlight>. For students aiming for a H1, the goal is <Highlight description="Demonstrating syntactical complexity, idiomatic richness, and meta-cognitive control. This is the 'Mastery Plan'." theme={theme}>Language Awareness</Highlight>. A one-size-fits-all approach is a recipe for failure. Your strategy must match your target.</p>
-              <p>The allocation of marks is a strategic map. A fatal error is focusing on written production when the Oral and Reading components offer a much higher return on investment, especially for students on the "Rescue Plan".</p>
+            <ReadingSection title="Two Plans, One Goal." eyebrow="Step 1" icon={Target} theme={theme}>
+              <p>Here's the thing most people miss: the Leaving Cert language exam isn't really one test -- it's two different challenges. If you're trying to get a solid pass, your goal is <Highlight description="Getting your meaning across clearly, even if your grammar isn't perfect. This is the 'Pass Plan'." theme={theme}>getting your message across</Highlight>. If you're going for a H1, you need to show the examiner you can <Highlight description="Using a range of tenses, expressions, and showing you really understand how the language works. This is the 'H1 Plan'." theme={theme}>really handle the language</Highlight>. Trying to do the same thing for both goals is a mistake -- your plan needs to match your target.</p>
+              <p>Look at where the marks actually are. One of the biggest mistakes students make is spending all their time on essay writing when the Oral and Reading sections can give you way more marks for less effort -- especially if you're on the "Pass Plan".</p>
               <DualTrackPlanner />
             </ReadingSection>
           )}
            {activeSection === 1 && (
-            <ReadingSection title="The Oral Blueprint." eyebrow="Step 2" icon={Mic} theme={theme}>
-              <p>The Oral is the highest ROI activity in the entire Leaving Cert. It happens before the written papers, allowing you to "bank" up to 25% of your final grade. The marking scheme is a universal algorithm, divided into four quadrants: <Highlight description="Intonation, rhythm, and accuracy of sounds (20%)." theme={theme}>Pronunciation</Highlight>, <Highlight description="Lexical richness and idiomatic language (20%)." theme={theme}>Vocabulary</Highlight>, <Highlight description="Grammatical accuracy and complexity (30%)." theme={theme}>Structure</Highlight>, and <Highlight description="Fluency, spontaneity, and sustaining interaction (30%)." theme={theme}>Communication</Highlight>.</p>
-              <p>Understanding how these are weighted is key. Structure and Communication make up 60% of the marks. For the "Rescue Plan," the goal is verb control in the present tense. For the "Mastery Plan," it's about toggling tenses and deploying advanced structures like the Subjunctive.</p>
+            <ReadingSection title="The Oral Exam." eyebrow="Step 2" icon={Mic} theme={theme}>
+              <p>The Oral is the single best opportunity in the entire Leaving Cert. It happens before your written papers, so you can lock in up to 25% of your final grade early. The examiner marks you on four things: <Highlight description="How natural you sound -- your accent, rhythm, and how clearly you say words (worth 20%)." theme={theme}>Pronunciation</Highlight>, <Highlight description="The range of words and phrases you use, including natural expressions (worth 20%)." theme={theme}>Vocabulary</Highlight>, <Highlight description="Whether your grammar is correct and whether you use a range of tenses and sentence types (worth 30%)." theme={theme}>Structure</Highlight>, and <Highlight description="How well you keep the conversation going, respond naturally, and stay on topic (worth 30%)." theme={theme}>Communication</Highlight>.</p>
+              <p>Notice how the marks are split: Structure and Communication together are worth 60%. That's where your focus should be. If you're aiming for a pass, nail your verbs in the present tense. If you're going for a H1, you need to switch between tenses smoothly and throw in some advanced grammar like the Subjunctive.</p>
               <OralBlueprintSliders />
             </ReadingSection>
           )}
            {activeSection === 2 && (
-            <ReadingSection title="Examiner Forensics." eyebrow="Step 3" icon={Brain} theme={theme}>
-              <p>Chief Examiner Reports are the exam's "black box recorder," telling us exactly why students fail and succeed. The biggest <Highlight description="Errors that cap a student's grade, regardless of other strengths." theme={theme}>"Killer Error"</Highlight> is the "Rote Learning Penalty"—reciting a pre-learned essay that doesn't answer the question. This gets punished heavily in the Communication quadrant.</p>
-              <p>Conversely, there are clear <Highlight description="Skills that reliably signal a top-tier student to an examiner." theme={theme}>"H1 Differentiators."</Highlight> In French and Spanish, the number one differentiator is the spontaneous, correct use of the <strong>Subjunctive Mood</strong>. In German, it's mastery of word order—the <strong>"Verb Kicker"</strong> rule. These aren't just grammar points; they are signals of high-level Language Awareness.</p>
+            <ReadingSection title="What Examiners Actually Want." eyebrow="Step 3" icon={Brain} theme={theme}>
+              <p>The examiner reports tell us exactly what trips students up and what gets the top marks. The biggest <Highlight description="Mistakes that put a ceiling on your grade, no matter how good the rest of your work is." theme={theme}>grade-killer</Highlight> is learning an essay off by heart and writing it out even when it doesn't properly answer the question. Examiners spot this immediately and it tanks your Communication marks.</p>
+              <p>On the flip side, there are specific things that scream "this student deserves a H1" to an examiner. These are <Highlight description="The specific skills that show the examiner you're operating at the top level." theme={theme}>H1 signals</Highlight>. In French and Spanish, the number one signal is using the <strong>Subjunctive</strong> correctly and naturally. In German, it's nailing the word order -- the <strong>"Verb Kicker"</strong> rule. These aren't just grammar rules to memorise; they show the examiner you genuinely understand the language.</p>
+              <PersonalStory name="Aoife" role="6th Year, Galway">
+                <p>I was getting H4s in French all through 5th year. I was learning off essays and hoping for the best. Then I stopped doing that and focused on actually answering the question using three or four structures I knew really well. I started getting H2s in the mocks. The Subjunctive felt impossible at first, but once I had a few phrases down, it became automatic. I ended up getting a H1 in the Leaving Cert.</p>
+              </PersonalStory>
             </ReadingSection>
           )}
           {activeSection === 3 && (
-            <ReadingSection title="The Vocabulary Vault." eyebrow="Step 4" icon={Wrench} theme={theme}>
-              <p>The Leaving Cert requires a massive vocabulary (2,000-3,000 words for a H1). This cannot be crammed. You need a system based on cognitive science. There are two main approaches.</p>
-              <p><Highlight description="Software (like Anki) that uses algorithms to schedule flashcard reviews at the precise moment you're about to forget them. Highly efficient but can be high-maintenance." theme={theme}>Spaced Repetition Systems (SRS)</Highlight> are the digital, high-efficiency option. The <Highlight description="A low-tech, low-stress method involving writing lists of words in a notebook and reviewing them after a two-week 'incubation' period. Excellent for passive vocabulary." theme={theme}>Goldlist Method</Highlight> is the analog, low-stress alternative, relying on the physical act of writing to aid retention. The best strategy is often a hybrid: SRS for active vocabulary (production) and Goldlist for passive vocabulary (recognition).</p>
+            <ReadingSection title="Building Your Vocabulary." eyebrow="Step 4" icon={Wrench} theme={theme}>
+              <p>To hit a H1, you need somewhere between 2,000 and 3,000 words. That's a lot, and you absolutely cannot cram it. You need a system that actually works with how your brain remembers things. There are two solid approaches.</p>
+              <p><Highlight description="Free apps like Anki that show you flashcards right before you'd forget them. Really effective, but you need to keep up with it daily." theme={theme}>Spaced repetition apps</Highlight> (like Anki -- it's free) are the digital option. They show you words right before you'd forget them, so you learn faster. The <Highlight description="A simple notebook method: write out word lists, leave them for two weeks, then come back and test yourself. Low effort, great for words you just need to recognise." theme={theme}>Goldlist Method</Highlight> is the low-tech option -- you write word lists in a notebook and come back to them after two weeks. No app needed, just a pen and paper. The best approach? Use both: apps for words you need to produce in essays, and the notebook method for words you just need to recognise in reading and listening.</p>
             </ReadingSection>
           )}
           {activeSection === 4 && (
-            <ReadingSection title="Auditory Processing." eyebrow="Step 5" icon={Headphones} theme={theme}>
-              <p>The Aural (Listening) exam is not a passive activity. It requires active processing strategies. The most important is <Highlight description="Using the pre-listening reading time to analyze the questions and predict the *type* of answer required (e.g., a number, a place, an emotion)." theme={theme}>Prediction & Priming</Highlight>. This tunes your brain to listen for specific information.</p>
-              <p>To improve your ear, you need <Highlight description="Listening to native materials to internalize the rhythm and intonation of the language." theme={theme}>Contextual Immersion</Highlight>. Resources like "News in Slow French/German/Spanish" are perfect. A powerful technique is <Highlight description="Listening to a native speaker and repeating what they say almost simultaneously. This builds a direct link between your auditory and motor cortex, dramatically improving pronunciation." theme={theme}>Shadowing</Highlight>, which is the ultimate hack for your Pronunciation marks in the Oral.</p>
+            <ReadingSection title="The Listening Exam." eyebrow="Step 5" icon={Headphones} theme={theme}>
+              <p>The listening exam is not about sitting back and hoping you catch something. You need to be actively working before you even hear the audio. The most important trick is <Highlight description="Use the reading time before each clip to read the questions and figure out what kind of answer you need -- is it a number? A place? A feeling? This tells your brain what to listen for." theme={theme}>reading ahead</Highlight>. During the reading time, look at the questions and figure out what kind of answer you need (a number? a place? a feeling?). This primes your brain to pick out the right information.</p>
+              <p>To get better at understanding spoken language, you need to <Highlight description="Listen to real content in your target language to get used to the speed and rhythm. Free resources like 'News in Slow French' on YouTube are perfect for this." theme={theme}>listen to real content regularly</Highlight>. Free resources like "News in Slow French/German/Spanish" on YouTube are brilliant for this. Another great technique is <Highlight description="Listen to someone speaking in your target language and try to repeat what they say at the same time, almost like an echo. It trains your ear and your pronunciation together." theme={theme}>shadowing</Highlight> -- you listen to a native speaker and repeat what they say almost at the same time, like an echo. It's one of the best ways to improve both your listening and your pronunciation for the Oral.</p>
             </ReadingSection>
           )}
           {activeSection === 5 && (
-            <ReadingSection title="Reading Protocols." eyebrow="Step 6" icon={BookOpen} theme={theme}>
-              <p>The Reading Comprehension is the single largest component for Ordinary Level students (40%). The biggest trap is trying to translate every word. The expert strategy is <Highlight description="The technique of underlining keywords in the question and scanning the text for them, knowing that answers almost always appear in chronological order." theme={theme}>"Search and Extract."</Highlight></p>
-              <p>Beware the <Highlight description="A critical distinction in French exams. 'Trouvez' means quote exactly; 'Indiquez' means manipulate the language (e.g., change 'je' to 'il'). Failure to distinguish these is a major source of lost marks." theme={theme}>"Manipulation Rule"</Highlight> in French. If the question says "Trouvez," you quote. If it says "Indiquez" or "Dites," you must change the grammar. This is a classic differentiator between H1 and H2 students.</p>
+            <ReadingSection title="Reading Comprehension." eyebrow="Step 6" icon={BookOpen} theme={theme}>
+              <p>For Ordinary Level students, the reading comprehension is the single biggest section -- worth 40% of your marks. The biggest trap? Trying to translate every single word. You don't need to. The smart approach is <Highlight description="Underline the key words in the question, then scan the text looking for those words or their synonyms. The answers nearly always appear in the same order as the questions." theme={theme}>search and extract</Highlight> -- underline the key words in the question, then scan the text for those words. The answers almost always appear in the same order as the questions.</p>
+              <p>If you're doing French, watch out for the <Highlight description="In French exams, 'Trouvez' means copy the answer exactly from the text. But 'Indiquez' or 'Dites' means you need to change the grammar -- like swapping 'je' for 'il'. Missing this costs a lot of students marks." theme={theme}>quote vs. rephrase trap</Highlight>. If the question says "Trouvez," you copy the answer word-for-word from the text. But if it says "Indiquez" or "Dites," you have to change the grammar (e.g., swap "je" for "il"). This catches out loads of students and it's often the difference between a H1 and a H2.</p>
             </ReadingSection>
           )}
            {activeSection === 6 && (
-            <ReadingSection title="Written Algorithms." eyebrow="Step 7" icon={PenSquare} theme={theme}>
-              <p>High-scoring essays are not works of creative genius; they are assembled using pre-fabricated, high-quality components. Every paragraph should follow a strict <Highlight description="A 4-part structure for building coherent paragraphs: 1. Topic Sentence, 2. Expansion/Reason, 3. Example, 4. Connector/Bridge to the next point." theme={theme}>Paragraph Algorithm</Highlight>.</p>
-              <p>For the "Mastery Plan," the goal is to use sophisticated logical connectors (e.g., *N\u00e9anmoins*, *De surcro\u00eet*) and avoid starting sentences with basic words like "Et" or "Mais." This signals high-level Language Awareness to the examiner.</p>
+            <ReadingSection title="Writing Strong Essays." eyebrow="Step 7" icon={PenSquare} theme={theme}>
+              <p>Here's a secret: top-scoring essays aren't written by geniuses. They're built from a set of reliable building blocks. Every paragraph should follow a simple <Highlight description="A 4-part recipe: 1. Start with your main point, 2. Explain or give a reason, 3. Give an example, 4. Link to the next point." theme={theme}>paragraph formula</Highlight>.</p>
+              <p>If you're going for a H1, use linking words that go beyond the basics. Instead of "Et" or "Mais," try things like *N\u00e9anmoins* (however) or *De surcro\u00eet* (furthermore). These small upgrades show the examiner you're comfortable with the language at a high level.</p>
               <ParagraphSorter />
             </ReadingSection>
           )}
           {activeSection === 7 && (
-            <ReadingSection title="Your Mastery Plan." eyebrow="Step 8" icon={Languages} theme={theme}>
-                <p>You now have the complete strategic blueprint for the Leaving Cert MFL exams. You understand the dual-track system, the importance of each component, and the specific cognitive and tactical tools required for success. The exam is not a mystery; it is a system that can be engineered.</p>
+            <ReadingSection title="Your Action Plan." eyebrow="Step 8" icon={Languages} theme={theme}>
+                <p>You've now got a clear picture of how the Leaving Cert language exams actually work. You know which sections are worth the most marks, what examiners are looking for, and the specific techniques that separate top students from the rest. The exam isn't a mystery -- it's a system, and now you know how it works.</p>
                 <MicroCommitment theme={theme}>
-                  <p>Pick ONE strategy from this module. Whether it's the "Search and Extract" technique, the Paragraph Algorithm, or starting a Goldlist notebook. Commit to trying it just once this week. You've just taken your first step from being a language student to a language engineer.</p>
+                  <p>Pick ONE thing from this module to try this week. Maybe it's the "search and extract" technique for reading, the paragraph formula for writing, or just starting a vocabulary notebook. One small step. That's all it takes to get started.</p>
                 </MicroCommitment>
             </ReadingSection>
           )}

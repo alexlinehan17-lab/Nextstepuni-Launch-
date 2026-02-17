@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { emeraldTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = emeraldTheme;
@@ -69,8 +69,8 @@ const CurlyArrowDrill = () => {
     };
 
     /* Curly arrow SVG: curves from source side to sink side */
-    const arrowLR = 'M 6 18 Q 24 -2 42 18'; // left → right
-    const arrowRL = 'M 42 18 Q 24 -2 6 18'; // right → left
+    const arrowLR = 'M 6 18 Q 24 -2 42 18'; // left \u2192 right
+    const arrowRL = 'M 42 18 Q 24 -2 6 18'; // right \u2192 left
     const headLR = '39,12 45,20 38,20';
     const headRL = '9,12 3,20 10,20';
 
@@ -141,7 +141,7 @@ const CurlyArrowDrill = () => {
                             {selected && !isCorrect && (
                                 <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}
                                     className="text-center text-xs text-rose-500 dark:text-rose-400 mb-3">
-                                    That&apos;s the electron sink — it&apos;s electron-poor. Try the source.
+                                    That&apos;s the electron sink &mdash; it&apos;s electron-poor. Try the source.
                                 </motion.p>
                             )}
                         </AnimatePresence>
@@ -435,21 +435,21 @@ const KeywordPrecisionTester = () => {
 // --- MODULE COMPONENT ---
 const MasteringTheSciencesModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'hidden-curriculum', title: 'The Hidden Curriculum', eyebrow: '01 // The Master Key', icon: Key },
-    { id: 'biology', title: 'Biology: Precision & Breadth', eyebrow: '02 // The Encyclopedia', icon: Leaf },
-    { id: 'chemistry', title: 'Chemistry: Molecular Logic', eyebrow: '03 // The Architect', icon: Beaker },
-    { id: 'physics', title: 'Physics: Abstract Logic', eyebrow: '04 // The Engineer', icon: Atom },
-    { id: 'ag-science', title: 'Ag Science: The Scientific Method', eyebrow: '05 // The Investigator', icon: Sprout },
-    { id: 'cognitive-strategies', title: 'Cognitive Grade Optimization', eyebrow: '06 // The Toolkit', icon: BrainCircuit },
-    { id: 'action-plan', title: 'Your Action Plan', eyebrow: '07 // The Blueprint', icon: Flag },
+    { id: 'hidden-curriculum', title: 'What They Don\'t Teach You', eyebrow: '01 // The Big Picture', icon: Key },
+    { id: 'biology', title: 'Biology: Every Word Counts', eyebrow: '02 // Know Your Keywords', icon: Leaf },
+    { id: 'chemistry', title: 'Chemistry: Seeing the Molecules', eyebrow: '03 // Build the Logic', icon: Beaker },
+    { id: 'physics', title: 'Physics: Problem-Solving Mindset', eyebrow: '04 // Think It Through', icon: Atom },
+    { id: 'ag-science', title: 'Ag Science: Think Like a Scientist', eyebrow: '05 // Get Investigative', icon: Sprout },
+    { id: 'cognitive-strategies', title: 'Study Smarter for Science', eyebrow: '06 // Your Toolkit', icon: BrainCircuit },
+    { id: 'action-plan', title: 'Your Action Plan', eyebrow: '07 // Get Started', icon: Flag },
   ];
 
   return (
     <ModuleLayout
       moduleNumber="03"
       moduleTitle="Mastering the Sciences"
-      moduleSubtitle="The STEM Grade Optimization Guide"
-      moduleDescription={`A strategic deconstruction of the STEM exams, revealing the "hidden curriculum" of Biology, Chemistry, Physics, and Ag Science.`}
+      moduleSubtitle="Your Science Subjects, Decoded"
+      moduleDescription="Each science exam has its own unwritten rules. This module breaks them down so you know exactly what the examiner is looking for."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -459,47 +459,50 @@ const MasteringTheSciencesModule: React.FC<{ onBack: () => void; progress: Modul
       {(activeSection) => (
         <>
           {activeSection === 0 && (
-            <ReadingSection title="The Hidden Curriculum." eyebrow="Step 1" icon={Key} theme={theme}>
-              <p>Success in the Leaving Cert sciences is not just a test of knowledge; it's a test of strategic alignment. Each subject--Biology, Chemistry, Physics, and Ag Science--has its own "hidden curriculum," an unwritten set of rules dictated by the marking scheme. Mastering this hidden curriculum is the key to unlocking a H1.</p>
-              <p>This module provides the decryption key for each science, revealing the specific cognitive approach and "high-yield" content that delivers the most marks. You will learn to think like an examiner and engineer your answers for maximum credit.</p>
+            <ReadingSection title="What They Don't Teach You." eyebrow="Step 1" icon={Key} theme={theme}>
+              <p>Here's the thing about the Leaving Cert sciences: knowing your stuff is only half the battle. Each subject -- Biology, Chemistry, Physics, and Ag Science -- has its own set of unwritten rules. The marking scheme rewards certain approaches, and if you don't know what those are, you'll lose marks even when you understand the material.</p>
+              <p>This module breaks down each science subject so you can see what the examiner is actually looking for. You'll learn which topics come up most, which mistakes cost the most marks, and how to write answers that tick every box on the marking scheme.</p>
+              <PersonalStory name="Aoife" role="6th Year, Tullamore">
+                <p>I was getting B3s in Biology even though I was studying loads. Turns out I was using my own words for definitions instead of the exact terms from the book. Once I started learning the keywords the examiner wanted, my marks jumped two grades in the mocks. It felt like I'd been playing the wrong game the whole time.</p>
+              </PersonalStory>
             </ReadingSection>
           )}
           {activeSection === 1 && (
-            <ReadingSection title="Biology: Precision & Breadth." eyebrow="Step 2" icon={Leaf} theme={theme}>
-              <p>Biology rewards breadth of knowledge and, above all, <Highlight description="The marking scheme demands specific, non-negotiable keywords. Synonyms are often rejected. 'Specificity' or 'induced fit model' must be used for the active site." theme={theme}>terminological precision</Highlight>. An answer without the correct keyword is worthless. Definitions must be memorized verbatim. The exam structure is 5-3-4 (5/7 shorts, 3/4 experiments, 4/6 longs), and omitting any of the 22 mandatory experiments is a dangerous strategy. Beware the <Highlight description="In Section A, an incorrect third answer to a two-part question can cancel out a correct one. Adhere strictly to the quantity requested." theme={theme}>'Surplus Answer' Risk</Highlight> in short questions.</p>
+            <ReadingSection title="Biology: Every Word Counts." eyebrow="Step 2" icon={Leaf} theme={theme}>
+              <p>Biology is massive -- there's a lot to learn. But the biggest trap isn't the volume of content, it's <Highlight description="The examiner wants the exact keyword from the marking scheme. If it says 'diffusion', writing 'spreading out' gets zero marks, even if you understand the concept perfectly." theme={theme}>using the exact right words</Highlight>. If the marking scheme says "diffusion" and you write "spreading out", you get zero -- even though you clearly know what you're talking about. Definitions need to be learned word-for-word. The exam is split into short questions, experiment questions, and long questions. Make sure you know all 22 mandatory experiments -- they come up every year. And watch out for the <Highlight description="If a question asks for two examples and you write three, a wrong third answer can cancel out a correct one. Only answer what's asked." theme={theme}>extra answer trap</Highlight> in short questions: if you write more answers than asked for and one is wrong, it can cancel out a right one.</p>
               <KeywordPrecisionTester />
             </ReadingSection>
           )}
           {activeSection === 2 && (
-            <ReadingSection title="Chemistry: Molecular Logic." eyebrow="Step 3" icon={Beaker} theme={theme}>
-              <p>Chemistry demands dual competency: visualizing molecular interactions and executing complex calculations. Section A (experiments) is your <Highlight description="Section A, covering mandatory experiments like titrations, is highly predictable and can account for up to 38% of your grade if all three questions are answered." theme={theme}>Volumetric Anchor</Highlight>, offering predictable marks. Master the procedural precision of titrations and the visualization of organic apparatus.</p>
-              <p>Organic Chemistry (40%) requires you to master reaction maps and the <Highlight description="A formalism showing the movement of electron pairs. A curly arrow MUST originate from a bond or lone pair and point to an atom. Errors here are severely penalized." theme={theme}>'Curly Arrow' Formalism</Highlight> for mechanisms. A "Texas Carbon" (five-bonded carbon) is a zero-mark error. Stoichiometry is foundational; every calculation must begin by converting to Moles.</p>
+            <ReadingSection title="Chemistry: Seeing the Molecules." eyebrow="Step 3" icon={Beaker} theme={theme}>
+              <p>Chemistry is about two things: picturing what molecules are doing and being able to do the calculations. The experiment section (Section A) is your <Highlight description="The experiment questions are very predictable -- titrations come up nearly every year. Nailing these can be worth up to 38% of your total grade." theme={theme}>easiest source of marks</Highlight> because the same types of questions keep coming up. Get your titration steps down cold and know how to draw the apparatus.</p>
+              <p>Organic Chemistry makes up about 40% of the paper, so it's worth serious time. You need to know your reaction pathways and understand <Highlight description="Curly arrows show where electrons move. They always start from where electrons are (a lone pair or a bond) and point to where they're going. Drawing them wrong loses you marks." theme={theme}>curly arrows</Highlight> for reaction mechanisms. A classic mistake is drawing a carbon with five bonds instead of four -- that's an instant zero. For calculations, always start by converting to moles. It's the foundation of every chemistry calculation.</p>
               <CurlyArrowDrill />
             </ReadingSection>
           )}
-           {activeSection === 3 && (
-            <ReadingSection title="Physics: Abstract Logic." eyebrow="Step 4" icon={Atom} theme={theme}>
-              <p>Physics rewards the application of abstract concepts to novel problems. Section A is your experimental portfolio and the source of "easy" marks if you master <Highlight description="Key protocols like ensuring the independent variable is on the X-axis and calculating slope from the line of best fit, not table points." theme={theme}>graphing protocols</Highlight>. All derivations must be learned by heart, including the geometric steps.</p>
-              <p>For novel questions, your secret weapon is <Highlight description="Using the units of physical quantities to deduce or check a formula (e.g., if Force is in N and Area is in m\u00b2, Pressure must be N/m\u00b2)." theme={theme}>Unit Algebra</Highlight>. Forgetting to convert from cm to m is the single most frequent cause of lost marks. Always double-check your calculator is in <strong>Degree</strong> mode for trigonometric functions.</p>
+          {activeSection === 3 && (
+            <ReadingSection title="Physics: Problem-Solving Mindset." eyebrow="Step 4" icon={Atom} theme={theme}>
+              <p>Physics is about applying ideas to problems you might not have seen before. The experiment section is where you pick up reliable marks if you know the basics of <Highlight description="Always put the thing you changed (independent variable) on the X-axis. Calculate slope from the line of best fit, not from random points in your table." theme={theme}>drawing and reading graphs properly</Highlight>. Learn all your derivations by heart -- including the geometry steps, not just the final formula.</p>
+              <p>When you hit a tricky question, your best friend is <Highlight description="You can use units to figure out or double-check a formula. If Force is in Newtons and Area is in metres squared, then Pressure must be in Newtons per metre squared." theme={theme}>checking your units</Highlight>. If the units on both sides of your equation don't match, something has gone wrong. The number one reason students lose marks in Physics? Forgetting to convert cm to m. Also, always check your calculator is in <strong>Degree</strong> mode before doing any trig.</p>
             </ReadingSection>
           )}
-           {activeSection === 4 && (
-            <ReadingSection title="Ag Science: The Scientific Method." eyebrow="Step 5" icon={Sprout} theme={theme}>
-              <p>The new Ag Science course is a radical shift from "farming facts" to "scientific principles." The <Highlight description="An Individual Investigative Study worth 25% of the total grade. It requires a formal scientific report with a testable hypothesis, experimental design, and statistical analysis." theme={theme}>Individual Investigative Study (IIS)</Highlight> is a capstone project that demands scientific rigor. A descriptive project without a clear hypothesis will be heavily penalized.</p>
-              <p>The written paper is now more <Highlight description="Linking topics across different strands (e.g., how fertilizer use in Crops affects water quality in the Environment strand)." theme={theme}>synoptic</Highlight>, demanding critical thinking and data analysis, not just recall. Questions on experiments require the same rigor as Biology or Physics.</p>
+          {activeSection === 4 && (
+            <ReadingSection title="Ag Science: Think Like a Scientist." eyebrow="Step 5" icon={Sprout} theme={theme}>
+              <p>Ag Science has changed a lot -- it's not just about farming facts anymore, it's about thinking scientifically. The <Highlight description="This is a big research project worth 25% of your total grade. You need a clear question you can test, a proper experiment, and real data analysis. A vague or descriptive project will lose you serious marks." theme={theme}>Individual Investigative Study (IIS)</Highlight> is worth a quarter of your grade, so it needs proper effort. You need a clear, testable question and a proper write-up with real data -- not just a description of what you did.</p>
+              <p>The written paper now asks you to <Highlight description="This means connecting ideas across different parts of the course. For example, how fertiliser use in the Crops section links to water quality in the Environment section." theme={theme}>connect ideas across topics</Highlight>, not just memorise isolated facts. You might need to link something from the Crops section to the Environment section, for example. The experiment questions are just as detailed as Biology or Physics, so treat them with the same care.</p>
             </ReadingSection>
           )}
           {activeSection === 5 && (
-            <ReadingSection title="Cognitive Grade Optimization." eyebrow="Step 6" icon={BrainCircuit} theme={theme}>
-              <p>To master these diverse subjects, you must abandon passive re-reading. <Highlight description="Mixing different topics or subjects within a single study session. It feels harder but builds the crucial skill of identifying problem types." theme={theme}>Interleaving</Highlight> is superior to blocked practice for STEM subjects because it forces your brain to constantly "reload" context, strengthening retrieval pathways. A 90-minute session could involve a Physics problem, a Chemistry equation, and a Biology definition.</p>
-              <p>The most effective method for memorizing the hundreds of definitions in Biology and Ag Science is a combination of <Highlight description="Forcing your brain to retrieve information from memory (e.g., using the 'Blurting' method)." theme={theme}>Active Recall</Highlight> and <Highlight description="Using tools like Anki or Quizlet to review information at increasing intervals, combating the 'forgetting curve'." theme={theme}>Spaced Repetition</Highlight>.</p>
+            <ReadingSection title="Study Smarter for Science." eyebrow="Step 6" icon={BrainCircuit} theme={theme}>
+              <p>If you're just re-reading your notes over and over, you're wasting time. One of the best things you can do for science subjects is <Highlight description="Instead of studying one topic for ages, mix it up. Do a Physics problem, then a Chemistry equation, then a Biology definition. It feels harder, but it trains your brain to switch between different types of thinking." theme={theme}>mixing up your topics</Highlight> within a single study session. Instead of doing an hour of just Biology, try doing a Physics problem, then a Chemistry equation, then a Biology definition all in the same 90-minute block. It feels harder, but that's the point -- your brain gets better at telling different types of problems apart.</p>
+              <p>For memorising the hundreds of definitions in Biology and Ag Science, the winning combination is <Highlight description="Instead of just reading definitions, close your book and try to write them from memory. The effort of pulling the information out of your brain is what makes it stick." theme={theme}>testing yourself from memory</Highlight> and <Highlight description="Review your flashcards or notes at increasing gaps -- after 1 day, then 3 days, then a week, then a month. Free apps like Anki or Quizlet can automate this for you." theme={theme}>spacing out your revision</Highlight>. Free apps like Anki or Quizlet can handle the scheduling for you -- you just need to show up and do the reps.</p>
             </ReadingSection>
           )}
           {activeSection === 6 && (
             <ReadingSection title="Your Action Plan." eyebrow="Step 7" icon={Flag} theme={theme}>
-              <p>You now have the strategic blueprint for each of the Leaving Cert sciences. You understand the "hidden curriculum" and the specific cognitive tools required for each. The path to a H1 is not about working harder, but about working smarter, with strategic engagement with the assessment architecture.</p>
+              <p>You now know the unwritten rules for each of the Leaving Cert sciences. You know what the examiner is actually looking for and which study methods work best for these subjects. Getting a H1 isn't about grinding harder -- it's about knowing the game you're playing and making every study session count.</p>
               <MicroCommitment theme={theme}>
-                <p>Pick ONE subject. Go to the SEC website and download the most recent Chief Examiner's Report. Read only the "Recommendations to Candidates" section. You've just gained access to the official cheat sheet.</p>
+                <p>Pick ONE subject. Go to the SEC website (examinations.ie) and download the most recent Chief Examiner's Report for that subject. Read just the "Recommendations to Candidates" section. It's basically the examiner telling you exactly what to do differently -- and it's free.</p>
               </MicroCommitment>
             </ReadingSection>
           )}

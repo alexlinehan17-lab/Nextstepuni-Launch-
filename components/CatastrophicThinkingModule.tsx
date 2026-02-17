@@ -395,12 +395,12 @@ const DownwardArrowDrill = () => {
 const CatastrophicThinkingModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
     { id: 'catastrophe-machine', title: 'The Catastrophe Machine', eyebrow: '01 // The Problem', icon: MessageSquare },
-    { id: 'blank-mind', title: 'The Biology of "Blank Mind"', eyebrow: '02 // The Hardware', icon: BrainCircuit },
-    { id: 'cbt-standard', title: 'The Gold Standard (CBT)', eyebrow: '03 // The Software', icon: BookOpen },
+    { id: 'blank-mind', title: 'Why You Go "Blank"', eyebrow: '02 // What Happens in Your Brain', icon: BrainCircuit },
+    { id: 'cbt-standard', title: 'Challenging Your Thoughts (CBT)', eyebrow: '03 // The Main Approach', icon: BookOpen },
     { id: 'thought-record', title: 'The Thought Record', eyebrow: '04 // The Core Tool', icon: Wrench },
     { id: 'decatastrophize', title: 'Decatastrophizing', eyebrow: '05 // The "So What?" Drill', icon: Layers },
     { id: 'face-fear', title: 'Facing the Fear', eyebrow: '06 // Exposure', icon: Shield },
-    { id: 'observer-self', title: 'The Observer Self (ACT)', eyebrow: '07 // The Alternative', icon: Zap },
+    { id: 'observer-self', title: 'Stepping Back from Your Thoughts', eyebrow: '07 // A Different Approach', icon: Zap },
     { id: 'action-plan', title: 'The Action Plan', eyebrow: '08 // The Blueprint', icon: Flag },
   ];
 
@@ -409,7 +409,7 @@ const CatastrophicThinkingModule: React.FC<{ onBack: () => void; progress: Modul
       moduleNumber="12"
       moduleTitle="Reframing Thoughts"
       moduleSubtitle="The CBT Toolkit"
-      moduleDescription="Deconstruct the neurobiology of exam panic and learn the gold-standard psychological tools (CBT &amp; ACT) to dismantle catastrophic thinking and regain control."
+      moduleDescription="Ever had your brain spiral into worst-case scenarios before an exam? This module gives you practical tools to catch those thoughts, challenge them, and take back control."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -420,47 +420,47 @@ const CatastrophicThinkingModule: React.FC<{ onBack: () => void; progress: Modul
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Catastrophe Machine." eyebrow="Step 1" icon={MessageSquare} theme={theme}>
-              <p><Highlight description="An exaggerated negative thought process about a potential threat. It's a cognitive distortion where you magnify the consequences and underestimate your ability to cope." theme={theme}>Catastrophizing</Highlight> is the engine of exam anxiety. It's a 3-part machine: 1) <Highlight description="Repetitive, intrusive thoughts about failure." theme={theme}>Rumination</Highlight> (the thought you can't switch off), 2) <Highlight description="Blowing the consequences out of proportion (e.g., 'If I get a H4, my life is over')." theme={theme}>Magnification</Highlight> (making a mountain out of a molehill), and 3) <Highlight description="The belief that the negative outcome is inevitable and you are powerless to stop it." theme={theme}>Helplessness</Highlight> (the feeling you're powerless).</p>
+              <p><Highlight description="When your brain jumps straight to the worst possible outcome and convinces you it's definitely going to happen. Like thinking one bad mock result means your life is over." theme={theme}>Catastrophizing</Highlight> is the engine of exam anxiety. It's a 3-part machine: 1) <Highlight description="That one negative thought that plays on repeat in your head, like a song you can't get rid of." theme={theme}>Rumination</Highlight> (the thought you can't switch off), 2) <Highlight description="Making things way bigger than they actually are. Like telling yourself 'If I get a H4, my entire future is ruined.'" theme={theme}>Magnification</Highlight> (making a mountain out of a molehill), and 3) <Highlight description="That sinking feeling where you're convinced the bad thing is going to happen and there's nothing you can do about it." theme={theme}>Helplessness</Highlight> (the feeling you're powerless).</p>
             </ReadingSection>
           )}
           {activeSection === 1 && (
-            <ReadingSection title="The Biology of 'Blank Mind'." eyebrow="Step 2" icon={BrainCircuit} theme={theme}>
-              <p>Going "blank" is not a metaphor; it's a neurobiological event. When your brain perceives a threat (the exam paper), your <Highlight description="The brain's threat detection centre." theme={theme}>amygdala</Highlight> activates the stress response, flooding your system with adrenaline and cortisol. High levels of cortisol physically inhibit your <Highlight description="The brain region essential for memory retrieval." theme={theme}>hippocampus</Highlight>, blocking access to stored information. Your logical <Highlight description="The 'CEO' of the brain, responsible for planning and logic." theme={theme}>Prefrontal Cortex</Highlight> is taken offline. You haven't forgotten the information; you've just temporarily lost the password.</p>
+            <ReadingSection title="Why You Go 'Blank'." eyebrow="Step 2" icon={BrainCircuit} theme={theme}>
+              <p>Going "blank" in an exam isn't just in your head -- it's a real physical thing. When your brain decides the exam paper is a threat, your <Highlight description="The part of your brain that acts like a smoke alarm. It detects danger and hits the panic button, even when the 'danger' is just an exam paper." theme={theme}>amygdala</Highlight> triggers a stress response, flooding you with stress hormones. Those hormones basically block your <Highlight description="The part of your brain that stores and retrieves memories. When you're stressed, it gets shut down -- which is why you can't remember stuff you definitely studied." theme={theme}>hippocampus</Highlight>, which is the part that pulls up memories. Meanwhile, the <Highlight description="The part of your brain that handles logical thinking and planning. When you're panicking, it goes quiet -- which is why you can't think straight under pressure." theme={theme}>front of your brain</Highlight> -- the bit that does logical thinking -- goes quiet. You haven't forgotten the information; you've just temporarily lost the password.</p>
             </ReadingSection>
           )}
           {activeSection === 2 && (
-            <ReadingSection title="The Gold Standard (CBT)." eyebrow="Step 3" icon={BookOpen} theme={theme}>
-              <p><Highlight description="Cognitive Behavioral Therapy (CBT) is a form of psychological treatment that has been demonstrated to be effective for a range of problems including anxiety and depression." theme={theme}>Cognitive Behavioral Therapy (CBT)</Highlight> is the gold standard for dismantling this machine. Its central idea is simple but revolutionary: events don't cause your feelings; your *interpretation* of events causes your feelings. The exam paper is neutral. The thought "I can't do this" is the interpretation that triggers panic. CBT teaches you to challenge that interpretation.</p>
+            <ReadingSection title="Challenging Your Thoughts (CBT)." eyebrow="Step 3" icon={BookOpen} theme={theme}>
+              <p><Highlight description="CBT stands for Cognitive Behavioral Therapy. Basically, it's a way of noticing the thoughts that make you feel awful and learning to question whether they're actually true." theme={theme}>CBT</Highlight> is one of the most effective ways to break the panic cycle. The big idea is actually pretty simple: it's not the exam that makes you panic -- it's what you *think* about the exam. The exam paper is just paper. The thought "I can't do this" is what triggers the panic. CBT teaches you to catch that thought and challenge it.</p>
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="The Thought Record." eyebrow="Step 4" icon={Wrench} theme={theme}>
-              <p>The core tool of CBT is the <Highlight description="A structured exercise to identify, challenge, and reframe Negative Automatic Thoughts (NATs)." theme={theme}>Thought Record</Highlight>. It forces you to move from vague, emotional thinking to specific, evidence-based reasoning. By systematically examining the evidence for and against your catastrophic thought, you can generate a more balanced, realistic alternative. Run this protocol every time you feel a spike of panic.</p>
+              <p>The main tool in CBT is the <Highlight description="A step-by-step exercise where you write down the negative thought that's bothering you, look at the actual evidence for and against it, and come up with a more realistic way to see things." theme={theme}>Thought Record</Highlight>. It gets you out of your head and onto paper. Instead of spiralling with vague panic, you look at the actual facts -- what really supports this scary thought, and what goes against it? Then you come up with a more balanced take. Try using it whenever you feel panic building.</p>
               <ThoughtRecord />
             </ReadingSection>
           )}
           {activeSection === 4 && (
             <ReadingSection title="Decatastrophizing." eyebrow="Step 5" icon={Layers} theme={theme}>
-              <p>This technique doesn't promise "it will all be fine." Instead, it confronts the worst-case scenario head-on to strip it of its terror. It's called the <Highlight description="A CBT technique where you follow a catastrophic thought to its conclusion by repeatedly asking 'And then what?' to reveal that the ultimate outcome is manageable." theme={theme}>Downward Arrow</Highlight> technique. By following the "what if" chain to its end, you realize the ultimate outcome is survivable, and you create a "Plan B."</p>
+              <p>This isn't about pretending "it will all be fine." Instead, you face the worst-case scenario head-on and take away its power. It's called the <Highlight description="You take your scariest thought and keep asking 'And then what?' until you reach the end. Most of the time, you'll realise the final outcome is actually something you could deal with." theme={theme}>Downward Arrow</Highlight> technique. By following the "what if" chain all the way to the end, you usually realise the worst case is actually survivable -- and you can make a backup plan for it.</p>
               <DownwardArrowDrill />
             </ReadingSection>
           )}
           {activeSection === 5 && (
             <ReadingSection title="Facing the Fear." eyebrow="Step 6" icon={Shield} theme={theme}>
-              <p>Anxiety creates a vicious cycle of avoidance. You fear a subject, so you avoid it, which makes you unprepared, which justifies the original fear. The only way to break this cycle is <Highlight description="A behavioral technique where you face a feared stimulus in small, incremental steps, allowing your brain to 'habituate' and learn that it is not a threat." theme={theme}>Graded Exposure</Highlight>. You build a "ladder" of feared tasks, from least scary to most scary, and slowly work your way up, retraining your brain's alarm system.</p>
+              <p>Anxiety creates a vicious cycle. You're scared of a subject, so you avoid it, which means you're less prepared, which makes the fear even worse. The only way to break this is <Highlight description="Instead of diving into the scariest thing all at once, you break it into small steps -- starting with what feels easiest and gradually working up. Your brain learns that it's not as bad as it thought." theme={theme}>Graded Exposure</Highlight>. You build a "ladder" of tasks, from least scary to most scary, and work your way up step by step. Each time, your brain learns that the thing it was dreading isn't actually that bad.</p>
               <GradedExposureHierarchy/>
             </ReadingSection>
           )}
           {activeSection === 6 && (
-            <ReadingSection title="The Observer Self (ACT)." eyebrow="Step 7" icon={Zap} theme={theme}>
-              <p>For some, challenging thoughts feels like an endless argument. <Highlight description="Acceptance and Commitment Therapy (ACT) is a 'third-wave' CBT approach that focuses on changing your relationship to your thoughts, rather than the content of the thoughts themselves." theme={theme}>Acceptance and Commitment Therapy (ACT)</Highlight> offers an alternative: don't argue with the thought, just notice it and act anyway. This is called <Highlight description="The process of 'unhooking' from your thoughts, seeing them as just words passing through your mind, rather than objective truths or commands." theme={theme}>Cognitive Defusion</Highlight>.</p>
+            <ReadingSection title="Stepping Back from Your Thoughts." eyebrow="Step 7" icon={Zap} theme={theme}>
+              <p>Sometimes trying to argue with negative thoughts just makes them louder. <Highlight description="ACT is a different approach. Instead of fighting your negative thoughts, you learn to notice them without letting them control you. You accept the thought is there, but you keep doing what matters to you anyway." theme={theme}>ACT (Acceptance and Commitment Therapy)</Highlight> offers an alternative: instead of arguing with the thought, just notice it's there and keep going anyway. This is called <Highlight description="Unhooking from your thoughts. Instead of treating every thought as the truth, you learn to see them as just words passing through your head -- like background noise you don't have to obey." theme={theme}>defusion</Highlight>.</p>
               <PassengersOnBus/>
             </ReadingSection>
           )}
           {activeSection === 7 && (
             <ReadingSection title="The Action Plan." eyebrow="Step 8" icon={Flag} theme={theme}>
-              <p>You now have a complete toolkit of evidence-based psychological strategies to manage exam anxiety. You have the "software" (CBT & ACT) to go with the "hardware" optimization (sleep, nutrition) from other modules. Now it's about practice.</p>
-              <MicroCommitment theme={theme}><p>Choose ONE tool from this module--the Thought Record, Downward Arrow, or an Exposure task. Commit to using it just once this week. You're not just studying; you're becoming your own therapist.</p></MicroCommitment>
+              <p>You now have a proper toolkit for dealing with exam anxiety. You've got ways to challenge your thoughts (CBT) and ways to step back from them (ACT), alongside the physical stuff (sleep, food, exercise) from other modules. Now it's about actually using them.</p>
+              <MicroCommitment theme={theme}><p>Pick ONE tool from this module -- the Thought Record, Downward Arrow, or an Exposure task. Use it just once this week. That's it. The more you practise, the more automatic it becomes.</p></MicroCommitment>
             </ReadingSection>
           )}
         </>

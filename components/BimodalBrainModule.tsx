@@ -394,12 +394,12 @@ const IncubationEffectDemo = () => {
 // --- MODULE COMPONENT ---
 const BimodalBrainModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'two-modes', title: 'The Two Modes of Thinking', eyebrow: '01 // The Discovery', icon: Brain },
-    { id: 'focused-engine', title: 'The Focused Engine', eyebrow: '02 // Deep Work', icon: Zap },
-    { id: 'diffuse-network', title: 'The Diffuse Network', eyebrow: '03 // Creative Insights', icon: Lightbulb },
-    { id: 'toggling', title: 'Toggling the Switch', eyebrow: '04 // The Art of the Break', icon: PauseCircle },
-    { id: 'procrastination-link', title: 'The Procrastination Link', eyebrow: '05 // Why We Delay', icon: Clock },
-    { id: 'blueprint', title: 'The Bimodal Blueprint', eyebrow: '06 // Your Action Plan', icon: SlidersHorizontal },
+    { id: 'two-modes', title: 'Your Brain Has Two Gears', eyebrow: '01 // The Big Idea', icon: Brain },
+    { id: 'focused-engine', title: 'Gear One: Laser Focus', eyebrow: '02 // Locking In', icon: Zap },
+    { id: 'diffuse-network', title: 'Gear Two: The Wandering Mind', eyebrow: '03 // Letting Go', icon: Lightbulb },
+    { id: 'toggling', title: 'Switching Between Gears', eyebrow: '04 // The Art of the Break', icon: PauseCircle },
+    { id: 'procrastination-link', title: 'Why We Put Things Off', eyebrow: '05 // Why We Delay', icon: Clock },
+    { id: 'blueprint', title: 'Your Two-Gear Game Plan', eyebrow: '06 // Your Action Plan', icon: SlidersHorizontal },
   ];
 
   return (
@@ -407,7 +407,7 @@ const BimodalBrainModule: React.FC<{ onBack: () => void; progress: ModuleProgres
       moduleNumber="08"
       moduleTitle="The Bimodal Brain"
       moduleSubtitle="The Bimodal Brain"
-      moduleDescription="Your brain has two gears. Learn to switch between intense focus and creative relaxation to unlock deep learning and solve complex problems."
+      moduleDescription="Your brain has two modes — one for grinding through problems, one for creative breakthroughs. Learning when to switch between them is a game-changer for your study."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -417,36 +417,36 @@ const BimodalBrainModule: React.FC<{ onBack: () => void; progress: ModuleProgres
       {(activeSection) => (
         <>
           {activeSection === 0 && (
-            <ReadingSection title="The Two Modes of Thinking." eyebrow="Step 1" icon={Brain} theme={theme}>
-              <p>Your brain doesn't have just one mode of thinking; it has two, fundamentally different systems. The <Highlight description="A state of high-attention, analytical thought. It's what you use for solving familiar problems and executing procedures." theme={theme}>Focused Mode</Highlight> is your analytical workhorse. It's a state of intense concentration, perfect for solving a maths problem you already know how to do. The <Highlight description="A relaxed, low-attention state where your brain makes broad connections. It's the source of creative insights and 'Aha!' moments." theme={theme}>Diffuse Mode</Highlight> is your creative wanderer. It's a state of relaxed mind-wandering that allows your brain to make surprising new connections.</p>
+            <ReadingSection title="Your Brain Has Two Gears." eyebrow="Step 1" icon={Brain} theme={theme}>
+              <p>Here's something most people never get told: your brain doesn't just think one way — it has two completely different modes. <Highlight description="When you're fully locked in on something — like working through a maths problem step by step. Your brain is zoomed in and focused on the details." theme={theme}>Focused Mode</Highlight> is your "head down, get it done" gear. It's what kicks in when you're working through a maths problem you know how to solve. Then there's <Highlight description="When your mind is relaxed and wandering — like daydreaming in the shower. Your brain is making connections in the background that you'd never spot while concentrating hard." theme={theme}>Diffuse Mode</Highlight> — your "chill out and let ideas come to you" gear. It's that relaxed, mind-wandering state where your brain quietly connects dots you didn't even know were there.</p>
             </ReadingSection>
           )}
           {activeSection === 1 && (
-            <ReadingSection title="The Focused Engine." eyebrow="Step 2" icon={Zap} theme={theme}>
-                <p>The Focused Mode is like a pinball machine with tightly packed bumpers. Your thoughts bounce around in a small, localized area, working through the details of a problem you understand. This is essential for procedural fluency in subjects like Maths and Chemistry. It's the mode you're in during a Pomodoro sprint. However, if you get stuck on a new or difficult problem, this mode can be a trap. Your thoughts just keep hitting the same bumpers, leading to frustration.</p>
+            <ReadingSection title="Gear One: Laser Focus." eyebrow="Step 2" icon={Zap} theme={theme}>
+                <p>Think of Focused Mode like a pinball machine with tightly packed bumpers. Your thoughts bounce around in a small area, working through something familiar step by step. This is the gear you need for practising equations in Maths or balancing reactions in Chemistry — anything where you're following a method you've already learned. It's the mode you're in during a focused study sprint. But here's the catch: if you hit a wall on something new or tricky, this mode can actually work against you. Your thoughts just keep bouncing off the same spots, and you end up more frustrated than when you started.</p>
                 <PinballSimulator />
             </ReadingSection>
           )}
           {activeSection === 2 && (
-             <ReadingSection title="The Diffuse Network." eyebrow="Step 3" icon={Lightbulb} theme={theme}>
-                <p>The Diffuse Mode is when the bumpers are far apart. Your thoughts can travel long distances across your brain, connecting ideas from different subjects and experiences. This is where your 'Aha!' moments come from. You can't force this mode; you can only create the conditions for it to emerge. This happens when you relax your focus—by taking a walk, having a shower, or even just staring out the window.</p>
+             <ReadingSection title="Gear Two: The Wandering Mind." eyebrow="Step 3" icon={Lightbulb} theme={theme}>
+                <p>Now picture the pinball machine with the bumpers spread way apart. Your thoughts can travel across your whole brain, linking up ideas from completely different places — maybe something from History clicks with a Biology concept, or a song lyric helps you remember a formula. This is where those "Aha!" moments come from. The thing is, you can't force it. You just have to create the right conditions — go for a walk, have a shower, stare out the window for a bit. When you stop trying so hard, your brain does some of its best work.</p>
             </ReadingSection>
           )}
           {activeSection === 3 && (
-             <ReadingSection title="Toggling the Switch." eyebrow="Step 4" icon={PauseCircle} theme={theme}>
-                <p>The key to effective learning and problem-solving is learning to switch between these two modes. Work intensely in Focused Mode on a hard problem. When you get stuck, deliberately switch to Diffuse Mode by taking a break. Your brain will continue to work on the problem in the background (the <Highlight description="The subconscious processing of a problem that occurs when you are not actively thinking about it." theme={theme}>Incubation Effect</Highlight>). When you return to the problem, the solution will often seem obvious.</p>
+             <ReadingSection title="Switching Between Gears." eyebrow="Step 4" icon={PauseCircle} theme={theme}>
+                <p>This is the real skill: knowing when to switch gears. Grind away in Focused Mode on a tough problem. When you hit a wall, step away on purpose — take a break, go for a walk, do something completely different. Here's what's cool: your brain keeps working on the problem in the background even when you're not thinking about it (this is called the <Highlight description="That thing where the answer just 'pops' into your head after you've walked away from a problem for a while. Your brain was quietly working on it the whole time." theme={theme}>Incubation Effect</Highlight>). When you come back to the problem, the answer often just clicks.</p>
                 <IncubationEffectDemo />
-                <MicroCommitment theme={theme}><p>The next time you're stuck on a homework problem, don't just push harder. Get up and walk around for 5 minutes. You're not giving up; you're using a different part of your brain.</p></MicroCommitment>
+                <MicroCommitment theme={theme}><p>The next time you're stuck on a homework problem, don't just push harder. Get up and walk around for 5 minutes. You're not giving up — you're using a different part of your brain.</p></MicroCommitment>
             </ReadingSection>
           )}
           {activeSection === 4 && (
-            <ReadingSection title="The Procrastination Link." eyebrow="Step 5" icon={Clock} theme={theme}>
-                <p>Procrastination is often caused by the discomfort of entering Focused Mode for a difficult task. The solution is to use a "Diffuse Mode warm-up." Instead of trying to force yourself into a 60-minute focused session, just commit to 5 minutes. This lowers the initial barrier and allows you to ease into the task. The pain of starting is always worse than the pain of continuing.</p>
+            <ReadingSection title="Why We Put Things Off." eyebrow="Step 5" icon={Clock} theme={theme}>
+                <p>Ever notice how the hardest part of studying is just... starting? That's because your brain doesn't like the discomfort of switching into Focused Mode for something hard. It feels painful before you begin, so you scroll your phone instead. The trick? Don't tell yourself you need to study for an hour. Just commit to 5 minutes. That's it. Once you're actually going, the pain fades and it's way easier to keep at it. Starting is always the worst bit — once you're in, you're in.</p>
             </ReadingSection>
           )}
           {activeSection === 5 && (
-             <ReadingSection title="The Bimodal Blueprint." eyebrow="Step 6" icon={SlidersHorizontal} theme={theme}>
-                <p>You now have the user manual for your brain's two gears. The strategic implication is clear: your study schedule must include both focused work *and* scheduled, unstructured breaks. This is not a luxury; it's a neurobiological necessity for deep learning and creativity.</p>
+             <ReadingSection title="Your Two-Gear Game Plan." eyebrow="Step 6" icon={SlidersHorizontal} theme={theme}>
+                <p>So here's the bottom line: your study sessions need both gears. Blocks of proper, focused work AND real breaks where you actually switch off. Not "I'll check Instagram for a sec" breaks — proper ones. A walk. Some music. Staring at the ceiling. This isn't being lazy; it's how your brain actually learns. Build both into your study routine and you'll get more done in less time than if you just tried to grind for hours straight.</p>
             </ReadingSection>
           )}
         </>

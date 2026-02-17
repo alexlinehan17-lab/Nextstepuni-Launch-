@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { grayTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = grayTheme;
@@ -316,23 +316,23 @@ const ErrorLog = () => {
 // --- MODULE COMPONENT ---
 const LearningMathModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'new-game', title: 'The New Game', eyebrow: '01 // Project Maths', icon: Target },
-    { id: 'two-papers', title: 'The Two Papers', eyebrow: '02 // Technical vs. Contextual', icon: BookOpen },
-    { id: 'deep-dive', title: 'The Five Strands', eyebrow: '03 // Curriculum Deep Dive', icon: SlidersHorizontal },
-    { id: 'marking-scheme', title: 'Decoding the Scheme', eyebrow: '04 // Positive Marking', icon: Key },
-    { id: 'attempt-mark', title: 'The "Attempt Mark" Goldmine', eyebrow: '05 // Partial Credit', icon: Wrench },
-    { id: 'spotting-trends', title: 'Spotting the Trends', eyebrow: '06 // Gremlins & Hybrids', icon: Brain },
-    { id: 'examiners-mind', title: 'The Examiner\'s Mind', eyebrow: '07 // Common Errors', icon: AlertTriangle },
-    { id: 'cognitive-toolkit', title: 'The Cognitive Toolkit', eyebrow: '08 // Learning Science for Maths', icon: Brain },
-    { id: 'h1-pathway', title: 'The H1 Pathway', eyebrow: '09 // Bankable Marks', icon: PenTool },
+    { id: 'new-game', title: 'The New Game', eyebrow: '01 // What Changed', icon: Target },
+    { id: 'two-papers', title: 'The Two Papers', eyebrow: '02 // Paper 1 vs. Paper 2', icon: BookOpen },
+    { id: 'deep-dive', title: 'The Five Strands', eyebrow: '03 // What You Need to Know', icon: SlidersHorizontal },
+    { id: 'marking-scheme', title: 'How Marking Actually Works', eyebrow: '04 // Getting Marks You Deserve', icon: Key },
+    { id: 'attempt-mark', title: 'Never Leave a Question Blank', eyebrow: '05 // Free Marks', icon: Wrench },
+    { id: 'spotting-trends', title: 'Spotting the Patterns', eyebrow: '06 // Tricky Questions & Crossovers', icon: Brain },
+    { id: 'examiners-mind', title: 'What Examiners Actually Look For', eyebrow: '07 // Common Mistakes', icon: AlertTriangle },
+    { id: 'cognitive-toolkit', title: 'Study Smarter for Maths', eyebrow: '08 // How to Actually Learn This Stuff', icon: Brain },
+    { id: 'h1-pathway', title: 'The H1 Pathway', eyebrow: '09 // Locking In Top Marks', icon: PenTool },
   ];
 
   return (
     <ModuleLayout
       moduleNumber="01"
       moduleTitle="Mastering Maths"
-      moduleSubtitle="Deconstructing the Exam"
-      moduleDescription="A strategic deep-dive into the structure, marking schemes, and high-yield topics of the Leaving Cert Higher Level Maths exam."
+      moduleSubtitle="How to Beat the Exam"
+      moduleDescription="Everything you need to know about how Higher Level Maths actually works -- the papers, the marking, and the tricks that earn you extra marks."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -343,60 +343,63 @@ const LearningMathModule: React.FC<{ onBack: () => void; progress: ModuleProgres
         <>
           {activeSection === 0 && (
             <ReadingSection title="The New Game." eyebrow="Step 1" icon={Target} theme={theme}>
-              <p>Leaving Cert Maths is not the same game it used to be. The "Project Maths" initiative fundamentally changed the rules, shifting the focus from rote memorization of algorithms to genuine <Highlight description="The ability to understand the 'why' behind a mathematical rule, not just the 'how'." theme={theme}>conceptual understanding</Highlight> and problem-solving. It's a test of resilience, not just numeracy.</p>
-              <p>The introduction of the <Highlight description="The 25 extra CAO points awarded for a H6 or higher, making Maths the single most valuable subject in the points race." theme={theme}>Bonus Points</Highlight> has also changed the strategic landscape. A H6 in Maths is worth more than a H3 in any other subject. This "safety net" encourages students to aim high, but requires a deep, strategic approach to the exam.</p>
+              <p>Leaving Cert Maths is not the same game it used to be. Project Maths changed the rules -- it's no longer about memorising formulas and repeating steps. Now it's about actually <Highlight description="It's not enough to know the formula. You need to understand why it works, so you can use it in questions you've never seen before." theme={theme}>understanding why things work</Highlight> and solving problems you've never seen before. It's a test of resilience, not just number-crunching.</p>
+              <p>Then there are the <Highlight description="You get 25 extra CAO points just for getting a H6 or higher in Maths. That makes it the single most valuable subject for your points." theme={theme}>Bonus Points</Highlight> -- 25 extra CAO points just for getting a H6 or above. That means a H6 in Maths is worth more than a H3 in any other subject. It's a massive safety net, and it means aiming for Higher Level is worth it even if you're not a "maths person."</p>
+              <PersonalStory name="Aoife" role="6th Year, Tallaght">
+                <p>I nearly dropped to Ordinary Level after 5th year because I got 38% in my summer exam. But my teacher said "just try Higher for the mocks." I started using the bonus points as motivation -- even a H7 would be worth it. I ended up getting a H5 in the real thing and those 25 bonus points got me into my course. Honestly, if I'd dropped down I wouldn't have made it.</p>
+              </PersonalStory>
             </ReadingSection>
           )}
            {activeSection === 1 && (
             <ReadingSection title="The Two Papers." eyebrow="Step 2" icon={BookOpen} theme={theme}>
-              <p>The exam is split into two papers designed to test different cognitive skills. <strong>Paper 1</strong> is the <strong>"Technical"</strong> paper. It's heavily weighted towards Algebra, Calculus, and Number. It rewards <Highlight description="The ability to perform mathematical operations (like solving equations or differentiating) quickly and accurately." theme={theme}>procedural fluency</Highlight> and is less "wordy."</p>
-              <p><strong>Paper 2</strong> is the <strong>"Contextual"</strong> paper. This is the test of interpretation and spatial reasoning, covering Statistics, Probability, Geometry, and Trigonometry. It's often described as "volatile" because a single novel diagram can throw off students who rely on memorized procedures rather than a deep understanding of the concepts.</p>
+              <p>The exam is split into two papers, and they feel quite different. <strong>Paper 1</strong> is the <strong>"Technical"</strong> paper. It's mostly Algebra, Calculus, and Number -- the kind of maths where you need to be <Highlight description="Being able to do the steps quickly and accurately -- solving equations, differentiating, that kind of thing." theme={theme}>quick and accurate with the steps</Highlight>. Less reading, more doing.</p>
+              <p><strong>Paper 2</strong> is the <strong>"Contextual"</strong> paper. This covers Statistics, Probability, Geometry, and Trigonometry -- and the questions are wrapped in real-world scenarios. It's often called the "unpredictable" paper because one weird diagram can throw you off if you've only memorised methods without actually understanding the ideas behind them.</p>
               <PaperPredictorGame />
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="The Five Strands." eyebrow="Step 3" icon={SlidersHorizontal} theme={theme}>
-              <p>The syllabus is divided into five interconnected strands. Questions are deliberately <Highlight description="Requiring students to combine knowledge from multiple strands (e.g., using Algebra to solve a Geometry problem)." theme={theme}>synoptic</Highlight>, so you can't study topics in isolation.</p>
-              <p>The strands are: 1) <strong>Statistics & Probability</strong> (literacy-heavy), 2) <strong>Geometry & Trigonometry</strong> (visual and spatial), 3) <strong>Number</strong> (the foundation, including Complex Numbers), 4) <strong>Algebra</strong> (the "language" of the course), and 5) <strong>Functions & Calculus</strong> (the heavyweight of Paper 1).</p>
+              <p>The course is divided into five big areas. Here's the thing -- they're all connected. The exam deliberately mixes them together, so a question might use <Highlight description="Questions often blend topics together. You might need Algebra to solve a Geometry problem, or Probability inside a Calculus question." theme={theme}>Algebra to solve a Geometry problem</Highlight>. You can't just study one topic on its own and hope for the best.</p>
+              <p>The five areas are: 1) <strong>Statistics & Probability</strong> (lots of reading and interpreting), 2) <strong>Geometry & Trigonometry</strong> (visual, diagrams everywhere), 3) <strong>Number</strong> (the basics, including Complex Numbers), 4) <strong>Algebra</strong> (it's the language that runs through everything), and 5) <strong>Functions & Calculus</strong> (the biggest chunk of Paper 1).</p>
             </ReadingSection>
           )}
           {activeSection === 3 && (
-            <ReadingSection title="Decoding the Marking Scheme." eyebrow="Step 4" icon={Key} theme={theme}>
-              <p>Understanding how marks are awarded is your single greatest strategic asset. The SEC uses a <Highlight description="An ethos where marks are awarded for what is correct, not deducted for what is wrong. The goal is to reward any valid progress." theme={theme}>"Positive Marking"</Highlight> system. This is codified in the Scale System (A, B, C, D).</p>
-              <p><strong>Scale A</strong> (0, 10) is rare. <strong>Scale B</strong> (0, 5, 10) is "hit or miss." But <strong>Scale C</strong> (0, 3, 7, 10) and <strong>Scale D</strong> (0, 3, 5, 8, 10) are the most common. The crucial insight is the "Low Partial" mark—you can get 30% of the marks for simply writing down the correct formula and attempting to substitute a value. This is a strategic goldmine.</p>
+            <ReadingSection title="How Marking Actually Works." eyebrow="Step 4" icon={Key} theme={theme}>
+              <p>Understanding how marks are given out is honestly your biggest advantage. The SEC uses <Highlight description="You get marks for what you get right -- they don't take marks away for mistakes. Any progress you show counts." theme={theme}>"Positive Marking"</Highlight> -- they reward you for what you get right, not punish you for what you get wrong. They use a Scale System (A, B, C, D) to decide how marks are split up.</p>
+              <p><strong>Scale A</strong> (0 or 10) is rare -- it's all or nothing. <strong>Scale B</strong> (0, 5, or 10) is "hit or miss." But <strong>Scale C</strong> (0, 3, 7, 10) and <strong>Scale D</strong> (0, 3, 5, 8, 10) are the ones you'll see most. Here's the key: on a Scale D question, just writing down the right formula and plugging in one value can get you 3 marks out of 10. That's 30% for barely anything -- and it adds up fast across a whole paper.</p>
             </ReadingSection>
           )}
           {activeSection === 4 && (
-            <ReadingSection title="The 'Attempt Mark' Goldmine." eyebrow="Step 5" icon={Wrench} theme={theme}>
-              <p>The "Low Partial Credit" is your safety net. If you encounter a 10-mark question that seems impossible, simply writing down the relevant formula from the log tables and substituting one correct value often secures 3 marks. Leaving a question blank is a strategic failure of the highest order.</p>
-              <p>Accumulating these "scrap" marks across an entire paper can be the difference between a H4 and a H3. The goal is to *never get a zero*. Even on the hardest "gremlin" question, there are marks available for defining terms, writing a relevant formula, or drawing a diagram. You must train yourself to hunt for these partial marks.</p>
+            <ReadingSection title="Never Leave a Question Blank." eyebrow="Step 5" icon={Wrench} theme={theme}>
+              <p>This is the golden rule of Higher Level Maths: <strong>never, ever leave a question blank</strong>. If you hit a 10-mark question that looks impossible, just write down the relevant formula from the log tables and substitute one value. That alone often gets you 3 marks. Leaving it blank gets you zero. It's that simple.</p>
+              <p>Picking up these small marks across a whole paper can genuinely be the difference between a H4 and a H3. Your goal is to never score zero on any question. Even on the trickiest questions, there are marks going for writing a formula, defining a term, or drawing a diagram. Train yourself to hunt for those marks -- they're there for the taking.</p>
               <PartialCreditCalculator />
             </ReadingSection>
           )}
           {activeSection === 5 && (
-            <ReadingSection title="Spotting the Trends." eyebrow="Step 6" icon={Brain} theme={theme}>
-              <p>Analysis of past papers reveals clear trends. Paper 1 is seeing the rise of applied Calculus (rates of change) and Complex Numbers treated as geometry. Paper 2 is increasingly defined by its <Highlight description="Novel questions with unfamiliar diagrams or scenarios that test a student's ability to apply core principles to new situations." theme={theme}>"Gremlin" questions</Highlight> and <Highlight description="Questions that fuse topics from different strands, such as calculating the probability that a point lies within a certain geometric region." theme={theme}>Probability-Geometry hybrids</Highlight>. These questions are designed to defeat rote learning and reward flexible, conceptual understanding.</p>
+            <ReadingSection title="Spotting the Patterns." eyebrow="Step 6" icon={Brain} theme={theme}>
+              <p>If you look at past papers, clear patterns jump out. Paper 1 is asking more and more about applied Calculus (rates of change in real situations) and treating Complex Numbers like geometry. Paper 2 keeps throwing in <Highlight description="Those weird questions with diagrams or setups you've never seen before. They test whether you actually understand the ideas, not just the steps." theme={theme}>"Gremlin" questions</Highlight> -- the ones that look totally unfamiliar -- and <Highlight description="Questions that mix two topics together, like working out a probability using the area of a shape. They want to see if you can connect different ideas." theme={theme}>crossover questions</Highlight> that blend Probability with Geometry. These are designed to catch out anyone who's only memorised steps without understanding the ideas behind them.</p>
             </ReadingSection>
           )}
           {activeSection === 6 && (
-            <ReadingSection title="The Examiner's Mind." eyebrow="Step 7" icon={AlertTriangle} theme={theme}>
-              <p>The Chief Examiner's Reports highlight the most common student errors. The biggest is <Highlight description="The tendency for students to understand a concept but fail in the algebraic execution (e.g., mishandling signs, index errors)." theme={theme}>"Algebraic Fragility."</Highlight> The second is the <Highlight description="The failure to check answers for reasonableness (e.g., calculating a probability greater than 1, or a negative distance)." theme={theme}>"Check" Deficit</Highlight>. The third is the <Highlight description="The struggle to translate a 'real-world' story problem into a mathematical model, often due to over-reliance on blocked practice." theme={theme}>"Unfamiliar Context" Block</Highlight>.</p>
-              <p>A major pitfall is "forcing" an answer in "Show That" questions. It is strategically better to write, "I cannot derive the final step, but assuming x=5, I will proceed..." This allows you to gain partial credit on subsequent parts.</p>
+            <ReadingSection title="What Examiners Actually Look For." eyebrow="Step 7" icon={AlertTriangle} theme={theme}>
+              <p>The Examiner's Reports tell you exactly where students lose marks every year. The biggest one is <Highlight description="You understand the idea, but you mess up the algebra -- wrong signs, index errors, silly slips that cost you marks." theme={theme}>sloppy algebra</Highlight> -- you get the concept but mess up the execution with sign errors or index mistakes. The second is <Highlight description="Not checking if your answer makes sense. Like getting a probability of 1.3 or a negative length -- a quick check would catch those." theme={theme}>not checking your answers</Highlight> (getting a probability greater than 1 and not noticing). The third is <Highlight description="When a question is wrapped in a real-world story you haven't seen before, and you freeze because it doesn't look like your textbook." theme={theme}>freezing on unfamiliar questions</Highlight> -- when a question is wrapped in a story you've never seen, your brain goes blank.</p>
+              <p>One big trap: "Show That" questions. If you can't get to the answer they want, don't force it or fudge the working. Instead, write something like "I can't get to this result, but assuming x=5, I'll continue..." -- and then keep going. This way you can still pick up marks on the rest of the question.</p>
               <ProblemSorter />
             </ReadingSection>
           )}
           {activeSection === 7 && (
-            <ReadingSection title="The Cognitive Toolkit." eyebrow="Step 8" icon={Brain} theme={theme}>
-              <p>To overcome these challenges, you must adopt strategies from cognitive science. <Highlight description="Studying one topic intensely (e.g., Algebra all week). It creates a false sense of mastery." theme={theme}>Blocking</Highlight> fails to train strategy selection. <Highlight description="Mixing up topics within a study session (e.g., one Algebra, one Geometry, one Probability). It feels harder but builds flexible, exam-ready knowledge." theme={theme}>Interleaving</Highlight> is crucial for Maths as it mimics the exam environment.</p>
-              <p>Passive reading of notes is ineffective. <Highlight description="Closing the book and attempting to write out a proof or definition from memory. This strengthens the neural pathways." theme={theme}>Active Recall</Highlight> is essential. Finally, you must maintain an <Highlight description="A log where you categorize your mistakes (Concept, Procedural, Reading) to prevent repetition and target revision." theme={theme}>Error Log</Highlight>. The most valuable part of a past paper is the "post-mortem."</p>
+            <ReadingSection title="Study Smarter for Maths." eyebrow="Step 8" icon={Brain} theme={theme}>
+              <p>Here's how to actually get better at Maths (not just feel like you're getting better). First, stop <Highlight description="When you do nothing but Algebra questions for a whole study session. It feels productive, but you're not training your brain to switch between topics like the exam requires." theme={theme}>doing the same topic for hours</Highlight>. Instead, <Highlight description="Mix up your topics in a single study session -- do an Algebra question, then a Geometry one, then Probability. It feels harder, but it trains your brain the way the exam actually works." theme={theme}>mix up your topics</Highlight> within a single session. It feels harder, but it's closer to what the actual exam is like, and it builds the kind of knowledge that sticks.</p>
+              <p>Reading over your notes doesn't work for Maths. You need to <Highlight description="Close the book and try to do the problem from memory. If you can't, that tells you exactly what you need to work on." theme={theme}>test yourself</Highlight> -- close the book, try to do the problem, and see what happens. And keep an <Highlight description="Write down every mistake you make, sort it by type (didn't understand the idea, messed up the steps, or misread the question), and review it before exams." theme={theme}>Error Log</Highlight> -- write down every mistake you make on past papers, sort them by type, and review them. The real learning happens after you finish a past paper, when you figure out what went wrong.</p>
               <ErrorLog />
             </ReadingSection>
           )}
           {activeSection === 8 && (
             <ReadingSection title="The H1 Pathway." eyebrow="Step 9" icon={PenTool} theme={theme}>
-              <p>For students aiming for the top grade, the strategy goes beyond competence. It requires speed and tactical awareness. H1 students distinguish themselves by their fluency, completing routine Section A questions faster to "bank" time for the harder Section B questions.</p>
-              <p>The final layer of strategy is to identify and master the few things in Maths that *can* be rote-learned. These are your <Highlight description="The small number of examinable proofs (e.g., Induction, irrationality of root 2) and definitions (e.g., 'injective function'). These should be learned perfectly as they are 'free marks' when they appear." theme={theme}>"Bankable Marks."</Highlight> A small number of formal proofs and definitions are examinable. These should be learned perfectly and are 'free marks' if they appear on the day.</p>
-              <MicroCommitment theme={theme}><p>Go to your log tables. Pick one proof (e.g., Cos(A+B)). Spend 15 minutes learning it using active recall. You've just 'banked' a potential 10 marks.</p></MicroCommitment>
+              <p>If you're going for a H1, it's not just about knowing the material -- it's about speed and awareness. H1 students get through the routine Section A questions quickly so they have more time for the harder Section B questions. That speed comes from practice, not from being naturally faster.</p>
+              <p>Here's a tip: there are a handful of things in Maths that you can just learn off by heart. These are your <Highlight description="Things like the proof by induction, the proof that root 2 is irrational, or definitions like 'injective function'. Learn them perfectly -- if they come up, they're easy marks." theme={theme}>guaranteed marks</Highlight>. A few formal proofs and definitions come up regularly, and if you know them perfectly, they're basically free marks on the day.</p>
+              <MicroCommitment theme={theme}><p>Go to your log tables. Pick one proof (like the Cos(A+B) formula). Spend 15 minutes learning it by closing the book and writing it out from memory. You've just locked in a potential 10 marks.</p></MicroCommitment>
             </ReadingSection>
           )}
         </>

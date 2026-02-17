@@ -138,7 +138,7 @@ const MathsBonusVisualizer = () => {
   return (
     <div className="my-10 p-6 md:p-8 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800">
       <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">The Maths Bonus Amplifier</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Compare HL Maths (with bonus) to any other subject. See how the 25-point bonus warps the economics.</p>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Compare HL Maths (with bonus) to any other subject. See how much difference the 25-point bonus actually makes.</p>
 
       <div className="grid grid-cols-2 gap-6">
         <div className="text-center">
@@ -217,7 +217,7 @@ const H1RateDashboard = () => {
   return (
     <div className="my-10 p-6 md:p-8 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800">
       <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Subject H1 Rate Dashboard</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Real H1 percentages from recent Leaving Cert data. Sort to find the highest-probability subjects.</p>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Real H1 percentages from recent Leaving Cert results. Sort to see which subjects have the highest H1 rates.</p>
 
       <div className="flex justify-center gap-2 mb-6">
         {[
@@ -314,7 +314,7 @@ const ObjectivitySpectrum = () => {
             </MotionDiv>
           ))}
           <div className="mt-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
-            <strong className="text-zinc-900 dark:text-white">The pattern is clear:</strong> STEM subjects and Maths cluster at the objective end — a correct answer must be awarded full marks. Humanities and Arts cluster at the subjective end, where examiner discretion creates variance. For the risk-averse 625 strategy, objective subjects reduce exam-day volatility.
+            <strong className="text-zinc-900 dark:text-white">The pattern is clear:</strong> STEM subjects and Maths sit at the objective end — a right answer gets full marks, no question. Humanities and Arts sit at the subjective end, where different examiners might give different marks. If you want to reduce surprise on exam day, having more objective subjects in your mix helps.
           </div>
         </div>
       )}
@@ -372,7 +372,7 @@ const SynergyMap = ({ savedSubjects, onSave }: { savedSubjects?: string[]; onSav
 
   return (
     <div className="my-10 p-6 md:p-8 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Subject Synergy Map</h4>
+      <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Subject Overlap Map</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Select up to 7 subjects and see which share overlapping content — study one, benefit in another.</p>
       <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">{selected.length}/7 selected</p>
 
@@ -397,7 +397,7 @@ const SynergyMap = ({ savedSubjects, onSave }: { savedSubjects?: string[]; onSav
       {selected.length > 0 && (
         <div className="p-5 rounded-xl bg-zinc-50 dark:bg-zinc-800">
           <div className="flex items-center justify-between mb-3">
-            <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">Synergy Connections</p>
+            <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">Overlapping Subjects</p>
             <p className="text-sm font-bold text-zinc-900 dark:text-white">{activeSynergies.length} found</p>
           </div>
           {activeSynergies.length > 0 ? (
@@ -413,7 +413,7 @@ const SynergyMap = ({ savedSubjects, onSave }: { savedSubjects?: string[]; onSav
               ))}
             </div>
           ) : (
-            <p className="text-xs text-zinc-400 text-center py-4">No synergies between your selected subjects yet. Try adding STEM or language pairs.</p>
+            <p className="text-xs text-zinc-400 text-center py-4">No overlap between your selected subjects yet. Try adding STEM or language pairs.</p>
           )}
         </div>
       )}
@@ -435,7 +435,7 @@ const SurplusCalculator = () => {
   return (
     <div className="my-10 p-6 md:p-8 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800">
       <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">The Surplus Rule Calculator</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Marking schemes often accept more valid points than required. Calculate your safety margin.</p>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Marking schemes often accept more valid answers than the question needs. Calculate your safety margin.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <div>
@@ -613,7 +613,7 @@ const PortfolioOptimizer = ({ savedPortfolio, onSave }: { savedPortfolio?: { sub
             <div className="flex items-start gap-2 p-3 rounded-lg bg-white/10 dark:bg-zinc-900/10">
               <AlertTriangle size={16} className="shrink-0 mt-0.5 text-amber-400" />
               <p className="text-xs leading-relaxed opacity-80">
-                <strong>High-variance subjects:</strong> {analysis.riskSubjects.map(s => s.subject).join(', ')}. These have subjective marking — your grade may vary between examiners. Consider investing extra time in exam technique for these.
+                <strong>Watch out for these:</strong> {analysis.riskSubjects.map(s => s.subject).join(', ')}. These have subjective marking — your grade could depend on which examiner reads your paper. Put extra time into learning exactly what the marking scheme rewards for these subjects.
               </p>
             </div>
           )}
@@ -633,21 +633,21 @@ const PointsOptimizationModule: React.FC<{
   const { responses, saveResponse, isLoaded } = useModuleResponses('the-625-blueprint');
 
   const sections = [
-    { id: 'the-cliff', title: 'The 12-Point Cliff', eyebrow: '01 // Grade Economics', icon: TrendingDown },
-    { id: 'maths-multiplier', title: 'The Maths Multiplier', eyebrow: '02 // The Bonus Anomaly', icon: Calculator },
+    { id: 'the-cliff', title: 'The 12-Point Cliff', eyebrow: '01 // How Points Really Work', icon: TrendingDown },
+    { id: 'maths-multiplier', title: 'The Maths Multiplier', eyebrow: '02 // The 25-Point Bonus', icon: Calculator },
     { id: 'h1-probability', title: 'H1 Probability Map', eyebrow: '03 // The Data', icon: BarChart3 },
-    { id: 'objectivity-advantage', title: 'The Objectivity Advantage', eyebrow: '04 // Risk Reduction', icon: Scale },
-    { id: 'synergy-blocks', title: 'Cross-Curricular Synergy', eyebrow: '05 // Study Smarter', icon: GitBranch },
-    { id: 'surplus-rule', title: 'The Surplus Rule', eyebrow: '06 // Mark Banking', icon: Layers },
-    { id: 'your-blueprint', title: 'Your 625 Blueprint', eyebrow: '07 // Personal Optimizer', icon: Target },
+    { id: 'objectivity-advantage', title: 'The Objectivity Advantage', eyebrow: '04 // Reducing Exam-Day Risk', icon: Scale },
+    { id: 'synergy-blocks', title: 'Subject Overlap', eyebrow: '05 // Study Smarter', icon: GitBranch },
+    { id: 'surplus-rule', title: 'The Surplus Rule', eyebrow: '06 // Banking Extra Marks', icon: Layers },
+    { id: 'your-blueprint', title: 'Your 625 Blueprint', eyebrow: '07 // Your Personal Plan', icon: Target },
   ];
 
   return (
     <ModuleLayout
       moduleNumber="09"
       moduleTitle="The 625 Blueprint"
-      moduleSubtitle="The Statistical Optimization Guide"
-      moduleDescription="Treat the Leaving Cert as a mathematical optimization problem. Use real H1 rate data, grade economics, and marking scheme mechanics to engineer your maximum possible score."
+      moduleSubtitle="How to Maximise Your Points"
+      moduleDescription="The Leaving Cert is a points game — and there are smart ways to play it. Use real data on H1 rates, how points really work, and marking scheme tricks to get the most points you can."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -659,13 +659,13 @@ const PointsOptimizationModule: React.FC<{
         <>
           {activeSection === 0 && (
             <ReadingSection title="The 12-Point Cliff." eyebrow="Step 1" icon={TrendingDown} theme={theme}>
-              <p>Here is the single most important number in the Leaving Certificate: <Highlight description="The difference between an H1 (100 points) and an H2 (88 points) is 12 points — the single largest drop between any two passing grades in the system." theme={theme}>12</Highlight>. That's the number of points you lose the moment you drop from an H1 to an H2. It's the steepest cliff in the entire grading system.</p>
-              <p>Think about what that means. The difference between 89% and 90% in a single exam is not 1 point — it's <strong>12 points</strong> on the CAO scale. No other grade boundary has this kind of leverage. The drop from H2 to H3 is 11 points. From H3 to H4, it's also 11. But H1 to H2? That 12-point cliff means that for a student targeting 625, the margin for error is essentially zero. You cannot afford a single H2 in your best six subjects.</p>
-              <p>This isn't about perfectionism — it's about understanding the mathematics of the system you're operating in. The grading architecture was designed in 2017 to reduce the pressure of marginal gains, but paradoxically, at the very top, it created the most punishing boundary in the entire scale. A student scoring 89% and a student scoring 90% are separated by a single percentage point in achievement but <strong>12 points</strong> in CAO currency.</p>
+              <p>Here is the single most important number in the Leaving Cert: <Highlight description="Going from an H1 (100 points) to an H2 (88 points) costs you 12 points — that's the biggest single drop between any two passing grades." theme={theme}>12</Highlight>. That's how many points you lose the moment you drop from an H1 to an H2. It's the steepest cliff in the entire grading system.</p>
+              <p>Think about what that means. The difference between 89% and 90% in a single exam is not 1 point — it's <strong>12 points</strong> on the CAO scale. No other grade boundary hits this hard. The drop from H2 to H3 is 11 points. From H3 to H4, it's also 11. But H1 to H2? That 12-point cliff means that if you're chasing 625, there's almost no room for error. You can't afford a single H2 in your best six subjects.</p>
+              <p>This isn't about being a perfectionist — it's about understanding how the system actually works. The grading system was redesigned in 2017, but at the very top, it accidentally created the most punishing boundary on the entire scale. A student scoring 89% and a student scoring 90% are separated by a single percentage point — but <strong>12 CAO points</strong>.</p>
               <PersonalStory name="Alex" role="Founder, NextStepUni">
-                <p>I went from failing my Junior Cert to nearly 600 points in the Leaving Cert. If someone had shown me this data — the grade economics, the maths bonus, the H1 rates — when I was in 4th year, I would have saved months of wasted effort. The system has rules, and once you understand them, you stop feeling like the game is rigged against you and start playing it strategically. That's what this module is for.</p>
+                <p>I went from failing my Junior Cert to nearly 600 points in the Leaving Cert. If someone had shown me this data — how the points really work, the maths bonus, the H1 rates — when I was in 4th year, I would have saved months of wasted effort. The system has rules, and once you understand them, you stop feeling like the game is rigged against you and start playing it smart. That's what this module is for.</p>
               </PersonalStory>
-              <p>The strategic response? You don't aim for 90%. You aim for 93-95% in practice — building a buffer that absorbs exam-day volatility, unfamiliar questions, and marking variance. Use the calculator below to see exactly how each grade drop cascades through your total.</p>
+              <p>So what do you do about it? You don't just aim for 90%. You aim for 93-95% in practice — building a buffer that protects you from a bad day, unexpected questions, or tough marking. Use the calculator below to see exactly how each grade drop affects your total.</p>
               <GradeWaterfall />
               <MicroCommitment theme={theme}>
                 <p>Enter your current realistic grades into the calculator above. What's your projected total? Now change just ONE subject from H2 to H1 — notice the 12-point jump. That's the subject to prioritise this week.</p>
@@ -675,58 +675,58 @@ const PointsOptimizationModule: React.FC<{
 
           {activeSection === 1 && (
             <ReadingSection title="The Maths Multiplier." eyebrow="Step 2" icon={Calculator} theme={theme}>
-              <p>Higher Level Mathematics carries a secret weapon that no other subject has: the <Highlight description="The SEC awards an additional 25 CAO points to any student who achieves a grade of H6 or higher in Higher Level Maths. This was introduced to incentivize uptake of the subject." theme={theme}>25-point bonus</Highlight>. This single policy decision makes HL Maths the most economically valuable subject on the Leaving Cert curriculum — by a significant margin.</p>
-              <p>Let's do the maths on the Maths. An H1 in Higher Level Maths yields <strong>125 points</strong> (100 + 25 bonus). That's 25% more than the maximum possible in any other subject. But the bonus doesn't just reward top performers. An H6 in HL Maths (that's 40-49%, barely a pass) yields 46 + 25 = <strong>71 points</strong>. That's nearly equivalent to an H3 (77 points) in any other subject — where you'd need 70-79% to earn the same reward.</p>
-              <p>The implication is mathematical and unavoidable: <strong>every hour invested in HL Maths has a higher point-per-hour yield than the same hour invested in any other subject</strong>. Even if Maths is your weakest subject, the bonus points provide a buffer that justifies the additional effort. For the 625-point candidate, HL Maths isn't optional — it's the linchpin of the entire calculation.</p>
+              <p>Higher Level Maths has a secret weapon that no other subject has: the <Highlight description="You get an extra 25 CAO points just for doing Higher Level Maths, as long as you get at least an H6. No other subject gives you this." theme={theme}>25-point bonus</Highlight>. This single rule makes HL Maths the most valuable subject on the Leaving Cert — by a long way.</p>
+              <p>Let's do the maths on the Maths. An H1 in Higher Level Maths gives you <strong>125 points</strong> (100 + 25 bonus). That's 25% more than the max in any other subject. But the bonus isn't just for top students. An H6 in HL Maths (that's 40-49%, barely a pass) gives you 46 + 25 = <strong>71 points</strong>. That's nearly the same as an H3 (77 points) in any other subject — where you'd need 70-79% to earn a similar reward.</p>
+              <p>The bottom line: <strong>every hour you put into HL Maths is worth more points than the same hour in any other subject</strong>. Even if Maths is your weakest subject, the bonus points give you a cushion that makes the extra effort worth it. If you're chasing 625, HL Maths isn't optional — it's the foundation of the whole plan.</p>
               <MathsBonusVisualizer />
               <MicroCommitment theme={theme}>
-                <p>Use the tool above. Set Maths to H6 (a bare pass) and compare it to an H3 in another subject. The fact that near-equal points come from radically different percentages should change how you allocate study time this week.</p>
+                <p>Use the tool above. Set Maths to H6 (a bare pass) and compare it to an H3 in another subject. The fact that similar points come from very different percentages should change how you spend your study time this week.</p>
               </MicroCommitment>
             </ReadingSection>
           )}
 
           {activeSection === 2 && (
             <ReadingSection title="H1 Probability Map." eyebrow="Step 3" icon={BarChart3} theme={theme}>
-              <p>Not all H1s are created equal. The SEC's own data reveals dramatic differences in the percentage of students who achieve H1 grades across subjects. This isn't necessarily because some subjects are "easier" — it's because the <Highlight description="The proportion of students achieving H1 is influenced by syllabus scope, marking objectivity, cohort self-selection, and assessment structure." theme={theme}>statistical probability</Highlight> of an H1 varies based on syllabus design, marking scheme structure, and cohort composition.</p>
-              <p>Applied Maths consistently sees H1 rates exceeding 25-28%. The syllabus is concise, the exam is purely problem-solving, and there is zero subjectivity in marking. The cohort is self-selecting (strong mathematicians choose it), which contributes to the high rates — but for a strong candidate, it's among the highest-probability H1s available.</p>
-              <p>Physics and Chemistry hover around 18-22%. These subjects reward precision: exact definitions, correct formulae, and mathematical accuracy. The marking schemes are rigid. Meanwhile, English — a compulsory subject — historically sits at just 3-5% pre-pandemic (rising to 7-11% recently due to grade adjustments). Geography can be as low as 3-4%. The subjectivity of essay-based marking creates variance that pure ability cannot fully control.</p>
-              <p>This data should inform your subject selection and, critically, your <strong>effort allocation</strong>. If you're already taking a high-yield subject, protect that advantage. If you're in a low-yield subject, you need to invest disproportionately more time in exam technique to compensate for marking variance.</p>
+              <p>Not all H1s are created equal. The SEC's own data shows huge differences in the percentage of students who get H1s across different subjects. This isn't necessarily because some subjects are "easier" — it's because your <Highlight description="Your chances of getting an H1 depend on the subject itself — how it's marked, how big the course is, and who else takes it. Some subjects just have way higher H1 rates than others." theme={theme}>chances of getting an H1</Highlight> depend on the subject, how it's marked, and who else takes it.</p>
+              <p>Applied Maths consistently sees H1 rates above 25%. The course is focused, the exam is pure problem-solving, and the marking is black and white — you either got it right or you didn't. The students who pick it tend to be strong at maths already, which pushes the rates up — but for anyone decent at maths, it's one of the easiest H1s to get.</p>
+              <p>Physics and Chemistry sit around 18-22%. These subjects reward precision: exact definitions, correct formulae, and mathematical accuracy. The marking schemes are strict. Meanwhile, English — which everyone has to do — historically sits at just 3-5% for H1s (rising to 7-11% recently with grade adjustments). Geography can be as low as 3-4%. When marking is more subjective, your grade depends partly on which examiner reads your paper.</p>
+              <p>This data should shape both your subject choices and, just as importantly, <strong>where you spend your study time</strong>. If you're already taking a subject with a high H1 rate, protect that advantage. If you're in a subject where H1s are rare, you'll need to put extra time into nailing the exam technique to make up for the tougher marking.</p>
               <H1RateDashboard />
               <MicroCommitment theme={theme}>
-                <p>Sort the dashboard by H1 Rate. Find your own subjects in the list. Are you investing the most study time in your highest-yield or lowest-yield subjects? The answer might surprise you.</p>
+                <p>Sort the dashboard by H1 Rate. Find your own subjects in the list. Are you spending the most study time on the subjects where H1s are easiest or hardest to get? The answer might surprise you.</p>
               </MicroCommitment>
             </ReadingSection>
           )}
 
           {activeSection === 3 && (
             <ReadingSection title="The Objectivity Advantage." eyebrow="Step 4" icon={Scale} theme={theme}>
-              <p>There's a hidden variable that determines how much control you have over your grade: the <Highlight description="The degree to which a subject's marking scheme allows only one correct answer (objective) versus allowing examiner interpretation (subjective)." theme={theme}>objectivity</Highlight> of the marking scheme. In Maths, a correct answer is a correct answer — the examiner cannot withhold marks. In English, a brilliant essay might not resonate with a particular examiner's interpretation.</p>
-              <p>This isn't a criticism of subjective subjects — they test different and equally valuable skills. But from a pure points-maximization perspective, the distinction matters enormously. In objective subjects (Maths, Physics, Chemistry, Applied Maths, Accounting), the relationship between knowledge and grade is almost deterministic: <strong>if you know it, you get the marks</strong>. In subjective subjects (English, History, Art, Geography), there's an irreducible element of variance.</p>
-              <p>The risk-averse 625 strategy therefore favours a subject portfolio weighted towards the objective end of the spectrum. This doesn't mean avoiding subjective subjects entirely — English and Irish are compulsory, and some students genuinely excel in the humanities. But it means understanding that for every subjective subject in your portfolio, you carry more exam-day risk, and you need to compensate with superior exam technique.</p>
+              <p>There's a hidden factor that affects how much control you actually have over your grade: the <Highlight description="How much the marking is black-and-white (right or wrong answers) versus up to the examiner's judgement. In Maths, if you get the answer right, you get the marks. In English, two examiners might give the same essay different marks." theme={theme}>objectivity</Highlight> of the marking scheme. In Maths, a correct answer is a correct answer — the examiner can't withhold marks. In English, a brilliant essay might not click with a particular examiner.</p>
+              <p>This isn't a dig at subjective subjects — they test different and equally valuable skills. But when it comes to getting the most points possible, the difference matters a lot. In objective subjects (Maths, Physics, Chemistry, Applied Maths, Accounting), there's a simple rule: <strong>if you know it, you get the marks</strong>. In subjective subjects (English, History, Art, Geography), there's always some element of luck on the day.</p>
+              <p>If you're trying to maximise your points, it helps to have more objective subjects in your mix. That doesn't mean avoiding subjective subjects — English and Irish are compulsory, and plenty of students do brilliantly in the humanities. But it means knowing that for every subjective subject you take, there's more exam-day risk, and you need to put extra work into nailing the marking criteria.</p>
               <ObjectivitySpectrum />
               <MicroCommitment theme={theme}>
-                <p>Count how many of your subjects sit above 70% objectivity and how many sit below 50%. If you're heavy on the subjective side, your priority this term should be mastering the specific marking criteria (like PCLM for English) to reduce that variance.</p>
+                <p>Count how many of your subjects sit above 70% objectivity and how many sit below 50%. If most of yours are on the subjective side, your priority this term should be learning exactly what the examiner is looking for — check the marking scheme and practise giving them exactly that.</p>
               </MicroCommitment>
             </ReadingSection>
           )}
 
           {activeSection === 4 && (
-            <ReadingSection title="Cross-Curricular Synergy." eyebrow="Step 5" icon={GitBranch} theme={theme}>
-              <p>The smartest students don't just study seven separate subjects — they exploit the <Highlight description="When two subjects share overlapping content, studying one simultaneously reinforces the other, effectively giving you a 2-for-1 return on study time." theme={theme}>hidden connections</Highlight> between them. The Leaving Cert curriculum is full of overlapping content, and a strategically chosen subject combination can dramatically reduce your total cognitive load.</p>
-              <p>Consider the "Maths Block": Higher Maths, Applied Maths, and Physics. The mechanics section of Physics overlaps significantly with Applied Maths. Calculus in Maths supports both. A student studying all three is effectively getting a 3-for-1 return on certain topics. The "Life Science Block" (Biology, Chemistry, Ag Science) has similar overlaps — organic chemistry appears in both Chemistry and Biology, soil science in Ag Science relies on chemical concepts.</p>
-              <p>Even languages create synergies — the grammar structures and essay techniques used in French transfer to Spanish and German. The critical question isn't just "what subjects do I like?" but "what subjects compound each other's value when studied together?"</p>
+            <ReadingSection title="Subject Overlap." eyebrow="Step 5" icon={GitBranch} theme={theme}>
+              <p>The smartest students don't just study seven separate subjects — they take advantage of the <Highlight description="When two subjects cover similar material, studying for one helps you in the other. It's like a 2-for-1 deal on study time." theme={theme}>hidden connections</Highlight> between them. The Leaving Cert curriculum is full of overlapping content, and picking the right combination of subjects can seriously cut down on how much you need to learn overall.</p>
+              <p>Take the "Maths Block": Higher Maths, Applied Maths, and Physics. The mechanics section of Physics overlaps massively with Applied Maths. Calculus in Maths helps with both. If you're doing all three, you're basically getting a 3-for-1 deal on certain topics. The "Life Science Block" (Biology, Chemistry, Ag Science) works the same way — organic chemistry shows up in both Chemistry and Biology, and Ag Science leans on chemical concepts too.</p>
+              <p>Even languages help each other — grammar structures and essay techniques from French carry over to Spanish and German. The key question isn't just "what subjects do I like?" but "which of my subjects help each other when I study them together?"</p>
               <SynergyMap savedSubjects={responses['synergy-subjects']} onSave={(s) => saveResponse('synergy-subjects', s)} />
               <MicroCommitment theme={theme}>
-                <p>Select your actual subjects in the tool above. How many synergy connections light up? If you're getting zero connections, think about whether your study schedule could be restructured to study synergistic subjects back-to-back in the same session.</p>
+                <p>Select your actual subjects in the tool above. How many connections light up? If you're getting zero, think about whether you could rearrange your study timetable to study overlapping subjects back-to-back in the same session.</p>
               </MicroCommitment>
             </ReadingSection>
           )}
 
           {activeSection === 5 && (
             <ReadingSection title="The Surplus Rule." eyebrow="Step 6" icon={Layers} theme={theme}>
-              <p>Here's something most students don't know: in many subjects, the marking scheme contains <Highlight description="When a marking scheme lists 20 valid points for a question that only requires 10, a student can write 12-13 points. If the first few are rejected, the examiner keeps reading until full marks are reached." theme={theme}>more potential marks than the question total</Highlight>. This is the Surplus Rule, and it's the closest thing to a guaranteed-marks strategy in the Leaving Cert.</p>
-              <p>Here's how it works. A 30-mark question in Biology might require 10 Significant Relevant Points (SRPs) at 3 marks each. The marking scheme might list 20 valid points. If you write exactly 10 points and the examiner rejects 2 of them as incomplete or off-topic, you score 24/30. But if you write 13 points, you have a 3-point buffer. The examiner reads until they've awarded 30 marks, then stops. There's no penalty for extra correct information.</p>
-              <p>This applies across Biology, Geography, History, Business, and many other subjects with SRP-based marking. The H1 student doesn't write the minimum — they write the minimum plus a calculated surplus. The exact surplus depends on the question structure.</p>
+              <p>Here's something most students don't know: in many subjects, the marking scheme has <Highlight description="The marking scheme often lists way more valid points than the question actually needs. So you can write extra points as a safety net — if a couple get rejected, the examiner keeps reading until you hit full marks." theme={theme}>more valid answers than the question requires</Highlight>. This is the Surplus Rule, and it's the closest thing to a guaranteed-marks trick in the Leaving Cert.</p>
+              <p>Here's how it works. A 30-mark question in Biology might need 10 Significant Relevant Points (SRPs) at 3 marks each. But the marking scheme might list 20 valid points. If you write exactly 10 and the examiner rejects 2 as incomplete or off-topic, you score 24/30. But if you write 13 points, you've built in a safety net. The examiner reads until they've given you 30 marks, then stops. There's no penalty for writing extra correct information.</p>
+              <p>This works in Biology, Geography, History, Business, and loads of other subjects that use SRP-based marking. Students who get H1s don't just write the minimum — they write the minimum plus a few extra points as insurance. The exact number depends on the question.</p>
               <SurplusCalculator />
               <MicroCommitment theme={theme}>
                 <p>Pick your most SRP-heavy subject. Find a past paper question and its marking scheme. Count the required SRPs. Now practice answering with a surplus of +3. Time yourself — the surplus should cost you less than 2 extra minutes per question.</p>
@@ -736,13 +736,16 @@ const PointsOptimizationModule: React.FC<{
 
           {activeSection === 6 && (
             <ReadingSection title="Your 625 Blueprint." eyebrow="Step 7" icon={Target} theme={theme}>
-              <p>You now have the data. You understand the grade economics, the maths bonus multiplier, the H1 probability landscape, the objectivity advantage, the synergy between subjects, and the surplus rule. The final step is to synthesise this into a <Highlight description="A personalized analysis of your specific subject combination that identifies your projected points total, risk profile, and priority areas for improvement." theme={theme}>personal optimization plan</Highlight>.</p>
-              <p>Use the Portfolio Optimizer below to input your actual seven subjects and your honest, current grade expectations. Not your target grades — your realistic prediction based on how you're performing right now. The tool will calculate your projected total, objectivity score, and identify your highest-risk subjects.</p>
-              <p>The output isn't a judgment — it's a diagnostic. If your projected total is 560, you're not "failing." You're 65 points away, which means you need to flip approximately 5-6 subjects from H2 to H1. That's your project plan for the year. Each H2→H1 flip is worth 12 points. Focus on the subjects where the flip is most achievable — typically your highest-yield, most objective subjects first.</p>
-              <p>The post-pandemic landscape is shifting. The generous Post-Marking Adjustments of 2022-2024 are being tapered. You should prepare for 2019-standard marking rigour. That means aiming for 93-95% in practice to safely clear the 90% H1 threshold on exam day. The buffer is your insurance policy.</p>
+              <p>You now have the data. You understand how the points really work, the maths bonus, where H1s are easiest and hardest to get, the objectivity advantage, how subjects overlap, and the surplus rule. The final step is to pull it all together into a <Highlight description="A personalised look at your specific subjects, your projected points total, where you're at risk, and what to focus on to improve." theme={theme}>personal plan</Highlight>.</p>
+              <p>Use the Portfolio Optimizer below to enter your actual seven subjects and your honest, current grade expectations. Not your target grades — your realistic prediction based on how you're actually doing right now. The tool will calculate your projected total, objectivity score, and flag your highest-risk subjects.</p>
+              <p>The result isn't a judgement — it's a starting point. If your projected total is 560, you're not "failing." You're 65 points away, which means you need to bump roughly 5-6 subjects from H2 to H1. That's your plan for the year. Each H2-to-H1 jump is worth 12 points. Focus on the subjects where the jump is most realistic — usually your subjects with the highest H1 rates and most objective marking.</p>
+              <PersonalStory name="Ciara" role="6th Year, Galway">
+                <p>I was doing seven subjects and putting equal time into all of them. When I actually sat down and looked at the H1 rates and how objective each subject was, I realised I was spending hours on English essays that might get me 2 extra points, while ignoring Applied Maths where the same effort could have got me 12. Once I shifted my study time around, my mock results jumped by nearly 40 points.</p>
+              </PersonalStory>
+              <p>One more thing: marking standards are tightening. The generous adjustments from 2022-2024 are being phased out. You should prepare for tougher marking. That means aiming for 93-95% in practice to safely clear the 90% H1 threshold on exam day. The buffer is your safety net.</p>
               <PortfolioOptimizer savedPortfolio={responses['portfolio']} onSave={(p) => saveResponse('portfolio', p)} />
               <MicroCommitment theme={theme}>
-                <p>Complete the Portfolio Optimizer with your real subjects and honest grade expectations. Screenshot the result. This is your 625 Blueprint — the gap between your projected total and 625 is the exact project you need to manage between now and June.</p>
+                <p>Complete the Portfolio Optimizer with your real subjects and honest grade expectations. Screenshot the result. This is your 625 Blueprint — the gap between your projected total and 625 is exactly what you need to close between now and June.</p>
               </MicroCommitment>
             </ReadingSection>
           )}

@@ -473,7 +473,7 @@ const ArousalReappraisal = () => {
                    className="p-4 bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/50 rounded-xl text-sm"
                  >
                    <p className="font-bold text-emerald-700 dark:text-emerald-300 mb-1">Easy path.</p>
-                   <p className="text-emerald-600 dark:text-emerald-400 text-xs">Anxiety and excitement are physiologically identical — same racing heart, same adrenaline. You only need to change the label, not the state. Research shows saying "I'm excited" before a test improves performance significantly.</p>
+                   <p className="text-emerald-600 dark:text-emerald-400 text-xs">Anxiety and excitement feel the same in your body -- same racing heart, same adrenaline. You only need to change the label, not the state. People who say "I'm excited" before a test actually perform noticeably better than those who try to calm down.</p>
                  </motion.div>
                )}
              </AnimatePresence>
@@ -643,13 +643,13 @@ const BoxBreathing = () => {
 // --- MODULE COMPONENT ---
 const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'neurobiology-stress', title: 'The Neurobiology of Stress', eyebrow: '01 // The Hardware', icon: Cpu },
+    { id: 'neurobiology-stress', title: 'Why Stress Messes With Your Brain', eyebrow: '01 // The Hardware', icon: Cpu },
     { id: 'emotional-intelligence', title: 'What is Emotional Intelligence?', eyebrow: '02 // The Software', icon: Brain },
-    { id: 'self-awareness', title: 'Building Self-Awareness', eyebrow: '03 // Somatic Literacy', icon: Heart },
-    { id: 'cognitive-regulation', title: 'Cognitive Regulation (Top-Down)', eyebrow: '04 // The Mind', icon: Zap },
-    { id: 'physiological-regulation', title: 'Physiological Regulation (Bottom-Up)', eyebrow: '05 // The Body', icon: Shield },
-    { id: 'bio-support', title: 'The Bio-Support System', eyebrow: '06 // Fuel & Maintenance', icon: Utensils },
-    { id: 'integrated-timeline', title: 'The Integrated Timeline', eyebrow: '07 // The Plan', icon: ClipboardCheck },
+    { id: 'self-awareness', title: 'Reading Your Own Body', eyebrow: '03 // Early Warning Signs', icon: Heart },
+    { id: 'cognitive-regulation', title: 'Using Your Mind to Manage Stress', eyebrow: '04 // The Mind', icon: Zap },
+    { id: 'physiological-regulation', title: 'Using Your Body to Calm Down', eyebrow: '05 // The Body', icon: Shield },
+    { id: 'bio-support', title: 'Sleep, Food, and Water', eyebrow: '06 // Fuel & Maintenance', icon: Utensils },
+    { id: 'integrated-timeline', title: 'Putting It All Together', eyebrow: '07 // The Plan', icon: ClipboardCheck },
   ];
 
   return (
@@ -657,7 +657,7 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
       moduleNumber="13"
       moduleTitle="Emotional Intelligence"
       moduleSubtitle="The Stress Management Toolkit"
-      moduleDescription={`Learn the neurobiology of exam stress and master the "top-down" and "bottom-up" strategies to transform anxiety into a high-performance state.`}
+      moduleDescription={`Understand why your brain freaks out during exams and learn practical techniques -- both mental and physical -- to turn stress into something that works for you, not against you.`}
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -667,50 +667,50 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
       {(activeSection) => (
         <>
           {activeSection === 0 && (
-            <ReadingSection title="The Neurobiology of Stress." eyebrow="Step 1" icon={Cpu} theme={theme}>
-              <p>Exam stress isn't a character flaw; it's a predictable neuroendocrine response. Your brain's alarm system, the <Highlight description="The Hypothalamic-Pituitary-Adrenal axis is the body's central stress response system. When a threat is perceived, it releases a cascade of hormones, culminating in cortisol." theme={theme}>HPA Axis</Highlight>, floods your system with cortisol. In the short term, this is good--it sharpens focus. But the Leaving Cert is a chronic stressor.</p>
-              <p>Under chronic stress, high levels of cortisol effectively take your <Highlight description="The 'CEO' of your brain, responsible for planning, logic, and working memory. It is the last part of the brain to fully mature, making it vulnerable during adolescence." theme={theme}>Prefrontal Cortex (PFC)</Highlight> "offline." This is the biological reason for "going blank." Your brain has prioritized survival over cognition. Understanding this isn't an excuse; it's the first step to taking back control.</p>
+            <ReadingSection title="Why Stress Messes With Your Brain." eyebrow="Step 1" icon={Cpu} theme={theme}>
+              <p>Exam stress isn't a character flaw -- it's your brain doing exactly what it's designed to do. Your body has a built-in alarm system called the <Highlight description="Your body's built-in alarm system. When your brain senses danger (like opening an exam paper), it fires off a chain reaction that floods you with stress hormones, especially cortisol." theme={theme}>HPA Axis</Highlight>, and it floods you with stress hormones like cortisol. A small hit of cortisol actually sharpens your focus. But the Leaving Cert isn't one scary moment -- it's months of pressure, and that's where things go wrong.</p>
+              <p>When stress stays high for weeks, all that cortisol basically takes your <Highlight description="Think of this as the 'boss' part of your brain. It handles planning, logic, and holding information in your head. It's still developing in your teens, which is why stress can knock it offline so easily at your age." theme={theme}>Prefrontal Cortex (PFC)</Highlight> offline. That's the part of your brain you need for thinking, planning, and remembering. This is the real reason you "go blank" in an exam -- your brain has switched into survival mode and shut down the thinking part. Understanding this isn't an excuse; it's the first step to taking back control.</p>
               <StressResponseComparison />
               <PFCShutdownSimulator />
             </ReadingSection>
           )}
           {activeSection === 1 && (
             <ReadingSection title="What is Emotional Intelligence?" eyebrow="Step 2" icon={Brain} theme={theme}>
-              <p><Highlight description="The capacity to be aware of, control, and express one's emotions, and to handle interpersonal relationships judiciously and empathetically." theme={theme}>Emotional Intelligence (EI)</Highlight> isn't about being "nice." In an academic context, it's a set of high-level cognitive skills for monitoring and regulating your internal state. High EI doesn't mean you don't feel stress; it means you can use that stress as fuel (<Highlight description="A positive, motivating form of stress that can improve performance." theme={theme}>eustress</Highlight>) instead of letting it become a debilitating force.</p>
-              <p>For the Leaving Cert, we can break EI into three trainable skills: 1) <strong>Emotional Awareness:</strong> Noticing the physical signals of stress early. 2) <strong>Emotional Understanding:</strong> Correctly labeling the emotion. 3) <strong>Emotional Regulation:</strong> Using specific strategies to manage it.</p>
+              <p><Highlight description="Being able to notice what you're feeling, understand why, and then do something useful about it instead of just reacting on autopilot." theme={theme}>Emotional Intelligence (EI)</Highlight> isn't about being "nice." It's a practical set of skills for noticing what's going on inside you and doing something useful about it. Having good EI doesn't mean you don't feel stress -- it means you can turn that stress into fuel (<Highlight description="The good kind of stress -- the buzz you get before a match or a performance that actually helps you do better. Same racing heart, but it's working for you, not against you." theme={theme}>eustress</Highlight>) instead of letting it wreck your performance.</p>
+              <p>For the Leaving Cert, we can break EI into three skills you can actually train: 1) <strong>Emotional Awareness:</strong> Spotting the physical signs of stress early. 2) <strong>Emotional Understanding:</strong> Putting the right name on what you're feeling. 3) <strong>Emotional Regulation:</strong> Using specific techniques to manage it.</p>
             </ReadingSection>
           )}
           {activeSection === 2 && (
-            <ReadingSection title="Building Self-Awareness." eyebrow="Step 3" icon={Heart} theme={theme}>
-              <p>You can't manage what you don't measure. The first step is to develop <Highlight description="The ability to read your body's internal physical signals, such as heart rate, breathing, and muscle tension." theme={theme}>Somatic Literacy</Highlight>. Your body often registers stress before your conscious mind does. These physical signals are called <Highlight description="Physical sensations (e.g., racing heart, tight stomach) that act as early warning signs for an emotional response." theme={theme}>Somatic Markers</Highlight>.</p>
-              <p>A simple daily "Body Scan" can train your ability to notice these markers. By checking in with your body, you can catch the stress response early, before it cascades into a full-blown panic attack. It's about moving from "I'm freaking out" to "I am noticing the sensation of a rapid heartbeat."</p>
+            <ReadingSection title="Reading Your Own Body." eyebrow="Step 3" icon={Heart} theme={theme}>
+              <p>You can't manage what you don't notice. The first step is learning to read your own body -- what we call <Highlight description="Getting good at reading your own body -- noticing things like your heart speeding up, your breathing going shallow, or your shoulders tensing. It's like having an early warning system for stress." theme={theme}>Somatic Literacy</Highlight>. Your body usually picks up on stress before your brain does. Those early physical signs -- the tight stomach, the shallow breathing -- are your <Highlight description="Those physical feelings -- like a knot in your stomach or sweaty palms -- that show up before you even realise you're stressed. Your body is basically tapping you on the shoulder saying 'heads up.'" theme={theme}>Somatic Markers</Highlight>.</p>
+              <p>A quick daily "Body Scan" trains you to notice these signals. If you can catch stress early, you can deal with it before it spirals into full-on panic. It's the difference between "I'm freaking out" and "OK, my heart is racing -- I know what to do about that."</p>
             </ReadingSection>
           )}
           {activeSection === 3 && (
-            <ReadingSection title="Cognitive Regulation (Top-Down)." eyebrow="Step 4" icon={Zap} theme={theme}>
-              <p>Once you've noticed the feeling, you need to manage it with your mind. This is <Highlight description="Using your thoughts and beliefs (cognition) to influence your emotional state." theme={theme}>Top-Down Regulation</Highlight>. A counter-intuitive but powerful strategy is <Highlight description="The act of reinterpreting the meaning of a high-arousal state. Physiologically, anxiety and excitement are almost identical; the only difference is the cognitive label you apply." theme={theme}>Arousal Reappraisal</Highlight>. It's neurologically easier to shift from "anxious" to "excited" than it is to "calm down."</p>
-              <p>The second tool is <Highlight description="A core CBT technique where you challenge the validity of your negative automatic thoughts by examining the evidence for and against them." theme={theme}>Cognitive Restructuring</Highlight>. You treat your catastrophic thought ("I'm going to fail everything") like a prosecutor's claim in a courtroom and you become the defence lawyer, looking for counter-evidence.</p>
+            <ReadingSection title="Using Your Mind to Manage Stress." eyebrow="Step 4" icon={Zap} theme={theme}>
+              <p>Once you've spotted the feeling, you need to manage it with your mind. This is <Highlight description="Using your thinking to change how you feel. Basically, your mind talks your body down from the ledge." theme={theme}>Top-Down Regulation</Highlight>. One surprisingly powerful trick is <Highlight description="Relabelling your nerves as excitement. Anxiety and excitement feel almost identical in your body -- same racing heart, same adrenaline. The only real difference is the story you tell yourself about what's happening." theme={theme}>Arousal Reappraisal</Highlight>. It's actually much easier for your brain to switch from "anxious" to "excited" than it is to just "calm down."</p>
+              <p>The second tool is <Highlight description="When your brain tells you something catastrophic like 'I'm going to fail everything,' you stop and challenge it like a lawyer -- what's the actual evidence? Usually the panic is way bigger than the reality." theme={theme}>Cognitive Restructuring</Highlight>. When your brain screams "I'm going to fail everything," you treat that thought like you're a defence lawyer -- what's the actual evidence? Is it really true, or is panic doing the talking?</p>
               <ArousalReappraisal/>
             </ReadingSection>
           )}
           {activeSection === 4 && (
-            <ReadingSection title="Physiological Regulation (Bottom-Up)." eyebrow="Step 5" icon={Shield} theme={theme}>
-              <p>Sometimes, your mind is too flooded to think straight. In these moments, you need to use your body to calm your mind. This is <Highlight description="Using physiological interventions (like breathing) to change your emotional state." theme={theme}>Bottom-Up Regulation</Highlight>. The fastest tool is breathing.</p>
-              <p><Highlight description="A simple 4-4-4-4 breathing pattern that stimulates the Vagus nerve, a key part of your parasympathetic ('rest and digest') nervous system, acting as a physiological brake on the stress response." theme={theme}>Box Breathing</Highlight> is your emergency protocol for the exam hall. It's invisible and takes less than a minute to interrupt the panic loop and restore blood flow to your PFC.</p>
+            <ReadingSection title="Using Your Body to Calm Down." eyebrow="Step 5" icon={Shield} theme={theme}>
+              <p>Sometimes, your mind is too flooded to think straight. When that happens, trying to reason your way out won't work -- you need to use your body to calm your mind instead. This is <Highlight description="Using your body to calm your mind. When you're too stressed to think straight, physical tricks like breathing exercises can break the panic cycle for you." theme={theme}>Bottom-Up Regulation</Highlight>. The fastest tool you have is your breathing.</p>
+              <p><Highlight description="A dead simple breathing pattern: 4 seconds in, hold 4, out 4, hold 4. It activates your body's built-in calm-down system. You can do it silently in the exam hall and nobody will even notice." theme={theme}>Box Breathing</Highlight> is your emergency move for the exam hall. It's invisible, takes less than a minute, and it breaks the panic loop so your thinking brain can come back online.</p>
               <BoxBreathing />
             </ReadingSection>
           )}
           {activeSection === 5 && (
-            <ReadingSection title="The Bio-Support System." eyebrow="Step 6" icon={Utensils} theme={theme}>
-              <p>Emotional regulation is biologically expensive. A tired, dehydrated, or malnourished brain cannot regulate itself effectively, no matter how good your psychological tools are. Your baseline biology is non-negotiable.</p>
-              <p>The "Anti-Cortisol" diet focuses on slow-release carbs (oats) and omega-3s (fish, walnuts) to stabilize your energy. Even mild dehydration (1-2%) significantly impairs concentration. And most importantly, sleep is when your brain consolidates learning and flushes out the metabolic waste that causes "brain fog." Strategic breaks, especially using <Highlight description="Non-Sleep Deep Rest: A guided meditation protocol that rapidly reduces cortisol and replenishes dopamine, making it an ideal 'reset button' during the study day." theme={theme}>NSDR</Highlight>, are also critical for recovery.</p>
+            <ReadingSection title="Sleep, Food, and Water." eyebrow="Step 6" icon={Utensils} theme={theme}>
+              <p>Managing your emotions takes real energy. A tired, dehydrated, or hungry brain can't keep its cool, no matter how many techniques you know. Looking after the basics isn't optional -- it's the foundation everything else is built on.</p>
+              <p>For food, focus on slow-release energy like porridge and omega-3s from fish or walnuts to keep you steady. Even being slightly dehydrated tanks your concentration. And sleep is when your brain locks in what you've learned and clears out the junk that causes brain fog. During study days, short breaks using <Highlight description="Non-Sleep Deep Rest -- basically a guided relaxation where you lie down for 10-20 minutes without actually sleeping. It's a quick reset button that helps you feel sharper and less wrecked during a long study day." theme={theme}>NSDR</Highlight> are a great way to reset without losing your whole afternoon.</p>
             </ReadingSection>
           )}
           {activeSection === 6 && (
-            <ReadingSection title="The Integrated Timeline." eyebrow="Step 7" icon={ClipboardCheck} theme={theme}>
-              <p>You now have a complete toolkit of top-down and bottom-up strategies. The final step is to integrate them into a clear timeline.</p>
-              <p><strong>Months Before:</strong> Build resilience. Practice daily Body Scans and learn Box Breathing when stress is low. <strong>Morning Of:</strong> Arousal regulation is key. Eat the "Exam Breakfast," stay away from panicked friends, and use the "Get Excited" reframe. <strong>In The Hall:</strong> If panic hits, use the "Paper Panic" drill: Stop, Breathe (3 cycles of Box Breathing), Micro-PMR (clench toes), and Re-engage with the easiest question. <strong>Post-Exam:</strong> A strict Post-Mortem Ban is essential to contain anxiety for the next paper.</p>
-              <MicroCommitment theme={theme}><p>Choose one protocol from this module. Commit to practicing it for 5 minutes every day for one week. You are not just studying; you are training your nervous system.</p></MicroCommitment>
+            <ReadingSection title="Putting It All Together." eyebrow="Step 7" icon={ClipboardCheck} theme={theme}>
+              <p>You now have a full toolkit -- techniques that use your mind and techniques that use your body. The final step is knowing when to use what.</p>
+              <p><strong>Months Before:</strong> Build your foundation. Practice daily Body Scans and learn Box Breathing while stress is low so it's automatic when you need it. <strong>Morning Of:</strong> Managing your energy is everything. Eat a proper breakfast, stay away from panicked friends at the school gate, and tell yourself "I'm excited" instead of "I'm terrified." <strong>In The Hall:</strong> If panic hits, use the "Paper Panic" drill: Stop, Breathe (3 cycles of Box Breathing), clench and release your toes, and re-engage with the easiest question on the paper. <strong>Post-Exam:</strong> Do not -- absolutely do not -- compare answers with friends afterwards. It only fuels anxiety for the next paper.</p>
+              <MicroCommitment theme={theme}><p>Pick one technique from this module. Commit to practising it for 5 minutes every day for one week. This isn't just studying -- you're building a skill that kicks in automatically when you need it most.</p></MicroCommitment>
             </ReadingSection>
           )}
         </>

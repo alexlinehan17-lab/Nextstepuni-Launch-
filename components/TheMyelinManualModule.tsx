@@ -98,8 +98,8 @@ const TheMyelinManualModule: React.FC<{ onBack: () => void; progress: ModuleProg
     <ModuleLayout
       moduleNumber="02"
       moduleTitle="The Myelin Manual"
-      moduleSubtitle="The Neurobiology of Mastery"
-      moduleDescription={`Reframe "struggle" from a sign of failure into the biological trigger for building faster, more efficient brain circuits. This is the science of Deep Practice.`}
+      moduleSubtitle="How Your Brain Gets Faster"
+      moduleDescription={`That feeling of struggling with a hard question? It's not a sign you're bad at it — it's literally how your brain builds faster connections. This module shows you why the hard stuff is the stuff that works.`}
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -110,34 +110,34 @@ const TheMyelinManualModule: React.FC<{ onBack: () => void; progress: ModuleProg
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Silent Revolution." eyebrow="Step 1" icon={Cpu} theme={theme}>
-              <p>In the last module, we learned that your brain physically changes when you learn. Now, we're zooming in on the secret to mastering a skill and making it automatic. It's not just about strengthening the connections *between* brain cells (synapses). It's about upgrading the connections *themselves*.</p>
-              <p>Meet the unsung hero of your brain: the <Highlight description="A type of glial cell that produces myelin. Think of them as the expert electricians of your brain, responsible for insulating the wiring." theme={theme}>Oligodendrocyte</Highlight>. These cells are part of your 'other brain'—the glial cells—and their job is to wrap your neural circuits in a fatty insulation called <Highlight description="A lipid-rich substance that wraps around axons, acting like the plastic coating on an electrical wire. It prevents signal leakage and dramatically speeds up transmission." theme={theme}>Myelin</Highlight>. This process turns your brain's bumpy dirt roads into super-fast motorways. This isn't just about knowledge; it's about speed, precision, and automaticity.</p>
+              <p>In the last module, we learned that your brain physically changes when you learn. Now, we're looking at how you actually get good at something — how you go from slow and clunky to fast and automatic. It's not just about making connections between brain cells. It's about upgrading the wiring itself.</p>
+              <p>Meet the unsung hero of your brain: the <Highlight description="These are basically the electricians of your brain. Their whole job is to wrap insulation around your brain's wiring so signals travel faster." theme={theme}>Oligodendrocyte</Highlight>. These cells work behind the scenes, wrapping your brain's circuits in a fatty insulation called <Highlight description="A fatty coating that wraps around your brain's wires, like the plastic insulation on a phone charger cable. It stops signals from leaking and makes everything way faster." theme={theme}>Myelin</Highlight>. This wrapping turns your brain's bumpy dirt roads into super-fast motorways. It's not just about knowing things — it's about being fast, precise, and doing things on autopilot.</p>
             </ReadingSection>
           )}
            {activeSection === 1 && (
             <ReadingSection title="The Signal of Struggle." eyebrow="Step 2" icon={Zap} theme={theme}>
-                <p>How does this electrician know which wire to insulate? It listens for a specific signal. When you engage in intense, focused effort—like trying to solve a tough maths problem—your neurons fire at a very high frequency. This intense firing isn't a silent event. It causes the neuron to release chemical signals, like ATP and Glutamate, along its entire length.</p>
-                <p>These chemicals are like a frantic call to the oligodendrocyte, screaming, "This circuit is important! It's being used intensely! We need an upgrade!" The feeling of <Highlight description="From a neurobiological perspective, 'struggle' is the behavioural state that generates the high-frequency neural firing necessary to trigger activity-dependent myelination." theme={theme}>struggle</Highlight> is not a sign you're failing; it's the physical sensation of your brain sending the order to build a better, faster circuit.</p>
+                <p>So how does your brain know which wires to insulate? It listens for a signal. When you're really concentrating hard — like grinding through a tough maths question — your brain cells fire like crazy. That intense activity causes them to release chemicals along the wire, basically shouting: "This circuit is important! Upgrade it!"</p>
+                <p>Those chemicals are a direct call to the electrician cells, telling them to get wrapping. And here's the key part: that feeling of <Highlight description="That frustrated, stuck feeling when you're working on something hard? That's actually your brain sending the signal to upgrade its wiring. No struggle, no upgrade." theme={theme}>struggle</Highlight> is not a sign you're failing. It's the physical sensation of your brain placing the order for a faster, better connection.</p>
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="Deep Practice." eyebrow="Step 3" icon={SlidersHorizontal} theme={theme}>
-              <p>The specific behavior that sends this "upgrade" signal is called <Highlight description="Popularized by Daniel Coyle, it's a method of practicing that involves intense focus, operating at the edge of your ability, embracing errors, and repeating the process. It is the direct trigger for myelination." theme={theme}>Deep Practice</Highlight>. It's the opposite of passively re-reading your notes. Naive practice is easy and feels productive, but it sends a weak, background signal that doesn't trigger myelination. It creates an "illusion of competence."</p>
-              <p>Deep practice is hard, uncomfortable, and full of errors. It involves things like doing past papers without notes, forcing yourself to retrieve information from scratch, and pushing yourself just outside your comfort zone. That discomfort is the signal. It's the "heavy lifting" that tells your brain to build more muscle—or in this case, more myelin.</p>
+              <p>The type of practice that sends this "upgrade" signal is called <Highlight description="A way of practising where you really focus, push yourself to the edge of what you can do, make mistakes, fix them, and repeat. It's the kind of practice that actually triggers your brain to upgrade its wiring." theme={theme}>Deep Practice</Highlight>. It's the opposite of passively re-reading your notes. Easy practice feels productive, but it barely registers with your brain — it doesn't trigger the upgrade. It just gives you a false sense of confidence.</p>
+              <p>Deep practice is hard, uncomfortable, and full of mistakes. It means doing past papers without your notes, forcing yourself to recall things from scratch, and pushing yourself just outside your comfort zone. That discomfort is the signal. It's the heavy lifting that tells your brain to build more insulation — more myelin — around the circuits that matter.</p>
               <DeepPracticeSorter />
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="The Mastery Metaphors." eyebrow="Step 4" icon={Microscope} theme={theme}>
-              <p>To really get a grip on this, we can use a few powerful analogies for what's happening inside your head when you engage in Deep Practice.</p>
-              <p>Think of it as upgrading your home internet from dial-up to fibre optic <strong>broadband</strong>. Unmyelinated circuits are slow and have low bandwidth—they can only handle one simple idea at a time. A myelinated circuit can handle multiple complex ideas at once without "buffering." Or think of it as paving a <strong>dirt road into a motorway</strong>. The first time you learn something, it's slow and bumpy. With deep practice, you pave that road, allowing information to travel at high speed, automatically.</p>
+              <p>To really picture what's going on, here are a couple of ways to think about it.</p>
+              <p>Imagine upgrading your home internet from dial-up to fibre <strong>broadband</strong>. Before the upgrade, your brain can only handle one simple idea at a time — it buffers and lags. After deep practice wraps your circuits in myelin, you can handle multiple ideas at once without slowing down. Or think of it as paving a <strong>dirt road into a motorway</strong>. The first time you learn something, it's slow and bumpy. With deep practice, you pave that road, and information starts flowing at speed, almost on autopilot.</p>
               <MyelinWrapper/>
             </ReadingSection>
           )}
            {activeSection === 4 && (
             <ReadingSection title="The Rules of Myelination." eyebrow="Step 5" icon={Construction} theme={theme}>
-                <p>Myelination follows a few simple, non-negotiable rules. First, <strong>struggle is not optional</strong>. Easy practice doesn't send the signal. You must operate in the "sweet spot" where you're making errors and correcting them. That error-correction loop is the sound of the construction crew getting to work.</p>
-                <p>Second, <strong>it's permanent but slow</strong>. Unlike short-term memory, myelin is robust. Once a skill is wrapped, it stays with you. This is why cramming (synaptic) fails for long-term retention, but deep practice (myelin) works. But it takes time—weeks of consistent practice. You can't build a motorway overnight. Every session of deep practice adds another thin layer of tape, another ring to the tree.</p>
+                <p>There are a few simple rules here that you can't skip. First, <strong>struggle is not optional</strong>. Easy practice doesn't send the signal. You need to be in the "sweet spot" where you're making mistakes and fixing them. That loop of getting it wrong and then getting it right is what kicks off the building process.</p>
+                <p>Second, <strong>it's permanent but slow</strong>. Once a skill gets wrapped in myelin, it sticks with you for good. This is why cramming the night before doesn't last, but weeks of proper practice does. You can't build a motorway overnight. Every session of deep practice adds another thin layer of insulation, like another ring on a tree.</p>
                 <MicroCommitment theme={theme}>
                     <p>Identify your "sweet spot" for one subject. What is a task that is not too easy (you get it all right) and not too hard (you get it all wrong)? That's your target zone for the next study session.</p>
                 </MicroCommitment>

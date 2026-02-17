@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { pinkTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = pinkTheme;
@@ -232,19 +232,19 @@ const HistoryGrader = () => {
 // --- MODULE COMPONENT ---
 const MasteringTheHumanitiesModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'hidden-curriculum', title: 'The Hidden Curriculum', eyebrow: '01 // The Master Key', icon: Key },
-    { id: 'history-engine', title: 'The History Engine', eyebrow: '02 // CM + OE', icon: Landmark },
-    { id: 'geography-algorithm', title: 'The Geography Algorithm', eyebrow: '03 // SRPs', icon: Globe },
-    { id: 'universal-toolkit', title: 'The Universal Toolkit', eyebrow: '04 // The PEE Chain', icon: Brain },
-    { id: 'blueprint', title: 'Your Blueprint', eyebrow: '05 // The Action Plan', icon: Wrench },
+    { id: 'unwritten-rules', title: 'The Unwritten Rules', eyebrow: '01 // What They Don\'t Tell You', icon: Key },
+    { id: 'history-engine', title: 'How History Is Really Marked', eyebrow: '02 // CM + OE', icon: Landmark },
+    { id: 'geography-srps', title: 'How Geography Is Really Marked', eyebrow: '03 // SRPs', icon: Globe },
+    { id: 'universal-toolkit', title: 'The Essay Toolkit', eyebrow: '04 // The PEE Chain', icon: Brain },
+    { id: 'blueprint', title: 'Your Action Plan', eyebrow: '05 // What to Do Next', icon: Wrench },
   ];
 
   return (
     <ModuleLayout
       moduleNumber="07"
       moduleTitle="Mastering the Humanities"
-      moduleSubtitle="The Grade Optimisation Guide"
-      moduleDescription="Deconstruct the &quot;hidden curriculum&quot; of History, Geography, and Politics &amp; Society to transform your strategic application and maximize your grade."
+      moduleSubtitle="Your Guide to Getting Better Marks"
+      moduleDescription="History, Geography, and Politics &amp; Society each have their own unwritten rules for how marks are given. Once you know them, everything changes."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -254,34 +254,37 @@ const MasteringTheHumanitiesModule: React.FC<{ onBack: () => void; progress: Mod
       {(activeSection) => (
         <>
           {activeSection === 0 && (
-            <ReadingSection title="The Hidden Curriculum." eyebrow="Step 1" icon={Key} theme={theme}>
-              <p>In the Leaving Cert Humanities, the gap between a H3 and a H1 is rarely a lack of knowledge. It's a lack of <Highlight description="The ability to align your knowledge with the specific, often unwritten, rules of the marking scheme for each subject." theme={theme}>strategic application</Highlight>. Each subject has a "hidden curriculum" and trades in a different "currency" of marks. To succeed, you must become fluent in each of these currencies.</p>
+            <ReadingSection title="The Unwritten Rules." eyebrow="Step 1" icon={Key} theme={theme}>
+              <p>In the Leaving Cert Humanities, the gap between a H3 and a H1 is rarely about how much you know. It comes down to <Highlight description="Knowing exactly what the examiner wants and giving it to them in the right format. Each subject rewards different things." theme={theme}>knowing what to do</Highlight> with what you know. Each subject has its own unwritten rules and rewards a different type of answer. Once you figure out what each subject is actually looking for, you can start giving the examiner exactly what they want.</p>
+              <PersonalStory name="Aoife" role="6th Year, Waterford">
+                <p>I was getting H3s in History even though I knew my stuff inside out. Turns out I was writing everything I knew about a topic instead of actually answering the question. Once I understood how the marking scheme worked, I jumped to a H1 in the mocks without learning a single new fact.</p>
+              </PersonalStory>
             </ReadingSection>
           )}
           {activeSection === 1 && (
-            <ReadingSection title="The History Engine." eyebrow="Step 2" icon={Landmark} theme={theme}>
-              <p>The History essay is not marked as one piece. It's a dual-process system. The <Highlight description="Cumulative Mark (60/100): Rewards the quantity and accuracy of historical facts. The strategy is volume - aim for 8-10 dense paragraphs." theme={theme}>Cumulative Mark (CM)</Highlight> is a measure of historical content. The <Highlight description="Overall Evaluation (40/100): A qualitative multiplier that assesses the quality of your argument, its relevance to the specific question, and your historical analysis." theme={theme}>Overall Evaluation (OE)</Highlight> assesses your skill as a historian.</p>
-              <p>The classic H3 trap is maxing out the CM with a pre-learned essay but scoring low on OE because the essay doesn't answer the specific question asked. Your argument is the engine; facts are just the fuel.</p>
+            <ReadingSection title="How History Is Really Marked." eyebrow="Step 2" icon={Landmark} theme={theme}>
+              <p>Here is the thing most students do not realise: your History essay is not marked as one piece. It actually gets two separate scores. The <Highlight description="This is your facts score (out of 60). The more accurate historical detail you pack in, the higher it goes. Aim for 8-10 solid paragraphs." theme={theme}>Cumulative Mark (CM)</Highlight> is basically how many facts you include. The <Highlight description="This is your argument score (out of 40). It measures how well you actually answer the question and how good your reasoning is." theme={theme}>Overall Evaluation (OE)</Highlight> is about how well you argue your point.</p>
+              <p>The classic H3 trap? You learn an essay off by heart, dump all your facts onto the page, and score well on CM -- but you barely answer the actual question, so your OE tanks. Your argument is what drives the grade; facts are just the fuel.</p>
               <HistoryGrader/>
             </ReadingSection>
           )}
           {activeSection === 2 && (
-            <ReadingSection title="The Geography Algorithm." eyebrow="Step 3" icon={Globe} theme={theme}>
-              <p>Geography operates on a completely different logic. Its currency is the <Highlight description="A Significant Relevant Point is a single, developed piece of factual information, typically worth 2 marks. A 30-mark essay requires 15 of them." theme={theme}>Significant Relevant Point (SRP)</Highlight>. An essay is simply a container for accumulating these discrete units of information. The logic is algorithmic and quantitative.</p>
-              <p>A weak answer gives a keyword; a strong answer gives a statement plus development. For example, "Limestone dissolves" (0 marks) vs. "Carbonation occurs when rainwater absorbs CO2, forming a weak carbonic acid" (2 marks). Your job is to become an SRP-generating machine.</p>
+            <ReadingSection title="How Geography Is Really Marked." eyebrow="Step 3" icon={Globe} theme={theme}>
+              <p>Geography works completely differently to History. What matters here is the <Highlight description="An SRP is one developed fact that earns you 2 marks. A 30-mark question needs about 15 of them. Think of each one as a mini building block." theme={theme}>Significant Relevant Point (SRP)</Highlight>. A Geography essay is basically a collection of these small building blocks of information. The more solid SRPs you include, the higher your mark.</p>
+              <p>A weak answer just throws out a keyword; a strong answer develops it. For example, "Limestone dissolves" gets you nothing, but "Carbonation occurs when rainwater absorbs CO2, forming a weak carbonic acid" is worth 2 marks. The goal is to get really good at building these SRPs from any keyword.</p>
               <SRPBuilder />
             </ReadingSection>
           )}
           {activeSection === 3 && (
-            <ReadingSection title="The Universal Toolkit." eyebrow="Step 4" icon={Brain} theme={theme}>
-              <p>While the currencies differ, the underlying structure of a good argument is universal. The <Highlight description="A robust heuristic for essay writing: plan 3-4 distinct arguments, structure each paragraph using PEE, and in discursive subjects, consider 3 perspectives (Thesis, Antithesis, Synthesis)." theme={theme}>"Rule of Three"</Highlight> is a powerful framework. Plan <strong>3 core arguments</strong> for every essay. Structure each paragraph using the <strong>PEE chain</strong>: <strong>P</strong>oint (your topic sentence), <strong>E</strong>vidence (your fact, quote, or SRP), and <strong>E</strong>xplanation (the "So what?" factor that links the evidence back to your point).</p>
+            <ReadingSection title="The Essay Toolkit." eyebrow="Step 4" icon={Brain} theme={theme}>
+              <p>Even though each subject marks differently, the basic shape of a good answer is the same everywhere. The <Highlight description="A simple trick: plan 3 clear arguments for every essay, and structure each paragraph using PEE. It works in History, Geography, and Politics." theme={theme}>"Rule of Three"</Highlight> is a dead-simple approach that works across all your Humanities subjects. Plan <strong>3 clear arguments</strong> for every essay. Then structure each paragraph using the <strong>PEE chain</strong>: <strong>P</strong>oint (your opening sentence that states your argument), <strong>E</strong>vidence (the fact, quote, or SRP that backs it up), and <strong>E</strong>xplanation (the "so what?" -- why does this evidence matter and how does it support your point?).</p>
             </ReadingSection>
           )}
           {activeSection === 4 && (
-            <ReadingSection title="Your Blueprint." eyebrow="Step 5" icon={Wrench} theme={theme}>
-              <p>You now have the decryption key for the Humanities exams. You understand the different "currencies" and the universal structures. Your task now is to become a "grade engineer"--to consciously align every answer you write with the specific demands of the marking scheme.</p>
+            <ReadingSection title="Your Action Plan." eyebrow="Step 5" icon={Wrench} theme={theme}>
+              <p>You now know how the Humanities exams actually work. You know that History has two scores, that Geography runs on SRPs, and that PEE works everywhere. The next step is simple: start checking your own answers against the marking scheme every time you practise. That is what separates someone who knows the material from someone who gets the marks for it.</p>
               <MicroCommitment theme={theme}>
-                <p>Go to the SEC website and download the marking scheme for your favourite Humanities subject. Spend 10 minutes reading it. This is no longer just an exam; it's a system you are learning to master.</p>
+                <p>Go to examinations.ie and download the marking scheme for your favourite Humanities subject. Spend 10 minutes reading through it. You will start to see exactly what the examiner is looking for -- and it is probably different from what you expected.</p>
               </MicroCommitment>
             </ReadingSection>
           )}

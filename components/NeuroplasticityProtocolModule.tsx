@@ -27,8 +27,8 @@ const JugglingStudyVisualizer = () => {
 
     return (
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Juggling Study (2004)</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Proof that learning physically changes your brain's grey matter.</p>
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Juggling Study</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Proof that learning physically changes the structure of your brain.</p>
              <div className="w-full max-w-xs mx-auto h-48 flex justify-center items-end">
                 <motion.div
                     className="w-24 bg-orange-400 rounded-t-lg"
@@ -59,7 +59,7 @@ const StudyMethodGrader = () => {
              </div>
              {method &&
              <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6">
-                <h5 className="font-bold text-center">Neuroplasticity Score:</h5>
+                <h5 className="font-bold text-center">Brain-Building Score:</h5>
                 <div className="w-full h-8 bg-zinc-100 dark:bg-zinc-800 rounded-full mt-2 overflow-hidden">
                     <motion.div
                         className={`h-full rounded-full ${method === 'active' ? 'bg-emerald-500' : 'bg-rose-500'}`}
@@ -68,7 +68,7 @@ const StudyMethodGrader = () => {
                         transition={{duration: 1}}
                     />
                 </div>
-                <p className="text-xs text-center mt-2 text-zinc-500 dark:text-zinc-400">{method === 'active' ? 'High-fidelity signal sent. Brain rewiring initiated.' : 'Low-level signal. Minimal rewiring.'}</p>
+                <p className="text-xs text-center mt-2 text-zinc-500 dark:text-zinc-400">{method === 'active' ? 'Strong signal sent. Your brain is actually changing.' : 'Weak signal. Not much is changing up there.'}</p>
              </motion.div>}
         </div>
     );
@@ -199,7 +199,7 @@ const DesirePathMaker = () => {
         Desire Path Maker
       </h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">
-        Click cells to walk on them. Repeat the same path to build strong neural connections — or scatter your effort and watch them fade.
+        Click cells to walk on them. Repeat the same path to build strong connections -- or scatter your effort and watch them fade.
       </p>
 
       {/* Grid */}
@@ -231,7 +231,7 @@ const DesirePathMaker = () => {
 
       {/* Counter */}
       <p className="text-center text-sm font-semibold text-zinc-700 dark:text-zinc-300 mt-4">
-        Neural pathways strengthened: {strongPathCount(grid)}
+        Strong paths built: {strongPathCount(grid)}
       </p>
 
       {/* Controls */}
@@ -287,7 +287,7 @@ const NeuroplasticityProtocolModule: React.FC<{ onBack: () => void; progress: Mo
     { id: 'brain-renovation', title: "The Brain's Renovation", eyebrow: '02 // Sculpt & Upgrade', icon: Wrench },
     { id: 'rulebook-of-learning', title: 'The Rulebook of Learning', eyebrow: '03 // Fire Together, Wire Together', icon: BookOpen },
     { id: 'physical-evidence', title: 'The Physical Evidence', eyebrow: '04 // The Juggling Study', icon: BarChart3 },
-    { id: 'learning-blueprint', title: 'The Learning Blueprint', eyebrow: '05 // Neuro-Pedagogy', icon: ClipboardCheck },
+    { id: 'learning-blueprint', title: 'The Learning Blueprint', eyebrow: '05 // Why Some Methods Work', icon: ClipboardCheck },
     { id: 'system-maintenance', title: 'System Maintenance', eyebrow: '06 // Sleep & Stress', icon: ShieldCheck },
   ];
 
@@ -296,7 +296,7 @@ const NeuroplasticityProtocolModule: React.FC<{ onBack: () => void; progress: Mo
       moduleNumber="01"
       moduleTitle="Neuroplasticity"
       moduleSubtitle="Your Brain's User Manual"
-      moduleDescription="Discover that your brain isn't fixed. Learn the science of how your brain physically changes when you study, and how to use this to your advantage."
+      moduleDescription="Your brain isn't stuck the way it is -- it physically changes shape when you learn new things. This module shows you how that works and how to make it work for you."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -307,43 +307,43 @@ const NeuroplasticityProtocolModule: React.FC<{ onBack: () => void; progress: Mo
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Plastic Brain." eyebrow="Step 1" icon={BrainCircuit} theme={theme}>
-              <p>For decades, scientists believed your brain was like concrete: it set early in life and couldn't be changed. You were born with a certain level of "smartness," and that was it. We now know this is completely wrong. Your brain is more like plasticine: it is constantly being reshaped by your experiences, thoughts, and actions.</p>
-              <p>This ability to change is called <Highlight description="The brain's ability to modify its own structure and function in response to experience. It's the biological process that underpins all learning and skill acquisition." theme={theme}>Neuroplasticity</Highlight>. During your teenage years, your brain is more 'plastic' than at almost any other time in your life. It's a period of massive reorganization. Understanding how this process works isn't just interesting science; it's the user manual for your own brain.</p>
+              <p>People used to think your brain was basically set in stone by the time you were a kid. You were either "smart" or you weren't, and that was that. Turns out, that's completely wrong. Your brain is more like plasticine -- it's constantly being reshaped by what you do, what you think about, and what you practise.</p>
+              <p>This ability to change is called <Highlight description="Your brain's ability to physically reshape itself based on what you do and learn. It's basically why practice actually works -- your brain literally builds new wiring for the things you repeat." theme={theme}>Neuroplasticity</Highlight>. And here's the thing: during your teenage years, your brain is more changeable than at almost any other point in your life. It's going through a massive rebuild. Understanding how this works is basically having a cheat code for your own brain.</p>
             </ReadingSection>
           )}
            {activeSection === 1 && (
             <ReadingSection title="The Brain's Renovation." eyebrow="Step 2" icon={Wrench} theme={theme}>
-              <p>Your brain is undergoing two massive renovation projects at once. The first is <Highlight description="The process where the brain eliminates weak or unused synaptic connections. It's like a sculptor chipping away unnecessary stone to reveal the statue underneath. It makes the brain more efficient." theme={theme}>Synaptic Pruning</Highlight>. Your brain is like a gardener, trimming away the connections you don't use to free up resources for the ones you do. This is the "use it or lose it" principle in action. If you don't practice something, your brain physically dismantles the wiring for it.</p>
-              <p>The second project is <Highlight description="The process of coating axons in a fatty sheath called myelin. This insulation makes nerve signals travel up to 100 times faster, allowing for quicker and more synchronized thinking." theme={theme}>Myelination</Highlight>. Think of this as upgrading a bumpy country road to a motorway. Your brain wraps insulation (myelin) around the neural pathways you use often, making them super-fast and efficient. Practice doesn't just make perfect; it makes *faster*.</p>
+              <p>Your brain is doing two big renovation jobs at once right now. The first is <Highlight description="Your brain cutting away connections you don't use anymore. Think of it like a gardener trimming dead branches so the healthy ones get more energy. It makes your brain faster and more efficient." theme={theme}>Synaptic Pruning</Highlight>. Basically, your brain is like a gardener, trimming away the connections you don't use to free up energy for the ones you do. This is "use it or lose it" in action. If you stop practising something, your brain actually takes apart the wiring for it.</p>
+              <p>The second job is <Highlight description="Your brain wrapping insulation around the pathways you use a lot, like upgrading a country lane to a motorway. It makes signals travel way faster, so you can think and react quicker." theme={theme}>Myelination</Highlight>. Think of this as upgrading a bumpy country road to a motorway. Your brain wraps insulation around the pathways you use often, making them super-fast and efficient. Practice doesn't just make perfect -- it makes things *faster*.</p>
             </ReadingSection>
           )}
            {activeSection === 2 && (
             <ReadingSection title="The Rulebook of Learning." eyebrow="Step 3" icon={BookOpen} theme={theme}>
-              <p>How does your brain know which connections to prune and which to myelinate? It follows a simple, powerful rule from 1949 known as <Highlight description="The foundational principle of neuroplasticity, often summarized as 'Cells that fire together, wire together.' It means that when two neurons are active at the same time, the connection between them gets stronger." theme={theme}>Hebbian Theory</Highlight>: "Cells that fire together, wire together." Every time you have a thought or practice a skill, you're sending an electrical signal through a chain of neurons. The more you fire that chain, the stronger the physical connections between those neurons become.</p>
-              <p>We can think of this with two analogies. For strengthening connections, imagine a field of tall grass. The first time you walk across (study a topic once), you bend the grass, but it springs back. If you walk the same "Desire Path" repeatedly, you wear a permanent trail. For speed, think of an "Orchestra." To make music, different sections need their signals to arrive at the same time. Myelination is your brain's conductor, adjusting the speed of different pathways so your thoughts are perfectly timed and synchronized.</p>
+              <p>So how does your brain know which connections to keep and which to get rid of? It follows one simple rule: <Highlight description="The basic idea is 'cells that fire together, wire together.' When you practise something and the same brain cells keep activating together, the connection between them gets physically stronger. That's literally how you learn." theme={theme}>"Cells that fire together, wire together"</Highlight>. Every time you think about something or practise a skill, you're sending an electrical signal through a chain of brain cells. The more you fire that same chain, the stronger the physical connections between those cells become.</p>
+              <p>Here are two ways to picture it. For strengthening connections, imagine a field of tall grass. The first time you walk across it (studying a topic once), you bend the grass, but it springs back. If you walk the same path over and over, you wear a permanent trail. For speed, think of an orchestra. To make music, different sections need their signals to arrive at the same time. Your brain's insulation works like a conductor, adjusting the speed of different pathways so your thoughts are perfectly timed.</p>
               <DesirePathMaker />
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="The Physical Evidence." eyebrow="Step 4" icon={BarChart3} theme={theme}>
-              <p>This isn't just a theory; we can see it happen. In a landmark 2004 study, scientists took brain scans of people who had never juggled before. Then, they taught them to juggle and scanned their brains again after three months of practice. The result? A measurable, physical increase in the amount of grey matter in the parts of the brain responsible for tracking moving objects.</p>
-              <p>But here's the crucial part: they then told the jugglers to stop practicing for three months. The final brain scan showed that those same areas of the brain had shrunk back down again. This is the "use it or lose it" principle in action. Your brain is an efficient machine; it will not waste energy maintaining a skill you aren't using. Your intelligence is not fixed; it is a dynamic landscape that you are actively shaping every day.</p>
+              <p>This isn't just a nice idea -- you can actually see it happening on brain scans. In one well-known experiment, scientists scanned the brains of people who had never juggled. Then they taught them to juggle and scanned them again after three months of practice. The result? The parts of the brain used for tracking moving objects had physically grown.</p>
+              <p>But here's the key part: they then told the jugglers to stop practising for three months. The final brain scan showed those same areas had shrunk back down again. Use it or lose it. Your brain is efficient -- it won't waste energy keeping up a skill you've stopped using. The takeaway? Your brain isn't fixed. It's changing shape based on what you do every single day.</p>
               <JugglingStudyVisualizer />
             </ReadingSection>
           )}
           {activeSection === 4 && (
             <ReadingSection title="The Learning Blueprint." eyebrow="Step 5" icon={ClipboardCheck} theme={theme}>
-                <p>This science gives us a blueprint for effective learning. It tells us *why* certain study techniques work and others don't. For example, <Highlight description="Reviewing material at increasing intervals (e.g., 1 day, 3 days, 1 week). This strategy works by reactivating neural pathways just as they begin to weaken, signaling to the brain that they are important and should be kept." theme={theme}>Spaced Repetition</Highlight> is powerful because it's the biological signal to "keep this connection" and "myelinate this pathway." Cramming, on the other hand, is like a single, intense stampede across the grass--it doesn't create a lasting path.</p>
-                <p>Similarly, <Highlight description="Forcing your brain to retrieve information from scratch (e.g., using flashcards or practice tests) instead of passively re-reading it. This high-effort activity generates a much stronger 'fire together, wire together' signal." theme={theme}>Active Recall</Highlight> is far more effective than passive re-reading. Why? Because re-reading is a low-effort task that sends a weak signal. Active recall forces your brain to reconstruct the entire neural pathway from scratch, generating an intense "coincidence detection" signal that triggers powerful synaptic strengthening.</p>
+                <p>All of this tells us *why* certain study techniques actually work and others are a waste of time. For example, <Highlight description="Going back over material at spaced-out intervals -- like reviewing something after 1 day, then 3 days, then a week. It works because you're reminding your brain 'hey, keep this connection' just before it starts to fade." theme={theme}>Spaced Repetition</Highlight> works because it tells your brain "this is important, keep this pathway." Cramming, on the other hand, is like one intense stampede across the grass -- it doesn't create a trail that lasts.</p>
+                <p>Same idea with <Highlight description="Instead of just re-reading your notes, you close the book and try to remember the material from scratch -- using flashcards, practice questions, or just explaining it to yourself. It's harder, but that effort is what forces your brain to actually strengthen the connection." theme={theme}>Active Recall</Highlight>. It's way more effective than just reading over your notes again. Why? Because re-reading is easy, so it sends a weak signal to your brain. Active recall forces your brain to rebuild the whole connection from scratch, and that effort is what makes it stick.</p>
                 <StudyMethodGrader />
             </ReadingSection>
           )}
            {activeSection === 5 && (
             <ReadingSection title="System Maintenance." eyebrow="Step 6" icon={ShieldCheck} theme={theme}>
-                <p>Finally, your brain's ability to change depends on how well you maintain it. Sleep isn't a luxury; it's the brain's cleaning and filing cycle. During deep sleep, your brain scales down the synaptic connections you made during the day, keeping the important ones and getting rid of the noise. Without enough sleep, your brain becomes saturated and "noisy," making it impossible to learn new things.</p>
-                <p>Stress is the other enemy of plasticity. Chronic stress floods your brain with cortisol, a hormone that actively inhibits the growth of new connections and can even accelerate pruning in important areas like your memory centres. Managing stress isn't just for your mental health; it's a prerequisite for effective learning. By understanding these biological rules, you can stop working against your brain and start working with it.</p>
+                <p>Your brain's ability to change depends on how well you look after it. Sleep isn't a luxury -- it's when your brain does its filing and cleaning. While you're asleep, your brain sorts through the connections you made during the day, keeps the important ones, and clears out the junk. Without enough sleep, your brain gets overloaded and can't take in new stuff properly.</p>
+                <p>Stress is the other thing that gets in the way. When you're constantly stressed, your body releases a hormone called cortisol that actually blocks your brain from building new connections -- and can even speed up the loss of existing ones, especially around memory. Looking after your stress levels isn't just about feeling better; it directly affects how well you can learn. Once you understand these basics, you can stop accidentally working against your brain and start working with it.</p>
                 <MicroCommitment theme={theme}>
-                    <p>Tonight, put your phone away 30 minutes before you plan to sleep. This small act of "sleep hygiene" can have a huge impact on your brain's ability to consolidate what you learned today.</p>
+                    <p>Tonight, put your phone away 30 minutes before you go to sleep. It's a small change, but it makes a real difference to how well your brain locks in everything you learned today.</p>
                 </MicroCommitment>
             </ReadingSection>
           )}

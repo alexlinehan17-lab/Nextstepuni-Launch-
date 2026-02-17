@@ -346,11 +346,11 @@ const GuiltSpiralComparison = () => {
                     <div className="grid md:grid-cols-2 gap-4 text-sm">
                         <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
                             <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
-                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Self-punishment</strong> after procrastination feels productive but creates a feedback loop. Guilt &#8594; avoidance &#8594; more guilt. Within days, you're stuck in learned helplessness.</p>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Self-punishment</strong> after procrastinating feels like you're being responsible, but it just makes things worse. Guilt &#8594; avoidance &#8594; more guilt. Within days, you feel completely stuck.</p>
                         </div>
                         <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
                             <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
-                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Self-forgiveness</strong> breaks the loop. Acknowledging the slip without judgement allows your prefrontal cortex to re-engage. Research shows self-forgivers procrastinate less next time.</p>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Self-forgiveness</strong> breaks the loop. When you accept the slip without hammering yourself, your brain calms down enough to actually get back to work. People who forgive themselves for procrastinating end up procrastinating less next time.</p>
                         </div>
                     </div>
                 </motion.div>
@@ -403,7 +403,7 @@ const ProcrastinationModule: React.FC<{ onBack: () => void; progress: ModuleProg
       moduleNumber="11"
       moduleTitle="Understanding Procrastination"
       moduleSubtitle="The Architecture of Delay"
-      moduleDescription={`Go beyond "laziness" and understand the real science of why you delay. Learn to master your motivation with evidence-based strategies.`}
+      moduleDescription={`Procrastination isn't laziness -- your brain is just wired to avoid things that feel bad. Once you understand what's actually going on, you can start beating it.`}
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -414,32 +414,32 @@ const ProcrastinationModule: React.FC<{ onBack: () => void; progress: ModuleProg
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Real Reason You Delay." eyebrow="Step 1" icon={HeartPulse} theme={theme}>
-              <p>Procrastination is not laziness. It is an <Highlight description="An emotion-regulation strategy where the brain prioritizes short-term mood repair over long-term goals. You're not avoiding the task; you're avoiding the negative emotion the task triggers." theme={theme}>emotional regulation problem</Highlight>. When you look at a maths textbook and feel a wave of dread, your brain's primary goal shifts from "learn calculus" to "make this feeling go away." The easiest way to do that? Avoid the task entirely.</p>
+              <p>Procrastination is not laziness. It is an <Highlight description="Your brain would rather feel okay right now than do something hard for later. You're not dodging the task itself -- you're dodging the bad feeling the task gives you." theme={theme}>emotional regulation problem</Highlight>. When you look at a maths textbook and feel a wave of dread, your brain's primary goal shifts from "learn calculus" to "make this feeling go away." The easiest way to do that? Avoid the task entirely.</p>
               <p>This is a critical reframe. You are not broken or lazy. Your brain is doing exactly what it's designed to do: protect you from perceived threats. The problem is that it has miscategorized a maths book as a threat. Understanding this is the first step to dismantling the cycle.</p>
             </ReadingSection>
           )}
           {activeSection === 1 && (
             <ReadingSection title="The Amygdala Hijack." eyebrow="Step 2" icon={Brain} theme={theme}>
-              <p>The neural mechanism behind procrastination is a battle between two brain regions. Your <Highlight description="The brain's threat-detection centre. It triggers the fight-or-flight response when it perceives danger, including the 'danger' of a difficult or boring task." theme={theme}>amygdala</Highlight> (the alarm system) fires a distress signal when it detects a threatening task. Your <Highlight description="The 'CEO' of the brain, responsible for planning, impulse control, and long-term decision-making. In adolescence, it is still developing, making it easier for the amygdala to 'win'." theme={theme}>Prefrontal Cortex (PFC)</Highlight> (the CEO) should override this, but in the adolescent brain, it's still under construction.</p>
-              <p>The result is an <Highlight description="When the emotional brain (amygdala) overwhelms the rational brain (PFC), hijacking your decision-making. This is why you 'know' you should study but still reach for your phone." theme={theme}>Amygdala Hijack</Highlight>. Your emotional brain overwhelms your rational brain. This is why "just try harder" is useless advice. You need strategies that work *with* your brain's architecture, not against it.</p>
+              <p>Procrastination is basically a tug-of-war inside your head between two parts of your brain. Your <Highlight description="The part of your brain that acts like a smoke alarm. It goes off when it senses danger -- and unfortunately, it treats a hard maths problem the same as an actual threat." theme={theme}>amygdala</Highlight> (the alarm system) freaks out when it spots something that feels threatening. Your<Highlight description="The boss of your brain -- it handles planning, self-control, and thinking about the future. The catch? At your age, it's still being built, so your alarm system can easily overrule it." theme={theme}>Prefrontal Cortex (PFC)</Highlight> (the boss) is supposed to step in and calm things down, but at your age, it's still being built -- so it often loses the fight.</p>
+              <p>The result is an <Highlight description="When your emotional brain completely takes over your logical brain. It's why you can know you should be studying but still end up scrolling your phone without even deciding to." theme={theme}>Amygdala Hijack</Highlight>. Your emotional brain steamrolls your logical brain. That's why "just try harder" is useless advice. You need tricks that work *with* how your brain actually works, not against it.</p>
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="The Procrastination Equation." eyebrow="Step 3" icon={Calculator} theme={theme}>
-              <p>Psychologist Piers Steel formalized procrastination into a single equation: <Highlight description="Motivation = (Expectancy x Value) / (Impulsiveness x Delay). This formula shows that your motivation to do a task is determined by four variables you can consciously manipulate." theme={theme}>Motivation = (Expectancy x Value) / (Impulsiveness x Delay)</Highlight>. This gives you four levers to pull.</p>
+              <p>There's actually a formula that explains procrastination: <Highlight description="Your motivation comes down to four things you can actually control: how confident you feel, how much the task matters to you, how easily you get distracted, and how far away the deadline is." theme={theme}>Motivation = (Expectancy x Value) / (Impulsiveness x Delay)</Highlight>. This gives you four levers to pull.</p>
               <p><strong>Expectancy:</strong> Your belief you can succeed. Low confidence = high procrastination. <strong>Value:</strong> How rewarding or meaningful the task feels. <strong>Impulsiveness:</strong> Your susceptibility to distractions. <strong>Delay:</strong> How far away the deadline is. A task that is boring, feels impossible, is easily interrupted, and has a distant deadline is a recipe for maximum procrastination.</p>
               <ProcrastinationEquation />
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="The Ego's Defence System." eyebrow="Step 4" icon={Shield} theme={theme}>
-              <p>Procrastination is also a <Highlight description="A psychological strategy to protect your self-image. By not trying, you can attribute failure to lack of effort rather than lack of ability, which is less threatening to your ego." theme={theme}>self-handicapping strategy</Highlight>. If you don't study and get a bad grade, you can tell yourself: "Well, I didn't really try." This protects your ego from the more terrifying conclusion: "I tried my best and I'm still not good enough."</p>
-              <p>This is a Faustian bargain. You trade long-term success for short-term psychological safety. Recognizing this pattern is crucial. The antidote is a <Highlight description="The belief that your abilities can be developed through effort. It decouples your performance from your identity, making failure a data point, not a verdict." theme={theme}>Growth Mindset</Highlight>, which makes failure safe by redefining it as a learning event, not a measure of your worth.</p>
+              <p>Procrastination is also a <Highlight description="A sneaky way your brain protects your self-image. If you don't try, you can always blame the result on not trying -- which feels way less scary than trying your best and still falling short." theme={theme}>self-handicapping strategy</Highlight>. If you don't study and get a bad grade, you can tell yourself: "Well, I didn't really try." This protects your ego from the more terrifying conclusion: "I tried my best and I'm still not good enough."</p>
+              <p>It's a bad deal. You trade long-term success for short-term comfort. But once you spot the pattern, you can break it. The fix is a <Highlight description="Believing that you can get better at things through effort. When you think this way, a bad result just means 'I need more practice' instead of 'I'm not smart enough.'" theme={theme}>Growth Mindset</Highlight> -- which makes it safe to fail, because a bad result just means "I need to try differently" instead of "I'm not good enough."</p>
             </ReadingSection>
           )}
           {activeSection === 4 && (
             <ReadingSection title="The Guilt Cycle." eyebrow="Step 5" icon={RotateCcw} theme={theme}>
-              <p>Most people respond to procrastination with self-criticism: "I'm so lazy. What's wrong with me?" This feels like accountability, but it's actually the worst thing you can do. Self-criticism generates <Highlight description="A negative emotional state that, ironically, fuels the very avoidance cycle it's trying to break. More guilt leads to more negative emotion, which leads to more avoidance." theme={theme}>guilt and shame</Highlight>, which are negative emotions. And what does your brain do with negative emotions? It tries to avoid them--by procrastinating more.</p>
+              <p>Most people respond to procrastination with self-criticism: "I'm so lazy. What's wrong with me?" This feels like accountability, but it's actually the worst thing you can do. Self-criticism generates <Highlight description="That horrible sinking feeling after you've wasted time. The cruel twist is that feeling guilty makes you want to avoid even more, which creates even more guilt. It feeds itself." theme={theme}>guilt and shame</Highlight>, which are negative emotions. And what does your brain do with negative emotions? It tries to avoid them--by procrastinating more.</p>
               <p>This creates a vicious downward spiral: Procrastinate &#8594; Feel Guilty &#8594; More Negative Emotion &#8594; Procrastinate More &#8594; Feel More Guilty. "Tough love" doesn't break this cycle; it accelerates it.</p>
               <GuiltSpiralComparison />
               <GuiltSpiral />
@@ -447,21 +447,21 @@ const ProcrastinationModule: React.FC<{ onBack: () => void; progress: ModuleProg
           )}
           {activeSection === 5 && (
             <ReadingSection title="The Forgiveness Protocol." eyebrow="Step 6" icon={HeartHandshake} theme={theme}>
-              <p>The scientifically-proven circuit breaker for the guilt spiral is <Highlight description="Research by Dr. Michael Wohl showed that students who forgave themselves for procrastinating on a first exam were LESS likely to procrastinate on the next one. Self-compassion reduces the negative emotion that fuels avoidance." theme={theme}>Self-Forgiveness</Highlight>. A landmark study by Dr. Michael Wohl found that students who forgave themselves for procrastinating on their first exam were significantly less likely to procrastinate on their second.</p>
+              <p>The thing that actually breaks the guilt spiral is <Highlight description="Letting go of the guilt instead of beating yourself up. It sounds soft, but students who forgive themselves for procrastinating actually procrastinate less the next time. The guilt is what keeps you stuck." theme={theme}>Self-Forgiveness</Highlight>. It sounds too simple, but it works: students who forgave themselves for procrastinating before one exam were way less likely to procrastinate before the next one.</p>
               <p>This isn't about letting yourself off the hook. It's about breaking the emotional chain reaction. The script is simple: "I procrastinated. That's a human thing to do. I forgive myself. Now, what is the smallest possible step I can take right now?"</p>
               <CircuitBreaker />
             </ReadingSection>
           )}
           {activeSection === 6 && (
             <ReadingSection title="The 'If-Then' Protocol." eyebrow="Step 7" icon={Zap} theme={theme}>
-              <p>Willpower is a limited resource, especially for a developing brain. The most effective anti-procrastination strategy is one that bypasses willpower entirely: the <Highlight description="A pre-commitment strategy (also called Implementation Intentions) where you pre-load a decision: 'IF [trigger], THEN [action].' This automates the behavior, removing the need for an in-the-moment willpower battle." theme={theme}>"If-Then" Plan</Highlight>. By pre-loading a decision, you automate the response and remove the negotiation your brain is so good at losing.</p>
+              <p>Willpower runs out, especially when you're tired or stressed. So the best trick is to stop relying on willpower altogether and use an <Highlight description="You decide in advance what you'll do when a specific situation comes up. Because you've already made the decision, you don't have to fight yourself in the moment -- it just happens." theme={theme}>"If-Then" Plan</Highlight>. You make the decision ahead of time, so when the moment comes, there's nothing to argue about -- you just do the thing.</p>
               <p>The formula: <strong>IF</strong> [Trigger/Situation], <strong>THEN</strong> I will [Specific Action]. For example: "IF it is 4:30 PM, THEN I will open my Maths textbook to page 1 and do the first question." The key is to make the action tiny and specific. You're not committing to "study Maths for 2 hours." You're committing to opening a book.</p>
               <IfThenAutopilot />
             </ReadingSection>
           )}
           {activeSection === 7 && (
             <ReadingSection title="Scaffolding Your Focus." eyebrow="Step 8" icon={Wrench} theme={theme}>
-              <p>Now you have the psychological tools. The final step is to scaffold your environment to make starting easy and staying focused automatic. This means using techniques like the <Highlight description="A time-management method where you work in focused 25-minute intervals ('Pomodoros') separated by 5-minute breaks. It makes tasks feel finite and manageable." theme={theme}>Pomodoro Technique</Highlight> to make tasks feel finite, and environmental design to remove distractions.</p>
+              <p>Now you have the mental tools. The last step is to set up your environment so that starting is easy and staying focused happens naturally. Use things like the <Highlight description="Work for 25 minutes, then take a 5-minute break. That's it. Knowing you only have to focus for 25 minutes makes it way easier to actually start." theme={theme}>Pomodoro Technique</Highlight> to make tasks feel manageable, and set up your space so distractions aren't within arm's reach.</p>
               <p>The ultimate goal is to build a system where starting is effortless and stopping requires effort. This is the opposite of your current default, where starting requires enormous effort and stopping (to check your phone) is effortless. Flip the script.</p>
               <MicroCommitment theme={theme}>
                 <p>Right now, identify the ONE task you've been avoiding the most. Write down one "If-Then" plan for it. Make the action so small it feels almost silly. That's the point.</p>

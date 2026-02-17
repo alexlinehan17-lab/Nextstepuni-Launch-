@@ -229,7 +229,7 @@ const FeynmanExplainer = () => {
 
     return(
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Feynman Explainer</h4>
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Explain-It Challenge</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-4">Task: Explain this definition of Osmosis in simple terms, as if to a 12-year-old.</p>
              <p className="p-4 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl text-xs text-center mb-4">{concept}</p>
              <textarea value={explanation} onChange={e => setExplanation(e.target.value)} className="w-full h-32 p-4 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl focus:outline-none focus:border-teal-400" placeholder="Your simple explanation..."></textarea>
@@ -248,18 +248,18 @@ const IllusionOfCompetenceModule: React.FC<{ onBack: () => void; progress: Modul
   const sections = [
     { id: 'the-deception', title: 'The Great Deception', eyebrow: '01 // The Illusion', icon: Eye },
     { id: 'passive-traps', title: 'The Passive Traps', eyebrow: '02 // The False Comfort', icon: AlertTriangle },
-    { id: 'desirable-difficulties', title: 'The Antidote', eyebrow: '03 // Desirable Difficulties', icon: Lightbulb },
+    { id: 'desirable-difficulties', title: 'The Antidote', eyebrow: '03 // The Hard Way That Works', icon: Lightbulb },
     { id: 'strategic-toolkit', title: 'The Strategic Toolkit', eyebrow: '04 // The System', icon: SlidersHorizontal },
-    { id: 'feynman-protocol', title: 'The Feynman Protocol', eyebrow: '05 // The Litmus Test', icon: Brain },
-    { id: 'anti-fragile', title: 'Building Anti-Fragile Knowledge', eyebrow: '06 // The Action Plan', icon: Wrench },
+    { id: 'feynman-protocol', title: 'The Explain-It Test', eyebrow: '05 // The Reality Check', icon: Brain },
+    { id: 'anti-fragile', title: 'Building Bulletproof Knowledge', eyebrow: '06 // The Action Plan', icon: Wrench },
   ];
 
   return (
     <ModuleLayout
       moduleNumber="10"
       moduleTitle="Overcoming Illusions of Competence"
-      moduleSubtitle="The Fluency Illusion"
-      moduleDescription="Deconstruct the cognitive biases that trick you into feeling confident when you're unprepared, and learn the science-backed strategies to build real, durable knowledge."
+      moduleSubtitle="Why You Think You Know It (But Don't)"
+      moduleDescription="Ever walked out of a study session feeling confident, only to blank in the exam? Here's why that happens and how to make sure what you study actually sticks."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -270,40 +270,40 @@ const IllusionOfCompetenceModule: React.FC<{ onBack: () => void; progress: Modul
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Great Deception." eyebrow="Step 1" icon={Eye} theme={theme}>
-              <p>The most dangerous thing in your academic life isn't the stuff you know you don't know. It's the stuff you *think* you know, but actually don't. This is the <Highlight description="The cognitive bias where your subjective confidence in your mastery of a topic is significantly higher than your objective ability to retrieve and apply that knowledge." theme={theme}>Illusion of Competence</Highlight>. It's the primary driver of 'grade shock' after the Mocks.</p>
-              <p>It's caused by a simple brain shortcut: we mistake the ease of *recognising* information for the ability to *recall* it. Seeing a definition in your notes and thinking "Oh yeah, I know that" feels like learning. But it's a trap. It creates a false sense of security that is brutally exposed under exam conditions when the notes are gone and you have to retrieve the information from a blank page.</p>
+              <p>The most dangerous thing in your study life isn't the stuff you know you don't know. It's the stuff you *think* you know, but actually don't. This is the <Highlight description="That feeling where you're way more confident about a topic than you should be. You feel like you've got it nailed, but when the exam comes, it's just... gone." theme={theme}>Illusion of Competence</Highlight>. It's the number one reason people get a nasty shock after the Mocks.</p>
+              <p>It's caused by a simple brain shortcut: we mistake *recognising* information for being able to *recall* it. Seeing a definition in your notes and thinking "Oh yeah, I know that" feels like learning. But it's a trap. It gives you a false sense of security that falls apart in the exam hall when the notes are gone and you have to pull the information out of your head onto a blank page.</p>
             </ReadingSection>
           )}
           {activeSection === 1 && (
             <ReadingSection title="The Passive Traps." eyebrow="Step 2" icon={AlertTriangle} theme={theme}>
-              <p>This illusion is created by the most common study methods because they are low-stress and feel effective. The first is the <Highlight description="When you re-read, your brain recognizes the visual pattern of the highlighted text, not the information itself. The cue is the yellow ink, not your internal memory." theme={theme}>Highlighting Trap</Highlight>. The second is the <Highlight description="Following the logic of a solved problem feels like you could have solved it yourself. This is the 'passenger effect' - you practiced verification, not derivation." theme={theme}>'Solved Example' Fallacy</Highlight>. The third is the <Highlight description="When a teacher explains something clearly, you confuse their fluency with your own. You've toured their understanding, not built your own." theme={theme}>Lecture Delusion</Highlight>.</p>
-              <p>All these passive methods fail to account for the biological reality of your memory: the <Highlight description="The natural, exponential decay of memory. Without active reinforcement, you lose the majority of new information within 24 hours." theme={theme}>Forgetting Curve</Highlight>. Passive learning feels good, but the knowledge simply evaporates.</p>
+              <p>This illusion is created by the most common study methods because they're low-stress and feel effective. The first is the <Highlight description="When you re-read highlighted notes, your brain just recognises the look of the page, not the actual information. You're remembering the yellow ink, not what it says." theme={theme}>Highlighting Trap</Highlight>. The second is the <Highlight description="Reading through a worked solution and nodding along feels like you could have done it yourself. But you were just a passenger — you followed someone else's thinking instead of doing your own." theme={theme}>'Solved Example' Fallacy</Highlight>. The third is the <Highlight description="When a teacher explains something really clearly, it's easy to confuse their understanding with yours. You watched the tour, but you didn't build the house." theme={theme}>Lecture Delusion</Highlight>.</p>
+              <p>All these passive methods ignore how your memory actually works: the <Highlight description="Your brain naturally forgets most new information within 24 hours unless you actively do something to hold onto it. It's not a flaw — it's just how memory works." theme={theme}>Forgetting Curve</Highlight>. Passive learning feels productive, but the knowledge just slips away.</p>
               <ForgettingCurveSimulator />
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="The Antidote." eyebrow="Step 3" icon={Lightbulb} theme={theme}>
-              <p>To dismantle this illusion, we must shift from study methods that feel easy (passive) to ones that feel hard (active). The science of learning is built on the counter-intuitive concept of <Highlight description="Introduced by Robert & Elizabeth Bjork, this is the idea that learning conditions that feel harder and slow down initial performance often lead to far superior long-term retention." theme={theme}>Desirable Difficulties</Highlight>.</p>
-              <p>The single most powerful "desirable difficulty" is <Highlight description="The act of retrieving information from memory without cues. This 'testing effect' is a memory modifier; the struggle to recall is the learning process itself." theme={theme}>Active Recall</Highlight>. When you force your brain to retrieve information, you send a powerful signal to strengthen that neural pathway for future use. The struggle is not a sign you are failing; it is the physical sensation of your brain getting stronger.</p>
+              <p>To break this illusion, you need to switch from study methods that feel easy (passive) to ones that feel hard (active). Here's the thing that catches everyone off guard: <Highlight description="The idea that study methods which feel harder and slower at first actually lead to much better long-term memory. If it feels too easy, you're probably not learning much." theme={theme}>Desirable Difficulties</Highlight> — the harder it feels, the more you're actually learning.</p>
+              <p>The single most powerful way to make studying harder (in a good way) is <Highlight description="Trying to pull information out of your memory without looking at your notes. That struggle you feel when you can't quite remember? That IS the learning happening." theme={theme}>Active Recall</Highlight>. When you force your brain to retrieve information, you're strengthening that memory for future use. The struggle is not a sign you're failing — it's the feeling of your brain getting stronger.</p>
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="The Strategic Toolkit." eyebrow="Step 4" icon={SlidersHorizontal} theme={theme}>
-              <p>Active Recall is the engine, but it needs a system to work effectively. The two key partners are <Highlight description="The strategy of spreading out your study sessions over time to interrupt the forgetting curve." theme={theme}>Spaced Repetition</Highlight> and <Highlight description="The strategy of mixing different topics within a study session to train the crucial 'problem spotting' skill." theme={theme}>Interleaving</Highlight>.</p>
-              <p>These strategies can be managed with a simple but powerful system: the <Highlight description="A way to plan study by logging what you've done and using a Red/Amber/Green system to rate your confidence, forcing you to always work on your weakest topics first." theme={theme}>Retrospective Revision Timetable</Highlight>. This system forces you to confront your incompetence daily and prioritizes output (mastery) over input (time spent studying).</p>
+              <p>Active Recall is the engine, but it needs a system to work properly. The two key partners are <Highlight description="Spreading your study sessions out over time instead of cramming. Short sessions over several days beats one long session every time." theme={theme}>Spaced Repetition</Highlight> and <Highlight description="Mixing different topics in the same study session instead of doing one topic for hours. It feels messier, but it trains you to tell problems apart — which is exactly what the exam demands." theme={theme}>Interleaving</Highlight>.</p>
+              <p>You can tie all of this together with one simple system: the <Highlight description="Instead of planning what to study in advance, you log what you've already done and rate each topic Red, Amber, or Green based on how well you actually know it. Then you always start your next session with your weakest topics." theme={theme}>Retrospective Revision Timetable</Highlight>. This system forces you to face your weak spots every day and focuses on what you can actually do, not just how many hours you've put in.</p>
             </ReadingSection>
           )}
           {activeSection === 4 && (
-            <ReadingSection title="The Feynman Protocol." eyebrow="Step 5" icon={Brain} theme={theme}>
-              <p>The ultimate litmus test for genuine understanding is the <Highlight description="Named after the Nobel prize-winning physicist Richard Feynman, this technique involves explaining a concept in simple terms, as if to a child, to identify the gaps in your own knowledge." theme={theme}>Feynman Technique</Highlight>. If you can't explain it simply, you don't really know it. The moment you stumble or have to use jargon is the "Illusion Gap"--the precise point where your knowledge is fragile.</p>
-              <p>For STEM subjects, a practical application of this is <Highlight description="Practicing exam questions under exam conditions--no notes, no textbook, no marking scheme. This forces you to confront what you can actually retrieve." theme={theme}>'Blind Practice'</Highlight> combined with a <Highlight description="A dedicated notebook where you log every mistake, diagnose why it happened (Slip, Gap, or Misconception), and prescribe a fix." theme={theme}>Mistake Log</Highlight>. This turns vague failure ("I'm bad at Maths") into specific, actionable data ("I keep forgetting the chain rule").</p>
+            <ReadingSection title="The Explain-It Test." eyebrow="Step 5" icon={Brain} theme={theme}>
+              <p>The best way to check if you actually understand something is the <Highlight description="Try to explain a concept in simple terms, as if to a younger sibling or a friend who knows nothing about it. The moment you get stuck or fall back on big words is the moment you've found a gap in your knowledge." theme={theme}>Explain-It Technique</Highlight>. If you can't explain it simply, you don't really know it. The moment you stumble or reach for jargon is the exact point where your knowledge falls apart.</p>
+              <p>For STEM subjects, a practical version of this is <Highlight description="Doing exam questions under exam conditions — no notes, no textbook, no marking scheme. It forces you to face what you can actually pull from memory." theme={theme}>'Blind Practice'</Highlight> combined with a <Highlight description="A notebook where you write down every mistake, figure out why it happened (was it a careless slip, a gap in your knowledge, or a wrong idea?), and write down how to fix it." theme={theme}>Mistake Log</Highlight>. This turns vague failure ("I'm bad at Maths") into something specific you can actually fix ("I keep forgetting the chain rule").</p>
               <FeynmanExplainer />
             </ReadingSection>
           )}
            {activeSection === 5 && (
-            <ReadingSection title="Anti-Fragile Knowledge." eyebrow="Step 6" icon={Wrench} theme={theme}>
-              <p>The goal is to move from <Highlight description="Knowledge that is context-dependent and breaks under pressure or when a question is phrased differently. It's a product of passive learning." theme={theme}>Fragile Knowledge</Highlight> to <Highlight description="Knowledge that actually gets stronger when challenged with new contexts and problems. It is the product of desirable difficulties." theme={theme}>Anti-Fragile Knowledge</Highlight>. This is the only path to genuine confidence.</p>
-              <p>By embracing these effortful strategies, you are not just learning more effectively; you are also managing your wellbeing. The anxiety of the Leaving Cert often stems from the subconscious knowledge that your understanding is fragile. Genuine competence, built through desirable difficulties, is the ultimate antidote to exam stress.</p>
+            <ReadingSection title="Bulletproof Knowledge." eyebrow="Step 6" icon={Wrench} theme={theme}>
+              <p>The goal is to move from <Highlight description="Knowledge that only works in familiar situations. Change the wording of a question or put you under pressure, and it falls apart. This is what you get from passive study." theme={theme}>Fragile Knowledge</Highlight> to <Highlight description="Knowledge that actually holds up — and even gets stronger — when you're hit with new problems or unexpected question styles. This is what you get from active, effortful study." theme={theme}>Bulletproof Knowledge</Highlight>. This is the only path to real confidence.</p>
+              <p>By using these harder study methods, you're not just learning better — you're also looking after your mental health. A lot of Leaving Cert anxiety actually comes from a gut feeling that you don't really know the material well enough. When you've built genuine understanding through effortful practice, that anxiety fades because you know your knowledge can handle whatever the exam throws at you.</p>
                <MicroCommitment theme={theme}>
                 <p>For your very next study session, commit to the "Book Closed" rule. Spend 20 minutes reading, then close the book and spend 10 minutes writing down everything you can remember. This one change will transform your learning.</p>
               </MicroCommitment>

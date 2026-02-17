@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Cpu, ClipboardList, ListFilter, PlayCircle, BarChart2, HeartPulse, HardHat } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { amberTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = amberTheme;
@@ -831,21 +831,21 @@ const OrderOfAttackOptimizer = () => {
 // --- MODULE COMPONENT ---
 const ExamHallStrategiesModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'execution-gap', title: 'The Execution Gap', eyebrow: '01 // The Problem', icon: Cpu },
-    { id: 'cognitive-offloading', title: 'Cognitive Offloading', eyebrow: '02 // The Dump Sheet', icon: ClipboardList },
-    { id: 'tactical-triage', title: 'Tactical Triage', eyebrow: '03 // Reading Time Strategy', icon: ListFilter },
-    { id: 'order-of-attack', title: 'Order of Attack', eyebrow: '04 // The Momentum Principle', icon: PlayCircle },
-    { id: 'exam-economics', title: 'Exam Economics', eyebrow: '05 // Strict Time Budgeting', icon: BarChart2 },
-    { id: 'anxiety-regulation', title: 'Anxiety Regulation', eyebrow: '06 // Physiological Management', icon: HeartPulse },
-    { id: 'post-exam-training', title: 'Post-Exam Training', eyebrow: '07 // The Drills', icon: HardHat },
+    { id: 'knowing-vs-showing', title: 'Knowing vs. Showing It', eyebrow: '01 // The Real Problem', icon: Cpu },
+    { id: 'brain-dump', title: 'The Brain Dump', eyebrow: '02 // Your First 3 Minutes', icon: ClipboardList },
+    { id: 'reading-time-triage', title: 'Reading Time Triage', eyebrow: '03 // Sorting the Paper', icon: ListFilter },
+    { id: 'order-of-attack', title: 'Order of Attack', eyebrow: '04 // Building Momentum', icon: PlayCircle },
+    { id: 'time-budgeting', title: 'Time Budgeting', eyebrow: '05 // Spending Minutes Wisely', icon: BarChart2 },
+    { id: 'staying-calm', title: 'Staying Calm Under Pressure', eyebrow: '06 // Managing Panic', icon: HeartPulse },
+    { id: 'practice-drills', title: 'Practice Drills', eyebrow: '07 // Building the Habits', icon: HardHat },
   ];
 
   return (
     <ModuleLayout
       moduleNumber="04"
       moduleTitle="Exam Hall Strategies"
-      moduleSubtitle="The Operational Playbook"
-      moduleDescription={`Deconstruct the exam hall as a resource-management challenge and learn the operational tactics used by elite performers to close the "Execution Gap".`}
+      moduleSubtitle="Your Game Plan for Exam Day"
+      moduleDescription={`You've done the study — now learn the practical tips that help top students turn what they know into the marks they deserve.`}
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -855,51 +855,54 @@ const ExamHallStrategiesModule: React.FC<{ onBack: () => void; progress: ModuleP
       {(activeSection) => (
         <>
           {activeSection === 0 && (
-            <ReadingSection title="The Execution Gap." eyebrow="Step 1" icon={Cpu} theme={theme}>
-              <p>You can be the smartest person in the room, have every definition memorized, and still get a bad result. The gap between what you know (<Highlight description="What you have learned and stored in your long-term memory over months of study." theme={theme}>Competence</Highlight>) and what you can actually do on the day (<Highlight description="What you can retrieve and apply from your memory under the intense pressure of a timed exam." theme={theme}>Performance</Highlight>) is called the <strong>Execution Gap</strong>. This module is about closing that gap.</p>
-              <p>The exam hall is not a library for quiet recall; it's a high-pressure, resource-management game. The pressure adds <Highlight description="The 'bad' mental workload that comes from things other than the question itself, like managing your panic, checking the clock, or trying to remember a formula." theme={theme}>Extraneous Cognitive Load</Highlight> to your brain, stealing the limited mental bandwidth you need for the actual questions. The strategies in this module are about minimizing that load so you can show what you really know.</p>
+            <ReadingSection title="Knowing vs. Showing It." eyebrow="Step 1" icon={Cpu} theme={theme}>
+              <p>You can be the smartest person in the room, have every definition memorised, and still get a bad result. The gap between what you <em>know</em> (<Highlight description="All the stuff you've actually learned and stored in your memory over months of study." theme={theme}>Competence</Highlight>) and what you can actually <em>show</em> on the day (<Highlight description="What you can actually pull out of your memory and put on paper under timed, stressful conditions." theme={theme}>Performance</Highlight>) is the whole problem. This module is about closing that gap.</p>
+              <p>The exam hall is not a quiet library. It is a high-pressure environment where your brain has to juggle the questions AND manage your nerves, the clock, and everything else. All of that extra pressure creates <Highlight description="The mental drain that comes from things other than the actual question — stuff like managing your panic, watching the clock, or trying to remember a formula you half-know." theme={theme}>unnecessary mental load</Highlight> that steals the brainpower you need for the actual questions. The strategies in this module are about cutting that load so you can show what you really know.</p>
+              <PersonalStory name="Ciara, Dublin" role="Leaving Cert 2024">
+                <p>"I knew my stuff going into the English exam. But I panicked, spent 50 minutes on the essay question first, and ran out of time on the comprehension — the part I was actually best at. If I had sorted the paper during reading time and started with the questions I was confident on, I would have picked up way more marks. It wasn't about what I knew. It was about how I used the time."</p>
+              </PersonalStory>
             </ReadingSection>
           )}
            {activeSection === 1 && (
-            <ReadingSection title="Cognitive Offloading." eyebrow="Step 2" icon={ClipboardList} theme={theme}>
-              <p>In the first few minutes of an exam, your stress hormones spike, which can block access to your memory. The <Highlight description="A pre-memorized sheet of high-yield, high-volatility information that you write down from memory at the very start of the exam before you even look at the questions." theme={theme}>"Dump Sheet"</Highlight> is a proactive strategy to combat this. It's about getting the most fragile, important information out of your head and onto paper before stress can erase it.</p>
-              <p>This isn't cheating; it's <Highlight description="The act of moving information from your limited biological working memory to a physical resource (like paper), freeing up mental capacity to focus on problem-solving." theme={theme}>Cognitive Offloading</Highlight>. The sheet should contain "High-Yield, High-Volatility" information: things that are easy to forget under pressure but are likely to be useful (e.g., key quotes, formulas, dates, acronyms). You must rehearse writing it until it's a 3-minute automatic motor skill.</p>
+            <ReadingSection title="The Brain Dump." eyebrow="Step 2" icon={ClipboardList} theme={theme}>
+              <p>In the first few minutes of an exam, your stress hormones spike, which can block access to your memory. The <Highlight description="A list of key facts, quotes, and formulas you've memorised beforehand. You write it down from memory as soon as the exam starts, before you even look at the questions." theme={theme}>"Brain Dump"</Highlight> is a way to fight back. The idea is simple: get the most fragile, important information out of your head and onto paper before stress can erase it.</p>
+              <p>This is not cheating — it is just <Highlight description="Moving information from your head onto paper so your brain doesn't have to hold it all at once. It frees up mental space so you can focus on actually answering questions." theme={theme}>offloading your memory onto paper</Highlight>. Your dump sheet should contain things that are easy to forget under pressure but likely to come up — key quotes, formulas, dates, acronyms. Practice writing it until you can do it in under 3 minutes without thinking.</p>
               <DumpSheetBuilder />
             </ReadingSection>
           )}
            {activeSection === 2 && (
-            <ReadingSection title="Tactical Triage." eyebrow="Step 3" icon={ListFilter} theme={theme}>
-              <p>Reading time is not for passively reading. It's for <Highlight description="An active process during reading time where you scan the entire paper and sort questions into categories of difficulty, like a medic at a disaster scene." theme={theme}>Tactical Triage</Highlight>. Just like in an emergency room, your goal isn't to save every "patient" (question) perfectly; it's to get the most marks possible with your limited time.</p>
-              <p>Use a <strong>Traffic Light System</strong>: <strong>Green</strong> questions are "low-hanging fruit" you're 100% confident you can answer quickly. <strong>Amber</strong> questions are ones you know how to do but will take time or complex calculation. <strong>Red</strong> questions are "time sinks"--topics you're weak on or don't immediately understand. Your first job is to find 2-3 "Green" questions to serve as your <Highlight description="The first easy questions you attempt, regardless of their position on the paper. They build confidence, calm your nerves, and create psychological momentum." theme={theme}>Anchor Questions</Highlight>.</p>
+            <ReadingSection title="Reading Time Triage." eyebrow="Step 3" icon={ListFilter} theme={theme}>
+              <p>Reading time is not for passively reading. It is for <Highlight description="During reading time, you quickly scan the whole paper and sort questions by how confident you are — so you know exactly where to start when writing time begins." theme={theme}>sorting the paper</Highlight>. Your goal is not to answer every question perfectly; it is to get the most marks possible with the time you have.</p>
+              <p>Use a <strong>Traffic Light System</strong>: <strong>Green</strong> questions are ones you are 100% confident you can answer quickly. <strong>Amber</strong> questions are ones you know how to do but will take time or careful work. <strong>Red</strong> questions are the ones you find hardest — topics you are weak on or do not immediately understand. Your first job is to find 2-3 "Green" questions to serve as your <Highlight description="The first easy questions you tackle, no matter where they are on the paper. They build your confidence, calm your nerves, and get you into a rhythm." theme={theme}>Anchor Questions</Highlight>.</p>
               <TriageSimulator />
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="Order of Attack." eyebrow="Step 4" icon={PlayCircle} theme={theme}>
-              <p>Starting at Question 1 is a rookie mistake. It gives control to the examiner, who may have put a difficult question first. You need to become a <Highlight description="A concept from cybersecurity where an attacker seeks the easiest path to breach a system. In an exam, you should act like one, seeking the easiest path to accumulate marks." theme={theme}>"Work-Averse Attacker"</Highlight>, extracting the maximum marks for the minimum effort. This means attacking the "Green" questions first, no matter where they are.</p>
-              <p>This builds <Highlight description="The psychological phenomenon where early success creates a virtuous cycle of confidence and dopamine release, improving focus and making subsequent harder tasks feel more manageable." theme={theme}>Psychological Momentum</Highlight>. If you can't figure out a question in 30 seconds (the "30-Second Rule"), skip it immediately. The <Highlight description="The subconscious mind continues to work on a problem even after you've moved on. When you return to the question later, the solution often appears 'obvious.'" theme={theme}>Incubation Effect</Highlight> means your brain will keep working on it in the background.</p>
+              <p>Starting at Question 1 is a common mistake. It hands control to the examiner, who may have put a difficult question first. Instead, think of yourself as a <Highlight description="Basically, always go for the easiest marks first. Do not waste time struggling with a hard question when there are easy ones waiting on the next page." theme={theme}>smart mark-collector</Highlight> — your job is to grab the maximum marks for the minimum effort. That means doing your "Green" questions first, no matter where they are on the paper.</p>
+              <p>This builds <Highlight description="When you nail your first couple of answers, it gives you a confidence boost and gets your brain into a flow. That makes the harder questions feel more manageable when you get to them." theme={theme}>momentum</Highlight>. If you cannot figure out a question within 30 seconds (the "30-Second Rule"), skip it and move on. The good news is that your <Highlight description="Your brain keeps working on a problem in the background even after you move on. When you come back to it later, the answer often clicks into place." theme={theme}>brain keeps working on it in the background</Highlight>, so the answer often clicks when you come back to it later.</p>
               <OrderOfAttackOptimizer />
             </ReadingSection>
           )}
           {activeSection === 4 && (
-            <ReadingSection title="Exam Economics." eyebrow="Step 5" icon={BarChart2} theme={theme}>
-              <p>Time is the currency of the exam hall. Every minute is an investment that must provide a return (marks). The core metric is <Highlight description="Your fundamental time budget, calculated by dividing the total time (minus a buffer) by the total marks. E.g., (180-15 mins) / 100 marks = 1.65 minutes per mark." theme={theme}>Minutes Per Mark (MPM)</Highlight>. This tells you exactly how long you can spend on any given question.</p>
-              <p>When your timer for a question goes off, you must execute a <Highlight description="The discipline of stopping work on a question immediately when its time budget expires, even if you are mid-sentence, to avoid the Sunk Cost Fallacy." theme={theme}>"Hard Stop."</Highlight> This is the hardest discipline to learn because of the <Highlight description="The cognitive bias to continue investing in a losing proposition (like a hard question) because of the resources (time) you have already spent. It's the number one cause of time mismanagement in exams." theme={theme}>Sunk Cost Fallacy</Highlight>. The first 5 minutes on a new question will always be more valuable than the last 5 minutes polishing an old one.</p>
+            <ReadingSection title="Time Budgeting." eyebrow="Step 5" icon={BarChart2} theme={theme}>
+              <p>Time is the currency of the exam hall. Every minute you spend is an investment, and it needs to earn you marks. The key number is <Highlight description="A simple calculation: take the total exam time, subtract a buffer for reading and checking, then divide by the total marks. It tells you exactly how many minutes each mark is worth." theme={theme}>Minutes Per Mark (MPM)</Highlight>. This tells you exactly how long you can afford to spend on any given question.</p>
+              <p>When your time for a question runs out, you need to do a <Highlight description="Forcing yourself to stop working on a question the moment its time is up, even if you are mid-sentence. It feels wrong, but it stops you wasting time on one answer while easier marks go uncollected." theme={theme}>"Hard Stop"</Highlight> and move on. This is tough because of the <Highlight description="That feeling of 'I've already spent 10 minutes on this, I can't leave it now.' But those 10 minutes are gone either way. The next 5 minutes on a fresh question will always earn you more marks than 5 more minutes on one you're stuck on." theme={theme}>sunk cost trap</Highlight> — the urge to keep going because you have already spent time on it. But the first 5 minutes on a new question will always be worth more than the last 5 minutes polishing an old one.</p>
               <MPMCalculator/>
             </ReadingSection>
           )}
           {activeSection === 5 && (
-            <ReadingSection title="Anxiety Regulation." eyebrow="Step 6" icon={HeartPulse} theme={theme}>
-              <p>When you hit a difficult question, your sympathetic nervous system can trigger a "Panic Spike," narrowing your focus and blocking access to your memory. You need a protocol to fight back. The fastest is <Highlight description="A breathing technique (4s inhale, 4s hold, 4s exhale, 4s hold) that forces your nervous system back into a calm 'rest and digest' state." theme={theme}>Box Breathing</Highlight>.</p>
-              <p>Another tool is the <Highlight description="A grounding technique where you name 3 things you see, 3 sounds you hear, and 3 body parts you can feel. It forces your brain to process sensory data, disengaging the emotional amygdala hijack." theme={theme}>3-3-3 Rule</Highlight> for grounding. Finally, use <Highlight description="Changing your internal story from catastrophic ('I'm failing') to procedural ('This is a Red question. This is part of the plan. I will flag it and move on.')." theme={theme}>Cognitive Reframing</Highlight> to turn panic into a planned response.</p>
+            <ReadingSection title="Staying Calm Under Pressure." eyebrow="Step 6" icon={HeartPulse} theme={theme}>
+              <p>When you hit a question you cannot answer, your body can go into panic mode — your heart races, your mind goes blank, and you feel like you are failing. You need a way to snap out of it. The fastest trick is <Highlight description="A simple breathing pattern: breathe in for 4 seconds, hold for 4, breathe out for 4, hold for 4. It physically calms your nervous system down in under a minute." theme={theme}>Box Breathing</Highlight>.</p>
+              <p>Another tool is the <Highlight description="A quick grounding trick: name 3 things you can see, 3 sounds you can hear, and 3 things you can physically feel. It pulls your brain out of panic mode and back into the room." theme={theme}>3-3-3 Rule</Highlight> for grounding. Finally, use <Highlight description="Instead of thinking 'I'm failing,' you switch to 'This is a hard question — that's expected. I'll flag it and come back.' It turns panic into a plan." theme={theme}>reframing</Highlight> to turn panic into a planned response. Instead of "I'm failing," you think "This is a Red question. I'll skip it and come back."</p>
               <BoxBreathingVisualizer />
             </ReadingSection>
           )}
           {activeSection === 6 && (
-            <ReadingSection title="The Training Protocol." eyebrow="Step 7" icon={HardHat} theme={theme}>
-              <p>These strategies are skills. They must be trained. After every practice test, you must use an <Highlight description="A post-exam reflection tool that forces you to analyze your errors by process ('I misread the question,' 'I ran out of time') not just by content ('I didn't know the date')." theme={theme}>Exam Wrapper</Highlight> to analyze your performance. Did your triage work? Did you stick to your time budget?</p>
-              <p>You must also run specific drills. <strong>Triage Drills</strong>: Give yourself 5 minutes with a past paper to *only* categorize questions as Green, Amber, or Red. <strong>Dump Sprints</strong>: Practice writing your dump sheet until it takes less than 3 minutes. <strong>Hard Stop Drills</strong>: Do questions with a strict timer and force yourself to stop when it rings. This builds the discipline you need to execute under pressure.</p>
-              <MicroCommitment theme={theme}><p>For your next practice test, do a full "Exam Wrapper" analysis afterwards. Don't just check the answers; analyze *how* you took the test.</p></MicroCommitment>
+            <ReadingSection title="Practice Drills." eyebrow="Step 7" icon={HardHat} theme={theme}>
+              <p>These strategies are skills, and like any skill, they need practice. After every practice test, use an <Highlight description="A simple review where you look at what went wrong and ask 'was it the content I didn't know, or the process I didn't follow?' — like misreading a question, running out of time, or doing questions in the wrong order." theme={theme}>Exam Wrapper</Highlight> to review your performance. Did your triage work? Did you stick to your time budget? Did you do the brain dump?</p>
+              <p>You should also run specific drills. <strong>Triage Drills</strong>: Give yourself 5 minutes with a past paper to <em>only</em> sort questions as Green, Amber, or Red. <strong>Dump Sprints</strong>: Practice writing your brain dump until it takes less than 3 minutes. <strong>Hard Stop Drills</strong>: Do questions with a strict timer and force yourself to stop when it goes off. This builds the discipline you need to perform under pressure.</p>
+              <MicroCommitment theme={theme}><p>For your next practice test, do a full Exam Wrapper analysis afterwards. Do not just check the answers — look at <em>how</em> you took the test.</p></MicroCommitment>
             </ReadingSection>
           )}
         </>

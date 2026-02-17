@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { slateTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = slateTheme;
@@ -352,21 +352,21 @@ const PhasedDetoxRoadmap = () => {
 // --- MODULE COMPONENT ---
 const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'adversary', title: 'The Adversary', eyebrow: '01 // Neuroscience of Distraction', icon: BrainCircuit },
-    { id: 'hardware-barrier', title: 'Hardware Architecture', eyebrow: '02 // The Physical Barrier', icon: Shield },
-    { id: 'software-fortification', title: 'Software Fortification', eyebrow: '03 // The Laptop Sanctuary', icon: Laptop },
-    { id: 'environmental-engineering', title: 'Environmental Engineering', eyebrow: '04 // The Study Sanctuary', icon: Home },
-    { id: 'behavioral-engineering', title: 'Behavioral Engineering', eyebrow: '05 // Atomic Habits', icon: Repeat },
-    { id: 'social-dynamics', title: 'Social Dynamics', eyebrow: '06 // The FOMO Barrier', icon: Users },
-    { id: 'roadmap', title: 'The Roadmap', eyebrow: '07 // Strategic Implementation', icon: Map },
+    { id: 'adversary', title: 'Why Your Phone Wins', eyebrow: '01 // Your Brain vs Your Phone', icon: BrainCircuit },
+    { id: 'hardware-barrier', title: 'The Phone Swap', eyebrow: '02 // The Physical Barrier', icon: Shield },
+    { id: 'software-fortification', title: 'Locking Down Your Laptop', eyebrow: '03 // Blocking Distractions', icon: Laptop },
+    { id: 'environmental-engineering', title: 'Setting Up Your Space', eyebrow: '04 // Your Study Zone', icon: Home },
+    { id: 'behavioral-engineering', title: 'Building Better Habits', eyebrow: '05 // Making It Automatic', icon: Repeat },
+    { id: 'social-dynamics', title: 'Dealing with FOMO', eyebrow: '06 // Your Friends Will Survive', icon: Users },
+    { id: 'roadmap', title: 'Your Step-by-Step Plan', eyebrow: '07 // Putting It All Together', icon: Map },
   ];
 
   return (
     <ModuleLayout
       moduleNumber="08"
       moduleTitle="Digital Distractions"
-      moduleSubtitle="The Cognitive Sovereignty Guide"
-      moduleDescription="A blueprint for reclaiming your focus from the attention economy, using neuroscience-backed hardware, software, and behavioral barriers."
+      moduleSubtitle="Take Back Your Focus"
+      moduleDescription="Your phone is designed to steal your attention. This module gives you a step-by-step plan to block distractions and actually get your study hours to count."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -376,48 +376,53 @@ const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleP
       {(activeSection) => (
         <>
           {activeSection === 0 && (
-            <ReadingSection title="The Adversary." eyebrow="Step 1" icon={BrainCircuit} theme={theme}>
-              <p>Your inability to focus is not a character flaw. It's a predictable conflict between your brain's biology and a digital environment engineered to exploit it. The adolescent brain has an underdeveloped <Highlight description="The 'CEO' of your brain, responsible for impulse control and long-term planning." theme={theme}>Prefrontal Cortex (PFC)</Highlight> and a hyperactive <Highlight description="The brain's reward and emotion centre." theme={theme}>Limbic System</Highlight>. Social media is designed as a <Highlight description="Like a slot machine, it provides unpredictable rewards (likes, messages) that trigger a dopamine hit, creating a compulsive loop." theme={theme}>Variable Ratio Reinforcement Schedule</Highlight> that hijacks this system.</p>
-              <p>Every time you switch tasks (from study to Snapchat), you suffer from <Highlight description="The 'cognitive residue' left from the previous task. It takes an average of 23 minutes to regain deep focus after an interruption." theme={theme}>Attention Residue</Highlight>. This module is a blueprint for reclaiming your <Highlight description="Your ability to direct your own attention and consciousness, free from external manipulation." theme={theme}>Cognitive Sovereignty</Highlight>.</p>
+            <ReadingSection title="Why Your Phone Wins." eyebrow="Step 1" icon={BrainCircuit} theme={theme}>
+              <p>If you can't stop reaching for your phone, that's not because you're lazy or weak. It's because your brain is literally wired to lose this fight right now. The part of your brain that handles <Highlight description="This is the part right behind your forehead that helps you plan ahead, resist impulses, and make good decisions. In your teens, it's still developing -- which is why it's harder to say no to distractions." theme={theme}>self-control and planning</Highlight> isn't fully developed yet, while the part that craves <Highlight description="This is the emotional, reward-seeking part of your brain. It's the bit that lights up when you get a notification or a like. In your teens, it's running the show." theme={theme}>rewards and excitement</Highlight> is running on overdrive.</p>
+              <p>Apps like TikTok, Instagram, and Snapchat are built to exploit exactly this. They work like <Highlight description="Think of a slot machine -- you never know when you'll hit the jackpot, so you keep pulling the lever. Social media does the same thing with likes and messages. You keep checking because sometimes there's something exciting, and that unpredictability is addictive." theme={theme}>digital slot machines</Highlight>, giving you random hits of likes and messages that keep you coming back.</p>
+              <p>Here's the real kicker: every time you switch from studying to checking your phone, your brain doesn't just snap back. There's a kind of <Highlight description="When you switch from studying to your phone, your brain doesn't reset instantly. Part of it is still thinking about what you just saw. Research shows it takes about 23 minutes to get properly focused again." theme={theme}>mental hangover</Highlight> that takes about 23 minutes to clear. This module is about taking back control of your own attention -- so your study time actually counts.</p>
+              <PersonalStory name="Ciara" role="5th Year, Cork">
+                <p>"I used to think I was just bad at concentrating. Turns out I was checking my phone about 8 times an hour during study. Once I worked out how much focus time I was actually losing, it proper shocked me. I wasn't studying -- I was just sitting at a desk."</p>
+              </PersonalStory>
               <AttentionDeficitCalculator />
             </ReadingSection>
           )}
           {activeSection === 1 && (
-            <ReadingSection title="Hardware Architecture." eyebrow="Step 2" icon={Shield} theme={theme}>
-              <p>Since your internal "software" (willpower) is compromised by adolescent biology, the most effective strategy is to alter the "hardware" of your environment. The most radical and effective barrier is the "Dumb Phone" revolution. By switching to a device without an algorithmic feed, you eliminate the possibility of distraction.</p>
-              <p>This involves a trade-off between <Highlight description="Making a behavior more difficult to perform. The 'friction' of using a T9 keypad for texting is a powerful deterrent." theme={theme}>Friction</Highlight> and function. There's a hierarchy of devices, from the "Purist" Nokia with zero features, to the "Hybrid" CAT S22 Flip which has WhatsApp but is physically unpleasant to scroll on. The goal is to make the cost of the distraction (frustration) outweigh the reward.</p>
+            <ReadingSection title="The Phone Swap." eyebrow="Step 2" icon={Shield} theme={theme}>
+              <p>Willpower alone won't cut it -- your brain is working against you (remember that underdeveloped self-control from Step 1?). So instead of relying on discipline, the smartest move is to change the actual device you're using during study time.</p>
+              <p>The nuclear option? A "dumb phone" -- one of those basic Nokias with no apps, no feed, no TikTok. If a notification can't reach you, it can't distract you. But there's a middle ground too. The key idea is <Highlight description="Basically, making it annoying to do the thing you want to avoid. If checking social media requires typing on tiny buttons or loading a slow browser, you'll naturally do it less. The harder something is, the less likely you are to bother." theme={theme}>friction</Highlight> -- the harder you make it to access distractions, the less likely you are to reach for them. Even something as simple as logging out of apps, or leaving your phone in another room, adds enough friction to break the habit.</p>
+              <p>You don't need to buy a new phone. You could borrow an old one from a parent or sibling during study blocks, or just use your phone's built-in Focus Mode or Do Not Disturb. The goal is the same: make distractions harder to reach than your books.</p>
             </ReadingSection>
           )}
           {activeSection === 2 && (
-            <ReadingSection title="Software Fortification." eyebrow="Step 3" icon={Laptop} theme={theme}>
-              <p>Your laptop is a "Trojan Horse"--a study tool that is also the main portal for distraction. Browser extensions are easily disabled. You need system-level blocking architecture. Applications like <Highlight description="Software that can block websites, apps, or the entire internet on your computer. 'Locked Mode' makes it impossible to bypass the block." theme={theme}>Freedom or Cold Turkey</Highlight> are essential.</p>
-              <p>The best strategy is an "Allowlist" that creates a <Highlight description="Blocking the entire internet except for a few pre-approved educational sites like Studyclix or Examinations.ie." theme={theme}>"Walled Garden."</Highlight> To counter the "I need it for research" excuse, you can build an <Highlight description="Using tools like Kiwix to download entire websites (like Wikipedia) for offline use, satisfying the need for information without the temptation of the live internet." theme={theme}>"Offline Internet"</Highlight>. This separates "Hunting" for information from "Gathering" it.</p>
+            <ReadingSection title="Locking Down Your Laptop." eyebrow="Step 3" icon={Laptop} theme={theme}>
+              <p>Your laptop is both your best study tool and your biggest trap. You open it to study, and twenty minutes later you're watching YouTube. Browser extensions that "block" sites are easy to turn off when you're tempted. What you need are proper <Highlight description="Free apps like Cold Turkey or Freedom that block distracting websites and apps on your laptop. The best ones have a 'locked mode' that makes it literally impossible to undo the block until the timer runs out -- even if you restart your computer." theme={theme}>website blockers</Highlight> that you genuinely can't get around.</p>
+              <p>The best approach is an <Highlight description="Instead of blocking individual bad sites (you'll always miss one), you block everything and then only allow the specific sites you need -- like Studyclix, Examinations.ie, or your school portal. This way, only useful stuff gets through." theme={theme}>allowlist</Highlight> -- block everything except the handful of sites you actually need for study, like Studyclix or Examinations.ie. And if you're worried about needing to look something up, try downloading what you need beforehand. You can save Wikipedia articles, past papers, or notes for <Highlight description="You can use tools like Kiwix to save entire websites (like Wikipedia) onto your laptop so you can access them without the internet. That way you get the information without the temptation of going online." theme={theme}>offline use</Highlight> so you have the information without the temptation of a live internet connection.</p>
             </ReadingSection>
           )}
           {activeSection === 3 && (
-            <ReadingSection title="Environmental Engineering." eyebrow="Step 4" icon={Home} theme={theme}>
-              <p>Your physical environment is a silent architect of your behavior. The principle of <Highlight description="The neurobiological fact that the mere presence of a tempting object (like a phone) in your visual field consumes cognitive resources as your brain actively works to inhibit the impulse to use it." theme={theme}>Visual Field Management</Highlight> is crucial. "Out of sight, out of mind" is not a cliche; it's a neurological reality. The mere presence of your phone, even face down, causes "Brain Drain."</p>
-              <p>The protocol is simple: the phone must be physically removed from the study room. It should be charged in a communal area like the kitchen. To counter the "I use it to check the time" excuse, place a simple analog clock on your desk.</p>
+            <ReadingSection title="Setting Up Your Space." eyebrow="Step 4" icon={Home} theme={theme}>
+              <p>Where you study matters more than you think. Here's a wild fact: just having your phone on the desk -- even face down, even on silent -- <Highlight description="Research from the University of Texas found that just having your phone visible drains your brainpower. Your brain is constantly spending energy resisting the urge to check it, even if you don't realise it. Moving it to another room completely removes that drain." theme={theme}>makes you worse at concentrating</Highlight>. Your brain is quietly fighting the urge to pick it up, and that uses up energy you could be putting into study.</p>
+              <p>"Out of sight, out of mind" isn't just a saying -- it's how your brain actually works. The fix is dead simple: move your phone out of the room while you study. Charge it in the kitchen or the hall. If you use it to check the time, stick a cheap clock on your desk instead (or use a watch). The less you can see your phone, the less it pulls at your attention.</p>
             </ReadingSection>
           )}
           {activeSection === 4 && (
-            <ReadingSection title="Behavioral Engineering." eyebrow="Step 5" icon={Repeat} theme={theme}>
-              <p>You can automate the creation of these barriers using principles from behavioral psychology. The first tool is <Highlight description="A technique from James Clear's 'Atomic Habits' where you pair a new, desired behavior with an established one." theme={theme}>Habit Stacking</Highlight>. The formula is: "After [Current Habit], I will [New Habit]." For example: "After I walk in the door from school, I will immediately put my phone in the kitchen charger."</p>
-              <p>The second tool is <Highlight description="An 'If-Then' plan that pre-programs your response to an inevitable distraction, removing the need for in-the-moment willpower." theme={theme}>Implementation Intentions</Highlight>. The formula: "If [Trigger occurs], then I will [Action]." For example: "If I feel the urge to check Instagram, then I will stand up and do 5 star jumps." This removes the need to negotiate with your tired brain.</p>
+            <ReadingSection title="Building Better Habits." eyebrow="Step 5" icon={Repeat} theme={theme}>
+              <p>The best way to beat distractions isn't willpower -- it's making good habits automatic so you don't even have to think about it. The first trick is <Highlight description="You attach a new habit to something you already do every day. The formula: 'After I [thing I always do], I will [new thing].' Because the first habit is automatic, the second one gets pulled along with it." theme={theme}>habit stacking</Highlight>. You pair your new habit with something you already do without thinking. For example: "After I walk in the door from school, I'll put my phone straight on the kitchen charger." You don't have to decide each day -- it just becomes what you do.</p>
+              <p>The second trick is making <Highlight description="You decide in advance what you'll do when a specific situation happens. The formula: 'If [this happens], then I will [do this].' For example: 'If I feel the urge to check Instagram, I'll stand up and do 5 star jumps.' It takes the decision-making out of the moment when you're tired and your willpower is low." theme={theme}>if-then plans</Highlight>. You decide in advance what you'll do when temptation hits. For example: "If I feel the urge to check Instagram, I'll stand up and do 5 star jumps." The point is that you've already made the decision, so when the moment comes, you don't have to negotiate with your tired brain.</p>
             </ReadingSection>
           )}
           {activeSection === 5 && (
-            <ReadingSection title="Social Dynamics." eyebrow="Step 6" icon={Users} theme={theme}>
-              <p>The biggest barrier to disconnecting is not the technology; it's the social anxiety it alleviates--the Fear Of Missing Out (FOMO). Disconnecting without explanation can lead to social friction. The <Highlight description="The strategy of explicitly communicating your new boundaries to your friends (e.g., 'I'm off my phone from 5-9 PM for the LC, I'll reply after')." theme={theme}>"Social Contract"</Highlight> strategy manages expectations.</p>
-              <p>Instead of constant, low-quality connection, you should <Highlight description="The practice of condensing your social media use into specific, pre-scheduled 'Online Windows' (e.g., 8:30-9:30 PM)." theme={theme}>"Batch" your socialization</Highlight>. This makes the interactions more focused and turns them into a reward for a day of deep work, rather than a constant background noise that fragments your attention.</p>
+            <ReadingSection title="Dealing with FOMO." eyebrow="Step 6" icon={Users} theme={theme}>
+              <p>Let's be real -- the hardest part of putting your phone away isn't the phone. It's the fear that you're missing out on something. What if someone messages and you don't reply? What if something kicks off in the group chat? The trick is to <Highlight description="Just give your mates a heads up. A quick message like 'I'm off my phone from 5 to 9 for study, I'll reply after' takes the pressure off. People are way more understanding than you expect, and once they know, they stop expecting instant replies." theme={theme}>tell your friends what you're doing</Highlight>. Send a quick message to your group chat: "I'm off my phone from 5 to 9 for study, I'll reply after." Once people know, the pressure disappears.</p>
+              <p>The other move is to <Highlight description="Instead of scrolling on and off all day (which means you're never fully studying and never fully relaxing), you pick a specific time for social media -- like 8:30 to 9:30pm. You'll actually enjoy it more because you're not feeling guilty, and the rest of your day stays focused." theme={theme}>batch your screen time</Highlight>. Instead of dipping in and out of social media all day (which means you're never fully studying and never fully chilling), pick one window -- say 8:30 to 9:30pm -- and save it all for then. You'll actually enjoy it more because you're not feeling guilty about it.</p>
             </ReadingSection>
           )}
           {activeSection === 6 && (
-            <ReadingSection title="The Roadmap." eyebrow="Step 7" icon={Map} theme={theme}>
-              <p>Implementing these barriers is a phased process over the Leaving Cert cycle. <strong>Phase 1: The Audit (Sept - Dec).</strong> Install RescueTime, identify your time sinks, and start with a Level 1 detox (phone out of the room at night). <strong>Phase 2: The Hardening (Jan - Mar).</strong> Introduce software blockers, an "Offline Internet," and "batch" your social communication. <strong>Phase 3: The Sprint (Apr - June).</strong> This is "Monk Mode." Switch to a "dumb phone," use "Locked Mode" on laptops, and consider deactivating social media accounts.</p>
+            <ReadingSection title="Your Step-by-Step Plan." eyebrow="Step 7" icon={Map} theme={theme}>
+              <p>You don't have to do everything at once. This is a gradual plan that builds up across the Leaving Cert year. <strong>Phase 1: Getting Started (Sept - Dec).</strong> Turn off unnecessary notifications, start charging your phone outside your bedroom, and figure out where your time actually goes. <strong>Phase 2: Locking It Down (Jan - Mar).</strong> Set up website blockers on your laptop, start batching your social media into one window each evening, and delete the worst time-wasting apps. <strong>Phase 3: Full Focus (Apr - June).</strong> This is where you go all-in for the exams. Minimal phone use, locked blockers on your laptop, and maybe even deactivating social media until the Leaving Cert is over.</p>
               <PhasedDetoxRoadmap />
               <MicroCommitment theme={theme}>
-                <p>Tonight, take your phone charger out of your bedroom and move it to the kitchen. This is your first, most important step in building a wall of friction.</p>
+                <p>Tonight, move your phone charger out of your bedroom and into the kitchen. That's it. One small change, but it's the single most effective thing you can do right now.</p>
               </MicroCommitment>
             </ReadingSection>
           )}

@@ -111,7 +111,7 @@ const WorkingMemoryGrid = () => {
         Working Memory Under Threat
       </h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">
-        See how stereotype threat hijacks your cognitive resources — and how affirmation restores them.
+        See how invisible pressure steals your brainpower — and how a simple exercise gives it back.
       </p>
 
       {/* Percentage indicator */}
@@ -276,7 +276,7 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
   const sections = [
     { id: 'invisible-threat', title: 'The Invisible Threat', eyebrow: '01 // The Problem', icon: AlertTriangle },
     { id: 'psychological-shield', title: 'The Psychological Shield', eyebrow: '02 // The Solution', icon: Shield },
-    { id: 'broaden-build', title: 'How It Works: "Broaden-and-Build"', eyebrow: '03 // The Mechanism', icon: BrainCircuit },
+    { id: 'broaden-build', title: 'How It Works: The Zoom-Out Effect', eyebrow: '03 // The Mechanism', icon: BrainCircuit },
     { id: 'real-world-data', title: 'The Real World Data', eyebrow: '04 // The Evidence', icon: UserCheck },
     { id: 'your-protocol', title: 'Your Pre-Exam Protocol', eyebrow: '05 // The Action Plan', icon: UserCheck },
   ];
@@ -286,7 +286,7 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
       moduleNumber="03"
       moduleTitle="Affirming Values"
       moduleSubtitle="The Psychological Shield"
-      moduleDescription="Learn the science of &quot;stereotype threat&quot; and how a 15-minute writing exercise can act as a psychological shield in high-stakes exams."
+      moduleDescription="Discover the invisible pressure that steals your brainpower in exams — and a simple 15-minute exercise that shields you from it."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -298,8 +298,8 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
           {activeSection === 0 && (
             <>
             <ReadingSection title="The Invisible Threat." eyebrow="Step 1" icon={AlertTriangle} theme={theme}>
-              <p>In a high-stakes situation like the Leaving Cert, your brain is on high alert for threats. For students from disadvantaged backgrounds, there's an extra, invisible threat in the room: the fear that a poor performance will confirm a negative stereotype about your group. This is called <Highlight description="A situational predicament in which individuals are at risk of confirming negative stereotypes about their social group. This adds extra cognitive load, which can impair performance." theme={theme}>Stereotype Threat</Highlight>.</p>
-              <p>It's a cognitive tax. Part of your precious working memory gets hijacked by this background anxiety, leaving less capacity for the actual exam questions. This isn't just "in your head"--it's a measurable physiological stress response that can sabotage your performance, even if you know the material perfectly.</p>
+              <p>In a high-stakes situation like the Leaving Cert, your brain is on high alert. For students from disadvantaged backgrounds, there's an extra, invisible threat in the room: the fear that a bad result will confirm what people already think about "people like you." This is called <Highlight description="That nagging background voice during an exam that says 'people like me don't get these results.' It's not just nerves — it actually takes up space in your brain, leaving less room for the actual questions." theme={theme}>Stereotype Threat</Highlight>.</p>
+              <p>It's like a hidden tax on your brainpower. Part of your working memory gets hijacked by this background anxiety, leaving less room for the actual exam questions. This isn't just "in your head" — it's a real stress response that can cost you marks, even when you know the material perfectly.</p>
               <PersonalStory name="Alex" role="Founder, NextStepUni">
                 <p>I know what this feels like. Walking into an exam hall, part of my brain was always running a background programme: "People from Togher don't get these kinds of results." I didn't have a name for it then, but it was stereotype threat. I was fighting the exam and fighting that voice at the same time — and I didn't realise it was costing me marks until I learned the science behind it.</p>
               </PersonalStory>
@@ -309,29 +309,29 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
           )}
            {activeSection === 1 && (
             <ReadingSection title="The Psychological Shield." eyebrow="Step 2" icon={Shield} theme={theme}>
-              <p>For decades, psychologists have been searching for a "vaccine" against this threat. The most powerful and replicable intervention is astonishingly simple: a 15-minute writing exercise called <Highlight description="A brief psychological intervention where individuals write about their core personal values. This has been shown to buffer against stress and improve performance in high-pressure situations." theme={theme}>Self-Affirmation</Highlight>.</p>
-              <p>It sounds too good to be true, but the data is overwhelming. By taking a few moments before a stressful event to write about what's truly important to you (like family, creativity, or friendship), you create a psychological "shield." You remind your brain that your self-worth is not solely defined by the exam you're about to take. This frees up the cognitive resources that stereotype threat would otherwise steal.</p>
+              <p>Researchers spent years looking for a way to fight this invisible threat. The best solution they found is almost ridiculously simple: a 15-minute writing exercise called <Highlight description="Before a stressful event, you spend 15 minutes writing about what matters most to you — your family, your friends, your creativity. It reminds your brain that you're more than just an exam result, and that frees up the brainpower the threat was stealing." theme={theme}>Self-Affirmation</Highlight>.</p>
+              <p>It sounds too good to be true, but it works. By writing about what's truly important to you before a stressful event — family, creativity, friendship — you create a mental shield. You remind your brain that your self-worth isn't defined by this one exam. That simple reminder frees up the brainpower that the threat would otherwise steal.</p>
             </ReadingSection>
           )}
            {activeSection === 2 && (
-            <ReadingSection title="How It Works: 'Broaden-and-Build'." eyebrow="Step 3" icon={BrainCircuit} theme={theme}>
-              <p>How can a simple writing exercise have such a powerful effect? It's not magic; it's neuroscience. According to Barbara Fredrickson's <Highlight description="A theory in positive psychology that suggests positive emotions (like the feeling of self-worth from an affirmation) broaden a person's mindset and help build their psychological, social, and intellectual resources." theme={theme}>Broaden-and-Build Theory</Highlight>, negative emotions (like fear) narrow your focus to a single threat. Positive emotions, on the other hand, do the opposite: they broaden your perspective.</p>
-              <p>When you affirm your core values, you activate brain regions associated with self-processing and reward (like the ventromedial prefrontal cortex). This creates a moment of positive emotion that "zooms out" your perspective. The exam is no longer a life-or-death verdict on your entire identity; it's just one part of a much larger, more meaningful life. This cognitive 'broadening' is what reduces the threat and frees up your working memory.</p>
+            <ReadingSection title="How It Works: The Zoom-Out Effect." eyebrow="Step 3" icon={BrainCircuit} theme={theme}>
+              <p>How can a simple writing exercise have such a powerful effect? It comes down to how your brain handles emotions. When you're scared, your focus narrows — all you can see is the threat. But positive emotions do the opposite: they <Highlight description="When you feel good about who you are, your brain literally opens up. You see more options, think more clearly, and stop fixating on the one thing that's scaring you. It's like going from tunnel vision to a wide-angle lens." theme={theme}>Broaden Your Perspective</Highlight>.</p>
+              <p>When you write about your values, your brain gets a hit of positive emotion — a reminder that you're more than this one exam. That "zooms out" your perspective. Suddenly the Leaving Cert isn't a life-or-death verdict on your entire identity; it's just one part of a much bigger, more meaningful life. That shift is what reduces the threat and frees up your working memory.</p>
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="The Real World Data." eyebrow="Step 4" icon={UserCheck} theme={theme}>
-              <p>In a landmark study by Cohen et al. (2006), they gave a values affirmation exercise to a group of African American middle-school students. The results were staggering. This simple, 15-minute exercise, done just a few times a year, boosted the grades of the students by an average of 0.3 grade points.</p>
-              <p>Even more remarkably, two years later, the students who had done the exercise were still outperforming their peers. The intervention had set off a "virtuous cycle"--better grades led to more confidence, which led to even better grades. The effect was most powerful for the students who were most at risk of underperforming. This is one of the most effective psychological interventions ever discovered.</p>
+              <p>This isn't just theory — it's been tested in real classrooms. Researchers gave a group of students from disadvantaged backgrounds this exact exercise: 15 minutes of writing about their values, just a few times a year. The result? Their grades jumped significantly — and the effect lasted.</p>
+              <p>Two years later, those students were still outperforming their peers. The exercise had kicked off a positive cycle — better grades led to more confidence, which led to even better grades. And the effect was strongest for the students who were most at risk of underperforming. A 15-minute exercise, a few times a year, changed their trajectory.</p>
             </ReadingSection>
           )}
            {activeSection === 4 && (
             <ReadingSection title="Your Pre-Exam Protocol." eyebrow="Step 5" icon={UserCheck} theme={theme}>
-              <p>You now have a scientifically-proven tool to protect your brain under pressure. The final step is to turn it into a concrete, pre-exam ritual. Before every major exam (especially the Mocks and the Leaving Cert itself), you will run the Self-Affirmation Protocol.</p>
-              <p>The steps are simple: <strong>1. Identify your core values.</strong> <strong>2. Choose the one that feels most important to you right now.</strong> <strong>3. Write for 15 minutes.</strong> This isn't an essay; it's a private reflection. Write about why the value is important and describe a specific time you lived up to it. This isn't a "nice to have"; it's a cognitive warm-up as important as checking your pens.</p>
+              <p>You now have a genuine tool to protect your brain under pressure. The last step is to make it a habit — a pre-exam ritual you do every time, just like checking you have the right pens.</p>
+              <p>The steps are simple: <strong>1. Pick your core values below.</strong> <strong>2. Choose the one that matters most right now.</strong> <strong>3. Write for 15 minutes.</strong> This isn't an essay — it's a private reflection. Write about why the value is important to you and describe a specific time you lived up to it. Do this before every major exam, especially the Mocks and the Leaving Cert.</p>
               <ValuesSelector savedValues={responses['selected-values']} onSave={(v) => saveResponse('selected-values', v)} />
               <MicroCommitment theme={theme}>
-                <p>Take the values you selected above. Create a recurring event in your phone's calendar for the morning of every exam you have this year, with the title: "15 Min Values Affirmation." You've just weaponized positive psychology.</p>
+                <p>Take the values you selected above. Create a recurring event in your phone's calendar for the morning of every exam you have this year, with the title: "15 Min Values Writing." You now have a pre-exam shield that actually works.</p>
               </MicroCommitment>
             </ReadingSection>
           )}

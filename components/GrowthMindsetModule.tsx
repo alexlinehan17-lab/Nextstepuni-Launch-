@@ -366,7 +366,7 @@ const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
       moduleNumber="13"
       moduleTitle="The Growth Playbook"
       moduleSubtitle="The Mind's Operating System"
-      moduleDescription={`Upgrade your brain's core operating system from "fixed" to "growth." This module deconstructs the science of neuroplasticity and gives you the tools to see challenges as opportunities.`}
+      moduleDescription={`Your brain can actually change and get better at things — that's not just a nice idea, it's how your brain works. This module shows you how to stop thinking "I'm just not smart enough" and start seeing every challenge as a chance to grow.`}
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -377,8 +377,8 @@ const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Two Brains: Fixed vs. Growth." eyebrow="Step 1" icon={Cpu} theme={theme}>
-              <p>Imagine your brain is a computer. Some people believe it comes with "read-only" memory. You're born with a certain amount of intelligence, and that's that. This is the <Highlight description="The belief that your intelligence and abilities are static, unchangeable traits. People with this mindset avoid challenges to avoid 'proving' their limitations." theme={theme}>Fixed Mindset</Highlight>. It's an operating system that sees effort as pointless and failure as a permanent judgement.</p>
-              <p>But the science shows your brain is more like a rewritable drive. Every time you learn something new, you're installing new software. This is the <Highlight description="The belief that intelligence can be developed through dedication and hard work. This view creates a love of learning and a resilience that is essential for great accomplishment." theme={theme}>Growth Mindset</Highlight>. It's an operating system that sees challenges as opportunities and failure as feedback. Which OS is your brain running right now?</p>
+              <p>Think of your brain like a phone. Some people believe it shipped with whatever apps it's going to have, and that's it. You're born with a certain amount of intelligence, and you're stuck with it. This is the <Highlight description="Basically thinking you're either smart or you're not, and there's nothing you can do about it. If you have this, you'll dodge hard stuff because failing feels like proof you're just not good enough." theme={theme}>Fixed Mindset</Highlight>. When you're running this, effort feels pointless and failing feels like a permanent label on who you are.</p>
+              <p>But your brain is actually more like a phone you can keep upgrading. Every time you learn something new, you're adding new capabilities. This is the <Highlight description="Thinking that you can actually get smarter and better at things by putting in effort and trying new approaches. When you believe this, you stop being scared of hard stuff and start seeing it as a way to level up." theme={theme}>Growth Mindset</Highlight>. With this one, challenges are chances to get better and failing is just useful information about what to try next. So which one are you running right now?</p>
               <PersonalStory name="Alex" role="Founder, NextStepUni">
                 <p>Growing up in Togher in Cork, I never saw school as something that mattered. I spent my time playing soccer and messing around — I genuinely believed the classroom wasn't for people like me. I fell in with the wrong crowds, started drinking, and was heading nowhere. I failed my Junior Cert, but honestly, I was on that path long before the results came out. The fixed mindset wasn't some concept in a textbook — it was my entire operating system, and I didn't even know it was running.</p>
               </PersonalStory>
@@ -390,8 +390,8 @@ const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
           )}
            {activeSection === 1 && (
             <ReadingSection title="Your Brain is Plastic." eyebrow="Step 2" icon={BrainCircuit} theme={theme}>
-              <p>The single most important discovery in neuroscience is that your brain is not fixed. It physically changes based on what you do. This is called <Highlight description="The brain's ability to reorganize itself by forming new neural connections throughout life. It's the biological basis of learning and memory." theme={theme}>Neuroplasticity</Highlight>. Think of learning a new maths formula like walking through a forest. The first time, it's hard work, and there's no clear path.</p>
-              <p>But if you walk that same path every day (i.e., you practice the formula), you wear down a clear trail. In your brain, this is real: the connections between your brain cells (neurons) get stronger, faster, and more efficient. You are literally building the road to knowledge in your head. Every bit of effort you put in is a construction project in your own brain.</p>
+              <p>Here's the thing most people don't realise: your brain is not set in stone. It physically changes based on what you do with it. This is called <Highlight description="Your brain's ability to physically rewire itself whenever you learn something new. Every time you practise, your brain builds stronger connections — it's literally how learning works under the hood." theme={theme}>Neuroplasticity</Highlight>. Think of learning a new maths formula like walking through a forest. The first time, it's hard going because there's no clear path.</p>
+              <p>But if you walk that same route every day (i.e., you practise the formula), you wear down a clear trail. In your brain, this is literally what happens: the connections between your brain cells get stronger, faster, and more efficient. You're actually building roads in your head every time you study. Every bit of effort you put in is real construction work happening inside your brain.</p>
               <NeuroplasticityVisualizer />
                <MicroCommitment theme={theme}>
                 <p>Pick the one school subject you find hardest. Spend just five minutes tonight reviewing a topic from it. You just sent a work crew to start clearing a new path in your brain's forest.</p>
@@ -400,10 +400,10 @@ const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
           )}
            {activeSection === 2 && (
             <ReadingSection title="The Most Powerful Word." eyebrow="Step 3" icon={RotateCcw} theme={theme}>
-                <p>A fixed mindset speaks in absolutes: "I can't do this." "I'm not good at this." These are dead ends. They shut down effort and kill motivation. The growth mindset has a simple but incredibly powerful software patch for this bug: the word "yet."</p>
-                <p>Adding "yet" to the end of a fixed statement instantly changes it from a verdict into a journey. "I can't do this" becomes "I can't do this... yet." "I'm not good at this" becomes "I'm not good at this... yet." It's a linguistic trick that tells your brain the story isn't over. It opens the door to new strategies and further effort, keeping your motivation circuit online.</p>
+                <p>A fixed mindset talks in absolutes: "I can't do this." "I'm not good at this." These are dead ends. They shut down effort and kill motivation. But there's a ridiculously simple fix: the word "yet."</p>
+                <p>Adding "yet" to the end of a fixed statement instantly changes it from a full stop into a work in progress. "I can't do this" becomes "I can't do this... yet." "I'm not good at this" becomes "I'm not good at this... yet." It sounds small, but it tells your brain the story isn't over. It keeps the door open for new approaches and more effort, and that's what keeps you going.</p>
                 <PersonalStory name="Alex" role="Founder, NextStepUni">
-                  <p>After I lost one of my best friends during Junior Cert, my whole world shattered. In 4th year, something shifted. I started reading academic papers on how people actually learn, and I realised the voice that had been telling me "you can't do this" was just software, not fact. I built my own learning system from the science, and "I can't" slowly became "I can't yet." It felt fake at first. But I went from failing my Junior Cert to nearly 600 points in the Leaving Cert and a UCC Scholarship. The "yet" was real — I just had to give it time to prove itself.</p>
+                  <p>After I lost one of my best friends during Junior Cert, my whole world shattered. In 4th year, something shifted. I started reading about how people actually learn, and I realised the voice that had been telling me "you can't do this" was just a habit, not a fact. I built my own study system, and "I can't" slowly became "I can't yet." It felt fake at first. But I went from failing my Junior Cert to nearly 600 points in the Leaving Cert and a UCC Scholarship. The "yet" was real — I just had to give it time to prove itself.</p>
                 </PersonalStory>
                 <ReframeChallenge savedText={responses['reframe-text']} onSave={(t) => saveResponse('reframe-text', t)} />
                 <MicroCommitment theme={theme}>
@@ -413,8 +413,8 @@ const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
           )}
            {activeSection === 3 && (
             <ReadingSection title="Effort is the Real Talent." eyebrow="Step 4" icon={Zap} theme={theme}>
-                <p>Our culture loves the myth of "natural talent." We see someone brilliant at something and assume they were just born that way. This is one of the most damaging ideas in education. It teaches us that if something doesn't come easily, we must not be "talented" at it.</p>
-                <p>The science of expertise shows this is a lie. Talent is a starting point, but effort is the engine of growth. It is the <Highlight description="Focused, strategic practice that pushes you slightly beyond your current comfort zone. This is the specific type of effort that triggers neuroplasticity and builds skill." theme={theme}>Deliberate Practice</Highlight> that forges the strong neural pathways we saw earlier. A growth mindset understands that effort isn't a sign of weakness; it's the process of getting smarter.</p>
+                <p>Everyone loves the idea of "natural talent." We see someone who's brilliant at something and assume they were just born that way. This is one of the most unhelpful ideas out there. It teaches us that if something doesn't come easily, we must not be cut out for it.</p>
+                <p>But that's just not true. Talent might give you a head start, but effort is what actually makes you better. It's <Highlight description="Practising with focus on the bits you actually find hard, not just repeating the easy stuff. It's the kind of effort that stretches you just enough to make your brain build new connections and get better." theme={theme}>Deliberate Practice</Highlight> — the focused, targeted kind — that builds those strong brain connections we talked about earlier. A growth mindset gets this: effort isn't a sign you're not smart enough. It's literally the process of getting smarter.</p>
                 <MicroCommitment theme={theme}>
                     <p>Identify one area where you rely on "talent". Now, identify one tiny, effortful action you can take to actually improve it. (e.g., If you're 'naturally good' at English, spend 10 minutes learning one new sophisticated word).</p>
                 </MicroCommitment>
@@ -422,8 +422,8 @@ const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
           )}
            {activeSection === 4 && (
             <ReadingSection title="Feedback is Fuel, Not a Verdict." eyebrow="Step 5" icon={MessageSquareQuote} theme={theme}>
-              <p>A fixed mindset hears criticism and thinks: "They're telling me I'm stupid." It treats feedback as a final verdict on your ability. This is why people with a fixed mindset get defensive or give up when they get a bad grade or tough correction from a teacher.</p>
-              <p>A growth mindset hears the exact same criticism and thinks: "They're giving me data I can use to improve." It sees feedback as fuel for the engine. It's not about you, it's about your current strategy. A bad grade isn't a label, it's a diagnostic telling you where the path needs more work. Learning to separate your performance from your identity is a critical upgrade.</p>
+              <p>A fixed mindset hears criticism and thinks: "They're telling me I'm stupid." It treats feedback like a final judgement on who you are. This is why people with a fixed mindset get defensive or just give up when they get a bad grade or a harsh correction from a teacher.</p>
+              <p>A growth mindset hears the exact same criticism and thinks: "OK, so what can I do differently next time?" It treats feedback as useful information, not a personal attack. It's not about you as a person — it's about what you did this time. A bad grade isn't a label. It's a signpost showing you where to focus. Learning to separate how you did from who you are is one of the most useful things you can do.</p>
               <FeedbackTranslator />
               <MicroCommitment theme={theme}>
                 <p>Go back to a piece of work where you got a lower grade than you wanted. Find one comment from the teacher and write down what strategy it's telling you to try next time.</p>
@@ -432,8 +432,8 @@ const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
           )}
            {activeSection === 5 && (
             <ReadingSection title="Installing Your Growth OS." eyebrow="Step 6" icon={Activity} theme={theme}>
-              <p>A growth mindset isn't a magical incantation. It's a new operating system that you have to consciously choose to run every day. It's built through small, consistent habits: the way you talk to yourself, the way you react to mistakes, and the way you approach a challenge.</p>
-              <p>By internalising these ideas, you can start to build an identity based on growth. You stop being "the person who is bad at Maths" and become "the person who is working to get better at Maths." This shift is the foundation of resilience and the key to unlocking your academic potential. It's time to finalise the installation.</p>
+              <p>A growth mindset isn't a magic switch you flip once. It's something you choose to practise every day through small, consistent habits: the way you talk to yourself, the way you react to mistakes, and the way you approach something difficult.</p>
+              <p>Once you start thinking this way, something cool happens. You stop being "the person who's bad at Maths" and become "the person who's working on getting better at Maths." That might sound like a small change, but it's massive. It's the difference between giving up and keeping going. And that's what this whole module has been building towards.</p>
                <MicroCommitment theme={theme}>
                 <p>Write down your favourite "Growth Mindset Mantra" from this module. Stick it on your bedroom wall, your mirror, or the inside of your school journal. Make it visible.</p>
               </MicroCommitment>

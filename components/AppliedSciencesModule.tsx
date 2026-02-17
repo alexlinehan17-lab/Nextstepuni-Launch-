@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Key, Cpu, Droplet, Code, HardHat, Wrench } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { emeraldTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = emeraldTheme;
@@ -190,20 +190,20 @@ const DopingSimulator = () => {
 // --- MODULE COMPONENT ---
 const AppliedSciencesModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'convergence', title: 'The Convergence', eyebrow: '01 // The Core Idea', icon: Key },
-    { id: 'engineering', title: 'Engineering', eyebrow: '02 // Semiconductor Focus', icon: Cpu },
+    { id: 'convergence', title: 'The Big Picture', eyebrow: '01 // What Ties It All Together', icon: Key },
+    { id: 'engineering', title: 'Engineering', eyebrow: '02 // Semiconductors & Your Project', icon: Cpu },
     { id: 'dcg', title: 'DCG', eyebrow: '03 // Soap Dispensers & CAD', icon: Droplet },
     { id: 'cs', title: 'Computer Science', eyebrow: '04 // Forests & Climate', icon: Code },
-    { id: 'construction-tech', title: 'Construction & Tech', eyebrow: '05 // The Artefact', icon: HardHat },
-    { id: 'synergies', title: 'Cross-Curricular Synergies', eyebrow: '06 // The Action Plan', icon: Wrench },
+    { id: 'construction-tech', title: 'Construction & Tech', eyebrow: '05 // Your Project Counts', icon: HardHat },
+    { id: 'synergies', title: 'How These Subjects Connect', eyebrow: '06 // Your Action Plan', icon: Wrench },
   ];
 
   return (
     <ModuleLayout
       moduleNumber="06"
       moduleTitle="Mastering Applied Sciences"
-      moduleSubtitle="The 2026 Technical Briefs"
-      moduleDescription="A deep dive into the 2026 briefs for Engineering, DCG, CS, Construction &amp; Technology, blending theory with project strategy."
+      moduleSubtitle="Your 2026 Project & Exam Guide"
+      moduleDescription="Everything you need to know about this year's Engineering, DCG, Computer Science, and Construction projects -- plus how to nail the exams."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -213,42 +213,45 @@ const AppliedSciencesModule: React.FC<{ onBack: () => void; progress: ModuleProg
       {(activeSection) => (
         <>
           {activeSection === 0 && (
-            <ReadingSection title="The Convergence." eyebrow="Step 1" icon={Key} theme={theme}>
-              <p>The "practical" subjects are no longer just about workshop skills. They represent the cutting edge of STEM education, demanding a synthesis of theoretical knowledge, digital fluency, and design innovation. The key to a H1 is demonstrating this <Highlight description="The ability to synthesize theoretical knowledge, manual/digital dexterity, and design innovation into a coherent whole." theme={theme}>technological capability</Highlight>.</p>
-              <p>Across all these subjects, the single biggest cause of lost marks is a disconnect between the <Highlight description="The physical project or artefact you create." theme={theme}>"made artefact"</Highlight> and the <Highlight description="The design folio or report that documents the process." theme={theme}>"written account."</Highlight> A brilliant project with a poor folio that looks "retro-fitted" will not achieve a high grade. The narrative of your design process is as important as the final product.</p>
+            <ReadingSection title="The Big Picture." eyebrow="Step 1" icon={Key} theme={theme}>
+              <p>The "practical" subjects are way more than just workshop skills now. You need to show that you can think through a problem, use digital tools, and come up with creative design solutions. The key to a H1 is showing your <Highlight description="Being able to combine your knowledge, your hands-on skills, and your design ideas into one solid piece of work." theme={theme}>technological capability</Highlight> -- that you can bring it all together.</p>
+              <p>Across all these subjects, the single biggest reason students lose marks is a gap between the <Highlight description="The actual physical thing you build or make." theme={theme}>"made artefact"</Highlight> (the thing you build) and the <Highlight description="The folder or report where you document your whole design process." theme={theme}>"written account"</Highlight> (the folio where you show your process). A brilliant project with a sloppy folio that looks like you wrote it after the fact will not get a high grade. Telling the story of how you designed it matters just as much as the finished product.</p>
+              <PersonalStory name="Oisin" role="6th Year, Waterford">
+                <p>I did Engineering and Construction Studies for my LC. In 5th year, I spent ages on my Engineering project but barely touched the folio -- I thought the project would speak for itself. I got a B2. In 6th year, I started the folio from day one, documenting every decision and sketch. Same skill level, way better grade. The folio is where the marks actually are.</p>
+              </PersonalStory>
             </ReadingSection>
           )}
           {activeSection === 1 && (
             <ReadingSection title="Engineering: 2026." eyebrow="Step 2" icon={Cpu} theme={theme}>
-              <p>For 2026, the prescribed Special Topic is <strong>Semiconductor Technology</strong>. This is a high-stakes question that demands deep theoretical knowledge. You must be able to explain the atomic-level mechanics of <Highlight description="The process of adding impurities to a pure semiconductor to change its electrical properties." theme={theme}>doping</Highlight> to create N-type (free electrons) and P-type ("holes") materials, and how this forms a <Highlight description="The fundamental building block of most semiconductor devices, like diodes and transistors." theme={theme}>PN Junction</Highlight>.</p>
-              <p>For the project (25%) and practical (25%), precision is everything. The folio must demonstrate a genuine design process, not be "retro-fitted" to the finished artefact. CAD skills (SolidWorks) are now essential. For the practical exam, the first 45 minutes on <strong>Marking Out</strong> are the most critical; an error here makes the entire piece impossible to assemble correctly.</p>
+              <p>This year's Special Topic is <strong>Semiconductor Technology</strong>. It's a big-mark question, so you really need to understand this stuff. You need to be able to explain how <Highlight description="Adding tiny amounts of other elements to silicon to change how it conducts electricity." theme={theme}>doping</Highlight> works -- how you add impurities to silicon to create N-type (extra electrons floating around) and P-type (gaps where electrons are missing, called 'holes') materials, and what happens when you put them together to form a <Highlight description="Where N-type and P-type materials meet. It's the basic building block inside every diode and transistor." theme={theme}>PN Junction</Highlight>.</p>
+              <p>For the project (25%) and practical exam (25%), precision is everything. Your folio needs to show a real design process -- not one you wrote after the fact to match what you already built. CAD skills (SolidWorks, which you'll have access to in school) are essential now. In the practical exam, the first 45 minutes on <strong>Marking Out</strong> are the most important part; if you get this wrong, the whole piece won't fit together properly.</p>
               <DopingSimulator/>
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="DCG: 2026." eyebrow="Step 3" icon={Droplet} theme={theme}>
-                <p>The Student Assignment is 40% of your grade. For 2026, the Higher Level theme is <strong>Refillable Soap Dispensers</strong>, and Ordinary Level is <strong>Fidget Toys</strong>. For HL, this means a focus on ergonomics and complex CAD surfacing. You'll need to master SolidWorks features like <Highlight description="A CAD tool for creating complex, organic shapes by connecting a series of profiles." theme={theme}>Loft</Highlight> and <Highlight description="A CAD feature that restricts the movement of components in an assembly, allowing for realistic simulation of mechanisms." theme={theme}>Limit Mates</Highlight> to model the pump mechanism.</p>
-                <p>A H1 folio requires more than just good CAD. It needs rich <Highlight description="Explaining how the form of an object relates to its function (e.g., 'the truncated cone shape lowers the centre of gravity, making it more stable')." theme={theme}>Geometric Analysis</Highlight> and photorealistic renders using PhotoView 360 that show an understanding of materials and lighting.</p>
+                <p>The Student Assignment is a massive 40% of your grade. For 2026, the Higher Level theme is <strong>Refillable Soap Dispensers</strong>, and Ordinary Level is <strong>Fidget Toys</strong>. For HL, you'll be designing something ergonomic with moving parts, so you'll need to get comfortable with SolidWorks features like <Highlight description="A tool in SolidWorks that lets you create smooth, curved shapes by blending between different cross-sections -- think of the shape of a soap bottle." theme={theme}>Loft</Highlight> and <Highlight description="A setting in SolidWorks assemblies that controls how far parts can move, so you can show your pump mechanism actually working." theme={theme}>Limit Mates</Highlight> to model the pump mechanism.</p>
+                <p>A H1 folio needs more than just good 3D models. You should include <Highlight description="Explaining why your design is shaped the way it is -- for example, 'making the base wider stops it tipping over.' It shows you thought about the shape, not just drew it." theme={theme}>Geometric Analysis</Highlight> (explaining why your shapes work the way they do) and photorealistic renders using PhotoView 360 that show you understand materials and lighting. You can access all these tools through SolidWorks in school.</p>
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="Computer Science: 2026." eyebrow="Step 4" icon={Code} theme={theme}>
-              <p>The 2026 coursework (30%) is themed <strong>"Forests, Climate Change, and Biodiversity."</strong> This requires an ambitious integration of hardware and software. You must build an embedded system using a <Highlight description="The standard microcontroller for the course, featuring integrated sensors and radio capability." theme={theme}>BBC micro:bit</Highlight> with external sensors (e.g., soil moisture, temperature) that sends data to a Python program.</p>
-              <p>The Python program must then run a <Highlight description="A 'what-if' model of a forest-related system, like a forest fire simulation, where the probability of ignition is influenced by the real-time data from your micro:bit." theme={theme}>Modelling and Simulation</Highlight>. The crucial element is the feedback loop: the physical data must influence the virtual model, and the model should ideally send a signal back to the hardware. Your final report is a website (HTML/CSS), and a video demo is mandatory.</p>
+              <p>The 2026 coursework (worth 30%) is themed <strong>"Forests, Climate Change, and Biodiversity."</strong> You need to combine hardware and software into one project. That means building something with a <Highlight description="A small, cheap computer the size of a credit card that your school provides. It has built-in sensors and can talk wirelessly to other devices." theme={theme}>BBC micro:bit</Highlight> plus some external sensors (like soil moisture or temperature sensors, which your school should have) that sends real data to a Python program.</p>
+              <p>Your Python program then needs to run a <Highlight description="A 'what-if' program -- like a forest fire simulation where real sensor data (say, temperature) changes what happens in the model." theme={theme}>simulation</Highlight>. The key thing examiners want to see is a feedback loop: your physical sensor data should change what happens in the simulation, and ideally the simulation sends a signal back to the hardware too. Your final report is a website (HTML/CSS), and you also need a video demo showing it all working.</p>
             </ReadingSection>
           )}
           {activeSection === 4 && (
             <ReadingSection title="Construction & Tech." eyebrow="Step 5" icon={HardHat} theme={theme}>
-              <p>In <strong>Construction Studies</strong>, the 2026 exam remains rooted in the existing syllabus but with a heavy emphasis on sustainability. Question 1 (Scale Drawing) is compulsory and requires mastery of detailing rules like <Highlight description="Insulation must be continuous, especially at junctions, to prevent heat loss." theme={theme}>Thermal Continuity</Highlight> and the unbroken <Highlight description="A line on a drawing showing the air barrier, which must be continuous. Taping at joints is essential." theme={theme}>Airtightness Line</Highlight>. For the project (25%) and practical (25%), the focus is on precision joinery and finish.</p>
-              <p>In <strong>Technology</strong>, the project is a massive 50% of your grade. A H1 project requires an iterative design loop documented in a folio and the use of <Highlight description="Computer-Aided Design and Computer-Aided Manufacturing, such as using a laser cutter or 3D printer to create parts designed in CAD." theme={theme}>CAD/CAM</Highlight>. The artefact must integrate electronics (PIC/PICAXE microcontrollers) and mechanisms, with a focus on gear ratios and mechanical advantage.</p>
+              <p>In <strong>Construction Studies</strong>, the 2026 exam sticks to the existing syllabus but sustainability is a huge focus. Question 1 (Scale Drawing) is compulsory, and you need to nail details like <Highlight description="Insulation can't have gaps -- especially where walls meet roofs or floors. Any break means heat escapes." theme={theme}>Thermal Continuity</Highlight> (no gaps in insulation) and the <Highlight description="A line on your drawing showing where the building is sealed against air leaks. It has to be unbroken -- tape every joint." theme={theme}>Airtightness Line</Highlight> (showing an unbroken air seal). For the project (25%) and practical (25%), clean joinery and a good finish are what matter most.</p>
+              <p>In <strong>Technology</strong>, the project is worth a huge 50% of your grade. For a H1, you need to show that you went through a real design process -- trying things, improving them, and documenting it all in your folio. You should use <Highlight description="Designing on a computer (CAD) and then making parts with machines like your school's laser cutter or 3D printer (CAM)." theme={theme}>CAD/CAM</Highlight> (design on the computer, cut or print with the school's laser cutter or 3D printer). Your project also needs to include electronics (PIC/PICAXE microcontrollers) and mechanisms like gears.</p>
             </ReadingSection>
           )}
            {activeSection === 5 && (
-            <ReadingSection title="Cross-Curricular Synergies." eyebrow="Step 6" icon={Wrench} theme={theme}>
-              <p>These subjects share a common DNA. Mastering a concept in one area gives you a massive advantage in another. The <strong>"Control Systems"</strong> thread is the most powerful. The semiconductor physics in Engineering underpins the electronics in Technology and the embedded systems in Computer Science. The <Highlight description="A fundamental electronic circuit used to read a sensor's changing resistance. It is a 'master key' that unlocks sensor integration in all three subjects." theme={theme}>Potential Divider</Highlight> circuit is a universal tool.</p>
-              <p>To maximize your learning, you must use <Highlight description="The cognitive science technique of mixing related topics from different subjects in one study session. This strengthens retention and builds flexible knowledge." theme={theme}>Interleaved Practice</Highlight>. When you study logic gates for CS, immediately review digital electronics in Engineering. When you learn about NZEB in Construction, review climate monitoring in CS. This builds the web of interconnected knowledge that the new curriculum demands.</p>
+            <ReadingSection title="How These Subjects Connect." eyebrow="Step 6" icon={Wrench} theme={theme}>
+              <p>These subjects share a lot of the same ideas. If you learn something well in one, it gives you a head start in another. The biggest overlap is <strong>"Control Systems"</strong> -- the semiconductor stuff in Engineering is the same physics behind the electronics in Technology and the sensor projects in Computer Science. The <Highlight description="A simple circuit that lets you read sensor values. Once you understand it, you can use sensors in Engineering, Technology, and CS." theme={theme}>Potential Divider</Highlight> circuit comes up in all three subjects.</p>
+              <p>A really effective study trick is to <Highlight description="Instead of studying one subject for hours, mix topics from different subjects in the same session. It feels harder but you remember more." theme={theme}>mix your study across subjects</Highlight>. When you study logic gates for CS, flip to digital electronics in Engineering straight after. When you learn about energy-efficient buildings (NZEB) in Construction, look at the climate monitoring project in CS. Seeing the same ideas from different angles makes everything stick better.</p>
               <MicroCommitment theme={theme}>
-                <p>Pick one cross-curricular link mentioned here. Spend 10 minutes creating a quick mind map showing how the concepts connect across the different subjects. You're starting to think like an integrated engineer.</p>
+                <p>Pick one connection between two of your subjects mentioned here. Spend 10 minutes drawing a quick mind map showing how the ideas link up. This is how you start seeing the bigger picture.</p>
               </MicroCommitment>
             </ReadingSection>
           )}

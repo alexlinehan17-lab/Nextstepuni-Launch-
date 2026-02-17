@@ -8,7 +8,7 @@ import { motion, AnimatePresence, Reorder } from 'framer-motion';
 import { CheckCircle2, History, DraftingCompass, ClipboardList, Layers, BrainCircuit, Shield } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { skyTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = skyTheme;
@@ -174,14 +174,14 @@ const PlanningParadoxVisualizer = () => {
 
 const BackwardDesignSorter = () => {
     const [items, setItems] = useState([
-        { id: 1, text: "Determine Acceptable Evidence (Mocks)", stage: 2 },
-        { id: 2, text: "Identify Desired Results (The Goal)", stage: 1 },
-        { id: 3, text: "Plan Learning Experiences (The Study)", stage: 3 },
+        { id: 1, text: "Decide how you'll test yourself (Mocks)", stage: 2 },
+        { id: 2, text: "Set your target grade (The Goal)", stage: 1 },
+        { id: 3, text: "Plan your actual study sessions (The Study)", stage: 3 },
     ]);
     return(
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Backward Design Protocol</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Drag the steps into the correct order for a reverse-engineered plan.</p>
+             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Plan It Backwards</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Drag the steps into the correct order for a backwards study plan.</p>
              <Reorder.Group axis="y" values={items} onReorder={setItems} className="space-y-3 max-w-sm mx-auto">
                 {items.map((item, i) => (
                     <Reorder.Item key={item.id} value={item} className={`p-4 rounded-xl shadow-sm flex items-center gap-4 cursor-grabbing border ${item.stage === i + 1 ? 'bg-emerald-50 border-emerald-300' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700'}`}>
@@ -196,13 +196,13 @@ const BackwardDesignSorter = () => {
 
 const ImplementationChecklist = () => {
     const initialItems = [
-        { id: 'd-day', text: 'Identify D-Day (Exam Date)', checked: false },
-        { id: 'taper', text: 'Define the Taper Period (Final Week)', checked: false },
-        { id: 'inventory', text: 'Syllabus Inventory & Breakdown', checked: false },
-        { id: 'buffer', text: 'Apply the Buffer (Subtract 20% of time)', checked: false },
-        { id: 'critical-path', text: 'Map the Critical Path (Hardest topics first)', checked: false },
-        { id: 'mocks', text: 'Schedule Mock Exams', checked: false },
-        { id: 'frog', text: 'Schedule "The Frog" (Most hated subject)', checked: false },
+        { id: 'd-day', text: 'Write down your exam date', checked: false },
+        { id: 'taper', text: 'Block off the final week for light review only', checked: false },
+        { id: 'inventory', text: 'Break the syllabus into small study chunks', checked: false },
+        { id: 'buffer', text: 'Leave 20% of your time blank for unexpected stuff', checked: false },
+        { id: 'critical-path', text: 'Put the hardest topics first', checked: false },
+        { id: 'mocks', text: 'Schedule your mock exams', checked: false },
+        { id: 'frog', text: 'Schedule your most dreaded subject early in the week', checked: false },
     ];
     const [items, setItems] = useState(initialItems);
     const toggleCheck = (id: string) => setItems(items.map(item => item.id === id ? {...item, checked: !item.checked} : item));
@@ -210,8 +210,8 @@ const ImplementationChecklist = () => {
 
     return (
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Implementation Checklist</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Follow these steps to build your own reverse-engineered schedule.</p>
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Schedule Checklist</h4>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Follow these steps to build your own backwards study schedule.</p>
              <div className="space-y-3 mb-6">
                 {items.map(item => (
                     <div key={item.id} onClick={() => toggleCheck(item.id)} className={`p-4 rounded-xl flex items-center gap-4 cursor-pointer border transition-all ${item.checked ? 'bg-sky-50 border-sky-200' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700'}`}>
@@ -230,20 +230,20 @@ const ImplementationChecklist = () => {
 // --- MODULE COMPONENT ---
 const ReverseEngineeringModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'paradox', title: 'The Chronological Paradox', eyebrow: '01 // The Problem', icon: History },
-    { id: 'engine', title: 'The Theoretical Engine', eyebrow: '02 // Why It Works', icon: DraftingCompass },
-    { id: 'deconstruction', title: 'The Deconstruction Phase', eyebrow: '03 // The Inventory', icon: ClipboardList },
-    { id: 'phasing', title: 'The Strategic Phases', eyebrow: '04 // The Timeline', icon: Layers },
-    { id: 'optimization', title: 'Cognitive Optimization', eyebrow: '05 // The Science', icon: BrainCircuit },
-    { id: 'blueprint', title: 'The Resilient Blueprint', eyebrow: '06 // The Plan', icon: Shield },
+    { id: 'paradox', title: 'Why Most Study Plans Fail', eyebrow: '01 // The Problem', icon: History },
+    { id: 'engine', title: 'Why Planning Backwards Works', eyebrow: '02 // The Idea', icon: DraftingCompass },
+    { id: 'deconstruction', title: 'Breaking Down the Syllabus', eyebrow: '03 // The Inventory', icon: ClipboardList },
+    { id: 'phasing', title: 'Your Four Study Phases', eyebrow: '04 // The Timeline', icon: Layers },
+    { id: 'optimization', title: 'Studying Smarter', eyebrow: '05 // The Science', icon: BrainCircuit },
+    { id: 'blueprint', title: 'Making a Plan That Actually Lasts', eyebrow: '06 // Your Plan', icon: Shield },
   ];
 
   return (
     <ModuleLayout
       moduleNumber="03"
       moduleTitle="Reverse Engineering"
-      moduleSubtitle="The Temporal Architecture"
-      moduleDescription="Ditch the failed 'start-to-finish' study plan. Learn to plan backwards from your exam date to create a realistic, resilient, and effective study schedule."
+      moduleSubtitle="Plan Backwards, Get Ahead"
+      moduleDescription="Most study plans fall apart within weeks. This module shows you how to start from your exam date and work backwards to build a schedule that actually holds up."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -253,41 +253,44 @@ const ReverseEngineeringModule: React.FC<{ onBack: () => void; progress: ModuleP
       {(activeSection) => (
         <>
           {activeSection === 0 && (
-            <ReadingSection title="The Chronological Paradox." eyebrow="Step 1" icon={History} theme={theme}>
-              <p>The logical way to plan is to start at the beginning and work forward. It's also the reason most study plans fail. This forward-facing approach is a victim of the <Highlight description="The cognitive bias where we underestimate how long a task will take, assuming a 'best-case scenario' future with no interruptions." theme={theme}>Planning Fallacy</Highlight>. It ignores illness, fatigue, and life, leading to the infamous "student syndrome"--cramming everything into the final weeks.</p>
-              <p>The solution is to invert the planning vector. Instead of asking "What should I do today?", you ask "To be ready for the exam, where must I be the day before?". This is <Highlight description="A project management methodology that starts with the fixed end-date and works backward to the present, revealing dependencies and creating a more realistic timeline." theme={theme}>Reverse Engineering</Highlight>. You anchor your plan to the non-negotiable end date and build backward, forcing a confrontation with reality.</p>
+            <ReadingSection title="Why Most Study Plans Fail." eyebrow="Step 1" icon={History} theme={theme}>
+              <p>Starting at the beginning and working forward seems like the obvious way to plan. It is also the main reason most study plans fall apart. The problem is the <Highlight description="We are naturally bad at guessing how long things take. We picture the best-case scenario and forget about sick days, tiredness, and life getting in the way." theme={theme}>Planning Fallacy</Highlight> -- we are terrible at guessing how long things will really take. We forget about sick days, tiredness, and just life getting in the way. So everything piles up at the end, and you are left cramming the week before.</p>
+              <p>The fix is surprisingly simple: plan backwards instead. Instead of asking "What should I do today?", ask "To be ready for the exam, where do I need to be the day before?". That is <Highlight description="Instead of planning from today forward, you start at your exam date and work backwards to today. It forces you to face how much time you really have." theme={theme}>Reverse Engineering</Highlight>. You start from your exam date -- which is not moving -- and work backwards. It forces you to face reality from day one.</p>
               <PlanningParadoxVisualizer />
             </ReadingSection>
           )}
            {activeSection === 1 && (
-            <ReadingSection title="The Theoretical Engine." eyebrow="Step 2" icon={DraftingCompass} theme={theme}>
-              <p>Reverse engineering isn't just a hack; it's a powerful framework built on three proven theories. From education, it uses <Highlight description="A curriculum design framework that starts with the end goal (the assessment) and works backward to design the learning activities." theme={theme}>Backward Design</Highlight>, ensuring every study session is directly linked to exam performance. It eliminates "junk volume"--study that feels productive but scores no marks.</p>
-              <p>From project management, it uses the <Highlight description="A method for scheduling complex projects. It identifies the longest chain of dependent tasks (the 'critical path') that determines the project's total duration." theme={theme}>Critical Path Method (CPM)</Highlight> to map out dependencies. You can't learn Calculus before Algebra; Algebra is on the critical path. From psychology, it uses <Highlight description="The act of visualizing a future goal and working backward. This makes the required steps seem more necessary and increases motivation." theme={theme}>Future Retrospection</Highlight> to build motivation by creating a "memory of the future."</p>
+            <ReadingSection title="Why Planning Backwards Works." eyebrow="Step 2" icon={DraftingCompass} theme={theme}>
+              <p>Planning backwards is not just a clever trick -- there are solid reasons it works so well. First, it uses a simple idea called <Highlight description="Start with what you will be tested on, then plan your study around that. Every session has a clear purpose tied to the exam." theme={theme}>Backward Design</Highlight>: start with what the exam will actually test, and plan every study session around that. This cuts out "junk study" -- the kind that feels productive but does not actually earn you marks.</p>
+              <p>Second, it helps you spot the <Highlight description="Some topics depend on others. For example, you cannot do Calculus without Algebra. The chain of topics you must cover first is the critical path." theme={theme}>Critical Path</Highlight> -- the chain of topics where one depends on another. You cannot do Calculus before Algebra, so Algebra goes first. Third, by picturing yourself on exam day and working backwards, you create what is called <Highlight description="When you imagine yourself at the finish line and trace the steps back, those steps feel more real and necessary. It is a motivation boost." theme={theme}>Future Thinking</Highlight> -- it makes each step feel necessary and keeps you motivated because you can see exactly how it connects to the finish line.</p>
               <BackwardDesignSorter />
             </ReadingSection>
           )}
           {activeSection === 2 && (
-            <ReadingSection title="The Deconstruction Phase." eyebrow="Step 3" icon={ClipboardList} theme={theme}>
-              <p>Before you can build a schedule, you must deconstruct the curriculum. The process begins by establishing the <Highlight description="The exam date itself. This is the immovable point from which all backward planning begins." theme={theme}>Fixed Anchor</Highlight>. You must also define your <Highlight description="The final 1-2 weeks before the exam, which are reserved for maintenance, sleep regulation, and confidence preservation--not new learning." theme={theme}>"Taper" Period</Highlight>.</p>
-              <p>Next, you conduct a <Highlight description="The process of breaking down the entire syllabus into 'atomic units' of study, each representing a 45-90 minute session." theme={theme}>Grand Inventory</Highlight> of the syllabus. A topic like "Cell Biology" is too big; it must be broken down into "Mitochondria," "Osmosis," etc. Finally, you apply the <Highlight description="The 80/20 rule. By analyzing past papers, you identify the 20% of topics that deliver 80% of the marks. These are your high-yield assets." theme={theme}>Pareto Principle</Highlight> to prioritize high-yield topics.</p>
+            <ReadingSection title="Breaking Down the Syllabus." eyebrow="Step 3" icon={ClipboardList} theme={theme}>
+              <p>Before you build a schedule, you need to know exactly what you are dealing with. Start by locking in your <Highlight description="Your exam date. It is not moving, so everything gets planned around it." theme={theme}>Exam Date</Highlight> -- that is your finish line and it is not moving. Then block off a <Highlight description="The last week or two before the exam. You keep these for light review, sleep, and calming your nerves -- no cramming new stuff." theme={theme}>"Wind-Down" Period</Highlight> in the final week or two for light review, sleep, and calming your nerves -- not learning new material.</p>
+              <p>Next, do a full <Highlight description="Go through every topic on the syllabus and break it into small chunks, each about one study session long (45-90 minutes)." theme={theme}>Syllabus Breakdown</Highlight>. Go through every topic and break it into bite-sized chunks, each about one study session long. "Cell Biology" is too vague -- break it into "Mitochondria," "Osmosis," and so on. Then use past papers to figure out the <Highlight description="Look at past papers and you will notice that roughly 20% of topics come up for about 80% of the marks. Focus your energy there first." theme={theme}>80/20 Rule</Highlight>: roughly 20% of topics earn about 80% of the marks. Those are the ones you hit first.</p>
+              <PersonalStory name="Aoife" role="Leaving Cert student, Limerick">
+                <p>"I had this massive colour-coded timetable on my wall in January and felt so organised. By mid-February it was already in the bin. I was behind on everything and it just made me feel worse. When I tried planning backwards from the exam instead, I actually finished a topic ahead of schedule for the first time. It was such a relief to have a plan that worked with real life, not against it."</p>
+              </PersonalStory>
             </ReadingSection>
           )}
            {activeSection === 3 && (
-            <ReadingSection title="The Strategic Phases." eyebrow="Step 4" icon={Layers} theme={theme}>
-                <p>A reverse-engineered schedule is not a solid block of "study." It is segmented into distinct operational phases, each with a specific goal. Working backward from the exam, the timeline looks like this:</p>
-                <p><strong>Phase 4: Taper & Maintenance (Final 2 Weeks):</strong> No new material. Focus on light review, sleep, and stress management. <strong>Phase 3: Simulation & Conditioning (Months 1-2 Pre-Exam):</strong> Full-length mock exams to build stamina and refine technique. <strong>Phase 2: Consolidation & Interleaving (Months 3-4 Pre-Exam):</strong> Move from blocked to mixed practice, deepening connections. <strong>Phase 1: Foundation & Acquisition (Months 5-6 Pre-Exam):</strong> First-pass learning and creating revision assets (e.g., flashcards).</p>
+            <ReadingSection title="Your Four Study Phases." eyebrow="Step 4" icon={Layers} theme={theme}>
+                <p>A good backwards schedule is not just one big block of "study." It is split into four clear phases, each with its own job. Working backwards from the exam, here is what it looks like:</p>
+                <p><strong>Phase 4: Wind Down (Final 2 Weeks):</strong> No new material. Light review, plenty of sleep, and keeping your nerves in check. <strong>Phase 3: Practice Exams (Months 1-2 Before the Exam):</strong> Full mock papers under timed conditions to build stamina and sharpen your technique. <strong>Phase 2: Mix and Deepen (Months 3-4 Before the Exam):</strong> Start mixing topics together instead of studying one at a time -- this builds the flexible thinking the exam demands. <strong>Phase 1: Learn the Basics (Months 5-6 Before the Exam):</strong> First-pass learning and making your revision materials (flashcards, summaries, whatever works for you).</p>
             </ReadingSection>
           )}
            {activeSection === 4 && (
-            <ReadingSection title="Cognitive Optimization." eyebrow="Step 5" icon={BrainCircuit} theme={theme}>
-              <p>A great schedule doesn't just plan *what* you study; it plans *how* you study. It integrates cognitive science directly into the timeline. It must schedule <Highlight description="Reviewing material at increasing intervals to counteract the Forgetting Curve." theme={theme}>Spaced Repetition</Highlight>, creating "return trips" to old material.</p>
-              <p>It must prioritize <Highlight description="Forcing your brain to retrieve information (e.g., practice testing) rather than passively re-reading it. This is the engine of long-term memory." theme={theme}>Active Recall</Highlight> ("Output") over passive review ("Input"). And it should favour <Highlight description="Mixing different topics or subjects within a study session. This feels harder but trains the crucial skill of 'problem spotting'." theme={theme}>Interleaving</Highlight> over blocked practice, especially in the later phases, to build flexible, exam-ready knowledge.</p>
+            <ReadingSection title="Studying Smarter." eyebrow="Step 5" icon={BrainCircuit} theme={theme}>
+              <p>A great schedule does not just plan what you study -- it also plans how you study. You need to build in <Highlight description="Instead of cramming everything once, you go back and review old topics at growing intervals. It is the best way to stop yourself forgetting things." theme={theme}>Spaced Repetition</Highlight>, which means going back to old topics at regular intervals so they do not fade from your memory.</p>
+              <p>You should also prioritise <Highlight description="Testing yourself -- writing answers, doing practice questions -- rather than just re-reading your notes. It feels harder but it is far more effective." theme={theme}>Active Recall</Highlight> (testing yourself, writing answers) over passive re-reading. And in the later phases, try <Highlight description="Mixing different topics in one study session instead of doing hours on the same thing. It feels messier but it trains your brain to spot which method to use -- exactly what exams test." theme={theme}>Mixing Topics</Highlight> -- studying different subjects in one session. It feels harder, but it trains your brain to spot which approach to use, which is exactly what exam questions test.</p>
             </ReadingSection>
           )}
            {activeSection === 5 && (
-            <ReadingSection title="The Resilient Blueprint." eyebrow="Step 6" icon={Shield} theme={theme}>
-              <p>A perfect, rigid schedule is a fragile schedule. It will shatter the first time you get sick or have a family event. A resilient schedule is designed to fail gracefully. This requires building in <Highlight description="Intentionally blank weeks (10-20% of your total time) that can absorb disruptions without derailing the entire plan." theme={theme}>Buffer Weeks</Highlight>.</p>
-              <p>Before you begin, you must conduct a <Highlight description="Identifying all fixed life events (holidays, weddings, etc.) and 'blacking them out' of your available time from the start." theme={theme}>"Non-Negotiables" Audit</Highlight>. Finally, you must choose your tool. Whether it's a digital <Highlight description="A project management tool that visualizes tasks on a timeline, making dependencies clear." theme={theme}>Gantt Chart</Highlight>, a Notion template, or an analog wall with sticky notes, the tool must make the timeline, dependencies, and critical path visible. You are now ready to build your schedule.</p>
+            <ReadingSection title="Making a Plan That Actually Lasts." eyebrow="Step 6" icon={Shield} theme={theme}>
+              <p>A perfect, rigid schedule will fall apart the first time you get sick or have a family event. A schedule that actually lasts is one that is built to bend without breaking. That means leaving <Highlight description="Blank days or weeks (about 10-20% of your total time) that are there on purpose. When life throws you a curveball, these soak it up without wrecking everything." theme={theme}>Buffer Time</Highlight> -- blank days that are there on purpose so that when something comes up, your whole plan does not collapse.</p>
+              <p>Before you start filling in dates, do a quick <Highlight description="Write down everything that is definitely happening -- holidays, birthdays, matches, family events -- and block them out from the start so you are not kidding yourself about how much time you have." theme={theme}>Life Check</Highlight>: write down everything you know is coming up (holidays, birthdays, matches) and block those out straight away. Finally, pick your tool. It could be a <Highlight description="A simple chart that shows your tasks on a timeline so you can see what needs to happen and when." theme={theme}>Timeline Chart</Highlight> in a free app, a Notion page, or just a wall of sticky notes. The tool does not matter -- what matters is that you can see your whole plan at a glance. You are now ready to build your schedule.</p>
               <ImplementationChecklist />
             </ReadingSection>
           )}

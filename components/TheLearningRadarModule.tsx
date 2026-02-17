@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import { Target, AlertTriangle, Clock, Layers, Activity, Flag } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { violetTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = violetTheme;
@@ -137,10 +137,10 @@ const CalibrationQuiz = () => {
           className={`p-4 rounded-xl text-sm font-medium ${gap > 15 ? 'bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800' : gap > 5 ? 'bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800' : 'bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800'}`}
         >
           {gap > 15
-            ? 'Significant overconfidence detected. This is normal — most people show this pattern. The gap between your confidence and your accuracy is your "metacognitive blind spot." The good news: awareness is the first step to calibration.'
+            ? 'You were quite a bit more confident than your accuracy shows. Don\'t worry — most people are. The gap between what you thought you knew and what you actually got right is your blind spot. The good news? Now that you can see it, you can start fixing it.'
             : gap > 5
-            ? 'Mild overconfidence. You\'re slightly more confident than your accuracy warrants. With practice, you can close this gap and develop a sharper "learning radar."'
-            : 'Well calibrated! Your confidence closely matches your accuracy. This is a strong metacognitive skill that will serve you well in exam preparation.'}
+            ? 'You were a little more confident than your results suggest. That\'s pretty normal. With practice, you can close this gap and get much better at knowing what you actually know.'
+            : 'Nice one! Your confidence closely matches your accuracy. That\'s a really valuable skill — it means you can trust your gut when deciding what to study and what to skip.'}
         </MotionDiv>
 
         <div className="mt-6 text-center">
@@ -205,17 +205,17 @@ const DunningKrugerCurve = () => {
   const toY = (f: number) => padT + (1 - f) * chartH;
 
   // The classic DK curve: confidence vs competence
-  // Overconfidence peak → valley of despair → slope of enlightenment → plateau
+  // Overconfidence peak → valley of doubt → steady improvement → realistic confidence
   const dkPoints = [
     { x: 0, y: 0.15 },
     { x: 0.08, y: 0.55 },
-    { x: 0.15, y: 0.92 }, // Mount Stupid
+    { x: 0.15, y: 0.92 }, // Peak of Overconfidence
     { x: 0.25, y: 0.72 },
-    { x: 0.38, y: 0.25 }, // Valley of Despair
+    { x: 0.38, y: 0.25 }, // Valley of Doubt
     { x: 0.55, y: 0.40 },
-    { x: 0.70, y: 0.58 }, // Slope of Enlightenment
+    { x: 0.70, y: 0.58 }, // Steady Improvement
     { x: 0.85, y: 0.72 },
-    { x: 1.0, y: 0.78 },  // Plateau of Sustainability
+    { x: 1.0, y: 0.78 },  // Realistic Confidence
   ];
 
   const buildCurve = (points: { x: number; y: number }[]) => {
@@ -235,15 +235,15 @@ const DunningKrugerCurve = () => {
 
   const labels = [
     { text: 'Peak of\nOverconfidence', x: 0.15, y: 0.92, anchor: 'middle' as const },
-    { text: 'Valley of\nDespair', x: 0.38, y: 0.25, anchor: 'middle' as const },
-    { text: 'Slope of\nEnlightenment', x: 0.70, y: 0.58, anchor: 'middle' as const },
-    { text: 'Plateau of\nSustainability', x: 0.92, y: 0.78, anchor: 'middle' as const },
+    { text: 'Valley of\nDoubt', x: 0.38, y: 0.25, anchor: 'middle' as const },
+    { text: 'Steady\nImprovement', x: 0.70, y: 0.58, anchor: 'middle' as const },
+    { text: 'Realistic\nConfidence', x: 0.92, y: 0.78, anchor: 'middle' as const },
   ];
 
   return (
     <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Dunning-Kruger Effect</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Confidence vs. actual competence — the classic curve from Kruger & Dunning (1999).</p>
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Confidence vs. Reality Curve</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">How confidence and actual ability don't always match up.</p>
 
       {!revealed ? (
         <div className="text-center">
@@ -303,11 +303,11 @@ const DunningKrugerCurve = () => {
           <div className="grid md:grid-cols-2 gap-4 mt-4 text-sm">
             <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
               <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
-              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">The Peak</strong> is where most students sit after passive study. They feel confident because the material looks familiar — but they can't actually retrieve it under exam conditions.</p>
+              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">The Peak</strong> is where most students sit after just reading their notes. They feel confident because the material looks familiar — but they can't actually pull it out of their heads under exam conditions.</p>
             </div>
             <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
               <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
-              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">The Plateau</strong> is where experts land. They've tested themselves enough to know exactly what they know — and what they don't. Their confidence matches reality.</p>
+              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Realistic Confidence</strong> is where well-prepared students land. They've tested themselves enough to know exactly what they know — and what they don't. Their confidence matches reality.</p>
             </div>
           </div>
         </MotionDiv>
@@ -415,8 +415,8 @@ const JOLTimingComparison = () => {
 
   return (
     <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The JOL Timing Effect</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">When you judge your learning changes everything. Nelson & Dunlosky (1991).</p>
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Timing Effect</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">When you check your learning changes everything.</p>
 
       {!revealed ? (
         <div className="text-center">
@@ -429,20 +429,20 @@ const JOLTimingComparison = () => {
         <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
           <div className="grid md:grid-cols-2 gap-4 mb-5">
             <div className="rounded-lg border border-rose-200 dark:border-rose-900 bg-rose-50/50 dark:bg-rose-950/20 p-3">
-              <Chart confidence={immConfidence} recall={immRecall} phases={immPhases} areaColor="#ef4444" areaId="imm-grad" label="Immediate JOL" />
+              <Chart confidence={immConfidence} recall={immRecall} phases={immPhases} areaColor="#ef4444" areaId="imm-grad" label="Checking Straight Away" />
             </div>
             <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
-              <Chart confidence={delConfidence} recall={delRecall} phases={delPhases} areaColor="#10b981" areaId="del-grad" label="Delayed JOL (24hrs)" />
+              <Chart confidence={delConfidence} recall={delRecall} phases={delPhases} areaColor="#10b981" areaId="del-grad" label="Checking After 24 Hours" />
             </div>
           </div>
           <div className="grid md:grid-cols-2 gap-4 text-sm">
             <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
               <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
-              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Immediate judgements</strong> are based on short-term memory. The material is still "in the room." Your confidence stays high while your actual retention collapses — creating a dangerous blind spot.</p>
+              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Checking straight away</strong> tricks you because everything is still fresh. The material is still "in the room." Your confidence stays high while your actual memory of it collapses — creating a dangerous blind spot.</p>
             </div>
             <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
               <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
-              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Delayed judgements</strong> force actual retrieval from long-term memory. Your confidence drops — but it accurately reflects what you'll remember. The discomfort IS the accuracy.</p>
+              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Checking after a delay</strong> forces your brain to actually pull the information from memory. Your confidence drops — but it honestly reflects what you'll remember in the exam. The discomfort IS the honesty.</p>
             </div>
           </div>
         </MotionDiv>
@@ -732,7 +732,7 @@ const PredictionTracker = () => {
   return (
     <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Prediction Tracker</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-6">Predict first, then answer. Train your metacognitive accuracy.</p>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-6">Predict first, then answer. See how well you really know what you know.</p>
       <div className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-4">Question {step + 1} of {PREDICTION_QUESTIONS.length}</div>
 
       <div className="p-5 bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-700 mb-6">
@@ -770,20 +770,20 @@ const PredictionTracker = () => {
 // --- MODULE COMPONENT ---
 const TheLearningRadarModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
-    { id: 'calibration-problem', title: 'The Calibration Problem', eyebrow: '01 // The Blind Spot', icon: Target },
-    { id: 'dunning-kruger', title: 'The Dunning-Kruger Trap', eyebrow: '02 // The Double Curse', icon: AlertTriangle },
-    { id: 'judgements-of-learning', title: 'Judgements of Learning', eyebrow: '03 // The Timing Effect', icon: Clock },
+    { id: 'calibration-problem', title: 'You Don\'t Know What You Don\'t Know', eyebrow: '01 // The Blind Spot', icon: Target },
+    { id: 'dunning-kruger', title: 'Why the Least Prepared Feel Most Confident', eyebrow: '02 // The Confidence Trap', icon: AlertTriangle },
+    { id: 'judgements-of-learning', title: 'When to Check If You\'ve Learned Something', eyebrow: '03 // The Timing Trick', icon: Clock },
     { id: 'traffic-light-audit', title: 'The Traffic Light Audit', eyebrow: '04 // The Reality Check', icon: Layers },
-    { id: 'monitoring-during-study', title: 'Monitoring During Study', eyebrow: '05 // The Signals', icon: Activity },
-    { id: 'prediction-protocol', title: 'The Prediction Protocol', eyebrow: '06 // The Training Ground', icon: Flag },
+    { id: 'monitoring-during-study', title: 'Checking Yourself During Study', eyebrow: '05 // The Signals', icon: Activity },
+    { id: 'prediction-protocol', title: 'The Prediction Game', eyebrow: '06 // The Training Ground', icon: Flag },
   ];
 
   return (
     <ModuleLayout
       moduleNumber="44"
       moduleTitle="The Learning Radar"
-      moduleSubtitle="The Metacognitive Calibration Guide"
-      moduleDescription="Discover why most students can't accurately judge what they know — and learn the trainable skill that fixes it."
+      moduleSubtitle="Know What You Actually Know"
+      moduleDescription="Most students think they know more than they do — and it costs them marks. This module shows you how to spot your blind spots and study smarter."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -793,49 +793,52 @@ const TheLearningRadarModule: React.FC<{ onBack: () => void; progress: ModulePro
       {(activeSection) => (
         <>
           {activeSection === 0 && (
-            <ReadingSection title="The Calibration Problem." eyebrow="Step 1" icon={Target} theme={theme}>
-              <p>Before you read another word, answer this: how confident are you that you could pass a test right now on whatever you studied most recently? Hold that number in your head. Now consider this: across over 100 studies analysed by <Highlight description="John Dunlosky (Kent State) and Amanda Lipko conducted a comprehensive meta-analysis of Judgement of Learning accuracy in 2007, finding that the average correlation between students' predicted and actual performance was shockingly low." theme={theme}>Dunlosky and Lipko (2007)</Highlight>, the correlation between students' predicted exam performance and their actual performance is just r = 0.27. That's barely better than chance.</p>
-              <p>In a landmark study, <Highlight description="Nate Kornell (Williams College) and Robert Bjork (UCLA) found that students predicted they would recall approximately 70% of word pairs they'd studied, but actually recalled only 37%. The 33-percentage-point gap is the 'metacognitive blind spot.'" theme={theme}>Kornell and Bjork (2009)</Highlight> asked students to learn word pairs and then predict how many they'd recall on a test. Students predicted they'd remember about 70%. They actually remembered 37%. That 33-point gap isn't a small error — it's a systematic cognitive bias. It means when you sit down to study and think "I know this," there is a very high chance that you don't. This gap has a name: <Highlight description="The degree to which your subjective confidence in your knowledge differs from your objective ability to recall and apply that knowledge. Poor calibration means you can't tell what you know from what you merely recognise." theme={theme}>metacognitive miscalibration</Highlight>.</p>
-              <p>This isn't about intelligence. The smartest students can have the worst calibration. It's a skill — and like any skill, it can be trained. This module will teach you how to build a <Highlight description="The ability to accurately monitor your own knowledge states in real-time — knowing what you know, what you don't know, and crucially, what you only think you know." theme={theme}>Learning Radar</Highlight>: the ability to accurately detect what you actually know versus what you merely recognise.</p>
+            <ReadingSection title="You Don't Know What You Don't Know." eyebrow="Step 1" icon={Target} theme={theme}>
+              <p>Before you read another word, answer this: how confident are you that you could pass a test right now on whatever you studied most recently? Hold that number in your head. Now consider this: across over 100 studies, <Highlight description="Researchers looked at how well students predict their own exam results. Turns out, most students are terrible at it — their guesses were barely better than flipping a coin." theme={theme}>researchers found</Highlight> that the link between how well students think they'll do and how they actually do is shockingly weak. Barely better than chance.</p>
+              <p>In one well-known study, <Highlight description="Students were asked to learn word pairs and predict how many they'd remember. They guessed about 70%. They actually remembered 37%. That massive gap is your brain fooling you into thinking you know more than you do." theme={theme}>researchers</Highlight> asked students to learn word pairs and then predict how many they'd recall on a test. Students predicted they'd remember about 70%. They actually remembered 37%. That 33-point gap isn't a small error — it's your brain consistently fooling you. It means when you sit down to study and think "I know this," there's a very high chance that you don't. This gap is basically a <Highlight description="When your confidence in what you know doesn't match what you can actually do. You feel like you've got it, but when it comes to the exam, you can't pull it out of your head. You can't tell the difference between 'I recognise this' and 'I actually know this.'" theme={theme}>confidence blind spot</Highlight>.</p>
+              <p>This isn't about intelligence. The smartest students can have the worst blind spots. It's a skill — and like any skill, it can be trained. This module will teach you how to build a <Highlight description="Being able to honestly tell the difference between what you actually know and what you just think you know. It's like having a built-in detector that tells you where your real gaps are." theme={theme}>Learning Radar</Highlight>: the ability to spot the difference between what you actually know and what just looks familiar.</p>
               <CalibrationQuiz />
             </ReadingSection>
           )}
           {activeSection === 1 && (
-            <ReadingSection title="The Dunning-Kruger Trap." eyebrow="Step 2" icon={AlertTriangle} theme={theme}>
-              <p>In 1999, psychologists <Highlight description="Justin Kruger and David Dunning (Cornell University) published 'Unskilled and Unaware of It' — one of the most replicated findings in cognitive psychology. Their studies across humour, logic, and grammar showed that the least competent individuals dramatically overestimated their performance." theme={theme}>Justin Kruger and David Dunning</Highlight> published a paper that would become one of the most cited in all of psychology. They tested participants on humour, logical reasoning, and English grammar, then asked them to estimate how they'd ranked. The results were striking: participants in the bottom quartile (the lowest 25%) estimated they had performed in the 62nd percentile. Their actual rank? The 12th percentile. That's a 50-point overestimation.</p>
-              <p>But here's the cruel twist — the <Highlight description="You need the very same skills to produce a correct answer as you do to recognise what a correct answer looks like. If you lack the skill, you lack the ability to know you lack the skill. You're not just wrong — you're confidently wrong." theme={theme}>Double Curse</Highlight>. The skills you need to produce a correct answer are the exact same skills you need to recognise what a correct answer looks like. If you don't know the chain rule in Maths, you also can't tell whether your attempt at the chain rule was correct. You're not just getting it wrong — you don't have the equipment to know you're getting it wrong.</p>
-              <p>Conversely, top performers slightly underestimate their ability (they predicted 75th percentile; they were actually at the 87th). Expertise brings humility because you can see the full landscape of what there is to know. This is why the most prepared student in the room is often the most nervous, while the least prepared is mysteriously confident.</p>
+            <ReadingSection title="Why the Least Prepared Feel Most Confident." eyebrow="Step 2" icon={AlertTriangle} theme={theme}>
+              <p>In 1999, two psychologists ran <Highlight description="They tested people on things like logic and grammar, then asked them to guess how well they did. The people who scored the worst massively overestimated their results. They thought they were above average when they were actually near the bottom." theme={theme}>a now-famous experiment</Highlight>. They tested people on things like logic and grammar, then asked everyone to guess how well they'd done compared to others. The results were wild: the people who scored in the bottom 25% thought they'd finished in the top half. Their actual rank? Near the bottom. That's a 50-point gap between how good they thought they were and how good they actually were.</p>
+              <p>But here's the really unfair part — the <Highlight description="To know whether your answer is right, you need the same skills you'd need to get it right in the first place. If you don't understand the topic, you also can't tell that you don't understand it. You're not just wrong — you're confidently wrong, and you have no idea." theme={theme}>Confidence Trap</Highlight>. The skills you need to get a question right are the exact same skills you need to recognise whether your answer is right. If you don't understand the chain rule in Maths, you also can't tell whether your attempt at it was any good. You're not just getting it wrong — you don't have the tools to know you're getting it wrong.</p>
+              <p>Meanwhile, top performers tend to slightly underestimate how well they've done. When you really know a subject, you can see how much more there is to learn, so you stay humble. This is why the most prepared student in the room is often the most nervous, while the least prepared is mysteriously confident.</p>
               <DunningKrugerCurve />
             </ReadingSection>
           )}
           {activeSection === 2 && (
-            <ReadingSection title="Judgements of Learning." eyebrow="Step 3" icon={Clock} theme={theme}>
-              <p>If our self-assessments are so unreliable, is there a way to make them more accurate? The answer is yes — and the key is <Highlight description="The time interval between studying material and judging whether you've learned it. Immediate JOLs (right after study) are highly inaccurate. Delayed JOLs (made hours or days later) are dramatically more accurate because they require actual retrieval from long-term memory." theme={theme}>timing</Highlight>. In a foundational study, <Highlight description="Thomas Nelson (University of Maryland) and John Dunlosky demonstrated that JOLs made immediately after study had a gamma correlation of just 0.0–0.2 with actual recall, while JOLs made 24 hours later showed a correlation of 0.8–0.9 — a massive improvement simply from changing when you make the judgement." theme={theme}>Nelson and Dunlosky (1991)</Highlight> discovered something remarkable about <Highlight description="Judgements of Learning — your self-rated prediction of how likely you are to remember a piece of information on a future test. They are the most studied form of metacognitive monitoring." theme={theme}>Judgements of Learning (JOLs)</Highlight>.</p>
-              <p>When students judged their learning immediately after studying, the correlation with actual recall was nearly zero (gamma = 0.0 to 0.2). Essentially useless. But when students waited 24 hours before judging their learning, the correlation jumped to 0.8–0.9. Nearly perfect. Why? <Highlight description="Asher Koriat (University of Haifa) showed in 1997 that people base their JOLs on 'ease of processing' — how fluently information comes to mind. Immediately after study, everything feels fluent because it's still in short-term memory. After a delay, fluency accurately reflects long-term memory strength." theme={theme}>Koriat (1997)</Highlight> explained it: immediately after studying, everything is still in your short-term memory. It feels fluent and familiar. Your brain mistakes that familiarity for durable knowledge. After 24 hours, short-term memory has cleared. Judging your knowledge now requires actual retrieval from long-term memory — and that retrieval attempt gives you honest data.</p>
-              <p>The practical rule is simple but powerful: never judge whether you've learned something in the same session you studied it. Come back tomorrow, close your notes, and ask yourself what you remember. That delayed self-check is worth more than hours of confident re-reading.</p>
+            <ReadingSection title="When to Check If You've Learned Something." eyebrow="Step 3" icon={Clock} theme={theme}>
+              <p>If we're so bad at judging what we know, is there a way to get better at it? Yes — and the secret is <Highlight description="The gap between when you study something and when you check whether it stuck. If you check straight away, your brain tricks you into thinking you know it. If you wait a day and then check, you get a much more honest answer." theme={theme}>timing</Highlight>. <Highlight description="Researchers found that when students guessed how well they'd learned something right after studying, their guesses were basically useless. But when they waited 24 hours and then guessed, they were almost perfectly accurate. Just by changing when you check yourself, you go from clueless to spot-on." theme={theme}>Researchers discovered</Highlight> something powerful about how we <Highlight description="Your personal prediction of whether you'll remember something on a test. Basically: 'Do I actually know this or not?' Getting good at these predictions is one of the most useful study skills you can build." theme={theme}>judge our own learning</Highlight>.</p>
+              <p>When students checked how well they'd learned something straight after studying, their self-assessment was basically worthless. But when they waited 24 hours and then checked, their accuracy jumped to nearly perfect. Why? Right after studying, everything is still fresh in your short-term memory. It all feels familiar. Your brain mistakes that familiarity for real knowledge. But after 24 hours, the short-term stuff has faded. Checking yourself now forces you to actually pull information from long-term memory — and that gives you honest feedback.</p>
+              <p>The practical rule is simple: never judge whether you've learned something in the same session you studied it. Come back tomorrow, close your notes, and ask yourself what you remember. That delayed self-check is worth more than hours of confident re-reading.</p>
               <JOLTimingComparison />
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="The Traffic Light Audit." eyebrow="Step 4" icon={Layers} theme={theme}>
-              <p>Knowing that delayed self-assessment is more accurate is useful, but you need a practical system to apply it. The <Highlight description="A structured self-assessment protocol where you rate every topic or subtopic as Green (I could explain this from memory), Amber (I recognise it but couldn't fully reproduce it), or Red (I don't know this). The critical step is then testing yourself to verify your ratings." theme={theme}>Traffic Light Audit</Highlight> is that system. It works in two phases: rate, then verify.</p>
-              <p>Research by <Highlight description="Anique de Bruin and colleagues (Maastricht University) demonstrated in 2011 that students who self-tested after making confidence ratings dramatically improved their calibration accuracy. The act of testing exposes the gap between perceived and actual knowledge, which recalibrates future judgements." theme={theme}>de Bruin et al. (2011)</Highlight> showed that students who self-tested after rating their knowledge dramatically improved their calibration accuracy. The act of testing doesn't just measure your knowledge — it recalibrates your internal radar. You start to learn the difference between "I recognise this" (Amber) and "I could reproduce this under exam conditions" (Green).</p>
-              <p>Here's how it works: take your subject syllabus and rate every topic Green, Amber, or Red. Green means "I could explain this to someone from memory." Amber means "I recognise it but couldn't fully reproduce it." Red means "I don't know this." Then — and this is the critical step — test yourself on your Greens. Most students discover that a significant number of their "Greens" are actually Ambers when put to the test. That discovery is uncomfortable, but it's the most valuable information you can have before an exam.</p>
+              <p>Now you know that checking yourself after a delay is more accurate — but you need an actual system to do it. The <Highlight description="A simple system where you go through every topic on your syllabus and rate it Green (I could explain this from memory right now), Amber (I sort of know it but couldn't fully explain it), or Red (I'm lost on this). Then you test yourself on the Greens to see if you're being honest." theme={theme}>Traffic Light Audit</Highlight> is that system. It works in two steps: rate yourself, then test yourself.</p>
+              <p><Highlight description="Studies showed that students who tested themselves after rating their own confidence became way better at knowing what they actually knew. Testing yourself doesn't just check your knowledge — it trains your brain to be more honest about what's really sticking." theme={theme}>Research shows</Highlight> that students who test themselves after rating their knowledge get dramatically better at judging what they actually know. Testing doesn't just measure your knowledge — it trains your brain to be more honest. You start to learn the difference between "I recognise this" (Amber) and "I could actually explain this in an exam" (Green).</p>
+              <p>Here's how it works: take your subject syllabus and rate every topic Green, Amber, or Red. Green means "I could explain this to someone from memory." Amber means "I sort of know it but couldn't fully explain it." Red means "I don't know this." Then — and this is the key step — test yourself on your Greens. Most students discover that loads of their "Greens" are actually Ambers when put to the test. That's uncomfortable, but it's the most useful information you can have before an exam.</p>
               <TrafficLightAudit />
             </ReadingSection>
           )}
           {activeSection === 4 && (
-            <ReadingSection title="Monitoring During Study." eyebrow="Step 5" icon={Activity} theme={theme}>
-              <p>Calibration isn't just a one-time audit — it's a moment-to-moment skill you can deploy during every study session. <Highlight description="Robert Bjork, John Dunlosky, and Nate Kornell published a comprehensive review in 2013 showing that effective self-regulated learners continuously monitor their comprehension during study, using specific signals to detect whether genuine encoding is occurring." theme={theme}>Bjork, Dunlosky, and Kornell (2013)</Highlight> found that effective self-regulated learners continuously monitor their comprehension during study. They don't just read — they constantly check: "Am I actually learning this, or just looking at it?"</p>
-              <p>There are concrete signals that distinguish real learning from the illusion of learning. <Highlight description="Thiede et al. (2003) demonstrated that generating keywords from memory after a delay significantly improved students' ability to monitor their own comprehension accuracy — a practical technique for enhancing metacognitive monitoring during study." theme={theme}>Thiede et al. (2003)</Highlight> found that one powerful signal is the ability to generate keywords from memory after a delay. If you've been studying a chapter and you can close the book and list the five key concepts, you're encoding. If you can't, you've been reading without learning.</p>
-              <p>Here are the real-time monitoring signals to train yourself to notice. The <Highlight description="After studying a section, close your notes and try to write or say everything you remember. If you can recall the main points and their connections, encoding is happening. If you draw a blank, you were reading without processing." theme={theme}>"Close the Book" test</Highlight>: can you recall the main ideas without looking? <Highlight description="Can you create a novel example of the concept you just studied? If yes, you understand the principle, not just the specific case. This tests for transfer, which is the deepest form of learning." theme={theme}>Self-explanation</Highlight>: can you generate your own example? <Highlight description="Can you connect what you just studied to something you already know? If you can build a bridge to prior knowledge, the new information is being integrated into your existing schema, which makes it far more durable." theme={theme}>Connection-building</Highlight>: can you link this to something you already know? If you can do all three, you're genuinely learning. If you can't, you're in the fluency trap — and now you know to adjust.</p>
+            <ReadingSection title="Checking Yourself During Study." eyebrow="Step 5" icon={Activity} theme={theme}>
+              <p>Your Learning Radar isn't just something you use once — it's a habit you can build into every single study session. <Highlight description="Research shows that the best students don't just read their notes — they're constantly checking in with themselves: 'Am I actually taking this in, or am I just staring at the page?' That habit is what separates real studying from wasted time." theme={theme}>Research shows</Highlight> that the best learners constantly check their own understanding while studying. They don't just read — they keep asking themselves: "Am I actually learning this, or just looking at it?"</p>
+              <p>There are clear signals that tell you whether you're actually learning or just going through the motions. <Highlight description="If you can close your book and list the key ideas from what you just studied, the information is actually going in. If you can't, you've basically been staring at the page without absorbing anything. It's a quick and honest test." theme={theme}>One powerful trick</Highlight>: after studying a section, try to list the key ideas from memory. If you've been studying a chapter and you can close the book and name the five main points, you're on track. If you can't, you've been reading without learning.</p>
+              <p>Here are three quick checks you can use during any study session. The <Highlight description="Close your notes and try to say or write down everything you just studied. If you can hit the main points, it's working. If your mind goes blank, you were reading on autopilot and need to change your approach." theme={theme}>"Close the Book" test</Highlight>: can you recall the main ideas without looking? The <Highlight description="Try to come up with your own example of what you just learned. If you can, it means you actually understand the idea, not just the specific case you read about. That's the difference between surface learning and deep learning." theme={theme}>"Make Your Own Example" test</Highlight>: can you come up with a new example? The <Highlight description="Try to connect what you just learned to something you already know. If you can make that link, the new information is sticking to what's already in your brain, which makes it way harder to forget." theme={theme}>"Connect the Dots" test</Highlight>: can you link this to something you already know? If you can do all three, you're genuinely learning. If you can't, you're in the familiarity trap — and now you know to switch up your approach.</p>
+              <PersonalStory name="Ciara" role="5th Year, Cork">
+                I used to spend hours reading my Biology notes and feel grand about it. Then I tried the "Close the Book" test and I literally couldn't remember a single thing I'd just read. It was a shock. Now I stop every 20 minutes and try to write down the main points without looking. It's way harder but I actually remember stuff for tests now.
+              </PersonalStory>
             </ReadingSection>
           )}
           {activeSection === 5 && (
-            <ReadingSection title="The Prediction Protocol." eyebrow="Step 6" icon={Flag} theme={theme}>
-              <p>The ultimate metacognitive training tool is prediction. <Highlight description="Douglas Hacker and colleagues (University of Utah) tracked students across a semester who predicted their exam scores before each test. By the end of the semester, prediction accuracy had improved by approximately 50% — demonstrating that metacognitive calibration is trainable with repeated practice." theme={theme}>Hacker et al. (2000)</Highlight> tracked students across an entire semester who predicted their exam scores before each test and then compared predictions to reality. By the end of the semester, their prediction accuracy had improved by approximately 50%. The simple act of predicting and receiving feedback trained their metacognitive radar.</p>
-              <p><Highlight description="Timothy Miller and Lisa Geraci (Texas A&M University) demonstrated in 2011 that calibration training transfers across domains — students who practiced prediction accuracy in one subject showed improved metacognitive monitoring in unrelated subjects, suggesting it is a general cognitive skill." theme={theme}>Miller and Geraci (2011)</Highlight> showed something even more powerful: calibration training transfers across domains. Students who practiced prediction accuracy in one subject showed improved metacognitive monitoring in completely unrelated subjects. This means metacognition isn't topic-specific — it's a general cognitive skill. Train it once, and it improves everywhere.</p>
-              <p>The protocol is simple: before every test, mock, or practice paper, predict your score for each section. Write it down. After the test, compare your predictions to your actual results. The gap between prediction and reality is your <Highlight description="A quantitative measure of your metacognitive accuracy. Track this number over time. As it shrinks, your ability to self-assess is improving — which means your study time becomes dramatically more efficient because you're always working on what you actually need to work on." theme={theme}>calibration gap</Highlight>. Track it over time. Watch it shrink. That shrinking gap is your Learning Radar getting sharper — and it means every hour you spend studying is now targeted at the right material, not wasted on topics you only think you need to review.</p>
+            <ReadingSection title="The Prediction Game." eyebrow="Step 6" icon={Flag} theme={theme}>
+              <p>The best way to train your Learning Radar? Start predicting. <Highlight description="Researchers tracked students who predicted their exam scores before each test throughout a whole school year. By the end, their predictions were about 50% more accurate. Just by guessing your score and then seeing how close you were, your brain gets better and better at knowing what it actually knows." theme={theme}>Researchers</Highlight> tracked students who predicted their exam scores before each test and then compared their predictions to reality. By the end of the year, their prediction accuracy had improved by about 50%. The simple act of guessing your score and seeing how close you were trained their brain to be more honest with itself.</p>
+              <p>Even better: <Highlight description="Students who practised predicting their scores in one subject actually got better at knowing what they knew in completely different subjects. This isn't a subject-specific trick — it's a general brain skill. Train it in Maths and it helps you in History too." theme={theme}>this skill transfers across subjects</Highlight>. Students who practised predicting in one subject showed better self-awareness in completely unrelated subjects. This isn't a trick that only works for one topic — it's a general skill. Train it in Maths and it helps you in History too.</p>
+              <p>Here's the game: before every test, mock exam, or practice paper, predict your score for each section. Write it down. After the test, compare your predictions to your actual results. The gap between what you predicted and what you got is your <Highlight description="The difference between what you predicted you'd score and what you actually scored. Track this number over time. As it gets smaller, you're getting better at knowing what you know — which means you spend your study time on the stuff that actually needs work instead of wasting it." theme={theme}>prediction gap</Highlight>. Track it over time. Watch it shrink. That shrinking gap means your Learning Radar is getting sharper — and it means every hour you spend studying is targeted at the right material, not wasted on topics you only think you need to review.</p>
               <PredictionTracker />
               <MicroCommitment theme={theme}>
                 <p>Before your next study session, take 2 minutes to rate your top 5 exam topics as Green, Amber, or Red. Then test yourself on one of your "Greens" — close your notes and try to explain it from memory. If you stumble, congratulations: you've just found a blind spot that would have cost you marks. That's your Learning Radar in action.</p>

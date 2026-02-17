@@ -480,7 +480,7 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
       moduleNumber="07"
       moduleTitle='The Power of "Yet"'
       moduleSubtitle="The Persistence Playbook"
-      moduleDescription="A simple, three-letter word that can rewire your brain for resilience. This module unpacks the neuroscience of error-processing and gives you a practical protocol to turn failure from a verdict into a fuel source."
+      moduleDescription="One tiny word that changes everything about how you handle setbacks. This module gives you a dead-simple three-step method to stop beating yourself up when things go wrong and start actually moving forward."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -491,14 +491,14 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Full Stop." eyebrow="Step 1" icon={Book} theme={theme}>
-              <p>When you say "I can't do Honours Maths" or "I'm not good at this," you're putting a full stop at the end of the sentence. Your brain interprets this as a <Highlight description="A final judgment on your ability, suggesting you have reached the limit of your capacity. It closes the door on future effort." theme={theme}>summative judgment</Highlight>. It's a verdict that says: "This story is over. You were found wanting."</p>
-              <p>This is the language of a <Highlight description="The belief that intelligence and abilities are fixed, unchangeable traits. People with this mindset see failure as a diagnosis of their incompetence." theme={theme}>Fixed Mindset</Highlight>. It's a dead end. It shuts down effort, kills motivation, and tells your brain to disengage from the problem. To build resilience, you need to learn to turn these full stops into commas.</p>
+              <p>When you say "I can't do Honours Maths" or "I'm not good at this," you're putting a full stop at the end of the sentence. Your brain takes that as a <Highlight description="Basically, you're telling yourself the story is over and you've hit your limit. It shuts the door on even trying." theme={theme}>final verdict</Highlight>. It's like saying: "That's it. I'm done. There's nothing more I can do."</p>
+              <p>This is what happens when you're stuck in a <Highlight description="The idea that you're either smart or you're not, and there's nothing you can do about it. When you think this way, every bad result feels like proof you're just not good enough." theme={theme}>Fixed Mindset</Highlight>. It's a dead end. It kills your motivation and tells your brain to give up on the problem. To keep going when things get tough, you need to learn to turn those full stops into commas.</p>
             </ReadingSection>
           )}
            {activeSection === 1 && (
             <ReadingSection title="The Software Patch." eyebrow="Step 2" icon={RotateCcw} theme={theme}>
-              <p>The solution is a simple but profound software patch for your brain: the word "yet." By adding this single word to the end of a fixed statement, you fundamentally change its meaning. "I can't do this" becomes "I can't do this... yet." "I don't understand this" becomes "I don't understand this... yet."</p>
-              <p>This transforms the sentence from a final verdict into a progress report. It implies a <Highlight description="A sense that your current ability is just one point on a longer journey of learning, not a permanent state." theme={theme}>temporal trajectory</Highlight>. A famous study in a Chicago high school replaced "Fail" grades with "Not Yet." The result was a dramatic increase in persistence and task completion. You're not a failure; you're just unfinished.</p>
+              <p>The fix is surprisingly simple: the word "yet." Just stick it on the end of any "I can't" statement and the whole meaning changes. "I can't do this" becomes "I can't do this... yet." "I don't understand this" becomes "I don't understand this... yet."</p>
+              <p>That one word turns a final verdict into a progress update. It reminds you that <Highlight description="Where you are right now isn't where you'll always be. You're just at one point on the journey, not the end of it." theme={theme}>where you are now isn't where you'll stay</Highlight>. A school in Chicago actually replaced "Fail" grades with "Not Yet" on report cards, and students started trying harder and finishing more work. You're not a failure -- you're just not finished.</p>
               <MicroCommitment theme={theme}>
                 <p>Listen to yourself and your friends today. Every time you hear an "I can't" statement, mentally add "yet" to the end of it. Just notice how it changes the feeling.</p>
               </MicroCommitment>
@@ -506,15 +506,15 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
           )}
           {activeSection === 2 && (
             <ReadingSection title="The Brain on 'Yet'." eyebrow="Step 3" icon={Brain} theme={theme}>
-              <p>This isn't just a mental trick; it has a direct effect on your brain's hardware. When you make a mistake, your brain produces a signal called the <Highlight description="The 'Error Positivity' signal is a brainwave that shows you're paying conscious attention to a mistake. A bigger 'Pe' wave means you're more likely to learn from the error." theme={theme}>Pe (Error Positivity)</Highlight>. It's the physical sign that you're leaning in to analyse your failure.</p>
-              <p>Research shows that people with a fixed mindset have a very small Pe signal. Their brain detects the error but quickly "looks away" to protect the ego. People with a growth mindset have a huge Pe signal--they allocate massive attention to the mistake. The word "yet" is a cognitive cue that tells your brain, "This task is not over," keeping your brain in that high-Pe state of engagement and analysis.</p>
+              <p>This isn't just a feel-good trick -- it actually changes what's happening inside your head. When you make a mistake, your brain fires off an <Highlight description="A burst of brain activity that happens when you notice you've made a mistake. The stronger this signal is, the more your brain is actually paying attention to the error and learning from it." theme={theme}>error-attention signal</Highlight>. It's basically your brain saying, "Hold on, let me look at what went wrong here."</p>
+              <p>When people believe they can't improve, their brain spots the mistake but then quickly looks away -- like it's trying to protect their ego. But when people believe they can grow, their brain locks onto the mistake and really digs into it. The word "yet" keeps your brain in that locked-on mode. It's like telling your brain, "This isn't over, stay focused," instead of letting it shut down and move on.</p>
               <YetReframe />
             </ReadingSection>
           )}
            {activeSection === 3 && (
             <ReadingSection title="The Action Bridge." eyebrow="Step 4" icon={Link} theme={theme}>
-                <p>"Yet" is powerful, but it's not magic. On its own, it's just wishful thinking. To be effective, "yet" must be tethered to a behavioral plan. This is the crucial third step of the protocol: the <Highlight description="A concrete, specific action that you will take to move from 'not yet' to 'can'. This tethers optimism to a behavioral plan." theme={theme}>Bridge to Action</Highlight>.</p>
-                <p>The full, powerful sentence isn't just "I can't do this yet." It's "I can't do this yet, *so I will*..." This simple addition prevents "Yet" from being an excuse and turns it into a launchpad. It links the optimistic mindset to a concrete, strategic next step. This is the full protocol: <strong>1. Identify the Block, 2. Add "Yet", 3. Bridge to Action.</strong></p>
+                <p>"Yet" is powerful, but on its own it's just a nice thought. To actually make a difference, you need to follow it up with a real plan. That's the crucial third step: the <Highlight description="The specific, concrete thing you're going to do next to move from 'can't do it' to 'can do it'. It stops 'yet' from being empty words and turns it into actual progress." theme={theme}>Bridge to Action</Highlight>.</p>
+                <p>The full sentence isn't just "I can't do this yet." It's "I can't do this yet, *so I will*..." That extra bit stops "yet" from being an excuse and turns it into a starting point. It connects the positive thinking to an actual next step. Here's the full method: <strong>1. Identify the Block, 2. Add "Yet", 3. Bridge to Action.</strong></p>
                 <BridgeBuilder />
                 <MicroCommitment theme={theme}>
                   <p>Think of your toughest subject. Your Block might be "I can't understand Topic X." Your Bridge could be "I will watch one YouTube video explaining it tonight."</p>
@@ -523,8 +523,8 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
           )}
            {activeSection === 4 && (
             <ReadingSection title="Your 'Yet' Audit." eyebrow="Step 5" icon={Wrench} theme={theme}>
-              <p>You now have the full protocol. It's a tool for rewriting your internal monologue in real-time, turning moments of despair into moments of strategic action. The final step is to apply it to your own life.</p>
-              <p>Use the blueprint below to identify one specific academic block you're facing. Then, run it through the "Identify-Append-Bridge" protocol. This isn't just an exercise; it's you, right now, actively rewiring your brain for resilience. This is how you turn the science into a skill.</p>
+              <p>You've got the full method now. It's a way to catch yourself in those "I can't" moments and turn them into something useful instead of spiralling. The last step is to actually use it on something real.</p>
+              <p>Use the tool below to pick one thing you're genuinely struggling with right now. Run it through the three steps: name the block, add "yet", then figure out your next move. This isn't just practice -- it's you, right now, changing how you deal with the hard stuff.</p>
               <YetAudit />
             </ReadingSection>
           )}

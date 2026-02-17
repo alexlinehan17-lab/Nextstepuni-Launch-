@@ -271,7 +271,7 @@ const TheGrammarOfGritModule: React.FC<{ onBack: () => void; progress: ModulePro
       moduleNumber="05"
       moduleTitle="The Grammar of Grit"
       moduleSubtitle="The Language of Resilience"
-      moduleDescription="Discover how the words you use to define yourself can either build resilience or create fragility in the face of failure."
+      moduleDescription="The way you talk to yourself after a setback matters more than you think. This module shows you how to spot the patterns and change them."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -282,32 +282,32 @@ const TheGrammarOfGritModule: React.FC<{ onBack: () => void; progress: ModulePro
         <>
           {activeSection === 0 && (
             <ReadingSection title="Your Internal Narrator." eyebrow="Step 1" icon={Mic} theme={theme}>
-              <p>When you face a setback, who is the narrator in your head? The language they use is not just commentary; it's the source code for your resilience. The science of <Highlight description="Your habitual way of explaining events. It's a powerful predictor of your resilience, motivation, and even your physical health." theme={theme}>Explanatory Style</Highlight>, pioneered by Martin Seligman, shows that the 'grammar' of your self-talk determines whether you bounce back or break down.</p>
+              <p>When you face a setback, who is the narrator in your head? The language they use is not just commentary; it's the source code for your resilience. Your <Highlight description="The way you automatically explain things to yourself when something goes wrong. It shapes how you handle setbacks, how motivated you feel, and even how you feel physically." theme={theme}>Explanatory Style</Highlight> — basically, the 'grammar' of your self-talk — determines whether you bounce back or break down.</p>
               <ExplanatoryStyleQuiz />
             </ReadingSection>
           )}
           {activeSection === 1 && (
             <ReadingSection title="The 3 Ps of Failure." eyebrow="Step 2" icon={HeartCrack} theme={theme}>
-              <p>A pessimistic explanatory style, which erodes grit, interprets failure through three toxic lenses: <strong>Personal</strong> ("It's my fault; I'm stupid"), <strong>Pervasive</strong> ("I ruin everything I touch"), and <strong>Permanent</strong> ("It's always going to be this way"). This isn't just negative thinking; it's a specific grammatical structure that leads to learned helplessness.</p>
+              <p>A pessimistic explanatory style kills your grit because it filters every failure through three destructive lenses: <strong>Personal</strong> ("It's my fault; I'm stupid"), <strong>Pervasive</strong> ("I ruin everything I touch"), and <strong>Permanent</strong> ("It's always going to be this way"). This isn't just negative thinking — it's a pattern that trains your brain to give up before you even try.</p>
               <p>An optimistic, resilient style does the opposite. It sees failure as <strong>External/Specific</strong> ("The strategy was wrong"), <strong>Specific</strong> ("I messed up this one thing"), and <strong>Temporary</strong> ("I'll do better next time"). This isn't about lying to yourself; it's about a disciplined, strategic choice to focus on what you can control.</p>
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="The Re-Write Protocol." eyebrow="Step 3" icon={Recycle} theme={theme}>
-              <p>You can train your brain to adopt a more optimistic style. This is called <Highlight description="A core technique of Cognitive Behavioural Therapy (CBT) where you learn to identify, challenge, and change your negative automatic thoughts." theme={theme}>Cognitive Restructuring</Highlight>. When you catch yourself using one of the 3 Ps, you must consciously "re-write" the script. For example, "I'm useless at Maths" (Personal, Permanent) becomes "My study method for trigonometry isn't working yet" (Specific, Temporary).</p>
+              <p>You can train your brain to adopt a more optimistic style. This is called <Highlight description="A technique where you catch your negative automatic thoughts, question whether they're actually true, and replace them with something more realistic." theme={theme}>Cognitive Restructuring</Highlight>. When you catch yourself using one of the 3 Ps, you consciously "re-write" the script. For example, "I'm useless at Maths" (Personal, Permanent) becomes "My study method for trigonometry isn't working yet" (Specific, Temporary).</p>
               <ThoughtReframer />
               <MicroCommitment theme={theme}><p>Take one negative thought you had about school this week. Write it down. Now, try to rewrite it, changing one of the '3 Ps'. Turn a 'Personal' blame into a 'Specific' strategy problem.</p></MicroCommitment>
             </ReadingSection>
           )}
            {activeSection === 3 && (
             <ReadingSection title="The Role of Self-Compassion." eyebrow="Step 4" icon={Shield} theme={theme}>
-                <p>A harsh inner critic doesn't build resilience; it creates shame, which is a powerful de-motivator. <Highlight description="Treating yourself with the same kindness you would offer a friend who is struggling. It's a powerful antidote to the shame that can follow failure." theme={theme}>Self-compassion</Highlight> is the antidote. It allows you to acknowledge a failure without letting it define you. It's the difference between "I failed" and "I am a failure."</p>
+                <p>A harsh inner critic doesn't build resilience; it creates shame, which kills your motivation. <Highlight description="Treating yourself the way you'd treat a friend who's going through a tough time. It's the opposite of the shame spiral that can follow failure." theme={theme}>Self-compassion</Highlight> is the antidote. It lets you acknowledge a failure without letting it define you. It's the difference between "I failed" and "I am a failure."</p>
                 <p>It has three parts: 1) <strong>Self-Kindness</strong>: Treat yourself like you'd treat a mate. 2) <strong>Common Humanity</strong>: Remember that everyone messes up. 3) <strong>Mindfulness</strong>: Acknowledge the feeling without letting it consume you.</p>
             </ReadingSection>
           )}
            {activeSection === 4 && (
             <ReadingSection title="Your Resilience Blueprint." eyebrow="Step 5" icon={Wrench} theme={theme}>
-              <p>You now have the tools to become the editor of your own internal monologue. By auditing your self-talk for the 3 Ps and consciously rewriting the script with self-compassion, you can build a resilient, growth-oriented mindset one sentence at a time.</p>
+              <p>You now have the tools to edit your own internal monologue. By catching the 3 Ps in your self-talk and rewriting the script with a bit of self-compassion, you can build a more resilient mindset — one sentence at a time.</p>
               <MicroCommitment theme={theme}>
                 <p>The next time you make a small mistake, just notice your first thought. Don't judge it, just label it. Was it Personal? Pervasive? Permanent? This act of noticing is the first step to taking control.</p>
               </MicroCommitment>
