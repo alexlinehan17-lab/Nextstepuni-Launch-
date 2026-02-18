@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect, useRef, useCallback, Suspense, lazy } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo, Suspense, lazy } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon, LogOut, ArrowLeft, Settings, Flame, ChevronRight, ChevronLeft, Trophy, Waves, Scale, Zap, CloudRain, Award, Brain, Target, BookOpen, Shield, FlaskConical, BarChart3, Star } from 'lucide-react';
 import { Library } from './components/Library';
@@ -30,6 +30,7 @@ import DashboardView from './components/DashboardView';
 import LearningPathsView from './components/LearningPathsView';
 import { type StudentSubjectProfile } from './components/subjectData';
 import NorthStarEditModal from './components/NorthStarEditModal';
+import ChangeSubjectsModal from './components/ChangeSubjectsModal';
 
 const Onboarding = lazy(() => import('./components/Onboarding'));
 
@@ -233,6 +234,7 @@ const App: React.FC = () => {
   const [passportOpen, setPassportOpen] = useState(false);
   const [northStar, setNorthStar] = useState<NorthStar | null>(null);
   const [northStarEditOpen, setNorthStarEditOpen] = useState(false);
+  const [changeSubjectsOpen, setChangeSubjectsOpen] = useState(false);
   const [studentProfile, setStudentProfile] = useState<StudentSubjectProfile | null>(null);
   const [unlockedAvatarSeeds, setUnlockedAvatarSeeds] = useState<string[]>([]);
   const { settings, updateSetting, isLoaded: settingsLoaded } = useSettings(user?.uid, user?.avatar);
@@ -244,7 +246,20 @@ const App: React.FC = () => {
   const isPopstateRef = useRef(false);
   const researchScrollRef = useRef<HTMLDivElement>(null);
 
-  const completedCount = ALL_COURSES.filter(c => {
+  const studentCourses = useMemo(() => {
+    if (!studentProfile) return ALL_COURSES;
+    const relevantModuleIds = new Set(
+      studentProfile.subjects.map(s => SUBJECT_TO_MODULE[s.subjectName]).filter(Boolean)
+    );
+    return ALL_COURSES.filter(c => {
+      if (c.category === 'subject-specific-science') {
+        return relevantModuleIds.has(c.id);
+      }
+      return true;
+    });
+  }, [studentProfile]);
+
+  const completedCount = studentCourses.filter(c => {
     const p = userProgress[c.id];
     return p && p.unlockedSection >= c.sectionsCount - 1;
   }).length;
@@ -481,6 +496,18 @@ const App: React.FC = () => {
     setNeedsOnboarding(false);
     setViewState('tree');
     window.history.replaceState({ view: 'tree' }, '');
+  };
+
+  const handleChangeSubjectsSave = async (profile: StudentSubjectProfile) => {
+    setStudentProfile(profile);
+    setChangeSubjectsOpen(false);
+    if (!user) return;
+    try {
+      const progressDocRef = doc(db, 'progress', user.uid);
+      await setDoc(progressDocRef, { subjectProfile: profile }, { merge: true });
+    } catch (error) {
+      console.error('Failed to save updated subject profile:', error);
+    }
   };
 
   const handleBackToTree = () => {
@@ -771,7 +798,7 @@ const App: React.FC = () => {
         onGoToInnovationZone={handleGoToInnovationZone}
         onGoToDashboard={handleGoToDashboard}
         onGoToLearningPaths={handleGoToLearningPaths}
-        allCourses={ALL_COURSES}
+        allCourses={studentCourses}
         onSelectModule={handleSelectModule}
         categoryTitles={categoryTitles}
         userProgress={userProgress}
@@ -780,10 +807,11 @@ const App: React.FC = () => {
         onLogout={handleLogout}
         onOpenSettings={() => setSettingsOpen(true)}
         onOpenPassport={() => setPassportOpen(true)}
+        onChangeSubjects={studentProfile ? () => setChangeSubjectsOpen(true) : undefined}
         settings={settings}
         updateSetting={updateSetting}
         completedCount={completedCount}
-        totalCount={ALL_COURSES.length}
+        totalCount={studentCourses.length}
       />;
     }
 
@@ -853,7 +881,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
       {user && viewState !== 'onboarding' && user.role !== 'gc' && !user.isAdmin && (
         <div className={`fixed top-6 right-6 z-[100] ${viewState === 'tree' ? 'md:hidden' : ''}`}>
-          <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} todayMood={todayMood} onSetMood={setMood} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} onGoToDashboard={handleGoToDashboard} completedCount={completedCount} totalCount={ALL_COURSES.length} onOpenNorthStar={() => setNorthStarEditOpen(true)} hasNorthStar={northStar !== null} />
+          <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} todayMood={todayMood} onSetMood={setMood} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} onGoToDashboard={handleGoToDashboard} completedCount={completedCount} totalCount={studentCourses.length} onOpenNorthStar={() => setNorthStarEditOpen(true)} hasNorthStar={northStar !== null} />
         </div>
       )}
 
@@ -872,7 +900,7 @@ const App: React.FC = () => {
             isOpen={passportOpen}
             onClose={() => setPassportOpen(false)}
             userProgress={userProgress}
-            allCourses={ALL_COURSES}
+            allCourses={studentCourses}
             categoryTitles={categoryTitles}
           />
           <NorthStarEditModal
@@ -881,6 +909,14 @@ const App: React.FC = () => {
             onSave={handleNorthStarSave}
             currentNorthStar={northStar}
           />
+          {studentProfile && (
+            <ChangeSubjectsModal
+              isOpen={changeSubjectsOpen}
+              onClose={() => setChangeSubjectsOpen(false)}
+              onSave={handleChangeSubjectsSave}
+              currentProfile={studentProfile}
+            />
+          )}
         </>
       )}
     </div>

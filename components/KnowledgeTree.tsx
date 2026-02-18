@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Sprout, Zap, Rocket, Target, FlaskConical,
   Layout, ArrowRight, Sparkles, Beaker, BarChart3, Compass,
-  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon
+  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw
 } from 'lucide-react';
 import { getAvatarUrl } from '../components/Auth';
 import { CourseData, BentoModuleTile } from './Library';
@@ -43,6 +43,7 @@ interface KnowledgeTreeProps {
   onLogout: () => void;
   onOpenSettings: () => void;
   onOpenPassport: () => void;
+  onChangeSubjects?: () => void;
   settings: UserSettings;
   updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void;
   completedCount: number;
@@ -194,7 +195,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
   );
 };
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, settings, updateSetting, completedCount, totalCount }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, completedCount, totalCount }) => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -345,6 +346,21 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
             </span>
           </button>
 
+          {/* Change Subjects */}
+          {onChangeSubjects && (
+            <button
+              onClick={onChangeSubjects}
+              className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            >
+              <div className="shrink-0 flex items-center justify-center w-[18px]">
+                <RefreshCw size={18} strokeWidth={1.5} className="text-teal-500" />
+              </div>
+              <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+                Change Subjects
+              </span>
+            </button>
+          )}
+
           {/* Theme toggle */}
           <button
             onClick={() => updateSetting('darkMode', !settings.darkMode)}
@@ -423,7 +439,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
             Learning Lab
           </p>
           <h1 className="font-serif text-4xl md:text-5xl text-zinc-900 dark:text-white tracking-tight leading-tight font-semibold">
-            {(() => { const h = new Date().getHours(); return h < 12 ? 'Good morning.' : h < 18 ? 'Good afternoon.' : 'Good evening.'; })()}
+            {(() => { const h = new Date().getHours(); const firstName = userName?.split(' ')[0] || ''; const name = firstName ? ', ' + firstName : ''; return h < 12 ? `Good morning${name}.` : h < 18 ? `Good afternoon${name}.` : `Good evening${name}.`; })()}
           </h1>
           <p className="mt-2 text-zinc-400 dark:text-zinc-500 text-sm">
             {(() => {
