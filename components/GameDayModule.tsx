@@ -10,6 +10,9 @@ import { ModuleProgress } from '../types';
 import { amberTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useNorthStar } from '../hooks/useNorthStar';
+import NorthStarCallout from './NorthStarCallout';
+import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
 
 const theme = amberTheme;
 
@@ -452,6 +455,7 @@ const CognitiveWarmup = () => {
 
 // --- MODULE COMPONENT ---
 const GameDayModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const { northStar } = useNorthStar();
   const sections = [
     { id: 'athlete-mindset', title: 'The Athlete Mindset', eyebrow: '01 // The Game Plan', icon: Target },
     { id: 'macrocycle', title: '1 Month Out', eyebrow: '02 // Building Your Base', icon: SlidersHorizontal },
@@ -515,6 +519,7 @@ const GameDayModule: React.FC<{ onBack: () => void; progress: ModuleProgress; on
           )}
            {activeSection === 5 && (
             <ReadingSection title="Game Day: The Warm-Up." eyebrow="Step 6" icon={Utensils} theme={theme}>
+              {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'game-day-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
               <p>The morning of the exam is about channeling your nerves into focus. Don't hit snooze. Drink a glass of water straight away. If you can, get a few minutes of daylight (even standing by a window helps) -- it wakes your brain up properly. Eat a breakfast that gives you slow, steady energy (more on that below).</p>
               <PreExamMealBuilder />
               <p>Just as an athlete warms up before a match, you need to warm up your brain. Passively reading over notes doesn't do much. What actually helps is a quick <Highlight description="Short brain exercises -- like listing words that start with a certain letter, or doing a few quick mental sums -- done 20-30 minutes before the exam. It gets the thinking parts of your brain warmed up and ready to go before you open the paper." theme={theme}>brain warm-up</Highlight>. It gets the right parts of your brain fired up and ready before you even open the paper.</p>

@@ -12,6 +12,9 @@ import { ModuleProgress } from '../types';
 import { indigoTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useNorthStar } from '../hooks/useNorthStar';
+import NorthStarCallout from './NorthStarCallout';
+import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
 
 const theme = indigoTheme;
 
@@ -297,6 +300,7 @@ const DesirableDifficultyComparison = () => {
 
 // --- MODULE COMPONENT ---
 const StrategicAdvantageModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const { northStar } = useNorthStar();
   const sections = [
     { id: 'narrative-identity', title: 'The Story of You', eyebrow: '01 // Your Internal Script', icon: Feather },
     { id: 'agency-communion', title: 'The Two Pillars', eyebrow: '02 // Agency & Communion', icon: Scale },
@@ -338,6 +342,7 @@ const StrategicAdvantageModule: React.FC<{ onBack: () => void; progress: ModuleP
           )}
           {activeSection === 2 && (
             <ReadingSection title="The Power of Failure." eyebrow="Step 3" icon={BookOpen} theme={theme}>
+              {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'strategic-advantage-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
               <p>Your life story is not a continuous film; it's a collection of key scenes. These are your <Highlight description="The key moments in your life that stick with you -- the highs, the lows, and the turning points. These are the scenes that define the story you tell about yourself." theme={theme}>Pivotal Moments</Highlight>. For resilient individuals, the most important pivotal moments are often failures. They are the moments where suffering is transformed into insight.</p>
               <p>The key is to learn the art of <Highlight description="Looking at the same event from a different angle so it means something different to you. Instead of 'I failed,' you think 'I found out exactly what I need to work on.' Same facts, different story." theme={theme}>Reframing</Highlight>. A technique like the "Failure Resume" helps you de-shame failure and see it not as a verdict on your worth, but as valuable data for future success. It's about learning to say, "I didn't suffer for nothing; I suffered to become stronger."</p>
               <MicroCommitment theme={theme}>

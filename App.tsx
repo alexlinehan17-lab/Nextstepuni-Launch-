@@ -6,7 +6,7 @@
 
 import React, { useState, useEffect, useRef, useCallback, Suspense, lazy } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, LogOut, ArrowLeft, Settings, Flame, ChevronRight, ChevronLeft, Trophy, Waves, Scale, Zap, CloudRain, Award, Brain, Target, BookOpen, Shield, FlaskConical, BarChart3 } from 'lucide-react';
+import { Sun, Moon, LogOut, ArrowLeft, Settings, Flame, ChevronRight, ChevronLeft, Trophy, Waves, Scale, Zap, CloudRain, Award, Brain, Target, BookOpen, Shield, FlaskConical, BarChart3, Star } from 'lucide-react';
 import { Library } from './components/Library';
 import { KnowledgeTree, CategoryType } from './components/KnowledgeTree';
 import { LoadingSpinner } from './components/LoadingSpinner';
@@ -18,9 +18,9 @@ import StudyPassportModal from './components/StudyPassportModal';
 import { auth, db } from './firebase';
 import { onAuthStateChanged, signOut, User as FirebaseUser } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { ModuleProgress, UserProgress, UserSettings } from './types';
+import { ModuleProgress, UserProgress, UserSettings, NorthStar } from './types';
 import { moduleComponents, InnovationZone } from './moduleRegistry';
-import { ALL_COURSES, categoryTitles } from './courseData';
+import { ALL_COURSES, categoryTitles, SUBJECT_TO_MODULE } from './courseData';
 import { useSettings } from './hooks/useSettings';
 import { useStreak, StreakData } from './hooks/useStreak';
 import { useMood } from './hooks/useMood';
@@ -29,6 +29,7 @@ import { usePoints } from './hooks/usePoints';
 import DashboardView from './components/DashboardView';
 import LearningPathsView from './components/LearningPathsView';
 import { type StudentSubjectProfile } from './components/subjectData';
+import NorthStarEditModal from './components/NorthStarEditModal';
 
 const Onboarding = lazy(() => import('./components/Onboarding'));
 
@@ -55,9 +56,11 @@ interface UserProfileProps {
   onGoToDashboard: () => void;
   completedCount: number;
   totalCount: number;
+  onOpenNorthStar: () => void;
+  hasNorthStar: boolean;
 }
 
-const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, todayMood, onSetMood, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, completedCount, totalCount }) => {
+const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, todayMood, onSetMood, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, completedCount, totalCount, onOpenNorthStar, hasNorthStar }) => {
   const [isOpen, setIsOpen] = useState(false);
   const displayAvatar = avatarOverride || user.avatar;
   return (
@@ -154,16 +157,27 @@ const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, upd
                 onClick={() => { setIsOpen(false); onOpenPassport(); }}
                 className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5"
               >
-                <div className="w-8 h-8 rounded-lg bg-purple-50 dark:bg-purple-500/10 flex items-center justify-center">
-                  <Award size={16} className="text-purple-500" />
+                <div className="w-8 h-8 rounded-lg bg-[#CC785C]/10 dark:bg-[#CC785C]/10 flex items-center justify-center">
+                  <Award size={16} className="text-[#CC785C]" />
                 </div>
                 <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">Study Passport</span>
                 <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500">{completedCount}/{totalCount}</span>
               </button>
             </div>
 
-            {/* Existing: Theme, Settings, Log Out */}
+            {/* North Star + Theme, Settings, Log Out */}
             <div className="border-t border-zinc-200/50 dark:border-white/10 pt-2 mt-2">
+              {hasNorthStar && (
+                <button
+                  onClick={() => { setIsOpen(false); onOpenNorthStar(); }}
+                  className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5"
+                >
+                  <div className="w-8 h-8 rounded-lg bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center">
+                    <Star size={16} className="text-amber-500" />
+                  </div>
+                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">My North Star</span>
+                </button>
+              )}
               <button onClick={() => updateSetting('darkMode', !settings.darkMode)} className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5">
                   <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Theme</span>
                    <AnimatePresence mode="wait">
@@ -217,6 +231,9 @@ const App: React.FC = () => {
   const [needsOnboarding, setNeedsOnboarding] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [passportOpen, setPassportOpen] = useState(false);
+  const [northStar, setNorthStar] = useState<NorthStar | null>(null);
+  const [northStarEditOpen, setNorthStarEditOpen] = useState(false);
+  const [studentProfile, setStudentProfile] = useState<StudentSubjectProfile | null>(null);
   const [unlockedAvatarSeeds, setUnlockedAvatarSeeds] = useState<string[]>([]);
   const { settings, updateSetting, isLoaded: settingsLoaded } = useSettings(user?.uid, user?.avatar);
   const { streak } = useStreak(user?.uid);
@@ -327,7 +344,12 @@ const App: React.FC = () => {
               if (progressData.cosmeticUnlocks?.avatarSeeds) {
                 setUnlockedAvatarSeeds(progressData.cosmeticUnlocks.avatarSeeds);
               }
-              if (!progressData.subjectProfile) {
+              if (progressData.northStar) {
+                setNorthStar(progressData.northStar as NorthStar);
+              }
+              if (progressData.subjectProfile) {
+                setStudentProfile(progressData.subjectProfile as StudentSubjectProfile);
+              } else {
                 setNeedsOnboarding(true);
               }
             } else {
@@ -425,17 +447,34 @@ const App: React.FC = () => {
     }
   };
 
-  const handleOnboardingComplete = async (profile: StudentSubjectProfile) => {
+  const handleOnboardingComplete = async (profile: StudentSubjectProfile, northStarData?: NorthStar) => {
     if (!user) return;
     try {
       const progressDocRef = doc(db, 'progress', user.uid);
-      await setDoc(progressDocRef, { subjectProfile: profile }, { merge: true });
+      const saveData: Record<string, any> = { subjectProfile: profile };
+      if (northStarData) {
+        saveData.northStar = northStarData;
+        setNorthStar(northStarData);
+      }
+      await setDoc(progressDocRef, saveData, { merge: true });
     } catch (error) {
       console.error('Failed to save subject profile:', error);
     }
+    setStudentProfile(profile);
     setNeedsOnboarding(false);
     setViewState('tree');
     window.history.replaceState({ view: 'tree' }, '');
+  };
+
+  const handleNorthStarSave = async (ns: NorthStar) => {
+    setNorthStar(ns);
+    if (!user) return;
+    try {
+      const progressDocRef = doc(db, 'progress', user.uid);
+      await setDoc(progressDocRef, { northStar: ns }, { merge: true });
+    } catch (error) {
+      console.error('Failed to save North Star:', error);
+    }
   };
 
   const handleOnboardingSkip = () => {
@@ -749,7 +788,16 @@ const App: React.FC = () => {
     }
 
     if (viewState === 'category' && currentCategory) {
-      const categoryCourses = ALL_COURSES.filter(c => c.category === currentCategory);
+      let categoryCourses = ALL_COURSES.filter(c => c.category === currentCategory);
+
+      // For subject-specific-science, only show modules relevant to the student's chosen subjects
+      if (currentCategory === 'subject-specific-science' && studentProfile) {
+        const relevantModuleIds = new Set(
+          studentProfile.subjects.map(s => SUBJECT_TO_MODULE[s.subjectName]).filter(Boolean)
+        );
+        categoryCourses = categoryCourses.filter(c => relevantModuleIds.has(c.id));
+      }
+
       return (
         <Library
           title={categoryTitles[currentCategory]}
@@ -757,6 +805,8 @@ const App: React.FC = () => {
           onSelectCourse={handleSelectModule}
           onBack={handleBackToTree}
           userProgress={userProgress}
+          northStar={northStar}
+          studentProfile={studentProfile}
         />
       );
     }
@@ -775,10 +825,10 @@ const App: React.FC = () => {
         return (
           <Suspense fallback={<LoadingSpinner />}>
             {cameFromJourney && (
-              <div className="fixed top-0 left-0 right-0 z-[80] bg-purple-600 dark:bg-purple-500">
+              <div className="fixed top-0 left-0 right-0 z-[80] bg-[#CC785C] dark:bg-[#CC785C]">
                 <button
                   onClick={handleBackToCategory}
-                  className="w-full flex items-center justify-center gap-2 py-2 text-white text-xs font-bold hover:bg-purple-700 dark:hover:bg-purple-600 transition-colors"
+                  className="w-full flex items-center justify-center gap-2 py-2 text-white text-xs font-bold hover:bg-[#B56A50] dark:hover:bg-[#B56A50] transition-colors"
                 >
                   <ArrowLeft size={14} />
                   Back to Journey Results
@@ -803,7 +853,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
       {user && viewState !== 'onboarding' && user.role !== 'gc' && !user.isAdmin && (
         <div className={`fixed top-6 right-6 z-[100] ${viewState === 'tree' ? 'md:hidden' : ''}`}>
-          <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} todayMood={todayMood} onSetMood={setMood} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} onGoToDashboard={handleGoToDashboard} completedCount={completedCount} totalCount={ALL_COURSES.length} />
+          <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} todayMood={todayMood} onSetMood={setMood} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} onGoToDashboard={handleGoToDashboard} completedCount={completedCount} totalCount={ALL_COURSES.length} onOpenNorthStar={() => setNorthStarEditOpen(true)} hasNorthStar={northStar !== null} />
         </div>
       )}
 
@@ -824,6 +874,12 @@ const App: React.FC = () => {
             userProgress={userProgress}
             allCourses={ALL_COURSES}
             categoryTitles={categoryTitles}
+          />
+          <NorthStarEditModal
+            isOpen={northStarEditOpen}
+            onClose={() => setNorthStarEditOpen(false)}
+            onSave={handleNorthStarSave}
+            currentNorthStar={northStar}
           />
         </>
       )}

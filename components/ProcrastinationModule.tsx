@@ -12,6 +12,9 @@ import { ModuleProgress } from '../types';
 import { orangeTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useNorthStar } from '../hooks/useNorthStar';
+import NorthStarCallout from './NorthStarCallout';
+import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
 
 const theme = orangeTheme;
 
@@ -398,6 +401,8 @@ const ProcrastinationModule: React.FC<{ onBack: () => void; progress: ModuleProg
     { id: 'scaffolding-focus', title: 'Scaffolding Your Focus', eyebrow: '08 // The Toolkit', icon: Wrench },
   ];
 
+  const { northStar } = useNorthStar();
+
   return (
     <ModuleLayout
       moduleNumber="11"
@@ -439,6 +444,7 @@ const ProcrastinationModule: React.FC<{ onBack: () => void; progress: ModuleProg
           )}
           {activeSection === 4 && (
             <ReadingSection title="The Guilt Cycle." eyebrow="Step 5" icon={RotateCcw} theme={theme}>
+              {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'procrastination-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
               <p>Most people respond to procrastination with self-criticism: "I'm so lazy. What's wrong with me?" This feels like accountability, but it's actually the worst thing you can do. Self-criticism generates <Highlight description="That horrible sinking feeling after you've wasted time. The cruel twist is that feeling guilty makes you want to avoid even more, which creates even more guilt. It feeds itself." theme={theme}>guilt and shame</Highlight>, which are negative emotions. And what does your brain do with negative emotions? It tries to avoid them--by procrastinating more.</p>
               <p>This creates a vicious downward spiral: Procrastinate &#8594; Feel Guilty &#8594; More Negative Emotion &#8594; Procrastinate More &#8594; Feel More Guilty. "Tough love" doesn't break this cycle; it accelerates it.</p>
               <GuiltSpiralComparison />

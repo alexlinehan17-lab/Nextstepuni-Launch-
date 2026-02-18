@@ -71,7 +71,7 @@ const MOOD_CONFIG: Record<Mood, { icon: React.ElementType; bg: string; border: s
     crisis: { icon: AlertTriangle, bg: 'bg-rose-100 dark:bg-rose-900/30', border: 'border-rose-200 dark:border-rose-700/30', text: 'text-rose-600 dark:text-rose-400' },
     social: { icon: MessageCircle, bg: 'bg-emerald-100 dark:bg-emerald-900/30', border: 'border-emerald-200 dark:border-emerald-700/30', text: 'text-emerald-600 dark:text-emerald-400' },
     study: { icon: BookOpenCheck, bg: 'bg-blue-100 dark:bg-blue-900/30', border: 'border-blue-200 dark:border-blue-700/30', text: 'text-blue-600 dark:text-blue-400' },
-    exam: { icon: ClipboardCheck, bg: 'bg-purple-100 dark:bg-purple-900/30', border: 'border-purple-200 dark:border-purple-700/30', text: 'text-purple-600 dark:text-purple-400' },
+    exam: { icon: ClipboardCheck, bg: 'bg-[#CC785C]/10 dark:bg-[#CC785C]/15', border: 'border-[#CC785C]/20 dark:border-[#CC785C]/20', text: 'text-[#CC785C] dark:text-[#CC785C]' },
     reflection: { icon: Coffee, bg: 'bg-zinc-100 dark:bg-zinc-800/50', border: 'border-zinc-200 dark:border-zinc-700/30', text: 'text-zinc-600 dark:text-zinc-400' },
     triumph: { icon: Trophy, bg: 'bg-yellow-100 dark:bg-yellow-900/30', border: 'border-yellow-200 dark:border-yellow-700/30', text: 'text-yellow-600 dark:text-yellow-400' },
 };
@@ -129,7 +129,7 @@ const STAT_ARC_COLORS: Record<StatKey, string> = {
     energy: 'stroke-amber-500',
     academicCap: 'stroke-blue-500',
     socialSupport: 'stroke-emerald-500',
-    systemSavvy: 'stroke-purple-500',
+    systemSavvy: 'stroke-[#CC785C]',
     resilience: 'stroke-rose-500',
 };
 
@@ -299,7 +299,7 @@ const InlineChoiceFeedback: React.FC<{ feedback: FeedbackState; onComplete: () =
                 {feedback.moduleLink && (
                     <button
                         onClick={(e) => { e.stopPropagation(); setShowInsight(!showInsight); }}
-                        className="text-[11px] font-semibold text-purple-600 dark:text-purple-400 hover:underline flex items-center gap-1"
+                        className="text-[11px] font-semibold text-[#CC785C] dark:text-[#CC785C] hover:underline flex items-center gap-1"
                     >
                         <BookMarked size={11} />
                         {showInsight ? 'Hide insight' : 'Learn more'}
@@ -314,9 +314,9 @@ const InlineChoiceFeedback: React.FC<{ feedback: FeedbackState; onComplete: () =
                             exit={{ opacity: 0, height: 0 }}
                             className="overflow-hidden"
                         >
-                            <div className="mt-2 bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700/30 rounded-lg p-3">
-                                <p className="text-[10px] font-bold text-purple-600 dark:text-purple-400 mb-1">{feedback.moduleLink.moduleTitle}</p>
-                                <p className="text-[11px] text-purple-700 dark:text-purple-300 leading-relaxed">{feedback.moduleLink.insight}</p>
+                            <div className="mt-2 bg-[#CC785C]/5 dark:bg-[#CC785C]/10 border border-[#CC785C]/20 dark:border-[#CC785C]/20 rounded-lg p-3">
+                                <p className="text-[10px] font-bold text-[#CC785C] dark:text-[#CC785C] mb-1">{feedback.moduleLink.moduleTitle}</p>
+                                <p className="text-[11px] text-[#A0614A] dark:text-[#D4957F] leading-relaxed">{feedback.moduleLink.insight}</p>
                             </div>
                         </MotionDiv>
                     )}
@@ -353,7 +353,7 @@ const PhaseTransition: React.FC<{ phase: Phase; gameState: GameState; onComplete
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
                 >
-                    <p className="text-xs font-bold uppercase tracking-[0.3em] text-purple-600 dark:text-purple-400 mb-2">
+                    <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#CC785C] dark:text-[#CC785C] mb-2">
                         {meta?.months}
                     </p>
                     <h2 className="font-serif text-4xl font-semibold text-zinc-900 dark:text-white mb-3">
@@ -494,7 +494,7 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
                         {turningPoints.map((item, index) => (
                             <div key={index} className="bg-white/50 dark:bg-white/5 border border-zinc-200 dark:border-white/10 rounded-xl p-4">
                                 <div className="flex items-center gap-2 mb-1">
-                                    <p className="text-xs font-bold text-purple-600 dark:text-purple-400">{item.scene.month}</p>
+                                    <p className="text-xs font-bold text-[#CC785C] dark:text-[#CC785C]">{item.scene.month}</p>
                                     <span className="text-zinc-300 dark:text-zinc-600">|</span>
                                     <p className="text-xs font-bold text-zinc-700 dark:text-zinc-300">{item.scene.title}</p>
                                 </div>
@@ -547,11 +547,11 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
                         <button
                             key={mod.moduleId}
                             onClick={() => onSelectModule?.(mod.moduleId)}
-                            className="w-full flex items-center gap-3 bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700/30 rounded-xl p-3 text-left hover:bg-purple-100 dark:hover:bg-purple-900/40 transition-colors group"
+                            className="w-full flex items-center gap-3 bg-[#CC785C]/5 dark:bg-[#CC785C]/10 border border-[#CC785C]/20 dark:border-[#CC785C]/20 rounded-xl p-3 text-left hover:bg-[#CC785C]/15 dark:hover:bg-[#CC785C]/15 transition-colors group"
                         >
-                            <BookMarked size={16} className="text-purple-600 dark:text-purple-400 flex-shrink-0" />
-                            <p className="text-sm font-semibold text-purple-700 dark:text-purple-300 flex-1">{mod.moduleTitle}</p>
-                            <ArrowRight size={14} className="text-purple-400 dark:text-purple-500 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
+                            <BookMarked size={16} className="text-[#CC785C] dark:text-[#CC785C] flex-shrink-0" />
+                            <p className="text-sm font-semibold text-[#A0614A] dark:text-[#D4957F] flex-1">{mod.moduleTitle}</p>
+                            <ArrowRight size={14} className="text-[#CC785C]/60 dark:text-[#CC785C]/50 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
                         </button>
                     ))}
                 </div>
@@ -716,8 +716,8 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
                             {history.map((item, index) => (
                                 <div key={index} className="relative pl-8">
                                     <div className="absolute top-1 left-0 flex flex-col items-center">
-                                        <div className="w-6 h-6 rounded-full bg-purple-200 dark:bg-purple-800 flex items-center justify-center ring-4 ring-zinc-100 dark:ring-white/5">
-                                            <GitBranch size={14} className="text-purple-600 dark:text-purple-300"/>
+                                        <div className="w-6 h-6 rounded-full bg-[#CC785C]/20 dark:bg-[#CC785C]/30 flex items-center justify-center ring-4 ring-zinc-100 dark:ring-white/5">
+                                            <GitBranch size={14} className="text-[#CC785C] dark:text-[#D4957F]"/>
                                         </div>
                                         {index < history.length - 1 && <div className="w-px h-full bg-zinc-300 dark:bg-zinc-700 mt-1" style={{height: 'calc(100% + 1rem)'}} />}
                                     </div>
@@ -750,7 +750,7 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
                     onClick={onRestart}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-zinc-800 dark:bg-white text-white dark:text-zinc-900 font-bold text-sm rounded-full shadow-lg hover:bg-purple-600 dark:hover:bg-purple-400 transition-colors"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-zinc-800 dark:bg-white text-white dark:text-zinc-900 font-bold text-sm rounded-full shadow-lg hover:bg-[#B56A50] dark:hover:bg-[#CC785C] transition-colors"
                 >
                     Play Again <RotateCcw size={16} />
                 </MotionButton>
@@ -804,8 +804,8 @@ const ChoiceButton: React.FC<{ choice: Choice; gameState: GameState; visitedScen
 
     if (chosen) {
         return (
-            <div className="w-full text-left p-4 rounded-xl bg-purple-50 dark:bg-purple-900/20 border-2 border-purple-300 dark:border-purple-600/50">
-                <p className="font-semibold text-purple-700 dark:text-purple-300 text-sm">{choice.text}</p>
+            <div className="w-full text-left p-4 rounded-xl bg-[#CC785C]/5 dark:bg-[#CC785C]/10 border-2 border-[#CC785C]/30 dark:border-[#CC785C]/40">
+                <p className="font-semibold text-[#A0614A] dark:text-[#D4957F] text-sm">{choice.text}</p>
             </div>
         );
     }
@@ -1044,11 +1044,11 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                                 <button
                                     key={mod.moduleId}
                                     onClick={() => onSelectModule?.(mod.moduleId)}
-                                    className="w-full flex items-center gap-3 bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700/30 rounded-xl p-3 text-left hover:bg-purple-100 dark:hover:bg-purple-900/40 transition-colors group"
+                                    className="w-full flex items-center gap-3 bg-[#CC785C]/5 dark:bg-[#CC785C]/10 border border-[#CC785C]/20 dark:border-[#CC785C]/20 rounded-xl p-3 text-left hover:bg-[#CC785C]/15 dark:hover:bg-[#CC785C]/15 transition-colors group"
                                 >
-                                    <BookMarked size={16} className="text-purple-600 dark:text-purple-400 flex-shrink-0" />
-                                    <p className="text-sm font-semibold text-purple-700 dark:text-purple-300 flex-1">{mod.moduleTitle}</p>
-                                    <ArrowRight size={14} className="text-purple-400 dark:text-purple-500 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
+                                    <BookMarked size={16} className="text-[#CC785C] dark:text-[#CC785C] flex-shrink-0" />
+                                    <p className="text-sm font-semibold text-[#A0614A] dark:text-[#D4957F] flex-1">{mod.moduleTitle}</p>
+                                    <ArrowRight size={14} className="text-[#CC785C]/60 dark:text-[#CC785C]/50 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
                                 </button>
                             ))}
                         </div>
@@ -1060,7 +1060,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                             onClick={() => { setShowingSavedResult(false); restartGame(); }}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="inline-flex items-center gap-2 px-6 py-3 bg-zinc-800 dark:bg-white text-white dark:text-zinc-900 font-bold text-sm rounded-full shadow-lg hover:bg-purple-600 dark:hover:bg-purple-400 transition-colors"
+                            className="inline-flex items-center gap-2 px-6 py-3 bg-zinc-800 dark:bg-white text-white dark:text-zinc-900 font-bold text-sm rounded-full shadow-lg hover:bg-[#B56A50] dark:hover:bg-[#CC785C] transition-colors"
                         >
                             Play Again <RotateCcw size={16} />
                         </MotionButton>
@@ -1189,15 +1189,15 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
 // ─── ToolCard ────────────────────────────────────────────────────────────────
 
 const ToolCard: React.FC<{title: string, description: string, icon: React.ElementType, onClick: () => void, disabled?: boolean, accentColor?: string}> =
-({ title, description, icon: Icon, onClick, disabled = false, accentColor = 'text-purple-500' }) => (
+({ title, description, icon: Icon, onClick, disabled = false, accentColor = 'text-[#CC785C]' }) => (
     <MotionButton
         onClick={onClick}
         disabled={disabled}
         whileHover={{ scale: disabled ? 1 : 1.03 }}
-        className={`w-full text-left p-6 rounded-2xl border-2 transition-all ${disabled ? 'bg-zinc-50 dark:bg-white/5 border-zinc-200 dark:border-white/10 opacity-50 cursor-not-allowed' : 'bg-white/50 dark:bg-white/10 border-zinc-200/80 dark:border-white/15 hover:border-purple-300 dark:hover:border-purple-500/50 cursor-pointer'}`}
+        className={`w-full text-left p-6 rounded-2xl border-2 transition-all ${disabled ? 'bg-zinc-50 dark:bg-white/5 border-zinc-200 dark:border-white/10 opacity-50 cursor-not-allowed' : 'bg-white/50 dark:bg-white/10 border-zinc-200/80 dark:border-white/15 hover:border-[#CC785C]/40 dark:hover:border-[#CC785C]/50 cursor-pointer'}`}
     >
         <div className="flex items-center gap-4">
-            <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${disabled ? 'bg-zinc-200 dark:bg-white/10' : 'bg-purple-100 dark:bg-purple-900/50'}`}>
+            <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${disabled ? 'bg-zinc-200 dark:bg-white/10' : 'bg-[#CC785C]/10 dark:bg-[#CC785C]/20'}`}>
                 <Icon size={24} className={disabled ? 'text-zinc-400 dark:text-zinc-600' : accentColor} />
             </div>
             <div>

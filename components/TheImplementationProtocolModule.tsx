@@ -10,6 +10,9 @@ import { ModuleProgress } from '../types';
 import { roseTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useNorthStar } from '../hooks/useNorthStar';
+import NorthStarCallout from './NorthStarCallout';
+import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
 
 const theme = roseTheme;
 const MotionDiv = motion.div as any;
@@ -312,6 +315,7 @@ const IfThenPlanBuilder = () => {
 
 // --- MODULE COMPONENT ---
 const TheImplementationProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const { northStar } = useNorthStar();
   const sections = [
     { id: 'intention-action-gap', title: 'The Intention-Action Gap', eyebrow: '01 // The Problem', icon: Target },
     { id: 'if-then-plans', title: 'If-Then Plans', eyebrow: '02 // The Solution', icon: GitBranch },
@@ -352,6 +356,7 @@ const TheImplementationProtocolModule: React.FC<{ onBack: () => void; progress: 
           )}
           {activeSection === 2 && (
             <ReadingSection title="Temptation Bundling." eyebrow="Step 3" icon={Lightbulb} theme={theme}>
+              {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'implementation-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
               <p><Highlight description="In one experiment, people were given really addictive audiobooks they could only listen to while at the gym. That one simple rule -- you only get the fun thing while doing the hard thing -- boosted gym attendance by 51%. No extra willpower needed." theme={theme}>Researchers tested a brilliantly simple idea</Highlight>: what if you paired something boring with something you actually enjoy? They gave people access to addictive audiobooks -- but only at the gym. The result: gym attendance went up by 51%. Not through willpower. Not through motivation. Just by bundling a "should" with a "want."</p>
               <p>This works perfectly for studying. A <Highlight description="You pair something you have to do (studying) with something you actually enjoy -- but the catch is you ONLY allow yourself the fun thing during the hard thing. If you let yourself have the reward whenever, it stops working. The exclusivity is what makes it powerful." theme={theme}>temptation bundle</Highlight> pairs something you need to do (studying) with something you want to do (listening to a favourite playlist, sitting in your favourite cafe, having a particular snack). The critical rule: the "want" activity is ONLY available during the "should" activity. If you listen to that playlist at other times, the bundle breaks. The exclusivity is what creates the pull.</p>
               <p>Practical examples for students: only listen to your favourite playlist while doing past papers. Only go to that nice cafe when you're studying. Only have that particular snack during study sessions. Only watch that YouTube channel as a reward between pomodoros. The key is finding something you genuinely look forward to and making it conditional on the study behaviour. You're not using willpower to force yourself to study — you're creating a genuine incentive that makes you want to start.</p>

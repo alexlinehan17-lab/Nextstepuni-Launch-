@@ -5,13 +5,15 @@
 
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff, BookOpen, Target, Clock, CalendarDays } from 'lucide-react';
+import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff, BookOpen, Target, Clock, CalendarDays, Star } from 'lucide-react';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
   LC_SUBJECTS, SUBJECT_GROUP_LABELS, getGradesForLevel, getPointsForGrade,
   getGradeIndex, DAYS_OF_WEEK,
   type LCSubject,
 } from './subjectData';
+import { NorthStar } from '../types';
+import NorthStarOnboarding from './NorthStarOnboarding';
 
 const MotionDiv = motion.div as any;
 const MotionP = motion.p as any;
@@ -19,22 +21,23 @@ const MotionSpan = motion.span as any;
 
 interface OnboardingProps {
   userName: string;
-  onComplete: (profile: StudentSubjectProfile) => void;
+  onComplete: (profile: StudentSubjectProfile, northStar?: NorthStar) => void;
   onSkip: () => void;
 }
 
-type Step = 1 | 2 | 3 | 4 | 5 | 6;
-const TOTAL_STEPS = 6;
+type Step = 1 | 2 | 3 | 4 | 5 | 6 | 7;
+const TOTAL_STEPS = 7;
 
 // ─── Step-specific ambient blob colors ──────────────────────────────────────
 
 const STEP_BLOBS: Record<Step, { a: string; b: string; c: string }> = {
   1: { a: 'bg-[#CC785C]/[0.07]', b: 'bg-yellow-300/[0.09]', c: 'bg-orange-200/[0.08]' },
-  2: { a: 'bg-blue-300/[0.08]', b: 'bg-emerald-300/[0.07]', c: 'bg-purple-200/[0.06]' },
-  3: { a: 'bg-emerald-300/[0.08]', b: 'bg-amber-300/[0.07]', c: 'bg-blue-200/[0.06]' },
-  4: { a: 'bg-amber-300/[0.09]', b: 'bg-[#CC785C]/[0.07]', c: 'bg-yellow-200/[0.08]' },
-  5: { a: 'bg-rose-300/[0.08]', b: 'bg-orange-200/[0.07]', c: 'bg-pink-200/[0.06]' },
-  6: { a: 'bg-emerald-300/[0.09]', b: 'bg-[#CC785C]/[0.07]', c: 'bg-amber-200/[0.06]' },
+  2: { a: 'bg-purple-300/[0.08]', b: 'bg-[#CC785C]/[0.07]', c: 'bg-amber-200/[0.06]' },
+  3: { a: 'bg-blue-300/[0.08]', b: 'bg-emerald-300/[0.07]', c: 'bg-purple-200/[0.06]' },
+  4: { a: 'bg-emerald-300/[0.08]', b: 'bg-amber-300/[0.07]', c: 'bg-blue-200/[0.06]' },
+  5: { a: 'bg-amber-300/[0.09]', b: 'bg-[#CC785C]/[0.07]', c: 'bg-yellow-200/[0.08]' },
+  6: { a: 'bg-rose-300/[0.08]', b: 'bg-orange-200/[0.07]', c: 'bg-pink-200/[0.06]' },
+  7: { a: 'bg-emerald-300/[0.09]', b: 'bg-[#CC785C]/[0.07]', c: 'bg-amber-200/[0.06]' },
 };
 
 // ─── Subject Color Map (literal Tailwind strings for CDN) ───────────────────
@@ -89,10 +92,10 @@ const DAY_SHORTS: Record<string, string> = {
 // ─── Feature preview chips for welcome step ─────────────────────────────────
 
 const PREVIEW_CHIPS = [
+  { icon: Star, label: 'Your North Star' },
   { icon: BookOpen, label: 'Your Subjects' },
   { icon: Target, label: 'Grade Targets' },
   { icon: CalendarDays, label: 'Exam Countdown' },
-  { icon: Clock, label: 'Study Schedule' },
 ];
 
 // ─── Animated number counter ────────────────────────────────────────────────
@@ -137,6 +140,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
   const [subjectConfigs, setSubjectConfigs] = useState<Record<string, { level: Level; currentGrade: Grade; targetGrade: Grade }>>({});
 
   const [examDate, setExamDate] = useState(getDefaultExamDate());
+
+  // North Star
+  const [northStarData, setNorthStarData] = useState<NorthStar | null>(null);
 
   // Rest days
   const [restDays, setRestDays] = useState<Set<string>>(new Set());
@@ -256,16 +262,17 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
   const canProceed = () => {
     switch (step) {
       case 1: return true;
-      case 2: return selectedSubjects.size > 0;
-      case 3: {
+      case 2: return northStarData !== null;
+      case 3: return selectedSubjects.size > 0;
+      case 4: {
         for (const name of selectedSubjects) {
           if (!subjectConfigs[name]) return false;
         }
         return true;
       }
-      case 4: return examDate.length > 0 && getDaysUntil(examDate) > 0;
-      case 5: return restDays.size < 7;
-      case 6: return true;
+      case 5: return examDate.length > 0 && getDaysUntil(examDate) > 0;
+      case 6: return restDays.size < 7;
+      case 7: return true;
       default: return false;
     }
   };
@@ -409,9 +416,19 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 2: Select Subjects */}
+            {/* Step 2: North Star */}
             {step === 2 && (
               <MotionDiv key="step2" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+                <NorthStarOnboarding
+                  onComplete={(ns) => { setNorthStarData(ns); goNext(); }}
+                  initialData={northStarData}
+                />
+              </MotionDiv>
+            )}
+
+            {/* Step 3: Select Subjects */}
+            {step === 3 && (
+              <MotionDiv key="step3" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Select Your Subjects</h2>
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
                   Tap to select your Leaving Cert subjects. <span className="font-semibold text-[#CC785C]">{selectedSubjects.size} selected</span>
@@ -446,9 +463,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 3: Grade Configuration */}
-            {step === 3 && (
-              <MotionDiv key="step3" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+            {/* Step 4: Grade Configuration */}
+            {step === 4 && (
+              <MotionDiv key="step4" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Set Your Grades</h2>
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-2">
                   For each subject, tap your <span className="font-bold text-zinc-700 dark:text-zinc-200">current</span> grade, then your <span className="font-bold text-purple-600 dark:text-purple-400">target</span>.
@@ -551,9 +568,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 4: Exam Date — glass card */}
-            {step === 4 && (
-              <MotionDiv key="step4" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+            {/* Step 5: Exam Date — glass card */}
+            {step === 5 && (
+              <MotionDiv key="step5" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <div className="flex items-center justify-center min-h-[50vh]">
                   <div className="text-center w-full max-w-md mx-auto p-10 rounded-3xl bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl border border-white/40 dark:border-white/[0.08] shadow-[0_8px_60px_rgba(0,0,0,0.06)] dark:shadow-[0_8px_60px_rgba(0,0,0,0.3)]">
                     <motion.div
@@ -605,9 +622,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 5: Rest Days — glass card */}
-            {step === 5 && (
-              <MotionDiv key="step5" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+            {/* Step 6: Rest Days — glass card */}
+            {step === 6 && (
+              <MotionDiv key="step6" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <div className="flex items-center justify-center min-h-[50vh]">
                   <div className="text-center w-full max-w-lg mx-auto p-10 rounded-3xl bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl border border-white/40 dark:border-white/[0.08] shadow-[0_8px_60px_rgba(0,0,0,0.06)] dark:shadow-[0_8px_60px_rgba(0,0,0,0.3)]">
                     <motion.div
@@ -673,9 +690,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 6: Summary */}
-            {step === 6 && (
-              <MotionDiv key="step6" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+            {/* Step 7: Summary */}
+            {step === 7 && (
+              <MotionDiv key="step7" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Your Study Profile</h2>
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Here's a summary of everything you've set up.</p>
 
@@ -766,30 +783,32 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
         </div>
       </div>
 
-      {/* ─── Fixed Footer: Back / Continue ─── */}
-      <div className="shrink-0 border-t border-zinc-200/50 dark:border-white/[0.06] px-6 py-4 relative z-10 bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-sm">
-        <div className="max-w-2xl mx-auto flex items-center justify-between">
-          {step > 1 ? (
-            <button onClick={goBack} className="flex items-center gap-1.5 text-sm font-medium text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
-              <ArrowLeft size={14} /> Back
-            </button>
-          ) : <div />}
+      {/* ─── Fixed Footer: Back / Continue (hidden on step 2 — North Star has its own nav) ─── */}
+      {step !== 2 && (
+        <div className="shrink-0 border-t border-zinc-200/50 dark:border-white/[0.06] px-6 py-4 relative z-10 bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-sm">
+          <div className="max-w-2xl mx-auto flex items-center justify-between">
+            {step > 1 ? (
+              <button onClick={goBack} className="flex items-center gap-1.5 text-sm font-medium text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
+                <ArrowLeft size={14} /> Back
+              </button>
+            ) : <div />}
 
-          {step < TOTAL_STEPS ? (
-            <button onClick={goNext} disabled={!canProceed()}
-              className="flex items-center gap-2 px-7 py-2.5 bg-[#CC785C] text-white font-semibold text-sm rounded-full hover:bg-[#B56A50] transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-[#CC785C]/20"
-            >
-              {step === 1 ? 'Get Started' : 'Continue'} <ArrowRight size={14} />
-            </button>
-          ) : (
-            <button onClick={() => onComplete(buildProfile())}
-              className="flex items-center gap-2 px-7 py-2.5 bg-[#CC785C] text-white font-semibold text-sm rounded-full hover:bg-[#B56A50] transition-colors shadow-lg shadow-[#CC785C]/20"
-            >
-              <Check size={14} /> Save & Start Learning
-            </button>
-          )}
+            {step < TOTAL_STEPS ? (
+              <button onClick={goNext} disabled={!canProceed()}
+                className="flex items-center gap-2 px-7 py-2.5 bg-[#CC785C] text-white font-semibold text-sm rounded-full hover:bg-[#B56A50] transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-[#CC785C]/20"
+              >
+                {step === 1 ? 'Get Started' : 'Continue'} <ArrowRight size={14} />
+              </button>
+            ) : (
+              <button onClick={() => onComplete(buildProfile(), northStarData ?? undefined)}
+                className="flex items-center gap-2 px-7 py-2.5 bg-[#CC785C] text-white font-semibold text-sm rounded-full hover:bg-[#B56A50] transition-colors shadow-lg shadow-[#CC785C]/20"
+              >
+                <Check size={14} /> Save & Start Learning
+              </button>
+            )}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

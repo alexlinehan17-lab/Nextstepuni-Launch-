@@ -13,6 +13,9 @@ import {
   Zap, Brain, Target, Shield, Compass, Star, Hash
 } from 'lucide-react';
 import { CategoryType } from './KnowledgeTree';
+import { NorthStar } from '../types';
+import { type StudentSubjectProfile } from './subjectData';
+import NorthStarCallout from './NorthStarCallout';
 
 // FIX: Cast motion components to any to bypass broken type definitions
 const MotionDiv = motion.div as any;
@@ -41,6 +44,8 @@ interface LibraryProps {
   onSelectCourse: (courseId: string) => void;
   onBack: () => void;
   userProgress: UserProgress;
+  northStar?: NorthStar | null;
+  studentProfile?: StudentSubjectProfile | null;
 }
 
 export interface BentoModuleTileProps {
@@ -149,7 +154,7 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
   );
 };
 
-export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse, onBack, userProgress }) => {
+export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse, onBack, userProgress, northStar, studentProfile }) => {
   const calculateCategoryProgress = () => {
     if (courses.length === 0) return 0;
     const totalCourses = courses.length;
@@ -183,7 +188,14 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
       </header>
 
       <main className="flex-grow w-full max-w-7xl px-6 pt-24 relative z-10">
-        
+
+        {/* North Star Callout */}
+        {northStar && (
+          <div className="mb-4">
+            <NorthStarCallout northStar={northStar} variant="full" />
+          </div>
+        )}
+
         {/* Bento Grid Command Center */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 auto-rows-fr">
           

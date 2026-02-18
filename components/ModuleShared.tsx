@@ -82,9 +82,10 @@ export const ReadingSection = ({ title, eyebrow, icon: Icon, children, theme }: 
 interface MicroCommitmentProps {
   children?: React.ReactNode;
   theme: ModuleTheme;
+  northStarNudge?: string;
 }
 
-export const MicroCommitment = ({ children, theme }: MicroCommitmentProps) => (
+export const MicroCommitment = ({ children, theme, northStarNudge }: MicroCommitmentProps) => (
   <div className={`my-12 border-l-[3px] ${theme.microBorder} bg-white dark:bg-zinc-900 rounded-r-xl p-8`}>
     <div className="flex items-start gap-4">
       <div className={`w-9 h-9 rounded-lg ${theme.microIconBg} text-white flex items-center justify-center shrink-0`}>
@@ -95,6 +96,12 @@ export const MicroCommitment = ({ children, theme }: MicroCommitmentProps) => (
         <div className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
           {children}
         </div>
+        {northStarNudge && (
+          <p className="text-xs italic text-zinc-400 dark:text-zinc-500 mt-3">
+            <Zap size={10} className="inline -mt-0.5 mr-1 text-[#CC785C]" />
+            Remember: {northStarNudge}
+          </p>
+        )}
       </div>
     </div>
   </div>

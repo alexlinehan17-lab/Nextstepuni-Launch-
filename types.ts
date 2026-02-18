@@ -96,3 +96,22 @@ export interface UserSettings {
 
   defaultWorkMinutes: number;
 }
+
+export type NorthStarCategory =
+  | 'independence' | 'family-community' | 'career-craft'
+  | 'college-learning' | 'prove-myself' | 'options-freedom';
+
+export interface NorthStarVisionCard {
+  id: string;
+  label: string;
+  icon: string;
+  category: NorthStarCategory;
+}
+
+export interface NorthStar {
+  category: NorthStarCategory;
+  statement: string;
+  visionBoard: string[];
+  createdAt: string;
+  updatedAt: string;
+}

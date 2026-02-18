@@ -14,6 +14,9 @@ import { blueTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useModuleResponses } from '../hooks/useModuleResponses';
+import { useNorthStar } from '../hooks/useNorthStar';
+import NorthStarCallout from './NorthStarCallout';
+import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
 
 const theme = blueTheme;
 
@@ -108,6 +111,7 @@ const MindsetSorter = () => {
 
 const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const { responses, saveResponse, isLoaded } = useModuleResponses('agency-protocol');
+  const { northStar } = useNorthStar();
   const [futureSelf, setFutureSelf] = useState('');
   const [dailyAction, setDailyAction] = useState('');
   const [battlePlanItems, setBattlePlanItems] = useState([
@@ -208,6 +212,7 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
 
           {activeSection === 3 && (
             <ReadingSection title="Roadblocks & Potholes: When the Journey is Unfair." eyebrow="Step 4" icon={ShieldAlert} theme={theme}>
+              {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'agency-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
               <p>Let's be real: not all roads are perfectly paved. If you're from a disadvantaged area, you face real <Highlight description="The real-world stuff that makes school harder for some people — things like fewer resources, less support at home, or schools that are stretched thin. None of it is your fault, but it is part of your road." theme={theme}>Structural Conditions</Highlight>. It's easy to see these roadblocks and think the journey is impossible for you.</p>
               <p>This creates the most dangerous trap in education: interpreting <Highlight description="A mental trap where your brain confuses 'this is hard' with 'this isn't for me.' The work is supposed to be hard — that's what makes it worth something. Hard doesn't mean impossible." theme={theme}>Difficulty as Impossibility</Highlight>. The moment the work gets hard, your brain defaults to: "See? This isn't for people like me." The key is to install a high-tech suspension system in your brain: a conscious, deliberate reframe. This is a skill, like learning to change gear.</p>
               <MicroCommitment theme={theme}>

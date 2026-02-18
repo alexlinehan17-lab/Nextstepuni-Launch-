@@ -13,6 +13,9 @@ import { ModuleProgress } from '../types';
 import { roseTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useNorthStar } from '../hooks/useNorthStar';
+import NorthStarCallout from './NorthStarCallout';
+import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
 
 const theme = roseTheme;
 
@@ -288,6 +291,7 @@ const IcebergInteractive = () => {
 
 // --- MODULE COMPONENT ---
 const SelfEfficacyModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const { northStar } = useNorthStar();
   const sections = [
     { id: 'belief-barrier', title: 'The Belief Barrier', eyebrow: '01 // Your Secret Engine', icon: Brain },
     { id: 'four-sources', title: 'How Belief is Built', eyebrow: '02 // The 4 Sources', icon: Target },
@@ -337,6 +341,7 @@ const SelfEfficacyModule: React.FC<{ onBack: () => void; progress: ModuleProgres
           )}
            {activeSection === 3 && (
             <ReadingSection title="The Success Iceberg." eyebrow="Step 4" icon={Eye} theme={theme}>
+              {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'self-efficacy-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
               <p>This brings us to the big idea of this whole module: stop just admiring other people's results and start figuring out how they actually got there. Success is like an iceberg. People only see the tip — the good grades, the confidence, the final result. They don't see the massive, messy reality underneath.</p>
               <p>The underwater part is the process: the failures, the wrong turns, the doubt, the boring routines, the asking for help. To build your own belief, you need to get good at spotting this invisible part. Start noticing the <Highlight description="The behind-the-scenes thinking that good students do without even realising it — things like noticing when something isn't working and switching approach. You can learn to do this too." theme={theme}>Metacognitive Regulation</Highlight> — the small, smart moves people make when they get stuck.</p>
               <IcebergInteractive />

@@ -7,9 +7,12 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Sprout, Zap, Rocket, Target, FlaskConical,
-  Layout, ArrowRight, Sparkles, Beaker, BarChart3, Compass
+  Layout, ArrowRight, Sparkles, Beaker, BarChart3, Compass,
+  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon
 } from 'lucide-react';
+import { getAvatarUrl } from '../components/Auth';
 import { CourseData, BentoModuleTile } from './Library';
+import { UserSettings } from '../types';
 
 // FIX: Cast motion components to any to bypass broken type definitions
 const MotionDiv = motion.div as any;
@@ -35,55 +38,76 @@ interface KnowledgeTreeProps {
   allCourses: CourseData[];
   categoryTitles: Record<CategoryType, string>;
   userProgress: UserProgress;
+  userName?: string;
+  userAvatarSeed?: string;
+  onLogout: () => void;
+  onOpenSettings: () => void;
+  onOpenPassport: () => void;
+  settings: UserSettings;
+  updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void;
+  completedCount: number;
+  totalCount: number;
 }
 
-const ActivityRing = ({ 
-  progress, 
-  size = 52, 
-  strokeWidth = 4, 
-  color = "#3b82f6" 
-}: { 
-  progress: number, 
-  size?: number, 
-  strokeWidth?: number, 
-  color?: string 
+const ActivityRing = ({
+  progress,
+  size = 52,
+  strokeWidth = 4,
+  color = "#3b82f6"
+}: {
+  progress: number,
+  size?: number,
+  strokeWidth?: number,
+  color?: string
 }) => {
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - (progress / 100) * circumference;
+  const isZero = progress === 0;
+  const isComplete = progress >= 100;
 
   return (
     <div className="relative flex items-center justify-center shrink-0" style={{ width: size, height: size }}>
       <svg className="w-full h-full -rotate-90 overflow-visible" viewBox={`0 0 ${size} ${size}`}>
+        {/* Track ring — accent-tinted instead of plain grey */}
         <circle
-          cx={size / 2}
-          cy={size / 2}
-          r={radius}
-          stroke="currentColor"
-          strokeWidth={strokeWidth}
-          fill="transparent"
-          className="text-zinc-100 dark:text-white/5"
-        />
-        <MotionCircle
           cx={size / 2}
           cy={size / 2}
           r={radius}
           stroke={color}
           strokeWidth={strokeWidth}
           fill="transparent"
-          strokeDasharray={circumference}
-          initial={{ strokeDashoffset: circumference }}
-          whileInView={{ strokeDashoffset: offset }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
-          strokeLinecap="round"
+          opacity={0.1}
         />
+        {/* Progress arc with glow */}
+        {!isZero && (
+          <MotionCircle
+            cx={size / 2}
+            cy={size / 2}
+            r={radius}
+            stroke={color}
+            strokeWidth={strokeWidth + 0.5}
+            fill="transparent"
+            strokeDasharray={circumference}
+            initial={{ strokeDashoffset: circumference }}
+            whileInView={{ strokeDashoffset: offset }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
+            strokeLinecap="round"
+            style={{ filter: `drop-shadow(0 0 4px ${color}40)` }}
+          />
+        )}
       </svg>
       <div className="absolute flex items-baseline justify-center leading-none">
-        <span className="text-[13px] font-semibold text-zinc-900 dark:text-white">
-          {Math.round(progress)}
-        </span>
-        <span className="text-[8px] font-semibold text-zinc-400 dark:text-white/30 ml-px">%</span>
+        {isComplete ? (
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3.5 8.5L6.5 11.5L12.5 4.5" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        ) : isZero ? (
+          <span className="text-[10px] font-semibold tracking-wide" style={{ color }}>Start</span>
+        ) : (
+          <span className="text-[13px] font-bold" style={{ color }}>{Math.round(progress)}</span>
+        )}
       </div>
     </div>
   );
@@ -97,6 +121,7 @@ interface BentoTileProps {
   onClick: () => void,
   accentHex: string,
   progress?: number,
+  hideProgress?: boolean,
   className?: string,
   delay?: number
 }
@@ -109,6 +134,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
   onClick,
   accentHex,
   progress = 0,
+  hideProgress = false,
   className = "",
   delay = 0
 }) => {
@@ -118,19 +144,29 @@ const BentoTile: React.FC<BentoTileProps> = ({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay, ease: [0.16, 1, 0.3, 1] }}
       onClick={onClick}
-      className={`group relative overflow-hidden rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 cursor-pointer transition-all duration-300 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-md ${className}`}
+      className={`group relative overflow-hidden rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 cursor-pointer transition-all duration-300 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-lg hover:-translate-y-1 ${className}`}
     >
-      <div className="p-8 h-full flex flex-col justify-between">
+      {/* Accent top bar — always visible when started, reveals on hover otherwise */}
+      <div
+        className={`absolute top-0 left-0 right-0 h-[3px] transition-opacity duration-300 ${!hideProgress && progress > 0 ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}
+        style={{ backgroundColor: accentHex }}
+      />
+      {/* Hover glow */}
+      <div
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+        style={{ background: `radial-gradient(ellipse at 50% 0%, ${accentHex}08 0%, transparent 70%)` }}
+      />
+      <div className="relative p-8 h-full flex flex-col justify-between">
         <div>
           <div className="flex items-center justify-between mb-8">
             <div
-              className="w-12 h-12 rounded-xl flex items-center justify-center"
+              className="w-12 h-12 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
               style={{ color: accentHex, backgroundColor: accentHex + '12' }}
             >
               <Icon size={24} strokeWidth={1.5} />
             </div>
 
-            <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-0.5">
                <ArrowRight size={18} className="text-zinc-400 dark:text-zinc-500" />
             </div>
           </div>
@@ -145,19 +181,29 @@ const BentoTile: React.FC<BentoTileProps> = ({
           )}
         </div>
 
-        <div className="mt-8 flex items-center justify-between gap-6 pt-6 border-t border-zinc-100 dark:border-zinc-800">
-            <div className="flex flex-col">
-              <span className="text-[10px] font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Progress</span>
-            </div>
-            <ActivityRing progress={progress} color={accentHex} />
-        </div>
+        {!hideProgress && (
+          <div className="mt-8 flex items-center justify-between gap-6 pt-6 border-t border-zinc-100 dark:border-zinc-800">
+              <div className="flex flex-col">
+                <span className="text-[10px] font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Progress</span>
+              </div>
+              <ActivityRing progress={progress} color={accentHex} />
+          </div>
+        )}
       </div>
     </MotionDiv>
   );
 };
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, allCourses, onSelectModule, categoryTitles, userProgress }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, settings, updateSetting, completedCount, totalCount }) => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const sidebarItems = [
+    { icon: Home, label: 'Home', onClick: () => {}, active: true },
+    { icon: BarChart3, label: 'Dashboard', onClick: onGoToDashboard, active: false },
+    { icon: Compass, label: 'Learning Paths', onClick: onGoToLearningPaths, active: false },
+    { icon: Rocket, label: 'Innovation Zone', onClick: onGoToInnovationZone, active: false },
+  ];
   
   const getCategoryProgress = (category: CategoryType) => {
     const categoryCourses = allCourses.filter(c => c.category === category);
@@ -203,7 +249,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     },
      {
       id: 'subject-specific-science',
-      title: "Subject Specific Science",
+      title: "Decoding the Subjects",
       subtitle: "Module 04",
       description: "Subject-by-subject deconstruction of the Leaving Cert exams. The marking schemes, the hidden curriculum, and the strategies that unlock top grades in each subject.",
       icon: Beaker,
@@ -241,17 +287,155 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     : [];
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 overflow-x-hidden relative flex flex-col items-center pt-16 md:pt-32 pb-32 transition-colors duration-500 selection:bg-[#CC785C]/20">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 overflow-x-hidden relative transition-colors duration-500 selection:bg-[#CC785C]/20">
+      {/* Sidebar — desktop only */}
+      <aside
+        className={`hidden md:flex flex-col fixed top-0 left-0 h-full z-40 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-r border-zinc-200 dark:border-zinc-800 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
+      >
+        {/* Avatar row — click to toggle */}
+        <button
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+          className="flex items-center gap-3 px-3 py-4 w-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+        >
+          <div className="w-9 h-9 rounded-lg overflow-hidden shrink-0 bg-zinc-200 dark:bg-zinc-700 flex items-center justify-center">
+            {userAvatarSeed ? (
+              <img src={getAvatarUrl(userAvatarSeed)} alt="Avatar" className="w-full h-full object-cover" />
+            ) : (
+              <User size={18} strokeWidth={1.5} className="text-zinc-400 dark:text-zinc-500" />
+            )}
+          </div>
+          <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+            {userName || 'Student'}
+          </span>
+        </button>
+
+        {/* Nav items */}
+        <nav className="flex-1 flex flex-col gap-1 px-2 mt-2">
+          {sidebarItems.map((item) => (
+            <button
+              key={item.label}
+              onClick={item.onClick}
+              className={`flex items-center gap-3 px-2.5 py-2 rounded-lg transition-colors ${item.active ? 'bg-zinc-100 dark:bg-zinc-800' : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'}`}
+            >
+              <div className="shrink-0 flex items-center justify-center w-[18px]">
+                <item.icon size={18} strokeWidth={1.5} className="text-zinc-600 dark:text-zinc-400" />
+              </div>
+              <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+                {item.label}
+              </span>
+            </button>
+          ))}
+        </nav>
+
+        {/* User actions */}
+        <div className="border-t border-zinc-200 dark:border-zinc-800 mx-2 pt-2 flex flex-col gap-1">
+          {/* Study Passport */}
+          <button
+            onClick={onOpenPassport}
+            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+          >
+            <div className="shrink-0 flex items-center justify-center w-[18px]">
+              <Award size={18} strokeWidth={1.5} className="text-purple-500" />
+            </div>
+            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              Study Passport
+            </span>
+            <span className={`text-xs font-bold text-zinc-400 dark:text-zinc-500 whitespace-nowrap transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              {completedCount}/{totalCount}
+            </span>
+          </button>
+
+          {/* Theme toggle */}
+          <button
+            onClick={() => updateSetting('darkMode', !settings.darkMode)}
+            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+          >
+            <div className="shrink-0 flex items-center justify-center w-[18px]">
+              {settings.darkMode ? (
+                <Moon size={18} strokeWidth={1.5} className="text-zinc-600 dark:text-zinc-400" />
+              ) : (
+                <Sun size={18} strokeWidth={1.5} className="text-amber-400" />
+              )}
+            </div>
+            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              Theme
+            </span>
+            <span className={`transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              {settings.darkMode ? (
+                <Sun size={14} className="text-amber-400" />
+              ) : (
+                <Moon size={14} className="text-zinc-500" />
+              )}
+            </span>
+          </button>
+
+          {/* Settings */}
+          <button
+            onClick={onOpenSettings}
+            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+          >
+            <div className="shrink-0 flex items-center justify-center w-[18px]">
+              <Settings size={18} strokeWidth={1.5} className="text-zinc-500" />
+            </div>
+            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              Settings
+            </span>
+          </button>
+
+          {/* Log Out */}
+          <button
+            onClick={onLogout}
+            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+          >
+            <div className="shrink-0 flex items-center justify-center w-[18px]">
+              <LogOut size={18} strokeWidth={1.5} className="text-rose-500" />
+            </div>
+            <span className={`text-sm font-medium text-rose-500 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              Log Out
+            </span>
+          </button>
+        </div>
+
+        {/* Collapse toggle */}
+        <button
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+          className="flex items-center gap-3 px-2.5 py-3 mx-2 mb-3 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+        >
+          <div className={`shrink-0 flex items-center justify-center w-[18px] transition-transform duration-300 ${sidebarOpen ? '' : 'rotate-180'}`}>
+            <PanelLeft size={18} strokeWidth={1.5} className="text-zinc-400 dark:text-zinc-500" />
+          </div>
+          <span className={`text-sm font-medium text-zinc-400 dark:text-zinc-500 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+            Collapse
+          </span>
+        </button>
+      </aside>
+
+      {/* Main content */}
+      <div className={`flex-1 flex flex-col items-center pt-8 md:pt-16 pb-32 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]'}`}>
       <div className="w-full max-w-7xl px-6">
-        <header className="text-center mb-20">
-          <div className="w-12 h-1 bg-[#CC785C] rounded-full mx-auto mb-6" />
-          <h1 className="font-serif text-5xl md:text-7xl text-zinc-900 dark:text-white tracking-tight leading-none font-semibold">
+        <MotionDiv
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-12"
+        >
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#CC785C] mb-3">
             Learning Lab
-          </h1>
-          <p className="max-w-xl mx-auto mt-5 text-zinc-500 dark:text-zinc-400 leading-relaxed">
-            A science-backed curriculum designed to give you an unfair advantage in your final school exams. Select a module to begin.
           </p>
-        </header>
+          <h1 className="font-serif text-4xl md:text-5xl text-zinc-900 dark:text-white tracking-tight leading-tight font-semibold">
+            {(() => { const h = new Date().getHours(); return h < 12 ? 'Good morning.' : h < 18 ? 'Good afternoon.' : 'Good evening.'; })()}
+          </h1>
+          <p className="mt-2 text-zinc-400 dark:text-zinc-500 text-sm">
+            {(() => {
+              const completed = allCourses.filter(c => { const p = userProgress[c.id]; return p && p.unlockedSection >= c.sectionsCount - 1; }).length;
+              const inProgress = allCourses.filter(c => { const p = userProgress[c.id]; return p && p.unlockedSection > 0 && p.unlockedSection < c.sectionsCount - 1; }).length;
+              if (completed === allCourses.length) return 'You\'ve completed the full curriculum. Remarkable.';
+              if (completed > 0) return `You've completed ${completed} of ${allCourses.length} modules.`;
+              if (inProgress > 0) return `You have ${inProgress} module${inProgress !== 1 ? 's' : ''} in progress.`;
+              return 'Pick a module to start your journey.';
+            })()}
+          </p>
+        </MotionDiv>
 
         <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
           {modules.map((mod, i) => (
@@ -277,6 +461,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
               onClick={onGoToInnovationZone}
               className="md:col-span-6"
               delay={modules.length * 0.1}
+              hideProgress
             />
            <BentoTile
               title="My Progress"
@@ -287,6 +472,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
               onClick={onGoToDashboard}
               className="md:col-span-3"
               delay={(modules.length + 1) * 0.1}
+              hideProgress
             />
            <BentoTile
               title="Learning Paths"
@@ -297,6 +483,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
               onClick={onGoToLearningPaths}
               className="md:col-span-3"
               delay={(modules.length + 2) * 0.1}
+              hideProgress
             />
         </div>
         
@@ -343,6 +530,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
             </AnimatePresence>
         </div>
 
+      </div>
       </div>
     </div>
   );

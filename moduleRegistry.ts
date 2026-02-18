@@ -12,6 +12,14 @@ type ModuleComponent = React.LazyExoticComponent<React.FC<{
   onProgressUpdate: (progress: ModuleProgress) => void;
 }>>;
 
+// Factory for data-driven subject modules (all share a single SubjectModule component)
+function createSubjectModule(subjectId: string): ModuleComponent {
+  return lazy(async () => {
+    const { createSubjectModuleComponent } = await import('./components/SubjectModule');
+    return { default: createSubjectModuleComponent(subjectId) as any };
+  });
+}
+
 export const InnovationZone = lazy(() => import('./components/InnovationZone'));
 
 export const moduleComponents: { [key: string]: ModuleComponent } = {
@@ -67,4 +75,34 @@ export const moduleComponents: { [key: string]: ModuleComponent } = {
   'cognitive-load-protocol': lazy(() => import('./components/TheCognitiveLoadModule')),
   'implementation-protocol': lazy(() => import('./components/TheImplementationProtocolModule')),
   'context-effect-protocol': lazy(() => import('./components/TheContextEffectModule')),
+  // Per-subject modules (data-driven via SubjectModule.tsx)
+  'subject-english-protocol': createSubjectModule('english'),
+  'subject-irish-protocol': createSubjectModule('irish'),
+  'subject-french-protocol': createSubjectModule('french'),
+  'subject-german-protocol': createSubjectModule('german'),
+  'subject-spanish-protocol': createSubjectModule('spanish'),
+  'subject-italian-protocol': createSubjectModule('italian'),
+  'subject-japanese-protocol': createSubjectModule('japanese'),
+  'subject-mathematics-protocol': createSubjectModule('mathematics'),
+  'subject-applied-maths-protocol': createSubjectModule('applied-maths'),
+  'subject-physics-protocol': createSubjectModule('physics'),
+  'subject-chemistry-protocol': createSubjectModule('chemistry'),
+  'subject-biology-protocol': createSubjectModule('biology'),
+  'subject-computer-science-protocol': createSubjectModule('computer-science'),
+  'subject-ag-science-protocol': createSubjectModule('ag-science'),
+  'subject-accounting-protocol': createSubjectModule('accounting'),
+  'subject-business-protocol': createSubjectModule('business'),
+  'subject-economics-protocol': createSubjectModule('economics'),
+  'subject-history-protocol': createSubjectModule('history'),
+  'subject-geography-protocol': createSubjectModule('geography'),
+  'subject-politics-and-society-protocol': createSubjectModule('politics-and-society'),
+  'subject-religious-education-protocol': createSubjectModule('religious-education'),
+  'subject-classical-studies-protocol': createSubjectModule('classical-studies'),
+  'subject-home-economics-protocol': createSubjectModule('home-economics'),
+  'subject-construction-studies-protocol': createSubjectModule('construction-studies'),
+  'subject-engineering-protocol': createSubjectModule('engineering'),
+  'subject-dcg-protocol': createSubjectModule('dcg'),
+  'subject-technology-protocol': createSubjectModule('technology'),
+  'subject-art-protocol': createSubjectModule('art'),
+  'subject-music-protocol': createSubjectModule('music'),
 };

@@ -10,6 +10,9 @@ import { ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useNorthStar } from '../hooks/useNorthStar';
+import NorthStarCallout from './NorthStarCallout';
+import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
 
 const theme = redTheme;
 
@@ -381,6 +384,8 @@ const LeavingCertStrategyModule: React.FC<{ onBack: () => void; progress: Module
     { id: 'exam-day', title: 'Exam Day: Your Game Plan', eyebrow: '06 // On the Day', icon: HeartPulse },
   ];
 
+  const { northStar } = useNorthStar();
+
   return (
     <ModuleLayout
       moduleNumber="01"
@@ -397,6 +402,7 @@ const LeavingCertStrategyModule: React.FC<{ onBack: () => void; progress: Module
         <>
           {activeSection === 0 && (
             <ReadingSection title="How the Points Game Works." eyebrow="Step 1" icon={Calculator} theme={theme}>
+              {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'leaving-cert-strategy-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
               <p>Here's the thing nobody spells out clearly enough: the Leaving Cert is a points game. Working hard matters, but working <Highlight description="It's not just about hours at the desk -- it's about putting your energy into the things that will actually move your points the most." theme={theme}>smart</Highlight> matters more. Once you know how the scoring actually works, you can make way better decisions about where to focus.</p>
               <p>There are three rules you absolutely need to know: 1) The <Highlight description="Only your six best results count. Your seventh subject is basically a safety net -- if one exam goes badly, it gets dropped." theme={theme}>"Best Six" Rule</Highlight>, 2) The 25 <Highlight description="If you get a H6 or higher in Higher Level Maths, you get 25 extra points on top. That makes even a low pass in HL Maths worth more than top marks in many other subjects." theme={theme}>Bonus Points</Highlight> for Maths, and 3) The <Highlight description="You get 37 points just for scraping a H7 (30-39%) at Higher Level. That means trying Higher Level is way less risky than most people think." theme={theme}>H7 Safety Net</Highlight>. Get your head around these three things and you're already ahead of most students.</p>
               <PointsCalculator />

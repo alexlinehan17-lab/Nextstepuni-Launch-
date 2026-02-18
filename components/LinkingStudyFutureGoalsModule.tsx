@@ -14,6 +14,9 @@ import { roseTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useModuleResponses } from '../hooks/useModuleResponses';
+import { useNorthStar } from '../hooks/useNorthStar';
+import NorthStarCallout from './NorthStarCallout';
+import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
 
 const theme = roseTheme;
 
@@ -206,6 +209,7 @@ const TransferableSkillsMatrix = () => {
 // --- MODULE COMPONENT ---
 const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const { responses, saveResponse, isLoaded } = useModuleResponses('linking-study-future-goals');
+  const { northStar } = useNorthStar();
 
   const sections = [
     { id: 'friction-point', title: 'The "Why Bother?" Problem', eyebrow: '01 // When Motivation Drops', icon: Wind },
@@ -224,6 +228,7 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
         <>
           {activeSection === 0 && (
             <ReadingSection title="The 'Why Bother?' Problem." eyebrow="Step 1" icon={Wind} theme={theme}>
+              {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'linking-study-future-goals-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
               <p>The feeling of "why bother?" isn't laziness. It's your brain doing a quick calculation: does the effort of this task feel worth it? This idea is called <Highlight description="Basically, your motivation depends on two things: whether you think you can actually do the task, and whether you think it's worth doing. If either one drops, your motivation tanks." theme={theme}>Expectancy-Value Theory (EVT)</Highlight>. Motivation collapses when the <Highlight description="All the stuff that makes a task feel painful -- the boredom, the stress, the time it takes away from things you'd rather be doing." theme={theme}>Cost</Highlight> feels higher than the <Highlight description="How useful a subject or task feels for what you actually want to do with your life. This is the strongest type of motivation for schoolwork because it doesn't fade as fast as other kinds." theme={theme}>Utility Value</Highlight>.</p>
               <p>In the Leaving Cert, the "points race" often disconnects the work you're doing from any real-world purpose, which makes its Utility Value feel like zero. When that happens, everything feels like pointless drudgery, and the Cost becomes unbearable. This module is about flipping that equation back in your favour.</p>
               <PersonalStory name="Alex" role="Founder, NextStepUni">

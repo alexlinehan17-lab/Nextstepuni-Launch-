@@ -12,6 +12,9 @@ import { ModuleProgress } from '../types';
 import { emeraldTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useNorthStar } from '../hooks/useNorthStar';
+import NorthStarCallout from './NorthStarCallout';
+import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
 
 const theme = emeraldTheme;
 
@@ -325,6 +328,7 @@ const CortisolSimulator = () => {
 
 // --- MODULE COMPONENT ---
 const HopeProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const { northStar } = useNorthStar();
   const sections = [
     { id: 'schematic', title: 'The Schematic: De-Coding Hope', eyebrow: '01 // The Blueprint', icon: BookOpen },
     { id: 'circuit-board', title: "Your Brain's Circuit Board", eyebrow: '02 // The Hardware', icon: Cpu },
@@ -380,6 +384,7 @@ const HopeProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgres
           )}
           {activeSection === 3 && (
             <ReadingSection title="Designing the Wires: The Art of 'Waypower'." eyebrow="Step 4" icon={Waypoints} theme={theme}>
+              {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'hope-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
               <p>If Agency is the raw power, Pathways thinking is the wiring that directs it. It's the most important — and for teens, the hardest — part of the Hope Circuit, because it relies on the part of your brain that's still being built.</p>
               <p>Good waypower comes down to three skills: <strong>Planning</strong> (breaking a big goal into small steps), <strong>Flexibility</strong> (having backup routes), and <strong>Problem-Solving</strong> (seeing obstacles before they hit you). The Hope Map below trains exactly this. It forces you to design your circuit before you turn on the power — and pre-loads solutions so failure doesn't knock you off course.</p>
               <HopeMap />

@@ -13,6 +13,9 @@ import { blueTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useModuleResponses } from '../hooks/useModuleResponses';
+import { useNorthStar } from '../hooks/useNorthStar';
+import NorthStarCallout from './NorthStarCallout';
+import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
 
 const theme = blueTheme;
 
@@ -46,6 +49,7 @@ const WOOPPlanner = ({ responses, saveResponse }: { responses: Record<string, an
 // --- MODULE COMPONENT ---
 const BestPossibleSelfModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const { responses, saveResponse, isLoaded } = useModuleResponses('best-possible-self');
+  const { northStar } = useNorthStar();
 
   const sections = [
     { id: 'daydream-problem', title: 'The Daydream Problem', eyebrow: '01 // The Trap', icon: BatteryWarning },
@@ -77,6 +81,7 @@ const BestPossibleSelfModule: React.FC<{ onBack: () => void; progress: ModulePro
           )}
           {activeSection === 1 && (
             <ReadingSection title="The 'Best Possible Self' Exercise." eyebrow="Step 2" icon={MapPin} theme={theme}>
+              {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'best-possible-self-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
               <p>The fix is to dream with purpose. The <Highlight description="You write a vivid, detailed description of your future life — the version where things have gone well because you put in the work. Not a vague wish, but a clear picture your brain can actually aim for." theme={theme}>'Best Possible Self'</Highlight> exercise works like this: instead of a vague "I want to do well," you write a detailed picture of your future life — the version where you've put in the work and things have gone well. The more specific and vivid you make it, the more powerful it is.</p>
               <p>This isn't about being unrealistic. It's about giving your brain a clear target. A vague dream of "doing well" gives your brain nothing to work with. A detailed picture of who you want to become in 5 years gives it a destination to drive toward.</p>
               <PersonalStory name="Alex" role="Founder, NextStepUni">
