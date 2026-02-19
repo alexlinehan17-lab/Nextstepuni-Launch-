@@ -6,7 +6,7 @@
 
 import React, { useState, useEffect, useRef, useCallback, useMemo, Suspense, lazy } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, LogOut, ArrowLeft, Settings, Flame, ChevronRight, ChevronLeft, Trophy, Waves, Scale, Zap, CloudRain, Award, Brain, Target, BookOpen, Shield, FlaskConical, BarChart3, Star } from 'lucide-react';
+import { Sun, Moon, LogOut, ArrowLeft, Settings, Flame, ChevronRight, ChevronLeft, Trophy, Award, Brain, Target, BookOpen, Shield, FlaskConical, BarChart3, Star, Home, Compass, Rocket, User, X } from 'lucide-react';
 import { Library } from './components/Library';
 import { KnowledgeTree, CategoryType } from './components/KnowledgeTree';
 import { LoadingSpinner } from './components/LoadingSpinner';
@@ -34,13 +34,6 @@ import ChangeSubjectsModal from './components/ChangeSubjectsModal';
 
 const Onboarding = lazy(() => import('./components/Onboarding'));
 
-const MOOD_OPTIONS = [
-  { key: 'calm', icon: Waves, label: 'Calm' },
-  { key: 'balanced', icon: Scale, label: 'Balanced' },
-  { key: 'energized', icon: Zap, label: 'Energized' },
-  { key: 'stressed', icon: CloudRain, label: 'Stressed' },
-] as const;
-
 interface UserProfileProps {
   user: SessionUser;
   onLogout: () => void;
@@ -49,8 +42,6 @@ interface UserProfileProps {
   onOpenSettings: () => void;
   avatarOverride: string;
   streak: StreakData;
-  todayMood: string | null;
-  onSetMood: (mood: string) => void;
   recommendation: FocusRecommendation | null;
   onSelectModule: (moduleId: string) => void;
   onOpenPassport: () => void;
@@ -61,7 +52,7 @@ interface UserProfileProps {
   hasNorthStar: boolean;
 }
 
-const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, todayMood, onSetMood, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, completedCount, totalCount, onOpenNorthStar, hasNorthStar }) => {
+const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, completedCount, totalCount, onOpenNorthStar, hasNorthStar }) => {
   const [isOpen, setIsOpen] = useState(false);
   const displayAvatar = avatarOverride || user.avatar;
   return (
@@ -120,27 +111,6 @@ const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, upd
                   <p className="text-sm font-medium text-amber-600 dark:text-amber-400">All modules complete!</p>
                 </div>
               )}
-            </div>
-
-            {/* Mood Check-in */}
-            <div className="border-t border-zinc-200/50 dark:border-white/10 pt-3 mt-2 mb-2">
-              <p className="text-[10px] font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 px-2 mb-2">How are you feeling?</p>
-              <div className="flex items-center justify-center gap-2 px-2">
-                {MOOD_OPTIONS.map(({ key, icon: Icon, label }) => (
-                  <button
-                    key={key}
-                    onClick={() => onSetMood(key)}
-                    title={label}
-                    className={`w-9 h-9 rounded-full flex items-center justify-center transition-all ${
-                      todayMood === key
-                        ? 'text-[#CC785C] bg-[#CC785C]/10 ring-2 ring-[#CC785C]'
-                        : 'text-zinc-400 dark:text-zinc-500 hover:bg-zinc-100 dark:hover:bg-white/5'
-                    }`}
-                  >
-                    <Icon size={16} />
-                  </button>
-                ))}
-              </div>
             </div>
 
             {/* My Progress + Study Passport */}
@@ -209,6 +179,183 @@ const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, upd
   )
 }
 
+/* ── Mobile Bottom Navigation Bar ── */
+interface MobileBottomNavProps {
+  viewState: string;
+  onGoHome: () => void;
+  onGoToDashboard: () => void;
+  onGoToLearningPaths: () => void;
+  onGoToInnovationZone: () => void;
+  onOpenProfile: () => void;
+}
+
+const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, onGoToDashboard, onGoToLearningPaths, onGoToInnovationZone, onOpenProfile }) => {
+  const tabs = [
+    { id: 'tree', label: 'Home', icon: Home, action: onGoHome },
+    { id: 'dashboard', label: 'Dashboard', icon: BarChart3, action: onGoToDashboard },
+    { id: 'learning-paths', label: 'Paths', icon: Compass, action: onGoToLearningPaths },
+    { id: 'innovation-zone', label: 'Innovate', icon: Rocket, action: onGoToInnovationZone },
+    { id: 'profile', label: 'Profile', icon: User, action: onOpenProfile },
+  ];
+
+  return (
+    <nav
+      className="fixed bottom-0 left-0 right-0 z-[90] md:hidden bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl border-t border-zinc-200/50 dark:border-white/[0.06]"
+      style={{ paddingBottom: 'var(--sab, 0px)' }}
+    >
+      <div className="flex items-center justify-around h-16">
+        {tabs.map((tab) => {
+          const isActive = tab.id === viewState || (tab.id === 'tree' && viewState === 'category');
+          return (
+            <button
+              key={tab.id}
+              onClick={tab.action}
+              className={`flex flex-col items-center justify-center gap-1 flex-1 h-full transition-colors ${isActive ? 'text-[#CC785C]' : 'text-zinc-400 dark:text-zinc-500'}`}
+            >
+              <tab.icon size={20} strokeWidth={isActive ? 2 : 1.5} />
+              <span className="text-[10px] font-medium">{tab.label}</span>
+            </button>
+          );
+        })}
+      </div>
+    </nav>
+  );
+};
+
+/* ── Mobile Profile Sheet ── */
+interface MobileProfileSheetProps {
+  isOpen: boolean;
+  onClose: () => void;
+  user: SessionUser;
+  onLogout: () => void;
+  settings: UserSettings;
+  updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void;
+  onOpenSettings: () => void;
+  avatarOverride: string;
+  streak: StreakData;
+  recommendation: FocusRecommendation | null;
+  onSelectModule: (moduleId: string) => void;
+  onOpenPassport: () => void;
+  onGoToDashboard: () => void;
+  completedCount: number;
+  totalCount: number;
+  onOpenNorthStar: () => void;
+  hasNorthStar: boolean;
+}
+
+const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, completedCount, totalCount, onOpenNorthStar, hasNorthStar }) => {
+  const displayAvatar = avatarOverride || user.avatar;
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <>
+          {/* Backdrop */}
+          <motion.div
+            key="profile-backdrop"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={onClose}
+            className="fixed inset-0 z-[95] bg-black/40 md:hidden"
+          />
+          {/* Sheet */}
+          <motion.div
+            key="profile-sheet"
+            initial={{ y: '100%' }}
+            animate={{ y: 0 }}
+            exit={{ y: '100%' }}
+            transition={{ type: 'spring', damping: 28, stiffness: 300 }}
+            className="fixed bottom-0 left-0 right-0 z-[96] md:hidden bg-white dark:bg-zinc-900 rounded-t-2xl border-t border-zinc-200 dark:border-zinc-800 max-h-[85vh] overflow-y-auto"
+            style={{ paddingBottom: 'var(--sab, 0px)' }}
+          >
+            {/* Drag handle */}
+            <div className="flex justify-center pt-3 pb-2">
+              <div className="w-10 h-1 rounded-full bg-zinc-300 dark:bg-zinc-700" />
+            </div>
+
+            <div className="px-5 pb-6">
+              {/* User info */}
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-3">
+                  <img src={getAvatarUrl(displayAvatar)} alt="Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
+                  <div>
+                    <p className="font-bold text-zinc-800 dark:text-white">{user.name}</p>
+                    <p className="text-xs text-zinc-500">Student</p>
+                  </div>
+                </div>
+                <button onClick={onClose} className="p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800">
+                  <X size={18} className="text-zinc-400" />
+                </button>
+              </div>
+
+              {/* Streak */}
+              <div className="flex items-center gap-3 p-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 mb-3">
+                <div className="w-8 h-8 rounded-lg bg-orange-50 dark:bg-orange-500/10 flex items-center justify-center">
+                  <Flame size={16} className="text-orange-500" />
+                </div>
+                <div className="flex-1">
+                  <p className="text-sm font-semibold text-zinc-800 dark:text-white">{streak.currentStreak} day streak</p>
+                  {streak.longestStreak > 1 && (
+                    <p className="text-[10px] text-zinc-400 dark:text-zinc-500">Longest: {streak.longestStreak} days</p>
+                  )}
+                </div>
+              </div>
+
+              {/* Today's Focus */}
+              <div className="mb-3">
+                <p className="text-[10px] font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 px-1 mb-2">Today's Focus</p>
+                {recommendation && recommendation.reason !== 'all-complete' ? (
+                  <button
+                    onClick={() => { onClose(); onSelectModule(recommendation.moduleId); }}
+                    className="w-full flex items-center justify-between p-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 group"
+                  >
+                    <p className="text-sm font-medium text-zinc-700 dark:text-zinc-300 text-left line-clamp-1 pr-2">{recommendation.title}</p>
+                    <ChevronRight size={14} className="text-zinc-400 dark:text-zinc-500 shrink-0" />
+                  </button>
+                ) : (
+                  <div className="flex items-center gap-2 p-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/50">
+                    <Trophy size={14} className="text-amber-500" />
+                    <p className="text-sm font-medium text-amber-600 dark:text-amber-400">All modules complete!</p>
+                  </div>
+                )}
+              </div>
+
+              {/* Actions */}
+              <div className="space-y-1">
+                <button onClick={() => { onClose(); onOpenPassport(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                  <div className="w-8 h-8 rounded-lg bg-[#CC785C]/10 flex items-center justify-center"><Award size={16} className="text-[#CC785C]" /></div>
+                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">Study Passport</span>
+                  <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500">{completedCount}/{totalCount}</span>
+                </button>
+                {hasNorthStar && (
+                  <button onClick={() => { onClose(); onOpenNorthStar(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                    <div className="w-8 h-8 rounded-lg bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center"><Star size={16} className="text-amber-500" /></div>
+                    <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">My North Star</span>
+                  </button>
+                )}
+                <button onClick={() => updateSetting('darkMode', !settings.darkMode)} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                  <div className="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center">
+                    {settings.darkMode ? <Sun size={16} className="text-amber-400" /> : <Moon size={16} className="text-zinc-600" />}
+                  </div>
+                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">Theme</span>
+                </button>
+                <button onClick={() => { onClose(); onOpenSettings(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                  <div className="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center"><Settings size={16} className="text-zinc-500" /></div>
+                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">Settings</span>
+                </button>
+                <button onClick={() => { onClose(); onLogout(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                  <div className="w-8 h-8 rounded-lg bg-rose-50 dark:bg-rose-500/10 flex items-center justify-center"><LogOut size={16} className="text-rose-500" /></div>
+                  <span className="text-sm font-medium text-rose-500 flex-1 text-left">Log Out</span>
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        </>
+      )}
+    </AnimatePresence>
+  );
+};
+
 const RESEARCH_PAPERS = [
   { title: 'Implicit Theories of Intelligence Predict Achievement Across an Adolescent Transition', authors: 'Blackwell, Trzesniewski & Dweck', year: 2007, journal: 'Child Development', description: 'Students who believed their intelligence could grow got better maths grades over two years, while "fixed mindset" students flatlined. Teaching students the brain can grow with effort actually reversed declining grades.' },
   { title: 'Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis', authors: 'Cepeda, Pashler, Vul, Wixted & Rohrer', year: 2006, journal: 'Psychological Bulletin', description: 'After analysing 317 experiments, researchers confirmed that spreading study sessions over time beats cramming into one sitting for long-term memory. The optimal gap is roughly 10-20% of the time until your exam.' },
@@ -235,6 +382,7 @@ const App: React.FC = () => {
   const [northStar, setNorthStar] = useState<NorthStar | null>(null);
   const [northStarEditOpen, setNorthStarEditOpen] = useState(false);
   const [changeSubjectsOpen, setChangeSubjectsOpen] = useState(false);
+  const [mobileProfileOpen, setMobileProfileOpen] = useState(false);
   const [studentProfile, setStudentProfile] = useState<StudentSubjectProfile | null>(null);
   const [unlockedAvatarSeeds, setUnlockedAvatarSeeds] = useState<string[]>([]);
   const { settings, updateSetting, isLoaded: settingsLoaded } = useSettings(user?.uid, user?.avatar);
@@ -460,6 +608,15 @@ const App: React.FC = () => {
     if (!isPopstateRef.current) {
       window.history.pushState({ view: 'learning-paths' }, '');
     }
+  };
+
+  const handleGoHome = () => {
+    setCurrentCategory(null);
+    setCurrentModuleId(null);
+    setCameFromJourney(false);
+    setViewState('tree');
+    window.scrollTo(0, 0);
+    window.history.pushState({ view: 'tree' }, '');
   };
 
   const handleOnboardingComplete = async (profile: StudentSubjectProfile, northStarData?: NorthStar) => {
@@ -812,6 +969,8 @@ const App: React.FC = () => {
         updateSetting={updateSetting}
         completedCount={completedCount}
         totalCount={studentCourses.length}
+        todayMood={todayMood}
+        onSetMood={setMood}
       />;
     }
 
@@ -880,12 +1039,45 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
       {user && viewState !== 'onboarding' && user.role !== 'gc' && !user.isAdmin && (
-        <div className={`fixed top-6 right-6 z-[100] ${viewState === 'tree' ? 'md:hidden' : ''}`}>
-          <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} todayMood={todayMood} onSetMood={setMood} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} onGoToDashboard={handleGoToDashboard} completedCount={completedCount} totalCount={studentCourses.length} onOpenNorthStar={() => setNorthStarEditOpen(true)} hasNorthStar={northStar !== null} />
+        <div className={`fixed top-6 right-6 z-[100] ${viewState === 'tree' ? 'hidden' : 'hidden md:block'}`}>
+          <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} onGoToDashboard={handleGoToDashboard} completedCount={completedCount} totalCount={studentCourses.length} onOpenNorthStar={() => setNorthStarEditOpen(true)} hasNorthStar={northStar !== null} />
         </div>
       )}
 
       {renderContent()}
+
+      {user && viewState !== 'onboarding' && viewState !== 'module' && !user.isAdmin && user.role !== 'gc' && (
+        <MobileBottomNav
+          viewState={viewState}
+          onGoHome={handleGoHome}
+          onGoToDashboard={handleGoToDashboard}
+          onGoToLearningPaths={handleGoToLearningPaths}
+          onGoToInnovationZone={handleGoToInnovationZone}
+          onOpenProfile={() => setMobileProfileOpen(true)}
+        />
+      )}
+
+      {user && !user.isAdmin && user.role !== 'gc' && (
+        <MobileProfileSheet
+          isOpen={mobileProfileOpen}
+          onClose={() => setMobileProfileOpen(false)}
+          user={user}
+          onLogout={handleLogout}
+          settings={settings}
+          updateSetting={updateSetting}
+          onOpenSettings={() => setSettingsOpen(true)}
+          avatarOverride={settings.avatar}
+          streak={streak}
+          recommendation={recommendation}
+          onSelectModule={handleSelectModule}
+          onOpenPassport={() => setPassportOpen(true)}
+          onGoToDashboard={handleGoToDashboard}
+          completedCount={completedCount}
+          totalCount={studentCourses.length}
+          onOpenNorthStar={() => setNorthStarEditOpen(true)}
+          hasNorthStar={northStar !== null}
+        />
+      )}
 
       {user && (
         <>

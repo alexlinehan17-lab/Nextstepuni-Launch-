@@ -6,13 +6,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  Sprout, Zap, Rocket, Target, FlaskConical,
-  Layout, ArrowRight, Sparkles, Beaker, BarChart3, Compass,
+  Sprout, Rocket, Target, FlaskConical,
+  Fingerprint, ArrowRight, Sparkles, BarChart3, Compass, Lightbulb, KeyRound,
   User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw
 } from 'lucide-react';
 import { getAvatarUrl } from '../components/Auth';
 import { CourseData, BentoModuleTile } from './Library';
 import { UserSettings } from '../types';
+import { MoodFaceIcon, MOOD_KEYS, MOOD_LABELS } from './MoodFaceIcon';
 
 // FIX: Cast motion components to any to bypass broken type definitions
 const MotionDiv = motion.div as any;
@@ -48,6 +49,8 @@ interface KnowledgeTreeProps {
   updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void;
   completedCount: number;
   totalCount: number;
+  todayMood: string | null;
+  onSetMood: (mood: string) => void;
 }
 
 const ActivityRing = ({
@@ -195,9 +198,10 @@ const BentoTile: React.FC<BentoTileProps> = ({
   );
 };
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, completedCount, totalCount }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, completedCount, totalCount, todayMood, onSetMood }) => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [moodExpanded, setMoodExpanded] = useState(false);
 
   const sidebarItems = [
     { icon: Home, label: 'Home', onClick: () => {}, active: true },
@@ -226,7 +230,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
       title: "The Architecture of your Mindset",
       subtitle: "Module 01",
       description: "Build the psychological foundations for academic success. This module covers identity, beliefs, emotional regulation, and the resilience you need to thrive under pressure.",
-      icon: Layout,
+      icon: Fingerprint,
       hex: "#3b82f6",
       className: "md:col-span-4"
     },
@@ -244,7 +248,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
       title: "The Science of Learning Effectively",
       subtitle: "Module 03",
       description: "The practical techniques and study methods that separate high performers from everyone else. Active recall, spaced repetition, interleaving, and more.",
-      icon: Zap,
+      icon: Lightbulb,
       hex: "#14b8a6",
       className: "md:col-span-2"
     },
@@ -253,7 +257,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
       title: "Decoding the Subjects",
       subtitle: "Module 04",
       description: "Subject-by-subject deconstruction of the Leaving Cert exams. The marking schemes, the hidden curriculum, and the strategies that unlock top grades in each subject.",
-      icon: Beaker,
+      icon: KeyRound,
       hex: "#6b7280",
       className: "md:col-span-2"
     },
@@ -327,6 +331,67 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
             </button>
           ))}
         </nav>
+
+        {/* Mood check-in */}
+        <div className="px-2 mt-1 mb-1">
+          <button
+            onClick={() => setMoodExpanded(!moodExpanded)}
+            className={`relative flex items-center gap-3 px-2.5 py-2 rounded-lg transition-colors w-full ${moodExpanded ? 'bg-zinc-100 dark:bg-zinc-800' : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'}`}
+          >
+            <div className="shrink-0 flex items-center justify-center w-[18px] relative">
+              <MoodFaceIcon mood={todayMood || 'balanced'} size={18} className="text-zinc-600 dark:text-zinc-400" />
+              {todayMood && (
+                <div className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-[#CC785C]" />
+              )}
+            </div>
+            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              Mood
+            </span>
+          </button>
+
+          <AnimatePresence>
+            {moodExpanded && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: 'auto', opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                className="overflow-hidden"
+              >
+                <div className={`py-2 ${sidebarOpen ? 'grid grid-cols-4 gap-1 px-1' : 'flex flex-col items-center gap-2'}`}>
+                  {MOOD_KEYS.map((key) => (
+                    <button
+                      key={key}
+                      onClick={() => {
+                        onSetMood(key);
+                        setTimeout(() => setMoodExpanded(false), 400);
+                      }}
+                      title={MOOD_LABELS[key]}
+                      className={`flex flex-col items-center gap-1.5 rounded-lg py-1.5 transition-all ${
+                        todayMood === key
+                          ? 'text-[#CC785C]'
+                          : 'text-zinc-400 dark:text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                      }`}
+                    >
+                      <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all ${
+                        todayMood === key
+                          ? 'bg-[#CC785C]/10 ring-2 ring-[#CC785C]'
+                          : ''
+                      }`}>
+                        <MoodFaceIcon mood={key} size={18} />
+                      </div>
+                      {sidebarOpen && (
+                        <span className="text-[9px] font-medium leading-none">
+                          {MOOD_LABELS[key]}
+                        </span>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
 
         {/* User actions */}
         <div className="border-t border-zinc-200 dark:border-zinc-800 mx-2 pt-2 flex flex-col gap-1">
@@ -427,7 +492,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
       </aside>
 
       {/* Main content */}
-      <div className={`flex-1 flex flex-col items-center pt-8 md:pt-16 pb-32 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]'}`}>
+      <div className={`flex-1 flex flex-col items-center pt-8 md:pt-16 pb-40 md:pb-32 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]'}`}>
       <div className="w-full max-w-7xl px-6">
         <MotionDiv
           initial={{ opacity: 0, y: 12 }}

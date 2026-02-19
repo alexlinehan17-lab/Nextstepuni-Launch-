@@ -1173,18 +1173,18 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const currentTool = tools.find(t => t.id === activeTool);
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pt-32 pb-24">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pt-24 md:pt-32 pb-36 md:pb-24">
 
-      <header className="fixed top-0 left-0 right-0 z-[60] bg-zinc-50 dark:bg-zinc-950 border-b border-zinc-200 dark:border-zinc-800 px-10 py-6">
+      <header className="fixed top-0 left-0 right-0 z-[60] bg-zinc-50 dark:bg-zinc-950 border-b border-zinc-200 dark:border-zinc-800 px-4 py-4 md:px-10 md:py-6">
         <div className="container mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-4 md:gap-8">
             <MotionButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={onBack} className="p-2.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800">
               <ArrowLeft size={18} className="text-zinc-900 dark:text-white" />
             </MotionButton>
-            <div className="h-10 w-px bg-zinc-200 dark:bg-zinc-800" />
+            <div className="hidden md:block h-10 w-px bg-zinc-200 dark:bg-zinc-800" />
             <div>
               <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">Explore</p>
-              <h1 className="font-serif font-semibold text-2xl tracking-tight text-zinc-900 dark:text-white">The Innovation Zone</h1>
+              <h1 className="font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">The Innovation Zone</h1>
             </div>
           </div>
           <div className="flex items-center gap-3">

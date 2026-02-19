@@ -5,13 +5,14 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, BookOpen, Flame, Coins, ChevronRight, Waves, Scale, Zap, CloudRain } from 'lucide-react';
+import { ArrowLeft, BookOpen, Flame, Coins, ChevronRight } from 'lucide-react';
 import { CategoryType } from './KnowledgeTree';
 import { CourseData } from './Library';
 import { MoodEntry } from '../hooks/useMood';
 import { StreakData } from '../hooks/useStreak';
 import { FocusRecommendation } from '../hooks/useTodaysFocus';
 import { categoryColorMap } from '../courseData';
+import { MoodFaceIcon } from './MoodFaceIcon';
 
 const MotionDiv = motion.div as any;
 
@@ -31,12 +32,7 @@ interface DashboardViewProps {
   pointsBalance: number;
 }
 
-const MOOD_ICONS: Record<string, { icon: typeof Waves; label: string }> = {
-  calm: { icon: Waves, label: 'Calm' },
-  balanced: { icon: Scale, label: 'Balanced' },
-  energized: { icon: Zap, label: 'Energized' },
-  stressed: { icon: CloudRain, label: 'Stressed' },
-};
+const MOOD_ICON_KEYS = new Set(['calm', 'balanced', 'energized', 'stressed']);
 
 const DAY_LABELS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
@@ -72,7 +68,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
   });
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 pt-16 md:pt-24 pb-32 px-4 sm:px-6 transition-colors duration-500">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 pt-16 md:pt-24 pb-40 md:pb-32 px-4 sm:px-6 transition-colors duration-500">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="flex items-center gap-4 mb-10">
@@ -215,17 +211,16 @@ const DashboardView: React.FC<DashboardViewProps> = ({
             {last7Days.map((dateStr) => {
               const entry = moodEntries.find(e => e.date === dateStr);
               const dayOfWeek = new Date(dateStr + 'T12:00:00').getDay();
-              const moodInfo = entry ? MOOD_ICONS[entry.mood] : null;
-              const Icon = moodInfo?.icon;
+              const hasMood = entry && MOOD_ICON_KEYS.has(entry.mood);
 
               return (
                 <div key={dateStr} className="flex flex-col items-center gap-2 flex-1">
                   <div className={`w-9 h-9 rounded-full flex items-center justify-center ${
-                    Icon
+                    hasMood
                       ? 'bg-[#CC785C]/10 text-[#CC785C]'
                       : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-300 dark:text-zinc-600'
                   }`}>
-                    {Icon ? <Icon size={16} /> : <div className="w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-600" />}
+                    {hasMood ? <MoodFaceIcon mood={entry.mood} size={16} /> : <div className="w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-600" />}
                   </div>
                   <span className="text-[10px] font-medium text-zinc-400 dark:text-zinc-500">
                     {DAY_LABELS[dayOfWeek]}
