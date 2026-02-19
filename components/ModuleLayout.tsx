@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ArrowRight, CheckCircle2, Lock, List, X } from 'lucide-react';
 import { ModuleProgress, SectionDefinition, ModuleTheme } from '../types';
@@ -40,11 +40,20 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
     progress.unlockedSection >= sections.length ? 0 : progress.unlockedSection
   );
   const [mobileSectionsOpen, setMobileSectionsOpen] = useState(false);
+  const mainRef = useRef<HTMLElement>(null);
   const unlockedSection = progress.unlockedSection;
 
   useEffect(() => {
     setActiveSection(progress.unlockedSection >= sections.length ? 0 : progress.unlockedSection);
   }, [progress.unlockedSection, sections.length]);
+
+  // Scroll to top whenever the active section changes
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+    if (mainRef.current) {
+      mainRef.current.scrollTop = 0;
+    }
+  }, [activeSection]);
 
   const handleCompleteSection = () => {
     if (activeSection === unlockedSection && unlockedSection < sections.length) {
@@ -55,21 +64,18 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
     } else {
       onBack();
     }
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleJumpToSection = (index: number) => {
     if (index <= unlockedSection) {
       setActiveSection(index);
       setMobileSectionsOpen(false);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
   const handlePrev = () => {
     if (activeSection > 0) {
       setActiveSection(activeSection - 1);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
@@ -208,7 +214,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
       </AnimatePresence>
 
       {/* ── Main Content ── */}
-      <main className="flex-grow flex flex-col items-center pt-20 md:pt-24 px-6 md:px-16 pb-10 md:pb-0 md:overflow-y-auto md:h-screen">
+      <main ref={mainRef} className="flex-grow flex flex-col items-center pt-20 md:pt-24 px-6 md:px-16 pb-10 md:pb-0 md:overflow-y-auto md:h-screen">
         <div className="w-full max-w-4xl">
           <AnimatePresence mode="wait">
             <motion.div key={activeSection} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}>
