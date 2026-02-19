@@ -187,7 +187,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
         </div>
       </header>
 
-      <main className="flex-grow w-full max-w-7xl px-6 pt-24 relative z-10">
+      <main className="flex-grow w-full max-w-7xl px-6 pt-4 md:pt-24 relative z-10">
 
         {/* North Star Callout */}
         {northStar && (
@@ -197,29 +197,28 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
         )}
 
         {/* Bento Grid Command Center */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 auto-rows-fr">
-          
-          {/* Bento Header Strip */}
-          <MotionDiv
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="md:col-span-6 flex flex-col md:flex-row items-center justify-between p-8 rounded-xl bg-zinc-900 dark:bg-zinc-900 border border-zinc-800 mb-2"
-          >
+        {/* Bento Header Strip — outside grid so auto-rows-fr doesn't stretch it */}
+        <MotionDiv
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="flex flex-row items-center justify-between px-5 py-4 md:p-8 rounded-xl bg-zinc-900 dark:bg-zinc-900 border border-zinc-800 mb-4 md:mb-6"
+        >
             <div>
-              <h2 className="text-white font-serif text-3xl md:text-4xl font-semibold tracking-tight">Overview</h2>
-              <p className="text-zinc-400 text-[11px] uppercase tracking-[0.15em] mt-2">Choose a unit to get started</p>
+              <h2 className="text-white font-serif text-lg md:text-4xl font-semibold tracking-tight">Overview</h2>
+              <p className="hidden md:block text-zinc-400 text-[11px] uppercase tracking-[0.15em] mt-2">Choose a unit to get started</p>
             </div>
-            <div className="mt-6 md:mt-0 flex items-center gap-6">
+            <div className="flex items-center gap-3 md:gap-6">
                <div className="flex flex-col items-end">
-                  <span className="text-white text-xl font-bold">{overallProgress}%</span>
+                  <span className="text-white text-lg md:text-xl font-bold">{overallProgress}%</span>
                   <span className="text-zinc-500 text-[10px] font-semibold uppercase tracking-wider">Progress</span>
                </div>
-               <div className="w-10 h-10 rounded-lg bg-[#CC785C]/15 flex items-center justify-center text-[#CC785C]">
-                  <Sparkles size={20} />
+               <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-[#CC785C]/15 flex items-center justify-center text-[#CC785C]">
+                  <Sparkles size={16} className="md:hidden" /><Sparkles size={20} className="hidden md:block" />
                </div>
             </div>
-          </MotionDiv>
+        </MotionDiv>
 
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 auto-rows-fr">
           {courses.map((course, idx) => {
             const progress = userProgress[course.id];
             const isCompleted = progress && progress.unlockedSection >= course.sectionsCount - 1;

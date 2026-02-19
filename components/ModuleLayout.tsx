@@ -140,7 +140,6 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
           <p className={`text-[9px] font-semibold ${theme.sidebarModuleText} uppercase tracking-[0.15em] leading-none`}>Unit {moduleNumber}</p>
           <h1 className="text-sm font-semibold text-zinc-900 dark:text-white truncate">{moduleTitle}</h1>
         </div>
-        <ActivityRing progress={progressPercentage} size={36} strokeWidth={3} color={theme.activityRingColor} />
         <button onClick={() => setMobileSectionsOpen(true)} className="p-2 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 shrink-0">
           <List size={16} className="text-zinc-700 dark:text-zinc-300" />
         </button>
@@ -172,7 +171,10 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
                 <div className="w-10 h-1 rounded-full bg-zinc-300 dark:bg-zinc-700" />
               </div>
               <div className="flex items-center justify-between px-5 pb-3">
-                <p className="text-sm font-semibold text-zinc-900 dark:text-white">Sections</p>
+                <div className="flex items-center gap-3">
+                  <ActivityRing progress={progressPercentage} size={32} strokeWidth={3} color={theme.activityRingColor} />
+                  <p className="text-sm font-semibold text-zinc-900 dark:text-white">Sections</p>
+                </div>
                 <button onClick={() => setMobileSectionsOpen(false)} className="p-1.5 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800">
                   <X size={16} className="text-zinc-400" />
                 </button>
