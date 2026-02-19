@@ -52,11 +52,22 @@ service cloud.firestore {
     // Moods collection: each user can only read/write their own doc
     match /moods/{userId} {
       allow read, write: if request.auth != null && request.auth.uid == userId;
+      // GC can read mood docs for students in their school
+      allow read: if request.auth != null
+                  && isGC()
+                  && get(/databases/$(database)/documents/users/$(userId)).data.school == gcSchool();
     }
 
     // Responses collection: each user can only read/write their own doc
     match /responses/{userId} {
       allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // GC Notes: GCs can read/write notes for their own school
+    match /gcNotes/{schoolId}/students/{studentId} {
+      allow read, write: if request.auth != null
+                         && isGC()
+                         && schoolId == gcSchool();
     }
 
     // Default deny — no other collections are accessible

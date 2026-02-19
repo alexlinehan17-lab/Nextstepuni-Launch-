@@ -2,26 +2,27 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect, useMemo } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { CourseData } from './Library';
 import { SessionUser, getAvatarUrl } from './Auth';
-import { GraduationCap, LogOut, ArrowUpDown, Search } from 'lucide-react';
-import { CategoryType } from './KnowledgeTree';
+import { GraduationCap, LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote } from 'lucide-react';
 import { db } from '../firebase';
 import { collection, query, where, getDocs, doc, getDoc } from 'firebase/firestore';
 import { getSchoolName } from '../schoolData';
+import { UserProgress, PointsData } from '../types';
+import { StudentSubjectProfile, TimetableCompletions, TimetableStreak } from './subjectData';
+import { NorthStar } from '../types';
+import { GameState } from './journeySimulatorData';
+import {
+  GCStudentFullData,
+  MoodDoc,
+  JourneyResult,
+} from './gc/gcTypes';
+import { GCOverview } from './gc/GCOverview';
+import { GCStudentDetail } from './gc/GCStudentDetail';
 
-// FIX: Cast motion components to any to bypass broken type definitions
 const MotionDiv = motion.div as any;
-
-type ModuleProgress = {
-  unlockedSection: number;
-};
-
-type UserProgress = {
-  [moduleId: string]: ModuleProgress;
-};
 
 interface GCDashboardProps {
   school: string;
@@ -29,116 +30,153 @@ interface GCDashboardProps {
   allCourses: CourseData[];
 }
 
-const CATEGORIES: { id: CategoryType; title: string }[] = [
-  { id: 'architecture-mindset', title: 'The Architecture of your Mindset' },
-  { id: 'science-growth', title: 'The Science of Growth' },
-  { id: 'learning-cheat-codes', title: 'The Science of Learning Effectively' },
-  { id: 'subject-specific-science', title: 'Decoding the Subjects' },
-  { id: 'exam-zone', title: 'Exam Strategy and Points Maximisation' },
-];
+// ─── Shimmer skeleton ────────────────────────────────────────────────────────
 
-type SortOption = 'name-asc' | 'name-desc' | 'progress-high' | 'progress-low';
+const SkeletonPulse: React.FC<{ className?: string }> = ({ className = '' }) => (
+  <div className={`rounded-xl bg-zinc-200 dark:bg-zinc-800 animate-[shine_1.5s_ease-in-out_infinite] ${className}`} />
+);
 
-const GCStudentCard: React.FC<{ user: SessionUser; userProgress: UserProgress; allCourses: CourseData[] }> = ({ user, userProgress, allCourses }) => {
-  const calculateCategoryProgress = (category: CategoryType) => {
-    const categoryCourses = allCourses.filter(c => c.category === category);
-    if (categoryCourses.length === 0) return 0;
-
-    const totalProgress = categoryCourses.reduce((sum, course) => {
-      const progress = userProgress[course.id];
-      if (progress && typeof progress.unlockedSection === 'number' && course.sectionsCount > 0) {
-        const coursePercentage = Math.min(100, (progress.unlockedSection / course.sectionsCount) * 100);
-        return sum + coursePercentage;
-      }
-      return sum;
-    }, 0);
-
-    return totalProgress / categoryCourses.length;
-  };
-
-  const totalProgressSum = allCourses.reduce((sum, course) => {
-    const progress = userProgress[course.id];
-    if (progress && typeof progress.unlockedSection === 'number' && course.sectionsCount > 0) {
-      const coursePercentage = Math.min(100, (progress.unlockedSection / course.sectionsCount) * 100);
-      return sum + coursePercentage;
-    }
-    return sum;
-  }, 0);
-
-  const overallProgress = allCourses.length > 0 ? totalProgressSum / allCourses.length : 0;
-
-  return (
-    <div className="bg-white dark:bg-zinc-900/50 border border-zinc-200/50 dark:border-white/10 rounded-2xl p-6 shadow-sm">
-      <div className="flex items-center gap-4 border-b border-zinc-200/50 dark:border-white/10 pb-4 mb-4">
-        <img src={getAvatarUrl(user.avatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
-        <div>
-          <p className="font-bold text-zinc-800 dark:text-white">{user.name}</p>
-          <p className="text-xs text-zinc-500">Overall Progress: {overallProgress.toFixed(0)}%</p>
+const LoadingSkeleton: React.FC = () => (
+  <div className="space-y-6 p-8">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+      {Array.from({ length: 3 }).map((_, i) => (
+        <div key={i} className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5 space-y-3">
+          <SkeletonPulse className="h-3 w-20" />
+          <SkeletonPulse className="h-12 w-24" />
+          <SkeletonPulse className="h-3 w-32" />
+        </div>
+      ))}
+    </div>
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <div className="lg:col-span-2 space-y-5">
+        <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5 space-y-4">
+          <SkeletonPulse className="h-4 w-40" />
+          <div className="flex items-end gap-4 h-32">
+            {[60, 40, 80, 50].map((h, i) => (
+              <SkeletonPulse key={i} className="flex-1 rounded-lg" style={{ height: `${h}%` }} />
+            ))}
+          </div>
         </div>
       </div>
-      <div className="space-y-3 max-h-64 overflow-y-auto pr-2">
-        {CATEGORIES.map(category => {
-          const categoryProgress = calculateCategoryProgress(category.id);
-          return (
-            <div key={category.id}>
-              <div className="flex justify-between items-center">
-                <p className="text-xs font-medium text-zinc-600 dark:text-zinc-400 truncate">{category.title}</p>
-                <p className="text-xs font-bold text-zinc-500 dark:text-zinc-300">{categoryProgress.toFixed(0)}%</p>
-              </div>
-              <div className="w-full bg-zinc-200 dark:bg-zinc-700 rounded-full h-2 mt-1">
-                <MotionDiv
-                  className={`h-2 rounded-full ${categoryProgress >= 100 ? 'bg-emerald-500' : 'bg-blue-500'}`}
-                  initial={{ width: 0 }}
-                  animate={{ width: `${categoryProgress}%` }}
-                  transition={{ duration: 0.5, ease: 'easeOut' }}
-                />
-              </div>
+      <div className="space-y-5">
+        <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5 space-y-3">
+          <SkeletonPulse className="h-4 w-28" />
+          {Array.from({ length: 4 }).map((_, i) => (
+            <div key={i} className="flex items-center gap-3">
+              <SkeletonPulse className="w-8 h-8 rounded-full" />
+              <SkeletonPulse className="h-3 flex-1" />
             </div>
-          );
-        })}
+          ))}
+        </div>
       </div>
     </div>
-  );
-};
+  </div>
+);
+
+// ─── Component ──────────────────────────────────────────────────────────────
 
 export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allCourses }) => {
-  const [studentData, setStudentData] = useState<{ user: SessionUser; progress: UserProgress }[]>([]);
+  const [studentData, setStudentData] = useState<GCStudentFullData[]>([]);
+  const [studentNotes, setStudentNotes] = useState<Record<string, { notes: string; updatedAt: string }>>({});
   const [isLoading, setIsLoading] = useState(true);
-  const [sortBy, setSortBy] = useState<SortOption>('name-asc');
-  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedStudentUid, setSelectedStudentUid] = useState<string | null>(null);
+  const [activeNav, setActiveNav] = useState<string>('gc-overview');
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  // Stable random avatar seed per school
+  const avatarSeed = useMemo(() => `gc-${school}-${school.length}`, [school]);
+
+  const sidebarItems = [
+    { id: 'gc-overview', label: 'Overview', icon: LayoutDashboard, active: activeNav === 'gc-overview' },
+    { id: 'gc-analytics', label: 'Analytics', icon: BarChart3, active: activeNav === 'gc-analytics' },
+    { id: 'gc-students', label: 'Students', icon: Users, active: activeNav === 'gc-students' },
+    { id: 'gc-notes', label: 'Notes', icon: StickyNote, active: activeNav === 'gc-notes' },
+  ];
+
+  // Body scroll lock when tray is open
+  useEffect(() => {
+    if (selectedStudentUid) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [selectedStudentUid]);
 
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        // Query only users from this school
         const usersCol = collection(db, 'users');
         const schoolQuery = query(usersCol, where('school', '==', school));
         const userSnapshot = await getDocs(schoolQuery);
         const users = userSnapshot.docs.map(d => ({ uid: d.id, ...d.data() })) as SessionUser[];
 
-        // Filter out GC accounts — only show students
         const students = users.filter(u => u.role !== 'gc' && u.role !== 'admin');
 
-        // Fetch progress for each student individually (GC rules only allow per-doc reads)
-        const progressEntries = await Promise.all(
+        const fullData: GCStudentFullData[] = await Promise.all(
           students.map(async (user) => {
+            let progressDoc: Record<string, any> | null = null;
+            let moodDoc: MoodDoc | null = null;
+
             try {
-              const progressDoc = await getDoc(doc(db, 'progress', user.uid));
-              return { uid: user.uid, progress: progressDoc.exists() ? (progressDoc.data() as UserProgress) : {} };
-            } catch {
-              return { uid: user.uid, progress: {} };
+              const progressSnap = await getDoc(doc(db, 'progress', user.uid));
+              progressDoc = progressSnap.exists() ? progressSnap.data() : null;
+            } catch { /* Permission error */ }
+
+            try {
+              const moodSnap = await getDoc(doc(db, 'moods', user.uid));
+              moodDoc = moodSnap.exists() ? (moodSnap.data() as MoodDoc) : null;
+            } catch { /* Permission error */ }
+
+            const progress: UserProgress = {};
+            if (progressDoc) {
+              for (const [key, val] of Object.entries(progressDoc)) {
+                if (val && typeof val === 'object' && 'unlockedSection' in val) {
+                  progress[key] = val as { unlockedSection: number };
+                }
+              }
             }
+
+            const subjectProfile = (progressDoc?.subjectProfile as StudentSubjectProfile) ?? null;
+            const northStar = (progressDoc?.northStar as NorthStar) ?? null;
+            const journeyRaw = progressDoc?.['journey-simulator'] as { endingId?: string; finalStats?: GameState; completedAt?: string; decisionsCount?: number } | undefined;
+            const journeyResult: JourneyResult | null = journeyRaw?.endingId
+              ? { endingId: journeyRaw.endingId, finalStats: journeyRaw.finalStats!, completedAt: journeyRaw.completedAt, decisionsCount: journeyRaw.decisionsCount }
+              : null;
+            const streak = (progressDoc?.timetableStreak as TimetableStreak) ?? null;
+            const points = (progressDoc?.pointsData as PointsData) ?? null;
+            const timetableCompletions = (progressDoc?.timetableCompletions as TimetableCompletions) ?? null;
+
+            return {
+              user,
+              progress,
+              subjectProfile,
+              northStar,
+              journeyResult,
+              mood: moodDoc,
+              streak,
+              points,
+              timetableCompletions,
+            };
           })
         );
-        const allProgress = Object.fromEntries(progressEntries.map(e => [e.uid, e.progress]));
 
-        const combinedData = students.map(user => ({
-          user,
-          progress: allProgress[user.uid] || {},
-        }));
+        setStudentData(fullData);
 
-        setStudentData(combinedData);
+        // Fetch all GC notes for this school
+        try {
+          const notesCol = collection(db, 'gcNotes', school, 'students');
+          const notesSnapshot = await getDocs(notesCol);
+          const notes: Record<string, { notes: string; updatedAt: string }> = {};
+          notesSnapshot.docs.forEach(d => {
+            const data = d.data();
+            if (data.notes) {
+              notes[d.id] = { notes: data.notes, updatedAt: data.updatedAt ?? '' };
+            }
+          });
+          setStudentNotes(notes);
+        } catch { /* Permission error or no notes yet */ }
       } catch (error) {
         console.error('Error fetching GC data:', error);
       }
@@ -148,110 +186,136 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
     fetchData();
   }, [school]);
 
-  const getOverallProgress = (userProgress: UserProgress) => {
-    const totalProgressSum = allCourses.reduce((sum, course) => {
-      const progress = userProgress[course.id];
-      if (progress && typeof progress.unlockedSection === 'number' && course.sectionsCount > 0) {
-        const coursePercentage = Math.min(100, (progress.unlockedSection / course.sectionsCount) * 100);
-        return sum + coursePercentage;
-      }
-      return sum;
-    }, 0);
-    return allCourses.length > 0 ? totalProgressSum / allCourses.length : 0;
+  const selectedStudent = selectedStudentUid
+    ? studentData.find(s => s.user.uid === selectedStudentUid) ?? null
+    : null;
+
+  const handleNavClick = (sectionId: string) => {
+    setActiveNav(sectionId);
+    const el = document.getElementById(sectionId);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
-  const filteredAndSorted = studentData
-    .filter(d => d.user.name.toLowerCase().includes(searchQuery.toLowerCase()))
-    .sort((a, b) => {
-      switch (sortBy) {
-        case 'name-asc': return a.user.name.localeCompare(b.user.name);
-        case 'name-desc': return b.user.name.localeCompare(a.user.name);
-        case 'progress-high': return getOverallProgress(b.progress) - getOverallProgress(a.progress);
-        case 'progress-low': return getOverallProgress(a.progress) - getOverallProgress(b.progress);
-        default: return 0;
-      }
-    });
-
   return (
-    <div className="min-h-screen w-full p-8 pt-24">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex items-center justify-between mb-8">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-xl bg-[#CC785C]/10 flex items-center justify-center">
-              <GraduationCap size={28} className="text-[#CC785C]" />
-            </div>
-            <div>
-              <h1 className="font-serif text-3xl font-semibold text-zinc-900 dark:text-white">{getSchoolName(school)}</h1>
-              <p className="text-zinc-500 dark:text-zinc-400">Guidance Counsellor Dashboard</p>
-            </div>
+    <div className="min-h-screen bg-[#FAF9F6] dark:bg-zinc-950 relative">
+      {/* ─── Sidebar (exact student dashboard replica) ───────────────────── */}
+      <aside
+        className={`hidden md:flex flex-col fixed top-0 left-0 h-full z-40 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-r border-zinc-200 dark:border-zinc-800 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
+      >
+        {/* Avatar row — click to toggle */}
+        <button
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+          className="flex items-center gap-3 px-3 py-4 w-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+        >
+          <div className="w-9 h-9 rounded-lg overflow-hidden shrink-0 bg-zinc-200 dark:bg-zinc-700 flex items-center justify-center">
+            <img src={getAvatarUrl(avatarSeed)} alt="Avatar" className="w-full h-full object-cover" />
           </div>
+          <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+            {getSchoolName(school)}
+          </span>
+        </button>
+
+        {/* Nav items */}
+        <nav className="flex-1 flex flex-col gap-1 px-2 mt-2">
+          {sidebarItems.map((item) => (
+            <button
+              key={item.id}
+              onClick={() => handleNavClick(item.id)}
+              className={`flex items-center gap-3 px-2.5 py-2 rounded-lg transition-colors ${item.active ? 'bg-zinc-100 dark:bg-zinc-800' : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'}`}
+            >
+              <div className="shrink-0 flex items-center justify-center w-[18px]">
+                <item.icon size={18} strokeWidth={1.5} className="text-zinc-600 dark:text-zinc-400" />
+              </div>
+              <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+                {item.label}
+              </span>
+            </button>
+          ))}
+        </nav>
+
+        {/* Bottom section */}
+        <div className="border-t border-zinc-200 dark:border-zinc-800 mx-2 pt-2 flex flex-col gap-1">
+          {/* Log Out */}
           <button
             onClick={onLogout}
-            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors text-sm font-medium"
+            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
-            <LogOut size={16} />
-            Log Out
+            <div className="shrink-0 flex items-center justify-center w-[18px]">
+              <LogOut size={18} strokeWidth={1.5} className="text-rose-500" />
+            </div>
+            <span className={`text-sm font-medium text-rose-500 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              Log Out
+            </span>
           </button>
         </div>
 
-        {/* Stats bar */}
-        <div className="flex items-center gap-6 mb-6 pb-6 border-b border-zinc-200/50 dark:border-white/10">
-          <div className="flex items-center gap-2">
-            <span className="text-2xl font-bold text-zinc-900 dark:text-white">{studentData.length}</span>
-            <span className="text-sm text-zinc-500 dark:text-zinc-400">students</span>
+        {/* Collapse toggle */}
+        <button
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+          className="flex items-center gap-3 px-2.5 py-3 mx-2 mb-3 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+        >
+          <div className={`shrink-0 flex items-center justify-center w-[18px] transition-transform duration-300 ${sidebarOpen ? '' : 'rotate-180'}`}>
+            <PanelLeft size={18} strokeWidth={1.5} className="text-zinc-400 dark:text-zinc-500" />
           </div>
-        </div>
+          <span className={`text-sm font-medium text-zinc-400 dark:text-zinc-500 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+            Collapse
+          </span>
+        </button>
+      </aside>
 
-        {/* Controls */}
-        <div className="flex flex-col sm:flex-row gap-3 mb-6">
-          <div className="relative flex-1">
-            <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500" />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search students..."
-              className="w-full bg-white dark:bg-zinc-900/50 border border-zinc-200/50 dark:border-white/10 rounded-xl py-2.5 pl-10 pr-4 text-zinc-900 dark:text-white text-sm placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-[#CC785C]/60 focus:ring-1 focus:ring-[#CC785C]/30 transition-colors"
-            />
-          </div>
-          <div className="relative">
-            <ArrowUpDown size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500 pointer-events-none" />
-            <select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value as SortOption)}
-              className="appearance-none bg-white dark:bg-zinc-900/50 border border-zinc-200/50 dark:border-white/10 rounded-xl py-2.5 pl-10 pr-8 text-zinc-900 dark:text-white text-sm cursor-pointer focus:outline-none focus:border-[#CC785C]/60 focus:ring-1 focus:ring-[#CC785C]/30 transition-colors"
-            >
-              <option value="name-asc">Name A-Z</option>
-              <option value="name-desc">Name Z-A</option>
-              <option value="progress-high">Progress (Highest)</option>
-              <option value="progress-low">Progress (Lowest)</option>
-            </select>
-          </div>
-        </div>
-
+      {/* ─── Main Content ─────────────────────────────────────────────── */}
+      <main className={`flex-1 flex flex-col transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]'}`}>
         {isLoading ? (
-          <div className="text-center py-16"><p className="text-zinc-500 dark:text-zinc-400">Loading student data...</p></div>
-        ) : filteredAndSorted.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredAndSorted.map(data => (
-              <GCStudentCard
-                key={data.user.uid}
-                user={data.user}
-                userProgress={data.progress}
-                allCourses={allCourses}
-              />
-            ))}
-          </div>
-        ) : studentData.length > 0 ? (
-          <div className="text-center py-16 border border-dashed border-zinc-300 dark:border-zinc-700 rounded-2xl">
-            <p className="text-zinc-500">No students match your search.</p>
-          </div>
+          <LoadingSkeleton />
         ) : (
-          <div className="text-center py-16 border border-dashed border-zinc-300 dark:border-zinc-700 rounded-2xl">
-            <p className="text-zinc-500">No students have signed up for {getSchoolName(school)} yet.</p>
-          </div>
+          <GCOverview
+            studentData={studentData}
+            allCourses={allCourses}
+            school={school}
+            studentNotes={studentNotes}
+            onSelectStudent={(uid) => setSelectedStudentUid(prev => prev === uid ? null : uid)}
+          />
         )}
-      </div>
+      </main>
+
+      {/* ─── Side Tray Overlay ────────────────────────────────────────── */}
+      <AnimatePresence>
+        {selectedStudent && (
+          <>
+            {/* Backdrop */}
+            <MotionDiv
+              key="backdrop"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="fixed inset-0 z-40 bg-black/30"
+              onClick={() => setSelectedStudentUid(null)}
+            />
+
+            {/* Panel */}
+            <MotionDiv
+              key="tray"
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '100%' }}
+              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+              className="fixed top-0 right-0 z-50 h-screen w-full max-w-2xl bg-white dark:bg-zinc-900 shadow-2xl overflow-y-auto border-l border-zinc-200 dark:border-zinc-800"
+            >
+              <GCStudentDetail
+                student={selectedStudent}
+                allCourses={allCourses}
+                onBack={() => setSelectedStudentUid(null)}
+                school={school}
+                isTrayMode
+                onNoteSaved={(uid, notes, updatedAt) => {
+                  setStudentNotes(prev => ({ ...prev, [uid]: { notes, updatedAt } }));
+                }}
+              />
+            </MotionDiv>
+          </>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

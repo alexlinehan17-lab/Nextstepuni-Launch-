@@ -326,17 +326,9 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingPro
             {step === 3 && (
               <MotionDiv key="step3" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <h2 className="font-serif text-xl font-semibold text-zinc-900 dark:text-white mb-1">Set Your Grades</h2>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-2">
-                  For each subject, tap your <span className="font-bold text-zinc-700 dark:text-zinc-200">current</span> grade, then your <span className="font-bold text-purple-600 dark:text-purple-400">target</span>.
+                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
+                  For each subject, set where you are now and where you want to be.
                 </p>
-                <div className="flex items-center gap-3 mb-6">
-                  <span className="flex items-center gap-1.5 text-[10px] font-semibold text-zinc-500 dark:text-zinc-400">
-                    <span className="w-3 h-3 rounded bg-zinc-800 dark:bg-white inline-block" /> Current
-                  </span>
-                  <span className="flex items-center gap-1.5 text-[10px] font-semibold text-zinc-500 dark:text-zinc-400">
-                    <span className="w-3 h-3 rounded bg-purple-600 dark:bg-purple-500 inline-block" /> Target
-                  </span>
-                </div>
 
                 <div className="space-y-4">
                   {Array.from(selectedSubjects).map(name => {
@@ -376,44 +368,55 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingPro
                           </div>
                         </div>
 
-                        {/* Grade pills */}
-                        <div className="px-4 pb-3">
-                          <div className="flex gap-1">
-                            {grades.map((g, gi) => {
-                              const isCurrent = g === config.currentGrade;
-                              const isTarget = g === config.targetGrade;
-                              const isBetween = gi > targetIdx && gi < currentIdx;
-
-                              return (
+                        {/* Two-row grade selection */}
+                        <div className="px-4 pb-3 space-y-2">
+                          {/* Current grade row */}
+                          <div>
+                            <p className="text-[10px] font-semibold text-zinc-500 dark:text-zinc-400 mb-1">Where I am now</p>
+                            <div className="flex gap-1">
+                              {grades.map((g) => (
                                 <button
                                   key={g}
-                                  onClick={() => {
-                                    // If clicking at or better than current → set as target
-                                    // If clicking at or worse than target → set as current
-                                    if (gi <= targetIdx) {
-                                      updateConfig(name, 'targetGrade', g);
-                                    } else if (gi >= currentIdx) {
-                                      updateConfig(name, 'currentGrade', g);
-                                    } else {
-                                      // Clicked between: set as current (most common intent)
-                                      updateConfig(name, 'currentGrade', g);
-                                    }
-                                  }}
+                                  onClick={() => updateConfig(name, 'currentGrade', g)}
                                   className={`flex-1 py-1.5 rounded-lg text-[11px] font-bold border transition-all ${
-                                    isTarget ? getTargetGradePillClass(true)
-                                    : isCurrent ? getCurrentGradePillClass(true)
-                                    : isBetween ? 'bg-purple-50 dark:bg-purple-900/15 text-purple-400 dark:text-purple-500 border-purple-200 dark:border-purple-800/40'
-                                    : getCurrentGradePillClass(false)
+                                    g === config.currentGrade
+                                      ? getCurrentGradePillClass(true)
+                                      : getCurrentGradePillClass(false)
                                   }`}
                                 >
                                   {g}
                                 </button>
-                              );
-                            })}
+                              ))}
+                            </div>
+                          </div>
+                          {/* Target grade row */}
+                          <div>
+                            <p className="text-[10px] font-semibold text-purple-600 dark:text-purple-400 mb-1">My target</p>
+                            <div className="flex gap-1">
+                              {grades.map((g, gi) => {
+                                const disabled = gi > currentIdx;
+                                return (
+                                  <button
+                                    key={g}
+                                    onClick={() => { if (!disabled) updateConfig(name, 'targetGrade', g); }}
+                                    disabled={disabled}
+                                    className={`flex-1 py-1.5 rounded-lg text-[11px] font-bold border transition-all ${
+                                      disabled
+                                        ? 'bg-zinc-50 dark:bg-zinc-900 text-zinc-300 dark:text-zinc-700 border-zinc-100 dark:border-zinc-800 cursor-not-allowed'
+                                        : g === config.targetGrade
+                                          ? getTargetGradePillClass(true)
+                                          : getTargetGradePillClass(false)
+                                    }`}
+                                  >
+                                    {g}
+                                  </button>
+                                );
+                              })}
+                            </div>
                           </div>
                           {/* Improvement indicator */}
                           {targetIdx < currentIdx && (
-                            <div className="flex items-center justify-between mt-2 px-0.5">
+                            <div className="flex items-center justify-between pt-1 px-0.5">
                               <span className="text-[10px] text-zinc-400 dark:text-zinc-500">
                                 {config.currentGrade} <ArrowRight size={8} className="inline -mt-0.5" /> {config.targetGrade}
                               </span>
