@@ -37,14 +37,15 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   children,
 }) => {
   const [activeSection, setActiveSection] = useState(
-    progress.unlockedSection >= sections.length ? 0 : progress.unlockedSection
+    progress.unlockedSection >= sections.length ? sections.length - 1 : progress.unlockedSection
   );
   const [mobileSectionsOpen, setMobileSectionsOpen] = useState(false);
+  const isCompletingRef = useRef(false);
   const mainRef = useRef<HTMLElement>(null);
   const unlockedSection = progress.unlockedSection;
 
   useEffect(() => {
-    setActiveSection(progress.unlockedSection >= sections.length ? 0 : progress.unlockedSection);
+    setActiveSection(progress.unlockedSection >= sections.length ? sections.length - 1 : progress.unlockedSection);
   }, [progress.unlockedSection, sections.length]);
 
   // Scroll to top whenever the active section changes
@@ -56,6 +57,8 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   }, [activeSection]);
 
   const handleCompleteSection = () => {
+    if (isCompletingRef.current) return;
+    isCompletingRef.current = true;
     if (activeSection === unlockedSection && unlockedSection < sections.length) {
       onProgressUpdate({ unlockedSection: unlockedSection + 1 });
     }
@@ -64,6 +67,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
     } else {
       onBack();
     }
+    setTimeout(() => { isCompletingRef.current = false; }, 500);
   };
 
   const handleJumpToSection = (index: number) => {

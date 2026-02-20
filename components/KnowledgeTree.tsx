@@ -217,7 +217,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     const totalCourses = categoryCourses.length;
     const completedCourses = categoryCourses.reduce((count, course) => {
       const progress = userProgress[course.id];
-      const isComplete = progress && progress.unlockedSection >= course.sectionsCount - 1;
+      const isComplete = progress && progress.unlockedSection >= course.sectionsCount;
       return count + (isComplete ? 1 : 0);
     }, 0);
 
@@ -508,8 +508,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
           </h1>
           <p className="mt-2 text-zinc-400 dark:text-zinc-500 text-sm">
             {(() => {
-              const completed = allCourses.filter(c => { const p = userProgress[c.id]; return p && p.unlockedSection >= c.sectionsCount - 1; }).length;
-              const inProgress = allCourses.filter(c => { const p = userProgress[c.id]; return p && p.unlockedSection > 0 && p.unlockedSection < c.sectionsCount - 1; }).length;
+              const completed = allCourses.filter(c => { const p = userProgress[c.id]; return p && p.unlockedSection >= c.sectionsCount; }).length;
+              const inProgress = allCourses.filter(c => { const p = userProgress[c.id]; return p && p.unlockedSection > 0 && p.unlockedSection < c.sectionsCount; }).length;
               if (completed === allCourses.length) return 'You\'ve completed the full curriculum. Remarkable.';
               if (completed > 0) return `You've completed ${completed} of ${allCourses.length} modules.`;
               if (inProgress > 0) return `You have ${inProgress} module${inProgress !== 1 ? 's' : ''} in progress.`;
@@ -584,8 +584,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                 ))}
             </div>
             <AnimatePresence>
-                {filteredCourses.length > 0 && (
-                    <MotionDiv 
+                {filteredCourses.length > 0 ? (
+                    <MotionDiv
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
@@ -593,7 +593,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                     >
                         {filteredCourses.map((course, index) => {
                             const progress = userProgress[course.id];
-                            const isCompleted = progress && progress.unlockedSection >= course.sectionsCount - 1;
+                            const isCompleted = progress && progress.unlockedSection >= course.sectionsCount;
                             return (
                                 <BentoModuleTile
                                     key={course.id}
@@ -607,7 +607,16 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                             )
                         })}
                     </MotionDiv>
-                )}
+                ) : selectedTags.length > 0 ? (
+                    <MotionDiv
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="text-center py-12"
+                    >
+                        <p className="text-sm text-zinc-400 dark:text-zinc-500">No modules match the selected tags.</p>
+                    </MotionDiv>
+                ) : null}
             </AnimatePresence>
         </div>
 

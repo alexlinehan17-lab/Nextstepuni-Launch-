@@ -160,7 +160,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
     const totalCourses = courses.length;
     const completedCourses = courses.reduce((count, course) => {
       const progress = userProgress[course.id];
-      const isComplete = progress && progress.unlockedSection >= course.sectionsCount - 1;
+      const isComplete = progress && progress.unlockedSection >= course.sectionsCount;
       return count + (isComplete ? 1 : 0);
     }, 0);
     return Math.round((completedCourses / totalCourses) * 100);
@@ -221,7 +221,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 auto-rows-fr">
           {courses.map((course, idx) => {
             const progress = userProgress[course.id];
-            const isCompleted = progress && progress.unlockedSection >= course.sectionsCount - 1;
+            const isCompleted = progress && progress.unlockedSection >= course.sectionsCount;
             return (
               <BentoModuleTile
                 key={course.id}

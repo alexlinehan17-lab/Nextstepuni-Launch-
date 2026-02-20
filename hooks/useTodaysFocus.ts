@@ -30,7 +30,7 @@ export function useTodaysFocus(
     const inProgress = allCourses.filter(course => {
       const progress = userProgress[course.id];
       if (!progress) return false;
-      return progress.unlockedSection > 0 && progress.unlockedSection < course.sectionsCount - 1;
+      return progress.unlockedSection > 0 && progress.unlockedSection < course.sectionsCount;
     });
 
     if (inProgress.length > 0) {

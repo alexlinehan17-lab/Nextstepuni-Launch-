@@ -57,7 +57,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
 }) => {
   const completedCount = allCourses.filter(c => {
     const p = userProgress[c.id];
-    return p && p.unlockedSection >= c.sectionsCount - 1;
+    return p && p.unlockedSection >= c.sectionsCount;
   }).length;
 
   // Build 7-day mood timeline
@@ -151,7 +151,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
               if (categoryCourses.length === 0) return null;
               const completed = categoryCourses.filter(c => {
                 const p = userProgress[c.id];
-                return p && p.unlockedSection >= c.sectionsCount - 1;
+                return p && p.unlockedSection >= c.sectionsCount;
               }).length;
               const pct = Math.round((completed / categoryCourses.length) * 100);
 

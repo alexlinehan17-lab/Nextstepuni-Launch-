@@ -43,7 +43,7 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
   const totalModules = allCourses.length;
   const completedModules = allCourses.filter(course => {
     const progress = userProgress[course.id];
-    return progress && progress.unlockedSection >= course.sectionsCount - 1;
+    return progress && progress.unlockedSection >= course.sectionsCount;
   }).length;
 
   return createPortal(
@@ -103,7 +103,7 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
 
                 const categoryComplete = categoryCourses.filter(c => {
                   const p = userProgress[c.id];
-                  return p && p.unlockedSection >= c.sectionsCount - 1;
+                  return p && p.unlockedSection >= c.sectionsCount;
                 }).length;
 
                 return (
@@ -119,7 +119,7 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
                     <div className="grid grid-cols-4 sm:grid-cols-6 gap-3">
                       {categoryCourses.map((course, i) => {
                         const progress = userProgress[course.id];
-                        const isComplete = progress && progress.unlockedSection >= course.sectionsCount - 1;
+                        const isComplete = progress && progress.unlockedSection >= course.sectionsCount;
 
                         return (
                           <MotionDiv

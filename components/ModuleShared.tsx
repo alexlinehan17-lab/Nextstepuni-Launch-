@@ -135,18 +135,24 @@ export const PersonalStory = ({ children, name, role }: PersonalStoryProps) => (
 interface ActivityRingProps {
   progress: number;
   color?: string;
+  size?: number;
+  strokeWidth?: number;
 }
 
-export const ActivityRing = ({ progress, color = "#f59e0b" }: ActivityRingProps) => {
-  const radius = 35;
-  const circumference = 2 * Math.PI * radius;
+export const ActivityRing = ({ progress, color = "#f59e0b", size, strokeWidth }: ActivityRingProps) => {
+  const sw = strokeWidth ?? 10;
+  const r = size ? (size / 2) - (sw / 2) : 35;
+  const vb = size ?? 96;
+  const cx = vb / 2;
+  const circumference = 2 * Math.PI * r;
   const offset = circumference - (progress / 100) * circumference;
+  const px = size ? `${size}px` : '96px';
 
   return (
-    <div className="relative flex items-center justify-center w-24 h-24 mx-auto mb-4">
-      <svg className="w-full h-full -rotate-90 overflow-visible" viewBox="0 0 96 96">
-        <circle cx="48" cy="48" r={radius} stroke={color} strokeWidth="10" fill="transparent" className="opacity-10" />
-        <motion.circle cx="48" cy="48" r={radius} stroke={color} strokeWidth="10" fill="transparent" strokeDasharray={circumference} initial={{ strokeDashoffset: circumference }} animate={{ strokeDashoffset: offset }} transition={{ duration: 1.5, ease: "easeOut" }} strokeLinecap="round" style={{ filter: `drop-shadow(0 0 8px ${color}55)` }} />
+    <div className={`relative flex items-center justify-center ${size ? '' : 'w-24 h-24'} mx-auto mb-4`} style={size ? { width: px, height: px } : undefined}>
+      <svg className="w-full h-full -rotate-90 overflow-visible" viewBox={`0 0 ${vb} ${vb}`}>
+        <circle cx={cx} cy={cx} r={r} stroke={color} strokeWidth={sw} fill="transparent" className="opacity-10" />
+        <motion.circle cx={cx} cy={cx} r={r} stroke={color} strokeWidth={sw} fill="transparent" strokeDasharray={circumference} initial={{ strokeDashoffset: circumference }} animate={{ strokeDashoffset: offset }} transition={{ duration: 1.5, ease: "easeOut" }} strokeLinecap="round" style={{ filter: `drop-shadow(0 0 8px ${color}55)` }} />
       </svg>
     </div>
   );

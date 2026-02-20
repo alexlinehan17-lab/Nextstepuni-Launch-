@@ -8,7 +8,7 @@ import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ArrowRight, User as UserIcon, Key, Eye, EyeOff, Shield, User as StudentIcon, ArrowLeft, ChevronDown, School, GraduationCap } from 'lucide-react';
 import { auth, db } from '../firebase';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, deleteUser, sendPasswordResetEmail } from 'firebase/auth';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { SCHOOLS } from '../schoolData';
 
@@ -157,13 +157,20 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
       return;
     }
     
+    const username = createName.trim().toLowerCase();
+    if (!/^[a-z0-9_-]+$/.test(username)) {
+      setError("Username can only contain letters, numbers, hyphens and underscores.");
+      return;
+    }
+
+    let createdUser: import('firebase/auth').User | null = null;
     try {
-        const email = `${createName.trim().toLowerCase()}@nextstep.app`;
+        const email = `${username}@nextstep.app`;
         const userCredential = await createUserWithEmailAndPassword(auth, email, createPassword);
-        const user = userCredential.user;
+        createdUser = userCredential.user;
 
         // Create a corresponding user profile document in Firestore
-        await setDoc(doc(db, "users", user.uid), {
+        await setDoc(doc(db, "users", createdUser.uid), {
             name: createName.trim(),
             avatar: selectedAvatar,
             school: selectedSchool,
@@ -172,6 +179,9 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
         // onLoginSuccess will be triggered by onAuthStateChanged in App.tsx
         handleClose();
     } catch (error: any) {
+        if (createdUser) {
+          try { await deleteUser(createdUser); } catch (_) {}
+        }
         if (error.code === 'auth/email-already-in-use') {
             setError("This username is already taken.");
         } else if (error.code === 'auth/weak-password') {
@@ -217,7 +227,10 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
         </div>
         <AnimatePresence>{error && (<MotionP initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-xs text-red-400/90 font-medium">{error}</MotionP>)}</AnimatePresence>
         <button type="submit" className="w-full bg-[#CC785C] text-white font-medium py-3 rounded-xl hover:bg-[#B56A50] transition-colors text-sm mt-1">Continue</button>
-        <button type="button" onClick={() => setLoginView('choice')} className="flex items-center justify-center gap-1.5 text-sm text-zinc-400 dark:text-white/35 hover:text-zinc-600 dark:hover:text-white/60 w-full py-2 rounded-lg transition-colors mt-1">
+        {!isAdmin && (
+          <p className="text-[11px] text-zinc-400 dark:text-zinc-500 text-center mt-2">Forgot your password? Ask your guidance counsellor to reset it.</p>
+        )}
+        <button type="button" onClick={() => { setLoginView('choice'); setError(''); }} className="flex items-center justify-center gap-1.5 text-sm text-zinc-400 dark:text-white/35 hover:text-zinc-600 dark:hover:text-white/60 w-full py-2 rounded-lg transition-colors mt-1">
           <ArrowLeft size={14} /> Back
         </button>
       </form>
@@ -257,7 +270,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
         </div>
         <AnimatePresence>{error && (<MotionP initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-xs text-red-400/90 font-medium">{error}</MotionP>)}</AnimatePresence>
         <button type="submit" className="w-full bg-[#CC785C] text-white font-medium py-3 rounded-xl hover:bg-[#B56A50] transition-colors text-sm mt-1">Continue</button>
-        <button type="button" onClick={() => setLoginView('choice')} className="flex items-center justify-center gap-1.5 text-sm text-zinc-400 dark:text-white/35 hover:text-zinc-600 dark:hover:text-white/60 w-full py-2 rounded-lg transition-colors mt-1">
+        <button type="button" onClick={() => { setLoginView('choice'); setError(''); }} className="flex items-center justify-center gap-1.5 text-sm text-zinc-400 dark:text-white/35 hover:text-zinc-600 dark:hover:text-white/60 w-full py-2 rounded-lg transition-colors mt-1">
           <ArrowLeft size={14} /> Back
         </button>
       </form>
@@ -330,11 +343,11 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
                         <h2 className="font-sans text-2xl font-semibold text-zinc-900 dark:text-white/95 mb-2 text-center tracking-tight">Log in as</h2>
                         <p className="text-zinc-500 dark:text-white/40 text-sm text-center mb-8">Choose your account type</p>
                         <div className="space-y-3">
-                           <button onClick={() => setLoginView('student')} className="w-full flex items-center gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-white/[0.04] hover:bg-zinc-100 dark:hover:bg-white/[0.07] transition-all border border-zinc-200/50 dark:border-white/[0.08] hover:border-zinc-300 dark:hover:border-white/[0.15]">
+                           <button onClick={() => { setLoginView('student'); setError(''); }} className="w-full flex items-center gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-white/[0.04] hover:bg-zinc-100 dark:hover:bg-white/[0.07] transition-all border border-zinc-200/50 dark:border-white/[0.08] hover:border-zinc-300 dark:hover:border-white/[0.15]">
                              <div className="w-10 h-10 rounded-xl bg-[#CC785C]/10 flex items-center justify-center flex-shrink-0"><StudentIcon size={20} className="text-[#CC785C]"/></div>
                              <div className="text-left"><p className="font-medium text-zinc-900 dark:text-white/90 text-sm">Student</p><p className="text-xs text-zinc-500 dark:text-white/35 mt-0.5">Access your modules and progress.</p></div>
                            </button>
-                           <button onClick={() => setLoginView('gc')} className="w-full flex items-center gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-white/[0.04] hover:bg-zinc-100 dark:hover:bg-white/[0.07] transition-all border border-zinc-200/50 dark:border-white/[0.08] hover:border-zinc-300 dark:hover:border-white/[0.15]">
+                           <button onClick={() => { setLoginView('gc'); setError(''); }} className="w-full flex items-center gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-white/[0.04] hover:bg-zinc-100 dark:hover:bg-white/[0.07] transition-all border border-zinc-200/50 dark:border-white/[0.08] hover:border-zinc-300 dark:hover:border-white/[0.15]">
                              <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center flex-shrink-0"><GraduationCap size={20} className="text-emerald-500"/></div>
                              <div className="text-left"><p className="font-medium text-zinc-900 dark:text-white/90 text-sm">Guidance Counsellor</p><p className="text-xs text-zinc-500 dark:text-white/35 mt-0.5">View your school's student progress.</p></div>
                            </button>

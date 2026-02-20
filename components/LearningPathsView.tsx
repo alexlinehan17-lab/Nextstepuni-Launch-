@@ -34,7 +34,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
     const course = allCourses.find(c => c.id === moduleId);
     if (!course) return false;
     const p = userProgress[moduleId];
-    return p && p.unlockedSection >= course.sectionsCount - 1;
+    return p && p.unlockedSection >= course.sectionsCount;
   };
 
   const getFirstIncomplete = (path: LearningPath): string | null => {

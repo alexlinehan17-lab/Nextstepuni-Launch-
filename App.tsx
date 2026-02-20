@@ -54,9 +54,22 @@ interface UserProfileProps {
 
 const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, completedCount, totalCount, onOpenNorthStar, hasNorthStar }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
   const displayAvatar = avatarOverride || user.avatar;
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleClickOutside = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isOpen]);
+
   return (
-    <div className="relative">
+    <div className="relative" ref={dropdownRef}>
       <button onClick={() => setIsOpen(!isOpen)} className="flex items-center gap-2">
         <img src={getAvatarUrl(displayAvatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
       </button>
@@ -241,9 +254,18 @@ interface MobileProfileSheetProps {
   totalCount: number;
   onOpenNorthStar: () => void;
   hasNorthStar: boolean;
+  todayMood: string | null;
+  onSetMood: (mood: string) => void;
 }
 
-const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, completedCount, totalCount, onOpenNorthStar, hasNorthStar }) => {
+const MOBILE_MOOD_OPTIONS = [
+  { key: 'calm', label: 'Calm', emoji: '😌' },
+  { key: 'balanced', label: 'Balanced', emoji: '⚖️' },
+  { key: 'energized', label: 'Energized', emoji: '⚡' },
+  { key: 'stressed', label: 'Stressed', emoji: '😰' },
+];
+
+const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, completedCount, totalCount, onOpenNorthStar, hasNorthStar, todayMood, onSetMood }) => {
   const displayAvatar = avatarOverride || user.avatar;
   return (
     <AnimatePresence>
@@ -298,6 +320,27 @@ const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose
                   {streak.longestStreak > 1 && (
                     <p className="text-[10px] text-zinc-400 dark:text-zinc-500">Longest: {streak.longestStreak} days</p>
                   )}
+                </div>
+              </div>
+
+              {/* Mood Check-in */}
+              <div className="mb-3">
+                <p className="text-[10px] font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 px-1 mb-2">How are you feeling?</p>
+                <div className="flex gap-2">
+                  {MOBILE_MOOD_OPTIONS.map(m => (
+                    <button
+                      key={m.key}
+                      onClick={() => onSetMood(m.key)}
+                      className={`flex-1 flex flex-col items-center gap-1 py-2.5 rounded-xl text-xs font-medium transition-colors ${
+                        todayMood === m.key
+                          ? 'bg-[#CC785C]/10 text-[#CC785C] ring-1 ring-[#CC785C]/30'
+                          : 'bg-zinc-50 dark:bg-zinc-800/50 text-zinc-500 dark:text-zinc-400'
+                      }`}
+                    >
+                      <span className="text-base">{m.emoji}</span>
+                      {m.label}
+                    </button>
+                  ))}
                 </div>
               </div>
 
@@ -409,7 +452,7 @@ const App: React.FC = () => {
 
   const completedCount = studentCourses.filter(c => {
     const p = userProgress[c.id];
-    return p && p.unlockedSection >= c.sectionsCount - 1;
+    return p && p.unlockedSection >= c.sectionsCount;
   }).length;
 
   // Browser back/forward button support
@@ -552,15 +595,11 @@ const App: React.FC = () => {
   const handleProgressUpdate = async (moduleId: string, newProgress: ModuleProgress) => {
     if (!user || user.isAdmin) return;
 
-    const updatedProgress = {
-      ...userProgress,
-      [moduleId]: newProgress
-    };
-    setUserProgress(updatedProgress); // Optimistic UI update
+    setUserProgress(prev => ({ ...prev, [moduleId]: newProgress }));
 
     try {
       const progressDocRef = doc(db, "progress", user.uid);
-      await setDoc(progressDocRef, updatedProgress, { merge: true });
+      await setDoc(progressDocRef, { [moduleId]: newProgress }, { merge: true });
     } catch (error) {
       console.error("Failed to save progress:", error);
     }
@@ -616,7 +655,9 @@ const App: React.FC = () => {
     setCameFromJourney(false);
     setViewState('tree');
     window.scrollTo(0, 0);
-    window.history.pushState({ view: 'tree' }, '');
+    if (!isPopstateRef.current) {
+      window.history.pushState({ view: 'tree' }, '');
+    }
   };
 
   const handleOnboardingComplete = async (profile: StudentSubjectProfile, northStarData?: NorthStar) => {
@@ -917,7 +958,7 @@ const App: React.FC = () => {
       return (
         <DashboardView
           userProgress={userProgress}
-          allCourses={ALL_COURSES}
+          allCourses={studentCourses}
           categoryTitles={categoryTitles}
           streak={streak}
           recommendation={recommendation}
@@ -932,7 +973,7 @@ const App: React.FC = () => {
     if (viewState === 'learning-paths') {
       return (
         <LearningPathsView
-          allCourses={ALL_COURSES}
+          allCourses={studentCourses}
           userProgress={userProgress}
           onSelectModule={handleSelectModule}
           onBack={handleBackToTree}
@@ -1076,6 +1117,8 @@ const App: React.FC = () => {
           totalCount={studentCourses.length}
           onOpenNorthStar={() => setNorthStarEditOpen(true)}
           hasNorthStar={northStar !== null}
+          todayMood={todayMood}
+          onSetMood={setMood}
         />
       )}
 
