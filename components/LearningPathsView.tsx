@@ -56,7 +56,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
         <div className="flex items-center gap-4 mb-10">
           <button
             onClick={onBack}
-            className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex items-center justify-center text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
+            className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex items-center justify-center text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50"
           >
             <ArrowLeft size={18} />
           </button>
@@ -80,7 +80,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden"
+                className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden"
               >
                 <div className="p-6">
                   {/* Icon + title */}
@@ -113,14 +113,14 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
                     {firstIncomplete ? (
                       <button
                         onClick={() => onSelectModule(firstIncomplete)}
-                        className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-medium text-white transition-colors"
+                        className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-medium text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50 focus-visible:ring-offset-2"
                         style={{ backgroundColor: path.accentHex }}
                       >
                         {completed > 0 ? 'Continue' : 'Start'}
                         <ChevronRight size={14} />
                       </button>
                     ) : (
-                      <div className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-medium bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400">
+                      <div className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-200/50 dark:border-emerald-500/20">
                         <Check size={14} /> Completed
                       </div>
                     )}

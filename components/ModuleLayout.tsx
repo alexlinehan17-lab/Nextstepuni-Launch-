@@ -3,11 +3,53 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ArrowRight, CheckCircle2, Lock, List, X } from 'lucide-react';
 import { ModuleProgress, SectionDefinition, ModuleTheme } from '../types';
 import { ActivityRing } from './ModuleShared';
+
+/* ── Confetti celebration overlay ── */
+const CONFETTI_COLORS = ['#CC785C', '#f59e0b', '#3b82f6', '#10b981', '#8b5cf6', '#ef4444', '#ec4899'];
+const CONFETTI_COUNT = 60;
+
+const ConfettiOverlay: React.FC<{ onDone: () => void }> = ({ onDone }) => {
+  const pieces = useMemo(() => Array.from({ length: CONFETTI_COUNT }, (_, i) => ({
+    id: i,
+    x: Math.random() * 100,
+    delay: Math.random() * 0.6,
+    duration: 1.8 + Math.random() * 1.2,
+    color: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
+    rotation: Math.random() * 360,
+    size: 6 + Math.random() * 6,
+    drift: (Math.random() - 0.5) * 40,
+  })), []);
+
+  useEffect(() => {
+    const timer = setTimeout(onDone, 2800);
+    return () => clearTimeout(timer);
+  }, [onDone]);
+
+  return (
+    <div className="fixed inset-0 z-[200] pointer-events-none overflow-hidden">
+      {pieces.map(p => (
+        <motion.div
+          key={p.id}
+          initial={{ y: -20, x: `${p.x}vw`, opacity: 1, rotate: 0 }}
+          animate={{ y: '110vh', x: `${p.x + p.drift}vw`, opacity: [1, 1, 0], rotate: p.rotation + 360 }}
+          transition={{ duration: p.duration, delay: p.delay, ease: 'easeIn' }}
+          style={{
+            position: 'absolute',
+            width: p.size,
+            height: p.size * 0.6,
+            backgroundColor: p.color,
+            borderRadius: 2,
+          }}
+        />
+      ))}
+    </div>
+  );
+};
 
 interface ModuleLayoutProps {
   moduleNumber: string;
@@ -40,8 +82,10 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
     progress.unlockedSection >= sections.length ? sections.length - 1 : progress.unlockedSection
   );
   const [mobileSectionsOpen, setMobileSectionsOpen] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
   const isCompletingRef = useRef(false);
   const mainRef = useRef<HTMLElement>(null);
+  const pendingBackRef = useRef(false);
   const unlockedSection = progress.unlockedSection;
 
   useEffect(() => {
@@ -59,15 +103,29 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   const handleCompleteSection = () => {
     if (isCompletingRef.current) return;
     isCompletingRef.current = true;
-    if (activeSection === unlockedSection && unlockedSection < sections.length) {
+    const isLastSection = activeSection === sections.length - 1;
+    const isNewCompletion = activeSection === unlockedSection && unlockedSection < sections.length;
+    if (isNewCompletion) {
       onProgressUpdate({ unlockedSection: unlockedSection + 1 });
     }
-    if (activeSection < sections.length - 1) {
+    if (!isLastSection) {
       setActiveSection(activeSection + 1);
+    } else if (isNewCompletion) {
+      // First-time module completion — show confetti then navigate back
+      setShowConfetti(true);
+      pendingBackRef.current = true;
     } else {
       onBack();
     }
     setTimeout(() => { isCompletingRef.current = false; }, 500);
+  };
+
+  const handleConfettiDone = () => {
+    setShowConfetti(false);
+    if (pendingBackRef.current) {
+      pendingBackRef.current = false;
+      onBack();
+    }
   };
 
   const handleJumpToSection = (index: number) => {
@@ -143,14 +201,14 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
 
       {/* ── Mobile Top Bar ── */}
       <div className="md:hidden fixed top-0 left-0 right-0 h-14 z-40 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl border-b border-zinc-200/50 dark:border-white/[0.06] flex items-center gap-3 px-3" style={{ paddingTop: 'var(--sat, 0px)' }}>
-        <button onClick={onBack} className="p-2 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 shrink-0">
+        <button onClick={onBack} className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50">
           <ArrowLeft size={16} className="text-zinc-700 dark:text-zinc-300" />
         </button>
         <div className="flex-1 min-w-0">
           <p className={`text-[9px] font-semibold ${theme.sidebarModuleText} uppercase tracking-[0.15em] leading-none`}>Unit {moduleNumber}</p>
           <h1 className="text-sm font-semibold text-zinc-900 dark:text-white truncate">{moduleTitle}</h1>
         </div>
-        <button onClick={() => setMobileSectionsOpen(true)} className="p-2 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 shrink-0">
+        <button onClick={() => setMobileSectionsOpen(true)} className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50">
           <List size={16} className="text-zinc-700 dark:text-zinc-300" />
         </button>
       </div>
@@ -220,22 +278,22 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
       {/* ── Main Content ── */}
       <main ref={mainRef} className="flex-grow flex flex-col items-center pt-20 md:pt-24 px-6 md:px-16 pb-10 md:pb-0 md:overflow-y-auto md:h-screen">
         <div className="w-full max-w-4xl">
-          <AnimatePresence mode="wait">
-            <motion.div key={activeSection} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}>
+          <div key={activeSection} className="section-enter">
               {children(activeSection)}
-              <footer className="mt-24 flex items-center justify-between pt-12 border-t border-zinc-200 dark:border-zinc-800 px-4">
-                <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={handlePrev} disabled={activeSection === 0} className={`flex items-center gap-3 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-white px-6 py-3.5 rounded-lg font-semibold text-[11px] uppercase tracking-widest transition-all ${activeSection === 0 ? 'opacity-0 pointer-events-none' : ''}`}>
+              <footer className="mt-12 flex items-center justify-between pt-8 pb-6 border-t border-zinc-200 dark:border-zinc-800">
+                <button onClick={handlePrev} disabled={activeSection === 0} className={`flex items-center gap-3 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-white px-6 py-3.5 rounded-xl font-semibold text-[11px] uppercase tracking-widest transition-all hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50 focus-visible:ring-offset-2 ${activeSection === 0 ? 'invisible' : ''}`}>
                   <ArrowLeft size={16} /> Prev
-                </motion.button>
-                <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={handleCompleteSection} className={`group flex items-center gap-3 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 px-10 py-4 rounded-lg font-semibold text-[11px] uppercase tracking-widest ${theme.footerHoverBg} transition-all`}>
+                </button>
+                <button onClick={handleCompleteSection} className={`group flex items-center gap-3 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 px-10 py-4 rounded-xl font-semibold text-[11px] uppercase tracking-widest ${theme.footerHoverBg} transition-all hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50 focus-visible:ring-offset-2`}>
                   <span>{activeSection === sections.length - 1 ? finishButtonText : 'Continue'}</span>
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                </motion.button>
+                </button>
               </footer>
-            </motion.div>
-          </AnimatePresence>
+          </div>
         </div>
       </main>
+
+      {showConfetti && <ConfettiOverlay onDone={handleConfettiDone} />}
     </div>
   );
 };

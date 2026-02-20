@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import {
   BrainCircuit, Shield, AlertTriangle, UserCheck
@@ -55,6 +55,14 @@ const WorkingMemoryGrid = () => {
   const [phase, setPhase] = useState<'full' | 'threatened' | 'restored'>('full');
   const [blocks, setBlocks] = useState<MemoryBlock[]>(INITIAL_BLOCKS);
   const [animating, setAnimating] = useState(false);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  // Clean up any running interval on unmount
+  useEffect(() => {
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, []);
 
   const activeCount = blocks.filter(b => !b.threatened).length;
   const percentage = Math.round((activeCount / blocks.length) * 100);
@@ -65,14 +73,15 @@ const WorkingMemoryGrid = () => {
     const newBlocks = [...INITIAL_BLOCKS];
     let step = 0;
 
-    const interval = setInterval(() => {
+    intervalRef.current = setInterval(() => {
       if (step < THREAT_INDICES.length) {
         const idx = THREAT_INDICES[step];
         newBlocks[idx] = { label: THREAT_LABELS[step], threatened: true };
         setBlocks([...newBlocks]);
         step++;
       } else {
-        clearInterval(interval);
+        clearInterval(intervalRef.current!);
+        intervalRef.current = null;
         setPhase('threatened');
         setAnimating(false);
       }
@@ -86,14 +95,15 @@ const WorkingMemoryGrid = () => {
     const threatenedIndices = THREAT_INDICES.slice().reverse();
     let step = 0;
 
-    const interval = setInterval(() => {
+    intervalRef.current = setInterval(() => {
       if (step < threatenedIndices.length) {
         const idx = threatenedIndices[step];
         currentBlocks[idx] = { ...INITIAL_BLOCKS[idx], threatened: false };
         setBlocks([...currentBlocks]);
         step++;
       } else {
-        clearInterval(interval);
+        clearInterval(intervalRef.current!);
+        intervalRef.current = null;
         setPhase('restored');
         setAnimating(false);
       }
@@ -143,9 +153,7 @@ const WorkingMemoryGrid = () => {
         {blocks.map((block, i) => (
           <MotionDiv
             key={i}
-            layout
             animate={{
-              backgroundColor: block.threatened ? undefined : undefined,
               scale: block.threatened ? [1, 0.9, 1] : 1,
             }}
             transition={{ type: 'spring', stiffness: 400, damping: 25 }}

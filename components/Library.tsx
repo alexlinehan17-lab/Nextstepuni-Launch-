@@ -86,13 +86,13 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: index * 0.05, ease: [0.16, 1, 0.3, 1] }}
       whileHover={isUnlocked ? { scale: 1.01 } : {}}
-      className={`group relative overflow-hidden rounded-xl transition-all duration-300 ${getSpanClass(index)}
-        ${isUnlocked ? 'cursor-pointer hover:shadow-md' : 'cursor-not-allowed'}
+      className={`group relative overflow-hidden rounded-2xl transition-all duration-300 ${getSpanClass(index)}
+        ${isUnlocked ? 'cursor-pointer hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50 focus-visible:ring-offset-2' : 'cursor-not-allowed'}
       `}
       onClick={isUnlocked ? onClick : undefined}
     >
       {/* Category Pill */}
-      <div className={`absolute top-6 left-6 z-20 px-3 py-1 rounded-full ${pillBgColor} border border-black/10 dark:border-white/10`}>
+      <div className={`absolute top-6 left-6 z-20 px-3 py-1.5 rounded-full ${pillBgColor} border border-black/10 dark:border-white/10`}>
         <p className={`text-[9px] font-semibold uppercase tracking-wider text-white`}>{categoryTitle}</p>
       </div>
 
@@ -175,7 +175,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
       <header className="fixed top-0 left-0 right-0 z-[60] bg-zinc-50 dark:bg-zinc-950 border-b border-zinc-200 dark:border-zinc-800 px-4 py-4 md:px-10 md:py-6">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4 md:gap-8">
-            <button onClick={onBack} className="p-2.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800">
+            <button onClick={onBack} className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50">
               <ArrowLeft size={18} className="text-zinc-900 dark:text-white" />
             </button>
             <div className="hidden md:block h-10 w-px bg-zinc-200 dark:bg-zinc-800" />

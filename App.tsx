@@ -70,7 +70,7 @@ const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, upd
 
   return (
     <div className="relative" ref={dropdownRef}>
-      <button onClick={() => setIsOpen(!isOpen)} className="flex items-center gap-2">
+      <button onClick={() => setIsOpen(!isOpen)} className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50 rounded-full">
         <img src={getAvatarUrl(displayAvatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
       </button>
       <AnimatePresence>
@@ -223,10 +223,11 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
             <button
               key={tab.id}
               onClick={tab.action}
-              className={`flex flex-col items-center justify-center gap-1 flex-1 h-full transition-colors ${isActive ? 'text-[#CC785C]' : 'text-zinc-400 dark:text-zinc-500'}`}
+              className={`relative flex flex-col items-center justify-center gap-1 flex-1 h-full transition-colors focus-visible:outline-none focus-visible:bg-zinc-100 dark:focus-visible:bg-zinc-800 ${isActive ? 'text-[#CC785C]' : 'text-zinc-400 dark:text-zinc-500'}`}
             >
               <tab.icon size={20} strokeWidth={isActive ? 2 : 1.5} />
               <span className="text-[10px] font-medium">{tab.label}</span>
+              {isActive && <div className="absolute bottom-1.5 w-1 h-1 rounded-full bg-[#CC785C]" />}
             </button>
           );
         })}
@@ -723,7 +724,7 @@ const App: React.FC = () => {
 
     if (!user) {
       return (
-        <div className="relative min-h-screen flex flex-col">
+        <div className="relative min-h-screen flex flex-col overflow-x-hidden">
           {/* ── Navbar ── */}
           <nav className="fixed top-0 left-0 right-0 h-16 z-[100] bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-200/50 dark:border-white/[0.06]">
             <div className="max-w-6xl mx-auto h-full px-6 flex items-center justify-between">
@@ -733,7 +734,7 @@ const App: React.FC = () => {
               <Auth
                 onLoginSuccess={handleLoginSuccess}
                 buttonLabel="Log in"
-                buttonClassName="px-5 py-2.5 text-sm font-medium bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors"
+                buttonClassName="px-5 py-2.5 text-sm font-medium bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50 focus-visible:ring-offset-2"
                 showChevron
                 initialStep="login"
               />
@@ -767,7 +768,7 @@ const App: React.FC = () => {
                   initial={{ y: '100%' }}
                   animate={{ y: 0 }}
                   transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                  style={{ backgroundImage: 'linear-gradient(to top, rgba(250, 204, 21, 0.45) 35%, transparent 35%)', boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' } as React.CSSProperties}
+                  style={{ backgroundImage: 'linear-gradient(to top, rgba(217, 142, 116, 0.35) 35%, transparent 35%)', boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' } as React.CSSProperties}
                 >unfair advantage</motion.span>
               </span>
               {' '}
@@ -801,7 +802,7 @@ const App: React.FC = () => {
               <Auth
                 onLoginSuccess={handleLoginSuccess}
                 buttonLabel="Start Learning"
-                buttonClassName="px-8 py-3.5 text-base font-medium bg-[#CC785C] text-white rounded-full hover:bg-[#B56A50] transition-colors shadow-lg shadow-[#CC785C]/20"
+                buttonClassName="px-8 py-3.5 text-base font-medium bg-[#CC785C] text-white rounded-full hover:bg-[#B56A50] transition-colors shadow-lg shadow-[#CC785C]/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50 focus-visible:ring-offset-2"
                 initialStep="create"
               />
             </motion.div>
@@ -895,6 +896,9 @@ const App: React.FC = () => {
                 </div>
               </motion.div>
 
+              <div className="relative">
+              <div className="absolute left-0 top-0 bottom-4 w-8 bg-gradient-to-r from-zinc-50 dark:from-zinc-950 to-transparent z-10 pointer-events-none md:hidden" />
+              <div className="absolute right-0 top-0 bottom-4 w-8 bg-gradient-to-l from-zinc-50 dark:from-zinc-950 to-transparent z-10 pointer-events-none md:hidden" />
               <div ref={researchScrollRef} className="flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                 {RESEARCH_PAPERS.map((paper, i) => (
                   <motion.div
@@ -913,6 +917,7 @@ const App: React.FC = () => {
                     <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-5 pt-4 border-t border-zinc-100 dark:border-zinc-800">{paper.authors}</p>
                   </motion.div>
                 ))}
+              </div>
               </div>
 
               <motion.div

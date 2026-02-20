@@ -74,7 +74,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
         <div className="flex items-center gap-4 mb-10">
           <button
             onClick={onBack}
-            className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex items-center justify-center text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
+            className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex items-center justify-center text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50"
           >
             <ArrowLeft size={18} />
           </button>
@@ -89,7 +89,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.1 }}
-            className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-5"
+            className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-5"
           >
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-500/10 flex items-center justify-center">
@@ -106,7 +106,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.15 }}
-            className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-5"
+            className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-5"
           >
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-orange-50 dark:bg-orange-500/10 flex items-center justify-center">
@@ -123,7 +123,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.2 }}
-            className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-5"
+            className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-5"
           >
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center">
@@ -142,7 +142,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.25 }}
-          className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-6 mb-8"
+          className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-6 mb-8"
         >
           <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-5">Category Progress</h2>
           <div className="space-y-4">
@@ -181,12 +181,18 @@ const DashboardView: React.FC<DashboardViewProps> = ({
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.3 }}
-            className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-6 mb-8"
+            className="relative overflow-hidden bg-white dark:bg-zinc-900 border border-[#CC785C]/20 dark:border-[#CC785C]/10 rounded-2xl p-6 mb-8 shadow-sm shadow-[#CC785C]/5"
           >
-            <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-4">Today's Focus</h2>
+            <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#CC785C]" />
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-6 h-6 rounded-lg bg-[#CC785C]/10 flex items-center justify-center">
+                <BookOpen size={12} className="text-[#CC785C]" />
+              </div>
+              <h2 className="text-sm font-semibold uppercase tracking-widest text-[#CC785C]">Today's Focus</h2>
+            </div>
             <button
               onClick={() => onSelectModule(recommendation.moduleId)}
-              className="w-full flex items-center justify-between p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors group"
+              className="w-full flex items-center justify-between p-4 rounded-xl bg-[#CC785C]/5 dark:bg-[#CC785C]/10 hover:bg-[#CC785C]/10 dark:hover:bg-[#CC785C]/15 transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50"
             >
               <div className="text-left">
                 <p className="text-sm font-semibold text-zinc-900 dark:text-white">{recommendation.title}</p>
@@ -194,7 +200,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                   {recommendation.reason === 'in-progress' ? 'Continue where you left off' : 'Start this module'}
                 </p>
               </div>
-              <ChevronRight size={16} className="text-zinc-400 dark:text-zinc-500 shrink-0 group-hover:translate-x-0.5 transition-transform" />
+              <ChevronRight size={16} className="text-[#CC785C] shrink-0 group-hover:translate-x-0.5 transition-transform" />
             </button>
           </MotionDiv>
         )}
@@ -204,7 +210,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.35 }}
-          className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-6"
+          className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-6"
         >
           <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-5">7-Day Mood</h2>
           <div className="flex items-end justify-between gap-2">

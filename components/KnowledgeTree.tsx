@@ -148,7 +148,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay, ease: [0.16, 1, 0.3, 1] }}
       onClick={onClick}
-      className={`group relative overflow-hidden rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 cursor-pointer transition-all duration-300 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-lg md:hover:-translate-y-1 ${className}`}
+      className={`group relative overflow-hidden rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 cursor-pointer transition-all duration-300 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-lg md:hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50 focus-visible:ring-offset-2 ${className}`}
     >
       {/* Accent top bar — always visible when started, reveals on hover otherwise */}
       <div
@@ -181,7 +181,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
             {title}
           </h3>
           {description && (
-            <p className="mt-3 text-[12px] leading-relaxed text-zinc-400 dark:text-zinc-500">{description}</p>
+            <p className="mt-3 text-[12px] leading-relaxed text-zinc-500 dark:text-zinc-400">{description}</p>
           )}
         </div>
 
@@ -577,7 +577,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                     <button 
                         key={tag}
                         onClick={() => handleTagClick(tag)}
-                        className={`px-3.5 py-1.5 text-xs font-medium rounded-lg border transition-all duration-200 ${selectedTags.includes(tag) ? 'bg-[#CC785C] text-white border-[#CC785C]' : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:border-zinc-300 dark:hover:border-zinc-700'}`}
+                        className={`px-3.5 py-1.5 text-xs font-medium rounded-full border transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50 ${selectedTags.includes(tag) ? 'bg-[#CC785C] text-white border-[#CC785C]' : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:border-zinc-300 dark:hover:border-zinc-700'}`}
                     >
                         {tag}
                     </button>
@@ -586,6 +586,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
             <AnimatePresence>
                 {filteredCourses.length > 0 ? (
                     <MotionDiv
+                        layout
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
