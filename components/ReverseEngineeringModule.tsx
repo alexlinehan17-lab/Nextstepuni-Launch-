@@ -249,6 +249,7 @@ const ReverseEngineeringModule: React.FC<{ onBack: () => void; progress: ModuleP
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Set Your Countdown"
     >
       {(activeSection) => (
         <>

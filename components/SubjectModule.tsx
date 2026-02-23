@@ -104,6 +104,7 @@ const SubjectModule: React.FC<SubjectModuleProps> = ({ subjectId, onBack, progre
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText={content.finishButtonText}
     >
       {(activeSection) => (
         <>

@@ -111,7 +111,7 @@ const MasteringActiveRecallModule: React.FC<{ onBack: () => void; progress: Modu
   ];
 
   return (
-    <ModuleLayout moduleNumber="01" moduleTitle="Mastering Active Recall" moduleSubtitle="Why Testing Yourself Is a Superpower" moduleDescription={`Testing yourself isn't just for checking what you know — it's actually the single best way to make things stick in your memory for good.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
+    <ModuleLayout moduleNumber="01" moduleTitle="Mastering Active Recall" moduleSubtitle="Why Testing Yourself Is a Superpower" moduleDescription={`Testing yourself isn't just for checking what you know — it's actually the single best way to make things stick in your memory for good.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Activate Recall">
       {(activeSection) => (
         <>
           {activeSection === 0 && (

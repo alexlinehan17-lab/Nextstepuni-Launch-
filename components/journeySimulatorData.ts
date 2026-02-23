@@ -103,7 +103,7 @@ export const STAT_COLORS: Record<StatKey, string> = {
   energy: 'text-amber-500',
   academicCap: 'text-blue-500',
   socialSupport: 'text-emerald-500',
-  systemSavvy: 'text-[#CC785C]',
+  systemSavvy: 'text-[var(--accent-hex)]',
   resilience: 'text-rose-500',
 };
 
@@ -111,7 +111,7 @@ export const STAT_BG_COLORS: Record<StatKey, string> = {
   energy: 'bg-amber-500',
   academicCap: 'bg-blue-500',
   socialSupport: 'bg-emerald-500',
-  systemSavvy: 'bg-[#CC785C]',
+  systemSavvy: 'bg-[var(--accent-hex)]',
   resilience: 'bg-rose-500',
 };
 
@@ -138,8 +138,8 @@ export const ARCHETYPES: Record<string, Archetype> = {
     id: 'END_MENTOR',
     title: 'The Community Mentor',
     icon: 'hand-helping',
-    accentColor: 'text-[#CC785C] dark:text-[#CC785C]',
-    accentBg: 'bg-[#CC785C]/10 dark:bg-[#CC785C]/15',
+    accentColor: 'text-[var(--accent-hex)] dark:text-[var(--accent-hex)]',
+    accentBg: 'bg-[rgba(var(--accent),0.1)] dark:bg-[rgba(var(--accent),0.15)]',
     description: 'You mastered the system and shared that knowledge freely. You understood every grant, scheme, and deadline, and became the go-to person for advice. Your network is your net worth, and you\'ve built a powerful foundation for success beyond school.',
   },
   END_GOOD: {

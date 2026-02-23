@@ -663,6 +663,7 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Master Your Response"
     >
       {(activeSection) => (
         <>

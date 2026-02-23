@@ -366,7 +366,7 @@ const TheCognitiveArchitectureModule: React.FC<{ onBack: () => void; progress: M
   ];
 
   return (
-    <ModuleLayout moduleNumber="04" moduleTitle="How Your Memory Works" moduleSubtitle="Your Brain's User Manual" moduleDescription="Learn how your memory actually works — how information gets in, why most of it falls out, and what you can do to make the important stuff stick for the Leaving Cert." theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
+    <ModuleLayout moduleNumber="04" moduleTitle="How Your Memory Works" moduleSubtitle="Your Brain's User Manual" moduleDescription="Learn how your memory actually works — how information gets in, why most of it falls out, and what you can do to make the important stuff stick for the Leaving Cert." theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Map Your Memory">
       {(activeSection) => (
         <>
           {activeSection === 0 && (

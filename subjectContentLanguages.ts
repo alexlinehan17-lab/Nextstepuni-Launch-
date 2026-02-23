@@ -17,6 +17,7 @@ export const LANGUAGES_CONTENT: Record<string, SubjectModuleContent> = {
     moduleSubtitle: 'Break the code on the Leaving Cert\'s most popular subject',
     moduleDescription: 'A strategic deep-dive into Paper 1, Paper 2, and the PCLM marking system — so you know exactly where your marks come from and how to maximise every one of them.',
     themeName: 'blue',
+    finishButtonText: 'Write Your Best',
     sections: [
       // Section 1 — Exam Structure
       {
@@ -125,6 +126,7 @@ export const LANGUAGES_CONTENT: Record<string, SubjectModuleContent> = {
     moduleSubtitle: 'Turn the oral into your secret weapon and unlock marks across every component',
     moduleDescription: 'The Leaving Cert Irish exam is unique — the oral alone is worth 40% of your entire grade. This module shows you exactly how to exploit that structure and pick up marks that most students leave behind.',
     themeName: 'emerald',
+    finishButtonText: 'Bain Triail As!',
     sections: [
       // Section 1 — Exam Structure
       {
@@ -233,6 +235,7 @@ export const LANGUAGES_CONTENT: Record<string, SubjectModuleContent> = {
     moduleSubtitle: 'Oral, aural, reading, writing — know exactly where to focus for maximum marks',
     moduleDescription: 'The Leaving Cert French exam tests four skills across three assessment components. This module breaks down the mark allocation, what examiners actually reward, and how to turn each component into a strength.',
     themeName: 'rose',
+    finishButtonText: 'Allez-y!',
     sections: [
       // Section 1 — Exam Structure
       {
@@ -342,6 +345,7 @@ export const LANGUAGES_CONTENT: Record<string, SubjectModuleContent> = {
     moduleSubtitle: 'Navigate cases, nail the oral, and master the written paper\'s mark structure',
     moduleDescription: 'German rewards structure and precision. This module shows you how the exam is built, where the marks are concentrated, and how to turn German grammar from a headache into a scoring tool.',
     themeName: 'slate',
+    finishButtonText: "Los Geht's!",
     sections: [
       // Section 1 — Exam Structure
       {
@@ -450,6 +454,7 @@ export const LANGUAGES_CONTENT: Record<string, SubjectModuleContent> = {
     moduleSubtitle: 'Exploit the oral advantage and build the writing skills that examiners reward',
     moduleDescription: 'Spanish is one of the fastest-growing Leaving Cert subjects. This module shows you how to master each component — from the high-value oral to the written paper — so you can maximise your marks with targeted preparation.',
     themeName: 'orange',
+    finishButtonText: 'Vamos!',
     sections: [
       // Section 1 — Exam Structure
       {
@@ -557,6 +562,7 @@ export const LANGUAGES_CONTENT: Record<string, SubjectModuleContent> = {
     moduleSubtitle: 'A smaller cohort, but the same strategic approach applies — know your exam inside out',
     moduleDescription: 'Italian is one of the smaller Leaving Cert language subjects, but the exam structure mirrors the other European languages exactly. This module shows you how to prepare efficiently across all three components and pick up every available mark.',
     themeName: 'amber',
+    finishButtonText: 'Andiamo!',
     sections: [
       // Section 1 — Exam Structure
       {
@@ -665,6 +671,7 @@ export const LANGUAGES_CONTENT: Record<string, SubjectModuleContent> = {
     moduleSubtitle: 'Navigate three scripts, the oral, and a unique exam structure with confidence',
     moduleDescription: 'Japanese is one of the most distinctive Leaving Cert language subjects — three writing systems, a unique cultural context, and an exam that rewards both linguistic accuracy and cultural understanding. This module breaks it all down.',
     themeName: 'red',
+    finishButtonText: 'Ganbare!',
     sections: [
       // Section 1 — Exam Structure
       {

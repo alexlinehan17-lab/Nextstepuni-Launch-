@@ -141,7 +141,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
           <MotionDiv key="ns-sub2" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
             <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Tell us more</h2>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-2">
-              You picked <span className="font-semibold text-[#CC785C]">"{categoryLabel}"</span>
+              You picked <span className="font-semibold text-[var(--accent-hex)]">"{categoryLabel}"</span>
             </p>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
               {selectedCategory ? CATEGORY_PROMPTS[selectedCategory] : ''}
@@ -152,7 +152,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
               placeholder="Write a sentence or two about what this means to you..."
               maxLength={300}
               rows={4}
-              className="w-full p-4 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white/80 dark:bg-zinc-800 text-zinc-900 dark:text-white text-sm leading-relaxed resize-none focus:outline-none focus:ring-2 focus:ring-[#CC785C]/40 focus:border-[#CC785C]/60 transition-all placeholder:text-zinc-400 dark:placeholder:text-zinc-500"
+              className="w-full p-4 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white/80 dark:bg-zinc-800 text-zinc-900 dark:text-white text-sm leading-relaxed resize-none focus:outline-none focus:ring-2 focus:ring-[rgba(var(--accent),0.4)] focus:border-[rgba(var(--accent),0.6)] transition-all placeholder:text-zinc-400 dark:placeholder:text-zinc-500"
             />
             <p className="text-right text-[10px] text-zinc-400 dark:text-zinc-500 mt-1">
               {statement.length}/300
@@ -165,7 +165,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
           <MotionDiv key="ns-sub3" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
             <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Build Your Vision Board</h2>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
-              Pick <span className="font-semibold text-[#CC785C]">3-5 things</span> that represent what you're working towards. <span className="font-semibold text-[#CC785C]">{selectedCards.size} selected</span>
+              Pick <span className="font-semibold text-[var(--accent-hex)]">3-5 things</span> that represent what you're working towards. <span className="font-semibold text-[var(--accent-hex)]">{selectedCards.size} selected</span>
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
               {sortedVisionCards.map((card) => {
@@ -213,7 +213,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
         <button
           onClick={goNextSub}
           disabled={!canProceedSub()}
-          className="flex items-center gap-2 px-6 py-2.5 bg-[#CC785C] text-white font-semibold text-sm rounded-full hover:bg-[#B56A50] transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-[#CC785C]/20"
+          className="flex items-center gap-2 px-6 py-2.5 bg-[var(--accent-hex)] text-white font-semibold text-sm rounded-full hover:bg-[var(--accent-dark-hex)] transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-[rgba(var(--accent),0.2)]"
         >
           {subStep === 3 ? (
             <><Check size={14} /> Save My North Star</>

@@ -3,6 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+export type AccentThemeId = 'terracotta' | 'ocean' | 'sage' | 'midnight' | 'dusk-rose' | 'golden' | 'arctic' | 'obsidian';
+export type CardStyleId = 'default' | 'glass' | 'neon' | 'flat' | 'gradient';
+
 export type ModuleProgress = {
   unlockedSection: number;
 };
@@ -71,17 +74,10 @@ export interface PointsData {
   totalSpent: number;
 }
 
-export interface PointsTransaction {
-  type: 'skip-session' | 'rest-day-pass' | 'unlock-avatar' | 'unlock-theme';
-  cost: number;
-  dateKey: string;
-  detail?: string;
-  timestamp: number;
-}
-
 export interface CosmeticUnlocks {
   avatarSeeds: string[];
   themeColors: string[];
+  cardStyles: string[];
 }
 
 export interface EarnedRest {
@@ -93,7 +89,8 @@ export interface UserSettings {
   language: string;
   avatar: string;
   darkMode: boolean;
-
+  accentTheme: AccentThemeId;
+  cardStyle: CardStyleId;
   defaultWorkMinutes: number;
 }
 

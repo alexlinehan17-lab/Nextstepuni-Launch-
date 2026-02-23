@@ -128,7 +128,7 @@ const ReframingProgressModule: React.FC<{ onBack: () => void; progress: ModulePr
   ];
 
   return (
-    <ModuleLayout moduleNumber="10" moduleTitle="Reframing Progress" moduleSubtitle="The Outcome-Based Approach" moduleDescription={`Stop counting hours and start counting wins. This module shows you how to track what actually matters so you can see real progress every single day.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
+    <ModuleLayout moduleNumber="10" moduleTitle="Reframing Progress" moduleSubtitle="The Outcome-Based Approach" moduleDescription={`Stop counting hours and start counting wins. This module shows you how to track what actually matters so you can see real progress every single day.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Track Your Wins">
       {(activeSection) => (
         <>
           {activeSection === 0 && (

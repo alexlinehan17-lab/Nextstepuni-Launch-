@@ -486,6 +486,7 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Add Your 'Yet'"
     >
       {(activeSection) => (
         <>

@@ -309,6 +309,7 @@ const TheAutodidactsEngineModule: React.FC<{ onBack: () => void; progress: Modul
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Be Your Own Teacher"
     >
       {(activeSection) => (
         <>

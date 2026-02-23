@@ -478,6 +478,7 @@ const GameDayModule: React.FC<{ onBack: () => void; progress: ModuleProgress; on
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Game On"
     >
       {(activeSection) => (
         <>

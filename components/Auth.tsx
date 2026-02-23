@@ -200,9 +200,9 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
     exit: (direction: number) => ({ opacity: 0, x: direction > 0 ? -50 : 50 }),
   };
 
-  const inputClass = "w-full bg-zinc-50 dark:bg-white/[0.05] border border-zinc-200/50 dark:border-white/[0.1] rounded-xl py-3 px-4 text-zinc-900 dark:text-white/90 text-sm font-sans placeholder:text-zinc-400 dark:placeholder:text-white/30 focus:outline-none focus:border-[#CC785C]/60 focus:ring-1 focus:ring-[#CC785C]/30 transition-colors";
-  const inputWithIconClass = "w-full bg-zinc-50 dark:bg-white/[0.05] border border-zinc-200/50 dark:border-white/[0.1] rounded-xl py-3 pl-10 pr-4 text-zinc-900 dark:text-white/90 text-sm font-sans placeholder:text-zinc-400 dark:placeholder:text-white/30 focus:outline-none focus:border-[#CC785C]/60 focus:ring-1 focus:ring-[#CC785C]/30 transition-colors";
-  const inputWithBothClass = "w-full bg-zinc-50 dark:bg-white/[0.05] border border-zinc-200/50 dark:border-white/[0.1] rounded-xl py-3 pl-10 pr-10 text-zinc-900 dark:text-white/90 text-sm font-sans placeholder:text-zinc-400 dark:placeholder:text-white/30 focus:outline-none focus:border-[#CC785C]/60 focus:ring-1 focus:ring-[#CC785C]/30 transition-colors";
+  const inputClass = "w-full bg-zinc-50 dark:bg-white/[0.05] border border-zinc-200/50 dark:border-white/[0.1] rounded-xl py-3 px-4 text-zinc-900 dark:text-white/90 text-sm font-sans placeholder:text-zinc-400 dark:placeholder:text-white/30 focus:outline-none focus:border-[rgba(var(--accent),0.6)] focus:ring-1 focus:ring-[rgba(var(--accent),0.3)] transition-colors";
+  const inputWithIconClass = "w-full bg-zinc-50 dark:bg-white/[0.05] border border-zinc-200/50 dark:border-white/[0.1] rounded-xl py-3 pl-10 pr-4 text-zinc-900 dark:text-white/90 text-sm font-sans placeholder:text-zinc-400 dark:placeholder:text-white/30 focus:outline-none focus:border-[rgba(var(--accent),0.6)] focus:ring-1 focus:ring-[rgba(var(--accent),0.3)] transition-colors";
+  const inputWithBothClass = "w-full bg-zinc-50 dark:bg-white/[0.05] border border-zinc-200/50 dark:border-white/[0.1] rounded-xl py-3 pl-10 pr-10 text-zinc-900 dark:text-white/90 text-sm font-sans placeholder:text-zinc-400 dark:placeholder:text-white/30 focus:outline-none focus:border-[rgba(var(--accent),0.6)] focus:ring-1 focus:ring-[rgba(var(--accent),0.3)] transition-colors";
 
   const renderLoginForm = (isAdmin: boolean) => (
      <MotionDiv
@@ -226,7 +226,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
            </button>
         </div>
         <AnimatePresence>{error && (<MotionP initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-xs text-red-400/90 font-medium">{error}</MotionP>)}</AnimatePresence>
-        <button type="submit" className="w-full bg-[#CC785C] text-white font-medium py-3 rounded-xl hover:bg-[#B56A50] transition-colors text-sm mt-1">Continue</button>
+        <button type="submit" className="w-full bg-[var(--accent-hex)] text-white font-medium py-3 rounded-xl hover:bg-[var(--accent-dark-hex)] transition-colors text-sm mt-1">Continue</button>
         {!isAdmin && (
           <p className="text-[11px] text-zinc-400 dark:text-zinc-500 text-center mt-2">Forgot your password? Ask your guidance counsellor to reset it.</p>
         )}
@@ -269,7 +269,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
           </button>
         </div>
         <AnimatePresence>{error && (<MotionP initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-xs text-red-400/90 font-medium">{error}</MotionP>)}</AnimatePresence>
-        <button type="submit" className="w-full bg-[#CC785C] text-white font-medium py-3 rounded-xl hover:bg-[#B56A50] transition-colors text-sm mt-1">Continue</button>
+        <button type="submit" className="w-full bg-[var(--accent-hex)] text-white font-medium py-3 rounded-xl hover:bg-[var(--accent-dark-hex)] transition-colors text-sm mt-1">Continue</button>
         <button type="button" onClick={() => { setLoginView('choice'); setError(''); }} className="flex items-center justify-center gap-1.5 text-sm text-zinc-400 dark:text-white/35 hover:text-zinc-600 dark:hover:text-white/60 w-full py-2 rounded-lg transition-colors mt-1">
           <ArrowLeft size={14} /> Back
         </button>
@@ -344,7 +344,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
                         <p className="text-zinc-500 dark:text-white/40 text-sm text-center mb-8">Choose your account type</p>
                         <div className="space-y-3">
                            <button onClick={() => { setLoginView('student'); setError(''); }} className="w-full flex items-center gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-white/[0.04] hover:bg-zinc-100 dark:hover:bg-white/[0.07] transition-all border border-zinc-200/50 dark:border-white/[0.08] hover:border-zinc-300 dark:hover:border-white/[0.15]">
-                             <div className="w-10 h-10 rounded-xl bg-[#CC785C]/10 flex items-center justify-center flex-shrink-0"><StudentIcon size={20} className="text-[#CC785C]"/></div>
+                             <div className="w-10 h-10 rounded-xl bg-[rgba(var(--accent),0.1)] flex items-center justify-center flex-shrink-0"><StudentIcon size={20} className="text-[var(--accent-hex)]"/></div>
                              <div className="text-left"><p className="font-medium text-zinc-900 dark:text-white/90 text-sm">Student</p><p className="text-xs text-zinc-500 dark:text-white/35 mt-0.5">Access your modules and progress.</p></div>
                            </button>
                            <button onClick={() => { setLoginView('gc'); setError(''); }} className="w-full flex items-center gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-white/[0.04] hover:bg-zinc-100 dark:hover:bg-white/[0.07] transition-all border border-zinc-200/50 dark:border-white/[0.08] hover:border-zinc-300 dark:hover:border-white/[0.15]">
@@ -380,7 +380,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
                         </div>
                         <p className="text-xs text-zinc-500 dark:text-white/35 mt-3 font-medium uppercase tracking-widest">Choose your avatar</p>
                         <div className="grid grid-cols-4 gap-2">
-                          {AVATAR_SEEDS.map((seed) => (<MotionButton key={seed} type="button" onClick={() => setSelectedAvatar(seed)} className={`rounded-xl aspect-square p-1 md:p-1.5 transition-all ${selectedAvatar === seed ? 'ring-2 ring-[#CC785C] bg-[#CC785C]/10' : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'}`} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}><img src={getAvatarUrl(seed)} alt="Avatar" className="w-full h-full rounded-lg"/></MotionButton>))}
+                          {AVATAR_SEEDS.map((seed) => (<MotionButton key={seed} type="button" onClick={() => setSelectedAvatar(seed)} className={`rounded-xl aspect-square p-1 md:p-1.5 transition-all ${selectedAvatar === seed ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]' : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'}`} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}><img src={getAvatarUrl(seed)} alt="Avatar" className="w-full h-full rounded-lg"/></MotionButton>))}
                         </div>
                         <p className="text-xs text-zinc-500 dark:text-white/35 mt-3 font-medium uppercase tracking-widest">Your school</p>
                         <div className="relative">
@@ -397,7 +397,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
                           </select>
                         </div>
                         <AnimatePresence>{error && (<MotionP initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-xs text-red-400/90 font-medium mt-1">{error}</MotionP>)}</AnimatePresence>
-                        <button type="submit" disabled={!isProfileComplete} className="w-full bg-[#CC785C] text-white font-medium py-3 mt-auto rounded-xl hover:bg-[#B56A50] transition-colors text-sm disabled:bg-zinc-100 dark:disabled:bg-white/[0.06] disabled:text-zinc-400 dark:disabled:text-white/20 disabled:cursor-not-allowed">Create account</button>
+                        <button type="submit" disabled={!isProfileComplete} className="w-full bg-[var(--accent-hex)] text-white font-medium py-3 mt-auto rounded-xl hover:bg-[var(--accent-dark-hex)] transition-colors text-sm disabled:bg-zinc-100 dark:disabled:bg-white/[0.06] disabled:text-zinc-400 dark:disabled:text-white/20 disabled:cursor-not-allowed">Create account</button>
                         <button type="button" onClick={() => setStep('initial')} className="flex items-center justify-center gap-1.5 text-sm text-zinc-400 dark:text-white/35 hover:text-zinc-600 dark:hover:text-white/60 mt-1 w-full py-2 rounded-lg transition-colors">
                           <ArrowLeft size={14} /> Back
                         </button>

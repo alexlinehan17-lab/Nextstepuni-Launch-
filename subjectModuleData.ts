@@ -27,6 +27,7 @@ export interface SubjectModuleContent {
   moduleSubtitle: string;
   moduleDescription: string;
   themeName: string;
+  finishButtonText?: string;
   sections: SubjectSectionData[];
 }
 

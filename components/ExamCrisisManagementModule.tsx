@@ -987,6 +987,7 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Stay in Control"
     >
       {(activeSection) => (
         <>

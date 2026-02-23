@@ -277,6 +277,7 @@ const TheGrammarOfGritModule: React.FC<{ onBack: () => void; progress: ModulePro
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Rewrite Your Script"
     >
       {(activeSection) => (
         <>

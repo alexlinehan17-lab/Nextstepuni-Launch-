@@ -42,7 +42,7 @@ function gridPolygon(level: number, maxRadius: number, cx: number, cy: number): 
 export const PentagonRadar: React.FC<PentagonRadarProps> = ({
   values,
   labels,
-  colors = { fill: 'rgba(204, 120, 92, 0.25)', stroke: 'rgba(204, 120, 92, 0.8)' },
+  colors = { fill: 'rgba(var(--accent), 0.25)', stroke: 'rgba(var(--accent), 0.8)' },
   size = 200,
 }) => {
   // Use a larger internal viewBox with padding so labels don't clip
@@ -61,8 +61,8 @@ export const PentagonRadar: React.FC<PentagonRadarProps> = ({
       <defs>
         {/* Radial gradient fill for data polygon */}
         <radialGradient id={gradientId} cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="rgba(204, 120, 92, 0.35)" />
-          <stop offset="100%" stopColor="rgba(204, 120, 92, 0.08)" />
+          <stop offset="0%" stopColor="rgba(var(--accent), 0.35)" />
+          <stop offset="100%" stopColor="rgba(var(--accent), 0.08)" />
         </radialGradient>
         {/* Drop-shadow glow */}
         <filter id={glowId} x="-20%" y="-20%" width="140%" height="140%">

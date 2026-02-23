@@ -11,13 +11,13 @@ import {
     ArrowLeft, ArrowRight, Zap, Clock, Shield, RotateCcw,
     TrendingUp, Users, BookOpen, BookMarked,
     Lock, Compass, Brain, HandHelping, Target, ArrowUpRight, Award, Megaphone,
-    Flame, Scale, GraduationCap, Settings, CalendarDays, Calculator, Layers, GitBranch, Wrench
+    Flame, Scale, GraduationCap, Settings, CalendarDays, Calculator, Layers, GitBranch, Wrench, Gift
 } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak, type StudyBlock, getBlockId, toDateKey } from './subjectData';
 import { computeStreak, computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, computeWeeksUntilExam } from './timetableAlgorithm';
-import { type StudyReflection, type PointsData, type CosmeticUnlocks, type EarnedRest } from '../types';
+import { type StudyReflection, type PointsData, type CosmeticUnlocks, type EarnedRest, type UserSettings } from '../types';
 import SubjectOnboarding from './SubjectOnboarding';
 import SpacedRepetitionTimetable from './SpacedRepetitionTimetable';
 import CAOPointsSimulator from './CAOPointsSimulator';
@@ -53,6 +53,9 @@ interface InnovationZoneProps {
   autoOpenJourney?: boolean;
   savedJourneyResult?: JourneyResult | null;
   onJourneyComplete?: (result: JourneyResult) => void;
+  settings: UserSettings;
+  updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void;
+  onCosmeticUnlocksChange?: (unlocks: CosmeticUnlocks) => void;
 }
 
 const STAT_ICONS: Record<StatKey, React.ElementType> = {
@@ -164,10 +167,10 @@ const PhaseTransition: React.FC<{ phase: Phase; onComplete: () => void }> = ({ p
                 transition={{ delay: 0.2 }}
                 className="space-y-4"
             >
-                <p className="font-mono text-[10px] font-bold uppercase tracking-[0.3em] text-[#CC785C]">
+                <p className="font-mono text-[10px] font-bold uppercase tracking-[0.3em] text-[var(--accent-hex)]">
                     {meta?.months}
                 </p>
-                <div className="w-16 h-px bg-[#CC785C] mx-auto" />
+                <div className="w-16 h-px bg-[var(--accent-hex)] mx-auto" />
                 <h2 className="font-serif text-5xl sm:text-6xl font-semibold text-zinc-900 dark:text-white">
                     {phase}
                 </h2>
@@ -210,7 +213,7 @@ const TypingText: React.FC<{ text: string; sceneId: string }> = ({ text, sceneId
     }, [sceneId, words.length]);
 
     return (
-        <div className="relative max-w-2xl border-l-2 border-[#CC785C]/20 dark:border-[#CC785C]/15 pl-5">
+        <div className="relative max-w-2xl border-l-2 border-[rgba(var(--accent),0.2)] dark:border-[rgba(var(--accent),0.15)] pl-5">
             <p className="text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed mb-8">
                 {words.map((word, i) => (
                     <MotionSpan
@@ -261,8 +264,8 @@ const ChoiceButton: React.FC<{ choice: Choice; gameState: GameState; visitedScen
 
     if (chosen) {
         return (
-            <div className="py-5 border-t-2 border-[#CC785C]">
-                <p className="font-serif text-lg text-[#CC785C]">{choice.text}</p>
+            <div className="py-5 border-t-2 border-[var(--accent-hex)]">
+                <p className="font-serif text-lg text-[var(--accent-hex)]">{choice.text}</p>
             </div>
         );
     }
@@ -274,7 +277,7 @@ const ChoiceButton: React.FC<{ choice: Choice; gameState: GameState; visitedScen
             whileTap={{ scale: 0.99 }}
             className="w-full text-left py-5 border-t border-zinc-200 dark:border-white/10 transition-colors group"
         >
-            <p className="font-serif text-lg text-zinc-700 dark:text-zinc-200 group-hover:text-[#CC785C] dark:group-hover:text-[#CC785C] transition-colors">{choice.text}</p>
+            <p className="font-serif text-lg text-zinc-700 dark:text-zinc-200 group-hover:text-[var(--accent-hex)] dark:group-hover:text-[var(--accent-hex)] transition-colors">{choice.text}</p>
             {choice.flavor && <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-1 italic">{choice.flavor}</p>}
         </MotionButton>
     );
@@ -323,7 +326,7 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
                 transition={{ duration: 0.8, ease: 'easeOut' }}
                 className="min-h-[50vh] flex flex-col items-center justify-center text-center py-16"
             >
-                <p className="font-mono text-[10px] font-bold uppercase tracking-[0.3em] text-[#CC785C] mb-4">Your Archetype</p>
+                <p className="font-mono text-[10px] font-bold uppercase tracking-[0.3em] text-[var(--accent-hex)] mb-4">Your Archetype</p>
                 <h3 className="font-serif text-5xl sm:text-6xl font-semibold text-zinc-900 dark:text-white mb-6">
                     {archetype?.title || endScene?.title || 'Results Day'}
                 </h3>
@@ -351,8 +354,7 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1, points: statPentagonPoints(gameState, 200, 170, 110) }}
                             transition={{ duration: 1, ease: 'easeOut' }}
-                            fill="rgba(204, 120, 92, 0.15)"
-                            stroke="#CC785C"
+                            style={{ fill: 'rgba(var(--accent), 0.15)', stroke: 'var(--accent-hex)' }}
                             strokeWidth="2"
                         />
                         {(Object.keys(gameState) as StatKey[]).map((stat, i) => {
@@ -378,8 +380,8 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
 
             {/* B2. Weakest Stat Insight — editorial callout */}
             <div>
-                <div className="w-12 h-px bg-[#CC785C] mb-6" />
-                <p className="font-mono text-[11px] font-bold uppercase tracking-[0.25em] text-[#CC785C] mb-2">Your Biggest Vulnerability</p>
+                <div className="w-12 h-px bg-[var(--accent-hex)] mb-6" />
+                <p className="font-mono text-[11px] font-bold uppercase tracking-[0.25em] text-[var(--accent-hex)] mb-2">Your Biggest Vulnerability</p>
                 <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-3">{STAT_LABELS[weakestStat]}</h4>
                 <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-2xl">
                     {WEAKEST_STAT_INSIGHTS[weakestStat]}
@@ -393,7 +395,7 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
                     <div className="space-y-8">
                         {turningPoints.map((item, index) => (
                             <div key={index}>
-                                <p className="font-mono text-[11px] font-bold uppercase tracking-[0.2em] text-[#CC785C] mb-1">{item.scene.month}</p>
+                                <p className="font-mono text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--accent-hex)] mb-1">{item.scene.month}</p>
                                 <h5 className="font-serif text-xl font-semibold text-zinc-900 dark:text-white mb-1">{item.scene.title}</h5>
                                 <p className="text-zinc-600 dark:text-zinc-400">{item.choiceText}</p>
                             </div>
@@ -433,8 +435,8 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
                             className="w-full text-left py-4 border-t border-zinc-200 dark:border-white/10 group transition-colors"
                         >
                             <div className="flex items-center justify-between">
-                                <p className="font-serif text-lg text-zinc-700 dark:text-zinc-200 group-hover:text-[#CC785C] transition-colors">{mod.moduleTitle}</p>
-                                <ArrowRight size={14} className="text-zinc-300 dark:text-zinc-600 group-hover:text-[#CC785C] transition-colors flex-shrink-0" />
+                                <p className="font-serif text-lg text-zinc-700 dark:text-zinc-200 group-hover:text-[var(--accent-hex)] transition-colors">{mod.moduleTitle}</p>
+                                <ArrowRight size={14} className="text-zinc-300 dark:text-zinc-600 group-hover:text-[var(--accent-hex)] transition-colors flex-shrink-0" />
                             </div>
                         </button>
                     ))}
@@ -450,10 +452,10 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
                     {groupedPath.map(({ phase, nodes }) => (
                         <div key={phase} className="mb-8">
                             <div className="flex items-center gap-2 mb-4 -ml-8">
-                                <div className="w-6 h-6 rounded-full bg-[#CC785C] flex items-center justify-center ring-4 ring-white dark:ring-zinc-950">
+                                <div className="w-6 h-6 rounded-full bg-[var(--accent-hex)] flex items-center justify-center ring-4 ring-white dark:ring-zinc-950">
                                     <div className="w-2 h-2 rounded-full bg-white" />
                                 </div>
-                                <span className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[#CC785C]">{phase}</span>
+                                <span className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--accent-hex)]">{phase}</span>
                             </div>
 
                             {nodes.map((node, ni) => (
@@ -462,17 +464,17 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
                                         <div className="w-2 h-2 rounded-full bg-zinc-300 dark:bg-zinc-600" />
                                     </div>
                                     <p className="font-mono text-[10px] text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">{node.title}</p>
-                                    <p className="text-sm text-[#CC785C] dark:text-[#D4957F] mt-0.5">{node.choiceText.length > 80 ? node.choiceText.slice(0, 78) + '...' : node.choiceText}</p>
+                                    <p className="text-sm text-[var(--accent-hex)] dark:text-[var(--accent-hex)] mt-0.5">{node.choiceText.length > 80 ? node.choiceText.slice(0, 78) + '...' : node.choiceText}</p>
                                 </div>
                             ))}
                         </div>
                     ))}
 
                     <div className="relative -ml-8 flex items-center gap-2">
-                        <div className="w-6 h-6 rounded-full bg-[#CC785C] flex items-center justify-center ring-4 ring-white dark:ring-zinc-950">
+                        <div className="w-6 h-6 rounded-full bg-[var(--accent-hex)] flex items-center justify-center ring-4 ring-white dark:ring-zinc-950">
                             <div className="w-2 h-2 rounded-full bg-white" />
                         </div>
-                        <span className="font-mono text-[10px] font-bold text-[#CC785C] uppercase tracking-wider">{archetype?.title || 'End'}</span>
+                        <span className="font-mono text-[10px] font-bold text-[var(--accent-hex)] uppercase tracking-wider">{archetype?.title || 'End'}</span>
                     </div>
                 </div>
             </div>
@@ -481,7 +483,7 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
             <div className="text-center py-8">
                 <button
                     onClick={onRestart}
-                    className="font-mono text-[11px] font-bold uppercase tracking-[0.25em] text-[#CC785C] hover:text-[#A0614A] dark:hover:text-[#D4957F] transition-colors"
+                    className="font-mono text-[11px] font-bold uppercase tracking-[0.25em] text-[var(--accent-hex)] hover:text-[var(--accent-dark-hex)] dark:hover:text-[var(--accent-hex)] transition-colors"
                 >
                     Play Again
                 </button>
@@ -648,7 +650,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
             <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-16">
                 {/* Archetype — editorial hero */}
                 <div className="min-h-[40vh] flex flex-col items-center justify-center text-center py-16">
-                    <p className="font-mono text-[10px] font-bold uppercase tracking-[0.3em] text-[#CC785C] mb-4">Your Previous Result</p>
+                    <p className="font-mono text-[10px] font-bold uppercase tracking-[0.3em] text-[var(--accent-hex)] mb-4">Your Previous Result</p>
                     <h3 className="font-serif text-5xl sm:text-6xl font-semibold text-zinc-900 dark:text-white mb-6">{savedArch.title}</h3>
                     <p className="text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-lg mx-auto">{savedArch.description}</p>
                 </div>
@@ -672,8 +674,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1, points: statPentagonPoints(savedStats, 200, 170, 110) }}
                                 transition={{ duration: 1, ease: 'easeOut' }}
-                                fill="rgba(204, 120, 92, 0.15)"
-                                stroke="#CC785C"
+                                style={{ fill: 'rgba(var(--accent), 0.15)', stroke: 'var(--accent-hex)' }}
                                 strokeWidth="2"
                             />
                             {(Object.keys(savedStats) as StatKey[]).map((stat, i) => {
@@ -699,8 +700,8 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
 
                 {/* Vulnerability — editorial callout */}
                 <div>
-                    <div className="w-12 h-px bg-[#CC785C] mb-6" />
-                    <p className="font-mono text-[11px] font-bold uppercase tracking-[0.25em] text-[#CC785C] mb-2">Your Biggest Vulnerability</p>
+                    <div className="w-12 h-px bg-[var(--accent-hex)] mb-6" />
+                    <p className="font-mono text-[11px] font-bold uppercase tracking-[0.25em] text-[var(--accent-hex)] mb-2">Your Biggest Vulnerability</p>
                     <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-3">{STAT_LABELS[savedWeakestStat]}</h4>
                     <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-2xl">
                         {WEAKEST_STAT_INSIGHTS[savedWeakestStat]}
@@ -719,8 +720,8 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                                 className="w-full text-left py-4 border-t border-zinc-200 dark:border-white/10 group transition-colors"
                             >
                                 <div className="flex items-center justify-between">
-                                    <p className="font-serif text-lg text-zinc-700 dark:text-zinc-200 group-hover:text-[#CC785C] transition-colors">{mod.moduleTitle}</p>
-                                    <ArrowRight size={14} className="text-zinc-300 dark:text-zinc-600 group-hover:text-[#CC785C] transition-colors flex-shrink-0" />
+                                    <p className="font-serif text-lg text-zinc-700 dark:text-zinc-200 group-hover:text-[var(--accent-hex)] transition-colors">{mod.moduleTitle}</p>
+                                    <ArrowRight size={14} className="text-zinc-300 dark:text-zinc-600 group-hover:text-[var(--accent-hex)] transition-colors flex-shrink-0" />
                                 </div>
                             </button>
                         ))}
@@ -731,7 +732,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                 <div className="text-center py-8">
                     <button
                         onClick={() => { setShowingSavedResult(false); restartGame(); }}
-                        className="font-mono text-[11px] font-bold uppercase tracking-[0.25em] text-[#CC785C] hover:text-[#A0614A] dark:hover:text-[#D4957F] transition-colors"
+                        className="font-mono text-[11px] font-bold uppercase tracking-[0.25em] text-[var(--accent-hex)] hover:text-[var(--accent-dark-hex)] dark:hover:text-[var(--accent-hex)] transition-colors"
                     >
                         Play Again
                     </button>
@@ -786,8 +787,8 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                         {(() => {
                             const meta = PHASE_METADATA.find(p => p.name === currentScene.phase);
                             return (
-                                <div className="border-l-[3px] border-[#CC785C] pl-4 mb-6">
-                                    <p className="font-mono text-[10px] font-bold uppercase tracking-[0.3em] text-[#CC785C]">{currentScene.phase}</p>
+                                <div className="border-l-[3px] border-[var(--accent-hex)] pl-4 mb-6">
+                                    <p className="font-mono text-[10px] font-bold uppercase tracking-[0.3em] text-[var(--accent-hex)]">{currentScene.phase}</p>
                                     <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mt-0.5">{meta?.months}</p>
                                     <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1 leading-relaxed">{meta?.subtitle}</p>
                                 </div>
@@ -800,7 +801,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                         </p>
 
                         {/* Decorative rule */}
-                        <div className="w-10 h-px bg-[#CC785C]/40 mb-5" />
+                        <div className="w-10 h-px bg-[rgba(var(--accent),0.4)] mb-5" />
 
                         {/* Title */}
                         <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-zinc-900 dark:text-white leading-tight mb-6">{currentScene.title}</h2>
@@ -844,7 +845,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                         {/* Module link footnote */}
                         {lastModuleLink && chosenText && (
                             <p className="text-xs italic text-zinc-500 dark:text-zinc-400 mt-4">
-                                Related: <span className="text-[#CC785C] dark:text-[#CC785C]">{lastModuleLink.moduleTitle}</span>
+                                Related: <span className="text-[var(--accent-hex)] dark:text-[var(--accent-hex)]">{lastModuleLink.moduleTitle}</span>
                             </p>
                         )}
 
@@ -852,7 +853,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                         {currentSceneId === 'START' && previousResult && ARCHETYPES[previousResult.endingId] && (
                             <div className="mt-8 pt-6 border-t border-zinc-200 dark:border-white/10">
                                 <p className="font-mono text-[10px] text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">
-                                    Previous result: <span className="text-[#CC785C] font-bold">{ARCHETYPES[previousResult.endingId].title}</span>
+                                    Previous result: <span className="text-[var(--accent-hex)] font-bold">{ARCHETYPES[previousResult.endingId].title}</span>
                                 </p>
                             </div>
                         )}
@@ -865,29 +866,97 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
 
 // ─── ToolCard ────────────────────────────────────────────────────────────────
 
-const ToolCard: React.FC<{title: string, description: string, icon: React.ElementType, onClick: () => void, disabled?: boolean, accentColor?: string}> =
-({ title, description, icon: Icon, onClick, disabled = false, accentColor = 'text-[#CC785C]' }) => (
-    <MotionButton
-        onClick={onClick}
-        disabled={disabled}
-        whileHover={{ scale: disabled ? 1 : 1.03 }}
-        className={`w-full text-left p-6 rounded-2xl border-2 transition-all ${disabled ? 'bg-zinc-50 dark:bg-white/5 border-zinc-200 dark:border-white/10 opacity-50 cursor-not-allowed' : 'bg-white/50 dark:bg-white/10 border-zinc-200/80 dark:border-white/15 hover:border-[#CC785C]/40 dark:hover:border-[#CC785C]/50 cursor-pointer'}`}
+interface ToolCardProps {
+    title: string;
+    description: string;
+    icon: React.ElementType;
+    onClick: () => void;
+    disabled?: boolean;
+    tag: string;
+    accentHex: string;
+    gridClass: string;
+    iconBg: string;
+    iconColor: string;
+    accentBarColor: string;
+    tagBg: string;
+    tagText: string;
+    hoverBorder: string;
+    index: number;
+}
+
+const ToolCard: React.FC<ToolCardProps> = ({
+    title, description, icon: Icon, onClick, disabled = false,
+    tag, accentHex, gridClass, iconBg, iconColor, accentBarColor,
+    tagBg, tagText, hoverBorder, index,
+}) => (
+    <MotionDiv
+        onClick={disabled ? undefined : onClick}
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.45, delay: index * 0.08, ease: [0.25, 0.46, 0.45, 0.94] }}
+        className={`group relative flex flex-col rounded-2xl border-2 overflow-hidden transition-all duration-300 ${gridClass} ${
+            disabled
+                ? 'bg-zinc-50 dark:bg-white/5 border-zinc-200 dark:border-white/10 cursor-not-allowed'
+                : `bg-white/60 dark:bg-white/[0.06] border-zinc-200/80 dark:border-white/10 ${hoverBorder} cursor-pointer hover:shadow-lg dark:hover:shadow-2xl`
+        }`}
     >
-        <div className="flex items-center gap-4">
-            <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${disabled ? 'bg-zinc-200 dark:bg-white/10' : 'bg-[#CC785C]/10 dark:bg-[#CC785C]/20'}`}>
-                <Icon size={24} className={disabled ? 'text-zinc-400 dark:text-zinc-600' : accentColor} />
+        {/* Accent top bar */}
+        <div className={`h-[3px] w-full transition-opacity duration-300 ${disabled ? 'opacity-0' : 'opacity-0 group-hover:opacity-100'} ${accentBarColor}`} />
+
+        {/* Radial hover glow */}
+        {!disabled && (
+            <div
+                className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                style={{ background: `radial-gradient(ellipse at 50% 0%, ${accentHex}15 0%, transparent 70%)` }}
+            />
+        )}
+
+        <div className="relative flex flex-col flex-grow p-5 md:p-6">
+            {/* Icon + Tag row */}
+            <div className="flex items-start justify-between mb-4">
+                <div className={`w-14 h-14 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110 ${
+                    disabled ? 'bg-zinc-200 dark:bg-white/10' : iconBg
+                }`}>
+                    {disabled
+                        ? <Lock size={24} className="text-zinc-400 dark:text-zinc-600" />
+                        : <Icon size={26} className={iconColor} />
+                    }
+                </div>
+                <span className={`text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-full ${
+                    disabled ? 'bg-zinc-200 dark:bg-white/10 text-zinc-400 dark:text-zinc-600' : `${tagBg} ${tagText}`
+                }`}>
+                    {disabled ? 'Needs Profile' : tag}
+                </span>
             </div>
-            <div>
-                <h3 className="font-bold text-zinc-800 dark:text-white">{title}</h3>
-                <p className="text-xs text-zinc-500 dark:text-zinc-400">{disabled ? "Coming Soon..." : description}</p>
+
+            {/* Title + Description */}
+            <h3 className={`font-serif font-semibold text-base md:text-lg tracking-tight mb-1.5 ${
+                disabled ? 'text-zinc-400 dark:text-zinc-600' : 'text-zinc-800 dark:text-white'
+            }`}>{title}</h3>
+            <p className={`text-xs leading-relaxed flex-grow ${
+                disabled ? 'text-zinc-400 dark:text-zinc-600' : 'text-zinc-500 dark:text-zinc-400'
+            }`}>{disabled ? 'Complete your Subject Profile to unlock this tool.' : description}</p>
+
+            {/* Footer */}
+            <div className={`mt-4 pt-3 border-t flex items-center justify-between ${
+                disabled ? 'border-zinc-200 dark:border-white/5' : 'border-zinc-200/60 dark:border-white/10'
+            }`}>
+                <span className={`font-mono text-[10px] uppercase tracking-wider ${
+                    disabled ? 'text-zinc-300 dark:text-zinc-700' : 'text-zinc-400 dark:text-zinc-500'
+                }`}>
+                    {disabled ? 'Locked' : 'Launch Tool'}
+                </span>
+                {!disabled && (
+                    <ArrowRight size={14} className="text-zinc-300 dark:text-zinc-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                )}
             </div>
         </div>
-    </MotionButton>
+    </MotionDiv>
 );
 
 // ─── InnovationZone ──────────────────────────────────────────────────────────
 
-const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, autoOpenJourney, savedJourneyResult, onJourneyComplete }) => {
+const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, autoOpenJourney, savedJourneyResult, onJourneyComplete, settings, updateSetting, onCosmeticUnlocksChange }) => {
     const [activeTool, setActiveTool] = useState<string | null>(autoOpenJourney ? 'journey' : null);
     const [subjectProfile, setSubjectProfile] = useState<StudentSubjectProfile | null>(null);
     const [showOnboarding, setShowOnboarding] = useState(false);
@@ -897,12 +966,30 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const [timetableStreak, setTimetableStreak] = useState<TimetableStreak>({ currentStreak: 0, lastActiveDate: '', longestStreak: 0 });
     const [reflections, setReflections] = useState<StudyReflection[]>([]);
     const [pointsData, setPointsData] = useState<PointsData>({ totalEarned: 0, totalSpent: 0 });
-    const [cosmeticUnlocks, setCosmeticUnlocks] = useState<CosmeticUnlocks>({ avatarSeeds: [], themeColors: [] });
+    const [cosmeticUnlocks, setCosmeticUnlocks] = useState<CosmeticUnlocks>({ avatarSeeds: [], themeColors: [], cardStyles: [] });
     const [earnedRest, setEarnedRest] = useState<EarnedRest>({ skippedSessions: [], restDayPasses: [] });
+
+    // Refs to always access latest state in callbacks (avoids stale closures)
+    const pointsDataRef = useRef(pointsData);
+    pointsDataRef.current = pointsData;
+    const cosmeticUnlocksRef = useRef(cosmeticUnlocks);
+    cosmeticUnlocksRef.current = cosmeticUnlocks;
+    const earnedRestRef = useRef(earnedRest);
+    earnedRestRef.current = earnedRest;
+    const onCosmeticUnlocksChangeRef = useRef(onCosmeticUnlocksChange);
+    onCosmeticUnlocksChangeRef.current = onCosmeticUnlocksChange;
     const [pendingCompletion, setPendingCompletion] = useState<{ dateKey: string; blockId: string; subjectName: string; sessionType: 'new-learning' | 'practice' | 'revision' } | null>(null);
     const [showRewardShop, setShowRewardShop] = useState(false);
     const [showJournal, setShowJournal] = useState(false);
     const [flashcardData, setFlashcardData] = useState<FlashcardData>({ decks: [], reviewStreak: { currentStreak: 0, longestStreak: 0, lastReviewDate: '' }, reviewHistory: {} });
+    const [showPointsExplainer, setShowPointsExplainer] = useState(() => {
+        try { return !localStorage.getItem('nextstep-points-explainer-v2'); } catch { return true; }
+    });
+
+    const dismissPointsExplainer = useCallback(() => {
+        setShowPointsExplainer(false);
+        try { localStorage.setItem('nextstep-points-explainer-v2', '1'); } catch {}
+    }, []);
 
     // Load subject profile from Firebase
     useEffect(() => {
@@ -928,7 +1015,12 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                         setPointsData(data.pointsData as PointsData);
                     }
                     if (data.cosmeticUnlocks) {
-                        setCosmeticUnlocks(data.cosmeticUnlocks as CosmeticUnlocks);
+                        setCosmeticUnlocks({
+                            avatarSeeds: [],
+                            themeColors: [],
+                            cardStyles: [],
+                            ...data.cosmeticUnlocks,
+                        });
                     }
                     if (data.earnedRest) {
                         setEarnedRest(data.earnedRest as EarnedRest);
@@ -1047,51 +1139,69 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         });
     }, [pendingCompletion, timetableStreak.currentStreak, reflections, pointsData, getStreakMultiplier, executeToggle]);
 
-    const handleSpendPoints = useCallback((type: 'skip-session' | 'rest-day-pass' | 'unlock-avatar' | 'unlock-theme', detail?: string) => {
+    const handleSpendPoints = useCallback((type: 'skip-session' | 'rest-day-pass' | 'unlock-avatar' | 'unlock-theme' | 'unlock-card-style', detail?: string) => {
         const costs: Record<string, number> = {
             'skip-session': 20,
             'rest-day-pass': 60,
             'unlock-avatar': 50,
             'unlock-theme': 40,
+            'unlock-card-style': 40,
         };
         const cost = costs[type];
-        const balance = pointsData.totalEarned - pointsData.totalSpent;
+
+        // Read latest state from refs to avoid stale closures
+        const currentPoints = pointsDataRef.current;
+        const currentCosmeticUnlocks = cosmeticUnlocksRef.current;
+        const currentEarnedRest = earnedRestRef.current;
+
+        const balance = currentPoints.totalEarned - currentPoints.totalSpent;
         if (balance < cost) return;
 
         const updatedPointsData: PointsData = {
-            totalEarned: pointsData.totalEarned,
-            totalSpent: pointsData.totalSpent + cost,
+            totalEarned: currentPoints.totalEarned,
+            totalSpent: currentPoints.totalSpent + cost,
         };
         setPointsData(updatedPointsData);
 
         const todayKey = toDateKey(new Date());
-        let updatedEarnedRest = earnedRest;
-        let updatedCosmeticUnlocks = cosmeticUnlocks;
+        let updatedEarnedRest = currentEarnedRest;
+        let updatedCosmeticUnlocks = currentCosmeticUnlocks;
 
         if (type === 'skip-session' && detail) {
             updatedEarnedRest = {
-                ...earnedRest,
-                skippedSessions: [...earnedRest.skippedSessions, detail],
+                ...currentEarnedRest,
+                skippedSessions: [...currentEarnedRest.skippedSessions, detail],
             };
             setEarnedRest(updatedEarnedRest);
         } else if (type === 'rest-day-pass') {
             updatedEarnedRest = {
-                ...earnedRest,
-                restDayPasses: [...earnedRest.restDayPasses, todayKey],
+                ...currentEarnedRest,
+                restDayPasses: [...currentEarnedRest.restDayPasses, todayKey],
             };
             setEarnedRest(updatedEarnedRest);
         } else if (type === 'unlock-avatar' && detail) {
             updatedCosmeticUnlocks = {
-                ...cosmeticUnlocks,
-                avatarSeeds: [...cosmeticUnlocks.avatarSeeds, detail],
+                ...currentCosmeticUnlocks,
+                avatarSeeds: [...(currentCosmeticUnlocks.avatarSeeds || []), detail],
             };
             setCosmeticUnlocks(updatedCosmeticUnlocks);
         } else if (type === 'unlock-theme' && detail) {
             updatedCosmeticUnlocks = {
-                ...cosmeticUnlocks,
-                themeColors: [...cosmeticUnlocks.themeColors, detail],
+                ...currentCosmeticUnlocks,
+                themeColors: [...(currentCosmeticUnlocks.themeColors || []), detail],
             };
             setCosmeticUnlocks(updatedCosmeticUnlocks);
+        } else if (type === 'unlock-card-style' && detail) {
+            updatedCosmeticUnlocks = {
+                ...currentCosmeticUnlocks,
+                cardStyles: [...(currentCosmeticUnlocks.cardStyles || []), detail],
+            };
+            setCosmeticUnlocks(updatedCosmeticUnlocks);
+        }
+
+        // Notify parent of cosmetic unlock changes so App.tsx state stays in sync
+        if (updatedCosmeticUnlocks !== currentCosmeticUnlocks) {
+            onCosmeticUnlocksChangeRef.current?.(updatedCosmeticUnlocks);
         }
 
         if (user?.uid) {
@@ -1099,9 +1209,16 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                 pointsData: updatedPointsData,
                 earnedRest: updatedEarnedRest,
                 cosmeticUnlocks: updatedCosmeticUnlocks,
-            }, { merge: true }).catch(e => console.error('Failed to save purchase:', e));
+            }, { merge: true }).catch(e => {
+                console.error('Failed to save purchase:', e);
+                // Roll back to latest ref values (may have changed since write started)
+                setPointsData(currentPoints);
+                setEarnedRest(currentEarnedRest);
+                setCosmeticUnlocks(currentCosmeticUnlocks);
+                onCosmeticUnlocksChangeRef.current?.(currentCosmeticUnlocks);
+            });
         }
-    }, [pointsData, earnedRest, cosmeticUnlocks, user?.uid]);
+    }, [user?.uid]);
 
     const handleFlashcardDataChange = useCallback((newData: FlashcardData) => {
         setFlashcardData(newData);
@@ -1163,11 +1280,46 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     }, [subjectProfile, timetableCompletions, earnedRest.skippedSessions]);
 
     const tools = [
-        { id: 'journey', title: 'Academic Journey Simulator', description: 'Navigate the choices of your final school year.', icon: GitBranch, needsProfile: false, component: <AcademicJourneyGame onSelectModule={onSelectModule} user={user} savedJourneyResult={savedJourneyResult} onJourneyComplete={onJourneyComplete} /> },
-        { id: 'cao-simulator', title: 'CAO Points Simulator', description: 'Explore how grade changes affect your CAO points.', icon: Calculator, needsProfile: true, component: subjectProfile ? <CAOPointsSimulator profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} /> : null },
-        { id: 'focus', title: 'Deep Focus Timer', description: 'Pomodoro timer tied to your study timetable.', icon: Clock, needsProfile: false, component: <DeepFocusTimer profile={subjectProfile ?? undefined} completions={timetableCompletions} onToggleCompletion={handleToggleCompletion} /> },
-        { id: 'flashcards', title: 'Flashcard Studio', description: 'Create and review flashcards with spaced repetition scheduling.', icon: Layers, needsProfile: false, component: <FlashcardSystem data={flashcardData} onDataChange={handleFlashcardDataChange} onPointsEarn={handleFlashcardPointsEarn} subjectNames={subjectProfile?.subjects.map(s => s.subjectName)} /> },
-        { id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true, component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); } } }} /> : null },
+        {
+            id: 'journey', title: 'Academic Journey Simulator', description: 'Navigate the choices of your final school year.', icon: GitBranch, needsProfile: false,
+            tag: 'Simulator', accentHex: '#f59e0b', gridClass: 'md:col-span-3',
+            iconBg: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400',
+            accentBarColor: 'bg-amber-500', tagBg: 'bg-amber-100 dark:bg-amber-900/30', tagText: 'text-amber-700 dark:text-amber-400',
+            hoverBorder: 'hover:border-amber-400/50 dark:hover:border-amber-500/40',
+            component: <AcademicJourneyGame onSelectModule={onSelectModule} user={user} savedJourneyResult={savedJourneyResult} onJourneyComplete={onJourneyComplete} />,
+        },
+        {
+            id: 'cao-simulator', title: 'CAO Points Simulator', description: 'Explore how grade changes affect your CAO points.', icon: Calculator, needsProfile: true,
+            tag: 'Simulator', accentHex: '#64748b', gridClass: 'md:col-span-3',
+            iconBg: 'bg-slate-100 dark:bg-slate-800/40', iconColor: 'text-slate-600 dark:text-slate-300',
+            accentBarColor: 'bg-slate-500', tagBg: 'bg-slate-100 dark:bg-slate-800/40', tagText: 'text-slate-600 dark:text-slate-300',
+            hoverBorder: 'hover:border-slate-400/50 dark:hover:border-slate-500/40',
+            component: subjectProfile ? <CAOPointsSimulator profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} /> : null,
+        },
+        {
+            id: 'focus', title: 'Deep Focus Timer', description: 'Pomodoro timer tied to your study timetable.', icon: Clock, needsProfile: false,
+            tag: 'Timer', accentHex: '#14b8a6', gridClass: 'md:col-span-2',
+            iconBg: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400',
+            accentBarColor: 'bg-teal-500', tagBg: 'bg-teal-100 dark:bg-teal-900/30', tagText: 'text-teal-700 dark:text-teal-400',
+            hoverBorder: 'hover:border-teal-400/50 dark:hover:border-teal-500/40',
+            component: <DeepFocusTimer profile={subjectProfile ?? undefined} completions={timetableCompletions} onToggleCompletion={handleToggleCompletion} />,
+        },
+        {
+            id: 'flashcards', title: 'Flashcard Studio', description: 'Create and review flashcards with spaced repetition scheduling.', icon: Layers, needsProfile: false,
+            tag: 'Studio', accentHex: 'var(--accent-hex)', gridClass: 'md:col-span-2',
+            iconBg: 'bg-[rgba(var(--accent),0.1)] dark:bg-[rgba(var(--accent),0.2)]', iconColor: 'text-[var(--accent-hex)]',
+            accentBarColor: 'bg-[var(--accent-hex)]', tagBg: 'bg-[rgba(var(--accent),0.1)] dark:bg-[rgba(var(--accent),0.2)]', tagText: 'text-[var(--accent-hex)]',
+            hoverBorder: 'hover:border-[rgba(var(--accent),0.4)] dark:hover:border-[rgba(var(--accent),0.5)]',
+            component: <FlashcardSystem data={flashcardData} onDataChange={handleFlashcardDataChange} onPointsEarn={handleFlashcardPointsEarn} subjectNames={subjectProfile?.subjects.map(s => s.subjectName)} />,
+        },
+        {
+            id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true,
+            tag: 'Planner', accentHex: '#6366f1', gridClass: 'md:col-span-2',
+            iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
+            accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
+            hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
+            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); } } }} /> : null,
+        },
     ];
 
     const currentTool = tools.find(t => t.id === activeTool);
@@ -1178,7 +1330,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
       <header className="fixed top-0 left-0 right-0 z-[60] bg-zinc-50 dark:bg-zinc-950 border-b border-zinc-200 dark:border-zinc-800 px-4 py-4 md:px-10 md:py-6">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4 md:gap-8">
-            <MotionButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={onBack} className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50">
+            <MotionButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={onBack} className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
               <ArrowLeft size={18} className="text-zinc-900 dark:text-white" />
             </MotionButton>
             <div className="hidden md:block h-10 w-px bg-zinc-200 dark:bg-zinc-800" />
@@ -1214,8 +1366,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                         <h2 className="font-serif text-5xl font-semibold text-zinc-900 dark:text-white">Experimental Tools</h2>
                         <p className="max-w-xl mx-auto mt-4 text-zinc-500 dark:text-zinc-400">A collection of interactive simulations and utilities designed to help you master the key concepts from the Learning Lab.</p>
                     </div>
-                    <div className="space-y-4">
-                        {tools.map(tool => (
+                    <div className="grid grid-cols-1 md:grid-cols-8 gap-4 md:gap-6">
+                        {tools.slice(0, 2).map((tool, i) => (
                             <ToolCard
                                 key={tool.id}
                                 title={tool.title}
@@ -1223,6 +1375,66 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                                 icon={tool.icon}
                                 onClick={() => !(tool as any).disabled && !(tool.needsProfile && !profileLoaded) && handleToolClick(tool.id, tool.needsProfile)}
                                 disabled={(tool as any).disabled || (tool.needsProfile && !profileLoaded)}
+                                tag={tool.tag}
+                                accentHex={tool.accentHex}
+                                gridClass={tool.gridClass}
+                                iconBg={tool.iconBg}
+                                iconColor={tool.iconColor}
+                                accentBarColor={tool.accentBarColor}
+                                tagBg={tool.tagBg}
+                                tagText={tool.tagText}
+                                hoverBorder={tool.hoverBorder}
+                                index={i}
+                            />
+                        ))}
+
+                        {/* Shop Bento Card */}
+                        <MotionDiv
+                            initial={{ opacity: 0, y: 24 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.45, delay: 2 * 0.08, ease: [0.25, 0.46, 0.45, 0.94] }}
+                            onClick={() => setShowRewardShop(true)}
+                            className="md:col-span-2 md:row-span-2 group relative cursor-pointer flex flex-col rounded-2xl border-2 border-zinc-200/80 dark:border-white/10 hover:border-purple-400/50 dark:hover:border-purple-500/40 overflow-hidden bg-gradient-to-b from-purple-50/80 via-white to-white dark:from-purple-950/30 dark:via-zinc-900/80 dark:to-zinc-900 transition-all hover:shadow-lg dark:hover:shadow-2xl"
+                        >
+                            <div className="h-[3px] w-full bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div
+                                className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                                style={{ background: 'radial-gradient(ellipse at 50% 0%, rgba(147,51,234,0.08) 0%, transparent 70%)' }}
+                            />
+                            <div className="relative flex flex-col flex-grow items-center justify-center p-5 md:p-6 text-center">
+                                <div className="mb-3 md:mb-4 px-3 py-1.5 rounded-full bg-amber-100 dark:bg-amber-900/30 flex items-center gap-1.5">
+                                    <Zap size={12} className="text-amber-500" />
+                                    <span className="text-xs font-bold text-amber-700 dark:text-amber-400">{pointsData.totalEarned - pointsData.totalSpent} pts</span>
+                                </div>
+                                <div className="w-14 h-14 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center mb-3 transition-transform duration-300 group-hover:scale-110">
+                                    <Gift size={26} className="text-purple-600 dark:text-purple-400" />
+                                </div>
+                                <h3 className="font-serif font-semibold text-base md:text-lg tracking-tight text-zinc-800 dark:text-white mb-1">Reward Shop</h3>
+                                <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">Spend points on avatars, themes & card styles</p>
+                                <div className="mt-3 md:mt-4 pt-3 border-t border-zinc-100 dark:border-white/[0.06] w-full flex items-center justify-center gap-1.5 text-xs font-bold text-purple-600 dark:text-purple-400 group-hover:gap-2.5 transition-all">
+                                    Browse <ArrowRight size={12} />
+                                </div>
+                            </div>
+                        </MotionDiv>
+
+                        {tools.slice(2).map((tool, i) => (
+                            <ToolCard
+                                key={tool.id}
+                                title={tool.title}
+                                description={tool.description}
+                                icon={tool.icon}
+                                onClick={() => !(tool as any).disabled && !(tool.needsProfile && !profileLoaded) && handleToolClick(tool.id, tool.needsProfile)}
+                                disabled={(tool as any).disabled || (tool.needsProfile && !profileLoaded)}
+                                tag={tool.tag}
+                                accentHex={tool.accentHex}
+                                gridClass={tool.gridClass}
+                                iconBg={tool.iconBg}
+                                iconColor={tool.iconColor}
+                                accentBarColor={tool.accentBarColor}
+                                tagBg={tool.tagBg}
+                                tagText={tool.tagText}
+                                hoverBorder={tool.hoverBorder}
+                                index={i + 3}
                             />
                         ))}
                     </div>
@@ -1282,7 +1494,100 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         earnedRest={earnedRest}
         onSpend={handleSpendPoints}
         skippableBlocks={skippableBlocks}
+        settings={settings}
+        updateSetting={updateSetting}
       />
+
+      {/* Points Explainer (first visit) */}
+      <AnimatePresence>
+        {showPointsExplainer && (
+          <MotionDiv
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-[100] p-4"
+            onClick={dismissPointsExplainer}
+          >
+            <MotionDiv
+              initial={{ scale: 0.92, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.92, opacity: 0, y: 20 }}
+              transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+              className="bg-white dark:bg-zinc-900 rounded-2xl max-w-sm w-full shadow-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden"
+              onClick={(e: React.MouseEvent) => e.stopPropagation()}
+            >
+              <div className="h-1.5 bg-gradient-to-r from-amber-400 via-[var(--accent-hex)] to-purple-500" />
+
+              <div className="p-6">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center">
+                    <Zap size={20} className="text-amber-500" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif font-semibold text-lg text-zinc-900 dark:text-white">How Points Work</h3>
+                    <p className="text-xs text-zinc-400 dark:text-zinc-500">Earn & spend in the Innovation Zone</p>
+                  </div>
+                </div>
+
+                <div className="space-y-2.5 mb-4">
+                  <div className="flex items-start gap-3 p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04]">
+                    <div className="w-8 h-8 rounded-lg bg-teal-100 dark:bg-teal-900/30 flex items-center justify-center shrink-0 mt-0.5">
+                      <Clock size={14} className="text-teal-600 dark:text-teal-400" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200">Study Sessions</p>
+                      <p className="text-xs text-zinc-500 dark:text-zinc-400">10 pts per completed timetable session</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3 p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04]">
+                    <div className="w-8 h-8 rounded-lg bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center shrink-0 mt-0.5">
+                      <BookMarked size={14} className="text-purple-600 dark:text-purple-400" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200">Reflections</p>
+                      <p className="text-xs text-zinc-500 dark:text-zinc-400">Bonus points for thoughtful study reflections</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Streak Explainer */}
+                <div className="mb-4 p-3 rounded-xl bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-950/20 dark:to-orange-950/20 border border-amber-200/50 dark:border-amber-800/30">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Flame size={14} className="text-amber-500" />
+                    <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">Streak Multiplier</p>
+                  </div>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-2">Complete your timetable sessions on consecutive days to build a streak and multiply your points.</p>
+                  <div className="grid grid-cols-3 gap-1.5">
+                    <div className="text-center p-1.5 rounded-lg bg-white/60 dark:bg-white/[0.04]">
+                      <p className="text-[10px] font-bold text-amber-600 dark:text-amber-400">3+ days</p>
+                      <p className="text-[10px] text-zinc-500 dark:text-zinc-400">1.5x pts</p>
+                    </div>
+                    <div className="text-center p-1.5 rounded-lg bg-white/60 dark:bg-white/[0.04]">
+                      <p className="text-[10px] font-bold text-orange-600 dark:text-orange-400">7+ days</p>
+                      <p className="text-[10px] text-zinc-500 dark:text-zinc-400">2x pts</p>
+                    </div>
+                    <div className="text-center p-1.5 rounded-lg bg-white/60 dark:bg-white/[0.04]">
+                      <p className="text-[10px] font-bold text-red-600 dark:text-red-400">14+ days</p>
+                      <p className="text-[10px] text-zinc-500 dark:text-zinc-400">2.5x pts</p>
+                    </div>
+                  </div>
+                </div>
+
+                <p className="text-xs text-zinc-400 dark:text-zinc-500 text-center mb-4">
+                  Spend points in the <span className="font-semibold text-zinc-600 dark:text-zinc-300">Reward Shop</span> on avatars, themes & card styles.
+                </p>
+
+                <button
+                  onClick={dismissPointsExplainer}
+                  className="w-full py-2.5 rounded-xl bg-[var(--accent-hex)] hover:bg-[var(--accent-dark-hex)] text-white font-semibold text-sm transition-colors"
+                >
+                  Got it!
+                </button>
+              </div>
+            </MotionDiv>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

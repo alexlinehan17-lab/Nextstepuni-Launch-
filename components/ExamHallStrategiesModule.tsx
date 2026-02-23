@@ -851,6 +851,7 @@ const ExamHallStrategiesModule: React.FC<{ onBack: () => void; progress: ModuleP
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Own the Exam Hall"
     >
       {(activeSection) => (
         <>

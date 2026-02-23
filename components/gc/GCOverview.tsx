@@ -5,7 +5,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { TrendingUp, TrendingDown, Minus, AlertTriangle, Search, ChevronDown, Flame, UserX, Download, FileText, StickyNote } from 'lucide-react';
+import { TrendingUp, TrendingDown, Minus, AlertTriangle, Search, ChevronDown, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote } from 'lucide-react';
 import { CourseData } from '../Library';
 import { CategoryType } from '../KnowledgeTree';
 import { getAvatarUrl } from '../Auth';
@@ -58,7 +58,7 @@ const MOOD_EMOJI: Record<string, string> = {
 // ─── Earthy palette for progress bars ────────────────────────────────────────
 
 const EARTHY_BARS = [
-  { label: '0-25%', color: 'bg-[#CC785C]' },
+  { label: '0-25%', color: 'bg-[var(--accent-hex)]' },
   { label: '25-50%', color: 'bg-[#D4A574]' },
   { label: '50-75%', color: 'bg-[#8B9D77]' },
   { label: '75-100%', color: 'bg-[#5B7B6F]' },
@@ -70,7 +70,7 @@ const MOOD_DONUT_COLORS: Record<string, string> = {
   calm: '#5B7B6F',
   balanced: '#8B9D77',
   energized: '#D4A574',
-  stressed: '#CC785C',
+  stressed: 'var(--accent-hex)',
 };
 
 // ─── Calendar helpers ────────────────────────────────────────────────────────
@@ -181,6 +181,76 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
 
   const recentlyActive = useMemo(() => getRecentlyActiveStudents(studentData), [studentData]);
   const moodDistribution = useMemo(() => getClassMoodDistribution(studentData), [studentData]);
+
+  // ─── Activity range toggle ────────────────────────────────────────────
+
+  const [activityRange, setActivityRange] = useState<'7d' | '30d'>('7d');
+
+  // ─── Aggregated daily activity across ALL students (30 days) ──────────
+
+  const aggregatedActivity = useMemo(() => {
+    const counts: Record<string, number> = {};
+    const now = new Date();
+    for (let i = 29; i >= 0; i--) {
+      const d = new Date(now);
+      d.setDate(d.getDate() - i);
+      const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+      counts[key] = 0;
+    }
+    studentData.forEach(s => {
+      if (!s.timetableCompletions) return;
+      Object.entries(s.timetableCompletions).forEach(([date, blocks]) => {
+        if (date in counts && Array.isArray(blocks)) {
+          counts[date] += blocks.length;
+        }
+      });
+    });
+    const all = Object.entries(counts)
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([date, count]) => ({ date, count }));
+    return activityRange === '7d' ? all.slice(-7) : all;
+  }, [studentData, activityRange]);
+
+  // ─── Weekly trends (week-over-week comparison) ────────────────────────
+
+  const weeklyTrends = useMemo(() => {
+    const now = new Date();
+    const dayOfWeek = now.getDay();
+    const mondayOffset = dayOfWeek === 0 ? 6 : dayOfWeek - 1;
+    const thisMonday = new Date(now);
+    thisMonday.setDate(now.getDate() - mondayOffset);
+    thisMonday.setHours(0, 0, 0, 0);
+    const lastMonday = new Date(thisMonday);
+    lastMonday.setDate(thisMonday.getDate() - 7);
+
+    const fmt = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+
+    let blocksThisWeek = 0;
+    let blocksLastWeek = 0;
+    const activeThisWeekSet = new Set<string>();
+    const activeLastWeekSet = new Set<string>();
+
+    studentData.forEach(s => {
+      if (!s.timetableCompletions) return;
+      Object.entries(s.timetableCompletions).forEach(([date, blocks]) => {
+        if (!Array.isArray(blocks)) return;
+        const d = new Date(date + 'T00:00:00');
+        if (d >= thisMonday && d <= now) {
+          blocksThisWeek += blocks.length;
+          if (blocks.length > 0) activeThisWeekSet.add(s.user.uid);
+        } else if (d >= lastMonday && d < thisMonday) {
+          blocksLastWeek += blocks.length;
+          if (blocks.length > 0) activeLastWeekSet.add(s.user.uid);
+        }
+      });
+    });
+
+    const blocksTrend = blocksLastWeek > 0
+      ? Math.round(((blocksThisWeek - blocksLastWeek) / blocksLastWeek) * 100)
+      : blocksThisWeek > 0 ? 100 : 0;
+
+    return { blocksThisWeek, blocksLastWeek, blocksTrend };
+  }, [studentData]);
 
   // ─── Filter + Sort ──────────────────────────────────────────────────────
 
@@ -307,12 +377,24 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
   // ─── Calendar widget data ─────────────────────────────────────────────
 
   const now = new Date();
-  const calendarDays = getCalendarDays(now.getFullYear(), now.getMonth());
+  const [calMonth, setCalMonth] = useState(now.getMonth());
+  const [calYear, setCalYear] = useState(now.getFullYear());
+  const calendarDays = getCalendarDays(calYear, calMonth);
   const todayDate = now.getDate();
+  const isCurrentMonth = calYear === now.getFullYear() && calMonth === now.getMonth();
   const lcExamDate = getLCExamDate();
-  const lcDay = lcExamDate.getMonth() === now.getMonth() && lcExamDate.getFullYear() === now.getFullYear()
+  const lcDay = lcExamDate.getMonth() === calMonth && lcExamDate.getFullYear() === calYear
     ? lcExamDate.getDate()
     : null;
+
+  const handleCalPrev = () => {
+    if (calMonth === 0) { setCalMonth(11); setCalYear(y => y - 1); }
+    else setCalMonth(m => m - 1);
+  };
+  const handleCalNext = () => {
+    if (calMonth === 11) { setCalMonth(0); setCalYear(y => y + 1); }
+    else setCalMonth(m => m + 1);
+  };
 
   // ─── Mood donut SVG ────────────────────────────────────────────────────
 
@@ -323,8 +405,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     let cumulativeOffset = 0;
 
     return (
-      <div className="relative rounded-xl bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-shadow p-5 overflow-hidden">
-        <div className="absolute top-0 left-0 bottom-0 w-1 bg-[#CC785C] rounded-l-xl" />
+      <div className="card-styled rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow p-5 overflow-hidden">
         <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-3">Class Mood</p>
         <p className="text-base font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">7-Day Check-ins</p>
 
@@ -384,126 +465,155 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
   const greeting = hour < 12 ? 'Good morning.' : hour < 18 ? 'Good afternoon.' : 'Good evening.';
 
   return (
-    <div className="p-8 space-y-6">
-      {/* ─── Greeting Header + Secondary KPIs ─────────────────────────── */}
+    <div className="p-6 lg:p-8 space-y-5">
+      {/* ─── Greeting Row ─────────────────────────────────────────────── */}
       <div id="gc-overview" className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
         <div>
-          <p className="font-mono text-[10px] font-bold uppercase tracking-[0.25em] text-[#CC785C] mb-1">Guidance Dashboard</p>
+          <p className="font-mono text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--accent-hex)] mb-1">Guidance Dashboard</p>
           <h1 className="font-serif text-3xl font-semibold text-zinc-900 dark:text-white tracking-tight">{greeting}</h1>
           <p className="text-sm text-zinc-400 dark:text-zinc-500 mt-0.5">{getSchoolName(school)}</p>
         </div>
-        <div className="flex items-center gap-6">
-          <div className="text-center">
-            <p className="text-lg font-semibold text-zinc-700 dark:text-zinc-200">{avgCurrentCAO}</p>
-            <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Avg CAO</p>
-          </div>
-          <div className="w-px h-8 bg-zinc-200 dark:bg-zinc-700" />
-          <div className="text-center">
-            <p className="text-lg font-semibold text-zinc-700 dark:text-zinc-200">{activeThisWeekCount}</p>
-            <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Active This Week</p>
-          </div>
-          <div className="w-px h-8 bg-zinc-200 dark:bg-zinc-700" />
-          <div className="text-center">
-            <p className="text-lg font-semibold text-zinc-700 dark:text-zinc-200">{daysUntilLC}</p>
-            <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Days to LC</p>
-          </div>
+        <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-[rgba(var(--accent),0.1)] border border-[rgba(var(--accent),0.2)]">
+          <span className="text-lg font-bold text-[var(--accent-hex)]">{daysUntilLC}</span>
+          <span className="text-[10px] font-bold uppercase tracking-wider text-[rgba(var(--accent),0.7)]">days to LC</span>
         </div>
       </div>
 
-      {/* ─── Primary KPI Cards ────────────────────────────────────────── */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-        {/* Total Students */}
-        <MotionDiv
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: CUSTOM_EASE }}
-          className="relative rounded-xl bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-shadow p-5 overflow-hidden"
-        >
-          <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#CC785C] rounded-l-xl" />
-          <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-1">Total Students</p>
-          <p className="font-sans text-5xl font-light tracking-tight text-zinc-900 dark:text-white">{studentData.length}</p>
-          <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-1">enrolled this year</p>
-        </MotionDiv>
-
-        {/* Avg Progress */}
-        <MotionDiv
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.06, ease: CUSTOM_EASE }}
-          className="relative rounded-xl bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-shadow p-5 overflow-hidden"
-        >
-          <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#8B9D77] rounded-l-xl" />
-          <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-1">Avg Progress</p>
-          <p className="font-sans text-5xl font-light tracking-tight text-zinc-900 dark:text-white">{avgProgress.toFixed(0)}%</p>
-          <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-1">across all modules</p>
-        </MotionDiv>
-
-        {/* Needs Support */}
-        <MotionDiv
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.12, ease: CUSTOM_EASE }}
-          className="relative rounded-xl bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-shadow p-5 overflow-hidden"
-        >
-          <div className="absolute left-0 top-0 bottom-0 w-1 bg-rose-500 rounded-l-xl" />
-          <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-1">Needs Support</p>
-          <p className="font-sans text-5xl font-light tracking-tight text-zinc-900 dark:text-white">{needsSupportCount}</p>
-          <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-1">students flagged</p>
-        </MotionDiv>
+      {/* ─── KPI Cards ────────────────────────────────────────────────── */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        {[
+          { label: 'Total Students', value: String(studentData.length), trend: null as number | null },
+          { label: 'Avg Progress', value: `${avgProgress.toFixed(0)}%`, trend: null },
+          { label: 'Blocks This Week', value: String(weeklyTrends.blocksThisWeek), trend: weeklyTrends.blocksTrend },
+          { label: 'Needs Support', value: String(needsSupportCount), trend: null },
+        ].map((kpi, i) => (
+          <MotionDiv
+            key={kpi.label}
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: i * 0.04, ease: CUSTOM_EASE }}
+            className="card-styled rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow p-5"
+          >
+            <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-2">{kpi.label}</p>
+            <p className="font-sans text-4xl font-semibold tracking-tight text-zinc-900 dark:text-white">{kpi.value}</p>
+            {kpi.trend !== null ? (
+              <div className={`flex items-center gap-1 mt-2 text-xs font-medium ${kpi.trend >= 0 ? 'text-emerald-600' : 'text-rose-500'}`}>
+                {kpi.trend >= 0 ? <TrendingUp size={12} /> : <TrendingDown size={12} />}
+                <span>{kpi.trend > 0 ? '+' : ''}{kpi.trend}% vs last week</span>
+              </div>
+            ) : (
+              <div className="mt-2 h-4" />
+            )}
+          </MotionDiv>
+        ))}
       </div>
 
-      {/* ─── Two-Column Layout: Charts + Widgets ──────────────────────── */}
-      <div id="gc-analytics" className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-        {/* Left column: Charts */}
-        <div className="lg:col-span-2 space-y-5">
-          {/* Progress Distribution */}
+      {/* ─── Daily Activity Chart ────────────────────────────────────── */}
+      {(() => {
+        const maxCount = Math.max(1, ...aggregatedActivity.map(d => d.count));
+        const totalBlocks = aggregatedActivity.reduce((s, d) => s + d.count, 0);
+        const activeDays = aggregatedActivity.filter(d => d.count > 0).length;
+        const avgPerDay = activeDays > 0 ? (totalBlocks / aggregatedActivity.length).toFixed(1) : '0';
+        const todayKey = (() => {
+          const n = new Date();
+          return `${n.getFullYear()}-${String(n.getMonth() + 1).padStart(2, '0')}-${String(n.getDate()).padStart(2, '0')}`;
+        })();
+        const barCount = aggregatedActivity.length;
+        const chartW = 600;
+        const chartH = 80;
+        const gap = 2;
+        const barW = (chartW - gap * (barCount - 1)) / barCount;
+
+        return (
           <MotionDiv
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2, ease: CUSTOM_EASE }}
-            className="relative rounded-xl bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-shadow p-5 overflow-hidden"
+            transition={{ duration: 0.5, delay: 0.18, ease: CUSTOM_EASE }}
+            className="card-styled rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow p-5"
           >
-            <div className="absolute top-0 left-0 bottom-0 w-1 bg-[#CC785C] rounded-l-xl" />
-            <div className="flex items-baseline justify-between mb-5">
+            <div className="flex items-center justify-between mb-4">
               <div>
-                <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500">Distribution</p>
-                <p className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mt-0.5">Progress Breakdown</p>
+                <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500">Engagement</p>
+                <p className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mt-0.5">Daily Activity</p>
               </div>
-              <span className="text-xs font-medium text-zinc-400 dark:text-zinc-500">{distributionTotal} students</span>
+              <div className="flex rounded-lg bg-zinc-100 dark:bg-zinc-800 p-0.5">
+                {(['7d', '30d'] as const).map(range => (
+                  <button
+                    key={range}
+                    onClick={() => setActivityRange(range)}
+                    className={`px-3 py-1 text-xs font-medium rounded-md transition-colors ${
+                      activityRange === range
+                        ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
+                        : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
+                    }`}
+                  >
+                    {range}
+                  </button>
+                ))}
+              </div>
             </div>
-            <div className="flex gap-4">
-              {distribution.map((count, i) => {
-                const heightPct = (count / distributionMax) * 100;
+
+            <svg viewBox={`0 0 ${chartW} ${chartH}`} className="w-full h-20" preserveAspectRatio="none">
+              {/* Horizontal grid lines */}
+              {[0.25, 0.5, 0.75].map(frac => (
+                <line
+                  key={frac}
+                  x1={0}
+                  y1={chartH - frac * (chartH - 4)}
+                  x2={chartW}
+                  y2={chartH - frac * (chartH - 4)}
+                  stroke="currentColor"
+                  className="text-zinc-100 dark:text-zinc-800"
+                  strokeWidth={0.5}
+                />
+              ))}
+              {aggregatedActivity.map((d, i) => {
+                const x = i * (barW + gap);
+                const h = d.count > 0 ? Math.max(4, (d.count / maxCount) * (chartH - 4)) : 2;
+                const isToday = d.date === todayKey;
+                const fill = isToday ? 'var(--accent-hex)' : d.count > 0 ? '#8B9D77' : undefined;
                 return (
-                  <div key={i} className="flex-1 flex flex-col items-center gap-1.5">
-                    <span className="text-xs font-bold text-zinc-600 dark:text-zinc-300">{count}</span>
-                    <div className="w-full relative h-28">
-                      {count > 0 ? (
-                        <MotionDiv
-                          className={`absolute bottom-0 left-1 right-1 ${EARTHY_BARS[i].color} rounded-lg`}
-                          initial={{ height: 0 }}
-                          animate={{ height: `${Math.max(heightPct, 8)}%` }}
-                          transition={{ duration: 0.6, delay: 0.3 + i * 0.1, ease: CUSTOM_EASE }}
-                        />
-                      ) : (
-                        <div className="absolute bottom-0 left-1 right-1 h-[2px] rounded-full bg-zinc-200 dark:bg-zinc-700" />
-                      )}
-                    </div>
-                    <span className="text-[10px] font-medium text-zinc-400 dark:text-zinc-500">{EARTHY_BARS[i].label}</span>
-                  </div>
+                  <rect
+                    key={d.date}
+                    x={x}
+                    y={chartH - h}
+                    width={barW}
+                    height={h}
+                    rx={2}
+                    fill={fill}
+                    className={d.count === 0 && !isToday ? 'fill-zinc-200 dark:fill-zinc-700' : ''}
+                  >
+                    <title>{d.date}: {d.count} blocks</title>
+                  </rect>
                 );
               })}
+            </svg>
+
+            <div className="flex justify-between mt-2">
+              <span className="text-[10px] text-zinc-400">{aggregatedActivity[0]?.date}</span>
+              <span className="text-[10px] text-zinc-400">{aggregatedActivity[aggregatedActivity.length - 1]?.date}</span>
+            </div>
+
+            <div className="flex gap-4 mt-3 text-xs text-zinc-500 dark:text-zinc-400">
+              <span><span className="font-medium text-zinc-700 dark:text-zinc-300">{totalBlocks}</span> blocks total</span>
+              <span><span className="font-medium text-zinc-700 dark:text-zinc-300">{activeDays}</span> active days</span>
+              <span><span className="font-medium text-zinc-700 dark:text-zinc-300">{avgPerDay}</span> avg/day</span>
             </div>
           </MotionDiv>
+        );
+      })()}
 
+      {/* ─── Two-Column Layout: Charts + Widgets ──────────────────────── */}
+      <div id="gc-analytics" className="grid grid-cols-1 lg:grid-cols-3 gap-5 items-start">
+        {/* Left column (2/3): Category Completion → Progress Distribution → Subject Gaps */}
+        <div className="lg:col-span-2 space-y-5">
           {/* Category Completion */}
           <MotionDiv
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.25, ease: CUSTOM_EASE }}
-            className="relative rounded-xl bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-shadow p-5 overflow-hidden"
+            transition={{ duration: 0.5, delay: 0.2, ease: CUSTOM_EASE }}
+            className="card-styled rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow p-5"
           >
-            <div className="absolute top-0 left-0 bottom-0 w-1 bg-[#CC785C] rounded-l-xl" />
             <div>
               <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500">Categories</p>
               <p className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mt-0.5 mb-4">Category Completion</p>
@@ -539,15 +649,53 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
             </div>
           </MotionDiv>
 
+          {/* Progress Distribution */}
+          <MotionDiv
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.25, ease: CUSTOM_EASE }}
+            className="card-styled rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow p-5"
+          >
+            <div className="flex items-baseline justify-between mb-5">
+              <div>
+                <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500">Distribution</p>
+                <p className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mt-0.5">Progress Breakdown</p>
+              </div>
+              <span className="text-xs font-medium text-zinc-400 dark:text-zinc-500">{distributionTotal} students</span>
+            </div>
+            <div className="flex gap-4">
+              {distribution.map((count, i) => {
+                const heightPct = (count / distributionMax) * 100;
+                return (
+                  <div key={i} className="flex-1 flex flex-col items-center gap-1.5">
+                    <span className="text-xs font-bold text-zinc-600 dark:text-zinc-300">{count}</span>
+                    <div className="w-full relative h-28">
+                      {count > 0 ? (
+                        <MotionDiv
+                          className={`absolute bottom-0 left-1 right-1 ${EARTHY_BARS[i].color} rounded-lg`}
+                          initial={{ height: 0 }}
+                          animate={{ height: `${Math.max(heightPct, 8)}%` }}
+                          transition={{ duration: 0.6, delay: 0.3 + i * 0.1, ease: CUSTOM_EASE }}
+                        />
+                      ) : (
+                        <div className="absolute bottom-0 left-1 right-1 h-[2px] rounded-full bg-zinc-200 dark:bg-zinc-700" />
+                      )}
+                    </div>
+                    <span className="text-[10px] font-medium text-zinc-400 dark:text-zinc-500">{EARTHY_BARS[i].label}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </MotionDiv>
+
           {/* Subject-Level Gaps */}
           {topGaps.length > 0 && (
             <MotionDiv
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3, ease: CUSTOM_EASE }}
-              className="relative rounded-xl bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-shadow p-5 overflow-hidden"
+              className="card-styled rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow p-5"
             >
-              <div className="absolute top-0 left-0 bottom-0 w-1 bg-[#CC785C] rounded-l-xl" />
               <div>
                 <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500">Subject Analysis</p>
                 <p className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mt-0.5 mb-4">Subject-Level Gaps</p>
@@ -560,7 +708,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                       <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300 w-32 truncate shrink-0">{gap.subjectName}</span>
                       <div className="flex-1 h-4 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden">
                         <MotionDiv
-                          className="h-full bg-[#CC785C] rounded-full"
+                          className="h-full bg-[var(--accent-hex)] rounded-full"
                           initial={{ width: 0 }}
                           animate={{ width: `${barPct}%` }}
                           transition={{ duration: 0.5, delay: 0.35 + i * 0.05, ease: CUSTOM_EASE }}
@@ -577,11 +725,10 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           )}
         </div>
 
-        {/* Right column: Widgets */}
-        <div className="space-y-5">
+        {/* Right column (1/3): Recently Active → Mood Donut → Exam Calendar */}
+        <div className="flex flex-col gap-5">
           {/* Recently Active Widget */}
-          <div className="relative rounded-xl bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-shadow p-5 overflow-hidden">
-            <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#CC785C] rounded-l-xl" />
+          <div className="card-styled rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow p-5">
             <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-1">Activity</p>
             <p className="text-base font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">Recently Active</p>
             {recentlyActive.length === 0 ? (
@@ -608,20 +755,31 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
             )}
           </div>
 
+          {/* Class Mood Donut */}
+          {renderMoodDonut()}
+
           {/* Exam Countdown Calendar */}
-          <div className="relative rounded-xl bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-shadow p-5 overflow-hidden">
-            <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#CC785C] rounded-l-xl" />
+          <div className="card-styled rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow p-5">
             <div className="flex items-baseline justify-between mb-3">
               <div>
                 <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500">Countdown</p>
                 <p className="text-base font-semibold tracking-tight text-zinc-900 dark:text-white mt-0.5">Exam Calendar</p>
               </div>
               <div className="text-right">
-                <p className="text-3xl font-bold text-[#CC785C]">{daysUntilLC}</p>
+                <p className="text-3xl font-bold text-[var(--accent-hex)]">{daysUntilLC}</p>
                 <p className="text-[10px] text-zinc-400">days</p>
               </div>
             </div>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-3">{MONTH_NAMES[now.getMonth()]} {now.getFullYear()}</p>
+            {/* Month navigation */}
+            <div className="flex items-center justify-between mb-3">
+              <button onClick={handleCalPrev} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+                <ChevronLeft size={16} className="text-zinc-400" />
+              </button>
+              <span className="text-xs font-medium text-zinc-600 dark:text-zinc-400">{MONTH_NAMES[calMonth]} {calYear}</span>
+              <button onClick={handleCalNext} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+                <ChevronRight size={16} className="text-zinc-400" />
+              </button>
+            </div>
             {/* Day-of-week headers */}
             <div className="grid grid-cols-7 gap-1 mb-1">
               {['M', 'T', 'W', 'T', 'F', 'S', 'S'].map((d, i) => (
@@ -634,10 +792,10 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                 if (!cell.isCurrentMonth) {
                   return <div key={i} className="aspect-square" />;
                 }
-                const isToday = cell.day === todayDate;
+                const isToday = isCurrentMonth && cell.day === todayDate;
                 const isLC = lcDay !== null && cell.day === lcDay;
                 let cellClass = 'text-zinc-600 dark:text-zinc-400';
-                if (isToday) cellClass = 'bg-[#CC785C] text-white rounded-lg';
+                if (isToday) cellClass = 'bg-[var(--accent-hex)] text-white rounded-lg';
                 else if (isLC) cellClass = 'bg-rose-500 text-white rounded-lg';
 
                 return (
@@ -654,7 +812,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
             {/* Legend */}
             <div className="flex gap-4 mt-3 text-[10px] text-zinc-400">
               <div className="flex items-center gap-1.5">
-                <div className="w-3 h-3 rounded bg-[#CC785C]" />
+                <div className="w-3 h-3 rounded bg-[var(--accent-hex)]" />
                 <span>Today</span>
               </div>
               {lcDay !== null && (
@@ -665,14 +823,11 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
               )}
             </div>
           </div>
-
-          {/* Class Mood Donut */}
-          {renderMoodDonut()}
         </div>
       </div>
 
       {/* ─── Student Table ────────────────────────────────────────────── */}
-      <div id="gc-students" className="rounded-xl bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+      <div id="gc-students" className="rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow overflow-hidden">
         {/* Table Controls */}
         <div className="flex flex-col sm:flex-row gap-3 p-5 border-b border-zinc-100 dark:border-zinc-800">
           <div className="relative flex-1">
@@ -682,7 +837,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search students..."
-              className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2.5 pl-10 pr-4 text-zinc-900 dark:text-white text-sm placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-[#CC785C]/60 focus:ring-1 focus:ring-[#CC785C]/30 transition-colors"
+              className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2.5 pl-10 pr-4 text-zinc-900 dark:text-white text-sm placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-[rgba(var(--accent),0.6)] focus:ring-1 focus:ring-[rgba(var(--accent),0.3)] transition-colors"
             />
           </div>
           <div className="relative">
@@ -690,7 +845,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
             <select
               value={statusFilter}
               onChange={(e) => setStatusFilter(e.target.value as StatusFilter)}
-              className="appearance-none bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2.5 pl-4 pr-8 text-zinc-900 dark:text-white text-sm cursor-pointer focus:outline-none focus:border-[#CC785C]/60 focus:ring-1 focus:ring-[#CC785C]/30 transition-colors"
+              className="appearance-none bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2.5 pl-4 pr-8 text-zinc-900 dark:text-white text-sm cursor-pointer focus:outline-none focus:border-[rgba(var(--accent),0.6)] focus:ring-1 focus:ring-[rgba(var(--accent),0.3)] transition-colors"
             >
               <option value="all">All Students</option>
               <option value="on-track">On Track</option>
@@ -700,7 +855,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           </div>
           <button
             onClick={handleExportCSV}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#CC785C]/10 text-[#CC785C] hover:bg-[#CC785C]/20 text-sm font-medium transition-colors"
+            className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[rgba(var(--accent),0.1)] text-[var(--accent-hex)] hover:bg-[rgba(var(--accent),0.2)] text-sm font-medium transition-colors"
           >
             <Download size={16} />
             Export CSV
@@ -748,7 +903,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                   >
                     <td className="px-5 py-4 align-middle">
                       <div className="flex items-center gap-3">
-                        <img src={getAvatarUrl(row.student.user.avatar)} alt="" className="w-8 h-8 rounded-full bg-zinc-200 ring-2 ring-zinc-100 dark:ring-zinc-800 hover:ring-[#CC785C]/60 hover:scale-110 transition-all cursor-pointer" />
+                        <img src={getAvatarUrl(row.student.user.avatar)} alt="" className="w-8 h-8 rounded-full bg-zinc-200 ring-2 ring-zinc-100 dark:ring-zinc-800 hover:ring-[rgba(var(--accent),0.6)] hover:scale-110 transition-all cursor-pointer" />
                         <span className="font-medium text-zinc-800 dark:text-white whitespace-nowrap">{row.student.user.name}</span>
                       </div>
                     </td>
@@ -757,7 +912,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                         <span className="font-medium text-zinc-700 dark:text-zinc-200">{row.progress.toFixed(0)}%</span>
                         <div className="w-16 h-1.5 bg-zinc-200 dark:bg-zinc-700 rounded-full overflow-hidden">
                           <div
-                            className="h-full bg-[#CC785C] rounded-full transition-all"
+                            className="h-full bg-[var(--accent-hex)] rounded-full transition-all"
                             style={{ width: `${row.progress}%` }}
                           />
                         </div>
@@ -802,10 +957,10 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       </div>
 
       {/* ─── Student Notes ─────────────────────────────────────────── */}
-      <div id="gc-notes" className="rounded-xl bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+      <div id="gc-notes" className="rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow overflow-hidden">
         <div className="p-5 border-b border-zinc-100 dark:border-zinc-800">
           <div className="flex items-center gap-2">
-            <StickyNote size={16} className="text-[#CC785C]" />
+            <StickyNote size={16} className="text-[var(--accent-hex)]" />
             <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500">Counsellor Notes</p>
           </div>
           <p className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mt-1">Student Notes</p>

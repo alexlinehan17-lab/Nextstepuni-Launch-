@@ -688,7 +688,7 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
   ];
 
   return (
-    <ModuleLayout moduleNumber="02" moduleTitle="Spaced Repetition" moduleSubtitle="The Forgetting Curve Method" moduleDescription={`Stop forgetting what you study. Learn when and how often to review so the stuff you learn actually sticks for the Leaving Cert and beyond.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
+    <ModuleLayout moduleNumber="02" moduleTitle="Spaced Repetition" moduleSubtitle="The Forgetting Curve Method" moduleDescription={`Stop forgetting what you study. Learn when and how often to review so the stuff you learn actually sticks for the Leaving Cert and beyond.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Space It Out">
       {(activeSection) => (
         <>
           {activeSection === 0 && (

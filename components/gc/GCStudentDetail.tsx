@@ -172,7 +172,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
           <img
             src={getAvatarUrl(student.user.avatar)}
             alt=""
-            className="w-10 h-10 rounded-full bg-zinc-200 dark:bg-zinc-700 ring-2 ring-[#CC785C]/20 shrink-0"
+            className="w-10 h-10 rounded-full bg-zinc-200 dark:bg-zinc-700 ring-2 ring-[rgba(var(--accent),0.2)] shrink-0"
           />
           <div className="min-w-0">
             <p className="font-mono text-[9px] font-bold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-0.5">Student Profile</p>
@@ -194,10 +194,10 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   const renderHeader = () => (
     <div className="relative rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6 overflow-hidden">
       {/* Accent top bar + gradient glow */}
-      <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#CC785C]" />
+      <div className="absolute top-0 left-0 right-0 h-[3px] bg-[var(--accent-hex)]" />
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse at 50% 0%, rgba(204,120,92,0.06) 0%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(ellipse at 50% 0%, rgba(var(--accent),0.06) 0%, transparent 70%)' }}
       />
 
       <div className="relative">
@@ -212,7 +212,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
           <img
             src={getAvatarUrl(student.user.avatar)}
             alt=""
-            className="w-14 h-14 rounded-full bg-zinc-200 ring-2 ring-[#CC785C]/20"
+            className="w-14 h-14 rounded-full bg-zinc-200 ring-2 ring-[rgba(var(--accent),0.2)]"
           />
           <div>
             <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-0.5">Student Profile</p>
@@ -230,7 +230,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
               <circle
                 cx={22} cy={22} r={18} fill="none"
                 stroke="currentColor"
-                className="text-[#CC785C]"
+                className="text-[var(--accent-hex)]"
                 strokeWidth={3}
                 strokeLinecap="round"
                 strokeDasharray={`${(overallProgress / 100) * 113.1} 113.1`}
@@ -307,14 +307,14 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
           </div>
           <div className="relative w-full h-5 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden">
             <MotionDiv
-              className="absolute inset-y-0 left-0 bg-[#CC785C] rounded-full"
+              className="absolute inset-y-0 left-0 bg-[var(--accent-hex)] rounded-full"
               initial={{ width: 0 }}
               animate={{ width: `${currentPct}%` }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
             />
             {targetPct > currentPct && (
               <div
-                className="absolute inset-y-0 border-2 border-dashed border-[#CC785C]/50 rounded-full"
+                className="absolute inset-y-0 border-2 border-dashed border-[rgba(var(--accent),0.5)] rounded-full"
                 style={{ left: `${currentPct}%`, width: `${targetPct - currentPct}%` }}
               />
             )}
@@ -406,7 +406,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
           </span>
         )}
         {ns.statement && (
-          <blockquote className="border-l-2 border-[#CC785C]/40 pl-4 my-3 text-sm text-zinc-600 dark:text-zinc-300 italic font-serif">
+          <blockquote className="border-l-2 border-[rgba(var(--accent),0.4)] pl-4 my-3 text-sm text-zinc-600 dark:text-zinc-300 italic font-serif">
             &ldquo;{ns.statement}&rdquo;
           </blockquote>
         )}
@@ -686,7 +686,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
               width={barW}
               height={h}
               rx={1.5}
-              className={d.count > 0 ? 'fill-[#CC785C]' : 'fill-zinc-200 dark:fill-zinc-700'}
+              className={d.count > 0 ? 'fill-[var(--accent-hex)]' : 'fill-zinc-200 dark:fill-zinc-700'}
             >
               <title>{d.date}: {d.count} blocks</title>
             </rect>
@@ -710,9 +710,9 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     if (!school) return null;
     return (
       <div className="relative rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6 overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#CC785C]" />
+        <div className="absolute top-0 left-0 right-0 h-[3px] bg-[var(--accent-hex)]" />
         <div className="flex items-center gap-2 mb-4">
-          <FileText size={16} className="text-[#CC785C]" />
+          <FileText size={16} className="text-[var(--accent-hex)]" />
           <h3 className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">Counsellor Notes</h3>
         </div>
 
@@ -733,13 +733,13 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
               value={noteText}
               onChange={(e) => setNoteText(e.target.value)}
               placeholder="Add a note about this student..."
-              className="w-full h-24 bg-white dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl p-4 text-sm text-zinc-900 dark:text-white placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-[#CC785C]/60 focus:ring-1 focus:ring-[#CC785C]/30 transition-colors resize-y"
+              className="w-full h-24 bg-white dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl p-4 text-sm text-zinc-900 dark:text-white placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-[rgba(var(--accent),0.6)] focus:ring-1 focus:ring-[rgba(var(--accent),0.3)] transition-colors resize-y"
             />
             <div className="flex items-center justify-between mt-3">
               <div className="flex items-center gap-2 text-xs">
                 {noteSaving && (
-                  <span className="flex items-center gap-1.5 text-[#CC785C]">
-                    <div className="w-3 h-3 border-2 border-[#CC785C] border-t-transparent rounded-full animate-spin" />
+                  <span className="flex items-center gap-1.5 text-[var(--accent-hex)]">
+                    <div className="w-3 h-3 border-2 border-[var(--accent-hex)] border-t-transparent rounded-full animate-spin" />
                     Saving...
                   </span>
                 )}
@@ -750,7 +750,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
               <button
                 onClick={handleSaveNote}
                 disabled={noteSaving || !noteText.trim()}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#CC785C]/10 text-[#CC785C] hover:bg-[#CC785C]/20 text-xs font-medium transition-colors disabled:opacity-50"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[rgba(var(--accent),0.1)] text-[var(--accent-hex)] hover:bg-[rgba(var(--accent),0.2)] text-xs font-medium transition-colors disabled:opacity-50"
               >
                 <Save size={13} />
                 Save Note
@@ -774,7 +774,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
             <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 flex items-center gap-3">
               <svg width={44} height={44} viewBox="0 0 44 44">
                 <circle cx={22} cy={22} r={18} fill="none" stroke="currentColor" className="text-zinc-200 dark:text-zinc-700" strokeWidth={3} />
-                <circle cx={22} cy={22} r={18} fill="none" stroke="currentColor" className="text-[#CC785C]" strokeWidth={3} strokeLinecap="round" strokeDasharray={`${(overallProgress / 100) * 113.1} 113.1`} transform="rotate(-90 22 22)" />
+                <circle cx={22} cy={22} r={18} fill="none" stroke="currentColor" className="text-[var(--accent-hex)]" strokeWidth={3} strokeLinecap="round" strokeDasharray={`${(overallProgress / 100) * 113.1} 113.1`} transform="rotate(-90 22 22)" />
               </svg>
               <div>
                 <p className="text-xl font-bold text-zinc-900 dark:text-white">{overallProgress.toFixed(0)}%</p>

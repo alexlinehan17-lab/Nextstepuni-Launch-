@@ -40,7 +40,7 @@ export const Highlight = ({ children, description, theme }: HighlightProps) => {
               style={{ transformOrigin: 'bottom center' }}
             >
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[10px] border-t-zinc-900/95"></div>
-              <p className={`font-sans font-bold ${theme.tooltipAccent} mb-2 uppercase tracking-wider text-[9px]`}>Key Insight</p>
+              <p className={`font-sans font-bold ${theme.tooltipAccent} mb-2 uppercase tracking-wider text-[9px]`} style={{ color: 'var(--accent-hex)' }}>Key Insight</p>
               <p className="text-zinc-200 font-medium">{description}</p>
             </motion.div>
           </>
@@ -62,11 +62,11 @@ export const ReadingSection = ({ title, eyebrow, icon: Icon, children, theme }: 
   <article className="animate-fade-in">
     <header className="mb-12 text-left relative">
       <div className="absolute -left-16 top-0 hidden xl:block">
-        <div className={`w-12 h-12 rounded-2xl bg-zinc-900 flex items-center justify-center ${theme.readingIconColor} shadow-xl border border-white/10`}>
+        <div className={`w-12 h-12 rounded-2xl bg-zinc-900 flex items-center justify-center ${theme.readingIconColor} shadow-xl border border-white/10`} style={{ color: 'var(--accent-hex)' }}>
           <Icon size={24} />
         </div>
       </div>
-      <span className={`inline-flex items-center gap-2 px-3 py-1 ${theme.readingEyebrowBg} ${theme.readingEyebrowText} text-[10px] font-semibold tracking-wider uppercase rounded-full mb-4`}>
+      <span className={`inline-flex items-center gap-2 px-3 py-1 ${theme.readingEyebrowBg} ${theme.readingEyebrowText} text-[10px] font-semibold tracking-wider uppercase rounded-full mb-4`} style={{ backgroundColor: 'rgba(var(--accent),0.08)', color: 'var(--accent-hex)' }}>
         {eyebrow}
       </span>
       <h2 className="font-serif text-3xl md:text-5xl leading-tight tracking-tight text-zinc-900 dark:text-white font-semibold">
@@ -86,19 +86,19 @@ interface MicroCommitmentProps {
 }
 
 export const MicroCommitment = ({ children, theme, northStarNudge }: MicroCommitmentProps) => (
-  <div className={`my-12 border-l-[3px] ${theme.microBorder} bg-white dark:bg-zinc-900 rounded-r-xl p-8`}>
+  <div className={`my-12 border-l-[3px] ${theme.microBorder} bg-white dark:bg-zinc-900 rounded-r-xl p-8`} style={{ borderLeftColor: 'var(--accent-hex)' }}>
     <div className="flex items-start gap-4">
-      <div className={`w-9 h-9 rounded-lg ${theme.microIconBg} text-white flex items-center justify-center shrink-0`}>
+      <div className={`w-9 h-9 rounded-lg ${theme.microIconBg} text-white flex items-center justify-center shrink-0`} style={{ backgroundColor: 'var(--accent-hex)' }}>
         <Zap size={16} />
       </div>
       <div>
-        <p className={`text-[10px] font-semibold uppercase tracking-[0.15em] ${theme.microTitle} dark:text-zinc-300 mb-2`}>Quick Challenge</p>
+        <p className={`text-[10px] font-semibold uppercase tracking-[0.15em] ${theme.microTitle} dark:text-zinc-300 mb-2`} style={{ color: 'var(--accent-hex)' }}>Quick Challenge</p>
         <div className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
           {children}
         </div>
         {northStarNudge && (
           <p className="text-xs italic text-zinc-400 dark:text-zinc-500 mt-3">
-            <Zap size={10} className="inline -mt-0.5 mr-1 text-[#CC785C]" />
+            <Zap size={10} className="inline -mt-0.5 mr-1 text-[var(--accent-hex)]" />
             Remember: {northStarNudge}
           </p>
         )}

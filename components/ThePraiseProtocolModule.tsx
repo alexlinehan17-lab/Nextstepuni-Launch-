@@ -628,6 +628,7 @@ const ThePraiseProtocolModule: React.FC<{ onBack: () => void; progress: ModulePr
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Choose Your Words"
     >
       {(activeSection) => (
         <>

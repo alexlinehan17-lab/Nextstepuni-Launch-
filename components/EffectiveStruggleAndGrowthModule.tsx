@@ -567,6 +567,7 @@ const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress:
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Embrace the Struggle"
     >
       {(activeSection) => (
         <>

@@ -556,6 +556,7 @@ const ControllableVariablesModule: React.FC<{ onBack: () => void; progress: Modu
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Fuel Your Brain"
     >
       {(activeSection) => (
         <>

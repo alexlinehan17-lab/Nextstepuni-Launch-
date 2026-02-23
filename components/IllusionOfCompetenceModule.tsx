@@ -265,6 +265,7 @@ const IllusionOfCompetenceModule: React.FC<{ onBack: () => void; progress: Modul
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Know for Real"
     >
       {(activeSection) => (
         <>

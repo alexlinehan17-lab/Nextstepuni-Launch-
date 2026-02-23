@@ -31,13 +31,13 @@ const TOTAL_STEPS = 7;
 // ─── Step-specific ambient blob colors ──────────────────────────────────────
 
 const STEP_BLOBS: Record<Step, { a: string; b: string; c: string }> = {
-  1: { a: 'bg-[#CC785C]/[0.07]', b: 'bg-yellow-300/[0.09]', c: 'bg-orange-200/[0.08]' },
-  2: { a: 'bg-purple-300/[0.08]', b: 'bg-[#CC785C]/[0.07]', c: 'bg-amber-200/[0.06]' },
+  1: { a: 'bg-[rgba(var(--accent),0.07)]', b: 'bg-yellow-300/[0.09]', c: 'bg-orange-200/[0.08]' },
+  2: { a: 'bg-purple-300/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-amber-200/[0.06]' },
   3: { a: 'bg-blue-300/[0.08]', b: 'bg-emerald-300/[0.07]', c: 'bg-purple-200/[0.06]' },
   4: { a: 'bg-emerald-300/[0.08]', b: 'bg-amber-300/[0.07]', c: 'bg-blue-200/[0.06]' },
-  5: { a: 'bg-amber-300/[0.09]', b: 'bg-[#CC785C]/[0.07]', c: 'bg-yellow-200/[0.08]' },
+  5: { a: 'bg-amber-300/[0.09]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-yellow-200/[0.08]' },
   6: { a: 'bg-rose-300/[0.08]', b: 'bg-orange-200/[0.07]', c: 'bg-pink-200/[0.06]' },
-  7: { a: 'bg-emerald-300/[0.09]', b: 'bg-[#CC785C]/[0.07]', c: 'bg-amber-200/[0.06]' },
+  7: { a: 'bg-emerald-300/[0.09]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-amber-200/[0.06]' },
 };
 
 // ─── Subject Color Map (literal Tailwind strings for CDN) ───────────────────
@@ -335,7 +335,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               key={s}
               layout
               className={`h-2 rounded-full ${
-                s === step ? 'w-8 bg-[#CC785C]' : s < step ? 'w-4 bg-[#CC785C]/40' : 'w-4 bg-zinc-200 dark:bg-zinc-700'
+                s === step ? 'w-8 bg-[var(--accent-hex)]' : s < step ? 'w-4 bg-[rgba(var(--accent),0.4)]' : 'w-4 bg-zinc-200 dark:bg-zinc-700'
               }`}
               transition={{ type: 'spring', stiffness: 500, damping: 30 }}
             />
@@ -406,7 +406,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                           transition={{ duration: 0.4, delay: 0.9 + i * 0.08, ease: [0.16, 1, 0.3, 1] }}
                           className="flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-full bg-white/80 dark:bg-white/[0.06] border border-zinc-200/60 dark:border-white/[0.08] text-xs font-medium text-zinc-500 dark:text-zinc-400"
                         >
-                          <chip.icon size={12} className="text-[#CC785C]" />
+                          <chip.icon size={12} className="text-[var(--accent-hex)]" />
                           {chip.label}
                         </motion.div>
                       ))}
@@ -431,7 +431,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               <MotionDiv key="step3" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Select Your Subjects</h2>
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
-                  Tap to select your Leaving Cert subjects. <span className="font-semibold text-[#CC785C]">{selectedSubjects.size} selected</span>
+                  Tap to select your Leaving Cert subjects. <span className="font-semibold text-[var(--accent-hex)]">{selectedSubjects.size} selected</span>
                 </p>
                 <div className="space-y-6">
                   {Object.entries(groupedSubjects).map(([group, subjects]) => {
@@ -617,10 +617,10 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                        className="mt-6 p-4 rounded-xl bg-[#CC785C]/10 border border-[#CC785C]/20"
+                        className="mt-6 p-4 rounded-xl bg-[rgba(var(--accent),0.1)] border border-[rgba(var(--accent),0.2)]"
                       >
-                        <p className="text-3xl font-bold font-mono text-[#CC785C]">{daysLeft}</p>
-                        <p className="text-xs font-semibold text-[#CC785C]/80 uppercase tracking-widest">days to go</p>
+                        <p className="text-3xl font-bold font-mono text-[var(--accent-hex)]">{daysLeft}</p>
+                        <p className="text-xs font-semibold text-[rgba(var(--accent),0.8)] uppercase tracking-widest">days to go</p>
                       </motion.div>
                     )}
                   </div>
@@ -727,8 +727,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                   </div>
                   {/* Gain hero number */}
                   <div className="pt-3 border-t border-zinc-200/50 dark:border-white/[0.06]">
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#CC785C]/70 mb-1">Projected Gain</p>
-                    <p className="text-4xl font-bold font-mono text-[#CC785C]">
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-[rgba(var(--accent),0.7)] mb-1">Projected Gain</p>
+                    <p className="text-4xl font-bold font-mono text-[var(--accent-hex)]">
                       <AnimatedNumber value={pointsTotals.gain} prefix={pointsTotals.gain > 0 ? '+' : ''} delay={0.6} />
                     </p>
                   </div>
@@ -801,13 +801,13 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
 
             {step < TOTAL_STEPS ? (
               <button onClick={goNext} disabled={!canProceed()}
-                className="flex items-center gap-2 px-7 py-2.5 bg-[#CC785C] text-white font-semibold text-sm rounded-full hover:bg-[#B56A50] transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-[#CC785C]/20"
+                className="flex items-center gap-2 px-7 py-2.5 bg-[var(--accent-hex)] text-white font-semibold text-sm rounded-full hover:bg-[var(--accent-dark-hex)] transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-[rgba(var(--accent),0.2)]"
               >
                 {step === 1 ? 'Get Started' : 'Continue'} <ArrowRight size={14} />
               </button>
             ) : (
               <button onClick={() => onComplete(buildProfile(), northStarData ?? undefined)}
-                className="flex items-center gap-2 px-7 py-2.5 bg-[#CC785C] text-white font-semibold text-sm rounded-full hover:bg-[#B56A50] transition-colors shadow-lg shadow-[#CC785C]/20"
+                className="flex items-center gap-2 px-7 py-2.5 bg-[var(--accent-hex)] text-white font-semibold text-sm rounded-full hover:bg-[var(--accent-dark-hex)] transition-colors shadow-lg shadow-[rgba(var(--accent),0.2)]"
               >
                 <Check size={14} /> Save & Start Learning
               </button>

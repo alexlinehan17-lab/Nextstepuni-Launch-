@@ -338,6 +338,7 @@ const LearningMathModule: React.FC<{ onBack: () => void; progress: ModuleProgres
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Crack the Code"
     >
       {(activeSection) => (
         <>

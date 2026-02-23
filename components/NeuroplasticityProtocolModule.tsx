@@ -302,6 +302,7 @@ const NeuroplasticityProtocolModule: React.FC<{ onBack: () => void; progress: Mo
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Rewire Your Brain"
     >
       {(activeSection) => (
         <>

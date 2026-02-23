@@ -789,6 +789,7 @@ const TheLearningRadarModule: React.FC<{ onBack: () => void; progress: ModulePro
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Scan Your Blind Spots"
     >
       {(activeSection) => (
         <>

@@ -25,6 +25,7 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
     moduleDescription:
       'Master the Home Economics exam and practical components — from the food practical to the journal and written paper — and learn where the marks really are.',
     themeName: 'pink',
+    finishButtonText: 'Bring It Home',
     sections: [
       /* ---- Section 1: Exam Structure ---- */
       {
@@ -148,6 +149,7 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
     moduleDescription:
       'Understand the Construction Studies exam and project — how marks are split between practical and written, and what the examiner rewards in each.',
     themeName: 'slate',
+    finishButtonText: 'Build Your Grade',
     sections: [
       /* ---- Section 1: Exam Structure ---- */
       {
@@ -269,6 +271,7 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
     moduleDescription:
       'Break down the Engineering exam and project — understand the practical marks, the written paper structure, and how to maximise your overall grade.',
     themeName: 'gray',
+    finishButtonText: 'Engineer Your Success',
     sections: [
       /* ---- Section 1: Exam Structure ---- */
       {
@@ -390,6 +393,7 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
     moduleDescription:
       'Master Design & Communication Graphics — from the student assignment to the written exam — and learn how to present your work for maximum marks.',
     themeName: 'cyan',
+    finishButtonText: 'Design Your Success',
     sections: [
       /* ---- Section 1: Exam Structure ---- */
       {
@@ -508,6 +512,7 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
     moduleDescription:
       'Navigate the Technology exam and project — understand the design brief, the written paper, and how marks are allocated across both components.',
     themeName: 'indigo',
+    finishButtonText: 'Power Up',
     sections: [
       /* ---- Section 1: Exam Structure ---- */
       {

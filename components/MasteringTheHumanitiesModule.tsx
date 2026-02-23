@@ -250,6 +250,7 @@ const MasteringTheHumanitiesModule: React.FC<{ onBack: () => void; progress: Mod
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Make Your Case"
     >
       {(activeSection) => (
         <>

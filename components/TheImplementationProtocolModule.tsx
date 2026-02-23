@@ -335,6 +335,7 @@ const TheImplementationProtocolModule: React.FC<{ onBack: () => void; progress: 
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Close the Gap"
     >
       {(activeSection) => (
         <>

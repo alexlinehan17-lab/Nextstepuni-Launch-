@@ -611,6 +611,7 @@ const TheScienceOfMakingMistakesModule: React.FC<{ onBack: () => void; progress:
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Make Mistakes Count"
     >
       {(activeSection) => (
         <>

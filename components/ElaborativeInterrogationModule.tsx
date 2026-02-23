@@ -249,7 +249,7 @@ const ElaborativeInterrogationModule: React.FC<{ onBack: () => void; progress: M
   ];
 
   return (
-    <ModuleLayout moduleNumber="05" moduleTitle="Elaborative Interrogation" moduleSubtitle={`The "Why" Method`} moduleDescription="Stop just memorising facts and start actually understanding them by asking one simple question: &quot;Why?&quot;. This module shows you how to make what you study stick — and mean something — for the Leaving Cert." theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
+    <ModuleLayout moduleNumber="05" moduleTitle="Elaborative Interrogation" moduleSubtitle={`The "Why" Method`} moduleDescription="Stop just memorising facts and start actually understanding them by asking one simple question: &quot;Why?&quot;. This module shows you how to make what you study stick — and mean something — for the Leaving Cert." theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Start Asking Why">
       {(activeSection) => (
         <>
           {activeSection === 0 && (

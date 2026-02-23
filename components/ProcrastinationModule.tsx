@@ -414,6 +414,7 @@ const ProcrastinationModule: React.FC<{ onBack: () => void; progress: ModuleProg
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Get Moving"
     >
       {(activeSection) => (
         <>

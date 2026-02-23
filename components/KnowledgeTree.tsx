@@ -8,11 +8,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Sprout, Rocket, Target, FlaskConical,
   Fingerprint, ArrowRight, Sparkles, BarChart3, Compass, Lightbulb, KeyRound,
-  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw
+  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Layers
 } from 'lucide-react';
 import { getAvatarUrl } from '../components/Auth';
 import { CourseData, BentoModuleTile } from './Library';
-import { UserSettings } from '../types';
+import { UserSettings, type AccentThemeId, type CardStyleId } from '../types';
+import { ACCENT_THEMES, ACCENT_THEME_LIST, CARD_STYLES } from '../themeData';
 import { MoodFaceIcon, MOOD_KEYS, MOOD_LABELS } from './MoodFaceIcon';
 
 // FIX: Cast motion components to any to bypass broken type definitions
@@ -47,6 +48,7 @@ interface KnowledgeTreeProps {
   onChangeSubjects?: () => void;
   settings: UserSettings;
   updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void;
+  unlockedThemes?: string[];
   completedCount: number;
   totalCount: number;
   todayMood: string | null;
@@ -148,7 +150,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay, ease: [0.16, 1, 0.3, 1] }}
       onClick={onClick}
-      className={`group relative overflow-hidden rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 cursor-pointer transition-all duration-300 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-lg md:hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50 focus-visible:ring-offset-2 ${className}`}
+      className={`card-styled group relative overflow-hidden rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 cursor-pointer transition-all duration-300 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-lg md:hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] focus-visible:ring-offset-2 ${className}`}
     >
       {/* Accent top bar — always visible when started, reveals on hover otherwise */}
       <div
@@ -198,10 +200,12 @@ const BentoTile: React.FC<BentoTileProps> = ({
   );
 };
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, completedCount, totalCount, todayMood, onSetMood }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes = [], completedCount, totalCount, todayMood, onSetMood }) => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [moodExpanded, setMoodExpanded] = useState(false);
+  const [themePickerOpen, setThemePickerOpen] = useState(false);
+  const [cardPickerOpen, setCardPickerOpen] = useState(false);
 
   const sidebarItems = [
     { icon: Home, label: 'Home', onClick: () => {}, active: true },
@@ -292,7 +296,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     : [];
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 overflow-x-hidden relative transition-colors duration-500 selection:bg-[#CC785C]/20">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 overflow-x-hidden relative transition-colors duration-500 selection:bg-[rgba(var(--accent),0.2)]">
       {/* Sidebar — desktop only */}
       <aside
         className={`hidden md:flex flex-col fixed top-0 left-0 h-full z-40 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-r border-zinc-200 dark:border-zinc-800 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
@@ -341,7 +345,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
             <div className="shrink-0 flex items-center justify-center w-[18px] relative">
               <MoodFaceIcon mood={todayMood || 'balanced'} size={18} className="text-zinc-600 dark:text-zinc-400" />
               {todayMood && (
-                <div className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-[#CC785C]" />
+                <div className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-[var(--accent-hex)]" />
               )}
             </div>
             <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
@@ -369,13 +373,13 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                       title={MOOD_LABELS[key]}
                       className={`flex flex-col items-center gap-1.5 rounded-lg py-1.5 transition-all ${
                         todayMood === key
-                          ? 'text-[#CC785C]'
+                          ? 'text-[var(--accent-hex)]'
                           : 'text-zinc-400 dark:text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800'
                       }`}
                     >
                       <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all ${
                         todayMood === key
-                          ? 'bg-[#CC785C]/10 ring-2 ring-[#CC785C]'
+                          ? 'bg-[rgba(var(--accent),0.1)] ring-2 ring-[var(--accent-hex)]'
                           : ''
                       }`}>
                         <MoodFaceIcon mood={key} size={18} />
@@ -426,29 +430,114 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
             </button>
           )}
 
-          {/* Theme toggle */}
-          <button
-            onClick={() => updateSetting('darkMode', !settings.darkMode)}
-            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
-          >
-            <div className="shrink-0 flex items-center justify-center w-[18px]">
-              {settings.darkMode ? (
-                <Moon size={18} strokeWidth={1.5} className="text-zinc-600 dark:text-zinc-400" />
-              ) : (
-                <Sun size={18} strokeWidth={1.5} className="text-amber-400" />
+          {/* Theme toggle / picker */}
+          <div className="relative">
+            <button
+              onClick={() => { setThemePickerOpen(!themePickerOpen); setCardPickerOpen(false); }}
+              className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            >
+              <div className="shrink-0 flex items-center justify-center w-[18px]">
+                {settings.darkMode ? (
+                  <Moon size={18} strokeWidth={1.5} className="text-zinc-600 dark:text-zinc-400" />
+                ) : (
+                  <Sun size={18} strokeWidth={1.5} className="text-amber-400" />
+                )}
+              </div>
+              <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+                Theme
+              </span>
+              <span className={`transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+                <div className="w-3.5 h-3.5 rounded-full border border-zinc-200 dark:border-zinc-700" style={{ backgroundColor: ACCENT_THEMES[settings.accentTheme]?.hex || '#CC785C' }} />
+              </span>
+            </button>
+            <AnimatePresence>
+              {themePickerOpen && sidebarOpen && (
+                <MotionDiv
+                  initial={{ opacity: 0, y: -4, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -4, scale: 0.95 }}
+                  transition={{ duration: 0.15 }}
+                  className="absolute left-0 bottom-full mb-2 w-56 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-lg dark:shadow-2xl p-3 z-50"
+                >
+                  <button
+                    onClick={() => { updateSetting('darkMode', !settings.darkMode); }}
+                    className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 mb-2"
+                  >
+                    <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300">{settings.darkMode ? 'Light Mode' : 'Dark Mode'}</span>
+                    {settings.darkMode ? <Sun size={14} className="text-amber-400" /> : <Moon size={14} className="text-zinc-500" />}
+                  </button>
+                  <div className="border-t border-zinc-100 dark:border-zinc-800 pt-2">
+                    <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2 px-1">Accent</p>
+                    <div className="grid grid-cols-4 gap-1.5">
+                      {ACCENT_THEME_LIST.map(theme => (
+                        <button
+                          key={theme.id}
+                          onClick={() => { updateSetting('accentTheme', theme.id as AccentThemeId); }}
+                          title={theme.name}
+                          className={`flex items-center justify-center p-1.5 rounded-lg transition-all ${
+                            settings.accentTheme === theme.id
+                              ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]'
+                              : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                          }`}
+                        >
+                          <div
+                            className="w-5 h-5 rounded-full border border-white dark:border-zinc-700 shadow-sm"
+                            style={{ backgroundColor: theme.hex }}
+                          />
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                </MotionDiv>
               )}
-            </div>
-            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-              Theme
-            </span>
-            <span className={`transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-              {settings.darkMode ? (
-                <Sun size={14} className="text-amber-400" />
-              ) : (
-                <Moon size={14} className="text-zinc-500" />
+            </AnimatePresence>
+          </div>
+
+          {/* Card style picker */}
+          <div className="relative">
+            <button
+              onClick={() => { setCardPickerOpen(!cardPickerOpen); setThemePickerOpen(false); }}
+              className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            >
+              <div className="shrink-0 flex items-center justify-center w-[18px]">
+                <Layers size={18} strokeWidth={1.5} className="text-zinc-500" />
+              </div>
+              <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+                Cards
+              </span>
+            </button>
+            <AnimatePresence>
+              {cardPickerOpen && sidebarOpen && (
+                <MotionDiv
+                  initial={{ opacity: 0, y: -4, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -4, scale: 0.95 }}
+                  transition={{ duration: 0.15 }}
+                  className="absolute left-0 bottom-full mb-2 w-56 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-lg dark:shadow-2xl p-3 z-50"
+                >
+                  <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2 px-1">Card Style</p>
+                  <div className="space-y-1">
+                    {CARD_STYLES.map(style => (
+                      <button
+                        key={style.id}
+                        onClick={() => { updateSetting('cardStyle', style.id as CardStyleId); }}
+                        className={`w-full flex items-center justify-between p-2 rounded-lg transition-all ${
+                          settings.cardStyle === style.id
+                            ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]'
+                            : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                        }`}
+                      >
+                        <div>
+                          <p className="text-xs font-medium text-zinc-700 dark:text-zinc-300 text-left">{style.name}</p>
+                          <p className="text-[10px] text-zinc-400 dark:text-zinc-500 text-left">{style.description}</p>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                </MotionDiv>
               )}
-            </span>
-          </button>
+            </AnimatePresence>
+          </div>
 
           {/* Settings */}
           <button
@@ -500,7 +589,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="mb-12"
         >
-          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#CC785C] mb-3">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[var(--accent-hex)] mb-3">
             Learning Lab
           </p>
           <h1 className="font-serif text-4xl md:text-5xl text-zinc-900 dark:text-white tracking-tight leading-tight font-semibold">
@@ -549,7 +638,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
               subtitle="Dashboard"
               description="Track your modules completed, study streak, mood, and category progress all in one place."
               icon={BarChart3}
-              accentHex="#CC785C"
+              accentHex="var(--accent-hex)"
               onClick={onGoToDashboard}
               className="md:col-span-3"
               delay={(modules.length + 1) * 0.1}
@@ -577,7 +666,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                     <button 
                         key={tag}
                         onClick={() => handleTagClick(tag)}
-                        className={`px-3.5 py-1.5 text-xs font-medium rounded-full border transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50 ${selectedTags.includes(tag) ? 'bg-[#CC785C] text-white border-[#CC785C]' : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:border-zinc-300 dark:hover:border-zinc-700'}`}
+                        className={`px-3.5 py-1.5 text-xs font-medium rounded-full border transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] ${selectedTags.includes(tag) ? 'bg-[var(--accent-hex)] text-white border-[var(--accent-hex)]' : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:border-zinc-300 dark:hover:border-zinc-700'}`}
                     >
                         {tag}
                     </button>

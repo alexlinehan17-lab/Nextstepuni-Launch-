@@ -83,6 +83,10 @@
         -moz-osx-font-smoothing: grayscale;
       }
       :root {
+        --accent: 204, 120, 92;
+        --accent-hex: #CC785C;
+        --accent-dark: 181, 106, 80;
+        --accent-dark-hex: #B56A50;
         --sat: env(safe-area-inset-top);
         --sar: env(safe-area-inset-right);
         --sab: env(safe-area-inset-bottom);
@@ -107,6 +111,51 @@
         nav, footer, button {
           display: none !important;
         }
+      }
+      /* Card style overrides — triggered by data-card-style on <body> */
+      /* Glass — dramatic frosted effect */
+      body[data-card-style="glass"] .card-styled {
+        background: rgba(255, 255, 255, 0.35) !important;
+        backdrop-filter: blur(24px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;
+      }
+      html.dark body[data-card-style="glass"] .card-styled {
+        background: rgba(25, 25, 25, 0.4) !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+      }
+      /* Neon — readable with glowing accent borders */
+      body[data-card-style="neon"] .card-styled {
+        background: white !important;
+        border: 2px solid rgba(var(--accent), 0.5) !important;
+        box-shadow: 0 0 20px rgba(var(--accent), 0.15), 0 0 60px rgba(var(--accent), 0.05) !important;
+      }
+      html.dark body[data-card-style="neon"] .card-styled {
+        background: #191919 !important;
+        border: 2px solid rgba(var(--accent), 0.5) !important;
+        box-shadow: 0 0 20px rgba(var(--accent), 0.2), 0 0 60px rgba(var(--accent), 0.08) !important;
+      }
+      /* Flat — bold accent borders, zero shadows */
+      body[data-card-style="flat"] .card-styled {
+        background: white !important;
+        border: 3px solid rgba(var(--accent), 0.3) !important;
+        border-radius: 0.75rem !important;
+        box-shadow: none !important;
+      }
+      html.dark body[data-card-style="flat"] .card-styled {
+        background: #191919 !important;
+        border: 3px solid rgba(var(--accent), 0.25) !important;
+      }
+      /* Gradient — subtle accent gradient */
+      body[data-card-style="gradient"] .card-styled {
+        background: linear-gradient(135deg, white, rgba(var(--accent), 0.08)) !important;
+        border: 1px solid rgba(var(--accent), 0.12) !important;
+      }
+      html.dark body[data-card-style="gradient"] .card-styled {
+        background: linear-gradient(135deg, #191919, rgba(var(--accent), 0.12)) !important;
+        border: 1px solid rgba(var(--accent), 0.1) !important;
       }
     </style>
   <script type="importmap">

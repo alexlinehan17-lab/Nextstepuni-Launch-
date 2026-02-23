@@ -134,7 +134,7 @@ const MasteringInterleavingModule: React.FC<{ onBack: () => void; progress: Modu
   ];
 
   return (
-    <ModuleLayout moduleNumber="03" moduleTitle="Mix It Up" moduleSubtitle="The Topic Salad Method" moduleDescription={`Stop studying one subject for hours on end. Mixing your topics feels harder, but it's the fastest way to build the kind of knowledge that actually holds up in the Leaving Cert.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate}>
+    <ModuleLayout moduleNumber="03" moduleTitle="Mix It Up" moduleSubtitle="The Topic Salad Method" moduleDescription={`Stop studying one subject for hours on end. Mixing your topics feels harder, but it's the fastest way to build the kind of knowledge that actually holds up in the Leaving Cert.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Shake Up Your Study">
       {(activeSection) => (
         <>
           {activeSection === 0 && (

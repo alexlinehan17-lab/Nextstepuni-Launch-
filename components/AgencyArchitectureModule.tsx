@@ -285,6 +285,7 @@ const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleP
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Take the Controls"
     >
       {(activeSection) => (
         <>

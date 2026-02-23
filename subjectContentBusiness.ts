@@ -18,6 +18,7 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
     moduleDescription:
       'Understand the Accounting exam inside and out — the layout, mark allocation, and the specific presentation standards that separate top marks from average.',
     themeName: 'gray',
+    finishButtonText: 'Balance the Books',
     sections: [
       // ── Section 1: How Accounting Actually Works ─────────────────────
       {
@@ -180,6 +181,7 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
     moduleDescription:
       'Everything you need to crack the Business exam — from the ABQ to action words and the answer structures that examiners actually reward.',
     themeName: 'orange',
+    finishButtonText: 'Close the Deal',
     sections: [
       // ── Section 1: How Business Actually Works ──────────────────────
       {
@@ -342,6 +344,7 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
     moduleDescription:
       'Decode the Economics exam — understand how Section A and B work, where the easy marks are, and how to write answers that hit every marking point.',
     themeName: 'teal',
+    finishButtonText: 'Cash In',
     sections: [
       // ── Section 1: How Economics Actually Works ─────────────────────
       {

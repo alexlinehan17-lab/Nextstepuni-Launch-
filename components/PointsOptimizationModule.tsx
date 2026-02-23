@@ -653,7 +653,7 @@ const PointsOptimizationModule: React.FC<{
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
-      finishButtonText="Complete Module"
+      finishButtonText="Maximise Your Points"
     >
       {(activeSection) => (
         <>

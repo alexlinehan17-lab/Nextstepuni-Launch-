@@ -194,6 +194,7 @@ const LanguageMasteryModule: React.FC<{ onBack: () => void; progress: ModuleProg
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Find Your Voice"
     >
       {(activeSection) => (
         <>

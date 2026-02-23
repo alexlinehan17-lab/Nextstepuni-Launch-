@@ -6,9 +6,10 @@
 import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Star, Coffee, CalendarOff, Lock, Check, ShoppingBag, Palette, ChevronRight } from 'lucide-react';
-import { type CosmeticUnlocks, type EarnedRest } from '../types';
+import { X, Star, Coffee, CalendarOff, Lock, Check, ShoppingBag, Palette, ChevronRight, Layers } from 'lucide-react';
+import { type CosmeticUnlocks, type EarnedRest, type UserSettings } from '../types';
 import { getAvatarUrl } from './Auth';
+import { ACCENT_THEME_LIST, CARD_STYLES } from '../themeData';
 
 const MotionDiv = motion.div as any;
 const MotionButton = motion.button as any;
@@ -29,8 +30,10 @@ interface RewardShopModalProps {
   pointsBalance: number;
   cosmeticUnlocks: CosmeticUnlocks;
   earnedRest: EarnedRest;
-  onSpend: (type: 'skip-session' | 'rest-day-pass' | 'unlock-avatar' | 'unlock-theme', detail?: string) => void;
+  onSpend: (type: 'skip-session' | 'rest-day-pass' | 'unlock-avatar' | 'unlock-theme' | 'unlock-card-style', detail?: string) => void;
   skippableBlocks?: SkippableBlock[];
+  settings?: UserSettings;
+  updateSetting?: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void;
 }
 
 const SESSION_TYPE_LABELS: Record<string, string> = {
@@ -40,7 +43,7 @@ const SESSION_TYPE_LABELS: Record<string, string> = {
 };
 
 const RewardShopModal: React.FC<RewardShopModalProps> = ({
-  isOpen, onClose, pointsBalance, cosmeticUnlocks, earnedRest, onSpend, skippableBlocks = [],
+  isOpen, onClose, pointsBalance, cosmeticUnlocks, earnedRest, onSpend, skippableBlocks = [], settings, updateSetting,
 }) => {
   const [pickingSession, setPickingSession] = useState(false);
   const canAfford = (cost: number) => pointsBalance >= cost;
@@ -249,15 +252,123 @@ const RewardShopModal: React.FC<RewardShopModalProps> = ({
                 </div>
               </section>
 
-              {/* Theme Colors Section (placeholder) */}
+              {/* Accent Themes Section */}
               <section>
                 <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
-                  Theme Colors — 40 pts each
+                  Accent Themes — 40 pts each
                 </h3>
-                <div className="p-4 rounded-xl bg-zinc-50 dark:bg-white/[0.03] border border-zinc-200/50 dark:border-white/[0.06] text-center">
-                  <Palette size={24} className="text-zinc-300 dark:text-zinc-600 mx-auto mb-2" />
-                  <p className="text-xs font-semibold text-zinc-400 dark:text-zinc-500">Coming Soon</p>
-                  <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">Custom accent themes will be available in a future update.</p>
+                <div className="grid grid-cols-4 gap-2.5">
+                  {ACCENT_THEME_LIST.map(theme => {
+                    const isUnlocked = theme.price === 0 || (cosmeticUnlocks.themeColors || []).includes(theme.id);
+                    const isActive = isUnlocked && settings?.accentTheme === theme.id;
+                    const affordable = canAfford(theme.price);
+                    return (
+                      <button
+                        key={theme.id}
+                        onClick={() => {
+                          if (isUnlocked && updateSetting) {
+                            updateSetting('accentTheme', theme.id);
+                          } else if (!isUnlocked && affordable) {
+                            onSpend('unlock-theme', theme.id);
+                            if (updateSetting) updateSetting('accentTheme', theme.id);
+                          }
+                        }}
+                        disabled={!isUnlocked && !affordable}
+                        className={`relative flex flex-col items-center gap-1.5 p-2.5 rounded-xl transition-all focus:outline-none focus-visible:outline-none ${
+                          isActive
+                            ? 'ring-2 ring-emerald-400 bg-emerald-50 dark:bg-emerald-900/20'
+                            : isUnlocked
+                              ? 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'
+                              : affordable
+                                ? 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-purple-300 dark:hover:ring-purple-600 cursor-pointer'
+                                : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] opacity-50 cursor-not-allowed'
+                        }`}
+                      >
+                        <div
+                          className="w-8 h-8 rounded-full border-2 border-white dark:border-zinc-800 shadow-sm"
+                          style={{ backgroundColor: theme.hex }}
+                        />
+                        <p className="text-[9px] font-bold text-zinc-500 dark:text-zinc-400 text-center leading-tight">{theme.name}</p>
+                        {isActive && (
+                          <div className="absolute top-1 right-1 w-4 h-4 rounded-full bg-emerald-500 flex items-center justify-center">
+                            <Check size={8} className="text-white" />
+                          </div>
+                        )}
+                        {!isUnlocked && (
+                          <div className="absolute top-1 right-1">
+                            {affordable ? (
+                              <span className="text-[8px] font-bold text-purple-600 dark:text-purple-400 bg-purple-100 dark:bg-purple-900/40 px-1.5 py-0.5 rounded-full">40</span>
+                            ) : (
+                              <div className="w-4 h-4 rounded-full bg-zinc-400 dark:bg-zinc-600 flex items-center justify-center">
+                                <Lock size={7} className="text-white" />
+                              </div>
+                            )}
+                          </div>
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+              </section>
+
+              {/* Card Styles Section */}
+              <section>
+                <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
+                  Card Styles — 40 pts each
+                </h3>
+                <div className="grid grid-cols-2 gap-2.5">
+                  {CARD_STYLES.map(style => {
+                    const isUnlocked = style.price === 0 || (cosmeticUnlocks.cardStyles || []).includes(style.id);
+                    const isActive = isUnlocked && settings?.cardStyle === style.id;
+                    const affordable = canAfford(style.price);
+                    return (
+                      <button
+                        key={style.id}
+                        onClick={() => {
+                          if (isUnlocked && updateSetting) {
+                            updateSetting('cardStyle', style.id);
+                          } else if (!isUnlocked && affordable) {
+                            onSpend('unlock-card-style', style.id);
+                            if (updateSetting) updateSetting('cardStyle', style.id);
+                          }
+                        }}
+                        disabled={!isUnlocked && !affordable}
+                        className={`relative flex flex-col items-center gap-2 p-3 rounded-xl transition-all focus:outline-none focus-visible:outline-none ${
+                          isActive
+                            ? 'ring-2 ring-emerald-400 bg-emerald-50 dark:bg-emerald-900/20'
+                            : isUnlocked
+                              ? 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'
+                              : affordable
+                                ? 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-purple-300 dark:hover:ring-purple-600 cursor-pointer'
+                                : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] opacity-50 cursor-not-allowed'
+                        }`}
+                      >
+                        <div className="w-full h-10 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 flex items-center justify-center">
+                          <Layers size={14} className="text-zinc-400 dark:text-zinc-500" />
+                        </div>
+                        <div className="text-center">
+                          <p className="text-[10px] font-bold text-zinc-700 dark:text-zinc-200">{style.name}</p>
+                          <p className="text-[9px] text-zinc-400 dark:text-zinc-500">{style.description}</p>
+                        </div>
+                        {isActive && (
+                          <div className="absolute top-1 right-1 w-4 h-4 rounded-full bg-emerald-500 flex items-center justify-center">
+                            <Check size={8} className="text-white" />
+                          </div>
+                        )}
+                        {!isUnlocked && (
+                          <div className="absolute top-1 right-1">
+                            {affordable ? (
+                              <span className="text-[8px] font-bold text-purple-600 dark:text-purple-400 bg-purple-100 dark:bg-purple-900/40 px-1.5 py-0.5 rounded-full">40</span>
+                            ) : (
+                              <div className="w-4 h-4 rounded-full bg-zinc-400 dark:bg-zinc-600 flex items-center justify-center">
+                                <Lock size={7} className="text-white" />
+                              </div>
+                            )}
+                          </div>
+                        )}
+                      </button>
+                    );
+                  })}
                 </div>
               </section>
             </div>

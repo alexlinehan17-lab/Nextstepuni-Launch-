@@ -105,6 +105,7 @@ const TheMyelinManualModule: React.FC<{ onBack: () => void; progress: ModuleProg
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Build Your Wiring"
     >
       {(activeSection) => (
         <>

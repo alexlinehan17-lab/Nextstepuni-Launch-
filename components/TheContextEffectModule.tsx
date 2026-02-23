@@ -749,6 +749,7 @@ const TheContextEffectModule: React.FC<{ onBack: () => void; progress: ModulePro
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Switch It Up"
     >
       {(activeSection) => (
         <>

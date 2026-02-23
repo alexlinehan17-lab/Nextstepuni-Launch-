@@ -18,6 +18,7 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
     moduleDescription:
       'Master the History exam from the Document Question to the essays — understand how marks are allocated and what the examiner is actually looking for.',
     themeName: 'rose',
+    finishButtonText: 'Make History',
     sections: [
       // Section 1 — Exam Structure
       {
@@ -136,6 +137,7 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
     moduleDescription:
       'Break down the Geography exam by section — short questions, long questions, and the Geographical Investigation — and learn where to pick up the best marks.',
     themeName: 'emerald',
+    finishButtonText: 'Chart Your Course',
     sections: [
       // Section 1 — Exam Structure
       {
@@ -256,6 +258,7 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
     moduleDescription:
       'Navigate the Politics & Society exam — from the citizenship project to the written paper — and understand what the examiner rewards.',
     themeName: 'blue',
+    finishButtonText: 'Make Your Voice Heard',
     sections: [
       // Section 1 — Exam Structure
       {
@@ -375,6 +378,7 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
     moduleDescription:
       'Understand how the Religious Education exam works, where the marks are distributed, and how to write clear, structured answers that get top marks.',
     themeName: 'violet',
+    finishButtonText: 'Find Your Answers',
     sections: [
       // Section 1 — Exam Structure
       {
@@ -493,6 +497,7 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
     moduleDescription:
       'Decode the Classical Studies exam — understand the text-based questions, the essay structure, and how to show the depth of knowledge examiners reward.',
     themeName: 'fuchsia',
+    finishButtonText: 'Carpe Diem',
     sections: [
       // Section 1 — Exam Structure
       {

@@ -15,6 +15,7 @@ export const CREATIVE_CONTENT: Record<string, SubjectModuleContent> = {
     moduleDescription:
       'Understand the Art exam from the practical to the History of Art paper — learn what the examiner rewards and how to present your work for top marks.',
     themeName: 'fuchsia',
+    finishButtonText: 'Create Your Masterpiece',
     sections: [
       // ---------------------------------------------------------------
       // Section 1 — Exam Structure
@@ -184,6 +185,7 @@ export const CREATIVE_CONTENT: Record<string, SubjectModuleContent> = {
     moduleDescription:
       'Decode the Music exam — from the practical performance to the listening and composing components — and understand where the high-value marks are.',
     themeName: 'purple',
+    finishButtonText: 'Hit the Right Note',
     sections: [
       // ---------------------------------------------------------------
       // Section 1 — Exam Structure

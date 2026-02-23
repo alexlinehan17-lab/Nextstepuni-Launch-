@@ -397,6 +397,7 @@ const LeavingCertStrategyModule: React.FC<{ onBack: () => void; progress: Module
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Play It Smart"
     >
       {(activeSection) => (
         <>

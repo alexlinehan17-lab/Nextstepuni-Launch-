@@ -372,6 +372,7 @@ const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleP
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Take Back Your Focus"
     >
       {(activeSection) => (
         <>

@@ -17,6 +17,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
     moduleSubtitle: 'Your Complete Maths Exam Guide',
     moduleDescription: 'Understand how Paper 1 and Paper 2 work, where the marks are hiding, and exactly how to show your work to pick up every attempt mark.',
     themeName: 'indigo',
+    finishButtonText: 'Solve with Confidence',
     sections: [
       // Section 1: Exam Structure
       {
@@ -139,6 +140,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
     moduleSubtitle: 'Your Complete Applied Maths Guide',
     moduleDescription: 'Decode the Applied Maths exam -- understand the topic weighting, how to set up problems correctly, and where students leave the most marks on the table.',
     themeName: 'violet',
+    finishButtonText: 'Set Up and Solve',
     sections: [
       // Section 1: Exam Structure
       {
@@ -266,6 +268,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
     moduleSubtitle: 'Your Complete Physics Exam Guide',
     moduleDescription: 'Master the Physics exam from experiments to problem-solving -- understand how marks are allocated and what the examiner actually wants to see.',
     themeName: 'cyan',
+    finishButtonText: 'Prove It',
     sections: [
       // Section 1: Exam Structure
       {
@@ -384,6 +387,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
     moduleSubtitle: 'Your Complete Chemistry Exam Guide',
     moduleDescription: 'Break down the Chemistry exam by section -- mandatory experiments, theory questions, and calculations -- and learn where the high-value marks are.',
     themeName: 'teal',
+    finishButtonText: 'Balance the Equation',
     sections: [
       // Section 1: Exam Structure
       {
@@ -503,6 +507,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
     moduleSubtitle: 'Your Complete Biology Exam Guide',
     moduleDescription: 'Understand how the Biology exam really works, why some topics are worth far more than others, and how to write answers the examiner can actually give marks to.',
     themeName: 'lime',
+    finishButtonText: 'Evolve Your Approach',
     sections: [
       // Section 1: Exam Structure
       {
@@ -622,6 +627,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
     moduleSubtitle: 'Your Complete CS Exam Guide',
     moduleDescription: 'Navigate the Computer Science exam and coursework -- understand the ALT project, the written paper structure, and how to maximise marks across both.',
     themeName: 'sky',
+    finishButtonText: 'Run Your Program',
     sections: [
       // Section 1: Exam Structure
       {
@@ -740,6 +746,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
     moduleSubtitle: 'Your Complete Ag Science Guide',
     moduleDescription: 'Crack the Agricultural Science exam -- from the CBAs and mandatory experiments to the written paper -- and learn what the examiner rewards.',
     themeName: 'yellow',
+    finishButtonText: 'Cultivate Your Marks',
     sections: [
       // Section 1: Exam Structure
       {

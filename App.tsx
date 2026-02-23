@@ -6,7 +6,7 @@
 
 import React, { useState, useEffect, useRef, useCallback, useMemo, Suspense, lazy } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, LogOut, ArrowLeft, Settings, Flame, ChevronRight, ChevronLeft, Trophy, Award, Brain, Target, BookOpen, Shield, FlaskConical, BarChart3, Star, Home, Compass, Rocket, User, X } from 'lucide-react';
+import { Sun, Moon, LogOut, ArrowLeft, Settings, Flame, ChevronRight, Trophy, Award, Target, BarChart3, Star, Home, Compass, Rocket, User, X } from 'lucide-react';
 import { Library } from './components/Library';
 import { KnowledgeTree, CategoryType } from './components/KnowledgeTree';
 import { LoadingSpinner } from './components/LoadingSpinner';
@@ -31,6 +31,9 @@ import LearningPathsView from './components/LearningPathsView';
 import { type StudentSubjectProfile } from './components/subjectData';
 import NorthStarEditModal from './components/NorthStarEditModal';
 import ChangeSubjectsModal from './components/ChangeSubjectsModal';
+import { ACCENT_THEME_LIST, ACCENT_THEMES } from './themeData';
+import { type AccentThemeId } from './types';
+import { SettingsContext } from './contexts/SettingsContext';
 
 const Onboarding = lazy(() => import('./components/Onboarding'));
 
@@ -50,9 +53,10 @@ interface UserProfileProps {
   totalCount: number;
   onOpenNorthStar: () => void;
   hasNorthStar: boolean;
+  unlockedThemes: string[];
 }
 
-const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, completedCount, totalCount, onOpenNorthStar, hasNorthStar }) => {
+const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const displayAvatar = avatarOverride || user.avatar;
@@ -70,7 +74,7 @@ const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, upd
 
   return (
     <div className="relative" ref={dropdownRef}>
-      <button onClick={() => setIsOpen(!isOpen)} className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50 rounded-full">
+      <button onClick={() => setIsOpen(!isOpen)} className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] rounded-full">
         <img src={getAvatarUrl(displayAvatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
       </button>
       <AnimatePresence>
@@ -132,8 +136,8 @@ const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, upd
                 onClick={() => { setIsOpen(false); onGoToDashboard(); }}
                 className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5"
               >
-                <div className="w-8 h-8 rounded-lg bg-[#CC785C]/10 flex items-center justify-center">
-                  <BarChart3 size={16} className="text-[#CC785C]" />
+                <div className="w-8 h-8 rounded-lg bg-[rgba(var(--accent),0.1)] flex items-center justify-center">
+                  <BarChart3 size={16} className="text-[var(--accent-hex)]" />
                 </div>
                 <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">My Progress</span>
               </button>
@@ -141,8 +145,8 @@ const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, upd
                 onClick={() => { setIsOpen(false); onOpenPassport(); }}
                 className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5"
               >
-                <div className="w-8 h-8 rounded-lg bg-[#CC785C]/10 dark:bg-[#CC785C]/10 flex items-center justify-center">
-                  <Award size={16} className="text-[#CC785C]" />
+                <div className="w-8 h-8 rounded-lg bg-[rgba(var(--accent),0.1)] dark:bg-[rgba(var(--accent),0.1)] flex items-center justify-center">
+                  <Award size={16} className="text-[var(--accent-hex)]" />
                 </div>
                 <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">Study Passport</span>
                 <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500">{completedCount}/{totalCount}</span>
@@ -163,7 +167,7 @@ const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, upd
                 </button>
               )}
               <button onClick={() => updateSetting('darkMode', !settings.darkMode)} className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5">
-                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Theme</span>
+                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{settings.darkMode ? 'Light Mode' : 'Dark Mode'}</span>
                    <AnimatePresence mode="wait">
                       {settings.darkMode ? (
                         <motion.div key="sun" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} transition={{ duration: 0.2 }}>
@@ -176,6 +180,31 @@ const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, upd
                       )}
                   </AnimatePresence>
               </button>
+              {/* Accent Theme Picker */}
+              {ACCENT_THEME_LIST.filter(t => t.price === 0 || unlockedThemes.includes(t.id)).length > 1 && (
+                <div className="mt-1 px-2">
+                  <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-1.5">Accent</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {ACCENT_THEME_LIST.filter(t => t.price === 0 || unlockedThemes.includes(t.id)).map(theme => (
+                      <button
+                        key={theme.id}
+                        onClick={() => updateSetting('accentTheme', theme.id as AccentThemeId)}
+                        title={theme.name}
+                        className={`p-1 rounded-lg transition-all ${
+                          settings.accentTheme === theme.id
+                            ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]'
+                            : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                        }`}
+                      >
+                        <div
+                          className="w-5 h-5 rounded-full border border-white dark:border-zinc-700 shadow-sm"
+                          style={{ backgroundColor: theme.hex }}
+                        />
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
               <button onClick={() => { setIsOpen(false); onOpenSettings(); }} className="w-full flex items-center gap-2 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5 mt-1">
                 <Settings size={16} className="text-zinc-500" />
                 <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Settings</span>
@@ -223,11 +252,11 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
             <button
               key={tab.id}
               onClick={tab.action}
-              className={`relative flex flex-col items-center justify-center gap-1 flex-1 h-full transition-colors focus-visible:outline-none focus-visible:bg-zinc-100 dark:focus-visible:bg-zinc-800 ${isActive ? 'text-[#CC785C]' : 'text-zinc-400 dark:text-zinc-500'}`}
+              className={`relative flex flex-col items-center justify-center gap-1 flex-1 h-full transition-colors focus-visible:outline-none focus-visible:bg-zinc-100 dark:focus-visible:bg-zinc-800 ${isActive ? 'text-[var(--accent-hex)]' : 'text-zinc-400 dark:text-zinc-500'}`}
             >
               <tab.icon size={20} strokeWidth={isActive ? 2 : 1.5} />
               <span className="text-[10px] font-medium">{tab.label}</span>
-              {isActive && <div className="absolute bottom-1.5 w-1 h-1 rounded-full bg-[#CC785C]" />}
+              {isActive && <div className="absolute bottom-1.5 w-1 h-1 rounded-full bg-[var(--accent-hex)]" />}
             </button>
           );
         })}
@@ -257,6 +286,7 @@ interface MobileProfileSheetProps {
   hasNorthStar: boolean;
   todayMood: string | null;
   onSetMood: (mood: string) => void;
+  unlockedThemes: string[];
 }
 
 const MOBILE_MOOD_OPTIONS = [
@@ -266,7 +296,7 @@ const MOBILE_MOOD_OPTIONS = [
   { key: 'stressed', label: 'Stressed', emoji: '😰' },
 ];
 
-const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, completedCount, totalCount, onOpenNorthStar, hasNorthStar, todayMood, onSetMood }) => {
+const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, completedCount, totalCount, onOpenNorthStar, hasNorthStar, todayMood, onSetMood, unlockedThemes }) => {
   const displayAvatar = avatarOverride || user.avatar;
   return (
     <AnimatePresence>
@@ -334,7 +364,7 @@ const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose
                       onClick={() => onSetMood(m.key)}
                       className={`flex-1 flex flex-col items-center gap-1 py-2.5 rounded-xl text-xs font-medium transition-colors ${
                         todayMood === m.key
-                          ? 'bg-[#CC785C]/10 text-[#CC785C] ring-1 ring-[#CC785C]/30'
+                          ? 'bg-[rgba(var(--accent),0.1)] text-[var(--accent-hex)] ring-1 ring-[rgba(var(--accent),0.3)]'
                           : 'bg-zinc-50 dark:bg-zinc-800/50 text-zinc-500 dark:text-zinc-400'
                       }`}
                     >
@@ -367,7 +397,7 @@ const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose
               {/* Actions */}
               <div className="space-y-1">
                 <button onClick={() => { onClose(); onOpenPassport(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
-                  <div className="w-8 h-8 rounded-lg bg-[#CC785C]/10 flex items-center justify-center"><Award size={16} className="text-[#CC785C]" /></div>
+                  <div className="w-8 h-8 rounded-lg bg-[rgba(var(--accent),0.1)] flex items-center justify-center"><Award size={16} className="text-[var(--accent-hex)]" /></div>
                   <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">Study Passport</span>
                   <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500">{completedCount}/{totalCount}</span>
                 </button>
@@ -381,8 +411,32 @@ const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose
                   <div className="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center">
                     {settings.darkMode ? <Sun size={16} className="text-amber-400" /> : <Moon size={16} className="text-zinc-600" />}
                   </div>
-                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">Theme</span>
+                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">{settings.darkMode ? 'Light Mode' : 'Dark Mode'}</span>
                 </button>
+                {ACCENT_THEME_LIST.filter(t => t.price === 0 || unlockedThemes.includes(t.id)).length > 1 && (
+                  <div className="px-3 py-2">
+                    <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-1.5">Accent</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {ACCENT_THEME_LIST.filter(t => t.price === 0 || unlockedThemes.includes(t.id)).map(theme => (
+                        <button
+                          key={theme.id}
+                          onClick={() => updateSetting('accentTheme', theme.id as AccentThemeId)}
+                          title={theme.name}
+                          className={`p-1.5 rounded-lg transition-all ${
+                            settings.accentTheme === theme.id
+                              ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]'
+                              : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                          }`}
+                        >
+                          <div
+                            className="w-6 h-6 rounded-full border border-white dark:border-zinc-700 shadow-sm"
+                            style={{ backgroundColor: theme.hex }}
+                          />
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 <button onClick={() => { onClose(); onOpenSettings(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
                   <div className="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center"><Settings size={16} className="text-zinc-500" /></div>
                   <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">Settings</span>
@@ -400,16 +454,6 @@ const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose
   );
 };
 
-const RESEARCH_PAPERS = [
-  { title: 'Implicit Theories of Intelligence Predict Achievement Across an Adolescent Transition', authors: 'Blackwell, Trzesniewski & Dweck', year: 2007, journal: 'Child Development', description: 'Students who believed their intelligence could grow got better maths grades over two years, while "fixed mindset" students flatlined. Teaching students the brain can grow with effort actually reversed declining grades.' },
-  { title: 'Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis', authors: 'Cepeda, Pashler, Vul, Wixted & Rohrer', year: 2006, journal: 'Psychological Bulletin', description: 'After analysing 317 experiments, researchers confirmed that spreading study sessions over time beats cramming into one sitting for long-term memory. The optimal gap is roughly 10-20% of the time until your exam.' },
-  { title: 'Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention', authors: 'Roediger & Karpicke', year: 2006, journal: 'Psychological Science', description: 'Students who tested themselves on material remembered far more long-term than students who simply re-read. The act of pulling information out of memory — even without feedback — made it stick dramatically better.' },
-  { title: 'Reducing the Racial Achievement Gap: A Social-Psychological Intervention', authors: 'Cohen, Garcia, Apfel & Master', year: 2006, journal: 'Science', description: 'Students who spent just 15 minutes writing about their most important personal values saw the achievement gap narrow by 40%. This brief exercise protected against stereotype threat and freed up mental energy for learning.' },
-  { title: 'Neuroplasticity: Changes in Grey Matter Induced by Training', authors: 'Draganski, Gaser, Busch, Schuierer, Bogdahn & May', year: 2004, journal: 'Nature', description: 'People who learned to juggle showed visible growth in brain areas over three months — their grey matter physically expanded. One of the first studies to prove that learning literally changes the structure of the brain.' },
-  { title: 'The Role of Deliberate Practice in the Acquisition of Expert Performance', authors: 'Ericsson, Krampe & Tesch-Romer', year: 1993, journal: 'Psychological Review', description: 'Elite violinists had accumulated roughly twice as many hours of focused practice as less accomplished players by age 20. What people call "natural talent" is largely the result of structured, goal-directed practice.' },
-  { title: 'Enhancing Interest and Performance With a Utility Value Intervention', authors: 'Hulleman & Harackiewicz', year: 2009, journal: 'Journal of Educational Psychology', description: 'When students wrote short essays connecting schoolwork to their own lives, struggling students improved by nearly two-thirds of a letter grade. Making study feel personally relevant boosted both interest and performance.' },
-  { title: 'Stereotype Threat and the Intellectual Test Performance of African Americans', authors: 'Steele & Aronson', year: 1995, journal: 'Journal of Personality and Social Psychology', description: 'When a test was framed as measuring ability, disadvantaged students performed worse. When the same test was framed as a simple exercise, the gap vanished — proving that pressure from stereotypes directly drags down performance.' },
-];
 
 const App: React.FC = () => {
   const [viewState, setViewState] = useState<'tree' | 'category' | 'module' | 'innovation-zone' | 'dashboard' | 'learning-paths' | 'onboarding'>('tree');
@@ -429,6 +473,8 @@ const App: React.FC = () => {
   const [mobileProfileOpen, setMobileProfileOpen] = useState(false);
   const [studentProfile, setStudentProfile] = useState<StudentSubjectProfile | null>(null);
   const [unlockedAvatarSeeds, setUnlockedAvatarSeeds] = useState<string[]>([]);
+  const [unlockedThemes, setUnlockedThemes] = useState<string[]>([]);
+  const [unlockedCardStyles, setUnlockedCardStyles] = useState<string[]>([]);
   const { settings, updateSetting, isLoaded: settingsLoaded } = useSettings(user?.uid, user?.avatar);
   const { streak } = useStreak(user?.uid);
   const { todayMood, setMood, entries: moodEntries } = useMood(user?.uid);
@@ -436,7 +482,6 @@ const App: React.FC = () => {
   const pointsData = usePoints(user?.uid);
 
   const isPopstateRef = useRef(false);
-  const researchScrollRef = useRef<HTMLDivElement>(null);
 
   const studentCourses = useMemo(() => {
     if (!studentProfile) return ALL_COURSES;
@@ -550,6 +595,12 @@ const App: React.FC = () => {
               setUserProgress(progressData as UserProgress);
               if (progressData.cosmeticUnlocks?.avatarSeeds) {
                 setUnlockedAvatarSeeds(progressData.cosmeticUnlocks.avatarSeeds);
+              }
+              if (progressData.cosmeticUnlocks?.themeColors) {
+                setUnlockedThemes(progressData.cosmeticUnlocks.themeColors);
+              }
+              if (progressData.cosmeticUnlocks?.cardStyles) {
+                setUnlockedCardStyles(progressData.cosmeticUnlocks.cardStyles);
               }
               if (progressData.northStar) {
                 setNorthStar(progressData.northStar as NorthStar);
@@ -724,32 +775,29 @@ const App: React.FC = () => {
 
     if (!user) {
       return (
-        <div className="relative min-h-screen flex flex-col overflow-x-hidden">
-          {/* ── Navbar ── */}
-          <nav className="fixed top-0 left-0 right-0 h-16 z-[100] bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-200/50 dark:border-white/[0.06]">
-            <div className="max-w-6xl mx-auto h-full px-6 flex items-center justify-between">
-              {/* Left: Logo */}
-              <img src="/nextstepuni-logo.png" alt="Nextstepuni" className="h-10 w-auto" />
-              {/* Right: Log in */}
-              <Auth
-                onLoginSuccess={handleLoginSuccess}
-                buttonLabel="Log in"
-                buttonClassName="px-5 py-2.5 text-sm font-medium bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50 focus-visible:ring-offset-2"
-                showChevron
-                initialStep="login"
-              />
-            </div>
-          </nav>
-
+        <div className="relative h-screen flex flex-col overflow-hidden">
           {/* ── Gradient blobs ── */}
           <div className="fixed inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-            <div className="absolute top-[15%] right-[10%] w-[500px] h-[500px] rounded-full bg-[#CC785C]/[0.07] blur-[100px] animate-blob-1" />
+            <div className="absolute top-[15%] right-[10%] w-[500px] h-[500px] rounded-full bg-[rgba(var(--accent),0.07)] blur-[100px] animate-blob-1" />
             <div className="absolute bottom-[20%] left-[5%] w-[450px] h-[450px] rounded-full bg-yellow-300/[0.09] blur-[100px] animate-blob-2" />
             <div className="absolute top-[40%] left-[30%] w-[400px] h-[400px] rounded-full bg-orange-200/[0.08] blur-[120px] animate-blob-3" />
           </div>
 
-          {/* ── Hero ── */}
-          <div className="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-16 relative z-10">
+          {/* ── Single-screen centered layout ── */}
+          <div className="flex-1 flex flex-col items-center justify-center text-center px-6 relative z-10">
+            {/* Logos */}
+            <motion.div
+              className="flex items-center gap-4 mb-10"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <img src="/nextstepuni-logo.png" alt="Nextstepuni" className="h-12 sm:h-14 w-auto" />
+              <div className="w-px h-8 bg-zinc-300 dark:bg-zinc-600" />
+              <img src="/pwc-logo.png" alt="PwC" className="h-20 sm:h-24 w-auto" />
+            </motion.div>
+
+            {/* Headline */}
             <h1 className="font-serif text-3xl sm:text-5xl md:text-7xl text-zinc-900 dark:text-white tracking-tight leading-[1.08] font-semibold max-w-3xl">
               {"Science-backed strategies to give you an".split(' ').map((word, i, arr) => (
                 <span key={i} className="inline-block overflow-hidden align-bottom pb-[0.15em] mb-[-0.15em]">
@@ -757,7 +805,7 @@ const App: React.FC = () => {
                     className="inline-block"
                     initial={{ y: '100%' }}
                     animate={{ y: 0 }}
-                    transition={{ duration: 0.7, delay: i * 0.05, ease: [0.16, 1, 0.3, 1] }}
+                    transition={{ duration: 0.7, delay: 0.15 + i * 0.05, ease: [0.16, 1, 0.3, 1] }}
                   >{word}{i < arr.length - 1 ? '\u00A0' : ''}</motion.span>
                 </span>
               ))}
@@ -767,8 +815,8 @@ const App: React.FC = () => {
                   className="inline-block px-1"
                   initial={{ y: '100%' }}
                   animate={{ y: 0 }}
-                  transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                  style={{ backgroundImage: 'linear-gradient(to top, rgba(217, 142, 116, 0.35) 35%, transparent 35%)', boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' } as React.CSSProperties}
+                  transition={{ duration: 0.7, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
+                  style={{ backgroundImage: 'linear-gradient(to top, rgba(var(--accent), 0.35) 35%, transparent 35%)', boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' } as React.CSSProperties}
                 >unfair advantage</motion.span>
               </span>
               {' '}
@@ -778,167 +826,58 @@ const App: React.FC = () => {
                     className="inline-block"
                     initial={{ y: '100%' }}
                     animate={{ y: 0 }}
-                    transition={{ duration: 0.7, delay: 0.4 + i * 0.05, ease: [0.16, 1, 0.3, 1] }}
+                    transition={{ duration: 0.7, delay: 0.55 + i * 0.05, ease: [0.16, 1, 0.3, 1] }}
                   >{word}{i < arr.length - 1 ? '\u00A0' : ''}</motion.span>
                 </span>
               ))}
             </h1>
 
+            {/* Subtitle */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.8, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
               className="mt-8 text-lg text-zinc-500 dark:text-zinc-400 max-w-xl leading-relaxed"
             >
               Master proven learning techniques used by top students. Build better study habits, retain more, and perform when it counts.
             </motion.p>
 
+            {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.75, ease: [0.16, 1, 0.3, 1] }}
-              className="mt-12"
+              transition={{ duration: 0.8, delay: 0.85, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-10 flex flex-col sm:flex-row items-center gap-4"
             >
               <Auth
                 onLoginSuccess={handleLoginSuccess}
-                buttonLabel="Start Learning"
-                buttonClassName="px-8 py-3.5 text-base font-medium bg-[#CC785C] text-white rounded-full hover:bg-[#B56A50] transition-colors shadow-lg shadow-[#CC785C]/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50 focus-visible:ring-offset-2"
+                buttonLabel="Get Started"
+                buttonClassName="px-8 py-3.5 text-base font-medium bg-[var(--accent-hex)] text-white rounded-full hover:bg-[var(--accent-dark-hex)] transition-colors shadow-lg shadow-[rgba(var(--accent),0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] focus-visible:ring-offset-2"
                 initialStep="create"
+              />
+              <Auth
+                onLoginSuccess={handleLoginSuccess}
+                buttonLabel="Log in"
+                buttonClassName="px-8 py-3.5 text-base font-medium text-zinc-700 dark:text-zinc-300 rounded-full border border-zinc-300 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800/50 transition-colors"
+                initialStep="login"
               />
             </motion.div>
           </div>
 
-          {/* ── How It Works ── */}
-          <div className="relative z-10 px-6 pb-24">
-            <div className="max-w-5xl mx-auto">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-80px' }}
-                transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-                className="text-center mb-16"
-              >
-                <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#CC785C] mb-3">How It Works</p>
-                <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-semibold text-zinc-900 dark:text-white">A complete system, not a collection of tips.</h2>
-              </motion.div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                {[
-                  { icon: Brain, title: 'Rewire Your Mindset', description: 'Build the psychological foundations that separate top students from the rest.', delay: 0 },
-                  { icon: BookOpen, title: 'Learn How to Learn', description: 'Master active recall, spaced repetition, and other techniques backed by cognitive science.', delay: 0.1 },
-                  { icon: Target, title: 'Optimise Your Strategy', description: 'Use grade economics, subject synergies, and marking scheme mechanics to maximise your points.', delay: 0.2 },
-                  { icon: Shield, title: 'Perform Under Pressure', description: 'Develop exam-day protocols that protect your working memory when it matters most.', delay: 0.3 },
-                ].map((pillar, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 24 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: '-60px' }}
-                    transition={{ duration: 0.6, delay: pillar.delay, ease: [0.16, 1, 0.3, 1] }}
-                    className="group p-6 rounded-2xl bg-white/60 dark:bg-zinc-900/40 border border-zinc-200/60 dark:border-zinc-800/60 backdrop-blur-sm hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors"
-                  >
-                    <div className="w-10 h-10 rounded-xl bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center mb-4 group-hover:bg-[#CC785C]/10 transition-colors">
-                      <pillar.icon size={20} className="text-zinc-500 dark:text-zinc-400 group-hover:text-[#CC785C] transition-colors" />
-                    </div>
-                    <h3 className="font-semibold text-zinc-900 dark:text-white text-sm mb-2">{pillar.title}</h3>
-                    <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">{pillar.description}</p>
-                  </motion.div>
-                ))}
-              </div>
-
-              {/* ── Stats row ── */}
-              <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
-                {[
-                  { value: '43', label: 'Interactive Modules', accent: 'from-[#CC785C]/20 to-[#CC785C]/5', border: 'border-[#CC785C]/20', textColor: 'text-[#CC785C]' },
-                  { value: '7', label: 'Research-Backed Categories', accent: 'from-amber-400/20 to-amber-400/5', border: 'border-amber-400/20', textColor: 'text-amber-500 dark:text-amber-400' },
-                  { value: '250+', label: 'Activities & Exercises', accent: 'from-emerald-400/20 to-emerald-400/5', border: 'border-emerald-400/20', textColor: 'text-emerald-600 dark:text-emerald-400' },
-                ].map((stat, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: '-60px' }}
-                    transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                    className={`relative overflow-hidden rounded-2xl border ${stat.border} bg-gradient-to-br ${stat.accent} backdrop-blur-sm p-8 text-center`}
-                  >
-                    <div className="absolute inset-0 bg-white/40 dark:bg-zinc-900/40" />
-                    <div className="relative">
-                      <p className={`text-4xl sm:text-5xl font-bold font-mono ${stat.textColor}`}>{stat.value}</p>
-                      <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400 mt-2 tracking-wide uppercase">{stat.label}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
+          {/* ── Bottom: Partnership badge ── */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.1 }}
+            className="relative z-10 pb-8 flex flex-col items-center gap-4"
+          >
+            <div className="flex items-center gap-5">
+              <img src="/nextstepuni-logo.png" alt="Nextstepuni" className="h-6 w-auto opacity-40 dark:opacity-30" />
+              <div className="w-px h-5 bg-zinc-300 dark:bg-zinc-700" />
+              <img src="/pwc-logo.png" alt="PwC" className="h-5 w-auto opacity-40 dark:opacity-30" />
             </div>
-          </div>
-
-          {/* ── Recent Research ── */}
-          <div className="relative z-10 px-6 pt-8 pb-20">
-            <div className="max-w-5xl mx-auto">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-80px' }}
-                transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-                className="flex items-end justify-between mb-10"
-              >
-                <div>
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#CC785C] mb-3">The Evidence</p>
-                  <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-semibold text-zinc-900 dark:text-white">Built on real research.</h2>
-                </div>
-                <div className="hidden sm:flex items-center gap-2">
-                  <button onClick={() => { if (researchScrollRef.current) researchScrollRef.current.scrollBy({ left: -researchScrollRef.current.offsetWidth * 0.75, behavior: 'smooth' }); }} className="w-10 h-10 rounded-full border border-zinc-200 dark:border-zinc-700 flex items-center justify-center text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
-                    <ChevronLeft size={18} />
-                  </button>
-                  <button onClick={() => { if (researchScrollRef.current) researchScrollRef.current.scrollBy({ left: researchScrollRef.current.offsetWidth * 0.75, behavior: 'smooth' }); }} className="w-10 h-10 rounded-full border border-zinc-200 dark:border-zinc-700 flex items-center justify-center text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
-                    <ChevronRight size={18} />
-                  </button>
-                </div>
-              </motion.div>
-
-              <div className="relative">
-              <div className="absolute left-0 top-0 bottom-4 w-8 bg-gradient-to-r from-zinc-50 dark:from-zinc-950 to-transparent z-10 pointer-events-none md:hidden" />
-              <div className="absolute right-0 top-0 bottom-4 w-8 bg-gradient-to-l from-zinc-50 dark:from-zinc-950 to-transparent z-10 pointer-events-none md:hidden" />
-              <div ref={researchScrollRef} className="flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-                {RESEARCH_PAPERS.map((paper, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: '-40px' }}
-                    transition={{ duration: 0.5, delay: i * 0.05, ease: [0.16, 1, 0.3, 1] }}
-                    className="snap-start shrink-0 w-[320px] sm:w-[360px] flex flex-col justify-between p-6 rounded-2xl bg-white/60 dark:bg-zinc-900/40 border border-zinc-200/60 dark:border-zinc-800/60 backdrop-blur-sm"
-                  >
-                    <div>
-                      <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-3">{paper.journal} ({paper.year})</p>
-                      <h3 className="font-serif text-base font-semibold text-zinc-900 dark:text-white leading-snug mb-3">{paper.title}</h3>
-                      <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">{paper.description}</p>
-                    </div>
-                    <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-5 pt-4 border-t border-zinc-100 dark:border-zinc-800">{paper.authors}</p>
-                  </motion.div>
-                ))}
-              </div>
-              </div>
-
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                className="mt-10 flex items-center justify-center gap-3"
-              >
-                <FlaskConical size={14} className="text-[#CC785C]" />
-                <p className="text-sm text-zinc-500 dark:text-zinc-400">Every module is grounded in peer-reviewed research from journals like <span className="font-medium text-zinc-700 dark:text-zinc-300">Nature</span>, <span className="font-medium text-zinc-700 dark:text-zinc-300">Science</span>, and <span className="font-medium text-zinc-700 dark:text-zinc-300">Psychological Review</span>.</p>
-              </motion.div>
-            </div>
-          </div>
-
-          {/* ── PwC Collaboration ── */}
-          <div className="relative z-10 pb-10 pt-6 flex items-center justify-center gap-3">
-            <div className="w-8 h-px bg-zinc-300 dark:bg-zinc-700" />
-            <p className="text-xs text-zinc-400 dark:text-zinc-500 tracking-wide">A Nextstepuni / PwC Collaboration</p>
-            <div className="w-8 h-px bg-zinc-300 dark:bg-zinc-700" />
-          </div>
+            <p className="text-[11px] text-zinc-400 dark:text-zinc-500 tracking-wide">Built for NEIC schools in collaboration with PwC</p>
+          </motion.div>
 
           {/* ── DEV: Skip Login ── */}
           <button
@@ -1013,6 +952,7 @@ const App: React.FC = () => {
         onChangeSubjects={studentProfile ? () => setChangeSubjectsOpen(true) : undefined}
         settings={settings}
         updateSetting={updateSetting}
+        unlockedThemes={unlockedThemes}
         completedCount={completedCount}
         totalCount={studentCourses.length}
         todayMood={todayMood}
@@ -1040,6 +980,19 @@ const App: React.FC = () => {
           userProgress={userProgress}
           northStar={northStar}
           studentProfile={studentProfile}
+          userName={user?.name}
+          userAvatarSeed={(settings.avatar || user?.avatar) ?? undefined}
+          onLogout={handleLogout}
+          onOpenSettings={() => setSettingsOpen(true)}
+          onOpenPassport={() => setPassportOpen(true)}
+          onGoToDashboard={handleGoToDashboard}
+          onGoToLearningPaths={handleGoToLearningPaths}
+          onGoToInnovationZone={handleGoToInnovationZone}
+          onChangeSubjects={studentProfile ? () => setChangeSubjectsOpen(true) : undefined}
+          todayMood={todayMood}
+          onSetMood={setMood}
+          completedCount={completedCount}
+          totalCount={studentCourses.length}
         />
       );
     }
@@ -1047,7 +1000,7 @@ const App: React.FC = () => {
     if (viewState === 'innovation-zone') {
         return (
           <Suspense fallback={<LoadingSpinner />}>
-            <InnovationZone onBack={handleBackToTree} onSelectModule={handleSelectModule} user={user} autoOpenJourney={cameFromJourney} savedJourneyResult={journeyResult} onJourneyComplete={setJourneyResult} />
+            <InnovationZone onBack={handleBackToTree} onSelectModule={handleSelectModule} user={user} autoOpenJourney={cameFromJourney} savedJourneyResult={journeyResult} onJourneyComplete={setJourneyResult} settings={settings} updateSetting={updateSetting} onCosmeticUnlocksChange={(unlocks) => { setUnlockedAvatarSeeds(unlocks.avatarSeeds || []); setUnlockedThemes(unlocks.themeColors || []); setUnlockedCardStyles(unlocks.cardStyles || []); }} />
           </Suspense>
         );
     }
@@ -1058,10 +1011,10 @@ const App: React.FC = () => {
         return (
           <Suspense fallback={<LoadingSpinner />}>
             {cameFromJourney && (
-              <div className="fixed top-0 left-0 right-0 z-[80] bg-[#CC785C] dark:bg-[#CC785C]">
+              <div className="fixed top-0 left-0 right-0 z-[80] bg-[var(--accent-hex)] dark:bg-[var(--accent-hex)]">
                 <button
                   onClick={handleBackToCategory}
-                  className="w-full flex items-center justify-center gap-2 py-2 text-white text-xs font-bold hover:bg-[#B56A50] dark:hover:bg-[#B56A50] transition-colors"
+                  className="w-full flex items-center justify-center gap-2 py-2 text-white text-xs font-bold hover:bg-[var(--accent-dark-hex)] dark:hover:bg-[var(--accent-dark-hex)] transition-colors"
                 >
                   <ArrowLeft size={14} />
                   Back to Journey Results
@@ -1083,10 +1036,11 @@ const App: React.FC = () => {
   };
 
   return (
+    <SettingsContext.Provider value={{ settings, updateSetting, unlockedThemes, unlockedCardStyles }}>
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
       {user && viewState !== 'onboarding' && user.role !== 'gc' && !user.isAdmin && (
-        <div className={`fixed top-6 right-6 z-[100] ${viewState === 'tree' ? 'hidden' : 'hidden md:block'}`}>
-          <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} onGoToDashboard={handleGoToDashboard} completedCount={completedCount} totalCount={studentCourses.length} onOpenNorthStar={() => setNorthStarEditOpen(true)} hasNorthStar={northStar !== null} />
+        <div className={`fixed top-6 right-6 z-[100] ${viewState === 'tree' || viewState === 'category' ? 'hidden' : 'hidden md:block'}`}>
+          <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} onGoToDashboard={handleGoToDashboard} completedCount={completedCount} totalCount={studentCourses.length} onOpenNorthStar={() => setNorthStarEditOpen(true)} hasNorthStar={northStar !== null} unlockedThemes={unlockedThemes} />
         </div>
       )}
 
@@ -1124,6 +1078,7 @@ const App: React.FC = () => {
           hasNorthStar={northStar !== null}
           todayMood={todayMood}
           onSetMood={setMood}
+          unlockedThemes={unlockedThemes}
         />
       )}
 
@@ -1135,6 +1090,8 @@ const App: React.FC = () => {
             settings={settings}
             updateSetting={updateSetting}
             unlockedAvatarSeeds={unlockedAvatarSeeds}
+            unlockedThemes={unlockedThemes}
+            unlockedCardStyles={unlockedCardStyles}
           />
           <StudyPassportModal
             isOpen={passportOpen}
@@ -1160,6 +1117,7 @@ const App: React.FC = () => {
         </>
       )}
     </div>
+    </SettingsContext.Provider>
   );
 };
 

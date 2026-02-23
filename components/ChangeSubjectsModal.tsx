@@ -168,8 +168,8 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
         <div className="shrink-0 flex items-center justify-between px-6 py-4 border-b border-zinc-200/50 dark:border-white/[0.06] bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-sm">
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-2">
-              <div className={`h-2 rounded-full transition-all ${step === 1 ? 'w-8 bg-[#CC785C]' : 'w-4 bg-[#CC785C]/40'}`} />
-              <div className={`h-2 rounded-full transition-all ${step === 2 ? 'w-8 bg-[#CC785C]' : step > 2 ? 'w-4 bg-[#CC785C]/40' : 'w-4 bg-zinc-200 dark:bg-zinc-700'}`} />
+              <div className={`h-2 rounded-full transition-all ${step === 1 ? 'w-8 bg-[var(--accent-hex)]' : 'w-4 bg-[rgba(var(--accent),0.4)]'}`} />
+              <div className={`h-2 rounded-full transition-all ${step === 2 ? 'w-8 bg-[var(--accent-hex)]' : step > 2 ? 'w-4 bg-[rgba(var(--accent),0.4)]' : 'w-4 bg-zinc-200 dark:bg-zinc-700'}`} />
             </div>
             <span className="text-sm font-medium text-zinc-500 dark:text-zinc-400">
               {step === 1 ? 'Select Subjects' : 'Set Grades'}
@@ -193,7 +193,7 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
                 <MotionDiv key="cs-step1" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                   <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Change Your Subjects</h2>
                   <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
-                    Tap to select your Leaving Cert subjects. <span className="font-semibold text-[#CC785C]">{selectedSubjects.size} selected</span>
+                    Tap to select your Leaving Cert subjects. <span className="font-semibold text-[var(--accent-hex)]">{selectedSubjects.size} selected</span>
                   </p>
                   <div className="space-y-6">
                     {Object.entries(groupedSubjects).map(([group, subjects]) => {
@@ -349,13 +349,13 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
 
             {step === 1 ? (
               <button onClick={() => setStep(2)} disabled={selectedSubjects.size === 0}
-                className="flex items-center gap-2 px-7 py-2.5 bg-[#CC785C] text-white font-semibold text-sm rounded-full hover:bg-[#B56A50] transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-[#CC785C]/20"
+                className="flex items-center gap-2 px-7 py-2.5 bg-[var(--accent-hex)] text-white font-semibold text-sm rounded-full hover:bg-[var(--accent-dark-hex)] transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-[rgba(var(--accent),0.2)]"
               >
                 Continue <ArrowRight size={14} />
               </button>
             ) : (
               <button onClick={handleSave}
-                className="flex items-center gap-2 px-7 py-2.5 bg-[#CC785C] text-white font-semibold text-sm rounded-full hover:bg-[#B56A50] transition-colors shadow-lg shadow-[#CC785C]/20"
+                className="flex items-center gap-2 px-7 py-2.5 bg-[var(--accent-hex)] text-white font-semibold text-sm rounded-full hover:bg-[var(--accent-dark-hex)] transition-colors shadow-lg shadow-[rgba(var(--accent),0.2)]"
               >
                 <Check size={14} /> Save Changes
               </button>

@@ -398,6 +398,7 @@ const TheCognitiveLoadModule: React.FC<{ onBack: () => void; progress: ModulePro
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Lighten the Load"
     >
       {(activeSection) => (
         <>

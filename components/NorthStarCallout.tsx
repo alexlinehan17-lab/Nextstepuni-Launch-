@@ -34,7 +34,7 @@ const NorthStarCallout: React.FC<NorthStarCalloutProps> = ({ northStar, variant,
       : northStar.statement;
     return (
       <p className="text-xs italic text-zinc-400 dark:text-zinc-500 mt-2 mb-1">
-        <Star size={10} className="inline -mt-0.5 mr-1 text-[#CC785C]" />
+        <Star size={10} className="inline -mt-0.5 mr-1 text-[var(--accent-hex)]" />
         Remember: {truncated}
       </p>
     );
@@ -53,7 +53,7 @@ const NorthStarCallout: React.FC<NorthStarCalloutProps> = ({ northStar, variant,
             {CategoryIcon && <CategoryIcon size={18} className={colors.text} />}
           </div>
           <div>
-            <p className="text-[10px] font-bold uppercase tracking-widest text-[#CC785C] mb-1">Your North Star</p>
+            <p className="text-[10px] font-bold uppercase tracking-widest text-[var(--accent-hex)] mb-1">Your North Star</p>
             <p className={`text-sm font-semibold ${colors.text} mb-1`}>{message || category?.label}</p>
             <p className="text-xs text-zinc-500 dark:text-zinc-400 italic leading-relaxed">
               "{northStar.statement.length > 120 ? northStar.statement.slice(0, 120) + '...' : northStar.statement}"
@@ -79,7 +79,7 @@ const NorthStarCallout: React.FC<NorthStarCalloutProps> = ({ northStar, variant,
           {CategoryIcon && <CategoryIcon size={20} className={colors.text} />}
         </div>
         <div>
-          <p className="text-[10px] font-bold uppercase tracking-widest text-[#CC785C]">Your North Star</p>
+          <p className="text-[10px] font-bold uppercase tracking-widest text-[var(--accent-hex)]">Your North Star</p>
           <p className={`text-base font-bold ${colors.text}`}>{category?.label}</p>
         </div>
       </div>

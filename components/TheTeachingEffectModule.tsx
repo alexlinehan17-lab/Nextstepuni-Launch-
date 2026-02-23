@@ -348,6 +348,7 @@ const TheTeachingEffectModule: React.FC<{ onBack: () => void; progress: ModulePr
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Teach It Forward"
     >
       {(activeSection) => (
         <>

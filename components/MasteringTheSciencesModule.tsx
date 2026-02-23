@@ -455,6 +455,7 @@ const MasteringTheSciencesModule: React.FC<{ onBack: () => void; progress: Modul
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Decode the Exams"
     >
       {(activeSection) => (
         <>

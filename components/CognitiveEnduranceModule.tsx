@@ -512,6 +512,7 @@ const CognitiveEnduranceModule: React.FC<{ onBack: () => void; progress: ModuleP
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Go the Distance"
     >
       {(activeSection) => (
         <>

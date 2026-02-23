@@ -56,7 +56,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
         <div className="flex items-center gap-4 mb-10">
           <button
             onClick={onBack}
-            className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex items-center justify-center text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50"
+            className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex items-center justify-center text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]"
           >
             <ArrowLeft size={18} />
           </button>
@@ -113,7 +113,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
                     {firstIncomplete ? (
                       <button
                         onClick={() => onSelectModule(firstIncomplete)}
-                        className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-medium text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CC785C]/50 focus-visible:ring-offset-2"
+                        className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-medium text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] focus-visible:ring-offset-2"
                         style={{ backgroundColor: path.accentHex }}
                       >
                         {completed > 0 ? 'Continue' : 'Start'}

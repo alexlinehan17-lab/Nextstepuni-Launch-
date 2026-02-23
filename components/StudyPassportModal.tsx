@@ -87,7 +87,7 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
             <div className="px-6 pt-2 pb-4">
               <div className="w-full h-2 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden">
                 <MotionDiv
-                  className="h-full bg-[#CC785C] rounded-full"
+                  className="h-full bg-[var(--accent-hex)] rounded-full"
                   initial={{ width: 0 }}
                   animate={{ width: `${totalModules > 0 ? (completedModules / totalModules) * 100 : 0}%` }}
                   transition={{ duration: 1, delay: 0.3, ease: 'easeOut' }}

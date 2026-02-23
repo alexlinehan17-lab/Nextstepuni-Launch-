@@ -70,6 +70,7 @@ const BestPossibleSelfModule: React.FC<{ onBack: () => void; progress: ModulePro
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      finishButtonText="Own Your Future"
     >
       {(activeSection) => (
         <>
