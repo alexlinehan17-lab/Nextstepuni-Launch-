@@ -18,11 +18,11 @@ service cloud.firestore {
       allow read: if request.auth != null && request.auth.uid == userId;
       allow write: if request.auth != null && request.auth.uid == userId
                    && !('isAdmin' in request.resource.data);
-      // Admin can read all user docs (for AdminDashboard)
-      allow read: if request.auth != null
+      // Admin can read all user docs + delete students (for AdminDashboard)
+      allow read, delete: if request.auth != null
                   && request.auth.token.email == 'admin@nextstep.app';
-      // GC can read user docs where school matches their own school
-      allow read: if request.auth != null
+      // GC can read + delete user docs where school matches their own school
+      allow read, delete: if request.auth != null
                   && isGC()
                   && resource.data.school == gcSchool();
     }
@@ -30,11 +30,11 @@ service cloud.firestore {
     // Progress collection: each user can only read/write their own doc
     match /progress/{userId} {
       allow read, write: if request.auth != null && request.auth.uid == userId;
-      // Admin can read all progress docs (for AdminDashboard)
-      allow read: if request.auth != null
+      // Admin can read + delete all progress docs (for AdminDashboard)
+      allow read, delete: if request.auth != null
                   && request.auth.token.email == 'admin@nextstep.app';
-      // GC can read progress docs for students in their school
-      allow read: if request.auth != null
+      // GC can read + delete progress docs for students in their school
+      allow read, delete: if request.auth != null
                   && isGC()
                   && get(/databases/$(database)/documents/users/$(userId)).data.school == gcSchool();
     }
@@ -52,8 +52,11 @@ service cloud.firestore {
     // Moods collection: each user can only read/write their own doc
     match /moods/{userId} {
       allow read, write: if request.auth != null && request.auth.uid == userId;
-      // GC can read mood docs for students in their school
-      allow read: if request.auth != null
+      // Admin can delete mood docs
+      allow delete: if request.auth != null
+                  && request.auth.token.email == 'admin@nextstep.app';
+      // GC can read + delete mood docs for students in their school
+      allow read, delete: if request.auth != null
                   && isGC()
                   && get(/databases/$(database)/documents/users/$(userId)).data.school == gcSchool();
     }

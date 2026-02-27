@@ -5,7 +5,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { TrendingUp, TrendingDown, Minus, AlertTriangle, Search, ChevronDown, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote } from 'lucide-react';
+import { TrendingUp, TrendingDown, Minus, AlertTriangle, Search, ChevronDown, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2 } from 'lucide-react';
 import { CourseData } from '../Library';
 import { CategoryType } from '../KnowledgeTree';
 import { getAvatarUrl } from '../Auth';
@@ -119,9 +119,10 @@ interface GCOverviewProps {
   school: string;
   studentNotes: Record<string, { notes: string; updatedAt: string }>;
   onSelectStudent: (uid: string) => void;
+  onDeleteStudent?: (user: any) => void;
 }
 
-export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, studentNotes, onSelectStudent }) => {
+export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, studentNotes, onSelectStudent, onDeleteStudent }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all');
   const [sortKey, setSortKey] = useState<SortKey>('name');
@@ -885,6 +886,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                 ))}
                 <th className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 whitespace-nowrap">Mood</th>
                 <th className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 whitespace-nowrap">Status</th>
+                {onDeleteStudent && <th className="px-3 py-3 w-10"></th>}
               </tr>
             </thead>
             <tbody>
@@ -936,6 +938,17 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                       </div>
                     </td>
                     <td className="px-5 py-4 align-middle">{statusPill(row.status)}</td>
+                    {onDeleteStudent && (
+                      <td className="px-3 py-4 align-middle">
+                        <button
+                          onClick={(e) => { e.stopPropagation(); onDeleteStudent(row.student.user); }}
+                          className="w-7 h-7 rounded-lg flex items-center justify-center text-zinc-300 dark:text-zinc-600 hover:text-red-500 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-500/10 transition-colors"
+                          title="Delete student"
+                        >
+                          <Trash2 size={14} />
+                        </button>
+                      </td>
+                    )}
                   </MotionDiv>
                 );
               })}

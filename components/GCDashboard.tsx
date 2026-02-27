@@ -6,9 +6,9 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CourseData } from './Library';
 import { SessionUser, getAvatarUrl } from './Auth';
-import { GraduationCap, LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote } from 'lucide-react';
+import { GraduationCap, LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, Trash2, AlertTriangle } from 'lucide-react';
 import { db } from '../firebase';
-import { collection, query, where, getDocs, doc, getDoc } from 'firebase/firestore';
+import { collection, query, where, getDocs, doc, getDoc, deleteDoc } from 'firebase/firestore';
 import { getSchoolName } from '../schoolData';
 import { UserProgress, PointsData } from '../types';
 import { StudentSubjectProfile, TimetableCompletions, TimetableStreak } from './subjectData';
@@ -82,6 +82,28 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
   const [selectedStudentUid, setSelectedStudentUid] = useState<string | null>(null);
   const [activeNav, setActiveNav] = useState<string>('gc-overview');
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [deleteTarget, setDeleteTarget] = useState<SessionUser | null>(null);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  const handleDeleteStudent = async (user: SessionUser) => {
+    setIsDeleting(true);
+    try {
+      // Delete progress and moods FIRST (their rules reference the users doc)
+      await Promise.all([
+        deleteDoc(doc(db, 'progress', user.uid)).catch(() => {}),
+        deleteDoc(doc(db, 'moods', user.uid)).catch(() => {}),
+      ]);
+      // Then delete the users doc last
+      await deleteDoc(doc(db, 'users', user.uid));
+      setStudentData(prev => prev.filter(s => s.user.uid !== user.uid));
+      if (selectedStudentUid === user.uid) setSelectedStudentUid(null);
+    } catch (error) {
+      console.error('Error deleting student:', error);
+      alert('Failed to delete student. You may not have permission.');
+    }
+    setIsDeleting(false);
+    setDeleteTarget(null);
+  };
 
   // Stable random avatar seed per school
   const avatarSeed = useMemo(() => `gc-${school}-${school.length}`, [school]);
@@ -274,6 +296,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             school={school}
             studentNotes={studentNotes}
             onSelectStudent={(uid) => setSelectedStudentUid(prev => prev === uid ? null : uid)}
+            onDeleteStudent={setDeleteTarget}
           />
         )}
       </main>
@@ -316,6 +339,42 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
           </>
         )}
       </AnimatePresence>
+
+      {/* Delete confirmation modal */}
+      {deleteTarget && (
+        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isDeleting && setDeleteTarget(null)}>
+          <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 max-w-sm w-full shadow-2xl" onClick={e => e.stopPropagation()}>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-red-100 dark:bg-red-500/10 flex items-center justify-center text-red-500">
+                <AlertTriangle size={20} />
+              </div>
+              <h3 className="font-semibold text-zinc-900 dark:text-white">Delete Student</h3>
+            </div>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-1">
+              Are you sure you want to delete <span className="font-semibold text-zinc-900 dark:text-white">{deleteTarget.name}</span>?
+            </p>
+            <p className="text-xs text-zinc-400 dark:text-zinc-500 mb-6">
+              This will permanently remove all their progress, mood data, and profile. This action cannot be undone.
+            </p>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setDeleteTarget(null)}
+                disabled={isDeleting}
+                className="flex-1 px-4 py-2.5 text-sm font-medium rounded-xl border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors disabled:opacity-50"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={() => handleDeleteStudent(deleteTarget)}
+                disabled={isDeleting}
+                className="flex-1 px-4 py-2.5 text-sm font-medium rounded-xl bg-red-500 text-white hover:bg-red-600 transition-colors disabled:opacity-50"
+              >
+                {isDeleting ? 'Deleting...' : 'Delete'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

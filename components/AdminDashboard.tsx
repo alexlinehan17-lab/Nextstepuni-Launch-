@@ -6,10 +6,10 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { CourseData } from './Library';
 import { SessionUser, getAvatarUrl } from './Auth';
-import { GraduationCap, LogOut } from 'lucide-react';
+import { GraduationCap, LogOut, Trash2, AlertTriangle } from 'lucide-react';
 import { CategoryType } from './KnowledgeTree';
 import { db } from '../firebase';
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs, doc, deleteDoc } from 'firebase/firestore';
 
 // FIX: Cast motion components to any to bypass broken type definitions
 const MotionDiv = motion.div as any;
@@ -39,7 +39,7 @@ const CATEGORIES: { id: CategoryType; title: string }[] = [
     { id: 'exam-zone', title: 'Exam Strategy and Points Maximisation' },
 ];
 
-const StudentProgressCard: React.FC<{ user: SessionUser; userProgress: UserProgress; allCourses: CourseData[] }> = ({ user, userProgress, allCourses }) => {
+const StudentProgressCard: React.FC<{ user: SessionUser; userProgress: UserProgress; allCourses: CourseData[]; onDelete: (user: SessionUser) => void }> = ({ user, userProgress, allCourses, onDelete }) => {
 
   const calculateCategoryProgress = (category: CategoryType) => {
       const categoryCourses = allCourses.filter(c => c.category === category);
@@ -72,10 +72,17 @@ const StudentProgressCard: React.FC<{ user: SessionUser; userProgress: UserProgr
     <div className="bg-white dark:bg-zinc-900/50 border border-zinc-200/50 dark:border-white/10 rounded-2xl p-6 shadow-sm">
       <div className="flex items-center gap-4 border-b border-zinc-200/50 dark:border-white/10 pb-4 mb-4">
         <img src={getAvatarUrl(user.avatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
-        <div>
+        <div className="flex-1 min-w-0">
           <p className="font-bold text-zinc-800 dark:text-white">{user.name}</p>
           <p className="text-xs text-zinc-500">Overall Progress: {overallProgress.toFixed(0)}%</p>
         </div>
+        <button
+          onClick={() => onDelete(user)}
+          className="shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-zinc-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-500/10 transition-colors"
+          title="Delete student"
+        >
+          <Trash2 size={15} />
+        </button>
       </div>
       <div className="space-y-3 max-h-64 overflow-y-auto pr-2">
         {CATEGORIES.map(category => {
@@ -105,6 +112,27 @@ const StudentProgressCard: React.FC<{ user: SessionUser; userProgress: UserProgr
 export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLogout }) => {
     const [studentData, setStudentData] = useState<{ user: SessionUser; progress: UserProgress }[]>([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [deleteTarget, setDeleteTarget] = useState<SessionUser | null>(null);
+    const [isDeleting, setIsDeleting] = useState(false);
+
+    const handleDeleteStudent = async (user: SessionUser) => {
+      setIsDeleting(true);
+      try {
+        // Delete progress and moods FIRST (their rules may reference the users doc)
+        await Promise.all([
+          deleteDoc(doc(db, 'progress', user.uid)).catch(() => {}),
+          deleteDoc(doc(db, 'moods', user.uid)).catch(() => {}),
+        ]);
+        // Then delete the users doc last
+        await deleteDoc(doc(db, 'users', user.uid));
+        setStudentData(prev => prev.filter(s => s.user.uid !== user.uid));
+      } catch (error) {
+        console.error('Error deleting student:', error);
+        alert('Failed to delete student. You may not have permission.');
+      }
+      setIsDeleting(false);
+      setDeleteTarget(null);
+    };
 
     useEffect(() => {
         const fetchData = async () => {
@@ -171,6 +199,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
                     user={data.user}
                     userProgress={data.progress}
                     allCourses={allCourses}
+                    onDelete={setDeleteTarget}
                 />
             ))}
             </div>
@@ -180,6 +209,42 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
             </div>
         )}
       </div>
+
+      {/* Delete confirmation modal */}
+      {deleteTarget && (
+        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isDeleting && setDeleteTarget(null)}>
+          <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 max-w-sm w-full shadow-2xl" onClick={e => e.stopPropagation()}>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-red-100 dark:bg-red-500/10 flex items-center justify-center text-red-500">
+                <AlertTriangle size={20} />
+              </div>
+              <h3 className="font-semibold text-zinc-900 dark:text-white">Delete Student</h3>
+            </div>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-1">
+              Are you sure you want to delete <span className="font-semibold text-zinc-900 dark:text-white">{deleteTarget.name}</span>?
+            </p>
+            <p className="text-xs text-zinc-400 dark:text-zinc-500 mb-6">
+              This will permanently remove all their progress, mood data, and profile. This action cannot be undone.
+            </p>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setDeleteTarget(null)}
+                disabled={isDeleting}
+                className="flex-1 px-4 py-2.5 text-sm font-medium rounded-xl border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors disabled:opacity-50"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={() => handleDeleteStudent(deleteTarget)}
+                disabled={isDeleting}
+                className="flex-1 px-4 py-2.5 text-sm font-medium rounded-xl bg-red-500 text-white hover:bg-red-600 transition-colors disabled:opacity-50"
+              >
+                {isDeleting ? 'Deleting...' : 'Delete'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
