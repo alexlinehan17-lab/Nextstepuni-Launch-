@@ -12,7 +12,7 @@ import {
   ArrowLeft, CheckCircle2,
   ChevronRight, Lock, Sparkles, BookOpen,
   Zap, Brain, Target, Shield, Compass, Star,
-  Sun, Moon, Home, BarChart3, Rocket, PanelLeft, Award, Settings, LogOut, Layers, RefreshCw, User
+  Sun, Moon, Home, BarChart3, Rocket, PanelLeft, Award, Settings, LogOut, Layers, RefreshCw, User, Mountain
 } from 'lucide-react';
 import { CategoryType } from './KnowledgeTree';
 import { NorthStar, AccentThemeId, CardStyleId } from '../types';
@@ -61,6 +61,7 @@ interface LibraryProps {
   onGoToDashboard?: () => void;
   onGoToLearningPaths?: () => void;
   onGoToInnovationZone?: () => void;
+  onGoToJourney?: () => void;
   onChangeSubjects?: () => void;
   todayMood?: string | null;
   onSetMood?: (mood: string) => void;
@@ -174,7 +175,7 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
   );
 };
 
-export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse, onBack, userProgress, northStar, studentProfile, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onGoToDashboard, onGoToLearningPaths, onGoToInnovationZone, onChangeSubjects, todayMood, onSetMood, completedCount = 0, totalCount = 0 }) => {
+export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse, onBack, userProgress, northStar, studentProfile, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onGoToDashboard, onGoToLearningPaths, onGoToInnovationZone, onGoToJourney, onChangeSubjects, todayMood, onSetMood, completedCount = 0, totalCount = 0 }) => {
   const settingsCtx = useSettingsContext();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [moodExpanded, setMoodExpanded] = useState(false);
@@ -198,6 +199,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
 
   const sidebarItems = [
     { icon: Home, label: 'Home', onClick: onBack, active: false },
+    { icon: Mountain, label: 'My Journey', onClick: onGoToJourney, active: false },
     { icon: BarChart3, label: 'Dashboard', onClick: onGoToDashboard, active: false },
     { icon: Compass, label: 'Learning Paths', onClick: onGoToLearningPaths, active: false },
     { icon: Rocket, label: 'Innovation Zone', onClick: onGoToInnovationZone, active: false },

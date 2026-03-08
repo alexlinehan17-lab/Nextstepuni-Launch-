@@ -6,7 +6,7 @@
 
 import React, { useState, useEffect, useRef, useCallback, useMemo, Suspense, lazy } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, LogOut, ArrowLeft, Settings, Flame, ChevronRight, Trophy, Award, Target, BarChart3, Star, Home, Compass, Rocket, User, X } from 'lucide-react';
+import { Sun, Moon, LogOut, ArrowLeft, Settings, Flame, ChevronRight, Trophy, Award, Target, BarChart3, Star, Home, Compass, Rocket, User, X, Mountain, Dumbbell, Timer, Lightbulb } from 'lucide-react';
 import { Library } from './components/Library';
 import { KnowledgeTree, CategoryType } from './components/KnowledgeTree';
 import { LoadingSpinner } from './components/LoadingSpinner';
@@ -17,7 +17,7 @@ import SettingsModal from './components/SettingsModal';
 import StudyPassportModal from './components/StudyPassportModal';
 import { auth, db } from './firebase';
 import { onAuthStateChanged, signOut, User as FirebaseUser } from 'firebase/auth';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, increment } from 'firebase/firestore';
 import { ModuleProgress, UserProgress, UserSettings, NorthStar } from './types';
 import { moduleComponents, InnovationZone } from './moduleRegistry';
 import { ALL_COURSES, categoryTitles, SUBJECT_TO_MODULE } from './courseData';
@@ -26,16 +26,29 @@ import { useStreak, StreakData } from './hooks/useStreak';
 import { useMood } from './hooks/useMood';
 import { useTodaysFocus, FocusRecommendation } from './hooks/useTodaysFocus';
 import { usePoints } from './hooks/usePoints';
+import { useStrategyMastery } from './hooks/useStrategyMastery';
+import { useWeeklyChallenge } from './hooks/useWeeklyChallenge';
 import DashboardView from './components/DashboardView';
 import LearningPathsView from './components/LearningPathsView';
+import TrainingPulse from './components/TrainingPulse';
+import AchievementToast from './components/AchievementToast';
+import RankUpModal from './components/RankUpModal';
+import { useGamification } from './hooks/useGamification';
+import { createStarterState } from './hooks/useIslandShop';
+import { type AthleteRank, type AchievementDefinition, getRankForPoints } from './gamificationConfig';
 import { type StudentSubjectProfile } from './components/subjectData';
 import NorthStarEditModal from './components/NorthStarEditModal';
 import ChangeSubjectsModal from './components/ChangeSubjectsModal';
 import { ACCENT_THEME_LIST, ACCENT_THEMES } from './themeData';
+import { POINTS, isModuleJustCompleted, isCategoryJustCompleted } from './journeyPointsConfig';
 import { type AccentThemeId } from './types';
 import { SettingsContext } from './contexts/SettingsContext';
 
 const Onboarding = lazy(() => import('./components/Onboarding'));
+const JourneyView = lazy(() => import('./components/journey/JourneyView'));
+const TrainingHub = lazy(() => import('./components/TrainingHub'));
+const StudySessionView = lazy(() => import('./components/study/StudySessionView'));
+const InsightsView = lazy(() => import('./components/InsightsView'));
 
 interface UserProfileProps {
   user: SessionUser;
@@ -225,17 +238,19 @@ const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, upd
 interface MobileBottomNavProps {
   viewState: string;
   onGoHome: () => void;
-  onGoToDashboard: () => void;
-  onGoToLearningPaths: () => void;
+  onGoToTrainingHub: () => void;
+  onGoToStudy: () => void;
+  onGoToJourney: () => void;
   onGoToInnovationZone: () => void;
   onOpenProfile: () => void;
 }
 
-const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, onGoToDashboard, onGoToLearningPaths, onGoToInnovationZone, onOpenProfile }) => {
+const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, onGoToTrainingHub, onGoToStudy, onGoToJourney, onGoToInnovationZone, onOpenProfile }) => {
   const tabs = [
     { id: 'tree', label: 'Home', icon: Home, action: onGoHome },
-    { id: 'dashboard', label: 'Dashboard', icon: BarChart3, action: onGoToDashboard },
-    { id: 'learning-paths', label: 'Paths', icon: Compass, action: onGoToLearningPaths },
+    { id: 'gamification-hub', label: 'Training', icon: Dumbbell, action: onGoToTrainingHub },
+    { id: 'study-session', label: 'Study', icon: Timer, action: onGoToStudy },
+    { id: 'my-journey', label: 'Journey', icon: Mountain, action: onGoToJourney },
     { id: 'innovation-zone', label: 'Innovate', icon: Rocket, action: onGoToInnovationZone },
     { id: 'profile', label: 'Profile', icon: User, action: onOpenProfile },
   ];
@@ -280,6 +295,7 @@ interface MobileProfileSheetProps {
   onSelectModule: (moduleId: string) => void;
   onOpenPassport: () => void;
   onGoToDashboard: () => void;
+  onGoToInsights: () => void;
   completedCount: number;
   totalCount: number;
   onOpenNorthStar: () => void;
@@ -296,7 +312,7 @@ const MOBILE_MOOD_OPTIONS = [
   { key: 'stressed', label: 'Stressed', emoji: '😰' },
 ];
 
-const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, completedCount, totalCount, onOpenNorthStar, hasNorthStar, todayMood, onSetMood, unlockedThemes }) => {
+const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, onGoToInsights, completedCount, totalCount, onOpenNorthStar, hasNorthStar, todayMood, onSetMood, unlockedThemes }) => {
   const displayAvatar = avatarOverride || user.avatar;
   return (
     <AnimatePresence>
@@ -401,6 +417,10 @@ const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose
                   <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">Study Passport</span>
                   <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500">{completedCount}/{totalCount}</span>
                 </button>
+                <button onClick={() => { onClose(); onGoToInsights(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                  <div className="w-8 h-8 rounded-lg bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center"><Lightbulb size={16} className="text-amber-500" /></div>
+                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">Insights</span>
+                </button>
                 {hasNorthStar && (
                   <button onClick={() => { onClose(); onOpenNorthStar(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
                     <div className="w-8 h-8 rounded-lg bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center"><Star size={16} className="text-amber-500" /></div>
@@ -456,7 +476,7 @@ const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose
 
 
 const App: React.FC = () => {
-  const [viewState, setViewState] = useState<'tree' | 'category' | 'module' | 'innovation-zone' | 'dashboard' | 'learning-paths' | 'onboarding'>('tree');
+  const [viewState, setViewState] = useState<'tree' | 'category' | 'module' | 'innovation-zone' | 'dashboard' | 'learning-paths' | 'onboarding' | 'my-journey' | 'gamification-hub' | 'study-session' | 'insights'>('tree');
   const [currentCategory, setCurrentCategory] = useState<CategoryType | null>(null);
   const [currentModuleId, setCurrentModuleId] = useState<string | null>(null);
   const [cameFromJourney, setCameFromJourney] = useState(false);
@@ -475,11 +495,49 @@ const App: React.FC = () => {
   const [unlockedAvatarSeeds, setUnlockedAvatarSeeds] = useState<string[]>([]);
   const [unlockedThemes, setUnlockedThemes] = useState<string[]>([]);
   const [unlockedCardStyles, setUnlockedCardStyles] = useState<string[]>([]);
+  const [dismissedGuides, setDismissedGuides] = useState<Record<string, string>>({});
   const { settings, updateSetting, isLoaded: settingsLoaded } = useSettings(user?.uid, user?.avatar);
   const { streak } = useStreak(user?.uid);
   const { todayMood, setMood, entries: moodEntries } = useMood(user?.uid);
   const { recommendation } = useTodaysFocus(userProgress, ALL_COURSES);
   const pointsData = usePoints(user?.uid);
+
+  // Gamification
+  const gamification = useGamification({
+    uid: user?.uid,
+    userProgress,
+    pointsData,
+    streak,
+    northStar,
+  });
+  const [toastQueue, setToastQueue] = useState<(AchievementDefinition | 'bonus-flash')[]>([]);
+  const [currentToast, setCurrentToast] = useState<AchievementDefinition | null>(null);
+  const [isBonusFlashToast, setIsBonusFlashToast] = useState(false);
+  const [rankUpModal, setRankUpModal] = useState<AthleteRank | null>(null);
+  const prevRankRef = useRef<string | null>(null);
+
+  // Process toast queue
+  useEffect(() => {
+    if (currentToast || isBonusFlashToast) return; // Already showing
+    if (toastQueue.length === 0) return;
+    const next = toastQueue[0];
+    setToastQueue(q => q.slice(1));
+    if (next === 'bonus-flash') {
+      setIsBonusFlashToast(true);
+    } else {
+      setCurrentToast(next);
+    }
+  }, [toastQueue, currentToast, isBonusFlashToast]);
+
+  // Detect rank changes
+  useEffect(() => {
+    if (!gamification.isLoaded) return;
+    const currentRankId = gamification.state.currentRank.id;
+    if (prevRankRef.current !== null && prevRankRef.current !== currentRankId) {
+      setRankUpModal(gamification.state.currentRank);
+    }
+    prevRankRef.current = currentRankId;
+  }, [gamification.state.currentRank.id, gamification.isLoaded]);
 
   const isPopstateRef = useRef(false);
 
@@ -495,6 +553,9 @@ const App: React.FC = () => {
       return true;
     });
   }, [studentProfile]);
+
+  const strategyMastery = useStrategyMastery(user?.uid, userProgress, studentCourses);
+  const weeklyChallenge = useWeeklyChallenge(user?.uid);
 
   const completedCount = studentCourses.filter(c => {
     const p = userProgress[c.id];
@@ -528,6 +589,22 @@ const App: React.FC = () => {
         setCurrentModuleId(null);
         setCameFromJourney(false);
         setViewState('learning-paths');
+      } else if (state.view === 'my-journey') {
+        setCurrentModuleId(null);
+        setCameFromJourney(false);
+        setViewState('my-journey');
+      } else if (state.view === 'gamification-hub') {
+        setCurrentModuleId(null);
+        setCameFromJourney(false);
+        setViewState('gamification-hub');
+      } else if (state.view === 'study-session') {
+        setCurrentModuleId(null);
+        setCameFromJourney(false);
+        setViewState('study-session');
+      } else if (state.view === 'insights') {
+        setCurrentModuleId(null);
+        setCameFromJourney(false);
+        setViewState('insights');
       } else if (state.view === 'module') {
         setCurrentModuleId(state.moduleId);
         setCurrentCategory(state.category || null);
@@ -605,6 +682,9 @@ const App: React.FC = () => {
               if (progressData.northStar) {
                 setNorthStar(progressData.northStar as NorthStar);
               }
+              if (progressData.dismissedGuides) {
+                setDismissedGuides(progressData.dismissedGuides);
+              }
               if (progressData.subjectProfile) {
                 setStudentProfile(progressData.subjectProfile as StudentSubjectProfile);
               } else {
@@ -647,11 +727,63 @@ const App: React.FC = () => {
   const handleProgressUpdate = async (moduleId: string, newProgress: ModuleProgress) => {
     if (!user || user.isAdmin) return;
 
+    const prevSection = userProgress[moduleId]?.unlockedSection ?? 0;
+    const newSection = newProgress.unlockedSection;
+
     setUserProgress(prev => ({ ...prev, [moduleId]: newProgress }));
 
     try {
       const progressDocRef = doc(db, "progress", user.uid);
       await setDoc(progressDocRef, { [moduleId]: newProgress }, { merge: true });
+
+      // Award points for newly unlocked sections
+      if (newSection > prevSection) {
+        const sectionsUnlocked = newSection - prevSection;
+        let pointsToAward = sectionsUnlocked * POINTS.SECTION_COMPLETE;
+
+        const course = ALL_COURSES.find(c => c.id === moduleId);
+        if (course) {
+          // Module complete bonus
+          if (isModuleJustCompleted(newSection, course.sectionsCount) && !isModuleJustCompleted(prevSection, course.sectionsCount)) {
+            pointsToAward += POINTS.MODULE_COMPLETE_BONUS;
+          }
+
+          // Category complete bonus
+          const updatedProgress = { ...userProgress, [moduleId]: newProgress };
+          if (isCategoryJustCompleted(moduleId, updatedProgress, ALL_COURSES)) {
+            // Check it wasn't already complete before
+            const wasComplete = isCategoryJustCompleted(moduleId, userProgress, ALL_COURSES);
+            if (!wasComplete) {
+              pointsToAward += POINTS.CATEGORY_COMPLETE_BONUS;
+            }
+          }
+        }
+
+        if (pointsToAward > 0) {
+          // Roll for bonus flash (15% chance of 2x)
+          const isBonus = gamification.rollBonusFlash();
+          const finalPoints = isBonus ? pointsToAward * 2 : pointsToAward;
+
+          await updateDoc(progressDocRef, {
+            'pointsData.totalEarned': increment(finalPoints),
+          });
+          pointsData.reload();
+
+          if (isBonus) {
+            setToastQueue(q => [...q, 'bonus-flash']);
+          }
+
+          // Update weekly goal progress for sections
+          gamification.updateWeeklyGoalProgress('sections', sectionsUnlocked);
+        }
+      }
+
+      // Check for newly unlocked achievements (after points have been written)
+      const newAchievements = await gamification.checkAndUnlockAchievements();
+      if (newAchievements.length > 0) {
+        setToastQueue(q => [...q, ...newAchievements]);
+      }
+      gamification.reload();
     } catch (error) {
       console.error("Failed to save progress:", error);
     }
@@ -701,6 +833,38 @@ const App: React.FC = () => {
     }
   };
 
+  const handleGoToJourney = () => {
+    setViewState('my-journey');
+    window.scrollTo(0, 0);
+    if (!isPopstateRef.current) {
+      window.history.pushState({ view: 'my-journey' }, '');
+    }
+  };
+
+  const handleGoToGamificationHub = () => {
+    setViewState('gamification-hub');
+    window.scrollTo(0, 0);
+    if (!isPopstateRef.current) {
+      window.history.pushState({ view: 'gamification-hub' }, '');
+    }
+  };
+
+  const handleGoToStudy = () => {
+    setViewState('study-session');
+    window.scrollTo(0, 0);
+    if (!isPopstateRef.current) {
+      window.history.pushState({ view: 'study-session' }, '');
+    }
+  };
+
+  const handleGoToInsights = useCallback(() => {
+    setViewState('insights');
+    window.scrollTo(0, 0);
+    if (!isPopstateRef.current) {
+      window.history.pushState({ view: 'insights' }, '');
+    }
+  }, []);
+
   const handleGoHome = () => {
     setCurrentCategory(null);
     setCurrentModuleId(null);
@@ -719,6 +883,7 @@ const App: React.FC = () => {
       const saveData: Record<string, any> = { subjectProfile: profile };
       if (northStarData) {
         saveData.northStar = northStarData;
+        saveData.islandState = createStarterState(northStarData.category);
         setNorthStar(northStarData);
       }
       await setDoc(progressDocRef, saveData, { merge: true });
@@ -767,6 +932,16 @@ const App: React.FC = () => {
   const handleBackToCategory = () => {
     window.history.back();
   };
+
+  const handleDismissGuide = useCallback(async (guideId: string) => {
+    setDismissedGuides(prev => ({ ...prev, [guideId]: new Date().toISOString() }));
+    if (user?.uid) {
+      await setDoc(doc(db, 'progress', user.uid),
+        { dismissedGuides: { [guideId]: new Date().toISOString() } },
+        { merge: true }
+      );
+    }
+  }, [user?.uid]);
 
   const renderContent = () => {
     if (isLoadingAuth) {
@@ -898,6 +1073,64 @@ const App: React.FC = () => {
       return <GCDashboard school={user.school} onLogout={handleLogout} allCourses={ALL_COURSES} />;
     }
 
+    if (viewState === 'study-session') {
+      return (
+        <Suspense fallback={<LoadingSpinner />}>
+          <StudySessionView
+            user={user}
+            studentProfile={studentProfile}
+            userProgress={userProgress}
+            allCourses={studentCourses}
+            pointsReload={pointsData.reload}
+            streak={streak}
+            onBack={handleBackToTree}
+            onStrategyMasteryRecompute={strategyMastery.recompute}
+            strategyMastery={strategyMastery.masteryMap}
+            onGoToTrainingHub={handleGoToGamificationHub}
+            dismissedGuides={dismissedGuides}
+            onDismissGuide={handleDismissGuide}
+            weeklyChallenge={weeklyChallenge}
+          />
+        </Suspense>
+      );
+    }
+
+    if (viewState === 'insights') {
+      return (
+        <Suspense fallback={<LoadingSpinner />}>
+          <InsightsView
+            uid={user.uid}
+            streak={streak}
+            moodEntries={moodEntries}
+            strategyMastery={strategyMastery.masteryMap}
+            onBack={handleBackToTree}
+          />
+        </Suspense>
+      );
+    }
+
+    if (viewState === 'gamification-hub') {
+      return (
+        <Suspense fallback={<LoadingSpinner />}>
+          <TrainingHub
+            gamificationState={gamification.state}
+            streak={streak}
+            pointsBalance={pointsData.balance}
+            northStar={northStar}
+            onBack={handleBackToTree}
+            onOpenJourney={handleGoToJourney}
+            userProgress={userProgress}
+            allCourses={studentCourses}
+            strategyMastery={strategyMastery.masteryMap}
+            dismissedGuides={dismissedGuides}
+            onDismissGuide={handleDismissGuide}
+            weeklyChallenge={weeklyChallenge}
+            pointsReload={pointsData.reload}
+          />
+        </Suspense>
+      );
+    }
+
     if (viewState === 'dashboard') {
       return (
         <DashboardView
@@ -933,6 +1166,23 @@ const App: React.FC = () => {
       );
     }
 
+    if (viewState === 'my-journey') {
+      return (
+        <Suspense fallback={<LoadingSpinner />}>
+          <JourneyView
+            onBack={handleBackToTree}
+            user={user}
+            northStar={northStar}
+            onOpenNorthStar={() => setNorthStarEditOpen(true)}
+            pointsBalance={pointsData.balance}
+            onPointsReload={pointsData.reload}
+            userProgress={userProgress}
+            allCourses={studentCourses}
+          />
+        </Suspense>
+      );
+    }
+
     if (viewState === 'tree') {
       return <KnowledgeTree
         key="knowledge-tree"
@@ -940,6 +1190,9 @@ const App: React.FC = () => {
         onGoToInnovationZone={handleGoToInnovationZone}
         onGoToDashboard={handleGoToDashboard}
         onGoToLearningPaths={handleGoToLearningPaths}
+        onGoToJourney={handleGoToJourney}
+        onGoToStudy={handleGoToStudy}
+        onGoToInsights={handleGoToInsights}
         allCourses={studentCourses}
         onSelectModule={handleSelectModule}
         categoryTitles={categoryTitles}
@@ -988,6 +1241,7 @@ const App: React.FC = () => {
           onGoToDashboard={handleGoToDashboard}
           onGoToLearningPaths={handleGoToLearningPaths}
           onGoToInnovationZone={handleGoToInnovationZone}
+          onGoToJourney={handleGoToJourney}
           onChangeSubjects={studentProfile ? () => setChangeSubjectsOpen(true) : undefined}
           todayMood={todayMood}
           onSetMood={setMood}
@@ -1039,8 +1293,42 @@ const App: React.FC = () => {
     <SettingsContext.Provider value={{ settings, updateSetting, unlockedThemes, unlockedCardStyles }}>
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
       {user && viewState !== 'onboarding' && user.role !== 'gc' && !user.isAdmin && (
-        <div className={`fixed top-6 right-6 z-[100] ${viewState === 'tree' || viewState === 'category' ? 'hidden' : 'hidden md:block'}`}>
-          <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} onGoToDashboard={handleGoToDashboard} completedCount={completedCount} totalCount={studentCourses.length} onOpenNorthStar={() => setNorthStarEditOpen(true)} hasNorthStar={northStar !== null} unlockedThemes={unlockedThemes} />
+        <div className={`fixed top-6 right-6 z-[100] ${viewState === 'tree' || viewState === 'category' ? 'hidden' : viewState === 'my-journey' ? 'hidden' : 'hidden md:block'}`}>
+          <div className="flex items-start gap-3">
+            <div>
+              {gamification.isLoaded && (
+                <TrainingPulse
+                  gamificationState={gamification.state}
+                  onOpenHub={handleGoToGamificationHub}
+                  streak={streak}
+                  pointsBalance={pointsData.balance}
+                />
+              )}
+              <AchievementToast
+                achievement={currentToast}
+                isBonusFlash={isBonusFlashToast}
+                onDismiss={() => { setCurrentToast(null); setIsBonusFlashToast(false); }}
+              />
+            </div>
+            <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} onGoToDashboard={handleGoToDashboard} completedCount={completedCount} totalCount={studentCourses.length} onOpenNorthStar={() => setNorthStarEditOpen(true)} hasNorthStar={northStar !== null} unlockedThemes={unlockedThemes} />
+          </div>
+        </div>
+      )}
+
+      {/* Mobile: TrainingPulse in top-left when not on tree/category/onboarding */}
+      {user && viewState !== 'onboarding' && viewState !== 'tree' && viewState !== 'category' && viewState !== 'module' && viewState !== 'study-session' && viewState !== 'my-journey' && user.role !== 'gc' && !user.isAdmin && gamification.isLoaded && (
+        <div className="fixed top-4 left-4 z-[100] md:hidden">
+          <TrainingPulse
+            gamificationState={gamification.state}
+            onOpenHub={handleGoToGamificationHub}
+            streak={streak}
+            pointsBalance={pointsData.balance}
+          />
+          <AchievementToast
+            achievement={currentToast}
+            isBonusFlash={isBonusFlashToast}
+            onDismiss={() => { setCurrentToast(null); setIsBonusFlashToast(false); }}
+          />
         </div>
       )}
 
@@ -1050,8 +1338,9 @@ const App: React.FC = () => {
         <MobileBottomNav
           viewState={viewState}
           onGoHome={handleGoHome}
-          onGoToDashboard={handleGoToDashboard}
-          onGoToLearningPaths={handleGoToLearningPaths}
+          onGoToTrainingHub={handleGoToGamificationHub}
+          onGoToStudy={handleGoToStudy}
+          onGoToJourney={handleGoToJourney}
           onGoToInnovationZone={handleGoToInnovationZone}
           onOpenProfile={() => setMobileProfileOpen(true)}
         />
@@ -1072,6 +1361,7 @@ const App: React.FC = () => {
           onSelectModule={handleSelectModule}
           onOpenPassport={() => setPassportOpen(true)}
           onGoToDashboard={handleGoToDashboard}
+          onGoToInsights={handleGoToInsights}
           completedCount={completedCount}
           totalCount={studentCourses.length}
           onOpenNorthStar={() => setNorthStarEditOpen(true)}
@@ -1116,6 +1406,13 @@ const App: React.FC = () => {
           )}
         </>
       )}
+
+      {/* Gamification overlays */}
+      <RankUpModal
+        isOpen={rankUpModal !== null}
+        newRank={rankUpModal}
+        onClose={() => setRankUpModal(null)}
+      />
     </div>
     </SettingsContext.Provider>
   );

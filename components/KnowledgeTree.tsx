@@ -8,12 +8,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Sprout, Rocket, Target, FlaskConical,
   Fingerprint, ArrowRight, Sparkles, BarChart3, Compass, Lightbulb, KeyRound,
-  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Layers
+  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Tag, X
 } from 'lucide-react';
 import { getAvatarUrl } from '../components/Auth';
 import { CourseData, BentoModuleTile } from './Library';
-import { UserSettings, type AccentThemeId, type CardStyleId } from '../types';
-import { ACCENT_THEMES, ACCENT_THEME_LIST, CARD_STYLES } from '../themeData';
+import { UserSettings } from '../types';
 import { MoodFaceIcon, MOOD_KEYS, MOOD_LABELS } from './MoodFaceIcon';
 
 // FIX: Cast motion components to any to bypass broken type definitions
@@ -36,6 +35,9 @@ interface KnowledgeTreeProps {
   onGoToInnovationZone: () => void;
   onGoToDashboard: () => void;
   onGoToLearningPaths: () => void;
+  onGoToJourney: () => void;
+  onGoToStudy?: () => void;
+  onGoToInsights?: () => void;
   onSelectModule: (moduleId: string) => void;
   allCourses: CourseData[];
   categoryTitles: Record<CategoryType, string>;
@@ -200,16 +202,18 @@ const BentoTile: React.FC<BentoTileProps> = ({
   );
 };
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes = [], completedCount, totalCount, todayMood, onSetMood }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes = [], completedCount, totalCount, todayMood, onSetMood }) => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [tagFilterOpen, setTagFilterOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [moodExpanded, setMoodExpanded] = useState(false);
-  const [themePickerOpen, setThemePickerOpen] = useState(false);
-  const [cardPickerOpen, setCardPickerOpen] = useState(false);
 
   const sidebarItems = [
     { icon: Home, label: 'Home', onClick: () => {}, active: true },
+    { icon: Mountain, label: 'My Journey', onClick: onGoToJourney, active: false },
+    { icon: Timer, label: 'Study Session', onClick: onGoToStudy ?? (() => {}), active: false },
     { icon: BarChart3, label: 'Dashboard', onClick: onGoToDashboard, active: false },
+    { icon: Lightbulb, label: 'Insights', onClick: onGoToInsights ?? (() => {}), active: false },
     { icon: Compass, label: 'Learning Paths', onClick: onGoToLearningPaths, active: false },
     { icon: Rocket, label: 'Innovation Zone', onClick: onGoToInnovationZone, active: false },
   ];
@@ -281,13 +285,16 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
   const handleTagClick = (tag: string) => {
     const isSelected = selectedTags.includes(tag);
     if (isSelected) {
-      setSelectedTags(selectedTags.filter(t => t !== tag));
+      const next = selectedTags.filter(t => t !== tag);
+      setSelectedTags(next);
+      if (next.length === 0) setTagFilterOpen(false);
     } else {
       if (selectedTags.length < 2) {
         setSelectedTags([...selectedTags, tag]);
       } else {
-        setSelectedTags([selectedTags[1], tag]); // Replace the first tag
+        setSelectedTags([selectedTags[1], tag]);
       }
+      setTagFilterOpen(false);
     }
   };
 
@@ -430,114 +437,22 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
             </button>
           )}
 
-          {/* Theme toggle / picker */}
-          <div className="relative">
-            <button
-              onClick={() => { setThemePickerOpen(!themePickerOpen); setCardPickerOpen(false); }}
-              className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
-            >
-              <div className="shrink-0 flex items-center justify-center w-[18px]">
-                {settings.darkMode ? (
-                  <Moon size={18} strokeWidth={1.5} className="text-zinc-600 dark:text-zinc-400" />
-                ) : (
-                  <Sun size={18} strokeWidth={1.5} className="text-amber-400" />
-                )}
-              </div>
-              <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-                Theme
-              </span>
-              <span className={`transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-                <div className="w-3.5 h-3.5 rounded-full border border-zinc-200 dark:border-zinc-700" style={{ backgroundColor: ACCENT_THEMES[settings.accentTheme]?.hex || '#CC785C' }} />
-              </span>
-            </button>
-            <AnimatePresence>
-              {themePickerOpen && sidebarOpen && (
-                <MotionDiv
-                  initial={{ opacity: 0, y: -4, scale: 0.95 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  exit={{ opacity: 0, y: -4, scale: 0.95 }}
-                  transition={{ duration: 0.15 }}
-                  className="absolute left-0 bottom-full mb-2 w-56 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-lg dark:shadow-2xl p-3 z-50"
-                >
-                  <button
-                    onClick={() => { updateSetting('darkMode', !settings.darkMode); }}
-                    className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 mb-2"
-                  >
-                    <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300">{settings.darkMode ? 'Light Mode' : 'Dark Mode'}</span>
-                    {settings.darkMode ? <Sun size={14} className="text-amber-400" /> : <Moon size={14} className="text-zinc-500" />}
-                  </button>
-                  <div className="border-t border-zinc-100 dark:border-zinc-800 pt-2">
-                    <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2 px-1">Accent</p>
-                    <div className="grid grid-cols-4 gap-1.5">
-                      {ACCENT_THEME_LIST.map(theme => (
-                        <button
-                          key={theme.id}
-                          onClick={() => { updateSetting('accentTheme', theme.id as AccentThemeId); }}
-                          title={theme.name}
-                          className={`flex items-center justify-center p-1.5 rounded-lg transition-all ${
-                            settings.accentTheme === theme.id
-                              ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]'
-                              : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'
-                          }`}
-                        >
-                          <div
-                            className="w-5 h-5 rounded-full border border-white dark:border-zinc-700 shadow-sm"
-                            style={{ backgroundColor: theme.hex }}
-                          />
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                </MotionDiv>
+          {/* Dark / Light mode toggle */}
+          <button
+            onClick={() => updateSetting('darkMode', !settings.darkMode)}
+            className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+          >
+            <div className="shrink-0 flex items-center justify-center w-[18px]">
+              {settings.darkMode ? (
+                <Sun size={18} strokeWidth={1.5} className="text-amber-400" />
+              ) : (
+                <Moon size={18} strokeWidth={1.5} className="text-zinc-600 dark:text-zinc-400" />
               )}
-            </AnimatePresence>
-          </div>
-
-          {/* Card style picker */}
-          <div className="relative">
-            <button
-              onClick={() => { setCardPickerOpen(!cardPickerOpen); setThemePickerOpen(false); }}
-              className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
-            >
-              <div className="shrink-0 flex items-center justify-center w-[18px]">
-                <Layers size={18} strokeWidth={1.5} className="text-zinc-500" />
-              </div>
-              <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-                Cards
-              </span>
-            </button>
-            <AnimatePresence>
-              {cardPickerOpen && sidebarOpen && (
-                <MotionDiv
-                  initial={{ opacity: 0, y: -4, scale: 0.95 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  exit={{ opacity: 0, y: -4, scale: 0.95 }}
-                  transition={{ duration: 0.15 }}
-                  className="absolute left-0 bottom-full mb-2 w-56 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-lg dark:shadow-2xl p-3 z-50"
-                >
-                  <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2 px-1">Card Style</p>
-                  <div className="space-y-1">
-                    {CARD_STYLES.map(style => (
-                      <button
-                        key={style.id}
-                        onClick={() => { updateSetting('cardStyle', style.id as CardStyleId); }}
-                        className={`w-full flex items-center justify-between p-2 rounded-lg transition-all ${
-                          settings.cardStyle === style.id
-                            ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]'
-                            : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'
-                        }`}
-                      >
-                        <div>
-                          <p className="text-xs font-medium text-zinc-700 dark:text-zinc-300 text-left">{style.name}</p>
-                          <p className="text-[10px] text-zinc-400 dark:text-zinc-500 text-left">{style.description}</p>
-                        </div>
-                      </button>
-                    ))}
-                  </div>
-                </MotionDiv>
-              )}
-            </AnimatePresence>
-          </div>
+            </div>
+            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              {settings.darkMode ? 'Light Mode' : 'Dark Mode'}
+            </span>
+          </button>
 
           {/* Settings */}
           <button
@@ -587,7 +502,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-12"
+          className="mb-6"
         >
           <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[var(--accent-hex)] mb-3">
             Learning Lab
@@ -607,6 +522,104 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
           </p>
         </MotionDiv>
 
+        {/* Inline tag filter */}
+        <div className="mb-6">
+          {selectedTags.length === 0 ? (
+            <button
+              onClick={() => setTagFilterOpen(!tagFilterOpen)}
+              className="flex items-center gap-2 px-3.5 py-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors"
+            >
+              <Tag size={14} className="text-zinc-400" />
+              <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400">Filter by topic</span>
+            </button>
+          ) : (
+            <div className="flex items-center gap-2 flex-wrap">
+              <Tag size={14} className="text-zinc-400 shrink-0" />
+              {selectedTags.map(tag => (
+                <button
+                  key={tag}
+                  onClick={() => handleTagClick(tag)}
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-[var(--accent-hex)] text-white"
+                >
+                  {tag}
+                  <X size={12} />
+                </button>
+              ))}
+              <button
+                onClick={() => { setSelectedTags([]); setTagFilterOpen(false); }}
+                className="text-[10px] font-medium text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 ml-1"
+              >
+                Clear
+              </button>
+            </div>
+          )}
+          <AnimatePresence>
+            {tagFilterOpen && selectedTags.length === 0 && (
+              <MotionDiv
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                className="overflow-hidden"
+              >
+                <div className="flex flex-wrap gap-2 mt-3">
+                  {allTags.map(tag => (
+                    <button
+                      key={tag}
+                      onClick={() => handleTagClick(tag)}
+                      className="px-3 py-1.5 text-xs font-medium rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:border-[var(--accent-hex)] hover:text-[var(--accent-hex)] transition-colors"
+                    >
+                      {tag}
+                    </button>
+                  ))}
+                </div>
+              </MotionDiv>
+            )}
+          </AnimatePresence>
+        </div>
+
+        {/* Filtered results or category grid */}
+        <AnimatePresence mode="wait">
+        {selectedTags.length > 0 ? (
+          <MotionDiv
+            key="filtered"
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.25 }}
+          >
+            {filteredCourses.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                {filteredCourses.map((course, index) => {
+                  const progress = userProgress[course.id];
+                  const isCompleted = progress && progress.unlockedSection >= course.sectionsCount;
+                  return (
+                    <BentoModuleTile
+                      key={course.id}
+                      course={course}
+                      index={index}
+                      isUnlocked={true}
+                      isCompleted={isCompleted}
+                      onClick={() => onSelectModule(course.id)}
+                      categoryTitle={categoryTitles[course.category]}
+                    />
+                  );
+                })}
+              </div>
+            ) : (
+              <div className="text-center py-16">
+                <p className="text-sm text-zinc-400 dark:text-zinc-500">No modules match the selected tags.</p>
+              </div>
+            )}
+          </MotionDiv>
+        ) : (
+          <MotionDiv
+            key="grid"
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.25 }}
+          >
         <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
           {modules.map((mod, i) => (
             <BentoTile
@@ -656,59 +669,9 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
               hideProgress
             />
         </div>
-        
-        {/* Module Search */}
-        <div className="mt-24">
-            <h2 className="text-center font-serif text-3xl font-semibold mb-2 text-zinc-800 dark:text-white">Find Units by Topic</h2>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8 max-w-md mx-auto">Filter units by up to two tags to find connections and build a deeper web of knowledge.</p>
-            <div className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto mb-12">
-                {allTags.map(tag => (
-                    <button 
-                        key={tag}
-                        onClick={() => handleTagClick(tag)}
-                        className={`px-3.5 py-1.5 text-xs font-medium rounded-full border transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] ${selectedTags.includes(tag) ? 'bg-[var(--accent-hex)] text-white border-[var(--accent-hex)]' : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:border-zinc-300 dark:hover:border-zinc-700'}`}
-                    >
-                        {tag}
-                    </button>
-                ))}
-            </div>
-            <AnimatePresence>
-                {filteredCourses.length > 0 ? (
-                    <MotionDiv
-                        layout
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
-                        className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6"
-                    >
-                        {filteredCourses.map((course, index) => {
-                            const progress = userProgress[course.id];
-                            const isCompleted = progress && progress.unlockedSection >= course.sectionsCount;
-                            return (
-                                <BentoModuleTile
-                                    key={course.id}
-                                    course={course}
-                                    index={index}
-                                    isUnlocked={true}
-                                    isCompleted={isCompleted}
-                                    onClick={() => onSelectModule(course.id)}
-                                    categoryTitle={categoryTitles[course.category]}
-                                />
-                            )
-                        })}
-                    </MotionDiv>
-                ) : selectedTags.length > 0 ? (
-                    <MotionDiv
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="text-center py-12"
-                    >
-                        <p className="text-sm text-zinc-400 dark:text-zinc-500">No modules match the selected tags.</p>
-                    </MotionDiv>
-                ) : null}
-            </AnimatePresence>
-        </div>
+          </MotionDiv>
+        )}
+        </AnimatePresence>
 
       </div>
       </div>

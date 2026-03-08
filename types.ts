@@ -112,3 +112,61 @@ export interface NorthStar {
   createdAt: string;
   updatedAt: string;
 }
+
+export interface JourneyProgress {
+  unlockedMilestones: number;  // 0-12
+  totalSpent: number;
+  lastUnlockTimestamp: string;
+}
+
+export type ShopItemCategory = 'terrain' | 'building' | 'path' | 'nature' | 'furniture' | 'vehicle' | 'atmosphere';
+
+export interface ShopItem {
+  id: string;
+  name: string;
+  description: string;
+  model: string;
+  category: ShopItemCategory;
+  type: 'hex' | 'decoration';
+  price: number;
+  exclusiveTo?: NorthStarCategory;
+  defaultScale?: number;
+}
+
+export interface IslandPlacement {
+  itemId: string;
+  model: string;
+  type: 'hex' | 'decoration';
+  q: number;
+  r: number;
+  rotation?: number;
+  scale?: number;
+  offsetX?: number;
+  offsetZ?: number;
+  purchasedAt: string;
+  isStarter?: boolean;
+}
+
+export interface IslandState {
+  category: NorthStarCategory;
+  placements: IslandPlacement[];
+  totalSpent: number;
+  purchaseHistory: string[];
+  lastPurchaseTimestamp: string;
+  claimedRewards?: string[];
+}
+
+// ── Strategy Mastery ──────────────────────────────────────
+
+export type MasteryTier = 'none' | 'learned' | 'practiced' | 'applied' | 'habitual';
+
+export interface StrategyMasteryRecord {
+  tier: MasteryTier;
+  learnedAt?: string;
+  appliedAt?: string;
+  habitualAt?: string;
+  sessionCount: number;
+  subjectsSeen: string[];
+}
+
+export type StrategyMasteryMap = Record<string, StrategyMasteryRecord>;

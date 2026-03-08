@@ -21,7 +21,7 @@ import { type StudyReflection, type PointsData, type CosmeticUnlocks, type Earne
 import SubjectOnboarding from './SubjectOnboarding';
 import SpacedRepetitionTimetable from './SpacedRepetitionTimetable';
 import CAOPointsSimulator from './CAOPointsSimulator';
-import DeepFocusTimer from './DeepFocusTimer';
+
 import FlashcardSystem from './FlashcardSystem';
 import { type FlashcardData } from './FlashcardSystem';
 import ReflectionModal from './ReflectionModal';
@@ -1105,11 +1105,13 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         }
     }, [executeToggle]);
 
-    const handleReflectionSubmit = useCallback((reflectionText: string) => {
+    const handleReflectionSubmit = useCallback((reflectionText: string, quality?: { tier: 'basic' | 'thoughtful' | 'deep' }) => {
         if (!pendingCompletion) return;
         const { dateKey, blockId, subjectName, sessionType } = pendingCompletion;
 
-        const basePoints = 10;
+        // Tiered points based on reflection quality
+        const tierPoints: Record<string, number> = { basic: 10, thoughtful: 15, deep: 20 };
+        const basePoints = tierPoints[quality?.tier ?? 'basic'] ?? 10;
         const multiplier = getStreakMultiplier(timetableStreak.currentStreak);
         const earned = Math.round(basePoints * multiplier);
 
@@ -1295,14 +1297,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             accentBarColor: 'bg-slate-500', tagBg: 'bg-slate-100 dark:bg-slate-800/40', tagText: 'text-slate-600 dark:text-slate-300',
             hoverBorder: 'hover:border-slate-400/50 dark:hover:border-slate-500/40',
             component: subjectProfile ? <CAOPointsSimulator profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} /> : null,
-        },
-        {
-            id: 'focus', title: 'Deep Focus Timer', description: 'Pomodoro timer tied to your study timetable.', icon: Clock, needsProfile: false,
-            tag: 'Timer', accentHex: '#14b8a6', gridClass: 'md:col-span-2',
-            iconBg: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400',
-            accentBarColor: 'bg-teal-500', tagBg: 'bg-teal-100 dark:bg-teal-900/30', tagText: 'text-teal-700 dark:text-teal-400',
-            hoverBorder: 'hover:border-teal-400/50 dark:hover:border-teal-500/40',
-            component: <DeepFocusTimer profile={subjectProfile ?? undefined} completions={timetableCompletions} onToggleCompletion={handleToggleCompletion} />,
         },
         {
             id: 'flashcards', title: 'Flashcard Studio', description: 'Create and review flashcards with spaced repetition scheduling.', icon: Layers, needsProfile: false,

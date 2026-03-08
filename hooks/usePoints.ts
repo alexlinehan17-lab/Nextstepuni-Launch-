@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 
@@ -16,8 +16,13 @@ export interface PointsData {
 
 const DEFAULT: PointsData = { totalEarned: 0, totalSpent: 0, balance: 0, isLoaded: false };
 
-export function usePoints(uid?: string): PointsData {
+export function usePoints(uid?: string): PointsData & { reload: () => void } {
   const [points, setPoints] = useState<PointsData>(DEFAULT);
+  const [version, setVersion] = useState(0);
+
+  const reload = useCallback(() => {
+    setVersion(v => v + 1);
+  }, []);
 
   useEffect(() => {
     if (!uid) {
@@ -48,7 +53,7 @@ export function usePoints(uid?: string): PointsData {
     };
 
     load();
-  }, [uid]);
+  }, [uid, version]);
 
-  return points;
+  return { ...points, reload };
 }
