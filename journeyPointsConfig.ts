@@ -8,9 +8,9 @@ import { UserProgress } from './types';
 
 // Points earned for completing content
 export const POINTS = {
-  SECTION_COMPLETE: 15,
-  MODULE_COMPLETE_BONUS: 50,
-  CATEGORY_COMPLETE_BONUS: 200,
+  SECTION_COMPLETE: 6,
+  MODULE_COMPLETE_BONUS: 20,
+  CATEGORY_COMPLETE_BONUS: 80,
   DAILY_STREAK: 10,
   // Reflection tiers (Phase 4)
   REFLECTION_BASIC: 10,

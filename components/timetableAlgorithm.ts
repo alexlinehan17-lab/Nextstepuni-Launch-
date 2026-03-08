@@ -77,6 +77,10 @@ export interface SessionAllocation {
   priorityScore: number;
 }
 
+// Maximum ratio between the most-studied and least-studied subject.
+// e.g. 3 means the top subject gets at most 3× the sessions of the bottom.
+const MAX_SESSION_RATIO = 3;
+
 export function allocateSessions(
   priorities: SubjectPriority[],
   weeksUntilExam: number
@@ -84,11 +88,14 @@ export function allocateSessions(
   const intensity = computeIntensityFactor(weeksUntilExam);
   // Base: 14 sessions/week (2/day). Ramps to 21 (3/day) at max intensity
   const totalSessions = Math.round(14 + intensity * 7);
+  const n = priorities.length;
+
+  if (n === 0) return [];
 
   const totalPriority = priorities.reduce((sum, p) => sum + p.priorityScore, 0);
-  if (totalPriority === 0 || priorities.length === 0) {
+  if (totalPriority === 0) {
     // Equal distribution if no priority differences
-    const perSubject = Math.max(1, Math.floor(totalSessions / Math.max(1, priorities.length)));
+    const perSubject = Math.max(1, Math.floor(totalSessions / n));
     return priorities.map(p => ({
       subjectName: p.subjectName,
       sessions: perSubject,
@@ -97,34 +104,80 @@ export function allocateSessions(
     }));
   }
 
-  // Proportional allocation with minimum 1 session per subject
-  let allocations = priorities.map(p => ({
+  // Log-scale the priority scores to compress extreme differences.
+  // A subject with 80× the raw score should NOT get 80× the sessions.
+  // log(1 + score) maps 0→0 and compresses large values.
+  const logScores = priorities.map(p => Math.log(1 + p.priorityScore));
+  const totalLog = logScores.reduce((sum, s) => sum + s, 0);
+
+  // Compute raw proportional shares from log-scaled scores
+  let shares = logScores.map(s => (s / totalLog) * totalSessions);
+
+  // Enforce max ratio: no subject gets more than MAX_SESSION_RATIO × the minimum.
+  // We iteratively clamp until stable.
+  for (let iter = 0; iter < 10; iter++) {
+    const minShare = Math.min(...shares);
+    const maxAllowed = minShare * MAX_SESSION_RATIO;
+    let clamped = false;
+    let excess = 0;
+    let unclampedCount = 0;
+
+    const clampedShares = shares.map(s => {
+      if (s > maxAllowed) {
+        excess += s - maxAllowed;
+        clamped = true;
+        return maxAllowed;
+      }
+      unclampedCount++;
+      return s;
+    });
+
+    if (!clamped) {
+      shares = clampedShares;
+      break;
+    }
+
+    // Redistribute excess to unclamped subjects proportionally
+    if (unclampedCount > 0) {
+      const unclampedTotal = clampedShares.reduce((sum, s, i) =>
+        sum + (s < maxAllowed ? s : 0), 0);
+      shares = clampedShares.map(s => {
+        if (s < maxAllowed && unclampedTotal > 0) {
+          return s + (s / unclampedTotal) * excess;
+        }
+        return s;
+      });
+    } else {
+      shares = clampedShares;
+      break;
+    }
+  }
+
+  // Round to integers with minimum 1 per subject
+  let allocations = priorities.map((p, i) => ({
     subjectName: p.subjectName,
-    rawShare: (p.priorityScore / totalPriority) * totalSessions,
-    sessions: 0,
+    sessions: Math.max(1, Math.round(shares[i])),
     priorityScore: p.priorityScore,
   }));
 
-  // Assign minimum 1 to each, then distribute remainder proportionally
-  let remaining = totalSessions - priorities.length; // reserve 1 each
-  allocations = allocations.map(a => ({ ...a, sessions: 1 }));
-
-  if (remaining > 0) {
-    // Sort by rawShare descending for allocation
-    const sorted = [...allocations].sort((a, b) => b.rawShare - a.rawShare);
-    for (const alloc of sorted) {
-      const extra = Math.round((alloc.rawShare - 1)); // how many extra beyond the 1
-      const toAdd = Math.min(Math.max(0, extra), remaining);
-      alloc.sessions += toAdd;
-      remaining -= toAdd;
-    }
-    // Distribute any leftover one by one
-    let idx = 0;
-    while (remaining > 0) {
-      sorted[idx % sorted.length].sessions += 1;
-      remaining--;
-      idx++;
-    }
+  // Adjust total to match target (rounding may overshoot/undershoot)
+  let currentTotal = allocations.reduce((sum, a) => sum + a.sessions, 0);
+  while (currentTotal > totalSessions) {
+    // Remove from the subject with the most sessions (and lowest priority)
+    const maxSessions = Math.max(...allocations.map(a => a.sessions));
+    const idx = allocations.findIndex(a => a.sessions === maxSessions);
+    if (allocations[idx].sessions > 1) {
+      allocations[idx].sessions--;
+      currentTotal--;
+    } else break;
+  }
+  while (currentTotal < totalSessions) {
+    // Add to the subject with the highest priority score that has fewest sessions
+    const sorted = [...allocations]
+      .map((a, i) => ({ ...a, idx: i }))
+      .sort((a, b) => b.priorityScore - a.priorityScore);
+    allocations[sorted[0].idx].sessions++;
+    currentTotal++;
   }
 
   // Compute priority labels based on thirds
@@ -145,7 +198,8 @@ export function generateWeeklyTimetable(
   allocations: SessionAllocation[],
   weeksUntilExam: number,
   weekOffset: number = 0,
-  restDays: string[] = []
+  restDays: string[] = [],
+  blockDuration: number = 45
 ): WeeklyTimetable {
   const effectiveWeeks = Math.max(0, weeksUntilExam - weekOffset);
   const intensity = computeIntensityFactor(effectiveWeeks);
@@ -182,7 +236,7 @@ export function generateWeeklyTimetable(
       allBlocks.push({
         subjectName: alloc.subjectName,
         sessionType,
-        durationMinutes: 45,
+        durationMinutes: blockDuration,
       });
     }
   }

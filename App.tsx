@@ -496,6 +496,7 @@ const App: React.FC = () => {
   const [unlockedThemes, setUnlockedThemes] = useState<string[]>([]);
   const [unlockedCardStyles, setUnlockedCardStyles] = useState<string[]>([]);
   const [dismissedGuides, setDismissedGuides] = useState<Record<string, string>>({});
+  const [timetableBlockContext, setTimetableBlockContext] = useState<{ subject: string; sessionType: 'new-learning' | 'practice' | 'revision'; durationMinutes: number; dateKey: string; blockId: string } | null>(null);
   const { settings, updateSetting, isLoaded: settingsLoaded } = useSettings(user?.uid, user?.avatar);
   const { streak } = useStreak(user?.uid);
   const { todayMood, setMood, entries: moodEntries } = useMood(user?.uid);
@@ -850,12 +851,22 @@ const App: React.FC = () => {
   };
 
   const handleGoToStudy = () => {
+    setTimetableBlockContext(null);
     setViewState('study-session');
     window.scrollTo(0, 0);
     if (!isPopstateRef.current) {
       window.history.pushState({ view: 'study-session' }, '');
     }
   };
+
+  const handleStudyFromTimetable = useCallback((block: { subject: string; sessionType: 'new-learning' | 'practice' | 'revision'; durationMinutes: number; dateKey: string; blockId: string }) => {
+    setTimetableBlockContext(block);
+    setViewState('study-session');
+    window.scrollTo(0, 0);
+    if (!isPopstateRef.current) {
+      window.history.pushState({ view: 'study-session' }, '');
+    }
+  }, []);
 
   const handleGoToInsights = useCallback(() => {
     setViewState('insights');
@@ -1090,6 +1101,23 @@ const App: React.FC = () => {
             dismissedGuides={dismissedGuides}
             onDismissGuide={handleDismissGuide}
             weeklyChallenge={weeklyChallenge}
+            timetableBlock={timetableBlockContext}
+            onTimetableBlockComplete={async (dateKey, blockId, _actualMinutes) => {
+              if (!user?.uid) return;
+              try {
+                const progressRef = doc(db, 'progress', user.uid);
+                const progressSnap = await getDoc(progressRef);
+                const data = progressSnap.data() || {};
+                const completions = (data.timetableCompletions || {}) as Record<string, string[]>;
+                const dayArr = [...(completions[dateKey] ?? [])];
+                if (!dayArr.includes(blockId)) dayArr.push(blockId);
+                const updated = { ...completions, [dateKey]: dayArr };
+                await setDoc(progressRef, { timetableCompletions: updated }, { merge: true });
+              } catch (e) {
+                console.error('Failed to auto-complete timetable block:', e);
+              }
+              setTimetableBlockContext(null);
+            }}
           />
         </Suspense>
       );
@@ -1255,7 +1283,7 @@ const App: React.FC = () => {
     if (viewState === 'innovation-zone') {
         return (
           <Suspense fallback={<LoadingSpinner />}>
-            <InnovationZone onBack={handleBackToTree} onSelectModule={handleSelectModule} user={user} autoOpenJourney={cameFromJourney} savedJourneyResult={journeyResult} onJourneyComplete={setJourneyResult} settings={settings} updateSetting={updateSetting} onCosmeticUnlocksChange={(unlocks) => { setUnlockedAvatarSeeds(unlocks.avatarSeeds || []); setUnlockedThemes(unlocks.themeColors || []); setUnlockedCardStyles(unlocks.cardStyles || []); }} />
+            <InnovationZone onBack={handleBackToTree} onSelectModule={handleSelectModule} user={user} autoOpenJourney={cameFromJourney} savedJourneyResult={journeyResult} onJourneyComplete={setJourneyResult} settings={settings} updateSetting={updateSetting} onCosmeticUnlocksChange={(unlocks) => { setUnlockedAvatarSeeds(unlocks.avatarSeeds || []); setUnlockedThemes(unlocks.themeColors || []); setUnlockedCardStyles(unlocks.cardStyles || []); }} onStudyNow={handleStudyFromTimetable} />
           </Suspense>
         );
     }

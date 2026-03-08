@@ -22,6 +22,7 @@ export interface StudentSubjectProfile {
   subjects: StudentSubject[];
   examStartDate: string; // ISO date string, e.g. "2026-06-03"
   restDays: string[];    // e.g. ["Saturday", "Sunday"] — days with no study
+  defaultBlockDuration?: number; // minutes per study block (default 45)
   createdAt: string;
   updatedAt: string;
 }

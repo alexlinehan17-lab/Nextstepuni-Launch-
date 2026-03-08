@@ -5,10 +5,12 @@
 
 // ── Types ──────────────────────────────────────────────────
 
+export type PromptCategory = 'action' | 'check-in' | 'technique-switch' | 'energy-focus';
+
 export interface StrategyPrompt {
   moduleId: string;
   strategyName: string;
-  phase: 'start' | 'mid' | 'push';
+  category: PromptCategory;
   prompt: string;
 }
 
@@ -55,7 +57,7 @@ export const DURATION_PRESETS = [
 // ── Points Config ──────────────────────────────────────────
 
 export const STUDY_SESSION_POINTS = {
-  PER_10_MINUTES: 5,
+  PER_10_MINUTES: 8,
 } as const;
 
 // ── Subject Colors (duplicated from DeepFocusTimer.tsx to avoid refactoring) ──
@@ -134,51 +136,190 @@ export function getSubjectStroke(name: string): string {
   return SUBJECT_STROKE_COLORS[name] || 'stroke-purple-500';
 }
 
-// ── Strategy Prompts (27 across 9 strategies) ─────────────
+// Maximally distinct hex colors for SVG chart lines (no two should look alike)
+export const SUBJECT_HEX_COLORS: Record<string, string> = {
+  'English': '#3b82f6',           // blue
+  'Irish': '#10b981',             // emerald
+  'Mathematics': '#6366f1',       // indigo
+  'French': '#f43f5e',            // rose
+  'German': '#f59e0b',            // amber
+  'Spanish': '#f97316',           // orange
+  'Italian': '#84cc16',           // lime
+  'Japanese': '#ec4899',          // pink
+  'Physics': '#06b6d4',           // cyan
+  'Chemistry': '#14b8a6',         // teal
+  'Biology': '#22c55e',           // green
+  'Applied Mathematics': '#8b5cf6', // violet
+  'Agricultural Science': '#a3e635', // lime bright
+  'Computer Science': '#0ea5e9',  // sky
+  'Accounting': '#d946ef',        // fuchsia
+  'Business': '#0284c7',          // sky-dark (distinct from English blue)
+  'Economics': '#eab308',         // yellow
+  'History': '#b45309',           // amber-dark (brown)
+  'Geography': '#0d9488',         // teal-dark
+  'Politics & Society': '#a855f7',// purple
+  'Religious Education': '#c026d3',// fuchsia-dark
+  'Home Economics': '#ea580c',    // orange-dark
+  'Music': '#db2777',             // pink-dark
+  'Art': '#ef4444',               // red
+  'Construction Studies': '#78716c',// stone
+  'Engineering': '#71717a',       // zinc
+  'Technology': '#64748b',        // slate
+  'Design & Communication Graphics': '#4f46e5', // indigo-dark
+  'Physical Education': '#dc2626',// red-dark
+};
+
+export function getSubjectHex(name: string): string {
+  return SUBJECT_HEX_COLORS[name] || '#a855f7';
+}
+
+// Guaranteed distinct palette — cycles through when subjects aren't in the map
+const DISTINCT_PALETTE = [
+  '#3b82f6', '#ef4444', '#22c55e', '#f59e0b', '#8b5cf6',
+  '#ec4899', '#06b6d4', '#f97316', '#6366f1', '#14b8a6',
+  '#eab308', '#d946ef', '#0ea5e9', '#84cc16', '#b45309',
+  '#0284c7', '#dc2626', '#a855f7', '#10b981', '#f43f5e',
+];
+
+/**
+ * Returns a guaranteed-distinct hex color for a subject index.
+ * Uses the named color if available, otherwise cycles through a distinct palette.
+ */
+export function getDistinctSubjectHex(name: string, index: number): string {
+  return SUBJECT_HEX_COLORS[name] || DISTINCT_PALETTE[index % DISTINCT_PALETTE.length];
+}
+
+// ── Prompt Timing Config ──────────────────────────────────
+
+export const PROMPT_INTERVAL_SECONDS = 300; // 5 minutes between prompts
+export const PROMPT_AUTO_DISMISS_SECONDS = 30; // auto-dismiss after 30s
+
+// ── Strategy Prompts (~108 across 9 strategies, 12 each) ──
 
 export const STRATEGY_PROMPTS: StrategyPrompt[] = [
-  // Active Recall (mastering-active-recall-protocol)
-  { moduleId: 'mastering-active-recall-protocol', strategyName: 'Active Recall', phase: 'start', prompt: 'Close your notes. Write down everything you remember about this topic before looking anything up.' },
-  { moduleId: 'mastering-active-recall-protocol', strategyName: 'Active Recall', phase: 'mid', prompt: 'Pause and quiz yourself: what are the 3 most important ideas from what you just studied?' },
-  { moduleId: 'mastering-active-recall-protocol', strategyName: 'Active Recall', phase: 'push', prompt: 'Before you finish, explain the hardest concept from today in your own words — no peeking.' },
+  // ─── Active Recall (mastering-active-recall-protocol) ───
+  { moduleId: 'mastering-active-recall-protocol', strategyName: 'Active Recall', category: 'action', prompt: 'Close your notes. Write down everything you remember about this topic before looking anything up.' },
+  { moduleId: 'mastering-active-recall-protocol', strategyName: 'Active Recall', category: 'action', prompt: 'Pause and quiz yourself: what are the 3 most important ideas from what you just studied?' },
+  { moduleId: 'mastering-active-recall-protocol', strategyName: 'Active Recall', category: 'action', prompt: 'Cover your notes and try to list all the key terms from this section. Then check what you missed.' },
+  { moduleId: 'mastering-active-recall-protocol', strategyName: 'Active Recall', category: 'check-in', prompt: 'How much of what you just read could you explain without looking? If less than 60%, test yourself now.' },
+  { moduleId: 'mastering-active-recall-protocol', strategyName: 'Active Recall', category: 'check-in', prompt: 'Are you re-reading or actually retrieving? Close the book and write what you know — that\'s real learning.' },
+  { moduleId: 'mastering-active-recall-protocol', strategyName: 'Active Recall', category: 'check-in', prompt: 'Quick check: could you answer an exam question on this right now? If not, that\'s your signal to self-test.' },
+  { moduleId: 'mastering-active-recall-protocol', strategyName: 'Active Recall', category: 'technique-switch', prompt: 'Try the "blank page" method: open a fresh page and write everything you know about the topic from memory.' },
+  { moduleId: 'mastering-active-recall-protocol', strategyName: 'Active Recall', category: 'technique-switch', prompt: 'Switch from reading to testing: write 3 questions about what you just covered, then answer them without notes.' },
+  { moduleId: 'mastering-active-recall-protocol', strategyName: 'Active Recall', category: 'technique-switch', prompt: 'Try verbal recall — explain this concept out loud as if presenting to your class. No notes allowed.' },
+  { moduleId: 'mastering-active-recall-protocol', strategyName: 'Active Recall', category: 'energy-focus', prompt: 'Before you finish, explain the hardest concept from today in your own words — no peeking. You\'ve got this.' },
+  { moduleId: 'mastering-active-recall-protocol', strategyName: 'Active Recall', category: 'energy-focus', prompt: 'Retrieval is hard on purpose — that effort is the learning happening. Keep going.' },
+  { moduleId: 'mastering-active-recall-protocol', strategyName: 'Active Recall', category: 'energy-focus', prompt: 'Every time you struggle to remember and then check, you\'re strengthening that memory trace. Push through.' },
 
-  // Spaced Repetition (mastering-spaced-repetition-protocol)
-  { moduleId: 'mastering-spaced-repetition-protocol', strategyName: 'Spaced Repetition', phase: 'start', prompt: 'Start by reviewing your flagged cards or notes from your last session on this topic.' },
-  { moduleId: 'mastering-spaced-repetition-protocol', strategyName: 'Spaced Repetition', phase: 'mid', prompt: 'Which concepts feel shaky? Mark them for review tomorrow — spacing builds memory.' },
-  { moduleId: 'mastering-spaced-repetition-protocol', strategyName: 'Spaced Repetition', phase: 'push', prompt: 'Schedule a 5-minute review of today\'s weak spots for 2 days from now.' },
+  // ─── Spaced Repetition (mastering-spaced-repetition-protocol) ───
+  { moduleId: 'mastering-spaced-repetition-protocol', strategyName: 'Spaced Repetition', category: 'action', prompt: 'Start by reviewing your flagged cards or notes from your last session on this topic.' },
+  { moduleId: 'mastering-spaced-repetition-protocol', strategyName: 'Spaced Repetition', category: 'action', prompt: 'Mark any concept that felt shaky just now. Schedule it for review in 2 days.' },
+  { moduleId: 'mastering-spaced-repetition-protocol', strategyName: 'Spaced Repetition', category: 'action', prompt: 'Write down 3 things from today\'s session you\'d forget if you didn\'t review them. Plan when you\'ll revisit.' },
+  { moduleId: 'mastering-spaced-repetition-protocol', strategyName: 'Spaced Repetition', category: 'check-in', prompt: 'Which concepts feel shaky? Mark them for review tomorrow — spacing builds memory.' },
+  { moduleId: 'mastering-spaced-repetition-protocol', strategyName: 'Spaced Repetition', category: 'check-in', prompt: 'When did you last review this material? If it\'s been more than a week, the forgetting curve is steep — revisit now.' },
+  { moduleId: 'mastering-spaced-repetition-protocol', strategyName: 'Spaced Repetition', category: 'check-in', prompt: 'Rate your confidence on this topic 1-10. Anything below 7 needs a spaced review scheduled this week.' },
+  { moduleId: 'mastering-spaced-repetition-protocol', strategyName: 'Spaced Repetition', category: 'technique-switch', prompt: 'Instead of re-reading everything, focus only on the items you got wrong or hesitated on last time.' },
+  { moduleId: 'mastering-spaced-repetition-protocol', strategyName: 'Spaced Repetition', category: 'technique-switch', prompt: 'Try the Leitner method: sort your flashcards into "know well", "sort of", and "don\'t know" piles. Focus on the last.' },
+  { moduleId: 'mastering-spaced-repetition-protocol', strategyName: 'Spaced Repetition', category: 'technique-switch', prompt: 'Mix old review material with new content. Revisit one thing from last week alongside today\'s work.' },
+  { moduleId: 'mastering-spaced-repetition-protocol', strategyName: 'Spaced Repetition', category: 'energy-focus', prompt: 'Schedule a 5-minute review of today\'s weak spots for 2 days from now. Future-you will thank you.' },
+  { moduleId: 'mastering-spaced-repetition-protocol', strategyName: 'Spaced Repetition', category: 'energy-focus', prompt: 'Spacing feels slower but lasts longer. Trust the process — you\'re building permanent knowledge.' },
+  { moduleId: 'mastering-spaced-repetition-protocol', strategyName: 'Spaced Repetition', category: 'energy-focus', prompt: 'Even 5 minutes of spaced review beats 30 minutes of cramming. Small, consistent sessions win.' },
 
-  // Interleaving (mastering-interleaving-protocol)
-  { moduleId: 'mastering-interleaving-protocol', strategyName: 'Interleaving', phase: 'start', prompt: 'Mix it up: start with a different topic or problem type than you ended with last time.' },
-  { moduleId: 'mastering-interleaving-protocol', strategyName: 'Interleaving', phase: 'mid', prompt: 'Switch to a different problem type or subtopic now — mixing strengthens your ability to choose strategies.' },
-  { moduleId: 'mastering-interleaving-protocol', strategyName: 'Interleaving', phase: 'push', prompt: 'Try one problem that combines two different concepts you studied today.' },
+  // ─── Interleaving (mastering-interleaving-protocol) ───
+  { moduleId: 'mastering-interleaving-protocol', strategyName: 'Interleaving', category: 'action', prompt: 'Mix it up: switch to a different topic or problem type than what you\'ve been working on.' },
+  { moduleId: 'mastering-interleaving-protocol', strategyName: 'Interleaving', category: 'action', prompt: 'Try one problem that combines two different concepts you\'ve studied today.' },
+  { moduleId: 'mastering-interleaving-protocol', strategyName: 'Interleaving', category: 'action', prompt: 'Shuffle your practice — do 3 problems from 3 different sections rather than 9 from one section.' },
+  { moduleId: 'mastering-interleaving-protocol', strategyName: 'Interleaving', category: 'check-in', prompt: 'Have you been working on the same type of problem for a while? Time to switch topics — mixing strengthens learning.' },
+  { moduleId: 'mastering-interleaving-protocol', strategyName: 'Interleaving', category: 'check-in', prompt: 'Are you in a comfort zone with one topic? Jump to a harder one — the contrast helps both stick.' },
+  { moduleId: 'mastering-interleaving-protocol', strategyName: 'Interleaving', category: 'check-in', prompt: 'Quick check: can you tell which strategy or formula to use without being told? That\'s the real skill interleaving builds.' },
+  { moduleId: 'mastering-interleaving-protocol', strategyName: 'Interleaving', category: 'technique-switch', prompt: 'Try alternating between theory and practice problems every 10 minutes instead of doing all of one first.' },
+  { moduleId: 'mastering-interleaving-protocol', strategyName: 'Interleaving', category: 'technique-switch', prompt: 'Pick a random past exam question from a different chapter. See if you can identify which approach to use.' },
+  { moduleId: 'mastering-interleaving-protocol', strategyName: 'Interleaving', category: 'technique-switch', prompt: 'Compare two related concepts side by side — how are they similar? How are they different? This builds discrimination.' },
+  { moduleId: 'mastering-interleaving-protocol', strategyName: 'Interleaving', category: 'energy-focus', prompt: 'Interleaving feels harder than blocked practice — but that difficulty is exactly what makes it more effective.' },
+  { moduleId: 'mastering-interleaving-protocol', strategyName: 'Interleaving', category: 'energy-focus', prompt: 'The confusion you feel switching topics? That\'s your brain building the ability to choose the right approach.' },
+  { moduleId: 'mastering-interleaving-protocol', strategyName: 'Interleaving', category: 'energy-focus', prompt: 'Keep mixing it up — the exam won\'t group questions by topic, so train the way you\'ll be tested.' },
 
-  // Elaboration (elaborative-interrogation-protocol)
-  { moduleId: 'elaborative-interrogation-protocol', strategyName: 'Elaboration', phase: 'start', prompt: 'Ask yourself "why does this work?" or "how does this connect to what I already know?"' },
-  { moduleId: 'elaborative-interrogation-protocol', strategyName: 'Elaboration', phase: 'mid', prompt: 'Pick one concept and explain it as if teaching a friend who knows nothing about it.' },
-  { moduleId: 'elaborative-interrogation-protocol', strategyName: 'Elaboration', phase: 'push', prompt: 'Write one real-world example or analogy for the trickiest idea from today\'s session.' },
+  // ─── Elaboration (elaborative-interrogation-protocol) ───
+  { moduleId: 'elaborative-interrogation-protocol', strategyName: 'Elaboration', category: 'action', prompt: 'Ask yourself "why does this work?" or "how does this connect to what I already know?"' },
+  { moduleId: 'elaborative-interrogation-protocol', strategyName: 'Elaboration', category: 'action', prompt: 'Pick one concept and explain it as if teaching a friend who knows nothing about it.' },
+  { moduleId: 'elaborative-interrogation-protocol', strategyName: 'Elaboration', category: 'action', prompt: 'Write one real-world example or analogy for the concept you just studied.' },
+  { moduleId: 'elaborative-interrogation-protocol', strategyName: 'Elaboration', category: 'check-in', prompt: 'Can you explain WHY this works, not just WHAT it is? If not, dig deeper — surface knowledge won\'t hold up in exams.' },
+  { moduleId: 'elaborative-interrogation-protocol', strategyName: 'Elaboration', category: 'check-in', prompt: 'Could you link this to something from another subject? Cross-connections make knowledge stick.' },
+  { moduleId: 'elaborative-interrogation-protocol', strategyName: 'Elaboration', category: 'check-in', prompt: 'Are you memorising or understanding? Ask yourself "why?" about what you just read — that\'s the shift to deep learning.' },
+  { moduleId: 'elaborative-interrogation-protocol', strategyName: 'Elaboration', category: 'technique-switch', prompt: 'Draw a diagram or mind map of how today\'s concepts connect to each other.' },
+  { moduleId: 'elaborative-interrogation-protocol', strategyName: 'Elaboration', category: 'technique-switch', prompt: 'Write a "because" chain: This happens because... which causes... which means... Go 3 levels deep.' },
+  { moduleId: 'elaborative-interrogation-protocol', strategyName: 'Elaboration', category: 'technique-switch', prompt: 'Try the Feynman technique: explain this in the simplest possible terms. Where you get stuck is where to focus.' },
+  { moduleId: 'elaborative-interrogation-protocol', strategyName: 'Elaboration', category: 'energy-focus', prompt: 'Understanding beats memorising every time. The extra effort of "why" now saves hours of re-learning later.' },
+  { moduleId: 'elaborative-interrogation-protocol', strategyName: 'Elaboration', category: 'energy-focus', prompt: 'Your brain remembers stories and connections far better than isolated facts. Keep building those links.' },
+  { moduleId: 'elaborative-interrogation-protocol', strategyName: 'Elaboration', category: 'energy-focus', prompt: 'One well-understood concept is worth ten that are half-memorised. Depth over breadth right now.' },
 
-  // Agency Protocol (agency-protocol)
-  { moduleId: 'agency-protocol', strategyName: 'Agency Mindset', phase: 'start', prompt: 'Set a clear intention: what exactly will you know or be able to do after this session?' },
-  { moduleId: 'agency-protocol', strategyName: 'Agency Mindset', phase: 'mid', prompt: 'Rate your focus 1-10 right now. If it\'s below 7, take a 60-second reset and refocus.' },
-  { moduleId: 'agency-protocol', strategyName: 'Agency Mindset', phase: 'push', prompt: 'You chose to study — that\'s the hardest step. Finish strong with 5 more focused minutes.' },
+  // ─── Agency Mindset (agency-protocol) ───
+  { moduleId: 'agency-protocol', strategyName: 'Agency Mindset', category: 'action', prompt: 'Set a clear intention: what exactly will you know or be able to do after this session?' },
+  { moduleId: 'agency-protocol', strategyName: 'Agency Mindset', category: 'action', prompt: 'Write down one specific goal for the next 10 minutes. Make it measurable — "Complete 5 questions" not "study more".' },
+  { moduleId: 'agency-protocol', strategyName: 'Agency Mindset', category: 'action', prompt: 'Choose your next action deliberately. Don\'t drift — decide what you\'ll work on and commit to it.' },
+  { moduleId: 'agency-protocol', strategyName: 'Agency Mindset', category: 'check-in', prompt: 'Rate your focus 1-10 right now. If it\'s below 7, take a 60-second reset and refocus.' },
+  { moduleId: 'agency-protocol', strategyName: 'Agency Mindset', category: 'check-in', prompt: 'Are you studying with intention or just going through the motions? Reconnect with your goal for this session.' },
+  { moduleId: 'agency-protocol', strategyName: 'Agency Mindset', category: 'check-in', prompt: 'What was your plan for this session? Check in — are you on track or did you drift? Adjust now if needed.' },
+  { moduleId: 'agency-protocol', strategyName: 'Agency Mindset', category: 'technique-switch', prompt: 'If you\'re stuck, change your approach rather than pushing harder on something that isn\'t working.' },
+  { moduleId: 'agency-protocol', strategyName: 'Agency Mindset', category: 'technique-switch', prompt: 'Take 30 seconds to prioritise: what\'s the most important thing to learn in the time you have left?' },
+  { moduleId: 'agency-protocol', strategyName: 'Agency Mindset', category: 'technique-switch', prompt: 'Shift from passive to active: instead of reading, try writing, testing, or explaining.' },
+  { moduleId: 'agency-protocol', strategyName: 'Agency Mindset', category: 'energy-focus', prompt: 'You chose to study — that\'s the hardest step. Finish strong with 5 more focused minutes.' },
+  { moduleId: 'agency-protocol', strategyName: 'Agency Mindset', category: 'energy-focus', prompt: 'You\'re in control of this session. Every minute you stay focused is a choice that compounds over time.' },
+  { moduleId: 'agency-protocol', strategyName: 'Agency Mindset', category: 'energy-focus', prompt: 'Future you is counting on present you. The effort you put in now directly shapes your results.' },
 
-  // Growth Mindset (growth-mindset-protocol)
-  { moduleId: 'growth-mindset-protocol', strategyName: 'Growth Mindset', phase: 'start', prompt: 'Remind yourself: struggle means growth. Difficulty is the signal that learning is happening.' },
-  { moduleId: 'growth-mindset-protocol', strategyName: 'Growth Mindset', phase: 'mid', prompt: 'If something feels hard, lean in — your brain is literally building new connections right now.' },
-  { moduleId: 'growth-mindset-protocol', strategyName: 'Growth Mindset', phase: 'push', prompt: 'Write down one thing that was difficult today and one thing you improved at. That\'s growth.' },
+  // ─── Growth Mindset (growth-mindset-protocol) ───
+  { moduleId: 'growth-mindset-protocol', strategyName: 'Growth Mindset', category: 'action', prompt: 'Write down one thing that was difficult today. Reframe it: what did that struggle teach you?' },
+  { moduleId: 'growth-mindset-protocol', strategyName: 'Growth Mindset', category: 'action', prompt: 'Find the hardest problem you can and attempt it. Getting it wrong is more valuable than avoiding it.' },
+  { moduleId: 'growth-mindset-protocol', strategyName: 'Growth Mindset', category: 'action', prompt: 'Replace "I can\'t do this" with "I can\'t do this yet." Then identify the specific gap to work on.' },
+  { moduleId: 'growth-mindset-protocol', strategyName: 'Growth Mindset', category: 'check-in', prompt: 'If something feels hard, lean in — your brain is literally building new connections right now.' },
+  { moduleId: 'growth-mindset-protocol', strategyName: 'Growth Mindset', category: 'check-in', prompt: 'Are you avoiding the hard parts? Those are exactly where the growth happens. Lean into difficulty.' },
+  { moduleId: 'growth-mindset-protocol', strategyName: 'Growth Mindset', category: 'check-in', prompt: 'How do you feel about mistakes right now — frustrated or curious? Curiosity is the growth mindset in action.' },
+  { moduleId: 'growth-mindset-protocol', strategyName: 'Growth Mindset', category: 'technique-switch', prompt: 'Instead of re-reading something you already know, find something that challenges you. Comfort zone ≠ learning zone.' },
+  { moduleId: 'growth-mindset-protocol', strategyName: 'Growth Mindset', category: 'technique-switch', prompt: 'Try tackling a problem you failed before. Your brain has been processing it since — you might surprise yourself.' },
+  { moduleId: 'growth-mindset-protocol', strategyName: 'Growth Mindset', category: 'technique-switch', prompt: 'Pick the topic you\'re least confident in and spend 5 minutes on it. Small doses of discomfort build big confidence.' },
+  { moduleId: 'growth-mindset-protocol', strategyName: 'Growth Mindset', category: 'energy-focus', prompt: 'Struggle means growth. Difficulty is the signal that learning is happening. Keep pushing.' },
+  { moduleId: 'growth-mindset-protocol', strategyName: 'Growth Mindset', category: 'energy-focus', prompt: 'Your brain is like a muscle — it gets stronger through effort, not ease. This work is making you smarter.' },
+  { moduleId: 'growth-mindset-protocol', strategyName: 'Growth Mindset', category: 'energy-focus', prompt: 'Every expert was once a beginner who kept going. You\'re on that same path right now.' },
 
-  // Deep Focus (digital-distraction-protocol)
-  { moduleId: 'digital-distraction-protocol', strategyName: 'Deep Focus', phase: 'start', prompt: 'Put your phone face-down or in another room. Eliminate one distraction before you begin.' },
-  { moduleId: 'digital-distraction-protocol', strategyName: 'Deep Focus', phase: 'mid', prompt: 'If your mind wandered, that\'s normal. Gently bring it back — each refocus strengthens attention.' },
-  { moduleId: 'digital-distraction-protocol', strategyName: 'Deep Focus', phase: 'push', prompt: 'You\'re in the final stretch. Channel all focus into these last minutes — quality over quantity.' },
+  // ─── Deep Focus (digital-distraction-protocol) ───
+  { moduleId: 'digital-distraction-protocol', strategyName: 'Deep Focus', category: 'action', prompt: 'Put your phone face-down or in another room. Eliminate one distraction before continuing.' },
+  { moduleId: 'digital-distraction-protocol', strategyName: 'Deep Focus', category: 'action', prompt: 'Close any tabs or apps you don\'t need right now. Clear your workspace for the next 10 minutes.' },
+  { moduleId: 'digital-distraction-protocol', strategyName: 'Deep Focus', category: 'action', prompt: 'Set a mini-goal for the next 5 minutes and give it 100% — no checking anything else.' },
+  { moduleId: 'digital-distraction-protocol', strategyName: 'Deep Focus', category: 'check-in', prompt: 'If your mind wandered, that\'s normal. Gently bring it back — each refocus strengthens attention.' },
+  { moduleId: 'digital-distraction-protocol', strategyName: 'Deep Focus', category: 'check-in', prompt: 'On a scale of 1-10, how focused are you right now? If below 6, stand up, stretch for 30 seconds, then refocus.' },
+  { moduleId: 'digital-distraction-protocol', strategyName: 'Deep Focus', category: 'check-in', prompt: 'Have you checked your phone or social media? If so, put it away. Reclaim your attention for this session.' },
+  { moduleId: 'digital-distraction-protocol', strategyName: 'Deep Focus', category: 'technique-switch', prompt: 'If you\'re losing focus, change your posture or location slightly. A small shift can reset your attention.' },
+  { moduleId: 'digital-distraction-protocol', strategyName: 'Deep Focus', category: 'technique-switch', prompt: 'Try the "2-minute rule": commit to just 2 more minutes of deep focus. You\'ll often find you keep going.' },
+  { moduleId: 'digital-distraction-protocol', strategyName: 'Deep Focus', category: 'technique-switch', prompt: 'Switch from screen to paper (or vice versa) for the next 5 minutes. Variety helps sustain attention.' },
+  { moduleId: 'digital-distraction-protocol', strategyName: 'Deep Focus', category: 'energy-focus', prompt: 'You\'re in the final stretch. Channel all focus into these last minutes — quality over quantity.' },
+  { moduleId: 'digital-distraction-protocol', strategyName: 'Deep Focus', category: 'energy-focus', prompt: 'Deep focus is a skill you\'re training right now. Each distraction you resist makes the next one easier.' },
+  { moduleId: 'digital-distraction-protocol', strategyName: 'Deep Focus', category: 'energy-focus', prompt: '30 minutes of real focus beats 2 hours of half-attention. Protect this time — it\'s your most valuable study tool.' },
 
-  // Metacognition (learning-radar-protocol)
-  { moduleId: 'learning-radar-protocol', strategyName: 'Metacognition', phase: 'start', prompt: 'Before diving in, ask: what\'s my plan for this session? What strategy will I use?' },
-  { moduleId: 'learning-radar-protocol', strategyName: 'Metacognition', phase: 'mid', prompt: 'Check in: is your current approach working? If not, what could you do differently right now?' },
-  { moduleId: 'learning-radar-protocol', strategyName: 'Metacognition', phase: 'push', prompt: 'What worked well in this session? What will you do differently next time?' },
+  // ─── Metacognition (learning-radar-protocol) ───
+  { moduleId: 'learning-radar-protocol', strategyName: 'Metacognition', category: 'action', prompt: 'Before diving in, ask: what\'s my plan for this session? What strategy will I use and why?' },
+  { moduleId: 'learning-radar-protocol', strategyName: 'Metacognition', category: 'action', prompt: 'Rate your understanding of the current topic: 1 (lost) to 5 (could teach it). Adjust your approach based on the number.' },
+  { moduleId: 'learning-radar-protocol', strategyName: 'Metacognition', category: 'action', prompt: 'Write down what you understand well and what confuses you. This is your roadmap for the rest of the session.' },
+  { moduleId: 'learning-radar-protocol', strategyName: 'Metacognition', category: 'check-in', prompt: 'Check in: is your current approach working? If not, what could you do differently right now?' },
+  { moduleId: 'learning-radar-protocol', strategyName: 'Metacognition', category: 'check-in', prompt: 'What strategy are you using right now? Is it the best one for this material, or are you just doing what\'s easiest?' },
+  { moduleId: 'learning-radar-protocol', strategyName: 'Metacognition', category: 'check-in', prompt: 'Are you actually learning or just feeling busy? Pause and assess — real progress means you can recall and apply.' },
+  { moduleId: 'learning-radar-protocol', strategyName: 'Metacognition', category: 'technique-switch', prompt: 'Try explaining your study strategy out loud: "I\'m doing X because Y." If you can\'t justify it, switch approaches.' },
+  { moduleId: 'learning-radar-protocol', strategyName: 'Metacognition', category: 'technique-switch', prompt: 'Zoom out for 30 seconds: what\'s the big picture of this topic? Understanding the structure helps you fill in details.' },
+  { moduleId: 'learning-radar-protocol', strategyName: 'Metacognition', category: 'technique-switch', prompt: 'If reading isn\'t clicking, try a different input: draw it, say it, or write it in your own words.' },
+  { moduleId: 'learning-radar-protocol', strategyName: 'Metacognition', category: 'energy-focus', prompt: 'What worked well in this session? What will you do differently next time? This reflection is how you level up.' },
+  { moduleId: 'learning-radar-protocol', strategyName: 'Metacognition', category: 'energy-focus', prompt: 'Being aware of HOW you learn is a superpower. You\'re building it right now by studying with intention.' },
+  { moduleId: 'learning-radar-protocol', strategyName: 'Metacognition', category: 'energy-focus', prompt: 'Top students don\'t just study harder — they study smarter by monitoring what works. That\'s exactly what you\'re doing.' },
 
-  // Exam Strategy (exam-hall-strategies-protocol)
-  { moduleId: 'exam-hall-strategies-protocol', strategyName: 'Exam Strategy', phase: 'start', prompt: 'Set a timer for practice questions — simulating exam pressure builds real readiness.' },
-  { moduleId: 'exam-hall-strategies-protocol', strategyName: 'Exam Strategy', phase: 'mid', prompt: 'Try answering one question under timed conditions, then check your answer structure.' },
-  { moduleId: 'exam-hall-strategies-protocol', strategyName: 'Exam Strategy', phase: 'push', prompt: 'Review your practice answer: did you hit all the marks? Note what to improve for next time.' },
+  // ─── Exam Strategy (exam-hall-strategies-protocol) ───
+  { moduleId: 'exam-hall-strategies-protocol', strategyName: 'Exam Strategy', category: 'action', prompt: 'Set a timer for practice questions — simulating exam pressure builds real readiness.' },
+  { moduleId: 'exam-hall-strategies-protocol', strategyName: 'Exam Strategy', category: 'action', prompt: 'Try answering one question under timed conditions, then check your answer structure against the marking scheme.' },
+  { moduleId: 'exam-hall-strategies-protocol', strategyName: 'Exam Strategy', category: 'action', prompt: 'Pick a past exam question and plan your answer for 2 minutes before writing. Planning = higher marks.' },
+  { moduleId: 'exam-hall-strategies-protocol', strategyName: 'Exam Strategy', category: 'check-in', prompt: 'Could you answer a 6-mark question on this topic right now? If not, what\'s missing from your understanding?' },
+  { moduleId: 'exam-hall-strategies-protocol', strategyName: 'Exam Strategy', category: 'check-in', prompt: 'Are you studying content or practising answers? Both matter — make sure you\'re doing enough of each.' },
+  { moduleId: 'exam-hall-strategies-protocol', strategyName: 'Exam Strategy', category: 'check-in', prompt: 'Think about mark allocation: do you know how to structure answers to maximise marks, not just knowledge?' },
+  { moduleId: 'exam-hall-strategies-protocol', strategyName: 'Exam Strategy', category: 'technique-switch', prompt: 'Try writing a model answer, then compare it with the marking scheme. Where do you lose marks?' },
+  { moduleId: 'exam-hall-strategies-protocol', strategyName: 'Exam Strategy', category: 'technique-switch', prompt: 'Practice reading questions carefully — highlight command words (describe, compare, evaluate). They tell you exactly what to do.' },
+  { moduleId: 'exam-hall-strategies-protocol', strategyName: 'Exam Strategy', category: 'technique-switch', prompt: 'Try the "examiner\'s eye" technique: read your answer as if you\'re marking it. Would you give full marks?' },
+  { moduleId: 'exam-hall-strategies-protocol', strategyName: 'Exam Strategy', category: 'energy-focus', prompt: 'Review your practice answer: did you hit all the marks? Note what to improve for next time.' },
+  { moduleId: 'exam-hall-strategies-protocol', strategyName: 'Exam Strategy', category: 'energy-focus', prompt: 'Exam readiness is built through practice, not just knowledge. Every timed question you do builds confidence.' },
+  { moduleId: 'exam-hall-strategies-protocol', strategyName: 'Exam Strategy', category: 'energy-focus', prompt: 'The students who do best aren\'t always the smartest — they\'re the ones who\'ve practised answering under pressure.' },
 ];

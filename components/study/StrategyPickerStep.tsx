@@ -34,9 +34,14 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
   onContinue,
 }) => {
   const autoSet = new Set(autoTrackedIds);
+  const learnedSet = new Set(learnedStrategyIds);
   const [selected, setSelected] = useState<Set<string>>(new Set(autoTrackedIds));
 
-  const strategies = STRATEGY_REGISTRY.filter(s => learnedStrategyIds.includes(s.moduleId));
+  // Show ALL strategies — learned ones first, then unlearned
+  const strategies = [
+    ...STRATEGY_REGISTRY.filter(s => learnedSet.has(s.moduleId)),
+    ...STRATEGY_REGISTRY.filter(s => !learnedSet.has(s.moduleId)),
+  ];
 
   const toggle = (moduleId: string) => {
     if (autoSet.has(moduleId)) return;
@@ -73,6 +78,7 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
             const Icon = STRATEGY_ICONS[strategy.moduleId] || Brain;
             const isAuto = autoSet.has(strategy.moduleId);
             const isSelected = selected.has(strategy.moduleId);
+            const isLearned = learnedSet.has(strategy.moduleId);
 
             return (
               <button
@@ -87,9 +93,16 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
               >
                 <Icon size={16} className={isSelected ? 'text-[var(--accent-hex)]' : 'text-zinc-400'} />
                 <div className="flex-1 min-w-0">
-                  <span className={`text-[13px] font-medium block ${isSelected ? 'text-zinc-800 dark:text-white' : 'text-zinc-500 dark:text-zinc-400'}`}>
-                    {strategy.strategyName}
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <span className={`text-[13px] font-medium ${isSelected ? 'text-zinc-800 dark:text-white' : 'text-zinc-500 dark:text-zinc-400'}`}>
+                      {strategy.strategyName}
+                    </span>
+                    {!isLearned && (
+                      <span className="text-[9px] font-semibold px-1.5 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-400 dark:text-zinc-500">
+                        Module not completed
+                      </span>
+                    )}
+                  </div>
                   <span className="text-[11px] text-zinc-400 dark:text-zinc-500 block truncate">
                     {strategy.description}
                   </span>

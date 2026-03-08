@@ -20,11 +20,12 @@ import { computeStreak, computeSubjectPriorities, allocateSessions, generateWeek
 import { type StudyReflection, type PointsData, type CosmeticUnlocks, type EarnedRest, type UserSettings } from '../types';
 import SubjectOnboarding from './SubjectOnboarding';
 import SpacedRepetitionTimetable from './SpacedRepetitionTimetable';
+import WarRoom from './WarRoom';
 import CAOPointsSimulator from './CAOPointsSimulator';
 
 import FlashcardSystem from './FlashcardSystem';
 import { type FlashcardData } from './FlashcardSystem';
-import ReflectionModal from './ReflectionModal';
+// ReflectionModal import removed — "Already Studied" flow gives 2 pts, no reflection
 import StudyJournalModal from './StudyJournalModal';
 import RewardShopModal from './RewardShopModal';
 import {
@@ -56,6 +57,7 @@ interface InnovationZoneProps {
   settings: UserSettings;
   updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void;
   onCosmeticUnlocksChange?: (unlocks: CosmeticUnlocks) => void;
+  onStudyNow?: (block: { subject: string; sessionType: 'new-learning' | 'practice' | 'revision'; durationMinutes: number; dateKey: string; blockId: string }) => void;
 }
 
 const STAT_ICONS: Record<StatKey, React.ElementType> = {
@@ -956,7 +958,7 @@ const ToolCard: React.FC<ToolCardProps> = ({
 
 // ─── InnovationZone ──────────────────────────────────────────────────────────
 
-const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, autoOpenJourney, savedJourneyResult, onJourneyComplete, settings, updateSetting, onCosmeticUnlocksChange }) => {
+const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, autoOpenJourney, savedJourneyResult, onJourneyComplete, settings, updateSetting, onCosmeticUnlocksChange, onStudyNow }) => {
     const [activeTool, setActiveTool] = useState<string | null>(autoOpenJourney ? 'journey' : null);
     const [subjectProfile, setSubjectProfile] = useState<StudentSubjectProfile | null>(null);
     const [showOnboarding, setShowOnboarding] = useState(false);
@@ -978,7 +980,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     earnedRestRef.current = earnedRest;
     const onCosmeticUnlocksChangeRef = useRef(onCosmeticUnlocksChange);
     onCosmeticUnlocksChangeRef.current = onCosmeticUnlocksChange;
-    const [pendingCompletion, setPendingCompletion] = useState<{ dateKey: string; blockId: string; subjectName: string; sessionType: 'new-learning' | 'practice' | 'revision' } | null>(null);
     const [showRewardShop, setShowRewardShop] = useState(false);
     const [showJournal, setShowJournal] = useState(false);
     const [flashcardData, setFlashcardData] = useState<FlashcardData>({ decks: [], reviewStreak: { currentStreak: 0, longestStreak: 0, lastReviewDate: '' }, reviewHistory: {} });
@@ -1096,50 +1097,20 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
 
     const handleToggleCompletion = useCallback(async (dateKey: string, blockId: string, completed: boolean) => {
         if (completed) {
-            const parts = blockId.split('|');
-            const subjectName = parts[0];
-            const sessionType = (parts[1] || 'new-learning') as 'new-learning' | 'practice' | 'revision';
-            setPendingCompletion({ dateKey, blockId, subjectName, sessionType });
+            // "Already Studied" flow: 2 pts flat, no reflection
+            const ALREADY_STUDIED_POINTS = 2;
+            const updatedPointsData: PointsData = {
+                totalEarned: pointsData.totalEarned + ALREADY_STUDIED_POINTS,
+                totalSpent: pointsData.totalSpent,
+            };
+            setPointsData(updatedPointsData);
+            executeToggle(dateKey, blockId, true, {
+                pointsData: updatedPointsData,
+            });
         } else {
             executeToggle(dateKey, blockId, false);
         }
-    }, [executeToggle]);
-
-    const handleReflectionSubmit = useCallback((reflectionText: string, quality?: { tier: 'basic' | 'thoughtful' | 'deep' }) => {
-        if (!pendingCompletion) return;
-        const { dateKey, blockId, subjectName, sessionType } = pendingCompletion;
-
-        // Tiered points based on reflection quality
-        const tierPoints: Record<string, number> = { basic: 10, thoughtful: 15, deep: 20 };
-        const basePoints = tierPoints[quality?.tier ?? 'basic'] ?? 10;
-        const multiplier = getStreakMultiplier(timetableStreak.currentStreak);
-        const earned = Math.round(basePoints * multiplier);
-
-        const newReflection: StudyReflection = {
-            dateKey,
-            blockId,
-            subjectName,
-            sessionType,
-            reflection: reflectionText,
-            pointsEarned: earned,
-            timestamp: Date.now(),
-        };
-
-        const updatedReflections = [...reflections, newReflection];
-        const updatedPointsData: PointsData = {
-            totalEarned: pointsData.totalEarned + earned,
-            totalSpent: pointsData.totalSpent,
-        };
-
-        setReflections(updatedReflections);
-        setPointsData(updatedPointsData);
-        setPendingCompletion(null);
-
-        executeToggle(dateKey, blockId, true, {
-            reflections: updatedReflections,
-            pointsData: updatedPointsData,
-        });
-    }, [pendingCompletion, timetableStreak.currentStreak, reflections, pointsData, getStreakMultiplier, executeToggle]);
+    }, [executeToggle, pointsData]);
 
     const handleSpendPoints = useCallback((type: 'skip-session' | 'rest-day-pass' | 'unlock-avatar' | 'unlock-theme' | 'unlock-card-style', detail?: string) => {
         const costs: Record<string, number> = {
@@ -1263,7 +1234,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         const weeksUntilExam = computeWeeksUntilExam(subjectProfile.examStartDate);
         const allocations = allocateSessions(priorities, weeksUntilExam);
         const restDaysArray = subjectProfile.restDays || [];
-        const timetable = generateWeeklyTimetable(allocations, weeksUntilExam, 0, restDaysArray);
+        const timetable = generateWeeklyTimetable(allocations, weeksUntilExam, 0, restDaysArray, subjectProfile.defaultBlockDuration ?? 45);
         const todayBlocks = timetable[todayDayIndex]?.blocks ?? [];
 
         const completedIds = timetableCompletions[todayKey] ?? [];
@@ -1312,7 +1283,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
-            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); } } }} /> : null,
+            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} onBlockDurationChange={async (_s, _t, newDuration) => { const updated = { ...subjectProfile, defaultBlockDuration: newDuration }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save block duration:', e); } } }} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); } } }} /> : null,
+        },
+        {
+            id: 'war-room', title: 'War Room', description: 'Your strategic study command centre.', icon: Target, needsProfile: true,
+            tag: 'Strategy', accentHex: '#dc2626', gridClass: 'md:col-span-2',
+            iconBg: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400',
+            accentBarColor: 'bg-red-500', tagBg: 'bg-red-100 dark:bg-red-900/30', tagText: 'text-red-700 dark:text-red-400',
+            hoverBorder: 'hover:border-red-400/50 dark:hover:border-red-500/40',
+            component: subjectProfile ? <WarRoom uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} /> : null,
         },
     ];
 
@@ -1461,16 +1440,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         )}
       </AnimatePresence>
 
-      {/* Reflection Modal */}
-      <ReflectionModal
-        isOpen={!!pendingCompletion}
-        subjectName={pendingCompletion?.subjectName ?? ''}
-        sessionType={pendingCompletion?.sessionType ?? 'new-learning'}
-        basePoints={10}
-        streakMultiplier={getStreakMultiplier(timetableStreak.currentStreak)}
-        onSubmit={handleReflectionSubmit}
-        onCancel={() => setPendingCompletion(null)}
-      />
+      {/* Reflection Modal — kept for backwards compat but no longer triggered */}
 
       {/* Study Journal Modal */}
       <StudyJournalModal

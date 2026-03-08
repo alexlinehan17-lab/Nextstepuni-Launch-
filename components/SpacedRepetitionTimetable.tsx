@@ -23,6 +23,14 @@ import {
 const MotionDiv = motion.div as any;
 const MotionButton = motion.button as any;
 
+export interface TimetableBlockInfo {
+  subject: string;
+  sessionType: 'new-learning' | 'practice' | 'revision';
+  durationMinutes: number;
+  dateKey: string;
+  blockId: string;
+}
+
 interface SpacedRepetitionTimetableProps {
   profile: StudentSubjectProfile;
   onOpenSettings: () => void;
@@ -34,6 +42,8 @@ interface SpacedRepetitionTimetableProps {
   onOpenShop?: () => void;
   onOpenJournal?: () => void;
   skippedSessions?: string[];
+  onStudyNow?: (block: TimetableBlockInfo) => void;
+  onBlockDurationChange?: (subjectName: string, sessionType: string, newDuration: number) => void;
 }
 
 // ─── Subject Color Map (literal Tailwind strings for CDN constraint) ────────
@@ -202,13 +212,14 @@ const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> =
 
 // ─── Main Component ─────────────────────────────────────────────────────────
 
-const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, points = 0, onOpenShop, onOpenJournal, skippedSessions = [] }) => {
+const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, points = 0, onOpenShop, onOpenJournal, skippedSessions = [], onStudyNow, onBlockDurationChange }) => {
   const skippedSet = useMemo(() => new Set(skippedSessions), [skippedSessions]);
   const [weekOffset, setWeekOffset] = useState(0);
   const [selectedDay, setSelectedDay] = useState(0); // For mobile view
   const [showExplainer, setShowExplainer] = useState(false);
   const [restDays, setRestDays] = useState<Set<string>>(() => new Set(profile.restDays || []));
   const [studyHoursRange, setStudyHoursRange] = useState<'week' | 'month' | 'all'>('week');
+  const [blockActionModal, setBlockActionModal] = useState<{ block: StudyBlock; dayIndex: number; blockIndex: number } | null>(null);
 
   const toggleRestDay = (day: string) => {
     setRestDays(prev => {
@@ -265,9 +276,11 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
     [priorities, weeksUntilExam, weekOffset]
   );
 
+  const blockDuration = profile.defaultBlockDuration ?? 45;
+
   const timetable = useMemo(
-    () => generateWeeklyTimetable(allocations, weeksUntilExam, weekOffset, restDaysArray),
-    [allocations, weeksUntilExam, weekOffset, restDaysArray]
+    () => generateWeeklyTimetable(allocations, weeksUntilExam, weekOffset, restDaysArray, blockDuration),
+    [allocations, weeksUntilExam, weekOffset, restDaysArray, blockDuration]
   );
 
   const weekStart = getWeekStartDate(weekOffset);
@@ -311,7 +324,41 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
     const dateKey = getDateKeyForDay(dayIndex);
     const blockId = getBlockId(block, blockIndex);
     const completed = completions[dateKey]?.includes(blockId) ?? false;
-    onToggleCompletion(dateKey, blockId, !completed);
+
+    if (completed) {
+      // Un-completing: just toggle off directly
+      onToggleCompletion(dateKey, blockId, false);
+    } else if (onStudyNow) {
+      // Show "Study Now / Already Studied" modal
+      setBlockActionModal({ block, dayIndex, blockIndex });
+    } else {
+      // Fallback: direct toggle (old behavior)
+      onToggleCompletion(dateKey, blockId, true);
+    }
+  };
+
+  const handleStudyNow = () => {
+    if (!blockActionModal || !onStudyNow) return;
+    const { block, dayIndex, blockIndex } = blockActionModal;
+    const dateKey = getDateKeyForDay(dayIndex);
+    const blockId = getBlockId(block, blockIndex);
+    setBlockActionModal(null);
+    onStudyNow({
+      subject: block.subjectName,
+      sessionType: block.sessionType,
+      durationMinutes: block.durationMinutes,
+      dateKey,
+      blockId,
+    });
+  };
+
+  const handleAlreadyStudied = () => {
+    if (!blockActionModal || !onToggleCompletion) return;
+    const { block, dayIndex, blockIndex } = blockActionModal;
+    const dateKey = getDateKeyForDay(dayIndex);
+    const blockId = getBlockId(block, blockIndex);
+    setBlockActionModal(null);
+    onToggleCompletion(dateKey, blockId, true);
   };
 
   // Today focus: compute today's day index within this week
@@ -389,6 +436,23 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
           <Clock size={12} className="text-blue-600 dark:text-blue-400" />
           <span className="text-xs font-bold text-blue-600 dark:text-blue-400">{totalHours}h {remainingMins}m</span>
         </div>
+        {/* Block duration selector */}
+        <button
+          onClick={() => {
+            const options = [25, 30, 45, 60];
+            const current = blockDuration;
+            const nextIdx = (options.indexOf(current) + 1) % options.length;
+            const next = options[nextIdx] ?? 45;
+            if (onBlockDurationChange) {
+              onBlockDurationChange('', '', next);
+            }
+          }}
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-violet-50 dark:bg-violet-900/20 border border-violet-200 dark:border-violet-700/30 hover:bg-violet-100 dark:hover:bg-violet-900/30 transition-colors cursor-pointer"
+          title="Click to change block duration"
+        >
+          <Clock size={12} className="text-violet-600 dark:text-violet-400" />
+          <span className="text-xs font-bold text-violet-600 dark:text-violet-400">{blockDuration}m blocks</span>
+        </button>
         {streak.currentStreak > 0 && (
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-700/30">
             <Flame size={12} className="text-orange-600 dark:text-orange-400" />
@@ -824,6 +888,61 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
           </p>
         </div>
       )}
+
+      {/* Study Now / Already Studied modal */}
+      <AnimatePresence>
+        {blockActionModal && (
+          <MotionDiv
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[200] bg-black/40 flex items-center justify-center p-4"
+            onClick={() => setBlockActionModal(null)}
+          >
+            <MotionDiv
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-6 w-full max-w-xs shadow-xl space-y-5"
+              onClick={(e: React.MouseEvent) => e.stopPropagation()}
+            >
+              {/* Block info */}
+              <div className="text-center space-y-2">
+                <div className="flex items-center justify-center gap-2">
+                  <div className={`w-3 h-3 rounded-full ${getSubjectColor(blockActionModal.block.subjectName).dot}`} />
+                  <h3 className="text-lg font-bold text-zinc-800 dark:text-white">{blockActionModal.block.subjectName}</h3>
+                </div>
+                <p className="text-sm text-zinc-500">
+                  {SESSION_TYPE_CONFIG[blockActionModal.block.sessionType].label} · {blockActionModal.block.durationMinutes} min
+                </p>
+              </div>
+
+              {/* Actions */}
+              <div className="space-y-3">
+                <button
+                  onClick={handleStudyNow}
+                  className="w-full py-3.5 rounded-xl text-sm font-bold bg-[var(--accent-hex)] text-white shadow-lg shadow-[rgba(var(--accent),0.25)] hover:shadow-[rgba(var(--accent),0.4)] active:scale-[0.98] transition-all"
+                >
+                  Study Now
+                </button>
+                <button
+                  onClick={handleAlreadyStudied}
+                  className="w-full py-3 rounded-xl text-sm font-medium text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-all"
+                >
+                  Already Studied (+2 pts)
+                </button>
+                <button
+                  onClick={() => setBlockActionModal(null)}
+                  className="w-full py-2 text-sm text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
+                >
+                  Cancel
+                </button>
+              </div>
+            </MotionDiv>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
