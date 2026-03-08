@@ -69,6 +69,7 @@ interface TrainingHubProps {
   onDismissGuide?: (id: string) => void;
   weeklyChallenge?: WeeklyChallengeState;
   pointsReload?: () => void;
+  onGoToStudy?: () => void;
 }
 
 const TrainingHub: React.FC<TrainingHubProps> = ({
@@ -85,6 +86,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
   onDismissGuide,
   weeklyChallenge,
   pointsReload,
+  onGoToStudy,
 }) => {
   const {
     currentRank,
@@ -301,6 +303,18 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                       />
                     </div>
                   </div>
+
+                  {/* Go to study session */}
+                  {!ch.isCompleted && !ch.isClaimed && onGoToStudy && (
+                    <MotionButton
+                      onClick={onGoToStudy}
+                      whileHover={{ scale: 1.01 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="w-full py-2.5 rounded-xl text-sm font-semibold bg-[var(--accent-hex)] text-white hover:opacity-90 transition-opacity mb-2"
+                    >
+                      Start Study Session
+                    </MotionButton>
+                  )}
 
                   {/* Action / status */}
                   {ch.isCompleted && !ch.isClaimed && (

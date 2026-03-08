@@ -1126,6 +1126,7 @@ const App: React.FC = () => {
             onDismissGuide={handleDismissGuide}
             weeklyChallenge={weeklyChallenge}
             pointsReload={pointsData.reload}
+            onGoToStudy={handleGoToStudy}
           />
         </Suspense>
       );
