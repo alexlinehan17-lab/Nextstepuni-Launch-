@@ -7,6 +7,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {
   ArrowLeft, TrendingUp, Clock, RefreshCw, Flame, BarChart3, Sparkles, Lightbulb,
+  Zap, BookOpen, Calendar, Target,
 } from 'lucide-react';
 import { type StreakData } from '../hooks/useStreak';
 import { type MoodEntry } from '../hooks/useMood';
@@ -24,6 +25,10 @@ const ICON_MAP: Record<string, React.FC<{ size?: number; className?: string }>> 
   BarChart3,
   Sparkles,
   Lightbulb,
+  Zap,
+  BookOpen,
+  Calendar,
+  Target,
 };
 
 interface InsightsViewProps {
@@ -48,9 +53,13 @@ function InsightCard({ insight, index }: { insight: Insight; index: number }) {
         insight.iconColor.includes('emerald') ? 'bg-emerald-50 dark:bg-emerald-500/10' :
         insight.iconColor.includes('blue') ? 'bg-blue-50 dark:bg-blue-500/10' :
         insight.iconColor.includes('violet') ? 'bg-violet-50 dark:bg-violet-500/10' :
+        insight.iconColor.includes('purple') ? 'bg-purple-50 dark:bg-purple-500/10' :
         insight.iconColor.includes('orange') ? 'bg-orange-50 dark:bg-orange-500/10' :
         insight.iconColor.includes('amber') ? 'bg-amber-50 dark:bg-amber-500/10' :
         insight.iconColor.includes('pink') ? 'bg-pink-50 dark:bg-pink-500/10' :
+        insight.iconColor.includes('teal') ? 'bg-teal-50 dark:bg-teal-500/10' :
+        insight.iconColor.includes('rose') ? 'bg-rose-50 dark:bg-rose-500/10' :
+        insight.iconColor.includes('indigo') ? 'bg-indigo-50 dark:bg-indigo-500/10' :
         'bg-zinc-100 dark:bg-zinc-800'
       }`}>
         <IconComponent size={18} className={insight.iconColor} />

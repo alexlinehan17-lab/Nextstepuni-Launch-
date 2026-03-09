@@ -8,7 +8,7 @@ import { CourseData } from './Library';
 import { SessionUser, getAvatarUrl } from './Auth';
 import { GraduationCap, LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, Trash2, AlertTriangle } from 'lucide-react';
 import { db } from '../firebase';
-import { collection, query, where, getDocs, doc, getDoc, deleteDoc } from 'firebase/firestore';
+import { collection, query, where, getDocs, doc, getDoc, deleteDoc, setDoc } from 'firebase/firestore';
 import { getSchoolName } from '../schoolData';
 import { UserProgress, PointsData } from '../types';
 import { StudentSubjectProfile, TimetableCompletions, TimetableStreak } from './subjectData';
@@ -21,6 +21,7 @@ import {
 } from './gc/gcTypes';
 import { GCOverview } from './gc/GCOverview';
 import { GCStudentDetail } from './gc/GCStudentDetail';
+import { generateAlerts, type DismissedAlert, type EarlyWarningAlert } from './gc/gcAlerts';
 
 const MotionDiv = motion.div as any;
 
@@ -84,6 +85,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [deleteTarget, setDeleteTarget] = useState<SessionUser | null>(null);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [dismissedAlerts, setDismissedAlerts] = useState<Record<string, DismissedAlert>>({});
 
   const handleDeleteStudent = async (user: SessionUser) => {
     setIsDeleting(true);
@@ -104,6 +106,27 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
     setIsDeleting(false);
     setDeleteTarget(null);
   };
+
+  // ── Alert dismiss handler ──
+  const handleDismissAlert = async (alert: EarlyWarningAlert) => {
+    const entry: DismissedAlert = { dismissedAt: Date.now(), metricAtDismissal: alert.metric };
+    const updated = { ...dismissedAlerts, [alert.id]: entry };
+    setDismissedAlerts(updated);
+    try {
+      await setDoc(doc(db, 'gcSettings', school), { dismissedAlerts: updated }, { merge: true });
+    } catch (err) {
+      console.error('[GCAlerts] Failed to save dismissal:', err);
+    }
+  };
+
+  // ── Compute alerts ──
+  const alerts = useMemo(
+    () => generateAlerts(studentData, dismissedAlerts),
+    [studentData, dismissedAlerts],
+  );
+
+  // ── Alerts for a specific student (used in detail tray) ──
+  const getStudentAlerts = (uid: string) => alerts.filter(a => a.studentUid === uid);
 
   // Stable random avatar seed per school
   const avatarSeed = useMemo(() => `gc-${school}-${school.length}`, [school]);
@@ -199,6 +222,14 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
           });
           setStudentNotes(notes);
         } catch { /* Permission error or no notes yet */ }
+
+        // Load dismissed alerts
+        try {
+          const settingsSnap = await getDoc(doc(db, 'gcSettings', school));
+          if (settingsSnap.exists()) {
+            setDismissedAlerts(settingsSnap.data().dismissedAlerts ?? {});
+          }
+        } catch { /* No settings yet */ }
       } catch (error) {
         console.error('Error fetching GC data:', error);
       }
@@ -297,6 +328,8 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             studentNotes={studentNotes}
             onSelectStudent={(uid) => setSelectedStudentUid(prev => prev === uid ? null : uid)}
             onDeleteStudent={setDeleteTarget}
+            alerts={alerts}
+            onDismissAlert={handleDismissAlert}
           />
         )}
       </main>
@@ -334,6 +367,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
                 onNoteSaved={(uid, notes, updatedAt) => {
                   setStudentNotes(prev => ({ ...prev, [uid]: { notes, updatedAt } }));
                 }}
+                alerts={getStudentAlerts(selectedStudent.user.uid)}
               />
             </MotionDiv>
           </>

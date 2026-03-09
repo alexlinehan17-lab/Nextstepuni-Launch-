@@ -303,6 +303,249 @@ function consistencyTrend(sessions: StudySessionRecord[]): Insight | null {
   };
 }
 
+// ── New Deep Insight Generators ────────────────────────────
+
+function strategyEffectiveness(sessions: StudySessionRecord[]): Insight | null {
+  // Compare avg session duration when a strategy was marked "Done" vs overall avg
+  if (sessions.length < 8) return null;
+
+  const overallAvg = sessions.reduce((sum, s) => sum + s.actualSeconds, 0) / sessions.length;
+  if (overallAvg < 60) return null;
+
+  let bestStrategy = '';
+  let bestDiff = 0;
+  let bestAvg = 0;
+
+  // Group sessions by which strategies were completed
+  const strategySessionDurations: Record<string, number[]> = {};
+  for (const s of sessions) {
+    if (!s.strategiesShown || s.strategiesShown.length === 0) continue;
+    for (const moduleId of s.strategiesShown) {
+      if (!strategySessionDurations[moduleId]) strategySessionDurations[moduleId] = [];
+      strategySessionDurations[moduleId].push(s.actualSeconds);
+    }
+  }
+
+  for (const [moduleId, durations] of Object.entries(strategySessionDurations)) {
+    if (durations.length < 3) continue;
+    const avg = durations.reduce((a, b) => a + b, 0) / durations.length;
+    const diff = avg - overallAvg;
+    if (diff > bestDiff) {
+      bestDiff = diff;
+      bestStrategy = moduleId;
+      bestAvg = avg;
+    }
+  }
+
+  if (!bestStrategy || bestDiff < 60) return null; // need at least 1 min difference
+
+  const pct = Math.round((bestDiff / overallAvg) * 100);
+  const name = strategyName(bestStrategy);
+
+  return {
+    id: 'strategy-effectiveness',
+    icon: 'Zap',
+    iconColor: 'text-purple-500',
+    title: `${pct}% longer sessions with ${name}`,
+    description: `You study ${Math.round(bestAvg / 60)} min on average when using ${name} vs ${Math.round(overallAvg / 60)} min overall.`,
+    category: 'strategy',
+  };
+}
+
+function sessionLengthTrend(sessions: StudySessionRecord[]): Insight | null {
+  // Compare average session length: last 2 weeks vs previous 2 weeks
+  if (sessions.length < 6) return null;
+
+  const now = Date.now();
+  const twoWeeksMs = 14 * 24 * 60 * 60 * 1000;
+
+  const recent: number[] = [];
+  const older: number[] = [];
+
+  for (const s of sessions) {
+    const age = now - s.startedAt;
+    if (age <= twoWeeksMs) {
+      recent.push(s.actualSeconds);
+    } else if (age <= twoWeeksMs * 2) {
+      older.push(s.actualSeconds);
+    }
+  }
+
+  if (recent.length < 3 || older.length < 3) return null;
+
+  const recentAvg = recent.reduce((a, b) => a + b, 0) / recent.length;
+  const olderAvg = older.reduce((a, b) => a + b, 0) / older.length;
+
+  if (olderAvg < 60) return null;
+
+  const pct = Math.round(((recentAvg - olderAvg) / olderAvg) * 100);
+  if (Math.abs(pct) < 10) return null;
+
+  if (pct > 0) {
+    return {
+      id: 'session-length-trend',
+      icon: 'TrendingUp',
+      iconColor: 'text-emerald-500',
+      title: `Sessions are ${pct}% longer`,
+      description: `Your recent sessions average ${Math.round(recentAvg / 60)} min vs ${Math.round(olderAvg / 60)} min two weeks ago. Your stamina is building.`,
+      category: 'momentum',
+    };
+  }
+
+  return {
+    id: 'session-length-trend',
+    icon: 'TrendingUp',
+    iconColor: 'text-amber-500',
+    title: `Sessions are ${Math.abs(pct)}% shorter`,
+    description: `Your recent sessions average ${Math.round(recentAvg / 60)} min vs ${Math.round(olderAvg / 60)} min two weeks ago. Try pushing for a few more minutes.`,
+    category: 'momentum',
+  };
+}
+
+function reflectionImpact(sessions: StudySessionRecord[]): Insight | null {
+  // Compare points earned in sessions with reflections vs without
+  const withReflection = sessions.filter(s => s.hadReflection);
+  const withoutReflection = sessions.filter(s => !s.hadReflection);
+
+  if (withReflection.length < 3 || withoutReflection.length < 3) return null;
+
+  const avgWith = withReflection.reduce((sum, s) => sum + s.pointsEarned, 0) / withReflection.length;
+  const avgWithout = withoutReflection.reduce((sum, s) => sum + s.pointsEarned, 0) / withoutReflection.length;
+
+  if (avgWithout < 1) return null;
+
+  const pct = Math.round(((avgWith - avgWithout) / avgWithout) * 100);
+  if (pct < 15) return null;
+
+  return {
+    id: 'reflection-impact',
+    icon: 'Sparkles',
+    iconColor: 'text-teal-500',
+    title: `Reflections boost points by ${pct}%`,
+    description: `Sessions with reflections earn ${Math.round(avgWith)} pts vs ${Math.round(avgWithout)} pts without. The few extra minutes of reflection pay off.`,
+    category: 'pattern',
+  };
+}
+
+function subjectGap(sessions: StudySessionRecord[]): Insight | null {
+  // Find subjects that haven't been studied in 7+ days
+  if (sessions.length < 5) return null;
+
+  const now = Date.now();
+  const subjectLastStudied: Record<string, number> = {};
+
+  for (const s of sessions) {
+    if (!subjectLastStudied[s.subject] || s.startedAt > subjectLastStudied[s.subject]) {
+      subjectLastStudied[s.subject] = s.startedAt;
+    }
+  }
+
+  // Only consider subjects with 3+ sessions (not one-offs)
+  const subjectCounts: Record<string, number> = {};
+  for (const s of sessions) {
+    subjectCounts[s.subject] = (subjectCounts[s.subject] || 0) + 1;
+  }
+
+  let longestGapSubject = '';
+  let longestGapDays = 0;
+
+  for (const [subject, lastTs] of Object.entries(subjectLastStudied)) {
+    if ((subjectCounts[subject] || 0) < 3) continue;
+    const daysSince = Math.floor((now - lastTs) / (24 * 60 * 60 * 1000));
+    if (daysSince >= 7 && daysSince > longestGapDays) {
+      longestGapDays = daysSince;
+      longestGapSubject = subject;
+    }
+  }
+
+  if (!longestGapSubject) return null;
+
+  return {
+    id: `subject-gap-${longestGapSubject}`,
+    icon: 'BookOpen',
+    iconColor: 'text-rose-500',
+    title: `${longestGapDays} days since ${longestGapSubject}`,
+    description: `You used to study ${longestGapSubject} regularly. A quick session this week would keep it fresh.`,
+    category: 'pattern',
+  };
+}
+
+function peakProductivityDay(sessions: StudySessionRecord[]): Insight | null {
+  // Find the day of the week with highest avg session duration
+  if (sessions.length < 10) return null;
+
+  const dayMinutes: Record<number, number[]> = {};
+  for (const s of sessions) {
+    const day = new Date(s.startedAt).getDay();
+    if (!dayMinutes[day]) dayMinutes[day] = [];
+    dayMinutes[day].push(s.actualSeconds / 60);
+  }
+
+  let bestDay = -1;
+  let bestAvg = 0;
+
+  for (const [day, mins] of Object.entries(dayMinutes)) {
+    if (mins.length < 2) continue;
+    const avg = mins.reduce((a, b) => a + b, 0) / mins.length;
+    if (avg > bestAvg) {
+      bestAvg = avg;
+      bestDay = Number(day);
+    }
+  }
+
+  if (bestDay < 0 || bestAvg < 5) return null;
+
+  return {
+    id: 'peak-day',
+    icon: 'Calendar',
+    iconColor: 'text-indigo-500',
+    title: `${getDayLabel(bestDay)}s are your power day`,
+    description: `You average ${Math.round(bestAvg)} min per session on ${getDayLabel(bestDay)}s — your most productive day of the week.`,
+    category: 'pattern',
+  };
+}
+
+function completionRate(sessions: StudySessionRecord[]): Insight | null {
+  // What % of planned session time do they actually complete?
+  if (sessions.length < 5) return null;
+
+  let totalPlanned = 0;
+  let totalActual = 0;
+
+  for (const s of sessions) {
+    totalPlanned += s.plannedMinutes * 60;
+    totalActual += s.actualSeconds;
+  }
+
+  if (totalPlanned === 0) return null;
+
+  const rate = Math.round((totalActual / totalPlanned) * 100);
+
+  if (rate >= 90) {
+    return {
+      id: 'completion-rate',
+      icon: 'Target',
+      iconColor: 'text-emerald-500',
+      title: `${rate}% session completion rate`,
+      description: `You complete almost all of your planned study time. That consistency is rare — keep it up.`,
+      category: 'momentum',
+    };
+  }
+
+  if (rate < 60) {
+    return {
+      id: 'completion-rate',
+      icon: 'Target',
+      iconColor: 'text-amber-500',
+      title: `${rate}% of planned time completed`,
+      description: `You tend to end sessions early. Try starting with shorter planned times — finishing feels good and builds momentum.`,
+      category: 'momentum',
+    };
+  }
+
+  return null;
+}
+
 // ── Priority Sort ──────────────────────────────────────────
 
 const CATEGORY_PRIORITY: Record<Insight['category'], number> = {
@@ -347,6 +590,7 @@ export function useInsights(
 
   const insights = useMemo(() => {
     const results: Insight[] = [
+      // Core insights
       monthlyVolumeChange(sessions),
       bestStudyTime(sessions),
       dormantStrategyNudge(sessions, strategyMastery),
@@ -354,11 +598,18 @@ export function useInsights(
       subjectBalance(sessions),
       moodProductivity(sessions, moodEntries),
       consistencyTrend(sessions),
+      // Deep insights
+      strategyEffectiveness(sessions),
+      sessionLengthTrend(sessions),
+      reflectionImpact(sessions),
+      subjectGap(sessions),
+      peakProductivityDay(sessions),
+      completionRate(sessions),
     ].filter((i): i is Insight => i !== null);
 
     results.sort((a, b) => CATEGORY_PRIORITY[a.category] - CATEGORY_PRIORITY[b.category]);
 
-    return results.slice(0, 5);
+    return results.slice(0, 8);
   }, [sessions, streak, moodEntries, strategyMastery]);
 
   return { insights, isLoaded };

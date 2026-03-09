@@ -11,7 +11,7 @@ import {
     ArrowLeft, ArrowRight, Zap, Clock, Shield, RotateCcw,
     TrendingUp, Users, BookOpen, BookMarked,
     Lock, Compass, Brain, HandHelping, Target, ArrowUpRight, Award, Megaphone,
-    Flame, Scale, GraduationCap, Settings, CalendarDays, Calculator, Layers, GitBranch, Wrench, Gift
+    Flame, Scale, GraduationCap, Settings, CalendarDays, Calculator, Layers, GitBranch, Wrench, Gift, Rocket
 } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -21,6 +21,7 @@ import { type StudyReflection, type PointsData, type CosmeticUnlocks, type Earne
 import SubjectOnboarding from './SubjectOnboarding';
 import SpacedRepetitionTimetable from './SpacedRepetitionTimetable';
 import WarRoom from './WarRoom';
+import ComebackEngine from './ComebackEngine';
 import CAOPointsSimulator from './CAOPointsSimulator';
 
 import FlashcardSystem from './FlashcardSystem';
@@ -1292,6 +1293,14 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             accentBarColor: 'bg-red-500', tagBg: 'bg-red-100 dark:bg-red-900/30', tagText: 'text-red-700 dark:text-red-400',
             hoverBorder: 'hover:border-red-400/50 dark:hover:border-red-500/40',
             component: subjectProfile ? <WarRoom uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} /> : null,
+        },
+        {
+            id: 'comeback', title: 'Comeback Engine', description: 'Find your quickest wins and build a comeback plan.', icon: Rocket, needsProfile: true,
+            tag: 'Comeback', accentHex: '#f97316', gridClass: 'md:col-span-2',
+            iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400',
+            accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
+            hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
+            component: subjectProfile ? <ComebackEngine uid={user!.uid} profile={subjectProfile} /> : null,
         },
     ];
 

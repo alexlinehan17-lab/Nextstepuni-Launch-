@@ -5,7 +5,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { TrendingUp, TrendingDown, Minus, AlertTriangle, Search, ChevronDown, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2 } from 'lucide-react';
+import { TrendingUp, TrendingDown, Minus, AlertTriangle, Search, ChevronDown, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2, X, AlertCircle, Eye } from 'lucide-react';
 import { CourseData } from '../Library';
 import { CategoryType } from '../KnowledgeTree';
 import { getAvatarUrl } from '../Auth';
@@ -27,6 +27,7 @@ import {
   getRecentlyActiveStudents,
   getClassMoodDistribution,
 } from './gcUtils';
+import { type EarlyWarningAlert, type AlertSeverity } from './gcAlerts';
 
 const MotionDiv = motion.div as any;
 
@@ -120,9 +121,11 @@ interface GCOverviewProps {
   studentNotes: Record<string, { notes: string; updatedAt: string }>;
   onSelectStudent: (uid: string) => void;
   onDeleteStudent?: (user: any) => void;
+  alerts?: EarlyWarningAlert[];
+  onDismissAlert?: (alert: EarlyWarningAlert) => void;
 }
 
-export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, studentNotes, onSelectStudent, onDeleteStudent }) => {
+export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, studentNotes, onSelectStudent, onDeleteStudent, alerts = [], onDismissAlert }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all');
   const [sortKey, setSortKey] = useState<SortKey>('name');
@@ -479,6 +482,94 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           <span className="text-[10px] font-bold uppercase tracking-wider text-[rgba(var(--accent),0.7)]">days to LC</span>
         </div>
       </div>
+
+      {/* ─── Early Warning Alerts ──────────────────────────────────────── */}
+      {alerts.length > 0 && (
+        <MotionDiv
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: CUSTOM_EASE }}
+          className="rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] overflow-hidden"
+        >
+          {/* Alert header */}
+          <div className="flex items-center justify-between px-5 py-3.5 border-b border-zinc-100 dark:border-zinc-800/60">
+            <div className="flex items-center gap-2.5">
+              <AlertCircle size={16} className="text-rose-500" />
+              <span className="text-sm font-semibold text-zinc-800 dark:text-white">Early Warning Signals</span>
+            </div>
+            <div className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-wider">
+              {(() => {
+                const urgent = alerts.filter(a => a.severity === 'urgent').length;
+                const watch = alerts.filter(a => a.severity === 'watch').length;
+                const nudge = alerts.filter(a => a.severity === 'nudge').length;
+                return (
+                  <>
+                    {urgent > 0 && <span className="text-rose-500">{urgent} Urgent</span>}
+                    {watch > 0 && <span className="text-amber-500">{watch} Watch</span>}
+                    {nudge > 0 && <span className="text-blue-500">{nudge} Nudge</span>}
+                  </>
+                );
+              })()}
+            </div>
+          </div>
+
+          {/* Alert cards */}
+          <div className="divide-y divide-zinc-100 dark:divide-zinc-800/40">
+            {alerts.map((alert) => {
+              const severityConfig: Record<AlertSeverity, { border: string; dot: string; bg: string }> = {
+                urgent: { border: 'border-l-rose-500', dot: 'bg-rose-500', bg: 'bg-rose-50/50 dark:bg-rose-500/5' },
+                watch: { border: 'border-l-amber-500', dot: 'bg-amber-500', bg: 'bg-amber-50/50 dark:bg-amber-500/5' },
+                nudge: { border: 'border-l-blue-500', dot: 'bg-blue-500', bg: 'bg-blue-50/50 dark:bg-blue-500/5' },
+              };
+              const cfg = severityConfig[alert.severity];
+
+              return (
+                <div
+                  key={alert.id}
+                  className={`flex items-center gap-4 px-5 py-3 border-l-[3px] ${cfg.border} ${cfg.bg} transition-colors`}
+                >
+                  {/* Avatar */}
+                  <img
+                    src={getAvatarUrl(alert.studentAvatar)}
+                    alt=""
+                    className="w-8 h-8 rounded-lg bg-zinc-200 dark:bg-zinc-700 shrink-0"
+                  />
+
+                  {/* Info */}
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm font-semibold text-zinc-800 dark:text-white truncate">{alert.studentName}</span>
+                      <span className="text-zinc-300 dark:text-zinc-600">&middot;</span>
+                      <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400 truncate">{alert.title}</span>
+                    </div>
+                    <p className="text-[11px] text-zinc-400 dark:text-zinc-500 mt-0.5 truncate">{alert.description}</p>
+                  </div>
+
+                  {/* Actions */}
+                  <div className="flex items-center gap-1.5 shrink-0">
+                    <button
+                      onClick={() => onSelectStudent(alert.studentUid)}
+                      className="px-2.5 py-1.5 rounded-lg text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                    >
+                      <Eye size={12} className="inline mr-1" />
+                      View
+                    </button>
+                    {onDismissAlert && (
+                      <button
+                        onClick={() => onDismissAlert(alert)}
+                        className="p-1.5 rounded-lg text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                        title="Dismiss (will resurface if situation worsens)"
+                      >
+                        <X size={12} />
+                      </button>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </MotionDiv>
+      )}
 
       {/* ─── KPI Cards ────────────────────────────────────────────────── */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">

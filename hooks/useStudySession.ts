@@ -13,29 +13,22 @@ import {
   type StudySessionRecord,
   STRATEGY_PROMPTS,
   STUDY_SESSION_POINTS,
+  PROMPT_INTERVAL_SECONDS,
+  PROMPT_AUTO_DISMISS_SECONDS,
 } from '../studySessionData';
 
 // ── Types ──────────────────────────────────────────────────
 
 export type SessionPhase = 'idle' | 'active' | 'paused' | 'complete';
 
-interface SelectedPrompts {
-  start: StrategyPrompt | null;
-  mid: StrategyPrompt | null;
-  push: StrategyPrompt | null;
-}
-
-interface StudySessionState {
-  phase: SessionPhase;
-  subject: string;
-  sessionType: 'new-learning' | 'practice' | 'revision';
-  plannedMinutes: number;
-  elapsedSeconds: number;
-  totalDuration: number; // planned duration in seconds
-  currentPrompt: StrategyPrompt | null;
-  basePointsEarned: number;
-  todaySessions: StudySessionRecord[];
-  todayTotalMinutes: number;
+// Fisher-Yates shuffle
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }
 
 // ── Hook ───────────────────────────────────────────────────
@@ -53,11 +46,15 @@ export function useStudySession(
   const [currentPrompt, setCurrentPrompt] = useState<StrategyPrompt | null>(null);
   const [todaySessions, setTodaySessions] = useState<StudySessionRecord[]>([]);
 
+  const [promptShownAt, setPromptShownAt] = useState<number>(0); // timestamp when current prompt appeared
+
   const intervalRef = useRef<number | null>(null);
   const startTimeRef = useRef<number>(0);
   const expectedEndRef = useRef<number>(0);
-  const promptsRef = useRef<SelectedPrompts>({ start: null, mid: null, push: null });
-  const shownPromptsRef = useRef<Set<'start' | 'mid' | 'push'>>(new Set());
+  const promptQueueRef = useRef<StrategyPrompt[]>([]);
+  const promptIndexRef = useRef<number>(0);
+  const nextPromptTimeRef = useRef<number>(0); // elapsed seconds when next prompt should show
+  const autoDismissRef = useRef<number | null>(null);
   const completedPromptsRef = useRef<Set<string>>(new Set()); // moduleIds user marked "Done"
 
   const totalDuration = plannedMinutes * 60;
@@ -82,10 +79,9 @@ export function useStudySession(
     load();
   }, [uid]);
 
-  // ── Prompt selection ──
+  // ── Build shuffled prompt queue from completed strategies ──
 
-  const selectPrompts = useCallback(() => {
-    // Find completed module IDs
+  const buildPromptQueue = useCallback(() => {
     const completedModuleIds = new Set<string>();
     for (const course of allCourses) {
       const progress = userProgress[course.id];
@@ -94,42 +90,41 @@ export function useStudySession(
       }
     }
 
-    // Filter prompts to those with matching moduleId
     const available = STRATEGY_PROMPTS.filter(p => completedModuleIds.has(p.moduleId));
-
-    const pick = (phaseKey: 'start' | 'mid' | 'push'): StrategyPrompt | null => {
-      const candidates = available.filter(p => p.phase === phaseKey);
-      if (candidates.length === 0) return null;
-      return candidates[Math.floor(Math.random() * candidates.length)];
-    };
-
-    promptsRef.current = {
-      start: pick('start'),
-      mid: pick('mid'),
-      push: pick('push'),
-    };
-    shownPromptsRef.current = new Set();
+    promptQueueRef.current = shuffle(available);
+    promptIndexRef.current = 0;
+    nextPromptTimeRef.current = 0; // show first prompt immediately
     completedPromptsRef.current = new Set();
   }, [userProgress, allCourses]);
 
-  // ── Timer tick — show prompts based on elapsed percentage ──
+  // ── Show next prompt from queue ──
 
-  const updatePrompt = useCallback((elapsed: number, total: number) => {
-    const pct = total > 0 ? elapsed / total : 0;
-    const shown = shownPromptsRef.current;
-    const prompts = promptsRef.current;
+  const showNextPrompt = useCallback(() => {
+    const queue = promptQueueRef.current;
+    const idx = promptIndexRef.current;
+    if (idx >= queue.length) return; // no more prompts
 
-    if (pct >= 0.75 && !shown.has('push') && prompts.push) {
-      setCurrentPrompt(prompts.push);
-      shown.add('push');
-    } else if (pct >= 0.40 && !shown.has('mid') && prompts.mid) {
-      setCurrentPrompt(prompts.mid);
-      shown.add('mid');
-    } else if (pct >= 0 && !shown.has('start') && prompts.start) {
-      setCurrentPrompt(prompts.start);
-      shown.add('start');
-    }
+    setCurrentPrompt(queue[idx]);
+    setPromptShownAt(Date.now());
+    promptIndexRef.current = idx + 1;
+    nextPromptTimeRef.current += PROMPT_INTERVAL_SECONDS;
+
+    // Auto-dismiss after 30s
+    if (autoDismissRef.current) clearTimeout(autoDismissRef.current);
+    autoDismissRef.current = window.setTimeout(() => {
+      setCurrentPrompt(null);
+      setPromptShownAt(0);
+      autoDismissRef.current = null;
+    }, PROMPT_AUTO_DISMISS_SECONDS * 1000);
   }, []);
+
+  // ── Timer tick — show prompts based on elapsed time (every ~5 min) ──
+
+  const updatePrompt = useCallback((elapsed: number) => {
+    if (elapsed >= nextPromptTimeRef.current) {
+      showNextPrompt();
+    }
+  }, [showNextPrompt]);
 
   // ── Start ──
 
@@ -139,19 +134,17 @@ export function useStudySession(
     setPlannedMinutes(minutes);
     setElapsedSeconds(0);
     setCurrentPrompt(null);
+    setPromptShownAt(0);
 
-    selectPrompts();
+    buildPromptQueue();
 
     const now = Date.now();
     startTimeRef.current = now;
     expectedEndRef.current = now + minutes * 60 * 1000;
     setPhase('active');
 
-    // Show start prompt immediately
-    if (promptsRef.current.start) {
-      setCurrentPrompt(promptsRef.current.start);
-      shownPromptsRef.current.add('start');
-    }
+    // Show first prompt immediately
+    showNextPrompt();
 
     // Start interval
     if (intervalRef.current) clearInterval(intervalRef.current);
@@ -160,15 +153,16 @@ export function useStudySession(
       const total = minutes * 60;
       const clamped = Math.min(elapsed, total);
       setElapsedSeconds(clamped);
-      updatePrompt(clamped, total);
+      updatePrompt(clamped);
 
       if (clamped >= total) {
         if (intervalRef.current) clearInterval(intervalRef.current);
         intervalRef.current = null;
+        if (autoDismissRef.current) clearTimeout(autoDismissRef.current);
         setPhase('complete');
       }
     }, 1000);
-  }, [selectPrompts, updatePrompt]);
+  }, [buildPromptQueue, showNextPrompt, updatePrompt]);
 
   // ── Pause ──
 
@@ -194,11 +188,12 @@ export function useStudySession(
       const elapsed = Math.round((Date.now() - startTimeRef.current) / 1000);
       const clamped = Math.min(elapsed, totalDuration);
       setElapsedSeconds(clamped);
-      updatePrompt(clamped, totalDuration);
+      updatePrompt(clamped);
 
       if (clamped >= totalDuration) {
         if (intervalRef.current) clearInterval(intervalRef.current);
         intervalRef.current = null;
+        if (autoDismissRef.current) clearTimeout(autoDismissRef.current);
         setPhase('complete');
       }
     }, 1000);
@@ -220,6 +215,11 @@ export function useStudySession(
     if (currentPrompt) {
       completedPromptsRef.current.add(currentPrompt.moduleId);
       setCurrentPrompt(null);
+      setPromptShownAt(0);
+      if (autoDismissRef.current) {
+        clearTimeout(autoDismissRef.current);
+        autoDismissRef.current = null;
+      }
     }
   }, [currentPrompt]);
 
@@ -231,11 +231,12 @@ export function useStudySession(
         const elapsed = Math.round((Date.now() - startTimeRef.current) / 1000);
         const clamped = Math.min(elapsed, totalDuration);
         setElapsedSeconds(clamped);
-        updatePrompt(clamped, totalDuration);
+        updatePrompt(clamped);
 
         if (clamped >= totalDuration) {
           if (intervalRef.current) clearInterval(intervalRef.current);
           intervalRef.current = null;
+          if (autoDismissRef.current) clearTimeout(autoDismissRef.current);
           setPhase('complete');
         }
       }
@@ -249,6 +250,7 @@ export function useStudySession(
   useEffect(() => {
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
+      if (autoDismissRef.current) clearTimeout(autoDismissRef.current);
     };
   }, []);
 
@@ -308,8 +310,13 @@ export function useStudySession(
     setPhase('idle');
     setElapsedSeconds(0);
     setCurrentPrompt(null);
+    setPromptShownAt(0);
     startTimeRef.current = 0;
     expectedEndRef.current = 0;
+    if (autoDismissRef.current) {
+      clearTimeout(autoDismissRef.current);
+      autoDismissRef.current = null;
+    }
   }, []);
 
   // ── Today stats ──
@@ -317,6 +324,16 @@ export function useStudySession(
   const todayTotalMinutes = Math.round(
     todaySessions.reduce((acc, s) => acc + s.actualSeconds, 0) / 60
   );
+
+  // Dismiss prompt (user taps "Skip") — also clear auto-dismiss
+  const dismissPrompt = useCallback(() => {
+    setCurrentPrompt(null);
+    setPromptShownAt(0);
+    if (autoDismissRef.current) {
+      clearTimeout(autoDismissRef.current);
+      autoDismissRef.current = null;
+    }
+  }, []);
 
   return {
     phase,
@@ -326,6 +343,7 @@ export function useStudySession(
     elapsedSeconds,
     totalDuration,
     currentPrompt,
+    promptShownAt,
     basePointsEarned,
     todaySessions,
     todayTotalMinutes,
@@ -335,7 +353,7 @@ export function useStudySession(
     endSession,
     saveSession,
     resetSession,
-    setCurrentPrompt,
+    dismissPrompt,
     completePrompt,
     getTrackedStrategies: () => [...completedPromptsRef.current],
   };

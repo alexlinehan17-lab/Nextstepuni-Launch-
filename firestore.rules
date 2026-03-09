@@ -82,6 +82,13 @@ service cloud.firestore {
                          && schoolId == gcSchool();
     }
 
+    // GC Settings: GCs can read/write settings for their own school (dismissed alerts etc.)
+    match /gcSettings/{schoolId} {
+      allow read, write: if request.auth != null
+                         && isGC()
+                         && schoolId == gcSchool();
+    }
+
     // Kudos collection: peer encouragement notes
     match /kudos/{kudosId} {
       // Recipient can read kudos sent to them
@@ -116,6 +123,26 @@ service cloud.firestore {
                     && resource.data.toUid == request.auth.uid
                     && resource.data.status == 'pending'
                     && request.resource.data.status == 'placed';
+      allow delete: if false;
+    }
+
+    // Teach-backs collection: anonymous peer explanations
+    match /teachbacks/{teachbackId} {
+      // Same-school students can read teach-backs
+      allow read: if request.auth != null
+                  && resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
+      // Can create if: authed, authorUid is self, school matches own school
+      allow create: if request.auth != null
+                    && request.resource.data.authorUid == request.auth.uid
+                    && request.resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
+      // Same-school students can update helpfulCount only (no other fields change)
+      allow update: if request.auth != null
+                    && resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school
+                    && request.resource.data.authorUid == resource.data.authorUid
+                    && request.resource.data.school == resource.data.school
+                    && request.resource.data.subject == resource.data.subject
+                    && request.resource.data.explanation == resource.data.explanation
+                    && request.resource.data.createdAt == resource.data.createdAt;
       allow delete: if false;
     }
 

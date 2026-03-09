@@ -16,6 +16,7 @@ import { getPointsForGrade, LC_SUBJECTS } from '../subjectData';
 import { ARCHETYPES, STAT_LABELS, getStatGrade, StatKey } from '../journeySimulatorData';
 import { NORTH_STAR_CATEGORIES, VISION_CARDS, CATEGORY_COLORS } from '../../northStarData';
 import { GCStudentFullData } from './gcTypes';
+import { type EarlyWarningAlert, type AlertSeverity } from './gcAlerts';
 import {
   getOverallProgress,
   getCategoryProgress,
@@ -83,9 +84,10 @@ interface GCStudentDetailProps {
   school?: string;
   isTrayMode?: boolean;
   onNoteSaved?: (uid: string, notes: string, updatedAt: string) => void;
+  alerts?: EarlyWarningAlert[];
 }
 
-export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCourses, onBack, school, isTrayMode, onNoteSaved }) => {
+export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCourses, onBack, school, isTrayMode, onNoteSaved, alerts = [] }) => {
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
 
   const overallProgress = getOverallProgress(student.progress, allCourses);
@@ -273,6 +275,29 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                 </ul>
               </div>
             </div>
+          </div>
+        )}
+
+        {/* Early Warning Signals for this student */}
+        {alerts.length > 0 && (
+          <div className="mt-4 space-y-2">
+            {alerts.map(alert => {
+              const colors: Record<AlertSeverity, { bg: string; border: string; text: string; dot: string }> = {
+                urgent: { bg: 'bg-rose-50 dark:bg-rose-900/10', border: 'border-rose-200 dark:border-rose-800/40', text: 'text-rose-700 dark:text-rose-400', dot: 'bg-rose-500' },
+                watch: { bg: 'bg-amber-50 dark:bg-amber-900/10', border: 'border-amber-200 dark:border-amber-800/40', text: 'text-amber-700 dark:text-amber-400', dot: 'bg-amber-500' },
+                nudge: { bg: 'bg-blue-50 dark:bg-blue-900/10', border: 'border-blue-200 dark:border-blue-800/40', text: 'text-blue-700 dark:text-blue-400', dot: 'bg-blue-500' },
+              };
+              const c = colors[alert.severity];
+              return (
+                <div key={alert.id} className={`rounded-xl ${c.bg} border ${c.border} px-4 py-3 flex items-center gap-3`}>
+                  <div className={`w-2 h-2 rounded-full ${c.dot} shrink-0`} />
+                  <div className="min-w-0">
+                    <p className={`text-xs font-semibold ${c.text}`}>{alert.title}</p>
+                    <p className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5">{alert.description}</p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         )}
       </div>
