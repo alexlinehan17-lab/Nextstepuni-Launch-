@@ -10,6 +10,122 @@ import {
   toDateKey,
 } from './subjectData';
 
+// ─── SM-2 Spaced Repetition Algorithm ──────────────────────────────────────
+//
+// Based on the SuperMemo SM-2 algorithm by Piotr Wozniak.
+// Adapted for subject-level scheduling rather than individual flashcards.
+// Each subject tracks its own ease factor and optimal review interval.
+
+export interface SubjectSM2State {
+  subjectName: string;
+  easeFactor: number;     // starts 2.5, min 1.3 — how "easy" the subject is for this student
+  interval: number;       // days until next review (1, 3, 7, 14, 28, etc.)
+  repetitions: number;    // consecutive successful reviews (quality >= 3)
+  nextReviewDate: string; // ISO date "YYYY-MM-DD"
+  lastQuality: number;    // 0-5, last session quality
+}
+
+/** Initialise SM-2 state for subjects that have no history yet. */
+export function initSM2States(subjectNames: string[], today: Date = new Date()): SubjectSM2State[] {
+  const todayKey = toDateKey(today);
+  return subjectNames.map(name => ({
+    subjectName: name,
+    easeFactor: 2.5,
+    interval: 1,
+    repetitions: 0,
+    nextReviewDate: todayKey,
+    lastQuality: 0,
+  }));
+}
+
+/**
+ * Core SM-2 update. Called after a study session is completed.
+ *
+ * Quality scale (0-5):
+ *   5 — Perfect, no hesitation
+ *   4 — Correct with minor hesitation
+ *   3 — Correct but with difficulty
+ *   2 — Incorrect but close / recognised answer
+ *   1 — Incorrect, vague memory
+ *   0 — Complete blackout
+ *
+ * If quality < 3: reset repetitions (start interval over — the student needs
+ * to re-learn this material). If quality >= 3: advance the interval.
+ */
+export function updateSM2(state: SubjectSM2State, quality: number, today: Date = new Date()): SubjectSM2State {
+  const q = Math.max(0, Math.min(5, Math.round(quality)));
+
+  // Update ease factor using SM-2 formula
+  // EF' = EF + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02))
+  let newEF = state.easeFactor + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
+  newEF = Math.max(1.3, newEF); // floor at 1.3
+
+  let newInterval: number;
+  let newReps: number;
+
+  if (q < 3) {
+    // Failed — reset to beginning
+    newReps = 0;
+    newInterval = 1;
+  } else {
+    newReps = state.repetitions + 1;
+    if (newReps === 1) {
+      newInterval = 1;   // first successful review: see again tomorrow
+    } else if (newReps === 2) {
+      newInterval = 3;   // second: 3 days
+    } else {
+      // subsequent: multiply previous interval by ease factor
+      newInterval = Math.round(state.interval * newEF);
+    }
+  }
+
+  // Cap interval at 60 days for exam prep context — students shouldn't go
+  // more than ~2 months without touching a subject
+  newInterval = Math.min(60, newInterval);
+
+  const nextDate = new Date(today);
+  nextDate.setDate(nextDate.getDate() + newInterval);
+
+  return {
+    subjectName: state.subjectName,
+    easeFactor: newEF,
+    interval: newInterval,
+    repetitions: newReps,
+    nextReviewDate: toDateKey(nextDate),
+    lastQuality: q,
+  };
+}
+
+/**
+ * Derive a quality score (0-5) from study debrief data.
+ * Maps confidence gain and completion status to the SM-2 quality scale.
+ */
+export function qualityFromDebrief(
+  confidenceBefore: number, // 1-5
+  confidenceAfter: number,  // 1-5
+  completed: boolean
+): number {
+  if (!completed) return 1; // incomplete session
+
+  const gain = confidenceAfter - confidenceBefore;
+  const level = confidenceAfter;
+
+  // High confidence after + positive gain → high quality
+  if (level >= 5 && gain >= 1) return 5;
+  if (level >= 4 && gain >= 0) return 4;
+  if (level >= 3) return 3;
+  if (level >= 2) return 2;
+  return 1;
+}
+
+/**
+ * Simpler quality derivation when no debrief data exists.
+ * Just based on whether the student completed the session.
+ */
+export function qualityFromCompletion(completed: boolean): number {
+  return completed ? 4 : 1;
+}
+
 // ─── Priority Scoring ───────────────────────────────────────────────────────
 
 export interface SubjectPriority {
@@ -77,24 +193,54 @@ export interface SessionAllocation {
   priorityScore: number;
 }
 
+// ─── Sustainability Limits ──────────────────────────────────────────────────
+//
+// Study hours per week must be sustainable. Research shows diminishing returns
+// beyond ~3 hours/day for focused study. These limits scale with exam proximity.
+
+/** Maximum study blocks per weekday (school day — student has 6+ hours of classes). */
+function weekdayBlockCap(weeksUntilExam: number): number {
+  if (weeksUntilExam <= 2) return 4;  // exam crunch: ~3 hours
+  if (weeksUntilExam <= 6) return 3;  // pre-exam: ~2.25 hours
+  return 3;                            // normal: ~2.25 hours
+}
+
+/** Maximum study blocks per weekend day (no school — more time available). */
+function weekendBlockCap(weeksUntilExam: number): number {
+  if (weeksUntilExam <= 2) return 6;  // exam crunch: ~4.5 hours
+  if (weeksUntilExam <= 6) return 5;  // pre-exam: ~3.75 hours
+  return 4;                            // normal: ~3 hours
+}
+
+/** Maximum total weekly study hours based on distance from exams. */
+function maxWeeklyHours(weeksUntilExam: number): number {
+  if (weeksUntilExam <= 2) return 22;  // absolute max during crunch
+  if (weeksUntilExam <= 6) return 18;
+  if (weeksUntilExam <= 12) return 15;
+  if (weeksUntilExam <= 20) return 12;
+  return 10;                            // far from exams: sustainable base
+}
+
+// Weekend day indices: Saturday = 5, Sunday = 6 in DAYS_OF_WEEK
+const WEEKEND_INDICES = new Set([5, 6]);
+
 // Maximum ratio between the most-studied and least-studied subject.
-// e.g. 3 means the top subject gets at most 3× the sessions of the bottom.
 const MAX_SESSION_RATIO = 3;
 
 export function allocateSessions(
   priorities: SubjectPriority[],
-  weeksUntilExam: number
+  weeksUntilExam: number,
+  sm2States?: SubjectSM2State[]
 ): SessionAllocation[] {
   const intensity = computeIntensityFactor(weeksUntilExam);
   // Base: 14 sessions/week (2/day). Ramps to 21 (3/day) at max intensity
-  const totalSessions = Math.round(14 + intensity * 7);
+  let totalSessions = Math.round(14 + intensity * 7);
   const n = priorities.length;
 
   if (n === 0) return [];
 
   const totalPriority = priorities.reduce((sum, p) => sum + p.priorityScore, 0);
   if (totalPriority === 0) {
-    // Equal distribution if no priority differences
     const perSubject = Math.max(1, Math.floor(totalSessions / n));
     return priorities.map(p => ({
       subjectName: p.subjectName,
@@ -104,52 +250,93 @@ export function allocateSessions(
     }));
   }
 
-  // Log-scale the priority scores to compress extreme differences.
-  // A subject with 80× the raw score should NOT get 80× the sessions.
-  // log(1 + score) maps 0→0 and compresses large values.
-  const logScores = priorities.map(p => Math.log(1 + p.priorityScore));
+  // If we have SM-2 states, boost subjects with low ease factors (harder)
+  // and reduce sessions for subjects with long intervals (well-learned).
+  const sm2Map = new Map<string, SubjectSM2State>();
+  if (sm2States) {
+    for (const s of sm2States) sm2Map.set(s.subjectName, s);
+  }
+
+  // Compute effective scores: priority × SM-2 urgency multiplier
+  const effectiveScores = priorities.map(p => {
+    let score = p.priorityScore;
+    const sm2 = sm2Map.get(p.subjectName);
+    if (sm2) {
+      // Lower ease factor = harder = needs more sessions (boost up to 1.5×)
+      const easePenalty = Math.max(0.8, Math.min(1.5, 3.0 - sm2.easeFactor));
+      // Shorter interval = due sooner = needs more sessions this week
+      const intervalUrgency = sm2.interval <= 1 ? 1.4
+        : sm2.interval <= 3 ? 1.2
+        : sm2.interval <= 7 ? 1.0
+        : sm2.interval <= 14 ? 0.85
+        : 0.7; // well-learned, long interval — fewer sessions needed
+      score *= easePenalty * intervalUrgency;
+    }
+    return { subjectName: p.subjectName, score, priorityScore: p.priorityScore };
+  });
+
+  // Log-scale to compress extreme differences.
+  // Subjects at target (score=0) get a small maintenance allocation (0.5 sessions base).
+  const logScores = effectiveScores.map(e =>
+    e.score > 0 ? Math.log(1 + e.score) : 0
+  );
   const totalLog = logScores.reduce((sum, s) => sum + s, 0);
 
-  // Compute raw proportional shares from log-scaled scores
-  let shares = logScores.map(s => (s / totalLog) * totalSessions);
+  // Separate zero-priority subjects (at target) from active ones.
+  // Zero-priority subjects get 1 maintenance session; the rest of the budget
+  // is distributed among active subjects.
+  const zeroCount = effectiveScores.filter(e => e.score === 0).length;
+  const activeSessionBudget = Math.max(1, totalSessions - zeroCount);
 
-  // Enforce max ratio: no subject gets more than MAX_SESSION_RATIO × the minimum.
-  // We iteratively clamp until stable.
-  for (let iter = 0; iter < 10; iter++) {
-    const minShare = Math.min(...shares);
-    const maxAllowed = minShare * MAX_SESSION_RATIO;
-    let clamped = false;
-    let excess = 0;
-    let unclampedCount = 0;
+  let shares: number[];
+  if (totalLog === 0) {
+    // All subjects are at target — equal distribution
+    shares = logScores.map(() => totalSessions / n);
+  } else {
+    shares = logScores.map(s =>
+      s > 0 ? (s / totalLog) * activeSessionBudget : 1
+    );
+  }
 
-    const clampedShares = shares.map(s => {
-      if (s > maxAllowed) {
-        excess += s - maxAllowed;
-        clamped = true;
-        return maxAllowed;
-      }
-      unclampedCount++;
-      return s;
-    });
+  // Enforce max ratio (only among subjects with non-zero shares > 1)
+  const nonZeroShares = shares.filter(s => s > 1);
+  if (nonZeroShares.length > 0) {
+    for (let iter = 0; iter < 10; iter++) {
+      const minNonZero = Math.min(...shares.filter(s => s > 1));
+      const maxAllowed = minNonZero * MAX_SESSION_RATIO;
+      let clamped = false;
+      let excess = 0;
+      let unclampedCount = 0;
 
-    if (!clamped) {
-      shares = clampedShares;
-      break;
-    }
-
-    // Redistribute excess to unclamped subjects proportionally
-    if (unclampedCount > 0) {
-      const unclampedTotal = clampedShares.reduce((sum, s, i) =>
-        sum + (s < maxAllowed ? s : 0), 0);
-      shares = clampedShares.map(s => {
-        if (s < maxAllowed && unclampedTotal > 0) {
-          return s + (s / unclampedTotal) * excess;
+      const clampedShares = shares.map(s => {
+        if (s <= 1) return s; // don't clamp maintenance sessions
+        if (s > maxAllowed) {
+          excess += s - maxAllowed;
+          clamped = true;
+          return maxAllowed;
         }
+        unclampedCount++;
         return s;
       });
-    } else {
-      shares = clampedShares;
-      break;
+
+      if (!clamped) {
+        shares = clampedShares;
+        break;
+      }
+
+      if (unclampedCount > 0) {
+        const unclampedTotal = clampedShares.reduce((sum, s) =>
+          sum + (s > 1 && s < maxAllowed ? s : 0), 0);
+        shares = clampedShares.map(s => {
+          if (s > 1 && s < maxAllowed && unclampedTotal > 0) {
+            return s + (s / unclampedTotal) * excess;
+          }
+          return s;
+        });
+      } else {
+        shares = clampedShares;
+        break;
+      }
     }
   }
 
@@ -160,19 +347,17 @@ export function allocateSessions(
     priorityScore: p.priorityScore,
   }));
 
-  // Adjust total to match target (rounding may overshoot/undershoot)
+  // Adjust total to match target
   let currentTotal = allocations.reduce((sum, a) => sum + a.sessions, 0);
   while (currentTotal > totalSessions) {
-    // Remove from the subject with the most sessions (and lowest priority)
-    const maxSessions = Math.max(...allocations.map(a => a.sessions));
-    const idx = allocations.findIndex(a => a.sessions === maxSessions);
+    const maxSess = Math.max(...allocations.map(a => a.sessions));
+    const idx = allocations.findIndex(a => a.sessions === maxSess);
     if (allocations[idx].sessions > 1) {
       allocations[idx].sessions--;
       currentTotal--;
     } else break;
   }
   while (currentTotal < totalSessions) {
-    // Add to the subject with the highest priority score that has fewest sessions
     const sorted = [...allocations]
       .map((a, i) => ({ ...a, idx: i }))
       .sort((a, b) => b.priorityScore - a.priorityScore);
@@ -193,67 +378,187 @@ export function allocateSessions(
 }
 
 // ─── Weekly Timetable Generation ────────────────────────────────────────────
+//
+// Now uses SM-2 principles for spacing, weekend-aware loading, and daily caps.
 
 export function generateWeeklyTimetable(
   allocations: SessionAllocation[],
   weeksUntilExam: number,
   weekOffset: number = 0,
   restDays: string[] = [],
-  blockDuration: number = 45
+  blockDuration: number = 45,
+  sm2States?: SubjectSM2State[]
 ): WeeklyTimetable {
   const effectiveWeeks = Math.max(0, weeksUntilExam - weekOffset);
   const intensity = computeIntensityFactor(effectiveWeeks);
 
-  // Session type distribution based on proximity
-  // Far from exams: mostly new-learning. Near exams: mostly practice
-  const practiceRatio = 0.1 + intensity * 0.6; // 10% → 70%
-  const revisionRatio = 0.1 + intensity * 0.1;  // 10% → 20%
-  // Rest is new-learning
+  // Session type distribution based on SM-2 state + exam proximity
+  const sm2Map = new Map<string, SubjectSM2State>();
+  if (sm2States) {
+    for (const s of sm2States) sm2Map.set(s.subjectName, s);
+  }
 
-  // Determine available day indices (exclude rest days)
+  // Determine available days and their capacities
   const restDaySet = new Set(restDays);
-  const availableDayIndices = DAYS_OF_WEEK
-    .map((day, i) => ({ day, i }))
-    .filter(d => !restDaySet.has(d.day))
-    .map(d => d.i);
-  const numAvailable = availableDayIndices.length || 1; // fallback to at least 1
+  const dayCaps: number[] = DAYS_OF_WEEK.map((day, i) => {
+    if (restDaySet.has(day)) return 0;
+    return WEEKEND_INDICES.has(i)
+      ? weekendBlockCap(effectiveWeeks)
+      : weekdayBlockCap(effectiveWeeks);
+  });
 
-  // Build blocks for each subject
-  const allBlocks: StudyBlock[] = [];
+  // Enforce weekly hours sustainability cap
+  const maxMinutes = maxWeeklyHours(effectiveWeeks) * 60;
+  const maxTotalBlocks = Math.floor(maxMinutes / blockDuration);
+  const totalCapacity = dayCaps.reduce((s, c) => s + c, 0);
+  const effectiveCapacity = Math.min(totalCapacity, maxTotalBlocks);
+
+  // Build blocks for each subject, capped to effective capacity
+  let allBlocks: { block: StudyBlock; priority: number; subjectName: string }[] = [];
+  const totalRequested = allocations.reduce((s, a) => s + a.sessions, 0);
+  const scaleFactor = totalRequested > effectiveCapacity
+    ? effectiveCapacity / totalRequested
+    : 1;
+
   for (const alloc of allocations) {
-    for (let i = 0; i < alloc.sessions; i++) {
-      // Determine session type
-      const rand = seededRandom(hashString(alloc.subjectName) + i + weekOffset * 1000);
+    const scaledSessions = Math.max(1, Math.round(alloc.sessions * scaleFactor));
+    const sm2 = sm2Map.get(alloc.subjectName);
+
+    for (let i = 0; i < scaledSessions; i++) {
+      // Determine session type using SM-2 state, not random
       let sessionType: StudyBlock['sessionType'];
-      if (rand < practiceRatio) {
-        sessionType = 'practice';
-      } else if (rand < practiceRatio + revisionRatio) {
-        sessionType = 'revision';
+      if (sm2) {
+        // SM-2 driven: subjects with many reps → more practice/revision
+        // New subjects (few reps) → more new-learning
+        if (sm2.repetitions === 0) {
+          sessionType = 'new-learning';
+        } else if (sm2.repetitions <= 2 || sm2.easeFactor < 2.0) {
+          // Still learning or struggling — mix of revision and practice
+          sessionType = (i % 2 === 0) ? 'revision' : 'practice';
+        } else {
+          // Well-practiced — mostly practice with some revision
+          sessionType = (i % 3 === 0) ? 'revision' : 'practice';
+        }
       } else {
-        sessionType = 'new-learning';
+        // Fallback: use exam proximity
+        const practiceRatio = 0.1 + intensity * 0.6;
+        const revisionRatio = 0.1 + intensity * 0.1;
+        const rand = seededRandom(hashString(alloc.subjectName) + i + weekOffset * 1000);
+        if (rand < practiceRatio) {
+          sessionType = 'practice';
+        } else if (rand < practiceRatio + revisionRatio) {
+          sessionType = 'revision';
+        } else {
+          sessionType = 'new-learning';
+        }
       }
 
       allBlocks.push({
+        block: { subjectName: alloc.subjectName, sessionType, durationMinutes: blockDuration },
+        priority: alloc.priorityScore,
         subjectName: alloc.subjectName,
-        sessionType,
-        durationMinutes: blockDuration,
       });
     }
   }
 
-  // Distribute blocks across available days with maximum spacing
-  const dayAssignments: StudyBlock[][] = Array.from({ length: 7 }, () => []);
+  // ─── SM-2 Aware Day Assignment ──────────────────────────────────────────
+  //
+  // Goals:
+  // 1. Maximise spacing between same-subject sessions (SM-2 principle)
+  // 2. Weekend days get more blocks (student has no school)
+  // 3. No day exceeds its cap
+  // 4. Higher-priority subjects placed first (best slots)
 
-  for (const alloc of allocations) {
-    const subjectBlocks = allBlocks.filter(b => b.subjectName === alloc.subjectName);
-    const count = subjectBlocks.length;
+  const dayAssignments: StudyBlock[][] = Array.from({ length: 7 }, () => []);
+  const dayLoads: number[] = Array(7).fill(0);
+
+  // Sort subjects by priority (highest first) for placement precedence
+  const subjectGroups = new Map<string, typeof allBlocks>();
+  for (const entry of allBlocks) {
+    if (!subjectGroups.has(entry.subjectName)) subjectGroups.set(entry.subjectName, []);
+    subjectGroups.get(entry.subjectName)!.push(entry);
+  }
+
+  const sortedSubjects = [...subjectGroups.entries()]
+    .sort((a, b) => b[1][0].priority - a[1][0].priority);
+
+  // Available day indices (not rest days)
+  const availableDayIndices = DAYS_OF_WEEK
+    .map((day, i) => ({ day, i }))
+    .filter(d => !restDaySet.has(d.day))
+    .map(d => d.i);
+
+  if (availableDayIndices.length === 0) {
+    return DAYS_OF_WEEK.map(day => ({ day, blocks: [] }));
+  }
+
+  for (const [subjectName, entries] of sortedSubjects) {
+    const count = entries.length;
     if (count === 0) continue;
 
-    // Evenly space across available days only
+    // Compute optimal spacing: spread sessions as far apart as possible
+    // SM-2 interval tells us the ideal gap between reviews
+    const sm2 = sm2Map.get(subjectName);
+    const idealGap = sm2
+      ? Math.max(1, Math.min(sm2.interval, Math.floor(availableDayIndices.length / count)))
+      : Math.max(1, Math.floor(availableDayIndices.length / count));
+
+    // Place sessions with maximum spacing, respecting daily caps
+    // Start position varies per subject to avoid all subjects clustering on the same days
+    const startOffset = hashString(subjectName) % availableDayIndices.length;
+
+    const placedDays: number[] = [];
     for (let i = 0; i < count; i++) {
-      const slotIndex = (Math.floor((i * numAvailable) / count) + hashString(alloc.subjectName) % Math.max(1, numAvailable)) % numAvailable;
-      const dayIndex = availableDayIndices[slotIndex];
-      dayAssignments[dayIndex].push(subjectBlocks[i]);
+      // Ideal slot: spaced by idealGap from the start offset
+      const idealSlotIdx = (startOffset + i * idealGap) % availableDayIndices.length;
+
+      // Find the best available day near the ideal slot
+      let bestDay = -1;
+      let bestScore = -Infinity;
+
+      for (let search = 0; search < availableDayIndices.length; search++) {
+        const slotIdx = (idealSlotIdx + search) % availableDayIndices.length;
+        const dayIdx = availableDayIndices[slotIdx];
+
+        // Skip if day is at capacity
+        if (dayLoads[dayIdx] >= dayCaps[dayIdx]) continue;
+
+        // Score this slot: prefer days that are far from other sessions of same subject
+        let minDistToSame = availableDayIndices.length; // max possible
+        for (const pd of placedDays) {
+          const dist = Math.min(
+            Math.abs(dayIdx - pd),
+            7 - Math.abs(dayIdx - pd) // wrap-around distance
+          );
+          minDistToSame = Math.min(minDistToSame, dist);
+        }
+
+        // Prefer: (1) maximum distance from same subject, (2) closer to ideal slot,
+        // (3) lighter load days, (4) weekend days (more free time)
+        const distFromIdeal = Math.min(search, availableDayIndices.length - search);
+        const loadPenalty = dayLoads[dayIdx] * 0.5;
+        // Weekend bonus: prefer placing blocks on Sat/Sun since student has no school.
+        // Scale by how full the day is relative to cap — fuller weekends get less bonus.
+        const isWeekend = WEEKEND_INDICES.has(dayIdx);
+        const remainingCapRatio = dayCaps[dayIdx] > 0 ? 1 - (dayLoads[dayIdx] / dayCaps[dayIdx]) : 0;
+        const weekendBonus = isWeekend ? 3 * remainingCapRatio : 0;
+        const score = minDistToSame * 10 - distFromIdeal - loadPenalty + weekendBonus;
+
+        if (score > bestScore) {
+          bestScore = score;
+          bestDay = dayIdx;
+        }
+      }
+
+      // Fallback: if no day has capacity, find the least loaded day
+      if (bestDay === -1) {
+        bestDay = availableDayIndices.reduce((best, di) =>
+          dayLoads[di] < dayLoads[best] ? di : best, availableDayIndices[0]);
+      }
+
+      dayAssignments[bestDay].push(entries[i].block);
+      dayLoads[bestDay]++;
+      placedDays.push(bestDay);
     }
   }
 
