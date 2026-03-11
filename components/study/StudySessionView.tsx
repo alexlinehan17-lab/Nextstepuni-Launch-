@@ -6,6 +6,8 @@
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, BookOpen, Target, RotateCcw, Play, Pause, Clock, Sparkles, Zap, X, ChevronRight, Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck, Trophy, CalendarCheck } from 'lucide-react';
+import { doc, updateDoc, arrayUnion } from 'firebase/firestore';
+import { db } from '../../firebase';
 import { type SessionUser } from '../Auth';
 import { type StudentSubjectProfile } from '../subjectData';
 import { type UserProgress, type StrategyMasteryMap, type MasteryTier } from '../../types';
@@ -17,6 +19,7 @@ import { getSubjectColor, getSubjectStroke, DURATION_PRESETS } from '../../study
 import StrategyPickerStep from './StrategyPickerStep';
 import ReflectionModal from '../ReflectionModal';
 import { scoreReflection, REFLECTION_TIER_POINTS } from '../ReflectionModal';
+import StudyDebrief, { type DebriefEntry } from '../StudyDebrief';
 import { type WeeklyChallengeState } from '../../hooks/useWeeklyChallenge';
 import { useTeachBack } from '../../hooks/useTeachBack';
 import { TeachBackReadCard, TeachBackWriteCard } from './TeachBackCard';
@@ -128,6 +131,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
   // Reflection modal
   const [reflectionOpen, setReflectionOpen] = useState(false);
+  const [debriefOpen, setDebriefOpen] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
 
   // Teach-back state
@@ -256,6 +260,34 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     pointsReload();
     onStrategyMasteryRecompute?.();
     weeklyChallenge?.reload();
+    setIsSaving(false);
+    setPickerDone(false);
+    setSelectedStrategies([]);
+    session.resetSession();
+  };
+
+  const handleDebriefSubmit = async (entry: Omit<DebriefEntry, 'id' | 'date'>) => {
+    setIsSaving(true);
+    const fullEntry: DebriefEntry = {
+      ...entry,
+      id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+      date: new Date().toISOString().split('T')[0],
+    };
+    // Save session first (with a small reflection bonus for completing debrief)
+    await session.saveSession(10, selectedStrategies);
+    // Save debrief entry
+    try {
+      await updateDoc(doc(db, 'progress', user.uid), {
+        studyDebriefs: arrayUnion(fullEntry),
+      });
+    } catch (e) {
+      console.error('Failed to save debrief:', e);
+    }
+    completeTimetableBlock();
+    pointsReload();
+    onStrategyMasteryRecompute?.();
+    weeklyChallenge?.reload();
+    setDebriefOpen(false);
     setIsSaving(false);
     setPickerDone(false);
     setSelectedStrategies([]);
@@ -815,9 +847,16 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           {/* Actions */}
           <div className="space-y-3">
             <button
+              onClick={() => setDebriefOpen(true)}
+              disabled={isSaving}
+              className="w-full py-3.5 rounded-xl text-sm font-bold bg-teal-500 text-white shadow-lg shadow-teal-500/25 hover:shadow-teal-500/40 active:scale-[0.98] transition-all disabled:opacity-50"
+            >
+              Quick Debrief (+10 pts)
+            </button>
+            <button
               onClick={() => setReflectionOpen(true)}
               disabled={isSaving}
-              className="w-full py-3.5 rounded-xl text-sm font-bold bg-[var(--accent-hex)] text-white shadow-lg shadow-[rgba(var(--accent),0.25)] hover:shadow-[rgba(var(--accent),0.4)] active:scale-[0.98] transition-all disabled:opacity-50"
+              className="w-full py-3 rounded-xl text-sm font-medium text-[var(--accent-hex)] bg-[rgba(var(--accent),0.08)] hover:bg-[rgba(var(--accent),0.15)] transition-all disabled:opacity-50"
             >
               Write a Reflection (+10-20 pts)
             </button>
@@ -830,6 +869,16 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
             </button>
           </div>
         </MotionDiv>
+
+        {/* Study Debrief Modal */}
+        <StudyDebrief
+          isOpen={debriefOpen}
+          subject={session.subject}
+          sessionType={session.sessionType}
+          durationMinutes={actualMinutes}
+          onSubmit={handleDebriefSubmit}
+          onSkip={() => { setDebriefOpen(false); handleSkipReflection(); }}
+        />
 
         {/* Reflection Modal */}
         <ReflectionModal

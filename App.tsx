@@ -20,6 +20,7 @@ import { onAuthStateChanged, signOut, User as FirebaseUser } from 'firebase/auth
 import { doc, getDoc, setDoc, updateDoc, increment } from 'firebase/firestore';
 import { ModuleProgress, UserProgress, UserSettings, NorthStar } from './types';
 import { moduleComponents, InnovationZone } from './moduleRegistry';
+import { useToast } from './components/Toast';
 import { ALL_COURSES, categoryTitles, SUBJECT_TO_MODULE } from './courseData';
 import { useSettings } from './hooks/useSettings';
 import { useStreak, StreakData } from './hooks/useStreak';
@@ -476,6 +477,7 @@ const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose
 
 
 const App: React.FC = () => {
+  const { showToast } = useToast();
   const [viewState, setViewState] = useState<'tree' | 'category' | 'module' | 'innovation-zone' | 'dashboard' | 'learning-paths' | 'onboarding' | 'my-journey' | 'gamification-hub' | 'study-session' | 'insights'>('tree');
   const [currentCategory, setCurrentCategory] = useState<CategoryType | null>(null);
   const [currentModuleId, setCurrentModuleId] = useState<string | null>(null);
@@ -696,10 +698,29 @@ const App: React.FC = () => {
               setNeedsOnboarding(true);
             }
           } else {
-             // This can happen if user creation was interrupted. Log them out.
-            await signOut(auth);
-            setUser(null);
-            setUserProgress({});
+            // User creation was interrupted — Firebase auth exists but no Firestore profile.
+            // Attempt to recover by creating a minimal profile from the auth data.
+            try {
+              const recoveredName = firebaseUser.email?.split('@')[0] || 'Student';
+              await setDoc(doc(db, 'users', firebaseUser.uid), {
+                name: recoveredName,
+                avatar: 'Charlie',
+                school: '',
+              });
+              setUser({
+                uid: firebaseUser.uid,
+                name: recoveredName,
+                avatar: 'Charlie',
+                isAdmin: false,
+              });
+              setUserProgress({});
+              setNeedsOnboarding(true);
+            } catch (recoveryError) {
+              console.error('Failed to recover orphaned account:', recoveryError);
+              await signOut(auth);
+              setUser(null);
+              setUserProgress({});
+            }
           }
         } catch (error) {
            console.error("Error fetching user data:", error);
@@ -787,6 +808,7 @@ const App: React.FC = () => {
       gamification.reload();
     } catch (error) {
       console.error("Failed to save progress:", error);
+      showToast('Couldn\'t save your progress — check your connection', 'error');
     }
   };
 
@@ -900,6 +922,7 @@ const App: React.FC = () => {
       await setDoc(progressDocRef, saveData, { merge: true });
     } catch (error) {
       console.error('Failed to save subject profile:', error);
+      showToast('Couldn\'t save — check your connection', 'error');
     }
     setStudentProfile(profile);
     setNeedsOnboarding(false);
@@ -915,6 +938,7 @@ const App: React.FC = () => {
       await setDoc(progressDocRef, { northStar: ns }, { merge: true });
     } catch (error) {
       console.error('Failed to save North Star:', error);
+      showToast('Couldn\'t save — check your connection', 'error');
     }
   };
 
@@ -933,6 +957,7 @@ const App: React.FC = () => {
       await setDoc(progressDocRef, { subjectProfile: profile }, { merge: true });
     } catch (error) {
       console.error('Failed to save updated subject profile:', error);
+      showToast('Couldn\'t save — check your connection', 'error');
     }
   };
 
@@ -1115,6 +1140,7 @@ const App: React.FC = () => {
                 await setDoc(progressRef, { timetableCompletions: updated }, { merge: true });
               } catch (e) {
                 console.error('Failed to auto-complete timetable block:', e);
+                showToast('Couldn\'t save — check your connection', 'error');
               }
               setTimetableBlockContext(null);
             }}

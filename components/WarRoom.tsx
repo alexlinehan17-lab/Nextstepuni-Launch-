@@ -4,6 +4,7 @@
  */
 
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import { useToast } from './Toast';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Clock, Map, TrendingUp, Target, Plus, X, ChevronDown,
@@ -102,6 +103,7 @@ function gradeToPoints(grade: string): number {
 // ── Main Component ─────────────────────────────────────────
 
 const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions }) => {
+  const { showToast } = useToast();
   const [activePanel, setActivePanel] = useState(0);
   const [warRoomData, setWarRoomData] = useState<WarRoomData>({ topicMap: {}, mockResults: [] });
   const [studySessions, setStudySessions] = useState<StudySessionRecord[]>([]);
@@ -135,7 +137,7 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
     setWarRoomData(prev => {
       const next = { ...prev, topicMap };
       setDoc(doc(db, 'progress', uid), { warRoom: next }, { merge: true })
-        .catch(e => console.error('Failed to save topic map:', e));
+        .catch(e => { console.error('Failed to save topic map:', e); showToast('Couldn\'t save — check your connection', 'error'); });
       return next;
     });
   }, [uid]);
@@ -144,7 +146,7 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
     setWarRoomData(prev => {
       const next = { ...prev, mockResults };
       setDoc(doc(db, 'progress', uid), { warRoom: next }, { merge: true })
-        .catch(e => console.error('Failed to save mock results:', e));
+        .catch(e => { console.error('Failed to save mock results:', e); showToast('Couldn\'t save — check your connection', 'error'); });
       return next;
     });
   }, [uid]);

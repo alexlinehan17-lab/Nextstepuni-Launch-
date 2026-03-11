@@ -5,13 +5,15 @@
 */
 
 import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react';
+import { useToast } from './Toast';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     ArrowLeft, ArrowRight, Zap, Clock, Shield, RotateCcw,
     TrendingUp, Users, BookOpen, BookMarked,
     Lock, Compass, Brain, HandHelping, Target, ArrowUpRight, Award, Megaphone,
-    Flame, Scale, GraduationCap, Settings, CalendarDays, Calculator, Layers, GitBranch, Wrench, Gift, Rocket
+    Flame, Scale, GraduationCap, Settings, CalendarDays, Calculator, Layers, GitBranch, Wrench, Gift, Rocket,
+    Map, Dna, Milestone, ScanSearch
 } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -24,6 +26,11 @@ import WarRoom from './WarRoom';
 import ComebackEngine from './ComebackEngine';
 import CAOPointsSimulator from './CAOPointsSimulator';
 
+import FutureFinder from './FutureFinder';
+import PointsPassport from './PointsPassport';
+import FirstGenIntel from './FirstGenIntel';
+import LearningDNA from './LearningDNA';
+import SyllabusXRay from './SyllabusXRay';
 import FlashcardSystem from './FlashcardSystem';
 import { type FlashcardData } from './FlashcardSystem';
 // ReflectionModal import removed — "Already Studied" flow gives 2 pts, no reflection
@@ -559,6 +566,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                     }, { merge: true });
                 } catch (e) {
                     console.error('Failed to save journey result:', e);
+                    showToast('Couldn\'t save — check your connection', 'error');
                 }
             };
             saveResult();
@@ -957,9 +965,28 @@ const ToolCard: React.FC<ToolCardProps> = ({
     </MotionDiv>
 );
 
+// ─── Data Validation Helpers ─────────────────────────────────────────────────
+
+/** Ensures a value is a finite number, falling back to a default. */
+function safeNum(val: unknown, fallback: number = 0): number {
+    if (typeof val === 'number' && Number.isFinite(val)) return val;
+    return fallback;
+}
+
+/** Validates PointsData from Firestore, ensuring no NaN or undefined values. */
+function validatePointsData(raw: unknown): PointsData {
+    if (!raw || typeof raw !== 'object') return { totalEarned: 0, totalSpent: 0 };
+    const obj = raw as Record<string, unknown>;
+    return {
+        totalEarned: safeNum(obj.totalEarned),
+        totalSpent: safeNum(obj.totalSpent),
+    };
+}
+
 // ─── InnovationZone ──────────────────────────────────────────────────────────
 
 const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, autoOpenJourney, savedJourneyResult, onJourneyComplete, settings, updateSetting, onCosmeticUnlocksChange, onStudyNow }) => {
+    const { showToast } = useToast();
     const [activeTool, setActiveTool] = useState<string | null>(autoOpenJourney ? 'journey' : null);
     const [subjectProfile, setSubjectProfile] = useState<StudentSubjectProfile | null>(null);
     const [showOnboarding, setShowOnboarding] = useState(false);
@@ -1013,9 +1040,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     if (data.reflections) {
                         setReflections(data.reflections as StudyReflection[]);
                     }
-                    if (data.pointsData) {
-                        setPointsData(data.pointsData as PointsData);
-                    }
+                    setPointsData(validatePointsData(data.pointsData));
                     if (data.cosmeticUnlocks) {
                         setCosmeticUnlocks({
                             avatarSeeds: [],
@@ -1051,6 +1076,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                 await setDoc(doc(db, 'progress', user.uid), { subjectProfile: profile }, { merge: true });
             } catch (e) {
                 console.error('Failed to save subject profile:', e);
+                showToast('Couldn\'t save — check your connection', 'error');
             }
         }
     }, [user?.uid, pendingToolId]);
@@ -1089,7 +1115,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     timetableCompletions: updated,
                     timetableStreak: newStreak,
                     ...extraFirestoreData,
-                }, { merge: true }).catch(e => console.error('Failed to save completions:', e));
+                }, { merge: true }).catch(e => { console.error('Failed to save completions:', e); showToast('Couldn\'t save — check your connection', 'error'); });
             }
 
             return updated;
@@ -1185,6 +1211,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                 cosmeticUnlocks: updatedCosmeticUnlocks,
             }, { merge: true }).catch(e => {
                 console.error('Failed to save purchase:', e);
+                showToast('Purchase couldn\'t be saved — check your connection', 'error');
                 // Roll back to latest ref values (may have changed since write started)
                 setPointsData(currentPoints);
                 setEarnedRest(currentEarnedRest);
@@ -1198,7 +1225,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         setFlashcardData(newData);
         if (user?.uid) {
             setDoc(doc(db, 'progress', user.uid), { flashcardDecks: newData }, { merge: true })
-                .catch(e => console.error('Failed to save flashcard data:', e));
+                .catch(e => { console.error('Failed to save flashcard data:', e); showToast('Couldn\'t save — check your connection', 'error'); });
         }
     }, [user?.uid]);
 
@@ -1210,7 +1237,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         setPointsData(updatedPointsData);
         if (user?.uid) {
             setDoc(doc(db, 'progress', user.uid), { pointsData: updatedPointsData }, { merge: true })
-                .catch(e => console.error('Failed to save flashcard points:', e));
+                .catch(e => { console.error('Failed to save flashcard points:', e); showToast('Couldn\'t save — check your connection', 'error'); });
         }
     }, [pointsData, user?.uid]);
 
@@ -1284,7 +1311,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
-            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} onBlockDurationChange={async (_s, _t, newDuration) => { const updated = { ...subjectProfile, defaultBlockDuration: newDuration }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save block duration:', e); } } }} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); } } }} /> : null,
+            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} onBlockDurationChange={async (_s, _t, newDuration) => { const updated = { ...subjectProfile, defaultBlockDuration: newDuration }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save block duration:', e); showToast('Couldn\'t save — check your connection', 'error'); } } }} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); showToast('Couldn\'t save — check your connection', 'error'); } } }} /> : null,
         },
         {
             id: 'war-room', title: 'War Room', description: 'Your strategic study command centre.', icon: Target, needsProfile: true,
@@ -1301,6 +1328,46 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
             hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
             component: subjectProfile ? <ComebackEngine uid={user!.uid} profile={subjectProfile} /> : null,
+        },
+        {
+            id: 'future-finder', title: 'Future Finder', description: 'Discover college courses that fit who you are.', icon: Compass, needsProfile: true,
+            tag: 'Career Discovery', accentHex: '#6366f1', gridClass: 'md:col-span-2',
+            iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
+            accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
+            hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
+            component: subjectProfile ? <FutureFinder uid={user!.uid} profile={subjectProfile} /> : null,
+        },
+        {
+            id: 'points-passport', title: 'Points Passport', description: 'Track your trajectory and find your fastest path to more points.', icon: Milestone, needsProfile: true,
+            tag: 'Trajectory', accentHex: '#14b8a6', gridClass: 'md:col-span-2',
+            iconBg: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400',
+            accentBarColor: 'bg-teal-500', tagBg: 'bg-teal-100 dark:bg-teal-900/30', tagText: 'text-teal-700 dark:text-teal-400',
+            hoverBorder: 'hover:border-teal-400/50 dark:hover:border-teal-500/40',
+            component: subjectProfile ? <PointsPassport uid={user!.uid} profile={subjectProfile} /> : null,
+        },
+        {
+            id: 'learning-dna', title: 'Learning DNA', description: 'Insights from your study sessions — what works for you.', icon: Dna, needsProfile: false,
+            tag: 'Insights', accentHex: '#0d9488', gridClass: 'md:col-span-2',
+            iconBg: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400',
+            accentBarColor: 'bg-teal-500', tagBg: 'bg-teal-100 dark:bg-teal-900/30', tagText: 'text-teal-700 dark:text-teal-400',
+            hoverBorder: 'hover:border-teal-400/50 dark:hover:border-teal-500/40',
+            component: <LearningDNA uid={user!.uid} />,
+        },
+        {
+            id: 'first-gen-intel', title: 'First Gen Intel', description: 'The honest guide to Irish college that nobody gives you.', icon: GraduationCap, needsProfile: false,
+            tag: 'College Prep', accentHex: '#8b5cf6', gridClass: 'md:col-span-2',
+            iconBg: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400',
+            accentBarColor: 'bg-violet-500', tagBg: 'bg-violet-100 dark:bg-violet-900/30', tagText: 'text-violet-700 dark:text-violet-400',
+            hoverBorder: 'hover:border-violet-400/50 dark:hover:border-violet-500/40',
+            component: <FirstGenIntel uid={user!.uid} />,
+        },
+        {
+            id: 'syllabus-xray', title: 'Syllabus X-Ray', description: 'See where the marks are hiding in your exams.', icon: ScanSearch, needsProfile: false,
+            tag: 'Exam Intel', accentHex: '#e11d48', gridClass: 'md:col-span-2',
+            iconBg: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400',
+            accentBarColor: 'bg-rose-500', tagBg: 'bg-rose-100 dark:bg-rose-900/30', tagText: 'text-rose-700 dark:text-rose-400',
+            hoverBorder: 'hover:border-rose-400/50 dark:hover:border-rose-500/40',
+            component: <SyllabusXRay studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
         },
     ];
 

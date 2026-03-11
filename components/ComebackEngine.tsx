@@ -4,6 +4,7 @@
  */
 
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import { useToast } from './Toast';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Rocket, ChevronRight, ChevronLeft, Trophy, TrendingUp, Zap, Target,
@@ -222,6 +223,7 @@ function generateMissions(
 // ── Main Component ─────────────────────────────────────────
 
 const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
+  const { showToast } = useToast();
   const [comebackData, setComebackData] = useState<ComebackData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [phase, setPhase] = useState<'anchor' | 'gap' | 'wins' | 'plan' | 'progress'>('anchor');
@@ -262,7 +264,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
   const saveData = useCallback((data: ComebackData) => {
     setComebackData(data);
     setDoc(doc(db, 'progress', uid), { comebackEngine: data }, { merge: true })
-      .catch(e => console.error('Failed to save comeback data:', e));
+      .catch(e => { console.error('Failed to save comeback data:', e); showToast('Couldn\'t save — check your connection', 'error'); });
   }, [uid]);
 
   // ── Anchor Setup ───────────────────────────────────────
@@ -336,7 +338,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
     setAnchorText('');
     setCustomPoints('');
     setDoc(doc(db, 'progress', uid), { comebackEngine: null }, { merge: true })
-      .catch(e => console.error('Failed to reset comeback data:', e));
+      .catch(e => { console.error('Failed to reset comeback data:', e); showToast('Couldn\'t save — check your connection', 'error'); });
   };
 
   // ── Derived values ─────────────────────────────────────
