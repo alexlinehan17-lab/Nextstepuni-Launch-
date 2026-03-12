@@ -242,19 +242,37 @@ const GlassBoxUnfolder = () => {
 };
 
 const CycleOfModelling = () => {
-    const steps = ["Break It Down", "Build It in Your Head", "Test It Mentally", "Draw It Out", "Check Your Work"];
+    const steps = [
+        { name: "Read the Problem", description: "Understand what the question is asking. Identify the object, the view, and what needs to be drawn." },
+        { name: "Build the Mental Model", description: "Picture the 3D object in your mind. Rotate it, zoom in, examine it from different angles." },
+        { name: "Plan Your Drawing", description: "Decide which views are needed, what scale to use, and where each view goes on the page." },
+        { name: "Execute", description: "Draw with precision. Use construction lines, apply projection rules, and maintain consistent proportions." },
+        { name: "Check & Verify", description: "Compare your drawing against the original. Does each view match? Are dimensions consistent?" },
+    ];
     const [activeStep, setActiveStep] = useState(0);
     return (
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Cycle of Modelling</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">This is the step-by-step process your brain goes through when you picture something in 3D.</p>
              <div className="flex justify-between mb-2">
-                {steps.map((step, i) => <div key={step} className={`w-1/5 text-center text-xs font-bold ${i <= activeStep ? 'text-cyan-600' : 'text-zinc-300'}`}>{step}</div>)}
+                {steps.map((step, i) => <div key={step.name} className={`w-1/5 text-center text-xs font-bold ${i <= activeStep ? 'text-cyan-600' : 'text-zinc-300'}`}>{step.name}</div>)}
              </div>
              <div className="w-full h-2 bg-zinc-100 dark:bg-zinc-800 rounded-full"><motion.div className="h-full bg-cyan-500 rounded-full" animate={{width: `${(activeStep / (steps.length - 1)) * 100}%`}} /></div>
+             <AnimatePresence mode="wait">
+                <motion.p
+                    key={activeStep}
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -6 }}
+                    transition={{ duration: 0.25 }}
+                    className="text-center text-sm text-zinc-600 dark:text-zinc-300 mt-4 px-4"
+                >
+                    {steps[activeStep].description}
+                </motion.p>
+             </AnimatePresence>
              <div className="flex justify-center gap-2 mt-4">
-                <button onClick={() => setActiveStep(s => Math.max(0, s-1))} className="px-3 py-1 text-xs bg-zinc-200 rounded-md">Prev</button>
-                <button onClick={() => setActiveStep(s => Math.min(steps.length-1, s+1))} className="px-3 py-1 text-xs bg-zinc-200 rounded-md">Next</button>
+                <button onClick={() => setActiveStep(s => Math.max(0, s-1))} className="px-3 py-1 text-xs bg-zinc-200 dark:bg-zinc-700 dark:text-white rounded-md">Prev</button>
+                <button onClick={() => setActiveStep(s => Math.min(steps.length-1, s+1))} className="px-3 py-1 text-xs bg-zinc-200 dark:bg-zinc-700 dark:text-white rounded-md">Next</button>
              </div>
         </div>
     );
@@ -273,7 +291,7 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
 
   return (
     <ModuleLayout
-      moduleNumber="07"
+      moduleNumber="09"
       moduleTitle="Mental Modelling"
       moduleSubtitle="The Mind's Eye Method"
       moduleDescription="Learn to see the answer in your head before you put pen to paper. In subjects like DCG and Engineering, the real skill isn't drawing — it's picturing 3D objects in your mind. This module shows you how."
@@ -288,7 +306,7 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Mind's Eye." eyebrow="Step 1" icon={Eye} theme={theme}>
-              <p>In subjects like DCG and Engineering, there's a skill nobody actually teaches you — but everyone expects you to have. It's not about what you draw; it's about what you can *see* in your head before you draw it. This is <Highlight description="Your ability to build a picture in your head — like a 3D model you can spin around, take apart, and test — all without touching a pencil." theme={theme}>Mental Modelling</Highlight>. It's the difference between blindly following steps and truly understanding the shape or mechanism you're working with.</p>
+              <p>In subjects like DCG and Engineering, there's a skill nobody actually teaches you — but everyone expects you to have. It's not about what you draw; it's about what you can <em>see</em> in your head before you draw it. This is <Highlight description="Your ability to build a picture in your head — like a 3D model you can spin around, take apart, and test — all without touching a pencil." theme={theme}>Mental Modelling</Highlight>. It's the difference between blindly following steps and truly understanding the shape or mechanism you're working with.</p>
               <p>This "seeing in your head" skill isn't just one thing. It's actually a few different skills bundled together. The big three for the Leaving Cert are: 1) <Highlight description="The ability to imagine something changing shape step by step — like picturing what happens when you slice through a 3D object, or where two shapes overlap." theme={theme}>Spatial Visualisation</Highlight>, 2) <Highlight description="Being able to spin an object around in your head quickly and accurately. This is what you need when you're drawing different views of the same object." theme={theme}>Mental Rotation</Highlight>, and 3) <Highlight description="Understanding how things look from different positions — like imagining you're standing somewhere else in the room. This is key for things like Perspective Drawing." theme={theme}>Spatial Orientation</Highlight>.</p>
             </ReadingSection>
           )}
@@ -308,7 +326,7 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
           )}
            {activeSection === 3 && (
             <ReadingSection title="The 'Mental Movie' (Eng)." eyebrow="Step 4" icon={Film} theme={theme}>
-                <p>In Engineering, it's less about picturing still shapes and more about picturing how things *move*. For Mechanisms, you need to create a <Highlight description="The ability to look at a flat diagram of a mechanism and 'press play' in your head — imagining how all the parts move together, like watching a short video in your mind." theme={theme}>"Mental Movie."</Highlight> You see a flat drawing of a windscreen wiper on the page, and you need to be able to press 'play' in your head to see how it actually moves.</p>
+                <p>In Engineering, it's less about picturing still shapes and more about picturing how things <em>move</em>. For Mechanisms, you need to create a <Highlight description="The ability to look at a flat diagram of a mechanism and 'press play' in your head — imagining how all the parts move together, like watching a short video in your mind." theme={theme}>"Mental Movie."</Highlight> You see a flat drawing of a windscreen wiper on the page, and you need to be able to press 'play' in your head to see how it actually moves.</p>
                 <p>For Materials Science, it gets even trickier. You have to picture things you can never actually see with your eyes, like the difference between a <Highlight description="A pattern for how atoms are stacked inside a metal. The way atoms are arranged determines whether a metal bends easily (like copper) or snaps. Picturing this arrangement helps you understand why different metals behave differently." theme={theme}>Face-Centred Cubic (FCC)</Highlight> and Body-Centred Cubic (BCC) crystal structure. If you can't picture how atoms are stacked, then definitions like "ductility" are just empty words you're trying to memorise without understanding.</p>
             </ReadingSection>
           )}
@@ -317,7 +335,7 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
               <p>The single biggest reason students struggle in DCG and Engineering is the <Highlight description="When you memorise the steps to draw something ('first draw this line, then this arc') without actually understanding why those steps work. You know the recipe but you don't understand the cooking." theme={theme}>"Procedural Trap."</Highlight> You end up treating geometry as a set of rules for drawing lines on paper, instead of understanding that those lines represent real 3D objects in space.</p>
               <p>The problem is that this kind of knowledge is fragile. You can perfectly copy a standard drawing from the textbook, but the moment the exam gives you something slightly different, you're lost — because you never actually understood the shape, you just memorised the steps. The examiner reports come back every year saying students make "conceptual errors" — and this is exactly what they're talking about.</p>
                <MicroCommitment theme={theme}>
-                <p>Look back at your last DCG or Engineering drawing. Can you explain *why* you drew each line, in terms of the 3D object? Or did you just follow a memorized sequence of steps?</p>
+                <p>Look back at your last DCG or Engineering drawing. Can you explain <em>why</em> you drew each line, in terms of the 3D object? Or did you just follow a memorized sequence of steps?</p>
               </MicroCommitment>
             </ReadingSection>
           )}

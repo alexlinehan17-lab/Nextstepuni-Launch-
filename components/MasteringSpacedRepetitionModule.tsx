@@ -666,10 +666,10 @@ const OptimalScheduleCalculator = () => {
                     <option value="6_months">6 Months</option>
                  </select>
              </div>
-             <div className="mt-6 p-6 bg-sky-50/50 border border-sky-200 rounded-xl text-center">
-                <p className="text-sm text-sky-800">Best gap between study sessions:</p>
-                <p className="font-bold text-2xl text-sky-600">{schedules[ri as keyof typeof schedules].gap}</p>
-                <p className="text-xs text-sky-500 mt-4"><strong>Actionable Advice:</strong> {schedules[ri as keyof typeof schedules].example}</p>
+             <div className="mt-6 p-6 bg-sky-50/50 dark:bg-sky-900/20 border border-sky-200 dark:border-sky-800 rounded-xl text-center">
+                <p className="text-sm text-sky-800 dark:text-sky-200">Best gap between study sessions:</p>
+                <p className="font-bold text-2xl text-sky-600 dark:text-sky-400">{schedules[ri as keyof typeof schedules].gap}</p>
+                <p className="text-xs text-sky-500 dark:text-sky-400 mt-4"><strong>Actionable Advice:</strong> {schedules[ri as keyof typeof schedules].example}</p>
              </div>
         </div>
     );
@@ -694,7 +694,7 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
           {activeSection === 0 && (
             <ReadingSection title="The Forgetting Curve." eyebrow="Step 1" icon={Clock} theme={theme}>
               <p>Your brain is designed to forget. This isn't a flaw -- it's actually a feature. To survive, your brain has to constantly clear out stuff it doesn't think you need. The problem is, it defaults to forgetting almost everything. This is called the <Highlight description="The natural pattern where your memory of something new fades quickly over time unless you go back and review it." theme={theme}>Forgetting Curve</Highlight>.</p>
-              <p>The curve is brutal. Without reviewing, you can lose over 50% of new information within an hour, and up to 80% within a day. This is why cramming is such a waste of time. To build lasting knowledge, you can't just put information *in* to your brain; you have to stop it from leaking *out*.</p>
+              <p>The curve is brutal. Without reviewing, you can lose over 50% of new information within an hour, and up to 80% within a day. This is why cramming is such a waste of time. To build lasting knowledge, you can't just put information <em>in</em> to your brain; you have to stop it from leaking <em>out</em>.</p>
               <ForgettingCurveVisualizer />
             </ReadingSection>
           )}

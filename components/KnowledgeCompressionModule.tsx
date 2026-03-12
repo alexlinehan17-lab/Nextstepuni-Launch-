@@ -141,7 +141,7 @@ const KnowledgeCompressionModule: React.FC<{ onBack: () => void; progress: Modul
           {activeSection === 0 && (
             <ReadingSection title="The Information Overload." eyebrow="Step 1" icon={Target} theme={theme}>
               <p>You have the best study techniques in the world. But now you face a new problem: there's too much stuff to study. A typical Leaving Cert subject has hundreds of potential topics. Trying to learn everything equally is a recipe for burnout and shallow knowledge. It's like trying to drink from a firehose.</p>
-              <p>The goal is not to cover everything; it's to cover the *right* things. To do this, you need to stop thinking like a student and start thinking like a strategic analyst. You need a system for <Highlight description="The process of sorting information based on its importance and urgency to prioritize your attention and effort." theme={theme}>Information Triage</Highlight>.</p>
+              <p>The goal is not to cover everything; it's to cover the <em>right</em> things. To do this, you need to stop thinking like a student and start thinking like a strategic analyst. You need a system for <Highlight description="The process of sorting information based on its importance and urgency to prioritize your attention and effort." theme={theme}>Information Triage</Highlight>.</p>
             </ReadingSection>
           )}
           {activeSection === 1 && (

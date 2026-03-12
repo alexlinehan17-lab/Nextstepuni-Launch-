@@ -80,7 +80,6 @@ const GradeWaterfall = () => {
       <div className="space-y-3 mb-8">
         {defaultSubjects.map((subj, idx) => {
           const pts = subjectPoints[idx];
-          const isInBestSix = bestSix.includes(pts) && bestSix.indexOf(pts) !== -1;
           const isH1 = grades[idx] === 'H1';
           const isMaths = idx === 0;
 
@@ -156,7 +155,7 @@ const MathsBonusVisualizer = () => {
             <span className="text-2xl font-bold font-mono">{mathsPts}</span>
             <span className="text-[9px] font-semibold opacity-70">POINTS</span>
           </motion.div>
-          <p className="text-xs text-zinc-400 mt-3">{GRADE_POINTS[mathsGrade]} + 25 bonus</p>
+          <p className="text-xs text-zinc-400 mt-3">{GRADE_POINTS[mathsGrade]}{['H1','H2','H3','H4','H5','H6'].includes(mathsGrade) ? ' + 25 bonus' : ''}</p>
         </div>
 
         <div className="text-center">
@@ -441,27 +440,27 @@ const SurplusCalculator = () => {
         <div>
           <label className="block text-[10px] font-semibold uppercase tracking-wider text-zinc-500 mb-2">Question Worth</label>
           <div className="flex items-center gap-2">
-            <button onClick={() => setQuestionMarks(Math.max(5, questionMarks - 5))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Minus size={14} /></button>
+            <button aria-label="Decrease" onClick={() => setQuestionMarks(Math.max(5, questionMarks - 5))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Minus size={14} /></button>
             <span className="text-2xl font-bold font-mono text-zinc-900 dark:text-white w-16 text-center">{questionMarks}</span>
-            <button onClick={() => setQuestionMarks(Math.min(100, questionMarks + 5))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Plus size={14} /></button>
+            <button aria-label="Increase" onClick={() => setQuestionMarks(Math.min(100, questionMarks + 5))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Plus size={14} /></button>
             <span className="text-xs text-zinc-400">marks</span>
           </div>
         </div>
         <div>
           <label className="block text-[10px] font-semibold uppercase tracking-wider text-zinc-500 mb-2">Marks per Point</label>
           <div className="flex items-center gap-2">
-            <button onClick={() => setMarksPerPoint(Math.max(1, marksPerPoint - 1))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Minus size={14} /></button>
+            <button aria-label="Decrease" onClick={() => setMarksPerPoint(Math.max(1, marksPerPoint - 1))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Minus size={14} /></button>
             <span className="text-2xl font-bold font-mono text-zinc-900 dark:text-white w-16 text-center">{marksPerPoint}</span>
-            <button onClick={() => setMarksPerPoint(Math.min(10, marksPerPoint + 1))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Plus size={14} /></button>
+            <button aria-label="Increase" onClick={() => setMarksPerPoint(Math.min(10, marksPerPoint + 1))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Plus size={14} /></button>
             <span className="text-xs text-zinc-400">each</span>
           </div>
         </div>
         <div>
           <label className="block text-[10px] font-semibold uppercase tracking-wider text-zinc-500 mb-2">Points You Write</label>
           <div className="flex items-center gap-2">
-            <button onClick={() => setPointsWritten(Math.max(1, pointsWritten - 1))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Minus size={14} /></button>
+            <button aria-label="Decrease" onClick={() => setPointsWritten(Math.max(1, pointsWritten - 1))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Minus size={14} /></button>
             <span className="text-2xl font-bold font-mono text-zinc-900 dark:text-white w-16 text-center">{pointsWritten}</span>
-            <button onClick={() => setPointsWritten(Math.min(20, pointsWritten + 1))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Plus size={14} /></button>
+            <button aria-label="Increase" onClick={() => setPointsWritten(Math.min(20, pointsWritten + 1))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Plus size={14} /></button>
             <span className="text-xs text-zinc-400">SRPs</span>
           </div>
         </div>
@@ -555,7 +554,7 @@ const PortfolioOptimizer = ({ savedPortfolio, onSave }: { savedPortfolio?: { sub
 
     const h1Count = filled.filter(p => p.confidence === 'H1').length;
     const riskSubjects = filled.filter(p => {
-      const d = SUBJECTS_DATA.find(d => d.name === p.subject);
+      const d = SUBJECTS_DATA.find(subj => subj.name === p.subject);
       return d && d.objectivity < 50;
     });
 

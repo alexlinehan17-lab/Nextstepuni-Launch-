@@ -184,7 +184,7 @@ const BackwardDesignSorter = () => {
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Drag the steps into the correct order for a backwards study plan.</p>
              <Reorder.Group axis="y" values={items} onReorder={setItems} className="space-y-3 max-w-sm mx-auto">
                 {items.map((item, i) => (
-                    <Reorder.Item key={item.id} value={item} className={`p-4 rounded-xl shadow-sm flex items-center gap-4 cursor-grabbing border ${item.stage === i + 1 ? 'bg-emerald-50 border-emerald-300' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700'}`}>
+                    <Reorder.Item key={item.id} value={item} className={`p-4 rounded-xl shadow-sm flex items-center gap-4 cursor-grabbing border ${item.stage === i + 1 ? 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-300 dark:border-emerald-700' : 'bg-zinc-50 dark:bg-zinc-800/50 border-zinc-200 dark:border-zinc-700'}`}>
                         <span className={`font-semibold text-2xl ${item.stage === i + 1 ? 'text-emerald-500' : 'text-zinc-300'}`}>{i + 1}</span>
                         <span className="font-bold text-zinc-700 dark:text-zinc-200">{item.text}</span>
                     </Reorder.Item>
@@ -271,7 +271,7 @@ const ReverseEngineeringModule: React.FC<{ onBack: () => void; progress: ModuleP
             <ReadingSection title="Breaking Down the Syllabus." eyebrow="Step 3" icon={ClipboardList} theme={theme}>
               <p>Before you build a schedule, you need to know exactly what you are dealing with. Start by locking in your <Highlight description="Your exam date. It is not moving, so everything gets planned around it." theme={theme}>Exam Date</Highlight> -- that is your finish line and it is not moving. Then block off a <Highlight description="The last week or two before the exam. You keep these for light review, sleep, and calming your nerves -- no cramming new stuff." theme={theme}>"Wind-Down" Period</Highlight> in the final week or two for light review, sleep, and calming your nerves -- not learning new material.</p>
               <p>Next, do a full <Highlight description="Go through every topic on the syllabus and break it into small chunks, each about one study session long (45-90 minutes)." theme={theme}>Syllabus Breakdown</Highlight>. Go through every topic and break it into bite-sized chunks, each about one study session long. "Cell Biology" is too vague -- break it into "Mitochondria," "Osmosis," and so on. Then use past papers to figure out the <Highlight description="Look at past papers and you will notice that roughly 20% of topics come up for about 80% of the marks. Focus your energy there first." theme={theme}>80/20 Rule</Highlight>: roughly 20% of topics earn about 80% of the marks. Those are the ones you hit first.</p>
-              <PersonalStory name="Aoife" role="Leaving Cert student, Limerick">
+              <PersonalStory name="Caoimhe" role="Leaving Cert student, Limerick">
                 <p>"I had this massive colour-coded timetable on my wall in January and felt so organised. By mid-February it was already in the bin. I was behind on everything and it just made me feel worse. When I tried planning backwards from the exam instead, I actually finished a topic ahead of schedule for the first time. It was such a relief to have a plan that worked with real life, not against it."</p>
               </PersonalStory>
             </ReadingSection>

@@ -267,8 +267,8 @@ const IcebergInteractive = () => {
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Success Iceberg</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Success is what people see. Process is what it takes. List the "invisible" parts of success.</p>
             <div className="max-w-md mx-auto">
-                <div className="bg-blue-100 p-4 rounded-t-2xl text-center font-bold text-blue-800">Visible Success</div>
-                <div className="bg-blue-50 p-6 rounded-b-2xl border-x-2 border-b-2 border-blue-200 min-h-[150px]">
+                <div className="bg-blue-100 dark:bg-blue-900/30 p-4 rounded-t-2xl text-center font-bold text-blue-800 dark:text-blue-300">Visible Success</div>
+                <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-b-2xl border-x-2 border-b-2 border-blue-200 dark:border-blue-800 min-h-[150px]">
                     <p className="text-sm font-bold text-zinc-600 dark:text-zinc-300 mb-2">Invisible Process:</p>
                     <ul className="list-disc list-inside text-sm text-zinc-500 dark:text-zinc-400 space-y-1">
                         {inputs.map((input, i) => <li key={i}>{input}</li>)}
@@ -335,8 +335,8 @@ const SelfEfficacyModule: React.FC<{ onBack: () => void; progress: ModuleProgres
           )}
           {activeSection === 2 && (
             <ReadingSection title="The Role Model Myth." eyebrow="Step 3" icon={Shield} theme={theme}>
-              <p>We're often told to look up to flawless heroes — the sporting legend, the genius scientist. These are <Highlight description="The kind of role model who makes everything look effortless. Inspiring on the surface, but they can actually make you feel like success is out of reach." theme={theme}>Mastery Models</Highlight>. But here's the thing: they can actually make you feel *worse* about yourself. Their success looks so effortless that the gap between where you are and where they are feels impossible to close.</p>
-              <p>The better option is to find <Highlight description="Role models who are honest about their struggles and show you how they bounced back. Way more helpful for building your own belief than watching someone who never seemed to struggle." theme={theme}>Coping Models</Highlight>. These are people who are relatable, who fail, and who show you *how* they get back up. Hearing about how even the most successful people struggled and messed up is far more motivating than just hearing about their wins. It proves that struggle is part of the path, not a sign you're on the wrong one.</p>
+              <p>We're often told to look up to flawless heroes — the sporting legend, the genius scientist. These are <Highlight description="The kind of role model who makes everything look effortless. Inspiring on the surface, but they can actually make you feel like success is out of reach." theme={theme}>Mastery Models</Highlight>. But here's the thing: they can actually make you feel <em>worse</em> about yourself. Their success looks so effortless that the gap between where you are and where they are feels impossible to close.</p>
+              <p>The better option is to find <Highlight description="Role models who are honest about their struggles and show you how they bounced back. Way more helpful for building your own belief than watching someone who never seemed to struggle." theme={theme}>Coping Models</Highlight>. These are people who are relatable, who fail, and who show you <em>how</em> they get back up. Hearing about how even the most successful people struggled and messed up is far more motivating than just hearing about their wins. It proves that struggle is part of the path, not a sign you're on the wrong one.</p>
               <RoleModelSelector/>
             </ReadingSection>
           )}

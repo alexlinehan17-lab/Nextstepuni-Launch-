@@ -18,11 +18,14 @@ export interface StudentSubject {
   targetGrade: Grade;
 }
 
+export type YearGroup = '5th' | '6th';
+
 export interface StudentSubjectProfile {
   subjects: StudentSubject[];
   examStartDate: string; // ISO date string, e.g. "2026-06-03"
   restDays: string[];    // e.g. ["Saturday", "Sunday"] — days with no study
   defaultBlockDuration?: number; // minutes per study block (default 45)
+  yearGroup?: YearGroup; // "5th" or "6th" year — used for event filtering
   createdAt: string;
   updatedAt: string;
 }

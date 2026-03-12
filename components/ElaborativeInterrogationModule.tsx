@@ -275,7 +275,7 @@ const ElaborativeInterrogationModule: React.FC<{ onBack: () => void; progress: M
           )}
            {activeSection === 3 && (
             <ReadingSection title="The Humanities Engine." eyebrow="Step 4" icon={BookCopy} theme={theme}>
-                <p>In essay subjects like History, asking "Why?" takes you from just describing what happened to explaining *why* it happened — and that's where the real marks are. Instead of just stating "Collins signed the Treaty," you ask "Why did he sign it?" The answer becomes the main argument in your essay, which instantly boosts your marks.</p>
+                <p>In essay subjects like History, asking "Why?" takes you from just describing what happened to explaining <em>why</em> it happened — and that's where the real marks are. Instead of just stating "Collins signed the Treaty," you ask "Why did he sign it?" The answer becomes the main argument in your essay, which instantly boosts your marks.</p>
                 <p>For Geography, which is built on <Highlight description="Significant Relevant Points — basically the building blocks of a Geography answer. Each SRP is a developed fact that's worth marks. The more good ones you have, the better your grade." theme={theme}>SRPs</Highlight>, asking "Why?" naturally creates the "Statement + Development" structure your teacher is always on about. Statement: "Earthquakes are common in Japan." Ask "Why?" Development: "Because Japan is on the convergence of four tectonic plates..." You've just created a perfect, two-mark SRP without even thinking about it.</p>
             </ReadingSection>
           )}

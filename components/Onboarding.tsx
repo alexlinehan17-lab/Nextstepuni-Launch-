@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff, BookOpen, Target, Clock, CalendarDays, Star } from 'lucide-react';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
+  type YearGroup,
   LC_SUBJECTS, SUBJECT_GROUP_LABELS, getGradesForLevel, getPointsForGrade,
   getGradeIndex, DAYS_OF_WEEK,
   type LCSubject,
@@ -25,19 +26,20 @@ interface OnboardingProps {
   onSkip: () => void;
 }
 
-type Step = 1 | 2 | 3 | 4 | 5 | 6 | 7;
-const TOTAL_STEPS = 7;
+type Step = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+const TOTAL_STEPS = 8;
 
 // ─── Step-specific ambient blob colors ──────────────────────────────────────
 
 const STEP_BLOBS: Record<Step, { a: string; b: string; c: string }> = {
   1: { a: 'bg-[rgba(var(--accent),0.07)]', b: 'bg-yellow-300/[0.09]', c: 'bg-orange-200/[0.08]' },
-  2: { a: 'bg-purple-300/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-amber-200/[0.06]' },
-  3: { a: 'bg-blue-300/[0.08]', b: 'bg-emerald-300/[0.07]', c: 'bg-purple-200/[0.06]' },
-  4: { a: 'bg-emerald-300/[0.08]', b: 'bg-amber-300/[0.07]', c: 'bg-blue-200/[0.06]' },
-  5: { a: 'bg-amber-300/[0.09]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-yellow-200/[0.08]' },
-  6: { a: 'bg-rose-300/[0.08]', b: 'bg-orange-200/[0.07]', c: 'bg-pink-200/[0.06]' },
-  7: { a: 'bg-emerald-300/[0.09]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-amber-200/[0.06]' },
+  2: { a: 'bg-indigo-300/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-sky-200/[0.06]' },
+  3: { a: 'bg-purple-300/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-amber-200/[0.06]' },
+  4: { a: 'bg-blue-300/[0.08]', b: 'bg-emerald-300/[0.07]', c: 'bg-purple-200/[0.06]' },
+  5: { a: 'bg-emerald-300/[0.08]', b: 'bg-amber-300/[0.07]', c: 'bg-blue-200/[0.06]' },
+  6: { a: 'bg-amber-300/[0.09]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-yellow-200/[0.08]' },
+  7: { a: 'bg-rose-300/[0.08]', b: 'bg-orange-200/[0.07]', c: 'bg-pink-200/[0.06]' },
+  8: { a: 'bg-emerald-300/[0.09]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-amber-200/[0.06]' },
 };
 
 // ─── Subject Color Map (literal Tailwind strings for CDN) ───────────────────
@@ -141,6 +143,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
 
   const [examDate, setExamDate] = useState(getDefaultExamDate());
 
+  // Year group
+  const [yearGroup, setYearGroup] = useState<YearGroup | null>(null);
+
   // North Star
   const [northStarData, setNorthStarData] = useState<NorthStar | null>(null);
 
@@ -220,6 +225,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
       subjects,
       examStartDate: examDate,
       restDays: Array.from(restDays),
+      yearGroup: yearGroup ?? '6th',
       createdAt: now,
       updatedAt: now,
     };
@@ -262,17 +268,18 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
   const canProceed = () => {
     switch (step) {
       case 1: return true;
-      case 2: return northStarData !== null;
-      case 3: return selectedSubjects.size > 0;
-      case 4: {
+      case 2: return yearGroup !== null;
+      case 3: return northStarData !== null;
+      case 4: return selectedSubjects.size > 0;
+      case 5: {
         for (const name of selectedSubjects) {
           if (!subjectConfigs[name]) return false;
         }
         return true;
       }
-      case 5: return examDate.length > 0 && getDaysUntil(examDate) > 0;
-      case 6: return restDays.size < 7;
-      case 7: return true;
+      case 6: return examDate.length > 0 && getDaysUntil(examDate) > 0;
+      case 7: return restDays.size < 7;
+      case 8: return true;
       default: return false;
     }
   };
@@ -416,9 +423,64 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 2: North Star */}
+            {/* Step 2: Year Group */}
             {step === 2 && (
               <MotionDiv key="step2" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+                <div className="flex items-center justify-center min-h-[60vh]">
+                  <div className="text-center w-full max-w-lg mx-auto p-10 rounded-3xl bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl border border-white/40 dark:border-white/[0.08] shadow-[0_8px_60px_rgba(0,0,0,0.06)] dark:shadow-[0_8px_60px_rgba(0,0,0,0.3)]">
+                    <motion.div
+                      initial={{ scale: 0.8, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+                      className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-indigo-100 dark:bg-indigo-900/40 flex items-center justify-center"
+                    >
+                      <BookOpen size={32} className="text-indigo-600 dark:text-indigo-400" />
+                    </motion.div>
+                    <motion.h2
+                      initial={{ opacity: 0, y: 12 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                      className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1"
+                    >
+                      What Year Are You In?
+                    </motion.h2>
+                    <motion.p
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                      className="text-sm text-zinc-500 dark:text-zinc-400 mb-8"
+                    >
+                      This helps us show you the right events and deadlines for your year group.
+                    </motion.p>
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                      className="flex gap-4 justify-center"
+                    >
+                      {(['5th', '6th'] as const).map(yr => (
+                        <button
+                          key={yr}
+                          onClick={() => setYearGroup(yr)}
+                          className={`w-36 py-6 rounded-2xl border-2 transition-all ${
+                            yearGroup === yr
+                              ? 'bg-indigo-50 dark:bg-indigo-900/30 border-indigo-400 dark:border-indigo-500 shadow-lg shadow-indigo-200/40 dark:shadow-indigo-900/30'
+                              : 'bg-white/80 dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500'
+                          }`}
+                        >
+                          <p className={`text-3xl font-bold mb-1 ${yearGroup === yr ? 'text-indigo-600 dark:text-indigo-400' : 'text-zinc-700 dark:text-zinc-300'}`}>{yr}</p>
+                          <p className={`text-xs font-medium ${yearGroup === yr ? 'text-indigo-500 dark:text-indigo-400' : 'text-zinc-400 dark:text-zinc-500'}`}>Year</p>
+                        </button>
+                      ))}
+                    </motion.div>
+                  </div>
+                </div>
+              </MotionDiv>
+            )}
+
+            {/* Step 3: North Star */}
+            {step === 3 && (
+              <MotionDiv key="step3" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <NorthStarOnboarding
                   onComplete={(ns) => { setNorthStarData(ns); goNext(); }}
                   initialData={northStarData}
@@ -426,9 +488,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 3: Select Subjects */}
-            {step === 3 && (
-              <MotionDiv key="step3" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+            {/* Step 4: Select Subjects */}
+            {step === 4 && (
+              <MotionDiv key="step4" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Select Your Subjects</h2>
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
                   Tap to select your Leaving Cert subjects. <span className="font-semibold text-[var(--accent-hex)]">{selectedSubjects.size} selected</span>
@@ -463,9 +525,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 4: Grade Configuration */}
-            {step === 4 && (
-              <MotionDiv key="step4" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+            {/* Step 5: Grade Configuration */}
+            {step === 5 && (
+              <MotionDiv key="step5" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Set Your Grades</h2>
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
                   For each subject, set where you are now and where you want to be.
@@ -574,9 +636,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 5: Exam Date — glass card */}
-            {step === 5 && (
-              <MotionDiv key="step5" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+            {/* Step 6: Exam Date — glass card */}
+            {step === 6 && (
+              <MotionDiv key="step6" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <div className="flex items-center justify-center min-h-[50vh]">
                   <div className="text-center w-full max-w-md mx-auto p-10 rounded-3xl bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl border border-white/40 dark:border-white/[0.08] shadow-[0_8px_60px_rgba(0,0,0,0.06)] dark:shadow-[0_8px_60px_rgba(0,0,0,0.3)]">
                     <motion.div
@@ -628,9 +690,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 6: Rest Days — glass card */}
-            {step === 6 && (
-              <MotionDiv key="step6" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+            {/* Step 7: Rest Days — glass card */}
+            {step === 7 && (
+              <MotionDiv key="step7" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <div className="flex items-center justify-center min-h-[50vh]">
                   <div className="text-center w-full max-w-lg mx-auto p-10 rounded-3xl bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl border border-white/40 dark:border-white/[0.08] shadow-[0_8px_60px_rgba(0,0,0,0.06)] dark:shadow-[0_8px_60px_rgba(0,0,0,0.3)]">
                     <motion.div
@@ -696,9 +758,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 7: Summary */}
-            {step === 7 && (
-              <MotionDiv key="step7" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+            {/* Step 8: Summary */}
+            {step === 8 && (
+              <MotionDiv key="step8" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Your Study Profile</h2>
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Here's a summary of everything you've set up.</p>
 
@@ -789,8 +851,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
         </div>
       </div>
 
-      {/* ─── Fixed Footer: Back / Continue (hidden on step 2 — North Star has its own nav) ─── */}
-      {step !== 2 && (
+      {/* ─── Fixed Footer: Back / Continue (hidden on step 3 — North Star has its own nav) ─── */}
+      {step !== 3 && (
         <div className="shrink-0 border-t border-zinc-200/50 dark:border-white/[0.06] px-6 py-4 relative z-10 bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-sm">
           <div className="max-w-2xl mx-auto flex items-center justify-between">
             {step > 1 ? (

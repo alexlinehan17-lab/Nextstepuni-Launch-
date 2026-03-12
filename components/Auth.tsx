@@ -25,6 +25,7 @@ export type SessionUser = {
   isAdmin?: boolean;
   role?: 'student' | 'gc' | 'admin';
   school?: string;
+  yearGroup?: '5th' | '6th';
 };
 
 interface AuthProps {

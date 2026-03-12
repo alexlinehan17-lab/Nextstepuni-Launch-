@@ -20,19 +20,164 @@ const theme = fuchsiaTheme;
 
 const MemoryFlowVisualizer = () => {
   const [attention, setAttention] = useState(false);
+
+  const particleCount = 5;
+  const particles = Array.from({ length: particleCount }, (_, i) => i);
+
   return (
     <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Memory Pipeline</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Information either gets saved or lost. Paying attention is what decides which one happens.</p>
-      <div className="flex items-center justify-between text-center font-bold text-xs h-24">
-        <span>Sensory</span>
-        <svg className="w-full h-px mx-4"><line x1="0" y1="0" x2="100%" y2="0" stroke="black" strokeDasharray="4"/></svg>
-        <span>Short-Term</span>
-        <svg className="w-full h-px mx-4"><line x1="0" y1="0" x2="100%" y2="0" stroke="black" strokeDasharray="4"/></svg>
-        <span>Long-Term</span>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">
+        {attention
+          ? 'Attention is ON — information flows all the way to Long-Term Memory.'
+          : 'Without attention, information fades after Sensory Memory. Hit "Pay Attention" to see the difference.'}
+      </p>
+
+      {/* Pipeline visualization */}
+      <div className="relative flex items-center justify-between gap-2 md:gap-4 mb-4 px-2">
+        {/* Sensory box */}
+        <div className="flex-shrink-0 w-24 md:w-28">
+          <motion.div
+            className="rounded-xl border-2 p-3 md:p-4 text-center"
+            animate={{
+              borderColor: attention ? '#d946ef' : '#a1a1aa',
+              backgroundColor: attention ? 'rgba(217, 70, 239, 0.08)' : 'rgba(161, 161, 170, 0.05)',
+            }}
+            transition={{ duration: 0.4 }}
+          >
+            <p className="text-xs font-bold text-zinc-800 dark:text-zinc-200">Sensory</p>
+            <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">Split-second</p>
+          </motion.div>
+        </div>
+
+        {/* Arrow 1: Sensory to Short-Term */}
+        <div className="flex-1 relative h-12 overflow-hidden">
+          <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none">
+            <defs>
+              <marker id="mem-arrow1" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                <polygon points="0 0, 8 3, 0 6" fill={attention ? '#d946ef' : '#a1a1aa'} />
+              </marker>
+            </defs>
+            <line x1="0" y1="24" x2="100%" y2="24" stroke={attention ? '#d946ef' : '#a1a1aa'} strokeWidth="2" strokeDasharray="6 4" markerEnd="url(#mem-arrow1)" />
+          </svg>
+          <AnimatePresence>
+            {particles.map(i => (
+              <motion.div
+                key={`p1-${i}-${attention}`}
+                className="absolute top-1/2 -translate-y-1/2 w-3 h-3 rounded-full"
+                style={{ backgroundColor: attention ? '#d946ef' : '#f472b6' }}
+                initial={{ left: '-5%', opacity: 0, scale: 0.5 }}
+                animate={attention ? {
+                  left: ['0%', '100%'],
+                  opacity: [0, 1, 1, 0],
+                  scale: [0.5, 1, 1, 0.5],
+                } : {
+                  left: ['0%', '50%'],
+                  opacity: [0, 1, 0],
+                  scale: [0.5, 1, 0],
+                }}
+                transition={{
+                  duration: attention ? 1.8 : 1.2,
+                  delay: i * 0.5,
+                  repeat: Infinity,
+                  repeatDelay: particleCount * 0.5 - (attention ? 1.8 : 1.2) + 0.5,
+                  ease: 'easeInOut',
+                }}
+              />
+            ))}
+          </AnimatePresence>
+          {!attention && (
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="absolute right-0 -bottom-0.5 text-[9px] font-bold text-rose-400 dark:text-rose-500"
+            >
+              Lost!
+            </motion.p>
+          )}
+        </div>
+
+        {/* Short-Term box */}
+        <div className="flex-shrink-0 w-24 md:w-28">
+          <motion.div
+            className="rounded-xl border-2 p-3 md:p-4 text-center"
+            animate={{
+              borderColor: attention ? '#d946ef' : '#52525b',
+              backgroundColor: attention ? 'rgba(217, 70, 239, 0.08)' : 'rgba(82, 82, 91, 0.05)',
+              opacity: attention ? 1 : 0.5,
+            }}
+            transition={{ duration: 0.4 }}
+          >
+            <p className="text-xs font-bold text-zinc-800 dark:text-zinc-200">Short-Term</p>
+            <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">15-30 sec</p>
+          </motion.div>
+        </div>
+
+        {/* Arrow 2: Short-Term to Long-Term */}
+        <div className="flex-1 relative h-12 overflow-hidden">
+          <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none">
+            <defs>
+              <marker id="mem-arrow2" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                <polygon points="0 0, 8 3, 0 6" fill={attention ? '#d946ef' : '#a1a1aa'} />
+              </marker>
+            </defs>
+            <line x1="0" y1="24" x2="100%" y2="24" stroke={attention ? '#d946ef' : '#a1a1aa'} strokeWidth="2" strokeDasharray="6 4" markerEnd="url(#mem-arrow2)" />
+          </svg>
+          <AnimatePresence>
+            {attention && particles.map(i => (
+              <motion.div
+                key={`p2-${i}`}
+                className="absolute top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-fuchsia-500"
+                initial={{ left: '-5%', opacity: 0, scale: 0.5 }}
+                animate={{
+                  left: ['0%', '100%'],
+                  opacity: [0, 1, 1, 0],
+                  scale: [0.5, 1, 1, 0.5],
+                }}
+                transition={{
+                  duration: 1.8,
+                  delay: i * 0.5 + 0.9,
+                  repeat: Infinity,
+                  repeatDelay: particleCount * 0.5 - 1.8 + 0.5,
+                  ease: 'easeInOut',
+                }}
+              />
+            ))}
+          </AnimatePresence>
+        </div>
+
+        {/* Long-Term box */}
+        <div className="flex-shrink-0 w-24 md:w-28">
+          <motion.div
+            className="rounded-xl border-2 p-3 md:p-4 text-center"
+            animate={{
+              borderColor: attention ? '#10b981' : '#52525b',
+              backgroundColor: attention ? 'rgba(16, 185, 129, 0.08)' : 'rgba(82, 82, 91, 0.05)',
+              opacity: attention ? 1 : 0.4,
+            }}
+            transition={{ duration: 0.4 }}
+          >
+            <p className="text-xs font-bold text-zinc-800 dark:text-zinc-200">Long-Term</p>
+            <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">Permanent</p>
+          </motion.div>
+        </div>
       </div>
-      <div className="flex justify-center mt-6">
-        <button onClick={() => setAttention(!attention)} className="px-4 py-2 bg-fuchsia-500 text-white font-bold text-sm rounded-lg">{attention ? 'De-Focus' : 'Pay Attention'}</button>
+
+      {/* Status indicator */}
+      <p className={`text-center text-xs font-bold mb-6 ${attention ? 'text-emerald-500' : 'text-rose-400'}`}>
+        {attention ? 'Information is being encoded into Long-Term Memory' : 'Information is decaying — nothing reaches Long-Term Memory'}
+      </p>
+
+      <div className="flex justify-center">
+        <button onClick={() => setAttention(!attention)}
+          className={`px-5 py-2.5 font-bold text-sm rounded-lg transition-colors ${
+            attention
+              ? 'bg-zinc-200 dark:bg-zinc-700 text-zinc-800 dark:text-white hover:bg-zinc-300 dark:hover:bg-zinc-600'
+              : 'bg-fuchsia-500 hover:bg-fuchsia-600 text-white'
+          }`}
+        >
+          {attention ? 'De-Focus' : 'Pay Attention'}
+        </button>
       </div>
     </div>
   );
@@ -43,11 +188,11 @@ const MotionDiv = motion.div as any;
 // --- Chunking Challenge ---
 const CONSONANTS = 'BCDFGHJKLMNPQRSTVWXYZ'.split('');
 const CHUNKED_SETS = [
-  ['FBI', 'CIA', 'NSA', 'BBC'],
-  ['NBA', 'NFL', 'MLB', 'NHL'],
-  ['BMW', 'KFC', 'CNN', 'MTV'],
+  ['GAA', 'FAI', 'RTÉ', 'BBC'],
+  ['TCD', 'UCD', 'DCU', 'UCC'],
+  ['CAO', 'HSE', 'ESB', 'DAA'],
   ['USB', 'GPS', 'VPN', 'PDF'],
-  ['DNA', 'MRI', 'CPR', 'NHS'],
+  ['DNA', 'MRI', 'CPR', 'WHO'],
 ];
 
 type ChallengePhase = 'idle' | 'memorise' | 'recall' | 'scored';
@@ -345,7 +490,7 @@ const WorkingMemorySimulator = () => {
 
       {!showItems && items.length > 0 &&
         <div>
-          <input value={inputValue} onChange={e => setInputValue(e.target.value)} placeholder="Type the numbers, separated by spaces" className="w-full p-2 border rounded-md"/>
+          <input value={inputValue} onChange={e => setInputValue(e.target.value)} placeholder="Type the numbers, separated by spaces" className="w-full p-2 border rounded-md bg-white border-zinc-300 dark:bg-zinc-800 dark:border-zinc-600 dark:text-white"/>
           <button onClick={checkAnswer} className="mt-4 px-4 py-2 bg-emerald-500 text-white font-bold text-sm rounded-lg">Check Answer</button>
         </div>
       }
@@ -372,7 +517,7 @@ const TheCognitiveArchitectureModule: React.FC<{ onBack: () => void; progress: M
           {activeSection === 0 && (
             <ReadingSection title="Your Three Types of Memory." eyebrow="Step 1" icon={Server} theme={theme}>
               <p>To do well in the Leaving Cert, it really helps to understand how the machine you're working with — your own brain — actually handles information. The simplest way to think about it is that your memory has <Highlight description="A simple way of understanding memory: it comes in three stages — a quick flash, a short holding space, and a long-term store." theme={theme}>three stages</Highlight>.</p>
-              <p>First, there's <Highlight description="The very first stage of memory — a split-second snapshot of what you see or hear. If you don't pay attention to it, it's gone instantly." theme={theme}>Sensory Memory</Highlight>, the brief flash of what you see or hear. Anything you don't pay attention to here is gone forever. If you *do* pay attention, it moves to <Highlight description="Your brain's temporary holding space. It can only hold a small amount of information for a short time — think of it as your mental workbench." theme={theme}>Short-Term Memory</Highlight>, your brain's mental workbench. From there, it has to be deliberately moved to <Highlight description="Your brain's permanent storage. This is where knowledge needs to end up if you want to remember it in an exam." theme={theme}>Long-Term Memory</Highlight>, the permanent hard drive. Your entire job as a student is to get better at moving stuff from that workbench into long-term storage.</p>
+              <p>First, there's <Highlight description="The very first stage of memory — a split-second snapshot of what you see or hear. If you don't pay attention to it, it's gone instantly." theme={theme}>Sensory Memory</Highlight>, the brief flash of what you see or hear. Anything you don't pay attention to here is gone forever. If you <em>do</em> pay attention, it moves to <Highlight description="Your brain's temporary holding space. It can only hold a small amount of information for a short time — think of it as your mental workbench." theme={theme}>Short-Term Memory</Highlight>, your brain's mental workbench. From there, it has to be deliberately moved to <Highlight description="Your brain's permanent storage. This is where knowledge needs to end up if you want to remember it in an exam." theme={theme}>Long-Term Memory</Highlight>, the permanent hard drive. Your entire job as a student is to get better at moving stuff from that workbench into long-term storage.</p>
             </ReadingSection>
           )}
           {activeSection === 1 && (
@@ -392,7 +537,7 @@ const TheCognitiveArchitectureModule: React.FC<{ onBack: () => void; progress: M
           {activeSection === 3 && (
             <ReadingSection title="How to Actually Save What You Learn." eyebrow="Step 4" icon={BrainCircuit} theme={theme}>
               <p>Moving information from your temporary workbench to your permanent hard drive is called <Highlight description="The process of turning a temporary memory into a lasting one. How deeply you think about something decides how well you'll remember it." theme={theme}>encoding</Highlight> — basically, hitting the 'save' button. But not all saving is equal. <Highlight description="When you only skim the surface of something — like re-reading a definition without really thinking about it. This creates weak memories that fade fast." theme={theme}>Surface-level studying</Highlight>, like just re-reading a definition, creates weak, flimsy memories.</p>
-              <p><Highlight description="When you really think about what something means and connect it to things you already know. This creates strong memories that last." theme={theme}>Deep studying</Highlight> is about connecting new information to what you already know. For example, learning that "mitochondria is the powerhouse of the cell" is surface-level. Understanding *how* it produces energy and why that's essential for your muscles to work is deep. What's actually happening in your brain is that <Highlight description="When brain cells fire together repeatedly, the connections between them get physically stronger — like a path getting worn into a field the more you walk it." theme={theme}>the connections between your brain cells get physically stronger</Highlight> — the more you use a pathway, the easier it becomes to use again.</p>
+              <p><Highlight description="When you really think about what something means and connect it to things you already know. This creates strong memories that last." theme={theme}>Deep studying</Highlight> is about connecting new information to what you already know. For example, learning that "mitochondria is the powerhouse of the cell" is surface-level. Understanding <em>how</em> it produces energy and why that's essential for your muscles to work is deep. What's actually happening in your brain is that <Highlight description="When brain cells fire together repeatedly, the connections between them get physically stronger — like a path getting worn into a field the more you walk it." theme={theme}>the connections between your brain cells get physically stronger</Highlight> — the more you use a pathway, the easier it becomes to use again.</p>
             </ReadingSection>
           )}
           {activeSection === 4 && (

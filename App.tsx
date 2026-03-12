@@ -669,6 +669,7 @@ const App: React.FC = () => {
               isAdmin: false,
               role: userData.role,
               school: userData.school,
+              yearGroup: userData.yearGroup,
             });
             if (progressDoc.exists()) {
               const progressData = progressDoc.data();
@@ -920,6 +921,12 @@ const App: React.FC = () => {
         setNorthStar(northStarData);
       }
       await setDoc(progressDocRef, saveData, { merge: true });
+      // Also save yearGroup to the users doc for GC dashboard filtering
+      if (profile.yearGroup) {
+        const userDocRef = doc(db, 'users', user.uid);
+        await setDoc(userDocRef, { yearGroup: profile.yearGroup }, { merge: true });
+        setUser(prev => prev ? { ...prev, yearGroup: profile.yearGroup } : prev);
+      }
     } catch (error) {
       console.error('Failed to save subject profile:', error);
       showToast('Couldn\'t save — check your connection', 'error');

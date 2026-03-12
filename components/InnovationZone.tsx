@@ -13,11 +13,12 @@ import {
     TrendingUp, Users, BookOpen, BookMarked,
     Lock, Compass, Brain, HandHelping, Target, ArrowUpRight, Award, Megaphone,
     Flame, Scale, GraduationCap, Settings, CalendarDays, Calculator, Layers, GitBranch, Wrench, Gift, Rocket,
-    Map, Dna, Milestone, ScanSearch
+    Map, Dna, ScanSearch
 } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak, type StudyBlock, getBlockId, toDateKey } from './subjectData';
+import { type SchoolEvent } from './gc/GCKeyEvents';
 import { computeStreak, computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, computeWeeksUntilExam } from './timetableAlgorithm';
 import { type StudyReflection, type PointsData, type CosmeticUnlocks, type EarnedRest, type UserSettings } from '../types';
 import SubjectOnboarding from './SubjectOnboarding';
@@ -27,7 +28,7 @@ import ComebackEngine from './ComebackEngine';
 import CAOPointsSimulator from './CAOPointsSimulator';
 
 import FutureFinder from './FutureFinder';
-import PointsPassport from './PointsPassport';
+// PointsPassport removed — functionality merged into War Room
 import FirstGenIntel from './FirstGenIntel';
 import LearningDNA from './LearningDNA';
 import SyllabusXRay from './SyllabusXRay';
@@ -58,7 +59,7 @@ interface JourneyResult {
 interface InnovationZoneProps {
   onBack: () => void;
   onSelectModule?: (moduleId: string) => void;
-  user?: { uid: string } | null;
+  user?: { uid: string; school?: string; yearGroup?: '5th' | '6th' } | null;
   autoOpenJourney?: boolean;
   savedJourneyResult?: JourneyResult | null;
   onJourneyComplete?: (result: JourneyResult) => void;
@@ -998,6 +999,26 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const [pointsData, setPointsData] = useState<PointsData>({ totalEarned: 0, totalSpent: 0 });
     const [cosmeticUnlocks, setCosmeticUnlocks] = useState<CosmeticUnlocks>({ avatarSeeds: [], themeColors: [], cardStyles: [] });
     const [earnedRest, setEarnedRest] = useState<EarnedRest>({ skippedSessions: [], restDayPasses: [] });
+    const [schoolEvents, setSchoolEvents] = useState<SchoolEvent[]>([]);
+
+    // Load school events for student's school + year group
+    useEffect(() => {
+        if (!user?.school) return;
+        const loadEvents = async () => {
+            try {
+                const eventsDoc = await getDoc(doc(db, 'gcEvents', user.school!));
+                if (eventsDoc.exists()) {
+                    const data = eventsDoc.data();
+                    const allEvents: SchoolEvent[] = data.events || [];
+                    const yg = user.yearGroup || '6th';
+                    setSchoolEvents(allEvents.filter(e => e.yearGroup === 'both' || e.yearGroup === yg));
+                }
+            } catch (e) {
+                console.error('Failed to load school events:', e);
+            }
+        };
+        loadEvents();
+    }, [user?.school, user?.yearGroup]);
 
     // Refs to always access latest state in callbacks (avoids stale closures)
     const pointsDataRef = useRef(pointsData);
@@ -1311,7 +1332,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
-            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} onBlockDurationChange={async (_s, _t, newDuration) => { const updated = { ...subjectProfile, defaultBlockDuration: newDuration }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save block duration:', e); showToast('Couldn\'t save — check your connection', 'error'); } } }} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); showToast('Couldn\'t save — check your connection', 'error'); } } }} /> : null,
+            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={async (_s, _t, newDuration) => { const updated = { ...subjectProfile, defaultBlockDuration: newDuration }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save block duration:', e); showToast('Couldn\'t save — check your connection', 'error'); } } }} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); showToast('Couldn\'t save — check your connection', 'error'); } } }} /> : null,
         },
         {
             id: 'war-room', title: 'War Room', description: 'Your strategic study command centre.', icon: Target, needsProfile: true,
@@ -1336,14 +1357,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
             component: subjectProfile ? <FutureFinder uid={user!.uid} profile={subjectProfile} /> : null,
-        },
-        {
-            id: 'points-passport', title: 'Points Passport', description: 'Track your trajectory and find your fastest path to more points.', icon: Milestone, needsProfile: true,
-            tag: 'Trajectory', accentHex: '#14b8a6', gridClass: 'md:col-span-2',
-            iconBg: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400',
-            accentBarColor: 'bg-teal-500', tagBg: 'bg-teal-100 dark:bg-teal-900/30', tagText: 'text-teal-700 dark:text-teal-400',
-            hoverBorder: 'hover:border-teal-400/50 dark:hover:border-teal-500/40',
-            component: subjectProfile ? <PointsPassport uid={user!.uid} profile={subjectProfile} /> : null,
         },
         {
             id: 'learning-dna', title: 'Learning DNA', description: 'Insights from your study sessions — what works for you.', icon: Dna, needsProfile: false,

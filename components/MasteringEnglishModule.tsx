@@ -229,34 +229,6 @@ const ShowDontTellConverter = () => {
   );
 };
 
-const PCLMGrader = () => {
-    const [pclm, setPclm] = useState({ p: 50, c: 50, l: 50, m: 50 });
-
-    // P caps C and L
-    const cappedC = Math.min(pclm.c, pclm.p);
-    const cappedL = Math.min(pclm.l, pclm.p);
-
-    const total = (pclm.p * 0.3) + (cappedC * 0.3) + (cappedL * 0.3) + (pclm.m * 0.1);
-    const grade = total >= 90 ? 'H1' : total >= 80 ? 'H2' : total >= 70 ? 'H3' : 'H4';
-
-    return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">PCLM Grader</h4>
-            <div className="grid grid-cols-2 gap-6 items-center">
-                <div className="space-y-2">
-                    <input type="range" value={pclm.p} onChange={e => setPclm({...pclm, p: parseInt(e.target.value)})} className="w-full"/>
-                    <input type="range" value={pclm.c} onChange={e => setPclm({...pclm, c: parseInt(e.target.value)})} className="w-full"/>
-                    <input type="range" value={pclm.l} onChange={e => setPclm({...pclm, l: parseInt(e.target.value)})} className="w-full"/>
-                    <input type="range" value={pclm.m} onChange={e => setPclm({...pclm, m: parseInt(e.target.value)})} className="w-full"/>
-                </div>
-                <div className="text-center">
-                    <p className="text-6xl font-semibold text-blue-500">{grade}</p>
-                </div>
-            </div>
-        </div>
-    );
-};
-
 // --- MODULE COMPONENT ---
 const MasteringEnglishModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
@@ -287,7 +259,7 @@ const MasteringEnglishModule: React.FC<{ onBack: () => void; progress: ModulePro
             <ReadingSection title="How You Actually Get Marked." eyebrow="Step 1" icon={Settings} theme={theme}>
               <p>Here's something most students don't realise: English is not marked on vibes. Every single answer you write is graded using the same four-part system called <Highlight description="PCLM stands for Purpose, Coherence, Language, and Mechanics. These are the four things the examiner scores you on, every single time." theme={theme}>PCLM</Highlight>. Once you understand how it works, you'll know exactly what separates a H3 from a H1.</p>
               <p><Highlight description="Purpose means: did you actually answer what was asked? If you go off-topic, everything else suffers." theme={theme}>Purpose</Highlight> is the most important one. You could write the best essay of your life, but if it doesn't answer the question, it's worth very little. Even more importantly, your Coherence and Language marks are capped by your Purpose mark. So answering the actual question always comes first.</p>
-              <PersonalStory name="Aoife" role="6th Year, Waterford">
+              <PersonalStory name="Aisling" role="6th Year, Kilkenny">
                 <p>I used to just pick whatever essay title sounded nice and write whatever came into my head. I got a H4 in my mock. Then I learned about PCLM and realised I was losing marks on Purpose every time. In the real exam, I spent five minutes planning how my essay actually answered the question before I started writing. I got a H2. Same writing ability -- I just stopped ignoring what the examiner was actually looking for.</p>
               </PersonalStory>
             </ReadingSection>

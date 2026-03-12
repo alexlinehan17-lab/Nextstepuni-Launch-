@@ -41,7 +41,7 @@ const KanbanBoard = () => {
             if (item.column !== 'done' && targetColumn === 'done') {
                 setWins(w => w + 1);
             }
-            setTasks(tasks.map(t => t.id === item.id ? { ...t, column: targetColumn } : t));
+            setTasks(prev => prev.map(t => t.id === item.id ? { ...t, column: targetColumn } : t));
         }
     };
 
@@ -70,13 +70,11 @@ const KanbanBoard = () => {
     );
 };
 
-const MotionDiv = motion.div as any;
-
 const RetrospectiveLog = () => {
     const [topics, setTopics] = useState([
-        { name: "Ecology", status: 'red', last: null },
-        { name: "Genetics", status: 'amber', last: null },
-        { name: "Photosynthesis", status: 'green', last: null },
+        { name: "Ecology", status: 'red' },
+        { name: "Genetics", status: 'amber' },
+        { name: "Photosynthesis", status: 'green' },
     ]);
     const [nextTopic, setNextTopic] = useState("Ecology (Red)");
 
@@ -100,9 +98,9 @@ const RetrospectiveLog = () => {
                 <div key={t.name} className="flex items-center justify-between p-2">
                     <span className="font-bold">{t.name}</span>
                     <div className="flex gap-1">
-                        <button onClick={() => updateStatus(t.name, 'red')} className={`w-6 h-6 rounded-full border ${t.status === 'red' ? 'bg-rose-500 border-rose-600' : 'bg-rose-200'}`} />
-                        <button onClick={() => updateStatus(t.name, 'amber')} className={`w-6 h-6 rounded-full border ${t.status === 'amber' ? 'bg-amber-500 border-amber-600' : 'bg-amber-200'}`} />
-                        <button onClick={() => updateStatus(t.name, 'green')} className={`w-6 h-6 rounded-full border ${t.status === 'green' ? 'bg-emerald-500 border-emerald-600' : 'bg-emerald-200'}`} />
+                        <button aria-label="Mark as struggling (red)" onClick={() => updateStatus(t.name, 'red')} className={`w-6 h-6 rounded-full border ${t.status === 'red' ? 'bg-rose-500 border-rose-600' : 'bg-rose-200'}`} />
+                        <button aria-label="Mark as okay (amber)" onClick={() => updateStatus(t.name, 'amber')} className={`w-6 h-6 rounded-full border ${t.status === 'amber' ? 'bg-amber-500 border-amber-600' : 'bg-amber-200'}`} />
+                        <button aria-label="Mark as confident (green)" onClick={() => updateStatus(t.name, 'green')} className={`w-6 h-6 rounded-full border ${t.status === 'green' ? 'bg-emerald-500 border-emerald-600' : 'bg-emerald-200'}`} />
                     </div>
                 </div>
             ))}
@@ -157,7 +155,7 @@ const ReframingProgressModule: React.FC<{ onBack: () => void; progress: ModulePr
           )}
           {activeSection === 4 && (
             <ReadingSection title="The Kanban Flow." eyebrow="Step 5" icon={Columns} theme={theme}>
-                <p>Ditch the rigid timetable and try something that actually works. A <Highlight description="A simple board with three columns: To Do, Doing, and Done. Instead of planning when to study, you plan what to get done -- and you can see your progress pile up in the Done column." theme={theme}>Kanban Board</Highlight> swaps a schedule of *when* to work for a system of *what* to get done. You see progress, not just time passing.</p>
+                <p>Ditch the rigid timetable and try something that actually works. A <Highlight description="A simple board with three columns: To Do, Doing, and Done. Instead of planning when to study, you plan what to get done -- and you can see your progress pile up in the Done column." theme={theme}>Kanban Board</Highlight> swaps a schedule of <em>when</em> to work for a system of <em>what</em> to get done. You see progress, not just time passing.</p>
                 <p>There's something genuinely satisfying about moving a task from "Doing" to "Done." It gives your brain a little hit of reward, which makes you want to keep going. Over time, your "Done" column fills up with real wins -- so you never feel like you studied for hours with nothing to show for it.</p>
                 <KanbanBoard />
             </ReadingSection>

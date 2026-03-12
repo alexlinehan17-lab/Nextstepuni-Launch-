@@ -217,8 +217,8 @@ const HistoryGrader = () => {
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">CM/OE Grader</h4>
             <div className="grid grid-cols-2 gap-6 items-center">
                 <div className="space-y-4">
-                    <div><label className="text-xs font-bold">CM (Content): {cm}/60</label><input type="range" min="0" max="60" value={cm} onChange={e=>setCm(parseInt(e.target.value))} className="w-full"/></div>
-                    <div><label className="text-xs font-bold">OE (Argument): {oe}/40</label><input type="range" min="0" max="40" value={oe} onChange={e=>setOe(parseInt(e.target.value))} className="w-full"/></div>
+                    <div><label className="text-xs font-bold">CM (Content): {cm}/60</label><input type="range" min="0" max="60" value={cm} onChange={e=>setCm(parseInt(e.target.value))} className="w-full accent-pink-500 dark:accent-fuchsia-500 dark:bg-zinc-700 rounded-lg"/></div>
+                    <div><label className="text-xs font-bold">OE (Argument): {oe}/40</label><input type="range" min="0" max="40" value={oe} onChange={e=>setOe(parseInt(e.target.value))} className="w-full accent-pink-500 dark:accent-fuchsia-500 dark:bg-zinc-700 rounded-lg"/></div>
                 </div>
                 <div className="text-center">
                     <p className="text-sm">Final Grade:</p>
@@ -241,10 +241,10 @@ const MasteringTheHumanitiesModule: React.FC<{ onBack: () => void; progress: Mod
 
   return (
     <ModuleLayout
-      moduleNumber="07"
+      moduleNumber="08"
       moduleTitle="Mastering the Humanities"
       moduleSubtitle="Your Guide to Getting Better Marks"
-      moduleDescription="History, Geography, and Politics &amp; Society each have their own unwritten rules for how marks are given. Once you know them, everything changes."
+      moduleDescription="History, Geography, and Politics & Society each have their own unwritten rules for how marks are given. Once you know them, everything changes."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -257,7 +257,7 @@ const MasteringTheHumanitiesModule: React.FC<{ onBack: () => void; progress: Mod
           {activeSection === 0 && (
             <ReadingSection title="The Unwritten Rules." eyebrow="Step 1" icon={Key} theme={theme}>
               <p>In the Leaving Cert Humanities, the gap between a H3 and a H1 is rarely about how much you know. It comes down to <Highlight description="Knowing exactly what the examiner wants and giving it to them in the right format. Each subject rewards different things." theme={theme}>knowing what to do</Highlight> with what you know. Each subject has its own unwritten rules and rewards a different type of answer. Once you figure out what each subject is actually looking for, you can start giving the examiner exactly what they want.</p>
-              <PersonalStory name="Aoife" role="6th Year, Waterford">
+              <PersonalStory name="Sinéad" role="6th Year, Wexford">
                 <p>I was getting H3s in History even though I knew my stuff inside out. Turns out I was writing everything I knew about a topic instead of actually answering the question. Once I understood how the marking scheme worked, I jumped to a H1 in the mocks without learning a single new fact.</p>
               </PersonalStory>
             </ReadingSection>

@@ -363,7 +363,7 @@ const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
 
   return (
     <ModuleLayout
-      moduleNumber="13"
+      moduleNumber="14"
       moduleTitle="The Growth Playbook"
       moduleSubtitle="The Mind's Operating System"
       moduleDescription={`Your brain can actually change and get better at things — that's not just a nice idea, it's how your brain works. This module shows you how to stop thinking "I'm just not smart enough" and start seeing every challenge as a chance to grow.`}

@@ -147,23 +147,88 @@ const ProcrastinationEquation = () => {
 };
 
 const IfThenAutopilot = () => {
-    const [plan, setPlan] = useState<{if: string, then: string} | null>(null);
+    const [ifText, setIfText] = useState('');
+    const [thenText, setThenText] = useState('');
+    const [submitted, setSubmitted] = useState(false);
 
-    const createPlan = () => {
-      setPlan({if: "I feel the urge to check my phone", then: "I will take three deep breaths and work for 2 more minutes"});
+    const templates = [
+      { trigger: 'IF I open Instagram during study time', action: 'THEN I will close the app and do one practice question' },
+      { trigger: 'IF I feel overwhelmed by a topic', action: 'THEN I will break it into 3 smaller parts and tackle just the first one' },
+      { trigger: "IF I haven't started by 4pm", action: 'THEN I will open my textbook to page 1 and read for 2 minutes' },
+      { trigger: 'IF I finish a Pomodoro', action: 'THEN I will stand up, stretch, and drink some water' },
+    ];
+
+    const handleTemplateClick = (t: typeof templates[0]) => {
+      setIfText(t.trigger.replace('IF ', ''));
+      setThenText(t.action.replace('THEN ', ''));
+      setSubmitted(false);
     };
+
+    const bothFilled = ifText.trim().length > 0 && thenText.trim().length > 0;
 
     return(
          <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "If-Then" Autopilot</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Pre-load a decision to bypass willpower. Click to create a plan.</p>
-            <div className="flex justify-center">
-                <button onClick={createPlan} className="px-5 py-3 bg-orange-500 text-white font-bold rounded-lg text-sm">Create Plan</button>
+            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Pre-load a decision to bypass willpower. Fill in both fields or pick a template below.</p>
+
+            {/* Template suggestions */}
+            <div className="flex flex-wrap justify-center gap-2 mb-6">
+              {templates.map((t, i) => (
+                <button key={i} onClick={() => handleTemplateClick(t)}
+                  className="px-3 py-1.5 text-xs font-medium rounded-full bg-zinc-100 dark:bg-zinc-900/50 text-zinc-600 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700 hover:border-orange-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">
+                  {t.trigger}
+                </button>
+              ))}
             </div>
-            {plan &&
-            <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6 p-4 bg-zinc-900 rounded-xl text-white text-center font-mono text-sm">
-                Plan created: IF <span className="text-rose-400">{plan.if}</span>, THEN <span className="text-emerald-400">{plan.then}</span>
-            </motion.div>}
+
+            {/* Form inputs */}
+            <div className="space-y-4 mb-6">
+              <div>
+                <label className="block text-xs font-bold text-zinc-500 dark:text-zinc-400 mb-1 uppercase tracking-wider">IF (trigger)</label>
+                <input
+                  type="text" value={ifText}
+                  onChange={e => { setIfText(e.target.value); setSubmitted(false); }}
+                  placeholder="e.g. I open Instagram during study time"
+                  className="w-full p-3 bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-700 rounded-xl text-sm text-zinc-800 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:border-orange-400"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-zinc-500 dark:text-zinc-400 mb-1 uppercase tracking-wider">THEN (action)</label>
+                <input
+                  type="text" value={thenText}
+                  onChange={e => { setThenText(e.target.value); setSubmitted(false); }}
+                  placeholder="e.g. I will close the app and do one practice question"
+                  className="w-full p-3 bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-700 rounded-xl text-sm text-zinc-800 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:border-orange-400"
+                />
+              </div>
+            </div>
+
+            <div className="flex justify-center">
+              <button
+                onClick={() => setSubmitted(true)}
+                disabled={!bothFilled}
+                className="px-5 py-3 bg-orange-500 hover:bg-orange-600 disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold rounded-lg text-sm transition-colors">
+                Lock In Plan
+              </button>
+            </div>
+
+            <AnimatePresence>
+              {submitted && bothFilled && (
+                <motion.div
+                  initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }}
+                  className="mt-6 p-5 bg-zinc-900 dark:bg-zinc-900 rounded-xl border border-zinc-700"
+                >
+                  <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2 text-center">Your Autopilot Plan</p>
+                  <p className="text-white text-center text-sm leading-relaxed">
+                    <span className="font-bold text-orange-400">IF</span>{' '}
+                    <span className="text-rose-400">{ifText}</span>
+                    <span className="mx-2 text-zinc-500">&rarr;</span>
+                    <span className="font-bold text-orange-400">THEN</span>{' '}
+                    <span className="text-emerald-400">{thenText}</span>
+                  </p>
+                </motion.div>
+              )}
+            </AnimatePresence>
         </div>
     );
 };
@@ -177,6 +242,11 @@ const GuiltSpiral = () => {
         setAvoidance(a => Math.min(100, a + 25));
     }
 
+    const practiceForgiveness = () => {
+        setGuilt(g => Math.max(0, g - 18));
+        setAvoidance(a => Math.max(0, a - 15));
+    }
+
     const reset = () => {
         setGuilt(10);
         setAvoidance(10);
@@ -185,7 +255,7 @@ const GuiltSpiral = () => {
     return(
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Guilt Spiral</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">"Tough love" doesn't work. It just adds more negative emotion to the fire.</p>
+             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">"Tough love" doesn't work. It just adds more negative emotion to the fire. Try both buttons to see the difference.</p>
              <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
                     <p className="font-bold text-sm text-rose-600 mb-2">Guilt Meter</p>
@@ -196,9 +266,10 @@ const GuiltSpiral = () => {
                     <div className="w-full h-6 bg-zinc-100 dark:bg-zinc-800 rounded-full"><motion.div className="h-full bg-orange-500 rounded-full" initial={{width: "10%"}} animate={{width: `${avoidance}%`}} /></div>
                 </div>
             </div>
-             <div className="flex justify-center gap-4">
-                <button onClick={addCriticism} className="px-4 py-2 bg-rose-100 text-rose-800 text-xs font-bold rounded-lg">Add Self-Criticism</button>
-                <button onClick={reset} className="px-4 py-2 bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-white text-xs font-bold rounded-lg">Reset</button>
+             <div className="flex justify-center gap-3 flex-wrap">
+                <button onClick={addCriticism} className="px-4 py-2 bg-rose-100 dark:bg-rose-900/30 text-rose-800 dark:text-rose-300 text-xs font-bold rounded-lg border border-rose-200 dark:border-rose-800">Add Self-Criticism</button>
+                <button onClick={practiceForgiveness} className="px-4 py-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-300 text-xs font-bold rounded-lg border border-emerald-200 dark:border-emerald-800">Practice Self-Forgiveness</button>
+                <button onClick={reset} className="px-4 py-2 bg-zinc-100 dark:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs font-bold rounded-lg border border-zinc-200 dark:border-zinc-700">Reset</button>
              </div>
         </div>
     );
@@ -364,31 +435,53 @@ const GuiltSpiralComparison = () => {
 
 const CircuitBreaker = () => {
     const [reframe, setReframe] = useState('');
-    const containsForgive = reframe.toLowerCase().includes('forgive');
-    const containsAction = reframe.toLowerCase().includes('i will');
+    const lower = reframe.toLowerCase();
+
+    const forgivenessWords = ['forgive', 'okay', "it's fine", "it's ok", "that's ok", 'human', 'everyone', 'normal', 'mistake'];
+    const actionWords = ['i will', 'next time', 'tomorrow', 'going to', 'start', 'try', 'plan', 'can'];
+    const compassionWords = ['kind', 'gentle', 'breathe', 'calm', 'deserve'];
+
+    const containsForgiveness = forgivenessWords.some(w => lower.includes(w));
+    const containsAction = actionWords.some(w => lower.includes(w));
+    const containsCompassion = compassionWords.some(w => lower.includes(w));
+
     return(
          <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Circuit Breaker</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Rewrite this self-critical thought into a self-forgiving, action-oriented statement.</p>
-            <p className="p-4 bg-rose-50 border border-rose-200 rounded-xl text-center font-mono text-rose-800 mb-4">"I'm so useless, I wasted the whole day."</p>
-            <textarea value={reframe} onChange={e => setReframe(e.target.value)} placeholder="Your new script..." className="w-full h-24 p-4 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl focus:outline-none focus:border-orange-400" />
-            {(containsForgive || containsAction) &&
-                <div className="mt-4 grid grid-cols-2 gap-2 text-xs">
-                    <p className={containsForgive ? 'text-emerald-600 font-bold' : 'text-zinc-400'}>Contains Self-Forgiveness</p>
-                    <p className={containsAction ? 'text-emerald-600 font-bold' : 'text-zinc-400'}>Bridges to Action</p>
-                </div>
-            }
+            <p className="p-4 bg-rose-50 dark:bg-rose-900/20 border border-rose-200 dark:border-rose-800 rounded-xl text-center font-mono text-rose-800 dark:text-rose-300 mb-4">"I'm so useless, I wasted the whole day."</p>
+            <textarea value={reframe} onChange={e => setReframe(e.target.value)} placeholder="Your new script..." className="w-full h-24 p-4 bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-700 rounded-xl text-zinc-800 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:border-orange-400" />
+            <div className="mt-4 flex flex-wrap gap-2">
+                <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border transition-colors ${
+                    containsForgiveness
+                        ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700'
+                        : 'bg-zinc-100 dark:bg-zinc-900/30 text-zinc-400 dark:text-zinc-500 border-zinc-200 dark:border-zinc-700'
+                }`}>
+                    <span className={`w-2 h-2 rounded-full ${containsForgiveness ? 'bg-emerald-500' : 'bg-zinc-300 dark:bg-zinc-600'}`} />
+                    Self-Forgiveness {containsForgiveness ? '' : '(not yet detected)'}
+                </span>
+                <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border transition-colors ${
+                    containsAction
+                        ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700'
+                        : 'bg-zinc-100 dark:bg-zinc-900/30 text-zinc-400 dark:text-zinc-500 border-zinc-200 dark:border-zinc-700'
+                }`}>
+                    <span className={`w-2 h-2 rounded-full ${containsAction ? 'bg-emerald-500' : 'bg-zinc-300 dark:bg-zinc-600'}`} />
+                    Forward Action {containsAction ? '' : '(not yet detected)'}
+                </span>
+                <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border transition-colors ${
+                    containsCompassion
+                        ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700'
+                        : 'bg-zinc-100 dark:bg-zinc-900/30 text-zinc-400 dark:text-zinc-500 border-zinc-200 dark:border-zinc-700'
+                }`}>
+                    <span className={`w-2 h-2 rounded-full ${containsCompassion ? 'bg-emerald-500' : 'bg-zinc-300 dark:bg-zinc-600'}`} />
+                    Self-Compassion {containsCompassion ? '' : '(not yet detected)'}
+                </span>
+            </div>
         </div>
     );
 }
 
 // --- MODULE COMPONENT ---
-// NOTE: The original file was truncated at 272 lines (cut off mid-sidebar).
-// All extractable content sections have been preserved below. The sidebar/footer
-// code was in the truncated portion and is now handled by ModuleLayout.
-// Content for sections 0-7 was not present in the original file's return block
-// (the file cut off before the <main> content area), so section content is
-// reconstructed based on the section definitions and interactive components available.
 const ProcrastinationModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
   const sections = [
     { id: 'real-reason', title: 'The Real Reason You Delay', eyebrow: '01 // Not Laziness', icon: HeartPulse },
@@ -426,8 +519,8 @@ const ProcrastinationModule: React.FC<{ onBack: () => void; progress: ModuleProg
           )}
           {activeSection === 1 && (
             <ReadingSection title="The Amygdala Hijack." eyebrow="Step 2" icon={Brain} theme={theme}>
-              <p>Procrastination is basically a tug-of-war inside your head between two parts of your brain. Your <Highlight description="The part of your brain that acts like a smoke alarm. It goes off when it senses danger -- and unfortunately, it treats a hard maths problem the same as an actual threat." theme={theme}>amygdala</Highlight> (the alarm system) freaks out when it spots something that feels threatening. Your<Highlight description="The boss of your brain -- it handles planning, self-control, and thinking about the future. The catch? At your age, it's still being built, so your alarm system can easily overrule it." theme={theme}>Prefrontal Cortex (PFC)</Highlight> (the boss) is supposed to step in and calm things down, but at your age, it's still being built -- so it often loses the fight.</p>
-              <p>The result is an <Highlight description="When your emotional brain completely takes over your logical brain. It's why you can know you should be studying but still end up scrolling your phone without even deciding to." theme={theme}>Amygdala Hijack</Highlight>. Your emotional brain steamrolls your logical brain. That's why "just try harder" is useless advice. You need tricks that work *with* how your brain actually works, not against it.</p>
+              <p>Procrastination is basically a tug-of-war inside your head between two parts of your brain. Your <Highlight description="The part of your brain that acts like a smoke alarm. It goes off when it senses danger -- and unfortunately, it treats a hard maths problem the same as an actual threat." theme={theme}>amygdala</Highlight> (the alarm system) freaks out when it spots something that feels threatening. Your <Highlight description="The boss of your brain -- it handles planning, self-control, and thinking about the future. The catch? At your age, it's still being built, so your alarm system can easily overrule it." theme={theme}>Prefrontal Cortex (PFC)</Highlight> (the boss) is supposed to step in and calm things down, but at your age, it's still being built -- so it often loses the fight.</p>
+              <p>The result is an <Highlight description="When your emotional brain completely takes over your logical brain. It's why you can know you should be studying but still end up scrolling your phone without even deciding to." theme={theme}>Amygdala Hijack</Highlight>. Your emotional brain steamrolls your logical brain. That's why "just try harder" is useless advice. You need tricks that work <em>with</em> how your brain actually works, not against it.</p>
             </ReadingSection>
           )}
           {activeSection === 2 && (

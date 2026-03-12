@@ -346,7 +346,7 @@ const LearningMathModule: React.FC<{ onBack: () => void; progress: ModuleProgres
             <ReadingSection title="The New Game." eyebrow="Step 1" icon={Target} theme={theme}>
               <p>Leaving Cert Maths is not the same game it used to be. Project Maths changed the rules -- it's no longer about memorising formulas and repeating steps. Now it's about actually <Highlight description="It's not enough to know the formula. You need to understand why it works, so you can use it in questions you've never seen before." theme={theme}>understanding why things work</Highlight> and solving problems you've never seen before. It's a test of resilience, not just number-crunching.</p>
               <p>Then there are the <Highlight description="You get 25 extra CAO points just for getting a H6 or higher in Maths. That makes it the single most valuable subject for your points." theme={theme}>Bonus Points</Highlight> -- 25 extra CAO points just for getting a H6 or above. That means a H6 in Maths is worth more than a H3 in any other subject. It's a massive safety net, and it means aiming for Higher Level is worth it even if you're not a "maths person."</p>
-              <PersonalStory name="Aoife" role="6th Year, Tallaght">
+              <PersonalStory name="Orlaith" role="6th Year, Tallaght">
                 <p>I nearly dropped to Ordinary Level after 5th year because I got 38% in my summer exam. But my teacher said "just try Higher for the mocks." I started using the bonus points as motivation -- even a H7 would be worth it. I ended up getting a H5 in the real thing and those 25 bonus points got me into my course. Honestly, if I'd dropped down I wouldn't have made it.</p>
               </PersonalStory>
             </ReadingSection>

@@ -446,7 +446,7 @@ const MasteringTheSciencesModule: React.FC<{ onBack: () => void; progress: Modul
 
   return (
     <ModuleLayout
-      moduleNumber="03"
+      moduleNumber="04"
       moduleTitle="Mastering the Sciences"
       moduleSubtitle="Your Science Subjects, Decoded"
       moduleDescription="Each science exam has its own unwritten rules. This module breaks them down so you know exactly what the examiner is looking for."
@@ -463,7 +463,7 @@ const MasteringTheSciencesModule: React.FC<{ onBack: () => void; progress: Modul
             <ReadingSection title="What They Don't Teach You." eyebrow="Step 1" icon={Key} theme={theme}>
               <p>Here's the thing about the Leaving Cert sciences: knowing your stuff is only half the battle. Each subject -- Biology, Chemistry, Physics, and Ag Science -- has its own set of unwritten rules. The marking scheme rewards certain approaches, and if you don't know what those are, you'll lose marks even when you understand the material.</p>
               <p>This module breaks down each science subject so you can see what the examiner is actually looking for. You'll learn which topics come up most, which mistakes cost the most marks, and how to write answers that tick every box on the marking scheme.</p>
-              <PersonalStory name="Aoife" role="6th Year, Tullamore">
+              <PersonalStory name="Róisín" role="6th Year, Tullamore">
                 <p>I was getting B3s in Biology even though I was studying loads. Turns out I was using my own words for definitions instead of the exact terms from the book. Once I started learning the keywords the examiner wanted, my marks jumped two grades in the mocks. It felt like I'd been playing the wrong game the whole time.</p>
               </PersonalStory>
             </ReadingSection>

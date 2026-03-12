@@ -649,7 +649,7 @@ const TheScienceOfMakingMistakesModule: React.FC<{ onBack: () => void; progress:
               <p>The good news is you can train your brain to handle mistakes better and stay solid under pressure. It's a skill, not something you're born with. The first step is to <strong>stop treating mistakes like they mean something about you</strong>. They're information, not insults. Every error is basically a signpost pointing to exactly where you need to focus next.</p>
               <p>The most powerful tool for this is a <Highlight description="A simple notebook or page where you write down each mistake you make in practice, figure out why it happened (did you rush it, not understand it, or just forget something?), and write down one thing you'll do to fix it." theme={theme}>Mistake Log</Highlight>. Writing your mistakes down forces you to actually think about them properly instead of just cringing and moving on. It trains your brain to pay real attention to errors instead of flinching away from them. Don't just spot your mistakes — dig into them. They're the best study tool you have.</p>
                <MicroCommitment theme={theme}>
-                <p>For your next piece of homework, actively look for one mistake you made. Don't just correct it. Write down in one sentence *why* you made it. You've just started your first mistake log.</p>
+                <p>For your next piece of homework, actively look for one mistake you made. Don't just correct it. Write down in one sentence <em>why</em> you made it. You've just started your first mistake log.</p>
               </MicroCommitment>
             </ReadingSection>
           )}

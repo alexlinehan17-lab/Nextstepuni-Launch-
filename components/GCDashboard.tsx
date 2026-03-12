@@ -6,7 +6,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CourseData } from './Library';
 import { SessionUser, getAvatarUrl } from './Auth';
-import { GraduationCap, LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, Trash2, AlertTriangle } from 'lucide-react';
+import { GraduationCap, LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, Trash2, AlertTriangle, CalendarDays } from 'lucide-react';
 import { db } from '../firebase';
 import { collection, query, where, getDocs, doc, getDoc, deleteDoc, setDoc } from 'firebase/firestore';
 import { getSchoolName } from '../schoolData';
@@ -20,6 +20,7 @@ import {
   JourneyResult,
 } from './gc/gcTypes';
 import { GCOverview } from './gc/GCOverview';
+import { GCKeyEvents } from './gc/GCKeyEvents';
 import { GCStudentDetail } from './gc/GCStudentDetail';
 import { generateAlerts, type DismissedAlert, type EarlyWarningAlert } from './gc/gcAlerts';
 
@@ -133,6 +134,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
 
   const sidebarItems = [
     { id: 'gc-overview', label: 'Overview', icon: LayoutDashboard, active: activeNav === 'gc-overview' },
+    { id: 'gc-events', label: 'Key Dates', icon: CalendarDays, active: activeNav === 'gc-events' },
     { id: 'gc-analytics', label: 'Analytics', icon: BarChart3, active: activeNav === 'gc-analytics' },
     { id: 'gc-students', label: 'Students', icon: Users, active: activeNav === 'gc-students' },
     { id: 'gc-notes', label: 'Notes', icon: StickyNote, active: activeNav === 'gc-notes' },
@@ -320,6 +322,10 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       <main className={`flex-1 flex flex-col transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]'}`}>
         {isLoading ? (
           <LoadingSkeleton />
+        ) : activeNav === 'gc-events' ? (
+          <div className="p-6 max-w-4xl mx-auto w-full">
+            <GCKeyEvents school={school} />
+          </div>
         ) : (
           <GCOverview
             studentData={studentData}

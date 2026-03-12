@@ -8,8 +8,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   ChevronLeft, ChevronRight, BookOpen, RotateCcw, Target,
   Clock, Calendar, TrendingUp, Settings, HelpCircle, X, ArrowRight, AlertTriangle, CalendarOff,
-  CheckCircle, Flame, BarChart3, Star, ShoppingBag, BookMarked,
+  CheckCircle, Flame, BarChart3, Star, ShoppingBag, BookMarked, CalendarDays,
 } from 'lucide-react';
+import { type SchoolEvent } from './gc/GCKeyEvents';
 import {
   type StudentSubjectProfile, type StudyBlock, DAYS_OF_WEEK, LC_SUBJECTS, getPointsForGrade, type Grade,
   type TimetableCompletions, type TimetableStreak, getBlockId, toDateKey,
@@ -44,6 +45,7 @@ interface SpacedRepetitionTimetableProps {
   skippedSessions?: string[];
   onStudyNow?: (block: TimetableBlockInfo) => void;
   onBlockDurationChange?: (subjectName: string, sessionType: string, newDuration: number) => void;
+  schoolEvents?: SchoolEvent[];
 }
 
 // ─── Subject Color Map (literal Tailwind strings for CDN constraint) ────────
@@ -212,7 +214,7 @@ const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> =
 
 // ─── Main Component ─────────────────────────────────────────────────────────
 
-const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, points = 0, onOpenShop, onOpenJournal, skippedSessions = [], onStudyNow, onBlockDurationChange }) => {
+const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, points = 0, onOpenShop, onOpenJournal, skippedSessions = [], onStudyNow, onBlockDurationChange, schoolEvents = [] }) => {
   const skippedSet = useMemo(() => new Set(skippedSessions), [skippedSessions]);
   const [weekOffset, setWeekOffset] = useState(0);
   const [selectedDay, setSelectedDay] = useState(0); // For mobile view
@@ -359,6 +361,20 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
     const blockId = getBlockId(block, blockIndex);
     setBlockActionModal(null);
     onToggleCompletion(dateKey, blockId, true);
+  };
+
+  // Helper: get school events for a specific day index
+  const getEventsForDay = (dayIndex: number): SchoolEvent[] => {
+    if (!schoolEvents.length) return [];
+    const dateKey = getDateKeyForDay(dayIndex);
+    return schoolEvents.filter(e => e.date === dateKey);
+  };
+
+  const EVENT_CAT_COLORS: Record<string, { bg: string; text: string; dot: string }> = {
+    exams: { bg: 'bg-red-100 dark:bg-red-900/30', text: 'text-red-700 dark:text-red-300', dot: 'bg-red-500' },
+    deadlines: { bg: 'bg-amber-100 dark:bg-amber-900/30', text: 'text-amber-700 dark:text-amber-300', dot: 'bg-amber-500' },
+    school: { bg: 'bg-blue-100 dark:bg-blue-900/30', text: 'text-blue-700 dark:text-blue-300', dot: 'bg-blue-500' },
+    other: { bg: 'bg-zinc-100 dark:bg-zinc-800', text: 'text-zinc-700 dark:text-zinc-300', dot: 'bg-zinc-500' },
   };
 
   // Today focus: compute today's day index within this week
@@ -570,6 +586,20 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
               ) : null}
             </div>
           </div>
+          {getEventsForDay(todayDayIndex).length > 0 && (
+            <div className="mt-3 space-y-1.5">
+              {getEventsForDay(todayDayIndex).map(ev => {
+                const cat = EVENT_CAT_COLORS[ev.category] || EVENT_CAT_COLORS.other;
+                return (
+                  <div key={ev.id} className={`flex items-center gap-2 px-3 py-1.5 rounded-lg ${cat.bg}`}>
+                    <div className={`w-2 h-2 rounded-full flex-shrink-0 ${cat.dot}`} />
+                    <CalendarDays size={12} className={cat.text} />
+                    <span className={`text-xs font-semibold ${cat.text}`}>{ev.title}</span>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </MotionDiv>
       )}
 
@@ -585,7 +615,12 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                 : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700'
             }`}
           >
-            {day}
+            <span className="relative inline-block">
+              {day}
+              {getEventsForDay(i).length > 0 && (
+                <span className="absolute -top-0.5 -right-1.5 w-1.5 h-1.5 rounded-full bg-amber-500" />
+              )}
+            </span>
             <span className="block text-[9px] font-normal mt-0.5">{timetable[i].blocks.length}</span>
           </button>
         ))}
@@ -602,6 +637,16 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
             transition={{ duration: 0.2 }}
             className="space-y-2"
           >
+            {getEventsForDay(selectedDay).map(ev => {
+              const cat = EVENT_CAT_COLORS[ev.category] || EVENT_CAT_COLORS.other;
+              return (
+                <div key={ev.id} className={`flex items-center gap-2 px-3 py-2 rounded-lg border border-zinc-200/50 dark:border-white/10 ${cat.bg}`}>
+                  <div className={`w-2 h-2 rounded-full flex-shrink-0 ${cat.dot}`} />
+                  <CalendarDays size={13} className={cat.text} />
+                  <span className={`text-xs font-semibold truncate ${cat.text}`}>{ev.title}</span>
+                </div>
+              );
+            })}
             {timetable[selectedDay].blocks.length > 0 ? (
               timetable[selectedDay].blocks.map((block, bi) => (
                 <StudyBlockCard
@@ -628,6 +673,15 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
               <p className="text-[9px] text-zinc-300 dark:text-zinc-600">{day.blocks.length} sessions</p>
             </div>
             <div className="space-y-1.5 min-h-[120px]">
+              {getEventsForDay(di).map(ev => {
+                const cat = EVENT_CAT_COLORS[ev.category] || EVENT_CAT_COLORS.other;
+                return (
+                  <div key={ev.id} className={`flex items-center gap-1 px-1.5 py-1 rounded-md ${cat.bg}`}>
+                    <div className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${cat.dot}`} />
+                    <span className={`text-[9px] font-semibold truncate ${cat.text}`}>{ev.title}</span>
+                  </div>
+                );
+              })}
               {day.blocks.length > 0 ? (
                 day.blocks.map((block, bi) => (
                   <StudyBlockCard

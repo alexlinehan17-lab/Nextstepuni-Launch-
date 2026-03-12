@@ -43,7 +43,7 @@ const PointsCalculator = () => {
     };
 
     const subjectPoints = subjects.map((s, i) => getPoints(s.grade, s.level, i === 0));
-    const totalPoints = subjectPoints.sort((a, b) => b - a).slice(0, 6).reduce((sum, p) => sum + p, 0);
+    const totalPoints = [...subjectPoints].sort((a, b) => b - a).slice(0, 6).reduce((sum, p) => sum + p, 0);
 
     return (
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
@@ -420,7 +420,7 @@ const LeavingCertStrategyModule: React.FC<{ onBack: () => void; progress: Module
             <ReadingSection title="English, Maths & Irish." eyebrow="Step 3" icon={Target} theme={theme}>
               <p>Studying hard is one thing, but studying the exam itself is what makes the real difference. For English, you need to understand <Highlight description="English is marked on four things: Purpose (30%), Coherence (30%), Language (30%), and Mechanics (10%). If you write with these in mind, you're giving the examiner exactly what they want." theme={theme}>how PCLM marking works</Highlight> and make sure you're timing Paper 2 properly so you actually finish.</p>
               <p>For Maths, the big secret is <Highlight description="You get marks for every correct step, even if your final answer is wrong. So never leave a question blank -- write down whatever you can, because every line could be worth marks." theme={theme}>partial credit</Highlight> -- every correct step earns marks, even if the final answer is wrong. For Irish, the oral is worth 40% of your total grade, so it's a massive opportunity. The key? <Highlight description="In the oral, it's much better to keep talking -- even with a few mistakes -- than to freeze up and say nothing. Fluency beats perfection." theme={theme}>Keep talking</Highlight>, even if it's not perfect.</p>
-              <PersonalStory name="Aoife, Dublin" role="Leaving Cert 2024">
+              <PersonalStory name="Ciara" role="Leaving Cert 2024, Dublin">
                 <p>I used to panic in the Irish oral and go completely silent when I made a mistake. Once I realised the examiner just wanted to hear me talk, I stopped worrying about being perfect and just kept going. I ended up getting a H3 -- way higher than I expected.</p>
               </PersonalStory>
             </ReadingSection>

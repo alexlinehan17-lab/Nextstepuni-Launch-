@@ -431,7 +431,7 @@ const MasteringTheCreativesModule: React.FC<{ onBack: () => void; progress: Modu
     <ModuleLayout
       moduleNumber="07"
       moduleTitle="Mastering the Creatives"
-      moduleSubtitle="Your Art, Music &amp; Film Playbook"
+      moduleSubtitle="Your Art, Music & Film Playbook"
       moduleDescription="Think you need 'natural talent' for the creatives? Think again. This module breaks it all down into skills you can learn step by step."
       theme={theme}
       sections={sections}
@@ -446,7 +446,7 @@ const MasteringTheCreativesModule: React.FC<{ onBack: () => void; progress: Modu
             <ReadingSection title="The Talent Myth." eyebrow="Step 1" icon={Key} theme={theme}>
               <p>You've probably heard it a hundred times: "She's just naturally gifted at art" or "He was born musical." Here's the truth -- that's nonsense. Art, Music, and Film in the Leaving Cert are not about being born with some special gift. They're skills, and you can get good at them the same way you'd get good at anything else: by learning the rules and practising smart.</p>
               <p>If you look at the marking schemes, the examiners aren't giving H1s for mysterious "genius." They reward students who show a clear process. That means <Highlight description="Practising with focus on the bits you find hard, not just repeating what you're already good at. It's how you actually improve." theme={theme}>deliberate practice</Highlight> -- pushing yourself on the stuff you're weakest at -- and <Highlight description="Creating something, getting feedback, improving it, and repeating. Think of every piece of work as a draft you can make better." theme={theme}>working in drafts</Highlight>, where you create, improve, and refine. This module is your step-by-step guide to doing exactly that.</p>
-              <PersonalStory name="Aoife" role="6th Year, Ballyfermot">
+              <PersonalStory name="Clodagh" role="6th Year, Ballyfermot">
                 <p>I genuinely thought I was terrible at Art. Like, I couldn't even draw a straight line. But when I stopped trying to make everything look perfect and started focusing on the process -- experimenting, messing up, trying again -- my teacher said my Visual Journal was one of the strongest in the class. I got a H2 and I still can't draw a straight line. Turns out that's not what they're looking for.</p>
               </PersonalStory>
               <DeliberatePracticeWheel />
@@ -467,8 +467,8 @@ const MasteringTheCreativesModule: React.FC<{ onBack: () => void; progress: Modu
           )}
            {activeSection === 3 && (
             <ReadingSection title="Film: Reading the Screen." eyebrow="Step 4" icon={Film} theme={theme}>
-              <p>Film isn't just a story on a screen -- every shot is a deliberate choice by the director. To get a H1, you can't just talk about the plot. You need to explain *how* the director tells the story visually. Why did they use a <Highlight description="The camera looks up at a character, which makes them look powerful, intimidating, or important." theme={theme}>Low Angle Shot</Highlight> to make the villain look scary? Why is the lighting dark and full of shadows (<Highlight description="Dark, moody lighting with strong shadows. Think horror films or detective movies -- it creates tension and mystery." theme={theme}>Low-Key Lighting</Highlight>) in that particular scene?</p>
-              <p>In the Comparative Study, you need to connect these visual choices to themes like General Vision & Viewpoint or Cultural Context. For example, in *Blade Runner*, the constant rain and shadow patterns aren't random -- they're borrowed from the style of old 1940s detective films called <Highlight description="A style of film from the 1940s known for dark, shadowy visuals and cynical characters. Directors still borrow from it today." theme={theme}>Film Noir</Highlight>, and they create a mood of paranoia and confusion. Spotting these connections is what separates a solid answer from a great one.</p>
+              <p>Film isn't just a story on a screen -- every shot is a deliberate choice by the director. To get a H1, you can't just talk about the plot. You need to explain <em>how</em> the director tells the story visually. Why did they use a <Highlight description="The camera looks up at a character, which makes them look powerful, intimidating, or important." theme={theme}>Low Angle Shot</Highlight> to make the villain look scary? Why is the lighting dark and full of shadows (<Highlight description="Dark, moody lighting with strong shadows. Think horror films or detective movies -- it creates tension and mystery." theme={theme}>Low-Key Lighting</Highlight>) in that particular scene?</p>
+              <p>In the Comparative Study, you need to connect these visual choices to themes like General Vision & Viewpoint or Cultural Context. For example, in <em>Blade Runner</em>, the constant rain and shadow patterns aren't random -- they're borrowed from the style of old 1940s detective films called <Highlight description="A style of film from the 1940s known for dark, shadowy visuals and cynical characters. Directors still borrow from it today." theme={theme}>Film Noir</Highlight>, and they create a mood of paranoia and confusion. Spotting these connections is what separates a solid answer from a great one.</p>
             </ReadingSection>
           )}
            {activeSection === 4 && (

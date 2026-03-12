@@ -271,8 +271,8 @@ const IllusionOfCompetenceModule: React.FC<{ onBack: () => void; progress: Modul
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Great Deception." eyebrow="Step 1" icon={Eye} theme={theme}>
-              <p>The most dangerous thing in your study life isn't the stuff you know you don't know. It's the stuff you *think* you know, but actually don't. This is the <Highlight description="That feeling where you're way more confident about a topic than you should be. You feel like you've got it nailed, but when the exam comes, it's just... gone." theme={theme}>Illusion of Competence</Highlight>. It's the number one reason people get a nasty shock after the Mocks.</p>
-              <p>It's caused by a simple brain shortcut: we mistake *recognising* information for being able to *recall* it. Seeing a definition in your notes and thinking "Oh yeah, I know that" feels like learning. But it's a trap. It gives you a false sense of security that falls apart in the exam hall when the notes are gone and you have to pull the information out of your head onto a blank page.</p>
+              <p>The most dangerous thing in your study life isn't the stuff you know you don't know. It's the stuff you <em>think</em> you know, but actually don't. This is the <Highlight description="That feeling where you're way more confident about a topic than you should be. You feel like you've got it nailed, but when the exam comes, it's just... gone." theme={theme}>Illusion of Competence</Highlight>. It's the number one reason people get a nasty shock after the Mocks.</p>
+              <p>It's caused by a simple brain shortcut: we mistake <em>recognising</em> information for being able to <em>recall</em> it. Seeing a definition in your notes and thinking "Oh yeah, I know that" feels like learning. But it's a trap. It gives you a false sense of security that falls apart in the exam hall when the notes are gone and you have to pull the information out of your head onto a blank page.</p>
             </ReadingSection>
           )}
           {activeSection === 1 && (

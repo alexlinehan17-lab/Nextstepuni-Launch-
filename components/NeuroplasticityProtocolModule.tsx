@@ -37,11 +37,11 @@ const JugglingStudyVisualizer = () => {
                     transition={{type: 'spring', damping: 15, stiffness: 100}}
                 />
              </div>
-             <p className="text-center font-bold mt-2">{currentData.label}</p>
+             <p className="text-center font-bold mt-2 dark:text-zinc-300">{currentData.label}</p>
              <div className="flex justify-center gap-2 mt-4">
-                <button onClick={() => setScan(1)} className={`px-3 py-1 text-xs font-bold rounded-full ${scan===1 ? 'bg-orange-500 text-white' : 'bg-zinc-100'}`}>Scan 1</button>
-                <button onClick={() => setScan(2)} className={`px-3 py-1 text-xs font-bold rounded-full ${scan===2 ? 'bg-orange-500 text-white' : 'bg-zinc-100'}`}>Scan 2</button>
-                <button onClick={() => setScan(3)} className={`px-3 py-1 text-xs font-bold rounded-full ${scan===3 ? 'bg-orange-500 text-white' : 'bg-zinc-100'}`}>Scan 3</button>
+                <button onClick={() => setScan(1)} className={`px-3 py-1 text-xs font-bold rounded-full ${scan===1 ? 'bg-orange-500 text-white' : 'bg-zinc-100 dark:bg-zinc-700 dark:text-zinc-300'}`}>Scan 1</button>
+                <button onClick={() => setScan(2)} className={`px-3 py-1 text-xs font-bold rounded-full ${scan===2 ? 'bg-orange-500 text-white' : 'bg-zinc-100 dark:bg-zinc-700 dark:text-zinc-300'}`}>Scan 2</button>
+                <button onClick={() => setScan(3)} className={`px-3 py-1 text-xs font-bold rounded-full ${scan===3 ? 'bg-orange-500 text-white' : 'bg-zinc-100 dark:bg-zinc-700 dark:text-zinc-300'}`}>Scan 3</button>
              </div>
         </div>
     );
@@ -54,8 +54,8 @@ const StudyMethodGrader = () => {
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Study Method Grader</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Which study method sends a stronger signal to build your brain?</p>
              <div className="grid grid-cols-2 gap-4">
-                <button onClick={() => setMethod('passive')} className="p-4 bg-rose-50 border border-rose-200 rounded-xl text-center"><strong>Passive Re-reading:</strong> "I'll just read my notes again."</button>
-                <button onClick={() => setMethod('active')} className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl text-center"><strong>Active Recall:</strong> "I'll try to explain this from memory."</button>
+                <button onClick={() => setMethod('passive')} className="p-4 bg-rose-50 dark:bg-rose-900/30 dark:text-rose-300 border border-rose-200 dark:border-rose-800 rounded-xl text-center"><strong>Passive Re-reading:</strong> "I'll just read my notes again."</button>
+                <button onClick={() => setMethod('active')} className="p-4 bg-emerald-50 dark:bg-emerald-900/30 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 rounded-xl text-center"><strong>Active Recall:</strong> "I'll try to explain this from memory."</button>
              </div>
              {method &&
              <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6">
@@ -315,7 +315,7 @@ const NeuroplasticityProtocolModule: React.FC<{ onBack: () => void; progress: Mo
            {activeSection === 1 && (
             <ReadingSection title="The Brain's Renovation." eyebrow="Step 2" icon={Wrench} theme={theme}>
               <p>Your brain is doing two big renovation jobs at once right now. The first is <Highlight description="Your brain cutting away connections you don't use anymore. Think of it like a gardener trimming dead branches so the healthy ones get more energy. It makes your brain faster and more efficient." theme={theme}>Synaptic Pruning</Highlight>. Basically, your brain is like a gardener, trimming away the connections you don't use to free up energy for the ones you do. This is "use it or lose it" in action. If you stop practising something, your brain actually takes apart the wiring for it.</p>
-              <p>The second job is <Highlight description="Your brain wrapping insulation around the pathways you use a lot, like upgrading a country lane to a motorway. It makes signals travel way faster, so you can think and react quicker." theme={theme}>Myelination</Highlight>. Think of this as upgrading a bumpy country road to a motorway. Your brain wraps insulation around the pathways you use often, making them super-fast and efficient. Practice doesn't just make perfect -- it makes things *faster*.</p>
+              <p>The second job is <Highlight description="Your brain wrapping insulation around the pathways you use a lot, like upgrading a country lane to a motorway. It makes signals travel way faster, so you can think and react quicker." theme={theme}>Myelination</Highlight>. Think of this as upgrading a bumpy country road to a motorway. Your brain wraps insulation around the pathways you use often, making them super-fast and efficient. Practice doesn't just make perfect -- it makes things <em>faster</em>.</p>
             </ReadingSection>
           )}
            {activeSection === 2 && (
@@ -334,7 +334,7 @@ const NeuroplasticityProtocolModule: React.FC<{ onBack: () => void; progress: Mo
           )}
           {activeSection === 4 && (
             <ReadingSection title="The Learning Blueprint." eyebrow="Step 5" icon={ClipboardCheck} theme={theme}>
-                <p>All of this tells us *why* certain study techniques actually work and others are a waste of time. For example, <Highlight description="Going back over material at spaced-out intervals -- like reviewing something after 1 day, then 3 days, then a week. It works because you're reminding your brain 'hey, keep this connection' just before it starts to fade." theme={theme}>Spaced Repetition</Highlight> works because it tells your brain "this is important, keep this pathway." Cramming, on the other hand, is like one intense stampede across the grass -- it doesn't create a trail that lasts.</p>
+                <p>All of this tells us <em>why</em> certain study techniques actually work and others are a waste of time. For example, <Highlight description="Going back over material at spaced-out intervals -- like reviewing something after 1 day, then 3 days, then a week. It works because you're reminding your brain 'hey, keep this connection' just before it starts to fade." theme={theme}>Spaced Repetition</Highlight> works because it tells your brain "this is important, keep this pathway." Cramming, on the other hand, is like one intense stampede across the grass -- it doesn't create a trail that lasts.</p>
                 <p>Same idea with <Highlight description="Instead of just re-reading your notes, you close the book and try to remember the material from scratch -- using flashcards, practice questions, or just explaining it to yourself. It's harder, but that effort is what forces your brain to actually strengthen the connection." theme={theme}>Active Recall</Highlight>. It's way more effective than just reading over your notes again. Why? Because re-reading is easy, so it sends a weak signal to your brain. Active recall forces your brain to rebuild the whole connection from scratch, and that effort is what makes it stick.</p>
                 <StudyMethodGrader />
             </ReadingSection>

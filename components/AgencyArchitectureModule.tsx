@@ -210,7 +210,7 @@ const AttributionSorter = ({ savedChoices, onSave }: { savedChoices?: { [key: st
 const AttributionReframeDrill = () => {
   const examples = [
     { id: 1, maladaptive: "I failed the test because I am stupid.", adaptive: "I failed the test because my study strategy for this topic was ineffective." },
-    { id: 2, maladaptive: "I'm just naturally bad at Maths.", adaptive: "I haven't found an effective way to learn Maths *yet*." },
+    { id: 2, maladaptive: "I'm just naturally bad at Maths.", adaptive: "I haven't found an effective way to learn Maths yet." },
     { id: 3, maladaptive: "I'll never be good enough to get a H1.", adaptive: "Getting a H1 is a difficult goal, so I will need to break it down into smaller, manageable steps." },
   ];
 
@@ -314,7 +314,7 @@ const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleP
            {activeSection === 3 && (
             <ReadingSection title="The Agency Re-Write." eyebrow="Step 4" icon={Recycle} theme={theme}>
               <p>The good news is that you can consciously re-write this script. This is called <Highlight description="Basically, training yourself to change the story you tell about why things went wrong. Instead of jumping to 'I'm useless,' you learn to say 'my approach didn't work — what can I try differently?'" theme={theme}>Attributional Retraining</Highlight>. It genuinely works — students who practise this become more resilient and do better in their exams.</p>
-              <p>The goal is to shift your explanations towards causes that are <strong>Internal, Unstable, and Controllable</strong>. "I failed the test because I am stupid" becomes "I failed the test because my *strategy* was ineffective." The cause is still internal (giving you agency), but it's unstable (you can change your strategy) and controllable. This isn't just wordplay; it's a fundamental shift in your brain's operating system that turns a dead end into a learning opportunity.</p>
+              <p>The goal is to shift your explanations towards causes that are <strong>Internal, Unstable, and Controllable</strong>. "I failed the test because I am stupid" becomes "I failed the test because my <em>strategy</em> was ineffective." The cause is still internal (giving you agency), but it's unstable (you can change your strategy) and controllable. This isn't just wordplay; it's a fundamental shift in your brain's operating system that turns a dead end into a learning opportunity.</p>
               <AttributionReframeDrill />
             </ReadingSection>
           )}

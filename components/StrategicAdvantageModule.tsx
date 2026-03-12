@@ -109,28 +109,28 @@ const AgencyCommunionBalancer = () => {
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-12">Click the narrative statement that builds the most robust identity.</p>
              <div className="h-40 flex justify-center items-center">
                 <motion.div animate={{rotate: balance * 15}} className="w-56 h-20 relative">
-                    <div className="w-full h-2 bg-zinc-300 absolute bottom-0 left-0" />
-                    <div className="w-2 h-4 bg-zinc-300 absolute bottom-0 left-1/2 -translate-x-1/2" />
-                    <div className="w-12 h-12 bg-blue-100 rounded-md absolute -left-6 -bottom-1" />
-                    <div className="w-12 h-12 bg-emerald-100 rounded-md absolute -right-6 -bottom-1" />
+                    <div className="w-full h-2 bg-zinc-300 dark:bg-zinc-600 absolute bottom-0 left-0" />
+                    <div className="w-2 h-4 bg-zinc-300 dark:bg-zinc-600 absolute bottom-0 left-1/2 -translate-x-1/2" />
+                    <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/40 rounded-md absolute -left-6 -bottom-1" />
+                    <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/40 rounded-md absolute -right-6 -bottom-1" />
                 </motion.div>
              </div>
              <div className="grid grid-cols-3 gap-2 mt-6">
                 <button
                     onClick={() => setBalance(-1)}
-                    className={`p-2 text-xs border rounded-lg transition-all ${balance === -1 ? 'border-blue-500 bg-blue-50' : 'border-zinc-200 dark:border-zinc-700'}`}
+                    className={`p-2 text-xs border rounded-lg transition-all ${balance === -1 ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/30 dark:text-blue-300' : 'border-zinc-200 dark:border-zinc-700'}`}
                 >
                     "I did it all myself." (Pure Agency)
                 </button>
                 <button
                     onClick={() => setBalance(0)}
-                    className={`p-2 text-xs border rounded-lg transition-all ${balance === 0 ? 'border-indigo-500 bg-indigo-50' : 'border-zinc-200 dark:border-zinc-700'}`}
+                    className={`p-2 text-xs border rounded-lg transition-all ${balance === 0 ? 'border-indigo-500 bg-indigo-50 dark:bg-indigo-900/30 dark:text-indigo-300' : 'border-zinc-200 dark:border-zinc-700'}`}
                 >
-                    "I worked hard to honor my family's sacrifices." (Balanced)
+                    "I worked hard to honour my family's sacrifices." (Balanced)
                 </button>
                 <button
                     onClick={() => setBalance(1)}
-                    className={`p-2 text-xs border rounded-lg transition-all ${balance === 1 ? 'border-emerald-500 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}
+                    className={`p-2 text-xs border rounded-lg transition-all ${balance === 1 ? 'border-emerald-500 bg-emerald-50 dark:bg-emerald-900/30 dark:text-emerald-300' : 'border-zinc-200 dark:border-zinc-700'}`}
                 >
                     "I only survived because of others." (Pure Communion)
                 </button>
@@ -337,7 +337,7 @@ const StrategicAdvantageModule: React.FC<{ onBack: () => void; progress: ModuleP
            {activeSection === 1 && (
             <ReadingSection title="The Two Pillars." eyebrow="Step 2" icon={Scale} theme={theme}>
                 <p>Every great story is built on two core themes. The first is <Highlight description="The part of your story that is about you taking charge -- your independence, your effort, and your ability to shape your own future through your own actions." theme={theme}>Agency</Highlight>--the story of the self-reliant hero who overcomes obstacles through their own power. The second is <Highlight description="The part of your story that is about the people around you -- your family, friends, and community, and how those relationships have shaped who you are." theme={theme}>Communion</Highlight>--the story of connection, of being supported by family, friends, and community.</p>
-                <p>A story of pure Agency leads to the "Isolated Hero" who burns out. A story of pure Communion leads to passivity. The most resilient narrative identities skillfully weave both: "I worked hard (Agency) to honor the sacrifices of my family (Communion)." Finding this balance is key to a sustainable story of success.</p>
+                <p>A story of pure Agency leads to the "Isolated Hero" who burns out. A story of pure Communion leads to passivity. The most resilient narrative identities skillfully weave both: "I worked hard (Agency) to honour the sacrifices of my family (Communion)." Finding this balance is key to a sustainable story of success.</p>
                 <AgencyCommunionBalancer />
             </ReadingSection>
           )}

@@ -431,7 +431,7 @@ const CatastrophicThinkingModule: React.FC<{ onBack: () => void; progress: Modul
           )}
           {activeSection === 2 && (
             <ReadingSection title="Challenging Your Thoughts (CBT)." eyebrow="Step 3" icon={BookOpen} theme={theme}>
-              <p><Highlight description="CBT stands for Cognitive Behavioral Therapy. Basically, it's a way of noticing the thoughts that make you feel awful and learning to question whether they're actually true." theme={theme}>CBT</Highlight> is one of the most effective ways to break the panic cycle. The big idea is actually pretty simple: it's not the exam that makes you panic -- it's what you *think* about the exam. The exam paper is just paper. The thought "I can't do this" is what triggers the panic. CBT teaches you to catch that thought and challenge it.</p>
+              <p><Highlight description="CBT stands for Cognitive Behavioral Therapy. Basically, it's a way of noticing the thoughts that make you feel awful and learning to question whether they're actually true." theme={theme}>CBT</Highlight> is one of the most effective ways to break the panic cycle. The big idea is actually pretty simple: it's not the exam that makes you panic -- it's what you <em>think</em> about the exam. The exam paper is just paper. The thought "I can't do this" is what triggers the panic. CBT teaches you to catch that thought and challenge it.</p>
             </ReadingSection>
           )}
           {activeSection === 3 && (

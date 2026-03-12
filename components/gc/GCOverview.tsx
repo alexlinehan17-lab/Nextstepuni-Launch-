@@ -28,6 +28,7 @@ import {
   getClassMoodDistribution,
 } from './gcUtils';
 import { type EarlyWarningAlert, type AlertSeverity } from './gcAlerts';
+import { GCKeyEvents } from './GCKeyEvents';
 
 const MotionDiv = motion.div as any;
 
@@ -599,6 +600,9 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           </MotionDiv>
         ))}
       </div>
+
+      {/* ─── Key Dates & Events ──────────────────────────────────────── */}
+      <GCKeyEvents school={school} />
 
       {/* ─── Daily Activity Chart ────────────────────────────────────── */}
       {(() => {

@@ -132,6 +132,236 @@ export const PersonalStory = ({ children, name, role }: PersonalStoryProps) => (
   </div>
 );
 
+/* ---- Dual Chart Comparison ---- */
+
+interface ChartSeriesData {
+  data: number[];
+  color: string;
+  legendLabel: string;
+  /** If true this series gets the area fill and dots; if false it is drawn as the dashed secondary line. Default: first series is primary. */
+}
+
+interface ChartPhase {
+  label: string;
+  x1: number;
+  x2: number;
+  color: string;
+}
+
+interface ChartPanelConfig {
+  /** Label rendered at the top of the SVG chart */
+  label: string;
+  /** Primary series (solid line, area fill, dots) */
+  primary: ChartSeriesData;
+  /** Secondary series (dashed line) */
+  secondary: ChartSeriesData;
+  /** Optional phase annotations rendered below x-axis */
+  phases?: ChartPhase[];
+  /** Which series provides the area fill: 'primary' (default) or 'secondary' */
+  areaSource?: 'primary' | 'secondary';
+  /** Border / background color scheme for the card wrapping the chart */
+  borderColor: 'rose' | 'emerald';
+}
+
+interface DualChartComparisonProps {
+  /** Heading above both charts */
+  heading: string;
+  /** Subheading / tagline */
+  subheading: string;
+  /** X-axis tick labels (e.g. day names, time labels) */
+  xLabels: string[];
+  /** Left chart panel configuration */
+  leftPanel: ChartPanelConfig;
+  /** Right chart panel configuration */
+  rightPanel: ChartPanelConfig;
+  /** Text shown on the reveal button */
+  revealButtonText: string;
+  /** Tailwind bg color class for the reveal button, e.g. "bg-orange-500" */
+  revealButtonColor: string;
+  /** Tailwind hover bg class for the reveal button, e.g. "hover:bg-orange-600" */
+  revealButtonHover: string;
+  /** Teaser paragraph shown before reveal */
+  teaserText: string;
+  /** Description shown below the left chart after reveal */
+  leftDescription: React.ReactNode;
+  /** Description shown below the right chart after reveal */
+  rightDescription: React.ReactNode;
+  /** Unique prefix for SVG gradient ids to avoid collisions when multiple instances are on-page */
+  idPrefix: string;
+}
+
+const BORDER_COLORS = {
+  rose: {
+    border: 'border-rose-200 dark:border-rose-900',
+    bg: 'bg-rose-50/50 dark:bg-rose-950/20',
+    descBorder: 'border-rose-200 dark:border-rose-900',
+    descBg: 'bg-rose-50 dark:bg-rose-950/30',
+  },
+  emerald: {
+    border: 'border-emerald-200 dark:border-emerald-900',
+    bg: 'bg-emerald-50/50 dark:bg-emerald-950/20',
+    descBorder: 'border-emerald-200 dark:border-emerald-900',
+    descBg: 'bg-emerald-50 dark:bg-emerald-950/30',
+  },
+} as const;
+
+const SVG_W = 440, SVG_H = 260;
+const PAD_L = 8, PAD_R = 8, PAD_T = 28, PAD_B = 44;
+const CHART_W = SVG_W - PAD_L - PAD_R;
+const CHART_H = SVG_H - PAD_T - PAD_B;
+const chartToX = (f: number) => PAD_L + f * CHART_W;
+const chartToY = (f: number) => PAD_T + (1 - f) * CHART_H;
+
+function chartBuildArea(data: number[]): string {
+  const pts = data.map((v, i) => ({ x: chartToX(i / (data.length - 1)), y: chartToY(v) }));
+  let d = `M ${pts[0].x} ${chartToY(0)} L ${pts[0].x} ${pts[0].y}`;
+  for (let i = 1; i < pts.length; i++) {
+    const cx1 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.4;
+    const cx2 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.6;
+    d += ` C ${cx1} ${pts[i - 1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`;
+  }
+  d += ` L ${pts[pts.length - 1].x} ${chartToY(0)} Z`;
+  return d;
+}
+
+function chartBuildLine(data: number[]): string {
+  const pts = data.map((v, i) => ({ x: chartToX(i / (data.length - 1)), y: chartToY(v) }));
+  let d = `M ${pts[0].x} ${pts[0].y}`;
+  for (let i = 1; i < pts.length; i++) {
+    const cx1 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.4;
+    const cx2 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.6;
+    d += ` C ${cx1} ${pts[i - 1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`;
+  }
+  return d;
+}
+
+const MotionDivAny = motion.div as any;
+
+const DualChartSvg = ({ panel, xLabels, gradientId }: { panel: ChartPanelConfig; xLabels: string[]; gradientId: string }) => {
+  const areaData = panel.areaSource === 'secondary' ? panel.secondary.data : panel.primary.data;
+  const areaColor = panel.primary.color;
+
+  // Compute legend widths dynamically
+  const primaryLabelLen = panel.primary.legendLabel.length;
+  const secondaryLabelLen = panel.secondary.legendLabel.length;
+  const secondaryLegendW = secondaryLabelLen * 5 + 20; // approx char width + line
+  const primaryLegendW = primaryLabelLen * 5 + 20;
+  const totalLegendW = primaryLegendW + secondaryLegendW + 8;
+  const legendStartX = SVG_W - PAD_R - totalLegendW;
+
+  return (
+    <svg viewBox={`0 0 ${SVG_W} ${SVG_H}`} className="w-full">
+      <defs>
+        <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={areaColor} stopOpacity="0.5" />
+          <stop offset="100%" stopColor={areaColor} stopOpacity="0.05" />
+        </linearGradient>
+      </defs>
+      {/* Grid lines */}
+      {[0.25, 0.5, 0.75, 1.0].map(v => (
+        <line key={v} x1={PAD_L} x2={SVG_W - PAD_R} y1={chartToY(v)} y2={chartToY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />
+      ))}
+      {/* Baseline */}
+      <line x1={PAD_L} x2={SVG_W - PAD_R} y1={chartToY(0)} y2={chartToY(0)} stroke="#a1a1aa" strokeOpacity="0.3" />
+      {/* Area fill */}
+      <motion.path
+        d={chartBuildArea(areaData)}
+        fill={`url(#${gradientId})`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      />
+      {/* Primary line (solid) */}
+      <motion.path
+        d={chartBuildLine(panel.primary.data)}
+        fill="none" stroke={areaColor} strokeWidth="2.5" strokeLinecap="round"
+        initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
+        transition={{ duration: 1.2, ease: 'easeOut' }}
+      />
+      {/* Secondary line (dashed) */}
+      <motion.path
+        d={chartBuildLine(panel.secondary.data)}
+        fill="none" stroke={panel.secondary.color} strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
+        initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
+        transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
+      />
+      {/* Primary dots */}
+      {panel.primary.data.map((v, i) => (
+        <motion.circle key={i} cx={chartToX(i / (panel.primary.data.length - 1))} cy={chartToY(v)} r="3.5" fill={areaColor}
+          initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 * i + 0.3 }}
+        />
+      ))}
+      {/* Y-axis labels */}
+      <text x={PAD_L + 2} y={chartToY(1.0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text>
+      <text x={PAD_L + 2} y={chartToY(0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>
+      {/* X-axis labels */}
+      {xLabels.map((m, i) => (
+        <text key={m} x={chartToX(i / (xLabels.length - 1))} y={chartToY(0) + 14} fontSize="9" fill="#a1a1aa" textAnchor="middle" fontWeight="600">{m}</text>
+      ))}
+      {/* Phase labels */}
+      {panel.phases?.map((p, i) => (
+        <text key={i} x={chartToX((p.x1 + p.x2) / 2)} y={chartToY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
+      ))}
+      {/* Chart label */}
+      <text x={SVG_W / 2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">{panel.label}</text>
+      {/* Legend */}
+      <line x1={legendStartX} x2={legendStartX + 16} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
+      <text x={legendStartX + 20} y={17} fontSize="8" fill="#a1a1aa">{panel.primary.legendLabel}</text>
+      <line x1={legendStartX + primaryLegendW + 4} x2={legendStartX + primaryLegendW + 20} y1={14} y2={14} stroke={panel.secondary.color} strokeWidth="1.5" strokeDasharray="4 2" />
+      <text x={legendStartX + primaryLegendW + 24} y={17} fontSize="8" fill="#a1a1aa">{panel.secondary.legendLabel}</text>
+    </svg>
+  );
+};
+
+export const DualChartComparison = ({
+  heading, subheading, xLabels,
+  leftPanel, rightPanel,
+  revealButtonText, revealButtonColor, revealButtonHover,
+  teaserText,
+  leftDescription, rightDescription,
+  idPrefix,
+}: DualChartComparisonProps) => {
+  const [revealed, setRevealed] = useState(false);
+
+  const leftColors = BORDER_COLORS[leftPanel.borderColor];
+  const rightColors = BORDER_COLORS[rightPanel.borderColor];
+
+  return (
+    <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">{heading}</h4>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">{subheading}</p>
+
+      {!revealed ? (
+        <div className="text-center">
+          <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">{teaserText}</p>
+          <button onClick={() => setRevealed(true)} className={`px-5 py-2.5 text-sm font-bold rounded-lg ${revealButtonColor} text-white ${revealButtonHover} transition-colors`}>
+            {revealButtonText}
+          </button>
+        </div>
+      ) : (
+        <MotionDivAny initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
+          <div className="grid md:grid-cols-2 gap-4 mb-5">
+            <div className={`rounded-lg border ${leftColors.border} ${leftColors.bg} p-3`}>
+              <DualChartSvg panel={leftPanel} xLabels={xLabels} gradientId={`${idPrefix}-left-grad`} />
+            </div>
+            <div className={`rounded-lg border ${rightColors.border} ${rightColors.bg} p-3`}>
+              <DualChartSvg panel={rightPanel} xLabels={xLabels} gradientId={`${idPrefix}-right-grad`} />
+            </div>
+          </div>
+          <div className="grid md:grid-cols-2 gap-4 text-sm">
+            <div className={`flex items-start gap-2.5 p-3 rounded-lg ${leftColors.descBg} border ${leftColors.descBorder}`}>
+              {leftDescription}
+            </div>
+            <div className={`flex items-start gap-2.5 p-3 rounded-lg ${rightColors.descBg} border ${rightColors.descBorder}`}>
+              {rightDescription}
+            </div>
+          </div>
+        </MotionDivAny>
+      )}
+    </div>
+  );
+};
+
 interface ActivityRingProps {
   progress: number;
   color?: string;
