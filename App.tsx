@@ -1011,8 +1011,6 @@ const App: React.FC = () => {
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             >
               <img src="/nextstepuni-logo.png" alt="Nextstepuni" className="h-12 sm:h-14 w-auto" />
-              <div className="w-px h-8 bg-zinc-300 dark:bg-zinc-600" />
-              <img src="/pwc-logo.png" alt="PwC" className="h-20 sm:h-24 w-auto" />
             </motion.div>
 
             {/* Headline */}
@@ -1091,10 +1089,8 @@ const App: React.FC = () => {
           >
             <div className="flex items-center gap-5">
               <img src="/nextstepuni-logo.png" alt="Nextstepuni" className="h-6 w-auto opacity-40 dark:opacity-30" />
-              <div className="w-px h-5 bg-zinc-300 dark:bg-zinc-700" />
-              <img src="/pwc-logo.png" alt="PwC" className="h-5 w-auto opacity-40 dark:opacity-30" />
             </div>
-            <p className="text-[11px] text-zinc-400 dark:text-zinc-500 tracking-wide">Built for NEIC schools in collaboration with PwC</p>
+            <p className="text-[11px] text-zinc-400 dark:text-zinc-500 tracking-wide">Built for NEIC schools</p>
           </motion.div>
 
           {/* ── DEV: Skip Login ── */}
