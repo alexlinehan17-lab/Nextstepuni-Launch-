@@ -19,9 +19,12 @@ export function useNorthStar() {
       return;
     }
 
+    let cancelled = false;
+
     const load = async () => {
       try {
         const snap = await getDoc(doc(db, 'progress', uid));
+        if (cancelled) return;
         if (snap.exists()) {
           const data = snap.data();
           if (data.northStar) {
@@ -31,10 +34,11 @@ export function useNorthStar() {
       } catch (err) {
         console.error('Failed to load North Star:', err);
       }
-      setIsLoaded(true);
+      if (!cancelled) setIsLoaded(true);
     };
 
     load();
+    return () => { cancelled = true; };
   }, []);
 
   const saveNorthStar = useCallback(async (ns: NorthStar) => {

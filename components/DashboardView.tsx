@@ -8,11 +8,9 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, BookOpen, Flame, Coins, ChevronRight } from 'lucide-react';
 import { CategoryType } from './KnowledgeTree';
 import { CourseData } from './Library';
-import { MoodEntry } from '../hooks/useMood';
 import { StreakData } from '../hooks/useStreak';
 import { FocusRecommendation } from '../hooks/useTodaysFocus';
 import { categoryColorMap } from '../courseData';
-import { MoodFaceIcon } from './MoodFaceIcon';
 
 const MotionDiv = motion.div as any;
 
@@ -26,15 +24,10 @@ interface DashboardViewProps {
   categoryTitles: Record<CategoryType, string>;
   streak: StreakData;
   recommendation: FocusRecommendation | null;
-  moodEntries: MoodEntry[];
   onSelectModule: (moduleId: string) => void;
   onBack: () => void;
   pointsBalance: number;
 }
-
-const MOOD_ICON_KEYS = new Set(['calm', 'balanced', 'energized', 'stressed']);
-
-const DAY_LABELS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const CATEGORY_ORDER: { key: CategoryType; barColor: string }[] = [
   { key: 'architecture-mindset', barColor: 'bg-blue-500' },
@@ -50,7 +43,6 @@ const DashboardView: React.FC<DashboardViewProps> = ({
   categoryTitles,
   streak,
   recommendation,
-  moodEntries,
   onSelectModule,
   onBack,
   pointsBalance,
@@ -59,13 +51,6 @@ const DashboardView: React.FC<DashboardViewProps> = ({
     const p = userProgress[c.id];
     return p && p.unlockedSection >= c.sectionsCount;
   }).length;
-
-  // Build 7-day mood timeline
-  const last7Days = Array.from({ length: 7 }, (_, i) => {
-    const d = new Date();
-    d.setDate(d.getDate() - (6 - i));
-    return d.toISOString().slice(0, 10);
-  });
 
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 pt-16 md:pt-24 pb-40 md:pb-32 px-4 sm:px-6 transition-colors duration-500">
@@ -205,37 +190,6 @@ const DashboardView: React.FC<DashboardViewProps> = ({
           </MotionDiv>
         )}
 
-        {/* 7-day mood timeline */}
-        <MotionDiv
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.35 }}
-          className="card-styled bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-6"
-        >
-          <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-5">7-Day Mood</h2>
-          <div className="flex items-end justify-between gap-2">
-            {last7Days.map((dateStr) => {
-              const entry = moodEntries.find(e => e.date === dateStr);
-              const dayOfWeek = new Date(dateStr + 'T12:00:00').getDay();
-              const hasMood = entry && MOOD_ICON_KEYS.has(entry.mood);
-
-              return (
-                <div key={dateStr} className="flex flex-col items-center gap-2 flex-1">
-                  <div className={`w-9 h-9 rounded-full flex items-center justify-center ${
-                    hasMood
-                      ? 'bg-[rgba(var(--accent),0.1)] text-[var(--accent-hex)]'
-                      : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-300 dark:text-zinc-600'
-                  }`}>
-                    {hasMood ? <MoodFaceIcon mood={entry.mood} size={16} /> : <div className="w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-600" />}
-                  </div>
-                  <span className="text-[10px] font-medium text-zinc-400 dark:text-zinc-500">
-                    {DAY_LABELS[dayOfWeek]}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-        </MotionDiv>
       </div>
     </div>
   );

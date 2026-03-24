@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   AlertTriangle, Lightbulb, ToggleRight, ZapOff, Wrench
@@ -90,7 +90,15 @@ const AmygdalaHijackSimulator = () => {
     high: 1.0,
   };
 
+  const stressIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
   const animateStress = useCallback((target: number) => {
+    // Clear any previous stress animation interval
+    if (stressIntervalRef.current) {
+      clearInterval(stressIntervalRef.current);
+      stressIntervalRef.current = null;
+    }
+
     setIsAnimating(true);
     setBalanced(false);
     setHijackLabel(false);
@@ -103,11 +111,14 @@ const AmygdalaHijackSimulator = () => {
 
     let current = 0;
     const step = target / 20;
-    const interval = setInterval(() => {
+    stressIntervalRef.current = setInterval(() => {
       current += step;
       if (current >= target) {
         current = target;
-        clearInterval(interval);
+        if (stressIntervalRef.current) {
+          clearInterval(stressIntervalRef.current);
+          stressIntervalRef.current = null;
+        }
         setIsAnimating(false);
         if (target >= 0.7) {
           setHijackLabel(true);
@@ -115,6 +126,15 @@ const AmygdalaHijackSimulator = () => {
       }
       setStressLevel(current);
     }, 50);
+  }, []);
+
+  // Clean up stress animation interval on unmount
+  useEffect(() => {
+    return () => {
+      if (stressIntervalRef.current) {
+        clearInterval(stressIntervalRef.current);
+      }
+    };
   }, []);
 
   const handleScenario = (level: string) => {
@@ -135,6 +155,14 @@ const AmygdalaHijackSimulator = () => {
     });
   }, []);
 
+  // Keep a ref to the current stressLevel so the breathing interval
+  // doesn't need stressLevel in its dependency array (which would
+  // tear down and recreate the interval on every stress change).
+  const stressLevelRef = useRef(stressLevel);
+  useEffect(() => {
+    stressLevelRef.current = stressLevel;
+  }, [stressLevel]);
+
   // Box breathing effect
   useEffect(() => {
     if (recoveryActive !== 'breathing') return;
@@ -145,10 +173,10 @@ const AmygdalaHijackSimulator = () => {
           setBreathCount(c => {
             const newCount = c + 1;
             if (newCount >= 3) {
-              reduceStress(stressLevel);
+              reduceStress(stressLevelRef.current);
               return 0;
             }
-            reduceStress(stressLevel * 0.3);
+            reduceStress(stressLevelRef.current * 0.3);
             return newCount;
           });
         }
@@ -156,7 +184,7 @@ const AmygdalaHijackSimulator = () => {
       });
     }, 1200);
     return () => clearInterval(interval);
-  }, [recoveryActive, stressLevel, reduceStress]);
+  }, [recoveryActive, reduceStress]);
 
   // Grounding clicks
   const handleGroundingClick = () => {

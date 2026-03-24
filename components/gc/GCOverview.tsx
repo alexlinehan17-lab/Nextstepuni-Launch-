@@ -3,14 +3,14 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo } from 'react';
-import { motion } from 'framer-motion';
-import { TrendingUp, TrendingDown, Minus, AlertTriangle, Search, ChevronDown, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2, X, AlertCircle, Eye } from 'lucide-react';
+import React, { useState, useMemo, useRef } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronDown, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2, X, AlertCircle, Eye, Megaphone } from 'lucide-react';
 import { CourseData } from '../Library';
 import { CategoryType } from '../KnowledgeTree';
 import { getAvatarUrl } from '../Auth';
 import { getSchoolName } from '../../schoolData';
-import { GCStudentFullData, MoodTrend, StudentStatus } from './gcTypes';
+import { GCStudentFullData, StudentStatus } from './gcTypes';
 import {
   getOverallProgress,
   getCategoryProgress,
@@ -19,20 +19,45 @@ import {
   getStudentTargetCAO,
   getDaysUntilLC,
   isActiveThisWeek,
-  getLatestMood,
   getProgressDistribution,
-  getMoodTrend,
   getSubjectGaps,
   generateStudentCSV,
   getRecentlyActiveStudents,
-  getClassMoodDistribution,
 } from './gcUtils';
 import { type EarlyWarningAlert, type AlertSeverity } from './gcAlerts';
 import { GCKeyEvents } from './GCKeyEvents';
+import { SubjectHealthPanel } from './SubjectHealthPanel';
+import { addNotificationToMultiple } from './gcNotifications';
 
 const MotionDiv = motion.div as any;
 
 const CUSTOM_EASE = [0.16, 1, 0.3, 1] as const;
+
+// ─── Design tokens ──────────────────────────────────────────────────────────
+
+const CARD_STYLE: React.CSSProperties = {
+  backgroundColor: '#FAF7F4',
+  border: '0.5px solid rgba(0,0,0,0.07)',
+  borderRadius: 12,
+  padding: 20,
+};
+
+const CARD_STYLE_DARK_CLASS = 'dark:!bg-[rgba(255,255,255,0.04)] dark:!border-[rgba(255,255,255,0.08)]';
+
+const ACCENT = '#2A7D6F';
+const ACCENT_DARK = '#4DB8A4';
+const SAGE = '#6B8F71';
+const WARM_AMBER = '#C4873B';
+const NEUTRAL_GREY = '#9A9590';
+const TRACK_BG = '#EDEAE6';
+
+// Dark mode badge/surface overrides (used via Tailwind dark: classes)
+const BADGE_SAGE_DARK = 'dark:!bg-[rgba(107,143,113,0.15)] dark:!text-[#8AB592]';
+const BADGE_AMBER_DARK = 'dark:!bg-[rgba(196,135,59,0.15)] dark:!text-[#D4A95C]';
+const BADGE_CLAY_DARK = 'dark:!bg-[rgba(42,125,111,0.15)] dark:!text-[#6BC4B0]';
+const TEXT_ACCENT_DARK = 'dark:!text-[#4DB8A4]';
+const TEXT_NEUTRAL_DARK = 'dark:!text-zinc-400';
+const TRACK_BG_DARK = 'dark:!bg-zinc-800';
 
 // ─── Categories ─────────────────────────────────────────────────────────────
 
@@ -49,31 +74,6 @@ const CATEGORIES: { id: CategoryType; title: string; color: string; dotColor: st
 type SortKey = 'name' | 'progress' | 'cao-current' | 'cao-target' | 'gap' | 'streak';
 type SortDir = 'asc' | 'desc';
 type StatusFilter = 'all' | 'on-track' | 'needs-support' | 'new';
-
-const MOOD_EMOJI: Record<string, string> = {
-  calm: '\u{1F60C}',
-  balanced: '\u{1F642}',
-  energized: '\u{26A1}',
-  stressed: '\u{1F630}',
-};
-
-// ─── Earthy palette for progress bars ────────────────────────────────────────
-
-const EARTHY_BARS = [
-  { label: '0-25%', color: 'bg-[var(--accent-hex)]' },
-  { label: '25-50%', color: 'bg-[#D4A574]' },
-  { label: '50-75%', color: 'bg-[#8B9D77]' },
-  { label: '75-100%', color: 'bg-[#5B7B6F]' },
-];
-
-// ─── Mood donut colors ───────────────────────────────────────────────────────
-
-const MOOD_DONUT_COLORS: Record<string, string> = {
-  calm: '#5B7B6F',
-  balanced: '#8B9D77',
-  energized: '#D4A574',
-  stressed: 'var(--accent-hex)',
-};
 
 // ─── Calendar helpers ────────────────────────────────────────────────────────
 
@@ -124,10 +124,14 @@ interface GCOverviewProps {
   onDeleteStudent?: (user: any) => void;
   alerts?: EarlyWarningAlert[];
   onDismissAlert?: (alert: EarlyWarningAlert) => void;
+  gcName?: string;
 }
 
-export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, studentNotes, onSelectStudent, onDeleteStudent, alerts = [], onDismissAlert }) => {
+export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, studentNotes, onSelectStudent, onDeleteStudent, alerts = [], onDismissAlert, gcName }) => {
   const [searchQuery, setSearchQuery] = useState('');
+  const [showBroadcastModal, setShowBroadcastModal] = useState(false);
+  const [broadcastMessage, setBroadcastMessage] = useState('');
+  const [isBroadcasting, setIsBroadcasting] = useState(false);
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all');
   const [sortKey, setSortKey] = useState<SortKey>('name');
   const [sortDir, setSortDir] = useState<SortDir>('asc');
@@ -142,8 +146,6 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       currentCAO: getStudentCurrentCAO(s),
       targetCAO: getStudentTargetCAO(s),
       streak: s.streak?.currentStreak ?? 0,
-      latestMood: getLatestMood(s),
-      moodTrend: getMoodTrend(s),
       activeThisWeek: isActiveThisWeek(s),
     }));
   }, [studentData, allCourses]);
@@ -185,7 +187,6 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
   // ─── New widgets data ──────────────────────────────────────────────────
 
   const recentlyActive = useMemo(() => getRecentlyActiveStudents(studentData), [studentData]);
-  const moodDistribution = useMemo(() => getClassMoodDistribution(studentData), [studentData]);
 
   // ─── Activity range toggle ────────────────────────────────────────────
 
@@ -342,21 +343,6 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     );
   };
 
-  // ─── Mood trend icon helper ─────────────────────────────────────────────
-
-  const trendIcon = (trend: MoodTrend) => {
-    switch (trend) {
-      case 'improving':
-        return <TrendingUp size={12} className="text-emerald-500" />;
-      case 'declining':
-        return <TrendingDown size={12} className="text-rose-500" />;
-      case 'stable':
-        return <Minus size={12} className="text-zinc-400" />;
-      default:
-        return null;
-    }
-  };
-
   // ─── Subject Gaps ──────────────────────────────────────────────────────
 
   const subjectGaps = useMemo(() => getSubjectGaps(studentData), [studentData]);
@@ -401,69 +387,6 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     else setCalMonth(m => m + 1);
   };
 
-  // ─── Mood donut SVG ────────────────────────────────────────────────────
-
-  const renderMoodDonut = () => {
-    const { distribution: dist, total } = moodDistribution;
-    const r = 60;
-    const circ = 2 * Math.PI * r;
-    let cumulativeOffset = 0;
-
-    return (
-      <div className="card-styled rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow p-5 overflow-hidden">
-        <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-3">Class Mood</p>
-        <p className="text-base font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">7-Day Check-ins</p>
-
-        <div className="flex justify-center">
-          <div className="relative">
-            <svg width={150} height={150} viewBox="0 0 150 150">
-              {dist.map((entry) => {
-                if (entry.count === 0) {
-                  return null;
-                }
-                const segLength = (entry.count / Math.max(1, total)) * circ;
-                const offset = circ - cumulativeOffset;
-                cumulativeOffset += segLength;
-                return (
-                  <circle
-                    key={entry.mood}
-                    cx={75}
-                    cy={75}
-                    r={r}
-                    fill="none"
-                    stroke={MOOD_DONUT_COLORS[entry.mood] ?? '#999'}
-                    strokeWidth={16}
-                    strokeDasharray={`${segLength} ${circ - segLength}`}
-                    strokeDashoffset={offset}
-                    transform="rotate(-90 75 75)"
-                  />
-                );
-              })}
-              {total === 0 && (
-                <circle cx={75} cy={75} r={r} fill="none" stroke="currentColor" className="text-zinc-200 dark:text-zinc-700" strokeWidth={16} />
-              )}
-            </svg>
-            <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <span className="text-2xl font-bold text-zinc-900 dark:text-white">{total}</span>
-              <span className="text-[10px] text-zinc-400">check-ins</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Legend */}
-        <div className="grid grid-cols-2 gap-x-4 gap-y-1.5 mt-4">
-          {dist.map(entry => (
-            <div key={entry.mood} className="flex items-center gap-2">
-              <div className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: MOOD_DONUT_COLORS[entry.mood] ?? '#999' }} />
-              <span className="text-xs text-zinc-600 dark:text-zinc-400 capitalize">{entry.mood}</span>
-              <span className="text-xs font-medium text-zinc-500 ml-auto">{entry.count}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  };
-
   // ─── Render ─────────────────────────────────────────────────────────────
 
   const hour = new Date().getHours();
@@ -471,18 +394,90 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
 
   return (
     <div className="p-6 lg:p-8 space-y-5">
-      {/* ─── Greeting Row ─────────────────────────────────────────────── */}
+      {/* ═══════════════════════════════════════════════════════════════════
+          ROW 0 — Header (full width)
+          ═══════════════════════════════════════════════════════════════════ */}
       <div id="gc-overview" className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
         <div>
-          <p className="font-mono text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--accent-hex)] mb-1">Guidance Dashboard</p>
+          <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Guidance Dashboard</p>
           <h1 className="font-serif text-3xl font-semibold text-zinc-900 dark:text-white tracking-tight">{greeting}</h1>
-          <p className="text-sm text-zinc-400 dark:text-zinc-500 mt-0.5">{getSchoolName(school)}</p>
+          <p className={`text-sm mt-0.5 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{getSchoolName(school)}</p>
         </div>
-        <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-[rgba(var(--accent),0.1)] border border-[rgba(var(--accent),0.2)]">
-          <span className="text-lg font-bold text-[var(--accent-hex)]">{daysUntilLC}</span>
-          <span className="text-[10px] font-bold uppercase tracking-wider text-[rgba(var(--accent),0.7)]">days to LC</span>
+        <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl dark:!bg-[rgba(77,184,164,0.1)] dark:!border-[rgba(77,184,164,0.25)]" style={{ backgroundColor: 'rgba(42,125,111,0.08)', border: '1px solid rgba(42,125,111,0.2)' }}>
+            <span className={`text-lg font-bold ${TEXT_ACCENT_DARK}`} style={{ color: ACCENT }}>{daysUntilLC}</span>
+            <span className="text-[10px] font-bold uppercase tracking-wider dark:!text-[rgba(77,184,164,0.7)]" style={{ color: 'rgba(42,125,111,0.7)' }}>days to LC</span>
+          </div>
+          <button
+            onClick={() => setShowBroadcastModal(true)}
+            className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold transition-colors ${TEXT_ACCENT_DARK} dark:!border-[rgba(77,184,164,0.3)]`}
+            style={{ color: ACCENT, border: '1px solid rgba(42,125,111,0.3)', backgroundColor: 'transparent' }}
+          >
+            <Megaphone size={14} />
+            Broadcast to Class
+          </button>
         </div>
       </div>
+
+      {/* Broadcast Modal */}
+      <AnimatePresence>
+        {showBroadcastModal && (
+          <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isBroadcasting && setShowBroadcastModal(false)}>
+            <MotionDiv
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 max-w-sm w-full shadow-2xl"
+              onClick={(e: React.MouseEvent) => e.stopPropagation()}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center dark:!bg-[rgba(77,184,164,0.1)]" style={{ backgroundColor: 'rgba(42,125,111,0.1)' }}>
+                  <Megaphone size={20} style={{ color: ACCENT }} className={TEXT_ACCENT_DARK} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-zinc-800 dark:text-white">Broadcast Message</h3>
+                  <p className="text-xs text-zinc-500">Send to all {studentData.length} students</p>
+                </div>
+              </div>
+              <textarea
+                value={broadcastMessage}
+                onChange={(e) => setBroadcastMessage(e.target.value)}
+                placeholder="Write a message to all your students..."
+                maxLength={300}
+                className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl p-3 text-sm text-zinc-800 dark:text-white placeholder:text-zinc-400 resize-none h-28 focus:outline-none focus:border-[rgba(42,125,111,0.5)] mb-1"
+              />
+              <p className="text-[10px] text-zinc-400 text-right mb-3">{broadcastMessage.length}/300</p>
+              <div className="flex gap-2">
+                <button onClick={() => setShowBroadcastModal(false)} className="flex-1 py-2 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+                  Cancel
+                </button>
+                <button
+                  onClick={async () => {
+                    if (!broadcastMessage.trim()) return;
+                    setIsBroadcasting(true);
+                    const uids = studentData.map(s => s.user.uid);
+                    await addNotificationToMultiple(uids, {
+                      type: 'gc-broadcast',
+                      title: 'Message from your Guidance Counsellor',
+                      body: broadcastMessage.trim(),
+                      fromGCName: gcName,
+                      severity: 'info',
+                    });
+                    setIsBroadcasting(false);
+                    setShowBroadcastModal(false);
+                    setBroadcastMessage('');
+                  }}
+                  disabled={!broadcastMessage.trim() || isBroadcasting}
+                  className="flex-1 py-2 rounded-xl text-sm font-medium text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors dark:!bg-[#4DB8A4]"
+                  style={{ backgroundColor: ACCENT }}
+                >
+                  {isBroadcasting ? 'Sending...' : 'Send to All'}
+                </button>
+              </div>
+            </MotionDiv>
+          </div>
+        )}
+      </AnimatePresence>
 
       {/* ─── Early Warning Alerts ──────────────────────────────────────── */}
       {alerts.length > 0 && (
@@ -572,25 +567,28 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
         </MotionDiv>
       )}
 
-      {/* ─── KPI Cards ────────────────────────────────────────────────── */}
+      {/* ═══════════════════════════════════════════════════════════════════
+          ROW 1 — 4 Stat Cards (full width, 4 equal columns)
+          ═══════════════════════════════════════════════════════════════════ */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {[
-          { label: 'Total Students', value: String(studentData.length), trend: null as number | null },
-          { label: 'Avg Progress', value: `${avgProgress.toFixed(0)}%`, trend: null },
-          { label: 'Blocks This Week', value: String(weeklyTrends.blocksThisWeek), trend: weeklyTrends.blocksTrend },
-          { label: 'Needs Support', value: String(needsSupportCount), trend: null },
+          { label: 'Total Students', value: String(studentData.length), trend: null as number | null, isWarning: false },
+          { label: 'Avg Progress', value: `${avgProgress.toFixed(0)}%`, trend: null, isWarning: false },
+          { label: 'Blocks This Week', value: String(weeklyTrends.blocksThisWeek), trend: weeklyTrends.blocksTrend, isWarning: false },
+          { label: 'Needs Support', value: String(needsSupportCount), trend: null, isWarning: true },
         ].map((kpi, i) => (
           <MotionDiv
             key={kpi.label}
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: i * 0.04, ease: CUSTOM_EASE }}
-            className="card-styled rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow p-5"
+            className={CARD_STYLE_DARK_CLASS}
+            style={CARD_STYLE}
           >
-            <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-2">{kpi.label}</p>
-            <p className="font-sans text-4xl font-semibold tracking-tight text-zinc-900 dark:text-white">{kpi.value}</p>
+            <p className={`text-[11px] font-medium uppercase tracking-widest mb-2 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{kpi.label}</p>
+            <p className={`text-3xl font-medium text-zinc-900 dark:text-white ${kpi.isWarning ? 'dark:!text-[#D4A95C]' : ''}`} style={kpi.isWarning ? { color: WARM_AMBER } : undefined}>{kpi.value}</p>
             {kpi.trend !== null ? (
-              <div className={`flex items-center gap-1 mt-2 text-xs font-medium ${kpi.trend >= 0 ? 'text-emerald-600' : 'text-rose-500'}`}>
+              <div className={`flex items-center gap-1 mt-2 text-xs font-medium ${kpi.trend >= 0 ? 'dark:!text-[#8AB592]' : 'dark:!text-[#D4A95C]'}`} style={{ color: kpi.trend >= 0 ? SAGE : WARM_AMBER }}>
                 {kpi.trend >= 0 ? <TrendingUp size={12} /> : <TrendingDown size={12} />}
                 <span>{kpi.trend > 0 ? '+' : ''}{kpi.trend}% vs last week</span>
               </div>
@@ -601,232 +599,74 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
         ))}
       </div>
 
-      {/* ─── Key Dates & Events ──────────────────────────────────────── */}
-      <GCKeyEvents school={school} />
+      {/* ═══════════════════════════════════════════════════════════════════
+          ROW 2+ — 2-column 1fr 1fr grid
+          ═══════════════════════════════════════════════════════════════════ */}
+      <div id="gc-analytics" className="grid grid-cols-1 lg:grid-cols-2 gap-4">
 
-      {/* ─── Daily Activity Chart ────────────────────────────────────── */}
-      {(() => {
-        const maxCount = Math.max(1, ...aggregatedActivity.map(d => d.count));
-        const totalBlocks = aggregatedActivity.reduce((s, d) => s + d.count, 0);
-        const activeDays = aggregatedActivity.filter(d => d.count > 0).length;
-        const avgPerDay = activeDays > 0 ? (totalBlocks / aggregatedActivity.length).toFixed(1) : '0';
-        const todayKey = (() => {
-          const n = new Date();
-          return `${n.getFullYear()}-${String(n.getMonth() + 1).padStart(2, '0')}-${String(n.getDate()).padStart(2, '0')}`;
-        })();
-        const barCount = aggregatedActivity.length;
-        const chartW = 600;
-        const chartH = 80;
-        const gap = 2;
-        const barW = (chartW - gap * (barCount - 1)) / barCount;
+        {/* ─── ROW 2 LEFT: Daily Activity ──────────────────────────────── */}
+        <DailyActivityChart
+          aggregatedActivity={aggregatedActivity}
+          activityRange={activityRange}
+          onRangeChange={setActivityRange}
+        />
 
-        return (
-          <MotionDiv
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.18, ease: CUSTOM_EASE }}
-            className="card-styled rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow p-5"
-          >
-            <div className="flex items-center justify-between mb-4">
-              <div>
-                <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500">Engagement</p>
-                <p className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mt-0.5">Daily Activity</p>
-              </div>
-              <div className="flex rounded-lg bg-zinc-100 dark:bg-zinc-800 p-0.5">
-                {(['7d', '30d'] as const).map(range => (
-                  <button
-                    key={range}
-                    onClick={() => setActivityRange(range)}
-                    className={`px-3 py-1 text-xs font-medium rounded-md transition-colors ${
-                      activityRange === range
-                        ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
-                        : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
-                    }`}
-                  >
-                    {range}
-                  </button>
-                ))}
-              </div>
-            </div>
+        {/* ─── ROW 2 RIGHT: Key Dates & Events ───────────────────────── */}
+        <GCKeyEvents school={school} />
 
-            <svg viewBox={`0 0 ${chartW} ${chartH}`} className="w-full h-20" preserveAspectRatio="none">
-              {/* Horizontal grid lines */}
-              {[0.25, 0.5, 0.75].map(frac => (
-                <line
-                  key={frac}
-                  x1={0}
-                  y1={chartH - frac * (chartH - 4)}
-                  x2={chartW}
-                  y2={chartH - frac * (chartH - 4)}
-                  stroke="currentColor"
-                  className="text-zinc-100 dark:text-zinc-800"
-                  strokeWidth={0.5}
-                />
-              ))}
-              {aggregatedActivity.map((d, i) => {
-                const x = i * (barW + gap);
-                const h = d.count > 0 ? Math.max(4, (d.count / maxCount) * (chartH - 4)) : 2;
-                const isToday = d.date === todayKey;
-                const fill = isToday ? 'var(--accent-hex)' : d.count > 0 ? '#8B9D77' : undefined;
-                return (
-                  <rect
-                    key={d.date}
-                    x={x}
-                    y={chartH - h}
-                    width={barW}
-                    height={h}
-                    rx={2}
-                    fill={fill}
-                    className={d.count === 0 && !isToday ? 'fill-zinc-200 dark:fill-zinc-700' : ''}
-                  >
-                    <title>{d.date}: {d.count} blocks</title>
-                  </rect>
-                );
-              })}
-            </svg>
-
-            <div className="flex justify-between mt-2">
-              <span className="text-[10px] text-zinc-400">{aggregatedActivity[0]?.date}</span>
-              <span className="text-[10px] text-zinc-400">{aggregatedActivity[aggregatedActivity.length - 1]?.date}</span>
-            </div>
-
-            <div className="flex gap-4 mt-3 text-xs text-zinc-500 dark:text-zinc-400">
-              <span><span className="font-medium text-zinc-700 dark:text-zinc-300">{totalBlocks}</span> blocks total</span>
-              <span><span className="font-medium text-zinc-700 dark:text-zinc-300">{activeDays}</span> active days</span>
-              <span><span className="font-medium text-zinc-700 dark:text-zinc-300">{avgPerDay}</span> avg/day</span>
-            </div>
-          </MotionDiv>
-        );
-      })()}
-
-      {/* ─── Two-Column Layout: Charts + Widgets ──────────────────────── */}
-      <div id="gc-analytics" className="grid grid-cols-1 lg:grid-cols-3 gap-5 items-start">
-        {/* Left column (2/3): Category Completion → Progress Distribution → Subject Gaps */}
-        <div className="lg:col-span-2 space-y-5">
-          {/* Category Completion */}
-          <MotionDiv
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2, ease: CUSTOM_EASE }}
-            className="card-styled rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow p-5"
-          >
-            <div>
-              <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500">Categories</p>
-              <p className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mt-0.5 mb-4">Category Completion</p>
-            </div>
-            <div className="space-y-2.5">
-              {categoryAverages.map(cat => (
-                <div key={cat.id} className="rounded-xl bg-zinc-50 dark:bg-zinc-800/30 border border-zinc-200/60 dark:border-zinc-700/40 p-3">
+        {/* ─── ROW 3 LEFT: Category Completion ───────────────────────── */}
+        <MotionDiv
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2, ease: CUSTOM_EASE }}
+          className={CARD_STYLE_DARK_CLASS}
+          style={CARD_STYLE}
+        >
+          <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Categories</p>
+          <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5 mb-4">Category Completion</p>
+          <div className="space-y-0">
+            {categoryAverages.map((cat, catIdx) => (
+              <div key={cat.id}>
+                <div className="py-3">
                   <div className="flex justify-between items-center mb-1.5">
                     <div className="flex items-center gap-2">
                       <div className={`w-2.5 h-2.5 rounded-full ${cat.dotColor}`} />
                       <p className="text-xs font-medium text-zinc-700 dark:text-zinc-300">{cat.title}</p>
                     </div>
-                    <p className="text-xs font-bold text-zinc-600 dark:text-zinc-300">{cat.avgProgress.toFixed(0)}%</p>
+                    <p className="text-sm font-medium text-zinc-600 dark:text-zinc-300">{cat.avgProgress.toFixed(0)}%</p>
                   </div>
-                  <div className="w-full bg-zinc-200 dark:bg-zinc-700 rounded-full h-1.5">
+                  <div className={`w-full rounded-full h-1.5 ${TRACK_BG_DARK}`} style={{ backgroundColor: TRACK_BG }}>
                     <MotionDiv
-                      className={`h-1.5 rounded-full ${cat.color}`}
+                      className="h-1.5 rounded-full"
+                      style={{ backgroundColor: ACCENT }}
                       initial={{ width: 0 }}
                       animate={{ width: `${cat.avgProgress}%` }}
                       transition={{ duration: 0.5, ease: 'easeOut' }}
                     />
                   </div>
                   {cat.zeroStudents > 0 && (
-                    <div className="flex items-center gap-1 mt-1.5">
-                      <AlertTriangle size={10} className="text-amber-500" />
-                      <p className="text-[10px] text-zinc-400 dark:text-zinc-500">
+                    <div className={`flex items-center gap-1.5 mt-1.5 px-2 py-1 rounded-md ${BADGE_AMBER_DARK}`} style={{ backgroundColor: '#FDF3E7', color: '#8B5E2A' }}>
+                      <AlertTriangle size={10} />
+                      <p className="text-[10px] font-medium">
                         {cat.zeroStudents} student{cat.zeroStudents !== 1 ? 's' : ''} with 0 modules started
                       </p>
                     </div>
                   )}
                 </div>
-              ))}
-            </div>
-          </MotionDiv>
-
-          {/* Progress Distribution */}
-          <MotionDiv
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.25, ease: CUSTOM_EASE }}
-            className="card-styled rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow p-5"
-          >
-            <div className="flex items-baseline justify-between mb-5">
-              <div>
-                <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500">Distribution</p>
-                <p className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mt-0.5">Progress Breakdown</p>
+                {catIdx < categoryAverages.length - 1 && (
+                  <div className="border-b border-zinc-100 dark:border-zinc-800/40" />
+                )}
               </div>
-              <span className="text-xs font-medium text-zinc-400 dark:text-zinc-500">{distributionTotal} students</span>
-            </div>
-            <div className="flex gap-4">
-              {distribution.map((count, i) => {
-                const heightPct = (count / distributionMax) * 100;
-                return (
-                  <div key={i} className="flex-1 flex flex-col items-center gap-1.5">
-                    <span className="text-xs font-bold text-zinc-600 dark:text-zinc-300">{count}</span>
-                    <div className="w-full relative h-28">
-                      {count > 0 ? (
-                        <MotionDiv
-                          className={`absolute bottom-0 left-1 right-1 ${EARTHY_BARS[i].color} rounded-lg`}
-                          initial={{ height: 0 }}
-                          animate={{ height: `${Math.max(heightPct, 8)}%` }}
-                          transition={{ duration: 0.6, delay: 0.3 + i * 0.1, ease: CUSTOM_EASE }}
-                        />
-                      ) : (
-                        <div className="absolute bottom-0 left-1 right-1 h-[2px] rounded-full bg-zinc-200 dark:bg-zinc-700" />
-                      )}
-                    </div>
-                    <span className="text-[10px] font-medium text-zinc-400 dark:text-zinc-500">{EARTHY_BARS[i].label}</span>
-                  </div>
-                );
-              })}
-            </div>
-          </MotionDiv>
+            ))}
+          </div>
+        </MotionDiv>
 
-          {/* Subject-Level Gaps */}
-          {topGaps.length > 0 && (
-            <MotionDiv
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3, ease: CUSTOM_EASE }}
-              className="card-styled rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow p-5"
-            >
-              <div>
-                <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500">Subject Analysis</p>
-                <p className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mt-0.5 mb-4">Subject-Level Gaps</p>
-              </div>
-              <div className="space-y-2.5">
-                {topGaps.map((gap, i) => {
-                  const barPct = (gap.avgGap / maxAvgGap) * 100;
-                  return (
-                    <div key={gap.subjectName} className="flex items-center gap-3">
-                      <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300 w-32 truncate shrink-0">{gap.subjectName}</span>
-                      <div className="flex-1 h-4 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden">
-                        <MotionDiv
-                          className="h-full bg-[var(--accent-hex)] rounded-full"
-                          initial={{ width: 0 }}
-                          animate={{ width: `${barPct}%` }}
-                          transition={{ duration: 0.5, delay: 0.35 + i * 0.05, ease: CUSTOM_EASE }}
-                        />
-                      </div>
-                      <span className="text-xs font-bold text-zinc-600 dark:text-zinc-300 w-20 text-right shrink-0">
-                        {gap.avgGap} pts <span className="font-normal text-zinc-400">({gap.studentCount})</span>
-                      </span>
-                    </div>
-                  );
-                })}
-              </div>
-            </MotionDiv>
-          )}
-        </div>
-
-        {/* Right column (1/3): Recently Active → Mood Donut → Exam Calendar */}
-        <div className="flex flex-col gap-5">
-          {/* Recently Active Widget */}
-          <div className="card-styled rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow p-5">
-            <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-1">Activity</p>
-            <p className="text-base font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">Recently Active</p>
+        {/* ─── ROW 3 RIGHT: Recently Active ──── */}
+        <div className="flex flex-col gap-4">
+          {/* Recently Active */}
+          <div className={CARD_STYLE_DARK_CLASS} style={CARD_STYLE}>
+            <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Activity</p>
+            <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5 mb-4">Recently Active</p>
             {recentlyActive.length === 0 ? (
               <p className="text-sm text-zinc-400 italic">No recent activity.</p>
             ) : (
@@ -840,89 +680,172 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                     <img src={getAvatarUrl(s.avatar)} alt="" className="w-8 h-8 rounded-full bg-zinc-200 shrink-0" />
                     <div className="min-w-0 flex-1">
                       <p className="text-sm font-medium text-zinc-800 dark:text-white truncate">{s.name}</p>
-                      <p className="text-[10px] text-zinc-400 dark:text-zinc-500">
+                      <p className={`text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>
                         {s.blocksCompletedToday > 0 ? `${s.blocksCompletedToday} blocks today` : 'No blocks today'}
                       </p>
                     </div>
-                    <span className="text-[10px] text-zinc-400 dark:text-zinc-500 shrink-0">{s.timeAgo}</span>
+                    <span className={`text-[10px] shrink-0 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{s.timeAgo}</span>
                   </button>
                 ))}
               </div>
             )}
           </div>
 
-          {/* Class Mood Donut */}
-          {renderMoodDonut()}
+        </div>
 
-          {/* Exam Countdown Calendar */}
-          <div className="card-styled rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow p-5">
-            <div className="flex items-baseline justify-between mb-3">
-              <div>
-                <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500">Countdown</p>
-                <p className="text-base font-semibold tracking-tight text-zinc-900 dark:text-white mt-0.5">Exam Calendar</p>
-              </div>
-              <div className="text-right">
-                <p className="text-3xl font-bold text-[var(--accent-hex)]">{daysUntilLC}</p>
-                <p className="text-[10px] text-zinc-400">days</p>
-              </div>
+        {/* ─── ROW 4 LEFT: Progress Breakdown (histogram) ────────────── */}
+        <MotionDiv
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.25, ease: CUSTOM_EASE }}
+          className={CARD_STYLE_DARK_CLASS}
+          style={CARD_STYLE}
+        >
+          <div className="flex items-baseline justify-between mb-5">
+            <div>
+              <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Distribution</p>
+              <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5">Progress Breakdown</p>
             </div>
-            {/* Month navigation */}
-            <div className="flex items-center justify-between mb-3">
-              <button onClick={handleCalPrev} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
-                <ChevronLeft size={16} className="text-zinc-400" />
-              </button>
-              <span className="text-xs font-medium text-zinc-600 dark:text-zinc-400">{MONTH_NAMES[calMonth]} {calYear}</span>
-              <button onClick={handleCalNext} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
-                <ChevronRight size={16} className="text-zinc-400" />
-              </button>
-            </div>
-            {/* Day-of-week headers */}
-            <div className="grid grid-cols-7 gap-1 mb-1">
-              {['M', 'T', 'W', 'T', 'F', 'S', 'S'].map((d, i) => (
-                <span key={i} className="text-center text-[9px] font-medium text-zinc-400 dark:text-zinc-500">{d}</span>
-              ))}
-            </div>
-            {/* Calendar grid */}
-            <div className="grid grid-cols-7 gap-1">
-              {calendarDays.map((cell, i) => {
-                if (!cell.isCurrentMonth) {
-                  return <div key={i} className="aspect-square" />;
-                }
-                const isToday = isCurrentMonth && cell.day === todayDate;
-                const isLC = lcDay !== null && cell.day === lcDay;
-                let cellClass = 'text-zinc-600 dark:text-zinc-400';
-                if (isToday) cellClass = 'bg-[var(--accent-hex)] text-white rounded-lg';
-                else if (isLC) cellClass = 'bg-rose-500 text-white rounded-lg';
+            <span className={`text-xs font-medium ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{distributionTotal} students</span>
+          </div>
+          <div className="flex gap-4">
+            {distribution.map((count, i) => {
+              const heightPct = (count / distributionMax) * 100;
+              const bucketLabels = ['0-25%', '25-50%', '50-75%', '75-100%'];
+              return (
+                <div key={i} className="flex-1 flex flex-col items-center gap-1.5">
+                  <span className="text-sm font-medium text-zinc-600 dark:text-zinc-300">{count}</span>
+                  <div className="w-full relative h-28">
+                    {count > 0 ? (
+                      <MotionDiv
+                        className="absolute bottom-0 left-1 right-1 rounded-lg"
+                        style={{ backgroundColor: ACCENT }}
+                        initial={{ height: 0 }}
+                        animate={{ height: `${Math.max(heightPct, 8)}%` }}
+                        transition={{ duration: 0.6, delay: 0.3 + i * 0.1, ease: CUSTOM_EASE }}
+                      />
+                    ) : (
+                      <div className="absolute bottom-0 left-1 right-1 h-[2px] rounded-full bg-zinc-200 dark:bg-zinc-700" />
+                    )}
+                  </div>
+                  <span className={`text-xs ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{bucketLabels[i]}</span>
+                </div>
+              );
+            })}
+          </div>
+        </MotionDiv>
 
+        {/* ─── ROW 4 RIGHT: Exam Calendar ────────────────────────────── */}
+        <div className={CARD_STYLE_DARK_CLASS} style={CARD_STYLE}>
+          <div className="flex items-baseline justify-between mb-3">
+            <div>
+              <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Countdown</p>
+              <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5">Exam Calendar</p>
+            </div>
+            <div className="text-right">
+              <p className={`text-3xl font-bold ${TEXT_ACCENT_DARK}`} style={{ color: ACCENT }}>{daysUntilLC}</p>
+              <p className={`text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>days</p>
+            </div>
+          </div>
+          {/* Month navigation */}
+          <div className="flex items-center justify-between mb-3">
+            <button onClick={handleCalPrev} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+              <ChevronLeft size={16} style={{ color: NEUTRAL_GREY }} className={TEXT_NEUTRAL_DARK} />
+            </button>
+            <span className="text-xs font-medium text-zinc-600 dark:text-zinc-400">{MONTH_NAMES[calMonth]} {calYear}</span>
+            <button onClick={handleCalNext} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+              <ChevronRight size={16} style={{ color: NEUTRAL_GREY }} className={TEXT_NEUTRAL_DARK} />
+            </button>
+          </div>
+          {/* Day-of-week headers */}
+          <div className="grid grid-cols-7 gap-1 mb-1">
+            {['M', 'T', 'W', 'T', 'F', 'S', 'S'].map((d, i) => (
+              <span key={i} className={`text-center text-[9px] font-medium ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{d}</span>
+            ))}
+          </div>
+          {/* Calendar grid */}
+          <div className="grid grid-cols-7 gap-1">
+            {calendarDays.map((cell, i) => {
+              if (!cell.isCurrentMonth) {
+                return <div key={i} className="aspect-square" />;
+              }
+              const isToday = isCurrentMonth && cell.day === todayDate;
+              const isLC = lcDay !== null && cell.day === lcDay;
+
+              return (
+                <div
+                  key={i}
+                  className={`aspect-square flex items-center justify-center text-[11px] font-medium ${
+                    !isToday && !isLC ? 'text-zinc-600 dark:text-zinc-400' : 'text-white rounded-lg'
+                  }`}
+                  style={isToday ? { backgroundColor: ACCENT } : isLC ? { backgroundColor: '#DC2626' } : undefined}
+                  title={isLC ? 'LC Exam Date' : isToday ? 'Today' : ''}
+                >
+                  {cell.day}
+                </div>
+              );
+            })}
+          </div>
+          {/* Legend */}
+          <div className={`flex gap-4 mt-3 text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>
+            <div className="flex items-center gap-1.5">
+              <div className="w-3 h-3 rounded" style={{ backgroundColor: ACCENT }} />
+              <span>Today</span>
+            </div>
+            {lcDay !== null && (
+              <div className="flex items-center gap-1.5">
+                <div className="w-3 h-3 rounded bg-red-600" />
+                <span>LC Exam</span>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* ─── ROW 5: Subject-Level Gaps (full width span) ───────────── */}
+        {topGaps.length > 0 && (
+          <MotionDiv
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: CUSTOM_EASE }}
+            className={CARD_STYLE_DARK_CLASS}
+            style={{ ...CARD_STYLE, gridColumn: '1 / -1' }}
+          >
+            <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Subject Analysis</p>
+            <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5 mb-4">Subject-Level Gaps</p>
+            <div className="space-y-2.5">
+              {topGaps.map((gap, i) => {
+                const barPct = (gap.avgGap / maxAvgGap) * 100;
                 return (
-                  <div
-                    key={i}
-                    className={`aspect-square flex items-center justify-center text-[11px] font-medium ${cellClass}`}
-                    title={isLC ? 'LC Exam Date' : isToday ? 'Today' : ''}
-                  >
-                    {cell.day}
+                  <div key={gap.subjectName} className="flex items-center gap-3">
+                    <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300 w-32 truncate shrink-0">{gap.subjectName}</span>
+                    <div className={`flex-1 h-4 rounded-full overflow-hidden ${TRACK_BG_DARK}`} style={{ backgroundColor: TRACK_BG }}>
+                      <MotionDiv
+                        className="h-full rounded-full"
+                        style={{ backgroundColor: ACCENT }}
+                        initial={{ width: 0 }}
+                        animate={{ width: `${barPct}%` }}
+                        transition={{ duration: 0.5, delay: 0.35 + i * 0.05, ease: CUSTOM_EASE }}
+                      />
+                    </div>
+                    <span className="text-xs font-bold text-zinc-600 dark:text-zinc-300 w-20 text-right shrink-0">
+                      {gap.avgGap} pts <span className={`font-normal ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>({gap.studentCount})</span>
+                    </span>
                   </div>
                 );
               })}
             </div>
-            {/* Legend */}
-            <div className="flex gap-4 mt-3 text-[10px] text-zinc-400">
-              <div className="flex items-center gap-1.5">
-                <div className="w-3 h-3 rounded bg-[var(--accent-hex)]" />
-                <span>Today</span>
-              </div>
-              {lcDay !== null && (
-                <div className="flex items-center gap-1.5">
-                  <div className="w-3 h-3 rounded bg-rose-500" />
-                  <span>LC Exam</span>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
+          </MotionDiv>
+        )}
       </div>
 
-      {/* ─── Student Table ────────────────────────────────────────────── */}
+      {/* ═══════════════════════════════════════════════════════════════════
+          Subject Health (full width)
+          ═══════════════════════════════════════════════════════════════════ */}
+      <SubjectHealthPanel studentData={studentData} />
+
+      {/* ═══════════════════════════════════════════════════════════════════
+          Student Table — DO NOT CHANGE
+          ═══════════════════════════════════════════════════════════════════ */}
       <div id="gc-students" className="rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow overflow-hidden">
         {/* Table Controls */}
         <div className="flex flex-col sm:flex-row gap-3 p-5 border-b border-zinc-100 dark:border-zinc-800">
@@ -979,7 +902,6 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                     {col.label}{sortIndicator(col.key)}
                   </th>
                 ))}
-                <th className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 whitespace-nowrap">Mood</th>
                 <th className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 whitespace-nowrap">Status</th>
                 {onDeleteStudent && <th className="px-3 py-3 w-10"></th>}
               </tr>
@@ -1026,12 +948,6 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                         <span className="text-zinc-600 dark:text-zinc-300">{row.streak}</span>
                       </div>
                     </td>
-                    <td className="px-5 py-4 align-middle">
-                      <div className="flex items-center justify-center gap-1">
-                        {row.latestMood ? MOOD_EMOJI[row.latestMood] || '\u2014' : '\u2014'}
-                        {trendIcon(row.moodTrend)}
-                      </div>
-                    </td>
                     <td className="px-5 py-4 align-middle">{statusPill(row.status)}</td>
                     {onDeleteStudent && (
                       <td className="px-3 py-4 align-middle">
@@ -1064,15 +980,17 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
         )}
       </div>
 
-      {/* ─── Student Notes ─────────────────────────────────────────── */}
-      <div id="gc-notes" className="rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow overflow-hidden">
+      {/* ═══════════════════════════════════════════════════════════════════
+          Counsellor Notes (warm cream card)
+          ═══════════════════════════════════════════════════════════════════ */}
+      <div id="gc-notes" className={`rounded-xl overflow-hidden ${CARD_STYLE_DARK_CLASS}`} style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)' }}>
         <div className="p-5 border-b border-zinc-100 dark:border-zinc-800">
           <div className="flex items-center gap-2">
-            <StickyNote size={16} className="text-[var(--accent-hex)]" />
-            <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500">Counsellor Notes</p>
+            <StickyNote size={16} style={{ color: ACCENT }} className={TEXT_ACCENT_DARK} />
+            <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Counsellor Notes</p>
           </div>
-          <p className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mt-1">Student Notes</p>
-          <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-0.5">Private notes on each student. Click a student to view or edit.</p>
+          <p className="text-lg font-medium text-zinc-900 dark:text-white mt-1">Student Notes</p>
+          <p className={`text-xs mt-0.5 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Private notes on each student. Click a student to view or edit.</p>
         </div>
 
         {(() => {
@@ -1117,7 +1035,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                       <div className="flex items-center justify-between gap-3">
                         <p className="text-sm font-medium text-zinc-800 dark:text-white truncate">{s.user.name}</p>
                         {timeLabel && (
-                          <span className="text-[10px] text-zinc-400 dark:text-zinc-500 shrink-0">{timeLabel}</span>
+                          <span className={`text-[10px] shrink-0 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{timeLabel}</span>
                         )}
                       </div>
                       <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 leading-relaxed">{preview}</p>
@@ -1132,3 +1050,241 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     </div>
   );
 };
+
+// ─── Daily Activity Line Chart ──────────────────────────────────────────────
+
+function DailyActivityChart({
+  aggregatedActivity,
+  activityRange,
+  onRangeChange,
+}: {
+  aggregatedActivity: { date: string; count: number }[];
+  activityRange: '7d' | '30d';
+  onRangeChange: (range: '7d' | '30d') => void;
+}) {
+  const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
+  const chartRef = useRef<HTMLDivElement>(null);
+
+  const maxCount = Math.max(1, ...aggregatedActivity.map(d => d.count));
+  const totalBlocks = aggregatedActivity.reduce((s, d) => s + d.count, 0);
+  const activeDays = aggregatedActivity.filter(d => d.count > 0).length;
+  const avgPerDay = activeDays > 0 ? (totalBlocks / aggregatedActivity.length).toFixed(1) : '0';
+  const n = aggregatedActivity.length;
+  const chartH = 160;
+
+  const fmtDate = (d: string) => {
+    const parts = d.split('-');
+    if (parts.length === 3) {
+      const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      return `${months[parseInt(parts[1], 10) - 1]} ${parseInt(parts[2], 10)}`;
+    }
+    return d;
+  };
+
+  // Monotone cubic interpolation (Fritsch-Carlson) — no overshoot, flat between equal values
+  const buildMonotonePath = (pts: { x: number; y: number }[]): string => {
+    if (pts.length < 2) return '';
+    if (pts.length === 2) return `M${pts[0].x},${pts[0].y} L${pts[1].x},${pts[1].y}`;
+
+    const len = pts.length;
+    // Step 1: compute slopes between consecutive points
+    const deltas: number[] = [];
+    const slopes: number[] = [];
+    for (let i = 0; i < len - 1; i++) {
+      const dx = pts[i + 1].x - pts[i].x;
+      deltas.push(dx === 0 ? 0 : (pts[i + 1].y - pts[i].y) / dx);
+    }
+
+    // Step 2: compute tangents using Fritsch-Carlson
+    const tangents: number[] = [deltas[0]];
+    for (let i = 1; i < len - 1; i++) {
+      if (deltas[i - 1] * deltas[i] <= 0) {
+        // Sign change or zero — set tangent to 0 to prevent overshoot
+        tangents.push(0);
+      } else {
+        tangents.push((deltas[i - 1] + deltas[i]) / 2);
+      }
+    }
+    tangents.push(deltas[deltas.length - 1]);
+
+    // Step 3: adjust tangents to ensure monotonicity
+    for (let i = 0; i < len - 1; i++) {
+      if (Math.abs(deltas[i]) < 1e-10) {
+        // Flat segment — both tangents should be 0
+        tangents[i] = 0;
+        tangents[i + 1] = 0;
+      } else {
+        const alpha = tangents[i] / deltas[i];
+        const beta = tangents[i + 1] / deltas[i];
+        // Clamp to circle of radius 3 to prevent overshoot
+        const mag = Math.sqrt(alpha * alpha + beta * beta);
+        if (mag > 3) {
+          tangents[i] = (3 * alpha / mag) * deltas[i];
+          tangents[i + 1] = (3 * beta / mag) * deltas[i];
+        }
+      }
+    }
+
+    // Step 4: build cubic bezier path
+    let d = `M${pts[0].x},${pts[0].y}`;
+    for (let i = 0; i < len - 1; i++) {
+      const dx = (pts[i + 1].x - pts[i].x) / 3;
+      const cp1x = pts[i].x + dx;
+      const cp1y = pts[i].y + tangents[i] * dx;
+      const cp2x = pts[i + 1].x - dx;
+      const cp2y = pts[i + 1].y - tangents[i + 1] * dx;
+      d += ` C${cp1x},${cp1y} ${cp2x},${cp2y} ${pts[i + 1].x},${pts[i + 1].y}`;
+    }
+    return d;
+  };
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!chartRef.current || n <= 1) return;
+    const rect = chartRef.current.getBoundingClientRect();
+    const relX = (e.clientX - rect.left) / rect.width;
+    const idx = Math.round(relX * (n - 1));
+    setHoveredIdx(Math.max(0, Math.min(n - 1, idx)));
+  };
+
+  // Compute pixel positions based on actual container width
+  const containerWidth = chartRef.current?.getBoundingClientRect().width ?? 500;
+  const padLeft = 0;
+  const padRight = 0;
+  const usableW = containerWidth - padLeft - padRight;
+  const padTop = 20;
+  const padBottom = 10;
+  const usableH = chartH - padTop - padBottom;
+
+  const points = aggregatedActivity.map((d, i) => ({
+    x: n > 1 ? padLeft + (i / (n - 1)) * usableW : containerWidth / 2,
+    y: padTop + usableH - (d.count / maxCount) * usableH,
+    date: d.date,
+    count: d.count,
+  }));
+
+  const linePath = buildMonotonePath(points);
+  const lastPt = points[points.length - 1];
+  const firstPt = points[0];
+  const areaPath = linePath ? `${linePath} L${lastPt?.x ?? containerWidth},${chartH} L${firstPt?.x ?? 0},${chartH} Z` : '';
+
+  const hovered = hoveredIdx !== null ? points[hoveredIdx] : null;
+
+  return (
+    <MotionDiv
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.18, ease: [0.25, 0.46, 0.45, 0.94] }}
+      className={CARD_STYLE_DARK_CLASS}
+      style={CARD_STYLE}
+    >
+      <div className="flex items-center justify-between mb-6">
+        <div>
+          <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Engagement</p>
+          <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5">Daily Activity</p>
+        </div>
+        <div className="flex rounded-lg bg-zinc-100 dark:bg-zinc-800 p-0.5">
+          {(['7d', '30d'] as const).map(range => (
+            <button
+              key={range}
+              onClick={() => onRangeChange(range)}
+              className={`px-3 py-1 text-xs font-medium rounded-md transition-colors ${
+                activityRange === range
+                  ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
+                  : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
+              }`}
+            >
+              {range}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Chart */}
+      <div
+        ref={chartRef}
+        className="relative"
+        style={{ height: chartH, cursor: 'crosshair' }}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={() => setHoveredIdx(null)}
+      >
+        <svg
+          width="100%"
+          height={chartH}
+          viewBox={`0 0 ${containerWidth} ${chartH}`}
+          style={{ overflow: 'visible' }}
+        >
+          <defs>
+            <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor={ACCENT} stopOpacity={0.15} />
+              <stop offset="100%" stopColor={ACCENT} stopOpacity={0} />
+            </linearGradient>
+          </defs>
+
+          {/* Area fill with gradient */}
+          {areaPath && <path d={areaPath} fill="url(#areaGradient)" />}
+
+          {/* Smooth line */}
+          {linePath && (
+            <path d={linePath} fill="none" stroke={ACCENT} strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" opacity={0.7} />
+          )}
+
+          {/* Hover vertical line */}
+          {hovered && (
+            <line x1={hovered.x} y1={0} x2={hovered.x} y2={chartH} stroke={ACCENT} strokeWidth={1} opacity={0.15} />
+          )}
+        </svg>
+
+        {/* Hover dot + tooltip as HTML */}
+        {hovered && (
+          <>
+            <div
+              className="absolute pointer-events-none transition-all duration-75 dark:!bg-zinc-900"
+              style={{
+                left: hovered.x - 4.5,
+                top: hovered.y - 4.5,
+                width: 9,
+                height: 9,
+                borderRadius: '50%',
+                backgroundColor: '#FAF7F4',
+                border: `2px solid ${ACCENT}`,
+                boxShadow: '0 0 0 3px rgba(42,125,111,0.1)',
+              }}
+            />
+            <div
+              className="absolute pointer-events-none z-10 transition-all duration-75"
+              style={{
+                left: Math.max(0, Math.min(hovered.x - 50, containerWidth - 100)),
+                top: hovered.y - 40,
+              }}
+            >
+              <div
+                className="text-[11px] font-medium text-center shadow-lg"
+                style={{
+                  backgroundColor: 'rgba(30,30,30,0.9)',
+                  color: 'white',
+                  borderRadius: 8,
+                  padding: '5px 12px',
+                  backdropFilter: 'blur(8px)',
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                {fmtDate(hovered.date)} &middot; <span className="font-bold">{aggregatedActivity[hoveredIdx!]?.count ?? 0}</span> block{(aggregatedActivity[hoveredIdx!]?.count ?? 0) !== 1 ? 's' : ''}
+              </div>
+            </div>
+          </>
+        )}
+      </div>
+
+      <div className="flex justify-between mt-3">
+        <span className={`text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{fmtDate(aggregatedActivity[0]?.date || '')}</span>
+        <span className={`text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{fmtDate(aggregatedActivity[aggregatedActivity.length - 1]?.date || '')}</span>
+      </div>
+
+      <div className="flex gap-4 mt-3 text-xs text-zinc-500 dark:text-zinc-400">
+        <span><span className="font-medium text-zinc-700 dark:text-zinc-300">{totalBlocks}</span> blocks total</span>
+        <span><span className="font-medium text-zinc-700 dark:text-zinc-300">{activeDays}</span> active days</span>
+        <span><span className="font-medium text-zinc-700 dark:text-zinc-300">{avgPerDay}</span> avg/day</span>
+      </div>
+    </MotionDiv>
+  );
+}

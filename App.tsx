@@ -24,11 +24,12 @@ import { useToast } from './components/Toast';
 import { ALL_COURSES, categoryTitles, SUBJECT_TO_MODULE } from './courseData';
 import { useSettings } from './hooks/useSettings';
 import { useStreak, StreakData } from './hooks/useStreak';
-import { useMood } from './hooks/useMood';
 import { useTodaysFocus, FocusRecommendation } from './hooks/useTodaysFocus';
 import { usePoints } from './hooks/usePoints';
 import { useStrategyMastery } from './hooks/useStrategyMastery';
 import { useWeeklyChallenge } from './hooks/useWeeklyChallenge';
+import { useRecommendation } from './hooks/useRecommendation';
+import { useQuests } from './hooks/useQuests';
 import DashboardView from './components/DashboardView';
 import LearningPathsView from './components/LearningPathsView';
 import TrainingPulse from './components/TrainingPulse';
@@ -40,6 +41,8 @@ import { type AthleteRank, type AchievementDefinition, getRankForPoints } from '
 import { type StudentSubjectProfile } from './components/subjectData';
 import NorthStarEditModal from './components/NorthStarEditModal';
 import ChangeSubjectsModal from './components/ChangeSubjectsModal';
+import NotificationBell from './components/NotificationBell';
+import { generateAutoNotifications } from './components/gc/gcNotifications';
 import { ACCENT_THEME_LIST, ACCENT_THEMES } from './themeData';
 import { POINTS, isModuleJustCompleted, isCategoryJustCompleted } from './journeyPointsConfig';
 import { type AccentThemeId } from './types';
@@ -244,9 +247,10 @@ interface MobileBottomNavProps {
   onGoToJourney: () => void;
   onGoToInnovationZone: () => void;
   onOpenProfile: () => void;
+  unreadNotifications?: number;
 }
 
-const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, onGoToTrainingHub, onGoToStudy, onGoToJourney, onGoToInnovationZone, onOpenProfile }) => {
+const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, onGoToTrainingHub, onGoToStudy, onGoToJourney, onGoToInnovationZone, onOpenProfile, unreadNotifications = 0 }) => {
   const tabs = [
     { id: 'tree', label: 'Home', icon: Home, action: onGoHome },
     { id: 'gamification-hub', label: 'Training', icon: Dumbbell, action: onGoToTrainingHub },
@@ -273,6 +277,9 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
               <tab.icon size={20} strokeWidth={isActive ? 2 : 1.5} />
               <span className="text-[10px] font-medium">{tab.label}</span>
               {isActive && <div className="absolute bottom-1.5 w-1 h-1 rounded-full bg-[var(--accent-hex)]" />}
+              {tab.id === 'profile' && unreadNotifications > 0 && (
+                <div className="absolute top-2 right-1/2 translate-x-3 w-2 h-2 rounded-full bg-rose-500" />
+              )}
             </button>
           );
         })}
@@ -301,19 +308,10 @@ interface MobileProfileSheetProps {
   totalCount: number;
   onOpenNorthStar: () => void;
   hasNorthStar: boolean;
-  todayMood: string | null;
-  onSetMood: (mood: string) => void;
   unlockedThemes: string[];
 }
 
-const MOBILE_MOOD_OPTIONS = [
-  { key: 'calm', label: 'Calm', emoji: '😌' },
-  { key: 'balanced', label: 'Balanced', emoji: '⚖️' },
-  { key: 'energized', label: 'Energized', emoji: '⚡' },
-  { key: 'stressed', label: 'Stressed', emoji: '😰' },
-];
-
-const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, onGoToInsights, completedCount, totalCount, onOpenNorthStar, hasNorthStar, todayMood, onSetMood, unlockedThemes }) => {
+const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, onGoToInsights, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes }) => {
   const displayAvatar = avatarOverride || user.avatar;
   return (
     <AnimatePresence>
@@ -368,27 +366,6 @@ const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose
                   {streak.longestStreak > 1 && (
                     <p className="text-[10px] text-zinc-400 dark:text-zinc-500">Longest: {streak.longestStreak} days</p>
                   )}
-                </div>
-              </div>
-
-              {/* Mood Check-in */}
-              <div className="mb-3">
-                <p className="text-[10px] font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 px-1 mb-2">How are you feeling?</p>
-                <div className="flex gap-2">
-                  {MOBILE_MOOD_OPTIONS.map(m => (
-                    <button
-                      key={m.key}
-                      onClick={() => onSetMood(m.key)}
-                      className={`flex-1 flex flex-col items-center gap-1 py-2.5 rounded-xl text-xs font-medium transition-colors ${
-                        todayMood === m.key
-                          ? 'bg-[rgba(var(--accent),0.1)] text-[var(--accent-hex)] ring-1 ring-[rgba(var(--accent),0.3)]'
-                          : 'bg-zinc-50 dark:bg-zinc-800/50 text-zinc-500 dark:text-zinc-400'
-                      }`}
-                    >
-                      <span className="text-base">{m.emoji}</span>
-                      {m.label}
-                    </button>
-                  ))}
                 </div>
               </div>
 
@@ -475,6 +452,60 @@ const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose
   );
 };
 
+/* ── Module Error Boundary ── */
+interface ModuleErrorBoundaryProps {
+  onBack: () => void;
+  children: React.ReactNode;
+}
+
+interface ModuleErrorBoundaryState {
+  hasError: boolean;
+  error: Error | null;
+}
+
+class ModuleErrorBoundary extends React.Component<ModuleErrorBoundaryProps, ModuleErrorBoundaryState> {
+  constructor(props: ModuleErrorBoundaryProps) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+
+  static getDerivedStateFromError(error: Error): ModuleErrorBoundaryState {
+    return { hasError: true, error };
+  }
+
+  componentDidCatch(error: Error, info: React.ErrorInfo) {
+    console.error('Module failed to load:', error, info);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex items-center justify-center p-6">
+          <div className="max-w-md w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-8 text-center">
+            <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-rose-100 dark:bg-rose-500/10 flex items-center justify-center">
+              <span className="text-2xl">!</span>
+            </div>
+            <h2 className="text-lg font-bold text-zinc-800 dark:text-white mb-2">Something went wrong</h2>
+            <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
+              {this.state.error?.message || 'This module failed to load. Please try again.'}
+            </p>
+            <button
+              onClick={() => {
+                this.setState({ hasError: false, error: null });
+                this.props.onBack();
+              }}
+              className="px-6 py-2.5 rounded-full bg-[var(--accent-hex)] text-white text-sm font-medium hover:opacity-90 transition-opacity"
+            >
+              Go Back
+            </button>
+          </div>
+        </div>
+      );
+    }
+
+    return this.props.children;
+  }
+}
 
 const App: React.FC = () => {
   const { showToast } = useToast();
@@ -499,9 +530,10 @@ const App: React.FC = () => {
   const [unlockedCardStyles, setUnlockedCardStyles] = useState<string[]>([]);
   const [dismissedGuides, setDismissedGuides] = useState<Record<string, string>>({});
   const [timetableBlockContext, setTimetableBlockContext] = useState<{ subject: string; sessionType: 'new-learning' | 'practice' | 'revision'; durationMinutes: number; dateKey: string; blockId: string } | null>(null);
+  const [timetableCompletions, setTimetableCompletions] = useState<Record<string, string[]>>({});
+  const [unreadNotificationCount, setUnreadNotificationCount] = useState(0);
   const { settings, updateSetting, isLoaded: settingsLoaded } = useSettings(user?.uid, user?.avatar);
   const { streak } = useStreak(user?.uid);
-  const { todayMood, setMood, entries: moodEntries } = useMood(user?.uid);
   const { recommendation } = useTodaysFocus(userProgress, ALL_COURSES);
   const pointsData = usePoints(user?.uid);
 
@@ -559,6 +591,8 @@ const App: React.FC = () => {
 
   const strategyMastery = useStrategyMastery(user?.uid, userProgress, studentCourses);
   const weeklyChallenge = useWeeklyChallenge(user?.uid);
+  const { recommendation: smartRec } = useRecommendation(user?.uid, userProgress, studentCourses, streak, studentProfile, timetableCompletions);
+  const { questState, claimReward: claimQuestReward, reload: reloadQuest } = useQuests(user?.uid, userProgress, studentCourses, streak, studentProfile, timetableCompletions);
 
   const completedCount = studentCourses.filter(c => {
     const p = userProgress[c.id];
@@ -694,6 +728,13 @@ const App: React.FC = () => {
               } else {
                 setNeedsOnboarding(true);
               }
+              if (progressData.timetableCompletions) {
+                setTimetableCompletions(progressData.timetableCompletions as Record<string, string[]>);
+              }
+              // Fire-and-forget auto-notifications
+              if (userData.role !== 'gc') {
+                generateAutoNotifications(firebaseUser.uid, progressData).catch(() => {});
+              }
             } else {
               setUserProgress({});
               setNeedsOnboarding(true);
@@ -725,7 +766,18 @@ const App: React.FC = () => {
           }
         } catch (error) {
            console.error("Error fetching user data:", error);
-           await signOut(auth);
+           // Don't silently sign out — let the user in with minimal data
+           const fallbackName = firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Student';
+           setUser({
+             uid: firebaseUser.uid,
+             name: fallbackName,
+             avatar: 'Charlie',
+             isAdmin: false,
+           });
+           setUserProgress({});
+           setNeedsOnboarding(true);
+           setIsLoadingAuth(false);
+           showToast("Your profile couldn't be loaded fully. Some data may be missing.", 'warning', 5000);
         }
 
       } else {
@@ -979,12 +1031,17 @@ const App: React.FC = () => {
   const handleDismissGuide = useCallback(async (guideId: string) => {
     setDismissedGuides(prev => ({ ...prev, [guideId]: new Date().toISOString() }));
     if (user?.uid) {
-      await setDoc(doc(db, 'progress', user.uid),
-        { dismissedGuides: { [guideId]: new Date().toISOString() } },
-        { merge: true }
-      );
+      try {
+        await setDoc(doc(db, 'progress', user.uid),
+          { dismissedGuides: { [guideId]: new Date().toISOString() } },
+          { merge: true }
+        );
+      } catch (err) {
+        console.error('Failed to persist guide dismissal:', err);
+        showToast('Couldn\'t save — check your connection', 'error');
+      }
     }
-  }, [user?.uid]);
+  }, [user?.uid, showToast]);
 
   const renderContent = () => {
     if (isLoadingAuth) {
@@ -1109,7 +1166,7 @@ const App: React.FC = () => {
     }
 
     if (user.role === 'gc' && user.school) {
-      return <GCDashboard school={user.school} onLogout={handleLogout} allCourses={ALL_COURSES} />;
+      return <GCDashboard school={user.school} onLogout={handleLogout} allCourses={ALL_COURSES} gcName={user.name} />;
     }
 
     if (viewState === 'study-session') {
@@ -1120,7 +1177,7 @@ const App: React.FC = () => {
             studentProfile={studentProfile}
             userProgress={userProgress}
             allCourses={studentCourses}
-            pointsReload={pointsData.reload}
+            pointsReload={() => { pointsData.reload(); reloadQuest(); }}
             streak={streak}
             onBack={handleBackToTree}
             onStrategyMasteryRecompute={strategyMastery.recompute}
@@ -1158,7 +1215,6 @@ const App: React.FC = () => {
           <InsightsView
             uid={user.uid}
             streak={streak}
-            moodEntries={moodEntries}
             strategyMastery={strategyMastery.masteryMap}
             onBack={handleBackToTree}
           />
@@ -1182,7 +1238,7 @@ const App: React.FC = () => {
             dismissedGuides={dismissedGuides}
             onDismissGuide={handleDismissGuide}
             weeklyChallenge={weeklyChallenge}
-            pointsReload={pointsData.reload}
+            pointsReload={() => { pointsData.reload(); reloadQuest(); }}
             onGoToStudy={handleGoToStudy}
           />
         </Suspense>
@@ -1197,7 +1253,6 @@ const App: React.FC = () => {
           categoryTitles={categoryTitles}
           streak={streak}
           recommendation={recommendation}
-          moodEntries={moodEntries}
           onSelectModule={handleSelectModule}
           onBack={handleBackToTree}
           pointsBalance={pointsData.balance}
@@ -1236,6 +1291,8 @@ const App: React.FC = () => {
             onPointsReload={pointsData.reload}
             userProgress={userProgress}
             allCourses={studentCourses}
+            subjects={studentProfile?.subjects?.map((s: any) => s.subjectName) ?? []}
+            flaresEnabled={settings?.flaresToggle !== false}
           />
         </Suspense>
       );
@@ -1266,8 +1323,17 @@ const App: React.FC = () => {
         unlockedThemes={unlockedThemes}
         completedCount={completedCount}
         totalCount={studentCourses.length}
-        todayMood={todayMood}
-        onSetMood={setMood}
+        streak={streak}
+        pointsBalance={pointsData.balance}
+        northStar={northStar}
+        studentProfile={studentProfile}
+        timetableCompletions={timetableCompletions}
+        smartRecommendation={smartRec}
+        questState={questState}
+        onClaimQuestReward={() => { claimQuestReward(); pointsData.reload?.(); }}
+        onRecommendationAction={() => {
+          handleGoToStudy();
+        }}
       />;
     }
 
@@ -1301,8 +1367,6 @@ const App: React.FC = () => {
           onGoToInnovationZone={handleGoToInnovationZone}
           onGoToJourney={handleGoToJourney}
           onChangeSubjects={studentProfile ? () => setChangeSubjectsOpen(true) : undefined}
-          todayMood={todayMood}
-          onSetMood={setMood}
           completedCount={completedCount}
           totalCount={studentCourses.length}
         />
@@ -1321,30 +1385,50 @@ const App: React.FC = () => {
       const ModuleComponent = moduleComponents[currentModuleId];
       if (ModuleComponent) {
         return (
-          <Suspense fallback={<LoadingSpinner />}>
-            {cameFromJourney && (
-              <div className="fixed top-0 left-0 right-0 z-[80] bg-[var(--accent-hex)] dark:bg-[var(--accent-hex)]">
-                <button
-                  onClick={handleBackToCategory}
-                  className="w-full flex items-center justify-center gap-2 py-2 text-white text-xs font-bold hover:bg-[var(--accent-dark-hex)] dark:hover:bg-[var(--accent-dark-hex)] transition-colors"
-                >
-                  <ArrowLeft size={14} />
-                  Back to Journey Results
-                </button>
-              </div>
-            )}
-            <ModuleComponent
-              onBack={handleBackToCategory}
-              progress={userProgress[currentModuleId] || { unlockedSection: 0 }}
-              onProgressUpdate={(p) => handleProgressUpdate(currentModuleId, p)}
-            />
-          </Suspense>
+          <ModuleErrorBoundary onBack={handleBackToCategory}>
+            <Suspense fallback={<LoadingSpinner />}>
+              {cameFromJourney && (
+                <div className="fixed top-0 left-0 right-0 z-[80] bg-[var(--accent-hex)] dark:bg-[var(--accent-hex)]">
+                  <button
+                    onClick={handleBackToCategory}
+                    className="w-full flex items-center justify-center gap-2 py-2 text-white text-xs font-bold hover:bg-[var(--accent-dark-hex)] dark:hover:bg-[var(--accent-dark-hex)] transition-colors"
+                  >
+                    <ArrowLeft size={14} />
+                    Back to Journey Results
+                  </button>
+                </div>
+              )}
+              <ModuleComponent
+                onBack={handleBackToCategory}
+                progress={userProgress[currentModuleId] || { unlockedSection: 0 }}
+                onProgressUpdate={(p) => handleProgressUpdate(currentModuleId, p)}
+              />
+            </Suspense>
+          </ModuleErrorBoundary>
         );
       }
-      return null;
+      // Module ID not found in registry — show fallback and navigate back
+      return (
+        <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex items-center justify-center p-6">
+          <div className="max-w-md w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-8 text-center">
+            <h2 className="text-lg font-bold text-zinc-800 dark:text-white mb-2">Module not found</h2>
+            <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
+              The module &ldquo;{currentModuleId}&rdquo; could not be found.
+            </p>
+            <button
+              onClick={handleBackToCategory}
+              className="px-6 py-2.5 rounded-full bg-[var(--accent-hex)] text-white text-sm font-medium hover:opacity-90 transition-opacity"
+            >
+              Go Back
+            </button>
+          </div>
+        </div>
+      );
     }
 
-    return null;
+    // Fallback: unknown view state — navigate back to tree
+    handleBackToTree();
+    return <LoadingSpinner />;
   };
 
   return (
@@ -1352,7 +1436,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
       {user && viewState !== 'onboarding' && user.role !== 'gc' && !user.isAdmin && (
         <div className={`fixed top-6 right-6 z-[100] ${viewState === 'tree' || viewState === 'category' ? 'hidden' : viewState === 'my-journey' ? 'hidden' : 'hidden md:block'}`}>
-          <div className="flex items-start gap-3">
+          <div className="flex items-center gap-2">
             <div>
               {gamification.isLoaded && (
                 <TrainingPulse
@@ -1368,6 +1452,7 @@ const App: React.FC = () => {
                 onDismiss={() => { setCurrentToast(null); setIsBonusFlashToast(false); }}
               />
             </div>
+            <NotificationBell uid={user.uid} onUnreadCountChange={setUnreadNotificationCount} />
             <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} onGoToDashboard={handleGoToDashboard} completedCount={completedCount} totalCount={studentCourses.length} onOpenNorthStar={() => setNorthStarEditOpen(true)} hasNorthStar={northStar !== null} unlockedThemes={unlockedThemes} />
           </div>
         </div>
@@ -1401,6 +1486,7 @@ const App: React.FC = () => {
           onGoToJourney={handleGoToJourney}
           onGoToInnovationZone={handleGoToInnovationZone}
           onOpenProfile={() => setMobileProfileOpen(true)}
+          unreadNotifications={unreadNotificationCount}
         />
       )}
 
@@ -1424,8 +1510,6 @@ const App: React.FC = () => {
           totalCount={studentCourses.length}
           onOpenNorthStar={() => setNorthStarEditOpen(true)}
           hasNorthStar={northStar !== null}
-          todayMood={todayMood}
-          onSetMood={setMood}
           unlockedThemes={unlockedThemes}
         />
       )}
@@ -1440,6 +1524,11 @@ const App: React.FC = () => {
             unlockedAvatarSeeds={unlockedAvatarSeeds}
             unlockedThemes={unlockedThemes}
             unlockedCardStyles={unlockedCardStyles}
+            userName={user?.name}
+            userSchool={user?.school}
+            onChangeSubjects={studentProfile ? () => { setSettingsOpen(false); setChangeSubjectsOpen(true); } : undefined}
+            onResetNorthStar={() => { setSettingsOpen(false); setNorthStarEditOpen(true); }}
+            onLogout={handleLogout}
           />
           <StudyPassportModal
             isOpen={passportOpen}

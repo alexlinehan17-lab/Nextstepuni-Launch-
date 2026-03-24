@@ -8,7 +8,7 @@ import { CategoryType } from '../KnowledgeTree';
 import { UserProgress } from '../../types';
 import { getPointsForGrade, LC_SUBJECTS } from '../subjectData';
 import { TimetableCompletions } from '../subjectData';
-import { GCStudentFullData, MoodTrend, StudentStatus, SubjectGapData } from './gcTypes';
+import { GCStudentFullData, StudentStatus, SubjectGapData } from './gcTypes';
 
 // ─── Progress Helpers ───────────────────────────────────────────────────────
 
@@ -175,38 +175,6 @@ export function isActiveThisWeek(student: GCStudentFullData): boolean {
   });
 }
 
-// ─── Mood Trend ─────────────────────────────────────────────────────────────
-
-const MOOD_SCORES: Record<string, number> = { stressed: 1, balanced: 2, calm: 3, energized: 4 };
-
-export function getMoodTrend(student: GCStudentFullData): MoodTrend {
-  const entries = student.mood?.entries;
-  if (!entries || entries.length < 2) return 'insufficient-data';
-
-  const now = new Date();
-  const sevenDaysAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
-  const fourteenDaysAgo = new Date(now.getTime() - 14 * 24 * 60 * 60 * 1000);
-
-  const recent = entries.filter(e => {
-    const d = new Date(e.date);
-    return d >= sevenDaysAgo && d <= now;
-  });
-  const prior = entries.filter(e => {
-    const d = new Date(e.date);
-    return d >= fourteenDaysAgo && d < sevenDaysAgo;
-  });
-
-  if (recent.length < 2 || prior.length < 1) return 'insufficient-data';
-
-  const avgRecent = recent.reduce((sum, e) => sum + (MOOD_SCORES[e.mood] ?? 2), 0) / recent.length;
-  const avgPrior = prior.reduce((sum, e) => sum + (MOOD_SCORES[e.mood] ?? 2), 0) / prior.length;
-  const diff = avgRecent - avgPrior;
-
-  if (diff >= 0.3) return 'improving';
-  if (diff <= -0.3) return 'declining';
-  return 'stable';
-}
-
 // ─── Engagement Timeline ────────────────────────────────────────────────────
 
 export function getEngagementTimeline(
@@ -273,15 +241,13 @@ function escapeCSV(val: string): string {
 }
 
 export function generateStudentCSV(students: GCStudentFullData[], allCourses: CourseData[]): string {
-  const headers = ['Name', 'Progress %', 'CAO Current', 'CAO Target', 'Gap', 'Streak', 'Mood', 'Trend', 'Status'];
+  const headers = ['Name', 'Progress %', 'CAO Current', 'CAO Target', 'Gap', 'Streak', 'Status'];
   const rows = students.map(s => {
     const progress = getOverallProgress(s.progress, allCourses);
     const currentCAO = getStudentCurrentCAO(s);
     const targetCAO = getStudentTargetCAO(s);
     const gap = targetCAO - currentCAO;
     const streak = s.streak?.currentStreak ?? 0;
-    const latestMood = getLatestMood(s) ?? '';
-    const trend = getMoodTrend(s);
     const status = getStudentStatus(s, allCourses);
 
     return [
@@ -291,22 +257,11 @@ export function generateStudentCSV(students: GCStudentFullData[], allCourses: Co
       String(targetCAO),
       String(gap),
       String(streak),
-      latestMood,
-      trend,
       status,
     ].join(',');
   });
 
   return [headers.join(','), ...rows].join('\n');
-}
-
-// ─── Latest Mood ────────────────────────────────────────────────────────────
-
-export function getLatestMood(student: GCStudentFullData): string | null {
-  if (!student.mood?.entries || student.mood.entries.length === 0) return null;
-  // entries is an array of { date, mood, timestamp } sorted newest last
-  const sorted = [...student.mood.entries].sort((a, b) => b.date.localeCompare(a.date));
-  return sorted[0].mood;
 }
 
 // ─── Progress Distribution ──────────────────────────────────────────────────
@@ -381,42 +336,3 @@ export function getRecentlyActiveStudents(students: GCStudentFullData[], limit: 
   return withActivity.slice(0, limit);
 }
 
-// ─── Class Mood Distribution ─────────────────────────────────────────────────
-
-export interface MoodDistributionEntry {
-  mood: string;
-  count: number;
-  percentage: number;
-}
-
-export interface ClassMoodDistribution {
-  distribution: MoodDistributionEntry[];
-  total: number;
-}
-
-export function getClassMoodDistribution(students: GCStudentFullData[]): ClassMoodDistribution {
-  const now = new Date();
-  const sevenDaysAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
-
-  const counts: Record<string, number> = { calm: 0, balanced: 0, energized: 0, stressed: 0 };
-  let total = 0;
-
-  students.forEach(s => {
-    if (!s.mood?.entries) return;
-    s.mood.entries.forEach(e => {
-      const d = new Date(e.date);
-      if (d >= sevenDaysAgo && d <= now && e.mood in counts) {
-        counts[e.mood]++;
-        total++;
-      }
-    });
-  });
-
-  const distribution = Object.entries(counts).map(([mood, count]) => ({
-    mood,
-    count,
-    percentage: total > 0 ? Math.round((count / total) * 100) : 0,
-  }));
-
-  return { distribution, total };
-}

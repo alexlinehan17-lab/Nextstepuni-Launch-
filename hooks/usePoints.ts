@@ -30,9 +30,12 @@ export function usePoints(uid?: string): PointsData & { reload: () => void } {
       return;
     }
 
+    let cancelled = false;
+
     const load = async () => {
       try {
         const progressDoc = await getDoc(doc(db, 'progress', uid));
+        if (cancelled) return;
         if (progressDoc.exists()) {
           const data = progressDoc.data();
           const pd = data.pointsData;
@@ -49,10 +52,11 @@ export function usePoints(uid?: string): PointsData & { reload: () => void } {
       } catch (err) {
         console.error('Failed to load points:', err);
       }
-      setPoints({ ...DEFAULT, isLoaded: true });
+      if (!cancelled) setPoints({ ...DEFAULT, isLoaded: true });
     };
 
     load();
+    return () => { cancelled = true; };
   }, [uid, version]);
 
   return { ...points, reload };

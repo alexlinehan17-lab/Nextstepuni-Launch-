@@ -66,6 +66,13 @@ const IncubationEffectDemo = () => {
   const focusedTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const diffuseTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const factTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const wrongAttemptTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (wrongAttemptTimerRef.current) clearTimeout(wrongAttemptTimerRef.current);
+    };
+  }, []);
 
   const puzzle = PUZZLES[puzzleIndex];
 
@@ -118,7 +125,7 @@ const IncubationEffectDemo = () => {
     } else {
       setWrongAttempt(true);
       setShowStuckPrompt(true);
-      setTimeout(() => setWrongAttempt(false), 1200);
+      wrongAttemptTimerRef.current = setTimeout(() => setWrongAttempt(false), 1200);
     }
   };
 
@@ -129,7 +136,7 @@ const IncubationEffectDemo = () => {
     } else {
       setReturnAttempts(prev => prev + 1);
       setWrongAttempt(true);
-      setTimeout(() => setWrongAttempt(false), 1200);
+      wrongAttemptTimerRef.current = setTimeout(() => setWrongAttempt(false), 1200);
       if (returnAttempts >= 1) {
         setRevealAnswer(true);
       }

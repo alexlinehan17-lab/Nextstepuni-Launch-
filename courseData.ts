@@ -490,6 +490,24 @@ const COURSE_DEFINITIONS = [
     sectionsCount: 7,
     tags: ['Exam Tactics', 'Productivity'],
   },
+  {
+    id: 'marking-scheme-decoder-protocol',
+    category: 'exam-zone',
+    title: 'The Marking Scheme Decoder',
+    subtitle: 'Turn the Examiner\'s Playbook Into Your Advantage',
+    description: 'Every SEC marking scheme follows patterns. Once you see them, you\'ll know exactly how to write answers that collect every available mark.',
+    sectionsCount: 7,
+    tags: ['Exam Tactics', 'Points Maximisation'],
+  },
+  {
+    id: 'answer-engineering-protocol',
+    category: 'exam-zone',
+    title: 'Answer Engineering',
+    subtitle: 'Why Some Students Get More Marks for the Same Knowledge',
+    description: 'Two students know the same content. One gets a H3, the other gets a H1. The difference is how they structure their answers. This module teaches you the frameworks.',
+    sectionsCount: 7,
+    tags: ['Exam Tactics', 'Points Maximisation'],
+  },
   // ── Per-Subject Modules (data-driven) ──────────────────────────────
   {
     id: 'subject-english-protocol',

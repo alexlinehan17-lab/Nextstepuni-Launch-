@@ -4,6 +4,7 @@
  */
 
 import React, { useState, useMemo } from 'react';
+import { fuzzyMatchTopic } from './syllabusData';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Brain, CheckCircle, ArrowRight, TrendingUp, BookOpen, Target, RotateCcw,
@@ -21,6 +22,7 @@ export interface DebriefEntry {
   sessionType: 'new-learning' | 'practice' | 'revision';
   durationMinutes: number;
   hardestTopic: string;
+  topicsCovered?: string[];   // topics the student worked on this session
   strategy: string;
   confidenceBefore: number;   // 1-5
   confidenceAfter: number;    // 1-5
@@ -49,26 +51,36 @@ interface StudyDebriefProps {
   subject: string;
   sessionType: 'new-learning' | 'practice' | 'revision';
   durationMinutes: number;
+  syllabusTopics?: string[];
   onSubmit: (entry: Omit<DebriefEntry, 'id' | 'date'>) => void;
   onSkip: () => void;
 }
 
 const StudyDebrief: React.FC<StudyDebriefProps> = ({
-  isOpen, subject, sessionType, durationMinutes, onSubmit, onSkip,
+  isOpen, subject, sessionType, durationMinutes, syllabusTopics, onSubmit, onSkip,
 }) => {
   const [step, setStep] = useState(0);
   const [hardestTopic, setHardestTopic] = useState('');
+  const [topicsCovered, setTopicsCovered] = useState<string[]>([]);
   const [strategy, setStrategy] = useState('');
   const [confidenceBefore, setConfidenceBefore] = useState(3);
   const [confidenceAfter, setConfidenceAfter] = useState(3);
   const [whatWorked, setWhatWorked] = useState('');
 
   const handleSubmit = () => {
+    // Build topics covered: include hardest topic + any additionally selected
+    const cleanHardest = (hardestTopic === '__other__' ? '' : hardestTopic).trim();
+    const allTopics = [...new Set([
+      ...(cleanHardest && cleanHardest !== 'Not specified' ? [cleanHardest] : []),
+      ...topicsCovered,
+    ])];
+
     onSubmit({
       subject,
       sessionType,
       durationMinutes,
-      hardestTopic: hardestTopic.trim() || 'Not specified',
+      hardestTopic: cleanHardest || 'Not specified',
+      topicsCovered: allTopics.length > 0 ? allTopics : undefined,
       strategy: strategy || 'other',
       confidenceBefore,
       confidenceAfter,
@@ -77,11 +89,18 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
     // Reset for next use
     setStep(0);
     setHardestTopic('');
+    setTopicsCovered([]);
     setStrategy('');
     setConfidenceBefore(3);
     setConfidenceAfter(3);
     setWhatWorked('');
   };
+
+  // Fuzzy match hardest topic against Syllabus X-Ray data
+  const sxrMatch = useMemo(
+    () => hardestTopic.length >= 3 ? fuzzyMatchTopic(subject, hardestTopic) : null,
+    [subject, hardestTopic],
+  );
 
   if (!isOpen) return null;
 
@@ -90,16 +109,97 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
     <MotionDiv key="step-0" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-4">
       <div>
         <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">What felt hardest today?</p>
-        <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-1">Name a specific topic, concept, or question type.</p>
+        <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-1">
+          {syllabusTopics && syllabusTopics.length > 0 ? 'Pick a topic or type your own.' : 'Name a specific topic, concept, or question type.'}
+        </p>
       </div>
-      <input
-        type="text"
-        value={hardestTopic}
-        onChange={(e) => setHardestTopic(e.target.value)}
-        placeholder={`e.g. "Organic chemistry reactions" or "Integration by parts"`}
-        className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-teal-500/30"
-        autoFocus
-      />
+      {syllabusTopics && syllabusTopics.length > 0 ? (
+        <div className="space-y-2">
+          <div className="max-h-40 overflow-y-auto space-y-1 pr-1">
+            {syllabusTopics.map(t => (
+              <button
+                key={t}
+                onClick={() => setHardestTopic(t)}
+                className={`w-full text-left px-3 py-2 rounded-lg text-xs font-medium transition-all ${
+                  hardestTopic === t
+                    ? 'bg-teal-500 text-white'
+                    : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
+                }`}
+              >
+                {t}
+              </button>
+            ))}
+          </div>
+          <button
+            onClick={() => setHardestTopic('__other__')}
+            className={`w-full text-left px-3 py-2 rounded-lg text-xs font-medium transition-all ${
+              hardestTopic === '__other__' || (hardestTopic !== '' && !syllabusTopics.includes(hardestTopic))
+                ? 'bg-teal-500 text-white'
+                : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
+            }`}
+          >
+            Other (type your own)
+          </button>
+          {(hardestTopic === '__other__' || (hardestTopic !== '' && !syllabusTopics.includes(hardestTopic))) && (
+            <input
+              type="text"
+              value={hardestTopic === '__other__' ? '' : hardestTopic}
+              onChange={(e) => setHardestTopic(e.target.value || '__other__')}
+              placeholder="Type a topic..."
+              className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-teal-500/30"
+              autoFocus
+            />
+          )}
+        </div>
+      ) : (
+        <>
+          <input
+            type="text"
+            value={hardestTopic}
+            onChange={(e) => setHardestTopic(e.target.value)}
+            placeholder={`e.g. "Organic chemistry reactions" or "Integration by parts"`}
+            className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-teal-500/30"
+            autoFocus
+          />
+          {sxrMatch && (
+            <div className="mt-3 px-3 py-2.5 rounded-lg bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-800/30">
+              <p className="text-xs leading-relaxed text-teal-700 dark:text-teal-300">
+                <span className="font-bold">{sxrMatch.name}</span> — Worth ~{sxrMatch.markWeight}% of your {subject} paper and comes up {sxrMatch.examFrequency}/10 years.
+              </p>
+            </div>
+          )}
+        </>
+      )}
+
+      {/* Also covered? — quick topic multi-select */}
+      {syllabusTopics && syllabusTopics.length > 0 && hardestTopic && hardestTopic !== '__other__' && (
+        <div className="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Also covered?</p>
+          <div className="flex flex-wrap gap-1.5">
+            {syllabusTopics
+              .filter(t => t !== hardestTopic)
+              .slice(0, 8)
+              .map(t => {
+                const isSelected = topicsCovered.includes(t);
+                return (
+                  <button
+                    key={t}
+                    onClick={() => setTopicsCovered(prev =>
+                      isSelected ? prev.filter(x => x !== t) : [...prev, t]
+                    )}
+                    className={`px-2.5 py-1 rounded-md text-[10px] font-medium transition-all ${
+                      isSelected
+                        ? 'bg-teal-500 text-white'
+                        : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                    }`}
+                  >
+                    {t}
+                  </button>
+                );
+              })}
+          </div>
+        </div>
+      )}
     </MotionDiv>,
 
     // Step 1: What strategy did you use?
@@ -275,3 +375,50 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
 };
 
 export default StudyDebrief;
+
+// ─── Shared Utility: Per-subject best strategy ──────────────────────────────
+
+export interface SubjectStrategyHint {
+  strategy: string;
+  label: string;
+  avgGain: number;
+}
+
+/**
+ * Computes the best study strategy per subject from debrief data.
+ * Returns a map of subjectName → best strategy with avg confidence gain.
+ * Only includes strategies used 2+ times with positive gain.
+ */
+export function computeStrategyHints(debriefs: DebriefEntry[]): Record<string, SubjectStrategyHint> {
+  const bySubject = new Map<string, Map<string, number[]>>();
+
+  for (const d of debriefs) {
+    if (!bySubject.has(d.subject)) bySubject.set(d.subject, new Map());
+    const stratMap = bySubject.get(d.subject)!;
+    if (!stratMap.has(d.strategy)) stratMap.set(d.strategy, []);
+    stratMap.get(d.strategy)!.push(d.confidenceAfter - d.confidenceBefore);
+  }
+
+  const result: Record<string, SubjectStrategyHint> = {};
+  bySubject.forEach((stratMap, subject) => {
+    let bestStrat: string | null = null;
+    let bestAvg = 0;
+    stratMap.forEach((gains, strat) => {
+      if (gains.length >= 2) {
+        const avg = gains.reduce((s, g) => s + g, 0) / gains.length;
+        if (avg > bestAvg) {
+          bestAvg = avg;
+          bestStrat = strat;
+        }
+      }
+    });
+    if (bestStrat && bestAvg > 0) {
+      const label = STRATEGY_OPTIONS.find(o => o.id === bestStrat)?.label ?? bestStrat;
+      // Shorten label for display
+      const shortLabel = label.split(' / ')[0].split(' (')[0];
+      result[subject] = { strategy: bestStrat, label: shortLabel, avgGain: Math.round(bestAvg * 10) / 10 };
+    }
+  });
+
+  return result;
+}

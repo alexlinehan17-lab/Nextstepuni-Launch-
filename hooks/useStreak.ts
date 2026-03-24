@@ -32,9 +32,12 @@ export function useStreak(uid?: string) {
       return;
     }
 
+    let cancelled = false;
+
     const load = async () => {
       try {
         const progressDoc = await getDoc(doc(db, 'progress', uid));
+        if (cancelled) return;
         if (progressDoc.exists()) {
           const data = progressDoc.data();
           const completions: TimetableCompletions = data.timetableCompletions ?? {};
@@ -51,10 +54,11 @@ export function useStreak(uid?: string) {
       } catch (err) {
         console.error('Failed to load streak:', err);
       }
-      setIsLoaded(true);
+      if (!cancelled) setIsLoaded(true);
     };
 
     load();
+    return () => { cancelled = true; };
   }, [uid]);
 
   return { streak, isLoaded };

@@ -34,6 +34,7 @@ export interface StudyBlock {
   subjectName: string;
   sessionType: 'new-learning' | 'practice' | 'revision';
   durationMinutes: number;
+  suggestedTopics?: string[];
 }
 
 export interface DaySchedule {
@@ -155,6 +156,60 @@ export function isValidTarget(current: Grade, target: Grade): boolean {
   // Must be same level prefix
   if (current.charAt(0) !== target.charAt(0)) return false;
   return getGradeIndex(target) <= getGradeIndex(current);
+}
+
+// ─── Grade Bargains Calculator ──────────────────────────────────────────────
+
+export interface Bargain {
+  subjectName: string;
+  fromGrade: Grade;
+  toGrade: Grade;
+  pointsGain: number;
+  isMathsBonus: boolean;
+  effortHint: string;
+}
+
+export function computeBargains(profile: StudentSubjectProfile): Bargain[] {
+  const bargains: Bargain[] = [];
+
+  for (const sub of profile.subjects) {
+    const isMaths = LC_SUBJECTS.find(lc => lc.name === sub.subjectName)?.isMaths ?? false;
+    const grades = sub.level === 'higher' ? HIGHER_GRADES : ORDINARY_GRADES;
+    const currentIdx = grades.indexOf(sub.currentGrade);
+    if (currentIdx <= 0) continue;
+
+    const nextGrade = grades[currentIdx - 1];
+    const currentPoints = getPointsForGrade(sub.currentGrade, isMaths);
+    const nextPoints = getPointsForGrade(nextGrade, isMaths);
+    const gain = nextPoints - currentPoints;
+
+    // Check if maths bonus kicks in
+    const mathsBonusKicksIn = isMaths && sub.level === 'higher'
+      && getPointsForGrade(sub.currentGrade, false) < 46
+      && getPointsForGrade(nextGrade, false) >= 46;
+
+    // Effort hint based on grade gap
+    let effortHint = '4-6 focused study sessions';
+    if (sub.currentGrade.endsWith('1') || sub.currentGrade.endsWith('2')) {
+      effortHint = '6-10 focused study sessions';
+    } else if (sub.currentGrade.endsWith('7') || sub.currentGrade.endsWith('8')) {
+      effortHint = '2-4 focused study sessions';
+    }
+
+    if (gain > 0) {
+      bargains.push({
+        subjectName: sub.subjectName,
+        fromGrade: sub.currentGrade,
+        toGrade: nextGrade,
+        pointsGain: gain,
+        isMathsBonus: mathsBonusKicksIn,
+        effortHint,
+      });
+    }
+  }
+
+  bargains.sort((a, b) => b.pointsGain - a.pointsGain);
+  return bargains;
 }
 
 // ─── Timetable Completion Tracking ──────────────────────────────────────────

@@ -3,15 +3,19 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  Settings, Star, RotateCcw, ChevronDown, ChevronUp, TrendingUp, Info, ArrowRight,
+  Settings, Star, RotateCcw, ChevronDown, ChevronUp, TrendingUp, Info, ArrowRight, Compass,
 } from 'lucide-react';
 import {
   type StudentSubjectProfile, type Grade, type Level,
   LC_SUBJECTS, getPointsForGrade, getGradesForLevel,
 } from './subjectData';
+import { doc, setDoc, getDoc } from 'firebase/firestore';
+import { db } from '../firebase';
+import { type CAOCourse, hydrateCourses } from './futureFinderData';
+import { useMockResults } from '../hooks/useMockResults';
 
 const MotionDiv = motion.div as any;
 
@@ -19,7 +23,16 @@ const MotionDiv = motion.div as any;
 
 interface CAOPointsSimulatorProps {
   profile: StudentSubjectProfile;
+  uid?: string;
   onOpenSettings: () => void;
+}
+
+export interface WhatIfScenario {
+  subjectName: string;
+  currentGrade: Grade;
+  whatIfGrade: Grade;
+  pointsGain: number;
+  isMaths: boolean;
 }
 
 interface SimSubject {
@@ -35,47 +48,6 @@ interface BestSixResult {
   total: number;
   bestSix: { subjectName: string; points: number; grade: Grade }[];
   outside: { subjectName: string; points: number; grade: Grade }[];
-}
-
-// ─── Subject Color Map (literal Tailwind strings for CDN constraint) ────────
-
-const SUBJECT_COLORS: Record<string, { dot: string; bg: string; border: string; text: string }> = {
-  'English': { dot: 'bg-blue-500', bg: 'bg-blue-50 dark:bg-blue-900/20', border: 'border-blue-200 dark:border-blue-800/40', text: 'text-blue-700 dark:text-blue-300' },
-  'Irish': { dot: 'bg-emerald-500', bg: 'bg-emerald-50 dark:bg-emerald-900/20', border: 'border-emerald-200 dark:border-emerald-800/40', text: 'text-emerald-700 dark:text-emerald-300' },
-  'Mathematics': { dot: 'bg-indigo-500', bg: 'bg-indigo-50 dark:bg-indigo-900/20', border: 'border-indigo-200 dark:border-indigo-800/40', text: 'text-indigo-700 dark:text-indigo-300' },
-  'French': { dot: 'bg-sky-500', bg: 'bg-sky-50 dark:bg-sky-900/20', border: 'border-sky-200 dark:border-sky-800/40', text: 'text-sky-700 dark:text-sky-300' },
-  'German': { dot: 'bg-yellow-500', bg: 'bg-yellow-50 dark:bg-yellow-900/20', border: 'border-yellow-200 dark:border-yellow-800/40', text: 'text-yellow-700 dark:text-yellow-300' },
-  'Spanish': { dot: 'bg-orange-500', bg: 'bg-orange-50 dark:bg-orange-900/20', border: 'border-orange-200 dark:border-orange-800/40', text: 'text-orange-700 dark:text-orange-300' },
-  'Italian': { dot: 'bg-red-500', bg: 'bg-red-50 dark:bg-red-900/20', border: 'border-red-200 dark:border-red-800/40', text: 'text-red-700 dark:text-red-300' },
-  'Japanese': { dot: 'bg-pink-500', bg: 'bg-pink-50 dark:bg-pink-900/20', border: 'border-pink-200 dark:border-pink-800/40', text: 'text-pink-700 dark:text-pink-300' },
-  'Physics': { dot: 'bg-cyan-500', bg: 'bg-cyan-50 dark:bg-cyan-900/20', border: 'border-cyan-200 dark:border-cyan-800/40', text: 'text-cyan-700 dark:text-cyan-300' },
-  'Chemistry': { dot: 'bg-teal-500', bg: 'bg-teal-50 dark:bg-teal-900/20', border: 'border-teal-200 dark:border-teal-800/40', text: 'text-teal-700 dark:text-teal-300' },
-  'Biology': { dot: 'bg-lime-500', bg: 'bg-lime-50 dark:bg-lime-900/20', border: 'border-lime-200 dark:border-lime-800/40', text: 'text-lime-700 dark:text-lime-300' },
-  'Applied Maths': { dot: 'bg-violet-500', bg: 'bg-violet-50 dark:bg-violet-900/20', border: 'border-violet-200 dark:border-violet-800/40', text: 'text-violet-700 dark:text-violet-300' },
-  'Computer Science': { dot: 'bg-fuchsia-500', bg: 'bg-fuchsia-50 dark:bg-fuchsia-900/20', border: 'border-fuchsia-200 dark:border-fuchsia-800/40', text: 'text-fuchsia-700 dark:text-fuchsia-300' },
-  'Ag Science': { dot: 'bg-green-500', bg: 'bg-green-50 dark:bg-green-900/20', border: 'border-green-200 dark:border-green-800/40', text: 'text-green-700 dark:text-green-300' },
-  'Accounting': { dot: 'bg-amber-500', bg: 'bg-amber-50 dark:bg-amber-900/20', border: 'border-amber-200 dark:border-amber-800/40', text: 'text-amber-700 dark:text-amber-300' },
-  'Business': { dot: 'bg-amber-600', bg: 'bg-amber-50 dark:bg-amber-900/20', border: 'border-amber-200 dark:border-amber-800/40', text: 'text-amber-700 dark:text-amber-300' },
-  'Economics': { dot: 'bg-yellow-600', bg: 'bg-yellow-50 dark:bg-yellow-900/20', border: 'border-yellow-200 dark:border-yellow-800/40', text: 'text-yellow-700 dark:text-yellow-300' },
-  'History': { dot: 'bg-purple-500', bg: 'bg-purple-50 dark:bg-purple-900/20', border: 'border-purple-200 dark:border-purple-800/40', text: 'text-purple-700 dark:text-purple-300' },
-  'Geography': { dot: 'bg-emerald-600', bg: 'bg-emerald-50 dark:bg-emerald-900/20', border: 'border-emerald-200 dark:border-emerald-800/40', text: 'text-emerald-700 dark:text-emerald-300' },
-  'Politics & Society': { dot: 'bg-rose-500', bg: 'bg-rose-50 dark:bg-rose-900/20', border: 'border-rose-200 dark:border-rose-800/40', text: 'text-rose-700 dark:text-rose-300' },
-  'Religious Education': { dot: 'bg-zinc-500', bg: 'bg-zinc-50 dark:bg-zinc-800/40', border: 'border-zinc-200 dark:border-zinc-700/40', text: 'text-zinc-700 dark:text-zinc-300' },
-  'Classical Studies': { dot: 'bg-stone-500', bg: 'bg-stone-50 dark:bg-stone-800/40', border: 'border-stone-200 dark:border-stone-700/40', text: 'text-stone-700 dark:text-stone-300' },
-  'Home Economics': { dot: 'bg-orange-400', bg: 'bg-orange-50 dark:bg-orange-900/20', border: 'border-orange-200 dark:border-orange-800/40', text: 'text-orange-700 dark:text-orange-300' },
-  'Construction Studies': { dot: 'bg-slate-500', bg: 'bg-slate-50 dark:bg-slate-800/40', border: 'border-slate-200 dark:border-slate-700/40', text: 'text-slate-700 dark:text-slate-300' },
-  'Engineering': { dot: 'bg-gray-500', bg: 'bg-gray-50 dark:bg-gray-800/40', border: 'border-gray-200 dark:border-gray-700/40', text: 'text-gray-700 dark:text-gray-300' },
-  'DCG': { dot: 'bg-neutral-500', bg: 'bg-neutral-50 dark:bg-neutral-800/40', border: 'border-neutral-200 dark:border-neutral-700/40', text: 'text-neutral-700 dark:text-neutral-300' },
-  'Technology': { dot: 'bg-blue-600', bg: 'bg-blue-50 dark:bg-blue-900/20', border: 'border-blue-200 dark:border-blue-800/40', text: 'text-blue-700 dark:text-blue-300' },
-  'Art': { dot: 'bg-rose-400', bg: 'bg-rose-50 dark:bg-rose-900/20', border: 'border-rose-200 dark:border-rose-800/40', text: 'text-rose-700 dark:text-rose-300' },
-  'Music': { dot: 'bg-pink-400', bg: 'bg-pink-50 dark:bg-pink-900/20', border: 'border-pink-200 dark:border-pink-800/40', text: 'text-pink-700 dark:text-pink-300' },
-  'Design & Communication Graphics': { dot: 'bg-indigo-400', bg: 'bg-indigo-50 dark:bg-indigo-900/20', border: 'border-indigo-200 dark:border-indigo-800/40', text: 'text-indigo-700 dark:text-indigo-300' },
-};
-
-const DEFAULT_COLOR = { dot: 'bg-zinc-500', bg: 'bg-zinc-50 dark:bg-zinc-800/40', border: 'border-zinc-200 dark:border-zinc-700/40', text: 'text-zinc-700 dark:text-zinc-300' };
-
-function getSubjectColor(name: string) {
-  return SUBJECT_COLORS[name] || DEFAULT_COLOR;
 }
 
 // ─── Core Logic ──────────────────────────────────────────────────────────────
@@ -104,46 +76,129 @@ const PointsCard: React.FC<{
   points: number;
   maxPoints: number;
   delta?: number;
-  bgClass: string;
-  borderClass: string;
-  textClass: string;
-  barClass: string;
-}> = ({ label, points, maxPoints, delta, bgClass, borderClass, textClass, barClass }) => {
+}> = ({ label, points, maxPoints, delta }) => {
   const pct = maxPoints > 0 ? Math.min(100, (points / maxPoints) * 100) : 0;
   return (
-    <div className={`rounded-xl p-4 border ${bgClass} ${borderClass}`}>
-      <p className={`text-[10px] font-bold uppercase tracking-widest ${textClass} mb-1`}>{label}</p>
-      <div className="flex items-baseline gap-1.5">
-        <span className={`font-serif text-3xl font-bold ${textClass}`}>{points}</span>
-        <span className="text-sm text-zinc-400 dark:text-zinc-500 font-medium">/625</span>
+    <div
+      className="rounded-xl p-4"
+      style={{
+        backgroundColor: '#FAF7F4',
+        border: '0.5px solid rgba(0,0,0,0.07)',
+      }}
+    >
+      <div className="dark:hidden">
+        <p className="text-[10px] font-medium uppercase tracking-widest text-zinc-400 mb-1">{label}</p>
+        <div className="flex items-baseline gap-1.5">
+          <span className="text-3xl font-medium" style={{ color: '#2A7D6F' }}>{points}</span>
+          <span className="text-sm text-zinc-400 font-medium">/625</span>
+        </div>
+        <div className="w-full h-1 bg-zinc-200 rounded-full mt-2 overflow-hidden">
+          <MotionDiv
+            className="h-full rounded-full"
+            style={{ backgroundColor: '#2A7D6F' }}
+            initial={{ width: 0 }}
+            animate={{ width: `${pct}%` }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+          />
+        </div>
+        {delta !== undefined && delta !== 0 && (
+          <span
+            className="inline-block mt-2 text-xs font-medium"
+            style={{ color: delta > 0 ? '#2A7D6F' : undefined }}
+          >
+            <span className={delta < 0 ? 'text-rose-500' : ''}>
+              {delta > 0 ? '+' : ''}{delta} pts
+            </span>
+          </span>
+        )}
       </div>
-      <div className="w-full h-1.5 bg-zinc-200 dark:bg-white/10 rounded-full mt-2 overflow-hidden">
-        <MotionDiv
-          className={`h-full rounded-full ${barClass}`}
-          initial={{ width: 0 }}
-          animate={{ width: `${pct}%` }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-        />
+      <div className="hidden dark:block">
+        <div
+          className="rounded-xl p-4 -m-4"
+          style={{
+            backgroundColor: 'rgba(255,255,255,0.04)',
+            border: '0.5px solid rgba(255,255,255,0.08)',
+          }}
+        >
+          <p className="text-[10px] font-medium uppercase tracking-widest text-zinc-400 mb-1">{label}</p>
+          <div className="flex items-baseline gap-1.5">
+            <span className="text-3xl font-medium" style={{ color: '#4DB8A4' }}>{points}</span>
+            <span className="text-sm text-zinc-400 font-medium">/625</span>
+          </div>
+          <div className="w-full h-1 bg-zinc-200 dark:bg-zinc-700 rounded-full mt-2 overflow-hidden">
+            <MotionDiv
+              className="h-full rounded-full"
+              style={{ backgroundColor: '#4DB8A4' }}
+              initial={{ width: 0 }}
+              animate={{ width: `${pct}%` }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
+            />
+          </div>
+          {delta !== undefined && delta !== 0 && (
+            <span
+              className="inline-block mt-2 text-xs font-medium"
+              style={{ color: delta > 0 ? '#4DB8A4' : undefined }}
+            >
+              <span className={delta < 0 ? 'text-rose-500' : ''}>
+                {delta > 0 ? '+' : ''}{delta} pts
+              </span>
+            </span>
+          )}
+        </div>
       </div>
-      {delta !== undefined && delta !== 0 && (
-        <span className={`inline-block mt-2 text-[10px] font-bold px-2 py-0.5 rounded-full ${
-          delta > 0
-            ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400'
-            : 'bg-rose-100 dark:bg-rose-900/30 text-rose-600 dark:text-rose-400'
-        }`}>
-          {delta > 0 ? '+' : ''}{delta} pts
-        </span>
-      )}
     </div>
   );
 };
 
 // ─── CAOPointsSimulator ──────────────────────────────────────────────────────
 
-const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, onOpenSettings }) => {
+const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, onOpenSettings }) => {
   const [activeTab, setActiveTab] = useState<'overview' | 'what-if'>('overview');
   const [showGains, setShowGains] = useState(true);
   const [simSubjects, setSimSubjects] = useState<SimSubject[]>([]);
+  const [ffPicks, setFfPicks] = useState<CAOCourse[]>([]);
+  const saveTimerRef = useRef<ReturnType<typeof setTimeout>>();
+
+  // Mock results integration (War Room → CAO Simulator)
+  const { mocks } = useMockResults(uid);
+  const [mockBannerDismissed, setMockBannerDismissed] = useState(false);
+
+  const latestMockGrades = useMemo(() => {
+    if (mocks.length === 0) return null;
+    const latest = mocks[0]; // mocks are sorted newest first
+    const gradeMap: Record<string, string> = {};
+    for (const entry of latest.entries) {
+      gradeMap[entry.subjectName] = entry.grade;
+    }
+    return gradeMap;
+  }, [mocks]);
+
+  const mockUpdatesAvailable = useMemo(() => {
+    if (!latestMockGrades || mockBannerDismissed) return [];
+    return simSubjects.filter(s => {
+      const mockGrade = latestMockGrades[s.subjectName];
+      return mockGrade && mockGrade !== s.currentGrade;
+    }).map(s => ({
+      subjectName: s.subjectName,
+      currentGrade: s.currentGrade,
+      mockGrade: latestMockGrades[s.subjectName] as Grade,
+    }));
+  }, [simSubjects, latestMockGrades, mockBannerDismissed]);
+
+  // Load FutureFinder picks from Firestore
+  useEffect(() => {
+    if (!uid) return;
+    let cancelled = false;
+    getDoc(doc(db, 'progress', uid)).then(snap => {
+      if (cancelled) return;
+      const data = snap.data();
+      if (data?.futureFinder?.topPicks) {
+        const hydrated = hydrateCourses(data.futureFinder.topPicks).slice(0, 5);
+        setFfPicks(hydrated);
+      }
+    }).catch(() => {});
+    return () => { cancelled = true; };
+  }, [uid]);
 
   // Initialize / re-initialize from profile
   useEffect(() => {
@@ -204,32 +259,91 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, onOpen
     return gains.slice(0, 5);
   }, [simSubjects, whatIfAnalysis.total]);
 
+  // Save computed points to Firestore so other components (ComebackEngine) can read them
+  useEffect(() => {
+    if (!uid || simSubjects.length === 0) return;
+    const timer = setTimeout(() => {
+      setDoc(doc(db, 'progress', uid), {
+        computedPoints: { current: currentAnalysis.total, target: targetAnalysis.total },
+      }, { merge: true }).catch(() => {});
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, [uid, currentAnalysis.total, targetAnalysis.total, simSubjects.length]);
+
   const hasMathsHL = simSubjects.some(s => s.isMaths && s.level === 'higher');
 
   const handleWhatIfGradeChange = (subjectName: string, grade: Grade) => {
-    setSimSubjects(prev => prev.map(s =>
-      s.subjectName === subjectName ? { ...s, whatIfGrade: grade } : s
-    ));
+    setSimSubjects(prev => {
+      const next = prev.map(s =>
+        s.subjectName === subjectName ? { ...s, whatIfGrade: grade } : s
+      );
+      // Debounced save to Firestore
+      if (uid) {
+        clearTimeout(saveTimerRef.current);
+        saveTimerRef.current = setTimeout(() => {
+          const scenarios: WhatIfScenario[] = next
+            .filter(s => s.whatIfGrade !== s.currentGrade)
+            .map(s => ({
+              subjectName: s.subjectName,
+              currentGrade: s.currentGrade,
+              whatIfGrade: s.whatIfGrade,
+              pointsGain: getPointsForGrade(s.whatIfGrade, s.isMaths) - getPointsForGrade(s.currentGrade, s.isMaths),
+              isMaths: s.isMaths,
+            }));
+          setDoc(doc(db, 'progress', uid), {
+            caoSimulator: { whatIfScenarios: scenarios, updatedAt: new Date().toISOString() },
+          }, { merge: true }).catch(() => {});
+        }, 1500);
+      }
+      return next;
+    });
   };
 
   const handleResetAll = () => {
     setSimSubjects(prev => prev.map(s => ({ ...s, whatIfGrade: s.currentGrade })));
+    // Clear saved scenarios
+    if (uid) {
+      setDoc(doc(db, 'progress', uid), {
+        caoSimulator: { whatIfScenarios: [], updatedAt: new Date().toISOString() },
+      }, { merge: true }).catch(() => {});
+    }
   };
 
   const bestSixCount = Math.min(6, simSubjects.length);
   const bestSixLabel = simSubjects.length < 6 ? `Best ${bestSixCount}` : 'Best 6';
+
+  if (simSubjects.length === 0) {
+    return (
+      <div className="text-center py-16 space-y-4">
+        <div className="w-16 h-16 mx-auto rounded-2xl bg-zinc-100 dark:bg-zinc-900/30 flex items-center justify-center">
+          <Settings size={32} className="text-zinc-400" />
+        </div>
+        <h3 className="text-lg font-medium text-zinc-800 dark:text-white">Explore how grade changes affect your points</h3>
+        <p className="text-sm text-zinc-500 dark:text-zinc-400 max-w-sm mx-auto leading-relaxed">
+          Adjust any subject to see the impact on your best-six total. Find the biggest gains with the least effort.
+        </p>
+        <button
+          onClick={onOpenSettings}
+          className="px-6 py-3 rounded-xl text-white text-sm font-medium transition-colors"
+          style={{ backgroundColor: '#2A7D6F' }}
+        >
+          Set up subjects
+        </button>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6">
       {/* A. Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">CAO Points Simulator</h2>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">Explore how grade changes affect your points.</p>
+          <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white">CAO Points Simulator</h2>
+          <p className="text-sm text-zinc-400 mt-1">Explore how grade changes affect your points.</p>
         </div>
         <button
           onClick={onOpenSettings}
-          className="p-2.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800"
+          className="p-2.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800"
           title="Edit subjects"
         >
           <Settings size={16} className="text-zinc-500 dark:text-zinc-400" />
@@ -242,20 +356,12 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, onOpen
           label="Current"
           points={currentAnalysis.total}
           maxPoints={625}
-          bgClass="bg-zinc-50 dark:bg-zinc-800/40"
-          borderClass="border-zinc-200 dark:border-zinc-700/40"
-          textClass="text-zinc-700 dark:text-zinc-300"
-          barClass="bg-zinc-400 dark:bg-zinc-500"
         />
         <PointsCard
           label="Target"
           points={targetAnalysis.total}
           maxPoints={625}
           delta={targetAnalysis.total - currentAnalysis.total}
-          bgClass="bg-emerald-50 dark:bg-emerald-900/15"
-          borderClass="border-emerald-200 dark:border-emerald-800/40"
-          textClass="text-emerald-700 dark:text-emerald-300"
-          barClass="bg-emerald-500"
         />
         {activeTab === 'what-if' && (
           <PointsCard
@@ -263,21 +369,60 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, onOpen
             points={whatIfAnalysis.total}
             maxPoints={625}
             delta={whatIfAnalysis.total - currentAnalysis.total}
-            bgClass="bg-purple-50 dark:bg-purple-900/15"
-            borderClass="border-purple-200 dark:border-purple-800/40"
-            textClass="text-purple-700 dark:text-purple-300"
-            barClass="bg-purple-500"
           />
         )}
       </div>
 
+      {/* Mock Results Banner */}
+      {mockUpdatesAvailable.length > 0 && (
+        <div
+          className="rounded-xl p-4 space-y-3"
+          style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}
+        >
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <TrendingUp size={16} className="text-zinc-500" />
+              <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200">Mock results available</p>
+            </div>
+            <button
+              onClick={() => setMockBannerDismissed(true)}
+              className="text-xs text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
+            >
+              Dismiss
+            </button>
+          </div>
+          <p className="text-xs text-zinc-500">
+            Your latest mock shows different grades for {mockUpdatesAvailable.length} subject{mockUpdatesAvailable.length > 1 ? 's' : ''}. Update your what-if explorer to match?
+          </p>
+          <div className="space-y-1">
+            {mockUpdatesAvailable.slice(0, 3).map(u => (
+              <p key={u.subjectName} className="text-xs text-zinc-500">
+                {u.subjectName}: {u.currentGrade} → <span className="font-medium" style={{ color: '#2A7D6F' }}>{u.mockGrade}</span> (mock)
+              </p>
+            ))}
+          </div>
+          <button
+            onClick={() => {
+              for (const u of mockUpdatesAvailable) {
+                handleWhatIfGradeChange(u.subjectName, u.mockGrade);
+              }
+              setMockBannerDismissed(true);
+            }}
+            className="px-4 py-2 rounded-lg text-xs font-medium text-white transition-colors"
+            style={{ backgroundColor: '#2A7D6F' }}
+          >
+            Apply mock grades to What-If
+          </button>
+        </div>
+      )}
+
       {/* C. Tab Switcher */}
-      <div className="flex gap-1 p-1 bg-zinc-100 dark:bg-white/5 rounded-xl">
+      <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit">
         <button
           onClick={() => setActiveTab('overview')}
-          className={`flex-1 py-2.5 px-4 rounded-lg text-sm font-bold transition-all ${
+          className={`py-2 px-4 rounded-lg text-sm transition-all ${
             activeTab === 'overview'
-              ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-sm'
+              ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-medium shadow-sm'
               : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
           }`}
         >
@@ -285,9 +430,9 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, onOpen
         </button>
         <button
           onClick={() => setActiveTab('what-if')}
-          className={`flex-1 py-2.5 px-4 rounded-lg text-sm font-bold transition-all ${
+          className={`py-2 px-4 rounded-lg text-sm transition-all ${
             activeTab === 'what-if'
-              ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-sm'
+              ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-medium shadow-sm'
               : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
           }`}
         >
@@ -304,7 +449,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, onOpen
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className="space-y-1"
+            className="space-y-0"
           >
             {/* Best 6 header */}
             <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">
@@ -313,7 +458,6 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, onOpen
 
             {/* Best 6 ranked subjects */}
             {currentAnalysis.bestSix.map((sub, idx) => {
-              const color = getSubjectColor(sub.subjectName);
               const profileSub = simSubjects.find(s => s.subjectName === sub.subjectName);
               const targetSub = targetAnalysis.bestSix.find(s => s.subjectName === sub.subjectName)
                 || targetAnalysis.outside.find(s => s.subjectName === sub.subjectName);
@@ -328,26 +472,28 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, onOpen
                   initial={{ opacity: 0, x: -12 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: idx * 0.04 }}
-                  className="flex items-center gap-3 p-3 rounded-xl bg-white/60 dark:bg-white/5 border border-zinc-200/60 dark:border-white/10"
+                  className="flex items-center gap-3 py-3 px-1 border-b border-zinc-100 dark:border-zinc-800"
                 >
-                  <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500 w-5 text-center">{idx + 1}</span>
-                  <div className={`w-2.5 h-2.5 rounded-full flex-shrink-0 ${color.dot}`} />
+                  <span className="text-xs text-zinc-400 w-5 text-center">{idx + 1}</span>
+                  <div className="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-zinc-400" />
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
-                      <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200 truncate">{sub.subjectName}</p>
+                      <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200 truncate">{sub.subjectName}</p>
                       {mathsBonus && (
-                        <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400">+25</span>
+                        <span className="text-[9px] font-medium text-zinc-400">+25</span>
                       )}
                     </div>
-                    <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
-                      {sub.grade} <ArrowRight size={10} className="inline" /> {targetGrade}
+                    <p className="text-xs text-zinc-400">
+                      {sub.grade} → {targetGrade}
                     </p>
                   </div>
                   <div className="text-right flex-shrink-0">
-                    <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{sub.points}</p>
+                    <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200">{sub.points}</p>
                     {targetPoints !== sub.points && (
-                      <p className={`text-[10px] font-bold ${targetPoints > sub.points ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
-                        {targetPoints > sub.points ? '+' : ''}{targetPoints - sub.points}
+                      <p className="text-xs font-medium" style={{ color: targetPoints > sub.points ? '#2A7D6F' : undefined }}>
+                        <span className={targetPoints < sub.points ? 'text-rose-500' : ''}>
+                          {targetPoints > sub.points ? '+' : ''}{targetPoints - sub.points}
+                        </span>
                       </p>
                     )}
                   </div>
@@ -358,13 +504,12 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, onOpen
             {/* Outside best 6 */}
             {currentAnalysis.outside.length > 0 && (
               <>
-                <div className="flex items-center gap-3 py-2 px-3">
-                  <div className="flex-1 h-px bg-zinc-200 dark:bg-white/10" />
-                  <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Outside {bestSixLabel}</p>
-                  <div className="flex-1 h-px bg-zinc-200 dark:bg-white/10" />
+                <div className="flex items-center gap-3 py-3 px-1">
+                  <div className="flex-1 h-px bg-zinc-200 dark:bg-zinc-800" />
+                  <p className="text-[10px] text-zinc-300 dark:text-zinc-600 uppercase tracking-widest">Outside {bestSixLabel}</p>
+                  <div className="flex-1 h-px bg-zinc-200 dark:bg-zinc-800" />
                 </div>
                 {currentAnalysis.outside.map((sub, idx) => {
-                  const color = getSubjectColor(sub.subjectName);
                   const profileSub = simSubjects.find(s => s.subjectName === sub.subjectName);
                   const targetGrade = profileSub?.targetGrade ?? sub.grade;
 
@@ -374,18 +519,18 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, onOpen
                       initial={{ opacity: 0, x: -12 }}
                       animate={{ opacity: 0.5, x: 0 }}
                       transition={{ delay: (currentAnalysis.bestSix.length + idx) * 0.04 }}
-                      className="flex items-center gap-3 p-3 rounded-xl"
+                      className="flex items-center gap-3 py-3 px-1 border-b border-zinc-50 dark:border-zinc-800/50"
                     >
-                      <span className="text-xs font-bold text-zinc-300 dark:text-zinc-600 w-5 text-center">{currentAnalysis.bestSix.length + idx + 1}</span>
-                      <div className={`w-2.5 h-2.5 rounded-full flex-shrink-0 ${color.dot} opacity-50`} />
+                      <span className="text-xs text-zinc-300 dark:text-zinc-600 w-5 text-center">{currentAnalysis.bestSix.length + idx + 1}</span>
+                      <div className="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-zinc-300" />
                       <div className="flex-1 min-w-0">
-                        <p className="text-sm font-semibold text-zinc-500 dark:text-zinc-500 truncate">{sub.subjectName}</p>
-                        <p className="text-[11px] text-zinc-400 dark:text-zinc-600">
-                          {sub.grade} <ArrowRight size={10} className="inline" /> {targetGrade}
+                        <p className="text-sm font-medium text-zinc-500 dark:text-zinc-500 truncate">{sub.subjectName}</p>
+                        <p className="text-xs text-zinc-300 dark:text-zinc-600">
+                          {sub.grade} → {targetGrade}
                         </p>
                       </div>
                       <div className="text-right flex-shrink-0">
-                        <p className="text-sm font-bold text-zinc-400 dark:text-zinc-600">{sub.points}</p>
+                        <p className="text-sm font-medium text-zinc-400 dark:text-zinc-600">{sub.points}</p>
                       </div>
                     </MotionDiv>
                   );
@@ -403,24 +548,23 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, onOpen
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className="space-y-4"
+            className="space-y-0"
           >
             {/* Reset button */}
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mb-4">
               <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
                 Adjust grades to explore scenarios
               </p>
               <button
                 onClick={handleResetAll}
-                className="flex items-center gap-1.5 text-xs font-bold text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors px-3 py-1.5 rounded-lg bg-zinc-100 dark:bg-white/5"
+                className="flex items-center gap-1.5 text-xs text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
               >
                 <RotateCcw size={12} /> Reset All
               </button>
             </div>
 
-            {/* Per-subject grade cards */}
+            {/* Per-subject grade rows */}
             {simSubjects.map((sub, idx) => {
-              const color = getSubjectColor(sub.subjectName);
               const grades = getGradesForLevel(sub.level);
               const subjectPoints = getPointsForGrade(sub.whatIfGrade, sub.isMaths);
               const isInBestSix = whatIfBestSixNames.has(sub.subjectName);
@@ -432,15 +576,14 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, onOpen
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: idx * 0.03 }}
-                  className={`rounded-xl border p-4 ${color.bg} ${color.border}`}
+                  className="py-4 border-b border-zinc-100 dark:border-zinc-800"
                 >
                   <div className="flex items-center gap-2 mb-3">
-                    <div className={`w-2.5 h-2.5 rounded-full flex-shrink-0 ${color.dot}`} />
-                    <p className={`text-sm font-bold flex-1 ${color.text}`}>{sub.subjectName}</p>
-                    {isInBestSix && <Star size={14} className="text-amber-500 flex-shrink-0" />}
-                    <span className={`text-sm font-bold font-mono ${color.text}`}>{subjectPoints} pts</span>
+                    <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200 flex-1">{sub.subjectName}</p>
+                    {isInBestSix && <Star size={14} className="text-zinc-400 flex-shrink-0" />}
+                    <span className="text-sm font-medium text-zinc-800 dark:text-zinc-200 font-mono">{subjectPoints} pts</span>
                     {mathsBonus && (
-                      <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400">+25</span>
+                      <span className="text-[9px] font-medium text-zinc-400">+25</span>
                     )}
                   </div>
                   <div className="flex flex-wrap gap-1.5">
@@ -451,13 +594,14 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, onOpen
                         <button
                           key={g}
                           onClick={() => handleWhatIfGradeChange(sub.subjectName, g)}
-                          className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all ${
+                          className={`px-2.5 py-1 rounded-lg text-xs font-medium transition-all ${
                             isSelected
-                              ? 'bg-purple-500 text-white shadow-sm'
+                              ? 'text-white shadow-sm'
                               : isCurrent
-                                ? 'bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 ring-2 ring-zinc-300 dark:ring-zinc-600'
-                                : 'bg-white/60 dark:bg-white/5 text-zinc-500 dark:text-zinc-400 hover:bg-white dark:hover:bg-white/10'
+                                ? 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 ring-1 ring-zinc-300 dark:ring-zinc-600'
+                                : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
                           }`}
+                          style={isSelected ? { backgroundColor: '#2A7D6F' } : undefined}
                         >
                           {g}
                         </button>
@@ -473,16 +617,19 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, onOpen
 
       {/* F. Biggest Gains Panel */}
       {biggestGains.length > 0 && (
-        <div className="bg-amber-50 dark:bg-amber-900/15 border border-amber-200 dark:border-amber-700/30 rounded-xl overflow-hidden">
+        <div
+          className="rounded-xl overflow-hidden"
+          style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}
+        >
           <button
             onClick={() => setShowGains(!showGains)}
             className="w-full flex items-center justify-between px-4 py-3 text-left"
           >
             <div className="flex items-center gap-2">
-              <TrendingUp size={16} className="text-amber-600 dark:text-amber-400" />
-              <p className="text-sm font-bold text-amber-700 dark:text-amber-300">Biggest Gains Available</p>
+              <TrendingUp size={16} className="text-zinc-400" />
+              <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">Biggest Gains Available</p>
             </div>
-            {showGains ? <ChevronUp size={16} className="text-amber-500" /> : <ChevronDown size={16} className="text-amber-500" />}
+            {showGains ? <ChevronUp size={16} className="text-zinc-400" /> : <ChevronDown size={16} className="text-zinc-400" />}
           </button>
           <AnimatePresence>
             {showGains && (
@@ -492,26 +639,22 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, onOpen
                 exit={{ height: 0, opacity: 0 }}
                 className="overflow-hidden"
               >
-                <div className="px-4 pb-4 space-y-2">
-                  <p className="text-[10px] text-amber-600 dark:text-amber-400 mb-2">
+                <div className="px-4 pb-4 space-y-0">
+                  <p className="text-[10px] text-zinc-400 mb-3">
                     Top improvements ranked by net {bestSixLabel} total gain from one grade up.
                   </p>
-                  {biggestGains.map((gain, idx) => {
-                    const color = getSubjectColor(gain.subjectName);
-                    return (
-                      <div key={gain.subjectName} className="flex items-center gap-3 p-2.5 rounded-lg bg-white/60 dark:bg-white/5">
-                        <span className="text-xs font-bold text-amber-500 w-5 text-center">{idx + 1}</span>
-                        <div className={`w-2 h-2 rounded-full ${color.dot}`} />
-                        <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200 flex-1">{gain.subjectName}</p>
-                        <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
-                          {gain.fromGrade} <ArrowRight size={10} className="inline" /> {gain.toGrade}
-                        </p>
-                        <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-900/30 px-2 py-0.5 rounded-full">
-                          +{gain.netGain} pts
-                        </span>
-                      </div>
-                    );
-                  })}
+                  {biggestGains.map((gain, idx) => (
+                    <div key={gain.subjectName} className="flex items-center gap-3 py-2.5 border-b border-zinc-100 dark:border-zinc-800 last:border-b-0">
+                      <span className="text-xs text-zinc-400 w-5 text-center">{idx + 1}</span>
+                      <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200 flex-1">{gain.subjectName}</p>
+                      <p className="text-xs text-zinc-400">
+                        {gain.fromGrade} → {gain.toGrade}
+                      </p>
+                      <span className="text-xs font-medium" style={{ color: '#2A7D6F' }}>
+                        +{gain.netGain} pts
+                      </span>
+                    </div>
+                  ))}
                 </div>
               </MotionDiv>
             )}
@@ -519,13 +662,54 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, onOpen
         </div>
       )}
 
-      {/* G. Maths Bonus Explainer */}
+      {/* G. FutureFinder Course Picks with Gap Analysis */}
+      {ffPicks.length > 0 && (
+        <div
+          className="rounded-xl p-4 space-y-3"
+          style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}
+        >
+          <div className="flex items-center gap-2">
+            <Compass size={16} className="text-zinc-400" />
+            <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">Your Future Finder Picks</p>
+          </div>
+          <div className="space-y-0">
+            {ffPicks.map(course => {
+              const gap = Math.max(0, course.typicalPoints - whatIfAnalysis.total);
+              const isReachable = gap === 0;
+              return (
+                <div key={course.code} className="flex items-center gap-3 py-2.5 border-b border-zinc-100 dark:border-zinc-800 last:border-b-0">
+                  <div className="flex-1 min-w-0">
+                    <p className="text-xs font-medium text-zinc-800 dark:text-zinc-200 truncate">{course.title}</p>
+                    <p className="text-[10px] text-zinc-400">{course.institution} — {course.typicalPoints} pts</p>
+                  </div>
+                  {isReachable ? (
+                    <span className="text-xs font-medium text-emerald-600">
+                      On track
+                    </span>
+                  ) : (
+                    <span className="text-xs font-medium" style={{ color: '#2A7D6F' }}>
+                      {gap} pts to go
+                    </span>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          {biggestGains.length > 0 && ffPicks.some(c => c.typicalPoints > whatIfAnalysis.total) && (
+            <p className="text-[10px] text-zinc-400 italic">
+              Quick win: upgrade {biggestGains[0].subjectName} from {biggestGains[0].fromGrade} to {biggestGains[0].toGrade} for +{biggestGains[0].netGain} points
+            </p>
+          )}
+        </div>
+      )}
+
+      {/* H. Maths Bonus Explainer */}
       {hasMathsHL && (
-        <div className="flex items-start gap-3 p-4 bg-indigo-50 dark:bg-indigo-900/15 border border-indigo-200 dark:border-indigo-700/30 rounded-xl">
-          <Info size={16} className="text-indigo-500 dark:text-indigo-400 flex-shrink-0 mt-0.5" />
+        <div className="flex items-start gap-3 pl-4" style={{ borderLeft: '2px solid #e4e4e7' }}>
+          <Info size={16} className="text-zinc-400 flex-shrink-0 mt-0.5" />
           <div>
-            <p className="text-sm font-bold text-indigo-700 dark:text-indigo-300">Maths HL Bonus</p>
-            <p className="text-xs text-indigo-600 dark:text-indigo-400 leading-relaxed mt-1">
+            <p className="text-xs font-medium text-zinc-500 italic">Maths HL Bonus</p>
+            <p className="text-xs text-zinc-500 leading-relaxed mt-1 italic">
               Students taking Higher Level Mathematics receive an additional 25 CAO points for grades H1 through H6. This bonus is automatically included in all calculations above.
             </p>
           </div>

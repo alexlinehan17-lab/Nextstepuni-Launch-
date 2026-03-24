@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Zap, Quote } from 'lucide-react';
 import { ModuleTheme } from '../types';
@@ -16,10 +16,48 @@ interface HighlightProps {
 
 export const Highlight = ({ children, description, theme }: HighlightProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const tooltipRef = useRef<HTMLDivElement>(null);
+  const [tooltipStyle, setTooltipStyle] = useState<React.CSSProperties>({});
+
+  // Reposition tooltip to stay within viewport
+  const repositionTooltip = useCallback(() => {
+    if (!buttonRef.current || !tooltipRef.current) return;
+
+    const buttonRect = buttonRef.current.getBoundingClientRect();
+    const tooltipRect = tooltipRef.current.getBoundingClientRect();
+    const viewportWidth = window.innerWidth;
+    const pad = 12; // padding from edge
+
+    // Default: center above the button
+    let leftOffset = (buttonRect.width / 2) - (tooltipRect.width / 2);
+
+    // Check if tooltip goes off the right edge
+    const tooltipRight = buttonRect.left + leftOffset + tooltipRect.width;
+    if (tooltipRight > viewportWidth - pad) {
+      leftOffset -= (tooltipRight - viewportWidth + pad);
+    }
+
+    // Check if tooltip goes off the left edge
+    const tooltipLeft = buttonRect.left + leftOffset;
+    if (tooltipLeft < pad) {
+      leftOffset += (pad - tooltipLeft);
+    }
+
+    setTooltipStyle({ left: leftOffset });
+  }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      // Small delay to let the tooltip render before measuring
+      requestAnimationFrame(repositionTooltip);
+    }
+  }, [isOpen, repositionTooltip]);
 
   return (
     <span className="relative inline-block mx-0.5">
       <button
+        ref={buttonRef}
         onClick={(e) => {
           e.stopPropagation();
           setIsOpen(!isOpen);
@@ -33,13 +71,14 @@ export const Highlight = ({ children, description, theme }: HighlightProps) => {
           <>
             <div className="fixed inset-0 z-[60]" onClick={() => setIsOpen(false)} />
             <motion.div
-              initial={{ opacity: 0, scale: 0.9, y: 10, x: "-50%" }}
-              animate={{ opacity: 1, scale: 1, y: 0, x: "-50%" }}
-              exit={{ opacity: 0, scale: 0.9, y: 10, x: "-50%" }}
-              className="absolute z-[70] bottom-full left-1/2 mb-6 w-72 max-w-[calc(100vw-2rem)] p-6 bg-zinc-900/95 text-white text-xs rounded-2xl shadow-2xl pointer-events-auto leading-relaxed border border-white/10 backdrop-blur-xl whitespace-normal text-left"
-              style={{ transformOrigin: 'bottom center' }}
+              ref={tooltipRef}
+              initial={{ opacity: 0, scale: 0.95, y: 8 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 8 }}
+              transition={{ duration: 0.15 }}
+              className="absolute z-[70] bottom-full mb-3 w-72 max-w-[calc(100vw-1.5rem)] p-5 bg-zinc-900/95 text-white text-xs rounded-xl shadow-2xl pointer-events-auto leading-relaxed border border-white/10 backdrop-blur-xl whitespace-normal text-left"
+              style={{ ...tooltipStyle, transformOrigin: 'bottom center' }}
             >
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[10px] border-t-zinc-900/95"></div>
               <p className={`font-sans font-bold ${theme.tooltipAccent} mb-2 uppercase tracking-wider text-[9px]`} style={{ color: 'var(--accent-hex)' }}>Key Insight</p>
               <p className="text-zinc-200 font-medium">{description}</p>
             </motion.div>

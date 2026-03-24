@@ -92,6 +92,8 @@ export interface UserSettings {
   accentTheme: AccentThemeId;
   cardStyle: CardStyleId;
   defaultWorkMinutes: number;
+  flaresToggle?: boolean;
+  showDashboard?: boolean;
 }
 
 export type NorthStarCategory =
@@ -170,3 +172,27 @@ export interface StrategyMasteryRecord {
 }
 
 export type StrategyMasteryMap = Record<string, StrategyMasteryRecord>;
+
+// ── Unified Topic Mastery ────────────────────────────────────
+export type UnifiedConfidence = 'not-started' | 'shaky' | 'solid';
+
+export interface TopicMasteryEntry {
+  confidence: UnifiedConfidence;
+  updatedAt: number;
+  source: 'manual' | 'debrief' | 'import';
+  lastDebriefDate?: string;
+  sm2Quality?: number;
+}
+
+export type SubjectTopicMastery = Record<string, TopicMasteryEntry>;
+export type TopicMasteryMap = Record<string, SubjectTopicMastery>;
+
+// ── Unified Mock Results ─────────────────────────────────────
+export interface UnifiedMockResult {
+  id: string;
+  label: string;
+  date: string;
+  entries: { subjectName: string; grade: string; level: string }[];
+  totalPoints: number;
+  timestamp: number;
+}

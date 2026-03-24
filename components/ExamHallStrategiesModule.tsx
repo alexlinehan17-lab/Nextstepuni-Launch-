@@ -32,14 +32,22 @@ const TriageSimulator = () => {
     const [showFeedback, setShowFeedback] = useState(false);
     const [timeLeft, setTimeLeft] = useState(40);
     const [startTime, setStartTime] = useState(0);
+    const [totalTime, setTotalTime] = useState(0);
     const [answerTimes, setAnswerTimes] = useState<number[]>([]);
     const [lastAnswerTime, setLastAnswerTime] = useState(0);
+    const choiceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+    React.useEffect(() => {
+        return () => {
+            if (choiceTimerRef.current) clearTimeout(choiceTimerRef.current);
+        };
+    }, []);
 
     const colorMap = { green: { bg: 'bg-emerald-100 dark:bg-emerald-900/30', border: 'border-emerald-300 dark:border-emerald-700', text: 'text-emerald-700 dark:text-emerald-300', label: 'Do First', dot: 'bg-emerald-500' }, amber: { bg: 'bg-amber-100 dark:bg-amber-900/30', border: 'border-amber-300 dark:border-amber-700', text: 'text-amber-700 dark:text-amber-300', label: 'Do Second', dot: 'bg-amber-500' }, red: { bg: 'bg-rose-100 dark:bg-rose-900/30', border: 'border-rose-300 dark:border-rose-700', text: 'text-rose-700 dark:text-rose-300', label: 'Do Last', dot: 'bg-rose-500' } };
 
     React.useEffect(() => {
         if (phase !== 'drill' || showFeedback) return;
-        if (timeLeft <= 0) { setPhase('done'); return; }
+        if (timeLeft <= 0) { setTotalTime((Date.now() - startTime) / 1000); setPhase('done'); return; }
         const t = setTimeout(() => setTimeLeft(s => s - 1), 1000);
         return () => clearTimeout(t);
     }, [phase, timeLeft, showFeedback]);
@@ -66,15 +74,14 @@ const TriageSimulator = () => {
         newChoices[qIndex] = choice;
         setChoices(newChoices);
         setShowFeedback(true);
-        setTimeout(() => {
+        choiceTimerRef.current = setTimeout(() => {
             setShowFeedback(false);
-            if (qIndex + 1 >= triageQuestions.length) { setPhase('done'); }
+            if (qIndex + 1 >= triageQuestions.length) { setTotalTime((Date.now() - startTime) / 1000); setPhase('done'); }
             else { setQIndex(q => q + 1); }
         }, 1800);
     };
 
     const score = choices.filter((c, i) => c === triageQuestions[i].correct).length;
-    const totalTime = ((Date.now() - startTime) / 1000);
 
     if (phase === 'ready') {
         return (

@@ -7,9 +7,9 @@ import { useState, useEffect, useMemo } from 'react';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { type StreakData } from './useStreak';
-import { type MoodEntry } from './useMood';
 import { type StrategyMasteryMap } from '../types';
 import { type StudySessionRecord, STRATEGY_REGISTRY } from '../studySessionData';
+import { type DebriefEntry } from '../components/StudyDebrief';
 
 // ── Types ──────────────────────────────────────────────────
 
@@ -208,53 +208,6 @@ function subjectBalance(sessions: StudySessionRecord[]): Insight | null {
     iconColor: 'text-amber-500',
     title: `${pct}% of sessions are ${topSubject}`,
     description: `Consider mixing in ${second} to balance your study.`,
-    category: 'pattern',
-  };
-}
-
-function moodProductivity(
-  sessions: StudySessionRecord[],
-  moodEntries: MoodEntry[],
-): Insight | null {
-  if (sessions.length < 5 || moodEntries.length < 5) return null;
-
-  const moodByDate: Record<string, string> = {};
-  for (const e of moodEntries) {
-    moodByDate[e.date] = e.mood;
-  }
-
-  const moodMinutes: Record<string, number[]> = {};
-  for (const s of sessions) {
-    const mood = moodByDate[s.date];
-    if (!mood) continue;
-    if (!moodMinutes[mood]) moodMinutes[mood] = [];
-    moodMinutes[mood].push(s.actualSeconds / 60);
-  }
-
-  const moods = Object.keys(moodMinutes);
-  if (moods.length < 2) return null;
-
-  let bestMood = '';
-  let bestAvg = 0;
-
-  for (const mood of moods) {
-    const arr = moodMinutes[mood];
-    if (arr.length < 2) continue;
-    const avg = arr.reduce((a, b) => a + b, 0) / arr.length;
-    if (avg > bestAvg) {
-      bestAvg = avg;
-      bestMood = mood;
-    }
-  }
-
-  if (!bestMood) return null;
-
-  return {
-    id: 'mood-productivity',
-    icon: 'Sparkles',
-    iconColor: 'text-pink-500',
-    title: `Best focus when ${bestMood}`,
-    description: `You study longest when you feel ${bestMood} (avg ${Math.round(bestAvg)} min per session).`,
     category: 'pattern',
   };
 }
@@ -546,6 +499,81 @@ function completionRate(sessions: StudySessionRecord[]): Insight | null {
   return null;
 }
 
+// ── Debrief Insight Generators ─────────────────────────────
+
+function debriefConfidenceGain(debriefs: DebriefEntry[]): Insight | null {
+  if (debriefs.length < 3) return null;
+
+  // Find subject with highest avg confidence gain
+  const gainsBySubject: Record<string, number[]> = {};
+  for (const d of debriefs) {
+    const gain = d.confidenceAfter - d.confidenceBefore;
+    if (!gainsBySubject[d.subject]) gainsBySubject[d.subject] = [];
+    gainsBySubject[d.subject].push(gain);
+  }
+
+  let bestSubject = '';
+  let bestAvg = 0;
+  for (const [subject, gains] of Object.entries(gainsBySubject)) {
+    if (gains.length < 2) continue;
+    const avg = gains.reduce((a, b) => a + b, 0) / gains.length;
+    if (avg > bestAvg) { bestAvg = avg; bestSubject = subject; }
+  }
+
+  if (!bestSubject || bestAvg <= 0) return null;
+
+  return {
+    id: 'debrief-confidence',
+    icon: 'TrendingUp',
+    iconColor: 'text-teal-500',
+    title: `Biggest confidence gains: ${bestSubject}`,
+    description: `Your debriefs show an average +${(bestAvg).toFixed(1)} confidence gain per session in ${bestSubject}.`,
+    category: 'momentum',
+  };
+}
+
+function debriefStrategyEffectiveness(debriefs: DebriefEntry[]): Insight | null {
+  if (debriefs.length < 5) return null;
+
+  const gainsByStrategy: Record<string, number[]> = {};
+  for (const d of debriefs) {
+    if (!d.strategy) continue;
+    if (!gainsByStrategy[d.strategy]) gainsByStrategy[d.strategy] = [];
+    gainsByStrategy[d.strategy].push(d.confidenceAfter - d.confidenceBefore);
+  }
+
+  let bestStrat = '';
+  let bestAvg = 0;
+  for (const [strat, gains] of Object.entries(gainsByStrategy)) {
+    if (gains.length < 2) continue;
+    const avg = gains.reduce((a, b) => a + b, 0) / gains.length;
+    if (avg > bestAvg) { bestAvg = avg; bestStrat = strat; }
+  }
+
+  if (!bestStrat || bestAvg <= 0) return null;
+
+  // Map strategy ID to human label
+  const STRATEGY_LABELS: Record<string, string> = {
+    'past-papers': 'Past papers',
+    'active-recall': 'Active recall',
+    're-reading': 'Re-reading',
+    'summarising': 'Summarising',
+    'teaching': 'Teaching',
+    'videos': 'Videos',
+    'flashcards': 'Flashcards',
+  };
+  const label = STRATEGY_LABELS[bestStrat] || bestStrat;
+
+  return {
+    id: 'debrief-strategy',
+    icon: 'Zap',
+    iconColor: 'text-purple-500',
+    title: `${label} gives you the biggest boost`,
+    description: `Your debriefs show +${(bestAvg).toFixed(1)} avg confidence gain when using ${label.toLowerCase()}.`,
+    category: 'strategy',
+  };
+}
+
 // ── Priority Sort ──────────────────────────────────────────
 
 const CATEGORY_PRIORITY: Record<Insight['category'], number> = {
@@ -560,10 +588,10 @@ const CATEGORY_PRIORITY: Record<Insight['category'], number> = {
 export function useInsights(
   uid: string | undefined,
   streak: StreakData,
-  moodEntries: MoodEntry[],
   strategyMastery: StrategyMasteryMap,
 ): { insights: Insight[]; isLoaded: boolean } {
   const [sessions, setSessions] = useState<StudySessionRecord[]>([]);
+  const [debriefs, setDebriefs] = useState<DebriefEntry[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -572,20 +600,25 @@ export function useInsights(
       return;
     }
 
+    let cancelled = false;
+
     const load = async () => {
       try {
         const progressDoc = await getDoc(doc(db, 'progress', uid));
+        if (cancelled) return;
         if (progressDoc.exists()) {
           const data = progressDoc.data();
           setSessions(data.studySessions ?? []);
+          setDebriefs(data.studyDebriefs ?? []);
         }
       } catch (err) {
         console.error('Failed to load study sessions for insights:', err);
       }
-      setIsLoaded(true);
+      if (!cancelled) setIsLoaded(true);
     };
 
     load();
+    return () => { cancelled = true; };
   }, [uid]);
 
   const insights = useMemo(() => {
@@ -596,7 +629,6 @@ export function useInsights(
       dormantStrategyNudge(sessions, strategyMastery),
       streakMilestone(streak),
       subjectBalance(sessions),
-      moodProductivity(sessions, moodEntries),
       consistencyTrend(sessions),
       // Deep insights
       strategyEffectiveness(sessions),
@@ -605,12 +637,15 @@ export function useInsights(
       subjectGap(sessions),
       peakProductivityDay(sessions),
       completionRate(sessions),
+      // Debrief insights
+      debriefConfidenceGain(debriefs),
+      debriefStrategyEffectiveness(debriefs),
     ].filter((i): i is Insight => i !== null);
 
     results.sort((a, b) => CATEGORY_PRIORITY[a.category] - CATEGORY_PRIORITY[b.category]);
 
     return results.slice(0, 8);
-  }, [sessions, streak, moodEntries, strategyMastery]);
+  }, [sessions, debriefs, streak, strategyMastery]);
 
   return { insights, isLoaded };
 }

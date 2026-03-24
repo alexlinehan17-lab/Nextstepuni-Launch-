@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Heart, X } from 'lucide-react';
 import { KUDOS_MESSAGES } from '../../kudosData';
@@ -28,6 +28,13 @@ const KudosButton: React.FC<KudosButtonProps> = ({
   const [canSend, setCanSend] = useState(true);
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
+  const sentTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (sentTimerRef.current) clearTimeout(sentTimerRef.current);
+    };
+  }, []);
 
   useEffect(() => {
     canSendKudosTo(targetUid).then(setCanSend);
@@ -41,7 +48,7 @@ const KudosButton: React.FC<KudosButtonProps> = ({
     if (success) {
       setSent(true);
       setCanSend(false);
-      setTimeout(() => { setPickerOpen(false); setSent(false); }, 1200);
+      sentTimerRef.current = setTimeout(() => { setPickerOpen(false); setSent(false); }, 1200);
     }
   };
 

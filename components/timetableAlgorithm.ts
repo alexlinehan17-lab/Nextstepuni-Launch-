@@ -9,6 +9,8 @@ import {
   LC_SUBJECTS, DAYS_OF_WEEK, getPointsForGrade, getGradeIndex, HIGHER_GRADES, ORDINARY_GRADES,
   toDateKey,
 } from './subjectData';
+import { getSyllabusForSubject, computeEfficiency } from './syllabusData';
+import { type TopicMasteryMap } from '../types';
 
 // ─── SM-2 Spaced Repetition Algorithm ──────────────────────────────────────
 //
@@ -137,10 +139,14 @@ export interface SubjectPriority {
   targetPoints: number;
   pointsGain: number;
   difficultyMultiplier: number;
+  efficiencyMultiplier: number;
   priorityScore: number;
 }
 
-export function computeSubjectPriorities(subjects: StudentSubject[]): SubjectPriority[] {
+export function computeSubjectPriorities(
+  subjects: StudentSubject[],
+  topicMastery?: TopicMasteryMap
+): SubjectPriority[] {
   return subjects.map(s => {
     const lcSubject = LC_SUBJECTS.find(lc => lc.name === s.subjectName);
     const isMaths = lcSubject?.isMaths || false;
@@ -154,7 +160,33 @@ export function computeSubjectPriorities(subjects: StudentSubject[]): SubjectPri
     const scale = s.currentGrade.startsWith('H') ? HIGHER_GRADES.length : ORDINARY_GRADES.length;
     const difficultyMultiplier = Math.max(0.3, gradeIdx / (scale - 1));
 
-    const priorityScore = pointsGain * difficultyMultiplier;
+    // Syllabus efficiency: subjects with higher-efficiency topics get a small boost
+    // This encourages studying subjects where effort yields more exam marks
+    let efficiencyMultiplier = 1.0;
+    const syllabus = getSyllabusForSubject(s.subjectName);
+    if (syllabus && syllabus.topics.length > 0) {
+      const avgEfficiency = syllabus.topics.reduce(
+        (sum, t) => sum + computeEfficiency(t, syllabus.totalMarks), 0
+      ) / syllabus.topics.length;
+      // Normalize: avg efficiency ~1-5 range, map to 0.85–1.15 multiplier
+      efficiencyMultiplier = Math.max(0.85, Math.min(1.15, 0.9 + avgEfficiency * 0.05));
+    }
+
+    // Topic mastery boost: subjects with more shaky topics get higher priority
+    let topicBoost = 1.0;
+    if (topicMastery && topicMastery[s.subjectName]) {
+      const topics = topicMastery[s.subjectName];
+      const topicEntries = Object.values(topics);
+      if (topicEntries.length > 0) {
+        const shakyCount = topicEntries.filter(t => t.confidence === 'shaky').length;
+        const notStartedCount = topicEntries.filter(t => t.confidence === 'not-started').length;
+        const shakyRatio = (shakyCount + notStartedCount * 0.5) / topicEntries.length;
+        // Boost up to 1.3x for subjects where most topics are shaky/not-started
+        topicBoost = 1.0 + shakyRatio * 0.3;
+      }
+    }
+
+    const priorityScore = pointsGain * difficultyMultiplier * efficiencyMultiplier * topicBoost;
 
     return {
       subjectName: s.subjectName,
@@ -165,6 +197,7 @@ export function computeSubjectPriorities(subjects: StudentSubject[]): SubjectPri
       targetPoints,
       pointsGain,
       difficultyMultiplier,
+      efficiencyMultiplier,
       priorityScore,
     };
   }).sort((a, b) => b.priorityScore - a.priorityScore);
@@ -387,7 +420,8 @@ export function generateWeeklyTimetable(
   weekOffset: number = 0,
   restDays: string[] = [],
   blockDuration: number = 45,
-  sm2States?: SubjectSM2State[]
+  sm2States?: SubjectSM2State[],
+  topicMastery?: TopicMasteryMap
 ): WeeklyTimetable {
   const effectiveWeeks = Math.max(0, weeksUntilExam - weekOffset);
   const intensity = computeIntensityFactor(effectiveWeeks);
@@ -453,8 +487,19 @@ export function generateWeeklyTimetable(
         }
       }
 
+      // Suggest shaky topics for this block
+      let suggestedTopics: string[] | undefined;
+      if (topicMastery && topicMastery[alloc.subjectName]) {
+        const topics = topicMastery[alloc.subjectName];
+        suggestedTopics = Object.entries(topics)
+          .filter(([, entry]) => entry.confidence === 'shaky')
+          .sort((a, b) => a[1].updatedAt - b[1].updatedAt) // oldest first
+          .slice(0, 3)
+          .map(([name]) => name);
+      }
+
       allBlocks.push({
-        block: { subjectName: alloc.subjectName, sessionType, durationMinutes: blockDuration },
+        block: { subjectName: alloc.subjectName, sessionType, durationMinutes: blockDuration, suggestedTopics },
         priority: alloc.priorityScore,
         subjectName: alloc.subjectName,
       });

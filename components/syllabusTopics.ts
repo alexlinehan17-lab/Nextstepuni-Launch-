@@ -258,6 +258,92 @@ export const SYLLABUS_TOPICS: Record<string, string[]> = {
     'Popular Music',
     'Musical Literacy & Theory',
   ],
+
+  Italian: [
+    'Reading Comprehension',
+    'Listening Comprehension',
+    'Written Production (Opinion Piece/Essay)',
+    'Letter/Email Writing',
+    'Oral Preparation',
+    'Grammar & Tenses',
+    'Vocabulary & Idioms',
+  ],
+
+  Japanese: [
+    'Reading Comprehension',
+    'Listening Comprehension',
+    'Writing (Letters, Messages, Compositions)',
+    'Oral Preparation',
+    'Hiragana & Katakana',
+    'Kanji Recognition',
+  ],
+
+  'Politics & Society': [
+    'Power and Decision-Making',
+    'Active Citizenship',
+    'Human Rights and Responsibilities',
+    'Globalisation and Localisation',
+    'Citizenship Project',
+    'Document & Data Analysis',
+  ],
+
+  'Religious Education': [
+    'The Search for Meaning & Values',
+    'Christianity: Origins & Expressions',
+    'World Religions',
+    'Moral Decision-Making',
+    'Religion & Gender / Justice & Peace',
+    'Coursework Journal',
+  ],
+
+  'Classical Studies': [
+    'The World of Heroes (Odyssey, Aeneid)',
+    'Drama and Spectacle',
+    'Power and Identity (Alexander, Caesar)',
+    'Gods and Humans (Philosophy)',
+    'Research Study Report',
+  ],
+
+  'Construction Studies': [
+    'Building Detail Drawing',
+    'Walls & Partitions',
+    'Floors & Roofs',
+    'Foundations & Substructure',
+    'Doors, Windows & Stairs',
+    'Services, Insulation & Sustainability',
+    'Site Safety',
+    'Practical Project',
+  ],
+
+  Engineering: [
+    'Workshop Processes (Turning, Milling, Welding)',
+    'Materials & Properties',
+    'Heat Treatment',
+    'Mechanisms (Cams, Gears, Linkages)',
+    'Engineering Drawing & Design',
+    'Day Practical Skills',
+    'Workshop Project',
+  ],
+
+  DCG: [
+    'Plane Geometry',
+    'Descriptive Geometry (Projections)',
+    'Conic Sections & Tangent Geometry',
+    'Dynamic Mechanisms',
+    'Surface Geometry & Developments',
+    'Communication of Design',
+    'CAD Assignment',
+  ],
+
+  Technology: [
+    'Design Process',
+    'Materials & Production',
+    'Structures & Mechanisms',
+    'Energy, Electricity & Electronics',
+    'ICT & Communication',
+    'Project & Quality Management',
+    'Design & Make Project',
+  ],
 };
 
 // ---------------------------------------------------------------------------
@@ -329,6 +415,43 @@ const SUBJECT_ALIASES: Record<string, string> = {
 
   // Music
   mus: 'Music',
+
+  // Italian
+  ital: 'Italian',
+
+  // Japanese
+  jap: 'Japanese',
+  jpn: 'Japanese',
+
+  // Politics & Society
+  'politics and society': 'Politics & Society',
+  politics: 'Politics & Society',
+  'pol & soc': 'Politics & Society',
+
+  // Religious Education
+  religion: 'Religious Education',
+  're': 'Religious Education',
+  'religious studies': 'Religious Education',
+
+  // Classical Studies
+  classics: 'Classical Studies',
+  'classical studies': 'Classical Studies',
+
+  // Construction Studies
+  construction: 'Construction Studies',
+  'con studies': 'Construction Studies',
+
+  // Engineering
+  engr: 'Engineering',
+
+  // DCG
+  'design and communication graphics': 'DCG',
+  'design & communication graphics': 'DCG',
+  'technical drawing': 'DCG',
+  'tech drawing': 'DCG',
+
+  // Technology
+  tech: 'Technology',
 };
 
 /**

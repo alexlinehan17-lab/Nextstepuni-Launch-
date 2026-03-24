@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Gift, X, Check } from 'lucide-react';
 import { ShopItem } from '../../types';
@@ -33,6 +33,13 @@ const GiftButton: React.FC<GiftButtonProps> = ({
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
   const [sentItemName, setSentItemName] = useState('');
+  const sentTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (sentTimerRef.current) clearTimeout(sentTimerRef.current);
+    };
+  }, []);
 
   useEffect(() => {
     canSendGiftToday().then(setCanSend);
@@ -48,7 +55,7 @@ const GiftButton: React.FC<GiftButtonProps> = ({
       setSentItemName(item.name);
       setCanSend(false);
       onPointsReload();
-      setTimeout(() => { setDrawerOpen(false); setSent(false); }, 1500);
+      sentTimerRef.current = setTimeout(() => { setDrawerOpen(false); setSent(false); }, 1500);
     }
   };
 

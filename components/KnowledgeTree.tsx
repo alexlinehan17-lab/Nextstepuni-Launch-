@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Sprout, Rocket, Target, FlaskConical,
@@ -13,7 +13,8 @@ import {
 import { getAvatarUrl } from '../components/Auth';
 import { CourseData, BentoModuleTile } from './Library';
 import { UserSettings } from '../types';
-import { MoodFaceIcon, MOOD_KEYS, MOOD_LABELS } from './MoodFaceIcon';
+import { computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, computeWeeksUntilExam } from './timetableAlgorithm';
+import { toDateKey } from './subjectData';
 
 // FIX: Cast motion components to any to bypass broken type definitions
 const MotionDiv = motion.div as any;
@@ -53,8 +54,15 @@ interface KnowledgeTreeProps {
   unlockedThemes?: string[];
   completedCount: number;
   totalCount: number;
-  todayMood: string | null;
-  onSetMood: (mood: string) => void;
+  streak?: { currentStreak: number; longestStreak: number; lastActiveDate: string };
+  pointsBalance?: number;
+  northStar?: { category: string; statement: string } | null;
+  studentProfile?: { subjects: { subjectName: string; currentGrade: string; targetGrade: string; level: string }[]; examStartDate: string; restDays?: string[]; defaultBlockDuration?: number; createdAt?: string } | null;
+  timetableCompletions?: Record<string, string[]>;
+  smartRecommendation?: { id: string; title: string; description: string; category: string } | null;
+  questState?: { quest: { title: string; description: string; rewardPoints: number; target: number }; current: number; isCompleted: boolean; isClaimed: boolean; dayNumber: number; isOnboarding: boolean } | null;
+  onClaimQuestReward?: () => void;
+  onRecommendationAction?: (action: string) => void;
 }
 
 const ActivityRing = ({
@@ -202,11 +210,10 @@ const BentoTile: React.FC<BentoTileProps> = ({
   );
 };
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes = [], completedCount, totalCount, todayMood, onSetMood }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction }) => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [tagFilterOpen, setTagFilterOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [moodExpanded, setMoodExpanded] = useState(false);
 
   const sidebarItems = [
     { icon: Home, label: 'Home', onClick: () => {}, active: true },
@@ -302,6 +309,52 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     ? allCourses.filter(course => selectedTags.every(tag => course.tags.includes(tag as string)))
     : [];
 
+  // ── Dashboard computed values ──────────────────────────────────────────
+  const todayBlocks = useMemo(() => {
+    if (!studentProfile || studentProfile.subjects.length === 0) return [];
+    try {
+      const today = new Date();
+      const jsDay = today.getDay();
+      const todayDayIndex = jsDay === 0 ? 6 : jsDay - 1;
+      const priorities = computeSubjectPriorities(studentProfile.subjects as any);
+      const weeksUntilExam = computeWeeksUntilExam(studentProfile.examStartDate);
+      const allocations = allocateSessions(priorities, weeksUntilExam);
+      const restDays = studentProfile.restDays || [];
+      const blockDuration = studentProfile.defaultBlockDuration ?? 45;
+      const timetable = generateWeeklyTimetable(allocations, weeksUntilExam, 0, restDays, blockDuration);
+      return timetable[todayDayIndex]?.blocks ?? [];
+    } catch {
+      return [];
+    }
+  }, [studentProfile]);
+
+  const daysUntilExam = useMemo(() => {
+    if (!studentProfile?.examStartDate) return null;
+    const exam = new Date(studentProfile.examStartDate);
+    const now = new Date();
+    return Math.max(0, Math.ceil((exam.getTime() - now.getTime()) / 86400000));
+  }, [studentProfile]);
+
+  const examProgress = useMemo(() => {
+    if (!studentProfile?.examStartDate || !studentProfile?.createdAt) return null;
+    const created = new Date(studentProfile.createdAt).getTime();
+    const exam = new Date(studentProfile.examStartDate).getTime();
+    const now = Date.now();
+    const total = exam - created;
+    if (total <= 0) return 100;
+    return Math.min(100, Math.max(0, ((now - created) / total) * 100));
+  }, [studentProfile]);
+
+  const todayKey = toDateKey(new Date());
+  const todayCompletions = timetableCompletions?.[todayKey] || [];
+
+  const sessionTypeLabel = (t: string) => {
+    if (t === 'new-learning') return 'New';
+    if (t === 'practice') return 'Practice';
+    if (t === 'revision') return 'Revision';
+    return t;
+  };
+
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 overflow-x-hidden relative transition-colors duration-500 selection:bg-[rgba(var(--accent),0.2)]">
       {/* Sidebar — desktop only */}
@@ -342,67 +395,6 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
             </button>
           ))}
         </nav>
-
-        {/* Mood check-in */}
-        <div className="px-2 mt-1 mb-1">
-          <button
-            onClick={() => setMoodExpanded(!moodExpanded)}
-            className={`relative flex items-center gap-3 px-2.5 py-2 rounded-lg transition-colors w-full ${moodExpanded ? 'bg-zinc-100 dark:bg-zinc-800' : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'}`}
-          >
-            <div className="shrink-0 flex items-center justify-center w-[18px] relative">
-              <MoodFaceIcon mood={todayMood || 'balanced'} size={18} className="text-zinc-600 dark:text-zinc-400" />
-              {todayMood && (
-                <div className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-[var(--accent-hex)]" />
-              )}
-            </div>
-            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-              Mood
-            </span>
-          </button>
-
-          <AnimatePresence>
-            {moodExpanded && (
-              <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: 'auto', opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                className="overflow-hidden"
-              >
-                <div className={`py-2 ${sidebarOpen ? 'grid grid-cols-4 gap-1 px-1' : 'flex flex-col items-center gap-2'}`}>
-                  {MOOD_KEYS.map((key) => (
-                    <button
-                      key={key}
-                      onClick={() => {
-                        onSetMood(key);
-                        setTimeout(() => setMoodExpanded(false), 400);
-                      }}
-                      title={MOOD_LABELS[key]}
-                      className={`flex flex-col items-center gap-1.5 rounded-lg py-1.5 transition-all ${
-                        todayMood === key
-                          ? 'text-[var(--accent-hex)]'
-                          : 'text-zinc-400 dark:text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800'
-                      }`}
-                    >
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all ${
-                        todayMood === key
-                          ? 'bg-[rgba(var(--accent),0.1)] ring-2 ring-[var(--accent-hex)]'
-                          : ''
-                      }`}>
-                        <MoodFaceIcon mood={key} size={18} />
-                      </div>
-                      {sidebarOpen && (
-                        <span className="text-[9px] font-medium leading-none">
-                          {MOOD_LABELS[key]}
-                        </span>
-                      )}
-                    </button>
-                  ))}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
 
         {/* User actions */}
         <div className="border-t border-zinc-200 dark:border-zinc-800 mx-2 pt-2 flex flex-col gap-1">
@@ -512,15 +504,156 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
           </h1>
           <p className="mt-2 text-zinc-400 dark:text-zinc-500 text-sm">
             {(() => {
+              const h = new Date().getHours();
               const completed = allCourses.filter(c => { const p = userProgress[c.id]; return p && p.unlockedSection >= c.sectionsCount; }).length;
               const inProgress = allCourses.filter(c => { const p = userProgress[c.id]; return p && p.unlockedSection > 0 && p.unlockedSection < c.sectionsCount; }).length;
+              const allBlocksDone = todayBlocks.length > 0 && todayBlocks.every((_b: any, i: number) => todayCompletions.includes(`block-${i}`));
               if (completed === allCourses.length) return 'You\'ve completed the full curriculum. Remarkable.';
+              if (h >= 18 && allBlocksDone) return 'All done for today. Quick review before tomorrow?';
+              if (h >= 18) return 'Wind down with a final session or review your progress.';
+              if (h < 12 && studentProfile) return 'Here\'s your plan for today.';
               if (completed > 0) return `You've completed ${completed} of ${allCourses.length} modules.`;
               if (inProgress > 0) return `You have ${inProgress} module${inProgress !== 1 ? 's' : ''} in progress.`;
               return 'Pick a module to start your journey.';
             })()}
           </p>
         </MotionDiv>
+
+        {/* Student Home Dashboard */}
+        {studentProfile && settings.showDashboard !== false && (
+          <MotionDiv
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            className="mb-6"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+              {/* Today's Plan */}
+              <div
+                className="px-4 py-3 dark:!bg-[rgba(255,255,255,0.04)] dark:!border-[rgba(255,255,255,0.08)] flex items-center justify-between gap-4"
+                style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
+              >
+                <div className="flex-1 min-w-0">
+                  <p className="text-[10px] font-bold uppercase tracking-widest mb-1.5 dark:!text-zinc-400" style={{ color: '#9A9590' }}>
+                    Today
+                  </p>
+                  {todayBlocks.length === 0 ? (
+                    <p className="text-xs font-medium dark:!text-zinc-400" style={{ color: '#9A9590' }}>No blocks scheduled</p>
+                  ) : todayBlocks.every((_b, i) => todayCompletions.includes(`block-${i}`)) ? (
+                    <p className="text-xs font-semibold" style={{ color: '#6B8F71' }}>All done for today</p>
+                  ) : (
+                    <div className="flex flex-col gap-1">
+                      {todayBlocks.slice(0, 3).map((block, i) => (
+                        <div key={i} className="flex items-center gap-2 text-xs">
+                          <span className="w-1.5 h-1.5 rounded-full bg-zinc-400 dark:bg-zinc-500 shrink-0" />
+                          <span className="font-medium text-zinc-700 dark:text-zinc-300 truncate">{block.subjectName}</span>
+                          <span className="text-zinc-300 dark:text-zinc-600">·</span>
+                          <span className="dark:!text-zinc-500" style={{ color: '#9A9590' }}>{sessionTypeLabel(block.sessionType)} · {block.durationMinutes}m</span>
+                        </div>
+                      ))}
+                      {todayBlocks.length > 3 && (
+                        <p className="text-[10px] dark:!text-zinc-500" style={{ color: '#9A9590' }}>+{todayBlocks.length - 3} more</p>
+                      )}
+                    </div>
+                  )}
+                </div>
+                {onGoToStudy && todayBlocks.length > 0 && !todayBlocks.every((_b, i) => todayCompletions.includes(`block-${i}`)) && (
+                  <button
+                    onClick={onGoToStudy}
+                    className="flex items-center gap-1 text-[11px] font-semibold transition-colors hover:opacity-80 dark:!text-[#4DB8A4] shrink-0"
+                    style={{ color: '#2A7D6F' }}
+                  >
+                    Study Now <ArrowRight size={12} />
+                  </button>
+                )}
+              </div>
+
+              {/* Progress */}
+              <div
+                className="p-4 dark:!bg-[rgba(255,255,255,0.04)] dark:!border-[rgba(255,255,255,0.08)]"
+                style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
+              >
+                <p className="text-[10px] font-bold uppercase tracking-widest mb-2 dark:!text-zinc-400" style={{ color: '#9A9590' }}>
+                  Progress
+                </p>
+                <div className="flex items-center gap-4 text-xs">
+                  <span className="font-semibold dark:!text-[#4DB8A4]" style={{ color: '#2A7D6F' }}>
+                    {streak && streak.currentStreak > 0 ? `${streak.currentStreak}-day streak` : 'No streak'}
+                  </span>
+                  <span className="text-zinc-300 dark:text-zinc-600">·</span>
+                  <span className="font-medium text-zinc-600 dark:text-zinc-300">{pointsBalance ?? 0} pts</span>
+                  <span className="text-zinc-300 dark:text-zinc-600">·</span>
+                  <span className="font-medium text-zinc-600 dark:text-zinc-300">{completedCount}/{totalCount} modules</span>
+                </div>
+                {northStar && (
+                  <p className="mt-2 text-[11px] italic text-zinc-400 dark:text-zinc-500 leading-relaxed truncate">
+                    &ldquo;{northStar.statement}&rdquo;
+                  </p>
+                )}
+              </div>
+
+              {/* Recommendation card */}
+              {smartRecommendation && (
+                <button
+                  onClick={() => onRecommendationAction?.(smartRecommendation.category)}
+                  className="px-4 py-3 text-left dark:!bg-[rgba(255,255,255,0.04)] dark:!border-[rgba(255,255,255,0.08)] hover:shadow-sm transition-all"
+                  style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
+                >
+                  <p className="text-[10px] font-bold uppercase tracking-widest mb-1 dark:!text-zinc-400" style={{ color: '#9A9590' }}>
+                    Recommended
+                  </p>
+                  <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-200">{smartRecommendation.title}</p>
+                  <p className="text-[11px] mt-0.5 dark:!text-zinc-500" style={{ color: '#9A9590' }}>{smartRecommendation.description}</p>
+                </button>
+              )}
+
+              {/* Quest card */}
+              {questState && (
+                <div
+                  className="px-4 py-3 dark:!bg-[rgba(255,255,255,0.04)] dark:!border-[rgba(255,255,255,0.08)]"
+                  style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
+                >
+                  <div className="flex items-center justify-between mb-1">
+                    <p className="text-[10px] font-bold uppercase tracking-widest dark:!text-zinc-400" style={{ color: '#9A9590' }}>
+                      {questState.isOnboarding ? `Day ${questState.dayNumber} Quest` : 'Daily Quest'}
+                    </p>
+                    <span className="text-[10px] font-bold dark:!text-[#4DB8A4]" style={{ color: '#2A7D6F' }}>{questState.quest.rewardPoints} pts</span>
+                  </div>
+                  <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-200">{questState.quest.title}</p>
+                  <p className="text-[11px] mt-0.5 dark:!text-zinc-500" style={{ color: '#9A9590' }}>{questState.quest.description}</p>
+                  {/* Progress bar */}
+                  <div className="mt-2 flex items-center gap-2">
+                    <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: 'rgba(0,0,0,0.06)' }}>
+                      <div
+                        className="h-full rounded-full transition-all duration-500"
+                        style={{
+                          width: `${Math.min(100, (questState.current / questState.quest.target) * 100)}%`,
+                          backgroundColor: questState.isCompleted ? '#6B8F71' : '#2A7D6F',
+                        }}
+                      />
+                    </div>
+                    <span className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 tabular-nums">
+                      {questState.current}/{questState.quest.target}
+                    </span>
+                  </div>
+                  {/* Claim button */}
+                  {questState.isCompleted && !questState.isClaimed && onClaimQuestReward && (
+                    <button
+                      onClick={onClaimQuestReward}
+                      className="mt-2 w-full py-1.5 rounded-lg text-xs font-semibold text-white transition-colors"
+                      style={{ backgroundColor: '#2A7D6F' }}
+                    >
+                      Claim {questState.quest.rewardPoints} pts
+                    </button>
+                  )}
+                  {questState.isClaimed && (
+                    <p className="mt-2 text-[10px] font-semibold" style={{ color: '#6B8F71' }}>Claimed</p>
+                  )}
+                </div>
+              )}
+            </div>
+          </MotionDiv>
+        )}
 
         {/* Inline tag filter */}
         <div className="mb-6">
@@ -649,7 +782,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
            <BentoTile
               title="My Progress"
               subtitle="Dashboard"
-              description="Track your modules completed, study streak, mood, and category progress all in one place."
+              description="Track your modules completed, study streak, and category progress all in one place."
               icon={BarChart3}
               accentHex="var(--accent-hex)"
               onClick={onGoToDashboard}

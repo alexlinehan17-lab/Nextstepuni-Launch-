@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Star, BookOpen, Target, RotateCcw, Sparkles } from 'lucide-react';
@@ -114,6 +114,13 @@ const ReflectionModal: React.FC<ReflectionModalProps> = ({
   const [text, setText] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [submittedQuality, setSubmittedQuality] = useState<ReflectionQuality | null>(null);
+  const submitTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (submitTimerRef.current) clearTimeout(submitTimerRef.current);
+    };
+  }, []);
 
   const totalPoints = Math.round(basePoints * streakMultiplier);
   const typeConfig = SESSION_TYPE_LABELS[sessionType] || SESSION_TYPE_LABELS['new-learning'];
@@ -128,7 +135,7 @@ const ReflectionModal: React.FC<ReflectionModalProps> = ({
     setSubmitted(true);
 
     // Brief pause to show quality tier feedback, then submit
-    setTimeout(() => {
+    submitTimerRef.current = setTimeout(() => {
       onSubmit(text.trim(), quality);
       setText('');
       setSubmitted(false);

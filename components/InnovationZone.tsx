@@ -12,8 +12,8 @@ import {
     ArrowLeft, ArrowRight, Zap, Clock, Shield, RotateCcw,
     TrendingUp, Users, BookOpen, BookMarked,
     Lock, Compass, Brain, HandHelping, Target, ArrowUpRight, Award, Megaphone,
-    Flame, Scale, GraduationCap, Settings, CalendarDays, Calculator, Layers, GitBranch, Wrench, Gift, Rocket,
-    Map, Dna, ScanSearch
+    Flame, Scale, Settings, CalendarDays, Calculator, GitBranch, Rocket,
+    Map, ScanSearch
 } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -28,12 +28,9 @@ import ComebackEngine from './ComebackEngine';
 import CAOPointsSimulator from './CAOPointsSimulator';
 
 import FutureFinder from './FutureFinder';
-// PointsPassport removed — functionality merged into War Room
-import FirstGenIntel from './FirstGenIntel';
-import LearningDNA from './LearningDNA';
 import SyllabusXRay from './SyllabusXRay';
-import FlashcardSystem from './FlashcardSystem';
-import { type FlashcardData } from './FlashcardSystem';
+import PointsPassport from './PointsPassport';
+import { getNotifications, type AppNotification } from './gc/gcNotifications';
 // ReflectionModal import removed — "Already Studied" flow gives 2 pts, no reflection
 import StudyJournalModal from './StudyJournalModal';
 import RewardShopModal from './RewardShopModal';
@@ -529,9 +526,11 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
     // Load previous journey result from Firestore
     useEffect(() => {
         if (!user?.uid) return;
+        let cancelled = false;
         const loadPrevious = async () => {
             try {
                 const progressDoc = await getDoc(doc(db, 'progress', user.uid));
+                if (cancelled) return;
                 if (progressDoc.exists()) {
                     const data = progressDoc.data();
                     if (data['journey-simulator']?.endingId) {
@@ -540,16 +539,18 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                     }
                 }
             } catch (e) {
-                console.error('Failed to load journey result:', e);
+                if (!cancelled) console.error('Failed to load journey result:', e);
             }
         };
         loadPrevious();
+        return () => { cancelled = true; };
     }, [user?.uid]);
 
     // Save journey result when game ends
     useEffect(() => {
         if (!isEndScene || hasSavedRef.current) return;
         hasSavedRef.current = true;
+        let cancelled = false;
         const result = { endingId: currentSceneId, finalStats: gameState };
         setPreviousResult(result);
         onJourneyComplete?.(result);
@@ -566,12 +567,14 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                         }
                     }, { merge: true });
                 } catch (e) {
+                    if (cancelled) return;
                     console.error('Failed to save journey result:', e);
                     showToast('Couldn\'t save — check your connection', 'error');
                 }
             };
             saveResult();
         }
+        return () => { cancelled = true; };
     }, [isEndScene, user?.uid, currentSceneId, gameState, history.length]);
 
     const handleChoice = useCallback((choice: Choice) => {
@@ -876,96 +879,6 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
     );
 };
 
-// ─── ToolCard ────────────────────────────────────────────────────────────────
-
-interface ToolCardProps {
-    title: string;
-    description: string;
-    icon: React.ElementType;
-    onClick: () => void;
-    disabled?: boolean;
-    tag: string;
-    accentHex: string;
-    gridClass: string;
-    iconBg: string;
-    iconColor: string;
-    accentBarColor: string;
-    tagBg: string;
-    tagText: string;
-    hoverBorder: string;
-    index: number;
-}
-
-const ToolCard: React.FC<ToolCardProps> = ({
-    title, description, icon: Icon, onClick, disabled = false,
-    tag, accentHex, gridClass, iconBg, iconColor, accentBarColor,
-    tagBg, tagText, hoverBorder, index,
-}) => (
-    <MotionDiv
-        onClick={disabled ? undefined : onClick}
-        initial={{ opacity: 0, y: 24 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.45, delay: index * 0.08, ease: [0.25, 0.46, 0.45, 0.94] }}
-        className={`group relative flex flex-col rounded-2xl border-2 overflow-hidden transition-all duration-300 ${gridClass} ${
-            disabled
-                ? 'bg-zinc-50 dark:bg-white/5 border-zinc-200 dark:border-white/10 cursor-not-allowed'
-                : `bg-white/60 dark:bg-white/[0.06] border-zinc-200/80 dark:border-white/10 ${hoverBorder} cursor-pointer hover:shadow-lg dark:hover:shadow-2xl`
-        }`}
-    >
-        {/* Accent top bar */}
-        <div className={`h-[3px] w-full transition-opacity duration-300 ${disabled ? 'opacity-0' : 'opacity-0 group-hover:opacity-100'} ${accentBarColor}`} />
-
-        {/* Radial hover glow */}
-        {!disabled && (
-            <div
-                className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                style={{ background: `radial-gradient(ellipse at 50% 0%, ${accentHex}15 0%, transparent 70%)` }}
-            />
-        )}
-
-        <div className="relative flex flex-col flex-grow p-5 md:p-6">
-            {/* Icon + Tag row */}
-            <div className="flex items-start justify-between mb-4">
-                <div className={`w-14 h-14 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110 ${
-                    disabled ? 'bg-zinc-200 dark:bg-white/10' : iconBg
-                }`}>
-                    {disabled
-                        ? <Lock size={24} className="text-zinc-400 dark:text-zinc-600" />
-                        : <Icon size={26} className={iconColor} />
-                    }
-                </div>
-                <span className={`text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-full ${
-                    disabled ? 'bg-zinc-200 dark:bg-white/10 text-zinc-400 dark:text-zinc-600' : `${tagBg} ${tagText}`
-                }`}>
-                    {disabled ? 'Needs Profile' : tag}
-                </span>
-            </div>
-
-            {/* Title + Description */}
-            <h3 className={`font-serif font-semibold text-base md:text-lg tracking-tight mb-1.5 ${
-                disabled ? 'text-zinc-400 dark:text-zinc-600' : 'text-zinc-800 dark:text-white'
-            }`}>{title}</h3>
-            <p className={`text-xs leading-relaxed flex-grow ${
-                disabled ? 'text-zinc-400 dark:text-zinc-600' : 'text-zinc-500 dark:text-zinc-400'
-            }`}>{disabled ? 'Complete your Subject Profile to unlock this tool.' : description}</p>
-
-            {/* Footer */}
-            <div className={`mt-4 pt-3 border-t flex items-center justify-between ${
-                disabled ? 'border-zinc-200 dark:border-white/5' : 'border-zinc-200/60 dark:border-white/10'
-            }`}>
-                <span className={`font-mono text-[10px] uppercase tracking-wider ${
-                    disabled ? 'text-zinc-300 dark:text-zinc-700' : 'text-zinc-400 dark:text-zinc-500'
-                }`}>
-                    {disabled ? 'Locked' : 'Launch Tool'}
-                </span>
-                {!disabled && (
-                    <ArrowRight size={14} className="text-zinc-300 dark:text-zinc-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                )}
-            </div>
-        </div>
-    </MotionDiv>
-);
-
 // ─── Data Validation Helpers ─────────────────────────────────────────────────
 
 /** Ensures a value is a finite number, falling back to a default. */
@@ -1000,13 +913,16 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const [cosmeticUnlocks, setCosmeticUnlocks] = useState<CosmeticUnlocks>({ avatarSeeds: [], themeColors: [], cardStyles: [] });
     const [earnedRest, setEarnedRest] = useState<EarnedRest>({ skippedSessions: [], restDayPasses: [] });
     const [schoolEvents, setSchoolEvents] = useState<SchoolEvent[]>([]);
+    const [gcRecommendations, setGcRecommendations] = useState<Record<string, { fromName: string; message?: string }>>({});
 
     // Load school events for student's school + year group
     useEffect(() => {
         if (!user?.school) return;
+        let cancelled = false;
         const loadEvents = async () => {
             try {
                 const eventsDoc = await getDoc(doc(db, 'gcEvents', user.school!));
+                if (cancelled) return;
                 if (eventsDoc.exists()) {
                     const data = eventsDoc.data();
                     const allEvents: SchoolEvent[] = data.events || [];
@@ -1014,10 +930,11 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     setSchoolEvents(allEvents.filter(e => e.yearGroup === 'both' || e.yearGroup === yg));
                 }
             } catch (e) {
-                console.error('Failed to load school events:', e);
+                if (!cancelled) console.error('Failed to load school events:', e);
             }
         };
         loadEvents();
+        return () => { cancelled = true; };
     }, [user?.school, user?.yearGroup]);
 
     // Refs to always access latest state in callbacks (avoids stale closures)
@@ -1031,7 +948,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     onCosmeticUnlocksChangeRef.current = onCosmeticUnlocksChange;
     const [showRewardShop, setShowRewardShop] = useState(false);
     const [showJournal, setShowJournal] = useState(false);
-    const [flashcardData, setFlashcardData] = useState<FlashcardData>({ decks: [], reviewStreak: { currentStreak: 0, longestStreak: 0, lastReviewDate: '' }, reviewHistory: {} });
     const [showPointsExplainer, setShowPointsExplainer] = useState(() => {
         try { return !localStorage.getItem('nextstep-points-explainer-v2'); } catch { return true; }
     });
@@ -1044,9 +960,11 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     // Load subject profile from Firebase
     useEffect(() => {
         if (!user?.uid) { setProfileLoaded(true); return; }
+        let cancelled = false;
         const loadProfile = async () => {
             try {
                 const progressDoc = await getDoc(doc(db, 'progress', user.uid));
+                if (cancelled) return;
                 if (progressDoc.exists()) {
                     const data = progressDoc.data();
                     if (data.subjectProfile) {
@@ -1073,16 +991,34 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     if (data.earnedRest) {
                         setEarnedRest(data.earnedRest as EarnedRest);
                     }
-                    if (data.flashcardDecks) {
-                        setFlashcardData(data.flashcardDecks as FlashcardData);
-                    }
                 }
             } catch (e) {
-                console.error('Failed to load subject profile:', e);
+                if (!cancelled) console.error('Failed to load subject profile:', e);
             }
-            setProfileLoaded(true);
+            if (!cancelled) setProfileLoaded(true);
         };
         loadProfile();
+        return () => { cancelled = true; };
+    }, [user?.uid]);
+
+    // Load GC recommendations from notifications
+    useEffect(() => {
+        if (!user?.uid) return;
+        let cancelled = false;
+        const loadRecommendations = async () => {
+            try {
+                const notifications = await getNotifications(user.uid);
+                const recMap: Record<string, { fromName: string; message?: string }> = {};
+                for (const n of notifications) {
+                    if (n.type === 'gc-recommendation' && !n.read && n.actionToolId && !recMap[n.actionToolId]) {
+                        recMap[n.actionToolId] = { fromName: n.fromGCName || 'your counsellor', message: n.body };
+                    }
+                }
+                if (!cancelled) setGcRecommendations(recMap);
+            } catch {}
+        };
+        loadRecommendations();
+        return () => { cancelled = true; };
     }, [user?.uid]);
 
     const handleOnboardingComplete = useCallback(async (profile: StudentSubjectProfile) => {
@@ -1242,25 +1178,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         }
     }, [user?.uid]);
 
-    const handleFlashcardDataChange = useCallback((newData: FlashcardData) => {
-        setFlashcardData(newData);
-        if (user?.uid) {
-            setDoc(doc(db, 'progress', user.uid), { flashcardDecks: newData }, { merge: true })
-                .catch(e => { console.error('Failed to save flashcard data:', e); showToast('Couldn\'t save — check your connection', 'error'); });
-        }
-    }, [user?.uid]);
-
-    const handleFlashcardPointsEarn = useCallback((earned: number) => {
-        const updatedPointsData: PointsData = {
-            totalEarned: pointsData.totalEarned + earned,
-            totalSpent: pointsData.totalSpent,
-        };
-        setPointsData(updatedPointsData);
-        if (user?.uid) {
-            setDoc(doc(db, 'progress', user.uid), { pointsData: updatedPointsData }, { merge: true })
-                .catch(e => { console.error('Failed to save flashcard points:', e); showToast('Couldn\'t save — check your connection', 'error'); });
-        }
-    }, [pointsData, user?.uid]);
 
     const handleToolClick = useCallback((toolId: string, needsProfile: boolean) => {
         if (needsProfile && !profileLoaded) return;
@@ -1316,15 +1233,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-slate-100 dark:bg-slate-800/40', iconColor: 'text-slate-600 dark:text-slate-300',
             accentBarColor: 'bg-slate-500', tagBg: 'bg-slate-100 dark:bg-slate-800/40', tagText: 'text-slate-600 dark:text-slate-300',
             hoverBorder: 'hover:border-slate-400/50 dark:hover:border-slate-500/40',
-            component: subjectProfile ? <CAOPointsSimulator profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} /> : null,
-        },
-        {
-            id: 'flashcards', title: 'Flashcard Studio', description: 'Create and review flashcards with spaced repetition scheduling.', icon: Layers, needsProfile: false,
-            tag: 'Studio', accentHex: 'var(--accent-hex)', gridClass: 'md:col-span-2',
-            iconBg: 'bg-[rgba(var(--accent),0.1)] dark:bg-[rgba(var(--accent),0.2)]', iconColor: 'text-[var(--accent-hex)]',
-            accentBarColor: 'bg-[var(--accent-hex)]', tagBg: 'bg-[rgba(var(--accent),0.1)] dark:bg-[rgba(var(--accent),0.2)]', tagText: 'text-[var(--accent-hex)]',
-            hoverBorder: 'hover:border-[rgba(var(--accent),0.4)] dark:hover:border-[rgba(var(--accent),0.5)]',
-            component: <FlashcardSystem data={flashcardData} onDataChange={handleFlashcardDataChange} onPointsEarn={handleFlashcardPointsEarn} subjectNames={subjectProfile?.subjects.map(s => s.subjectName)} />,
+            component: subjectProfile ? <CAOPointsSimulator profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} /> : null,
         },
         {
             id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true,
@@ -1332,7 +1241,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
-            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={async (_s, _t, newDuration) => { const updated = { ...subjectProfile, defaultBlockDuration: newDuration }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save block duration:', e); showToast('Couldn\'t save — check your connection', 'error'); } } }} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); showToast('Couldn\'t save — check your connection', 'error'); } } }} /> : null,
+            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={async (_s, _t, newDuration) => { const updated = { ...subjectProfile, defaultBlockDuration: newDuration }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save block duration:', e); showToast('Couldn\'t save — check your connection', 'error'); } } }} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:', e); showToast('Couldn\'t save — check your connection', 'error'); } } }} /> : null,
         },
         {
             id: 'war-room', title: 'War Room', description: 'Your strategic study command centre.', icon: Target, needsProfile: true,
@@ -1359,30 +1268,39 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             component: subjectProfile ? <FutureFinder uid={user!.uid} profile={subjectProfile} /> : null,
         },
         {
-            id: 'learning-dna', title: 'Learning DNA', description: 'Insights from your study sessions — what works for you.', icon: Dna, needsProfile: false,
-            tag: 'Insights', accentHex: '#0d9488', gridClass: 'md:col-span-2',
-            iconBg: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400',
-            accentBarColor: 'bg-teal-500', tagBg: 'bg-teal-100 dark:bg-teal-900/30', tagText: 'text-teal-700 dark:text-teal-400',
-            hoverBorder: 'hover:border-teal-400/50 dark:hover:border-teal-500/40',
-            component: <LearningDNA uid={user!.uid} />,
-        },
-        {
-            id: 'first-gen-intel', title: 'First Gen Intel', description: 'The honest guide to Irish college that nobody gives you.', icon: GraduationCap, needsProfile: false,
-            tag: 'College Prep', accentHex: '#8b5cf6', gridClass: 'md:col-span-2',
-            iconBg: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400',
-            accentBarColor: 'bg-violet-500', tagBg: 'bg-violet-100 dark:bg-violet-900/30', tagText: 'text-violet-700 dark:text-violet-400',
-            hoverBorder: 'hover:border-violet-400/50 dark:hover:border-violet-500/40',
-            component: <FirstGenIntel uid={user!.uid} />,
-        },
-        {
             id: 'syllabus-xray', title: 'Syllabus X-Ray', description: 'See where the marks are hiding in your exams.', icon: ScanSearch, needsProfile: false,
             tag: 'Exam Intel', accentHex: '#e11d48', gridClass: 'md:col-span-2',
             iconBg: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400',
             accentBarColor: 'bg-rose-500', tagBg: 'bg-rose-100 dark:bg-rose-900/30', tagText: 'text-rose-700 dark:text-rose-400',
             hoverBorder: 'hover:border-rose-400/50 dark:hover:border-rose-500/40',
-            component: <SyllabusXRay studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
+            component: <SyllabusXRay studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} uid={user?.uid} />,
+        },
+        {
+            id: 'points-passport', title: 'Points Passport', description: 'Mock trends & grade bargains at a glance.', icon: Map, needsProfile: true,
+            tag: 'Tracker', accentHex: '#0ea5e9', gridClass: 'md:col-span-2',
+            iconBg: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-600 dark:text-sky-400',
+            accentBarColor: 'bg-sky-500', tagBg: 'bg-sky-100 dark:bg-sky-900/30', tagText: 'text-sky-700 dark:text-sky-400',
+            hoverBorder: 'hover:border-sky-400/50 dark:hover:border-sky-500/40',
+            component: subjectProfile && user ? <PointsPassport uid={user.uid} profile={subjectProfile} /> : null,
         },
     ];
+
+    const [activeFilter, setActiveFilter] = useState<'all' | 'understand' | 'plan' | 'track'>('all');
+
+    const TOOL_CATEGORIES: Record<string, 'understand' | 'plan' | 'track'> = {
+        'syllabus-xray': 'understand',
+        'cao-simulator': 'understand',
+        'future-finder': 'understand',
+        'planner': 'plan',
+        'war-room': 'plan',
+        'comeback': 'plan',
+        'points-passport': 'track',
+        'journey': 'track',
+    };
+
+    const filteredTools = activeFilter === 'all'
+        ? tools
+        : tools.filter(t => TOOL_CATEGORIES[t.id] === activeFilter);
 
     const currentTool = tools.find(t => t.id === activeTool);
 
@@ -1424,81 +1342,98 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                 >
-                    <div className="text-center mb-12">
-                        <h2 className="font-serif text-5xl font-semibold text-zinc-900 dark:text-white">Experimental Tools</h2>
-                        <p className="max-w-xl mx-auto mt-4 text-zinc-500 dark:text-zinc-400">A collection of interactive simulations and utilities designed to help you master the key concepts from the Learning Lab.</p>
+                    {/* Filter pills */}
+                    <div className="mb-8">
+                        <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit">
+                            {(['all', 'understand', 'plan', 'track'] as const).map(filter => (
+                                <button
+                                    key={filter}
+                                    onClick={() => setActiveFilter(filter)}
+                                    className={`px-4 py-2 rounded-lg text-sm transition-all ${
+                                        activeFilter === filter
+                                            ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-medium shadow-sm'
+                                            : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
+                                    }`}
+                                >
+                                    {filter === 'all' ? 'All' : filter.charAt(0).toUpperCase() + filter.slice(1)}
+                                </button>
+                            ))}
+                        </div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-8 gap-4 md:gap-6">
-                        {tools.slice(0, 2).map((tool, i) => (
-                            <ToolCard
-                                key={tool.id}
-                                title={tool.title}
-                                description={tool.description}
-                                icon={tool.icon}
-                                onClick={() => !(tool as any).disabled && !(tool.needsProfile && !profileLoaded) && handleToolClick(tool.id, tool.needsProfile)}
-                                disabled={(tool as any).disabled || (tool.needsProfile && !profileLoaded)}
-                                tag={tool.tag}
-                                accentHex={tool.accentHex}
-                                gridClass={tool.gridClass}
-                                iconBg={tool.iconBg}
-                                iconColor={tool.iconColor}
-                                accentBarColor={tool.accentBarColor}
-                                tagBg={tool.tagBg}
-                                tagText={tool.tagText}
-                                hoverBorder={tool.hoverBorder}
-                                index={i}
-                            />
-                        ))}
 
-                        {/* Shop Bento Card */}
-                        <MotionDiv
-                            initial={{ opacity: 0, y: 24 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.45, delay: 2 * 0.08, ease: [0.25, 0.46, 0.45, 0.94] }}
-                            onClick={() => setShowRewardShop(true)}
-                            className="md:col-span-2 md:row-span-2 group relative cursor-pointer flex flex-col rounded-2xl border-2 border-zinc-200/80 dark:border-white/10 hover:border-purple-400/50 dark:hover:border-purple-500/40 overflow-hidden bg-gradient-to-b from-purple-50/80 via-white to-white dark:from-purple-950/30 dark:via-zinc-900/80 dark:to-zinc-900 transition-all hover:shadow-lg dark:hover:shadow-2xl"
-                        >
-                            <div className="h-[3px] w-full bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                            <div
-                                className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                                style={{ background: 'radial-gradient(ellipse at 50% 0%, rgba(147,51,234,0.08) 0%, transparent 70%)' }}
-                            />
-                            <div className="relative flex flex-col flex-grow items-center justify-center p-5 md:p-6 text-center">
-                                <div className="mb-3 md:mb-4 px-3 py-1.5 rounded-full bg-amber-100 dark:bg-amber-900/30 flex items-center gap-1.5">
-                                    <Zap size={12} className="text-amber-500" />
-                                    <span className="text-xs font-bold text-amber-700 dark:text-amber-400">{pointsData.totalEarned - pointsData.totalSpent} pts</span>
-                                </div>
-                                <div className="w-14 h-14 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center mb-3 transition-transform duration-300 group-hover:scale-110">
-                                    <Gift size={26} className="text-purple-600 dark:text-purple-400" />
-                                </div>
-                                <h3 className="font-serif font-semibold text-base md:text-lg tracking-tight text-zinc-800 dark:text-white mb-1">Reward Shop</h3>
-                                <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">Spend points on avatars, themes & card styles</p>
-                                <div className="mt-3 md:mt-4 pt-3 border-t border-zinc-100 dark:border-white/[0.06] w-full flex items-center justify-center gap-1.5 text-xs font-bold text-purple-600 dark:text-purple-400 group-hover:gap-2.5 transition-all">
-                                    Browse <ArrowRight size={12} />
-                                </div>
-                            </div>
-                        </MotionDiv>
+                    {/* Bento card grid */}
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
+                        {filteredTools.map((tool, i) => {
+                            const Icon = tool.icon;
+                            const disabled = (tool.needsProfile && !profileLoaded) || (tool.needsProfile && !subjectProfile);
+                            const gcRecommended = gcRecommendations[tool.id];
 
-                        {tools.slice(2).map((tool, i) => (
-                            <ToolCard
-                                key={tool.id}
-                                title={tool.title}
-                                description={tool.description}
-                                icon={tool.icon}
-                                onClick={() => !(tool as any).disabled && !(tool.needsProfile && !profileLoaded) && handleToolClick(tool.id, tool.needsProfile)}
-                                disabled={(tool as any).disabled || (tool.needsProfile && !profileLoaded)}
-                                tag={tool.tag}
-                                accentHex={tool.accentHex}
-                                gridClass={tool.gridClass}
-                                iconBg={tool.iconBg}
-                                iconColor={tool.iconColor}
-                                accentBarColor={tool.accentBarColor}
-                                tagBg={tool.tagBg}
-                                tagText={tool.tagText}
-                                hoverBorder={tool.hoverBorder}
-                                index={i + 3}
-                            />
-                        ))}
+                            return (
+                                <MotionDiv
+                                    key={tool.id}
+                                    initial={{ opacity: 0, y: 16 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.3, delay: i * 0.04 }}
+                                    onClick={disabled ? undefined : () => handleToolClick(tool.id, tool.needsProfile)}
+                                    className={`flex flex-col rounded-xl border overflow-hidden transition-all ${
+                                        disabled
+                                            ? 'border-zinc-200/60 dark:border-zinc-800/40 cursor-not-allowed'
+                                            : 'border-zinc-200/60 dark:border-zinc-800/40 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-md cursor-pointer'
+                                    } bg-white dark:bg-zinc-900`}
+                                >
+                                    <div className="p-6 flex-1 flex flex-col">
+                                        {/* Icon in colored circle */}
+                                        <div className={`w-10 h-10 rounded-full flex items-center justify-center mb-4 ${
+                                            disabled ? 'bg-zinc-100 dark:bg-zinc-800' : tool.iconBg
+                                        }`}>
+                                            {disabled
+                                                ? <Lock size={18} className="text-zinc-400 dark:text-zinc-600" />
+                                                : <Icon size={18} className={tool.iconColor} />
+                                            }
+                                        </div>
+
+                                        {/* Category label */}
+                                        <p className={`text-[10px] font-bold uppercase tracking-widest mb-1.5 ${
+                                            disabled ? 'text-zinc-300 dark:text-zinc-600' : 'text-zinc-400 dark:text-zinc-500'
+                                        }`}>
+                                            {disabled ? 'Needs Profile' : tool.tag}
+                                        </p>
+
+                                        {/* Title */}
+                                        <h3 className={`text-base font-semibold mb-1.5 ${
+                                            disabled ? 'text-zinc-300 dark:text-zinc-600' : 'text-zinc-900 dark:text-white'
+                                        }`}>
+                                            {tool.title}
+                                        </h3>
+
+                                        {/* Description */}
+                                        <p className={`text-xs leading-relaxed flex-1 ${
+                                            disabled ? 'text-zinc-300 dark:text-zinc-600' : 'text-zinc-500 dark:text-zinc-400'
+                                        }`}>
+                                            {disabled ? 'Complete your Subject Profile to unlock.' : tool.description}
+                                        </p>
+
+                                        {/* GC recommendation badge if present */}
+                                        {gcRecommended && !disabled && (
+                                            <div className="mt-3 px-3 py-2 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-200/60 dark:border-indigo-800/40">
+                                                <p className="text-[11px] font-semibold text-indigo-600 dark:text-indigo-400">
+                                                    Recommended by {gcRecommended.fromName || 'your counsellor'}
+                                                </p>
+                                            </div>
+                                        )}
+                                    </div>
+
+                                    {/* Bottom section with divider */}
+                                    {!disabled && (
+                                        <div className="px-6 py-3 border-t border-zinc-100 dark:border-zinc-800/60">
+                                            <span className="text-xs font-medium text-zinc-400 dark:text-zinc-500">
+                                                Launch tool
+                                            </span>
+                                        </div>
+                                    )}
+                                </MotionDiv>
+                            );
+                        })}
                     </div>
                 </MotionDiv>
             ) : (

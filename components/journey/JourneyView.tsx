@@ -3,12 +3,16 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useCallback, useEffect, useRef } from 'react';
+import React, { useState, useCallback, useEffect, useRef, Suspense } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Mountain, Users, Heart, Gift, X } from 'lucide-react';
 import { SessionUser } from '../Auth';
 import { NorthStar, UserProgress } from '../../types';
 import { MilestoneReward } from '../../islandShopData';
+import { db } from '../../firebase';
+import { collection, query, where, getDocs, doc, getDoc } from 'firebase/firestore';
+
+const FlareSystem = React.lazy(() => import('../flares/FlareSystem'));
 import { useIslandShop, EnrichedShopItem } from '../../hooks/useIslandShop';
 import JourneyCanvas from './JourneyCanvas';
 import JourneyProgressPill from './JourneyProgressPill';
@@ -41,11 +45,13 @@ interface JourneyViewProps {
   onPointsReload: () => void;
   userProgress?: UserProgress;
   allCourses?: CourseInfo[];
+  subjects?: string[];
+  flaresEnabled?: boolean;
 }
 
 const JourneyView: React.FC<JourneyViewProps> = ({
   onBack, user, northStar, onOpenNorthStar, pointsBalance, onPointsReload,
-  userProgress, allCourses,
+  userProgress, allCourses, subjects, flaresEnabled,
 }) => {
   // Compute completed module count
   const completedCount = (allCourses ?? []).filter(c => {
@@ -83,6 +89,52 @@ const JourneyView: React.FC<JourneyViewProps> = ({
   const [kudosModalOpen, setKudosModalOpen] = useState(false);
   const [giftsModalOpen, setGiftsModalOpen] = useState(false);
 
+  // Flare system state
+  const [flareSystemOpen, setFlareSystemOpen] = useState(false);
+  const [flareInitialView, setFlareInitialView] = useState<'launcher' | 'feed'>('launcher');
+  const [activeFlareCount, setActiveFlareCount] = useState(0);
+  const [rescueCount, setRescueCount] = useState(0);
+
+  // Fetch active flare count + rescue count
+  useEffect(() => {
+    if (!user?.uid || !user?.school || !subjects?.length || flaresEnabled === false) return;
+    let cancelled = false;
+    const fetchFlareData = async () => {
+      try {
+        // Fetch active flares count
+        const q = query(
+          collection(db, 'flares'),
+          where('school', '==', user.school),
+          where('status', '==', 'active'),
+        );
+        const snap = await getDocs(q);
+        if (cancelled) return;
+        const now = new Date();
+        const count = snap.docs.filter(d => {
+          const data = d.data();
+          return data.senderUid !== user.uid
+            && subjects?.includes(data.subject)
+            && data.expiresAt?.toDate() > now;
+        }).length;
+        setActiveFlareCount(count);
+
+        // Fetch rescue count from user doc
+        try {
+          const userDoc = await getDoc(doc(db, 'users', user.uid));
+          if (!cancelled && userDoc.exists()) {
+            setRescueCount(userDoc.data()?.rescueCount ?? 0);
+          }
+        } catch (_) {
+          // Non-critical
+        }
+      } catch (e) {
+        console.error('Failed to fetch flare count:', e);
+      }
+    };
+    fetchFlareData();
+    return () => { cancelled = true; };
+  }, [user?.uid, user?.school, subjects, flaresEnabled]);
+
   const isViewingPeer = peerViewMode === 'peer-island' && selectedPeer !== null;
 
   const handleSelectPeer = useCallback((peer: PeerIsland) => {
@@ -103,7 +155,7 @@ const JourneyView: React.FC<JourneyViewProps> = ({
   const lastNotifiedCountRef = useRef(0);
 
   // DEV override: infinite points for testing
-  const DEV_INFINITE_POINTS = true;
+  const DEV_INFINITE_POINTS = false;
   const effectivePoints = DEV_INFINITE_POINTS ? 999999 : pointsBalance;
 
   const handlePurchase = useCallback(async (item: EnrichedShopItem) => {
@@ -268,11 +320,92 @@ const JourneyView: React.FC<JourneyViewProps> = ({
                 >
                   <Users size={18} className="text-zinc-900 dark:text-white" />
                 </button>
+                {/* SOS Flare button */}
+                {flaresEnabled !== false && (
+                  <MotionDiv
+                    animate={{ scale: [1, 1.08, 1] }}
+                    transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+                  >
+                    <button
+                      onClick={() => { setFlareInitialView('launcher'); setFlareSystemOpen(true); }}
+                      className="p-2.5 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 backdrop-blur-sm border border-amber-400/50 hover:from-amber-400 hover:to-orange-500 transition-all shadow-lg shadow-amber-500/30"
+                      title="SOS Flare"
+                    >
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-white">
+                        <path d="M12 2L8 10h8L12 2z" fill="currentColor" />
+                        <path d="M12 10v8" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                        <circle cx="12" cy="21" r="1.5" fill="currentColor" opacity="0.6" />
+                        <path d="M5 5l2 2M19 5l-2 2M3 12h3M18 12h3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.5" />
+                      </svg>
+                    </button>
+                  </MotionDiv>
+                )}
               </div>
             ) : (
               <div className="w-[42px]" />
             )}
           </div>
+
+          {/* Horizon Glow — shown when active flares exist */}
+          <AnimatePresence>
+            {activeFlareCount > 0 && flaresEnabled !== false && !isViewingPeer && (
+              <MotionDiv
+                initial={{ opacity: 0 }}
+                animate={{ opacity: [0.3, 0.6, 0.3] }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+                onClick={() => { setFlareInitialView('feed'); setFlareSystemOpen(true); }}
+                className="fixed top-20 left-1/2 -translate-x-1/2 z-[72] cursor-pointer flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-500/80 to-orange-500/80 backdrop-blur-sm shadow-lg shadow-amber-500/20"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="text-white">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+                </svg>
+                <span className="text-xs font-bold text-white">{activeFlareCount} active</span>
+              </MotionDiv>
+            )}
+          </AnimatePresence>
+
+          {/* Lighthouse Visual — based on rescue count */}
+          {!isViewingPeer && flaresEnabled !== false && rescueCount >= 5 && (
+            <div className="absolute bottom-28 right-6 z-[71] pointer-events-none flex flex-col items-center">
+              {rescueCount >= 30 ? (
+                /* Beacon tower — 30+ rescues */
+                <MotionDiv
+                  animate={{ opacity: [0.7, 1, 0.7] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+                  className="flex flex-col items-center"
+                >
+                  <div className="w-3 h-3 rounded-full bg-amber-400 shadow-lg shadow-amber-400/60 mb-1" />
+                  <svg width="24" height="40" viewBox="0 0 24 40" fill="none" className="text-amber-300">
+                    <rect x="8" y="8" width="8" height="28" rx="2" fill="currentColor" opacity="0.9" />
+                    <rect x="6" y="32" width="12" height="4" rx="1" fill="currentColor" opacity="0.7" />
+                    <rect x="9" y="2" width="6" height="8" rx="3" fill="currentColor" />
+                  </svg>
+                  <p className="text-[9px] font-bold text-amber-400/80 mt-1">{rescueCount} rescues</p>
+                </MotionDiv>
+              ) : rescueCount >= 15 ? (
+                /* Lighthouse — 15-29 rescues */
+                <div className="flex flex-col items-center">
+                  <svg width="20" height="32" viewBox="0 0 20 32" fill="none" className="text-amber-300">
+                    <rect x="7" y="6" width="6" height="22" rx="1.5" fill="currentColor" opacity="0.8" />
+                    <rect x="5" y="24" width="10" height="4" rx="1" fill="currentColor" opacity="0.6" />
+                    <circle cx="10" cy="4" r="3" fill="currentColor" opacity="0.9" />
+                  </svg>
+                  <p className="text-[9px] font-bold text-amber-300/70 mt-1">{rescueCount} rescues</p>
+                </div>
+              ) : (
+                /* Small lantern — 5-14 rescues */
+                <div className="flex flex-col items-center">
+                  <svg width="16" height="20" viewBox="0 0 16 20" fill="none" className="text-yellow-400">
+                    <rect x="5" y="6" width="6" height="10" rx="1" fill="currentColor" opacity="0.7" />
+                    <circle cx="8" cy="4" r="2.5" fill="currentColor" opacity="0.8" />
+                    <rect x="4" y="14" width="8" height="3" rx="1" fill="currentColor" opacity="0.5" />
+                  </svg>
+                  <p className="text-[9px] font-bold text-yellow-400/60 mt-1">{rescueCount} rescues</p>
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Progress Pill — shown when drawer is closed and viewing own island */}
           <AnimatePresence>
@@ -439,6 +572,48 @@ const JourneyView: React.FC<JourneyViewProps> = ({
           islandState,
         }}
       />
+
+      {/* SOS Flare System Modal */}
+      <AnimatePresence>
+        {flareSystemOpen && (
+          <Suspense fallback={null}>
+            <FlareSystem
+              isOpen={flareSystemOpen}
+              onClose={() => {
+                setFlareSystemOpen(false);
+                // Re-fetch flare count on close
+                if (user?.uid && user?.school && subjects?.length && flaresEnabled !== false) {
+                  const q = query(
+                    collection(db, 'flares'),
+                    where('school', '==', user.school),
+                    where('status', '==', 'active'),
+                  );
+                  getDocs(q).then(snap => {
+                    const now = new Date();
+                    const count = snap.docs.filter(d => {
+                      const data = d.data();
+                      return data.senderUid !== user.uid
+                        && subjects?.includes(data.subject)
+                        && data.expiresAt?.toDate() > now;
+                    }).length;
+                    setActiveFlareCount(count);
+                  }).catch(() => {});
+                  // Also re-fetch rescue count
+                  getDoc(doc(db, 'users', user.uid)).then(userDoc => {
+                    if (userDoc.exists()) {
+                      setRescueCount(userDoc.data()?.rescueCount ?? 0);
+                    }
+                  }).catch(() => {});
+                }
+              }}
+              initialView={flareInitialView}
+              uid={user.uid}
+              school={user.school || ''}
+              subjects={subjects || []}
+            />
+          </Suspense>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

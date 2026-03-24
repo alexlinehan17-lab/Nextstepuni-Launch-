@@ -22,6 +22,15 @@ const DweckExperimentSimulator = () => {
     const [step, setStep] = useState(0); // 0: Start, 1: Praise Choice, 2: Task Choice, 3: Failure, 4: Result
     const [praiseType, setPraiseType] = useState<'person'|'process'|null>(null);
     const [taskChoice, setTaskChoice] = useState<'easy'|'hard'|null>(null);
+    const failureTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+    const resultTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+    useEffect(() => {
+        return () => {
+            if (failureTimerRef.current) clearTimeout(failureTimerRef.current);
+            if (resultTimerRef.current) clearTimeout(resultTimerRef.current);
+        };
+    }, []);
 
     const reset = () => {
         setStep(0);
@@ -37,8 +46,8 @@ const DweckExperimentSimulator = () => {
     const handleTask = (type: 'easy'|'hard') => {
         setTaskChoice(type);
         setStep(2);
-        setTimeout(() => setStep(3), 2000); // Auto-advance to failure
-        setTimeout(() => setStep(4), 4000); // Auto-advance to result
+        failureTimerRef.current = setTimeout(() => setStep(3), 2000); // Auto-advance to failure
+        resultTimerRef.current = setTimeout(() => setStep(4), 4000); // Auto-advance to result
     };
 
     let resilience = 50, performance = 50;

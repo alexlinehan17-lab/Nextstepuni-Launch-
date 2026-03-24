@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Book, RotateCcw, Brain, Link, Wrench
@@ -28,11 +28,18 @@ const YetReframe = () => {
 
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
     const [reframed, setReframed] = useState<Set<number>>(new Set());
+    const reframeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+    useEffect(() => {
+      return () => {
+        if (reframeTimerRef.current) clearTimeout(reframeTimerRef.current);
+      };
+    }, []);
 
     const handleClick = (index: number) => {
       if (reframed.has(index)) return;
       setActiveIndex(index);
-      setTimeout(() => {
+      reframeTimerRef.current = setTimeout(() => {
         setReframed(prev => new Set(prev).add(index));
       }, 600);
     };
@@ -211,6 +218,13 @@ const BridgeBuilder = () => {
   const [usedWeak, setUsedWeak] = useState<Set<string>>(new Set());
   const [feedback, setFeedback] = useState<string | null>(null);
   const [wobbling, setWobbling] = useState<string | null>(null);
+  const weakTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (weakTimerRef.current) clearTimeout(weakTimerRef.current);
+    };
+  }, []);
 
   const scenario = BRIDGE_SCENARIOS[scenarioIdx];
   const bridgeComplete = placedStrong.length >= 3;
@@ -252,7 +266,7 @@ const BridgeBuilder = () => {
       const msg = WEAK_FEEDBACK[weakIdx >= 0 && weakIdx < WEAK_FEEDBACK.length ? weakIdx : 0];
       setWobbling(action);
       setFeedback(msg);
-      setTimeout(() => {
+      weakTimerRef.current = setTimeout(() => {
         setUsedWeak(prev => new Set(prev).add(action));
         setWobbling(null);
         setFeedback(null);

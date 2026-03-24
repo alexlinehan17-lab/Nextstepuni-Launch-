@@ -6,7 +6,7 @@
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, BookOpen, Target, RotateCcw, Play, Pause, Clock, Sparkles, Zap, X, ChevronRight, Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck, Trophy, CalendarCheck } from 'lucide-react';
-import { doc, updateDoc, arrayUnion } from 'firebase/firestore';
+import { doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
 import { type SessionUser } from '../Auth';
 import { type StudentSubjectProfile } from '../subjectData';
@@ -25,6 +25,8 @@ import { useTeachBack } from '../../hooks/useTeachBack';
 import { TeachBackReadCard, TeachBackWriteCard } from './TeachBackCard';
 import { computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, computeWeeksUntilExam } from '../timetableAlgorithm';
 import { getBlockId, toDateKey } from '../subjectData';
+import { processDebriefSideEffects } from '../../hooks/useDebriefSideEffects';
+import { getSyllabusTopics } from '../syllabusTopics';
 
 const MotionDiv = motion.div as any;
 
@@ -134,10 +136,39 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const [debriefOpen, setDebriefOpen] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
 
+  // Previous debrief notes — surface "whatWorked" back to the student
+  const [prevDebriefs, setPrevDebriefs] = useState<DebriefEntry[]>([]);
+  useEffect(() => {
+    if (!user.uid) return;
+    let cancelled = false;
+    getDoc(doc(db, 'progress', user.uid)).then(snap => {
+      if (cancelled) return;
+      const data = snap.data();
+      if (data?.studyDebriefs) setPrevDebriefs(data.studyDebriefs);
+    }).catch(() => {});
+    return () => { cancelled = true; };
+  }, [user.uid]);
+
+  // Get the most recent debrief note for the selected subject
+  const lastSubjectNote = useMemo(() => {
+    if (!selectedSubject || prevDebriefs.length === 0) return null;
+    const subjectDebriefs = prevDebriefs
+      .filter(d => d.subject === selectedSubject && d.whatWorked && d.whatWorked.trim().length > 0)
+      .sort((a, b) => b.date.localeCompare(a.date));
+    return subjectDebriefs[0] || null;
+  }, [selectedSubject, prevDebriefs]);
+
   // Teach-back state
   const [teachBackPhase, setTeachBackPhase] = useState<'none' | 'reading' | 'writing' | 'write-done'>('none');
   const teachBackReadShownRef = useRef(false);
   const teachBackWriteShownRef = useRef(false);
+  const teachBackDoneTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (teachBackDoneTimerRef.current) clearTimeout(teachBackDoneTimerRef.current);
+    };
+  }, []);
 
   const subjects = studentProfile?.subjects ?? [];
 
@@ -149,12 +180,12 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       const todayKey = toDateKey(today);
       const jsDay = today.getDay();
       const todayDayIndex = jsDay === 0 ? 6 : jsDay - 1;
-      const priorities = computeSubjectPriorities(studentProfile.subjects);
+      const priorities = computeSubjectPriorities(studentProfile.subjects, undefined);
       const weeksUntilExam = computeWeeksUntilExam(studentProfile.examStartDate);
       const allocations = allocateSessions(priorities, weeksUntilExam);
       const restDaysArray = studentProfile.restDays || [];
       const blockDuration = studentProfile.defaultBlockDuration ?? 45;
-      const timetable = generateWeeklyTimetable(allocations, weeksUntilExam, 0, restDaysArray, blockDuration);
+      const timetable = generateWeeklyTimetable(allocations, weeksUntilExam, 0, restDaysArray, blockDuration, undefined, undefined);
       const blocks = timetable[todayDayIndex]?.blocks ?? [];
       return blocks.map((block, bi) => ({
         subject: block.subjectName,
@@ -175,6 +206,12 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       return course && progress && progress.unlockedSection >= course.sectionsCount;
     })
     .map(s => s.moduleId);
+
+  // Compute syllabus topics for the current session subject (used in debrief)
+  const debriefTopics = useMemo(() => {
+    if (!session.subject) return [];
+    return getSyllabusTopics(session.subject);
+  }, [session.subject]);
 
   const canStart = selectedSubject && selectedType && selectedMinutes > 0;
 
@@ -283,6 +320,8 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     } catch (e) {
       console.error('Failed to save debrief:', e);
     }
+    // Process side effects: update topic mastery + SM-2 state
+    processDebriefSideEffects(user.uid, fullEntry).catch(e => console.error('Debrief side effects error:', e));
     completeTimetableBlock();
     pointsReload();
     onStrategyMasteryRecompute?.();
@@ -430,6 +469,23 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                 )}
               </div>
             </div>
+
+            {/* Last session note — surfaces whatWorked from previous debrief */}
+            <AnimatePresence>
+              {lastSubjectNote && selectedSubject && (
+                <MotionDiv
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
+                  className="overflow-hidden"
+                >
+                  <div className="px-4 py-3 rounded-xl" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+                    <p className="text-[10px] font-bold uppercase tracking-widest mb-1.5" style={{ color: '#9A9590' }}>Last time you studied {selectedSubject}</p>
+                    <p className="text-xs text-zinc-600 dark:text-zinc-400 italic leading-relaxed">"{lastSubjectNote.whatWorked}"</p>
+                  </div>
+                </MotionDiv>
+              )}
+            </AnimatePresence>
 
             {/* Session type + Duration — side by side */}
             <div className="grid grid-cols-2 gap-8">
@@ -583,65 +639,79 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
     return (
       <div className="fixed inset-0 z-[100] bg-zinc-950 flex flex-col items-center justify-center">
-        {/* Subject + type pill */}
-        <div className="absolute top-8 left-0 right-0 flex justify-center">
-          <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full ${subjectColors.bg} ${subjectColors.border} border`}>
-            <span className={`w-2 h-2 rounded-full ${subjectColors.dot}`} />
-            <span className={`text-sm font-semibold ${subjectColors.text}`}>{session.subject}</span>
-            <span className="text-zinc-400 dark:text-zinc-500 mx-1">·</span>
-            <span className="text-sm text-zinc-400 dark:text-zinc-400">{typeConfig.label}</span>
-          </div>
-        </div>
-
-        {/* Circular countdown ring */}
-        <div className="relative w-72 h-72 flex items-center justify-center">
-          <svg className="w-full h-full -rotate-90" viewBox="0 0 280 280">
-            {/* Background ring */}
-            <circle
-              cx="140" cy="140" r={ringRadius}
-              fill="none"
-              strokeWidth="6"
-              className="stroke-zinc-800"
-            />
-            {/* Progress ring */}
-            <motion.circle
-              cx="140" cy="140" r={ringRadius}
-              fill="none"
-              strokeWidth="6"
-              strokeLinecap="round"
-              className={strokeColor}
-              strokeDasharray={ringCircumference}
-              strokeDashoffset={ringOffset}
-              style={{ transition: 'stroke-dashoffset 0.5s ease' }}
-            />
-          </svg>
-          {/* Time display */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <span className="text-5xl font-bold text-white tabular-nums tracking-tight">
-              {formatTime(timeRemaining)}
-            </span>
-            <span className="text-sm text-zinc-500 mt-1">remaining</span>
-          </div>
-        </div>
-
-        {/* Controls */}
-        <div className="flex flex-col items-center gap-4 mt-8">
-          <button
-            onClick={session.phase === 'active' ? session.pauseSession : session.resumeSession}
-            className="w-16 h-16 rounded-full bg-white/10 hover:bg-white/15 flex items-center justify-center transition-colors"
-          >
-            {session.phase === 'active' ? (
-              <Pause size={28} className="text-white" />
-            ) : (
-              <Play size={28} className="text-white ml-1" />
-            )}
-          </button>
+        {/* Subject + type — clean top bar */}
+        <div className="absolute top-0 left-0 right-0 flex items-center justify-between px-6 py-5">
           <button
             onClick={session.endSession}
-            className="px-6 py-2.5 rounded-full bg-white/10 hover:bg-white/15 text-sm font-semibold text-zinc-300 hover:text-white transition-colors"
+            className="text-xs font-medium text-zinc-500 hover:text-zinc-300 transition-colors"
           >
-            End Early
+            End session
           </button>
+          <div className="flex items-center gap-2">
+            <span className={`w-2 h-2 rounded-full ${subjectColors.dot}`} />
+            <span className="text-sm font-medium text-zinc-300">{session.subject}</span>
+            <span className="text-zinc-600 mx-0.5">·</span>
+            <span className="text-sm text-zinc-500">{typeConfig.label}</span>
+          </div>
+          <div className="w-16" />
+        </div>
+
+        {/* Timer — large, centered, minimal */}
+        <div className="flex flex-col items-center">
+          {/* Time display — the hero element */}
+          <div className="relative">
+            {/* Outer ring — progress */}
+            <svg className="w-64 h-64 md:w-80 md:h-80 -rotate-90" viewBox="0 0 200 200">
+              {/* Track */}
+              <circle
+                cx="100" cy="100" r="90"
+                fill="none"
+                strokeWidth="2"
+                stroke="rgba(255,255,255,0.06)"
+              />
+              {/* Progress arc */}
+              <motion.circle
+                cx="100" cy="100" r="90"
+                fill="none"
+                strokeWidth="3"
+                strokeLinecap="round"
+                stroke="#2A7D6F"
+                strokeDasharray={2 * Math.PI * 90}
+                strokeDashoffset={2 * Math.PI * 90 * (1 - progress)}
+                style={{ transition: 'stroke-dashoffset 1s ease' }}
+              />
+            </svg>
+
+            {/* Center content */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center">
+              <span className="text-6xl md:text-7xl font-light text-white tabular-nums tracking-tighter" style={{ letterSpacing: '-0.04em' }}>
+                {formatTime(timeRemaining)}
+              </span>
+              <div className="flex items-center gap-3 mt-3 text-xs text-zinc-500">
+                <span>{Math.round(progress * 100)}% complete</span>
+                <span className="w-1 h-1 rounded-full bg-zinc-700" />
+                <span>{formatTime(session.elapsedSeconds)} elapsed</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Pause/Play — single clean button */}
+          <div className="mt-10">
+            <button
+              onClick={session.phase === 'active' ? session.pauseSession : session.resumeSession}
+              className="w-14 h-14 rounded-full flex items-center justify-center transition-all"
+              style={{
+                backgroundColor: session.phase === 'paused' ? '#2A7D6F' : 'rgba(255,255,255,0.08)',
+                border: session.phase === 'paused' ? 'none' : '1px solid rgba(255,255,255,0.1)',
+              }}
+            >
+              {session.phase === 'active' ? (
+                <Pause size={22} className="text-zinc-300" />
+              ) : (
+                <Play size={22} className="text-white ml-0.5" />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Bottom card area: coaching prompts OR teach-back cards */}
@@ -673,7 +743,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                 await teachBack.submitTeachBack(session.subject, text);
                 setTeachBackPhase('write-done');
                 // Auto-dismiss success after 2s
-                setTimeout(() => setTeachBackPhase('none'), 2000);
+                teachBackDoneTimerRef.current = setTimeout(() => setTeachBackPhase('none'), 2000);
               }}
               onSkip={() => setTeachBackPhase('none')}
             />
@@ -740,10 +810,10 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           )}
         </AnimatePresence>
 
-        {/* Paused overlay */}
+        {/* Paused indicator — subtle, not an overlay */}
         {session.phase === 'paused' && (
-          <div className="absolute inset-0 bg-zinc-950/60 flex items-center justify-center pointer-events-none">
-            <span className="text-2xl font-bold text-white/50">Paused</span>
+          <div className="absolute bottom-24 left-0 right-0 flex justify-center pointer-events-none">
+            <span className="text-xs font-medium text-zinc-500 uppercase tracking-widest">Paused</span>
           </div>
         )}
       </div>
@@ -876,6 +946,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           subject={session.subject}
           sessionType={session.sessionType}
           durationMinutes={actualMinutes}
+          syllabusTopics={debriefTopics}
           onSubmit={handleDebriefSubmit}
           onSkip={() => { setDebriefOpen(false); handleSkipReflection(); }}
         />

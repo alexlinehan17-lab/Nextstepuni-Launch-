@@ -55,7 +55,8 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
   const [loginView, setLoginView] = useState<'choice' | 'student' | 'admin' | 'gc'>('choice');
   const [gcSchool, setGcSchool] = useState('');
   const [error, setError] = useState('');
-  
+  const [isLoggingIn, setIsLoggingIn] = useState(false);
+
   // Login state
   const [loginName, setLoginName] = useState('');
   const [loginPassword, setLoginPassword] = useState('');
@@ -108,11 +109,14 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
     setError('');
 
     if (loginView === 'admin') {
+      setIsLoggingIn(true);
       try {
         await signInWithEmailAndPassword(auth, 'admin@nextstep.app', loginPassword);
         handleClose();
       } catch (error: any) {
         setError("Invalid admin credentials.");
+      } finally {
+        setIsLoggingIn(false);
       }
       return;
     }
@@ -122,12 +126,15 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
         setError("Please select your school and enter your password.");
         return;
       }
+      setIsLoggingIn(true);
       try {
         const email = `gc-${gcSchool}@nextstep.app`;
         await signInWithEmailAndPassword(auth, email, loginPassword);
         handleClose();
       } catch (error: any) {
         setError("Invalid credentials.");
+      } finally {
+        setIsLoggingIn(false);
       }
       return;
     }
@@ -137,12 +144,15 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
       return;
     }
 
+    setIsLoggingIn(true);
     try {
       const email = `${loginName.trim().toLowerCase()}@nextstep.app`;
       await signInWithEmailAndPassword(auth, email, loginPassword);
       handleClose();
     } catch (error: any) {
       setError("Invalid username or password.");
+    } finally {
+      setIsLoggingIn(false);
     }
   };
 
@@ -227,7 +237,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
            </button>
         </div>
         <AnimatePresence>{error && (<MotionP initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-xs text-red-400/90 font-medium">{error}</MotionP>)}</AnimatePresence>
-        <button type="submit" className="w-full bg-[var(--accent-hex)] text-white font-medium py-3 rounded-xl hover:bg-[var(--accent-dark-hex)] transition-colors text-sm mt-1">Continue</button>
+        <button type="submit" disabled={isLoggingIn} className="w-full bg-[var(--accent-hex)] text-white font-medium py-3 rounded-xl hover:bg-[var(--accent-dark-hex)] transition-colors text-sm mt-1 disabled:opacity-60 disabled:cursor-not-allowed">{isLoggingIn ? 'Signing in...' : 'Continue'}</button>
         {!isAdmin && (
           <p className="text-[11px] text-zinc-400 dark:text-zinc-500 text-center mt-2">Forgot your password? Ask your guidance counsellor to reset it.</p>
         )}
@@ -270,7 +280,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
           </button>
         </div>
         <AnimatePresence>{error && (<MotionP initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-xs text-red-400/90 font-medium">{error}</MotionP>)}</AnimatePresence>
-        <button type="submit" className="w-full bg-[var(--accent-hex)] text-white font-medium py-3 rounded-xl hover:bg-[var(--accent-dark-hex)] transition-colors text-sm mt-1">Continue</button>
+        <button type="submit" disabled={isLoggingIn} className="w-full bg-[var(--accent-hex)] text-white font-medium py-3 rounded-xl hover:bg-[var(--accent-dark-hex)] transition-colors text-sm mt-1 disabled:opacity-60 disabled:cursor-not-allowed">{isLoggingIn ? 'Signing in...' : 'Continue'}</button>
         <button type="button" onClick={() => { setLoginView('choice'); setError(''); }} className="flex items-center justify-center gap-1.5 text-sm text-zinc-400 dark:text-white/35 hover:text-zinc-600 dark:hover:text-white/60 w-full py-2 rounded-lg transition-colors mt-1">
           <ArrowLeft size={14} /> Back
         </button>

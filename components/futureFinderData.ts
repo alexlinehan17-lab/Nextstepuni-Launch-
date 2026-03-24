@@ -9,7 +9,7 @@ export interface CAOCourse {
   code: string;
   title: string;
   institution: string;
-  level: 6 | 7 | 8;
+  level: 5 | 6 | 7 | 8;
   typicalPoints: number;
   duration: number;
   interestTags: string[];
@@ -20,6 +20,7 @@ export interface CAOCourse {
   description: string;
   employability: 1 | 2 | 3 | 4 | 5;
   salaryBand: 'low' | 'mid' | 'high';
+  pathwayType?: 'cao' | 'plc' | 'apprenticeship';
 }
 
 // ─── Taxonomies ─────────────────────────────────────────────────────────────
@@ -62,6 +63,9 @@ export const INSTITUTIONS: Record<string, string> = {
   ATU: 'Atlantic Technological University',
   SETU: 'South East Technological University',
   MTU: 'Munster Technological University',
+  PLC: 'Post Leaving Certificate',
+  SOLAS: 'SOLAS Apprenticeship',
+  ETB: 'Education & Training Board',
 };
 
 // ─── Course Database — 2025 CAO Round 1 Points ─────────────────────────────
@@ -1252,4 +1256,242 @@ export const CAO_COURSES: CAOCourse[] = [
     region: 'southwest', description: 'A three-year computing degree at MTU with progression to Level 8.',
     employability: 4, salaryBand: 'mid',
   },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // PLC COURSES (Level 5 — QQI)
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  {
+    code: 'PLC-NUR', title: 'Pre-Nursing Studies', institution: 'PLC', level: 5, typicalPoints: 0,
+    duration: 1, interestTags: ['healthcare', 'social-care'],
+    workStyleTags: ['people-focused', 'structured', 'hands-on'],
+    careerPaths: ['Nurse (via degree progression)', 'Healthcare Assistant', 'Midwife (via progression)'],
+    subjectBonus: ['Biology', 'Home Economics'],
+    region: 'dublin', description: 'A one-year QQI Level 5 course providing a pathway to nursing degrees. Includes anatomy, care skills, and clinical placement.',
+    employability: 4, salaryBand: 'mid', pathwayType: 'plc',
+  },
+  {
+    code: 'PLC-BUS', title: 'Business Studies', institution: 'PLC', level: 5, typicalPoints: 0,
+    duration: 1, interestTags: ['business', 'finance'],
+    workStyleTags: ['structured', 'analytical', 'leadership'],
+    careerPaths: ['Office Administrator', 'Business Degree (via progression)', 'Accounts Clerk'],
+    subjectBonus: ['Business', 'Accounting', 'Economics'],
+    region: 'dublin', description: 'A one-year business course with QQI Level 5 certification. Covers bookkeeping, communications, marketing, and work experience.',
+    employability: 3, salaryBand: 'low', pathwayType: 'plc',
+  },
+  {
+    code: 'PLC-ART', title: 'Art, Craft & Design', institution: 'PLC', level: 5, typicalPoints: 0,
+    duration: 1, interestTags: ['design', 'arts'],
+    workStyleTags: ['creative', 'hands-on', 'independent'],
+    careerPaths: ['Art College (via portfolio + QQI)', 'Graphic Designer', 'Craft Maker'],
+    subjectBonus: ['Art', 'DCG'],
+    region: 'dublin', description: 'A portfolio preparation and foundation course for students aiming to progress to art and design degrees. Includes drawing, painting, sculpture, and digital design.',
+    employability: 3, salaryBand: 'low', pathwayType: 'plc',
+  },
+  {
+    code: 'PLC-IT', title: 'Computer Science & IT', institution: 'PLC', level: 5, typicalPoints: 0,
+    duration: 1, interestTags: ['technology'],
+    workStyleTags: ['analytical', 'creative', 'independent'],
+    careerPaths: ['IT Support', 'Computing Degree (via progression)', 'Junior Developer'],
+    subjectBonus: ['Computer Science', 'Mathematics'],
+    region: 'cork', description: 'A one-year computing course covering programming basics, networking, databases, and web development. Strong progression to IT degrees.',
+    employability: 4, salaryBand: 'mid', pathwayType: 'plc',
+  },
+  {
+    code: 'PLC-MEDIA', title: 'Media & Film Production', institution: 'PLC', level: 5, typicalPoints: 0,
+    duration: 1, interestTags: ['media', 'arts', 'design'],
+    workStyleTags: ['creative', 'flexible', 'hands-on'],
+    careerPaths: ['Media Degree (via progression)', 'Video Editor', 'Content Creator'],
+    subjectBonus: ['English', 'Art'],
+    region: 'dublin', description: 'A one-year course in video production, journalism, digital media, and communications. Includes practical projects and industry placements.',
+    employability: 3, salaryBand: 'mid', pathwayType: 'plc',
+  },
+  {
+    code: 'PLC-SPORT', title: 'Sports Studies & Exercise Science', institution: 'PLC', level: 5, typicalPoints: 0,
+    duration: 1, interestTags: ['sport', 'healthcare'],
+    workStyleTags: ['hands-on', 'people-focused', 'flexible'],
+    careerPaths: ['Fitness Instructor', 'Sports Science Degree (via progression)', 'Coach'],
+    subjectBonus: ['Biology', 'Physics'],
+    region: 'limerick', description: 'A one-year course covering anatomy, exercise science, coaching, and nutrition. Pathway to sports science and physiotherapy degrees.',
+    employability: 3, salaryBand: 'low', pathwayType: 'plc',
+  },
+  {
+    code: 'PLC-CHILD', title: 'Early Childhood Care & Education', institution: 'PLC', level: 5, typicalPoints: 0,
+    duration: 1, interestTags: ['education', 'social-care', 'psychology'],
+    workStyleTags: ['people-focused', 'creative', 'structured'],
+    careerPaths: ['Childcare Worker', 'Early Years Educator', 'Education Degree (via progression)'],
+    subjectBonus: ['Home Economics', 'Biology'],
+    region: 'galway', description: 'A one-year course preparing students for careers in childcare and early education. Includes child development, play-based learning, and supervised placement.',
+    employability: 4, salaryBand: 'low', pathwayType: 'plc',
+  },
+  {
+    code: 'PLC-HEALTH', title: 'Healthcare Support', institution: 'PLC', level: 5, typicalPoints: 0,
+    duration: 1, interestTags: ['healthcare', 'social-care'],
+    workStyleTags: ['people-focused', 'hands-on', 'structured'],
+    careerPaths: ['Healthcare Assistant', 'Nursing Degree (via progression)', 'Home Care Worker'],
+    subjectBonus: ['Biology', 'Home Economics'],
+    region: 'cork', description: 'A one-year course providing skills for healthcare support roles. Covers patient care, infection control, and clinical practice.',
+    employability: 5, salaryBand: 'low', pathwayType: 'plc',
+  },
+  {
+    code: 'PLC-LAW', title: 'Legal Studies', institution: 'PLC', level: 5, typicalPoints: 0,
+    duration: 1, interestTags: ['law', 'politics'],
+    workStyleTags: ['analytical', 'structured', 'research-driven'],
+    careerPaths: ['Law Degree (via progression)', 'Legal Secretary', 'Court Clerk'],
+    subjectBonus: ['English', 'History'],
+    region: 'dublin', description: 'A one-year introduction to Irish and EU law. Covers criminal law, contract law, constitutional law, and legal research skills.',
+    employability: 3, salaryBand: 'low', pathwayType: 'plc',
+  },
+  {
+    code: 'PLC-PSYCH', title: 'Applied Psychology', institution: 'PLC', level: 5, typicalPoints: 0,
+    duration: 1, interestTags: ['psychology', 'social-care', 'healthcare'],
+    workStyleTags: ['people-focused', 'research-driven', 'analytical'],
+    careerPaths: ['Psychology Degree (via progression)', 'Youth Worker', 'Community Support Worker'],
+    subjectBonus: ['Biology', 'English'],
+    region: 'dublin', description: 'A one-year course introducing psychology concepts. Covers developmental, social, and abnormal psychology with research methods.',
+    employability: 3, salaryBand: 'low', pathwayType: 'plc',
+  },
+  {
+    code: 'PLC-ANIMAL', title: 'Animal Care & Management', institution: 'PLC', level: 5, typicalPoints: 0,
+    duration: 1, interestTags: ['agriculture', 'science', 'environment'],
+    workStyleTags: ['hands-on', 'flexible', 'independent'],
+    careerPaths: ['Veterinary Nursing (via progression)', 'Animal Care Worker', 'Kennel Manager'],
+    subjectBonus: ['Biology', 'Ag Science'],
+    region: 'midlands', description: 'A one-year course covering animal husbandry, welfare, nutrition, and handling. Includes practical placement at veterinary clinics or farms.',
+    employability: 3, salaryBand: 'low', pathwayType: 'plc',
+  },
+  {
+    code: 'PLC-HOSP', title: 'Hospitality & Tourism', institution: 'PLC', level: 5, typicalPoints: 0,
+    duration: 1, interestTags: ['food', 'business'],
+    workStyleTags: ['people-focused', 'flexible', 'hands-on'],
+    careerPaths: ['Hotel Receptionist', 'Restaurant Manager', 'Tourism Degree (via progression)'],
+    subjectBonus: ['Home Economics', 'Business', 'French'],
+    region: 'galway', description: 'A one-year course in hospitality operations, customer service, food safety, and tourism. Includes industry work experience.',
+    employability: 4, salaryBand: 'low', pathwayType: 'plc',
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // APPRENTICESHIPS (SOLAS / Generation Apprenticeship)
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  {
+    code: 'APP-ELEC', title: 'Electrical Apprenticeship', institution: 'SOLAS', level: 6, typicalPoints: 0,
+    duration: 4, interestTags: ['engineering', 'technology'],
+    workStyleTags: ['hands-on', 'structured', 'analytical'],
+    careerPaths: ['Electrician', 'Electrical Contractor', 'Maintenance Technician'],
+    subjectBonus: ['Mathematics', 'Physics', 'Construction Studies'],
+    region: 'dublin', description: 'A 4-year earn-while-you-learn apprenticeship combining on-the-job training with off-the-job phases at ETB training centres and institutes of technology.',
+    employability: 5, salaryBand: 'mid', pathwayType: 'apprenticeship',
+  },
+  {
+    code: 'APP-PLUMB', title: 'Plumbing Apprenticeship', institution: 'SOLAS', level: 6, typicalPoints: 0,
+    duration: 4, interestTags: ['engineering'],
+    workStyleTags: ['hands-on', 'structured', 'independent'],
+    careerPaths: ['Plumber', 'Plumbing Contractor', 'Gas Installer'],
+    subjectBonus: ['Mathematics', 'Construction Studies', 'Physics'],
+    region: 'cork', description: 'A 4-year apprenticeship learning pipework, heating systems, and water services. Combines paid employment with training centre phases.',
+    employability: 5, salaryBand: 'mid', pathwayType: 'apprenticeship',
+  },
+  {
+    code: 'APP-CARP', title: 'Carpentry & Joinery Apprenticeship', institution: 'SOLAS', level: 6, typicalPoints: 0,
+    duration: 4, interestTags: ['engineering', 'design'],
+    workStyleTags: ['hands-on', 'creative', 'independent'],
+    careerPaths: ['Carpenter', 'Furniture Maker', 'Site Foreman'],
+    subjectBonus: ['Construction Studies', 'DCG', 'Mathematics'],
+    region: 'limerick', description: 'A 4-year apprenticeship in construction carpentry and joinery. Learn on active building sites while attending off-the-job training phases.',
+    employability: 5, salaryBand: 'mid', pathwayType: 'apprenticeship',
+  },
+  {
+    code: 'APP-MOTOR', title: 'Motor Mechanic Apprenticeship', institution: 'SOLAS', level: 6, typicalPoints: 0,
+    duration: 4, interestTags: ['engineering', 'technology'],
+    workStyleTags: ['hands-on', 'analytical', 'structured'],
+    careerPaths: ['Motor Mechanic', 'Workshop Manager', 'Vehicle Inspector'],
+    subjectBonus: ['Physics', 'Mathematics', 'Engineering'],
+    region: 'dublin', description: 'A 4-year apprenticeship covering engine systems, diagnostics, and vehicle repair. Earn while you learn with a registered employer.',
+    employability: 5, salaryBand: 'mid', pathwayType: 'apprenticeship',
+  },
+  {
+    code: 'APP-SWDEV', title: 'Software Developer Apprenticeship', institution: 'SOLAS', level: 6, typicalPoints: 0,
+    duration: 2, interestTags: ['technology'],
+    workStyleTags: ['analytical', 'creative', 'independent'],
+    careerPaths: ['Junior Software Developer', 'Full-Stack Developer', 'DevOps Engineer'],
+    subjectBonus: ['Computer Science', 'Mathematics'],
+    region: 'dublin', description: 'A 2-year Generation Apprenticeship combining paid employment at a tech company with off-the-job learning. Covers programming, databases, and software engineering.',
+    employability: 5, salaryBand: 'high', pathwayType: 'apprenticeship',
+  },
+  {
+    code: 'APP-ACCT', title: 'Accounting Technician Apprenticeship', institution: 'SOLAS', level: 6, typicalPoints: 0,
+    duration: 2, interestTags: ['finance', 'business'],
+    workStyleTags: ['analytical', 'structured', 'independent'],
+    careerPaths: ['Accounting Technician', 'Bookkeeper', 'Payroll Administrator'],
+    subjectBonus: ['Accounting', 'Mathematics', 'Business'],
+    region: 'dublin', description: 'A 2-year apprenticeship working in an accounting practice while studying for ATI qualifications. Earn a salary from day one.',
+    employability: 5, salaryBand: 'mid', pathwayType: 'apprenticeship',
+  },
+  {
+    code: 'APP-CHEF', title: 'Commis Chef Apprenticeship', institution: 'SOLAS', level: 6, typicalPoints: 0,
+    duration: 2, interestTags: ['food'],
+    workStyleTags: ['hands-on', 'creative', 'flexible'],
+    careerPaths: ['Chef', 'Head Chef', 'Restaurant Owner'],
+    subjectBonus: ['Home Economics'],
+    region: 'galway', description: 'A 2-year apprenticeship training in professional kitchens. Learn food preparation, menu planning, and kitchen management while earning a wage.',
+    employability: 4, salaryBand: 'mid', pathwayType: 'apprenticeship',
+  },
+  {
+    code: 'APP-INSUR', title: 'Insurance Practice Apprenticeship', institution: 'SOLAS', level: 8, typicalPoints: 0,
+    duration: 3, interestTags: ['finance', 'business'],
+    workStyleTags: ['analytical', 'structured', 'people-focused'],
+    careerPaths: ['Insurance Underwriter', 'Claims Manager', 'Risk Analyst'],
+    subjectBonus: ['Business', 'Mathematics', 'Economics'],
+    region: 'dublin', description: 'A 3-year earn-and-learn degree apprenticeship in insurance. Work at an insurance company while studying for a Level 8 degree.',
+    employability: 5, salaryBand: 'high', pathwayType: 'apprenticeship',
+  },
 ];
+
+// ─── Lookup Helpers ─────────────────────────────────────────────────────────
+
+export function getCourseByCode(code: string): CAOCourse | undefined {
+  return CAO_COURSES.find(c => c.code === code);
+}
+
+export function hydrateCourses(codes: string[]): CAOCourse[] {
+  return codes
+    .map(code => getCourseByCode(code))
+    .filter((c): c is CAOCourse => c !== undefined);
+}
+
+// ─── Course Page URLs ──────────────────────────────────────────────────────
+
+function slugify(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+
+export function getCoursePageUrl(course: CAOCourse): string {
+  const code = course.code.toLowerCase();
+  const slug = slugify(course.title);
+  const institution = INSTITUTIONS[course.institution] || course.institution;
+
+  switch (course.institution) {
+    // CAO code in URL — verified working
+    case 'UCC': return `https://www.ucc.ie/en/${code}/`;
+    case 'MTU': return `https://www.mtu.ie/courses/${code}/`;
+    case 'TUS': return `https://tus.ie/courses/${code}/`;
+
+    // Title slug in URL — verified working
+    case 'TCD': return `https://www.tcd.ie/courses/undergraduate/courses/${slug}/`;
+    case 'UL': return `https://www.ul.ie/courses/${slug}`;
+    case 'RCSI': return `https://www.rcsi.com/dublin/undergraduate/${slug}`;
+
+    // Title slug + CAO code in URL — verified working
+    case 'TU Dublin': return `https://www.tudublin.ie/study/undergraduate/courses/${slug}-${code}/`;
+
+    // PLC / Apprenticeship portals
+    case 'PLC': return `https://www.qualifax.ie/`;
+    case 'SOLAS': return `https://www.apprenticeship.ie/`;
+    case 'ETB': return `https://www.etbi.ie/`;
+
+    // All others: DuckDuckGo auto-redirect to first result
+    default:
+      return `https://duckduckgo.com/?q=${encodeURIComponent(`\\ ${course.code} ${course.title} ${institution} undergraduate`)}`;
+  }
+}

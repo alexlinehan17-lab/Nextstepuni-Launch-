@@ -5,9 +5,10 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Flame, Coins, ChevronDown, ChevronRight, BookOpen, AlertTriangle, TrendingUp, TrendingDown, Minus, FileText, X, Save } from 'lucide-react';
+import { ArrowLeft, Flame, Coins, ChevronDown, ChevronRight, BookOpen, AlertTriangle, FileText, X, Save, Compass, BarChart3, Brain, Lightbulb, Heart } from 'lucide-react';
 import { db } from '../../firebase';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { addNotification } from './gcNotifications';
 import { CourseData } from '../Library';
 import { CategoryType } from '../KnowledgeTree';
 import { getAvatarUrl } from '../Auth';
@@ -16,6 +17,7 @@ import { getPointsForGrade, LC_SUBJECTS } from '../subjectData';
 import { ARCHETYPES, STAT_LABELS, getStatGrade, StatKey } from '../journeySimulatorData';
 import { NORTH_STAR_CATEGORIES, VISION_CARDS, CATEGORY_COLORS } from '../../northStarData';
 import { GCStudentFullData } from './gcTypes';
+import { hydrateCourses } from '../futureFinderData';
 import { type EarlyWarningAlert, type AlertSeverity } from './gcAlerts';
 import {
   getOverallProgress,
@@ -25,7 +27,6 @@ import {
   getDaysUntilLC,
   getStudentStatus,
   getSupportReasons,
-  getMoodTrend,
   getEngagementTimeline,
 } from './gcUtils';
 import { PentagonRadar } from './PentagonRadar';
@@ -44,31 +45,6 @@ const CATEGORIES: { id: CategoryType; title: string; color: string; dotColor: st
   { id: 'exam-zone', title: 'Exam Strategy and Points Maximisation', color: 'bg-red-500', dotColor: 'bg-red-500' },
 ];
 
-// ─── Mood heatmap helpers ───────────────────────────────────────────────────
-
-const MOOD_COLORS: Record<string, string> = {
-  calm: 'bg-emerald-400',
-  balanced: 'bg-blue-400',
-  energized: 'bg-amber-400',
-  stressed: 'bg-rose-400',
-};
-
-const DAY_LABELS = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
-
-function getLast28Days(): string[] {
-  const days: string[] = [];
-  const now = new Date();
-  for (let i = 27; i >= 0; i--) {
-    const d = new Date(now);
-    d.setDate(d.getDate() - i);
-    const y = d.getFullYear();
-    const m = String(d.getMonth() + 1).padStart(2, '0');
-    const day = String(d.getDate()).padStart(2, '0');
-    days.push(`${y}-${m}-${day}`);
-  }
-  return days;
-}
-
 // ─── Section label helper ───────────────────────────────────────────────────
 
 const SectionLabel: React.FC<{ label: string }> = ({ label }) => (
@@ -85,10 +61,30 @@ interface GCStudentDetailProps {
   isTrayMode?: boolean;
   onNoteSaved?: (uid: string, notes: string, updatedAt: string) => void;
   alerts?: EarlyWarningAlert[];
+  gcName?: string;
 }
 
-export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCourses, onBack, school, isTrayMode, onNoteSaved, alerts = [] }) => {
+const INNOVATION_TOOLS = [
+  { id: 'journey', title: 'Academic Journey Simulator' },
+  { id: 'cao-simulator', title: 'CAO Points Simulator' },
+  { id: 'flashcards', title: 'Flashcard Studio' },
+  { id: 'planner', title: 'Spaced Repetition Timetable' },
+  { id: 'war-room', title: 'War Room' },
+  { id: 'comeback', title: 'Comeback Engine' },
+  { id: 'future-finder', title: 'Future Finder' },
+  { id: 'learning-dna', title: 'Learning DNA' },
+  { id: 'first-gen-intel', title: 'First Gen Intel' },
+  { id: 'syllabus-xray', title: 'Syllabus X-Ray' },
+];
+
+export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCourses, onBack, school, isTrayMode, onNoteSaved, alerts = [], gcName }) => {
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
+  const [showRecommendModal, setShowRecommendModal] = useState(false);
+  const [showKudosModal, setShowKudosModal] = useState(false);
+  const [recommendToolId, setRecommendToolId] = useState<string | null>(null);
+  const [recommendMessage, setRecommendMessage] = useState('');
+  const [kudosMessage, setKudosMessage] = useState('');
+  const [isSendingAction, setIsSendingAction] = useState(false);
 
   const overallProgress = getOverallProgress(student.progress, allCourses);
   const currentCAO = getStudentCurrentCAO(student);
@@ -104,10 +100,6 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
       return next;
     });
   };
-
-  // ─── Mood trend ───────────────────────────────────────────────────────
-
-  const moodTrend = getMoodTrend(student);
 
   // ─── Engagement timeline ──────────────────────────────────────────────
 
@@ -625,74 +617,6 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     );
   };
 
-  // ─── Mood heatmap ────────────────────────────────────────────────
-
-  const renderMoodHeatmap = () => {
-    const last28 = getLast28Days();
-    const moodEntries = student.mood?.entries ?? [];
-
-    // Build a date-keyed lookup from the array
-    const moodByDate: Record<string, string> = {};
-    moodEntries.forEach(e => { moodByDate[e.date] = e.mood; });
-
-    // Mood distribution
-    const moodCounts: Record<string, number> = { calm: 0, balanced: 0, energized: 0, stressed: 0 };
-    moodEntries.forEach(e => {
-      if (e.mood in moodCounts) moodCounts[e.mood]++;
-    });
-
-    return (
-      <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5">
-        <div className="flex items-center justify-between mb-3">
-          <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500">Mood (28 Days)</p>
-          {moodTrend !== 'insufficient-data' && (
-            <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[10px] font-semibold ${
-              moodTrend === 'improving'
-                ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-900/20 dark:text-emerald-400'
-                : moodTrend === 'declining'
-                ? 'bg-rose-50 text-rose-700 dark:bg-rose-900/20 dark:text-rose-400'
-                : 'bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400'
-            }`}>
-              {moodTrend === 'improving' && <TrendingUp size={12} />}
-              {moodTrend === 'declining' && <TrendingDown size={12} />}
-              {moodTrend === 'stable' && <Minus size={12} />}
-              {moodTrend === 'improving' ? 'Improving vs prior week' : moodTrend === 'declining' ? 'Declining vs prior week' : 'Stable'}
-            </span>
-          )}
-        </div>
-        {/* Day-of-week labels */}
-        <div className="grid grid-cols-7 gap-2 mb-1">
-          {DAY_LABELS.map((d, i) => (
-            <span key={i} className="text-center text-[9px] font-medium text-zinc-400 dark:text-zinc-500">{d}</span>
-          ))}
-        </div>
-        <div className="grid grid-cols-7 gap-2 mb-4">
-          {last28.map(day => {
-            const mood = moodByDate[day];
-            const color = mood ? (MOOD_COLORS[mood] ?? 'bg-zinc-200 dark:bg-zinc-700') : 'bg-zinc-200 dark:bg-zinc-700';
-            return (
-              <div
-                key={day}
-                className={`w-full aspect-square rounded-lg ${color} hover:scale-110 transition-transform cursor-default`}
-                title={`${day}: ${mood ?? 'no entry'}`}
-              />
-            );
-          })}
-        </div>
-        <div className="border-t border-zinc-200 dark:border-zinc-800 pt-3">
-          <div className="flex flex-wrap gap-4 text-[10px] text-zinc-500 dark:text-zinc-400">
-            {Object.entries(moodCounts).map(([mood, count]) => (
-              <div key={mood} className="flex items-center gap-1.5">
-                <div className={`w-3 h-3 rounded-full ${MOOD_COLORS[mood]}`} />
-                <span className="capitalize">{mood}: {count}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    );
-  };
-
   // ─── Engagement timeline (SVG bar chart) ────────────────────────────
 
   const renderEngagementTimeline = () => (
@@ -728,6 +652,112 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
       </div>
     </div>
   );
+
+  // ─── Insights: Career Direction (FF picks) ─────────────────────────────
+
+  const renderCareerDirection = () => {
+    if (!student.futureFinder?.topPicks?.length) return null;
+    const courses = hydrateCourses(student.futureFinder.topPicks).slice(0, 3);
+    if (courses.length === 0) return null;
+
+    return (
+      <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5">
+        <div className="flex items-center gap-2 mb-3">
+          <Compass size={16} className="text-blue-500" />
+          <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">Career Direction</h4>
+        </div>
+        <div className="space-y-2">
+          {courses.map((c, i) => (
+            <div key={c.code} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-800/30">
+              <span className="text-xs font-bold text-zinc-400 w-5 text-center">{i + 1}</span>
+              <div className="flex-1 min-w-0">
+                <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 truncate">{c.title}</p>
+                <p className="text-[10px] text-zinc-400 dark:text-zinc-500">{c.institution} &middot; Level {c.level}</p>
+              </div>
+              <span className="text-xs font-bold text-zinc-600 dark:text-zinc-300 shrink-0">{c.typicalPoints} pts</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  };
+
+  // ─── Insights: Mock Trajectory ─────────────────────────────────────────
+
+  const renderMockTrajectory = () => {
+    if (!student.mockResults?.length) return null;
+    const sorted = [...student.mockResults].sort((a, b) => (a.date ?? '').localeCompare(b.date ?? ''));
+
+    return (
+      <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5">
+        <div className="flex items-center gap-2 mb-3">
+          <BarChart3 size={16} className="text-amber-500" />
+          <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">Mock Trajectory</h4>
+        </div>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-zinc-200 dark:border-zinc-800">
+                <th className="text-left py-2 px-2 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Subject</th>
+                <th className="text-center py-2 px-2 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Grade</th>
+                <th className="text-right py-2 px-2 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              {sorted.map((m) => (
+                <tr key={m.id} className="border-b border-zinc-100 dark:border-zinc-800/50">
+                  <td className="py-2 px-2 text-xs text-zinc-700 dark:text-zinc-300">{m.subject}</td>
+                  <td className="py-2 px-2 text-center text-xs font-semibold text-zinc-800 dark:text-zinc-200">{m.grade}</td>
+                  <td className="py-2 px-2 text-right text-[10px] text-zinc-400 dark:text-zinc-500">{m.date}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    );
+  };
+
+  // ─── Insights: Struggle Areas (debrief hardestTopic grouped by subject) ──
+
+  const renderStruggleAreas = () => {
+    if (!student.recentDebriefs?.length) return null;
+
+    const grouped: Record<string, string[]> = {};
+    for (const d of student.recentDebriefs) {
+      if (!d.hardestTopic || d.hardestTopic === 'Not specified') continue;
+      if (!grouped[d.subject]) grouped[d.subject] = [];
+      if (!grouped[d.subject].includes(d.hardestTopic)) {
+        grouped[d.subject].push(d.hardestTopic);
+      }
+    }
+
+    const entries = Object.entries(grouped);
+    if (entries.length === 0) return null;
+
+    return (
+      <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5">
+        <div className="flex items-center gap-2 mb-3">
+          <Brain size={16} className="text-rose-500" />
+          <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">Struggle Areas</h4>
+        </div>
+        <div className="space-y-3">
+          {entries.map(([subject, topics]) => (
+            <div key={subject}>
+              <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 mb-1">{subject}</p>
+              <div className="flex flex-wrap gap-1.5">
+                {topics.map(t => (
+                  <span key={t} className="px-2 py-0.5 rounded-md bg-rose-50 dark:bg-rose-900/20 border border-rose-200 dark:border-rose-800/30 text-[10px] text-rose-700 dark:text-rose-400">
+                    {t}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  };
 
   // ─── GC Notes ─────────────────────────────────────────────────────────
 
@@ -789,11 +819,173 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
 
   // ─── Render ─────────────────────────────────────────────────────────
 
+  // ─── Quick Actions (Recommend / Kudos) ───────────────────────────────
+
+  const handleSendRecommendation = async () => {
+    if (!recommendToolId) return;
+    setIsSendingAction(true);
+    const toolName = INNOVATION_TOOLS.find(t => t.id === recommendToolId)?.title || recommendToolId;
+    await addNotification(student.user.uid, {
+      type: 'gc-recommendation',
+      title: `Tool Recommended: ${toolName}`,
+      body: recommendMessage.trim() || `Your guidance counsellor recommends trying ${toolName}.`,
+      fromGCName: gcName,
+      actionToolId: recommendToolId,
+      severity: 'info',
+    });
+    setIsSendingAction(false);
+    setShowRecommendModal(false);
+    setRecommendToolId(null);
+    setRecommendMessage('');
+  };
+
+  const handleSendKudos = async () => {
+    if (!kudosMessage.trim()) return;
+    setIsSendingAction(true);
+    await addNotification(student.user.uid, {
+      type: 'gc-kudos',
+      title: 'Words of encouragement',
+      body: kudosMessage.trim(),
+      fromGCName: gcName,
+      severity: 'success',
+    });
+    setIsSendingAction(false);
+    setShowKudosModal(false);
+    setKudosMessage('');
+  };
+
+  const renderQuickActions = () => (
+    <div className="flex items-center gap-2">
+      <button
+        onClick={() => setShowRecommendModal(true)}
+        className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-indigo-50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-400 text-xs font-semibold hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors border border-indigo-200/60 dark:border-indigo-800/40"
+      >
+        <Lightbulb size={14} />
+        Recommend Tool
+      </button>
+      <button
+        onClick={() => setShowKudosModal(true)}
+        className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 text-xs font-semibold hover:bg-emerald-100 dark:hover:bg-emerald-900/30 transition-colors border border-emerald-200/60 dark:border-emerald-800/40"
+      >
+        <Heart size={14} />
+        Send Encouragement
+      </button>
+    </div>
+  );
+
+  const renderModals = () => (
+    <>
+      {/* Recommend Tool Modal */}
+      <AnimatePresence>
+        {showRecommendModal && (
+          <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isSendingAction && setShowRecommendModal(false)}>
+            <MotionDiv
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 max-w-sm w-full shadow-2xl"
+              onClick={(e: React.MouseEvent) => e.stopPropagation()}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-xl bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center">
+                  <Lightbulb size={20} className="text-indigo-500" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-zinc-800 dark:text-white">Recommend a Tool</h3>
+                  <p className="text-xs text-zinc-500">for {student.user.name}</p>
+                </div>
+              </div>
+              <div className="space-y-3 max-h-48 overflow-y-auto mb-3">
+                {INNOVATION_TOOLS.map(tool => (
+                  <button
+                    key={tool.id}
+                    onClick={() => setRecommendToolId(tool.id)}
+                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${recommendToolId === tool.id ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 font-medium' : 'hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-300'}`}
+                  >
+                    {tool.title}
+                  </button>
+                ))}
+              </div>
+              <textarea
+                value={recommendMessage}
+                onChange={(e) => setRecommendMessage(e.target.value)}
+                placeholder="Add a short message (optional)"
+                maxLength={200}
+                className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl p-3 text-sm text-zinc-800 dark:text-white placeholder:text-zinc-400 resize-none h-16 focus:outline-none focus:border-indigo-400 mb-3"
+              />
+              <div className="flex gap-2">
+                <button onClick={() => setShowRecommendModal(false)} className="flex-1 py-2 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+                  Cancel
+                </button>
+                <button
+                  onClick={handleSendRecommendation}
+                  disabled={!recommendToolId || isSendingAction}
+                  className="flex-1 py-2 rounded-xl text-sm font-medium bg-indigo-500 text-white hover:bg-indigo-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                >
+                  {isSendingAction ? 'Sending...' : 'Send'}
+                </button>
+              </div>
+            </MotionDiv>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* Send Encouragement Modal */}
+      <AnimatePresence>
+        {showKudosModal && (
+          <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isSendingAction && setShowKudosModal(false)}>
+            <MotionDiv
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 max-w-sm w-full shadow-2xl"
+              onClick={(e: React.MouseEvent) => e.stopPropagation()}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center">
+                  <Heart size={20} className="text-emerald-500" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-zinc-800 dark:text-white">Send Encouragement</h3>
+                  <p className="text-xs text-zinc-500">to {student.user.name}</p>
+                </div>
+              </div>
+              <textarea
+                value={kudosMessage}
+                onChange={(e) => setKudosMessage(e.target.value)}
+                placeholder="Write a short encouraging message..."
+                maxLength={200}
+                className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl p-3 text-sm text-zinc-800 dark:text-white placeholder:text-zinc-400 resize-none h-24 focus:outline-none focus:border-emerald-400 mb-1"
+              />
+              <p className="text-[10px] text-zinc-400 text-right mb-3">{kudosMessage.length}/200</p>
+              <div className="flex gap-2">
+                <button onClick={() => setShowKudosModal(false)} className="flex-1 py-2 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+                  Cancel
+                </button>
+                <button
+                  onClick={handleSendKudos}
+                  disabled={!kudosMessage.trim() || isSendingAction}
+                  className="flex-1 py-2 rounded-xl text-sm font-medium bg-emerald-500 text-white hover:bg-emerald-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                >
+                  {isSendingAction ? 'Sending...' : 'Send'}
+                </button>
+              </div>
+            </MotionDiv>
+          </div>
+        )}
+      </AnimatePresence>
+    </>
+  );
+
   if (isTrayMode) {
     return (
       <div>
         {renderTrayHeader()}
+        {renderModals()}
         <div className="p-6 space-y-6">
+          {/* Quick Actions */}
+          {renderQuickActions()}
+
           {/* Stat chips — stays 4-col, fits 672px */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 flex items-center gap-3">
@@ -855,11 +1047,22 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
             <SectionLabel label="Engagement & Wellbeing" />
             <div className="space-y-5">
               {renderJourneyResult()}
-              {renderMoodHeatmap()}
+
               {renderEngagementTimeline()}
               {renderEngagementCards()}
             </div>
           </div>
+
+          {(student.futureFinder || student.mockResults || student.recentDebriefs) && (
+            <div>
+              <SectionLabel label="Insights" />
+              <div className="space-y-5">
+                {renderCareerDirection()}
+                {renderMockTrajectory()}
+                {renderStruggleAreas()}
+              </div>
+            </div>
+          )}
 
           {renderCounsellorNotes()}
         </div>
@@ -875,6 +1078,10 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
       className="space-y-8"
     >
       {renderHeader()}
+      {renderModals()}
+
+      {/* Quick Actions */}
+      {renderQuickActions()}
 
       {/* Academic Profile section */}
       <div>
@@ -897,12 +1104,23 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {renderJourneyResult()}
           <div className="space-y-4">
-            {renderMoodHeatmap()}
             {renderEngagementTimeline()}
             {renderEngagementCards()}
           </div>
         </div>
       </div>
+
+      {/* Insights section */}
+      {(student.futureFinder || student.mockResults || student.recentDebriefs) && (
+        <div>
+          <SectionLabel label="Insights" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {renderCareerDirection()}
+            {renderMockTrajectory()}
+            {renderStruggleAreas()}
+          </div>
+        </div>
+      )}
 
       {/* Counsellor Notes section */}
       {renderCounsellorNotes()}

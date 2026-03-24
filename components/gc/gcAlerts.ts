@@ -43,8 +43,6 @@ function daysSinceDate(dateStr: string): number {
   return Math.floor((Date.now() - new Date(dateStr).getTime()) / DAY_MS);
 }
 
-const MOOD_SCORES: Record<string, number> = { stressed: 1, balanced: 2, calm: 3, energized: 4 };
-
 // ── Signal Generators ──────────────────────────────────────
 
 function engagementDropoff(s: GCStudentFullData): EarlyWarningAlert | null {
@@ -68,35 +66,6 @@ function engagementDropoff(s: GCStudentFullData): EarlyWarningAlert | null {
     title: daysSince >= 7 ? 'Inactive for over a week' : `Inactive ${daysSince} days`,
     description: `Was previously active (${totalDays} active days), last seen ${lastDate}.`,
     metric: daysSince,
-  };
-}
-
-function moodDecline(s: GCStudentFullData): EarlyWarningAlert | null {
-  const entries = s.mood?.entries;
-  if (!entries || entries.length < 4) return null;
-
-  // Sort entries by date descending
-  const sorted = [...entries].sort((a, b) => b.date.localeCompare(a.date));
-
-  // Check last 5 entries for stressed trend
-  const recent = sorted.slice(0, 5);
-  const stressedCount = recent.filter(e => e.mood === 'stressed').length;
-
-  if (stressedCount < 3) return null;
-
-  // Calculate mood score trend (lower = worse)
-  const recentAvg = recent.reduce((sum, e) => sum + (MOOD_SCORES[e.mood] ?? 2), 0) / recent.length;
-
-  return {
-    id: `mood-decline-${s.user.uid}`,
-    type: 'mood-decline',
-    severity: stressedCount >= 4 ? 'urgent' : 'watch',
-    studentUid: s.user.uid,
-    studentName: s.user.name,
-    studentAvatar: s.user.avatar,
-    title: 'Mood declining',
-    description: `${stressedCount} of last 5 mood entries are "stressed".`,
-    metric: stressedCount,
   };
 }
 
@@ -216,7 +185,6 @@ export function generateAlerts(
   for (const student of students) {
     const signals = [
       engagementDropoff(student),
-      moodDecline(student),
       streakBroken(student),
       studyTimeDropping(student),
       stalledProgress(student),

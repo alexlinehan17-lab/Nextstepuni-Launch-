@@ -18,9 +18,12 @@ export function useModuleResponses(moduleId: string) {
       return;
     }
 
+    let cancelled = false;
+
     const load = async () => {
       try {
         const snap = await getDoc(doc(db, 'responses', uid));
+        if (cancelled) return;
         if (snap.exists()) {
           const data = snap.data();
           if (data[moduleId]) {
@@ -30,10 +33,11 @@ export function useModuleResponses(moduleId: string) {
       } catch (err) {
         console.error('Failed to load responses:', err);
       }
-      setIsLoaded(true);
+      if (!cancelled) setIsLoaded(true);
     };
 
     load();
+    return () => { cancelled = true; };
   }, [moduleId]);
 
   const saveResponse = useCallback((key: string, value: any) => {

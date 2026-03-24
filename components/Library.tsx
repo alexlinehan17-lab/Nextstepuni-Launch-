@@ -21,7 +21,6 @@ import NorthStarCallout from './NorthStarCallout';
 import { useSettingsContext } from '../contexts/SettingsContext';
 import { ACCENT_THEME_LIST, ACCENT_THEMES, CARD_STYLES } from '../themeData';
 import { getAvatarUrl } from './Auth';
-import { MoodFaceIcon, MOOD_KEYS, MOOD_LABELS } from './MoodFaceIcon';
 
 // FIX: Cast motion components to any to bypass broken type definitions
 const MotionDiv = motion.div as any;
@@ -63,8 +62,6 @@ interface LibraryProps {
   onGoToInnovationZone?: () => void;
   onGoToJourney?: () => void;
   onChangeSubjects?: () => void;
-  todayMood?: string | null;
-  onSetMood?: (mood: string) => void;
   completedCount?: number;
   totalCount?: number;
 }
@@ -175,10 +172,9 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
   );
 };
 
-export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse, onBack, userProgress, northStar, studentProfile, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onGoToDashboard, onGoToLearningPaths, onGoToInnovationZone, onGoToJourney, onChangeSubjects, todayMood, onSetMood, completedCount = 0, totalCount = 0 }) => {
+export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse, onBack, userProgress, northStar, studentProfile, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onGoToDashboard, onGoToLearningPaths, onGoToInnovationZone, onGoToJourney, onChangeSubjects, completedCount = 0, totalCount = 0 }) => {
   const settingsCtx = useSettingsContext();
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [moodExpanded, setMoodExpanded] = useState(false);
   const [themePickerOpen, setThemePickerOpen] = useState(false);
   const [cardPickerOpen, setCardPickerOpen] = useState(false);
   const headerRef = React.useRef<HTMLElement>(null);
@@ -225,7 +221,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
       {/* Sidebar — desktop only, starts below fixed header */}
       {hasSidebar && headerHeight > 0 && (
         <aside
-          className={`hidden md:flex flex-col fixed left-0 bottom-0 z-[65] bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-r border-zinc-200 dark:border-zinc-800 overflow-y-auto transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
+          className={`hidden md:flex flex-col fixed left-0 bottom-0 z-[55] bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-r border-zinc-200 dark:border-zinc-800 overflow-y-auto transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
           style={{ top: `${headerHeight}px` }}
         >
           {/* Avatar row — click to toggle */}
@@ -262,69 +258,6 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
               </button>
             ))}
           </nav>
-
-          {/* Mood check-in */}
-          {onSetMood && (
-            <div className="px-2 mt-1 mb-1">
-              <button
-                onClick={() => setMoodExpanded(!moodExpanded)}
-                className={`relative flex items-center gap-3 px-2.5 py-2 rounded-lg transition-colors w-full ${moodExpanded ? 'bg-zinc-100 dark:bg-zinc-800' : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'}`}
-              >
-                <div className="shrink-0 flex items-center justify-center w-[18px] relative">
-                  <MoodFaceIcon mood={todayMood || 'balanced'} size={18} className="text-zinc-600 dark:text-zinc-400" />
-                  {todayMood && (
-                    <div className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-[var(--accent-hex)]" />
-                  )}
-                </div>
-                <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-                  Mood
-                </span>
-              </button>
-
-              <AnimatePresence>
-                {moodExpanded && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                    className="overflow-hidden"
-                  >
-                    <div className={`py-2 ${sidebarOpen ? 'grid grid-cols-4 gap-1 px-1' : 'flex flex-col items-center gap-2'}`}>
-                      {MOOD_KEYS.map((key) => (
-                        <button
-                          key={key}
-                          onClick={() => {
-                            onSetMood(key);
-                            setTimeout(() => setMoodExpanded(false), 400);
-                          }}
-                          title={MOOD_LABELS[key]}
-                          className={`flex flex-col items-center gap-1.5 rounded-lg py-1.5 transition-all ${
-                            todayMood === key
-                              ? 'text-[var(--accent-hex)]'
-                              : 'text-zinc-400 dark:text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800'
-                          }`}
-                        >
-                          <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all ${
-                            todayMood === key
-                              ? 'bg-[rgba(var(--accent),0.1)] ring-2 ring-[var(--accent-hex)]'
-                              : ''
-                          }`}>
-                            <MoodFaceIcon mood={key} size={18} />
-                          </div>
-                          {sidebarOpen && (
-                            <span className="text-[9px] font-medium leading-none">
-                              {MOOD_LABELS[key]}
-                            </span>
-                          )}
-                        </button>
-                      ))}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          )}
 
           {/* User actions */}
           <div className="border-t border-zinc-200 dark:border-zinc-800 mx-2 pt-2 flex flex-col gap-1">
@@ -538,7 +471,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
         </div>
       </header>
 
-      <main className="w-full max-w-7xl px-6 pt-4 md:pt-24 relative z-10">
+      <main className="w-full max-w-7xl px-6 pt-4 md:pt-10 relative z-10">
 
         {/* North Star Callout */}
         {northStar && (

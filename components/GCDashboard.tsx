@@ -6,7 +6,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CourseData } from './Library';
 import { SessionUser, getAvatarUrl } from './Auth';
-import { GraduationCap, LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, Trash2, AlertTriangle, CalendarDays } from 'lucide-react';
+import { GraduationCap, LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, Trash2, AlertTriangle, CalendarDays, Moon, Sun } from 'lucide-react';
 import { db } from '../firebase';
 import { collection, query, where, getDocs, doc, getDoc, deleteDoc, setDoc } from 'firebase/firestore';
 import { getSchoolName } from '../schoolData';
@@ -16,9 +16,10 @@ import { NorthStar } from '../types';
 import { GameState } from './journeySimulatorData';
 import {
   GCStudentFullData,
-  MoodDoc,
   JourneyResult,
+  MockResultEntry,
 } from './gc/gcTypes';
+import { DebriefEntry } from './StudyDebrief';
 import { GCOverview } from './gc/GCOverview';
 import { GCKeyEvents } from './gc/GCKeyEvents';
 import { GCStudentDetail } from './gc/GCStudentDetail';
@@ -30,6 +31,7 @@ interface GCDashboardProps {
   school: string;
   onLogout: () => void;
   allCourses: CourseData[];
+  gcName?: string;
 }
 
 // ─── Shimmer skeleton ────────────────────────────────────────────────────────
@@ -77,13 +79,22 @@ const LoadingSkeleton: React.FC = () => (
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
-export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allCourses }) => {
+export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allCourses, gcName }) => {
   const [studentData, setStudentData] = useState<GCStudentFullData[]>([]);
   const [studentNotes, setStudentNotes] = useState<Record<string, { notes: string; updatedAt: string }>>({});
   const [isLoading, setIsLoading] = useState(true);
   const [selectedStudentUid, setSelectedStudentUid] = useState<string | null>(null);
   const [activeNav, setActiveNav] = useState<string>('gc-overview');
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  // Restore dark mode preference for GC dashboard
+  useEffect(() => {
+    const saved = localStorage.getItem('nextstep-gc-dark');
+    if (saved === '1') {
+      document.documentElement.classList.add('dark');
+    }
+  }, []);
+
   const [deleteTarget, setDeleteTarget] = useState<SessionUser | null>(null);
   const [isDeleting, setIsDeleting] = useState(false);
   const [dismissedAlerts, setDismissedAlerts] = useState<Record<string, DismissedAlert>>({});
@@ -91,11 +102,8 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
   const handleDeleteStudent = async (user: SessionUser) => {
     setIsDeleting(true);
     try {
-      // Delete progress and moods FIRST (their rules reference the users doc)
-      await Promise.all([
-        deleteDoc(doc(db, 'progress', user.uid)).catch(() => {}),
-        deleteDoc(doc(db, 'moods', user.uid)).catch(() => {}),
-      ]);
+      // Delete progress FIRST (their rules reference the users doc)
+      await deleteDoc(doc(db, 'progress', user.uid)).catch(() => {});
       // Then delete the users doc last
       await deleteDoc(doc(db, 'users', user.uid));
       setStudentData(prev => prev.filter(s => s.user.uid !== user.uid));
@@ -151,6 +159,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
   }, [selectedStudentUid]);
 
   useEffect(() => {
+    let cancelled = false;
     const fetchData = async () => {
       setIsLoading(true);
       try {
@@ -164,16 +173,10 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
         const fullData: GCStudentFullData[] = await Promise.all(
           students.map(async (user) => {
             let progressDoc: Record<string, any> | null = null;
-            let moodDoc: MoodDoc | null = null;
 
             try {
               const progressSnap = await getDoc(doc(db, 'progress', user.uid));
               progressDoc = progressSnap.exists() ? progressSnap.data() : null;
-            } catch { /* Permission error */ }
-
-            try {
-              const moodSnap = await getDoc(doc(db, 'moods', user.uid));
-              moodDoc = moodSnap.exists() ? (moodSnap.data() as MoodDoc) : null;
             } catch { /* Permission error */ }
 
             const progress: UserProgress = {};
@@ -195,26 +198,39 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             const points = (progressDoc?.pointsData as PointsData) ?? null;
             const timetableCompletions = (progressDoc?.timetableCompletions as TimetableCompletions) ?? null;
 
+            // Cross-tool integration fields
+            const ffRaw = progressDoc?.futureFinder as { topPicks?: string[]; completedAt?: string } | undefined;
+            const futureFinder = ffRaw?.topPicks ? { topPicks: ffRaw.topPicks, completedAt: ffRaw.completedAt ?? '' } : null;
+
+            const wrMocks = (progressDoc?.warRoom as { mockResults?: MockResultEntry[] })?.mockResults ?? null;
+
+            const debriefArr = progressDoc?.studyDebriefs as DebriefEntry[] | undefined;
+            const recentDebriefs = debriefArr ? debriefArr.slice(-20) : null;
+
             return {
               user,
               progress,
               subjectProfile,
               northStar,
               journeyResult,
-              mood: moodDoc,
               streak,
               points,
               timetableCompletions,
+              futureFinder,
+              mockResults: wrMocks,
+              recentDebriefs,
             };
           })
         );
 
+        if (cancelled) return;
         setStudentData(fullData);
 
         // Fetch all GC notes for this school
         try {
           const notesCol = collection(db, 'gcNotes', school, 'students');
           const notesSnapshot = await getDocs(notesCol);
+          if (cancelled) return;
           const notes: Record<string, { notes: string; updatedAt: string }> = {};
           notesSnapshot.docs.forEach(d => {
             const data = d.data();
@@ -228,6 +244,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
         // Load dismissed alerts
         try {
           const settingsSnap = await getDoc(doc(db, 'gcSettings', school));
+          if (cancelled) return;
           if (settingsSnap.exists()) {
             setDismissedAlerts(settingsSnap.data().dismissedAlerts ?? {});
           }
@@ -235,10 +252,11 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       } catch (error) {
         console.error('Error fetching GC data:', error);
       }
-      setIsLoading(false);
+      if (!cancelled) setIsLoading(false);
     };
 
     fetchData();
+    return () => { cancelled = true; };
   }, [school]);
 
   const selectedStudent = selectedStudentUid
@@ -290,6 +308,24 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
 
         {/* Bottom section */}
         <div className="border-t border-zinc-200 dark:border-zinc-800 mx-2 pt-2 flex flex-col gap-1">
+          {/* Dark Mode Toggle */}
+          <button
+            onClick={() => {
+              const isDark = document.documentElement.classList.toggle('dark');
+              localStorage.setItem('nextstep-gc-dark', isDark ? '1' : '0');
+            }}
+            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+          >
+            <div className="shrink-0 flex items-center justify-center w-[18px]">
+              <Moon size={18} strokeWidth={1.5} className="text-zinc-400 dark:text-zinc-500 dark:hidden" />
+              <Sun size={18} strokeWidth={1.5} className="text-amber-400 hidden dark:block" />
+            </div>
+            <span className={`text-sm font-medium text-zinc-500 dark:text-zinc-400 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              <span className="dark:hidden">Dark Mode</span>
+              <span className="hidden dark:inline">Light Mode</span>
+            </span>
+          </button>
+
           {/* Log Out */}
           <button
             onClick={onLogout}
@@ -336,6 +372,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             onDeleteStudent={setDeleteTarget}
             alerts={alerts}
             onDismissAlert={handleDismissAlert}
+            gcName={gcName}
           />
         )}
       </main>
@@ -374,6 +411,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
                   setStudentNotes(prev => ({ ...prev, [uid]: { notes, updatedAt } }));
                 }}
                 alerts={getStudentAlerts(selectedStudent.user.uid)}
+                gcName={gcName}
               />
             </MotionDiv>
           </>
@@ -394,7 +432,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
               Are you sure you want to delete <span className="font-semibold text-zinc-900 dark:text-white">{deleteTarget.name}</span>?
             </p>
             <p className="text-xs text-zinc-400 dark:text-zinc-500 mb-6">
-              This will permanently remove all their progress, mood data, and profile. This action cannot be undone.
+              This will permanently remove all their progress and profile. This action cannot be undone.
             </p>
             <div className="flex gap-3">
               <button

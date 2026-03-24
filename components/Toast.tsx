@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
+import React, { createContext, useContext, useState, useCallback, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { WifiOff, AlertCircle, CheckCircle, X, Info } from 'lucide-react';
 
@@ -98,17 +98,37 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     });
   }, []);
 
+  const timerMapRef = useRef<Map<string, ReturnType<typeof setTimeout>>>(new Map());
+
   const dismissToast = useCallback((id: string) => {
+    const timer = timerMapRef.current.get(id);
+    if (timer) {
+      clearTimeout(timer);
+      timerMapRef.current.delete(id);
+    }
     setToasts(prev => prev.filter(t => t.id !== id));
   }, []);
 
-  // Auto-dismiss toasts
+  // Auto-dismiss toasts — only create a timer once per toast ID
   useEffect(() => {
-    if (toasts.length === 0) return;
-    const timers = toasts.map(toast =>
-      setTimeout(() => dismissToast(toast.id), toast.duration)
-    );
-    return () => timers.forEach(clearTimeout);
+    toasts.forEach(toast => {
+      if (!timerMapRef.current.has(toast.id)) {
+        const timer = setTimeout(() => {
+          timerMapRef.current.delete(toast.id);
+          dismissToast(toast.id);
+        }, toast.duration);
+        timerMapRef.current.set(toast.id, timer);
+      }
+    });
+
+    // Clean up stale entries for toasts that were removed externally
+    const currentIds = new Set(toasts.map(t => t.id));
+    timerMapRef.current.forEach((timer, id) => {
+      if (!currentIds.has(id)) {
+        clearTimeout(timer);
+        timerMapRef.current.delete(id);
+      }
+    });
   }, [toasts, dismissToast]);
 
   return (

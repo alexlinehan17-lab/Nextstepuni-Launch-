@@ -3,19 +3,19 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useToast } from './Toast';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Clock, Map, TrendingUp, Target, Plus, X, ChevronDown,
-  AlertTriangle, CheckCircle, Minus, Activity, BookOpen,
+  AlertTriangle, CheckCircle, Minus, Activity, BookOpen, Shield,
 } from 'lucide-react';
 import { db } from '../firebase';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { doc, getDoc } from 'firebase/firestore';
 import {
   type StudentSubjectProfile, type Grade, type TimetableCompletions,
   getPointsForGrade, getGradeIndex, getGradesForLevel,
-  HIGHER_GRADES, ORDINARY_GRADES,
+  HIGHER_GRADES, ORDINARY_GRADES, LC_SUBJECTS,
 } from './subjectData';
 import {
   computeSubjectPriorities, allocateSessions, computeWeeksUntilExam,
@@ -23,7 +23,13 @@ import {
 import { getSubjectColor, getSubjectStroke, SUBJECT_STROKE_COLORS, getDistinctSubjectHex } from '../studySessionData';
 import { getSubjectGuidance, type SubjectGuidance } from './subjectGuidance';
 import { getSyllabusTopics } from './syllabusTopics';
+import { getSyllabusForSubject, getQuadrant, QUADRANT_LABELS, computeEfficiency } from './syllabusData';
+import { type DebriefEntry } from './StudyDebrief';
 import { type StudySessionRecord } from '../studySessionData';
+import { type CAOCourse, hydrateCourses } from './futureFinderData';
+import { useTopicMastery } from '../hooks/useTopicMastery';
+import { useMockResults } from '../hooks/useMockResults';
+import { type TopicMasteryEntry, type UnifiedConfidence } from '../types';
 
 const MotionDiv = motion.div as any;
 const MotionButton = motion.button as any;
@@ -48,11 +54,6 @@ interface MockResult {
   timestamp: number;
 }
 
-interface WarRoomData {
-  topicMap: TopicMap;
-  mockResults: MockResult[];
-}
-
 interface WarRoomProps {
   uid: string;
   profile: StudentSubjectProfile;
@@ -64,6 +65,17 @@ interface WarRoomProps {
 function genId(): string {
   return Math.random().toString(36).substring(2, 10) + Date.now().toString(36);
 }
+
+// ── Design System Styles ────────────────────────────────────
+// Light: warm cream #FAF7F4, Dark: rgba(255,255,255,0.04)
+// We use a CSS custom property set on the root for dark mode toggling.
+// For inline hex colors, we apply light mode by default.
+const CARD_STYLE: React.CSSProperties = {
+  backgroundColor: '#FAF7F4',
+  border: '0.5px solid rgba(0,0,0,0.07)',
+  borderRadius: 12,
+};
+const CARD_CLASS = 'dark:!bg-[rgba(255,255,255,0.04)] dark:!border-[rgba(255,255,255,0.08)]';
 
 const CONFIDENCE_COLORS = {
   'solid': 'bg-emerald-500 dark:bg-emerald-600',
@@ -103,55 +115,87 @@ function gradeToPoints(grade: string | undefined | null): number {
   return 0;
 }
 
+function computeCurrentTotal(subjects: StudentSubjectProfile['subjects']): number {
+  const all = subjects.map(s => {
+    const isMaths = LC_SUBJECTS.find(lc => lc.name === s.subjectName)?.isMaths ?? false;
+    return getPointsForGrade(s.currentGrade as Grade, isMaths);
+  }).sort((a, b) => b - a);
+  return all.slice(0, 6).reduce((sum, p) => sum + p, 0);
+}
+
 // ── Main Component ─────────────────────────────────────────
 
 const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions }) => {
   const { showToast } = useToast();
   const [activePanel, setActivePanel] = useState(0);
-  const [warRoomData, setWarRoomData] = useState<WarRoomData>({ topicMap: {}, mockResults: [] });
   const [studySessions, setStudySessions] = useState<StudySessionRecord[]>([]);
+  const [debriefs, setDebriefs] = useState<DebriefEntry[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [targetCourse, setTargetCourse] = useState<CAOCourse | null>(null);
 
-  // Load data from Firestore
+  // Shared hooks for topic mastery and mock results
+  const topicMastery = useTopicMastery(uid);
+  const mockResultsHook = useMockResults(uid);
+
+  // Derive a TopicMap from unified mastery for legacy sub-components that still expect TopicMap
+  const derivedTopicMap: TopicMap = useMemo(() => {
+    const map: TopicMap = {};
+    for (const [subject, topics] of Object.entries(topicMastery.mastery)) {
+      map[subject] = Object.entries(topics).map(([name, entry]) => ({
+        id: `${subject}-${name}`,
+        name,
+        confidence: entry.confidence as TopicEntry['confidence'],
+        updatedAt: entry.updatedAt,
+      }));
+    }
+    return map;
+  }, [topicMastery.mastery]);
+
+  // Derive legacy MockResult[] from unified mock results for sub-components
+  const derivedMockResults: MockResult[] = useMemo(() => {
+    const results: MockResult[] = [];
+    for (const mock of mockResultsHook.mocks) {
+      for (const entry of mock.entries) {
+        results.push({
+          id: `${mock.id}-${entry.subjectName}`,
+          subject: entry.subjectName,
+          grade: entry.grade,
+          date: mock.date,
+          label: mock.label,
+          timestamp: mock.timestamp,
+        });
+      }
+    }
+    return results;
+  }, [mockResultsHook.mocks]);
+
+  // Load remaining data from Firestore (study sessions, debriefs, future finder)
   useEffect(() => {
     if (!uid) return;
-    (async () => {
+    let cancelled = false;
+    const load = async () => {
       try {
         const snap = await getDoc(doc(db, 'progress', uid));
+        if (cancelled) return;
         const data = snap.data() || {};
-        if (data.warRoom) {
-          setWarRoomData({
-            topicMap: data.warRoom.topicMap || {},
-            mockResults: data.warRoom.mockResults || [],
-          });
-        }
         if (data.studySessions) {
           setStudySessions(data.studySessions as StudySessionRecord[]);
+        }
+        if (data.studyDebriefs) {
+          setDebriefs(data.studyDebriefs as DebriefEntry[]);
+        }
+        // Load Future Finder top pick for target course banner
+        if (data.futureFinder?.topPicks) {
+          const hydrated = hydrateCourses(data.futureFinder.topPicks);
+          if (hydrated.length > 0) setTargetCourse(hydrated[0]);
         }
       } catch (e) {
         console.error('Failed to load War Room data:', e);
       }
-      setIsLoading(false);
-    })();
-  }, [uid]);
-
-  // Persist helpers
-  const saveTopicMap = useCallback((topicMap: TopicMap) => {
-    setWarRoomData(prev => {
-      const next = { ...prev, topicMap };
-      setDoc(doc(db, 'progress', uid), { warRoom: next }, { merge: true })
-        .catch(e => { console.error('Failed to save topic map:', e); showToast('Couldn\'t save — check your connection', 'error'); });
-      return next;
-    });
-  }, [uid]);
-
-  const saveMockResults = useCallback((mockResults: MockResult[]) => {
-    setWarRoomData(prev => {
-      const next = { ...prev, mockResults };
-      setDoc(doc(db, 'progress', uid), { warRoom: next }, { merge: true })
-        .catch(e => { console.error('Failed to save mock results:', e); showToast('Couldn\'t save — check your connection', 'error'); });
-      return next;
-    });
+      if (!cancelled) setIsLoading(false);
+    };
+    load();
+    return () => { cancelled = true; };
   }, [uid]);
 
   // Shared computations
@@ -207,9 +251,9 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
             <button
               key={tab.id}
               onClick={() => setActivePanel(tab.id)}
-              className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-lg text-xs font-bold transition-all ${
+              className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-lg text-xs font-medium transition-all ${
                 isActive
-                  ? 'bg-white dark:bg-zinc-900 text-zinc-800 dark:text-white shadow-sm'
+                  ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-sm'
                   : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
               }`}
             >
@@ -237,29 +281,31 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
               weeksUntilExam={weeksUntilExam}
               hoursStudiedMap={hoursStudiedMap}
               blockDuration={blockDuration}
-              mockResults={warRoomData.mockResults}
+              mockResults={derivedMockResults}
+              targetCourse={targetCourse}
+              currentPoints={computeCurrentTotal(subjects)}
             />
           )}
           {activePanel === 1 && (
             <CoveragePanel
               subjects={subjects}
-              topicMap={warRoomData.topicMap}
-              onUpdateTopicMap={saveTopicMap}
+              topicMastery={topicMastery}
+              debriefs={debriefs}
             />
           )}
           {activePanel === 2 && (
             <TrajectoryPanel
               subjects={subjects}
-              mockResults={warRoomData.mockResults}
-              onUpdateMockResults={saveMockResults}
+              mockResults={derivedMockResults}
+              mockResultsHook={mockResultsHook}
               daysUntilExam={daysUntilExam}
             />
           )}
           {activePanel === 3 && (
             <BriefingPanel
               subjects={subjects}
-              topicMap={warRoomData.topicMap}
-              mockResults={warRoomData.mockResults}
+              topicMap={derivedTopicMap}
+              mockResults={derivedMockResults}
               allocations={allocations}
               hoursStudiedMap={hoursStudiedMap}
               weeksUntilExam={weeksUntilExam}
@@ -284,9 +330,11 @@ interface CountdownPanelProps {
   hoursStudiedMap: Record<string, number>;
   blockDuration: number;
   mockResults: MockResult[];
+  targetCourse?: CAOCourse | null;
+  currentPoints?: number;
 }
 
-const CountdownPanel: React.FC<CountdownPanelProps> = ({ daysUntilExam, subjects, allocations, weeksUntilExam, hoursStudiedMap, blockDuration, mockResults }) => {
+const CountdownPanel: React.FC<CountdownPanelProps> = ({ daysUntilExam, subjects, allocations, weeksUntilExam, hoursStudiedMap, blockDuration, mockResults, targetCourse, currentPoints }) => {
   // Derive effective current grade from latest mock results (falls back to profile)
   const latestGradeMap = useMemo(() => {
     const map: Record<string, string> = {};
@@ -322,9 +370,10 @@ const CountdownPanel: React.FC<CountdownPanelProps> = ({ daysUntilExam, subjects
   return (
     <div className="space-y-6">
       {/* Hero countdown */}
-      <div className="text-center py-8 bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 rounded-2xl">
+      <div className={`text-center py-8 backdrop-blur-2xl ${CARD_CLASS}`} style={CARD_STYLE}>
         <motion.p
-          className="text-6xl font-bold text-zinc-800 dark:text-white tabular-nums"
+          className="text-6xl font-bold tabular-nums"
+          style={{ color: '#2A7D6F' }}
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
@@ -339,13 +388,35 @@ const CountdownPanel: React.FC<CountdownPanelProps> = ({ daysUntilExam, subjects
         </div>
       </div>
 
+      {/* Target Course banner (from Future Finder) */}
+      {targetCourse && currentPoints !== undefined && (
+        <div className={`px-4 py-3.5 ${CARD_CLASS}`} style={CARD_STYLE}>
+          <div className="flex items-center justify-between">
+            <div className="min-w-0">
+              <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-0.5">Target Course</p>
+              <p className="text-sm font-semibold truncate" style={{ color: '#2A7D6F' }}>{targetCourse.title}</p>
+              <p className="text-[10px] text-zinc-500 dark:text-zinc-400">{targetCourse.institution} &middot; {targetCourse.typicalPoints} pts required</p>
+            </div>
+            <div className="text-right shrink-0 ml-3">
+              {currentPoints >= targetCourse.typicalPoints ? (
+                <span className="text-xs font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: 'rgba(107,143,113,0.12)', color: '#6B8F71' }}>On target</span>
+              ) : (
+                <span className="text-xs font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: '#FDF3E7', color: '#8B5E2A' }}>
+                  {targetCourse.typicalPoints - currentPoints}pt gap
+                </span>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Per-subject status — time budget + grade status */}
       <div className="space-y-3">
         <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Subject Status</p>
         {[...subjectBudgets].sort((a, b) => b.gap - a.gap).map(s => {
           const color = getSubjectColor(s.subjectName);
           return (
-            <div key={s.subjectName} className="px-4 py-3 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-white/[0.06]">
+            <div key={s.subjectName} className={`px-4 py-3 ${CARD_CLASS}`} style={CARD_STYLE}>
               <div className="flex items-center justify-between mb-1.5">
                 <div className="flex items-center gap-2">
                   <div className={`w-2.5 h-2.5 rounded-full ${color.dot} shrink-0`} />
@@ -354,16 +425,17 @@ const CountdownPanel: React.FC<CountdownPanelProps> = ({ daysUntilExam, subjects
                 <div className="flex items-center gap-2">
                   <span className="text-[10px] text-zinc-400 dark:text-zinc-500">{s.latestGrade} → {s.targetGrade}</span>
                   {s.gap <= 0 ? (
-                    <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 px-1.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-900/30">On target</span>
+                    <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full" style={{ backgroundColor: 'rgba(107,143,113,0.12)', color: '#6B8F71' }}>On target</span>
                   ) : (
-                    <span className="text-[10px] font-bold text-rose-600 dark:text-rose-400 px-1.5 py-0.5 rounded-full bg-rose-100 dark:bg-rose-900/30">{s.gap}pt gap</span>
+                    <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full" style={{ backgroundColor: '#FDF3E7', color: '#8B5E2A' }}>{s.gap}pt gap</span>
                   )}
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <div className="flex-1 h-1.5 bg-zinc-200 dark:bg-zinc-700 rounded-full overflow-hidden">
+                <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: '#EDEAE6' }}>
                   <motion.div
-                    className={`h-full rounded-full ${color.dot}`}
+                    className="h-full rounded-full"
+                    style={{ backgroundColor: '#2A7D6F' }}
                     initial={{ width: 0 }}
                     animate={{ width: `${s.pct}%` }}
                     transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
@@ -386,66 +458,111 @@ const CountdownPanel: React.FC<CountdownPanelProps> = ({ daysUntilExam, subjects
 
 interface CoveragePanelProps {
   subjects: StudentSubjectProfile['subjects'];
-  topicMap: TopicMap;
-  onUpdateTopicMap: (topicMap: TopicMap) => void;
+  topicMastery: ReturnType<typeof useTopicMastery>;
+  debriefs?: DebriefEntry[];
 }
 
-const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMap, onUpdateTopicMap }) => {
+const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, debriefs }) => {
   const [selectedSubject, setSelectedSubject] = useState(subjects[0]?.subjectName ?? '');
   const [newTopicName, setNewTopicName] = useState('');
 
-  const topics = topicMap[selectedSubject] || [];
+  // Auto-import syllabus topics when subject changes
+  useEffect(() => {
+    if (selectedSubject) {
+      topicMastery.importSyllabusTopics(selectedSubject);
+    }
+  }, [selectedSubject]);
+
+  // Derive TopicEntry[] from the unified mastery for the selected subject
+  const topics: TopicEntry[] = useMemo(() => {
+    const subjectTopics = topicMastery.getSubjectTopics(selectedSubject);
+    return Object.entries(subjectTopics).map(([name, entry]) => ({
+      id: `${selectedSubject}-${name}`,
+      name,
+      confidence: entry.confidence as TopicEntry['confidence'],
+      updatedAt: entry.updatedAt,
+    }));
+  }, [topicMastery, selectedSubject]);
 
   const addTopic = () => {
     const trimmed = newTopicName.trim();
     if (!trimmed || trimmed.length < 2) return;
-    const entry: TopicEntry = {
-      id: genId(),
-      name: trimmed,
-      confidence: 'not-started',
-      updatedAt: Date.now(),
-    };
-    const updated = { ...topicMap, [selectedSubject]: [...topics, entry] };
-    onUpdateTopicMap(updated);
+    topicMastery.setTopicConfidence(selectedSubject, trimmed, 'not-started', 'manual');
     setNewTopicName('');
   };
 
-  const cycleConfidence = (topicId: string) => {
-    const updated = {
-      ...topicMap,
-      [selectedSubject]: topics.map(t =>
-        t.id === topicId
-          ? { ...t, confidence: CONFIDENCE_CYCLE[t.confidence], updatedAt: Date.now() }
-          : t
-      ),
-    };
-    onUpdateTopicMap(updated);
+  const cycleConfidence = (topicName: string) => {
+    const current = topicMastery.getTopicConfidence(selectedSubject, topicName);
+    const next = CONFIDENCE_CYCLE[current] as UnifiedConfidence;
+    topicMastery.setTopicConfidence(selectedSubject, topicName, next, 'manual');
   };
 
-  const removeTopic = (topicId: string) => {
-    const updated = {
-      ...topicMap,
-      [selectedSubject]: topics.filter(t => t.id !== topicId),
-    };
-    onUpdateTopicMap(updated);
+  const removeTopic = (_topicName: string) => {
+    // The unified hook doesn't support removal, so set to not-started as equivalent
+    // (topics from syllabus should stay; this is a no-op effectively)
+    topicMastery.setTopicConfidence(selectedSubject, _topicName, 'not-started', 'manual');
   };
 
-  // Syllabus suggestions
+  // Syllabus suggestions (enriched with SXR data)
   const syllabusTopics = getSyllabusTopics(selectedSubject);
+  const syllabusData = getSyllabusForSubject(selectedSubject);
   const existingNames = new Set(topics.map(t => t.name.toLowerCase()));
   const unaddedSyllabus = syllabusTopics.filter(t => !existingNames.has(t.toLowerCase()));
 
-  const addSyllabusTopics = (topicNames: string[]) => {
-    const now = Date.now();
-    const entries: TopicEntry[] = topicNames.map(name => ({
-      id: genId(),
-      name,
-      confidence: 'not-started' as const,
-      updatedAt: now,
-    }));
-    const updated = { ...topicMap, [selectedSubject]: [...topics, ...entries] };
-    onUpdateTopicMap(updated);
+  // Sort unadded syllabus by quadrant priority
+  const QUADRANT_ORDER: Record<string, number> = { 'start-here': 0, 'high-value': 1, 'worth-knowing': 2, 'only-if-time': 3 };
+  const sortedUnaddedSyllabus = useMemo(() => {
+    if (!syllabusData) return unaddedSyllabus;
+    return [...unaddedSyllabus].sort((a, b) => {
+      const topicA = syllabusData.topics.find(t => t.name === a);
+      const topicB = syllabusData.topics.find(t => t.name === b);
+      if (!topicA || !topicB) return 0;
+      return (QUADRANT_ORDER[getQuadrant(topicA)] ?? 3) - (QUADRANT_ORDER[getQuadrant(topicB)] ?? 3);
+    });
+  }, [unaddedSyllabus, syllabusData]);
+
+  // Debrief-seeded topics: unique hardestTopic entries for this subject not already in topicMap
+  const debriefTopics = useMemo(() => {
+    if (!debriefs || debriefs.length === 0) return [];
+    const seen = new Set<string>();
+    const result: string[] = [];
+    for (const d of debriefs) {
+      if (d.subject !== selectedSubject) continue;
+      if (!d.hardestTopic || d.hardestTopic === 'Not specified') continue;
+      const key = d.hardestTopic.toLowerCase();
+      if (existingNames.has(key) || seen.has(key)) continue;
+      seen.add(key);
+      result.push(d.hardestTopic);
+    }
+    return result;
+  }, [debriefs, selectedSubject, existingNames]);
+
+  const addDebriefTopics = (topicNames: string[]) => {
+    for (const name of topicNames) {
+      topicMastery.setTopicConfidence(selectedSubject, name, 'shaky', 'debrief');
+    }
   };
+
+  const addSyllabusTopics = (topicNames: string[]) => {
+    for (const name of topicNames) {
+      topicMastery.setTopicConfidence(selectedSubject, name, 'not-started', 'import');
+    }
+  };
+
+  // Build a derived topicMap for all subjects (for stats and heatmap)
+  const topicMap: TopicMap = useMemo(() => {
+    const map: TopicMap = {};
+    for (const s of subjects) {
+      const subjectTopics = topicMastery.getSubjectTopics(s.subjectName);
+      map[s.subjectName] = Object.entries(subjectTopics).map(([name, entry]) => ({
+        id: `${s.subjectName}-${name}`,
+        name,
+        confidence: entry.confidence as TopicEntry['confidence'],
+        updatedAt: entry.updatedAt,
+      }));
+    }
+    return map;
+  }, [subjects, topicMastery]);
 
   // Coverage stats for all subjects
   const allSubjectStats = useMemo(() => {
@@ -504,7 +621,8 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMap, onUpd
         <button
           onClick={addTopic}
           disabled={newTopicName.trim().length < 2}
-          className="px-4 py-2.5 rounded-xl bg-[var(--accent-hex)] text-white text-sm font-bold disabled:opacity-40 hover:shadow-md active:scale-[0.97] transition-all"
+          className="px-4 py-2.5 text-white text-sm font-bold disabled:opacity-40 hover:shadow-md active:scale-[0.97] transition-all"
+          style={{ backgroundColor: '#2A7D6F', borderRadius: 12 }}
         >
           <Plus size={16} />
         </button>
@@ -525,7 +643,7 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMap, onUpd
             <span className="w-2.5 h-2.5 rounded-full bg-zinc-300 dark:bg-zinc-600" />
             <span className="text-zinc-500 dark:text-zinc-400">{currentStats.notStarted} not started</span>
           </span>
-          <span className="ml-auto font-bold text-zinc-600 dark:text-zinc-300">{currentStats.pct}% covered</span>
+          <span className="ml-auto font-bold" style={{ color: '#2A7D6F' }}>{currentStats.pct}% covered</span>
         </div>
       )}
 
@@ -536,8 +654,9 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMap, onUpd
             {topics.map(topic => (
               <div
                 key={topic.id}
-                className="group relative p-3 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-white/[0.06] cursor-pointer hover:shadow-sm transition-all"
-                onClick={() => cycleConfidence(topic.id)}
+                className={`group relative p-3 cursor-pointer hover:shadow-sm transition-all ${CARD_CLASS}`}
+                style={CARD_STYLE}
+                onClick={() => cycleConfidence(topic.name)}
               >
                 <div className="flex items-start gap-2">
                   <div className={`w-3 h-3 rounded-full mt-0.5 shrink-0 ${CONFIDENCE_COLORS[topic.confidence]}`} />
@@ -549,7 +668,7 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMap, onUpd
                   </div>
                 </div>
                 <button
-                  onClick={(e) => { e.stopPropagation(); removeTopic(topic.id); }}
+                  onClick={(e) => { e.stopPropagation(); removeTopic(topic.name); }}
                   className="absolute top-1 right-1 w-5 h-5 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 text-zinc-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-900/30 transition-all"
                 >
                   <X size={10} />
@@ -557,53 +676,133 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMap, onUpd
               </div>
             ))}
           </div>
+          {/* Debrief-seeded topic suggestions */}
+          {debriefTopics.length > 0 && (
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-amber-500 dark:text-amber-400">From Your Debriefs</p>
+                <button
+                  onClick={() => addDebriefTopics(debriefTopics)}
+                  className="text-[10px] font-bold text-amber-600 dark:text-amber-400 hover:underline"
+                >
+                  Add all ({debriefTopics.length})
+                </button>
+              </div>
+              <div className="flex flex-wrap gap-1.5">
+                {debriefTopics.map(name => (
+                  <button
+                    key={name}
+                    onClick={() => addDebriefTopics([name])}
+                    className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-amber-50 dark:bg-amber-900/15 border border-dashed border-amber-300 dark:border-amber-700/50 hover:border-amber-500 text-[10px] font-medium text-amber-700 dark:text-amber-400 transition-colors"
+                  >
+                    <AlertTriangle size={9} className="shrink-0" />
+                    {name}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
           {/* Show remaining syllabus topics as suggestions */}
-          {unaddedSyllabus.length > 0 && (
+          {sortedUnaddedSyllabus.length > 0 && (
             <button
-              onClick={() => addSyllabusTopics(unaddedSyllabus)}
+              onClick={() => addSyllabusTopics(sortedUnaddedSyllabus)}
               className="w-full flex items-center justify-center gap-2 py-2 rounded-lg border border-dashed border-zinc-300 dark:border-zinc-700 text-[10px] font-semibold text-zinc-400 dark:text-zinc-500 hover:border-[var(--accent-hex)] hover:text-[var(--accent-hex)] transition-colors"
             >
               <Plus size={10} />
-              Add {unaddedSyllabus.length} remaining syllabus topic{unaddedSyllabus.length > 1 ? 's' : ''}
+              Add {sortedUnaddedSyllabus.length} remaining syllabus topic{sortedUnaddedSyllabus.length > 1 ? 's' : ''}
             </button>
           )}
         </>
-      ) : unaddedSyllabus.length > 0 ? (
-        /* Syllabus topic suggestions when no topics exist */
-        <div className="space-y-3">
-          <div className="flex items-center justify-between">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Syllabus Topics</p>
-            <button
-              onClick={() => addSyllabusTopics(unaddedSyllabus)}
-              className="text-[10px] font-bold text-[var(--accent-hex)] hover:underline"
-            >
-              Add all ({unaddedSyllabus.length})
-            </button>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-            {unaddedSyllabus.map(name => (
-              <button
-                key={name}
-                onClick={() => addSyllabusTopics([name])}
-                className="flex items-center gap-2 p-3 rounded-xl bg-white dark:bg-zinc-900 border border-dashed border-zinc-300 dark:border-zinc-700 hover:border-[var(--accent-hex)] hover:bg-[rgba(var(--accent),0.03)] transition-all text-left"
-              >
-                <Plus size={12} className="text-zinc-400 shrink-0" />
-                <span className="text-xs font-medium text-zinc-600 dark:text-zinc-400">{name}</span>
-              </button>
-            ))}
-          </div>
+      ) : sortedUnaddedSyllabus.length > 0 || debriefTopics.length > 0 ? (
+        /* Topic suggestions when no topics exist */
+        <div className="space-y-4">
+          {/* Debrief topics */}
+          {debriefTopics.length > 0 && (
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-amber-500 dark:text-amber-400">From Your Debriefs</p>
+                <button
+                  onClick={() => addDebriefTopics(debriefTopics)}
+                  className="text-[10px] font-bold text-amber-600 dark:text-amber-400 hover:underline"
+                >
+                  Add all ({debriefTopics.length})
+                </button>
+              </div>
+              <div className="flex flex-wrap gap-1.5">
+                {debriefTopics.map(name => (
+                  <button
+                    key={name}
+                    onClick={() => addDebriefTopics([name])}
+                    className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-amber-50 dark:bg-amber-900/15 border border-dashed border-amber-300 dark:border-amber-700/50 hover:border-amber-500 text-[10px] font-medium text-amber-700 dark:text-amber-400 transition-colors"
+                  >
+                    <AlertTriangle size={9} className="shrink-0" />
+                    {name}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+          {/* Syllabus topics with quadrant info */}
+          {sortedUnaddedSyllabus.length > 0 && (
+            <div className="space-y-3">
+              <div className="flex items-center justify-between">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Syllabus Topics</p>
+                <button
+                  onClick={() => addSyllabusTopics(sortedUnaddedSyllabus)}
+                  className="text-[10px] font-bold text-[var(--accent-hex)] hover:underline"
+                >
+                  Add all ({sortedUnaddedSyllabus.length})
+                </button>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {sortedUnaddedSyllabus.map(name => {
+                  const sxrTopic = syllabusData?.topics.find(t => t.name === name);
+                  const quadrant = sxrTopic ? getQuadrant(sxrTopic) : null;
+                  const qStyle = quadrant ? QUADRANT_LABELS[quadrant] : null;
+                  return (
+                    <button
+                      key={name}
+                      onClick={() => addSyllabusTopics([name])}
+                      className="flex items-start gap-2 p-3 rounded-xl bg-white dark:bg-zinc-900 border border-dashed border-zinc-300 dark:border-zinc-700 hover:border-[var(--accent-hex)] hover:bg-[rgba(var(--accent),0.03)] transition-all text-left"
+                    >
+                      <Plus size={12} className="text-zinc-400 shrink-0 mt-0.5" />
+                      <div className="flex-1 min-w-0">
+                        <span className="text-xs font-medium text-zinc-600 dark:text-zinc-400">{name}</span>
+                        {sxrTopic && (
+                          <div className="flex items-center gap-2 mt-1">
+                            {qStyle && (
+                              <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded-full ${qStyle.bg} ${qStyle.color}`}>
+                                {qStyle.label}
+                              </span>
+                            )}
+                            <span className="text-[9px] text-zinc-400 dark:text-zinc-500">
+                              ~{sxrTopic.markWeight}% · {sxrTopic.examFrequency}/10 yrs
+                            </span>
+                          </div>
+                        )}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </div>
       ) : (
-        <div className="text-center py-10 text-zinc-400 dark:text-zinc-500">
-          <Map size={32} className="mx-auto mb-3 opacity-40" />
-          <p className="text-sm font-medium">No topics yet for {selectedSubject}</p>
-          <p className="text-xs mt-1">Add topics you're studying and rate your confidence</p>
+        <div className="text-center py-8 space-y-3">
+          <div className="w-12 h-12 mx-auto rounded-2xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center">
+            <Shield size={24} className="text-amber-500" />
+          </div>
+          <p className="text-sm font-bold text-zinc-700 dark:text-zinc-300">No topics mapped yet</p>
+          <p className="text-xs text-zinc-500 dark:text-zinc-400 max-w-xs mx-auto">
+            Topics auto-import from Syllabus X-Ray when available. You can also add topics manually below.
+          </p>
         </div>
       )}
 
       {/* Coverage heatmap overview (all subjects) */}
       {allSubjectStats.some(s => s.total > 0) && (
-        <div className="bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 rounded-xl p-4 space-y-3">
+        <div className={`p-4 space-y-3 ${CARD_CLASS}`} style={CARD_STYLE}>
           <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">All Subjects Overview</p>
           {allSubjectStats.filter(s => s.total > 0).map(s => {
             const color = getSubjectColor(s.subjectName);
@@ -614,7 +813,7 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMap, onUpd
                     <span className={`w-2 h-2 rounded-full ${color.dot}`} />
                     <span className="text-xs font-semibold text-zinc-600 dark:text-zinc-400">{s.subjectName}</span>
                   </div>
-                  <span className="text-[10px] font-bold text-zinc-500 dark:text-zinc-400">{s.pct}%</span>
+                  <span className="text-[10px] font-bold" style={{ color: '#2A7D6F' }}>{s.pct}%</span>
                 </div>
                 {/* Mini heatmap row */}
                 <div className="flex gap-0.5">
@@ -640,7 +839,7 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMap, onUpd
 interface TrajectoryPanelProps {
   subjects: StudentSubjectProfile['subjects'];
   mockResults: MockResult[];
-  onUpdateMockResults: (results: MockResult[]) => void;
+  mockResultsHook: ReturnType<typeof useMockResults>;
   daysUntilExam: number;
 }
 
@@ -653,7 +852,7 @@ interface MockFeedback {
   totalPtsDiff: number;
 }
 
-const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults, onUpdateMockResults, daysUntilExam }) => {
+const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults, mockResultsHook, daysUntilExam }) => {
   const [showAddForm, setShowAddForm] = useState<false | 'single' | 'full'>(false);
   const [formSubject, setFormSubject] = useState(subjects[0]?.subjectName ?? '');
   const [formGrade, setFormGrade] = useState('');
@@ -680,15 +879,13 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
 
   const addResult = () => {
     if (!formSubject || !formGrade || !formDate) return;
-    const result: MockResult = {
-      id: genId(),
-      subject: formSubject,
-      grade: formGrade,
+    const subjectData = subjects.find(s => s.subjectName === formSubject);
+    mockResultsHook.addMockResult({
+      label: formLabel.trim() || 'Single Result',
       date: formDate,
-      label: formLabel.trim() || undefined,
-      timestamp: Date.now(),
-    };
-    onUpdateMockResults([...mockResults, result]);
+      entries: [{ subjectName: formSubject, grade: formGrade, level: subjectData?.level || 'Higher' }],
+      totalPoints: gradeToPoints(formGrade),
+    });
     setShowAddForm(false);
     setFormGrade('');
     setFormLabel('');
@@ -697,44 +894,56 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
   const addFullMock = () => {
     if (!fullMockDate) return;
     const label = fullMockLabel.trim() || 'Mock Exam';
-    const now = Date.now();
-    const newResults: MockResult[] = subjects.map(s => ({
-      id: genId(),
-      subject: s.subjectName,
+
+    // Build entries for unified mock
+    const entries = subjects.map(s => ({
+      subjectName: s.subjectName,
       grade: fullMockGrades[s.subjectName] || s.currentGrade,
-      date: fullMockDate,
-      label,
-      timestamp: now,
+      level: s.level,
     }));
 
-    // Compute feedback vs previous results
+    // Compute feedback vs previous results (using derived mockResults for comparison)
     const improved: MockFeedback['improved'] = [];
     const declined: MockFeedback['declined'] = [];
     const unchanged: string[] = [];
-    for (const nr of newResults) {
+    for (const entry of entries) {
       const prev = mockResults
-        .filter(r => r.subject === nr.subject && r.grade && r.date)
+        .filter(r => r.subject === entry.subjectName && r.grade && r.date)
         .sort((a, b) => (a.date ?? '').localeCompare(b.date ?? ''));
       const prevResult = prev[prev.length - 1];
-      if (!prevResult) continue; // first mock for this subject — skip
+      if (!prevResult) continue;
       const prevPts = gradeToPoints(prevResult.grade);
-      const newPts = gradeToPoints(nr.grade);
+      const newPts = gradeToPoints(entry.grade);
       const diff = newPts - prevPts;
-      if (diff > 0) improved.push({ subject: nr.subject, from: prevResult.grade, to: nr.grade, ptsDiff: diff });
-      else if (diff < 0) declined.push({ subject: nr.subject, from: prevResult.grade, to: nr.grade, ptsDiff: diff });
-      else unchanged.push(nr.subject);
+      if (diff > 0) improved.push({ subject: entry.subjectName, from: prevResult.grade, to: entry.grade, ptsDiff: diff });
+      else if (diff < 0) declined.push({ subject: entry.subjectName, from: prevResult.grade, to: entry.grade, ptsDiff: diff });
+      else unchanged.push(entry.subjectName);
     }
     const totalPtsDiff = improved.reduce((s, x) => s + x.ptsDiff, 0) + declined.reduce((s, x) => s + x.ptsDiff, 0);
     if (improved.length > 0 || declined.length > 0 || unchanged.length > 0) {
       setMockFeedback({ improved, declined, unchanged, totalPtsDiff });
     }
 
-    onUpdateMockResults([...mockResults, ...newResults]);
+    // Compute total points (best 6)
+    const scored = entries.map(e => {
+      const isMaths = LC_SUBJECTS.find(lc => lc.name === e.subjectName)?.isMaths ?? false;
+      return getPointsForGrade(e.grade as Grade, isMaths);
+    }).sort((a, b) => b - a);
+    const totalPoints = scored.slice(0, 6).reduce((sum, p) => sum + p, 0);
+
+    mockResultsHook.addMockResult({ label, date: fullMockDate, entries, totalPoints });
     setShowAddForm(false);
   };
 
-  const removeResult = (id: string) => {
-    onUpdateMockResults(mockResults.filter(r => r.id !== id));
+  const removeResult = (derivedId: string) => {
+    // Derived IDs are formatted as `${mock.id}-${subjectName}`.
+    // Find the parent unified mock by checking if derivedId starts with mock.id.
+    for (const mock of mockResultsHook.mocks) {
+      if (derivedId.startsWith(mock.id + '-')) {
+        mockResultsHook.removeMockResult(mock.id);
+        return;
+      }
+    }
   };
 
   // Group results by subject
@@ -767,10 +976,10 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
             </button>
           ) : (
             <>
-              <button onClick={initFullMockForm} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[rgba(var(--accent),0.08)] text-[var(--accent-hex)] text-xs font-bold hover:bg-[rgba(var(--accent),0.15)] transition-colors">
+              <button onClick={initFullMockForm} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-white text-xs font-bold hover:shadow-md transition-colors" style={{ backgroundColor: '#2A7D6F' }}>
                 <Plus size={12} /> Full Mock
               </button>
-              <button onClick={() => setShowAddForm('single')} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 text-xs font-bold hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors">
+              <button onClick={() => setShowAddForm('single')} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-zinc-600 dark:text-zinc-400 text-xs font-bold hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
                 <Plus size={12} /> Single
               </button>
             </>
@@ -787,14 +996,14 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
             exit={{ height: 0, opacity: 0 }}
             className="overflow-hidden"
           >
-            <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-4 space-y-3">
+            <div className={`p-4 space-y-3 ${CARD_CLASS}`} style={CARD_STYLE}>
               <p className="text-xs font-bold text-zinc-600 dark:text-zinc-300">Log Full Mock — all subjects at once</p>
               <div className="grid grid-cols-2 gap-3">
                 <div>
                   <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Label</label>
                   <div className="flex flex-wrap gap-1.5 mt-1 mb-1">
                     {MOCK_PRESETS.map(p => (
-                      <button key={p} onClick={() => setFullMockLabel(p)} className={`px-2 py-1 rounded-md text-[10px] font-semibold transition-colors ${fullMockLabel === p ? 'bg-[var(--accent-hex)] text-white' : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 hover:bg-zinc-200 dark:hover:bg-zinc-700'}`}>
+                      <button key={p} onClick={() => setFullMockLabel(p)} className={`px-2 py-1 rounded-md text-[10px] font-semibold transition-colors ${fullMockLabel === p ? 'text-white' : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 hover:bg-zinc-200 dark:hover:bg-zinc-700'}`} style={fullMockLabel === p ? { backgroundColor: '#2A7D6F' } : undefined}>
                         {p}
                       </button>
                     ))}
@@ -825,7 +1034,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
                   );
                 })}
               </div>
-              <button onClick={addFullMock} className="w-full py-2.5 rounded-xl text-sm font-bold bg-[var(--accent-hex)] text-white hover:shadow-md active:scale-[0.98] transition-all">
+              <button onClick={addFullMock} className="w-full py-2.5 text-sm font-bold text-white hover:shadow-md active:scale-[0.98] transition-all" style={{ backgroundColor: '#2A7D6F', borderRadius: 12 }}>
                 Save Full Mock
               </button>
             </div>
@@ -838,7 +1047,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
             exit={{ height: 0, opacity: 0 }}
             className="overflow-hidden"
           >
-            <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-4 space-y-3">
+            <div className={`p-4 space-y-3 ${CARD_CLASS}`} style={CARD_STYLE}>
               <div className="grid grid-cols-2 gap-3">
                 <div>
                   <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Subject</label>
@@ -891,7 +1100,8 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
               <button
                 onClick={addResult}
                 disabled={!formGrade}
-                className="w-full py-2.5 rounded-xl text-sm font-bold bg-[var(--accent-hex)] text-white disabled:opacity-40 hover:shadow-md active:scale-[0.98] transition-all"
+                className="w-full py-2.5 text-sm font-bold text-white disabled:opacity-40 hover:shadow-md active:scale-[0.98] transition-all"
+                style={{ backgroundColor: '#2A7D6F', borderRadius: 12 }}
               >
                 Save Result
               </button>
@@ -910,13 +1120,13 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
-            <div className={`p-4 rounded-xl border ${
-              mockFeedback.totalPtsDiff > 0
-                ? 'bg-emerald-50 dark:bg-emerald-900/10 border-emerald-200 dark:border-emerald-800/30'
-                : mockFeedback.totalPtsDiff < 0
-                  ? 'bg-rose-50 dark:bg-rose-900/10 border-rose-200 dark:border-rose-800/30'
-                  : 'bg-zinc-50 dark:bg-zinc-800/50 border-zinc-200 dark:border-zinc-700'
-            }`}>
+            <div
+              className={`p-4 ${CARD_CLASS}`}
+              style={{
+                ...CARD_STYLE,
+                backgroundColor: mockFeedback.totalPtsDiff > 0 ? 'rgba(107,143,113,0.08)' : mockFeedback.totalPtsDiff < 0 ? 'rgba(42,125,111,0.06)' : '#FAF7F4',
+              }}
+            >
               <div className="flex items-center justify-between mb-3">
                 <p className="text-xs font-bold text-zinc-700 dark:text-zinc-300">
                   {mockFeedback.totalPtsDiff > 0 ? 'Progress since last mock' : mockFeedback.totalPtsDiff < 0 ? 'Changes since last mock' : 'Compared to last mock'}
@@ -927,22 +1137,22 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
               </div>
               {mockFeedback.improved.length > 0 && (
                 <div className="mb-2">
-                  <p className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 mb-1">Improved</p>
+                  <p className="text-[10px] font-bold mb-1" style={{ color: '#6B8F71' }}>Improved</p>
                   {mockFeedback.improved.map(s => (
                     <p key={s.subject} className="text-xs text-zinc-600 dark:text-zinc-400 flex items-center gap-1.5">
-                      <TrendingUp size={10} className="text-emerald-500" />
-                      {s.subject}: {s.from} → {s.to} <span className="font-bold text-emerald-600 dark:text-emerald-400">(+{s.ptsDiff}pts)</span>
+                      <TrendingUp size={10} style={{ color: '#6B8F71' }} />
+                      {s.subject}: {s.from} → {s.to} <span className="font-bold" style={{ color: '#6B8F71' }}>(+{s.ptsDiff}pts)</span>
                     </p>
                   ))}
                 </div>
               )}
               {mockFeedback.declined.length > 0 && (
                 <div className="mb-2">
-                  <p className="text-[10px] font-bold text-rose-600 dark:text-rose-400 mb-1">Needs attention</p>
+                  <p className="text-[10px] font-bold mb-1" style={{ color: '#B85C4A' }}>Needs attention</p>
                   {mockFeedback.declined.map(s => (
                     <p key={s.subject} className="text-xs text-zinc-600 dark:text-zinc-400 flex items-center gap-1.5">
-                      <AlertTriangle size={10} className="text-rose-500" />
-                      {s.subject}: {s.from} → {s.to} <span className="font-bold text-rose-600 dark:text-rose-400">({s.ptsDiff}pts)</span>
+                      <AlertTriangle size={10} style={{ color: '#B85C4A' }} />
+                      {s.subject}: {s.from} → {s.to} <span className="font-bold" style={{ color: '#B85C4A' }}>({s.ptsDiff}pts)</span>
                     </p>
                   ))}
                 </div>
@@ -954,7 +1164,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
               )}
               {mockFeedback.totalPtsDiff !== 0 && (
                 <div className="mt-2 pt-2 border-t border-zinc-200/50 dark:border-white/[0.06]">
-                  <p className={`text-xs font-bold ${mockFeedback.totalPtsDiff > 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
+                  <p className="text-xs font-bold" style={{ color: mockFeedback.totalPtsDiff > 0 ? '#6B8F71' : '#B85C4A' }}>
                     Net change: {mockFeedback.totalPtsDiff > 0 ? '+' : ''}{mockFeedback.totalPtsDiff} CAO points
                   </p>
                 </div>
@@ -966,7 +1176,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
 
       {/* SVG Chart */}
       {chartSubjects.length > 0 && (
-        <div className="bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 rounded-xl p-4">
+        <div className={`p-4 ${CARD_CLASS}`} style={CARD_STYLE}>
           <TrajectoryChart
             subjects={subjects}
             resultsBySubject={resultsBySubject}
@@ -985,13 +1195,13 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
           const gap = currentPts !== null ? targetPts - currentPts : null;
 
           return (
-            <div key={s.subjectName} className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-white/[0.06]">
+            <div key={s.subjectName} className={`flex items-center gap-3 px-4 py-3 ${CARD_CLASS}`} style={CARD_STYLE}>
               <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: hexColor }} />
               <div className="flex-1 min-w-0">
                 <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">{s.subjectName}</span>
                 {latest ? (
                   <span className="text-xs text-zinc-400 dark:text-zinc-500 ml-2">
-                    Latest: {latest.grade} ({currentPts} pts)
+                    Latest: {latest.grade} (<span style={{ color: '#2A7D6F' }}>{currentPts} pts</span>)
                     {latest.label && ` — ${latest.label}`}
                   </span>
                 ) : (
@@ -1001,7 +1211,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
               <div className="text-right shrink-0">
                 <span className="text-[10px] text-zinc-400 dark:text-zinc-500">Target: {s.targetGrade}</span>
                 {gap !== null && (
-                  <p className={`text-xs font-bold ${gap <= 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
+                  <p className="text-xs font-bold" style={{ color: gap <= 0 ? '#6B8F71' : '#C4873B' }}>
                     {gap <= 0 ? 'On target' : `${gap} pts gap`}
                   </p>
                 )}
@@ -1038,10 +1248,14 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
       )}
 
       {mockResults.length === 0 && (
-        <div className="text-center py-10 text-zinc-400 dark:text-zinc-500">
-          <TrendingUp size={32} className="mx-auto mb-3 opacity-40" />
-          <p className="text-sm font-medium">No results logged yet</p>
-          <p className="text-xs mt-1">Log mock exams and test results to track your trajectory</p>
+        <div className="text-center py-12 space-y-4">
+          <div className="w-14 h-14 mx-auto rounded-2xl flex items-center justify-center" style={{ backgroundColor: 'rgba(42,125,111,0.1)' }}>
+            <TrendingUp size={28} style={{ color: '#2A7D6F' }} />
+          </div>
+          <h3 className="text-base font-bold text-zinc-800 dark:text-white">Track your mock exam trajectory</h3>
+          <p className="text-xs text-zinc-500 dark:text-zinc-400 max-w-xs mx-auto leading-relaxed">
+            Log mock results to see your points climb over time and identify the subjects worth targeting.
+          </p>
         </div>
       )}
     </div>
@@ -1446,21 +1660,21 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
   return (
     <div className="space-y-5">
       {/* Countdown reminder */}
-      <div className="flex items-center gap-3 px-4 py-3 rounded-xl bg-red-50 dark:bg-red-900/15 border border-red-200 dark:border-red-800/30">
-        <Clock size={16} className="text-red-500 shrink-0" />
-        <p className="text-sm font-semibold text-red-700 dark:text-red-300">
-          {daysUntilExam} days remaining — {weeksUntilExam} weeks of study
+      <div className={`flex items-center gap-3 px-4 py-3 ${CARD_CLASS}`} style={CARD_STYLE}>
+        <Clock size={16} style={{ color: '#2A7D6F' }} className="shrink-0" />
+        <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">
+          <span style={{ color: '#2A7D6F' }}>{daysUntilExam}</span> days remaining — {weeksUntilExam} weeks of study
         </p>
       </div>
 
       {/* Study Patterns — collapsible */}
-      <div className="bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 rounded-xl overflow-hidden">
+      <div className={`overflow-hidden ${CARD_CLASS}`} style={CARD_STYLE}>
         <button
           onClick={() => setShowStudyPatterns(!showStudyPatterns)}
           className="w-full flex items-center justify-between px-4 py-3 text-left"
         >
           <div className="flex items-center gap-2">
-            <Activity size={14} className="text-[var(--accent-hex)]" />
+            <Activity size={14} style={{ color: '#2A7D6F' }} />
             <span className="text-xs font-bold text-zinc-700 dark:text-zinc-300">Study Patterns</span>
             {currentWeekTotal > 0 && (
               <span className="text-[10px] text-zinc-400 dark:text-zinc-500">{currentWeekTotal} sessions this week</span>
@@ -1499,7 +1713,7 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
                       const isCurrentWeek = i === weeklyData.length - 1;
                       return (
                         <g key={i}>
-                          <rect x={x} y={SPAD.top + spPlotH - barH} width={barW} height={Math.max(0, barH)} rx="3" className={isCurrentWeek ? 'fill-[var(--accent-hex)]' : 'fill-zinc-300 dark:fill-zinc-600'} opacity={isCurrentWeek ? 1 : 0.7} />
+                          <rect x={x} y={SPAD.top + spPlotH - barH} width={barW} height={Math.max(0, barH)} rx="3" fill={isCurrentWeek ? '#2A7D6F' : undefined} className={isCurrentWeek ? '' : 'fill-zinc-300 dark:fill-zinc-600'} opacity={isCurrentWeek ? 1 : 0.7} />
                           <text x={x + barW / 2} y={SPH - 4} textAnchor="middle" className="fill-current text-zinc-400 dark:text-zinc-500" fontSize="7">{w.label}</text>
                           {w.totalBlocks > 0 && <text x={x + barW / 2} y={SPAD.top + spPlotH - barH - 3} textAnchor="middle" className="fill-current text-zinc-500 dark:text-zinc-400" fontSize="7" fontWeight="600">{w.totalBlocks}</text>}
                         </g>
@@ -1514,22 +1728,22 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
                   <div className="flex flex-wrap gap-1 justify-center">
                     {heatmapData.map(d => {
                       const intensity = d.blocks / maxDayBlocks;
-                      const bg = d.blocks === 0
-                        ? 'bg-zinc-200 dark:bg-zinc-700'
+                      const bgColor = d.blocks === 0
+                        ? '#EDEAE6'
                         : intensity > 0.66
-                          ? 'bg-emerald-500 dark:bg-emerald-600'
+                          ? '#2A7D6F'
                           : intensity > 0.33
-                            ? 'bg-emerald-300 dark:bg-emerald-700'
-                            : 'bg-emerald-200 dark:bg-emerald-800';
-                      return <div key={d.date} className={`w-5 h-5 rounded-sm ${bg}`} title={`${d.date}: ${d.blocks} session${d.blocks !== 1 ? 's' : ''}`} />;
+                            ? '#D4907D'
+                            : '#E8C4B8';
+                      return <div key={d.date} className="w-5 h-5 rounded-sm" style={{ backgroundColor: bgColor }} title={`${d.date}: ${d.blocks} session${d.blocks !== 1 ? 's' : ''}`} />;
                     })}
                   </div>
                   <div className="flex items-center justify-center gap-2 mt-2 text-[10px] text-zinc-400 dark:text-zinc-500">
                     <span>Less</span>
-                    <div className="w-3 h-3 rounded-sm bg-zinc-200 dark:bg-zinc-700" />
-                    <div className="w-3 h-3 rounded-sm bg-emerald-200 dark:bg-emerald-800" />
-                    <div className="w-3 h-3 rounded-sm bg-emerald-300 dark:bg-emerald-700" />
-                    <div className="w-3 h-3 rounded-sm bg-emerald-500 dark:bg-emerald-600" />
+                    <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#EDEAE6' }} />
+                    <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#E8C4B8' }} />
+                    <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#D4907D' }} />
+                    <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#2A7D6F' }} />
                     <span>More</span>
                   </div>
                 </div>
@@ -1589,16 +1803,16 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
               return (
                 <div
                   key={rec.subject}
-                  className={`p-4 rounded-xl border ${
-                    isUrgent
-                      ? 'bg-rose-50 dark:bg-rose-900/10 border-rose-200 dark:border-rose-800/30'
-                      : 'bg-white dark:bg-zinc-900 border-zinc-200/60 dark:border-white/[0.06]'
-                  }`}
+                  className={`p-4 ${CARD_CLASS}`}
+                  style={{
+                    ...CARD_STYLE,
+                    backgroundColor: isUrgent ? 'rgba(42,125,111,0.06)' : '#FAF7F4',
+                  }}
                 >
                   <div className="flex items-center gap-2 mb-2">
                     <span className={`w-2.5 h-2.5 rounded-full ${color.dot}`} />
                     <span className="text-sm font-bold text-zinc-800 dark:text-white">{rec.subject}</span>
-                    {isUrgent && <AlertTriangle size={12} className="text-rose-500" />}
+                    {isUrgent && <AlertTriangle size={12} style={{ color: '#B85C4A' }} />}
                   </div>
                   <ul className="space-y-1 mb-2">
                     {rec.concerns.map((c, ci) => (
@@ -1609,7 +1823,7 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
                     ))}
                   </ul>
                   {rec.action && (
-                    <p className="text-xs font-semibold text-[var(--accent-hex)]">{rec.action}</p>
+                    <p className="text-xs font-semibold" style={{ color: '#2A7D6F' }}>{rec.action}</p>
                   )}
 
                   {/* Examiner Insights — expandable subject guidance */}
@@ -1617,7 +1831,8 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
                     <div className="mt-3 border-t border-zinc-200/50 dark:border-white/[0.06] pt-3">
                       <button
                         onClick={() => setExpandedGuidance(expandedGuidance === rec.subject ? null : rec.subject)}
-                        className="flex items-center gap-2 text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 transition-colors"
+                        className="flex items-center gap-2 text-xs font-semibold transition-colors"
+                        style={{ color: '#2A7D6F' }}
                       >
                         <BookOpen size={12} />
                         Examiner Insights {rec.latestGrade && <span className="font-normal text-zinc-400">({rec.latestGrade})</span>}
@@ -1639,7 +1854,7 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
                                 <ul className="space-y-1.5">
                                   {rec.guidance.commonStruggles.map((s, si) => (
                                     <li key={si} className="flex items-start gap-2 text-zinc-600 dark:text-zinc-400">
-                                      <span className="mt-1.5 w-1 h-1 rounded-full bg-rose-400 shrink-0" />
+                                      <span className="mt-1.5 w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: '#B85C4A' }} />
                                       {s}
                                     </li>
                                   ))}
@@ -1651,21 +1866,21 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
                                 <ul className="space-y-1.5">
                                   {rec.guidance.actions.map((a, ai) => (
                                     <li key={ai} className="flex items-start gap-2 text-zinc-600 dark:text-zinc-400">
-                                      <span className="mt-1.5 w-1 h-1 rounded-full bg-emerald-400 shrink-0" />
+                                      <span className="mt-1.5 w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: '#6B8F71' }} />
                                       {a}
                                     </li>
                                   ))}
                                 </ul>
                               </div>
                               {/* Exam Trap */}
-                              <div className="p-3 rounded-lg bg-amber-50 dark:bg-amber-900/10 border border-amber-200/60 dark:border-amber-800/20">
-                                <p className="font-bold text-amber-700 dark:text-amber-300 mb-1">Exam trap</p>
-                                <p className="text-amber-600 dark:text-amber-400">{rec.guidance.examTrap}</p>
+                              <div className="p-3 rounded-lg" style={{ backgroundColor: '#FDF3E7', border: '0.5px solid rgba(196,135,59,0.2)', borderRadius: 12 }}>
+                                <p className="font-bold mb-1" style={{ color: '#8B5E2A' }}>Exam trap</p>
+                                <p style={{ color: '#C4873B' }}>{rec.guidance.examTrap}</p>
                               </div>
                               {/* Mindset Shift */}
-                              <div className="p-3 rounded-lg bg-indigo-50 dark:bg-indigo-900/10 border border-indigo-200/60 dark:border-indigo-800/20">
-                                <p className="font-bold text-indigo-700 dark:text-indigo-300 mb-1">Mindset shift</p>
-                                <p className="text-indigo-600 dark:text-indigo-400">{rec.guidance.mindsetShift}</p>
+                              <div className="p-3 rounded-lg" style={{ backgroundColor: 'rgba(42,125,111,0.06)', border: '0.5px solid rgba(42,125,111,0.15)', borderRadius: 12 }}>
+                                <p className="font-bold mb-1" style={{ color: '#2A7D6F' }}>Mindset shift</p>
+                                <p className="text-zinc-600 dark:text-zinc-400">{rec.guidance.mindsetShift}</p>
                               </div>
                             </div>
                           </MotionDiv>
@@ -1680,10 +1895,10 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
 
           {/* Overall summary */}
           {bestSubject && (
-            <div className="px-4 py-3 rounded-xl bg-emerald-50 dark:bg-emerald-900/15 border border-emerald-200 dark:border-emerald-800/30">
+            <div className={`px-4 py-3 ${CARD_CLASS}`} style={{ ...CARD_STYLE, backgroundColor: 'rgba(107,143,113,0.08)' }}>
               <div className="flex items-center gap-2">
-                <CheckCircle size={14} className="text-emerald-500" />
-                <p className="text-xs font-semibold text-emerald-700 dark:text-emerald-300">
+                <CheckCircle size={14} style={{ color: '#6B8F71' }} />
+                <p className="text-xs font-semibold" style={{ color: '#6B8F71' }}>
                   {bestSubject.surplus >= 0
                     ? `Strongest: ${bestSubject.name} — above target`
                     : `Closest to target: ${bestSubject.name}`

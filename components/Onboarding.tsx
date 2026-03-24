@@ -5,7 +5,7 @@
 
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff, BookOpen, Target, Clock, CalendarDays, Star } from 'lucide-react';
+import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff, BookOpen, Target, Clock, CalendarDays, Star, ScanSearch, TrendingUp } from 'lucide-react';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
   type YearGroup,
@@ -26,8 +26,8 @@ interface OnboardingProps {
   onSkip: () => void;
 }
 
-type Step = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
-const TOTAL_STEPS = 8;
+type Step = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+const TOTAL_STEPS = 9;
 
 // ─── Step-specific ambient blob colors ──────────────────────────────────────
 
@@ -40,6 +40,7 @@ const STEP_BLOBS: Record<Step, { a: string; b: string; c: string }> = {
   6: { a: 'bg-amber-300/[0.09]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-yellow-200/[0.08]' },
   7: { a: 'bg-rose-300/[0.08]', b: 'bg-orange-200/[0.07]', c: 'bg-pink-200/[0.06]' },
   8: { a: 'bg-emerald-300/[0.09]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-amber-200/[0.06]' },
+  9: { a: 'bg-rose-300/[0.08]', b: 'bg-indigo-300/[0.07]', c: 'bg-emerald-200/[0.06]' },
 };
 
 // ─── Subject Color Map (literal Tailwind strings for CDN) ───────────────────
@@ -63,8 +64,8 @@ function getCurrentGradePillClass(isSelected: boolean): string {
 
 function getTargetGradePillClass(isSelected: boolean): string {
   return isSelected
-    ? 'bg-purple-600 dark:bg-purple-500 text-white border-purple-600 dark:border-purple-500 shadow-sm'
-    : 'bg-white dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-purple-400 dark:hover:border-purple-500';
+    ? 'bg-teal-600 dark:bg-teal-500 text-white border-teal-600 dark:border-teal-500 shadow-sm'
+    : 'bg-white dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-teal-400 dark:hover:border-teal-500';
 }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -280,6 +281,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
       case 6: return examDate.length > 0 && getDaysUntil(examDate) > 0;
       case 7: return restDays.size < 7;
       case 8: return true;
+      case 9: return true;
       default: return false;
     }
   };
@@ -594,7 +596,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                           </div>
                           {/* Target grade row */}
                           <div>
-                            <p className="text-[10px] font-semibold text-purple-600 dark:text-purple-400 mb-1">My target</p>
+                            <p className="text-[10px] font-semibold text-teal-600 dark:text-teal-400 mb-1">My target</p>
                             <div className="flex gap-1">
                               {grades.map((g, gi) => {
                                 const disabled = gi > currentIdx;
@@ -824,7 +826,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                         <div className="flex items-center gap-2">
                           <span className="text-xs font-bold text-zinc-500 dark:text-zinc-400">{config.currentGrade}</span>
                           <ArrowRight size={12} className="text-zinc-300 dark:text-zinc-600" />
-                          <span className="text-xs font-bold text-purple-600 dark:text-purple-400">{config.targetGrade}</span>
+                          <span className="text-xs font-bold text-teal-600 dark:text-teal-400">{config.targetGrade}</span>
                           {gain > 0 && (
                             <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 ml-1">+{gain}pts</span>
                           )}
@@ -844,6 +846,62 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                   <span className="flex items-center gap-1.5"><Calendar size={14} /> {daysLeft} days left</span>
                   <span className="flex items-center gap-1.5"><CalendarOff size={14} /> {restDays.size} rest {restDays.size === 1 ? 'day' : 'days'}</span>
                 </motion.div>
+              </MotionDiv>
+            )}
+
+            {/* Step 9: Your Toolkit */}
+            {step === 9 && (
+              <MotionDiv key="step9" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+                <div className="space-y-6">
+                  <div className="text-center space-y-2">
+                    <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">Your Toolkit</h2>
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                      These tools work together to help you study smarter. You'll find them in the Innovation Zone.
+                    </p>
+                  </div>
+
+                  <div className="space-y-3">
+                    <div className="rounded-xl p-4" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)' }}>
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#F5F0EB' }}>
+                          <ScanSearch size={20} style={{ color: '#2A7D6F' }} />
+                        </div>
+                        <div>
+                          <p className="text-sm font-medium text-zinc-800 dark:text-white">Understand</p>
+                          <p className="text-xs text-zinc-500 dark:text-zinc-400">See what's worth marks, explore grade scenarios, and find courses that match you</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="rounded-xl p-4" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)' }}>
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#F5F0EB' }}>
+                          <CalendarDays size={20} style={{ color: '#2A7D6F' }} />
+                        </div>
+                        <div>
+                          <p className="text-sm font-medium text-zinc-800 dark:text-white">Plan</p>
+                          <p className="text-xs text-zinc-500 dark:text-zinc-400">Get a study schedule that adapts to your weaknesses and track your exam readiness</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="rounded-xl p-4" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)' }}>
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#F5F0EB' }}>
+                          <TrendingUp size={20} style={{ color: '#2A7D6F' }} />
+                        </div>
+                        <div>
+                          <p className="text-sm font-medium text-zinc-800 dark:text-white">Track</p>
+                          <p className="text-xs text-zinc-500 dark:text-zinc-400">Monitor your mock results, watch your points climb, and stay motivated</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p className="text-center text-xs text-zinc-400 dark:text-zinc-500">
+                    All tools share your data — update confidence in one place, it updates everywhere.
+                  </p>
+                </div>
               </MotionDiv>
             )}
 
@@ -869,9 +927,10 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </button>
             ) : (
               <button onClick={() => onComplete(buildProfile(), northStarData ?? undefined)}
-                className="flex items-center gap-2 px-7 py-2.5 bg-[var(--accent-hex)] text-white font-semibold text-sm rounded-full hover:bg-[var(--accent-dark-hex)] transition-colors shadow-lg shadow-[rgba(var(--accent),0.2)]"
+                className="flex items-center gap-2 px-7 py-2.5 rounded-full text-white font-semibold text-sm transition-all active:scale-[0.98] shadow-lg"
+                style={{ backgroundColor: '#2A7D6F' }}
               >
-                <Check size={14} /> Save & Start Learning
+                Start learning <ArrowRight size={14} />
               </button>
             )}
           </div>

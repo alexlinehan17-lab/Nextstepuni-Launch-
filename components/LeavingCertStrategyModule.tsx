@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calculator, Briefcase, Target, PenSquare, Eye, HeartPulse } from 'lucide-react';
 import { ModuleProgress } from '../types';
@@ -171,6 +171,13 @@ const ExamDayTimelineBuilder = () => {
     const [sequence, setSequence] = useState<TimelineActivity[]>([]);
     const [flashWarning, setFlashWarning] = useState<string | null>(null);
     const [showFeedback, setShowFeedback] = useState(false);
+    const warningTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+    useEffect(() => {
+        return () => {
+            if (warningTimerRef.current) clearTimeout(warningTimerRef.current);
+        };
+    }, []);
 
     const selectedIds = new Set(sequence.map(a => a.id));
 
@@ -180,7 +187,7 @@ const ExamDayTimelineBuilder = () => {
 
         if (activity.isBad) {
             setFlashWarning(activity.warning);
-            setTimeout(() => setFlashWarning(null), 3000);
+            warningTimerRef.current = setTimeout(() => setFlashWarning(null), 3000);
         }
 
         setSequence(prev => [...prev, activity]);

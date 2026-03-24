@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nextstepuni — Cross-Tool Integration Map</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #06060b;
+    color: #e4e4e7;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Overlay UI */
+  .overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .title-block {
+    position: absolute;
+    top: 36px;
+    left: 44px;
+  }
+  .title-block h1 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 6px;
+  }
+  .title-block h2 {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #fff, #a5b4fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .stat-strip {
+    position: absolute;
+    bottom: 36px;
+    left: 44px;
+    display: flex;
+    gap: 32px;
+  }
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .stat-val {
+    font-size: 22px;
+    font-weight: 800;
+    color: rgba(255,255,255,0.8);
+  }
+  .stat-lbl {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.25);
+  }
+
+  .legend {
+    position: absolute;
+    bottom: 36px;
+    right: 44px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 10px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .legend-line {
+    width: 20px;
+    height: 2px;
+    border-radius: 1px;
+  }
+
+  /* Tooltip */
+  .tooltip {
+    position: fixed;
+    pointer-events: none;
+    z-index: 100;
+    background: rgba(15, 15, 25, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px;
+    padding: 16px 20px;
+    max-width: 300px;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .tooltip.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .tooltip-title {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 6px;
+  }
+  .tooltip-desc {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.6;
+  }
+  .tooltip-connections {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .tooltip-conn-item {
+    font-size: 10px;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .tooltip-conn-arrow {
+    font-size: 9px;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+
+<canvas id="c"></canvas>
+
+<div class="overlay">
+  <div class="title-block">
+    <h1>Nextstepuni</h1>
+    <h2>Cross-Tool Integration Map</h2>
+  </div>
+
+  <div class="stat-strip">
+    <div class="stat-item">
+      <div class="stat-val">11</div>
+      <div class="stat-lbl">Tools</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-val">14</div>
+      <div class="stat-lbl">Connections</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-val">0</div>
+      <div class="stat-lbl">Manual Entry</div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-line" style="background:rgba(255,255,255,0.3);"></div>
+      Data flow
+    </div>
+    <div class="legend-item">
+      <div class="legend-line" style="background:rgba(99,102,241,0.6);"></div>
+      Active connection
+    </div>
+    <div class="legend-item">
+      <div style="width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.15);border:1.5px solid rgba(255,255,255,0.3);"></div>
+      Data packet
+    </div>
+  </div>
+</div>
+
+<div class="tooltip" id="tooltip">
+  <div class="tooltip-title" id="tt-title"></div>
+  <div class="tooltip-desc" id="tt-desc"></div>
+  <div class="tooltip-connections" id="tt-conns"></div>
+</div>
+
+<script>
+// ─── Configuration ──────────────────────────────────────────────────────────
+
+const TOOLS = [
+  {
+    id: 'future-finder',
+    label: 'Future Finder',
+    desc: 'Matches students to CAO courses based on interests, strengths, and points.',
+    color: [99, 102, 241],   // indigo
+    x: 0, y: 0, // set by layout
+  },
+  {
+    id: 'cao-simulator',
+    label: 'CAO Simulator',
+    desc: 'Interactive what-if explorer for grade changes and their impact on best-6 points.',
+    color: [34, 211, 238],   // cyan
+  },
+  {
+    id: 'comeback-engine',
+    label: 'Comeback Engine',
+    desc: 'Identifies quickest wins and generates weekly missions to close the points gap.',
+    color: [251, 146, 60],   // orange
+  },
+  {
+    id: 'journey-sim',
+    label: 'Journey Simulator',
+    desc: 'Branching narrative game with 12 archetypes reflecting student decision patterns.',
+    color: [167, 139, 250],  // violet
+  },
+  {
+    id: 'war-room',
+    label: 'War Room',
+    desc: 'Strategic command centre: subject coverage tracking, mock trajectory, exam briefing.',
+    color: [52, 211, 153],   // emerald
+  },
+  {
+    id: 'syllabus-xray',
+    label: 'Syllabus X-Ray',
+    desc: 'Reveals where marks hide — mark weight, exam frequency, and efficiency scoring per topic.',
+    color: [251, 113, 133],  // rose
+  },
+  {
+    id: 'learning-dna',
+    label: 'Learning DNA',
+    desc: 'Analyses study debriefs to find which strategies actually work for each student.',
+    color: [96, 165, 250],   // blue
+  },
+  {
+    id: 'points-passport',
+    label: 'Points Passport',
+    desc: 'Live CAO points tracker with grade bargain analysis and best-6 projection.',
+    color: [251, 191, 36],   // amber
+  },
+  {
+    id: 'timetable',
+    label: 'Spaced Rep Timetable',
+    desc: 'SM-2 algorithm-driven study schedule with priority weighting, daily caps, and streak tracking.',
+    color: [56, 189, 248],   // sky
+  },
+  {
+    id: 'debrief',
+    label: 'Study Debrief',
+    desc: 'Post-session reflection capturing strategy, confidence shift, and hardest topic.',
+    color: [192, 132, 252],  // purple
+  },
+  {
+    id: 'gc-dashboard',
+    label: 'GC Dashboard',
+    desc: 'Guidance Counsellor view: per-student insights, career direction, struggle areas, alerts.',
+    color: [45, 212, 191],   // teal
+  },
+];
+
+// Each connection: [sourceId, targetId, label]
+const CONNECTIONS = [
+  ['future-finder', 'comeback-engine', 'Top picks → anchor & target points'],
+  ['future-finder', 'war-room', 'Top pick → target course banner'],
+  ['future-finder', 'gc-dashboard', 'Career direction data'],
+  ['cao-simulator', 'comeback-engine', 'What-if scenarios → missions'],
+  ['journey-sim', 'learning-dna', 'Archetype → personalised strategy tips'],
+  ['syllabus-xray', 'war-room', 'Quadrant-sorted topics + mark weight'],
+  ['syllabus-xray', 'timetable', 'Efficiency weighting → priority score'],
+  ['debrief', 'war-room', 'Hardest topics → auto-seed as shaky'],
+  ['debrief', 'syllabus-xray', 'Hardest topic → inline nudge card'],
+  ['debrief', 'timetable', 'Best strategy → study block hints'],
+  ['debrief', 'learning-dna', 'Session data → strategy effectiveness'],
+  ['debrief', 'gc-dashboard', 'Struggle areas (excl. private notes)'],
+  ['points-passport', 'timetable', 'Top 3 bargains → +pts badges'],
+  ['war-room', 'gc-dashboard', 'Mock results → trajectory view'],
+];
+
+// ─── Canvas Setup ───────────────────────────────────────────────────────────
+
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+let W, H, dpr;
+let mouseX = -1000, mouseY = -1000;
+let hoveredNode = null;
+let time = 0;
+
+function resize() {
+  dpr = window.devicePixelRatio || 1;
+  W = window.innerWidth;
+  H = window.innerHeight;
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
+  canvas.style.width = W + 'px';
+  canvas.style.height = H + 'px';
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  layoutNodes();
+}
+
+// ─── Layout: Organic radial with clustering ─────────────────────────────────
+
+function layoutNodes() {
+  const cx = W * 0.5;
+  const cy = H * 0.5;
+  const scale = Math.min(W, H);
+
+  // Hand-tuned positions for aesthetic layout (normalized -1 to 1)
+  const positions = {
+    'future-finder':    { nx: -0.32, ny: -0.28 },
+    'cao-simulator':    { nx:  0.05, ny: -0.32 },
+    'comeback-engine':  { nx:  0.35, ny: -0.18 },
+    'journey-sim':      { nx:  0.38, ny:  0.15 },
+    'war-room':         { nx: -0.36, ny:  0.05 },
+    'syllabus-xray':    { nx: -0.08, ny:  0.0 },
+    'learning-dna':     { nx:  0.22, ny:  0.22 },
+    'points-passport':  { nx: -0.20, ny:  0.30 },
+    'timetable':        { nx:  0.02, ny:  0.32 },
+    'debrief':          { nx: -0.12, ny:  0.16 },
+    'gc-dashboard':     { nx:  0.38, ny: -0.02 },
+  };
+
+  TOOLS.forEach(t => {
+    const p = positions[t.id] || { nx: 0, ny: 0 };
+    t.x = cx + p.nx * scale * 0.42;
+    t.y = cy + p.ny * scale * 0.42;
+    t.radius = 42;
+  });
+}
+
+// ─── Particles flowing along connections ────────────────────────────────────
+
+class Particle {
+  constructor(conn, idx) {
+    this.conn = conn;
+    this.t = Math.random(); // position along path 0-1
+    this.speed = 0.001 + Math.random() * 0.002;
+    this.size = 1.5 + Math.random() * 1.5;
+    this.idx = idx;
+  }
+  update() {
+    this.t += this.speed;
+    if (this.t > 1) this.t -= 1;
+  }
+}
+
+const particles = [];
+CONNECTIONS.forEach((conn, ci) => {
+  const count = 2 + Math.floor(Math.random() * 2);
+  for (let i = 0; i < count; i++) {
+    particles.push(new Particle(conn, ci));
+  }
+});
+
+// ─── Ambient particles (floating background) ───────────────────────────────
+
+class AmbientDot {
+  constructor() {
+    this.x = Math.random() * 2000;
+    this.y = Math.random() * 2000;
+    this.vx = (Math.random() - 0.5) * 0.15;
+    this.vy = (Math.random() - 0.5) * 0.15;
+    this.size = 0.5 + Math.random() * 1.2;
+    this.alpha = 0.03 + Math.random() * 0.06;
+  }
+  update() {
+    this.x += this.vx;
+    this.y += this.vy;
+    if (this.x < 0) this.x = W;
+    if (this.x > W) this.x = 0;
+    if (this.y < 0) this.y = H;
+    if (this.y > H) this.y = 0;
+  }
+}
+
+const ambientDots = Array.from({ length: 120 }, () => new AmbientDot());
+
+// ─── Drawing Helpers ────────────────────────────────────────────────────────
+
+function getToolById(id) {
+  return TOOLS.find(t => t.id === id);
+}
+
+function drawConnection(src, dst, connIdx, alpha = 1) {
+  const dx = dst.x - src.x;
+  const dy = dst.y - src.y;
+  const dist = Math.sqrt(dx * dx + dy * dy);
+
+  // Curved path via control point offset perpendicular to midpoint
+  const mx = (src.x + dst.x) / 2;
+  const my = (src.y + dst.y) / 2;
+  const nx = -dy / dist;
+  const ny = dx / dist;
+  const curveAmt = dist * 0.15 * (connIdx % 2 === 0 ? 1 : -1);
+  const cpx = mx + nx * curveAmt;
+  const cpy = my + ny * curveAmt;
+
+  // Is this connection highlighted?
+  const isHighlighted = hoveredNode && (src.id === hoveredNode.id || dst.id === hoveredNode.id);
+  const baseAlpha = isHighlighted ? 0.5 : (hoveredNode ? 0.04 : 0.1);
+
+  // Glow
+  if (isHighlighted) {
+    ctx.save();
+    ctx.shadowColor = `rgba(${src.color.join(',')}, 0.4)`;
+    ctx.shadowBlur = 20;
+    ctx.beginPath();
+    ctx.moveTo(src.x, src.y);
+    ctx.quadraticCurveTo(cpx, cpy, dst.x, dst.y);
+    ctx.strokeStyle = `rgba(${src.color.join(',')}, ${baseAlpha})`;
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  ctx.beginPath();
+  ctx.moveTo(src.x, src.y);
+  ctx.quadraticCurveTo(cpx, cpy, dst.x, dst.y);
+  ctx.strokeStyle = `rgba(255,255,255,${baseAlpha * alpha})`;
+  ctx.lineWidth = isHighlighted ? 1.5 : 0.8;
+  ctx.stroke();
+
+  return { cpx, cpy };
+}
+
+function getPointOnQuadratic(x0, y0, cpx, cpy, x1, y1, t) {
+  const u = 1 - t;
+  return {
+    x: u * u * x0 + 2 * u * t * cpx + t * t * x1,
+    y: u * u * y0 + 2 * u * t * cpy + t * t * y1,
+  };
+}
+
+function drawNode(tool) {
+  const isHovered = hoveredNode && hoveredNode.id === tool.id;
+  const isConnected = hoveredNode && CONNECTIONS.some(c =>
+    (c[0] === hoveredNode.id && c[1] === tool.id) ||
+    (c[1] === hoveredNode.id && c[0] === tool.id)
+  );
+  const isDimmed = hoveredNode && !isHovered && !isConnected;
+
+  const [r, g, b] = tool.color;
+  const globalAlpha = isDimmed ? 0.15 : 1;
+
+  ctx.save();
+  ctx.globalAlpha = globalAlpha;
+
+  // Outer glow
+  const glowRadius = isHovered ? 80 : 50;
+  const glowAlpha = isHovered ? 0.2 : 0.08;
+  const glow = ctx.createRadialGradient(tool.x, tool.y, 0, tool.x, tool.y, glowRadius);
+  glow.addColorStop(0, `rgba(${r},${g},${b},${glowAlpha})`);
+  glow.addColorStop(1, `rgba(${r},${g},${b},0)`);
+  ctx.fillStyle = glow;
+  ctx.beginPath();
+  ctx.arc(tool.x, tool.y, glowRadius, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Pulse ring
+  if (isHovered) {
+    const pulseR = tool.radius + 8 + Math.sin(time * 3) * 4;
+    ctx.beginPath();
+    ctx.arc(tool.x, tool.y, pulseR, 0, Math.PI * 2);
+    ctx.strokeStyle = `rgba(${r},${g},${b},${0.15 + Math.sin(time * 3) * 0.05})`;
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+
+  // Orbital ring (subtle)
+  ctx.beginPath();
+  ctx.arc(tool.x, tool.y, tool.radius + 2, 0, Math.PI * 2);
+  ctx.strokeStyle = `rgba(${r},${g},${b},${isHovered ? 0.5 : 0.15})`;
+  ctx.lineWidth = 1;
+  ctx.stroke();
+
+  // Core circle
+  const coreGrad = ctx.createRadialGradient(
+    tool.x - tool.radius * 0.2, tool.y - tool.radius * 0.2, 0,
+    tool.x, tool.y, tool.radius
+  );
+  coreGrad.addColorStop(0, `rgba(${r},${g},${b},${isHovered ? 0.3 : 0.12})`);
+  coreGrad.addColorStop(1, `rgba(${r},${g},${b},${isHovered ? 0.08 : 0.03})`);
+
+  ctx.beginPath();
+  ctx.arc(tool.x, tool.y, tool.radius, 0, Math.PI * 2);
+  ctx.fillStyle = coreGrad;
+  ctx.fill();
+  ctx.strokeStyle = `rgba(${r},${g},${b},${isHovered ? 0.7 : 0.3})`;
+  ctx.lineWidth = 1.5;
+  ctx.stroke();
+
+  // Inner bright dot
+  const innerGrad = ctx.createRadialGradient(tool.x, tool.y, 0, tool.x, tool.y, 6);
+  innerGrad.addColorStop(0, `rgba(${r},${g},${b},${isHovered ? 0.9 : 0.5})`);
+  innerGrad.addColorStop(1, `rgba(${r},${g},${b},0)`);
+  ctx.beginPath();
+  ctx.arc(tool.x, tool.y, 6, 0, Math.PI * 2);
+  ctx.fillStyle = innerGrad;
+  ctx.fill();
+
+  // Label
+  ctx.font = '600 11px Inter, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillStyle = `rgba(255,255,255,${isHovered ? 0.95 : 0.7})`;
+  ctx.fillText(tool.label, tool.x, tool.y + tool.radius + 18);
+
+  // Connection count badge
+  const connCount = CONNECTIONS.filter(c => c[0] === tool.id || c[1] === tool.id).length;
+  if (connCount > 0) {
+    const bx = tool.x + tool.radius * 0.7;
+    const by = tool.y - tool.radius * 0.7;
+    ctx.beginPath();
+    ctx.arc(bx, by, 9, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(${r},${g},${b},${isHovered ? 0.9 : 0.35})`;
+    ctx.fill();
+    ctx.font = '700 8px Inter, sans-serif';
+    ctx.fillStyle = '#fff';
+    ctx.fillText(connCount, bx, by + 0.5);
+  }
+
+  ctx.restore();
+}
+
+// ─── Main Render Loop ───────────────────────────────────────────────────────
+
+function render() {
+  time += 0.016;
+  ctx.clearRect(0, 0, W, H);
+
+  // Background gradient
+  const bgGrad = ctx.createRadialGradient(W * 0.5, H * 0.5, 0, W * 0.5, H * 0.5, W * 0.7);
+  bgGrad.addColorStop(0, '#0d0d18');
+  bgGrad.addColorStop(1, '#06060b');
+  ctx.fillStyle = bgGrad;
+  ctx.fillRect(0, 0, W, H);
+
+  // Ambient dots
+  ambientDots.forEach(d => {
+    d.update();
+    ctx.beginPath();
+    ctx.arc(d.x, d.y, d.size, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(255,255,255,${d.alpha})`;
+    ctx.fill();
+  });
+
+  // Store control points for particle paths
+  const controlPoints = {};
+
+  // Draw connections
+  CONNECTIONS.forEach((conn, ci) => {
+    const src = getToolById(conn[0]);
+    const dst = getToolById(conn[1]);
+    if (!src || !dst) return;
+    const cp = drawConnection(src, dst, ci);
+    controlPoints[ci] = cp;
+  });
+
+  // Draw particles
+  particles.forEach(p => {
+    p.update();
+    const src = getToolById(p.conn[0]);
+    const dst = getToolById(p.conn[1]);
+    const cp = controlPoints[p.idx];
+    if (!src || !dst || !cp) return;
+
+    const isHighlighted = hoveredNode && (src.id === hoveredNode.id || dst.id === hoveredNode.id);
+    const dimmed = hoveredNode && !isHighlighted;
+
+    const pt = getPointOnQuadratic(src.x, src.y, cp.cpx, cp.cpy, dst.x, dst.y, p.t);
+
+    const alpha = dimmed ? 0.03 : (isHighlighted ? 0.9 : 0.25);
+    const [r, g, b] = src.color;
+
+    // Particle glow
+    const pg = ctx.createRadialGradient(pt.x, pt.y, 0, pt.x, pt.y, p.size * (isHighlighted ? 6 : 3));
+    pg.addColorStop(0, `rgba(${r},${g},${b},${alpha * 0.6})`);
+    pg.addColorStop(1, `rgba(${r},${g},${b},0)`);
+    ctx.beginPath();
+    ctx.arc(pt.x, pt.y, p.size * (isHighlighted ? 6 : 3), 0, Math.PI * 2);
+    ctx.fillStyle = pg;
+    ctx.fill();
+
+    // Particle core
+    ctx.beginPath();
+    ctx.arc(pt.x, pt.y, p.size * (isHighlighted ? 1.5 : 1), 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(255,255,255,${alpha})`;
+    ctx.fill();
+  });
+
+  // Draw nodes
+  TOOLS.forEach(drawNode);
+
+  requestAnimationFrame(render);
+}
+
+// ─── Interaction ────────────────────────────────────────────────────────────
+
+const tooltip = document.getElementById('tooltip');
+const ttTitle = document.getElementById('tt-title');
+const ttDesc = document.getElementById('tt-desc');
+const ttConns = document.getElementById('tt-conns');
+
+canvas.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+
+  let found = null;
+  for (const t of TOOLS) {
+    const dx = mouseX - t.x;
+    const dy = mouseY - t.y;
+    if (dx * dx + dy * dy < (t.radius + 10) * (t.radius + 10)) {
+      found = t;
+      break;
+    }
+  }
+
+  if (found !== hoveredNode) {
+    hoveredNode = found;
+    if (found) {
+      canvas.style.cursor = 'pointer';
+      const [r, g, b] = found.color;
+      ttTitle.textContent = found.label;
+      ttTitle.style.color = `rgb(${r},${g},${b})`;
+      ttDesc.textContent = found.desc;
+
+      // Build connections list
+      const outgoing = CONNECTIONS.filter(c => c[0] === found.id);
+      const incoming = CONNECTIONS.filter(c => c[1] === found.id);
+      let html = '';
+      outgoing.forEach(c => {
+        const dst = getToolById(c[1]);
+        html += `<div class="tooltip-conn-item"><span class="tooltip-conn-arrow">&#x2192;</span> <strong>${dst.label}</strong>: ${c[2]}</div>`;
+      });
+      incoming.forEach(c => {
+        const src = getToolById(c[0]);
+        html += `<div class="tooltip-conn-item"><span class="tooltip-conn-arrow">&#x2190;</span> <strong>${src.label}</strong>: ${c[2]}</div>`;
+      });
+      ttConns.innerHTML = html;
+      ttConns.style.display = html ? 'block' : 'none';
+
+      tooltip.classList.add('visible');
+    } else {
+      canvas.style.cursor = 'default';
+      tooltip.classList.remove('visible');
+    }
+  }
+
+  if (hoveredNode) {
+    const tx = mouseX + 20;
+    const ty = mouseY - 20;
+    const rect = tooltip.getBoundingClientRect();
+    const clampedX = Math.min(tx, W - rect.width - 20);
+    const clampedY = Math.max(ty, 20);
+    tooltip.style.left = clampedX + 'px';
+    tooltip.style.top = clampedY + 'px';
+  }
+});
+
+canvas.addEventListener('mouseleave', () => {
+  hoveredNode = null;
+  tooltip.classList.remove('visible');
+  canvas.style.cursor = 'default';
+});
+
+// ─── Init ───────────────────────────────────────────────────────────────────
+
+window.addEventListener('resize', resize);
+resize();
+render();
+</script>
+
+</body>
+</html>

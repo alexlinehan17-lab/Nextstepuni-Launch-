@@ -3,14 +3,13 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Check, Lock } from 'lucide-react';
+import { X, Check, Lock, Sun, Moon, RefreshCw, LogOut, ChevronRight, Compass } from 'lucide-react';
 import { AVATAR_SEEDS, getAvatarUrl } from './Auth';
 import { EXTRA_AVATAR_SEEDS } from './RewardShopModal';
 import { UserSettings } from '../types';
-import { ACCENT_THEME_LIST, CARD_STYLES } from '../themeData';
 
 const MotionDiv = motion.div as any;
 
@@ -22,14 +21,30 @@ interface SettingsModalProps {
   unlockedAvatarSeeds?: string[];
   unlockedThemes?: string[];
   unlockedCardStyles?: string[];
+  userName?: string;
+  userSchool?: string;
+  onChangeSubjects?: () => void;
+  onResetNorthStar?: () => void;
+  onLogout?: () => void;
 }
 
-const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, settings, updateSetting, unlockedAvatarSeeds = [], unlockedThemes = [], unlockedCardStyles = [] }) => {
+const SettingsModal: React.FC<SettingsModalProps> = ({
+  isOpen, onClose, settings, updateSetting,
+  unlockedAvatarSeeds = [], unlockedThemes = [], unlockedCardStyles = [],
+  userName, userSchool, onChangeSubjects, onResetNorthStar, onLogout,
+}) => {
   const [showSaved, setShowSaved] = useState(false);
+  const flashTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (flashTimerRef.current) clearTimeout(flashTimerRef.current);
+    };
+  }, []);
 
   const flash = () => {
     setShowSaved(true);
-    setTimeout(() => setShowSaved(false), 1200);
+    flashTimerRef.current = setTimeout(() => setShowSaved(false), 1200);
   };
 
   return createPortal(
@@ -78,7 +93,20 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, settings
               </div>
             </div>
 
-            <div className="p-6 space-y-8">
+            <div className="p-6 space-y-6">
+              {/* Account */}
+              {(userName || userSchool) && (
+                <section>
+                  <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
+                    Account
+                  </h3>
+                  <div className="p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06]">
+                    {userName && <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">{userName}</p>}
+                    {userSchool && <p className="text-[11px] text-zinc-400 dark:text-zinc-500 mt-0.5">{userSchool}</p>}
+                  </div>
+                </section>
+              )}
+
               {/* Avatar */}
               <section>
                 <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
@@ -138,115 +166,118 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, settings
                 </div>
               </section>
 
-              {/* Default Timer Duration */}
+              {/* Preferences */}
               <section>
                 <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
-                  Default Timer Duration
+                  Preferences
                 </h3>
-                <div className="flex gap-2">
-                  {[25, 50].map(mins => (
+                <div className="space-y-2">
+                  {/* Dark Mode */}
+                  <button
+                    onClick={() => {
+                      updateSetting('darkMode', !settings.darkMode);
+                      flash();
+                    }}
+                    className="w-full flex items-center justify-between p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15] transition-all"
+                  >
+                    <div className="flex items-center gap-3">
+                      {settings.darkMode ? <Sun size={16} className="text-amber-400" /> : <Moon size={16} className="text-zinc-500" />}
+                      <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">{settings.darkMode ? 'Light Mode' : 'Dark Mode'}</p>
+                    </div>
+                    <div className={`relative w-10 h-6 rounded-full transition-colors ${
+                      settings.darkMode ? 'bg-[var(--accent-hex)]' : 'bg-zinc-300 dark:bg-zinc-600'
+                    }`}>
+                      <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow-sm transition-transform ${
+                        settings.darkMode ? 'translate-x-[18px]' : 'translate-x-0.5'
+                      }`} />
+                    </div>
+                  </button>
+
+                  {/* Dashboard toggle */}
+                  <button
+                    onClick={() => {
+                      updateSetting('showDashboard', settings.showDashboard === false ? true : false);
+                      flash();
+                    }}
+                    className="w-full flex items-center justify-between p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15] transition-all"
+                  >
+                    <div className="flex-1 text-left">
+                      <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Show home dashboard</p>
+                      <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">Today's plan and progress above modules</p>
+                    </div>
+                    <div className={`relative w-10 h-6 rounded-full transition-colors ${
+                      settings.showDashboard !== false ? 'bg-[var(--accent-hex)]' : 'bg-zinc-300 dark:bg-zinc-600'
+                    }`}>
+                      <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow-sm transition-transform ${
+                        settings.showDashboard !== false ? 'translate-x-[18px]' : 'translate-x-0.5'
+                      }`} />
+                    </div>
+                  </button>
+
+                  {/* Flares toggle */}
+                  <button
+                    onClick={() => {
+                      updateSetting('flaresToggle', settings.flaresToggle === false ? true : false);
+                      flash();
+                    }}
+                    className="w-full flex items-center justify-between p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15] transition-all"
+                  >
+                    <div className="flex-1 text-left">
+                      <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">SOS Flares</p>
+                      <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">See when classmates need help</p>
+                    </div>
+                    <div className={`relative w-10 h-6 rounded-full transition-colors ${
+                      settings.flaresToggle !== false ? 'bg-[var(--accent-hex)]' : 'bg-zinc-300 dark:bg-zinc-600'
+                    }`}>
+                      <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow-sm transition-transform ${
+                        settings.flaresToggle !== false ? 'translate-x-[18px]' : 'translate-x-0.5'
+                      }`} />
+                    </div>
+                  </button>
+                </div>
+              </section>
+
+              {/* Actions */}
+              <section>
+                <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
+                  Actions
+                </h3>
+                <div className="space-y-1">
+                  {onChangeSubjects && (
                     <button
-                      key={mins}
-                      onClick={() => {
-                        updateSetting('defaultWorkMinutes', mins);
-                        flash();
-                      }}
-                      className={`px-5 py-2.5 rounded-xl text-sm font-medium transition-all ${
-                        settings.defaultWorkMinutes === mins
-                          ? 'bg-[rgba(var(--accent),0.1)] text-[var(--accent-hex)] ring-2 ring-[var(--accent-hex)]'
-                          : 'bg-zinc-50 dark:bg-white/[0.04] text-zinc-700 dark:text-zinc-300 ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'
-                      }`}
+                      onClick={() => { onClose(); onChangeSubjects(); }}
+                      className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-white/[0.04] transition-colors"
                     >
-                      {`${mins} minutes`}
+                      <div className="flex items-center gap-3">
+                        <RefreshCw size={16} className="text-zinc-400" />
+                        <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Change Subjects</p>
+                      </div>
+                      <ChevronRight size={14} className="text-zinc-300 dark:text-zinc-600" />
                     </button>
-                  ))}
-                </div>
-              </section>
-
-              {/* Accent Theme */}
-              <section>
-                <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
-                  Accent Theme
-                </h3>
-                <div className="grid grid-cols-4 gap-2.5">
-                  {ACCENT_THEME_LIST.map(theme => {
-                    const isUnlocked = theme.price === 0 || unlockedThemes.includes(theme.id);
-                    const isActive = isUnlocked && settings.accentTheme === theme.id;
-                    return (
-                      <button
-                        key={theme.id}
-                        onClick={() => {
-                          if (isUnlocked) {
-                            updateSetting('accentTheme', theme.id);
-                            flash();
-                          }
-                        }}
-                        disabled={!isUnlocked}
-                        title={isUnlocked ? theme.name : 'Unlock in Reward Shop'}
-                        className={`flex flex-col items-center gap-1.5 p-2 rounded-xl transition-all ${
-                          isActive
-                            ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]'
-                            : isUnlocked
-                              ? 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'
-                              : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] opacity-50 cursor-not-allowed'
-                        }`}
-                      >
-                        <div className="relative">
-                          <div
-                            className="w-7 h-7 rounded-full border-2 border-white dark:border-zinc-800 shadow-sm"
-                            style={{ backgroundColor: theme.hex }}
-                          />
-                          {!isUnlocked && (
-                            <div className="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-zinc-400 dark:bg-zinc-600 flex items-center justify-center">
-                              <Lock size={7} className="text-white" />
-                            </div>
-                          )}
-                        </div>
-                        <p className="text-[9px] font-bold text-zinc-500 dark:text-zinc-400 text-center leading-tight">{theme.name}</p>
-                      </button>
-                    );
-                  })}
-                </div>
-              </section>
-
-              {/* Card Style */}
-              <section>
-                <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
-                  Card Style
-                </h3>
-                <div className="grid grid-cols-3 gap-2">
-                  {CARD_STYLES.map(style => {
-                    const isUnlocked = style.price === 0 || unlockedCardStyles.includes(style.id);
-                    const isActive = isUnlocked && settings.cardStyle === style.id;
-                    return (
-                      <button
-                        key={style.id}
-                        onClick={() => {
-                          if (isUnlocked) {
-                            updateSetting('cardStyle', style.id);
-                            flash();
-                          }
-                        }}
-                        disabled={!isUnlocked}
-                        title={isUnlocked ? style.name : 'Unlock in Reward Shop'}
-                        className={`relative flex flex-col items-center gap-1.5 p-2.5 rounded-xl transition-all ${
-                          isActive
-                            ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]'
-                            : isUnlocked
-                              ? 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'
-                              : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] opacity-50 cursor-not-allowed'
-                        }`}
-                      >
-                        <p className="text-[10px] font-bold text-zinc-700 dark:text-zinc-200">{style.name}</p>
-                        <p className="text-[9px] text-zinc-400 dark:text-zinc-500 text-center">{style.description}</p>
-                        {!isUnlocked && (
-                          <div className="absolute top-1 right-1 w-3.5 h-3.5 rounded-full bg-zinc-400 dark:bg-zinc-600 flex items-center justify-center">
-                            <Lock size={7} className="text-white" />
-                          </div>
-                        )}
-                      </button>
-                    );
-                  })}
+                  )}
+                  {onResetNorthStar && (
+                    <button
+                      onClick={() => { onClose(); onResetNorthStar(); }}
+                      className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-white/[0.04] transition-colors"
+                    >
+                      <div className="flex items-center gap-3">
+                        <Compass size={16} className="text-zinc-400" />
+                        <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Edit North Star</p>
+                      </div>
+                      <ChevronRight size={14} className="text-zinc-300 dark:text-zinc-600" />
+                    </button>
+                  )}
+                  {onLogout && (
+                    <button
+                      onClick={() => { onClose(); onLogout(); }}
+                      className="w-full flex items-center p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-white/[0.04] transition-colors"
+                    >
+                      <div className="flex items-center gap-3">
+                        <LogOut size={16} className="text-rose-500" />
+                        <p className="text-sm font-medium text-rose-500">Sign Out</p>
+                      </div>
+                    </button>
+                  )}
                 </div>
               </section>
             </div>

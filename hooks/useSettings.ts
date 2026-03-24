@@ -18,6 +18,7 @@ const DEFAULT_SETTINGS: UserSettings = {
   accentTheme: 'terracotta',
   cardStyle: 'default',
   defaultWorkMinutes: 25,
+  flaresToggle: true,
 };
 
 function readLocalSettings(): Partial<UserSettings> {
@@ -47,9 +48,12 @@ export function useSettings(uid?: string, userAvatar?: string) {
       return;
     }
 
+    let cancelled = false;
+
     const load = async () => {
       try {
         const settingsDoc = await getDoc(doc(db, 'settings', uid));
+        if (cancelled) return;
         if (settingsDoc.exists()) {
           const firestoreSettings = settingsDoc.data() as Partial<UserSettings>;
           setSettings(prev => {
@@ -61,10 +65,11 @@ export function useSettings(uid?: string, userAvatar?: string) {
       } catch (err) {
         console.error('Failed to load settings from Firestore:', err);
       }
-      setIsLoaded(true);
+      if (!cancelled) setIsLoaded(true);
     };
 
     load();
+    return () => { cancelled = true; };
   }, [uid]);
 
   // Set avatar default when userAvatar becomes available

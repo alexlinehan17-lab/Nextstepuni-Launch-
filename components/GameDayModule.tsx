@@ -70,7 +70,8 @@ const TaperPlanner = () => {
         3: { volume: 40, intensity: 50, activity: 'Flashcards' },
         1: { volume: 10, intensity: 20, activity: 'Strategy Review' },
     };
-    const currentData = taperData[day as keyof typeof taperData] || taperData[Object.keys(taperData).reverse().find(d => parseInt(d) >= day) as any];
+    const taperKey = Object.keys(taperData).reverse().find(d => parseInt(d) >= day) || Object.keys(taperData)[0];
+    const currentData = taperData[day as keyof typeof taperData] || taperData[taperKey as keyof typeof taperData];
 
     return (
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">

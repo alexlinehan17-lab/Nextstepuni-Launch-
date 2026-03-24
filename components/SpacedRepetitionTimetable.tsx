@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ChevronLeft, ChevronRight, BookOpen, RotateCcw, Target,
@@ -14,12 +14,17 @@ import { type SchoolEvent } from './gc/GCKeyEvents';
 import {
   type StudentSubjectProfile, type StudyBlock, DAYS_OF_WEEK, LC_SUBJECTS, getPointsForGrade, type Grade,
   type TimetableCompletions, type TimetableStreak, getBlockId, toDateKey,
+  computeBargains,
 } from './subjectData';
 import {
   computeSubjectPriorities, allocateSessions, generateWeeklyTimetable,
   computeWeeksUntilExam, computeIntensityFactor,
   type SessionAllocation, type SubjectPriority,
 } from './timetableAlgorithm';
+import { type DebriefEntry, computeStrategyHints, type SubjectStrategyHint } from './StudyDebrief';
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from '../firebase';
+import { useTopicMastery } from '../hooks/useTopicMastery';
 
 const MotionDiv = motion.div as any;
 const MotionButton = motion.button as any;
@@ -34,6 +39,7 @@ export interface TimetableBlockInfo {
 
 interface SpacedRepetitionTimetableProps {
   profile: StudentSubjectProfile;
+  uid?: string;
   onOpenSettings: () => void;
   onRestDaysChange?: (restDays: string[]) => void;
   completions?: TimetableCompletions;
@@ -113,79 +119,131 @@ function formatDateShort(date: Date): string {
   return date.toLocaleDateString('en-IE', { month: 'short', day: 'numeric' });
 }
 
-// ─── StudyBlockCard ─────────────────────────────────────────────────────────
+// ─── StudyBlockCard (day-focused full-width design) ─────────────────────────
 
-const StudyBlockCard: React.FC<{ block: StudyBlock; completed?: boolean; skipped?: boolean; onToggle?: () => void }> = ({ block, completed, skipped, onToggle }) => {
+const StudyBlockCard: React.FC<{
+  block: StudyBlock;
+  completed?: boolean;
+  skipped?: boolean;
+  onToggle?: () => void;
+  bargainPts?: number;
+  strategyHint?: SubjectStrategyHint;
+  isToday?: boolean;
+  onStudyNow?: () => void;
+}> = ({ block, completed, skipped, onToggle, bargainPts, strategyHint, isToday, onStudyNow }) => {
   const color = getSubjectColor(block.subjectName);
   const typeConfig = SESSION_TYPE_CONFIG[block.sessionType];
-  const TypeIcon = typeConfig.icon;
 
   if (skipped) {
     return (
-      <div className="p-2 rounded-lg border-2 border-dashed border-zinc-300 dark:border-zinc-600 bg-zinc-50/50 dark:bg-zinc-800/30 opacity-60">
-        <div className="flex items-center gap-1.5 mb-0.5">
-          <div className="w-2 h-2 rounded-full bg-zinc-400 dark:bg-zinc-500 flex-shrink-0" />
-          <p className="text-[10px] font-bold truncate text-zinc-400 dark:text-zinc-500 line-through">{block.subjectName}</p>
-        </div>
-        <div className="flex items-center gap-1 ml-3.5">
-          <span className="text-[9px] text-zinc-400 dark:text-zinc-500 italic">Skipped</span>
+      <div
+        className="py-3 px-4 rounded-xl opacity-50"
+        style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
+      >
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2.5">
+            <div className="w-2.5 h-2.5 rounded-full bg-zinc-400 dark:bg-zinc-500 flex-shrink-0" />
+            <span className="text-sm font-medium text-zinc-400 dark:text-zinc-500 line-through">{block.subjectName}</span>
+          </div>
+          <span className="text-xs text-zinc-400 dark:text-zinc-500 italic">Skipped</span>
         </div>
       </div>
     );
   }
 
   const inner = (
-    <>
-      <div className="flex items-center gap-1.5 mb-0.5">
-        {completed
-          ? <CheckCircle size={10} className="text-emerald-500 dark:text-emerald-400 flex-shrink-0" />
-          : <div className={`w-2 h-2 rounded-full ${color.dot} flex-shrink-0`} />
-        }
-        <p className={`text-[10px] font-bold truncate ${completed ? 'line-through text-emerald-600 dark:text-emerald-400' : color.text}`}>{block.subjectName}</p>
+    <div
+      className="py-3 px-4 rounded-xl transition-all"
+      style={completed
+        ? { backgroundColor: '#EDF2EE', border: '1.5px solid rgba(107,143,113,0.25)', borderRadius: 12, opacity: 0.8 }
+        : { backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }
+      }
+    >
+      {/* Row 1: Subject + session type badge */}
+      <div className="flex items-center justify-between mb-1">
+        <div className="flex items-center gap-2.5 min-w-0 flex-1">
+          {completed
+            ? <CheckCircle size={14} style={{ color: '#6B8F71' }} className="flex-shrink-0" />
+            : <div className={`w-2.5 h-2.5 rounded-full ${color.dot} flex-shrink-0`} />
+          }
+          <span
+            className={`text-sm font-medium ${completed ? 'line-through' : 'text-zinc-700 dark:text-zinc-200'}`}
+            style={completed ? { color: '#6B8F71' } : undefined}
+          >
+            {block.subjectName}
+          </span>
+        </div>
+        <span
+          className="text-[10px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0 ml-2"
+          style={{ backgroundColor: 'rgba(0,0,0,0.04)', color: '#9A9590' }}
+        >
+          {typeConfig.label}
+        </span>
       </div>
-      <div className="flex items-center gap-1 ml-3.5">
-        <TypeIcon size={9} className={completed ? 'text-emerald-400 dark:text-emerald-500' : 'text-zinc-400 dark:text-zinc-500'} />
-        <span className={`text-[9px] ${completed ? 'text-emerald-400 dark:text-emerald-500' : 'text-zinc-400 dark:text-zinc-500'}`}>{typeConfig.label}</span>
-        <span className={`text-[9px] ml-auto ${completed ? 'text-emerald-300 dark:text-emerald-600' : 'text-zinc-300 dark:text-zinc-600'}`}>{block.durationMinutes}m</span>
+
+      {/* Row 2: Duration + Study Now button */}
+      <div className="flex items-center justify-between ml-5">
+        <span className="text-xs text-zinc-400 dark:text-zinc-500">{block.durationMinutes} min</span>
+        {isToday && !completed && onStudyNow && (
+          <button
+            onClick={(e) => { e.stopPropagation(); onStudyNow(); }}
+            className="flex items-center gap-1 text-xs font-semibold px-3 py-1 rounded-lg transition-colors"
+            style={{ backgroundColor: '#2A7D6F', color: '#fff' }}
+          >
+            Study Now <ArrowRight size={12} />
+          </button>
+        )}
       </div>
-    </>
+
+      {/* Row 3: Suggested topics */}
+      {block.suggestedTopics && block.suggestedTopics.length > 0 && !completed && !skipped && (
+        <p className="text-[11px] text-zinc-400 dark:text-zinc-500 ml-5 mt-1.5">
+          Focus: {block.suggestedTopics.join(', ')}
+        </p>
+      )}
+
+      {/* Strategy hint */}
+      {strategyHint && !completed && !skipped && (
+        <p className="text-[11px] text-zinc-400 dark:text-zinc-500 ml-5 mt-0.5">
+          Try: {strategyHint.label} (+{strategyHint.avgGain})
+        </p>
+      )}
+    </div>
   );
 
   if (onToggle) {
     return (
       <MotionButton
-        whileTap={{ scale: 0.97 }}
+        whileTap={{ scale: 0.98 }}
         onClick={onToggle}
-        className={`w-full text-left p-2 rounded-lg border transition-all ${
-          completed
-            ? 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800/40 opacity-75'
-            : `${color.bg} ${color.border}`
-        }`}
+        className="w-full text-left"
       >
         {inner}
       </MotionButton>
     );
   }
 
-  return (
-    <div className={`p-2 rounded-lg ${color.bg} border ${color.border} transition-colors`}>
-      {inner}
-    </div>
-  );
+  return inner;
 };
 
 // ─── Priority Row ───────────────────────────────────────────────────────────
 
 const PRIORITY_BAR_COLORS: Record<string, string> = {
-  High: 'bg-rose-500',
-  Medium: 'bg-amber-500',
-  Low: 'bg-emerald-500',
+  High: '',
+  Medium: '',
+  Low: '',
 };
 
-const PRIORITY_TEXT_COLORS: Record<string, string> = {
-  High: 'text-rose-600 dark:text-rose-400',
-  Medium: 'text-amber-600 dark:text-amber-400',
-  Low: 'text-emerald-600 dark:text-emerald-400',
+const PRIORITY_BAR_INLINE: Record<string, React.CSSProperties> = {
+  High: { backgroundColor: '#2A7D6F' },
+  Medium: { backgroundColor: '#2A7D6F' },
+  Low: { backgroundColor: '#2A7D6F' },
+};
+
+const PRIORITY_BADGE_INLINE: Record<string, React.CSSProperties> = {
+  High: { backgroundColor: '#FDF3E7', color: '#C4873B' },
+  Medium: { backgroundColor: '#F3F2F0', color: '#9A9590' },
+  Low: { backgroundColor: '#F3F2F0', color: '#9A9590' },
 };
 
 const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> = ({ alloc, maxSessions }) => {
@@ -198,30 +256,48 @@ const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> =
         <div className={`w-2.5 h-2.5 rounded-full ${color.dot} flex-shrink-0`} />
         <span className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 truncate">{alloc.subjectName}</span>
       </div>
-      <div className="flex-1 h-3 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden">
+      <div className="flex-1 h-3 rounded-full overflow-hidden" style={{ backgroundColor: '#EDEAE6' }}>
         <motion.div
-          className={`h-full rounded-full ${PRIORITY_BAR_COLORS[alloc.priorityLabel]}`}
+          className="h-full rounded-full"
+          style={PRIORITY_BAR_INLINE[alloc.priorityLabel]}
           initial={{ width: 0 }}
           animate={{ width: `${barWidth}%` }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
         />
       </div>
       <span className="text-xs font-mono font-bold text-zinc-500 dark:text-zinc-400 w-6 text-right">{alloc.sessions}</span>
-      <span className={`text-[9px] font-bold w-12 text-right ${PRIORITY_TEXT_COLORS[alloc.priorityLabel]}`}>{alloc.priorityLabel}</span>
+      <span className="text-[9px] font-bold w-14 text-right px-1.5 py-0.5 rounded-full" style={PRIORITY_BADGE_INLINE[alloc.priorityLabel]}>{alloc.priorityLabel}</span>
     </div>
   );
 };
 
 // ─── Main Component ─────────────────────────────────────────────────────────
 
-const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, points = 0, onOpenShop, onOpenJournal, skippedSessions = [], onStudyNow, onBlockDurationChange, schoolEvents = [] }) => {
+const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, uid, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, points = 0, onOpenShop, onOpenJournal, skippedSessions = [], onStudyNow, onBlockDurationChange, schoolEvents = [] }) => {
   const skippedSet = useMemo(() => new Set(skippedSessions), [skippedSessions]);
   const [weekOffset, setWeekOffset] = useState(0);
-  const [selectedDay, setSelectedDay] = useState(0); // For mobile view
   const [showExplainer, setShowExplainer] = useState(false);
   const [restDays, setRestDays] = useState<Set<string>>(() => new Set(profile.restDays || []));
   const [studyHoursRange, setStudyHoursRange] = useState<'week' | 'month' | 'all'>('week');
   const [blockActionModal, setBlockActionModal] = useState<{ block: StudyBlock; dayIndex: number; blockIndex: number } | null>(null);
+
+  // Topic mastery from War Room -> feeds into timetable weighting
+  const { mastery: topicMastery } = useTopicMastery(uid);
+
+  // Strategy hints from Learning DNA (per-subject best strategy)
+  const [strategyHints, setStrategyHints] = useState<Record<string, SubjectStrategyHint>>({});
+  useEffect(() => {
+    if (!uid) return;
+    let cancelled = false;
+    (async () => {
+      try {
+        const snap = await getDoc(doc(db, 'progress', uid));
+        const data = snap.data()?.studyDebriefs as DebriefEntry[] | undefined;
+        if (!cancelled && data) setStrategyHints(computeStrategyHints(data));
+      } catch (e) { /* silent */ }
+    })();
+    return () => { cancelled = true; };
+  }, [uid]);
 
   const toggleRestDay = (day: string) => {
     setRestDays(prev => {
@@ -235,7 +311,15 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
   const weeksUntilExam = computeWeeksUntilExam(profile.examStartDate);
 
-  const priorities = useMemo(() => computeSubjectPriorities(profile.subjects), [profile.subjects]);
+  const priorities = useMemo(() => computeSubjectPriorities(profile.subjects, topicMastery), [profile.subjects, topicMastery]);
+
+  // Top 3 bargain subjects (for badge display on study blocks)
+  const bargainMap = useMemo(() => {
+    const bargains = computeBargains(profile);
+    const map: Record<string, number> = {};
+    bargains.slice(0, 3).forEach(b => { map[b.subjectName] = b.pointsGain; });
+    return map;
+  }, [profile]);
 
   const restDaysArray = useMemo(() => Array.from(restDays), [restDays]);
 
@@ -253,7 +337,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
       const monthPrefix = `${y}-${m}`;
       filteredKeys = allDateKeys.filter(k => k.startsWith(monthPrefix));
     } else {
-      // 'week' — current Mon–Sun
+      // 'week' -- current Mon-Sun
       const weekStartDate = getWeekStartDate(0);
       const weekEndDate = new Date(weekStartDate);
       weekEndDate.setDate(weekStartDate.getDate() + 6);
@@ -281,8 +365,8 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   const blockDuration = profile.defaultBlockDuration ?? 45;
 
   const timetable = useMemo(
-    () => generateWeeklyTimetable(allocations, weeksUntilExam, weekOffset, restDaysArray, blockDuration),
-    [allocations, weeksUntilExam, weekOffset, restDaysArray, blockDuration]
+    () => generateWeeklyTimetable(allocations, weeksUntilExam, weekOffset, restDaysArray, blockDuration, undefined, topicMastery),
+    [allocations, weeksUntilExam, weekOffset, restDaysArray, blockDuration, topicMastery]
   );
 
   const weekStart = getWeekStartDate(weekOffset);
@@ -399,121 +483,175 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   const todayAllDone = todayTotalCount > 0 && todayCompletedCount >= todayTotalCount;
   const todayProgress = todayTotalCount > 0 ? todayCompletedCount / todayTotalCount : 0;
 
-  // "Next Up" — first uncompleted session today
+  // "Next Up" -- first uncompleted session today
   const nextUpIndex = todayBlocks.findIndex((block, bi) => {
     const blockId = getBlockId(block, bi);
     return !todayCompletedIds.includes(blockId);
   });
   const nextUpBlock = nextUpIndex >= 0 ? todayBlocks[nextUpIndex] : null;
 
+  // View mode: day-focused or week overview
+  const [viewMode, setViewMode] = useState<'day' | 'week'>('day');
+  // Day-focused view: selected day for both mobile and desktop
+  const [selectedDay, setSelectedDay] = useState<number>(isCurrentWeek ? todayDayIndex : 0);
+
+  if (!profile || profile.subjects.length === 0) {
+    return (
+      <div className="text-center py-16 space-y-4">
+        <div className="w-16 h-16 mx-auto flex items-center justify-center" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+          <CalendarDays size={32} style={{ color: '#2A7D6F' }} />
+        </div>
+        <h3 className="text-lg font-bold text-zinc-800 dark:text-white">Your study plan, built around your life</h3>
+        <p className="text-sm text-zinc-500 dark:text-zinc-400 max-w-sm mx-auto leading-relaxed">
+          A weekly timetable weighted by your weakest subjects, with rest days respected and spaced repetition built in.
+        </p>
+        <p className="text-xs text-zinc-400 dark:text-zinc-500">Complete your subject profile to generate your first timetable.</p>
+      </div>
+    );
+  }
+
+  // Check if selected day is a rest day
+  const selectedDayIsRest = restDays.has(DAYS_OF_WEEK[selectedDay]);
+  const selectedDayBlocks = timetable[selectedDay]?.blocks ?? [];
+
   return (
-    <div className="space-y-6">
-      {/* Header */}
+    <div className="space-y-5">
+      {/* ── Header: Title + Settings ── */}
       <div className="flex items-center justify-between">
-        <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">Spaced Repetition Timetable</h2>
+        <h2 className="font-serif text-xl font-semibold text-zinc-900 dark:text-white">Spaced Repetition Timetable</h2>
         <button
           onClick={onOpenSettings}
-          className="p-2.5 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors"
+          className="p-2 rounded-lg transition-colors"
+          style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
           title="Edit subjects"
         >
-          <Settings size={16} className="text-zinc-500 dark:text-zinc-400" />
+          <Settings size={16} style={{ color: '#9A9590' }} />
         </button>
       </div>
 
-      {/* Week navigation */}
+      {/* ── Week navigation + view toggle ── */}
       <div className="flex items-center justify-between">
-        <MotionButton
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          onClick={() => setWeekOffset(o => o - 1)}
-          disabled={weekOffset <= 0}
-          className="p-2 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
-        >
-          <ChevronLeft size={16} className="text-zinc-600 dark:text-zinc-300" />
-        </MotionButton>
-
-        <span className="text-sm font-semibold text-zinc-600 dark:text-zinc-300">
-          {formatDateShort(weekStart)} — {formatDateShort(weekEnd)}
-        </span>
-
-        <MotionButton
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          onClick={() => setWeekOffset(o => o + 1)}
-          className="p-2 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors"
-        >
-          <ChevronRight size={16} className="text-zinc-600 dark:text-zinc-300" />
-        </MotionButton>
+        <div className="flex items-center gap-3">
+          <span className="text-sm font-medium text-zinc-600 dark:text-zinc-300">
+            {formatDateShort(weekStart)} — {formatDateShort(weekEnd)}
+          </span>
+          <div className="flex items-center gap-1">
+            <button
+              onClick={() => setWeekOffset(o => o - 1)}
+              disabled={weekOffset <= 0}
+              className="p-1.5 rounded-lg transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+              style={{ backgroundColor: 'rgba(0,0,0,0.03)', borderRadius: 8 }}
+            >
+              <ChevronLeft size={14} className="text-zinc-500 dark:text-zinc-400" />
+            </button>
+            <button
+              onClick={() => setWeekOffset(o => o + 1)}
+              className="p-1.5 rounded-lg transition-colors"
+              style={{ backgroundColor: 'rgba(0,0,0,0.03)', borderRadius: 8 }}
+            >
+              <ChevronRight size={14} className="text-zinc-500 dark:text-zinc-400" />
+            </button>
+          </div>
+        </div>
+        {/* Day / Week toggle */}
+        <div className="flex items-center gap-1 p-1 rounded-lg" style={{ backgroundColor: 'rgba(0,0,0,0.04)' }}>
+          <button
+            onClick={() => setViewMode('day')}
+            className={`px-3 py-1 text-xs font-medium rounded-md transition-all ${
+              viewMode === 'day'
+                ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-sm'
+                : 'text-zinc-400 dark:text-zinc-500'
+            }`}
+          >
+            Day
+          </button>
+          <button
+            onClick={() => setViewMode('week')}
+            className={`px-3 py-1 text-xs font-medium rounded-md transition-all ${
+              viewMode === 'week'
+                ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-sm'
+                : 'text-zinc-400 dark:text-zinc-500'
+            }`}
+          >
+            Week
+          </button>
+        </div>
       </div>
 
-      {/* Stat pills */}
-      <div className="flex flex-wrap items-center justify-center gap-2">
-        <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700/30">
-          <Clock size={12} className="text-blue-600 dark:text-blue-400" />
-          <span className="text-xs font-bold text-blue-600 dark:text-blue-400">{totalHours}h {remainingMins}m</span>
-        </div>
-        {/* Block duration selector */}
-        <button
-          onClick={() => {
-            const options = [25, 30, 45, 60];
-            const current = blockDuration;
-            const nextIdx = (options.indexOf(current) + 1) % options.length;
-            const next = options[nextIdx] ?? 45;
-            if (onBlockDurationChange) {
-              onBlockDurationChange('', '', next);
-            }
-          }}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-violet-50 dark:bg-violet-900/20 border border-violet-200 dark:border-violet-700/30 hover:bg-violet-100 dark:hover:bg-violet-900/30 transition-colors cursor-pointer"
-          title="Click to change block duration"
-        >
-          <Clock size={12} className="text-violet-600 dark:text-violet-400" />
-          <span className="text-xs font-bold text-violet-600 dark:text-violet-400">{blockDuration}m blocks</span>
-        </button>
+      {/* ── Key stats line ── */}
+      <div className="flex items-center justify-center gap-2 flex-wrap text-xs text-zinc-500 dark:text-zinc-400">
         {streak.currentStreak > 0 && (
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-700/30">
-            <Flame size={12} className="text-orange-600 dark:text-orange-400" />
-            <span className="text-xs font-bold text-orange-600 dark:text-orange-400">{streak.currentStreak} day streak</span>
-          </div>
+          <span className="flex items-center gap-1">
+            <Flame size={13} style={{ color: '#C4873B' }} />
+            <span className="font-semibold" style={{ color: '#C4873B' }}>{streak.currentStreak}-day streak</span>
+          </span>
         )}
+        {streak.currentStreak > 0 && <span style={{ color: '#9A9590' }}>·</span>}
+        <span className="font-medium">{todayCompletedCount}/{todayTotalCount} blocks today</span>
+        <span style={{ color: '#9A9590' }}>·</span>
         <button
           onClick={() => setStudyHoursRange(r => r === 'week' ? 'month' : r === 'month' ? 'all' : 'week')}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-700/30 hover:bg-emerald-100 dark:hover:bg-emerald-900/30 transition-colors cursor-pointer"
+          className="font-medium transition-colors cursor-pointer"
+          style={{ color: '#2A7D6F' }}
           title="Click to cycle: this week / this month / all time"
         >
-          <BarChart3 size={12} className="text-emerald-600 dark:text-emerald-400" />
-          <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">{studiedHours}h {studiedRemainingMins}m</span>
-          <span className="text-[9px] text-emerald-500 dark:text-emerald-500">{studyHoursRangeLabel}</span>
+          {studiedHours}h {studiedRemainingMins}m {studyHoursRangeLabel}
         </button>
-        <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-700/30">
-          <Star size={12} className="text-yellow-600 dark:text-yellow-400" />
-          <span className="text-xs font-bold text-yellow-600 dark:text-yellow-400">{points} pts</span>
-        </div>
-        {onOpenShop && (
-          <button
-            onClick={onOpenShop}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700/30 hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-colors"
-            title="Reward Shop"
-          >
-            <ShoppingBag size={12} className="text-purple-600 dark:text-purple-400" />
-            <span className="text-xs font-bold text-purple-600 dark:text-purple-400">Shop</span>
-          </button>
-        )}
-        {onOpenJournal && (
-          <button
-            onClick={onOpenJournal}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-200 dark:border-indigo-700/30 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors"
-            title="Study Journal"
-          >
-            <BookMarked size={12} className="text-indigo-600 dark:text-indigo-400" />
-            <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400">Journal</span>
-          </button>
-        )}
       </div>
 
-      {/* Rest day toggles */}
+      {/* ── DAY VIEW ── */}
+      {viewMode === 'day' && (<>
+      {/* ── Day Tabs (horizontal pill selector) ── */}
+      <div className="flex gap-1 p-1 rounded-xl overflow-x-auto" style={{ backgroundColor: 'rgba(0,0,0,0.04)' }}>
+        {DAY_SHORTS.map((day, i) => {
+          const dayName = DAYS_OF_WEEK[i];
+          const isDayRest = restDays.has(dayName);
+          const isActive = selectedDay === i;
+          const isTodayTab = isCurrentWeek && i === todayDayIndex;
+          const dayBlockCount = timetable[i].blocks.length;
+
+          return (
+            <button
+              key={day}
+              onClick={() => setSelectedDay(i)}
+              className={`flex-1 min-w-0 py-2 px-1 rounded-lg text-center transition-all ${
+                isActive
+                  ? 'bg-white dark:bg-zinc-800 shadow-sm'
+                  : ''
+              }`}
+              style={isActive ? { borderRadius: 10 } : undefined}
+            >
+              <span
+                className={`block text-xs font-bold ${
+                  isActive && isTodayTab
+                    ? ''
+                    : isActive
+                      ? 'text-zinc-800 dark:text-zinc-200'
+                      : isDayRest
+                        ? 'text-zinc-400 dark:text-zinc-500'
+                        : 'text-zinc-500 dark:text-zinc-400'
+                }`}
+                style={isActive && isTodayTab ? { color: '#2A7D6F' } : undefined}
+              >
+                <span className="relative inline-block">
+                  {day}
+                  {getEventsForDay(i).length > 0 && (
+                    <span className="absolute -top-0.5 -right-1.5 w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#C4873B' }} />
+                  )}
+                </span>
+              </span>
+              <span className={`block text-[10px] mt-0.5 ${isDayRest ? 'text-zinc-400 dark:text-zinc-500 italic' : 'text-zinc-400 dark:text-zinc-500'}`}>
+                {isDayRest ? 'rest' : dayBlockCount}
+              </span>
+            </button>
+          );
+        })}
+      </div>
+
+      {/* ── Rest day toggle (long-press hint) ── */}
       <div className="flex items-center gap-2">
-        <CalendarOff size={14} className="text-zinc-400 dark:text-zinc-500 flex-shrink-0" />
-        <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 flex-shrink-0">Rest</span>
+        <CalendarOff size={13} style={{ color: '#9A9590' }} className="flex-shrink-0" />
+        <span className="text-[10px] font-bold uppercase tracking-wider flex-shrink-0" style={{ color: '#9A9590' }}>Rest</span>
         <div className="flex gap-1 flex-1">
           {DAY_SHORTS.map((short, i) => {
             const dayName = DAYS_OF_WEEK[i];
@@ -522,11 +660,11 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
               <button
                 key={dayName}
                 onClick={() => toggleRestDay(dayName)}
-                className={`flex-1 py-1 rounded-md text-[10px] font-bold transition-all border ${
-                  isRest
-                    ? 'bg-rose-100 dark:bg-rose-900/30 border-rose-300 dark:border-rose-600 text-rose-600 dark:text-rose-400 line-through'
-                    : 'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:border-rose-300 dark:hover:border-rose-600'
-                }`}
+                className="flex-1 py-1 rounded-md text-[10px] font-bold transition-all"
+                style={isRest
+                  ? { backgroundColor: 'rgba(196,135,59,0.1)', border: '0.5px solid rgba(196,135,59,0.3)', color: '#C4873B', textDecoration: 'line-through' }
+                  : { backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', color: '#9A9590' }
+                }
                 title={isRest ? `${dayName}: rest day` : `${dayName}: study day`}
               >
                 {short}
@@ -536,27 +674,27 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         </div>
       </div>
 
-      {/* Today Focus View */}
-      {showTodayView && (
+      {/* ── Today Summary Card (shown when today is selected) ── */}
+      {showTodayView && selectedDay === todayDayIndex && (
         <MotionDiv
-          initial={{ opacity: 0, y: -10 }}
+          initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 rounded-xl p-5"
+          className="p-4 rounded-xl"
+          style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
         >
           <div className="flex items-center gap-4">
             {/* Progress Ring */}
-            <div className="relative w-16 h-16 flex-shrink-0">
-              <svg viewBox="0 0 48 48" className="w-16 h-16 -rotate-90">
+            <div className="relative w-14 h-14 flex-shrink-0">
+              <svg viewBox="0 0 48 48" className="w-14 h-14 -rotate-90">
                 <circle cx="24" cy="24" r="20" fill="none" strokeWidth="3"
-                  className="stroke-zinc-200 dark:stroke-white/10" />
+                  stroke="rgba(0,0,0,0.06)" />
                 <motion.circle
                   cx="24" cy="24" r="20" fill="none" strokeWidth="3"
                   strokeLinecap="round"
-                  className="stroke-emerald-500"
                   initial={{ strokeDashoffset: 2 * Math.PI * 20 }}
                   animate={{ strokeDashoffset: 2 * Math.PI * 20 * (1 - todayProgress) }}
                   transition={{ duration: 0.6, ease: 'easeOut' }}
-                  style={{ strokeDasharray: 2 * Math.PI * 20 }}
+                  style={{ strokeDasharray: 2 * Math.PI * 20, stroke: '#2A7D6F' }}
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
@@ -568,19 +706,19 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
             {/* Today Info */}
             <div className="flex-1 min-w-0">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-1">Today</p>
+              <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#9A9590' }}>Today</p>
               {todayAllDone ? (
                 <div>
-                  <p className="text-sm font-bold text-emerald-600 dark:text-emerald-400">All done for today!</p>
-                  <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-0.5">Great work. Rest up and come back tomorrow.</p>
+                  <p className="text-sm font-bold" style={{ color: '#6B8F71' }}>All done for today!</p>
+                  <p className="text-xs mt-0.5" style={{ color: '#9A9590' }}>Great work. Rest up and come back tomorrow.</p>
                 </div>
               ) : nextUpBlock ? (
                 <div>
-                  <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-1">Next up</p>
+                  <p className="text-xs mb-1" style={{ color: '#9A9590' }}>Next up</p>
                   <div className="flex items-center gap-2">
                     <div className={`w-2.5 h-2.5 rounded-full ${getSubjectColor(nextUpBlock.subjectName).dot} flex-shrink-0`} />
-                    <span className="text-sm font-bold text-zinc-800 dark:text-zinc-200 truncate">{nextUpBlock.subjectName}</span>
-                    <span className="text-xs text-zinc-400 dark:text-zinc-500 flex-shrink-0">{SESSION_TYPE_CONFIG[nextUpBlock.sessionType].label} · {nextUpBlock.durationMinutes}m</span>
+                    <span className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">{nextUpBlock.subjectName}</span>
+                    <span className="text-xs" style={{ color: '#9A9590' }}>{SESSION_TYPE_CONFIG[nextUpBlock.sessionType].label} · {nextUpBlock.durationMinutes}m</span>
                   </div>
                 </div>
               ) : null}
@@ -603,110 +741,157 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         </MotionDiv>
       )}
 
-      {/* Mobile: Day selector tabs */}
-      <div className="md:hidden flex gap-1 overflow-x-auto pb-1">
-        {DAY_SHORTS.map((day, i) => (
-          <button
-            key={day}
-            onClick={() => setSelectedDay(i)}
-            className={`flex-1 min-w-0 px-2 py-2 rounded-lg text-xs font-bold text-center transition-colors ${
-              selectedDay === i
-                ? 'bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 border border-purple-300 dark:border-purple-600'
-                : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700'
-            }`}
-          >
-            <span className="relative inline-block">
-              {day}
-              {getEventsForDay(i).length > 0 && (
-                <span className="absolute -top-0.5 -right-1.5 w-1.5 h-1.5 rounded-full bg-amber-500" />
-              )}
-            </span>
-            <span className="block text-[9px] font-normal mt-0.5">{timetable[i].blocks.length}</span>
-          </button>
-        ))}
-      </div>
+      {/* ── Day Content: Full-width block cards ── */}
+      <AnimatePresence mode="wait">
+        <MotionDiv
+          key={selectedDay}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.2 }}
+          className="space-y-2"
+        >
+          {/* School events for this day */}
+          {getEventsForDay(selectedDay).map(ev => {
+            const cat = EVENT_CAT_COLORS[ev.category] || EVENT_CAT_COLORS.other;
+            return (
+              <div key={ev.id} className={`flex items-center gap-2 px-3 py-2 rounded-xl ${cat.bg}`} style={{ borderRadius: 12 }}>
+                <div className={`w-2 h-2 rounded-full flex-shrink-0 ${cat.dot}`} />
+                <CalendarDays size={13} className={cat.text} />
+                <span className={`text-xs font-semibold ${cat.text}`}>{ev.title}</span>
+              </div>
+            );
+          })}
 
-      {/* Mobile: Single day view */}
-      <div className="md:hidden">
-        <AnimatePresence mode="wait">
-          <MotionDiv
-            key={selectedDay}
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -20 }}
-            transition={{ duration: 0.2 }}
-            className="space-y-2"
-          >
-            {getEventsForDay(selectedDay).map(ev => {
-              const cat = EVENT_CAT_COLORS[ev.category] || EVENT_CAT_COLORS.other;
+          {/* Blocks or rest state */}
+          {selectedDayIsRest || selectedDayBlocks.length === 0 ? (
+            <div className="flex flex-col items-center justify-center py-12 space-y-3">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(0,0,0,0.03)' }}>
+                <CalendarOff size={24} style={{ color: '#9A9590' }} />
+              </div>
+              <p className="text-sm font-medium" style={{ color: '#9A9590' }}>Rest day — recharge for tomorrow</p>
+            </div>
+          ) : (
+            selectedDayBlocks.map((block, bi) => {
+              const isDayToday = isCurrentWeek && selectedDay === todayDayIndex;
+              const blockCompleted = isBlockCompleted(selectedDay, bi, block);
               return (
-                <div key={ev.id} className={`flex items-center gap-2 px-3 py-2 rounded-lg border border-zinc-200/50 dark:border-white/10 ${cat.bg}`}>
-                  <div className={`w-2 h-2 rounded-full flex-shrink-0 ${cat.dot}`} />
-                  <CalendarDays size={13} className={cat.text} />
-                  <span className={`text-xs font-semibold truncate ${cat.text}`}>{ev.title}</span>
-                </div>
-              );
-            })}
-            {timetable[selectedDay].blocks.length > 0 ? (
-              timetable[selectedDay].blocks.map((block, bi) => (
                 <StudyBlockCard
                   key={bi}
                   block={block}
-                  completed={isBlockCompleted(selectedDay, bi, block)}
+                  completed={blockCompleted}
                   skipped={isBlockSkipped(selectedDay, bi, block)}
                   onToggle={onToggleCompletion ? () => handleBlockToggle(selectedDay, bi, block) : undefined}
+                  bargainPts={bargainMap[block.subjectName]}
+                  strategyHint={strategyHints[block.subjectName]}
+                  isToday={isDayToday}
+                  onStudyNow={isDayToday && !blockCompleted && onStudyNow ? () => {
+                    const dateKey = getDateKeyForDay(selectedDay);
+                    const blockId = getBlockId(block, bi);
+                    onStudyNow({
+                      subject: block.subjectName,
+                      sessionType: block.sessionType,
+                      durationMinutes: block.durationMinutes,
+                      dateKey,
+                      blockId,
+                    });
+                  } : undefined}
                 />
-              ))
-            ) : (
-              <div className="text-center py-8 text-zinc-400 dark:text-zinc-500 text-sm">Rest day</div>
-            )}
-          </MotionDiv>
-        </AnimatePresence>
-      </div>
+              );
+            })
+          )}
+        </MotionDiv>
+      </AnimatePresence>
+      </>)}
 
-      {/* Desktop: 7-column grid */}
-      <div className="hidden md:grid grid-cols-7 gap-2">
-        {timetable.map((day, di) => (
-          <div key={day.day} className="min-w-0">
-            <div className="text-center mb-2">
-              <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">{DAY_SHORTS[di]}</p>
-              <p className="text-[9px] text-zinc-300 dark:text-zinc-600">{day.blocks.length} sessions</p>
-            </div>
-            <div className="space-y-1.5 min-h-[120px]">
-              {getEventsForDay(di).map(ev => {
-                const cat = EVENT_CAT_COLORS[ev.category] || EVENT_CAT_COLORS.other;
-                return (
-                  <div key={ev.id} className={`flex items-center gap-1 px-1.5 py-1 rounded-md ${cat.bg}`}>
-                    <div className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${cat.dot}`} />
-                    <span className={`text-[9px] font-semibold truncate ${cat.text}`}>{ev.title}</span>
+      {/* ── WEEK VIEW ── */}
+      {viewMode === 'week' && (
+        <div className="overflow-x-auto">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 6 }}>
+            {DAY_SHORTS.map((day, i) => {
+              const dayName = DAYS_OF_WEEK[i];
+              const isDayRest = restDays.has(dayName);
+              const isTodayCol = isCurrentWeek && i === todayDayIndex;
+              const dayBlocks = timetable[i]?.blocks ?? [];
+              const dateKey = getDateKeyForDay(i);
+              const dayCompletions = completions[dateKey] || [];
+
+              return (
+                <div key={day} className="min-w-0">
+                  {/* Day header */}
+                  <div className={`text-center py-2 mb-2 rounded-lg ${isTodayCol ? 'font-bold' : ''}`}>
+                    <span
+                      className={`text-xs font-bold ${isTodayCol ? '' : 'text-zinc-500 dark:text-zinc-400'}`}
+                      style={isTodayCol ? { color: '#2A7D6F' } : undefined}
+                    >
+                      {day}
+                    </span>
+                    <span className="block text-[10px] text-zinc-400 dark:text-zinc-500">
+                      {isDayRest ? 'rest' : `${dayBlocks.length}`}
+                    </span>
                   </div>
-                );
-              })}
-              {day.blocks.length > 0 ? (
-                day.blocks.map((block, bi) => (
-                  <StudyBlockCard
-                    key={bi}
-                    block={block}
-                    completed={isBlockCompleted(di, bi, block)}
-                    skipped={isBlockSkipped(di, bi, block)}
-                    onToggle={onToggleCompletion ? () => handleBlockToggle(di, bi, block) : undefined}
-                  />
-                ))
-              ) : (
-                <div className="flex items-center justify-center h-24 text-[10px] text-zinc-300 dark:text-zinc-600 italic">Rest</div>
-              )}
-            </div>
-          </div>
-        ))}
-      </div>
 
-      {/* Priority Breakdown */}
-      <div className="bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 rounded-xl p-6">
+                  {/* Blocks */}
+                  {isDayRest ? (
+                    <div className="py-6 text-center">
+                      <span className="text-[10px] italic" style={{ color: '#9A9590' }}>Rest</span>
+                    </div>
+                  ) : dayBlocks.length === 0 ? (
+                    <div className="py-6 text-center">
+                      <span className="text-[10px]" style={{ color: '#9A9590' }}>—</span>
+                    </div>
+                  ) : (
+                    <div className="space-y-1.5">
+                      {dayBlocks.map((block, bi) => {
+                        const blockId = getBlockId(block, bi);
+                        const isCompleted = dayCompletions.includes(blockId);
+                        const subjectColor = getSubjectColor(block.subjectName);
+
+                        return (
+                          <button
+                            key={blockId}
+                            onClick={() => { setViewMode('day'); setSelectedDay(i); }}
+                            className="w-full text-left p-2 rounded-lg transition-all hover:shadow-sm"
+                            style={{
+                              backgroundColor: isCompleted ? 'rgba(107,143,113,0.08)' : '#FAF7F4',
+                              border: `0.5px solid ${isCompleted ? 'rgba(107,143,113,0.2)' : 'rgba(0,0,0,0.07)'}`,
+                              borderRadius: 10,
+                              opacity: isCompleted ? 0.7 : 1,
+                            }}
+                          >
+                            <div className="flex items-center gap-1.5 mb-0.5">
+                              {isCompleted ? (
+                                <CheckCircle size={10} style={{ color: '#6B8F71' }} className="flex-shrink-0" />
+                              ) : (
+                                <div className={`w-2 h-2 rounded-full flex-shrink-0 ${subjectColor.dot}`} />
+                              )}
+                              <span className={`text-[11px] font-semibold truncate ${isCompleted ? 'line-through' : 'text-zinc-700 dark:text-zinc-300'}`} style={isCompleted ? { color: '#6B8F71' } : undefined}>
+                                {block.subjectName}
+                              </span>
+                            </div>
+                            <span className="text-[9px] ml-3.5" style={{ color: '#9A9590' }}>
+                              {SESSION_TYPE_CONFIG[block.sessionType].label}
+                            </span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* ── Priority Breakdown ── */}
+      <div className="p-5 rounded-xl" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
         <div className="flex items-center justify-between mb-4">
-          <h3 className="font-bold text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-400">Priority Breakdown</h3>
+          <h3 className="font-bold text-xs uppercase tracking-widest" style={{ color: '#9A9590' }}>Priority Breakdown</h3>
           <button
             onClick={() => setShowExplainer(!showExplainer)}
-            className="flex items-center gap-1.5 text-xs font-semibold text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors"
+            className="flex items-center gap-1.5 text-xs font-semibold transition-colors"
+            style={{ color: '#2A7D6F' }}
           >
             <HelpCircle size={14} />
             {showExplainer ? 'Hide explanation' : 'How is this calculated?'}
@@ -721,7 +906,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         </div>
       </div>
 
-      {/* Priority Explainer */}
+      {/* ── Priority Explainer ── */}
       <AnimatePresence>
         {showExplainer && (
           <MotionDiv
@@ -731,42 +916,42 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="overflow-hidden"
           >
-            <div className="bg-white/50 dark:bg-white/5 backdrop-blur-2xl border border-zinc-200/50 dark:border-white/10 rounded-xl p-6 space-y-6">
+            <div className="p-5 rounded-xl space-y-6" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
               {/* How it works */}
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <h4 className="font-bold text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-400">How Your Timetable Is Built</h4>
-                  <button onClick={() => setShowExplainer(false)} className="text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
+                  <h4 className="font-bold text-xs uppercase tracking-widest" style={{ color: '#9A9590' }}>How Your Timetable Is Built</h4>
+                  <button onClick={() => setShowExplainer(false)} className="transition-colors" style={{ color: '#9A9590' }}>
                     <X size={16} />
                   </button>
                 </div>
                 <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed mb-4">
-                  Each subject gets a <span className="font-bold text-purple-600 dark:text-purple-400">priority score</span> that determines how many study sessions it receives each week. The score combines two factors:
+                  Each subject gets a <span className="font-bold" style={{ color: '#2A7D6F' }}>priority score</span> that determines how many study sessions it receives each week. The score combines two factors:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
-                  <div className="p-4 rounded-xl bg-blue-50 dark:bg-blue-900/15 border border-blue-200 dark:border-blue-700/30">
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-1">Points Gain</p>
+                  <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+                    <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#2A7D6F' }}>Points Gain</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
                       The CAO points difference between your target grade and current grade. Bigger gaps = more room to grow = higher priority.
                     </p>
                   </div>
-                  <div className="p-4 rounded-xl bg-amber-50 dark:bg-amber-900/15 border border-amber-200 dark:border-amber-700/30">
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400 mb-1">Efficiency Multiplier</p>
+                  <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+                    <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#C4873B' }}>Efficiency Multiplier</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
                       Subjects where you're currently weaker get a boost. Going from H2 to H1 is much harder than H7 to H5 — your study time is better spent where grade jumps come more easily.
                     </p>
                   </div>
                 </div>
-                <div className="p-3 rounded-lg bg-zinc-100 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700/30 text-center">
+                <div className="p-3 rounded-xl text-center" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
                   <p className="text-xs font-mono font-bold text-zinc-600 dark:text-zinc-300">
-                    Priority Score = Points Gain <span className="text-purple-500">x</span> Difficulty Multiplier
+                    Priority Score = Points Gain <span style={{ color: '#2A7D6F' }}>x</span> Difficulty Multiplier
                   </p>
                 </div>
               </div>
 
               {/* Per-subject breakdown */}
               <div>
-                <h4 className="font-bold text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-3">Your Subject Scores</h4>
+                <h4 className="font-bold text-xs uppercase tracking-widest mb-3" style={{ color: '#9A9590' }}>Your Subject Scores</h4>
                 <div className="space-y-2">
                   {priorities.map(p => {
                     const color = getSubjectColor(p.subjectName);
@@ -774,21 +959,22 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                     const barPct = (p.priorityScore / maxPriority) * 100;
 
                     return (
-                      <div key={p.subjectName} className="p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.03] border border-zinc-200/50 dark:border-white/[0.06]">
+                      <div key={p.subjectName} className="p-3 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
                         <div className="flex items-center justify-between mb-2">
                           <div className="flex items-center gap-2">
                             <div className={`w-2.5 h-2.5 rounded-full ${color.dot} flex-shrink-0`} />
                             <span className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{p.subjectName}</span>
                           </div>
-                          <span className="text-sm font-mono font-bold text-purple-600 dark:text-purple-400">
+                          <span className="text-sm font-mono font-bold" style={{ color: '#2A7D6F' }}>
                             {Math.round(p.priorityScore)}
                           </span>
                         </div>
 
                         {/* Score visualisation bar */}
-                        <div className="h-1.5 bg-zinc-200 dark:bg-zinc-700 rounded-full overflow-hidden mb-2.5">
+                        <div className="h-1.5 rounded-full overflow-hidden mb-2.5" style={{ backgroundColor: '#EDEAE6' }}>
                           <motion.div
-                            className="h-full rounded-full bg-purple-500"
+                            className="h-full rounded-full"
+                            style={{ backgroundColor: '#2A7D6F' }}
                             initial={{ width: 0 }}
                             animate={{ width: `${barPct}%` }}
                             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
@@ -797,24 +983,24 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
                         {/* Breakdown chips */}
                         <div className="flex flex-wrap items-center gap-2 text-[10px]">
-                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 font-semibold">
+                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-semibold" style={{ backgroundColor: 'rgba(0,0,0,0.04)', color: '#9A9590' }}>
                             {p.currentGrade} <ArrowRight size={8} /> {p.targetGrade}
                           </span>
-                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-bold">
+                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-bold" style={{ backgroundColor: 'rgba(42,125,111,0.1)', color: '#2A7D6F' }}>
                             +{p.pointsGain} pts{p.isMaths ? ' (incl. bonus)' : ''}
                           </span>
-                          <span className="text-zinc-400 dark:text-zinc-500 font-mono">x</span>
-                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 font-bold">
+                          <span className="font-mono" style={{ color: '#9A9590' }}>x</span>
+                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-bold" style={{ backgroundColor: 'rgba(196,135,59,0.1)', color: '#C4873B' }}>
                             {p.difficultyMultiplier.toFixed(2)} efficiency
                           </span>
-                          <span className="text-zinc-400 dark:text-zinc-500 font-mono">=</span>
-                          <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 font-bold">
+                          <span className="font-mono" style={{ color: '#9A9590' }}>=</span>
+                          <span className="inline-flex items-center px-2 py-0.5 rounded-full font-bold" style={{ backgroundColor: '#FAF7F4', color: '#2A7D6F' }}>
                             {Math.round(p.priorityScore)}
                           </span>
                         </div>
 
                         {/* Explanation sentence */}
-                        <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-2 leading-relaxed">
+                        <p className="text-[10px] mt-2 leading-relaxed" style={{ color: '#9A9590' }}>
                           {p.pointsGain === 0
                             ? `Already at your target — this subject receives minimum sessions to maintain.`
                             : p.difficultyMultiplier >= 0.7
@@ -830,7 +1016,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                 </div>
               </div>
 
-              {/* Projected CAO Points — Best 6 */}
+              {/* Projected CAO Points -- Best 6 */}
               {(() => {
                 // Compute target points per subject
                 const subjectTargetPoints = priorities.map(p => {
@@ -856,27 +1042,27 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                 return (
                   <div className="space-y-3">
                     {/* Projected total */}
-                    <div className="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-900/15 border border-emerald-200 dark:border-emerald-700/30">
-                      <p className="text-[10px] font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-2">Projected CAO Points (Best 6)</p>
+                    <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+                      <p className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: '#6B8F71' }}>Projected CAO Points (Best 6)</p>
                       <div className="flex items-baseline gap-2 mb-3">
-                        <p className="text-4xl font-bold font-mono text-emerald-600 dark:text-emerald-400">{projectedTotal}</p>
-                        <p className="text-sm text-emerald-500 dark:text-emerald-500 font-semibold">/ 625</p>
+                        <p className="text-4xl font-bold font-mono" style={{ color: '#2A7D6F' }}>{projectedTotal}</p>
+                        <p className="text-sm font-semibold" style={{ color: '#9A9590' }}>/ 625</p>
                       </div>
                       <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
-                        If you hit your target grade in every subject, your <span className="font-bold">best 6</span> will total <span className="font-bold text-emerald-600 dark:text-emerald-400">{projectedTotal} points</span>. Only your top 6 subjects count for CAO.
+                        If you hit your target grade in every subject, your <span className="font-bold">best 6</span> will total <span className="font-bold" style={{ color: '#2A7D6F' }}>{projectedTotal} points</span>. Only your top 6 subjects count for CAO.
                       </p>
                       <div className="mt-3 space-y-1">
                         {best6.map((s, i) => (
-                          <div key={s.subjectName} className="flex items-center justify-between text-xs">
+                          <div key={s.subjectName} className="flex items-center justify-between text-xs py-1" style={{ borderBottom: i < best6.length - 1 ? '0.5px solid rgba(0,0,0,0.05)' : 'none' }}>
                             <div className="flex items-center gap-2">
-                              <span className="text-[10px] font-bold text-emerald-500 dark:text-emerald-400 w-3">{i + 1}.</span>
+                              <span className="text-[10px] font-bold w-3" style={{ color: '#6B8F71' }}>{i + 1}.</span>
                               <div className={`w-2 h-2 rounded-full ${getSubjectColor(s.subjectName).dot}`} />
                               <span className="font-semibold text-zinc-700 dark:text-zinc-300">{s.subjectName}</span>
-                              {s.isMaths && <span className="text-[9px] text-indigo-500 dark:text-indigo-400 font-bold">+25</span>}
+                              {s.isMaths && <span className="text-[9px] font-bold" style={{ color: '#2A7D6F' }}>+25</span>}
                             </div>
                             <div className="flex items-center gap-2">
-                              <span className="text-zinc-400 dark:text-zinc-500 font-medium">{s.targetGrade}</span>
-                              <span className="font-mono font-bold text-emerald-600 dark:text-emerald-400">{s.targetPoints}</span>
+                              <span style={{ color: '#9A9590' }} className="font-medium">{s.targetGrade}</span>
+                              <span className="font-mono font-bold" style={{ color: '#2A7D6F' }}>{s.targetPoints}</span>
                             </div>
                           </div>
                         ))}
@@ -885,10 +1071,10 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
                     {/* Deprioritise suggestion */}
                     {deprioritiseCandidates.length > 0 && (
-                      <div className="p-4 rounded-xl bg-amber-50 dark:bg-amber-900/15 border border-amber-200 dark:border-amber-700/30">
+                      <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(196,135,59,0.06)', border: '0.5px solid rgba(196,135,59,0.2)', borderRadius: 12 }}>
                         <div className="flex items-start gap-2 mb-2">
-                          <AlertTriangle size={14} className="text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
-                          <p className="text-[10px] font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400">Subjects Outside Your Best 6</p>
+                          <AlertTriangle size={14} style={{ color: '#C4873B' }} className="flex-shrink-0 mt-0.5" />
+                          <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: '#C4873B' }}>Subjects Outside Your Best 6</p>
                         </div>
                         <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed mb-3">
                           Based on your target grades, <span className="font-bold">{deprioritiseCandidates.map(s => s.subjectName).join(' and ')}</span> {deprioritiseCandidates.length === 1 ? 'falls' : 'fall'} outside your top 6. Since only your best 6 count for CAO, you could consider focusing less time here and more on your counting subjects.
@@ -896,20 +1082,20 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
                         <div className="space-y-1 mb-3">
                           {deprioritiseCandidates.map(s => (
-                            <div key={s.subjectName} className="flex items-center justify-between text-xs p-2 rounded-lg bg-amber-100/50 dark:bg-amber-900/20">
+                            <div key={s.subjectName} className="flex items-center justify-between text-xs p-2 rounded-lg" style={{ backgroundColor: 'rgba(196,135,59,0.06)' }}>
                               <div className="flex items-center gap-2">
                                 <div className={`w-2 h-2 rounded-full ${getSubjectColor(s.subjectName).dot}`} />
                                 <span className="font-semibold text-zinc-700 dark:text-zinc-300">{s.subjectName}</span>
                               </div>
-                              <span className="font-mono text-amber-600 dark:text-amber-400 font-bold">{s.targetGrade} — {s.targetPoints} pts</span>
+                              <span className="font-mono font-bold" style={{ color: '#C4873B' }}>{s.targetGrade} — {s.targetPoints} pts</span>
                             </div>
                           ))}
                         </div>
 
-                        <div className="p-3 rounded-lg bg-rose-50 dark:bg-rose-900/15 border border-rose-200 dark:border-rose-700/30">
+                        <div className="p-3 rounded-lg" style={{ backgroundColor: 'rgba(196,135,59,0.06)', border: '0.5px solid rgba(196,135,59,0.15)', borderRadius: 10 }}>
                           <div className="flex items-start gap-2">
-                            <AlertTriangle size={12} className="text-rose-500 dark:text-rose-400 flex-shrink-0 mt-0.5" />
-                            <p className="text-[10px] text-rose-700 dark:text-rose-300 leading-relaxed">
+                            <AlertTriangle size={12} style={{ color: '#C4873B' }} className="flex-shrink-0 mt-0.5" />
+                            <p className="text-[10px] leading-relaxed" style={{ color: '#C4873B' }}>
                               <span className="font-bold">High-risk strategy.</span> Only deprioritise a subject if you're confident you're significantly stronger in at least 6 others. Unexpected results on exam day can mean a "safe" subject becomes the one you need. The timetable still allocates minimum sessions to every subject for safety.
                             </p>
                           </div>
@@ -921,10 +1107,10 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
               })()}
 
               {/* Session count & intensity note */}
-              <div className="p-4 rounded-xl bg-purple-50 dark:bg-purple-900/15 border border-purple-200 dark:border-purple-700/30">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400 mb-1">Session Allocation</p>
+              <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+                <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#2A7D6F' }}>Session Allocation</p>
                 <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
-                  Sessions are split proportionally by priority score, with a minimum of 1 per subject. The total number of sessions per week ramps from <span className="font-bold">14</span> (2/day) to <span className="font-bold">21</span> (3/day) as exams approach. Right now you're at <span className="font-bold text-purple-600 dark:text-purple-400">{totalSessions} sessions</span> this week.
+                  Sessions are split proportionally by priority score, with a minimum of 1 per subject. The total number of sessions per week ramps from <span className="font-bold">14</span> (2/day) to <span className="font-bold">21</span> (3/day) as exams approach. Right now you're at <span className="font-bold" style={{ color: '#2A7D6F' }}>{totalSessions} sessions</span> this week.
                 </p>
               </div>
             </div>
@@ -932,10 +1118,10 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         )}
       </AnimatePresence>
 
-      {/* Intensity indicator */}
+      {/* ── Intensity indicator ── */}
       {weekOffset > 0 && (
         <div className="text-center">
-          <p className="text-xs text-zinc-400 dark:text-zinc-500">
+          <p className="text-xs" style={{ color: '#9A9590' }}>
             Intensity: {Math.round(computeIntensityFactor(Math.max(0, weeksUntilExam - weekOffset)) * 100)}% — {
               Math.max(0, weeksUntilExam - weekOffset)
             } weeks to exam
@@ -943,7 +1129,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         </div>
       )}
 
-      {/* Study Now / Already Studied modal */}
+      {/* ── Study Now / Already Studied modal ── */}
       <AnimatePresence>
         {blockActionModal && (
           <MotionDiv
@@ -954,11 +1140,12 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
             onClick={() => setBlockActionModal(null)}
           >
             <MotionDiv
-              initial={{ scale: 0.9, opacity: 0 }}
+              initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
+              exit={{ scale: 0.95, opacity: 0 }}
               transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-6 w-full max-w-xs shadow-xl space-y-5"
+              className="w-full max-w-xs space-y-5 p-6"
+              style={{ backgroundColor: '#fff', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 16 }}
               onClick={(e: React.MouseEvent) => e.stopPropagation()}
             >
               {/* Block info */}
@@ -967,7 +1154,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                   <div className={`w-3 h-3 rounded-full ${getSubjectColor(blockActionModal.block.subjectName).dot}`} />
                   <h3 className="text-lg font-bold text-zinc-800 dark:text-white">{blockActionModal.block.subjectName}</h3>
                 </div>
-                <p className="text-sm text-zinc-500">
+                <p className="text-sm" style={{ color: '#9A9590' }}>
                   {SESSION_TYPE_CONFIG[blockActionModal.block.sessionType].label} · {blockActionModal.block.durationMinutes} min
                 </p>
               </div>
@@ -976,19 +1163,22 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
               <div className="space-y-3">
                 <button
                   onClick={handleStudyNow}
-                  className="w-full py-3.5 rounded-xl text-sm font-bold bg-[var(--accent-hex)] text-white shadow-lg shadow-[rgba(var(--accent),0.25)] hover:shadow-[rgba(var(--accent),0.4)] active:scale-[0.98] transition-all"
+                  className="w-full py-3.5 rounded-xl text-sm font-bold text-white active:scale-[0.98] transition-all"
+                  style={{ backgroundColor: '#2A7D6F', borderRadius: 12 }}
                 >
                   Study Now
                 </button>
                 <button
                   onClick={handleAlreadyStudied}
-                  className="w-full py-3 rounded-xl text-sm font-medium text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-all"
+                  className="w-full py-3 rounded-xl text-sm font-medium transition-all"
+                  style={{ backgroundColor: '#FAF7F4', color: '#9A9590', borderRadius: 12 }}
                 >
                   Already Studied (+2 pts)
                 </button>
                 <button
                   onClick={() => setBlockActionModal(null)}
-                  className="w-full py-2 text-sm text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
+                  className="w-full py-2 text-sm transition-colors"
+                  style={{ color: '#9A9590' }}
                 >
                   Cancel
                 </button>

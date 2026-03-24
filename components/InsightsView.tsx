@@ -10,7 +10,6 @@ import {
   Zap, BookOpen, Calendar, Target,
 } from 'lucide-react';
 import { type StreakData } from '../hooks/useStreak';
-import { type MoodEntry } from '../hooks/useMood';
 import { type StrategyMasteryMap } from '../types';
 import { useInsights, type Insight } from '../hooks/useInsights';
 
@@ -34,7 +33,6 @@ const ICON_MAP: Record<string, React.FC<{ size?: number; className?: string }>> 
 interface InsightsViewProps {
   uid: string;
   streak: StreakData;
-  moodEntries: MoodEntry[];
   strategyMastery: StrategyMasteryMap;
   onBack: () => void;
 }
@@ -72,8 +70,8 @@ function InsightCard({ insight, index }: { insight: Insight; index: number }) {
   );
 }
 
-const InsightsView: React.FC<InsightsViewProps> = ({ uid, streak, moodEntries, strategyMastery, onBack }) => {
-  const { insights, isLoaded } = useInsights(uid, streak, moodEntries, strategyMastery);
+const InsightsView: React.FC<InsightsViewProps> = ({ uid, streak, strategyMastery, onBack }) => {
+  const { insights, isLoaded } = useInsights(uid, streak, strategyMastery);
 
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 pt-16 md:pt-24 pb-40 md:pb-32 px-4 sm:px-6 transition-colors duration-500">

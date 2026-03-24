@@ -3,79 +3,162 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  Search, ChevronRight, ChevronDown, ArrowRight, Clock,
-  BarChart3, TrendingUp, Lightbulb, BookOpen, Zap, Info,
-  Star, AlertTriangle, CheckCircle,
+  ChevronRight, X, ScanSearch,
 } from 'lucide-react';
 import {
   type SubjectSyllabus, type SyllabusTopic,
   SYLLABUS_DATA, AVAILABLE_SUBJECTS, getSyllabusForSubject,
   computeEfficiency, getQuadrant, QUADRANT_LABELS,
+  fuzzyMatchTopic,
 } from './syllabusData';
+import { db } from '../firebase';
+import { doc, getDoc } from 'firebase/firestore';
+import { type DebriefEntry } from './StudyDebrief';
+import { useTopicMastery } from '../hooks/useTopicMastery';
+import { type UnifiedConfidence } from '../types';
 
 const MotionDiv = motion.div as any;
 
-// ─── Types ───────────────────────────────────────────────────────────────────
+// ── Types ────────────────────────────────────────────────────────────────────
 
 interface SyllabusXRayProps {
   studentSubjects?: string[];
+  uid?: string;
 }
 
-// ─── Subject Colors ──────────────────────────────────────────────────────────
-
-const SUBJECT_ACCENT: Record<string, { dot: string; bg: string; border: string; text: string }> = {
-  'English': { dot: 'bg-blue-500', bg: 'bg-blue-50 dark:bg-blue-900/15', border: 'border-blue-200 dark:border-blue-800/30', text: 'text-blue-700 dark:text-blue-300' },
-  'Mathematics': { dot: 'bg-indigo-500', bg: 'bg-indigo-50 dark:bg-indigo-900/15', border: 'border-indigo-200 dark:border-indigo-800/30', text: 'text-indigo-700 dark:text-indigo-300' },
-  'Biology': { dot: 'bg-lime-500', bg: 'bg-lime-50 dark:bg-lime-900/15', border: 'border-lime-200 dark:border-lime-800/30', text: 'text-lime-700 dark:text-lime-300' },
-  'Business': { dot: 'bg-amber-500', bg: 'bg-amber-50 dark:bg-amber-900/15', border: 'border-amber-200 dark:border-amber-800/30', text: 'text-amber-700 dark:text-amber-300' },
-  'History': { dot: 'bg-purple-500', bg: 'bg-purple-50 dark:bg-purple-900/15', border: 'border-purple-200 dark:border-purple-800/30', text: 'text-purple-700 dark:text-purple-300' },
-  'Geography': { dot: 'bg-emerald-500', bg: 'bg-emerald-50 dark:bg-emerald-900/15', border: 'border-emerald-200 dark:border-emerald-800/30', text: 'text-emerald-700 dark:text-emerald-300' },
-  'Chemistry': { dot: 'bg-teal-500', bg: 'bg-teal-50 dark:bg-teal-900/15', border: 'border-teal-200 dark:border-teal-800/30', text: 'text-teal-700 dark:text-teal-300' },
-  'Physics': { dot: 'bg-cyan-500', bg: 'bg-cyan-50 dark:bg-cyan-900/15', border: 'border-cyan-200 dark:border-cyan-800/30', text: 'text-cyan-700 dark:text-cyan-300' },
-};
-
-const DEFAULT_ACCENT = { dot: 'bg-zinc-500', bg: 'bg-zinc-50 dark:bg-zinc-800/40', border: 'border-zinc-200 dark:border-zinc-700/40', text: 'text-zinc-700 dark:text-zinc-300' };
-
-function getAccent(subject: string) { return SUBJECT_ACCENT[subject] || DEFAULT_ACCENT; }
-
-// ─── Frequency / Difficulty bars ─────────────────────────────────────────────
-
-const FrequencyBar: React.FC<{ value: number; max?: number }> = ({ value, max = 10 }) => (
-  <div className="flex gap-0.5">
-    {Array.from({ length: max }, (_, i) => (
-      <div key={i} className={`w-2 h-3 rounded-sm ${i < value ? 'bg-emerald-500' : 'bg-zinc-200 dark:bg-zinc-700'}`} />
-    ))}
-  </div>
-);
-
-const DifficultyDots: React.FC<{ value: number }> = ({ value }) => (
-  <div className="flex gap-1">
-    {[1, 2, 3, 4, 5].map(i => (
-      <div key={i} className={`w-2 h-2 rounded-full ${i <= value ? 'bg-amber-500' : 'bg-zinc-200 dark:bg-zinc-700'}`} />
-    ))}
-  </div>
-);
-
-// ─── Sort options ────────────────────────────────────────────────────────────
+type TopicStatus = 'not-started' | 'in-progress' | 'confident';
 
 type SortKey = 'efficiency' | 'frequency' | 'weight' | 'difficulty';
 
-const SORT_OPTIONS: { key: SortKey; label: string }[] = [
-  { key: 'efficiency', label: 'Efficiency (marks/hour)' },
-  { key: 'frequency', label: 'Exam frequency' },
-  { key: 'weight', label: 'Mark weight' },
-  { key: 'difficulty', label: 'Difficulty (easiest first)' },
-];
+type QuadrantFilter = 'all' | 'start-here' | 'high-value' | 'worth-knowing' | 'only-if-time';
 
-// ─── Component ───────────────────────────────────────────────────────────────
+interface TopicMastery {
+  [topicName: string]: TopicStatus;
+}
 
-const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects }) => {
+interface SubjectMastery {
+  [subject: string]: TopicMastery;
+}
+
+// ── Visual helpers ───────────────────────────────────────────────────────────
+
+const STATUS_CONFIG: Record<TopicStatus, { label: string; color: string; dot: string }> = {
+  'not-started': { label: 'Not started', color: 'text-zinc-400 dark:text-zinc-500', dot: 'bg-zinc-300 dark:bg-zinc-600' },
+  'in-progress': { label: 'In progress', color: 'text-amber-600 dark:text-amber-400', dot: 'bg-amber-400' },
+  'confident': { label: 'Confident', color: 'text-emerald-600 dark:text-emerald-400', dot: 'bg-emerald-500' },
+};
+
+// ── Treemap layout ───────────────────────────────────────────────────────────
+
+function computeTreemapLayout(topics: SyllabusTopic[], totalMarks: number): { topic: SyllabusTopic; cols: number; rows: number }[] {
+  // Sort by mark weight descending
+  const sorted = [...topics].sort((a, b) => b.markWeight - a.markWeight);
+
+  return sorted.map(topic => {
+    const area = Math.max(2, Math.round((topic.markWeight / 100) * 20)); // Scale to ~20 units total
+
+    let cols: number;
+    let rows: number;
+
+    if (area >= 8) {
+      cols = 5; rows = 2;
+    } else if (area >= 5) {
+      cols = 5; rows = 1;
+    } else if (area >= 4) {
+      cols = 4; rows = 1;
+    } else if (area >= 3) {
+      cols = 3; rows = 1;
+    } else {
+      cols = 2; rows = 1;
+    }
+
+    return { topic, cols, rows };
+  });
+}
+
+// ── Mapping helpers: unified <-> display ─────────────────────────────────────
+
+/** Map from UnifiedConfidence ('not-started'|'shaky'|'solid') to display TopicStatus */
+function unifiedToDisplay(c: UnifiedConfidence): TopicStatus {
+  if (c === 'solid') return 'confident';
+  if (c === 'shaky') return 'in-progress';
+  return 'not-started';
+}
+
+/** Map from display TopicStatus to UnifiedConfidence */
+function displayToUnified(s: TopicStatus): UnifiedConfidence {
+  if (s === 'confident') return 'solid';
+  if (s === 'in-progress') return 'shaky';
+  return 'not-started';
+}
+
+// ── Component ────────────────────────────────────────────────────────────────
+
+const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => {
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
   const [sortBy, setSortBy] = useState<SortKey>('efficiency');
   const [expandedTopic, setExpandedTopic] = useState<string | null>(null);
+  const [debriefs, setDebriefs] = useState<DebriefEntry[]>([]);
+  const [quadrantFilter, setQuadrantFilter] = useState<QuadrantFilter>('all');
+  const [searchQuery, setSearchQuery] = useState('');
+
+  // Shared topic mastery hook
+  const topicMastery = useTopicMastery(uid);
+
+  // Derive a display-friendly SubjectMastery from the unified mastery
+  const mastery: SubjectMastery = useMemo(() => {
+    const result: SubjectMastery = {};
+    for (const [subject, topics] of Object.entries(topicMastery.mastery)) {
+      result[subject] = {};
+      for (const [topicName, entry] of Object.entries(topics)) {
+        result[subject][topicName] = unifiedToDisplay(entry.confidence);
+      }
+    }
+    return result;
+  }, [topicMastery.mastery]);
+
+  // Load study debriefs only (mastery is handled by the hook)
+  useEffect(() => {
+    if (!uid) return;
+    let cancelled = false;
+    const load = async () => {
+      try {
+        const snap = await getDoc(doc(db, 'progress', uid));
+        if (cancelled) return;
+        const data = snap.data();
+        if (data?.studyDebriefs) {
+          setDebriefs(data.studyDebriefs as DebriefEntry[]);
+        }
+      } catch { /* permission error */ }
+    };
+    load();
+    return () => { cancelled = true; };
+  }, [uid]);
+
+  const handleStatusChange = useCallback((subject: string, topicName: string) => {
+    const current = mastery[subject]?.[topicName] || 'not-started';
+    const cycle: TopicStatus[] = ['not-started', 'in-progress', 'confident'];
+    const nextIdx = (cycle.indexOf(current) + 1) % cycle.length;
+    const newDisplayStatus = cycle[nextIdx];
+    topicMastery.setTopicConfidence(subject, topicName, displayToUnified(newDisplayStatus), 'manual');
+  }, [mastery, topicMastery]);
+
+  // Compute hours per topic for the selected subject via fuzzy matching
+  const topicHoursMap = useMemo(() => {
+    if (!selectedSubject || debriefs.length === 0) return {};
+    const map: Record<string, number> = {};
+    for (const d of debriefs) {
+      if (d.subject !== selectedSubject) continue;
+      const matched = fuzzyMatchTopic(selectedSubject, d.hardestTopic);
+      if (matched) {
+        map[matched.name] = (map[matched.name] || 0) + (d.durationMinutes / 60);
+      }
+    }
+    return map;
+  }, [selectedSubject, debriefs]);
 
   // Determine which subjects to show — prioritise student's subjects
   const availableSubjects = useMemo(() => {
@@ -87,9 +170,64 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects }) => {
 
   const syllabus = selectedSubject ? getSyllabusForSubject(selectedSubject) : null;
 
-  const sortedTopics = useMemo(() => {
+  // Compute mastery stats for the selected subject
+  const masteryStats = useMemo(() => {
+    if (!syllabus || !selectedSubject) return { notStarted: 0, inProgress: 0, confident: 0, total: 0, progressPercent: 0 };
+    const subjectMastery = mastery[selectedSubject] || {};
+    let notStarted = 0, inProgress = 0, confident = 0;
+    for (const topic of syllabus.topics) {
+      const status = subjectMastery[topic.name] || 'not-started';
+      if (status === 'not-started') notStarted++;
+      else if (status === 'in-progress') inProgress++;
+      else confident++;
+    }
+    const total = syllabus.topics.length;
+    const progressPercent = total > 0 ? Math.round(((confident + inProgress * 0.5) / total) * 100) : 0;
+    return { notStarted, inProgress, confident, total, progressPercent };
+  }, [syllabus, selectedSubject, mastery]);
+
+  // Study time stats
+  const studyTimeStats = useMemo(() => {
+    if (!syllabus || !selectedSubject) return { totalNeeded: 0, totalLogged: 0, remaining: 0 };
+    const subjectMastery = mastery[selectedSubject] || {};
+    let totalNeeded = 0;
+    let totalLogged = 0;
+    for (const topic of syllabus.topics) {
+      totalNeeded += topic.studyHours;
+      totalLogged += topicHoursMap[topic.name] || 0;
+    }
+    // Only count remaining for topics that aren't confident
+    let remaining = 0;
+    for (const topic of syllabus.topics) {
+      const status = subjectMastery[topic.name] || 'not-started';
+      if (status !== 'confident') {
+        remaining += Math.max(0, topic.studyHours - (topicHoursMap[topic.name] || 0));
+      }
+    }
+    return { totalNeeded, totalLogged: Math.round(totalLogged * 10) / 10, remaining: Math.round(remaining) };
+  }, [syllabus, selectedSubject, topicHoursMap, mastery]);
+
+  // Filtered and sorted topics
+  const filteredTopics = useMemo(() => {
     if (!syllabus) return [];
-    const topics = [...syllabus.topics];
+    let topics = [...syllabus.topics];
+
+    // Quadrant filter
+    if (quadrantFilter !== 'all') {
+      topics = topics.filter(t => getQuadrant(t) === quadrantFilter);
+    }
+
+    // Search filter
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase();
+      topics = topics.filter(t =>
+        t.name.toLowerCase().includes(q) ||
+        t.section.toLowerCase().includes(q) ||
+        t.tip.toLowerCase().includes(q)
+      );
+    }
+
+    // Sort
     switch (sortBy) {
       case 'efficiency':
         return topics.sort((a, b) => computeEfficiency(b, syllabus.totalMarks) - computeEfficiency(a, syllabus.totalMarks));
@@ -102,7 +240,7 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects }) => {
       default:
         return topics;
     }
-  }, [syllabus, sortBy]);
+  }, [syllabus, sortBy, quadrantFilter, searchQuery]);
 
   const topicsByQuadrant = useMemo(() => {
     if (!syllabus) return {};
@@ -115,280 +253,341 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects }) => {
     return groups;
   }, [syllabus]);
 
-  // ── Subject Picker ──
+  // Subject-level progress for subject picker (mastery-based)
+  const subjectProgress = useMemo(() => {
+    const progress: Record<string, number> = {};
+    for (const subject of AVAILABLE_SUBJECTS) {
+      const data = getSyllabusForSubject(subject);
+      const subjectMastery = mastery[subject] || {};
+      if (!data) { progress[subject] = 0; continue; }
+      let score = 0;
+      for (const topic of data.topics) {
+        const s = subjectMastery[topic.name] || 'not-started';
+        if (s === 'confident') score += 1;
+        else if (s === 'in-progress') score += 0.5;
+      }
+      progress[subject] = data.topics.length > 0 ? Math.round((score / data.topics.length) * 100) : 0;
+    }
+    return progress;
+  }, [mastery]);
+
+  // ── Subject Picker (2-column card grid) ──
   if (!selectedSubject) {
+    // If no student subjects available at all, show empty state
+    if (availableSubjects.length === 0) {
+      return (
+        <div className="space-y-6">
+          <div>
+            <h2 className="font-serif text-2xl font-medium text-zinc-900 dark:text-white">Syllabus X-Ray</h2>
+            <p className="text-sm text-zinc-400 mt-1">
+              See where the marks are hiding in your exams.
+            </p>
+          </div>
+          <div className="text-center py-16 space-y-4">
+            <div className="w-16 h-16 mx-auto rounded-2xl bg-rose-100 dark:bg-rose-900/30 flex items-center justify-center">
+              <ScanSearch size={32} className="text-rose-500" />
+            </div>
+            <h3 className="text-lg font-bold text-zinc-800 dark:text-white">See what's really worth marks</h3>
+            <p className="text-sm text-zinc-500 dark:text-zinc-400 max-w-sm mx-auto leading-relaxed">
+              Every topic weighted by exam frequency and mark value — so you study what actually counts.
+            </p>
+            <p className="text-xs text-zinc-400 dark:text-zinc-500">Complete your subject profile to get started.</p>
+          </div>
+        </div>
+      );
+    }
+
     return (
       <div className="space-y-6">
         <div>
-          <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">Syllabus X-Ray</h2>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
-            See which topics are worth the most marks, how often they appear, and where to focus your study time.
+          <h2 className="font-serif text-2xl font-medium text-zinc-900 dark:text-white">Syllabus X-Ray</h2>
+          <p className="text-sm text-zinc-400 mt-1">
+            See where the marks are hiding in your exams.
           </p>
         </div>
 
-        <div className="bg-rose-50 dark:bg-rose-900/15 border border-rose-200 dark:border-rose-800/30 rounded-xl p-4">
-          <div className="flex items-start gap-3">
-            <Zap size={16} className="text-rose-500 shrink-0 mt-0.5" />
-            <div>
-              <p className="text-sm font-bold text-rose-700 dark:text-rose-300">
-                This is the exam intelligence that grind schools charge for.
-              </p>
-              <p className="text-xs text-rose-600 dark:text-rose-400 leading-relaxed mt-1">
-                Stop studying everything equally. Focus on what appears most often, carries the most marks, and suits your study time.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="space-y-2">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-            {studentSubjects && studentSubjects.length > 0 ? 'Your Subjects' : 'Available Subjects'}
-          </p>
+        <div className="grid grid-cols-2 gap-2.5">
           {availableSubjects.map(subject => {
-            const accent = getAccent(subject);
             const data = getSyllabusForSubject(subject);
+            const progress = subjectProgress[subject] || 0;
             return (
               <button
                 key={subject}
-                onClick={() => setSelectedSubject(subject)}
-                className={`w-full flex items-center gap-4 p-4 rounded-xl ${accent.bg} border ${accent.border} hover:shadow-sm active:scale-[0.99] transition-all text-left`}
+                onClick={() => { setSelectedSubject(subject); setQuadrantFilter('all'); setSearchQuery(''); }}
+                className="rounded-xl p-3.5 text-left transition-colors dark:bg-transparent"
+                style={{
+                  backgroundColor: '#FAF7F4',
+                  border: '0.5px solid rgba(0,0,0,0.07)',
+                }}
               >
-                <span className={`w-3 h-3 rounded-full shrink-0 ${accent.dot}`} />
-                <div className="flex-1 min-w-0">
-                  <p className={`text-sm font-bold ${accent.text}`}>{subject}</p>
-                  {data && (
-                    <p className="text-[11px] text-zinc-400 dark:text-zinc-500">
-                      {data.totalMarks} marks &middot; {data.papers.length} paper{data.papers.length !== 1 ? 's' : ''} &middot; {data.topics.length} topics
-                    </p>
-                  )}
+                <p className="text-[15px] font-medium text-zinc-800 dark:text-zinc-200">{subject}</p>
+                {data && (
+                  <p className="text-[11px] text-zinc-400 dark:text-zinc-500 mt-0.5">
+                    {data.totalMarks} marks &middot; {data.papers.length} paper{data.papers.length !== 1 ? 's' : ''}
+                  </p>
+                )}
+                {/* Progress bar */}
+                <div className="mt-2.5 h-1 rounded-full bg-zinc-200 dark:bg-zinc-700 overflow-hidden">
+                  <div
+                    className="h-full rounded-full bg-emerald-500 transition-all"
+                    style={{ width: `${progress}%` }}
+                  />
                 </div>
-                <ChevronRight size={16} className="text-zinc-300 dark:text-zinc-600 shrink-0" />
+                {data && (
+                  <p className="text-[11px] text-zinc-400 dark:text-zinc-500 mt-1.5">
+                    {data.topics.length} topics
+                  </p>
+                )}
               </button>
             );
           })}
-
-          {availableSubjects.length === 0 && (
-            <p className="text-sm text-zinc-400 dark:text-zinc-500 text-center py-8">
-              Complete your subject profile to see your subjects here, or browse all available subjects below.
-            </p>
-          )}
-
-          {/* Show remaining subjects if student has a profile */}
-          {studentSubjects && studentSubjects.length > 0 && (
-            <>
-              <div className="flex items-center gap-3 py-3 px-3">
-                <div className="flex-1 h-px bg-zinc-200 dark:bg-white/10" />
-                <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Other Subjects</p>
-                <div className="flex-1 h-px bg-zinc-200 dark:bg-white/10" />
-              </div>
-              {AVAILABLE_SUBJECTS.filter(s => !studentSubjects.includes(s)).map(subject => {
-                const data = getSyllabusForSubject(subject);
-                return (
-                  <button
-                    key={subject}
-                    onClick={() => setSelectedSubject(subject)}
-                    className="w-full flex items-center gap-4 p-3 rounded-xl bg-white/40 dark:bg-white/5 border border-zinc-200/40 dark:border-white/5 hover:bg-white dark:hover:bg-white/10 transition-all text-left opacity-60 hover:opacity-100"
-                  >
-                    <span className="w-3 h-3 rounded-full shrink-0 bg-zinc-400" />
-                    <div className="flex-1 min-w-0">
-                      <p className="text-sm font-semibold text-zinc-600 dark:text-zinc-400">{subject}</p>
-                      {data && (
-                        <p className="text-[11px] text-zinc-400 dark:text-zinc-500">
-                          {data.totalMarks} marks &middot; {data.topics.length} topics
-                        </p>
-                      )}
-                    </div>
-                    <ChevronRight size={14} className="text-zinc-300 dark:text-zinc-600 shrink-0" />
-                  </button>
-                );
-              })}
-            </>
-          )}
         </div>
       </div>
     );
   }
 
-  // ── Subject Detail View ──
-  const accent = getAccent(selectedSubject);
+  // ── Subject Detail View — Treemap ──
+  const subjectMastery = mastery[selectedSubject] || {};
+  const treemapLayout = syllabus ? computeTreemapLayout(syllabus.topics, syllabus.totalMarks) : [];
+
+  // Selected topic data
+  const selectedTopicData = expandedTopic && syllabus
+    ? syllabus.topics.find(t => t.name === expandedTopic) || null
+    : null;
 
   return (
     <div className="space-y-5">
       {/* Header */}
-      <div className="flex items-center gap-3">
-        <button
-          onClick={() => { setSelectedSubject(null); setExpandedTopic(null); }}
-          className="p-2 -ml-2 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800/60 transition-colors"
-        >
-          <ChevronRight size={18} className="text-zinc-400 rotate-180" />
-        </button>
-        <div>
-          <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">{selectedSubject}</h2>
-          {syllabus && (
-            <p className="text-xs text-zinc-400 dark:text-zinc-500">
-              {syllabus.totalMarks} marks &middot; {syllabus.papers.map(p => p.name).join(' + ')}
-            </p>
-          )}
+      <div>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => { setSelectedSubject(null); setExpandedTopic(null); setQuadrantFilter('all'); setSearchQuery(''); }}
+            className="p-1 -ml-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800/60 transition-colors"
+          >
+            <ChevronRight size={16} className="text-zinc-400 rotate-180" />
+          </button>
+          <h2 className="text-[26px] font-medium text-zinc-900 dark:text-white">{selectedSubject}</h2>
         </div>
+        {syllabus && (
+          <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-0.5 ml-7">
+            {syllabus.totalMarks} marks &middot; {syllabus.papers.length} paper{syllabus.papers.length !== 1 ? 's' : ''} &middot; {studyTimeStats.totalNeeded}h estimated
+          </p>
+        )}
       </div>
 
-      {/* Paper structure */}
+      {/* Treemap Grid */}
       {syllabus && (
-        <div className="flex gap-2">
-          {syllabus.papers.map(paper => (
-            <div key={paper.name} className={`flex-1 rounded-xl p-3 border ${accent.bg} ${accent.border}`}>
-              <p className={`text-[10px] font-bold uppercase tracking-widest ${accent.text} mb-1`}>{paper.name}</p>
-              <div className="flex items-baseline gap-1.5">
-                <span className={`text-lg font-bold ${accent.text}`}>{paper.marks}</span>
-                <span className="text-[11px] text-zinc-400">marks</span>
-              </div>
-              <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5 flex items-center gap-1">
-                <Clock size={10} /> {paper.duration}
-              </p>
-            </div>
-          ))}
-        </div>
-      )}
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(10, 1fr)',
+            gridAutoRows: '56px',
+            gap: '5px',
+          }}
+        >
+          {treemapLayout.map(({ topic, cols, rows }) => {
+            const potentialMarks = Math.round((topic.markWeight / 100) * syllabus.totalMarks);
+            const isSelected = expandedTopic === topic.name;
+            const hasSelection = expandedTopic !== null;
 
-      {/* Key advice */}
-      {syllabus && (
-        <div className={`${accent.bg} border ${accent.border} rounded-xl p-4`}>
-          <div className="flex items-start gap-3">
-            <Lightbulb size={16} className={accent.text.replace('text-', 'text-').split(' ')[0]} style={{ opacity: 0.8 }} />
-            <p className="text-xs leading-relaxed text-zinc-600 dark:text-zinc-400">{syllabus.keyAdvice}</p>
-          </div>
-        </div>
-      )}
+            // Determine number size based on block size
+            let numberSizeClass: string;
+            if (rows >= 2) {
+              numberSizeClass = 'text-4xl';
+            } else if (cols >= 4) {
+              numberSizeClass = 'text-2xl';
+            } else {
+              numberSizeClass = 'text-lg';
+            }
 
-      {/* Quadrant summary */}
-      {syllabus && (
-        <div className="grid grid-cols-2 gap-2">
-          {(['start-here', 'high-value', 'worth-knowing', 'only-if-time'] as const).map(q => {
-            const info = QUADRANT_LABELS[q];
-            const topics = topicsByQuadrant[q] || [];
+            // Determine colors based on selection state
+            let bgColor: string;
+            let borderColor: string;
+            let nameClass: string;
+            let markColor: string;
+
+            if (isSelected) {
+              bgColor = '#E0F0ED';
+              borderColor = 'rgba(0,0,0,0.18)';
+              nameClass = 'text-zinc-700 dark:text-zinc-300';
+              markColor = '#2A7D6F';
+            } else if (hasSelection) {
+              bgColor = '#F7F5F2';
+              borderColor = 'rgba(0,0,0,0.03)';
+              nameClass = 'text-zinc-300 dark:text-zinc-600';
+              markColor = '#A3CDC4';
+            } else {
+              bgColor = '#FAF7F4';
+              borderColor = 'rgba(0,0,0,0.07)';
+              nameClass = 'text-zinc-700 dark:text-zinc-300';
+              markColor = '#2A7D6F';
+            }
+
             return (
-              <div key={q} className={`rounded-xl p-3 border ${info.bg} border-zinc-200/40 dark:border-white/5`}>
-                <p className={`text-[10px] font-bold uppercase tracking-widest ${info.color} mb-1`}>{info.label}</p>
-                <p className="text-lg font-bold text-zinc-800 dark:text-zinc-200">{topics.length}</p>
-                <p className="text-[10px] text-zinc-400">topic{topics.length !== 1 ? 's' : ''}</p>
-              </div>
+              <button
+                key={topic.name}
+                onClick={() => setExpandedTopic(isSelected ? null : topic.name)}
+                className={`rounded-xl p-3 cursor-pointer text-left overflow-hidden ${rows >= 2 ? 'flex flex-col justify-between h-full' : 'flex flex-row items-center justify-between'}`}
+                style={{
+                  gridColumn: `span ${cols}`,
+                  gridRow: `span ${rows}`,
+                  backgroundColor: bgColor,
+                  border: `0.5px solid ${borderColor}`,
+                }}
+              >
+                <span className={`text-xs font-medium ${nameClass} ${rows < 2 ? 'truncate mr-2' : ''}`}>
+                  {topic.name}
+                </span>
+                <span
+                  className={`${numberSizeClass} font-medium shrink-0`}
+                  style={{ color: markColor }}
+                >
+                  {potentialMarks}
+                </span>
+              </button>
             );
           })}
         </div>
       )}
 
-      {/* Sort control */}
-      <div className="flex items-center gap-2 overflow-x-auto py-1 -mx-1 px-1">
-        <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 shrink-0">Sort:</span>
-        {SORT_OPTIONS.map(opt => (
-          <button
-            key={opt.key}
-            onClick={() => setSortBy(opt.key)}
-            className={`shrink-0 px-3 py-1.5 rounded-lg text-[11px] font-medium transition-all ${
-              sortBy === opt.key
-                ? 'bg-zinc-800 dark:bg-zinc-200 text-white dark:text-zinc-900'
-                : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
-            }`}
+      {/* Legend */}
+      <p className="text-[11px] text-zinc-400 text-center py-3">
+        Block size = mark weight &middot; tap to x-ray a topic
+      </p>
+
+      {/* Detail Panel */}
+      <AnimatePresence>
+        {selectedTopicData && syllabus && (
+          <MotionDiv
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="overflow-hidden"
           >
-            {opt.label}
-          </button>
-        ))}
-      </div>
-
-      {/* Topic list */}
-      <div className="space-y-2">
-        {sortedTopics.map((topic, idx) => {
-          const quadrant = getQuadrant(topic);
-          const qInfo = QUADRANT_LABELS[quadrant];
-          const efficiency = computeEfficiency(topic, syllabus!.totalMarks);
-          const isExpanded = expandedTopic === topic.name;
-          const potentialMarks = Math.round((topic.markWeight / 100) * syllabus!.totalMarks);
-
-          return (
-            <MotionDiv
-              key={topic.name}
-              initial={{ opacity: 0, y: 6 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: idx * 0.03 }}
+            <div
+              className="rounded-[14px] p-6 relative"
+              style={{
+                backgroundColor: '#FAF7F4',
+                border: '0.5px solid rgba(0,0,0,0.1)',
+              }}
             >
-              <button
-                onClick={() => setExpandedTopic(isExpanded ? null : topic.name)}
-                className="w-full text-left p-4 rounded-xl bg-white/60 dark:bg-white/5 border border-zinc-200/60 dark:border-white/10 hover:bg-white dark:hover:bg-white/10 transition-all"
-              >
-                <div className="flex items-start gap-3">
-                  <span className="text-xs font-bold text-zinc-300 dark:text-zinc-600 w-5 text-center mt-0.5">
-                    {idx + 1}
-                  </span>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 mb-1">
-                      <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{topic.name}</p>
-                      <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded-full ${qInfo.bg} ${qInfo.color}`}>
-                        {qInfo.label}
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-4 text-[11px] text-zinc-400 dark:text-zinc-500">
-                      <span>~{topic.markWeight}% ({potentialMarks} marks)</span>
-                      <span>{topic.studyHours}h study</span>
-                      <span className="font-semibold text-emerald-600 dark:text-emerald-400">
-                        {efficiency} eff
-                      </span>
-                    </div>
+              {/* Header + close */}
+              <div className="flex items-start justify-between mb-1">
+                <h3 className="text-[22px] font-medium text-zinc-900 dark:text-white pr-8">
+                  {selectedTopicData.name}
+                </h3>
+                <button
+                  onClick={() => setExpandedTopic(null)}
+                  className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors shrink-0"
+                >
+                  <X size={18} className="text-zinc-400" />
+                </button>
+              </div>
+
+              {/* Quadrant label */}
+              <p className="text-xs text-zinc-400 mb-4">
+                {QUADRANT_LABELS[getQuadrant(selectedTopicData)]?.label}
+              </p>
+
+              {/* Hero marks */}
+              <p className="text-[48px] font-medium leading-none" style={{ color: '#2A7D6F' }}>
+                {Math.round((selectedTopicData.markWeight / 100) * syllabus.totalMarks)}
+              </p>
+              <p className="text-xs text-zinc-400 mt-1 mb-5">
+                {Math.round((selectedTopicData.markWeight / 100) * syllabus.totalMarks)} marks &middot; {selectedTopicData.markWeight}% of your total grade
+              </p>
+
+              {/* Status toggle — 3-segment control */}
+              {(() => {
+                const topicStatus = subjectMastery[selectedTopicData.name] || 'not-started';
+                const segments: { key: TopicStatus; label: string; dotClass: string; activeClasses: string }[] = [
+                  { key: 'not-started', label: 'Not started', dotClass: 'bg-zinc-400', activeClasses: 'bg-zinc-200 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200' },
+                  { key: 'in-progress', label: 'In progress', dotClass: 'bg-amber-400', activeClasses: 'bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300' },
+                  { key: 'confident', label: 'Confident', dotClass: 'bg-emerald-500', activeClasses: 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300' },
+                ];
+                return (
+                  <div className="flex gap-1.5 mb-5 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50">
+                    {segments.map(seg => {
+                      const isActive = topicStatus === seg.key;
+                      return (
+                        <button
+                          key={seg.key}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            if (!isActive) {
+                              topicMastery.setTopicConfidence(selectedSubject, selectedTopicData.name, displayToUnified(seg.key), 'manual');
+                            }
+                          }}
+                          className={`flex-1 flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-lg text-xs font-semibold transition-all ${
+                            isActive
+                              ? `${seg.activeClasses} shadow-sm`
+                              : 'text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300'
+                          }`}
+                        >
+                          <span className={`block w-2 h-2 rounded-full shrink-0 ${isActive ? seg.dotClass : 'bg-zinc-300 dark:bg-zinc-600'}`} />
+                          {seg.label}
+                        </button>
+                      );
+                    })}
                   </div>
-                  <div className="shrink-0">
-                    {isExpanded ? <ChevronDown size={16} className="text-zinc-400" /> : <ChevronRight size={16} className="text-zinc-300" />}
-                  </div>
+                );
+              })()}
+
+              {/* Three metric cards */}
+              <div className="grid grid-cols-3 gap-3 mb-5">
+                <div
+                  className="bg-white dark:bg-zinc-900 rounded-[10px] p-3 text-center"
+                  style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}
+                >
+                  <p className="text-xl font-medium text-zinc-800 dark:text-zinc-200">
+                    {selectedTopicData.examFrequency}<span className="text-sm text-zinc-400">/10</span>
+                  </p>
+                  <p className="text-[10px] text-zinc-400 mt-0.5">Exam frequency</p>
                 </div>
+                <div
+                  className="bg-white dark:bg-zinc-900 rounded-[10px] p-3 text-center"
+                  style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}
+                >
+                  <p className="text-xl font-medium text-zinc-800 dark:text-zinc-200">
+                    {selectedTopicData.difficulty}<span className="text-sm text-zinc-400">/5</span>
+                  </p>
+                  <p className="text-[10px] text-zinc-400 mt-0.5">Difficulty</p>
+                </div>
+                <div
+                  className="bg-white dark:bg-zinc-900 rounded-[10px] p-3 text-center"
+                  style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}
+                >
+                  <p className="text-xl font-medium text-zinc-800 dark:text-zinc-200">
+                    {computeEfficiency(selectedTopicData, syllabus.totalMarks)}
+                  </p>
+                  <p className="text-[10px] text-zinc-400 mt-0.5">marks/hour</p>
+                </div>
+              </div>
 
-                {/* Expanded details */}
-                <AnimatePresence>
-                  {isExpanded && (
-                    <MotionDiv
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      className="overflow-hidden"
-                    >
-                      <div className="mt-3 ml-8 space-y-3 border-t border-zinc-100 dark:border-zinc-800 pt-3">
-                        {/* Section */}
-                        <div className="flex items-center gap-2">
-                          <BookOpen size={12} className="text-zinc-400" />
-                          <span className="text-xs text-zinc-500">{topic.section}</span>
-                        </div>
+              {/* Tip / strategy */}
+              <p className="font-serif italic text-sm text-zinc-500 leading-relaxed">
+                {selectedTopicData.tip}
+              </p>
+            </div>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
 
-                        {/* Exam frequency */}
-                        <div className="space-y-1">
-                          <p className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Exam Frequency</p>
-                          <div className="flex items-center gap-2">
-                            <FrequencyBar value={topic.examFrequency} />
-                            <span className="text-[10px] text-zinc-400">{topic.examFrequency}/10</span>
-                          </div>
-                        </div>
-
-                        {/* Difficulty */}
-                        <div className="space-y-1">
-                          <p className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Difficulty</p>
-                          <div className="flex items-center gap-2">
-                            <DifficultyDots value={topic.difficulty} />
-                            <span className="text-[10px] text-zinc-400">{topic.difficulty}/5</span>
-                          </div>
-                        </div>
-
-                        {/* Tip */}
-                        <div className="bg-zinc-50 dark:bg-zinc-800/50 rounded-lg p-3">
-                          <div className="flex items-start gap-2">
-                            <Lightbulb size={12} className="text-amber-500 shrink-0 mt-0.5" />
-                            <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">{topic.tip}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </MotionDiv>
-                  )}
-                </AnimatePresence>
-              </button>
-            </MotionDiv>
-          );
-        })}
-      </div>
+      {/* Exam Strategy Box */}
+      {syllabus && (
+        <div
+          className="rounded-xl p-5"
+          style={{
+            backgroundColor: '#FAF7F4',
+            border: '0.5px solid rgba(0,0,0,0.07)',
+          }}
+        >
+          <p className="text-[11px] text-zinc-400 uppercase tracking-wider mb-2">Exam strategy</p>
+          <p className="text-[13px] text-zinc-500 dark:text-zinc-400 leading-relaxed">
+            {syllabus.keyAdvice}
+          </p>
+        </div>
+      )}
     </div>
   );
 };

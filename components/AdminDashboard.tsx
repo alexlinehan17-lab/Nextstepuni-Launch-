@@ -118,11 +118,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
     const handleDeleteStudent = async (user: SessionUser) => {
       setIsDeleting(true);
       try {
-        // Delete progress and moods FIRST (their rules may reference the users doc)
-        await Promise.all([
-          deleteDoc(doc(db, 'progress', user.uid)).catch(() => {}),
-          deleteDoc(doc(db, 'moods', user.uid)).catch(() => {}),
-        ]);
+        // Delete progress FIRST (their rules may reference the users doc)
+        await deleteDoc(doc(db, 'progress', user.uid)).catch(() => {});
         // Then delete the users doc last
         await deleteDoc(doc(db, 'users', user.uid));
         setStudentData(prev => prev.filter(s => s.user.uid !== user.uid));
@@ -135,6 +132,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
     };
 
     useEffect(() => {
+        let cancelled = false;
         const fetchData = async () => {
             setIsLoading(true);
             try {
@@ -151,6 +149,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
                     return acc;
                 }, {} as AllUserProgress);
 
+                if (cancelled) return;
+
                 // Combine data for each student (exclude admin and GC accounts)
                 const combinedData = users
                     .filter(u => !u.isAdmin && (u as any).role !== 'gc' && (u as any).role !== 'admin')
@@ -163,10 +163,11 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
             } catch (error) {
                 console.error("Error fetching admin data:", error);
             }
-            setIsLoading(false);
+            if (!cancelled) setIsLoading(false);
         };
 
         fetchData();
+        return () => { cancelled = true; };
     }, []);
 
   return (
@@ -224,7 +225,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
               Are you sure you want to delete <span className="font-semibold text-zinc-900 dark:text-white">{deleteTarget.name}</span>?
             </p>
             <p className="text-xs text-zinc-400 dark:text-zinc-500 mb-6">
-              This will permanently remove all their progress, mood data, and profile. This action cannot be undone.
+              This will permanently remove all their progress and profile. This action cannot be undone.
             </p>
             <div className="flex gap-3">
               <button

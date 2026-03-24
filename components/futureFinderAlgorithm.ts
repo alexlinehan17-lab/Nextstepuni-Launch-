@@ -9,52 +9,65 @@ import { type StudentSubjectProfile, LC_SUBJECTS } from './subjectData';
 // ─── Assessment Types ───────────────────────────────────────────────────────
 
 export interface FutureFinderAnswers {
-  // Interest / passion (Q1-3)
-  interestTags: string[];         // Q1: pick up to 5 interest areas
-  activityRankings: string[];     // Q2: rank top 3 activities
-  dreamJobKeywords: string;       // Q3: free-text dream job description
+  // Q1: Interest areas (merged from old Q1+Q2)
+  interestTags: string[];         // pick up to 5
 
-  // Work style (Q4-5)
-  workStyleTags: string[];        // Q4: pick 2-3 work styles
-  teamPreference: 'team' | 'solo' | 'mix'; // Q5: team vs solo
+  // Q2: Job scenarios (replaces dream job text)
+  scenarioChoices: string[];      // pick 2-3 from 10 scenarios
 
-  // Career values (Q6-8)
-  salaryImportance: number;       // Q6: 1-5 slider
-  jobSecurityImportance: number;  // Q7: 1-5 slider
-  helpingOthersImportance: number;// Q8: 1-5 slider
+  // Q3-5: Values (moved earlier, pills not sliders)
+  salaryImportance: number;       // 1-5
+  jobSecurityImportance: number;  // 1-5
+  helpingOthersImportance: number;// 1-5
 
-  // Geographic preference (Q9-10)
-  willingToRelocate: boolean;     // Q9: yes/no
-  preferredRegions: string[];     // Q10: pick preferred regions
+  // Q6-7: Work style
+  workStyleTags: string[];        // pick 2-3
+  teamPreference: 'team' | 'solo' | 'mix';
 
-  // Course level & feasibility (Q11-12)
-  preferredLevels: (6 | 7 | 8)[]; // Q11: which NFQ levels
-  estimatedPoints: number;         // Q12: realistic points estimate
+  // Q8: Study duration (replaces level)
+  studyDuration: string[];        // '2' | '3' | '4+'
+
+  // Q9-10: Location
+  willingToRelocate: boolean;
+  preferredRegions: string[];
+
+  // Keep estimatedPoints for backward compat but don't ask for it
+  estimatedPoints: number;
 }
 
 export interface RecommendationResult {
   course: CAOCourse;
   score: number;
   reasons: string[];
+  scoreBreakdown: {
+    interestScore: number;
+    valuesScore: number;
+    feasibilityScore: number;
+  };
+  subjectAlignment: 'strong' | 'partial' | 'none';
 }
+
+// ─── Scenario-to-Tag Mapping ────────────────────────────────────────────────
+
+const SCENARIO_TAG_MAP: Record<string, string[]> = {
+  'design-product': ['design', 'engineering', 'technology'],
+  'investigate-science': ['science', 'healthcare', 'environment'],
+  'help-difficult': ['healthcare', 'social-care', 'psychology'],
+  'argue-case': ['law', 'politics', 'arts'],
+  'build-fix': ['engineering', 'technology', 'agriculture'],
+  'run-business': ['business', 'finance', 'leadership'],
+  'create-content': ['media', 'design', 'arts'],
+  'protect-environment': ['environment', 'science', 'agriculture'],
+  'analyse-data': ['finance', 'technology', 'science'],
+  'teach-inspire': ['education', 'sport', 'social-care'],
+};
 
 // ─── Scoring Helpers ────────────────────────────────────────────────────────
 
-/** Jaccard-like overlap: |A ∩ B| / |A ∪ B|, returns 0-1 */
-function tagOverlap(userTags: string[], courseTags: string[]): number {
-  if (userTags.length === 0 && courseTags.length === 0) return 0;
-  const setA = new Set(userTags);
-  const setB = new Set(courseTags);
-  let intersection = 0;
-  for (const tag of setA) {
-    if (setB.has(tag)) intersection++;
-  }
-  const union = new Set([...setA, ...setB]).size;
-  return union === 0 ? 0 : intersection / union;
-}
-
 /** Sigmoid-like feasibility: 1 at target, drops off for unrealistic courses */
 function feasibilitySigmoid(estimatedPoints: number, typicalPoints: number): number {
+  // If course has no points requirement (PLC, apprenticeship), feasibility = 1.0
+  if (typicalPoints === 0) return 1.0;
   const diff = estimatedPoints - typicalPoints;
   // Student has more than enough points — high score
   if (diff >= 0) return 1;
@@ -77,8 +90,40 @@ function subjectFitScore(profile: StudentSubjectProfile | null, course: CAOCours
   return matches / course.subjectBonus.length;
 }
 
-/** Values alignment: maps user slider values to course properties */
-function valuesScore(answers: FutureFinderAnswers, course: CAOCourse): number {
+/** Determine subject alignment level */
+function getSubjectAlignment(profile: StudentSubjectProfile | null, course: CAOCourse): 'strong' | 'partial' | 'none' {
+  if (!profile || profile.subjects.length === 0 || course.subjectBonus.length === 0) return 'none';
+  const studentSubjects = new Set(profile.subjects.map(s => s.subjectName));
+  let matches = 0;
+  for (const bonus of course.subjectBonus) {
+    if (studentSubjects.has(bonus)) matches++;
+  }
+  const ratio = matches / course.subjectBonus.length;
+  if (ratio >= 0.5) return 'strong';
+  if (matches >= 1) return 'partial';
+  return 'none';
+}
+
+/** Interest score: tag overlap + scenario bonus (45% weight) */
+function computeInterestScore(answers: FutureFinderAnswers, course: CAOCourse): number {
+  const userInterests = answers.interestTags;
+  const courseTags = course.interestTags;
+
+  // Tag overlap (weighted, not Jaccard — give more credit per match)
+  const matchCount = userInterests.filter(t => courseTags.includes(t)).length;
+  const interestBase = Math.min(matchCount / 3, 1); // 3+ matches = full score
+
+  // Scenario bonus: map chosen scenarios to tags, check overlap with course
+  const scenarioTags = new Set(answers.scenarioChoices.flatMap(s => SCENARIO_TAG_MAP[s] || []));
+  const scenarioOverlap = courseTags.filter(t => scenarioTags.has(t)).length;
+  const scenarioBonus = Math.min(scenarioOverlap / 2, 1) * 0.4; // up to 40% bonus
+
+  const interestScore = Math.min(interestBase + scenarioBonus, 1);
+  return interestScore;
+}
+
+/** Values alignment: maps user slider values to course properties (30% weight) */
+function computeValuesScore(answers: FutureFinderAnswers, course: CAOCourse): number {
   let score = 0;
   let weights = 0;
 
@@ -88,13 +133,13 @@ function valuesScore(answers: FutureFinderAnswers, course: CAOCourse): number {
   score += salaryW * salaryMatch;
   weights += salaryW;
 
-  // Job security → employability
+  // Job security -> employability
   const securityW = answers.jobSecurityImportance / 5;
   const securityMatch = course.employability / 5;
   score += securityW * securityMatch;
   weights += securityW;
 
-  // Helping others → people-focused or social-care tags
+  // Helping others -> people-focused or social-care tags
   const helpW = answers.helpingOthersImportance / 5;
   const helpMatch = (
     course.workStyleTags.includes('people-focused') ||
@@ -105,10 +150,13 @@ function valuesScore(answers: FutureFinderAnswers, course: CAOCourse): number {
   score += helpW * helpMatch;
   weights += helpW;
 
-  // Work style alignment
-  const workStyleOverlap = tagOverlap(answers.workStyleTags, course.workStyleTags);
-  score += workStyleOverlap;
-  weights += 1;
+  // Work style alignment (weighted overlap, not Jaccard)
+  if (answers.workStyleTags.length > 0) {
+    const workMatches = answers.workStyleTags.filter(t => course.workStyleTags.includes(t)).length;
+    const workStyleOverlap = Math.min(workMatches / 2, 1); // 2+ matches = full score
+    score += workStyleOverlap;
+    weights += 1;
+  }
 
   // Team preference
   const teamMatch = (() => {
@@ -122,18 +170,33 @@ function valuesScore(answers: FutureFinderAnswers, course: CAOCourse): number {
   return weights > 0 ? score / weights : 0;
 }
 
-/** Extract keywords from dream job text and check against course data */
-function dreamJobBonus(dreamJob: string, course: CAOCourse): number {
-  if (!dreamJob.trim()) return 0;
-  const words = dreamJob.toLowerCase().split(/\s+/).filter(w => w.length > 2);
-  const courseText = [
-    course.title, course.description, ...course.careerPaths, ...course.interestTags
-  ].join(' ').toLowerCase();
-  let matches = 0;
-  for (const word of words) {
-    if (courseText.includes(word)) matches++;
+/** Feasibility score: study duration match + points feasibility (25% weight) */
+function computeFeasibilityScore(
+  answers: FutureFinderAnswers,
+  course: CAOCourse,
+  autoPoints: number,
+): number {
+  // Study duration: map '1' -> [5], '2' -> [5, 6], '3' -> [7], '4+' -> [8]
+  let durationScore = 1; // default: no penalty if nothing selected
+  if (answers.studyDuration.length > 0) {
+    const levelMap: Record<string, number[]> = {
+      '1': [5],
+      '2': [5, 6],
+      '3': [7],
+      '4+': [8],
+    };
+    const acceptedLevels = new Set(answers.studyDuration.flatMap(d => levelMap[d] || []));
+    if (acceptedLevels.size > 0) {
+      durationScore = acceptedLevels.has(course.level) ? 1 : 0.3;
+    }
   }
-  return words.length > 0 ? Math.min(matches / words.length, 1) : 0;
+
+  // Points: use auto-computed points from profile, NOT user-entered
+  const pointsToUse = autoPoints > 0 ? autoPoints : answers.estimatedPoints;
+  const pointsScore = feasibilitySigmoid(pointsToUse, course.typicalPoints);
+
+  // Combine: 50% duration, 50% points
+  return durationScore * 0.5 + pointsScore * 0.5;
 }
 
 // ─── Reason Generation ──────────────────────────────────────────────────────
@@ -142,81 +205,109 @@ function generateReasons(
   answers: FutureFinderAnswers,
   profile: StudentSubjectProfile | null,
   course: CAOCourse,
+  autoPoints: number,
+  subjectAlignment: 'strong' | 'partial' | 'none',
 ): string[] {
   const reasons: string[] = [];
 
-  // Interest match
+  // Interest match — specific tags
   const matchingInterests = answers.interestTags.filter(t => course.interestTags.includes(t));
-  if (matchingInterests.length > 0) {
-    const formatted = matchingInterests.slice(0, 2).map(t => t.replace(/-/g, ' ')).join(' and ');
+  if (matchingInterests.length >= 2) {
+    const formatted = matchingInterests.slice(0, 3).map(t => t.replace(/-/g, ' ')).join(', ');
+    reasons.push(`Strong match with your interest in ${formatted} \u2014 this course covers all of them`);
+  } else if (matchingInterests.length === 1) {
+    const formatted = matchingInterests[0].replace(/-/g, ' ');
     reasons.push(`Matches your interest in ${formatted}`);
   }
 
-  // Subject fit
-  if (profile) {
-    const studentSubjects = new Set(profile.subjects.map(s => s.subjectName));
-    const matchingSubs = course.subjectBonus.filter(s => studentSubjects.has(s));
-    if (matchingSubs.length >= 2) {
-      reasons.push(`Strong fit with your ${matchingSubs.slice(0, 2).join(' and ')} background`);
-    } else if (matchingSubs.length === 1) {
-      reasons.push(`Builds on your ${matchingSubs[0]} studies`);
-    }
+  // Scenario match
+  const scenarioTags = new Set(answers.scenarioChoices.flatMap(s => SCENARIO_TAG_MAP[s] || []));
+  const scenarioOverlap = course.interestTags.filter(t => scenarioTags.has(t)).length;
+  if (scenarioOverlap >= 2) {
+    reasons.push('Closely aligned with the work scenarios you chose');
   }
 
-  // Points feasibility
-  const pointsDiff = answers.estimatedPoints - course.typicalPoints;
-  if (pointsDiff >= 50) {
-    reasons.push('Well within your points range');
-  } else if (pointsDiff >= 0) {
-    reasons.push('Within your points range');
-  } else if (pointsDiff >= -30) {
-    reasons.push('A reachable stretch goal for you');
-  } else if (pointsDiff >= -60) {
-    reasons.push('An ambitious target — achievable with strong results');
-  }
-
-  // Salary / employability
+  // Salary / values
   if (answers.salaryImportance >= 4 && course.salaryBand === 'high') {
-    reasons.push('Strong salary prospects, which you ranked highly');
+    reasons.push('You said earning well matters \u2014 graduates from this course earn above average');
   }
   if (answers.jobSecurityImportance >= 4 && course.employability >= 4) {
-    reasons.push('High employability and job security');
+    reasons.push('High employability and job security, which you ranked highly');
   }
-
-  // Helping others
   if (answers.helpingOthersImportance >= 4 &&
     (course.interestTags.includes('healthcare') || course.interestTags.includes('social-care') || course.interestTags.includes('education'))) {
-    reasons.push('Aligned with your desire to help others');
+    reasons.push('Aligned with your desire to help others and make a difference');
   }
 
   // Work style
   const matchingStyles = answers.workStyleTags.filter(t => course.workStyleTags.includes(t));
-  if (matchingStyles.length > 0) {
+  if (matchingStyles.length >= 2) {
     const formatted = matchingStyles.slice(0, 2).map(t => t.replace(/-/g, ' ')).join(' and ');
     reasons.push(`Suits your ${formatted} work style`);
+  } else if (matchingStyles.length === 1) {
+    const formatted = matchingStyles[0].replace(/-/g, ' ');
+    reasons.push(`Suits your ${formatted} work style`);
+  }
+
+  // Pathway type reasons
+  if (course.pathwayType === 'plc') {
+    reasons.push('No CAO points required \u2014 open entry with QQI certification');
+  }
+  if (course.pathwayType === 'apprenticeship') {
+    reasons.push('Earn while you learn \u2014 paid from day one');
+  }
+
+  // Study duration
+  if (answers.studyDuration.length > 0) {
+    const levelMap: Record<string, number[]> = { '1': [5], '2': [5, 6], '3': [7], '4+': [8] };
+    const acceptedLevels = new Set(answers.studyDuration.flatMap(d => levelMap[d] || []));
+    if (acceptedLevels.has(course.level)) {
+      const durationLabel = course.level === 5 ? '1 year' : course.level === 6 ? '1\u20132 years' : course.level === 7 ? '3 years' : '4+ years';
+      reasons.push(`At ${durationLabel}, this fits your preferred study length`);
+    }
+  }
+
+  // Points feasibility (skip for open-entry courses)
+  if (course.typicalPoints > 0) {
+    const pointsToUse = autoPoints > 0 ? autoPoints : answers.estimatedPoints;
+    const pointsDiff = pointsToUse - course.typicalPoints;
+    if (pointsDiff >= 50) {
+      reasons.push('Well within your points range');
+    } else if (pointsDiff >= 0) {
+      reasons.push('Within your points range');
+    } else if (pointsDiff >= -30) {
+      reasons.push('A reachable stretch goal for your points');
+    } else if (pointsDiff >= -60) {
+      reasons.push('An ambitious target \u2014 achievable with strong results');
+    }
   }
 
   // Region
   if (answers.preferredRegions.length > 0 && answers.preferredRegions.includes(course.region)) {
     const regionLabel = course.region.charAt(0).toUpperCase() + course.region.slice(1);
-    reasons.push(`Located in your preferred ${regionLabel} region`);
+    reasons.push(`Located in ${regionLabel}, one of your preferred regions`);
   }
 
-  // Dream job
-  if (answers.dreamJobKeywords.trim()) {
-    const bonus = dreamJobBonus(answers.dreamJobKeywords, course);
-    if (bonus > 0.3) {
-      reasons.push('Closely related to your dream career description');
+  // Subject alignment — informational, not scored
+  if (profile && profile.subjects.length > 0 && course.subjectBonus.length > 0) {
+    const studentSubjects = new Set(profile.subjects.map(s => s.subjectName));
+    const matchingSubs = course.subjectBonus.filter(s => studentSubjects.has(s));
+    if (subjectAlignment === 'strong' && matchingSubs.length >= 2) {
+      reasons.push(`Your ${matchingSubs.slice(0, 2).join(' and ')} subjects are a strong foundation for this`);
+    } else if (subjectAlignment === 'strong' && matchingSubs.length === 1) {
+      reasons.push(`Your ${matchingSubs[0]} background is a strong foundation for this`);
+    } else if (subjectAlignment === 'partial' && matchingSubs.length >= 1) {
+      reasons.push(`Builds on your ${matchingSubs[0]} studies`);
     }
   }
 
-  // Career paths
-  if (course.careerPaths.length > 0) {
+  // Career paths (add only if we have room)
+  if (reasons.length < 5 && course.careerPaths.length > 0) {
     reasons.push(`Career paths include ${course.careerPaths.slice(0, 2).join(' and ')}`);
   }
 
-  // Return top 3 most specific reasons
-  return reasons.slice(0, 3);
+  // Return up to 6 most specific reasons
+  return reasons.slice(0, 6);
 }
 
 // ─── Main Algorithm ─────────────────────────────────────────────────────────
@@ -224,36 +315,39 @@ function generateReasons(
 export function runFutureFinderAssessment(
   answers: FutureFinderAnswers,
   profile: StudentSubjectProfile | null,
+  autoPoints?: number,
 ): RecommendationResult[] {
   const results: RecommendationResult[] = [];
+  const pts = autoPoints || answers.estimatedPoints || 350;
 
   for (const course of CAO_COURSES) {
-    // Level filter: exclude courses outside preferred levels
-    if (answers.preferredLevels.length > 0 && !answers.preferredLevels.includes(course.level)) {
-      continue;
+    // Study duration filter: map '1' -> [5], '2' -> [5, 6], '3' -> [7], '4+' -> [8]
+    if (answers.studyDuration && answers.studyDuration.length > 0) {
+      const levelMap: Record<string, number[]> = { '1': [5], '2': [5, 6], '3': [7], '4+': [8] };
+      const acceptedLevels = new Set(answers.studyDuration.flatMap(d => levelMap[d] || []));
+      // Only filter if student didn't select all options (which means "show all")
+      if (acceptedLevels.size > 0 && acceptedLevels.size < 4 && !acceptedLevels.has(course.level)) {
+        continue;
+      }
     }
 
-    // Interest score (Jaccard overlap + activity ranking bonus + dream job bonus)
-    const interestOverlap = tagOverlap(answers.interestTags, course.interestTags);
-    const activityBonus = tagOverlap(answers.activityRankings, course.interestTags) * 0.3;
-    const dreamBonus = dreamJobBonus(answers.dreamJobKeywords, course) * 0.3;
-    const interestScore = Math.min(interestOverlap + activityBonus + dreamBonus, 1);
+    // Interest score (45%)
+    const interestScore = computeInterestScore(answers, course);
 
-    // Subject fit
-    const subFit = subjectFitScore(profile, course);
+    // Values alignment (30%)
+    const valuesScoreVal = computeValuesScore(answers, course);
 
-    // Values alignment
-    const valScore = valuesScore(answers, course);
+    // Feasibility (25%)
+    const feasibilityScore = computeFeasibilityScore(answers, course, pts);
 
-    // Feasibility
-    const feasScore = feasibilitySigmoid(answers.estimatedPoints, course.typicalPoints);
+    // Subject alignment (informational, not scored)
+    const subjectAlignment = getSubjectAlignment(profile, course);
 
     // Weighted total
     let totalScore = (
-      interestScore * 0.35 +
-      subFit * 0.25 +
-      valScore * 0.20 +
-      feasScore * 0.20
+      interestScore * 0.45 +
+      valuesScoreVal * 0.30 +
+      feasibilityScore * 0.25
     );
 
     // Geographic modifier
@@ -273,9 +367,19 @@ export function runFutureFinderAssessment(
     // Cap at 1
     totalScore = Math.min(totalScore, 1);
 
-    const reasons = generateReasons(answers, profile, course);
+    const reasons = generateReasons(answers, profile, course, pts, subjectAlignment);
 
-    results.push({ course, score: totalScore, reasons });
+    results.push({
+      course,
+      score: totalScore,
+      reasons,
+      scoreBreakdown: {
+        interestScore,
+        valuesScore: valuesScoreVal,
+        feasibilityScore,
+      },
+      subjectAlignment,
+    });
   }
 
   // Sort by score descending
@@ -290,6 +394,7 @@ export interface AssessmentQuestion {
   id: string;
   dimension: string;
   question: string;
+  subtitle?: string;
   type: 'multi-select' | 'single-select' | 'slider' | 'text' | 'rank' | 'boolean' | 'number';
   options?: { value: string; label: string }[];
   min?: number;
@@ -298,10 +403,11 @@ export interface AssessmentQuestion {
 }
 
 export const ASSESSMENT_QUESTIONS: AssessmentQuestion[] = [
-  // Interest / passion
+  // Q1: Interests (merged)
   {
     id: 'interestTags', dimension: 'Interest', type: 'multi-select', maxSelections: 5,
-    question: 'Which areas genuinely interest you? Pick up to 5.',
+    question: 'Which areas genuinely interest you?',
+    subtitle: 'Pick up to 5 \u2014 go with your gut.',
     options: [
       { value: 'technology', label: 'Technology & Computing' },
       { value: 'science', label: 'Science & Discovery' },
@@ -317,82 +423,101 @@ export const ASSESSMENT_QUESTIONS: AssessmentQuestion[] = [
       { value: 'sport', label: 'Sport & Fitness' },
       { value: 'psychology', label: 'Psychology & Mind' },
       { value: 'social-care', label: 'Social Care & Community' },
-      { value: 'languages', label: 'Languages & Culture' },
       { value: 'design', label: 'Design & Visual' },
-      { value: 'agriculture', label: 'Agriculture & Land' },
-      { value: 'music', label: 'Music & Performance' },
-      { value: 'politics', label: 'Politics & Society' },
-      { value: 'food', label: 'Food & Hospitality' },
-    ],
-  },
-  {
-    id: 'activityRankings', dimension: 'Interest', type: 'multi-select', maxSelections: 3,
-    question: 'Which activities do you enjoy most? Pick your top 3.',
-    options: [
-      { value: 'technology', label: 'Coding or building things with tech' },
-      { value: 'science', label: 'Experiments and figuring out how things work' },
-      { value: 'healthcare', label: 'Helping people who are unwell or injured' },
-      { value: 'business', label: 'Running a project or starting something new' },
-      { value: 'arts', label: 'Reading, writing or debating ideas' },
-      { value: 'design', label: 'Drawing, designing or making things look good' },
-      { value: 'sport', label: 'Training, coaching or competing' },
-      { value: 'social-care', label: 'Volunteering or looking after people' },
-      { value: 'media', label: 'Creating content, filming or photography' },
-      { value: 'environment', label: 'Being outdoors or working with nature' },
-    ],
-  },
-  {
-    id: 'dreamJobKeywords', dimension: 'Interest', type: 'text',
-    question: 'Describe your dream job in a few words — even if it seems unrealistic.',
-  },
-
-  // Work style
-  {
-    id: 'workStyleTags', dimension: 'Work Style', type: 'multi-select', maxSelections: 3,
-    question: 'How do you like to work? Pick 2-3 styles.',
-    options: [
-      { value: 'hands-on', label: 'Hands-on — building, making, doing' },
-      { value: 'analytical', label: 'Analytical — solving problems with logic' },
-      { value: 'creative', label: 'Creative — imagining new ideas' },
-      { value: 'people-focused', label: 'People-focused — communicating, helping' },
-      { value: 'research-driven', label: 'Research-driven — deep investigation' },
-      { value: 'structured', label: 'Structured — clear rules and processes' },
-      { value: 'flexible', label: 'Flexible — variety and freedom' },
-      { value: 'leadership', label: 'Leadership — organising and leading' },
-    ],
-  },
-  {
-    id: 'teamPreference', dimension: 'Work Style', type: 'single-select',
-    question: 'Do you prefer working in a team or independently?',
-    options: [
-      { value: 'team', label: 'In a team — I thrive with others around me' },
-      { value: 'solo', label: 'Independently — I do my best work alone' },
-      { value: 'mix', label: 'A mix of both' },
     ],
   },
 
-  // Career values
+  // Q2: Scenarios (replaces dream job)
+  {
+    id: 'scenarioChoices', dimension: 'Interest', type: 'multi-select', maxSelections: 3,
+    question: 'Which of these sound like something you\'d enjoy?',
+    subtitle: 'Pick 2\u20133 that appeal to you.',
+    options: [
+      { value: 'design-product', label: 'Designing something people use every day' },
+      { value: 'investigate-science', label: 'Investigating how things work at a molecular level' },
+      { value: 'help-difficult', label: 'Helping someone through a really difficult time' },
+      { value: 'argue-case', label: 'Arguing a case and changing someone\'s mind' },
+      { value: 'build-fix', label: 'Building or fixing something with your hands' },
+      { value: 'run-business', label: 'Running your own business or project' },
+      { value: 'create-content', label: 'Creating content that thousands of people see' },
+      { value: 'protect-environment', label: 'Protecting the environment or wildlife' },
+      { value: 'analyse-data', label: 'Analysing data to spot patterns others miss' },
+      { value: 'teach-inspire', label: 'Teaching or coaching someone to be their best' },
+    ],
+  },
+
+  // Q3: Salary (pill, not slider)
   {
     id: 'salaryImportance', dimension: 'Values', type: 'slider', min: 1, max: 5,
-    question: 'How important is a high salary to you?',
+    question: 'How important is earning well?',
+    subtitle: 'There\'s no wrong answer.',
   },
+
+  // Q4: Job security (pill)
   {
     id: 'jobSecurityImportance', dimension: 'Values', type: 'slider', min: 1, max: 5,
-    question: 'How important is job security and employability?',
+    question: 'How important is job security?',
+    subtitle: 'Knowing you\'ll always have work.',
   },
+
+  // Q5: Helping others (pill)
   {
     id: 'helpingOthersImportance', dimension: 'Values', type: 'slider', min: 1, max: 5,
     question: 'How important is helping others or making a difference?',
   },
 
-  // Geographic
+  // Q6: Work style
+  {
+    id: 'workStyleTags', dimension: 'Work Style', type: 'multi-select', maxSelections: 3,
+    question: 'How do you like to work?',
+    subtitle: 'Pick 2\u20133 that feel right.',
+    options: [
+      { value: 'hands-on', label: 'Hands-on \u2014 building, making, doing' },
+      { value: 'analytical', label: 'Analytical \u2014 solving problems with logic' },
+      { value: 'creative', label: 'Creative \u2014 imagining new ideas' },
+      { value: 'people-focused', label: 'People-focused \u2014 communicating, helping' },
+      { value: 'research-driven', label: 'Research-driven \u2014 deep investigation' },
+      { value: 'structured', label: 'Structured \u2014 clear rules and processes' },
+      { value: 'flexible', label: 'Flexible \u2014 variety and freedom' },
+      { value: 'leadership', label: 'Leadership \u2014 organising and leading' },
+    ],
+  },
+
+  // Q7: Team preference
+  {
+    id: 'teamPreference', dimension: 'Work Style', type: 'single-select',
+    question: 'Do you prefer working in a team or on your own?',
+    options: [
+      { value: 'team', label: 'In a team \u2014 I thrive with others around' },
+      { value: 'solo', label: 'On my own \u2014 I do my best work solo' },
+      { value: 'mix', label: 'A mix of both' },
+    ],
+  },
+
+  // Q8: Study duration (replaces level — removes hierarchy)
+  {
+    id: 'studyDuration', dimension: 'Practical', type: 'multi-select',
+    question: 'How long would you like to study for?',
+    subtitle: 'You can pick more than one.',
+    options: [
+      { value: '1', label: '1 year \u2014 fast-track to a career or progression' },
+      { value: '2', label: '1\u20132 years \u2014 get working sooner' },
+      { value: '3', label: '3 years \u2014 a solid foundation' },
+      { value: '4+', label: '4+ years \u2014 deep specialist knowledge' },
+    ],
+  },
+
+  // Q9: Location
   {
     id: 'willingToRelocate', dimension: 'Location', type: 'boolean',
-    question: 'Are you open to studying anywhere in Ireland, or do you have a preference?',
+    question: 'Are you open to studying anywhere in Ireland?',
   },
+
+  // Q10: Regions (conditional)
   {
     id: 'preferredRegions', dimension: 'Location', type: 'multi-select', maxSelections: 3,
-    question: 'Which regions would you prefer? Pick up to 3.',
+    question: 'Which areas would you prefer?',
+    subtitle: 'Pick up to 3.',
     options: [
       { value: 'dublin', label: 'Dublin' },
       { value: 'cork', label: 'Cork' },
@@ -403,20 +528,5 @@ export const ASSESSMENT_QUESTIONS: AssessmentQuestion[] = [
       { value: 'northwest', label: 'North West' },
       { value: 'southwest', label: 'South West' },
     ],
-  },
-
-  // Feasibility
-  {
-    id: 'preferredLevels', dimension: 'Feasibility', type: 'multi-select',
-    question: 'What type of course are you interested in?',
-    options: [
-      { value: '8', label: 'Level 8 — Honours Degree (4 years)' },
-      { value: '7', label: 'Level 7 — Ordinary Degree (3 years)' },
-      { value: '6', label: 'Level 6 — Higher Certificate (2 years)' },
-    ],
-  },
-  {
-    id: 'estimatedPoints', dimension: 'Feasibility', type: 'number', min: 100, max: 625,
-    question: 'What CAO points do you realistically expect? (Use the CAO Simulator if unsure)',
   },
 ];
