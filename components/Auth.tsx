@@ -43,7 +43,7 @@ export const AVATAR_SEEDS = [
 
 // ── Boring Avatars "Beam" style — generated locally ──
 
-const BEAM_COLORS = ['#E94560', '#F59E0B', '#F97316', '#3A0CA3', '#2A7D6F', '#4361EE', '#7209B7', '#4CC9F0'];
+const BEAM_COLORS = ['#F97316', '#E94560', '#F59E0B', '#1a1a2e', '#3A0CA3', '#2A7D6F', '#4361EE', '#4CC9F0'];
 
 function hashName(name: string): number {
   let hash = 0;
@@ -63,22 +63,25 @@ export function getAvatarUrl(seed: string): string {
   let faceIdx = h2 % BEAM_COLORS.length;
   if (faceIdx === h % BEAM_COLORS.length) faceIdx = (faceIdx + 3) % BEAM_COLORS.length;
   const faceColor = BEAM_COLORS[faceIdx];
-  const rot = (h % 120) + 100;
-  const tx = (h % 10) - 5;
-  const ty = (h2 % 10) - 5;
+  const rot = (h % 200) + 80;
+  const tx = (h % 14) - 7;
+  const ty = (h2 % 14) - 7;
   const wink = h % 5 === 0;
-  const mouthW = 6 + (h % 4);
+  const mouthW = 5 + (h % 3);
   const mouthOpen = h % 3 === 0;
+  // Use white features on dark face colors, black on light
+  const isDark = ['#1a1a2e', '#3A0CA3', '#2A7D6F', '#4361EE'].includes(faceColor);
+  const feat = isDark ? 'white' : '#1a1a2e';
 
   const eyeL = wink
-    ? `<line x1="12" y1="15" x2="14" y2="15" stroke="black" stroke-width="1" stroke-linecap="round"/>`
-    : `<circle cx="13" cy="15" r="1" fill="black"/>`;
-  const eyeR = `<circle cx="23" cy="15" r="1" fill="black"/>`;
+    ? `<line x1="12.5" y1="15" x2="14" y2="15" stroke="${feat}" stroke-width="0.8" stroke-linecap="round"/>`
+    : `<circle cx="13" cy="14.5" r="0.9" fill="${feat}"/>`;
+  const eyeR = `<circle cx="22" cy="14.5" r="0.9" fill="${feat}"/>`;
   const mouth = mouthOpen
-    ? `<path d="M${18 - mouthW/2},19 a1,0.8 0 0,0 ${mouthW},0" fill="black" stroke="none"/>`
-    : `<path d="M${18 - mouthW/2},20 a1,0.6 0 0,0 ${mouthW},0" fill="none" stroke="black" stroke-width="0.8" stroke-linecap="round"/>`;
+    ? `<path d="M${18 - mouthW/2},18.5 a1,0.7 0 0,0 ${mouthW},0" fill="${feat}" stroke="none"/>`
+    : `<path d="M${18 - mouthW/2},19 q${mouthW/2},3 ${mouthW},0" fill="none" stroke="${feat}" stroke-width="0.7" stroke-linecap="round"/>`;
 
-  const svg = `<svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="120" height="120"><mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" rx="72" fill="white"/></mask><g mask="url(#m)"><rect width="36" height="36" fill="${bgColor}"/><rect x="0" y="0" width="36" height="36" transform="translate(${tx} ${ty}) rotate(${rot} 18 18) scale(1.1)" fill="${faceColor}" rx="36"/><g transform="translate(${tx * 0.3} ${ty * 0.3})">${eyeL}${eyeR}${mouth}</g></g></svg>`;
+  const svg = `<svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="120" height="120"><mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" rx="72" fill="white"/></mask><g mask="url(#m)"><rect width="36" height="36" fill="${bgColor}"/><rect x="0" y="0" width="36" height="36" transform="translate(${tx} ${ty}) rotate(${rot} 18 18)" fill="${faceColor}" rx="36"/><g transform="translate(${(tx * 0.2).toFixed(1)} ${(ty * 0.2).toFixed(1)})">${eyeL}${eyeR}${mouth}</g></g></svg>`;
   return `data:image/svg+xml,${encodeURIComponent(svg)}`;
 }
 
