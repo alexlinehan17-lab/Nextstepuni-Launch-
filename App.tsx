@@ -510,6 +510,7 @@ class ModuleErrorBoundary extends React.Component<ModuleErrorBoundaryProps, Modu
 
 // ── Split-Panel Login Page ──
 const MotionDiv = motion.div as any;
+const MotionButton = motion.button as any;
 
 const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({ handleLoginSuccess }) => {
   const [authMode, setAuthMode] = useState<'login' | 'register'>('login');
@@ -640,42 +641,52 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
     setShowConfirmPw(false);
   };
 
-  const inputStyle: React.CSSProperties = { backgroundColor: '#FAF7F4' };
-  const inputClass = "w-full py-3 px-4 rounded-xl border border-zinc-200 text-sm text-zinc-800 placeholder-zinc-400 outline-none focus:border-zinc-400 focus:ring-2 focus:ring-zinc-100 transition-all";
+  const inputClass = "w-full py-3 px-4 rounded-xl text-sm text-zinc-800 placeholder-zinc-400 outline-none transition-all";
+  const inputBorder: React.CSSProperties = { backgroundColor: '#FAF7F4', border: '1px solid #e4e4e7' };
 
-  // ── Left Panel: Gradient Visual ──
+  // ── Left Panel: Animated Gradient with Framer Motion blobs ──
   const gradientPanel = (
-    <div
-      className="hidden md:flex md:items-center md:justify-center w-1/2 relative overflow-hidden"
-      style={{
-        borderRadius: '16px 0 0 16px',
-        backgroundColor: '#0F1B2E',
-        backgroundImage: [
-          'radial-gradient(ellipse at 20% 0%, rgba(30, 60, 120, 0.8) 0%, transparent 60%)',
-          'radial-gradient(ellipse at 80% 20%, rgba(70, 40, 130, 0.7) 0%, transparent 50%)',
-          'radial-gradient(ellipse at 60% 50%, rgba(100, 50, 160, 0.5) 0%, transparent 55%)',
-          'radial-gradient(ellipse at 50% 80%, rgba(200, 60, 100, 0.6) 0%, transparent 50%)',
-          'radial-gradient(ellipse at 30% 100%, rgba(220, 120, 60, 0.5) 0%, transparent 40%)',
-        ].join(', '),
-      }}
-    >
-      {/* Floating hero pill */}
-      <div className="absolute inset-0 flex items-center justify-center px-10" style={{ paddingTop: '10%' }}>
-        <div
-          className="w-full max-w-sm flex items-center gap-3"
-          style={{
-            backgroundColor: 'rgba(255,255,255,0.9)',
-            backdropFilter: 'blur(10px)',
-            borderRadius: 999,
-            padding: '16px 24px',
-            boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
-          }}
+    <div className="hidden md:block w-1/2 relative overflow-hidden" style={{ borderRadius: '16px 0 0 16px', backgroundColor: '#0F1B2E' }}>
+      {/* Animated color blobs */}
+      <MotionDiv
+        className="absolute"
+        style={{ width: 400, height: 400, borderRadius: '50%', background: 'rgba(30, 60, 150, 0.6)', filter: 'blur(80px)', top: '-20%', left: '-10%' }}
+        animate={{ x: [0, 60, -30, 0], y: [0, -40, 50, 0], scale: [1, 1.1, 0.95, 1] }}
+        transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
+      />
+      <MotionDiv
+        className="absolute"
+        style={{ width: 350, height: 350, borderRadius: '50%', background: 'rgba(120, 40, 180, 0.5)', filter: 'blur(80px)', top: '30%', right: '-15%' }}
+        animate={{ x: [0, -50, 40, 0], y: [0, 60, -30, 0], scale: [1, 0.9, 1.1, 1] }}
+        transition={{ duration: 25, repeat: Infinity, ease: 'easeInOut' }}
+      />
+      <MotionDiv
+        className="absolute"
+        style={{ width: 300, height: 300, borderRadius: '50%', background: 'rgba(200, 50, 100, 0.5)', filter: 'blur(80px)', bottom: '-10%', left: '20%' }}
+        animate={{ x: [0, 40, -60, 0], y: [0, -50, 30, 0], scale: [1, 1.05, 0.9, 1] }}
+        transition={{ duration: 22, repeat: Infinity, ease: 'easeInOut' }}
+      />
+      <MotionDiv
+        className="absolute"
+        style={{ width: 250, height: 250, borderRadius: '50%', background: 'rgba(220, 120, 50, 0.4)', filter: 'blur(80px)', bottom: '0%', right: '10%' }}
+        animate={{ x: [0, -30, 50, 0], y: [0, 40, -20, 0], scale: [1, 1.08, 0.95, 1] }}
+        transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
+      />
+
+      {/* Floating pill CTA */}
+      <div className="absolute inset-0 flex items-center justify-center px-8 z-10">
+        <MotionDiv
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: [0, -6, 0] }}
+          transition={{ opacity: { duration: 0.8, delay: 0.3 }, y: { duration: 4, repeat: Infinity, ease: 'easeInOut' } }}
+          style={{ backgroundColor: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(10px)', borderRadius: 999, padding: '16px 24px', boxShadow: '0 8px 32px rgba(0,0,0,0.12)', maxWidth: 360, width: '100%' }}
+          className="flex items-center gap-3"
         >
-          <span className="flex-1 text-zinc-800 font-medium" style={{ fontSize: 15 }}>Study smarter. Score higher. Free for DEIS students.</span>
-          <div className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center shrink-0">
+          <span style={{ fontSize: 15, color: '#1a1a2e', fontWeight: 500 }}>Study smarter. Score higher. Free for DEIS students.</span>
+          <div className="w-10 h-10 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: '#1a1a2e' }}>
             <ArrowRight size={16} className="text-white" />
           </div>
-        </div>
+        </MotionDiv>
       </div>
     </div>
   );
@@ -684,82 +695,106 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
   if (loginType === 'gc') {
     return (
       <div className="min-h-screen flex items-center justify-center p-4 md:p-8" style={{ backgroundColor: '#FAFAF7' }}>
-        <div className="w-full max-w-5xl bg-white rounded-2xl overflow-hidden flex" style={{ minHeight: 560, boxShadow: '0 4px 40px rgba(0,0,0,0.08)' }}>
-        {/* Left: Gradient */}
-        {gradientPanel}
-        {/* Right: Form */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-14 py-10 overflow-y-auto">
-          <div className="w-full max-w-[420px] mx-auto">
-            {/* Logo */}
-            <div className="mb-8">
-              <p className="text-zinc-400 text-xs font-semibold tracking-[0.15em]">NEXTSTEPUNI</p>
-            </div>
+        <MotionDiv
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+          className="w-full max-w-4xl bg-white rounded-2xl overflow-hidden flex"
+          style={{ minHeight: 540, boxShadow: '0 4px 40px rgba(0,0,0,0.06)' }}
+        >
+          {/* Left: Animated Gradient */}
+          {gradientPanel}
 
-            {/* Back button */}
-            <button
-              type="button"
-              onClick={() => { setLoginType(null); resetForm(); }}
-              className="flex items-center gap-1.5 text-sm text-zinc-400 hover:text-white mb-6 transition-colors"
-            >
-              <ArrowLeft size={14} /> Back
-            </button>
+          {/* Right: GC Form */}
+          <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-14 py-10 overflow-y-auto" style={{ maxHeight: '90vh' }}>
+            <div className="w-full max-w-[380px] mx-auto">
+              {/* Logo */}
+              <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+                <p className="text-zinc-400 text-[10px] font-semibold tracking-[0.2em] mb-8">NEXTSTEPUNI</p>
+              </MotionDiv>
 
-            {/* Heading */}
-            <h2 className="text-3xl font-semibold text-zinc-900 tracking-tight mb-1">Guidance Counsellor</h2>
-            <p className="text-sm text-zinc-400 mb-8">Sign in with your counsellor account.</p>
-
-            <form onSubmit={handleSubmit} className="space-y-4">
-              {/* Email */}
-              <div>
-                <label className="text-sm text-zinc-700 font-medium mb-2 block">Email</label>
-                <input
-                  type="email"
-                  value={email}
-                  onChange={e => { setEmail(e.target.value); setError(''); }}
-                  placeholder="gc@school.ie"
-                  className={inputClass}
-                  style={inputStyle}
-                  autoFocus
-                />
-              </div>
-
-              {/* Password */}
-              <div>
-                <label className="text-sm text-zinc-700 font-medium mb-2 block">Password</label>
-                <div className="relative">
-                  <input
-                    type={showPassword ? 'text' : 'password'}
-                    value={password}
-                    onChange={e => { setPassword(e.target.value); setError(''); }}
-                    placeholder="Enter your password"
-                    className={inputClass}
-                    style={inputStyle}
-                  />
-                  <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-white transition-colors">
-                    {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+              <AnimatePresence mode="wait">
+                <MotionDiv
+                  key="gc-form"
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -20 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  {/* Back button */}
+                  <button
+                    type="button"
+                    onClick={() => { setLoginType(null); resetForm(); }}
+                    className="flex items-center gap-1.5 text-sm text-zinc-400 hover:text-zinc-600 mb-6 transition-colors"
+                  >
+                    <ArrowLeft size={14} /> Back
                   </button>
-                </div>
-              </div>
 
-              {/* Error */}
-              <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-400 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                  {/* Heading */}
+                  <h2 className="text-3xl font-semibold text-zinc-900 tracking-tight mb-1">Guidance Counsellor</h2>
+                  <p className="text-sm text-zinc-400 mb-8">Sign in with your counsellor account.</p>
 
-              {/* Submit */}
-              <button type="submit" disabled={isLoading} className="w-full py-3 rounded-xl text-white font-medium hover:opacity-90 transition-colors text-sm disabled:opacity-60 disabled:cursor-not-allowed" style={{ backgroundColor: '#2A7D6F' }}>
-                {isLoading ? 'Signing in...' : 'Sign In'}
-              </button>
-            </form>
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    {/* Email */}
+                    <div>
+                      <label className="text-sm text-zinc-600 font-medium mb-1.5 block">Email</label>
+                      <input
+                        type="email"
+                        value={email}
+                        onChange={e => { setEmail(e.target.value); setError(''); }}
+                        placeholder="gc@school.ie"
+                        className={inputClass}
+                        style={inputBorder}
+                        autoFocus
+                      />
+                    </div>
 
-            {/* DEV: Skip Login */}
-            <button
-              onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })}
-              className="mt-10 mx-auto block px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[10px] font-mono hover:bg-red-600/20 transition-colors"
-            >
-              DEV: Skip Login
-            </button>
+                    {/* Password */}
+                    <div>
+                      <label className="text-sm text-zinc-600 font-medium mb-1.5 block">Password</label>
+                      <div className="relative">
+                        <input
+                          type={showPassword ? 'text' : 'password'}
+                          value={password}
+                          onChange={e => { setPassword(e.target.value); setError(''); }}
+                          placeholder="Enter your password"
+                          className={inputClass}
+                          style={inputBorder}
+                        />
+                        <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-600 transition-colors">
+                          {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Error */}
+                    <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+
+                    {/* Submit */}
+                    <MotionButton
+                      type="submit"
+                      disabled={isLoading}
+                      whileHover={{ scale: 1.01 }}
+                      whileTap={{ scale: 0.99 }}
+                      className="w-full py-3 rounded-xl text-white text-sm font-semibold transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+                      style={{ backgroundColor: '#2A7D6F' }}
+                    >
+                      {isLoading ? 'Signing in...' : 'Sign In'}
+                    </MotionButton>
+                  </form>
+
+                  {/* DEV: Skip Login */}
+                  <button
+                    onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })}
+                    className="mt-10 mx-auto block px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[9px] font-mono hover:bg-red-600/20 transition-colors"
+                  >
+                    DEV: Skip Login
+                  </button>
+                </MotionDiv>
+              </AnimatePresence>
+            </div>
           </div>
-        </div>
-        </div>
+        </MotionDiv>
       </div>
     );
   }
@@ -767,215 +802,252 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
   // ── Main Login / Register View ──
   return (
     <div className="min-h-screen flex items-center justify-center p-4 md:p-8" style={{ backgroundColor: '#FAFAF7' }}>
-      <div className="w-full max-w-5xl bg-white dark:bg-zinc-900 rounded-2xl shadow-2xl overflow-hidden flex" style={{ minHeight: 580, maxHeight: '90vh' }}>
-      {/* Left: Gradient */}
-      {gradientPanel}
-      {/* Right: Form */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center px-6 md:px-12 py-8 overflow-y-auto">
-        <div className="w-full max-w-[420px] mx-auto py-8">
-          {/* Logo */}
-          <div className="mb-8">
-            <p className="text-white text-xs font-semibold tracking-[0.15em]">NEXTSTEPUNI</p>
-          </div>
+      <MotionDiv
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: 'easeOut' }}
+        className="w-full max-w-4xl bg-white rounded-2xl overflow-hidden flex"
+        style={{ minHeight: 540, boxShadow: '0 4px 40px rgba(0,0,0,0.06)' }}
+      >
+        {/* Left: Animated Gradient */}
+        {gradientPanel}
 
-          <AnimatePresence mode="wait">
-            {authMode === 'login' ? (
-              <MotionDiv key="login-form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}>
-                {/* Heading */}
-                <h2 className="text-3xl font-semibold text-zinc-900 tracking-tight mb-8">Welcome back</h2>
+        {/* Right: Form */}
+        <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-14 py-10 overflow-y-auto" style={{ maxHeight: '90vh' }}>
+          <div className="w-full max-w-[380px] mx-auto">
+            {/* Logo */}
+            <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+              <p className="text-zinc-400 text-[10px] font-semibold tracking-[0.2em] mb-8">NEXTSTEPUNI</p>
+            </MotionDiv>
 
-                {/* GC Login button */}
-                <button
-                  type="button"
-                  onClick={() => { setLoginType('gc'); resetForm(); }}
-                  className="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-700 text-sm font-medium hover:bg-zinc-50 transition-colors flex items-center justify-center gap-2"
+            <AnimatePresence mode="wait">
+              {authMode === 'login' ? (
+                <MotionDiv
+                  key="login-form"
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -20 }}
+                  transition={{ duration: 0.3 }}
                 >
-                  <GraduationCap size={16} />
-                  Sign in as Guidance Counsellor
-                </button>
+                  {/* Heading */}
+                  <h2 className="text-3xl font-semibold text-zinc-900 tracking-tight mb-8">Welcome back</h2>
 
-                {/* OR divider */}
-                <div className="flex items-center gap-4 my-6">
-                  <div className="flex-1 h-px bg-zinc-200" />
-                  <span className="text-xs text-zinc-500">OR</span>
-                  <div className="flex-1 h-px bg-zinc-200" />
-                </div>
+                  {/* GC Login button */}
+                  <MotionButton
+                    type="button"
+                    onClick={() => { setLoginType('gc'); resetForm(); }}
+                    whileHover={{ scale: 1.01, backgroundColor: '#fafaf7' }}
+                    whileTap={{ scale: 0.99 }}
+                    className="w-full py-3 rounded-xl text-sm font-medium text-zinc-600 transition-all flex items-center justify-center gap-2"
+                    style={{ border: '1px solid #e4e4e7', backgroundColor: '#ffffff' }}
+                  >
+                    <GraduationCap size={16} />
+                    Sign in as Guidance Counsellor
+                  </MotionButton>
 
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  {/* Email / Username */}
-                  <div>
-                    <label className="text-sm text-zinc-700 font-medium mb-2 block">Email / Username</label>
-                    <input
-                      type="text"
-                      value={email}
-                      onChange={e => { setEmail(e.target.value); setError(''); setResetSent(false); }}
-                      placeholder="your@email.com or username"
-                      className={inputClass}
-                      style={inputStyle}
-                      autoFocus
-                    />
+                  {/* OR divider */}
+                  <div className="flex items-center gap-4 my-6">
+                    <div className="flex-1 h-px bg-zinc-200" />
+                    <span className="text-xs text-zinc-400">OR</span>
+                    <div className="flex-1 h-px bg-zinc-200" />
                   </div>
 
-                  {/* Password */}
-                  <div>
-                    <div className="flex items-center justify-between mb-2">
-                      <label className="text-sm text-zinc-700 font-medium">Password</label>
-                      <button type="button" onClick={handleForgotPassword} className="text-xs font-medium transition-colors hover:opacity-70 text-teal-700">
-                        {resetSent ? 'Reset email sent!' : 'Forgot password?'}
-                      </button>
-                    </div>
-                    <div className="relative">
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    {/* Email / Username */}
+                    <div>
+                      <label className="text-sm text-zinc-600 font-medium mb-1.5 block">Email / Username</label>
                       <input
-                        type={showPassword ? 'text' : 'password'}
-                        value={password}
-                        onChange={e => { setPassword(e.target.value); setError(''); }}
-                        placeholder="Enter your password"
+                        type="text"
+                        value={email}
+                        onChange={e => { setEmail(e.target.value); setError(''); setResetSent(false); }}
+                        placeholder="your@email.com or username"
                         className={inputClass}
-                        style={inputStyle}
+                        style={inputBorder}
+                        autoFocus
                       />
-                      <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-white transition-colors">
-                        {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
-                      </button>
                     </div>
-                  </div>
 
-                  {/* Error */}
-                  <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-400 font-medium">{error}</MotionDiv>}</AnimatePresence>
-                  {/* Reset sent */}
-                  {resetSent && <p className="text-sm text-green-400 font-medium">Check your email for a reset link.</p>}
-
-                  {/* Submit */}
-                  <button type="submit" disabled={isLoading} className="w-full py-3 rounded-xl text-white font-medium hover:opacity-90 transition-colors text-sm disabled:opacity-60 disabled:cursor-not-allowed" style={{ backgroundColor: '#2A7D6F' }}>
-                    {isLoading ? 'Signing in...' : 'Sign In'}
-                  </button>
-                </form>
-
-                {/* Toggle to register */}
-                <p className="text-sm text-zinc-400 text-center mt-6">
-                  Don&apos;t have an account?{' '}
-                  <button type="button" onClick={() => { setAuthMode('register'); resetForm(); }} className="text-teal-700 underline hover:text-teal-900 transition-colors font-semibold">Register</button>
-                </p>
-              </MotionDiv>
-            ) : (
-              <MotionDiv key="register-form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}>
-                {/* Heading */}
-                <h2 className="text-3xl font-semibold text-zinc-900 tracking-tight mb-8">Create your account</h2>
-
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  {/* Name */}
-                  <div>
-                    <label className="text-sm text-zinc-700 font-medium mb-2 block">Name</label>
-                    <input
-                      type="text"
-                      value={name}
-                      onChange={e => { setName(e.target.value); setError(''); }}
-                      placeholder="Choose a username"
-                      className={inputClass}
-                      style={inputStyle}
-                      autoFocus
-                    />
-                  </div>
-
-                  {/* School dropdown */}
-                  <div>
-                    <label className="text-sm text-zinc-700 font-medium mb-2 block">School</label>
-                    <div className="relative">
-                      <select
-                        value={school}
-                        onChange={e => { setSchool(e.target.value); setError(''); }}
-                        className={`${inputClass} appearance-none cursor-pointer ${!school ? 'text-zinc-500' : ''}`}
-                        style={inputStyle}
-                      >
-                        <option value="" disabled>Select your school</option>
-                        {SCHOOLS.map(s => (
-                          <option key={s.id} value={s.id}>{s.name}</option>
-                        ))}
-                      </select>
-                      <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 pointer-events-none" />
-                    </div>
-                  </div>
-
-                  {/* Avatar picker */}
-                  <div>
-                    <label className="text-sm text-zinc-700 font-medium mb-2 block">Choose your avatar</label>
-                    <div className="grid grid-cols-4 gap-2">
-                      {AVATAR_SEEDS.map(seed => (
-                        <button
-                          key={seed}
-                          type="button"
-                          onClick={() => setAvatar(seed)}
-                          className={`rounded-lg aspect-square p-1 transition-all ${avatar === seed ? 'ring-2 ring-white bg-white/10' : 'bg-zinc-900 ring-1 ring-zinc-800 hover:ring-zinc-600'}`}
-                        >
-                          <img src={getAvatarUrl(seed)} alt={seed} className="w-full h-full rounded-md" />
+                    {/* Password */}
+                    <div>
+                      <div className="flex items-center justify-between mb-1.5">
+                        <label className="text-sm text-zinc-600 font-medium">Password</label>
+                        <button type="button" onClick={handleForgotPassword} className="text-xs font-medium transition-colors hover:opacity-70" style={{ color: '#2A7D6F' }}>
+                          {resetSent ? 'Reset email sent!' : 'Forgot password?'}
                         </button>
-                      ))}
+                      </div>
+                      <div className="relative">
+                        <input
+                          type={showPassword ? 'text' : 'password'}
+                          value={password}
+                          onChange={e => { setPassword(e.target.value); setError(''); }}
+                          placeholder="Enter your password"
+                          className={inputClass}
+                          style={inputBorder}
+                        />
+                        <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-600 transition-colors">
+                          {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                        </button>
+                      </div>
                     </div>
-                  </div>
 
-                  {/* Password */}
-                  <div>
-                    <label className="text-sm text-zinc-700 font-medium mb-2 block">Password</label>
-                    <div className="relative">
+                    {/* Error */}
+                    <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                    {/* Reset sent */}
+                    {resetSent && <p className="text-sm text-green-500 font-medium">Check your email for a reset link.</p>}
+
+                    {/* Submit */}
+                    <MotionButton
+                      type="submit"
+                      disabled={isLoading}
+                      whileHover={{ scale: 1.01 }}
+                      whileTap={{ scale: 0.99 }}
+                      className="w-full py-3 rounded-xl text-white text-sm font-semibold transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+                      style={{ backgroundColor: '#2A7D6F' }}
+                    >
+                      {isLoading ? 'Signing in...' : 'Sign In'}
+                    </MotionButton>
+                  </form>
+
+                  {/* Toggle to register */}
+                  <p className="text-sm text-zinc-400 text-center mt-6">
+                    Don&apos;t have an account?{' '}
+                    <button type="button" onClick={() => { setAuthMode('register'); resetForm(); }} className="text-sm font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Register</button>
+                  </p>
+                </MotionDiv>
+              ) : (
+                <MotionDiv
+                  key="register-form"
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -20 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  {/* Heading */}
+                  <h2 className="text-3xl font-semibold text-zinc-900 tracking-tight mb-8">Create your account</h2>
+
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    {/* Name */}
+                    <div>
+                      <label className="text-sm text-zinc-600 font-medium mb-1.5 block">Name</label>
                       <input
-                        type={showPassword ? 'text' : 'password'}
-                        value={password}
-                        onChange={e => { setPassword(e.target.value); setError(''); }}
-                        placeholder="Create a password"
+                        type="text"
+                        value={name}
+                        onChange={e => { setName(e.target.value); setError(''); }}
+                        placeholder="Choose a username"
                         className={inputClass}
-                        style={inputStyle}
+                        style={inputBorder}
+                        autoFocus
                       />
-                      <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-white transition-colors">
-                        {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
-                      </button>
                     </div>
-                  </div>
 
-                  {/* Confirm Password */}
-                  <div>
-                    <label className="text-sm text-zinc-700 font-medium mb-2 block">Confirm Password</label>
-                    <div className="relative">
-                      <input
-                        type={showConfirmPw ? 'text' : 'password'}
-                        value={confirmPassword}
-                        onChange={e => { setConfirmPassword(e.target.value); setError(''); }}
-                        placeholder="Confirm your password"
-                        className={inputClass}
-                        style={inputStyle}
-                      />
-                      <button type="button" onClick={() => setShowConfirmPw(!showConfirmPw)} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-white transition-colors">
-                        {showConfirmPw ? <EyeOff size={16} /> : <Eye size={16} />}
-                      </button>
+                    {/* School dropdown */}
+                    <div>
+                      <label className="text-sm text-zinc-600 font-medium mb-1.5 block">School</label>
+                      <div className="relative">
+                        <select
+                          value={school}
+                          onChange={e => { setSchool(e.target.value); setError(''); }}
+                          className={`${inputClass} appearance-none cursor-pointer ${!school ? 'text-zinc-400' : ''}`}
+                          style={inputBorder}
+                        >
+                          <option value="" disabled>Select your school</option>
+                          {SCHOOLS.map(s => (
+                            <option key={s.id} value={s.id}>{s.name}</option>
+                          ))}
+                        </select>
+                        <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 pointer-events-none" />
+                      </div>
                     </div>
-                  </div>
 
-                  {/* Error */}
-                  <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-400 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                    {/* Avatar picker */}
+                    <div>
+                      <label className="text-sm text-zinc-600 font-medium mb-1.5 block">Choose your avatar</label>
+                      <div className="grid grid-cols-4 gap-2">
+                        {AVATAR_SEEDS.map(seed => (
+                          <button
+                            key={seed}
+                            type="button"
+                            onClick={() => setAvatar(seed)}
+                            className={`rounded-xl aspect-square p-1 transition-all ${avatar === seed ? 'ring-2 ring-offset-1' : 'ring-1 ring-zinc-200 hover:ring-zinc-400'}`}
+                            style={avatar === seed ? { backgroundColor: '#FAF7F4', ringColor: '#2A7D6F' } : { backgroundColor: '#ffffff' }}
+                          >
+                            <img src={getAvatarUrl(seed)} alt={seed} className="w-full h-full rounded-lg" />
+                          </button>
+                        ))}
+                      </div>
+                    </div>
 
-                  {/* Submit */}
-                  <button type="submit" disabled={isLoading} className="w-full py-3 rounded-xl text-white font-medium hover:opacity-90 transition-colors text-sm disabled:opacity-60 disabled:cursor-not-allowed" style={{ backgroundColor: '#2A7D6F' }}>
-                    {isLoading ? 'Creating account...' : 'Create Account'}
-                  </button>
-                </form>
+                    {/* Password */}
+                    <div>
+                      <label className="text-sm text-zinc-600 font-medium mb-1.5 block">Password</label>
+                      <div className="relative">
+                        <input
+                          type={showPassword ? 'text' : 'password'}
+                          value={password}
+                          onChange={e => { setPassword(e.target.value); setError(''); }}
+                          placeholder="Create a password"
+                          className={inputClass}
+                          style={inputBorder}
+                        />
+                        <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-600 transition-colors">
+                          {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                        </button>
+                      </div>
+                    </div>
 
-                {/* Toggle to login */}
-                <p className="text-sm text-zinc-400 text-center mt-6">
-                  Already have an account?{' '}
-                  <button type="button" onClick={() => { setAuthMode('login'); resetForm(); }} className="text-teal-700 underline hover:text-teal-900 transition-colors font-semibold">Sign in</button>
-                </p>
-              </MotionDiv>
-            )}
-          </AnimatePresence>
+                    {/* Confirm Password */}
+                    <div>
+                      <label className="text-sm text-zinc-600 font-medium mb-1.5 block">Confirm Password</label>
+                      <div className="relative">
+                        <input
+                          type={showConfirmPw ? 'text' : 'password'}
+                          value={confirmPassword}
+                          onChange={e => { setConfirmPassword(e.target.value); setError(''); }}
+                          placeholder="Confirm your password"
+                          className={inputClass}
+                          style={inputBorder}
+                        />
+                        <button type="button" onClick={() => setShowConfirmPw(!showConfirmPw)} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-600 transition-colors">
+                          {showConfirmPw ? <EyeOff size={16} /> : <Eye size={16} />}
+                        </button>
+                      </div>
+                    </div>
 
-          {/* DEV: Skip Login */}
-          <button
-            onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })}
-            className="mt-10 mx-auto block px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[10px] font-mono hover:bg-red-600/20 transition-colors"
-          >
-            DEV: Skip Login
-          </button>
+                    {/* Error */}
+                    <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+
+                    {/* Submit */}
+                    <MotionButton
+                      type="submit"
+                      disabled={isLoading}
+                      whileHover={{ scale: 1.01 }}
+                      whileTap={{ scale: 0.99 }}
+                      className="w-full py-3 rounded-xl text-white text-sm font-semibold transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+                      style={{ backgroundColor: '#2A7D6F' }}
+                    >
+                      {isLoading ? 'Creating account...' : 'Create Account'}
+                    </MotionButton>
+                  </form>
+
+                  {/* Toggle to login */}
+                  <p className="text-sm text-zinc-400 text-center mt-6">
+                    Already have an account?{' '}
+                    <button type="button" onClick={() => { setAuthMode('login'); resetForm(); }} className="text-sm font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Sign in</button>
+                  </p>
+                </MotionDiv>
+              )}
+            </AnimatePresence>
+
+            {/* DEV: Skip Login */}
+            <button
+              onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })}
+              className="mt-10 mx-auto block px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[9px] font-mono hover:bg-red-600/20 transition-colors"
+            >
+              DEV: Skip Login
+            </button>
+          </div>
         </div>
-      </div>
-      </div>
+      </MotionDiv>
     </div>
   );
 };
