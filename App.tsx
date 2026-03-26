@@ -786,7 +786,7 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
         className="w-full max-w-5xl bg-white rounded-2xl overflow-hidden flex"
-        style={{ minHeight: 540, boxShadow: '0 4px 40px rgba(0,0,0,0.04)', border: '1px solid rgba(0,0,0,0.08)' }}
+        style={{ minHeight: 540, boxShadow: '0 2px 8px rgba(0,0,0,0.08), 0 12px 40px rgba(0,0,0,0.06)', border: '1px solid rgba(0,0,0,0.12)' }}
       >
         {/* Left: Animated Gradient */}
         {gradientPanel}

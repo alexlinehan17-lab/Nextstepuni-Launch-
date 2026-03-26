@@ -354,6 +354,20 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
         </button>
       </aside>
 
+      {/* ─── Mobile Header ───────────────────────────────────────────── */}
+      <div className="md:hidden flex items-center justify-between px-4 py-3 border-b border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
+        <div className="flex items-center gap-2">
+          <div className="w-7 h-7 rounded-lg overflow-hidden bg-zinc-200 dark:bg-zinc-700">
+            <img src={getAvatarUrl(avatarSeed)} alt="Avatar" className="w-full h-full object-cover" />
+          </div>
+          <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{getSchoolName(school)}</span>
+        </div>
+        <button onClick={onLogout} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-900/20 transition-colors">
+          <LogOut size={14} />
+          Log Out
+        </button>
+      </div>
+
       {/* ─── Main Content ─────────────────────────────────────────────── */}
       <main className={`flex-1 flex flex-col transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]'}`}>
         {isLoading ? (
