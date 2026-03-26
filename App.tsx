@@ -682,7 +682,7 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
           {gradientPanel}
 
           {/* Right: GC Form */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-14 py-10 overflow-y-auto" style={{ maxHeight: '90vh' }}>
+          <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-14 py-16>
             <div className="w-full max-w-[380px] mx-auto">
               {/* Logo */}
               <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
@@ -792,7 +792,7 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
         {gradientPanel}
 
         {/* Right: Form */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-14 py-10 overflow-y-auto" style={{ maxHeight: '90vh' }}>
+        <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-14 py-16>
           <div className="w-full max-w-[380px] mx-auto">
             {/* Logo */}
             <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
