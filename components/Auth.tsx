@@ -41,49 +41,9 @@ export const AVATAR_SEEDS = [
   'Annie Jump', 'Felisa Rincon', 'Maya Angelou', 'Elizabeth Peratrovich',
 ];
 
-// ── Hand-crafted avatar SVGs — each unique expression, shape, and palette ──
-
-const AVATAR_SVGS: Record<string, string> = {
-  // Mary Baker — Confident: sage green bg, warm peach face, slight smirk
-  'Mary Baker': `<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" width="120" height="120"><mask id="m"><rect width="36" height="36" rx="72" fill="white"/></mask><g mask="url(#m)"><rect width="36" height="36" fill="#6B8F71"/><circle cx="20" cy="20" r="16" fill="#F5C4A1"/><circle cx="14" cy="14" r="1" fill="#2d2d2d"/><circle cx="22" cy="14" r="1" fill="#2d2d2d"/><path d="M14,19 q5,4 9,0" fill="none" stroke="#2d2d2d" stroke-width="0.8" stroke-linecap="round"/></g></svg>`,
-
-  // Harriet Tubman — Determined: charcoal bg, golden amber face, firm look
-  'Harriet Tubman': `<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" width="120" height="120"><mask id="m"><rect width="36" height="36" rx="72" fill="white"/></mask><g mask="url(#m)"><rect width="36" height="36" fill="#2d2d2d"/><circle cx="16" cy="18" r="16" fill="#F59E0B"/><circle cx="13" cy="15" r="0.9" fill="#2d2d2d"/><circle cx="21" cy="15" r="0.9" fill="#2d2d2d"/><path d="M13,20 q4,2.5 8,0" fill="none" stroke="#2d2d2d" stroke-width="0.7" stroke-linecap="round"/></g></svg>`,
-
-  // Ma Rainey — Playful: electric lilac bg, dusty rose face, big grin
-  'Ma Rainey': `<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" width="120" height="120"><mask id="m"><rect width="36" height="36" rx="72" fill="white"/></mask><g mask="url(#m)"><rect width="36" height="36" fill="#9B72CF"/><circle cx="18" cy="17" r="15" fill="#E8A0B4"/><circle cx="13" cy="14" r="0.9" fill="#2d2d2d"/><circle cx="21" cy="14" r="0.9" fill="#2d2d2d"/><path d="M12.5,18 a1,0.8 0 0,0 9,0" fill="#2d2d2d"/></g></svg>`,
-
-  // Maud Nathan — Curious: soft peach bg, deep teal face, raised-brow look
-  'Maud Nathan': `<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" width="120" height="120"><mask id="m"><rect width="36" height="36" rx="72" fill="white"/></mask><g mask="url(#m)"><rect width="36" height="36" fill="#FDDCB5"/><circle cx="19" cy="19" r="16" fill="#2A7D6F"/><circle cx="15" cy="15" r="1" fill="white"/><circle cx="23" cy="14" r="1" fill="white"/><path d="M15,20 q4,2 7,0" fill="none" stroke="white" stroke-width="0.7" stroke-linecap="round"/></g></svg>`,
-
-  // Annie Jump — Surprised: deep teal bg, soft peach face, O mouth
-  'Annie Jump': `<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" width="120" height="120"><mask id="m"><rect width="36" height="36" rx="72" fill="white"/></mask><g mask="url(#m)"><rect width="36" height="36" fill="#2A7D6F"/><circle cx="17" cy="17" r="15" fill="#FDDCB5"/><circle cx="13" cy="13" r="1.1" fill="#2d2d2d"/><circle cx="21" cy="13" r="1.1" fill="#2d2d2d"/><circle cx="17" cy="20" r="2" fill="none" stroke="#2d2d2d" stroke-width="0.8"/></g></svg>`,
-
-  // Felisa Rincon — Focused: warm terracotta bg, lilac face, slight concentration
-  'Felisa Rincon': `<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" width="120" height="120"><mask id="m"><rect width="36" height="36" rx="72" fill="white"/></mask><g mask="url(#m)"><rect width="36" height="36" fill="#C4724E"/><circle cx="20" cy="16" r="15" fill="#C4B5E0"/><circle cx="15" cy="14" r="0.8" fill="#2d2d2d"/><line x1="21" y1="14" x2="23" y2="14" stroke="#2d2d2d" stroke-width="0.8" stroke-linecap="round"/><path d="M14,19 q4,1.5 7,0" fill="none" stroke="#2d2d2d" stroke-width="0.7" stroke-linecap="round"/></g></svg>`,
-
-  // Maya Angelou — Amused: dusty rose bg, golden amber face, warm smile
-  'Maya Angelou': `<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" width="120" height="120"><mask id="m"><rect width="36" height="36" rx="72" fill="white"/></mask><g mask="url(#m)"><rect width="36" height="36" fill="#E8A0B4"/><circle cx="18" cy="19" r="16" fill="#F5C06B"/><circle cx="14" cy="15" r="0.9" fill="#2d2d2d"/><circle cx="22" cy="15" r="0.9" fill="#2d2d2d"/><path d="M13,19.5 a1,0.7 0 0,0 8,0" fill="#2d2d2d"/></g></svg>`,
-
-  // Elizabeth Peratrovich — Chill: charcoal bg, orange face, relaxed half-smile
-  'Elizabeth Peratrovich': `<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" width="120" height="120"><mask id="m"><rect width="36" height="36" rx="72" fill="white"/></mask><g mask="url(#m)"><rect width="36" height="36" fill="#2d2d2d"/><circle cx="19" cy="18" r="16" fill="#F97316"/><circle cx="14" cy="15" r="0.9" fill="#2d2d2d"/><circle cx="22" cy="15" r="0.9" fill="#2d2d2d"/><path d="M15,19.5 q3,2 7,-0.5" fill="none" stroke="#2d2d2d" stroke-width="0.7" stroke-linecap="round"/></g></svg>`,
-};
-
-/** Get avatar SVG as a data URI. Falls back to a generated one for unknown seeds. */
+/** Build avatar URL — DiceBear Notionists Neutral with improved background colors. */
 export function getAvatarUrl(seed: string): string {
-  const svg = AVATAR_SVGS[seed];
-  if (svg) return `data:image/svg+xml,${encodeURIComponent(svg)}`;
-  // Fallback for any other seed (user-created accounts with custom names)
-  const h = Math.abs(seed.split('').reduce((a, c) => ((a << 5) - a) + c.charCodeAt(0), 0));
-  const colors = ['#6B8F71', '#F59E0B', '#9B72CF', '#2A7D6F', '#C4724E', '#E8A0B4', '#F97316', '#4361EE'];
-  const bg = colors[h % colors.length];
-  const face = colors[(h + 3) % colors.length];
-  const isDark = ['#2A7D6F', '#4361EE', '#2d2d2d'].includes(face);
-  const f = isDark ? 'white' : '#2d2d2d';
-  const tx = (h % 8) - 4;
-  const ty = ((h >> 3) % 8) - 4;
-  const fallback = `<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" width="120" height="120"><mask id="m"><rect width="36" height="36" rx="72" fill="white"/></mask><g mask="url(#m)"><rect width="36" height="36" fill="${bg}"/><circle cx="${18+tx}" cy="${18+ty}" r="16" fill="${face}"/><circle cx="14" cy="15" r="0.9" fill="${f}"/><circle cx="22" cy="15" r="0.9" fill="${f}"/><path d="M14,19 q4,2 8,0" fill="none" stroke="${f}" stroke-width="0.7" stroke-linecap="round"/></g></svg>`;
-  return `data:image/svg+xml,${encodeURIComponent(fallback)}`;
+  return `https://api.dicebear.com/9.x/notionists-neutral/svg?seed=${encodeURIComponent(seed)}&backgroundColor=d1e8d5,c4d5f2,f2d5c4,d5c4f2,f2e6c4,c4e8f2,f2c4d1,e8e4d1`;
 }
 
 export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonClassName, showChevron, initialStep }) => {
