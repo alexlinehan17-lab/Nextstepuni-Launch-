@@ -637,7 +637,7 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
 
   // ── Left Panel: Animated Gradient with Framer Motion blobs ──
   const gradientPanel = (
-    <div className="hidden md:block w-1/2 relative overflow-hidden" style={{ borderRadius: '16px 0 0 16px', backgroundColor: '#0F1B2E' }}>
+    <div className="hidden md:block w-1/2 relative overflow-hidden" style={{ borderRadius: '16px 0 0 16px', backgroundColor: '#0C1A2A' }}>
       {/* Animated color blobs */}
       <MotionDiv
         className="absolute"
@@ -659,7 +659,7 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
       />
       <MotionDiv
         className="absolute"
-        style={{ width: 250, height: 250, borderRadius: '50%', background: 'rgba(220, 120, 50, 0.4)', filter: 'blur(80px)', bottom: '0%', right: '10%' }}
+        style={{ width: 300, height: 300, borderRadius: '50%', background: 'rgba(42, 125, 111, 0.6)', filter: 'blur(80px)', bottom: '-5%', right: '5%' }}
         animate={{ x: [0, -30, 50, 0], y: [0, 40, -20, 0], scale: [1, 1.08, 0.95, 1] }}
         transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
       />
