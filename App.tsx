@@ -673,21 +673,6 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
         transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
       />
 
-      {/* Floating pill CTA */}
-      <div className="absolute inset-0 flex items-center justify-center px-8 z-10">
-        <MotionDiv
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: [0, -6, 0] }}
-          transition={{ opacity: { duration: 0.8, delay: 0.3 }, y: { duration: 4, repeat: Infinity, ease: 'easeInOut' } }}
-          style={{ backgroundColor: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(10px)', borderRadius: 999, padding: '16px 24px', boxShadow: '0 8px 32px rgba(0,0,0,0.12)', maxWidth: 360, width: '100%' }}
-          className="flex items-center gap-3"
-        >
-          <span style={{ fontSize: 15, color: '#1a1a2e', fontWeight: 500 }}>Study smarter. Score higher. Free for DEIS students.</span>
-          <div className="w-10 h-10 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: '#1a1a2e' }}>
-            <ArrowRight size={16} className="text-white" />
-          </div>
-        </MotionDiv>
-      </div>
     </div>
   );
 
