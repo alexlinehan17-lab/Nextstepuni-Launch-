@@ -6,17 +6,17 @@
 
 import React, { useState, useEffect, useRef, useCallback, useMemo, Suspense, lazy } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, LogOut, ArrowLeft, Settings, Flame, ChevronRight, Trophy, Award, Target, BarChart3, Star, Home, Compass, Rocket, User, X, Mountain, Dumbbell, Timer, Lightbulb } from 'lucide-react';
+import { Sun, Moon, LogOut, ArrowLeft, ArrowRight, Settings, Flame, ChevronRight, Trophy, Award, Target, BarChart3, Star, Home, Compass, Rocket, User, X, Mountain, Dumbbell, Timer, Lightbulb, Eye, EyeOff, School, GraduationCap } from 'lucide-react';
 import { Library } from './components/Library';
 import { KnowledgeTree, CategoryType } from './components/KnowledgeTree';
 import { LoadingSpinner } from './components/LoadingSpinner';
-import { Auth, SessionUser, getAvatarUrl } from './components/Auth';
+import { Auth, SessionUser, getAvatarUrl, AVATAR_SEEDS } from './components/Auth';
 import { AdminDashboard } from './components/AdminDashboard';
 import { GCDashboard } from './components/GCDashboard';
 import SettingsModal from './components/SettingsModal';
 import StudyPassportModal from './components/StudyPassportModal';
 import { auth, db } from './firebase';
-import { onAuthStateChanged, signOut, User as FirebaseUser } from 'firebase/auth';
+import { onAuthStateChanged, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail, User as FirebaseUser } from 'firebase/auth';
 import { doc, getDoc, setDoc, updateDoc, increment } from 'firebase/firestore';
 import { ModuleProgress, UserProgress, UserSettings, NorthStar } from './types';
 import { moduleComponents, InnovationZone } from './moduleRegistry';
@@ -47,6 +47,7 @@ import { ACCENT_THEME_LIST, ACCENT_THEMES } from './themeData';
 import { POINTS, isModuleJustCompleted, isCategoryJustCompleted } from './journeyPointsConfig';
 import { type AccentThemeId } from './types';
 import { SettingsContext } from './contexts/SettingsContext';
+import { SCHOOLS } from './schoolData';
 
 const Onboarding = lazy(() => import('./components/Onboarding'));
 const JourneyView = lazy(() => import('./components/journey/JourneyView'));
@@ -506,6 +507,478 @@ class ModuleErrorBoundary extends React.Component<ModuleErrorBoundaryProps, Modu
     return this.props.children;
   }
 }
+
+// ── Split-Panel Login Page ──
+const MotionDiv = motion.div as any;
+
+const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({ handleLoginSuccess }) => {
+  const [authMode, setAuthMode] = useState<'login' | 'register'>('login');
+  const [loginType, setLoginType] = useState<'student' | 'gc' | null>(null);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [name, setName] = useState('');
+  const [school, setSchool] = useState('');
+  const [avatar, setAvatar] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPw, setShowConfirmPw] = useState(false);
+  const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [resetSent, setResetSent] = useState(false);
+
+  const handleLogin = async () => {
+    setIsLoading(true);
+    setError('');
+    try {
+      const emailToUse = email.includes('@') ? email : `${email}@nextstep.app`;
+      const cred = await signInWithEmailAndPassword(auth, emailToUse, password);
+      const userDoc = await getDoc(doc(db, 'users', cred.user.uid));
+      if (userDoc.exists()) {
+        const data = userDoc.data();
+        handleLoginSuccess({
+          uid: cred.user.uid,
+          name: data.name || 'Student',
+          avatar: data.avatar || 'James',
+          isAdmin: data.isAdmin || false,
+          role: data.role || 'student',
+          school: data.school || '',
+          yearGroup: data.yearGroup,
+        });
+      }
+    } catch (e: any) {
+      setError(e.code === 'auth/invalid-credential' ? 'Invalid email or password' : 'Something went wrong. Try again.');
+    }
+    setIsLoading(false);
+  };
+
+  const handleGCLogin = async () => {
+    setIsLoading(true);
+    setError('');
+    try {
+      const cred = await signInWithEmailAndPassword(auth, email, password);
+      const userDoc = await getDoc(doc(db, 'users', cred.user.uid));
+      if (userDoc.exists()) {
+        const data = userDoc.data();
+        if (data.role !== 'gc') {
+          setError('This account is not a Guidance Counsellor account.');
+          setIsLoading(false);
+          return;
+        }
+        handleLoginSuccess({
+          uid: cred.user.uid,
+          name: data.name || 'Counsellor',
+          avatar: data.avatar || 'James',
+          role: 'gc',
+          school: data.school || '',
+        });
+      }
+    } catch (e: any) {
+      setError('Invalid email or password');
+    }
+    setIsLoading(false);
+  };
+
+  const handleRegister = async () => {
+    if (password !== confirmPassword) { setError('Passwords don\'t match'); return; }
+    if (!name.trim()) { setError('Please enter your name'); return; }
+    if (!school) { setError('Please select your school'); return; }
+    if (!avatar) { setError('Please choose an avatar'); return; }
+    setIsLoading(true);
+    setError('');
+    try {
+      const emailToUse = `${name.toLowerCase().replace(/\s+/g, '')}${Date.now().toString(36)}@nextstep.app`;
+      const cred = await createUserWithEmailAndPassword(auth, emailToUse, password);
+      await setDoc(doc(db, 'users', cred.user.uid), {
+        name: name.trim(),
+        avatar,
+        school,
+        role: 'student',
+        createdAt: new Date().toISOString(),
+      });
+      handleLoginSuccess({
+        uid: cred.user.uid,
+        name: name.trim(),
+        avatar,
+        school,
+        role: 'student',
+      });
+    } catch (e: any) {
+      setError('Registration failed. Try again.');
+    }
+    setIsLoading(false);
+  };
+
+  const handleForgotPassword = async () => {
+    if (!email) { setError('Enter your email first'); return; }
+    try {
+      await sendPasswordResetEmail(auth, email);
+      setResetSent(true);
+    } catch { setError('Could not send reset email'); }
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (authMode === 'register') {
+      handleRegister();
+    } else if (loginType === 'gc') {
+      handleGCLogin();
+    } else {
+      handleLogin();
+    }
+  };
+
+  const resetForm = () => {
+    setEmail('');
+    setPassword('');
+    setConfirmPassword('');
+    setName('');
+    setSchool('');
+    setAvatar('');
+    setError('');
+    setResetSent(false);
+    setShowPassword(false);
+    setShowConfirmPw(false);
+  };
+
+  const inputStyle: React.CSSProperties = { backgroundColor: '#FAF7F4' };
+  const inputClass = "w-full py-3 px-4 rounded-xl border border-zinc-200 text-sm text-zinc-800 placeholder-zinc-400 outline-none focus:border-zinc-400 focus:ring-2 focus:ring-zinc-100 transition-all";
+
+  // ── Left Panel: Gradient Visual ──
+  const gradientPanel = (
+    <div
+      className="hidden md:flex md:items-center md:justify-center w-1/2 relative overflow-hidden"
+      style={{
+        borderRadius: '16px 0 0 16px',
+        backgroundColor: '#0F1B2E',
+        backgroundImage: [
+          'radial-gradient(ellipse at 20% 0%, rgba(30, 60, 120, 0.8) 0%, transparent 60%)',
+          'radial-gradient(ellipse at 80% 20%, rgba(70, 40, 130, 0.7) 0%, transparent 50%)',
+          'radial-gradient(ellipse at 60% 50%, rgba(100, 50, 160, 0.5) 0%, transparent 55%)',
+          'radial-gradient(ellipse at 50% 80%, rgba(200, 60, 100, 0.6) 0%, transparent 50%)',
+          'radial-gradient(ellipse at 30% 100%, rgba(220, 120, 60, 0.5) 0%, transparent 40%)',
+        ].join(', '),
+      }}
+    >
+      {/* Floating hero pill */}
+      <div className="absolute inset-0 flex items-center justify-center px-10" style={{ paddingTop: '10%' }}>
+        <div
+          className="w-full max-w-sm flex items-center gap-3"
+          style={{
+            backgroundColor: 'rgba(255,255,255,0.9)',
+            backdropFilter: 'blur(10px)',
+            borderRadius: 999,
+            padding: '16px 24px',
+            boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
+          }}
+        >
+          <span className="flex-1 text-zinc-800 font-medium" style={{ fontSize: 15 }}>Study smarter. Score higher. Free for DEIS students.</span>
+          <div className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center shrink-0">
+            <ArrowRight size={16} className="text-white" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  // ── GC Login View ──
+  if (loginType === 'gc') {
+    return (
+      <div className="min-h-screen flex items-center justify-center p-4 md:p-8" style={{ backgroundColor: '#FAFAF7' }}>
+        <div className="w-full max-w-5xl bg-white rounded-2xl overflow-hidden flex" style={{ minHeight: 560, boxShadow: '0 4px 40px rgba(0,0,0,0.08)' }}>
+        {/* Left: Gradient */}
+        {gradientPanel}
+        {/* Right: Form */}
+        <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-14 py-10 overflow-y-auto">
+          <div className="w-full max-w-[420px] mx-auto">
+            {/* Logo */}
+            <div className="mb-8">
+              <p className="text-zinc-400 text-xs font-semibold tracking-[0.15em]">NEXTSTEPUNI</p>
+            </div>
+
+            {/* Back button */}
+            <button
+              type="button"
+              onClick={() => { setLoginType(null); resetForm(); }}
+              className="flex items-center gap-1.5 text-sm text-zinc-400 hover:text-white mb-6 transition-colors"
+            >
+              <ArrowLeft size={14} /> Back
+            </button>
+
+            {/* Heading */}
+            <h2 className="text-3xl font-semibold text-zinc-900 tracking-tight mb-1">Guidance Counsellor</h2>
+            <p className="text-sm text-zinc-400 mb-8">Sign in with your counsellor account.</p>
+
+            <form onSubmit={handleSubmit} className="space-y-4">
+              {/* Email */}
+              <div>
+                <label className="text-sm text-zinc-700 font-medium mb-2 block">Email</label>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={e => { setEmail(e.target.value); setError(''); }}
+                  placeholder="gc@school.ie"
+                  className={inputClass}
+                  style={inputStyle}
+                  autoFocus
+                />
+              </div>
+
+              {/* Password */}
+              <div>
+                <label className="text-sm text-zinc-700 font-medium mb-2 block">Password</label>
+                <div className="relative">
+                  <input
+                    type={showPassword ? 'text' : 'password'}
+                    value={password}
+                    onChange={e => { setPassword(e.target.value); setError(''); }}
+                    placeholder="Enter your password"
+                    className={inputClass}
+                    style={inputStyle}
+                  />
+                  <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-white transition-colors">
+                    {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                  </button>
+                </div>
+              </div>
+
+              {/* Error */}
+              <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-400 font-medium">{error}</MotionDiv>}</AnimatePresence>
+
+              {/* Submit */}
+              <button type="submit" disabled={isLoading} className="w-full py-3 rounded-xl text-white font-medium hover:opacity-90 transition-colors text-sm disabled:opacity-60 disabled:cursor-not-allowed" style={{ backgroundColor: '#2A7D6F' }}>
+                {isLoading ? 'Signing in...' : 'Sign In'}
+              </button>
+            </form>
+
+            {/* DEV: Skip Login */}
+            <button
+              onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })}
+              className="mt-10 mx-auto block px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[10px] font-mono hover:bg-red-600/20 transition-colors"
+            >
+              DEV: Skip Login
+            </button>
+          </div>
+        </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ── Main Login / Register View ──
+  return (
+    <div className="min-h-screen flex items-center justify-center p-4 md:p-8" style={{ backgroundColor: '#0a0a0a' }}>
+      <div className="w-full max-w-5xl bg-white dark:bg-zinc-900 rounded-2xl shadow-2xl overflow-hidden flex" style={{ minHeight: 580, maxHeight: '90vh' }}>
+      {/* Left: Gradient */}
+      {gradientPanel}
+      {/* Right: Form */}
+      <div className="w-full md:w-1/2 flex flex-col justify-center px-6 md:px-12 py-8 overflow-y-auto">
+        <div className="w-full max-w-[420px] mx-auto py-8">
+          {/* Logo */}
+          <div className="mb-8">
+            <p className="text-white text-xs font-semibold tracking-[0.15em]">NEXTSTEPUNI</p>
+          </div>
+
+          <AnimatePresence mode="wait">
+            {authMode === 'login' ? (
+              <MotionDiv key="login-form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}>
+                {/* Heading */}
+                <h2 className="text-3xl font-semibold text-zinc-900 tracking-tight mb-8">Welcome back</h2>
+
+                {/* GC Login button */}
+                <button
+                  type="button"
+                  onClick={() => { setLoginType('gc'); resetForm(); }}
+                  className="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-700 text-sm font-medium hover:bg-zinc-50 transition-colors flex items-center justify-center gap-2"
+                >
+                  <GraduationCap size={16} />
+                  Sign in as Guidance Counsellor
+                </button>
+
+                {/* OR divider */}
+                <div className="flex items-center gap-4 my-6">
+                  <div className="flex-1 h-px bg-zinc-200" />
+                  <span className="text-xs text-zinc-500">OR</span>
+                  <div className="flex-1 h-px bg-zinc-200" />
+                </div>
+
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  {/* Email / Username */}
+                  <div>
+                    <label className="text-sm text-zinc-700 font-medium mb-2 block">Email / Username</label>
+                    <input
+                      type="text"
+                      value={email}
+                      onChange={e => { setEmail(e.target.value); setError(''); setResetSent(false); }}
+                      placeholder="your@email.com or username"
+                      className={inputClass}
+                      style={inputStyle}
+                      autoFocus
+                    />
+                  </div>
+
+                  {/* Password */}
+                  <div>
+                    <div className="flex items-center justify-between mb-2">
+                      <label className="text-sm text-zinc-700 font-medium">Password</label>
+                      <button type="button" onClick={handleForgotPassword} className="text-xs font-medium transition-colors hover:opacity-70 text-teal-700">
+                        {resetSent ? 'Reset email sent!' : 'Forgot password?'}
+                      </button>
+                    </div>
+                    <div className="relative">
+                      <input
+                        type={showPassword ? 'text' : 'password'}
+                        value={password}
+                        onChange={e => { setPassword(e.target.value); setError(''); }}
+                        placeholder="Enter your password"
+                        className={inputClass}
+                        style={inputStyle}
+                      />
+                      <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-white transition-colors">
+                        {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Error */}
+                  <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-400 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                  {/* Reset sent */}
+                  {resetSent && <p className="text-sm text-green-400 font-medium">Check your email for a reset link.</p>}
+
+                  {/* Submit */}
+                  <button type="submit" disabled={isLoading} className="w-full py-3 rounded-xl text-white font-medium hover:opacity-90 transition-colors text-sm disabled:opacity-60 disabled:cursor-not-allowed" style={{ backgroundColor: '#2A7D6F' }}>
+                    {isLoading ? 'Signing in...' : 'Sign In'}
+                  </button>
+                </form>
+
+                {/* Toggle to register */}
+                <p className="text-sm text-zinc-400 text-center mt-6">
+                  Don&apos;t have an account?{' '}
+                  <button type="button" onClick={() => { setAuthMode('register'); resetForm(); }} className="text-teal-700 underline hover:text-teal-900 transition-colors font-semibold">Register</button>
+                </p>
+              </MotionDiv>
+            ) : (
+              <MotionDiv key="register-form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}>
+                {/* Heading */}
+                <h2 className="text-3xl font-semibold text-zinc-900 tracking-tight mb-8">Create your account</h2>
+
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  {/* Name */}
+                  <div>
+                    <label className="text-sm text-zinc-700 font-medium mb-2 block">Name</label>
+                    <input
+                      type="text"
+                      value={name}
+                      onChange={e => { setName(e.target.value); setError(''); }}
+                      placeholder="Choose a username"
+                      className={inputClass}
+                      style={inputStyle}
+                      autoFocus
+                    />
+                  </div>
+
+                  {/* School dropdown */}
+                  <div>
+                    <label className="text-sm text-zinc-700 font-medium mb-2 block">School</label>
+                    <div className="relative">
+                      <select
+                        value={school}
+                        onChange={e => { setSchool(e.target.value); setError(''); }}
+                        className={`${inputClass} appearance-none cursor-pointer ${!school ? 'text-zinc-500' : ''}`}
+                        style={inputStyle}
+                      >
+                        <option value="" disabled>Select your school</option>
+                        {SCHOOLS.map(s => (
+                          <option key={s.id} value={s.id}>{s.name}</option>
+                        ))}
+                      </select>
+                      <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 pointer-events-none" />
+                    </div>
+                  </div>
+
+                  {/* Avatar picker */}
+                  <div>
+                    <label className="text-sm text-zinc-700 font-medium mb-2 block">Choose your avatar</label>
+                    <div className="grid grid-cols-4 gap-2">
+                      {AVATAR_SEEDS.map(seed => (
+                        <button
+                          key={seed}
+                          type="button"
+                          onClick={() => setAvatar(seed)}
+                          className={`rounded-lg aspect-square p-1 transition-all ${avatar === seed ? 'ring-2 ring-white bg-white/10' : 'bg-zinc-900 ring-1 ring-zinc-800 hover:ring-zinc-600'}`}
+                        >
+                          <img src={getAvatarUrl(seed)} alt={seed} className="w-full h-full rounded-md" />
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Password */}
+                  <div>
+                    <label className="text-sm text-zinc-700 font-medium mb-2 block">Password</label>
+                    <div className="relative">
+                      <input
+                        type={showPassword ? 'text' : 'password'}
+                        value={password}
+                        onChange={e => { setPassword(e.target.value); setError(''); }}
+                        placeholder="Create a password"
+                        className={inputClass}
+                        style={inputStyle}
+                      />
+                      <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-white transition-colors">
+                        {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Confirm Password */}
+                  <div>
+                    <label className="text-sm text-zinc-700 font-medium mb-2 block">Confirm Password</label>
+                    <div className="relative">
+                      <input
+                        type={showConfirmPw ? 'text' : 'password'}
+                        value={confirmPassword}
+                        onChange={e => { setConfirmPassword(e.target.value); setError(''); }}
+                        placeholder="Confirm your password"
+                        className={inputClass}
+                        style={inputStyle}
+                      />
+                      <button type="button" onClick={() => setShowConfirmPw(!showConfirmPw)} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-white transition-colors">
+                        {showConfirmPw ? <EyeOff size={16} /> : <Eye size={16} />}
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Error */}
+                  <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-400 font-medium">{error}</MotionDiv>}</AnimatePresence>
+
+                  {/* Submit */}
+                  <button type="submit" disabled={isLoading} className="w-full py-3 rounded-xl text-white font-medium hover:opacity-90 transition-colors text-sm disabled:opacity-60 disabled:cursor-not-allowed" style={{ backgroundColor: '#2A7D6F' }}>
+                    {isLoading ? 'Creating account...' : 'Create Account'}
+                  </button>
+                </form>
+
+                {/* Toggle to login */}
+                <p className="text-sm text-zinc-400 text-center mt-6">
+                  Already have an account?{' '}
+                  <button type="button" onClick={() => { setAuthMode('login'); resetForm(); }} className="text-teal-700 underline hover:text-teal-900 transition-colors font-semibold">Sign in</button>
+                </p>
+              </MotionDiv>
+            )}
+          </AnimatePresence>
+
+          {/* DEV: Skip Login */}
+          <button
+            onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })}
+            className="mt-10 mx-auto block px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[10px] font-mono hover:bg-red-600/20 transition-colors"
+          >
+            DEV: Skip Login
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+  );
+};
 
 const App: React.FC = () => {
   const { showToast } = useToast();
@@ -1049,116 +1522,7 @@ const App: React.FC = () => {
     }
 
     if (!user) {
-      return (
-        <div className="relative h-screen flex flex-col overflow-hidden">
-          {/* ── Gradient blobs ── */}
-          <div className="fixed inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-            <div className="absolute top-[15%] right-[10%] w-[500px] h-[500px] rounded-full bg-[rgba(var(--accent),0.07)] blur-[100px] animate-blob-1" />
-            <div className="absolute bottom-[20%] left-[5%] w-[450px] h-[450px] rounded-full bg-yellow-300/[0.09] blur-[100px] animate-blob-2" />
-            <div className="absolute top-[40%] left-[30%] w-[400px] h-[400px] rounded-full bg-orange-200/[0.08] blur-[120px] animate-blob-3" />
-          </div>
-
-          {/* ── Single-screen centered layout ── */}
-          <div className="flex-1 flex flex-col items-center justify-center text-center px-6 relative z-10">
-            {/* Logos */}
-            <motion.div
-              className="flex items-center gap-4 mb-10"
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            >
-              <img src="/nextstepuni-logo.png" alt="Nextstepuni" className="h-12 sm:h-14 w-auto" />
-            </motion.div>
-
-            {/* Headline */}
-            <h1 className="font-serif text-3xl sm:text-5xl md:text-7xl text-zinc-900 dark:text-white tracking-tight leading-[1.08] font-semibold max-w-3xl">
-              {"Science-backed strategies to give you an".split(' ').map((word, i, arr) => (
-                <span key={i} className="inline-block overflow-hidden align-bottom pb-[0.15em] mb-[-0.15em]">
-                  <motion.span
-                    className="inline-block"
-                    initial={{ y: '100%' }}
-                    animate={{ y: 0 }}
-                    transition={{ duration: 0.7, delay: 0.15 + i * 0.05, ease: [0.16, 1, 0.3, 1] }}
-                  >{word}{i < arr.length - 1 ? '\u00A0' : ''}</motion.span>
-                </span>
-              ))}
-              {' '}
-              <span className="inline-block overflow-hidden align-bottom pb-[0.15em] mb-[-0.15em]">
-                <motion.span
-                  className="inline-block px-1"
-                  initial={{ y: '100%' }}
-                  animate={{ y: 0 }}
-                  transition={{ duration: 0.7, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
-                  style={{ backgroundImage: 'linear-gradient(to top, rgba(var(--accent), 0.35) 35%, transparent 35%)', boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' } as React.CSSProperties}
-                >unfair advantage</motion.span>
-              </span>
-              {' '}
-              {"in your exams.".split(' ').map((word, i, arr) => (
-                <span key={i} className="inline-block overflow-hidden align-bottom pb-[0.15em] mb-[-0.15em]">
-                  <motion.span
-                    className="inline-block"
-                    initial={{ y: '100%' }}
-                    animate={{ y: 0 }}
-                    transition={{ duration: 0.7, delay: 0.55 + i * 0.05, ease: [0.16, 1, 0.3, 1] }}
-                  >{word}{i < arr.length - 1 ? '\u00A0' : ''}</motion.span>
-                </span>
-              ))}
-            </h1>
-
-            {/* Subtitle */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
-              className="mt-8 text-lg text-zinc-500 dark:text-zinc-400 max-w-xl leading-relaxed"
-            >
-              Master proven learning techniques used by top students. Build better study habits, retain more, and perform when it counts.
-            </motion.p>
-
-            {/* CTA Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.85, ease: [0.16, 1, 0.3, 1] }}
-              className="mt-10 flex flex-col sm:flex-row items-center gap-4"
-            >
-              <Auth
-                onLoginSuccess={handleLoginSuccess}
-                buttonLabel="Get Started"
-                buttonClassName="px-8 py-3.5 text-base font-medium bg-[var(--accent-hex)] text-white rounded-full hover:bg-[var(--accent-dark-hex)] transition-colors shadow-lg shadow-[rgba(var(--accent),0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] focus-visible:ring-offset-2"
-                initialStep="create"
-              />
-              <Auth
-                onLoginSuccess={handleLoginSuccess}
-                buttonLabel="Log in"
-                buttonClassName="px-8 py-3.5 text-base font-medium text-zinc-700 dark:text-zinc-300 rounded-full border border-zinc-300 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800/50 transition-colors"
-                initialStep="login"
-              />
-            </motion.div>
-          </div>
-
-          {/* ── Bottom: Partnership badge ── */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.1 }}
-            className="relative z-10 pb-8 flex flex-col items-center gap-4"
-          >
-            <div className="flex items-center gap-5">
-              <img src="/nextstepuni-logo.png" alt="Nextstepuni" className="h-6 w-auto opacity-40 dark:opacity-30" />
-            </div>
-            <p className="text-[11px] text-zinc-400 dark:text-zinc-500 tracking-wide">Built for NEIC schools</p>
-          </motion.div>
-
-          {/* ── DEV: Skip Login ── */}
-          <button
-            onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })}
-            className="fixed bottom-4 left-4 z-50 px-3 py-1 bg-red-600/20 text-red-400 border border-red-600/30 rounded-full text-xs font-mono hover:bg-red-600/40"
-          >
-            DEV: Skip Login
-          </button>
-        </div>
-      );
+      return <LoginPage handleLoginSuccess={handleLoginSuccess} />;
     }
 
     if (user.isAdmin) {
