@@ -873,19 +873,25 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
                     <button type="button" onClick={() => { setAuthMode('register'); resetForm(); }} className="text-sm font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Register</button>
                   </p>
 
-                  {/* GC Login link */}
+                  {/* OR divider */}
                   <div className="flex items-center gap-4 mt-6">
-                    <div className="flex-1 h-px bg-zinc-100" />
-                    <button
-                      type="button"
-                      onClick={() => { setLoginType('gc'); resetForm(); }}
-                      className="text-xs font-medium text-zinc-400 hover:text-zinc-600 transition-colors flex items-center gap-1.5"
-                    >
-                      <GraduationCap size={13} />
-                      Guidance Counsellor
-                    </button>
-                    <div className="flex-1 h-px bg-zinc-100" />
+                    <div className="flex-1 h-px bg-zinc-200" />
+                    <span className="text-xs text-zinc-400">OR</span>
+                    <div className="flex-1 h-px bg-zinc-200" />
                   </div>
+
+                  {/* GC Login button */}
+                  <MotionButton
+                    type="button"
+                    onClick={() => { setLoginType('gc'); resetForm(); }}
+                    whileHover={{ scale: 1.01, backgroundColor: '#fafaf7' }}
+                    whileTap={{ scale: 0.99 }}
+                    className="w-full py-3 rounded-xl text-sm font-medium text-zinc-600 transition-all flex items-center justify-center gap-2 mt-4"
+                    style={{ border: '1px solid #e4e4e7', backgroundColor: '#ffffff' }}
+                  >
+                    <GraduationCap size={16} />
+                    Sign in as Guidance Counsellor
+                  </MotionButton>
                 </MotionDiv>
               ) : (
                 <MotionDiv
