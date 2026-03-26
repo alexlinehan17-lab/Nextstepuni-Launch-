@@ -638,11 +638,11 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
   // ── Left Panel: Animated Gradient with Framer Motion blobs ──
   const gradientPanel = (
     <div className="hidden md:block w-1/2 relative overflow-hidden" style={{ borderRadius: '16px 0 0 16px', backgroundColor: '#0C1A2A' }}>
-      {/* Animated color blobs — each has an outer motion wrapper (no filter) and inner colored div (with blur) */}
+      {/* Animated color blobs — large travel distance for visible movement */}
       <motion.div
         className="absolute"
         style={{ top: '-20%', left: '-10%', width: 450, height: 450 }}
-        animate={{ x: [0, 80, -40, 0], y: [0, -60, 70, 0], scale: [1, 1.15, 0.9, 1] }}
+        animate={{ x: [0, 150, -80, 50, 0], y: [0, -100, 120, -40, 0], scale: [1, 1.2, 0.85, 1.1, 1] }}
         transition={{ duration: 20, repeat: Infinity, repeatType: 'loop' as const, ease: 'easeInOut' }}
       >
         <div style={{ width: '100%', height: '100%', borderRadius: '50%', background: 'rgba(40, 70, 160, 0.7)', filter: 'blur(80px)' }} />
@@ -650,7 +650,7 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
       <motion.div
         className="absolute"
         style={{ top: '25%', right: '-15%', width: 400, height: 400 }}
-        animate={{ x: [0, -70, 50, 0], y: [0, 80, -40, 0], scale: [1, 0.85, 1.15, 1] }}
+        animate={{ x: [0, -120, 100, -60, 0], y: [0, 140, -80, 60, 0], scale: [1, 0.8, 1.2, 0.9, 1] }}
         transition={{ duration: 25, repeat: Infinity, repeatType: 'loop' as const, ease: 'easeInOut' }}
       >
         <div style={{ width: '100%', height: '100%', borderRadius: '50%', background: 'rgba(120, 40, 180, 0.55)', filter: 'blur(80px)' }} />
@@ -658,7 +658,7 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
       <motion.div
         className="absolute"
         style={{ bottom: '-15%', left: '15%', width: 350, height: 350 }}
-        animate={{ x: [0, 60, -80, 0], y: [0, -70, 40, 0], scale: [1, 1.1, 0.88, 1] }}
+        animate={{ x: [0, 100, -130, 70, 0], y: [0, -120, 80, -50, 0], scale: [1, 1.15, 0.82, 1.08, 1] }}
         transition={{ duration: 22, repeat: Infinity, repeatType: 'loop' as const, ease: 'easeInOut' }}
       >
         <div style={{ width: '100%', height: '100%', borderRadius: '50%', background: 'rgba(200, 50, 100, 0.5)', filter: 'blur(80px)' }} />
@@ -666,7 +666,7 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
       <motion.div
         className="absolute"
         style={{ bottom: '-10%', right: '0%', width: 350, height: 350 }}
-        animate={{ x: [0, -50, 60, 0], y: [0, 50, -30, 0], scale: [1, 1.12, 0.92, 1] }}
+        animate={{ x: [0, -90, 120, -50, 0], y: [0, 100, -70, 40, 0], scale: [1, 1.18, 0.85, 1.05, 1] }}
         transition={{ duration: 18, repeat: Infinity, repeatType: 'loop' as const, ease: 'easeInOut' }}
       >
         <div style={{ width: '100%', height: '100%', borderRadius: '50%', background: 'rgba(42, 125, 111, 0.65)', filter: 'blur(80px)' }} />
