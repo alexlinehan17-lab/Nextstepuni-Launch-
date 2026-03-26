@@ -43,8 +43,7 @@ export const AVATAR_SEEDS = [
 
 /** Build a Boring Avatars URL (beam style) from a name. */
 export function getAvatarUrl(seed: string): string {
-  const colors = ['2A7D6F', '4361EE', '7209B7', 'E94560', 'F59E0B', '6B8F71', '3A0CA3', '4CC9F0'];
-  return `https://source.boringavatars.com/beam/120/${encodeURIComponent(seed)}?colors=${colors.join(',')}`;
+  return `https://boring-avatars-api.vercel.app/api/avatar?variant=beam&size=120&name=${encodeURIComponent(seed)}&colors=2A7D6F,4361EE,7209B7,E94560,F59E0B,6B8F71,3A0CA3,4CC9F0`;
 }
 
 export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonClassName, showChevron, initialStep }) => {
