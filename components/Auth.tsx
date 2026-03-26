@@ -41,9 +41,37 @@ export const AVATAR_SEEDS = [
   'Annie Jump', 'Felisa Rincon', 'Maya Angelou', 'Elizabeth Peratrovich',
 ];
 
-/** Build avatar URL from a name. */
+// ── Boring Avatars "Beam" style — generated locally (no API needed) ──
+
+const BEAM_COLORS = ['#2A7D6F', '#4361EE', '#7209B7', '#E94560', '#F59E0B', '#6B8F71', '#3A0CA3', '#4CC9F0'];
+
+function hashName(name: string): number {
+  let hash = 0;
+  for (let i = 0; i < name.length; i++) {
+    hash = ((hash << 5) - hash) + name.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash);
+}
+
+function getBeamData(name: string) {
+  const h = hashName(name);
+  const c = BEAM_COLORS;
+  const bgColor = c[h % c.length];
+  const faceColor = c[(h >> 3) % c.length];
+  const rotate = (h % 360);
+  const scale = 1 + (h % 4) * 0.1;
+  const tx = (h % 15) - 7;
+  const ty = ((h >> 4) % 15) - 7;
+  const isSmiling = h % 3 !== 0;
+  return { bgColor, faceColor, rotate, scale, tx, ty, isSmiling };
+}
+
+/** Generate a Boring Avatars "beam" style SVG data URI from a name. */
 export function getAvatarUrl(seed: string): string {
-  return `https://api.dicebear.com/9.x/adventurer/svg?seed=${encodeURIComponent(seed)}&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf`;
+  const d = getBeamData(seed);
+  const svg = `<svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="120" height="120"><mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" rx="72" fill="white"/></mask><g mask="url(#m)"><rect width="36" height="36" fill="${d.bgColor}"/><rect x="0" y="0" width="36" height="36" transform="translate(${d.tx} ${d.ty}) rotate(${d.rotate} 18 18) scale(${d.scale})" fill="${d.faceColor}" rx="6"/><g transform="translate(${(d.tx * 0.5).toFixed(1)} ${(d.ty * 0.5).toFixed(1)}) rotate(${Math.floor(d.rotate * 0.1)} 18 18)"><path d="M13,${d.isSmiling ? '20' : '21'} a1,0.75 0 0,0 10,0" fill="white"/><rect x="12" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"/><rect x="22" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"/></g></g></svg>`;
+  return `data:image/svg+xml,${encodeURIComponent(svg)}`;
 }
 
 export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonClassName, showChevron, initialStep }) => {
