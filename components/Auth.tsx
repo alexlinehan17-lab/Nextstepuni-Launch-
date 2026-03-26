@@ -41,9 +41,9 @@ export const AVATAR_SEEDS = [
   'Annie Jump', 'Felisa Rincon', 'Maya Angelou', 'Elizabeth Peratrovich',
 ];
 
-// ── Boring Avatars "Beam" style — generated locally (no API needed) ──
+// ── Boring Avatars "Beam" style — generated locally ──
 
-const BEAM_COLORS = ['#2A7D6F', '#4361EE', '#7209B7', '#E94560', '#F59E0B', '#6B8F71', '#3A0CA3', '#4CC9F0'];
+const BEAM_COLORS = ['#E94560', '#F59E0B', '#F97316', '#3A0CA3', '#2A7D6F', '#4361EE', '#7209B7', '#4CC9F0'];
 
 function hashName(name: string): number {
   let hash = 0;
@@ -54,23 +54,31 @@ function hashName(name: string): number {
   return Math.abs(hash);
 }
 
-function getBeamData(name: string) {
-  const h = hashName(name);
-  const c = BEAM_COLORS;
-  const bgColor = c[h % c.length];
-  const faceColor = c[(h >> 3) % c.length];
-  const rotate = (h % 360);
-  const scale = 1 + (h % 4) * 0.1;
-  const tx = (h % 15) - 7;
-  const ty = ((h >> 4) % 15) - 7;
-  const isSmiling = h % 3 !== 0;
-  return { bgColor, faceColor, rotate, scale, tx, ty, isSmiling };
-}
-
-/** Generate a Boring Avatars "beam" style SVG data URI from a name. */
+/** Generate a Boring Avatars "beam" style SVG data URI. */
 export function getAvatarUrl(seed: string): string {
-  const d = getBeamData(seed);
-  const svg = `<svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="120" height="120"><mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" rx="72" fill="white"/></mask><g mask="url(#m)"><rect width="36" height="36" fill="${d.bgColor}"/><rect x="0" y="0" width="36" height="36" transform="translate(${d.tx} ${d.ty}) rotate(${d.rotate} 18 18) scale(${d.scale})" fill="${d.faceColor}" rx="6"/><g transform="translate(${(d.tx * 0.5).toFixed(1)} ${(d.ty * 0.5).toFixed(1)}) rotate(${Math.floor(d.rotate * 0.1)} 18 18)"><path d="M13,${d.isSmiling ? '20' : '21'} a1,0.75 0 0,0 10,0" fill="white"/><rect x="12" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"/><rect x="22" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"/></g></g></svg>`;
+  const h = hashName(seed);
+  const h2 = hashName(seed + seed);
+  const bgColor = BEAM_COLORS[h % BEAM_COLORS.length];
+  // Ensure face color is different from bg
+  let faceIdx = h2 % BEAM_COLORS.length;
+  if (faceIdx === h % BEAM_COLORS.length) faceIdx = (faceIdx + 3) % BEAM_COLORS.length;
+  const faceColor = BEAM_COLORS[faceIdx];
+  const rot = (h % 120) + 100;
+  const tx = (h % 10) - 5;
+  const ty = (h2 % 10) - 5;
+  const wink = h % 5 === 0;
+  const mouthW = 6 + (h % 4);
+  const mouthOpen = h % 3 === 0;
+
+  const eyeL = wink
+    ? `<line x1="12" y1="15" x2="14" y2="15" stroke="black" stroke-width="1" stroke-linecap="round"/>`
+    : `<circle cx="13" cy="15" r="1" fill="black"/>`;
+  const eyeR = `<circle cx="23" cy="15" r="1" fill="black"/>`;
+  const mouth = mouthOpen
+    ? `<path d="M${18 - mouthW/2},19 a1,0.8 0 0,0 ${mouthW},0" fill="black" stroke="none"/>`
+    : `<path d="M${18 - mouthW/2},20 a1,0.6 0 0,0 ${mouthW},0" fill="none" stroke="black" stroke-width="0.8" stroke-linecap="round"/>`;
+
+  const svg = `<svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="120" height="120"><mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" rx="72" fill="white"/></mask><g mask="url(#m)"><rect width="36" height="36" fill="${bgColor}"/><rect x="0" y="0" width="36" height="36" transform="translate(${tx} ${ty}) rotate(${rot} 18 18) scale(1.1)" fill="${faceColor}" rx="36"/><g transform="translate(${tx * 0.3} ${ty * 0.3})">${eyeL}${eyeR}${mouth}</g></g></svg>`;
   return `data:image/svg+xml,${encodeURIComponent(svg)}`;
 }
 
