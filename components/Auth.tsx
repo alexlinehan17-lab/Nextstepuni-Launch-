@@ -36,15 +36,15 @@ interface AuthProps {
   initialStep?: 'initial' | 'login' | 'create';
 }
 
-// 4 male-leaning, 4 female-leaning seeds for notionists-neutral
 export const AVATAR_SEEDS = [
-  'James', 'Marcus', 'Ravi', 'Tomek',
-  'Aoife', 'Priya', 'Zara', 'Mei',
+  'Mary Baker', 'Harriet Tubman', 'Ma Rainey', 'Maud Nathan',
+  'Annie Jump', 'Felisa Rincon', 'Maya Angelou', 'Elizabeth Peratrovich',
 ];
 
-/** Build a DiceBear avatar URL from a seed. */
+/** Build a Boring Avatars URL (beam style) from a name. */
 export function getAvatarUrl(seed: string): string {
-  return `https://api.dicebear.com/9.x/notionists-neutral/svg?seed=${seed}&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf`;
+  const colors = ['2A7D6F', '4361EE', '7209B7', 'E94560', 'F59E0B', '6B8F71', '3A0CA3', '4CC9F0'];
+  return `https://source.boringavatars.com/beam/120/${encodeURIComponent(seed)}?colors=${colors.join(',')}`;
 }
 
 export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonClassName, showChevron, initialStep }) => {
