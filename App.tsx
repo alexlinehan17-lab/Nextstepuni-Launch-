@@ -520,6 +520,7 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
   const [confirmPassword, setConfirmPassword] = useState('');
   const [name, setName] = useState('');
   const [school, setSchool] = useState('');
+  const [gcSchool, setGcSchool] = useState('');
   const [avatar, setAvatar] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPw, setShowConfirmPw] = useState(false);
@@ -553,28 +554,17 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
   };
 
   const handleGCLogin = async () => {
+    if (!gcSchool || !password.trim()) {
+      setError('Please select your school and enter your password.');
+      return;
+    }
     setIsLoading(true);
     setError('');
     try {
-      const cred = await signInWithEmailAndPassword(auth, email, password);
-      const userDoc = await getDoc(doc(db, 'users', cred.user.uid));
-      if (userDoc.exists()) {
-        const data = userDoc.data();
-        if (data.role !== 'gc') {
-          setError('This account is not a Guidance Counsellor account.');
-          setIsLoading(false);
-          return;
-        }
-        handleLoginSuccess({
-          uid: cred.user.uid,
-          name: data.name || 'Counsellor',
-          avatar: data.avatar || 'James',
-          role: 'gc',
-          school: data.school || '',
-        });
-      }
+      const gcEmail = `gc-${gcSchool}@nextstep.app`;
+      await signInWithEmailAndPassword(auth, gcEmail, password);
     } catch (e: any) {
-      setError('Invalid email or password');
+      setError('Invalid credentials.');
     }
     setIsLoading(false);
   };
@@ -634,6 +624,7 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
     setConfirmPassword('');
     setName('');
     setSchool('');
+    setGcSchool('');
     setAvatar('');
     setError('');
     setResetSent(false);
@@ -717,21 +708,24 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
 
                   {/* Heading */}
                   <h2 className="text-3xl font-semibold text-zinc-900 tracking-tight mb-1">Guidance Counsellor</h2>
-                  <p className="text-sm text-zinc-400 mb-8">Sign in with your counsellor account.</p>
+                  <p className="text-sm text-zinc-400 mb-8">Select your school and enter your password.</p>
 
                   <form onSubmit={handleSubmit} className="space-y-4">
-                    {/* Email */}
+                    {/* School dropdown */}
                     <div>
-                      <label className="text-sm text-zinc-600 font-medium mb-1.5 block">Email</label>
-                      <input
-                        type="email"
-                        value={email}
-                        onChange={e => { setEmail(e.target.value); setError(''); }}
-                        placeholder="gc@school.ie"
-                        className={inputClass}
+                      <label className="text-sm text-zinc-600 font-medium mb-1.5 block">School</label>
+                      <select
+                        value={gcSchool}
+                        onChange={e => { setGcSchool(e.target.value); setError(''); }}
+                        className={`${inputClass} appearance-none cursor-pointer ${!gcSchool ? 'text-zinc-400' : ''}`}
                         style={inputBorder}
                         autoFocus
-                      />
+                      >
+                        <option value="" disabled>Select your school</option>
+                        {SCHOOLS.map(s => (
+                          <option key={s.id} value={s.id}>{s.name}</option>
+                        ))}
+                      </select>
                     </div>
 
                     {/* Password */}
