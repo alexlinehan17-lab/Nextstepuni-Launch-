@@ -59,11 +59,11 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose }) =
           className="fixed inset-0 z-[300] flex flex-col items-center justify-center"
           style={{ backgroundColor: '#FAFAF7' }}
         >
-          {/* Subtle gradient wash at top using rank color */}
+          {/* Gradient wash — rank color dominates the top half */}
           <div
-            className="absolute top-0 left-0 right-0 h-72 pointer-events-none"
+            className="absolute inset-0 pointer-events-none"
             style={{
-              background: `linear-gradient(180deg, ${newRank.colorHex}12 0%, transparent 100%)`,
+              background: `radial-gradient(ellipse at 50% 30%, ${newRank.colorHex}25 0%, transparent 60%), linear-gradient(180deg, ${newRank.colorHex}15 0%, transparent 50%)`,
             }}
           />
 
@@ -100,16 +100,25 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose }) =
               Rank Up
             </motion.p>
 
-            {/* Giant rank name — the hero */}
-            <motion.h1
+            {/* Giant rank name — the hero with glow */}
+            <motion.div
               initial={{ opacity: 0, scale: 0.7, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-              className="font-serif font-bold leading-none mb-6"
-              style={{ fontSize: 'clamp(56px, 15vw, 88px)', color: newRank.colorHex, letterSpacing: '-0.03em' }}
+              className="relative mb-6"
             >
-              {newRank.title}
-            </motion.h1>
+              {/* Glow behind text */}
+              <div
+                className="absolute inset-0 blur-3xl opacity-30"
+                style={{ background: newRank.colorHex, borderRadius: '50%', transform: 'scale(1.5, 2)' }}
+              />
+              <h1
+                className="relative font-serif font-bold leading-none"
+                style={{ fontSize: 'clamp(64px, 18vw, 100px)', color: newRank.colorHex, letterSpacing: '-0.03em' }}
+              >
+                {newRank.title}
+              </h1>
+            </motion.div>
 
             {/* Description */}
             <motion.p
