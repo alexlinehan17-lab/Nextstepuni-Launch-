@@ -766,7 +766,7 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
 
   // ── Main Login / Register View ──
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 md:p-8" style={{ backgroundColor: '#0a0a0a' }}>
+    <div className="min-h-screen flex items-center justify-center p-4 md:p-8" style={{ backgroundColor: '#FAFAF7' }}>
       <div className="w-full max-w-5xl bg-white dark:bg-zinc-900 rounded-2xl shadow-2xl overflow-hidden flex" style={{ minHeight: 580, maxHeight: '90vh' }}>
       {/* Left: Gradient */}
       {gradientPanel}
