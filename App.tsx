@@ -638,31 +638,39 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
   // ── Left Panel: Animated Gradient with Framer Motion blobs ──
   const gradientPanel = (
     <div className="hidden md:block w-1/2 relative overflow-hidden" style={{ borderRadius: '16px 0 0 16px', backgroundColor: '#0C1A2A' }}>
-      {/* Animated color blobs */}
-      <MotionDiv
+      {/* Animated color blobs — each has an outer motion wrapper (no filter) and inner colored div (with blur) */}
+      <motion.div
         className="absolute"
-        style={{ width: 400, height: 400, borderRadius: '50%', background: 'rgba(30, 60, 150, 0.6)', filter: 'blur(80px)', top: '-20%', left: '-10%' }}
-        animate={{ x: [0, 60, -30, 0], y: [0, -40, 50, 0], scale: [1, 1.1, 0.95, 1] }}
-        transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
-      />
-      <MotionDiv
+        style={{ top: '-20%', left: '-10%', width: 450, height: 450 }}
+        animate={{ x: [0, 80, -40, 0], y: [0, -60, 70, 0], scale: [1, 1.15, 0.9, 1] }}
+        transition={{ duration: 20, repeat: Infinity, repeatType: 'loop' as const, ease: 'easeInOut' }}
+      >
+        <div style={{ width: '100%', height: '100%', borderRadius: '50%', background: 'rgba(40, 70, 160, 0.7)', filter: 'blur(80px)' }} />
+      </motion.div>
+      <motion.div
         className="absolute"
-        style={{ width: 350, height: 350, borderRadius: '50%', background: 'rgba(120, 40, 180, 0.5)', filter: 'blur(80px)', top: '30%', right: '-15%' }}
-        animate={{ x: [0, -50, 40, 0], y: [0, 60, -30, 0], scale: [1, 0.9, 1.1, 1] }}
-        transition={{ duration: 25, repeat: Infinity, ease: 'easeInOut' }}
-      />
-      <MotionDiv
+        style={{ top: '25%', right: '-15%', width: 400, height: 400 }}
+        animate={{ x: [0, -70, 50, 0], y: [0, 80, -40, 0], scale: [1, 0.85, 1.15, 1] }}
+        transition={{ duration: 25, repeat: Infinity, repeatType: 'loop' as const, ease: 'easeInOut' }}
+      >
+        <div style={{ width: '100%', height: '100%', borderRadius: '50%', background: 'rgba(120, 40, 180, 0.55)', filter: 'blur(80px)' }} />
+      </motion.div>
+      <motion.div
         className="absolute"
-        style={{ width: 300, height: 300, borderRadius: '50%', background: 'rgba(200, 50, 100, 0.5)', filter: 'blur(80px)', bottom: '-10%', left: '20%' }}
-        animate={{ x: [0, 40, -60, 0], y: [0, -50, 30, 0], scale: [1, 1.05, 0.9, 1] }}
-        transition={{ duration: 22, repeat: Infinity, ease: 'easeInOut' }}
-      />
-      <MotionDiv
+        style={{ bottom: '-15%', left: '15%', width: 350, height: 350 }}
+        animate={{ x: [0, 60, -80, 0], y: [0, -70, 40, 0], scale: [1, 1.1, 0.88, 1] }}
+        transition={{ duration: 22, repeat: Infinity, repeatType: 'loop' as const, ease: 'easeInOut' }}
+      >
+        <div style={{ width: '100%', height: '100%', borderRadius: '50%', background: 'rgba(200, 50, 100, 0.5)', filter: 'blur(80px)' }} />
+      </motion.div>
+      <motion.div
         className="absolute"
-        style={{ width: 300, height: 300, borderRadius: '50%', background: 'rgba(42, 125, 111, 0.6)', filter: 'blur(80px)', bottom: '-5%', right: '5%' }}
-        animate={{ x: [0, -30, 50, 0], y: [0, 40, -20, 0], scale: [1, 1.08, 0.95, 1] }}
-        transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
-      />
+        style={{ bottom: '-10%', right: '0%', width: 350, height: 350 }}
+        animate={{ x: [0, -50, 60, 0], y: [0, 50, -30, 0], scale: [1, 1.12, 0.92, 1] }}
+        transition={{ duration: 18, repeat: Infinity, repeatType: 'loop' as const, ease: 'easeInOut' }}
+      >
+        <div style={{ width: '100%', height: '100%', borderRadius: '50%', background: 'rgba(42, 125, 111, 0.65)', filter: 'blur(80px)' }} />
+      </motion.div>
 
     </div>
   );
