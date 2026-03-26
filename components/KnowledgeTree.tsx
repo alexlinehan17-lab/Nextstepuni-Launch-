@@ -592,6 +592,55 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                 )}
               </div>
 
+              {/* Weekly streak tracker */}
+              {streak && streak.currentStreak > 0 && (
+                <div className="md:col-span-2">
+                  <div
+                    className="px-4 py-3 dark:!bg-[rgba(255,255,255,0.04)] dark:!border-[rgba(255,255,255,0.08)]"
+                    style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
+                  >
+                    <div className="flex items-center justify-between mb-3">
+                      <p className="text-[10px] font-bold uppercase tracking-widest dark:!text-zinc-400" style={{ color: '#9A9590' }}>This Week</p>
+                      <p className="text-xs font-semibold dark:!text-[#4DB8A4]" style={{ color: '#2A7D6F' }}>{streak.currentStreak} day streak</p>
+                    </div>
+                    <div className="flex justify-between">
+                      {['M','T','W','T','F','S','S'].map((day, i) => {
+                        const today = new Date();
+                        const currentDayIdx = today.getDay() === 0 ? 6 : today.getDay() - 1;
+                        const dayDate = new Date(today);
+                        dayDate.setDate(today.getDate() - (currentDayIdx - i));
+                        const dateKey = toDateKey(dayDate);
+                        const isActive = (timetableCompletions?.[dateKey]?.length ?? 0) > 0;
+                        const isToday = i === currentDayIdx;
+
+                        return (
+                          <div key={i} className="flex flex-col items-center gap-1.5">
+                            <div
+                              className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all"
+                              style={
+                                isActive
+                                  ? { backgroundColor: '#2A7D6F', color: 'white' }
+                                  : isToday
+                                  ? { border: '2px solid #2A7D6F', color: '#2A7D6F', backgroundColor: 'transparent' }
+                                  : { backgroundColor: '#f0efeb', color: '#9A9590' }
+                              }
+                            >
+                              {isActive ? '\u2713' : ''}
+                            </div>
+                            <span
+                              className={`text-[10px] font-medium ${isToday ? 'font-bold' : ''}`}
+                              style={{ color: isActive ? '#2A7D6F' : '#9A9590' }}
+                            >
+                              {day}
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+              )}
+
               {/* Recommendation card */}
               {smartRecommendation && (
                 <button

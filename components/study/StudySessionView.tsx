@@ -27,6 +27,7 @@ import { computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, co
 import { getBlockId, toDateKey } from '../subjectData';
 import { processDebriefSideEffects } from '../../hooks/useDebriefSideEffects';
 import { getSyllabusTopics } from '../syllabusTopics';
+import XPPopup from '../XPPopup';
 
 const MotionDiv = motion.div as any;
 
@@ -135,6 +136,9 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const [reflectionOpen, setReflectionOpen] = useState(false);
   const [debriefOpen, setDebriefOpen] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
+
+  // XP popup state
+  const [xpPopup, setXpPopup] = useState<{ points: number; visible: boolean }>({ points: 0, visible: false });
 
   // Previous debrief notes — surface "whatWorked" back to the student
   const [prevDebriefs, setPrevDebriefs] = useState<DebriefEntry[]>([]);
@@ -831,6 +835,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           onContinue={(ids) => {
             setSelectedStrategies(ids);
             setPickerDone(true);
+            setXpPopup({ points: session.basePointsEarned, visible: true });
           }}
         />
       );
@@ -855,6 +860,13 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
             </div>
             <h2 className="text-2xl font-bold text-zinc-800 dark:text-white">Session Complete!</h2>
           </div>
+
+          {/* XP Popup */}
+          <XPPopup
+            points={xpPopup.points}
+            isVisible={xpPopup.visible}
+            onComplete={() => setXpPopup(prev => ({ ...prev, visible: false }))}
+          />
 
           {/* Stats card */}
           <div className="bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-white/[0.06] rounded-xl p-5 space-y-3">

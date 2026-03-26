@@ -35,6 +35,7 @@ import LearningPathsView from './components/LearningPathsView';
 import TrainingPulse from './components/TrainingPulse';
 import AchievementToast from './components/AchievementToast';
 import RankUpModal from './components/RankUpModal';
+import StreakCelebration from './components/StreakCelebration';
 import { useGamification } from './hooks/useGamification';
 import { createStarterState } from './hooks/useIslandShop';
 import { type AthleteRank, type AchievementDefinition, getRankForPoints } from './gamificationConfig';
@@ -1082,6 +1083,8 @@ const App: React.FC = () => {
   const [isBonusFlashToast, setIsBonusFlashToast] = useState(false);
   const [rankUpModal, setRankUpModal] = useState<AthleteRank | null>(null);
   const prevRankRef = useRef<string | null>(null);
+  const [streakCelebration, setStreakCelebration] = useState<number | null>(null);
+  const lastStreakRef = useRef(0);
 
   // Process toast queue
   useEffect(() => {
@@ -1105,6 +1108,18 @@ const App: React.FC = () => {
     }
     prevRankRef.current = currentRankId;
   }, [gamification.state.currentRank.id, gamification.isLoaded]);
+
+  // Detect streak milestones
+  useEffect(() => {
+    const milestones = [3, 7, 14, 21, 30, 50, 100];
+    const current = streak.currentStreak;
+    const last = lastStreakRef.current;
+
+    if (current > last && milestones.includes(current)) {
+      setStreakCelebration(current);
+    }
+    lastStreakRef.current = current;
+  }, [streak.currentStreak]);
 
   const isPopstateRef = useRef(false);
 
@@ -1982,6 +1997,23 @@ const App: React.FC = () => {
         isOpen={rankUpModal !== null}
         newRank={rankUpModal}
         onClose={() => setRankUpModal(null)}
+      />
+
+      {/* Streak celebration */}
+      <StreakCelebration
+        streakCount={streakCelebration ?? 0}
+        isOpen={streakCelebration !== null}
+        onDismiss={() => setStreakCelebration(null)}
+        weekDays={(() => {
+          const today = new Date();
+          const currentDayIdx = today.getDay() === 0 ? 6 : today.getDay() - 1;
+          return [0,1,2,3,4,5,6].map(i => {
+            const d = new Date(today);
+            d.setDate(today.getDate() - (currentDayIdx - i));
+            const key = d.toISOString().split('T')[0];
+            return (timetableCompletions?.[key]?.length ?? 0) > 0;
+          });
+        })()}
       />
     </div>
     </SettingsContext.Provider>
