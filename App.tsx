@@ -786,7 +786,7 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
         className="w-full max-w-5xl bg-white rounded-2xl overflow-hidden flex"
-        style={{ minHeight: 540, boxShadow: '0 4px 40px rgba(0,0,0,0.06)' }}
+        style={{ minHeight: 540, boxShadow: '0 4px 40px rgba(0,0,0,0.04)', border: '1px solid rgba(0,0,0,0.08)' }}
       >
         {/* Left: Animated Gradient */}
         {gradientPanel}
@@ -810,26 +810,6 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
                 >
                   {/* Heading */}
                   <h2 className="text-3xl font-semibold text-zinc-900 tracking-tight mb-8">Welcome back</h2>
-
-                  {/* GC Login button */}
-                  <MotionButton
-                    type="button"
-                    onClick={() => { setLoginType('gc'); resetForm(); }}
-                    whileHover={{ scale: 1.01, backgroundColor: '#fafaf7' }}
-                    whileTap={{ scale: 0.99 }}
-                    className="w-full py-3 rounded-xl text-sm font-medium text-zinc-600 transition-all flex items-center justify-center gap-2"
-                    style={{ border: '1px solid #e4e4e7', backgroundColor: '#ffffff' }}
-                  >
-                    <GraduationCap size={16} />
-                    Sign in as Guidance Counsellor
-                  </MotionButton>
-
-                  {/* OR divider */}
-                  <div className="flex items-center gap-4 my-6">
-                    <div className="flex-1 h-px bg-zinc-200" />
-                    <span className="text-xs text-zinc-400">OR</span>
-                    <div className="flex-1 h-px bg-zinc-200" />
-                  </div>
 
                   <form onSubmit={handleSubmit} className="space-y-4">
                     {/* Email / Username */}
@@ -892,6 +872,20 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
                     Don&apos;t have an account?{' '}
                     <button type="button" onClick={() => { setAuthMode('register'); resetForm(); }} className="text-sm font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Register</button>
                   </p>
+
+                  {/* GC Login link */}
+                  <div className="flex items-center gap-4 mt-6">
+                    <div className="flex-1 h-px bg-zinc-100" />
+                    <button
+                      type="button"
+                      onClick={() => { setLoginType('gc'); resetForm(); }}
+                      className="text-xs font-medium text-zinc-400 hover:text-zinc-600 transition-colors flex items-center gap-1.5"
+                    >
+                      <GraduationCap size={13} />
+                      Guidance Counsellor
+                    </button>
+                    <div className="flex-1 h-px bg-zinc-100" />
+                  </div>
                 </MotionDiv>
               ) : (
                 <MotionDiv
