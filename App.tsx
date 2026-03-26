@@ -675,7 +675,7 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
-          className="w-full max-w-4xl bg-white rounded-2xl overflow-hidden flex"
+          className="w-full max-w-5xl bg-white rounded-2xl overflow-hidden flex"
           style={{ minHeight: 540, boxShadow: '0 4px 40px rgba(0,0,0,0.06)' }}
         >
           {/* Left: Animated Gradient */}
@@ -785,7 +785,7 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
-        className="w-full max-w-4xl bg-white rounded-2xl overflow-hidden flex"
+        className="w-full max-w-5xl bg-white rounded-2xl overflow-hidden flex"
         style={{ minHeight: 540, boxShadow: '0 4px 40px rgba(0,0,0,0.06)' }}
       >
         {/* Left: Animated Gradient */}
