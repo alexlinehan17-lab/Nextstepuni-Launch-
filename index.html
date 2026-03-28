@@ -9,10 +9,19 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <style>
+      @font-face {
+        font-family: 'Apercu Mono Pro';
+        src: url('/fonts/ApercuMonoPro.otf') format('opentype');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700&family=DM+Sans:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700&family=DM+Sans:wght@300;400;500;600;700;800;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         darkMode: 'class',
@@ -42,6 +51,7 @@
               serif: ['"Source Serif 4"', 'serif'],
               sans: ['"DM Sans"', 'sans-serif'],
               mono: ['"Roboto Mono"', 'monospace'],
+              apercu: ['"Apercu Mono Pro"', '"DM Sans"', 'monospace'],
             },
             keyframes: {
               shine: {

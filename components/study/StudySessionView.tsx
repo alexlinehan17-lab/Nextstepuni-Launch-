@@ -15,7 +15,7 @@ import { type CourseData } from '../Library';
 import { STRATEGY_REGISTRY, PROMPT_AUTO_DISMISS_SECONDS } from '../../studySessionData';
 import { type StreakData } from '../../hooks/useStreak';
 import { useStudySession } from '../../hooks/useStudySession';
-import { getSubjectColor, getSubjectStroke, DURATION_PRESETS } from '../../studySessionData';
+import { getSubjectColor, getSubjectStroke, getSubjectHex, DURATION_PRESETS } from '../../studySessionData';
 import StrategyPickerStep from './StrategyPickerStep';
 import ReflectionModal from '../ReflectionModal';
 import { scoreReflection, REFLECTION_TIER_POINTS } from '../ReflectionModal';
@@ -55,6 +55,27 @@ const STRATEGY_ICONS: Record<string, React.ElementType> = {
   'digital-distraction-protocol': Shield,
   'learning-radar-protocol': Radar,
   'exam-hall-strategies-protocol': ClipboardCheck,
+};
+
+// Animated count-up number for points
+const CountUpNumber: React.FC<{ value: number; delay?: number }> = ({ value, delay = 0 }) => {
+  const [display, setDisplay] = React.useState(0);
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      const duration = 800;
+      const start = performance.now();
+      const step = (now: number) => {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        setDisplay(Math.round(eased * value));
+        if (progress < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    }, delay);
+    return () => clearTimeout(timer);
+  }, [value, delay]);
+  return <span className="text-3xl font-bold text-[var(--accent-hex)] tabular-nums">+{display}</span>;
 };
 
 const SESSION_TYPE_CONFIG: Record<string, { icon: React.ElementType; label: string }> = {
@@ -541,24 +562,31 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                   })}
                   {/* Custom duration input */}
                   <div className="relative">
-                    <input
-                      type="number"
-                      min={5}
-                      max={180}
-                      placeholder="Custom"
-                      value={!DURATION_PRESETS.some(p => p.minutes === selectedMinutes) && selectedMinutes > 0 ? selectedMinutes : ''}
-                      onChange={(e) => {
-                        const v = parseInt(e.target.value, 10);
-                        if (!isNaN(v) && v >= 1 && v <= 180) setSelectedMinutes(v);
-                        else if (e.target.value === '') setSelectedMinutes(0);
-                      }}
-                      className={`w-full px-4 py-3 rounded-xl text-[13px] font-semibold text-center transition-all bg-white dark:bg-zinc-900 text-zinc-500 dark:text-zinc-400 border ${
-                        !DURATION_PRESETS.some(p => p.minutes === selectedMinutes) && selectedMinutes > 0
-                          ? 'border-[rgba(var(--accent),0.3)] ring-1 ring-inset ring-[rgba(var(--accent),0.2)] text-[var(--accent-hex)]'
-                          : 'border-transparent hover:bg-zinc-100 dark:hover:bg-zinc-800/60'
-                      } outline-none`}
-                    />
-                    <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[11px] text-zinc-400 pointer-events-none">min</span>
+                    {(() => {
+                      const isCustomActive = !DURATION_PRESETS.some(p => p.minutes === selectedMinutes) && selectedMinutes > 0;
+                      return (
+                        <>
+                          <input
+                            type="number"
+                            min={5}
+                            max={180}
+                            placeholder="Custom"
+                            value={isCustomActive ? selectedMinutes : ''}
+                            onChange={(e) => {
+                              const v = parseInt(e.target.value, 10);
+                              if (!isNaN(v) && v >= 1 && v <= 180) setSelectedMinutes(v);
+                              else if (e.target.value === '') setSelectedMinutes(0);
+                            }}
+                            className={`w-full px-4 py-3 rounded-xl text-[13px] font-semibold text-center transition-all outline-none ${
+                              isCustomActive
+                                ? 'bg-[rgba(var(--accent),0.08)] text-[var(--accent-hex)] border border-[rgba(var(--accent),0.25)] ring-1 ring-inset ring-[rgba(var(--accent),0.15)]'
+                                : 'bg-white dark:bg-zinc-900 text-zinc-500 dark:text-zinc-400 border border-dashed border-zinc-300 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-600'
+                            }`}
+                          />
+                          <span className={`absolute right-3 top-1/2 -translate-y-1/2 text-[11px] pointer-events-none ${isCustomActive ? 'text-[var(--accent-hex)] opacity-60' : 'text-zinc-400'}`}>min</span>
+                        </>
+                      );
+                    })()}
                   </div>
                 </div>
               </div>
@@ -628,11 +656,31 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     );
   }
 
-  // ── ACTIVE / PAUSED PHASE ──
+  // ── ACTIVE / PAUSED PHASE (Headspace-inspired) ──
   if (session.phase === 'active' || session.phase === 'paused') {
     const subjectColors = getSubjectColor(session.subject);
-    const strokeColor = getSubjectStroke(session.subject);
+    const subjectHex = getSubjectHex(session.subject);
     const typeConfig = SESSION_TYPE_CONFIG[session.sessionType];
+
+    // Generate 4 arc layers — each lighter/more saturated moving outward
+    // Colors shift from deep base → lighter toward the edges
+    const arcLayers = [
+      { scale: 1.0,  yOffset: '62%', opacity: 1.0, lighten: 0 },
+      { scale: 1.35, yOffset: '55%', opacity: 0.92, lighten: 15 },
+      { scale: 1.7,  yOffset: '48%', opacity: 0.85, lighten: 28 },
+      { scale: 2.1,  yOffset: '42%', opacity: 0.78, lighten: 40 },
+    ];
+
+    // Helper to lighten a hex color
+    const lightenHex = (hex: string, amount: number) => {
+      const r = parseInt(hex.slice(1, 3), 16);
+      const g = parseInt(hex.slice(3, 5), 16);
+      const b = parseInt(hex.slice(5, 7), 16);
+      const nr = Math.min(255, r + amount);
+      const ng = Math.min(255, g + amount);
+      const nb = Math.min(255, b + amount);
+      return `#${nr.toString(16).padStart(2, '0')}${ng.toString(16).padStart(2, '0')}${nb.toString(16).padStart(2, '0')}`;
+    };
 
     const handleQuit = () => {
       if (window.confirm('End this session and go back? Any time studied will be lost.')) {
@@ -642,83 +690,150 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     };
 
     return (
-      <div className="fixed inset-0 z-[100] bg-zinc-950 flex flex-col items-center justify-center">
-        {/* Subject + type — clean top bar */}
-        <div className="absolute top-0 left-0 right-0 flex items-center justify-between px-6 py-5">
+      <div
+        className="fixed inset-0 z-[100] flex flex-col"
+        style={{ background: lightenHex(subjectHex, 55) }}
+      >
+        {/* Concentric arcs — layered from back to front */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {[...arcLayers].reverse().map((layer, i) => (
+            <motion.div
+              key={i}
+              className="absolute left-1/2 rounded-full"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{
+                scale: session.phase === 'paused' ? layer.scale * 0.97 : layer.scale,
+                opacity: layer.opacity,
+              }}
+              transition={{ duration: 1.2, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+              style={{
+                width: '140vw',
+                height: '140vw',
+                top: layer.yOffset,
+                transform: 'translateX(-50%)',
+                background: lightenHex(subjectHex, layer.lighten),
+              }}
+            />
+          ))}
+        </div>
+
+        {/* Top bar — X button + subject info */}
+        <div className="relative z-20 flex items-center justify-between px-5 pt-5 pb-2">
           <button
             onClick={session.endSession}
-            className="text-xs font-medium text-zinc-500 hover:text-zinc-300 transition-colors"
+            className="w-9 h-9 rounded-full flex items-center justify-center transition-all"
+            style={{ backgroundColor: 'rgba(0,0,0,0.08)' }}
           >
-            End session
+            <X size={18} style={{ color: 'rgba(0,0,0,0.5)' }} />
           </button>
-          <div className="flex items-center gap-2">
-            <span className={`w-2 h-2 rounded-full ${subjectColors.dot}`} />
-            <span className="text-sm font-medium text-zinc-300">{session.subject}</span>
-            <span className="text-zinc-600 mx-0.5">·</span>
-            <span className="text-sm text-zinc-500">{typeConfig.label}</span>
-          </div>
-          <div className="w-16" />
+          <div />
         </div>
 
-        {/* Timer — large, centered, minimal */}
-        <div className="flex flex-col items-center">
-          {/* Time display — the hero element */}
-          <div className="relative">
-            {/* Outer ring — progress */}
-            <svg className="w-64 h-64 md:w-80 md:h-80 -rotate-90" viewBox="0 0 200 200">
-              {/* Track */}
-              <circle
-                cx="100" cy="100" r="90"
-                fill="none"
-                strokeWidth="2"
-                stroke="rgba(255,255,255,0.06)"
-              />
-              {/* Progress arc */}
-              <motion.circle
-                cx="100" cy="100" r="90"
-                fill="none"
-                strokeWidth="3"
-                strokeLinecap="round"
-                stroke="#2A7D6F"
-                strokeDasharray={2 * Math.PI * 90}
-                strokeDashoffset={2 * Math.PI * 90 * (1 - progress)}
-                style={{ transition: 'stroke-dashoffset 1s ease' }}
-              />
-            </svg>
+        {/* Title area */}
+        <div className="relative z-20 text-center mt-4 px-6">
+          <motion.h1
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="text-2xl md:text-3xl font-bold"
+            style={{ color: 'rgba(0,0,0,0.8)' }}
+          >
+            {session.subject}
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+            className="text-sm mt-1.5"
+            style={{ color: 'rgba(0,0,0,0.45)' }}
+          >
+            {typeConfig.label} · {Math.ceil(session.totalDuration / 60)} min
+          </motion.p>
+        </div>
 
-            {/* Center content */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <span className="text-6xl md:text-7xl font-light text-white tabular-nums tracking-tighter" style={{ letterSpacing: '-0.04em' }}>
-                {formatTime(timeRemaining)}
-              </span>
-              <div className="flex items-center gap-3 mt-3 text-xs text-zinc-500">
-                <span>{Math.round(progress * 100)}% complete</span>
-                <span className="w-1 h-1 rounded-full bg-zinc-700" />
-                <span>{formatTime(session.elapsedSeconds)} elapsed</span>
-              </div>
-            </div>
-          </div>
+        {/* Center — giant play/pause */}
+        <div className="relative z-20 flex-1 flex items-center justify-center">
+          <motion.button
+            onClick={session.phase === 'active' ? session.pauseSession : session.resumeSession}
+            className="relative w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center transition-shadow duration-500 ease-in-out hover:shadow-[0_0_60px_20px_rgba(255,255,255,0.6),0_0_120px_40px_rgba(255,255,255,0.2)]"
+            style={{ backgroundColor: 'rgba(0,0,0,0.75)', boxShadow: '0 0 0px 0px rgba(255,255,255,0)' }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.93 }}
+          >
+            {session.phase === 'active' ? (
+              <Pause size={32} className="text-white" />
+            ) : (
+              <Play size={32} className="text-white" style={{ marginLeft: 3 }} />
+            )}
+          </motion.button>
+        </div>
 
-          {/* Pause/Play — single clean button */}
-          <div className="mt-10">
-            <button
-              onClick={session.phase === 'active' ? session.pauseSession : session.resumeSession}
-              className="w-14 h-14 rounded-full flex items-center justify-center transition-all"
-              style={{
-                backgroundColor: session.phase === 'paused' ? '#2A7D6F' : 'rgba(255,255,255,0.08)',
-                border: session.phase === 'paused' ? 'none' : '1px solid rgba(255,255,255,0.1)',
-              }}
+        {/* Bottom — progress bar + times */}
+        <div className="relative z-20 px-6 pb-8 pt-4">
+          {/* Paused label — absolute so it doesn't shift layout */}
+          <AnimatePresence>
+            {session.phase === 'paused' && teachBackPhase === 'none' && !session.currentPrompt && (
+              <MotionDiv
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="absolute left-0 right-0 -top-6 text-center pointer-events-none"
+              >
+                <span
+                  className="text-xs font-bold uppercase tracking-[0.25em]"
+                  style={{ color: 'rgba(0,0,0,0.35)' }}
+                >
+                  Paused
+                </span>
+              </MotionDiv>
+            )}
+          </AnimatePresence>
+
+          {/* Progress track */}
+          <div className="relative w-full max-w-lg mx-auto">
+            <div
+              className="w-full h-1 rounded-full overflow-hidden"
+              style={{ backgroundColor: 'rgba(0,0,0,0.12)' }}
             >
-              {session.phase === 'active' ? (
-                <Pause size={22} className="text-zinc-300" />
-              ) : (
-                <Play size={22} className="text-white ml-0.5" />
-              )}
-            </button>
+              <motion.div
+                className="h-full rounded-full"
+                style={{
+                  backgroundColor: 'rgba(0,0,0,0.5)',
+                  width: `${Math.min(100, progress * 100)}%`,
+                  transition: 'width 1s ease',
+                }}
+              />
+            </div>
+            {/* Scrubber dot */}
+            <div
+              className="absolute top-1/2 -translate-y-1/2 w-3 h-3 rounded-full"
+              style={{
+                left: `${Math.min(100, progress * 100)}%`,
+                transform: `translate(-50%, -50%)`,
+                backgroundColor: 'rgba(0,0,0,0.6)',
+                transition: 'left 1s ease',
+              }}
+            />
+          </div>
+
+          {/* Elapsed / Remaining */}
+          <div className="flex justify-between mt-3 max-w-lg mx-auto">
+            <span
+              className="text-xs font-medium tabular-nums"
+              style={{ color: 'rgba(0,0,0,0.4)' }}
+            >
+              {formatTime(session.elapsedSeconds)}
+            </span>
+            <span
+              className="text-xs font-medium tabular-nums"
+              style={{ color: 'rgba(0,0,0,0.4)' }}
+            >
+              {formatTime(timeRemaining)}
+            </span>
           </div>
         </div>
 
-        {/* Bottom card area: coaching prompts OR teach-back cards */}
+        {/* Coaching prompts / Teach-back cards — overlay from bottom */}
         <AnimatePresence mode="wait">
           {/* Teach-back read card */}
           {teachBackPhase === 'reading' && teachBack.teachBackToRead && (
@@ -746,7 +861,6 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               onSubmit={async (text) => {
                 await teachBack.submitTeachBack(session.subject, text);
                 setTeachBackPhase('write-done');
-                // Auto-dismiss success after 2s
                 teachBackDoneTimerRef.current = setTimeout(() => setTeachBackPhase('none'), 2000);
               }}
               onSkip={() => setTeachBackPhase('none')}
@@ -760,51 +874,62 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              className="absolute bottom-12 left-4 right-4 max-w-md mx-auto"
+              className="fixed bottom-24 left-4 right-4 z-30 max-w-md mx-auto"
             >
-              <div className="bg-zinc-900 border border-emerald-500/30 rounded-xl p-4 shadow-2xl text-center">
-                <p className="text-sm font-semibold text-emerald-400">Sent! A classmate will see your explanation.</p>
+              <div className="bg-white/90 backdrop-blur-xl border border-white/60 rounded-2xl p-4 shadow-2xl text-center">
+                <p className="text-sm font-semibold text-emerald-600">Sent! A classmate will see your explanation.</p>
               </div>
             </MotionDiv>
           )}
 
-          {/* Coaching prompt (only when no teach-back is showing) */}
+          {/* Coaching prompt */}
           {teachBackPhase === 'none' && session.currentPrompt && (
             <MotionDiv
               key={session.currentPrompt.prompt}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="absolute bottom-12 left-4 right-4 max-w-md mx-auto"
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              className="fixed bottom-24 left-4 right-4 z-30 max-w-md mx-auto"
             >
-              <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-4 shadow-2xl overflow-hidden relative">
+              <div
+                className="rounded-2xl p-4 shadow-2xl overflow-hidden relative"
+                style={{
+                  backgroundColor: 'rgba(255,255,255,0.85)',
+                  backdropFilter: 'blur(20px)',
+                  WebkitBackdropFilter: 'blur(20px)',
+                  border: '1px solid rgba(255,255,255,0.6)',
+                }}
+              >
                 {/* Auto-dismiss countdown bar */}
                 <motion.div
-                  className="absolute top-0 left-0 h-0.5 bg-amber-400/60"
+                  className="absolute top-0 left-0 h-0.5 rounded-full"
+                  style={{ backgroundColor: 'rgba(0,0,0,0.15)' }}
                   initial={{ width: '100%' }}
                   animate={{ width: '0%' }}
                   transition={{ duration: PROMPT_AUTO_DISMISS_SECONDS, ease: 'linear' }}
                 />
                 <div className="flex items-center gap-2 mb-2">
-                  <Sparkles size={14} className="text-amber-400" />
-                  <span className="text-xs font-bold uppercase tracking-widest text-amber-400">
+                  <Sparkles size={14} style={{ color: subjectHex }} />
+                  <span className="text-[10px] font-bold uppercase tracking-widest" style={{ color: subjectHex }}>
                     {session.currentPrompt.strategyName}
                   </span>
                 </div>
-                <p className="text-sm text-zinc-300 leading-relaxed">
+                <p className="text-sm leading-relaxed" style={{ color: 'rgba(0,0,0,0.7)' }}>
                   {session.currentPrompt.prompt}
                 </p>
                 <div className="flex items-center gap-3 mt-3">
                   <button
                     onClick={session.completePrompt}
-                    className="text-xs font-semibold text-teal-400 hover:text-teal-300 transition-colors"
+                    className="text-xs font-semibold transition-colors"
+                    style={{ color: subjectHex }}
                   >
                     Done
                   </button>
                   <button
                     onClick={session.dismissPrompt}
-                    className="text-xs text-zinc-500 hover:text-zinc-400 transition-colors"
+                    className="text-xs transition-colors"
+                    style={{ color: 'rgba(0,0,0,0.35)' }}
                   >
                     Skip
                   </button>
@@ -813,13 +938,6 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
             </MotionDiv>
           )}
         </AnimatePresence>
-
-        {/* Paused indicator — subtle, not an overlay */}
-        {session.phase === 'paused' && (
-          <div className="absolute bottom-24 left-0 right-0 flex justify-center pointer-events-none">
-            <span className="text-xs font-medium text-zinc-500 uppercase tracking-widest">Paused</span>
-          </div>
-        )}
       </div>
     );
   }
@@ -853,12 +971,28 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="w-full max-w-sm space-y-6"
         >
-          {/* Header */}
+          {/* Header — points as hero */}
           <div className="text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-amber-50 dark:bg-amber-500/10 mb-4">
-              <Sparkles size={32} className="text-amber-500" />
-            </div>
-            <h2 className="text-2xl font-bold text-zinc-800 dark:text-white">Session Complete!</h2>
+            <MotionDiv
+              initial={{ scale: 0.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <Sparkles size={28} className="text-amber-500 mx-auto mb-3" />
+            </MotionDiv>
+            <h2 className="text-xl font-bold text-zinc-800 dark:text-white mb-4">Session Complete</h2>
+
+            {/* Big animated points */}
+            <MotionDiv
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.4, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              className="inline-flex items-baseline gap-1.5 px-6 py-3 rounded-2xl"
+              style={{ backgroundColor: 'rgba(var(--accent),0.08)' }}
+            >
+              <CountUpNumber value={session.basePointsEarned} delay={600} />
+              <span className="text-sm font-semibold text-[var(--accent-hex)] opacity-70">pts earned</span>
+            </MotionDiv>
           </div>
 
           {/* XP Popup */}
@@ -868,28 +1002,26 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
             onComplete={() => setXpPopup(prev => ({ ...prev, visible: false }))}
           />
 
-          {/* Stats card */}
-          <div className="bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-white/[0.06] rounded-xl p-5 space-y-3">
-            <div className="flex items-center justify-between">
-              <span className="text-sm text-zinc-500">Duration</span>
-              <span className="text-sm font-bold text-zinc-800 dark:text-white">{actualMinutes} min</span>
+          {/* Session details — compact chips instead of receipt table */}
+          <MotionDiv
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.4 }}
+            className="flex flex-wrap justify-center gap-2"
+          >
+            <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-white/[0.06]">
+              <Clock size={13} className="text-zinc-400" />
+              <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{actualMinutes} min</span>
             </div>
-            <div className="flex items-center justify-between">
-              <span className="text-sm text-zinc-500">Subject</span>
-              <div className="flex items-center gap-2">
-                <span className={`w-2 h-2 rounded-full ${subjectColors.dot}`} />
-                <span className="text-sm font-medium text-zinc-800 dark:text-white">{session.subject}</span>
-              </div>
+            <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-white/[0.06]">
+              <span className={`w-2 h-2 rounded-full ${subjectColors.dot}`} />
+              <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{session.subject}</span>
             </div>
-            <div className="flex items-center justify-between">
-              <span className="text-sm text-zinc-500">Type</span>
-              <span className="text-sm font-medium text-zinc-800 dark:text-white">{typeConfig.label}</span>
+            <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-white/[0.06]">
+              {React.createElement(typeConfig.icon, { size: 13, className: 'text-zinc-400' })}
+              <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{typeConfig.label}</span>
             </div>
-            <div className="border-t border-zinc-100 dark:border-zinc-800 pt-3 flex items-center justify-between">
-              <span className="text-sm text-zinc-500">Points Earned</span>
-              <span className="text-base font-bold text-[var(--accent-hex)]">+{session.basePointsEarned}</span>
-            </div>
-          </div>
+          </MotionDiv>
 
           {/* Timetable block complete banner */}
           {timetableBlock && (

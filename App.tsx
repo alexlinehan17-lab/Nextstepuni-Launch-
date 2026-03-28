@@ -38,6 +38,8 @@ import RankUpModal from './components/RankUpModal';
 import StreakCelebration from './components/StreakCelebration';
 import { useGamification } from './hooks/useGamification';
 import { createStarterState } from './hooks/useIslandShop';
+import { findBestLandPlacement } from './components/journey/hex/hexGeometry';
+import { type IslandState } from './types';
 import { type AthleteRank, type AchievementDefinition, getRankForPoints } from './gamificationConfig';
 import { type StudentSubjectProfile } from './components/subjectData';
 import NorthStarEditModal from './components/NorthStarEditModal';
@@ -636,42 +638,51 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
   const inputClass = "w-full py-3 px-4 rounded-xl text-sm text-zinc-800 placeholder-zinc-400 outline-none transition-all";
   const inputBorder: React.CSSProperties = { backgroundColor: '#FAF7F4', border: '1px solid #e4e4e7' };
 
+  // ── Cursor glow state for left panel ──
+  const [cursorPos, setCursorPos] = useState<{ x: number; y: number } | null>(null);
+
+  const handlePanelMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setCursorPos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+  };
+
   // ── Left Panel: Animated Gradient with Framer Motion blobs ──
   const gradientPanel = (
-    <div className="hidden md:block w-1/2 relative overflow-hidden" style={{ borderRadius: '16px 0 0 16px', backgroundColor: '#0C1A2A' }}>
-      {/* Animated color blobs — traverse the full panel */}
+    <div
+      className="hidden md:block w-1/2 relative overflow-hidden"
+      style={{ borderRadius: '16px 0 0 16px' }}
+      onMouseMove={handlePanelMouseMove}
+      onMouseLeave={() => setCursorPos(null)}
+    >
+      {/* Aurora mesh gradient — stronger than onboarding for contained panel */}
+      <div className="absolute inset-0" style={{ backgroundColor: '#EAE5DE' }} />
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, #FDF8F0 0%, transparent 15%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 140% 70% at 50% 50%, rgba(140,120,210,0.5) 0%, transparent 65%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 100% 50% at 35% 40%, rgba(155,135,225,0.35) 0%, transparent 60%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 120% 55% at 50% 95%, rgba(225,110,160,0.65) 0%, transparent 50%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 90% 45% at 50% 75%, rgba(215,130,175,0.4) 0%, transparent 55%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 65% at 0% 60%, rgba(120,145,225,0.4) 0%, transparent 60%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 65% at 100% 60%, rgba(120,145,225,0.35) 0%, transparent 60%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 55% 40% at 65% 88%, rgba(240,150,120,0.4) 0%, transparent 50%)' }} />
+
+      {/* Cursor glow — follows mouse */}
       <motion.div
-        className="absolute"
-        style={{ top: '-10%', left: '-10%', width: 450, height: 450 }}
-        animate={{ x: [0, 250, 100, -50, 0], y: [0, 200, 350, 150, 0], scale: [1, 1.3, 0.8, 1.15, 1] }}
-        transition={{ duration: 15, repeat: Infinity, repeatType: 'loop' as const, ease: 'easeInOut' }}
-      >
-        <div style={{ width: '100%', height: '100%', borderRadius: '50%', background: 'rgba(40, 70, 160, 0.7)', filter: 'blur(80px)' }} />
-      </motion.div>
-      <motion.div
-        className="absolute"
-        style={{ top: '60%', right: '-5%', width: 400, height: 400 }}
-        animate={{ x: [0, -200, -300, -100, 0], y: [0, -250, -400, -150, 0], scale: [1, 0.75, 1.25, 0.9, 1] }}
-        transition={{ duration: 18, repeat: Infinity, repeatType: 'loop' as const, ease: 'easeInOut' }}
-      >
-        <div style={{ width: '100%', height: '100%', borderRadius: '50%', background: 'rgba(120, 40, 180, 0.55)', filter: 'blur(80px)' }} />
-      </motion.div>
-      <motion.div
-        className="absolute"
-        style={{ bottom: '0%', left: '-5%', width: 380, height: 380 }}
-        animate={{ x: [0, 200, 300, 150, 0], y: [0, -200, -350, -100, 0], scale: [1, 1.2, 0.8, 1.1, 1] }}
-        transition={{ duration: 20, repeat: Infinity, repeatType: 'loop' as const, ease: 'easeInOut' }}
-      >
-        <div style={{ width: '100%', height: '100%', borderRadius: '50%', background: 'rgba(200, 50, 100, 0.5)', filter: 'blur(80px)' }} />
-      </motion.div>
-      <motion.div
-        className="absolute"
-        style={{ bottom: '20%', right: '10%', width: 350, height: 350 }}
-        animate={{ x: [0, -180, -100, 50, 0], y: [0, -180, 100, 200, 0], scale: [1, 1.2, 0.85, 1.1, 1] }}
-        transition={{ duration: 12, repeat: Infinity, repeatType: 'loop' as const, ease: 'easeInOut' }}
-      >
-        <div style={{ width: '100%', height: '100%', borderRadius: '50%', background: 'rgba(42, 125, 111, 0.65)', filter: 'blur(80px)' }} />
-      </motion.div>
+        className="absolute pointer-events-none"
+        animate={{
+          x: (cursorPos?.x ?? 0) - 200,
+          y: (cursorPos?.y ?? 0) - 200,
+          opacity: cursorPos ? 0.5 : 0,
+        }}
+        transition={{ type: 'spring', damping: 25, stiffness: 200, mass: 0.5 }}
+        style={{
+          width: 400,
+          height: 400,
+          borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.15) 40%, transparent 70%)',
+          filter: 'blur(20px)',
+          zIndex: 10,
+        }}
+      />
 
     </div>
   );
@@ -823,12 +834,12 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
                   <form onSubmit={handleSubmit} className="space-y-4">
                     {/* Email / Username */}
                     <div>
-                      <label className="text-sm text-zinc-600 font-medium mb-1.5 block">Email / Username</label>
+                      <label className="text-sm text-zinc-600 font-medium mb-1.5 block">Username</label>
                       <input
                         type="text"
                         value={email}
                         onChange={e => { setEmail(e.target.value); setError(''); setResetSent(false); }}
-                        placeholder="your@email.com or username"
+                        placeholder="Enter your username"
                         className={inputClass}
                         style={inputBorder}
                         autoFocus
@@ -837,11 +848,8 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
 
                     {/* Password */}
                     <div>
-                      <div className="flex items-center justify-between mb-1.5">
+                      <div className="mb-1.5">
                         <label className="text-sm text-zinc-600 font-medium">Password</label>
-                        <button type="button" onClick={handleForgotPassword} className="text-xs font-medium transition-colors hover:opacity-70" style={{ color: '#2A7D6F' }}>
-                          {resetSent ? 'Reset email sent!' : 'Forgot password?'}
-                        </button>
                       </div>
                       <div className="relative">
                         <input
@@ -860,9 +868,6 @@ const LoginPage: React.FC<{ handleLoginSuccess: (u: SessionUser) => void }> = ({
 
                     {/* Error */}
                     <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-                    {/* Reset sent */}
-                    {resetSent && <p className="text-sm text-green-500 font-medium">Check your email for a reset link.</p>}
-
                     {/* Submit */}
                     <MotionButton
                       type="submit"
@@ -1099,12 +1104,49 @@ const App: React.FC = () => {
     }
   }, [toastQueue, currentToast, isBonusFlashToast]);
 
+  // Grant 3 grass tiles on rank-up
+  const grantRankUpTiles = async (uid: string) => {
+    try {
+      const snap = await getDoc(doc(db, 'progress', uid));
+      const data = snap.data();
+      const island: IslandState | undefined = data?.islandState;
+      if (!island || !island.placements) return;
+
+      const occupied = new Set<string>();
+      for (const p of island.placements) {
+        if (p.type === 'hex') occupied.add(`${p.q},${p.r}`);
+      }
+
+      const newPlacements = [...island.placements];
+      const now = new Date().toISOString();
+      for (let i = 0; i < 3; i++) {
+        const pos = findBestLandPlacement(occupied);
+        const key = `${pos.q},${pos.r}`;
+        occupied.add(key);
+        newPlacements.push({
+          itemId: 'terrain-grass',
+          model: 'grass.glb',
+          type: 'hex',
+          q: pos.q,
+          r: pos.r,
+          purchasedAt: now,
+        });
+      }
+
+      const newState: IslandState = { ...island, placements: newPlacements, lastPurchaseTimestamp: now };
+      await setDoc(doc(db, 'progress', uid), { islandState: newState }, { merge: true });
+    } catch (e) {
+      console.error('Failed to grant rank-up tiles:', e);
+    }
+  };
+
   // Detect rank changes
   useEffect(() => {
     if (!gamification.isLoaded) return;
     const currentRankId = gamification.state.currentRank.id;
     if (prevRankRef.current !== null && prevRankRef.current !== currentRankId) {
       setRankUpModal(gamification.state.currentRank);
+      if (user) grantRankUpTiles(user.uid);
     }
     prevRankRef.current = currentRankId;
   }, [gamification.state.currentRank.id, gamification.isLoaded]);
@@ -1772,6 +1814,7 @@ const App: React.FC = () => {
         onRecommendationAction={() => {
           handleGoToStudy();
         }}
+        onDevRankUp={(rank) => setRankUpModal(rank)}
       />;
     }
 
@@ -1997,6 +2040,7 @@ const App: React.FC = () => {
         isOpen={rankUpModal !== null}
         newRank={rankUpModal}
         onClose={() => setRankUpModal(null)}
+        onGoToJourney={() => { setRankUpModal(null); handleGoToJourney(); }}
       />
 
       {/* Streak celebration */}

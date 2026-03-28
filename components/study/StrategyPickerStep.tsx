@@ -97,9 +97,9 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
                     <span className={`text-[13px] font-medium ${isSelected ? 'text-zinc-800 dark:text-white' : 'text-zinc-500 dark:text-zinc-400'}`}>
                       {strategy.strategyName}
                     </span>
-                    {!isLearned && (
-                      <span className="text-[9px] font-semibold px-1.5 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-400 dark:text-zinc-500">
-                        Module not completed
+                    {isLearned && (
+                      <span className="text-[9px] font-semibold px-1.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-900/20 text-emerald-500">
+                        Learned
                       </span>
                     )}
                   </div>

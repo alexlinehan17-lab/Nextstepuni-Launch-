@@ -95,6 +95,25 @@ function getSubjectColor(name: string) {
   return SUBJECT_COLORS[name] || DEFAULT_COLOR;
 }
 
+const SUBJECT_HEX: Record<string, string> = {
+  'English': '#3b82f6', 'Irish': '#10b981', 'Mathematics': '#6366f1',
+  'French': '#0ea5e9', 'German': '#eab308', 'Spanish': '#f97316',
+  'Italian': '#ef4444', 'Japanese': '#ec4899', 'Physics': '#06b6d4',
+  'Chemistry': '#14b8a6', 'Biology': '#84cc16', 'Applied Maths': '#8b5cf6',
+  'Computer Science': '#d946ef', 'Ag Science': '#22c55e', 'Accounting': '#f59e0b',
+  'Business': '#d97706', 'Economics': '#ca8a04', 'History': '#a855f7',
+  'Geography': '#059669', 'Politics & Society': '#f43f5e',
+  'Religious Education': '#71717a', 'Classical Studies': '#78716c',
+  'Home Economics': '#fb923c', 'Construction Studies': '#64748b',
+  'Engineering': '#6b7280', 'DCG': '#737373', 'Technology': '#2563eb',
+  'Art': '#fb7185', 'Music': '#f472b6',
+  'Design & Communication Graphics': '#818cf8',
+};
+
+function getSubjectHexColor(name: string): string {
+  return SUBJECT_HEX[name] || '#71717a';
+}
+
 // ─── Session Type Icons ─────────────────────────────────────────────────────
 
 const SESSION_TYPE_CONFIG: Record<StudyBlock['sessionType'], { icon: React.ElementType; label: string }> = {
@@ -151,61 +170,52 @@ const StudyBlockCard: React.FC<{
     );
   }
 
-  const inner = (
+  const hex = getSubjectHexColor(block.subjectName);
+  const TypeIcon = typeConfig.icon;
+
+  const inner = completed ? (
     <div
-      className="py-3 px-4 rounded-xl transition-all"
-      style={completed
-        ? { backgroundColor: '#EDF2EE', border: '1.5px solid rgba(107,143,113,0.25)', borderRadius: 12, opacity: 0.8 }
-        : { backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }
-      }
+      className="rounded-xl transition-all"
+      style={{ backgroundColor: '#EDF2EE', border: '1.5px solid rgba(107,143,113,0.25)', borderRadius: 12, opacity: 0.7 }}
     >
-      {/* Row 1: Subject + session type badge */}
-      <div className="flex items-center justify-between mb-1">
-        <div className="flex items-center gap-2.5 min-w-0 flex-1">
-          {completed
-            ? <CheckCircle size={14} style={{ color: '#6B8F71' }} className="flex-shrink-0" />
-            : <div className={`w-2.5 h-2.5 rounded-full ${color.dot} flex-shrink-0`} />
-          }
-          <span
-            className={`text-sm font-medium ${completed ? 'line-through' : 'text-zinc-700 dark:text-zinc-200'}`}
-            style={completed ? { color: '#6B8F71' } : undefined}
-          >
-            {block.subjectName}
-          </span>
+      <div className="flex items-center justify-between px-3 py-2.5">
+        <div className="flex items-center gap-2 min-w-0 flex-1">
+          <CheckCircle size={14} style={{ color: '#6B8F71' }} className="flex-shrink-0" />
+          <span className="text-sm font-medium line-through" style={{ color: '#6B8F71' }}>{block.subjectName}</span>
         </div>
-        <span
-          className="text-[10px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0 ml-2"
-          style={{ backgroundColor: 'rgba(0,0,0,0.04)', color: '#9A9590' }}
-        >
-          {typeConfig.label}
+        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full" style={{ backgroundColor: 'rgba(107,143,113,0.12)', color: '#6B8F71' }}>{typeConfig.label}</span>
+      </div>
+    </div>
+  ) : (
+    <div className="rounded-xl overflow-hidden" style={{ border: `1px solid ${hex}20`, borderRadius: 12 }}>
+      {/* Coloured header strip */}
+      <div className="flex items-center justify-between px-3 py-2" style={{ backgroundColor: hex }}>
+        <span className="text-[13px] font-bold text-white truncate">{block.subjectName}</span>
+        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0 ml-2" style={{ backgroundColor: 'rgba(255,255,255,0.2)', color: '#fff' }}>
+          <span className="flex items-center gap-1"><TypeIcon size={10} />{typeConfig.label}</span>
         </span>
       </div>
-
-      {/* Row 2: Duration + Study Now button */}
-      <div className="flex items-center justify-between ml-5">
-        <span className="text-xs text-zinc-400 dark:text-zinc-500">{block.durationMinutes} min</span>
-        {isToday && !completed && onStudyNow && (
-          <button
-            onClick={(e) => { e.stopPropagation(); onStudyNow(); }}
-            className="flex items-center gap-1 text-xs font-semibold px-3 py-1 rounded-lg transition-colors"
-            style={{ backgroundColor: '#2A7D6F', color: '#fff' }}
-          >
-            Study Now <ArrowRight size={12} />
-          </button>
-        )}
+      {/* Details row */}
+      <div className="flex items-center justify-between px-3 py-2" style={{ backgroundColor: `${hex}08` }}>
+        <span className="text-xs" style={{ color: '#78716C' }}>{block.durationMinutes} min</span>
+        <div className="flex items-center gap-2">
+          {strategyHint && (
+            <span className="text-[10px]" style={{ color: '#A8A29E' }}>Try: {strategyHint.label}</span>
+          )}
+          {isToday && onStudyNow && (
+            <button
+              onClick={(e) => { e.stopPropagation(); onStudyNow(); }}
+              className="flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-lg"
+              style={{ backgroundColor: hex, color: '#fff' }}
+            >
+              Study <ArrowRight size={10} />
+            </button>
+          )}
+        </div>
       </div>
-
-      {/* Row 3: Suggested topics */}
-      {block.suggestedTopics && block.suggestedTopics.length > 0 && !completed && !skipped && (
-        <p className="text-[11px] text-zinc-400 dark:text-zinc-500 ml-5 mt-1.5">
+      {block.suggestedTopics && block.suggestedTopics.length > 0 && (
+        <p className="text-[10px] px-3 py-1.5" style={{ color: '#A8A29E', backgroundColor: `${hex}05` }}>
           Focus: {block.suggestedTopics.join(', ')}
-        </p>
-      )}
-
-      {/* Strategy hint */}
-      {strategyHint && !completed && !skipped && (
-        <p className="text-[11px] text-zinc-400 dark:text-zinc-500 ml-5 mt-0.5">
-          Try: {strategyHint.label} (+{strategyHint.avgGain})
         </p>
       )}
     </div>
@@ -242,7 +252,7 @@ const PRIORITY_BAR_INLINE: Record<string, React.CSSProperties> = {
 
 const PRIORITY_BADGE_INLINE: Record<string, React.CSSProperties> = {
   High: { backgroundColor: '#FDF3E7', color: '#C4873B' },
-  Medium: { backgroundColor: '#F3F2F0', color: '#9A9590' },
+  Medium: { backgroundColor: '#EDF5F3', color: '#2A7D6F' },
   Low: { backgroundColor: '#F3F2F0', color: '#9A9590' },
 };
 
@@ -259,7 +269,7 @@ const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> =
       <div className="flex-1 h-3 rounded-full overflow-hidden" style={{ backgroundColor: '#EDEAE6' }}>
         <motion.div
           className="h-full rounded-full"
-          style={PRIORITY_BAR_INLINE[alloc.priorityLabel]}
+          style={{ backgroundColor: getSubjectHexColor(alloc.subjectName) }}
           initial={{ width: 0 }}
           animate={{ width: `${barWidth}%` }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
@@ -616,22 +626,20 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
               onClick={() => setSelectedDay(i)}
               className={`flex-1 min-w-0 py-2 px-1 rounded-lg text-center transition-all ${
                 isActive
-                  ? 'bg-white dark:bg-zinc-800 shadow-sm'
+                  ? 'shadow-sm'
                   : ''
               }`}
-              style={isActive ? { borderRadius: 10 } : undefined}
+              style={isActive ? { backgroundColor: '#1C1917', borderRadius: 12 } : undefined}
             >
               <span
                 className={`block text-xs font-bold ${
-                  isActive && isTodayTab
+                  isActive
                     ? ''
-                    : isActive
-                      ? 'text-zinc-800 dark:text-zinc-200'
-                      : isDayRest
-                        ? 'text-zinc-400 dark:text-zinc-500'
-                        : 'text-zinc-500 dark:text-zinc-400'
+                    : isDayRest
+                      ? 'text-zinc-400 dark:text-zinc-500'
+                      : 'text-zinc-500 dark:text-zinc-400'
                 }`}
-                style={isActive && isTodayTab ? { color: '#2A7D6F' } : undefined}
+                style={isActive ? { color: '#fff', fontWeight: 700 } : undefined}
               >
                 <span className="relative inline-block">
                   {day}
@@ -640,7 +648,10 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                   )}
                 </span>
               </span>
-              <span className={`block text-[10px] mt-0.5 ${isDayRest ? 'text-zinc-400 dark:text-zinc-500 italic' : 'text-zinc-400 dark:text-zinc-500'}`}>
+              <span
+                className={`block text-[10px] mt-0.5 ${isActive ? '' : isDayRest ? 'text-zinc-400 dark:text-zinc-500 italic' : 'text-zinc-400 dark:text-zinc-500'}`}
+                style={isActive ? { color: 'rgba(255,255,255,0.7)' } : undefined}
+              >
                 {isDayRest ? 'rest' : dayBlockCount}
               </span>
             </button>
@@ -851,27 +862,21 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                           <button
                             key={blockId}
                             onClick={() => { setViewMode('day'); setSelectedDay(i); }}
-                            className="w-full text-left p-2 rounded-lg transition-all hover:shadow-sm"
+                            className="w-full text-left rounded-lg transition-all hover:opacity-90 overflow-hidden"
                             style={{
-                              backgroundColor: isCompleted ? 'rgba(107,143,113,0.08)' : '#FAF7F4',
-                              border: `0.5px solid ${isCompleted ? 'rgba(107,143,113,0.2)' : 'rgba(0,0,0,0.07)'}`,
-                              borderRadius: 10,
-                              opacity: isCompleted ? 0.7 : 1,
+                              backgroundColor: isCompleted ? 'rgba(107,143,113,0.1)' : getSubjectHexColor(block.subjectName),
+                              borderRadius: 8,
+                              opacity: isCompleted ? 0.6 : 1,
                             }}
                           >
-                            <div className="flex items-center gap-1.5 mb-0.5">
-                              {isCompleted ? (
-                                <CheckCircle size={10} style={{ color: '#6B8F71' }} className="flex-shrink-0" />
-                              ) : (
-                                <div className={`w-2 h-2 rounded-full flex-shrink-0 ${subjectColor.dot}`} />
-                              )}
-                              <span className={`text-[11px] font-semibold truncate ${isCompleted ? 'line-through' : 'text-zinc-700 dark:text-zinc-300'}`} style={isCompleted ? { color: '#6B8F71' } : undefined}>
+                            <div className="px-2 py-1.5">
+                              <span className={`text-[11px] font-bold truncate block ${isCompleted ? 'line-through' : ''}`} style={{ color: isCompleted ? '#6B8F71' : '#fff' }}>
                                 {block.subjectName}
                               </span>
+                              <span className="text-[9px] block" style={{ color: isCompleted ? '#6B8F71' : 'rgba(255,255,255,0.7)' }}>
+                                {SESSION_TYPE_CONFIG[block.sessionType].label}
+                              </span>
                             </div>
-                            <span className="text-[9px] ml-3.5" style={{ color: '#9A9590' }}>
-                              {SESSION_TYPE_CONFIG[block.sessionType].label}
-                            </span>
                           </button>
                         );
                       })}
@@ -970,11 +975,11 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                           </span>
                         </div>
 
-                        {/* Score visualisation bar */}
+                        {/* Score visualisation bar — uses subject colour */}
                         <div className="h-1.5 rounded-full overflow-hidden mb-2.5" style={{ backgroundColor: '#EDEAE6' }}>
                           <motion.div
                             className="h-full rounded-full"
-                            style={{ backgroundColor: '#2A7D6F' }}
+                            style={{ backgroundColor: getSubjectHexColor(p.subjectName) }}
                             initial={{ width: 0 }}
                             animate={{ width: `${barPct}%` }}
                             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
@@ -1051,12 +1056,12 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                       <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
                         If you hit your target grade in every subject, your <span className="font-bold">best 6</span> will total <span className="font-bold" style={{ color: '#2A7D6F' }}>{projectedTotal} points</span>. Only your top 6 subjects count for CAO.
                       </p>
-                      <div className="mt-3 space-y-1">
+                      <div className="mt-3 space-y-0">
                         {best6.map((s, i) => (
-                          <div key={s.subjectName} className="flex items-center justify-between text-xs py-1" style={{ borderBottom: i < best6.length - 1 ? '0.5px solid rgba(0,0,0,0.05)' : 'none' }}>
+                          <div key={s.subjectName} className="flex items-center justify-between text-xs py-2 px-1" style={{ borderBottom: i < best6.length - 1 ? '0.5px solid rgba(0,0,0,0.05)' : 'none' }}>
                             <div className="flex items-center gap-2">
-                              <span className="text-[10px] font-bold w-3" style={{ color: '#6B8F71' }}>{i + 1}.</span>
-                              <div className={`w-2 h-2 rounded-full ${getSubjectColor(s.subjectName).dot}`} />
+                              <span className="text-[10px] font-bold w-3" style={{ color: '#9A9590' }}>{i + 1}.</span>
+                              <div className={`w-2.5 h-2.5 rounded-full ${getSubjectColor(s.subjectName).dot}`} />
                               <span className="font-semibold text-zinc-700 dark:text-zinc-300">{s.subjectName}</span>
                               {s.isMaths && <span className="text-[9px] font-bold" style={{ color: '#2A7D6F' }}>+25</span>}
                             </div>
@@ -1071,34 +1076,40 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
                     {/* Deprioritise suggestion */}
                     {deprioritiseCandidates.length > 0 && (
-                      <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(196,135,59,0.06)', border: '0.5px solid rgba(196,135,59,0.2)', borderRadius: 12 }}>
-                        <div className="flex items-start gap-2 mb-2">
-                          <AlertTriangle size={14} style={{ color: '#C4873B' }} className="flex-shrink-0 mt-0.5" />
-                          <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: '#C4873B' }}>Subjects Outside Your Best 6</p>
+                      <div className="rounded-2xl overflow-hidden" style={{ backgroundColor: '#F59E0B', boxShadow: '0 4px 16px rgba(245,158,11,0.15)' }}>
+                        {/* Amber header */}
+                        <div className="relative px-5 pt-5 pb-4">
+                          {/* Decorative blob */}
+                          <div className="absolute pointer-events-none" style={{ top: -20, right: -15, width: 80, height: 80, borderRadius: '50%', background: 'rgba(255,255,255,0.1)' }} />
+                          <div className="relative z-10">
+                            <div className="flex items-center gap-2 mb-2">
+                              <AlertTriangle size={16} style={{ color: 'rgba(0,0,0,0.5)' }} />
+                              <p className="text-[11px] font-bold uppercase tracking-[0.1em]" style={{ color: 'rgba(0,0,0,0.5)' }}>Subjects Outside Your Best 6</p>
+                            </div>
+                            <p className="text-[13px] leading-relaxed" style={{ color: 'rgba(0,0,0,0.7)' }}>
+                              Based on your target grades, <span className="font-bold" style={{ color: 'rgba(0,0,0,0.85)' }}>{deprioritiseCandidates.map(s => s.subjectName).join(' and ')}</span> {deprioritiseCandidates.length === 1 ? 'falls' : 'fall'} outside your top 6.
+                            </p>
+                          </div>
                         </div>
-                        <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed mb-3">
-                          Based on your target grades, <span className="font-bold">{deprioritiseCandidates.map(s => s.subjectName).join(' and ')}</span> {deprioritiseCandidates.length === 1 ? 'falls' : 'fall'} outside your top 6. Since only your best 6 count for CAO, you could consider focusing less time here and more on your counting subjects.
-                        </p>
 
-                        <div className="space-y-1 mb-3">
-                          {deprioritiseCandidates.map(s => (
-                            <div key={s.subjectName} className="flex items-center justify-between text-xs p-2 rounded-lg" style={{ backgroundColor: 'rgba(196,135,59,0.06)' }}>
+                        {/* Subject rows on white */}
+                        <div className="bg-white mx-3 rounded-xl mb-3">
+                          {deprioritiseCandidates.map((s, si) => (
+                            <div key={s.subjectName} className="flex items-center justify-between text-xs px-3 py-2.5" style={{ borderBottom: si < deprioritiseCandidates.length - 1 ? '0.5px solid rgba(0,0,0,0.06)' : 'none' }}>
                               <div className="flex items-center gap-2">
-                                <div className={`w-2 h-2 rounded-full ${getSubjectColor(s.subjectName).dot}`} />
-                                <span className="font-semibold text-zinc-700 dark:text-zinc-300">{s.subjectName}</span>
+                                <div className={`w-2.5 h-2.5 rounded-full ${getSubjectColor(s.subjectName).dot}`} />
+                                <span className="font-semibold" style={{ color: '#1C1917' }}>{s.subjectName}</span>
                               </div>
-                              <span className="font-mono font-bold" style={{ color: '#C4873B' }}>{s.targetGrade} — {s.targetPoints} pts</span>
+                              <span className="font-mono font-bold" style={{ color: '#92400E' }}>{s.targetGrade} — {s.targetPoints} pts</span>
                             </div>
                           ))}
                         </div>
 
-                        <div className="p-3 rounded-lg" style={{ backgroundColor: 'rgba(196,135,59,0.06)', border: '0.5px solid rgba(196,135,59,0.15)', borderRadius: 10 }}>
-                          <div className="flex items-start gap-2">
-                            <AlertTriangle size={12} style={{ color: '#C4873B' }} className="flex-shrink-0 mt-0.5" />
-                            <p className="text-[10px] leading-relaxed" style={{ color: '#C4873B' }}>
-                              <span className="font-bold">High-risk strategy.</span> Only deprioritise a subject if you're confident you're significantly stronger in at least 6 others. Unexpected results on exam day can mean a "safe" subject becomes the one you need. The timetable still allocates minimum sessions to every subject for safety.
-                            </p>
-                          </div>
+                        {/* Warning callout on white */}
+                        <div className="bg-white mx-3 mb-3 px-3 py-2.5 rounded-xl">
+                          <p className="text-[10px] leading-relaxed" style={{ color: '#92400E' }}>
+                            <span className="font-bold">High-risk strategy.</span> Only deprioritise a subject if you're confident you're significantly stronger in at least 6 others. The timetable still allocates minimum sessions to every subject for safety.
+                          </p>
                         </div>
                       </div>
                     )}

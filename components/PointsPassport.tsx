@@ -221,17 +221,17 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
       <div className="grid grid-cols-3 gap-3">
         <div className="rounded-xl p-4" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)' }}>
           <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#9A9590' }}>Current</p>
-          <span className="font-serif text-3xl font-bold" style={{ color: '#2A7D6F' }}>{currentPoints}</span>
+          <span className="font-apercu text-3xl font-black" style={{ color: '#2A7D6F' }}>{currentPoints}</span>
           <span className="text-sm ml-1" style={{ color: '#9A9590' }}>/625</span>
         </div>
         <div className="rounded-xl p-4" style={{ backgroundColor: '#EDF2EE', border: '0.5px solid rgba(0,0,0,0.07)' }}>
           <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#6B8F71' }}>Target</p>
-          <span className="font-serif text-3xl font-bold" style={{ color: '#4A6B4F' }}>{targetPoints}</span>
+          <span className="font-apercu text-3xl font-black" style={{ color: '#4A6B4F' }}>{targetPoints}</span>
           <span className="text-sm ml-1" style={{ color: '#6B8F71' }}>/625</span>
         </div>
         <div className="rounded-xl p-4" style={{ backgroundColor: '#FDF3E7', border: '0.5px solid rgba(0,0,0,0.07)' }}>
           <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#C4873B' }}>Gap</p>
-          <span className="font-serif text-3xl font-bold" style={{ color: '#8B5E2A' }}>
+          <span className="font-apercu text-3xl font-black" style={{ color: '#8B5E2A' }}>
             {targetPoints - currentPoints > 0 ? '+' : ''}{targetPoints - currentPoints}
           </span>
           <span className="text-sm ml-1" style={{ color: '#C4873B' }}>pts</span>

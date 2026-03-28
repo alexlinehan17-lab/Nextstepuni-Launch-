@@ -13,8 +13,10 @@ import {
 import { getAvatarUrl } from '../components/Auth';
 import { CourseData, BentoModuleTile } from './Library';
 import { UserSettings } from '../types';
+import { type AthleteRank, ATHLETE_RANKS } from '../gamificationConfig';
 import { computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, computeWeeksUntilExam } from './timetableAlgorithm';
 import { toDateKey } from './subjectData';
+import { getSubjectHex } from '../studySessionData';
 
 // FIX: Cast motion components to any to bypass broken type definitions
 const MotionDiv = motion.div as any;
@@ -63,6 +65,7 @@ interface KnowledgeTreeProps {
   questState?: { quest: { title: string; description: string; rewardPoints: number; target: number }; current: number; isCompleted: boolean; isClaimed: boolean; dayNumber: number; isOnboarding: boolean } | null;
   onClaimQuestReward?: () => void;
   onRecommendationAction?: (action: string) => void;
+  onDevRankUp?: (rank: AthleteRank) => void;
 }
 
 const ActivityRing = ({
@@ -210,7 +213,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
   );
 };
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onDevRankUp }) => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [tagFilterOpen, setTagFilterOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -490,19 +493,20 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
       {/* Main content */}
       <div className={`flex-1 flex flex-col items-center pt-8 md:pt-16 pb-40 md:pb-32 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]'}`}>
       <div className="w-full max-w-7xl px-6">
+        {/* ── Greeting — simple typography on cream ── */}
         <MotionDiv
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="mb-6"
         >
-          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[var(--accent-hex)] mb-3">
+          <p className="text-[12px] font-semibold uppercase tracking-[0.2em] mb-3" style={{ color: '#2A7D6F' }}>
             Learning Lab
           </p>
-          <h1 className="font-serif text-4xl md:text-5xl text-zinc-900 dark:text-white tracking-tight leading-tight font-semibold">
-            {(() => { const h = new Date().getHours(); const firstName = userName?.split(' ')[0] || ''; const name = firstName ? ', ' + firstName : ''; return h < 12 ? `Good morning${name}.` : h < 18 ? `Good afternoon${name}.` : `Good evening${name}.`; })()}
+          <h1 className="font-serif tracking-tight leading-tight font-bold" style={{ fontSize: 'clamp(28px, 5vw, 36px)', color: '#1A1A1A' }}>
+            {(() => { const h = new Date().getHours(); const firstName = userName?.split(' ')[0] || ''; const name = firstName ? `, ${firstName}` : ''; return h < 12 ? `Good morning${name}.` : h < 18 ? `Good afternoon${name}.` : `Good evening${name}.`; })()}
           </h1>
-          <p className="mt-2 text-zinc-400 dark:text-zinc-500 text-sm">
+          <p className="mt-2" style={{ fontSize: 15, color: '#8C8278' }}>
             {(() => {
               const h = new Date().getHours();
               const completed = allCourses.filter(c => { const p = userProgress[c.id]; return p && p.unlockedSection >= c.sectionsCount; }).length;
@@ -527,81 +531,91 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
             transition={{ duration: 0.4, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="mb-6"
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
-              {/* Today's Plan */}
-              <div
-                className="px-4 py-3 dark:!bg-[rgba(255,255,255,0.04)] dark:!border-[rgba(255,255,255,0.08)] flex items-center justify-between gap-4"
-                style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
-              >
-                <div className="flex-1 min-w-0">
-                  <p className="text-[10px] font-bold uppercase tracking-widest mb-1.5 dark:!text-zinc-400" style={{ color: '#9A9590' }}>
-                    Today
-                  </p>
-                  {todayBlocks.length === 0 ? (
-                    <p className="text-xs font-medium dark:!text-zinc-400" style={{ color: '#9A9590' }}>No blocks scheduled</p>
-                  ) : todayBlocks.every((_b, i) => todayCompletions.includes(`block-${i}`)) ? (
-                    <p className="text-xs font-semibold" style={{ color: '#6B8F71' }}>All done for today</p>
-                  ) : (
-                    <div className="flex flex-col gap-1">
-                      {todayBlocks.slice(0, 3).map((block, i) => (
-                        <div key={i} className="flex items-center gap-2 text-xs">
-                          <span className="w-1.5 h-1.5 rounded-full bg-zinc-400 dark:bg-zinc-500 shrink-0" />
-                          <span className="font-medium text-zinc-700 dark:text-zinc-300 truncate">{block.subjectName}</span>
-                          <span className="text-zinc-300 dark:text-zinc-600">·</span>
-                          <span className="dark:!text-zinc-500" style={{ color: '#9A9590' }}>{sessionTypeLabel(block.sessionType)} · {block.durationMinutes}m</span>
-                        </div>
-                      ))}
-                      {todayBlocks.length > 3 && (
-                        <p className="text-[10px] dark:!text-zinc-500" style={{ color: '#9A9590' }}>+{todayBlocks.length - 3} more</p>
-                      )}
-                    </div>
-                  )}
-                </div>
-                {onGoToStudy && todayBlocks.length > 0 && !todayBlocks.every((_b, i) => todayCompletions.includes(`block-${i}`)) && (
-                  <button
-                    onClick={onGoToStudy}
-                    className="flex items-center gap-1 text-[11px] font-semibold transition-colors hover:opacity-80 dark:!text-[#4DB8A4] shrink-0"
-                    style={{ color: '#2A7D6F' }}
-                  >
-                    Study Now <ArrowRight size={12} />
-                  </button>
+            {/* ── Warm colour banner — day's key stats ── */}
+            <div
+              className="rounded-2xl px-5 py-4 mb-4 flex items-center justify-between flex-wrap gap-3"
+              style={{ backgroundColor: '#2A7D6F', boxShadow: '0 4px 16px rgba(42,125,111,0.15)' }}
+            >
+              <div className="flex items-center gap-4">
+                <span className="text-sm font-medium text-white">
+                  {todayBlocks.length > 0
+                    ? `${todayBlocks.length} session${todayBlocks.length !== 1 ? 's' : ''} today`
+                    : 'No sessions today'}
+                </span>
+                <span className="w-1 h-1 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.3)' }} />
+                <span className="text-sm text-white" style={{ opacity: 0.7 }}>{pointsBalance ?? 0} pts</span>
+                {streak && streak.currentStreak > 0 && (
+                  <>
+                    <span className="w-1 h-1 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.3)' }} />
+                    <span className="text-sm font-medium text-white">{streak.currentStreak}-day streak</span>
+                  </>
+                )}
+              </div>
+              {onGoToStudy && todayBlocks.length > 0 && !todayBlocks.every((_b, i) => todayCompletions.includes(`block-${i}`)) && (
+                <button
+                  onClick={onGoToStudy}
+                  className="flex items-center gap-1 text-xs font-bold px-4 py-2 rounded-lg transition-all hover:opacity-90"
+                  style={{ backgroundColor: 'rgba(255,255,255,0.2)', color: '#fff' }}
+                >
+                  Study Now <ArrowRight size={12} />
+                </button>
+              )}
+            </div>
+
+            {/* ── White Mercury cards ── */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {/* TODAY */}
+              <div className="px-4 py-3" style={{ backgroundColor: '#FEFDFB', border: '1px solid #EDEBE8', borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
+                <p className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: '#A8A29E' }}>Today</p>
+                {todayBlocks.length === 0 ? (
+                  <p className="text-xs" style={{ color: '#A8A29E' }}>No blocks scheduled</p>
+                ) : todayBlocks.every((_b, i) => todayCompletions.includes(`block-${i}`)) ? (
+                  <p className="text-xs font-bold" style={{ color: '#276749' }}>All done for today</p>
+                ) : (
+                  <div className="flex flex-col gap-1.5">
+                    {todayBlocks.slice(0, 3).map((block, i) => (
+                      <div key={i} className="flex items-center gap-2 text-xs">
+                        <span className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: getSubjectHex(block.subjectName) }} />
+                        <span className="font-semibold truncate" style={{ color: '#1C1917' }}>{block.subjectName}</span>
+                        <span className="text-[10px] px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F0EDE8', color: '#78716C' }}>{sessionTypeLabel(block.sessionType)}</span>
+                        <span className="text-[10px]" style={{ color: '#A8A29E' }}>{block.durationMinutes}m</span>
+                      </div>
+                    ))}
+                    {todayBlocks.length > 3 && (
+                      <p className="text-[10px]" style={{ color: '#A8A29E' }}>+{todayBlocks.length - 3} more</p>
+                    )}
+                  </div>
                 )}
               </div>
 
-              {/* Progress */}
-              <div
-                className="p-4 dark:!bg-[rgba(255,255,255,0.04)] dark:!border-[rgba(255,255,255,0.08)]"
-                style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
-              >
-                <p className="text-[10px] font-bold uppercase tracking-widest mb-2 dark:!text-zinc-400" style={{ color: '#9A9590' }}>
-                  Progress
-                </p>
-                <div className="flex items-center gap-4 text-xs">
-                  <span className="font-semibold dark:!text-[#4DB8A4]" style={{ color: '#2A7D6F' }}>
-                    {streak && streak.currentStreak > 0 ? `${streak.currentStreak}-day streak` : 'No streak'}
-                  </span>
-                  <span className="text-zinc-300 dark:text-zinc-600">·</span>
-                  <span className="font-medium text-zinc-600 dark:text-zinc-300">{pointsBalance ?? 0} pts</span>
-                  <span className="text-zinc-300 dark:text-zinc-600">·</span>
-                  <span className="font-medium text-zinc-600 dark:text-zinc-300">{completedCount}/{totalCount} modules</span>
+              {/* PROGRESS */}
+              <div className="px-4 py-3" style={{ backgroundColor: '#FEFDFB', border: '1px solid #EDEBE8', borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
+                <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#A8A29E' }}>Progress</p>
+                <p className="text-2xl font-apercu font-black" style={{ color: '#1A1A1A' }}>{pointsBalance ?? 0} pts</p>
+                <div className="flex items-center gap-3 text-xs mt-1 mb-2">
+                  {streak && streak.currentStreak > 0 ? (
+                    <span className="font-bold" style={{ color: '#2A7D6F' }}>{streak.currentStreak}-day streak</span>
+                  ) : (
+                    <span style={{ color: '#A8A29E' }}>Start your streak today</span>
+                  )}
+                  <span style={{ color: '#EDEBE8' }}>·</span>
+                  <span className="font-medium" style={{ color: '#78716C' }}>{completedCount}/{totalCount} modules</span>
+                </div>
+                <div className="h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: '#EDEBE8' }}>
+                  <div className="h-full rounded-full" style={{ backgroundColor: '#2A7D6F', width: `${totalCount > 0 ? (completedCount / totalCount) * 100 : 0}%`, transition: 'width 0.5s ease' }} />
                 </div>
                 {northStar && (
-                  <p className="mt-2 text-[11px] italic text-zinc-400 dark:text-zinc-500 leading-relaxed truncate">
-                    &ldquo;{northStar.statement}&rdquo;
-                  </p>
+                  <p className="mt-2 text-[11px] italic leading-relaxed truncate" style={{ color: '#A8A29E' }}>&ldquo;{northStar.statement}&rdquo;</p>
                 )}
               </div>
 
               {/* Weekly streak tracker */}
               {streak && streak.currentStreak > 0 && (
                 <div className="md:col-span-2">
-                  <div
-                    className="px-4 py-3 dark:!bg-[rgba(255,255,255,0.04)] dark:!border-[rgba(255,255,255,0.08)]"
-                    style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
-                  >
+                  <div className="px-4 py-3" style={{ backgroundColor: '#FEFDFB', border: '1px solid #EDEBE8', borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
                     <div className="flex items-center justify-between mb-3">
-                      <p className="text-[10px] font-bold uppercase tracking-widest dark:!text-zinc-400" style={{ color: '#9A9590' }}>This Week</p>
-                      <p className="text-xs font-semibold dark:!text-[#4DB8A4]" style={{ color: '#2A7D6F' }}>{streak.currentStreak} day streak</p>
+                      <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: '#A8A29E' }}>This Week</p>
+                      <p className="text-xs font-bold" style={{ color: '#2A7D6F' }}>{streak.currentStreak} day streak</p>
                     </div>
                     <div className="flex justify-between">
                       {['M','T','W','T','F','S','S'].map((day, i) => {
@@ -612,27 +626,12 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                         const dateKey = toDateKey(dayDate);
                         const isActive = (timetableCompletions?.[dateKey]?.length ?? 0) > 0;
                         const isToday = i === currentDayIdx;
-
                         return (
                           <div key={i} className="flex flex-col items-center gap-1.5">
-                            <div
-                              className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all"
-                              style={
-                                isActive
-                                  ? { backgroundColor: '#2A7D6F', color: 'white' }
-                                  : isToday
-                                  ? { border: '2px solid #2A7D6F', color: '#2A7D6F', backgroundColor: 'transparent' }
-                                  : { backgroundColor: '#f0efeb', color: '#9A9590' }
-                              }
-                            >
+                            <div className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold" style={isActive ? { backgroundColor: '#2A7D6F', color: 'white' } : isToday ? { border: '2px solid #2A7D6F', color: '#2A7D6F' } : { backgroundColor: '#f0efeb', color: '#9A9590' }}>
                               {isActive ? '\u2713' : ''}
                             </div>
-                            <span
-                              className={`text-[10px] font-medium ${isToday ? 'font-bold' : ''}`}
-                              style={{ color: isActive ? '#2A7D6F' : '#9A9590' }}
-                            >
-                              {day}
-                            </span>
+                            <span className="text-[10px] font-medium" style={{ color: isActive ? '#2A7D6F' : '#9A9590', fontWeight: isToday ? 700 : 500 }}>{day}</span>
                           </div>
                         );
                       })}
@@ -641,62 +640,43 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                 </div>
               )}
 
-              {/* Recommendation card */}
+              {/* RECOMMENDED */}
               {smartRecommendation && (
                 <button
                   onClick={() => onRecommendationAction?.(smartRecommendation.category)}
-                  className="px-4 py-3 text-left dark:!bg-[rgba(255,255,255,0.04)] dark:!border-[rgba(255,255,255,0.08)] hover:shadow-sm transition-all"
-                  style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
+                  className="px-4 py-3 text-left hover:shadow-md transition-all"
+                  style={{ backgroundColor: '#FEFDFB', border: '1px solid #EDEBE8', borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}
                 >
-                  <p className="text-[10px] font-bold uppercase tracking-widest mb-1 dark:!text-zinc-400" style={{ color: '#9A9590' }}>
-                    Recommended
-                  </p>
-                  <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-200">{smartRecommendation.title}</p>
-                  <p className="text-[11px] mt-0.5 dark:!text-zinc-500" style={{ color: '#9A9590' }}>{smartRecommendation.description}</p>
+                  <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#A8A29E' }}>Recommended</p>
+                  <p className="text-xs font-semibold" style={{ color: '#1C1917' }}>{smartRecommendation.title}</p>
+                  <p className="text-[11px] mt-0.5" style={{ color: '#A8A29E' }}>{smartRecommendation.description}</p>
                 </button>
               )}
 
-              {/* Quest card */}
+              {/* QUEST */}
               {questState && (
-                <div
-                  className="px-4 py-3 dark:!bg-[rgba(255,255,255,0.04)] dark:!border-[rgba(255,255,255,0.08)]"
-                  style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
-                >
+                <div className="px-4 py-3" style={{ backgroundColor: '#FEFDFB', border: '1px solid #EDEBE8', borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
                   <div className="flex items-center justify-between mb-1">
-                    <p className="text-[10px] font-bold uppercase tracking-widest dark:!text-zinc-400" style={{ color: '#9A9590' }}>
+                    <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: '#A8A29E' }}>
                       {questState.isOnboarding ? `Day ${questState.dayNumber} Quest` : 'Daily Quest'}
                     </p>
-                    <span className="text-[10px] font-bold dark:!text-[#4DB8A4]" style={{ color: '#2A7D6F' }}>{questState.quest.rewardPoints} pts</span>
+                    <span className="text-[10px] font-bold" style={{ color: '#2A7D6F' }}>{questState.quest.rewardPoints} pts</span>
                   </div>
-                  <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-200">{questState.quest.title}</p>
-                  <p className="text-[11px] mt-0.5 dark:!text-zinc-500" style={{ color: '#9A9590' }}>{questState.quest.description}</p>
-                  {/* Progress bar */}
+                  <p className="text-xs font-semibold" style={{ color: '#1C1917' }}>{questState.quest.title}</p>
+                  <p className="text-[11px] mt-0.5" style={{ color: '#A8A29E' }}>{questState.quest.description}</p>
                   <div className="mt-2 flex items-center gap-2">
-                    <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: 'rgba(0,0,0,0.06)' }}>
-                      <div
-                        className="h-full rounded-full transition-all duration-500"
-                        style={{
-                          width: `${Math.min(100, (questState.current / questState.quest.target) * 100)}%`,
-                          backgroundColor: questState.isCompleted ? '#6B8F71' : '#2A7D6F',
-                        }}
-                      />
+                    <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: '#EDEBE8' }}>
+                      <div className="h-full rounded-full transition-all duration-500" style={{ width: `${Math.min(100, (questState.current / questState.quest.target) * 100)}%`, backgroundColor: '#2A7D6F' }} />
                     </div>
-                    <span className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 tabular-nums">
-                      {questState.current}/{questState.quest.target}
-                    </span>
+                    <span className="text-[10px] font-bold tabular-nums" style={{ color: '#A8A29E' }}>{questState.current}/{questState.quest.target}</span>
                   </div>
-                  {/* Claim button */}
                   {questState.isCompleted && !questState.isClaimed && onClaimQuestReward && (
-                    <button
-                      onClick={onClaimQuestReward}
-                      className="mt-2 w-full py-1.5 rounded-lg text-xs font-semibold text-white transition-colors"
-                      style={{ backgroundColor: '#2A7D6F' }}
-                    >
+                    <button onClick={onClaimQuestReward} className="mt-2 w-full py-1.5 rounded-lg text-xs font-bold text-white" style={{ backgroundColor: '#2A7D6F' }}>
                       Claim {questState.quest.rewardPoints} pts
                     </button>
                   )}
                   {questState.isClaimed && (
-                    <p className="mt-2 text-[10px] font-semibold" style={{ color: '#6B8F71' }}>Claimed</p>
+                    <p className="mt-2 text-[10px] font-bold" style={{ color: '#2A7D6F' }}>Claimed</p>
                   )}
                 </div>
               )}
@@ -854,6 +834,22 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
           </MotionDiv>
         )}
         </AnimatePresence>
+
+      {/* DEV: Rank Up Tester */}
+      {onDevRankUp && (
+        <div className="flex flex-wrap justify-center gap-2 mt-8 mb-4">
+          {ATHLETE_RANKS.map(rank => (
+            <button
+              key={rank.id}
+              onClick={() => onDevRankUp(rank)}
+              className="px-3 py-1 rounded-full text-[9px] font-mono border transition-colors hover:opacity-80"
+              style={{ color: rank.colorHex, borderColor: rank.colorHex, backgroundColor: `${rank.colorHex}10` }}
+            >
+              {rank.title}
+            </button>
+          ))}
+        </div>
+      )}
 
       </div>
       </div>

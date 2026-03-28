@@ -293,69 +293,55 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
   };
 
   const daysLeft = getDaysUntil(examDate);
-  const blobs = STEP_BLOBS[step];
 
   // Split welcome heading for word-by-word animation
   const welcomeWords = `Welcome, ${userName}`.split(' ');
 
   return (
-    <div className="fixed inset-0 bg-zinc-50 dark:bg-zinc-950 flex flex-col z-[60]">
+    <div className="fixed inset-0 flex flex-col z-[60] overflow-hidden">
 
-      {/* ─── Animated background blobs (step-specific colors) ─── */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-        <motion.div
-          key={`blob-a-${step}`}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className={`absolute top-[15%] right-[10%] w-[500px] h-[500px] rounded-full ${blobs.a} blur-[100px]`}
-          style={{ animation: 'blob-drift-1 18s ease-in-out infinite' }}
-        />
-        <motion.div
-          key={`blob-b-${step}`}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className={`absolute bottom-[20%] left-[5%] w-[450px] h-[450px] rounded-full ${blobs.b} blur-[100px]`}
-          style={{ animation: 'blob-drift-2 22s ease-in-out infinite' }}
-        />
-        <motion.div
-          key={`blob-c-${step}`}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className={`absolute top-[40%] left-[30%] w-[400px] h-[400px] rounded-full ${blobs.c} blur-[120px]`}
-          style={{ animation: 'blob-drift-3 20s ease-in-out infinite' }}
-        />
+      {/* ─── Aurora mesh gradient background (Lovable-style, bolder) ─── */}
+      <div className="fixed inset-0 pointer-events-none" aria-hidden="true">
+        {/* Base warm cream — only top 15-20% */}
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, #FDF8F0 0%, #FDF8F0 12%, transparent 35%)' }} />
+        {/* Lavender/periwinkle wash — pushed up, covers 30-80% */}
+        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 140% 70% at 50% 55%, rgba(147,130,220,0.4) 0%, transparent 70%)' }} />
+        {/* Secondary lavender — upper mid */}
+        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 100% 50% at 40% 45%, rgba(160,145,230,0.25) 0%, transparent 65%)' }} />
+        {/* Strong pink/magenta bottom */}
+        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 120% 50% at 50% 95%, rgba(230,120,165,0.55) 0%, transparent 55%)' }} />
+        {/* Pink extending upward */}
+        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 80% 40% at 50% 80%, rgba(220,140,180,0.3) 0%, transparent 60%)' }} />
+        {/* Blue side washes — stronger */}
+        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 50% 60% at 0% 65%, rgba(130,155,230,0.3) 0%, transparent 65%)' }} />
+        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 50% 60% at 100% 65%, rgba(130,155,230,0.25) 0%, transparent 65%)' }} />
+        {/* Warm peach/coral accent bottom-right */}
+        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 50% 35% at 70% 90%, rgba(240,160,130,0.35) 0%, transparent 55%)' }} />
+        {/* Base fill behind everything — soft warm grey so gradient doesn't fade to white */}
+        <div className="absolute inset-0" style={{ backgroundColor: '#F0ECE6', zIndex: -1 }} />
       </div>
 
-      {/* Inject blob keyframes */}
-      <style>{`
-        @keyframes blob-drift-1 { 0%, 100% { transform: translate(0, 0) scale(1); } 33% { transform: translate(30px, -40px) scale(1.05); } 66% { transform: translate(-20px, 20px) scale(0.95); } }
-        @keyframes blob-drift-2 { 0%, 100% { transform: translate(0, 0) scale(1); } 33% { transform: translate(-25px, 35px) scale(1.08); } 66% { transform: translate(35px, -15px) scale(0.92); } }
-        @keyframes blob-drift-3 { 0%, 100% { transform: translate(0, 0) scale(1); } 33% { transform: translate(20px, 25px) scale(0.97); } 66% { transform: translate(-30px, -30px) scale(1.03); } }
-      `}</style>
-
-      {/* ─── Fixed Header: Progress + Skip ─── */}
-      <div className="shrink-0 flex items-center justify-between px-6 py-4 border-b border-zinc-200/50 dark:border-white/[0.06] relative z-10 bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-sm">
-        <div className="flex items-center gap-2">
-          {Array.from({ length: TOTAL_STEPS }, (_, i) => i + 1).map(s => (
-            <motion.div
-              key={s}
-              layout
-              className={`h-2 rounded-full ${
-                s === step ? 'w-8 bg-[var(--accent-hex)]' : s < step ? 'w-4 bg-[rgba(var(--accent),0.4)]' : 'w-4 bg-zinc-200 dark:bg-zinc-700'
-              }`}
-              transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-            />
-          ))}
+      {/* ─── Fixed Header: Progress bar + Skip ─── */}
+      <div className="shrink-0 relative z-10 px-6 pt-5 pb-3">
+        <div className="flex items-center justify-end mb-3">
+          <button
+            onClick={onSkip}
+            className="text-sm font-medium transition-colors"
+            style={{ color: '#A8A29E' }}
+          >
+            Skip for now
+          </button>
         </div>
-        <button
-          onClick={onSkip}
-          className="text-sm font-medium text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
-        >
-          Skip for now
-        </button>
+        <div className="max-w-md mx-auto">
+          <div className="w-full h-[5px] rounded-full overflow-hidden" style={{ backgroundColor: 'rgba(0,0,0,0.08)' }}>
+            <motion.div
+              className="h-full rounded-full"
+              style={{ backgroundColor: '#1A1A1A' }}
+              animate={{ width: `${(step / TOTAL_STEPS) * 100}%` }}
+              transition={{ duration: 0.4, ease: [0.25, 1, 0.5, 1] }}
+            />
+          </div>
+        </div>
       </div>
 
       {/* ─── Scrollable Content ─── */}
@@ -367,9 +353,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
             {step === 1 && (
               <MotionDiv key="step1" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <div className="flex items-center justify-center min-h-[60vh]">
-                  <div className="text-center w-full max-w-lg mx-auto p-10 rounded-3xl bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl border border-white/40 dark:border-white/[0.08] shadow-[0_8px_60px_rgba(0,0,0,0.06)] dark:shadow-[0_8px_60px_rgba(0,0,0,0.3)]">
+                  <div className="text-center w-full max-w-lg mx-auto">
                     {/* Word-by-word heading */}
-                    <h1 className="font-serif text-3xl sm:text-4xl font-semibold text-zinc-900 dark:text-white mb-5">
+                    <h1 className="font-serif text-3xl sm:text-4xl font-bold mb-5" style={{ color: '#1A1A1A' }}>
                       {welcomeWords.map((word, i) => (
                         <span key={i} className="inline-block overflow-hidden align-bottom pb-[0.1em] mb-[-0.1em]">
                           <MotionSpan
@@ -387,7 +373,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       initial={{ opacity: 0, y: 16 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-base text-zinc-500 dark:text-zinc-400 leading-relaxed max-w-md mx-auto mb-2"
+                      className="text-base leading-relaxed max-w-md mx-auto mb-2" style={{ color: '#78716C' }}
                     >
                       Let's set up your study profile so we can personalise your experience from day one.
                     </MotionP>
@@ -395,7 +381,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       initial={{ opacity: 0, y: 12 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-sm text-zinc-400 dark:text-zinc-500 mb-8"
+                      className="text-sm mb-8" style={{ color: '#A8A29E' }}
                     >
                       This takes about 2 minutes.
                     </MotionP>
@@ -413,9 +399,10 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                           initial={{ opacity: 0, scale: 0.9 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ duration: 0.4, delay: 0.9 + i * 0.08, ease: [0.16, 1, 0.3, 1] }}
-                          className="flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-full bg-white/80 dark:bg-white/[0.06] border border-zinc-200/60 dark:border-white/[0.08] text-xs font-medium text-zinc-500 dark:text-zinc-400"
+                          className="flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium"
+                          style={{ backgroundColor: 'rgba(255,255,255,0.85)', border: '1px solid rgba(0,0,0,0.06)', color: '#57534E' }}
                         >
-                          <chip.icon size={12} className="text-[var(--accent-hex)]" />
+                          <chip.icon size={12} style={{ color: '#2A7D6F' }} />
                           {chip.label}
                         </motion.div>
                       ))}
@@ -429,20 +416,22 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
             {step === 2 && (
               <MotionDiv key="step2" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <div className="flex items-center justify-center min-h-[60vh]">
-                  <div className="text-center w-full max-w-lg mx-auto p-10 rounded-3xl bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl border border-white/40 dark:border-white/[0.08] shadow-[0_8px_60px_rgba(0,0,0,0.06)] dark:shadow-[0_8px_60px_rgba(0,0,0,0.3)]">
+                  <div className="text-center w-full max-w-lg mx-auto">
                     <motion.div
                       initial={{ scale: 0.8, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-                      className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-indigo-100 dark:bg-indigo-900/40 flex items-center justify-center"
+                      className="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
+                      style={{ backgroundColor: 'rgba(42,125,111,0.1)' }}
                     >
-                      <BookOpen size={32} className="text-indigo-600 dark:text-indigo-400" />
+                      <BookOpen size={32} style={{ color: '#2A7D6F' }} />
                     </motion.div>
                     <motion.h2
                       initial={{ opacity: 0, y: 12 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                      className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1"
+                      className="font-serif text-2xl font-bold mb-1"
+                      style={{ color: '#1A1A1A' }}
                     >
                       What Year Are You In?
                     </motion.h2>
@@ -450,7 +439,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-sm text-zinc-500 dark:text-zinc-400 mb-8"
+                      className="text-sm mb-8"
+                      style={{ color: '#78716C' }}
                     >
                       This helps us show you the right events and deadlines for your year group.
                     </motion.p>
@@ -464,14 +454,15 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                         <button
                           key={yr}
                           onClick={() => setYearGroup(yr)}
-                          className={`w-36 py-6 rounded-2xl border-2 transition-all ${
-                            yearGroup === yr
-                              ? 'bg-indigo-50 dark:bg-indigo-900/30 border-indigo-400 dark:border-indigo-500 shadow-lg shadow-indigo-200/40 dark:shadow-indigo-900/30'
-                              : 'bg-white/80 dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500'
-                          }`}
+                          className="w-36 py-6 rounded-2xl transition-all"
+                          style={{
+                            backgroundColor: yearGroup === yr ? 'rgba(42,125,111,0.08)' : 'rgba(255,255,255,0.85)',
+                            border: yearGroup === yr ? '2px solid #2A7D6F' : '1px solid rgba(0,0,0,0.08)',
+                            boxShadow: yearGroup === yr ? '0 0 0 3px rgba(42,125,111,0.1)' : 'none',
+                          }}
                         >
-                          <p className={`text-3xl font-bold mb-1 ${yearGroup === yr ? 'text-indigo-600 dark:text-indigo-400' : 'text-zinc-700 dark:text-zinc-300'}`}>{yr}</p>
-                          <p className={`text-xs font-medium ${yearGroup === yr ? 'text-indigo-500 dark:text-indigo-400' : 'text-zinc-400 dark:text-zinc-500'}`}>Year</p>
+                          <p className="text-3xl font-bold mb-1" style={{ color: yearGroup === yr ? '#2A7D6F' : '#1A1A1A' }}>{yr}</p>
+                          <p className="text-xs font-medium" style={{ color: yearGroup === yr ? '#2A7D6F' : '#A8A29E' }}>Year</p>
                         </button>
                       ))}
                     </motion.div>
@@ -493,8 +484,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
             {/* Step 4: Select Subjects */}
             {step === 4 && (
               <MotionDiv key="step4" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
-                <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Select Your Subjects</h2>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
+                <h2 className="font-serif text-2xl font-bold text-center mb-1" style={{ color: '#1A1A1A' }}>Select Your Subjects</h2>
+                <p className="text-sm text-center mb-8" style={{ color: '#78716C' }}>
                   Tap to select your Leaving Cert subjects. <span className="font-semibold text-[var(--accent-hex)]">{selectedSubjects.size} selected</span>
                 </p>
                 <div className="space-y-6">
@@ -510,9 +501,12 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                             const selected = selectedSubjects.has(subj.name);
                             return (
                               <button key={subj.name} onClick={() => toggleSubject(subj.name)}
-                                className={`px-3.5 py-2 rounded-full text-xs font-semibold border transition-all ${
-                                  selected ? `${colors.selectedBg} ${colors.selectedBorder} ${colors.text}` : `${colors.bg} ${colors.border} text-zinc-500 dark:text-zinc-400`
-                                }`}
+                                className="px-3.5 py-2 rounded-full text-xs font-semibold transition-all"
+                                style={{
+                                  backgroundColor: selected ? 'rgba(42,125,111,0.08)' : 'rgba(255,255,255,0.85)',
+                                  border: selected ? '2px solid #2A7D6F' : '1px solid rgba(0,0,0,0.08)',
+                                  color: selected ? '#2A7D6F' : '#57534E',
+                                }}
                               >
                                 {selected && <Check size={12} className="inline mr-1 -mt-0.5" />}
                                 {subj.name}
@@ -530,8 +524,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
             {/* Step 5: Grade Configuration */}
             {step === 5 && (
               <MotionDiv key="step5" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
-                <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Set Your Grades</h2>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
+                <h2 className="font-serif text-2xl font-bold text-center mb-1" style={{ color: '#1A1A1A' }}>Set Your Grades</h2>
+                <p className="text-sm text-center mb-6" style={{ color: '#78716C' }}>
                   For each subject, set where you are now and where you want to be.
                 </p>
 
@@ -545,7 +539,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                     const targetIdx = getGradeIndex(config.targetGrade);
 
                     return (
-                      <div key={name} className="rounded-xl bg-white/70 dark:bg-white/[0.03] backdrop-blur-sm border border-zinc-200/50 dark:border-white/[0.06] overflow-hidden">
+                      <div key={name} className="rounded-xl overflow-hidden" style={{ backgroundColor: 'rgba(255,255,255,0.9)', border: '1px solid rgba(0,0,0,0.06)' }}>
                         {/* Subject header row */}
                         <div className="flex items-center justify-between px-4 pt-3 pb-2">
                           <span className={`text-sm font-bold ${groupColor.text}`}>{name}</span>
@@ -641,21 +635,23 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
             {/* Step 6: Exam Date — glass card */}
             {step === 6 && (
               <MotionDiv key="step6" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
-                <div className="flex items-center justify-center min-h-[50vh]">
-                  <div className="text-center w-full max-w-md mx-auto p-10 rounded-3xl bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl border border-white/40 dark:border-white/[0.08] shadow-[0_8px_60px_rgba(0,0,0,0.06)] dark:shadow-[0_8px_60px_rgba(0,0,0,0.3)]">
+                <div className="flex items-center justify-center min-h-[65vh]">
+                  <div className="text-center w-full max-w-md mx-auto">
                     <motion.div
                       initial={{ scale: 0.8, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-                      className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-amber-100 dark:bg-amber-900/40 flex items-center justify-center"
+                      className="w-14 h-14 mx-auto mb-5 rounded-2xl flex items-center justify-center"
+                      style={{ backgroundColor: 'rgba(42,125,111,0.1)' }}
                     >
-                      <Calendar size={32} className="text-amber-600 dark:text-amber-400" />
+                      <Calendar size={28} style={{ color: '#2A7D6F' }} />
                     </motion.div>
                     <motion.h2
                       initial={{ opacity: 0, y: 12 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                      className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1"
+                      className="font-serif text-2xl font-bold mb-1"
+                      style={{ color: '#1A1A1A' }}
                     >
                       When Do Exams Start?
                     </motion.h2>
@@ -663,7 +659,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-sm text-zinc-500 dark:text-zinc-400 mb-8"
+                      className="text-sm mb-6"
+                      style={{ color: '#78716C' }}
                     >
                       We'll use this to plan your study intensity.
                     </motion.p>
@@ -673,7 +670,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       transition={{ duration: 0.5, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
                     >
                       <input type="date" value={examDate} onChange={(e) => setExamDate(e.target.value)}
-                        className="w-full max-w-xs mx-auto px-4 py-3 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white/80 dark:bg-zinc-800 backdrop-blur-sm text-center text-lg font-semibold text-zinc-900 dark:text-white"
+                        className="w-full max-w-xs mx-auto px-4 py-3 rounded-xl text-center text-lg font-semibold"
+                        style={{ backgroundColor: 'rgba(255,255,255,0.9)', border: '1px solid rgba(0,0,0,0.08)', color: '#1A1A1A' }}
                       />
                     </motion.div>
                     {daysLeft > 0 && (
@@ -681,10 +679,11 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                        className="mt-6 p-4 rounded-xl bg-[rgba(var(--accent),0.1)] border border-[rgba(var(--accent),0.2)]"
+                        className="mt-8 inline-flex flex-col items-center px-10 py-6 rounded-3xl"
+                        style={{ backgroundColor: 'rgba(255,255,255,0.5)', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.6)' }}
                       >
-                        <p className="text-3xl font-bold font-mono text-[var(--accent-hex)]">{daysLeft}</p>
-                        <p className="text-xs font-semibold text-[rgba(var(--accent),0.8)] uppercase tracking-widest">days to go</p>
+                        <p className="font-apercu font-black" style={{ fontSize: 'clamp(64px, 15vw, 100px)', color: '#1A1A1A', lineHeight: 1 }}>{daysLeft}</p>
+                        <p className="text-sm font-bold uppercase tracking-widest mt-1" style={{ color: '#A8A29E' }}>days to go</p>
                       </motion.div>
                     )}
                   </div>
@@ -696,20 +695,22 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
             {step === 7 && (
               <MotionDiv key="step7" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <div className="flex items-center justify-center min-h-[50vh]">
-                  <div className="text-center w-full max-w-lg mx-auto p-10 rounded-3xl bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl border border-white/40 dark:border-white/[0.08] shadow-[0_8px_60px_rgba(0,0,0,0.06)] dark:shadow-[0_8px_60px_rgba(0,0,0,0.3)]">
+                  <div className="text-center w-full max-w-lg mx-auto">
                     <motion.div
                       initial={{ scale: 0.8, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-                      className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-rose-100 dark:bg-rose-900/40 flex items-center justify-center"
+                      className="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
+                      style={{ backgroundColor: 'rgba(42,125,111,0.1)' }}
                     >
-                      <CalendarOff size={32} className="text-rose-600 dark:text-rose-400" />
+                      <CalendarOff size={32} style={{ color: '#2A7D6F' }} />
                     </motion.div>
                     <motion.h2
                       initial={{ opacity: 0, y: 12 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                      className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1"
+                      className="font-serif text-2xl font-bold mb-1"
+                      style={{ color: '#1A1A1A' }}
                     >
                       Rest Days
                     </motion.h2>
@@ -717,7 +718,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-sm text-zinc-500 dark:text-zinc-400 mb-8"
+                      className="text-sm mb-8"
+                      style={{ color: '#78716C' }}
                     >
                       Tap any days where study isn't possible. Your sessions will be redistributed across the remaining days.
                     </motion.p>
@@ -734,11 +736,12 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                           <button
                             key={day}
                             onClick={() => toggleRestDay(day)}
-                            className={`flex flex-col items-center gap-1.5 py-3.5 rounded-xl border-2 transition-all ${
-                              isRest
-                                ? 'bg-rose-50 dark:bg-rose-900/30 border-rose-400 dark:border-rose-500 text-rose-600 dark:text-rose-400'
-                                : 'bg-white/80 dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-zinc-400 dark:hover:border-zinc-500'
-                            }`}
+                            className="flex flex-col items-center gap-1.5 py-3.5 rounded-xl transition-all"
+                            style={{
+                              backgroundColor: isRest ? 'rgba(220,38,38,0.06)' : 'rgba(255,255,255,0.9)',
+                              border: isRest ? '2px solid #DC2626' : '1px solid rgba(0,0,0,0.08)',
+                              color: isRest ? '#DC2626' : '#1A1A1A',
+                            }}
                           >
                             <span className="text-[10px] font-bold uppercase">{DAY_SHORTS[day]}</span>
                             {isRest ? <CalendarOff size={14} className="text-rose-500 dark:text-rose-400" /> : <Check size={14} className="text-emerald-500 dark:text-emerald-400" />}
@@ -849,58 +852,90 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 9: Your Toolkit */}
+            {/* Step 9: You're All Set — celebratory completion */}
             {step === 9 && (
               <MotionDiv key="step9" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
-                <div className="space-y-6">
-                  <div className="text-center space-y-2">
-                    <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">Your Toolkit</h2>
-                    <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                      These tools work together to help you study smarter. You'll find them in the Innovation Zone.
-                    </p>
+                <div className="flex items-center justify-center min-h-[60vh]">
+                  <div className="text-center w-full max-w-md mx-auto">
+                    {/* Checkmark icon */}
+                    <motion.div
+                      initial={{ scale: 0, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+                      className="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center"
+                      style={{ backgroundColor: '#2A7D6F' }}
+                    >
+                      <Check size={32} style={{ color: '#fff' }} strokeWidth={3} />
+                    </motion.div>
+
+                    {/* Heading */}
+                    <motion.h2
+                      initial={{ opacity: 0, y: 12 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
+                      className="font-serif text-3xl sm:text-4xl font-bold mb-2"
+                      style={{ color: '#1A1A1A' }}
+                    >
+                      You're all set, {userName.split(' ')[0] || userName}.
+                    </motion.h2>
+
+                    <motion.p
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                      className="text-base mb-8"
+                      style={{ color: '#78716C' }}
+                    >
+                      Your personalised study plan is ready.
+                    </motion.p>
+
+                    {/* Stats hero card */}
+                    <motion.div
+                      initial={{ opacity: 0, y: 12 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
+                      className="rounded-2xl px-6 py-5 mb-8"
+                      style={{ backgroundColor: 'rgba(255,255,255,0.85)', border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 4px 24px rgba(0,0,0,0.06)' }}
+                    >
+                      <div className="flex items-center justify-around">
+                        <div>
+                          <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#A8A29E' }}>Target</p>
+                          <p className="text-3xl font-apercu font-black" style={{ color: '#1A1A1A' }}>
+                            <AnimatedNumber value={pointsTotals.target} delay={0.7} />
+                          </p>
+                          <p className="text-[11px]" style={{ color: '#A8A29E' }}>CAO pts</p>
+                        </div>
+                        <div className="w-px h-12" style={{ backgroundColor: 'rgba(0,0,0,0.08)' }} />
+                        <div>
+                          <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#A8A29E' }}>Countdown</p>
+                          <p className="text-3xl font-apercu font-black" style={{ color: '#1A1A1A' }}>
+                            <AnimatedNumber value={daysLeft} delay={0.9} />
+                          </p>
+                          <p className="text-[11px]" style={{ color: '#A8A29E' }}>days left</p>
+                        </div>
+                        <div className="w-px h-12" style={{ backgroundColor: 'rgba(0,0,0,0.08)' }} />
+                        <div>
+                          <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#A8A29E' }}>Subjects</p>
+                          <p className="text-3xl font-apercu font-black" style={{ color: '#1A1A1A' }}>
+                            <AnimatedNumber value={selectedSubjects.size} delay={1.1} />
+                          </p>
+                          <p className="text-[11px]" style={{ color: '#A8A29E' }}>selected</p>
+                        </div>
+                      </div>
+                    </motion.div>
+
+                    {/* Start learning CTA */}
+                    <motion.button
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.75, ease: [0.16, 1, 0.3, 1] }}
+                      onClick={() => onComplete(buildProfile(), northStarData ?? undefined)}
+                      className="w-full flex items-center justify-center gap-2 py-4 rounded-2xl text-base font-bold text-white transition-all active:scale-[0.98]"
+                      style={{ backgroundColor: '#2A7D6F', boxShadow: '0 4px 16px rgba(42,125,111,0.25)' }}
+                    >
+                      Start Learning <ArrowRight size={16} />
+                    </motion.button>
                   </div>
-
-                  <div className="space-y-3">
-                    <div className="rounded-xl p-4" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)' }}>
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#F5F0EB' }}>
-                          <ScanSearch size={20} style={{ color: '#2A7D6F' }} />
-                        </div>
-                        <div>
-                          <p className="text-sm font-medium text-zinc-800 dark:text-white">Understand</p>
-                          <p className="text-xs text-zinc-500 dark:text-zinc-400">See what's worth marks, explore grade scenarios, and find courses that match you</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="rounded-xl p-4" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)' }}>
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#F5F0EB' }}>
-                          <CalendarDays size={20} style={{ color: '#2A7D6F' }} />
-                        </div>
-                        <div>
-                          <p className="text-sm font-medium text-zinc-800 dark:text-white">Plan</p>
-                          <p className="text-xs text-zinc-500 dark:text-zinc-400">Get a study schedule that adapts to your weaknesses and track your exam readiness</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="rounded-xl p-4" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)' }}>
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#F5F0EB' }}>
-                          <TrendingUp size={20} style={{ color: '#2A7D6F' }} />
-                        </div>
-                        <div>
-                          <p className="text-sm font-medium text-zinc-800 dark:text-white">Track</p>
-                          <p className="text-xs text-zinc-500 dark:text-zinc-400">Monitor your mock results, watch your points climb, and stay motivated</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <p className="text-center text-xs text-zinc-400 dark:text-zinc-500">
-                    All tools share your data — update confidence in one place, it updates everywhere.
-                  </p>
                 </div>
               </MotionDiv>
             )}
@@ -910,27 +945,29 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
       </div>
 
       {/* ─── Fixed Footer: Back / Continue (hidden on step 3 — North Star has its own nav) ─── */}
-      {step !== 3 && (
-        <div className="shrink-0 border-t border-zinc-200/50 dark:border-white/[0.06] px-6 py-4 relative z-10 bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-sm">
-          <div className="max-w-2xl mx-auto flex items-center justify-between">
-            {step > 1 ? (
-              <button onClick={goBack} className="flex items-center gap-1.5 text-sm font-medium text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
-                <ArrowLeft size={14} /> Back
-              </button>
-            ) : <div />}
-
+      {step !== 3 && step !== 9 && (
+        <div className="shrink-0 px-6 py-5 relative z-10">
+          <div className="max-w-2xl mx-auto flex flex-col items-center gap-3">
             {step < TOTAL_STEPS ? (
               <button onClick={goNext} disabled={!canProceed()}
-                className="flex items-center gap-2 px-7 py-2.5 bg-[var(--accent-hex)] text-white font-semibold text-sm rounded-full hover:bg-[var(--accent-dark-hex)] transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-[rgba(var(--accent),0.2)]"
+                className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+                style={{ backgroundColor: 'rgba(0,0,0,0.65)', color: '#fff', minWidth: 160 }}
               >
-                {step === 1 ? 'Get Started' : 'Continue'} <ArrowRight size={14} />
+                <span className="flex-1 text-center">{step === 1 ? 'Get Started' : 'Next'}</span>
+                <ArrowRight size={14} />
               </button>
             ) : (
               <button onClick={() => onComplete(buildProfile(), northStarData ?? undefined)}
-                className="flex items-center gap-2 px-7 py-2.5 rounded-full text-white font-semibold text-sm transition-all active:scale-[0.98] shadow-lg"
-                style={{ backgroundColor: '#2A7D6F' }}
+                className="flex items-center gap-2 px-8 py-3 rounded-2xl font-semibold text-sm transition-all active:scale-[0.98]"
+                style={{ backgroundColor: '#2A7D6F', color: '#fff', minWidth: 160 }}
               >
-                Start learning <ArrowRight size={14} />
+                <span className="flex-1 text-center">Start learning</span>
+                <ArrowRight size={14} />
+              </button>
+            )}
+            {step > 1 && (
+              <button onClick={goBack} className="flex items-center gap-1.5 text-sm font-medium transition-colors" style={{ color: '#A8A29E' }}>
+                <ArrowLeft size={14} /> Back
               </button>
             )}
           </div>

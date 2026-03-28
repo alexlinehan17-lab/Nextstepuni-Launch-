@@ -19,6 +19,25 @@ import { useMockResults } from '../hooks/useMockResults';
 
 const MotionDiv = motion.div as any;
 
+// ─── Subject Colours ─────────────────────────────────────────────────────────
+
+const SUBJECT_HEX: Record<string, string> = {
+  'English': '#3b82f6', 'Irish': '#10b981', 'Mathematics': '#6366f1',
+  'French': '#0ea5e9', 'German': '#eab308', 'Spanish': '#f97316',
+  'Italian': '#ef4444', 'Japanese': '#ec4899', 'Physics': '#06b6d4',
+  'Chemistry': '#14b8a6', 'Biology': '#84cc16', 'Applied Maths': '#8b5cf6',
+  'Computer Science': '#d946ef', 'Ag Science': '#22c55e', 'Accounting': '#f59e0b',
+  'Business': '#d97706', 'Economics': '#ca8a04', 'History': '#a855f7',
+  'Geography': '#059669', 'Politics & Society': '#f43f5e',
+  'Religious Education': '#71717a', 'Classical Studies': '#78716c',
+  'Home Economics': '#fb923c', 'Construction Studies': '#64748b',
+  'Engineering': '#6b7280', 'Art': '#fb7185', 'Music': '#f472b6',
+  'Applied Mathematics': '#8b5cf6',
+};
+function getSubjectHex(name: string): string {
+  return SUBJECT_HEX[name] || '#71717a';
+}
+
 // ─── Types ───────────────────────────────────────────────────────────────────
 
 interface CAOPointsSimulatorProps {
@@ -69,83 +88,57 @@ function computeBestSix(
   };
 }
 
-// ─── Points Summary Card ────────────────────────────────────────────────────
+// ─── Points Summary Card (Mercury-style: commanding numbers) ─────────────────
 
 const PointsCard: React.FC<{
   label: string;
   points: number;
   maxPoints: number;
   delta?: number;
-}> = ({ label, points, maxPoints, delta }) => {
+  accentColor?: string;
+  variant?: 'current' | 'target' | 'whatif';
+  basePoints?: number;
+}> = ({ label, points, maxPoints, delta, accentColor = '#2A7D6F', variant = 'current', basePoints }) => {
   const pct = maxPoints > 0 ? Math.min(100, (points / maxPoints) * 100) : 0;
+
+  // Typography sizing by variant
+  const isTarget = variant === 'target';
+  const isWhatIf = variant === 'whatif';
+  const numberSize = isTarget ? 'text-5xl' : 'text-4xl';
+  const labelColor = isTarget ? '#2A7D6F' : '#A8A29E';
+
+  // What-If number colour reacts to changes
+  let numberColor = '#1A1A1A';
+  if (isWhatIf && basePoints !== undefined) {
+    if (points > basePoints) numberColor = '#2A7D6F';
+    else if (points < basePoints) numberColor = '#DC2626';
+    // else stays dark — no change
+  }
+
   return (
-    <div
-      className="rounded-xl p-4"
-      style={{
-        backgroundColor: '#FAF7F4',
-        border: '0.5px solid rgba(0,0,0,0.07)',
-      }}
-    >
-      <div className="dark:hidden">
-        <p className="text-[10px] font-medium uppercase tracking-widest text-zinc-400 mb-1">{label}</p>
-        <div className="flex items-baseline gap-1.5">
-          <span className="text-3xl font-medium" style={{ color: '#2A7D6F' }}>{points}</span>
-          <span className="text-sm text-zinc-400 font-medium">/625</span>
-        </div>
-        <div className="w-full h-1 bg-zinc-200 rounded-full mt-2 overflow-hidden">
-          <MotionDiv
-            className="h-full rounded-full"
-            style={{ backgroundColor: '#2A7D6F' }}
-            initial={{ width: 0 }}
-            animate={{ width: `${pct}%` }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-          />
-        </div>
-        {delta !== undefined && delta !== 0 && (
-          <span
-            className="inline-block mt-2 text-xs font-medium"
-            style={{ color: delta > 0 ? '#2A7D6F' : undefined }}
-          >
-            <span className={delta < 0 ? 'text-rose-500' : ''}>
-              {delta > 0 ? '+' : ''}{delta} pts
-            </span>
-          </span>
-        )}
+    <div>
+      <p className="text-xs font-semibold uppercase tracking-wider mb-1.5" style={{ color: labelColor }}>{label}</p>
+      <div className="flex items-baseline gap-1.5">
+        <span className={`${numberSize} font-apercu font-black`} style={{ color: numberColor, letterSpacing: '-0.02em' }}>{points}</span>
+        <span className="text-sm font-medium" style={{ color: '#C4C0BC' }}>/625</span>
       </div>
-      <div className="hidden dark:block">
-        <div
-          className="rounded-xl p-4 -m-4"
-          style={{
-            backgroundColor: 'rgba(255,255,255,0.04)',
-            border: '0.5px solid rgba(255,255,255,0.08)',
-          }}
+      <div className="w-full h-[6px] rounded-full mt-3 overflow-hidden" style={{ backgroundColor: '#EDEBE8' }}>
+        <MotionDiv
+          className="h-full rounded-full"
+          style={{ backgroundColor: accentColor }}
+          initial={{ width: 0 }}
+          animate={{ width: `${pct}%` }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+        />
+      </div>
+      {delta !== undefined && delta !== 0 && (
+        <span
+          className="inline-block mt-2 text-xs font-bold"
+          style={{ color: delta > 0 ? '#2A7D6F' : '#DC2626' }}
         >
-          <p className="text-[10px] font-medium uppercase tracking-widest text-zinc-400 mb-1">{label}</p>
-          <div className="flex items-baseline gap-1.5">
-            <span className="text-3xl font-medium" style={{ color: '#4DB8A4' }}>{points}</span>
-            <span className="text-sm text-zinc-400 font-medium">/625</span>
-          </div>
-          <div className="w-full h-1 bg-zinc-200 dark:bg-zinc-700 rounded-full mt-2 overflow-hidden">
-            <MotionDiv
-              className="h-full rounded-full"
-              style={{ backgroundColor: '#4DB8A4' }}
-              initial={{ width: 0 }}
-              animate={{ width: `${pct}%` }}
-              transition={{ duration: 0.6, ease: 'easeOut' }}
-            />
-          </div>
-          {delta !== undefined && delta !== 0 && (
-            <span
-              className="inline-block mt-2 text-xs font-medium"
-              style={{ color: delta > 0 ? '#4DB8A4' : undefined }}
-            >
-              <span className={delta < 0 ? 'text-rose-500' : ''}>
-                {delta > 0 ? '+' : ''}{delta} pts
-              </span>
-            </span>
-          )}
-        </div>
-      </div>
+          {delta > 0 ? '+' : ''}{delta} pts
+        </span>
+      )}
     </div>
   );
 };
@@ -350,26 +343,27 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
         </button>
       </div>
 
-      {/* B. Points Summary Cards */}
-      <div className={`grid gap-3 ${activeTab === 'what-if' ? 'grid-cols-3' : 'grid-cols-2'}`}>
-        <PointsCard
-          label="Current"
-          points={currentAnalysis.total}
-          maxPoints={625}
-        />
-        <PointsCard
-          label="Target"
-          points={targetAnalysis.total}
-          maxPoints={625}
-          delta={targetAnalysis.total - currentAnalysis.total}
-        />
-        {activeTab === 'what-if' && (
-          <PointsCard
-            label="What-If"
-            points={whatIfAnalysis.total}
-            maxPoints={625}
-            delta={whatIfAnalysis.total - currentAnalysis.total}
-          />
+      {/* B. Points Summary — Mercury style: white card, confident type, no decoration */}
+      <div
+        className="rounded-2xl px-6 py-5"
+        style={{ backgroundColor: '#FEFDFB', border: '1px solid #EDEBE8', boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}
+      >
+        <div className={`grid gap-6 ${activeTab === 'what-if' ? 'grid-cols-3' : 'grid-cols-2'}`}>
+          <PointsCard label="Current" points={currentAnalysis.total} maxPoints={625} accentColor="#C4C0BC" variant="current" />
+          <PointsCard label="Target" points={targetAnalysis.total} maxPoints={625} delta={targetAnalysis.total - currentAnalysis.total} accentColor="#2A7D6F" variant="target" />
+          {activeTab === 'what-if' && (
+            <PointsCard label="What-If" points={whatIfAnalysis.total} maxPoints={625} delta={whatIfAnalysis.total - currentAnalysis.total} accentColor="#3b82f6" variant="whatif" basePoints={currentAnalysis.total} />
+          )}
+        </div>
+        {/* Gap indicator */}
+        {targetAnalysis.total > currentAnalysis.total && (
+          <div className="mt-4 pt-4 flex items-center justify-between" style={{ borderTop: '1px solid #EDEBE8' }}>
+            <span className="text-xs font-medium" style={{ color: '#78716C' }}>Gap to target</span>
+            <div className="flex items-center gap-2">
+              <span className="text-base font-black" style={{ color: '#2A7D6F' }}>+{targetAnalysis.total - currentAnalysis.total} pts</span>
+              <span className="text-xs font-medium" style={{ color: '#A8A29E' }}>{Math.round((currentAnalysis.total / targetAnalysis.total) * 100)}% there</span>
+            </div>
+          </div>
         )}
       </div>
 
@@ -466,36 +460,44 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
               const isMaths = profileSub?.isMaths ?? false;
               const mathsBonus = isMaths && sub.grade.startsWith('H') && getPointsForGrade(sub.grade, false) >= 46;
 
+              const maxBestSixPts = Math.max(...currentAnalysis.bestSix.map(s => s.points), 1);
+              const barPct = (sub.points / maxBestSixPts) * 100;
+
               return (
                 <MotionDiv
                   key={sub.subjectName}
-                  initial={{ opacity: 0, x: -12 }}
-                  animate={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
                   transition={{ delay: idx * 0.04 }}
-                  className="flex items-center gap-3 py-3 px-1 border-b border-zinc-100 dark:border-zinc-800"
+                  className="py-3 px-1"
+                  style={{ borderBottom: idx < currentAnalysis.bestSix.length - 1 ? '1px solid #F0EFED' : 'none' }}
                 >
-                  <span className="text-xs text-zinc-400 w-5 text-center">{idx + 1}</span>
-                  <div className="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-zinc-400" />
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2">
-                      <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200 truncate">{sub.subjectName}</p>
-                      {mathsBonus && (
-                        <span className="text-[9px] font-medium text-zinc-400">+25</span>
-                      )}
-                    </div>
-                    <p className="text-xs text-zinc-400">
-                      {sub.grade} → {targetGrade}
-                    </p>
-                  </div>
-                  <div className="text-right flex-shrink-0">
-                    <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200">{sub.points}</p>
-                    {targetPoints !== sub.points && (
-                      <p className="text-xs font-medium" style={{ color: targetPoints > sub.points ? '#2A7D6F' : undefined }}>
-                        <span className={targetPoints < sub.points ? 'text-rose-500' : ''}>
-                          {targetPoints > sub.points ? '+' : ''}{targetPoints - sub.points}
-                        </span>
-                      </p>
+                  <div className="flex items-center gap-3 mb-1.5">
+                    <span className="text-[11px] font-bold w-4 text-right" style={{ color: '#C4C0BC' }}>{idx + 1}</span>
+                    <div className="w-3 h-3 rounded-full flex-shrink-0" style={{ backgroundColor: getSubjectHex(sub.subjectName) }} />
+                    <p className="text-sm font-semibold flex-1 min-w-0 truncate" style={{ color: '#1C1917' }}>{sub.subjectName}</p>
+                    {mathsBonus && (
+                      <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full" style={{ backgroundColor: '#EDF5F3', color: '#2A7D6F' }}>+25</span>
                     )}
+                    <div className="flex items-center gap-1.5 flex-shrink-0">
+                      <span className="text-xs" style={{ color: '#A8A29E' }}>{sub.grade} → {targetGrade}</span>
+                      <span className="text-sm font-bold font-mono" style={{ color: '#1C1917' }}>{sub.points}</span>
+                    </div>
+                    {targetPoints !== sub.points && (
+                      <span className="text-xs font-semibold flex-shrink-0" style={{ color: targetPoints > sub.points ? '#2A7D6F' : '#ef4444' }}>
+                        {targetPoints > sub.points ? '+' : ''}{targetPoints - sub.points}
+                      </span>
+                    )}
+                  </div>
+                  {/* Contribution bar */}
+                  <div className="ml-[30px] h-1 rounded-full overflow-hidden" style={{ backgroundColor: '#F0EFED' }}>
+                    <MotionDiv
+                      className="h-full rounded-full"
+                      style={{ backgroundColor: getSubjectHex(sub.subjectName), opacity: 0.6 }}
+                      initial={{ width: 0 }}
+                      animate={{ width: `${barPct}%` }}
+                      transition={{ duration: 0.5, delay: idx * 0.05, ease: 'easeOut' }}
+                    />
                   </div>
                 </MotionDiv>
               );
@@ -596,12 +598,15 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
                           onClick={() => handleWhatIfGradeChange(sub.subjectName, g)}
                           className={`px-2.5 py-1 rounded-lg text-xs font-medium transition-all ${
                             isSelected
-                              ? 'text-white shadow-sm'
+                              ? 'shadow-sm'
                               : isCurrent
-                                ? 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 ring-1 ring-zinc-300 dark:ring-zinc-600'
-                                : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                                ? 'ring-1 ring-zinc-300 dark:ring-zinc-600'
+                                : 'hover:bg-zinc-200 dark:hover:bg-zinc-700'
                           }`}
-                          style={isSelected ? { backgroundColor: '#2A7D6F' } : undefined}
+                          style={{
+                            backgroundColor: isSelected ? getSubjectHex(sub.subjectName) : 'rgba(0,0,0,0.04)',
+                            color: isSelected ? '#fff' : '#9A9590',
+                          }}
                         >
                           {g}
                         </button>
@@ -644,14 +649,23 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
                     Top improvements ranked by net {bestSixLabel} total gain from one grade up.
                   </p>
                   {biggestGains.map((gain, idx) => (
-                    <div key={gain.subjectName} className="flex items-center gap-3 py-2.5 border-b border-zinc-100 dark:border-zinc-800 last:border-b-0">
-                      <span className="text-xs text-zinc-400 w-5 text-center">{idx + 1}</span>
-                      <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200 flex-1">{gain.subjectName}</p>
-                      <p className="text-xs text-zinc-400">
+                    <div
+                      key={gain.subjectName}
+                      className="flex items-center gap-3 py-2.5"
+                      style={{ borderBottom: idx < biggestGains.length - 1 ? '1px solid #F0EFED' : 'none' }}
+                    >
+                      {idx === 0 ? (
+                        <span className="text-[9px] font-bold uppercase px-1.5 py-0.5 rounded" style={{ backgroundColor: '#EDF5F3', color: '#2A7D6F' }}>Best</span>
+                      ) : (
+                        <span className="text-[11px] font-bold w-8 text-center" style={{ color: '#C4C0BC' }}>{idx + 1}</span>
+                      )}
+                      <div className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: getSubjectHex(gain.subjectName) }} />
+                      <p className="text-sm font-medium flex-1" style={{ color: '#1C1917' }}>{gain.subjectName}</p>
+                      <p className="text-xs" style={{ color: '#A8A29E' }}>
                         {gain.fromGrade} → {gain.toGrade}
                       </p>
-                      <span className="text-xs font-medium" style={{ color: '#2A7D6F' }}>
-                        +{gain.netGain} pts
+                      <span className="text-sm font-bold" style={{ color: '#2A7D6F' }}>
+                        +{gain.netGain}
                       </span>
                     </div>
                   ))}

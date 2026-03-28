@@ -137,48 +137,56 @@ export function getSubjectStroke(name: string): string {
 }
 
 // Maximally distinct hex colors for SVG chart lines (no two should look alike)
+// Headspace-style maximally distinct subject colours
 export const SUBJECT_HEX_COLORS: Record<string, string> = {
-  'English': '#3b82f6',           // blue
-  'Irish': '#10b981',             // emerald
-  'Mathematics': '#6366f1',       // indigo
-  'French': '#f43f5e',            // rose
-  'German': '#f59e0b',            // amber
-  'Spanish': '#f97316',           // orange
-  'Italian': '#84cc16',           // lime
-  'Japanese': '#ec4899',          // pink
-  'Physics': '#06b6d4',           // cyan
-  'Chemistry': '#14b8a6',         // teal
-  'Biology': '#22c55e',           // green
-  'Applied Mathematics': '#8b5cf6', // violet
-  'Agricultural Science': '#a3e635', // lime bright
-  'Computer Science': '#0ea5e9',  // sky
-  'Accounting': '#d946ef',        // fuchsia
-  'Business': '#0284c7',          // sky-dark (distinct from English blue)
-  'Economics': '#eab308',         // yellow
-  'History': '#b45309',           // amber-dark (brown)
-  'Geography': '#0d9488',         // teal-dark
-  'Politics & Society': '#a855f7',// purple
-  'Religious Education': '#c026d3',// fuchsia-dark
-  'Home Economics': '#ea580c',    // orange-dark
-  'Music': '#db2777',             // pink-dark
-  'Art': '#ef4444',               // red
-  'Construction Studies': '#78716c',// stone
-  'Engineering': '#71717a',       // zinc
-  'Technology': '#64748b',        // slate
-  'Design & Communication Graphics': '#4f46e5', // indigo-dark
-  'Physical Education': '#dc2626',// red-dark
+  'English': '#0984E3',           // bright blue
+  'Irish': '#00B894',             // teal green
+  'Mathematics': '#2D3436',       // near-black
+  'French': '#E84393',            // hot pink
+  'German': '#FDCB6E',           // warm yellow
+  'Spanish': '#E17055',           // warm coral
+  'Italian': '#00CEC9',           // cyan
+  'Japanese': '#A29BFE',          // soft lavender
+  'Physics': '#74B9FF',           // sky blue
+  'Chemistry': '#55EFC4',         // mint
+  'Biology': '#00B894',           // teal green
+  'Applied Mathematics': '#6C5CE7', // vivid purple
+  'Applied Maths': '#6C5CE7',     // vivid purple (alias)
+  'Agricultural Science': '#BADC58', // lime
+  'Computer Science': '#74B9FF',  // sky blue
+  'Accounting': '#FDCB6E',        // warm yellow
+  'Business': '#0984E3',          // bright blue
+  'Economics': '#E67E22',         // strong orange
+  'History': '#D63031',           // warm red
+  'Geography': '#00B894',         // teal green
+  'Politics & Society': '#E84393',// hot pink
+  'Religious Education': '#A29BFE', // soft lavender
+  'Home Economics': '#E17055',    // warm coral
+  'Music': '#FD79A8',             // rose pink
+  'Art': '#FF7675',               // salmon
+  'Construction Studies': '#636E72',// cool grey
+  'Engineering': '#636E72',       // cool grey
+  'Technology': '#636E72',        // cool grey
+  'Design & Communication Graphics': '#6C5CE7', // vivid purple
+  'Physical Education': '#D63031',// warm red
 };
 
 export function getSubjectHex(name: string): string {
   return SUBJECT_HEX_COLORS[name] || '#a855f7';
 }
 
-// Guaranteed distinct palette — cycles through when subjects aren't in the map
+// Headspace-style distinct palette — 10 maximally spread colours for index-based assignment
 const DISTINCT_PALETTE = [
-  '#3b82f6', '#ef4444', '#22c55e', '#f59e0b', '#8b5cf6',
-  '#ec4899', '#06b6d4', '#f97316', '#6366f1', '#14b8a6',
-  '#eab308', '#d946ef', '#0ea5e9', '#84cc16', '#b45309',
-  '#0284c7', '#dc2626', '#a855f7', '#10b981', '#f43f5e',
+  '#0984E3', // bright blue
+  '#E84393', // hot pink
+  '#E67E22', // strong orange
+  '#6C5CE7', // vivid purple
+  '#00B894', // teal green
+  '#D63031', // warm red
+  '#FDCB6E', // warm yellow
+  '#A29BFE', // soft lavender
+  '#00CEC9', // cyan
+  '#2D3436', // near-black
 ];
 
 /**

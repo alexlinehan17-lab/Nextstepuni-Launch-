@@ -18,7 +18,7 @@ export interface AthleteRank {
 
 export const ATHLETE_RANKS: AthleteRank[] = [
   { id: 'newcomer',   title: 'Newcomer',   minPoints: 0,    icon: 'Footprints', color: 'teal-500',   colorHex: '#2A7D6F' },
-  { id: 'beginner',   title: 'Beginner',   minPoints: 100,  icon: 'Footprints', color: 'blue-500',   colorHex: '#4361EE' },
+  { id: 'beginner',   title: 'Beginner',   minPoints: 100,  icon: 'Flame',      color: 'blue-500',   colorHex: '#4361EE' },
   { id: 'consistent', title: 'Consistent', minPoints: 300,  icon: 'TrendingUp', color: 'emerald-500', colorHex: '#10b981' },
   { id: 'dedicated',  title: 'Dedicated',  minPoints: 600,  icon: 'Target',     color: 'teal-500',   colorHex: '#14b8a6' },
   { id: 'driven',     title: 'Driven',     minPoints: 1000, icon: 'Zap',        color: 'amber-500',  colorHex: '#f59e0b' },

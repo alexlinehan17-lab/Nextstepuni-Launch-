@@ -76,6 +76,13 @@ const STAT_ICONS: Record<StatKey, React.ElementType> = {
 
 // ─── Location Config (label only) ───────────────────────────────────────────
 
+// Phase colour config — Headspace-style environmental colour
+const PHASE_COLORS: Record<Phase, { bg: string; darkText: boolean }> = {
+  'Foundation': { bg: '#2A7D6F', darkText: false },
+  'Pressure Cooker': { bg: '#D4891C', darkText: false },
+  'Final Stretch': { bg: '#D4564E', darkText: false },
+};
+
 const LOCATION_CONFIG: Record<Location, { label: string }> = {
     school: { label: 'School' },
     home: { label: 'Home' },
@@ -154,47 +161,55 @@ const EphemeralStatOverlay: React.FC<{ effects: Partial<GameState>; gameState: G
 
 const PhaseTransition: React.FC<{ phase: Phase; onComplete: () => void }> = ({ phase, onComplete }) => {
     useEffect(() => {
-        const timer = setTimeout(onComplete, 4000);
+        const timer = setTimeout(onComplete, 5000);
         return () => clearTimeout(timer);
     }, [onComplete]);
 
     const meta = PHASE_METADATA.find(p => p.name === phase);
+    const pc = (PHASE_COLORS[phase] || PHASE_COLORS['Foundation']).bg;
 
     return (
         <MotionDiv
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.6 }}
             onClick={onComplete}
-            className="cursor-pointer min-h-[70vh] flex flex-col items-center justify-center text-center py-16"
+            className="cursor-pointer fixed inset-0 z-[70] flex flex-col items-center justify-center overflow-hidden"
+            style={{ backgroundColor: pc }}
         >
-            <MotionDiv
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="space-y-4"
-            >
-                <p className="font-mono text-[10px] font-bold uppercase tracking-[0.3em] text-[var(--accent-hex)]">
-                    {meta?.months}
-                </p>
-                <div className="w-16 h-px bg-[var(--accent-hex)] mx-auto" />
-                <h2 className="font-serif text-5xl sm:text-6xl font-semibold text-zinc-900 dark:text-white">
-                    {phase}
-                </h2>
-                <p className="text-lg text-zinc-500 dark:text-zinc-400 max-w-md mx-auto">
-                    {meta?.subtitle}
-                </p>
-            </MotionDiv>
+            {/* Decorative blobs */}
+            <div className="absolute pointer-events-none" style={{ top: -80, right: -60, width: 300, height: 300, borderRadius: '50%', background: 'rgba(255,255,255,0.08)' }} />
+            <div className="absolute pointer-events-none" style={{ bottom: -60, left: -80, width: 250, height: 250, borderRadius: '50%', background: 'rgba(0,0,0,0.06)' }} />
+            <div className="absolute pointer-events-none" style={{ top: '40%', left: -30, width: 120, height: 120, borderRadius: '50%', background: 'rgba(255,255,255,0.05)' }} />
+            <div className="absolute pointer-events-none" style={{ bottom: '30%', right: 20, width: 70, height: 70, borderRadius: '50%', background: 'rgba(255,255,255,0.06)' }} />
 
-            <MotionDiv
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1 }}
-                className="mt-12"
-            >
-                <p className="font-mono text-[10px] text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.2em]">Click to continue</p>
-            </MotionDiv>
+            <div className="relative z-10 text-center px-6">
+                <MotionDiv
+                    initial={{ opacity: 0, y: 15 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3, duration: 0.6 }}
+                >
+                    <p className="text-[11px] font-bold uppercase tracking-[0.25em] mb-4" style={{ color: 'rgba(255,255,255,0.5)' }}>
+                        {meta?.months}
+                    </p>
+                    <h2 className="font-serif text-5xl sm:text-7xl font-bold text-white mb-4">
+                        {phase}
+                    </h2>
+                    <p className="text-lg max-w-md mx-auto leading-relaxed" style={{ color: 'rgba(255,255,255,0.6)' }}>
+                        {meta?.subtitle}
+                    </p>
+                </MotionDiv>
+
+                <MotionDiv
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 1.2 }}
+                    className="mt-14"
+                >
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.2em]" style={{ color: 'rgba(255,255,255,0.35)' }}>Tap to continue</p>
+                </MotionDiv>
+            </div>
         </MotionDiv>
     );
 };
@@ -221,8 +236,8 @@ const TypingText: React.FC<{ text: string; sceneId: string }> = ({ text, sceneId
     }, [sceneId, words.length]);
 
     return (
-        <div className="relative max-w-2xl border-l-2 border-[rgba(var(--accent),0.2)] dark:border-[rgba(var(--accent),0.15)] pl-5">
-            <p className="text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed mb-8">
+        <div className="relative max-w-2xl mb-8">
+            <p className="font-serif text-xl text-zinc-700 dark:text-zinc-200 leading-relaxed italic">
                 {words.map((word, i) => (
                     <MotionSpan
                         key={`${sceneId}-${i}`}
@@ -241,20 +256,21 @@ const TypingText: React.FC<{ text: string; sceneId: string }> = ({ text, sceneId
 
 // ─── Choice Button (editorial) ──────────────────────────────────────────────
 
-const ChoiceButton: React.FC<{ choice: Choice; gameState: GameState; visitedScenes: string[]; onChoose: (choice: Choice) => void; disabled?: boolean; chosen?: boolean }> = ({ choice, gameState, visitedScenes, onChoose, disabled, chosen }) => {
+const ChoiceButton: React.FC<{ choice: Choice; gameState: GameState; visitedScenes: string[]; onChoose: (choice: Choice) => void; disabled?: boolean; chosen?: boolean; index?: number; phaseColor?: string }> = ({ choice, gameState, visitedScenes, onChoose, disabled, chosen, index = 0, phaseColor = '#2A7D6F' }) => {
     const statRequirementsMet = !choice.requires || choice.requires.every(r => gameState[r.stat] >= r.min);
     const visitRequirementsMet = !choice.requiresVisited || choice.requiresVisited.every(id => visitedScenes.includes(id));
     const isLocked = !statRequirementsMet || !visitRequirementsMet;
+    const letter = String.fromCharCode(65 + index); // A, B, C
 
     if (isLocked) {
         return (
-            <div className="py-5 border-t border-zinc-200 dark:border-white/10 opacity-40">
+            <div className="rounded-xl px-4 py-3 mb-2 opacity-40" style={{ backgroundColor: 'rgba(0,0,0,0.03)', borderRadius: 12 }}>
                 <div className="flex items-center gap-3">
-                    <Lock size={14} className="text-zinc-400 dark:text-zinc-500 flex-shrink-0" />
-                    <p className="font-serif text-lg text-zinc-400 dark:text-zinc-500">{choice.text}</p>
+                    <Lock size={14} className="text-zinc-400 flex-shrink-0" />
+                    <p className="text-[15px] text-zinc-400">{choice.text}</p>
                 </div>
                 {choice.requires && (
-                    <p className="font-mono text-[11px] text-zinc-400 dark:text-zinc-500 mt-1.5 ml-7 uppercase tracking-wider">
+                    <p className="text-[10px] text-zinc-400 mt-1 ml-7 uppercase tracking-wider">
                         Requires: {choice.requires.map(r => `${STAT_LABELS[r.stat]} ${r.min}+`).join(', ')}
                     </p>
                 )}
@@ -264,16 +280,22 @@ const ChoiceButton: React.FC<{ choice: Choice; gameState: GameState; visitedScen
 
     if (disabled && !chosen) {
         return (
-            <div className="py-5 border-t border-zinc-200 dark:border-white/10 opacity-30">
-                <p className="font-serif text-lg text-zinc-400 dark:text-zinc-500">{choice.text}</p>
+            <div className="rounded-xl px-4 py-3 mb-2 opacity-25" style={{ backgroundColor: '#FEFDFB', border: '1px solid #EDEBE8', borderRadius: 12 }}>
+                <div className="flex items-center gap-3">
+                    <span className="text-[11px] font-bold w-5 h-5 rounded-md flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(0,0,0,0.04)', color: '#C4C0BC' }}>{letter}</span>
+                    <p className="text-[15px] text-zinc-400">{choice.text}</p>
+                </div>
             </div>
         );
     }
 
     if (chosen) {
         return (
-            <div className="py-5 border-t-2 border-[var(--accent-hex)]">
-                <p className="font-serif text-lg text-[var(--accent-hex)]">{choice.text}</p>
+            <div className="rounded-xl px-4 py-3 mb-2" style={{ backgroundColor: phaseColor, borderRadius: 12 }}>
+                <div className="flex items-center gap-3">
+                    <span className="text-[11px] font-bold w-5 h-5 rounded-md flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(255,255,255,0.2)', color: '#fff' }}>{letter}</span>
+                    <p className="text-[15px] font-semibold text-white">{choice.text}</p>
+                </div>
             </div>
         );
     }
@@ -281,12 +303,19 @@ const ChoiceButton: React.FC<{ choice: Choice; gameState: GameState; visitedScen
     return (
         <MotionButton
             onClick={() => onChoose(choice)}
-            whileHover={{ x: 4 }}
-            whileTap={{ scale: 0.99 }}
-            className="w-full text-left py-5 border-t border-zinc-200 dark:border-white/10 transition-colors group"
+            whileTap={{ scale: 0.98 }}
+            className="w-full text-left rounded-xl px-4 py-3.5 mb-2.5 transition-all"
+            style={{ backgroundColor: '#FEFDFB', border: '1px solid rgba(0,0,0,0.06)', borderRadius: 14, boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}
+            onMouseEnter={(e: any) => { e.currentTarget.style.borderColor = phaseColor; e.currentTarget.style.boxShadow = `0 4px 16px ${phaseColor}20`; e.currentTarget.style.transform = 'translateY(-1px)'; }}
+            onMouseLeave={(e: any) => { e.currentTarget.style.borderColor = 'rgba(0,0,0,0.06)'; e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.04)'; e.currentTarget.style.transform = 'translateY(0)'; }}
         >
-            <p className="font-serif text-lg text-zinc-700 dark:text-zinc-200 group-hover:text-[var(--accent-hex)] dark:group-hover:text-[var(--accent-hex)] transition-colors">{choice.text}</p>
-            {choice.flavor && <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-1 italic">{choice.flavor}</p>}
+            <div className="flex items-center gap-3">
+                <span className="text-[11px] font-bold w-5 h-5 rounded-md flex items-center justify-center shrink-0" style={{ backgroundColor: `${phaseColor}12`, color: phaseColor }}>{letter}</span>
+                <div className="flex-1 min-w-0">
+                    <p className="text-[15px] font-medium" style={{ color: '#1C1917' }}>{choice.text}</p>
+                    {choice.flavor && <p className="text-[11px] mt-0.5 italic" style={{ color: '#A8A29E' }}>{choice.flavor}</p>}
+                </div>
+            </div>
         </MotionButton>
     );
 };
@@ -788,93 +817,127 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                 document.body
             )}
 
-            {/* Scene — editorial layout */}
-            <div className="min-h-[60vh] flex flex-col justify-center py-8">
-                <AnimatePresence mode="wait">
-                    <MotionDiv
-                        key={currentSceneId}
-                        initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        transition={{ duration: 0.5, ease: editorialEase }}
-                    >
-                        {/* Phase accent block */}
-                        {(() => {
-                            const meta = PHASE_METADATA.find(p => p.name === currentScene.phase);
-                            return (
-                                <div className="border-l-[3px] border-[var(--accent-hex)] pl-4 mb-6">
-                                    <p className="font-mono text-[10px] font-bold uppercase tracking-[0.3em] text-[var(--accent-hex)]">{currentScene.phase}</p>
-                                    <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mt-0.5">{meta?.months}</p>
-                                    <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1 leading-relaxed">{meta?.subtitle}</p>
+            {/* Scene — Headspace editorial layout */}
+            {(() => {
+                const phaseConfig = PHASE_COLORS[currentScene.phase] || PHASE_COLORS['Foundation'];
+                const phaseMeta = PHASE_METADATA.find(p => p.name === currentScene.phase);
+                const pc = phaseConfig.bg;
+
+                return (
+                    <AnimatePresence mode="wait">
+                        <MotionDiv
+                            key={currentSceneId}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.4, ease: editorialEase }}
+                        >
+                            {/* ── Full-bleed colour hero ── */}
+                            <div
+                                className="relative overflow-hidden"
+                                style={{
+                                    backgroundColor: pc,
+                                    position: 'relative',
+                                    left: '50%',
+                                    right: '50%',
+                                    marginLeft: '-50vw',
+                                    marginRight: '-50vw',
+                                    width: '100vw',
+                                }}
+                            >
+                                {/* Decorative blobs — layered system */}
+                                <div className="absolute pointer-events-none" style={{ top: -60, right: -40, width: 280, height: 280, borderRadius: '50%', background: 'rgba(255,255,255,0.1)' }} />
+                                <div className="absolute pointer-events-none" style={{ top: 20, right: 30, width: 100, height: 100, borderRadius: '50%', background: 'rgba(255,255,255,0.06)' }} />
+                                <div className="absolute pointer-events-none" style={{ bottom: 40, left: -50, width: 200, height: 200, borderRadius: '50%', background: 'rgba(0,0,0,0.06)' }} />
+
+                                {/* Centered content within the full-bleed field */}
+                                <div className="relative z-10 max-w-2xl mx-auto px-6 pt-10 pb-16">
+                                    <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.4 }}>
+                                        <div className="flex items-center gap-3 mb-2">
+                                            <span className="text-[10px] font-bold uppercase tracking-[0.2em]" style={{ color: 'rgba(255,255,255,0.5)' }}>{currentScene.phase}</span>
+                                            <span className="text-[10px]" style={{ color: 'rgba(255,255,255,0.25)' }}>|</span>
+                                            <span className="text-[10px] uppercase tracking-[0.15em]" style={{ color: 'rgba(255,255,255,0.5)' }}>{phaseMeta?.months}</span>
+                                        </div>
+                                        <p className="text-[11px] font-semibold uppercase tracking-[0.12em] mb-6" style={{ color: 'rgba(255,255,255,0.55)' }}>
+                                            {currentScene.month} — {locationConfig.label}
+                                        </p>
+                                    </MotionDiv>
+
+                                    <MotionDiv initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.5 }}>
+                                        <h2 className="font-serif text-3xl sm:text-5xl font-bold text-white leading-tight">{currentScene.title}</h2>
+                                    </MotionDiv>
                                 </div>
-                            );
-                        })()}
 
-                        {/* Month + Location */}
-                        <p className="font-mono text-[11px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-3">
-                            {currentScene.month} — {locationConfig.label}
-                        </p>
-
-                        {/* Decorative rule */}
-                        <div className="w-10 h-px bg-[rgba(var(--accent),0.4)] mb-5" />
-
-                        {/* Title */}
-                        <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-zinc-900 dark:text-white leading-tight mb-6">{currentScene.title}</h2>
-
-                        {/* Narrative */}
-                        <TypingText
-                            text={(() => {
-                                if (currentScene.textVariants) {
-                                    for (const v of currentScene.textVariants) {
-                                        if ('stat' in v.condition) {
-                                            const val = gameState[v.condition.stat];
-                                            if (v.condition.min !== undefined && val < v.condition.min) continue;
-                                            if (v.condition.max !== undefined && val > v.condition.max) continue;
-                                            return v.text;
-                                        }
-                                        if ('visited' in v.condition && visitedScenes.includes(v.condition.visited)) {
-                                            return v.text;
-                                        }
-                                    }
-                                }
-                                return currentScene.text;
-                            })()}
-                            sceneId={currentSceneId}
-                        />
-
-                        {/* Choices */}
-                        <div>
-                            {currentScene.choices.map((choice, index) => (
-                                <ChoiceButton
-                                    key={index}
-                                    choice={choice}
-                                    gameState={gameState}
-                                    visitedScenes={visitedScenes}
-                                    onChoose={handleChoice}
-                                    disabled={!!chosenText}
-                                    chosen={chosenText === choice.text}
-                                />
-                            ))}
-                        </div>
-
-                        {/* Module link footnote */}
-                        {lastModuleLink && chosenText && (
-                            <p className="text-xs italic text-zinc-500 dark:text-zinc-400 mt-4">
-                                Related: <span className="text-[var(--accent-hex)] dark:text-[var(--accent-hex)]">{lastModuleLink.moduleTitle}</span>
-                            </p>
-                        )}
-
-                        {/* Previous result badge at START */}
-                        {currentSceneId === 'START' && previousResult && ARCHETYPES[previousResult.endingId] && (
-                            <div className="mt-8 pt-6 border-t border-zinc-200 dark:border-white/10">
-                                <p className="font-mono text-[10px] text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">
-                                    Previous result: <span className="text-[var(--accent-hex)] font-bold">{ARCHETYPES[previousResult.endingId].title}</span>
-                                </p>
+                                {/* Wavy edge to cream */}
+                                <div className="absolute bottom-0 left-0 right-0" style={{ transform: 'translateY(1px)' }}>
+                                    <svg viewBox="0 0 1440 48" preserveAspectRatio="none" className="block w-full" style={{ height: 40 }}>
+                                        <path d="M0,24 C240,48 480,8 720,32 C960,56 1200,16 1440,28 L1440,48 L0,48 Z" fill="#FDF8F0" />
+                                    </svg>
+                                </div>
                             </div>
-                        )}
-                    </MotionDiv>
-                </AnimatePresence>
-            </div>
+
+                            {/* ── Content on cream ── */}
+                            <div className="max-w-2xl mx-auto px-6 pt-5 pb-8">
+                                <MotionDiv initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.4 }}>
+                                    <p className="text-xs mb-6 leading-relaxed" style={{ color: '#A8A29E' }}>{phaseMeta?.subtitle}</p>
+                                </MotionDiv>
+
+                                <TypingText
+                                    text={(() => {
+                                        if (currentScene.textVariants) {
+                                            for (const v of currentScene.textVariants) {
+                                                if ('stat' in v.condition) {
+                                                    const val = gameState[v.condition.stat];
+                                                    if (v.condition.min !== undefined && val < v.condition.min) continue;
+                                                    if (v.condition.max !== undefined && val > v.condition.max) continue;
+                                                    return v.text;
+                                                }
+                                                if ('visited' in v.condition && visitedScenes.includes(v.condition.visited)) {
+                                                    return v.text;
+                                                }
+                                            }
+                                        }
+                                        return currentScene.text;
+                                    })()}
+                                    sceneId={currentSceneId}
+                                />
+
+                                <p className="text-[10px] font-bold uppercase tracking-[0.15em] mb-3" style={{ color: '#A8A29E' }}>What do you do?</p>
+
+                                <div>
+                                    {currentScene.choices.map((choice, index) => (
+                                        <ChoiceButton
+                                            key={index}
+                                            choice={choice}
+                                            gameState={gameState}
+                                            visitedScenes={visitedScenes}
+                                            onChoose={handleChoice}
+                                            disabled={!!chosenText}
+                                            chosen={chosenText === choice.text}
+                                            index={index}
+                                            phaseColor={pc}
+                                        />
+                                    ))}
+                                </div>
+
+                                {lastModuleLink && chosenText && (
+                                    <p className="text-xs italic mt-4" style={{ color: '#A8A29E' }}>
+                                        Related: <span className="font-semibold" style={{ color: pc }}>{lastModuleLink.moduleTitle}</span>
+                                    </p>
+                                )}
+
+                                {currentSceneId === 'START' && previousResult && ARCHETYPES[previousResult.endingId] && (
+                                    <div className="mt-6 px-4 py-3 rounded-xl" style={{ backgroundColor: `${pc}10`, border: `1px solid ${pc}20`, borderRadius: 12 }}>
+                                        <p className="text-[11px]" style={{ color: '#78716C' }}>
+                                            Previous result: <span className="font-bold" style={{ color: pc }}>{ARCHETYPES[previousResult.endingId].title}</span>
+                                        </p>
+                                    </div>
+                                )}
+                            </div>
+                        </MotionDiv>
+                    </AnimatePresence>
+                );
+            })()}
         </>
     );
 };
@@ -1305,12 +1368,12 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const currentTool = tools.find(t => t.id === activeTool);
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pt-24 md:pt-32 pb-36 md:pb-24">
+    <div className={`min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24 ${activeTool === 'journey' || activeTool === 'war-room' ? 'pt-14 md:pt-16' : 'pt-24 md:pt-32'}`}>
 
-      <header className="fixed top-0 left-0 right-0 z-[60] bg-zinc-50 dark:bg-zinc-950 border-b border-zinc-200 dark:border-zinc-800 px-4 py-4 md:px-10 md:py-6">
+      <header className={`fixed top-0 left-0 right-0 z-[60] bg-zinc-50 dark:bg-zinc-950 px-4 py-4 md:px-10 md:py-6 ${activeTool === 'journey' || activeTool === 'war-room' ? '' : 'border-b border-zinc-200 dark:border-zinc-800'}`}>
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4 md:gap-8">
-            <MotionButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={onBack} className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
+            <MotionButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={activeTool ? () => setActiveTool(null) : onBack} className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
               <ArrowLeft size={18} className="text-zinc-900 dark:text-white" />
             </MotionButton>
             <div className="hidden md:block h-10 w-px bg-zinc-200 dark:bg-zinc-800" />
@@ -1333,7 +1396,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         </div>
       </header>
 
-      <main className="flex-grow w-full max-w-4xl px-6 pt-16 relative z-10">
+      <main className={`flex-grow w-full max-w-4xl relative z-10 ${activeTool === 'journey' || activeTool === 'war-room' ? 'px-6 pt-0' : 'px-6 pt-16'}`}>
          <AnimatePresence mode="wait">
             {!activeTool ? (
                 <MotionDiv
@@ -1443,9 +1506,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                 >
-                    <MotionButton onClick={() => setActiveTool(null)} className="flex items-center gap-2 text-sm font-bold text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white mb-2">
-                        <ArrowLeft size={16} /> Back to Tools
-                    </MotionButton>
                     {currentTool?.component}
                 </MotionDiv>
             )}

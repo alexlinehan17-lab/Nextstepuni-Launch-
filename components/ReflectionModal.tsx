@@ -38,23 +38,26 @@ const GROWTH_KEYWORDS = [
 
 export function scoreReflection(text: string): ReflectionQuality {
   const trimmed = text.trim().toLowerCase();
+
+  // Handle confidence level selections (from the 5-option picker)
+  const confidenceLevels: Record<string, ReflectionQuality> = {
+    'lost': { lengthScore: 0.3, specificityScore: 0.3, growthScore: 0.5, tier: 'basic' },
+    'shaky': { lengthScore: 0.4, specificityScore: 0.4, growthScore: 0.5, tier: 'basic' },
+    'okay': { lengthScore: 0.5, specificityScore: 0.5, growthScore: 0.5, tier: 'thoughtful' },
+    'good': { lengthScore: 0.7, specificityScore: 0.7, growthScore: 0.7, tier: 'thoughtful' },
+    'confident': { lengthScore: 1, specificityScore: 1, growthScore: 1, tier: 'deep' },
+  };
+  if (confidenceLevels[trimmed]) return confidenceLevels[trimmed];
+
+  // Fallback: score free-text reflections (used by other parts of the app)
   const len = trimmed.length;
-
-  // Length score: 15 chars = 0.3, 50 = 0.7, 100+ = 1.0
   const lengthScore = len < 15 ? 0 : len < 50 ? 0.3 + ((len - 15) / 35) * 0.4 : Math.min(1, 0.7 + ((len - 50) / 50) * 0.3);
-
-  // Specificity: mentions subjects, strategies, specific topics
   const specificMatches = SPECIFICITY_KEYWORDS.filter(kw => trimmed.includes(kw));
   const specificityScore = Math.min(1, specificMatches.length * 0.25);
-
-  // Growth: contains reflective/forward-looking language
   const growthMatches = GROWTH_KEYWORDS.filter(kw => trimmed.includes(kw));
   const growthScore = Math.min(1, growthMatches.length * 0.3);
-
   const total = (lengthScore * 0.3) + (specificityScore * 0.35) + (growthScore * 0.35);
-
   const tier: ReflectionQuality['tier'] = total >= 0.6 ? 'deep' : total >= 0.35 ? 'thoughtful' : 'basic';
-
   return { lengthScore, specificityScore, growthScore, tier };
 }
 
@@ -125,7 +128,7 @@ const ReflectionModal: React.FC<ReflectionModalProps> = ({
   const totalPoints = Math.round(basePoints * streakMultiplier);
   const typeConfig = SESSION_TYPE_LABELS[sessionType] || SESSION_TYPE_LABELS['new-learning'];
   const TypeIcon = typeConfig.icon;
-  const isValid = text.trim().length >= MIN_CHARS;
+  const isValid = ['lost', 'shaky', 'okay', 'good', 'confident'].includes(text);
   const prompt = useMemo(() => getRotatingPrompt(), []);
 
   const handleSubmit = () => {
@@ -216,23 +219,39 @@ const ReflectionModal: React.FC<ReflectionModalProps> = ({
                 )}
               </div>
 
-              {/* Reflection textarea with rotating prompt */}
+              {/* Confidence level selector */}
               <div>
-                <label className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2 block">
-                  {prompt}
-                </label>
-                <textarea
-                  value={text}
-                  onChange={(e) => setText(e.target.value)}
-                  placeholder="e.g. Practiced integration by parts — struggled with choosing u and dv but got better after 3 examples..."
-                  className="w-full bg-zinc-50 dark:bg-white/[0.05] border border-zinc-200/50 dark:border-white/[0.1] rounded-xl py-3 px-4 text-zinc-900 dark:text-white/90 text-sm font-sans placeholder:text-zinc-400 dark:placeholder:text-white/30 focus:outline-none focus:border-purple-400/60 focus:ring-1 focus:ring-purple-400/30 transition-colors resize-none h-24"
-                  autoFocus
-                />
-                <p className={`text-[10px] mt-1.5 font-medium ${
-                  isValid ? 'text-emerald-500' : 'text-zinc-400 dark:text-zinc-500'
-                }`}>
-                  {text.trim().length}/{MIN_CHARS} characters minimum
+                <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#A8A29E' }}>
+                  How confident do you feel about this material now?
                 </p>
+                <div className="flex flex-col gap-2">
+                  {([
+                    { value: 'lost', label: 'Lost', desc: 'I don\'t understand this at all', color: '#DC2626' },
+                    { value: 'shaky', label: 'Shaky', desc: 'I get the basics but would struggle in an exam', color: '#E67E22' },
+                    { value: 'okay', label: 'Okay', desc: 'I could answer some questions on this', color: '#FDCB6E' },
+                    { value: 'good', label: 'Good', desc: 'I feel solid — could explain it to someone', color: '#2A7D6F' },
+                    { value: 'confident', label: 'Confident', desc: 'I could ace an exam question on this right now', color: '#276749' },
+                  ] as const).map(option => {
+                    const isSelected = text === option.value;
+                    return (
+                      <button
+                        key={option.value}
+                        onClick={() => setText(option.value)}
+                        className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-left transition-all"
+                        style={{
+                          backgroundColor: isSelected ? `${option.color}12` : '#FEFDFB',
+                          border: isSelected ? `2px solid ${option.color}` : '1px solid #EDEBE8',
+                        }}
+                      >
+                        <div className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: option.color }} />
+                        <div className="flex-1 min-w-0">
+                          <p className="text-sm font-semibold" style={{ color: isSelected ? option.color : '#1C1917' }}>{option.label}</p>
+                          <p className="text-[11px]" style={{ color: isSelected ? option.color : '#A8A29E' }}>{option.desc}</p>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
 
               {/* Submit */}

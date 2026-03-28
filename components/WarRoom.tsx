@@ -71,22 +71,23 @@ function genId(): string {
 // We use a CSS custom property set on the root for dark mode toggling.
 // For inline hex colors, we apply light mode by default.
 const CARD_STYLE: React.CSSProperties = {
-  backgroundColor: '#FAF7F4',
-  border: '0.5px solid rgba(0,0,0,0.07)',
-  borderRadius: 12,
+  backgroundColor: '#FEFDFB',
+  border: '1px solid #EDEBE8',
+  borderRadius: 14,
+  boxShadow: '0 1px 3px rgba(28,25,23,0.04)',
 };
-const CARD_CLASS = 'dark:!bg-[rgba(255,255,255,0.04)] dark:!border-[rgba(255,255,255,0.08)]';
+const CARD_CLASS = '';
 
 const CONFIDENCE_COLORS = {
-  'solid': 'bg-emerald-500 dark:bg-emerald-600',
-  'shaky': 'bg-amber-400 dark:bg-amber-500',
-  'not-started': 'bg-zinc-300 dark:bg-zinc-600',
+  'solid': 'bg-emerald-500',
+  'shaky': 'bg-amber-400',
+  'not-started': 'bg-zinc-300',
 } as const;
 
 const CONFIDENCE_TEXT_COLORS = {
-  'solid': 'text-emerald-700 dark:text-emerald-300',
-  'shaky': 'text-amber-700 dark:text-amber-300',
-  'not-started': 'text-zinc-500 dark:text-zinc-400',
+  'solid': 'text-emerald-700',
+  'shaky': 'text-amber-700',
+  'not-started': 'text-zinc-500',
 } as const;
 
 const CONFIDENCE_LABELS: Record<string, string> = {
@@ -240,82 +241,106 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
     );
   }
 
-  return (
-    <div className="space-y-6">
-      {/* Panel tabs */}
-      <div className="flex gap-1 bg-zinc-100 dark:bg-zinc-800/50 rounded-xl p-1">
-        {PANEL_TABS.map(tab => {
-          const Icon = tab.icon;
-          const isActive = activePanel === tab.id;
-          return (
-            <button
-              key={tab.id}
-              onClick={() => setActivePanel(tab.id)}
-              className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-lg text-xs font-medium transition-all ${
-                isActive
-                  ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-sm'
-                  : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
-              }`}
-            >
-              <Icon size={14} />
-              <span className="hidden sm:inline">{tab.label}</span>
-            </button>
-          );
-        })}
-      </div>
+  const phaseColorMain = daysUntilExam > 180 ? '#2A7D6F' : daysUntilExam > 90 ? '#D4891C' : daysUntilExam > 30 ? '#D4564E' : '#C5981A';
 
-      {/* Panel content */}
-      <AnimatePresence mode="wait">
-        <MotionDiv
-          key={activePanel}
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -8 }}
-          transition={{ duration: 0.2 }}
-        >
-          {activePanel === 0 && (
-            <CountdownPanel
-              daysUntilExam={daysUntilExam}
-              subjects={subjects}
-              allocations={allocations}
-              weeksUntilExam={weeksUntilExam}
-              hoursStudiedMap={hoursStudiedMap}
-              blockDuration={blockDuration}
-              mockResults={derivedMockResults}
-              targetCourse={targetCourse}
-              currentPoints={computeCurrentTotal(subjects)}
-            />
-          )}
-          {activePanel === 1 && (
-            <CoveragePanel
-              subjects={subjects}
-              topicMastery={topicMastery}
-              debriefs={debriefs}
-            />
-          )}
-          {activePanel === 2 && (
-            <TrajectoryPanel
-              subjects={subjects}
-              mockResults={derivedMockResults}
-              mockResultsHook={mockResultsHook}
-              daysUntilExam={daysUntilExam}
-            />
-          )}
-          {activePanel === 3 && (
-            <BriefingPanel
-              subjects={subjects}
-              topicMap={derivedTopicMap}
-              mockResults={derivedMockResults}
-              allocations={allocations}
-              hoursStudiedMap={hoursStudiedMap}
-              weeksUntilExam={weeksUntilExam}
-              blockDuration={blockDuration}
-              daysUntilExam={daysUntilExam}
-              timetableCompletions={timetableCompletions}
-            />
-          )}
-        </MotionDiv>
-      </AnimatePresence>
+  // Shared tab row component (rendered inside colour or on cream)
+  const tabRow = (onColor: boolean) => (
+    <div className="flex justify-center gap-1 px-4">
+      {PANEL_TABS.map(tab => {
+        const Icon = tab.icon;
+        const isActive = activePanel === tab.id;
+        return (
+          <button
+            key={tab.id}
+            onClick={() => setActivePanel(tab.id)}
+            className="flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg text-[13px] transition-all"
+            style={onColor ? {
+              backgroundColor: isActive ? 'rgba(255,255,255,0.18)' : 'transparent',
+              color: isActive ? '#fff' : 'rgba(255,255,255,0.55)',
+              fontWeight: isActive ? 700 : 500,
+            } : {
+              backgroundColor: isActive ? '#FEFDFB' : 'transparent',
+              color: isActive ? '#1C1917' : '#A8A29E',
+              fontWeight: isActive ? 700 : 500,
+              border: isActive ? '1px solid #EDEBE8' : '1px solid transparent',
+              boxShadow: isActive ? '0 1px 3px rgba(28,25,23,0.04)' : 'none',
+            }}
+          >
+            <Icon size={13} />
+            <span className="hidden sm:inline">{tab.label}</span>
+          </button>
+        );
+      })}
+    </div>
+  );
+
+  return (
+    <div>
+      {/* ── Colour header with integrated tabs ── */}
+      {activePanel === 0 ? (
+        /* Countdown: full hero with tabs inside */
+        <CountdownPanel
+          daysUntilExam={daysUntilExam}
+          subjects={subjects}
+          allocations={allocations}
+          weeksUntilExam={weeksUntilExam}
+          hoursStudiedMap={hoursStudiedMap}
+          blockDuration={blockDuration}
+          mockResults={derivedMockResults}
+          targetCourse={targetCourse}
+          currentPoints={computeCurrentTotal(subjects)}
+          tabRow={tabRow(true)}
+          phaseColor={phaseColorMain}
+        />
+      ) : (
+        /* Other tabs: short colour strip with tabs, then cream content */
+        <>
+          <div
+            className="relative overflow-hidden"
+            style={{
+              backgroundColor: phaseColorMain,
+              position: 'relative',
+              left: '50%',
+              right: '50%',
+              marginLeft: '-50vw',
+              marginRight: '-50vw',
+              width: '100vw',
+            }}
+          >
+            <div className="relative z-10 pt-16 md:pt-20 pb-5 max-w-4xl mx-auto">
+              {tabRow(true)}
+            </div>
+            {/* Wavy edge */}
+            <div className="absolute bottom-0 left-0 right-0" style={{ transform: 'translateY(1px)' }}>
+              <svg viewBox="0 0 1440 24" preserveAspectRatio="none" className="block w-full" style={{ height: 20 }}>
+                <path d="M0,12 C360,24 720,4 1080,16 C1260,22 1360,10 1440,14 L1440,24 L0,24 Z" fill="#FDF8F0" />
+              </svg>
+            </div>
+          </div>
+
+          <div className="pt-5">
+            <AnimatePresence mode="wait">
+              <MotionDiv
+                key={activePanel}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.2 }}
+              >
+                {activePanel === 1 && (
+                  <CoveragePanel subjects={subjects} topicMastery={topicMastery} debriefs={debriefs} />
+                )}
+                {activePanel === 2 && (
+                  <TrajectoryPanel subjects={subjects} mockResults={derivedMockResults} mockResultsHook={mockResultsHook} daysUntilExam={daysUntilExam} />
+                )}
+                {activePanel === 3 && (
+                  <BriefingPanel subjects={subjects} topicMap={derivedTopicMap} mockResults={derivedMockResults} allocations={allocations} hoursStudiedMap={hoursStudiedMap} weeksUntilExam={weeksUntilExam} blockDuration={blockDuration} daysUntilExam={daysUntilExam} timetableCompletions={timetableCompletions} />
+                )}
+              </MotionDiv>
+            </AnimatePresence>
+          </div>
+        </>
+      )}
     </div>
   );
 };
@@ -332,9 +357,11 @@ interface CountdownPanelProps {
   mockResults: MockResult[];
   targetCourse?: CAOCourse | null;
   currentPoints?: number;
+  tabRow?: React.ReactNode;
+  phaseColor?: string;
 }
 
-const CountdownPanel: React.FC<CountdownPanelProps> = ({ daysUntilExam, subjects, allocations, weeksUntilExam, hoursStudiedMap, blockDuration, mockResults, targetCourse, currentPoints }) => {
+const CountdownPanel: React.FC<CountdownPanelProps> = ({ daysUntilExam, subjects, allocations, weeksUntilExam, hoursStudiedMap, blockDuration, mockResults, targetCourse, currentPoints, tabRow, phaseColor: phaseColorProp }) => {
   // Derive effective current grade from latest mock results (falls back to profile)
   const latestGradeMap = useMemo(() => {
     const map: Record<string, string> = {};
@@ -367,41 +394,76 @@ const CountdownPanel: React.FC<CountdownPanelProps> = ({ daysUntilExam, subjects
   const totalStudied = subjectBudgets.reduce((sum, s) => sum + s.hoursStudied, 0);
   const totalRemaining = subjectBudgets.reduce((sum, s) => sum + s.hoursRemaining, 0);
 
+  const phaseColor = phaseColorProp || (daysUntilExam > 180 ? '#2A7D6F' : daysUntilExam > 90 ? '#D4891C' : daysUntilExam > 30 ? '#D4564E' : '#C5981A');
+
   return (
-    <div className="space-y-6">
-      {/* Hero countdown */}
-      <div className={`text-center py-8 backdrop-blur-2xl ${CARD_CLASS}`} style={CARD_STYLE}>
-        <motion.p
-          className="text-6xl font-bold tabular-nums"
-          style={{ color: '#2A7D6F' }}
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-        >
-          {daysUntilExam}
-        </motion.p>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1 font-medium">days until exams</p>
-        <div className="flex items-center justify-center gap-4 mt-4 text-xs text-zinc-400 dark:text-zinc-500">
-          <span>{Math.round(totalStudied)}h studied</span>
-          <span className="w-1 h-1 rounded-full bg-zinc-300 dark:bg-zinc-600" />
-          <span>~{Math.round(totalRemaining)}h remaining</span>
+    <div>
+      {/* ── Full-bleed hero with integrated tabs ── */}
+      <div
+        className="relative overflow-hidden mb-5"
+        style={{
+          backgroundColor: phaseColor,
+          position: 'relative',
+          left: '50%',
+          right: '50%',
+          marginLeft: '-50vw',
+          marginRight: '-50vw',
+          width: '100vw',
+        }}
+      >
+        {/* Decorative blobs */}
+        <div className="absolute pointer-events-none" style={{ top: -50, right: -40, width: 240, height: 240, borderRadius: '50%', background: 'rgba(255,255,255,0.07)' }} />
+        <div className="absolute pointer-events-none" style={{ bottom: -30, left: -50, width: 180, height: 180, borderRadius: '50%', background: 'rgba(0,0,0,0.05)' }} />
+        <div className="absolute pointer-events-none" style={{ top: 30, right: 80, width: 60, height: 60, borderRadius: '50%', background: 'rgba(255,255,255,0.05)' }} />
+
+        <div className="relative z-10">
+          {/* Tab row — inside the colour field, padded below fixed nav */}
+          <div className="pt-16 md:pt-20 pb-2">
+            {tabRow}
+          </div>
+
+          {/* Countdown hero */}
+          <div className="text-center py-6 px-6">
+            <motion.p
+              className="font-apercu font-black tabular-nums"
+              style={{ fontSize: 'clamp(96px, 20vw, 140px)', color: '#fff', lineHeight: 1, letterSpacing: '-0.03em' }}
+              initial={{ scale: 0.85, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            >
+              {daysUntilExam}
+            </motion.p>
+            <p className="text-base font-medium mt-1" style={{ color: 'rgba(255,255,255,0.7)' }}>days until exams</p>
+            <div className="flex items-center justify-center gap-4 mt-2 text-xs" style={{ color: 'rgba(255,255,255,0.45)' }}>
+              <span>{Math.round(totalStudied)}h studied</span>
+              <span className="w-1 h-1 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.3)' }} />
+              <span>~{Math.round(totalRemaining)}h remaining</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Wavy bottom edge */}
+        <div className="absolute bottom-0 left-0 right-0" style={{ transform: 'translateY(1px)' }}>
+          <svg viewBox="0 0 1440 40" preserveAspectRatio="none" className="block w-full" style={{ height: 36 }}>
+            <path d="M0,20 C360,40 720,8 1080,28 C1260,38 1360,18 1440,24 L1440,40 L0,40 Z" fill="#FDF8F0" />
+          </svg>
         </div>
       </div>
 
-      {/* Target Course banner (from Future Finder) */}
+      {/* ── Target Course banner ── */}
       {targetCourse && currentPoints !== undefined && (
-        <div className={`px-4 py-3.5 ${CARD_CLASS}`} style={CARD_STYLE}>
+        <div className="px-4 py-3 mb-4 rounded-2xl" style={{ backgroundColor: '#FEFDFB', border: '1px solid #EDEBE8', boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
           <div className="flex items-center justify-between">
             <div className="min-w-0">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-0.5">Target Course</p>
-              <p className="text-sm font-semibold truncate" style={{ color: '#2A7D6F' }}>{targetCourse.title}</p>
-              <p className="text-[10px] text-zinc-500 dark:text-zinc-400">{targetCourse.institution} &middot; {targetCourse.typicalPoints} pts required</p>
+              <p className="text-[10px] font-bold uppercase tracking-widest mb-0.5" style={{ color: '#A8A29E' }}>Target Course</p>
+              <p className="text-sm font-semibold truncate" style={{ color: '#1C1917' }}>{targetCourse.title}</p>
+              <p className="text-[10px]" style={{ color: '#A8A29E' }}>{targetCourse.institution} · {targetCourse.typicalPoints} pts required</p>
             </div>
             <div className="text-right shrink-0 ml-3">
               {currentPoints >= targetCourse.typicalPoints ? (
-                <span className="text-xs font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: 'rgba(107,143,113,0.12)', color: '#6B8F71' }}>On target</span>
+                <span className="text-[10px] font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: '#DEF7EC', color: '#276749' }}>On target</span>
               ) : (
-                <span className="text-xs font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: '#FDF3E7', color: '#8B5E2A' }}>
+                <span className="text-[10px] font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: '#FDE8E8', color: '#C53030' }}>
                   {targetCourse.typicalPoints - currentPoints}pt gap
                 </span>
               )}
@@ -410,45 +472,47 @@ const CountdownPanel: React.FC<CountdownPanelProps> = ({ daysUntilExam, subjects
         </div>
       )}
 
-      {/* Per-subject status — time budget + grade status */}
-      <div className="space-y-3">
-        <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Subject Status</p>
-        {[...subjectBudgets].sort((a, b) => b.gap - a.gap).map(s => {
-          const color = getSubjectColor(s.subjectName);
-          return (
-            <div key={s.subjectName} className={`px-4 py-3 ${CARD_CLASS}`} style={CARD_STYLE}>
-              <div className="flex items-center justify-between mb-1.5">
-                <div className="flex items-center gap-2">
-                  <div className={`w-2.5 h-2.5 rounded-full ${color.dot} shrink-0`} />
-                  <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">{s.subjectName}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-[10px] text-zinc-400 dark:text-zinc-500">{s.latestGrade} → {s.targetGrade}</span>
+      {/* ── Subject status — tight Mercury rows ── */}
+      <div>
+        <p className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: '#A8A29E' }}>Subject Status</p>
+        <div className="rounded-2xl overflow-hidden" style={{ backgroundColor: '#FEFDFB', border: '1px solid #EDEBE8', boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
+          {[...subjectBudgets].sort((a, b) => b.gap - a.gap).map((s, sIdx) => {
+            const hex = getDistinctSubjectHex(s.subjectName, subjects.findIndex(sub => sub.subjectName === s.subjectName) ?? sIdx);
+            const isLast = sIdx === subjectBudgets.length - 1;
+            return (
+              <div
+                key={s.subjectName}
+                className="px-4 py-2"
+                style={{ borderBottom: isLast ? 'none' : '1px solid #F0EFED' }}
+              >
+                <div className="flex items-center gap-2.5">
+                  <div className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: hex }} />
+                  <span className="text-[13px] font-semibold flex-1 min-w-0 truncate" style={{ color: '#1C1917' }}>{s.subjectName}</span>
+                  <span className="text-[10px] tabular-nums" style={{ color: '#A8A29E' }}>{s.latestGrade} → {s.targetGrade}</span>
                   {s.gap <= 0 ? (
-                    <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full" style={{ backgroundColor: 'rgba(107,143,113,0.12)', color: '#6B8F71' }}>On target</span>
+                    <span className="text-[9px] font-bold px-2 py-0.5 rounded-full" style={{ backgroundColor: '#DEF7EC', color: '#276749' }}>On target</span>
                   ) : (
-                    <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full" style={{ backgroundColor: '#FDF3E7', color: '#8B5E2A' }}>{s.gap}pt gap</span>
+                    <span className="text-[9px] font-bold px-2 py-0.5 rounded-full" style={{ backgroundColor: '#FDE8E8', color: '#C53030' }}>{s.gap}pt gap</span>
                   )}
                 </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: '#EDEAE6' }}>
-                  <motion.div
-                    className="h-full rounded-full"
-                    style={{ backgroundColor: '#2A7D6F' }}
-                    initial={{ width: 0 }}
-                    animate={{ width: `${s.pct}%` }}
-                    transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                  />
+                <div className="flex items-center gap-2.5 mt-1 ml-[22px]">
+                  <div className="flex-1 h-[6px] rounded-full overflow-hidden" style={{ backgroundColor: '#E8E4DF' }}>
+                    <motion.div
+                      className="h-full rounded-full"
+                      style={{ backgroundColor: hex }}
+                      initial={{ width: 0 }}
+                      animate={{ width: `${s.pct}%` }}
+                      transition={{ duration: 0.6, delay: sIdx * 0.04, ease: [0.16, 1, 0.3, 1] }}
+                    />
+                  </div>
+                  <span className="text-[9px] tabular-nums shrink-0" style={{ color: '#C4C0BC' }}>
+                    {Math.round(s.hoursStudied)}h / {Math.round(s.totalHours)}h
+                  </span>
                 </div>
-                <span className="text-[10px] text-zinc-400 dark:text-zinc-500 tabular-nums w-20 text-right">
-                  {Math.round(s.hoursStudied)}h / {Math.round(s.totalHours)}h
-                </span>
               </div>
-              <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-1">{s.sessionsPerWeek} session{s.sessionsPerWeek !== 1 ? 's' : ''}/week</p>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );
@@ -581,26 +645,27 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
 
   return (
     <div className="space-y-5">
-      {/* Subject selector */}
-      <div className="flex flex-wrap gap-2">
-        {subjects.map(s => {
-          const color = getSubjectColor(s.subjectName);
+      {/* Subject selector — selected pill uses subject colour as fill */}
+      <div className="flex flex-wrap gap-1.5">
+        {subjects.map((s, sIdx) => {
+          const hex = getDistinctSubjectHex(s.subjectName, sIdx);
           const isActive = selectedSubject === s.subjectName;
           const stats = allSubjectStats.find(x => x.subjectName === s.subjectName);
+          const showPct = stats && stats.total > 0 && stats.pct > 0;
           return (
             <button
               key={s.subjectName}
               onClick={() => setSelectedSubject(s.subjectName)}
-              className={`inline-flex items-center gap-1.5 px-3 py-2 rounded-full text-[12px] font-semibold transition-all ${
-                isActive
-                  ? `${color.bg} ${color.text} ring-1 ring-inset ${color.border}`
-                  : 'bg-white dark:bg-zinc-900 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800/60'
-              }`}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[12px] font-semibold transition-all"
+              style={isActive
+                ? { backgroundColor: hex, color: '#fff' }
+                : { backgroundColor: '#F0EDE8', color: '#57534E' }
+              }
             >
-              <span className={`w-2 h-2 rounded-full ${color.dot}`} />
+              {!isActive && <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: hex }} />}
               {s.subjectName}
-              {stats && stats.total > 0 && (
-                <span className="text-[10px] opacity-60">{stats.pct}%</span>
+              {showPct && (
+                <span className="text-[10px]" style={{ opacity: isActive ? 0.7 : 0.5 }}>{stats.pct}%</span>
               )}
             </button>
           );
@@ -632,18 +697,20 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
       {currentStats && currentStats.total > 0 && (
         <div className="flex items-center gap-3 text-xs">
           <span className="flex items-center gap-1">
-            <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
-            <span className="text-zinc-500 dark:text-zinc-400">{currentStats.solid} solid</span>
+            <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#22c55e' }} />
+            <span style={{ color: '#57534E' }}><span className="font-bold" style={{ color: '#276749' }}>{currentStats.solid}</span> solid</span>
           </span>
           <span className="flex items-center gap-1">
-            <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
-            <span className="text-zinc-500 dark:text-zinc-400">{currentStats.shaky} shaky</span>
+            <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#f59e0b' }} />
+            <span style={{ color: '#57534E' }}><span className="font-bold" style={{ color: '#92600A' }}>{currentStats.shaky}</span> shaky</span>
           </span>
           <span className="flex items-center gap-1">
-            <span className="w-2.5 h-2.5 rounded-full bg-zinc-300 dark:bg-zinc-600" />
-            <span className="text-zinc-500 dark:text-zinc-400">{currentStats.notStarted} not started</span>
+            <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#d4d0ca' }} />
+            <span style={{ color: '#57534E' }}><span className="font-bold" style={{ color: '#6B6B6B' }}>{currentStats.notStarted}</span> not started</span>
           </span>
-          <span className="ml-auto font-bold" style={{ color: '#2A7D6F' }}>{currentStats.pct}% covered</span>
+          <span className="ml-auto font-bold" style={{ color: currentStats.pct >= 50 ? '#2A7D6F' : currentStats.pct >= 25 ? '#92600A' : '#C53030' }}>
+            {currentStats.pct}% covered
+          </span>
         </div>
       )}
 
@@ -651,30 +718,41 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
       {topics.length > 0 ? (
         <>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-            {topics.map(topic => (
-              <div
-                key={topic.id}
-                className={`group relative p-3 cursor-pointer hover:shadow-sm transition-all ${CARD_CLASS}`}
-                style={CARD_STYLE}
-                onClick={() => cycleConfidence(topic.name)}
-              >
-                <div className="flex items-start gap-2">
-                  <div className={`w-3 h-3 rounded-full mt-0.5 shrink-0 ${CONFIDENCE_COLORS[topic.confidence]}`} />
-                  <div className="flex-1 min-w-0">
-                    <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 truncate">{topic.name}</p>
-                    <p className={`text-[10px] font-medium ${CONFIDENCE_TEXT_COLORS[topic.confidence]}`}>
-                      {CONFIDENCE_LABELS[topic.confidence]}
-                    </p>
-                  </div>
-                </div>
-                <button
-                  onClick={(e) => { e.stopPropagation(); removeTopic(topic.name); }}
-                  className="absolute top-1 right-1 w-5 h-5 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 text-zinc-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-900/30 transition-all"
+            {topics.map(topic => {
+              const statusBorder = topic.confidence === 'solid' ? '#22c55e' : topic.confidence === 'shaky' ? '#f59e0b' : '#d4d0ca';
+              const isNotStarted = topic.confidence === 'not-started';
+              return (
+                <div
+                  key={topic.id}
+                  className="group relative p-3 cursor-pointer hover:shadow-sm transition-all"
+                  style={{
+                    backgroundColor: '#FEFDFB',
+                    border: '1px solid #EDEBE8',
+                    borderLeft: `4px solid ${statusBorder}`,
+                    borderRadius: 10,
+                    opacity: isNotStarted ? 0.65 : 1,
+                  }}
+                  onClick={() => cycleConfidence(topic.name)}
                 >
-                  <X size={10} />
-                </button>
-              </div>
-            ))}
+                  <div className="flex items-start gap-2">
+                    <div className="w-2.5 h-2.5 rounded-full mt-0.5 shrink-0" style={{ backgroundColor: statusBorder }} />
+                    <div className="flex-1 min-w-0">
+                      <p className="text-xs font-semibold truncate" style={{ color: isNotStarted ? '#A8A29E' : '#1C1917' }}>{topic.name}</p>
+                      <p className="text-[10px] font-medium" style={{ color: topic.confidence === 'solid' ? '#276749' : topic.confidence === 'shaky' ? '#92600A' : '#6B6B6B' }}>
+                        {CONFIDENCE_LABELS[topic.confidence]}
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); removeTopic(topic.name); }}
+                    className="absolute top-1 right-1 w-5 h-5 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all"
+                    style={{ color: '#A8A29E' }}
+                  >
+                    <X size={10} />
+                  </button>
+                </div>
+              );
+            })}
           </div>
           {/* Debrief-seeded topic suggestions */}
           {debriefTopics.length > 0 && (
@@ -803,24 +881,29 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
       {/* Coverage heatmap overview (all subjects) */}
       {allSubjectStats.some(s => s.total > 0) && (
         <div className={`p-4 space-y-3 ${CARD_CLASS}`} style={CARD_STYLE}>
-          <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">All Subjects Overview</p>
-          {allSubjectStats.filter(s => s.total > 0).map(s => {
-            const color = getSubjectColor(s.subjectName);
+          <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">All Subjects Overview</p>
+          {allSubjectStats.filter(s => s.total > 0).map((s, sIdx, arr) => {
+            const hex = getDistinctSubjectHex(s.subjectName, subjects.findIndex(sub => sub.subjectName === s.subjectName) ?? sIdx);
+            const pctColor = s.pct >= 50 ? '#2A7D6F' : s.pct >= 25 ? '#92600A' : '#C53030';
+            const isLast = sIdx === arr.length - 1;
             return (
-              <div key={s.subjectName} className="space-y-1">
-                <div className="flex items-center justify-between">
+              <div key={s.subjectName} className="pb-2.5 mb-2.5" style={{ borderBottom: isLast ? 'none' : '1px solid #F0EFED' }}>
+                <div className="flex items-center justify-between mb-1">
                   <div className="flex items-center gap-2">
-                    <span className={`w-2 h-2 rounded-full ${color.dot}`} />
-                    <span className="text-xs font-semibold text-zinc-600 dark:text-zinc-400">{s.subjectName}</span>
+                    <span className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: hex }} />
+                    <span className="text-xs font-semibold" style={{ color: '#1C1917' }}>{s.subjectName}</span>
                   </div>
-                  <span className="text-[10px] font-bold" style={{ color: '#2A7D6F' }}>{s.pct}%</span>
+                  <span className="text-[10px] font-bold" style={{ color: pctColor }}>{s.pct}%</span>
                 </div>
                 {/* Mini heatmap row */}
-                <div className="flex gap-0.5">
+                <div className="flex gap-0.5 ml-5">
                   {(topicMap[s.subjectName] || []).map(t => (
                     <div
                       key={t.id}
-                      className={`h-2.5 rounded-sm flex-1 ${CONFIDENCE_COLORS[t.confidence]}`}
+                      className="h-2.5 rounded-sm flex-1"
+                      style={{
+                        backgroundColor: t.confidence === 'solid' ? '#22c55e' : t.confidence === 'shaky' ? '#f59e0b' : '#E0DCD6',
+                      }}
                       title={`${t.name}: ${CONFIDENCE_LABELS[t.confidence]}`}
                     />
                   ))}
@@ -1184,68 +1267,60 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
         </div>
       )}
 
-      {/* Gap analysis per subject */}
-      <div className="space-y-2">
-        {subjects.map((s, sIdx) => {
-          const results = resultsBySubject[s.subjectName] || [];
-          const latest = results[results.length - 1];
-          const targetPts = getPointsForGrade(s.targetGrade, false);
-          const currentPts = latest ? gradeToPoints(latest.grade) : null;
-          const hexColor = getDistinctSubjectHex(s.subjectName, sIdx);
-          const gap = currentPts !== null ? targetPts - currentPts : null;
+      {/* Subject status — compact rows in one card, NO left borders */}
+      <div>
+        <p className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: '#A8A29E' }}>Subject Status</p>
+        <div className="rounded-2xl overflow-hidden" style={{ backgroundColor: '#FEFDFB', border: '1px solid #EDEBE8', boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
+          {[...subjects].map((s, sIdx) => {
+            const results = resultsBySubject[s.subjectName] || [];
+            const latest = results[results.length - 1];
+            const targetPts = getPointsForGrade(s.targetGrade, false);
+            const currentPts = latest ? gradeToPoints(latest.grade) : null;
+            const hexColor = getDistinctSubjectHex(s.subjectName, sIdx);
+            const gap = currentPts !== null ? targetPts - currentPts : null;
+            return { s, latest, currentPts, hexColor, gap, targetPts };
+          }).sort((a, b) => {
+            // Gaps first (largest gap at top), then on-target, then no data
+            const gA = a.gap ?? 999;
+            const gB = b.gap ?? 999;
+            if (gA <= 0 && gB > 0) return 1;
+            if (gA > 0 && gB <= 0) return -1;
+            return gB - gA;
+          }).map((item, idx, arr) => {
+            const { s, latest, currentPts, hexColor, gap } = item;
+            const isLast = idx === arr.length - 1;
+            const ptsColor = gap !== null && gap <= 0 ? '#2A7D6F' : gap !== null && gap > 0 ? '#C53030' : '#1C1917';
 
-          return (
-            <div key={s.subjectName} className={`flex items-center gap-3 px-4 py-3 ${CARD_CLASS}`} style={CARD_STYLE}>
-              <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: hexColor }} />
-              <div className="flex-1 min-w-0">
-                <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">{s.subjectName}</span>
-                {latest ? (
-                  <span className="text-xs text-zinc-400 dark:text-zinc-500 ml-2">
-                    Latest: {latest.grade} (<span style={{ color: '#2A7D6F' }}>{currentPts} pts</span>)
-                    {latest.label && ` — ${latest.label}`}
-                  </span>
-                ) : (
-                  <span className="text-xs text-zinc-400 dark:text-zinc-500 ml-2">No results logged</span>
-                )}
-              </div>
-              <div className="text-right shrink-0">
-                <span className="text-[10px] text-zinc-400 dark:text-zinc-500">Target: {s.targetGrade}</span>
-                {gap !== null && (
-                  <p className="text-xs font-bold" style={{ color: gap <= 0 ? '#6B8F71' : '#C4873B' }}>
-                    {gap <= 0 ? 'On target' : `${gap} pts gap`}
-                  </p>
-                )}
-              </div>
-            </div>
-          );
-        })}
-      </div>
-
-      {/* Results history */}
-      {mockResults.length > 0 && (
-        <div className="space-y-2">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">History</p>
-          {[...mockResults].filter(r => r.subject && r.grade && r.date).reverse().slice(0, 20).map(r => {
-            const subjectIdx = subjects.findIndex(s => s.subjectName === r.subject);
-            const hexColor = getDistinctSubjectHex(r.subject, subjectIdx >= 0 ? subjectIdx : 0);
             return (
-              <div key={r.id} className="group flex items-center gap-3 px-3 py-2 rounded-lg bg-zinc-50 dark:bg-zinc-800/50">
-                <span className="w-2 h-2 rounded-full" style={{ backgroundColor: hexColor }} />
-                <span className="text-xs font-semibold text-zinc-600 dark:text-zinc-400 w-24 truncate">{r.subject}</span>
-                <span className="text-xs font-bold text-zinc-700 dark:text-zinc-300">{r.grade}</span>
-                <span className="text-[10px] text-zinc-400 dark:text-zinc-500">{r.date}</span>
-                {r.label && <span className="text-[10px] text-zinc-400 dark:text-zinc-500 italic">{r.label}</span>}
-                <button
-                  onClick={() => removeResult(r.id)}
-                  className="ml-auto opacity-0 group-hover:opacity-100 text-zinc-400 hover:text-red-500 transition-all"
-                >
-                  <X size={12} />
-                </button>
+              <div
+                key={s.subjectName}
+                className="flex items-center gap-2.5 px-4 py-1.5"
+                style={{ borderBottom: isLast ? 'none' : '1px solid #F0EFED' }}
+              >
+                <div className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: hexColor }} />
+                <span className="text-[13px] font-semibold flex-1 min-w-0 truncate" style={{ color: '#1C1917' }}>{s.subjectName}</span>
+                {latest ? (
+                  <>
+                    <span className="text-[10px]" style={{ color: '#C4C0BC' }}>{latest.grade}</span>
+                    <span className="text-[11px] font-bold tabular-nums" style={{ color: ptsColor }}>{currentPts}pts</span>
+                  </>
+                ) : (
+                  <span className="text-[10px]" style={{ color: '#C4C0BC' }}>—</span>
+                )}
+                {gap !== null ? (
+                  gap <= 0 ? (
+                    <span className="text-[9px] font-bold px-2 py-0.5 rounded-full" style={{ backgroundColor: '#DEF7EC', color: '#276749' }}>On target</span>
+                  ) : (
+                    <span className="text-[9px] font-bold px-2 py-0.5 rounded-full" style={{ backgroundColor: '#FDE8E8', color: '#C53030' }}>{gap}pt gap</span>
+                  )
+                ) : (
+                  <span className="text-[10px]" style={{ color: '#A8A29E' }}>{s.targetGrade}</span>
+                )}
               </div>
             );
           })}
         </div>
-      )}
+      </div>
 
       {mockResults.length === 0 && (
         <div className="text-center py-12 space-y-4">
@@ -1264,22 +1339,38 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
 
 // ── SVG Trajectory Chart ───────────────────────────────────
 
+// Maximally distinct chart colours — spread across the colour spectrum
+const CHART_COLORS: Record<string, string> = {
+  'Politics & Society': '#E84393', 'Religious Education': '#D63384',
+  'Business': '#0984E3', 'Economics': '#E5A41E',
+  'Applied Maths': '#6C5CE7', 'Applied Mathematics': '#6C5CE7',
+  'Mathematics': '#2D3436', 'English': '#00B894',
+  'Irish': '#10B981', 'French': '#0ea5e9', 'German': '#eab308',
+  'Spanish': '#f97316', 'Physics': '#06b6d4', 'Chemistry': '#14b8a6',
+  'Biology': '#84cc16', 'History': '#a855f7', 'Geography': '#059669',
+  'Accounting': '#f59e0b', 'Home Economics': '#fb923c',
+  'Music': '#f472b6', 'Art': '#fb7185',
+};
+
+function getChartColor(name: string, fallbackIdx: number): string {
+  return CHART_COLORS[name] || getDistinctSubjectHex(name, fallbackIdx);
+}
+
 interface TrajectoryChartProps {
   subjects: StudentSubjectProfile['subjects'];
   resultsBySubject: Record<string, MockResult[]>;
 }
 
 const TrajectoryChart: React.FC<TrajectoryChartProps> = ({ subjects, resultsBySubject }) => {
-  const [hoveredLine, setHoveredLine] = useState<string | null>(null);
-  const [hoveredDot, setHoveredDot] = useState<{ id: string; cx: number; cy: number; label: string; subject: string; grade: string } | null>(null);
+  const [hoveredSubject, setHoveredSubject] = useState<string | null>(null);
+  const [hoveredDot, setHoveredDot] = useState<{ id: string; cx: number; cy: number; label: string } | null>(null);
 
-  const W = 400;
-  const H = 200;
-  const PAD = { top: 15, right: 15, bottom: 25, left: 35 };
+  const W = 520;
+  const H = 320;
+  const PAD = { top: 20, right: 50, bottom: 35, left: 40 };
   const plotW = W - PAD.left - PAD.right;
   const plotH = H - PAD.top - PAD.bottom;
 
-  // Collect all dates and find range
   const allResults = Object.values(resultsBySubject).flat();
   if (allResults.length === 0) return null;
 
@@ -1287,107 +1378,100 @@ const TrajectoryChart: React.FC<TrajectoryChartProps> = ({ subjects, resultsBySu
   if (dates.length === 0) return null;
   const minDate = Math.min(...dates);
   const maxDate = Math.max(...dates);
-  const dateRange = maxDate - minDate || 86400000; // at least 1 day
+  const dateRange = maxDate - minDate || 86400000;
 
-  const maxPts = 100; // H1 = 100 CAO points
-  const minPts = 0;
+  const maxPts = 100;
+  const yLabels = [0, 25, 50, 75, 100];
 
   const scaleX = (date: string) => {
     const t = new Date(date).getTime();
     return PAD.left + ((t - minDate) / dateRange) * plotW;
   };
-  const scaleY = (pts: number) => {
-    return PAD.top + plotH - ((pts - minPts) / (maxPts - minPts)) * plotH;
-  };
+  const scaleY = (pts: number) => PAD.top + plotH - (pts / maxPts) * plotH;
 
-  // Y-axis labels
-  const yLabels = [0, 25, 50, 75, 100];
-
-  // Build subject index for distinct colors
   const subjectsWithResults = subjects.filter(s => resultsBySubject[s.subjectName]?.length);
   const subjectIndexMap: Record<string, number> = {};
   subjects.forEach((s, i) => { subjectIndexMap[s.subjectName] = i; });
+
+  // Target line (use first subject's target as representative)
+  const targetPts = subjectsWithResults.length > 0 ? getPointsForGrade(subjectsWithResults[0].targetGrade, false) : 0;
+
+  // Unique dates for x-axis labels
+  const uniqueDates = [...new Set(allResults.map(r => r.date))].sort();
 
   return (
     <div className="space-y-3">
       <svg
         viewBox={`0 0 ${W} ${H}`}
         className="w-full"
-        style={{ maxHeight: 220 }}
-        onMouseLeave={() => { setHoveredLine(null); setHoveredDot(null); }}
+        style={{ maxHeight: 340 }}
+        onMouseLeave={() => { setHoveredSubject(null); setHoveredDot(null); }}
       >
-        {/* Grid lines */}
+        {/* Horizontal grid lines */}
         {yLabels.map(pts => (
           <g key={pts}>
-            <line
-              x1={PAD.left} y1={scaleY(pts)}
-              x2={W - PAD.right} y2={scaleY(pts)}
-              stroke="currentColor" className="text-zinc-200 dark:text-zinc-700" strokeWidth="0.5"
-            />
-            <text x={PAD.left - 5} y={scaleY(pts) + 3} textAnchor="end" className="text-zinc-400 dark:text-zinc-500 fill-current" fontSize="8">
-              {pts}
-            </text>
+            <line x1={PAD.left} y1={scaleY(pts)} x2={W - PAD.right} y2={scaleY(pts)} stroke="#F0EDE8" strokeWidth="0.5" />
+            <text x={PAD.left - 6} y={scaleY(pts) + 3} textAnchor="end" fill="#A8A29E" fontSize="9">{pts}</text>
           </g>
         ))}
 
+        {/* X-axis date labels */}
+        {uniqueDates.map(d => (
+          <text key={d} x={scaleX(d)} y={H - 8} textAnchor="middle" fill="#A8A29E" fontSize="9">
+            {new Date(d).toLocaleDateString('en-IE', { day: 'numeric', month: 'short' })}
+          </text>
+        ))}
+
+        {/* Target dashed line */}
+        {targetPts > 0 && (
+          <g>
+            <line x1={PAD.left} y1={scaleY(targetPts)} x2={W - PAD.right} y2={scaleY(targetPts)} stroke="#B8B0A6" strokeWidth="1" strokeDasharray="4 3" opacity="0.4" />
+            <text x={W - PAD.right + 4} y={scaleY(targetPts) + 3} fill="#B8B0A6" fontSize="9">Target</text>
+          </g>
+        )}
+
         {/* Subject lines */}
-        {subjects.map(s => {
+        {subjectsWithResults.map(s => {
           const results = resultsBySubject[s.subjectName];
           if (!results || results.length < 1) return null;
-          const hexColor = getDistinctSubjectHex(s.subjectName, subjectIndexMap[s.subjectName] ?? 0);
-          const points = results.map(r => `${scaleX(r.date)},${scaleY(gradeToPoints(r.grade))}`).join(' ');
-          const isHovered = hoveredLine === s.subjectName;
-          const isFaded = hoveredLine !== null && !isHovered;
+          const hexColor = getChartColor(s.subjectName, subjectIndexMap[s.subjectName] ?? 0);
+          const isHovered = hoveredSubject === s.subjectName;
+          const isFaded = hoveredSubject !== null && !isHovered;
 
-          // Target line
-          const targetPts = getPointsForGrade(s.targetGrade, false);
+          // Build polyline points
+          const pts = results.map(r => ({
+            x: scaleX(r.date),
+            y: scaleY(gradeToPoints(r.grade)),
+            grade: r.grade,
+            date: r.date,
+            id: r.id,
+            points: gradeToPoints(r.grade),
+          }));
+          const polyPoints = pts.map(p => `${p.x},${p.y}`).join(' ');
 
           return (
-            <g key={s.subjectName} style={{ opacity: isFaded ? 0.15 : 1, transition: 'opacity 0.2s' }}>
-              {/* Target dashed line */}
-              <line
-                x1={PAD.left} y1={scaleY(targetPts)}
-                x2={W - PAD.right} y2={scaleY(targetPts)}
-                stroke={hexColor} strokeWidth="1" strokeDasharray="4 3" opacity="0.3"
-              />
-              {/* Invisible wide hit area for hover */}
-              {results.length > 1 && (
-                <polyline
-                  points={points}
-                  fill="none"
-                  stroke="transparent"
-                  strokeWidth="12"
-                  strokeLinecap="round"
-                  onMouseEnter={() => setHoveredLine(s.subjectName)}
-                  style={{ cursor: 'pointer' }}
-                />
-              )}
-              {/* Visible data polyline */}
-              {results.length > 1 && (
-                <polyline
-                  points={points}
-                  fill="none"
-                  stroke={hexColor}
-                  strokeWidth={isHovered ? 3 : 2}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  style={{ pointerEvents: 'none', transition: 'stroke-width 0.2s' }}
-                />
+            <g key={s.subjectName} style={{ opacity: isFaded ? 0.1 : 1, transition: 'opacity 0.2s' }}>
+              {/* Polyline — only if 2+ results */}
+              {pts.length > 1 && (
+                <>
+                  <polyline points={polyPoints} fill="none" stroke="transparent" strokeWidth="14" strokeLinecap="round" onMouseEnter={() => setHoveredSubject(s.subjectName)} style={{ cursor: 'pointer' }} />
+                  <polyline points={polyPoints} fill="none" stroke={hexColor} strokeWidth={isHovered ? 3 : 2} strokeLinecap="round" strokeLinejoin="round" style={{ pointerEvents: 'none' }} />
+                </>
               )}
               {/* Data points */}
-              {results.map(r => {
-                const cx = scaleX(r.date);
-                const cy = scaleY(gradeToPoints(r.grade));
-                const dotLabel = r.label || `${r.grade} — ${r.date}`;
+              {pts.map(p => {
+                const formatted = new Date(p.date).toLocaleDateString('en-IE', { day: 'numeric', month: 'short' });
+                const label = `${s.subjectName}: ${p.grade} (${p.points}pts) — ${formatted}`;
+                const isDotHovered = hoveredDot?.id === p.id;
                 return (
                   <circle
-                    key={r.id}
-                    cx={cx} cy={cy} r={hoveredDot?.id === r.id ? 6 : 4}
-                    stroke={hexColor}
-                    fill="white"
+                    key={p.id}
+                    cx={p.x} cy={p.y} r={isDotHovered ? 6 : 4}
+                    fill={hexColor}
+                    stroke="#FEFDFB"
                     strokeWidth="2"
                     style={{ cursor: 'pointer', transition: 'r 0.15s' }}
-                    onMouseEnter={() => setHoveredDot({ id: r.id, cx, cy, label: dotLabel, subject: s.subjectName, grade: r.grade })}
+                    onMouseEnter={() => setHoveredDot({ id: p.id, cx: p.x, cy: p.y, label })}
                     onMouseLeave={() => setHoveredDot(null)}
                   />
                 );
@@ -1396,60 +1480,36 @@ const TrajectoryChart: React.FC<TrajectoryChartProps> = ({ subjects, resultsBySu
           );
         })}
 
-        {/* Hover tooltip for line */}
-        {hoveredLine && !hoveredDot && (() => {
-          const results = resultsBySubject[hoveredLine];
-          if (!results?.length) return null;
-          const lastR = results[results.length - 1];
-          const tx = scaleX(lastR.date);
-          const ty = scaleY(gradeToPoints(lastR.grade));
-          return (
-            <g style={{ pointerEvents: 'none' }}>
-              <rect x={tx + 6} y={ty - 12} width={hoveredLine.length * 5.5 + 12} height={16} rx="4" fill="rgba(0,0,0,0.8)" />
-              <text x={tx + 12} y={ty - 1} fontSize="9" fill="white" fontWeight="600">{hoveredLine}</text>
-            </g>
-          );
-        })()}
-
-        {/* Hover tooltip for dot */}
+        {/* Hover tooltip */}
         {hoveredDot && (() => {
-          const label = hoveredDot.label;
-          const tooltipW = label.length * 5 + 16;
-          // Position tooltip above the dot, flip if near top
-          const above = hoveredDot.cy > 40;
-          const ty = above ? hoveredDot.cy - 20 : hoveredDot.cy + 10;
+          const tooltipW = Math.max(hoveredDot.label.length * 5 + 16, 80);
+          const tx = Math.min(Math.max(5, hoveredDot.cx - tooltipW / 2), W - tooltipW - 5);
+          const ty = hoveredDot.cy > 40 ? hoveredDot.cy - 24 : hoveredDot.cy + 12;
           return (
             <g style={{ pointerEvents: 'none' }}>
-              <rect
-                x={hoveredDot.cx - tooltipW / 2}
-                y={ty}
-                width={tooltipW} height={16} rx="4"
-                fill="rgba(0,0,0,0.85)"
-              />
-              <text
-                x={hoveredDot.cx}
-                y={ty + 11}
-                fontSize="8" fill="white" fontWeight="600" textAnchor="middle"
-              >{label}</text>
+              <rect x={tx} y={ty} width={tooltipW} height={18} rx="4" fill="rgba(0,0,0,0.85)" />
+              <text x={tx + tooltipW / 2} y={ty + 13} fontSize="8" fill="white" fontWeight="600" textAnchor="middle">{hoveredDot.label}</text>
             </g>
           );
         })()}
       </svg>
 
       {/* Legend */}
-      {subjectsWithResults.length > 1 && (
-        <div className="flex flex-wrap gap-x-4 gap-y-1.5 px-1">
+      {subjectsWithResults.length > 0 && (
+        <div className="flex flex-wrap gap-x-5 gap-y-2 px-1">
           {subjectsWithResults.map(s => {
-            const hexColor = getDistinctSubjectHex(s.subjectName, subjectIndexMap[s.subjectName] ?? 0);
+            const hexColor = getChartColor(s.subjectName, subjectIndexMap[s.subjectName] ?? 0);
+            const isHovered = hoveredSubject === s.subjectName;
             return (
               <div
                 key={s.subjectName}
-                className="flex items-center gap-1.5 cursor-pointer"
-                onMouseEnter={() => setHoveredLine(s.subjectName)}
-                onMouseLeave={() => setHoveredLine(null)}
+                className="flex items-center gap-1.5 cursor-pointer transition-opacity"
+                style={{ opacity: hoveredSubject && !isHovered ? 0.3 : 1 }}
+                onMouseEnter={() => setHoveredSubject(s.subjectName)}
+                onMouseLeave={() => setHoveredSubject(null)}
               >
                 <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: hexColor }} />
-                <span className="text-[10px] font-semibold text-zinc-600 dark:text-zinc-400">{s.subjectName}</span>
+                <span className="text-[11px] font-semibold" style={{ color: '#57534E' }}>{s.subjectName}</span>
               </div>
             );
           })}
@@ -1659,11 +1719,13 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
 
   return (
     <div className="space-y-5">
-      {/* Countdown reminder */}
-      <div className={`flex items-center gap-3 px-4 py-3 ${CARD_CLASS}`} style={CARD_STYLE}>
-        <Clock size={16} style={{ color: '#2A7D6F' }} className="shrink-0" />
-        <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">
-          <span style={{ color: '#2A7D6F' }}>{daysUntilExam}</span> days remaining — {weeksUntilExam} weeks of study
+      {/* Countdown reminder — bold warm banner */}
+      <div className="flex items-center gap-3 px-5 py-4 rounded-2xl" style={{ backgroundColor: '#F5D08A', boxShadow: '0 2px 8px rgba(212,137,28,0.12)' }}>
+        <Clock size={20} style={{ color: '#8B5E2A' }} className="shrink-0" />
+        <p style={{ color: '#5C3D14' }}>
+          <span className="text-2xl font-black" style={{ color: '#1A1A1A' }}>{daysUntilExam}</span>{' '}
+          <span className="text-sm font-bold">days remaining</span>
+          <span className="text-sm"> — {weeksUntilExam} weeks of study</span>
         </p>
       </div>
 
@@ -1733,16 +1795,16 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
                         : intensity > 0.66
                           ? '#2A7D6F'
                           : intensity > 0.33
-                            ? '#D4907D'
-                            : '#E8C4B8';
+                            ? '#6BB5A8'
+                            : '#B8DDD5';
                       return <div key={d.date} className="w-5 h-5 rounded-sm" style={{ backgroundColor: bgColor }} title={`${d.date}: ${d.blocks} session${d.blocks !== 1 ? 's' : ''}`} />;
                     })}
                   </div>
                   <div className="flex items-center justify-center gap-2 mt-2 text-[10px] text-zinc-400 dark:text-zinc-500">
                     <span>Less</span>
                     <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#EDEAE6' }} />
-                    <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#E8C4B8' }} />
-                    <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#D4907D' }} />
+                    <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#B8DDD5' }} />
+                    <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#6BB5A8' }} />
                     <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#2A7D6F' }} />
                     <span>More</span>
                   </div>
@@ -1794,111 +1856,130 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
 
       {hasData ? (
         <>
-          {/* Recommendations */}
-          <div className="space-y-3">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Priority Actions</p>
-            {recommendations.slice(0, 5).map((rec, i) => {
-              const color = getSubjectColor(rec.subject);
-              const isUrgent = rec.priority >= 30;
-              return (
-                <div
-                  key={rec.subject}
-                  className={`p-4 ${CARD_CLASS}`}
-                  style={{
-                    ...CARD_STYLE,
-                    backgroundColor: isUrgent ? 'rgba(42,125,111,0.06)' : '#FAF7F4',
-                  }}
-                >
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className={`w-2.5 h-2.5 rounded-full ${color.dot}`} />
-                    <span className="text-sm font-bold text-zinc-800 dark:text-white">{rec.subject}</span>
-                    {isUrgent && <AlertTriangle size={12} style={{ color: '#B85C4A' }} />}
-                  </div>
-                  <ul className="space-y-1 mb-2">
-                    {rec.concerns.map((c, ci) => (
-                      <li key={ci} className="flex items-start gap-2 text-xs text-zinc-600 dark:text-zinc-400">
-                        <Minus size={8} className="mt-1 shrink-0 text-zinc-400" />
-                        {c}
-                      </li>
-                    ))}
-                  </ul>
-                  {rec.action && (
-                    <p className="text-xs font-semibold" style={{ color: '#2A7D6F' }}>{rec.action}</p>
-                  )}
-
-                  {/* Examiner Insights — expandable subject guidance */}
-                  {rec.guidance && (
-                    <div className="mt-3 border-t border-zinc-200/50 dark:border-white/[0.06] pt-3">
-                      <button
-                        onClick={() => setExpandedGuidance(expandedGuidance === rec.subject ? null : rec.subject)}
-                        className="flex items-center gap-2 text-xs font-semibold transition-colors"
-                        style={{ color: '#2A7D6F' }}
-                      >
-                        <BookOpen size={12} />
-                        Examiner Insights {rec.latestGrade && <span className="font-normal text-zinc-400">({rec.latestGrade})</span>}
-                        <ChevronDown size={12} className={`transition-transform ${expandedGuidance === rec.subject ? 'rotate-180' : ''}`} />
-                      </button>
-                      <AnimatePresence>
-                        {expandedGuidance === rec.subject && (
-                          <MotionDiv
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: 'auto', opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.25 }}
-                            className="overflow-hidden"
-                          >
-                            <div className="mt-3 space-y-3 text-xs">
-                              {/* Common Struggles */}
-                              <div>
-                                <p className="font-bold text-zinc-700 dark:text-zinc-300 mb-1.5">Why students struggle here</p>
-                                <ul className="space-y-1.5">
-                                  {rec.guidance.commonStruggles.map((s, si) => (
-                                    <li key={si} className="flex items-start gap-2 text-zinc-600 dark:text-zinc-400">
-                                      <span className="mt-1.5 w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: '#B85C4A' }} />
-                                      {s}
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                              {/* Actions */}
-                              <div>
-                                <p className="font-bold text-zinc-700 dark:text-zinc-300 mb-1.5">What to do</p>
-                                <ul className="space-y-1.5">
-                                  {rec.guidance.actions.map((a, ai) => (
-                                    <li key={ai} className="flex items-start gap-2 text-zinc-600 dark:text-zinc-400">
-                                      <span className="mt-1.5 w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: '#6B8F71' }} />
-                                      {a}
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                              {/* Exam Trap */}
-                              <div className="p-3 rounded-lg" style={{ backgroundColor: '#FDF3E7', border: '0.5px solid rgba(196,135,59,0.2)', borderRadius: 12 }}>
-                                <p className="font-bold mb-1" style={{ color: '#8B5E2A' }}>Exam trap</p>
-                                <p style={{ color: '#C4873B' }}>{rec.guidance.examTrap}</p>
-                              </div>
-                              {/* Mindset Shift */}
-                              <div className="p-3 rounded-lg" style={{ backgroundColor: 'rgba(42,125,111,0.06)', border: '0.5px solid rgba(42,125,111,0.15)', borderRadius: 12 }}>
-                                <p className="font-bold mb-1" style={{ color: '#2A7D6F' }}>Mindset shift</p>
-                                <p className="text-zinc-600 dark:text-zinc-400">{rec.guidance.mindsetShift}</p>
-                              </div>
-                            </div>
-                          </MotionDiv>
-                        )}
-                      </AnimatePresence>
+          {/* Priority Actions — all in one card, Linear-style rows */}
+          <div>
+            <p className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: '#A8A29E' }}>Priority Actions</p>
+            <div className="space-y-2">
+              {recommendations.slice(0, 5).map((rec, i) => {
+                const subjectIdx = subjects.findIndex(s => s.subjectName === rec.subject);
+                // Maximally distinct colours
+                const BRIEFING_COLORS: Record<string, string> = {
+                  'Applied Maths': '#6C5CE7', 'Applied Mathematics': '#6C5CE7',
+                  'Economics': '#E67E22', 'Religious Education': '#E84393',
+                  'Business': '#0984E3', 'Politics & Society': '#00B894',
+                  'Mathematics': '#2D3436', 'English': '#E74C3C',
+                };
+                const hex = BRIEFING_COLORS[rec.subject] || getDistinctSubjectHex(rec.subject, subjectIdx >= 0 ? subjectIdx : i);
+                const isUrgent = rec.priority >= 30;
+                const isTop = i === 0;
+                return (
+                  <div
+                    key={rec.subject}
+                    className="rounded-2xl px-5 py-4 transition-all"
+                    style={{
+                      backgroundColor: isTop ? `${hex}14` : `${hex}08`,
+                      border: `1px solid ${hex}12`,
+                    }}
+                  >
+                    {/* L1: Subject name — 18px bold, subject colour */}
+                    <div className="flex items-center gap-2.5 mb-1 flex-wrap">
+                      <div className="w-3.5 h-3.5 rounded-full shrink-0" style={{ backgroundColor: hex }} />
+                      <span className="text-lg font-bold" style={{ color: hex }}>{rec.subject}</span>
+                      {isTop && <span className="text-[8px] font-bold uppercase tracking-wider px-2 py-0.5 rounded" style={{ backgroundColor: '#2D2D2D', color: '#fff' }}>Top priority</span>}
                     </div>
-                  )}
-                </div>
-              );
-            })}
+
+                    {/* L2: Stats — 13px regular, warm grey */}
+                    <p className="text-[13px] ml-6 mb-2" style={{ color: '#8C8278', fontWeight: 400 }}>
+                      {rec.concerns.join(' · ')}
+                    </p>
+
+                    {/* L3: Action text — 15px medium, teal */}
+                    {rec.action && (
+                      <p className="text-[15px] ml-6 mb-3" style={{ color: '#2A7D6F', fontWeight: 500 }}>{rec.action}</p>
+                    )}
+
+                    {/* Examiner Insights — pill button */}
+                    {rec.guidance && (
+                      <div className="ml-6">
+                        <button
+                          onClick={() => setExpandedGuidance(expandedGuidance === rec.subject ? null : rec.subject)}
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[12px] font-semibold transition-all"
+                          style={{
+                            backgroundColor: expandedGuidance === rec.subject ? `${hex}15` : '#F0EDE8',
+                            color: expandedGuidance === rec.subject ? hex : '#78716C',
+                          }}
+                        >
+                          <BookOpen size={13} />
+                          Examiner Insights
+                          <ChevronDown size={12} className={`transition-transform ${expandedGuidance === rec.subject ? 'rotate-180' : ''}`} />
+                        </button>
+                        <AnimatePresence>
+                          {expandedGuidance === rec.subject && (
+                            <MotionDiv
+                              initial={{ height: 0, opacity: 0 }}
+                              animate={{ height: 'auto', opacity: 1 }}
+                              exit={{ height: 0, opacity: 0 }}
+                              transition={{ duration: 0.25 }}
+                              className="overflow-hidden"
+                            >
+                              <div className="mt-3 pt-3 space-y-3" style={{ borderTop: '1px solid #EDEBE8' }}>
+                                {/* L4: Section headers — 14px semibold */}
+                                <div>
+                                  <p className="text-[14px] mb-1.5" style={{ color: '#2D2D2D', fontWeight: 600 }}>Why students struggle here</p>
+                                  <ul className="space-y-1.5">
+                                    {rec.guidance.commonStruggles.map((s, si) => (
+                                      <li key={si} className="flex items-start gap-2.5 text-[14px]" style={{ color: '#4A4A4A', fontWeight: 400 }}>
+                                        <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: '#D4891C' }} />
+                                        {s}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                                <div>
+                                  <p className="text-[14px] mb-1.5" style={{ color: '#2D2D2D', fontWeight: 600 }}>What to do</p>
+                                  <ul className="space-y-1.5">
+                                    {rec.guidance.actions.map((a, ai) => (
+                                      <li key={ai} className="flex items-start gap-2.5 text-[14px]" style={{ color: '#4A4A4A', fontWeight: 400 }}>
+                                        <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: '#2A7D6F' }} />
+                                        {a}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                                {/* Exam trap callout */}
+                                <div className="flex items-start gap-2.5 p-3.5 rounded-xl" style={{ backgroundColor: '#FDEBD0' }}>
+                                  <AlertTriangle size={14} style={{ color: '#D4891C' }} className="shrink-0 mt-0.5" />
+                                  <div>
+                                    <p className="text-[14px] mb-0.5" style={{ color: '#D4891C', fontWeight: 700 }}>Exam trap</p>
+                                    <p className="text-[14px]" style={{ color: '#4A4A4A', fontWeight: 400 }}>{rec.guidance.examTrap}</p>
+                                  </div>
+                                </div>
+                                {/* Mindset shift callout */}
+                                <div className="flex items-start gap-2.5 p-3.5 rounded-xl" style={{ backgroundColor: '#E8F8F5' }}>
+                                  <Shield size={14} style={{ color: '#2A7D6F' }} className="shrink-0 mt-0.5" />
+                                  <div>
+                                    <p className="text-[14px] mb-0.5" style={{ color: '#2A7D6F', fontWeight: 700 }}>Mindset shift</p>
+                                    <p className="text-[14px]" style={{ color: '#4A4A4A', fontWeight: 400 }}>{rec.guidance.mindsetShift}</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </MotionDiv>
+                          )}
+                        </AnimatePresence>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           </div>
 
           {/* Overall summary */}
           {bestSubject && (
-            <div className={`px-4 py-3 ${CARD_CLASS}`} style={{ ...CARD_STYLE, backgroundColor: 'rgba(107,143,113,0.08)' }}>
-              <div className="flex items-center gap-2">
-                <CheckCircle size={14} style={{ color: '#6B8F71' }} />
-                <p className="text-xs font-semibold" style={{ color: '#6B8F71' }}>
+            <div className="px-5 py-4 rounded-2xl" style={{ backgroundColor: '#C6F0D9', border: '1px solid #8DD7AE' }}>
+              <div className="flex items-center gap-2.5">
+                <CheckCircle size={18} style={{ color: '#1B5E3B' }} />
+                <p className="text-sm font-bold" style={{ color: '#1B5E3B' }}>
                   {bestSubject.surplus >= 0
                     ? `Strongest: ${bestSubject.name} — above target`
                     : `Closest to target: ${bestSubject.name}`
