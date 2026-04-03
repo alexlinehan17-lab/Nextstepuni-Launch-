@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   Shield, HeartCrack, Recycle, Mic, Wrench
 } from 'lucide-react';
@@ -16,8 +17,6 @@ import { ModuleLayout } from './ModuleLayout';
 const theme = blueTheme;
 
 // --- INTERACTIVE COMPONENTS ---
-
-const MotionDiv = motion.div as any;
 
 const ThoughtReframer = () => {
   const [thought, setThought] = useState('');

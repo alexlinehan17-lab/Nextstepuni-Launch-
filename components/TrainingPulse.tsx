@@ -5,12 +5,10 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimationControls } from 'framer-motion';
+import { MotionButton, MotionSpan } from './Motion';
 import { Flame, TrendingUp, Target, Zap, Award, Crown, Mountain, Footprints, Coins } from 'lucide-react';
 import { type GamificationState, type StreakTier, getStreakTier } from '../gamificationConfig';
 import { type StreakData } from '../hooks/useStreak';
-
-const MotionButton = motion.button as any;
-const MotionSpan = motion.span as any;
 
 const RANK_ICONS: Record<string, React.ElementType> = {
   Footprints,

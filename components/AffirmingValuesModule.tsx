@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { MotionButton, MotionDiv } from './Motion';
 import {
   BrainCircuit, Shield, AlertTriangle, UserCheck
 } from 'lucide-react';
@@ -17,9 +18,6 @@ import { useModuleResponses } from '../hooks/useModuleResponses';
 const theme = blueTheme;
 
 // --- INTERACTIVE COMPONENTS ---
-
-const MotionDiv = motion.div as any;
-const MotionButton = motion.button as any;
 
 type MemoryBlock = {
   label: string;

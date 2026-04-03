@@ -5,6 +5,7 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   TrendingDown, Calculator, BarChart3, Scale, GitBranch, Layers, Target,
   ChevronDown, ChevronUp, AlertTriangle, CheckCircle2, ArrowRight, Minus, Plus
@@ -16,7 +17,6 @@ import { ModuleLayout } from './ModuleLayout';
 import { useModuleResponses } from '../hooks/useModuleResponses';
 
 const theme = redTheme;
-const MotionDiv = motion.div as any;
 
 // ─── DATA ────────────────────────────────────────────────────────────────────
 

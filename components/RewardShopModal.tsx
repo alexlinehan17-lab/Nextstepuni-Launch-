@@ -6,13 +6,11 @@
 import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionButton, MotionDiv } from './Motion';
 import { X, Star, Coffee, CalendarOff, Lock, Check, ShoppingBag, Palette, ChevronRight, Layers } from 'lucide-react';
 import { type CosmeticUnlocks, type EarnedRest, type UserSettings } from '../types';
 import { getAvatarUrl } from './Auth';
 import { ACCENT_THEME_LIST, CARD_STYLES } from '../themeData';
-
-const MotionDiv = motion.div as any;
-const MotionButton = motion.button as any;
 
 // Extra avatar seeds beyond the base 8
 export const EXTRA_AVATAR_SEEDS = ['Luna', 'Kai', 'Suki', 'Dara', 'Nico', 'Asha', 'Finn', 'Yuki'];

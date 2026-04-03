@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { Cpu, ClipboardList, ListFilter, PlayCircle, BarChart2, HeartPulse, HardHat } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { amberTheme } from '../moduleThemes';
@@ -405,7 +406,7 @@ const dumpSheetFacts = [
     { text: 'Mitosis: PMAT (Prophase, Metaphase, Anaphase, Telophase)', keys: [/PMAT/i], combo: [/mitosis/i, /prophase|metaphase/i] },
     { text: 'Speed = Distance \u00F7 Time', keys: [/speed/i], combo: [/speed/i, /distance/i] },
     { text: 'Peig Sayers: \u2018Is fearr Gaeilge briste n\u00E1 B\u00E9arla cliste\u2019', keys: [/fearr/i, /Gaeilge briste/i] },
-    { text: 'Quadratic formula: x = (\u2212b \u00B1 \u221A(b\u00B2\u22124ac)) / 2a', keys: [/quadratic/i, /\-b \u00B1/i, /b\u00B2-4ac/i, /b2-4ac/i] },
+    { text: 'Quadratic formula: x = (\u2212b \u00B1 \u221A(b\u00B2\u22124ac)) / 2a', keys: [/quadratic/i, /-b \u00B1/i, /b\u00B2-4ac/i, /b2-4ac/i] },
     { text: 'Igneous, Sedimentary, Metamorphic \u2014 3 rock types', keys: [/igneous/i, /sedimentary/i, /metamorphic/i] },
 ];
 
@@ -417,8 +418,6 @@ const checkFactRecalled = (factIndex: number, text: string): boolean => {
     if (fact.combo && fact.combo.every(k => k.test(text))) return true;
     return false;
 };
-
-const MotionDiv = motion.div as any;
 
 const DumpSheetBuilder = () => {
     const [phase, setPhase] = useState<'ready' | 'memorise' | 'recall' | 'results'>('ready');

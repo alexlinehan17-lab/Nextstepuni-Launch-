@@ -287,6 +287,10 @@ export function useStudySession(
 
     const totalPoints = basePointsEarned + reflectionPoints;
 
+    // Update local state immediately (optimistic)
+    setTodaySessions(prev => [...prev, record]);
+
+    // Fire-and-forget Firestore write — queues offline via persistence
     try {
       const progressDocRef = doc(db, 'progress', uid);
       const updates: Record<string, any> = {
@@ -295,10 +299,9 @@ export function useStudySession(
       if (totalPoints > 0) {
         updates['pointsData.totalEarned'] = increment(totalPoints);
       }
-      await updateDoc(progressDocRef, updates);
-
-      // Update local today sessions
-      setTodaySessions(prev => [...prev, record]);
+      updateDoc(progressDocRef, updates).catch(err => {
+        console.error('Failed to save study session:', err);
+      });
     } catch (err) {
       console.error('Failed to save study session:', err);
     }

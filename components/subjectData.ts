@@ -119,12 +119,9 @@ export const DAYS_OF_WEEK = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Frid
  * Returns CAO points for a given grade, including the +25 Maths bonus for Higher Level H6+.
  */
 export function getPointsForGrade(grade: Grade, isMaths: boolean = false): number {
-  let points = 0;
-  if (grade.startsWith('H')) {
-    points = HIGHER_POINTS[grade] ?? 0;
-  } else {
-    points = ORDINARY_POINTS[grade] ?? 0;
-  }
+  let points = grade.startsWith('H')
+    ? (HIGHER_POINTS[grade] ?? 0)
+    : (ORDINARY_POINTS[grade] ?? 0);
   // Maths HL bonus: +25 for H6 and above (H1-H6)
   if (isMaths && grade.startsWith('H') && HIGHER_POINTS[grade] >= 46) {
     points += 25;

@@ -8,7 +8,7 @@ import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { type UserProgress, type StrategyMasteryMap, type StrategyMasteryRecord, type MasteryTier } from '../types';
 import { type CourseData } from '../components/Library';
-import { STRATEGY_REGISTRY, type StudySessionRecord } from '../studySessionData';
+import { STRATEGY_REGISTRY, type StudySessionRecord } from '../utils/strategyRegistry';
 
 export function useStrategyMastery(
   uid: string | undefined,

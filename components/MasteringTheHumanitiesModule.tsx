@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   Key, Landmark, Globe, Brain, Wrench
 } from 'lucide-react';
@@ -16,8 +17,6 @@ import { ModuleLayout } from './ModuleLayout';
 const theme = pinkTheme;
 
 // --- INTERACTIVE COMPONENTS ---
-
-const MotionDiv = motion.div as any;
 
 interface SRPTopic {
   keyword: string;

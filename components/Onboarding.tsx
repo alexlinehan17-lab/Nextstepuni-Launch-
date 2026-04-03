@@ -5,7 +5,9 @@
 
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv, MotionP, MotionSpan } from './Motion';
 import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff, BookOpen, Target, Clock, CalendarDays, Star, ScanSearch, TrendingUp } from 'lucide-react';
+import PrimaryActionButton from './ui/PrimaryActionButton';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
   type YearGroup,
@@ -15,10 +17,6 @@ import {
 } from './subjectData';
 import { NorthStar } from '../types';
 import NorthStarOnboarding from './NorthStarOnboarding';
-
-const MotionDiv = motion.div as any;
-const MotionP = motion.p as any;
-const MotionSpan = motion.span as any;
 
 interface OnboardingProps {
   userName: string;
@@ -318,7 +316,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
         {/* Warm peach/coral accent bottom-right */}
         <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 50% 35% at 70% 90%, rgba(240,160,130,0.35) 0%, transparent 55%)' }} />
         {/* Base fill behind everything — soft warm grey so gradient doesn't fade to white */}
-        <div className="absolute inset-0" style={{ backgroundColor: '#F0ECE6', zIndex: -1 }} />
+        <div className="absolute inset-0 bg-[#F0ECE6] dark:bg-zinc-900" style={{ zIndex: -1 }} />
       </div>
 
       {/* ─── Fixed Header: Progress bar + Skip ─── */}
@@ -326,8 +324,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
         <div className="flex items-center justify-end mb-3">
           <button
             onClick={onSkip}
-            className="text-sm font-medium transition-colors"
-            style={{ color: '#A8A29E' }}
+            className="text-sm font-medium transition-colors text-[#A8A29E] dark:text-zinc-500"
           >
             Skip for now
           </button>
@@ -335,8 +332,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
         <div className="max-w-md mx-auto">
           <div className="w-full h-[5px] rounded-full overflow-hidden" style={{ backgroundColor: 'rgba(0,0,0,0.08)' }}>
             <motion.div
-              className="h-full rounded-full"
-              style={{ backgroundColor: '#1A1A1A' }}
+              className="h-full rounded-full bg-[#1A1A1A] dark:bg-white"
               animate={{ width: `${(step / TOTAL_STEPS) * 100}%` }}
               transition={{ duration: 0.4, ease: [0.25, 1, 0.5, 1] }}
             />
@@ -355,7 +351,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                 <div className="flex items-center justify-center min-h-[60vh]">
                   <div className="text-center w-full max-w-lg mx-auto">
                     {/* Word-by-word heading */}
-                    <h1 className="font-serif text-3xl sm:text-4xl font-bold mb-5" style={{ color: '#1A1A1A' }}>
+                    <h1 className="font-serif text-3xl sm:text-4xl font-bold mb-5 text-[#1A1A1A] dark:text-white">
                       {welcomeWords.map((word, i) => (
                         <span key={i} className="inline-block overflow-hidden align-bottom pb-[0.1em] mb-[-0.1em]">
                           <MotionSpan
@@ -373,7 +369,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       initial={{ opacity: 0, y: 16 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-base leading-relaxed max-w-md mx-auto mb-2" style={{ color: '#78716C' }}
+                      className="text-base leading-relaxed max-w-md mx-auto mb-2 text-[#78716C] dark:text-zinc-400"
                     >
                       Let's set up your study profile so we can personalise your experience from day one.
                     </MotionP>
@@ -381,7 +377,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       initial={{ opacity: 0, y: 12 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-sm mb-8" style={{ color: '#A8A29E' }}
+                      className="text-sm mb-8 text-[#A8A29E] dark:text-zinc-500"
                     >
                       This takes about 2 minutes.
                     </MotionP>
@@ -430,8 +426,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       initial={{ opacity: 0, y: 12 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                      className="font-serif text-2xl font-bold mb-1"
-                      style={{ color: '#1A1A1A' }}
+                      className="font-serif text-2xl font-bold mb-1 text-[#1A1A1A] dark:text-white"
                     >
                       What Year Are You In?
                     </motion.h2>
@@ -439,8 +434,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-sm mb-8"
-                      style={{ color: '#78716C' }}
+                      className="text-sm mb-8 text-[#78716C] dark:text-zinc-400"
                     >
                       This helps us show you the right events and deadlines for your year group.
                     </motion.p>
@@ -461,8 +455,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                             boxShadow: yearGroup === yr ? '0 0 0 3px rgba(42,125,111,0.1)' : 'none',
                           }}
                         >
-                          <p className="text-3xl font-bold mb-1" style={{ color: yearGroup === yr ? '#2A7D6F' : '#1A1A1A' }}>{yr}</p>
-                          <p className="text-xs font-medium" style={{ color: yearGroup === yr ? '#2A7D6F' : '#A8A29E' }}>Year</p>
+                          <p className={`text-3xl font-bold mb-1 ${yearGroup === yr ? 'text-[#2A7D6F]' : 'text-[#1A1A1A] dark:text-white'}`}>{yr}</p>
+                          <p className={`text-xs font-medium ${yearGroup === yr ? 'text-[#2A7D6F]' : 'text-[#A8A29E] dark:text-zinc-500'}`}>Year</p>
                         </button>
                       ))}
                     </motion.div>
@@ -484,8 +478,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
             {/* Step 4: Select Subjects */}
             {step === 4 && (
               <MotionDiv key="step4" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
-                <h2 className="font-serif text-2xl font-bold text-center mb-1" style={{ color: '#1A1A1A' }}>Select Your Subjects</h2>
-                <p className="text-sm text-center mb-8" style={{ color: '#78716C' }}>
+                <h2 className="font-serif text-2xl font-bold text-center mb-1 text-[#1A1A1A] dark:text-white">Select Your Subjects</h2>
+                <p className="text-sm text-center mb-8 text-[#78716C] dark:text-zinc-400">
                   Tap to select your Leaving Cert subjects. <span className="font-semibold text-[var(--accent-hex)]">{selectedSubjects.size} selected</span>
                 </p>
                 <div className="space-y-6">
@@ -524,8 +518,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
             {/* Step 5: Grade Configuration */}
             {step === 5 && (
               <MotionDiv key="step5" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
-                <h2 className="font-serif text-2xl font-bold text-center mb-1" style={{ color: '#1A1A1A' }}>Set Your Grades</h2>
-                <p className="text-sm text-center mb-6" style={{ color: '#78716C' }}>
+                <h2 className="font-serif text-2xl font-bold text-center mb-1 text-[#1A1A1A] dark:text-white">Set Your Grades</h2>
+                <p className="text-sm text-center mb-6 text-[#78716C] dark:text-zinc-400">
                   For each subject, set where you are now and where you want to be.
                 </p>
 
@@ -650,8 +644,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       initial={{ opacity: 0, y: 12 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                      className="font-serif text-2xl font-bold mb-1"
-                      style={{ color: '#1A1A1A' }}
+                      className="font-serif text-2xl font-bold mb-1 text-[#1A1A1A] dark:text-white"
                     >
                       When Do Exams Start?
                     </motion.h2>
@@ -659,8 +652,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-sm mb-6"
-                      style={{ color: '#78716C' }}
+                      className="text-sm mb-6 text-[#78716C] dark:text-zinc-400"
                     >
                       We'll use this to plan your study intensity.
                     </motion.p>
@@ -670,8 +662,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       transition={{ duration: 0.5, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
                     >
                       <input type="date" value={examDate} onChange={(e) => setExamDate(e.target.value)}
-                        className="w-full max-w-xs mx-auto px-4 py-3 rounded-xl text-center text-lg font-semibold"
-                        style={{ backgroundColor: 'rgba(255,255,255,0.9)', border: '1px solid rgba(0,0,0,0.08)', color: '#1A1A1A' }}
+                        className="w-full max-w-xs mx-auto px-4 py-3 rounded-xl text-center text-lg font-semibold text-[#1A1A1A] dark:text-white"
+                        style={{ backgroundColor: 'rgba(255,255,255,0.9)', border: '1px solid rgba(0,0,0,0.08)' }}
                       />
                     </motion.div>
                     {daysLeft > 0 && (
@@ -682,8 +674,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                         className="mt-8 inline-flex flex-col items-center px-10 py-6 rounded-3xl"
                         style={{ backgroundColor: 'rgba(255,255,255,0.5)', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.6)' }}
                       >
-                        <p className="font-apercu font-black" style={{ fontSize: 'clamp(64px, 15vw, 100px)', color: '#1A1A1A', lineHeight: 1 }}>{daysLeft}</p>
-                        <p className="text-sm font-bold uppercase tracking-widest mt-1" style={{ color: '#A8A29E' }}>days to go</p>
+                        <p className="font-apercu font-black text-[#1A1A1A] dark:text-white" style={{ fontSize: 'clamp(64px, 15vw, 100px)', lineHeight: 1 }}>{daysLeft}</p>
+                        <p className="text-sm font-bold uppercase tracking-widest mt-1 text-[#A8A29E] dark:text-zinc-500">days to go</p>
                       </motion.div>
                     )}
                   </div>
@@ -709,8 +701,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       initial={{ opacity: 0, y: 12 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                      className="font-serif text-2xl font-bold mb-1"
-                      style={{ color: '#1A1A1A' }}
+                      className="font-serif text-2xl font-bold mb-1 text-[#1A1A1A] dark:text-white"
                     >
                       Rest Days
                     </motion.h2>
@@ -718,8 +709,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-sm mb-8"
-                      style={{ color: '#78716C' }}
+                      className="text-sm mb-8 text-[#78716C] dark:text-zinc-400"
                     >
                       Tap any days where study isn't possible. Your sessions will be redistributed across the remaining days.
                     </motion.p>
@@ -736,11 +726,11 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                           <button
                             key={day}
                             onClick={() => toggleRestDay(day)}
-                            className="flex flex-col items-center gap-1.5 py-3.5 rounded-xl transition-all"
+                            className={`flex flex-col items-center gap-1.5 py-3.5 rounded-xl transition-all ${isRest ? '' : 'text-[#1A1A1A] dark:text-white'}`}
                             style={{
                               backgroundColor: isRest ? 'rgba(220,38,38,0.06)' : 'rgba(255,255,255,0.9)',
                               border: isRest ? '2px solid #DC2626' : '1px solid rgba(0,0,0,0.08)',
-                              color: isRest ? '#DC2626' : '#1A1A1A',
+                              ...(isRest ? { color: '#DC2626' } : {}),
                             }}
                           >
                             <span className="text-[10px] font-bold uppercase">{DAY_SHORTS[day]}</span>
@@ -873,8 +863,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       initial={{ opacity: 0, y: 12 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
-                      className="font-serif text-3xl sm:text-4xl font-bold mb-2"
-                      style={{ color: '#1A1A1A' }}
+                      className="font-serif text-3xl sm:text-4xl font-bold mb-2 text-[#1A1A1A] dark:text-white"
                     >
                       You're all set, {userName.split(' ')[0] || userName}.
                     </motion.h2>
@@ -883,8 +872,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       initial={{ opacity: 0, y: 8 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-base mb-8"
-                      style={{ color: '#78716C' }}
+                      className="text-base mb-8 text-[#78716C] dark:text-zinc-400"
                     >
                       Your personalised study plan is ready.
                     </motion.p>
@@ -899,42 +887,45 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                     >
                       <div className="flex items-center justify-around">
                         <div>
-                          <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#A8A29E' }}>Target</p>
-                          <p className="text-3xl font-apercu font-black" style={{ color: '#1A1A1A' }}>
+                          <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#A8A29E] dark:text-zinc-500">Target</p>
+                          <p className="text-3xl font-apercu font-black text-[#1A1A1A] dark:text-white">
                             <AnimatedNumber value={pointsTotals.target} delay={0.7} />
                           </p>
-                          <p className="text-[11px]" style={{ color: '#A8A29E' }}>CAO pts</p>
+                          <p className="text-[11px] text-[#A8A29E] dark:text-zinc-500">CAO pts</p>
                         </div>
                         <div className="w-px h-12" style={{ backgroundColor: 'rgba(0,0,0,0.08)' }} />
                         <div>
-                          <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#A8A29E' }}>Countdown</p>
-                          <p className="text-3xl font-apercu font-black" style={{ color: '#1A1A1A' }}>
+                          <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#A8A29E] dark:text-zinc-500">Countdown</p>
+                          <p className="text-3xl font-apercu font-black text-[#1A1A1A] dark:text-white">
                             <AnimatedNumber value={daysLeft} delay={0.9} />
                           </p>
-                          <p className="text-[11px]" style={{ color: '#A8A29E' }}>days left</p>
+                          <p className="text-[11px] text-[#A8A29E] dark:text-zinc-500">days left</p>
                         </div>
                         <div className="w-px h-12" style={{ backgroundColor: 'rgba(0,0,0,0.08)' }} />
                         <div>
-                          <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#A8A29E' }}>Subjects</p>
-                          <p className="text-3xl font-apercu font-black" style={{ color: '#1A1A1A' }}>
+                          <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#A8A29E] dark:text-zinc-500">Subjects</p>
+                          <p className="text-3xl font-apercu font-black text-[#1A1A1A] dark:text-white">
                             <AnimatedNumber value={selectedSubjects.size} delay={1.1} />
                           </p>
-                          <p className="text-[11px]" style={{ color: '#A8A29E' }}>selected</p>
+                          <p className="text-[11px] text-[#A8A29E] dark:text-zinc-500">selected</p>
                         </div>
                       </div>
                     </motion.div>
 
                     {/* Start learning CTA */}
-                    <motion.button
+                    <motion.div
                       initial={{ opacity: 0, y: 8 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.75, ease: [0.16, 1, 0.3, 1] }}
-                      onClick={() => onComplete(buildProfile(), northStarData ?? undefined)}
-                      className="w-full flex items-center justify-center gap-2 py-4 rounded-2xl text-base font-bold text-white transition-all active:scale-[0.98]"
-                      style={{ backgroundColor: '#2A7D6F', boxShadow: '0 4px 16px rgba(42,125,111,0.25)' }}
+                      className="flex justify-center"
                     >
-                      Start Learning <ArrowRight size={16} />
-                    </motion.button>
+                      <PrimaryActionButton
+                        label="Start Learning"
+                        onClick={() => onComplete(buildProfile(), northStarData ?? undefined)}
+                        icon={ArrowRight}
+                        variant="dark"
+                      />
+                    </motion.div>
                   </div>
                 </div>
               </MotionDiv>
@@ -966,7 +957,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </button>
             )}
             {step > 1 && (
-              <button onClick={goBack} className="flex items-center gap-1.5 text-sm font-medium transition-colors" style={{ color: '#A8A29E' }}>
+              <button onClick={goBack} className="flex items-center gap-1.5 text-sm font-medium transition-colors text-[#A8A29E] dark:text-zinc-500">
                 <ArrowLeft size={14} /> Back
               </button>
             )}

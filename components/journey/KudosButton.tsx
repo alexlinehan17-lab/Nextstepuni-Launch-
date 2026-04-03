@@ -5,11 +5,9 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionButton, MotionDiv } from '../Motion';
 import { Heart, X } from 'lucide-react';
 import { KUDOS_MESSAGES } from '../../kudosData';
-
-const MotionDiv = motion.div as any;
-const MotionButton = motion.button as any;
 
 interface KudosButtonProps {
   senderUid: string;

@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { Target, GitBranch, Lightbulb, Shield, Flag } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { roseTheme } from '../moduleThemes';
@@ -15,7 +16,6 @@ import NorthStarCallout from './NorthStarCallout';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
 
 const theme = roseTheme;
-const MotionDiv = motion.div as any;
 
 // --- INTERACTIVE COMPONENTS ---
 
@@ -311,7 +311,6 @@ const IfThenPlanBuilder = () => {
     </div>
   );
 };
-
 
 // --- MODULE COMPONENT ---
 const TheImplementationProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {

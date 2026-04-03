@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   Key, PieChart, Briefcase, FileText, BrainCircuit, Wrench
 } from 'lucide-react';
@@ -139,7 +140,7 @@ const ABQAnswerScaffold = () => {
   };
 
   const assembledAnswer = `${inputs[0]} ${inputs[1]} ${inputs[2]}`.trim();
-  const MotionDiv = motion.div as any;
+
 
   return (
     <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">

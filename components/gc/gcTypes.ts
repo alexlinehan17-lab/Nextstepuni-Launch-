@@ -48,7 +48,7 @@ export interface GCStudentFullData {
 
 // ─── Status types ───────────────────────────────────────────────────────────
 
-export type StudentStatus = 'on-track' | 'needs-support' | 'new';
+export type StudentStatus = 'new' | 'at-risk' | 'drifting' | 'thriving' | 'active' | 'inactive';
 
 // ─── Subject Gap Analysis ───────────────────────────────────────────────────
 

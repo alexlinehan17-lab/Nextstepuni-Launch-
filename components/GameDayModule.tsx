@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { Target, Brain, SlidersHorizontal, Shield, Moon, Utensils, Zap, Wind, Leaf, Droplet, Coffee, X } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { amberTheme } from '../moduleThemes';
@@ -132,8 +133,6 @@ const categoryBadgeClass = (category: string): string => {
   if (category === 'Hydration') return 'bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300';
   return 'bg-zinc-100 text-zinc-600 dark:bg-zinc-700 dark:text-zinc-300';
 };
-
-const MotionDiv = motion.div as any;
 
 const EnergyCurve = ({ level }: { level: 'high' | 'medium' | 'low' }) => {
   const curves = {

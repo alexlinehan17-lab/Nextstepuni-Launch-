@@ -5,6 +5,7 @@
 
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   Settings, Star, RotateCcw, ChevronDown, ChevronUp, TrendingUp, Info, ArrowRight, Compass,
 } from 'lucide-react';
@@ -12,12 +13,10 @@ import {
   type StudentSubjectProfile, type Grade, type Level,
   LC_SUBJECTS, getPointsForGrade, getGradesForLevel,
 } from './subjectData';
-import { doc, setDoc, getDoc } from 'firebase/firestore';
+import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { type CAOCourse, hydrateCourses } from './futureFinderData';
-import { useMockResults } from '../hooks/useMockResults';
-
-const MotionDiv = motion.div as any;
+import { type CAOCourse } from './futureFinderData';
+import { useInnovationData } from '../contexts/InnovationDataContext';
 
 // ─── Subject Colours ─────────────────────────────────────────────────────────
 
@@ -105,24 +104,27 @@ const PointsCard: React.FC<{
   const isTarget = variant === 'target';
   const isWhatIf = variant === 'whatif';
   const numberSize = isTarget ? 'text-5xl' : 'text-4xl';
-  const labelColor = isTarget ? '#2A7D6F' : '#A8A29E';
+  // Label: teal for target, muted for others
+  const labelColorClass = isTarget ? '' : 'text-[#A8A29E] dark:text-zinc-500';
+  const labelColorStyle = isTarget ? { color: '#2A7D6F' } : undefined;
 
   // What-If number colour reacts to changes
-  let numberColor = '#1A1A1A';
+  let numberColorClass = 'text-[#1A1A1A] dark:text-white';
+  let numberColorStyle: React.CSSProperties | undefined = undefined;
   if (isWhatIf && basePoints !== undefined) {
-    if (points > basePoints) numberColor = '#2A7D6F';
-    else if (points < basePoints) numberColor = '#DC2626';
+    if (points > basePoints) { numberColorClass = ''; numberColorStyle = { color: '#2A7D6F' }; }
+    else if (points < basePoints) { numberColorClass = ''; numberColorStyle = { color: '#DC2626' }; }
     // else stays dark — no change
   }
 
   return (
     <div>
-      <p className="text-xs font-semibold uppercase tracking-wider mb-1.5" style={{ color: labelColor }}>{label}</p>
+      <p className={`text-xs font-semibold uppercase tracking-wider mb-1.5 ${labelColorClass}`} style={labelColorStyle}>{label}</p>
       <div className="flex items-baseline gap-1.5">
-        <span className={`${numberSize} font-apercu font-black`} style={{ color: numberColor, letterSpacing: '-0.02em' }}>{points}</span>
+        <span className={`${numberSize} font-apercu font-black ${numberColorClass}`} style={{ ...numberColorStyle, letterSpacing: '-0.02em' }}>{points}</span>
         <span className="text-sm font-medium" style={{ color: '#C4C0BC' }}>/625</span>
       </div>
-      <div className="w-full h-[6px] rounded-full mt-3 overflow-hidden" style={{ backgroundColor: '#EDEBE8' }}>
+      <div className="w-full h-[6px] rounded-full mt-3 overflow-hidden bg-[#EDEBE8] dark:bg-zinc-800">
         <MotionDiv
           className="h-full rounded-full"
           style={{ backgroundColor: accentColor }}
@@ -149,11 +151,11 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
   const [activeTab, setActiveTab] = useState<'overview' | 'what-if'>('overview');
   const [showGains, setShowGains] = useState(true);
   const [simSubjects, setSimSubjects] = useState<SimSubject[]>([]);
-  const [ffPicks, setFfPicks] = useState<CAOCourse[]>([]);
   const saveTimerRef = useRef<ReturnType<typeof setTimeout>>();
 
-  // Mock results integration (War Room → CAO Simulator)
-  const { mocks } = useMockResults(uid);
+  // Shared data from InnovationDataContext
+  const { mockResults: mockResultsCtx, futureFinderPicks: ffPicks } = useInnovationData();
+  const mocks = mockResultsCtx.mocks;
   const [mockBannerDismissed, setMockBannerDismissed] = useState(false);
 
   const latestMockGrades = useMemo(() => {
@@ -177,21 +179,6 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
       mockGrade: latestMockGrades[s.subjectName] as Grade,
     }));
   }, [simSubjects, latestMockGrades, mockBannerDismissed]);
-
-  // Load FutureFinder picks from Firestore
-  useEffect(() => {
-    if (!uid) return;
-    let cancelled = false;
-    getDoc(doc(db, 'progress', uid)).then(snap => {
-      if (cancelled) return;
-      const data = snap.data();
-      if (data?.futureFinder?.topPicks) {
-        const hydrated = hydrateCourses(data.futureFinder.topPicks).slice(0, 5);
-        setFfPicks(hydrated);
-      }
-    }).catch(() => {});
-    return () => { cancelled = true; };
-  }, [uid]);
 
   // Initialize / re-initialize from profile
   useEffect(() => {
@@ -345,8 +332,8 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
 
       {/* B. Points Summary — Mercury style: white card, confident type, no decoration */}
       <div
-        className="rounded-2xl px-6 py-5"
-        style={{ backgroundColor: '#FEFDFB', border: '1px solid #EDEBE8', boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}
+        className="rounded-2xl px-6 py-5 bg-[#FAF7F4] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800"
+        style={{ boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}
       >
         <div className={`grid gap-6 ${activeTab === 'what-if' ? 'grid-cols-3' : 'grid-cols-2'}`}>
           <PointsCard label="Current" points={currentAnalysis.total} maxPoints={625} accentColor="#C4C0BC" variant="current" />
@@ -355,13 +342,32 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
             <PointsCard label="What-If" points={whatIfAnalysis.total} maxPoints={625} delta={whatIfAnalysis.total - currentAnalysis.total} accentColor="#3b82f6" variant="whatif" basePoints={currentAnalysis.total} />
           )}
         </div>
+        {/* Target course from Future Finder */}
+        {ffPicks.length > 0 && (
+          <div className="mt-4 pt-4 flex items-center justify-between border-t border-[#EDEBE8] dark:border-zinc-800">
+            <div className="flex-1 min-w-0">
+              <p className="text-[10px] font-bold uppercase tracking-widest text-[#A8A29E] dark:text-zinc-500">Your #1 pick</p>
+              <p className="text-sm font-semibold truncate text-[#1A1A1A] dark:text-white">{ffPicks[0].title}</p>
+              <p className="text-[10px] text-[#A8A29E] dark:text-zinc-500">{ffPicks[0].institution} · {ffPicks[0].typicalPoints} pts</p>
+            </div>
+            <div className="text-right shrink-0 ml-3">
+              {currentAnalysis.total >= ffPicks[0].typicalPoints ? (
+                <span className="text-[10px] font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: '#DEF7EC', color: '#276749' }}>On track</span>
+              ) : (
+                <span className="text-[10px] font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: '#FDE8E8', color: '#C53030' }}>
+                  {ffPicks[0].typicalPoints - currentAnalysis.total}pt gap
+                </span>
+              )}
+            </div>
+          </div>
+        )}
         {/* Gap indicator */}
-        {targetAnalysis.total > currentAnalysis.total && (
-          <div className="mt-4 pt-4 flex items-center justify-between" style={{ borderTop: '1px solid #EDEBE8' }}>
-            <span className="text-xs font-medium" style={{ color: '#78716C' }}>Gap to target</span>
+        {targetAnalysis.total > currentAnalysis.total && !ffPicks.length && (
+          <div className="mt-4 pt-4 flex items-center justify-between border-t border-[#EDEBE8] dark:border-zinc-800">
+            <span className="text-xs font-medium text-[#78716C] dark:text-zinc-400">Gap to target</span>
             <div className="flex items-center gap-2">
               <span className="text-base font-black" style={{ color: '#2A7D6F' }}>+{targetAnalysis.total - currentAnalysis.total} pts</span>
-              <span className="text-xs font-medium" style={{ color: '#A8A29E' }}>{Math.round((currentAnalysis.total / targetAnalysis.total) * 100)}% there</span>
+              <span className="text-xs font-medium text-[#A8A29E] dark:text-zinc-500">{Math.round((currentAnalysis.total / targetAnalysis.total) * 100)}% there</span>
             </div>
           </div>
         )}
@@ -469,19 +475,18 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: idx * 0.04 }}
-                  className="py-3 px-1"
-                  style={{ borderBottom: idx < currentAnalysis.bestSix.length - 1 ? '1px solid #F0EFED' : 'none' }}
+                  className={`py-3 px-1 ${idx < currentAnalysis.bestSix.length - 1 ? 'border-b border-[#EDEBE8] dark:border-zinc-800' : ''}`}
                 >
                   <div className="flex items-center gap-3 mb-1.5">
                     <span className="text-[11px] font-bold w-4 text-right" style={{ color: '#C4C0BC' }}>{idx + 1}</span>
                     <div className="w-3 h-3 rounded-full flex-shrink-0" style={{ backgroundColor: getSubjectHex(sub.subjectName) }} />
-                    <p className="text-sm font-semibold flex-1 min-w-0 truncate" style={{ color: '#1C1917' }}>{sub.subjectName}</p>
+                    <p className="text-sm font-semibold flex-1 min-w-0 truncate text-[#1A1A1A] dark:text-white">{sub.subjectName}</p>
                     {mathsBonus && (
                       <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full" style={{ backgroundColor: '#EDF5F3', color: '#2A7D6F' }}>+25</span>
                     )}
                     <div className="flex items-center gap-1.5 flex-shrink-0">
-                      <span className="text-xs" style={{ color: '#A8A29E' }}>{sub.grade} → {targetGrade}</span>
-                      <span className="text-sm font-bold font-mono" style={{ color: '#1C1917' }}>{sub.points}</span>
+                      <span className="text-xs text-[#A8A29E] dark:text-zinc-500">{sub.grade} → {targetGrade}</span>
+                      <span className="text-sm font-bold font-mono text-[#1A1A1A] dark:text-white">{sub.points}</span>
                     </div>
                     {targetPoints !== sub.points && (
                       <span className="text-xs font-semibold flex-shrink-0" style={{ color: targetPoints > sub.points ? '#2A7D6F' : '#ef4444' }}>
@@ -490,7 +495,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
                     )}
                   </div>
                   {/* Contribution bar */}
-                  <div className="ml-[30px] h-1 rounded-full overflow-hidden" style={{ backgroundColor: '#F0EFED' }}>
+                  <div className="ml-[30px] h-1 rounded-full overflow-hidden bg-[#EDEBE8] dark:bg-zinc-800">
                     <MotionDiv
                       className="h-full rounded-full"
                       style={{ backgroundColor: getSubjectHex(sub.subjectName), opacity: 0.6 }}
@@ -600,12 +605,12 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
                             isSelected
                               ? 'shadow-sm'
                               : isCurrent
-                                ? 'ring-1 ring-zinc-300 dark:ring-zinc-600'
-                                : 'hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                                ? 'text-[#A8A29E] dark:text-zinc-500 ring-1 ring-zinc-300 dark:ring-zinc-600'
+                                : 'text-[#A8A29E] dark:text-zinc-500 hover:bg-zinc-200 dark:hover:bg-zinc-700'
                           }`}
                           style={{
                             backgroundColor: isSelected ? getSubjectHex(sub.subjectName) : 'rgba(0,0,0,0.04)',
-                            color: isSelected ? '#fff' : '#9A9590',
+                            ...(isSelected ? { color: '#fff' } : {}),
                           }}
                         >
                           {g}
@@ -651,8 +656,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
                   {biggestGains.map((gain, idx) => (
                     <div
                       key={gain.subjectName}
-                      className="flex items-center gap-3 py-2.5"
-                      style={{ borderBottom: idx < biggestGains.length - 1 ? '1px solid #F0EFED' : 'none' }}
+                      className={`flex items-center gap-3 py-2.5 ${idx < biggestGains.length - 1 ? 'border-b border-[#EDEBE8] dark:border-zinc-800' : ''}`}
                     >
                       {idx === 0 ? (
                         <span className="text-[9px] font-bold uppercase px-1.5 py-0.5 rounded" style={{ backgroundColor: '#EDF5F3', color: '#2A7D6F' }}>Best</span>
@@ -660,8 +664,8 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
                         <span className="text-[11px] font-bold w-8 text-center" style={{ color: '#C4C0BC' }}>{idx + 1}</span>
                       )}
                       <div className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: getSubjectHex(gain.subjectName) }} />
-                      <p className="text-sm font-medium flex-1" style={{ color: '#1C1917' }}>{gain.subjectName}</p>
-                      <p className="text-xs" style={{ color: '#A8A29E' }}>
+                      <p className="text-sm font-medium flex-1 text-[#1A1A1A] dark:text-white">{gain.subjectName}</p>
+                      <p className="text-xs text-[#A8A29E] dark:text-zinc-500">
                         {gain.fromGrade} → {gain.toGrade}
                       </p>
                       <span className="text-sm font-bold" style={{ color: '#2A7D6F' }}>

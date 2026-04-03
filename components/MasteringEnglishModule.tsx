@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   BookOpen, PenSquare, MessageSquare, BarChart, BrainCircuit, Mic, Settings
 } from 'lucide-react';
@@ -16,8 +17,6 @@ import { ModuleLayout } from './ModuleLayout';
 const theme = blueTheme;
 
 // --- INTERACTIVE COMPONENTS ---
-
-const MotionDiv = motion.div as any;
 
 const SHOW_DONT_TELL_PAIRS = [
   {

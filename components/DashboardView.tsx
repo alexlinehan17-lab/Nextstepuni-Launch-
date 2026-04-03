@@ -5,14 +5,13 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { ArrowLeft, BookOpen, Flame, Coins, ChevronRight } from 'lucide-react';
 import { CategoryType } from './KnowledgeTree';
 import { CourseData } from './Library';
 import { StreakData } from '../hooks/useStreak';
 import { FocusRecommendation } from '../hooks/useTodaysFocus';
 import { categoryColorMap } from '../courseData';
-
-const MotionDiv = motion.div as any;
 
 type UserProgress = {
   [moduleId: string]: { unlockedSection: number };

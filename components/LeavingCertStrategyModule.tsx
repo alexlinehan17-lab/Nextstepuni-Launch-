@@ -5,6 +5,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { Calculator, Briefcase, Target, PenSquare, Eye, HeartPulse } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
@@ -164,8 +165,6 @@ const formatTime = (totalMinutes: number): string => {
     const h = 7 + hours;
     return `${h}:${mins.toString().padStart(2, '0')}`;
 };
-
-const MotionDiv = motion.div as any;
 
 const ExamDayTimelineBuilder = () => {
     const [sequence, setSequence] = useState<TimelineActivity[]>([]);

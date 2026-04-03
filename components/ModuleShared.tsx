@@ -5,6 +5,7 @@
 
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { Zap, Quote } from 'lucide-react';
 import { ModuleTheme } from '../types';
 
@@ -274,8 +275,6 @@ function chartBuildLine(data: number[]): string {
   return d;
 }
 
-const MotionDivAny = motion.div as any;
-
 const DualChartSvg = ({ panel, xLabels, gradientId }: { panel: ChartPanelConfig; xLabels: string[]; gradientId: string }) => {
   const areaData = panel.areaSource === 'secondary' ? panel.secondary.data : panel.primary.data;
   const areaColor = panel.primary.color;
@@ -378,7 +377,7 @@ export const DualChartComparison = ({
           </button>
         </div>
       ) : (
-        <MotionDivAny initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
+        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
           <div className="grid md:grid-cols-2 gap-4 mb-5">
             <div className={`rounded-lg border ${leftColors.border} ${leftColors.bg} p-3`}>
               <DualChartSvg panel={leftPanel} xLabels={xLabels} gradientId={`${idPrefix}-left-grad`} />
@@ -395,7 +394,7 @@ export const DualChartComparison = ({
               {rightDescription}
             </div>
           </div>
-        </MotionDivAny>
+        </MotionDiv>
       )}
     </div>
   );

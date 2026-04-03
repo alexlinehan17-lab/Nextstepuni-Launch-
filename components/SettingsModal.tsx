@@ -6,12 +6,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { X, Check, Lock, Sun, Moon, RefreshCw, LogOut, ChevronRight, Compass } from 'lucide-react';
 import { AVATAR_SEEDS, getAvatarUrl } from './Auth';
 import { EXTRA_AVATAR_SEEDS } from './RewardShopModal';
 import { UserSettings } from '../types';
-
-const MotionDiv = motion.div as any;
 
 interface SettingsModalProps {
   isOpen: boolean;

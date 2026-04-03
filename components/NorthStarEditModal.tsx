@@ -6,11 +6,10 @@
 import React, { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { X, Star } from 'lucide-react';
 import { NorthStar } from '../types';
 import NorthStarOnboarding from './NorthStarOnboarding';
-
-const MotionDiv = motion.div as any;
 
 interface NorthStarEditModalProps {
   isOpen: boolean;

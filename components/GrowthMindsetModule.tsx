@@ -6,6 +6,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   Cpu, BrainCircuit, RotateCcw, Zap, MessageSquareQuote, Activity
 } from 'lucide-react';
@@ -152,7 +153,6 @@ const ReframeChallenge = ({ savedText, onSave }: { savedText?: string; onSave?: 
     );
 };
 
-
 const feedbackPairs = [
   {
     verdict: "This essay is poorly written.",
@@ -191,8 +191,6 @@ const writeYourOwnTranslations = [
   "This tells me my current strategy isn\u2019t working yet. Time to try a different approach.",
   "The feedback is about my method, not my ability. I can adjust and improve.",
 ];
-
-const MotionDiv = motion.div as any;
 
 const FeedbackTranslator = () => {
   const [flipped, setFlipped] = useState<boolean[]>(Array(6).fill(false));
@@ -346,7 +344,6 @@ const FeedbackTranslator = () => {
     </div>
   );
 };
-
 
 // --- MODULE COMPONENT ---
 const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {

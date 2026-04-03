@@ -5,6 +5,7 @@
 
 import React, { useState, useCallback, useEffect, useRef, Suspense } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from '../Motion';
 import { ArrowLeft, Mountain, Users, Heart, Gift, X } from 'lucide-react';
 import { SessionUser } from '../Auth';
 import { NorthStar, UserProgress } from '../../types';
@@ -28,8 +29,6 @@ import { useGifts } from '../../hooks/useGifts';
 import { KUDOS_MESSAGES } from '../../kudosData';
 import { STARTER_PACKS } from '../../islandShopData';
 import { getAvatarUrl } from '../Auth';
-
-const MotionDiv = motion.div as any;
 
 interface CourseInfo {
   id: string;

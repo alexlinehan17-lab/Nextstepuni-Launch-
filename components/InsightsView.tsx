@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   ArrowLeft, TrendingUp, Clock, RefreshCw, Flame, BarChart3, Sparkles, Lightbulb,
   Zap, BookOpen, Calendar, Target,
@@ -14,7 +15,6 @@ import { type StrategyMasteryMap } from '../types';
 import { useInsights, type Insight } from '../hooks/useInsights';
 
 // FIX: Cast motion components to any to bypass broken type definitions
-const MotionDiv = motion.div as any;
 
 const ICON_MAP: Record<string, React.FC<{ size?: number; className?: string }>> = {
   TrendingUp,

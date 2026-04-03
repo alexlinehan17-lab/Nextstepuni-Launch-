@@ -5,10 +5,9 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { BookOpen, Clock, PenLine, ChevronRight, Layers, Timer, MessageSquare, CalendarCheck, NotebookPen, CheckCircle2 } from 'lucide-react';
 import { type WeeklyGoal, WEEKLY_GOAL_BONUS } from '../gamificationConfig';
-
-const MotionDiv = motion.div as any;
 
 const GOAL_ICONS: Record<string, React.ElementType> = {
   BookOpen, Clock, PenLine, Layers, Timer, MessageSquare, CalendarCheck, NotebookPen, ChevronRight,

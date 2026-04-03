@@ -4,6 +4,7 @@
 */
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { CourseData } from './Library';
 import { SessionUser, getAvatarUrl } from './Auth';
 import { GraduationCap, LogOut, Trash2, AlertTriangle } from 'lucide-react';
@@ -12,7 +13,6 @@ import { db } from '../firebase';
 import { collection, getDocs, doc, deleteDoc } from 'firebase/firestore';
 
 // FIX: Cast motion components to any to bypass broken type definitions
-const MotionDiv = motion.div as any;
 
 type ModuleProgress = {
   unlockedSection: number;

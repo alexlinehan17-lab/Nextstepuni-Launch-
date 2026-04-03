@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionButton, MotionDiv } from './Motion';
 import {
   Play, Pause, RotateCcw, SkipForward, Sparkles, ChevronDown, ChevronUp,
   BookOpen, Target, Clock, Volume2, VolumeX, CloudRain, Waves, Wind, Flame, Headphones,
@@ -17,9 +18,6 @@ import {
   computeSubjectPriorities, allocateSessions, generateWeeklyTimetable,
   computeWeeksUntilExam,
 } from './timetableAlgorithm';
-
-const MotionDiv = motion.div as any;
-const MotionButton = motion.button as any;
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 

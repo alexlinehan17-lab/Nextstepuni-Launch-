@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { Cpu, SlidersHorizontal, AlertTriangle, Activity, Wrench } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { fuchsiaTheme } from '../moduleThemes';
@@ -12,7 +13,6 @@ import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './Mod
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = fuchsiaTheme;
-const MotionDiv = motion.div as any;
 
 // --- INTERACTIVE COMPONENTS ---
 
@@ -375,7 +375,6 @@ const CognitiveLoadComparison = () => {
     </div>
   );
 };
-
 
 // --- MODULE COMPONENT ---
 const TheCognitiveLoadModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {

@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   Code, SlidersHorizontal, UserX, Recycle, Flag
 } from 'lucide-react';
@@ -17,8 +18,6 @@ import { useModuleResponses } from '../hooks/useModuleResponses';
 const theme = amberTheme;
 
 // --- INTERACTIVE COMPONENTS ---
-
-const MotionDiv = motion.div as any;
 
 const AttributionMapper = ({ savedValues, onSave }: { savedValues?: { locus: number; stability: number; controllability: number }; onSave?: (values: { locus: number; stability: number; controllability: number }) => void }) => {
   const [locus, setLocus] = useState(savedValues?.locus ?? 50);
@@ -260,7 +259,6 @@ const AttributionReframeDrill = () => {
     </div>
   );
 };
-
 
 // --- MODULE COMPONENT ---
 const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {

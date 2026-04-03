@@ -5,8 +5,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-
-const MotionDiv = motion.div as any;
+import { MotionDiv } from '../Motion';
 
 interface JourneyProgressPillProps {
   tileCount: number;

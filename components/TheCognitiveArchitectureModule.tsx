@@ -6,6 +6,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   Server, Filter, Archive, BrainCircuit, Moon, ClipboardCheck
 } from 'lucide-react';
@@ -182,8 +183,6 @@ const MemoryFlowVisualizer = () => {
     </div>
   );
 };
-
-const MotionDiv = motion.div as any;
 
 // --- Chunking Challenge ---
 const CONSONANTS = 'BCDFGHJKLMNPQRSTVWXYZ'.split('');
@@ -497,7 +496,6 @@ const WorkingMemorySimulator = () => {
     </div>
   );
 };
-
 
 // --- MODULE COMPONENT ---
 const TheCognitiveArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {

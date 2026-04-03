@@ -5,8 +5,7 @@
 
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-
-const MotionDiv = motion.div as any;
+import { MotionDiv } from './Motion';
 
 interface XPPopupProps {
   points: number;

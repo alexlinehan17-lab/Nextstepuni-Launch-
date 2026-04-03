@@ -6,11 +6,10 @@
 import React from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { X, Check, Lock } from 'lucide-react';
 import { CategoryType } from './KnowledgeTree';
 import { CourseData } from './Library';
-
-const MotionDiv = motion.div as any;
 
 type UserProgress = {
   [moduleId: string]: { unlockedSection: number };

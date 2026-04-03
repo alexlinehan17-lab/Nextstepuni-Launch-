@@ -5,10 +5,9 @@
 
 import React, { useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { Trophy, Star, Flame, BookOpen, Clock, Target, Award, Crown, Mountain, Zap, Eye, Brain, Lightbulb, Shield, Sparkles } from 'lucide-react';
 import { type AchievementDefinition } from '../gamificationConfig';
-
-const MotionDiv = motion.div as any;
 
 const ICON_MAP: Record<string, React.ElementType> = {
   Trophy, Star, Flame, BookOpen, Clock, Target, Award, Crown, Mountain, Zap,

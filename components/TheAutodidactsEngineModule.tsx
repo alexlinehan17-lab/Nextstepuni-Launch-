@@ -6,6 +6,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   SlidersHorizontal, Repeat, Brain, BookOpen, PenSquare, Wrench, Highlighter
 } from 'lucide-react';
@@ -13,8 +14,6 @@ import { ModuleProgress } from '../types';
 import { cyanTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
-
-const MotionDiv = motion.div as any;
 
 const theme = cyanTheme;
 
@@ -285,7 +284,6 @@ const FourHighlighterAudit = () => {
         </div>
     );
 };
-
 
 // --- MODULE COMPONENT ---
 const TheAutodidactsEngineModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {

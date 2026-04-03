@@ -6,6 +6,7 @@
 
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   Target, Brain, SlidersHorizontal, AlertTriangle, PenTool, Key, BookOpen, Wrench
 } from 'lucide-react';
@@ -70,8 +71,6 @@ const ProblemSorter = () => {
         </div>
     );
 }
-
-const MotionDiv = motion.div as any;
 
 type PaperQuestion = {
   id: number;

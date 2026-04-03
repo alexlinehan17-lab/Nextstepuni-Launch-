@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   AlertTriangle, Lightbulb, ToggleRight, ZapOff, Wrench
 } from 'lucide-react';
@@ -49,7 +50,6 @@ const BrainSignalVisualizer = () => {
         </div>
     );
 };
-
 
 // --- AMYGDALA HIJACK SIMULATOR ---
 const AmygdalaHijackSimulator = () => {
@@ -234,7 +234,7 @@ const AmygdalaHijackSimulator = () => {
   const connectionWidth = Math.max(1, 4 - stressLevel * 3);
   const cortisolHeight = stressLevel * 100;
 
-  const MotionDiv = motion.div as any;
+
 
   return (
     <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">

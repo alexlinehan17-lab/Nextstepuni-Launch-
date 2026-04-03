@@ -6,10 +6,9 @@
 import React, { useState, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { X, BookOpen, Target, RotateCcw, Star, BookMarked } from 'lucide-react';
 import { type StudyReflection } from '../types';
-
-const MotionDiv = motion.div as any;
 
 const SESSION_ICONS: Record<string, React.ElementType> = {
   'new-learning': BookOpen,

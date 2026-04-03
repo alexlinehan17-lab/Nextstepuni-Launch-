@@ -5,11 +5,10 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { Star, Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen, Banknote, Car, Home, Users, Briefcase, Rocket, Award, UserPlus, TrendingUp, MicOff, Signpost, Plane, PartyPopper, HandHeart } from 'lucide-react';
 import { NorthStar } from '../types';
 import { NORTH_STAR_CATEGORIES, VISION_CARDS, CATEGORY_COLORS } from '../northStarData';
-
-const MotionDiv = motion.div as any;
 
 const ICON_MAP: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
   Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen,

@@ -4,128 +4,219 @@
  */
 
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Check, Circle, Lock, Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck } from 'lucide-react';
-import { STRATEGY_REGISTRY } from '../../studySessionData';
+import { AnimatePresence } from 'framer-motion';
+import { MotionDiv } from '../Motion';
+import { Check } from 'lucide-react';
+import { STRATEGY_REGISTRY } from '../../utils/strategyRegistry';
+import { getSubjectColor } from '../../utils/subjectColors';
 
-const MotionDiv = motion.div as any;
+// ── Strategy categories ─────────────────────────────────────
 
-const STRATEGY_ICONS: Record<string, React.ElementType> = {
-  'mastering-active-recall-protocol': Brain,
-  'mastering-spaced-repetition-protocol': Repeat,
-  'mastering-interleaving-protocol': Shuffle,
-  'elaborative-interrogation-protocol': HelpCircle,
-  'agency-protocol': Compass,
-  'growth-mindset-protocol': Sprout,
-  'digital-distraction-protocol': Shield,
-  'learning-radar-protocol': Radar,
-  'exam-hall-strategies-protocol': ClipboardCheck,
-};
+const CATEGORIES: { label: string; ids: string[] }[] = [
+  {
+    label: 'Recall and retention',
+    ids: [
+      'mastering-active-recall-protocol',
+      'mastering-spaced-repetition-protocol',
+      'mastering-interleaving-protocol',
+      'elaborative-interrogation-protocol',
+    ],
+  },
+  {
+    label: 'Mindset and focus',
+    ids: [
+      'agency-protocol',
+      'growth-mindset-protocol',
+      'digital-distraction-protocol',
+      'learning-radar-protocol',
+    ],
+  },
+  {
+    label: 'Exam prep',
+    ids: ['exam-hall-strategies-protocol'],
+  },
+];
+
+const strategyMap = Object.fromEntries(STRATEGY_REGISTRY.map(s => [s.moduleId, s]));
+
+// ── Component ───────────────────────────────────────────────
 
 interface StrategyPickerStepProps {
   learnedStrategyIds: string[];
   autoTrackedIds: string[];
   onContinue: (selectedIds: string[]) => void;
+  onSkip?: () => void;
+  subject?: string;
+  durationSeconds?: number;
+  pointsEarned?: number;
 }
 
 const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
   learnedStrategyIds,
   autoTrackedIds,
   onContinue,
+  onSkip,
+  subject,
+  durationSeconds = 0,
+  pointsEarned = 0,
 }) => {
   const autoSet = new Set(autoTrackedIds);
-  const learnedSet = new Set(learnedStrategyIds);
   const [selected, setSelected] = useState<Set<string>>(new Set(autoTrackedIds));
-
-  // Show ALL strategies — learned ones first, then unlearned
-  const strategies = [
-    ...STRATEGY_REGISTRY.filter(s => learnedSet.has(s.moduleId)),
-    ...STRATEGY_REGISTRY.filter(s => !learnedSet.has(s.moduleId)),
-  ];
 
   const toggle = (moduleId: string) => {
     if (autoSet.has(moduleId)) return;
     setSelected(prev => {
       const next = new Set(prev);
-      if (next.has(moduleId)) {
-        next.delete(moduleId);
-      } else {
-        next.add(moduleId);
-      }
+      if (next.has(moduleId)) next.delete(moduleId);
+      else next.add(moduleId);
       return next;
     });
   };
 
+  const count = selected.size;
+  const durationMin = Math.round(durationSeconds / 60);
+  const subjectColors = subject ? getSubjectColor(subject) : null;
+
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex flex-col items-center justify-center px-4">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex flex-col items-center justify-center px-4 py-10">
       <MotionDiv
-        initial={{ scale: 0.9, opacity: 0 }}
+        initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-        className="w-full max-w-sm space-y-6"
+        transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+        className="w-full"
+        style={{ maxWidth: 420 }}
       >
-        {/* Header */}
-        <div className="text-center">
-          <h2 className="text-2xl font-bold text-zinc-800 dark:text-white">Which strategies did you use?</h2>
-          <p className="text-sm text-zinc-400 dark:text-zinc-500 mt-2">
-            Select all that apply. Auto-tracked strategies are locked in.
-          </p>
+        {/* ── Header ── */}
+        <div className="text-center mb-6">
+          {/* Subject pill */}
+          {subject && subjectColors && (
+            <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 mb-4" style={{ backgroundColor: '#E1F5EE' }}>
+              <div className={`w-2 h-2 rounded-full ${subjectColors.dot}`} />
+              <span className="text-xs font-medium" style={{ color: '#085041' }}>{subject}</span>
+            </div>
+          )}
+          <h2 className="font-serif text-[22px] font-medium text-zinc-800 dark:text-white">Nice session</h2>
+          <p className="text-sm text-zinc-400 dark:text-zinc-500 mt-1">Which strategies did you use?</p>
         </div>
 
-        {/* Strategy list */}
-        <div className="space-y-2">
-          {strategies.map(strategy => {
-            const Icon = STRATEGY_ICONS[strategy.moduleId] || Brain;
-            const isAuto = autoSet.has(strategy.moduleId);
-            const isSelected = selected.has(strategy.moduleId);
-            const isLearned = learnedSet.has(strategy.moduleId);
+        {/* ── Session stats ── */}
+        <div className="flex items-center justify-center gap-8 pb-5 mb-7 border-b border-zinc-200 dark:border-zinc-800">
+          <div className="text-center">
+            <p className="text-xl font-medium font-apercu text-zinc-800 dark:text-white">{durationMin}m</p>
+            <p className="text-xs text-zinc-400 dark:text-zinc-500">duration</p>
+          </div>
+          <div className="text-center">
+            <p className="text-xl font-medium font-apercu text-zinc-800 dark:text-white">{autoTrackedIds.length}</p>
+            <p className="text-xs text-zinc-400 dark:text-zinc-500">strategies tracked</p>
+          </div>
+          <div className="text-center">
+            <p className="text-xl font-medium font-apercu text-zinc-800 dark:text-white">+{pointsEarned}</p>
+            <p className="text-xs text-zinc-400 dark:text-zinc-500">points earned</p>
+          </div>
+        </div>
 
-            return (
-              <button
-                key={strategy.moduleId}
-                onClick={() => toggle(strategy.moduleId)}
-                disabled={isAuto}
-                className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-left transition-all ${
-                  isSelected
-                    ? 'bg-[rgba(var(--accent),0.08)] ring-1 ring-inset ring-[rgba(var(--accent),0.2)]'
-                    : 'bg-white dark:bg-zinc-900 hover:bg-zinc-100 dark:hover:bg-zinc-800/60'
-                } ${isAuto ? 'cursor-default' : ''}`}
-              >
-                <Icon size={16} className={isSelected ? 'text-[var(--accent-hex)]' : 'text-zinc-400'} />
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2">
-                    <span className={`text-[13px] font-medium ${isSelected ? 'text-zinc-800 dark:text-white' : 'text-zinc-500 dark:text-zinc-400'}`}>
+        {/* ── Strategy chips by category ── */}
+        {CATEGORIES.map(cat => (
+          <div key={cat.label} className="mb-5">
+            <p className="text-[11px] uppercase font-medium text-zinc-400 dark:text-zinc-500 mb-2.5" style={{ letterSpacing: '0.06em' }}>
+              {cat.label}
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {cat.ids.map(id => {
+                const strategy = strategyMap[id];
+                if (!strategy) return null;
+                const isSelected = selected.has(id);
+                const isAuto = autoSet.has(id);
+
+                return (
+                  <button
+                    key={id}
+                    onClick={() => toggle(id)}
+                    disabled={isAuto}
+                    className={`inline-flex items-center gap-2 rounded-xl transition-all duration-200 ${
+                      isSelected
+                        ? 'border-[1.5px] border-[#2A7D6F]'
+                        : 'border-[1.5px] border-zinc-200 dark:border-zinc-700 hover:border-zinc-300 dark:hover:border-zinc-600'
+                    } ${isAuto ? 'cursor-default' : 'cursor-pointer'}`}
+                    style={{
+                      padding: '10px 16px',
+                      backgroundColor: isSelected ? '#E1F5EE' : 'transparent',
+                      color: isSelected ? '#085041' : undefined,
+                    }}
+                  >
+                    {/* Checkbox */}
+                    <div
+                      className={`flex items-center justify-center shrink-0 ${
+                        isSelected ? '' : 'border-[1.5px] border-zinc-300 dark:border-zinc-600'
+                      }`}
+                      style={{
+                        width: 18,
+                        height: 18,
+                        borderRadius: 5,
+                        backgroundColor: isSelected ? '#2A7D6F' : 'transparent',
+                        borderColor: isSelected ? '#2A7D6F' : undefined,
+                        border: isSelected ? '1.5px solid #2A7D6F' : undefined,
+                      }}
+                    >
+                      {isSelected && (
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                          <path d="M2.5 6L5 8.5L9.5 3.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      )}
+                    </div>
+                    <span className={`text-sm ${isSelected ? '' : 'text-zinc-500 dark:text-zinc-400'}`}>
                       {strategy.strategyName}
                     </span>
-                    {isLearned && (
-                      <span className="text-[9px] font-semibold px-1.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-900/20 text-emerald-500">
-                        Learned
-                      </span>
-                    )}
-                  </div>
-                  <span className="text-[11px] text-zinc-400 dark:text-zinc-500 block truncate">
-                    {strategy.description}
-                  </span>
-                </div>
-                {isAuto ? (
-                  <Lock size={14} className="text-teal-500 shrink-0" />
-                ) : isSelected ? (
-                  <Check size={16} className="text-[var(--accent-hex)] shrink-0" />
-                ) : (
-                  <Circle size={16} className="text-zinc-300 dark:text-zinc-600 shrink-0" />
-                )}
-              </button>
-            );
-          })}
-        </div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        ))}
 
-        {/* Continue button */}
+        {/* ── CTA button ── */}
         <button
           onClick={() => onContinue([...selected])}
-          className="w-full py-3.5 rounded-xl text-sm font-bold bg-[var(--accent-hex)] text-white shadow-lg shadow-[rgba(var(--accent),0.25)] hover:shadow-[rgba(var(--accent),0.4)] active:scale-[0.98] transition-all"
+          disabled={count === 0}
+          className={`w-full rounded-xl text-[15px] font-medium transition-all duration-200 active:scale-[0.98] mt-2 ${
+            count > 0
+              ? 'text-white hover:opacity-90'
+              : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-400 dark:text-zinc-600 cursor-not-allowed'
+          }`}
+          style={{
+            padding: 14,
+            backgroundColor: count > 0 ? '#2A7D6F' : undefined,
+          }}
         >
-          Continue
+          {count > 0
+            ? `Continue with ${count} ${count === 1 ? 'strategy' : 'strategies'}`
+            : 'Select strategies to continue'}
         </button>
+
+        {/* ── Points hint ── */}
+        <AnimatePresence>
+          {count > 0 && (
+            <MotionDiv
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="text-center mt-3"
+            >
+              <p className="text-xs font-medium" style={{ color: '#2A7D6F' }}>+5 bonus points for reflecting</p>
+            </MotionDiv>
+          )}
+        </AnimatePresence>
+
+        {/* ── Skip link ── */}
+        <div className="text-center mt-3">
+          <button
+            onClick={() => onSkip ? onSkip() : onContinue([])}
+            className="text-[13px] text-zinc-400 dark:text-zinc-500 hover:text-zinc-500 dark:hover:text-zinc-400 transition-colors"
+          >
+            Skip this step
+          </button>
+        </div>
       </MotionDiv>
     </div>
   );

@@ -5,11 +5,10 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { ArrowLeft, Check, ChevronRight, ChevronDown } from 'lucide-react';
 import { CourseData } from './Library';
 import { LEARNING_PATHS, LearningPath } from '../learningPaths';
-
-const MotionDiv = motion.div as any;
 
 type UserProgress = {
   [moduleId: string]: { unlockedSection: number };

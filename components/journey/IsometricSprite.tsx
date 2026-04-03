@@ -5,8 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-
-const MotionDiv = motion.div as any;
+import { MotionDiv } from '../Motion';
 
 export interface IsometricSpriteProps {
   src: string;

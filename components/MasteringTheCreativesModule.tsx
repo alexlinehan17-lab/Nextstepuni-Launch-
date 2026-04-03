@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { Key, PenTool, SlidersHorizontal, Film, Shield, Wrench } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { slateTheme } from '../moduleThemes';
@@ -12,7 +13,6 @@ import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './Mod
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = slateTheme;
-const MotionDiv = motion.div as any;
 
 // --- TECHNIQUE DATA ---
 

@@ -5,7 +5,8 @@
 
 import React, { useState, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronDown, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2, X, AlertCircle, Eye, Megaphone } from 'lucide-react';
+import { MotionDiv } from '../Motion';
+import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronDown, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2, X, AlertCircle, Eye, Megaphone, FileDown, UserPlus, CheckCircle, MinusCircle, Flag, Sparkles } from 'lucide-react';
 import { CourseData } from '../Library';
 import { CategoryType } from '../KnowledgeTree';
 import { getAvatarUrl } from '../Auth';
@@ -28,8 +29,9 @@ import { type EarlyWarningAlert, type AlertSeverity } from './gcAlerts';
 import { GCKeyEvents } from './GCKeyEvents';
 import { SubjectHealthPanel } from './SubjectHealthPanel';
 import { addNotificationToMultiple } from './gcNotifications';
-
-const MotionDiv = motion.div as any;
+import GCExportModal from './GCExportModal';
+import { STATUS_CONFIG } from '../../utils/studentStatus';
+import { type FlagData, type FlagPriority } from '../../hooks/useGCFlags';
 
 const CUSTOM_EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -73,7 +75,7 @@ const CATEGORIES: { id: CategoryType; title: string; color: string; dotColor: st
 
 type SortKey = 'name' | 'progress' | 'cao-current' | 'cao-target' | 'gap' | 'streak';
 type SortDir = 'asc' | 'desc';
-type StatusFilter = 'all' | 'on-track' | 'needs-support' | 'new';
+type StatusFilter = 'all' | 'flagged' | 'needs-attention' | StudentStatus;
 
 // ─── Calendar helpers ────────────────────────────────────────────────────────
 
@@ -115,6 +117,17 @@ const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'Ju
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
+interface GCFlagsAPI {
+  flags: Record<string, FlagData>;
+  flagStudent: (uid: string, note?: string, priority?: FlagPriority) => Promise<void>;
+  unflagStudent: (uid: string) => Promise<void>;
+  updateFlagNote: (uid: string, note: string) => Promise<void>;
+  updateFlagPriority: (uid: string, priority: FlagPriority) => Promise<void>;
+  isFlagged: (uid: string) => boolean;
+  getFlagData: (uid: string) => FlagData | null;
+  flaggedStudentUids: string[];
+}
+
 interface GCOverviewProps {
   studentData: GCStudentFullData[];
   allCourses: CourseData[];
@@ -125,16 +138,22 @@ interface GCOverviewProps {
   alerts?: EarlyWarningAlert[];
   onDismissAlert?: (alert: EarlyWarningAlert) => void;
   gcName?: string;
+  gcFlags?: GCFlagsAPI;
 }
 
-export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, studentNotes, onSelectStudent, onDeleteStudent, alerts = [], onDismissAlert, gcName }) => {
+export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, studentNotes, onSelectStudent, onDeleteStudent, alerts = [], onDismissAlert, gcName, gcFlags }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [showBroadcastModal, setShowBroadcastModal] = useState(false);
+  const [showExportModal, setShowExportModal] = useState(false);
   const [broadcastMessage, setBroadcastMessage] = useState('');
   const [isBroadcasting, setIsBroadcasting] = useState(false);
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all');
   const [sortKey, setSortKey] = useState<SortKey>('name');
   const [sortDir, setSortDir] = useState<SortDir>('asc');
+  const [flagPopoverUid, setFlagPopoverUid] = useState<string | null>(null);
+  const [flagNote, setFlagNote] = useState('');
+  const [flagPriority, setFlagPriority] = useState<FlagPriority>('normal');
+  const flagPopoverRef = useRef<HTMLDivElement>(null);
 
   // ─── Computed stats ─────────────────────────────────────────────────────
 
@@ -154,13 +173,81 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     ? studentStats.reduce((sum, s) => sum + s.progress, 0) / studentStats.length
     : 0;
 
-  const needsSupportCount = studentStats.filter(s => s.status === 'needs-support').length;
+  const driftingCount = studentStats.filter(s => s.status === 'drifting').length;
+  const atRiskCount = studentStats.filter(s => s.status === 'at-risk').length;
+  const flaggedCount = gcFlags?.flaggedStudentUids.length ?? 0;
+
+  // Deduplicated attention set: drifting + at-risk + flagged
+  const attentionStudents = useMemo(() => {
+    const seen = new Set<string>();
+    const list: { student: GCStudentFullData; status: StudentStatus; flag: FlagData | null; daysSince: number }[] = [];
+
+    const addStudent = (s: typeof studentStats[0]) => {
+      const uid = s.student.user.uid;
+      if (seen.has(uid)) return;
+      seen.add(uid);
+      const flag = gcFlags?.getFlagData(uid) ?? null;
+      // Compute days since last session
+      let daysSince = Infinity;
+      if (s.student.timetableCompletions) {
+        const now = Date.now();
+        for (const [date, blocks] of Object.entries(s.student.timetableCompletions)) {
+          if (Array.isArray(blocks) && blocks.length > 0) {
+            const d = new Date(date + 'T00:00:00').getTime();
+            const diff = Math.floor((now - d) / 86400000);
+            if (diff < daysSince) daysSince = diff;
+          }
+        }
+      }
+      list.push({ student: s.student, status: s.status, flag, daysSince });
+    };
+
+    // At Risk and Drifting
+    studentStats.filter(s => s.status === 'at-risk' || s.status === 'drifting').forEach(addStudent);
+    // Flagged (may overlap)
+    if (gcFlags) {
+      gcFlags.flaggedStudentUids.forEach(uid => {
+        const s = studentStats.find(ss => ss.student.user.uid === uid);
+        if (s) addStudent(s);
+      });
+    }
+
+    // Sort: high-priority flagged → at-risk → drifting → normal-priority flagged
+    list.sort((a, b) => {
+      const aHighFlag = a.flag?.priority === 'high' ? 1 : 0;
+      const bHighFlag = b.flag?.priority === 'high' ? 1 : 0;
+      if (aHighFlag !== bHighFlag) return bHighFlag - aHighFlag;
+      const statusOrder: Record<string, number> = { 'at-risk': 0, 'drifting': 1 };
+      const aOrder = statusOrder[a.status] ?? 2;
+      const bOrder = statusOrder[b.status] ?? 2;
+      if (aOrder !== bOrder) return aOrder - bOrder;
+      const aNormalFlag = a.flag && a.flag.priority === 'normal' ? 1 : 0;
+      const bNormalFlag = b.flag && b.flag.priority === 'normal' ? 1 : 0;
+      if (aNormalFlag !== bNormalFlag) return bNormalFlag - aNormalFlag;
+      return 0;
+    });
+
+    return list;
+  }, [studentStats, gcFlags]);
+
+  const needsAttentionCount = attentionStudents.length;
+  // Count only-flagged students (flagged but NOT at-risk/drifting)
+  const flaggedOnlyCount = attentionStudents.filter(s => s.flag && s.status !== 'at-risk' && s.status !== 'drifting').length;
 
   const avgCurrentCAO = studentStats.length > 0
     ? Math.round(studentStats.filter(s => s.student.subjectProfile).reduce((sum, s) => sum + s.currentCAO, 0) / Math.max(1, studentStats.filter(s => s.student.subjectProfile).length))
     : 0;
 
   const activeThisWeekCount = studentStats.filter(s => s.activeThisWeek).length;
+
+  // Status counts for filter pills
+  const statusCounts = useMemo(() => {
+    const counts: Record<string, number> = { all: studentStats.length };
+    studentStats.forEach(s => { counts[s.status] = (counts[s.status] ?? 0) + 1; });
+    counts['flagged'] = flaggedCount;
+    counts['needs-attention'] = needsAttentionCount;
+    return counts;
+  }, [studentStats, flaggedCount, needsAttentionCount]);
   const daysUntilLC = getDaysUntilLC();
   const distribution = getProgressDistribution(studentData, allCourses);
   const distributionTotal = Math.max(1, distribution.reduce((a, b) => a + b, 0));
@@ -266,10 +353,27 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       const q = searchQuery.toLowerCase();
       result = result.filter(s => s.student.user.name.toLowerCase().includes(q));
     }
-    if (statusFilter !== 'all') {
+    if (statusFilter === 'flagged') {
+      result = result.filter(s => gcFlags?.isFlagged(s.student.user.uid));
+    } else if (statusFilter === 'needs-attention') {
+      result = result.filter(s => s.status === 'drifting' || s.status === 'at-risk' || gcFlags?.isFlagged(s.student.user.uid));
+    } else if (statusFilter !== 'all') {
       result = result.filter(s => s.status === statusFilter);
     }
     result.sort((a, b) => {
+      // Flagged students always pinned to top
+      const aFlag = gcFlags?.getFlagData(a.student.user.uid);
+      const bFlag = gcFlags?.getFlagData(b.student.user.uid);
+      const aFlagged = !!aFlag;
+      const bFlagged = !!bFlag;
+      if (aFlagged !== bFlagged) return aFlagged ? -1 : 1;
+      if (aFlagged && bFlagged) {
+        // High priority first
+        if (aFlag!.priority !== bFlag!.priority) return aFlag!.priority === 'high' ? -1 : 1;
+        // Then most recently flagged first
+        return bFlag!.flaggedAt - aFlag!.flaggedAt;
+      }
+      // Normal column sort for non-flagged
       let cmp = 0;
       switch (sortKey) {
         case 'name': cmp = a.student.user.name.localeCompare(b.student.user.name); break;
@@ -282,7 +386,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       return sortDir === 'desc' ? -cmp : cmp;
     });
     return result;
-  }, [studentStats, searchQuery, statusFilter, sortKey, sortDir]);
+  }, [studentStats, searchQuery, statusFilter, sortKey, sortDir, gcFlags]);
 
   const handleSort = (key: SortKey) => {
     if (sortKey === key) {
@@ -300,30 +404,24 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
 
   // ─── Status pill helper ─────────────────────────────────────────────────
 
+  const STATUS_ICONS: Record<StudentStatus, React.ElementType> = {
+    'new': UserPlus, 'at-risk': AlertTriangle, 'drifting': TrendingDown,
+    'thriving': TrendingUp, 'active': CheckCircle, 'inactive': MinusCircle,
+  };
+
   const statusPill = (status: StudentStatus) => {
-    switch (status) {
-      case 'on-track':
-        return (
-          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-medium bg-emerald-50 text-emerald-700 dark:bg-emerald-900/20 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800/40">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-            On Track
-          </span>
-        );
-      case 'needs-support':
-        return (
-          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-medium bg-rose-50 text-rose-700 dark:bg-rose-900/20 dark:text-rose-400 border border-rose-200 dark:border-rose-800/40">
-            <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-            Needs Support
-          </span>
-        );
-      case 'new':
-        return (
-          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-medium bg-zinc-50 text-zinc-600 dark:bg-zinc-800/50 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700">
-            <span className="w-1.5 h-1.5 rounded-full bg-zinc-400" />
-            New
-          </span>
-        );
-    }
+    const cfg = STATUS_CONFIG[status];
+    const Icon = STATUS_ICONS[status];
+    return (
+      <span
+        className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-medium ${cfg.darkBgClass} ${cfg.darkTextClass}`}
+        style={{ backgroundColor: cfg.bg, color: cfg.text }}
+        aria-label={`Status: ${cfg.label}`}
+      >
+        <Icon size={12} aria-hidden="true" />
+        {cfg.label}
+      </span>
+    );
   };
 
   // ─── CAO gap pill ─────────────────────────────────────────────────────
@@ -387,6 +485,35 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     else setCalMonth(m => m + 1);
   };
 
+  // ─── Flag popover helpers ────────────────────────────────────────────────
+
+  const openFlagPopover = (uid: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const existing = gcFlags?.getFlagData(uid);
+    setFlagNote(existing?.note ?? '');
+    setFlagPriority(existing?.priority ?? 'normal');
+    setFlagPopoverUid(uid);
+  };
+
+  // Close flag popover on outside click or Escape
+  React.useEffect(() => {
+    if (!flagPopoverUid) return;
+    const handleClick = (e: MouseEvent) => {
+      if (flagPopoverRef.current && !flagPopoverRef.current.contains(e.target as Node)) {
+        setFlagPopoverUid(null);
+      }
+    };
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setFlagPopoverUid(null);
+    };
+    document.addEventListener('mousedown', handleClick);
+    document.addEventListener('keydown', handleKey);
+    return () => {
+      document.removeEventListener('mousedown', handleClick);
+      document.removeEventListener('keydown', handleKey);
+    };
+  }, [flagPopoverUid]);
+
   // ─── Render ─────────────────────────────────────────────────────────────
 
   const hour = new Date().getHours();
@@ -408,6 +535,14 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
             <span className={`text-lg font-bold ${TEXT_ACCENT_DARK}`} style={{ color: ACCENT }}>{daysUntilLC}</span>
             <span className="text-[10px] font-bold uppercase tracking-wider dark:!text-[rgba(77,184,164,0.7)]" style={{ color: 'rgba(42,125,111,0.7)' }}>days to LC</span>
           </div>
+          <button
+            onClick={() => setShowExportModal(true)}
+            className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold transition-colors ${TEXT_ACCENT_DARK} dark:!border-[rgba(77,184,164,0.3)]`}
+            style={{ color: ACCENT, border: '1px solid rgba(42,125,111,0.3)', backgroundColor: 'transparent' }}
+          >
+            <FileDown size={14} />
+            Export
+          </button>
           <button
             onClick={() => setShowBroadcastModal(true)}
             className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold transition-colors ${TEXT_ACCENT_DARK} dark:!border-[rgba(77,184,164,0.3)]`}
@@ -512,19 +647,20 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           {/* Alert cards */}
           <div className="divide-y divide-zinc-100 dark:divide-zinc-800/40">
             {alerts.map((alert) => {
-              const severityConfig: Record<AlertSeverity, { border: string; dot: string; bg: string }> = {
-                urgent: { border: 'border-l-rose-500', dot: 'bg-rose-500', bg: 'bg-rose-50/50 dark:bg-rose-500/5' },
-                watch: { border: 'border-l-amber-500', dot: 'bg-amber-500', bg: 'bg-amber-50/50 dark:bg-amber-500/5' },
-                nudge: { border: 'border-l-blue-500', dot: 'bg-blue-500', bg: 'bg-blue-50/50 dark:bg-blue-500/5' },
+              const severityConfig: Record<AlertSeverity, { dot: string; bg: string }> = {
+                urgent: { dot: 'bg-rose-500', bg: 'bg-rose-50/50 dark:bg-rose-500/5' },
+                watch: { dot: 'bg-amber-500', bg: 'bg-amber-50/50 dark:bg-amber-500/5' },
+                nudge: { dot: 'bg-blue-500', bg: 'bg-blue-50/50 dark:bg-blue-500/5' },
               };
               const cfg = severityConfig[alert.severity];
 
               return (
                 <div
                   key={alert.id}
-                  className={`flex items-center gap-4 px-5 py-3 border-l-[3px] ${cfg.border} ${cfg.bg} transition-colors`}
+                  className={`flex items-center gap-4 px-5 py-3 ${cfg.bg} transition-colors`}
                 >
-                  {/* Avatar */}
+                  {/* Severity dot + Avatar */}
+                  <div className={`w-2 h-2 rounded-full shrink-0 ${cfg.dot}`} />
                   <img
                     src={getAvatarUrl(alert.studentAvatar)}
                     alt=""
@@ -570,12 +706,11 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       {/* ═══════════════════════════════════════════════════════════════════
           ROW 1 — 4 Stat Cards (full width, 4 equal columns)
           ═══════════════════════════════════════════════════════════════════ */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-3 gap-4">
         {[
-          { label: 'Total Students', value: String(studentData.length), trend: null as number | null, isWarning: false },
-          { label: 'Avg Progress', value: `${avgProgress.toFixed(0)}%`, trend: null, isWarning: false },
-          { label: 'Blocks This Week', value: String(weeklyTrends.blocksThisWeek), trend: weeklyTrends.blocksTrend, isWarning: false },
-          { label: 'Needs Support', value: String(needsSupportCount), trend: null, isWarning: true },
+          { label: 'Total Students', value: String(studentData.length), trend: null as number | null },
+          { label: 'Avg Progress', value: `${avgProgress.toFixed(0)}%`, trend: null },
+          { label: 'Blocks This Week', value: String(weeklyTrends.blocksThisWeek), trend: weeklyTrends.blocksTrend },
         ].map((kpi, i) => (
           <MotionDiv
             key={kpi.label}
@@ -586,7 +721,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
             style={CARD_STYLE}
           >
             <p className={`text-[11px] font-medium uppercase tracking-widest mb-2 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{kpi.label}</p>
-            <p className={`text-3xl font-medium text-zinc-900 dark:text-white ${kpi.isWarning ? 'dark:!text-[#D4A95C]' : ''}`} style={kpi.isWarning ? { color: WARM_AMBER } : undefined}>{kpi.value}</p>
+            <p className="text-3xl font-medium text-zinc-900 dark:text-white">{kpi.value}</p>
             {kpi.trend !== null ? (
               <div className={`flex items-center gap-1 mt-2 text-xs font-medium ${kpi.trend >= 0 ? 'dark:!text-[#8AB592]' : 'dark:!text-[#D4A95C]'}`} style={{ color: kpi.trend >= 0 ? SAGE : WARM_AMBER }}>
                 {kpi.trend >= 0 ? <TrendingUp size={12} /> : <TrendingDown size={12} />}
@@ -598,6 +733,79 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           </MotionDiv>
         ))}
       </div>
+
+      {/* ═══════════════════════════════════════════════════════════════════
+          Unified Attention Section
+          ═══════════════════════════════════════════════════════════════════ */}
+      <MotionDiv
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.14, ease: CUSTOM_EASE }}
+        className={CARD_STYLE_DARK_CLASS}
+        style={CARD_STYLE}
+      >
+        <div className="flex items-start justify-between mb-1">
+          <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Attention</p>
+          {needsAttentionCount > 0 && (
+            <p className={`text-3xl font-medium dark:!text-[#D4A95C]`} style={{ color: WARM_AMBER }}>{needsAttentionCount}</p>
+          )}
+        </div>
+
+        {needsAttentionCount === 0 ? (
+          <div className="text-center py-8">
+            <Sparkles size={24} className="mx-auto mb-2" style={{ color: ACCENT }} />
+            <p className="text-sm font-medium text-zinc-700 dark:text-zinc-300">All students are engaged</p>
+            <p className={`text-xs mt-0.5 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>No students drifting, at risk, or flagged</p>
+          </div>
+        ) : (
+          <>
+            <p className={`text-xs mb-5 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>
+              {[
+                driftingCount > 0 && `${driftingCount} drifting`,
+                atRiskCount > 0 && `${atRiskCount} at risk`,
+                flaggedOnlyCount > 0 && `${flaggedOnlyCount} flagged`,
+              ].filter(Boolean).join(' · ')}
+            </p>
+            <div className="space-y-1">
+              {attentionStudents.map(({ student, status, flag, daysSince }) => {
+                const stCfg = STATUS_CONFIG[status];
+                const StatusIcon = STATUS_ICONS[status];
+                return (
+                  <button
+                    key={student.user.uid}
+                    onClick={() => onSelectStudent(student.user.uid)}
+                    className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800/40 transition-colors text-left"
+                    aria-label={`View ${student.user.name}, status: ${stCfg.label}${flag ? ', flagged' : ''}`}
+                  >
+                    <img src={getAvatarUrl(student.user.avatar)} alt="" className="w-8 h-8 rounded-full bg-zinc-200 dark:bg-zinc-700 shrink-0" />
+                    <span className="text-sm font-medium text-zinc-800 dark:text-white truncate flex-1">{student.user.name}</span>
+                    <span
+                      className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-semibold shrink-0 ${stCfg.darkBgClass} ${stCfg.darkTextClass}`}
+                      style={{ backgroundColor: stCfg.bg, color: stCfg.text }}
+                      aria-label={`Status: ${stCfg.label}`}
+                    >
+                      <StatusIcon size={10} />
+                      {stCfg.label}
+                    </span>
+                    {flag && (
+                      <Flag
+                        size={12}
+                        fill={flag.priority === 'high' ? '#D97706' : ACCENT}
+                        style={{ color: flag.priority === 'high' ? '#D97706' : ACCENT }}
+                        className="shrink-0"
+                        aria-label={`Flagged: ${flag.priority} priority`}
+                      />
+                    )}
+                    <span className={`text-[10px] shrink-0 whitespace-nowrap ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>
+                      {daysSince === Infinity ? 'No sessions' : daysSince === 0 ? 'Today' : daysSince === 1 ? '1 day ago' : `${daysSince}d ago`}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </>
+        )}
+      </MotionDiv>
 
       {/* ═══════════════════════════════════════════════════════════════════
           ROW 2+ — 2-column 1fr 1fr grid
@@ -848,37 +1056,58 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           ═══════════════════════════════════════════════════════════════════ */}
       <div id="gc-students" className="rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-shadow overflow-hidden">
         {/* Table Controls */}
-        <div className="flex flex-col sm:flex-row gap-3 p-5 border-b border-zinc-100 dark:border-zinc-800">
-          <div className="relative flex-1">
-            <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500" />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search students..."
-              className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2.5 pl-10 pr-4 text-zinc-900 dark:text-white text-sm placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-[rgba(var(--accent),0.6)] focus:ring-1 focus:ring-[rgba(var(--accent),0.3)] transition-colors"
-            />
-          </div>
-          <div className="relative">
-            <ChevronDown size={14} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 pointer-events-none" />
-            <select
-              value={statusFilter}
-              onChange={(e) => setStatusFilter(e.target.value as StatusFilter)}
-              className="appearance-none bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2.5 pl-4 pr-8 text-zinc-900 dark:text-white text-sm cursor-pointer focus:outline-none focus:border-[rgba(var(--accent),0.6)] focus:ring-1 focus:ring-[rgba(var(--accent),0.3)] transition-colors"
+        <div className="p-5 border-b border-zinc-100 dark:border-zinc-800 space-y-3">
+          <div className="flex flex-col sm:flex-row gap-3">
+            <div className="relative flex-1">
+              <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search students..."
+                className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2.5 pl-10 pr-4 text-zinc-900 dark:text-white text-sm placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-[rgba(42,125,111,0.5)] transition-colors"
+              />
+            </div>
+            <button
+              onClick={handleExportCSV}
+              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-colors ${TEXT_ACCENT_DARK}`}
+              style={{ backgroundColor: 'rgba(42,125,111,0.08)', color: ACCENT }}
             >
-              <option value="all">All Students</option>
-              <option value="on-track">On Track</option>
-              <option value="needs-support">Needs Support</option>
-              <option value="new">New</option>
-            </select>
+              <Download size={16} />
+              Export CSV
+            </button>
           </div>
-          <button
-            onClick={handleExportCSV}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[rgba(var(--accent),0.1)] text-[var(--accent-hex)] hover:bg-[rgba(var(--accent),0.2)] text-sm font-medium transition-colors"
-          >
-            <Download size={16} />
-            Export CSV
-          </button>
+          {/* Filter pills */}
+          <div className="flex flex-wrap gap-1.5">
+            {([
+              { key: 'all' as StatusFilter, label: 'All' },
+              { key: 'needs-attention' as StatusFilter, label: 'Needs Attention' },
+              { key: 'thriving' as StatusFilter, label: 'Thriving' },
+              { key: 'active' as StatusFilter, label: 'Active' },
+              { key: 'new' as StatusFilter, label: 'New' },
+              { key: 'drifting' as StatusFilter, label: 'Drifting' },
+              { key: 'at-risk' as StatusFilter, label: 'At Risk' },
+              { key: 'inactive' as StatusFilter, label: 'Inactive' },
+              { key: 'flagged' as StatusFilter, label: 'Flagged' },
+            ] as { key: StatusFilter; label: string }[]).map(f => {
+              const count = statusCounts[f.key] ?? 0;
+              const isActive = statusFilter === f.key;
+              return (
+                <button
+                  key={f.key}
+                  onClick={() => setStatusFilter(f.key)}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+                    isActive
+                      ? 'text-white'
+                      : 'text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                  }`}
+                  style={isActive ? { backgroundColor: ACCENT } : { backgroundColor: 'transparent' }}
+                >
+                  {f.label}{f.key !== 'all' ? ` (${count})` : ''}
+                </button>
+              );
+            })}
+          </div>
         </div>
 
         {/* Table */}
@@ -903,21 +1132,25 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                   </th>
                 ))}
                 <th className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 whitespace-nowrap">Status</th>
+                {gcFlags && <th className="px-2 py-3 w-10"></th>}
                 {onDeleteStudent && <th className="px-3 py-3 w-10"></th>}
               </tr>
             </thead>
             <tbody>
               {filtered.map((row, i) => {
                 const gap = row.targetCAO - row.currentCAO;
+                const uid = row.student.user.uid;
+                const rowFlag = gcFlags?.getFlagData(uid);
+                const rowFlagged = !!rowFlag;
                 return (
                   <MotionDiv
-                    key={row.student.user.uid}
+                    key={uid}
                     as="tr"
                     initial={{ opacity: 0, y: 4 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.2, delay: i * 0.02 }}
-                    onClick={() => onSelectStudent(row.student.user.uid)}
-                    className="border-b border-zinc-100 dark:border-zinc-800/50 cursor-pointer hover:bg-zinc-50 dark:hover:bg-zinc-800/30 transition-colors"
+                    onClick={() => onSelectStudent(uid)}
+                    className="border-b border-zinc-100 dark:border-zinc-800/50 cursor-pointer hover:bg-zinc-50 dark:hover:bg-zinc-800/30 transition-colors group"
                     style={{ display: 'table-row' }}
                   >
                     <td className="px-5 py-4 align-middle">
@@ -949,6 +1182,94 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                       </div>
                     </td>
                     <td className="px-5 py-4 align-middle">{statusPill(row.status)}</td>
+                    {gcFlags && (
+                      <td className="px-2 py-4 align-middle relative">
+                        <button
+                          onClick={(e) => openFlagPopover(uid, e)}
+                          className={`w-7 h-7 rounded-lg flex items-center justify-center transition-all ${
+                            rowFlagged
+                              ? ''
+                              : 'opacity-0 group-hover:opacity-100 text-zinc-300 dark:text-zinc-600 hover:text-zinc-500 dark:hover:text-zinc-400'
+                          }`}
+                          aria-label={rowFlagged ? `Edit flag for ${row.student.user.name}` : `Flag ${row.student.user.name}`}
+                          title={rowFlagged ? 'Edit flag' : 'Flag student'}
+                        >
+                          <Flag
+                            size={14}
+                            fill={rowFlagged ? (rowFlag!.priority === 'high' ? '#D97706' : ACCENT) : 'none'}
+                            style={rowFlagged ? { color: rowFlag!.priority === 'high' ? '#D97706' : ACCENT } : undefined}
+                          />
+                        </button>
+                        {/* Flag popover */}
+                        <AnimatePresence>
+                          {flagPopoverUid === uid && (
+                            <MotionDiv
+                              ref={flagPopoverRef}
+                              initial={{ opacity: 0, scale: 0.95, y: -4 }}
+                              animate={{ opacity: 1, scale: 1, y: 0 }}
+                              exit={{ opacity: 0, scale: 0.95, y: -4 }}
+                              transition={{ duration: 0.15 }}
+                              className="absolute right-0 top-full mt-1 z-50 w-72 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-xl p-4"
+                              role="dialog"
+                              aria-label={rowFlagged ? 'Edit student flag' : 'Flag student'}
+                              onClick={(e: React.MouseEvent) => e.stopPropagation()}
+                            >
+                              <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 mb-3">
+                                {rowFlagged ? 'Edit Flag' : 'Flag Student'}
+                              </p>
+                              <textarea
+                                value={flagNote}
+                                onChange={(e) => setFlagNote(e.target.value)}
+                                placeholder="Add a private note..."
+                                className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-lg p-2.5 text-sm text-zinc-800 dark:text-white placeholder:text-zinc-400 resize-none h-16 focus:outline-none focus:border-[rgba(42,125,111,0.5)] mb-3"
+                              />
+                              <div className="flex items-center gap-2 mb-3">
+                                <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Priority:</span>
+                                <button
+                                  onClick={() => setFlagPriority('normal')}
+                                  className={`px-2.5 py-1 rounded-md text-[10px] font-semibold transition-colors ${flagPriority === 'normal' ? 'text-white' : 'text-zinc-500 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800'}`}
+                                  style={flagPriority === 'normal' ? { backgroundColor: ACCENT } : undefined}
+                                >
+                                  Normal
+                                </button>
+                                <button
+                                  onClick={() => setFlagPriority('high')}
+                                  className={`px-2.5 py-1 rounded-md text-[10px] font-semibold transition-colors ${flagPriority === 'high' ? 'bg-amber-500 text-white' : 'text-zinc-500 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800'}`}
+                                >
+                                  High
+                                </button>
+                              </div>
+                              <div className="flex gap-2">
+                                {rowFlagged && (
+                                  <button
+                                    onClick={async (e) => { e.stopPropagation(); await gcFlags.unflagStudent(uid); setFlagPopoverUid(null); }}
+                                    className="px-3 py-1.5 rounded-lg text-xs font-medium text-red-500 hover:bg-red-50 dark:hover:bg-red-500/10 transition-colors"
+                                  >
+                                    Remove Flag
+                                  </button>
+                                )}
+                                <button
+                                  onClick={async (e) => {
+                                    e.stopPropagation();
+                                    if (rowFlagged) {
+                                      await gcFlags.updateFlagNote(uid, flagNote);
+                                      await gcFlags.updateFlagPriority(uid, flagPriority);
+                                    } else {
+                                      await gcFlags.flagStudent(uid, flagNote, flagPriority);
+                                    }
+                                    setFlagPopoverUid(null);
+                                  }}
+                                  className="ml-auto px-3 py-1.5 rounded-lg text-xs font-semibold text-white transition-colors"
+                                  style={{ backgroundColor: ACCENT }}
+                                >
+                                  {rowFlagged ? 'Update' : 'Flag Student'}
+                                </button>
+                              </div>
+                            </MotionDiv>
+                          )}
+                        </AnimatePresence>
+                      </td>
+                    )}
                     {onDeleteStudent && (
                       <td className="px-3 py-4 align-middle">
                         <button
@@ -1047,6 +1368,15 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           );
         })()}
       </div>
+
+      {/* Export Modal */}
+      <GCExportModal
+        isOpen={showExportModal}
+        onClose={() => setShowExportModal(false)}
+        studentData={studentData}
+        allCourses={allCourses}
+        school={school}
+      />
     </div>
   );
 };

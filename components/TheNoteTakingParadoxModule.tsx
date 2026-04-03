@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { FileText, SquarePen, Layers, GitBranch, Wrench } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { indigoTheme } from '../moduleThemes';
@@ -12,7 +13,6 @@ import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './Mod
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = indigoTheme;
-const MotionDiv = motion.div as any;
 
 // --- INTERACTIVE COMPONENTS ---
 
@@ -319,7 +319,6 @@ const CornellNoteSimulator = () => {
     </div>
   );
 };
-
 
 // --- MODULE COMPONENT ---
 const TheNoteTakingParadoxModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {

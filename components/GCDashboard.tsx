@@ -4,6 +4,7 @@
  */
 import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { CourseData } from './Library';
 import { SessionUser, getAvatarUrl } from './Auth';
 import { GraduationCap, LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, Trash2, AlertTriangle, CalendarDays, Moon, Sun } from 'lucide-react';
@@ -24,14 +25,14 @@ import { GCOverview } from './gc/GCOverview';
 import { GCKeyEvents } from './gc/GCKeyEvents';
 import { GCStudentDetail } from './gc/GCStudentDetail';
 import { generateAlerts, type DismissedAlert, type EarlyWarningAlert } from './gc/gcAlerts';
-
-const MotionDiv = motion.div as any;
+import { useGCFlags } from '../hooks/useGCFlags';
 
 interface GCDashboardProps {
   school: string;
   onLogout: () => void;
   allCourses: CourseData[];
   gcName?: string;
+  gcUid?: string;
 }
 
 // ─── Shimmer skeleton ────────────────────────────────────────────────────────
@@ -79,7 +80,7 @@ const LoadingSkeleton: React.FC = () => (
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
-export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allCourses, gcName }) => {
+export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allCourses, gcName, gcUid }) => {
   const [studentData, setStudentData] = useState<GCStudentFullData[]>([]);
   const [studentNotes, setStudentNotes] = useState<Record<string, { notes: string; updatedAt: string }>>({});
   const [isLoading, setIsLoading] = useState(true);
@@ -94,6 +95,8 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       document.documentElement.classList.add('dark');
     }
   }, []);
+
+  const gcFlags = useGCFlags(gcUid);
 
   const [deleteTarget, setDeleteTarget] = useState<SessionUser | null>(null);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -387,6 +390,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             alerts={alerts}
             onDismissAlert={handleDismissAlert}
             gcName={gcName}
+            gcFlags={gcFlags}
           />
         )}
       </main>
@@ -426,6 +430,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
                 }}
                 alerts={getStudentAlerts(selectedStudent.user.uid)}
                 gcName={gcName}
+                gcFlags={gcFlags}
               />
             </MotionDiv>
           </>

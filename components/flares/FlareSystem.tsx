@@ -5,14 +5,11 @@
 
 import React, { useState, useEffect, useCallback, useRef, Suspense } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionButton, MotionDiv, MotionSpan } from '../Motion';
 import { createPortal } from 'react-dom';
 import { X, Send, RefreshCw, ThumbsUp, CheckCircle, AlertCircle, MessageCircle, Flame, Radio } from 'lucide-react';
 import { containsProfanity } from './profanityFilter';
 import { useFlares, FlareDoc, FlareResponse, FlareCounts } from '../../hooks/useFlares';
-
-const MotionDiv = motion.div as any;
-const MotionButton = motion.button as any;
-const MotionSpan = motion.span as any;
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 

@@ -5,6 +5,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { ArrowRight, ArrowLeft, Check, X } from 'lucide-react';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
@@ -12,8 +13,6 @@ import {
   getGradeIndex,
   type LCSubject,
 } from './subjectData';
-
-const MotionDiv = motion.div as any;
 
 // ─── Subject Color Map (literal Tailwind strings for CDN) ───────────────────
 

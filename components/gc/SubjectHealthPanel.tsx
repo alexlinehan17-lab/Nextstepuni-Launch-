@@ -5,10 +5,10 @@
 
 import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
+import { MotionDiv } from '../Motion';
 import { TrendingUp, TrendingDown, Minus, Users } from 'lucide-react';
 import { GCStudentFullData } from './gcTypes';
 
-const MotionDiv = motion.div as any;
 const CUSTOM_EASE = [0.16, 1, 0.3, 1] as const;
 
 // ─── Grade conversion (Irish system only) ──────────────────────────────────

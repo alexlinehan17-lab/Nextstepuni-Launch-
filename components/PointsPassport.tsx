@@ -5,6 +5,7 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   TrendingUp, Target, Zap, Plus, Trash2, ChevronRight,
   ArrowRight, Star, Info, Calendar, Award, Rocket,
@@ -19,8 +20,6 @@ import { useToast } from './Toast';
 import { useMockResults } from '../hooks/useMockResults';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-
-const MotionDiv = motion.div as any;
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -219,10 +218,10 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
 
       {/* Points overview cards */}
       <div className="grid grid-cols-3 gap-3">
-        <div className="rounded-xl p-4" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)' }}>
-          <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#9A9590' }}>Current</p>
+        <div className="rounded-xl p-4 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+          <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#9A9590] dark:text-zinc-500">Current</p>
           <span className="font-apercu text-3xl font-black" style={{ color: '#2A7D6F' }}>{currentPoints}</span>
-          <span className="text-sm ml-1" style={{ color: '#9A9590' }}>/625</span>
+          <span className="text-sm ml-1 text-[#9A9590] dark:text-zinc-500">/625</span>
         </div>
         <div className="rounded-xl p-4" style={{ backgroundColor: '#EDF2EE', border: '0.5px solid rgba(0,0,0,0.07)' }}>
           <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#6B8F71' }}>Target</p>
@@ -239,7 +238,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
       </div>
 
       {/* Identity reframing card */}
-      <div className="rounded-xl p-5" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)' }}>
+      <div className="rounded-xl p-5 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
         <div className="flex items-start gap-3">
           <TrendingUp size={18} className="shrink-0 mt-0.5" style={{ color: '#2A7D6F' }} />
           <div>
@@ -297,7 +296,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
                   const targetPts = getPointsForGrade(sub.targetGrade, isMaths);
                   const gap = targetPts - currentPts;
                   return (
-                    <div key={sub.subjectName} className="flex items-center gap-3 p-3 rounded-xl" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)' }}>
+                    <div key={sub.subjectName} className="flex items-center gap-3 p-3 rounded-xl bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
                       <span className={`w-2.5 h-2.5 rounded-full shrink-0 ${getDot(sub.subjectName)}`} />
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200 truncate">{sub.subjectName}</p>
@@ -319,7 +318,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
 
             {/* CAO Simulator insights (Connection 4: CAO Simulator → Points Passport) */}
             {caoData && caoData.whatIfScenarios && caoData.whatIfScenarios.length > 0 && (
-              <div className="rounded-xl p-4 space-y-2" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)' }}>
+              <div className="rounded-xl p-4 space-y-2 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
                 <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: '#2A7D6F' }}>From Your Simulator</p>
                 {caoData.whatIfScenarios.slice(0, 3).map((s: any, i: number) => (
                   <div key={i} className="flex items-center justify-between text-xs">
@@ -420,11 +419,11 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
                   Recorded Mocks
                 </p>
                 {mockResults.map((mock) => (
-                  <div key={mock.id} className="flex items-center gap-3 p-3 rounded-xl" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)' }}>
-                    <Calendar size={14} style={{ color: '#9A9590' }} className="shrink-0" />
+                  <div key={mock.id} className="flex items-center gap-3 p-3 rounded-xl bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+                    <Calendar size={14} className="shrink-0 text-[#9A9590] dark:text-zinc-500" />
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">{mock.label}</p>
-                      <p className="text-[11px]" style={{ color: '#9A9590' }}>{mock.date}</p>
+                      <p className="text-[11px] text-[#9A9590] dark:text-zinc-500">{mock.date}</p>
                     </div>
                     <span className="text-sm font-bold" style={{ color: '#2A7D6F' }}>{mock.totalPoints} pts</span>
                     <button

@@ -8,7 +8,7 @@ import { doc, getDoc, setDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
 import { getWeekNumber, getWeekStartDate } from '../gamificationConfig';
 import { getWeeklyChallenge, type WeeklyChallengeDefinition } from '../weeklyChallengeData';
-import { type StudySessionRecord } from '../studySessionData';
+import { type StudySessionRecord } from '../utils/strategyRegistry';
 
 export interface WeeklyChallengeState {
   challenge: WeeklyChallengeDefinition;

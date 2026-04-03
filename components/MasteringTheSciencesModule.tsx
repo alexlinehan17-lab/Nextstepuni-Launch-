@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   Key, Leaf, Beaker, Atom, Sprout, BrainCircuit, Flag
 } from 'lucide-react';
@@ -232,8 +233,6 @@ const KEYWORD_QUESTIONS = [
     correctIndex: 1,
   },
 ];
-
-const MotionDiv = motion.div as any;
 
 function fisherYatesShuffle<T>(arr: T[]): T[] {
   const a = [...arr];

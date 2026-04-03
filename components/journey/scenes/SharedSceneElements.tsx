@@ -474,7 +474,7 @@ const SteamParticles: React.FC<{ position: [number, number, number] }> = ({ posi
     if (ref.current) {
       ref.current.children.forEach((c) => {
         c.position.y += dt * 0.15;
-        (c as THREE.Mesh).material && ((c as any).material.opacity = Math.max(0, 0.4 - c.position.y * 1.5));
+        if ((c as THREE.Mesh).material) { (c as any).material.opacity = Math.max(0, 0.4 - c.position.y * 1.5); }
         if (c.position.y > 0.3) c.position.y = 0;
       });
     }

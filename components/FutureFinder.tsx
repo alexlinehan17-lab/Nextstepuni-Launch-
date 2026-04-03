@@ -6,11 +6,13 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { useToast } from './Toast';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionButton, MotionDiv } from './Motion';
 import {
   Compass, ChevronRight, ChevronLeft, Search, SlidersHorizontal,
   MapPin, GraduationCap, Briefcase, Heart, Star, RotateCcw,
   BookmarkPlus, Check, ArrowUpRight, TrendingUp, X, Building, Clock,
 } from 'lucide-react';
+import PrimaryActionButton from './ui/PrimaryActionButton';
 import { db } from '../firebase';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { type StudentSubjectProfile, LC_SUBJECTS, getPointsForGrade } from './subjectData';
@@ -22,9 +24,6 @@ import {
   type RecommendationResult,
   type AssessmentQuestion,
 } from './futureFinderAlgorithm';
-
-const MotionDiv = motion.div as any;
-const MotionButton = motion.button as any;
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -322,7 +321,7 @@ function IntroPhase({ autoPoints, onStart, onViewResults }: { autoPoints: number
   return (
     <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
       <div className="text-center py-12">
-        <div className="w-20 h-20 mx-auto mb-6 rounded-2xl flex items-center justify-center" style={{ backgroundColor: '#FAF7F4' }}>
+        <div className="w-20 h-20 mx-auto mb-6 rounded-2xl flex items-center justify-center bg-[#FAF7F4] dark:bg-zinc-900">
           <Compass size={40} style={{ color: '#2A7D6F' }} />
         </div>
         <h2 className="font-serif text-3xl font-semibold text-zinc-900 dark:text-white mb-3">Find Your Future</h2>
@@ -338,16 +337,7 @@ function IntroPhase({ autoPoints, onStart, onViewResults }: { autoPoints: number
           We look at your interests, values, work style and preferred location to find courses you'll actually enjoy.
         </p>
         <div className="flex flex-col items-center gap-3">
-          <MotionButton
-            whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
-            onClick={onStart}
-            className="px-8 py-3.5 rounded-xl text-white font-semibold text-base transition-colors"
-            style={{ backgroundColor: '#2A7D6F' }}
-            onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => e.currentTarget.style.backgroundColor = '#1F5F54'}
-            onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => e.currentTarget.style.backgroundColor = '#2A7D6F'}
-          >
-            Let's Go
-          </MotionButton>
+          <PrimaryActionButton label="Let's Go" onClick={onStart} icon={Compass} />
           {onViewResults && (
             <button onClick={onViewResults} className="text-sm hover:underline" style={{ color: '#2A7D6F' }}>
               View previous results
@@ -615,7 +605,7 @@ function ResultsPhase({
 
       {/* Compare bar */}
       {compareCourses.length > 0 && (
-        <div className="mb-4 p-3 rounded-xl border flex items-center justify-between" style={{ backgroundColor: '#FAF7F4', borderColor: 'rgba(42,125,111,0.2)' }}>
+        <div className="mb-4 p-3 rounded-xl border flex items-center justify-between bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(42,125,111,0.2)' }}>
           <span className="text-xs font-semibold" style={{ color: '#2A7D6F' }}>
             {compareCourses.length} course{compareCourses.length > 1 ? 's' : ''} selected for comparison
           </span>
@@ -678,8 +668,8 @@ function ResultCard({
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: rank * 0.04, duration: 0.3 }}
-      className="group rounded-xl border hover:shadow-md cursor-pointer overflow-hidden transition-all"
-      style={{ backgroundColor: '#FAF7F4', borderColor: 'rgba(0,0,0,0.07)' }}
+      className="group rounded-xl border hover:shadow-md cursor-pointer overflow-hidden transition-all bg-[#FAF7F4] dark:bg-zinc-900"
+      style={{ borderColor: 'rgba(0,0,0,0.07)' }}
       onClick={onClick}
     >
       <div className="h-[2px] opacity-0 group-hover:opacity-100 transition-opacity" style={{ backgroundColor: '#2A7D6F' }} />
@@ -803,7 +793,7 @@ function DetailPhase({
         <ChevronLeft size={16} /> Back to results
       </button>
 
-      <div className="dark:bg-zinc-900 overflow-hidden" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: '12px' }}>
+      <div className="bg-[#FAF7F4] dark:bg-zinc-900 overflow-hidden" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: '12px' }}>
         {/* Header */}
         <div className="p-6" style={{ backgroundColor: '#2A7D6F' }}>
           <div className="flex items-center gap-2 mb-2 flex-wrap">
@@ -841,7 +831,7 @@ function DetailPhase({
 
           {/* Your Points section */}
           {c.typicalPoints === 0 ? (
-            <div className="p-4 rounded-xl border" style={{ backgroundColor: '#FAF7F4', borderColor: 'rgba(42,125,111,0.15)' }}>
+            <div className="p-4 rounded-xl border bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(42,125,111,0.15)' }}>
               <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Entry Requirements</h4>
               <p className="text-sm text-zinc-700 dark:text-zinc-300">
                 {c.pathwayType === 'apprenticeship'
@@ -850,7 +840,7 @@ function DetailPhase({
               </p>
             </div>
           ) : autoPoints > 0 ? (
-            <div className="p-4 rounded-xl border" style={{ backgroundColor: '#FAF7F4', borderColor: 'rgba(42,125,111,0.15)' }}>
+            <div className="p-4 rounded-xl border bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(42,125,111,0.15)' }}>
               <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Your Points</h4>
               <div className="grid grid-cols-3 gap-3 text-center">
                 <div>
@@ -903,13 +893,13 @@ function DetailPhase({
             <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-2">Subjects That Help</h4>
             <div className="flex flex-wrap gap-2">
               {c.subjectBonus.map(sub => (
-                <span key={sub} className="px-3 py-1.5 rounded-lg text-sm font-medium" style={{ backgroundColor: '#FAF7F4', color: '#2A7D6F' }}>{sub}</span>
+                <span key={sub} className="px-3 py-1.5 rounded-lg text-sm font-medium bg-[#FAF7F4] dark:bg-zinc-900" style={{ color: '#2A7D6F' }}>{sub}</span>
               ))}
             </div>
           </div>
 
           {/* Why this suits you — show up to 5 reasons */}
-          <div className="p-4 rounded-xl border" style={{ backgroundColor: '#FAF7F4', borderColor: 'rgba(42,125,111,0.15)' }}>
+          <div className="p-4 rounded-xl border bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(42,125,111,0.15)' }}>
             <h4 className="text-sm font-bold mb-3 flex items-center gap-2" style={{ color: '#2A7D6F' }}>
               <Heart size={16} style={{ color: '#2A7D6F' }} /> Why This Suits You
             </h4>

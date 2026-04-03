@@ -3,24 +3,20 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionCircle, MotionDiv } from './Motion';
 import {
   Sprout, Rocket, Target, FlaskConical,
   Fingerprint, ArrowRight, Sparkles, BarChart3, Compass, Lightbulb, KeyRound,
-  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Tag, X
+  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Tag, X, Dumbbell
 } from 'lucide-react';
 import { getAvatarUrl } from '../components/Auth';
 import { CourseData, BentoModuleTile } from './Library';
 import { UserSettings } from '../types';
 import { type AthleteRank, ATHLETE_RANKS } from '../gamificationConfig';
-import { computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, computeWeeksUntilExam } from './timetableAlgorithm';
 import { toDateKey } from './subjectData';
-import { getSubjectHex } from '../studySessionData';
-
-// FIX: Cast motion components to any to bypass broken type definitions
-const MotionDiv = motion.div as any;
-const MotionCircle = motion.circle as any;
+import { getSubjectHex } from '../utils/subjectColors';
 
 export type CategoryType =
   | 'architecture-mindset'
@@ -41,6 +37,7 @@ interface KnowledgeTreeProps {
   onGoToJourney: () => void;
   onGoToStudy?: () => void;
   onGoToInsights?: () => void;
+  onGoToTrainingHub?: () => void;
   onSelectModule: (moduleId: string) => void;
   allCourses: CourseData[];
   categoryTitles: Record<CategoryType, string>;
@@ -213,17 +210,17 @@ const BentoTile: React.FC<BentoTileProps> = ({
   );
 };
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onDevRankUp }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights, onGoToTrainingHub, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onDevRankUp }) => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [tagFilterOpen, setTagFilterOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const sidebarItems = [
     { icon: Home, label: 'Home', onClick: () => {}, active: true },
+    { icon: Dumbbell, label: 'Training Hub', onClick: onGoToTrainingHub ?? (() => {}), active: false },
     { icon: Mountain, label: 'My Journey', onClick: onGoToJourney, active: false },
     { icon: Timer, label: 'Study Session', onClick: onGoToStudy ?? (() => {}), active: false },
     { icon: BarChart3, label: 'Dashboard', onClick: onGoToDashboard, active: false },
-    { icon: Lightbulb, label: 'Insights', onClick: onGoToInsights ?? (() => {}), active: false },
     { icon: Compass, label: 'Learning Paths', onClick: onGoToLearningPaths, active: false },
     { icon: Rocket, label: 'Innovation Zone', onClick: onGoToInnovationZone, active: false },
   ];
@@ -313,22 +310,25 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     : [];
 
   // ── Dashboard computed values ──────────────────────────────────────────
-  const todayBlocks = useMemo(() => {
-    if (!studentProfile || studentProfile.subjects.length === 0) return [];
-    try {
-      const today = new Date();
-      const jsDay = today.getDay();
-      const todayDayIndex = jsDay === 0 ? 6 : jsDay - 1;
-      const priorities = computeSubjectPriorities(studentProfile.subjects as any);
-      const weeksUntilExam = computeWeeksUntilExam(studentProfile.examStartDate);
-      const allocations = allocateSessions(priorities, weeksUntilExam);
-      const restDays = studentProfile.restDays || [];
-      const blockDuration = studentProfile.defaultBlockDuration ?? 45;
-      const timetable = generateWeeklyTimetable(allocations, weeksUntilExam, 0, restDays, blockDuration);
-      return timetable[todayDayIndex]?.blocks ?? [];
-    } catch {
-      return [];
-    }
+  const [todayBlocks, setTodayBlocks] = useState<any[]>([]);
+  useEffect(() => {
+    if (!studentProfile || studentProfile.subjects.length === 0) { setTodayBlocks([]); return; }
+    import('./timetableAlgorithm').then(({ computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, computeWeeksUntilExam }) => {
+      try {
+        const today = new Date();
+        const jsDay = today.getDay();
+        const todayDayIndex = jsDay === 0 ? 6 : jsDay - 1;
+        const priorities = computeSubjectPriorities(studentProfile.subjects as any);
+        const weeksUntilExam = computeWeeksUntilExam(studentProfile.examStartDate);
+        const allocations = allocateSessions(priorities, weeksUntilExam);
+        const restDays = studentProfile.restDays || [];
+        const blockDuration = studentProfile.defaultBlockDuration ?? 45;
+        const timetable = generateWeeklyTimetable(allocations, weeksUntilExam, 0, restDays, blockDuration);
+        setTodayBlocks(timetable[todayDayIndex]?.blocks ?? []);
+      } catch {
+        setTodayBlocks([]);
+      }
+    });
   }, [studentProfile]);
 
   const daysUntilExam = useMemo(() => {
@@ -503,10 +503,10 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
           <p className="text-[12px] font-semibold uppercase tracking-[0.2em] mb-3" style={{ color: '#2A7D6F' }}>
             Learning Lab
           </p>
-          <h1 className="font-serif tracking-tight leading-tight font-bold" style={{ fontSize: 'clamp(28px, 5vw, 36px)', color: '#1A1A1A' }}>
+          <h1 className="font-serif tracking-tight leading-tight font-bold text-[#1A1A1A] dark:text-white" style={{ fontSize: 'clamp(28px, 5vw, 36px)' }}>
             {(() => { const h = new Date().getHours(); const firstName = userName?.split(' ')[0] || ''; const name = firstName ? `, ${firstName}` : ''; return h < 12 ? `Good morning${name}.` : h < 18 ? `Good afternoon${name}.` : `Good evening${name}.`; })()}
           </h1>
-          <p className="mt-2" style={{ fontSize: 15, color: '#8C8278' }}>
+          <p className="mt-2 text-[#78716C] dark:text-zinc-400" style={{ fontSize: 15 }}>
             {(() => {
               const h = new Date().getHours();
               const completed = allCourses.filter(c => { const p = userProgress[c.id]; return p && p.unlockedSection >= c.sectionsCount; }).length;
@@ -565,10 +565,10 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
             {/* ── White Mercury cards ── */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {/* TODAY */}
-              <div className="px-4 py-3" style={{ backgroundColor: '#FEFDFB', border: '1px solid #EDEBE8', borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
-                <p className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: '#A8A29E' }}>Today</p>
+              <div className="px-4 py-3 bg-[#FAF7F4] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800" style={{ borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
+                <p className="text-[10px] font-bold uppercase tracking-widest mb-2 text-[#A8A29E] dark:text-zinc-500">Today</p>
                 {todayBlocks.length === 0 ? (
-                  <p className="text-xs" style={{ color: '#A8A29E' }}>No blocks scheduled</p>
+                  <p className="text-xs text-[#A8A29E] dark:text-zinc-500">No blocks scheduled</p>
                 ) : todayBlocks.every((_b, i) => todayCompletions.includes(`block-${i}`)) ? (
                   <p className="text-xs font-bold" style={{ color: '#276749' }}>All done for today</p>
                 ) : (
@@ -576,99 +576,163 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                     {todayBlocks.slice(0, 3).map((block, i) => (
                       <div key={i} className="flex items-center gap-2 text-xs">
                         <span className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: getSubjectHex(block.subjectName) }} />
-                        <span className="font-semibold truncate" style={{ color: '#1C1917' }}>{block.subjectName}</span>
-                        <span className="text-[10px] px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F0EDE8', color: '#78716C' }}>{sessionTypeLabel(block.sessionType)}</span>
-                        <span className="text-[10px]" style={{ color: '#A8A29E' }}>{block.durationMinutes}m</span>
+                        <span className="font-semibold truncate text-[#1A1A1A] dark:text-white">{block.subjectName}</span>
+                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#EDEBE8] dark:bg-zinc-700 text-[#78716C] dark:text-zinc-400">{sessionTypeLabel(block.sessionType)}</span>
+                        <span className="text-[10px] text-[#A8A29E] dark:text-zinc-500">{block.durationMinutes}m</span>
                       </div>
                     ))}
                     {todayBlocks.length > 3 && (
-                      <p className="text-[10px]" style={{ color: '#A8A29E' }}>+{todayBlocks.length - 3} more</p>
+                      <p className="text-[10px] text-[#A8A29E] dark:text-zinc-500">+{todayBlocks.length - 3} more</p>
                     )}
                   </div>
                 )}
               </div>
 
               {/* PROGRESS */}
-              <div className="px-4 py-3" style={{ backgroundColor: '#FEFDFB', border: '1px solid #EDEBE8', borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
-                <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#A8A29E' }}>Progress</p>
-                <p className="text-2xl font-apercu font-black" style={{ color: '#1A1A1A' }}>{pointsBalance ?? 0} pts</p>
+              <div className="px-4 py-3 bg-[#FAF7F4] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800" style={{ borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
+                <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#A8A29E] dark:text-zinc-500">Progress</p>
+                <p className="text-2xl font-apercu font-black text-[#1A1A1A] dark:text-white">{pointsBalance ?? 0} pts</p>
                 <div className="flex items-center gap-3 text-xs mt-1 mb-2">
                   {streak && streak.currentStreak > 0 ? (
                     <span className="font-bold" style={{ color: '#2A7D6F' }}>{streak.currentStreak}-day streak</span>
                   ) : (
-                    <span style={{ color: '#A8A29E' }}>Start your streak today</span>
+                    <span className="text-[#A8A29E] dark:text-zinc-500">Start your streak today</span>
                   )}
-                  <span style={{ color: '#EDEBE8' }}>·</span>
-                  <span className="font-medium" style={{ color: '#78716C' }}>{completedCount}/{totalCount} modules</span>
+                  <span className="text-[#EDEBE8] dark:text-zinc-700">·</span>
+                  <span className="font-medium text-[#78716C] dark:text-zinc-400">{completedCount}/{totalCount} modules</span>
                 </div>
-                <div className="h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: '#EDEBE8' }}>
+                <div className="h-1.5 rounded-full overflow-hidden bg-[#EDEBE8] dark:bg-zinc-700">
                   <div className="h-full rounded-full" style={{ backgroundColor: '#2A7D6F', width: `${totalCount > 0 ? (completedCount / totalCount) * 100 : 0}%`, transition: 'width 0.5s ease' }} />
                 </div>
                 {northStar && (
-                  <p className="mt-2 text-[11px] italic leading-relaxed truncate" style={{ color: '#A8A29E' }}>&ldquo;{northStar.statement}&rdquo;</p>
+                  <p className="mt-2 text-[11px] italic leading-relaxed truncate text-[#A8A29E] dark:text-zinc-500">&ldquo;{northStar.statement}&rdquo;</p>
                 )}
               </div>
 
-              {/* Weekly streak tracker */}
-              {streak && streak.currentStreak > 0 && (
-                <div className="md:col-span-2">
-                  <div className="px-4 py-3" style={{ backgroundColor: '#FEFDFB', border: '1px solid #EDEBE8', borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
-                    <div className="flex items-center justify-between mb-3">
-                      <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: '#A8A29E' }}>This Week</p>
-                      <p className="text-xs font-bold" style={{ color: '#2A7D6F' }}>{streak.currentStreak} day streak</p>
-                    </div>
-                    <div className="flex justify-between">
-                      {['M','T','W','T','F','S','S'].map((day, i) => {
-                        const today = new Date();
-                        const currentDayIdx = today.getDay() === 0 ? 6 : today.getDay() - 1;
-                        const dayDate = new Date(today);
-                        dayDate.setDate(today.getDate() - (currentDayIdx - i));
-                        const dateKey = toDateKey(dayDate);
-                        const isActive = (timetableCompletions?.[dateKey]?.length ?? 0) > 0;
-                        const isToday = i === currentDayIdx;
-                        return (
-                          <div key={i} className="flex flex-col items-center gap-1.5">
-                            <div className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold" style={isActive ? { backgroundColor: '#2A7D6F', color: 'white' } : isToday ? { border: '2px solid #2A7D6F', color: '#2A7D6F' } : { backgroundColor: '#f0efeb', color: '#9A9590' }}>
-                              {isActive ? '\u2713' : ''}
+              {/* Weekly activity bar chart */}
+              {(() => {
+                const today = new Date();
+                const currentDayIdx = today.getDay() === 0 ? 6 : today.getDay() - 1;
+                const DAY_LABELS = ['M','T','W','T','F','S','S'];
+
+                // Compute daily points for current week
+                const weekPoints: number[] = DAY_LABELS.map((_, i) => {
+                  const dayDate = new Date(today);
+                  dayDate.setDate(today.getDate() - (currentDayIdx - i));
+                  const dateKey = toDateKey(dayDate);
+                  const blocks = timetableCompletions?.[dateKey]?.length ?? 0;
+                  return Math.min(blocks, 4);
+                });
+
+                // Compute streak: consecutive days going backwards with points >= 1
+                let streakCount = 0;
+                const startIdx = weekPoints[currentDayIdx] >= 1 ? currentDayIdx : currentDayIdx - 1;
+                for (let d = startIdx; d >= 0; d--) {
+                  if (weekPoints[d] >= 1) streakCount++;
+                  else break;
+                }
+                // Also count beyond this week via the streak prop
+                if (streak && startIdx >= 0 && weekPoints[0] >= 1) {
+                  streakCount = Math.max(streakCount, streak.currentStreak);
+                }
+
+                return (
+                  <div className="md:col-span-2">
+                    <div className="flex items-center bg-[#FAF7F4] dark:bg-zinc-900 rounded-xl px-5 py-4 border border-[#EDEBE8] dark:border-zinc-800" style={{ borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
+                      {/* Left: streak count */}
+                      <div className="flex flex-col items-center justify-center pr-5" style={{ minWidth: 88 }}>
+                        <p className="font-apercu font-semibold tabular-nums" style={{ fontSize: 22, color: '#2A7D6F' }}>{streakCount}</p>
+                        <p className="text-xs text-zinc-400 dark:text-zinc-500">current streak</p>
+                      </div>
+
+                      {/* Divider */}
+                      <div className="w-px self-stretch bg-zinc-200 dark:bg-zinc-800" />
+
+                      {/* Right: 7 mini bar charts */}
+                      <div className="flex-1 flex justify-between pl-5" style={{ gap: 4 }}>
+                        {DAY_LABELS.map((day, i) => {
+                          const pts = weekPoints[i];
+                          const isToday = i === currentDayIdx;
+                          const isFuture = i > currentDayIdx;
+                          const fillPct = pts === 0 ? 0 : pts === 1 ? 25 : pts === 2 ? 50 : pts === 3 ? 75 : 100;
+
+                          return (
+                            <div key={i} className="flex flex-col items-center flex-1">
+                              {/* Bar container */}
+                              <div
+                                className={`w-full relative overflow-hidden rounded-md ${
+                                  isToday
+                                    ? 'border-[1.5px] border-[#2A7D6F]'
+                                    : ''
+                                }`}
+                                style={{
+                                  height: 32,
+                                  backgroundColor: isFuture ? 'rgba(0,0,0,0.03)' : 'rgba(0,0,0,0.04)',
+                                  ...(isToday ? { animation: 'streak-pulse 2.5s ease-in-out infinite' } : {}),
+                                }}
+                              >
+                                {/* Fill bar */}
+                                {fillPct > 0 && (
+                                  <div
+                                    className="absolute bottom-0 left-0 right-0 rounded-md"
+                                    style={{
+                                      height: `${fillPct}%`,
+                                      backgroundColor: isToday ? 'rgba(42,125,111,0.7)' : '#2A7D6F',
+                                    }}
+                                  />
+                                )}
+                              </div>
+                              {/* Day label */}
+                              <span
+                                className={`text-[11px] mt-1.5 ${
+                                  isToday
+                                    ? 'font-semibold'
+                                    : isFuture
+                                      ? 'text-zinc-300 dark:text-zinc-700'
+                                      : 'text-zinc-500 dark:text-zinc-500'
+                                }`}
+                                style={isToday ? { color: '#2A7D6F' } : undefined}
+                              >
+                                {day}
+                              </span>
                             </div>
-                            <span className="text-[10px] font-medium" style={{ color: isActive ? '#2A7D6F' : '#9A9590', fontWeight: isToday ? 700 : 500 }}>{day}</span>
-                          </div>
-                        );
-                      })}
+                          );
+                        })}
+                      </div>
                     </div>
                   </div>
-                </div>
-              )}
+                );
+              })()}
 
               {/* RECOMMENDED */}
               {smartRecommendation && (
                 <button
                   onClick={() => onRecommendationAction?.(smartRecommendation.category)}
-                  className="px-4 py-3 text-left hover:shadow-md transition-all"
-                  style={{ backgroundColor: '#FEFDFB', border: '1px solid #EDEBE8', borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}
+                  className="px-4 py-3 text-left hover:shadow-md transition-all bg-[#FAF7F4] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800"
+                  style={{ borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}
                 >
-                  <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#A8A29E' }}>Recommended</p>
-                  <p className="text-xs font-semibold" style={{ color: '#1C1917' }}>{smartRecommendation.title}</p>
-                  <p className="text-[11px] mt-0.5" style={{ color: '#A8A29E' }}>{smartRecommendation.description}</p>
+                  <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#A8A29E] dark:text-zinc-500">Recommended</p>
+                  <p className="text-xs font-semibold text-[#1A1A1A] dark:text-white">{smartRecommendation.title}</p>
+                  <p className="text-[11px] mt-0.5 text-[#A8A29E] dark:text-zinc-500">{smartRecommendation.description}</p>
                 </button>
               )}
 
               {/* QUEST */}
               {questState && (
-                <div className="px-4 py-3" style={{ backgroundColor: '#FEFDFB', border: '1px solid #EDEBE8', borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
+                <div className="px-4 py-3 bg-[#FAF7F4] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800" style={{ borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
                   <div className="flex items-center justify-between mb-1">
-                    <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: '#A8A29E' }}>
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#A8A29E] dark:text-zinc-500">
                       {questState.isOnboarding ? `Day ${questState.dayNumber} Quest` : 'Daily Quest'}
                     </p>
                     <span className="text-[10px] font-bold" style={{ color: '#2A7D6F' }}>{questState.quest.rewardPoints} pts</span>
                   </div>
-                  <p className="text-xs font-semibold" style={{ color: '#1C1917' }}>{questState.quest.title}</p>
-                  <p className="text-[11px] mt-0.5" style={{ color: '#A8A29E' }}>{questState.quest.description}</p>
+                  <p className="text-xs font-semibold text-[#1A1A1A] dark:text-white">{questState.quest.title}</p>
+                  <p className="text-[11px] mt-0.5 text-[#A8A29E] dark:text-zinc-500">{questState.quest.description}</p>
                   <div className="mt-2 flex items-center gap-2">
-                    <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: '#EDEBE8' }}>
+                    <div className="flex-1 h-1.5 rounded-full overflow-hidden bg-[#EDEBE8] dark:bg-zinc-700">
                       <div className="h-full rounded-full transition-all duration-500" style={{ width: `${Math.min(100, (questState.current / questState.quest.target) * 100)}%`, backgroundColor: '#2A7D6F' }} />
                     </div>
-                    <span className="text-[10px] font-bold tabular-nums" style={{ color: '#A8A29E' }}>{questState.current}/{questState.quest.target}</span>
+                    <span className="text-[10px] font-bold tabular-nums text-[#A8A29E] dark:text-zinc-500">{questState.current}/{questState.quest.target}</span>
                   </div>
                   {questState.isCompleted && !questState.isClaimed && onClaimQuestReward && (
                     <button onClick={onClaimQuestReward} className="mt-2 w-full py-1.5 rounded-lg text-xs font-bold text-white" style={{ backgroundColor: '#2A7D6F' }}>

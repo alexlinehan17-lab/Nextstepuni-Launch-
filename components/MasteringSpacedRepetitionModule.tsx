@@ -6,6 +6,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   Clock, BarChart2, CalendarDays, RadioTower, Wrench, Brain, RefreshCcw, TrendingDown
 } from 'lucide-react';
@@ -285,7 +286,6 @@ const ForgettingCurveVisualizer = () => {
     );
 };
 
-
 const RetentionCurveComparison = () => {
     const [revealed, setRevealed] = useState(false);
 
@@ -443,8 +443,6 @@ const RetentionCurveComparison = () => {
         </div>
     );
 };
-
-const MotionDiv = motion.div as any;
 
 const CrammingVsSpacingShowdown = () => {
   type Phase = 'idle' | 'day1' | 'day7' | 'day30' | 'done';
@@ -674,7 +672,6 @@ const OptimalScheduleCalculator = () => {
         </div>
     );
 };
-
 
 // --- MODULE COMPONENT ---
 const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {

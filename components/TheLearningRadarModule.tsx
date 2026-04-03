@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { Target, AlertTriangle, Clock, Layers, Activity, Flag } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { violetTheme } from '../moduleThemes';
@@ -12,7 +13,6 @@ import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './Mod
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = violetTheme;
-const MotionDiv = motion.div as any;
 
 // --- INTERACTIVE COMPONENTS ---
 
@@ -765,7 +765,6 @@ const PredictionTracker = () => {
     </div>
   );
 };
-
 
 // --- MODULE COMPONENT ---
 const TheLearningRadarModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {

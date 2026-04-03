@@ -1,6 +1,5 @@
 
 
-
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -8,6 +7,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   ArrowLeft, CheckCircle2,
   ChevronRight, Lock, Sparkles, BookOpen,
@@ -23,7 +23,6 @@ import { ACCENT_THEME_LIST, ACCENT_THEMES, CARD_STYLES } from '../themeData';
 import { getAvatarUrl } from './Auth';
 
 // FIX: Cast motion components to any to bypass broken type definitions
-const MotionDiv = motion.div as any;
 
 export interface CourseData {
   id: string;
@@ -95,7 +94,6 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
   };
 
   const pillBgColor = course.pillBgColor;
-
 
   return (
     <MotionDiv

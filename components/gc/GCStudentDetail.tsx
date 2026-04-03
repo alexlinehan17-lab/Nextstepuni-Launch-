@@ -5,7 +5,8 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Flame, Coins, ChevronDown, ChevronRight, BookOpen, AlertTriangle, FileText, X, Save, Compass, BarChart3, Brain, Lightbulb, Heart } from 'lucide-react';
+import { MotionDiv } from '../Motion';
+import { ArrowLeft, Flame, Coins, ChevronDown, ChevronRight, BookOpen, AlertTriangle, FileText, X, Save, Compass, BarChart3, Brain, Lightbulb, Heart, UserPlus, TrendingDown, TrendingUp, CheckCircle, MinusCircle, Flag } from 'lucide-react';
 import { db } from '../../firebase';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { addNotification } from './gcNotifications';
@@ -16,7 +17,7 @@ import { getSchoolName } from '../../schoolData';
 import { getPointsForGrade, LC_SUBJECTS } from '../subjectData';
 import { ARCHETYPES, STAT_LABELS, getStatGrade, StatKey } from '../journeySimulatorData';
 import { NORTH_STAR_CATEGORIES, VISION_CARDS, CATEGORY_COLORS } from '../../northStarData';
-import { GCStudentFullData } from './gcTypes';
+import { GCStudentFullData, type StudentStatus } from './gcTypes';
 import { hydrateCourses } from '../futureFinderData';
 import { type EarlyWarningAlert, type AlertSeverity } from './gcAlerts';
 import {
@@ -26,12 +27,11 @@ import {
   getStudentTargetCAO,
   getDaysUntilLC,
   getStudentStatus,
-  getSupportReasons,
   getEngagementTimeline,
 } from './gcUtils';
+import { getStatusReasons, STATUS_CONFIG } from '../../utils/studentStatus';
+import { type FlagData, type FlagPriority } from '../../hooks/useGCFlags';
 import { PentagonRadar } from './PentagonRadar';
-
-const MotionDiv = motion.div as any;
 
 const CUSTOM_EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -53,6 +53,17 @@ const SectionLabel: React.FC<{ label: string }> = ({ label }) => (
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
+interface GCFlagsAPI {
+  flags: Record<string, FlagData>;
+  flagStudent: (uid: string, note?: string, priority?: FlagPriority) => Promise<void>;
+  unflagStudent: (uid: string) => Promise<void>;
+  updateFlagNote: (uid: string, note: string) => Promise<void>;
+  updateFlagPriority: (uid: string, priority: FlagPriority) => Promise<void>;
+  isFlagged: (uid: string) => boolean;
+  getFlagData: (uid: string) => FlagData | null;
+  flaggedStudentUids: string[];
+}
+
 interface GCStudentDetailProps {
   student: GCStudentFullData;
   allCourses: CourseData[];
@@ -62,6 +73,7 @@ interface GCStudentDetailProps {
   onNoteSaved?: (uid: string, notes: string, updatedAt: string) => void;
   alerts?: EarlyWarningAlert[];
   gcName?: string;
+  gcFlags?: GCFlagsAPI;
 }
 
 const INNOVATION_TOOLS = [
@@ -77,7 +89,7 @@ const INNOVATION_TOOLS = [
   { id: 'syllabus-xray', title: 'Syllabus X-Ray' },
 ];
 
-export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCourses, onBack, school, isTrayMode, onNoteSaved, alerts = [], gcName }) => {
+export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCourses, onBack, school, isTrayMode, onNoteSaved, alerts = [], gcName, gcFlags }) => {
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [showRecommendModal, setShowRecommendModal] = useState(false);
   const [showKudosModal, setShowKudosModal] = useState(false);
@@ -91,7 +103,35 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   const targetCAO = getStudentTargetCAO(student);
   const daysUntilLC = getDaysUntilLC();
   const status = getStudentStatus(student, allCourses);
-  const supportReasons = getSupportReasons(student, allCourses);
+  const statusReasons = getStatusReasons(student, allCourses);
+
+  const STATUS_ICONS: Record<StudentStatus, React.ElementType> = {
+    'new': UserPlus, 'at-risk': AlertTriangle, 'drifting': TrendingDown,
+    'thriving': TrendingUp, 'active': CheckCircle, 'inactive': MinusCircle,
+  };
+
+  // ─── Status transition tracking (localStorage, GC-only) ──────────────
+  const [previousStatus, setPreviousStatus] = useState<StudentStatus | null>(null);
+
+  useEffect(() => {
+    const key = `gc-status-${student.user.uid}`;
+    try {
+      const raw = localStorage.getItem(key);
+      if (raw) {
+        const data = JSON.parse(raw) as { status: StudentStatus; at: number };
+        const daysSince = (Date.now() - data.at) / 86400000;
+        if (data.status !== status && daysSince <= 7) {
+          setPreviousStatus(data.status);
+        } else {
+          setPreviousStatus(null);
+        }
+      }
+      // Save current status
+      localStorage.setItem(key, JSON.stringify({ status, at: Date.now() }));
+    } catch {
+      setPreviousStatus(null);
+    }
+  }, [student.user.uid, status]);
 
   const toggleCategory = (id: string) => {
     setExpandedCategories(prev => {
@@ -170,7 +210,24 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
           />
           <div className="min-w-0">
             <p className="font-mono text-[9px] font-bold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-0.5">Student Profile</p>
-            <h2 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white truncate">{student.user.name}</h2>
+            <div className="flex items-center gap-2">
+              <h2 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white truncate">{student.user.name}</h2>
+              {(() => {
+                const cfg = STATUS_CONFIG[status];
+                const SIcon = STATUS_ICONS[status];
+                return (
+                  <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-semibold shrink-0 ${cfg.darkBgClass} ${cfg.darkTextClass}`} style={{ backgroundColor: cfg.bg, color: cfg.text }} aria-label={`Status: ${cfg.label}`}>
+                    <SIcon size={10} aria-hidden="true" />
+                    {cfg.label}
+                  </span>
+                );
+              })()}
+              {previousStatus && (
+                <span className="text-[10px] text-zinc-400 dark:text-zinc-500 shrink-0">
+                  {STATUS_CONFIG[previousStatus].label} &rarr;
+                </span>
+              )}
+            </div>
           </div>
         </div>
         <button
@@ -210,8 +267,25 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
           />
           <div>
             <p className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-zinc-400 dark:text-zinc-500 mb-0.5">Student Profile</p>
-            <h2 className="font-serif text-2xl font-semibold tracking-tight text-zinc-900 dark:text-white">{student.user.name}</h2>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400">{student.user.school ? getSchoolName(student.user.school) : ''}</p>
+            <div className="flex items-center gap-2.5">
+              <h2 className="font-serif text-2xl font-semibold tracking-tight text-zinc-900 dark:text-white">{student.user.name}</h2>
+              {(() => {
+                const cfg = STATUS_CONFIG[status];
+                const SIcon = STATUS_ICONS[status];
+                return (
+                  <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-medium shrink-0 ${cfg.darkBgClass} ${cfg.darkTextClass}`} style={{ backgroundColor: cfg.bg, color: cfg.text }} aria-label={`Status: ${cfg.label}`}>
+                    <SIcon size={12} aria-hidden="true" />
+                    {cfg.label}
+                  </span>
+                );
+              })()}
+              {previousStatus && (
+                <span className="text-xs text-zinc-400 dark:text-zinc-500 shrink-0">
+                  {STATUS_CONFIG[previousStatus].label} &rarr;
+                </span>
+              )}
+            </div>
+            <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">{student.user.school ? getSchoolName(student.user.school) : ''}</p>
           </div>
         </div>
 
@@ -253,22 +327,26 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
           </div>
         </div>
 
-        {/* Needs Support explainer */}
-        {status === 'needs-support' && supportReasons.length > 0 && (
-          <div className="mt-4 rounded-xl bg-rose-50 dark:bg-rose-900/10 border border-rose-200 dark:border-rose-800/40 p-4">
-            <div className="flex items-start gap-2.5">
-              <AlertTriangle size={16} className="text-rose-500 mt-0.5 shrink-0" />
-              <div>
-                <p className="text-sm font-semibold text-rose-700 dark:text-rose-400 mb-1">Needs Support</p>
-                <ul className="space-y-1">
-                  {supportReasons.map((reason, i) => (
-                    <li key={i} className="text-xs text-rose-600 dark:text-rose-300/80">{reason}</li>
-                  ))}
-                </ul>
+        {/* Status explainer for at-risk / drifting */}
+        {(status === 'at-risk' || status === 'drifting') && statusReasons.length > 0 && (() => {
+          const cfg = STATUS_CONFIG[status];
+          const SIcon = STATUS_ICONS[status];
+          return (
+            <div className={`mt-4 rounded-xl p-4 ${cfg.darkBgClass}`} style={{ backgroundColor: cfg.bg }}>
+              <div className="flex items-start gap-2.5">
+                <SIcon size={16} className="mt-0.5 shrink-0" style={{ color: cfg.text }} />
+                <div>
+                  <p className="text-sm font-semibold mb-1" style={{ color: cfg.text }}>{cfg.label}</p>
+                  <ul className="space-y-1">
+                    {statusReasons.map((reason, i) => (
+                      <li key={i} className="text-xs" style={{ color: cfg.text, opacity: 0.8 }}>{reason}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          );
+        })()}
 
         {/* Early Warning Signals for this student */}
         {alerts.length > 0 && (
@@ -977,10 +1055,42 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     </>
   );
 
+  const flagData = gcFlags?.getFlagData(student.user.uid);
+
+  const renderFlagBanner = () => {
+    if (!flagData) return null;
+    const isHigh = flagData.priority === 'high';
+    const bannerColor = isHigh ? '#D97706' : '#2A7D6F';
+    const bannerBg = isHigh ? 'rgba(217,119,6,0.08)' : 'rgba(42,125,111,0.08)';
+    return (
+      <div className="flex items-center gap-3 px-6 py-2.5" style={{ backgroundColor: bannerBg }} role="status" aria-label={`Student is ${isHigh ? 'high priority' : ''} flagged`}>
+        <Flag size={13} fill={bannerColor} style={{ color: bannerColor }} className="shrink-0" aria-hidden="true" />
+        <span className="text-xs font-semibold" style={{ color: bannerColor }}>
+          {isHigh ? 'High Priority' : 'Flagged'}
+        </span>
+        {flagData.note && (
+          <>
+            <span className="text-zinc-300 dark:text-zinc-600" aria-hidden="true">&middot;</span>
+            <span className="text-xs text-zinc-500 dark:text-zinc-400 truncate flex-1">{flagData.note}</span>
+          </>
+        )}
+        <button
+          onClick={() => gcFlags?.unflagStudent(student.user.uid)}
+          className="text-xs font-medium shrink-0 px-2 py-1 rounded-md hover:bg-zinc-200/50 dark:hover:bg-zinc-700/50 transition-colors"
+          style={{ color: bannerColor }}
+          aria-label={`Remove flag from ${student.user.name}`}
+        >
+          Unflag
+        </button>
+      </div>
+    );
+  };
+
   if (isTrayMode) {
     return (
       <div>
         {renderTrayHeader()}
+        {renderFlagBanner()}
         {renderModals()}
         <div className="p-6 space-y-6">
           {/* Quick Actions */}
@@ -1078,6 +1188,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
       className="space-y-8"
     >
       {renderHeader()}
+      {renderFlagBanner()}
       {renderModals()}
 
       {/* Quick Actions */}

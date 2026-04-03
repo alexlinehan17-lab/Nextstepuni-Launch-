@@ -6,6 +6,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   Cpu, Moon, Coffee, Zap, Repeat, ClipboardCheck, CheckCircle2
 } from 'lucide-react';
@@ -213,8 +214,6 @@ const GlycemicIndexSimulator = () => {
       </div>
     );
 };
-
-const MotionDiv = motion.div as any;
 
 const WAKE_OPTIONS = [
   { label: '6:00 AM', hour: 6 },
@@ -532,7 +531,6 @@ const HighPerformanceChecklist = () => {
         </div>
     );
 }
-
 
 // --- MODULE COMPONENT ---
 const ControllableVariablesModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {

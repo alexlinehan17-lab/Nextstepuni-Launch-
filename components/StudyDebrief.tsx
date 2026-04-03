@@ -6,12 +6,11 @@
 import React, { useState, useMemo } from 'react';
 import { fuzzyMatchTopic } from './syllabusData';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   Brain, CheckCircle, ArrowRight, TrendingUp, BookOpen, Target, RotateCcw,
   Lightbulb, Sparkles, BarChart3,
 } from 'lucide-react';
-
-const MotionDiv = motion.div as any;
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 

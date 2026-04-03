@@ -81,61 +81,9 @@ export function getStudentTargetCAO(student: GCStudentFullData): number {
   );
 }
 
-// ─── At-Risk Algorithm ──────────────────────────────────────────────────────
+// ─── Student Status (delegated to utils/studentStatus.ts) ────────────────────
 
-export function getStudentStatus(student: GCStudentFullData, allCourses: CourseData[]): StudentStatus {
-  if (!student.subjectProfile) return 'new';
-
-  const now = new Date();
-
-  // New: account created within the last 7 days
-  if (student.subjectProfile.createdAt) {
-    const created = new Date(student.subjectProfile.createdAt);
-    const daysSinceSignup = Math.floor((now.getTime() - created.getTime()) / (1000 * 60 * 60 * 24));
-    if (daysSinceSignup <= 7) return 'new';
-  }
-
-  const overall = getOverallProgress(student.progress, allCourses);
-
-  // Check: overall progress < 10% and signed up > 14 days ago
-  if (student.subjectProfile.createdAt) {
-    const created = new Date(student.subjectProfile.createdAt);
-    const daysSinceSignup = Math.floor((now.getTime() - created.getTime()) / (1000 * 60 * 60 * 24));
-    if (overall < 10 && daysSinceSignup > 14) return 'needs-support';
-  }
-
-  // Check: CAO gap > 200 points
-  const currentCAO = getStudentCurrentCAO(student);
-  const targetCAO = getStudentTargetCAO(student);
-  if (targetCAO - currentCAO > 200) return 'needs-support';
-
-  return 'on-track';
-}
-
-export function getSupportReasons(student: GCStudentFullData, allCourses: CourseData[]): string[] {
-  const reasons: string[] = [];
-  if (!student.subjectProfile) return reasons;
-
-  const now = new Date();
-  const overall = getOverallProgress(student.progress, allCourses);
-
-  if (student.subjectProfile.createdAt) {
-    const created = new Date(student.subjectProfile.createdAt);
-    const daysSinceSignup = Math.floor((now.getTime() - created.getTime()) / (1000 * 60 * 60 * 24));
-    if (overall < 10 && daysSinceSignup > 14) {
-      reasons.push(`Only ${overall.toFixed(0)}% progress after ${daysSinceSignup} days since signup`);
-    }
-  }
-
-  const currentCAO = getStudentCurrentCAO(student);
-  const targetCAO = getStudentTargetCAO(student);
-  const gap = targetCAO - currentCAO;
-  if (gap > 200) {
-    reasons.push(`CAO gap of ${gap} points between current (${currentCAO}) and target (${targetCAO})`);
-  }
-
-  return reasons;
-}
+export { getStudentStatus, getStatusReasons, getStatusReasons as getSupportReasons } from '../../utils/studentStatus';
 
 // ─── Days Until LC ──────────────────────────────────────────────────────────
 

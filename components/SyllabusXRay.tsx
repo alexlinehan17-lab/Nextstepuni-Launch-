@@ -5,6 +5,7 @@
 
 import React, { useState, useMemo, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   ChevronRight, X, ScanSearch,
 } from 'lucide-react';
@@ -19,8 +20,6 @@ import { doc, getDoc } from 'firebase/firestore';
 import { type DebriefEntry } from './StudyDebrief';
 import { useTopicMastery } from '../hooks/useTopicMastery';
 import { type UnifiedConfidence } from '../types';
-
-const MotionDiv = motion.div as any;
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -314,9 +313,8 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
               <button
                 key={subject}
                 onClick={() => { setSelectedSubject(subject); setQuadrantFilter('all'); setSearchQuery(''); }}
-                className="rounded-xl p-3.5 text-left transition-colors dark:bg-transparent"
+                className="rounded-xl p-3.5 text-left transition-colors bg-[#FAF7F4] dark:bg-zinc-900"
                 style={{
-                  backgroundColor: '#FAF7F4',
                   border: '0.5px solid rgba(0,0,0,0.07)',
                 }}
               >
@@ -401,23 +399,23 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
             }
 
             // Determine colors based on selection state
-            let bgColor: string;
+            let bgClass: string;
             let borderColor: string;
             let nameClass: string;
             let markColor: string;
 
             if (isSelected) {
-              bgColor = '#E0F0ED';
+              bgClass = 'bg-[#E0F0ED] dark:bg-emerald-900/30';
               borderColor = 'rgba(0,0,0,0.18)';
               nameClass = 'text-zinc-700 dark:text-zinc-300';
               markColor = '#2A7D6F';
             } else if (hasSelection) {
-              bgColor = '#F7F5F2';
+              bgClass = 'bg-[#F7F5F2] dark:bg-zinc-800/50';
               borderColor = 'rgba(0,0,0,0.03)';
               nameClass = 'text-zinc-300 dark:text-zinc-600';
               markColor = '#A3CDC4';
             } else {
-              bgColor = '#FAF7F4';
+              bgClass = 'bg-[#FAF7F4] dark:bg-zinc-900';
               borderColor = 'rgba(0,0,0,0.07)';
               nameClass = 'text-zinc-700 dark:text-zinc-300';
               markColor = '#2A7D6F';
@@ -427,11 +425,10 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
               <button
                 key={topic.name}
                 onClick={() => setExpandedTopic(isSelected ? null : topic.name)}
-                className={`rounded-xl p-3 cursor-pointer text-left overflow-hidden ${rows >= 2 ? 'flex flex-col justify-between h-full' : 'flex flex-row items-center justify-between'}`}
+                className={`rounded-xl p-3 cursor-pointer text-left overflow-hidden ${bgClass} ${rows >= 2 ? 'flex flex-col justify-between h-full' : 'flex flex-row items-center justify-between'}`}
                 style={{
                   gridColumn: `span ${cols}`,
                   gridRow: `span ${rows}`,
-                  backgroundColor: bgColor,
                   border: `0.5px solid ${borderColor}`,
                 }}
               >
@@ -465,9 +462,8 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
             className="overflow-hidden"
           >
             <div
-              className="rounded-[14px] p-6 relative"
+              className="rounded-[14px] p-6 relative bg-[#FAF7F4] dark:bg-zinc-900"
               style={{
-                backgroundColor: '#FAF7F4',
                 border: '0.5px solid rgba(0,0,0,0.1)',
               }}
             >
@@ -576,9 +572,8 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
       {/* Exam Strategy Box */}
       {syllabus && (
         <div
-          className="rounded-xl p-5"
+          className="rounded-xl p-5 bg-[#FAF7F4] dark:bg-zinc-900"
           style={{
-            backgroundColor: '#FAF7F4',
             border: '0.5px solid rgba(0,0,0,0.07)',
           }}
         >

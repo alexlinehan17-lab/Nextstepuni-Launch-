@@ -10,6 +10,8 @@ import { ModuleProgress, SectionDefinition, ModuleTheme, AccentThemeId, CardStyl
 import { ActivityRing } from './ModuleShared';
 import { useSettingsContext } from '../contexts/SettingsContext';
 import { ACCENT_THEME_LIST, CARD_STYLES } from '../themeData';
+import PrimaryActionButton from './ui/PrimaryActionButton';
+import ModuleCompleteScreen from './ModuleCompleteScreen';
 
 /* ── Confetti celebration overlay ── */
 const CONFETTI_COLORS = ['#CC785C', '#f59e0b', '#3b82f6', '#10b981', '#8b5cf6', '#ef4444', '#ec4899'];
@@ -65,6 +67,11 @@ interface ModuleLayoutProps {
   onProgressUpdate: (p: ModuleProgress) => void;
   finishButtonText?: string;
   children: (activeSection: number) => React.ReactNode;
+  // Celebration screen props (optional)
+  categoryColor?: string;
+  modulesCompleted?: number;
+  totalModules?: number;
+  northStarStatement?: string;
 }
 
 export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
@@ -79,6 +86,10 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   onProgressUpdate,
   finishButtonText = 'Complete Section',
   children,
+  categoryColor,
+  modulesCompleted,
+  totalModules,
+  northStarStatement,
 }) => {
   const settingsCtx = useSettingsContext();
   const [activeSection, setActiveSection] = useState(
@@ -86,6 +97,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   );
   const [mobileSectionsOpen, setMobileSectionsOpen] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
+  const [showCelebration, setShowCelebration] = useState(false);
   const [pickerOpen, setPickerOpen] = useState(false);
   const pickerRef = useRef<HTMLDivElement>(null);
   const isCompletingRef = useRef(false);
@@ -126,9 +138,9 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
     if (!isLastSection) {
       setActiveSection(activeSection + 1);
     } else if (isNewCompletion) {
-      // First-time module completion — show confetti then navigate back
+      // First-time module completion — show confetti + celebration screen
       setShowConfetti(true);
-      pendingBackRef.current = true;
+      setShowCelebration(true);
     } else {
       onBack();
     }
@@ -137,10 +149,16 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
 
   const handleConfettiDone = () => {
     setShowConfetti(false);
-    if (pendingBackRef.current) {
+    // If no celebration screen (no categoryColor prop), fall back to old behaviour
+    if (!showCelebration && pendingBackRef.current) {
       pendingBackRef.current = false;
       onBack();
     }
+  };
+
+  const handleCelebrationContinue = () => {
+    setShowCelebration(false);
+    onBack();
   };
 
   const handleJumpToSection = (index: number) => {
@@ -343,16 +361,30 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
                 <button onClick={handlePrev} disabled={activeSection === 0} className={`flex items-center gap-3 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-white px-6 py-3.5 rounded-xl font-semibold text-[11px] uppercase tracking-widest transition-all hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] focus-visible:ring-offset-2 ${activeSection === 0 ? 'invisible' : ''}`}>
                   <ArrowLeft size={16} /> Prev
                 </button>
-                <button onClick={handleCompleteSection} className={`group flex items-center gap-3 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 px-10 py-4 rounded-xl font-semibold text-[11px] uppercase tracking-widest ${theme.footerHoverBg} transition-all hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] focus-visible:ring-offset-2`} onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--accent-hex)'; }} onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = ''; }}>
-                  <span>{activeSection === sections.length - 1 ? finishButtonText : 'Continue'}</span>
-                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                </button>
+                <PrimaryActionButton
+                  label={activeSection === sections.length - 1 ? finishButtonText : 'Continue'}
+                  onClick={handleCompleteSection}
+                  icon={ArrowRight}
+                />
               </footer>
           </div>
         </div>
       </main>
 
       {showConfetti && <ConfettiOverlay onDone={handleConfettiDone} />}
+
+      {/* Module completion celebration screen */}
+      <ModuleCompleteScreen
+        isOpen={showCelebration}
+        moduleTitle={moduleTitle}
+        moduleSubtitle={moduleSubtitle}
+        categoryColor={categoryColor || '#2A7D6F'}
+        modulesCompleted={modulesCompleted}
+        totalModules={totalModules}
+        sectionsCount={sections.length}
+        northStarStatement={northStarStatement}
+        onContinue={handleCelebrationContinue}
+      />
     </div>
   );
 };

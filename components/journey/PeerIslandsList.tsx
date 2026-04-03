@@ -5,12 +5,11 @@
 
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from '../Motion';
 import { X, Compass, Trophy, LayoutGrid, Crown } from 'lucide-react';
 import { PeerIsland } from '../../hooks/usePeerIslands';
 import { IslandState } from '../../types';
-import { getAvatarUrl } from '../Auth';
-
-const MotionDiv = motion.div as any;
+import { getAvatarUrl, handleAvatarError } from '../Auth';
 
 function computeIslandScore(state: IslandState): number {
   const placementCount = state.placements.filter(p => !p.isStarter).length;
@@ -96,18 +95,17 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.25 }}
-          className="fixed inset-0 z-[80] flex flex-col overflow-hidden"
-          style={{ backgroundColor: '#FDF8F0' }}
+          className="fixed inset-0 z-[80] flex flex-col overflow-hidden bg-[#FAF7F4] dark:bg-zinc-900"
         >
           {/* Header */}
           <div className="flex items-center justify-between px-5 pt-5 pb-2">
-            <h2 className="text-xl font-serif font-bold" style={{ color: '#1C1917' }}>
+            <h2 className="text-xl font-serif font-bold text-[#1A1A1A] dark:text-white">
               Peer Islands
             </h2>
             <button
               onClick={onClose}
-              className="w-9 h-9 flex items-center justify-center rounded-full transition-colors"
-              style={{ backgroundColor: 'rgba(0,0,0,0.05)', color: '#78716C' }}
+              className="w-9 h-9 flex items-center justify-center rounded-full transition-colors text-[#78716C] dark:text-zinc-400"
+              style={{ backgroundColor: 'rgba(0,0,0,0.05)' }}
             >
               <X size={18} strokeWidth={2} />
             </button>
@@ -119,11 +117,11 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
               <button
                 key={t}
                 onClick={() => setTab(t)}
-                className="flex items-center gap-1.5 px-4 py-2 text-xs font-semibold transition-all"
+                className={`flex items-center gap-1.5 px-4 py-2 text-xs font-semibold transition-all ${tab === t ? '' : 'text-[#A8A29E] dark:text-zinc-500'}`}
                 style={{
                   borderRadius: 10,
                   backgroundColor: tab === t ? '#2A7D6F' : 'transparent',
-                  color: tab === t ? '#FFFFFF' : '#A8A29E',
+                  color: tab === t ? '#FFFFFF' : undefined,
                 }}
               >
                 {t === 'islands' ? <LayoutGrid size={14} /> : <Trophy size={14} />}
@@ -146,7 +144,7 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
                 >
                   <Compass size={28} style={{ color: '#2A7D6F' }} />
                 </div>
-                <p className="text-sm" style={{ color: '#78716C' }}>
+                <p className="text-sm text-[#78716C] dark:text-zinc-400">
                   No peers from your school have built an island yet.
                 </p>
               </div>
@@ -277,7 +275,7 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
                           <div className="w-12 h-12 rounded-full mx-auto mt-2 mb-1.5 flex items-center justify-center" style={{ backgroundColor: `${p.bg}20`, border: `2px solid ${p.bg}40` }}>
                             <img src={getAvatarUrl(entry.avatar)} alt={entry.name} className="w-9 h-9 rounded-full" />
                           </div>
-                          <p className="text-xs font-bold truncate px-2" style={{ color: '#1C1917' }}>{entry.name}</p>
+                          <p className="text-xs font-bold truncate px-2 text-[#1A1A1A] dark:text-white">{entry.name}</p>
                           <span className="inline-flex items-center px-2 py-0.5 mt-1 text-[10px] font-bold" style={{ borderRadius: 6, backgroundColor: `${p.bg}15`, color: p.bg }}>{entry.score}</span>
                         </MotionDiv>
                       );
@@ -345,7 +343,7 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
                           <div className="w-12 h-12 rounded-full mx-auto mt-2 mb-1.5 flex items-center justify-center" style={{ backgroundColor: `${p.bg}20`, border: `2px solid ${p.bg}40` }}>
                             <img src={getAvatarUrl(entry.avatar)} alt={entry.name} className="w-9 h-9 rounded-full" />
                           </div>
-                          <p className="text-xs font-bold truncate px-2" style={{ color: '#1C1917' }}>{entry.name}</p>
+                          <p className="text-xs font-bold truncate px-2 text-[#1A1A1A] dark:text-white">{entry.name}</p>
                           <span className="inline-flex items-center px-2 py-0.5 mt-1 text-[10px] font-bold" style={{ borderRadius: 6, backgroundColor: `${p.bg}15`, color: p.bg }}>{entry.score}</span>
                         </MotionDiv>
                       );
@@ -367,13 +365,17 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
                         transition={{ delay: 0.2 + i * 0.03, duration: 0.3, ease: [0.25, 1, 0.5, 1] }}
                         whileTap={isYou ? undefined : { scale: 0.98 }}
                         onClick={() => !isYou && onSelectPeer(entry.peer)}
-                        className="flex items-center gap-3 px-4 py-3"
+                        className={`flex items-center gap-3 px-4 py-3 ${isYou ? '' : 'bg-[#FAF7F4] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800'}`}
                         style={{
                           borderRadius: 14,
-                          backgroundColor: isYou ? 'rgba(42,125,111,0.08)' : '#FEFDFB',
-                          border: isYou ? '2px solid rgba(42,125,111,0.25)' : '1px solid #EDEBE8',
-                          borderLeft: isYou ? '4px solid #2A7D6F' : undefined,
-                          boxShadow: isYou ? '0 2px 8px rgba(42,125,111,0.08)' : '0 1px 3px rgba(28,25,23,0.03)',
+                          ...(isYou ? {
+                            backgroundColor: 'rgba(42,125,111,0.08)',
+                            border: '2px solid rgba(42,125,111,0.25)',
+                            borderLeft: '4px solid #2A7D6F',
+                            boxShadow: '0 2px 8px rgba(42,125,111,0.08)',
+                          } : {
+                            boxShadow: '0 1px 3px rgba(28,25,23,0.03)',
+                          }),
                           cursor: isYou ? 'default' : 'pointer',
                         }}
                       >
@@ -387,11 +389,11 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
                         </div>
 
                         <div className="flex-1 min-w-0">
-                          <p className="text-sm font-semibold truncate" style={{ color: '#1C1917' }}>
+                          <p className="text-sm font-semibold truncate text-[#1A1A1A] dark:text-white">
                             {entry.name}
                             {isYou && <span className="text-[11px] font-bold ml-1.5" style={{ color: '#2A7D6F' }}>you</span>}
                           </p>
-                          <p className="text-[11px]" style={{ color: '#A8A29E' }}>
+                          <p className="text-[11px] text-[#A8A29E] dark:text-zinc-500">
                             {entry.placements} {entry.placements === 1 ? 'piece' : 'pieces'} built
                           </p>
                         </div>
@@ -435,10 +437,10 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
                             <img src={getAvatarUrl(you.avatar)} alt={you.name} className="w-8 h-8 rounded-full" />
                           </div>
                           <div className="flex-1 min-w-0">
-                            <p className="text-sm font-semibold" style={{ color: '#1C1917' }}>
+                            <p className="text-sm font-semibold text-[#1A1A1A] dark:text-white">
                               {you.name} <span className="text-[11px] font-bold" style={{ color: '#2A7D6F' }}>you</span>
                             </p>
-                            <p className="text-[11px]" style={{ color: '#A8A29E' }}>{you.placements} pieces built</p>
+                            <p className="text-[11px] text-[#A8A29E] dark:text-zinc-500">{you.placements} pieces built</p>
                           </div>
                           <span className="px-2.5 py-1 text-sm font-bold" style={{ borderRadius: 8, backgroundColor: 'rgba(42,125,111,0.1)', color: '#2A7D6F' }}>{you.score}</span>
                         </MotionDiv>

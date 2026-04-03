@@ -5,6 +5,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { Users, Brain, MessageSquare, Lightbulb, Flag } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { limeTheme } from '../moduleThemes';
@@ -12,7 +13,6 @@ import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = limeTheme;
-const MotionDiv = motion.div as any;
 
 // --- INTERACTIVE COMPONENTS ---
 
@@ -325,7 +325,6 @@ const ExplainItBackChallenge = () => {
     </div>
   );
 };
-
 
 // --- MODULE COMPONENT ---
 const TheTeachingEffectModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {

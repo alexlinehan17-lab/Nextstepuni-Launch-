@@ -6,6 +6,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { MotionPolygon } from './Motion';
 import {
   Brain, Target, Shield, Eye, Settings
 } from 'lucide-react';
@@ -18,8 +19,6 @@ import NorthStarCallout from './NorthStarCallout';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
 
 const theme = roseTheme;
-
-const MotionPolygon = motion.polygon as any;
 
 // --- INTERACTIVE COMPONENTS ---
 

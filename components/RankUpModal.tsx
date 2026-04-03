@@ -6,13 +6,12 @@
 import React from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { type AthleteRank, ATHLETE_RANKS } from '../gamificationConfig';
 import {
   Footprints, Flame, TrendingUp, Target, Zap, Award, Crown, Mountain,
   Star, X, ChevronRight,
 } from 'lucide-react';
-
-const MotionDiv = motion.div as any;
 
 const RANK_ICON_MAP: Record<string, React.FC<{ size?: number; strokeWidth?: number; style?: React.CSSProperties }>> = {
   Footprints, Flame, TrendingUp, Target, Zap, Award, Crown, Mountain, Star,
@@ -86,8 +85,7 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.35 }}
-          className="fixed inset-0 z-[300] overflow-y-auto"
-          style={{ backgroundColor: '#FDF8F0' }}
+          className="fixed inset-0 z-[300] overflow-y-auto bg-[#FDF8F0] dark:bg-zinc-950"
         >
           {/* ═══ Colour environment — top section ═══ */}
           <div className="relative" style={{ backgroundColor: newRank.colorHex }}>
@@ -251,14 +249,14 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
               >
                 <path
                   d="M0,20 C80,42 160,8 240,28 C320,48 400,12 480,24 L480,40 L0,40 Z"
-                  fill="#FDF8F0"
+                  className="fill-[#FDF8F0] dark:fill-zinc-950"
                 />
               </svg>
             </div>
           </div>
 
           {/* ═══ Cream section — journey + milestone + CTA ═══ */}
-          <div className="px-6 pb-10 max-w-md mx-auto" style={{ backgroundColor: '#FDF8F0' }}>
+          <div className="px-6 pb-10 max-w-md mx-auto bg-[#FDF8F0] dark:bg-zinc-950">
 
             {/* ── Journey progress ── */}
             <MotionDiv
@@ -268,19 +266,14 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
               className="mb-5 pt-2"
             >
               <p
-                className="text-[11px] font-semibold uppercase tracking-[0.12em] mb-3"
-                style={{ color: '#A8A29E' }}
+                className="text-[11px] font-semibold uppercase tracking-[0.12em] mb-3 text-[#A8A29E] dark:text-zinc-500"
               >
                 Your journey
               </p>
 
               <div
-                className="rounded-2xl px-5 py-5"
-                style={{
-                  backgroundColor: '#FEFDFB',
-                  border: '1px solid #EDEBE8',
-                  boxShadow: '0 1px 4px rgba(28, 25, 23, 0.04)',
-                }}
+                className="rounded-2xl px-5 py-5 bg-[#FEFDFB] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800"
+                style={{ boxShadow: '0 1px 4px rgba(28, 25, 23, 0.04)' }}
               >
                 {/* Colour-coded segments with inline labels */}
                 <div className="flex gap-1.5">
@@ -294,9 +287,9 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
                       <div key={rank.id} className="flex-1 flex flex-col items-center">
                         <MotionDiv
                           className="w-full overflow-hidden"
+                          className="bg-[#EDEBE8] dark:bg-zinc-700"
                           style={{
                             height: isCurrent ? 10 : 7,
-                            backgroundColor: '#EDEBE8',
                             borderRadius: 5,
                           }}
                           initial={{ scaleX: 0 }}

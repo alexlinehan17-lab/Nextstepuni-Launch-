@@ -5,12 +5,10 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionButton, MotionDiv } from '../Motion';
 import { Gift, X, Check } from 'lucide-react';
 import { ShopItem } from '../../types';
 import { GIFTABLE_ITEMS } from '../../hooks/useGifts';
-
-const MotionDiv = motion.div as any;
-const MotionButton = motion.button as any;
 
 interface GiftButtonProps {
   senderUid: string;

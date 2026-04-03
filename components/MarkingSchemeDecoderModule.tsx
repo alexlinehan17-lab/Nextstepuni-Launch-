@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { Eye, Layers, FileSearch, Key, Shield, PenTool, Target } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
@@ -12,8 +13,6 @@ import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './Mod
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = redTheme;
-
-const MotionDiv = motion.div as any;
 
 // --- INTERACTIVE COMPONENTS ---
 

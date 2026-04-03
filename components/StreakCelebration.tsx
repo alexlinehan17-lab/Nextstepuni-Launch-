@@ -6,9 +6,7 @@
 import React from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-
-const MotionDiv = motion.div as any;
-const MotionButton = motion.button as any;
+import { MotionButton, MotionDiv } from './Motion';
 
 interface StreakCelebrationProps {
   streakCount: number;
@@ -126,7 +124,7 @@ const StreakCelebration: React.FC<StreakCelebrationProps> = ({ streakCount, isOp
                     }}
                     {...(!weekDays[i] ? { className: 'w-8 h-8 rounded-full bg-zinc-200 dark:bg-zinc-700' } : { className: 'w-8 h-8 rounded-full', style: { backgroundColor: '#2A7D6F' } })}
                   />
-                  <span className="text-xs font-medium" style={{ color: weekDays[i] ? '#2A7D6F' : '#9A9590' }}>{day}</span>
+                  <span className={`text-xs font-medium ${weekDays[i] ? 'text-[#2A7D6F]' : 'text-[#9A9590] dark:text-zinc-500'}`}>{day}</span>
                 </div>
               ))}
             </MotionDiv>

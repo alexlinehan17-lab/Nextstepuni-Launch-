@@ -5,11 +5,10 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from '../Motion';
 import { CalendarPlus, Trash2, Calendar, ChevronDown, Plus, X } from 'lucide-react';
 import { db } from '../../firebase';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
-
-const MotionDiv = motion.div as any;
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 

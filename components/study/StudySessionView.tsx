@@ -5,7 +5,9 @@
 
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from '../Motion';
 import { ArrowLeft, BookOpen, Target, RotateCcw, Play, Pause, Clock, Sparkles, Zap, X, ChevronRight, Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck, Trophy, CalendarCheck } from 'lucide-react';
+import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
 import { type SessionUser } from '../Auth';
@@ -18,8 +20,8 @@ import { useStudySession } from '../../hooks/useStudySession';
 import { getSubjectColor, getSubjectStroke, getSubjectHex, DURATION_PRESETS } from '../../studySessionData';
 import StrategyPickerStep from './StrategyPickerStep';
 import ReflectionModal from '../ReflectionModal';
-import { scoreReflection, REFLECTION_TIER_POINTS } from '../ReflectionModal';
-import StudyDebrief, { type DebriefEntry } from '../StudyDebrief';
+import { scoreReflection, QUICK_DEBRIEF_POINTS, FULL_REFLECTION_POINTS } from '../ReflectionModal';
+import { type DebriefEntry } from '../StudyDebrief';
 import { type WeeklyChallengeState } from '../../hooks/useWeeklyChallenge';
 import { useTeachBack } from '../../hooks/useTeachBack';
 import { TeachBackReadCard, TeachBackWriteCard } from './TeachBackCard';
@@ -28,8 +30,6 @@ import { getBlockId, toDateKey } from '../subjectData';
 import { processDebriefSideEffects } from '../../hooks/useDebriefSideEffects';
 import { getSyllabusTopics } from '../syllabusTopics';
 import XPPopup from '../XPPopup';
-
-const MotionDiv = motion.div as any;
 
 const TIER_COLORS: Record<MasteryTier, { text: string; bar: string }> = {
   none: { text: 'text-zinc-400 dark:text-zinc-500', bar: 'bg-zinc-200 dark:bg-zinc-700' },
@@ -299,9 +299,10 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     }
   };
 
+  const [reflectionMode, setReflectionMode] = useState<'quick' | 'full'>('quick');
+
   const handleSaveWithReflection = async (reflectionText: string) => {
-    const quality = scoreReflection(reflectionText);
-    const bonus = REFLECTION_TIER_POINTS[quality.tier];
+    const bonus = reflectionMode === 'quick' ? QUICK_DEBRIEF_POINTS : FULL_REFLECTION_POINTS;
     setIsSaving(true);
     await session.saveSession(bonus, selectedStrategies);
     completeTimetableBlock();
@@ -504,8 +505,8 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                   exit={{ opacity: 0, height: 0 }}
                   className="overflow-hidden"
                 >
-                  <div className="px-4 py-3 rounded-xl" style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
-                    <p className="text-[10px] font-bold uppercase tracking-widest mb-1.5" style={{ color: '#9A9590' }}>Last time you studied {selectedSubject}</p>
+                  <div className="px-4 py-3 rounded-xl bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+                    <p className="text-[10px] font-bold uppercase tracking-widest mb-1.5 text-[#A8A29E] dark:text-zinc-500">Last time you studied {selectedSubject}</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-400 italic leading-relaxed">"{lastSubjectNote.whatWorked}"</p>
                   </div>
                 </MotionDiv>
@@ -593,17 +594,9 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
             </div>
 
             {/* Start button */}
-            <button
-              onClick={handleStart}
-              disabled={!canStart}
-              className={`w-full py-4 rounded-2xl text-[15px] font-bold tracking-wide transition-all ${
-                canStart
-                  ? 'bg-[var(--accent-hex)] text-white shadow-lg shadow-[rgba(var(--accent),0.2)] hover:shadow-[rgba(var(--accent),0.35)] active:scale-[0.98]'
-                  : 'bg-zinc-100 dark:bg-zinc-900 text-zinc-300 dark:text-zinc-700 cursor-not-allowed'
-              }`}
-            >
-              Start Session
-            </button>
+            <div className="flex justify-center">
+              <PrimaryActionButton label="Start Session" onClick={handleStart} icon={Play} disabled={!canStart} />
+            </div>
 
             {/* Strategy Mastery Summary */}
             {strategyMastery && Object.keys(strategyMastery).length > 0 && (
@@ -950,8 +943,16 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
         <StrategyPickerStep
           learnedStrategyIds={learnedStrategyIds}
           autoTrackedIds={session.getTrackedStrategies()}
+          subject={session.subject}
+          durationSeconds={session.elapsedSeconds}
+          pointsEarned={session.basePointsEarned}
           onContinue={(ids) => {
             setSelectedStrategies(ids);
+            setPickerDone(true);
+            setXpPopup({ points: session.basePointsEarned, visible: true });
+          }}
+          onSkip={() => {
+            setSelectedStrategies([]);
             setPickerDone(true);
             setXpPopup({ points: session.basePointsEarned, visible: true });
           }}
@@ -1061,18 +1062,20 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           {/* Actions */}
           <div className="space-y-3">
             <button
-              onClick={() => setDebriefOpen(true)}
+              onClick={() => { setReflectionMode('quick'); setReflectionOpen(true); }}
               disabled={isSaving}
-              className="w-full py-3.5 rounded-xl text-sm font-bold bg-teal-500 text-white shadow-lg shadow-teal-500/25 hover:shadow-teal-500/40 active:scale-[0.98] transition-all disabled:opacity-50"
+              className="w-full py-3.5 rounded-xl text-sm font-bold text-white active:scale-[0.98] transition-all disabled:opacity-50"
+              style={{ backgroundColor: '#2A7D6F' }}
             >
-              Quick Debrief (+10 pts)
+              Quick Debrief (+{QUICK_DEBRIEF_POINTS} pts)
             </button>
             <button
-              onClick={() => setReflectionOpen(true)}
+              onClick={() => { setReflectionMode('full'); setReflectionOpen(true); }}
               disabled={isSaving}
-              className="w-full py-3 rounded-xl text-sm font-medium text-[var(--accent-hex)] bg-[rgba(var(--accent),0.08)] hover:bg-[rgba(var(--accent),0.15)] transition-all disabled:opacity-50"
+              className="w-full py-3 rounded-xl text-sm font-medium transition-all disabled:opacity-50"
+              style={{ backgroundColor: 'rgba(42,125,111,0.08)', color: '#2A7D6F' }}
             >
-              Write a Reflection (+10-20 pts)
+              Write a Reflection (+{FULL_REFLECTION_POINTS} pts)
             </button>
             <button
               onClick={handleSkipReflection}
@@ -1084,24 +1087,12 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           </div>
         </MotionDiv>
 
-        {/* Study Debrief Modal */}
-        <StudyDebrief
-          isOpen={debriefOpen}
-          subject={session.subject}
-          sessionType={session.sessionType}
-          durationMinutes={actualMinutes}
-          syllabusTopics={debriefTopics}
-          onSubmit={handleDebriefSubmit}
-          onSkip={() => { setDebriefOpen(false); handleSkipReflection(); }}
-        />
-
-        {/* Reflection Modal */}
+        {/* Reflection Modal (quick or full mode) */}
         <ReflectionModal
           isOpen={reflectionOpen}
           subjectName={session.subject}
           sessionType={session.sessionType}
-          basePoints={session.basePointsEarned + REFLECTION_TIER_POINTS.basic}
-          streakMultiplier={1}
+          mode={reflectionMode}
           onSubmit={(text) => handleSaveWithReflection(text)}
           onCancel={() => setReflectionOpen(false)}
         />

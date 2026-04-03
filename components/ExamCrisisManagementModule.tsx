@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { Cpu, Zap, Shield, Moon, Utensils, ClipboardList, Flag, Brain } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { skyTheme } from '../moduleThemes';
@@ -298,8 +299,6 @@ const PhysiologicalSighGuide = () => {
         </div>
     );
 };
-
-const MotionDiv = motion.div as any;
 
 type CrisisResponse = {
     text: string;

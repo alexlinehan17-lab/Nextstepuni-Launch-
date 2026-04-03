@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence, Reorder } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   MessageSquare, BrainCircuit, BookOpen, Wrench, Layers, Shield, Zap, Flag, ArrowDown
 } from 'lucide-react';
@@ -233,8 +234,6 @@ const PassengersOnBus = () => {
         </div>
     );
 }
-
-const MotionDiv = motion.div as any;
 
 const CHAIN_LENGTH = 5;
 

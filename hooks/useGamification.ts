@@ -232,13 +232,13 @@ export function useGamification({
   // Save gamification data to Firestore
   const saveGamificationData = useCallback(async (data: Partial<GamificationFirestoreData>) => {
     if (!uid) return;
-    try {
-      const merged = { ...gamificationData, ...data };
-      await setDoc(doc(db, 'progress', uid), { gamification: merged }, { merge: true });
-      setGamificationData(merged);
-    } catch (err) {
+    const merged = { ...gamificationData, ...data };
+    // Update local state immediately (optimistic)
+    setGamificationData(merged);
+    // Fire-and-forget Firestore write — queues offline via persistence
+    setDoc(doc(db, 'progress', uid), { gamification: merged }, { merge: true }).catch(err => {
       console.error('Failed to save gamification data:', err);
-    }
+    });
   }, [uid, gamificationData]);
 
   // Check and unlock achievements (with in-flight guard to prevent duplicates)
@@ -298,17 +298,14 @@ export function useGamification({
           achievementTimestamps: timestamps,
         });
 
-        // Award bonus points for new achievements
+        // Award bonus points for new achievements (fire-and-forget)
         const totalBonus = newlyUnlocked.reduce((sum, a) => sum + a.bonusPoints, 0);
         if (totalBonus > 0 && uid) {
-          try {
-            await updateDoc(doc(db, 'progress', uid), {
-              'pointsData.totalEarned': increment(totalBonus),
-            });
-            pointsData.reload();
-          } catch (err) {
+          updateDoc(doc(db, 'progress', uid), {
+            'pointsData.totalEarned': increment(totalBonus),
+          }).then(() => pointsData.reload()).catch(err => {
             console.error('Failed to award achievement bonus:', err);
-          }
+          });
         }
       }
 

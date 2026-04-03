@@ -6,6 +6,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   MessageCircle, BarChart, Brain, User, AlertTriangle, Settings
 } from 'lucide-react';
@@ -59,7 +60,6 @@ const DweckExperimentSimulator = () => {
         if(taskChoice === 'easy') { resilience = 70; performance = 60; }
         if(taskChoice === 'hard') { resilience = 90; performance = 80; }
     }
-
 
     return(
         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
@@ -316,9 +316,6 @@ const ErrorSignalVisualizer = () => {
       </div>
     );
 };
-
-
-const MotionDiv = motion.div as any;
 
 type PraiseCategory = 'person' | 'process';
 

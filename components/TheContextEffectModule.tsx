@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import { Map, Repeat, Activity, Brain, Wrench } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { purpleTheme } from '../moduleThemes';
@@ -12,7 +13,6 @@ import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './Mod
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = purpleTheme;
-const MotionDiv = motion.div as any;
 
 // --- INTERACTIVE COMPONENTS ---
 
@@ -434,7 +434,6 @@ const NoiseLevelCurve = () => {
     </div>
   );
 };
-
 
 // 4. TASK ENVIRONMENT MATCHER (Section 3 interactive)
 const TASK_ITEMS = [

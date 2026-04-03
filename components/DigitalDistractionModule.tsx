@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
   BrainCircuit, Shield, Laptop, Home, Repeat, Users, Map
 } from 'lucide-react';
@@ -178,8 +179,6 @@ const phaseStyles: Record<string, { accent: string; accentBg: string; checkBg: s
     text: 'text-rose-600 dark:text-rose-400',
   },
 };
-
-const MotionDiv = motion.div as any;
 
 const PhasedDetoxRoadmap = () => {
   const [checked, setChecked] = useState<Set<string>>(new Set());
