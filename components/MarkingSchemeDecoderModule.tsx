@@ -9,7 +9,7 @@ import { MotionDiv } from './Motion';
 import { Eye, Layers, FileSearch, Key, Shield, PenTool, Target } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid, GlossaryGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = redTheme;
@@ -72,7 +72,7 @@ const MarkTypeClassifier = () => {
 
   if (phase === 'ready') {
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">Mark Type Classifier</h4>
         <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-2 max-w-md mx-auto">Read each marking scheme extract and classify it as one of three mark types:</p>
         <div className="flex justify-center gap-3 mb-6">
@@ -87,7 +87,7 @@ const MarkTypeClassifier = () => {
 
   if (phase === 'done') {
     return (
-      <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Classification Results</h4>
         <div className="flex justify-center my-5">
           <div className="text-center px-5 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-700">
@@ -136,7 +136,7 @@ const MarkTypeClassifier = () => {
   const isWrong = showFeedback && choices[qIndex] !== q.correct;
 
   return (
-    <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <div className="flex items-center justify-between mb-4">
         <h4 className="font-serif text-lg font-semibold text-zinc-800 dark:text-white">Mark Type Classifier</h4>
         <span className="text-xs font-bold text-zinc-400">{qIndex + 1} / {classifierItems.length}</span>
@@ -229,28 +229,42 @@ const SchemeDecoder = () => {
   const [activeExtract, setActiveExtract] = useState(0);
   const [activeAnnotation, setActiveAnnotation] = useState<number | null>(null);
 
+  const extract = schemeExtracts[activeExtract];
+  const decodedCount = activeAnnotation !== null ? 1 : 0;
+
   return (
-    <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Scheme Decoder</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-6">Click the highlighted terms to decode what they really mean.</p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+      <div className="text-center mb-6">
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
+        <h4 className="font-serif font-bold" style={{ fontSize: 22, color: '#1a1a1a' }}>Scheme Decoder</h4>
+        <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Click the highlighted terms to decode what they really mean.</p>
+      </div>
 
       {/* Extract tabs */}
       <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
         {schemeExtracts.map((_, i) => (
           <button key={i} onClick={() => { setActiveExtract(i); setActiveAnnotation(null); }}
-            className={`px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-colors ${
-              activeExtract === i ? 'bg-red-500 text-white' : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-600'
-            }`}>
+            style={{
+              backgroundColor: activeExtract === i ? '#2A7D6F' : '#FFFFFF',
+              border: activeExtract === i ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+              borderRadius: 20,
+              padding: '8px 18px',
+              fontSize: 13,
+              fontWeight: 600,
+              color: activeExtract === i ? '#FFFFFF' : '#7a7068',
+              whiteSpace: 'nowrap' as const,
+              cursor: 'pointer',
+            }}>
             Extract {i + 1}
           </button>
         ))}
       </div>
 
-      {/* Extract display */}
-      <div className="p-5 bg-zinc-50 dark:bg-zinc-700/50 rounded-xl border border-zinc-200 dark:border-zinc-600 mb-4">
-        <p className="text-sm font-mono text-zinc-700 dark:text-zinc-200 leading-relaxed">
+      {/* Extract card */}
+      <div className="bg-white dark:bg-zinc-900 mb-4" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '20px 24px' }}>
+        <span className="inline-block mb-3" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#f0ece6', color: '#9e9186', border: '1px solid #d0cdc8', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Exam Question Extract</span>
+        <p style={{ fontSize: 15, color: '#1a1a1a', lineHeight: 1.7 }}>
           {(() => {
-            const extract = schemeExtracts[activeExtract];
             const sortedAnnotations = [...extract.annotations].sort((a, b) => a.start - b.start);
             const parts: React.ReactNode[] = [];
             let lastEnd = 0;
@@ -258,11 +272,19 @@ const SchemeDecoder = () => {
               if (ann.start > lastEnd) {
                 parts.push(<span key={`t-${i}`}>{extract.text.slice(lastEnd, ann.start)}</span>);
               }
+              const isClicked = activeAnnotation === i;
               parts.push(
                 <button key={`a-${i}`} onClick={() => setActiveAnnotation(activeAnnotation === i ? null : i)}
-                  className={`px-1 py-0.5 rounded font-bold transition-all cursor-pointer ${
-                    activeAnnotation === i ? 'bg-teal-200 dark:bg-teal-800 text-teal-900 dark:text-teal-100' : 'bg-red-100 dark:bg-red-900/40 text-red-700 dark:text-red-300 hover:bg-red-200 dark:hover:bg-red-800/60'
-                  }`}>
+                  style={{
+                    backgroundColor: isClicked ? '#2A7D6F' : '#e8f5f2',
+                    color: isClicked ? '#FFFFFF' : '#1a6358',
+                    fontWeight: 700,
+                    borderRadius: 4,
+                    padding: '1px 6px',
+                    cursor: 'pointer',
+                    borderBottom: isClicked ? 'none' : '2px solid #2A7D6F',
+                    transition: 'all 0.2s',
+                  }}>
                   {ann.term}
                 </button>
               );
@@ -276,15 +298,13 @@ const SchemeDecoder = () => {
         </p>
       </div>
 
-      {/* Annotation tooltip */}
+      {/* Decode panel */}
       <AnimatePresence mode="wait">
         {activeAnnotation !== null && (
           <motion.div key={activeAnnotation} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 8 }}
-            className="p-4 bg-zinc-900 text-white rounded-xl border border-white/10">
-            <p className="text-[10px] font-bold uppercase tracking-wider text-teal-400 mb-1">What this means</p>
-            <p className="text-sm leading-relaxed text-zinc-200">
-              <span className="font-bold text-white">{schemeExtracts[activeExtract].annotations[activeAnnotation].term}</span> — {schemeExtracts[activeExtract].annotations[activeAnnotation].explanation}
-            </p>
+            style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px', marginTop: 12 }}>
+            <p className="font-serif font-semibold" style={{ fontSize: 15, color: '#1a6358', marginBottom: 4 }}>{extract.annotations[activeAnnotation].term}</p>
+            <p className="italic" style={{ fontSize: 14, color: '#5a5550' }}>{extract.annotations[activeAnnotation].explanation}</p>
           </motion.div>
         )}
       </AnimatePresence>
@@ -355,7 +375,7 @@ const AnswerUpgrader = () => {
   };
 
   return (
-    <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Answer Upgrader</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-6">See how adding the right keywords transforms marks.</p>
 
@@ -491,9 +511,14 @@ const MarkingSchemeDecoderModule: React.FC<{ onBack: () => void; progress: Modul
           {activeSection === 1 && (
             <ReadingSection title="The Three Types of Marks." eyebrow="02 // The System" icon={Layers} theme={theme}>
               <p>Every mark in the Leaving Cert falls into one of three categories. Once you understand this system, you will never look at an exam question the same way again.</p>
-              <p><strong>1. <Highlight description="Attempt marks (typically 1-3 marks) are awarded just for trying. Write ANYTHING relevant — a definition, a formula, a diagram — and you earn these marks. A blank answer always gets zero." theme={theme}>Attempt marks</Highlight> (1-3 marks)</strong> — awarded just for trying. Write anything relevant and you get these. Even if your answer is incomplete or partly wrong, the examiner will award attempt marks for showing you engaged with the question.</p>
-              <p><strong>2. <Highlight description="Method marks (typically 2-5 marks) are awarded for showing the right approach. Even if your final answer is wrong, you earn these marks for demonstrating the correct process, formula, or reasoning." theme={theme}>Method marks</Highlight> (2-5 marks)</strong> — awarded for showing the right approach, even if your final answer is wrong. This is why "showing your work" literally earns points. If you use the right formula, set up the equation correctly, or show a logical chain of reasoning, you get method marks regardless of where you end up.</p>
-              <p><strong>3. <Highlight description="Answer marks (typically 2-6 marks) are awarded only for the correct final answer. These are the only marks that require you to actually get it right." theme={theme}>Answer marks</Highlight> (2-6 marks)</strong> — awarded for the correct final answer. These are the only marks that require you to actually get it right.</p>
+              <ConceptCardGrid
+                cards={[
+                  { number: 1, term: "Attempt Marks", description: "1–3 marks awarded just for trying. Write anything relevant and you get these — even if your answer is incomplete or partly wrong, the examiner awards attempt marks for showing you engaged with the question." },
+                  { number: 2, term: "Method Marks", description: "2–5 marks awarded for showing the right approach, even if your final answer is wrong. Using the right formula, setting up the equation correctly, or showing a logical chain of reasoning all earn method marks regardless of where you end up.", highlight: true },
+                  { number: 3, term: "Answer Marks", description: "2–6 marks awarded for the correct final answer. These are the only marks that require you to actually get it right — but you can still earn attempt and method marks without them." },
+                ]}
+                accentNote="Method marks are the most powerful — you can earn the majority of marks on a question without ever reaching the correct answer."
+              />
               <p>Here is the key insight: in a <strong>25-mark Maths question</strong>, you can get <strong>15+ marks with a wrong final answer</strong> if your method is right. The attempt marks and method marks add up fast. This is why leaving a question blank is the worst possible strategy — you are throwing away free marks.</p>
               <MarkTypeClassifier />
             </ReadingSection>
@@ -502,12 +527,16 @@ const MarkingSchemeDecoderModule: React.FC<{ onBack: () => void; progress: Modul
           {activeSection === 2 && (
             <ReadingSection title="Reading a Real Marking Scheme." eyebrow="03 // The Decode" icon={FileSearch} theme={theme}>
               <p>SEC marking schemes use specific notation that tells you exactly how marks are allocated. Once you learn to read this language, the exam becomes much less mysterious.</p>
-              <p><strong>"4M"</strong> = 4 method marks. These are earned for showing the right process, not the right answer.</p>
-              <p><strong>"or equivalent"</strong> = your phrasing does not have to match exactly. The examiner accepts any wording that demonstrates the same understanding. This appears <em>hundreds</em> of times across marking schemes. Examiners are <Highlight description="The phrase 'or equivalent' appears hundreds of times in SEC marking schemes. It means the examiner will accept any reasonable phrasing that shows you understand the concept. You do not need the textbook wording." theme={theme}>far more flexible</Highlight> than students realise.</p>
-              <p><strong>"any 3 points"</strong> = literally pick any 3 you want. You do not need the "best" ones or the ones the teacher highlighted. Any 3 valid points earn full marks.</p>
-              <p><strong>"fully correct — 10 marks; partially correct — 5 marks"</strong> = even half-right gets half-marks. This is the exam's built-in safety net.</p>
-              <p><strong>"PCLM"</strong> = Partial Credit Level Marks. This means you get marks for each correct step in your answer. Every correct element earns its own credit, independently of the others.</p>
-              <p>The key insight here is that <Highlight description="'Or equivalent' is the most important phrase in any marking scheme. It tells you the examiner is flexible and will accept your own words. You do not need to memorise the textbook definition word-for-word." theme={theme}>"or equivalent"</Highlight> changes everything. You do not need the textbook phrasing. You need to show understanding in your own words.</p>
+              <GlossaryGrid
+                items={[
+                  { term: "4M", definition: "4 method marks", explanation: "Earned for showing the right process, not the right answer. You can get all 4 without ever reaching the correct final answer." },
+                  { term: "or equivalent", definition: "your phrasing doesn't have to match exactly", explanation: "The examiner accepts any wording that demonstrates the same understanding. This appears hundreds of times across marking schemes — examiners are far more flexible than students realise.", highlight: true },
+                  { term: "any 3 points", definition: "literally pick any 3 valid points", explanation: "You do not need the 'best' ones or the ones the teacher highlighted. Any 3 valid points earn full marks." },
+                  { term: "fully correct — 10; partially correct — 5", definition: "half-right gets half-marks", explanation: "This is the exam's built-in safety net. A partially correct answer is never zero." },
+                  { term: "PCLM", definition: "Partial Credit Level Marks", explanation: "You get marks for each correct step in your answer independently. Every correct element earns its own credit, regardless of the others." },
+                ]}
+              />
+              <p>The key insight here is that "or equivalent" changes everything. You do not need the textbook phrasing. You need to show understanding in your own words.</p>
               <SchemeDecoder />
             </ReadingSection>
           )}
@@ -552,10 +581,36 @@ const MarkingSchemeDecoderModule: React.FC<{ onBack: () => void; progress: Modul
           {activeSection === 6 && (
             <ReadingSection title="Your Decoding Action Plan." eyebrow="07 // The Plan" icon={Target} theme={theme}>
               <p>You now have the tools to read any marking scheme like an insider. Here is how to put it all into practice.</p>
-              <p><strong>Step 1: Download marking schemes.</strong> Go to <strong>examinations.ie</strong> and download the marking scheme for every subject you are sitting. Start with last year's papers.</p>
-              <p><strong>Step 2: Read them alongside the exam paper.</strong> For each question, look at how marks are broken down. Notice the attempt marks, the method marks, and the answer marks. Notice where it says "or equivalent" and "any 3 points."</p>
-              <p><strong>Step 3: Identify your mark-leaking questions.</strong> For each subject, find the question types where you are losing marks to <em>technique</em>, not knowledge. Maybe you are writing too much on short questions. Maybe you are skipping questions you could have attempted. Maybe you are not using keywords.</p>
-              <p><strong>Step 4: Practice with the scheme open.</strong> Do past paper questions and then mark your own answers using the marking scheme. This is the fastest way to understand what examiners want.</p>
+              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Download marking schemes</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>Go to examinations.ie and download the marking scheme for every subject you are sitting. Start with last year's papers.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Read them alongside the exam paper</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>For each question, look at how marks are broken down. Notice the attempt marks, the method marks, and the answer marks. Notice where it says "or equivalent" and "any 3 points."</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Identify your mark-leaking questions</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>For each subject, find the question types where you are losing marks to technique, not knowledge. Maybe you are writing too much on short questions. Maybe you are skipping questions you could have attempted. Maybe you are not using keywords.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 16, boxShadow: '4px 4px 0px 0px #059669' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#059669' }}>4</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#064E3B' }}>Practice with the scheme open</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#064E3B', opacity: 0.8 }}>Do past paper questions and then mark your own answers using the marking scheme. This is the fastest way to understand what examiners want.</p>
+                  </div>
+                </div>
+              </div>
               <MicroCommitment theme={theme}>
                 <p>Pick your 3 most important subjects. Download each marking scheme from <strong>examinations.ie</strong>. For each subject, find one question type where you are losing marks to technique, not knowledge. Write down what you will do differently.</p>
               </MicroCommitment>

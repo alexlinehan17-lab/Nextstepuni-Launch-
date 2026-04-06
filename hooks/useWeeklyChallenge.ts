@@ -91,7 +91,7 @@ export function useWeeklyChallenge(uid: string | undefined): WeeklyChallengeStat
 
         setCurrent(progress);
       } catch (err) {
-        console.error('Failed to load weekly challenge:', err);
+        console.error('Failed to load weekly challenge:');
       }
       setIsLoaded(true);
     };
@@ -108,7 +108,7 @@ export function useWeeklyChallenge(uid: string | undefined): WeeklyChallengeStat
       }, { merge: true });
       setIsClaimed(true);
     } catch (err) {
-      console.error('Failed to claim weekly challenge reward:', err);
+      console.error('Failed to claim weekly challenge reward:');
     }
   }, [uid, isClaimed, challenge.id, challenge.rewardPoints]);
 

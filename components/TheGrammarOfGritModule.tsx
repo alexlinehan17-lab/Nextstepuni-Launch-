@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { blueTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = blueTheme;
@@ -93,7 +93,7 @@ const ThoughtReframer = () => {
   ];
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
         Thought Reframer
       </h4>
@@ -108,7 +108,8 @@ const ThoughtReframer = () => {
           value={thought}
           onChange={(e) => setThought(e.target.value)}
           placeholder={"e.g. I'm terrible at maths"}
-          className="w-full px-5 py-4 rounded-xl border border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-900 text-zinc-800 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 text-base focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+          className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none"
+          style={{ border: '1.5px solid #E7E5E4' }}
         />
       </div>
 
@@ -163,7 +164,12 @@ const ThoughtReframer = () => {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="mb-8 p-5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700"
+          className="mb-8 p-5 rounded-xl"
+          style={{
+            backgroundColor: optimisticCount === 3 ? '#6EE7B7' : optimisticCount === 0 ? '#FCA5A5' : '#FCD34D',
+            border: `2.5px solid ${optimisticCount === 3 ? '#059669' : optimisticCount === 0 ? '#DC2626' : '#D97706'}`,
+            boxShadow: `3px 3px 0px 0px ${optimisticCount === 3 ? '#059669' : optimisticCount === 0 ? '#DC2626' : '#D97706'}`,
+          }}
         >
           <p className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-2">
             {optimisticCount === 0
@@ -233,21 +239,30 @@ const ExplanatoryStyleQuiz = () => {
     const isComplete = answers.every(a => a !== null);
 
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Self-Talk Diagnostic</h4>
         <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">You fail a test. Which voice is louder in your head?</p>
         <div className="space-y-6">
             <div>
                 <p className="text-center font-bold mb-2">"This means I'm stupid." vs "This means my strategy was wrong."</p>
-                <div className="grid grid-cols-2 gap-3"><button onClick={() => handleAnswer(0, 'pessimistic')} className={`p-4 rounded-xl border ${answers[0] === 'pessimistic' ? 'bg-rose-500 text-white' : 'bg-zinc-50'}`}>A</button><button onClick={() => handleAnswer(0, 'optimistic')} className={`p-4 rounded-xl border ${answers[0] === 'optimistic' ? 'bg-emerald-500 text-white' : 'bg-zinc-50'}`}>B</button></div>
+                <div className="grid grid-cols-2 gap-3">
+                  <button onClick={() => handleAnswer(0, 'pessimistic')} className="p-4 rounded-xl font-bold text-sm" style={{ backgroundColor: answers[0] === 'pessimistic' ? '#FCA5A5' : '#FFFFFF', border: `2.5px solid ${answers[0] === 'pessimistic' ? '#DC2626' : '#1C1917'}`, borderRadius: 14, boxShadow: answers[0] === 'pessimistic' ? 'none' : '3px 3px 0px 0px #1C1917', color: answers[0] === 'pessimistic' ? '#7F1D1D' : '#1C1917' }}>A</button>
+                  <button onClick={() => handleAnswer(0, 'optimistic')} className="p-4 rounded-xl font-bold text-sm" style={{ backgroundColor: answers[0] === 'optimistic' ? '#6EE7B7' : '#FFFFFF', border: `2.5px solid ${answers[0] === 'optimistic' ? '#059669' : '#1C1917'}`, borderRadius: 14, boxShadow: answers[0] === 'optimistic' ? 'none' : '3px 3px 0px 0px #1C1917', color: answers[0] === 'optimistic' ? '#064E3B' : '#1C1917' }}>B</button>
+                </div>
             </div>
              <div>
                 <p className="text-center font-bold mb-2">"I'll never get this." vs "I'll try again tomorrow."</p>
-                <div className="grid grid-cols-2 gap-3"><button onClick={() => handleAnswer(1, 'pessimistic')} className={`p-4 rounded-xl border ${answers[1] === 'pessimistic' ? 'bg-rose-500 text-white' : 'bg-zinc-50'}`}>A</button><button onClick={() => handleAnswer(1, 'optimistic')} className={`p-4 rounded-xl border ${answers[1] === 'optimistic' ? 'bg-emerald-500 text-white' : 'bg-zinc-50'}`}>B</button></div>
+                <div className="grid grid-cols-2 gap-3">
+                  <button onClick={() => handleAnswer(1, 'pessimistic')} className="p-4 rounded-xl font-bold text-sm" style={{ backgroundColor: answers[1] === 'pessimistic' ? '#FCA5A5' : '#FFFFFF', border: `2.5px solid ${answers[1] === 'pessimistic' ? '#DC2626' : '#1C1917'}`, borderRadius: 14, boxShadow: answers[1] === 'pessimistic' ? 'none' : '3px 3px 0px 0px #1C1917', color: answers[1] === 'pessimistic' ? '#7F1D1D' : '#1C1917' }}>A</button>
+                  <button onClick={() => handleAnswer(1, 'optimistic')} className="p-4 rounded-xl font-bold text-sm" style={{ backgroundColor: answers[1] === 'optimistic' ? '#6EE7B7' : '#FFFFFF', border: `2.5px solid ${answers[1] === 'optimistic' ? '#059669' : '#1C1917'}`, borderRadius: 14, boxShadow: answers[1] === 'optimistic' ? 'none' : '3px 3px 0px 0px #1C1917', color: answers[1] === 'optimistic' ? '#064E3B' : '#1C1917' }}>B</button>
+                </div>
             </div>
              <div>
                 <p className="text-center font-bold mb-2">"This ruins everything." vs "This is just one subject."</p>
-                <div className="grid grid-cols-2 gap-3"><button onClick={() => handleAnswer(2, 'pessimistic')} className={`p-4 rounded-xl border ${answers[2] === 'pessimistic' ? 'bg-rose-500 text-white' : 'bg-zinc-50'}`}>A</button><button onClick={() => handleAnswer(2, 'optimistic')} className={`p-4 rounded-xl border ${answers[2] === 'optimistic' ? 'bg-emerald-500 text-white' : 'bg-zinc-50'}`}>B</button></div>
+                <div className="grid grid-cols-2 gap-3">
+                  <button onClick={() => handleAnswer(2, 'pessimistic')} className="p-4 rounded-xl font-bold text-sm" style={{ backgroundColor: answers[2] === 'pessimistic' ? '#FCA5A5' : '#FFFFFF', border: `2.5px solid ${answers[2] === 'pessimistic' ? '#DC2626' : '#1C1917'}`, borderRadius: 14, boxShadow: answers[2] === 'pessimistic' ? 'none' : '3px 3px 0px 0px #1C1917', color: answers[2] === 'pessimistic' ? '#7F1D1D' : '#1C1917' }}>A</button>
+                  <button onClick={() => handleAnswer(2, 'optimistic')} className="p-4 rounded-xl font-bold text-sm" style={{ backgroundColor: answers[2] === 'optimistic' ? '#6EE7B7' : '#FFFFFF', border: `2.5px solid ${answers[2] === 'optimistic' ? '#059669' : '#1C1917'}`, borderRadius: 14, boxShadow: answers[2] === 'optimistic' ? 'none' : '3px 3px 0px 0px #1C1917', color: answers[2] === 'optimistic' ? '#064E3B' : '#1C1917' }}>B</button>
+                </div>
             </div>
         </div>
          {isComplete && <p className="text-center mt-4 text-sm font-bold">{score > 1 ? <span className="text-emerald-600">Your explanatory style is optimistic and builds resilience.</span> : <span className="text-rose-600">Your explanatory style is pessimistic and may be eroding your resilience.</span>}</p>}
@@ -302,7 +317,14 @@ const TheGrammarOfGritModule: React.FC<{ onBack: () => void; progress: ModulePro
            {activeSection === 3 && (
             <ReadingSection title="The Role of Self-Compassion." eyebrow="Step 4" icon={Shield} theme={theme}>
                 <p>A harsh inner critic doesn't build resilience; it creates shame, which kills your motivation. <Highlight description="Treating yourself the way you'd treat a friend who's going through a tough time. It's the opposite of the shame spiral that can follow failure." theme={theme}>Self-compassion</Highlight> is the antidote. It lets you acknowledge a failure without letting it define you. It's the difference between "I failed" and "I am a failure."</p>
-                <p>It has three parts: 1) <strong>Self-Kindness</strong>: Treat yourself like you'd treat a mate. 2) <strong>Common Humanity</strong>: Remember that everyone messes up. 3) <strong>Mindfulness</strong>: Acknowledge the feeling without letting it consume you.</p>
+                <p>It has three parts:</p>
+                <ConceptCardGrid
+                  cards={[
+                    { number: 1, term: "Self-Kindness", description: "Treat yourself like you'd treat a mate." },
+                    { number: 2, term: "Common Humanity", description: "Remember that everyone messes up." },
+                    { number: 3, term: "Mindfulness", description: "Acknowledge the feeling without letting it consume you." },
+                  ]}
+                />
             </ReadingSection>
           )}
            {activeSection === 4 && (

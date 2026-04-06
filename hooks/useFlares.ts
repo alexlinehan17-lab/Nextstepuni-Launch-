@@ -134,7 +134,7 @@ export function useFlares(uid?: string, school?: string, subjects?: string[]) {
 
       setActiveFlares(flares);
     } catch (err) {
-      console.error('[useFlares] Failed to load active flares:', err);
+      console.error('[useFlares] Failed to load active flares:');
     }
   }, [uid, school, subjects]);
 
@@ -191,7 +191,7 @@ export function useFlares(uid?: string, school?: string, subjects?: string[]) {
               };
             });
           } catch (err) {
-            console.error(`[useFlares] Failed to load responses for ${flare.id}:`, err);
+            console.error(`[useFlares] Failed to load responses for ${flare.id}`);
             responsesMap[flare.id] = [];
           }
         }),
@@ -199,7 +199,7 @@ export function useFlares(uid?: string, school?: string, subjects?: string[]) {
 
       setMyFlareResponses(responsesMap);
     } catch (err) {
-      console.error('[useFlares] Failed to load my flares:', err);
+      console.error('[useFlares] Failed to load my flares:');
     }
   }, [uid]);
 
@@ -256,7 +256,7 @@ export function useFlares(uid?: string, school?: string, subjects?: string[]) {
           });
         }
       } catch (err) {
-        console.error('[useFlares] Failed to load progress:', err);
+        console.error('[useFlares] Failed to load progress:');
       }
     })();
 
@@ -284,7 +284,7 @@ export function useFlares(uid?: string, school?: string, subjects?: string[]) {
         };
       });
     } catch (err) {
-      console.error(`[useFlares] Failed to get responses for ${flareId}:`, err);
+      console.error(`[useFlares] Failed to get responses for ${flareId}`);
       return [];
     }
   }, []);
@@ -387,7 +387,7 @@ export function useFlares(uid?: string, school?: string, subjects?: string[]) {
 
       return { ok: true };
     } catch (err) {
-      console.error('[useFlares] Failed to send flare:', err);
+      console.error('[useFlares] Failed to send flare:');
       return { ok: false, error: 'Failed to send. Try again.' };
     }
   }, [uid, school]);
@@ -426,7 +426,7 @@ export function useFlares(uid?: string, school?: string, subjects?: string[]) {
       await batch.commit();
       return { ok: true };
     } catch (err) {
-      console.error('[useFlares] Failed to respond to flare:', err);
+      console.error('[useFlares] Failed to respond to flare:');
       return { ok: false, error: 'Failed to send response. Try again.' };
     }
   }, [uid]);
@@ -474,7 +474,7 @@ export function useFlares(uid?: string, school?: string, subjects?: string[]) {
         // Cross-user progress write not permitted — rescue count will be updated via Cloud Function later
       }
     } catch (err) {
-      console.error('[useFlares] Failed to mark helpful:', err);
+      console.error('[useFlares] Failed to mark helpful:');
     }
   }, [uid]);
 
@@ -494,7 +494,7 @@ export function useFlares(uid?: string, school?: string, subjects?: string[]) {
       ));
       setActiveFlares(prev => prev.filter(f => f.id !== flareId));
     } catch (err) {
-      console.error('[useFlares] Failed to resolve flare:', err);
+      console.error('[useFlares] Failed to resolve flare:');
     }
   }, [uid]);
 

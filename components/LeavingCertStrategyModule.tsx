@@ -9,7 +9,7 @@ import { MotionDiv } from './Motion';
 import { Calculator, Briefcase, Target, PenSquare, Eye, HeartPulse } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useNorthStar } from '../hooks/useNorthStar';
 import NorthStarCallout from './NorthStarCallout';
@@ -47,7 +47,7 @@ const PointsCalculator = () => {
     const totalPoints = [...subjectPoints].sort((a, b) => b - a).slice(0, 6).reduce((sum, p) => sum + p, 0);
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">CAO Points Calculator</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">See how the "Best Six" and Maths Bonus work in practice.</p>
             <div className="space-y-3">
@@ -65,9 +65,9 @@ const PointsCalculator = () => {
                     </div>
                 ))}
             </div>
-            <div className="mt-8 p-6 bg-zinc-900 rounded-xl text-center">
-                <p className="text-sm font-bold text-zinc-400">Total "Best Six" Points:</p>
-                <p className="text-5xl font-semibold text-white">{totalPoints}</p>
+            <div className="mt-8 p-6 rounded-xl text-center" style={{ backgroundColor: '#D1FAE5', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669' }}>
+                <p className="text-sm font-bold text-emerald-700">Total "Best Six" Points:</p>
+                <p className="text-5xl font-semibold text-zinc-900">{totalPoints}</p>
             </div>
         </div>
     );
@@ -83,7 +83,7 @@ const SubjectClusterExplorer = () => {
     const isHighlighted = (subject: string) => activeCluster && clusters[activeCluster as keyof typeof clusters].includes(subject);
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Syllabus Overlap Explorer</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Click a cluster to see how subjects connect and reduce your workload.</p>
             <div className="flex justify-center gap-3 mb-6">
@@ -115,20 +115,40 @@ const CommandWordDecoder = () => {
     const [selected, setSelected] = useState(words[0]);
 
     return (
-         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Command Word Decoder</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Misinterpreting this word is the #1 cause of losing marks.</p>
+         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+            <div className="text-center mb-8">
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
+                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Command Word Decoder</h4>
+                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Misinterpreting this word is the #1 cause of losing marks.</p>
+            </div>
             <div className="flex justify-center flex-wrap gap-2 mb-6">
-                {words.map(w => <button key={w.word} onClick={() => setSelected(w)} className={`px-4 py-2 font-mono text-sm rounded-lg border ${selected.word === w.word ? 'bg-red-500 text-white border-red-500' : 'bg-zinc-100 border-zinc-200 dark:border-zinc-700'}`}>{w.word}</button>)}
+                {words.map(w => (
+                    <button
+                        key={w.word}
+                        onClick={() => setSelected(w)}
+                        style={{
+                            backgroundColor: selected.word === w.word ? '#2A7D6F' : '#FFFFFF',
+                            border: selected.word === w.word ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+                            borderRadius: 20,
+                            padding: '10px 20px',
+                            fontSize: 14,
+                            fontWeight: selected.word === w.word ? 600 : 500,
+                            color: selected.word === w.word ? '#FFFFFF' : '#7a7068',
+                            cursor: 'pointer',
+                        }}
+                    >
+                        {w.word}
+                    </button>
+                ))}
             </div>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                 <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-lg">
-                    <p className="text-xs font-bold text-emerald-700">EXPECTATION</p>
-                    <p className="mt-2 text-sm">{selected.expectation}</p>
+                 <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #2A7D6F', borderRadius: 14, padding: '20px 22px' }}>
+                    <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#e8f5f2', color: '#1a6358', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Expectation</span>
+                    <p className="mt-3" style={{ fontSize: 15, color: '#1a1a1a' }}>{selected.expectation}</p>
                  </div>
-                 <div className="p-4 bg-rose-50 border border-rose-200 rounded-lg">
-                    <p className="text-xs font-bold text-rose-700">COMMON PITFALL</p>
-                    <p className="mt-2 text-sm">{selected.pitfall}</p>
+                 <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderLeft: '4px solid #E85D75', borderRadius: 14, padding: '20px 22px' }}>
+                    <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#fde4e4', color: '#b33030', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Common Pitfall</span>
+                    <p className="mt-3" style={{ fontSize: 15, color: '#1a1a1a' }}>{selected.pitfall}</p>
                  </div>
              </div>
         </div>
@@ -217,27 +237,25 @@ const ExamDayTimelineBuilder = () => {
     const totalMinutes = sequence.reduce((sum, a) => sum + a.time, 0);
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Exam Morning Planner</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Build your optimal exam morning routine. Order matters.</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+            <div className="text-center mb-8">
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Exam Preparation</span>
+                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Exam Morning Planner</h4>
+                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Build your optimal exam morning routine. Order matters.</p>
+            </div>
 
             {/* Warning flash */}
             <AnimatePresence>
                 {flashWarning && (
-                    <MotionDiv
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        className="mb-6 p-4 bg-rose-50 dark:bg-rose-900/30 border border-rose-300 dark:border-rose-700 rounded-lg text-rose-700 dark:text-rose-300 text-sm font-medium text-center"
-                    >
-                        {flashWarning}
+                    <MotionDiv initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} className="mb-6" style={{ borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
+                        <p className="text-sm italic" style={{ color: '#b33030' }}>{flashWarning}</p>
                     </MotionDiv>
                 )}
             </AnimatePresence>
 
-            {/* Activity cards */}
+            {/* Activity chips */}
             <div className="mb-8">
-                <p className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Click to add to your timeline:</p>
+                <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', marginBottom: 12, textTransform: 'uppercase' as const }}>Click to add to your timeline:</p>
                 <div className="flex flex-wrap gap-2">
                     {TIMELINE_ACTIVITIES.map(activity => {
                         const isSelected = selectedIds.has(activity.id);
@@ -246,16 +264,18 @@ const ExamDayTimelineBuilder = () => {
                                 key={activity.id}
                                 onClick={() => handleAddActivity(activity)}
                                 disabled={isSelected || showFeedback}
-                                className={`px-3 py-2 text-xs font-medium rounded-lg border transition-all ${
+                                className="inline-flex items-center gap-1.5 transition-all"
+                                style={
                                     isSelected
-                                        ? 'bg-zinc-100 dark:bg-zinc-700 text-zinc-400 dark:text-zinc-500 border-zinc-200 dark:border-zinc-600 cursor-default opacity-50'
+                                        ? { backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: '#1a6358', opacity: 0.6, cursor: 'default' }
                                         : activity.isBad
-                                            ? 'bg-rose-50 dark:bg-rose-900/20 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-700 hover:bg-rose-100 dark:hover:bg-rose-900/40 cursor-pointer'
-                                            : 'bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-700 hover:bg-emerald-100 dark:hover:bg-emerald-900/40 cursor-pointer'
-                                }`}
+                                        ? { backgroundColor: '#FFFFFF', border: '2px solid #d0cdc8', borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: '#9e9186', cursor: 'pointer' }
+                                        : { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: '#1a1a1a', cursor: 'pointer' }
+                                }
                             >
+                                {activity.isBad && !isSelected && <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: '#E85D75', flexShrink: 0 }} />}
                                 {activity.label}
-                                <span className="ml-2 text-zinc-400 dark:text-zinc-500">{activity.time}m</span>
+                                <span style={{ fontSize: 11, color: '#9e9186', marginLeft: 4 }}>{activity.time}m</span>
                             </button>
                         );
                     })}
@@ -265,70 +285,48 @@ const ExamDayTimelineBuilder = () => {
             {/* Timeline */}
             {sequence.length > 0 && (
                 <div className="mb-6">
-                    <p className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Your Morning Timeline:</p>
+                    <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', marginBottom: 12, textTransform: 'uppercase' as const }}>Your Morning Timeline:</p>
                     <div className="relative pl-16 space-y-0">
                         {sequence.map((activity, index) => {
                             const startMin = getRunningTime(index);
                             const timeLabel = formatTime(startMin);
                             return (
-                                <MotionDiv
-                                    key={activity.id}
-                                    initial={{ opacity: 0, x: -20 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 0.3 }}
-                                    className="relative flex items-stretch"
-                                >
-                                    {/* Time label */}
-                                    <span className="absolute left-[-64px] top-3 text-xs font-mono font-bold text-zinc-500 dark:text-zinc-400 w-12 text-right">
-                                        {timeLabel}
-                                    </span>
-                                    {/* Vertical line */}
+                                <MotionDiv key={activity.id} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.3 }} className="relative flex items-stretch">
+                                    <span className="absolute left-[-64px] top-3 text-right" style={{ fontSize: 12, fontWeight: 600, color: '#9e9186', width: 48 }}>{timeLabel}</span>
                                     {index < sequence.length - 1 && (
-                                        <div className="absolute left-0 top-6 bottom-0 w-px bg-zinc-300 dark:bg-zinc-600" style={{ left: '-1px' }} />
+                                        <div className="absolute top-6 bottom-0" style={{ left: -1, width: 2, backgroundColor: '#e0dbd4' }} />
                                     )}
-                                    {/* Dot */}
-                                    <div className={`absolute w-2 h-2 rounded-full top-4 ${activity.isBad ? 'bg-rose-500' : 'bg-emerald-500'}`} style={{ left: '-5px' }} />
-                                    {/* Activity card */}
-                                    <div className={`ml-4 mb-3 p-3 rounded-lg border-l-4 flex-1 ${
-                                        activity.isBad
-                                            ? 'border-l-rose-500 bg-rose-50 dark:bg-rose-900/20'
-                                            : 'border-l-emerald-500 bg-emerald-50 dark:bg-emerald-900/20'
-                                    }`}>
-                                        <div className="flex items-center gap-2">
-                                            {activity.isBad && <span className="text-rose-500 text-sm">&#9888;</span>}
-                                            <span className={`text-sm font-medium ${activity.isBad ? 'text-rose-700 dark:text-rose-300' : 'text-emerald-700 dark:text-emerald-300'}`}>
-                                                {activity.label}
-                                            </span>
-                                            <span className="ml-auto text-xs text-zinc-400 dark:text-zinc-500">{activity.time} min</span>
-                                        </div>
+                                    <div className="absolute top-4 rounded-full" style={{ left: -5, width: 8, height: 8, backgroundColor: activity.isBad ? '#E85D75' : '#2A7D6F' }} />
+                                    <div className="ml-4 mb-2 flex-1 flex items-center gap-2 bg-white dark:bg-zinc-900" style={{ border: activity.isBad ? '1.5px solid #E85D75' : '1.5px solid #d0cdc8', borderLeft: activity.isBad ? '4px solid #E85D75' : undefined, borderRadius: 12, padding: '14px 16px' }}>
+                                        {activity.isBad && (
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E85D75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                                                <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+                                            </svg>
+                                        )}
+                                        <span style={{ fontSize: 14, fontWeight: 500, color: activity.isBad ? '#b33030' : '#1a1a1a' }}>{activity.label}</span>
+                                        <span style={{ marginLeft: 'auto', fontSize: 13, color: '#9e9186' }}>{activity.time} min</span>
                                     </div>
                                 </MotionDiv>
                             );
                         })}
-                        {/* End time */}
                         <div className="relative">
-                            <span className="absolute left-[-64px] top-0 text-xs font-mono font-bold text-zinc-500 dark:text-zinc-400 w-12 text-right">
-                                {formatTime(totalMinutes)}
-                            </span>
-                            <div className={`absolute w-2 h-2 rounded-full top-1 ${totalMinutes > 140 ? 'bg-rose-500' : 'bg-zinc-400'}`} style={{ left: '-5px' }} />
-                            <p className="ml-4 text-xs text-zinc-400 dark:text-zinc-500">
-                                {totalMinutes > 140
-                                    ? `Total: ${totalMinutes} min \u2014 You may be cutting it close!`
-                                    : `Total: ${totalMinutes} min`
-                                }
+                            <span className="absolute left-[-64px] top-0 text-right" style={{ fontSize: 12, fontWeight: 600, color: '#9e9186', width: 48 }}>{formatTime(totalMinutes)}</span>
+                            <div className="absolute top-1 rounded-full" style={{ left: -5, width: 8, height: 8, backgroundColor: '#d0cdc8' }} />
+                            <p className="ml-4" style={{ fontSize: 13, color: '#9e9186' }}>
+                                {totalMinutes > 140 ? `Total: ${totalMinutes} min — You may be cutting it close!` : `Total: ${totalMinutes} min`}
                             </p>
                         </div>
                     </div>
                 </div>
             )}
 
-            {/* Action buttons */}
+            {/* Buttons */}
             {sequence.length > 0 && !showFeedback && (
-                <div className="flex justify-center gap-3 mt-6">
-                    <button onClick={handleCheckPlan} className="px-5 py-2 text-sm font-bold rounded-lg bg-red-500 text-white hover:bg-red-600 transition-colors">
+                <div className="flex justify-center items-center gap-4 mt-6">
+                    <motion.button onClick={handleCheckPlan} whileTap={{ y: 3 }} className="text-white font-semibold" style={{ backgroundColor: '#2A7D6F', borderRadius: 100, padding: '13px 32px', fontSize: 15, borderBottom: '3px solid #1a5a4e', boxShadow: '0 4px 0 #1a5a4e' }}>
                         Check My Plan
-                    </button>
-                    <button onClick={handleReset} className="px-5 py-2 text-sm font-bold rounded-lg border border-zinc-300 dark:border-zinc-600 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors">
+                    </motion.button>
+                    <button onClick={handleReset} style={{ backgroundColor: '#FFFFFF', border: '2px solid #d0cdc8', borderRadius: 100, padding: '13px 24px', fontSize: 14, fontWeight: 600, color: '#7a7068' }}>
                         Start Over
                     </button>
                 </div>
@@ -337,38 +335,38 @@ const ExamDayTimelineBuilder = () => {
             {/* Feedback */}
             <AnimatePresence>
                 {showFeedback && (
-                    <MotionDiv
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.4 }}
-                        className="mt-8 space-y-4"
-                    >
+                    <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="mt-8 space-y-4">
                         {hasBadChoices && (
-                            <div className="p-4 bg-rose-50 dark:bg-rose-900/20 border border-rose-200 dark:border-rose-700 rounded-lg">
-                                <p className="text-sm font-bold text-rose-700 dark:text-rose-300 mb-2">Bad Choices Detected:</p>
+                            <div style={{ borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
+                                <p className="font-serif font-semibold mb-2" style={{ fontSize: 16, color: '#b33030' }}>Bad choices detected:</p>
                                 {sequence.filter(a => a.isBad).map(a => (
-                                    <p key={a.id} className="text-sm text-rose-600 dark:text-rose-400 ml-2">&#9888; <strong>{a.label}</strong> &mdash; {a.warning}</p>
+                                    <div key={a.id} className="flex items-start gap-2 mb-1">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E85D75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 3 }}>
+                                            <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+                                        </svg>
+                                        <p style={{ fontSize: 14, color: '#b33030' }}><strong>{a.label}</strong> — {a.warning}</p>
+                                    </div>
                                 ))}
                             </div>
                         )}
 
-                        <div className="p-4 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-700 rounded-lg">
-                            <p className="text-sm font-bold text-emerald-700 dark:text-emerald-300 mb-2">Optimal Morning Sequence:</p>
+                        <div style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
+                            <p className="font-serif font-semibold mb-2" style={{ fontSize: 16, color: '#1a6358' }}>Optimal morning sequence:</p>
                             <ol className="list-decimal list-inside space-y-1">
                                 {optimalSequence.map(a => (
-                                    <li key={a.id} className="text-sm text-emerald-600 dark:text-emerald-400">{a.label} <span className="text-zinc-400">({a.time} min)</span></li>
+                                    <li key={a.id} style={{ fontSize: 14, color: '#1a6358' }}>{a.label} <span style={{ color: '#9e9186' }}>({a.time} min)</span></li>
                                 ))}
                             </ol>
                         </div>
 
-                        <div className="p-5 bg-zinc-900 dark:bg-zinc-950 rounded-xl text-center">
-                            <p className="text-sm text-zinc-200 leading-relaxed italic">
-                                &ldquo;A calm, structured morning sets your brain up to perform at its best. A chaotic one sets it up for panic.&rdquo;
+                        <div style={{ borderLeft: '3px solid #d0cdc8', backgroundColor: '#f4f0eb', borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
+                            <p className="text-sm italic" style={{ color: '#5a5550' }}>
+                                "A calm, structured morning sets your brain up to perform at its best. A chaotic one sets it up for panic."
                             </p>
                         </div>
 
                         <div className="flex justify-center mt-4">
-                            <button onClick={handleReset} className="px-5 py-2 text-sm font-bold rounded-lg border border-zinc-300 dark:border-zinc-600 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors">
+                            <button onClick={handleReset} style={{ backgroundColor: '#FFFFFF', border: '2px solid #d0cdc8', borderRadius: 100, padding: '13px 24px', fontSize: 14, fontWeight: 600, color: '#7a7068' }}>
                                 Start Over
                             </button>
                         </div>
@@ -411,7 +409,14 @@ const LeavingCertStrategyModule: React.FC<{ onBack: () => void; progress: Module
             <ReadingSection title="How the Points Game Works." eyebrow="Step 1" icon={Calculator} theme={theme}>
               {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'leaving-cert-strategy-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
               <p>Here's the thing nobody spells out clearly enough: the Leaving Cert is a points game. Working hard matters, but working <Highlight description="It's not just about hours at the desk -- it's about putting your energy into the things that will actually move your points the most." theme={theme}>smart</Highlight> matters more. Once you know how the scoring actually works, you can make way better decisions about where to focus.</p>
-              <p>There are three rules you absolutely need to know: 1) The <Highlight description="Only your six best results count. Your seventh subject is basically a safety net -- if one exam goes badly, it gets dropped." theme={theme}>"Best Six" Rule</Highlight>, 2) The 25 <Highlight description="If you get a H6 or higher in Higher Level Maths, you get 25 extra points on top. That makes even a low pass in HL Maths worth more than top marks in many other subjects." theme={theme}>Bonus Points</Highlight> for Maths, and 3) The <Highlight description="You get 37 points just for scraping a H7 (30-39%) at Higher Level. That means trying Higher Level is way less risky than most people think." theme={theme}>H7 Safety Net</Highlight>. Get your head around these three things and you're already ahead of most students.</p>
+              <p>There are three rules you absolutely need to know. Get your head around these three things and you're already ahead of most students.</p>
+              <ConceptCardGrid
+                cards={[
+                  { number: 1, term: "The \"Best Six\" Rule", description: "Only your six best results count. Your seventh subject is basically a safety net -- if one exam goes badly, it gets dropped." },
+                  { number: 2, term: "25 Bonus Points for Maths", description: "If you get a H6 or higher in Higher Level Maths, you get 25 extra points on top. That makes even a low pass in HL Maths worth more than top marks in many other subjects." },
+                  { number: 3, term: "The H7 Safety Net", description: "You get 37 points just for scraping a H7 (30-39%) at Higher Level. That means trying Higher Level is way less risky than most people think." },
+                ]}
+              />
               <PointsCalculator />
             </ReadingSection>
           )}

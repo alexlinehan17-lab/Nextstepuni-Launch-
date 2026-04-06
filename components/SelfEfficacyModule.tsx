@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { roseTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useNorthStar } from '../hooks/useNorthStar';
 import NorthStarCallout from './NorthStarCallout';
@@ -72,120 +72,107 @@ const EfficacyRadar: React.FC = () => {
   const lowDomains = EFFICACY_DOMAINS.filter((_, i) => values[i] <= 3);
   const allHigh = values.every((v) => v >= 7);
 
+  const scoreLabel = average >= 7 ? 'Strong foundation — now let\'s make it bulletproof.' : average >= 4 ? 'Building confidence across your domains.' : 'Room to grow — this module will help.';
+
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
-        Self-Efficacy Radar
-      </h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">
-        Rate your belief in your ability across these 6 domains (1 = no confidence, 10 = total confidence).
-      </p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+      {/* Section chip + title */}
+      <div className="text-center mb-8">
+        <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)' }}>Self-Assessment</span>
+        <h4 className="font-serif text-2xl font-bold" style={{ color: '#1a1a1a' }}>Self-Efficacy Radar</h4>
+        <p className="text-sm mt-1 max-w-md mx-auto" style={{ color: '#7a7068' }}>
+          Rate your belief in your ability across these 6 domains (1 = no confidence, 10 = total confidence).
+        </p>
+      </div>
 
-      {/* Radar Chart */}
+      {/* Radar Chart — in a bordered card */}
       <div className="flex justify-center mb-8">
-        <svg
-          viewBox={`0 0 ${size} ${size}`}
-          className="w-full max-w-xs"
-          style={{ overflow: 'visible' }}
-        >
-          {/* Grid hexagons */}
-          {[0.33, 0.66, 1].map((scale) => (
-            <polygon
-              key={scale}
-              points={hexagonPoints(maxR * scale)}
-              fill="none"
-              stroke="currentColor"
-              className="text-zinc-200 dark:text-zinc-600"
-              strokeWidth="1"
+        <div className="bg-white dark:bg-zinc-900 p-6 inline-block" style={{ border: '2px solid #1a1a1a', borderRadius: 16 }}>
+          <svg
+            viewBox={`0 0 ${size} ${size}`}
+            className="w-full max-w-xs"
+            style={{ overflow: 'visible' }}
+          >
+            {/* Grid hexagons — alternating warm tints */}
+            {[0.33, 0.66, 1].map((scale, gi) => (
+              <polygon
+                key={scale}
+                points={hexagonPoints(maxR * scale)}
+                fill={gi % 2 === 0 ? 'rgba(42,125,111,0.04)' : 'rgba(42,125,111,0.02)'}
+                stroke="#e0dbd4"
+                strokeWidth="1.5"
+              />
+            ))}
+
+            {/* Axis lines */}
+            {Array.from({ length: 6 }, (_, i) => {
+              const pt = pointOnHex(i, maxR);
+              return (
+                <line key={i} x1={cx} y1={cy} x2={pt.x} y2={pt.y} stroke="#e0dbd4" strokeWidth="1" />
+              );
+            })}
+
+            {/* Data polygon — teal */}
+            <MotionPolygon
+              points={dataPoints}
+              fill="rgba(42,125,111,0.18)"
+              stroke="#2A7D6F"
+              strokeWidth="2.5"
+              strokeLinejoin="round"
+              initial={false}
+              animate={{ points: dataPoints }}
+              transition={{ type: 'spring', stiffness: 200, damping: 20 }}
             />
-          ))}
 
-          {/* Axis lines */}
-          {Array.from({ length: 6 }, (_, i) => {
-            const pt = pointOnHex(i, maxR);
-            return (
-              <line
+            {/* Data point dots — teal with white stroke */}
+            {values.map((v, i) => {
+              const r = (v / 10) * maxR;
+              const pt = pointOnHex(i, r);
+              return (
+                <circle key={i} cx={pt.x} cy={pt.y} r="5" fill="#2A7D6F" stroke="#fff" strokeWidth="2" />
+              );
+            })}
+
+            {/* Labels — warm muted */}
+            {labelPositions.map((pt, i) => (
+              <text
                 key={i}
-                x1={cx}
-                y1={cy}
-                x2={pt.x}
-                y2={pt.y}
-                stroke="currentColor"
-                className="text-zinc-200 dark:text-zinc-600"
-                strokeWidth="0.5"
-              />
-            );
-          })}
-
-          {/* Data polygon */}
-          <MotionPolygon
-            points={dataPoints}
-            fill="rgba(225,29,72,0.15)"
-            stroke="#e11d48"
-            strokeWidth="2"
-            initial={false}
-            animate={{ points: dataPoints }}
-            transition={{ type: 'spring', stiffness: 200, damping: 20 }}
-          />
-
-          {/* Data point dots */}
-          {values.map((v, i) => {
-            const r = (v / 10) * maxR;
-            const pt = pointOnHex(i, r);
-            return (
-              <circle
-                key={i}
-                cx={pt.x}
-                cy={pt.y}
-                r="4"
-                fill="#e11d48"
-              />
-            );
-          })}
-
-          {/* Labels */}
-          {labelPositions.map((pt, i) => (
-            <text
-              key={i}
-              x={pt.x}
-              y={pt.y}
-              textAnchor="middle"
-              dominantBaseline="middle"
-              className="fill-zinc-600 dark:fill-zinc-300"
-              fontSize="9"
-              fontWeight="500"
-            >
-              {EFFICACY_DOMAINS[i].length > 20
-                ? EFFICACY_DOMAINS[i].split(' ').reduce<string[]>((lines, word) => {
-                    const current = lines[lines.length - 1];
-                    if (current && (current + ' ' + word).length <= 18) {
-                      lines[lines.length - 1] = current + ' ' + word;
-                    } else {
-                      lines.push(word);
-                    }
-                    return lines;
-                  }, []).map((line, li) => (
-                    <tspan key={li} x={pt.x} dy={li === 0 ? '0' : '1.1em'}>
-                      {line}
-                    </tspan>
-                  ))
-                : EFFICACY_DOMAINS[i]}
-            </text>
-          ))}
-        </svg>
+                x={pt.x}
+                y={pt.y}
+                textAnchor="middle"
+                dominantBaseline="middle"
+                fill="#5a5550"
+                fontSize="10"
+                fontWeight="500"
+              >
+                {EFFICACY_DOMAINS[i].length > 20
+                  ? EFFICACY_DOMAINS[i].split(' ').reduce<string[]>((lines, word) => {
+                      const current = lines[lines.length - 1];
+                      if (current && (current + ' ' + word).length <= 18) {
+                        lines[lines.length - 1] = current + ' ' + word;
+                      } else {
+                        lines.push(word);
+                      }
+                      return lines;
+                    }, []).map((line, li) => (
+                      <tspan key={li} x={pt.x} dy={li === 0 ? '0' : '1.1em'}>
+                        {line}
+                      </tspan>
+                    ))
+                  : EFFICACY_DOMAINS[i]}
+              </text>
+            ))}
+          </svg>
+        </div>
       </div>
 
       {/* Sliders */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 max-w-2xl mx-auto mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 max-w-2xl mx-auto mb-8">
         {EFFICACY_DOMAINS.map((domain, i) => (
           <div key={domain}>
-            <div className="flex justify-between items-baseline mb-1">
-              <label className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
-                {domain}
-              </label>
-              <span className="text-sm font-bold text-rose-600 dark:text-rose-400 tabular-nums">
-                {values[i]}
-              </span>
+            <div className="flex justify-between items-baseline mb-1.5">
+              <label className="text-[15px] font-medium" style={{ color: '#1a1a1a' }}>{domain}</label>
+              <span className="text-sm font-bold tabular-nums" style={{ color: '#2A7D6F' }}>{values[i]}</span>
             </div>
             <input
               type="range"
@@ -197,18 +184,17 @@ const EfficacyRadar: React.FC = () => {
                 next[i] = Number(e.target.value);
                 setValues(next);
               }}
-              className="w-full h-2 rounded-lg appearance-none cursor-pointer bg-zinc-200 dark:bg-zinc-600 accent-rose-500"
+              className="chunky-slider chunky-slider-teal"
             />
           </div>
         ))}
       </div>
 
-      {/* Score & Insight */}
-      <div className="text-center">
-        <p className="text-lg font-semibold text-zinc-800 dark:text-white">
-          Self-Efficacy Score:{' '}
-          <span className="text-rose-600 dark:text-rose-400">{average.toFixed(1)}/10</span>
-        </p>
+      {/* Score card */}
+      <div className="max-w-xs mx-auto bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: '20px 28px' }}>
+        <p className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: '#9e9186', letterSpacing: '0.1em' }}>Your Self-Efficacy Score</p>
+        <p className="font-serif font-bold mt-1" style={{ fontSize: 48, color: '#2A7D6F', lineHeight: 1.1 }}>{average.toFixed(1)}</p>
+        <p className="text-[13px] mt-1" style={{ color: '#9e9186' }}>{scoreLabel}</p>
         {lowDomains.length > 0 && (
           <motion.p
             key={lowDomains.join(',')}
@@ -219,15 +205,6 @@ const EfficacyRadar: React.FC = () => {
             Your belief in <span className="font-bold">{lowDomains[0]}</span> is low — this module will show you how to build it up.
           </motion.p>
         )}
-        {allHigh && lowDomains.length === 0 && (
-          <motion.p
-            initial={{ opacity: 0, y: 4 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="mt-3 text-sm text-emerald-700 dark:text-emerald-400 font-semibold"
-          >
-            Strong foundation — now let's make it bulletproof.
-          </motion.p>
-        )}
       </div>
     </div>
   );
@@ -235,18 +212,18 @@ const EfficacyRadar: React.FC = () => {
 const RoleModelSelector = () => {
     const [choice, setChoice] = useState<null | 'mastery' | 'coping'>(null);
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Which Story Builds More Belief?</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">You're struggling with a subject. Which of these role models is more helpful?</p>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <button onClick={() => setChoice('mastery')} className={`p-6 rounded-xl text-left border flex flex-col justify-between h-48 ${choice === 'mastery' ? 'bg-blue-500 text-white border-blue-500' : 'bg-zinc-50 hover:bg-zinc-100 dark:hover:bg-zinc-700 border-zinc-200 dark:border-zinc-700'}`}>
+                <button onClick={() => setChoice('mastery')} className="p-6 rounded-xl text-left flex flex-col justify-between h-48" style={{ backgroundColor: choice === 'mastery' ? '#FCA5A5' : '#FFFFFF', border: `2.5px solid ${choice === 'mastery' ? '#DC2626' : '#1C1917'}`, borderRadius: 14, boxShadow: choice === 'mastery' ? 'none' : '3px 3px 0px 0px #1C1917', color: choice === 'mastery' ? '#7F1D1D' : '#1C1917' }}>
                     <div>
                         <p className="font-bold text-lg">The Genius (Mastery Model)</p>
                         <p className="text-xs mt-1">A past pupil who got 625 points, found school easy, and is now a doctor.</p>
                     </div>
                     <p className="text-xs font-mono self-end">"Just work hard."</p>
                 </button>
-                 <button onClick={() => setChoice('coping')} className={`p-6 rounded-xl text-left border flex flex-col justify-between h-48 ${choice === 'coping' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-zinc-50 hover:bg-zinc-100 dark:hover:bg-zinc-700 border-zinc-200 dark:border-zinc-700'}`}>
+                 <button onClick={() => setChoice('coping')} className="p-6 rounded-xl text-left flex flex-col justify-between h-48" style={{ backgroundColor: choice === 'coping' ? '#6EE7B7' : '#FFFFFF', border: `2.5px solid ${choice === 'coping' ? '#059669' : '#1C1917'}`, borderRadius: 14, boxShadow: choice === 'coping' ? 'none' : '3px 3px 0px 0px #1C1917', color: choice === 'coping' ? '#064E3B' : '#1C1917' }}>
                     <div>
                         <p className="font-bold text-lg">The Grafter (Coping Model)</p>
                         <p className="text-xs mt-1">A past pupil who failed their mocks, changed their study habits, and got into their dream course.</p>
@@ -259,29 +236,93 @@ const RoleModelSelector = () => {
     );
 };
 
+const ICEBERG_SUGGESTIONS = ['Failed attempts', 'Asking for help', 'Late nights', 'Boring repetition', 'Self-doubt pushed through'];
+
 const IcebergInteractive = () => {
     const [inputs, setInputs] = useState<string[]>([]);
+    const [textVal, setTextVal] = useState('');
+
+    const addItem = (text: string) => {
+      const trimmed = text.trim();
+      if (trimmed) setInputs(prev => [...prev, trimmed]);
+    };
+
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Success Iceberg</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Success is what people see. Process is what it takes. List the "invisible" parts of success.</p>
-            <div className="max-w-md mx-auto">
-                <div className="bg-blue-100 dark:bg-blue-900/30 p-4 rounded-t-2xl text-center font-bold text-blue-800 dark:text-blue-300">Visible Success</div>
-                <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-b-2xl border-x-2 border-b-2 border-blue-200 dark:border-blue-800 min-h-[150px]">
-                    <p className="text-sm font-bold text-zinc-600 dark:text-zinc-300 mb-2">Invisible Process:</p>
-                    <ul className="list-disc list-inside text-sm text-zinc-500 dark:text-zinc-400 space-y-1">
-                        {inputs.map((input, i) => <li key={i}>{input}</li>)}
-                    </ul>
-                     <input
+        <div className="my-10">
+            {/* Section chip + title */}
+            <div className="text-center mb-6">
+                <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)' }}>Reflection Activity</span>
+                <h4 className="font-serif text-2xl font-bold" style={{ color: '#1a1a1a' }}>The Success Iceberg</h4>
+                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Success is what people see. Process is what it takes.</p>
+            </div>
+
+            {/* Iceberg card */}
+            <div className="max-w-lg mx-auto overflow-hidden" style={{ border: '2px solid #1a1a1a', borderRadius: 16 }}>
+
+                {/* TOP: Above the waterline — sky */}
+                <div className="flex flex-col items-center justify-center text-center" style={{ backgroundColor: '#dbeafe', padding: '24px 28px', minHeight: 140 }}>
+                    <span className="text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: '#bfdbfe', color: '#1e40af', borderRadius: 20, padding: '3px 10px' }}>Above the waterline</span>
+                    <p className="font-serif font-bold text-xl" style={{ color: '#1e3a8a' }}>Visible Success</p>
+                    <p className="text-[13px] mt-1" style={{ color: '#3b82f6' }}>The result people see and celebrate</p>
+                </div>
+
+                {/* WATERLINE */}
+                <div className="relative" style={{ height: 3, background: 'linear-gradient(to right, #93c5fd, #2A7D6F)' }}>
+                    <span className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] bg-white px-2" style={{ color: '#5a5550' }}>~ waterline ~</span>
+                </div>
+
+                {/* BOTTOM: Below the waterline */}
+                <div style={{ backgroundColor: '#F8F8F8', padding: '24px 28px', minHeight: 220 }}>
+                    <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: 'rgba(42,125,111,0.1)', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '3px 10px' }}>Below the waterline</span>
+                    <p className="font-serif font-bold text-lg" style={{ color: '#1a1a1a' }}>The Invisible Process</p>
+                    <p className="text-xs mb-4" style={{ color: '#7a7068' }}>What actually made it happen — that nobody sees</p>
+
+                    {/* Entered items */}
+                    {inputs.length > 0 && (
+                        <div className="flex flex-wrap gap-2 mb-4">
+                            {inputs.map((input, i) => (
+                                <span key={i} className="text-[13px] font-medium" style={{ backgroundColor: 'rgba(42,125,111,0.1)', border: '1.5px solid rgba(42,125,111,0.25)', color: '#1a6358', borderRadius: 20, padding: '4px 12px' }}>{input}</span>
+                            ))}
+                        </div>
+                    )}
+
+                    {/* Input */}
+                    <input
+                        value={textVal}
+                        onChange={(e) => setTextVal(e.target.value)}
                         placeholder="e.g., failed attempts, asking for help..."
-                        className="w-full mt-4 p-2 text-sm bg-white dark:bg-zinc-800 border border-zinc-300 rounded-md"
+                        className="w-full text-sm outline-none"
+                        style={{
+                            backgroundColor: '#FFFFFF',
+                            border: '1.5px solid #E7E5E4',
+                            borderRadius: 12,
+                            padding: '14px 16px',
+                            color: '#1a1a1a',
+                            fontSize: 14,
+                        }}
+                        onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }}
+                        onBlur={(e) => { e.currentTarget.style.borderColor = '#E7E5E4'; }}
                         onKeyDown={(e) => {
-                            if (e.key === 'Enter' && e.currentTarget.value) {
-                                setInputs([...inputs, e.currentTarget.value]);
-                                e.currentTarget.value = '';
+                            if (e.key === 'Enter' && textVal.trim()) {
+                                addItem(textVal);
+                                setTextVal('');
                             }
                         }}
                     />
+
+                    {/* Suggestion chips */}
+                    <div className="flex flex-wrap gap-1.5 mt-3">
+                        {ICEBERG_SUGGESTIONS.filter(s => !inputs.includes(s)).map(s => (
+                            <button
+                                key={s}
+                                onClick={() => addItem(s)}
+                                className="text-xs transition-opacity hover:opacity-80"
+                                style={{ backgroundColor: 'rgba(42,125,111,0.08)', border: '1px solid rgba(42,125,111,0.2)', color: '#1a6358', borderRadius: 20, padding: '4px 10px' }}
+                            >
+                              + {s}
+                            </button>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
@@ -329,7 +370,15 @@ const SelfEfficacyModule: React.FC<{ onBack: () => void; progress: ModuleProgres
           {activeSection === 1 && (
             <ReadingSection title="How Belief is Built." eyebrow="Step 2" icon={Target} theme={theme}>
                 <p>So where does this belief come from? It's not magic, and it's not something you're born with. It comes from four main places. Once you know what they are, you can actually start building it on purpose.</p>
-                <p>The four sources are: 1) <Highlight description="The strongest way to build belief in yourself — by actually doing the thing and seeing it work. Even tiny wins count here." theme={theme}>Enactive Mastery</Highlight> (your own wins), 2) <Highlight description="When you see someone like you pull it off, your brain goes 'well, if they managed it, maybe I can too.' That feeling is gold." theme={theme}>Vicarious Experience</Highlight> (watching others win), 3) Social Persuasion (real encouragement), and 4) Physiological States (learning to read your body's signals). For students who haven't had a long history of easy wins, the second source—Vicarious Experience—is the most important lever we can pull.</p>
+                <ConceptCardGrid
+                  cards={[
+                    { number: 1, term: "Enactive Mastery", description: "Your own wins — even small ones. Every time you push through something hard, your brain logs it as evidence you can do it again." },
+                    { number: 2, term: "Vicarious Experience", description: "Watching others like you succeed. When you see someone similar to you win, your brain thinks: if they can do it, maybe I can too.", highlight: true },
+                    { number: 3, term: "Social Persuasion", description: "Real encouragement from people who believe in you. Not empty praise — specific feedback that tells you what you're actually capable of." },
+                    { number: 4, term: "Physiological States", description: "Learning to read your body's signals. Nervous energy before an exam isn't weakness — it's your body preparing to perform." },
+                  ]}
+                  accentNote="For students who haven't had a long history of easy wins, Vicarious Experience is the most important lever we can pull."
+                />
             </ReadingSection>
           )}
           {activeSection === 2 && (

@@ -43,11 +43,11 @@ const ProcrastinationEquation = () => {
       return `Your motivation is ${level} because ${issues.join(' and ')}.`;
     };
 
-    const levers: { key: keyof typeof vars; label: string; desc: string; icon: React.ReactNode; good: boolean }[] = [
-      { key: 'E', label: 'Expectancy', desc: 'Belief you can succeed', icon: <span className="font-bold text-lg text-emerald-500">E</span>, good: true },
-      { key: 'V', label: 'Value', desc: 'How rewarding it feels', icon: <span className="font-bold text-lg text-emerald-500">V</span>, good: true },
-      { key: 'I', label: 'Impulsiveness', desc: 'Distraction susceptibility', icon: <span className="font-bold text-lg text-rose-500">I</span>, good: false },
-      { key: 'D', label: 'Delay', desc: 'Distance to deadline', icon: <span className="font-bold text-lg text-rose-500">D</span>, good: false },
+    const levers: { key: keyof typeof vars; label: string; desc: string; letter: string; good: boolean }[] = [
+      { key: 'E', label: 'Expectancy', desc: 'Belief you can succeed', letter: 'E', good: true },
+      { key: 'V', label: 'Value', desc: 'How rewarding it feels', letter: 'V', good: true },
+      { key: 'I', label: 'Impulsiveness', desc: 'Distraction susceptibility', letter: 'I', good: false },
+      { key: 'D', label: 'Delay', desc: 'Distance to deadline', letter: 'D', good: false },
     ];
 
     // Ring gauge
@@ -56,11 +56,11 @@ const ProcrastinationEquation = () => {
     const offset = circumference - (pct / 100) * circumference;
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Procrastination Equation</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Adjust the four levers to see what drives — or kills — your motivation.</p>
-            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-8">
-              <span className="text-emerald-500 font-semibold">Green levers</span> boost motivation. <span className="text-rose-500 font-semibold">Red levers</span> drain it.
+            <p className="text-center text-xs mb-8" style={{ color: '#7a7068' }}>
+              <span className="font-semibold" style={{ color: '#2A7D6F' }}>E and V</span> boost motivation. <span className="font-semibold" style={{ color: '#1a1a1a' }}>I and D</span> drain it.
             </p>
 
             {/* Gauge */}
@@ -96,37 +96,58 @@ const ProcrastinationEquation = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
               {levers.map(lever => {
                 const val = vars[lever.key];
-                const barColor = lever.good
-                  ? 'bg-emerald-500'
-                  : 'bg-rose-500';
-                const trackBg = lever.good
-                  ? 'bg-emerald-100 dark:bg-emerald-900/30'
-                  : 'bg-rose-100 dark:bg-rose-900/30';
-                const direction = lever.good ? '↑ Increase' : '↓ Decrease';
+                const isPositive = lever.good;
+                const direction = isPositive ? '↑ Increase' : '↓ Decrease';
 
                 return (
-                  <div key={lever.key} className="flex flex-col items-center p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-100 dark:border-zinc-800">
-                    <div className="mb-2">{lever.icon}</div>
-                    <p className="text-xs font-bold text-zinc-700 dark:text-zinc-200 text-center">{lever.label}</p>
-                    <p className="text-[10px] text-zinc-400 dark:text-zinc-500 text-center mb-3">{lever.desc}</p>
+                  <div
+                    key={lever.key}
+                    className="flex flex-col items-center bg-white dark:bg-zinc-900"
+                    style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: '20px 16px' }}
+                  >
+                    {/* Letter */}
+                    <p className="font-serif font-bold" style={{ fontSize: 32, color: isPositive ? '#2A7D6F' : '#1a1a1a' }}>{lever.letter}</p>
+                    {/* Term */}
+                    <p className="text-xs font-bold text-center mt-1" style={{ color: '#1a1a1a' }}>{lever.label}</p>
+                    {/* Description */}
+                    <p className="text-[10px] text-center mb-0" style={{ color: '#7a7068' }}>{lever.desc}</p>
 
-                    {/* Vertical bar gauge */}
-                    <div className={`w-6 h-24 rounded-full ${trackBg} relative overflow-hidden mb-2`}>
-                      <motion.div
-                        className={`absolute bottom-0 w-full rounded-full ${barColor}`}
-                        animate={{ height: `${val}%` }}
-                        transition={{ type: 'spring', damping: 15, stiffness: 100 }}
+                    {/* Vertical bar — standalone block, no overlap */}
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '16px 0 12px' }}>
+                      <div style={{
+                        width: 32,
+                        height: 120,
+                        backgroundColor: isPositive ? '#d1fae5' : '#fee2e2',
+                        borderRadius: 16,
+                        position: 'relative',
+                        overflow: 'hidden',
+                      }}>
+                        <motion.div
+                          style={{
+                            position: 'absolute',
+                            bottom: 0,
+                            left: 0,
+                            right: 0,
+                            backgroundColor: isPositive ? '#2A7D6F' : '#E85D75',
+                            borderRadius: 16,
+                          }}
+                          animate={{ height: `${val}%` }}
+                          transition={{ type: 'spring', damping: 15, stiffness: 100 }}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Slider — clearly below the bar */}
+                    <div style={{ width: '100%', padding: '0 4px', marginBottom: 8 }}>
+                      <input
+                        type="range" min="1" max="100" value={val}
+                        onChange={e => setVars({...vars, [lever.key]: parseInt(e.target.value)})}
+                        className="chunky-slider chunky-slider-teal"
                       />
                     </div>
 
-                    {/* Slider (hidden native, custom track above) */}
-                    <input
-                      type="range" min="1" max="100" value={val}
-                      onChange={e => setVars({...vars, [lever.key]: parseInt(e.target.value)})}
-                      className="w-full h-1.5 appearance-none rounded-full bg-zinc-200 dark:bg-zinc-700 cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-zinc-600 [&::-webkit-slider-thumb]:dark:bg-zinc-300 [&::-webkit-slider-thumb]:shadow-md"
-                    />
-
-                    <p className={`text-[9px] font-bold mt-2 ${lever.good ? 'text-emerald-500' : 'text-rose-500'}`}>{direction}</p>
+                    {/* Direction label */}
+                    <p className="text-xs font-semibold" style={{ color: isPositive ? '#2A7D6F' : '#7a7068' }}>{direction}</p>
                   </div>
                 );
               })}
@@ -138,9 +159,10 @@ const ProcrastinationEquation = () => {
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
-              className="p-4 bg-zinc-900 dark:bg-zinc-900 rounded-xl text-sm text-white"
+              className="p-4 rounded-xl text-sm"
+              style={level === 'high' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : level === 'medium' ? { backgroundColor: '#FDE68A', border: '2.5px solid #D97706', boxShadow: '3px 3px 0px 0px #D97706', color: '#78350F' } : { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' }}
             >
-              <p><span className={`font-bold ${levelColor}`}>Diagnosis:</span> {getDiagnosis()}</p>
+              <p><span className="font-bold">Diagnosis:</span> {getDiagnosis()}</p>
             </motion.div>
         </div>
     );
@@ -167,7 +189,7 @@ const IfThenAutopilot = () => {
     const bothFilled = ifText.trim().length > 0 && thenText.trim().length > 0;
 
     return(
-         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "If-Then" Autopilot</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Pre-load a decision to bypass willpower. Fill in both fields or pick a template below.</p>
 
@@ -189,7 +211,8 @@ const IfThenAutopilot = () => {
                   type="text" value={ifText}
                   onChange={e => { setIfText(e.target.value); setSubmitted(false); }}
                   placeholder="e.g. I open Instagram during study time"
-                  className="w-full p-3 bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-700 rounded-xl text-sm text-zinc-800 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:border-orange-400"
+                  className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all"
+                  style={{ border: '1.5px solid #E7E5E4' }}
                 />
               </div>
               <div>
@@ -198,7 +221,8 @@ const IfThenAutopilot = () => {
                   type="text" value={thenText}
                   onChange={e => { setThenText(e.target.value); setSubmitted(false); }}
                   placeholder="e.g. I will close the app and do one practice question"
-                  className="w-full p-3 bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-700 rounded-xl text-sm text-zinc-800 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:border-orange-400"
+                  className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all"
+                  style={{ border: '1.5px solid #E7E5E4' }}
                 />
               </div>
             </div>
@@ -216,15 +240,16 @@ const IfThenAutopilot = () => {
               {submitted && bothFilled && (
                 <motion.div
                   initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }}
-                  className="mt-6 p-5 bg-zinc-900 dark:bg-zinc-900 rounded-xl border border-zinc-700"
+                  className="mt-6 p-5 rounded-xl"
+                  style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669' }}
                 >
-                  <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2 text-center">Your Autopilot Plan</p>
-                  <p className="text-white text-center text-sm leading-relaxed">
-                    <span className="font-bold text-orange-400">IF</span>{' '}
-                    <span className="text-rose-400">{ifText}</span>
-                    <span className="mx-2 text-zinc-500">&rarr;</span>
-                    <span className="font-bold text-orange-400">THEN</span>{' '}
-                    <span className="text-emerald-400">{thenText}</span>
+                  <p className="text-xs font-bold uppercase tracking-wider mb-2 text-center" style={{ color: '#065F46' }}>Your Autopilot Plan</p>
+                  <p className="text-center text-sm leading-relaxed" style={{ color: '#064E3B' }}>
+                    <span className="font-bold" style={{ color: '#065F46' }}>IF</span>{' '}
+                    <span className="font-semibold">{ifText}</span>
+                    <span className="mx-2">&rarr;</span>
+                    <span className="font-bold" style={{ color: '#065F46' }}>THEN</span>{' '}
+                    <span className="font-semibold">{thenText}</span>
                   </p>
                 </motion.div>
               )}
@@ -253,7 +278,7 @@ const GuiltSpiral = () => {
     }
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Guilt Spiral</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">"Tough love" doesn't work. It just adds more negative emotion to the fire. Try both buttons to see the difference.</p>
              <div className="grid grid-cols-2 gap-6 mb-8">
@@ -394,7 +419,7 @@ const GuiltSpiralComparison = () => {
     );
 
     return (
-        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Guilt Divergence</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Same procrastination event. Two completely different outcomes.</p>
 
@@ -445,37 +470,88 @@ const CircuitBreaker = () => {
     const containsAction = actionWords.some(w => lower.includes(w));
     const containsCompassion = compassionWords.some(w => lower.includes(w));
 
+    const allDetected = containsForgiveness && containsAction && containsCompassion;
+    const qualities = [
+      { label: 'Self-Forgiveness', detected: containsForgiveness },
+      { label: 'Forward Action', detected: containsAction },
+      { label: 'Self-Compassion', detected: containsCompassion },
+    ];
+
     return(
-         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Circuit Breaker</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Rewrite this self-critical thought into a self-forgiving, action-oriented statement.</p>
-            <p className="p-4 bg-rose-50 dark:bg-rose-900/20 border border-rose-200 dark:border-rose-800 rounded-xl text-center font-mono text-rose-800 dark:text-rose-300 mb-4">"I'm so useless, I wasted the whole day."</p>
-            <textarea value={reframe} onChange={e => setReframe(e.target.value)} placeholder="Your new script..." className="w-full h-24 p-4 bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-700 rounded-xl text-zinc-800 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:border-orange-400" />
-            <div className="mt-4 flex flex-wrap gap-2">
-                <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border transition-colors ${
-                    containsForgiveness
-                        ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700'
-                        : 'bg-zinc-100 dark:bg-zinc-900/30 text-zinc-400 dark:text-zinc-500 border-zinc-200 dark:border-zinc-700'
-                }`}>
-                    <span className={`w-2 h-2 rounded-full ${containsForgiveness ? 'bg-emerald-500' : 'bg-zinc-300 dark:bg-zinc-600'}`} />
-                    Self-Forgiveness {containsForgiveness ? '' : '(not yet detected)'}
-                </span>
-                <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border transition-colors ${
-                    containsAction
-                        ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700'
-                        : 'bg-zinc-100 dark:bg-zinc-900/30 text-zinc-400 dark:text-zinc-500 border-zinc-200 dark:border-zinc-700'
-                }`}>
-                    <span className={`w-2 h-2 rounded-full ${containsAction ? 'bg-emerald-500' : 'bg-zinc-300 dark:bg-zinc-600'}`} />
-                    Forward Action {containsAction ? '' : '(not yet detected)'}
-                </span>
-                <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border transition-colors ${
-                    containsCompassion
-                        ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700'
-                        : 'bg-zinc-100 dark:bg-zinc-900/30 text-zinc-400 dark:text-zinc-500 border-zinc-200 dark:border-zinc-700'
-                }`}>
-                    <span className={`w-2 h-2 rounded-full ${containsCompassion ? 'bg-emerald-500' : 'bg-zinc-300 dark:bg-zinc-600'}`} />
-                    Self-Compassion {containsCompassion ? '' : '(not yet detected)'}
-                </span>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-bold text-center" style={{ color: '#1a1a1a' }}>The Circuit Breaker</h4>
+            <p className="text-center text-sm mt-1 mb-8" style={{ color: '#7a7068' }}>Rewrite this self-critical thought into something kinder and more action-focused.</p>
+
+            {/* Section 1 — Negative thought */}
+            <div className="bg-white dark:bg-zinc-900 max-w-lg mx-auto" style={{ border: '2px solid #1a1a1a', borderRadius: 14, borderLeft: '4px solid #E85D75', padding: '20px 24px' }}>
+              <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: '#fde4e4', color: '#b33030', borderRadius: 20, padding: '3px 10px' }}>Self-critical thought</span>
+              <p className="font-serif italic" style={{ fontSize: 18, color: '#1a1a1a' }}>I'm so useless, I wasted the whole day.</p>
+            </div>
+
+            {/* Transformation connector */}
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '16px 0' }}>
+              <div style={{ width: 2, height: 20, background: '#d0cdc8' }} />
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, background: '#e8f5f2', border: '1.5px solid rgba(42,125,111,0.3)', borderRadius: 20, padding: '6px 14px' }}>
+                <span style={{ fontSize: 12, fontWeight: 700, color: '#1a6358', letterSpacing: '0.05em' }}>REWRITE IT</span>
+              </div>
+              <div style={{ width: 2, height: 20, background: '#d0cdc8' }} />
+              <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
+                <path d="M1 1L8 8L15 1" stroke="#2A7D6F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+
+            {/* Section 2 — Rewrite textarea */}
+            <div className="max-w-lg mx-auto" style={{ backgroundColor: '#f0faf8', border: '2px solid #2A7D6F', borderRadius: 14, padding: 20 }}>
+              <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-3" style={{ backgroundColor: '#d0ede8', color: '#1a6358', borderRadius: 20, padding: '3px 10px' }}>Your rewrite</span>
+              <textarea
+                value={reframe}
+                onChange={e => setReframe(e.target.value)}
+                placeholder="Rewrite this into something kinder and more action-focused..."
+                className="w-full outline-none font-serif"
+                style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '14px 16px', fontSize: 15, color: '#1a1a1a', lineHeight: 1.6, minHeight: 100, resize: 'none' }}
+                onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }}
+                onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }}
+              />
+
+              {/* Section 3 — Quality detection chips */}
+              <p className="text-[10px] font-semibold uppercase tracking-wider mt-4 mb-2" style={{ color: '#9e9186', letterSpacing: '0.08em' }}>Qualities detected in your rewrite</p>
+              <div className="flex flex-wrap gap-2">
+                {qualities.map(q => (
+                  <motion.span
+                    key={q.label}
+                    animate={q.detected ? { scale: [1, 1.05, 1] } : {}}
+                    transition={{ duration: 0.3 }}
+                    className="inline-flex items-center gap-2"
+                    style={{
+                      backgroundColor: q.detected ? '#e8f5f2' : '#FFFFFF',
+                      border: q.detected ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+                      borderRadius: 20,
+                      padding: '8px 16px',
+                    }}
+                  >
+                    <span className="w-2 h-2 rounded-full" style={{ backgroundColor: q.detected ? '#2A7D6F' : '#d0cdc8' }} />
+                    <span className="text-[13px] font-semibold" style={{ color: q.detected ? '#1a6358' : '#b0a898' }}>
+                      {q.detected && <span style={{ color: '#2A7D6F', fontWeight: 700, marginRight: 4 }}>✓</span>}
+                      {q.label}
+                    </span>
+                  </motion.span>
+                ))}
+              </div>
+
+              {/* Completion state */}
+              {allDetected && (
+                <motion.div
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  style={{ marginTop: 16, background: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '16px 20px', display: 'flex', alignItems: 'center', gap: 12 }}
+                >
+                  <div style={{ width: 36, height: 36, borderRadius: '50%', background: '#2A7D6F', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontSize: 18, color: 'white' }}>✓</div>
+                  <div>
+                    <p style={{ fontSize: 14, fontWeight: 700, color: '#1a6358', marginBottom: 2 }}>Circuit broken.</p>
+                    <p style={{ fontSize: 13, color: '#2A7D6F' }}>You rewrote a harmful thought into something that actually helps you move forward.</p>
+                  </div>
+                </motion.div>
+              )}
             </div>
         </div>
     );
@@ -526,7 +602,36 @@ const ProcrastinationModule: React.FC<{ onBack: () => void; progress: ModuleProg
           {activeSection === 2 && (
             <ReadingSection title="The Procrastination Equation." eyebrow="Step 3" icon={Calculator} theme={theme}>
               <p>There's actually a formula that explains procrastination: <Highlight description="Your motivation comes down to four things you can actually control: how confident you feel, how much the task matters to you, how easily you get distracted, and how far away the deadline is." theme={theme}>Motivation = (Expectancy x Value) / (Impulsiveness x Delay)</Highlight>. This gives you four levers to pull.</p>
-              <p><strong>Expectancy:</strong> Your belief you can succeed. Low confidence = high procrastination. <strong>Value:</strong> How rewarding or meaningful the task feels. <strong>Impulsiveness:</strong> Your susceptibility to distractions. <strong>Delay:</strong> How far away the deadline is. A task that is boring, feels impossible, is easily interrupted, and has a distant deadline is a recipe for maximum procrastination.</p>
+              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>E</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Expectancy</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>Your belief you can succeed. Low confidence = high procrastination.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>V</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Value</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>How rewarding or meaningful the task feels.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>I</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Impulsiveness</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>Your susceptibility to distractions.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 16, boxShadow: '4px 4px 0px 0px #059669' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#059669' }}>D</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#064E3B' }}>Delay</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#064E3B', opacity: 0.8 }}>How far away the deadline is. A task that is boring, feels impossible, is easily interrupted, and has a distant deadline is a recipe for maximum procrastination.</p>
+                  </div>
+                </div>
+              </div>
               <ProcrastinationEquation />
             </ReadingSection>
           )}

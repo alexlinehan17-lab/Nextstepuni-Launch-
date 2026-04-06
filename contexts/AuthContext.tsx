@@ -119,22 +119,15 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
               setLoadedData({ ...defaultLoadedData, needsOnboarding: true });
             }
           } else {
-            // Orphaned auth — recover
-            try {
-              const recoveredName = firebaseUser.email?.split('@')[0] || 'Student';
-              await setDoc(doc(db, 'users', firebaseUser.uid), {
-                name: recoveredName, avatar: 'Charlie', school: '',
-              });
-              setUser({ uid: firebaseUser.uid, name: recoveredName, avatar: 'Charlie', isAdmin: false });
-              setLoadedData({ ...defaultLoadedData, needsOnboarding: true });
-            } catch {
-              await signOut(auth);
-              setUser(null);
-              setLoadedData({ ...defaultLoadedData });
-            }
+            // No user doc — this account may have been deleted by a GC/admin.
+            // Sign them out rather than auto-recovering.
+            console.warn('[Auth] No user doc found for authenticated user — signing out.');
+            await signOut(auth);
+            setUser(null);
+            setLoadedData({ ...defaultLoadedData });
           }
         } catch (error) {
-          console.error('Error fetching user data:', error);
+          console.error('Error fetching user data:');
           const fallbackName = firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Student';
           setUser({ uid: firebaseUser.uid, name: fallbackName, avatar: 'Charlie', isAdmin: false });
           setLoadedData({ ...defaultLoadedData, needsOnboarding: true });

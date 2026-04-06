@@ -46,7 +46,7 @@ export function useKudos(uid?: string) {
           };
         }));
       } catch (err) {
-        console.error('[useKudos] Failed to load kudos:', err);
+        console.error('[useKudos] Failed to load kudos:');
       } finally {
         if (!cancelled) setIsLoading(false);
       }
@@ -95,7 +95,7 @@ export function useKudos(uid?: string) {
       });
       return true;
     } catch (err) {
-      console.error('[useKudos] Failed to send kudos:', err);
+      console.error('[useKudos] Failed to send kudos:');
       return false;
     }
   }, [uid]);

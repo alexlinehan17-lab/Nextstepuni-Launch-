@@ -90,3 +90,196 @@ interface ModuleProps {
 3. Add course metadata in `courseData.ts` (id, category, title, subtitle, description, sectionsCount, tags)
 
 **Firestore security rules.** `request.resource.data` only exists for write operations. Never use it in `allow read` rules — it will silently fail all reads. Always split into separate `allow read` and `allow write` when write rules reference `request.resource.data`.
+
+## Visual Design System — Module Components
+
+### Core Colours
+
+| Token | Hex | Usage |
+|-------|-----|-------|
+| Primary teal | `#2A7D6F` | Active states, slider thumbs, progress fills, CTA buttons, teal number badges |
+| Primary teal dark | `#1a5a4e` | Button shadows, teal badge backgrounds |
+| Teal light | `#e8f5f2` | Chip backgrounds, active card tints, callout backgrounds |
+| Page background | `#f0f0f0` | Module page background (not the cream shell) |
+| Card background | `#ffffff` | All cards without exception |
+| Card border | `#1a1a1a` | Primary card border colour — thick, bold |
+| Muted border | `#d0cdc8` | Secondary/inactive borders |
+| Body text | `#1a1a1a` | Headings and primary text |
+| Muted text | `#7a7068` | Subtitles, descriptions |
+| Label text | `#9e9186` | Uppercase section labels |
+| Productive blue | `#5B8FD4` | Only in productive/intrusive simulation pairs (Working Memory module) |
+| Intrusive pink | `#E85D75` | Only in productive/intrusive simulation pairs — never used as general UI colour |
+
+### What is NEVER acceptable
+- Orange, amber, yellow backgrounds or buttons — any shade
+- Bright green (e.g. #4ade80, #22c55e) — any shade
+- Purple as a UI accent
+- Red as a primary colour — only acceptable as a semantic "harmful thought" left-border accent
+- Dark/near-black backgrounds (e.g. #1a1a2e, #0f2d3d) inside ANY module component
+- Rainbow multi-colour card sequences (blue card, then orange card, then red card)
+- Coloured card backgrounds as a general pattern — white only, with the one exception below
+- Gradients on cards or backgrounds
+
+### The One Colour Exception — Simulation Pairs Only
+The blue (#5B8FD4) and pink (#E85D75) colour pair is permitted ONLY in interactive simulations that explicitly contrast productive vs intrusive cognition (e.g. Working Memory Under Threat). This is a deliberate semantic pair, not a general palette.
+
+---
+
+### Typography
+
+| Element | Font | Size | Weight | Colour |
+|---------|------|------|--------|--------|
+| Module title | Source Serif 4 | 24–28px | 600 | #1a1a1a |
+| Section heading | Source Serif 4 | 18–22px | 600 | #1a1a1a |
+| Concept card term | Source Serif 4 | 15–16px | 600 | #1a1a1a |
+| Body text | DM Sans | 14–15px | 400 | #3a3530 |
+| Section label | DM Sans | 10–11px | 700 | #9e9186 — UPPERCASE, letter-spacing 0.12em |
+| Muted description | DM Sans | 12–13px | 400 | #7a7068 |
+| Score/stat number | Source Serif 4 | 32–48px | 700 | #2A7D6F |
+
+---
+
+### Card System
+
+**Primary card** — default for all interactive elements:
+- `background: white`
+- `border: 2px solid #1a1a1a`
+- `border-radius: 14–16px`
+- `padding: 18–24px`
+
+**Active/focus card** — for current input or selected state:
+- `background: #e8f5f2`
+- `border: 2px solid #2A7D6F`
+- `border-radius: 14px`
+
+**Muted/inactive card** — for locked or secondary states:
+- `background: white`
+- `border: 1.5px solid #d0cdc8`
+- `border-radius: 14px`
+
+**Callout** — for insight text, key takeaways:
+- `background: #f0faf8`
+- `border-left: 3px solid #2A7D6F`
+- `border-radius: 0 10px 10px 0`
+- `padding: 12px 16px`
+- Text: italic, 14px, #1a6358
+
+**Never**: coloured card backgrounds (blue, orange, yellow, red) as a general pattern.
+
+---
+
+### Buttons
+
+**Primary CTA** — high-commitment actions only (Start session, Begin module):
+- `background: #2A7D6F`
+- `border-radius: 100px` (full pill)
+- `border-bottom: 3px solid #1a5a4e`
+- `box-shadow: 0 4px 0 #1a5a4e`
+- `padding: 13px 28px`
+- `font-size: 15px`, `font-weight: 600`, white text
+- Press animation: `translateY(3px)`, shadow reduces
+
+**Secondary action** — teal outline:
+- `background: white`, `color: #2A7D6F`
+- `border: 2px solid rgba(42,125,111,0.3)`
+- `border-radius: 20px`, `padding: 10px 20px`
+
+**Neutral action** — Reset, Cancel, inactive:
+- `background: white`, `color: #7a7068`
+- `border: 2px solid #d0cdc8`
+- `border-radius: 20px`, `padding: 10px 20px`
+
+**Ghost** — text-only:
+- No border, no background
+- `color: #9e9186`, `font-size: 13px`
+
+**Never**: orange buttons, red buttons, multi-colour button sets where each button is a different colour.
+
+---
+
+### Chips & Pills
+
+**Category chip** — above section titles:
+- `background: #e8f5f2`
+- `color: #1a6358`
+- `border: 1px solid rgba(42,125,111,0.2)`
+- `border-radius: 20px`, `padding: 4px 12px`
+- Text: UPPERCASE, 10–11px, font-weight 700, letter-spacing 0.06em
+
+**Detected/active chip** — when a quality is detected:
+- `background: #e8f5f2`, `color: #1a6358`
+- `border: 2px solid #2A7D6F`
+- Prefix: `✓` in #2A7D6F
+
+**Undetected/inactive chip**:
+- `background: white`, `color: #b0a898`
+- `border: 2px solid #d0cdc8`
+- Prefix: `–` in #d0cdc8
+
+---
+
+### Interactive Element Patterns
+
+**Numbered badges** (on concept cards, checklist items, stepper steps):
+- Shape: circle OR rounded square (consistent within a component)
+- Active/completed: `background: #2A7D6F`, white text
+- Inactive/locked: `background: #d0cdc8` or `#e0dbd4`, `color: #9e9186`
+- Size: 32–40px, font Source Serif 4, font-weight 700
+- Never: orange, red, blue, or multi-colour numbered sequences
+
+**Stepper/progress dots**:
+- Active: `background: #2A7D6F`, size 40–44px
+- Inactive: `background: #e0dbd4`, `color: #9e9186`
+- Connector line: `background: #d0cdc8`, height 2px
+
+**Sliders**:
+- Thumb: teal rounded square — `#2A7D6F` ✓ (already correct in codebase — do not change)
+- Track: `background: #e0dbd4`, height 6px
+- Value label: `color: #2A7D6F`, never red
+- Left/right endpoint labels: `color: #7a7068`, italic for example quotes
+
+**Progress bars**:
+- Fill: `background: #2A7D6F`
+- Track: `background: #e0dbd4`, height 8px, border-radius full
+- Percentage label: `color: #2A7D6F`
+- Never: red fill (even when showing a low/warning value)
+
+**Flip/reveal cards** (e.g. Hope Circuit Diagnostic):
+- Front: white, `border: 2px solid #1a1a1a`, bold serif text centred
+- Bottom label: `"TAP TO REVEAL"` — uppercase, 10px, #9e9186
+- Revealed state: `background: #e8f5f2`, `border-color: #2A7D6F`
+
+**Drag-to-reorder lists** (e.g. Pre-Drive Checklist):
+- Row card: white, `border: 2px solid #1a1a1a`, `border-radius: 14px`
+- Number badge: teal circle `#2A7D6F` — ALL items same colour, not rainbow
+- Drag handle: `color: #d0cdc8`, left side
+- Text: Source Serif 4, 16px, bold
+
+**Connector arrows between steps** (e.g. Downward Arrow):
+- Vertical line: 2px, `background: #d0cdc8`
+- Chevron: inline SVG, `stroke: #2A7D6F`, strokeWidth 2.5
+- Never: orange/amber arrows
+
+---
+
+### ConceptCardGrid — replaces ALL inline numbered lists
+
+Whenever content has 3 or more named concepts with descriptions, use ConceptCardGrid from ModuleShared.tsx — never embed as "1) Term (description), 2) Term..." prose.
+
+Card: white, `border: 2px solid #1a1a1a`, `border-radius: 14px`, `padding: 16–18px`
+Number badge: teal circle, Source Serif 4, 14px bold, white text
+Term: Source Serif 4, 15px, bold, #1a1a1a
+Description: DM Sans, 12–13px, #5a5550
+Highlight variant (key concept): `background: #e8f5f2`, `border: 2px solid #2A7D6F`, add "KEY LEVER" chip
+
+---
+
+### Tailwind CDN Constraint — Critical
+
+All Tailwind class strings must be FULL LITERALS. Never dynamically construct classes like `bg-${color}-500` — the CDN scanner cannot detect these and they will not render. Use inline `style={{}}` props for any dynamic values (e.g. cell colours driven by state, progress bar widths, dynamic hex values).
+
+---
+
+### Build Verification
+
+Always run `npm run build` after any non-trivial visual change. There are no tests or linters — the build is the only verification.

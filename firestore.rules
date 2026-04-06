@@ -20,8 +20,22 @@ service cloud.firestore {
                   && (request.auth.uid == userId
                       || (resource.data.school != null
                           && resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school));
-      allow write: if request.auth != null && request.auth.uid == userId
-                   && !('isAdmin' in request.resource.data);
+      allow create: if request.auth != null && request.auth.uid == userId
+                   && !('isAdmin' in request.resource.data)
+                   && !('role' in request.resource.data)
+                   && request.resource.data.name is string
+                   && request.resource.data.name.size() <= 50
+                   && request.resource.data.avatar is string
+                   && request.resource.data.avatar.size() <= 100
+                   && (!('school' in request.resource.data) || (request.resource.data.school is string && request.resource.data.school.size() <= 50));
+      allow update: if request.auth != null && request.auth.uid == userId
+                   && !('isAdmin' in request.resource.data)
+                   && request.resource.data.role == resource.data.role
+                   && request.resource.data.school == resource.data.school
+                   && request.resource.data.name is string
+                   && request.resource.data.name.size() <= 50
+                   && request.resource.data.avatar is string
+                   && request.resource.data.avatar.size() <= 100;
       // Admin can read all user docs + delete students (for AdminDashboard)
       allow read, delete: if request.auth != null
                   && request.auth.token.email == 'admin@nextstep.app';
@@ -130,15 +144,18 @@ service cloud.firestore {
       // Can create if: authed, authorUid is self, school matches own school
       allow create: if request.auth != null
                     && request.resource.data.authorUid == request.auth.uid
-                    && request.resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
-      // Same-school students can update helpfulCount only (no other fields change)
+                    && request.resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school
+                    && request.resource.data.explanation is string
+                    && request.resource.data.explanation.size() <= 500;
+      // Same-school students can update helpfulCount only (increment by 1, no other fields change)
       allow update: if request.auth != null
                     && resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school
                     && request.resource.data.authorUid == resource.data.authorUid
                     && request.resource.data.school == resource.data.school
                     && request.resource.data.subject == resource.data.subject
                     && request.resource.data.explanation == resource.data.explanation
-                    && request.resource.data.createdAt == resource.data.createdAt;
+                    && request.resource.data.createdAt == resource.data.createdAt
+                    && request.resource.data.helpfulCount == resource.data.helpfulCount + 1;
       allow delete: if false;
     }
 
@@ -150,21 +167,48 @@ service cloud.firestore {
       // Can create: authed, senderUid is self, school matches own school
       allow create: if request.auth != null
                     && request.resource.data.senderUid == request.auth.uid
-                    && request.resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
-      // Sender can resolve; same-school peers can increment responseCount
+                    && request.resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school
+                    && request.resource.data.question is string
+                    && request.resource.data.question.size() <= 500;
+      // Sender can resolve their own flare (only status field changes)
       allow update: if request.auth != null
-                    && resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
+                    && resource.data.senderUid == request.auth.uid
+                    && request.resource.data.status == 'resolved'
+                    && request.resource.data.senderUid == resource.data.senderUid
+                    && request.resource.data.school == resource.data.school
+                    && request.resource.data.question == resource.data.question
+                    && request.resource.data.createdAt == resource.data.createdAt
+                    && request.resource.data.expiresAt == resource.data.expiresAt;
+      // Same-school peers can increment responseCount (only responseCount changes)
+      allow update: if request.auth != null
+                    && resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school
+                    && resource.data.senderUid != request.auth.uid
+                    && request.resource.data.status == resource.data.status
+                    && request.resource.data.senderUid == resource.data.senderUid
+                    && request.resource.data.school == resource.data.school
+                    && request.resource.data.question == resource.data.question
+                    && request.resource.data.createdAt == resource.data.createdAt
+                    && request.resource.data.expiresAt == resource.data.expiresAt;
       allow delete: if false;
 
       // Flare responses subcollection
       match /responses/{responseId} {
-        // Same-school students can read responses
-        allow read: if request.auth != null;
+        // Same-school students can read responses (check parent flare's school)
+        allow read: if request.auth != null
+                    && get(/databases/$(database)/documents/flares/$(flareId)).data.school
+                       == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
         // Can create: authed, responderUid is self
         allow create: if request.auth != null
-                      && request.resource.data.responderUid == request.auth.uid;
-        // Flare sender can mark helpful
-        allow update: if request.auth != null;
+                      && request.resource.data.responderUid == request.auth.uid
+                      && request.resource.data.text is string
+                      && request.resource.data.text.size() <= 1000;
+        // Flare sender can mark helpful (only helpful field changes to true)
+        allow update: if request.auth != null
+                      && get(/databases/$(database)/documents/flares/$(flareId)).data.senderUid == request.auth.uid
+                      && request.resource.data.helpful == true
+                      && request.resource.data.text == resource.data.text
+                      && request.resource.data.responderUid == resource.data.responderUid
+                      && request.resource.data.createdAt == resource.data.createdAt;
         allow delete: if false;
       }
     }

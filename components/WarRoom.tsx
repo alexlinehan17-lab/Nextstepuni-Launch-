@@ -101,7 +101,7 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
           setDebriefs(data.studyDebriefs as DebriefEntry[]);
         }
       } catch (e) {
-        console.error('Failed to load War Room data:', e);
+        console.error('Failed to load War Room data:');
       }
       if (!cancelled) setIsLoading(false);
     };

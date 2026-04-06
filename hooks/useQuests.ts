@@ -106,7 +106,7 @@ export function useQuests(
           setMockResults(data.unifiedMockResults ?? []);
         }
       } catch (err) {
-        console.error('Failed to load quest data:', err);
+        console.error('Failed to load quest data:');
       }
       if (!cancelled) setIsLoaded(true);
     };
@@ -261,7 +261,7 @@ export function useQuests(
       }, { merge: true });
       setQuestRewards(prev => ({ ...prev, [questState.quest.id]: new Date().toISOString() }));
     } catch (err) {
-      console.error('Failed to claim quest reward:', err);
+      console.error('Failed to claim quest reward:');
     }
   }, [uid, questState]);
 

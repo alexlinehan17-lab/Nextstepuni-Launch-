@@ -21,36 +21,115 @@ const MyelinWrapper = () => {
     const [wraps, setWraps] = useState(0);
     const maxWraps = 10;
     const speed = 10 + (wraps * 9); // Speed from 10 to 100
+    const ringCount = Math.min(wraps, 8);
+    const axonR = Math.max(10, 88 - (ringCount * 9) - 8);
+    const milestone = wraps === 1 ? 'First layer of myelin forming.' : wraps === 4 ? 'Halfway there — signal noticeably faster.' : wraps >= 8 ? 'Fully myelinated. Skill becoming automatic.' : null;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Myelin Wrapper</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Each time you practice a skill, you add a layer of myelin, making the signal faster.</p>
-            <div className="flex justify-center items-center h-24">
-                <div className="relative w-64 h-2 bg-zinc-200 rounded-full">
-                     <div className="absolute inset-0 flex items-center">
-                        <motion.div
-                            className="w-full h-2 bg-blue-300 rounded-full"
-                            style={{
-                                height: 2 + wraps * 2,
-                                y: '-50%',
-                                top: '50%',
-                            }}
-                            transition={{type: 'spring', damping: 10, stiffness: 100}}
-                        >
-                            <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-4 h-4 bg-amber-400 rounded-full" />
-                        </motion.div>
-                     </div>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+            {/* Section chip + title */}
+            <div className="text-center mb-8">
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
+                <h4 className="font-serif font-bold" style={{ fontSize: 26, color: '#1a1a1a' }}>The Myelin Wrapper</h4>
+                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Each time you practice a skill, you add a layer of myelin, making the signal faster.</p>
+            </div>
+
+            {/* Nerve cross-section card */}
+            <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 28, maxWidth: 320, margin: '0 auto' }}>
+                <p className="text-center mb-4" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', textTransform: 'uppercase' as const }}>Nerve Cross-Section</p>
+
+                <svg viewBox="0 0 220 220" width="220" height="220" style={{ display: 'block', margin: '0 auto' }}>
+                    {/* Outer boundary */}
+                    <circle cx="110" cy="110" r="100" fill="#f4f0eb" stroke="#d0cdc8" strokeWidth="1.5"/>
+
+                    {/* Myelin rings — outside in */}
+                    {Array.from({ length: ringCount }).map((_, i) => {
+                        const outerR = 88 - (i * 9);
+                        const innerR = outerR - 7;
+                        const opacity = 1 - (i * 0.08);
+                        const isNewest = i === 0 && wraps > 0;
+                        return (
+                            <g key={`ring-${i}-${wraps}`}>
+                                {isNewest ? (
+                                    <motion.circle
+                                        cx="110" cy="110" r={outerR}
+                                        fill={i % 2 === 0 ? '#2A7D6F' : '#3d9e8f'}
+                                        opacity={opacity}
+                                        initial={{ scale: 0.7, opacity: 0 }}
+                                        animate={{ scale: 1, opacity }}
+                                        transition={{ duration: 0.35, ease: 'easeOut' }}
+                                        style={{ transformOrigin: '110px 110px' }}
+                                    />
+                                ) : (
+                                    <circle cx="110" cy="110" r={outerR} fill={i % 2 === 0 ? '#2A7D6F' : '#3d9e8f'} opacity={opacity} />
+                                )}
+                                <circle cx="110" cy="110" r={innerR} fill="#f4f0eb" />
+                            </g>
+                        );
+                    })}
+
+                    {/* Central axon */}
+                    <circle cx="110" cy="110" r={axonR} fill="#e8f5f2" stroke="#2A7D6F" strokeWidth="2" />
+
+                    {/* Speed pulse dot */}
+                    {wraps > 0 && (
+                        <circle cx="110" cy={110 - axonR} r="5" fill="#2A7D6F" opacity="0.9"/>
+                    )}
+
+                    {/* Zero state label */}
+                    {wraps === 0 && (
+                        <text x="110" y="115" textAnchor="middle" fontSize="11" fill="#9e9186" fontFamily="DM Sans, sans-serif">no myelin yet</text>
+                    )}
+                </svg>
+
+                {/* Layer count */}
+                <p className="text-center mt-3" style={{ fontSize: 12, color: '#9e9186' }}>{ringCount} / 8 myelin layers</p>
+
+                {/* Signal speed stat */}
+                <div className="text-center mt-4 pt-4" style={{ borderTop: '1px solid #e8e0d8' }}>
+                    <p style={{ lineHeight: 1 }}>
+                        <span className="font-serif font-bold" style={{ fontSize: 40, color: '#2A7D6F' }}>{speed}</span>
+                        <span className="font-sans" style={{ fontSize: 16, color: '#9e9186', marginLeft: 4 }}>m/s</span>
+                    </p>
+                    <p className="mt-1" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', color: '#9e9186', textTransform: 'uppercase' as const }}>Signal Speed</p>
                 </div>
             </div>
-             <div className="flex justify-center items-center gap-6 mt-8">
-                <button onClick={() => setWraps(w => Math.min(w + 1, maxWraps))} className="px-5 py-3 bg-amber-500 text-white font-bold rounded-lg hover:bg-amber-600 transition-colors text-sm">Practice Skill</button>
-                <div className="text-center">
-                    <p className="font-mono text-2xl font-bold">{speed} <span className="text-sm">m/s</span></p>
-                    <p className="text-xs font-bold uppercase tracking-widest text-zinc-400">Signal Speed</p>
-                </div>
-                 <button onClick={() => setWraps(0)} className="text-xs text-zinc-400">Reset</button>
-             </div>
+
+            {/* Milestone callout */}
+            {milestone && (
+                <motion.div
+                    key={milestone}
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="mt-4 max-w-xs mx-auto"
+                    style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
+                >
+                    <p className="text-sm italic" style={{ color: '#1a6358' }}>{milestone}</p>
+                </motion.div>
+            )}
+
+            {/* Buttons */}
+            <div className="flex items-center justify-center gap-5 mt-6">
+                <motion.button
+                    onClick={() => setWraps(w => Math.min(w + 1, maxWraps))}
+                    whileTap={{ scale: 0.97 }}
+                    className="text-white font-semibold"
+                    style={{ backgroundColor: '#2A7D6F', borderRadius: 100, padding: '14px 32px', fontSize: 15, border: 'none' }}
+                    onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.backgroundColor = '#1a5a4e'; }}
+                    onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.backgroundColor = '#2A7D6F'; }}
+                >
+                    Practice Skill
+                </motion.button>
+                <button
+                    onClick={() => setWraps(0)}
+                    className="font-medium"
+                    style={{ fontSize: 13, color: '#9e9186', background: 'none', border: 'none' }}
+                    onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#5a5550'; }}
+                    onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#9e9186'; }}
+                >
+                    Reset
+                </button>
+            </div>
         </div>
     )
 }
@@ -65,12 +144,12 @@ const DeepPracticeSorter = () => {
     const [choice, setChoice] = useState<{[key: string]: 'naive' | 'deep' | null}>({});
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Deep vs. Naive Practice</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Which of these activities trigger myelin growth?</p>
             <div className="space-y-4">
                 {activities.map(act => (
-                    <div key={act.name} className="p-4 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-lg flex justify-between items-center">
+                    <div key={act.name} className="p-4 rounded-lg flex justify-between items-center" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 12, boxShadow: '3px 3px 0px 0px #1C1917' }}>
                         <span className="font-bold text-sm">{act.name}</span>
                         <div className="flex gap-2">
                            <button onClick={() => setChoice({...choice, [act.name]:'naive'})} className={`px-2 py-1 text-xs font-bold rounded ${choice[act.name] === 'naive' && act.type === 'naive' ? 'bg-emerald-200 text-emerald-800' : choice[act.name] === 'naive' && act.type === 'deep' ? 'bg-rose-200 text-rose-800' : 'bg-zinc-200'}`}>Naive</button>

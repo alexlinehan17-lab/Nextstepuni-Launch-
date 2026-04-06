@@ -62,7 +62,7 @@ const DweckExperimentSimulator = () => {
     }
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Praise Experiment</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">You just aced a test. Walk through this experiment and see what happens next depending on what you're told.</p>
 
@@ -82,15 +82,15 @@ const DweckExperimentSimulator = () => {
                     {step === 0 && <>
                         <p className="font-bold mb-4">Phase 1: Choose your praise</p>
                         <div className="grid grid-cols-2 gap-4">
-                            <button onClick={() => handlePraise('person')} className="p-4 bg-rose-50 border border-rose-200 rounded-xl">"You must be smart at this."</button>
-                            <button onClick={() => handlePraise('process')} className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl">"You must have worked hard at this."</button>
+                            <button onClick={() => handlePraise('person')} className="p-4 font-medium text-sm transition-all" style={{ backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' }}>"You must be smart at this."</button>
+                            <button onClick={() => handlePraise('process')} className="p-4 font-medium text-sm transition-all" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' }}>"You must have worked hard at this."</button>
                         </div>
                     </>}
                     {step === 1 && <>
                         <p className="font-bold mb-4">Phase 2: Choose your next task</p>
                          <div className="grid grid-cols-2 gap-4">
-                            <button onClick={() => handleTask('easy')} className="p-4 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl">An easy one (to look smart)</button>
-                            <button onClick={() => handleTask('hard')} className="p-4 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl">A hard one (to learn more)</button>
+                            <button onClick={() => handleTask('easy')} className="p-4 font-medium text-sm transition-all" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>An easy one (to look smart)</button>
+                            <button onClick={() => handleTask('hard')} className="p-4 font-medium text-sm transition-all" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>A hard one (to learn more)</button>
                         </div>
                     </>}
                     {step === 2 && <p className="font-bold text-blue-600">You chose the <span className="underline">{taskChoice}</span> task...</p>}
@@ -157,7 +157,7 @@ const ErrorSignalVisualizer = () => {
     ];
 
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">What Your Brain Does With Mistakes</h4>
         <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">When you make a mistake, your brain fires two signals. The second one is where your mindset makes all the difference.</p>
 
@@ -454,7 +454,7 @@ const PraiseDecoderGame = () => {
   const timerColor = timeLeft <= 10 ? 'text-rose-500' : timeLeft <= 20 ? 'text-amber-500' : 'text-lime-600 dark:text-lime-400';
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Praise Decoder Game</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">
         Categorise each praise statement as fast as you can. You have 30 seconds.
@@ -471,7 +471,8 @@ const PraiseDecoderGame = () => {
           </div>
           <button
             onClick={startGame}
-            className="px-8 py-3 bg-lime-500 text-white font-bold text-sm rounded-xl hover:bg-lime-600 shadow-lg shadow-lime-500/20 transition-all"
+            className="px-8 py-3 font-bold text-sm transition-all"
+            style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
           >
             Start Game
           </button>
@@ -542,14 +543,16 @@ const PraiseDecoderGame = () => {
             <button
               onClick={() => handleAnswer('person')}
               disabled={feedback !== null}
-              className="px-6 py-4 bg-rose-50 dark:bg-rose-900/20 border-2 border-rose-200 dark:border-rose-800/40 rounded-xl font-bold text-rose-600 dark:text-rose-400 hover:bg-rose-100 dark:hover:bg-rose-900/40 transition-all disabled:opacity-50"
+              className="px-6 py-4 font-bold transition-all disabled:opacity-50"
+              style={{ backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' }}
             >
               Person Praise
             </button>
             <button
               onClick={() => handleAnswer('process')}
               disabled={feedback !== null}
-              className="px-6 py-4 bg-emerald-50 dark:bg-emerald-900/20 border-2 border-emerald-200 dark:border-emerald-800/40 rounded-xl font-bold text-emerald-600 dark:text-emerald-400 hover:bg-emerald-100 dark:hover:bg-emerald-900/40 transition-all disabled:opacity-50"
+              className="px-6 py-4 font-bold transition-all disabled:opacity-50"
+              style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' }}
             >
               Process Praise
             </button>

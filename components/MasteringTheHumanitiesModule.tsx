@@ -120,7 +120,7 @@ const SRPBuilder = () => {
 
   if (allDone) {
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">SRP Builder — Complete</h4>
         <MotionDiv initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="mt-8 text-center space-y-4">
           <p className="text-5xl font-bold text-emerald-500">{srpCount} / 5</p>
@@ -134,7 +134,7 @@ const SRPBuilder = () => {
   }
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">SRP Builder — From Keyword to Full Marks</h4>
       <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mt-1">Topic {topicIdx + 1} of {SRP_TOPICS.length}</p>
 
@@ -168,7 +168,7 @@ const SRPBuilder = () => {
                         setInputs(next);
                       }}
                       placeholder="Type your answer..."
-                      className="flex-1 px-4 py-2 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-900 text-sm text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-2 focus:ring-pink-400"
+                      className="flex-1 bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none" style={{ border: '1.5px solid #E7E5E4' }}
                     />
                     <button onClick={() => handleCheck(i)} className="px-4 py-2 rounded-lg bg-pink-500 hover:bg-pink-600 text-white text-sm font-semibold transition-colors">Check</button>
                   </div>
@@ -188,7 +188,7 @@ const SRPBuilder = () => {
 
       {/* Assembled SRP */}
       {completed && (
-        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.15 }} className="mt-8 p-5 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl border-l-4 border-emerald-500">
+        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.15 }} className="mt-8 p-5 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl" style={{ borderLeft: '4px solid #10B981' }}>
           <div className="flex items-center justify-between mb-2">
             <p className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Assembled SRP</p>
             <span className="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500 text-white">2 MARKS</span>
@@ -212,12 +212,12 @@ const HistoryGrader = () => {
     const grade = total >= 90 ? 'H1' : total >= 80 ? 'H2' : total >= 70 ? 'H3' : total >= 60 ? 'H4' : 'H5';
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">CM/OE Grader</h4>
             <div className="grid grid-cols-2 gap-6 items-center">
                 <div className="space-y-4">
-                    <div><label className="text-xs font-bold">CM (Content): {cm}/60</label><input type="range" min="0" max="60" value={cm} onChange={e=>setCm(parseInt(e.target.value))} className="w-full accent-pink-500 dark:accent-fuchsia-500 dark:bg-zinc-700 rounded-lg"/></div>
-                    <div><label className="text-xs font-bold">OE (Argument): {oe}/40</label><input type="range" min="0" max="40" value={oe} onChange={e=>setOe(parseInt(e.target.value))} className="w-full accent-pink-500 dark:accent-fuchsia-500 dark:bg-zinc-700 rounded-lg"/></div>
+                    <div><label className="text-xs font-bold">CM (Content): {cm}/60</label><input type="range" min="0" max="60" value={cm} onChange={e=>setCm(parseInt(e.target.value))} className="chunky-slider chunky-slider-sky"/></div>
+                    <div><label className="text-xs font-bold">OE (Argument): {oe}/40</label><input type="range" min="0" max="40" value={oe} onChange={e=>setOe(parseInt(e.target.value))} className="chunky-slider chunky-slider-sunshine"/></div>
                 </div>
                 <div className="text-center">
                     <p className="text-sm">Final Grade:</p>

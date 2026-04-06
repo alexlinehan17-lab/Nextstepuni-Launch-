@@ -9,7 +9,7 @@ import { MotionDiv } from './Motion';
 import { Target, GitBranch, Lightbulb, Shield, Flag } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { roseTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useNorthStar } from '../hooks/useNorthStar';
 import NorthStarCallout from './NorthStarCallout';
@@ -140,7 +140,7 @@ const IntentionGapComparison = () => {
   );
 
   return (
-    <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Intention-Action Gap</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Same motivation. Different strategies. Opposite outcomes.</p>
 
@@ -201,82 +201,112 @@ const IfThenPlanBuilder = () => {
     const thenLower = plan.thenText.toLowerCase();
     const combined = ifLower + ' ' + thenLower;
 
-    const hasTime = /\d{1,2}(:\d{2})?\s*(am|pm|o'clock)?/.test(combined) || /morning|afternoon|evening|night|after (dinner|lunch|breakfast|school|class)/.test(combined);
-    const hasLocation = /desk|room|library|cafe|kitchen|table|school|home|bed|chair|office|study/.test(combined);
-    const hasAction = /do|write|complete|solve|practice|read|review|revise|study|work on|start|begin|open|attempt/.test(thenLower);
-    const hasDuration = /\d+\s*(min|minute|hour|hr|mins|minutes|hours|hrs|pomodoro)/.test(combined);
+    // Expanded time detection
+    const timeKeywords = ['morning', 'afternoon', 'evening', 'night', 'midnight', 'lunchtime', 'after school', 'before bed', 'after dinner', 'after lunch', 'after breakfast', 'before dinner', 'when i wake', 'as soon as', 'first thing', 'straight after', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'weekday', 'weekend', 'half past', 'quarter past', 'quarter to'];
+    const hasTime = timeKeywords.some(kw => combined.includes(kw)) || /\d{1,2}(:\d{2})?\s*(am|pm|o'clock)?/.test(combined);
+
+    // Expanded location detection
+    const locationKeywords = ['library', 'desk', 'bedroom', 'kitchen', 'sitting room', 'living room', 'front room', 'home', 'my house', 'my room', 'school', 'classroom', 'study hall', 'canteen', 'cafe', 'coffee shop', 'at home', 'downstairs', 'upstairs', 'bus', 'train', 'park', 'resource room', 'study room', 'table', 'bed', 'chair', 'office'];
+    const hasLocation = locationKeywords.some(kw => combined.includes(kw)) || /\b(in|at)\s+my\s+\w+/.test(combined);
+
+    // Expanded action detection
+    const actionKeywords = ['study', 'revise', 'review', 'read', 'practice', 'practise', 'do', 'work on', 'complete', 'finish', 'go through', 'write', 'learn', 'memorise', 'memorize', 'test myself', 'flashcards', 'past papers', 'questions', 'notes', 'essay', 'solve', 'start', 'begin', 'open', 'attempt'];
+    const subjects = ['maths', 'english', 'irish', 'biology', 'chemistry', 'physics', 'history', 'geography', 'french', 'spanish', 'german', 'art', 'music', 'economics', 'accounting', 'business'];
+    const hasAction = actionKeywords.some(kw => thenLower.includes(kw)) || subjects.some(s => combined.includes(s));
+
+    // Expanded duration detection
+    const hasDuration = /\d+\s*(min|minute|hour|hr|mins|minutes|hours|hrs|pomodoro)s?/.test(combined) || /half an hour|half hour|an hour/.test(combined);
 
     return { hasTime, hasLocation, hasAction, hasDuration };
   };
 
   const getStrength = (checks: { hasTime: boolean; hasLocation: boolean; hasAction: boolean; hasDuration: boolean }) => {
     const count = [checks.hasTime, checks.hasLocation, checks.hasAction, checks.hasDuration].filter(Boolean).length;
-    if (count <= 1) return { label: 'Weak', color: 'text-rose-500', bg: 'bg-rose-500', width: '25%' };
-    if (count === 2) return { label: 'Fair', color: 'text-amber-500', bg: 'bg-amber-500', width: '50%' };
-    if (count === 3) return { label: 'Strong', color: 'text-emerald-500', bg: 'bg-emerald-500', width: '75%' };
-    return { label: 'Excellent', color: 'text-emerald-600', bg: 'bg-emerald-600', width: '100%' };
+    if (count <= 1) return { label: 'Weak', pct: 25 };
+    if (count === 2) return { label: 'Building', pct: 50 };
+    if (count === 3) return { label: 'Almost there', pct: 75 };
+    return { label: 'Strong plan \u2713', pct: 100 };
   };
 
   const allFilled = plans.every((p) => p.ifText.trim().length > 0 && p.thenText.trim().length > 0);
 
+  const criteriaNames = ['Specific time', 'Specific location', 'Specific action', 'Specific duration'] as const;
+
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">If-Then Plan Builder</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">Create 3 specific if-then plans for your study schedule.</p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-bold text-center" style={{ color: '#1a1a1a' }}>If-Then Plan Builder</h4>
+      <p className="text-center text-sm mt-2 mb-8" style={{ color: '#7a7068' }}>Create 3 specific if-then plans for your study schedule.</p>
 
       <div className="space-y-6">
         {plans.map((plan, i) => {
           const checks = checkQuality(plan);
+          const checkValues = [checks.hasTime, checks.hasLocation, checks.hasAction, checks.hasDuration];
           const strength = getStrength(checks);
+          const detectedCount = checkValues.filter(Boolean).length;
           const hasContent = plan.ifText.trim().length > 0 || plan.thenText.trim().length > 0;
 
           return (
-            <div key={i} className="p-5 bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-700">
-              <p className="text-xs font-bold text-zinc-400 dark:text-zinc-500 mb-3">PLAN {i + 1}</p>
-              <div className="grid md:grid-cols-2 gap-4 mb-3">
+            <div key={i} className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: '20px 24px' }}>
+              <p className="text-[11px] font-semibold uppercase tracking-wider mb-4" style={{ color: '#9e9186', letterSpacing: '0.08em' }}>Plan {i + 1}</p>
+              <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div>
-                  <label className="block text-sm font-semibold text-rose-600 dark:text-rose-400 mb-1">If...</label>
+                  <span className="inline-block text-xs font-bold mb-2" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '3px 10px' }}>IF</span>
                   <input
                     type="text"
                     value={plan.ifText}
                     onChange={(e) => updatePlan(i, 'ifText', e.target.value)}
                     placeholder={i === 0 ? 'it is 4pm on Monday' : i === 1 ? 'I sit down after dinner' : 'I finish my last class on Wednesday'}
-                    className="w-full px-4 py-2.5 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 text-sm focus:outline-none focus:border-rose-400 dark:focus:border-rose-500 transition-colors"
+                    className="w-full outline-none"
+                    style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 14, color: '#1a1a1a' }}
+                    onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }}
+                    onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }}
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-emerald-600 dark:text-emerald-400 mb-1">Then I will...</label>
+                  <span className="inline-block text-xs font-bold mb-2" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '3px 10px' }}>THEN</span>
                   <input
                     type="text"
                     value={plan.thenText}
                     onChange={(e) => updatePlan(i, 'thenText', e.target.value)}
-                    placeholder={i === 0 ? 'do 25 minutes of Maths past papers' : i === 1 ? 'revise Biology flashcards for 30 minutes at my desk' : 'practice Chemistry problems for 20 minutes in the library'}
-                    className="w-full px-4 py-2.5 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 text-sm focus:outline-none focus:border-emerald-400 dark:focus:border-emerald-500 transition-colors"
+                    placeholder={i === 0 ? 'do 25 minutes of Maths past papers' : i === 1 ? 'revise Biology flashcards for 30 mins at my desk' : 'practice Chemistry problems for 20 mins in the library'}
+                    className="w-full outline-none"
+                    style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 14, color: '#1a1a1a' }}
+                    onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }}
+                    onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }}
                   />
                 </div>
               </div>
 
               {hasContent && (
                 <MotionDiv initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} transition={{ duration: 0.3 }}>
-                  <div className="flex flex-wrap gap-2 mb-2">
-                    <span className={`text-xs px-2 py-1 rounded-full font-semibold ${checks.hasTime ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300' : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-400 dark:text-zinc-500'}`}>
-                      {checks.hasTime ? '\u2713' : '\u2717'} Specific time
-                    </span>
-                    <span className={`text-xs px-2 py-1 rounded-full font-semibold ${checks.hasLocation ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300' : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-400 dark:text-zinc-500'}`}>
-                      {checks.hasLocation ? '\u2713' : '\u2717'} Specific location
-                    </span>
-                    <span className={`text-xs px-2 py-1 rounded-full font-semibold ${checks.hasAction ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300' : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-400 dark:text-zinc-500'}`}>
-                      {checks.hasAction ? '\u2713' : '\u2717'} Specific action
-                    </span>
-                    <span className={`text-xs px-2 py-1 rounded-full font-semibold ${checks.hasDuration ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300' : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-400 dark:text-zinc-500'}`}>
-                      {checks.hasDuration ? '\u2713' : '\u2717'} Specific duration
-                    </span>
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {criteriaNames.map((name, ci) => (
+                      <motion.span
+                        key={name}
+                        animate={checkValues[ci] ? { scale: [1, 1.06, 1] } : {}}
+                        transition={{ duration: 0.3 }}
+                        className="inline-flex items-center gap-1.5"
+                        style={{
+                          backgroundColor: checkValues[ci] ? '#e8f5f2' : '#FFFFFF',
+                          border: checkValues[ci] ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+                          borderRadius: 20,
+                          padding: '6px 14px',
+                        }}
+                      >
+                        <span style={{ fontWeight: 700, color: checkValues[ci] ? '#2A7D6F' : '#b0a898', fontSize: 13 }}>
+                          {checkValues[ci] ? '\u2713' : '\u2013'}
+                        </span>
+                        <span style={{ fontSize: 13, fontWeight: 600, color: checkValues[ci] ? '#1a6358' : '#b0a898' }}>
+                          {name}
+                        </span>
+                      </motion.span>
+                    ))}
                   </div>
-                  <div className="flex items-center gap-2">
-                    <div className="flex-1 h-2 bg-zinc-200 dark:bg-zinc-700 rounded-full overflow-hidden">
-                      <MotionDiv className={`h-full rounded-full ${strength.bg}`} initial={{ width: 0 }} animate={{ width: strength.width }} transition={{ duration: 0.5 }} />
+                  <div className="flex items-center gap-3">
+                    <div className="flex-1 overflow-hidden" style={{ height: 8, backgroundColor: '#e0dbd4', borderRadius: 4 }}>
+                      <MotionDiv style={{ height: '100%', backgroundColor: '#2A7D6F', borderRadius: 4 }} initial={{ width: 0 }} animate={{ width: `${strength.pct}%` }} transition={{ duration: 0.5 }} />
                     </div>
-                    <span className={`text-xs font-bold ${strength.color}`}>{strength.label}</span>
+                    <span className="text-xs font-bold shrink-0" style={{ color: detectedCount === 4 ? '#1a6358' : detectedCount >= 2 ? '#2A7D6F' : '#b0a898', fontWeight: detectedCount === 4 ? 700 : 600 }}>{strength.label}</span>
                   </div>
                 </MotionDiv>
               )}
@@ -287,25 +317,32 @@ const IfThenPlanBuilder = () => {
 
       {allFilled && !showSummary && (
         <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="mt-6 text-center">
-          <button onClick={() => setShowSummary(true)} className="px-6 py-3 bg-rose-500 hover:bg-rose-600 text-white font-bold rounded-xl transition-colors text-sm">
+          <motion.button
+            onClick={() => setShowSummary(true)}
+            className="px-6 py-3 text-white font-bold text-sm"
+            style={{ backgroundColor: '#2A7D6F', border: '2.5px solid #1F5F54', borderRadius: 14, boxShadow: '4px 4px 0px 0px #1F5F54' }}
+            whileHover={{ x: -2, y: -2, boxShadow: '6px 6px 0px 0px #1F5F54' }}
+            whileTap={{ x: 2, y: 2, boxShadow: '1px 1px 0px 0px #1F5F54' }}
+            transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+          >
             View My Protocol
-          </button>
+          </motion.button>
         </MotionDiv>
       )}
 
       {showSummary && (
-        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="mt-6 p-6 bg-rose-50 dark:bg-rose-950/20 rounded-xl border border-rose-200 dark:border-rose-800">
-          <h5 className="font-serif text-lg font-semibold text-rose-800 dark:text-rose-200 mb-4 text-center">Your Implementation Intentions</h5>
+        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="mt-6" style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '20px 24px' }}>
+          <h5 className="font-serif text-lg font-semibold mb-4 text-center" style={{ color: '#1a6358' }}>Your Implementation Intentions</h5>
           <div className="space-y-3">
             {plans.map((plan, i) => (
-              <div key={i} className="p-3 bg-white dark:bg-zinc-800 rounded-lg border border-rose-200 dark:border-rose-800">
-                <p className="text-sm text-zinc-700 dark:text-zinc-200">
-                  <span className="font-bold text-rose-600 dark:text-rose-400">If</span> {plan.ifText}, <span className="font-bold text-emerald-600 dark:text-emerald-400">then I will</span> {plan.thenText}.
+              <div key={i} className="p-3 bg-white dark:bg-zinc-800" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10 }}>
+                <p className="text-sm" style={{ color: '#1a1a1a' }}>
+                  <span className="font-bold" style={{ color: '#1a6358' }}>If</span> {plan.ifText}, <span className="font-bold" style={{ color: '#1a6358' }}>then I will</span> {plan.thenText}.
                 </p>
               </div>
             ))}
           </div>
-          <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-4 text-center">Write these down. Put them where you'll see them. The specificity is what makes them work.</p>
+          <p className="text-xs mt-4 text-center" style={{ color: '#2A7D6F' }}>Write these down. Put them where you'll see them. The specificity is what makes them work.</p>
         </MotionDiv>
       )}
     </div>
@@ -365,14 +402,51 @@ const TheImplementationProtocolModule: React.FC<{ onBack: () => void; progress: 
           {activeSection === 3 && (
             <ReadingSection title="Commitment Devices." eyebrow="Step 4" icon={Shield} theme={theme}>
               <p><Highlight description="In one experiment, students who set their own deadlines -- and faced penalties for missing them -- did way better than students given total flexibility. Sounds backwards, right? But when you can do something 'whenever,' you usually do it never. Locking yourself in actually works." theme={theme}>One study found something surprising</Highlight>: students who set their own deadlines -- and accepted penalties for missing them -- performed significantly better than those given complete flexibility. This is counterintuitive. More freedom should mean better outcomes, right? Wrong. Freedom to act is also freedom not to act. Commitment devices work by raising the cost of not following through, making it harder to skip.</p>
-              <p>There are several practical commitment devices that work for students. First: <strong>give your phone to a friend</strong> during study sessions. The social accountability means you can't mindlessly scroll — and asking for it back feels embarrassing enough to keep you studying. Second: <strong>use app blockers with a time lock you can't override</strong>. Not ones with an "unlock early" option — that defeats the purpose. Third: <strong>tell someone your study plan</strong>. <Highlight description="When you tell someone what you're going to do, you feel pressure to actually do it. Nobody wants to be the person who says they'll study and then doesn't. That social pressure is surprisingly effective." theme={theme}>Here's why this works</Highlight>: when you tell someone what you're going to do, you feel pressure to actually follow through. Nobody wants to say one thing and do another. Simply texting a friend "I'm going to study Biology from 4-5pm" makes it more likely you'll actually do it.</p>
-              <p>Fourth: <strong>study with a partner</strong>. When you've arranged to meet someone, showing up feels like something you have to do, not something you can skip. You wouldn't cancel on someone at 4pm. Make your study session feel the same way. The common thread across all these tricks is this: they turn a private plan into something you'd feel bad about ditching, and they make skipping harder than just doing the work.</p>
+              <p>There are several practical commitment devices that work for students.</p>
+              <ConceptCardGrid
+                cards={[
+                  { number: 1, term: "Give Your Phone Away", description: "Give your phone to a friend during study sessions. The social accountability means you can't mindlessly scroll — and asking for it back feels embarrassing enough to keep you studying." },
+                  { number: 2, term: "Use App Blockers", description: "Use app blockers with a time lock you can't override. Not ones with an \"unlock early\" option — that defeats the purpose." },
+                  { number: 3, term: "Tell Someone Your Plan", description: "When you tell someone what you're going to do, you feel pressure to actually follow through. Simply texting a friend \"I'm going to study Biology from 4-5pm\" makes it more likely you'll actually do it." },
+                  { number: 4, term: "Study With a Partner", description: "When you've arranged to meet someone, showing up feels like something you have to do, not something you can skip. You wouldn't cancel on someone at 4pm." },
+                ]}
+                accentNote="The common thread: they turn a private plan into something you'd feel bad about ditching, and they make skipping harder than just doing the work."
+              />
             </ReadingSection>
           )}
           {activeSection === 4 && (
             <ReadingSection title="Building Your Protocol." eyebrow="Step 5" icon={Flag} theme={theme}>
               <p>The Implementation Playbook combines all four tools into one system. Each one tackles a different reason you might not follow through, and together they make studying close to automatic. Here's how to put yours together.</p>
-              <p><strong>Step 1: Write 3-5 if-then plans</strong> covering your weekly study schedule. Make them specific enough to be automatic. Not "I'll study Biology" but "If it is 5pm on Tuesday and I am at my desk, then I will do 25 minutes of Biology flashcards." <strong>Step 2: Attach a temptation bundle</strong> to your hardest subject — the one you're most likely to avoid. Make it the only time you get that reward. <strong>Step 3: Install one commitment device</strong> — something that raises the cost of skipping. Tell a friend, use an app blocker, or schedule a study partner. <strong>Step 4: Review and revise weekly</strong>. Plans that don't work aren't failures — they're data. If your Tuesday 5pm plan keeps failing because you're tired after football practice, move it. Adjust the system, don't blame yourself.</p>
+              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Write 3-5 if-then plans</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>Cover your weekly study schedule. Make them specific enough to be automatic. Not "I'll study Biology" but "If it is 5pm on Tuesday and I am at my desk, then I will do 25 minutes of Biology flashcards."</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Attach a temptation bundle</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Pick your hardest subject — the one you're most likely to avoid. Make it the only time you get that reward.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Install one commitment device</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>Something that raises the cost of skipping. Tell a friend, use an app blocker, or schedule a study partner.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 16, boxShadow: '4px 4px 0px 0px #059669' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#059669' }}>4</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#064E3B' }}>Review and revise weekly</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#064E3B', opacity: 0.8 }}>Plans that don't work aren't failures — they're data. If your Tuesday 5pm plan keeps failing because you're tired after football practice, move it. Adjust the system, don't blame yourself.</p>
+                  </div>
+                </div>
+              </div>
               <p><Highlight description="If-then plans are actually most effective for the students who struggle the most with following through. If you're someone who always plans to study but never does, this is genuinely the best tool for you. It's not just for the organised kids -- it works best for everyone else." theme={theme}>Here's the best part</Highlight>: if-then plans are especially effective for students who've always struggled with follow-through. If you're someone who regularly plans to study and then doesn't -- if that gap between intention and action feels painfully familiar -- then this technique was basically built for you. The students who need it most benefit the most.</p>
               <MicroCommitment theme={theme}>
                 <p>Right now, write one if-then plan for tomorrow. Make it specific: "If [exact time and place], then I will [exact subject and technique] for [exact duration]." Text it to a friend or write it on a sticky note and put it where you'll see it in the morning. One specific plan is worth more than a hundred good intentions.</p>

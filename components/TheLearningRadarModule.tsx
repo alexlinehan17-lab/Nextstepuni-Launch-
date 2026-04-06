@@ -9,7 +9,7 @@ import { MotionDiv } from './Motion';
 import { Target, AlertTriangle, Clock, Layers, Activity, Flag } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { violetTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = violetTheme;
@@ -80,7 +80,7 @@ const CalibrationQuiz = () => {
     const gap = avgConfidence - actualAccuracy;
 
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Calibration Report</h4>
         <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">How well did your confidence predict your accuracy?</p>
 
@@ -155,7 +155,7 @@ const CalibrationQuiz = () => {
   const q = CALIBRATION_STATEMENTS[step];
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Calibration Quiz</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-6">Rate your confidence, then answer. Let's see how well you know what you know.</p>
 
@@ -173,7 +173,8 @@ const CalibrationQuiz = () => {
               <button
                 key={level}
                 onClick={() => handleConfidence(level)}
-                className="px-4 py-2.5 rounded-xl border border-violet-200 dark:border-violet-800 bg-violet-50 dark:bg-violet-900/20 hover:bg-violet-100 dark:hover:bg-violet-900/40 text-violet-700 dark:text-violet-300 font-bold text-sm transition-colors"
+                className="px-4 py-2.5 font-bold text-sm transition-all"
+                style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
               >
                 {level}%
               </button>
@@ -184,8 +185,8 @@ const CalibrationQuiz = () => {
         <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} key="ans">
           <p className="text-center text-sm font-medium text-zinc-600 dark:text-zinc-300 mb-4">Is this statement True or False?</p>
           <div className="flex justify-center gap-4">
-            <button onClick={() => handleAnswer(true)} className="px-8 py-3 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 hover:bg-emerald-200 dark:hover:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 font-bold text-sm border border-emerald-200 dark:border-emerald-800 transition-colors">True</button>
-            <button onClick={() => handleAnswer(false)} className="px-8 py-3 rounded-xl bg-rose-100 dark:bg-rose-900/30 hover:bg-rose-200 dark:hover:bg-rose-900/50 text-rose-700 dark:text-rose-300 font-bold text-sm border border-rose-200 dark:border-rose-800 transition-colors">False</button>
+            <button onClick={() => handleAnswer(true)} className="px-8 py-3 font-bold text-sm transition-all" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' }}>True</button>
+            <button onClick={() => handleAnswer(false)} className="px-8 py-3 font-bold text-sm transition-all" style={{ backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' }}>False</button>
           </div>
           <p className="text-center text-xs text-violet-400 mt-3">You rated: {currentConfidence}% confident</p>
         </MotionDiv>
@@ -241,7 +242,7 @@ const DunningKrugerCurve = () => {
   ];
 
   return (
-    <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-10" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Confidence vs. Reality Curve</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">How confidence and actual ability don't always match up.</p>
 
@@ -414,7 +415,7 @@ const JOLTimingComparison = () => {
   );
 
   return (
-    <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-10" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Timing Effect</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">When you check your learning changes everything.</p>
 
@@ -530,7 +531,7 @@ const TrafficLightAudit = () => {
   if (phase === 'rate') {
     const allRated = Object.keys(ratings).length === AUDIT_TOPICS.length;
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Traffic Light Audit</h4>
         <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">Rate your knowledge of each concept honestly. Then we'll test you.</p>
         <div className="space-y-3">
@@ -565,7 +566,7 @@ const TrafficLightAudit = () => {
     const t = AUDIT_TOPICS[quizStep];
     const r = ratings[quizStep];
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Traffic Light Audit</h4>
         <div className="flex items-center justify-center gap-2 mt-2 mb-6">
           <span className="text-xs text-zinc-400">Question {quizStep + 1} of {AUDIT_TOPICS.length}</span>
@@ -596,7 +597,7 @@ const TrafficLightAudit = () => {
   });
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Audit Results</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">How well did your traffic lights match reality?</p>
 
@@ -684,7 +685,7 @@ const PredictionTracker = () => {
     const underconfident = results.filter((r) => !r.predicted && r.actual).length;
 
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Prediction Results</h4>
         <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-6">How accurately did you predict your own performance?</p>
 
@@ -730,7 +731,7 @@ const PredictionTracker = () => {
   const q = PREDICTION_QUESTIONS[step];
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Prediction Tracker</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-6">Predict first, then answer. See how well you really know what you know.</p>
       <div className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-4">Question {step + 1} of {PREDICTION_QUESTIONS.length}</div>
@@ -828,7 +829,15 @@ const TheLearningRadarModule: React.FC<{ onBack: () => void; progress: ModulePro
             <ReadingSection title="Checking Yourself During Study." eyebrow="Step 5" icon={Activity} theme={theme}>
               <p>Your Learning Radar isn't just something you use once — it's a habit you can build into every single study session. <Highlight description="Research shows that the best students don't just read their notes — they're constantly checking in with themselves: 'Am I actually taking this in, or am I just staring at the page?' That habit is what separates real studying from wasted time." theme={theme}>Research shows</Highlight> that the best learners constantly check their own understanding while studying. They don't just read — they keep asking themselves: "Am I actually learning this, or just looking at it?"</p>
               <p>There are clear signals that tell you whether you're actually learning or just going through the motions. <Highlight description="If you can close your book and list the key ideas from what you just studied, the information is actually going in. If you can't, you've basically been staring at the page without absorbing anything. It's a quick and honest test." theme={theme}>One powerful trick</Highlight>: after studying a section, try to list the key ideas from memory. If you've been studying a chapter and you can close the book and name the five main points, you're on track. If you can't, you've been reading without learning.</p>
-              <p>Here are three quick checks you can use during any study session. The <Highlight description="Close your notes and try to say or write down everything you just studied. If you can hit the main points, it's working. If your mind goes blank, you were reading on autopilot and need to change your approach." theme={theme}>"Close the Book" test</Highlight>: can you recall the main ideas without looking? The <Highlight description="Try to come up with your own example of what you just learned. If you can, it means you actually understand the idea, not just the specific case you read about. That's the difference between surface learning and deep learning." theme={theme}>"Make Your Own Example" test</Highlight>: can you come up with a new example? The <Highlight description="Try to connect what you just learned to something you already know. If you can make that link, the new information is sticking to what's already in your brain, which makes it way harder to forget." theme={theme}>"Connect the Dots" test</Highlight>: can you link this to something you already know? If you can do all three, you're genuinely learning. If you can't, you're in the familiarity trap — and now you know to switch up your approach.</p>
+              <p>Here are three quick checks you can use during any study session.</p>
+              <ConceptCardGrid
+                cards={[
+                  { number: 1, term: "The \"Close the Book\" Test", description: "Close your notes and try to say or write down everything you just studied. If you can hit the main points, it's working. If your mind goes blank, you were reading on autopilot and need to change your approach." },
+                  { number: 2, term: "The \"Make Your Own Example\" Test", description: "Try to come up with your own example of what you just learned. If you can, it means you actually understand the idea, not just the specific case you read about." },
+                  { number: 3, term: "The \"Connect the Dots\" Test", description: "Try to connect what you just learned to something you already know. If you can make that link, the new information is sticking to what's already in your brain, which makes it way harder to forget." },
+                ]}
+                accentNote="If you can do all three, you're genuinely learning. If you can't, you're in the familiarity trap — and now you know to switch up your approach."
+              />
               <PersonalStory name="Ciara" role="5th Year, Cork">
                 I used to spend hours reading my Biology notes and feel grand about it. Then I tried the "Close the Book" test and I literally couldn't remember a single thing I'd just read. It was a shock. Now I stop every 20 minutes and try to write down the main points without looking. It's way harder but I actually remember stuff for tests now.
               </PersonalStory>

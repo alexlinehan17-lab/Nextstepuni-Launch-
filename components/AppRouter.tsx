@@ -11,7 +11,7 @@ import { useToast } from './Toast';
 import { LoadingSpinner } from './LoadingSpinner';
 import { KnowledgeTree, CategoryType } from './KnowledgeTree';
 import { Library } from './Library';
-import CategoryCarousel from './CategoryCarousel';
+import ModuleShowcase from './ModuleShowcase';
 
 const LoginPage = lazy(() => import('./LoginPage'));
 const AdminDashboard = lazy(() => import('./AdminDashboard').then(m => ({ default: m.AdminDashboard })));
@@ -62,7 +62,7 @@ class ModuleErrorBoundary extends React.Component<ModuleErrorBoundaryProps, Modu
   }
 
   componentDidCatch(error: Error, info: React.ErrorInfo) {
-    console.error('Module failed to load:', error, info);
+    console.error('Module failed to load');
   }
 
   render() {
@@ -264,7 +264,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
               const updated = { ...completions, [dateKey]: dayArr };
               await setDoc(progressRef, { timetableCompletions: updated }, { merge: true });
             } catch (e) {
-              console.error('Failed to auto-complete timetable block:', e);
+              console.error('Failed to auto-complete timetable block:');
               showToast('Couldn\'t save — check your connection', 'error');
             }
             setTimetableBlockContext(null);
@@ -420,17 +420,30 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       categoryCourses = categoryCourses.filter(c => relevantModuleIds.has(c.id));
     }
 
-    // Carousel view for all main categories
-    const carouselCategories: string[] = ['architecture-mindset', 'science-growth', 'learning-cheat-codes', 'subject-specific-science', 'exam-zone'];
-    if (carouselCategories.includes(currentCategory)) {
+    // Showcase view for all main categories
+    const showcaseCategories: string[] = ['architecture-mindset', 'science-growth', 'learning-cheat-codes', 'subject-specific-science', 'exam-zone'];
+    if (showcaseCategories.includes(currentCategory)) {
       return (
-        <CategoryCarousel
-          title={categoryTitles[currentCategory]}
-          courses={categoryCourses}
-          onSelectCourse={handleSelectModule}
-          onBack={handleBackToTree}
-          userProgress={userProgress}
-        />
+        <div className="min-h-screen" style={{ backgroundColor: '#FDF8F0' }}>
+          {/* Header */}
+          <header className="fixed top-0 left-0 right-0 z-50 px-4 py-4 md:px-10 md:py-5" style={{ backgroundColor: '#FDF8F0', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
+            <div className="flex items-center gap-4">
+              <button onClick={handleBackToTree} className="p-2.5 rounded-xl transition-colors hover:bg-white/60" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              </button>
+            </div>
+          </header>
+          {/* Showcase */}
+          <div className="pt-24 md:pt-28 pb-12 flex items-center justify-center" style={{ minHeight: 'calc(100vh - 80px)' }}>
+            <ModuleShowcase
+              courses={categoryCourses}
+              categoryTitle={categoryTitles[currentCategory]}
+              categoryId={currentCategory}
+              userProgress={userProgress}
+              onSelectCourse={handleSelectModule}
+            />
+          </div>
+        </div>
       );
     }
 

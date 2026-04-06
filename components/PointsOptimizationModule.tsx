@@ -73,7 +73,7 @@ const GradeWaterfall = () => {
   };
 
   return (
-    <div className="my-10 p-6 md:p-8 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Grade Waterfall Calculator</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Change the grades below and watch your points total respond. Notice how steep the H1→H2 cliff is.</p>
 
@@ -108,7 +108,7 @@ const GradeWaterfall = () => {
         })}
       </div>
 
-      <div className="flex items-center justify-between p-5 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900">
+      <div className="flex items-center justify-between p-5 rounded-xl" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' }}>
         <div>
           <p className="text-[10px] font-semibold uppercase tracking-wider opacity-60">Best 6 Total</p>
           <p className="text-3xl font-bold font-mono">{total}<span className="text-lg opacity-50">/{maxTotal}</span></p>
@@ -135,7 +135,7 @@ const MathsBonusVisualizer = () => {
   const otherPts = GRADE_POINTS[otherGrade] || 0;
 
   return (
-    <div className="my-10 p-6 md:p-8 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">The Maths Bonus Amplifier</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Compare HL Maths (with bonus) to any other subject. See how much difference the 25-point bonus actually makes.</p>
 
@@ -214,7 +214,7 @@ const H1RateDashboard = () => {
   };
 
   return (
-    <div className="my-10 p-6 md:p-8 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Subject H1 Rate Dashboard</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Real H1 percentages from recent Leaving Cert results. Sort to see which subjects have the highest H1 rates.</p>
 
@@ -225,7 +225,8 @@ const H1RateDashboard = () => {
           { key: 'name', label: 'A–Z' },
         ].map(opt => (
           <button key={opt.key} onClick={() => setSortBy(opt.key as any)}
-            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${sortBy === opt.key ? 'bg-zinc-900 dark:bg-white text-white dark:text-zinc-900' : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400'}`}>
+            className="px-3 py-1.5 text-xs font-semibold transition-all"
+            style={sortBy === opt.key ? { backgroundColor: '#1C1917', border: '2.5px solid #1C1917', borderRadius: 10, boxShadow: '2px 2px 0px 0px #44403C', color: '#FFFFFF' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 10, boxShadow: '2px 2px 0px 0px #1C1917', color: '#1C1917' }}>
             {opt.label}
           </button>
         ))}
@@ -274,7 +275,7 @@ const ObjectivitySpectrum = () => {
   const sorted = [...SUBJECTS_DATA].sort((a, b) => b.objectivity - a.objectivity);
 
   return (
-    <div className="my-10 p-6 md:p-8 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">The Objectivity Spectrum</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Where does each subject fall between "right/wrong" and "examiner's discretion"?</p>
 
@@ -282,7 +283,8 @@ const ObjectivitySpectrum = () => {
         <div className="text-center py-8">
           <p className="text-sm text-zinc-500 mb-4">Before you see the data — think about your own subjects. Which do you think have the most objective marking?</p>
           <button onClick={() => setRevealed(true)}
-            className="px-6 py-3 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity">
+            className="px-6 py-3 text-sm font-semibold transition-all"
+            style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>
             Reveal the Spectrum
           </button>
         </div>
@@ -370,7 +372,7 @@ const SynergyMap = ({ savedSubjects, onSave }: { savedSubjects?: string[]; onSav
   };
 
   return (
-    <div className="my-10 p-6 md:p-8 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Subject Overlap Map</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Select up to 7 subjects and see which share overlapping content — study one, benefit in another.</p>
       <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">{selected.length}/7 selected</p>
@@ -432,7 +434,7 @@ const SurplusCalculator = () => {
   const safetyMargin = surplusPoints > 0 ? Math.round((surplusPoints / requiredPoints) * 100) : 0;
 
   return (
-    <div className="my-10 p-6 md:p-8 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">The Surplus Rule Calculator</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Marking schemes often accept more valid answers than the question needs. Calculate your safety margin.</p>
 
@@ -564,7 +566,7 @@ const PortfolioOptimizer = ({ savedPortfolio, onSave }: { savedPortfolio?: { sub
   const availableSubjects = SUBJECTS_DATA.map(s => s.name);
 
   return (
-    <div className="my-10 p-6 md:p-8 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Your Portfolio Optimizer</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Enter your 7 subjects and your current realistic grade expectation. Get a personalized risk report.</p>
 
@@ -586,7 +588,7 @@ const PortfolioOptimizer = ({ savedPortfolio, onSave }: { savedPortfolio?: { sub
       </div>
 
       {analysis.filledCount >= 4 && (
-        <MotionDiv initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="p-6 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900">
+        <MotionDiv initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="p-6 rounded-xl" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' }}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
             <div className="text-center">
               <p className="text-[9px] font-semibold uppercase tracking-wider opacity-60">Projected Points</p>

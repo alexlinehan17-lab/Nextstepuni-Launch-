@@ -23,13 +23,13 @@ const HungryManExperiment = () => {
     let retention = method === 'passive' ? 37 : method === 'ei' ? 72 : 0;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "Hungry Man" Experiment</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">See the dramatic effect of asking "Why?" on your memory.</p>
             <div className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-xl text-center font-mono mb-6">"The hungry man got in the car."</div>
             <div className="grid grid-cols-2 gap-4">
-                <button onClick={() => setMethod('passive')} className="p-4 bg-zinc-200 rounded-xl">Read Passively</button>
-                <button onClick={() => setMethod('ei')} className="p-4 bg-pink-200 rounded-xl">Ask "Why?"</button>
+                <button onClick={() => setMethod('passive')} className="p-4 rounded-xl text-sm font-bold" style={{ backgroundColor: method === 'passive' ? '#FCA5A5' : '#FFFFFF', border: `2.5px solid ${method === 'passive' ? '#DC2626' : '#1C1917'}`, borderRadius: 14, boxShadow: method === 'passive' ? 'none' : '3px 3px 0px 0px #1C1917', color: method === 'passive' ? '#7F1D1D' : '#1C1917' }}>Read Passively</button>
+                <button onClick={() => setMethod('ei')} className="p-4 rounded-xl text-sm font-bold" style={{ backgroundColor: method === 'ei' ? '#6EE7B7' : '#FFFFFF', border: `2.5px solid ${method === 'ei' ? '#059669' : '#1C1917'}`, borderRadius: 14, boxShadow: method === 'ei' ? 'none' : '3px 3px 0px 0px #1C1917', color: method === 'ei' ? '#064E3B' : '#1C1917' }}>Ask "Why?"</button>
             </div>
             {method && (
                  <div className="mt-6">
@@ -44,18 +44,21 @@ const HungryManExperiment = () => {
 const FlashcardFlipper = () => {
     const [isFlipped, setIsFlipped] = useState(false);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Flashcard 2.0</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Stop making "what" cards. Start making "why" cards.</p>
-            <div className="w-full h-48 [perspective:1000px]" onClick={() => setIsFlipped(!isFlipped)}>
-                <motion.div className="relative w-full h-full" style={{transformStyle: 'preserve-3d'}} animate={{rotateY: isFlipped ? 180 : 0}}>
-                    <div className="absolute w-full h-full [backface-visibility:hidden] rounded-xl bg-zinc-900 text-white flex flex-col items-center justify-center p-4">
-                        <p className="text-xs text-zinc-400 mb-2">FRONT</p>
-                        <p className="font-bold">Why is the left ventricle wall thicker than the right?</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+            <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Flashcard 2.0</h4>
+            <p className="text-sm mt-1 mb-6" style={{ color: '#7a7068' }}>Stop making "what" cards. Start making "why" cards.</p>
+            <div className="w-full cursor-pointer" style={{ perspective: 1000, minHeight: 220 }} onClick={() => setIsFlipped(!isFlipped)}>
+                <motion.div className="relative w-full" style={{ transformStyle: 'preserve-3d', minHeight: 220 }} animate={{ rotateY: isFlipped ? 180 : 0 }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}>
+                    {/* Front */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-white dark:bg-zinc-900" style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden', border: '2px solid #1a1a1a', borderRadius: 16, padding: '32px 28px' }}>
+                        <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', marginBottom: 16, textTransform: 'uppercase' as const }}>Front</p>
+                        <p className="font-serif font-semibold" style={{ fontSize: 20, color: '#1a1a1a', lineHeight: 1.5 }}>Why is the left ventricle wall thicker than the right?</p>
+                        <p className="italic mt-4" style={{ fontSize: 12, color: '#9e9186' }}>Tap to reveal</p>
                     </div>
-                    <div className="absolute w-full h-full [backface-visibility:hidden] rounded-xl bg-emerald-500 text-white flex flex-col items-center justify-center p-4" style={{transform: 'rotateY(180deg)'}}>
-                        <p className="text-xs text-emerald-200 mb-2">BACK</p>
-                        <p className="font-bold text-sm">Because it pumps blood to the whole body (high pressure), while the right only pumps to the lungs (low pressure).</p>
+                    {/* Back */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center" style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden', transform: 'rotateY(180deg)', backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 16, padding: '32px 28px' }}>
+                        <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#1a6358', marginBottom: 16, textTransform: 'uppercase' as const }}>Back</p>
+                        <p className="font-serif" style={{ fontSize: 18, color: '#1a1a1a', lineHeight: 1.6 }}>Because it pumps blood to the whole body (high pressure), while the right only pumps to the lungs (low pressure).</p>
                     </div>
                 </motion.div>
             </div>
@@ -131,7 +134,7 @@ const WhyChainBuilder = () => {
   const fact = selectedFactIndex !== null ? WHY_CHAIN_FACTS[selectedFactIndex] : null;
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Why-Chain Builder</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Pick a fact, then keep asking "Why?" to build deeper understanding.</p>
 
@@ -139,7 +142,7 @@ const WhyChainBuilder = () => {
         <div className="space-y-3">
           <p className="text-sm font-medium text-zinc-600 dark:text-zinc-300 text-center mb-2">Choose a starting fact:</p>
           {WHY_CHAIN_FACTS.map((item, i) => (
-            <button key={i} onClick={() => handleSelectFact(i)} className="w-full text-left p-4 rounded-lg border border-zinc-200 dark:border-zinc-600 hover:border-pink-400 dark:hover:border-pink-400 transition-colors bg-zinc-50 dark:bg-zinc-700 text-zinc-800 dark:text-zinc-100 text-sm">
+            <button key={i} onClick={() => handleSelectFact(i)} className="w-full text-left p-4 rounded-xl text-sm text-zinc-800 font-medium" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}>
               {item.fact}
             </button>
           ))}
@@ -200,7 +203,8 @@ const WhyChainBuilder = () => {
                   onChange={(e) => setCurrentInput(e.target.value)}
                   onKeyDown={(e) => { if (e.key === 'Enter') handleSubmitAnswer(); }}
                   placeholder={fact.hints[currentLevel - 1] || 'Type your explanation…'}
-                  className="flex-1 px-4 py-2.5 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-700 text-sm text-zinc-800 dark:text-zinc-100 placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-pink-400"
+                  className="flex-1 bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none"
+                  style={{ border: '1.5px solid #E7E5E4' }}
                   autoFocus
                 />
                 <button
@@ -288,7 +292,41 @@ const ElaborativeInterrogationModule: React.FC<{ onBack: () => void; progress: M
            {activeSection === 5 && (
             <ReadingSection title="Your Study Plan." eyebrow="Step 6" icon={Wrench} theme={theme}>
               <p>You know why it works. Now here's a simple four-step plan to actually use it when you study.</p>
-              <p><strong>1. Highlight the facts:</strong> Look at your notes and highlight the main facts. <strong>2. Ask "Why?":</strong> For each fact, write "Why?" in the margin. <strong>3. Answer it yourself:</strong> Write an explanation in your own words. <strong>4. Check your answer:</strong> Compare it against the textbook to make sure you didn't get it wrong. This turns passive note-reading into something that actually builds your memory. One of the best things to come out of this is the "Why" flashcard.</p>
+              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+                {/* Card 1 — Sky */}
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Highlight the facts</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>Look at your notes and highlight the main facts.</p>
+                  </div>
+                </div>
+                {/* Card 2 — Sunshine */}
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Ask "Why?"</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>For each fact, write "Why?" in the margin.</p>
+                  </div>
+                </div>
+                {/* Card 3 — Peach */}
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Answer it yourself</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>Write an explanation in your own words.</p>
+                  </div>
+                </div>
+                {/* Card 4 — Mint */}
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 16, boxShadow: '4px 4px 0px 0px #059669' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#059669' }}>4</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#064E3B' }}>Check your answer</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#064E3B', opacity: 0.8 }}>Compare it against the textbook to make sure you didn't get it wrong.</p>
+                  </div>
+                </div>
+              </div>
+              <p>This turns passive note-reading into something that actually builds your memory. One of the best things to come out of this is the "Why" flashcard.</p>
               <FlashcardFlipper />
               <MicroCommitment theme={theme}>
                 <p>Take one page of your notes from any subject. For the next 5 minutes, go through and simply write a "Why?" question next to every main fact or definition. That's the first step.</p>

@@ -48,7 +48,7 @@ const YetReframe = () => {
     const engagementPct = Math.round((reframed.size / statements.length) * 100);
 
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "Yet" Reframe</h4>
         <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Click each fixed statement to add "yet" and watch the cognitive shift.</p>
 
@@ -77,11 +77,8 @@ const YetReframe = () => {
                 key={i}
                 onClick={() => handleClick(i)}
                 disabled={isReframed}
-                className={`w-full text-left p-4 rounded-xl border transition-all ${
-                  isReframed
-                    ? 'bg-emerald-50 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800/40'
-                    : 'bg-zinc-50 dark:bg-zinc-900/30 border-zinc-200 dark:border-zinc-700 hover:border-yellow-300 dark:hover:border-yellow-700 cursor-pointer'
-                }`}
+                className="w-full text-left p-4 rounded-xl transition-all"
+                style={isReframed ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}
                 layout
               >
                 <div className="flex items-start gap-3">
@@ -278,98 +275,96 @@ const BridgeBuilder = () => {
 
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
-        Bridge Builder
-      </h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">
-        Build a bridge from "Yet" to your goal by choosing <strong>specific, concrete</strong> actions.
-      </p>
-      <p className="text-center text-xs font-semibold text-yellow-600 dark:text-yellow-400 mb-8">
-        Bridge strength: {placedStrong.length}/3 planks
-      </p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+      {/* Section chip + title */}
+      <div className="text-center mb-2">
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Growth Mindset Activity</span>
+        <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Bridge Builder</h4>
+        <p className="text-sm mt-1" style={{ color: '#7a7068' }}>
+          Build a bridge from "Yet" to your goal by choosing <strong>specific, concrete</strong> actions.
+        </p>
+      </div>
+
+      {/* Bridge strength chip */}
+      <div className="flex justify-center mb-8 mt-3">
+        <div className="inline-flex items-center gap-2" style={{ backgroundColor: '#e8f5f2', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '5px 14px' }}>
+          <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.08em', color: '#9e9186', textTransform: 'uppercase' as const }}>Bridge Strength</span>
+          <span style={{ fontSize: 13, fontWeight: 600, color: '#1a6358' }}>{placedStrong.length} / 3 planks</span>
+        </div>
+      </div>
 
       {/* Bridge Scene */}
-      <div className="relative flex items-end justify-center gap-0 mb-8 select-none" style={{ minHeight: 180 }}>
-        {/* Left cliff */}
-        <div className="flex flex-col items-center z-10">
-          <div className="bg-zinc-300 dark:bg-zinc-600 rounded-t-xl w-28 md:w-36 h-24 flex items-center justify-center px-2">
-            <p className="text-[11px] md:text-xs font-semibold text-zinc-700 dark:text-zinc-200 text-center leading-tight">
+      <div className="relative flex items-stretch justify-center gap-0 mb-8 select-none" style={{ minHeight: 140 }}>
+        {/* Left — "Yet" card */}
+        <div className="flex items-center z-10 w-28 md:w-36 shrink-0">
+          <div className="w-full bg-white dark:bg-zinc-900 flex items-center justify-center px-3" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '20px 16px' }}>
+            <p className="font-serif italic text-center leading-tight" style={{ fontSize: 15, color: '#5a5550' }}>
               {scenario.yet}
             </p>
           </div>
-          <div className="bg-zinc-400 dark:bg-zinc-700 w-28 md:w-36 h-4 rounded-b-sm" />
         </div>
 
-        {/* Bridge gap */}
-        <div className="relative flex-1 max-w-[240px] md:max-w-[300px]" style={{ minHeight: 120 }}>
-          {/* Chasm background */}
-          <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-zinc-200 dark:from-zinc-900 to-transparent rounded-b-lg" />
+        {/* Bridge gap with planks */}
+        <div className="relative flex-1 max-w-[240px] md:max-w-[300px] flex items-center">
+          {/* Baseline */}
+          <div className="absolute bottom-1/2 left-0 right-0" style={{ height: 2, backgroundColor: '#d0cdc8' }} />
 
           {/* Planks */}
-          <div className="absolute bottom-4 left-0 right-0 flex gap-1 justify-center items-end px-1">
+          <div className="relative w-full flex gap-2 justify-center items-center px-2">
             {[0, 1, 2].map(i => {
               const placed = i < placedStrong.length;
               return (
                 <MotionDiv
                   key={i}
-                  initial={placed ? { opacity: 0, y: -30, rotateZ: -5 } : { opacity: 0.3 }}
-                  animate={
-                    placed
-                      ? { opacity: 1, y: 0, rotateZ: 0 }
-                      : { opacity: 0.15 }
-                  }
-                  transition={{ type: 'spring', stiffness: 200, damping: 18, delay: placed ? 0.1 : 0 }}
-                  className={`h-5 md:h-6 rounded-sm flex items-center justify-center ${
-                    placed
-                      ? 'bg-emerald-400 dark:bg-emerald-500 shadow-md'
-                      : 'bg-zinc-200 dark:bg-zinc-700 border border-dashed border-zinc-300 dark:border-zinc-600'
-                  }`}
-                  style={{ flex: 1, minWidth: 0 }}
+                  initial={placed ? { scale: 0.8, opacity: 0 } : {}}
+                  animate={placed ? { scale: 1, opacity: 1 } : { opacity: 1 }}
+                  transition={{ type: 'spring', stiffness: 200, damping: 18 }}
+                  className="flex items-center justify-center"
+                  style={{
+                    flex: 1,
+                    height: 48,
+                    borderRadius: 8,
+                    backgroundColor: placed ? '#2A7D6F' : '#f4f0eb',
+                    border: placed ? '2px solid #1a5a4e' : '2px dashed #d0cdc8',
+                  }}
                 >
                   {placed && (
-                    <span className="text-[8px] md:text-[9px] font-bold text-white truncate px-1">
-                      Plank {i + 1}
-                    </span>
+                    <span style={{ fontSize: 12, fontWeight: 600, color: '#FFFFFF' }}>Plank {i + 1}</span>
                   )}
                 </MotionDiv>
               );
             })}
           </div>
 
-          {/* Wobbling weak plank overlay */}
+          {/* Crack overlay */}
           <AnimatePresence>
             {wobbling && (
               <MotionDiv
                 key="wobble"
-                initial={{ opacity: 0, y: -20 }}
-                animate={{
-                  opacity: [0, 1, 1, 0],
-                  y: [-20, 0, 0, 40],
-                  rotateZ: [0, -3, 3, 8],
-                }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, x: [-4, 4, -4, 4, 0] }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 1.5, times: [0, 0.15, 0.7, 1] }}
-                className="absolute bottom-4 left-1/2 -translate-x-1/2 h-5 md:h-6 w-1/3 rounded-sm bg-rose-400 dark:bg-rose-500 shadow-md flex items-center justify-center"
+                transition={{ duration: 0.3 }}
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+                style={{ height: 48, width: '30%', borderRadius: 8, backgroundColor: '#fde4e4', border: '2px solid #E85D75' }}
               >
-                <span className="text-[8px] md:text-[9px] font-bold text-white">Crack!</span>
+                <span style={{ fontSize: 12, fontWeight: 600, color: '#E85D75' }}>Crack!</span>
               </MotionDiv>
             )}
           </AnimatePresence>
         </div>
 
-        {/* Right cliff */}
-        <div className="flex flex-col items-center z-10">
-          <div className="bg-emerald-200 dark:bg-emerald-900/60 rounded-t-xl w-28 md:w-36 h-24 flex items-center justify-center px-2 border border-emerald-300 dark:border-emerald-800/50">
-            <p className="text-[11px] md:text-xs font-semibold text-emerald-700 dark:text-emerald-300 text-center leading-tight">
+        {/* Right — Goal card */}
+        <div className="flex items-center z-10 w-28 md:w-36 shrink-0">
+          <div className="w-full flex items-center justify-center px-3" style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '20px 16px' }}>
+            <p className="font-serif font-semibold text-center leading-tight" style={{ fontSize: 15, color: '#1a6358' }}>
               {scenario.goal}
             </p>
           </div>
-          <div className="bg-emerald-300 dark:bg-emerald-800 w-28 md:w-36 h-4 rounded-b-sm" />
         </div>
       </div>
 
-      {/* Feedback banner */}
+      {/* Feedback callout */}
       <AnimatePresence>
         {feedback && (
           <MotionDiv
@@ -377,36 +372,34 @@ const BridgeBuilder = () => {
             initial={{ opacity: 0, y: -6 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
-            className="mb-4 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/20 border border-rose-200 dark:border-rose-800/40 text-center"
+            className="mb-4"
+            style={{ borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
           >
-            <p className="text-xs font-semibold text-rose-600 dark:text-rose-400">{feedback}</p>
+            <p className="text-sm italic" style={{ color: '#b33030' }}>{feedback}</p>
           </MotionDiv>
         )}
       </AnimatePresence>
 
-      {/* Completion celebration */}
+      {/* Completion */}
       <AnimatePresence>
         {bridgeComplete && (
           <MotionDiv
             key="celebrate"
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="mb-4 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/40 text-center"
+            className="mb-4"
+            style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 16, padding: 24 }}
           >
-            <p className="text-base font-bold text-emerald-700 dark:text-emerald-300">
-              Bridge Complete!
-            </p>
-            <p className="text-xs text-emerald-600/80 dark:text-emerald-400/70 mt-1">
-              With specific actions, "yet" becomes a launchpad, not a wish.
-            </p>
+            <p className="font-serif font-bold text-center" style={{ fontSize: 20, color: '#1a6358' }}>Bridge complete.</p>
+            <p className="text-center mt-1" style={{ fontSize: 14, color: '#2A7D6F' }}>You turned "yet" into a concrete plan.</p>
           </MotionDiv>
         )}
       </AnimatePresence>
 
-      {/* Action blocks */}
+      {/* Action buttons */}
       {!bridgeComplete && (
         <div>
-          <p className="text-xs font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3 text-center">
+          <p className="text-center mb-3" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', textTransform: 'uppercase' as const }}>
             Choose an action to place on the bridge
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-w-xl mx-auto">
@@ -422,13 +415,14 @@ const BridgeBuilder = () => {
                   whileHover={!disabled ? { scale: 1.02 } : {}}
                   whileTap={!disabled ? { scale: 0.98 } : {}}
                   onClick={() => !disabled && handleAction(action)}
-                  className={`p-3 rounded-lg border text-left text-sm transition-colors ${
+                  className="text-left text-sm transition-all"
+                  style={
                     isPlaced
-                      ? 'bg-emerald-50 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800/40 text-emerald-600 dark:text-emerald-400 opacity-60'
+                      ? { backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '16px 20px', color: '#1a6358', opacity: 0.7 }
                       : isDiscarded
-                        ? 'bg-zinc-100 dark:bg-zinc-900/40 border-zinc-200 dark:border-zinc-700 text-zinc-400 dark:text-zinc-600 line-through opacity-40'
-                        : 'bg-zinc-50 dark:bg-zinc-900/30 border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-yellow-300 dark:hover:border-yellow-700 cursor-pointer'
-                  }`}
+                      ? { backgroundColor: '#fafaf8', border: '2px solid #e0dbd4', borderRadius: 14, padding: '16px 20px', color: '#b0a898', textDecoration: 'line-through', pointerEvents: 'none' as const }
+                      : { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 14, padding: '16px 20px', color: '#1a1a1a', cursor: 'pointer' }
+                  }
                 >
                   {action}
                 </MotionDiv>
@@ -438,11 +432,14 @@ const BridgeBuilder = () => {
         </div>
       )}
 
-      {/* New Scenario button */}
+      {/* New Scenario */}
       <div className="mt-6 text-center">
         <button
           onClick={handleNewScenario}
-          className="text-xs font-semibold text-yellow-600 dark:text-yellow-400 hover:text-yellow-700 dark:hover:text-yellow-300 transition-colors underline underline-offset-2"
+          className="font-medium transition-colors"
+          style={{ fontSize: 13, color: '#9e9186', background: 'none', border: 'none' }}
+          onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#2A7D6F'; }}
+          onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#9e9186'; }}
         >
           New Scenario
         </button>
@@ -456,23 +453,23 @@ const YetAudit = () => {
     const [action, setAction] = useState('');
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your "Yet" Audit</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Run your own block through the Identify-Append-Bridge protocol.</p>
             <div className="space-y-6 max-w-xl mx-auto">
                 <div>
                     <p className="text-xs font-bold uppercase tracking-widest text-yellow-600 dark:text-yellow-400 mb-2">1. Identify the Block</p>
-                    <input value={block} onChange={e => setBlock(e.target.value)} placeholder="e.g., I can't write a good Irish essay" className="w-full bg-zinc-50 dark:bg-zinc-900/50 rounded-lg p-3 text-sm text-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
+                    <input value={block} onChange={e => setBlock(e.target.value)} placeholder="e.g., I can't write a good Irish essay" className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all" style={{ border: '1.5px solid #E7E5E4' }}/>
                 </div>
                 <div>
                     <p className="text-xs font-bold uppercase tracking-widest text-yellow-600 dark:text-yellow-400 mb-2">2. Add "Yet"</p>
-                    <div className={`p-3 rounded-lg text-sm min-h-[44px] border ${block ? 'bg-emerald-50 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800/40 text-emerald-700 dark:text-emerald-300' : 'bg-zinc-50 dark:bg-zinc-900/50 border-zinc-200 dark:border-zinc-700 text-zinc-400 dark:text-zinc-500'}`}>
+                    <div className="p-3 rounded-lg text-sm min-h-[44px]" style={block ? { backgroundColor: '#6EE7B7', border: '2px solid #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4', color: '#A1A1AA' }}>
                         {block ? `${block}... yet.` : '...'}
                     </div>
                 </div>
                 <div>
                     <p className="text-xs font-bold uppercase tracking-widest text-yellow-600 dark:text-yellow-400 mb-2">3. Bridge to Action</p>
-                    <input value={action} onChange={e => setAction(e.target.value)} placeholder="...so I will ask my teacher for one example tomorrow." className="w-full bg-zinc-50 dark:bg-zinc-900/50 rounded-lg p-3 text-sm text-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
+                    <input value={action} onChange={e => setAction(e.target.value)} placeholder="...so I will ask my teacher for one example tomorrow." className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all" style={{ border: '1.5px solid #E7E5E4' }}/>
                 </div>
             </div>
         </div>
@@ -529,7 +526,30 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
            {activeSection === 3 && (
             <ReadingSection title="The Action Bridge." eyebrow="Step 4" icon={Link} theme={theme}>
                 <p>"Yet" is powerful, but on its own it's just a nice thought. To actually make a difference, you need to follow it up with a real plan. That's the crucial third step: the <Highlight description="The specific, concrete thing you're going to do next to move from 'can't do it' to 'can do it'. It stops 'yet' from being empty words and turns it into actual progress." theme={theme}>Bridge to Action</Highlight>.</p>
-                <p>The full sentence isn't just "I can't do this yet." It's "I can't do this yet, *so I will*..." That extra bit stops "yet" from being an excuse and turns it into a starting point. It connects the positive thinking to an actual next step. Here's the full method: <strong>1. Identify the Block, 2. Add "Yet", 3. Bridge to Action.</strong></p>
+                <p>The full sentence isn't just "I can't do this yet." It's "I can't do this yet, *so I will*..." That extra bit stops "yet" from being an excuse and turns it into a starting point. It connects the positive thinking to an actual next step. Here's the full method:</p>
+                <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
+                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+                    <div>
+                      <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Identify the Block</p>
+                      <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>Name the specific thing you're struggling with right now.</p>
+                    </div>
+                  </div>
+                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
+                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                    <div>
+                      <p className="text-sm font-bold" style={{ color: '#78350F' }}>Add "Yet"</p>
+                      <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Turn your "I can't" into "I can't... yet." One word changes the whole meaning.</p>
+                    </div>
+                  </div>
+                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
+                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                    <div>
+                      <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Bridge to Action</p>
+                      <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>Finish the sentence with "...so I will" and a specific, concrete next step.</p>
+                    </div>
+                  </div>
+                </div>
                 <BridgeBuilder />
                 <MicroCommitment theme={theme}>
                   <p>Think of your toughest subject. Your Block might be "I can't understand Topic X." Your Bridge could be "I will watch one YouTube video explaining it tonight."</p>

@@ -25,7 +25,7 @@ const StudyPlannerInteractive = () => {
     const schedule = planType === 'blocked' ? blockedSchedule : interleavedSchedule;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Weekly Schedule Architect</h4>
             <div className="flex justify-center gap-2 p-1 bg-zinc-100 dark:bg-zinc-800 rounded-full my-6 max-w-sm mx-auto">
                 <button onClick={() => setPlanType('blocked')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${planType === 'blocked' ? 'bg-white dark:bg-zinc-700 shadow' : ''}`}>Blocked Schedule</button>
@@ -76,7 +76,7 @@ const ProblemTypeSpotter = () => {
     };
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Problem Spotter</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Calculus: Don't solve. Just identify the correct rule.</p>
              <p className="text-center text-xs font-semibold text-purple-600 dark:text-purple-400 mb-8">Score: {score}/{problems.length}</p>
@@ -129,12 +129,12 @@ const RetrospectiveRevisionLog = () => {
     }
 
     return (
-         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Retrospective Revision Log</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Update your confidence after studying. The "Worst First" rule will guide you.</p>
              <div className="space-y-3">
                 {topics.map(topic => (
-                    <div key={topic.name} className="p-3 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-lg flex justify-between items-center">
+                    <div key={topic.name} className="p-3 rounded-lg flex justify-between items-center" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 10, boxShadow: '3px 3px 0px 0px #1C1917' }}>
                         <span className="font-bold text-sm">{topic.name}</span>
                         <div className="flex gap-1">
                             <button aria-label="Mark as struggling (red)" onClick={() => updateStatus(topic.name, 'red')} className={`w-6 h-6 rounded-full border ${topic.status === 'red' ? 'bg-rose-500 border-rose-600' : 'bg-rose-200 border-rose-300'}`}></button>

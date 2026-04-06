@@ -113,8 +113,14 @@ const WorkingMemoryGrid = () => {
     setPhase('full');
   };
 
+  const threatenedCount = blocks.filter(b => b.threatened).length;
+  const productiveBlocks = blocks.filter(b => !b.threatened);
+  const intrusiveBlocks = blocks.filter(b => b.threatened);
+  const showBar = phase === 'threatened' && !animating;
+  const pctColor = percentage === 100 ? '#2A7D6F' : percentage < 70 ? '#DC2626' : '#D97706';
+
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
         Working Memory Under Threat
       </h4>
@@ -122,87 +128,130 @@ const WorkingMemoryGrid = () => {
         See how invisible pressure steals your brainpower — and how a simple exercise gives it back.
       </p>
 
-      {/* Percentage indicator */}
-      <div className="flex justify-center mb-6">
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100 dark:bg-zinc-700 rounded-full">
-          <span className="text-sm font-mono font-bold text-zinc-600 dark:text-zinc-300">
-            Working Memory:
-          </span>
+      {/* Capacity meter */}
+      <div className="max-w-md mx-auto mb-6">
+        <div className="flex items-baseline justify-between mb-2">
+          <span className="text-xs font-medium tracking-wider uppercase text-zinc-500">Brain Capacity</span>
           <MotionDiv
             key={percentage}
             initial={{ scale: 1.3, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-            className={`text-lg font-mono font-bold ${
-              percentage === 100
-                ? 'text-blue-600 dark:text-blue-400'
-                : percentage < 70
-                ? 'text-red-500 dark:text-red-400'
-                : 'text-amber-500 dark:text-amber-400'
-            }`}
+            className="font-serif font-bold text-xl"
+            style={{ color: pctColor }}
           >
             {percentage}%
           </MotionDiv>
         </div>
+        <div className="bg-white dark:bg-zinc-800" style={{ border: '2.5px solid #1C1917', borderRadius: 12, boxShadow: '3px 3px 0px 0px #1C1917', height: 20, overflow: 'hidden' }}>
+          <MotionDiv
+            className="h-full"
+            style={{ backgroundColor: pctColor }}
+            animate={{ width: `${percentage}%` }}
+            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          />
+        </div>
       </div>
 
-      {/* Grid */}
-      <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 max-w-md mx-auto mb-8">
-        {blocks.map((block, i) => (
-          <MotionDiv
-            key={i}
-            animate={{
-              scale: block.threatened ? [1, 0.9, 1] : 1,
-            }}
-            transition={{ type: 'spring', stiffness: 400, damping: 25 }}
-            className={`relative flex items-center justify-center rounded-lg h-16 sm:h-18 text-center px-1 ${
-              block.threatened
-                ? 'bg-red-100 dark:bg-red-900/40 border-2 border-red-300 dark:border-red-700'
-                : 'bg-blue-100 dark:bg-blue-900/40 border-2 border-blue-300 dark:border-blue-700'
-            }`}
-          >
+      {/* Grid view (visible when not in completed threatened state) */}
+      {!showBar && (
+        <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 max-w-md mx-auto mb-8">
+          {blocks.map((block, i) => (
             <MotionDiv
-              key={block.label}
-              initial={{ opacity: 0, y: 4 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3 }}
-              className={`text-xs font-bold leading-tight ${
-                block.threatened
-                  ? 'text-red-700 dark:text-red-300'
-                  : 'text-blue-700 dark:text-blue-300'
-              }`}
+              key={i}
+              animate={{ scale: block.threatened ? [1, 0.9, 1] : 1 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+              className="relative flex items-center justify-center h-16 text-center px-1"
+              style={{
+                backgroundColor: block.threatened ? '#FCA5A5' : '#93C5FD',
+                border: '2.5px solid #1C1917',
+                borderRadius: 12,
+                boxShadow: '3px 3px 0px 0px #1C1917',
+              }}
             >
-              {block.label}
+              <MotionDiv
+                key={block.label}
+                initial={{ opacity: 0, y: 4 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="text-xs font-bold leading-tight"
+                style={{ color: block.threatened ? '#991B1B' : '#1E3A8A' }}
+              >
+                {block.label}
+              </MotionDiv>
             </MotionDiv>
-          </MotionDiv>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
+
+      {/* Stacked bar view (visible when threat animation finished) */}
+      {showBar && (
+        <MotionDiv
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="max-w-md mx-auto mb-8"
+        >
+          <div className="flex" style={{ border: '2.5px solid #1C1917', borderRadius: 16, boxShadow: '4px 4px 0px 0px #1C1917', overflow: 'hidden', height: 80 }}>
+            {/* Productive segment */}
+            <div className="flex flex-col items-center justify-center" style={{ flex: activeCount, backgroundColor: '#2563EB', borderRight: threatenedCount > 0 ? '2.5px solid #1C1917' : 'none' }}>
+              <span className="text-[11px] font-medium uppercase tracking-wider" style={{ color: 'rgba(255,255,255,0.6)' }}>Productive</span>
+              <span className="font-serif font-bold text-2xl text-white">{percentage}%</span>
+            </div>
+            {/* Intrusive segment */}
+            {threatenedCount > 0 && (
+              <div className="flex flex-col items-center justify-center" style={{ flex: threatenedCount, backgroundColor: '#DC2626' }}>
+                <span className="text-[11px] font-medium uppercase tracking-wider" style={{ color: 'rgba(255,255,255,0.6)' }}>Intrusive</span>
+                <span className="font-serif font-bold text-2xl text-white">{100 - percentage}%</span>
+              </div>
+            )}
+          </div>
+
+          {/* Tag chips below the bar */}
+          <div className="flex gap-3 mt-3">
+            <div className="flex flex-wrap gap-1.5" style={{ flex: activeCount }}>
+              {productiveBlocks.map((b, i) => (
+                <span key={i} className="text-[11px] font-medium px-2.5 py-1" style={{ backgroundColor: '#EFF6FF', border: '1.5px solid #2563EB', borderRadius: 8, color: '#1E3A8A' }}>{b.label}</span>
+              ))}
+            </div>
+            <div className="flex flex-wrap gap-1.5" style={{ flex: threatenedCount }}>
+              {intrusiveBlocks.map((b, i) => (
+                <span key={i} className="text-[11px] font-medium px-2.5 py-1" style={{ backgroundColor: '#FEF2F2', border: '1.5px solid #DC2626', borderRadius: 8, color: '#7F1D1D' }}>{b.label}</span>
+              ))}
+            </div>
+          </div>
+        </MotionDiv>
+      )}
 
       {/* Buttons */}
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
         {phase === 'full' && (
-          <MotionButton
+          <motion.button
             onClick={handleSimulateThreat}
             disabled={animating}
-            whileHover={{ scale: 1.04 }}
-            whileTap={{ scale: 0.97 }}
-            className="px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-bold text-sm rounded-full shadow-lg transition-colors disabled:opacity-50"
+            className="px-6 py-3 text-white font-bold text-sm disabled:opacity-50"
+            style={{ backgroundColor: '#DC2626', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '4px 4px 0px 0px #1C1917' }}
+            whileHover={{ x: -2, y: -2, boxShadow: '6px 6px 0px 0px #1C1917' }}
+            whileTap={{ x: 2, y: 2, boxShadow: '1px 1px 0px 0px #1C1917' }}
+            transition={{ type: 'spring', stiffness: 400, damping: 25 }}
           >
             Simulate Exam Pressure
-          </MotionButton>
+          </motion.button>
         )}
         {phase === 'threatened' && (
-          <MotionButton
+          <motion.button
             onClick={handleActivateShield}
             disabled={animating}
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            whileHover={{ scale: 1.04 }}
-            whileTap={{ scale: 0.97 }}
-            className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold text-sm rounded-full shadow-lg transition-colors disabled:opacity-50"
+            className="px-6 py-3 text-white font-bold text-sm disabled:opacity-50"
+            style={{ backgroundColor: '#2A7D6F', border: '2.5px solid #1F5F54', borderRadius: 14, boxShadow: '4px 4px 0px 0px #1F5F54' }}
+            whileHover={{ x: -2, y: -2, boxShadow: '6px 6px 0px 0px #1F5F54' }}
+            whileTap={{ x: 2, y: 2, boxShadow: '1px 1px 0px 0px #1F5F54' }}
+            transition={{ type: 'spring', stiffness: 400, damping: 25 }}
           >
             Activate Shield (Values Affirmation)
-          </MotionButton>
+          </motion.button>
         )}
         {phase === 'restored' && (
           <MotionDiv
@@ -210,17 +259,21 @@ const WorkingMemoryGrid = () => {
             animate={{ opacity: 1, y: 0 }}
             className="flex flex-col items-center gap-3"
           >
-            <p className="text-sm font-bold text-blue-600 dark:text-blue-400 text-center">
-              Full capacity restored. Affirming your values frees your working memory.
-            </p>
-            <MotionButton
+            <div className="p-4 rounded-xl text-center" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669' }}>
+              <p className="text-sm font-bold" style={{ color: '#064E3B' }}>
+                Full capacity restored. Affirming your values frees your working memory.
+              </p>
+            </div>
+            <motion.button
               onClick={handleReset}
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.97 }}
-              className="px-5 py-2 bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-600 text-zinc-700 dark:text-zinc-200 font-bold text-sm rounded-full transition-colors"
+              className="px-5 py-2 font-bold text-sm"
+              style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
+              whileHover={{ x: -1, y: -1, boxShadow: '4px 4px 0px 0px #1C1917' }}
+              whileTap={{ x: 1, y: 1, boxShadow: '1px 1px 0px 0px #1C1917' }}
+              transition={{ type: 'spring', stiffness: 400, damping: 25 }}
             >
               Reset Demo
-            </MotionButton>
+            </motion.button>
           </MotionDiv>
         )}
       </div>
@@ -250,7 +303,7 @@ const ValuesSelector = ({ savedValues, onSave }: { savedValues?: string[]; onSav
     };
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Core Values Audit</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Select your top 3 most important personal values.</p>
              <div className="flex flex-wrap justify-center gap-3">
@@ -258,7 +311,8 @@ const ValuesSelector = ({ savedValues, onSave }: { savedValues?: string[]; onSav
                     <motion.button
                         key={value}
                         onClick={() => handleSelect(value)}
-                        className={`px-4 py-2 text-sm font-bold rounded-full border transition-all ${selected.includes(value) ? 'bg-blue-500 text-white border-blue-500' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700'}`}
+                        className={`px-4 py-2 text-sm font-bold rounded-full transition-all ${selected.includes(value) ? 'bg-blue-500 text-white' : ''}`}
+                        style={selected.includes(value) ? { border: '2.5px solid #1D4ED8', boxShadow: '3px 3px 0px 0px #1D4ED8' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', boxShadow: '3px 3px 0px 0px #1C1917' }}
                         whileHover={{y: -2}}
                     >
                         {value}

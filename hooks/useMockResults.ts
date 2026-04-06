@@ -66,7 +66,7 @@ export function useMockResults(uid: string | undefined) {
           }
         }
       } catch (e) {
-        console.error('Failed to load mock results:', e);
+        console.error('Failed to load mock results:');
       }
       if (!cancelled) setIsLoaded(true);
     };

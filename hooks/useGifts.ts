@@ -59,7 +59,7 @@ export function useGifts(uid?: string) {
           };
         }));
       } catch (err) {
-        console.error('[useGifts] Failed to load gifts:', err);
+        console.error('[useGifts] Failed to load gifts:');
       } finally {
         if (!cancelled) setIsLoading(false);
       }
@@ -119,7 +119,7 @@ export function useGifts(uid?: string) {
       await batch.commit();
       return true;
     } catch (err) {
-      console.error('[useGifts] Failed to send gift:', err);
+      console.error('[useGifts] Failed to send gift:');
       return false;
     }
   }, [uid]);
@@ -132,7 +132,7 @@ export function useGifts(uid?: string) {
       await batch.commit();
       setPendingGifts(prev => prev.filter(g => g.id !== giftId));
     } catch (err) {
-      console.error('[useGifts] Failed to mark gift placed:', err);
+      console.error('[useGifts] Failed to mark gift placed:');
     }
   }, []);
 

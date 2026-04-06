@@ -9,7 +9,7 @@ import { MotionDiv } from './Motion';
 import { Cpu, SlidersHorizontal, AlertTriangle, Activity, Wrench } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { fuchsiaTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = fuchsiaTheme;
@@ -96,7 +96,7 @@ const WorkingMemoryDemo = () => {
   if (phase === 'result') {
     const span = bestSpan || (results.find((r) => r.correct) ? Math.max(...results.filter((r) => r.correct).map((r) => r.length)) : 0);
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Working Memory Span</h4>
         <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">The longest sequence you recalled correctly.</p>
 
@@ -134,7 +134,7 @@ const WorkingMemoryDemo = () => {
   }
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Digit Span Test</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-6">How many digits can your working memory hold? Let's find out.</p>
 
@@ -187,7 +187,8 @@ const WorkingMemoryDemo = () => {
             value={userInput}
             onChange={(e) => setUserInput(e.target.value.replace(/[^0-9]/g, ''))}
             onKeyDown={(e) => { if (e.key === 'Enter' && userInput.length > 0) handleSubmit(); }}
-            className="w-48 mx-auto block text-center text-2xl font-mono font-bold tracking-widest p-3 rounded-xl border-2 border-fuchsia-300 dark:border-fuchsia-700 bg-zinc-50 dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100 focus:outline-none focus:border-fuchsia-500"
+            className="w-48 mx-auto block text-center text-2xl font-mono font-bold tracking-widest bg-white dark:bg-zinc-800 rounded-xl px-5 py-3 text-zinc-800 dark:text-white outline-none"
+            style={{ border: '1.5px solid #E7E5E4' }}
             autoFocus
             maxLength={sequenceLength}
             placeholder={'_'.repeat(sequenceLength)}
@@ -337,7 +338,7 @@ const CognitiveLoadComparison = () => {
   );
 
   return (
-    <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Mental Load in Action</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Two study sessions. Same material. Very different outcomes.</p>
 
@@ -415,7 +416,13 @@ const TheCognitiveLoadModule: React.FC<{ onBack: () => void; progress: ModulePro
           {activeSection === 1 && (
             <ReadingSection title="Three Kinds of Brain Drain." eyebrow="Step 2" icon={SlidersHorizontal} theme={theme}>
               <p>Researchers figured out that there are three types of mental load that compete for your brain's limited capacity. Understanding these three types is the key to making every study session count.</p>
-              <p>First: <Highlight description="Built-in difficulty is just how hard the topic naturally is. You can't make calculus as easy as basic addition, but you can break it into smaller pieces." theme={theme}>Built-in difficulty</Highlight> — this is just how hard the material naturally is. Higher Level Maths has more built-in difficulty than basic arithmetic. You can't change this; it comes with the subject. Second: <Highlight description="Wasted effort is all the brainpower you burn on things that have nothing to do with learning — phone notifications, messy notes, badly designed textbooks." theme={theme}>Wasted effort</Highlight> — mental energy burned on distractions, bad layouts, or chaotic study setups. This is pure waste. Third: <Highlight description="Actual learning effort is the brainpower you spend making sense of new ideas and connecting them to what you already know. This is the only type you want more of." theme={theme}>Actual learning effort</Highlight> — the energy you spend genuinely understanding new ideas, building connections, and making things stick. This is the good stuff.</p>
+              <ConceptCardGrid
+                cards={[
+                  { number: 1, term: "Built-in Difficulty", description: "Built-in difficulty is just how hard the topic naturally is. You can't make calculus as easy as basic addition, but you can break it into smaller pieces. Higher Level Maths has more built-in difficulty than basic arithmetic. You can't change this; it comes with the subject." },
+                  { number: 2, term: "Wasted Effort", description: "Wasted effort is all the brainpower you burn on things that have nothing to do with learning -- phone notifications, messy notes, badly designed textbooks. Mental energy burned on distractions, bad layouts, or chaotic study setups. This is pure waste." },
+                  { number: 3, term: "Actual Learning Effort", description: "Actual learning effort is the brainpower you spend making sense of new ideas and connecting them to what you already know. This is the only type you want more of. The energy you spend genuinely understanding new ideas, building connections, and making things stick. This is the good stuff." },
+                ]}
+              />
               <p>The research shows that good study setups work by cutting wasted effort so your brain has more room for real learning. The maths is simple: your brain's 4-item limit has to fit all three types at once. If distractions eat up 3 of those spots (phone buzzing, cluttered notes, badly laid-out materials), you've only got 1 spot left for actual learning. Flip that ratio, and suddenly your brain has room to build real understanding.</p>
               <CognitiveLoadComparison />
             </ReadingSection>

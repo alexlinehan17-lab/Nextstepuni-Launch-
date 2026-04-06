@@ -276,7 +276,7 @@ export function useRecommendation(
           setTopicMastery(data.topicMastery ?? undefined);
         }
       } catch (err) {
-        console.error('Failed to load data for recommendations:', err);
+        console.error('Failed to load data for recommendations:');
       }
       if (!cancelled) setIsLoaded(true);
     };

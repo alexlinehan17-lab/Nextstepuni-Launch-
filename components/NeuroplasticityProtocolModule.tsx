@@ -26,12 +26,13 @@ const JugglingStudyVisualizer = () => {
     const currentData = data[scan-1];
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Juggling Study</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Proof that learning physically changes the structure of your brain.</p>
              <div className="w-full max-w-xs mx-auto h-48 flex justify-center items-end">
                 <motion.div
-                    className="w-24 bg-orange-400 rounded-t-lg"
+                    className="w-24 rounded-t-lg"
+                    style={{ backgroundColor: '#2A7D6F' }}
                     initial={{height: '50%'}}
                     animate={{height: `${currentData.value}%`}}
                     transition={{type: 'spring', damping: 15, stiffness: 100}}
@@ -39,9 +40,23 @@ const JugglingStudyVisualizer = () => {
              </div>
              <p className="text-center font-bold mt-2 dark:text-zinc-300">{currentData.label}</p>
              <div className="flex justify-center gap-2 mt-4">
-                <button onClick={() => setScan(1)} className={`px-3 py-1 text-xs font-bold rounded-full ${scan===1 ? 'bg-orange-500 text-white' : 'bg-zinc-100 dark:bg-zinc-700 dark:text-zinc-300'}`}>Scan 1</button>
-                <button onClick={() => setScan(2)} className={`px-3 py-1 text-xs font-bold rounded-full ${scan===2 ? 'bg-orange-500 text-white' : 'bg-zinc-100 dark:bg-zinc-700 dark:text-zinc-300'}`}>Scan 2</button>
-                <button onClick={() => setScan(3)} className={`px-3 py-1 text-xs font-bold rounded-full ${scan===3 ? 'bg-orange-500 text-white' : 'bg-zinc-100 dark:bg-zinc-700 dark:text-zinc-300'}`}>Scan 3</button>
+                {[1, 2, 3].map(n => (
+                  <button
+                    key={n}
+                    onClick={() => setScan(n)}
+                    style={{
+                      backgroundColor: scan === n ? '#2A7D6F' : '#FFFFFF',
+                      border: scan === n ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+                      borderRadius: 100,
+                      padding: '8px 20px',
+                      fontSize: 13,
+                      fontWeight: 600,
+                      color: scan === n ? '#FFFFFF' : '#7a7068',
+                    }}
+                  >
+                    Scan {n}
+                  </button>
+                ))}
              </div>
         </div>
     );
@@ -50,12 +65,12 @@ const JugglingStudyVisualizer = () => {
 const StudyMethodGrader = () => {
     const [method, setMethod] = useState<'passive' | 'active' | null>(null);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Study Method Grader</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Which study method sends a stronger signal to build your brain?</p>
              <div className="grid grid-cols-2 gap-4">
-                <button onClick={() => setMethod('passive')} className="p-4 bg-rose-50 dark:bg-rose-900/30 dark:text-rose-300 border border-rose-200 dark:border-rose-800 rounded-xl text-center"><strong>Passive Re-reading:</strong> "I'll just read my notes again."</button>
-                <button onClick={() => setMethod('active')} className="p-4 bg-emerald-50 dark:bg-emerald-900/30 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 rounded-xl text-center"><strong>Active Recall:</strong> "I'll try to explain this from memory."</button>
+                <button onClick={() => setMethod('passive')} className="p-4 rounded-xl text-center font-medium transition-all" style={method === 'passive' ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}><strong>Passive Re-reading:</strong> "I'll just read my notes again."</button>
+                <button onClick={() => setMethod('active')} className="p-4 rounded-xl text-center font-medium transition-all" style={method === 'active' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}><strong>Active Recall:</strong> "I'll try to explain this from memory."</button>
              </div>
              {method &&
              <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6">
@@ -78,13 +93,12 @@ const GRID_COLS = 12;
 const GRID_ROWS = 8;
 const TOTAL_CELLS = GRID_COLS * GRID_ROWS;
 
-const getPathColor = (walked: number): string => {
-  if (walked <= 0) return '#4ade80'; // green-400 — fresh grass
-  if (walked === 1) return '#86efac'; // green-300 — slightly bent
-  if (walked === 2) return '#bef264'; // lime-300 — worn grass
-  if (walked === 3) return '#d9f99d'; // lime-200 — yellowing
-  if (walked === 4) return '#fde68a'; // amber-200 — well-trodden
-  return '#d4a373'; // warm brown — established dirt path
+const getPathStyle = (walked: number): { bg: string; border: string } => {
+  if (walked <= 0) return { bg: '#f0ece6', border: '#ddd8d0' };
+  if (walked === 1) return { bg: '#c8e8e0', border: '#a0d4c8' };
+  if (walked === 2) return { bg: '#8ecfbf', border: '#6ab8a4' };
+  if (walked >= 3) return { bg: '#2A7D6F', border: '#1a5a4e' };
+  return { bg: '#f0ece6', border: '#ddd8d0' };
 };
 
 const DesirePathMaker = () => {
@@ -194,87 +208,83 @@ const DesirePathMaker = () => {
   };
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
-        Desire Path Maker
-      </h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">
-        Click cells to walk on them. Repeat the same path to build strong connections -- or scatter your effort and watch them fade.
-      </p>
-
-      {/* Grid */}
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: `repeat(${GRID_COLS}, 1fr)`,
-          gap: '3px',
-          maxWidth: '480px',
-          margin: '0 auto',
-        }}
-      >
-        {grid.map((walked, idx) => (
-          <motion.div
-            key={idx}
-            onClick={() => handleCellClick(idx)}
-            style={{
-              backgroundColor: getPathColor(walked),
-              aspectRatio: '1',
-              borderRadius: '4px',
-              cursor: isAnimating ? 'default' : 'pointer',
-              transition: 'background-color 0.3s ease',
-            }}
-            whileHover={!isAnimating ? { scale: 1.2 } : undefined}
-            whileTap={!isAnimating ? { scale: 0.9 } : undefined}
-          />
-        ))}
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+      {/* Section chip + title */}
+      <div className="text-center mb-8">
+        <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)' }}>Interactive Simulation</span>
+        <h4 className="font-serif text-2xl font-bold" style={{ color: '#1a1a1a' }}>Desire Path Maker</h4>
+        <p className="text-sm mt-1" style={{ color: '#7a7068' }}>
+          Click cells to walk on them. Repeat the same path to build strong connections — or scatter your effort and watch them fade.
+        </p>
       </div>
 
-      {/* Counter */}
-      <p className="text-center text-sm font-semibold text-zinc-700 dark:text-zinc-300 mt-4">
-        Strong paths built: {strongPathCount(grid)}
-      </p>
+      {/* Grid in bordered card */}
+      <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 20, maxWidth: 520, margin: '0 auto' }}>
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: `repeat(${GRID_COLS}, 1fr)`,
+            gap: '4px',
+          }}
+        >
+          {grid.map((walked, idx) => {
+            const cs = getPathStyle(walked);
+            return (
+              <motion.div
+                key={idx}
+                onClick={() => handleCellClick(idx)}
+                style={{
+                  backgroundColor: cs.bg,
+                  border: `1.5px solid ${cs.border}`,
+                  aspectRatio: '1',
+                  borderRadius: 8,
+                  cursor: isAnimating ? 'default' : 'pointer',
+                  transition: 'background-color 0.3s ease, border-color 0.3s ease',
+                }}
+                whileHover={!isAnimating ? { scale: 1.05 } : undefined}
+                whileTap={!isAnimating ? { scale: 0.9 } : undefined}
+              />
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Stat card */}
+      <div className="flex justify-center mt-4">
+        <div className="inline-flex items-center gap-3" style={{ backgroundColor: '#e8f5f2', border: '1.5px solid rgba(42,125,111,0.25)', borderRadius: 12, padding: '10px 20px' }}>
+          <span className="font-serif font-bold" style={{ fontSize: 28, color: '#2A7D6F' }}>{strongPathCount(grid)}</span>
+          <span className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: '#9e9186', letterSpacing: '0.08em' }}>Strong paths<br/>built</span>
+        </div>
+      </div>
 
       {/* Controls */}
-      <div className="flex flex-wrap justify-center gap-3 mt-6">
-        <button
-          onClick={handleDaysPass}
-          disabled={isAnimating}
-          className="px-4 py-2 text-xs font-bold rounded-full bg-zinc-100 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200 hover:bg-zinc-200 dark:hover:bg-zinc-600 disabled:opacity-40 transition-colors"
-        >
+      <div className="flex flex-wrap justify-center gap-2 mt-6">
+        <button onClick={handleDaysPass} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: '#1a1a1a' }}>
           Days Pass (Decay)
         </button>
-        <button
-          onClick={handleCramming}
-          disabled={isAnimating}
-          className="px-4 py-2 text-xs font-bold rounded-full bg-rose-100 dark:bg-rose-900 text-rose-700 dark:text-rose-200 hover:bg-rose-200 dark:hover:bg-rose-800 disabled:opacity-40 transition-colors"
-        >
+        <button onClick={handleCramming} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: '#FFFFFF', border: '2px solid #d0cdc8', borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: '#7a7068' }}>
+          <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: '#E85D75', display: 'inline-block' }} />
           Cramming Pattern
         </button>
-        <button
-          onClick={handleSpacedRepetition}
-          disabled={isAnimating}
-          className="px-4 py-2 text-xs font-bold rounded-full bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-200 hover:bg-emerald-200 dark:hover:bg-emerald-800 disabled:opacity-40 transition-colors"
-        >
-          Spaced Repetition Pattern
+        <button onClick={handleSpacedRepetition} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: '#1a6358' }}>
+          <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: '#2A7D6F', display: 'inline-block' }} />
+          Spaced Repetition
         </button>
-        <button
-          onClick={handleReset}
-          disabled={isAnimating}
-          className="px-4 py-2 text-xs font-bold rounded-full bg-zinc-100 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200 hover:bg-zinc-200 dark:hover:bg-zinc-600 disabled:opacity-40 transition-colors"
-        >
+        <button onClick={handleReset} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: '#FFFFFF', border: '2px solid #d0cdc8', borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: '#b0a898' }}>
           Reset
         </button>
       </div>
 
-      {/* Result message after animation */}
+      {/* Result message */}
       {resultMessage && (
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center text-sm font-medium text-zinc-600 dark:text-zinc-300 mt-4 px-4"
+          className="mt-4 max-w-lg mx-auto"
+          style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
         >
-          {resultMessage}
-        </motion.p>
+          <p className="text-sm italic" style={{ color: '#1a6358' }}>{resultMessage}</p>
+        </motion.div>
       )}
     </div>
   );

@@ -211,7 +211,7 @@ const DeliberatePracticeWheel: React.FC = () => {
   const ringCircumference = 2 * Math.PI * ringRadius;
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
         Deliberate Practice Wheel
       </h4>

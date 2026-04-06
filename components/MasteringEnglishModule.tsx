@@ -84,7 +84,7 @@ const ShowDontTellConverter = () => {
   const pair = SHOW_DONT_TELL_PAIRS[currentIndex];
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
         Show, Don't Tell Converter
       </h4>
@@ -164,14 +164,14 @@ const ShowDontTellConverter = () => {
                   onChange={(e) => handleInputChange(e.target.value)}
                   placeholder="Rewrite the sentence using sensory details, actions, and specific imagery..."
                   rows={3}
-                  className="w-full rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 resize-none"
+                  className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none resize-none" style={{ border: '1.5px solid #E7E5E4' }}
                 />
                 <button
                   onClick={handleReveal}
                   disabled={!userInputs[currentIndex].trim()}
                   className={`w-full py-3 rounded-lg font-medium transition-all duration-200 ${
                     userInputs[currentIndex].trim()
-                      ? 'bg-blue-500 hover:bg-blue-600 text-white shadow-md shadow-blue-500/20'
+                      ? 'bg-blue-500 hover:bg-blue-600 text-white'
                       : 'bg-zinc-200 dark:bg-zinc-700 text-zinc-400 dark:text-zinc-500 cursor-not-allowed'
                   }`}
                 >
@@ -215,7 +215,7 @@ const ShowDontTellConverter = () => {
                 {/* Next button */}
                 <button
                   onClick={handleNext}
-                  className="w-full py-3 rounded-lg font-medium bg-emerald-500 hover:bg-emerald-600 text-white transition-colors duration-200 shadow-md shadow-emerald-500/20"
+                  className="w-full py-3 rounded-lg font-medium bg-emerald-500 hover:bg-emerald-600 text-white transition-colors duration-200"
                 >
                   {currentIndex < 4 ? 'Next Sentence' : 'View Summary'}
                 </button>

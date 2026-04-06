@@ -38,7 +38,7 @@ const MindsetDiagnostic = ({ savedAnswers, onSaveAnswers }: { savedAnswers?: ('f
   const isComplete = answers.every(a => a !== null);
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Mindset Diagnostic</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Which thought sounds more like you in a tough situation?</p>
       <div className="space-y-6">
@@ -46,34 +46,34 @@ const MindsetDiagnostic = ({ savedAnswers, onSaveAnswers }: { savedAnswers?: ('f
         <div>
           <p className="text-sm font-bold text-center text-zinc-600 dark:text-zinc-300 mb-3">When I fail at something...</p>
           <div className="grid grid-cols-2 gap-3">
-            <button onClick={() => handleAnswer(0, 'fixed')} className={`p-4 rounded-xl text-xs text-center border ${answers[0] === 'fixed' ? 'bg-rose-500 text-white border-rose-500' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}>A) I feel like I'm a failure.</button>
-            <button onClick={() => handleAnswer(0, 'growth')} className={`p-4 rounded-xl text-xs text-center border ${answers[0] === 'growth' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}>B) I feel like I need to try a new strategy.</button>
+            <button onClick={() => handleAnswer(0, 'fixed')} className="p-4 rounded-xl text-xs text-center font-medium transition-all" style={answers[0] === 'fixed' ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}>A) I feel like I'm a failure.</button>
+            <button onClick={() => handleAnswer(0, 'growth')} className="p-4 rounded-xl text-xs text-center font-medium transition-all" style={answers[0] === 'growth' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}>B) I feel like I need to try a new strategy.</button>
           </div>
         </div>
         {/* Question 2 */}
          <div>
           <p className="text-sm font-bold text-center text-zinc-600 dark:text-zinc-300 mb-3">If a subject is hard for me...</p>
           <div className="grid grid-cols-2 gap-3">
-            <button onClick={() => handleAnswer(1, 'fixed')} className={`p-4 rounded-xl text-xs text-center border ${answers[1] === 'fixed' ? 'bg-rose-500 text-white border-rose-500' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}>A) It means I'm probably not smart enough for it.</button>
-            <button onClick={() => handleAnswer(1, 'growth')} className={`p-4 rounded-xl text-xs text-center border ${answers[1] === 'growth' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}>B) It means I have a great opportunity to learn.</button>
+            <button onClick={() => handleAnswer(1, 'fixed')} className="p-4 rounded-xl text-xs text-center font-medium transition-all" style={answers[1] === 'fixed' ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}>A) It means I'm probably not smart enough for it.</button>
+            <button onClick={() => handleAnswer(1, 'growth')} className="p-4 rounded-xl text-xs text-center font-medium transition-all" style={answers[1] === 'growth' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}>B) It means I have a great opportunity to learn.</button>
           </div>
         </div>
         {/* Question 3 */}
          <div>
           <p className="text-sm font-bold text-center text-zinc-600 dark:text-zinc-300 mb-3">I believe my intelligence is something...</p>
           <div className="grid grid-cols-2 gap-3">
-            <button onClick={() => handleAnswer(2, 'fixed')} className={`p-4 rounded-xl text-xs text-center border ${answers[2] === 'fixed' ? 'bg-rose-500 text-white border-rose-500' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}>A) That I can't change very much.</button>
-            <button onClick={() => handleAnswer(2, 'growth')} className={`p-4 rounded-xl text-xs text-center border ${answers[2] === 'growth' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}>B) That I can grow with effort.</button>
+            <button onClick={() => handleAnswer(2, 'fixed')} className="p-4 rounded-xl text-xs text-center font-medium transition-all" style={answers[2] === 'fixed' ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}>A) That I can't change very much.</button>
+            <button onClick={() => handleAnswer(2, 'growth')} className="p-4 rounded-xl text-xs text-center font-medium transition-all" style={answers[2] === 'growth' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}>B) That I can grow with effort.</button>
           </div>
         </div>
       </div>
       <AnimatePresence>
       {isComplete && (
-        <motion.div initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} className="mt-8 p-6 rounded-xl bg-zinc-900 text-white">
+        <motion.div initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} className="mt-8 p-6 rounded-xl" style={score === 3 ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669' } : score === 2 ? { backgroundColor: '#FDE68A', border: '2.5px solid #D97706', boxShadow: '3px 3px 0px 0px #D97706' } : { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', boxShadow: '3px 3px 0px 0px #DC2626' }}>
           <p className="text-center font-bold">
-            {score === 3 && <span className="text-emerald-400">Result: You're operating with a strong Growth Mindset OS!</span>}
-            {score === 2 && <span className="text-amber-400">Result: You're leaning towards Growth, with some Fixed-Mindset code still running.</span>}
-            {score < 2 && <span className="text-rose-400">Result: Your system is currently running a Fixed-Mindset OS. Time for an upgrade!</span>}
+            {score === 3 && <span style={{ color: '#064E3B' }}>Result: You're operating with a strong Growth Mindset OS!</span>}
+            {score === 2 && <span style={{ color: '#78350F' }}>Result: You're leaning towards Growth, with some Fixed-Mindset code still running.</span>}
+            {score < 2 && <span style={{ color: '#7F1D1D' }}>Result: Your system is currently running a Fixed-Mindset OS. Time for an upgrade!</span>}
           </p>
         </motion.div>
       )}
@@ -84,37 +84,94 @@ const MindsetDiagnostic = ({ savedAnswers, onSaveAnswers }: { savedAnswers?: ('f
 
 const NeuroplasticityVisualizer = () => {
   const [connections, setConnections] = useState(0);
+  const milestone = connections === 1 ? 'First connection forming.' : connections === 3 ? 'Pathway strengthening — repetition is working.' : connections === 5 ? 'Strong neural pathway established.' : null;
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Brain Rewiring Simulator</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Every time you practice, you strengthen the physical connections in your brain.</p>
-
-      <div className="h-40 flex justify-center items-center">
-        <svg width="250" height="100" viewBox="0 0 250 100">
-          {/* Neurons */}
-          <circle cx="50" cy="50" r="20" fill="#f59e0b" />
-          <circle cx="200" cy="50" r="20" fill="#f59e0b" />
-          <AnimatePresence>
-            {connections > 0 && Array.from({length: connections}).map((_, i) => (
-              <motion.path
-                key={i}
-                d={`M 70 50 Q 125 ${50 + (i - (connections-1)/2) * 15} 180 50`}
-                fill="none"
-                stroke="#f59e0b"
-                initial={{ pathLength: 0, opacity: 0, strokeWidth: 1 }}
-                animate={{ pathLength: 1, opacity: Math.max(0.1, i / connections), strokeWidth: 1 + i*0.5 }}
-                transition={{ duration: 0.5 }}
-              />
-            ))}
-          </AnimatePresence>
-        </svg>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+      <div className="text-center mb-8">
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
+        <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>The Brain Rewiring Simulator</h4>
+        <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Every time you practice, you strengthen the physical connections in your brain.</p>
       </div>
-      <div className="text-center">
-        <button onClick={() => setConnections(c => Math.min(c + 1, 5))} className="px-6 py-3 bg-amber-500 text-white font-bold rounded-lg hover:bg-amber-600 transition-colors">
+
+      {/* SVG card */}
+      <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 28, maxWidth: 380, margin: '0 auto' }}>
+        <p className="text-center mb-3" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', textTransform: 'uppercase' as const }}>Neural Pathway</p>
+
+        <svg width="250" height="100" viewBox="0 0 250 100" style={{ display: 'block', margin: '0 auto' }}>
+          {/* Base placeholder connection */}
+          <path d="M 70 50 Q 125 50 180 50" fill="none" stroke="#e0dbd4" strokeWidth="1" opacity="0.5" />
+
+          {/* Connection arcs */}
+          <AnimatePresence>
+            {connections > 0 && Array.from({length: connections}).map((_, i) => {
+              const age = connections - 1 - i;
+              const opacity = Math.max(0.12, 0.9 - age * 0.12);
+              const sw = Math.max(1.0, 2.5 - age * 0.3);
+              return (
+                <motion.path
+                  key={i}
+                  d={`M 70 50 Q 125 ${50 + (i - (connections-1)/2) * 15} 180 50`}
+                  fill="none"
+                  stroke="#2A7D6F"
+                  initial={{ pathLength: 0, opacity: 0, strokeWidth: sw }}
+                  animate={{ pathLength: 1, opacity, strokeWidth: sw }}
+                  transition={{ duration: 0.5 }}
+                />
+              );
+            })}
+          </AnimatePresence>
+
+          {/* Neuron A */}
+          <circle cx="50" cy="50" r="20" fill="#2A7D6F" stroke="#1a5a4e" strokeWidth="2" />
+          <circle cx="50" cy="50" r="8" fill="rgba(255,255,255,0.25)" />
+          {/* Neuron B */}
+          <circle cx="200" cy="50" r="20" fill="#2A7D6F" stroke="#1a5a4e" strokeWidth="2" />
+          <circle cx="200" cy="50" r="8" fill="rgba(255,255,255,0.25)" />
+
+          {/* Node labels */}
+          <text x="50" y="82" textAnchor="middle" fontSize="11" fill="#9e9186" fontFamily="DM Sans, sans-serif">Neuron A</text>
+          <text x="200" y="82" textAnchor="middle" fontSize="11" fill="#9e9186" fontFamily="DM Sans, sans-serif">Neuron B</text>
+        </svg>
+
+        {/* Connection count */}
+        <div className="text-center mt-3 pt-3" style={{ borderTop: '1px solid #e8e0d8' }}>
+          <p style={{ fontSize: 12, color: '#9e9186' }}>{connections} connection{connections !== 1 ? 's' : ''} formed</p>
+        </div>
+      </div>
+
+      {/* Milestone callout */}
+      {milestone && (
+        <motion.div
+          key={milestone}
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mt-4 max-w-sm mx-auto"
+          style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
+        >
+          <p className="text-sm italic" style={{ color: '#1a6358' }}>{milestone}</p>
+        </motion.div>
+      )}
+
+      {/* Buttons */}
+      <div className="flex items-center justify-center gap-5 mt-6">
+        <motion.button
+          onClick={() => setConnections(c => Math.min(c + 1, 5))}
+          whileTap={{ y: 3 }}
+          className="text-white font-semibold"
+          style={{ backgroundColor: '#2A7D6F', borderRadius: 100, padding: '14px 32px', fontSize: 15, borderBottom: '3px solid #1a5a4e', boxShadow: '0 4px 0 #1a5a4e' }}
+        >
           Practice a Skill
+        </motion.button>
+        <button
+          onClick={() => setConnections(0)}
+          className="font-medium"
+          style={{ fontSize: 13, color: '#9e9186', background: 'none', border: 'none' }}
+          onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#5a5550'; }}
+          onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#9e9186'; }}
+        >
+          Reset
         </button>
-        <button onClick={() => setConnections(0)} className="ml-4 text-xs text-zinc-400">Reset</button>
       </div>
     </div>
   );
@@ -129,26 +186,54 @@ const ReframeChallenge = ({ savedText, onSave }: { savedText?: string; onSave?: 
     }, [savedText]);
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "Yet" Reframe Challenge</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Upgrade this fixed thought into a growth mindset statement using the power of "yet".</p>
-            <div className="p-6 bg-rose-50 border border-rose-200 rounded-xl mb-4">
-                <p className="text-rose-800 text-center font-mono"><strong>Fixed Thought:</strong> "I'm just not a maths person."</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+            <div className="text-center mb-8">
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Growth Mindset Activity</span>
+                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>The "Yet" Reframe Challenge</h4>
+                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Upgrade this fixed thought into a growth mindset statement using the power of "yet".</p>
             </div>
-            <textarea
-                value={reframe}
-                onChange={(e) => setReframe(e.target.value)}
-                onBlur={() => onSave?.(reframe)}
-                placeholder="Your growth reframe..."
-                className="w-full h-24 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl p-4 focus:border-amber-500 outline-none transition-colors"
-            />
-             <AnimatePresence>
-                {containsYet && (
-                <motion.div initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} className="mt-4 p-4 rounded-xl bg-emerald-50 text-emerald-700 text-center text-sm font-bold">
-                    Excellent! You've opened up the possibility of future growth.
-                </motion.div>
-                )}
-            </AnimatePresence>
+
+            {/* Fixed thought card */}
+            <div className="bg-white dark:bg-zinc-900 max-w-lg mx-auto" style={{ border: '2px solid #1a1a1a', borderRadius: 14, borderLeft: '4px solid #E85D75', padding: '20px 24px' }}>
+                <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: '#fde4e4', color: '#b33030', borderRadius: 20, padding: '3px 10px' }}>Fixed Mindset Thought</span>
+                <p className="font-serif italic" style={{ fontSize: 17, color: '#1a1a1a' }}>I'm just not a maths person.</p>
+            </div>
+
+            {/* Transformation connector */}
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '16px 0' }}>
+                <div style={{ width: 2, height: 20, background: '#d0cdc8' }} />
+                <div style={{ background: '#e8f5f2', border: '1.5px solid rgba(42,125,111,0.3)', borderRadius: 20, padding: '6px 14px' }}>
+                    <span style={{ fontSize: 12, fontWeight: 700, color: '#1a6358', letterSpacing: '0.05em' }}>ADD "YET"</span>
+                </div>
+                <div style={{ width: 2, height: 20, background: '#d0cdc8' }} />
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
+                    <path d="M1 1L8 8L15 1" stroke="#2A7D6F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+            </div>
+
+            {/* Rewrite area */}
+            <div className="max-w-lg mx-auto" style={{ backgroundColor: '#f0faf8', border: '2px solid #2A7D6F', borderRadius: 14, padding: '18px 20px' }}>
+                <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-3" style={{ backgroundColor: '#d0ede8', color: '#1a6358', borderRadius: 20, padding: '3px 10px' }}>Your Reframe</span>
+                <textarea
+                    value={reframe}
+                    onChange={(e) => setReframe(e.target.value)}
+                    onBlur={() => onSave?.(reframe)}
+                    placeholder="Rewrite this using the word 'yet'..."
+                    className="w-full outline-none font-serif"
+                    style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '14px 16px', fontSize: 15, color: '#1a1a1a', lineHeight: 1.6, minHeight: 100, resize: 'none' as const }}
+                    onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }}
+                    onBlurCapture={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }}
+                />
+
+                <AnimatePresence>
+                    {containsYet && (
+                        <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} style={{ marginTop: 12, backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '16px 20px', textAlign: 'center' }}>
+                            <p className="font-serif font-semibold" style={{ fontSize: 16, color: '#1a6358' }}>Reframe complete.</p>
+                            <p style={{ fontSize: 13, color: '#2A7D6F', marginTop: 4 }}>You've opened up the possibility of future growth.</p>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </div>
         </div>
     );
 };
@@ -208,56 +293,56 @@ const FeedbackTranslator = () => {
   };
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
-        Feedback Translator
-      </h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-2">
-        Click each card to translate harsh "verdict language" into constructive "data language."
-      </p>
-      <p className="text-center text-xs font-semibold text-amber-600 dark:text-amber-400 mb-8">
-        {translatedCount}/6 translated
-      </p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+      <div className="text-center mb-2">
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Interactive Activity</span>
+        <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Feedback Translator</h4>
+        <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Tap each card to translate harsh "verdict language" into constructive "data language."</p>
+      </div>
 
-      <div className="space-y-4">
+      {/* Progress chip */}
+      <div className="flex justify-center mb-8 mt-3">
+        <div className="inline-flex items-center gap-2" style={{ backgroundColor: '#e8f5f2', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '5px 14px' }}>
+          <span style={{ fontSize: 13, fontWeight: 600, color: '#1a6358' }}>
+            {allTranslated ? `All ${feedbackPairs.length} translated ✓` : `${translatedCount} / ${feedbackPairs.length} translated`}
+          </span>
+        </div>
+      </div>
+
+      <div className="space-y-3">
         {feedbackPairs.map((pair, i) => (
           <div key={i}>
             <AnimatePresence mode="wait">
               {!flipped[i] ? (
                 <MotionDiv
                   key={`verdict-${i}`}
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 1 }}
                   exit={{ opacity: 0, rotateY: 90 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.25 }}
                   onClick={() => handleFlip(i)}
-                  className="cursor-pointer p-6 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 hover:shadow-md transition-shadow"
+                  className="cursor-pointer bg-white dark:bg-zinc-900"
+                  style={{ border: '2px solid #1a1a1a', borderLeft: '4px solid #E85D75', borderRadius: 14, padding: '20px 22px' }}
                 >
-                  <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-rose-500 dark:text-rose-400 mb-2">
-                    Verdict
-                  </span>
-                  <p className="font-serif italic text-rose-800 dark:text-rose-200 text-base">
-                    "{pair.verdict}"
+                  <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: '#fde4e4', color: '#b33030', borderRadius: 20, padding: '3px 10px', letterSpacing: '0.1em' }}>Verdict Language</span>
+                  <p className="font-serif italic mt-2" style={{ fontSize: 16, color: '#1a1a1a' }}>{pair.verdict}</p>
+                  <p className="flex items-center gap-1.5 mt-3" style={{ fontSize: 12, color: '#9e9186' }}>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#9e9186" strokeWidth="2" strokeLinecap="round"><path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"/></svg>
+                    Tap to translate
                   </p>
-                  <p className="text-[11px] text-rose-400 dark:text-rose-500 mt-2">Click to translate</p>
                 </MotionDiv>
               ) : (
                 <MotionDiv
                   key={`data-${i}`}
                   initial={{ opacity: 0, rotateY: -90 }}
                   animate={{ opacity: 1, rotateY: 0 }}
-                  transition={{ duration: 0.35 }}
-                  className="p-6 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800"
+                  transition={{ duration: 0.3 }}
+                  className="relative"
+                  style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '20px 22px' }}
                 >
-                  <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-emerald-500 dark:text-emerald-400 mb-2">
-                    Data
-                  </span>
-                  <p className="text-emerald-900 dark:text-emerald-100 text-base font-medium">
-                    "{pair.data}"
-                  </p>
-                  <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-3 italic">
-                    {pair.shift}
-                  </p>
+                  <span className="absolute top-4 right-4 font-bold" style={{ fontSize: 16, color: '#2A7D6F' }}>✓</span>
+                  <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: '#d0ede8', color: '#1a6358', borderRadius: 20, padding: '3px 10px', letterSpacing: '0.1em' }}>Data Language</span>
+                  <p className="font-serif mt-2" style={{ fontSize: 16, color: '#1a1a1a' }}>{pair.data}</p>
+                  <p className="italic mt-3" style={{ fontSize: 13, color: '#2A7D6F' }}>{pair.shift}</p>
                 </MotionDiv>
               )}
             </AnimatePresence>
@@ -265,75 +350,52 @@ const FeedbackTranslator = () => {
         ))}
       </div>
 
+      {/* Completion */}
       <AnimatePresence>
         {allTranslated && (
-          <MotionDiv
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="mt-8 p-6 rounded-xl bg-zinc-900 text-white text-center"
-          >
-            <p className="font-bold text-emerald-400">
-              You've learned to hear data, not verdicts.
-            </p>
-            <p className="text-sm text-zinc-400 mt-1">
-              Every piece of feedback is a GPS coordinate, not a destination.
-            </p>
+          <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="mt-6" style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 16, padding: '20px 24px', textAlign: 'center' }}>
+            <p className="font-serif font-semibold" style={{ fontSize: 18, color: '#1a6358' }}>Translation complete.</p>
+            <p style={{ fontSize: 14, color: '#2A7D6F', marginTop: 4 }}>You can now hear feedback as information, not judgment.</p>
           </MotionDiv>
         )}
       </AnimatePresence>
 
-      {/* Write Your Own section */}
-      <div className="mt-10 pt-8 border-t border-zinc-200 dark:border-zinc-700">
-        <h5 className="font-serif text-lg font-semibold text-zinc-800 dark:text-white text-center mb-2">
-          Write Your Own
-        </h5>
-        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-4">
-          Type a piece of feedback you've received, then pick the translation that fits best.
-        </p>
+      {/* Write Your Own */}
+      <div className="mt-10 pt-8" style={{ borderTop: '1px solid #e8e0d8' }}>
+        <h5 className="font-serif font-semibold text-center mb-2" style={{ fontSize: 18, color: '#1a1a1a' }}>Write Your Own</h5>
+        <p className="text-center text-sm mb-4" style={{ color: '#7a7068' }}>Type a piece of feedback you've received, then pick the translation that fits best.</p>
         <input
           type="text"
           value={customFeedback}
-          onChange={(e) => {
-            setCustomFeedback(e.target.value);
-            setSelectedTranslation(null);
-          }}
+          onChange={(e) => { setCustomFeedback(e.target.value); setSelectedTranslation(null); }}
           placeholder="e.g. You always make silly mistakes..."
-          className="w-full bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 rounded-xl px-4 py-3 text-sm focus:border-amber-500 outline-none transition-colors"
+          className="w-full outline-none"
+          style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '14px 16px', fontSize: 14, color: '#1a1a1a' }}
+          onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }}
+          onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }}
         />
         <AnimatePresence>
           {customFeedback.trim().length > 0 && (
-            <MotionDiv
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              className="mt-4 space-y-3"
-            >
-              <p className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-                Pick your growth translation:
-              </p>
+            <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} className="mt-4 space-y-3">
+              <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', textTransform: 'uppercase' as const }}>Pick your growth translation:</p>
               {writeYourOwnTranslations.map((t, i) => (
                 <button
                   key={i}
                   onClick={() => setSelectedTranslation(i)}
-                  className={`w-full text-left p-4 rounded-xl border text-sm transition-colors ${
-                    selectedTranslation === i
-                      ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-300 dark:border-emerald-700 text-emerald-800 dark:text-emerald-200 font-medium'
-                      : 'bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800'
-                  }`}
+                  className="w-full text-left text-sm font-medium transition-all"
+                  style={selectedTranslation === i
+                    ? { backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '16px 20px', color: '#1a6358' }
+                    : { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 14, padding: '16px 20px', color: '#1a1a1a', cursor: 'pointer' }
+                  }
                 >
                   {t}
                 </button>
               ))}
               <AnimatePresence>
                 {selectedTranslation !== null && (
-                  <MotionDiv
-                    initial={{ opacity: 0, y: 6 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-center"
-                  >
-                    <p className="text-sm text-emerald-700 dark:text-emerald-300 font-medium">
-                      You just turned a verdict into data. That's the growth mindset in action.
-                    </p>
+                  <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '16px 20px', textAlign: 'center' }}>
+                    <p className="font-serif font-semibold" style={{ fontSize: 16, color: '#1a6358' }}>You just turned a verdict into data.</p>
+                    <p style={{ fontSize: 13, color: '#2A7D6F', marginTop: 4 }}>That's the growth mindset in action.</p>
                   </MotionDiv>
                 )}
               </AnimatePresence>

@@ -612,7 +612,7 @@ export function useInsights(
           setDebriefs(data.studyDebriefs ?? []);
         }
       } catch (err) {
-        console.error('Failed to load study sessions for insights:', err);
+        console.error('Failed to load study sessions for insights:');
       }
       if (!cancelled) setIsLoaded(true);
     };

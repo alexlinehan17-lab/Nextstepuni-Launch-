@@ -126,15 +126,17 @@ const AttributionMapper = ({ savedValues, onSave }: { savedValues?: { locus: num
     },
   ];
 
+  const SLIDER_COLORS = ['chunky-slider-sky', 'chunky-slider-sunshine', 'chunky-slider-mint'];
+
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Attribution Mapper</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-10">
         Think of a recent setback or bad result. Map how you interpreted it:
       </p>
 
       <div className="space-y-8">
-        {sliders.map((s) => (
+        {sliders.map((s, index) => (
           <div key={s.label}>
             <p className="text-sm font-bold text-zinc-700 dark:text-zinc-200 mb-1 text-center">{s.label}</p>
             <div className="flex items-center gap-3">
@@ -148,7 +150,7 @@ const AttributionMapper = ({ savedValues, onSave }: { savedValues?: { locus: num
                 max={100}
                 value={s.value}
                 onChange={(e) => handleSliderChange(s.dimension, Number(e.target.value))}
-                className="w-full"
+                className={`chunky-slider ${SLIDER_COLORS[index % 3]}`}
               />
               <div className="flex flex-col items-start w-28 shrink-0">
                 <span className="text-xs font-semibold text-zinc-600 dark:text-zinc-300">{s.rightLabel}</span>
@@ -191,12 +193,12 @@ const AttributionSorter = ({ savedChoices, onSave }: { savedChoices?: { [key: st
     }, [savedChoices]);
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Control Panel</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Scenario: You fail a test. Which of these reasons are actually within your control?</p>
             <div className="space-y-3">
                 {reasons.map(reason => (
-                    <button key={reason.text} onClick={() => { const next = {...choice, [reason.text]: !choice[reason.text]}; setChoice(next); onSave?.(next); }} className={`w-full p-4 rounded-xl border text-left font-bold text-sm transition-all ${choice[reason.text] ? (reason.control ? 'bg-emerald-50 border-emerald-300' : 'bg-rose-50 border-rose-300') : 'bg-zinc-50 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}>
+                    <button key={reason.text} onClick={() => { const next = {...choice, [reason.text]: !choice[reason.text]}; setChoice(next); onSave?.(next); }} className={`w-full p-4 rounded-xl text-left font-bold text-sm transition-all`} style={choice[reason.text] ? (reason.control ? { backgroundColor: '#ECFDF5', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669' } : { backgroundColor: '#FEF2F2', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626' }) : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}>
                         {reason.text}
                         {choice[reason.text] && <span className={`ml-2 font-semibold text-xs ${reason.control ? 'text-emerald-600' : 'text-rose-600'}`}>{reason.control ? '(CONTROLLABLE)' : '(UNCONTROLLABLE)'}</span>}
                     </button>
@@ -224,7 +226,7 @@ const AttributionReframeDrill = () => {
   };
 
   return (
-    <div className="my-10 p-8 md:p-10 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Attribution Reframe Drill</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Click on a self-defeating thought to transform it into an empowering one.</p>
       <div className="space-y-3">
@@ -298,7 +300,33 @@ const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleP
           )}
           {activeSection === 1 && (
             <ReadingSection title="The Three Dimensions." eyebrow="Step 2" icon={SlidersHorizontal} theme={theme}>
-              <p>Every story you tell yourself about a failure can be broken down along three dimensions. <strong>1. Locus of Control:</strong> Is the cause <Highlight description="You're saying the cause is something about you — like how much effort you put in or how you prepared." theme={theme}>Internal</Highlight> (about you) or <Highlight description="You're saying the cause is something outside of you — like the teacher, the exam, or bad luck." theme={theme}>External</Highlight> (about the world)? <strong>2. Stability:</strong> Is the cause <Highlight description="You're saying this is permanent — it's always been this way and always will be. Like thinking 'I'm just not a maths person.'" theme={theme}>Stable</Highlight> (permanent) or <Highlight description="You're saying this is temporary — it happened this time but it's not a forever thing. Like thinking 'I didn't study enough for this specific test.'" theme={theme}>Unstable</Highlight> (temporary)? <strong>3. Controllability:</strong> Is the cause something you can change, or not?</p>
+              <p>Every story you tell yourself about a failure can be broken down along three dimensions.</p>
+              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+                {/* Card 1 — Sky */}
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Locus of Control</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>Is the cause <Highlight description="You're saying the cause is something about you — like how much effort you put in or how you prepared." theme={theme}>Internal</Highlight> (about you) or <Highlight description="You're saying the cause is something outside of you — like the teacher, the exam, or bad luck." theme={theme}>External</Highlight> (about the world)?</p>
+                  </div>
+                </div>
+                {/* Card 2 — Sunshine */}
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Stability</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Is the cause <Highlight description="You're saying this is permanent — it's always been this way and always will be. Like thinking 'I'm just not a maths person.'" theme={theme}>Stable</Highlight> (permanent) or <Highlight description="You're saying this is temporary — it happened this time but it's not a forever thing. Like thinking 'I didn't study enough for this specific test.'" theme={theme}>Unstable</Highlight> (temporary)?</p>
+                  </div>
+                </div>
+                {/* Card 3 — Peach */}
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Controllability</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>Is the cause something you can change, or not?</p>
+                  </div>
+                </div>
+              </div>
               <AttributionMapper savedValues={responses['attribution-mapper']} onSave={(v) => saveResponse('attribution-mapper', v)} />
               <AttributionSorter savedChoices={responses['attribution-sorter']} onSave={(c) => saveResponse('attribution-sorter', c)} />
             </ReadingSection>

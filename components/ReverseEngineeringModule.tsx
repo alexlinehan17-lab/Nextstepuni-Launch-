@@ -133,7 +133,7 @@ const PlanningParadoxVisualizer = () => {
     );
 
     return (
-        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Planning Paradox</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Two students. Same 6 months. Opposite strategies.</p>
 
@@ -179,12 +179,21 @@ const BackwardDesignSorter = () => {
         { id: 3, text: "Plan your actual study sessions (The Study)", stage: 3 },
     ]);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Plan It Backwards</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Drag the steps into the correct order for a backwards study plan.</p>
              <Reorder.Group axis="y" values={items} onReorder={setItems} className="space-y-3 max-w-sm mx-auto">
                 {items.map((item, i) => (
-                    <Reorder.Item key={item.id} value={item} className={`p-4 rounded-xl shadow-sm flex items-center gap-4 cursor-grabbing border ${item.stage === i + 1 ? 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-300 dark:border-emerald-700' : 'bg-zinc-50 dark:bg-zinc-800/50 border-zinc-200 dark:border-zinc-700'}`}>
+                    <Reorder.Item
+                        key={item.id}
+                        value={item}
+                        className="p-4 flex items-center gap-4 cursor-grab active:cursor-grabbing"
+                        style={item.stage === i + 1
+                            ? { backgroundColor: '#D1FAE5', border: '2.5px solid #059669', borderRadius: 16, boxShadow: '4px 4px 0px 0px #059669' }
+                            : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 16, boxShadow: '4px 4px 0px 0px #1C1917' }
+                        }
+                        whileDrag={{ scale: 1.03, y: -2, boxShadow: '6px 6px 0px 0px #1C1917' }}
+                    >
                         <span className={`font-semibold text-2xl ${item.stage === i + 1 ? 'text-emerald-500' : 'text-zinc-300'}`}>{i + 1}</span>
                         <span className="font-bold text-zinc-700 dark:text-zinc-200">{item.text}</span>
                     </Reorder.Item>
@@ -209,7 +218,7 @@ const ImplementationChecklist = () => {
     const progress = (items.filter(i => i.checked).length / items.length) * 100;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Schedule Checklist</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Follow these steps to build your own backwards study schedule.</p>
              <div className="space-y-3 mb-6">
@@ -279,7 +288,40 @@ const ReverseEngineeringModule: React.FC<{ onBack: () => void; progress: ModuleP
            {activeSection === 3 && (
             <ReadingSection title="Your Four Study Phases." eyebrow="Step 4" icon={Layers} theme={theme}>
                 <p>A good backwards schedule is not just one big block of "study." It is split into four clear phases, each with its own job. Working backwards from the exam, here is what it looks like:</p>
-                <p><strong>Phase 4: Wind Down (Final 2 Weeks):</strong> No new material. Light review, plenty of sleep, and keeping your nerves in check. <strong>Phase 3: Practice Exams (Months 1-2 Before the Exam):</strong> Full mock papers under timed conditions to build stamina and sharpen your technique. <strong>Phase 2: Mix and Deepen (Months 3-4 Before the Exam):</strong> Start mixing topics together instead of studying one at a time -- this builds the flexible thinking the exam demands. <strong>Phase 1: Learn the Basics (Months 5-6 Before the Exam):</strong> First-pass learning and making your revision materials (flashcards, summaries, whatever works for you).</p>
+                <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+                  {/* Card 1 — Sky */}
+                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
+                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+                    <div>
+                      <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Phase 4: Wind Down (Final 2 Weeks)</p>
+                      <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>No new material. Light review, plenty of sleep, and keeping your nerves in check.</p>
+                    </div>
+                  </div>
+                  {/* Card 2 — Sunshine */}
+                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
+                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                    <div>
+                      <p className="text-sm font-bold" style={{ color: '#78350F' }}>Phase 3: Practice Exams (Months 1-2 Before the Exam)</p>
+                      <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Full mock papers under timed conditions to build stamina and sharpen your technique.</p>
+                    </div>
+                  </div>
+                  {/* Card 3 — Peach */}
+                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
+                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                    <div>
+                      <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Phase 2: Mix and Deepen (Months 3-4 Before the Exam)</p>
+                      <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>Start mixing topics together instead of studying one at a time -- this builds the flexible thinking the exam demands.</p>
+                    </div>
+                  </div>
+                  {/* Card 4 — Mint */}
+                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 16, boxShadow: '4px 4px 0px 0px #059669' }}>
+                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#059669' }}>4</div>
+                    <div>
+                      <p className="text-sm font-bold" style={{ color: '#064E3B' }}>Phase 1: Learn the Basics (Months 5-6 Before the Exam)</p>
+                      <p className="text-[13px] mt-0.5" style={{ color: '#064E3B', opacity: 0.8 }}>First-pass learning and making your revision materials (flashcards, summaries, whatever works for you).</p>
+                    </div>
+                  </div>
+                </div>
             </ReadingSection>
           )}
            {activeSection === 4 && (

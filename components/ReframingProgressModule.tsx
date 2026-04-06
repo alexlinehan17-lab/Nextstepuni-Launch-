@@ -46,12 +46,12 @@ const KanbanBoard = () => {
     };
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Kanban Flow</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Drag tasks to the "Done" column to secure a "Win".</p>
              <div className="grid grid-cols-3 gap-4">
                 {['todo', 'doing', 'done'].map(col => (
-                    <div key={col} data-column={col} className="kanban-col p-4 bg-zinc-50 dark:bg-zinc-800/50 rounded-xl min-h-[200px]">
+                    <div key={col} data-column={col} className="kanban-col p-4 rounded-xl min-h-[200px]" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4' }}>
                         <h5 className="font-bold text-center text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-400">{col} {col === 'done' && `(${wins})`}</h5>
                         <div className="mt-4 space-y-2">
                             {tasks.filter(t => t.column === col).map(task => (
@@ -59,7 +59,7 @@ const KanbanBoard = () => {
                                     key={task.id}
                                     drag
                                     onDragEnd={(e, info) => onDragEnd(info, task)}
-                                    className="p-3 bg-white dark:bg-zinc-800 rounded-lg shadow-sm text-sm font-semibold cursor-grab active:cursor-grabbing"
+                                    className="p-3 rounded-lg text-sm font-semibold cursor-grab active:cursor-grabbing" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 10, boxShadow: '3px 3px 0px 0px #1C1917' }}
                                 >{task.text}</motion.div>
                             ))}
                         </div>
@@ -91,7 +91,7 @@ const RetrospectiveLog = () => {
     };
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Retrospective Log</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Rate your confidence. Let the "Worst First" rule decide your next move.</p>
             {topics.map(t => (

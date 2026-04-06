@@ -151,7 +151,7 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
           setAnswers(prev => ({ ...prev, estimatedPoints: autoPoints }));
         }
       } catch (e) {
-        console.error('Failed to load Future Finder data:', e);
+        console.error('Failed to load Future Finder data:');
       }
       if (!cancelled) setIsLoading(false);
     };
@@ -164,7 +164,7 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
     setSavedData(data);
     setDoc(doc(db, 'progress', uid), { futureFinder: data }, { merge: true })
       .then(() => showToast('Results saved!', 'success'))
-      .catch(e => { console.error('Failed to save:', e); showToast('Couldn\'t save \u2014 check your connection', 'error'); });
+      .catch(e => { console.error('Failed to save:'); showToast('Couldn\'t save \u2014 check your connection', 'error'); });
   }, [uid, showToast]);
 
   // Handle assessment completion

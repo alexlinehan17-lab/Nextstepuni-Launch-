@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { slateTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = slateTheme;
@@ -26,18 +26,18 @@ const ThoughtRecord = () => {
     const steps = ['Situation', 'Emotion', 'Negative Thought', 'Evidence For', 'Evidence Against', 'Alternative', 'Re-Rate'];
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Thought Record</h4>
              <div className="flex justify-between my-4"><div className="w-full h-1 bg-zinc-100 dark:bg-zinc-800 rounded-full"><motion.div className="h-1 bg-slate-500 rounded-full" animate={{width: `${(step / (steps.length - 1)) * 100}%`}}/></div></div>
              <AnimatePresence mode="wait">
              <motion.div key={step} initial={{opacity:0, x:20}} animate={{opacity:1, x:0}} exit={{opacity:0, x:-20}} >
-                {step === 0 && <div><label className="font-bold">1. Situation:</label><input value={record.situation} onChange={e => update('situation', e.target.value)} placeholder="e.g., Sitting down to study History" className="w-full p-2 mt-2 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg"/></div>}
-                {step === 1 && <div><label className="font-bold">2. Emotion:</label><input value={record.emotion} onChange={e => update('emotion', e.target.value)} placeholder="e.g., Panic" className="w-full p-2 mt-2 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg"/><label>Intensity: {record.intensity}%</label><input type="range" value={record.intensity} onChange={e => update('intensity', e.target.value)} className="w-full"/></div>}
-                {step === 2 && <div><label className="font-bold">3. Negative Automatic Thought (NAT):</label><textarea value={record.nat} onChange={e => update('nat', e.target.value)} placeholder="e.g., I'll never remember all these dates." className="w-full p-2 mt-2 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg h-24"/></div>}
-                {step === 3 && <div><label className="font-bold">4. Evidence For:</label><textarea value={record.evidenceFor} onChange={e => update('evidenceFor', e.target.value)} placeholder="e.g., I got some dates wrong on last week's test." className="w-full p-2 mt-2 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg h-24"/></div>}
-                {step === 4 && <div><label className="font-bold">5. Evidence Against:</label><textarea value={record.evidenceAgainst} onChange={e => update('evidenceAgainst', e.target.value)} placeholder="e.g., I passed my last test. I have 3 months to study." className="w-full p-2 mt-2 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg h-24"/></div>}
-                {step === 5 && <div><label className="font-bold">6. Alternative Thought:</label><textarea value={record.alternative} onChange={e => update('alternative', e.target.value)} placeholder="e.g., History is hard, but if I use flashcards I can pass." className="w-full p-2 mt-2 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg h-24"/></div>}
-                {step === 6 && <div className="space-y-4"><label className="font-bold">7. Re-Rate Emotion:</label>{record.alternative && <div className="p-3 bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 rounded-lg"><p className="text-[10px] font-bold uppercase tracking-wider text-emerald-500 mb-1">Your Alternative Thought</p><p className="text-sm text-emerald-700 dark:text-emerald-300">{record.alternative}</p></div>}<p className="text-sm">Initial Panic: <span className="font-bold text-rose-500">{record.intensity}%</span></p><label className="text-sm">New Panic Level: <span className="font-bold">{record.reRate}%</span></label><input type="range" value={record.reRate} onChange={e => update('reRate', e.target.value)} className="w-full"/>{Number(record.reRate) < Number(record.intensity) && <p className="text-xs text-emerald-600 dark:text-emerald-400 font-medium">Panic reduced by {Number(record.intensity) - Number(record.reRate)}%. The reframe is working.</p>}</div>}
+                {step === 0 && <div><label className="font-bold">1. Situation:</label><input value={record.situation} onChange={e => update('situation', e.target.value)} placeholder="e.g., Sitting down to study History" className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all mt-2" style={{ border: '1.5px solid #E7E5E4' }}/></div>}
+                {step === 1 && <div><label className="font-bold">2. Emotion:</label><input value={record.emotion} onChange={e => update('emotion', e.target.value)} placeholder="e.g., Panic" className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all mt-2" style={{ border: '1.5px solid #E7E5E4' }}/><label>Intensity: {record.intensity}%</label><input type="range" value={record.intensity} onChange={e => update('intensity', e.target.value)} className="chunky-slider chunky-slider-coral"/></div>}
+                {step === 2 && <div><label className="font-bold">3. Negative Automatic Thought (NAT):</label><textarea value={record.nat} onChange={e => update('nat', e.target.value)} placeholder="e.g., I'll never remember all these dates." className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all mt-2 h-24" style={{ border: '1.5px solid #E7E5E4' }}/></div>}
+                {step === 3 && <div><label className="font-bold">4. Evidence For:</label><textarea value={record.evidenceFor} onChange={e => update('evidenceFor', e.target.value)} placeholder="e.g., I got some dates wrong on last week's test." className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all mt-2 h-24" style={{ border: '1.5px solid #E7E5E4' }}/></div>}
+                {step === 4 && <div><label className="font-bold">5. Evidence Against:</label><textarea value={record.evidenceAgainst} onChange={e => update('evidenceAgainst', e.target.value)} placeholder="e.g., I passed my last test. I have 3 months to study." className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all mt-2 h-24" style={{ border: '1.5px solid #E7E5E4' }}/></div>}
+                {step === 5 && <div><label className="font-bold">6. Alternative Thought:</label><textarea value={record.alternative} onChange={e => update('alternative', e.target.value)} placeholder="e.g., History is hard, but if I use flashcards I can pass." className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all mt-2 h-24" style={{ border: '1.5px solid #E7E5E4' }}/></div>}
+                {step === 6 && <div className="space-y-4"><label className="font-bold">7. Re-Rate Emotion:</label>{record.alternative && <div className="p-3 bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 rounded-lg"><p className="text-[10px] font-bold uppercase tracking-wider text-emerald-500 mb-1">Your Alternative Thought</p><p className="text-sm text-emerald-700 dark:text-emerald-300">{record.alternative}</p></div>}<p className="text-sm">Initial Panic: <span className="font-bold text-rose-500">{record.intensity}%</span></p><label className="text-sm">New Panic Level: <span className="font-bold">{record.reRate}%</span></label><input type="range" value={record.reRate} onChange={e => update('reRate', e.target.value)} className="chunky-slider chunky-slider-coral"/>{Number(record.reRate) < Number(record.intensity) && <p className="text-xs text-emerald-600 dark:text-emerald-400 font-medium">Panic reduced by {Number(record.intensity) - Number(record.reRate)}%. The reframe is working.</p>}</div>}
              </motion.div>
              </AnimatePresence>
              <div className="flex justify-between mt-4">
@@ -55,11 +55,11 @@ const GradedExposureHierarchy = () => {
         { id: 3, text: "Attempt one question (timed)", suds: 80 },
     ]);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Exposure Hierarchy Builder</h4>
              <Reorder.Group axis="y" values={items} onReorder={setItems} className="space-y-2 mt-6">
                 {items.map(item => (
-                    <Reorder.Item key={item.id} value={item} className="p-3 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex justify-between items-center cursor-grab active:cursor-grabbing">
+                    <Reorder.Item key={item.id} value={item} className="flex justify-between items-center cursor-grab active:cursor-grabbing" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 16, padding: '14px 16px', boxShadow: '4px 4px 0px 0px #1C1917' }} whileDrag={{ scale: 1.03, y: -2, boxShadow: '6px 6px 0px 0px #1C1917' }}>
                         <span>{item.text}</span>
                         <span className="font-bold text-sm text-rose-500">{item.suds} SUDS</span>
                     </Reorder.Item>
@@ -126,7 +126,7 @@ const PassengersOnBus = () => {
     const barColor = allAcknowledged ? 'bg-emerald-500' : shoutingCount <= 1 ? 'bg-emerald-400' : shoutingCount <= 3 ? 'bg-amber-500' : 'bg-rose-500';
 
     return (
-         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+         <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Passengers on the Bus</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">You're driving toward your goal. Negative thoughts are passengers shouting at you.</p>
             <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">You can't kick them off. But you can choose how to respond.</p>
@@ -289,66 +289,81 @@ const DownwardArrowDrill = () => {
   };
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Downward Arrow</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">Follow the fear to its end. Ask "And then what?" until the catastrophe dissolves.</p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-bold text-center" style={{ color: '#1a1a1a' }}>The Downward Arrow</h4>
+      <p className="text-center text-sm mt-2 mb-8" style={{ color: '#7a7068' }}>Follow the fear to its end. Ask "And then what?" until the catastrophe dissolves.</p>
 
-      <div className="flex flex-col items-center">
-        {entries.map((entry, index) => (
-          <React.Fragment key={index}>
-            {/* Animated arrow between entries */}
-            {index > 0 && (
+      <div className="flex flex-col items-center max-w-lg mx-auto">
+        {entries.map((entry, index) => {
+          const isActive = !committed[index];
+          const isLocked = index > currentStep;
+          return (
+            <React.Fragment key={index}>
+              {/* Connector between cards */}
+              {index > 0 && (
+                <MotionDiv
+                  initial={{ opacity: 0, y: -8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.1 }}
+                  className="flex flex-col items-center my-1"
+                >
+                  <div style={{ width: 2, height: 32, backgroundColor: committed[index] || isActive ? '#d0cdc8' : '#e0dbd4' }} />
+                  <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
+                    <path d="M1 1L8 8L15 1" stroke={committed[index] || isActive ? '#2A7D6F' : '#c0bbb5'} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </MotionDiv>
+              )}
+
+              {/* Entry card */}
               <MotionDiv
-                initial={{ opacity: 0, y: -8 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.1 }}
-                className="flex flex-col items-center my-2"
+                initial={{ opacity: 0, y: 16, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                className="w-full"
               >
-                <div className={`w-0.5 h-6 ${chainColors[Math.min(index, CHAIN_LENGTH - 1)].dot}`} />
-                <ArrowDown className={`w-5 h-5 ${chainColors[Math.min(index, CHAIN_LENGTH - 1)].arrow}`} />
+                <div
+                  style={{
+                    backgroundColor: isActive ? '#f0faf8' : isLocked ? '#fafaf8' : '#FFFFFF',
+                    border: isActive ? '2px solid #2A7D6F' : isLocked ? '2px solid #d0cdc8' : '2px solid #1a1a1a',
+                    borderRadius: 14,
+                    padding: '18px 22px',
+                  }}
+                >
+                  <p className="text-[11px] font-bold uppercase tracking-wider mb-2" style={{ color: isLocked ? '#b0a898' : '#2A7D6F' }}>
+                    {index === 0 ? 'Your worst fear' : `Level ${index + 1}: And then what?`}
+                  </p>
+
+                  {committed[index] ? (
+                    <p className="font-serif italic" style={{ fontSize: 16, color: '#1a1a1a' }}>"{entry}"</p>
+                  ) : (
+                    <div className="flex flex-col gap-3">
+                      <input
+                        type="text"
+                        value={entry}
+                        onChange={e => handleChange(index, e.target.value)}
+                        onKeyDown={e => handleKeyDown(e, index)}
+                        placeholder={index === 0 ? "I'll fail my exam" : "If that happened, then..."}
+                        className="w-full bg-white dark:bg-zinc-800 rounded-xl px-4 py-3 text-sm text-zinc-800 dark:text-white placeholder-zinc-400 outline-none"
+                        style={{ border: '1.5px solid #E7E5E4' }}
+                      />
+                      <button
+                        onClick={() => handleNext(index)}
+                        disabled={!entry.trim()}
+                        className="self-end px-5 py-2.5 text-xs font-bold text-white transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                        style={{ backgroundColor: '#2A7D6F', borderRadius: 10 }}
+                      >
+                        {index + 1 < CHAIN_LENGTH ? 'And then what happens?' : 'See the full chain'}
+                      </button>
+                    </div>
+                  )}
+                </div>
               </MotionDiv>
-            )}
-
-            {/* Entry card */}
-            <MotionDiv
-              initial={{ opacity: 0, y: 16, scale: 0.95 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="w-full"
-            >
-              <div className={`p-4 rounded-xl border ${chainColors[Math.min(index, CHAIN_LENGTH - 1)].bg} ${chainColors[Math.min(index, CHAIN_LENGTH - 1)].border}`}>
-                <p className={`text-[10px] font-bold uppercase tracking-wider mb-2 ${chainColors[Math.min(index, CHAIN_LENGTH - 1)].label}`}>
-                  {index === 0 ? 'Your worst fear' : `Level ${index + 1}: And then what?`}
-                </p>
-
-                {committed[index] ? (
-                  <p className={`text-sm font-medium ${chainColors[Math.min(index, CHAIN_LENGTH - 1)].text}`}>"{entry}"</p>
-                ) : (
-                  <div className="flex flex-col gap-3">
-                    <input
-                      type="text"
-                      value={entry}
-                      onChange={e => handleChange(index, e.target.value)}
-                      onKeyDown={e => handleKeyDown(e, index)}
-                      placeholder={index === 0 ? "I'll fail my exam" : "If that happened, then..."}
-                      className="w-full p-3 text-sm bg-white dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-700 rounded-lg text-zinc-800 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-slate-400 dark:focus:ring-slate-500"
-                    />
-                    <button
-                      onClick={() => handleNext(index)}
-                      disabled={!entry.trim()}
-                      className="self-end px-4 py-2 text-xs font-bold bg-slate-600 hover:bg-slate-700 text-white rounded-lg transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-                    >
-                      {index + 1 < CHAIN_LENGTH ? 'And then what happens?' : 'See the full chain'}
-                    </button>
-                  </div>
-                )}
-              </div>
-            </MotionDiv>
-          </React.Fragment>
-        ))}
+            </React.Fragment>
+          );
+        })}
       </div>
 
-      {/* Reflection panel */}
+      {/* Reflection — catastrophe dissolved */}
       <AnimatePresence>
         {showReflection && (
           <MotionDiv
@@ -356,32 +371,31 @@ const DownwardArrowDrill = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-8 p-6 bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-700"
+            className="mt-8 max-w-lg mx-auto"
           >
-            <h5 className="font-serif text-lg font-semibold text-zinc-800 dark:text-white text-center mb-4">Look at your chain.</h5>
+            <div style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '18px 22px' }}>
+              <p className="text-[11px] font-bold uppercase tracking-wider mb-3" style={{ color: '#1a6358' }}>Catastrophe Dissolved</p>
 
-            <div className="space-y-2 mb-6">
-              {entries.filter((_, i) => committed[i]).map((entry, index) => (
-                <div key={index} className={`p-3 rounded-lg border ${chainColors[index].bg} ${chainColors[index].border} flex items-center gap-3`}>
-                  <span className={`shrink-0 w-2 h-2 rounded-full ${chainColors[index].dot}`} />
-                  <p className={`text-sm ${chainColors[index].text}`}>{entry}</p>
-                </div>
-              ))}
+              <div className="space-y-2 mb-5">
+                {entries.filter((_, i) => committed[i]).map((entry, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <span className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-[10px] font-bold text-white" style={{ backgroundColor: '#2A7D6F' }}>{index + 1}</span>
+                    <p className="text-sm font-serif italic" style={{ color: '#1a6358' }}>{entry}</p>
+                  </div>
+                ))}
+              </div>
+
+              <p className="text-sm mb-1" style={{ color: '#1a6358' }}>Is your final answer really as catastrophic as the first one felt?</p>
+              <p className="text-sm font-serif italic font-medium" style={{ color: '#1a6358' }}>Most catastrophic chains end somewhere manageable. The fear lives in the ambiguity — not the reality.</p>
             </div>
-
-            <p className="text-center text-sm text-zinc-600 dark:text-zinc-400 mb-2">Is your final answer really as catastrophic as the first one felt?</p>
-            <p className="text-center text-sm font-medium text-emerald-600 dark:text-emerald-400">Most catastrophic chains end somewhere manageable. The fear lives in the ambiguity — not the reality.</p>
           </MotionDiv>
         )}
       </AnimatePresence>
 
-      {/* Reset button */}
+      {/* Reset */}
       {currentStep > 0 && (
         <div className="flex justify-center mt-6">
-          <button
-            onClick={handleReset}
-            className="px-4 py-2 text-xs font-bold bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-600 transition-colors"
-          >
+          <button onClick={handleReset} className="text-sm font-medium transition-colors hover:underline" style={{ color: '#7a7068' }}>
             Start Over
           </button>
         </div>
@@ -420,7 +434,14 @@ const CatastrophicThinkingModule: React.FC<{ onBack: () => void; progress: Modul
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Catastrophe Machine." eyebrow="Step 1" icon={MessageSquare} theme={theme}>
-              <p><Highlight description="When your brain jumps straight to the worst possible outcome and convinces you it's definitely going to happen. Like thinking one bad mock result means your life is over." theme={theme}>Catastrophizing</Highlight> is the engine of exam anxiety. It's a 3-part machine: 1) <Highlight description="That one negative thought that plays on repeat in your head, like a song you can't get rid of." theme={theme}>Rumination</Highlight> (the thought you can't switch off), 2) <Highlight description="Making things way bigger than they actually are. Like telling yourself 'If I get a H4, my entire future is ruined.'" theme={theme}>Magnification</Highlight> (making a mountain out of a molehill), and 3) <Highlight description="That sinking feeling where you're convinced the bad thing is going to happen and there's nothing you can do about it." theme={theme}>Helplessness</Highlight> (the feeling you're powerless).</p>
+              <p><Highlight description="When your brain jumps straight to the worst possible outcome and convinces you it's definitely going to happen. Like thinking one bad mock result means your life is over." theme={theme}>Catastrophizing</Highlight> is the engine of exam anxiety. It's a 3-part machine — and once you can name the parts, you can start to dismantle them.</p>
+              <ConceptCardGrid
+                cards={[
+                  { number: 1, term: "Rumination", description: "That one negative thought that plays on repeat in your head, like a song you can't get rid of. The thought you can't switch off." },
+                  { number: 2, term: "Magnification", description: "Making things way bigger than they actually are. One bad test becomes proof you'll fail everything. Making a mountain out of a molehill." },
+                  { number: 3, term: "Helplessness", description: "That sinking feeling where you're convinced the bad thing is going to happen and there's nothing you can do about it." },
+                ]}
+              />
             </ReadingSection>
           )}
           {activeSection === 1 && (

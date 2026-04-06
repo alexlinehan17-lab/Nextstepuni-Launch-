@@ -26,7 +26,7 @@ const MemoryFlowVisualizer = () => {
   const particles = Array.from({ length: particleCount }, (_, i) => i);
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Memory Pipeline</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">
         {attention
@@ -308,7 +308,7 @@ const ChunkingChallenge = () => {
   if (scoreR1 !== null && scoreR2 !== null) {
     const maxBar = 12;
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Results</h4>
         <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-8">How did chunking change your recall?</p>
 
@@ -362,7 +362,7 @@ const ChunkingChallenge = () => {
   // --- Idle: prompt to start ---
   if (phase === 'idle') {
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">The Chunking Challenge</h4>
         <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-6 max-w-md mx-auto">Can you memorise 12 letters in 5 seconds? Two rounds will show you the power of chunking.</p>
         <button onClick={handleStartRound1} className="px-5 py-2.5 bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold text-sm rounded-lg transition-colors">
@@ -375,7 +375,7 @@ const ChunkingChallenge = () => {
   // --- Memorise phase ---
   if (phase === 'memorise') {
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">
           {round === 1 ? 'Round 1: Random Letters' : 'Round 2: Chunked Letters'}
         </h4>
@@ -401,7 +401,7 @@ const ChunkingChallenge = () => {
   // --- Recall phase ---
   if (phase === 'recall') {
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">
           {round === 1 ? 'Round 1: Recall' : 'Round 2: Recall'}
         </h4>
@@ -412,7 +412,8 @@ const ChunkingChallenge = () => {
           placeholder="e.g. XKMBRF..."
           maxLength={24}
           autoFocus
-          className="w-full max-w-sm mx-auto block p-3 text-center text-lg font-mono tracking-widest border border-zinc-300 dark:border-zinc-600 rounded-lg bg-white dark:bg-zinc-900 text-zinc-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
+          className="w-full max-w-sm mx-auto block text-center text-lg font-mono tracking-widest bg-white dark:bg-zinc-800 rounded-xl px-5 py-3 text-zinc-800 dark:text-white outline-none"
+          style={{ border: '1.5px solid #E7E5E4' }}
         />
         <button
           onClick={handleSubmit}
@@ -428,7 +429,7 @@ const ChunkingChallenge = () => {
   // --- Scored (between rounds) ---
   if (phase === 'scored' && round === 1) {
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">Round 1 Score</h4>
         <p className="text-4xl font-bold text-rose-500 mt-4">{scoreR1}/12</p>
         <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-6">Now let's try the same task — but with chunked letters.</p>
@@ -471,7 +472,7 @@ const WorkingMemorySimulator = () => {
 
   if (result !== null) {
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Results</h4>
         <p>You correctly recalled {result} out of {items.length} items.</p>
         <p className="text-xs text-zinc-500 dark:text-zinc-400">The original items were: {items.join(', ')}</p>
@@ -481,7 +482,7 @@ const WorkingMemorySimulator = () => {
   }
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+    <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Short-Term Memory Test</h4>
       {!showItems && items.length === 0 && <button onClick={startGame} className="px-4 py-2 bg-fuchsia-500 text-white font-bold text-sm rounded-lg">Start</button>}
 
@@ -489,7 +490,7 @@ const WorkingMemorySimulator = () => {
 
       {!showItems && items.length > 0 &&
         <div>
-          <input value={inputValue} onChange={e => setInputValue(e.target.value)} placeholder="Type the numbers, separated by spaces" className="w-full p-2 border rounded-md bg-white border-zinc-300 dark:bg-zinc-800 dark:border-zinc-600 dark:text-white"/>
+          <input value={inputValue} onChange={e => setInputValue(e.target.value)} placeholder="Type the numbers, separated by spaces" className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none" style={{ border: '1.5px solid #E7E5E4' }} />
           <button onClick={checkAnswer} className="mt-4 px-4 py-2 bg-emerald-500 text-white font-bold text-sm rounded-lg">Check Answer</button>
         </div>
       }

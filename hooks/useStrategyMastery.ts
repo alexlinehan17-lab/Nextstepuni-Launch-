@@ -102,7 +102,7 @@ export function useStrategyMastery(
       // Persist to Firestore
       await setDoc(doc(db, 'progress', uid), { strategyMastery: map }, { merge: true });
     } catch (err) {
-      console.error('Failed to compute strategy mastery:', err);
+      console.error('Failed to compute strategy mastery:');
       setIsLoaded(true);
     }
   }, [uid, userProgress, allCourses]);

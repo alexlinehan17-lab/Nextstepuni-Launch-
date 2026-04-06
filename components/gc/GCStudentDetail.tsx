@@ -191,7 +191,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
       setNoteText('');
       onNoteSaved?.(student.user.uid, updated, now);
     } catch (err) {
-      console.error('Failed to save note:', err);
+      console.error('Failed to save note:');
       setNoteError('Failed to save. Please try again.');
     }
     setNoteSaving(false);

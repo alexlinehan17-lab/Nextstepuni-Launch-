@@ -20,7 +20,7 @@ const theme = redTheme;
 const BrainSignalVisualizer = () => {
     const [active, setActive] = useState(false);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Brain's Two Signals</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">When you make a mistake, your brain sends two distinct signals in less than half a second.</p>
              <div className="w-full max-w-lg mx-auto h-32 relative">
@@ -237,7 +237,7 @@ const AmygdalaHijackSimulator = () => {
 
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Amygdala Hijack Simulator</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">See how stress hijacks your brain — then use recovery techniques to take control back.</p>
 
@@ -395,33 +395,24 @@ const AmygdalaHijackSimulator = () => {
           <button
             onClick={() => handleScenario('low')}
             disabled={isAnimating}
-            className={`px-5 py-2.5 rounded-lg text-sm font-bold transition-all duration-200 ${
-              scenario === 'low'
-                ? 'bg-green-500 text-white shadow-lg shadow-green-500/20'
-                : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200 hover:bg-green-100 dark:hover:bg-green-900/30'
-            } disabled:opacity-50`}
+            className="px-5 py-2.5 text-sm font-bold transition-all duration-200 disabled:opacity-50"
+            style={scenario === 'low' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
           >
             Low Stakes — Homework Quiz
           </button>
           <button
             onClick={() => handleScenario('medium')}
             disabled={isAnimating}
-            className={`px-5 py-2.5 rounded-lg text-sm font-bold transition-all duration-200 ${
-              scenario === 'medium'
-                ? 'bg-amber-500 text-white shadow-lg shadow-amber-500/20'
-                : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200 hover:bg-amber-100 dark:hover:bg-amber-900/30'
-            } disabled:opacity-50`}
+            className="px-5 py-2.5 text-sm font-bold transition-all duration-200 disabled:opacity-50"
+            style={scenario === 'medium' ? { backgroundColor: '#FDE68A', border: '2.5px solid #D97706', borderRadius: 14, boxShadow: '3px 3px 0px 0px #D97706', color: '#78350F' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
           >
             Medium Stakes — Class Test
           </button>
           <button
             onClick={() => handleScenario('high')}
             disabled={isAnimating}
-            className={`px-5 py-2.5 rounded-lg text-sm font-bold transition-all duration-200 ${
-              scenario === 'high'
-                ? 'bg-red-500 text-white shadow-lg shadow-red-500/20'
-                : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200 hover:bg-red-100 dark:hover:bg-red-900/30'
-            } disabled:opacity-50`}
+            className="px-5 py-2.5 text-sm font-bold transition-all duration-200 disabled:opacity-50"
+            style={scenario === 'high' ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
           >
             High Stakes — Leaving Cert Exam
           </button>

@@ -77,7 +77,7 @@ const NarrativeSwitcher = () => {
     );
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Narrative Switcher</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Pivotal Moment: You fail an important mock exam. Which story do you tell?</p>
             <div className="flex justify-center gap-4 mb-8">
@@ -104,7 +104,7 @@ const NarrativeSwitcher = () => {
 const AgencyCommunionBalancer = () => {
     const [balance, setBalance] = useState(0); // -1 for Agency, 1 for Communion, 0 for balanced
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Agency & Communion Balancer</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-12">Click the narrative statement that builds the most robust identity.</p>
              <div className="h-40 flex justify-center items-center">
@@ -259,7 +259,7 @@ const DesirableDifficultyComparison = () => {
     );
 
     return (
-        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Difficulty Dividend</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">The study method that feels worst produces the best results.</p>
 
@@ -362,16 +362,16 @@ const StrategicAdvantageModule: React.FC<{ onBack: () => void; progress: ModuleP
             <ReadingSection title="Your Redemption Script." eyebrow="Step 5" icon={FileText} theme={theme}>
               <p>You have the power to be the author of your own story. This module has given you the tools of narrative construction: the ability to turn contamination into redemption, to balance agency with communion, and to reframe difficulty as a desirable advantage. Now it's time to put it into practice.</p>
               <p>The final step is to build your own mini-"Failure Resume." By taking a past failure and actively converting it into an asset, you are practicing the core skill of resilient identity construction. You are forging your own redemption script, turning the lead of your past into the gold of your future.</p>
-              <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+              <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">My Redemption Story</h4>
                  <div className="mt-6 space-y-4">
                     <div>
                         <label className="block text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 mb-2">The Failure (Pivotal Moment):</label>
-                        <select className="w-full p-4 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl focus:outline-none focus:border-indigo-500"><option>Failed a mock exam</option><option>Missed an assignment deadline</option><option>Didn't understand a topic in class</option></select>
+                        <select className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white outline-none" style={{ border: '1.5px solid #E7E5E4' }}><option>Failed a mock exam</option><option>Missed an assignment deadline</option><option>Didn't understand a topic in class</option></select>
                     </div>
                      <div>
                         <label className="block text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 mb-2">The Lesson (Your Asset):</label>
-                        <textarea placeholder="What is the single most valuable lesson, skill, or piece of wisdom you gained from this experience?" className="w-full h-24 p-4 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-100 rounded-xl focus:outline-none focus:border-indigo-500"></textarea>
+                        <textarea placeholder="What is the single most valuable lesson, skill, or piece of wisdom you gained from this experience?" className="w-full h-24 bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none" style={{ border: '1.5px solid #E7E5E4' }}></textarea>
                     </div>
                 </div>
               </div>

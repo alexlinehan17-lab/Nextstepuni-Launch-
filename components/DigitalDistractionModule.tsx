@@ -24,76 +24,73 @@ const AttentionDeficitCalculator = () => {
     const deepWorkTime = Math.max(0, 60 - timeLost);
     const deepPct = Math.round((deepWorkTime / 60) * 100);
 
-    return (
-        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Attention Deficit Calculator</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Every phone check triggers a ~23 minute attention recovery. How much of your study hour survives?</p>
+    const statColor = deepWorkTime >= 45 ? '#2A7D6F' : deepWorkTime >= 20 ? '#9e9186' : '#E85D75';
+    const calloutStyle = checks === 0
+      ? { borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', color: '#1a6358' }
+      : checks <= 3
+      ? { borderLeft: '3px solid #9e9186', backgroundColor: '#f4f0eb', color: '#5a5550' }
+      : checks <= 7
+      ? { borderLeft: '3px solid #d0a070', backgroundColor: '#fff8f0', color: '#7a5030' }
+      : { borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', color: '#b33030' };
 
-            {/* Big number */}
+    return (
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <div className="text-center mb-6">
-                <motion.div
-                    key={checks}
-                    initial={{ scale: 0.9, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
-                    className="inline-block"
-                >
-                    <span className={`text-6xl font-bold tabular-nums ${deepPct >= 60 ? 'text-emerald-500' : deepPct >= 30 ? 'text-amber-500' : deepPct > 0 ? 'text-orange-500' : 'text-rose-500'}`}>{deepWorkTime.toFixed(0)}</span>
-                    <span className="text-2xl font-bold text-zinc-400 ml-1">/ 60 min</span>
-                </motion.div>
-                <p className="text-sm font-semibold text-zinc-500 dark:text-zinc-400 mt-1">of actual deep work</p>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Interactive Calculator</span>
+                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Attention Deficit Calculator</h4>
+                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Every phone check triggers a ~23 minute attention recovery. How much of your study hour survives?</p>
             </div>
 
-            {/* Hour bar — simple stacked bar */}
-            <div className="w-full h-6 rounded-full bg-zinc-100 dark:bg-zinc-700 overflow-hidden flex mb-2">
-                <motion.div
-                    className="h-full bg-emerald-500 flex items-center justify-center"
-                    animate={{ width: `${deepPct}%` }}
-                    transition={{ type: 'spring', stiffness: 120, damping: 20 }}
-                >
-                    {deepPct > 18 && <span className="text-xs font-bold text-white">{deepPct}%</span>}
+            {/* Stat card */}
+            <div className="bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: '24px 28px', maxWidth: 400, margin: '0 auto 20px' }}>
+                <motion.div key={checks} initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="inline-block">
+                    <span className="font-serif font-bold" style={{ fontSize: 64, color: statColor }}>{deepWorkTime.toFixed(0)}</span>
+                    <span className="font-serif" style={{ fontSize: 28, color: '#9e9186', marginLeft: 6 }}>/ 60 min</span>
                 </motion.div>
-                <motion.div
-                    className="h-full bg-rose-400 flex items-center justify-center"
-                    animate={{ width: `${100 - deepPct}%` }}
-                    transition={{ type: 'spring', stiffness: 120, damping: 20 }}
-                >
-                    {(100 - deepPct) > 18 && <span className="text-xs font-bold text-white">{100 - deepPct}%</span>}
+                <p style={{ fontSize: 14, color: '#9e9186', marginTop: 4 }}>of actual deep work</p>
+            </div>
+
+            {/* Split bar */}
+            <div className="flex mb-2" style={{ border: '2px solid #1a1a1a', borderRadius: 100, height: 28, overflow: 'hidden' }}>
+                <motion.div className="h-full flex items-center justify-center" style={{ backgroundColor: '#2A7D6F' }} animate={{ width: `${deepPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }}>
+                    {deepPct > 15 && <span style={{ fontSize: 12, fontWeight: 600, color: '#FFFFFF' }}>{deepPct}%</span>}
+                </motion.div>
+                <motion.div className="h-full flex items-center justify-center" style={{ backgroundColor: '#E85D75' }} animate={{ width: `${100 - deepPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }}>
+                    {(100 - deepPct) > 15 && <span style={{ fontSize: 12, fontWeight: 600, color: '#FFFFFF' }}>{100 - deepPct}%</span>}
                 </motion.div>
             </div>
             <div className="flex justify-between text-xs mb-6">
-                <span className="font-semibold text-emerald-600 dark:text-emerald-400">Deep Work</span>
-                <span className="font-semibold text-rose-500 dark:text-rose-400">Recovery Time</span>
+                <span className="font-semibold" style={{ color: '#2A7D6F' }}>Deep Work</span>
+                <span className="font-semibold" style={{ color: '#E85D75' }}>Recovery Time</span>
             </div>
 
             {/* Phone check selector */}
             <div className="mb-5">
-                <p className="text-sm font-bold text-zinc-700 dark:text-zinc-200 mb-2.5">Phone checks per study hour</p>
+                <p className="mb-3" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', textTransform: 'uppercase' as const }}>Phone checks per study hour</p>
                 <div className="flex gap-1.5">
-                    {Array.from({ length: 11 }).map((_, i) => {
-                        const isActive = i === checks;
-                        const bg = i === 0 ? 'bg-emerald-500' : i <= 2 ? 'bg-amber-500' : 'bg-rose-500';
-                        const bgMuted = i === 0 ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400' : i <= 2 ? 'bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400' : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-500 dark:text-zinc-400';
-                        return (
-                            <button key={i} onClick={() => setChecks(i)}
-                                className={`flex-1 py-2 rounded-lg text-sm font-bold transition-all ${isActive ? `${bg} text-white shadow-sm scale-105` : `${bgMuted} hover:opacity-80`}`}>
-                                {i}
-                            </button>
-                        );
-                    })}
+                    {Array.from({ length: 11 }).map((_, i) => (
+                        <button key={i} onClick={() => setChecks(i)} className="flex-1 flex items-center justify-center transition-all" style={{
+                            width: 52, height: 52,
+                            backgroundColor: i === checks ? '#2A7D6F' : '#FFFFFF',
+                            border: i === checks ? '2px solid #1a5a4e' : '2px solid #d0cdc8',
+                            borderRadius: 10,
+                            fontSize: 15, fontWeight: i === checks ? 700 : 600,
+                            color: i === checks ? '#FFFFFF' : '#7a7068',
+                            cursor: 'pointer',
+                        }}>
+                            {i}
+                        </button>
+                    ))}
                 </div>
-                <div className="flex justify-between text-xs text-zinc-400 mt-1.5">
+                <div className="flex justify-between mt-1.5" style={{ fontSize: 12, color: '#9e9186' }}>
                     <span>Phone away</span>
                     <span>Constant</span>
                 </div>
             </div>
 
-            {/* Insight */}
-            <div className={`p-3.5 rounded-xl text-sm text-center ${
-                checks === 0 ? 'bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-300' :
-                checks <= 2 ? 'bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 text-amber-700 dark:text-amber-300' :
-                'bg-rose-50 dark:bg-rose-900/20 border border-rose-200 dark:border-rose-800 text-rose-700 dark:text-rose-300'
-            }`}>
-                {checks === 0 && <span className="font-semibold">Phone away = full hour of deep work. This is the goal.</span>}
+            {/* Insight callout */}
+            <div className="text-sm italic" style={{ ...calloutStyle, borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
+                {checks === 0 && <span className="font-semibold not-italic">Phone away = full hour of deep work. This is the goal.</span>}
                 {checks === 1 && <span>Even <strong>one check</strong> costs 23 minutes of recovery. You lose over a third of your hour.</span>}
                 {checks === 2 && <span><strong>Two checks</strong> and you&apos;ve lost 46 minutes. Only 14 minutes of real studying.</span>}
                 {checks === 3 && <span>At <strong>3 checks</strong>, you&apos;re losing over an hour of focus time. Your brain never reaches deep processing.</span>}
@@ -206,7 +203,7 @@ const PhasedDetoxRoadmap = () => {
   const progressPct = Math.round((totalChecked / totalItems) * 100);
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       {/* Header */}
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
         Phased Detox Roadmap
@@ -254,7 +251,8 @@ const PhasedDetoxRoadmap = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: pi * 0.12 }}
-                className={`relative rounded-xl border-l-4 ${style.accent} border border-zinc-200 dark:border-zinc-700 p-5 md:p-6 transition-shadow duration-500 ${phaseDone ? `${style.completedBorder} shadow-lg ${style.completedGlow}` : ''}`}
+                className="relative rounded-xl p-5 md:p-6 transition-all duration-500"
+                style={phaseDone ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 16, boxShadow: '4px 4px 0px 0px #059669' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 16, boxShadow: '4px 4px 0px 0px #1C1917' }}
               >
                 {/* Dot on timeline */}
                 <div className={`absolute -left-[calc(2rem+10px)] md:-left-[calc(2.5rem+10px)] top-6 w-5 h-5 rounded-full border-4 border-white dark:border-zinc-800 ${phaseDone ? 'bg-emerald-500' : style.accentBg}`} />
@@ -333,12 +331,13 @@ const PhasedDetoxRoadmap = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
-            className="mt-8 p-5 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-300 dark:border-emerald-700 text-center"
+            className="mt-8 p-5 rounded-xl text-center"
+            style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669' }}
           >
-            <p className="font-serif text-lg font-semibold text-emerald-700 dark:text-emerald-300">
+            <p className="font-serif text-lg font-semibold" style={{ color: '#064E3B' }}>
               Full digital fortress activated.
             </p>
-            <p className="text-sm text-emerald-600 dark:text-emerald-400 mt-1">
+            <p className="text-sm mt-1" style={{ color: '#065F46' }}>
               You&apos;ve removed every barrier between you and deep focus.
             </p>
           </MotionDiv>
@@ -419,7 +418,33 @@ const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleP
           )}
           {activeSection === 6 && (
             <ReadingSection title="Your Step-by-Step Plan." eyebrow="Step 7" icon={Map} theme={theme}>
-              <p>You don't have to do everything at once. This is a gradual plan that builds up across the Leaving Cert year. <strong>Phase 1: Getting Started (Sept - Dec).</strong> Turn off unnecessary notifications, start charging your phone outside your bedroom, and figure out where your time actually goes. <strong>Phase 2: Locking It Down (Jan - Mar).</strong> Set up website blockers on your laptop, start batching your social media into one window each evening, and delete the worst time-wasting apps. <strong>Phase 3: Full Focus (Apr - June).</strong> This is where you go all-in for the exams. Minimal phone use, locked blockers on your laptop, and maybe even deactivating social media until the Leaving Cert is over.</p>
+              <p>You don't have to do everything at once. This is a gradual plan that builds up across the Leaving Cert year.</p>
+              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+                {/* Card 1 — Sky */}
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Phase 1: Getting Started (Sept - Dec)</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>Turn off unnecessary notifications, start charging your phone outside your bedroom, and figure out where your time actually goes.</p>
+                  </div>
+                </div>
+                {/* Card 2 — Sunshine */}
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Phase 2: Locking It Down (Jan - Mar)</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Set up website blockers on your laptop, start batching your social media into one window each evening, and delete the worst time-wasting apps.</p>
+                  </div>
+                </div>
+                {/* Card 3 — Peach */}
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Phase 3: Full Focus (Apr - June)</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>This is where you go all-in for the exams. Minimal phone use, locked blockers on your laptop, and maybe even deactivating social media until the Leaving Cert is over.</p>
+                  </div>
+                </div>
+              </div>
               <PhasedDetoxRoadmap />
               <MicroCommitment theme={theme}>
                 <p>Tonight, move your phone charger out of your bedroom and into the kitchen. That's it. One small change, but it's the single most effective thing you can do right now.</p>

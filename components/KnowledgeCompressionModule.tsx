@@ -69,7 +69,7 @@ const SyllabusDeconstructor = () => {
     const colors = ["#e0f2f1", "#b2dfdb", "#80cbc4", "#4db6ac", "#26a69a"];
 
     return (
-        <div className="my-10 p-4 md:p-8 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-4 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Syllabus Deconstructor</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">{mathsSyllabus.subject}</p>
 
@@ -103,11 +103,11 @@ const SyllabusDeconstructor = () => {
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 10 }}
-                        className="mt-4 p-4 bg-zinc-900 text-white rounded-xl"
+                        className="mt-4 p-4 rounded-xl" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669' }}
                     >
-                        <h5 className="font-bold text-teal-300">{selectedTopic.name}</h5>
-                        <p className="text-sm mt-1">{selectedTopic.details}</p>
-                        <button onClick={() => setSelectedTopic(null)} className="text-xs text-zinc-400 mt-2">Close</button>
+                        <h5 className="font-bold" style={{ color: '#064E3B' }}>{selectedTopic.name}</h5>
+                        <p className="text-sm mt-1" style={{ color: '#065F46' }}>{selectedTopic.details}</p>
+                        <button onClick={() => setSelectedTopic(null)} className="text-xs mt-2" style={{ color: '#047857' }}>Close</button>
                     </motion.div>
                 )}
             </AnimatePresence>

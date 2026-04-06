@@ -126,7 +126,11 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
     <div className="min-h-screen bg-[#FDF8F0] dark:bg-zinc-950">
 
       {/* ── 1. Coloured hero section: header + ring + stat pills ── */}
-      <div className="relative" style={{ backgroundColor: currentRank.colorHex }}>
+      <div className="relative overflow-hidden" style={{ backgroundColor: currentRank.colorHex }}>
+        {/* Decorative blobs — spread apart, no overlapping */}
+        <div className="absolute pointer-events-none" style={{ top: -70, right: -50, width: 220, height: 220, borderRadius: '50%', background: 'rgba(255,255,255,0.07)' }} />
+        <div className="absolute pointer-events-none" style={{ bottom: 60, left: -50, width: 160, height: 160, borderRadius: '50%', background: 'rgba(0,0,0,0.05)' }} />
+        <div className="absolute pointer-events-none" style={{ top: '45%', left: '55%', width: 90, height: 90, borderRadius: '50%', background: 'rgba(255,255,255,0.05)' }} />
         {/* Header on colour */}
         <div className="px-6 py-4 flex items-center gap-3">
           <button onClick={onBack} className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
@@ -193,38 +197,50 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
 
         {/* ── 4. This Week ── */}
         <MotionDiv {...stagger(2)} className="mt-12 md:mt-16">
-          <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center justify-between mb-4">
             <p className="text-xs uppercase tracking-[0.2em] font-semibold text-[#A8A29E] dark:text-zinc-500">This Week</p>
             <p className="text-xs text-[#C4C0BC] dark:text-zinc-600">Resets in {daysUntilReset}d</p>
           </div>
 
-          {/* Weekly Goal Rings */}
-          <div className="flex justify-center gap-8 mb-6">
-            {weeklyGoals.map((goal, gi) => {
-              const current = weeklyGoalProgress[goal.metric] ?? 0;
-              const pct = Math.min(100, Math.round((current / goal.target) * 100));
-              return (
-                <div key={goal.id} className="flex flex-col items-center">
-                  <ProgressRing progress={pct} size={56} strokeWidth={6} color={GOAL_COLORS[gi % GOAL_COLORS.length]} trackColor={`${GOAL_COLORS[gi % GOAL_COLORS.length]}30`}>
-                    <span className="text-xs font-apercu font-bold tabular-nums text-[#1A1A1A] dark:text-white">{current}/{goal.target}</span>
-                  </ProgressRing>
-                  <span className="text-[10px] mt-2 text-[#A8A29E] dark:text-zinc-500">{goal.label}</span>
-                </div>
-              );
-            })}
-          </div>
+          <div className="rounded-2xl bg-[#FEFDFB] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800 px-5 py-6" style={{ boxShadow: '0 1px 4px rgba(28,25,23,0.04)' }}>
+            {/* Weekly Goal Rings */}
+            <div className="flex justify-center gap-8 mb-5">
+              {weeklyGoals.map((goal, gi) => {
+                const current = weeklyGoalProgress[goal.metric] ?? 0;
+                const pct = Math.min(100, Math.round((current / goal.target) * 100));
+                return (
+                  <div key={goal.id} className="flex flex-col items-center">
+                    <ProgressRing progress={pct} size={56} strokeWidth={6} color={GOAL_COLORS[gi % GOAL_COLORS.length]} trackColor={`${GOAL_COLORS[gi % GOAL_COLORS.length]}30`}>
+                      <span className="text-xs font-apercu font-bold tabular-nums text-[#1A1A1A] dark:text-white">{current}/{goal.target}</span>
+                    </ProgressRing>
+                    <span className="text-[10px] mt-2 text-[#78716C] dark:text-zinc-400">{goal.label}</span>
+                  </div>
+                );
+              })}
+            </div>
 
-          {/* Weekly Bonus dots */}
-          <div className="flex items-center justify-center gap-2 mb-8">
-            {weeklyGoals.map((goal, gi) => {
-              const met = (weeklyGoalProgress[goal.metric] ?? 0) >= goal.target;
-              return <div key={gi} className={`w-3 h-3 rounded-full ${met ? 'bg-[#2A7D6F]' : 'bg-[#E8E4DE] dark:bg-zinc-700'}`} />;
-            })}
-            <span className="text-xs font-semibold ml-2" style={{ color: '#2A7D6F' }}>
-              {weeklyGoals.filter(g => (weeklyGoalProgress[g.metric] ?? 0) >= g.target).length === 3
-                ? 'Bonus earned!'
-                : '+50 pts next'}
-            </span>
+            {/* Weekly Bonus — stamp row */}
+            <div className="flex items-center justify-center gap-3 pt-4 mt-4" style={{ borderTop: '1px solid #EDEBE8' }}>
+              {weeklyGoals.map((goal, gi) => {
+                const met = (weeklyGoalProgress[goal.metric] ?? 0) >= goal.target;
+                return (
+                  <div key={gi} className="flex items-center justify-center w-7 h-7 rounded-lg" style={{ backgroundColor: met ? '#2A7D6F' : '#E8E4DE' }}>
+                    {met ? (
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7L6 10L11 4" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                    ) : (
+                      <span className="text-[10px] font-bold text-[#A8A29E]">{gi + 1}</span>
+                    )}
+                  </div>
+                );
+              })}
+              <div className="rounded-lg px-3 py-1.5" style={{ backgroundColor: 'rgba(42,125,111,0.1)' }}>
+                <span className="text-xs font-bold" style={{ color: '#2A7D6F' }}>
+                  {weeklyGoals.filter(g => (weeklyGoalProgress[g.metric] ?? 0) >= g.target).length === 3
+                    ? 'Bonus earned! +50 pts'
+                    : '+50 pts bonus'}
+                </span>
+              </div>
+            </div>
           </div>
 
           {/* Weekly Challenge */}
@@ -233,7 +249,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
             const CIcon = CHALLENGE_ICONS[ch.challenge.icon] || Trophy;
             const pct = Math.min(100, Math.round((ch.current / ch.challenge.target) * 100));
             return (
-              <div className="flex items-center gap-3 rounded-2xl px-5 py-4" style={{ backgroundColor: 'rgba(42,125,111,0.06)' }}>
+              <div className="flex items-center gap-3 rounded-2xl px-5 py-4 mt-3 bg-[#FEFDFB] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800" style={{ boxShadow: '0 1px 4px rgba(28,25,23,0.04)' }}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(42,125,111,0.12)' }}>
                   <CIcon size={20} style={{ color: '#2A7D6F' }} />
                 </div>
@@ -255,111 +271,147 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
           })()}
         </MotionDiv>
 
-        {/* ── 5. Strategy Mastery (collapsible) ── */}
-        <MotionDiv {...stagger(3)} className="mt-12 md:mt-16">
-          <button onClick={() => setStrategyOpen(o => !o)} className="w-full flex items-center justify-between cursor-pointer">
-            <p className="text-xs uppercase tracking-[0.2em] font-semibold text-[#A8A29E] dark:text-zinc-500">Strategy Mastery</p>
-            <div className="flex items-center gap-2">
-              <p className="text-xs text-[#C4C0BC] dark:text-zinc-600">
-                {strategyMastery ? STRATEGY_REGISTRY.filter(s => (strategyMastery[s.moduleId]?.tier ?? 'none') !== 'none').length : 0}/{STRATEGY_REGISTRY.length}
-              </p>
-              <motion.div animate={{ rotate: strategyOpen ? 180 : 0 }} transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}>
-                <ChevronDown size={16} className="text-[#A8A29E] dark:text-zinc-500" />
-              </motion.div>
-            </div>
-          </button>
-
-          <AnimatePresence initial={false}>
-            {strategyOpen && (
-              <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: 'auto', opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                style={{ overflow: 'hidden' }}
-              >
-                <div className="pt-6">
-                  {strategyMastery && STRATEGY_REGISTRY.some(s => (strategyMastery[s.moduleId]?.tier ?? 'none') !== 'none') ? (
-                    <div>
-                      {STRATEGY_REGISTRY
-                        .filter(s => (strategyMastery[s.moduleId]?.tier ?? 'none') !== 'none')
-                        .sort((a, b) => TIER_INDEX[strategyMastery[b.moduleId]?.tier ?? 'none'] - TIER_INDEX[strategyMastery[a.moduleId]?.tier ?? 'none'])
-                        .map((strategy, si, arr) => {
-                          const tier = strategyMastery[strategy.moduleId]?.tier ?? 'none';
-                          const tierIdx = TIER_INDEX[tier];
-                          const Icon = STRATEGY_ICONS[strategy.moduleId] || Brain;
-                          return (
-                            <div key={strategy.moduleId} className={`py-3 ${si < arr.length - 1 ? 'border-b border-[#F0EFED] dark:border-zinc-800' : ''}`}>
-                              <div className="flex items-center gap-2.5">
-                                <div className="w-4 h-4 rounded-full shrink-0" style={{ backgroundColor: TIER_COLORS[tier] }} />
-                                <Icon size={14} className="text-[#78716C] dark:text-zinc-400" />
-                                <span className="text-sm flex-1 text-[#1A1A1A] dark:text-white">{strategy.strategyName}</span>
-                                <span className="text-[10px] font-semibold uppercase" style={{ color: TIER_COLORS[tier] }}>{TIER_LABELS[tier]}</span>
-                              </div>
-                              {/* 4-segment tier bar */}
-                              <div className="flex gap-0.5 mt-2 ml-[22px]">
-                                {[0, 1, 2, 3].map(seg => (
-                                  <div key={seg} className={`flex-1 h-1 rounded-full ${seg <= tierIdx ? '' : 'bg-[#E8E4DE] dark:bg-zinc-700'}`} style={seg <= tierIdx ? { backgroundColor: TIER_COLORS[tier] } : undefined} />
-                                ))}
-                              </div>
-                            </div>
-                          );
-                        })}
+        {/* ── 5. Strategy Mastery (collapsible in card) ── */}
+        {(() => {
+          const masteredCount = strategyMastery ? STRATEGY_REGISTRY.filter(s => (strategyMastery[s.moduleId]?.tier ?? 'none') !== 'none').length : 0;
+          const masteryPct = Math.round((masteredCount / STRATEGY_REGISTRY.length) * 100);
+          return (
+            <MotionDiv {...stagger(3)} className="mt-8">
+              <div className="rounded-2xl bg-[#FEFDFB] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800 overflow-hidden" style={{ boxShadow: '0 1px 4px rgba(28,25,23,0.04)' }}>
+                <button onClick={() => setStrategyOpen(o => !o)} className="w-full flex items-center gap-3 px-5 py-4 cursor-pointer">
+                  <div className="w-9 h-9 rounded-xl shrink-0 flex items-center justify-center" style={{ backgroundColor: 'rgba(107,92,231,0.1)' }}>
+                    <Brain size={18} style={{ color: '#6C5CE7' }} />
+                  </div>
+                  <div className="flex-1 min-w-0 text-left">
+                    <p className="text-sm font-semibold text-[#1A1A1A] dark:text-white">Strategy Mastery</p>
+                    <div className="flex items-center gap-2 mt-1.5">
+                      <div className="flex-1 h-1.5 rounded-full bg-[#E8E4DE] dark:bg-zinc-700 overflow-hidden" style={{ maxWidth: 120 }}>
+                        <div className="h-full rounded-full" style={{ backgroundColor: '#6C5CE7', width: `${masteryPct}%` }} />
+                      </div>
+                      <span className="text-[10px] font-semibold text-[#A8A29E] dark:text-zinc-500">{masteredCount}/{STRATEGY_REGISTRY.length}</span>
                     </div>
-                  ) : (
-                    <p className="text-sm italic text-[#A8A29E] dark:text-zinc-500">
-                      Complete modules, then use strategies in study sessions.
-                    </p>
+                  </div>
+                  <motion.div animate={{ rotate: strategyOpen ? 180 : 0 }} transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}>
+                    <ChevronDown size={16} className="text-[#A8A29E] dark:text-zinc-500" />
+                  </motion.div>
+                </button>
+
+                <AnimatePresence initial={false}>
+                  {strategyOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                      style={{ overflow: 'hidden' }}
+                    >
+                      <div className="px-5 pb-4 pt-1" style={{ borderTop: '1px solid #EDEBE8' }}>
+                        {strategyMastery && STRATEGY_REGISTRY.some(s => (strategyMastery[s.moduleId]?.tier ?? 'none') !== 'none') ? (
+                          <div>
+                            {STRATEGY_REGISTRY
+                              .filter(s => (strategyMastery[s.moduleId]?.tier ?? 'none') !== 'none')
+                              .sort((a, b) => TIER_INDEX[strategyMastery[b.moduleId]?.tier ?? 'none'] - TIER_INDEX[strategyMastery[a.moduleId]?.tier ?? 'none'])
+                              .map((strategy, si, arr) => {
+                                const tier = strategyMastery[strategy.moduleId]?.tier ?? 'none';
+                                const tierIdx = TIER_INDEX[tier];
+                                const Icon = STRATEGY_ICONS[strategy.moduleId] || Brain;
+                                return (
+                                  <div key={strategy.moduleId} className={`py-3.5 ${si < arr.length - 1 ? 'border-b border-[#F0EFED] dark:border-zinc-800' : ''}`}>
+                                    <div className="flex items-center gap-3">
+                                      <div className="w-8 h-8 rounded-xl shrink-0 flex items-center justify-center" style={{ backgroundColor: `${TIER_COLORS[tier]}14` }}>
+                                        <Icon size={16} style={{ color: TIER_COLORS[tier] }} />
+                                      </div>
+                                      <span className="text-sm flex-1 font-medium text-[#1A1A1A] dark:text-white">{strategy.strategyName}</span>
+                                      <span className="text-[10px] font-semibold uppercase" style={{ color: TIER_COLORS[tier] }}>{TIER_LABELS[tier]}</span>
+                                    </div>
+                                    <div className="flex gap-1 mt-2.5 ml-11">
+                                      {[0, 1, 2, 3].map(seg => (
+                                        <div key={seg} className={`flex-1 h-1.5 rounded-full ${seg <= tierIdx ? '' : 'bg-[#E8E4DE] dark:bg-zinc-700'}`} style={seg <= tierIdx ? { backgroundColor: TIER_COLORS[tier] } : undefined} />
+                                      ))}
+                                    </div>
+                                  </div>
+                                );
+                              })}
+                          </div>
+                        ) : (
+                          <p className="text-sm italic py-3 text-[#A8A29E] dark:text-zinc-500">
+                            Complete modules, then use strategies in study sessions.
+                          </p>
+                        )}
+                      </div>
+                    </motion.div>
                   )}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </MotionDiv>
+                </AnimatePresence>
+              </div>
+            </MotionDiv>
+          );
+        })()}
 
-        {/* ── 6. Achievements (collapsible) ── */}
-        <MotionDiv {...stagger(4)} className="mt-12 md:mt-16">
-          <button onClick={() => setAchievementsOpen(o => !o)} className="w-full flex items-center justify-between cursor-pointer">
-            <p className="text-xs uppercase tracking-[0.2em] font-semibold text-[#A8A29E] dark:text-zinc-500">Achievements</p>
-            <div className="flex items-center gap-2">
-              <p className="text-xs text-[#C4C0BC] dark:text-zinc-600">{unlockedAchievements.length}/58</p>
-              <motion.div animate={{ rotate: achievementsOpen ? 180 : 0 }} transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}>
-                <ChevronDown size={16} className="text-[#A8A29E] dark:text-zinc-500" />
-              </motion.div>
-            </div>
-          </button>
+        {/* ── 6. Achievements (collapsible in card) ── */}
+        {(() => {
+          const achievePct = Math.round((unlockedAchievements.length / 58) * 100);
+          return (
+            <MotionDiv {...stagger(4)} className="mt-4">
+              <div className="rounded-2xl bg-[#FEFDFB] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800 overflow-hidden" style={{ boxShadow: '0 1px 4px rgba(28,25,23,0.04)' }}>
+                <button onClick={() => setAchievementsOpen(o => !o)} className="w-full flex items-center gap-3 px-5 py-4 cursor-pointer">
+                  <div className="w-9 h-9 rounded-xl shrink-0 flex items-center justify-center" style={{ backgroundColor: 'rgba(230,126,34,0.1)' }}>
+                    <Award size={18} style={{ color: '#E67E22' }} />
+                  </div>
+                  <div className="flex-1 min-w-0 text-left">
+                    <p className="text-sm font-semibold text-[#1A1A1A] dark:text-white">Achievements</p>
+                    <div className="flex items-center gap-2 mt-1.5">
+                      <div className="flex-1 h-1.5 rounded-full bg-[#E8E4DE] dark:bg-zinc-700 overflow-hidden" style={{ maxWidth: 120 }}>
+                        <div className="h-full rounded-full" style={{ backgroundColor: '#E67E22', width: `${achievePct}%` }} />
+                      </div>
+                      <span className="text-[10px] font-semibold text-[#A8A29E] dark:text-zinc-500">{unlockedAchievements.length}/58</span>
+                    </div>
+                  </div>
+                  <motion.div animate={{ rotate: achievementsOpen ? 180 : 0 }} transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}>
+                    <ChevronDown size={16} className="text-[#A8A29E] dark:text-zinc-500" />
+                  </motion.div>
+                </button>
 
-          <AnimatePresence initial={false}>
-            {achievementsOpen && (
-              <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: 'auto', opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                style={{ overflow: 'hidden' }}
-              >
-                <div className="pt-6">
-                  <AchievementGallery unlockedAchievements={unlockedAchievements} achievementTimestamps={gamificationState.achievementTimestamps} />
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </MotionDiv>
+                <AnimatePresence initial={false}>
+                  {achievementsOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                      style={{ overflow: 'hidden' }}
+                    >
+                      <div className="px-5 pb-5 pt-1" style={{ borderTop: '1px solid #EDEBE8' }}>
+                        <AchievementGallery unlockedAchievements={unlockedAchievements} achievementTimestamps={gamificationState.achievementTimestamps} />
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            </MotionDiv>
+          );
+        })()}
 
         {/* ── 7. Personal Bests ── */}
         {personalBests && Object.values(personalBests).some(v => v > 0) && (
           <MotionDiv {...stagger(5)} className="mt-12 md:mt-16">
-            <p className="text-xs uppercase tracking-[0.2em] font-semibold mb-6 text-[#A8A29E] dark:text-zinc-500">Personal Bests</p>
-            <div className="flex gap-8 flex-wrap">
+            <p className="text-xs uppercase tracking-[0.2em] font-semibold mb-4 text-[#A8A29E] dark:text-zinc-500">Personal Bests</p>
+            <div className="grid grid-cols-2 gap-3">
               {[
-                { key: 'bestDayPoints', label: 'Day Pts', color: '#2A7D6F' },
-                { key: 'bestDaySections', label: 'Day Sections', color: '#E67E22' },
-                { key: 'bestWeekPoints', label: 'Week Pts', color: '#6C5CE7' },
-                { key: 'bestWeekSessions', label: 'Week Sessions', color: '#E84393' },
+                { key: 'bestDayPoints', label: 'Best Day Points', color: '#2A7D6F' },
+                { key: 'bestDaySections', label: 'Best Day Sections', color: '#E67E22' },
+                { key: 'bestWeekPoints', label: 'Best Week Points', color: '#6C5CE7' },
+                { key: 'bestWeekSessions', label: 'Best Week Sessions', color: '#E84393' },
               ].filter(pb => (personalBests as any)[pb.key] > 0).map(pb => (
-                <div key={pb.key}>
-                  <p className="text-2xl font-apercu font-bold" style={{ color: pb.color }}>{(personalBests as any)[pb.key]}</p>
-                  <p className="text-[10px] uppercase tracking-widest mt-0.5 text-[#A8A29E] dark:text-zinc-500">{pb.label}</p>
+                <div
+                  key={pb.key}
+                  className="rounded-2xl bg-[#FEFDFB] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800 px-4 py-4"
+                  style={{ boxShadow: '0 1px 4px rgba(28,25,23,0.04)' }}
+                >
+                  <div className="w-8 h-8 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: `${pb.color}14` }}>
+                    <Trophy size={16} style={{ color: pb.color }} />
+                  </div>
+                  <p className="text-2xl font-apercu font-bold text-[#1A1A1A] dark:text-white">{(personalBests as any)[pb.key]}</p>
+                  <p className="text-[11px] mt-1 text-[#A8A29E] dark:text-zinc-500">{pb.label}</p>
                 </div>
               ))}
             </div>
@@ -367,16 +419,35 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
         )}
       </div>
 
-      {/* ── 8. North Star footer ── */}
+      {/* ── 8. North Star footer — rank colour environment ── */}
       {northStar && (
-        <MotionDiv {...stagger(6)} className="mt-16 py-12 px-6 text-center" style={{ backgroundColor: `${currentRank.colorHex}14` }}>
-          <div className="max-w-lg mx-auto">
-            <p className="font-serif italic text-base leading-relaxed text-[#57534E] dark:text-zinc-400">
-              &ldquo;{northStar.statement}&rdquo;
-            </p>
-            <button onClick={onOpenJourney} className="mt-3 text-xs font-semibold inline-flex items-center gap-1 group" style={{ color: currentRank.colorHex }}>
-              My Journey <ArrowRight size={12} className="group-hover:translate-x-0.5 transition-transform" />
-            </button>
+        <MotionDiv {...stagger(6)} className="relative overflow-hidden">
+          {/* Wave transition from cream into colour */}
+          <div style={{ backgroundColor: currentRank.colorHex }}>
+            <svg viewBox="0 0 1440 60" preserveAspectRatio="none" className="w-full block" style={{ height: 60, transform: 'translateY(-1px)' }}>
+              <path d="M0,60 C480,0 960,0 1440,60 L1440,0 L0,0 Z" className="fill-[#FDF8F0] dark:fill-zinc-950" />
+            </svg>
+          </div>
+
+          <div className="relative" style={{ backgroundColor: currentRank.colorHex }}>
+            {/* Decorative blobs — partially off-edge, clipped by outer wrapper */}
+            <div className="absolute pointer-events-none" style={{ top: -40, right: -30, width: 140, height: 140, borderRadius: '50%', background: 'rgba(255,255,255,0.08)' }} />
+            <div className="absolute pointer-events-none" style={{ bottom: -20, left: -20, width: 100, height: 100, borderRadius: '50%', background: 'rgba(0,0,0,0.05)' }} />
+
+            <div className="relative z-10 pt-4 pb-16 px-6 text-center">
+              <div className="max-w-md mx-auto">
+                <div className="w-10 h-10 rounded-full mx-auto mb-4 flex items-center justify-center" style={{ backgroundColor: 'rgba(255,255,255,0.18)' }}>
+                  <Compass size={20} style={{ color: '#fff' }} />
+                </div>
+                <p className="text-[11px] uppercase tracking-[0.14em] font-semibold mb-3" style={{ color: 'rgba(255,255,255,0.5)' }}>Your North Star</p>
+                <p className="font-serif italic text-lg leading-relaxed text-white">
+                  &ldquo;{northStar.statement}&rdquo;
+                </p>
+                <button onClick={onOpenJourney} className="mt-5 text-xs font-semibold inline-flex items-center gap-1.5 group px-4 py-2 rounded-full transition-colors" style={{ backgroundColor: 'rgba(255,255,255,0.18)', color: '#fff' }}>
+                  My Journey <ArrowRight size={12} className="group-hover:translate-x-0.5 transition-transform" />
+                </button>
+              </div>
+            </div>
           </div>
         </MotionDiv>
       )}

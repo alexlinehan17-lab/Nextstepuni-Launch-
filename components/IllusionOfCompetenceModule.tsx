@@ -79,7 +79,7 @@ const ForgettingCurveSimulator = () => {
     const dayLabels = ['Learn', '1', '2', '3', '4', '5', '6', '7'];
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Forgetting Curve</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Click on days to place review sessions and see how spacing fights forgetting.</p>
             <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">You have 3 reviews to place. Where will you put them?</p>
@@ -228,11 +228,11 @@ const FeynmanExplainer = () => {
     const jargonCount = jargon.filter(word => explanation.toLowerCase().includes(word)).length;
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Explain-It Challenge</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-4">Task: Explain this definition of Osmosis in simple terms, as if to a 12-year-old.</p>
              <p className="p-4 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl text-xs text-center mb-4">{concept}</p>
-             <textarea value={explanation} onChange={e => setExplanation(e.target.value)} className="w-full h-32 p-4 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl focus:outline-none focus:border-teal-400" placeholder="Your simple explanation..."></textarea>
+             <textarea value={explanation} onChange={e => setExplanation(e.target.value)} className="w-full h-32 bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none" style={{ border: '1.5px solid #E7E5E4' }} placeholder="Your simple explanation..."></textarea>
              {explanation.length > 0 &&
                 <div className={`mt-4 text-center text-xs p-2 rounded-lg ${jargonCount > 0 ? 'bg-rose-100 text-rose-700' : 'bg-emerald-100 text-emerald-700'}`}>
                     {jargonCount > 0 ? `Warning: You're using ${jargonCount} jargon word(s). Simplify further!` : 'Great! This is a simple, clear explanation.'}

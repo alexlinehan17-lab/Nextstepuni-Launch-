@@ -25,7 +25,7 @@ const ABQLinkDrill = () => {
         "LINK: In the text, 'Mary holds weekly meetings to get staff feedback on new menu ideas...'"
     ];
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">ABQ "Link" Methodology Drill</h4>
              <AnimatePresence mode="wait">
                 <motion.div key={step} initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} exit={{opacity:0, y:-10}} className="mt-6 p-6 bg-zinc-100 dark:bg-zinc-800 rounded-xl min-h-[80px] flex items-center justify-center">
@@ -143,7 +143,7 @@ const ABQAnswerScaffold = () => {
 
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
         ABQ Answer Builder
       </h4>
@@ -155,7 +155,7 @@ const ABQAnswerScaffold = () => {
       </p>
 
       {/* Case extract */}
-      <div className="mt-8 p-5 bg-zinc-50 dark:bg-zinc-900 rounded-lg border-l-4 border-zinc-400 dark:border-zinc-500">
+      <div className="mt-8 p-5 bg-zinc-50 dark:bg-zinc-900 rounded-lg" style={{ borderLeft: '4px solid #A1A1AA' }}>
         <p className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-2">
           Case Extract
         </p>
@@ -214,12 +214,18 @@ const ABQAnswerScaffold = () => {
             const isDone = revealed[i];
             const isLocked = i > stepIdx;
             const quality = isDone ? checkQuality(inputs[i], i) : null;
-            const borderColor =
+            const shadowColor =
               quality === 'good'
-                ? 'border-emerald-400 dark:border-emerald-500'
+                ? '#059669'
                 : quality === 'partial'
-                ? 'border-amber-400 dark:border-amber-500'
-                : 'border-zinc-200 dark:border-zinc-700';
+                ? '#D97706'
+                : '#1C1917';
+            const borderColorHex =
+              quality === 'good'
+                ? '#059669'
+                : quality === 'partial'
+                ? '#D97706'
+                : '#1C1917';
 
             return (
               <MotionDiv
@@ -227,7 +233,8 @@ const ABQAnswerScaffold = () => {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: isLocked ? 0.4 : 1, y: 0 }}
                 transition={{ delay: i * 0.08 }}
-                className={`p-5 rounded-xl border-2 ${borderColor} bg-white dark:bg-zinc-800 transition-colors`}
+                className="p-5 rounded-xl transition-colors"
+                style={{ backgroundColor: '#FFFFFF', border: `2px solid ${borderColorHex}`, borderRadius: 14, boxShadow: `3px 3px 0px 0px ${shadowColor}` }}
               >
                 {/* Step header */}
                 <div className="flex items-center gap-3 mb-3">
@@ -253,7 +260,7 @@ const ABQAnswerScaffold = () => {
                       onChange={(e) => handleInputChange(e.target.value)}
                       rows={3}
                       placeholder={`Write your ${label} here...`}
-                      className="w-full p-3 text-sm bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 rounded-lg text-zinc-800 dark:text-zinc-200 placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-500 resize-none transition-colors"
+                      className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none resize-none" style={{ border: '1.5px solid #E7E5E4' }}
                     />
                     {!isDone && (
                       <button
@@ -368,7 +375,30 @@ const MasteringBusinessModule: React.FC<{ onBack: () => void; progress: ModulePr
            {activeSection === 5 && (
             <ReadingSection title="Your Study Plan." eyebrow="Step 6" icon={BrainCircuit} theme={theme}>
               <p>Just reading over your notes does not work -- you forget most of it within a day. The trick is <Highlight description="Testing yourself from memory instead of just re-reading. It feels harder, but it is by far the best way to make things stick." theme={theme}>active recall</Highlight> -- actually testing yourself. Use spider diagrams and flashcards to pull information out of your head, not just put it in.</p>
-              <p>Break your study into three phases. <strong>Phase 1 (Sept-Dec):</strong> Focus hard on the ABQ units (3, 4, 5) since these are guaranteed to come up. <strong>Phase 2 (Jan-Mar):</strong> Cover the other units and start doing timed long questions. <strong>Phase 3 (Apr-May):</strong> Do <Highlight description="Mixing questions from different units in a single study session. This trains you to recognise what topic is being asked about, just like in the real exam." theme={theme}>mixed practice</Highlight> with past papers -- mix up the topics so you are ready for anything the exam throws at you.</p>
+              <p>Break your study into three phases:</p>
+              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Phase 1 (Sept-Dec)</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>Focus hard on the ABQ units (3, 4, 5) since these are guaranteed to come up.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Phase 2 (Jan-Mar)</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Cover the other units and start doing timed long questions.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Phase 3 (Apr-May)</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>Do <Highlight description="Mixing questions from different units in a single study session. This trains you to recognise what topic is being asked about, just like in the real exam." theme={theme}>mixed practice</Highlight> with past papers -- mix up the topics so you are ready for anything the exam throws at you.</p>
+                  </div>
+                </div>
+              </div>
                <MicroCommitment theme={theme}>
                 <p>Go to your Business notes. Pick one topic. Create a one-page spider diagram summary of it from memory -- no peeking. Then open the book and check what you missed. That is active recall in action, and you have just done it.</p>
               </MicroCommitment>

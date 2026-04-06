@@ -55,18 +55,17 @@ const CurlyArrowDrill = () => {
         setIsCorrect(false);
     };
 
-    const btnClass = (side: 'a' | 'b') => {
+    const btnStyle = (side: 'a' | 'b'): React.CSSProperties => {
         const isSource = side === 'a' ? s?.a.isSource : s?.b.isSource;
-        const base = 'flex-1 max-w-[150px] p-4 rounded-xl border-2 text-center transition-all';
         if (isCorrect) {
             return isSource
-                ? `${base} border-emerald-400 bg-emerald-50 dark:bg-emerald-950/20`
-                : `${base} border-zinc-200 dark:border-zinc-700 opacity-40`;
+                ? { backgroundColor: '#D1FAE5', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669' }
+                : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', opacity: 0.4 };
         }
         if (selected === side && !isSource) {
-            return `${base} border-rose-300 bg-rose-50/50 dark:bg-rose-950/10 dark:border-rose-800/40`;
+            return { backgroundColor: '#FEE2E2', border: '2.5px solid #EF4444', borderRadius: 14, boxShadow: '3px 3px 0px 0px #EF4444' };
         }
-        return `${base} border-zinc-200 dark:border-zinc-700 hover:border-emerald-300 dark:hover:border-emerald-700 cursor-pointer`;
+        return { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' };
     };
 
     /* Curly arrow SVG: curves from source side to sink side */
@@ -76,7 +75,7 @@ const CurlyArrowDrill = () => {
     const headRL = '9,12 3,20 10,20';
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Curly Arrow Drill</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Curly arrows always flow from electron SOURCE to electron SINK.</p>
             <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">Click the electron source in each pair.</p>
@@ -105,7 +104,7 @@ const CurlyArrowDrill = () => {
 
                         {/* Reaction pair */}
                         <div className="flex items-center justify-center gap-3 mb-4">
-                            <button onClick={() => handleSelect('a')} disabled={isCorrect} className={btnClass('a')}>
+                            <button onClick={() => handleSelect('a')} disabled={isCorrect} className="flex-1 max-w-[150px] p-4 text-center transition-all" style={btnStyle('a')}>
                                 <p className="text-2xl font-mono font-bold text-zinc-800 dark:text-white">{s.a.formula}</p>
                                 <p className="text-[10px] text-zinc-500 dark:text-zinc-400 mt-1">{s.a.label}</p>
                             </button>
@@ -131,7 +130,7 @@ const CurlyArrowDrill = () => {
                                 )}
                             </div>
 
-                            <button onClick={() => handleSelect('b')} disabled={isCorrect} className={btnClass('b')}>
+                            <button onClick={() => handleSelect('b')} disabled={isCorrect} className="flex-1 max-w-[150px] p-4 text-center transition-all" style={btnStyle('b')}>
                                 <p className="text-2xl font-mono font-bold text-zinc-800 dark:text-white">{s.b.formula}</p>
                                 <p className="text-[10px] text-zinc-500 dark:text-zinc-400 mt-1">{s.b.label}</p>
                             </button>
@@ -316,22 +315,21 @@ const KeywordPrecisionTester = () => {
         ? 'Good, but a few synonyms slipped in. Each wrong keyword is a lost mark.'
         : "The synonyms feel right, but the examiner only accepts exact terms. This is Biology's hidden trap.";
 
-  const optionBtnClass = (idx: number) => {
-    const base = 'px-5 py-3 rounded-full border-2 text-sm font-semibold transition-all';
+  const optionBtnStyle = (idx: number): React.CSSProperties => {
     if (selected === null) {
-      return `${base} border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-200 hover:border-emerald-400 dark:hover:border-emerald-600 cursor-pointer`;
+      return { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' };
     }
     if (idx === q.correctIndex) {
-      return `${base} border-emerald-400 bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300`;
+      return { backgroundColor: '#D1FAE5', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669' };
     }
     if (idx === selected && idx !== q.correctIndex) {
-      return `${base} border-rose-400 bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300`;
+      return { backgroundColor: '#FEE2E2', border: '2.5px solid #EF4444', borderRadius: 14, boxShadow: '3px 3px 0px 0px #EF4444', opacity: 0.8 };
     }
-    return `${base} border-zinc-200 dark:border-zinc-700 text-zinc-400 dark:text-zinc-500 opacity-50`;
+    return { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', opacity: 0.5 };
   };
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Keyword Precision Tester</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">
         In Biology, close enough is zero marks. Only the exact SEC keyword scores.
@@ -383,7 +381,8 @@ const KeywordPrecisionTester = () => {
                   key={opt}
                   onClick={() => handleSelect(idx)}
                   disabled={selected !== null}
-                  className={optionBtnClass(idx)}
+                  className="px-5 py-3 text-sm font-semibold transition-all text-zinc-700 dark:text-zinc-200"
+                  style={optionBtnStyle(idx)}
                 >
                   {opt}
                 </button>

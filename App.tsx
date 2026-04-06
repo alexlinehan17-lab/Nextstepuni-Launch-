@@ -204,7 +204,7 @@ const App: React.FC = () => {
       const newState: IslandState = { ...island, placements: newPlacements, lastPurchaseTimestamp: now };
       await setDoc(doc(db, 'progress', uid), { islandState: newState }, { merge: true });
     } catch (e) {
-      console.error('Failed to grant rank-up tiles:', e);
+      console.error('Failed to grant rank-up tiles:');
     }
   };
 
@@ -331,7 +331,7 @@ const App: React.FC = () => {
       }
       gamification.reload();
     } catch (error) {
-      console.error("Failed to save progress:", error);
+      console.error("Failed to save progress:");
       showToast('Couldn\'t save your progress — check your connection', 'error');
     }
   };
@@ -386,7 +386,7 @@ const App: React.FC = () => {
         // yearGroup saved to Firestore — will be picked up on next auth refresh
       }
     } catch (error) {
-      console.error('Failed to save subject profile:', error);
+      console.error('Failed to save subject profile:');
       showToast('Couldn\'t save — check your connection', 'error');
     }
     setStudentProfile(profile);
@@ -401,7 +401,7 @@ const App: React.FC = () => {
       const progressDocRef = doc(db, 'progress', user.uid);
       await setDoc(progressDocRef, { northStar: ns }, { merge: true });
     } catch (error) {
-      console.error('Failed to save North Star:', error);
+      console.error('Failed to save North Star:');
       showToast('Couldn\'t save — check your connection', 'error');
     }
   };
@@ -419,7 +419,7 @@ const App: React.FC = () => {
       const progressDocRef = doc(db, 'progress', user.uid);
       await setDoc(progressDocRef, { subjectProfile: profile }, { merge: true });
     } catch (error) {
-      console.error('Failed to save updated subject profile:', error);
+      console.error('Failed to save updated subject profile:');
       showToast('Couldn\'t save — check your connection', 'error');
     }
   };
@@ -437,7 +437,7 @@ const App: React.FC = () => {
           { merge: true }
         );
       } catch (err) {
-        console.error('Failed to persist guide dismissal:', err);
+        console.error('Failed to persist guide dismissal:');
         showToast('Couldn\'t save — check your connection', 'error');
       }
     }

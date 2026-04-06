@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
 import { ArrowLeft, ArrowRight, Eye, EyeOff, School, GraduationCap } from 'lucide-react';
 import { auth, db } from '../firebase';
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail } from 'firebase/auth';
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { SessionUser, getAvatarUrl, AVATAR_SEEDS } from './Auth';
 import { SCHOOLS } from '../schoolData';
@@ -31,7 +31,6 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const [showConfirmPw, setShowConfirmPw] = useState(false);
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [resetSent, setResetSent] = useState(false);
 
   const handleLogin = async () => {
     setIsLoading(true);
@@ -104,13 +103,6 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     setIsLoading(false);
   };
 
-  const handleForgotPassword = async () => {
-    if (!email) { setError('Enter your email first'); return; }
-    try {
-      await sendPasswordResetEmail(auth, email);
-      setResetSent(true);
-    } catch { setError('Could not send reset email'); }
-  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

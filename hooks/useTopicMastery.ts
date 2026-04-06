@@ -71,7 +71,7 @@ export function useTopicMastery(uid: string | undefined) {
           }
         }
       } catch (e) {
-        console.error('Failed to load topic mastery:', e);
+        console.error('Failed to load topic mastery:');
       }
       if (!cancelled) setIsLoaded(true);
     };

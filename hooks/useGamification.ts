@@ -128,7 +128,7 @@ export function useGamification({
           setAsyncCounts({ totalTimetableSessions: 0, totalReflections: 0, journeyMilestones: 0 });
         }
       } catch (err) {
-        console.error('Failed to load gamification data:', err);
+        console.error('Failed to load gamification data:');
       }
       if (!cancelled) setIsLoaded(true);
     };
@@ -237,7 +237,7 @@ export function useGamification({
     setGamificationData(merged);
     // Fire-and-forget Firestore write — queues offline via persistence
     setDoc(doc(db, 'progress', uid), { gamification: merged }, { merge: true }).catch(err => {
-      console.error('Failed to save gamification data:', err);
+      console.error('Failed to save gamification data:');
     });
   }, [uid, gamificationData]);
 
@@ -304,7 +304,7 @@ export function useGamification({
           updateDoc(doc(db, 'progress', uid), {
             'pointsData.totalEarned': increment(totalBonus),
           }).then(() => pointsData.reload()).catch(err => {
-            console.error('Failed to award achievement bonus:', err);
+            console.error('Failed to award achievement bonus:');
           });
         }
       }

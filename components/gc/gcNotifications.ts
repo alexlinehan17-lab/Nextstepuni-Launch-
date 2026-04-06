@@ -45,7 +45,7 @@ export async function getNotifications(uid: string): Promise<AppNotification[]> 
     const items = (snap.data().items || []) as AppNotification[];
     return items.sort((a, b) => b.timestamp - a.timestamp);
   } catch (e) {
-    console.error('Failed to read notifications:', e);
+    console.error('Failed to read notifications:');
     return [];
   }
 }
@@ -67,7 +67,7 @@ export async function addNotification(uid: string, notification: Omit<AppNotific
       txn.set(ref, { items: updated });
     });
   } catch (e) {
-    console.error('Failed to add notification:', e);
+    console.error('Failed to add notification:');
   }
 }
 
@@ -83,7 +83,7 @@ export async function markNotificationRead(uid: string, notificationId: string):
       txn.set(ref, { items: updated });
     });
   } catch (e) {
-    console.error('Failed to mark notification read:', e);
+    console.error('Failed to mark notification read:');
   }
 }
 
@@ -99,7 +99,7 @@ export async function markAllRead(uid: string): Promise<void> {
       txn.set(ref, { items: updated });
     });
   } catch (e) {
-    console.error('Failed to mark all read:', e);
+    console.error('Failed to mark all read:');
   }
 }
 
@@ -254,6 +254,6 @@ export async function generateAutoNotifications(uid: string, progressData: Progr
       }
     }
   } catch (e) {
-    console.error('Auto-notification generation failed:', e);
+    console.error('Auto-notification generation failed:');
   }
 }

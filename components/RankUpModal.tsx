@@ -286,8 +286,7 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
                     return (
                       <div key={rank.id} className="flex-1 flex flex-col items-center">
                         <MotionDiv
-                          className="w-full overflow-hidden"
-                          className="bg-[#EDEBE8] dark:bg-zinc-700"
+                          className="w-full overflow-hidden bg-[#EDEBE8] dark:bg-zinc-700"
                           style={{
                             height: isCurrent ? 10 : 7,
                             borderRadius: 5,
@@ -336,7 +335,7 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
               </div>
             </MotionDiv>
 
-            {/* ── Achievement card ── */}
+            {/* ── Achievement card — saturated rank colour ── */}
             <MotionDiv
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
@@ -346,40 +345,48 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
               <div
                 className="rounded-2xl overflow-hidden relative"
                 style={{
-                  backgroundColor: `${newRank.colorHex}10`,
-                  border: `1px solid ${newRank.colorHex}20`,
-                  boxShadow: `0 2px 8px ${newRank.colorHex}10`,
+                  backgroundColor: newRank.colorHex,
+                  boxShadow: `0 4px 20px ${newRank.colorHex}40`,
                 }}
               >
-                {/* Decorative circle in top-right of card */}
+                {/* Decorative blobs */}
                 <div
                   className="absolute pointer-events-none"
                   style={{
-                    top: -20, right: -20,
-                    width: 80, height: 80,
+                    top: -30, right: -30,
+                    width: 100, height: 100,
                     borderRadius: '50%',
-                    background: `${newRank.colorHex}08`,
+                    background: darkText ? 'rgba(0,0,0,0.06)' : 'rgba(255,255,255,0.1)',
+                  }}
+                />
+                <div
+                  className="absolute pointer-events-none"
+                  style={{
+                    bottom: -20, left: -15,
+                    width: 70, height: 70,
+                    borderRadius: '50%',
+                    background: darkText ? 'rgba(0,0,0,0.04)' : 'rgba(255,255,255,0.07)',
                   }}
                 />
 
                 <div className="relative px-5 py-5">
                   <div className="flex items-start gap-4">
-                    {/* Icon badge */}
+                    {/* Icon badge — frosted */}
                     <div
                       className="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0"
-                      style={{ backgroundColor: `${newRank.colorHex}18` }}
+                      style={{ backgroundColor: darkText ? 'rgba(0,0,0,0.08)' : 'rgba(255,255,255,0.2)' }}
                     >
-                      <Mountain size={24} strokeWidth={1.5} style={{ color: newRank.colorHex }} />
+                      <Mountain size={24} strokeWidth={1.5} style={{ color: heroText }} />
                     </div>
 
                     <div className="flex-1 min-w-0">
                       <p
                         className="text-[11px] font-semibold uppercase tracking-[0.1em] mb-1"
-                        style={{ color: newRank.colorHex }}
+                        style={{ color: heroText }}
                       >
                         Your island is growing
                       </p>
-                      <p className="text-sm leading-relaxed" style={{ color: '#57534E' }}>
+                      <p className="text-sm leading-relaxed" style={{ color: heroTextMuted }}>
                         3 new tiles added to your island. Visit My Journey to see it expand.
                       </p>
                     </div>
@@ -388,12 +395,12 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
                   {onGoToJourney && (
                     <div
                       className="mt-4 pt-3"
-                      style={{ borderTop: `1px solid ${newRank.colorHex}15` }}
+                      style={{ borderTop: `1px solid ${darkText ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.2)'}` }}
                     >
                       <button
                         onClick={() => { onClose(); onGoToJourney(); }}
                         className="w-full flex items-center justify-center gap-1.5 text-xs font-semibold py-1 transition-opacity hover:opacity-70"
-                        style={{ color: newRank.colorHex }}
+                        style={{ color: heroText }}
                       >
                         View My Journey
                         <ChevronRight size={14} />
@@ -403,9 +410,9 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
                   {!onGoToJourney && isMaxRank && (
                     <div
                       className="mt-4 pt-3 text-center"
-                      style={{ borderTop: `1px solid ${newRank.colorHex}15` }}
+                      style={{ borderTop: `1px solid ${darkText ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.2)'}` }}
                     >
-                      <span className="text-xs font-bold" style={{ color: newRank.colorHex }}>
+                      <span className="text-xs font-bold" style={{ color: heroText }}>
                         Final rank reached
                       </span>
                     </div>

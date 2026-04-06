@@ -9,6 +9,7 @@ import {
   doc, updateDoc, increment, getDoc, arrayUnion,
 } from 'firebase/firestore';
 import { db } from '../firebase';
+import { containsProfanity } from '../components/flares/profanityFilter';
 
 // ── Types ──────────────────────────────────────────────────
 
@@ -51,7 +52,7 @@ export function useTeachBack(uid?: string, school?: string) {
           seenIdsRef.current = new Set(seen);
         }
       } catch (err) {
-        console.error('[TeachBack] Failed to load seen list:', err);
+        console.error('[TeachBack] Failed to load seen list:');
       }
     })();
   }, [uid]);
@@ -89,13 +90,14 @@ export function useTeachBack(uid?: string, school?: string) {
       // Weighted selection — helpful ones appear more often
       setTeachBackToRead(weightedPick(candidates));
     } catch (err) {
-      console.error('[TeachBack] Failed to fetch:', err);
+      console.error('[TeachBack] Failed to fetch:');
     }
   }, [uid, school]);
 
   // Submit a new teach-back
   const submitTeachBack = useCallback(async (subject: string, explanation: string): Promise<boolean> => {
     if (!uid || !school || !explanation.trim()) return false;
+    if (containsProfanity(explanation)) return false;
     setIsSubmitting(true);
     try {
       await addDoc(collection(db, 'teachbacks'), {
@@ -109,7 +111,7 @@ export function useTeachBack(uid?: string, school?: string) {
       setIsSubmitting(false);
       return true;
     } catch (err) {
-      console.error('[TeachBack] Failed to submit:', err);
+      console.error('[TeachBack] Failed to submit:');
       setIsSubmitting(false);
       return false;
     }
@@ -123,7 +125,7 @@ export function useTeachBack(uid?: string, school?: string) {
         helpfulCount: increment(1),
       });
     } catch (err) {
-      console.error('[TeachBack] Failed to mark helpful:', err);
+      console.error('[TeachBack] Failed to mark helpful:');
     }
     // Also mark seen
     seenIdsRef.current.add(teachBackId);
@@ -133,7 +135,7 @@ export function useTeachBack(uid?: string, school?: string) {
         teachBacksSeen: arrayUnion(teachBackId),
       });
     } catch (err) {
-      console.error('[TeachBack] Failed to update seen list:', err);
+      console.error('[TeachBack] Failed to update seen list:');
     }
   }, [uid]);
 
@@ -147,7 +149,7 @@ export function useTeachBack(uid?: string, school?: string) {
         teachBacksSeen: arrayUnion(teachBackId),
       });
     } catch (err) {
-      console.error('[TeachBack] Failed to update seen list:', err);
+      console.error('[TeachBack] Failed to update seen list:');
     }
   }, [uid]);
 

@@ -22,142 +22,99 @@ const CognitiveLoadBalancer = () => {
     const total = loads.intrinsic + loads.extraneous + loads.germane;
     const overload = total > 100;
     const germaneRoom = Math.max(0, 100 - loads.intrinsic - loads.extraneous);
+    const healthy = total <= 85;
 
-    const getDiagnosis = () => {
-      if (overload) return { text: 'Overloaded. Your Working Memory has no capacity left — nothing is being processed properly.', color: 'bg-rose-50 dark:bg-rose-950/20 border-rose-200 dark:border-rose-800/40 text-rose-700 dark:text-rose-300' };
-      if (loads.extraneous > 30) return { text: 'Too much waste. Extraneous load is eating your capacity. Clear distractions before increasing study effort.', color: 'bg-amber-50 dark:bg-amber-950/20 border-amber-200 dark:border-amber-800/40 text-amber-700 dark:text-amber-300' };
-      if (loads.germane < 15) return { text: 'Low learning. You have spare capacity but aren\'t using it for deep processing. Switch from passive to active study.', color: 'bg-zinc-50 dark:bg-zinc-900/30 border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300' };
-      if (loads.germane >= 30 && !overload) return { text: 'Strong learning. Germane load is high and you\'re within capacity. This is effective study.', color: 'bg-emerald-50 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800/40 text-emerald-700 dark:text-emerald-300' };
-      return { text: 'Moderate. You\'re within capacity but could push Germane load higher for deeper learning.', color: 'bg-teal-50 dark:bg-teal-950/20 border-teal-200 dark:border-teal-800/40 text-teal-700 dark:text-teal-300' };
-    };
-
-    const diagnosis = getDiagnosis();
-
-    const loadTypes = [
-      {
-        key: 'intrinsic' as const,
-        label: 'Intrinsic Load',
-        plain: 'The difficulty of the topic itself',
-        example: 'e.g., Probability is harder than basic addition',
-        direction: 'Fixed — you can\'t change this, only manage around it',
-        barColor: 'bg-blue-500',
-        bgClass: 'bg-blue-50 dark:bg-blue-950/20',
-        borderClass: 'border-blue-200 dark:border-blue-800/40',
-        textClass: 'text-blue-700 dark:text-blue-300',
-        accent: 'accent-blue-500',
-        dotClass: 'bg-blue-500',
-      },
-      {
-        key: 'extraneous' as const,
-        label: 'Extraneous Load',
-        plain: 'Waste from distractions & confusion',
-        example: 'e.g., Phone buzzing, noisy room, unclear instructions',
-        direction: 'Minimize this — it steals space from learning',
-        barColor: 'bg-rose-500',
-        bgClass: 'bg-rose-50 dark:bg-rose-950/20',
-        borderClass: 'border-rose-200 dark:border-rose-800/40',
-        textClass: 'text-rose-700 dark:text-rose-300',
-        accent: 'accent-rose-500',
-        dotClass: 'bg-rose-500',
-      },
-      {
-        key: 'germane' as const,
-        label: 'Germane Load',
-        plain: 'The productive effort that builds memory',
-        example: 'e.g., Active recall, self-explanation, practice questions',
-        direction: 'Maximize this — it\'s the only load that causes learning',
-        barColor: 'bg-teal-500',
-        bgClass: 'bg-teal-50 dark:bg-teal-950/20',
-        borderClass: 'border-teal-200 dark:border-teal-800/40',
-        textClass: 'text-teal-700 dark:text-teal-300',
-        accent: 'accent-teal-500',
-        dotClass: 'bg-teal-500',
-      },
+    const loadTypes: { key: 'intrinsic' | 'extraneous' | 'germane'; label: string; plain: string; example: string; direction: string; color: string; barColor: string; fixed?: boolean }[] = [
+      { key: 'intrinsic', label: 'Intrinsic Load', plain: 'The difficulty of the topic itself', example: 'e.g., Probability is harder than basic addition', direction: 'Fixed — you can\'t change this, only manage around it', color: '#1a1a1a', barColor: '#e0dbd4', fixed: true },
+      { key: 'extraneous', label: 'Extraneous Load', plain: 'Waste from distractions & confusion', example: 'e.g., Phone buzzing, noisy room, unclear instructions', direction: 'Minimize this — it steals space from learning', color: '#E85D75', barColor: '#E85D75' },
+      { key: 'germane', label: 'Germane Load', plain: 'The productive effort that builds memory', example: 'e.g., Active recall, self-explanation, practice questions', direction: 'Maximize this — it\'s the only load that causes learning', color: '#2A7D6F', barColor: '#2A7D6F' },
     ];
 
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Cognitive Load Balancer</h4>
-        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Your Working Memory is a small container. Three types of load compete for space inside it.</p>
+      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+        {/* Section chip + title */}
+        <div className="text-center mb-8">
+          <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Interactive Simulation</span>
+          <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Cognitive Load Balancer</h4>
+          <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Your Working Memory is a small container. Three types of load compete for space inside it.</p>
+        </div>
 
-        {/* Working Memory Tank */}
+        {/* Stacked bar */}
         <div className="mb-8">
           <div className="flex items-center justify-between mb-2">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Working Memory Capacity</span>
-            <span className={`text-[10px] font-bold ${overload ? 'text-rose-500' : 'text-zinc-400 dark:text-zinc-500'}`}>{total}% / 100%</span>
+            <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', textTransform: 'uppercase' as const }}>Working Memory Capacity</span>
+            <span className="font-semibold" style={{ fontSize: 13, color: overload ? '#E85D75' : '#2A7D6F' }}>{total}% / 100%</span>
           </div>
-          <div className="relative w-full h-10 bg-zinc-100 dark:bg-zinc-900 rounded-xl overflow-hidden">
-            <div className="absolute inset-0 flex">
-              <motion.div
-                className="h-full bg-blue-500/80"
-                animate={{ width: `${Math.min(loads.intrinsic, 100)}%` }}
-                transition={{ type: 'spring', stiffness: 120, damping: 20 }}
-              />
-              <motion.div
-                className="h-full bg-rose-500/80"
-                animate={{ width: `${Math.min(loads.extraneous, 100 - loads.intrinsic > 0 ? loads.extraneous : 0)}%` }}
-                transition={{ type: 'spring', stiffness: 120, damping: 20 }}
-              />
-              <motion.div
-                className="h-full bg-teal-500/80"
-                animate={{ width: `${Math.min(loads.germane, germaneRoom > 0 ? loads.germane : 0)}%` }}
-                transition={{ type: 'spring', stiffness: 120, damping: 20 }}
-              />
+          <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 12, overflow: 'hidden', height: 28 }}>
+            <div className="flex h-full">
+              <motion.div style={{ backgroundColor: '#e0dbd4' }} animate={{ width: `${Math.min(loads.intrinsic, 100)}%` }} transition={{ duration: 0.3 }} />
+              <motion.div style={{ backgroundColor: '#E85D75' }} animate={{ width: `${Math.min(loads.extraneous, 100 - loads.intrinsic > 0 ? loads.extraneous : 0)}%` }} transition={{ duration: 0.3 }} />
+              <motion.div style={{ backgroundColor: '#2A7D6F' }} animate={{ width: `${Math.min(loads.germane, germaneRoom > 0 ? loads.germane : 0)}%` }} transition={{ duration: 0.3 }} />
             </div>
-            {/* Capacity line */}
-            <div className="absolute right-0 top-0 bottom-0 w-px bg-zinc-800 dark:bg-white opacity-30" />
-            {overload && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: [0.3, 0.6, 0.3] }}
-                transition={{ duration: 1.2, repeat: Infinity }}
-                className="absolute inset-0 bg-rose-500/20 rounded-xl"
-              />
-            )}
           </div>
           {/* Legend */}
-          <div className="flex gap-4 mt-2 justify-center">
-            {loadTypes.map(l => (
-              <div key={l.key} className="flex items-center gap-1.5">
-                <div className={`w-2.5 h-2.5 rounded-sm ${l.dotClass}`} />
-                <span className="text-[9px] text-zinc-500 dark:text-zinc-400">{l.label}</span>
-              </div>
-            ))}
+          <div className="flex gap-5 mt-3 justify-center">
+            <div className="flex items-center gap-1.5">
+              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#e0dbd4' }} />
+              <span style={{ fontSize: 12, color: '#7a7068' }}>Intrinsic</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#E85D75' }} />
+              <span style={{ fontSize: 12, color: '#7a7068' }}>Extraneous</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#2A7D6F' }} />
+              <span style={{ fontSize: 12, color: '#7a7068' }}>Germane</span>
+            </div>
           </div>
         </div>
 
-        {/* Load type cards */}
+        {/* Slider cards */}
         <div className="space-y-3 mb-6">
           {loadTypes.map(l => (
-            <div key={l.key} className={`p-4 rounded-xl border ${l.bgClass} ${l.borderClass}`}>
+            <div key={l.key} className="bg-white dark:bg-zinc-900" style={{ border: `2px solid ${l.color}`, borderRadius: 14, padding: '20px 22px' }}>
               <div className="flex items-start justify-between mb-1">
                 <div>
-                  <p className={`text-xs font-bold ${l.textClass}`}>{l.label}</p>
-                  <p className="text-[11px] text-zinc-600 dark:text-zinc-300">{l.plain}</p>
+                  <div className="flex items-center gap-2">
+                    <p className="font-serif font-semibold" style={{ fontSize: 16, color: l.color }}>{l.label}</p>
+                    {l.fixed && (
+                      <span style={{ backgroundColor: '#f0ece6', color: '#9e9186', border: '1px solid #d0cdc8', borderRadius: 20, padding: '2px 8px', fontSize: 10, fontWeight: 700 }}>FIXED</span>
+                    )}
+                  </div>
+                  <p style={{ fontSize: 14, color: '#5a5550' }}>{l.plain}</p>
                 </div>
-                <span className={`text-sm font-bold ${l.textClass} ml-3`}>{loads[l.key]}%</span>
+                <span className="font-serif font-bold ml-3" style={{ fontSize: 20, color: l.color }}>{loads[l.key]}%</span>
               </div>
-              <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mb-2 italic">{l.example}</p>
+              <p className="italic mb-2" style={{ fontSize: 13, color: '#9e9186' }}>{l.example}</p>
               <input
                 type="range" min="5" max="70"
                 value={loads[l.key]}
                 onChange={e => setLoads({ ...loads, [l.key]: parseInt(e.target.value) })}
-                className={`w-full h-1.5 ${l.accent}`}
+                className="chunky-slider chunky-slider-teal"
+                disabled={l.fixed}
+                style={l.fixed ? { opacity: 0.5 } : undefined}
               />
-              <p className={`text-[9px] font-bold mt-1 ${l.textClass} opacity-70`}>{l.direction}</p>
+              <p className="font-semibold mt-1" style={{ fontSize: 12, color: l.color }}>{l.direction}</p>
             </div>
           ))}
         </div>
 
-        {/* Diagnosis */}
-        <motion.div
-          key={diagnosis.text}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className={`p-4 rounded-xl border ${diagnosis.color}`}
-        >
-          <p className="text-sm text-center">{diagnosis.text}</p>
-        </motion.div>
+        {/* Diagnosis callout */}
+        <AnimatePresence mode="wait">
+          {overload ? (
+            <motion.div key="overload" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} style={{ borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
+              <p className="text-sm italic" style={{ color: '#b33030' }}>Working memory overloaded — learning becomes very difficult at this point.</p>
+            </motion.div>
+          ) : healthy ? (
+            <motion.div key="healthy" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
+              <p className="text-sm italic" style={{ color: '#1a6358' }}>Good balance — your working memory has space to form lasting memories.</p>
+            </motion.div>
+          ) : (
+            <motion.div key="moderate" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} style={{ borderLeft: '3px solid #d0cdc8', backgroundColor: '#f8f6f2', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
+              <p className="text-sm italic" style={{ color: '#7a7068' }}>Within capacity, but push Germane load higher or reduce Extraneous to optimise learning.</p>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     );
 }
@@ -165,15 +122,15 @@ const CognitiveLoadBalancer = () => {
 const StairsEscalator = () => {
     const [choice, setChoice] = useState<'stairs' | 'escalator' | null>(null);
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Stairs vs. Escalator</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Which path leads to real learning?</p>
             <div className="grid grid-cols-2 gap-4">
-                <button onClick={() => setChoice('escalator')} className="p-4 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl text-center"><strong>The Escalator:</strong> A perfectly clear lecture, re-reading your notes.</button>
-                <button onClick={() => setChoice('stairs')} className="p-4 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl text-center"><strong>The Stairs:</strong> Struggling with a past paper, trying to explain a topic.</button>
+                <button onClick={() => setChoice('escalator')} className="p-4 rounded-xl text-center font-medium transition-all" style={choice === 'escalator' ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}><strong>The Escalator:</strong> A perfectly clear lecture, re-reading your notes.</button>
+                <button onClick={() => setChoice('stairs')} className="p-4 rounded-xl text-center font-medium transition-all" style={choice === 'stairs' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}><strong>The Stairs:</strong> Struggling with a past paper, trying to explain a topic.</button>
             </div>
             {choice &&
-            <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6 p-4 rounded-xl text-sm text-white bg-zinc-900">
+            <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6 p-4 rounded-xl text-sm" style={choice === 'stairs' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' }}>
                 {choice === 'escalator' && <p><strong>You chose the escalator.</strong> It feels smooth and effortless. You arrive at the top (the answer) quickly. But your muscles (your brain) did no work. The feeling of fluency is high, but long-term learning is low.</p>}
                 {choice === 'stairs' && <p><strong>You chose the stairs.</strong> It's slow and feels hard. You might stumble (make mistakes). But this effort is what strengthens your cardiovascular system (your long-term memory). The feeling of learning is low, but the actual result is high.</p>}
             </motion.div>}
@@ -186,28 +143,105 @@ const IllusionOfCompetenceChart = () => {
     const ssssData = { prediction: 90, reality: 40 };
     const stttData = { prediction: 40, reality: 61 };
 
+    const passiveH = view === 'prediction' ? ssssData.prediction : ssssData.reality;
+    const activeH = view === 'prediction' ? stttData.prediction : stttData.reality;
+
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Great Deception</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">The gap between what <em>feels</em> effective and what <em>is</em> effective is massive.</p>
-            <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="text-center">
-                    <h5 className="font-bold mb-2">Passive Re-reading</h5>
-                    <div className="h-48 w-full bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-end">
-                        <motion.div className="w-full bg-teal-400 rounded-t-lg" initial={{height:0}} animate={{height: `${view === 'prediction' ? ssssData.prediction : ssssData.reality}%`}} transition={{type: 'spring', stiffness: 100}}/>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+            {/* Section chip + title */}
+            <div className="text-center mb-8">
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Research Evidence</span>
+                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>The Great Deception</h4>
+                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>The gap between what <em>feels</em> effective and what <em>is</em> effective is massive.</p>
+            </div>
+
+            {/* Chart card */}
+            <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 24 }}>
+                <div className="grid grid-cols-2 gap-8">
+                    {/* Passive Re-reading column */}
+                    <div className="text-center">
+                        <h5 className="font-serif font-semibold mb-4" style={{ fontSize: 16, color: '#1a1a1a' }}>Passive Re-reading</h5>
+                        <div className="relative flex items-end justify-center" style={{ height: 200 }}>
+                            <motion.div
+                                className="w-full relative"
+                                style={{ backgroundColor: '#d0cdc8', borderRadius: '8px 8px 0 0', maxWidth: 80 }}
+                                initial={{ height: 0 }}
+                                animate={{ height: `${passiveH}%` }}
+                                transition={{ type: 'spring', stiffness: 100 }}
+                            >
+                                <span className="absolute top-2 left-0 right-0 text-center font-serif font-bold" style={{ fontSize: 22, color: '#5a5550' }}>{passiveH}%</span>
+                            </motion.div>
+                        </div>
+                        <div style={{ height: 1, backgroundColor: '#d0cdc8' }} />
                     </div>
-                </div>
-                <div className="text-center">
-                     <h5 className="font-bold mb-2">Active Self-Testing</h5>
-                     <div className="h-48 w-full bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-end">
-                        <motion.div className="w-full bg-indigo-400 rounded-t-lg" initial={{height:0}} animate={{height: `${view === 'prediction' ? stttData.prediction : stttData.reality}%`}} transition={{type: 'spring', stiffness: 100}}/>
+
+                    {/* Active Self-Testing column */}
+                    <div className="text-center">
+                        <h5 className="font-serif font-semibold mb-4" style={{ fontSize: 16, color: '#1a1a1a' }}>Active Self-Testing</h5>
+                        <div className="relative flex items-end justify-center" style={{ height: 200 }}>
+                            <motion.div
+                                className="w-full relative"
+                                style={{ backgroundColor: '#2A7D6F', borderRadius: '8px 8px 0 0', maxWidth: 80 }}
+                                initial={{ height: 0 }}
+                                animate={{ height: `${activeH}%` }}
+                                transition={{ type: 'spring', stiffness: 100 }}
+                            >
+                                <span className="absolute top-2 left-0 right-0 text-center font-serif font-bold" style={{ fontSize: 22, color: '#FFFFFF' }}>{activeH}%</span>
+                            </motion.div>
+                        </div>
+                        <div style={{ height: 1, backgroundColor: '#d0cdc8' }} />
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center gap-2 p-1 bg-zinc-100 dark:bg-zinc-800 rounded-full">
-                <button onClick={() => setView('prediction')} className={`px-4 py-2 text-xs font-bold rounded-full ${view === 'prediction' ? 'bg-white shadow' : ''}`}>What Students Predicted</button>
-                <button onClick={() => setView('reality')} className={`px-4 py-2 text-xs font-bold rounded-full ${view === 'reality' ? 'bg-white shadow' : ''}`}>Actual Test Results (1 Week Later)</button>
+
+            {/* Toggle buttons */}
+            <div className="flex justify-center gap-2 mt-5">
+                <button
+                    onClick={() => setView('prediction')}
+                    style={{
+                        padding: '10px 20px',
+                        borderRadius: 20,
+                        fontSize: 13,
+                        fontWeight: 600,
+                        backgroundColor: view === 'prediction' ? '#2A7D6F' : '#FFFFFF',
+                        color: view === 'prediction' ? '#FFFFFF' : '#7a7068',
+                        border: view === 'prediction' ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+                        cursor: 'pointer',
+                    }}
+                >
+                    What students predicted
+                </button>
+                <button
+                    onClick={() => setView('reality')}
+                    style={{
+                        padding: '10px 20px',
+                        borderRadius: 20,
+                        fontSize: 13,
+                        fontWeight: 600,
+                        backgroundColor: view === 'reality' ? '#2A7D6F' : '#FFFFFF',
+                        color: view === 'reality' ? '#FFFFFF' : '#7a7068',
+                        border: view === 'reality' ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+                        cursor: 'pointer',
+                    }}
+                >
+                    Actual test results (1 week later)
+                </button>
             </div>
+
+            {/* Insight callout — only on reality view */}
+            <AnimatePresence>
+                {view === 'reality' && (
+                    <motion.div
+                        initial={{ opacity: 0, y: 6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 6 }}
+                        className="mt-4 max-w-lg mx-auto"
+                        style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
+                    >
+                        <p className="text-sm italic" style={{ color: '#1a6358' }}>Active self-testing produces 3× better retention — but most students never use it because it feels harder.</p>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 };
@@ -267,7 +301,7 @@ const ScenarioDiagnosis = () => {
   const allDone = revealed.size === scenarios.length;
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Unified Model: Diagnose the Study Session</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Read each scenario and identify the primary problem — or if the session is already optimized.</p>
 
@@ -306,17 +340,19 @@ const ScenarioDiagnosis = () => {
               const isCorrect = scenarios[current].answer === p.key;
               const isRevealed = revealed.has(current);
 
-              let btnClass = 'bg-zinc-50 dark:bg-zinc-900/30 text-zinc-600 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400';
-              if (isRevealed && isChosen && isCorrect) btnClass = `${p.color} border-transparent`;
-              else if (isRevealed && isChosen && !isCorrect) btnClass = 'bg-rose-100 dark:bg-rose-950/30 text-rose-600 dark:text-rose-400 border-rose-300 dark:border-rose-800';
-              else if (isRevealed && isCorrect) btnClass = `${p.color} border-transparent opacity-70`;
+              let btnStyle: React.CSSProperties = { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' };
+              let btnTextColor = '';
+              if (isRevealed && isChosen && isCorrect) { btnStyle = { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669' }; btnTextColor = '#064E3B'; }
+              else if (isRevealed && isChosen && !isCorrect) { btnStyle = { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626' }; btnTextColor = '#7F1D1D'; }
+              else if (isRevealed && isCorrect) { btnStyle = { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', opacity: 0.7 }; btnTextColor = '#064E3B'; }
 
               return (
                 <button
                   key={p.key}
                   onClick={() => handleAnswer(p.key)}
                   disabled={isRevealed}
-                  className={`p-3 rounded-xl border text-center transition-all ${btnClass}`}
+                  className="p-3 rounded-xl text-center transition-all"
+                  style={{ ...btnStyle, color: btnTextColor || undefined }}
                 >
                   <p className="text-xs font-bold">{p.label}</p>
                   <p className="text-[9px] opacity-70 mt-0.5">{p.desc}</p>
@@ -506,7 +542,7 @@ const ConfidenceRetentionParadox = () => {
     );
 
     return (
-        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Confidence Trap</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">What feels best works worst. What feels worst works best.</p>
 

@@ -23,7 +23,7 @@ const ChallengeThreatSimulator = () => {
     const isChallenge = resources >= 50;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Challenge vs. Threat State</h4>
              <div className="grid grid-cols-2 gap-8 items-center mt-8">
                 <div className="text-center">
@@ -35,8 +35,8 @@ const ChallengeThreatSimulator = () => {
                     <div className="h-8 w-full bg-zinc-100 dark:bg-zinc-800 rounded-full mt-2"><motion.div className="h-full bg-emerald-400 rounded-full" animate={{width: `${resources}%`}} /></div>
                 </div>
              </div>
-             <div className="flex justify-center gap-2 mt-4"><span className="font-bold">Resource Level:</span><input type="range" value={resources} onChange={e => setResources(parseInt(e.target.value))} /></div>
-             <div className={`mt-6 p-4 rounded-xl text-center font-bold text-white ${isChallenge ? 'bg-emerald-500' : 'bg-rose-500'}`}>
+             <div className="flex justify-center gap-2 mt-4"><span className="font-bold">Resource Level:</span><input type="range" value={resources} onChange={e => setResources(parseInt(e.target.value))} className="chunky-slider chunky-slider-sky" /></div>
+             <div className="mt-6 p-4 rounded-xl text-center font-bold" style={isChallenge ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B', borderRadius: 14 } : { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D', borderRadius: 14 }}>
                 {isChallenge ? "CHALLENGE STATE: You feel 'pumped'. More blood and oxygen flow to your brain. Go time." : "THREAT STATE: You feel 'scared'. Your brain tightens up, thinking gets foggy. 'Mind blanking' is likely."}
              </div>
         </div>
@@ -48,17 +48,19 @@ const CircadianShifter = () => {
     const shifts = Math.ceil(((wakeTime - 7) * 60) / 15);
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Sleep Schedule Shifter</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Enter your current weekend wake-up time to get a 4-week plan for shifting it earlier.</p>
-             <div className="flex items-center justify-center gap-4">
-                <label className="font-bold">Current Wake-up:</label>
-                <input type="time" value={`${String(Math.floor(wakeTime)).padStart(2,'0')}:${String((wakeTime % 1)*60).padStart(2,'0')}`} onChange={e => setWakeTime(parseInt(e.target.value.split(':')[0]) + parseInt(e.target.value.split(':')[1])/60)} className="p-2 bg-zinc-100 dark:bg-zinc-800 rounded-lg"/>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+             <h4 className="font-serif font-bold text-center" style={{ fontSize: 22, color: '#1a1a1a' }}>Sleep Schedule Shifter</h4>
+             <p className="text-center text-sm mt-1 mb-6" style={{ color: '#7a7068' }}>Enter your current weekend wake-up time to get a 4-week plan for shifting it earlier.</p>
+             <div className="flex flex-col items-center gap-2">
+                <label style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', textTransform: 'uppercase' as const }}>Current Wake-up Time</label>
+                <input type="time" value={`${String(Math.floor(wakeTime)).padStart(2,'0')}:${String((wakeTime % 1)*60).padStart(2,'0')}`} onChange={e => setWakeTime(parseInt(e.target.value.split(':')[0]) + parseInt(e.target.value.split(':')[1])/60)} className="outline-none" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 16, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
              </div>
-             {wakeTime > 7 && <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-xl text-center">
-                <p className="font-bold text-amber-800">Your Plan:</p>
-                <p className="text-sm">Shift your alarm back by 15 mins every <span className="font-bold">3-4 days</span> for the next <span className="font-bold">{shifts}</span> shifts to reach your 7:00 AM target.</p>
-             </div>}
+             {wakeTime > 7 && (
+                <div className="mt-6 text-center" style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '20px 24px' }}>
+                    <p className="font-serif font-semibold" style={{ fontSize: 18, color: '#1a6358' }}>Your Plan:</p>
+                    <p className="mt-2" style={{ fontSize: 15, color: '#1a1a1a' }}>Shift your alarm back by 15 mins every <span className="font-bold" style={{ color: '#2A7D6F' }}>3–4 days</span> for the next <span className="font-bold" style={{ color: '#2A7D6F' }}>{shifts}</span> shifts to reach your 7:00 AM target.</p>
+                </div>
+             )}
         </div>
     );
 }
@@ -75,11 +77,11 @@ const TaperPlanner = () => {
     const currentData = taperData[day as keyof typeof taperData] || taperData[taperKey as keyof typeof taperData];
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Final Week Study Planner</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Move the slider to see how your study should change in the final week.</p>
              <label className="font-bold">Days Before Exam: {day}</label>
-             <input type="range" min="1" max="7" value={day} onChange={e => setDay(parseInt(e.target.value))} className="w-full" />
+             <input type="range" min="1" max="7" value={day} onChange={e => setDay(parseInt(e.target.value))} className="chunky-slider chunky-slider-sunshine" />
              <div className="grid grid-cols-3 gap-4 mt-4 text-center">
                 <div><p className="font-bold text-sm">Study Volume</p><div className="h-24 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-end mt-2"><motion.div className="w-full bg-blue-400 rounded-t-lg" animate={{height: `${currentData.volume}%`}} /></div></div>
                 <div><p className="font-bold text-sm">Intensity</p><div className="h-24 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-end mt-2"><motion.div className="w-full bg-rose-400 rounded-t-lg" animate={{height: `${currentData.intensity}%`}} /></div></div>
@@ -230,7 +232,7 @@ const PreExamMealBuilder = () => {
   const selectedFoods = selected.map((id) => FOODS.find((f) => f.id === id)!);
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
         Pre-Exam Meal Builder
       </h4>
@@ -248,17 +250,18 @@ const PreExamMealBuilder = () => {
               key={food.id}
               whileTap={!scored && !isDisabled ? { scale: 0.96 } : {}}
               onClick={() => !isDisabled && toggleFood(food.id)}
-              className={`relative p-3 rounded-xl border-2 transition-colors cursor-pointer select-none ${
+              className="relative p-3 transition-all cursor-pointer select-none"
+              style={
                 scored
                   ? isSelected
-                    ? 'border-amber-400 bg-amber-50 dark:bg-amber-900/20'
-                    : 'border-zinc-100 dark:border-zinc-700 opacity-40'
+                    ? { backgroundColor: '#FDE68A', border: '2.5px solid #D97706', borderRadius: 14, boxShadow: '3px 3px 0px 0px #D97706' }
+                    : { backgroundColor: '#FFFFFF', border: '2.5px solid #D4D4D4', borderRadius: 14, opacity: 0.4 }
                   : isSelected
-                  ? 'border-amber-400 bg-amber-50 dark:bg-amber-900/20'
+                  ? { backgroundColor: '#FDE68A', border: '2.5px solid #D97706', borderRadius: 14, boxShadow: '3px 3px 0px 0px #D97706' }
                   : isDisabled
-                  ? 'border-zinc-100 dark:border-zinc-700 opacity-40 cursor-not-allowed'
-                  : 'border-zinc-200 dark:border-zinc-700 hover:border-amber-300 dark:hover:border-amber-600'
-              }`}
+                  ? { backgroundColor: '#FFFFFF', border: '2.5px solid #D4D4D4', borderRadius: 14, opacity: 0.4, cursor: 'not-allowed' }
+                  : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }
+              }
             >
               <div className="flex items-center gap-2">
                 <FoodIcon category={food.category} />
@@ -420,7 +423,7 @@ const CognitiveWarmup = () => {
 
     if(drill === 'math') {
         return (
-             <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+             <div className="my-10 rounded-2xl p-8 md:p-12 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Calculation Sprint</h4>
                 <p>1. 15 x 12 = ?</p>
                 <p>2. What is 25% of 180?</p>
@@ -431,7 +434,7 @@ const CognitiveWarmup = () => {
 
     if(drill === 'verbal') {
         return (
-            <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+            <div className="my-10 rounded-2xl p-8 md:p-12 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Verbal Fluency Drill</h4>
                 <p>For 60 seconds, list as many words as you can that start with the letter 'P'.</p>
                 <p className="text-4xl font-bold my-4">{time}</p>
@@ -442,12 +445,12 @@ const CognitiveWarmup = () => {
     }
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+        <div className="my-10 rounded-2xl p-8 md:p-12 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Brain Warm-Up</h4>
              <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Pick a quick drill to get your brain warmed up and ready.</p>
              <div className="flex justify-center gap-4">
-                <button onClick={() => resetVerbal()} className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-lg">Verbal Fluency</button>
-                <button onClick={() => setDrill('math')} className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-lg">Math Sprint</button>
+                <button onClick={() => resetVerbal()} className="p-4 font-bold text-sm transition-all" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Verbal Fluency</button>
+                <button onClick={() => setDrill('math')} className="p-4 font-bold text-sm transition-all" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Math Sprint</button>
              </div>
         </div>
     );

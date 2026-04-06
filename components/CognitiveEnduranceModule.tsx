@@ -138,7 +138,7 @@ const AllostaticLoadComparison = () => {
     );
 
     return (
-        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Recovery Effect</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Same exams. Same syllabus. One student recovers strategically.</p>
 
@@ -225,12 +225,12 @@ const AllostaticLoadVisualizer = () => {
     ];
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Stress Build-Up Over the Leaving Cert</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Your brain's stress builds up over time and spikes during exam clusters.</p>
             <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">This is why mental stamina matters — not just knowledge.</p>
 
-            <div className="bg-zinc-50 dark:bg-zinc-900/30 rounded-xl border border-zinc-200 dark:border-zinc-700 p-2 mb-4">
+            <div className="rounded-xl p-2 mb-4" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4' }}>
                 <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto">
                     <defs>
                         <linearGradient id="alLoadFill" x1="0" y1="0" x2="0" y2="1">
@@ -384,12 +384,12 @@ const SleepCycleArchitect = () => {
     const hourMarks = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Sleep Cycle Architect</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Drag the slider to cut your sleep short and see what gets sacrificed.</p>
             <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">The REM-rich later cycles are the first to go.</p>
 
-            <div className="bg-zinc-50 dark:bg-zinc-900/30 rounded-xl border border-zinc-200 dark:border-zinc-700 p-2 mb-4">
+            <div className="rounded-xl p-2 mb-4" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4' }}>
                 <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto">
                     <defs>
                         <linearGradient id="sleepFill" x1="0" y1="0" x2="0" y2="1">
@@ -456,7 +456,7 @@ const SleepCycleArchitect = () => {
             <div className="px-2">
                 <input type="range" min="4" max="9" step="0.5" value={sleepHours}
                     onChange={e => setSleepHours(parseFloat(e.target.value))}
-                    className="w-full accent-orange-500" />
+                    className="chunky-slider chunky-slider-sky" />
                 <div className="flex justify-between items-center mt-1">
                     <span className="text-[10px] text-zinc-400 dark:text-zinc-500">4 hours</span>
                     <span className="text-sm font-bold text-zinc-700 dark:text-zinc-200">{sleepHours} hours of sleep</span>

@@ -9,7 +9,7 @@ import { MotionDiv } from './Motion';
 import { AlertTriangle, Layers, FlaskConical, BarChart2, LifeBuoy, Wrench, Target } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = redTheme;
@@ -53,11 +53,11 @@ const peelExamples = [
   },
 ];
 
-const peelLabels: Record<string, { label: string; color: string; bg: string; border: string }> = {
-  P: { label: 'Point', color: 'text-blue-700 dark:text-blue-300', bg: 'bg-blue-100 dark:bg-blue-900/30', border: 'border-blue-300 dark:border-blue-700' },
-  E: { label: 'Evidence', color: 'text-amber-700 dark:text-amber-300', bg: 'bg-amber-100 dark:bg-amber-900/30', border: 'border-amber-300 dark:border-amber-700' },
-  E2: { label: 'Explain', color: 'text-teal-700 dark:text-teal-300', bg: 'bg-teal-100 dark:bg-teal-900/30', border: 'border-teal-300 dark:border-teal-700' },
-  L: { label: 'Link', color: 'text-purple-700 dark:text-purple-300', bg: 'bg-purple-100 dark:bg-purple-900/30', border: 'border-purple-300 dark:border-purple-700' },
+const peelLabels: Record<string, { label: string; color: string; bg: string; border: string; hex: string }> = {
+  P: { label: 'Point', color: 'text-blue-700 dark:text-blue-300', bg: 'bg-blue-100 dark:bg-blue-900/30', border: 'border-blue-300 dark:border-blue-700', hex: '#2563EB' },
+  E: { label: 'Evidence', color: 'text-amber-700 dark:text-amber-300', bg: 'bg-amber-100 dark:bg-amber-900/30', border: 'border-amber-300 dark:border-amber-700', hex: '#D97706' },
+  E2: { label: 'Explain', color: 'text-teal-700 dark:text-teal-300', bg: 'bg-teal-100 dark:bg-teal-900/30', border: 'border-teal-300 dark:border-teal-700', hex: '#059669' },
+  L: { label: 'Link', color: 'text-purple-700 dark:text-purple-300', bg: 'bg-purple-100 dark:bg-purple-900/30', border: 'border-purple-300 dark:border-purple-700', hex: '#7C3AED' },
 };
 
 const PEELBuilder = () => {
@@ -136,33 +136,44 @@ const PEELBuilder = () => {
       </div>
 
       {/* Slots */}
-      <div className="space-y-2.5 mb-5">
+      <div className="space-y-3 mb-5">
         {slotLabels.map((label, slotIdx) => {
           const sentIdx = placed[slotIdx];
           const pl = peelLabels[label];
           const isCorrect = phase === 'result' && sentIdx === ex.correctOrder[slotIdx];
           const isWrong = phase === 'result' && sentIdx !== null && sentIdx !== ex.correctOrder[slotIdx];
           const correctSentIdx = phase === 'result' ? ex.correctOrder[slotIdx] : null;
+          const borderColor = isCorrect ? '#059669' : isWrong ? '#DC2626' : '#1C1917';
 
           return (
             <div key={slotIdx}>
               <div
-                className={`p-3 rounded-lg border-2 min-h-[56px] flex items-start gap-2.5 transition-all ${
-                  isCorrect ? 'border-emerald-400 dark:border-emerald-600 bg-emerald-50 dark:bg-emerald-900/20' :
-                  isWrong ? 'border-rose-400 dark:border-rose-600 bg-rose-50 dark:bg-rose-900/20' :
-                  sentIdx !== null ? 'border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800' :
-                  'border-dashed border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-700/50'
-                } ${sentIdx !== null && phase === 'building' ? 'cursor-pointer hover:border-zinc-400' : ''}`}
-                onClick={() => sentIdx !== null && phase === 'building' ? handleRemoveFromSlot(slotIdx) : undefined}
+                className="bg-white dark:bg-zinc-900 transition-all"
+                style={{ border: `2.5px solid ${borderColor}`, borderRadius: 18, boxShadow: `4px 4px 0px 0px ${borderColor}`, overflow: 'hidden' }}
               >
-                <span className={`px-2 py-0.5 rounded text-xs font-bold flex-shrink-0 ${pl.bg} ${pl.color} border ${pl.border}`}>
+                {/* Header bar */}
+                <div
+                  className="text-[13px] font-medium tracking-wider uppercase text-white text-center"
+                  style={{ backgroundColor: pl.hex, padding: '10px 16px', borderBottom: `2.5px solid ${borderColor}` }}
+                >
                   {slotIdx + 1}. {pl.label}
-                </span>
-                {sentIdx !== null ? (
-                  <span className="text-sm text-zinc-700 dark:text-zinc-200">{ex.sentences[sentIdx].text}</span>
-                ) : (
-                  <span className="text-sm text-zinc-400 dark:text-zinc-500 italic">Click a sentence below to place it here</span>
-                )}
+                </div>
+                {/* Body */}
+                <div
+                  className={`p-4 min-h-[56px] flex items-center ${sentIdx !== null && phase === 'building' ? 'cursor-pointer' : ''}`}
+                  onClick={() => sentIdx !== null && phase === 'building' ? handleRemoveFromSlot(slotIdx) : undefined}
+                >
+                  {sentIdx !== null ? (
+                    <div
+                      className="text-[13px] text-zinc-700 dark:text-zinc-200 w-full"
+                      style={{ backgroundColor: '#FFFFFF', border: `2px solid ${pl.hex}`, borderRadius: 12, boxShadow: `2px 2px 0px 0px ${pl.hex}`, padding: '8px 12px' }}
+                    >
+                      {ex.sentences[sentIdx].text}
+                    </div>
+                  ) : (
+                    <span className="text-sm text-zinc-400 dark:text-zinc-500 italic">Click a sentence below to place it here</span>
+                  )}
+                </div>
               </div>
               {isWrong && correctSentIdx !== null && (
                 <div className="mt-1 ml-2 text-xs text-emerald-600 dark:text-emerald-400 italic">
@@ -498,46 +509,43 @@ const ShapeQuiz = () => {
 
   if (phase === 'ready') {
     return (
-      <div className="my-10 p-8 md:p-12 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center bg-[#FAF7F4] dark:bg-zinc-800">
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">Shape Quiz</h4>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-6 max-w-md mx-auto">Can you match the mark allocation to the right answer shape?</p>
-        <button onClick={startQuiz} className="px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-bold text-sm rounded-lg transition-colors">Start Quiz</button>
+      <div className="my-10 bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 24 }}>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Exam Skills Quiz</span>
+        <h4 className="font-serif font-semibold" style={{ fontSize: 20, color: '#1a1a1a' }}>Shape Quiz</h4>
+        <p className="text-sm mt-2 mb-6 max-w-md mx-auto" style={{ color: '#7a7068' }}>Can you match the mark allocation to the right answer shape?</p>
+        <button onClick={startQuiz} style={{ backgroundColor: '#2A7D6F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Start Quiz</button>
       </div>
     );
   }
 
   if (phase === 'done') {
     return (
-      <div className="my-10 p-6 md:p-10 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-[#FAF7F4] dark:bg-zinc-800">
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Shape Quiz Results</h4>
+      <div className="my-10 bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 24 }}>
+        <h4 className="font-serif font-semibold text-center" style={{ fontSize: 20, color: '#1a1a1a' }}>Shape Quiz Results</h4>
         <div className="flex justify-center my-5">
-          <div className="text-center px-5 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-700">
-            <div className="text-2xl font-bold text-zinc-800 dark:text-white">{score}/{shapeQuestions.length}</div>
-            <div className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">Correct</div>
+          <div className="text-center" style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '14px 20px' }}>
+            <div className="font-serif font-bold" style={{ fontSize: 28, color: '#2A7D6F' }}>{score}/{shapeQuestions.length}</div>
+            <div style={{ fontSize: 11, fontWeight: 600, color: '#9e9186' }}>Correct</div>
           </div>
         </div>
-        <div className="space-y-2.5 mb-6">
+        <div className="space-y-2 mb-6">
           {shapeQuestions.map((q, i) => {
             const got = choices[i];
             const correct = got === q.correct;
             return (
-              <div key={i} className={`p-3 rounded-lg border ${correct ? 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-300 dark:border-emerald-700' : 'bg-rose-50 dark:bg-rose-900/20 border-rose-300 dark:border-rose-700'}`}>
+              <div key={i} className="bg-white dark:bg-zinc-900" style={{ border: correct ? '2px solid #2A7D6F' : '2px solid #1a1a1a', borderLeft: correct ? undefined : '4px solid #E85D75', borderRadius: 14, padding: '14px 16px' }}>
                 <div className="flex items-center justify-between mb-1">
-                  <span className="text-sm font-bold font-mono text-zinc-700 dark:text-zinc-200">{q.marks}</span>
-                  <span className={`text-xs font-bold ${correct ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
-                    {correct ? 'Correct' : 'Incorrect'}
-                  </span>
+                  <span className="font-serif font-bold" style={{ fontSize: 14, color: '#1a1a1a' }}>{q.marks}</span>
+                  <span style={{ fontSize: 12, fontWeight: 700, color: correct ? '#1a6358' : '#b33030' }}>{correct ? '✓ Correct' : '✗ Incorrect'}</span>
                 </div>
-                <p className="text-sm text-zinc-600 dark:text-zinc-300">{q.correct}</p>
-                {!correct && got && (
-                  <p className="text-xs text-rose-500 dark:text-rose-400 mt-1 italic">You said: {got}</p>
-                )}
+                <p style={{ fontSize: 14, color: '#5a5550' }}>{q.correct}</p>
+                {!correct && got && <p className="italic mt-1" style={{ fontSize: 12, color: '#b33030' }}>You said: {got}</p>}
               </div>
             );
           })}
         </div>
         <div className="text-center">
-          <button onClick={startQuiz} className="px-5 py-2.5 bg-red-500 hover:bg-red-600 text-white font-bold text-sm rounded-lg transition-colors">Try Again</button>
+          <button onClick={startQuiz} style={{ backgroundColor: '#2A7D6F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Try Again</button>
         </div>
       </div>
     );
@@ -548,26 +556,26 @@ const ShapeQuiz = () => {
   const isWrong = showFeedback && choices[qIndex] !== null && choices[qIndex] !== q.correct;
 
   return (
-    <div className="my-10 p-6 md:p-10 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-[#FAF7F4] dark:bg-zinc-800">
+    <div className="my-10 bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 24 }}>
       <div className="flex items-center justify-between mb-4">
-        <h4 className="font-serif text-lg font-semibold text-zinc-800 dark:text-white">Shape Quiz</h4>
-        <span className="text-xs font-bold text-zinc-400">{qIndex + 1} / {shapeQuestions.length}</span>
+        <div className="flex items-center gap-2">
+          <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)' }}>Exam Skills Quiz</span>
+          <h4 className="font-serif font-semibold" style={{ fontSize: 18, color: '#1a1a1a' }}>Shape Quiz</h4>
+        </div>
+        <span style={{ fontSize: 13, fontWeight: 600, color: '#9e9186', backgroundColor: '#f0ece6', border: '1px solid #d0cdc8', borderRadius: 20, padding: '3px 10px' }}>{qIndex + 1} / {shapeQuestions.length}</span>
       </div>
 
-      {/* Mark allocation card */}
+      {/* Mark allocation */}
       <AnimatePresence mode="wait">
         <motion.div key={qIndex} initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }}
-          className={`p-5 rounded-xl border min-h-[80px] flex flex-col justify-center mb-5 transition-colors ${
-            isCorrect ? 'bg-emerald-50 dark:bg-emerald-900/30 border-emerald-300 dark:border-emerald-700' :
-            isWrong ? 'bg-rose-50 dark:bg-rose-900/30 border-rose-300 dark:border-rose-700' :
-            'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-600'
-          }`}>
-          <p className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Mark allocation</p>
-          <p className="font-bold text-2xl font-mono text-zinc-800 dark:text-white">{q.marks}</p>
+          className="mb-5" style={{ backgroundColor: '#f4f0eb', border: '1.5px solid #d0cdc8', borderRadius: 12, padding: '14px 18px', minHeight: 80, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', marginBottom: 8, textTransform: 'uppercase' as const }}>Mark allocation</p>
+          <p style={{ lineHeight: 1 }}>
+            <span className="font-serif font-bold" style={{ fontSize: 32, color: '#2A7D6F' }}>{q.marks.replace(/[()]/g, '')}</span>
+          </p>
           {showFeedback && (
-            <motion.p initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }}
-              className={`text-xs mt-3 italic ${isCorrect ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
-              {isCorrect ? 'Correct! You can read the marks.' : `Not quite \u2014 the right shape is: ${q.correct}`}
+            <motion.p initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} className="italic mt-3" style={{ fontSize: 13, color: isCorrect ? '#1a6358' : '#b33030' }}>
+              {isCorrect ? 'Correct! You can read the marks.' : `Not quite — the right shape is: ${q.correct}`}
             </motion.p>
           )}
         </motion.div>
@@ -579,13 +587,16 @@ const ShapeQuiz = () => {
           const selected = showFeedback && choices[qIndex] === opt;
           const isAnswer = showFeedback && opt === q.correct;
           return (
-            <button key={i} onClick={() => handleChoice(opt)} disabled={showFeedback}
-              className={`w-full text-left p-3 rounded-xl text-sm border transition-all ${
-                isAnswer ? 'bg-emerald-50 dark:bg-emerald-900/30 border-emerald-400 dark:border-emerald-600 ring-2 ring-emerald-500 ring-offset-1 font-bold' :
-                selected && !isAnswer ? 'bg-rose-50 dark:bg-rose-900/30 border-rose-400 dark:border-rose-600' :
-                'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-600 hover:border-zinc-400 dark:hover:border-zinc-500'
-              } ${showFeedback ? 'cursor-default' : 'cursor-pointer'}`}>
-              {opt}
+            <button key={i} onClick={() => handleChoice(opt)} disabled={showFeedback} className="w-full text-left transition-all" style={
+              isAnswer
+                ? { backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 600, color: '#1a6358', cursor: 'default' }
+                : selected && !isAnswer
+                ? { backgroundColor: '#fde4e4', border: '2px solid #E85D75', borderLeft: '4px solid #E85D75', borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: '#b33030', cursor: 'default' }
+                : showFeedback
+                ? { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: '#1a1a1a', opacity: 0.5, cursor: 'not-allowed' }
+                : { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: '#1a1a1a', cursor: 'pointer' }
+            }>
+              {isAnswer && '✓ '}{opt}
             </button>
           );
         })}
@@ -594,10 +605,7 @@ const ShapeQuiz = () => {
       {/* Progress dots */}
       <div className="flex justify-center gap-1.5 mt-5">
         {shapeQuestions.map((_, i) => (
-          <div key={i} className={`w-2 h-2 rounded-full transition-colors ${
-            i < qIndex ? (choices[i] === shapeQuestions[i].correct ? 'bg-emerald-500' : 'bg-rose-500') :
-            i === qIndex ? 'bg-red-500' : 'bg-zinc-200 dark:bg-zinc-600'
-          }`} />
+          <div key={i} style={{ width: 10, height: 10, borderRadius: '50%', backgroundColor: i <= qIndex ? '#2A7D6F' : '#d0cdc8', transition: 'background-color 0.3s' }} />
         ))}
       </div>
     </div>
@@ -676,24 +684,14 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
           {activeSection === 2 && (
             <ReadingSection title="The Science Answer Stack." eyebrow="03 // The Formula" icon={FlaskConical} theme={theme}>
               <p>For Maths, Physics, Chemistry, and Applied Maths, there is a specific structure that maximises marks. We call it <Highlight description="S-cubed-S stands for State, Substitute, Solve, State. It is a four-step process that earns marks at every step. Even if your final answer is wrong, the first three steps earn method marks independently." theme={theme}>S&sup3;S</Highlight>:</p>
-              <div className="my-6 space-y-3">
-                <div className="flex items-start gap-3 p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-zinc-200 dark:bg-zinc-600 text-zinc-700 dark:text-zinc-200 flex-shrink-0">1</span>
-                  <div><strong>State</strong> — Write the formula or law you are using. This immediately earns method marks.</div>
-                </div>
-                <div className="flex items-start gap-3 p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-zinc-200 dark:bg-zinc-600 text-zinc-700 dark:text-zinc-200 flex-shrink-0">2</span>
-                  <div><strong>Substitute</strong> — Plug in the given values WITH units. This earns more method marks.</div>
-                </div>
-                <div className="flex items-start gap-3 p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-zinc-200 dark:bg-zinc-600 text-zinc-700 dark:text-zinc-200 flex-shrink-0">3</span>
-                  <div><strong>Solve</strong> — Show each calculation step on its own line. Never skip steps.</div>
-                </div>
-                <div className="flex items-start gap-3 p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-zinc-200 dark:bg-zinc-600 text-zinc-700 dark:text-zinc-200 flex-shrink-0">4</span>
-                  <div><strong>State</strong> — Write the final answer with correct units, circled or underlined.</div>
-                </div>
-              </div>
+              <ConceptCardGrid
+                cards={[
+                  { number: 1, term: "State", description: "Write the formula or law you are using. This immediately earns method marks." },
+                  { number: 2, term: "Substitute", description: "Plug in the given values WITH units. This earns more method marks." },
+                  { number: 3, term: "Solve", description: "Show each calculation step on its own line. Never skip steps." },
+                  { number: 4, term: "State", description: "Write the final answer with correct units, circled or underlined." },
+                ]}
+              />
               <p>This pattern earns marks at <strong>EVERY step</strong>. Even if your final answer is wrong, steps 1-3 earn method marks independently.</p>
               <p>In a <strong>25-mark Maths question</strong>, the final answer is typically worth only <Highlight description="The final numerical answer in most science and maths questions is worth only 4-5 out of 25 marks. The other 20 marks are for showing your process. Students who jump straight to the answer are skipping 80% of the available marks." theme={theme}>4-5 marks</Highlight>. The other 20 marks are for showing your process. Students who jump to the answer skip 80% of the available marks.</p>
               <p>Remember the three types of marks from the Marking Scheme Decoder? This structure hits all three: attempt marks for writing the formula, method marks for substituting and solving, and answer marks for the final result.</p>
@@ -750,28 +748,15 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
             <ReadingSection title="The 60% Answer." eyebrow="05 // The Rescue" icon={LifeBuoy} theme={theme}>
               <p>What do you do when you only <em>half</em>-know the answer? This is not about attempt marks — that is about whether to write <em>anything at all</em>. This is about how to <Highlight description="A structured partial answer uses clear formatting — numbered points, definitions, diagrams, question language — to make sure every piece of knowledge you DO have is visible and earnable. It is about maximising what you get from what you know." theme={theme}>STRUCTURE a partial answer</Highlight> to maximise marks when you know some of the content but not all of it.</p>
               <p>Here is the strategy:</p>
-              <div className="my-6 space-y-3">
-                <div className="flex items-start gap-3 p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-teal-100 dark:bg-teal-800 text-teal-700 dark:text-teal-300 border border-teal-300 dark:border-teal-700 flex-shrink-0">1</span>
-                  <div><strong>Start with what you DO know</strong> — even if it is just the definition of a key term in the question. A correct definition earns marks immediately.</div>
-                </div>
-                <div className="flex items-start gap-3 p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-teal-100 dark:bg-teal-800 text-teal-700 dark:text-teal-300 border border-teal-300 dark:border-teal-700 flex-shrink-0">2</span>
-                  <div><strong>Use the question's own language</strong> in your answer. It signals relevance to the examiner and shows you understand what is being asked.</div>
-                </div>
-                <div className="flex items-start gap-3 p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-teal-100 dark:bg-teal-800 text-teal-700 dark:text-teal-300 border border-teal-300 dark:border-teal-700 flex-shrink-0">3</span>
-                  <div><strong>Draw a diagram if applicable</strong> — labelled diagrams earn independent marks. Even a basic diagram with correct labels picks up marks the examiner could not give you from text alone.</div>
-                </div>
-                <div className="flex items-start gap-3 p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-teal-100 dark:bg-teal-800 text-teal-700 dark:text-teal-300 border border-teal-300 dark:border-teal-700 flex-shrink-0">4</span>
-                  <div><strong>Break your answer into numbered points</strong> — even if you only have 2 out of 4. Numbered points are easier to find and mark than buried sentences.</div>
-                </div>
-                <div className="flex items-start gap-3 p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-teal-100 dark:bg-teal-800 text-teal-700 dark:text-teal-300 border border-teal-300 dark:border-teal-700 flex-shrink-0">5</span>
-                  <div><strong>Write a concluding sentence</strong> that links back to the question. This wraps your answer and shows the examiner you understood the task.</div>
-                </div>
-              </div>
+              <ConceptCardGrid
+                cards={[
+                  { number: 1, term: "Start with what you DO know", description: "Even if it is just the definition of a key term in the question — a correct definition earns marks immediately." },
+                  { number: 2, term: "Use the question's own language", description: "Mirror the wording back in your answer. It signals relevance to the examiner and shows you understand what is being asked." },
+                  { number: 3, term: "Draw a diagram if applicable", description: "Labelled diagrams earn independent marks. Even a basic diagram with correct labels picks up marks the examiner could not give you from text alone." },
+                  { number: 4, term: "Break your answer into numbered points", description: "Even if you only have 2 out of 4. Numbered points are easier to find and mark than ideas buried in paragraphs." },
+                  { number: 5, term: "Write a concluding sentence", description: "Link back to the question directly. This wraps your answer and shows the examiner you understood the task.", highlight: true },
+                ]}
+              />
               <p>The key insight: a <strong>structured 60% answer scores higher than an unstructured 80% answer</strong>. The examiner can find and award <Highlight description="When your answer is structured with numbered points, definitions, and diagrams, the examiner can see every piece of knowledge you have. When it is buried in a paragraph, they might miss things — and missed points are missed marks." theme={theme}>every point you make</Highlight>, instead of hunting through a paragraph for buried insights.</p>
               <PersonalStory name="Niamh, Leaving Cert 2023, Waterford">
                 <p>"In my Chemistry exam, I got a question I barely knew. I wrote the formula, defined the terms, drew a diagram, and wrote what I did know in numbered points. I got 18 out of 25. My friend who knew more but wrote it as a paragraph got 14."</p>

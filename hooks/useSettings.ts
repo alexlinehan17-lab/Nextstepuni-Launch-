@@ -63,7 +63,7 @@ export function useSettings(uid?: string, userAvatar?: string) {
           });
         }
       } catch (err) {
-        console.error('Failed to load settings from Firestore:', err);
+        console.error('Failed to load settings from Firestore:');
       }
       if (!cancelled) setIsLoaded(true);
     };
@@ -129,13 +129,13 @@ export function useSettings(uid?: string, userAvatar?: string) {
       // Persist to Firestore
       if (uid) {
         setDoc(doc(db, 'settings', uid), next, { merge: true }).catch(err =>
-          console.error('Failed to save settings:', err)
+          console.error('Failed to save settings:')
         );
 
         // If avatar changed, also update users/{uid}.avatar
         if (key === 'avatar') {
           setDoc(doc(db, 'users', uid), { avatar: value }, { merge: true }).catch(err =>
-            console.error('Failed to update user avatar:', err)
+            console.error('Failed to update user avatar:')
           );
         }
       }

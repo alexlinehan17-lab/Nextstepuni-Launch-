@@ -22,7 +22,7 @@ class ErrorBoundary extends React.Component<{ children: React.ReactNode }, Error
   }
 
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
-    console.error('App error caught by boundary:', error, errorInfo);
+    console.error('App error caught by boundary');
   }
 
   handleReload = () => {

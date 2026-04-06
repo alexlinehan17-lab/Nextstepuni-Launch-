@@ -65,7 +65,7 @@ const WhyBotherAudit = ({ savedSubjects, savedRatings, onSave }: { savedSubjects
     ];
 
     return (
-      <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "Why Bother?" Audit</h4>
         <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Select your subjects, then rate how connected each one feels to your future goals.</p>
 
@@ -77,11 +77,8 @@ const WhyBotherAudit = ({ savedSubjects, savedRatings, onSave }: { savedSubjects
               <button
                 key={s}
                 onClick={() => toggleSubject(s)}
-                className={`px-3 py-1.5 text-xs font-bold rounded-lg border transition-all ${
-                  selected.has(s)
-                    ? 'bg-rose-500 text-white border-rose-500'
-                    : 'bg-zinc-50 dark:bg-zinc-900/30 text-zinc-600 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-rose-300'
-                }`}
+                className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all`}
+                style={selected.has(s) ? { backgroundColor: '#F43F5E', color: '#FFFFFF', border: '2.5px solid #BE123C', borderRadius: 10, boxShadow: '3px 3px 0px 0px #BE123C' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 10, boxShadow: '3px 3px 0px 0px #1C1917' }}
               >
                 {s}
               </button>
@@ -141,7 +138,7 @@ const WhyBotherAudit = ({ savedSubjects, savedRatings, onSave }: { savedSubjects
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="p-5 bg-zinc-50 dark:bg-zinc-900/30 rounded-xl border border-zinc-200 dark:border-zinc-700"
+            className="p-5 rounded-xl" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4' }}
           >
             {frictionPoints.length > 0 ? (
               <>
@@ -175,7 +172,7 @@ const TransferableSkillsMatrix = () => {
     ];
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Transferable Skills Matrix</h4>
             <div className="mt-6 flow-root">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -290,7 +287,43 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
           {activeSection === 7 && (
             <ReadingSection title="The Purpose Protocol." eyebrow="Step 8" icon={Link2} theme={theme}>
               <p>You now have the tools to rebuild the connection between what you're doing today and where you want to be. This is the <strong>Purpose Protocol</strong> -- a 5-phase plan for building motivation that actually lasts.</p>
-              <p><strong>Phase 1: The Audit.</strong> For each subject, ask "Why am I doing this?" If the only answer is "points," that's a friction point. Do the Utility Value Writing exercise on it. <strong>Phase 2: The Vision.</strong> Spend 15 minutes writing a detailed picture of your "Best Possible Self" 5 years from now. Then pair that vision with your biggest real obstacle. <strong>Phase 3: The Craft.</strong> Find one assignment this week and "course craft" it -- put your own spin on it so it feels like yours. <strong>Phase 4: The Habit.</strong> Make starting so small it's impossible to fail. One page. One question. Just begin. <strong>Phase 5: Re-Authoring.</strong> If you feel stuck, step back from the problem ("The stress is visiting me, it's not who I am") and think about skills you use in other areas of your life -- gaming, sports, whatever -- and how they apply to your schoolwork.</p>
+              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Phase 1: The Audit</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>For each subject, ask "Why am I doing this?" If the only answer is "points," that's a friction point. Do the Utility Value Writing exercise on it.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Phase 2: The Vision</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Spend 15 minutes writing a detailed picture of your "Best Possible Self" 5 years from now. Then pair that vision with your biggest real obstacle.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Phase 3: The Craft</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>Find one assignment this week and "course craft" it -- put your own spin on it so it feels like yours.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 16, boxShadow: '4px 4px 0px 0px #059669' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#059669' }}>4</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#064E3B' }}>Phase 4: The Habit</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#064E3B', opacity: 0.8 }}>Make starting so small it's impossible to fail. One page. One question. Just begin.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>5</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Phase 5: Re-Authoring</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>If you feel stuck, step back from the problem ("The stress is visiting me, it's not who I am") and think about skills you use in other areas of your life -- gaming, sports, whatever -- and how they apply to your schoolwork.</p>
+                  </div>
+                </div>
+              </div>
               <MicroCommitment theme={theme}>
                 <p>Pick one phase. Just one. Commit to trying it for one week. You're not just studying -- you're building something that matters to you.</p>
               </MicroCommitment>

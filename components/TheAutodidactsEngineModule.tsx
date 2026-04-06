@@ -102,7 +102,7 @@ const SplitPageSimulator = () => {
   };
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
         Split-Page Simulator
       </h4>
@@ -133,13 +133,12 @@ const SplitPageSimulator = () => {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: unlocked ? 1 : 0.4, y: 0 }}
               transition={{ duration: 0.3, delay: i * 0.05 }}
-              className={`rounded-xl border p-5 transition-colors ${
-                isRevealed
-                  ? match
-                    ? 'border-emerald-300 dark:border-emerald-600 bg-emerald-50/50 dark:bg-emerald-950/20'
-                    : 'border-amber-300 dark:border-amber-600 bg-amber-50/50 dark:bg-amber-950/20'
-                  : 'border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800/60'
-              }`}
+              className="rounded-xl p-5 transition-colors"
+              style={{
+                backgroundColor: isRevealed ? (match ? '#6EE7B7' : '#FCD34D') : '#FFFFFF',
+                border: isRevealed ? `2.5px solid ${match ? '#059669' : '#D97706'}` : '1.5px solid #E7E5E4',
+                boxShadow: !isRevealed ? 'none' : `3px 3px 0px 0px ${match ? '#059669' : '#D97706'}`,
+              }}
             >
               {/* Step Header */}
               <div className="flex items-center gap-3 mb-3">
@@ -172,7 +171,8 @@ const SplitPageSimulator = () => {
                       onChange={(e) => handleInputChange(i, e.target.value)}
                       disabled={isRevealed}
                       placeholder="Type your answer..."
-                      className="w-full px-4 py-2.5 text-sm bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400 dark:focus:ring-cyan-600 disabled:opacity-60 text-zinc-800 dark:text-white placeholder:text-zinc-400"
+                      className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none disabled:opacity-60"
+                      style={{ border: '1.5px solid #E7E5E4' }}
                     />
                   </div>
 
@@ -263,15 +263,11 @@ const FourHighlighterAudit = () => {
 
     const isHighlighted = (id: string) => activeHighlighter && highlights[activeHighlighter]?.includes(id);
 
-    const textWithSpans = `
-        <span class="${isHighlighted('s1') ? 'bg-blue-200' : ''}">W.B. Yeats' poem 'The Second Coming' <span class="${isHighlighted('w1') ? 'bg-yellow-200' : ''}">powerfully captures</span> the anxiety of a world <span class="${isHighlighted('w2') ? 'bg-yellow-200' : ''}">descending into chaos</span>.</span>
-        <span class="${isHighlighted('s2') ? '' : ''}"><span class="${isHighlighted('t1') ? 'bg-green-200' : ''}">Initially</span>, the poem presents the image of a falcon <span class="${isHighlighted('e1') ? 'bg-red-300' : ''}">loosing</span> control, a metaphor for society's breakdown.</span>
-        <span class="${isHighlighted('s3') ? 'bg-blue-200' : ''}"><span class="${isHighlighted('t2') ? 'bg-green-200' : ''}">However</span>, Yeats then introduces the <span class="${isHighlighted('w4') ? 'bg-yellow-200' : ''}">terrifying 'rough beast,'</span> <span class="${isHighlighted('w5') ? 'bg-yellow-200' : ''}">slouching</span> towards Bethlehem. This <span class="${isHighlighted('w6') ? 'bg-yellow-200' : ''}">stark image</span> solidifies the poem's <span class="${isHighlighted('w7') ? 'bg-yellow-200' : ''}">apocalyptic vision</span>.</span>
-        <span class="${isHighlighted('s4') ? 'bg-blue-200' : ''}"><span class="${isHighlighted('t3') ? 'bg-green-200' : ''}">Therefore</span>, the poem <span class="${isHighlighted('w8') ? 'bg-yellow-200' : ''}">encapsulates</span> a profound sense of cultural collapse.</span>
-    `.replace(/<span class="(bg-blue-200|bg-green-200|bg-yellow-200|bg-red-300)">/g, '<span class="$1 px-1 rounded-sm">');
+    const hl = (id: string, base: string) =>
+      `${isHighlighted(id) ? base + ' px-1 rounded-sm' : ''}`;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Four-Highlighter Audit</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Click the highlighters to audit the paragraph below.</p>
             <div className="flex justify-center flex-wrap gap-3 mb-6">
@@ -280,7 +276,15 @@ const FourHighlighterAudit = () => {
                 <button onClick={() => setActiveHighlighter(activeHighlighter === 'language' ? null : 'language')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'language' ? 'bg-yellow-400 text-yellow-900 border-yellow-500' : 'bg-yellow-50 text-yellow-800 border-yellow-200'}`}> <Highlighter size={16}/> Language</button>
                 <button onClick={() => setActiveHighlighter(activeHighlighter === 'mechanics' ? null : 'mechanics')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'mechanics' ? 'bg-red-500 text-white border-red-500' : 'bg-red-50 text-red-800 border-red-200'}`}> <Highlighter size={16}/> Mechanics</button>
             </div>
-            <div className="bg-zinc-50 p-6 rounded-xl border border-zinc-200 dark:border-zinc-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: textWithSpans }} />
+            <div className="p-6 rounded-xl leading-relaxed" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4' }}>
+              <span className={hl('s1', 'bg-blue-200')}>W.B. Yeats' poem 'The Second Coming' <span className={hl('w1', 'bg-yellow-200')}>powerfully captures</span> the anxiety of a world <span className={hl('w2', 'bg-yellow-200')}>descending into chaos</span>.</span>
+              {' '}
+              <span><span className={hl('t1', 'bg-green-200')}>Initially</span>, the poem presents the image of a falcon <span className={hl('e1', 'bg-red-300')}>loosing</span> control, a metaphor for society's breakdown.</span>
+              {' '}
+              <span className={hl('s3', 'bg-blue-200')}><span className={hl('t2', 'bg-green-200')}>However</span>, Yeats then introduces the <span className={hl('w4', 'bg-yellow-200')}>terrifying 'rough beast,'</span> <span className={hl('w5', 'bg-yellow-200')}>slouching</span> towards Bethlehem. This <span className={hl('w6', 'bg-yellow-200')}>stark image</span> solidifies the poem's <span className={hl('w7', 'bg-yellow-200')}>apocalyptic vision</span>.</span>
+              {' '}
+              <span className={hl('s4', 'bg-blue-200')}><span className={hl('t3', 'bg-green-200')}>Therefore</span>, the poem <span className={hl('w8', 'bg-yellow-200')}>encapsulates</span> a profound sense of cultural collapse.</span>
+            </div>
         </div>
     );
 };

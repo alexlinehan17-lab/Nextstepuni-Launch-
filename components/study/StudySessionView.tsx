@@ -344,10 +344,10 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
         studyDebriefs: arrayUnion(fullEntry),
       });
     } catch (e) {
-      console.error('Failed to save debrief:', e);
+      console.error('Failed to save debrief:');
     }
     // Process side effects: update topic mastery + SM-2 state
-    processDebriefSideEffects(user.uid, fullEntry).catch(e => console.error('Debrief side effects error:', e));
+    processDebriefSideEffects(user.uid, fullEntry).catch(e => console.error('Debrief side effects error:'));
     completeTimetableBlock();
     pointsReload();
     onStrategyMasteryRecompute?.();
@@ -376,17 +376,42 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   // ── SETUP PHASE ──
   if (session.phase === 'idle') {
     return (
-      <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex flex-col">
-        {/* Header — minimal */}
-        <div className="shrink-0 px-6 pt-6 pb-2">
-          <button onClick={onBack} className="p-2 -ml-2 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800/60 transition-colors">
-            <ArrowLeft size={20} className="text-zinc-400" />
-          </button>
+      <div className="min-h-screen bg-[#FDF8F0] dark:bg-zinc-950 flex flex-col">
+        {/* ── Coloured hero banner ── */}
+        <div className="relative shrink-0" style={{ backgroundColor: '#2A7D6F' }}>
+          {/* Decorative blobs */}
+          <div className="absolute pointer-events-none" style={{ top: -60, right: -40, width: 180, height: 180, borderRadius: '50%', background: 'rgba(255,255,255,0.07)' }} />
+          <div className="absolute pointer-events-none" style={{ top: 10, right: 20, width: 90, height: 90, borderRadius: '50%', background: 'rgba(255,255,255,0.05)' }} />
+          <div className="absolute pointer-events-none" style={{ bottom: 30, left: -30, width: 120, height: 120, borderRadius: '50%', background: 'rgba(0,0,0,0.05)' }} />
+
+          <div className="relative z-10 px-6 pt-6 pb-14 max-w-md mx-auto">
+            <button onClick={onBack} className="p-2 -ml-2 rounded-xl transition-colors mb-8" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
+              <ArrowLeft size={20} style={{ color: '#fff' }} />
+            </button>
+
+            <h1 className="font-serif font-bold text-white mb-2" style={{ fontSize: 'clamp(32px, 8vw, 44px)', letterSpacing: '-0.03em', lineHeight: 1 }}>
+              Study Session
+            </h1>
+            {session.todaySessions.length > 0 ? (
+              <p className="text-sm" style={{ color: 'rgba(255,255,255,0.6)' }}>
+                {session.todaySessions.length} session{session.todaySessions.length !== 1 ? 's' : ''} today &middot; {session.todayTotalMinutes} min total
+              </p>
+            ) : (
+              <p className="text-sm" style={{ color: 'rgba(255,255,255,0.6)' }}>Choose a subject and start studying</p>
+            )}
+          </div>
+
+          {/* Wave transition into cream */}
+          <div className="absolute bottom-0 left-0 right-0" style={{ transform: 'translateY(1px)' }}>
+            <svg viewBox="0 0 1440 48" preserveAspectRatio="none" className="w-full block" style={{ height: 48 }}>
+              <path d="M0,0 C480,48 960,48 1440,0 L1440,48 L0,48 Z" className="fill-[#FDF8F0] dark:fill-zinc-950" />
+            </svg>
+          </div>
         </div>
 
         {/* Centered content */}
-        <div className="flex-1 flex items-center justify-center px-6 pb-28">
-          <div className="w-full max-w-md space-y-10">
+        <div className="flex-1 px-6 pb-28 bg-[#FDF8F0] dark:bg-zinc-950">
+          <div className="w-full max-w-md mx-auto space-y-10 pt-6">
             {/* First-visit intro card */}
             <AnimatePresence>
               {!dismissedGuides?.['study-session-intro'] && (
@@ -395,18 +420,20 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                   initial={{ opacity: 0, y: -8 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -8, transition: { duration: 0.2 } }}
-                  className="bg-[rgba(var(--accent),0.04)] border border-[rgba(var(--accent),0.15)] rounded-2xl p-5 mb-6"
+                  className="rounded-2xl p-5 mb-6 bg-[#FEFDFB] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800"
+                  style={{ boxShadow: '0 1px 4px rgba(28,25,23,0.04)' }}
                 >
                   <div className="flex items-start gap-3">
-                    <Sparkles size={18} className="text-[rgba(var(--accent),1)] shrink-0 mt-0.5" />
+                    <Sparkles size={18} className="text-[#2A7D6F] shrink-0 mt-0.5" />
                     <div className="space-y-2">
-                      <p className="font-semibold text-sm text-zinc-800 dark:text-white">Welcome to Study Sessions</p>
-                      <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                      <p className="font-semibold text-sm text-[#1A1A1A] dark:text-white">Welcome to Study Sessions</p>
+                      <p className="text-sm text-[#78716C] dark:text-zinc-400 leading-relaxed">
                         During sessions you'll see strategy prompts from modules you've completed. Tap "Done" to track your engagement — this feeds your mastery progress visible below.
                       </p>
                       <button
                         onClick={() => onDismissGuide?.('study-session-intro')}
-                        className="mt-1 text-sm font-medium text-[rgba(var(--accent),1)] hover:underline"
+                        className="mt-1 text-sm font-medium hover:underline"
+                        style={{ color: '#2A7D6F' }}
                       >
                         Got it
                       </button>
@@ -415,17 +442,6 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                 </MotionDiv>
               )}
             </AnimatePresence>
-            {/* Title + today summary */}
-            <div className="text-center space-y-3">
-              <h1 className="text-3xl font-bold text-zinc-800 dark:text-white tracking-tight">Study Session</h1>
-              {session.todaySessions.length > 0 ? (
-                <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                  {session.todaySessions.length} session{session.todaySessions.length !== 1 ? 's' : ''} today &middot; {session.todayTotalMinutes} min total
-                </p>
-              ) : (
-                <p className="text-sm text-zinc-400 dark:text-zinc-500">Choose a subject and start studying</p>
-              )}
-            </div>
 
             {/* Today's timetable blocks — quick-start shortcuts */}
             {computedTodayBlocks.length > 0 && (

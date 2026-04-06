@@ -127,7 +127,7 @@ const JourneyView: React.FC<JourneyViewProps> = ({
           // Non-critical
         }
       } catch (e) {
-        console.error('Failed to fetch flare count:', e);
+        console.error('Failed to fetch flare count:');
       }
     };
     fetchFlareData();

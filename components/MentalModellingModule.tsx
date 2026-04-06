@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { cyanTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = cyanTheme;
@@ -68,7 +68,7 @@ const GlassBoxUnfolder = () => {
     const allRevealed = revealed.size === 3;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "Glass Box" Model</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Click each view to see how the 3D object projects onto the glass faces.</p>
             <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">Reveal all three, then flatten the box into a drawing layout.</p>
@@ -80,15 +80,11 @@ const GlassBoxUnfolder = () => {
                     const isSeen = revealed.has(v);
                     return (
                         <button key={v} onClick={() => handleView(v)}
-                            className={`px-3 py-2 text-xs font-bold rounded-lg border transition-all ${
-                                isActive ? 'text-white border-transparent'
-                                : isSeen ? 'border-transparent'
-                                : 'bg-zinc-50 dark:bg-zinc-900/30 text-zinc-500 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 cursor-pointer'
-                            }`}
+                            className={`px-3 py-2 text-xs font-bold rounded-lg transition-all`}
                             style={
-                                isActive ? { backgroundColor: vc[v].color }
-                                : isSeen ? { backgroundColor: vc[v].color + '18', color: vc[v].color }
-                                : undefined
+                                isActive ? { backgroundColor: vc[v].color, color: '#FFFFFF', border: '2.5px solid ' + vc[v].color, borderRadius: 10, boxShadow: '3px 3px 0px 0px ' + vc[v].color }
+                                : isSeen ? { backgroundColor: vc[v].color + '18', color: vc[v].color, border: '2.5px solid ' + vc[v].color + '60', borderRadius: 10 }
+                                : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 10, boxShadow: '3px 3px 0px 0px #1C1917' }
                             }
                         >
                             {vc[v].label} ({vc[v].sub})
@@ -102,7 +98,7 @@ const GlassBoxUnfolder = () => {
                     <motion.div key="explorer" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
                         <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
                             {/* Isometric 3D view */}
-                            <div className="bg-zinc-50 dark:bg-zinc-900/30 rounded-xl border border-zinc-200 dark:border-zinc-700 p-3">
+                            <div className="rounded-xl p-3" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4' }}>
                                 <svg viewBox="0 0 310 220" className="w-full" style={{ maxWidth: 320 }}>
                                     {/* Glass box wireframe */}
                                     {boxEdges.map(([a, b], i) => {
@@ -182,7 +178,7 @@ const GlassBoxUnfolder = () => {
                     </motion.div>
                 ) : (
                     <motion.div key="layout" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                        <div className="bg-zinc-50 dark:bg-zinc-900/30 rounded-xl border border-zinc-200 dark:border-zinc-700 p-4">
+                        <div className="rounded-xl p-4" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4' }}>
                             <svg viewBox="0 0 260 260" className="w-full mx-auto" style={{ maxWidth: 380, display: 'block' }}>
                                 {/* Plan (top, green) */}
                                 <rect x="30" y="10" width="90" height="60" fill="#10b98112" stroke="#10b981" strokeWidth="1.5" rx="2" />
@@ -251,7 +247,7 @@ const CycleOfModelling = () => {
     ];
     const [activeStep, setActiveStep] = useState(0);
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Cycle of Modelling</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">This is the step-by-step process your brain goes through when you picture something in 3D.</p>
              <div className="flex justify-between mb-2">
@@ -307,12 +303,56 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
           {activeSection === 0 && (
             <ReadingSection title="The Mind's Eye." eyebrow="Step 1" icon={Eye} theme={theme}>
               <p>In subjects like DCG and Engineering, there's a skill nobody actually teaches you — but everyone expects you to have. It's not about what you draw; it's about what you can <em>see</em> in your head before you draw it. This is <Highlight description="Your ability to build a picture in your head — like a 3D model you can spin around, take apart, and test — all without touching a pencil." theme={theme}>Mental Modelling</Highlight>. It's the difference between blindly following steps and truly understanding the shape or mechanism you're working with.</p>
-              <p>This "seeing in your head" skill isn't just one thing. It's actually a few different skills bundled together. The big three for the Leaving Cert are: 1) <Highlight description="The ability to imagine something changing shape step by step — like picturing what happens when you slice through a 3D object, or where two shapes overlap." theme={theme}>Spatial Visualisation</Highlight>, 2) <Highlight description="Being able to spin an object around in your head quickly and accurately. This is what you need when you're drawing different views of the same object." theme={theme}>Mental Rotation</Highlight>, and 3) <Highlight description="Understanding how things look from different positions — like imagining you're standing somewhere else in the room. This is key for things like Perspective Drawing." theme={theme}>Spatial Orientation</Highlight>.</p>
+              <p>This "seeing in your head" skill isn't just one thing. It's actually a few different skills bundled together. The big three for the Leaving Cert are:</p>
+              <ConceptCardGrid
+                cards={[
+                  { number: 1, term: "Spatial Visualisation", description: "The ability to imagine something changing shape step by step — like picturing what happens when you slice through a 3D object, or where two shapes overlap." },
+                  { number: 2, term: "Mental Rotation", description: "Being able to spin an object around in your head quickly and accurately. This is what you need when you're drawing different views of the same object." },
+                  { number: 3, term: "Spatial Orientation", description: "Understanding how things look from different positions — like imagining you're standing somewhere else in the room. This is key for things like Perspective Drawing." },
+                ]}
+              />
             </ReadingSection>
           )}
            {activeSection === 1 && (
             <ReadingSection title="The Modelling Cycle." eyebrow="Step 2" icon={Workflow} theme={theme}>
-              <p>So how does your brain actually build a picture of something? It follows a 5-step loop. 1) <strong>Break it down</strong>: You look at the flat drawing on the exam paper and split it into simple shapes (boxes, cylinders, cones). 2) <strong>Build it in your head</strong>: You piece those shapes together into a 3D picture in your mind. 3) <strong>Test it mentally</strong>: You spin it around, zoom in, ask yourself "what would this look like from the side?" 4) <strong>Draw it out</strong>: You put your pencil on the page and draw what you see. 5) <strong>Check your work</strong>: You compare what you drew with what you pictured — do they match?</p>
+              <p>So how does your brain actually build a picture of something? It follows a 5-step loop.</p>
+              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Break it down</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>You look at the flat drawing on the exam paper and split it into simple shapes (boxes, cylinders, cones).</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Build it in your head</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>You piece those shapes together into a 3D picture in your mind.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Test it mentally</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>You spin it around, zoom in, ask yourself "what would this look like from the side?"</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 16, boxShadow: '4px 4px 0px 0px #059669' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#059669' }}>4</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#064E3B' }}>Draw it out</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#064E3B', opacity: 0.8 }}>You put your pencil on the page and draw what you see.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>5</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Check your work</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>You compare what you drew with what you pictured — do they match?</p>
+                  </div>
+                </div>
+              </div>
               <p>Here's the important part: most students skip Step 3 entirely. They fall back on memorised rules ("always draw this line at 45 degrees") instead of actually picturing the object. This gets you through standard questions, but the moment the exam throws you something slightly different, you're stuck — because you never really understood the shape in the first place.</p>
               <CycleOfModelling />
             </ReadingSection>
@@ -342,7 +382,29 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
            {activeSection === 5 && (
             <ReadingSection title="The Training Plan." eyebrow="Step 6" icon={Pyramid} theme={theme}>
               <p>Here's the good news: this "seeing in your head" skill is something you can actually train — it's not a talent you either have or don't. Like any skill, you build it up gradually, starting easy and working your way to the hard stuff. The <Highlight description="A step-by-step training approach where you start by handling real objects, move on to predicting what things look like on screen, and finish by picturing shapes described only in words — each stage stretching your mind's eye a bit further." theme={theme}>Spiral of Visualisation</Highlight> gives you a roadmap for doing exactly that.</p>
-              <p><strong>Phase 1: Get Hands-On.</strong> Start with physical objects — LEGO, cardboard models, anything you can hold. Pick them up, turn them around, and sketch what you see. Touch it, see it, draw it. <strong>Phase 2: Predict and Check.</strong> Use CAD software. Before you click to create a shape, sketch what you *think* it will look like. Then compare your sketch to what actually appears on screen. Predict it, check it, learn from the difference. <strong>Phase 3: Pure Imagination.</strong> Try "Dark Room" problems, where a shape is described only in words and you have to picture it entirely in your head. This is the ultimate test of your mind's eye — and the best prep for exam day.</p>
+              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Phase 1: Get Hands-On</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>Start with physical objects — LEGO, cardboard models, anything you can hold. Pick them up, turn them around, and sketch what you see. Touch it, see it, draw it.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Phase 2: Predict and Check</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Use CAD software. Before you click to create a shape, sketch what you think it will look like. Then compare your sketch to what actually appears on screen. Predict it, check it, learn from the difference.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Phase 3: Pure Imagination</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>Try "Dark Room" problems, where a shape is described only in words and you have to picture it entirely in your head. This is the ultimate test of your mind's eye — and the best prep for exam day.</p>
+                  </div>
+                </div>
+              </div>
             </ReadingSection>
           )}
         </>

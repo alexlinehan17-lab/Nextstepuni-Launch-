@@ -9,7 +9,7 @@ import { MotionDiv } from './Motion';
 import { FileText, SquarePen, Layers, GitBranch, Wrench } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { indigoTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = indigoTheme;
@@ -137,7 +137,7 @@ const NoteTakingComparison = () => {
   );
 
   return (
-    <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Note-Taking Paradox</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Two students. Same lecture. Opposite strategies.</p>
 
@@ -243,22 +243,22 @@ const CornellNoteSimulator = () => {
   const allSuccess = feedback.length > 0 && feedback.every((f) => f.type === 'success');
 
   return (
-    <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Cornell Note Simulator</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-6">Practice the Cornell Method on a real concept. Paraphrase, question, summarise.</p>
 
       {/* Original concept */}
-      <div className="p-4 bg-indigo-50 dark:bg-indigo-950/20 rounded-xl border border-indigo-200 dark:border-indigo-800 mb-6">
-        <p className="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider mb-1">Original Concept</p>
-        <p className="text-sm text-zinc-700 dark:text-zinc-200">{originalConcept}</p>
+      <div className="bg-white dark:bg-zinc-900 mb-6" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '16px 20px' }}>
+        <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', color: '#9e9186', marginBottom: 6, textTransform: 'uppercase' as const }}>Original Concept</p>
+        <p className="font-serif" style={{ fontSize: 14, color: '#1a1a1a', lineHeight: 1.6 }}>{originalConcept}</p>
       </div>
 
       {/* Cornell template */}
-      <div className="border border-zinc-300 dark:border-zinc-600 rounded-xl overflow-hidden mb-6">
+      <div className="rounded-xl overflow-hidden mb-6" style={{ border: '1.5px solid #d0cdc8' }}>
         {/* Top section: Cue column + Main notes */}
         <div className="flex min-h-[200px]">
           {/* Cue column (left) */}
-          <div className="w-1/3 border-r border-zinc-300 dark:border-zinc-600 p-3 bg-zinc-50 dark:bg-zinc-900/50">
+          <div className="w-1/3 p-3 bg-zinc-50 dark:bg-zinc-900/50" style={{ borderRight: '1.5px solid #d0cdc8' }}>
             <p className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-2">Cue Questions</p>
             <textarea
               value={cueQuestions}
@@ -279,7 +279,7 @@ const CornellNoteSimulator = () => {
           </div>
         </div>
         {/* Summary (bottom) */}
-        <div className="border-t border-zinc-300 dark:border-zinc-600 p-3 bg-zinc-50 dark:bg-zinc-900/50">
+        <div className="p-3 bg-zinc-50 dark:bg-zinc-900/50" style={{ borderTop: '1.5px solid #d0cdc8' }}>
           <p className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-2">Summary (One Sentence)</p>
           <textarea
             value={summary}
@@ -291,11 +291,11 @@ const CornellNoteSimulator = () => {
       </div>
 
       {/* Buttons */}
-      <div className="flex justify-center gap-3 mb-4">
-        <button onClick={handleCheck} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-indigo-500 text-white hover:bg-indigo-600 transition-colors">
+      <div className="flex justify-center items-center gap-5 mb-4">
+        <motion.button onClick={handleCheck} whileTap={{ y: 3 }} className="text-white font-semibold" style={{ backgroundColor: '#2A7D6F', borderRadius: 100, padding: '13px 28px', fontSize: 15, borderBottom: '3px solid #1a5a4e', boxShadow: '0 4px 0 #1a5a4e' }}>
           Check My Notes
-        </button>
-        <button onClick={handleReset} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-zinc-200 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200 hover:bg-zinc-300 dark:hover:bg-zinc-600 transition-colors">
+        </motion.button>
+        <button onClick={handleReset} className="font-medium" style={{ fontSize: 14, color: '#9e9186', background: 'none', border: 'none' }} onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#5a5550'; }} onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#9e9186'; }}>
           Reset
         </button>
       </div>
@@ -304,14 +304,22 @@ const CornellNoteSimulator = () => {
       {showFeedback && (
         <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="space-y-2">
           {feedback.map((f, i) => (
-            <div key={i} className={`flex items-start gap-2.5 p-3 rounded-lg text-sm ${f.type === 'success' ? 'bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800' : 'bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800'}`}>
-              <span className={`text-lg mt-0.5 ${f.type === 'success' ? 'text-emerald-500' : 'text-amber-500'}`}>{f.type === 'success' ? '\u2714' : '\u26A0'}</span>
-              <p className="text-zinc-600 dark:text-zinc-300">{f.message}</p>
+            <div key={i} className="flex items-start gap-2.5" style={f.type === 'success'
+              ? { background: '#f0faf8', borderLeft: '3px solid #2A7D6F', borderRadius: '0 10px 10px 0', padding: '12px 16px' }
+              : { background: 'white', border: '1.5px solid #d0cdc8', borderLeft: '3px solid #9e9186', borderRadius: '0 10px 10px 0', padding: '12px 16px' }
+            }>
+              {f.type === 'success' ? (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2A7D6F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 2 }}><polyline points="20 6 9 17 4 12"/></svg>
+              ) : (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9e9186" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 2 }}><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              )}
+              <p style={{ fontSize: 14, color: f.type === 'success' ? '#1a6358' : '#5a5550' }}>{f.message}</p>
             </div>
           ))}
           {allSuccess && (
-            <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} className="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 text-sm font-medium text-emerald-700 dark:text-emerald-300 text-center">
-              Excellent work! You've completed a full Cornell note cycle. Now the real power comes from covering the right column and testing yourself using only the cue questions.
+            <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '16px 20px', textAlign: 'center' }}>
+              <p className="font-serif font-semibold" style={{ fontSize: 16, color: '#1a6358' }}>Cornell cycle complete.</p>
+              <p style={{ fontSize: 14, color: '#2A7D6F', marginTop: 4 }}>Now the real power comes from covering the right column and testing yourself using only the cue questions.</p>
             </MotionDiv>
           )}
         </MotionDiv>
@@ -358,7 +366,15 @@ const TheNoteTakingParadoxModule: React.FC<{ onBack: () => void; progress: Modul
             <ReadingSection title="Notes That Actually Work." eyebrow="Step 2" icon={SquarePen} theme={theme}>
               <p>This idea — that less writing leads to more learning — has been proven again and again over decades of research. Students who paraphrase, summarise, and make connections in their notes <Highlight description="When you put things in your own words instead of copying, you score way better — not just on basic recall questions, but on the tricky ones where you have to apply what you've learned to something new." theme={theme}>consistently outperform word-for-word note-takers by 30-40%</Highlight> on the kinds of questions that actually matter. Not just "name this thing" questions, but the ones where you have to apply what you know to a brand new situation — exactly the kind of questions you see on the Leaving Cert.</p>
               <p>Here's why it works: <Highlight description="Real learning only happens when you actively make connections between new stuff and things you already know. Just receiving information passively — no matter how much of it you write down — doesn't create understanding." theme={theme}>real learning only kicks in when you actively connect new information to things you already know</Highlight>. When you rephrase something in your own words, your brain has to figure out how it relates to what you already understand. You can't reword something unless you actually get it. That connection-building is what turns information from something you heard into something you know.</p>
-              <p>Three simple moves will transform your note-taking. First, <Highlight description="After reading or hearing a concept, close the book and write one sentence that captures the main idea. If you can't boil it down, you probably don't understand it yet." theme={theme}>summarise each concept in one sentence</Highlight> — the constraint forces you to figure out what actually matters. Second, <Highlight description="If you can come up with your own example of a concept, you really get it. You're not just remembering the specific thing you were taught — you understand the idea behind it." theme={theme}>come up with your own example</Highlight> — if you can think of a new example, you truly understand the idea, not just the specific case you were taught. Third, <Highlight description="When you link new information to something you already know, your brain stores it in more places. That means more ways to find it again later — like having multiple doors into the same room." theme={theme}>connect it to something you already know</Highlight> — linking new ideas to old ones gives your brain more ways to find that information later. These three moves — summarise, give an example, connect — are what make notes actually useful.</p>
+              <p>Three simple moves will transform your note-taking:</p>
+              <ConceptCardGrid
+                cards={[
+                  { number: 1, term: "Summarise", description: "After reading or hearing a concept, close the book and write one sentence that captures the main idea. If you can't boil it down, you probably don't understand it yet. The constraint forces you to figure out what actually matters." },
+                  { number: 2, term: "Give Your Own Example", description: "If you can come up with your own example of a concept, you really get it. You're not just remembering the specific thing you were taught -- you understand the idea behind it." },
+                  { number: 3, term: "Connect", description: "When you link new information to something you already know, your brain stores it in more places. That means more ways to find it again later -- like having multiple doors into the same room." },
+                ]}
+                accentNote="These three moves -- summarise, give an example, connect -- are what make notes actually useful."
+              />
             </ReadingSection>
           )}
           {activeSection === 2 && (

@@ -177,7 +177,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   const progressPercentage = sections.length > 0 ? (unlockedSection / sections.length) * 100 : 0;
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-white font-sans flex flex-col md:flex-row overflow-x-hidden transition-colors duration-500">
+    <div className="min-h-screen bg-[#F8F8F8] dark:bg-zinc-950 text-zinc-900 dark:text-white font-sans flex flex-col md:flex-row overflow-x-hidden transition-colors duration-500">
 
       {/* ── Desktop Sidebar (unchanged) ── */}
       <aside className="hidden md:flex w-80 bg-white dark:bg-zinc-900 border-r border-zinc-200 dark:border-zinc-800 sticky top-0 h-screen z-40 p-8 flex-col">
@@ -353,21 +353,27 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
       </AnimatePresence>
 
       {/* ── Main Content ── */}
-      <main ref={mainRef} className="flex-grow flex flex-col items-center pt-20 md:pt-24 px-6 md:px-16 pb-10 md:pb-0 md:overflow-y-auto md:h-screen">
-        <div className="w-full max-w-4xl">
-          <div key={activeSection} className="section-enter">
+      <main ref={mainRef} className="flex-grow flex flex-col items-center pt-20 md:pt-24 px-6 md:px-16 pb-10 md:pb-0 md:overflow-y-auto md:h-screen bg-[#F8F8F8] dark:bg-zinc-950">
+        <div className="w-full max-w-3xl">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeSection}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.4, ease: [0.25, 1, 0.5, 1] }}
+            >
               {children(activeSection)}
-              <footer className="mt-12 flex items-center justify-between pt-8 pb-6 border-t border-zinc-200 dark:border-zinc-800">
-                <button onClick={handlePrev} disabled={activeSection === 0} className={`flex items-center gap-3 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-white px-6 py-3.5 rounded-xl font-semibold text-[11px] uppercase tracking-widest transition-all hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] focus-visible:ring-offset-2 ${activeSection === 0 ? 'invisible' : ''}`}>
+              <footer className="mt-16 flex items-center justify-between pt-8 pb-6">
+                <button onClick={handlePrev} disabled={activeSection === 0} className={`flex items-center gap-3 bg-[#FEFDFB] dark:bg-zinc-800 text-zinc-600 dark:text-white px-6 py-3.5 rounded-xl font-semibold text-[11px] uppercase tracking-widest transition-all hover:scale-[1.02] active:scale-[0.98] border border-[#EDEBE8] dark:border-zinc-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] focus-visible:ring-offset-2 ${activeSection === 0 ? 'invisible' : ''}`}>
                   <ArrowLeft size={16} /> Prev
                 </button>
-                <PrimaryActionButton
-                  label={activeSection === sections.length - 1 ? finishButtonText : 'Continue'}
-                  onClick={handleCompleteSection}
-                  icon={ArrowRight}
-                />
+                <button onClick={handleCompleteSection} className="flex items-center gap-3 bg-[#FEFDFB] dark:bg-zinc-800 text-zinc-600 dark:text-white px-6 py-3.5 rounded-xl font-semibold text-[11px] uppercase tracking-widest transition-all hover:scale-[1.02] active:scale-[0.98] border border-[#EDEBE8] dark:border-zinc-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] focus-visible:ring-offset-2">
+                  {activeSection === sections.length - 1 ? finishButtonText : 'Continue'} <ArrowRight size={16} />
+                </button>
               </footer>
-          </div>
+            </motion.div>
+          </AnimatePresence>
         </div>
       </main>
 

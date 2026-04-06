@@ -145,7 +145,7 @@ const COURSE_DEFINITIONS = [
     title: 'Building Emotional Intelligence',
     subtitle: 'The Stress Management Toolkit',
     description: 'Understand why your brain freaks out during exams and learn practical techniques -- both mental and physical -- to turn stress into something that works for you, not against you.',
-    sectionsCount: 8,
+    sectionsCount: 7,
     tags: ['Performance Psych', 'Resilience'],
   },
   {

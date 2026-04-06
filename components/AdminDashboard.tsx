@@ -115,6 +115,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
     const [deleteTarget, setDeleteTarget] = useState<SessionUser | null>(null);
     const [isDeleting, setIsDeleting] = useState(false);
 
+    // TODO: When Cloud Functions are set up, call a deleteStudentAccount function
+    // that uses Firebase Admin SDK to delete both the Auth account and Firestore docs.
+    // Current approach: delete Firestore docs only. AuthContext.tsx blocks orphaned
+    // Auth accounts from re-entering the app by refusing to auto-recover missing user docs.
     const handleDeleteStudent = async (user: SessionUser) => {
       setIsDeleting(true);
       try {
@@ -124,7 +128,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
         await deleteDoc(doc(db, 'users', user.uid));
         setStudentData(prev => prev.filter(s => s.user.uid !== user.uid));
       } catch (error) {
-        console.error('Error deleting student:', error);
+        console.error('Error deleting student:');
         alert('Failed to delete student. You may not have permission.');
       }
       setIsDeleting(false);
@@ -161,7 +165,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
 
                 setStudentData(combinedData);
             } catch (error) {
-                console.error("Error fetching admin data:", error);
+                console.error("Error fetching admin data:");
             }
             if (!cancelled) setIsLoading(false);
         };

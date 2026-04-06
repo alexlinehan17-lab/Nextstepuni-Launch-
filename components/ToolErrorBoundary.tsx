@@ -27,7 +27,7 @@ class ToolErrorBoundary extends React.Component<ToolErrorBoundaryProps, ToolErro
   }
 
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo): void {
-    console.error(`[ToolErrorBoundary] ${this.props.toolName} crashed:`, error, errorInfo);
+    console.error(`[ToolErrorBoundary] ${this.props.toolName} crashed`);
   }
 
   render() {

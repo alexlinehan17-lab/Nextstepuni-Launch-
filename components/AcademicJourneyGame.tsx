@@ -534,7 +534,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                     }
                 }
             } catch (e) {
-                if (!cancelled) console.error('Failed to load journey result:', e);
+                if (!cancelled) console.error('Failed to load journey result:');
             }
         };
         loadPrevious();
@@ -563,7 +563,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                     }, { merge: true });
                 } catch (e) {
                     if (cancelled) return;
-                    console.error('Failed to save journey result:', e);
+                    console.error('Failed to save journey result:');
                     showToast('Couldn\'t save — check your connection', 'error');
                 }
             };

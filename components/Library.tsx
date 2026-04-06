@@ -21,6 +21,7 @@ import NorthStarCallout from './NorthStarCallout';
 import { useSettingsContext } from '../contexts/SettingsContext';
 import { ACCENT_THEME_LIST, ACCENT_THEMES, CARD_STYLES } from '../themeData';
 import { getAvatarUrl } from './Auth';
+import ModuleShowcase from './ModuleShowcase';
 
 // FIX: Cast motion components to any to bypass broken type definitions
 
@@ -214,7 +215,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
   const unlockedIndex = courses.length; // For now, all modules in a category are unlocked by default
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 overflow-x-hidden relative">
+    <div className="min-h-screen transition-colors duration-500 overflow-x-hidden relative" style={{ backgroundColor: '#FDF8F0' }}>
 
       {/* Sidebar — desktop only, starts below fixed header */}
       {hasSidebar && headerHeight > 0 && (
@@ -454,7 +455,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
       {/* Main content area */}
       <div className={`flex flex-col items-center pt-24 md:pt-32 pb-12 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${hasSidebar ? (sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]') : ''}`}>
 
-      <header ref={headerRef} className="fixed top-0 left-0 right-0 z-[60] bg-zinc-50 dark:bg-zinc-950 border-b border-zinc-200 dark:border-zinc-800 px-4 py-4 md:px-10 md:py-6">
+      <header ref={headerRef} className="fixed top-0 left-0 right-0 z-[60] border-b px-4 py-4 md:px-10 md:py-6" style={{ backgroundColor: '#FDF8F0', borderColor: 'rgba(0,0,0,0.06)' }}>
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4 md:gap-8">
             <button onClick={onBack} className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
@@ -469,69 +470,15 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
         </div>
       </header>
 
-      <main className="w-full max-w-7xl px-6 pt-4 md:pt-10 relative z-10">
-
-        {/* North Star Callout */}
-        {northStar && (
-          <div className="mb-4">
-            <NorthStarCallout northStar={northStar} variant="full" />
-          </div>
-        )}
-
-        {/* Bento Grid Command Center */}
-        {/* Bento Header Strip — outside grid so auto-rows-fr doesn't stretch it */}
-        <MotionDiv
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="flex flex-row items-center justify-between px-5 py-4 md:p-8 rounded-xl bg-zinc-900 dark:bg-zinc-900 border border-zinc-800 mb-4 md:mb-6"
-        >
-            <div>
-              <h2 className="text-white font-serif text-lg md:text-4xl font-semibold tracking-tight">Overview</h2>
-              <p className="hidden md:block text-zinc-400 text-[11px] uppercase tracking-[0.15em] mt-2">Choose a unit to get started</p>
-            </div>
-            <div className="flex items-center gap-3 md:gap-6">
-               <div className="flex flex-col items-end">
-                  <span className="text-white text-lg md:text-xl font-bold">{overallProgress}%</span>
-                  <span className="text-zinc-500 text-[10px] font-semibold uppercase tracking-wider">Progress</span>
-               </div>
-               <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-[rgba(var(--accent),0.15)] flex items-center justify-center text-[var(--accent-hex)]">
-                  <Sparkles size={16} className="md:hidden" /><Sparkles size={20} className="hidden md:block" />
-               </div>
-            </div>
-        </MotionDiv>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 auto-rows-fr">
-          {courses.map((course, idx) => {
-            const progress = userProgress[course.id];
-            const isCompleted = progress && progress.unlockedSection >= course.sectionsCount;
-            return (
-              <BentoModuleTile
-                key={course.id}
-                course={course}
-                index={idx}
-                isUnlocked={idx <= unlockedIndex}
-                isCompleted={isCompleted}
-                onClick={() => onSelectCourse(course.id)}
-                categoryTitle={title}
-              />
-            )
-          })}
-
-        </div>
-
+      <main className="w-full px-4 md:px-6 pt-4 md:pt-10 relative z-10 flex items-center justify-center" style={{ minHeight: 'calc(100vh - 120px)' }}>
+        <ModuleShowcase
+          courses={courses}
+          categoryTitle={title}
+          categoryId={courses[0]?.category || 'learning-cheat-codes'}
+          userProgress={userProgress}
+          onSelectCourse={onSelectCourse}
+        />
       </main>
-
-      {/* Sequence Terminated */}
-      <div className="w-full text-center py-6">
-         <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-600">End of Module</p>
-      </div>
-
-      <footer className="py-8 border-t border-zinc-200 dark:border-zinc-800 w-full text-center">
-        <div className="inline-flex items-center gap-3">
-          <div className="w-4 h-1 bg-[var(--accent-hex)] rounded-full" />
-          <p className="text-[11px] font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.15em]">NextStepUni Learning Lab</p>
-        </div>
-      </footer>
       </div>
     </div>
   );

@@ -102,6 +102,10 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
   const [isDeleting, setIsDeleting] = useState(false);
   const [dismissedAlerts, setDismissedAlerts] = useState<Record<string, DismissedAlert>>({});
 
+  // TODO: When Cloud Functions are set up, call a deleteStudentAccount function
+  // that uses Firebase Admin SDK to delete both the Auth account and Firestore docs.
+  // Current approach: delete Firestore docs only. AuthContext.tsx blocks orphaned
+  // Auth accounts from re-entering the app by refusing to auto-recover missing user docs.
   const handleDeleteStudent = async (user: SessionUser) => {
     setIsDeleting(true);
     try {
@@ -112,7 +116,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       setStudentData(prev => prev.filter(s => s.user.uid !== user.uid));
       if (selectedStudentUid === user.uid) setSelectedStudentUid(null);
     } catch (error) {
-      console.error('Error deleting student:', error);
+      console.error('Error deleting student:');
       alert('Failed to delete student. You may not have permission.');
     }
     setIsDeleting(false);
@@ -127,7 +131,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
     try {
       await setDoc(doc(db, 'gcSettings', school), { dismissedAlerts: updated }, { merge: true });
     } catch (err) {
-      console.error('[GCAlerts] Failed to save dismissal:', err);
+      console.error('[GCAlerts] Failed to save dismissal:');
     }
   };
 
@@ -253,7 +257,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
           }
         } catch { /* No settings yet */ }
       } catch (error) {
-        console.error('Error fetching GC data:', error);
+        console.error('Error fetching GC data:');
       }
       if (!cancelled) setIsLoading(false);
     };

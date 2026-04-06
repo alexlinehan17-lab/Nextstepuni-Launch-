@@ -50,7 +50,7 @@ export function usePoints(uid?: string): PointsData & { reload: () => void } {
           }
         }
       } catch (err) {
-        console.error('Failed to load points:', err);
+        console.error('Failed to load points:');
       }
       if (!cancelled) setPoints({ ...DEFAULT, isLoaded: true });
     };

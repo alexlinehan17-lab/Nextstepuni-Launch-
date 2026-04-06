@@ -58,7 +58,7 @@ const DopingSimulator = () => {
     const allViewed = viewed.size === 3;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Semiconductor Doping</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">See how adding impurities creates free charge carriers in silicon.</p>
             <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">Toggle between states to understand N-type and P-type doping.</p>
@@ -69,9 +69,10 @@ const DopingSimulator = () => {
                     <button key={key} onClick={() => handleMode(key)}
                         className={`flex-1 px-3 py-2 text-xs font-bold rounded-full transition-all ${
                             mode === key
-                                ? 'bg-white dark:bg-zinc-700 shadow-sm text-zinc-800 dark:text-white'
+                                ? 'bg-white text-zinc-800 dark:text-white'
                                 : 'text-zinc-500 dark:text-zinc-400'
                         }`}
+                        style={mode === key ? { boxShadow: '2px 2px 0px 0px #1C1917' } : {}}
                     >
                         {lbl}
                     </button>

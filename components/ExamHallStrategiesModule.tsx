@@ -86,7 +86,7 @@ const TriageSimulator = () => {
 
     if (phase === 'ready') {
         return (
-            <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
+            <div className="my-10 rounded-2xl p-8 md:p-12 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">Triage Drill</h4>
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-2 max-w-md mx-auto">Reading time has started. You have <strong className="text-zinc-700 dark:text-zinc-200">40 seconds</strong> to categorise 8 exam questions as:</p>
                 <div className="flex justify-center gap-3 mb-6">
@@ -101,7 +101,7 @@ const TriageSimulator = () => {
 
     if (phase === 'done') {
         return (
-            <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <div className="my-10 rounded-2xl p-6 md:p-10" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Triage Results</h4>
                 <div className="flex justify-center gap-4 my-5">
                     <div className="text-center px-5 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-700">
@@ -160,7 +160,7 @@ const TriageSimulator = () => {
     const timerPct = (timeLeft / 40) * 100;
 
     return (
-        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-10" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <div className="flex items-center justify-between mb-4">
                 <h4 className="font-serif text-lg font-semibold text-zinc-800 dark:text-white">Triage Drill</h4>
                 <div className="flex items-center gap-3">
@@ -201,11 +201,12 @@ const TriageSimulator = () => {
                     const isAnswer = showFeedback && q.correct === c;
                     return (
                         <button key={c} onClick={() => handleChoice(c)} disabled={showFeedback}
-                            className={`p-3 rounded-xl font-bold text-sm border transition-all ${
-                                isAnswer ? `${cm.bg} ${cm.text} ${cm.border} ring-2 ring-offset-1 ring-emerald-500` :
-                                selected && !isAnswer ? 'bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 border-rose-300 dark:border-rose-700' :
-                                `${cm.bg} ${cm.text} ${cm.border} hover:opacity-80`
-                            } ${showFeedback ? 'cursor-default' : 'cursor-pointer'}`}>
+                            className="p-3 font-bold text-sm transition-all"
+                            style={
+                                isAnswer ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } :
+                                selected && !isAnswer ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } :
+                                { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: showFeedback ? 'none' : '3px 3px 0px 0px #1C1917', cursor: showFeedback ? 'default' : 'pointer' }
+                            }>
                             <div className={`w-3 h-3 rounded-full ${cm.dot} mx-auto mb-1.5`} />
                             {cm.label}
                         </button>
@@ -232,15 +233,31 @@ const MPMCalculator = () => {
     const mpm = (time - buffer) / marks;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Minutes-Per-Mark (MPM) Calculator</h4>
-             <div className="grid grid-cols-3 gap-4 mt-6">
-                <div><label className="text-xs font-bold">Total Time (mins)</label><input type="number" value={time} onChange={e=>setTime(parseInt(e.target.value))} className="w-full p-2 bg-zinc-100 dark:bg-zinc-800 rounded-md" /></div>
-                <div><label className="text-xs font-bold">Total Marks</label><input type="number" value={marks} onChange={e=>setMarks(parseInt(e.target.value))} className="w-full p-2 bg-zinc-100 dark:bg-zinc-800 rounded-md" /></div>
-                <div><label className="text-xs font-bold">Buffer (mins)</label><input type="number" value={buffer} onChange={e=>setBuffer(parseInt(e.target.value))} className="w-full p-2 bg-zinc-100 dark:bg-zinc-800 rounded-md" /></div>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+             <div className="text-center mb-6">
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
+                <h4 className="font-serif font-bold" style={{ fontSize: 22, color: '#1a1a1a' }}>Minutes-Per-Mark Calculator</h4>
              </div>
-             <div className="mt-6 p-4 bg-zinc-900 rounded-xl text-center text-white">
-                Your MPM is <span className="font-bold text-2xl text-amber-400">{mpm.toFixed(2)}</span>. A 20-mark question gets <span className="font-bold text-amber-400">{(mpm*20).toFixed(1)}</span> minutes.
+             <div className="grid grid-cols-3 gap-4">
+                <div>
+                    <label style={{ fontSize: 14, fontWeight: 600, color: '#1a1a1a' }}>Total Time (mins)</label>
+                    <input type="number" value={time} onChange={e=>setTime(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 16, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
+                </div>
+                <div>
+                    <label style={{ fontSize: 14, fontWeight: 600, color: '#1a1a1a' }}>Total Marks</label>
+                    <input type="number" value={marks} onChange={e=>setMarks(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 16, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
+                </div>
+                <div>
+                    <label style={{ fontSize: 14, fontWeight: 600, color: '#1a1a1a' }}>Buffer (mins)</label>
+                    <input type="number" value={buffer} onChange={e=>setBuffer(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 16, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
+                </div>
+             </div>
+             <div className="mt-6 text-center" style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '20px 24px' }}>
+                <span style={{ fontSize: 16, color: '#1a1a1a' }}>Your MPM is </span>
+                <span className="font-serif font-bold" style={{ fontSize: 22, color: '#2A7D6F' }}>{mpm.toFixed(2)}</span>
+                <span style={{ fontSize: 16, color: '#1a1a1a' }}>. A 20-mark question gets </span>
+                <span className="font-serif font-bold" style={{ fontSize: 22, color: '#2A7D6F' }}>{(mpm*20).toFixed(1)}</span>
+                <span style={{ fontSize: 16, color: '#1a1a1a' }}> minutes.</span>
              </div>
         </div>
     )
@@ -311,7 +328,7 @@ const BoxBreathingVisualizer = () => {
     const done = !active && cycle === 0 && phase === 0;
 
     return (
-     <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+     <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
          <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">4-4-4-4 Box Breathing</h4>
          <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Feeling panicked? Run this protocol. 4 seconds per phase, 3 cycles.</p>
 
@@ -487,61 +504,47 @@ const DumpSheetBuilder = () => {
         setResults([]);
     };
 
-    const timerColor = (time: number, total: number) => {
-        const pct = time / total;
-        if (pct > 0.5) return 'text-emerald-500';
-        if (pct > 0.2) return 'text-amber-500';
-        return 'text-rose-500';
-    };
-
-    const timerBarColor = (time: number, total: number) => {
-        const pct = time / total;
-        if (pct > 0.5) return 'bg-emerald-500';
-        if (pct > 0.2) return 'bg-amber-500';
-        return 'bg-rose-500';
-    };
+    const isTimerLow = (time: number, total: number) => (time / total) <= 0.33;
 
     if (phase === 'ready') {
         return (
-            <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center">
-                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Dump Sheet Drill</h4>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-6 max-w-lg mx-auto">Practice the brain dump that should be your first action in every exam.</p>
-                <div className="flex flex-col items-center gap-3 mb-6">
-                    <div className="flex items-center gap-4 text-xs font-semibold text-zinc-500 dark:text-zinc-400">
-                        <span className="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-700">30s to memorise</span>
-                        <span className="text-zinc-300 dark:text-zinc-600">&rarr;</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-700">60s to recall</span>
-                        <span className="text-zinc-300 dark:text-zinc-600">&rarr;</span>
-                        <span className="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-700">See your score</span>
-                    </div>
+            <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
+                <h4 className="font-serif font-bold" style={{ fontSize: 22, color: '#1a1a1a' }}>Dump Sheet Drill</h4>
+                <p className="text-sm mt-1 mb-6 max-w-lg mx-auto" style={{ color: '#7a7068' }}>Practice the brain dump that should be your first action in every exam.</p>
+                <div className="flex items-center justify-center gap-3 mb-6 flex-wrap">
+                    <span style={{ backgroundColor: '#e8f5f2', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: '#1a6358' }}>30s to memorise</span>
+                    <span style={{ color: '#d0cdc8' }}>→</span>
+                    <span style={{ backgroundColor: '#e8f5f2', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: '#1a6358' }}>60s to recall</span>
+                    <span style={{ color: '#d0cdc8' }}>→</span>
+                    <span style={{ backgroundColor: '#e8f5f2', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: '#1a6358' }}>See your score</span>
                 </div>
-                <button onClick={startDrill} className="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm rounded-lg transition-colors">Start Drill</button>
+                <motion.button onClick={startDrill} whileTap={{ y: 3 }} className="text-white font-semibold" style={{ backgroundColor: '#2A7D6F', borderRadius: 100, padding: '13px 28px', fontSize: 15, borderBottom: '3px solid #1a5a4e', boxShadow: '0 4px 0 #1a5a4e' }}>Start Drill</motion.button>
             </div>
         );
     }
 
     if (phase === 'memorise') {
         const pct = (memoriseTime / 30) * 100;
+        const low = isTimerLow(memoriseTime, 30);
         return (
-            <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-4" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
                 <div className="flex items-center justify-between mb-2">
-                    <h4 className="font-serif text-lg font-semibold text-zinc-800 dark:text-white">Memorise These Facts</h4>
-                    <span className={`text-2xl font-bold tabular-nums ${timerColor(memoriseTime, 30)}`}>{memoriseTime}s</span>
+                    <h4 className="font-serif font-semibold" style={{ fontSize: 22, color: '#1a1a1a' }}>Memorise These Facts</h4>
+                    <span style={{ backgroundColor: low ? '#fde4e4' : '#e8f5f2', border: `1.5px solid ${low ? 'rgba(227,93,117,0.3)' : 'rgba(42,125,111,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>
+                        <span className="font-serif font-bold" style={{ fontSize: 18, color: low ? '#E85D75' : '#2A7D6F' }}>{memoriseTime}</span>
+                        <span style={{ fontSize: 13, color: '#9e9186', marginLeft: 2 }}>s</span>
+                    </span>
                 </div>
-                <div className="w-full h-1.5 bg-zinc-100 dark:bg-zinc-700 rounded-full mb-6">
-                    <motion.div className={`h-full rounded-full ${timerBarColor(memoriseTime, 30)}`} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
+                <div style={{ height: 4, backgroundColor: '#e0dbd4', borderRadius: 2, marginBottom: 24 }}>
+                    <motion.div style={{ height: '100%', backgroundColor: '#2A7D6F', borderRadius: 2 }} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                     {dumpSheetFacts.map((fact, i) => (
-                        <MotionDiv
-                            key={i}
-                            initial={{ opacity: 0, y: 8 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: i * 0.05 }}
-                            className="p-3 rounded-lg bg-zinc-50 dark:bg-zinc-700/50 border border-zinc-200 dark:border-zinc-600"
-                        >
-                            <span className="text-xs font-bold text-amber-600 dark:text-amber-400 mr-2">{i + 1}.</span>
-                            <span className="text-sm font-medium text-zinc-700 dark:text-zinc-200" style={{ fontFamily: 'ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace' }}>{fact.text}</span>
+                        <MotionDiv key={i} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} className="flex items-start gap-3 bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '16px 18px' }}>
+                            <span className="flex items-center justify-center shrink-0" style={{ width: 28, height: 28, borderRadius: '50%', backgroundColor: '#2A7D6F', fontSize: 13, fontWeight: 700, color: '#FFFFFF' }}>{i + 1}</span>
+                            <span style={{ fontSize: 14, color: '#1a1a1a', lineHeight: 1.5 }}>{fact.text}</span>
                         </MotionDiv>
                     ))}
                 </div>
@@ -551,22 +554,29 @@ const DumpSheetBuilder = () => {
 
     if (phase === 'recall') {
         const pct = (recallTime / 60) * 100;
+        const low = isTimerLow(recallTime, 60);
         return (
-            <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+            <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 <div className="flex items-center justify-between mb-2">
-                    <h4 className="font-serif text-lg font-semibold text-zinc-800 dark:text-white">Write Everything You Remember</h4>
-                    <span className={`text-2xl font-bold tabular-nums ${timerColor(recallTime, 60)}`}>{recallTime}s</span>
+                    <h4 className="font-serif font-semibold" style={{ fontSize: 22, color: '#1a1a1a' }}>Write Everything You Remember</h4>
+                    <span style={{ backgroundColor: low ? '#fde4e4' : '#e8f5f2', border: `1.5px solid ${low ? 'rgba(227,93,117,0.3)' : 'rgba(42,125,111,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>
+                        <span className="font-serif font-bold" style={{ fontSize: 18, color: low ? '#E85D75' : '#2A7D6F' }}>{recallTime}</span>
+                        <span style={{ fontSize: 13, color: '#9e9186', marginLeft: 2 }}>s</span>
+                    </span>
                 </div>
-                <div className="w-full h-1.5 bg-zinc-100 dark:bg-zinc-700 rounded-full mb-4">
-                    <motion.div className={`h-full rounded-full ${timerBarColor(recallTime, 60)}`} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
+                <div style={{ height: 4, backgroundColor: '#e0dbd4', borderRadius: 2, marginBottom: 16 }}>
+                    <motion.div style={{ height: '100%', backgroundColor: '#2A7D6F', borderRadius: 2 }} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
                 </div>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Don't worry about order or exact wording.</p>
+                <p className="text-sm mb-4" style={{ color: '#7a7068' }}>Don't worry about order or exact wording.</p>
                 <textarea
                     value={recallText}
                     onChange={e => setRecallText(e.target.value)}
                     disabled={recallTime <= 0}
                     placeholder="Start typing everything you remember..."
-                    className="w-full h-48 p-4 bg-zinc-50 dark:bg-zinc-700/50 border border-zinc-200 dark:border-zinc-600 rounded-xl text-sm text-zinc-700 dark:text-zinc-200 placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-amber-500/50 resize-none transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="w-full h-48 outline-none font-serif"
+                    style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '14px 16px', fontSize: 15, color: '#1a1a1a', lineHeight: 1.6, resize: 'none' as const }}
+                    onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }}
+                    onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }}
                     autoFocus
                 />
             </div>
@@ -576,42 +586,32 @@ const DumpSheetBuilder = () => {
     // Results phase
     const score = results.filter(Boolean).length;
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Results</h4>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+            <h4 className="font-serif font-bold text-center" style={{ fontSize: 22, color: '#1a1a1a' }}>Results</h4>
             <div className="text-center my-5">
-                <div className="inline-block px-6 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-700">
-                    <span className="text-3xl font-bold text-zinc-800 dark:text-white">{score}</span>
-                    <span className="text-lg text-zinc-500 dark:text-zinc-400">/{dumpSheetFacts.length} recalled</span>
+                <div className="inline-block" style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '16px 24px' }}>
+                    <span className="font-serif font-bold" style={{ fontSize: 40, color: '#2A7D6F' }}>{score}</span>
+                    <span className="font-serif" style={{ fontSize: 20, color: '#9e9186' }}>/{dumpSheetFacts.length} recalled</span>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-6">
                 {dumpSheetFacts.map((fact, i) => {
                     const recalled = results[i];
                     return (
-                        <MotionDiv
-                            key={i}
-                            initial={{ opacity: 0, y: 8 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: i * 0.05 }}
-                            className={`p-3 rounded-lg border flex items-start gap-2.5 ${
-                                recalled
-                                    ? 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-300 dark:border-emerald-700'
-                                    : 'bg-rose-50 dark:bg-rose-900/20 border-rose-300 dark:border-rose-700'
-                            }`}
-                        >
-                            <span className={`mt-0.5 flex-shrink-0 text-sm font-bold ${recalled ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
-                                {recalled ? '\u2713' : '\u2717'}
+                        <MotionDiv key={i} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} className="flex items-start gap-3 bg-white dark:bg-zinc-900" style={{ border: recalled ? '2px solid #2A7D6F' : '2px solid #1a1a1a', borderLeft: recalled ? undefined : '4px solid #E85D75', borderRadius: 14, padding: '14px 16px' }}>
+                            <span className="flex items-center justify-center shrink-0 mt-0.5" style={{ width: 22, height: 22, borderRadius: '50%', backgroundColor: recalled ? '#2A7D6F' : '#E85D75', fontSize: 12, fontWeight: 700, color: '#FFFFFF' }}>
+                                {recalled ? '✓' : '✗'}
                             </span>
-                            <span className="text-sm font-medium text-zinc-700 dark:text-zinc-200" style={{ fontFamily: 'ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace' }}>{fact.text}</span>
+                            <span style={{ fontSize: 14, color: '#1a1a1a', lineHeight: 1.5 }}>{fact.text}</span>
                         </MotionDiv>
                     );
                 })}
             </div>
-            <div className="p-4 rounded-xl bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 mb-6">
-                <p className="text-sm text-amber-800 dark:text-amber-300 leading-relaxed">In the real exam, your dump sheet prevents interference — facts written down can't be displaced by exam stress. Do this in the first 2 minutes of every paper.</p>
+            <div style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px', marginBottom: 16 }}>
+                <p className="text-sm italic" style={{ color: '#1a6358' }}>In the real exam, your dump sheet prevents interference — facts written down can't be displaced by exam stress. Do this in the first 2 minutes of every paper.</p>
             </div>
             <div className="text-center">
-                <button onClick={tryAgain} className="px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm rounded-lg transition-colors">Try Again</button>
+                <button onClick={tryAgain} style={{ backgroundColor: '#2A7D6F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Try Again</button>
             </div>
         </div>
     );
@@ -686,7 +686,7 @@ const OrderOfAttackOptimizer = () => {
     const score = checked ? computeScore() : 0;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Order of Attack</h4>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8 text-center max-w-lg mx-auto">Sequence these 6 exam questions for maximum momentum. Click questions in the order you would attempt them.</p>
 

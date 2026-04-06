@@ -73,7 +73,7 @@ export function useStudySession(
           setTodaySessions(sessions.filter(s => s.date === today));
         }
       } catch (err) {
-        console.error('Failed to load study sessions:', err);
+        console.error('Failed to load study sessions:');
       }
     };
     load();
@@ -300,10 +300,10 @@ export function useStudySession(
         updates['pointsData.totalEarned'] = increment(totalPoints);
       }
       updateDoc(progressDocRef, updates).catch(err => {
-        console.error('Failed to save study session:', err);
+        console.error('Failed to save study session:');
       });
     } catch (err) {
-      console.error('Failed to save study session:', err);
+      console.error('Failed to save study session:');
     }
   }, [uid, subject, sessionType, plannedMinutes, elapsedSeconds, basePointsEarned]);
 

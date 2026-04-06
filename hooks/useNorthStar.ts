@@ -32,7 +32,7 @@ export function useNorthStar() {
           }
         }
       } catch (err) {
-        console.error('Failed to load North Star:', err);
+        console.error('Failed to load North Star:');
       }
       if (!cancelled) setIsLoaded(true);
     };
@@ -48,7 +48,7 @@ export function useNorthStar() {
       try {
         await setDoc(doc(db, 'progress', uid), { northStar: ns }, { merge: true });
       } catch (err) {
-        console.error('Failed to save North Star:', err);
+        console.error('Failed to save North Star:');
       }
     }
   }, []);

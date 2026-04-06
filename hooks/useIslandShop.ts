@@ -80,7 +80,7 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
           setDoc(doc(db, 'progress', uid), { islandState: starter }, { merge: true }).catch(console.error);
         }
       } catch (err) {
-        console.error('Failed to load island state:', err);
+        console.error('Failed to load island state:');
         const starter = createStarterState(northStar.category);
         setIslandState(starter);
       }

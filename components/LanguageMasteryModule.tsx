@@ -25,7 +25,7 @@ const DualTrackPlanner = () => {
     const currentPlan = plan === 'rescue' ? rescuePlan : masteryPlan;
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Study Plan Breakdown</h4>
              <div className="flex justify-center gap-2 p-1 bg-zinc-100 dark:bg-zinc-800 rounded-full my-6 max-w-sm mx-auto">
                 <button onClick={() => setPlan('rescue')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${plan === 'rescue' ? 'bg-white shadow' : ''}`}>Rescue Plan (Pass)</button>
@@ -70,7 +70,7 @@ const OralBlueprintSliders = () => {
     const grade = getGrade(totalScore);
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Oral Exam Blueprint</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Adjust each quadrant to see how the weighted marking scheme affects your grade.</p>
             <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-8">Structure + Communication = 60% of marks. Focus there.</p>
@@ -101,7 +101,7 @@ const OralBlueprintSliders = () => {
                             </div>
                             <input type="range" min="0" max="100" value={value}
                                 onChange={e => setQ({ ...q, [s.key]: parseInt(e.target.value) })}
-                                className="w-full accent-sky-500" />
+                                className="chunky-slider chunky-slider-teal" />
                         </div>
                     );
                 })}
@@ -155,12 +155,18 @@ const ParagraphSorter = () => {
     const isCorrect = items.every((item, i) => item.id === correctOrder[i]);
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Paragraph Builder</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Drag these into the right order to build a top-scoring essay paragraph.</p>
             <Reorder.Group axis="y" values={items} onReorder={setItems} className="space-y-2 max-w-sm mx-auto">
                 {items.map(item => (
-                    <Reorder.Item key={item.id} value={item} className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-center font-bold text-zinc-700 dark:text-zinc-200 cursor-grab active:cursor-grabbing">
+                    <Reorder.Item
+                        key={item.id}
+                        value={item}
+                        className="p-4 text-center font-bold text-zinc-700 dark:text-zinc-200 cursor-grab active:cursor-grabbing"
+                        style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 16, boxShadow: '4px 4px 0px 0px #1C1917' }}
+                        whileDrag={{ scale: 1.03, y: -2, boxShadow: '6px 6px 0px 0px #1C1917' }}
+                    >
                         {item.text}
                     </Reorder.Item>
                 ))}

@@ -9,7 +9,7 @@ import { MotionDiv } from './Motion';
 import { Users, Brain, MessageSquare, Lightbulb, Flag } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { limeTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = limeTheme;
@@ -137,7 +137,7 @@ const TeachVsTestComparison = () => {
   );
 
   return (
-    <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Teach vs. Test Effect</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Same material. Different expectation. Dramatically different outcomes.</p>
 
@@ -217,107 +217,150 @@ const ExplainItBackChallenge = () => {
     setSubmitted(false);
   };
 
-  return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Explain It Back Challenge</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-6">Read the concept below, then explain it in your own words. No copying allowed.</p>
+  const isGood = analysis.jargonWords.length <= 2 && analysis.simplicityScore >= 60;
+  const isMid = !isGood && analysis.jargonWords.length <= 5;
 
-      <div className="p-5 bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-700 mb-6">
-        <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-2">Original Concept</p>
-        <p className="text-sm text-zinc-700 dark:text-zinc-200 leading-relaxed font-serif">{ORIGINAL_CONCEPT}</p>
+  return (
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+      {/* Section header */}
+      <div className="text-center mb-8">
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Feynman Technique</span>
+        <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Explain It Back Challenge</h4>
+        <p className="mt-1" style={{ fontSize: 15, color: '#7a7068' }}>Explain this definition in simple terms — as if to a 12-year-old.</p>
+      </div>
+
+      {/* Zone 1 — Definition card */}
+      <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '20px 24px' }}>
+        <div className="flex items-center justify-between mb-3">
+          <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#f0ece6', color: '#9e9186', border: '1px solid #d0cdc8', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>The Definition</span>
+          <span style={{ fontSize: 11, fontWeight: 600, backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '3px 10px' }}>Biology</span>
+        </div>
+        <p className="font-serif" style={{ fontSize: 16, color: '#1a1a1a', lineHeight: 1.7 }}>{ORIGINAL_CONCEPT}</p>
       </div>
 
       {!submitted ? (
         <>
-          <textarea
-            value={userText}
-            onChange={(e) => setUserText(e.target.value)}
-            placeholder="Now explain this concept in your own words, as if teaching a friend who has never heard of it..."
-            className="w-full h-36 p-4 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-900/50 text-sm text-zinc-700 dark:text-zinc-200 placeholder:text-zinc-400 resize-none focus:outline-none focus:ring-2 focus:ring-lime-400/50 transition-all"
-          />
+          {/* Connector */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12, margin: '16px 0' }}>
+            <div style={{ flex: 1, height: 1, background: '#e0dbd4' }} />
+            <div style={{ background: '#e8f5f2', border: '1.5px solid rgba(42,125,111,0.3)', borderRadius: 20, padding: '6px 14px', flexShrink: 0 }}>
+              <span style={{ fontSize: 12, fontWeight: 700, color: '#1a6358', letterSpacing: '0.05em' }}>NOW EXPLAIN IT</span>
+            </div>
+            <div style={{ flex: 1, height: 1, background: '#e0dbd4' }} />
+          </div>
 
-          {/* Live analysis */}
-          {userText.trim().length > 0 && (
-            <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="mt-4 grid grid-cols-3 gap-3">
-              <div className="text-center p-3 rounded-xl bg-zinc-100 dark:bg-zinc-700/50 border border-zinc-200 dark:border-zinc-600">
-                <p className="text-lg font-bold text-zinc-700 dark:text-zinc-200">{analysis.wordCount}</p>
-                <p className="text-xs text-zinc-500 dark:text-zinc-400">Words</p>
-              </div>
-              <div className={`text-center p-3 rounded-xl border ${analysis.jargonWords.length > 5 ? 'bg-amber-50 dark:bg-amber-900/20 border-amber-200 dark:border-amber-800' : 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800'}`}>
-                <p className={`text-lg font-bold ${analysis.jargonWords.length > 5 ? 'text-amber-700 dark:text-amber-300' : 'text-emerald-700 dark:text-emerald-300'}`}>{analysis.jargonWords.length}</p>
-                <p className="text-xs text-zinc-500 dark:text-zinc-400">Borrowed Words</p>
-              </div>
-              <div className={`text-center p-3 rounded-xl border ${analysis.simplicityScore >= 60 ? 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800' : 'bg-amber-50 dark:bg-amber-900/20 border-amber-200 dark:border-amber-800'}`}>
-                <p className={`text-lg font-bold ${analysis.simplicityScore >= 60 ? 'text-emerald-700 dark:text-emerald-300' : 'text-amber-700 dark:text-amber-300'}`}>{analysis.simplicityScore}%</p>
-                <p className="text-xs text-zinc-500 dark:text-zinc-400">Simplicity</p>
-              </div>
-            </MotionDiv>
-          )}
+          {/* Zone 2 — Response */}
+          <div style={{ backgroundColor: '#f0faf8', border: '2px solid #2A7D6F', borderRadius: 14, padding: '18px 20px' }}>
+            <div className="flex items-center justify-between mb-3">
+              <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#d0ede8', color: '#1a6358', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Your Explanation</span>
+              <span style={{ fontSize: 11, color: '#9e9186' }}>Aim for 2–3 sentences</span>
+            </div>
+            <textarea
+              value={userText}
+              onChange={(e) => setUserText(e.target.value)}
+              placeholder="Imagine you're explaining this to a younger sibling..."
+              className="w-full outline-none font-serif"
+              style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '14px 16px', fontSize: 15, color: '#1a1a1a', lineHeight: 1.6, minHeight: 120, resize: 'none' as const }}
+              onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }}
+              onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }}
+            />
 
-          {analysis.jargonWords.length > 0 && (
-            <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-3 p-3 rounded-lg bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800">
-              <p className="text-xs font-semibold text-amber-700 dark:text-amber-300 mb-1">Words borrowed from the original:</p>
-              <div className="flex flex-wrap gap-1.5">
-                {analysis.jargonWords.map((w, i) => (
-                  <span key={i} className="px-2 py-0.5 text-xs font-medium bg-amber-200 dark:bg-amber-800/50 text-amber-800 dark:text-amber-200 rounded-full">{w}</span>
-                ))}
-              </div>
-            </MotionDiv>
-          )}
+            {/* Live stats */}
+            {userText.trim().length > 0 && (
+              <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="mt-3 grid grid-cols-3 gap-2">
+                <div className="text-center p-2 bg-white rounded-lg" style={{ border: '1.5px solid #d0cdc8' }}>
+                  <p className="font-serif font-bold" style={{ fontSize: 18, color: '#1a1a1a' }}>{analysis.wordCount}</p>
+                  <p style={{ fontSize: 10, color: '#9e9186' }}>Words</p>
+                </div>
+                <div className="text-center p-2 bg-white rounded-lg" style={{ border: `1.5px solid ${analysis.jargonWords.length > 5 ? '#E85D75' : '#2A7D6F'}` }}>
+                  <p className="font-serif font-bold" style={{ fontSize: 18, color: analysis.jargonWords.length > 5 ? '#E85D75' : '#2A7D6F' }}>{analysis.jargonWords.length}</p>
+                  <p style={{ fontSize: 10, color: '#9e9186' }}>Borrowed</p>
+                </div>
+                <div className="text-center p-2 bg-white rounded-lg" style={{ border: `1.5px solid ${analysis.simplicityScore >= 60 ? '#2A7D6F' : '#9e9186'}` }}>
+                  <p className="font-serif font-bold" style={{ fontSize: 18, color: analysis.simplicityScore >= 60 ? '#2A7D6F' : '#9e9186' }}>{analysis.simplicityScore}%</p>
+                  <p style={{ fontSize: 10, color: '#9e9186' }}>Simplicity</p>
+                </div>
+              </MotionDiv>
+            )}
 
-          <div className="mt-6 text-center">
-            <button
-              onClick={handleSubmit}
-              disabled={userText.trim().length <= 10}
-              className="px-6 py-3 bg-lime-500 hover:bg-lime-600 disabled:bg-zinc-300 dark:disabled:bg-zinc-600 text-white font-bold rounded-xl transition-colors text-sm disabled:cursor-not-allowed"
-            >
-              Submit My Explanation
-            </button>
+            {analysis.jargonWords.length > 0 && (
+              <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-3">
+                <p style={{ fontSize: 11, fontWeight: 600, color: '#9e9186', marginBottom: 6 }}>Words borrowed from original:</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {analysis.jargonWords.map((w, i) => (
+                    <span key={i} style={{ fontSize: 11, fontWeight: 500, backgroundColor: '#f0ece6', color: '#7a7068', border: '1px solid #d0cdc8', borderRadius: 20, padding: '2px 8px' }}>{w}</span>
+                  ))}
+                </div>
+              </MotionDiv>
+            )}
+
+            <div className="mt-4">
+              <motion.button
+                onClick={handleSubmit}
+                disabled={userText.trim().length <= 10}
+                whileTap={{ y: 3 }}
+                className="text-white font-semibold"
+                style={{ backgroundColor: userText.trim().length > 10 ? '#2A7D6F' : '#d0cdc8', borderRadius: 100, padding: '13px 32px', fontSize: 15, borderBottom: userText.trim().length > 10 ? '3px solid #1a5a4e' : 'none', boxShadow: userText.trim().length > 10 ? '0 4px 0 #1a5a4e' : 'none', cursor: userText.trim().length > 10 ? 'pointer' : 'not-allowed', opacity: userText.trim().length > 10 ? 1 : 0.5 }}
+              >
+                Submit Explanation
+              </motion.button>
+            </div>
           </div>
         </>
       ) : (
-        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}>
-          <div className="grid md:grid-cols-2 gap-4 mb-6">
-            <div className="p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-700">
-              <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-2">Original</p>
-              <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">{ORIGINAL_CONCEPT}</p>
+        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="mt-6">
+          {/* Side by side comparison */}
+          <div className="grid md:grid-cols-2 gap-3 mb-6">
+            <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '16px 20px' }}>
+              <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', color: '#9e9186', textTransform: 'uppercase' as const }}>Original</span>
+              <p className="font-serif mt-2" style={{ fontSize: 14, color: '#5a5550', lineHeight: 1.6 }}>{ORIGINAL_CONCEPT}</p>
             </div>
-            <div className="p-4 rounded-xl bg-lime-50 dark:bg-lime-900/20 border border-lime-200 dark:border-lime-800">
-              <p className="text-xs font-semibold uppercase tracking-wider text-lime-600 dark:text-lime-400 mb-2">Your Explanation</p>
-              <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">{userText}</p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-3 gap-3 mb-6">
-            <div className="text-center p-3 rounded-xl bg-zinc-100 dark:bg-zinc-700/50 border border-zinc-200 dark:border-zinc-600">
-              <p className="text-lg font-bold text-zinc-700 dark:text-zinc-200">{analysis.wordCount}</p>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400">Words Used</p>
-            </div>
-            <div className={`text-center p-3 rounded-xl border ${analysis.jargonWords.length > 5 ? 'bg-rose-50 dark:bg-rose-900/20 border-rose-200 dark:border-rose-800' : analysis.jargonWords.length > 2 ? 'bg-amber-50 dark:bg-amber-900/20 border-amber-200 dark:border-amber-800' : 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800'}`}>
-              <p className={`text-lg font-bold ${analysis.jargonWords.length > 5 ? 'text-rose-700 dark:text-rose-300' : analysis.jargonWords.length > 2 ? 'text-amber-700 dark:text-amber-300' : 'text-emerald-700 dark:text-emerald-300'}`}>{analysis.jargonWords.length}</p>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400">Borrowed Words</p>
-            </div>
-            <div className={`text-center p-3 rounded-xl border ${analysis.simplicityScore >= 60 ? 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800' : 'bg-amber-50 dark:bg-amber-900/20 border-amber-200 dark:border-amber-800'}`}>
-              <p className={`text-lg font-bold ${analysis.simplicityScore >= 60 ? 'text-emerald-700 dark:text-emerald-300' : 'text-amber-700 dark:text-amber-300'}`}>{analysis.simplicityScore}%</p>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400">Simplicity Score</p>
+            <div style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '16px 20px' }}>
+              <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', color: '#1a6358', textTransform: 'uppercase' as const }}>Your Explanation</span>
+              <p className="font-serif mt-2" style={{ fontSize: 14, color: '#1a1a1a', lineHeight: 1.6 }}>{userText}</p>
             </div>
           </div>
 
-          <MotionDiv
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            className={`p-4 rounded-xl text-sm font-medium ${analysis.jargonWords.length <= 2 && analysis.simplicityScore >= 60 ? 'bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800' : analysis.jargonWords.length <= 5 ? 'bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800' : 'bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800'}`}
-          >
-            {analysis.jargonWords.length <= 2 && analysis.simplicityScore >= 60
-              ? 'Nice one! You properly rebuilt that in your own words. That\'s exactly the kind of explaining that makes things stick in your head long-term.'
-              : analysis.jargonWords.length <= 5
-              ? 'Good effort, but some of your phrasing is pretty close to the original. Try pushing further — can you explain it using a totally different comparison or example? That\'s the jump from repeating to really understanding.'
-              : 'This reads like you\'re echoing the original rather than rebuilding it in your own words. Try closing the original, and explain it as if to a younger sibling. Use everyday examples and comparisons.'}
+          {/* Stats row */}
+          <div className="grid grid-cols-3 gap-2 mb-6">
+            <div className="text-center p-3 bg-white rounded-xl" style={{ border: '2px solid #1a1a1a' }}>
+              <p className="font-serif font-bold" style={{ fontSize: 22, color: '#1a1a1a' }}>{analysis.wordCount}</p>
+              <p style={{ fontSize: 10, color: '#9e9186' }}>Words</p>
+            </div>
+            <div className="text-center p-3 bg-white rounded-xl" style={{ border: `2px solid ${analysis.jargonWords.length > 5 ? '#E85D75' : analysis.jargonWords.length > 2 ? '#9e9186' : '#2A7D6F'}` }}>
+              <p className="font-serif font-bold" style={{ fontSize: 22, color: analysis.jargonWords.length > 5 ? '#E85D75' : analysis.jargonWords.length > 2 ? '#9e9186' : '#2A7D6F' }}>{analysis.jargonWords.length}</p>
+              <p style={{ fontSize: 10, color: '#9e9186' }}>Borrowed</p>
+            </div>
+            <div className="text-center p-3 bg-white rounded-xl" style={{ border: `2px solid ${analysis.simplicityScore >= 60 ? '#2A7D6F' : '#9e9186'}` }}>
+              <p className="font-serif font-bold" style={{ fontSize: 22, color: analysis.simplicityScore >= 60 ? '#2A7D6F' : '#9e9186' }}>{analysis.simplicityScore}%</p>
+              <p style={{ fontSize: 10, color: '#9e9186' }}>Simplicity</p>
+            </div>
+          </div>
+
+          {/* Feedback */}
+          <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
+            {isGood ? (
+              <div style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '20px 22px' }}>
+                <div className="flex items-center gap-3 mb-2">
+                  <div style={{ width: 36, height: 36, borderRadius: '50%', backgroundColor: '#2A7D6F', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontSize: 18, color: 'white' }}>✓</div>
+                  <p className="font-serif font-semibold" style={{ fontSize: 18, color: '#1a6358' }}>Explanation approved.</p>
+                </div>
+                <p style={{ fontSize: 14, color: '#2A7D6F' }}>Nice one! You properly rebuilt that in your own words. That's exactly the kind of explaining that makes things stick long-term.</p>
+              </div>
+            ) : (
+              <div style={{ borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 14px 14px 0', padding: '16px 20px' }}>
+                <p className="italic" style={{ fontSize: 14, color: '#5a5550' }}>
+                  {isMid
+                    ? "Good effort, but some of your phrasing is pretty close to the original. Try pushing further — can you explain it using a totally different comparison or example?"
+                    : "This reads like you're echoing the original rather than rebuilding it. Try closing the original, and explain it as if to a younger sibling. Use everyday examples."}
+                </p>
+              </div>
+            )}
           </MotionDiv>
 
           <div className="mt-6 text-center">
-            <button onClick={handleReset} className="px-5 py-2.5 bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-600 text-zinc-700 dark:text-zinc-200 font-semibold rounded-xl transition-colors text-sm">
-              Try Again
+            <button onClick={handleReset} className="font-medium transition-colors" style={{ fontSize: 13, color: '#2A7D6F', background: 'none', border: 'none', cursor: 'pointer' }}>
+              Try again
             </button>
           </div>
         </MotionDiv>
@@ -369,7 +412,14 @@ const TheTeachingEffectModule: React.FC<{ onBack: () => void; progress: ModulePr
           {activeSection === 2 && (
             <ReadingSection title="You Don't Need an Audience." eyebrow="Step 3" icon={MessageSquare} theme={theme}>
               <p>You might be thinking: "Grand, but I don't have someone to teach." Here's the good news — you don't need another person. <Highlight description="In one study, physics students who paused after each worked example to explain to themselves why each step was taken solved 82% of new problems. Students who just read through the examples? Only 46%. No audience needed — just the act of stopping and explaining it to yourself made a massive difference." theme={theme}>In one study with physics students</Highlight>, those who paused after each worked example to explain to themselves why each step was taken solved 82% of new problems on a test. The students who just read through the examples? Only 46%.</p>
-              <p><Highlight description="Explaining things to yourself means pausing while you're studying to put what you just learned into your own words. It works almost as well as explaining to another person because the hard work is the same — you have to pull the information together and make sense of it. Who's listening doesn't really matter; it's the thinking that counts." theme={theme}>Explaining to yourself</Highlight> — pausing after each concept to put it in your own words — works almost as well as explaining to another person. Here's why it's so powerful. First, you make more connections between new stuff and things you already know. Second, you catch your own misunderstandings in real-time — trying to explain something exposes gaps that just re-reading never would. Third, and this is the best bit, <Highlight description="This technique helps the most if you're someone who's struggling with the material. It narrows the gap between students who find things easy and students who find things hard. So if you feel behind or confused, this is especially for you." theme={theme}>it helps the most if you're struggling</Highlight>. It narrows the gap between students who find things easy and students who find things hard.</p>
+              <p><Highlight description="Explaining things to yourself means pausing while you're studying to put what you just learned into your own words. It works almost as well as explaining to another person because the hard work is the same — you have to pull the information together and make sense of it. Who's listening doesn't really matter; it's the thinking that counts." theme={theme}>Explaining to yourself</Highlight> — pausing after each concept to put it in your own words — works almost as well as explaining to another person. Here's why it's so powerful.</p>
+              <ConceptCardGrid
+                cards={[
+                  { number: 1, term: "More Connections", description: "You make more connections between new stuff and things you already know." },
+                  { number: 2, term: "Catch Misunderstandings", description: "You catch your own misunderstandings in real-time — trying to explain something exposes gaps that just re-reading never would." },
+                  { number: 3, term: "Helps Most If You're Struggling", description: "It narrows the gap between students who find things easy and students who find things hard. So if you feel behind or confused, this is especially for you." },
+                ]}
+              />
               <p>This is a proper equaliser. If you're struggling with a topic, your instinct is probably to re-read it more slowly. But that's the wrong move. Stop reading and start explaining — even if it's just to yourself. Even if your explanation is messy and full of gaps, the process of trying to put it into words is doing the heavy lifting that re-reading never will.</p>
               <ExplainItBackChallenge />
             </ReadingSection>

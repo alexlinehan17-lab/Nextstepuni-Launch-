@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { grayTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = grayTheme;
@@ -28,17 +28,17 @@ const PartialCreditCalculator = () => {
     else if(steps.formula) marks = 5;
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Partial Credit Calculator</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Scenario: 10-mark Scale D Question. How many marks do you get?</p>
              <div className="grid grid-cols-2 gap-3">
-                <button onClick={() => setSteps(s => ({...s, formula: !s.formula}))} className={`p-4 rounded-xl border ${steps.formula ? 'bg-emerald-50' : ''}`}>Wrote correct formula</button>
-                <button onClick={() => setSteps(s => ({...s, sub: !s.sub}))} className={`p-4 rounded-xl border ${steps.sub ? 'bg-emerald-50' : ''}`}>Substituted a value</button>
-                <button onClick={() => setSteps(s => ({...s, slip: !s.slip, blunder: false}))} className={`p-4 rounded-xl border ${steps.slip ? 'bg-amber-50' : ''}`}>Made a minor calculation 'Slip'</button>
-                <button onClick={() => setSteps(s => ({...s, blunder: !s.blunder, slip: false}))} className={`p-4 rounded-xl border ${steps.blunder ? 'bg-rose-50' : ''}`}>Made a major concept 'Blunder'</button>
+                <button onClick={() => setSteps(s => ({...s, formula: !s.formula}))} className="p-4 font-medium text-sm transition-all" style={steps.formula ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Wrote correct formula</button>
+                <button onClick={() => setSteps(s => ({...s, sub: !s.sub}))} className="p-4 font-medium text-sm transition-all" style={steps.sub ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Substituted a value</button>
+                <button onClick={() => setSteps(s => ({...s, slip: !s.slip, blunder: false}))} className="p-4 font-medium text-sm transition-all" style={steps.slip ? { backgroundColor: '#FDE68A', border: '2.5px solid #D97706', borderRadius: 14, boxShadow: '3px 3px 0px 0px #D97706', color: '#78350F' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Made a minor calculation 'Slip'</button>
+                <button onClick={() => setSteps(s => ({...s, blunder: !s.blunder, slip: false}))} className="p-4 font-medium text-sm transition-all" style={steps.blunder ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Made a major concept 'Blunder'</button>
              </div>
-             <div className="mt-8 p-4 bg-zinc-900 rounded-xl text-center text-white">
-                You get <span className="font-bold text-2xl text-gray-400">{marks}/10</span> marks.
+             <div className="mt-8 p-4 rounded-xl text-center" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' }}>
+                You get <span className="font-bold text-2xl">{marks}/10</span> marks.
             </div>
         </div>
     );
@@ -56,15 +56,15 @@ const ProblemSorter = () => {
     };
 
     return(
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Problem Sorter</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Train your discriminative skills: Is it a Permutation (order matters) or a Combination (order doesn't)?</p>
             {problems.map(p => (
                 <div key={p.id} className="mb-4">
-                    <p className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-center font-bold">{p.text}</p>
+                    <p className="p-4 rounded-xl text-center font-bold text-sm" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4', color: '#1C1917' }}>{p.text}</p>
                     <div className="grid grid-cols-2 gap-2 mt-2">
-                        <button onClick={() => handleChoice(p.id, 'p')} className={`p-2 rounded-lg border ${choice[p.id] && (choice[p.id] === 'p' && p.type === 'p' ? 'bg-emerald-100 border-emerald-300' : choice[p.id] === 'p' ? 'bg-rose-100 border-rose-300' : 'bg-zinc-100 border-zinc-200 dark:border-zinc-700')}`}>Permutation</button>
-                        <button onClick={() => handleChoice(p.id, 'c')} className={`p-2 rounded-lg border ${choice[p.id] && (choice[p.id] === 'c' && p.type === 'c' ? 'bg-emerald-100 border-emerald-300' : choice[p.id] === 'c' ? 'bg-rose-100 border-rose-300' : 'bg-zinc-100 border-zinc-200 dark:border-zinc-700')}`}>Combination</button>
+                        <button onClick={() => handleChoice(p.id, 'p')} className="p-2 font-medium text-sm transition-all" style={choice[p.id] ? (choice[p.id] === 'p' && p.type === 'p' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : choice[p.id] === 'p' ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }) : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Permutation</button>
+                        <button onClick={() => handleChoice(p.id, 'c')} className="p-2 font-medium text-sm transition-all" style={choice[p.id] ? (choice[p.id] === 'c' && p.type === 'c' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : choice[p.id] === 'c' ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }) : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Combination</button>
                     </div>
                 </div>
             ))}
@@ -169,7 +169,7 @@ const PaperPredictorGame = () => {
   };
 
   return (
-    <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Paper Predictor</h4>
 
       {phase === 'intro' && (
@@ -180,7 +180,8 @@ const PaperPredictorGame = () => {
           <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">Can you sort 12 question stems as fast as possible?</p>
           <button
             onClick={startGame}
-            className="px-8 py-3 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-semibold text-sm hover:opacity-90 transition-opacity"
+            className="px-8 py-3 font-semibold text-sm transition-all"
+            style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
           >
             Start Game
           </button>
@@ -237,14 +238,16 @@ const PaperPredictorGame = () => {
             <button
               onClick={() => handleAnswer('paper1')}
               disabled={feedback !== null}
-              className="p-4 rounded-xl border-2 border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-semibold text-base hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="p-4 font-semibold text-base transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
             >
               Paper 1
             </button>
             <button
               onClick={() => handleAnswer('paper2')}
               disabled={feedback !== null}
-              className="p-4 rounded-xl border-2 border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 font-semibold text-base hover:bg-amber-100 dark:hover:bg-amber-900/50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="p-4 font-semibold text-base transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
             >
               Paper 2
             </button>
@@ -281,7 +284,8 @@ const PaperPredictorGame = () => {
 
           <button
             onClick={startGame}
-            className="px-8 py-3 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-semibold text-sm hover:opacity-90 transition-opacity"
+            className="px-8 py-3 font-semibold text-sm transition-all"
+            style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
           >
             Play Again
           </button>
@@ -296,15 +300,15 @@ const ErrorLog = () => {
     const [type, setType] = useState<string | null>(null);
 
     return(
-         <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+         <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">My Error Log</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Log a mistake from a practice question to turn it into a learning opportunity.</p>
              <div className="space-y-4">
-                <textarea value={error} onChange={e => setError(e.target.value)} placeholder="Describe the mistake..." className="w-full h-24 p-4 bg-zinc-50 dark:bg-zinc-800/50 border rounded-xl focus:outline-none focus:border-gray-400"></textarea>
+                <textarea value={error} onChange={e => setError(e.target.value)} placeholder="Describe the mistake..." className="w-full h-24 bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all" style={{ border: '1.5px solid #E7E5E4' }}></textarea>
                 <div className="grid grid-cols-3 gap-2">
-                    <button onClick={() => setType('Concept')} className={`p-2 text-xs rounded-lg border ${type === 'Concept' ? 'bg-gray-800 text-white' : 'bg-zinc-100'}`}>Concept Error</button>
-                    <button onClick={() => setType('Procedural')} className={`p-2 text-xs rounded-lg border ${type === 'Procedural' ? 'bg-gray-800 text-white' : 'bg-zinc-100'}`}>Procedural Error</button>
-                    <button onClick={() => setType('Reading')} className={`p-2 text-xs rounded-lg border ${type === 'Reading' ? 'bg-gray-800 text-white' : 'bg-zinc-100'}`}>Reading Error</button>
+                    <button onClick={() => setType('Concept')} className="p-2 text-xs font-bold transition-all" style={type === 'Concept' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Concept Error</button>
+                    <button onClick={() => setType('Procedural')} className="p-2 text-xs font-bold transition-all" style={type === 'Procedural' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Procedural Error</button>
+                    <button onClick={() => setType('Reading')} className="p-2 text-xs font-bold transition-all" style={type === 'Reading' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Reading Error</button>
                 </div>
              </div>
              {error && type && <p className="text-center mt-4 text-sm font-bold text-emerald-600">Error logged. Now you won't make it again.</p>}
@@ -360,7 +364,17 @@ const LearningMathModule: React.FC<{ onBack: () => void; progress: ModuleProgres
           {activeSection === 2 && (
             <ReadingSection title="The Five Strands." eyebrow="Step 3" icon={SlidersHorizontal} theme={theme}>
               <p>The course is divided into five big areas. Here's the thing -- they're all connected. The exam deliberately mixes them together, so a question might use <Highlight description="Questions often blend topics together. You might need Algebra to solve a Geometry problem, or Probability inside a Calculus question." theme={theme}>Algebra to solve a Geometry problem</Highlight>. You can't just study one topic on its own and hope for the best.</p>
-              <p>The five areas are: 1) <strong>Statistics & Probability</strong> (lots of reading and interpreting), 2) <strong>Geometry & Trigonometry</strong> (visual, diagrams everywhere), 3) <strong>Number</strong> (the basics, including Complex Numbers), 4) <strong>Algebra</strong> (it's the language that runs through everything), and 5) <strong>Functions & Calculus</strong> (the biggest chunk of Paper 1).</p>
+              <p>The five areas are:</p>
+              <ConceptCardGrid
+                columns={2}
+                cards={[
+                  { number: 1, term: "Statistics & Probability", description: "Lots of reading and interpreting." },
+                  { number: 2, term: "Geometry & Trigonometry", description: "Visual, diagrams everywhere." },
+                  { number: 3, term: "Number", description: "The basics, including Complex Numbers." },
+                  { number: 4, term: "Algebra", description: "It's the language that runs through everything." },
+                  { number: 5, term: "Functions & Calculus", description: "The biggest chunk of Paper 1." },
+                ]}
+              />
             </ReadingSection>
           )}
           {activeSection === 3 && (

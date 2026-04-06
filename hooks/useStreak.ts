@@ -52,7 +52,7 @@ export function useStreak(uid?: string) {
           setStreak(DEFAULT_STREAK);
         }
       } catch (err) {
-        console.error('Failed to load streak:', err);
+        console.error('Failed to load streak:');
       }
       if (!cancelled) setIsLoaded(true);
     };

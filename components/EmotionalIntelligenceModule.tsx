@@ -140,7 +140,7 @@ const StressResponseComparison = () => {
     );
 
     return (
-        <div className="my-10 p-6 md:p-10 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Neural Tug of War</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">As stress rises, your thinking brain loses the battle.</p>
 
@@ -184,123 +184,120 @@ const PFCShutdownSimulator = () => {
     ];
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">PFC Shutdown Simulator</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">See what happens when your Amygdala hijacks your brain under exam stress.</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+          <div className="text-center mb-8">
+            <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
+            <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>PFC Shutdown Simulator</h4>
+            <p className="text-sm mt-1" style={{ color: '#7a7068' }}>See what happens when your Amygdala hijacks your brain under exam stress.</p>
+          </div>
 
-             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-               {/* Amygdala panel */}
-               <div className={`p-5 rounded-xl border transition-all duration-500 ${
-                 stressed
-                   ? 'bg-rose-50 dark:bg-rose-950/30 border-rose-300 dark:border-rose-800'
-                   : 'bg-zinc-50 dark:bg-zinc-900/30 border-zinc-200 dark:border-zinc-700'
-               }`}>
-                 <div className="flex items-center gap-3 mb-3">
-                   <motion.div
-                     animate={stressed ? { scale: [1, 1.15, 1] } : { scale: 1 }}
-                     transition={stressed ? { duration: 1.2, repeat: Infinity } : {}}
-                     className={`w-10 h-10 rounded-full flex items-center justify-center ${
-                       stressed ? 'bg-rose-500 text-white' : 'bg-zinc-200 dark:bg-zinc-700 text-zinc-500'
-                     }`}
-                   >
-                     <Zap size={20} />
-                   </motion.div>
-                   <div>
-                     <p className="font-bold text-sm text-zinc-800 dark:text-white">Amygdala</p>
-                     <p className="text-[10px] text-zinc-400 dark:text-zinc-500">Threat Detection</p>
-                   </div>
-                 </div>
-                 <motion.div
-                   animate={{ width: stressed ? '100%' : '20%' }}
-                   transition={{ duration: 0.8, ease: 'easeOut' }}
-                   className={`h-2 rounded-full ${stressed ? 'bg-rose-500' : 'bg-zinc-300 dark:bg-zinc-600'}`}
-                 />
-                 <p className={`text-xs font-semibold mt-2 ${stressed ? 'text-rose-500' : 'text-zinc-400'}`}>
-                   {stressed ? 'ACTIVE — Flooding cortisol' : 'Standby'}
-                 </p>
-               </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            {/* Amygdala card */}
+            <div className="bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #E85D75', borderRadius: 14, padding: '20px 16px' }}>
+              <motion.div
+                animate={stressed ? { scale: [1, 1.1, 1] } : { scale: 1 }}
+                transition={stressed ? { duration: 1.2, repeat: Infinity } : {}}
+                style={{ width: 52, height: 52, borderRadius: '50%', background: '#fde4e4', border: '2px solid rgba(232,93,117,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px' }}
+              >
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#E85D75" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+                  <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+                </svg>
+              </motion.div>
+              <p className="font-serif font-bold" style={{ fontSize: 16, color: '#1a1a1a' }}>Amygdala</p>
+              <p style={{ fontSize: 13, color: '#7a7068', marginBottom: 12 }}>Threat Response</p>
 
-               {/* PFC panel */}
-               <div className={`p-5 rounded-xl border transition-all duration-500 ${
-                 stressed
-                   ? 'bg-zinc-100 dark:bg-zinc-900/50 border-zinc-200 dark:border-zinc-800'
-                   : 'bg-blue-50 dark:bg-blue-950/20 border-blue-200 dark:border-blue-800/50'
-               }`}>
-                 <div className="flex items-center gap-3 mb-3">
-                   <motion.div
-                     animate={{ opacity: stressed ? 0.3 : 1 }}
-                     transition={{ duration: 0.5 }}
-                     className={`w-10 h-10 rounded-full flex items-center justify-center ${
-                       stressed ? 'bg-zinc-300 dark:bg-zinc-700 text-zinc-500' : 'bg-blue-500 text-white'
-                     }`}
-                   >
-                     <Brain size={20} />
-                   </motion.div>
-                   <div>
-                     <p className="font-bold text-sm text-zinc-800 dark:text-white">Prefrontal Cortex</p>
-                     <p className="text-[10px] text-zinc-400 dark:text-zinc-500">Command Centre</p>
-                   </div>
-                 </div>
-                 <div className="space-y-2">
-                   {capabilities.map((cap, i) => (
-                     <motion.div
-                       key={cap.label}
-                       animate={stressed
-                         ? { opacity: 0.3, x: 4 }
-                         : { opacity: 1, x: 0 }
-                       }
-                       transition={{ duration: 0.4, delay: stressed ? i * 0.3 : (2 - i) * 0.2 }}
-                       className="flex items-center justify-between"
-                     >
-                       <div>
-                         <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-300">{cap.label}</p>
-                         <p className="text-[10px] text-zinc-400 dark:text-zinc-500">{cap.desc}</p>
-                       </div>
-                       <motion.span
-                         animate={stressed
-                           ? { opacity: 1 }
-                           : { opacity: 1 }
-                         }
-                         transition={{ duration: 0.3, delay: stressed ? i * 0.3 : (2 - i) * 0.2 }}
-                         className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
-                           stressed
-                             ? 'bg-rose-100 dark:bg-rose-900/40 text-rose-600 dark:text-rose-400'
-                             : 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400'
-                         }`}
-                       >
-                         {stressed ? 'OFFLINE' : 'ONLINE'}
-                       </motion.span>
-                     </motion.div>
-                   ))}
-                 </div>
-               </div>
-             </div>
+              <div style={{ height: 6, borderRadius: 3, backgroundColor: '#fde4e4', overflow: 'hidden', marginBottom: 8 }}>
+                <motion.div animate={{ width: stressed ? '100%' : '20%' }} transition={{ duration: 0.8 }} style={{ height: '100%', backgroundColor: '#E85D75', borderRadius: 3 }} />
+              </div>
 
-             {/* Cortisol wave */}
-             {stressed && (
-               <motion.div
-                 initial={{ opacity: 0, y: 6 }}
-                 animate={{ opacity: 1, y: 0 }}
-                 className="p-3 mb-6 bg-rose-50 dark:bg-rose-950/20 border border-rose-200 dark:border-rose-800/50 rounded-xl text-center"
-               >
-                 <p className="text-xs text-rose-600 dark:text-rose-400 font-medium">
-                   Cortisol is blocking the connection between your PFC and your stored knowledge. Your memory isn't gone — the pathway is temporarily offline.
-                 </p>
-               </motion.div>
-             )}
+              <span className="inline-block text-[10px] font-bold uppercase" style={{
+                letterSpacing: '0.08em',
+                backgroundColor: stressed ? '#fde4e4' : '#e8f5f2',
+                color: stressed ? '#b33030' : '#1a6358',
+                border: stressed ? '1px solid rgba(232,93,117,0.3)' : '1px solid rgba(42,125,111,0.3)',
+                borderRadius: 20, padding: '3px 10px',
+              }}>
+                {stressed ? 'HIJACKING' : 'CALM'}
+              </span>
+            </div>
 
-             <div className="flex justify-center">
-               <button
-                 onClick={() => setStressed(!stressed)}
-                 className={`px-6 py-2.5 font-bold text-sm rounded-xl transition-all ${
-                   stressed
-                     ? 'bg-blue-500 text-white hover:bg-blue-600 shadow-lg shadow-blue-500/20'
-                     : 'bg-rose-500 text-white hover:bg-rose-600 shadow-lg shadow-rose-500/20'
-                 }`}
-               >
-                 {stressed ? 'De-escalate' : 'Trigger Stress Response'}
-               </button>
-             </div>
+            {/* PFC card */}
+            <div className="bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #2A7D6F', borderRadius: 14, padding: '20px 16px' }}>
+              <motion.div
+                animate={{ opacity: stressed ? 0.3 : 1 }}
+                transition={{ duration: 0.5 }}
+                style={{ width: 52, height: 52, borderRadius: '50%', background: '#e8f5f2', border: '2px solid rgba(42,125,111,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px' }}
+              >
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2A7D6F" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9.5 2C7 2 5 4 5 6.5c0 .8.2 1.5.5 2.1C4.2 9.3 3 10.8 3 12.5 3 15 5 17 7.5 17H9v3h6v-3h1.5C19 17 21 15 21 12.5c0-1.7-1.2-3.2-2.5-3.9.3-.6.5-1.3.5-2.1C19 4 17 2 14.5 2c-1.2 0-2.3.5-3 1.3C10.8 2.5 9.7 2 9.5 2z"/>
+                </svg>
+              </motion.div>
+              <p className="font-serif font-bold" style={{ fontSize: 16, color: '#1a1a1a' }}>Prefrontal Cortex</p>
+              <p style={{ fontSize: 13, color: '#7a7068', marginBottom: 12 }}>Rational Thinking</p>
+
+              <div className="space-y-2 text-left">
+                {capabilities.map((cap, i) => (
+                  <motion.div
+                    key={cap.label}
+                    animate={stressed ? { opacity: 0.3, x: 4 } : { opacity: 1, x: 0 }}
+                    transition={{ duration: 0.4, delay: stressed ? i * 0.3 : (2 - i) * 0.2 }}
+                    className="flex items-center justify-between"
+                  >
+                    <div>
+                      <p className="text-xs font-semibold" style={{ color: '#1a1a1a' }}>{cap.label}</p>
+                      <p style={{ fontSize: 10, color: '#9e9186' }}>{cap.desc}</p>
+                    </div>
+                    <span className="text-[10px] font-bold uppercase" style={{
+                      letterSpacing: '0.06em',
+                      backgroundColor: stressed ? '#f0ece6' : '#e8f5f2',
+                      color: stressed ? '#9e9186' : '#1a6358',
+                      border: stressed ? '1px solid #d0cdc8' : '1px solid rgba(42,125,111,0.3)',
+                      borderRadius: 20, padding: '2px 8px',
+                    }}>
+                      {stressed ? 'OFFLINE' : 'ONLINE'}
+                    </span>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Cortisol callout */}
+          <AnimatePresence>
+            {stressed && (
+              <motion.div
+                initial={{ opacity: 0, y: 6 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 6 }}
+                className="mb-6"
+                style={{ borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
+              >
+                <p className="text-sm italic" style={{ color: '#b33030' }}>
+                  Cortisol is blocking the connection between your PFC and your stored knowledge. Your memory isn't gone — the pathway is temporarily offline.
+                </p>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          {/* Toggle button */}
+          <div className="flex justify-center">
+            <button
+              onClick={() => setStressed(!stressed)}
+              style={{
+                backgroundColor: stressed ? '#2A7D6F' : '#E85D75',
+                color: '#FFFFFF',
+                border: stressed ? '2px solid #2A7D6F' : '2px solid #E85D75',
+                borderRadius: 20,
+                padding: '12px 24px',
+                fontSize: 14,
+                fontWeight: 600,
+                cursor: 'pointer',
+              }}
+            >
+              {stressed ? 'De-escalate' : 'Trigger Stress Response'}
+            </button>
+          </div>
         </div>
     );
 }
@@ -332,7 +329,7 @@ const ArousalReappraisal = () => {
         : { x: emotions.anxiety.x, y: emotions.anxiety.y };
 
     return (
-        <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Arousal Reappraisal</h4>
              <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Scenario: Your heart is racing before an exam. What do you do?</p>
              <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">The emotion map shows two dimensions: how activated you feel (arousal) and whether it feels good or bad (valence).</p>
@@ -436,25 +433,19 @@ const ArousalReappraisal = () => {
              <div className="grid grid-cols-2 gap-3 mb-4">
                <button
                  onClick={() => handleAttempt('calm')}
-                 className={`p-4 rounded-xl text-left text-sm font-medium transition-all border ${
-                   attempt === 'calm'
-                     ? 'bg-amber-50 dark:bg-amber-950/20 border-amber-300 dark:border-amber-800'
-                     : 'bg-zinc-50 dark:bg-zinc-900/30 border-zinc-200 dark:border-zinc-700 hover:border-zinc-300 dark:hover:border-zinc-600'
-                 }`}
+                 className="p-4 rounded-xl text-left text-sm font-medium transition-all"
+                 style={attempt === 'calm' ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}
                >
-                 <p className="font-bold text-zinc-800 dark:text-white">"Calm down."</p>
-                 <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Try to lower your arousal</p>
+                 <p className="font-bold">"Calm down."</p>
+                 <p className="text-xs mt-1 opacity-70">Try to lower your arousal</p>
                </button>
                <button
                  onClick={() => handleAttempt('reframe')}
-                 className={`p-4 rounded-xl text-left text-sm font-medium transition-all border ${
-                   attempt === 'reframe'
-                     ? 'bg-emerald-50 dark:bg-emerald-950/20 border-emerald-300 dark:border-emerald-800'
-                     : 'bg-zinc-50 dark:bg-zinc-900/30 border-zinc-200 dark:border-zinc-700 hover:border-zinc-300 dark:hover:border-zinc-600'
-                 }`}
+                 className="p-4 rounded-xl text-left text-sm font-medium transition-all"
+                 style={attempt === 'reframe' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}
                >
-                 <p className="font-bold text-zinc-800 dark:text-white">"I'm excited!"</p>
-                 <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Reframe the same arousal</p>
+                 <p className="font-bold">"I'm excited!"</p>
+                 <p className="text-xs mt-1 opacity-70">Reframe the same arousal</p>
                </button>
              </div>
 
@@ -550,7 +541,7 @@ const BoxBreathing = () => {
     const done = !active && cycle === 0 && phase === 0;
 
     return (
-     <div className="my-10 p-8 md:p-12 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700">
+     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
          <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Box Breathing</h4>
          <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Your emergency protocol for the exam hall. 4 seconds per phase, 3 cycles.</p>
 
@@ -678,7 +669,30 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
           {activeSection === 1 && (
             <ReadingSection title="What is Emotional Intelligence?" eyebrow="Step 2" icon={Brain} theme={theme}>
               <p><Highlight description="Being able to notice what you're feeling, understand why, and then do something useful about it instead of just reacting on autopilot." theme={theme}>Emotional Intelligence (EI)</Highlight> isn't about being "nice." It's a practical set of skills for noticing what's going on inside you and doing something useful about it. Having good EI doesn't mean you don't feel stress -- it means you can turn that stress into fuel (<Highlight description="The good kind of stress -- the buzz you get before a match or a performance that actually helps you do better. Same racing heart, but it's working for you, not against you." theme={theme}>eustress</Highlight>) instead of letting it wreck your performance.</p>
-              <p>For the Leaving Cert, we can break EI into three skills you can actually train: 1) <strong>Emotional Awareness:</strong> Spotting the physical signs of stress early. 2) <strong>Emotional Understanding:</strong> Putting the right name on what you're feeling. 3) <strong>Emotional Regulation:</strong> Using specific techniques to manage it.</p>
+              <p>For the Leaving Cert, we can break EI into three skills you can actually train:</p>
+              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Emotional Awareness</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>Spotting the physical signs of stress early.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Emotional Understanding</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Putting the right name on what you're feeling.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Emotional Regulation</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>Using specific techniques to manage it.</p>
+                  </div>
+                </div>
+              </div>
             </ReadingSection>
           )}
           {activeSection === 2 && (
@@ -710,7 +724,36 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
           {activeSection === 6 && (
             <ReadingSection title="Putting It All Together." eyebrow="Step 7" icon={ClipboardCheck} theme={theme}>
               <p>You now have a full toolkit -- techniques that use your mind and techniques that use your body. The final step is knowing when to use what.</p>
-              <p><strong>Months Before:</strong> Build your foundation. Practice daily Body Scans and learn Box Breathing while stress is low so it's automatic when you need it. <strong>Morning Of:</strong> Managing your energy is everything. Eat a proper breakfast, stay away from panicked friends at the school gate, and tell yourself "I'm excited" instead of "I'm terrified." <strong>In The Hall:</strong> If panic hits, use the "Paper Panic" drill: Stop, Breathe (3 cycles of Box Breathing), clench and release your toes, and re-engage with the easiest question on the paper. <strong>Post-Exam:</strong> Do not -- absolutely do not -- compare answers with friends afterwards. It only fuels anxiety for the next paper.</p>
+              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Months Before</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>Build your foundation. Practice daily Body Scans and learn Box Breathing while stress is low so it's automatic when you need it.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Morning Of</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Managing your energy is everything. Eat a proper breakfast, stay away from panicked friends at the school gate, and tell yourself "I'm excited" instead of "I'm terrified."</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>In The Hall</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>If panic hits, use the "Paper Panic" drill: Stop, Breathe (3 cycles of Box Breathing), clench and release your toes, and re-engage with the easiest question on the paper.</p>
+                  </div>
+                </div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 16, boxShadow: '4px 4px 0px 0px #059669' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#059669' }}>4</div>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: '#064E3B' }}>Post-Exam</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#064E3B', opacity: 0.8 }}>Do not -- absolutely do not -- compare answers with friends afterwards. It only fuels anxiety for the next paper.</p>
+                  </div>
+                </div>
+              </div>
               <MicroCommitment theme={theme}><p>Pick one technique from this module. Commit to practising it for 5 minutes every day for one week. This isn't just studying -- you're building a skill that kicks in automatically when you need it most.</p></MicroCommitment>
             </ReadingSection>
           )}
