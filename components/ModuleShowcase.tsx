@@ -113,7 +113,14 @@ export default function ModuleShowcase({
   userProgress,
   onSelectCourse,
 }: ModuleShowcaseProps) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(() => {
+    // Start on the first non-completed module
+    const firstIncomplete = courses.findIndex(c => {
+      const p = userProgress[c.id];
+      return !p || p.unlockedSection < c.sectionsCount;
+    });
+    return firstIncomplete === -1 ? 0 : firstIncomplete;
+  });
   const [direction, setDirection] = useState(0);
   const [sectionsExpanded, setSectionsExpanded] = useState(false);
 

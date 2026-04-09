@@ -298,26 +298,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
   return (
     <div className="fixed inset-0 flex flex-col z-[60] overflow-hidden">
 
-      {/* ─── Aurora mesh gradient background (Lovable-style, bolder) ─── */}
-      <div className="fixed inset-0 pointer-events-none" aria-hidden="true">
-        {/* Base warm cream — only top 15-20% */}
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, #FDF8F0 0%, #FDF8F0 12%, transparent 35%)' }} />
-        {/* Lavender/periwinkle wash — pushed up, covers 30-80% */}
-        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 140% 70% at 50% 55%, rgba(147,130,220,0.4) 0%, transparent 70%)' }} />
-        {/* Secondary lavender — upper mid */}
-        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 100% 50% at 40% 45%, rgba(160,145,230,0.25) 0%, transparent 65%)' }} />
-        {/* Strong pink/magenta bottom */}
-        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 120% 50% at 50% 95%, rgba(230,120,165,0.55) 0%, transparent 55%)' }} />
-        {/* Pink extending upward */}
-        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 80% 40% at 50% 80%, rgba(220,140,180,0.3) 0%, transparent 60%)' }} />
-        {/* Blue side washes — stronger */}
-        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 50% 60% at 0% 65%, rgba(130,155,230,0.3) 0%, transparent 65%)' }} />
-        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 50% 60% at 100% 65%, rgba(130,155,230,0.25) 0%, transparent 65%)' }} />
-        {/* Warm peach/coral accent bottom-right */}
-        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 50% 35% at 70% 90%, rgba(240,160,130,0.35) 0%, transparent 55%)' }} />
-        {/* Base fill behind everything — soft warm grey so gradient doesn't fade to white */}
-        <div className="absolute inset-0 bg-[#F0ECE6] dark:bg-zinc-900" style={{ zIndex: -1 }} />
-      </div>
+      {/* ─── Solid background — matches Library (module selection) screen ─── */}
+      <div className="fixed inset-0 pointer-events-none dark:bg-zinc-900" aria-hidden="true" style={{ backgroundColor: '#FDF8F0' }} />
 
       {/* ─── Fixed Header: Progress bar + Skip ─── */}
       <div className="shrink-0 relative z-10 px-6 pt-5 pb-3">
