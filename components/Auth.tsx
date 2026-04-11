@@ -220,13 +220,13 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
 
         registeredUser = { uid: createdUser.uid, name: createName.trim(), avatar: selectedAvatar, isAdmin: false };
         handleClose();
-    } catch {
+    } catch (err: any) {
         if (createdUser) {
           try { await deleteUser(createdUser); } catch {}
         }
-        if (error.code === 'auth/email-already-in-use') {
+        if (err.code === 'auth/email-already-in-use') {
             setError("This username is already taken.");
-        } else if (error.code === 'auth/weak-password') {
+        } else if (err.code === 'auth/weak-password') {
             setError("Password should be at least 6 characters.");
         } else {
             setError("Failed to create account. Please try again.");
