@@ -13,6 +13,42 @@ import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from './Auth';
 import { SCHOOLS } from '../schoolData';
 
+// ── Aurora gradient left panel (stable, never re-renders) ──
+const GradientPanel = () => (
+  <div className="hidden md:block w-1/2 relative overflow-hidden" style={{ borderRadius: '16px 0 0 16px' }}>
+    <div className="absolute inset-0" style={{ backgroundColor: '#EAE5DE' }} />
+    <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, #FDF8F0 0%, transparent 15%)' }} />
+    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 140% 70% at 50% 50%, rgba(140,120,210,0.5) 0%, transparent 65%)' }} />
+    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 100% 50% at 35% 40%, rgba(155,135,225,0.35) 0%, transparent 60%)' }} />
+    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 120% 55% at 50% 95%, rgba(225,110,160,0.65) 0%, transparent 50%)' }} />
+    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 90% 45% at 50% 75%, rgba(215,130,175,0.4) 0%, transparent 55%)' }} />
+    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 65% at 0% 60%, rgba(120,145,225,0.4) 0%, transparent 60%)' }} />
+    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 65% at 100% 60%, rgba(120,145,225,0.35) 0%, transparent 60%)' }} />
+    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 55% 40% at 65% 88%, rgba(240,150,120,0.4) 0%, transparent 50%)' }} />
+  </div>
+);
+
+// ── Card wrapper — split panel on desktop, full-width on mobile ──
+const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNode }> = ({ children, devButton }) => (
+  <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8" style={{ backgroundColor: '#FAFAF7' }}>
+    <MotionDiv
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+      className="w-full max-w-5xl bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden flex"
+      style={{ minHeight: 540, boxShadow: '0 2px 8px rgba(0,0,0,0.06), 0 12px 40px rgba(0,0,0,0.04)', border: '1.5px solid rgba(0,0,0,0.25)' }}
+    >
+      <GradientPanel />
+      <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-14 py-12">
+        <div className="w-full max-w-[380px] mx-auto">
+          {children}
+        </div>
+      </div>
+    </MotionDiv>
+    {devButton}
+  </div>
+);
+
 interface LoginPageProps {
   handleLoginSuccess: (u: SessionUser) => void;
 }
@@ -163,43 +199,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const primaryBtn = "w-full py-3.5 rounded-full text-white text-[15px] font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed";
   const primaryBtnStyle = { backgroundColor: '#2A7D6F', borderBottom: '3px solid #1a5a4e', boxShadow: '0 4px 0 #1a5a4e' };
 
-  // ── Aurora gradient left panel ──
-  const gradientPanel = (
-    <div className="hidden md:block w-1/2 relative overflow-hidden" style={{ borderRadius: '16px 0 0 16px' }}>
-      <div className="absolute inset-0" style={{ backgroundColor: '#EAE5DE' }} />
-      <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, #FDF8F0 0%, transparent 15%)' }} />
-      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 140% 70% at 50% 50%, rgba(140,120,210,0.5) 0%, transparent 65%)' }} />
-      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 100% 50% at 35% 40%, rgba(155,135,225,0.35) 0%, transparent 60%)' }} />
-      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 120% 55% at 50% 95%, rgba(225,110,160,0.65) 0%, transparent 50%)' }} />
-      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 90% 45% at 50% 75%, rgba(215,130,175,0.4) 0%, transparent 55%)' }} />
-      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 65% at 0% 60%, rgba(120,145,225,0.4) 0%, transparent 60%)' }} />
-      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 65% at 100% 60%, rgba(120,145,225,0.35) 0%, transparent 60%)' }} />
-      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 55% 40% at 65% 88%, rgba(240,150,120,0.4) 0%, transparent 50%)' }} />
-    </div>
-  );
-
-  // ── Card wrapper — split panel on desktop, full-width on mobile ──
-  const Card: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-    <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8" style={{ backgroundColor: '#FAFAF7' }}>
-      <MotionDiv
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: 'easeOut' }}
-        className="w-full max-w-5xl bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden flex"
-        style={{ minHeight: 540, boxShadow: '0 2px 8px rgba(0,0,0,0.06), 0 12px 40px rgba(0,0,0,0.04)', border: '1.5px solid rgba(0,0,0,0.25)' }}
-      >
-        {gradientPanel}
-        <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-14 py-12">
-          <div className="w-full max-w-[380px] mx-auto">
-            {children}
-          </div>
-        </div>
-      </MotionDiv>
-      {/* DEV button */}
-      <button onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })} className="mt-6 px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[9px] font-mono hover:bg-red-600/20 transition-colors">
-        DEV: Skip Login
-      </button>
-    </div>
+  // DEV button (passed to LoginCard so it's outside the animated container)
+  const devButton = (
+    <button onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })} className="mt-6 px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[9px] font-mono hover:bg-red-600/20 transition-colors">
+      DEV: Skip Login
+    </button>
   );
 
   // ═══════════════════════════════════════════════════════════
@@ -207,7 +211,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ═══════════════════════════════════════════════════════════
   if (view === 'welcome') {
     return (
-      <Card>
+      <LoginCard devButton={devButton}>
         <div className="text-center">
           <p className="text-[10px] font-bold uppercase tracking-[0.2em] mb-6" style={{ color: '#9e9186' }}>NEXTSTEPUNI</p>
           <h1 className="text-3xl md:text-4xl font-semibold tracking-tight mb-3" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
@@ -249,7 +253,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
             <GraduationCap size={16} /> Sign in as Guidance Counsellor
           </button>
         </div>
-      </Card>
+      </LoginCard>
     );
   }
 
@@ -258,7 +262,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ═══════════════════════════════════════════════════════════
   if (view === 'login') {
     return (
-      <Card>
+      <LoginCard devButton={devButton}>
         <button type="button" onClick={() => setView('welcome')} className="flex items-center gap-1.5 text-sm font-medium mb-6 transition-colors" style={{ color: '#9e9186' }}>
           <ArrowLeft size={14} /> Back
         </button>
@@ -289,7 +293,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         <p className="text-sm text-center mt-6" style={{ color: '#9e9186' }}>
           Don&apos;t have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('register'); }} className="font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Register</button>
         </p>
-      </Card>
+      </LoginCard>
     );
   }
 
@@ -298,7 +302,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ═══════════════════════════════════════════════════════════
   if (view === 'gc') {
     return (
-      <Card>
+      <LoginCard devButton={devButton}>
         <button type="button" onClick={() => setView('welcome')} className="flex items-center gap-1.5 text-sm font-medium mb-6 transition-colors" style={{ color: '#9e9186' }}>
           <ArrowLeft size={14} /> Back
         </button>
@@ -329,7 +333,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
             {isLoading ? 'Signing in...' : 'Sign In'}
           </MotionButton>
         </form>
-      </Card>
+      </LoginCard>
     );
   }
 
@@ -338,7 +342,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ═══════════════════════════════════════════════════════════
   if (view === 'forgot') {
     return (
-      <Card>
+      <LoginCard devButton={devButton}>
         <button type="button" onClick={() => { setView('login'); setError(''); setResetSent(false); }} className="flex items-center gap-1.5 text-sm font-medium mb-6 transition-colors" style={{ color: '#9e9186' }}>
           <ArrowLeft size={14} /> Back to sign in
         </button>
@@ -364,7 +368,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
             </MotionButton>
           </form>
         )}
-      </Card>
+      </LoginCard>
     );
   }
 
@@ -374,7 +378,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const selectedAvatar = avatar || defaultAvatar;
 
   return (
-    <Card>
+    <LoginCard devButton={devButton}>
       {/* Back + progress */}
       <div className="flex items-center justify-between mb-6">
         <button type="button" onClick={() => {
@@ -477,7 +481,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           </MotionDiv>
         )}
       </AnimatePresence>
-    </Card>
+    </LoginCard>
   );
 };
 
