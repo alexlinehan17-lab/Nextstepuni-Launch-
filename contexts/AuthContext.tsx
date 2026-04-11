@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
 import { auth, db } from '../firebase';
 import { onAuthStateChanged, signOut, User as FirebaseUser } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
@@ -29,6 +29,11 @@ interface AuthLoadedData {
 interface AuthContextValue {
   user: SessionUser | null;
   isLoadingAuth: boolean;
+  authResolved: boolean;
+  /** True once Firebase's persistence layer has been read and we have a definitive
+   *  auth state. Driven by auth.authStateReady() on initial load, then set immediately
+   *  on subsequent auth changes (login, logout). Gate LoginPage on this. */
+  userResolved: boolean;
   needsOnboarding: boolean;
   loadedData: AuthLoadedData;
   handleLoginSuccess: (user: SessionUser) => void;
@@ -52,6 +57,8 @@ const defaultLoadedData: AuthLoadedData = {
 const AuthContext = createContext<AuthContextValue>({
   user: null,
   isLoadingAuth: true,
+  authResolved: false,
+  userResolved: false,
   needsOnboarding: false,
   loadedData: defaultLoadedData,
   handleLoginSuccess: () => {},
@@ -65,9 +72,21 @@ export const useAuth = () => useContext(AuthContext);
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<SessionUser | null>(null);
   const [isLoadingAuth, setIsLoadingAuth] = useState(true);
+  const [authResolved, setAuthResolved] = useState(false);
+  const [userResolved, setUserResolved] = useState(false);
+  const authResolvedRef = useRef(false);
   const [loadedData, setLoadedData] = useState<AuthLoadedData>(defaultLoadedData);
 
-  // Auth listener
+  // Wait for Firebase persistence layer before allowing login/app decisions.
+  // auth.authStateReady() resolves once IndexedDB/token rehydration is complete,
+  // guaranteeing the first onAuthStateChanged callback has the definitive state.
+  useEffect(() => {
+    auth.authStateReady().then(() => {
+      setUserResolved(true);
+    });
+  }, []);
+
+  // Auth listener — handles initial state + ongoing changes (login, logout)
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser: FirebaseUser | null) => {
       if (firebaseUser) {
@@ -76,6 +95,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           setUser({ uid: firebaseUser.uid, name: 'Admin', avatar: 'Charlie', isAdmin: true });
           setLoadedData({ ...defaultLoadedData });
           setIsLoadingAuth(false);
+          if (!authResolvedRef.current) {
+            authResolvedRef.current = true;
+            setAuthResolved(true);
+          }
           return;
         }
 
@@ -136,7 +159,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setUser(null);
         setLoadedData({ ...defaultLoadedData });
       }
+
       setIsLoadingAuth(false);
+      if (!authResolvedRef.current) {
+        authResolvedRef.current = true;
+        setAuthResolved(true);
+      }
     });
 
     return () => unsubscribe();
@@ -144,6 +172,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const handleLoginSuccess = useCallback((loggedInUser: SessionUser) => {
     setUser(loggedInUser);
+    setUserResolved(true);
   }, []);
 
   const handleLogout = useCallback(async () => {
@@ -153,6 +182,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const value: AuthContextValue = {
     user,
     isLoadingAuth,
+    authResolved,
+    userResolved,
     needsOnboarding: loadedData.needsOnboarding,
     loadedData,
     handleLoginSuccess,

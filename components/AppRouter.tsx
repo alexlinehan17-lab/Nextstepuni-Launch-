@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useEffect, useRef } from 'react';
 import { ArrowLeft } from 'lucide-react';
 import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
@@ -177,7 +177,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   const { showToast } = useToast();
   const nav = useNavigation();
   const { viewState, currentCategory, currentModuleId, cameFromJourney } = nav.state;
-  const { user, isLoadingAuth, handleLoginSuccess, handleLogout } = useAuth();
+  const { user, isLoadingAuth, authResolved, userResolved, handleLoginSuccess, handleLogout } = useAuth();
 
   const {
     studentProfile, userProgress, northStar, timetableCompletions,
@@ -218,8 +218,21 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   };
   const handleGoToInsights = () => { nav.navigateToInsights(); };
 
-  if (isLoadingAuth) {
-      return <LoadingSpinner />;
+  // Auth gate: show branded loading until userResolved, then decide login vs app.
+  // userResolved is true once either:
+  //   (a) user is non-null with Firestore docs loaded, or
+  //   (b) user is definitively null after a 500ms grace period.
+  // This prevents flashing LoginPage when onAuthStateChanged fires null first
+  // during token refresh / IndexedDB rehydration.
+  if (!userResolved) {
+    return (
+      <div className="flex items-center justify-center min-h-screen w-full" style={{ backgroundColor: '#FDF8F0' }}>
+        <svg className="animate-spin" width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <circle cx="18" cy="18" r="15" stroke="#e0dbd4" strokeWidth="3" />
+          <path d="M18 3a15 15 0 0 1 15 15" stroke="#2A7D6F" strokeWidth="3" strokeLinecap="round" />
+        </svg>
+      </div>
+    );
   }
 
   if (!user) {
@@ -410,6 +423,10 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   }
 
   if (viewState === 'category' && currentCategory) {
+    // Validate category exists — reject garbage URL values
+    if (!categoryTitles[currentCategory]) {
+      return <FallbackRedirect onRedirect={() => nav.navigateToTree()} />;
+    }
     let categoryCourses = ALL_COURSES.filter(c => c.category === currentCategory);
 
     // For subject-specific-science, only show modules relevant to the student's chosen subjects
@@ -475,7 +492,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   if (viewState === 'innovation-zone') {
       return (
         <Suspense fallback={<LoadingSpinner />}>
-          <InnovationZone onBack={handleBackToTree} onSelectModule={handleSelectModule} user={user} autoOpenJourney={cameFromJourney} savedJourneyResult={journeyResult} onJourneyComplete={setJourneyResult} settings={settings} updateSetting={updateSetting} onCosmeticUnlocksChange={(unlocks) => { setUnlockedAvatarSeeds(unlocks.avatarSeeds || []); setUnlockedThemes(unlocks.themeColors || []); setUnlockedCardStyles(unlocks.cardStyles || []); }} onStudyNow={handleStudyFromTimetable} />
+          <InnovationZone onBack={handleBackToTree} onSelectModule={handleSelectModule} user={user} savedJourneyResult={journeyResult} onJourneyComplete={setJourneyResult} settings={settings} updateSetting={updateSetting} onCosmeticUnlocksChange={(unlocks) => { setUnlockedAvatarSeeds(unlocks.avatarSeeds || []); setUnlockedThemes(unlocks.themeColors || []); setUnlockedCardStyles(unlocks.cardStyles || []); }} onStudyNow={handleStudyFromTimetable} />
         </Suspense>
       );
   }
@@ -525,8 +542,19 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     );
   }
 
-  // Fallback: unknown view state — navigate back to tree
-  handleBackToTree();
+  // Fallback: unknown view state — redirect to tree via effect (not during render)
+  return <FallbackRedirect onRedirect={() => nav.navigateToTree()} />;
+};
+
+/** Triggers a redirect via useEffect instead of during render — avoids React anti-pattern */
+const FallbackRedirect: React.FC<{ onRedirect: () => void }> = ({ onRedirect }) => {
+  const called = useRef(false);
+  useEffect(() => {
+    if (!called.current) {
+      called.current = true;
+      onRedirect();
+    }
+  }, [onRedirect]);
   return <LoadingSpinner />;
 };
 

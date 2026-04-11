@@ -121,7 +121,7 @@ const App: React.FC = () => {
   const nav = useNavigation();
   const { viewState, currentCategory, currentModuleId, cameFromJourney } = nav.state;
   const [journeyResult, setJourneyResult] = useState<{ endingId: string; finalStats?: any } | null>(null);
-  const { user, isLoadingAuth, needsOnboarding: authNeedsOnboarding, loadedData, handleLoginSuccess, handleLogout } = useAuth();
+  const { user, isLoadingAuth, authResolved, needsOnboarding: authNeedsOnboarding, loadedData, handleLoginSuccess, handleLogout } = useAuth();
   const [needsOnboarding, setNeedsOnboarding] = useState(false);
 
   // Progress state from context
@@ -136,6 +136,7 @@ const App: React.FC = () => {
     unlockedThemes, setUnlockedThemes,
     unlockedCardStyles, setUnlockedCardStyles,
     dismissedGuides, setDismissedGuides,
+    progressLoaded,
   } = progress;
 
   // Sync needsOnboarding from auth
@@ -253,19 +254,15 @@ const App: React.FC = () => {
     return p && p.unlockedSection >= c.sectionsCount;
   }).length;
 
-  // Set initial history state when logged-in user lands on tree
-  useEffect(() => {
-    if (user && !user.isAdmin && user.role !== 'gc' && viewState === 'tree' && !window.history.state?.view) {
-      window.history.replaceState({ view: 'tree' }, '');
-    }
-  }, [user, viewState]);
+  // History state is now managed by NavigationContext (URL sync + pushState).
 
-  // Redirect to onboarding for users without a subject profile
+  // Redirect to onboarding for users without a subject profile.
+  // Gated on authResolved AND progressLoaded to prevent redirect during initial load.
   useEffect(() => {
-    if (user && !user.isAdmin && user.role !== 'gc' && needsOnboarding && !isLoadingAuth && viewState === 'tree') {
+    if (authResolved && progressLoaded && user && !user.isAdmin && user.role !== 'gc' && needsOnboarding && viewState === 'tree') {
       nav.navigateToOnboarding();
     }
-  }, [user, needsOnboarding, isLoadingAuth, viewState]);
+  }, [authResolved, progressLoaded, user, needsOnboarding, viewState]);
 
   // Auth state is managed by AuthContext — see contexts/AuthContext.tsx
   // handleLoginSuccess and handleLogout come from useAuth()
