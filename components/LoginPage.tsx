@@ -100,10 +100,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         school,
         role: 'student',
       });
-    } catch {
-      if (e.code === 'auth/weak-password') {
+    } catch (err: any) {
+      if (err.code === 'auth/weak-password') {
         setError('Password must be at least 6 characters.');
-      } else if (e.code === 'auth/email-already-in-use') {
+      } else if (err.code === 'auth/email-already-in-use') {
         setError('This name is already taken. Try a different one.');
       } else {
         setError('Registration failed. Try again.');
