@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionP } from './Motion';
 import { X, ArrowRight, User as UserIcon, Key, Eye, EyeOff, Shield, User as StudentIcon, ArrowLeft, ChevronDown, School, GraduationCap } from 'lucide-react';
 import { auth, db } from '../firebase';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, deleteUser, sendPasswordResetEmail } from 'firebase/auth';
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, deleteUser, sendPasswordResetEmail, updateProfile } from 'firebase/auth';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { SCHOOLS } from '../schoolData';
 
@@ -201,10 +201,15 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
     }
 
     let createdUser: import('firebase/auth').User | null = null;
+    let registeredUser: SessionUser | null = null;
     try {
         const email = `${username}@nextstep.app`;
         const userCredential = await createUserWithEmailAndPassword(auth, email, createPassword);
         createdUser = userCredential.user;
+
+        // Set displayName on Firebase Auth profile — survives refresh even if
+        // the Firestore user doc hasn't synced to the server yet.
+        await updateProfile(createdUser, { displayName: createName.trim() });
 
         // Create a corresponding user profile document in Firestore
         await setDoc(doc(db, "users", createdUser.uid), {
@@ -213,7 +218,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
             school: selectedSchool,
         });
 
-        // onLoginSuccess will be triggered by onAuthStateChanged in App.tsx
+        registeredUser = { uid: createdUser.uid, name: createName.trim(), avatar: selectedAvatar, isAdmin: false };
         handleClose();
     } catch (error: any) {
         if (createdUser) {
@@ -226,6 +231,11 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
         } else {
             setError("Failed to create account. Please try again.");
         }
+    }
+
+    // Set correct user data AFTER the try/catch — can never trigger user deletion.
+    if (registeredUser) {
+      onLoginSuccess(registeredUser);
     }
   };
 
