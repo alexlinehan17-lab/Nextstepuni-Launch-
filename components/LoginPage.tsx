@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
 import { ArrowLeft, Eye, EyeOff, School, GraduationCap } from 'lucide-react';
 import { auth, db } from '../firebase';
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from './Auth';
 import { SCHOOLS } from '../schoolData';
@@ -81,27 +81,35 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     if (!avatar) { setError('Please choose an avatar'); return; }
     setIsLoading(true);
     setError('');
+    let createdUser: any = null;
     try {
       const emailToUse = `${name.toLowerCase().replace(/\s+/g, '')}@nextstep.app`;
       const cred = await createUserWithEmailAndPassword(auth, emailToUse, password);
+      createdUser = cred.user;
       // Set displayName on Firebase Auth so it survives refresh even if
       // the Firestore user doc hasn't synced yet.
-      await updateProfile(cred.user, { displayName: name.trim() });
+      await updateProfile(createdUser, { displayName: name.trim() });
       // Note: Firestore security rules forbid 'role' and 'createdAt' in user doc
       // creates — only name, avatar, and school are allowed.
-      await setDoc(doc(db, 'users', cred.user.uid), {
+      await setDoc(doc(db, 'users', createdUser.uid), {
         name: name.trim(),
         avatar,
         school,
       });
       handleLoginSuccess({
-        uid: cred.user.uid,
+        uid: createdUser.uid,
         name: name.trim(),
         avatar,
         school,
         role: 'student',
       });
     } catch (err: any) {
+      // Roll back auth account if it was created but Firestore write failed
+      if (createdUser) {
+        try { await deleteUser(createdUser); } catch (rollbackErr) {
+          console.error('Failed to clean up auth account after registration failure:', rollbackErr);
+        }
+      }
       if (err.code === 'auth/weak-password') {
         setError('Password must be at least 6 characters.');
       } else if (err.code === 'auth/email-already-in-use') {
