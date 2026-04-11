@@ -3,10 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect, useMemo } from 'react';
-import { doc, getDoc } from 'firebase/firestore';
-import { db } from '../firebase';
+import { useMemo } from 'react';
 import { type StreakData } from './useStreak';
+import { useProgress } from '../contexts/ProgressContext';
 import { type StrategyMasteryMap } from '../types';
 import { type StudySessionRecord, STRATEGY_REGISTRY } from '../studySessionData';
 import { type DebriefEntry } from '../components/StudyDebrief';
@@ -590,36 +589,10 @@ export function useInsights(
   streak: StreakData,
   strategyMastery: StrategyMasteryMap,
 ): { insights: Insight[]; isLoaded: boolean } {
-  const [sessions, setSessions] = useState<StudySessionRecord[]>([]);
-  const [debriefs, setDebriefs] = useState<DebriefEntry[]>([]);
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    if (!uid) {
-      setIsLoaded(true);
-      return;
-    }
-
-    let cancelled = false;
-
-    const load = async () => {
-      try {
-        const progressDoc = await getDoc(doc(db, 'progress', uid));
-        if (cancelled) return;
-        if (progressDoc.exists()) {
-          const data = progressDoc.data();
-          setSessions(data.studySessions ?? []);
-          setDebriefs(data.studyDebriefs ?? []);
-        }
-      } catch (err) {
-        console.error('Failed to load study sessions for insights:');
-      }
-      if (!cancelled) setIsLoaded(true);
-    };
-
-    load();
-    return () => { cancelled = true; };
-  }, [uid]);
+  const { rawProgressDoc, progressLoaded } = useProgress();
+  const sessions: StudySessionRecord[] = rawProgressDoc.studySessions ?? [];
+  const debriefs: DebriefEntry[] = rawProgressDoc.studyDebriefs ?? [];
+  const isLoaded = progressLoaded;
 
   const insights = useMemo(() => {
     const results: Insight[] = [

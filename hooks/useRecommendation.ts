@@ -3,9 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect, useMemo } from 'react';
-import { doc, getDoc } from 'firebase/firestore';
-import { db } from '../firebase';
+import { useMemo } from 'react';
+import { useProgress } from '../contexts/ProgressContext';
 import { type UserProgress, type TopicMasteryMap } from '../types';
 import { type StreakData } from './useStreak';
 import { type StudentSubjectProfile, toDateKey } from '../components/subjectData';
@@ -254,36 +253,10 @@ export function useRecommendation(
   studentProfile: StudentSubjectProfile | null,
   timetableCompletions: Record<string, string[]> | undefined,
 ): { recommendation: SmartRecommendation | null } {
-  const [sessions, setSessions] = useState<StudySessionRecord[]>([]);
-  const [topicMastery, setTopicMastery] = useState<TopicMasteryMap | undefined>(undefined);
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    if (!uid) {
-      setIsLoaded(true);
-      return;
-    }
-
-    let cancelled = false;
-
-    const load = async () => {
-      try {
-        const progressDoc = await getDoc(doc(db, 'progress', uid));
-        if (cancelled) return;
-        if (progressDoc.exists()) {
-          const data = progressDoc.data();
-          setSessions(data.studySessions ?? []);
-          setTopicMastery(data.topicMastery ?? undefined);
-        }
-      } catch (err) {
-        console.error('Failed to load data for recommendations:');
-      }
-      if (!cancelled) setIsLoaded(true);
-    };
-
-    load();
-    return () => { cancelled = true; };
-  }, [uid]);
+  const { rawProgressDoc, progressLoaded } = useProgress();
+  const sessions: StudySessionRecord[] = rawProgressDoc.studySessions ?? [];
+  const topicMastery: TopicMasteryMap | undefined = rawProgressDoc.topicMastery ?? undefined;
+  const isLoaded = progressLoaded;
 
   const recommendation = useMemo(() => {
     if (!isLoaded) return null;

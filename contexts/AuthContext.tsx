@@ -24,6 +24,8 @@ interface AuthLoadedData {
   unlockedCardStyles: string[];
   dismissedGuides: Record<string, string>;
   timetableCompletions: Record<string, string[]>;
+  /** The full raw progress doc from Firestore — hooks derive their fields from this */
+  rawProgressDoc: Record<string, any>;
 }
 
 interface AuthContextValue {
@@ -50,6 +52,7 @@ const defaultLoadedData: AuthLoadedData = {
   unlockedCardStyles: [],
   dismissedGuides: {},
   timetableCompletions: {},
+  rawProgressDoc: {},
 };
 
 // ─── Context ────────────────────────────────────────────────
@@ -86,7 +89,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   // (IndexedDB) before its first fire, so the first callback is always definitive.
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser: FirebaseUser | null) => {
-      console.log('[Auth] onAuthStateChanged:', firebaseUser ? `uid=${firebaseUser.uid}` : 'null');
       if (firebaseUser) {
         // Admin user
         if (firebaseUser.email === 'admin@nextstep.app') {
@@ -108,7 +110,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             getDoc(doc(db, 'progress', firebaseUser.uid)),
           ]);
 
-          console.log('[Auth] Firestore: userDoc.exists =', userDoc.exists(), 'progressDoc.exists =', progressDoc.exists());
           if (userDoc.exists()) {
             const userData = userDoc.data();
             setUser({
@@ -133,6 +134,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
                 unlockedCardStyles: pd.cosmeticUnlocks?.cardStyles || [],
                 dismissedGuides: pd.dismissedGuides || {},
                 timetableCompletions: pd.timetableCompletions || {},
+                rawProgressDoc: pd,
               });
               // Fire-and-forget auto-notifications
               if (userData.role !== 'gc') {
@@ -160,6 +162,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
                 unlockedCardStyles: pd.cosmeticUnlocks?.cardStyles || [],
                 dismissedGuides: pd.dismissedGuides || {},
                 timetableCompletions: pd.timetableCompletions || {},
+                rawProgressDoc: pd,
               });
             } else {
               setLoadedData({ ...defaultLoadedData, needsOnboarding: true });

@@ -10,6 +10,7 @@ import {
   serverTimestamp, increment,
 } from 'firebase/firestore';
 import { db } from '../firebase';
+import { useProgress } from '../contexts/ProgressContext';
 import { containsProfanity } from '../components/flares/profanityFilter';
 
 // ── Types ──────────────────────────────────────────────────
@@ -82,6 +83,7 @@ function isExpired(expiresAt: Date): boolean {
 // ── Hook ───────────────────────────────────────────────────
 
 export function useFlares(uid?: string, school?: string, subjects?: string[]) {
+  const { rawProgressDoc, progressLoaded } = useProgress();
   const [activeFlares, setActiveFlares] = useState<FlareDoc[]>([]);
   const [myFlares, setMyFlares] = useState<FlareDoc[]>([]);
   const [myFlareResponses, setMyFlareResponses] = useState<Record<string, FlareResponse[]>>({});
@@ -221,47 +223,32 @@ export function useFlares(uid?: string, school?: string, subjects?: string[]) {
     return () => { cancelled = true; };
   }, [uid, loadActiveFlares, loadMyFlares]);
 
-  // ── Load user progress (rescue count, lighthouse, flare counts) ──
+  // ── Load user progress (rescue count, lighthouse, flare counts) from context ──
 
   useEffect(() => {
-    if (!uid) return;
-    let cancelled = false;
+    if (!progressLoaded || !uid) return;
 
-    (async () => {
-      try {
-        const progressRef = doc(db, 'progress', uid);
-        const progressSnap = await getDoc(progressRef);
-        if (cancelled) return;
+    const data = rawProgressDoc;
+    setRescueCount(data.rescueCount || 0);
+    setLighthouseLevel(data.lighthouseLevel || 0);
 
-        if (progressSnap.exists()) {
-          const data = progressSnap.data();
-          setRescueCount(data.rescueCount || 0);
-          setLighthouseLevel(data.lighthouseLevel || 0);
+    const rawCounts = data.flareCounts || { daily: 0, dailyDate: '', weekly: 0, weeklyStart: '' };
+    const today = getDateKey();
+    const weekStart = getWeekStart();
+    const dailyUsed = rawCounts.dailyDate === today ? rawCounts.daily : 0;
+    const weeklyUsed = rawCounts.weeklyStart === weekStart ? rawCounts.weekly : 0;
 
-          const rawCounts = data.flareCounts || { daily: 0, dailyDate: '', weekly: 0, weeklyStart: '' };
-          const today = getDateKey();
-          const weekStart = getWeekStart();
-          const dailyUsed = rawCounts.dailyDate === today ? rawCounts.daily : 0;
-          const weeklyUsed = rawCounts.weeklyStart === weekStart ? rawCounts.weekly : 0;
-
-          setFlareCounts({
-            daily: dailyUsed,
-            dailyDate: rawCounts.dailyDate,
-            weekly: weeklyUsed,
-            weeklyStart: rawCounts.weeklyStart,
-            dailyRemaining: MAX_DAILY - dailyUsed,
-            dailyLimit: MAX_DAILY,
-            weeklyRemaining: MAX_WEEKLY - weeklyUsed,
-            weeklyLimit: MAX_WEEKLY,
-          });
-        }
-      } catch (err) {
-        console.error('[useFlares] Failed to load progress:');
-      }
-    })();
-
-    return () => { cancelled = true; };
-  }, [uid]);
+    setFlareCounts({
+      daily: dailyUsed,
+      dailyDate: rawCounts.dailyDate,
+      weekly: weeklyUsed,
+      weeklyStart: rawCounts.weeklyStart,
+      dailyRemaining: MAX_DAILY - dailyUsed,
+      dailyLimit: MAX_DAILY,
+      weeklyRemaining: MAX_WEEKLY - weeklyUsed,
+      weeklyLimit: MAX_WEEKLY,
+    });
+  }, [progressLoaded, rawProgressDoc, uid]);
 
   // ── Get responses for a specific flare ──────────────
 

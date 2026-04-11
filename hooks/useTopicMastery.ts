@@ -4,81 +4,72 @@
  */
 
 import { useState, useEffect, useCallback } from 'react';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
+import { useProgress } from '../contexts/ProgressContext';
 import { type TopicMasteryMap, type UnifiedConfidence, type TopicMasteryEntry } from '../types';
 import { getSyllabusTopics } from '../components/syllabusTopics';
 
 export function useTopicMastery(uid: string | undefined) {
+  const { rawProgressDoc, progressLoaded } = useProgress();
   const [mastery, setMastery] = useState<TopicMasteryMap>({});
   const [isLoaded, setIsLoaded] = useState(false);
 
   // Load + one-time migration from old data
   useEffect(() => {
+    if (!progressLoaded) return;
     if (!uid) { setIsLoaded(true); return; }
-    let cancelled = false;
 
-    const load = async () => {
-      try {
-        const snap = await getDoc(doc(db, 'progress', uid));
-        if (cancelled) return;
-        const data = snap.data();
+    const data = rawProgressDoc;
 
-        if (data?.topicMastery) {
-          // Already migrated
-          setMastery(data.topicMastery);
-        } else {
-          // Migrate from old formats
-          const merged: TopicMasteryMap = {};
-          const now = Date.now();
+    if (data?.topicMastery) {
+      // Already migrated
+      setMastery(data.topicMastery);
+    } else {
+      // Migrate from old formats
+      const merged: TopicMasteryMap = {};
+      const now = Date.now();
 
-          // Migrate SyllabusXRay mastery
-          if (data?.syllabusXRayMastery) {
-            const sxr = data.syllabusXRayMastery as Record<string, Record<string, string>>;
-            for (const [subject, topics] of Object.entries(sxr)) {
-              if (!merged[subject]) merged[subject] = {};
-              for (const [topic, status] of Object.entries(topics)) {
-                const confidence: UnifiedConfidence =
-                  status === 'confident' ? 'solid' :
-                  status === 'in-progress' ? 'shaky' : 'not-started';
-                merged[subject][topic] = { confidence, updatedAt: now, source: 'import' };
-              }
-            }
-          }
-
-          // Merge WarRoom topicMap (takes precedence for overlapping topics if more recent)
-          if (data?.warRoom?.topicMap) {
-            const wr = data.warRoom.topicMap as Record<string, Array<{ name: string; confidence: string; updatedAt?: number }>>;
-            for (const [subject, topics] of Object.entries(wr)) {
-              if (!merged[subject]) merged[subject] = {};
-              for (const t of topics) {
-                const confidence = (t.confidence === 'solid' || t.confidence === 'shaky' || t.confidence === 'not-started')
-                  ? t.confidence as UnifiedConfidence
-                  : 'not-started';
-                const existing = merged[subject][t.name];
-                if (!existing || (t.updatedAt && t.updatedAt > existing.updatedAt)) {
-                  merged[subject][t.name] = { confidence, updatedAt: t.updatedAt || now, source: 'import' };
-                }
-              }
-            }
-          }
-
-          setMastery(merged);
-
-          // Save migrated data if we had any old data
-          if (Object.keys(merged).length > 0) {
-            setDoc(doc(db, 'progress', uid), { topicMastery: merged }, { merge: true }).catch(() => {});
+      // Migrate SyllabusXRay mastery
+      if (data?.syllabusXRayMastery) {
+        const sxr = data.syllabusXRayMastery as Record<string, Record<string, string>>;
+        for (const [subject, topics] of Object.entries(sxr)) {
+          if (!merged[subject]) merged[subject] = {};
+          for (const [topic, status] of Object.entries(topics)) {
+            const confidence: UnifiedConfidence =
+              status === 'confident' ? 'solid' :
+              status === 'in-progress' ? 'shaky' : 'not-started';
+            merged[subject][topic] = { confidence, updatedAt: now, source: 'import' };
           }
         }
-      } catch (e) {
-        console.error('Failed to load topic mastery:');
       }
-      if (!cancelled) setIsLoaded(true);
-    };
 
-    load();
-    return () => { cancelled = true; };
-  }, [uid]);
+      // Merge WarRoom topicMap (takes precedence for overlapping topics if more recent)
+      if (data?.warRoom?.topicMap) {
+        const wr = data.warRoom.topicMap as Record<string, Array<{ name: string; confidence: string; updatedAt?: number }>>;
+        for (const [subject, topics] of Object.entries(wr)) {
+          if (!merged[subject]) merged[subject] = {};
+          for (const t of topics) {
+            const confidence = (t.confidence === 'solid' || t.confidence === 'shaky' || t.confidence === 'not-started')
+              ? t.confidence as UnifiedConfidence
+              : 'not-started';
+            const existing = merged[subject][t.name];
+            if (!existing || (t.updatedAt && t.updatedAt > existing.updatedAt)) {
+              merged[subject][t.name] = { confidence, updatedAt: t.updatedAt || now, source: 'import' };
+            }
+          }
+        }
+      }
+
+      setMastery(merged);
+
+      // Save migrated data if we had any old data
+      if (Object.keys(merged).length > 0) {
+        setDoc(doc(db, 'progress', uid), { topicMastery: merged }, { merge: true }).catch(() => {});
+      }
+    }
+    setIsLoaded(true);
+  }, [uid, progressLoaded, rawProgressDoc]);
 
   const setTopicConfidence = useCallback((
     subject: string,

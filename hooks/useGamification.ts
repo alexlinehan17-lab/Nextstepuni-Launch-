@@ -6,6 +6,7 @@
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { doc, getDoc, setDoc, updateDoc, increment, runTransaction } from 'firebase/firestore';
 import { db } from '../firebase';
+import { useProgress } from '../contexts/ProgressContext';
 import { type UserProgress, type NorthStar, type IslandState, type StudyReflection } from '../types';
 import { type StreakData } from './useStreak';
 import { type PointsData } from './usePoints';
@@ -51,6 +52,7 @@ export function useGamification({
   streak,
   northStar,
 }: UseGamificationOptions): UseGamificationReturn {
+  const { rawProgressDoc, progressLoaded } = useProgress();
   const [gamificationData, setGamificationData] = useState<GamificationFirestoreData>({ ...DEFAULT_GAMIFICATION_DATA });
   const [isLoaded, setIsLoaded] = useState(false);
   const [version, setVersion] = useState(0);
@@ -64,8 +66,10 @@ export function useGamification({
   // Session-level cache of all achievements ever unlocked this session (prevents duplicates from stale Firestore reads)
   const sessionUnlockedRef = useRef<Set<string>>(new Set());
 
-  // Load gamification data from Firestore
+  // Load gamification data from context
   useEffect(() => {
+    if (!progressLoaded) return;
+
     if (!uid) {
       setGamificationData({ ...DEFAULT_GAMIFICATION_DATA });
       setAsyncCounts({ totalTimetableSessions: 0, totalReflections: 0, journeyMilestones: 0 });
@@ -73,69 +77,52 @@ export function useGamification({
       return;
     }
 
-    let cancelled = false;
+    const data = rawProgressDoc;
 
-    const load = async () => {
-      try {
-        const progressDoc = await getDoc(doc(db, 'progress', uid));
-        if (cancelled) return;
-        if (progressDoc.exists()) {
-          const data = progressDoc.data();
-
-          // Load gamification sub-document
-          const gd = data.gamification as Partial<GamificationFirestoreData> | undefined;
-          if (gd) {
-            // Seed session cache with already-unlocked achievements
-            const loadedIds = gd.unlockedAchievements ?? [];
-            for (const id of loadedIds) {
-              sessionUnlockedRef.current.add(id);
-            }
-            setGamificationData({
-              unlockedAchievements: loadedIds,
-              achievementTimestamps: gd.achievementTimestamps ?? {},
-              weeklyGoalProgress: gd.weeklyGoalProgress ?? {},
-              weekStartDate: gd.weekStartDate ?? '',
-              lastSurpriseDate: gd.lastSurpriseDate ?? '',
-              personalBests: { ...DEFAULT_PERSONAL_BESTS, ...(gd.personalBests ?? {}) },
-              streakShields: gd.streakShields ?? 0,
-              streakShieldUsedDates: gd.streakShieldUsedDates ?? [],
-              lastStreakBreakDate: gd.lastStreakBreakDate ?? '',
-              recoveryWindowEnd: gd.recoveryWindowEnd ?? '',
-            });
-          } else {
-            setGamificationData({ ...DEFAULT_GAMIFICATION_DATA });
-          }
-
-          // Load timetable sessions, reflections, journey milestones
-          const completions: TimetableCompletions = data.timetableCompletions ?? {};
-          const reflections: StudyReflection[] = data.timetableReflections ?? [];
-          const island: IslandState | undefined = data.islandState;
-
-          let totalSessions = 0;
-          for (const dayBlocks of Object.values(completions)) {
-            if (Array.isArray(dayBlocks)) {
-              totalSessions += dayBlocks.length;
-            }
-          }
-
-          setAsyncCounts({
-            totalTimetableSessions: totalSessions,
-            totalReflections: reflections.length,
-            journeyMilestones: island?.placements?.length ?? 0,
-          });
-        } else {
-          setGamificationData({ ...DEFAULT_GAMIFICATION_DATA });
-          setAsyncCounts({ totalTimetableSessions: 0, totalReflections: 0, journeyMilestones: 0 });
-        }
-      } catch (err) {
-        console.error('Failed to load gamification data:');
+    // Load gamification sub-document
+    const gd = data.gamification as Partial<GamificationFirestoreData> | undefined;
+    if (gd) {
+      // Seed session cache with already-unlocked achievements
+      const loadedIds = gd.unlockedAchievements ?? [];
+      for (const id of loadedIds) {
+        sessionUnlockedRef.current.add(id);
       }
-      if (!cancelled) setIsLoaded(true);
-    };
+      setGamificationData({
+        unlockedAchievements: loadedIds,
+        achievementTimestamps: gd.achievementTimestamps ?? {},
+        weeklyGoalProgress: gd.weeklyGoalProgress ?? {},
+        weekStartDate: gd.weekStartDate ?? '',
+        lastSurpriseDate: gd.lastSurpriseDate ?? '',
+        personalBests: { ...DEFAULT_PERSONAL_BESTS, ...(gd.personalBests ?? {}) },
+        streakShields: gd.streakShields ?? 0,
+        streakShieldUsedDates: gd.streakShieldUsedDates ?? [],
+        lastStreakBreakDate: gd.lastStreakBreakDate ?? '',
+        recoveryWindowEnd: gd.recoveryWindowEnd ?? '',
+      });
+    } else {
+      setGamificationData({ ...DEFAULT_GAMIFICATION_DATA });
+    }
 
-    load();
-    return () => { cancelled = true; };
-  }, [uid, version]);
+    // Load timetable sessions, reflections, journey milestones
+    const completions: TimetableCompletions = data.timetableCompletions ?? {};
+    const reflections: StudyReflection[] = data.timetableReflections ?? [];
+    const island: IslandState | undefined = data.islandState;
+
+    let totalSessions = 0;
+    for (const dayBlocks of Object.values(completions)) {
+      if (Array.isArray(dayBlocks)) {
+        totalSessions += dayBlocks.length;
+      }
+    }
+
+    setAsyncCounts({
+      totalTimetableSessions: totalSessions,
+      totalReflections: reflections.length,
+      journeyMilestones: island?.placements?.length ?? 0,
+    });
+
+    setIsLoaded(true);
+  }, [uid, version, progressLoaded, rawProgressDoc]);
 
   // Derive module/section/category counts from existing userProgress
   const { modulesCompleted, sectionsCompleted, categoriesCompleted } = useMemo(() => {

@@ -5,14 +5,26 @@
 
 import React, { createContext, useContext, useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { db } from '../firebase';
-import { doc, setDoc, updateDoc, increment } from 'firebase/firestore';
+import { doc, getDoc } from 'firebase/firestore';
 import { type ModuleProgress, type UserProgress, type NorthStar } from '../types';
 import { type StudentSubjectProfile } from '../components/subjectData';
-import { useStreak, type StreakData } from '../hooks/useStreak';
-import { usePoints } from '../hooks/usePoints';
+import { computeStreak } from '../components/timetableAlgorithm';
 import { useAuth } from './AuthContext';
 
 // ─── Types ──────────────────────────────────────────────────
+
+export interface PointsData {
+  totalEarned: number;
+  totalSpent: number;
+  balance: number;
+  reload: () => void;
+}
+
+export interface StreakData {
+  currentStreak: number;
+  longestStreak: number;
+  lastActiveDate: string;
+}
 
 interface ProgressContextValue {
   // Core progress
@@ -31,8 +43,8 @@ interface ProgressContextValue {
   timetableCompletions: Record<string, string[]>;
   setTimetableCompletions: React.Dispatch<React.SetStateAction<Record<string, string[]>>>;
 
-  // Points & streak
-  pointsData: ReturnType<typeof usePoints>;
+  // Points & streak (derived from rawProgressDoc)
+  pointsData: PointsData;
   streak: StreakData;
 
   // Cosmetic unlocks
@@ -49,6 +61,14 @@ interface ProgressContextValue {
 
   // True after progress data has been synced at least once from auth
   progressLoaded: boolean;
+
+  /** The full raw progress/{uid} doc. Hooks derive their fields from this
+   *  instead of making independent getDoc calls. */
+  rawProgressDoc: Record<string, any>;
+
+  /** Re-fetches the progress doc from Firestore and updates all derived state.
+   *  Replaces the old per-hook reload() pattern. */
+  reloadProgress: () => void;
 }
 
 // ─── Context ────────────────────────────────────────────────
@@ -76,12 +96,39 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [unlockedCardStyles, setUnlockedCardStyles] = useState<string[]>([]);
   const [dismissedGuides, setDismissedGuides] = useState<Record<string, string>>({});
   const [progressLoaded, setProgressLoaded] = useState(false);
+  const [rawProgressDoc, setRawProgressDoc] = useState<Record<string, any>>({});
+  const [reloadVersion, setReloadVersion] = useState(0);
 
-  // Hooks that depend on uid
-  const { streak } = useStreak(user?.uid);
-  const pointsData = usePoints(user?.uid);
+  // Derive points from raw doc
+  const pointsData: PointsData = useMemo(() => {
+    const earned = rawProgressDoc.pointsData?.totalEarned ?? 0;
+    const spent = rawProgressDoc.pointsData?.totalSpent ?? 0;
+    return {
+      totalEarned: earned,
+      totalSpent: spent,
+      balance: earned - spent,
+      reload: () => setReloadVersion(v => v + 1),
+    };
+  }, [rawProgressDoc.pointsData?.totalEarned, rawProgressDoc.pointsData?.totalSpent]);
 
-  // Sync from auth loaded data
+  // Derive streak from raw doc
+  const streak: StreakData = useMemo(() => {
+    const completions = rawProgressDoc.timetableCompletions || timetableCompletions || {};
+    const restDays = rawProgressDoc.subjectProfile?.restDays || studentProfile?.restDays || [];
+    const saved = rawProgressDoc.timetableStreak;
+    const computed = computeStreak(completions, restDays);
+    return {
+      currentStreak: computed.currentStreak,
+      longestStreak: Math.max(computed.longestStreak ?? 0, saved?.longestStreak ?? 0),
+      lastActiveDate: computed.lastActiveDate || saved?.lastActiveDate || '',
+    };
+  }, [rawProgressDoc, timetableCompletions, studentProfile?.restDays]);
+
+  const reloadProgress = useCallback(() => {
+    setReloadVersion(v => v + 1);
+  }, []);
+
+  // Sync from auth loaded data (initial load)
   const syncedRef = useRef(false);
   useEffect(() => {
     if (isLoadingAuth || syncedRef.current) return;
@@ -95,6 +142,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       setUnlockedThemes([]);
       setUnlockedCardStyles([]);
       setDismissedGuides({});
+      setRawProgressDoc({});
       return;
     }
     setUserProgress(loadedData.userProgress);
@@ -105,6 +153,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     setUnlockedThemes(loadedData.unlockedThemes);
     setUnlockedCardStyles(loadedData.unlockedCardStyles);
     setDismissedGuides(loadedData.dismissedGuides);
+    setRawProgressDoc(loadedData.rawProgressDoc);
     syncedRef.current = true;
     setProgressLoaded(true);
   }, [isLoadingAuth, user, loadedData]);
@@ -113,6 +162,22 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   useEffect(() => {
     syncedRef.current = false;
   }, [user?.uid]);
+
+  // Reload: re-fetch progress doc from Firestore when reloadVersion bumps
+  useEffect(() => {
+    if (reloadVersion === 0 || !user?.uid) return;
+    let cancelled = false;
+    getDoc(doc(db, 'progress', user.uid)).then(snap => {
+      if (cancelled) return;
+      if (snap.exists()) {
+        const pd = snap.data();
+        setRawProgressDoc(pd);
+        // Also refresh the cherry-picked fields for backwards compat
+        setTimetableCompletions(pd.timetableCompletions || {});
+      }
+    }).catch(() => {});
+    return () => { cancelled = true; };
+  }, [reloadVersion, user?.uid]);
 
   const value: ProgressContextValue = {
     userProgress,
@@ -134,6 +199,8 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     dismissedGuides,
     setDismissedGuides,
     progressLoaded,
+    rawProgressDoc,
+    reloadProgress,
   };
 
   return <ProgressContext.Provider value={value}>{children}</ProgressContext.Provider>;

@@ -4,8 +4,9 @@
  */
 
 import { useState, useEffect, useCallback, useMemo } from 'react';
-import { doc, getDoc, setDoc, increment } from 'firebase/firestore';
+import { doc, setDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
+import { useProgress } from '../contexts/ProgressContext';
 import { NorthStar, IslandState, IslandPlacement, ShopItem, NorthStarCategory } from '../types';
 import {
   SHOP_CATALOG, EXCLUSIVE_ITEMS, STARTER_PACKS,
@@ -49,46 +50,32 @@ export interface MilestoneRewardStatus {
 }
 
 export function useIslandShop(uid?: string, northStar?: NorthStar | null, completedCount: number = 0) {
+  const { rawProgressDoc, progressLoaded } = useProgress();
   const [islandState, setIslandState] = useState<IslandState | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Load island state from Firestore
+  // Load island state from context
   useEffect(() => {
+    if (!progressLoaded) return;
+
     if (!uid || !northStar?.category) {
       setIslandState(null);
       setIsLoading(false);
       return;
     }
 
-    const load = async () => {
-      try {
-        const progressDoc = await getDoc(doc(db, 'progress', uid));
-        if (progressDoc.exists()) {
-          const data = progressDoc.data();
-          const stored = data.islandState as IslandState | undefined;
-          if (stored && stored.category === northStar.category && stored.purchaseHistory?.length > 0) {
-            setIslandState(stored);
-          } else {
-            // No state or North Star changed — initialize with starter pack
-            const starter = createStarterState(northStar.category);
-            setIslandState(starter);
-            setDoc(doc(db, 'progress', uid), { islandState: starter }, { merge: true }).catch(console.error);
-          }
-        } else {
-          const starter = createStarterState(northStar.category);
-          setIslandState(starter);
-          setDoc(doc(db, 'progress', uid), { islandState: starter }, { merge: true }).catch(console.error);
-        }
-      } catch (err) {
-        console.error('Failed to load island state:');
-        const starter = createStarterState(northStar.category);
-        setIslandState(starter);
-      }
-      setIsLoading(false);
-    };
-
-    load();
-  }, [uid, northStar?.category]);
+    const data = rawProgressDoc;
+    const stored = data.islandState as IslandState | undefined;
+    if (stored && stored.category === northStar.category && stored.purchaseHistory?.length > 0) {
+      setIslandState(stored);
+    } else {
+      // No state or North Star changed — initialize with starter pack
+      const starter = createStarterState(northStar.category);
+      setIslandState(starter);
+      setDoc(doc(db, 'progress', uid), { islandState: starter }, { merge: true }).catch(console.error);
+    }
+    setIsLoading(false);
+  }, [uid, northStar?.category, progressLoaded, rawProgressDoc]);
 
   // Water color from starter pack
   const waterColor = useMemo(() => {

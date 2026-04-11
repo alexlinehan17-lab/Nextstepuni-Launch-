@@ -6,6 +6,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
+import { useProgress } from '../contexts/ProgressContext';
 import { type UserProgress, type StrategyMasteryMap, type StrategyMasteryRecord, type MasteryTier } from '../types';
 import { type CourseData } from '../components/Library';
 import { STRATEGY_REGISTRY, type StudySessionRecord } from '../utils/strategyRegistry';
@@ -15,103 +16,104 @@ export function useStrategyMastery(
   userProgress: UserProgress,
   allCourses: CourseData[],
 ): { masteryMap: StrategyMasteryMap; isLoaded: boolean; recompute: () => Promise<void> } {
+  const { rawProgressDoc, progressLoaded } = useProgress();
   const [masteryMap, setMasteryMap] = useState<StrategyMasteryMap>({});
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const compute = useCallback(async () => {
-    if (!uid) {
-      setMasteryMap({});
-      setIsLoaded(true);
-      return;
-    }
+  // Shared computation: build mastery map from sessions array, persist to Firestore
+  const computeAndPersist = useCallback(async (sessions: StudySessionRecord[]) => {
+    const map: StrategyMasteryMap = {};
 
-    try {
-      const progressDoc = await getDoc(doc(db, 'progress', uid));
-      const data = progressDoc.exists() ? progressDoc.data() : {};
-      const sessions: StudySessionRecord[] = data.studySessions || [];
+    for (const strategy of STRATEGY_REGISTRY) {
+      const { moduleId } = strategy;
 
-      const map: StrategyMasteryMap = {};
+      const course = allCourses.find(c => c.id === moduleId);
+      const progress = userProgress[moduleId];
+      const isCompleted = course && progress && progress.unlockedSection >= course.sectionsCount;
 
-      for (const strategy of STRATEGY_REGISTRY) {
-        const { moduleId } = strategy;
+      if (!isCompleted) {
+        map[moduleId] = { tier: 'none', sessionCount: 0, subjectsSeen: [] };
+        continue;
+      }
 
-        // Check if module is completed
-        const course = allCourses.find(c => c.id === moduleId);
-        const progress = userProgress[moduleId];
-        const isCompleted = course && progress && progress.unlockedSection >= course.sectionsCount;
+      const relevantSessions = sessions.filter(
+        s => s.strategiesShown && s.strategiesShown.includes(moduleId)
+      );
 
-        if (!isCompleted) {
-          map[moduleId] = { tier: 'none', sessionCount: 0, subjectsSeen: [] };
-          continue;
-        }
+      const sessionCount = relevantSessions.length;
+      const subjectsSeen = [...new Set(relevantSessions.map(s => s.subject))];
 
-        // Filter sessions where this strategy's prompt was shown
-        const relevantSessions = sessions.filter(
-          s => s.strategiesShown && s.strategiesShown.includes(moduleId)
-        );
+      let tier: MasteryTier = 'learned';
+      let appliedAt: string | undefined;
+      let habitualAt: string | undefined;
 
-        const sessionCount = relevantSessions.length;
-        const subjectsSeen = [...new Set(relevantSessions.map(s => s.subject))];
+      if (sessionCount >= 3) {
+        tier = 'practiced';
+      }
 
-        // Determine tier
-        let tier: MasteryTier = 'learned';
-        let appliedAt: string | undefined;
-        let habitualAt: string | undefined;
-
-        if (sessionCount >= 3) {
-          tier = 'practiced';
-        }
-
-        if (subjectsSeen.length >= 2) {
-          tier = 'applied';
-          // Find when second subject first appeared
-          const subjectOrder: string[] = [];
-          for (const s of relevantSessions) {
-            if (!subjectOrder.includes(s.subject)) {
-              subjectOrder.push(s.subject);
-              if (subjectOrder.length === 2) {
-                appliedAt = s.date;
-                break;
-              }
+      if (subjectsSeen.length >= 2) {
+        tier = 'applied';
+        const subjectOrder: string[] = [];
+        for (const s of relevantSessions) {
+          if (!subjectOrder.includes(s.subject)) {
+            subjectOrder.push(s.subject);
+            if (subjectOrder.length === 2) {
+              appliedAt = s.date;
+              break;
             }
           }
         }
-
-        // Habitual: 3+ sessions/week for 2 consecutive weeks (only if Applied)
-        if (tier === 'applied') {
-          const habitualDate = checkHabitual(relevantSessions);
-          if (habitualDate) {
-            tier = 'habitual';
-            habitualAt = habitualDate;
-          }
-        }
-
-        map[moduleId] = {
-          tier,
-          learnedAt: relevantSessions.length > 0 ? relevantSessions[0].date : undefined,
-          appliedAt,
-          habitualAt,
-          sessionCount,
-          subjectsSeen,
-        };
       }
 
-      setMasteryMap(map);
-      setIsLoaded(true);
+      if (tier === 'applied') {
+        const habitualDate = checkHabitual(relevantSessions);
+        if (habitualDate) {
+          tier = 'habitual';
+          habitualAt = habitualDate;
+        }
+      }
 
-      // Persist to Firestore
-      await setDoc(doc(db, 'progress', uid), { strategyMastery: map }, { merge: true });
-    } catch (err) {
-      console.error('Failed to compute strategy mastery:');
-      setIsLoaded(true);
+      map[moduleId] = {
+        tier,
+        learnedAt: relevantSessions.length > 0 ? relevantSessions[0].date : undefined,
+        appliedAt,
+        habitualAt,
+        sessionCount,
+        subjectsSeen,
+      };
+    }
+
+    setMasteryMap(map);
+    setIsLoaded(true);
+
+    if (uid) {
+      setDoc(doc(db, 'progress', uid), { strategyMastery: map }, { merge: true }).catch(err => {
+        console.error('Failed to persist strategy mastery:', err);
+      });
     }
   }, [uid, userProgress, allCourses]);
 
+  // Initial load from context (no Firestore read)
   useEffect(() => {
-    compute();
-  }, [compute]);
+    if (!uid) { setMasteryMap({}); setIsLoaded(true); return; }
+    if (!progressLoaded) return;
+    computeAndPersist(rawProgressDoc.studySessions || []);
+  }, [uid, progressLoaded]);
 
-  return { masteryMap, isLoaded, recompute: compute };
+  // Explicit recompute: re-reads from Firestore for fresh data
+  const recompute = useCallback(async () => {
+    if (!uid) return;
+    try {
+      const progressDoc = await getDoc(doc(db, 'progress', uid));
+      const data = progressDoc.exists() ? progressDoc.data() : {};
+      await computeAndPersist(data.studySessions || []);
+    } catch (err) {
+      console.error('Failed to recompute strategy mastery:', err);
+      setIsLoaded(true);
+    }
+  }, [uid, computeAndPersist]);
+
+  return { masteryMap, isLoaded, recompute };
 }
 
 /**

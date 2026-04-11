@@ -3,9 +3,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect, useCallback, useMemo } from 'react';
-import { doc, getDoc, setDoc, increment } from 'firebase/firestore';
+import { useState, useCallback, useMemo } from 'react';
+import { doc, setDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
+import { useProgress } from '../contexts/ProgressContext';
 import { type UserProgress, type TopicMasteryMap } from '../types';
 import { type StreakData } from './useStreak';
 import { type StudentSubjectProfile, toDateKey } from '../components/subjectData';
@@ -72,48 +73,18 @@ export function useQuests(
   studentProfile: StudentSubjectProfile | null,
   timetableCompletions: Record<string, string[]> | undefined,
 ): { questState: QuestState | null; claimReward: () => Promise<void>; reload: () => void } {
-  const [sessions, setSessions] = useState<StudySessionRecord[]>([]);
-  const [debriefs, setDebriefs] = useState<DebriefEntry[]>([]);
-  const [topicMastery, setTopicMastery] = useState<TopicMasteryMap | undefined>(undefined);
-  const [questRewards, setQuestRewards] = useState<Record<string, string>>({});
-  const [mockResults, setMockResults] = useState<any[]>([]);
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [version, setVersion] = useState(0);
+  const { rawProgressDoc, progressLoaded, reloadProgress } = useProgress();
+
+  const sessions: StudySessionRecord[] = rawProgressDoc.studySessions ?? [];
+  const debriefs: DebriefEntry[] = rawProgressDoc.studyDebriefs ?? [];
+  const topicMastery: TopicMasteryMap | undefined = rawProgressDoc.topicMastery ?? undefined;
+  const mockResults: any[] = rawProgressDoc.unifiedMockResults ?? [];
+  const [questRewards, setQuestRewards] = useState<Record<string, string>>(rawProgressDoc.questRewards ?? {});
+  const isLoaded = progressLoaded;
 
   const reload = useCallback(() => {
-    setVersion(v => v + 1);
-  }, []);
-
-  // Load data from Firestore
-  useEffect(() => {
-    if (!uid) {
-      setIsLoaded(true);
-      return;
-    }
-
-    let cancelled = false;
-
-    const load = async () => {
-      try {
-        const progressDoc = await getDoc(doc(db, 'progress', uid));
-        if (cancelled) return;
-        if (progressDoc.exists()) {
-          const data = progressDoc.data();
-          setSessions(data.studySessions ?? []);
-          setDebriefs(data.studyDebriefs ?? []);
-          setTopicMastery(data.topicMastery ?? undefined);
-          setQuestRewards(data.questRewards ?? {});
-          setMockResults(data.unifiedMockResults ?? []);
-        }
-      } catch (err) {
-        console.error('Failed to load quest data:');
-      }
-      if (!cancelled) setIsLoaded(true);
-    };
-
-    load();
-    return () => { cancelled = true; };
-  }, [uid, version]);
+    reloadProgress();
+  }, [reloadProgress]);
 
   // Determine which quest to show
   const questState = useMemo((): QuestState | null => {

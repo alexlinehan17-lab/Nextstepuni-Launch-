@@ -4,8 +4,9 @@
  */
 
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { doc, getDoc, updateDoc, increment, arrayUnion } from 'firebase/firestore';
+import { doc, updateDoc, increment, arrayUnion } from 'firebase/firestore';
 import { db } from '../firebase';
+import { useProgress } from '../contexts/ProgressContext';
 import { type UserProgress } from '../types';
 import { type CourseData } from '../components/Library';
 import {
@@ -38,6 +39,8 @@ export function useStudySession(
   userProgress: UserProgress,
   allCourses: CourseData[],
 ) {
+  const { rawProgressDoc, progressLoaded } = useProgress();
+
   const [phase, setPhase] = useState<SessionPhase>('idle');
   const [subject, setSubject] = useState('');
   const [sessionType, setSessionType] = useState<'new-learning' | 'practice' | 'revision'>('new-learning');
@@ -59,25 +62,14 @@ export function useStudySession(
 
   const totalDuration = plannedMinutes * 60;
 
-  // ── Load today's sessions on mount ──
+  // ── Load today's sessions from context ──
 
   useEffect(() => {
-    if (!uid) return;
-    const load = async () => {
-      try {
-        const progressDoc = await getDoc(doc(db, 'progress', uid));
-        if (progressDoc.exists()) {
-          const data = progressDoc.data();
-          const sessions: StudySessionRecord[] = data.studySessions || [];
-          const today = new Date().toISOString().slice(0, 10);
-          setTodaySessions(sessions.filter(s => s.date === today));
-        }
-      } catch (err) {
-        console.error('Failed to load study sessions:');
-      }
-    };
-    load();
-  }, [uid]);
+    if (!progressLoaded) return;
+    const sessions: StudySessionRecord[] = rawProgressDoc.studySessions || [];
+    const today = new Date().toISOString().slice(0, 10);
+    setTodaySessions(sessions.filter(s => s.date === today));
+  }, [progressLoaded, rawProgressDoc]);
 
   // ── Build shuffled prompt queue from completed strategies ──
 

@@ -6,9 +6,10 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import {
   collection, query, where, getDocs, addDoc,
-  doc, updateDoc, increment, getDoc, arrayUnion,
+  doc, updateDoc, increment, arrayUnion,
 } from 'firebase/firestore';
 import { db } from '../firebase';
+import { useProgress } from '../contexts/ProgressContext';
 import { containsProfanity } from '../components/flares/profanityFilter';
 
 // ── Types ──────────────────────────────────────────────────
@@ -36,26 +37,18 @@ function weightedPick(items: TeachBackEntry[]): TeachBackEntry {
 // ── Hook ───────────────────────────────────────────────────
 
 export function useTeachBack(uid?: string, school?: string) {
+  const { rawProgressDoc, progressLoaded } = useProgress();
   const [teachBackToRead, setTeachBackToRead] = useState<TeachBackEntry | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const seenIdsRef = useRef<Set<string>>(new Set());
   const fetchedForSubjectRef = useRef('');
 
-  // Load seen IDs from progress doc on mount
+  // Load seen IDs from context
   useEffect(() => {
-    if (!uid) return;
-    (async () => {
-      try {
-        const progressDoc = await getDoc(doc(db, 'progress', uid));
-        if (progressDoc.exists()) {
-          const seen: string[] = progressDoc.data().teachBacksSeen || [];
-          seenIdsRef.current = new Set(seen);
-        }
-      } catch (err) {
-        console.error('[TeachBack] Failed to load seen list:');
-      }
-    })();
-  }, [uid]);
+    if (!progressLoaded) return;
+    const seen: string[] = rawProgressDoc.teachBacksSeen || [];
+    seenIdsRef.current = new Set(seen);
+  }, [progressLoaded, rawProgressDoc]);
 
   // Fetch a teach-back for a given subject (weighted by helpfulness)
   const fetchTeachBack = useCallback(async (subject: string) => {
