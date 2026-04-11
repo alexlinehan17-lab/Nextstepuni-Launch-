@@ -8,7 +8,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
 import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check } from 'lucide-react';
 import { auth, db } from '../firebase';
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser } from 'firebase/auth';
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from './Auth';
 import { SCHOOLS } from '../schoolData';
@@ -19,8 +19,8 @@ interface LoginPageProps {
 
 const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ── Top-level mode ──
-  const [view, setView] = useState<'welcome' | 'login' | 'register' | 'gc'>('welcome');
-  const [registerStep, setRegisterStep] = useState(1); // 1: school+name, 2: password, 3: avatar
+  const [view, setView] = useState<'welcome' | 'login' | 'register' | 'gc' | 'forgot'>('welcome');
+  const [registerStep, setRegisterStep] = useState(1); // 1: email+name+school, 2: password, 3: avatar
 
   // ── Form state ──
   const [email, setEmail] = useState('');
@@ -32,6 +32,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [resetSent, setResetSent] = useState(false);
 
   // Random default avatar for step 3
   const defaultAvatar = useMemo(() => AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)], []);
@@ -39,23 +40,15 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const resetForm = () => {
     setEmail(''); setPassword(''); setName(''); setSchool('');
     setGcSchool(''); setAvatar(''); setError('');
-    setShowPassword(false); setRegisterStep(1);
+    setShowPassword(false); setRegisterStep(1); setResetSent(false);
   };
 
   // ── Login handler ──
-  // Login school state (separate from registration school)
-  const [loginSchool, setLoginSchool] = useState('');
-
   const handleLogin = async () => {
-    if (!email.trim() || !password.trim()) { setError('Please enter your username and password.'); return; }
+    if (!email.trim() || !password.trim()) { setError('Please enter your email and password.'); return; }
     setIsLoading(true); setError('');
     try {
-      // Try school-namespaced email first, fall back to legacy format
-      const username = email.trim().toLowerCase().replace(/\s+/g, '');
-      const emailToUse = email.includes('@') ? email
-        : loginSchool ? `${username}-${loginSchool}@nextstep.app`
-        : `${username}@nextstep.app`;
-      const cred = await signInWithEmailAndPassword(auth, emailToUse, password);
+      const cred = await signInWithEmailAndPassword(auth, email.trim().toLowerCase(), password);
       const userDoc = await getDoc(doc(db, 'users', cred.user.uid));
       if (userDoc.exists()) {
         const data = userDoc.data();
@@ -70,7 +63,20 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         });
       }
     } catch {
-      setError('Invalid username or password.');
+      setError('Invalid email or password.');
+    }
+    setIsLoading(false);
+  };
+
+  // ── Forgot password handler ──
+  const handleForgotPassword = async () => {
+    if (!email.trim()) { setError('Please enter your email address.'); return; }
+    setIsLoading(true); setError('');
+    try {
+      await sendPasswordResetEmail(auth, email.trim().toLowerCase());
+      setResetSent(true);
+    } catch {
+      setError('Could not send reset email. Check your email address.');
     }
     setIsLoading(false);
   };
@@ -90,9 +96,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ── Register step validation ──
   const validateRegisterStep = (): boolean => {
     if (registerStep === 1) {
+      if (!email.trim()) { setError('Please enter your email.'); return false; }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) { setError('Please enter a valid email address.'); return false; }
       if (!name.trim()) { setError('Please enter your name.'); return false; }
-      const username = name.trim().toLowerCase().replace(/\s+/g, '');
-      if (!/^[a-z0-9_-]+$/.test(username)) { setError('Name can only contain letters, numbers, hyphens and underscores.'); return false; }
       if (!school) { setError('Please select your school.'); return false; }
       return true;
     }
@@ -113,10 +119,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const handleRegisterSubmit = async () => {
     setIsLoading(true); setError('');
     const selectedAvatar = avatar || defaultAvatar;
-    const username = name.trim().toLowerCase().replace(/\s+/g, '');
     let createdUser: any = null;
     try {
-      const cred = await createUserWithEmailAndPassword(auth, `${username}-${school}@nextstep.app`, password);
+      const cred = await createUserWithEmailAndPassword(auth, email.trim().toLowerCase(), password);
       createdUser = cred.user;
       await updateProfile(createdUser, { displayName: name.trim() });
       await setDoc(doc(db, 'users', createdUser.uid), {
@@ -141,7 +146,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         setError('Password must be at least 6 characters.');
         setRegisterStep(2);
       } else if (err.code === 'auth/email-already-in-use') {
-        setError('This name is already taken at your school. Try a different one.');
+        setError('An account with this email already exists. Try signing in instead.');
+        setRegisterStep(1);
+      } else if (err.code === 'auth/invalid-email') {
+        setError('Please enter a valid email address.');
         setRegisterStep(1);
       } else {
         setError('Registration failed. Try again.');
@@ -255,24 +263,17 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           <ArrowLeft size={14} /> Back
         </button>
         <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Welcome back</h2>
-        <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Sign in with your username and password.</p>
+        <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Sign in with your email and password.</p>
         <form onSubmit={e => { e.preventDefault(); handleLogin(); }} className="space-y-4">
           <div>
-            <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
-            <div className="relative">
-              <select value={loginSchool} onChange={e => { setLoginSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!loginSchool ? 'text-zinc-400' : ''}`} autoFocus>
-                <option value="" disabled>Select your school</option>
-                {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
-              </select>
-              <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
+            <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
+            <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus />
+          </div>
+          <div>
+            <div className="flex items-center justify-between mb-1.5">
+              <label className="text-xs font-bold uppercase tracking-wider" style={{ color: '#9e9186' }}>Password</label>
+              <button type="button" onClick={() => { setView('forgot'); setError(''); }} className="text-xs font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Forgot?</button>
             </div>
-          </div>
-          <div>
-            <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Username</label>
-            <input type="text" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="Enter your username" className={inputClass} />
-          </div>
-          <div>
-            <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
             <div className="relative">
               <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={inputClass} />
               <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
@@ -285,10 +286,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
             {isLoading ? 'Signing in...' : 'Sign In'}
           </MotionButton>
         </form>
-        <p className="text-sm text-center mt-6" style={{ color: '#7a7068' }}>
-          Forgot your password?{' '}<span style={{ color: '#2A7D6F', fontWeight: 600 }}>Ask your guidance counsellor.</span>
-        </p>
-        <p className="text-sm text-center mt-3" style={{ color: '#9e9186' }}>
+        <p className="text-sm text-center mt-6" style={{ color: '#9e9186' }}>
           Don&apos;t have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('register'); }} className="font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Register</button>
         </p>
       </Card>
@@ -336,6 +334,41 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   }
 
   // ═══════════════════════════════════════════════════════════
+  // FORGOT PASSWORD
+  // ═══════════════════════════════════════════════════════════
+  if (view === 'forgot') {
+    return (
+      <Card>
+        <button type="button" onClick={() => { setView('login'); setError(''); setResetSent(false); }} className="flex items-center gap-1.5 text-sm font-medium mb-6 transition-colors" style={{ color: '#9e9186' }}>
+          <ArrowLeft size={14} /> Back to sign in
+        </button>
+        <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Reset your password</h2>
+        <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Enter your email and we&apos;ll send you a link to reset your password.</p>
+        {resetSent ? (
+          <div className="text-center py-4">
+            <div className="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: '#e8f5f2' }}>
+              <Check size={24} style={{ color: '#2A7D6F' }} />
+            </div>
+            <p className="text-sm font-medium mb-1" style={{ color: '#1a1a1a' }}>Check your inbox</p>
+            <p className="text-sm" style={{ color: '#7a7068' }}>We&apos;ve sent a password reset link to <span className="font-medium" style={{ color: '#1a1a1a' }}>{email}</span></p>
+          </div>
+        ) : (
+          <form onSubmit={e => { e.preventDefault(); handleForgotPassword(); }} className="space-y-4">
+            <div>
+              <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
+              <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus />
+            </div>
+            <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+            <MotionButton type="submit" disabled={isLoading} whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.97 }} className={primaryBtn} style={primaryBtnStyle}>
+              {isLoading ? 'Sending...' : 'Send Reset Link'}
+            </MotionButton>
+          </form>
+        )}
+      </Card>
+    );
+  }
+
+  // ═══════════════════════════════════════════════════════════
   // REGISTER — Multi-step
   // ═══════════════════════════════════════════════════════════
   const selectedAvatar = avatar || defaultAvatar;
@@ -365,24 +398,25 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         {registerStep === 1 && (
           <MotionDiv key="step1" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.25 }}>
             <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Let&apos;s get you set up</h2>
-            <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Pick your school and choose a name. This is how you&apos;ll log in.</p>
+            <p className="text-sm mb-8" style={{ color: '#7a7068' }}>We&apos;ll use your email to create your account and for password resets.</p>
             <div className="space-y-4">
+              <div>
+                <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
+                <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus />
+              </div>
+              <div>
+                <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your Name</label>
+                <input type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="e.g. Sean, Emma, Jordan" className={inputClass} />
+              </div>
               <div>
                 <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
                 <div className="relative">
-                  <select value={school} onChange={e => { setSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!school ? 'text-zinc-400' : ''}`} autoFocus>
+                  <select value={school} onChange={e => { setSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!school ? 'text-zinc-400' : ''}`}>
                     <option value="" disabled>Select your school</option>
                     {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
                   </select>
                   <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
                 </div>
-              </div>
-              <div>
-                <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your Name</label>
-                <input type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="e.g. sean, emma_k, jmurphy" className={inputClass} />
-                {name.trim() && (
-                  <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>You&apos;ll log in as <span className="font-semibold" style={{ color: '#2A7D6F' }}>{name.trim().toLowerCase().replace(/\s+/g, '')}</span></p>
-                )}
               </div>
               <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
               <MotionButton whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.97 }} onClick={handleRegisterNext} className={primaryBtn} style={primaryBtnStyle}>
