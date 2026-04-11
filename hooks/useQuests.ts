@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useMemo, useRef, useEffect } from 'react';
 import { doc, setDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
@@ -74,6 +74,8 @@ export function useQuests(
   timetableCompletions: Record<string, string[]> | undefined,
 ): { questState: QuestState | null; claimReward: () => Promise<void>; reload: () => void } {
   const { rawProgressDoc, progressLoaded, reloadProgress } = useProgress();
+  const isMountedRef = useRef(true);
+  useEffect(() => () => { isMountedRef.current = false; }, []);
 
   const sessions: StudySessionRecord[] = rawProgressDoc.studySessions ?? [];
   const debriefs: DebriefEntry[] = rawProgressDoc.studyDebriefs ?? [];
@@ -230,9 +232,9 @@ export function useQuests(
         pointsData: { totalEarned: increment(questState.quest.rewardPoints) },
         questRewards: { [questState.quest.id]: new Date().toISOString() },
       }, { merge: true });
-      setQuestRewards(prev => ({ ...prev, [questState.quest.id]: new Date().toISOString() }));
+      if (isMountedRef.current) setQuestRewards(prev => ({ ...prev, [questState.quest.id]: new Date().toISOString() }));
     } catch (err) {
-      console.error('Failed to claim quest reward:');
+      console.error('Failed to claim quest reward:', err);
     }
   }, [uid, questState]);
 

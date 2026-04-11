@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { collection, query, where, orderBy, limit, getDocs, addDoc, writeBatch, doc, serverTimestamp, Timestamp, increment } from 'firebase/firestore';
 import { db } from '../firebase';
 import { ShopItem } from '../types';
@@ -28,6 +28,8 @@ export interface PendingGift {
 export function useGifts(uid?: string) {
   const [pendingGifts, setPendingGifts] = useState<PendingGift[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const isMountedRef = useRef(true);
+  useEffect(() => () => { isMountedRef.current = false; }, []);
 
   // Load pending gifts for this user
   useEffect(() => {
@@ -130,9 +132,9 @@ export function useGifts(uid?: string) {
       const batch = writeBatch(db);
       batch.update(doc(db, 'gifts', giftId), { status: 'placed' });
       await batch.commit();
-      setPendingGifts(prev => prev.filter(g => g.id !== giftId));
+      if (isMountedRef.current) setPendingGifts(prev => prev.filter(g => g.id !== giftId));
     } catch (err) {
-      console.error('[useGifts] Failed to mark gift placed:');
+      console.error('[useGifts] Failed to mark gift placed:', err);
     }
   }, []);
 

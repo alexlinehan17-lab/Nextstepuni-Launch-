@@ -42,6 +42,8 @@ export function useTeachBack(uid?: string, school?: string) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const seenIdsRef = useRef<Set<string>>(new Set());
   const fetchedForSubjectRef = useRef('');
+  const isMountedRef = useRef(true);
+  useEffect(() => () => { isMountedRef.current = false; }, []);
 
   // Load seen IDs from context
   useEffect(() => {
@@ -101,11 +103,11 @@ export function useTeachBack(uid?: string, school?: string) {
         createdAt: Date.now(),
         helpfulCount: 0,
       });
-      setIsSubmitting(false);
+      if (isMountedRef.current) setIsSubmitting(false);
       return true;
     } catch (err) {
-      console.error('[TeachBack] Failed to submit:');
-      setIsSubmitting(false);
+      console.error('[TeachBack] Failed to submit:', err);
+      if (isMountedRef.current) setIsSubmitting(false);
       return false;
     }
   }, [uid, school]);
@@ -118,11 +120,11 @@ export function useTeachBack(uid?: string, school?: string) {
         helpfulCount: increment(1),
       });
     } catch (err) {
-      console.error('[TeachBack] Failed to mark helpful:');
+      console.error('[TeachBack] Failed to mark helpful:', err);
     }
     // Also mark seen
     seenIdsRef.current.add(teachBackId);
-    setTeachBackToRead(null);
+    if (isMountedRef.current) setTeachBackToRead(null);
     try {
       await updateDoc(doc(db, 'progress', uid), {
         teachBacksSeen: arrayUnion(teachBackId),

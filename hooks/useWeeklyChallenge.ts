@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { doc, setDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
@@ -29,6 +29,8 @@ export function useWeeklyChallenge(uid: string | undefined): WeeklyChallengeStat
 
   const [current, setCurrent] = useState(0);
   const [isClaimed, setIsClaimed] = useState(false);
+  const isMountedRef = useRef(true);
+  useEffect(() => () => { isMountedRef.current = false; }, []);
   const [isLoaded, setIsLoaded] = useState(false);
   const [version, setVersion] = useState(0);
 
@@ -101,9 +103,9 @@ export function useWeeklyChallenge(uid: string | undefined): WeeklyChallengeStat
         pointsData: { totalEarned: increment(challenge.rewardPoints) },
         weeklyChallengeRewards: { [challenge.id]: new Date().toISOString() },
       }, { merge: true });
-      setIsClaimed(true);
+      if (isMountedRef.current) setIsClaimed(true);
     } catch (err) {
-      console.error('Failed to claim weekly challenge reward:');
+      console.error('Failed to claim weekly challenge reward:', err);
     }
   }, [uid, isClaimed, challenge.id, challenge.rewardPoints]);
 
