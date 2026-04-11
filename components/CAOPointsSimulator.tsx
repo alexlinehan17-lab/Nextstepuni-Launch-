@@ -10,7 +10,7 @@ import {
   Settings, Star, RotateCcw, ChevronDown, ChevronUp, TrendingUp, Info, Compass,
 } from 'lucide-react';
 import {
-  type StudentSubjectProfile, type Level,
+  type StudentSubjectProfile, type Grade, type Level,
   LC_SUBJECTS, getPointsForGrade, getGradesForLevel,
 } from './subjectData';
 import { doc, setDoc } from 'firebase/firestore';

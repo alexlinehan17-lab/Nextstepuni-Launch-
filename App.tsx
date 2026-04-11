@@ -5,7 +5,7 @@
 */
 
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
-import { Home, Rocket, Dumbbell, Timer, Mountain } from 'lucide-react';
+import { Home, Rocket, Dumbbell, Timer, Mountain, User } from 'lucide-react';
 import { UserProfile, MobileProfileSheet } from './components/UserProfileMenu';
 import { CategoryType } from './components/KnowledgeTree';
 import AppRouter from './components/AppRouter';
@@ -31,7 +31,7 @@ import { useGamification } from './hooks/useGamification';
 import { createStarterState } from './hooks/useIslandShop';
 import { findBestLandPlacement } from './components/journey/hex/hexGeometry';
 import { type IslandState } from './types';
-import { type AthleteRank } from './gamificationConfig';
+import { type AthleteRank, type AchievementDefinition } from './gamificationConfig';
 import { type StudentSubjectProfile } from './components/subjectData';
 import NorthStarEditModal from './components/NorthStarEditModal';
 import ChangeSubjectsModal from './components/ChangeSubjectsModal';

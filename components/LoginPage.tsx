@@ -31,6 +31,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const [showConfirmPw, setShowConfirmPw] = useState(false);
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [, setResetSent] = useState(false);
 
   const handleLogin = async () => {
     setIsLoading(true);

@@ -9,6 +9,7 @@ import { UserProgress } from '../../types';
 import { getPointsForGrade, LC_SUBJECTS } from '../subjectData';
 import { TimetableCompletions } from '../subjectData';
 import { GCStudentFullData, SubjectGapData } from './gcTypes';
+import { getStudentStatus } from '../../utils/studentStatus';
 
 // ─── Progress Helpers ───────────────────────────────────────────────────────
 

@@ -104,6 +104,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   const daysUntilLC = getDaysUntilLC();
   const status = getStudentStatus(student, allCourses);
   const statusReasons = getStatusReasons(student, allCourses);
+  const supportReasons = statusReasons;
 
   const STATUS_ICONS: Record<StudentStatus, React.ElementType> = {
     'new': UserPlus, 'at-risk': AlertTriangle, 'drifting': TrendingDown,
