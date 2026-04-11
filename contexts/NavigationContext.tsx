@@ -122,6 +122,7 @@ function navigationReducer(state: NavigationState, action: NavigationAction): Na
     case 'NAVIGATE_TO_ONBOARDING':
       return { ...state, viewState: 'onboarding', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'SET_ACTIVE_TOOL':
+      if (state.activeTool === action.tool) return state;
       return { ...state, activeTool: action.tool };
     case 'RESTORE_STATE':
       return { ...state, ...action.state };

@@ -224,9 +224,12 @@ export function useQuests(
     return { quest, current, isCompleted, isClaimed, dayNumber, isOnboarding };
   }, [isLoaded, uid, studentProfile, topicMastery, courses, userProgress, sessions, debriefs, streak, timetableCompletions, questRewards, mockResults]);
 
-  // Claim reward
+  // Claim reward (in-flight guard prevents double-claim on rapid clicks)
+  const claimingRef = useRef(false);
   const claimReward = useCallback(async () => {
     if (!uid || !questState || questState.isClaimed || !questState.isCompleted) return;
+    if (claimingRef.current) return;
+    claimingRef.current = true;
     try {
       await setDoc(doc(db, 'progress', uid), {
         pointsData: { totalEarned: increment(questState.quest.rewardPoints) },
@@ -235,6 +238,8 @@ export function useQuests(
       if (isMountedRef.current) setQuestRewards(prev => ({ ...prev, [questState.quest.id]: new Date().toISOString() }));
     } catch (err) {
       console.error('Failed to claim quest reward:', err);
+    } finally {
+      claimingRef.current = false;
     }
   }, [uid, questState]);
 
