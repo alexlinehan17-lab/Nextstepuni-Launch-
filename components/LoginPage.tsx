@@ -155,17 +155,37 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const primaryBtn = "w-full py-3.5 rounded-full text-white text-[15px] font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed";
   const primaryBtnStyle = { backgroundColor: '#2A7D6F', borderBottom: '3px solid #1a5a4e', boxShadow: '0 4px 0 #1a5a4e' };
 
-  // ── Card wrapper ──
-  const Card: React.FC<{ children: React.ReactNode; maxW?: string }> = ({ children, maxW = 'max-w-md' }) => (
-    <div className="min-h-screen flex flex-col items-center justify-center p-5" style={{ backgroundColor: '#FDF8F0' }}>
+  // ── Aurora gradient left panel ──
+  const gradientPanel = (
+    <div className="hidden md:block w-1/2 relative overflow-hidden" style={{ borderRadius: '16px 0 0 16px' }}>
+      <div className="absolute inset-0" style={{ backgroundColor: '#EAE5DE' }} />
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, #FDF8F0 0%, transparent 15%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 140% 70% at 50% 50%, rgba(140,120,210,0.5) 0%, transparent 65%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 100% 50% at 35% 40%, rgba(155,135,225,0.35) 0%, transparent 60%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 120% 55% at 50% 95%, rgba(225,110,160,0.65) 0%, transparent 50%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 90% 45% at 50% 75%, rgba(215,130,175,0.4) 0%, transparent 55%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 65% at 0% 60%, rgba(120,145,225,0.4) 0%, transparent 60%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 65% at 100% 60%, rgba(120,145,225,0.35) 0%, transparent 60%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 55% 40% at 65% 88%, rgba(240,150,120,0.4) 0%, transparent 50%)' }} />
+    </div>
+  );
+
+  // ── Card wrapper — split panel on desktop, full-width on mobile ──
+  const Card: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+    <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8" style={{ backgroundColor: '#FAFAF7' }}>
       <MotionDiv
-        initial={{ opacity: 0, y: 24 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-        className={`w-full ${maxW} bg-white dark:bg-zinc-900 rounded-2xl p-8 md:p-10`}
-        style={{ border: '2px solid #1a1a1a' }}
+        transition={{ duration: 0.5, ease: 'easeOut' }}
+        className="w-full max-w-5xl bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden flex"
+        style={{ minHeight: 540, boxShadow: '0 2px 8px rgba(0,0,0,0.06), 0 12px 40px rgba(0,0,0,0.04)', border: '1.5px solid rgba(0,0,0,0.25)' }}
       >
-        {children}
+        {gradientPanel}
+        <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-14 py-12">
+          <div className="w-full max-w-[380px] mx-auto">
+            {children}
+          </div>
+        </div>
       </MotionDiv>
       {/* DEV button */}
       <button onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })} className="mt-6 px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[9px] font-mono hover:bg-red-600/20 transition-colors">
