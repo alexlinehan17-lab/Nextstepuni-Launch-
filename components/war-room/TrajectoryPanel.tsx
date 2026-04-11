@@ -13,7 +13,7 @@ import {
   HIGHER_GRADES, LC_SUBJECTS,
 } from '../subjectData';
 import { getSubjectColor, getDistinctSubjectHex } from '../../studySessionData';
-import { useMockResults } from '../../hooks/useMockResults';
+import { type useMockResults } from '../../hooks/useMockResults';
 import { type MockResult, CARD_STYLE, CARD_CLASS, gradeToPoints } from './warRoomShared';
 
 // ── Constants ───────────────────────────────────────────────

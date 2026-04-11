@@ -6,7 +6,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { UserSettings, type AccentThemeId } from '../types';
+import { type UserSettings, type AccentThemeId } from '../types';
 import { ACCENT_THEMES } from '../themeData';
 
 const STORAGE_KEY = 'nextstep-settings';

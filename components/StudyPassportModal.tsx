@@ -8,8 +8,8 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { X, Check, Lock } from 'lucide-react';
-import { CategoryType } from './KnowledgeTree';
-import { CourseData } from './Library';
+import { type CategoryType } from './KnowledgeTree';
+import { type CourseData } from './Library';
 
 type UserProgress = {
   [moduleId: string]: { unlockedSection: number };

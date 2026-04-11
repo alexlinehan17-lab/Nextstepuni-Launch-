@@ -6,8 +6,8 @@
 import React, { Suspense, memo, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import * as THREE from 'three';
-import { IslandPlacement } from '../../types';
+import type * as THREE from 'three';
+import { type IslandPlacement } from '../../types';
 import HexIsland from './hex/HexIsland';
 
 /* ── Slow island bob ── */

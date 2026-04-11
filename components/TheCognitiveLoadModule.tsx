@@ -7,7 +7,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { Cpu, SlidersHorizontal, AlertTriangle, Activity, Wrench } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { fuchsiaTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Eye, Workflow, Box, Film, AlertTriangle, Pyramid
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { cyanTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

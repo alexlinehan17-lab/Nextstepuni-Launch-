@@ -10,7 +10,7 @@ import { MotionDiv } from './Motion';
 import { X, Check, Lock, Sun, Moon, RefreshCw, LogOut, ChevronRight, Compass } from 'lucide-react';
 import { AVATAR_SEEDS, getAvatarUrl } from './Auth';
 import { EXTRA_AVATAR_SEEDS } from './RewardShopModal';
-import { UserSettings } from '../types';
+import { type UserSettings } from '../types';
 
 interface SettingsModalProps {
   isOpen: boolean;

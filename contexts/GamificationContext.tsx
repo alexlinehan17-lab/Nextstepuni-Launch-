@@ -6,7 +6,7 @@
 import React, { createContext, useContext, useState, useEffect, useRef, useCallback } from 'react';
 import { db } from '../firebase';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { useGamification } from '../hooks/useGamification';
+import { type useGamification } from '../hooks/useGamification';
 import { type AthleteRank, type AchievementDefinition } from '../gamificationConfig';
 import { type IslandState } from '../types';
 import { findBestLandPlacement } from '../components/journey/hex/hexGeometry';

@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Battery, Brain, Moon, Coffee, HeartPulse, SlidersHorizontal
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { orangeTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

@@ -3,12 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { CourseData } from '../Library';
-import { CategoryType } from '../KnowledgeTree';
-import { UserProgress } from '../../types';
+import { type CourseData } from '../Library';
+import { type CategoryType } from '../KnowledgeTree';
+import { type UserProgress } from '../../types';
 import { getPointsForGrade, LC_SUBJECTS } from '../subjectData';
-import { TimetableCompletions } from '../subjectData';
-import { GCStudentFullData, SubjectGapData } from './gcTypes';
+import { type TimetableCompletions } from '../subjectData';
+import { type GCStudentFullData, type SubjectGapData } from './gcTypes';
 import { getStudentStatus } from '../../utils/studentStatus';
 
 // ─── Progress Helpers ───────────────────────────────────────────────────────

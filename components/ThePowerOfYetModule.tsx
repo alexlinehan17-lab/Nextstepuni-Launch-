@@ -11,7 +11,7 @@ import { MotionDiv } from './Motion';
 import {
   Book, RotateCcw, Brain, Link, Wrench
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { yellowTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

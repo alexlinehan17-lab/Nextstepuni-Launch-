@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { Compass, Target, TrendingUp, AlertTriangle, BrainCircuit, Rocket } from 'lucide-react';
-import { ModuleProgress, ModuleTheme } from '../types';
+import { type ModuleProgress, type ModuleTheme } from '../types';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import {
@@ -14,7 +14,7 @@ import {
   purpleTheme, fuchsiaTheme, indigoTheme, violetTheme,
   pinkTheme, limeTheme, yellowTheme, grayTheme
 } from '../moduleThemes';
-import { SUBJECT_MODULE_CONTENT, SubjectHighlight } from '../subjectModuleData';
+import { SUBJECT_MODULE_CONTENT, type SubjectHighlight } from '../subjectModuleData';
 
 const SECTION_ICONS = [Compass, Target, TrendingUp, AlertTriangle, BrainCircuit, Rocket];
 

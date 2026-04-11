@@ -8,7 +8,7 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { X, Star } from 'lucide-react';
-import { NorthStar } from '../types';
+import { type NorthStar } from '../types';
 import NorthStarOnboarding from './NorthStarOnboarding';
 
 interface NorthStarEditModalProps {

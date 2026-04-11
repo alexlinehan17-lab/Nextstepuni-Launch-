@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { CategoryType } from './components/KnowledgeTree';
-import { CourseData } from './components/Library';
+import { type CategoryType } from './components/KnowledgeTree';
+import { type CourseData } from './components/Library';
 
 export const categoryColorMap: Record<CategoryType, { gradient: string; accentColor: string; auraColor: string; pillBgColor: string }> = {
   'architecture-mindset': {

@@ -7,10 +7,10 @@ import { useState, useEffect, useCallback, useMemo } from 'react';
 import { doc, setDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
-import { NorthStar, IslandState, IslandPlacement, ShopItem, NorthStarCategory } from '../types';
+import { type NorthStar, type IslandState, type IslandPlacement, type ShopItem, type NorthStarCategory } from '../types';
 import {
   SHOP_CATALOG, EXCLUSIVE_ITEMS, STARTER_PACKS,
-  MILESTONE_REWARDS, MilestoneReward,
+  MILESTONE_REWARDS, type MilestoneReward,
   getEffectivePrice, getUnlockRequirement,
 } from '../islandShopData';
 import {

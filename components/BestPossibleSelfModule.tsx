@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import {
   MapPin, BatteryWarning, Filter, Zap, ClipboardCheck
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { blueTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

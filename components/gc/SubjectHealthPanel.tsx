@@ -6,7 +6,7 @@
 import React, { useMemo } from 'react';
 import { MotionDiv } from '../Motion';
 import { TrendingUp, TrendingDown, Minus, Users } from 'lucide-react';
-import { GCStudentFullData } from './gcTypes';
+import { type GCStudentFullData } from './gcTypes';
 
 const CUSTOM_EASE = [0.16, 1, 0.3, 1] as const;
 

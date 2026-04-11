@@ -5,22 +5,22 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { CourseData } from './Library';
-import { SessionUser, getAvatarUrl } from './Auth';
+import { type CourseData } from './Library';
+import { type SessionUser, getAvatarUrl } from './Auth';
 import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays, Moon, Sun } from 'lucide-react';
 import { db } from '../firebase';
 import { collection, query, where, getDocs, doc, getDoc, deleteDoc, setDoc } from 'firebase/firestore';
 import { getSchoolName } from '../schoolData';
-import { UserProgress, PointsData } from '../types';
-import { StudentSubjectProfile, TimetableCompletions, TimetableStreak } from './subjectData';
-import { NorthStar } from '../types';
-import { GameState } from './journeySimulatorData';
+import { type UserProgress, type PointsData } from '../types';
+import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak } from './subjectData';
+import { type NorthStar } from '../types';
+import { type GameState } from './journeySimulatorData';
 import {
-  GCStudentFullData,
-  JourneyResult,
-  MockResultEntry,
+  type GCStudentFullData,
+  type JourneyResult,
+  type MockResultEntry,
 } from './gc/gcTypes';
-import { DebriefEntry } from './StudyDebrief';
+import { type DebriefEntry } from './StudyDebrief';
 import { GCOverview } from './gc/GCOverview';
 import { GCKeyEvents } from './gc/GCKeyEvents';
 import { GCStudentDetail } from './gc/GCStudentDetail';

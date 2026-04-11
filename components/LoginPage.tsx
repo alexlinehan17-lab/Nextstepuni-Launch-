@@ -10,7 +10,7 @@ import { ArrowLeft, Eye, EyeOff, School, GraduationCap } from 'lucide-react';
 import { auth, db } from '../firebase';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { SessionUser, getAvatarUrl, AVATAR_SEEDS } from './Auth';
+import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from './Auth';
 import { SCHOOLS } from '../schoolData';
 
 interface LoginPageProps {

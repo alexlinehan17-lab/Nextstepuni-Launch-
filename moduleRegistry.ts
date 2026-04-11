@@ -3,8 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { lazy } from 'react';
-import { ModuleProgress } from './types';
+import type React from 'react';
+import { lazy } from 'react';
+import { type ModuleProgress } from './types';
 
 type ModuleComponent = React.LazyExoticComponent<React.FC<{
   onBack: () => void;

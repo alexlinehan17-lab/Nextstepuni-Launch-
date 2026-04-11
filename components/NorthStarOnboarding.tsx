@@ -7,7 +7,7 @@ import React, { useState, useMemo } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { ArrowRight, ArrowLeft, Check, Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen, Banknote, Car, Home, Users, Briefcase, Rocket, Award, UserPlus, TrendingUp, MicOff, Signpost, Plane, PartyPopper, HandHeart } from 'lucide-react';
-import { NorthStarCategory, NorthStar } from '../types';
+import { type NorthStarCategory, type NorthStar } from '../types';
 import { NORTH_STAR_CATEGORIES, VISION_CARDS, CATEGORY_COLORS, CATEGORY_PROMPTS } from '../northStarData';
 
 const ICON_MAP: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {

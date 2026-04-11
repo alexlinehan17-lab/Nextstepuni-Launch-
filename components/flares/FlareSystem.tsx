@@ -9,7 +9,7 @@ import { MotionButton, MotionDiv } from '../Motion';
 import { createPortal } from 'react-dom';
 import { X, Send, RefreshCw, ThumbsUp, CheckCircle, AlertCircle, MessageCircle, Flame, Radio } from 'lucide-react';
 import { containsProfanity } from './profanityFilter';
-import { useFlares, FlareResponse } from '../../hooks/useFlares';
+import { useFlares, type FlareResponse } from '../../hooks/useFlares';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 

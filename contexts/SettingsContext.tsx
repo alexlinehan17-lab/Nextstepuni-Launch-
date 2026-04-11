@@ -4,7 +4,7 @@
  */
 
 import { createContext, useContext } from 'react';
-import { UserSettings } from '../types';
+import { type UserSettings } from '../types';
 
 interface SettingsContextValue {
   settings: UserSettings;

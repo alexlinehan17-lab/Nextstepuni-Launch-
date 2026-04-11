@@ -9,7 +9,7 @@ import { motion, Reorder } from 'framer-motion';
 import {
   Target, Brain, Languages, Mic, Headphones, BookOpen, PenSquare, Wrench
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { skyTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

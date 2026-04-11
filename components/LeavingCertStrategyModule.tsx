@@ -7,7 +7,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { Calculator, Briefcase, Target, PenSquare, Eye, HeartPulse } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

@@ -7,9 +7,9 @@ import React, { useState, useMemo, useRef, useCallback } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { ChevronDown, ChevronRight, Star, Lock, Gift, Check } from 'lucide-react';
-import { ShopItemCategory } from '../../types';
-import { isUniqueItem, MilestoneReward } from '../../islandShopData';
-import { EnrichedShopItem, MilestoneRewardStatus } from '../../hooks/useIslandShop';
+import { type ShopItemCategory } from '../../types';
+import { isUniqueItem, type MilestoneReward } from '../../islandShopData';
+import { type EnrichedShopItem, type MilestoneRewardStatus } from '../../hooks/useIslandShop';
 
 interface IslandShopDrawerProps {
   isOpen: boolean;

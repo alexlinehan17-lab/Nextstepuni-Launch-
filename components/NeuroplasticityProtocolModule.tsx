@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import {
   BrainCircuit, Wrench, BookOpen, BarChart3, ClipboardCheck, ShieldCheck
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { orangeTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

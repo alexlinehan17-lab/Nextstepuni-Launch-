@@ -7,14 +7,14 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { Home, Rocket, Dumbbell, Timer, Mountain, User } from 'lucide-react';
 import { UserProfile, MobileProfileSheet } from './components/UserProfileMenu';
-import { CategoryType } from './components/KnowledgeTree';
+import { type CategoryType } from './components/KnowledgeTree';
 import AppRouter from './components/AppRouter';
 import OfflineBanner from './components/OfflineBanner';
 import SettingsModal from './components/SettingsModal';
 import StudyPassportModal from './components/StudyPassportModal';
 import { db } from './firebase';
 import { doc, getDoc, setDoc, runTransaction } from 'firebase/firestore';
-import { ModuleProgress, NorthStar } from './types';
+import { type ModuleProgress, type NorthStar } from './types';
 import { useToast } from './components/Toast';
 import { ALL_COURSES, categoryTitles, SUBJECT_TO_MODULE } from './courseData';
 import { useSettings } from './hooks/useSettings';

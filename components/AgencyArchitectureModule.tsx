@@ -9,7 +9,7 @@ import { MotionDiv } from './Motion';
 import {
   Code, SlidersHorizontal, UserX, Recycle, Flag
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { amberTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

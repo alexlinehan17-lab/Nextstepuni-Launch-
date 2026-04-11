@@ -4,8 +4,8 @@
  */
 
 import { useMemo } from 'react';
-import { UserProgress } from '../types';
-import { CategoryType } from '../components/KnowledgeTree';
+import { type UserProgress } from '../types';
+import { type CategoryType } from '../components/KnowledgeTree';
 
 interface CourseInfo {
   id: string;

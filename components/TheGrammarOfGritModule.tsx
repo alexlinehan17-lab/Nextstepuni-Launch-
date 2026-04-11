@@ -8,7 +8,7 @@ import { MotionDiv } from './Motion';
 import {
   Shield, HeartCrack, Recycle, Mic, Wrench
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { blueTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

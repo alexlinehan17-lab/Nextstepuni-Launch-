@@ -7,8 +7,8 @@ import React, { useState, useMemo } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { X, Compass, Trophy, LayoutGrid, Crown } from 'lucide-react';
-import { PeerIsland } from '../../hooks/usePeerIslands';
-import { IslandState } from '../../types';
+import { type PeerIsland } from '../../hooks/usePeerIslands';
+import { type IslandState } from '../../types';
 import { getAvatarUrl } from '../Auth';
 
 function computeIslandScore(state: IslandState): number {

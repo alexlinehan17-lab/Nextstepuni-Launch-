@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Target, Brain, SlidersHorizontal, Wrench, Compass, BarChart
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { tealTheme } from '../moduleThemes';
 import { Highlight, ReadingSection } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

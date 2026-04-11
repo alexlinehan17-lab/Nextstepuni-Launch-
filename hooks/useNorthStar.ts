@@ -6,7 +6,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db, auth } from '../firebase';
-import { NorthStar } from '../types';
+import { type NorthStar } from '../types';
 
 export function useNorthStar() {
   const [northStar, setNorthStar] = useState<NorthStar | null>(null);

@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { GCStudentFullData } from '../components/gc/gcTypes';
-import { CourseData } from '../components/Library';
+import { type GCStudentFullData } from '../components/gc/gcTypes';
+import { type CourseData } from '../components/Library';
 import { getRankForPoints } from '../gamificationConfig';
 
 // ─── Helpers ────────────────────────────────────────────────────────────────

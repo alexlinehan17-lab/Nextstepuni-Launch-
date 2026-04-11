@@ -14,8 +14,8 @@ import {
   Zap, Brain, Target, Shield, Compass, Star,
   Sun, Moon, Home, BarChart3, Rocket, PanelLeft, Award, Settings, LogOut, Layers, RefreshCw, User, Mountain
 } from 'lucide-react';
-import { CategoryType } from './KnowledgeTree';
-import { NorthStar, AccentThemeId, CardStyleId } from '../types';
+import { type CategoryType } from './KnowledgeTree';
+import { type NorthStar, type AccentThemeId, type CardStyleId } from '../types';
 import { type StudentSubjectProfile } from './subjectData';
 import { useSettingsContext } from '../contexts/SettingsContext';
 import { ACCENT_THEME_LIST, ACCENT_THEMES, CARD_STYLES } from '../themeData';

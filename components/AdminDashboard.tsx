@@ -4,10 +4,10 @@
 */
 import React, { useState, useEffect } from 'react';
 import { MotionDiv } from './Motion';
-import { CourseData } from './Library';
-import { SessionUser, getAvatarUrl } from './Auth';
+import { type CourseData } from './Library';
+import { type SessionUser, getAvatarUrl } from './Auth';
 import { GraduationCap, LogOut, Trash2, AlertTriangle } from 'lucide-react';
-import { CategoryType } from './KnowledgeTree';
+import { type CategoryType } from './KnowledgeTree';
 import { db } from '../firebase';
 import { collection, getDocs, doc, deleteDoc } from 'firebase/firestore';
 

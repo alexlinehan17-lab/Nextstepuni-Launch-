@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 import {
   Target, BarChart, PieChart, Gamepad2, Columns, CalendarClock, Star
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { tealTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

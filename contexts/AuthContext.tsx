@@ -5,9 +5,9 @@
 
 import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
 import { auth, db } from '../firebase';
-import { onAuthStateChanged, signOut, User as FirebaseUser } from 'firebase/auth';
+import { onAuthStateChanged, signOut, type User as FirebaseUser } from 'firebase/auth';
 import { doc, getDoc } from 'firebase/firestore';
-import { SessionUser } from '../components/Auth';
+import { type SessionUser } from '../components/Auth';
 import { type UserProgress, type NorthStar } from '../types';
 import { type StudentSubjectProfile } from '../components/subjectData';
 import { generateAutoNotifications } from '../components/gc/gcNotifications';

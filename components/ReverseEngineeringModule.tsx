@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 import { motion, Reorder } from 'framer-motion';
 import { CheckCircle2, History, DraftingCompass, ClipboardList, Layers, BrainCircuit, Shield } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { skyTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

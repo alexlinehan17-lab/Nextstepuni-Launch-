@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { UserProgress } from './types';
+import { type UserProgress } from './types';
 
 // Points earned for completing content
 export const POINTS = {

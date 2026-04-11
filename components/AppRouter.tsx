@@ -9,7 +9,7 @@ import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
 import { useToast } from './Toast';
 import { LoadingSpinner } from './LoadingSpinner';
-import { KnowledgeTree, CategoryType } from './KnowledgeTree';
+import { KnowledgeTree, type CategoryType } from './KnowledgeTree';
 import { Library } from './Library';
 import ModuleShowcase from './ModuleShowcase';
 

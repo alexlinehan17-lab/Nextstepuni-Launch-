@@ -7,8 +7,8 @@ import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { ArrowLeft, Check, ChevronRight, ChevronDown } from 'lucide-react';
-import { CourseData } from './Library';
-import { LEARNING_PATHS, LearningPath } from '../learningPaths';
+import { type CourseData } from './Library';
+import { LEARNING_PATHS, type LearningPath } from '../learningPaths';
 
 type UserProgress = {
   [moduleId: string]: { unlockedSection: number };

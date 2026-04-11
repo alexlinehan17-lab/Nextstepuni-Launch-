@@ -6,7 +6,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { collection, query, where, orderBy, limit, getDocs, writeBatch, doc, serverTimestamp, Timestamp, increment } from 'firebase/firestore';
 import { db } from '../firebase';
-import { ShopItem } from '../types';
+import { type ShopItem } from '../types';
 import { SHOP_CATALOG } from '../islandShopData';
 
 /** Max price for giftable items */

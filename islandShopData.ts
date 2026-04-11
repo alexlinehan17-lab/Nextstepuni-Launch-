@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { ShopItem, ShopItemCategory, IslandPlacement, NorthStarCategory } from './types';
+import { type ShopItem, type ShopItemCategory, type IslandPlacement, type NorthStarCategory } from './types';
 
 /** Categories where items can only be purchased once */
 const UNIQUE_CATEGORIES: Set<ShopItemCategory> = new Set(['building', 'vehicle']);

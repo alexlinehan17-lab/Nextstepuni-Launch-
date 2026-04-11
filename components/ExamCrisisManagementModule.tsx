@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { Cpu, Zap, Shield, Moon, Utensils, ClipboardList, Flag, Brain } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { skyTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

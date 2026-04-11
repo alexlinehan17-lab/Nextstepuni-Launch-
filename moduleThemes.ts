@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { ModuleTheme } from './types';
+import { type ModuleTheme } from './types';
 
 // ─── Theme colour definitions ───────────────────────────────────────────────
 // Each colour defines a Tailwind colour name and its hex for arbitrary values.

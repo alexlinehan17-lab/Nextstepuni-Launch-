@@ -10,7 +10,7 @@ import { MotionDiv } from './Motion';
 import {
   Cpu, Moon, Coffee, Zap, Repeat, ClipboardCheck, CheckCircle2
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { slateTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

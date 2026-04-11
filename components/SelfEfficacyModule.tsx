@@ -10,7 +10,7 @@ import { MotionPolygon } from './Motion';
 import {
   Brain, Target, Shield, Eye, Settings
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { roseTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

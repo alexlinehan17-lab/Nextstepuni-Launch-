@@ -7,10 +7,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon, LogOut, Settings, Flame, ChevronRight, Trophy, Award, BarChart3, Star, X } from 'lucide-react';
-import { SessionUser, getAvatarUrl, handleAvatarError } from './Auth';
-import { UserSettings } from '../types';
+import { type SessionUser, getAvatarUrl, handleAvatarError } from './Auth';
+import { type UserSettings } from '../types';
 import { type StreakData } from '../hooks/useStreak';
-import { FocusRecommendation } from '../hooks/useTodaysFocus';
+import { type FocusRecommendation } from '../hooks/useTodaysFocus';
 import { ACCENT_THEME_LIST } from '../themeData';
 import { type AccentThemeId } from '../types';
 

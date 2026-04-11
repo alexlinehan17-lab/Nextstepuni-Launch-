@@ -8,7 +8,7 @@ import HexTile from './HexTile';
 import HexDecoration from './HexDecoration';
 import SignDecoration from './SignDecoration';
 import Water from './Water';
-import { IslandPlacement } from '../../../types';
+import { type IslandPlacement } from '../../../types';
 
 /** Approximate height of a Kenney hex tile base surface */
 const TILE_SURFACE_Y = 0.23;

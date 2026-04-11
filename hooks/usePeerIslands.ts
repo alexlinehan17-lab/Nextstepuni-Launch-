@@ -6,7 +6,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { collection, query, where, getDocs, doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { IslandState, NorthStarCategory } from '../types';
+import { type IslandState, type NorthStarCategory } from '../types';
 import { createStarterState } from './useIslandShop';
 
 export interface PeerIsland {

@@ -10,7 +10,7 @@ import { MotionDiv } from './Motion';
 import {
   Target, Brain, SlidersHorizontal, AlertTriangle, PenTool, Key, BookOpen, Wrench
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { grayTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

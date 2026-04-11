@@ -3,12 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { SessionUser } from '../Auth';
-import { UserProgress } from '../../types';
-import { StudentSubjectProfile, TimetableCompletions, TimetableStreak } from '../subjectData';
-import { NorthStar, PointsData } from '../../types';
-import { GameState } from '../journeySimulatorData';
-import { DebriefEntry } from '../StudyDebrief';
+import { type SessionUser } from '../Auth';
+import { type UserProgress } from '../../types';
+import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak } from '../subjectData';
+import { type NorthStar, type PointsData } from '../../types';
+import { type GameState } from '../journeySimulatorData';
+import { type DebriefEntry } from '../StudyDebrief';
 
 // ─── Firestore document shapes (read-only from GC perspective) ──────────────
 

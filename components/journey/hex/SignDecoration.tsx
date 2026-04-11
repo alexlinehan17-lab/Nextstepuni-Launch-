@@ -4,7 +4,7 @@
  */
 
 import React, { useMemo, useRef, useState } from 'react';
-import * as THREE from 'three';
+import type * as THREE from 'three';
 import { useFrame } from '@react-three/fiber';
 import { useGLTF, Html } from '@react-three/drei';
 import { hexToWorld } from './hexGeometry';

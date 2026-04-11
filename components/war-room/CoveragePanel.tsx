@@ -10,7 +10,7 @@ import { getDistinctSubjectHex } from '../../studySessionData';
 import { getSyllabusTopics } from '../syllabusTopics';
 import { getSyllabusForSubject, getQuadrant, QUADRANT_LABELS } from '../syllabusData';
 import { type DebriefEntry } from '../StudyDebrief';
-import { useTopicMastery } from '../../hooks/useTopicMastery';
+import { type useTopicMastery } from '../../hooks/useTopicMastery';
 import { type UnifiedConfidence } from '../../types';
 import {
   CONFIDENCE_LABELS,

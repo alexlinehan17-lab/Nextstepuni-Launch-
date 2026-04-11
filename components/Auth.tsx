@@ -3,13 +3,13 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, MouseEvent } from 'react';
+import React, { useState, type MouseEvent } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionP } from './Motion';
 import { X, User as UserIcon, Key, Eye, EyeOff, User as StudentIcon, ArrowLeft, ChevronDown, School, GraduationCap } from 'lucide-react';
 import { auth, db } from '../firebase';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, deleteUser, updateProfile } from 'firebase/auth';
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, deleteUser, updateProfile, type User as FirebaseUser } from 'firebase/auth';
 import { doc, setDoc } from 'firebase/firestore';
 import { SCHOOLS } from '../schoolData';
 
@@ -200,7 +200,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
       return;
     }
 
-    let createdUser: import('firebase/auth').User | null = null;
+    let createdUser: FirebaseUser | null = null;
     let registeredUser: SessionUser | null = null;
     try {
         const email = `${username}@nextstep.app`;

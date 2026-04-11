@@ -6,8 +6,8 @@
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 
-import { GCStudentFullData } from '../components/gc/gcTypes';
-import { CourseData } from '../components/Library';
+import { type GCStudentFullData } from '../components/gc/gcTypes';
+import { type CourseData } from '../components/Library';
 import { getRankForPoints } from '../gamificationConfig';
 
 // ─── Helpers ────────────────────────────────────────────────────────────────

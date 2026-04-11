@@ -7,11 +7,11 @@ import React, { useState, useMemo, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2, X, AlertCircle, Eye, Megaphone, FileDown, UserPlus, CheckCircle, MinusCircle, Flag, Sparkles } from 'lucide-react';
-import { CourseData } from '../Library';
-import { CategoryType } from '../KnowledgeTree';
+import { type CourseData } from '../Library';
+import { type CategoryType } from '../KnowledgeTree';
 import { getAvatarUrl } from '../Auth';
 import { getSchoolName } from '../../schoolData';
-import { GCStudentFullData, StudentStatus } from './gcTypes';
+import { type GCStudentFullData, type StudentStatus } from './gcTypes';
 import {
   getOverallProgress,
   getCategoryProgress,

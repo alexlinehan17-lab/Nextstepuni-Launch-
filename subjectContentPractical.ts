@@ -9,7 +9,7 @@
  * SEC (State Examinations Commission) Leaving Certificate specifications.
  */
 
-import { SubjectModuleContent } from './subjectModuleData';
+import { type SubjectModuleContent } from './subjectModuleData';
 
 export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
 

@@ -10,14 +10,14 @@ import { ArrowLeft, Flame, Coins, ChevronDown, ChevronRight, BookOpen, AlertTria
 import { db } from '../../firebase';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { addNotification } from './gcNotifications';
-import { CourseData } from '../Library';
-import { CategoryType } from '../KnowledgeTree';
+import { type CourseData } from '../Library';
+import { type CategoryType } from '../KnowledgeTree';
 import { getAvatarUrl } from '../Auth';
 import { getSchoolName } from '../../schoolData';
 import { getPointsForGrade, LC_SUBJECTS } from '../subjectData';
-import { ARCHETYPES, STAT_LABELS, getStatGrade, StatKey } from '../journeySimulatorData';
+import { ARCHETYPES, STAT_LABELS, getStatGrade, type StatKey } from '../journeySimulatorData';
 import { NORTH_STAR_CATEGORIES, VISION_CARDS, CATEGORY_COLORS } from '../../northStarData';
-import { GCStudentFullData, type StudentStatus } from './gcTypes';
+import { type GCStudentFullData, type StudentStatus } from './gcTypes';
 import { hydrateCourses } from '../futureFinderData';
 import { type EarlyWarningAlert, type AlertSeverity } from './gcAlerts';
 import {

@@ -7,7 +7,7 @@ import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { Users, Brain, MessageSquare, Lightbulb, Flag } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { limeTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

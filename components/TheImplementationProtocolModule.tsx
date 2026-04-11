@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { Target, GitBranch, Lightbulb, Shield, Flag } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { roseTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

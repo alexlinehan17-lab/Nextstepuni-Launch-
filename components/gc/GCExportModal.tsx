@@ -8,8 +8,8 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { X, FileDown, FileText, ChevronDown } from 'lucide-react';
-import { GCStudentFullData } from './gcTypes';
-import { CourseData } from '../Library';
+import { type GCStudentFullData } from './gcTypes';
+import { type CourseData } from '../Library';
 import {
   generateStudentProgressCSV,
   generateAttendanceCSV,

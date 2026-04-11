@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import {
   Feather, BookOpen, Scale, Award, FileText
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { indigoTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

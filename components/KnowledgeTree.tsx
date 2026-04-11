@@ -12,8 +12,8 @@ import {
   User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Tag, X, Dumbbell
 } from 'lucide-react';
 import { getAvatarUrl } from '../components/Auth';
-import { CourseData, BentoModuleTile } from './Library';
-import { UserSettings } from '../types';
+import { type CourseData, BentoModuleTile } from './Library';
+import { type UserSettings } from '../types';
 import { type AthleteRank, ATHLETE_RANKS } from '../gamificationConfig';
 import { toDateKey } from './subjectData';
 import { getSubjectHex } from '../utils/subjectColors';

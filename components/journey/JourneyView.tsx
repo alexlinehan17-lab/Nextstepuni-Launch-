@@ -7,14 +7,14 @@ import React, { useState, useCallback, useEffect, useRef, Suspense } from 'react
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { ArrowLeft, Mountain, Users, Heart, Gift, X } from 'lucide-react';
-import { SessionUser } from '../Auth';
-import { NorthStar, UserProgress } from '../../types';
-import { MilestoneReward } from '../../islandShopData';
+import { type SessionUser } from '../Auth';
+import { type NorthStar, type UserProgress } from '../../types';
+import { type MilestoneReward } from '../../islandShopData';
 import { db } from '../../firebase';
 import { collection, query, where, getDocs, doc, getDoc } from 'firebase/firestore';
 
 const FlareSystem = React.lazy(() => import('../flares/FlareSystem'));
-import { useIslandShop, EnrichedShopItem } from '../../hooks/useIslandShop';
+import { useIslandShop, type EnrichedShopItem } from '../../hooks/useIslandShop';
 import JourneyCanvas from './JourneyCanvas';
 import JourneyProgressPill from './JourneyProgressPill';
 import IslandShopDrawer from './IslandShopDrawer';
@@ -23,7 +23,7 @@ import MilestoneRewardModal from './MilestoneRewardModal';
 import PeerIslandsList from './PeerIslandsList';
 import KudosButton from './KudosButton';
 import GiftButton from './GiftButton';
-import { usePeerIslands, PeerIsland } from '../../hooks/usePeerIslands';
+import { usePeerIslands, type PeerIsland } from '../../hooks/usePeerIslands';
 import { useKudos } from '../../hooks/useKudos';
 import { useGifts } from '../../hooks/useGifts';
 import { KUDOS_MESSAGES } from '../../kudosData';

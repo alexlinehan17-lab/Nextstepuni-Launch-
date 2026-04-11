@@ -6,10 +6,10 @@
 import React from 'react';
 import { MotionDiv } from './Motion';
 import { ArrowLeft, BookOpen, ChevronRight, TrendingUp } from 'lucide-react';
-import { CategoryType } from './KnowledgeTree';
-import { CourseData } from './Library';
-import { StreakData } from '../hooks/useStreak';
-import { FocusRecommendation } from '../hooks/useTodaysFocus';
+import { type CategoryType } from './KnowledgeTree';
+import { type CourseData } from './Library';
+import { type StreakData } from '../hooks/useStreak';
+import { type FocusRecommendation } from '../hooks/useTodaysFocus';
 
 type UserProgress = {
   [moduleId: string]: { unlockedSection: number };

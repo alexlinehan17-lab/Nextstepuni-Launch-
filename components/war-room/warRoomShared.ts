@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React from 'react';
+import type React from 'react';
 import { type Grade, getPointsForGrade, LC_SUBJECTS } from '../subjectData';
 import { type StudentSubjectProfile } from '../subjectData';
 

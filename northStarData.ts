@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { NorthStarCategory, NorthStarVisionCard } from './types';
+import { type NorthStarCategory, type NorthStarVisionCard } from './types';
 
 export interface NorthStarCategoryOption {
   id: NorthStarCategory;

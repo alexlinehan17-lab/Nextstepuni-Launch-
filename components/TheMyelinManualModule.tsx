@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 import {
   Cpu, Zap, SlidersHorizontal, Microscope, Construction
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { amberTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

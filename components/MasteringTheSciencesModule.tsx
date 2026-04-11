@@ -9,7 +9,7 @@ import { MotionDiv } from './Motion';
 import {
   Key, Leaf, Beaker, Atom, Sprout, BrainCircuit, Flag
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { emeraldTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

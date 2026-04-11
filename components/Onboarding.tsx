@@ -15,7 +15,7 @@ import {
   getGradeIndex, DAYS_OF_WEEK,
   type LCSubject,
 } from './subjectData';
-import { NorthStar } from '../types';
+import { type NorthStar } from '../types';
 import NorthStarOnboarding from './NorthStarOnboarding';
 
 interface OnboardingProps {

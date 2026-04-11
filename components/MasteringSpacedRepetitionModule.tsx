@@ -10,7 +10,7 @@ import { MotionDiv } from './Motion';
 import {
   Clock, BarChart2, CalendarDays, RadioTower, Wrench, Brain
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { skyTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

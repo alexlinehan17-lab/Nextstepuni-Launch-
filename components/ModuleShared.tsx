@@ -7,7 +7,7 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { Zap, Quote, Sparkles } from 'lucide-react';
-import { ModuleTheme } from '../types';
+import { type ModuleTheme } from '../types';
 
 /* ═══════════════════════════════════════════════════════
    Highlight — inline discovery tooltip

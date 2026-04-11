@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { SubjectModuleContent } from './subjectModuleData';
+import { type SubjectModuleContent } from './subjectModuleData';
 
 export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
   // ─────────────────────────────────────────────────────────────────────────

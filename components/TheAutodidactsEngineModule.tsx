@@ -10,7 +10,7 @@ import { MotionDiv } from './Motion';
 import {
   SlidersHorizontal, Repeat, Brain, BookOpen, PenSquare, Wrench, Highlighter
 } from 'lucide-react';
-import { ModuleProgress } from '../types';
+import { type ModuleProgress } from '../types';
 import { cyanTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';

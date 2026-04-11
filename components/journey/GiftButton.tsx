@@ -7,7 +7,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from '../Motion';
 import { Gift, X } from 'lucide-react';
-import { ShopItem } from '../../types';
+import { type ShopItem } from '../../types';
 import { GIFTABLE_ITEMS } from '../../hooks/useGifts';
 
 interface GiftButtonProps {
