@@ -17,7 +17,7 @@ import OfflineBanner from './components/OfflineBanner';
 import SettingsModal from './components/SettingsModal';
 import StudyPassportModal from './components/StudyPassportModal';
 import { auth, db } from './firebase';
-import { doc, getDoc, setDoc, updateDoc, increment } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, increment, runTransaction } from 'firebase/firestore';
 import { ModuleProgress, UserProgress, UserSettings, NorthStar } from './types';
 import { useToast } from './components/Toast';
 import { ALL_COURSES, categoryTitles, SUBJECT_TO_MODULE } from './courseData';
@@ -273,31 +273,30 @@ const App: React.FC = () => {
   const handleProgressUpdate = async (moduleId: string, newProgress: ModuleProgress) => {
     if (!user || user.isAdmin) return;
 
-    const prevSection = userProgress[moduleId]?.unlockedSection ?? 0;
+    const prevModuleProgress = userProgress[moduleId];
+    const prevSection = prevModuleProgress?.unlockedSection ?? 0;
     const newSection = newProgress.unlockedSection;
 
+    // Optimistic update — rolled back in catch if the write fails
     setUserProgress(prev => ({ ...prev, [moduleId]: newProgress }));
 
     try {
       const progressDocRef = doc(db, "progress", user.uid);
-      await setDoc(progressDocRef, { [moduleId]: newProgress }, { merge: true });
 
-      // Award points for newly unlocked sections
+      // Compute points to award (pure computation, no Firestore reads)
+      let pointsToAward = 0;
+      let isBonus = false;
       if (newSection > prevSection) {
         const sectionsUnlocked = newSection - prevSection;
-        let pointsToAward = sectionsUnlocked * POINTS.SECTION_COMPLETE;
+        pointsToAward = sectionsUnlocked * POINTS.SECTION_COMPLETE;
 
         const course = ALL_COURSES.find(c => c.id === moduleId);
         if (course) {
-          // Module complete bonus
           if (isModuleJustCompleted(newSection, course.sectionsCount) && !isModuleJustCompleted(prevSection, course.sectionsCount)) {
             pointsToAward += POINTS.MODULE_COMPLETE_BONUS;
           }
-
-          // Category complete bonus
           const updatedProgress = { ...userProgress, [moduleId]: newProgress };
           if (isCategoryJustCompleted(moduleId, updatedProgress, ALL_COURSES)) {
-            // Check it wasn't already complete before
             const wasComplete = isCategoryJustCompleted(moduleId, userProgress, ALL_COURSES);
             if (!wasComplete) {
               pointsToAward += POINTS.CATEGORY_COMPLETE_BONUS;
@@ -306,22 +305,40 @@ const App: React.FC = () => {
         }
 
         if (pointsToAward > 0) {
-          // Roll for bonus flash (15% chance of 2x)
-          const isBonus = gamification.rollBonusFlash();
-          const finalPoints = isBonus ? pointsToAward * 2 : pointsToAward;
-
-          await updateDoc(progressDocRef, {
-            'pointsData.totalEarned': increment(finalPoints),
-          });
-          pointsData.reload();
-
-          if (isBonus) {
-            setToastQueue(q => [...q, 'bonus-flash']);
-          }
-
-          // Update weekly goal progress for sections
-          gamification.updateWeeklyGoalProgress('sections', sectionsUnlocked);
+          isBonus = gamification.rollBonusFlash();
+          if (isBonus) pointsToAward *= 2;
         }
+      }
+
+      // Single transaction: save progress + award points atomically.
+      // Points are read INSIDE the transaction to avoid stale-closure clobber —
+      // two concurrent sections completing can't overwrite each other's points.
+      await runTransaction(db, async (txn) => {
+        const snap = await txn.get(progressDocRef);
+        const currentData = snap.data() || {};
+
+        // Merge progress update
+        const updates: Record<string, any> = { [moduleId]: newProgress };
+
+        // Award points inside the transaction — read current total from Firestore,
+        // never from a captured closure value
+        if (pointsToAward > 0) {
+          const currentPoints = currentData.pointsData?.totalEarned ?? 0;
+          updates['pointsData.totalEarned'] = currentPoints + pointsToAward;
+        }
+
+        txn.set(progressDocRef, updates, { merge: true });
+      });
+
+      pointsData.reload();
+
+      if (isBonus) {
+        setToastQueue(q => [...q, 'bonus-flash']);
+      }
+
+      if (newSection > prevSection) {
+        const sectionsUnlocked = newSection - prevSection;
+        gamification.updateWeeklyGoalProgress('sections', sectionsUnlocked);
       }
 
       // Check for newly unlocked achievements (after points have been written)
@@ -331,8 +348,10 @@ const App: React.FC = () => {
       }
       gamification.reload();
     } catch (error) {
-      console.error("Failed to save progress:");
+      console.error("Failed to save progress:", error);
       showToast('Couldn\'t save your progress — check your connection', 'error');
+      // Roll back optimistic update — restore the full previous object, not a minimal stub
+      setUserProgress(prev => ({ ...prev, [moduleId]: prevModuleProgress ?? { unlockedSection: 0 } }));
     }
   };
 

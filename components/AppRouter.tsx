@@ -30,7 +30,7 @@ import { type StrategyMasteryMap } from '../types';
 import { type WeeklyChallengeState } from '../hooks/useWeeklyChallenge';
 import { type GamificationState, type AthleteRank, type AchievementDefinition } from '../gamificationConfig';
 import { type CourseData } from './Library';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { doc, setDoc, arrayUnion } from 'firebase/firestore';
 import { db } from '../firebase';
 
 const Onboarding = lazy(() => import('./Onboarding'));
@@ -268,14 +268,11 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           onTimetableBlockComplete={async (dateKey, blockId, _actualMinutes) => {
             if (!user?.uid) return;
             try {
+              // arrayUnion is atomic — concurrent tabs can't clobber each other's completions
               const progressRef = doc(db, 'progress', user.uid);
-              const progressSnap = await getDoc(progressRef);
-              const data = progressSnap.data() || {};
-              const completions = (data.timetableCompletions || {}) as Record<string, string[]>;
-              const dayArr = [...(completions[dateKey] ?? [])];
-              if (!dayArr.includes(blockId)) dayArr.push(blockId);
-              const updated = { ...completions, [dateKey]: dayArr };
-              await setDoc(progressRef, { timetableCompletions: updated }, { merge: true });
+              await setDoc(progressRef, {
+                timetableCompletions: { [dateKey]: arrayUnion(blockId) },
+              }, { merge: true });
             } catch (e) {
               console.error('Failed to auto-complete timetable block:');
               showToast('Couldn\'t save — check your connection', 'error');
