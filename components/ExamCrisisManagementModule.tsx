@@ -71,7 +71,7 @@ const CognitionShiftVisualizer = () => {
       : { borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', iconBg: '#fde4e4', iconColor: '#E85D75', labelColor: '#b33030', textColor: '#5a5550' };
 
     // Peak is at index 22-23 (stress=44-46), which is ~45% of the 51 points
-    const peakIdx = Math.round(22.5);
+    const _peakIdx = Math.round(22.5);
 
     return (
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>

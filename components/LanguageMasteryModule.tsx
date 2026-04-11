@@ -5,7 +5,7 @@
 */
 
 import React, { useState } from 'react';
-import { motion, AnimatePresence, Reorder } from 'framer-motion';
+import { motion, Reorder } from 'framer-motion';
 import {
   Target, Brain, Languages, Mic, Headphones, BookOpen, PenSquare, Wrench
 } from 'lucide-react';

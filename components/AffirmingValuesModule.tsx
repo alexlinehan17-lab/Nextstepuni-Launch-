@@ -5,7 +5,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { MotionButton, MotionDiv } from './Motion';
+import { MotionDiv } from './Motion';
 import {
   BrainCircuit, Shield, AlertTriangle, UserCheck
 } from 'lucide-react';
@@ -331,7 +331,7 @@ const ValuesSelector = ({ savedValues, onSave }: { savedValues?: string[]; onSav
 
 // --- MODULE COMPONENT ---
 const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
-  const { responses, saveResponse, isLoaded } = useModuleResponses('affirming-values');
+  const { responses, saveResponse, isLoaded: _isLoaded } = useModuleResponses('affirming-values');
 
   const sections = [
     { id: 'invisible-threat', title: 'The Invisible Threat', eyebrow: '01 // The Problem', icon: AlertTriangle },

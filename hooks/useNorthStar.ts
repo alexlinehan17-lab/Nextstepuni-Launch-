@@ -31,7 +31,7 @@ export function useNorthStar() {
             setNorthStar(data.northStar as NorthStar);
           }
         }
-      } catch (err) {
+      } catch {
         console.error('Failed to load North Star:');
       }
       if (!cancelled) setIsLoaded(true);
@@ -47,7 +47,7 @@ export function useNorthStar() {
     if (uid) {
       try {
         await setDoc(doc(db, 'progress', uid), { northStar: ns }, { merge: true });
-      } catch (err) {
+      } catch {
         console.error('Failed to save North Star:');
       }
     }

@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { ArrowRight, ArrowLeft, Check, X } from 'lucide-react';
 import {

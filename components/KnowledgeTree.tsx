@@ -4,11 +4,11 @@
 */
 
 import React, { useState, useMemo, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionCircle, MotionDiv } from './Motion';
 import {
-  Sprout, Rocket, Target, FlaskConical,
-  Fingerprint, ArrowRight, Sparkles, BarChart3, Compass, Lightbulb, KeyRound,
+  Sprout, Rocket, Target,
+  Fingerprint, ArrowRight, BarChart3, Compass, Lightbulb, KeyRound,
   User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Tag, X, Dumbbell
 } from 'lucide-react';
 import { getAvatarUrl } from '../components/Auth';
@@ -210,7 +210,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
   );
 };
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights, onGoToTrainingHub, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onDevRankUp }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, _onGoToInsights, onGoToTrainingHub, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onDevRankUp }) => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [tagFilterOpen, setTagFilterOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -331,14 +331,14 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     });
   }, [studentProfile]);
 
-  const daysUntilExam = useMemo(() => {
+  const _daysUntilExam = useMemo(() => {
     if (!studentProfile?.examStartDate) return null;
     const exam = new Date(studentProfile.examStartDate);
     const now = new Date();
     return Math.max(0, Math.ceil((exam.getTime() - now.getTime()) / 86400000));
   }, [studentProfile]);
 
-  const examProgress = useMemo(() => {
+  const _examProgress = useMemo(() => {
     if (!studentProfile?.examStartDate || !studentProfile?.createdAt) return null;
     const created = new Date(studentProfile.createdAt).getTime();
     const exam = new Date(studentProfile.examStartDate).getTime();

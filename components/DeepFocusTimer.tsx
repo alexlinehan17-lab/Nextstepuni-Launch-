@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import {
   type StudentSubjectProfile, type StudyBlock, type TimetableCompletions,
-  DAYS_OF_WEEK, getBlockId, toDateKey,
+  getBlockId, toDateKey,
 } from './subjectData';
 import {
   computeSubjectPriorities, allocateSessions, generateWeeklyTimetable,

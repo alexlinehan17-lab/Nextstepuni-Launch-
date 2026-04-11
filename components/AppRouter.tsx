@@ -61,7 +61,7 @@ class ModuleErrorBoundary extends React.Component<ModuleErrorBoundaryProps, Modu
     return { hasError: true, error };
   }
 
-  componentDidCatch(error: Error, info: React.ErrorInfo) {
+  componentDidCatch(_error: Error, _info: React.ErrorInfo) {
     console.error('Module failed to load');
   }
 
@@ -177,12 +177,12 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   const { showToast } = useToast();
   const nav = useNavigation();
   const { viewState, currentCategory, currentModuleId, cameFromJourney } = nav.state;
-  const { user, isLoadingAuth, authResolved, userResolved, handleLoginSuccess, handleLogout } = useAuth();
+  const { user, isLoadingAuth: _isLoadingAuth, authResolved: _authResolved, userResolved, handleLoginSuccess, handleLogout } = useAuth();
 
   const {
     studentProfile, userProgress, northStar, timetableCompletions,
     pointsData, streak, settings, updateSetting, gamification,
-    currentToast, isBonusFlashToast, setCurrentToast, setIsBonusFlashToast, setRankUpModal,
+    _currentToast, _isBonusFlashToast, _setCurrentToast, _setIsBonusFlashToast, setRankUpModal,
     studentCourses, completedCount, smartRec, questState, claimQuestReward, reloadQuest,
     recommendation, strategyMastery, weeklyChallenge,
     dismissedGuides, handleDismissGuide,
@@ -191,9 +191,9 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     handleOnboardingComplete, handleOnboardingSkip,
     handleProgressUpdate,
     setSettingsOpen, setPassportOpen, setChangeSubjectsOpen, setNorthStarEditOpen,
-    unlockedAvatarSeeds, setUnlockedAvatarSeeds,
+    _unlockedAvatarSeeds, setUnlockedAvatarSeeds,
     unlockedThemes, setUnlockedThemes,
-    unlockedCardStyles, setUnlockedCardStyles,
+    _unlockedCardStyles, setUnlockedCardStyles,
   } = props;
 
   // Navigation handlers from context
@@ -273,7 +273,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
               await setDoc(progressRef, {
                 timetableCompletions: { [dateKey]: arrayUnion(blockId) },
               }, { merge: true });
-            } catch (e) {
+            } catch {
               console.error('Failed to auto-complete timetable block:');
               showToast('Couldn\'t save — check your connection', 'error');
             }

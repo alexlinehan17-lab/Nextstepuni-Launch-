@@ -5,25 +5,20 @@
 */
 
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { MotionButton, MotionDiv } from './components/Motion';
-import { Sun, Moon, LogOut, ArrowRight, Settings, Flame, ChevronRight, Trophy, Award, Target, BarChart3, Star, Home, Compass, Rocket, User, X, Mountain, Dumbbell, Timer, Lightbulb } from 'lucide-react';
+import { Home, Rocket, Dumbbell, Timer, Mountain } from 'lucide-react';
 import { UserProfile, MobileProfileSheet } from './components/UserProfileMenu';
 import { CategoryType } from './components/KnowledgeTree';
-import { LoadingSpinner } from './components/LoadingSpinner';
-import { Auth, SessionUser, getAvatarUrl, AVATAR_SEEDS } from './components/Auth';
 import AppRouter from './components/AppRouter';
 import OfflineBanner from './components/OfflineBanner';
 import SettingsModal from './components/SettingsModal';
 import StudyPassportModal from './components/StudyPassportModal';
-import { auth, db } from './firebase';
-import { doc, getDoc, setDoc, updateDoc, increment, runTransaction } from 'firebase/firestore';
-import { ModuleProgress, UserProgress, UserSettings, NorthStar } from './types';
+import { db } from './firebase';
+import { doc, getDoc, setDoc, runTransaction } from 'firebase/firestore';
+import { ModuleProgress, NorthStar } from './types';
 import { useToast } from './components/Toast';
 import { ALL_COURSES, categoryTitles, SUBJECT_TO_MODULE } from './courseData';
 import { useSettings } from './hooks/useSettings';
-import { type StreakData } from './hooks/useStreak';
-import { useTodaysFocus, FocusRecommendation } from './hooks/useTodaysFocus';
+import { useTodaysFocus } from './hooks/useTodaysFocus';
 import { useStrategyMastery } from './hooks/useStrategyMastery';
 import { useWeeklyChallenge } from './hooks/useWeeklyChallenge';
 import { useRecommendation } from './hooks/useRecommendation';
@@ -36,18 +31,15 @@ import { useGamification } from './hooks/useGamification';
 import { createStarterState } from './hooks/useIslandShop';
 import { findBestLandPlacement } from './components/journey/hex/hexGeometry';
 import { type IslandState } from './types';
-import { type AthleteRank, type AchievementDefinition, getRankForPoints } from './gamificationConfig';
+import { type AthleteRank } from './gamificationConfig';
 import { type StudentSubjectProfile } from './components/subjectData';
 import NorthStarEditModal from './components/NorthStarEditModal';
 import ChangeSubjectsModal from './components/ChangeSubjectsModal';
 import NotificationBell from './components/NotificationBell';
-import { ACCENT_THEME_LIST, ACCENT_THEMES } from './themeData';
 import { POINTS, isModuleJustCompleted, isCategoryJustCompleted } from './journeyPointsConfig';
-import { type AccentThemeId } from './types';
 import { SettingsContext } from './contexts/SettingsContext';
 import { useAuth } from './contexts/AuthContext';
 import { useNavigation } from './contexts/NavigationContext';
-import { GamificationProvider, useGamificationContext } from './contexts/GamificationContext';
 import { useProgress } from './contexts/ProgressContext';
 
 /* ── Mobile Bottom Navigation Bar ── */
@@ -119,9 +111,9 @@ if (_LoginPageRemoved) { /* never reached */ }
 const App: React.FC = () => {
   const { showToast } = useToast();
   const nav = useNavigation();
-  const { viewState, currentCategory, currentModuleId, cameFromJourney } = nav.state;
+  const { viewState, currentCategory, currentModuleId: _currentModuleId, cameFromJourney: _cameFromJourney } = nav.state;
   const [journeyResult, setJourneyResult] = useState<{ endingId: string; finalStats?: any } | null>(null);
-  const { user, isLoadingAuth, authResolved, needsOnboarding: authNeedsOnboarding, loadedData, handleLoginSuccess, handleLogout } = useAuth();
+  const { user, isLoadingAuth, authResolved, needsOnboarding: _authNeedsOnboarding, loadedData, handleLoginSuccess: _handleLoginSuccess, handleLogout } = useAuth();
   const [needsOnboarding, setNeedsOnboarding] = useState(false);
 
   // Progress state from context
@@ -130,7 +122,7 @@ const App: React.FC = () => {
     userProgress, setUserProgress,
     studentProfile, setStudentProfile,
     northStar, setNorthStar,
-    timetableCompletions, setTimetableCompletions,
+    timetableCompletions, setTimetableCompletions: _setTimetableCompletions,
     pointsData, streak,
     unlockedAvatarSeeds, setUnlockedAvatarSeeds,
     unlockedThemes, setUnlockedThemes,
@@ -152,7 +144,7 @@ const App: React.FC = () => {
   const [mobileProfileOpen, setMobileProfileOpen] = useState(false);
   const [timetableBlockContext, setTimetableBlockContext] = useState<{ subject: string; sessionType: 'new-learning' | 'practice' | 'revision'; durationMinutes: number; dateKey: string; blockId: string } | null>(null);
   const [unreadNotificationCount, setUnreadNotificationCount] = useState(0);
-  const { settings, updateSetting, isLoaded: settingsLoaded } = useSettings(user?.uid, user?.avatar);
+  const { settings, updateSetting, isLoaded: _settingsLoaded } = useSettings(user?.uid, user?.avatar);
   const { recommendation } = useTodaysFocus(userProgress, ALL_COURSES);
 
   // Gamification
@@ -204,7 +196,7 @@ const App: React.FC = () => {
       }
       const newState: IslandState = { ...island, placements: newPlacements, lastPurchaseTimestamp: now };
       await setDoc(doc(db, 'progress', uid), { islandState: newState }, { merge: true });
-    } catch (e) {
+    } catch {
       console.error('Failed to grant rank-up tiles:');
     }
   };
@@ -355,7 +347,7 @@ const App: React.FC = () => {
     }
   };
 
-  const handleSelectCategory = (category: CategoryType) => {
+  const _handleSelectCategory = (category: CategoryType) => {
     nav.navigateToCategory(category);
   };
 
@@ -367,7 +359,7 @@ const App: React.FC = () => {
 
   const handleGoToDashboard = () => { nav.navigateToDashboard(); };
 
-  const handleGoToLearningPaths = () => { nav.navigateToLearningPaths(); };
+  const _handleGoToLearningPaths = () => { nav.navigateToLearningPaths(); };
 
   const handleGoToJourney = () => { nav.navigateToJourney(); };
 
@@ -404,7 +396,7 @@ const App: React.FC = () => {
         await setDoc(userDocRef, { yearGroup: profile.yearGroup }, { merge: true });
         // yearGroup saved to Firestore — will be picked up on next auth refresh
       }
-    } catch (error) {
+    } catch {
       console.error('Failed to save subject profile:');
       showToast('Couldn\'t save — check your connection', 'error');
     }
@@ -419,7 +411,7 @@ const App: React.FC = () => {
     try {
       const progressDocRef = doc(db, 'progress', user.uid);
       await setDoc(progressDocRef, { northStar: ns }, { merge: true });
-    } catch (error) {
+    } catch {
       console.error('Failed to save North Star:');
       showToast('Couldn\'t save — check your connection', 'error');
     }
@@ -437,15 +429,15 @@ const App: React.FC = () => {
     try {
       const progressDocRef = doc(db, 'progress', user.uid);
       await setDoc(progressDocRef, { subjectProfile: profile }, { merge: true });
-    } catch (error) {
+    } catch {
       console.error('Failed to save updated subject profile:');
       showToast('Couldn\'t save — check your connection', 'error');
     }
   };
 
-  const handleBackToTree = () => { nav.goBack(); };
+  const _handleBackToTree = () => { nav.goBack(); };
 
-  const handleBackToCategory = () => { nav.goBack(); };
+  const _handleBackToCategory = () => { nav.goBack(); };
 
   const handleDismissGuide = useCallback(async (guideId: string) => {
     setDismissedGuides(prev => ({ ...prev, [guideId]: new Date().toISOString() }));
@@ -455,7 +447,7 @@ const App: React.FC = () => {
           { dismissedGuides: { [guideId]: new Date().toISOString() } },
           { merge: true }
         );
-      } catch (err) {
+      } catch {
         console.error('Failed to persist guide dismissal:');
         showToast('Couldn\'t save — check your connection', 'error');
       }

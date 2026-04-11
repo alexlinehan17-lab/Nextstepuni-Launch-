@@ -5,7 +5,7 @@
 
 import React, { useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { X, Star } from 'lucide-react';
 import { NorthStar } from '../types';

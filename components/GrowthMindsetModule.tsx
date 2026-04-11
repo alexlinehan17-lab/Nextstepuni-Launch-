@@ -409,7 +409,7 @@ const FeedbackTranslator = () => {
 
 // --- MODULE COMPONENT ---
 const GrowthMindsetModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
-  const { responses, saveResponse, isLoaded } = useModuleResponses('growth-mindset-protocol');
+  const { responses, saveResponse, isLoaded: _isLoaded } = useModuleResponses('growth-mindset-protocol');
 
   const sections = [
     { id: 'two-brains', title: 'The Two Brains: Fixed vs. Growth', eyebrow: '01 // The Operating System', icon: Cpu },

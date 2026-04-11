@@ -70,7 +70,7 @@ export function useGCFlags(gcUid: string | undefined) {
         note: data.note,
         priority: data.priority,
       });
-    } catch (err) {
+    } catch {
       console.error('[useGCFlags] Failed to flag student:');
     }
   }, [gcUid]);
@@ -84,7 +84,7 @@ export function useGCFlags(gcUid: string | undefined) {
     });
     try {
       await deleteDoc(doc(db, 'gcFlags', gcUid, 'flaggedStudents', studentUid));
-    } catch (err) {
+    } catch {
       console.error('[useGCFlags] Failed to unflag student:');
     }
   }, [gcUid]);
@@ -98,7 +98,7 @@ export function useGCFlags(gcUid: string | undefined) {
     });
     try {
       await setDoc(doc(db, 'gcFlags', gcUid, 'flaggedStudents', studentUid), { note }, { merge: true });
-    } catch (err) {
+    } catch {
       console.error('[useGCFlags] Failed to update flag note:');
     }
   }, [gcUid]);
@@ -112,7 +112,7 @@ export function useGCFlags(gcUid: string | undefined) {
     });
     try {
       await setDoc(doc(db, 'gcFlags', gcUid, 'flaggedStudents', studentUid), { priority }, { merge: true });
-    } catch (err) {
+    } catch {
       console.error('[useGCFlags] Failed to update flag priority:');
     }
   }, [gcUid]);

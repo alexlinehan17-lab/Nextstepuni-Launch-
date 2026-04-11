@@ -4,7 +4,6 @@
  */
 
 import { GCStudentFullData } from './gcTypes';
-import { type StudySessionRecord } from '../../studySessionData';
 
 // ── Types ──────────────────────────────────────────────────
 
@@ -101,7 +100,7 @@ function studyTimeDropping(s: GCStudentFullData): EarlyWarningAlert | null {
   if (!completions) return null;
 
   const now = new Date();
-  const todayKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+  const _todayKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
 
   let thisWeekBlocks = 0;
   let lastWeekBlocks = 0;
@@ -160,7 +159,7 @@ function stalledProgress(s: GCStudentFullData): EarlyWarningAlert | null {
   };
 }
 
-function noReflections(s: GCStudentFullData): EarlyWarningAlert | null {
+function _noReflections(s: GCStudentFullData): EarlyWarningAlert | null {
   // Check study sessions from the progress data
   // We access studySessions via the raw progress doc - but GCStudentFullData
   // doesn't have studySessions directly. We can infer from points data.

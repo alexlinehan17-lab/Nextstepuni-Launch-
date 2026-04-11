@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence, Reorder } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
-  MessageSquare, BrainCircuit, BookOpen, Wrench, Layers, Shield, Zap, Flag, ArrowDown
+  MessageSquare, BrainCircuit, BookOpen, Wrench, Layers, Shield, Zap, Flag
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { slateTheme } from '../moduleThemes';
@@ -237,7 +237,7 @@ const PassengersOnBus = () => {
 
 const CHAIN_LENGTH = 5;
 
-const chainColors = [
+const _chainColors = [
   { bg: 'bg-rose-50 dark:bg-rose-950/30', border: 'border-rose-200 dark:border-rose-800/50', text: 'text-rose-700 dark:text-rose-300', label: 'text-rose-500', dot: 'bg-rose-500', arrow: 'text-rose-400' },
   { bg: 'bg-orange-50 dark:bg-orange-950/30', border: 'border-orange-200 dark:border-orange-800/50', text: 'text-orange-700 dark:text-orange-300', label: 'text-orange-500', dot: 'bg-orange-500', arrow: 'text-orange-400' },
   { bg: 'bg-amber-50 dark:bg-amber-950/30', border: 'border-amber-200 dark:border-amber-800/50', text: 'text-amber-700 dark:text-amber-300', label: 'text-amber-500', dot: 'bg-amber-500', arrow: 'text-amber-400' },

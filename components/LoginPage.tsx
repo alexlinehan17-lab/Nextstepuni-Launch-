@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
-import { ArrowLeft, ArrowRight, Eye, EyeOff, School, GraduationCap } from 'lucide-react';
+import { ArrowLeft, Eye, EyeOff, School, GraduationCap } from 'lucide-react';
 import { auth, db } from '../firebase';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
@@ -51,8 +51,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           yearGroup: data.yearGroup,
         });
       }
-    } catch (e: any) {
-      setError(e.code === 'auth/invalid-credential' ? 'Invalid email or password' : 'Something went wrong. Try again.');
+    } catch {
+      setError('Invalid email or password');
     }
     setIsLoading(false);
   };
@@ -67,7 +67,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     try {
       const gcEmail = `gc-${gcSchool}@nextstep.app`;
       await signInWithEmailAndPassword(auth, gcEmail, password);
-    } catch (e: any) {
+    } catch {
       setError('Invalid credentials.');
     }
     setIsLoading(false);
@@ -100,7 +100,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         school,
         role: 'student',
       });
-    } catch (e: any) {
+    } catch {
       if (e.code === 'auth/weak-password') {
         setError('Password must be at least 6 characters.');
       } else if (e.code === 'auth/email-already-in-use') {

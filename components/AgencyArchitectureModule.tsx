@@ -264,7 +264,7 @@ const AttributionReframeDrill = () => {
 
 // --- MODULE COMPONENT ---
 const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
-  const { responses, saveResponse, isLoaded } = useModuleResponses('controlling-the-controllables');
+  const { responses, saveResponse, isLoaded: _isLoaded } = useModuleResponses('controlling-the-controllables');
 
   const sections = [
     { id: 'attribution-theory', title: 'The Story of Failure', eyebrow: '01 // The Source Code', icon: Code },

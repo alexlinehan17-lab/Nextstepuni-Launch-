@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { tealTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 
 const theme = tealTheme;

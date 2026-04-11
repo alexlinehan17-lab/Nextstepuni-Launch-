@@ -7,7 +7,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useToast } from './Toast';
 import { createPortal } from 'react-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionPolygon, MotionSpan } from './Motion';
 import {
     ArrowRight, Zap, Shield, RotateCcw,
@@ -18,8 +18,8 @@ import {
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import {
-    type GameState, type Choice, type Scene, type HistoryItem, type StatKey, type Phase,
-    type Mood, type Location,
+    type GameState, type Choice, type HistoryItem, type StatKey, type Phase,
+    type Location,
     STORY_DATA, ROUTE_RESOLVERS, INITIAL_GAME_STATE, PHASE_METADATA,
     ARCHETYPES, STAT_TO_MODULES, STAT_LABELS,
     WEAKEST_STAT_INSIGHTS,
@@ -60,7 +60,7 @@ const LOCATION_CONFIG: Record<Location, { label: string }> = {
 
 // ─── Archetype Icon Map ─────────────────────────────────────────────────────
 
-const ARCHETYPE_ICONS: Record<string, React.ElementType> = {
+const _ARCHETYPE_ICONS: Record<string, React.ElementType> = {
     'compass': Compass,
     'brain': Brain,
     'hand-helping': HandHelping,
@@ -499,7 +499,7 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
 const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => void; user?: { uid: string } | null; savedJourneyResult?: JourneyResult | null; onJourneyComplete?: (result: JourneyResult) => void }> = ({ onSelectModule, user, savedJourneyResult, onJourneyComplete }) => {
     const { showToast } = useToast();
     const [gameState, setGameState] = useState<GameState>({ ...INITIAL_GAME_STATE });
-    const [prevState, setPrevState] = useState<GameState>({ ...INITIAL_GAME_STATE });
+    const [_prevState, setPrevState] = useState<GameState>({ ...INITIAL_GAME_STATE });
     const [currentSceneId, setCurrentSceneId] = useState('START');
     const [history, setHistory] = useState<HistoryItem[]>([]);
     const [visitedScenes, setVisitedScenes] = useState<string[]>(['START']);
@@ -533,7 +533,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                         setShowingSavedResult(true);
                     }
                 }
-            } catch (e) {
+            } catch {
                 if (!cancelled) console.error('Failed to load journey result:');
             }
         };
@@ -561,7 +561,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                             decisionsCount: history.length,
                         }
                     }, { merge: true });
-                } catch (e) {
+                } catch {
                     if (cancelled) return;
                     console.error('Failed to save journey result:');
                     showToast('Couldn\'t save — check your connection', 'error');

@@ -6,7 +6,7 @@
 
 import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { useToast } from './Toast';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
 import {
     ArrowLeft, Zap, Clock,
@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak, type StudyBlock, getBlockId, toDateKey } from './subjectData';
+import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak, getBlockId, toDateKey } from './subjectData';
 import { type SchoolEvent } from './gc/GCKeyEvents';
 import { computeStreak, computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, computeWeeksUntilExam } from './timetableAlgorithm';
 import { type StudyReflection, type PointsData, type CosmeticUnlocks, type EarnedRest, type UserSettings } from '../types';
@@ -32,7 +32,7 @@ import SyllabusXRay from './SyllabusXRay';
 import PointsPassport from './PointsPassport';
 import { InnovationDataProvider } from '../contexts/InnovationDataContext';
 import { useTopicMastery } from '../hooks/useTopicMastery';
-import { getNotifications, type AppNotification } from './gc/gcNotifications';
+import { getNotifications } from './gc/gcNotifications';
 // ReflectionModal import removed — "Already Studied" flow gives 2 pts, no reflection
 import StudyJournalModal from './StudyJournalModal';
 import RewardShopModal from './RewardShopModal';
@@ -107,7 +107,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     const yg = user.yearGroup || '6th';
                     setSchoolEvents(allEvents.filter(e => e.yearGroup === 'both' || e.yearGroup === yg));
                 }
-            } catch (e) {
+            } catch {
                 if (!cancelled) console.error('Failed to load school events:');
             }
         };
@@ -170,7 +170,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                         setEarnedRest(data.earnedRest as EarnedRest);
                     }
                 }
-            } catch (e) {
+            } catch {
                 if (!cancelled) console.error('Failed to load subject profile:');
             }
             if (!cancelled) setProfileLoaded(true);
@@ -209,14 +209,14 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         if (user?.uid) {
             try {
                 await setDoc(doc(db, 'progress', user.uid), { subjectProfile: profile }, { merge: true });
-            } catch (e) {
+            } catch {
                 console.error('Failed to save subject profile:');
                 showToast('Couldn\'t save — check your connection', 'error');
             }
         }
     }, [user?.uid, pendingToolId, setActiveTool]);
 
-    const getStreakMultiplier = useCallback((streak: number): number => {
+    const _getStreakMultiplier = useCallback((streak: number): number => {
         if (streak >= 14) return 2.5;
         if (streak >= 7) return 2.0;
         if (streak >= 3) return 1.5;
@@ -250,7 +250,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     timetableCompletions: updated,
                     timetableStreak: newStreak,
                     ...extraFirestoreData,
-                }, { merge: true }).catch(e => { console.error('Failed to save completions:'); showToast('Couldn\'t save — check your connection', 'error'); });
+                }, { merge: true }).catch(_e => { console.error('Failed to save completions:'); showToast('Couldn\'t save — check your connection', 'error'); });
             }
 
             return updated;
@@ -344,7 +344,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                 pointsData: updatedPointsData,
                 earnedRest: updatedEarnedRest,
                 cosmeticUnlocks: updatedCosmeticUnlocks,
-            }, { merge: true }).catch(e => {
+            }, { merge: true }).catch(_e => {
                 console.error('Failed to save purchase:');
                 showToast('Purchase couldn\'t be saved — check your connection', 'error');
                 // Roll back to latest ref values (may have changed since write started)
@@ -418,7 +418,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
-            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={async (_s, _t, newDuration) => { const updated = { ...subjectProfile, defaultBlockDuration: newDuration }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save block duration:'); showToast('Couldn\'t save — check your connection', 'error'); } } }} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (e) { console.error('Failed to save rest days:'); showToast('Couldn\'t save — check your connection', 'error'); } } }} /> : null,
+            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={async (_s, _t, newDuration) => { const updated = { ...subjectProfile, defaultBlockDuration: newDuration }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch { console.error('Failed to save block duration:'); showToast('Couldn\'t save — check your connection', 'error'); } } }} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch { console.error('Failed to save rest days:'); showToast('Couldn\'t save — check your connection', 'error'); } } }} /> : null,
         },
         {
             id: 'war-room', title: 'War Room', description: 'Your strategic study command centre.', icon: Target, needsProfile: true,

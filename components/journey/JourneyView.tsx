@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useCallback, useEffect, useRef, Suspense } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { ArrowLeft, Mountain, Users, Heart, Gift, X } from 'lucide-react';
 import { SessionUser } from '../Auth';
@@ -123,10 +123,10 @@ const JourneyView: React.FC<JourneyViewProps> = ({
           if (!cancelled && userDoc.exists()) {
             setRescueCount(userDoc.data()?.rescueCount ?? 0);
           }
-        } catch (_) {
+        } catch {
           // Non-critical
         }
-      } catch (e) {
+      } catch {
         console.error('Failed to fetch flare count:');
       }
     };

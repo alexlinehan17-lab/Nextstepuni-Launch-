@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { CourseData } from './Library';
 import { SessionUser, getAvatarUrl } from './Auth';
@@ -127,7 +126,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
         // Then delete the users doc last
         await deleteDoc(doc(db, 'users', user.uid));
         setStudentData(prev => prev.filter(s => s.user.uid !== user.uid));
-      } catch (error) {
+      } catch {
         console.error('Error deleting student:');
         alert('Failed to delete student. You may not have permission.');
       }
@@ -164,7 +163,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
                     }));
 
                 setStudentData(combinedData);
-            } catch (error) {
+            } catch {
                 console.error("Error fetching admin data:");
             }
             if (!cancelled) setIsLoading(false);

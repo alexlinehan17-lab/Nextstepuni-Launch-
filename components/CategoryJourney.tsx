@@ -11,7 +11,7 @@
  */
 
 import React, { useMemo } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight, Check, Clock, ChevronDown, Sparkles } from 'lucide-react';
 import { type CourseData } from './Library';
 import { type UserProgress } from '../types';

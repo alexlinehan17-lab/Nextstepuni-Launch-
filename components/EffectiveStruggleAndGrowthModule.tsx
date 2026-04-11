@@ -7,7 +7,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  Scaling, Brain, SlidersHorizontal, Thermometer, Puzzle, BarChartHorizontal, ZapOff
+  Scaling, Brain, SlidersHorizontal, Thermometer, Puzzle, BarChartHorizontal
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { tealTheme } from '../moduleThemes';

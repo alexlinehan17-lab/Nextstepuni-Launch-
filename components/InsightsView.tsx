@@ -4,7 +4,6 @@
  */
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
   ArrowLeft, TrendingUp, Clock, RefreshCw, Flame, BarChart3, Sparkles, Lightbulb,

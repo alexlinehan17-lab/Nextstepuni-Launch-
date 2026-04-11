@@ -3,13 +3,13 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect, useCallback, useRef, Suspense } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { MotionButton, MotionDiv, MotionSpan } from '../Motion';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { AnimatePresence } from 'framer-motion';
+import { MotionButton, MotionDiv } from '../Motion';
 import { createPortal } from 'react-dom';
 import { X, Send, RefreshCw, ThumbsUp, CheckCircle, AlertCircle, MessageCircle, Flame, Radio } from 'lucide-react';
 import { containsProfanity } from './profanityFilter';
-import { useFlares, FlareDoc, FlareResponse, FlareCounts } from '../../hooks/useFlares';
+import { useFlares, FlareResponse } from '../../hooks/useFlares';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -219,7 +219,7 @@ const FlareSystem: React.FC<FlareSystemProps> = ({
     activeFlares,
     myFlares,
     rescueCount,
-    lighthouseLevel,
+    _lighthouseLevel,
     flareCounts,
     isLoading,
     sendFlare,

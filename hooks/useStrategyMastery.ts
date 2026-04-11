@@ -7,7 +7,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
-import { type UserProgress, type StrategyMasteryMap, type StrategyMasteryRecord, type MasteryTier } from '../types';
+import { type UserProgress, type StrategyMasteryMap, type MasteryTier } from '../types';
 import { type CourseData } from '../components/Library';
 import { STRATEGY_REGISTRY, type StudySessionRecord } from '../utils/strategyRegistry';
 

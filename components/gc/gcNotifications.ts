@@ -4,7 +4,7 @@
  */
 
 import { db } from '../../firebase';
-import { doc, getDoc, setDoc, runTransaction } from 'firebase/firestore';
+import { doc, getDoc, runTransaction } from 'firebase/firestore';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -44,7 +44,7 @@ export async function getNotifications(uid: string): Promise<AppNotification[]> 
     if (!snap.exists()) return [];
     const items = (snap.data().items || []) as AppNotification[];
     return items.sort((a, b) => b.timestamp - a.timestamp);
-  } catch (e) {
+  } catch {
     console.error('Failed to read notifications:');
     return [];
   }
@@ -66,7 +66,7 @@ export async function addNotification(uid: string, notification: Omit<AppNotific
       const updated = [newItem, ...existing].slice(0, MAX_ITEMS);
       txn.set(ref, { items: updated });
     });
-  } catch (e) {
+  } catch {
     console.error('Failed to add notification:');
   }
 }
@@ -82,7 +82,7 @@ export async function markNotificationRead(uid: string, notificationId: string):
       const updated = items.map(n => n.id === notificationId ? { ...n, read: true } : n);
       txn.set(ref, { items: updated });
     });
-  } catch (e) {
+  } catch {
     console.error('Failed to mark notification read:');
   }
 }
@@ -98,7 +98,7 @@ export async function markAllRead(uid: string): Promise<void> {
       const updated = items.map(n => ({ ...n, read: true }));
       txn.set(ref, { items: updated });
     });
-  } catch (e) {
+  } catch {
     console.error('Failed to mark all read:');
   }
 }
@@ -253,7 +253,7 @@ export async function generateAutoNotifications(uid: string, progressData: Progr
         }
       }
     }
-  } catch (e) {
+  } catch {
     console.error('Auto-notification generation failed:');
   }
 }

@@ -4,7 +4,6 @@
  */
 
 import React, { useMemo } from 'react';
-import { motion } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { TrendingUp, TrendingDown, Minus, Users } from 'lucide-react';
 import { GCStudentFullData } from './gcTypes';

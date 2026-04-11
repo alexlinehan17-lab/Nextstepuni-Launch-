@@ -4,13 +4,12 @@
  */
 
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
   Trophy, Star, Flame, BookOpen, Clock, Target, Award, Crown, Mountain, Zap,
   Eye, Brain, Lightbulb, Shield, Sparkles, HelpCircle,
 } from 'lucide-react';
-import { type AchievementCategory, type AchievementDefinition } from '../gamificationConfig';
+import { type AchievementCategory } from '../gamificationConfig';
 import { ACHIEVEMENTS } from '../achievementData';
 
 const ICON_MAP: Record<string, React.ElementType> = {

@@ -70,7 +70,7 @@ const EfficacyRadar: React.FC = () => {
   const average = values.reduce((a, b) => a + b, 0) / values.length;
 
   const lowDomains = EFFICACY_DOMAINS.filter((_, i) => values[i] <= 3);
-  const allHigh = values.every((v) => v >= 7);
+  const _allHigh = values.every((v) => v >= 7);
 
   const scoreLabel = average >= 7 ? 'Strong foundation — now let\'s make it bulletproof.' : average >= 4 ? 'Building confidence across your domains.' : 'Room to grow — this module will help.';
 

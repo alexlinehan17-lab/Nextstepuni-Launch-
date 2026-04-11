@@ -3,11 +3,11 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import React, { useState, useEffect, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { CourseData } from './Library';
 import { SessionUser, getAvatarUrl } from './Auth';
-import { GraduationCap, LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, Trash2, AlertTriangle, CalendarDays, Moon, Sun } from 'lucide-react';
+import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays, Moon, Sun } from 'lucide-react';
 import { db } from '../firebase';
 import { collection, query, where, getDocs, doc, getDoc, deleteDoc, setDoc } from 'firebase/firestore';
 import { getSchoolName } from '../schoolData';
@@ -115,7 +115,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       await deleteDoc(doc(db, 'users', user.uid));
       setStudentData(prev => prev.filter(s => s.user.uid !== user.uid));
       if (selectedStudentUid === user.uid) setSelectedStudentUid(null);
-    } catch (error) {
+    } catch {
       console.error('Error deleting student:');
       alert('Failed to delete student. You may not have permission.');
     }
@@ -130,7 +130,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
     setDismissedAlerts(updated);
     try {
       await setDoc(doc(db, 'gcSettings', school), { dismissedAlerts: updated }, { merge: true });
-    } catch (err) {
+    } catch {
       console.error('[GCAlerts] Failed to save dismissal:');
     }
   };
@@ -256,7 +256,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             setDismissedAlerts(settingsSnap.data().dismissedAlerts ?? {});
           }
         } catch { /* No settings yet */ }
-      } catch (error) {
+      } catch {
         console.error('Error fetching GC data:');
       }
       if (!cancelled) setIsLoading(false);

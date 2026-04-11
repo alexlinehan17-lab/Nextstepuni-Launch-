@@ -6,7 +6,6 @@
 */
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { Loader } from 'lucide-react';
 

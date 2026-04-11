@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { createPortal } from 'react-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { X, Check, Lock } from 'lucide-react';
 import { CategoryType } from './KnowledgeTree';

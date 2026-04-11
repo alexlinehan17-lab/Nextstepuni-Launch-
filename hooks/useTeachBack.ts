@@ -84,7 +84,7 @@ export function useTeachBack(uid?: string, school?: string) {
 
       // Weighted selection — helpful ones appear more often
       setTeachBackToRead(weightedPick(candidates));
-    } catch (err) {
+    } catch {
       console.error('[TeachBack] Failed to fetch:');
     }
   }, [uid, school]);
@@ -129,7 +129,7 @@ export function useTeachBack(uid?: string, school?: string) {
       await updateDoc(doc(db, 'progress', uid), {
         teachBacksSeen: arrayUnion(teachBackId),
       });
-    } catch (err) {
+    } catch {
       console.error('[TeachBack] Failed to update seen list:');
     }
   }, [uid]);
@@ -143,7 +143,7 @@ export function useTeachBack(uid?: string, school?: string) {
       await updateDoc(doc(db, 'progress', uid), {
         teachBacksSeen: arrayUnion(teachBackId),
       });
-    } catch (err) {
+    } catch {
       console.error('[TeachBack] Failed to update seen list:');
     }
   }, [uid]);

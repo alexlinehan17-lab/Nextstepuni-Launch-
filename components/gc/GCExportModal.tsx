@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { X, FileDown, FileText, ChevronDown } from 'lucide-react';
 import { GCStudentFullData } from './gcTypes';

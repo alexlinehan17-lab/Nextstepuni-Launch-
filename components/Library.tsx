@@ -6,18 +6,17 @@
 */
 
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
   ArrowLeft, CheckCircle2,
-  ChevronRight, Lock, Sparkles, BookOpen,
+  ChevronRight, Lock, BookOpen,
   Zap, Brain, Target, Shield, Compass, Star,
   Sun, Moon, Home, BarChart3, Rocket, PanelLeft, Award, Settings, LogOut, Layers, RefreshCw, User, Mountain
 } from 'lucide-react';
 import { CategoryType } from './KnowledgeTree';
 import { NorthStar, AccentThemeId, CardStyleId } from '../types';
 import { type StudentSubjectProfile } from './subjectData';
-import NorthStarCallout from './NorthStarCallout';
 import { useSettingsContext } from '../contexts/SettingsContext';
 import { ACCENT_THEME_LIST, ACCENT_THEMES, CARD_STYLES } from '../themeData';
 import { getAvatarUrl } from './Auth';
@@ -171,7 +170,7 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
   );
 };
 
-export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse, onBack, userProgress, northStar, studentProfile, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onGoToDashboard, onGoToLearningPaths, onGoToInnovationZone, onGoToJourney, onChangeSubjects, completedCount = 0, totalCount = 0 }) => {
+export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse, onBack, userProgress, _northStar, _studentProfile, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onGoToDashboard, onGoToLearningPaths, onGoToInnovationZone, onGoToJourney, onChangeSubjects, completedCount = 0, totalCount = 0 }) => {
   const settingsCtx = useSettingsContext();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [themePickerOpen, setThemePickerOpen] = useState(false);
@@ -211,8 +210,8 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
     return Math.round((completedCourses / totalCourses) * 100);
   };
 
-  const overallProgress = calculateCategoryProgress();
-  const unlockedIndex = courses.length; // For now, all modules in a category are unlocked by default
+  const _overallProgress = calculateCategoryProgress();
+  const _unlockedIndex = courses.length; // For now, all modules in a category are unlocked by default
 
   return (
     <div className="min-h-screen transition-colors duration-500 overflow-x-hidden relative" style={{ backgroundColor: '#FDF8F0' }}>

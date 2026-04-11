@@ -7,7 +7,7 @@ import React, { memo } from 'react';
 import {
   Ground, Room, Desk, Bookshelf, Sofa, Television, Table,
   KitchenCounter, Rug, Plant, WallArt, Mug, Lamp, Clock,
-  BookStack, Person, Car, Cushion, Laptop, FruitBowl,
+  BookStack, Car, Cushion, Laptop, FruitBowl,
   PenHolder, WindowOpening, WallSconce, GoldenOverlay,
   COLORS,
 } from './SharedSceneElements';

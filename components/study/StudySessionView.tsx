@@ -6,7 +6,7 @@
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { ArrowLeft, BookOpen, Target, RotateCcw, Play, Pause, Clock, Sparkles, Zap, X, ChevronRight, Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck, Trophy, CalendarCheck } from 'lucide-react';
+import { ArrowLeft, BookOpen, Target, RotateCcw, Play, Pause, Clock, Sparkles, X, ChevronRight, Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck, Trophy, CalendarCheck } from 'lucide-react';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
@@ -17,10 +17,10 @@ import { type CourseData } from '../Library';
 import { STRATEGY_REGISTRY, PROMPT_AUTO_DISMISS_SECONDS } from '../../studySessionData';
 import { type StreakData } from '../../hooks/useStreak';
 import { useStudySession } from '../../hooks/useStudySession';
-import { getSubjectColor, getSubjectStroke, getSubjectHex, DURATION_PRESETS } from '../../studySessionData';
+import { getSubjectColor, getSubjectHex, DURATION_PRESETS } from '../../studySessionData';
 import StrategyPickerStep from './StrategyPickerStep';
 import ReflectionModal from '../ReflectionModal';
-import { scoreReflection, QUICK_DEBRIEF_POINTS, FULL_REFLECTION_POINTS } from '../ReflectionModal';
+import { QUICK_DEBRIEF_POINTS, FULL_REFLECTION_POINTS } from '../ReflectionModal';
 import { type DebriefEntry } from '../StudyDebrief';
 import { type WeeklyChallengeState } from '../../hooks/useWeeklyChallenge';
 import { useTeachBack } from '../../hooks/useTeachBack';
@@ -118,7 +118,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   userProgress,
   allCourses,
   pointsReload,
-  streak,
+  _streak,
   onBack,
   onStrategyMasteryRecompute,
   strategyMastery,
@@ -138,7 +138,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const [selectedSubject, setSelectedSubject] = useState(timetableBlock?.subject ?? '');
   const [selectedType, setSelectedType] = useState<'new-learning' | 'practice' | 'revision' | ''>(timetableBlock?.sessionType ?? '');
   const [selectedMinutes, setSelectedMinutes] = useState<number>(timetableBlock?.durationMinutes ?? 0);
-  const [blockCompleteBanner, setBlockCompleteBanner] = useState<{ done: number; total: number } | null>(null);
+  const [_blockCompleteBanner, setBlockCompleteBanner] = useState<{ done: number; total: number } | null>(null);
 
   // Re-sync selections when timetable block changes
   useEffect(() => {
@@ -155,7 +155,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
   // Reflection modal
   const [reflectionOpen, setReflectionOpen] = useState(false);
-  const [debriefOpen, setDebriefOpen] = useState(false);
+  const [_debriefOpen, setDebriefOpen] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
 
   // XP popup state
@@ -233,7 +233,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     .map(s => s.moduleId);
 
   // Compute syllabus topics for the current session subject (used in debrief)
-  const debriefTopics = useMemo(() => {
+  const _debriefTopics = useMemo(() => {
     if (!session.subject) return [];
     return getSyllabusTopics(session.subject);
   }, [session.subject]);
@@ -288,7 +288,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       onTimetableBlockComplete(timetableBlock.dateKey, timetableBlock.blockId, actualMinutes);
 
       // Compute X/Y blocks done today for banner
-      const alreadyDone = todayBlocks.filter(b =>
+      const _alreadyDone = todayBlocks.filter(b =>
         b.blockId === timetableBlock.blockId || b.blockId !== timetableBlock.blockId
       );
       // Count how many are done (this block is now done, others we don't know — but we can show total)
@@ -301,7 +301,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
   const [reflectionMode, setReflectionMode] = useState<'quick' | 'full'>('quick');
 
-  const handleSaveWithReflection = async (reflectionText: string) => {
+  const handleSaveWithReflection = async (_reflectionText: string) => {
     const bonus = reflectionMode === 'quick' ? QUICK_DEBRIEF_POINTS : FULL_REFLECTION_POINTS;
     setIsSaving(true);
     await session.saveSession(bonus, selectedStrategies);
@@ -329,7 +329,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     session.resetSession();
   };
 
-  const handleDebriefSubmit = async (entry: Omit<DebriefEntry, 'id' | 'date'>) => {
+  const _handleDebriefSubmit = async (entry: Omit<DebriefEntry, 'id' | 'date'>) => {
     setIsSaving(true);
     const fullEntry: DebriefEntry = {
       ...entry,
@@ -343,11 +343,11 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       await updateDoc(doc(db, 'progress', user.uid), {
         studyDebriefs: arrayUnion(fullEntry),
       });
-    } catch (e) {
+    } catch {
       console.error('Failed to save debrief:');
     }
     // Process side effects: update topic mastery + SM-2 state
-    processDebriefSideEffects(user.uid, fullEntry).catch(e => console.error('Debrief side effects error:'));
+    processDebriefSideEffects(user.uid, fullEntry).catch(_e => console.error('Debrief side effects error:'));
     completeTimetableBlock();
     pointsReload();
     onStrategyMasteryRecompute?.();
@@ -370,7 +370,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const ringRadius = 120;
   const ringCircumference = 2 * Math.PI * ringRadius;
   const progress = session.totalDuration > 0 ? session.elapsedSeconds / session.totalDuration : 0;
-  const ringOffset = ringCircumference * (1 - progress);
+  const _ringOffset = ringCircumference * (1 - progress);
   const timeRemaining = Math.max(0, session.totalDuration - session.elapsedSeconds);
 
   // ── SETUP PHASE ──
@@ -667,7 +667,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
   // ── ACTIVE / PAUSED PHASE (Headspace-inspired) ──
   if (session.phase === 'active' || session.phase === 'paused') {
-    const subjectColors = getSubjectColor(session.subject);
+    const _subjectColors = getSubjectColor(session.subject);
     const subjectHex = getSubjectHex(session.subject);
     const typeConfig = SESSION_TYPE_CONFIG[session.sessionType];
 
@@ -691,7 +691,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       return `#${nr.toString(16).padStart(2, '0')}${ng.toString(16).padStart(2, '0')}${nb.toString(16).padStart(2, '0')}`;
     };
 
-    const handleQuit = () => {
+    const _handleQuit = () => {
       if (window.confirm('End this session and go back? Any time studied will be lost.')) {
         session.endSession();
         session.resetSession();

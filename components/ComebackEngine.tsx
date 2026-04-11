@@ -5,19 +5,19 @@
 
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { useToast } from './Toast';
-import { motion, AnimatePresence } from 'framer-motion';
-import { MotionButton, MotionDiv } from './Motion';
+import { AnimatePresence } from 'framer-motion';
+import { MotionDiv } from './Motion';
 import {
-  Rocket, ChevronRight, ChevronLeft, Trophy, TrendingUp, Zap, Target,
-  CheckCircle, Circle, ArrowUpRight, Flame, Star, RotateCcw, Sparkles,
+  Rocket, ChevronRight, ChevronLeft, TrendingUp, Target,
+  CheckCircle, Circle, Flame, RotateCcw, Sparkles,
   GraduationCap, BookOpen, Wrench, DoorOpen, Compass,
 } from 'lucide-react';
 import { db } from '../firebase';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import {
   type StudentSubjectProfile, type Grade, type Level,
-  getPointsForGrade, getGradeIndex, getGradesForLevel,
-  HIGHER_GRADES, ORDINARY_GRADES, HIGHER_POINTS, ORDINARY_POINTS,
+  getPointsForGrade, getGradeIndex,
+  HIGHER_GRADES, ORDINARY_GRADES,
   LC_SUBJECTS,
 } from './subjectData';
 import { getDistinctSubjectHex } from '../studySessionData';
@@ -103,7 +103,7 @@ function getOneGradeUp(grade: Grade): Grade | null {
   return ORDINARY_GRADES[idx - 1];
 }
 
-function getTwoGradesUp(grade: Grade): Grade | null {
+function _getTwoGradesUp(grade: Grade): Grade | null {
   const idx = getGradeIndex(grade);
   if (idx <= 1) return getOneGradeUp(grade);
   if (grade.startsWith('H')) return HIGHER_GRADES[idx - 2];
@@ -295,7 +295,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
   const [northStar, setNorthStar] = useState<{ category: string; statement: string } | null>(null);
 
   // Computed points from CAO Simulator
-  const [computedPoints, setComputedPoints] = useState<number | null>(null);
+  const [_computedPoints, setComputedPoints] = useState<number | null>(null);
 
   // Future Finder integration (from shared context)
   const { futureFinderPicks: ffPicks } = useInnovationData();
@@ -371,7 +371,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
         if (data?.timetableCompletions) {
           setTimetableCompletions(data.timetableCompletions);
         }
-      } catch (e) {
+      } catch {
         console.error('Failed to load Comeback Engine data:');
       }
       if (!cancelled) setIsLoading(false);
@@ -383,7 +383,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
   const saveData = useCallback((data: ComebackData) => {
     setComebackData(data);
     setDoc(doc(db, 'progress', uid), { comebackEngine: data }, { merge: true })
-      .catch(e => { console.error('Failed to save comeback data:'); showToast('Couldn\'t save — check your connection', 'error'); });
+      .catch(_e => { console.error('Failed to save comeback data:'); showToast('Couldn\'t save — check your connection', 'error'); });
   }, [uid]);
 
   // ── Anchor Setup ───────────────────────────────────────
@@ -463,7 +463,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
     setAnchorText('');
     setCustomPoints('');
     setDoc(doc(db, 'progress', uid), { comebackEngine: null }, { merge: true })
-      .catch(e => { console.error('Failed to reset comeback data:'); showToast('Couldn\'t save — check your connection', 'error'); });
+      .catch(_e => { console.error('Failed to reset comeback data:'); showToast('Couldn\'t save — check your connection', 'error'); });
   };
 
   // ── Derived values ─────────────────────────────────────

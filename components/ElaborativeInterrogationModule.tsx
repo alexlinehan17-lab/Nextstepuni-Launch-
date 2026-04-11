@@ -20,7 +20,7 @@ const theme = pinkTheme;
 
 const HungryManExperiment = () => {
     const [method, setMethod] = useState<'passive' | 'ei' | null>(null);
-    let retention = method === 'passive' ? 37 : method === 'ei' ? 72 : 0;
+    const retention = method === 'passive' ? 37 : method === 'ei' ? 72 : 0;
 
     return (
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>

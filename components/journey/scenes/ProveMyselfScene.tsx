@@ -6,7 +6,7 @@
 import React, { memo } from 'react';
 import {
   Ground, Room, Desk, Chair, Lamp, Mug, PenHolder, Clock,
-  Person, Stage, Podium, Trophy, WallSconce, WallArt,
+  Person, Stage, Podium, Trophy, WallSconce,
   ExamPaper, ResultsBoard, FluorescentLight, Curtain,
   GoldenEnvelope, CelebrationBurst, GoldenOverlay, Noticeboard,
   COLORS,

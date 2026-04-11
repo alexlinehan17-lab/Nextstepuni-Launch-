@@ -4,9 +4,9 @@
  */
 
 import React, { useState, useMemo, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronDown, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2, X, AlertCircle, Eye, Megaphone, FileDown, UserPlus, CheckCircle, MinusCircle, Flag, Sparkles } from 'lucide-react';
+import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2, X, AlertCircle, Eye, Megaphone, FileDown, UserPlus, CheckCircle, MinusCircle, Flag, Sparkles } from 'lucide-react';
 import { CourseData } from '../Library';
 import { CategoryType } from '../KnowledgeTree';
 import { getAvatarUrl } from '../Auth';
@@ -47,16 +47,16 @@ const CARD_STYLE: React.CSSProperties = {
 const CARD_STYLE_DARK_CLASS = 'dark:!bg-[rgba(255,255,255,0.04)] dark:!border-[rgba(255,255,255,0.08)]';
 
 const ACCENT = '#2A7D6F';
-const ACCENT_DARK = '#4DB8A4';
+const _ACCENT_DARK = '#4DB8A4';
 const SAGE = '#6B8F71';
 const WARM_AMBER = '#C4873B';
 const NEUTRAL_GREY = '#9A9590';
 const TRACK_BG = '#EDEAE6';
 
 // Dark mode badge/surface overrides (used via Tailwind dark: classes)
-const BADGE_SAGE_DARK = 'dark:!bg-[rgba(107,143,113,0.15)] dark:!text-[#8AB592]';
+const _BADGE_SAGE_DARK = 'dark:!bg-[rgba(107,143,113,0.15)] dark:!text-[#8AB592]';
 const BADGE_AMBER_DARK = 'dark:!bg-[rgba(196,135,59,0.15)] dark:!text-[#D4A95C]';
-const BADGE_CLAY_DARK = 'dark:!bg-[rgba(42,125,111,0.15)] dark:!text-[#6BC4B0]';
+const _BADGE_CLAY_DARK = 'dark:!bg-[rgba(42,125,111,0.15)] dark:!text-[#6BC4B0]';
 const TEXT_ACCENT_DARK = 'dark:!text-[#4DB8A4]';
 const TEXT_NEUTRAL_DARK = 'dark:!text-zinc-400';
 const TRACK_BG_DARK = 'dark:!bg-zinc-800';
@@ -234,11 +234,11 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
   // Count only-flagged students (flagged but NOT at-risk/drifting)
   const flaggedOnlyCount = attentionStudents.filter(s => s.flag && s.status !== 'at-risk' && s.status !== 'drifting').length;
 
-  const avgCurrentCAO = studentStats.length > 0
+  const _avgCurrentCAO = studentStats.length > 0
     ? Math.round(studentStats.filter(s => s.student.subjectProfile).reduce((sum, s) => sum + s.currentCAO, 0) / Math.max(1, studentStats.filter(s => s.student.subjectProfile).length))
     : 0;
 
-  const activeThisWeekCount = studentStats.filter(s => s.activeThisWeek).length;
+  const _activeThisWeekCount = studentStats.filter(s => s.activeThisWeek).length;
 
   // Status counts for filter pills
   const statusCounts = useMemo(() => {
@@ -316,7 +316,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     const lastMonday = new Date(thisMonday);
     lastMonday.setDate(thisMonday.getDate() - 7);
 
-    const fmt = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    const _fmt = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 
     let blocksThisWeek = 0;
     let blocksLastWeek = 0;
@@ -1419,7 +1419,7 @@ function DailyActivityChart({
     const len = pts.length;
     // Step 1: compute slopes between consecutive points
     const deltas: number[] = [];
-    const slopes: number[] = [];
+    const _slopes: number[] = [];
     for (let i = 0; i < len - 1; i++) {
       const dx = pts[i + 1].x - pts[i].x;
       deltas.push(dx === 0 ? 0 : (pts[i + 1].y - pts[i].y) / dx);

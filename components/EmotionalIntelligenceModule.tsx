@@ -490,7 +490,7 @@ const BoxBreathing = () => {
     const arcColors = ['#06b6d4', '#38bdf8', '#14b8a6', '#38bdf8']; // cyan, sky, teal, sky
     const radius = 88;
     const circumference = 2 * Math.PI * radius;
-    const quarterArc = circumference / 4;
+    const _quarterArc = circumference / 4;
 
     const getArcPath = (index: number) => {
       const startAngle = (index * 90 - 90) * (Math.PI / 180);

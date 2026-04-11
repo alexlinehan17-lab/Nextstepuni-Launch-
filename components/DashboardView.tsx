@@ -4,14 +4,12 @@
  */
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { ArrowLeft, BookOpen, Flame, Coins, ChevronRight, TrendingUp } from 'lucide-react';
+import { ArrowLeft, BookOpen, ChevronRight, TrendingUp } from 'lucide-react';
 import { CategoryType } from './KnowledgeTree';
 import { CourseData } from './Library';
 import { StreakData } from '../hooks/useStreak';
 import { FocusRecommendation } from '../hooks/useTodaysFocus';
-import { categoryColorMap } from '../courseData';
 
 type UserProgress = {
   [moduleId: string]: { unlockedSection: number };

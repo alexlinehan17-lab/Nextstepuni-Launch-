@@ -10,7 +10,6 @@ import { type StreakData } from './useStreak';
 import { type StudentSubjectProfile, toDateKey } from '../components/subjectData';
 import { type CourseData } from '../components/Library';
 import { type StudySessionRecord } from '../utils/strategyRegistry';
-import { type DebriefEntry } from '../components/StudyDebrief';
 
 // ── Types ──────────────────────────────────────────────────
 

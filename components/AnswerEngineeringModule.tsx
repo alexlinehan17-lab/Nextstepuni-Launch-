@@ -141,7 +141,7 @@ const PEELBuilder = () => {
           const sentIdx = placed[slotIdx];
           const pl = peelLabels[label];
           const isCorrect = phase === 'result' && sentIdx === ex.correctOrder[slotIdx];
-          const isWrong = phase === 'result' && sentIdx !== null && sentIdx !== ex.correctOrder[slotIdx];
+          const _isWrong = phase === 'result' && sentIdx !== null && sentIdx !== ex.correctOrder[slotIdx];
           const correctSentIdx = phase === 'result' ? ex.correctOrder[slotIdx] : null;
           const borderColor = isCorrect ? '#059669' : isWrong ? '#DC2626' : '#1C1917';
 
@@ -553,7 +553,7 @@ const ShapeQuiz = () => {
 
   const q = shapeQuestions[qIndex];
   const isCorrect = showFeedback && choices[qIndex] === q.correct;
-  const isWrong = showFeedback && choices[qIndex] !== null && choices[qIndex] !== q.correct;
+  const _isWrong2 = showFeedback && choices[qIndex] !== null && choices[qIndex] !== q.correct;
 
   return (
     <div className="my-10 bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 24 }}>

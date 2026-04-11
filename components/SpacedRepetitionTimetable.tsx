@@ -8,21 +8,21 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
 import {
   ChevronLeft, ChevronRight, BookOpen, RotateCcw, Target,
-  Clock, Calendar, TrendingUp, Settings, HelpCircle, X, ArrowRight, AlertTriangle, CalendarOff,
-  CheckCircle, Flame, BarChart3, Star, ShoppingBag, BookMarked, CalendarDays,
+  Settings, HelpCircle, X, ArrowRight, AlertTriangle, CalendarOff,
+  CheckCircle, Flame, CalendarDays,
   Play,
 } from 'lucide-react';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import { type SchoolEvent } from './gc/GCKeyEvents';
 import {
-  type StudentSubjectProfile, type StudyBlock, DAYS_OF_WEEK, LC_SUBJECTS, getPointsForGrade, type Grade,
+  type StudentSubjectProfile, type StudyBlock, DAYS_OF_WEEK, LC_SUBJECTS, getPointsForGrade,
   type TimetableCompletions, type TimetableStreak, getBlockId, toDateKey,
   computeBargains,
 } from './subjectData';
 import {
   computeSubjectPriorities, allocateSessions, generateWeeklyTimetable,
   computeWeeksUntilExam, computeIntensityFactor,
-  type SessionAllocation, type SubjectPriority,
+  type SessionAllocation,
 } from './timetableAlgorithm';
 import { type DebriefEntry, computeStrategyHints, type SubjectStrategyHint } from './StudyDebrief';
 import { doc, getDoc } from 'firebase/firestore';
@@ -149,8 +149,8 @@ const StudyBlockCard: React.FC<{
   strategyHint?: SubjectStrategyHint;
   isToday?: boolean;
   onStudyNow?: () => void;
-}> = ({ block, completed, skipped, onToggle, bargainPts, strategyHint, isToday, onStudyNow }) => {
-  const color = getSubjectColor(block.subjectName);
+}> = ({ block, completed, skipped, onToggle, _bargainPts, strategyHint, isToday, onStudyNow }) => {
+  const _color = getSubjectColor(block.subjectName);
   const typeConfig = SESSION_TYPE_CONFIG[block.sessionType];
 
   if (skipped) {
@@ -238,13 +238,13 @@ const StudyBlockCard: React.FC<{
 
 // ─── Priority Row ───────────────────────────────────────────────────────────
 
-const PRIORITY_BAR_COLORS: Record<string, string> = {
+const _PRIORITY_BAR_COLORS: Record<string, string> = {
   High: '',
   Medium: '',
   Low: '',
 };
 
-const PRIORITY_BAR_INLINE: Record<string, React.CSSProperties> = {
+const _PRIORITY_BAR_INLINE: Record<string, React.CSSProperties> = {
   High: { backgroundColor: '#2A7D6F' },
   Medium: { backgroundColor: '#2A7D6F' },
   Low: { backgroundColor: '#2A7D6F' },
@@ -289,7 +289,7 @@ const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> =
 
 // ─── Main Component ─────────────────────────────────────────────────────────
 
-const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, uid, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, points = 0, onOpenShop, onOpenJournal, skippedSessions = [], onStudyNow, onBlockDurationChange, schoolEvents = [] }) => {
+const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, uid, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, _points = 0, _onOpenShop, _onOpenJournal, skippedSessions = [], onStudyNow, _onBlockDurationChange, schoolEvents = [] }) => {
   const skippedSet = useMemo(() => new Set(skippedSessions), [skippedSessions]);
   const [weekOffset, setWeekOffset] = useState(0);
   const [showExplainer, setShowExplainer] = useState(false);
@@ -311,7 +311,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         const snap = await getDoc(doc(db, 'progress', uid));
         const data = snap.data()?.studyDebriefs as DebriefEntry[] | undefined;
         if (!cancelled && data) setStrategyHints(computeStrategyHints(data));
-      } catch (e) { /* silent */ }
+      } catch { /* silent */ }
     })();
     return () => { cancelled = true; };
   }, [uid]);
@@ -392,10 +392,10 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
   const totalSessions = timetable.reduce((sum, day) => sum + day.blocks.length, 0);
   const totalMinutes = totalSessions * 45;
-  const totalHours = Math.floor(totalMinutes / 60);
-  const remainingMins = totalMinutes % 60;
+  const _totalHours = Math.floor(totalMinutes / 60);
+  const _remainingMins = totalMinutes % 60;
 
-  const daysUntilExam = Math.max(0, Math.ceil((new Date(profile.examStartDate).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)));
+  const _daysUntilExam = Math.max(0, Math.ceil((new Date(profile.examStartDate).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)));
   const maxSessions = Math.max(...allocations.map(a => a.sessions), 1);
 
   const DAY_SHORTS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -624,7 +624,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
           const dayName = DAYS_OF_WEEK[i];
           const isDayRest = restDays.has(dayName);
           const isActive = selectedDay === i;
-          const isTodayTab = isCurrentWeek && i === todayDayIndex;
+          const _isTodayTab = isCurrentWeek && i === todayDayIndex;
           const dayBlockCount = timetable[i].blocks.length;
 
           return (
@@ -863,7 +863,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                       {dayBlocks.map((block, bi) => {
                         const blockId = getBlockId(block, bi);
                         const isCompleted = dayCompletions.includes(blockId);
-                        const subjectColor = getSubjectColor(block.subjectName);
+                        const _subjectColor = getSubjectColor(block.subjectName);
 
                         return (
                           <button

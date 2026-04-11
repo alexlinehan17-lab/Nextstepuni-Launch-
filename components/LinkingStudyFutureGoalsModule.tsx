@@ -162,7 +162,7 @@ const WhyBotherAudit = ({ savedSubjects, savedRatings, onSave }: { savedSubjects
 };
 
 const TransferableSkillsMatrix = () => {
-    const [activeRow, setActiveRow] = useState<string | null>(null);
+    const [_activeRow, setActiveRow] = useState<string | null>(null);
     const skills = [
         { activity: "History RSR", skill: "Information Synthesis", application: "Legal Research, Journalism" },
         { activity: "English Comparative", skill: "Pattern Recognition", application: "UX Design, HR Management" },
@@ -205,7 +205,7 @@ const TransferableSkillsMatrix = () => {
 
 // --- MODULE COMPONENT ---
 const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
-  const { responses, saveResponse, isLoaded } = useModuleResponses('linking-study-future-goals');
+  const { responses, saveResponse, isLoaded: _isLoaded } = useModuleResponses('linking-study-future-goals');
   const { northStar } = useNorthStar();
 
   const sections = [

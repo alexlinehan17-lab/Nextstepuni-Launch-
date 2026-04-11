@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --max-warnings 350"
+    "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",

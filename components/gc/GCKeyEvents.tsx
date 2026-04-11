@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useEffect, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { CalendarPlus, Trash2, Calendar, ChevronDown, Plus, X } from 'lucide-react';
 import { db } from '../../firebase';
@@ -73,7 +73,7 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school }) => {
         if (snap.exists()) {
           setEvents(snap.data().events ?? []);
         }
-      } catch (err) {
+      } catch {
         console.error('[GCKeyEvents] Failed to load:');
       }
       if (!cancelled) setIsLoading(false);
@@ -87,7 +87,7 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school }) => {
     setEvents(updated);
     try {
       await setDoc(doc(db, 'gcEvents', school), { events: updated }, { merge: true });
-    } catch (err) {
+    } catch {
       console.error('[GCKeyEvents] Failed to save:');
     }
   };

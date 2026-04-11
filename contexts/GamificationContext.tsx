@@ -110,7 +110,7 @@ export const GamificationProvider: React.FC<GamificationProviderProps> = ({
 
       const newState: IslandState = { ...island, placements: newPlacements, lastPurchaseTimestamp: now };
       await setDoc(doc(db, 'progress', userUid), { islandState: newState }, { merge: true });
-    } catch (e) {
+    } catch {
       console.error('Failed to grant rank-up tiles:');
     }
   };

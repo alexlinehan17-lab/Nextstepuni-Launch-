@@ -6,7 +6,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv, MotionP, MotionSpan } from './Motion';
-import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff, BookOpen, Target, Clock, CalendarDays, Star, ScanSearch, TrendingUp } from 'lucide-react';
+import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff, BookOpen, Target, CalendarDays, Star } from 'lucide-react';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
@@ -29,7 +29,7 @@ const TOTAL_STEPS = 9;
 
 // ─── Step-specific ambient blob colors ──────────────────────────────────────
 
-const STEP_BLOBS: Record<Step, { a: string; b: string; c: string }> = {
+const _STEP_BLOBS: Record<Step, { a: string; b: string; c: string }> = {
   1: { a: 'bg-[rgba(var(--accent),0.07)]', b: 'bg-yellow-300/[0.09]', c: 'bg-orange-200/[0.08]' },
   2: { a: 'bg-indigo-300/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-sky-200/[0.06]' },
   3: { a: 'bg-purple-300/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-amber-200/[0.06]' },
@@ -549,7 +549,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                           <div>
                             <p className="text-[10px] font-semibold text-zinc-500 dark:text-zinc-400 mb-1">Where I am now</p>
                             <div className="flex gap-1">
-                              {grades.map((g, gi) => (
+                              {grades.map((g, _gi) => (
                                 <button
                                   key={g}
                                   onClick={() => updateConfig(name, 'currentGrade', g)}

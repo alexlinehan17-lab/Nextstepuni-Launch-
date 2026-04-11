@@ -5,10 +5,10 @@
 
 import React, { useState, useMemo } from 'react';
 import { fuzzyMatchTopic } from './syllabusData';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
-  Brain, CheckCircle, ArrowRight, TrendingUp, BookOpen, Target, RotateCcw,
+  Brain, CheckCircle, ArrowRight, BookOpen, Target, RotateCcw,
   Lightbulb, Sparkles, BarChart3,
 } from 'lucide-react';
 
@@ -41,7 +41,7 @@ export const STRATEGY_OPTIONS = [
   { id: 'other', label: 'Other', icon: CheckCircle },
 ];
 
-const CONFIDENCE_LABELS = ['Very Low', 'Low', 'Medium', 'High', 'Very High'];
+const _CONFIDENCE_LABELS = ['Very Low', 'Low', 'Medium', 'High', 'Very High'];
 
 // ─── StudyDebrief Modal ──────────────────────────────────────────────────────
 

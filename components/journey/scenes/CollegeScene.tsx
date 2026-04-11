@@ -5,7 +5,7 @@
 
 import React, { memo } from 'react';
 import {
-  Ground, UniversityBuilding, Tree, Desk, Chair, Bookshelf,
+  Ground, UniversityBuilding, Tree, Desk, Chair,
   Laptop, Person, Plant, BookStack, Mug, Lamp, WallArt,
   Bench, Path, Gate, Hedge, Stage, GoldenOverlay, GraduationCap,
   PenHolder, LampPost, COLORS,

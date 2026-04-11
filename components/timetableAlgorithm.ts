@@ -4,7 +4,7 @@
  */
 
 import {
-  type StudentSubject, type StudyBlock, type DaySchedule, type WeeklyTimetable, type Grade,
+  type StudentSubject, type StudyBlock, type WeeklyTimetable, type Grade,
   type TimetableCompletions,
   LC_SUBJECTS, DAYS_OF_WEEK, getPointsForGrade, getGradeIndex, HIGHER_GRADES, ORDINARY_GRADES,
   toDateKey,
@@ -267,7 +267,7 @@ export function allocateSessions(
 ): SessionAllocation[] {
   const intensity = computeIntensityFactor(weeksUntilExam);
   // Base: 14 sessions/week (2/day). Ramps to 21 (3/day) at max intensity
-  let totalSessions = Math.round(14 + intensity * 7);
+  const totalSessions = Math.round(14 + intensity * 7);
   const n = priorities.length;
 
   if (n === 0) return [];
@@ -374,7 +374,7 @@ export function allocateSessions(
   }
 
   // Round to integers with minimum 1 per subject
-  let allocations = priorities.map((p, i) => ({
+  const allocations = priorities.map((p, i) => ({
     subjectName: p.subjectName,
     sessions: Math.max(1, Math.round(shares[i])),
     priorityScore: p.priorityScore,
@@ -448,7 +448,7 @@ export function generateWeeklyTimetable(
   const effectiveCapacity = Math.min(totalCapacity, maxTotalBlocks);
 
   // Build blocks for each subject, capped to effective capacity
-  let allBlocks: { block: StudyBlock; priority: number; subjectName: string }[] = [];
+  const allBlocks: { block: StudyBlock; priority: number; subjectName: string }[] = [];
   const totalRequested = allocations.reduce((s, a) => s + a.sessions, 0);
   const scaleFactor = totalRequested > effectiveCapacity
     ? effectiveCapacity / totalRequested

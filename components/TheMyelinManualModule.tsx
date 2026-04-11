@@ -5,7 +5,7 @@
 */
 
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import {
   Cpu, Zap, SlidersHorizontal, Microscope, Construction
 } from 'lucide-react';

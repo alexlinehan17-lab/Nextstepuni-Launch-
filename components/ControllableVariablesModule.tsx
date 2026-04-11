@@ -5,7 +5,7 @@
 */
 
 import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
   Cpu, Moon, Coffee, Zap, Repeat, ClipboardCheck, CheckCircle2

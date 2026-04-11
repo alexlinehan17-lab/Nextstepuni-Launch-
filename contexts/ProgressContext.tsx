@@ -6,7 +6,7 @@
 import React, { createContext, useContext, useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { db } from '../firebase';
 import { doc, getDoc } from 'firebase/firestore';
-import { type ModuleProgress, type UserProgress, type NorthStar } from '../types';
+import { type UserProgress, type NorthStar } from '../types';
 import { type StudentSubjectProfile } from '../components/subjectData';
 import { computeStreak } from '../components/timetableAlgorithm';
 import { useAuth } from './AuthContext';

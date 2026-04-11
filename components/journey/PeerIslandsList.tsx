@@ -4,12 +4,12 @@
  */
 
 import React, { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { X, Compass, Trophy, LayoutGrid, Crown } from 'lucide-react';
 import { PeerIsland } from '../../hooks/usePeerIslands';
 import { IslandState } from '../../types';
-import { getAvatarUrl, handleAvatarError } from '../Auth';
+import { getAvatarUrl } from '../Auth';
 
 function computeIslandScore(state: IslandState): number {
   const placementCount = state.placements.filter(p => !p.isStarter).length;

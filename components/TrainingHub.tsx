@@ -4,14 +4,14 @@
  */
 
 import React from 'react';
-import { motion, useMotionValue, useTransform, animate, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
   ArrowLeft, Flame, TrendingUp, Target, Zap, Award, Crown, Mountain,
   Footprints, Star, Brain, Repeat, Shuffle, HelpCircle,
   Compass, Sprout, Shield, Radar, ClipboardCheck, Trophy, ArrowRight, ChevronDown, Play,
 } from 'lucide-react';
-import { type GamificationState, generateWeeklyGoals, getWeekNumber, ATHLETE_RANKS } from '../gamificationConfig';
+import { type GamificationState, generateWeeklyGoals, getWeekNumber } from '../gamificationConfig';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import { type StreakData } from '../hooks/useStreak';
 import { type NorthStar, type UserProgress, type StrategyMasteryMap, type MasteryTier } from '../types';
@@ -64,7 +64,7 @@ const RANK_ICONS: Record<string, React.ElementType> = {
   Footprints, Flame, TrendingUp, Target, Zap, Award, Crown, Mountain,
 };
 
-const TIER_ORDER: MasteryTier[] = ['habitual', 'applied', 'practiced', 'learned'];
+const _TIER_ORDER: MasteryTier[] = ['habitual', 'applied', 'practiced', 'learned'];
 const TIER_LABELS: Record<MasteryTier, string> = { none: '', learned: 'Learned', practiced: 'Practiced', applied: 'Applied', habitual: 'Habitual' };
 const TIER_COLORS: Record<MasteryTier, string> = { none: '#A8A29E', learned: '#3B82F6', practiced: '#2A7D6F', applied: '#F59E0B', habitual: '#7C3AED' };
 const TIER_INDEX: Record<MasteryTier, number> = { none: -1, learned: 0, practiced: 1, applied: 2, habitual: 3 };
@@ -103,10 +103,10 @@ interface TrainingHubProps {
 }
 
 const TrainingHub: React.FC<TrainingHubProps> = ({
-  gamificationState, streak, pointsBalance, northStar, onBack, onOpenJourney,
-  userProgress, allCourses, strategyMastery, weeklyChallenge, pointsReload, onGoToStudy, uid,
+  gamificationState, streak, _pointsBalance, northStar, onBack, onOpenJourney,
+  userProgress, allCourses, strategyMastery, weeklyChallenge, pointsReload, onGoToStudy, _uid,
 }) => {
-  const { currentRank, nextRank, rankProgress, totalPointsEarned, unlockedAchievements, weeklyGoalProgress, weekStartDate, personalBests } = gamificationState;
+  const { currentRank, nextRank, rankProgress, totalPointsEarned, unlockedAchievements, weeklyGoalProgress, _weekStartDate, personalBests } = gamificationState;
   const weekNumber = getWeekNumber();
   const weeklyGoals = generateWeeklyGoals(currentRank.id, weekNumber);
   const RankIcon = RANK_ICONS[currentRank.icon] || Star;

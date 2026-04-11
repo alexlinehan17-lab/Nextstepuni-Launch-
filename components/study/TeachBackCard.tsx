@@ -4,7 +4,6 @@
  */
 
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { BookOpen, Send, ThumbsUp, X } from 'lucide-react';
 

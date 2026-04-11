@@ -5,7 +5,7 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
 import { useToast } from './Toast';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { Clock, Map, TrendingUp, Target } from 'lucide-react';
 import { db } from '../firebase';
@@ -43,7 +43,7 @@ const PANEL_TABS = [
 // ── Main Component ─────────────────────────────────────────
 
 const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions }) => {
-  const { showToast } = useToast();
+  const { showToast: _showToast } = useToast();
   const [activePanel, setActivePanel] = useState(0);
   const [studySessions, setStudySessions] = useState<StudySessionRecord[]>([]);
   const [debriefs, setDebriefs] = useState<DebriefEntry[]>([]);
@@ -100,7 +100,7 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
         if (data.studyDebriefs) {
           setDebriefs(data.studyDebriefs as DebriefEntry[]);
         }
-      } catch (e) {
+      } catch {
         console.error('Failed to load War Room data:');
       }
       if (!cancelled) setIsLoading(false);

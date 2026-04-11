@@ -25,7 +25,7 @@ interface ModuleCompleteScreenProps {
 const d = (step: number) => 0.15 + step * 0.07;
 
 const ModuleCompleteScreen: React.FC<ModuleCompleteScreenProps> = ({
-  isOpen, moduleTitle, moduleSubtitle, categoryColor, modulesCompleted, totalModules,
+  isOpen, moduleTitle, moduleSubtitle, _categoryColor, modulesCompleted, totalModules,
   sectionsCount, northStarStatement, onContinue, onReview,
 }) => {
 

@@ -5,12 +5,12 @@
 
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { useToast } from './Toast';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
 import {
-  Compass, ChevronRight, ChevronLeft, Search, SlidersHorizontal,
-  MapPin, GraduationCap, Briefcase, Heart, Star, RotateCcw,
-  BookmarkPlus, Check, ArrowUpRight, TrendingUp, X, Building, Clock,
+  Compass, ChevronRight, ChevronLeft, SlidersHorizontal,
+  MapPin, Briefcase, Heart, Star, RotateCcw,
+  BookmarkPlus, Check, ArrowUpRight, TrendingUp, X, Clock,
 } from 'lucide-react';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import { db } from '../firebase';
@@ -150,7 +150,7 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
           // No saved data — auto-populate estimated points from profile
           setAnswers(prev => ({ ...prev, estimatedPoints: autoPoints }));
         }
-      } catch (e) {
+      } catch {
         console.error('Failed to load Future Finder data:');
       }
       if (!cancelled) setIsLoading(false);
@@ -164,7 +164,7 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
     setSavedData(data);
     setDoc(doc(db, 'progress', uid), { futureFinder: data }, { merge: true })
       .then(() => showToast('Results saved!', 'success'))
-      .catch(e => { console.error('Failed to save:'); showToast('Couldn\'t save \u2014 check your connection', 'error'); });
+      .catch(_e => { console.error('Failed to save:'); showToast('Couldn\'t save \u2014 check your connection', 'error'); });
   }, [uid, showToast]);
 
   // Handle assessment completion
@@ -351,7 +351,7 @@ function IntroPhase({ autoPoints, onStart, onViewResults }: { autoPoints: number
 
 /** Phase 2: Assessment */
 function AssessmentPhase({
-  currentQ, answers, autoPoints, onUpdateAnswer, onNext, onBack,
+  currentQ, answers, _autoPoints, onUpdateAnswer, onNext, onBack,
 }: {
   currentQ: number;
   answers: FutureFinderAnswers;
@@ -771,7 +771,7 @@ function ResultCard({
 
 /** Phase 4: Detail View */
 function DetailPhase({
-  result, answers, autoPoints, isSaved, isCompared, onToggleSave, onToggleCompare, onBack,
+  result, _answers, autoPoints, isSaved, isCompared, onToggleSave, onToggleCompare, onBack,
 }: {
   result: RecommendationResult;
   answers: FutureFinderAnswers;
@@ -987,7 +987,7 @@ function InfoTile({ icon: Icon, label, value }: { icon: React.ElementType; label
 
 /** Phase 5: Compare View */
 function ComparePhase({
-  courses, answers, onBack, onRemove,
+  courses, _answers, onBack, onRemove,
 }: {
   courses: RecommendationResult[];
   answers: FutureFinderAnswers;

@@ -4,11 +4,11 @@
  */
 
 import React, { useState, useMemo, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
   TrendingDown, Calculator, BarChart3, Scale, GitBranch, Layers, Target,
-  ChevronDown, ChevronUp, AlertTriangle, CheckCircle2, ArrowRight, Minus, Plus
+  ChevronDown, AlertTriangle, CheckCircle2, Minus, Plus
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
@@ -631,7 +631,7 @@ const PointsOptimizationModule: React.FC<{
   progress: ModuleProgress;
   onProgressUpdate: (progress: ModuleProgress) => void;
 }> = ({ onBack, progress, onProgressUpdate }) => {
-  const { responses, saveResponse, isLoaded } = useModuleResponses('the-625-blueprint');
+  const { responses, saveResponse, isLoaded: _isLoaded } = useModuleResponses('the-625-blueprint');
 
   const sections = [
     { id: 'the-cliff', title: 'The 12-Point Cliff', eyebrow: '01 // How Points Really Work', icon: TrendingDown },

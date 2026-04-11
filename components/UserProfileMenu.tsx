@@ -6,7 +6,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, LogOut, Settings, Flame, ChevronRight, Trophy, Award, BarChart3, Star, User, X, Lightbulb } from 'lucide-react';
+import { Sun, Moon, LogOut, Settings, Flame, ChevronRight, Trophy, Award, BarChart3, Star, X } from 'lucide-react';
 import { SessionUser, getAvatarUrl, handleAvatarError } from './Auth';
 import { UserSettings } from '../types';
 import { type StreakData } from '../hooks/useStreak';
@@ -220,7 +220,7 @@ interface MobileProfileSheetProps {
   unlockedThemes: string[];
 }
 
-export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, onGoToInsights, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes }) => {
+export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, _onGoToDashboard, _onGoToInsights, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes }) => {
   const displayAvatar = avatarOverride || user.avatar;
   return (
     <AnimatePresence>

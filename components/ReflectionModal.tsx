@@ -7,7 +7,7 @@ import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
-import { X, Star, BookOpen, Target, RotateCcw, Sparkles } from 'lucide-react';
+import { X, BookOpen, Target, RotateCcw } from 'lucide-react';
 
 // ─── Reflection Quality Scoring ─────────────────────────────────────────────
 

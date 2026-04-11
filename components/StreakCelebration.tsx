@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { createPortal } from 'react-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
 
 interface StreakCelebrationProps {

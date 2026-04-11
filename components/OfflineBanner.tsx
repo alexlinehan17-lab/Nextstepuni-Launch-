@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { WifiOff, Wifi } from 'lucide-react';
 import { useOnlineStatus } from '../hooks/useOnlineStatus';

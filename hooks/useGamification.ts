@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
-import { doc, getDoc, setDoc, updateDoc, increment, runTransaction } from 'firebase/firestore';
+import { doc, getDoc, setDoc, runTransaction } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
 import { type UserProgress, type NorthStar, type IslandState, type StudyReflection } from '../types';
@@ -223,7 +223,7 @@ export function useGamification({
     // Update local state immediately (optimistic)
     setGamificationData(merged);
     // Fire-and-forget Firestore write — queues offline via persistence
-    setDoc(doc(db, 'progress', uid), { gamification: merged }, { merge: true }).catch(err => {
+    setDoc(doc(db, 'progress', uid), { gamification: merged }, { merge: true }).catch(_err => {
       console.error('Failed to save gamification data:');
     });
   }, [uid, gamificationData]);
@@ -278,7 +278,7 @@ export function useGamification({
         }
 
         const updatedList = Array.from(currentUnlocked);
-        const totalBonus = newlyUnlocked.reduce((sum, a) => sum + a.bonusPoints, 0);
+        const _totalBonus = newlyUnlocked.reduce((sum, a) => sum + a.bonusPoints, 0);
 
         if (uid) {
           // Single transaction: save achievements + award bonus points atomically.

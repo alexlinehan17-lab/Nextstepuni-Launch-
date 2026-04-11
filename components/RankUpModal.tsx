@@ -28,7 +28,7 @@ const RANK_DESCRIPTIONS: Record<string, string> = {
   legend: "The highest rank. You did what most only talk about.",
 };
 
-const RANK_UNLOCKS: Record<string, string> = {
+const _RANK_UNLOCKS: Record<string, string> = {
   newcomer: 'Weekly goals unlocked',
   beginner: 'Strategy tracking enabled',
   consistent: 'Personal bests tracking active',
@@ -66,13 +66,13 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
 
   const rankIndex = ATHLETE_RANKS.findIndex(r => r.id === newRank.id);
   const isMaxRank = rankIndex === ATHLETE_RANKS.length - 1;
-  const nextRank = isMaxRank ? null : ATHLETE_RANKS[rankIndex + 1];
+  const _nextRank = isMaxRank ? null : ATHLETE_RANKS[rankIndex + 1];
   const IconComponent = RANK_ICON_MAP[newRank.icon] || Star;
   const darkText = needsDarkText(newRank.colorHex);
   const heroText = darkText ? '#1C1917' : '#FFFFFF';
   const heroTextMuted = darkText ? 'rgba(28,25,23,0.45)' : 'rgba(255,255,255,0.65)';
-  const blobLight = darkText ? 'rgba(255,255,255,0.25)' : 'rgba(255,255,255,0.12)';
-  const blobDark = darkText ? 'rgba(0,0,0,0.06)' : 'rgba(0,0,0,0.08)';
+  const _blobLight = darkText ? 'rgba(255,255,255,0.25)' : 'rgba(255,255,255,0.12)';
+  const _blobDark = darkText ? 'rgba(0,0,0,0.06)' : 'rgba(0,0,0,0.08)';
   const btnColor = darkenHex(newRank.colorHex, 15);
 
   const d = (step: number) => 0.1 + step * 0.065;

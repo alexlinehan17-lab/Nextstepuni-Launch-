@@ -5,10 +5,10 @@
 */
 
 import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
-  Clock, BarChart2, CalendarDays, RadioTower, Wrench, Brain, RefreshCcw, TrendingDown
+  Clock, BarChart2, CalendarDays, RadioTower, Wrench, Brain
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { skyTheme } from '../moduleThemes';

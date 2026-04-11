@@ -228,10 +228,10 @@ const AmygdalaHijackSimulator = () => {
   };
 
   // Derived visual values
-  const pfcOpacity = Math.max(0.15, 1 - stressLevel * 0.85);
-  const amygdalaGlow = stressLevel;
-  const connectionOpacity = Math.max(0.1, 1 - stressLevel * 0.9);
-  const connectionWidth = Math.max(1, 4 - stressLevel * 3);
+  const _pfcOpacity = Math.max(0.15, 1 - stressLevel * 0.85);
+  const _amygdalaGlow = stressLevel;
+  const _connectionOpacity = Math.max(0.1, 1 - stressLevel * 0.9);
+  const _connectionWidth = Math.max(1, 4 - stressLevel * 3);
   const cortisolHeight = stressLevel * 100;
 
 

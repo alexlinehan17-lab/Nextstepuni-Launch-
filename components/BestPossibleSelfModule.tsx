@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect } from 'react';
+import React, { } from 'react';
 import { motion } from 'framer-motion';
 import {
   MapPin, BatteryWarning, Filter, Zap, ClipboardCheck
@@ -76,7 +76,7 @@ const WOOPPlanner = ({ responses, saveResponse }: { responses: Record<string, an
 
 // --- MODULE COMPONENT ---
 const BestPossibleSelfModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
-  const { responses, saveResponse, isLoaded } = useModuleResponses('best-possible-self');
+  const { responses, saveResponse, isLoaded: _isLoaded } = useModuleResponses('best-possible-self');
   const { northStar } = useNorthStar();
 
   const sections = [

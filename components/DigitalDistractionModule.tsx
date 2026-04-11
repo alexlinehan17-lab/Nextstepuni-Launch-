@@ -194,7 +194,7 @@ const PhasedDetoxRoadmap = () => {
   const allDone = totalChecked === totalItems;
 
   /* Progress line: fraction of phases completed (by items) */
-  let cumulativeChecked = 0;
+  const _cumulativeChecked = 0;
   const phaseCompletions = PHASES.map((phase) => {
     const phaseChecked = phase.items.filter((_, i) => checked.has(`${phase.number}-${i}`)).length;
     cumulativeChecked += phaseChecked;

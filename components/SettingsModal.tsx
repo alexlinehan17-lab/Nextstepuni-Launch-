@@ -5,7 +5,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { X, Check, Lock, Sun, Moon, RefreshCw, LogOut, ChevronRight, Compass } from 'lucide-react';
 import { AVATAR_SEEDS, getAvatarUrl } from './Auth';
@@ -29,7 +29,7 @@ interface SettingsModalProps {
 
 const SettingsModal: React.FC<SettingsModalProps> = ({
   isOpen, onClose, settings, updateSetting,
-  unlockedAvatarSeeds = [], unlockedThemes = [], unlockedCardStyles = [],
+  unlockedAvatarSeeds = [], _unlockedThemes = [], _unlockedCardStyles = [],
   userName, userSchool, onChangeSubjects, onResetNorthStar, onLogout,
 }) => {
   const [showSaved, setShowSaved] = useState(false);

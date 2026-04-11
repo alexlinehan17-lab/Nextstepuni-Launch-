@@ -5,12 +5,11 @@
 
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ArrowRight, CheckCircle2, Lock, List, X, Palette, Sun, Moon, Layers } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CheckCircle2, Lock, List, X, Palette, Sun, Moon } from 'lucide-react';
 import { ModuleProgress, SectionDefinition, ModuleTheme, AccentThemeId, CardStyleId } from '../types';
 import { ActivityRing } from './ModuleShared';
 import { useSettingsContext } from '../contexts/SettingsContext';
 import { ACCENT_THEME_LIST, CARD_STYLES } from '../themeData';
-import PrimaryActionButton from './ui/PrimaryActionButton';
 import ModuleCompleteScreen from './ModuleCompleteScreen';
 
 /* ── Confetti celebration overlay ── */

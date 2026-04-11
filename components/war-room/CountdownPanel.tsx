@@ -5,7 +5,6 @@
 
 import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { MotionDiv } from '../Motion';
 
 import { type StudentSubjectProfile } from '../subjectData';
 import { getDistinctSubjectHex } from '../../studySessionData';

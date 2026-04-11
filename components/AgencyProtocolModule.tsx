@@ -8,7 +8,7 @@ import { motion, AnimatePresence, Reorder } from 'framer-motion';
 import {
   Target, Users, Settings, ShieldAlert, Zap, Map,
   Lightbulb, Activity, Brain, GripVertical,
-  AlertTriangle, CheckCircle2, X, Star, Compass, ArrowRight,
+  AlertTriangle, CheckCircle2, X, Star,
 } from 'lucide-react';
 import { ModuleProgress } from '../types';
 import { blueTheme } from '../moduleThemes';
@@ -33,7 +33,7 @@ const FLIP_COLORS = [
   { fill: '#6EE7B7', border: '#059669', shadow: '#059669', text: '#064E3B', darkFill: '#064E3B' },
 ];
 
-const FlipCard = ({ front, back, frontIcon: FrontIcon, backIcon: BackIcon, colorIndex = 0 }: { front: React.ReactNode, back: React.ReactNode, frontIcon: any, backIcon: any, colorIndex?: number }) => {
+const FlipCard = ({ front, back, frontIcon: FrontIcon, backIcon: _BackIcon, colorIndex = 0 }: { front: React.ReactNode, back: React.ReactNode, frontIcon: any, backIcon: any, colorIndex?: number }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const c = FLIP_COLORS[colorIndex % FLIP_COLORS.length];
   return (

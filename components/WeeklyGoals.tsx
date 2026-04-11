@@ -19,7 +19,7 @@ interface WeeklyGoalsProps {
   weekStartDate: string;
 }
 
-const WeeklyGoals: React.FC<WeeklyGoalsProps> = ({ goals, progress, weekStartDate }) => {
+const WeeklyGoals: React.FC<WeeklyGoalsProps> = ({ goals, progress, _weekStartDate }) => {
   const completedGoals = goals.filter(g => (progress[g.metric] ?? 0) >= g.target).length;
   const bonusEarned = WEEKLY_GOAL_BONUS[completedGoals] ?? 0;
   const nextBonus = completedGoals < 3 ? WEEKLY_GOAL_BONUS[completedGoals + 1] ?? 0 : 0;

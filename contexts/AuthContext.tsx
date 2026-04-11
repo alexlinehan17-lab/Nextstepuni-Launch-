@@ -6,7 +6,7 @@
 import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
 import { auth, db } from '../firebase';
 import { onAuthStateChanged, signOut, User as FirebaseUser } from 'firebase/auth';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { doc, getDoc } from 'firebase/firestore';
 import { SessionUser } from '../components/Auth';
 import { type UserProgress, type NorthStar } from '../types';
 import { type StudentSubjectProfile } from '../components/subjectData';
@@ -168,7 +168,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
               setLoadedData({ ...defaultLoadedData, needsOnboarding: true });
             }
           }
-        } catch (error) {
+        } catch {
           console.error('Error fetching user data:');
           const fallbackName = firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Student';
           setUser({ uid: firebaseUser.uid, name: fallbackName, avatar: 'Charlie', isAdmin: false });

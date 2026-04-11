@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { X, ArrowRight, ArrowLeft, Check, Calendar, GraduationCap, CalendarOff } from 'lucide-react';
 import {
@@ -75,7 +75,7 @@ const DAY_SHORTS: Record<string, string> = {
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
-const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingProfile, onComplete, onClose }) => {
+const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ _user, existingProfile, onComplete, onClose }) => {
   const isEditMode = !!existingProfile;
 
   const [step, setStep] = useState<Step>(isEditMode ? 2 : 1);

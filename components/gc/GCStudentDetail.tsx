@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { ArrowLeft, Flame, Coins, ChevronDown, ChevronRight, BookOpen, AlertTriangle, FileText, X, Save, Compass, BarChart3, Brain, Lightbulb, Heart, UserPlus, TrendingDown, TrendingUp, CheckCircle, MinusCircle, Flag } from 'lucide-react';
 import { db } from '../../firebase';
@@ -190,7 +190,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
       setSavedNotes(updated);
       setNoteText('');
       onNoteSaved?.(student.user.uid, updated, now);
-    } catch (err) {
+    } catch {
       console.error('Failed to save note:');
       setNoteError('Failed to save. Please try again.');
     }

@@ -4,8 +4,8 @@
  */
 
 import React, { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { MotionButton, MotionDiv } from '../Motion';
+import { AnimatePresence } from 'framer-motion';
+import { MotionDiv } from '../Motion';
 import { Plus, X, TrendingUp, AlertTriangle } from 'lucide-react';
 import {
   type StudentSubjectProfile, type Grade,
@@ -220,7 +220,7 @@ const TrajectoryChart: React.FC<TrajectoryChartProps> = ({ subjects, resultsBySu
 
 // ── TrajectoryPanel ─────────────────────────────────────────
 
-const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults, mockResultsHook, daysUntilExam }) => {
+const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults, mockResultsHook, _daysUntilExam }) => {
   const [showAddForm, setShowAddForm] = useState<false | 'single' | 'full'>(false);
   const [formSubject, setFormSubject] = useState(subjects[0]?.subjectName ?? '');
   const [formGrade, setFormGrade] = useState('');
@@ -303,7 +303,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
     setShowAddForm(false);
   };
 
-  const removeResult = (derivedId: string) => {
+  const _removeResult = (derivedId: string) => {
     // Derived IDs are formatted as `${mock.id}-${subjectName}`.
     // Find the parent unified mock by checking if derivedId starts with mock.id.
     for (const mock of mockResultsHook.mocks) {

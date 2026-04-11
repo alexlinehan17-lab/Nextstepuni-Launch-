@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import {
   Clock, Activity, ChevronDown, AlertTriangle, BookOpen,
@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import {
   type StudentSubjectProfile, type TimetableCompletions,
-  type Grade, getPointsForGrade,
+  getPointsForGrade,
 } from '../subjectData';
 import { getDistinctSubjectHex } from '../../studySessionData';
 import { getSubjectGuidance, type SubjectGuidance } from '../subjectGuidance';
@@ -62,7 +62,7 @@ interface BriefingPanelProps {
 // ── Component ──────────────────────────────────────────────
 
 const BriefingPanel: React.FC<BriefingPanelProps> = ({
-  subjects, topicMap, mockResults, allocations, hoursStudiedMap, weeksUntilExam, blockDuration, daysUntilExam, timetableCompletions,
+  subjects, topicMap, mockResults, allocations, _hoursStudiedMap, weeksUntilExam, _blockDuration, daysUntilExam, timetableCompletions,
 }) => {
   const [showStudyPatterns, setShowStudyPatterns] = useState(false);
 
@@ -374,7 +374,7 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
                   'Mathematics': '#2D3436', 'English': '#E74C3C',
                 };
                 const hex = BRIEFING_COLORS[rec.subject] || getDistinctSubjectHex(rec.subject, subjectIdx >= 0 ? subjectIdx : i);
-                const isUrgent = rec.priority >= 30;
+                const _isUrgent = rec.priority >= 30;
                 const isTop = i === 0;
                 return (
                   <div

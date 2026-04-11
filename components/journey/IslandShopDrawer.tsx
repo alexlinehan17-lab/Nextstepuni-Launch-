@@ -4,9 +4,9 @@
  */
 
 import React, { useState, useMemo, useRef, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { ChevronDown, ChevronRight, Star, Lock, Gift, Check, X } from 'lucide-react';
+import { ChevronDown, ChevronRight, Star, Lock, Gift, Check } from 'lucide-react';
 import { ShopItemCategory } from '../../types';
 import { isUniqueItem, MilestoneReward } from '../../islandShopData';
 import { EnrichedShopItem, MilestoneRewardStatus } from '../../hooks/useIslandShop';

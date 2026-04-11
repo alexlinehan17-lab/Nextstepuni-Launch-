@@ -45,7 +45,7 @@ export function useKudos(uid?: string) {
             createdAt: (data.createdAt as Timestamp)?.toDate?.() ?? new Date(),
           };
         }));
-      } catch (err) {
+      } catch {
         console.error('[useKudos] Failed to load kudos:');
       } finally {
         if (!cancelled) setIsLoading(false);
@@ -94,7 +94,7 @@ export function useKudos(uid?: string) {
         createdAt: serverTimestamp(),
       });
       return true;
-    } catch (err) {
+    } catch {
       console.error('[useKudos] Failed to send kudos:');
       return false;
     }

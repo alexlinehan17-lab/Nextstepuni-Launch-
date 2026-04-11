@@ -4,14 +4,14 @@
  */
 
 import React, { useState, useMemo, useEffect, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
   ChevronRight, X, ScanSearch,
 } from 'lucide-react';
 import {
-  type SubjectSyllabus, type SyllabusTopic,
-  SYLLABUS_DATA, AVAILABLE_SUBJECTS, getSyllabusForSubject,
+  type SyllabusTopic,
+  AVAILABLE_SUBJECTS, getSyllabusForSubject,
   computeEfficiency, getQuadrant, QUADRANT_LABELS,
   fuzzyMatchTopic,
 } from './syllabusData';
@@ -44,7 +44,7 @@ interface SubjectMastery {
 
 // ── Visual helpers ───────────────────────────────────────────────────────────
 
-const STATUS_CONFIG: Record<TopicStatus, { label: string; color: string; dot: string }> = {
+const _STATUS_CONFIG: Record<TopicStatus, { label: string; color: string; dot: string }> = {
   'not-started': { label: 'Not started', color: 'text-zinc-400 dark:text-zinc-500', dot: 'bg-zinc-300 dark:bg-zinc-600' },
   'in-progress': { label: 'In progress', color: 'text-amber-600 dark:text-amber-400', dot: 'bg-amber-400' },
   'confident': { label: 'Confident', color: 'text-emerald-600 dark:text-emerald-400', dot: 'bg-emerald-500' },
@@ -52,7 +52,7 @@ const STATUS_CONFIG: Record<TopicStatus, { label: string; color: string; dot: st
 
 // ── Treemap layout ───────────────────────────────────────────────────────────
 
-function computeTreemapLayout(topics: SyllabusTopic[], totalMarks: number): { topic: SyllabusTopic; cols: number; rows: number }[] {
+function computeTreemapLayout(topics: SyllabusTopic[], _totalMarks: number): { topic: SyllabusTopic; cols: number; rows: number }[] {
   // Sort by mark weight descending
   const sorted = [...topics].sort((a, b) => b.markWeight - a.markWeight);
 
@@ -98,7 +98,7 @@ function displayToUnified(s: TopicStatus): UnifiedConfidence {
 
 const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => {
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
-  const [sortBy, setSortBy] = useState<SortKey>('efficiency');
+  const [sortBy, _setSortBy] = useState<SortKey>('efficiency');
   const [expandedTopic, setExpandedTopic] = useState<string | null>(null);
   const [debriefs, setDebriefs] = useState<DebriefEntry[]>([]);
   const [quadrantFilter, setQuadrantFilter] = useState<QuadrantFilter>('all');
@@ -137,7 +137,7 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
     return () => { cancelled = true; };
   }, [uid]);
 
-  const handleStatusChange = useCallback((subject: string, topicName: string) => {
+  const _handleStatusChange = useCallback((subject: string, topicName: string) => {
     const current = mastery[subject]?.[topicName] || 'not-started';
     const cycle: TopicStatus[] = ['not-started', 'in-progress', 'confident'];
     const nextIdx = (cycle.indexOf(current) + 1) % cycle.length;
@@ -170,7 +170,7 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
   const syllabus = selectedSubject ? getSyllabusForSubject(selectedSubject) : null;
 
   // Compute mastery stats for the selected subject
-  const masteryStats = useMemo(() => {
+  const _masteryStats = useMemo(() => {
     if (!syllabus || !selectedSubject) return { notStarted: 0, inProgress: 0, confident: 0, total: 0, progressPercent: 0 };
     const subjectMastery = mastery[selectedSubject] || {};
     let notStarted = 0, inProgress = 0, confident = 0;
@@ -207,7 +207,7 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
   }, [syllabus, selectedSubject, topicHoursMap, mastery]);
 
   // Filtered and sorted topics
-  const filteredTopics = useMemo(() => {
+  const _filteredTopics = useMemo(() => {
     if (!syllabus) return [];
     let topics = [...syllabus.topics];
 
@@ -241,7 +241,7 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
     }
   }, [syllabus, sortBy, quadrantFilter, searchQuery]);
 
-  const topicsByQuadrant = useMemo(() => {
+  const _topicsByQuadrant = useMemo(() => {
     if (!syllabus) return {};
     const groups: Record<string, SyllabusTopic[]> = {};
     for (const topic of syllabus.topics) {

@@ -4,17 +4,17 @@
  */
 
 import React, { useState, useMemo, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
-  TrendingUp, Target, Zap, Plus, Trash2, ChevronRight,
-  ArrowRight, Star, Info, Calendar, Award, Rocket,
+  TrendingUp, Zap, Plus, Trash2,
+  ArrowRight, Star, Calendar, Award, Rocket,
 } from 'lucide-react';
 import {
   type StudentSubjectProfile, type Grade, type Level,
   LC_SUBJECTS, getPointsForGrade, getGradesForLevel,
-  HIGHER_GRADES, ORDINARY_GRADES,
-  type Bargain, computeBargains,
+
+  computeBargains,
 } from './subjectData';
 import { useToast } from './Toast';
 import { useMockResults } from '../hooks/useMockResults';

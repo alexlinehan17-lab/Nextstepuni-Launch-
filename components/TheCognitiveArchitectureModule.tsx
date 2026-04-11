@@ -19,7 +19,7 @@ const theme = fuchsiaTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 
-const MemoryFlowVisualizer = () => {
+const _MemoryFlowVisualizer = () => {
   const [attention, setAttention] = useState(false);
 
   const particleCount = 5;

@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from '../Motion';
 import { Heart, X } from 'lucide-react';
 import { KUDOS_MESSAGES } from '../../kudosData';
@@ -19,7 +19,7 @@ interface KudosButtonProps {
 }
 
 const KudosButton: React.FC<KudosButtonProps> = ({
-  senderUid, senderName, targetUid, school,
+  _senderUid, senderName, targetUid, school,
   canSendKudosTo, sendKudos,
 }) => {
   const [pickerOpen, setPickerOpen] = useState(false);

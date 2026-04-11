@@ -473,7 +473,7 @@ const TaskEnvironmentMatcher = () => {
         {TASK_ITEMS.map((task) => {
           const answer = answers[task.id];
           const isCorrect = submitted && answer === task.correct;
-          const isWrong = submitted && answer !== task.correct;
+          const _isWrong = submitted && answer !== task.correct;
           return (
             <div key={task.id} className="rounded-xl p-3 transition-colors" style={{
               backgroundColor: submitted ? (isCorrect ? '#6EE7B7' : '#FCA5A5') : '#FFFFFF',

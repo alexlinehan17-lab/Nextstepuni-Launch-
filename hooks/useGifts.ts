@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { collection, query, where, orderBy, limit, getDocs, addDoc, writeBatch, doc, serverTimestamp, Timestamp, increment } from 'firebase/firestore';
+import { collection, query, where, orderBy, limit, getDocs, writeBatch, doc, serverTimestamp, Timestamp, increment } from 'firebase/firestore';
 import { db } from '../firebase';
 import { ShopItem } from '../types';
 import { SHOP_CATALOG } from '../islandShopData';
@@ -60,7 +60,7 @@ export function useGifts(uid?: string) {
             createdAt: (data.createdAt as Timestamp)?.toDate?.() ?? new Date(),
           };
         }));
-      } catch (err) {
+      } catch {
         console.error('[useGifts] Failed to load gifts:');
       } finally {
         if (!cancelled) setIsLoading(false);
@@ -120,7 +120,7 @@ export function useGifts(uid?: string) {
 
       await batch.commit();
       return true;
-    } catch (err) {
+    } catch {
       console.error('[useGifts] Failed to send gift:');
       return false;
     }

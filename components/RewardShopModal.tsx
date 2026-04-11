@@ -5,9 +5,9 @@
 
 import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
-import { X, Star, Coffee, CalendarOff, Lock, Check, ShoppingBag, Palette, ChevronRight, Layers } from 'lucide-react';
+import { X, Star, Coffee, CalendarOff, Lock, Check, ShoppingBag, ChevronRight, Layers } from 'lucide-react';
 import { type CosmeticUnlocks, type EarnedRest, type UserSettings } from '../types';
 import { getAvatarUrl } from './Auth';
 import { ACCENT_THEME_LIST, CARD_STYLES } from '../themeData';
@@ -41,7 +41,7 @@ const SESSION_TYPE_LABELS: Record<string, string> = {
 };
 
 const RewardShopModal: React.FC<RewardShopModalProps> = ({
-  isOpen, onClose, pointsBalance, cosmeticUnlocks, earnedRest, onSpend, skippableBlocks = [], settings, updateSetting,
+  isOpen, onClose, pointsBalance, cosmeticUnlocks, _earnedRest, onSpend, skippableBlocks = [], settings, updateSetting,
 }) => {
   const [pickingSession, setPickingSession] = useState(false);
   const canAfford = (cost: number) => pointsBalance >= cost;

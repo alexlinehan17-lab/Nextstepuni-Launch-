@@ -6,7 +6,6 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { Check } from 'lucide-react';
 import { STRATEGY_REGISTRY } from '../../utils/strategyRegistry';
 import { getSubjectColor } from '../../utils/subjectColors';
 
@@ -52,7 +51,7 @@ interface StrategyPickerStepProps {
 }
 
 const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
-  learnedStrategyIds,
+  _learnedStrategyIds,
   autoTrackedIds,
   onContinue,
   onSkip,

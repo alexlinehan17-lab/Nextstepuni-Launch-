@@ -4,7 +4,7 @@
  */
 
 import { type CAOCourse, CAO_COURSES } from './futureFinderData';
-import { type StudentSubjectProfile, LC_SUBJECTS } from './subjectData';
+import { type StudentSubjectProfile } from './subjectData';
 
 // ─── Assessment Types ───────────────────────────────────────────────────────
 
@@ -80,7 +80,7 @@ function feasibilitySigmoid(estimatedPoints: number, typicalPoints: number): num
 }
 
 /** Calculate how many student LC subjects match the course's subject bonus list */
-function subjectFitScore(profile: StudentSubjectProfile | null, course: CAOCourse): number {
+function _subjectFitScore(profile: StudentSubjectProfile | null, course: CAOCourse): number {
   if (!profile || profile.subjects.length === 0 || course.subjectBonus.length === 0) return 0;
   const studentSubjects = new Set(profile.subjects.map(s => s.subjectName));
   let matches = 0;

@@ -5,12 +5,12 @@
 
 import React, { useState, MouseEvent } from 'react';
 import { createPortal } from 'react-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionP } from './Motion';
-import { X, ArrowRight, User as UserIcon, Key, Eye, EyeOff, Shield, User as StudentIcon, ArrowLeft, ChevronDown, School, GraduationCap } from 'lucide-react';
+import { X, User as UserIcon, Key, Eye, EyeOff, User as StudentIcon, ArrowLeft, ChevronDown, School, GraduationCap } from 'lucide-react';
 import { auth, db } from '../firebase';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, deleteUser, sendPasswordResetEmail, updateProfile } from 'firebase/auth';
-import { doc, setDoc, getDoc } from 'firebase/firestore';
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, deleteUser, updateProfile } from 'firebase/auth';
+import { doc, setDoc } from 'firebase/firestore';
 import { SCHOOLS } from '../schoolData';
 
 // This represents the user session object passed to the main app.
@@ -139,7 +139,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
       try {
         await signInWithEmailAndPassword(auth, 'admin@nextstep.app', loginPassword);
         handleClose();
-      } catch (error: any) {
+      } catch {
         setError("Invalid admin credentials.");
       } finally {
         setIsLoggingIn(false);
@@ -157,7 +157,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
         const email = `gc-${gcSchool}@nextstep.app`;
         await signInWithEmailAndPassword(auth, email, loginPassword);
         handleClose();
-      } catch (error: any) {
+      } catch {
         setError("Invalid credentials.");
       } finally {
         setIsLoggingIn(false);
@@ -175,7 +175,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
       const email = `${loginName.trim().toLowerCase()}@nextstep.app`;
       await signInWithEmailAndPassword(auth, email, loginPassword);
       handleClose();
-    } catch (error: any) {
+    } catch {
       setError("Invalid username or password.");
     } finally {
       setIsLoggingIn(false);
@@ -220,9 +220,9 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
 
         registeredUser = { uid: createdUser.uid, name: createName.trim(), avatar: selectedAvatar, isAdmin: false };
         handleClose();
-    } catch (error: any) {
+    } catch {
         if (createdUser) {
-          try { await deleteUser(createdUser); } catch (_) {}
+          try { await deleteUser(createdUser); } catch {}
         }
         if (error.code === 'auth/email-already-in-use') {
             setError("This username is already taken.");
@@ -247,7 +247,7 @@ export const Auth: React.FC<AuthProps> = ({ onLoginSuccess, buttonLabel, buttonC
     exit: (direction: number) => ({ opacity: 0, x: direction > 0 ? -50 : 50 }),
   };
 
-  const inputClass = "w-full bg-zinc-50 dark:bg-white/[0.05] border border-zinc-200/50 dark:border-white/[0.1] rounded-xl py-3 px-4 text-zinc-900 dark:text-white/90 text-sm font-sans placeholder:text-zinc-400 dark:placeholder:text-white/30 focus:outline-none focus:border-[rgba(var(--accent),0.6)] focus:ring-1 focus:ring-[rgba(var(--accent),0.3)] transition-colors";
+  const _inputClass = "w-full bg-zinc-50 dark:bg-white/[0.05] border border-zinc-200/50 dark:border-white/[0.1] rounded-xl py-3 px-4 text-zinc-900 dark:text-white/90 text-sm font-sans placeholder:text-zinc-400 dark:placeholder:text-white/30 focus:outline-none focus:border-[rgba(var(--accent),0.6)] focus:ring-1 focus:ring-[rgba(var(--accent),0.3)] transition-colors";
   const inputWithIconClass = "w-full bg-zinc-50 dark:bg-white/[0.05] border border-zinc-200/50 dark:border-white/[0.1] rounded-xl py-3 pl-10 pr-4 text-zinc-900 dark:text-white/90 text-sm font-sans placeholder:text-zinc-400 dark:placeholder:text-white/30 focus:outline-none focus:border-[rgba(var(--accent),0.6)] focus:ring-1 focus:ring-[rgba(var(--accent),0.3)] transition-colors";
   const inputWithBothClass = "w-full bg-zinc-50 dark:bg-white/[0.05] border border-zinc-200/50 dark:border-white/[0.1] rounded-xl py-3 pl-10 pr-10 text-zinc-900 dark:text-white/90 text-sm font-sans placeholder:text-zinc-400 dark:placeholder:text-white/30 focus:outline-none focus:border-[rgba(var(--accent),0.6)] focus:ring-1 focus:ring-[rgba(var(--accent),0.3)] transition-colors";
 

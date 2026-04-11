@@ -4,7 +4,7 @@
  */
 
 import React, { createContext, useContext, useState, useCallback, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { WifiOff, AlertCircle, CheckCircle, X, Info } from 'lucide-react';
 

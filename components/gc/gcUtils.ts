@@ -8,7 +8,7 @@ import { CategoryType } from '../KnowledgeTree';
 import { UserProgress } from '../../types';
 import { getPointsForGrade, LC_SUBJECTS } from '../subjectData';
 import { TimetableCompletions } from '../subjectData';
-import { GCStudentFullData, StudentStatus, SubjectGapData } from './gcTypes';
+import { GCStudentFullData, SubjectGapData } from './gcTypes';
 
 // ─── Progress Helpers ───────────────────────────────────────────────────────
 

@@ -230,7 +230,7 @@ const SchemeDecoder = () => {
   const [activeAnnotation, setActiveAnnotation] = useState<number | null>(null);
 
   const extract = schemeExtracts[activeExtract];
-  const decodedCount = activeAnnotation !== null ? 1 : 0;
+  const _decodedCount = activeAnnotation !== null ? 1 : 0;
 
   return (
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
@@ -348,7 +348,7 @@ const AnswerUpgrader = () => {
   const ex = upgradeExamples[activeExample];
 
   const highlightKeywords = (text: string, keywords: string[]) => {
-    let result = text;
+    const result = text;
     const parts: React.ReactNode[] = [];
     let remaining = result;
     let keyIndex = 0;

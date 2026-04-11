@@ -5,7 +5,7 @@
 */
 
 import React, { useState, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
   Target, Brain, SlidersHorizontal, AlertTriangle, PenTool, Key, BookOpen, Wrench

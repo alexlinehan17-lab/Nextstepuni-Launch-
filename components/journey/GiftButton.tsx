@@ -4,9 +4,9 @@
  */
 
 import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from '../Motion';
-import { Gift, X, Check } from 'lucide-react';
+import { Gift, X } from 'lucide-react';
 import { ShopItem } from '../../types';
 import { GIFTABLE_ITEMS } from '../../hooks/useGifts';
 
@@ -23,7 +23,7 @@ interface GiftButtonProps {
 }
 
 const GiftButton: React.FC<GiftButtonProps> = ({
-  senderUid, senderName, targetUid, targetName, school,
+  _senderUid, senderName, targetUid, targetName, school,
   pointsBalance, canSendGiftToday, sendGift, onPointsReload,
 }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);

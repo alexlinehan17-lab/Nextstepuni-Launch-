@@ -4,18 +4,17 @@
  */
 
 import React, { useState, useMemo, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
-  Settings, Star, RotateCcw, ChevronDown, ChevronUp, TrendingUp, Info, ArrowRight, Compass,
+  Settings, Star, RotateCcw, ChevronDown, ChevronUp, TrendingUp, Info, Compass,
 } from 'lucide-react';
 import {
-  type StudentSubjectProfile, type Grade, type Level,
+  type StudentSubjectProfile, type Level,
   LC_SUBJECTS, getPointsForGrade, getGradesForLevel,
 } from './subjectData';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { type CAOCourse } from './futureFinderData';
 import { useInnovationData } from '../contexts/InnovationDataContext';
 
 // ─── Subject Colours ─────────────────────────────────────────────────────────
