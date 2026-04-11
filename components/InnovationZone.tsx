@@ -38,12 +38,12 @@ import StudyJournalModal from './StudyJournalModal';
 import RewardShopModal from './RewardShopModal';
 import AcademicJourneyGame, { type JourneyResult } from './AcademicJourneyGame';
 import ToolErrorBoundary from './ToolErrorBoundary';
+import { useNavigation } from '../contexts/NavigationContext';
 
 interface InnovationZoneProps {
   onBack: () => void;
   onSelectModule?: (moduleId: string) => void;
   user?: { uid: string; school?: string; yearGroup?: '5th' | '6th' } | null;
-  autoOpenJourney?: boolean;
   savedJourneyResult?: JourneyResult | null;
   onJourneyComplete?: (result: JourneyResult) => void;
   settings: UserSettings;
@@ -72,9 +72,11 @@ function validatePointsData(raw: unknown): PointsData {
 
 // ─── InnovationZone ──────────────────────────────────────────────────────────
 
-const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, autoOpenJourney, savedJourneyResult, onJourneyComplete, settings, updateSetting, onCosmeticUnlocksChange, onStudyNow }) => {
+const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, savedJourneyResult, onJourneyComplete, settings, updateSetting, onCosmeticUnlocksChange, onStudyNow }) => {
     const { showToast } = useToast();
-    const [activeTool, setActiveTool] = useState<string | null>(autoOpenJourney ? 'journey' : null);
+    const nav = useNavigation();
+    const activeTool = nav.state.activeTool;
+    const setActiveTool = nav.setActiveTool;
     const [subjectProfile, setSubjectProfile] = useState<StudentSubjectProfile | null>(null);
     const [showOnboarding, setShowOnboarding] = useState(false);
     const [profileLoaded, setProfileLoaded] = useState(false);
@@ -212,7 +214,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                 showToast('Couldn\'t save — check your connection', 'error');
             }
         }
-    }, [user?.uid, pendingToolId]);
+    }, [user?.uid, pendingToolId, setActiveTool]);
 
     const getStreakMultiplier = useCallback((streak: number): number => {
         if (streak >= 14) return 2.5;
@@ -362,7 +364,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             return;
         }
         setActiveTool(toolId);
-    }, [subjectProfile, profileLoaded]);
+    }, [subjectProfile, profileLoaded, setActiveTool]);
 
     const skippableBlocks = useMemo(() => {
         if (!subjectProfile) return [];

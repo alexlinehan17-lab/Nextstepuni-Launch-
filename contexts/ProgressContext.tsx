@@ -46,6 +46,9 @@ interface ProgressContextValue {
   // Dismissed guides
   dismissedGuides: Record<string, string>;
   setDismissedGuides: React.Dispatch<React.SetStateAction<Record<string, string>>>;
+
+  // True after progress data has been synced at least once from auth
+  progressLoaded: boolean;
 }
 
 // ─── Context ────────────────────────────────────────────────
@@ -72,6 +75,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [unlockedThemes, setUnlockedThemes] = useState<string[]>([]);
   const [unlockedCardStyles, setUnlockedCardStyles] = useState<string[]>([]);
   const [dismissedGuides, setDismissedGuides] = useState<Record<string, string>>({});
+  const [progressLoaded, setProgressLoaded] = useState(false);
 
   // Hooks that depend on uid
   const { streak } = useStreak(user?.uid);
@@ -102,6 +106,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     setUnlockedCardStyles(loadedData.unlockedCardStyles);
     setDismissedGuides(loadedData.dismissedGuides);
     syncedRef.current = true;
+    setProgressLoaded(true);
   }, [isLoadingAuth, user, loadedData]);
 
   // Reset sync flag on user change
@@ -128,6 +133,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     setUnlockedCardStyles,
     dismissedGuides,
     setDismissedGuides,
+    progressLoaded,
   };
 
   return <ProgressContext.Provider value={value}>{children}</ProgressContext.Provider>;

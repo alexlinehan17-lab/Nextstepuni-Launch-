@@ -13,18 +13,19 @@ export type ViewState =
   | 'dashboard' | 'learning-paths' | 'onboarding'
   | 'my-journey' | 'gamification-hub' | 'study-session' | 'insights';
 
-interface NavigationState {
+export interface NavigationState {
   viewState: ViewState;
   currentCategory: CategoryType | null;
   currentModuleId: string | null;
   cameFromJourney: boolean;
+  activeTool: string | null;
 }
 
 type NavigationAction =
   | { type: 'NAVIGATE_TO_TREE' }
   | { type: 'NAVIGATE_TO_CATEGORY'; category: CategoryType }
   | { type: 'NAVIGATE_TO_MODULE'; moduleId: string; fromJourney?: boolean; category?: CategoryType | null }
-  | { type: 'NAVIGATE_TO_INNOVATION_ZONE' }
+  | { type: 'NAVIGATE_TO_INNOVATION_ZONE'; tool?: string | null }
   | { type: 'NAVIGATE_TO_DASHBOARD' }
   | { type: 'NAVIGATE_TO_LEARNING_PATHS' }
   | { type: 'NAVIGATE_TO_JOURNEY' }
@@ -32,16 +33,16 @@ type NavigationAction =
   | { type: 'NAVIGATE_TO_STUDY_SESSION' }
   | { type: 'NAVIGATE_TO_INSIGHTS' }
   | { type: 'NAVIGATE_TO_ONBOARDING' }
+  | { type: 'SET_ACTIVE_TOOL'; tool: string | null }
   | { type: 'RESTORE_STATE'; state: Partial<NavigationState> };
 
 interface NavigationContextValue {
   state: NavigationState;
   dispatch: React.Dispatch<NavigationAction>;
-  // Convenience handlers (push history + dispatch)
   navigateToTree: () => void;
   navigateToCategory: (category: CategoryType) => void;
   navigateToModule: (moduleId: string, currentViewState?: ViewState, currentCategory?: CategoryType | null) => void;
-  navigateToInnovationZone: () => void;
+  navigateToInnovationZone: (tool?: string | null) => void;
   navigateToDashboard: () => void;
   navigateToLearningPaths: () => void;
   navigateToJourney: () => void;
@@ -49,7 +50,49 @@ interface NavigationContextValue {
   navigateToStudySession: () => void;
   navigateToInsights: () => void;
   navigateToOnboarding: () => void;
+  setActiveTool: (tool: string | null) => void;
   goBack: () => void;
+}
+
+// ─── URL Serialization ─────────────────────────────────────
+
+const VALID_VIEWS = new Set<string>([
+  'tree', 'category', 'module', 'innovation-zone',
+  'dashboard', 'learning-paths', 'onboarding',
+  'my-journey', 'gamification-hub', 'study-session', 'insights',
+]);
+
+function serializeToURL(state: NavigationState): string {
+  const params = new URLSearchParams();
+  if (state.viewState && state.viewState !== 'tree') {
+    params.set('view', state.viewState);
+  }
+  if (state.currentCategory) params.set('cat', state.currentCategory);
+  if (state.currentModuleId) params.set('mod', state.currentModuleId);
+  if (state.activeTool) params.set('tool', state.activeTool);
+  if (state.cameFromJourney) params.set('from', 'journey');
+  const qs = params.toString();
+  return qs ? `?${qs}` : window.location.pathname;
+}
+
+function deserializeFromURL(): Partial<NavigationState> {
+  const params = new URLSearchParams(window.location.search);
+  const result: Partial<NavigationState> = {};
+
+  const view = params.get('view');
+  if (view && VALID_VIEWS.has(view)) {
+    result.viewState = view as ViewState;
+  }
+  const cat = params.get('cat');
+  if (cat) result.currentCategory = cat as CategoryType;
+  const mod = params.get('mod');
+  if (mod) result.currentModuleId = mod;
+  const tool = params.get('tool');
+  if (tool) result.activeTool = tool;
+  const from = params.get('from');
+  if (from === 'journey') result.cameFromJourney = true;
+
+  return result;
 }
 
 // ─── Reducer ────────────────────────────────────────────────
@@ -57,27 +100,29 @@ interface NavigationContextValue {
 function navigationReducer(state: NavigationState, action: NavigationAction): NavigationState {
   switch (action.type) {
     case 'NAVIGATE_TO_TREE':
-      return { viewState: 'tree', currentCategory: null, currentModuleId: null, cameFromJourney: false };
+      return { viewState: 'tree', currentCategory: null, currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_CATEGORY':
-      return { ...state, viewState: 'category', currentCategory: action.category, currentModuleId: null, cameFromJourney: false };
+      return { ...state, viewState: 'category', currentCategory: action.category, currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_MODULE':
-      return { ...state, viewState: 'module', currentModuleId: action.moduleId, cameFromJourney: action.fromJourney || false, currentCategory: action.category !== undefined ? action.category : state.currentCategory };
+      return { ...state, viewState: 'module', currentModuleId: action.moduleId, cameFromJourney: action.fromJourney || false, currentCategory: action.category !== undefined ? action.category : state.currentCategory, activeTool: null };
     case 'NAVIGATE_TO_INNOVATION_ZONE':
-      return { ...state, viewState: 'innovation-zone', currentModuleId: null, cameFromJourney: false };
+      return { ...state, viewState: 'innovation-zone', currentModuleId: null, cameFromJourney: false, activeTool: action.tool ?? null };
     case 'NAVIGATE_TO_DASHBOARD':
-      return { ...state, viewState: 'dashboard', currentModuleId: null, cameFromJourney: false };
+      return { ...state, viewState: 'dashboard', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_LEARNING_PATHS':
-      return { ...state, viewState: 'learning-paths', currentModuleId: null, cameFromJourney: false };
+      return { ...state, viewState: 'learning-paths', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_JOURNEY':
-      return { ...state, viewState: 'my-journey', currentModuleId: null, cameFromJourney: false };
+      return { ...state, viewState: 'my-journey', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_GAMIFICATION_HUB':
-      return { ...state, viewState: 'gamification-hub', currentModuleId: null, cameFromJourney: false };
+      return { ...state, viewState: 'gamification-hub', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_STUDY_SESSION':
-      return { ...state, viewState: 'study-session', currentModuleId: null, cameFromJourney: false };
+      return { ...state, viewState: 'study-session', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_INSIGHTS':
-      return { ...state, viewState: 'insights', currentModuleId: null, cameFromJourney: false };
+      return { ...state, viewState: 'insights', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_ONBOARDING':
-      return { ...state, viewState: 'onboarding', currentModuleId: null, cameFromJourney: false };
+      return { ...state, viewState: 'onboarding', currentModuleId: null, cameFromJourney: false, activeTool: null };
+    case 'SET_ACTIVE_TOOL':
+      return { ...state, activeTool: action.tool };
     case 'RESTORE_STATE':
       return { ...state, ...action.state };
     default:
@@ -85,12 +130,20 @@ function navigationReducer(state: NavigationState, action: NavigationAction): Na
   }
 }
 
-const initialState: NavigationState = {
-  viewState: 'tree',
-  currentCategory: null,
-  currentModuleId: null,
-  cameFromJourney: false,
-};
+function getInitialState(): NavigationState {
+  const base: NavigationState = {
+    viewState: 'tree',
+    currentCategory: null,
+    currentModuleId: null,
+    cameFromJourney: false,
+    activeTool: null,
+  };
+  const fromURL = deserializeFromURL();
+  if (fromURL.viewState) {
+    return { ...base, ...fromURL };
+  }
+  return base;
+}
 
 // ─── Context ────────────────────────────────────────────────
 
@@ -105,113 +158,133 @@ export const useNavigation = (): NavigationContextValue => {
 // ─── Provider ───────────────────────────────────────────────
 
 export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [state, dispatch] = useReducer(navigationReducer, initialState);
+  const [state, dispatch] = useReducer(navigationReducer, undefined, getInitialState);
   const isPopstateRef = useRef(false);
 
-  // Browser back/forward support
+  // Single atomic helper: dispatch + pushState + URL update
+  const navigate = useCallback((action: NavigationAction) => {
+    dispatch(action);
+  }, []);
+
+  // Sync URL after every state change.
+  // When popstate fires, isPopstateRef is set true; this effect clears it and skips,
+  // preventing a duplicate pushState for the browser-initiated navigation.
+  useEffect(() => {
+    if (isPopstateRef.current) {
+      isPopstateRef.current = false;
+      return;
+    }
+    const url = serializeToURL(state);
+    // Replace (not push) on the initial mount to seed URL without adding a history entry
+    if (!window.history.state?.__navSynced) {
+      window.history.replaceState({ ...state, __navSynced: true }, '', url);
+    } else {
+      // State changed after initial mount — check if it actually differs from current history
+      const prev = window.history.state;
+      const changed = prev.viewState !== state.viewState
+        || prev.currentCategory !== state.currentCategory
+        || prev.currentModuleId !== state.currentModuleId
+        || prev.activeTool !== state.activeTool
+        || prev.cameFromJourney !== state.cameFromJourney;
+      if (changed) {
+        window.history.pushState({ ...state, __navSynced: true }, '', url);
+      }
+    }
+  }, [state]);
+
+  // Browser back/forward: restore from history.state
   useEffect(() => {
     const handlePopState = (e: PopStateEvent) => {
       isPopstateRef.current = true;
       const s = e.state;
-      if (!s || s.view === 'tree') {
-        dispatch({ type: 'NAVIGATE_TO_TREE' });
-      } else if (s.view === 'category') {
-        dispatch({ type: 'NAVIGATE_TO_CATEGORY', category: s.category });
-      } else if (s.view === 'innovation-zone') {
-        dispatch({ type: 'NAVIGATE_TO_INNOVATION_ZONE' });
-      } else if (s.view === 'dashboard') {
-        dispatch({ type: 'NAVIGATE_TO_DASHBOARD' });
-      } else if (s.view === 'learning-paths') {
-        dispatch({ type: 'NAVIGATE_TO_LEARNING_PATHS' });
-      } else if (s.view === 'my-journey') {
-        dispatch({ type: 'NAVIGATE_TO_JOURNEY' });
-      } else if (s.view === 'gamification-hub') {
-        dispatch({ type: 'NAVIGATE_TO_GAMIFICATION_HUB' });
-      } else if (s.view === 'study-session') {
-        dispatch({ type: 'NAVIGATE_TO_STUDY_SESSION' });
-      } else if (s.view === 'insights') {
-        dispatch({ type: 'NAVIGATE_TO_INSIGHTS' });
-      } else if (s.view === 'module') {
-        dispatch({ type: 'NAVIGATE_TO_MODULE', moduleId: s.moduleId, category: s.category || null, fromJourney: s.fromJourney || false });
+      if (s && s.__navSynced) {
+        // Restore full state from the history entry
+        dispatch({
+          type: 'RESTORE_STATE',
+          state: {
+            viewState: s.viewState || 'tree',
+            currentCategory: s.currentCategory || null,
+            currentModuleId: s.currentModuleId || null,
+            cameFromJourney: s.cameFromJourney || false,
+            activeTool: s.activeTool || null,
+          },
+        });
+      } else {
+        // No synced state (e.g. external history entry) — fall back to URL
+        const fromURL = deserializeFromURL();
+        if (fromURL.viewState) {
+          dispatch({ type: 'RESTORE_STATE', state: fromURL });
+        } else {
+          dispatch({ type: 'NAVIGATE_TO_TREE' });
+        }
       }
       window.scrollTo(0, 0);
-      isPopstateRef.current = false;
+      // isPopstateRef stays true — the URL-sync effect will clear it and skip pushing
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-  // Convenience navigation functions that push history
-  const pushHistory = useCallback((view: string, extra?: Record<string, any>) => {
-    if (!isPopstateRef.current) {
-      window.history.pushState({ view, ...extra }, '');
-    }
-  }, []);
+  // ─── Convenience navigation functions ───────────────────
 
   const navigateToTree = useCallback(() => {
-    dispatch({ type: 'NAVIGATE_TO_TREE' });
+    navigate({ type: 'NAVIGATE_TO_TREE' });
     window.scrollTo(0, 0);
-    pushHistory('tree');
-  }, [pushHistory]);
+  }, [navigate]);
 
   const navigateToCategory = useCallback((category: CategoryType) => {
-    dispatch({ type: 'NAVIGATE_TO_CATEGORY', category });
+    navigate({ type: 'NAVIGATE_TO_CATEGORY', category });
     window.scrollTo(0, 0);
-    pushHistory('category', { category });
-  }, [pushHistory]);
+  }, [navigate]);
 
   const navigateToModule = useCallback((moduleId: string, currentViewState?: ViewState, currentCategory?: CategoryType | null) => {
     const fromJourney = currentViewState === 'innovation-zone';
-    dispatch({ type: 'NAVIGATE_TO_MODULE', moduleId, fromJourney, category: currentCategory });
+    navigate({ type: 'NAVIGATE_TO_MODULE', moduleId, fromJourney, category: currentCategory });
     window.scrollTo(0, 0);
-    pushHistory('module', { moduleId, category: currentCategory, fromJourney });
-  }, [pushHistory]);
+  }, [navigate]);
 
-  const navigateToInnovationZone = useCallback(() => {
-    dispatch({ type: 'NAVIGATE_TO_INNOVATION_ZONE' });
+  const navigateToInnovationZone = useCallback((tool?: string | null) => {
+    navigate({ type: 'NAVIGATE_TO_INNOVATION_ZONE', tool });
     window.scrollTo(0, 0);
-    pushHistory('innovation-zone');
-  }, [pushHistory]);
+  }, [navigate]);
 
   const navigateToDashboard = useCallback(() => {
-    dispatch({ type: 'NAVIGATE_TO_DASHBOARD' });
+    navigate({ type: 'NAVIGATE_TO_DASHBOARD' });
     window.scrollTo(0, 0);
-    pushHistory('dashboard');
-  }, [pushHistory]);
+  }, [navigate]);
 
   const navigateToLearningPaths = useCallback(() => {
-    dispatch({ type: 'NAVIGATE_TO_LEARNING_PATHS' });
+    navigate({ type: 'NAVIGATE_TO_LEARNING_PATHS' });
     window.scrollTo(0, 0);
-    pushHistory('learning-paths');
-  }, [pushHistory]);
+  }, [navigate]);
 
   const navigateToJourney = useCallback(() => {
-    dispatch({ type: 'NAVIGATE_TO_JOURNEY' });
+    navigate({ type: 'NAVIGATE_TO_JOURNEY' });
     window.scrollTo(0, 0);
-    pushHistory('my-journey');
-  }, [pushHistory]);
+  }, [navigate]);
 
   const navigateToGamificationHub = useCallback(() => {
-    dispatch({ type: 'NAVIGATE_TO_GAMIFICATION_HUB' });
+    navigate({ type: 'NAVIGATE_TO_GAMIFICATION_HUB' });
     window.scrollTo(0, 0);
-    pushHistory('gamification-hub');
-  }, [pushHistory]);
+  }, [navigate]);
 
   const navigateToStudySession = useCallback(() => {
-    dispatch({ type: 'NAVIGATE_TO_STUDY_SESSION' });
+    navigate({ type: 'NAVIGATE_TO_STUDY_SESSION' });
     window.scrollTo(0, 0);
-    pushHistory('study-session');
-  }, [pushHistory]);
+  }, [navigate]);
 
   const navigateToInsights = useCallback(() => {
-    dispatch({ type: 'NAVIGATE_TO_INSIGHTS' });
+    navigate({ type: 'NAVIGATE_TO_INSIGHTS' });
     window.scrollTo(0, 0);
-    pushHistory('insights');
-  }, [pushHistory]);
+  }, [navigate]);
 
   const navigateToOnboarding = useCallback(() => {
-    dispatch({ type: 'NAVIGATE_TO_ONBOARDING' });
-  }, []);
+    navigate({ type: 'NAVIGATE_TO_ONBOARDING' });
+  }, [navigate]);
+
+  const setActiveTool = useCallback((tool: string | null) => {
+    navigate({ type: 'SET_ACTIVE_TOOL', tool });
+  }, [navigate]);
 
   const goBack = useCallback(() => {
     window.history.back();
@@ -231,6 +304,7 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     navigateToStudySession,
     navigateToInsights,
     navigateToOnboarding,
+    setActiveTool,
     goBack,
   };
 
