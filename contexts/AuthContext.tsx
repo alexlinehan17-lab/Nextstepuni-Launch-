@@ -86,6 +86,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   // (IndexedDB) before its first fire, so the first callback is always definitive.
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser: FirebaseUser | null) => {
+      console.log('[Auth] onAuthStateChanged:', firebaseUser ? `uid=${firebaseUser.uid}` : 'null');
       if (firebaseUser) {
         // Admin user
         if (firebaseUser.email === 'admin@nextstep.app') {
@@ -107,6 +108,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             getDoc(doc(db, 'progress', firebaseUser.uid)),
           ]);
 
+          console.log('[Auth] Firestore: userDoc.exists =', userDoc.exists(), 'progressDoc.exists =', progressDoc.exists());
           if (userDoc.exists()) {
             const userData = userDoc.data();
             setUser({
@@ -140,12 +142,28 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
               setLoadedData({ ...defaultLoadedData, needsOnboarding: true });
             }
           } else {
-            // No user doc — this account may have been deleted by a GC/admin.
-            // Sign them out rather than auto-recovering.
-            console.warn('[Auth] No user doc found for authenticated user — signing out.');
-            await signOut(auth);
-            setUser(null);
-            setLoadedData({ ...defaultLoadedData });
+            // No user doc in Firestore. Could be a race with registration
+            // (doc write still pending/offline), or a deleted account. Either way,
+            // don't sign out — that destroys the session. Use a fallback user,
+            // but still check the progress doc for onboarding state.
+            const fallbackName = firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Student';
+            setUser({ uid: firebaseUser.uid, name: fallbackName, avatar: 'Charlie', isAdmin: false });
+            if (progressDoc.exists()) {
+              const pd = progressDoc.data();
+              setLoadedData({
+                userProgress: pd as UserProgress,
+                northStar: pd.northStar ? (pd.northStar as NorthStar) : null,
+                studentProfile: pd.subjectProfile ? (pd.subjectProfile as StudentSubjectProfile) : null,
+                needsOnboarding: !pd.subjectProfile,
+                unlockedAvatarSeeds: pd.cosmeticUnlocks?.avatarSeeds || [],
+                unlockedThemes: pd.cosmeticUnlocks?.themeColors || [],
+                unlockedCardStyles: pd.cosmeticUnlocks?.cardStyles || [],
+                dismissedGuides: pd.dismissedGuides || {},
+                timetableCompletions: pd.timetableCompletions || {},
+              });
+            } else {
+              setLoadedData({ ...defaultLoadedData, needsOnboarding: true });
+            }
           }
         } catch (error) {
           console.error('Error fetching user data:');

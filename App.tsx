@@ -209,11 +209,14 @@ const App: React.FC = () => {
     }
   };
 
-  // Detect rank changes
+  // Detect rank changes — skip during initial load to avoid false positives
+  // when gamification data arrives in stages after refresh.
+  const mountTimeRef = useRef(Date.now());
   useEffect(() => {
     if (!gamification.isLoaded) return;
     const currentRankId = gamification.state.currentRank.id;
-    if (prevRankRef.current !== null && prevRankRef.current !== currentRankId) {
+    const isInitialLoad = Date.now() - mountTimeRef.current < 3000;
+    if (!isInitialLoad && prevRankRef.current !== null && prevRankRef.current !== currentRankId) {
       setRankUpModal(gamification.state.currentRank);
       if (user) grantRankUpTiles(user.uid);
     }
