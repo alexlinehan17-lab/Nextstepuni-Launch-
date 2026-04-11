@@ -77,16 +77,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const authResolvedRef = useRef(false);
   const [loadedData, setLoadedData] = useState<AuthLoadedData>(defaultLoadedData);
 
-  // Wait for Firebase persistence layer before allowing login/app decisions.
-  // auth.authStateReady() resolves once IndexedDB/token rehydration is complete,
-  // guaranteeing the first onAuthStateChanged callback has the definitive state.
-  useEffect(() => {
-    auth.authStateReady().then(() => {
-      setUserResolved(true);
-    });
-  }, []);
-
-  // Auth listener — handles initial state + ongoing changes (login, logout)
+  // Auth listener — handles initial state + ongoing changes (login, logout).
+  // userResolved is set at the END of each callback, after all async Firestore
+  // work completes. This avoids the race where authStateReady() resolves before
+  // the Firestore user/progress docs are fetched, which would flash LoginPage
+  // because user is still null mid-fetch.
+  // Firebase guarantees onAuthStateChanged waits for the persistence layer
+  // (IndexedDB) before its first fire, so the first callback is always definitive.
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser: FirebaseUser | null) => {
       if (firebaseUser) {
@@ -99,6 +96,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             authResolvedRef.current = true;
             setAuthResolved(true);
           }
+          setUserResolved(true);
           return;
         }
 
@@ -165,6 +163,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         authResolvedRef.current = true;
         setAuthResolved(true);
       }
+      setUserResolved(true);
     });
 
     return () => unsubscribe();
