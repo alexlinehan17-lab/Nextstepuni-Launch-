@@ -43,11 +43,18 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   };
 
   // ── Login handler ──
+  // Login school state (separate from registration school)
+  const [loginSchool, setLoginSchool] = useState('');
+
   const handleLogin = async () => {
     if (!email.trim() || !password.trim()) { setError('Please enter your username and password.'); return; }
     setIsLoading(true); setError('');
     try {
-      const emailToUse = email.includes('@') ? email : `${email.trim().toLowerCase()}@nextstep.app`;
+      // Try school-namespaced email first, fall back to legacy format
+      const username = email.trim().toLowerCase().replace(/\s+/g, '');
+      const emailToUse = email.includes('@') ? email
+        : loginSchool ? `${username}-${loginSchool}@nextstep.app`
+        : `${username}@nextstep.app`;
       const cred = await signInWithEmailAndPassword(auth, emailToUse, password);
       const userDoc = await getDoc(doc(db, 'users', cred.user.uid));
       if (userDoc.exists()) {
@@ -109,7 +116,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     const username = name.trim().toLowerCase().replace(/\s+/g, '');
     let createdUser: any = null;
     try {
-      const cred = await createUserWithEmailAndPassword(auth, `${username}@nextstep.app`, password);
+      const cred = await createUserWithEmailAndPassword(auth, `${username}-${school}@nextstep.app`, password);
       createdUser = cred.user;
       await updateProfile(createdUser, { displayName: name.trim() });
       await setDoc(doc(db, 'users', createdUser.uid), {
@@ -231,8 +238,18 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Sign in with your username and password.</p>
         <form onSubmit={e => { e.preventDefault(); handleLogin(); }} className="space-y-4">
           <div>
+            <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
+            <div className="relative">
+              <select value={loginSchool} onChange={e => { setLoginSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!loginSchool ? 'text-zinc-400' : ''}`} autoFocus>
+                <option value="" disabled>Select your school</option>
+                {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
+              </select>
+              <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
+            </div>
+          </div>
+          <div>
             <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Username</label>
-            <input type="text" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="Enter your username" className={inputClass} autoFocus />
+            <input type="text" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="Enter your username" className={inputClass} />
           </div>
           <div>
             <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
