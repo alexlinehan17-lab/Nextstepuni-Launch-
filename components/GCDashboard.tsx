@@ -10,6 +10,7 @@ import { type SessionUser, getAvatarUrl } from './Auth';
 import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays, Moon, Sun } from 'lucide-react';
 import { db } from '../firebase';
 import { collection, query, where, getDocs, doc, getDoc, deleteDoc, setDoc } from 'firebase/firestore';
+import { getFunctions, httpsCallable } from 'firebase/functions';
 import { getSchoolName } from '../schoolData';
 import { type UserProgress, type PointsData } from '../types';
 import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak } from './subjectData';
@@ -121,6 +122,20 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
     }
     setIsDeleting(false);
     setDeleteTarget(null);
+  };
+
+  // ── Password reset handler ──
+  const [resetResult, setResetResult] = useState<{ name: string; password: string } | null>(null);
+  const handleResetPassword = async (studentUid: string) => {
+    try {
+      const functions = getFunctions();
+      const resetFn = httpsCallable<{ studentUid: string }, { tempPassword: string; studentName: string }>(functions, 'resetStudentPassword');
+      const result = await resetFn({ studentUid });
+      setResetResult({ name: result.data.studentName, password: result.data.tempPassword });
+    } catch (err) {
+      console.error('Failed to reset password:', err);
+      alert('Failed to reset password. Please try again.');
+    }
   };
 
   // ── Alert dismiss handler ──
@@ -391,6 +406,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             studentNotes={studentNotes}
             onSelectStudent={(uid) => setSelectedStudentUid(prev => prev === uid ? null : uid)}
             onDeleteStudent={setDeleteTarget}
+            onResetPassword={handleResetPassword}
             alerts={alerts}
             onDismissAlert={handleDismissAlert}
             gcName={gcName}
@@ -473,6 +489,31 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
                 {isDeleting ? 'Deleting...' : 'Delete'}
               </button>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Password reset result modal */}
+      {resetResult && (
+        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => setResetResult(null)}>
+          <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 max-w-sm w-full shadow-2xl" onClick={e => e.stopPropagation()}>
+            <h3 className="font-semibold text-zinc-900 dark:text-white mb-2">Password Reset</h3>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
+              Temporary password for <span className="font-semibold text-zinc-900 dark:text-white">{resetResult.name}</span>:
+            </p>
+            <div className="bg-zinc-50 dark:bg-zinc-800 rounded-xl p-4 mb-4 text-center">
+              <code className="text-lg font-mono font-bold tracking-widest text-zinc-900 dark:text-white select-all">{resetResult.password}</code>
+            </div>
+            <p className="text-xs text-zinc-400 dark:text-zinc-500 mb-6">
+              Share this with the student. They should change it after logging in.
+            </p>
+            <button
+              onClick={() => setResetResult(null)}
+              className="w-full px-4 py-2.5 text-sm font-medium rounded-xl text-white transition-colors"
+              style={{ backgroundColor: '#2A7D6F' }}
+            >
+              Done
+            </button>
           </div>
         </div>
       )}

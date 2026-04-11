@@ -6,7 +6,7 @@
 import React, { useState, useMemo, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2, X, AlertCircle, Eye, Megaphone, FileDown, UserPlus, CheckCircle, MinusCircle, Flag, Sparkles } from 'lucide-react';
+import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2, X, AlertCircle, Eye, Megaphone, FileDown, UserPlus, CheckCircle, MinusCircle, Flag, Sparkles, KeyRound } from 'lucide-react';
 import { type CourseData } from '../Library';
 import { type CategoryType } from '../KnowledgeTree';
 import { getAvatarUrl } from '../Auth';
@@ -135,13 +135,14 @@ interface GCOverviewProps {
   studentNotes: Record<string, { notes: string; updatedAt: string }>;
   onSelectStudent: (uid: string) => void;
   onDeleteStudent?: (user: any) => void;
+  onResetPassword?: (studentUid: string) => void;
   alerts?: EarlyWarningAlert[];
   onDismissAlert?: (alert: EarlyWarningAlert) => void;
   gcName?: string;
   gcFlags?: GCFlagsAPI;
 }
 
-export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, studentNotes, onSelectStudent, onDeleteStudent, alerts = [], onDismissAlert, gcName, gcFlags }) => {
+export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, studentNotes, onSelectStudent, onDeleteStudent, onResetPassword, alerts = [], onDismissAlert, gcName, gcFlags }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [showBroadcastModal, setShowBroadcastModal] = useState(false);
   const [showExportModal, setShowExportModal] = useState(false);
@@ -1270,15 +1271,28 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                         </AnimatePresence>
                       </td>
                     )}
-                    {onDeleteStudent && (
+                    {(onDeleteStudent || onResetPassword) && (
                       <td className="px-3 py-4 align-middle">
-                        <button
-                          onClick={(e) => { e.stopPropagation(); onDeleteStudent(row.student.user); }}
-                          className="w-7 h-7 rounded-lg flex items-center justify-center text-zinc-300 dark:text-zinc-600 hover:text-red-500 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-500/10 transition-colors"
-                          title="Delete student"
-                        >
-                          <Trash2 size={14} />
-                        </button>
+                        <div className="flex items-center gap-1">
+                          {onResetPassword && (
+                            <button
+                              onClick={(e) => { e.stopPropagation(); onResetPassword(row.student.user.uid); }}
+                              className="w-7 h-7 rounded-lg flex items-center justify-center text-zinc-300 dark:text-zinc-600 hover:text-[#2A7D6F] dark:hover:text-[#2A7D6F] hover:bg-[#e8f5f2] dark:hover:bg-[#2A7D6F]/10 transition-colors"
+                              title="Reset password"
+                            >
+                              <KeyRound size={14} />
+                            </button>
+                          )}
+                          {onDeleteStudent && (
+                            <button
+                              onClick={(e) => { e.stopPropagation(); onDeleteStudent(row.student.user); }}
+                              className="w-7 h-7 rounded-lg flex items-center justify-center text-zinc-300 dark:text-zinc-600 hover:text-red-500 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-500/10 transition-colors"
+                              title="Delete student"
+                            >
+                              <Trash2 size={14} />
+                            </button>
+                          )}
+                        </div>
                       </td>
                     )}
                   </MotionDiv>
