@@ -344,6 +344,22 @@ LoginPage.tsx, Auth.tsx, AppRouter.tsx, InnovationZone.tsx, FutureFinder.tsx, Co
 
 ---
 
+## Resolved in PRs
+
+| PR | Commit | What was fixed |
+|----|--------|---------------|
+| **PR 1** | `82709b9` | C1 points race (runTransaction), C2 timetable race (arrayUnion), C5 achievement double-award race (runTransaction with genuinelyNew filter) |
+| **PR 2** | `31ce283` | 14 hooks consolidated onto shared ProgressContext read. 15→1 Firestore reads per cold start (93% reduction, ~42,000 reads saved per session at 3,000 students) |
+| **PR 3** | `26dace8` | isMountedRef guards on 7 post-await setState calls across 4 hooks (useGifts, useQuests, useTeachBack, useWeeklyChallenge) |
+
+### Deferred to GitHub issues
+- C3: Topic mastery read-modify-write race (useDebriefSideEffects.ts) — Medium severity
+- C4: GC school events read-modify-write race (GCKeyEvents.tsx) — Low severity
+- useNorthStar cleanup: switch 10 module imports to useProgress().northStar
+- Real-time updates vs one-shot reads: architectural decision for Year Two
+
+---
+
 ## Answers to Specific Audit Questions
 
 | # | Question | Answer |
