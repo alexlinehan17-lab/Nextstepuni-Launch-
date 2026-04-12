@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo, useRef } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2, X, AlertCircle, Eye, Megaphone, FileDown, UserPlus, CheckCircle, MinusCircle, Flag, Sparkles, KeyRound } from 'lucide-react';
@@ -11,6 +11,9 @@ import { type CourseData } from '../Library';
 import { type CategoryType } from '../KnowledgeTree';
 import { getAvatarUrl } from '../../utils/authUtils';
 import { getSchoolName } from '../../schoolData';
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from '../../firebase';
+import { type SchoolEvent } from './GCKeyEvents';
 import { type GCStudentFullData, type StudentStatus } from './gcTypes';
 import {
   getOverallProgress,
@@ -486,6 +489,40 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     else setCalMonth(m => m + 1);
   };
 
+  // ─── Load school events for calendar ─────────────────────────────────────
+  const [schoolEvents, setSchoolEvents] = useState<SchoolEvent[]>([]);
+  useEffect(() => {
+    let cancelled = false;
+    getDoc(doc(db, 'gcEvents', school)).then(snap => {
+      if (cancelled) return;
+      if (snap.exists()) {
+        setSchoolEvents((snap.data().events as SchoolEvent[]) || []);
+      }
+    }).catch(() => {});
+    return () => { cancelled = true; };
+  }, [school]);
+
+  // Map events to calendar days for the current month
+  const eventsByDay = useMemo(() => {
+    const map: Record<number, SchoolEvent[]> = {};
+    for (const ev of schoolEvents) {
+      const d = new Date(ev.date);
+      if (d.getMonth() === calMonth && d.getFullYear() === calYear) {
+        const day = d.getDate();
+        if (!map[day]) map[day] = [];
+        map[day].push(ev);
+      }
+    }
+    return map;
+  }, [schoolEvents, calMonth, calYear]);
+
+  const EVENT_DOT_COLORS: Record<string, string> = {
+    exams: '#EF4444',
+    deadlines: '#F59E0B',
+    school: '#3B82F6',
+    other: '#8B5CF6',
+  };
+
   // ─── Flag popover helpers ────────────────────────────────────────────────
 
   const openFlagPopover = (uid: string, e: React.MouseEvent) => {
@@ -933,23 +970,31 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
               }
               const isToday = isCurrentMonth && cell.day === todayDate;
               const isLC = lcDay !== null && cell.day === lcDay;
+              const dayEvents = eventsByDay[cell.day] || [];
 
               return (
                 <div
                   key={i}
-                  className={`aspect-square flex items-center justify-center text-[11px] font-medium ${
+                  className={`aspect-square flex flex-col items-center justify-center text-[11px] font-medium relative ${
                     !isToday && !isLC ? 'text-zinc-600 dark:text-zinc-400' : 'text-white rounded-lg'
                   }`}
                   style={isToday ? { backgroundColor: ACCENT } : isLC ? { backgroundColor: '#DC2626' } : undefined}
-                  title={isLC ? 'LC Exam Date' : isToday ? 'Today' : ''}
+                  title={dayEvents.length > 0 ? dayEvents.map(e => e.title).join(', ') : isLC ? 'LC Exam Date' : isToday ? 'Today' : ''}
                 >
                   {cell.day}
+                  {dayEvents.length > 0 && (
+                    <div className="flex gap-0.5 absolute bottom-0.5">
+                      {dayEvents.slice(0, 3).map((ev, j) => (
+                        <div key={j} className="w-1 h-1 rounded-full" style={{ backgroundColor: EVENT_DOT_COLORS[ev.category] || '#8B5CF6' }} />
+                      ))}
+                    </div>
+                  )}
                 </div>
               );
             })}
           </div>
           {/* Legend */}
-          <div className={`flex gap-4 mt-3 text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>
+          <div className={`flex flex-wrap gap-3 mt-3 text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>
             <div className="flex items-center gap-1.5">
               <div className="w-3 h-3 rounded" style={{ backgroundColor: ACCENT }} />
               <span>Today</span>
@@ -959,6 +1004,14 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                 <div className="w-3 h-3 rounded bg-red-600" />
                 <span>LC Exam</span>
               </div>
+            )}
+            {schoolEvents.length > 0 && (
+              <>
+                <div className="flex items-center gap-1.5"><div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#EF4444' }} /><span>Exams</span></div>
+                <div className="flex items-center gap-1.5"><div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#F59E0B' }} /><span>Deadlines</span></div>
+                <div className="flex items-center gap-1.5"><div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#3B82F6' }} /><span>School</span></div>
+                <div className="flex items-center gap-1.5"><div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#8B5CF6' }} /><span>Other</span></div>
+              </>
             )}
           </div>
         </div>
