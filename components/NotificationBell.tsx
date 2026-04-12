@@ -93,6 +93,7 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
   return (
     <div className="relative" ref={panelRef}>
       <button
+        data-notification-bell
         onClick={() => setIsOpen(!isOpen)}
         className="relative p-2.5 rounded-xl bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm border border-zinc-200/60 dark:border-zinc-800/60 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]"
       >

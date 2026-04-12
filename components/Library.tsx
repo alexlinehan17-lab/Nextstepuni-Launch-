@@ -12,7 +12,7 @@ import {
   ArrowLeft, CheckCircle2,
   ChevronRight, Lock, BookOpen,
   Zap, Brain, Target, Shield, Compass, Star,
-  Sun, Moon, Home, BarChart3, Rocket, PanelLeft, Award, Settings, LogOut, Layers, RefreshCw, User, Mountain
+  Sun, Moon, Home, BarChart3, Rocket, PanelLeft, Award, Settings, LogOut, Layers, RefreshCw, User, Mountain, Bell
 } from 'lucide-react';
 import { type CategoryType } from './KnowledgeTree';
 import { type NorthStar, type AccentThemeId, type CardStyleId } from '../types';
@@ -259,6 +259,23 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
 
           {/* User actions */}
           <div className="border-t border-zinc-200 dark:border-zinc-800 mx-2 pt-2 flex flex-col gap-1">
+            {/* Notifications */}
+            <button
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                const bell = document.querySelector('[data-notification-bell]') as HTMLButtonElement | null;
+                if (bell) setTimeout(() => bell.click(), 300);
+              }}
+              className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            >
+              <div className="shrink-0 flex items-center justify-center w-[18px]">
+                <Bell size={18} strokeWidth={1.5} className="text-amber-500" />
+              </div>
+              <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+                Notifications
+              </span>
+            </button>
+
             {/* Study Passport */}
             {onOpenPassport && (
               <button
