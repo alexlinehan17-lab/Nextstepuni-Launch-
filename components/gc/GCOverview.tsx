@@ -860,81 +860,35 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
         {/* ─── ROW 2 RIGHT: Key Dates & Events ───────────────────────── */}
         <GCKeyEvents school={school} />
 
-        {/* ─── ROW 3: Recently Active ──── */}
-        <div className="flex flex-col gap-4">
-          {/* Recently Active */}
-          <div className={CARD_STYLE_DARK_CLASS} style={CARD_STYLE}>
-            <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Activity</p>
-            <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5 mb-4">Recently Active</p>
-            {recentlyActive.length === 0 ? (
-              <p className="text-sm text-zinc-400 italic">No recent activity.</p>
-            ) : (
-              <div className="space-y-2.5">
-                {recentlyActive.map(s => (
-                  <button
-                    key={s.uid}
-                    onClick={() => onSelectStudent(s.uid)}
-                    className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800/40 transition-colors text-left"
-                  >
-                    <img src={getAvatarUrl(s.avatar)} alt="" className="w-8 h-8 rounded-full bg-zinc-200 shrink-0" />
-                    <div className="min-w-0 flex-1">
-                      <p className="text-sm font-medium text-zinc-800 dark:text-white truncate">{s.name}</p>
-                      <p className={`text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>
-                        {s.blocksCompletedToday > 0 ? `${s.blocksCompletedToday} blocks today` : 'No blocks today'}
-                      </p>
-                    </div>
-                    <span className={`text-[10px] shrink-0 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{s.timeAgo}</span>
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-
+        {/* ─── Recently Active (full width) ──── */}
+        <div className={CARD_STYLE_DARK_CLASS} style={{ ...CARD_STYLE, gridColumn: '1 / -1' }}>
+          <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Activity</p>
+          <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5 mb-4">Recently Active</p>
+          {recentlyActive.length === 0 ? (
+            <p className="text-sm text-zinc-400 italic">No recent activity.</p>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+              {recentlyActive.map(s => (
+                <button
+                  key={s.uid}
+                  onClick={() => onSelectStudent(s.uid)}
+                  className="flex items-center gap-3 p-2 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800/40 transition-colors text-left"
+                >
+                  <img src={getAvatarUrl(s.avatar)} alt="" className="w-8 h-8 rounded-full bg-zinc-200 shrink-0" />
+                  <div className="min-w-0 flex-1">
+                    <p className="text-sm font-medium text-zinc-800 dark:text-white truncate">{s.name}</p>
+                    <p className={`text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>
+                      {s.blocksCompletedToday > 0 ? `${s.blocksCompletedToday} blocks today` : 'No blocks today'}
+                    </p>
+                  </div>
+                  <span className={`text-[10px] shrink-0 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{s.timeAgo}</span>
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
-        {/* ─── ROW 4 LEFT: Progress Breakdown (histogram) ────────────── */}
-        <MotionDiv
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.25, ease: CUSTOM_EASE }}
-          className={CARD_STYLE_DARK_CLASS}
-          style={CARD_STYLE}
-        >
-          <div className="flex items-baseline justify-between mb-5">
-            <div>
-              <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Distribution</p>
-              <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5">Progress Breakdown</p>
-            </div>
-            <span className={`text-xs font-medium ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{distributionTotal} students</span>
-          </div>
-          <div className="flex gap-4">
-            {distribution.map((count, i) => {
-              const heightPct = (count / distributionMax) * 100;
-              const bucketLabels = ['0-25%', '25-50%', '50-75%', '75-100%'];
-              return (
-                <div key={i} className="flex-1 flex flex-col items-center gap-1.5">
-                  <span className="text-sm font-medium text-zinc-600 dark:text-zinc-300">{count}</span>
-                  <div className="w-full relative h-28">
-                    {count > 0 ? (
-                      <MotionDiv
-                        className="absolute bottom-0 left-1 right-1 rounded-lg"
-                        style={{ backgroundColor: ACCENT }}
-                        initial={{ height: 0 }}
-                        animate={{ height: `${Math.max(heightPct, 8)}%` }}
-                        transition={{ duration: 0.6, delay: 0.3 + i * 0.1, ease: CUSTOM_EASE }}
-                      />
-                    ) : (
-                      <div className="absolute bottom-0 left-1 right-1 h-[2px] rounded-full bg-zinc-200 dark:bg-zinc-700" />
-                    )}
-                  </div>
-                  <span className={`text-xs ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{bucketLabels[i]}</span>
-                </div>
-              );
-            })}
-          </div>
-        </MotionDiv>
-
-        {/* ─── ROW 4 RIGHT: Exam Calendar ────────────────────────────── */}
+        {/* ─── Exam Calendar (left) ────────────────────────────── */}
         <div className={CARD_STYLE_DARK_CLASS} style={CARD_STYLE}>
           <div className="flex items-baseline justify-between mb-3">
             <div>
@@ -1027,7 +981,49 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           </div>
         </div>
 
-        {/* ─── ROW 5: Subject-Level Gaps (full width span) ───────────── */}
+        {/* ─── Progress Breakdown (right, same row as calendar) ────── */}
+        <MotionDiv
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.25, ease: CUSTOM_EASE }}
+          className={CARD_STYLE_DARK_CLASS}
+          style={CARD_STYLE}
+        >
+          <div className="flex items-baseline justify-between mb-5">
+            <div>
+              <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Distribution</p>
+              <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5">Progress Breakdown</p>
+            </div>
+            <span className={`text-xs font-medium ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{distributionTotal} students</span>
+          </div>
+          <div className="flex gap-4">
+            {distribution.map((count, i) => {
+              const heightPct = (count / distributionMax) * 100;
+              const bucketLabels = ['0-25%', '25-50%', '50-75%', '75-100%'];
+              return (
+                <div key={i} className="flex-1 flex flex-col items-center gap-1.5">
+                  <span className="text-sm font-medium text-zinc-600 dark:text-zinc-300">{count}</span>
+                  <div className="w-full relative h-28">
+                    {count > 0 ? (
+                      <MotionDiv
+                        className="absolute bottom-0 left-1 right-1 rounded-lg"
+                        style={{ backgroundColor: ACCENT }}
+                        initial={{ height: 0 }}
+                        animate={{ height: `${Math.max(heightPct, 8)}%` }}
+                        transition={{ duration: 0.6, delay: 0.3 + i * 0.1, ease: CUSTOM_EASE }}
+                      />
+                    ) : (
+                      <div className="absolute bottom-0 left-1 right-1 h-[2px] rounded-full bg-zinc-200 dark:bg-zinc-700" />
+                    )}
+                  </div>
+                  <span className={`text-xs ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{bucketLabels[i]}</span>
+                </div>
+              );
+            })}
+          </div>
+        </MotionDiv>
+
+        {/* ─── Subject-Level Gaps (full width span) ───────────── */}
         {topGaps.length > 0 && (
           <MotionDiv
             initial={{ opacity: 0, y: 12 }}
