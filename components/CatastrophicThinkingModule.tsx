@@ -13,6 +13,7 @@ import { type ModuleProgress } from '../types';
 import { slateTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = slateTheme;
 
@@ -406,7 +407,14 @@ const DownwardArrowDrill = () => {
 
 // --- MODULE COMPONENT ---
 const CatastrophicThinkingModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
-  const sections = [
+  const essentials = useEssentialsMode();
+
+  const sections = essentials ? [
+    { id: 'catastrophe-machine', title: 'The Catastrophe Machine', eyebrow: '01 // The Problem', icon: MessageSquare },
+    { id: 'thought-record', title: 'The Thought Record (CBT)', eyebrow: '02 // The Core Tool', icon: Wrench },
+    { id: 'decatastrophize', title: 'Decatastrophizing & Defusion', eyebrow: '03 // Breaking the Spiral', icon: Layers },
+    { id: 'action-plan', title: 'The Action Plan', eyebrow: '04 // The Blueprint', icon: Flag },
+  ] : [
     { id: 'catastrophe-machine', title: 'The Catastrophe Machine', eyebrow: '01 // The Problem', icon: MessageSquare },
     { id: 'blank-mind', title: 'Why You Go "Blank"', eyebrow: '02 // What Happens in Your Brain', icon: BrainCircuit },
     { id: 'cbt-standard', title: 'Challenging Your Thoughts (CBT)', eyebrow: '03 // The Main Approach', icon: BookOpen },
@@ -434,7 +442,7 @@ const CatastrophicThinkingModule: React.FC<{ onBack: () => void; progress: Modul
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Catastrophe Machine." eyebrow="Step 1" icon={MessageSquare} theme={theme}>
-              <p><Highlight description="When your brain jumps straight to the worst possible outcome and convinces you it's definitely going to happen. Like thinking one bad mock result means your life is over." theme={theme}>Catastrophizing</Highlight> is the engine of exam anxiety. It's a 3-part machine — and once you can name the parts, you can start to dismantle them.</p>
+              <p>{essentials ? 'Exam anxiety runs on' : ''} <Highlight description="When your brain jumps straight to the worst possible outcome and convinces you it's definitely going to happen. Like thinking one bad mock result means your life is over." theme={theme}>Catastrophizing</Highlight>{essentials ? '. It has three parts. Name them and you can dismantle them.' : ' is the engine of exam anxiety. It\'s a 3-part machine — and once you can name the parts, you can start to dismantle them.'}</p>
               <ConceptCardGrid
                 cards={[
                   { number: 1, term: "Rumination", description: "That one negative thought that plays on repeat in your head, like a song you can't get rid of. The thought you can't switch off." },
@@ -444,43 +452,58 @@ const CatastrophicThinkingModule: React.FC<{ onBack: () => void; progress: Modul
               />
             </ReadingSection>
           )}
-          {activeSection === 1 && (
+          {!essentials && activeSection === 1 && (
             <ReadingSection title="Why You Go 'Blank'." eyebrow="Step 2" icon={BrainCircuit} theme={theme}>
               <p>Going "blank" in an exam isn't just in your head -- it's a real physical thing. When your brain decides the exam paper is a threat, your <Highlight description="The part of your brain that acts like a smoke alarm. It detects danger and hits the panic button, even when the 'danger' is just an exam paper." theme={theme}>amygdala</Highlight> triggers a stress response, flooding you with stress hormones. Those hormones basically block your <Highlight description="The part of your brain that stores and retrieves memories. When you're stressed, it gets shut down -- which is why you can't remember stuff you definitely studied." theme={theme}>hippocampus</Highlight>, which is the part that pulls up memories. Meanwhile, the <Highlight description="The part of your brain that handles logical thinking and planning. When you're panicking, it goes quiet -- which is why you can't think straight under pressure." theme={theme}>front of your brain</Highlight> -- the bit that does logical thinking -- goes quiet. You haven't forgotten the information; you've just temporarily lost the password.</p>
             </ReadingSection>
           )}
-          {activeSection === 2 && (
+          {!essentials && activeSection === 2 && (
             <ReadingSection title="Challenging Your Thoughts (CBT)." eyebrow="Step 3" icon={BookOpen} theme={theme}>
               <p><Highlight description="CBT stands for Cognitive Behavioral Therapy. Basically, it's a way of noticing the thoughts that make you feel awful and learning to question whether they're actually true." theme={theme}>CBT</Highlight> is one of the most effective ways to break the panic cycle. The big idea is actually pretty simple: it's not the exam that makes you panic -- it's what you <em>think</em> about the exam. The exam paper is just paper. The thought "I can't do this" is what triggers the panic. CBT teaches you to catch that thought and challenge it.</p>
             </ReadingSection>
           )}
-          {activeSection === 3 && (
-            <ReadingSection title="The Thought Record." eyebrow="Step 4" icon={Wrench} theme={theme}>
-              <p>The main tool in CBT is the <Highlight description="A step-by-step exercise where you write down the negative thought that's bothering you, look at the actual evidence for and against it, and come up with a more realistic way to see things." theme={theme}>Thought Record</Highlight>. It gets you out of your head and onto paper. Instead of spiralling with vague panic, you look at the actual facts -- what really supports this scary thought, and what goes against it? Then you come up with a more balanced take. Try using it whenever you feel panic building.</p>
+          {(essentials ? activeSection === 1 : activeSection === 3) && (
+            <ReadingSection title={essentials ? "The Thought Record (CBT)." : "The Thought Record."} eyebrow={essentials ? "Step 2" : "Step 4"} icon={Wrench} theme={theme}>
+              {essentials ? (
+                <p><Highlight description="Cognitive Behavioral Therapy — a way of noticing the thoughts that make you feel awful and learning to question whether they're actually true." theme={theme}>CBT</Highlight> says it's not the exam that causes panic. It's what you think about the exam. The <Highlight description="A step-by-step exercise where you write down the negative thought that's bothering you, look at the actual evidence for and against it, and come up with a more realistic way to see things." theme={theme}>Thought Record</Highlight> gets you out of your head. Write down the scary thought. List evidence for and against it. Create a balanced alternative.</p>
+              ) : (
+                <p>The main tool in CBT is the <Highlight description="A step-by-step exercise where you write down the negative thought that's bothering you, look at the actual evidence for and against it, and come up with a more realistic way to see things." theme={theme}>Thought Record</Highlight>. It gets you out of your head and onto paper. Instead of spiralling with vague panic, you look at the actual facts -- what really supports this scary thought, and what goes against it? Then you come up with a more balanced take. Try using it whenever you feel panic building.</p>
+              )}
               <ThoughtRecord />
             </ReadingSection>
           )}
-          {activeSection === 4 && (
-            <ReadingSection title="Decatastrophizing." eyebrow="Step 5" icon={Layers} theme={theme}>
-              <p>This isn't about pretending "it will all be fine." Instead, you face the worst-case scenario head-on and take away its power. It's called the <Highlight description="You take your scariest thought and keep asking 'And then what?' until you reach the end. Most of the time, you'll realise the final outcome is actually something you could deal with." theme={theme}>Downward Arrow</Highlight> technique. By following the "what if" chain all the way to the end, you usually realise the worst case is actually survivable -- and you can make a backup plan for it.</p>
-              <DownwardArrowDrill />
+          {(essentials ? activeSection === 2 : activeSection === 4) && (
+            <ReadingSection title={essentials ? "Decatastrophizing & Defusion." : "Decatastrophizing."} eyebrow={essentials ? "Step 3" : "Step 5"} icon={Layers} theme={theme}>
+              {essentials ? (
+                <>
+                  <p>Face the worst-case head-on with the <Highlight description="You take your scariest thought and keep asking 'And then what?' until you reach the end. Most of the time, you'll realise the final outcome is actually something you could deal with." theme={theme}>Downward Arrow</Highlight>. Keep asking "And then what?" The end is usually survivable.</p>
+                  <DownwardArrowDrill />
+                  <p>Sometimes arguing with thoughts makes them louder. Try <Highlight description="Unhooking from your thoughts. Instead of treating every thought as the truth, you learn to see them as just words passing through your head -- like background noise you don't have to obey." theme={theme}>defusion</Highlight> instead. Notice the thought. Let it be there. Keep driving toward your goal.</p>
+                  <PassengersOnBus/>
+                </>
+              ) : (
+                <>
+                  <p>This isn't about pretending "it will all be fine." Instead, you face the worst-case scenario head-on and take away its power. It's called the <Highlight description="You take your scariest thought and keep asking 'And then what?' until you reach the end. Most of the time, you'll realise the final outcome is actually something you could deal with." theme={theme}>Downward Arrow</Highlight> technique. By following the "what if" chain all the way to the end, you usually realise the worst case is actually survivable -- and you can make a backup plan for it.</p>
+                  <DownwardArrowDrill />
+                </>
+              )}
             </ReadingSection>
           )}
-          {activeSection === 5 && (
+          {!essentials && activeSection === 5 && (
             <ReadingSection title="Facing the Fear." eyebrow="Step 6" icon={Shield} theme={theme}>
               <p>Anxiety creates a vicious cycle. You're scared of a subject, so you avoid it, which means you're less prepared, which makes the fear even worse. The only way to break this is <Highlight description="Instead of diving into the scariest thing all at once, you break it into small steps -- starting with what feels easiest and gradually working up. Your brain learns that it's not as bad as it thought." theme={theme}>Graded Exposure</Highlight>. You build a "ladder" of tasks, from least scary to most scary, and work your way up step by step. Each time, your brain learns that the thing it was dreading isn't actually that bad.</p>
               <GradedExposureHierarchy/>
             </ReadingSection>
           )}
-          {activeSection === 6 && (
+          {!essentials && activeSection === 6 && (
             <ReadingSection title="Stepping Back from Your Thoughts." eyebrow="Step 7" icon={Zap} theme={theme}>
               <p>Sometimes trying to argue with negative thoughts just makes them louder. <Highlight description="ACT is a different approach. Instead of fighting your negative thoughts, you learn to notice them without letting them control you. You accept the thought is there, but you keep doing what matters to you anyway." theme={theme}>ACT (Acceptance and Commitment Therapy)</Highlight> offers an alternative: instead of arguing with the thought, just notice it's there and keep going anyway. This is called <Highlight description="Unhooking from your thoughts. Instead of treating every thought as the truth, you learn to see them as just words passing through your head -- like background noise you don't have to obey." theme={theme}>defusion</Highlight>.</p>
               <PassengersOnBus/>
             </ReadingSection>
           )}
-          {activeSection === 7 && (
-            <ReadingSection title="The Action Plan." eyebrow="Step 8" icon={Flag} theme={theme}>
-              <p>You now have a proper toolkit for dealing with exam anxiety. You've got ways to challenge your thoughts (CBT) and ways to step back from them (ACT), alongside the physical stuff (sleep, food, exercise) from other modules. Now it's about actually using them.</p>
+          {(essentials ? activeSection === 3 : activeSection === 7) && (
+            <ReadingSection title="The Action Plan." eyebrow={essentials ? "Step 4" : "Step 8"} icon={Flag} theme={theme}>
+              <p>{essentials ? 'You now have tools to challenge thoughts (Thought Record) and step back from them (defusion). Pick one and use it once this week.' : 'You now have a proper toolkit for dealing with exam anxiety. You\'ve got ways to challenge your thoughts (CBT) and ways to step back from them (ACT), alongside the physical stuff (sleep, food, exercise) from other modules. Now it\'s about actually using them.'}</p>
               <MicroCommitment theme={theme}><p>Pick ONE tool from this module -- the Thought Record, Downward Arrow, or an Exposure task. Use it just once this week. That's it. The more you practise, the more automatic it becomes.</p></MicroCommitment>
             </ReadingSection>
           )}

@@ -18,6 +18,7 @@ import { useModuleResponses } from '../hooks/useModuleResponses';
 import { useNorthStar } from '../hooks/useNorthStar';
 import NorthStarCallout from './NorthStarCallout';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = blueTheme;
 
@@ -200,6 +201,7 @@ const REORDER_COLORS = [
 
 
 const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const { responses, saveResponse, isLoaded } = useModuleResponses('agency-protocol');
   const { northStar } = useNorthStar();
   const [futureSelf, setFutureSelf] = useState('');
@@ -220,7 +222,12 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
     }
   }, [isLoaded]);
 
-  const sections = [
+  const sections = essentials ? [
+    { id: 'destination-path', title: 'Setting the Sat-Nav', eyebrow: '01 // Your Destination', icon: Target },
+    { id: 'driver-passenger', title: 'Driver or Passenger?', eyebrow: '02 // Seizing the Wheel', icon: Users },
+    { id: 'glitch', title: 'Roadblocks & Your Engine', eyebrow: '03 // Reframing Difficulty', icon: ShieldAlert },
+    { id: 'blueprint', title: 'Your Route Plan', eyebrow: '04 // Building Your Driver Identity', icon: Map },
+  ] : [
     { id: 'destination-path', title: 'Setting the Sat-Nav', eyebrow: '01 // Your Destination', icon: Target },
     { id: 'driver-passenger', title: 'Driver or Passenger?', eyebrow: '02 // Seizing the Wheel', icon: Users },
     { id: 'hacking', title: 'The Driver\'s Controls', eyebrow: '03 // Hacking Your Classroom', icon: Settings },
@@ -247,11 +254,20 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
           {/* ══════════ Section 1: Setting the Sat-Nav ══════════ */}
           {activeSection === 0 && (
             <ReadingSection title="Setting the Sat-Nav: Your Future is Calling." eyebrow="Step 1" icon={Target} theme={theme}>
-              <p>Without a destination programmed into the Sat-Nav, you're just driving aimlessly. The same is true for school. You might know you want to go to college, but that's a vague spot on a map. To get there, you need a clear route, and that starts by connecting today's homework to tomorrow's destination.</p>
-              <p>The science is clear: linking your daily study to a future career you want makes you far more likely to do the work. The solution is to stop seeing schoolwork as a chore and start seeing it as an <Highlight description="Every piece of study you do now is a direct deposit into your future self's bank account. It's not just homework — it's building the life you want." theme={theme}>Investment</Highlight> in your <Highlight description="A vivid picture of who you want to become. When you can actually see your future self clearly, today's effort feels worth it because you know exactly what you're working toward." theme={theme}>Possible Self</Highlight>. Every single action you take today builds the road to that future destination.</p>
-              <PersonalStory name="Alex" role="Founder, NextStepUni">
-                <p>For most of school, I had no destination programmed. Growing up in Togher, nobody in my world was talking about college courses or career paths. School was just something you showed up to — or didn't. I had no "Possible Self" because I'd never been shown one that looked like me. It wasn't until I lost my best friend and hit rock bottom that I even considered the idea that school could lead somewhere worth going.</p>
-              </PersonalStory>
+              {essentials ? (
+                <>
+                  <p>Without a destination, you're driving aimlessly. Connect today's homework to your future. See schoolwork as an <Highlight description="Every piece of study you do now is a direct deposit into your future self's bank account. It's not just homework — it's building the life you want." theme={theme}>Investment</Highlight> in your <Highlight description="A vivid picture of who you want to become. When you can actually see your future self clearly, today's effort feels worth it because you know exactly what you're working toward." theme={theme}>Possible Self</Highlight>.</p>
+                  <p>Students who link daily study to a real goal are far more likely to do the work. Every action you take today builds the road.</p>
+                </>
+              ) : (
+                <>
+                  <p>Without a destination programmed into the Sat-Nav, you're just driving aimlessly. The same is true for school. You might know you want to go to college, but that's a vague spot on a map. To get there, you need a clear route, and that starts by connecting today's homework to tomorrow's destination.</p>
+                  <p>The science is clear: linking your daily study to a future career you want makes you far more likely to do the work. The solution is to stop seeing schoolwork as a chore and start seeing it as an <Highlight description="Every piece of study you do now is a direct deposit into your future self's bank account. It's not just homework — it's building the life you want." theme={theme}>Investment</Highlight> in your <Highlight description="A vivid picture of who you want to become. When you can actually see your future self clearly, today's effort feels worth it because you know exactly what you're working toward." theme={theme}>Possible Self</Highlight>. Every single action you take today builds the road to that future destination.</p>
+                  <PersonalStory name="Alex" role="Founder, NextStepUni">
+                    <p>For most of school, I had no destination programmed. Growing up in Togher, nobody in my world was talking about college courses or career paths. School was just something you showed up to — or didn't. I had no "Possible Self" because I'd never been shown one that looked like me. It wasn't until I lost my best friend and hit rock bottom that I even considered the idea that school could lead somewhere worth going.</p>
+                  </PersonalStory>
+                </>
+              )}
               <MicroCommitment theme={theme}>
                 <p>Open your phone's calendar right now. Schedule a 15-minute slot for tomorrow called 'Driving Practice' and use it to do the small action you list below.</p>
               </MicroCommitment>
@@ -281,8 +297,17 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
           {/* ══════════ Section 2: Driver or Passenger? ══════════ */}
           {activeSection === 1 && (
             <ReadingSection title="Driver or Passenger? Seizing the Wheel." eyebrow="Step 2" icon={Users} theme={theme}>
-              <p>In the car of your education, you have two choices. You can be a 'Passenger', letting the teacher, your parents, or your friends decide the direction. You only do the work to avoid getting in trouble. This is being a <Highlight description="Someone who feels like their actions are controlled by other people — like a piece being moved around a chessboard. You do the work because someone told you to, not because you chose to." theme={theme}>Pawn</Highlight>, and it leads to shallow, rote learning that falls apart under exam pressure.</p>
-              <p>Or, you can be a 'Driver'—an <Highlight description="The opposite of a Pawn. You feel like the true source of your own actions. You're not being pushed — you're choosing to move. People who feel this way do far better in school." theme={theme}>Origin</Highlight>—who grabs the steering wheel. You take <Highlight description="You do the work because YOU have chosen to, not because someone is making you. It's your education, your choice, your future." theme={theme}>Academic Ownership</Highlight>. This isn't a personality trait you're born with; it's a choice you make every single day.</p>
+              {essentials ? (
+                <>
+                  <p>You can be a Passenger, letting others decide for you. That makes you a <Highlight description="Someone who feels like their actions are controlled by other people — like a piece being moved around a chessboard. You do the work because someone told you to, not because you chose to." theme={theme}>Pawn</Highlight>. Or you can be a Driver, an <Highlight description="The opposite of a Pawn. You feel like the true source of your own actions. You're not being pushed — you're choosing to move. People who feel this way do far better in school." theme={theme}>Origin</Highlight>, who takes <Highlight description="You do the work because YOU have chosen to, not because someone is making you. It's your education, your choice, your future." theme={theme}>Academic Ownership</Highlight>.</p>
+                  <p>Being a Driver is a daily choice, not a personality trait. Choose it tomorrow in one class.</p>
+                </>
+              ) : (
+                <>
+                  <p>In the car of your education, you have two choices. You can be a 'Passenger', letting the teacher, your parents, or your friends decide the direction. You only do the work to avoid getting in trouble. This is being a <Highlight description="Someone who feels like their actions are controlled by other people — like a piece being moved around a chessboard. You do the work because someone told you to, not because you chose to." theme={theme}>Pawn</Highlight>, and it leads to shallow, rote learning that falls apart under exam pressure.</p>
+                  <p>Or, you can be a 'Driver'—an <Highlight description="The opposite of a Pawn. You feel like the true source of your own actions. You're not being pushed — you're choosing to move. People who feel this way do far better in school." theme={theme}>Origin</Highlight>—who grabs the steering wheel. You take <Highlight description="You do the work because YOU have chosen to, not because someone is making you. It's your education, your choice, your future." theme={theme}>Academic Ownership</Highlight>. This isn't a personality trait you're born with; it's a choice you make every single day.</p>
+                </>
+              )}
               <MicroCommitment theme={theme}>
                 <p>Think of one class you have tomorrow where you usually act like a passenger. Decide on one small 'driver' move you can make – like asking one question or deliberately trying to connect the topic to your own interests.</p>
               </MicroCommitment>
@@ -291,7 +316,7 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
           )}
 
           {/* ══════════ Section 3: Branching Scenario ══════════ */}
-          {activeSection === 2 && (
+          {!essentials && activeSection === 2 && (
             <ReadingSection title="The Driver's Controls: Hacking the Classroom." eyebrow="Step 3" icon={Settings} theme={theme}>
                <p>Being a Driver isn't about ignoring the teacher; it's about working with them. You have controls — your questions, your comments, your focus — that influence the journey. Using them is called <Highlight description="Instead of sitting quietly and hoping things make sense, you actively shape how you learn. You ask questions, tell the teacher what's clicking and what's not, and make the material relevant to you." theme={theme}>Agentic Engagement</Highlight>.</p>
                <p>Think of it like this: if you're lost while driving and you don't tell the sat-nav, it can't reroute you. Your teachers are the same — they need your feedback to give you the clear directions (<Highlight description="The road signs of your education — clear instructions, expectations, and feedback from your teacher. Without them you're guessing. With them, you know exactly where you stand." theme={theme}>Structure</Highlight>) and support you actually need.</p>
@@ -392,11 +417,20 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
           )}
 
           {/* ══════════ Section 4: Reframe ══════════ */}
-          {activeSection === 3 && (
-            <ReadingSection title="Roadblocks & Potholes: When the Journey is Unfair." eyebrow="Step 4" icon={ShieldAlert} theme={theme}>
+          {(essentials ? activeSection === 2 : activeSection === 3) && (
+            <ReadingSection title={essentials ? "Roadblocks & Your Engine." : "Roadblocks & Potholes: When the Journey is Unfair."} eyebrow={essentials ? "Step 3" : "Step 4"} icon={ShieldAlert} theme={theme}>
               {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'agency-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
-              <p>Let's be real: not all roads are perfectly paved. If you're from a disadvantaged area, you face real <Highlight description="The real-world stuff that makes school harder for some people — things like fewer resources, less support at home, or schools that are stretched thin. None of it is your fault, but it is part of your road." theme={theme}>Structural Conditions</Highlight>. It's easy to see these roadblocks and think the journey is impossible for you.</p>
-              <p>This creates the most dangerous trap in education: interpreting <Highlight description="A mental trap where your brain confuses 'this is hard' with 'this isn't for me.' The work is supposed to be hard — that's what makes it worth something. Hard doesn't mean impossible." theme={theme}>Difficulty as Impossibility</Highlight>. The moment the work gets hard, your brain defaults to: "See? This isn't for people like me." The key is to install a high-tech suspension system in your brain: a conscious, deliberate reframe.</p>
+              {essentials ? (
+                <>
+                  <p>Not all roads are equal. You may face real <Highlight description="The real-world stuff that makes school harder for some people — things like fewer resources, less support at home, or schools that are stretched thin. None of it is your fault, but it is part of your road." theme={theme}>Structural Conditions</Highlight>. The danger is interpreting <Highlight description="A mental trap where your brain confuses 'this is hard' with 'this isn't for me.' The work is supposed to be hard — that's what makes it worth something. Hard doesn't mean impossible." theme={theme}>Difficulty as Impossibility</Highlight>. Hard does not mean impossible.</p>
+                  <p>Your life experience gave you a unique engine. Street smarts are academic superpowers. Reading people helps you analyse characters. Bouncing back from setbacks builds exam resilience.</p>
+                </>
+              ) : (
+                <>
+                  <p>Let's be real: not all roads are perfectly paved. If you're from a disadvantaged area, you face real <Highlight description="The real-world stuff that makes school harder for some people — things like fewer resources, less support at home, or schools that are stretched thin. None of it is your fault, but it is part of your road." theme={theme}>Structural Conditions</Highlight>. It's easy to see these roadblocks and think the journey is impossible for you.</p>
+                  <p>This creates the most dangerous trap in education: interpreting <Highlight description="A mental trap where your brain confuses 'this is hard' with 'this isn't for me.' The work is supposed to be hard — that's what makes it worth something. Hard doesn't mean impossible." theme={theme}>Difficulty as Impossibility</Highlight>. The moment the work gets hard, your brain defaults to: "See? This isn't for people like me." The key is to install a high-tech suspension system in your brain: a conscious, deliberate reframe.</p>
+                </>
+              )}
               <MicroCommitment theme={theme}>
                 <p>Write this 'Reframe' on a small piece of paper: "This is hard because it's a high-level problem. Solving it is a step toward my goal." Fold it up and put it in your wallet or pencil case.</p>
               </MicroCommitment>
@@ -430,7 +464,7 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
           )}
 
           {/* ══════════ Section 5: Flip Cards ══════════ */}
-          {activeSection === 4 && (
+          {!essentials && activeSection === 4 && (
             <ReadingSection title="Your Unique Engine: The Power of Your Story." eyebrow="Step 5" icon={Zap} theme={theme}>
               <p>Society loves to focus on what students from disadvantaged backgrounds don't have. We're flipping that. Your life experiences have equipped your car with a unique, custom-tuned engine that many students with factory-standard parts simply don't have. This is your <Highlight description="The skills, street smarts, and real-world knowledge you've picked up from your life, your community, and your family. School doesn't always recognise them — but they're genuine advantages." theme={theme}>Funds of Knowledge</Highlight>.</p>
               <p>These aren't just 'life skills' — they're genuine advantages that give you more horsepower for the Leaving Cert journey. Flip the cards below to see how your real-world experience translates directly into academic power.</p>
@@ -446,9 +480,9 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
           )}
 
           {/* ══════════ Section 6: Reorder + Route Plan ══════════ */}
-          {activeSection === 5 && (
-            <ReadingSection title="Your Route Plan: Building Your Driver Identity." eyebrow="Step 6" icon={Map} theme={theme}>
-              <p>A Driver identity isn't something you find; it's something you build through deliberate, daily action. It's the route plan that guides you when motivation is low and the road is long. First, arrange your protocol components into your personal pre-drive checklist.</p>
+          {(essentials ? activeSection === 3 : activeSection === 5) && (
+            <ReadingSection title="Your Route Plan: Building Your Driver Identity." eyebrow={essentials ? "Step 4" : "Step 6"} icon={Map} theme={theme}>
+              <p>{essentials ? 'Build your Driver identity through daily action. Arrange your protocol below, then fill in your route plan.' : "A Driver identity isn't something you find; it's something you build through deliberate, daily action. It's the route plan that guides you when motivation is low and the road is long. First, arrange your protocol components into your personal pre-drive checklist."}</p>
 
               {/* Reorder checklist */}
               <div className="my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>

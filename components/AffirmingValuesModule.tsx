@@ -14,6 +14,7 @@ import { blueTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useModuleResponses } from '../hooks/useModuleResponses';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = blueTheme;
 
@@ -331,9 +332,14 @@ const ValuesSelector = ({ savedValues, onSave }: { savedValues?: string[]; onSav
 
 // --- MODULE COMPONENT ---
 const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const { responses, saveResponse, isLoaded: _isLoaded } = useModuleResponses('affirming-values');
 
-  const sections = [
+  const sections = essentials ? [
+    { id: 'invisible-threat', title: 'The Invisible Threat', eyebrow: '01 // The Problem', icon: AlertTriangle },
+    { id: 'psychological-shield', title: 'The Shield & How It Works', eyebrow: '02 // The Solution', icon: Shield },
+    { id: 'your-protocol', title: 'Your Pre-Exam Protocol', eyebrow: '03 // The Action Plan', icon: UserCheck },
+  ] : [
     { id: 'invisible-threat', title: 'The Invisible Threat', eyebrow: '01 // The Problem', icon: AlertTriangle },
     { id: 'psychological-shield', title: 'The Psychological Shield', eyebrow: '02 // The Solution', icon: Shield },
     { id: 'broaden-build', title: 'How It Works: The Zoom-Out Effect', eyebrow: '03 // The Mechanism', icon: BrainCircuit },
@@ -359,37 +365,60 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
           {activeSection === 0 && (
             <>
             <ReadingSection title="The Invisible Threat." eyebrow="Step 1" icon={AlertTriangle} theme={theme}>
-              <p>In a high-stakes situation like the Leaving Cert, your brain is on high alert. For students from disadvantaged backgrounds, there's an extra, invisible threat in the room: the fear that a bad result will confirm what people already think about "people like you." This is called <Highlight description="That nagging background voice during an exam that says 'people like me don't get these results.' It's not just nerves — it actually takes up space in your brain, leaving less room for the actual questions." theme={theme}>Stereotype Threat</Highlight>.</p>
-              <p>It's like a hidden tax on your brainpower. Part of your working memory gets hijacked by this background anxiety, leaving less room for the actual exam questions. This isn't just "in your head" — it's a real stress response that can cost you marks, even when you know the material perfectly.</p>
-              <PersonalStory name="Alex" role="Founder, NextStepUni">
-                <p>I know what this feels like. Walking into an exam hall, part of my brain was always running a background programme: "People from Togher don't get these kinds of results." I didn't have a name for it then, but it was stereotype threat. I was fighting the exam and fighting that voice at the same time — and I didn't realise it was costing me marks until I learned the science behind it.</p>
-              </PersonalStory>
+              {essentials ? (
+                <>
+                  <p>Here's the thing: in exams, your brain fights two battles. You fight the questions. You also fight a background voice saying "people like me don't get these results." That voice is called <Highlight description="That nagging background voice during an exam that says 'people like me don't get these results.' It's not just nerves — it actually takes up space in your brain, leaving less room for the actual questions." theme={theme}>Stereotype Threat</Highlight>.</p>
+                  <p>It hijacks your working memory. You lose brainpower to anxiety. You know the material, but your brain can't access it properly. This costs you real marks.</p>
+                </>
+              ) : (
+                <>
+                  <p>In a high-stakes situation like the Leaving Cert, your brain is on high alert. For students from disadvantaged backgrounds, there's an extra, invisible threat in the room: the fear that a bad result will confirm what people already think about "people like you." This is called <Highlight description="That nagging background voice during an exam that says 'people like me don't get these results.' It's not just nerves — it actually takes up space in your brain, leaving less room for the actual questions." theme={theme}>Stereotype Threat</Highlight>.</p>
+                  <p>It's like a hidden tax on your brainpower. Part of your working memory gets hijacked by this background anxiety, leaving less room for the actual exam questions. This isn't just "in your head" — it's a real stress response that can cost you marks, even when you know the material perfectly.</p>
+                  <PersonalStory name="Alex" role="Founder, NextStepUni">
+                    <p>I know what this feels like. Walking into an exam hall, part of my brain was always running a background programme: "People from Togher don't get these kinds of results." I didn't have a name for it then, but it was stereotype threat. I was fighting the exam and fighting that voice at the same time — and I didn't realise it was costing me marks until I learned the science behind it.</p>
+                  </PersonalStory>
+                </>
+              )}
             </ReadingSection>
             <WorkingMemoryGrid />
             </>
           )}
-           {activeSection === 1 && (
+          {!essentials && activeSection === 1 && (
             <ReadingSection title="The Psychological Shield." eyebrow="Step 2" icon={Shield} theme={theme}>
               <p>Researchers spent years looking for a way to fight this invisible threat. The best solution they found is almost ridiculously simple: a 15-minute writing exercise called <Highlight description="Before a stressful event, you spend 15 minutes writing about what matters most to you — your family, your friends, your creativity. It reminds your brain that you're more than just an exam result, and that frees up the brainpower the threat was stealing." theme={theme}>Self-Affirmation</Highlight>.</p>
               <p>It sounds too good to be true, but it works. By writing about what's truly important to you before a stressful event — family, creativity, friendship — you create a mental shield. You remind your brain that your self-worth isn't defined by this one exam. That simple reminder frees up the brainpower that the threat would otherwise steal.</p>
             </ReadingSection>
           )}
-           {activeSection === 2 && (
+          {!essentials && activeSection === 2 && (
             <ReadingSection title="How It Works: The Zoom-Out Effect." eyebrow="Step 3" icon={BrainCircuit} theme={theme}>
               <p>How can a simple writing exercise have such a powerful effect? It comes down to how your brain handles emotions. When you're scared, your focus narrows — all you can see is the threat. But positive emotions do the opposite: they <Highlight description="When you feel good about who you are, your brain literally opens up. You see more options, think more clearly, and stop fixating on the one thing that's scaring you. It's like going from tunnel vision to a wide-angle lens." theme={theme}>Broaden Your Perspective</Highlight>.</p>
               <p>When you write about your values, your brain gets a hit of positive emotion — a reminder that you're more than this one exam. That "zooms out" your perspective. Suddenly the Leaving Cert isn't a life-or-death verdict on your entire identity; it's just one part of a much bigger, more meaningful life. That shift is what reduces the threat and frees up your working memory.</p>
             </ReadingSection>
           )}
-          {activeSection === 3 && (
+          {!essentials && activeSection === 3 && (
             <ReadingSection title="The Real World Data." eyebrow="Step 4" icon={UserCheck} theme={theme}>
               <p>This isn't just theory — it's been tested in real classrooms. Researchers gave a group of students from disadvantaged backgrounds this exact exercise: 15 minutes of writing about their values, just a few times a year. The result? Their grades jumped significantly — and the effect lasted.</p>
               <p>Two years later, those students were still outperforming their peers. The exercise had kicked off a positive cycle — better grades led to more confidence, which led to even better grades. And the effect was strongest for the students who were most at risk of underperforming. A 15-minute exercise, a few times a year, changed their trajectory.</p>
             </ReadingSection>
           )}
-           {activeSection === 4 && (
-            <ReadingSection title="Your Pre-Exam Protocol." eyebrow="Step 5" icon={UserCheck} theme={theme}>
-              <p>You now have a genuine tool to protect your brain under pressure. The last step is to make it a habit — a pre-exam ritual you do every time, just like checking you have the right pens.</p>
-              <p>The steps are simple: <strong>1. Pick your core values below.</strong> <strong>2. Choose the one that matters most right now.</strong> <strong>3. Write for 15 minutes.</strong> This isn't an essay — it's a private reflection. Write about why the value is important to you and describe a specific time you lived up to it. Do this before every major exam, especially the Mocks and the Leaving Cert.</p>
+          {essentials && activeSection === 1 && (
+            <ReadingSection title="The Shield & How It Works." eyebrow="Step 2" icon={Shield} theme={theme}>
+              <p>Write about what matters to you for 15 minutes before an exam. This is called <Highlight description="Before a stressful event, you spend 15 minutes writing about what matters most to you — your family, your friends, your creativity. It reminds your brain that you're more than just an exam result, and that frees up the brainpower the threat was stealing." theme={theme}>Self-Affirmation</Highlight>. You remind your brain that you're more than one exam. That frees up the brainpower the threat was stealing.</p>
+              <p>Writing about your values creates positive emotion. Your perspective zooms out. The exam stops feeling like a verdict on your identity. Students who did this a few times a year saw their grades jump significantly.</p>
+            </ReadingSection>
+          )}
+          {(essentials ? activeSection === 2 : activeSection === 4) && (
+            <ReadingSection title="Your Pre-Exam Protocol." eyebrow={essentials ? "Step 3" : "Step 5"} icon={UserCheck} theme={theme}>
+              {essentials ? (
+                <>
+                  <p>Make this a pre-exam habit. Pick your top 3 values below. Before every exam, write for 15 minutes about why one value matters to you. Describe a time you lived up to it.</p>
+                </>
+              ) : (
+                <>
+                  <p>You now have a genuine tool to protect your brain under pressure. The last step is to make it a habit — a pre-exam ritual you do every time, just like checking you have the right pens.</p>
+                  <p>The steps are simple: <strong>1. Pick your core values below.</strong> <strong>2. Choose the one that matters most right now.</strong> <strong>3. Write for 15 minutes.</strong> This isn't an essay — it's a private reflection. Write about why the value is important to you and describe a specific time you lived up to it. Do this before every major exam, especially the Mocks and the Leaving Cert.</p>
+                </>
+              )}
               <ValuesSelector savedValues={responses['selected-values']} onSave={(v) => saveResponse('selected-values', v)} />
               <MicroCommitment theme={theme}>
                 <p>Take the values you selected above. Create a recurring event in your phone's calendar for the morning of every exam you have this year, with the title: "15 Min Values Writing." You now have a pre-exam shield that actually works.</p>

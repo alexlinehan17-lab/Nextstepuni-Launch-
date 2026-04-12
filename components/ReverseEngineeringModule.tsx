@@ -10,6 +10,7 @@ import { type ModuleProgress } from '../types';
 import { skyTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = skyTheme;
 
@@ -238,6 +239,7 @@ const ImplementationChecklist = () => {
 
 // --- MODULE COMPONENT ---
 const ReverseEngineeringModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'paradox', title: 'Why Most Study Plans Fail', eyebrow: '01 // The Problem', icon: History },
     { id: 'engine', title: 'Why Planning Backwards Works', eyebrow: '02 // The Idea', icon: DraftingCompass },
@@ -264,30 +266,58 @@ const ReverseEngineeringModule: React.FC<{ onBack: () => void; progress: ModuleP
         <>
           {activeSection === 0 && (
             <ReadingSection title="Why Most Study Plans Fail." eyebrow="Step 1" icon={History} theme={theme}>
-              <p>Starting at the beginning and working forward seems like the obvious way to plan. It is also the main reason most study plans fall apart. The problem is the <Highlight description="We are naturally bad at guessing how long things take. We picture the best-case scenario and forget about sick days, tiredness, and life getting in the way." theme={theme}>Planning Fallacy</Highlight> -- we are terrible at guessing how long things will really take. We forget about sick days, tiredness, and just life getting in the way. So everything piles up at the end, and you are left cramming the week before.</p>
-              <p>The fix is surprisingly simple: plan backwards instead. Instead of asking "What should I do today?", ask "To be ready for the exam, where do I need to be the day before?". That is <Highlight description="Instead of planning from today forward, you start at your exam date and work backwards to today. It forces you to face how much time you really have." theme={theme}>Reverse Engineering</Highlight>. You start from your exam date -- which is not moving -- and work backwards. It forces you to face reality from day one.</p>
+              {essentials ? (
+                <>
+                  <p>Planning forward feels obvious. It is also why most plans fail. You fall into the <Highlight description="We are naturally bad at guessing how long things take. We picture the best-case scenario and forget about sick days, tiredness, and life getting in the way." theme={theme}>Planning Fallacy</Highlight>. You underestimate how long things take. Everything piles up at the end. The fix: use <Highlight description="Instead of planning from today forward, you start at your exam date and work backwards to today. It forces you to face how much time you really have." theme={theme}>Reverse Engineering</Highlight>. Start from your exam date and work backwards. It forces you to face reality from day one.</p>
+                </>
+              ) : (
+                <>
+                  <p>Starting at the beginning and working forward seems like the obvious way to plan. It is also the main reason most study plans fall apart. The problem is the <Highlight description="We are naturally bad at guessing how long things take. We picture the best-case scenario and forget about sick days, tiredness, and life getting in the way." theme={theme}>Planning Fallacy</Highlight> -- we are terrible at guessing how long things will really take. We forget about sick days, tiredness, and just life getting in the way. So everything piles up at the end, and you are left cramming the week before.</p>
+                  <p>The fix is surprisingly simple: plan backwards instead. Instead of asking "What should I do today?", ask "To be ready for the exam, where do I need to be the day before?". That is <Highlight description="Instead of planning from today forward, you start at your exam date and work backwards to today. It forces you to face how much time you really have." theme={theme}>Reverse Engineering</Highlight>. You start from your exam date -- which is not moving -- and work backwards. It forces you to face reality from day one.</p>
+                </>
+              )}
               <PlanningParadoxVisualizer />
             </ReadingSection>
           )}
            {activeSection === 1 && (
             <ReadingSection title="Why Planning Backwards Works." eyebrow="Step 2" icon={DraftingCompass} theme={theme}>
-              <p>Planning backwards is not just a clever trick -- there are solid reasons it works so well. First, it uses a simple idea called <Highlight description="Start with what you will be tested on, then plan your study around that. Every session has a clear purpose tied to the exam." theme={theme}>Backward Design</Highlight>: start with what the exam will actually test, and plan every study session around that. This cuts out "junk study" -- the kind that feels productive but does not actually earn you marks.</p>
-              <p>Second, it helps you spot the <Highlight description="Some topics depend on others. For example, you cannot do Calculus without Algebra. The chain of topics you must cover first is the critical path." theme={theme}>Critical Path</Highlight> -- the chain of topics where one depends on another. You cannot do Calculus before Algebra, so Algebra goes first. Third, by picturing yourself on exam day and working backwards, you create what is called <Highlight description="When you imagine yourself at the finish line and trace the steps back, those steps feel more real and necessary. It is a motivation boost." theme={theme}>Future Thinking</Highlight> -- it makes each step feel necessary and keeps you motivated because you can see exactly how it connects to the finish line.</p>
+              {essentials ? (
+                <>
+                  <p>Three reasons this works. First: <Highlight description="Start with what you will be tested on, then plan your study around that. Every session has a clear purpose tied to the exam." theme={theme}>Backward Design</Highlight>. Start with what the exam tests. Plan every session around that. No "junk study." Second: you spot the <Highlight description="Some topics depend on others. For example, you cannot do Calculus without Algebra. The chain of topics you must cover first is the critical path." theme={theme}>Critical Path</Highlight>. Some topics depend on others. You cannot do Calculus before Algebra. Third: <Highlight description="When you imagine yourself at the finish line and trace the steps back, those steps feel more real and necessary. It is a motivation boost." theme={theme}>Future Thinking</Highlight>. Picturing exam day makes each step feel necessary and keeps you motivated.</p>
+                </>
+              ) : (
+                <>
+                  <p>Planning backwards is not just a clever trick -- there are solid reasons it works so well. First, it uses a simple idea called <Highlight description="Start with what you will be tested on, then plan your study around that. Every session has a clear purpose tied to the exam." theme={theme}>Backward Design</Highlight>: start with what the exam will actually test, and plan every study session around that. This cuts out "junk study" -- the kind that feels productive but does not actually earn you marks.</p>
+                  <p>Second, it helps you spot the <Highlight description="Some topics depend on others. For example, you cannot do Calculus without Algebra. The chain of topics you must cover first is the critical path." theme={theme}>Critical Path</Highlight> -- the chain of topics where one depends on another. You cannot do Calculus before Algebra, so Algebra goes first. Third, by picturing yourself on exam day and working backwards, you create what is called <Highlight description="When you imagine yourself at the finish line and trace the steps back, those steps feel more real and necessary. It is a motivation boost." theme={theme}>Future Thinking</Highlight> -- it makes each step feel necessary and keeps you motivated because you can see exactly how it connects to the finish line.</p>
+                </>
+              )}
               <BackwardDesignSorter />
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="Breaking Down the Syllabus." eyebrow="Step 3" icon={ClipboardList} theme={theme}>
-              <p>Before you build a schedule, you need to know exactly what you are dealing with. Start by locking in your <Highlight description="Your exam date. It is not moving, so everything gets planned around it." theme={theme}>Exam Date</Highlight> -- that is your finish line and it is not moving. Then block off a <Highlight description="The last week or two before the exam. You keep these for light review, sleep, and calming your nerves -- no cramming new stuff." theme={theme}>"Wind-Down" Period</Highlight> in the final week or two for light review, sleep, and calming your nerves -- not learning new material.</p>
-              <p>Next, do a full <Highlight description="Go through every topic on the syllabus and break it into small chunks, each about one study session long (45-90 minutes)." theme={theme}>Syllabus Breakdown</Highlight>. Go through every topic and break it into bite-sized chunks, each about one study session long. "Cell Biology" is too vague -- break it into "Mitochondria," "Osmosis," and so on. Then use past papers to figure out the <Highlight description="Look at past papers and you will notice that roughly 20% of topics come up for about 80% of the marks. Focus your energy there first." theme={theme}>80/20 Rule</Highlight>: roughly 20% of topics earn about 80% of the marks. Those are the ones you hit first.</p>
-              <PersonalStory name="Caoimhe" role="Leaving Cert student, Limerick">
-                <p>"I had this massive colour-coded timetable on my wall in January and felt so organised. By mid-February it was already in the bin. I was behind on everything and it just made me feel worse. When I tried planning backwards from the exam instead, I actually finished a topic ahead of schedule for the first time. It was such a relief to have a plan that worked with real life, not against it."</p>
-              </PersonalStory>
+              {essentials ? (
+                <>
+                  <p>Lock in your <Highlight description="Your exam date. It is not moving, so everything gets planned around it." theme={theme}>Exam Date</Highlight>. Block off a <Highlight description="The last week or two before the exam. You keep these for light review, sleep, and calming your nerves -- no cramming new stuff." theme={theme}>"Wind-Down" Period</Highlight> in the final two weeks. No new material then. Do a full <Highlight description="Go through every topic on the syllabus and break it into small chunks, each about one study session long (45-90 minutes)." theme={theme}>Syllabus Breakdown</Highlight>. Break every topic into chunks of one study session each. Use past papers to find the <Highlight description="Look at past papers and you will notice that roughly 20% of topics come up for about 80% of the marks. Focus your energy there first." theme={theme}>80/20 Rule</Highlight>. About 20% of topics earn 80% of the marks. Hit those first.</p>
+                </>
+              ) : (
+                <>
+                  <p>Before you build a schedule, you need to know exactly what you are dealing with. Start by locking in your <Highlight description="Your exam date. It is not moving, so everything gets planned around it." theme={theme}>Exam Date</Highlight> -- that is your finish line and it is not moving. Then block off a <Highlight description="The last week or two before the exam. You keep these for light review, sleep, and calming your nerves -- no cramming new stuff." theme={theme}>"Wind-Down" Period</Highlight> in the final week or two for light review, sleep, and calming your nerves -- not learning new material.</p>
+                  <p>Next, do a full <Highlight description="Go through every topic on the syllabus and break it into small chunks, each about one study session long (45-90 minutes)." theme={theme}>Syllabus Breakdown</Highlight>. Go through every topic and break it into bite-sized chunks, each about one study session long. "Cell Biology" is too vague -- break it into "Mitochondria," "Osmosis," and so on. Then use past papers to figure out the <Highlight description="Look at past papers and you will notice that roughly 20% of topics come up for about 80% of the marks. Focus your energy there first." theme={theme}>80/20 Rule</Highlight>: roughly 20% of topics earn about 80% of the marks. Those are the ones you hit first.</p>
+                  <PersonalStory name="Caoimhe" role="Leaving Cert student, Limerick">
+                    <p>"I had this massive colour-coded timetable on my wall in January and felt so organised. By mid-February it was already in the bin. I was behind on everything and it just made me feel worse. When I tried planning backwards from the exam instead, I actually finished a topic ahead of schedule for the first time. It was such a relief to have a plan that worked with real life, not against it."</p>
+                  </PersonalStory>
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 3 && (
             <ReadingSection title="Your Four Study Phases." eyebrow="Step 4" icon={Layers} theme={theme}>
-                <p>A good backwards schedule is not just one big block of "study." It is split into four clear phases, each with its own job. Working backwards from the exam, here is what it looks like:</p>
+                {essentials ? (
+                  <p>Your schedule has four phases, working backwards. Phase 4 (final 2 weeks): light review and rest only. Phase 3 (1-2 months before): full mock papers under timed conditions. Phase 2 (3-4 months before): mix different topics together. Phase 1 (5-6 months before): learn the basics and make your revision materials. Each phase has a clear job.</p>
+                ) : (
+                  <p>A good backwards schedule is not just one big block of "study." It is split into four clear phases, each with its own job. Working backwards from the exam, here is what it looks like:</p>
+                )}
                 <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                   {/* Card 1 — Sky */}
                   <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
@@ -326,14 +356,30 @@ const ReverseEngineeringModule: React.FC<{ onBack: () => void; progress: ModuleP
           )}
            {activeSection === 4 && (
             <ReadingSection title="Studying Smarter." eyebrow="Step 5" icon={BrainCircuit} theme={theme}>
-              <p>A great schedule does not just plan what you study -- it also plans how you study. You need to build in <Highlight description="Instead of cramming everything once, you go back and review old topics at growing intervals. It is the best way to stop yourself forgetting things." theme={theme}>Spaced Repetition</Highlight>, which means going back to old topics at regular intervals so they do not fade from your memory.</p>
-              <p>You should also prioritise <Highlight description="Testing yourself -- writing answers, doing practice questions -- rather than just re-reading your notes. It feels harder but it is far more effective." theme={theme}>Active Recall</Highlight> (testing yourself, writing answers) over passive re-reading. And in the later phases, try <Highlight description="Mixing different topics in one study session instead of doing hours on the same thing. It feels messier but it trains your brain to spot which method to use -- exactly what exams test." theme={theme}>Mixing Topics</Highlight> -- studying different subjects in one session. It feels harder, but it trains your brain to spot which approach to use, which is exactly what exam questions test.</p>
+              {essentials ? (
+                <>
+                  <p>Plan how you study, not just what you study. Use <Highlight description="Instead of cramming everything once, you go back and review old topics at growing intervals. It is the best way to stop yourself forgetting things." theme={theme}>Spaced Repetition</Highlight>. Go back to old topics at regular intervals. Use <Highlight description="Testing yourself -- writing answers, doing practice questions -- rather than just re-reading your notes. It feels harder but it is far more effective." theme={theme}>Active Recall</Highlight>. Test yourself instead of re-reading. Try <Highlight description="Mixing different topics in one study session instead of doing hours on the same thing. It feels messier but it trains your brain to spot which method to use -- exactly what exams test." theme={theme}>Mixing Topics</Highlight> in later phases. Study different subjects in one session. It feels harder but trains flexible thinking.</p>
+                </>
+              ) : (
+                <>
+                  <p>A great schedule does not just plan what you study -- it also plans how you study. You need to build in <Highlight description="Instead of cramming everything once, you go back and review old topics at growing intervals. It is the best way to stop yourself forgetting things." theme={theme}>Spaced Repetition</Highlight>, which means going back to old topics at regular intervals so they do not fade from your memory.</p>
+                  <p>You should also prioritise <Highlight description="Testing yourself -- writing answers, doing practice questions -- rather than just re-reading your notes. It feels harder but it is far more effective." theme={theme}>Active Recall</Highlight> (testing yourself, writing answers) over passive re-reading. And in the later phases, try <Highlight description="Mixing different topics in one study session instead of doing hours on the same thing. It feels messier but it trains your brain to spot which method to use -- exactly what exams test." theme={theme}>Mixing Topics</Highlight> -- studying different subjects in one session. It feels harder, but it trains your brain to spot which approach to use, which is exactly what exam questions test.</p>
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 5 && (
             <ReadingSection title="Making a Plan That Actually Lasts." eyebrow="Step 6" icon={Shield} theme={theme}>
-              <p>A perfect, rigid schedule will fall apart the first time you get sick or have a family event. A schedule that actually lasts is one that is built to bend without breaking. That means leaving <Highlight description="Blank days or weeks (about 10-20% of your total time) that are there on purpose. When life throws you a curveball, these soak it up without wrecking everything." theme={theme}>Buffer Time</Highlight> -- blank days that are there on purpose so that when something comes up, your whole plan does not collapse.</p>
-              <p>Before you start filling in dates, do a quick <Highlight description="Write down everything that is definitely happening -- holidays, birthdays, matches, family events -- and block them out from the start so you are not kidding yourself about how much time you have." theme={theme}>Life Check</Highlight>: write down everything you know is coming up (holidays, birthdays, matches) and block those out straight away. Finally, pick your tool. It could be a <Highlight description="A simple chart that shows your tasks on a timeline so you can see what needs to happen and when." theme={theme}>Timeline Chart</Highlight> in a free app, a Notion page, or just a wall of sticky notes. The tool does not matter -- what matters is that you can see your whole plan at a glance. You are now ready to build your schedule.</p>
+              {essentials ? (
+                <>
+                  <p>A rigid schedule breaks the first time life gets in the way. Leave <Highlight description="Blank days or weeks (about 10-20% of your total time) that are there on purpose. When life throws you a curveball, these soak it up without wrecking everything." theme={theme}>Buffer Time</Highlight>. Keep 10-20% of your time blank on purpose. Do a <Highlight description="Write down everything that is definitely happening -- holidays, birthdays, matches, family events -- and block them out from the start so you are not kidding yourself about how much time you have." theme={theme}>Life Check</Highlight>. Block out holidays, birthdays, and matches from the start. Pick any tool you like. The tool does not matter. What matters is seeing your whole plan at a glance.</p>
+                </>
+              ) : (
+                <>
+                  <p>A perfect, rigid schedule will fall apart the first time you get sick or have a family event. A schedule that actually lasts is one that is built to bend without breaking. That means leaving <Highlight description="Blank days or weeks (about 10-20% of your total time) that are there on purpose. When life throws you a curveball, these soak it up without wrecking everything." theme={theme}>Buffer Time</Highlight> -- blank days that are there on purpose so that when something comes up, your whole plan does not collapse.</p>
+                  <p>Before you start filling in dates, do a quick <Highlight description="Write down everything that is definitely happening -- holidays, birthdays, matches, family events -- and block them out from the start so you are not kidding yourself about how much time you have." theme={theme}>Life Check</Highlight>: write down everything you know is coming up (holidays, birthdays, matches) and block those out straight away. Finally, pick your tool. It could be a <Highlight description="A simple chart that shows your tasks on a timeline so you can see what needs to happen and when." theme={theme}>Timeline Chart</Highlight> in a free app, a Notion page, or just a wall of sticky notes. The tool does not matter -- what matters is that you can see your whole plan at a glance. You are now ready to build your schedule.</p>
+                </>
+              )}
               <ImplementationChecklist />
             </ReadingSection>
           )}

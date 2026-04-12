@@ -11,6 +11,7 @@ import { type ModuleProgress } from '../types';
 import { slateTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = slateTheme;
 
@@ -418,6 +419,7 @@ const DeliberatePracticeWheel: React.FC = () => {
 
 // --- MODULE COMPONENT ---
 const MasteringTheCreativesModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'shift-from-talent', title: 'The Talent Myth', eyebrow: '01 // Mindset Reset', icon: Key },
     { id: 'art-protocol', title: 'Art: The Visual Journal', eyebrow: '02 // Art', icon: PenTool },
@@ -444,42 +446,87 @@ const MasteringTheCreativesModule: React.FC<{ onBack: () => void; progress: Modu
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Talent Myth." eyebrow="Step 1" icon={Key} theme={theme}>
-              <p>You've probably heard it a hundred times: "She's just naturally gifted at art" or "He was born musical." Here's the truth -- that's nonsense. Art, Music, and Film in the Leaving Cert are not about being born with some special gift. They're skills, and you can get good at them the same way you'd get good at anything else: by learning the rules and practising smart.</p>
-              <p>If you look at the marking schemes, the examiners aren't giving H1s for mysterious "genius." They reward students who show a clear process. That means <Highlight description="Practising with focus on the bits you find hard, not just repeating what you're already good at. It's how you actually improve." theme={theme}>deliberate practice</Highlight> -- pushing yourself on the stuff you're weakest at -- and <Highlight description="Creating something, getting feedback, improving it, and repeating. Think of every piece of work as a draft you can make better." theme={theme}>working in drafts</Highlight>, where you create, improve, and refine. This module is your step-by-step guide to doing exactly that.</p>
-              <PersonalStory name="Clodagh" role="6th Year, Ballyfermot">
-                <p>I genuinely thought I was terrible at Art. Like, I couldn't even draw a straight line. But when I stopped trying to make everything look perfect and started focusing on the process -- experimenting, messing up, trying again -- my teacher said my Visual Journal was one of the strongest in the class. I got a H2 and I still can't draw a straight line. Turns out that's not what they're looking for.</p>
-              </PersonalStory>
+              {essentials ? (
+                <>
+                  <p>Art, Music, and Film are skills, not talents. The marking scheme rewards process, not genius. Focus on <Highlight description="Practising with focus on the bits you find hard, not just repeating what you're already good at. It's how you actually improve." theme={theme}>deliberate practice</Highlight> and <Highlight description="Creating something, getting feedback, improving it, and repeating. Think of every piece of work as a draft you can make better." theme={theme}>working in drafts</Highlight>. Create, improve, refine, repeat.</p>
+                </>
+              ) : (
+                <>
+                  <p>You've probably heard it a hundred times: "She's just naturally gifted at art" or "He was born musical." Here's the truth -- that's nonsense. Art, Music, and Film in the Leaving Cert are not about being born with some special gift. They're skills, and you can get good at them the same way you'd get good at anything else: by learning the rules and practising smart.</p>
+                  <p>If you look at the marking schemes, the examiners aren't giving H1s for mysterious "genius." They reward students who show a clear process. That means <Highlight description="Practising with focus on the bits you find hard, not just repeating what you're already good at. It's how you actually improve." theme={theme}>deliberate practice</Highlight> -- pushing yourself on the stuff you're weakest at -- and <Highlight description="Creating something, getting feedback, improving it, and repeating. Think of every piece of work as a draft you can make better." theme={theme}>working in drafts</Highlight>, where you create, improve, and refine. This module is your step-by-step guide to doing exactly that.</p>
+                  <PersonalStory name="Clodagh" role="6th Year, Ballyfermot">
+                    <p>I genuinely thought I was terrible at Art. Like, I couldn't even draw a straight line. But when I stopped trying to make everything look perfect and started focusing on the process -- experimenting, messing up, trying again -- my teacher said my Visual Journal was one of the strongest in the class. I got a H2 and I still can't draw a straight line. Turns out that's not what they're looking for.</p>
+                  </PersonalStory>
+                </>
+              )}
               <DeliberatePracticeWheel />
             </ReadingSection>
           )}
            {activeSection === 1 && (
             <ReadingSection title="Art: The Visual Journal." eyebrow="Step 2" icon={PenTool} theme={theme}>
-              <p>Here's the big thing about the new Art course: your process matters just as much as your final piece. The <Highlight description="This used to be called your sketchbook. It's now worth 50% of your mark. It shows the examiner how you developed your ideas from start to finish." theme={theme}>Visual Journal</Highlight> isn't supposed to be a collection of perfect drawings. It's supposed to be messy -- full of experiments, ideas, dead ends, and breakthroughs. A high-scoring journal shows your thinking journey, not just pretty pictures.</p>
-              <p>Start your project with mind maps that use images and textures, not just words. For observational drawing, don't just try to "copy" what you see -- trick your brain into really looking. Try drawing from an upside-down photo (<Highlight description="When you draw from a photo turned upside down, your brain stops seeing 'a face' or 'a hand' and starts seeing actual shapes and lines. It massively improves your drawing." theme={theme}>Inversion</Highlight>) or sketching the empty space around an object instead of the object itself (<Highlight description="Instead of drawing the thing, you draw the gaps around it. It sounds weird but it really helps you get proportions right." theme={theme}>Negative Space</Highlight>). You don't need fancy supplies -- a pencil, a biro, even a phone camera for reference photos all work perfectly.</p>
-               <MicroCommitment theme={theme}><p>Take any object on your desk. For just two minutes, try to draw it without looking at the paper, keeping your eyes locked on the object. This is 'Blind Contour' drawing. It feels weird, but it's a powerful way to train your eyes to truly see.</p></MicroCommitment>
+              {essentials ? (
+                <>
+                  <p>Your <Highlight description="This used to be called your sketchbook. It's now worth 50% of your mark. It shows the examiner how you developed your ideas from start to finish." theme={theme}>Visual Journal</Highlight> is worth 50% of your mark. It should show your thinking journey, not perfect drawings. Include experiments, dead ends, and breakthroughs.</p>
+                  <p>Try <Highlight description="When you draw from a photo turned upside down, your brain stops seeing 'a face' or 'a hand' and starts seeing actual shapes and lines. It massively improves your drawing." theme={theme}>Inversion</Highlight> (drawing from upside-down photos) or <Highlight description="Instead of drawing the thing, you draw the gaps around it. It sounds weird but it really helps you get proportions right." theme={theme}>Negative Space</Highlight> sketching. Both train your eyes to really see.</p>
+                </>
+              ) : (
+                <>
+                  <p>Here's the big thing about the new Art course: your process matters just as much as your final piece. The <Highlight description="This used to be called your sketchbook. It's now worth 50% of your mark. It shows the examiner how you developed your ideas from start to finish." theme={theme}>Visual Journal</Highlight> isn't supposed to be a collection of perfect drawings. It's supposed to be messy -- full of experiments, ideas, dead ends, and breakthroughs. A high-scoring journal shows your thinking journey, not just pretty pictures.</p>
+                  <p>Start your project with mind maps that use images and textures, not just words. For observational drawing, don't just try to "copy" what you see -- trick your brain into really looking. Try drawing from an upside-down photo (<Highlight description="When you draw from a photo turned upside down, your brain stops seeing 'a face' or 'a hand' and starts seeing actual shapes and lines. It massively improves your drawing." theme={theme}>Inversion</Highlight>) or sketching the empty space around an object instead of the object itself (<Highlight description="Instead of drawing the thing, you draw the gaps around it. It sounds weird but it really helps you get proportions right." theme={theme}>Negative Space</Highlight>). You don't need fancy supplies -- a pencil, a biro, even a phone camera for reference photos all work perfectly.</p>
+                </>
+              )}
+              <MicroCommitment theme={theme}><p>Take any object on your desk. For just two minutes, try to draw it without looking at the paper, keeping your eyes locked on the object. This is 'Blind Contour' drawing. It feels weird, but it's a powerful way to train your eyes to truly see.</p></MicroCommitment>
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="Music: Writing a Melody." eyebrow="Step 3" icon={SlidersHorizontal} theme={theme}>
-              <p>The 16-bar melody question isn't about being the next Mozart -- it's more like a puzzle with clear rules. You can score full marks by following a formula. Before you write a single note, check the basics: What key is it in? What time signature? What instrument are you writing for, and what notes can it play?</p>
-              <p>The most reliable structure is A-A1-B-A2. <strong>A</strong> is the opening phrase (it's given to you). <strong>A1</strong> starts the same but ends differently, usually moving into a <Highlight description="This just means changing key -- like shifting the 'home base' of your melody. It's a required part of the composition question." theme={theme}>new key</Highlight>. <strong>B</strong> is where you mix things up -- go higher, change the rhythm, create contrast. <strong>A2</strong> brings it all home, landing back in the original key. Think of it like a story: setup, variation, surprise, resolution. It's a formula, not a guessing game.</p>
+              {essentials ? (
+                <>
+                  <p>The 16-bar melody is a puzzle with clear rules. Check key, time signature, and instrument range before writing anything.</p>
+                  <p>Use the A-A1-B-A2 structure. A is given. A1 varies the ending, moving to a <Highlight description="This just means changing key -- like shifting the 'home base' of your melody. It's a required part of the composition question." theme={theme}>new key</Highlight>. B creates contrast. A2 returns home. It's a formula, not a guessing game.</p>
+                </>
+              ) : (
+                <>
+                  <p>The 16-bar melody question isn't about being the next Mozart -- it's more like a puzzle with clear rules. You can score full marks by following a formula. Before you write a single note, check the basics: What key is it in? What time signature? What instrument are you writing for, and what notes can it play?</p>
+                  <p>The most reliable structure is A-A1-B-A2. <strong>A</strong> is the opening phrase (it's given to you). <strong>A1</strong> starts the same but ends differently, usually moving into a <Highlight description="This just means changing key -- like shifting the 'home base' of your melody. It's a required part of the composition question." theme={theme}>new key</Highlight>. <strong>B</strong> is where you mix things up -- go higher, change the rhythm, create contrast. <strong>A2</strong> brings it all home, landing back in the original key. Think of it like a story: setup, variation, surprise, resolution. It's a formula, not a guessing game.</p>
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 3 && (
             <ReadingSection title="Film: Reading the Screen." eyebrow="Step 4" icon={Film} theme={theme}>
-              <p>Film isn't just a story on a screen -- every shot is a deliberate choice by the director. To get a H1, you can't just talk about the plot. You need to explain <em>how</em> the director tells the story visually. Why did they use a <Highlight description="The camera looks up at a character, which makes them look powerful, intimidating, or important." theme={theme}>Low Angle Shot</Highlight> to make the villain look scary? Why is the lighting dark and full of shadows (<Highlight description="Dark, moody lighting with strong shadows. Think horror films or detective movies -- it creates tension and mystery." theme={theme}>Low-Key Lighting</Highlight>) in that particular scene?</p>
-              <p>In the Comparative Study, you need to connect these visual choices to themes like General Vision & Viewpoint or Cultural Context. For example, in <em>Blade Runner</em>, the constant rain and shadow patterns aren't random -- they're borrowed from the style of old 1940s detective films called <Highlight description="A style of film from the 1940s known for dark, shadowy visuals and cynical characters. Directors still borrow from it today." theme={theme}>Film Noir</Highlight>, and they create a mood of paranoia and confusion. Spotting these connections is what separates a solid answer from a great one.</p>
+              {essentials ? (
+                <>
+                  <p>Every shot is a deliberate choice. Explain how the director tells the story visually. Why use a <Highlight description="The camera looks up at a character, which makes them look powerful, intimidating, or important." theme={theme}>Low Angle Shot</Highlight>? Why use <Highlight description="Dark, moody lighting with strong shadows. Think horror films or detective movies -- it creates tension and mystery." theme={theme}>Low-Key Lighting</Highlight>?</p>
+                  <p>In the Comparative Study, connect visual choices to themes. Recognise styles like <Highlight description="A style of film from the 1940s known for dark, shadowy visuals and cynical characters. Directors still borrow from it today." theme={theme}>Film Noir</Highlight>. Spotting these connections is what earns top marks.</p>
+                </>
+              ) : (
+                <>
+                  <p>Film isn't just a story on a screen -- every shot is a deliberate choice by the director. To get a H1, you can't just talk about the plot. You need to explain <em>how</em> the director tells the story visually. Why did they use a <Highlight description="The camera looks up at a character, which makes them look powerful, intimidating, or important." theme={theme}>Low Angle Shot</Highlight> to make the villain look scary? Why is the lighting dark and full of shadows (<Highlight description="Dark, moody lighting with strong shadows. Think horror films or detective movies -- it creates tension and mystery." theme={theme}>Low-Key Lighting</Highlight>) in that particular scene?</p>
+                  <p>In the Comparative Study, you need to connect these visual choices to themes like General Vision & Viewpoint or Cultural Context. For example, in <em>Blade Runner</em>, the constant rain and shadow patterns aren't random -- they're borrowed from the style of old 1940s detective films called <Highlight description="A style of film from the 1940s known for dark, shadowy visuals and cynical characters. Directors still borrow from it today." theme={theme}>Film Noir</Highlight>, and they create a mood of paranoia and confusion. Spotting these connections is what separates a solid answer from a great one.</p>
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 4 && (
             <ReadingSection title="Handling Exam Nerves." eyebrow="Step 5" icon={Shield} theme={theme}>
-              <p>Nerves are the biggest enemy in creative subjects -- whether it's your Music practical, an Art deadline, or a Film exam. When you're anxious, your body goes into fight-or-flight mode: your hands shake, your breathing gets shallow, and your brain feels foggy. The good news? You can learn to manage this, and it gets easier with practice.</p>
-              <p>Try <Highlight description="Breathe in for 4 seconds, hold for 4, breathe out for 4, hold for 4. It sounds simple but it genuinely calms your body down when you're stressed." theme={theme}>Box Breathing</Highlight> to settle your nerves before a performance or exam. Instead of thinking "I have to get this right," try thinking "I'm showing them what I've learned." And the best trick of all? <Highlight description="Practise under exam-like conditions -- play your piece for your family, do a timed drawing, present to a friend. The more you rehearse the pressure, the less scary the real thing feels." theme={theme}>Mock run-throughs</Highlight>. Play your piece for your family. Do a timed sketch. Present your Film essay to a friend. The more you rehearse the pressure, the less your body panics on the day.</p>
+              {essentials ? (
+                <p>Use <Highlight description="Breathe in for 4 seconds, hold for 4, breathe out for 4, hold for 4. It sounds simple but it genuinely calms your body down when you're stressed." theme={theme}>Box Breathing</Highlight> before exams. Think "I'm showing what I've learned." Do <Highlight description="Practise under exam-like conditions -- play your piece for your family, do a timed drawing, present to a friend. The more you rehearse the pressure, the less scary the real thing feels." theme={theme}>mock run-throughs</Highlight> at home. The more you practise the pressure, the less scary it becomes.</p>
+              ) : (
+                <>
+                  <p>Nerves are the biggest enemy in creative subjects -- whether it's your Music practical, an Art deadline, or a Film exam. When you're anxious, your body goes into fight-or-flight mode: your hands shake, your breathing gets shallow, and your brain feels foggy. The good news? You can learn to manage this, and it gets easier with practice.</p>
+                  <p>Try <Highlight description="Breathe in for 4 seconds, hold for 4, breathe out for 4, hold for 4. It sounds simple but it genuinely calms your body down when you're stressed." theme={theme}>Box Breathing</Highlight> to settle your nerves before a performance or exam. Instead of thinking "I have to get this right," try thinking "I'm showing them what I've learned." And the best trick of all? <Highlight description="Practise under exam-like conditions -- play your piece for your family, do a timed drawing, present to a friend. The more you rehearse the pressure, the less scary the real thing feels." theme={theme}>Mock run-throughs</Highlight>. Play your piece for your family. Do a timed sketch. Present your Film essay to a friend. The more you rehearse the pressure, the less your body panics on the day.</p>
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 5 && (
             <ReadingSection title="Your Creative Game Plan." eyebrow="Step 6" icon={Wrench} theme={theme}>
-              <p>Here's the bottom line: "talent" is a myth. Doing well in Art, Music, and Film comes down to learning the process, practising with purpose, and not being afraid to make mistakes along the way. You now know how the Visual Journal works, how to structure a melody, how to read a film like an examiner, and how to handle your nerves. That's a serious toolkit.</p>
+              {essentials ? (
+                <p>Talent is a myth. You now know the Visual Journal, melody structure, film analysis, and exam nerves management. Pick one thing and do it this week.</p>
+              ) : (
+                <p>Here's the bottom line: "talent" is a myth. Doing well in Art, Music, and Film comes down to learning the process, practising with purpose, and not being afraid to make mistakes along the way. You now know how the Visual Journal works, how to structure a melody, how to read a film like an examiner, and how to handle your nerves. That's a serious toolkit.</p>
+              )}
               <MicroCommitment theme={theme}>
                 <p>Pick ONE thing from this module. Just one. Maybe it's a Blind Contour drawing, or analysing the lighting in one scene of a film you like, or trying Box Breathing for one minute before bed. Commit to doing it this week. That's it -- one small step, and you're already on your way.</p>
               </MicroCommitment>

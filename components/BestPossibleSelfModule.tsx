@@ -13,6 +13,7 @@ import { blueTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useModuleResponses } from '../hooks/useModuleResponses';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useNorthStar } from '../hooks/useNorthStar';
 import NorthStarCallout from './NorthStarCallout';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
@@ -76,6 +77,7 @@ const WOOPPlanner = ({ responses, saveResponse }: { responses: Record<string, an
 
 // --- MODULE COMPONENT ---
 const BestPossibleSelfModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const { responses, saveResponse, isLoaded: _isLoaded } = useModuleResponses('best-possible-self');
   const { northStar } = useNorthStar();
 
@@ -104,30 +106,53 @@ const BestPossibleSelfModule: React.FC<{ onBack: () => void; progress: ModulePro
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Daydream Problem." eyebrow="Step 1" icon={BatteryWarning} theme={theme}>
-              <p>We're told to "think positive" and visualise our dreams. But here's the trap: pure <Highlight description="When you daydream about success without thinking about the work, your brain actually relaxes — as if you've already done it. It feels great in the moment, but it drains the energy you need to actually get started." theme={theme}>positive fantasising</Highlight> can backfire. When you spend time daydreaming about acing the Leaving Cert or getting that college offer without thinking about the work involved, your brain treats it like you've already made it. It feels good — but it quietly drains the energy you need to actually get started.</p>
-              <p>This is why some of the most ambitious, optimistic students still struggle to follow through. The dreaming itself is eating their motivation. The fix isn't to stop dreaming — it's to dream smarter.</p>
+              {essentials ? (
+                <>
+                  <p>Here's the trap: daydreaming about success without planning the work actually drains your motivation. Your brain treats the fantasy like it already happened. This is <Highlight description="When you daydream about success without thinking about the work, your brain actually relaxes — as if you've already done it. It feels great in the moment, but it drains the energy you need to actually get started." theme={theme}>positive fantasising</Highlight>.</p>
+                  <p>The fix is not to stop dreaming. The fix is to dream smarter.</p>
+                </>
+              ) : (
+                <>
+                  <p>We're told to "think positive" and visualise our dreams. But here's the trap: pure <Highlight description="When you daydream about success without thinking about the work, your brain actually relaxes — as if you've already done it. It feels great in the moment, but it drains the energy you need to actually get started." theme={theme}>positive fantasising</Highlight> can backfire. When you spend time daydreaming about acing the Leaving Cert or getting that college offer without thinking about the work involved, your brain treats it like you've already made it. It feels good — but it quietly drains the energy you need to actually get started.</p>
+                  <p>This is why some of the most ambitious, optimistic students still struggle to follow through. The dreaming itself is eating their motivation. The fix isn't to stop dreaming — it's to dream smarter.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 1 && (
             <ReadingSection title="The 'Best Possible Self' Exercise." eyebrow="Step 2" icon={MapPin} theme={theme}>
               {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'best-possible-self-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
-              <p>The fix is to dream with purpose. The <Highlight description="You write a vivid, detailed description of your future life — the version where things have gone well because you put in the work. Not a vague wish, but a clear picture your brain can actually aim for." theme={theme}>'Best Possible Self'</Highlight> exercise works like this: instead of a vague "I want to do well," you write a detailed picture of your future life — the version where you've put in the work and things have gone well. The more specific and vivid you make it, the more powerful it is.</p>
-              <p>This isn't about being unrealistic. It's about giving your brain a clear target. A vague dream of "doing well" gives your brain nothing to work with. A detailed picture of who you want to become in 5 years gives it a destination to drive toward.</p>
-              <PersonalStory name="Alex" role="Founder, NextStepUni">
-                <p>I used to daydream constantly about a better life but never did anything about it. It was only when someone asked me to write it down — properly, in detail — that something clicked. Seeing the gap between where I was and where I wanted to be wasn't depressing. It was the first time I felt genuinely motivated, because I could finally see what I was working toward.</p>
-              </PersonalStory>
+              {essentials ? (
+                <>
+                  <p>Write a detailed picture of your life in 5 years. This is the <Highlight description="You write a vivid, detailed description of your future life — the version where things have gone well because you put in the work. Not a vague wish, but a clear picture your brain can actually aim for." theme={theme}>'Best Possible Self'</Highlight> exercise. Be specific: where do you live, what do you do, how do you feel? A vivid target gives your brain something real to aim for.</p>
+                </>
+              ) : (
+                <>
+                  <p>The fix is to dream with purpose. The <Highlight description="You write a vivid, detailed description of your future life — the version where things have gone well because you put in the work. Not a vague wish, but a clear picture your brain can actually aim for." theme={theme}>'Best Possible Self'</Highlight> exercise works like this: instead of a vague "I want to do well," you write a detailed picture of your future life — the version where you've put in the work and things have gone well. The more specific and vivid you make it, the more powerful it is.</p>
+                  <p>This isn't about being unrealistic. It's about giving your brain a clear target. A vague dream of "doing well" gives your brain nothing to work with. A detailed picture of who you want to become in 5 years gives it a destination to drive toward.</p>
+                  <PersonalStory name="Alex" role="Founder, NextStepUni">
+                    <p>I used to daydream constantly about a better life but never did anything about it. It was only when someone asked me to write it down — properly, in detail — that something clicked. Seeing the gap between where I was and where I wanted to be wasn't depressing. It was the first time I felt genuinely motivated, because I could finally see what I was working toward.</p>
+                  </PersonalStory>
+                </>
+              )}
               <MicroCommitment theme={theme}><p>Open the notes app on your phone. Write one paragraph describing what your life looks like in 5 years if everything goes as well as it possibly could. Be specific — where do you live? What do you do? How do you feel?</p></MicroCommitment>
             </ReadingSection>
           )}
            {activeSection === 2 && (
             <ReadingSection title="The Reality Check." eyebrow="Step 3" icon={Filter} theme={theme}>
-              <p>A vivid dream on its own isn't enough. The crucial next step is to ground it in reality. This is <Highlight description="Right after imagining your best future, you immediately think about the real obstacles standing in your way — especially the ones inside you (habits, fears, procrastination). That contrast between dream and reality is what creates the energy to actually act." theme={theme}>Mental Contrasting</Highlight>.</p>
-              <p>After picturing your Best Possible Self, you ask: "What's actually standing between me and that?" — and you're honest about it. Not "the system is against me" (even if it sometimes is), but the obstacles inside you: the procrastination, the self-doubt, the habit of giving up when things get hard. That contrast — dream vs. reality — is what creates genuine motivation to act.</p>
+              {essentials ? (
+                <p>After your dream, do a reality check. Ask: "What's standing in my way?" Be honest about internal obstacles. This is <Highlight description="Right after imagining your best future, you immediately think about the real obstacles standing in your way — especially the ones inside you (habits, fears, procrastination). That contrast between dream and reality is what creates the energy to actually act." theme={theme}>Mental Contrasting</Highlight>. The contrast between dream and reality creates real motivation.</p>
+              ) : (
+                <>
+                  <p>A vivid dream on its own isn't enough. The crucial next step is to ground it in reality. This is <Highlight description="Right after imagining your best future, you immediately think about the real obstacles standing in your way — especially the ones inside you (habits, fears, procrastination). That contrast between dream and reality is what creates the energy to actually act." theme={theme}>Mental Contrasting</Highlight>.</p>
+                  <p>After picturing your Best Possible Self, you ask: "What's actually standing between me and that?" — and you're honest about it. Not "the system is against me" (even if it sometimes is), but the obstacles inside you: the procrastination, the self-doubt, the habit of giving up when things get hard. That contrast — dream vs. reality — is what creates genuine motivation to act.</p>
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 3 && (
             <ReadingSection title="The WOOP Method." eyebrow="Step 4" icon={Zap} theme={theme}>
-                <p>Putting the dream and the reality check together gives you the <Highlight description="A four-step system: Wish (what you want), Outcome (why it matters), Obstacle (what's in the way), Plan (what you'll do about it). It turns vague wishes into concrete action." theme={theme}>WOOP Method</Highlight> — a simple system for turning wishes into real plans:</p>
+                <p>{essentials ? 'Combine dream + reality check into the' : 'Putting the dream and the reality check together gives you the'} <Highlight description="A four-step system: Wish (what you want), Outcome (why it matters), Obstacle (what's in the way), Plan (what you'll do about it). It turns vague wishes into concrete action." theme={theme}>WOOP Method</Highlight>{essentials ? ': Wish, Outcome, Obstacle, Plan.' : ' — a simple system for turning wishes into real plans:'}</p>
                 <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                   <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
                     <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>W</div>
@@ -163,8 +188,14 @@ const BestPossibleSelfModule: React.FC<{ onBack: () => void; progress: ModulePro
           )}
            {activeSection === 4 && (
             <ReadingSection title="Build Your First WOOP." eyebrow="Step 5" icon={ClipboardCheck} theme={theme}>
-              <p>WOOP is a 5-minute exercise you can use before any study session, exam, or important week. The more you use it, the more automatic it becomes — your brain starts linking your daily habits to your long-term goals without you even thinking about it.</p>
-              <p>Use the blueprint below to build your first WOOP. Pick something real — maybe a subject you're struggling with, or a goal for this week.</p>
+              {essentials ? (
+                <p>Use the blueprint below to build your first WOOP. Pick something real. Do this every Sunday evening for 5 minutes.</p>
+              ) : (
+                <>
+                  <p>WOOP is a 5-minute exercise you can use before any study session, exam, or important week. The more you use it, the more automatic it becomes — your brain starts linking your daily habits to your long-term goals without you even thinking about it.</p>
+                  <p>Use the blueprint below to build your first WOOP. Pick something real — maybe a subject you're struggling with, or a goal for this week.</p>
+                </>
+              )}
               <WOOPPlanner responses={responses} saveResponse={saveResponse} />
               <MicroCommitment theme={theme}><p>Set a reminder on your phone for Sunday evening called "Weekly WOOP." Spend 5 minutes running the exercise for the week ahead. Try it for 3 weeks and see how it changes your focus.</p></MicroCommitment>
             </ReadingSection>

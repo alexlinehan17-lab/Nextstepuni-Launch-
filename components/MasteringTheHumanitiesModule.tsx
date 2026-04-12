@@ -13,6 +13,7 @@ import { type ModuleProgress } from '../types';
 import { pinkTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = pinkTheme;
 
@@ -230,6 +231,7 @@ const HistoryGrader = () => {
 
 // --- MODULE COMPONENT ---
 const MasteringTheHumanitiesModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'unwritten-rules', title: 'The Unwritten Rules', eyebrow: '01 // What They Don\'t Tell You', icon: Key },
     { id: 'history-engine', title: 'How History Is Really Marked', eyebrow: '02 // CM + OE', icon: Landmark },
@@ -255,23 +257,47 @@ const MasteringTheHumanitiesModule: React.FC<{ onBack: () => void; progress: Mod
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Unwritten Rules." eyebrow="Step 1" icon={Key} theme={theme}>
-              <p>In the Leaving Cert Humanities, the gap between a H3 and a H1 is rarely about how much you know. It comes down to <Highlight description="Knowing exactly what the examiner wants and giving it to them in the right format. Each subject rewards different things." theme={theme}>knowing what to do</Highlight> with what you know. Each subject has its own unwritten rules and rewards a different type of answer. Once you figure out what each subject is actually looking for, you can start giving the examiner exactly what they want.</p>
-              <PersonalStory name="Sinéad" role="6th Year, Wexford">
-                <p>I was getting H3s in History even though I knew my stuff inside out. Turns out I was writing everything I knew about a topic instead of actually answering the question. Once I understood how the marking scheme worked, I jumped to a H1 in the mocks without learning a single new fact.</p>
-              </PersonalStory>
+              {essentials ? (
+                <p>The gap between H3 and H1 isn't about knowing more. It's about <Highlight description="Knowing exactly what the examiner wants and giving it to them in the right format. Each subject rewards different things." theme={theme}>knowing what to do</Highlight> with what you know. Each subject rewards a different type of answer. Learn the rules, give the examiner what they want.</p>
+              ) : (
+                <>
+                  <p>In the Leaving Cert Humanities, the gap between a H3 and a H1 is rarely about how much you know. It comes down to <Highlight description="Knowing exactly what the examiner wants and giving it to them in the right format. Each subject rewards different things." theme={theme}>knowing what to do</Highlight> with what you know. Each subject has its own unwritten rules and rewards a different type of answer. Once you figure out what each subject is actually looking for, you can start giving the examiner exactly what they want.</p>
+                  <PersonalStory name="Sinéad" role="6th Year, Wexford">
+                    <p>I was getting H3s in History even though I knew my stuff inside out. Turns out I was writing everything I knew about a topic instead of actually answering the question. Once I understood how the marking scheme worked, I jumped to a H1 in the mocks without learning a single new fact.</p>
+                  </PersonalStory>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 1 && (
             <ReadingSection title="How History Is Really Marked." eyebrow="Step 2" icon={Landmark} theme={theme}>
-              <p>Here is the thing most students do not realise: your History essay is not marked as one piece. It actually gets two separate scores. The <Highlight description="This is your facts score (out of 60). The more accurate historical detail you pack in, the higher it goes. Aim for 8-10 solid paragraphs." theme={theme}>Cumulative Mark (CM)</Highlight> is basically how many facts you include. The <Highlight description="This is your argument score (out of 40). It measures how well you actually answer the question and how good your reasoning is." theme={theme}>Overall Evaluation (OE)</Highlight> is about how well you argue your point.</p>
-              <p>The classic H3 trap? You learn an essay off by heart, dump all your facts onto the page, and score well on CM -- but you barely answer the actual question, so your OE tanks. Your argument is what drives the grade; facts are just the fuel.</p>
+              {essentials ? (
+                <>
+                  <p>Your History essay gets two scores. <Highlight description="This is your facts score (out of 60). The more accurate historical detail you pack in, the higher it goes. Aim for 8-10 solid paragraphs." theme={theme}>CM (Cumulative Mark)</Highlight> counts your facts. <Highlight description="This is your argument score (out of 40). It measures how well you actually answer the question and how good your reasoning is." theme={theme}>OE (Overall Evaluation)</Highlight> scores your argument.</p>
+                  <p>The H3 trap: dumping facts without answering the question. Your argument drives the grade. Facts are just fuel.</p>
+                </>
+              ) : (
+                <>
+                  <p>Here is the thing most students do not realise: your History essay is not marked as one piece. It actually gets two separate scores. The <Highlight description="This is your facts score (out of 60). The more accurate historical detail you pack in, the higher it goes. Aim for 8-10 solid paragraphs." theme={theme}>Cumulative Mark (CM)</Highlight> is basically how many facts you include. The <Highlight description="This is your argument score (out of 40). It measures how well you actually answer the question and how good your reasoning is." theme={theme}>Overall Evaluation (OE)</Highlight> is about how well you argue your point.</p>
+                  <p>The classic H3 trap? You learn an essay off by heart, dump all your facts onto the page, and score well on CM -- but you barely answer the actual question, so your OE tanks. Your argument is what drives the grade; facts are just the fuel.</p>
+                </>
+              )}
               <HistoryGrader/>
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="How Geography Is Really Marked." eyebrow="Step 3" icon={Globe} theme={theme}>
-              <p>Geography works completely differently to History. What matters here is the <Highlight description="An SRP is one developed fact that earns you 2 marks. A 30-mark question needs about 15 of them. Think of each one as a mini building block." theme={theme}>Significant Relevant Point (SRP)</Highlight>. A Geography essay is basically a collection of these small building blocks of information. The more solid SRPs you include, the higher your mark.</p>
-              <p>A weak answer just throws out a keyword; a strong answer develops it. For example, "Limestone dissolves" gets you nothing, but "Carbonation occurs when rainwater absorbs CO2, forming a weak carbonic acid" is worth 2 marks. The goal is to get really good at building these SRPs from any keyword.</p>
+              {essentials ? (
+                <>
+                  <p>Geography marks come from <Highlight description="An SRP is one developed fact that earns you 2 marks. A 30-mark question needs about 15 of them. Think of each one as a mini building block." theme={theme}>SRPs (Significant Relevant Points)</Highlight>. Each developed fact is worth 2 marks. A 30-mark question needs about 15 of them.</p>
+                  <p>"Limestone dissolves" gets nothing. "Carbonation occurs when rainwater absorbs CO2, forming carbonic acid" scores 2 marks. Develop every keyword.</p>
+                </>
+              ) : (
+                <>
+                  <p>Geography works completely differently to History. What matters here is the <Highlight description="An SRP is one developed fact that earns you 2 marks. A 30-mark question needs about 15 of them. Think of each one as a mini building block." theme={theme}>Significant Relevant Point (SRP)</Highlight>. A Geography essay is basically a collection of these small building blocks of information. The more solid SRPs you include, the higher your mark.</p>
+                  <p>A weak answer just throws out a keyword; a strong answer develops it. For example, "Limestone dissolves" gets you nothing, but "Carbonation occurs when rainwater absorbs CO2, forming a weak carbonic acid" is worth 2 marks. The goal is to get really good at building these SRPs from any keyword.</p>
+                </>
+              )}
               <SRPBuilder />
             </ReadingSection>
           )}

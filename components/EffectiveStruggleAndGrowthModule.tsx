@@ -13,6 +13,7 @@ import { type ModuleProgress } from '../types';
 import { tealTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = tealTheme;
 
@@ -583,6 +584,7 @@ const ConfidenceRetentionParadox = () => {
 
 // --- MODULE COMPONENT ---
 const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'fallacy-of-ease', title: 'The Fallacy of Ease', eyebrow: '01 // The Illusion', icon: Thermometer },
     { id: 'cognitive-load', title: 'Your Brain\'s Bottleneck', eyebrow: '02 // The Governor', icon: Brain },
@@ -609,25 +611,57 @@ const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress:
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Fallacy of Ease." eyebrow="Step 1" icon={Thermometer} theme={theme}>
-              <p>Our intuition tells us that learning should feel easy. We think that if a teacher explains something perfectly and we understand it without any friction, that's a sign of great learning. This is the <Highlight description="Basically, your brain tricks you into thinking that if something feels easy to learn, you must be learning it well. But it's the opposite — the easy stuff slides right out of your memory." theme={theme}>Intuitive Fallacy of Ease</Highlight>, and it's the single biggest trap students fall into.</p>
+              {essentials ? (
+                <>
+                  <p>Your brain tricks you. If learning feels easy, you think you are learning well. The opposite is true. Easy learning gets forgotten fast. Hard, effortful learning sticks.</p>
+                  <p>Students who re-read predicted 90% recall but scored 40%. Self-testers predicted 40% but scored 61%. The method that feels worse works better.</p>
+                </>
+              ) : (
+                <>
+                  <p>Our intuition tells us that learning should feel easy. We think that if a teacher explains something perfectly and we understand it without any friction, that's a sign of great learning. This is the <Highlight description="Basically, your brain tricks you into thinking that if something feels easy to learn, you must be learning it well. But it's the opposite — the easy stuff slides right out of your memory." theme={theme}>Intuitive Fallacy of Ease</Highlight>, and it's the single biggest trap students fall into.</p>
+                </>
+              )}
               <ConfidenceRetentionParadox />
-              <p>Here's the thing most people get wrong: your feeling of how well you're learning is often the exact opposite of what's actually happening in your brain. Easy learning feels good but gets forgotten fast. Hard, effortful learning feels rough but it sticks. It's the difference between taking an escalator and taking the stairs. Only one of them makes you stronger.</p>
+              {!essentials && (
+                <>
+                  <p>Here's the thing most people get wrong: your feeling of how well you're learning is often the exact opposite of what's actually happening in your brain. Easy learning feels good but gets forgotten fast. Hard, effortful learning feels rough but it sticks. It's the difference between taking an escalator and taking the stairs. Only one of them makes you stronger.</p>
+                </>
+              )}
               <StairsEscalator />
-              <p>This isn't just a vibe — it's been tested. In one experiment, students who just re-read their notes predicted they'd remember 90% of it. Students who tested themselves predicted only 40%. But when they were actually tested a week later, the re-readers scored just 40%, while the self-testers scored 61%. The strategy that felt worse was way more effective. Toggle the chart below to see the gap between confidence and reality.</p>
+              {!essentials && (
+                <>
+                  <p>This isn't just a vibe — it's been tested. In one experiment, students who just re-read their notes predicted they'd remember 90% of it. Students who tested themselves predicted only 40%. But when they were actually tested a week later, the re-readers scored just 40%, while the self-testers scored 61%. The strategy that felt worse was way more effective. Toggle the chart below to see the gap between confidence and reality.</p>
+                </>
+              )}
               <IllusionOfCompetenceChart />
             </ReadingSection>
           )}
            {activeSection === 1 && (
             <ReadingSection title="Your Brain's Bottleneck." eyebrow="Step 2" icon={Brain} theme={theme}>
-              <p>To understand why difficulty is necessary, you need to know about a bottleneck in your brain called <Highlight description="Think of this as your brain's tiny desk. You can only hold about 3-5 things on it at once. If you pile on too much, stuff falls off and nothing gets learned." theme={theme}>Working Memory</Highlight>. Everything you learn has to pass through it, and if you overload it, learning just stops.</p>
-              <p>There are three types of "load": <Highlight description="This is the useless stuff clogging up your brain — your phone buzzing, a noisy room, confusing instructions. It's not helping you learn, it's just taking up space. Get rid of as much of it as you can." theme={theme}>Extraneous Load</Highlight> (the bad stuff), <Highlight description="This is just how hard the topic actually is. Probability is harder than basic addition — you can't change that, you just have to work with it." theme={theme}>Intrinsic Load</Highlight> (the topic itself), and <Highlight description="This is the good kind of effort — the mental work that actually builds understanding. Things like testing yourself, explaining ideas out loud, or working through problems. You want as much of this as possible." theme={theme}>Germane Load</Highlight> (the good stuff). The art of learning is to clear out all the 'bad' difficulty so you have enough mental space for the 'good' difficulty that actually builds memory.</p>
+              {essentials ? (
+                <>
+                  <p>Your working memory is tiny. It holds 3-5 things at once. Three types of load compete for space: bad load (distractions), fixed load (topic difficulty), and good load (the effort that builds memory).</p>
+                  <p>Cut the bad load. Maximise the good load. That is how you learn efficiently. Use the simulator below to see it in action.</p>
+                </>
+              ) : (
+                <>
+                  <p>To understand why difficulty is necessary, you need to know about a bottleneck in your brain called <Highlight description="Think of this as your brain's tiny desk. You can only hold about 3-5 things on it at once. If you pile on too much, stuff falls off and nothing gets learned." theme={theme}>Working Memory</Highlight>. Everything you learn has to pass through it, and if you overload it, learning just stops.</p>
+                  <p>There are three types of "load": <Highlight description="This is the useless stuff clogging up your brain — your phone buzzing, a noisy room, confusing instructions. It's not helping you learn, it's just taking up space. Get rid of as much of it as you can." theme={theme}>Extraneous Load</Highlight> (the bad stuff), <Highlight description="This is just how hard the topic actually is. Probability is harder than basic addition — you can't change that, you just have to work with it." theme={theme}>Intrinsic Load</Highlight> (the topic itself), and <Highlight description="This is the good kind of effort — the mental work that actually builds understanding. Things like testing yourself, explaining ideas out loud, or working through problems. You want as much of this as possible." theme={theme}>Germane Load</Highlight> (the good stuff). The art of learning is to clear out all the 'bad' difficulty so you have enough mental space for the 'good' difficulty that actually builds memory.</p>
+                </>
+              )}
               <CognitiveLoadBalancer />
             </ReadingSection>
           )}
            {activeSection === 2 && (
             <ReadingSection title="The Sweet Spot." eyebrow="Step 3" icon={Scaling} theme={theme}>
-              <p>The perfect level of difficulty is not too hard and not too easy. In psychology, this is called the <Highlight description="Your sweet spot. It's that zone where something is just hard enough that you have to think, but not so hard that you're completely lost. With a bit of effort or a hint, you can get there. That's where the real learning happens." theme={theme}>Zone of Proximal Development (ZPD)</Highlight>. It's the Goldilocks zone of learning.</p>
-              <p>Imagine three zones. The <strong>Comfort Zone</strong> is where you do things you've already mastered. You can do them fine, but you're learning nothing new. The <strong>Frustration Zone</strong> is where the task is so far beyond you that you can't even get started — your brain just freezes and you want to give up. The <strong>ZPD</strong> is the sweet spot in between, where you're stretched but not overwhelmed. This is the only place where real growth happens.</p>
+              {essentials ? (
+                <p>You learn best when the task is hard enough to stretch you but not so hard you freeze. Too easy means zero growth. Too hard means your brain shuts down. Find the sweet spot in between.</p>
+              ) : (
+                <>
+                  <p>The perfect level of difficulty is not too hard and not too easy. In psychology, this is called the <Highlight description="Your sweet spot. It's that zone where something is just hard enough that you have to think, but not so hard that you're completely lost. With a bit of effort or a hint, you can get there. That's where the real learning happens." theme={theme}>Zone of Proximal Development (ZPD)</Highlight>. It's the Goldilocks zone of learning.</p>
+                  <p>Imagine three zones. The <strong>Comfort Zone</strong> is where you do things you've already mastered. You can do them fine, but you're learning nothing new. The <strong>Frustration Zone</strong> is where the task is so far beyond you that you can't even get started — your brain just freezes and you want to give up. The <strong>ZPD</strong> is the sweet spot in between, where you're stretched but not overwhelmed. This is the only place where real growth happens.</p>
+                </>
+              )}
               <MicroCommitment theme={theme}>
                 <p>Think about your hardest subject. What's one topic that feels just out of reach? Can you find a worked example or ask a friend for help to bring it into your ZPD?</p>
               </MicroCommitment>
@@ -635,23 +669,45 @@ const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress:
           )}
           {activeSection === 3 && (
             <ReadingSection title="The Engine of Memory." eyebrow="Step 4" icon={Puzzle} theme={theme}>
-              <p>So why does the "sweet spot" feel so hard? Because of how memory actually works. It turns out memory has two strengths: <Highlight description="How easily something comes to mind right now. It's high right after you've just read your notes, but it fades fast. This is the one that tricks you into feeling confident." theme={theme}>Retrieval Strength</Highlight> (how easy it is to access now) and <Highlight description="How deeply something is actually locked into your brain for the long haul. This only grows when you struggle to remember something — not when you passively read it again. This is what actual learning looks like." theme={theme}>Storage Strength</Highlight> (how well you've actually learned it).</p>
-              <p>Here's the paradox: your brain only increases Storage Strength when Retrieval Strength is <em>low</em>. In other words, you have to forget something a little bit before your brain will put in the effort to store it properly for the long term. This is why re-reading your notes feels easy (high retrieval strength) but does nothing for long-term memory. You need the "desirable difficulty" of struggling to remember.</p>
-              <p>This was proven clearly in <Highlight description="A famous experiment where one group re-read their notes four times, and the other group read once then tested themselves three times. A week later, the self-testers remembered way more — even though the re-readers had felt more confident." theme={theme}>a well-known experiment</Highlight>. Two groups of students studied the same text. One group re-read it four times. The other group read it once and then tested themselves on it three times. After five minutes, the re-readers did slightly better — which makes sense, it was still fresh. But after one week, the results completely flipped: the re-readers had forgotten more than half of the material, while the self-testing group held onto much more. This is the <Highlight description="Testing yourself isn't just a way to check what you know — it's one of the best ways to actually learn. Every time you try to pull something out of your memory, you make that memory stronger. So quizzing yourself beats re-reading every time." theme={theme}>Testing Effect</Highlight> in action.</p>
-              <p>Here's the kicker: the re-readers were also more <em>confident</em>. They predicted higher scores. They genuinely felt like they knew the material better. But their confidence was completely wrong. The students who struggled through self-testing — who felt less confident, who made mistakes, who found it uncomfortable — were the ones who actually learned. That's the engine of memory: the struggle to pull something out of your brain is the signal that tells it "this matters, lock it in."</p>
+              {essentials ? (
+                <>
+                  <p>Your brain only locks things into long-term memory when they are hard to recall. You need to partially forget before your brain bothers storing it properly. That is why re-reading feels easy but does not work.</p>
+                  <p>Testing yourself feels harder and less confident. But it produces far better results. The struggle to remember is the signal that tells your brain "this matters."</p>
+                </>
+              ) : (
+                <>
+                  <p>So why does the "sweet spot" feel so hard? Because of how memory actually works. It turns out memory has two strengths: <Highlight description="How easily something comes to mind right now. It's high right after you've just read your notes, but it fades fast. This is the one that tricks you into feeling confident." theme={theme}>Retrieval Strength</Highlight> (how easy it is to access now) and <Highlight description="How deeply something is actually locked into your brain for the long haul. This only grows when you struggle to remember something — not when you passively read it again. This is what actual learning looks like." theme={theme}>Storage Strength</Highlight> (how well you've actually learned it).</p>
+                  <p>Here's the paradox: your brain only increases Storage Strength when Retrieval Strength is <em>low</em>. In other words, you have to forget something a little bit before your brain will put in the effort to store it properly for the long term. This is why re-reading your notes feels easy (high retrieval strength) but does nothing for long-term memory. You need the "desirable difficulty" of struggling to remember.</p>
+                  <p>This was proven clearly in <Highlight description="A famous experiment where one group re-read their notes four times, and the other group read once then tested themselves three times. A week later, the self-testers remembered way more — even though the re-readers had felt more confident." theme={theme}>a well-known experiment</Highlight>. Two groups of students studied the same text. One group re-read it four times. The other group read it once and then tested themselves on it three times. After five minutes, the re-readers did slightly better — which makes sense, it was still fresh. But after one week, the results completely flipped: the re-readers had forgotten more than half of the material, while the self-testing group held onto much more. This is the <Highlight description="Testing yourself isn't just a way to check what you know — it's one of the best ways to actually learn. Every time you try to pull something out of your memory, you make that memory stronger. So quizzing yourself beats re-reading every time." theme={theme}>Testing Effect</Highlight> in action.</p>
+                  <p>Here's the kicker: the re-readers were also more <em>confident</em>. They predicted higher scores. They genuinely felt like they knew the material better. But their confidence was completely wrong. The students who struggled through self-testing — who felt less confident, who made mistakes, who found it uncomfortable — were the ones who actually learned. That's the engine of memory: the struggle to pull something out of your brain is the signal that tells it "this matters, lock it in."</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 4 && (
             <ReadingSection title="The Unified Model." eyebrow="Step 5" icon={SlidersHorizontal} theme={theme}>
-                <p>Now let's put everything together into one simple formula for studying that actually works.</p>
+                {essentials ? (
+                  <p>The formula: Right difficulty zone + Low distractions + Real effort = Effective learning. Diagnose your study setup with the tool below.</p>
+                ) : (
+                  <p>Now let's put everything together into one simple formula for studying that actually works.</p>
+                )}
                 <ScenarioDiagnosis />
             </ReadingSection>
           )}
            {activeSection === 5 && (
             <ReadingSection title="Recalibrate Your Dashboard." eyebrow="Step 6" icon={BarChartHorizontal} theme={theme}>
-              <p>Your brain is lazy by design. It prefers the escalator to the stairs. This means your gut feeling about how well you're learning is basically broken. You have to learn to override it.</p>
-              <p>From now on, when learning feels slow, frustrating, and difficult, that's not a sign you should stop. It's a sign that you're in the sweet spot. It's the feeling of your brain actually rewiring itself. You're not "confused" — you're building real understanding. You're not "slow" — you're building long-term memory. If it feels like a struggle, it's working.</p>
-              <p>Here's a bonus: regular low-stakes self-testing doesn't just improve your memory — it also crushes exam anxiety. Think about it: anxiety usually comes from uncertainty. You *think* you know the material, but you've never actually tested that belief until the Leaving Cert. Quizzing yourself regularly is a form of <Highlight description="Getting honest with yourself about what you actually know vs. what you just think you know. When you quiz yourself regularly, you stop guessing and start knowing exactly where your gaps are — so there are no nasty surprises on exam day." theme={theme}>Metacognitive Calibration</Highlight> — it replaces false confidence with honest self-knowledge. When you test yourself regularly, you walk into the exam hall knowing exactly what you know and what you don't. No surprises, no panic. You've already faced the hard stuff at home.</p>
+              {essentials ? (
+                <>
+                  <p>If studying feels hard and frustrating, that means it is working. Your brain is rewiring. Do not stop. Easy study is wasted study.</p>
+                  <p>Regular self-testing also kills exam anxiety. You walk in knowing exactly what you know and where your gaps are. No surprises.</p>
+                </>
+              ) : (
+                <>
+                  <p>Your brain is lazy by design. It prefers the escalator to the stairs. This means your gut feeling about how well you're learning is basically broken. You have to learn to override it.</p>
+                  <p>From now on, when learning feels slow, frustrating, and difficult, that's not a sign you should stop. It's a sign that you're in the sweet spot. It's the feeling of your brain actually rewiring itself. You're not "confused" — you're building real understanding. You're not "slow" — you're building long-term memory. If it feels like a struggle, it's working.</p>
+                  <p>Here's a bonus: regular low-stakes self-testing doesn't just improve your memory — it also crushes exam anxiety. Think about it: anxiety usually comes from uncertainty. You *think* you know the material, but you've never actually tested that belief until the Leaving Cert. Quizzing yourself regularly is a form of <Highlight description="Getting honest with yourself about what you actually know vs. what you just think you know. When you quiz yourself regularly, you stop guessing and start knowing exactly where your gaps are — so there are no nasty surprises on exam day." theme={theme}>Metacognitive Calibration</Highlight> — it replaces false confidence with honest self-knowledge. When you test yourself regularly, you walk into the exam hall knowing exactly what you know and what you don't. No surprises, no panic. You've already faced the hard stuff at home.</p>
+                </>
+              )}
               <MicroCommitment theme={theme}>
                 <p>Commit to the <strong>10/20 Rule</strong>: for every 30-minute study session, spend only 10 minutes reading or reviewing the material, and then spend 20 minutes testing yourself with the book closed. Write everything you can remember, do practice questions, or explain the topic out loud. This single shift — from mostly reading to mostly recalling — will transform your retention and eliminate exam-day surprises. Start with your very next study session.</p>
               </MicroCommitment>

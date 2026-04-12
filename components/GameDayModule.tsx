@@ -11,6 +11,7 @@ import { type ModuleProgress } from '../types';
 import { amberTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useNorthStar } from '../hooks/useNorthStar';
 import NorthStarCallout from './NorthStarCallout';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
@@ -458,6 +459,7 @@ const CognitiveWarmup = () => {
 
 // --- MODULE COMPONENT ---
 const GameDayModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const { northStar } = useNorthStar();
   const sections = [
     { id: 'athlete-mindset', title: 'The Athlete Mindset', eyebrow: '01 // The Game Plan', icon: Target },
@@ -487,58 +489,107 @@ const GameDayModule: React.FC<{ onBack: () => void; progress: ModuleProgress; on
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Athlete Mindset." eyebrow="Step 1" icon={Target} theme={theme}>
-              <p>The Leaving Cert is not just an academic test -- it's an endurance event. Your brain uses 20% of your body's energy. A 3-hour exam is basically a marathon for your head. This module is about treating yourself like an <Highlight description="The idea that you're not just studying with your mind -- your body matters too. Sleep, food, and stress management all directly affect how well your brain performs on the day." theme={theme}>Exam Athlete</Highlight>. How well you do isn't just about what you know -- it's about the state your brain is in when it's trying to remember it all.</p>
-              <p>The goal is to get yourself into a <Highlight description="That 'I've got this' feeling. When you feel prepared and energised, your body sends more blood and oxygen to your brain. You think faster and stay focused." theme={theme}>Challenge State</Highlight> ("pumped") and avoid a <Highlight description="That 'I'm going to fail' feeling. When your brain thinks the exam is too much, stress hormones take over and your thinking brain basically shuts down. That's where 'mind blanking' comes from." theme={theme}>Threat State</Highlight> ("scared"). This isn't about positive thinking. It's about real, practical steps you can take to get your body and brain working together.</p>
-              <PersonalStory name="Aisling" role="6th Year, Limerick">
-                <p>Before my mocks, I used to just cram until 2am and hope for the best. I'd walk into the exam wrecked and my mind would go blank on stuff I definitely knew. When I started treating exam prep more like training -- sorting my sleep, eating properly, doing a warm-up routine -- it was like night and day. I wasn't any smarter, I was just less wrecked.</p>
-              </PersonalStory>
+              {essentials ? (
+                <>
+                  <p>Your brain uses 20% of your body's energy. A 3-hour exam is a marathon for your head. How you perform depends on sleep, food, and stress management, not just what you know.</p>
+                  <p>Your goal: get into a Challenge State ("I have got this") and avoid a Threat State ("I am going to fail"). The simulator below shows the difference.</p>
+                </>
+              ) : (
+                <>
+                  <p>The Leaving Cert is not just an academic test -- it's an endurance event. Your brain uses 20% of your body's energy. A 3-hour exam is basically a marathon for your head. This module is about treating yourself like an <Highlight description="The idea that you're not just studying with your mind -- your body matters too. Sleep, food, and stress management all directly affect how well your brain performs on the day." theme={theme}>Exam Athlete</Highlight>. How well you do isn't just about what you know -- it's about the state your brain is in when it's trying to remember it all.</p>
+                  <p>The goal is to get yourself into a <Highlight description="That 'I've got this' feeling. When you feel prepared and energised, your body sends more blood and oxygen to your brain. You think faster and stay focused." theme={theme}>Challenge State</Highlight> ("pumped") and avoid a <Highlight description="That 'I'm going to fail' feeling. When your brain thinks the exam is too much, stress hormones take over and your thinking brain basically shuts down. That's where 'mind blanking' comes from." theme={theme}>Threat State</Highlight> ("scared"). This isn't about positive thinking. It's about real, practical steps you can take to get your body and brain working together.</p>
+                  <PersonalStory name="Aisling" role="6th Year, Limerick">
+                    <p>Before my mocks, I used to just cram until 2am and hope for the best. I'd walk into the exam wrecked and my mind would go blank on stuff I definitely knew. When I started treating exam prep more like training -- sorting my sleep, eating properly, doing a warm-up routine -- it was like night and day. I wasn't any smarter, I was just less wrecked.</p>
+                  </PersonalStory>
+                </>
+              )}
               <ChallengeThreatSimulator />
             </ReadingSection>
           )}
            {activeSection === 1 && (
             <ReadingSection title="1 Month Out: Building Your Base." eyebrow="Step 2" icon={SlidersHorizontal} theme={theme}>
-              <p>In the final month, the focus shifts from learning new stuff to locking in what you already know -- and getting your body into a good routine. Your main job right now is to get your <Highlight description="Getting your body clock in sync with exam times. If you've been going to bed at 1am and waking at 11am, you need to gradually shift that so you're sharp at 9:30am when the exam starts." theme={theme}>sleep schedule lined up with exam times</Highlight>.</p>
-              <p>Most teenagers are night owls, but exams start at 9:30 AM. You need to gradually shift your wake-up time -- not all at once, but bit by bit. You should also start eating more <Highlight description="Foods like porridge, wholegrain bread, and bananas that give you slow, steady energy instead of a sugar spike followed by a crash. Think fuel that lasts the whole exam, not just the first 20 minutes." theme={theme}>slow-release energy foods</Highlight> so your brain has steady fuel instead of a sugar crash halfway through the paper.</p>
+              {essentials ? (
+                <p>One month out: shift your sleep schedule to match exam times. Move your alarm back 15 minutes every 3-4 days. Start eating slow-release foods like porridge and wholegrain bread. Use the planner below.</p>
+              ) : (
+                <>
+                  <p>In the final month, the focus shifts from learning new stuff to locking in what you already know -- and getting your body into a good routine. Your main job right now is to get your <Highlight description="Getting your body clock in sync with exam times. If you've been going to bed at 1am and waking at 11am, you need to gradually shift that so you're sharp at 9:30am when the exam starts." theme={theme}>sleep schedule lined up with exam times</Highlight>.</p>
+                  <p>Most teenagers are night owls, but exams start at 9:30 AM. You need to gradually shift your wake-up time -- not all at once, but bit by bit. You should also start eating more <Highlight description="Foods like porridge, wholegrain bread, and bananas that give you slow, steady energy instead of a sugar spike followed by a crash. Think fuel that lasts the whole exam, not just the first 20 minutes." theme={theme}>slow-release energy foods</Highlight> so your brain has steady fuel instead of a sugar crash halfway through the paper.</p>
+                </>
+              )}
               <CircadianShifter />
             </ReadingSection>
           )}
            {activeSection === 2 && (
             <ReadingSection title="The Final Week: Winding Down." eyebrow="Step 3" icon={Brain} theme={theme}>
-              <p>The last week before exams is where most students mess up. The instinct is to cram harder, but that's the opposite of what works. Athletes <Highlight description="Easing off in the days before a big event. Less volume, more rest. Cutting your study hours by 40-60% in the final days actually improves your performance because you go in fresh instead of burnt out." theme={theme}>ease off before a big event</Highlight> -- and you should too. Think of it this way: Performance = What You Know minus How Tired You Are. Cramming makes you exhausted, so even if you know loads, your brain can't access it properly.</p>
-              <p>In the final week, you do fewer hours but make those hours count -- testing yourself, not just reading over notes. And here's the big one: stop learning new material 3 days out. Last-minute cramming can actually cause <Highlight description="When new information messes up your ability to remember older stuff. It's why cramming the night before can make you forget things you knew perfectly well last week." theme={theme}>new stuff to push out old stuff</Highlight> you already knew.</p>
+              {essentials ? (
+                <p>Do not cram the final week. Cut study volume by 40-60%. Test yourself instead of re-reading. Stop learning new material 3 days out. New stuff can push out old stuff you already knew. Use the planner below.</p>
+              ) : (
+                <>
+                  <p>The last week before exams is where most students mess up. The instinct is to cram harder, but that's the opposite of what works. Athletes <Highlight description="Easing off in the days before a big event. Less volume, more rest. Cutting your study hours by 40-60% in the final days actually improves your performance because you go in fresh instead of burnt out." theme={theme}>ease off before a big event</Highlight> -- and you should too. Think of it this way: Performance = What You Know minus How Tired You Are. Cramming makes you exhausted, so even if you know loads, your brain can't access it properly.</p>
+                  <p>In the final week, you do fewer hours but make those hours count -- testing yourself, not just reading over notes. And here's the big one: stop learning new material 3 days out. Last-minute cramming can actually cause <Highlight description="When new information messes up your ability to remember older stuff. It's why cramming the night before can make you forget things you knew perfectly well last week." theme={theme}>new stuff to push out old stuff</Highlight> you already knew.</p>
+                </>
+              )}
               <TaperPlanner />
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="Mental Rehearsal." eyebrow="Step 4" icon={Shield} theme={theme}>
-              <p>Top athletes don't just train their bodies -- they train their minds through visualization. But there's a trap. <Highlight description="Picturing the end result (e.g. getting 625 points or opening your CAO offer). This can actually make you feel like you've already achieved it, which drains your motivation and can increase anxiety." theme={theme}>Just picturing the result</Highlight> (like imagining your CAO points) can actually backfire.</p>
-              <p>What works is <Highlight description="Picturing the actual steps: waking up calm, walking into the hall, reading the first question, taking a breath before writing. When you've 'been there' in your head, your brain handles the real thing much better -- instead of panicking, it goes 'I know what to do here.'" theme={theme}>picturing the process</Highlight>. Run a "mental movie" of exam day in your head -- waking up, eating, walking in, reading the paper. When you hit a hard question on the day, your brain recognises the moment ("I've been here before") and stays calm instead of panicking.</p>
+              {essentials ? (
+                <p>Do not just picture the result. Picture the process. Run a mental movie: waking up, eating, walking in, reading the paper, hitting a hard question. When you have "been there" in your head, your brain stays calm on the day.</p>
+              ) : (
+                <>
+                  <p>Top athletes don't just train their bodies -- they train their minds through visualization. But there's a trap. <Highlight description="Picturing the end result (e.g. getting 625 points or opening your CAO offer). This can actually make you feel like you've already achieved it, which drains your motivation and can increase anxiety." theme={theme}>Just picturing the result</Highlight> (like imagining your CAO points) can actually backfire.</p>
+                  <p>What works is <Highlight description="Picturing the actual steps: waking up calm, walking into the hall, reading the first question, taking a breath before writing. When you've 'been there' in your head, your brain handles the real thing much better -- instead of panicking, it goes 'I know what to do here.'" theme={theme}>picturing the process</Highlight>. Run a "mental movie" of exam day in your head -- waking up, eating, walking in, reading the paper. When you hit a hard question on the day, your brain recognises the moment ("I've been here before") and stays calm instead of panicking.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 4 && (
             <ReadingSection title="The Day Before." eyebrow="Step 5" icon={Moon} theme={theme}>
-              <p>The 24 hours before your first exam are about keeping things calm and steady. Stop any heavy studying by 6:00 PM. The evening is for winding down. Do your <Highlight description="Pack your clear pencil case, calculator, ID, exam number, and a bottle of water the night before. Getting this sorted early means one less thing to stress about in the morning." theme={theme}>"Packing" Ritual</Highlight> early so you're not scrambling in the morning.</p>
-              <p>For dinner, go for something filling with slow-release energy -- pasta, rice, potatoes with some protein (whatever you have -- chicken, beans, eggs, anything decent). The goal is to fill up your energy stores so your brain has fuel in the morning. Before bed, do a <Highlight description="Grab a page and write down anything still bouncing around your head -- facts you're worried about, things on your mind, whatever. Getting it out of your head and onto paper helps your brain switch off so you can actually sleep." theme={theme}>"Brain Dump"</Highlight>: write down anything still buzzing around your head so your brain can switch off.</p>
+              {essentials ? (
+                <p>Stop heavy studying by 6pm. Pack your exam bag the night before. Eat a filling dinner with slow-release energy. Before bed, do a brain dump: write down everything on your mind so your brain can switch off.</p>
+              ) : (
+                <>
+                  <p>The 24 hours before your first exam are about keeping things calm and steady. Stop any heavy studying by 6:00 PM. The evening is for winding down. Do your <Highlight description="Pack your clear pencil case, calculator, ID, exam number, and a bottle of water the night before. Getting this sorted early means one less thing to stress about in the morning." theme={theme}>"Packing" Ritual</Highlight> early so you're not scrambling in the morning.</p>
+                  <p>For dinner, go for something filling with slow-release energy -- pasta, rice, potatoes with some protein (whatever you have -- chicken, beans, eggs, anything decent). The goal is to fill up your energy stores so your brain has fuel in the morning. Before bed, do a <Highlight description="Grab a page and write down anything still bouncing around your head -- facts you're worried about, things on your mind, whatever. Getting it out of your head and onto paper helps your brain switch off so you can actually sleep." theme={theme}>"Brain Dump"</Highlight>: write down anything still buzzing around your head so your brain can switch off.</p>
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 5 && (
             <ReadingSection title="Game Day: The Warm-Up." eyebrow="Step 6" icon={Utensils} theme={theme}>
               {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'game-day-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
-              <p>The morning of the exam is about channeling your nerves into focus. Don't hit snooze. Drink a glass of water straight away. If you can, get a few minutes of daylight (even standing by a window helps) -- it wakes your brain up properly. Eat a breakfast that gives you slow, steady energy (more on that below).</p>
+              {essentials ? (
+                <p>Do not hit snooze. Drink water. Get daylight. Eat a slow-energy breakfast. Then do a quick brain warm-up: a verbal fluency drill or mental sums. This fires up your thinking brain before the exam.</p>
+              ) : (
+                <p>The morning of the exam is about channeling your nerves into focus. Don't hit snooze. Drink a glass of water straight away. If you can, get a few minutes of daylight (even standing by a window helps) -- it wakes your brain up properly. Eat a breakfast that gives you slow, steady energy (more on that below).</p>
+              )}
               <PreExamMealBuilder />
-              <p>Just as an athlete warms up before a match, you need to warm up your brain. Passively reading over notes doesn't do much. What actually helps is a quick <Highlight description="Short brain exercises -- like listing words that start with a certain letter, or doing a few quick mental sums -- done 20-30 minutes before the exam. It gets the thinking parts of your brain warmed up and ready to go before you open the paper." theme={theme}>brain warm-up</Highlight>. It gets the right parts of your brain fired up and ready before you even open the paper.</p>
+              {!essentials && (
+                <p>Just as an athlete warms up before a match, you need to warm up your brain. Passively reading over notes doesn't do much. What actually helps is a quick <Highlight description="Short brain exercises -- like listing words that start with a certain letter, or doing a few quick mental sums -- done 20-30 minutes before the exam. It gets the thinking parts of your brain warmed up and ready to go before you open the paper." theme={theme}>brain warm-up</Highlight>. It gets the right parts of your brain fired up and ready before you even open the paper.</p>
+              )}
               <CognitiveWarmup />
             </ReadingSection>
           )}
            {activeSection === 6 && (
             <ReadingSection title="In The Arena: Execution." eyebrow="Step 7" icon={Zap} theme={theme}>
-              <p>When you arrive, put yourself in a bubble. Headphones in if you have them, or just keep to yourself -- avoid panicked conversations with other students. When you sit down, do the <Highlight description="A quick breathing trick: two sharp sniffs in through your nose, then one long, slow breath out through your mouth. It's the fastest way to calm your nerves in the moment." theme={theme}>Physiological Sigh</Highlight> (two quick sniffs in through your nose, one long breath out). For the first 5 minutes, don't write anything. Just read the paper and breathe. This stops you from misreading questions in a panic.</p>
+              {essentials ? (
+                <p>Headphones in. Avoid panicked conversations. Sit down and do a Physiological Sigh: two nose sniffs, one long mouth exhale. Read the paper for 5 minutes before writing anything. This stops you misreading questions in a panic.</p>
+              ) : (
+                <p>When you arrive, put yourself in a bubble. Headphones in if you have them, or just keep to yourself -- avoid panicked conversations with other students. When you sit down, do the <Highlight description="A quick breathing trick: two sharp sniffs in through your nose, then one long, slow breath out through your mouth. It's the fastest way to calm your nerves in the moment." theme={theme}>Physiological Sigh</Highlight> (two quick sniffs in through your nose, one long breath out). For the first 5 minutes, don't write anything. Just read the paper and breathe. This stops you from misreading questions in a panic.</p>
+              )}
             </ReadingSection>
           )}
            {activeSection === 7 && (
             <ReadingSection title="Halftime & Post-Game." eyebrow="Step 8" icon={Wind} theme={theme}>
-              <p>On days with two exams, the break between them is huge. Eat something that won't make you sleepy -- a sandwich, some fruit, whatever you can manage -- and avoid a massive heavy meal. If you can, a 10-20 minute nap or a quick <Highlight description="A guided relaxation technique you can find free on YouTube or Spotify. You lie down, close your eyes, and follow the instructions. It's not sleep, but it recharges your brain surprisingly well -- sometimes even better than a nap." theme={theme}>guided rest session (NSDR)</Highlight> is one of the best ways to recharge for the afternoon.</p>
-              <p>After each exam, one rule: <Highlight description="Don't talk about the exam you just did. Seriously. When everyone starts comparing answers, it spreads panic -- and that panic follows you into your next paper. The exam is done. Let it go." theme={theme}>don't talk about it</Highlight>. No comparing answers, no "what did you get for question 5?" The paper is done. Bin the mental file. Focus on the next one.</p>
+              {essentials ? (
+                <p>Between exams: eat something light, try a 10-20 minute rest or nap. After each exam: do not compare answers with anyone. The paper is done. Bin the mental file. Focus on the next one.</p>
+              ) : (
+                <>
+                  <p>On days with two exams, the break between them is huge. Eat something that won't make you sleepy -- a sandwich, some fruit, whatever you can manage -- and avoid a massive heavy meal. If you can, a 10-20 minute nap or a quick <Highlight description="A guided relaxation technique you can find free on YouTube or Spotify. You lie down, close your eyes, and follow the instructions. It's not sleep, but it recharges your brain surprisingly well -- sometimes even better than a nap." theme={theme}>guided rest session (NSDR)</Highlight> is one of the best ways to recharge for the afternoon.</p>
+                  <p>After each exam, one rule: <Highlight description="Don't talk about the exam you just did. Seriously. When everyone starts comparing answers, it spreads panic -- and that panic follows you into your next paper. The exam is done. Let it go." theme={theme}>don't talk about it</Highlight>. No comparing answers, no "what did you get for question 5?" The paper is done. Bin the mental file. Focus on the next one.</p>
+                </>
+              )}
               <MicroCommitment theme={theme}>
                 <p>Go to your calendar (phone, wall, whatever you have). Find the date one month before your first exam. Set a reminder: "Start my game day prep." From that point on, you're not just studying -- you're training.</p>
               </MicroCommitment>

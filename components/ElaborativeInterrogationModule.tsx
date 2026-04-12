@@ -13,6 +13,7 @@ import { type ModuleProgress } from '../types';
 import { pinkTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = pinkTheme;
 
@@ -243,6 +244,7 @@ const WhyChainBuilder = () => {
 
 // --- MODULE COMPONENT ---
 const ElaborativeInterrogationModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'why-engine', title: 'The "Why" Engine', eyebrow: '01 // How It Works', icon: HelpCircle },
     { id: 'rules-of-road', title: 'The Rules of the Road', eyebrow: '02 // When It Works Best', icon: BatteryWarning },
@@ -258,40 +260,89 @@ const ElaborativeInterrogationModule: React.FC<{ onBack: () => void; progress: M
         <>
           {activeSection === 0 && (
             <ReadingSection title="The 'Why' Engine." eyebrow="Step 1" icon={HelpCircle} theme={theme}>
-              <p>Learning isn't about absorbing facts — it's about actively connecting them. <Highlight description="A study trick where you come up with an explanation for why something is true. Instead of just reading a fact, you ask 'Why?' and link it to stuff you already know." theme={theme}>Elaborative Interrogation (EI)</Highlight> is a simple but powerful technique that turns you from a passive reader into an active detective. The core of it is asking one simple question: "Why is this true?"</p>
-              <p>When you ask "Why?", you force your brain to dig through what it already knows and find connections. This turns a random, easy-to-forget fact into part of a bigger picture that actually sticks.</p>
-              <p>Here's a great example. One group of students read a simple sentence like "The hungry man got into the car." A second group was told to ask "Why?" after reading it. This second group came up with a reason ("...to go to a restaurant"), which gave their brains more to hold onto. On a surprise test later, the "Why?" group remembered almost double what the passive readers did (72% vs 37%).</p>
+              {essentials ? (
+                <>
+                  <p>After you read a fact, ask yourself "Why is this true?" This forces your brain to connect the new fact to things you already know. That connection is what makes it stick.</p>
+                  <p>Students who asked "Why?" remembered 72% of material. Passive readers remembered only 37%. One simple question nearly doubles your memory.</p>
+                </>
+              ) : (
+                <>
+                  <p>Learning isn't about absorbing facts — it's about actively connecting them. <Highlight description="A study trick where you come up with an explanation for why something is true. Instead of just reading a fact, you ask 'Why?' and link it to stuff you already know." theme={theme}>Elaborative Interrogation (EI)</Highlight> is a simple but powerful technique that turns you from a passive reader into an active detective. The core of it is asking one simple question: "Why is this true?"</p>
+                  <p>When you ask "Why?", you force your brain to dig through what it already knows and find connections. This turns a random, easy-to-forget fact into part of a bigger picture that actually sticks.</p>
+                  <p>Here's a great example. One group of students read a simple sentence like "The hungry man got into the car." A second group was told to ask "Why?" after reading it. This second group came up with a reason ("...to go to a restaurant"), which gave their brains more to hold onto. On a surprise test later, the "Why?" group remembered almost double what the passive readers did (72% vs 37%).</p>
+                </>
+              )}
               <HungryManExperiment/>
             </ReadingSection>
           )}
            {activeSection === 1 && (
             <ReadingSection title="The Rules of the Road." eyebrow="Step 2" icon={BatteryWarning} theme={theme}>
-              <p>The "Why?" method is powerful, but it works best under the right conditions. First, there's the <Highlight description="Asking 'Why?' works best when you already know a bit about the topic. If you know nothing, you'll just guess — and probably guess wrong. Use it to go deeper, not to learn something brand new." theme={theme}>Prior Knowledge Paradox</Highlight>. If you ask "Why?" about a topic you know nothing about, you'll just make up wrong answers. This technique is for going deeper on stuff you've already started learning, not for meeting a topic for the first time.</p>
-              <p>Second, asking "Why?" is mentally tiring. It takes real <Highlight description="The slow, careful kind of thinking where you really have to concentrate. It's the opposite of autopilot — powerful, but it drains your energy fast." theme={theme}>focused thinking</Highlight>. If you try to do it when you're wrecked, your brain runs out of steam — a bit like <Highlight description="When your brain is running on empty. After a long day, you have less mental energy left for hard thinking, so save this technique for when you're fresh." theme={theme}>hitting a wall</Highlight> — and the whole thing becomes less effective. Save it for your best study hours, when you actually have energy.</p>
+              {essentials ? (
+                <>
+                  <p>Only use this technique on topics you already know a bit about. If you know nothing, you will just guess wrong. Use it to go deeper, not to start from scratch.</p>
+                  <p>Asking "Why?" takes real mental energy. Save it for when you are fresh. Do not try it when you are exhausted.</p>
+                </>
+              ) : (
+                <>
+                  <p>The "Why?" method is powerful, but it works best under the right conditions. First, there's the <Highlight description="Asking 'Why?' works best when you already know a bit about the topic. If you know nothing, you'll just guess — and probably guess wrong. Use it to go deeper, not to learn something brand new." theme={theme}>Prior Knowledge Paradox</Highlight>. If you ask "Why?" about a topic you know nothing about, you'll just make up wrong answers. This technique is for going deeper on stuff you've already started learning, not for meeting a topic for the first time.</p>
+                  <p>Second, asking "Why?" is mentally tiring. It takes real <Highlight description="The slow, careful kind of thinking where you really have to concentrate. It's the opposite of autopilot — powerful, but it drains your energy fast." theme={theme}>focused thinking</Highlight>. If you try to do it when you're wrecked, your brain runs out of steam — a bit like <Highlight description="When your brain is running on empty. After a long day, you have less mental energy left for hard thinking, so save this technique for when you're fresh." theme={theme}>hitting a wall</Highlight> — and the whole thing becomes less effective. Save it for your best study hours, when you actually have energy.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="The STEM Toolkit." eyebrow="Step 3" icon={Cpu} theme={theme}>
-              <p>For STEM subjects, asking "Why?" is your secret weapon against just memorising without understanding. In Biology, it helps you connect what you understand to the specific keywords the marking scheme is looking for. Asking "Why is the cell membrane semi-permeable?" forces you to pull up the key ideas about phospholipids and proteins.</p>
-              <p>In Maths, asking "Why?" is brilliant for <Highlight description="Actually understanding why a formula or rule works, not just knowing how to use it. When you get the 'why', you can figure things out even if you forget the exact steps." theme={theme}>understanding the reasoning</Highlight>. Asking "Why does the integral of a velocity-time graph give distance?" locks in the core idea. However, it's not great for <Highlight description="Being able to do maths steps quickly and accurately without stopping to think about each one. You build this through practice and repetition, not by questioning every step." theme={theme}>speed and accuracy in calculations</Highlight>. Don't stop to ask "why" during every line of a long calculation in an exam — build that speed through practice beforehand.</p>
+              {essentials ? (
+                <>
+                  <p>In Biology, ask "Why?" to connect understanding to marking scheme keywords. In Maths, ask "Why?" to understand formulas deeply. But do not ask "Why?" during calculations. Build speed through practice instead.</p>
+                  <p>Try the Why-Chain below. Pick a fact and keep asking "Why?" to go deeper.</p>
+                </>
+              ) : (
+                <>
+                  <p>For STEM subjects, asking "Why?" is your secret weapon against just memorising without understanding. In Biology, it helps you connect what you understand to the specific keywords the marking scheme is looking for. Asking "Why is the cell membrane semi-permeable?" forces you to pull up the key ideas about phospholipids and proteins.</p>
+                  <p>In Maths, asking "Why?" is brilliant for <Highlight description="Actually understanding why a formula or rule works, not just knowing how to use it. When you get the 'why', you can figure things out even if you forget the exact steps." theme={theme}>understanding the reasoning</Highlight>. Asking "Why does the integral of a velocity-time graph give distance?" locks in the core idea. However, it's not great for <Highlight description="Being able to do maths steps quickly and accurately without stopping to think about each one. You build this through practice and repetition, not by questioning every step." theme={theme}>speed and accuracy in calculations</Highlight>. Don't stop to ask "why" during every line of a long calculation in an exam — build that speed through practice beforehand.</p>
+                </>
+              )}
               <WhyChainBuilder />
             </ReadingSection>
           )}
            {activeSection === 3 && (
             <ReadingSection title="The Humanities Engine." eyebrow="Step 4" icon={BookCopy} theme={theme}>
-                <p>In essay subjects like History, asking "Why?" takes you from just describing what happened to explaining <em>why</em> it happened — and that's where the real marks are. Instead of just stating "Collins signed the Treaty," you ask "Why did he sign it?" The answer becomes the main argument in your essay, which instantly boosts your marks.</p>
-                <p>For Geography, which is built on <Highlight description="Significant Relevant Points — basically the building blocks of a Geography answer. Each SRP is a developed fact that's worth marks. The more good ones you have, the better your grade." theme={theme}>SRPs</Highlight>, asking "Why?" naturally creates the "Statement + Development" structure your teacher is always on about. Statement: "Earthquakes are common in Japan." Ask "Why?" Development: "Because Japan is on the convergence of four tectonic plates..." You've just created a perfect, two-mark SRP without even thinking about it.</p>
+              {essentials ? (
+                <>
+                  <p>In History, asking "Why?" turns description into argument. That is where the real marks are. In Geography, asking "Why?" naturally creates the statement-plus-development structure you need for SRPs.</p>
+                  <p>Example: "Earthquakes are common in Japan." Ask "Why?" Answer: "Because Japan sits on four tectonic plates." You just built a perfect SRP.</p>
+                </>
+              ) : (
+                <>
+                  <p>In essay subjects like History, asking "Why?" takes you from just describing what happened to explaining <em>why</em> it happened — and that's where the real marks are. Instead of just stating "Collins signed the Treaty," you ask "Why did he sign it?" The answer becomes the main argument in your essay, which instantly boosts your marks.</p>
+                  <p>For Geography, which is built on <Highlight description="Significant Relevant Points — basically the building blocks of a Geography answer. Each SRP is a developed fact that's worth marks. The more good ones you have, the better your grade." theme={theme}>SRPs</Highlight>, asking "Why?" naturally creates the "Statement + Development" structure your teacher is always on about. Statement: "Earthquakes are common in Japan." Ask "Why?" Development: "Because Japan is on the convergence of four tectonic plates..." You've just created a perfect, two-mark SRP without even thinking about it.</p>
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 4 && (
             <ReadingSection title="The Language Edge." eyebrow="Step 5" icon={Link} theme={theme}>
-              <p>For the Irish Oral, learning scripts off by heart is a recipe for disaster. The examiner is trained to spot them and will deliberately throw you off-script. Asking "Why?" is the key to building a flexible web of ideas around a topic instead. By asking "Why?" over and over ("Why do you play football?" {'\u2192'} "Because I like the team spirit." {'\u2192'} "Why is team spirit important?"), you build loads of connections between your ideas.</p>
-              <p>This means you can go with the flow during the conversation. If the examiner asks about friends, you can link it back to the friends you made playing football. If they ask about health, you can talk about how football keeps you fit. You're no longer stuck reciting a script — you're talking naturally because you've actually thought about the topic from different angles.</p>
+              {essentials ? (
+                <>
+                  <p>For the Irish Oral, do not learn scripts by heart. Examiners will throw you off. Instead, use "Why?" to build a web of connected ideas around each topic.</p>
+                  <p>This lets you go with the flow. If the examiner changes direction, you can link back naturally because you have thought about the topic from many angles.</p>
+                </>
+              ) : (
+                <>
+                  <p>For the Irish Oral, learning scripts off by heart is a recipe for disaster. The examiner is trained to spot them and will deliberately throw you off-script. Asking "Why?" is the key to building a flexible web of ideas around a topic instead. By asking "Why?" over and over ("Why do you play football?" {'\u2192'} "Because I like the team spirit." {'\u2192'} "Why is team spirit important?"), you build loads of connections between your ideas.</p>
+                  <p>This means you can go with the flow during the conversation. If the examiner asks about friends, you can link it back to the friends you made playing football. If they ask about health, you can talk about how football keeps you fit. You're no longer stuck reciting a script — you're talking naturally because you've actually thought about the topic from different angles.</p>
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 5 && (
             <ReadingSection title="Your Study Plan." eyebrow="Step 6" icon={Wrench} theme={theme}>
-              <p>You know why it works. Now here's a simple four-step plan to actually use it when you study.</p>
+              {essentials ? (
+                <p>Four steps: highlight the facts, write "Why?" next to each, answer in your own words, then check against the textbook. Make "Why?" flashcards instead of "What?" flashcards.</p>
+              ) : (
+                <p>You know why it works. Now here's a simple four-step plan to actually use it when you study.</p>
+              )}
               <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 {/* Card 1 — Sky */}
                 <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>

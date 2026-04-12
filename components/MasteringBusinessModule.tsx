@@ -13,6 +13,7 @@ import { type ModuleProgress } from '../types';
 import { grayTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = grayTheme;
 
@@ -314,6 +315,7 @@ const ABQAnswerScaffold = () => {
 
 // --- MODULE COMPONENT ---
 const MasteringBusinessModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'strategic-context', title: 'What You Need to Know for 2026', eyebrow: '01 // The Big Picture', icon: Key },
     { id: 'exam-architecture', title: 'How the Paper Works', eyebrow: '02 // The Layout', icon: PieChart },
@@ -339,34 +341,54 @@ const MasteringBusinessModule: React.FC<{ onBack: () => void; progress: ModulePr
         <>
           {activeSection === 0 && (
             <ReadingSection title="What You Need to Know for 2026." eyebrow="Step 1" icon={Key} theme={theme}>
+              {essentials ? (<>
+              <p>Know <Highlight description="Understanding how the exam works, what the questions are really asking, and what the examiner wants to see in your answer." theme={theme}>how the exam works</Highlight>. For 2026, the compulsory ABQ covers Units 3, 4, and 5: management, HR, finance, and marketing. These topics will definitely come up. Be strong on them and you are halfway to top marks.</p>
+              </>) : (<>
               <p>The Leaving Cert Business exam is not just about remembering facts -- it is about knowing <Highlight description="Understanding how the exam works, what the questions are really asking, and what the examiner wants to see in your answer." theme={theme}>how the exam actually works</Highlight>. For 2026, the big thing to know is that the compulsory Applied Business Question (ABQ) will be based on <strong>Units 3, 4, and 5</strong>.</p>
               <p>That means the focus is on the inside of a business: management, HR, finance, and marketing. You cannot dodge these topics -- they will definitely come up. If you are strong on these units, you are already halfway to top marks.</p>
+              </>)}
             </ReadingSection>
           )}
            {activeSection === 1 && (
             <ReadingSection title="How the Paper Works." eyebrow="Step 2" icon={PieChart} theme={theme}>
+              {essentials ? (<>
+              <p>Three sections: Short Questions (20%, easy marks), ABQ (20%, case study), Long Questions (60%, four full answers). Smart tip: do the ABQ right after Short Questions while your brain is fresh. Do not save it until you are tired.</p>
+              </>) : (<>
               <p>The Higher Level paper is 3 hours long and split into three sections. <strong>Section 1 (Short Questions)</strong> is your easiest marks -- worth 20% of the total and you can fly through them. <strong>Section 2 (ABQ)</strong> is the big one, also worth 20%, where you apply theory to a case study. <strong>Section 3 (Long Questions)</strong> is the main event, worth 60% of the marks -- you need to write four full answers.</p>
               <p>Here is a smart timing tip: do the ABQ right after the Short Questions. Your brain is still fresh at that point, and you will write better answers than if you leave it until you are tired from the long questions.</p>
+              </>)}
             </ReadingSection>
           )}
            {activeSection === 2 && (
             <ReadingSection title="ABQ Deep Dive." eyebrow="Step 3" icon={Briefcase} theme={theme}>
+                {essentials ? (<>
+                <p>The ABQ gives you a business case study to solve. The number one rule: <Highlight description="The must-use 3-step formula for ABQ answers: say what the theory is, explain it in your own words, then quote directly from the case study to prove it." theme={theme}>State, Explain, Link</Highlight>. Name the theory. Explain it. Then quote directly from the case study. Every answer needs a direct quote. Forgetting to quote is the biggest reason students lose marks.</p>
+                </>) : (<>
                 <p>The 2026 ABQ will probably give you a business that is growing fast but running into problems -- things like staff issues, money troubles, or communication breakdowns. Your job is to read the case study and use your business theory to solve their problems.</p>
                 <p>The number one rule is <Highlight description="The must-use 3-step formula for ABQ answers: say what the theory is, explain it in your own words, then quote directly from the case study to prove it." theme={theme}>State, Explain, Link</Highlight>. The biggest reason students lose marks is forgetting to quote directly from the case study. Every single answer needs a direct quote. Think of it as a simple 3-step recipe: name the theory, explain it, then prove it with words from the text.</p>
+                </>)}
                 <ABQLinkDrill />
                 <ABQAnswerScaffold />
             </ReadingSection>
           )}
            {activeSection === 3 && (
             <ReadingSection title="How to Pick Up Every Mark." eyebrow="Step 4" icon={FileText} theme={theme}>
+              {essentials ? (<>
+              <p>Use the <Highlight description="A 3-step formula for each point: State it, Explain it, then give an Example. This is how you make sure the examiner can give you full marks." theme={theme}>SEE</Highlight> formula: State, Explain, Example. For a H1, use <Highlight description="The H1 version where you write two sentences of explanation instead of one, so the examiner has no excuse not to give you the marks." theme={theme}>SEEE</Highlight> with two explanation sentences. Watch the <Highlight description="The action word in the question (like State, Explain, or Evaluate) that tells you exactly how much detail the examiner expects. Get this wrong and you will either write too little or waste time." theme={theme}>action word</Highlight>: "State" means list it. "Explain" means define it. "Evaluate" means give your opinion with evidence. Always label evaluations clearly.</p>
+              </>) : (<>
               <p>To get top marks, you need to write the way the examiner wants to see it. Each "point" in a long question is worth 5 marks. The way to guarantee those marks is a simple formula called <Highlight description="A 3-step formula for each point: State it, Explain it, then give an Example. This is how you make sure the examiner can give you full marks." theme={theme}>SEE</Highlight> -- State, Explain, Example. If you are aiming for a H1, use the upgraded version called <Highlight description="The H1 version where you write two sentences of explanation instead of one, so the examiner has no excuse not to give you the marks." theme={theme}>SEEE</Highlight>, where you give two explanation sentences instead of one.</p>
               <p>You also need to pay attention to the <Highlight description="The action word in the question (like State, Explain, or Evaluate) that tells you exactly how much detail the examiner expects. Get this wrong and you will either write too little or waste time." theme={theme}>action word</Highlight> in each question. "State" means just list the point. "Explain" means define it properly. "Evaluate" means give your opinion on whether it is good or bad -- and this is what separates H1 answers from the rest. When you see "Evaluate," always write a separate mini-paragraph starting with <strong>"Evaluation:"</strong> to make sure you grab those marks.</p>
+              </>)}
             </ReadingSection>
           )}
           {activeSection === 4 && (
             <ReadingSection title="Quick Wins and Smart Moves." eyebrow="Step 5" icon={Wrench} theme={theme}>
+              {essentials ? (<>
+              <p>Section 1: use the <Highlight description="Answer every short question on the paper, even the ones you are unsure about. Only your best answers count, so extra attempts are free insurance." theme={theme}>answer-everything approach</Highlight>. Do all short questions. Only your best count. Section 3: avoid <Highlight description="Writing long paragraphs that sound nice but do not actually contain any real business terms or facts. The examiner cannot give marks for waffle." theme={theme}>waffle</Highlight> and <Highlight description="Saying the same thing twice in different words. The examiner will only give you marks for a point once, no matter how you phrase it." theme={theme}>repeating yourself</Highlight>. Make each point genuinely different: one about money, one about marketing, one about staff.</p>
+              </>) : (<>
               <p>In Section 1 (Short Questions), use the <Highlight description="Answer every short question on the paper, even the ones you are unsure about. Only your best answers count, so extra attempts are free insurance." theme={theme}>answer-everything approach</Highlight>: do all the short questions, not just the required number. Only your best answers count, so extra attempts cost you almost no time and protect you if you slip up on one.</p>
               <p>In Section 3 (Long Questions), the biggest marks-killer is <Highlight description="Writing long paragraphs that sound nice but do not actually contain any real business terms or facts. The examiner cannot give marks for waffle." theme={theme}>waffle</Highlight> -- writing loads without actually saying anything specific. Stick to the SEEE structure so every sentence earns marks. Also watch out for <Highlight description="Saying the same thing twice in different words. The examiner will only give you marks for a point once, no matter how you phrase it." theme={theme}>repeating yourself</Highlight> when asked for multiple "impacts" or "benefits." Make sure each point is genuinely different -- for example, one about money, one about marketing, one about staff.</p>
+              </>)}
               <PersonalStory name="Roisin" role="6th Year, Limerick">
                 <p>I used to lose marks on the long questions because I would basically say the same thing three different ways. Once I started labelling my points (financial impact, marketing impact, staffing impact) I actually started getting full marks. It sounds simple but it made a huge difference.</p>
               </PersonalStory>
@@ -374,8 +396,12 @@ const MasteringBusinessModule: React.FC<{ onBack: () => void; progress: ModulePr
           )}
            {activeSection === 5 && (
             <ReadingSection title="Your Study Plan." eyebrow="Step 6" icon={BrainCircuit} theme={theme}>
+              {essentials ? (<>
+              <p>Use <Highlight description="Testing yourself from memory instead of just re-reading. It feels harder, but it is by far the best way to make things stick." theme={theme}>active recall</Highlight>: test yourself instead of re-reading. Use spider diagrams and flashcards. Break study into three phases below.</p>
+              </>) : (<>
               <p>Just reading over your notes does not work -- you forget most of it within a day. The trick is <Highlight description="Testing yourself from memory instead of just re-reading. It feels harder, but it is by far the best way to make things stick." theme={theme}>active recall</Highlight> -- actually testing yourself. Use spider diagrams and flashcards to pull information out of your head, not just put it in.</p>
               <p>Break your study into three phases:</p>
+              </>)}
               <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
                   <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>

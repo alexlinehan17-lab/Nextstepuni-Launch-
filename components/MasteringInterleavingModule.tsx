@@ -13,6 +13,7 @@ import { type ModuleProgress } from '../types';
 import { purpleTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = purpleTheme;
 
@@ -154,6 +155,7 @@ const RetrospectiveRevisionLog = () => {
 
 // --- MODULE COMPONENT ---
 const MasteringInterleavingModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'illusion-of-mastery', title: 'Why "Finishing a Topic" Fools You', eyebrow: '01 // The Trap', icon: Layers },
     { id: 'topic-salad', title: 'The "Topic Salad" Method', eyebrow: '02 // The Fix', icon: Shuffle },
@@ -168,35 +170,77 @@ const MasteringInterleavingModule: React.FC<{ onBack: () => void; progress: Modu
         <>
           {activeSection === 0 && (
             <ReadingSection title="Why 'Finishing a Topic' Fools You." eyebrow="Step 1" icon={Layers} theme={theme}>
-              <p>Most students study using <Highlight description="When you study one topic for ages before moving on, like doing Maths all Monday, English all Tuesday, Biology all Wednesday." theme={theme}>Blocked Practice</Highlight>. You spend Monday night on Maths, Tuesday on English, Wednesday on Biology. It feels productive. After three hours of Algebra, you feel like you've nailed it. But that feeling is actually a <Highlight description="That fake 'I totally know this' feeling you get right after studying something, just because it's still fresh in your head." theme={theme}>false sense of confidence</Highlight>.</p>
-              <p>Here's the problem: your brain isn't being trained for the real Leaving Cert. The exam doesn't hand you 20 algebra questions in a row. It throws a mix at you. When you practise the same type of question over and over, you never have to figure out <em>what</em> to do, only <em>how</em> to do it. You never build the skill of <Highlight description="Being able to look at a question and figure out which approach to use -- like knowing whether you need the chain rule or the product rule." theme={theme}>telling similar problems apart</Highlight>, and that's exactly what the exam tests.</p>
+              {essentials ? (
+                <>
+                  <p>Most students use <Highlight description="When you study one topic for ages before moving on, like doing Maths all Monday, English all Tuesday, Biology all Wednesday." theme={theme}>Blocked Practice</Highlight> -- one subject per night. It feels productive, but it creates a <Highlight description="That fake 'I totally know this' feeling you get right after studying something, just because it's still fresh in your head." theme={theme}>false sense of confidence</Highlight>.</p>
+                  <p>The exam mixes topics together. If you only practise one type at a time, you never learn to <Highlight description="Being able to look at a question and figure out which approach to use -- like knowing whether you need the chain rule or the product rule." theme={theme}>tell similar problems apart</Highlight>. That's exactly what costs you marks.</p>
+                </>
+              ) : (
+                <>
+                  <p>Most students study using <Highlight description="When you study one topic for ages before moving on, like doing Maths all Monday, English all Tuesday, Biology all Wednesday." theme={theme}>Blocked Practice</Highlight>. You spend Monday night on Maths, Tuesday on English, Wednesday on Biology. It feels productive. After three hours of Algebra, you feel like you've nailed it. But that feeling is actually a <Highlight description="That fake 'I totally know this' feeling you get right after studying something, just because it's still fresh in your head." theme={theme}>false sense of confidence</Highlight>.</p>
+                  <p>Here's the problem: your brain isn't being trained for the real Leaving Cert. The exam doesn't hand you 20 algebra questions in a row. It throws a mix at you. When you practise the same type of question over and over, you never have to figure out <em>what</em> to do, only <em>how</em> to do it. You never build the skill of <Highlight description="Being able to look at a question and figure out which approach to use -- like knowing whether you need the chain rule or the product rule." theme={theme}>telling similar problems apart</Highlight>, and that's exactly what the exam tests.</p>
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 1 && (
             <ReadingSection title="The 'Topic Salad' Method." eyebrow="Step 2" icon={Shuffle} theme={theme}>
-              <p>The fix is simple but powerful: <Highlight description="Instead of studying one topic for ages, you mix different topics or question types together in the same session." theme={theme}>mixing your topics</Highlight>. Instead of a "topic block," think of your study session as a "topic salad." A fruit salad isn't a pile of apples next to a pile of bananas -- it's all mixed together. Your study should be the same.</p>
-              <p>This works at two levels. <Highlight description="Mixing different subjects across your week -- like doing Maths, English, and Biology all on Monday evening instead of just one." theme={theme}>Mixing across subjects</Highlight> is about your weekly schedule: instead of one subject for 3 hours, study three subjects for 1 hour each. <Highlight description="Mixing different topics within one subject session -- like doing a bit of Algebra, then Stats, then Geometry, instead of just Algebra." theme={theme}>Mixing within a subject</Highlight> is about shuffling topics <em>within</em> a single study session. This one is harder, but that extra effort is exactly where the real learning happens.</p>
+              {essentials ? (
+                <>
+                  <p>The fix: <Highlight description="Instead of studying one topic for ages, you mix different topics or question types together in the same session." theme={theme}>mix your topics</Highlight>. Think "topic salad" instead of "topic block." Mix everything together.</p>
+                  <p>Two levels: <Highlight description="Mixing different subjects across your week -- like doing Maths, English, and Biology all on Monday evening instead of just one." theme={theme}>mix across subjects</Highlight> in your weekly schedule. <Highlight description="Mixing different topics within one subject session -- like doing a bit of Algebra, then Stats, then Geometry, instead of just Algebra." theme={theme}>Mix within a subject</Highlight> during a single session. The harder it feels, the better it works.</p>
+                </>
+              ) : (
+                <>
+                  <p>The fix is simple but powerful: <Highlight description="Instead of studying one topic for ages, you mix different topics or question types together in the same session." theme={theme}>mixing your topics</Highlight>. Instead of a "topic block," think of your study session as a "topic salad." A fruit salad isn't a pile of apples next to a pile of bananas -- it's all mixed together. Your study should be the same.</p>
+                  <p>This works at two levels. <Highlight description="Mixing different subjects across your week -- like doing Maths, English, and Biology all on Monday evening instead of just one." theme={theme}>Mixing across subjects</Highlight> is about your weekly schedule: instead of one subject for 3 hours, study three subjects for 1 hour each. <Highlight description="Mixing different topics within one subject session -- like doing a bit of Algebra, then Stats, then Geometry, instead of just Algebra." theme={theme}>Mixing within a subject</Highlight> is about shuffling topics <em>within</em> a single study session. This one is harder, but that extra effort is exactly where the real learning happens.</p>
+                </>
+              )}
               <StudyPlannerInteractive />
             </ReadingSection>
           )}
            {activeSection === 2 && (
             <ReadingSection title="Why Harder Feels Better (For Your Brain)." eyebrow="Step 3" icon={Brain} theme={theme}>
-              <p>Mixing topics feels harder -- and that's the whole point. When you switch from Maths to English, your brain has to work to "reload" a completely different way of thinking. That extra effort is actually a <Highlight description="When studying feels tougher but that struggle is actually making your memory way stronger in the long run." theme={theme}>good kind of difficulty</Highlight>. Studying one thing on repeat feels smooth because it's like re-watching the same scene of a film over and over. Mixing it up forces your brain to keep switching gears, and that builds the mental muscle you need for the exam.</p>
-              <p>Here's the key idea: when you put similar but different concepts next to each other (like differentiation and integration), your brain is forced to <Highlight description="When you study similar topics back-to-back, your brain has to figure out what makes each one different -- and that's what helps you pick the right approach in the exam." theme={theme}>spot the differences between them</Highlight>. You're not just learning a rule -- you're learning <em>when</em> to use that rule. And that's exactly what the Leaving Cert asks you to do.</p>
+              {essentials ? (
+                <>
+                  <p>Switching topics feels harder. That's good. The extra effort is a <Highlight description="When studying feels tougher but that struggle is actually making your memory way stronger in the long run." theme={theme}>good kind of difficulty</Highlight> that builds stronger memory.</p>
+                  <p>When you study similar concepts together, your brain must <Highlight description="When you study similar topics back-to-back, your brain has to figure out what makes each one different -- and that's what helps you pick the right approach in the exam." theme={theme}>spot the differences</Highlight>. You learn when to use each rule. That's exactly what the exam tests.</p>
+                </>
+              ) : (
+                <>
+                  <p>Mixing topics feels harder -- and that's the whole point. When you switch from Maths to English, your brain has to work to "reload" a completely different way of thinking. That extra effort is actually a <Highlight description="When studying feels tougher but that struggle is actually making your memory way stronger in the long run." theme={theme}>good kind of difficulty</Highlight>. Studying one thing on repeat feels smooth because it's like re-watching the same scene of a film over and over. Mixing it up forces your brain to keep switching gears, and that builds the mental muscle you need for the exam.</p>
+                  <p>Here's the key idea: when you put similar but different concepts next to each other (like differentiation and integration), your brain is forced to <Highlight description="When you study similar topics back-to-back, your brain has to figure out what makes each one different -- and that's what helps you pick the right approach in the exam." theme={theme}>spot the differences between them</Highlight>. You're not just learning a rule -- you're learning <em>when</em> to use that rule. And that's exactly what the Leaving Cert asks you to do.</p>
+                </>
+              )}
               <ProblemTypeSpotter/>
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="The 'Worst First' Timetable." eyebrow="Step 4" icon={ListChecks} theme={theme}>
-              <p>Mixing topics can feel a bit chaotic at first. The best way to stay on track is to ditch the rigid, plan-everything-in-advance timetable and use a <Highlight description="Instead of planning your week ahead of time, you look back at what you've already studied and pick the topics you're weakest at next." theme={theme}>backwards-looking revision timetable</Highlight>. Instead of deciding what to study next week, you decide what to study *right now* based on what you're struggling with most.</p>
-              <p>Here's how it works: 1. List every topic in a subject. 2. After you study a topic, colour-code it: Green (I know this), Amber (It's okay), or Red (I'm lost). 3. Next time you sit down to study that subject, follow the <Highlight description="A simple rule: always start with the topic you feel least confident about. If something's red, that's what you study next." theme={theme}>"Worst First" rule</Highlight> -- always start with a Red topic. This naturally keeps you mixing things up, because you're constantly jumping between your weakest areas across the whole course.</p>
+              {essentials ? (
+                <>
+                  <p>Use a <Highlight description="Instead of planning your week ahead of time, you look back at what you've already studied and pick the topics you're weakest at next." theme={theme}>backwards-looking timetable</Highlight>. Decide what to study based on what you're weakest at right now.</p>
+                  <p>List your topics. Colour-code them: Red, Amber, or Green. Follow the <Highlight description="A simple rule: always start with the topic you feel least confident about. If something's red, that's what you study next." theme={theme}>"Worst First" rule</Highlight> -- always start with a Red topic. This keeps you mixing naturally.</p>
+                </>
+              ) : (
+                <>
+                  <p>Mixing topics can feel a bit chaotic at first. The best way to stay on track is to ditch the rigid, plan-everything-in-advance timetable and use a <Highlight description="Instead of planning your week ahead of time, you look back at what you've already studied and pick the topics you're weakest at next." theme={theme}>backwards-looking revision timetable</Highlight>. Instead of deciding what to study next week, you decide what to study *right now* based on what you're struggling with most.</p>
+                  <p>Here's how it works: 1. List every topic in a subject. 2. After you study a topic, colour-code it: Green (I know this), Amber (It's okay), or Red (I'm lost). 3. Next time you sit down to study that subject, follow the <Highlight description="A simple rule: always start with the topic you feel least confident about. If something's red, that's what you study next." theme={theme}>"Worst First" rule</Highlight> -- always start with a Red topic. This naturally keeps you mixing things up, because you're constantly jumping between your weakest areas across the whole course.</p>
+                </>
+              )}
               <RetrospectiveRevisionLog />
             </ReadingSection>
           )}
            {activeSection === 4 && (
             <ReadingSection title="Your Mix-It-Up Game Plan." eyebrow="Step 5" icon={Wrench} theme={theme}>
-              <p>You've got the idea. Now you need the action plan. Mixing your topics isn't some vague notion -- it's a set of real, practical strategies you can use for every single subject you study for the Leaving Cert.</p>
-              <p>Whether it's shuffling question types in Maths or jumping between poets in English, the goal is always the same: break up the blocks, lean into the struggle of switching, and train your brain for the reality of the exam. This is not about studying more -- it's about studying smarter.</p>
+              {essentials ? (
+                <p>Break up the blocks. Shuffle question types. Jump between topics. Train your brain for the mixed reality of the exam. Study smarter, not more.</p>
+              ) : (
+                <>
+                  <p>You've got the idea. Now you need the action plan. Mixing your topics isn't some vague notion -- it's a set of real, practical strategies you can use for every single subject you study for the Leaving Cert.</p>
+                  <p>Whether it's shuffling question types in Maths or jumping between poets in English, the goal is always the same: break up the blocks, lean into the struggle of switching, and train your brain for the reality of the exam. This is not about studying more -- it's about studying smarter.</p>
+                </>
+              )}
               <MicroCommitment theme={theme}>
                 <p>Tonight, take your hardest subject. Instead of studying one chapter for an hour, pick three different chapters and spend just 20 minutes on each. Notice how the switching feels harder -- that's your brain building real, lasting connections.</p>
               </MicroCommitment>

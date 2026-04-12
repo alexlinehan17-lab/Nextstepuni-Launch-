@@ -11,6 +11,7 @@ import { type ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = redTheme;
 
@@ -614,7 +615,14 @@ const ShapeQuiz = () => {
 
 // --- MODULE COMPONENT ---
 const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
-  const sections = [
+  const essentials = useEssentialsMode();
+
+  const sections = essentials ? [
+    { id: 'the-structure-gap', title: 'The Structure Gap', eyebrow: '01 // The Problem', icon: AlertTriangle },
+    { id: 'the-peel-framework', title: 'The PEEL Framework', eyebrow: '02 // The Essay Engine', icon: Layers },
+    { id: 'the-science-answer-stack', title: 'Science & Marks', eyebrow: '03 // The Formula & Decoder', icon: FlaskConical },
+    { id: 'your-engineering-toolkit', title: 'Your Engineering Toolkit', eyebrow: '04 // The Plan', icon: Target },
+  ] : [
     { id: 'the-structure-gap', title: 'The Structure Gap', eyebrow: '01 // The Problem', icon: AlertTriangle },
     { id: 'the-peel-framework', title: 'The PEEL Framework', eyebrow: '02 // The Essay Engine', icon: Layers },
     { id: 'the-science-answer-stack', title: 'The Science Answer Stack', eyebrow: '03 // The Formula', icon: FlaskConical },
@@ -641,13 +649,22 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Structure Gap." eyebrow="01 // The Problem" icon={AlertTriangle} theme={theme}>
-              <p>Two students know the same Biology. One gets a H3, the other gets a H1. The difference is not knowledge — it is <Highlight description="Structure means your answer has a visible architecture that the examiner can follow. Each point is clearly separated, each piece of evidence is connected to a claim, and the logic flows from start to finish." theme={theme}>structure</Highlight>. The H1 student's answers have a visible architecture — the examiner can SEE each point, FIND each piece of evidence, FOLLOW the logic. The H3 student's answer is a wall of text with good ideas buried inside it.</p>
-              <p>Examiners read <strong>400+ scripts</strong>. They spend <Highlight description="SEC examiners work through enormous volumes of scripts during marking conferences. They are experienced, professional, and efficient — but they are human. The easier you make it for them to find your points, the more marks you collect." theme={theme}>2-3 minutes per answer</Highlight>. If they cannot FIND your points, they cannot MARK your points. This is not about what you know. This is about how you <em>package</em> what you know so the examiner can see every mark you deserve.</p>
-              <p>Think of it this way: the examiner has a checklist. For each answer, they are scanning for specific things — a clear point, supporting evidence, a logical connection back to the question. If those things are buried inside a long, unstructured paragraph, some of them will be missed. Not because the examiner is unfair, but because they are human and they are working fast.</p>
-              <p>This module teaches you the <strong>structural frameworks</strong> for building answers — how to organise and construct answers so examiners find every mark. It is the difference between "knowing the content" and "knowing how to package it."</p>
-              <PersonalStory name="Sean, Leaving Cert 2024, Cork">
-                <p>"I knew the content but my mock results didn't show it. My teacher told me 'I can see you know this, but I had to hunt for your points.' That one sentence changed everything."</p>
-              </PersonalStory>
+              {essentials ? (
+                <>
+                  <p>Two students know the same content. One gets a H3, the other a H1. The difference is <Highlight description="Structure means your answer has a visible architecture that the examiner can follow. Each point is clearly separated, each piece of evidence is connected to a claim, and the logic flows from start to finish." theme={theme}>structure</Highlight>. Examiners spend <Highlight description="SEC examiners work through enormous volumes of scripts during marking conferences. They are experienced, professional, and efficient — but they are human. The easier you make it for them to find your points, the more marks you collect." theme={theme}>2-3 minutes per answer</Highlight>. If they can't find your points, they can't mark them.</p>
+                  <p>This module gives you frameworks for packaging answers. The examiner has a checklist. Make your points visible and you collect every mark.</p>
+                </>
+              ) : (
+                <>
+                  <p>Two students know the same Biology. One gets a H3, the other gets a H1. The difference is not knowledge — it is <Highlight description="Structure means your answer has a visible architecture that the examiner can follow. Each point is clearly separated, each piece of evidence is connected to a claim, and the logic flows from start to finish." theme={theme}>structure</Highlight>. The H1 student's answers have a visible architecture — the examiner can SEE each point, FIND each piece of evidence, FOLLOW the logic. The H3 student's answer is a wall of text with good ideas buried inside it.</p>
+                  <p>Examiners read <strong>400+ scripts</strong>. They spend <Highlight description="SEC examiners work through enormous volumes of scripts during marking conferences. They are experienced, professional, and efficient — but they are human. The easier you make it for them to find your points, the more marks you collect." theme={theme}>2-3 minutes per answer</Highlight>. If they cannot FIND your points, they cannot MARK your points. This is not about what you know. This is about how you <em>package</em> what you know so the examiner can see every mark you deserve.</p>
+                  <p>Think of it this way: the examiner has a checklist. For each answer, they are scanning for specific things — a clear point, supporting evidence, a logical connection back to the question. If those things are buried inside a long, unstructured paragraph, some of them will be missed. Not because the examiner is unfair, but because they are human and they are working fast.</p>
+                  <p>This module teaches you the <strong>structural frameworks</strong> for building answers — how to organise and construct answers so examiners find every mark. It is the difference between "knowing the content" and "knowing how to package it."</p>
+                  <PersonalStory name="Sean, Leaving Cert 2024, Cork">
+                    <p>"I knew the content but my mock results didn't show it. My teacher told me 'I can see you know this, but I had to hunt for your points.' That one sentence changed everything."</p>
+                  </PersonalStory>
+                </>
+              )}
               <MicroCommitment theme={theme}>
                 <p>Look at your most recent test. Can the examiner find your main points in 10 seconds? Pick one answer and read it with fresh eyes. If the key points are not immediately visible, this module is going to change your results.</p>
               </MicroCommitment>
@@ -656,7 +673,7 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
 
           {activeSection === 1 && (
             <ReadingSection title="The PEEL Framework." eyebrow="02 // The Essay Engine" icon={Layers} theme={theme}>
-              <p>For any essay-style question — English, History, Business, Geography, and more — <Highlight description="PEEL stands for Point, Evidence, Explain, Link. It gives you a paragraph skeleton that ensures every paragraph in your essay has a clear structure the examiner can follow and award marks to." theme={theme}>PEEL</Highlight> gives you a paragraph skeleton that ensures every paragraph earns its full marks:</p>
+              <p>{essentials ? 'For essay questions, use' : 'For any essay-style question — English, History, Business, Geography, and more —'} <Highlight description="PEEL stands for Point, Evidence, Explain, Link. It gives you a paragraph skeleton that ensures every paragraph in your essay has a clear structure the examiner can follow and award marks to." theme={theme}>PEEL</Highlight>{essentials ? '. Each paragraph follows four steps:' : ' gives you a paragraph skeleton that ensures every paragraph earns its full marks:'}</p>
               <div className="my-6 space-y-3">
                 <div className="flex items-start gap-3 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
                   <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-700 flex-shrink-0">P</span>
@@ -675,15 +692,21 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
                   <div><strong className="text-purple-700 dark:text-purple-300">Link</strong> — Connect back to the question asked. This closes the loop and shows the examiner you are directly answering what was asked.</div>
                 </div>
               </div>
-              <p>Each paragraph = one PEEL cycle. A <strong>60-mark essay = 4-5 PEEL paragraphs + intro + conclusion</strong>. That is it. That is the entire structure of a top-grade essay.</p>
-              <p>PEEL does not make your writing boring — it makes your <Highlight description="The examiner is not looking for creative writing. They are looking for clear, structured arguments with evidence. PEEL makes your thinking visible so they can award marks at every step of your paragraph." theme={theme}>THINKING visible</Highlight>. You can still be creative within the structure. The best essays in any subject combine strong ideas with clear organisation. PEEL gives you the organisation so you can focus on the ideas.</p>
+              {essentials ? (
+                <p>A 60-mark essay = 4-5 PEEL paragraphs + intro + conclusion. PEEL makes your <Highlight description="The examiner is not looking for creative writing. They are looking for clear, structured arguments with evidence. PEEL makes your thinking visible so they can award marks at every step of your paragraph." theme={theme}>THINKING visible</Highlight>.</p>
+              ) : (
+                <>
+                  <p>Each paragraph = one PEEL cycle. A <strong>60-mark essay = 4-5 PEEL paragraphs + intro + conclusion</strong>. That is it. That is the entire structure of a top-grade essay.</p>
+                  <p>PEEL does not make your writing boring — it makes your <Highlight description="The examiner is not looking for creative writing. They are looking for clear, structured arguments with evidence. PEEL makes your thinking visible so they can award marks at every step of your paragraph." theme={theme}>THINKING visible</Highlight>. You can still be creative within the structure. The best essays in any subject combine strong ideas with clear organisation. PEEL gives you the organisation so you can focus on the ideas.</p>
+                </>
+              )}
               <PEELBuilder />
             </ReadingSection>
           )}
 
-          {activeSection === 2 && (
-            <ReadingSection title="The Science Answer Stack." eyebrow="03 // The Formula" icon={FlaskConical} theme={theme}>
-              <p>For Maths, Physics, Chemistry, and Applied Maths, there is a specific structure that maximises marks. We call it <Highlight description="S-cubed-S stands for State, Substitute, Solve, State. It is a four-step process that earns marks at every step. Even if your final answer is wrong, the first three steps earn method marks independently." theme={theme}>S&sup3;S</Highlight>:</p>
+          {(essentials ? activeSection === 2 : activeSection === 2) && (
+            <ReadingSection title={essentials ? "Science & Marks." : "The Science Answer Stack."} eyebrow={essentials ? "03 // The Formula & Decoder" : "03 // The Formula"} icon={FlaskConical} theme={theme}>
+              <p>{essentials ? 'For science and maths, use' : 'For Maths, Physics, Chemistry, and Applied Maths, there is a specific structure that maximises marks. We call it'} <Highlight description="S-cubed-S stands for State, Substitute, Solve, State. It is a four-step process that earns marks at every step. Even if your final answer is wrong, the first three steps earn method marks independently." theme={theme}>S&sup3;S</Highlight>{essentials ? ':' : ':'}</p>
               <ConceptCardGrid
                 cards={[
                   { number: 1, term: "State", description: "Write the formula or law you are using. This immediately earns method marks." },
@@ -692,14 +715,25 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
                   { number: 4, term: "State", description: "Write the final answer with correct units, circled or underlined." },
                 ]}
               />
-              <p>This pattern earns marks at <strong>EVERY step</strong>. Even if your final answer is wrong, steps 1-3 earn method marks independently.</p>
-              <p>In a <strong>25-mark Maths question</strong>, the final answer is typically worth only <Highlight description="The final numerical answer in most science and maths questions is worth only 4-5 out of 25 marks. The other 20 marks are for showing your process. Students who jump straight to the answer are skipping 80% of the available marks." theme={theme}>4-5 marks</Highlight>. The other 20 marks are for showing your process. Students who jump to the answer skip 80% of the available marks.</p>
-              <p>Remember the three types of marks from the Marking Scheme Decoder? This structure hits all three: attempt marks for writing the formula, method marks for substituting and solving, and answer marks for the final result.</p>
-              <StackBuilder />
+              {essentials ? (
+                <>
+                  <p>Even if your final answer is wrong, steps 1-3 earn marks independently. In a 25-mark question, the answer is worth only <Highlight description="The final numerical answer in most science and maths questions is worth only 4-5 out of 25 marks. The other 20 marks are for showing your process. Students who jump straight to the answer are skipping 80% of the available marks." theme={theme}>4-5 marks</Highlight>. Show every step.</p>
+                  <StackBuilder />
+                  <p>The marks beside a question also tell you the <Highlight description="The 'shape' of an answer means its length and structure. A 4-mark answer should look completely different from a 20-mark answer. The marks are a blueprint telling you exactly how much to write and how to organise it." theme={theme}>SHAPE</Highlight> of your answer. 4 marks = 1-2 sentences. 10 marks = a paragraph. 30+ marks = full essay. Match your answer length to the marks.</p>
+                  <ShapeQuiz />
+                </>
+              ) : (
+                <>
+                  <p>This pattern earns marks at <strong>EVERY step</strong>. Even if your final answer is wrong, steps 1-3 earn method marks independently.</p>
+                  <p>In a <strong>25-mark Maths question</strong>, the final answer is typically worth only <Highlight description="The final numerical answer in most science and maths questions is worth only 4-5 out of 25 marks. The other 20 marks are for showing your process. Students who jump straight to the answer are skipping 80% of the available marks." theme={theme}>4-5 marks</Highlight>. The other 20 marks are for showing your process. Students who jump to the answer skip 80% of the available marks.</p>
+                  <p>Remember the three types of marks from the Marking Scheme Decoder? This structure hits all three: attempt marks for writing the formula, method marks for substituting and solving, and answer marks for the final result.</p>
+                  <StackBuilder />
+                </>
+              )}
             </ReadingSection>
           )}
 
-          {activeSection === 3 && (
+          {!essentials && activeSection === 3 && (
             <ReadingSection title="The Marks-Shape Connection." eyebrow="04 // The Decoder" icon={BarChart2} theme={theme}>
               <p>The marks beside a question tell you <em>exactly</em> what <Highlight description="The 'shape' of an answer means its length and structure. A 4-mark answer should look completely different from a 20-mark answer. The marks are a blueprint telling you exactly how much to write and how to organise it." theme={theme}>SHAPE</Highlight> your answer should be. Here is how to decode them:</p>
               <div className="my-6 space-y-2.5">
@@ -744,7 +778,7 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
             </ReadingSection>
           )}
 
-          {activeSection === 4 && (
+          {!essentials && activeSection === 4 && (
             <ReadingSection title="The 60% Answer." eyebrow="05 // The Rescue" icon={LifeBuoy} theme={theme}>
               <p>What do you do when you only <em>half</em>-know the answer? This is not about attempt marks — that is about whether to write <em>anything at all</em>. This is about how to <Highlight description="A structured partial answer uses clear formatting — numbered points, definitions, diagrams, question language — to make sure every piece of knowledge you DO have is visible and earnable. It is about maximising what you get from what you know." theme={theme}>STRUCTURE a partial answer</Highlight> to maximise marks when you know some of the content but not all of it.</p>
               <p>Here is the strategy:</p>
@@ -764,7 +798,7 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
             </ReadingSection>
           )}
 
-          {activeSection === 5 && (
+          {!essentials && activeSection === 5 && (
             <ReadingSection title="Subject-Specific Structures." eyebrow="06 // The Toolkit" icon={Wrench} theme={theme}>
               <p>Here is a quick reference for the dominant answer structure in each subject family. Keep this in mind as you practise past papers.</p>
               <div className="my-6 space-y-3">
@@ -797,9 +831,13 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
             </ReadingSection>
           )}
 
-          {activeSection === 6 && (
-            <ReadingSection title="Your Engineering Toolkit." eyebrow="07 // The Plan" icon={Target} theme={theme}>
-              <p>You now have <strong>four frameworks</strong> for building better answers:</p>
+          {(essentials ? activeSection === 3 : activeSection === 6) && (
+            <ReadingSection title="Your Engineering Toolkit." eyebrow={essentials ? "04 // The Plan" : "07 // The Plan"} icon={Target} theme={theme}>
+              {essentials ? (
+                <p>You now have the key frameworks: PEEL for essays, S&sup3;S for science, the marks-shape decoder, and the 60% rescue strategy.</p>
+              ) : (
+                <p>You now have <strong>four frameworks</strong> for building better answers:</p>
+              )}
               <div className="my-6 space-y-2.5">
                 <div className="flex items-center gap-3 p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
                   <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-700 flex-shrink-0">1</span>

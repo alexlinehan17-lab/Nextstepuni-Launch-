@@ -12,6 +12,7 @@ import { type ModuleProgress } from '../types';
 import { emeraldTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useNorthStar } from '../hooks/useNorthStar';
 import NorthStarCallout from './NorthStarCallout';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
@@ -372,6 +373,7 @@ const CortisolSimulator = () => {
 
 // --- MODULE COMPONENT ---
 const HopeProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const { northStar } = useNorthStar();
   const sections = [
     { id: 'schematic', title: 'The Schematic: De-Coding Hope', eyebrow: '01 // The Blueprint', icon: BookOpen },
@@ -399,8 +401,12 @@ const HopeProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgres
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Schematic: De-Coding Hope." eyebrow="Step 1" icon={BookOpen} theme={theme}>
+              {essentials ? (<>
+              <p>Hope is a skill you can train. It has a simple formula: Hope = Goals + <Highlight description="Your willpower — the raw 'I can do this' energy that gets you off the couch and started. It's the spark that fires up your engine." theme={theme}>Agency</Highlight> (your drive to start) + <Highlight description="Your waypower — the ability to come up with a plan, think of backup routes, and adapt when things go sideways. It's the sat-nav that keeps you on course." theme={theme}>Pathways</Highlight> (your plan to get there). You can practise and improve each part. Try the diagnostic below to see where you are strong.</p>
+              </>) : (<>
               <p>Forget everything you think you know about hope. It's not a fluffy feeling or wishful thinking. Hope is actually a skill — a way of thinking that you can learn, practise, and get seriously good at. Think of it as the engineering manual for your brain's motivation system.</p>
               <p>The formula is simple: Hope = Goals + <Highlight description="Your willpower — the raw 'I can do this' energy that gets you off the couch and started. It's the spark that fires up your engine." theme={theme}>Agency</Highlight> + <Highlight description="Your waypower — the ability to come up with a plan, think of backup routes, and adapt when things go sideways. It's the sat-nav that keeps you on course." theme={theme}>Pathways</Highlight>. A quick diagnostic can help you see where your own circuit is strong and where it might need work.</p>
+              </>)}
               <HopeDiagnostic />
               <MicroCommitment theme={theme}>
                 <p>Think of one vague goal you have (e.g., 'do better in French'). Open the notes app on your phone and re-write it as a clear, specific goal (e.g., 'Learn 10 new French vocabulary words by tomorrow evening').</p>
@@ -409,8 +415,12 @@ const HopeProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgres
           )}
            {activeSection === 1 && (
             <ReadingSection title="Your Brain's Circuit Board." eyebrow="Step 2" icon={Cpu} theme={theme}>
+              {essentials ? (<>
+              <p>Your brain has a <Highlight description="Your emotional brain (the accelerator) is already at full power, but your planning brain (the brakes) is still being built. That's why you can desperately want something but struggle to plan how to get it. It's not a flaw — it's just where your brain is at right now." theme={theme}>Developmental Mismatch</Highlight> right now. Your <Highlight description="The emotional engine room of your brain. It's what drives your desire for rewards, your excitement, and your impulses. In your teens, it's turned up to maximum — which gives you massive energy and motivation." theme={theme}>Limbic System</Highlight> (emotions, drive) is at full power. Your <Highlight description="The planning department of your brain, right behind your forehead. It handles long-term thinking, impulse control, and problem-solving. It's still under construction until your mid-20s — which is why planning feels harder than wanting." theme={theme}>Prefrontal Cortex</Highlight> (planning, brakes) is still being built. That is why wanting something feels easy but planning feels hard. It is not a character flaw. It is biology. Your job is to train the planning side.</p>
+              </>) : (<>
               <p>Your brain right now is a high-tech circuit board undergoing a massive upgrade. But here's the catch: not all parts get upgraded at the same speed. This creates a <Highlight description="Your emotional brain (the accelerator) is already at full power, but your planning brain (the brakes) is still being built. That's why you can desperately want something but struggle to plan how to get it. It's not a flaw — it's just where your brain is at right now." theme={theme}>Developmental Mismatch</Highlight>.</p>
               <p>Your <Highlight description="The emotional engine room of your brain. It's what drives your desire for rewards, your excitement, and your impulses. In your teens, it's turned up to maximum — which gives you massive energy and motivation." theme={theme}>Limbic System</Highlight> (your 'accelerator') is already at full power, giving you huge amounts of energy and drive. But your <Highlight description="The planning department of your brain, right behind your forehead. It handles long-term thinking, impulse control, and problem-solving. It's still under construction until your mid-20s — which is why planning feels harder than wanting." theme={theme}>Prefrontal Cortex (PFC)</Highlight> (your 'brakes' and 'Sat-Nav') is still being built. This means your desire to succeed often outstrips your brain's ability to plan the route, leading to frustration. This isn't a character flaw — it's biology. Your job is to become a conscious engineer of this system.</p>
+              </>)}
               <BrainMismatchDiagram />
                <MicroCommitment theme={theme}>
                 <p>Next time you feel a strong impulse to procrastinate, just notice it. Say to yourself, "That's my limbic system." Don't judge it, just label it. This simple act of noticing engages your PFC.</p>
@@ -419,8 +429,12 @@ const HopeProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgres
           )}
            {activeSection === 2 && (
             <ReadingSection title="Powering Up: The Science of 'Willpower'." eyebrow="Step 3" icon={Zap} theme={theme}>
+                {essentials ? (<>
+                <p>Your brain uses <Highlight description="Your brain's motivation chemical. It's what makes you feel driven and excited about goals. The trick is: you can learn to trigger it on demand by vividly imagining your future success." theme={theme}>Dopamine</Highlight> to create motivation. You can trigger it on demand. Use <Highlight description="Imagining your future so vividly that it feels real. Picture yourself walking out of the exam hall, relieved and proud. That vivid image fires up your brain's reward system right now, giving you the motivation to start." theme={theme}>Episodic Future Thinking</Highlight>: vividly picture yourself succeeding. "I can see myself walking out of the exam, relieved and proud." That vivid image gives your brain a real motivational boost right now. Vague thoughts like "I should study" do not work. Make the picture specific and emotional.</p>
+                </>) : (<>
                 <p>Agency — your willpower — is the electrical current in your Hope Circuit. It's the force that gets you to actually start. And it's not just about 'trying hard'; your brain has a specific chemical for this called <Highlight description="Your brain's motivation chemical. It's what makes you feel driven and excited about goals. The trick is: you can learn to trigger it on demand by vividly imagining your future success." theme={theme}>Dopamine</Highlight>.</p>
                 <p>Here's the key: there's a huge difference between "cold" and "hot" thinking. "Cold" thinking is vague and abstract ("I should study"). "Hot" thinking — or <Highlight description="Imagining your future so vividly that it feels real. Picture yourself walking out of the exam hall, relieved and proud. That vivid image fires up your brain's reward system right now, giving you the motivation to start." theme={theme}>Episodic Future Thinking</Highlight> — is vivid and emotional ("I can see myself walking out of that exam hall, relieved and proud"). That vivid image fires up your brain's reward system and gives you a real motivational boost. You can literally learn to generate your own voltage.</p>
+                </>)}
                 <DopamineDial />
                 <MicroCommitment theme={theme}>
                     <p>Before you start studying tonight, take 60 seconds. Close your eyes and vividly imagine the feeling of relief and pride after you finish. You're practicing Episodic Future Thinking and giving your brain a small, upfront hit of dopamine.</p>
@@ -430,8 +444,12 @@ const HopeProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgres
           {activeSection === 3 && (
             <ReadingSection title="Designing the Wires: The Art of 'Waypower'." eyebrow="Step 4" icon={Waypoints} theme={theme}>
               {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'hope-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
+              {essentials ? (<>
+              <p>Pathways thinking means planning your route and having backup plans. It comes down to three skills: planning (break big goals into steps), flexibility (have a Plan B), and problem-solving (spot obstacles before they hit). The Hope Map below trains exactly this.</p>
+              </>) : (<>
               <p>If Agency is the raw power, Pathways thinking is the wiring that directs it. It's the most important — and for teens, the hardest — part of the Hope Circuit, because it relies on the part of your brain that's still being built.</p>
               <p>Good waypower comes down to three skills.</p>
+              </>)}
               <ConceptCardGrid
                 cards={[
                   { number: 1, term: "Planning", description: "Breaking a big goal into small steps." },
@@ -439,7 +457,7 @@ const HopeProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgres
                   { number: 3, term: "Problem-Solving", description: "Seeing obstacles before they hit you and pre-loading solutions." },
                 ]}
               />
-              <p>The Hope Map below trains exactly this. It forces you to design your circuit before you turn on the power — and pre-loads solutions so failure doesn't knock you off course.</p>
+              {!essentials && <p>The Hope Map below trains exactly this. It forces you to design your circuit before you turn on the power — and pre-loads solutions so failure doesn't knock you off course.</p>}
               <HopeMap />
               <MicroCommitment theme={theme}>
                 <p>Map out one tiny goal for tomorrow using the Goal-Pathway-Obstacle format. E.g., Goal: Get homework done by 8 pm. Pathway: Start at 6 pm in the kitchen. Obstacle: My brother will be noisy. Solution: Put on headphones.</p>
@@ -448,8 +466,12 @@ const HopeProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgres
           )}
            {activeSection === 4 && (
             <ReadingSection title="Stress Shield: Your Surge Protector." eyebrow="Step 5" icon={Shield} theme={theme}>
+              {essentials ? (<>
+              <p>Stress floods your body with <Highlight description="Your body's stress chemical. A short burst helps you focus, but when it stays high for too long, it messes with your memory, your sleep, and your ability to think clearly. Basically, it shuts down the exact brain functions you need for exams." theme={theme}>Cortisol</Highlight>, which shuts down clear thinking. Hope is your shield. When you have a goal and a plan, your brain treats exams as problems to solve, not disasters. Your stress drops. Your thinking stays sharp. See the simulator below.</p>
+              </>) : (<>
               <p>Hopelessness isn't just a feeling — it has a physical effect on your body. When you face a threat (like a looming exam), your brain's alarm system — your <Highlight description="Your body's built-in stress alarm. When danger is detected, it fires off a chain reaction of hormones that flood you with stress chemicals. Useful if you're running from a bear. Less useful the night before your Maths paper." theme={theme}>Stress Response System</Highlight> — goes off, flooding you with the stress hormone <Highlight description="Your body's stress chemical. A short burst helps you focus, but when it stays high for too long, it messes with your memory, your sleep, and your ability to think clearly. Basically, it shuts down the exact brain functions you need for exams." theme={theme}>Cortisol</Highlight>.</p>
               <p>Here's the good news: hope acts as a built-in surge protector. When you have a clear goal and a plan, your brain sees a tough exam as a problem to solve — not a disaster. That lowers your stress levels and keeps your thinking brain online when you need it most. See for yourself how a hopeful response can physically change the stress in your body.</p>
+              </>)}
               <CortisolSimulator/>
               <MicroCommitment theme={theme}>
                 <p>The next time you feel exam stress, consciously name the feeling ('I am feeling stressed about Maths'). Acknowledging the signal is the first step any engineer takes to regulate a system.</p>
@@ -458,8 +480,12 @@ const HopeProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgres
           )}
            {activeSection === 5 && (
             <ReadingSection title="Upgrading the Hardware." eyebrow="Step 6" icon={Activity} theme={theme}>
+              {essentials ? (<>
+              <p>Your brain rewires itself based on what you practise. This is <Highlight description="Your brain's ability to rewire itself based on what you practise. Like a path through a field — the more you walk it, the clearer it gets. Every time you plan, set goals, or solve problems, you're literally building a stronger brain." theme={theme}>Neuroplasticity</Highlight>. Every time you plan, set goals, or solve problems, you build stronger <Highlight description="The major highway inside your brain that connects your planning centre to the rest of your thinking systems. The more you use it, the faster and stronger it gets — like upgrading from a country road to a motorway." theme={theme}>Planning Highways</Highlight> in your brain. Making a Hope Map is not just homework. You are physically upgrading your brain. Use the "Stop-Think" trick: set a reminder mid-study to ask "Is this the best use of my time right now?"</p>
+              </>) : (<>
               <p>Here's the most powerful idea in this entire unit: your brain's wiring isn't fixed. Every time you practise planning, goal-setting, or problem-solving, you physically strengthen the connections in your brain. This is called <Highlight description="Your brain's ability to rewire itself based on what you practise. Like a path through a field — the more you walk it, the clearer it gets. Every time you plan, set goals, or solve problems, you're literally building a stronger brain." theme={theme}>Neuroplasticity</Highlight>. The <Highlight description="The major highway inside your brain that connects your planning centre to the rest of your thinking systems. The more you use it, the faster and stronger it gets — like upgrading from a country road to a motorway." theme={theme}>Planning Highways</Highlight> in your brain work like muscles: the more you use them, the stronger they get.</p>
               <p>This means every time you make a Hope Map or break down a big task, you're not just getting work done — you're physically upgrading your brain. One of the best ways to train this is the 'Stop-Think' Protocol: a manual override for your brain's autopilot that forces you to engage the Hope Circuit.</p>
+              </>)}
                <MicroCommitment theme={theme}>
                 <p>Put a reminder on your phone for halfway through your study time tonight that just says 'STOP-THINK'. When it goes off, take 60 seconds to ask: "Is what I'm doing now the most effective way to reach my goal?"</p>
               </MicroCommitment>

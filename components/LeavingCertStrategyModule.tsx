@@ -11,6 +11,7 @@ import { type ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useNorthStar } from '../hooks/useNorthStar';
 import NorthStarCallout from './NorthStarCallout';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
@@ -379,6 +380,7 @@ const ExamDayTimelineBuilder = () => {
 
 // --- MODULE COMPONENT ---
 const LeavingCertStrategyModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'points-game', title: 'How the Points Game Works', eyebrow: '01 // The Rules', icon: Calculator },
     { id: 'picking-subjects', title: 'Picking Your Subjects Smartly', eyebrow: '02 // Subject Choice', icon: Briefcase },
@@ -408,8 +410,12 @@ const LeavingCertStrategyModule: React.FC<{ onBack: () => void; progress: Module
           {activeSection === 0 && (
             <ReadingSection title="How the Points Game Works." eyebrow="Step 1" icon={Calculator} theme={theme}>
               {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'leaving-cert-strategy-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
+              {essentials ? (<>
+              <p>The Leaving Cert is a points game. Working <Highlight description="It's not just about hours at the desk -- it's about putting your energy into the things that will actually move your points the most." theme={theme}>smart</Highlight> matters more than working hard. Three rules to know: only your best six results count, Higher Level Maths gives 25 bonus points for a H6 or above, and a H7 still gets you 37 points. Try the calculator below.</p>
+              </>) : (<>
               <p>Here's the thing nobody spells out clearly enough: the Leaving Cert is a points game. Working hard matters, but working <Highlight description="It's not just about hours at the desk -- it's about putting your energy into the things that will actually move your points the most." theme={theme}>smart</Highlight> matters more. Once you know how the scoring actually works, you can make way better decisions about where to focus.</p>
               <p>There are three rules you absolutely need to know. Get your head around these three things and you're already ahead of most students.</p>
+              </>)}
               <ConceptCardGrid
                 cards={[
                   { number: 1, term: "The \"Best Six\" Rule", description: "Only your six best results count. Your seventh subject is basically a safety net -- if one exam goes badly, it gets dropped." },
@@ -422,15 +428,23 @@ const LeavingCertStrategyModule: React.FC<{ onBack: () => void; progress: Module
           )}
            {activeSection === 1 && (
             <ReadingSection title="Picking Your Subjects Smartly." eyebrow="Step 2" icon={Briefcase} theme={theme}>
+              {essentials ? (<>
+              <p>Ignore the <Highlight description="People love to say some subjects are 'easy picks'. But H1 rates can be misleading -- sometimes a subject looks easy because only the strongest students take it (like native speakers in languages)." theme={theme}>'Easy Subject' Myth</Highlight>. Use the <Highlight description="Some subjects share a lot of content -- like Biology and Ag Science. If you pick subjects that overlap, you're learning the same material for two exams instead of one." theme={theme}>"Cluster" Approach</Highlight>: pick subjects with overlapping content. Or the <Highlight description="Subjects like Irish, DCG, and Geography have orals, projects, or coursework that let you lock in a chunk of your grade before the written exams even start." theme={theme}>"Bank Your Marks" Approach</Highlight>: choose subjects with coursework or orals that lock in marks before June.</p>
+              </>) : (<>
               <p>Your subject choice is one of the biggest decisions you'll make for the Leaving Cert. The goal is simple: pick subjects where you can get the most points without burning yourself out. That means ignoring the <Highlight description="People love to say some subjects are 'easy picks'. But H1 rates can be misleading -- sometimes a subject looks easy because only the strongest students take it (like native speakers in languages)." theme={theme}>'Easy Subject' Myth</Highlight> and thinking about what actually gives you an edge.</p>
               <p>Two approaches that really work: the <Highlight description="Some subjects share a lot of content -- like Biology and Ag Science. If you pick subjects that overlap, you're learning the same material for two exams instead of one." theme={theme}>"Cluster" Approach</Highlight> (picking subjects with overlapping content) and the <Highlight description="Subjects like Irish, DCG, and Geography have orals, projects, or coursework that let you lock in a chunk of your grade before the written exams even start." theme={theme}>"Bank Your Marks" Approach</Highlight> (choosing subjects where you can lock in marks through coursework or orals before June). Both take pressure off exam day.</p>
+              </>)}
               <SubjectClusterExplorer />
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="English, Maths & Irish." eyebrow="Step 3" icon={Target} theme={theme}>
+              {essentials ? (<>
+              <p>For English, learn <Highlight description="English is marked on four things: Purpose (30%), Coherence (30%), Language (30%), and Mechanics (10%). If you write with these in mind, you're giving the examiner exactly what they want." theme={theme}>how PCLM marking works</Highlight>. For Maths, use <Highlight description="You get marks for every correct step, even if your final answer is wrong. So never leave a question blank -- write down whatever you can, because every line could be worth marks." theme={theme}>partial credit</Highlight>: every correct step earns marks. For Irish, the oral is 40% of your grade. The key: <Highlight description="In the oral, it's much better to keep talking -- even with a few mistakes -- than to freeze up and say nothing. Fluency beats perfection." theme={theme}>keep talking</Highlight>, even with mistakes.</p>
+              </>) : (<>
               <p>Studying hard is one thing, but studying the exam itself is what makes the real difference. For English, you need to understand <Highlight description="English is marked on four things: Purpose (30%), Coherence (30%), Language (30%), and Mechanics (10%). If you write with these in mind, you're giving the examiner exactly what they want." theme={theme}>how PCLM marking works</Highlight> and make sure you're timing Paper 2 properly so you actually finish.</p>
               <p>For Maths, the big secret is <Highlight description="You get marks for every correct step, even if your final answer is wrong. So never leave a question blank -- write down whatever you can, because every line could be worth marks." theme={theme}>partial credit</Highlight> -- every correct step earns marks, even if the final answer is wrong. For Irish, the oral is worth 40% of your total grade, so it's a massive opportunity. The key? <Highlight description="In the oral, it's much better to keep talking -- even with a few mistakes -- than to freeze up and say nothing. Fluency beats perfection." theme={theme}>Keep talking</Highlight>, even if it's not perfect.</p>
+              </>)}
               <PersonalStory name="Ciara" role="Leaving Cert 2024, Dublin">
                 <p>I used to panic in the Irish oral and go completely silent when I made a mistake. Once I realised the examiner just wanted to hear me talk, I stopped worrying about being perfect and just kept going. I ended up getting a H3 -- way higher than I expected.</p>
               </PersonalStory>
@@ -438,22 +452,34 @@ const LeavingCertStrategyModule: React.FC<{ onBack: () => void; progress: Module
           )}
            {activeSection === 3 && (
             <ReadingSection title="Your Other Subjects." eyebrow="Step 4" icon={PenSquare} theme={theme}>
+              {essentials ? (<>
+              <p>Each subject has its own marking rules. Biology rewards <Highlight description="The examiner is looking for exact keywords. A close synonym often won't count -- you need the precise term from the syllabus, like 'semi-permeable membrane' for osmosis." theme={theme}>exact keywords</Highlight>. Geography rewards <Highlight description="Geography essays are marked on how many distinct, relevant facts you include. Each one is usually worth about 2 marks, so pack in as many clear points as you can." theme={theme}>clear, separate facts</Highlight>. Business rewards <Highlight description="Long questions in Business follow a pattern: State your point, Explain what it means, then give an Example. Stick to this and you'll pick up marks consistently." theme={theme}>structure</Highlight>: use "State, Explain, Example." These are not tips. They are how the marking schemes actually work.</p>
+              </>) : (<>
               <p>Every subject has its own way of giving out marks, and knowing how each one works is a huge advantage. In Biology, it's all about <Highlight description="The examiner is looking for exact keywords. A close synonym often won't count -- you need the precise term from the syllabus, like 'semi-permeable membrane' for osmosis." theme={theme}>using the exact right words</Highlight> -- the marking scheme rewards specific keywords, not vague descriptions. In Geography, it's about <Highlight description="Geography essays are marked on how many distinct, relevant facts you include. Each one is usually worth about 2 marks, so pack in as many clear points as you can." theme={theme}>packing in clear, separate facts</Highlight> rather than writing long flowery paragraphs.</p>
               <p>For Business, <Highlight description="Long questions in Business follow a pattern: State your point, Explain what it means, then give an Example. Stick to this and you'll pick up marks consistently." theme={theme}>structure is everything</Highlight> -- follow the "State, Explain, Example" format and you'll pick up marks every time. These aren't just tips; they're how the marking schemes actually work.</p>
+              </>)}
             </ReadingSection>
           )}
            {activeSection === 4 && (
             <ReadingSection title="What Examiners Actually Want." eyebrow="Step 5" icon={Eye} theme={theme}>
+              {essentials ? (<>
+              <p>Every question has a <Highlight description="Words like 'Describe', 'Explain', and 'Evaluate' each tell you to answer in a completely different way. Getting this wrong is one of the most common reasons students lose marks." theme={theme}>command word</Highlight> like "Describe" or "Explain." Each one requires a different answer style. Get this wrong and you lose marks even when you know the topic. Read the <Highlight description="The SEC publishes reports that spell out exactly where students went wrong in previous years. It's basically a list of mistakes to avoid -- like having the answers in advance." theme={theme}>Chief Examiner's Report</Highlight> on examinations.ie. It tells you the most common mistakes.</p>
+              </>) : (<>
               <p>There's a whole layer to the exams that nobody really teaches you in class. Every exam question has a <Highlight description="Words like 'Describe', 'Explain', and 'Evaluate' each tell you to answer in a completely different way. Getting this wrong is one of the most common reasons students lose marks." theme={theme}>command word</Highlight> -- a verb like "Describe" or "Explain" -- and each one is asking for a different type of answer. Mix them up and you'll lose marks even if you know the topic inside out.</p>
               <p>Here's a brilliant free resource most students never use: the <Highlight description="The SEC publishes reports that spell out exactly where students went wrong in previous years. It's basically a list of mistakes to avoid -- like having the answers in advance." theme={theme}>Chief Examiner's Report</Highlight>. It's published by the SEC and literally tells you the most common mistakes students make. It's the closest thing to a cheat sheet you'll ever get.</p>
+              </>)}
               <CommandWordDecoder />
               <MicroCommitment theme={theme}><p>Go to the SEC website (examinations.ie), find the most recent Chief Examiner's Report for your favourite subject, and read only the "Recommendations to Candidates" section. It takes five minutes and it's genuinely eye-opening.</p></MicroCommitment>
             </ReadingSection>
           )}
            {activeSection === 5 && (
             <ReadingSection title="Exam Day: Your Game Plan." eyebrow="Step 6" icon={HeartPulse} theme={theme}>
+              {essentials ? (<>
+              <p>Use the <Highlight description="When you sit down, take 30 seconds to breathe slowly and calm your nerves. Then scribble down key formulas, quotes, or facts onto your rough work page before you forget them. This frees up your brain to focus on answering." theme={theme}>"First 5 Minutes" trick</Highlight>: breathe, then brain-dump key facts onto rough paper. Follow a <Highlight description="Give each question a set amount of time and move on when it's up, no matter what. The first few marks on the next question are always easier to pick up than squeezing out the last marks on the current one." theme={theme}>strict timing plan</Highlight>. When time is up, move on. The first marks on the next question are always easier to get.</p>
+              </>) : (<>
               <p>All the studying in the world won't help if you fall apart on the day. The exam hall is stressful, and knowing how to manage yourself physically and mentally is just as important as knowing the content.</p>
               <p>Start with the <Highlight description="When you sit down, take 30 seconds to breathe slowly and calm your nerves. Then scribble down key formulas, quotes, or facts onto your rough work page before you forget them. This frees up your brain to focus on answering." theme={theme}>"First 5 Minutes" trick</Highlight> -- breathe, then brain-dump your key facts onto rough paper. Stick to a <Highlight description="Give each question a set amount of time and move on when it's up, no matter what. The first few marks on the next question are always easier to pick up than squeezing out the last marks on the current one." theme={theme}>strict timing plan</Highlight> -- when time's up on a question, move on. The first marks on the next question are always easier to get than the last marks on the one you're stuck on.</p>
+              </>)}
               <ExamDayTimelineBuilder />
             </ReadingSection>
           )}

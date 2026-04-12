@@ -13,6 +13,7 @@ import { type ModuleProgress } from '../types';
 import { blueTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = blueTheme;
 
@@ -230,6 +231,7 @@ const ShowDontTellConverter = () => {
 
 // --- MODULE COMPONENT ---
 const MasteringEnglishModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'pclm-blueprint', title: 'How You Actually Get Marked', eyebrow: '01 // The Marking Scheme', icon: Settings },
     { id: 'paper1-engine', title: 'Paper 1: Where the Marks Are', eyebrow: '02 // Language & Comprehension', icon: BookOpen },
@@ -256,48 +258,106 @@ const MasteringEnglishModule: React.FC<{ onBack: () => void; progress: ModulePro
         <>
           {activeSection === 0 && (
             <ReadingSection title="How You Actually Get Marked." eyebrow="Step 1" icon={Settings} theme={theme}>
-              <p>Here's something most students don't realise: English is not marked on vibes. Every single answer you write is graded using the same four-part system called <Highlight description="PCLM stands for Purpose, Coherence, Language, and Mechanics. These are the four things the examiner scores you on, every single time." theme={theme}>PCLM</Highlight>. Once you understand how it works, you'll know exactly what separates a H3 from a H1.</p>
-              <p><Highlight description="Purpose means: did you actually answer what was asked? If you go off-topic, everything else suffers." theme={theme}>Purpose</Highlight> is the most important one. You could write the best essay of your life, but if it doesn't answer the question, it's worth very little. Even more importantly, your Coherence and Language marks are capped by your Purpose mark. So answering the actual question always comes first.</p>
-              <PersonalStory name="Aisling" role="6th Year, Kilkenny">
-                <p>I used to just pick whatever essay title sounded nice and write whatever came into my head. I got a H4 in my mock. Then I learned about PCLM and realised I was losing marks on Purpose every time. In the real exam, I spent five minutes planning how my essay actually answered the question before I started writing. I got a H2. Same writing ability -- I just stopped ignoring what the examiner was actually looking for.</p>
-              </PersonalStory>
+              {essentials ? (
+                <>
+                  <p>Every English answer you write is marked on four things called <Highlight description="PCLM stands for Purpose, Coherence, Language, and Mechanics. These are the four things the examiner scores you on, every single time." theme={theme}>PCLM</Highlight>: Purpose, Coherence, Language, and Mechanics.</p>
+                  <p><Highlight description="Purpose means: did you actually answer what was asked? If you go off-topic, everything else suffers." theme={theme}>Purpose</Highlight> matters most. If you don't answer the question, nothing else saves you. Your Coherence and Language marks are capped by Purpose. Always answer the question first.</p>
+                </>
+              ) : (
+                <>
+                  <p>Here's something most students don't realise: English is not marked on vibes. Every single answer you write is graded using the same four-part system called <Highlight description="PCLM stands for Purpose, Coherence, Language, and Mechanics. These are the four things the examiner scores you on, every single time." theme={theme}>PCLM</Highlight>. Once you understand how it works, you'll know exactly what separates a H3 from a H1.</p>
+                  <p><Highlight description="Purpose means: did you actually answer what was asked? If you go off-topic, everything else suffers." theme={theme}>Purpose</Highlight> is the most important one. You could write the best essay of your life, but if it doesn't answer the question, it's worth very little. Even more importantly, your Coherence and Language marks are capped by your Purpose mark. So answering the actual question always comes first.</p>
+                  <PersonalStory name="Aisling" role="6th Year, Kilkenny">
+                    <p>I used to just pick whatever essay title sounded nice and write whatever came into my head. I got a H4 in my mock. Then I learned about PCLM and realised I was losing marks on Purpose every time. In the real exam, I spent five minutes planning how my essay actually answered the question before I started writing. I got a H2. Same writing ability -- I just stopped ignoring what the examiner was actually looking for.</p>
+                  </PersonalStory>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 1 && (
             <ReadingSection title="Paper 1: Where the Marks Are." eyebrow="Step 2" icon={BookOpen} theme={theme}>
-              <p>Paper 1 is half your total English grade, and it's the easiest place to pick up reliable marks. <Highlight description="Question A is the comprehension section. You read a text and answer questions about what it says and how it's written." theme={theme}>Question A</Highlight> tests whether you can read closely and explain what's going on. The 20-mark style question is the big one -- don't just name techniques like "metaphor" or "alliteration." You need to explain what effect they have on the reader and why the writer used them.</p>
-              <p><Highlight description="Question B asks you to write in a specific format like a speech, a letter, or a blog post. You have to match the format exactly." theme={theme}>Question B</Highlight> is where a lot of students trip up. It asks you to write something in a specific format -- like a letter, a speech, or a blog post. If the question says "write a speech" and you write a personal essay instead, your Purpose mark drops through the floor no matter how good the writing is. Always check the format before you start.</p>
+              {essentials ? (
+                <>
+                  <p>Paper 1 is half your grade. <Highlight description="Question A is the comprehension section. You read a text and answer questions about what it says and how it's written." theme={theme}>Question A</Highlight> tests close reading. For the 20-mark style question, don't just name techniques. Explain what effect they have on the reader.</p>
+                  <p><Highlight description="Question B asks you to write in a specific format like a speech, a letter, or a blog post. You have to match the format exactly." theme={theme}>Question B</Highlight> asks you to write in a format like a speech or letter. If the question says "speech" and you write an essay, your Purpose mark collapses. Always check the format first.</p>
+                </>
+              ) : (
+                <>
+                  <p>Paper 1 is half your total English grade, and it's the easiest place to pick up reliable marks. <Highlight description="Question A is the comprehension section. You read a text and answer questions about what it says and how it's written." theme={theme}>Question A</Highlight> tests whether you can read closely and explain what's going on. The 20-mark style question is the big one -- don't just name techniques like "metaphor" or "alliteration." You need to explain what effect they have on the reader and why the writer used them.</p>
+                  <p><Highlight description="Question B asks you to write in a specific format like a speech, a letter, or a blog post. You have to match the format exactly." theme={theme}>Question B</Highlight> is where a lot of students trip up. It asks you to write something in a specific format -- like a letter, a speech, or a blog post. If the question says "write a speech" and you write a personal essay instead, your Purpose mark drops through the floor no matter how good the writing is. Always check the format before you start.</p>
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 2 && (
             <ReadingSection title="The 100-Mark Essay." eyebrow="Step 3" icon={PenSquare} theme={theme}>
-              <p>The Composing section is worth 25% of your total grade -- that's a massive chunk from one essay. The Personal Essay is the most popular choice, but most students do it wrong. It's not just telling a story. It needs to be a <Highlight description="A reflective piece means you don't just describe what happened -- you show how it felt, what you learned, and how it changed you." theme={theme}>reflective piece</Highlight> where you show how an experience affected you. "Show, don't tell" is the golden rule here.</p>
-              <p>The Short Story can pay off big if you keep it tight -- one event, one short timeframe, no trying to cram in an entire life story. The Discursive Essay needs you to look at both sides of an issue fairly, while the Persuasive Essay is all about picking a side and arguing it hard with punchy language.</p>
+              {essentials ? (
+                <>
+                  <p>The Composing section is worth 25% of your grade. The Personal Essay needs to be a <Highlight description="A reflective piece means you don't just describe what happened -- you show how it felt, what you learned, and how it changed you." theme={theme}>reflective piece</Highlight>, not just a story. Show how an experience affected you. Use "show, don't tell."</p>
+                  <p>Short Story: keep it to one event, one timeframe. Discursive Essay: cover both sides fairly. Persuasive Essay: pick a side, argue hard.</p>
+                </>
+              ) : (
+                <>
+                  <p>The Composing section is worth 25% of your total grade -- that's a massive chunk from one essay. The Personal Essay is the most popular choice, but most students do it wrong. It's not just telling a story. It needs to be a <Highlight description="A reflective piece means you don't just describe what happened -- you show how it felt, what you learned, and how it changed you." theme={theme}>reflective piece</Highlight> where you show how an experience affected you. "Show, don't tell" is the golden rule here.</p>
+                  <p>The Short Story can pay off big if you keep it tight -- one event, one short timeframe, no trying to cram in an entire life story. The Discursive Essay needs you to look at both sides of an issue fairly, while the Persuasive Essay is all about picking a side and arguing it hard with punchy language.</p>
+                </>
+              )}
               <ShowDontTellConverter />
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="Paper 2: Single Text (Macbeth)." eyebrow="Step 4" icon={MessageSquare} theme={theme}>
-               <p>For 2026, the Shakespeare play is Macbeth. To get top marks, you can't just talk about themes on their own -- you need to show how themes, characters, and imagery all connect to each other. The big themes are: <Highlight description="Ambition isn't just about wanting power. It's about what that wanting does to you as a person -- the guilt, the paranoia, the destruction." theme={theme}>Ambition and what it does to people</Highlight>, good leadership vs. tyranny, the supernatural and fate, and how things aren't always what they seem.</p>
-               <p>When you're writing about characters, focus on how they change over the course of the play. Macbeth goes from being called "brave Macbeth" at the start to being called a "butcher" by the end. Lady Macbeth goes the opposite way -- she starts off ruthless and in control, but by the end she's sleepwalking and falling apart with guilt. Showing you understand these journeys is what gets you the big marks.</p>
+              {essentials ? (
+                <>
+                  <p>For 2026, the play is Macbeth. Connect themes, characters, and imagery together. Big themes: <Highlight description="Ambition isn't just about wanting power. It's about what that wanting does to you as a person -- the guilt, the paranoia, the destruction." theme={theme}>Ambition and its consequences</Highlight>, leadership vs. tyranny, the supernatural, and appearances vs. reality.</p>
+                  <p>Focus on character change. Macbeth starts as "brave Macbeth" and ends as a "butcher." Lady Macbeth starts ruthless but crumbles with guilt. Show you understand these journeys.</p>
+                </>
+              ) : (
+                <>
+                  <p>For 2026, the Shakespeare play is Macbeth. To get top marks, you can't just talk about themes on their own -- you need to show how themes, characters, and imagery all connect to each other. The big themes are: <Highlight description="Ambition isn't just about wanting power. It's about what that wanting does to you as a person -- the guilt, the paranoia, the destruction." theme={theme}>Ambition and what it does to people</Highlight>, good leadership vs. tyranny, the supernatural and fate, and how things aren't always what they seem.</p>
+                  <p>When you're writing about characters, focus on how they change over the course of the play. Macbeth goes from being called "brave Macbeth" at the start to being called a "butcher" by the end. Lady Macbeth goes the opposite way -- she starts off ruthless and in control, but by the end she's sleepwalking and falling apart with guilt. Showing you understand these journeys is what gets you the big marks.</p>
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 4 && (
             <ReadingSection title="The Comparative Study." eyebrow="Step 5" icon={BarChart} theme={theme}>
-                <p>For Higher Level 2026, the three comparative modes are <strong>Cultural Context</strong>, <strong>General Vision and Viewpoint (GVV)</strong>, and <strong>Literary Genre</strong>. Important: "Theme or Issue" is NOT a mode for Higher Level. Don't waste your time preparing for it.</p>
-                <p>The secret to getting top marks here is linking your texts together constantly. Don't write about Text A, then Text B, then Text C separately. In every paragraph, compare and contrast them side by side. The best way to prepare is the <Highlight description="Pick 4-5 key moments from each text. These are scenes or turning points you can talk about no matter which mode comes up on the exam." theme={theme}>"Key Moment" method</Highlight> -- pick 4-5 key moments from each text that you can use flexibly no matter which mode comes up.</p>
+              {essentials ? (
+                <>
+                  <p>The three HL modes for 2026: Cultural Context, GVV, and Literary Genre. "Theme or Issue" is NOT a Higher Level mode.</p>
+                  <p>Link your texts in every paragraph. Don't write about each text separately. Use the <Highlight description="Pick 4-5 key moments from each text. These are scenes or turning points you can talk about no matter which mode comes up on the exam." theme={theme}>"Key Moment" method</Highlight>: pick 4-5 key moments per text. You can use them for any mode.</p>
+                </>
+              ) : (
+                <>
+                  <p>For Higher Level 2026, the three comparative modes are <strong>Cultural Context</strong>, <strong>General Vision and Viewpoint (GVV)</strong>, and <strong>Literary Genre</strong>. Important: "Theme or Issue" is NOT a mode for Higher Level. Don't waste your time preparing for it.</p>
+                  <p>The secret to getting top marks here is linking your texts together constantly. Don't write about Text A, then Text B, then Text C separately. In every paragraph, compare and contrast them side by side. The best way to prepare is the <Highlight description="Pick 4-5 key moments from each text. These are scenes or turning points you can talk about no matter which mode comes up on the exam." theme={theme}>"Key Moment" method</Highlight> -- pick 4-5 key moments from each text that you can use flexibly no matter which mode comes up.</p>
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 5 && (
             <ReadingSection title="Prescribed Poetry." eyebrow="Step 6" icon={Mic} theme={theme}>
-              <p>The <Highlight description="There are 8 poets on the course but only 4 come up on the exam. If you study 5, you're guaranteed at least one of yours will appear. Study fewer and you're gambling." theme={theme}>"Big 4+1" Rule</Highlight> is the most important thing to know about poetry. There are 8 poets on the course, but only 4 appear on the paper. If you study 5 poets well, you're guaranteed one of yours will come up. Study fewer and you're taking a serious risk.</p>
-              <p>For top marks, don't just talk about what the poet is saying -- talk about how they say it. What words do they choose? What images do they use? How does the poem's rhythm or structure add to the feeling? Showing you can do both is what separates a H2 from a H1.</p>
+              {essentials ? (
+                <>
+                  <p>Use the <Highlight description="There are 8 poets on the course but only 4 come up on the exam. If you study 5, you're guaranteed at least one of yours will appear. Study fewer and you're gambling." theme={theme}>"Big 4+1" Rule</Highlight>. There are 8 poets, only 4 appear on the paper. Study 5 well and you're guaranteed a match.</p>
+                  <p>Don't just say what a poem means. Explain how the poet creates that meaning. Talk about word choice, imagery, rhythm. That's what separates H2 from H1.</p>
+                </>
+              ) : (
+                <>
+                  <p>The <Highlight description="There are 8 poets on the course but only 4 come up on the exam. If you study 5, you're guaranteed at least one of yours will appear. Study fewer and you're gambling." theme={theme}>"Big 4+1" Rule</Highlight> is the most important thing to know about poetry. There are 8 poets on the course, but only 4 appear on the paper. If you study 5 poets well, you're guaranteed one of yours will come up. Study fewer and you're taking a serious risk.</p>
+                  <p>For top marks, don't just talk about what the poet is saying -- talk about how they say it. What words do they choose? What images do they use? How does the poem's rhythm or structure add to the feeling? Showing you can do both is what separates a H2 from a H1.</p>
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 6 && (
             <ReadingSection title="Your English Toolkit." eyebrow="Step 7" icon={BrainCircuit} theme={theme}>
-              <p>A few smart techniques can make a real difference to your grade. For Paper 1 Comprehension, try <Highlight description="Read the questions before you read the text. Give each question a colour, then highlight useful quotes in matching colours as you read. It saves loads of time." theme={theme}>reading the questions first</Highlight> and colour-coding useful quotes as you read -- it saves loads of time. When quoting in essays, use <Highlight description="Short quotes of 3-5 words that you weave into your own sentences flow much better than dropping in a massive block quote." theme={theme}>short embedded quotes</Highlight> (3-5 words woven into your sentence) instead of big chunky block quotes. And watch your time carefully across both papers -- running out of time is one of the most common reasons students lose marks.</p>
-               <MicroCommitment theme={theme}>
+              {essentials ? (
+                <p>For Comprehension, <Highlight description="Read the questions before you read the text. Give each question a colour, then highlight useful quotes in matching colours as you read. It saves loads of time." theme={theme}>read the questions first</Highlight>. Colour-code useful quotes as you read. Use <Highlight description="Short quotes of 3-5 words that you weave into your own sentences flow much better than dropping in a massive block quote." theme={theme}>short embedded quotes</Highlight> of 3-5 words in your essays. Watch your time across both papers.</p>
+              ) : (
+                <p>A few smart techniques can make a real difference to your grade. For Paper 1 Comprehension, try <Highlight description="Read the questions before you read the text. Give each question a colour, then highlight useful quotes in matching colours as you read. It saves loads of time." theme={theme}>reading the questions first</Highlight> and colour-coding useful quotes as you read -- it saves loads of time. When quoting in essays, use <Highlight description="Short quotes of 3-5 words that you weave into your own sentences flow much better than dropping in a massive block quote." theme={theme}>short embedded quotes</Highlight> (3-5 words woven into your sentence) instead of big chunky block quotes. And watch your time carefully across both papers -- running out of time is one of the most common reasons students lose marks.</p>
+              )}
+              <MicroCommitment theme={theme}>
                 <p>For your next practice essay, try a PCLM check. Grab four different coloured pens or highlighters and go through your essay marking where you've shown Purpose (did I answer the question?), Coherence (does it flow?), Language (is my writing interesting?), and Mechanics (spelling, grammar, paragraphs). It's a quick way to spot where you're losing marks.</p>
               </MicroCommitment>
             </ReadingSection>

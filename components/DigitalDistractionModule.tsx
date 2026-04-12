@@ -13,6 +13,7 @@ import { type ModuleProgress } from '../types';
 import { slateTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = slateTheme;
 
@@ -349,6 +350,7 @@ const PhasedDetoxRoadmap = () => {
 
 // --- MODULE COMPONENT ---
 const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'adversary', title: 'Why Your Phone Wins', eyebrow: '01 // Your Brain vs Your Phone', icon: BrainCircuit },
     { id: 'hardware-barrier', title: 'The Phone Swap', eyebrow: '02 // The Physical Barrier', icon: Shield },
@@ -376,49 +378,104 @@ const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleP
         <>
           {activeSection === 0 && (
             <ReadingSection title="Why Your Phone Wins." eyebrow="Step 1" icon={BrainCircuit} theme={theme}>
-              <p>If you can't stop reaching for your phone, that's not because you're lazy or weak. It's because your brain is literally wired to lose this fight right now. The part of your brain that handles <Highlight description="This is the part right behind your forehead that helps you plan ahead, resist impulses, and make good decisions. In your teens, it's still developing -- which is why it's harder to say no to distractions." theme={theme}>self-control and planning</Highlight> isn't fully developed yet, while the part that craves <Highlight description="This is the emotional, reward-seeking part of your brain. It's the bit that lights up when you get a notification or a like. In your teens, it's running the show." theme={theme}>rewards and excitement</Highlight> is running on overdrive.</p>
-              <p>Apps like TikTok, Instagram, and Snapchat are built to exploit exactly this. They work like <Highlight description="Think of a slot machine -- you never know when you'll hit the jackpot, so you keep pulling the lever. Social media does the same thing with likes and messages. You keep checking because sometimes there's something exciting, and that unpredictability is addictive." theme={theme}>digital slot machines</Highlight>, giving you random hits of likes and messages that keep you coming back.</p>
-              <p>Here's the real kicker: every time you switch from studying to checking your phone, your brain doesn't just snap back. There's a kind of <Highlight description="When you switch from studying to your phone, your brain doesn't reset instantly. Part of it is still thinking about what you just saw. Research shows it takes about 23 minutes to get properly focused again." theme={theme}>mental hangover</Highlight> that takes about 23 minutes to clear. This module is about taking back control of your own attention -- so your study time actually counts.</p>
-              <PersonalStory name="Ciara" role="5th Year, Cork">
-                <p>"I used to think I was just bad at concentrating. Turns out I was checking my phone about 8 times an hour during study. Once I worked out how much focus time I was actually losing, it proper shocked me. I wasn't studying -- I was just sitting at a desk."</p>
-              </PersonalStory>
+              {essentials ? (
+                <>
+                  <p>You are not lazy. Your brain's self-control centre is still developing. The reward-seeking part is running full blast. Apps exploit this on purpose.</p>
+                  <p>Every phone check costs you 23 minutes of focus recovery. That means 3 checks per hour leaves almost zero deep work time. You need to make distractions physically harder to reach.</p>
+                </>
+              ) : (
+                <>
+                  <p>If you can't stop reaching for your phone, that's not because you're lazy or weak. It's because your brain is literally wired to lose this fight right now. The part of your brain that handles <Highlight description="This is the part right behind your forehead that helps you plan ahead, resist impulses, and make good decisions. In your teens, it's still developing -- which is why it's harder to say no to distractions." theme={theme}>self-control and planning</Highlight> isn't fully developed yet, while the part that craves <Highlight description="This is the emotional, reward-seeking part of your brain. It's the bit that lights up when you get a notification or a like. In your teens, it's running the show." theme={theme}>rewards and excitement</Highlight> is running on overdrive.</p>
+                  <p>Apps like TikTok, Instagram, and Snapchat are built to exploit exactly this. They work like <Highlight description="Think of a slot machine -- you never know when you'll hit the jackpot, so you keep pulling the lever. Social media does the same thing with likes and messages. You keep checking because sometimes there's something exciting, and that unpredictability is addictive." theme={theme}>digital slot machines</Highlight>, giving you random hits of likes and messages that keep you coming back.</p>
+                  <p>Here's the real kicker: every time you switch from studying to checking your phone, your brain doesn't just snap back. There's a kind of <Highlight description="When you switch from studying to your phone, your brain doesn't reset instantly. Part of it is still thinking about what you just saw. Research shows it takes about 23 minutes to get properly focused again." theme={theme}>mental hangover</Highlight> that takes about 23 minutes to clear. This module is about taking back control of your own attention -- so your study time actually counts.</p>
+                  <PersonalStory name="Ciara" role="5th Year, Cork">
+                    <p>"I used to think I was just bad at concentrating. Turns out I was checking my phone about 8 times an hour during study. Once I worked out how much focus time I was actually losing, it proper shocked me. I wasn't studying -- I was just sitting at a desk."</p>
+                  </PersonalStory>
+                </>
+              )}
               <AttentionDeficitCalculator />
             </ReadingSection>
           )}
           {activeSection === 1 && (
             <ReadingSection title="The Phone Swap." eyebrow="Step 2" icon={Shield} theme={theme}>
-              <p>Willpower alone won't cut it -- your brain is working against you (remember that underdeveloped self-control from Step 1?). So instead of relying on discipline, the smartest move is to change the actual device you're using during study time.</p>
-              <p>The nuclear option? A "dumb phone" -- one of those basic Nokias with no apps, no feed, no TikTok. If a notification can't reach you, it can't distract you. But there's a middle ground too. The key idea is <Highlight description="Basically, making it annoying to do the thing you want to avoid. If checking social media requires typing on tiny buttons or loading a slow browser, you'll naturally do it less. The harder something is, the less likely you are to bother." theme={theme}>friction</Highlight> -- the harder you make it to access distractions, the less likely you are to reach for them. Even something as simple as logging out of apps, or leaving your phone in another room, adds enough friction to break the habit.</p>
-              <p>You don't need to buy a new phone. You could borrow an old one from a parent or sibling during study blocks, or just use your phone's built-in Focus Mode or Do Not Disturb. The goal is the same: make distractions harder to reach than your books.</p>
+              {essentials ? (
+                <>
+                  <p>Do not rely on willpower. Make distractions physically harder to reach. Leave your phone in another room during study. Use Focus Mode or Do Not Disturb.</p>
+                  <p>The harder it is to check your phone, the less you will do it. Log out of apps. Borrow a basic phone for study blocks. Add friction between you and the distraction.</p>
+                </>
+              ) : (
+                <>
+                  <p>Willpower alone won't cut it -- your brain is working against you (remember that underdeveloped self-control from Step 1?). So instead of relying on discipline, the smartest move is to change the actual device you're using during study time.</p>
+                  <p>The nuclear option? A "dumb phone" -- one of those basic Nokias with no apps, no feed, no TikTok. If a notification can't reach you, it can't distract you. But there's a middle ground too. The key idea is <Highlight description="Basically, making it annoying to do the thing you want to avoid. If checking social media requires typing on tiny buttons or loading a slow browser, you'll naturally do it less. The harder something is, the less likely you are to bother." theme={theme}>friction</Highlight> -- the harder you make it to access distractions, the less likely you are to reach for them. Even something as simple as logging out of apps, or leaving your phone in another room, adds enough friction to break the habit.</p>
+                  <p>You don't need to buy a new phone. You could borrow an old one from a parent or sibling during study blocks, or just use your phone's built-in Focus Mode or Do Not Disturb. The goal is the same: make distractions harder to reach than your books.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="Locking Down Your Laptop." eyebrow="Step 3" icon={Laptop} theme={theme}>
-              <p>Your laptop is both your best study tool and your biggest trap. You open it to study, and twenty minutes later you're watching YouTube. Browser extensions that "block" sites are easy to turn off when you're tempted. What you need are proper <Highlight description="Free apps like Cold Turkey or Freedom that block distracting websites and apps on your laptop. The best ones have a 'locked mode' that makes it literally impossible to undo the block until the timer runs out -- even if you restart your computer." theme={theme}>website blockers</Highlight> that you genuinely can't get around.</p>
-              <p>The best approach is an <Highlight description="Instead of blocking individual bad sites (you'll always miss one), you block everything and then only allow the specific sites you need -- like Studyclix, Examinations.ie, or your school portal. This way, only useful stuff gets through." theme={theme}>allowlist</Highlight> -- block everything except the handful of sites you actually need for study, like Studyclix or Examinations.ie. And if you're worried about needing to look something up, try downloading what you need beforehand. You can save Wikipedia articles, past papers, or notes for <Highlight description="You can use tools like Kiwix to save entire websites (like Wikipedia) onto your laptop so you can access them without the internet. That way you get the information without the temptation of going online." theme={theme}>offline use</Highlight> so you have the information without the temptation of a live internet connection.</p>
+              {essentials ? (
+                <>
+                  <p>Install a proper website blocker like Cold Turkey or Freedom. Use "locked mode" so you cannot undo it. Block everything by default and only allow the sites you need for study.</p>
+                  <p>Download what you need before you start. Save past papers and notes for offline use. No live internet means no temptation.</p>
+                </>
+              ) : (
+                <>
+                  <p>Your laptop is both your best study tool and your biggest trap. You open it to study, and twenty minutes later you're watching YouTube. Browser extensions that "block" sites are easy to turn off when you're tempted. What you need are proper <Highlight description="Free apps like Cold Turkey or Freedom that block distracting websites and apps on your laptop. The best ones have a 'locked mode' that makes it literally impossible to undo the block until the timer runs out -- even if you restart your computer." theme={theme}>website blockers</Highlight> that you genuinely can't get around.</p>
+                  <p>The best approach is an <Highlight description="Instead of blocking individual bad sites (you'll always miss one), you block everything and then only allow the specific sites you need -- like Studyclix, Examinations.ie, or your school portal. This way, only useful stuff gets through." theme={theme}>allowlist</Highlight> -- block everything except the handful of sites you actually need for study, like Studyclix or Examinations.ie. And if you're worried about needing to look something up, try downloading what you need beforehand. You can save Wikipedia articles, past papers, or notes for <Highlight description="You can use tools like Kiwix to save entire websites (like Wikipedia) onto your laptop so you can access them without the internet. That way you get the information without the temptation of going online." theme={theme}>offline use</Highlight> so you have the information without the temptation of a live internet connection.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="Setting Up Your Space." eyebrow="Step 4" icon={Home} theme={theme}>
-              <p>Where you study matters more than you think. Here's a wild fact: just having your phone on the desk -- even face down, even on silent -- <Highlight description="Research from the University of Texas found that just having your phone visible drains your brainpower. Your brain is constantly spending energy resisting the urge to check it, even if you don't realise it. Moving it to another room completely removes that drain." theme={theme}>makes you worse at concentrating</Highlight>. Your brain is quietly fighting the urge to pick it up, and that uses up energy you could be putting into study.</p>
-              <p>"Out of sight, out of mind" isn't just a saying -- it's how your brain actually works. The fix is dead simple: move your phone out of the room while you study. Charge it in the kitchen or the hall. If you use it to check the time, stick a cheap clock on your desk instead (or use a watch). The less you can see your phone, the less it pulls at your attention.</p>
+              {essentials ? (
+                <p>Just having your phone visible drains your brainpower. Move it out of the room completely. Charge it in the kitchen. Use a cheap clock or watch for time. Out of sight, out of mind actually works.</p>
+              ) : (
+                <>
+                  <p>Where you study matters more than you think. Here's a wild fact: just having your phone on the desk -- even face down, even on silent -- <Highlight description="Research from the University of Texas found that just having your phone visible drains your brainpower. Your brain is constantly spending energy resisting the urge to check it, even if you don't realise it. Moving it to another room completely removes that drain." theme={theme}>makes you worse at concentrating</Highlight>. Your brain is quietly fighting the urge to pick it up, and that uses up energy you could be putting into study.</p>
+                  <p>"Out of sight, out of mind" isn't just a saying -- it's how your brain actually works. The fix is dead simple: move your phone out of the room while you study. Charge it in the kitchen or the hall. If you use it to check the time, stick a cheap clock on your desk instead (or use a watch). The less you can see your phone, the less it pulls at your attention.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 4 && (
             <ReadingSection title="Building Better Habits." eyebrow="Step 5" icon={Repeat} theme={theme}>
-              <p>The best way to beat distractions isn't willpower -- it's making good habits automatic so you don't even have to think about it. The first trick is <Highlight description="You attach a new habit to something you already do every day. The formula: 'After I [thing I always do], I will [new thing].' Because the first habit is automatic, the second one gets pulled along with it." theme={theme}>habit stacking</Highlight>. You pair your new habit with something you already do without thinking. For example: "After I walk in the door from school, I'll put my phone straight on the kitchen charger." You don't have to decide each day -- it just becomes what you do.</p>
-              <p>The second trick is making <Highlight description="You decide in advance what you'll do when a specific situation happens. The formula: 'If [this happens], then I will [do this].' For example: 'If I feel the urge to check Instagram, I'll stand up and do 5 star jumps.' It takes the decision-making out of the moment when you're tired and your willpower is low." theme={theme}>if-then plans</Highlight>. You decide in advance what you'll do when temptation hits. For example: "If I feel the urge to check Instagram, I'll stand up and do 5 star jumps." The point is that you've already made the decision, so when the moment comes, you don't have to negotiate with your tired brain.</p>
+              {essentials ? (
+                <>
+                  <p>Use habit stacking. Attach your new habit to something automatic. Example: "After I get home, phone goes on kitchen charger." No decision needed.</p>
+                  <p>Make if-then plans. Decide in advance what you will do when tempted. Example: "If I want to check Instagram, I will do 5 star jumps." You have already made the choice.</p>
+                </>
+              ) : (
+                <>
+                  <p>The best way to beat distractions isn't willpower -- it's making good habits automatic so you don't even have to think about it. The first trick is <Highlight description="You attach a new habit to something you already do every day. The formula: 'After I [thing I always do], I will [new thing].' Because the first habit is automatic, the second one gets pulled along with it." theme={theme}>habit stacking</Highlight>. You pair your new habit with something you already do without thinking. For example: "After I walk in the door from school, I'll put my phone straight on the kitchen charger." You don't have to decide each day -- it just becomes what you do.</p>
+                  <p>The second trick is making <Highlight description="You decide in advance what you'll do when a specific situation happens. The formula: 'If [this happens], then I will [do this].' For example: 'If I feel the urge to check Instagram, I'll stand up and do 5 star jumps.' It takes the decision-making out of the moment when you're tired and your willpower is low." theme={theme}>if-then plans</Highlight>. You decide in advance what you'll do when temptation hits. For example: "If I feel the urge to check Instagram, I'll stand up and do 5 star jumps." The point is that you've already made the decision, so when the moment comes, you don't have to negotiate with your tired brain.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 5 && (
             <ReadingSection title="Dealing with FOMO." eyebrow="Step 6" icon={Users} theme={theme}>
-              <p>Let's be real -- the hardest part of putting your phone away isn't the phone. It's the fear that you're missing out on something. What if someone messages and you don't reply? What if something kicks off in the group chat? The trick is to <Highlight description="Just give your mates a heads up. A quick message like 'I'm off my phone from 5 to 9 for study, I'll reply after' takes the pressure off. People are way more understanding than you expect, and once they know, they stop expecting instant replies." theme={theme}>tell your friends what you're doing</Highlight>. Send a quick message to your group chat: "I'm off my phone from 5 to 9 for study, I'll reply after." Once people know, the pressure disappears.</p>
-              <p>The other move is to <Highlight description="Instead of scrolling on and off all day (which means you're never fully studying and never fully relaxing), you pick a specific time for social media -- like 8:30 to 9:30pm. You'll actually enjoy it more because you're not feeling guilty, and the rest of your day stays focused." theme={theme}>batch your screen time</Highlight>. Instead of dipping in and out of social media all day (which means you're never fully studying and never fully chilling), pick one window -- say 8:30 to 9:30pm -- and save it all for then. You'll actually enjoy it more because you're not feeling guilty about it.</p>
+              {essentials ? (
+                <>
+                  <p>Tell your friends: "I am off my phone from 5 to 9 for study." Once people know, the pressure to reply instantly disappears.</p>
+                  <p>Batch your screen time into one window each evening. You will enjoy it more guilt-free. The rest of your day stays focused.</p>
+                </>
+              ) : (
+                <>
+                  <p>Let's be real -- the hardest part of putting your phone away isn't the phone. It's the fear that you're missing out on something. What if someone messages and you don't reply? What if something kicks off in the group chat? The trick is to <Highlight description="Just give your mates a heads up. A quick message like 'I'm off my phone from 5 to 9 for study, I'll reply after' takes the pressure off. People are way more understanding than you expect, and once they know, they stop expecting instant replies." theme={theme}>tell your friends what you're doing</Highlight>. Send a quick message to your group chat: "I'm off my phone from 5 to 9 for study, I'll reply after." Once people know, the pressure disappears.</p>
+                  <p>The other move is to <Highlight description="Instead of scrolling on and off all day (which means you're never fully studying and never fully relaxing), you pick a specific time for social media -- like 8:30 to 9:30pm. You'll actually enjoy it more because you're not feeling guilty, and the rest of your day stays focused." theme={theme}>batch your screen time</Highlight>. Instead of dipping in and out of social media all day (which means you're never fully studying and never fully chilling), pick one window -- say 8:30 to 9:30pm -- and save it all for then. You'll actually enjoy it more because you're not feeling guilty about it.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 6 && (
             <ReadingSection title="Your Step-by-Step Plan." eyebrow="Step 7" icon={Map} theme={theme}>
-              <p>You don't have to do everything at once. This is a gradual plan that builds up across the Leaving Cert year.</p>
+              {essentials ? (
+                <p>Build your digital fortress in three phases. Phase 1 (Sept-Dec): turn off notifications and charge your phone outside your room. Phase 2 (Jan-Mar): install blockers and batch social media. Phase 3 (Apr-Jun): go all-in with minimal phone use for exams.</p>
+              ) : (
+                <p>You don't have to do everything at once. This is a gradual plan that builds up across the Leaving Cert year.</p>
+              )}
               <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 {/* Card 1 — Sky */}
                 <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>

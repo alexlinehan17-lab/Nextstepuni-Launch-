@@ -14,6 +14,7 @@ import { type ModuleProgress } from '../types';
 import { skyTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = skyTheme;
 
@@ -649,6 +650,7 @@ const OptimalScheduleCalculator = () => {
 
 // --- MODULE COMPONENT ---
 const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'forgetting-curve', title: 'The Forgetting Curve', eyebrow: '01 // The Default Setting', icon: Clock },
     { id: 'cramming-paradox', title: 'The Cramming Paradox', eyebrow: '02 // The Illusion of Speed', icon: BarChart2 },
@@ -664,36 +666,71 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Forgetting Curve." eyebrow="Step 1" icon={Clock} theme={theme}>
-              <p>Your brain is designed to forget. This isn't a flaw -- it's actually a feature. To survive, your brain has to constantly clear out stuff it doesn't think you need. The problem is, it defaults to forgetting almost everything. This is called the <Highlight description="The natural pattern where your memory of something new fades quickly over time unless you go back and review it." theme={theme}>Forgetting Curve</Highlight>.</p>
-              <p>The curve is brutal. Without reviewing, you can lose over 50% of new information within an hour, and up to 80% within a day. This is why cramming is such a waste of time. To build lasting knowledge, you can't just put information <em>in</em> to your brain; you have to stop it from leaking <em>out</em>.</p>
+              {essentials ? (
+                <p>Your brain is designed to forget. Without reviewing, you lose 50% of new information within an hour. This is the <Highlight description="The natural pattern where your memory of something new fades quickly over time unless you go back and review it." theme={theme}>Forgetting Curve</Highlight>. To build lasting knowledge, you need to stop it leaking out.</p>
+              ) : (
+                <>
+                  <p>Your brain is designed to forget. This isn't a flaw -- it's actually a feature. To survive, your brain has to constantly clear out stuff it doesn't think you need. The problem is, it defaults to forgetting almost everything. This is called the <Highlight description="The natural pattern where your memory of something new fades quickly over time unless you go back and review it." theme={theme}>Forgetting Curve</Highlight>.</p>
+                  <p>The curve is brutal. Without reviewing, you can lose over 50% of new information within an hour, and up to 80% within a day. This is why cramming is such a waste of time. To build lasting knowledge, you can't just put information <em>in</em> to your brain; you have to stop it from leaking <em>out</em>.</p>
+                </>
+              )}
               <ForgettingCurveVisualizer />
             </ReadingSection>
           )}
           {activeSection === 1 && (
             <ReadingSection title="The Cramming Paradox." eyebrow="Step 2" icon={BarChart2} theme={theme}>
-                <p>If cramming is so bad, why does everyone do it? Because it tricks you. This is what we call the <Highlight description="The trap where cramming makes you feel like you've nailed it right after studying, but the knowledge falls apart within days -- so you keep cramming because it 'worked' last time." theme={theme}>Cramming Paradox</Highlight>. For tests that happen straight after studying (minutes or hours), cramming actually works. It keeps information floating in your short-term memory, making you feel like you know it all.</p>
-                <RetentionCurveComparison />
-                <p>This gives you a false sense of security. You score well on the immediate test, which "rewards" the cramming behaviour. But the information never actually makes it into your long-term memory. Here's the thing: for the same amount of study time, <Highlight description="Spreading your study sessions out over time instead of doing it all in one go. It feels slower, but it makes your memory way stronger and longer-lasting." theme={theme}>Spaced Practice</Highlight> can triple how long you actually remember something.</p>
-                <CrammingVsSpacingShowdown />
+              {essentials ? (
+                <>
+                  <p>Cramming tricks you. It's the <Highlight description="The trap where cramming makes you feel like you've nailed it right after studying, but the knowledge falls apart within days -- so you keep cramming because it 'worked' last time." theme={theme}>Cramming Paradox</Highlight>. You feel great right after, but the knowledge vanishes within days.</p>
+                  <RetentionCurveComparison />
+                  <p>For the same total study time, <Highlight description="Spreading your study sessions out over time instead of doing it all in one go. It feels slower, but it makes your memory way stronger and longer-lasting." theme={theme}>Spaced Practice</Highlight> can triple how long you remember something.</p>
+                  <CrammingVsSpacingShowdown />
+                </>
+              ) : (
+                <>
+                  <p>If cramming is so bad, why does everyone do it? Because it tricks you. This is what we call the <Highlight description="The trap where cramming makes you feel like you've nailed it right after studying, but the knowledge falls apart within days -- so you keep cramming because it 'worked' last time." theme={theme}>Cramming Paradox</Highlight>. For tests that happen straight after studying (minutes or hours), cramming actually works. It keeps information floating in your short-term memory, making you feel like you know it all.</p>
+                  <RetentionCurveComparison />
+                  <p>This gives you a false sense of security. You score well on the immediate test, which "rewards" the cramming behaviour. But the information never actually makes it into your long-term memory. Here's the thing: for the same amount of study time, <Highlight description="Spreading your study sessions out over time instead of doing it all in one go. It feels slower, but it makes your memory way stronger and longer-lasting." theme={theme}>Spaced Practice</Highlight> can triple how long you actually remember something.</p>
+                  <CrammingVsSpacingShowdown />
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 2 && (
             <ReadingSection title="The Struggle Sweet Spot." eyebrow="Step 3" icon={Brain} theme={theme}>
-              <p>Why is spacing so much more powerful? Because it uses the "struggle" of forgetting to your advantage. This is the idea behind <Highlight description="When studying feels a bit harder -- like when you've half-forgotten something and have to really think to recall it -- that extra effort actually makes the memory stick much better." theme={theme}>Desirable Difficulty</Highlight>. When you space out your study, you let your memory fade a little on purpose. When you come back to review it, your brain has to work harder to dig it up.</p>
-              <p>That extra effort is a powerful signal. It tells your brain, "This information is important! I had to work hard to find it, so I should make the pathway stronger for next time." Cramming skips this difficulty entirely -- the information is always right there in front of you, so your brain sees no reason to lock it in for the long term.</p>
+              {essentials ? (
+                <p>Spacing works because of <Highlight description="When studying feels a bit harder -- like when you've half-forgotten something and have to really think to recall it -- that extra effort actually makes the memory stick much better." theme={theme}>Desirable Difficulty</Highlight>. You let yourself half-forget. Then when you review, your brain works harder to dig it up. That effort tells your brain to make the memory stronger.</p>
+              ) : (
+                <>
+                  <p>Why is spacing so much more powerful? Because it uses the "struggle" of forgetting to your advantage. This is the idea behind <Highlight description="When studying feels a bit harder -- like when you've half-forgotten something and have to really think to recall it -- that extra effort actually makes the memory stick much better." theme={theme}>Desirable Difficulty</Highlight>. When you space out your study, you let your memory fade a little on purpose. When you come back to review it, your brain has to work harder to dig it up.</p>
+                  <p>That extra effort is a powerful signal. It tells your brain, "This information is important! I had to work hard to find it, so I should make the pathway stronger for next time." Cramming skips this difficulty entirely -- the information is always right there in front of you, so your brain sees no reason to lock it in for the long term.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="The Best Review Schedule." eyebrow="Step 4" icon={CalendarDays} theme={theme}>
-              <p>So, what's the perfect gap between study sessions? There's no single magic number. The <Highlight description="The gap between your study sessions. The right gap depends on how far away your test is." theme={theme}>best review gap</Highlight> depends entirely on when you need to remember the information -- basically, how far away your <Highlight description="The time between your last study session and the actual test or exam." theme={theme}>test date</Highlight> is.</p>
-              <p>Here's a handy rule of thumb: your review gap should be roughly <strong>5-20%</strong> of the time until the test. For a test in a week, you need a short gap (1-2 days). For the Leaving Cert in 6 months, you need a much longer gap (e.g., 3 weeks). This is because a longer gap lets you forget a little more, which makes your brain work harder when you review -- and that extra effort is exactly what locks it in for the long term.</p>
+              {essentials ? (
+                <p>Your <Highlight description="The gap between your study sessions. The right gap depends on how far away your test is." theme={theme}>review gap</Highlight> should be 5-20% of the time until your <Highlight description="The time between your last study session and the actual test or exam." theme={theme}>test date</Highlight>. Test in a week? Review every 1-2 days. Leaving Cert in 6 months? Review every 3 weeks.</p>
+              ) : (
+                <>
+                  <p>So, what's the perfect gap between study sessions? There's no single magic number. The <Highlight description="The gap between your study sessions. The right gap depends on how far away your test is." theme={theme}>best review gap</Highlight> depends entirely on when you need to remember the information -- basically, how far away your <Highlight description="The time between your last study session and the actual test or exam." theme={theme}>test date</Highlight> is.</p>
+                  <p>Here's a handy rule of thumb: your review gap should be roughly <strong>5-20%</strong> of the time until the test. For a test in a week, you need a short gap (1-2 days). For the Leaving Cert in 6 months, you need a much longer gap (e.g., 3 weeks). This is because a longer gap lets you forget a little more, which makes your brain work harder when you review -- and that extra effort is exactly what locks it in for the long term.</p>
+                </>
+              )}
               <OptimalScheduleCalculator />
             </ReadingSection>
           )}
            {activeSection === 4 && (
             <ReadingSection title="Apps That Do It For You." eyebrow="Step 5" icon={RadioTower} theme={theme}>
-              <p>Keeping track of the perfect review schedule for thousands of facts across all your subjects is basically impossible to do by hand. That's where <Highlight description="Free apps like Anki that automatically figure out when you're about to forget something and remind you to review it at just the right time." theme={theme}>Spaced Repetition Apps</Highlight> come in. Think of them as a personal tutor for your memory.</p>
-              <p>Using an app like Anki, you create digital flashcards. Each time you review a card, you tell the app how hard it was ("Again," "Hard," "Good," "Easy"). The app then uses your answers to figure out when you're about to forget that card and puts it in front of you at just the right moment. It takes all the guesswork out of scheduling -- you just show up and review whatever the app tells you to.</p>
+              {essentials ? (
+                <p>Use <Highlight description="Free apps like Anki that automatically figure out when you're about to forget something and remind you to review it at just the right time." theme={theme}>Spaced Repetition Apps</Highlight> like Anki. You make flashcards. The app tracks when you're about to forget each one. It shows you the right card at the right time. No guesswork.</p>
+              ) : (
+                <>
+                  <p>Keeping track of the perfect review schedule for thousands of facts across all your subjects is basically impossible to do by hand. That's where <Highlight description="Free apps like Anki that automatically figure out when you're about to forget something and remind you to review it at just the right time." theme={theme}>Spaced Repetition Apps</Highlight> come in. Think of them as a personal tutor for your memory.</p>
+                  <p>Using an app like Anki, you create digital flashcards. Each time you review a card, you tell the app how hard it was ("Again," "Hard," "Good," "Easy"). The app then uses your answers to figure out when you're about to forget that card and puts it in front of you at just the right moment. It takes all the guesswork out of scheduling -- you just show up and review whatever the app tells you to.</p>
+                </>
+              )}
               <MicroCommitment theme={theme}>
                 <p>Download Anki on your phone or computer. Don't worry about making cards yet. Just get the tool. This is the first step to building an automated, long-term memory system.</p>
               </MicroCommitment>
@@ -701,7 +738,11 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
           )}
            {activeSection === 5 && (
             <ReadingSection title="Your Spacing Blueprint." eyebrow="Step 6" icon={Wrench} theme={theme}>
-              <p>You now know how to beat the Forgetting Curve. When you study matters just as much as what you study. Here's a simple plan you can start using right now, even without any apps.</p>
+              {essentials ? (
+                <p>When you study matters as much as what you study. Follow a simple plan: learn on Day 1, test yourself on Day 2-3, final review on Day 7.</p>
+              ) : (
+                <p>You now know how to beat the Forgetting Curve. When you study matters just as much as what you study. Here's a simple plan you can start using right now, even without any apps.</p>
+              )}
               <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Simple Review Plan</h4>
                 <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">For any test or exam, follow this simple schedule.</p>

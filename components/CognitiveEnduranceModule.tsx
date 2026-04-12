@@ -13,6 +13,7 @@ import { type ModuleProgress } from '../types';
 import { orangeTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = orangeTheme;
 
@@ -492,7 +493,14 @@ const SleepCycleArchitect = () => {
 
 // --- MODULE COMPONENT ---
 const CognitiveEnduranceModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
-  const sections = [
+  const essentials = useEssentialsMode();
+
+  const sections = essentials ? [
+    { id: 'marathon-mindset', title: 'The Marathon Mindset', eyebrow: '01 // The Big Picture', icon: Brain },
+    { id: 'sleep-banking', title: 'Sleep & Fuel', eyebrow: '02 // The Basics', icon: Moon },
+    { id: 'in-exam-tools', title: 'In-Exam Tools & Training', eyebrow: '03 // Staying Sharp', icon: HeartPulse },
+    { id: 'recovery-protocol', title: 'The Recovery Protocol', eyebrow: '04 // Real Rest', icon: Battery },
+  ] : [
     { id: 'marathon-mindset', title: 'The Marathon Mindset', eyebrow: '01 // The Big Picture', icon: Brain },
     { id: 'sleep-banking', title: 'The Sleep Banking Strategy', eyebrow: '02 // The Non-Negotiable', icon: Moon },
     { id: 'fueling-engine', title: 'Fueling the Engine', eyebrow: '03 // Food & Drink', icon: Coffee },
@@ -518,43 +526,80 @@ const CognitiveEnduranceModule: React.FC<{ onBack: () => void; progress: ModuleP
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Marathon Mindset." eyebrow="Step 1" icon={Brain} theme={theme}>
-              <p>The Leaving Cert isn't a sprint; it's a marathon. Success isn't just about knowing the material. It's about being able to access that knowledge at 4 PM on a Friday after a brutal week of exams. This is <Highlight description="Your ability to stay focused and think clearly for long stretches, even when you're tired or stressed. Think of it like fitness for your brain." theme={theme}>Cognitive Endurance</Highlight>.</p>
-              <p>It's a trainable skill, not a measure of willpower. Your brain is an organ that uses 20% of your body's energy. Under the constant stress of the Leaving Cert, your brain builds up "wear and tear" over time — we call this <Highlight description="The total stress build-up in your body and brain from weeks of pressure. When it gets too high, your thinking gets foggy and your emotions get harder to control." theme={theme}>Stress Load</Highlight>. Building cognitive endurance is about training your brain to handle this build-up.</p>
+              {essentials ? (
+                <>
+                  <p>The Leaving Cert is a marathon, not a sprint. You need to think clearly at 4 PM on Friday after a brutal exam week. That takes <Highlight description="Your ability to stay focused and think clearly for long stretches, even when you're tired or stressed. Think of it like fitness for your brain." theme={theme}>Cognitive Endurance</Highlight>.</p>
+                  <p>Your brain builds up <Highlight description="The total stress build-up in your body and brain from weeks of pressure. When it gets too high, your thinking gets foggy and your emotions get harder to control." theme={theme}>Stress Load</Highlight> over weeks of pressure. You can train your brain to handle this.</p>
+                </>
+              ) : (
+                <>
+                  <p>The Leaving Cert isn't a sprint; it's a marathon. Success isn't just about knowing the material. It's about being able to access that knowledge at 4 PM on a Friday after a brutal week of exams. This is <Highlight description="Your ability to stay focused and think clearly for long stretches, even when you're tired or stressed. Think of it like fitness for your brain." theme={theme}>Cognitive Endurance</Highlight>.</p>
+                  <p>It's a trainable skill, not a measure of willpower. Your brain is an organ that uses 20% of your body's energy. Under the constant stress of the Leaving Cert, your brain builds up "wear and tear" over time — we call this <Highlight description="The total stress build-up in your body and brain from weeks of pressure. When it gets too high, your thinking gets foggy and your emotions get harder to control." theme={theme}>Stress Load</Highlight>. Building cognitive endurance is about training your brain to handle this build-up.</p>
+                </>
+              )}
               <AllostaticLoadVisualizer />
               <AllostaticLoadComparison />
             </ReadingSection>
           )}
            {activeSection === 1 && (
-            <ReadingSection title="The Sleep Banking Strategy." eyebrow="Step 2" icon={Moon} theme={theme}>
-              <p>Sleep is the single most powerful tool for building endurance. It's not just rest; it's when your brain organises your memories and clears out the <Highlight description="A chemical that builds up in your brain the longer you're awake. It's basically what makes you feel foggy and tired — and sleep is the only thing that properly clears it out." theme={theme}>tiredness chemicals</Highlight> that pile up during the day.</p>
-              <p>As a teenager, your brain is naturally wired to sleep late and wake up late. The exam schedule fights this. The really important thing is that the final hours of your sleep are packed with <Highlight description="A special stage of sleep where your brain practises problem-solving and processes your emotions. Most of it happens in the last few hours of sleep, so if you cut your night short, this is the first thing you lose." theme={theme}>REM Sleep</Highlight>, which is vital for problem-solving and keeping your emotions in check. Cutting sleep short is like skipping the most important part of your training.</p>
-              <SleepCycleArchitect />
-              <MicroCommitment theme={theme}><p>For the next 10 days, wake up at the same time every single day — even weekends. This is the fastest way to reset your body clock so you feel most alert during exam time.</p></MicroCommitment>
+            <ReadingSection title={essentials ? "Sleep & Fuel." : "The Sleep Banking Strategy."} eyebrow="Step 2" icon={Moon} theme={theme}>
+              {essentials ? (
+                <>
+                  <p>Sleep is your most powerful tool. Your final sleep hours are packed with <Highlight description="A special stage of sleep where your brain practises problem-solving and processes your emotions. Most of it happens in the last few hours of sleep, so if you cut your night short, this is the first thing you lose." theme={theme}>REM Sleep</Highlight> for problem-solving. Cutting sleep short skips the most important part.</p>
+                  <SleepCycleArchitect />
+                  <p>Your brain also runs on blood sugar. High-sugar food causes a spike-and-crash. Eat slow-burning food like porridge. Try the <Highlight description="A simple hack where you swish a sports drink around your mouth for about 10 seconds (you don't even have to swallow it). It tricks your brain into feeling less tired by activating your brain's reward system." theme={theme}>Sports Drink Mouth Rinse</Highlight> in the last hour of a long exam.</p>
+                  <MicroCommitment theme={theme}><p>For the next 10 days, wake up at the same time every single day — even weekends. This is the fastest way to reset your body clock so you feel most alert during exam time.</p></MicroCommitment>
+                </>
+              ) : (
+                <>
+                  <p>Sleep is the single most powerful tool for building endurance. It's not just rest; it's when your brain organises your memories and clears out the <Highlight description="A chemical that builds up in your brain the longer you're awake. It's basically what makes you feel foggy and tired — and sleep is the only thing that properly clears it out." theme={theme}>tiredness chemicals</Highlight> that pile up during the day.</p>
+                  <p>As a teenager, your brain is naturally wired to sleep late and wake up late. The exam schedule fights this. The really important thing is that the final hours of your sleep are packed with <Highlight description="A special stage of sleep where your brain practises problem-solving and processes your emotions. Most of it happens in the last few hours of sleep, so if you cut your night short, this is the first thing you lose." theme={theme}>REM Sleep</Highlight>, which is vital for problem-solving and keeping your emotions in check. Cutting sleep short is like skipping the most important part of your training.</p>
+                  <SleepCycleArchitect />
+                  <MicroCommitment theme={theme}><p>For the next 10 days, wake up at the same time every single day — even weekends. This is the fastest way to reset your body clock so you feel most alert during exam time.</p></MicroCommitment>
+                </>
+              )}
             </ReadingSection>
           )}
-          {activeSection === 2 && (
+          {!essentials && activeSection === 2 && (
             <ReadingSection title="Fueling the Engine." eyebrow="Step 3" icon={Coffee} theme={theme}>
               <p>Your brain runs on sugar from your blood. An unstable fuel supply leads to unstable focus. High-sugar snacks cause a spike-and-crash cycle — a <Highlight description="That horrible brain fog and irritability you get about an hour after eating something really sugary. Your blood sugar spikes, then crashes, leaving you unable to concentrate — often right in the middle of an exam." theme={theme}>sugar crash</Highlight> — that can sabotage your performance mid-exam.</p>
               <p>Here's a neat trick from sports science: the <Highlight description="A simple hack where you swish a sports drink around your mouth for about 10 seconds (you don't even have to swallow it). It tricks your brain into feeling less tired by activating your brain's reward system." theme={theme}>Sports Drink Mouth Rinse</Highlight>. Swishing a sports drink around your mouth for 10 seconds tricks your brain into thinking fuel is on the way. This can give you a real mental boost in the final, gruelling hour of a long exam.</p>
             </ReadingSection>
           )}
-           {activeSection === 3 && (
-            <ReadingSection title="The In-Exam Toolkit." eyebrow="Step 4" icon={HeartPulse} theme={theme}>
-                <p>Anxiety is the enemy of endurance. It hijacks your brain, shutting down your <Highlight description="The front part of your brain that handles thinking, planning, and staying focused. When you're stressed or panicking, this part basically goes offline — which is why you can't think straight." theme={theme}>thinking brain</Highlight> and handing control to your <Highlight description="The part of your brain that triggers fear and panic. When it takes over, it can cause you to 'blank out' — even on stuff you definitely know." theme={theme}>panic centre</Highlight>. You need tools to manage this in real-time.</p>
-                <p>The fastest way to calm yourself down is the <Highlight description="A breathing trick: two quick sniffs in through your nose, then one long breath out through your mouth. It works in under 10 seconds and physically calms your nervous system down." theme={theme}>Physiological Sigh</Highlight>. It takes less than 10 seconds. When you feel panic rising after a tough question, this is your emergency brake.</p>
-                <p>For your eyes, use the <strong>20-20-20 Rule</strong>: every 20 minutes, look at something 20 feet away for 20 seconds. This relaxes your eye muscles and fights the visual fatigue that causes headaches and slows reading speed.</p>
+           {(essentials ? activeSection === 2 : activeSection === 3) && (
+            <ReadingSection title={essentials ? "In-Exam Tools & Training." : "The In-Exam Toolkit."} eyebrow={essentials ? "Step 3" : "Step 4"} icon={HeartPulse} theme={theme}>
+                {essentials ? (
+                  <>
+                    <p>When panic rises, use the <Highlight description="A breathing trick: two quick sniffs in through your nose, then one long breath out through your mouth. It works in under 10 seconds and physically calms your nervous system down." theme={theme}>Physiological Sigh</Highlight>. Two quick sniffs in, one long breath out. Takes 10 seconds. Use the <strong>20-20-20 Rule</strong> for eye fatigue.</p>
+                    <p>Train your focus by building up gradually. Start with 25-minute sessions. Work up to 90-minute practice runs under exam conditions.</p>
+                  </>
+                ) : (
+                  <>
+                    <p>Anxiety is the enemy of endurance. It hijacks your brain, shutting down your <Highlight description="The front part of your brain that handles thinking, planning, and staying focused. When you're stressed or panicking, this part basically goes offline — which is why you can't think straight." theme={theme}>thinking brain</Highlight> and handing control to your <Highlight description="The part of your brain that triggers fear and panic. When it takes over, it can cause you to 'blank out' — even on stuff you definitely know." theme={theme}>panic centre</Highlight>. You need tools to manage this in real-time.</p>
+                    <p>The fastest way to calm yourself down is the <Highlight description="A breathing trick: two quick sniffs in through your nose, then one long breath out through your mouth. It works in under 10 seconds and physically calms your nervous system down." theme={theme}>Physiological Sigh</Highlight>. It takes less than 10 seconds. When you feel panic rising after a tough question, this is your emergency brake.</p>
+                    <p>For your eyes, use the <strong>20-20-20 Rule</strong>: every 20 minutes, look at something 20 feet away for 20 seconds. This relaxes your eye muscles and fights the visual fatigue that causes headaches and slows reading speed.</p>
+                  </>
+                )}
             </ReadingSection>
           )}
-           {activeSection === 4 && (
+           {!essentials && activeSection === 4 && (
             <ReadingSection title="The Training Plan." eyebrow="Step 5" icon={SlidersHorizontal} theme={theme}>
               <p>You can't train for a marathon by only running sprints. Likewise, you can't prepare for a 3-hour exam by only studying in 20-minute bursts. You need to train your focus by <Highlight description="The simple idea behind all training: start easy and gradually make it harder. For studying, this means starting with short focus sessions and slowly making them longer over time." theme={theme}>building up gradually</Highlight>.</p>
               <p>This means structuring your study in phases. Start with short, focused bursts (like 25-minute Pomodoro sessions) to build your base. Then, gradually increase the length of your focus blocks, training your brain to push past the "boredom barrier." In the final weeks, you should be doing full practice runs — studying under exam conditions for 90-120 minutes straight. This is not about learning more content; it's about building mental muscle.</p>
             </ReadingSection>
           )}
-           {activeSection === 5 && (
-            <ReadingSection title="The Recovery Protocol." eyebrow="Step 6" icon={Battery} theme={theme}>
-              <p>Recovery is not the absence of work; it's an active process. Lying on the couch scrolling through TikTok is not rest. It's <Highlight description="The kind of 'rest' that doesn't actually recharge you — like scrolling social media or bingeing videos. It feels relaxing but it keeps your brain busy and tired." theme={theme}>Junk Rest</Highlight>, and it can actually make your mental tiredness worse.</p>
-              <p><Highlight description="Rest that actually recharges your brain — things like going for a walk, spending time outside, or doing a guided relaxation. It feels boring compared to your phone, but it works way better." theme={theme}>Real Rest</Highlight> strategies are far better. A 20-minute walk clears stress hormones. Even better is <Highlight description="Non-Sleep Deep Rest — basically a guided relaxation you do while lying down with your eyes closed. You stay awake, but your brain gets a proper reset. Think of it like a power nap without actually sleeping." theme={theme}>NSDR</Highlight>, a 10-20 minute guided relaxation that acts as a "reset button" for your brain. In the crucial break between two exams on the same day, a 20-minute NSDR session is the single most effective way to recharge for the afternoon paper.</p>
+           {(essentials ? activeSection === 3 : activeSection === 5) && (
+            <ReadingSection title="The Recovery Protocol." eyebrow={essentials ? "Step 4" : "Step 6"} icon={Battery} theme={theme}>
+              {essentials ? (
+                <>
+                  <p>Scrolling TikTok is <Highlight description="The kind of 'rest' that doesn't actually recharge you — like scrolling social media or bingeing videos. It feels relaxing but it keeps your brain busy and tired." theme={theme}>Junk Rest</Highlight>. It makes tiredness worse. <Highlight description="Rest that actually recharges your brain — things like going for a walk, spending time outside, or doing a guided relaxation. It feels boring compared to your phone, but it works way better." theme={theme}>Real Rest</Highlight> means walking or <Highlight description="Non-Sleep Deep Rest — basically a guided relaxation you do while lying down with your eyes closed. You stay awake, but your brain gets a proper reset. Think of it like a power nap without actually sleeping." theme={theme}>NSDR</Highlight> (guided relaxation). Between exams on the same day, 20 minutes of NSDR is the best recharge.</p>
+                </>
+              ) : (
+                <>
+                  <p>Recovery is not the absence of work; it's an active process. Lying on the couch scrolling through TikTok is not rest. It's <Highlight description="The kind of 'rest' that doesn't actually recharge you — like scrolling social media or bingeing videos. It feels relaxing but it keeps your brain busy and tired." theme={theme}>Junk Rest</Highlight>, and it can actually make your mental tiredness worse.</p>
+                  <p><Highlight description="Rest that actually recharges your brain — things like going for a walk, spending time outside, or doing a guided relaxation. It feels boring compared to your phone, but it works way better." theme={theme}>Real Rest</Highlight> strategies are far better. A 20-minute walk clears stress hormones. Even better is <Highlight description="Non-Sleep Deep Rest — basically a guided relaxation you do while lying down with your eyes closed. You stay awake, but your brain gets a proper reset. Think of it like a power nap without actually sleeping." theme={theme}>NSDR</Highlight>, a 10-20 minute guided relaxation that acts as a "reset button" for your brain. In the crucial break between two exams on the same day, a 20-minute NSDR session is the single most effective way to recharge for the afternoon paper.</p>
+                </>
+              )}
               <MicroCommitment theme={theme}><p>Find a 10-minute NSDR or Yoga Nidra script on YouTube. Try it once this week instead of scrolling on your phone during a study break.</p></MicroCommitment>
             </ReadingSection>
           )}
