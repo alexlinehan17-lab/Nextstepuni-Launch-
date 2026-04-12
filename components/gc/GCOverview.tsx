@@ -890,7 +890,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
 
         {/* ─── Exam Calendar (left) ────────────────────────────── */}
         <div className={CARD_STYLE_DARK_CLASS} style={CARD_STYLE}>
-          <div className="flex items-baseline justify-between mb-3">
+          <div className="flex items-start justify-between mb-5">
             <div>
               <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Countdown</p>
               <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5">Exam Calendar</p>
@@ -939,14 +939,14 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                     <>
                       <div className="flex gap-0.5 absolute bottom-1">
                         {dayEvents.slice(0, 3).map((ev, j) => (
-                          <div key={j} className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: EVENT_DOT_COLORS[ev.category] || '#8B5CF6' }} />
+                          <div key={j} className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: EVENT_DOT_COLORS[ev.category] || '#8B5CF6' }} />
                         ))}
                       </div>
                       <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:block z-50">
                         <div className="bg-zinc-800 text-white text-[10px] font-medium rounded-lg px-2.5 py-1.5 whitespace-nowrap shadow-lg border border-zinc-700">
                           {dayEvents.map((ev, j) => (
                             <div key={j} className="flex items-center gap-1.5">
-                              <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: EVENT_DOT_COLORS[ev.category] || '#8B5CF6' }} />
+                              <div className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: EVENT_DOT_COLORS[ev.category] || '#8B5CF6' }} />
                               {ev.title}
                             </div>
                           ))}
@@ -972,10 +972,10 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
             )}
             {schoolEvents.length > 0 && (
               <>
-                <div className="flex items-center gap-1.5"><div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#EF4444' }} /><span>Exams</span></div>
-                <div className="flex items-center gap-1.5"><div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#F59E0B' }} /><span>Deadlines</span></div>
-                <div className="flex items-center gap-1.5"><div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#3B82F6' }} /><span>School</span></div>
-                <div className="flex items-center gap-1.5"><div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#8B5CF6' }} /><span>Other</span></div>
+                <div className="flex items-center gap-1.5"><div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#EF4444' }} /><span>Exams</span></div>
+                <div className="flex items-center gap-1.5"><div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#F59E0B' }} /><span>Deadlines</span></div>
+                <div className="flex items-center gap-1.5"><div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#3B82F6' }} /><span>School</span></div>
+                <div className="flex items-center gap-1.5"><div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#8B5CF6' }} /><span>Other</span></div>
               </>
             )}
           </div>
