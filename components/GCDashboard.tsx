@@ -7,7 +7,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { type CourseData } from './Library';
 import { type SessionUser, getAvatarUrl } from '../utils/authUtils';
-import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays, Moon, Sun } from 'lucide-react';
+import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays } from 'lucide-react';
 import app, { db } from '../firebase';
 import { collection, query, where, limit, getDocs, doc, getDoc, deleteDoc, setDoc } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
@@ -89,12 +89,10 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
   const [activeNav, setActiveNav] = useState<string>('gc-overview');
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  // Restore dark mode preference for GC dashboard
+  // GC dashboard is always dark mode
   useEffect(() => {
-    const saved = localStorage.getItem('nextstep-gc-dark');
-    if (saved === '1') {
-      document.documentElement.classList.add('dark');
-    }
+    document.documentElement.classList.add('dark');
+    return () => { document.documentElement.classList.remove('dark'); };
   }, []);
 
   const gcFlags = useGCFlags(gcUid);
@@ -330,24 +328,6 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
 
         {/* Bottom section */}
         <div className="border-t border-zinc-200 dark:border-zinc-800 mx-2 pt-2 flex flex-col gap-1">
-          {/* Dark Mode Toggle */}
-          <button
-            onClick={() => {
-              const isDark = document.documentElement.classList.toggle('dark');
-              localStorage.setItem('nextstep-gc-dark', isDark ? '1' : '0');
-            }}
-            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
-          >
-            <div className="shrink-0 flex items-center justify-center w-[18px]">
-              <Moon size={18} strokeWidth={1.5} className="text-zinc-400 dark:text-zinc-500 dark:hidden" />
-              <Sun size={18} strokeWidth={1.5} className="text-amber-400 hidden dark:block" />
-            </div>
-            <span className={`text-sm font-medium text-zinc-500 dark:text-zinc-400 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-              <span className="dark:hidden">Dark Mode</span>
-              <span className="hidden dark:inline">Light Mode</span>
-            </span>
-          </button>
-
           {/* Log Out */}
           <button
             onClick={onLogout}
