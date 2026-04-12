@@ -987,7 +987,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.25, ease: CUSTOM_EASE }}
           className={CARD_STYLE_DARK_CLASS}
-          style={CARD_STYLE}
+          style={{ ...CARD_STYLE, display: 'flex', flexDirection: 'column' }}
         >
           <div className="flex items-baseline justify-between mb-5">
             <div>
@@ -996,14 +996,14 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
             </div>
             <span className={`text-xs font-medium ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{distributionTotal} students</span>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 flex-1 items-end">
             {distribution.map((count, i) => {
               const heightPct = (count / distributionMax) * 100;
               const bucketLabels = ['0-25%', '25-50%', '50-75%', '75-100%'];
               return (
-                <div key={i} className="flex-1 flex flex-col items-center gap-1.5">
+                <div key={i} className="flex-1 flex flex-col items-center gap-1.5 h-full justify-end">
                   <span className="text-sm font-medium text-zinc-600 dark:text-zinc-300">{count}</span>
-                  <div className="w-full relative h-28">
+                  <div className="w-full relative flex-1 min-h-[200px]">
                     {count > 0 ? (
                       <MotionDiv
                         className="absolute bottom-0 left-1 right-1 rounded-lg"
