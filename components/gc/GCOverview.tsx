@@ -277,7 +277,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
 
   // ─── New widgets data ──────────────────────────────────────────────────
 
-  const recentlyActive = useMemo(() => getRecentlyActiveStudents(studentData), [studentData]);
+  const _recentlyActive = useMemo(() => getRecentlyActiveStudents(studentData), [studentData]);
 
   // ─── Activity range toggle ────────────────────────────────────────────
 
@@ -860,45 +860,13 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
         {/* ─── ROW 2 RIGHT: Key Dates & Events ───────────────────────── */}
         <GCKeyEvents school={school} />
 
-        {/* ─── ROW 3: Recently Active ──── */}
-        <div className="flex flex-col gap-4">
-          {/* Recently Active */}
-          <div className={CARD_STYLE_DARK_CLASS} style={CARD_STYLE}>
-            <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Activity</p>
-            <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5 mb-4">Recently Active</p>
-            {recentlyActive.length === 0 ? (
-              <p className="text-sm text-zinc-400 italic">No recent activity.</p>
-            ) : (
-              <div className="space-y-2.5">
-                {recentlyActive.map(s => (
-                  <button
-                    key={s.uid}
-                    onClick={() => onSelectStudent(s.uid)}
-                    className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800/40 transition-colors text-left"
-                  >
-                    <img src={getAvatarUrl(s.avatar)} alt="" className="w-8 h-8 rounded-full bg-zinc-200 shrink-0" />
-                    <div className="min-w-0 flex-1">
-                      <p className="text-sm font-medium text-zinc-800 dark:text-white truncate">{s.name}</p>
-                      <p className={`text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>
-                        {s.blocksCompletedToday > 0 ? `${s.blocksCompletedToday} blocks today` : 'No blocks today'}
-                      </p>
-                    </div>
-                    <span className={`text-[10px] shrink-0 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{s.timeAgo}</span>
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-
-        </div>
-
-        {/* ─── ROW 4 LEFT: Progress Breakdown (histogram) ────────────── */}
+        {/* ─── Progress Breakdown (histogram) — stretches to match calendar height ── */}
         <MotionDiv
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.25, ease: CUSTOM_EASE }}
           className={CARD_STYLE_DARK_CLASS}
-          style={CARD_STYLE}
+          style={{ ...CARD_STYLE, display: 'flex', flexDirection: 'column' }}
         >
           <div className="flex items-baseline justify-between mb-5">
             <div>
@@ -907,14 +875,14 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
             </div>
             <span className={`text-xs font-medium ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{distributionTotal} students</span>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 flex-1 items-end">
             {distribution.map((count, i) => {
               const heightPct = (count / distributionMax) * 100;
               const bucketLabels = ['0-25%', '25-50%', '50-75%', '75-100%'];
               return (
                 <div key={i} className="flex-1 flex flex-col items-center gap-1.5">
                   <span className="text-sm font-medium text-zinc-600 dark:text-zinc-300">{count}</span>
-                  <div className="w-full relative h-28">
+                  <div className="w-full relative h-36">
                     {count > 0 ? (
                       <MotionDiv
                         className="absolute bottom-0 left-1 right-1 rounded-lg"
