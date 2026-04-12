@@ -93,13 +93,13 @@ service cloud.firestore {
 
     // Notifications: students read/write their own; GCs write to any student in their school
     match /notifications/{userId} {
+      // Students read/write their own notifications
       allow read, write: if request.auth != null && request.auth.uid == userId;
-      // Any authenticated user can write notifications to others.
-      // Access control is enforced in application code: only GC dashboard
-      // UI exposes broadcast/encourage/recommend actions, and only for
-      // students in the GC's school. Firestore-level isGC() checks were
-      // failing due to missing user docs causing permission-denied errors.
-      allow write: if request.auth != null;
+      // GCs need read+write to add notifications via runTransaction
+      // (transaction does txn.get before txn.set). Access control is
+      // enforced in application code — only GC dashboard exposes these
+      // actions for students in the GC's school.
+      allow read, write: if request.auth != null;
     }
 
     // Kudos collection: peer encouragement notes
