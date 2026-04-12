@@ -14,7 +14,7 @@ const firestore_1 = require("firebase-admin/firestore");
  * then resets the student's password to a temporary value
  * and returns it for the GC to share with the student.
  */
-exports.resetStudentPassword = (0, https_1.onCall)(async (request) => {
+exports.resetStudentPassword = (0, https_1.onCall)({ cors: true }, async (request) => {
     // Require authentication
     if (!request.auth) {
         throw new https_1.HttpsError("unauthenticated", "Must be logged in.");
