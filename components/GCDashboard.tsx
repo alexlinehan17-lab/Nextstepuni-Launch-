@@ -9,7 +9,7 @@ import { type CourseData } from './Library';
 import { type SessionUser, getAvatarUrl } from '../utils/authUtils';
 import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays, Moon, Sun } from 'lucide-react';
 import app, { db } from '../firebase';
-import { collection, query, where, getDocs, doc, getDoc, deleteDoc, setDoc } from 'firebase/firestore';
+import { collection, query, where, limit, getDocs, doc, getDoc, deleteDoc, setDoc } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { getSchoolName } from '../schoolData';
 import { type UserProgress, type PointsData } from '../types';
@@ -186,7 +186,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       setIsLoading(true);
       try {
         const usersCol = collection(db, 'users');
-        const schoolQuery = query(usersCol, where('school', '==', school));
+        const schoolQuery = query(usersCol, where('school', '==', school), limit(500));
         const userSnapshot = await getDocs(schoolQuery);
         const users = userSnapshot.docs.map(d => ({ uid: d.id, ...d.data() })) as SessionUser[];
 
