@@ -966,7 +966,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           <div className="grid grid-cols-7 gap-1">
             {calendarDays.map((cell, i) => {
               if (!cell.isCurrentMonth) {
-                return <div key={i} className="aspect-square" />;
+                return <div key={i} className="h-10" />;
               }
               const isToday = isCurrentMonth && cell.day === todayDate;
               const isLC = lcDay !== null && cell.day === lcDay;
@@ -975,7 +975,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
               return (
                 <div
                   key={i}
-                  className={`aspect-square flex flex-col items-center justify-center text-[11px] font-medium relative group ${
+                  className={`h-10 flex flex-col items-center justify-center text-[11px] font-medium relative group rounded-md ${
                     !isToday && !isLC ? 'text-zinc-600 dark:text-zinc-400' : 'text-white rounded-lg'
                   } ${dayEvents.length > 0 ? 'cursor-pointer' : ''}`}
                   style={isToday ? { backgroundColor: ACCENT } : isLC ? { backgroundColor: '#DC2626' } : undefined}
