@@ -379,7 +379,7 @@ const App: React.FC = () => {
 
   const handleGoHome = () => { nav.navigateToTree(); };
 
-  const handleOnboardingComplete = async (profile: StudentSubjectProfile, northStarData?: NorthStar) => {
+  const handleOnboardingComplete = async (profile: StudentSubjectProfile, northStarData?: NorthStar, essentialsMode?: boolean) => {
     if (!user) return;
     try {
       const progressDocRef = doc(db, 'progress', user.uid);
@@ -395,6 +395,11 @@ const App: React.FC = () => {
         const userDocRef = doc(db, 'users', user.uid);
         await setDoc(userDocRef, { yearGroup: profile.yearGroup }, { merge: true });
         // yearGroup saved to Firestore — will be picked up on next auth refresh
+      }
+      // Save essentials mode preference to settings
+      if (essentialsMode !== undefined) {
+        const settingsDocRef = doc(db, 'settings', user.uid);
+        await setDoc(settingsDocRef, { essentialsMode }, { merge: true });
       }
     } catch {
       console.error('Failed to save subject profile:');

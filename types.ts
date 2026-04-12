@@ -94,6 +94,7 @@ export interface UserSettings {
   defaultWorkMinutes: number;
   flaresToggle?: boolean;
   showDashboard?: boolean;
+  essentialsMode?: boolean;
 }
 
 export type NorthStarCategory =

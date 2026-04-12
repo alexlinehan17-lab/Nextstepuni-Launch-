@@ -6,7 +6,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv, MotionP, MotionSpan } from './Motion';
-import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff, BookOpen, Target, CalendarDays, Star } from 'lucide-react';
+import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff, BookOpen, Target, CalendarDays, Star, Layers } from 'lucide-react';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
@@ -20,25 +20,26 @@ import NorthStarOnboarding from './NorthStarOnboarding';
 
 interface OnboardingProps {
   userName: string;
-  onComplete: (profile: StudentSubjectProfile, northStar?: NorthStar) => void;
+  onComplete: (profile: StudentSubjectProfile, northStar?: NorthStar, essentialsMode?: boolean) => void;
   onSkip: () => void;
 }
 
-type Step = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
-const TOTAL_STEPS = 9;
+type Step = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+const TOTAL_STEPS = 10;
 
 // ─── Step-specific ambient blob colors ──────────────────────────────────────
 
 const _STEP_BLOBS: Record<Step, { a: string; b: string; c: string }> = {
   1: { a: 'bg-[rgba(var(--accent),0.07)]', b: 'bg-yellow-300/[0.09]', c: 'bg-orange-200/[0.08]' },
   2: { a: 'bg-indigo-300/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-sky-200/[0.06]' },
-  3: { a: 'bg-purple-300/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-amber-200/[0.06]' },
-  4: { a: 'bg-blue-300/[0.08]', b: 'bg-emerald-300/[0.07]', c: 'bg-purple-200/[0.06]' },
-  5: { a: 'bg-emerald-300/[0.08]', b: 'bg-amber-300/[0.07]', c: 'bg-blue-200/[0.06]' },
-  6: { a: 'bg-amber-300/[0.09]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-yellow-200/[0.08]' },
-  7: { a: 'bg-rose-300/[0.08]', b: 'bg-orange-200/[0.07]', c: 'bg-pink-200/[0.06]' },
-  8: { a: 'bg-emerald-300/[0.09]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-amber-200/[0.06]' },
-  9: { a: 'bg-rose-300/[0.08]', b: 'bg-indigo-300/[0.07]', c: 'bg-emerald-200/[0.06]' },
+  3: { a: 'bg-teal-300/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-emerald-200/[0.06]' },
+  4: { a: 'bg-purple-300/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-amber-200/[0.06]' },
+  5: { a: 'bg-blue-300/[0.08]', b: 'bg-emerald-300/[0.07]', c: 'bg-purple-200/[0.06]' },
+  6: { a: 'bg-emerald-300/[0.08]', b: 'bg-amber-300/[0.07]', c: 'bg-blue-200/[0.06]' },
+  7: { a: 'bg-amber-300/[0.09]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-yellow-200/[0.08]' },
+  8: { a: 'bg-rose-300/[0.08]', b: 'bg-orange-200/[0.07]', c: 'bg-pink-200/[0.06]' },
+  9: { a: 'bg-emerald-300/[0.09]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-amber-200/[0.06]' },
+  10: { a: 'bg-rose-300/[0.08]', b: 'bg-indigo-300/[0.07]', c: 'bg-emerald-200/[0.06]' },
 };
 
 // ─── Subject Color Map (literal Tailwind strings for CDN) ───────────────────
@@ -144,6 +145,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
 
   // Year group
   const [yearGroup, setYearGroup] = useState<YearGroup | null>(null);
+
+  // Module mode
+  const [essentialsMode, setEssentialsMode] = useState<boolean>(false);
 
   // North Star
   const [northStarData, setNorthStarData] = useState<NorthStar | null>(null);
@@ -268,18 +272,19 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
     switch (step) {
       case 1: return true;
       case 2: return yearGroup !== null;
-      case 3: return northStarData !== null;
-      case 4: return selectedSubjects.size > 0;
-      case 5: {
+      case 3: return true;
+      case 4: return northStarData !== null;
+      case 5: return selectedSubjects.size > 0;
+      case 6: {
         for (const name of selectedSubjects) {
           if (!subjectConfigs[name]) return false;
         }
         return true;
       }
-      case 6: return examDate.length > 0 && getDaysUntil(examDate) > 0;
-      case 7: return restDays.size < 7;
-      case 8: return true;
+      case 7: return examDate.length > 0 && getDaysUntil(examDate) > 0;
+      case 8: return restDays.size < 7;
       case 9: return true;
+      case 10: return true;
       default: return false;
     }
   };
@@ -447,9 +452,70 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 3: North Star */}
+            {/* Step 3: Module Mode */}
             {step === 3 && (
               <MotionDiv key="step3" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+                <div className="flex items-center justify-center min-h-[60vh]">
+                  <div className="text-center w-full max-w-lg mx-auto">
+                    <motion.div
+                      initial={{ scale: 0.8, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+                      className="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
+                      style={{ backgroundColor: 'rgba(42,125,111,0.1)' }}
+                    >
+                      <Layers size={32} style={{ color: '#2A7D6F' }} />
+                    </motion.div>
+                    <motion.h2
+                      initial={{ opacity: 0, y: 12 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                      className="font-serif text-2xl font-bold mb-1 text-[#1A1A1A] dark:text-white"
+                    >
+                      How Do You Like to Learn?
+                    </motion.h2>
+                    <motion.p
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                      className="text-sm mb-8 text-[#78716C] dark:text-zinc-400"
+                    >
+                      Choose the style that suits you best. You can change this anytime in Settings.
+                    </motion.p>
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                      className="flex flex-col sm:flex-row gap-4 justify-center"
+                    >
+                      {([
+                        { id: false, title: 'Full Modules', desc: 'The deep dive \u2014 all the science and strategy behind each idea.', emoji: '\uD83D\uDCD6' },
+                        { id: true, title: 'Essentials', desc: 'Key ideas fast \u2014 less reading, same activities and practice.', emoji: '\u26A1' },
+                      ] as const).map(opt => (
+                        <button
+                          key={String(opt.id)}
+                          onClick={() => setEssentialsMode(opt.id)}
+                          className="flex-1 py-6 px-5 rounded-2xl transition-all text-left"
+                          style={{
+                            backgroundColor: essentialsMode === opt.id ? 'rgba(42,125,111,0.08)' : 'rgba(255,255,255,0.85)',
+                            border: essentialsMode === opt.id ? '2px solid #2A7D6F' : '1px solid rgba(0,0,0,0.08)',
+                            boxShadow: essentialsMode === opt.id ? '0 0 0 3px rgba(42,125,111,0.1)' : 'none',
+                          }}
+                        >
+                          <p className="text-2xl mb-2">{opt.emoji}</p>
+                          <p className={`text-base font-bold mb-1 ${essentialsMode === opt.id ? 'text-[#2A7D6F]' : 'text-[#1A1A1A] dark:text-white'}`}>{opt.title}</p>
+                          <p className={`text-xs ${essentialsMode === opt.id ? 'text-[#2A7D6F]' : 'text-[#A8A29E] dark:text-zinc-500'}`}>{opt.desc}</p>
+                        </button>
+                      ))}
+                    </motion.div>
+                  </div>
+                </div>
+              </MotionDiv>
+            )}
+
+            {/* Step 4: North Star */}
+            {step === 4 && (
+              <MotionDiv key="step4" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <NorthStarOnboarding
                   onComplete={(ns) => { setNorthStarData(ns); goNext(); }}
                   initialData={northStarData}
@@ -457,9 +523,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 4: Select Subjects */}
-            {step === 4 && (
-              <MotionDiv key="step4" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+            {/* Step 5: Select Subjects */}
+            {step === 5 && (
+              <MotionDiv key="step5" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <h2 className="font-serif text-2xl font-bold text-center mb-1 text-[#1A1A1A] dark:text-white">Select Your Subjects</h2>
                 <p className="text-sm text-center mb-8 text-[#78716C] dark:text-zinc-400">
                   Tap to select your Leaving Cert subjects. <span className="font-semibold text-[var(--accent-hex)]">{selectedSubjects.size} selected</span>
@@ -497,9 +563,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 5: Grade Configuration */}
-            {step === 5 && (
-              <MotionDiv key="step5" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+            {/* Step 6: Grade Configuration */}
+            {step === 6 && (
+              <MotionDiv key="step6" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <h2 className="font-serif text-2xl font-bold text-center mb-1 text-[#1A1A1A] dark:text-white">Set Your Grades</h2>
                 <p className="text-sm text-center mb-6 text-[#78716C] dark:text-zinc-400">
                   For each subject, set where you are now and where you want to be.
@@ -608,9 +674,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 6: Exam Date — glass card */}
-            {step === 6 && (
-              <MotionDiv key="step6" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+            {/* Step 7: Exam Date — glass card */}
+            {step === 7 && (
+              <MotionDiv key="step7" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <div className="flex items-center justify-center min-h-[65vh]">
                   <div className="text-center w-full max-w-md mx-auto">
                     <motion.div
@@ -665,9 +731,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 7: Rest Days — glass card */}
-            {step === 7 && (
-              <MotionDiv key="step7" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+            {/* Step 8: Rest Days — glass card */}
+            {step === 8 && (
+              <MotionDiv key="step8" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <div className="flex items-center justify-center min-h-[50vh]">
                   <div className="text-center w-full max-w-lg mx-auto">
                     <motion.div
@@ -735,9 +801,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 8: Summary */}
-            {step === 8 && (
-              <MotionDiv key="step8" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+            {/* Step 9: Summary */}
+            {step === 9 && (
+              <MotionDiv key="step9" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Your Study Profile</h2>
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Here's a summary of everything you've set up.</p>
 
@@ -824,9 +890,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 9: You're All Set — celebratory completion */}
-            {step === 9 && (
-              <MotionDiv key="step9" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+            {/* Step 10: You're All Set — celebratory completion */}
+            {step === 10 && (
+              <MotionDiv key="step10" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <div className="flex items-center justify-center min-h-[60vh]">
                   <div className="text-center w-full max-w-md mx-auto">
                     {/* Checkmark icon */}
@@ -903,7 +969,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                     >
                       <PrimaryActionButton
                         label="Start Learning"
-                        onClick={() => onComplete(buildProfile(), northStarData ?? undefined)}
+                        onClick={() => onComplete(buildProfile(), northStarData ?? undefined, essentialsMode)}
                         icon={ArrowRight}
                         variant="dark"
                       />
@@ -917,8 +983,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
         </div>
       </div>
 
-      {/* ─── Fixed Footer: Back / Continue (hidden on step 3 — North Star has its own nav) ─── */}
-      {step !== 3 && step !== 9 && (
+      {/* ─── Fixed Footer: Back / Continue (hidden on step 4 — North Star has its own nav) ─── */}
+      {step !== 4 && step !== 10 && (
         <div className="shrink-0 px-6 py-5 relative z-10">
           <div className="max-w-2xl mx-auto flex flex-col items-center gap-3">
             {step < TOTAL_STEPS ? (
@@ -930,7 +996,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                 <ArrowRight size={14} />
               </button>
             ) : (
-              <button onClick={() => onComplete(buildProfile(), northStarData ?? undefined)}
+              <button onClick={() => onComplete(buildProfile(), northStarData ?? undefined, essentialsMode)}
                 className="flex items-center gap-2 px-8 py-3 rounded-2xl font-semibold text-sm transition-all active:scale-[0.98]"
                 style={{ backgroundColor: '#2A7D6F', color: '#fff', minWidth: 160 }}
               >

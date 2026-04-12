@@ -213,6 +213,27 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                     </div>
                   </button>
 
+                  {/* Essentials mode toggle */}
+                  <button
+                    onClick={() => {
+                      updateSetting('essentialsMode', !settings.essentialsMode);
+                      flash();
+                    }}
+                    className="w-full flex items-center justify-between p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15] transition-all"
+                  >
+                    <div className="flex-1 text-left">
+                      <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Essentials Mode</p>
+                      <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">Shorter modules with simpler language</p>
+                    </div>
+                    <div className={`relative w-10 h-6 rounded-full transition-colors ${
+                      settings.essentialsMode ? 'bg-[var(--accent-hex)]' : 'bg-zinc-300 dark:bg-zinc-600'
+                    }`}>
+                      <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow-sm transition-transform ${
+                        settings.essentialsMode ? 'translate-x-[18px]' : 'translate-x-0.5'
+                      }`} />
+                    </div>
+                  </button>
+
                   {/* Flares toggle */}
                   <button
                     onClick={() => {
