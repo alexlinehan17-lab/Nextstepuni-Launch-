@@ -93,12 +93,6 @@ service cloud.firestore {
 
     // Notifications: students read/write their own; GCs write to any student in their school
     match /notifications/{userId} {
-      // Students read/write their own notifications
-      allow read, write: if request.auth != null && request.auth.uid == userId;
-      // GCs need read+write to add notifications via runTransaction
-      // (transaction does txn.get before txn.set). Access control is
-      // enforced in application code — only GC dashboard exposes these
-      // actions for students in the GC's school.
       allow read, write: if request.auth != null;
     }
 
