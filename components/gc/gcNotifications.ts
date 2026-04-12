@@ -66,8 +66,8 @@ export async function addNotification(uid: string, notification: Omit<AppNotific
       const updated = [newItem, ...existing].slice(0, MAX_ITEMS);
       txn.set(ref, { items: updated });
     });
-  } catch {
-    console.error('Failed to add notification:');
+  } catch (err) {
+    console.error('Failed to add notification:', err);
   }
 }
 
