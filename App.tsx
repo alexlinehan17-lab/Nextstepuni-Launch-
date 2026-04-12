@@ -482,7 +482,7 @@ const App: React.FC = () => {
     <OfflineBanner />
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
       {user && viewState !== 'onboarding' && user.role !== 'gc' && !user.isAdmin && (
-        <div className={`fixed top-6 right-6 z-[100] ${viewState === 'tree' || viewState === 'category' ? 'hidden' : viewState === 'my-journey' ? 'hidden' : 'hidden md:block'}`}>
+        <div className={`fixed top-6 right-6 z-[100] ${viewState === 'my-journey' ? 'hidden' : 'hidden md:block'}`}>
           <div className="flex items-center gap-2">
             <div>
               {gamification.isLoaded && (
