@@ -975,19 +975,30 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
               return (
                 <div
                   key={i}
-                  className={`aspect-square flex flex-col items-center justify-center text-[11px] font-medium relative ${
+                  className={`aspect-square flex flex-col items-center justify-center text-[11px] font-medium relative group ${
                     !isToday && !isLC ? 'text-zinc-600 dark:text-zinc-400' : 'text-white rounded-lg'
                   } ${dayEvents.length > 0 ? 'cursor-pointer' : ''}`}
                   style={isToday ? { backgroundColor: ACCENT } : isLC ? { backgroundColor: '#DC2626' } : undefined}
-                  title={dayEvents.length > 0 ? dayEvents.map(e => `${e.title} (${e.category})`).join('\n') : isLC ? 'LC Exam Date' : isToday ? 'Today' : ''}
                 >
                   {cell.day}
                   {dayEvents.length > 0 && (
-                    <div className="flex gap-0.5 absolute bottom-1">
-                      {dayEvents.slice(0, 3).map((ev, j) => (
-                        <div key={j} className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: EVENT_DOT_COLORS[ev.category] || '#8B5CF6' }} />
-                      ))}
-                    </div>
+                    <>
+                      <div className="flex gap-0.5 absolute bottom-1">
+                        {dayEvents.slice(0, 3).map((ev, j) => (
+                          <div key={j} className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: EVENT_DOT_COLORS[ev.category] || '#8B5CF6' }} />
+                        ))}
+                      </div>
+                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:block z-50">
+                        <div className="bg-zinc-800 text-white text-[10px] font-medium rounded-lg px-2.5 py-1.5 whitespace-nowrap shadow-lg border border-zinc-700">
+                          {dayEvents.map((ev, j) => (
+                            <div key={j} className="flex items-center gap-1.5">
+                              <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: EVENT_DOT_COLORS[ev.category] || '#8B5CF6' }} />
+                              {ev.title}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </>
                   )}
                 </div>
               );
