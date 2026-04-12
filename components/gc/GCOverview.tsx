@@ -147,6 +147,7 @@ interface GCOverviewProps {
 
 export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, studentNotes, onSelectStudent, onDeleteStudent, onResetPassword, alerts = [], onDismissAlert, gcName, gcFlags }) => {
   const [searchQuery, setSearchQuery] = useState('');
+  const [showStatusGuide, setShowStatusGuide] = useState(false);
   const [showBroadcastModal, setShowBroadcastModal] = useState(false);
   const [showExportModal, setShowExportModal] = useState(false);
   const [broadcastMessage, setBroadcastMessage] = useState('');
@@ -1083,6 +1084,13 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
               />
             </div>
             <button
+              onClick={() => setShowStatusGuide(prev => !prev)}
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-colors text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 border border-zinc-200 dark:border-zinc-700"
+            >
+              <AlertCircle size={16} />
+              Status Guide
+            </button>
+            <button
               onClick={handleExportCSV}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-colors ${TEXT_ACCENT_DARK}`}
               style={{ backgroundColor: 'rgba(42,125,111,0.08)', color: ACCENT }}
@@ -1123,6 +1131,40 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
             })}
           </div>
         </div>
+
+        {/* Status Guide (collapsible) */}
+        <AnimatePresence>
+          {showStatusGuide && (
+            <MotionDiv
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              className="overflow-hidden"
+            >
+              <div className="rounded-xl border border-zinc-200 dark:border-zinc-700 p-5 mb-4 bg-zinc-50 dark:bg-zinc-800/30">
+                <p className="text-sm font-semibold text-zinc-800 dark:text-white mb-3">What do the statuses mean?</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                  {[
+                    { status: 'New', color: '#2A7D6F', desc: 'Signed up within the last 7 days. Give them time to explore.' },
+                    { status: 'Active', color: '#3B82F6', desc: 'Logged a study session in the past 7 days. On track.' },
+                    { status: 'Thriving', color: '#10B981', desc: 'Active with a 5+ day streak, 3+ modules completed, or 3+ consecutive active weeks.' },
+                    { status: 'Drifting', color: '#F59E0B', desc: '8\u201314 days since last session, or lost a strong streak recently. May need a nudge.' },
+                    { status: 'At Risk', color: '#EF4444', desc: '15+ days inactive, lost a 7+ day streak, or 3+ weeks with zero sessions. Needs attention.' },
+                    { status: 'Inactive', color: '#71717A', desc: 'Past the 7-day new window but has never logged a single study session.' },
+                  ].map(s => (
+                    <div key={s.status} className="flex gap-3 items-start">
+                      <div className="w-2.5 h-2.5 rounded-full mt-1 shrink-0" style={{ backgroundColor: s.color }} />
+                      <div>
+                        <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-200">{s.status}</p>
+                        <p className="text-[11px] text-zinc-500 dark:text-zinc-400 leading-relaxed">{s.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </MotionDiv>
+          )}
+        </AnimatePresence>
 
         {/* Table */}
         <div className="overflow-x-auto">
