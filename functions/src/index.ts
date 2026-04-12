@@ -67,3 +67,42 @@ export const resetStudentPassword = onCall(
     return { tempPassword, studentName: studentData.name };
   }
 );
+
+/**
+ * changeOwnPassword
+ *
+ * Called by a student who has been flagged with needsPasswordChange.
+ * Uses Admin SDK to bypass the requires-recent-login restriction.
+ */
+export const changeOwnPassword = onCall(
+  { cors: true },
+  async (request) => {
+    if (!request.auth) {
+      throw new HttpsError("unauthenticated", "Must be logged in.");
+    }
+
+    const { newPassword } = request.data as { newPassword?: string };
+    if (!newPassword || typeof newPassword !== "string" || newPassword.length < 6) {
+      throw new HttpsError("invalid-argument", "Password must be at least 6 characters.");
+    }
+
+    const db = getFirestore();
+    const auth = getAuth();
+    const uid = request.auth.uid;
+
+    // Verify the user actually needs a password change
+    const userDoc = await db.collection("users").doc(uid).get();
+    if (!userDoc.exists || !userDoc.data()?.needsPasswordChange) {
+      throw new HttpsError("failed-precondition", "No password change required.");
+    }
+
+    try {
+      await auth.updateUser(uid, { password: newPassword });
+      await db.collection("users").doc(uid).update({ needsPasswordChange: false });
+    } catch {
+      throw new HttpsError("internal", "Failed to change password.");
+    }
+
+    return { success: true };
+  }
+);

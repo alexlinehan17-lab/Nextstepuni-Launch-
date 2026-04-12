@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.resetStudentPassword = void 0;
+exports.changeOwnPassword = exports.resetStudentPassword = void 0;
 const https_1 = require("firebase-functions/v2/https");
 const app_1 = require("firebase-admin/app");
 const auth_1 = require("firebase-admin/auth");
@@ -58,5 +58,36 @@ exports.resetStudentPassword = (0, https_1.onCall)({ cors: true }, async (reques
         throw new https_1.HttpsError("internal", "Failed to reset password.");
     }
     return { tempPassword, studentName: studentData.name };
+});
+/**
+ * changeOwnPassword
+ *
+ * Called by a student who has been flagged with needsPasswordChange.
+ * Uses Admin SDK to bypass the requires-recent-login restriction.
+ */
+exports.changeOwnPassword = (0, https_1.onCall)({ cors: true }, async (request) => {
+    if (!request.auth) {
+        throw new https_1.HttpsError("unauthenticated", "Must be logged in.");
+    }
+    const { newPassword } = request.data;
+    if (!newPassword || typeof newPassword !== "string" || newPassword.length < 6) {
+        throw new https_1.HttpsError("invalid-argument", "Password must be at least 6 characters.");
+    }
+    const db = (0, firestore_1.getFirestore)();
+    const auth = (0, auth_1.getAuth)();
+    const uid = request.auth.uid;
+    // Verify the user actually needs a password change
+    const userDoc = await db.collection("users").doc(uid).get();
+    if (!userDoc.exists || !userDoc.data()?.needsPasswordChange) {
+        throw new https_1.HttpsError("failed-precondition", "No password change required.");
+    }
+    try {
+        await auth.updateUser(uid, { password: newPassword });
+        await db.collection("users").doc(uid).update({ needsPasswordChange: false });
+    }
+    catch {
+        throw new https_1.HttpsError("internal", "Failed to change password.");
+    }
+    return { success: true };
 });
 //# sourceMappingURL=index.js.map

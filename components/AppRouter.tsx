@@ -8,8 +8,6 @@ import { ArrowLeft, Eye, EyeOff, Check } from 'lucide-react';
 import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
 import { useToast } from './Toast';
-import { updatePassword } from 'firebase/auth';
-import { auth as firebaseAuth, db as firebaseDb } from '../firebase';
 import { type SessionUser } from '../utils/authUtils';
 import { LoadingSpinner } from './LoadingSpinner';
 import { KnowledgeTree, type CategoryType } from './KnowledgeTree';
@@ -552,7 +550,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 };
 
 /** Password change screen — shown when a GC resets a student's password */
-const ChangePasswordModal: React.FC<{ user: SessionUser }> = ({ user }) => {
+const ChangePasswordModal: React.FC<{ user: SessionUser }> = ({ user: _user }) => {
   const [newPassword, setNewPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -562,19 +560,14 @@ const ChangePasswordModal: React.FC<{ user: SessionUser }> = ({ user }) => {
     if (newPassword.length < 6) { setError('Password must be at least 6 characters.'); return; }
     setIsLoading(true); setError('');
     try {
-      const currentUser = firebaseAuth.currentUser;
-      if (!currentUser) throw new Error('Not authenticated');
-      await updatePassword(currentUser, newPassword);
-      // Clear the flag in Firestore
-      await setDoc(doc(firebaseDb, 'users', user.uid), { needsPasswordChange: false }, { merge: true });
-      // Reload to pick up the cleared flag
+      const { getFunctions, httpsCallable } = await import('firebase/functions');
+      const { default: app } = await import('../firebase');
+      const functions = getFunctions(app);
+      const changeFn = httpsCallable(functions, 'changeOwnPassword');
+      await changeFn({ newPassword });
       window.location.reload();
-    } catch (err: any) {
-      if (err.code === 'auth/requires-recent-login') {
-        setError('Please log out and log back in, then try again.');
-      } else {
-        setError('Failed to change password. Try again.');
-      }
+    } catch {
+      setError('Failed to change password. Try again.');
     }
     setIsLoading(false);
   };
