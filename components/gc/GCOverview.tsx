@@ -878,9 +878,9 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
             </div>
             <span className={`text-xs font-medium ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{distributionTotal} students</span>
           </div>
-          {/* Stacked horizontal bar */}
-          <div className="flex-1 flex flex-col justify-center">
-            <div className="w-full h-10 rounded-lg overflow-hidden flex" style={{ backgroundColor: 'rgba(255,255,255,0.06)' }}>
+          {/* Stacked vertical bar + legend */}
+          <div className="flex-1 flex items-center gap-5">
+            <div className="w-10 flex-1 rounded-lg overflow-hidden flex flex-col-reverse" style={{ backgroundColor: 'rgba(255,255,255,0.06)', minHeight: 200 }}>
               {(() => {
                 const bucketColors = [ACCENT, '#3B82F6', '#F59E0B', '#8B5CF6'];
                 return distribution.map((count, i) => {
@@ -889,10 +889,10 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                   return (
                     <MotionDiv
                       key={i}
-                      className="h-full"
+                      className="w-full"
                       style={{ backgroundColor: bucketColors[i] }}
-                      initial={{ width: 0 }}
-                      animate={{ width: `${pct}%` }}
+                      initial={{ height: 0 }}
+                      animate={{ height: `${pct}%` }}
                       transition={{ duration: 0.6, delay: 0.3 + i * 0.1, ease: CUSTOM_EASE }}
                       title={`${['0-25%', '25-50%', '50-75%', '75-100%'][i]}: ${count} students`}
                     />
@@ -901,13 +901,13 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
               })()}
             </div>
             {/* Legend */}
-            <div className="flex flex-wrap gap-3 mt-3">
+            <div className="flex flex-col gap-2.5">
               {['0-25%', '25-50%', '50-75%', '75-100%'].map((label, i) => {
                 const colors = [ACCENT, '#3B82F6', '#F59E0B', '#8B5CF6'];
                 return (
                   <div key={i} className="flex items-center gap-1.5">
-                    <div className="w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: colors[i] }} />
-                    <span className={`text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{label} ({distribution[i]})</span>
+                    <div className="w-2.5 h-2.5 rounded-sm shrink-0" style={{ backgroundColor: colors[i] }} />
+                    <span className={`text-[10px] whitespace-nowrap ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{label} ({distribution[i]})</span>
                   </div>
                 );
               })}
