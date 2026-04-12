@@ -934,8 +934,8 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           </div>
         </MotionDiv>
 
-        {/* ─── ROW 4 RIGHT: Exam Calendar ────────────────────────────── */}
-        <div className={CARD_STYLE_DARK_CLASS} style={CARD_STYLE}>
+        {/* ─── Exam Calendar (full width) ────────────────────────────── */}
+        <div className={CARD_STYLE_DARK_CLASS} style={{ ...CARD_STYLE, gridColumn: '1 / -1' }}>
           <div className="flex items-baseline justify-between mb-3">
             <div>
               <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Countdown</p>
