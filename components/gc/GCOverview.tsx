@@ -934,8 +934,8 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           </div>
         </MotionDiv>
 
-        {/* ─── Exam Calendar (full width) ────────────────────────────── */}
-        <div className={CARD_STYLE_DARK_CLASS} style={{ ...CARD_STYLE, gridColumn: '1 / -1' }}>
+        {/* ─── Exam Calendar ────────────────────────────── */}
+        <div className={CARD_STYLE_DARK_CLASS} style={CARD_STYLE}>
           <div className="flex items-baseline justify-between mb-3">
             <div>
               <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Countdown</p>
@@ -966,7 +966,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           <div className="grid grid-cols-7 gap-1">
             {calendarDays.map((cell, i) => {
               if (!cell.isCurrentMonth) {
-                return <div key={i} className="h-10" />;
+                return <div key={i} className="aspect-square" />;
               }
               const isToday = isCurrentMonth && cell.day === todayDate;
               const isLC = lcDay !== null && cell.day === lcDay;
@@ -975,7 +975,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
               return (
                 <div
                   key={i}
-                  className={`h-10 flex flex-col items-center justify-center text-[11px] font-medium relative group rounded-md ${
+                  className={`aspect-square flex flex-col items-center justify-center text-[11px] font-medium relative group ${
                     !isToday && !isLC ? 'text-zinc-600 dark:text-zinc-400' : 'text-white rounded-lg'
                   } ${dayEvents.length > 0 ? 'cursor-pointer' : ''}`}
                   style={isToday ? { backgroundColor: ACCENT } : isLC ? { backgroundColor: '#DC2626' } : undefined}
