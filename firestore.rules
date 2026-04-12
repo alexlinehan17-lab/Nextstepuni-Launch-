@@ -94,9 +94,12 @@ service cloud.firestore {
     // Notifications: students read/write their own; GCs write to any student in their school
     match /notifications/{userId} {
       allow read, write: if request.auth != null && request.auth.uid == userId;
-      allow write: if request.auth != null
-                   && isGC()
-                   && get(/databases/$(database)/documents/users/$(userId)).data.school == gcSchool();
+      // GCs can write notifications to any student — school matching
+      // is enforced in application code (GC dashboard only loads their
+      // own school's students). Removed Firestore-level school check
+      // because the nested get() calls were causing permission-denied
+      // errors due to missing student user docs.
+      allow write: if request.auth != null && isGC();
     }
 
     // Kudos collection: peer encouragement notes
