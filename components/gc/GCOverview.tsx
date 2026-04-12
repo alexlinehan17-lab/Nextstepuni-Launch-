@@ -255,7 +255,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
   const daysUntilLC = getDaysUntilLC();
   const distribution = getProgressDistribution(studentData, allCourses);
   const distributionTotal = Math.max(1, distribution.reduce((a, b) => a + b, 0));
-  const distributionMax = Math.max(1, ...distribution);
+  const _distributionMax = Math.max(1, ...distribution);
 
   // ─── Category averages ─────────────────────────────────────────────────
 
@@ -860,7 +860,10 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
         {/* ─── ROW 2 RIGHT: Key Dates & Events ───────────────────────── */}
         <GCKeyEvents school={school} />
 
-        {/* ─── Progress Breakdown (histogram) — stretches to match calendar height ── */}
+        {/* ─── Progress Breakdown + Exam Calendar (1:2 ratio) ── */}
+        <div style={{ gridColumn: '1 / -1', display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '16px' }}>
+
+        {/* Progress Breakdown — stacked bar */}
         <MotionDiv
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -868,41 +871,51 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           className={CARD_STYLE_DARK_CLASS}
           style={{ ...CARD_STYLE, display: 'flex', flexDirection: 'column' }}
         >
-          <div className="flex items-baseline justify-between mb-5">
+          <div className="flex items-baseline justify-between mb-4">
             <div>
               <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Distribution</p>
               <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5">Progress Breakdown</p>
             </div>
             <span className={`text-xs font-medium ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{distributionTotal} students</span>
           </div>
-          <div className="flex gap-4 flex-1 items-end">
-            {distribution.map((count, i) => {
-              const heightPct = (count / distributionMax) * 100;
-              const bucketLabels = ['0-25%', '25-50%', '50-75%', '75-100%'];
-              return (
-                <div key={i} className="flex-1 flex flex-col items-center gap-1.5">
-                  <span className="text-sm font-medium text-zinc-600 dark:text-zinc-300">{count}</span>
-                  <div className="w-full relative h-36">
-                    {count > 0 ? (
-                      <MotionDiv
-                        className="absolute bottom-0 left-1 right-1 rounded-lg"
-                        style={{ backgroundColor: ACCENT }}
-                        initial={{ height: 0 }}
-                        animate={{ height: `${Math.max(heightPct, 8)}%` }}
-                        transition={{ duration: 0.6, delay: 0.3 + i * 0.1, ease: CUSTOM_EASE }}
-                      />
-                    ) : (
-                      <div className="absolute bottom-0 left-1 right-1 h-[2px] rounded-full bg-zinc-200 dark:bg-zinc-700" />
-                    )}
+          {/* Stacked horizontal bar */}
+          <div className="flex-1 flex flex-col justify-center">
+            <div className="w-full h-10 rounded-lg overflow-hidden flex" style={{ backgroundColor: 'rgba(255,255,255,0.06)' }}>
+              {(() => {
+                const bucketColors = [ACCENT, '#3B82F6', '#F59E0B', '#8B5CF6'];
+                return distribution.map((count, i) => {
+                  if (count === 0) return null;
+                  const pct = distributionTotal > 0 ? (count / distributionTotal) * 100 : 0;
+                  return (
+                    <MotionDiv
+                      key={i}
+                      className="h-full"
+                      style={{ backgroundColor: bucketColors[i] }}
+                      initial={{ width: 0 }}
+                      animate={{ width: `${pct}%` }}
+                      transition={{ duration: 0.6, delay: 0.3 + i * 0.1, ease: CUSTOM_EASE }}
+                      title={`${['0-25%', '25-50%', '50-75%', '75-100%'][i]}: ${count} students`}
+                    />
+                  );
+                });
+              })()}
+            </div>
+            {/* Legend */}
+            <div className="flex flex-wrap gap-3 mt-3">
+              {['0-25%', '25-50%', '50-75%', '75-100%'].map((label, i) => {
+                const colors = [ACCENT, '#3B82F6', '#F59E0B', '#8B5CF6'];
+                return (
+                  <div key={i} className="flex items-center gap-1.5">
+                    <div className="w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: colors[i] }} />
+                    <span className={`text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{label} ({distribution[i]})</span>
                   </div>
-                  <span className={`text-xs ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{bucketLabels[i]}</span>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </MotionDiv>
 
-        {/* ─── Exam Calendar ────────────────────────────── */}
+        {/* Exam Calendar */}
         <div className={CARD_STYLE_DARK_CLASS} style={CARD_STYLE}>
           <div className="flex items-baseline justify-between mb-3">
             <div>
@@ -995,7 +1008,9 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           </div>
         </div>
 
-        {/* ─── ROW 5: Subject-Level Gaps (full width span) ───────────── */}
+        </div>{/* end Progress+Calendar sub-grid */}
+
+        {/* ─── Subject-Level Gaps (full width span) ───────────── */}
         {topGaps.length > 0 && (
           <MotionDiv
             initial={{ opacity: 0, y: 12 }}
