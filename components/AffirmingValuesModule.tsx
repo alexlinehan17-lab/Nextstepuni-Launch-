@@ -355,6 +355,7 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
       moduleDescription="Discover the invisible pressure that steals your brainpower in exams — and a simple 15-minute exercise that shields you from it."
       theme={theme}
       sections={sections}
+      fullSectionsCount={5}
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}

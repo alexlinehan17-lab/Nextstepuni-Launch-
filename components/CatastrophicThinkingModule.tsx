@@ -433,6 +433,7 @@ const CatastrophicThinkingModule: React.FC<{ onBack: () => void; progress: Modul
       moduleDescription="Ever had your brain spiral into worst-case scenarios before an exam? This module gives you practical tools to catch those thoughts, challenge them, and take back control."
       theme={theme}
       sections={sections}
+      fullSectionsCount={8}
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}

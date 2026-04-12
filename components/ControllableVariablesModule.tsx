@@ -523,6 +523,7 @@ const ControllableVariablesModule: React.FC<{ onBack: () => void; progress: Modu
       moduleDescription="Your brain runs on three things: sleep, food, and exercise. Get these right and everything else gets easier. This module shows you how they actually work and what to do about it."
       theme={theme}
       sections={sections}
+      fullSectionsCount={6}
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}

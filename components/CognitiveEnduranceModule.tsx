@@ -517,6 +517,7 @@ const CognitiveEnduranceModule: React.FC<{ onBack: () => void; progress: ModuleP
       moduleDescription="The Leaving Cert isn't a sprint. Learn how to keep your brain sharp across weeks of exams, even when you're tired and stressed."
       theme={theme}
       sections={sections}
+      fullSectionsCount={6}
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}

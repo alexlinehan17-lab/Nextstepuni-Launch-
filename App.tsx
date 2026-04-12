@@ -396,10 +396,9 @@ const App: React.FC = () => {
         await setDoc(userDocRef, { yearGroup: profile.yearGroup }, { merge: true });
         // yearGroup saved to Firestore — will be picked up on next auth refresh
       }
-      // Save essentials mode preference to settings
+      // Save essentials mode preference to settings (use updateSetting to sync local state)
       if (essentialsMode !== undefined) {
-        const settingsDocRef = doc(db, 'settings', user.uid);
-        await setDoc(settingsDocRef, { essentialsMode }, { merge: true });
+        updateSetting('essentialsMode', essentialsMode);
       }
     } catch {
       console.error('Failed to save subject profile:');

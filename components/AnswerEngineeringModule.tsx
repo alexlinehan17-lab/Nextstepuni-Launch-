@@ -640,6 +640,7 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
       moduleDescription="Two students know the same content. One gets a H3, the other gets a H1. The difference is how they structure their answers. This module teaches you the frameworks."
       theme={theme}
       sections={sections}
+      fullSectionsCount={7}
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}

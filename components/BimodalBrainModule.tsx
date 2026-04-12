@@ -396,6 +396,7 @@ const BimodalBrainModule: React.FC<{ onBack: () => void; progress: ModuleProgres
       moduleDescription="Your brain has two modes — one for grinding through problems, one for creative breakthroughs. Learning when to switch between them is a game-changer for your study."
       theme={theme}
       sections={sections}
+      fullSectionsCount={6}
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}

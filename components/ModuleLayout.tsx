@@ -65,6 +65,9 @@ interface ModuleLayoutProps {
   progress: ModuleProgress;
   onProgressUpdate: (p: ModuleProgress) => void;
   finishButtonText?: string;
+  /** When essentials mode uses fewer sections, set this to the full section count
+   *  so completion is reported correctly against courseData.sectionsCount */
+  fullSectionsCount?: number;
   children: (activeSection: number) => React.ReactNode;
   // Celebration screen props (optional)
   categoryColor?: string;
@@ -84,6 +87,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   progress,
   onProgressUpdate,
   finishButtonText = 'Complete Section',
+  fullSectionsCount,
   children,
   categoryColor,
   modulesCompleted,
@@ -132,7 +136,12 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
     const isLastSection = activeSection === sections.length - 1;
     const isNewCompletion = activeSection === unlockedSection && unlockedSection < sections.length;
     if (isNewCompletion) {
-      onProgressUpdate({ unlockedSection: unlockedSection + 1 });
+      // When essentials mode uses fewer sections, report the full section count
+      // on the last section so courseData.sectionsCount considers it complete
+      const reportedUnlocked = (isLastSection && fullSectionsCount && fullSectionsCount > sections.length)
+        ? fullSectionsCount
+        : unlockedSection + 1;
+      onProgressUpdate({ unlockedSection: reportedUnlocked });
     }
     if (!isLastSection) {
       setActiveSection(activeSection + 1);

@@ -244,6 +244,7 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
       moduleDescription="Learn how to stop being a passenger in your own school life and start driving toward the future you actually want."
       theme={theme}
       sections={sections}
+      fullSectionsCount={6}
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
