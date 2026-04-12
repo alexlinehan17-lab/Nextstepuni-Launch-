@@ -55,7 +55,7 @@ const TRACK_BG = '#EDEAE6';
 
 // Dark mode badge/surface overrides (used via Tailwind dark: classes)
 const _BADGE_SAGE_DARK = 'dark:!bg-[rgba(107,143,113,0.15)] dark:!text-[#8AB592]';
-const BADGE_AMBER_DARK = 'dark:!bg-[rgba(196,135,59,0.15)] dark:!text-[#D4A95C]';
+const _BADGE_AMBER_DARK = 'dark:!bg-[rgba(196,135,59,0.15)] dark:!text-[#D4A95C]';
 const _BADGE_CLAY_DARK = 'dark:!bg-[rgba(42,125,111,0.15)] dark:!text-[#6BC4B0]';
 const TEXT_ACCENT_DARK = 'dark:!text-[#4DB8A4]';
 const TEXT_NEUTRAL_DARK = 'dark:!text-zinc-400';
@@ -256,7 +256,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
 
   // ─── Category averages ─────────────────────────────────────────────────
 
-  const categoryAverages = useMemo(() => {
+  const _categoryAverages = useMemo(() => {
     return CATEGORIES.map(cat => {
       const avgProg = studentData.length > 0
         ? studentData.reduce((sum, s) => sum + getCategoryProgress(s.progress, allCourses, cat.id), 0) / studentData.length
@@ -823,54 +823,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
         {/* ─── ROW 2 RIGHT: Key Dates & Events ───────────────────────── */}
         <GCKeyEvents school={school} />
 
-        {/* ─── ROW 3 LEFT: Category Completion ───────────────────────── */}
-        <MotionDiv
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2, ease: CUSTOM_EASE }}
-          className={CARD_STYLE_DARK_CLASS}
-          style={CARD_STYLE}
-        >
-          <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Categories</p>
-          <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5 mb-4">Category Completion</p>
-          <div className="space-y-0">
-            {categoryAverages.map((cat, catIdx) => (
-              <div key={cat.id}>
-                <div className="py-3">
-                  <div className="flex justify-between items-center mb-1.5">
-                    <div className="flex items-center gap-2">
-                      <div className={`w-2.5 h-2.5 rounded-full ${cat.dotColor}`} />
-                      <p className="text-xs font-medium text-zinc-700 dark:text-zinc-300">{cat.title}</p>
-                    </div>
-                    <p className="text-sm font-medium text-zinc-600 dark:text-zinc-300">{cat.avgProgress.toFixed(0)}%</p>
-                  </div>
-                  <div className={`w-full rounded-full h-1.5 ${TRACK_BG_DARK}`} style={{ backgroundColor: TRACK_BG }}>
-                    <MotionDiv
-                      className="h-1.5 rounded-full"
-                      style={{ backgroundColor: ACCENT }}
-                      initial={{ width: 0 }}
-                      animate={{ width: `${cat.avgProgress}%` }}
-                      transition={{ duration: 0.5, ease: 'easeOut' }}
-                    />
-                  </div>
-                  {cat.zeroStudents > 0 && (
-                    <div className={`flex items-center gap-1.5 mt-1.5 px-2 py-1 rounded-md ${BADGE_AMBER_DARK}`} style={{ backgroundColor: '#FDF3E7', color: '#8B5E2A' }}>
-                      <AlertTriangle size={10} />
-                      <p className="text-[10px] font-medium">
-                        {cat.zeroStudents} student{cat.zeroStudents !== 1 ? 's' : ''} with 0 modules started
-                      </p>
-                    </div>
-                  )}
-                </div>
-                {catIdx < categoryAverages.length - 1 && (
-                  <div className="border-b border-zinc-100 dark:border-zinc-800/40" />
-                )}
-              </div>
-            ))}
-          </div>
-        </MotionDiv>
-
-        {/* ─── ROW 3 RIGHT: Recently Active ──── */}
+        {/* ─── ROW 3: Recently Active ──── */}
         <div className="flex flex-col gap-4">
           {/* Recently Active */}
           <div className={CARD_STYLE_DARK_CLASS} style={CARD_STYLE}>
