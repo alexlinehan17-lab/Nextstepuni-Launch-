@@ -224,20 +224,30 @@ export function useQuests(
     return { quest, current, isCompleted, isClaimed, dayNumber, isOnboarding };
   }, [isLoaded, uid, studentProfile, topicMastery, courses, userProgress, sessions, debriefs, streak, timetableCompletions, questRewards, mockResults]);
 
-  // Claim reward (in-flight guard prevents double-claim on rapid clicks)
+  // Claim reward — set questRewards IMMEDIATELY (before the write) to prevent
+  // the button from being clickable during the Firestore round-trip
   const claimingRef = useRef(false);
   const claimReward = useCallback(async () => {
     if (!uid || !questState || questState.isClaimed || !questState.isCompleted) return;
     if (claimingRef.current) return;
     claimingRef.current = true;
+    // Optimistic: mark as claimed immediately so the UI hides the button
+    const questId = questState.quest.id;
+    const rewardPoints = questState.quest.rewardPoints;
+    setQuestRewards(prev => ({ ...prev, [questId]: new Date().toISOString() }));
     try {
       await setDoc(doc(db, 'progress', uid), {
-        pointsData: { totalEarned: increment(questState.quest.rewardPoints) },
-        questRewards: { [questState.quest.id]: new Date().toISOString() },
+        pointsData: { totalEarned: increment(rewardPoints) },
+        questRewards: { [questId]: new Date().toISOString() },
       }, { merge: true });
-      if (isMountedRef.current) setQuestRewards(prev => ({ ...prev, [questState.quest.id]: new Date().toISOString() }));
     } catch (err) {
       console.error('Failed to claim quest reward:', err);
+      // Roll back optimistic update
+      if (isMountedRef.current) setQuestRewards(prev => {
+        const next = { ...prev };
+        delete next[questId];
+        return next;
+      });
     } finally {
       claimingRef.current = false;
     }
