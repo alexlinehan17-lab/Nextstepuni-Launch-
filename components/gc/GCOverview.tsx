@@ -977,15 +977,15 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                   key={i}
                   className={`aspect-square flex flex-col items-center justify-center text-[11px] font-medium relative ${
                     !isToday && !isLC ? 'text-zinc-600 dark:text-zinc-400' : 'text-white rounded-lg'
-                  }`}
+                  } ${dayEvents.length > 0 ? 'cursor-pointer' : ''}`}
                   style={isToday ? { backgroundColor: ACCENT } : isLC ? { backgroundColor: '#DC2626' } : undefined}
-                  title={dayEvents.length > 0 ? dayEvents.map(e => e.title).join(', ') : isLC ? 'LC Exam Date' : isToday ? 'Today' : ''}
+                  title={dayEvents.length > 0 ? dayEvents.map(e => `${e.title} (${e.category})`).join('\n') : isLC ? 'LC Exam Date' : isToday ? 'Today' : ''}
                 >
                   {cell.day}
                   {dayEvents.length > 0 && (
-                    <div className="flex gap-0.5 absolute bottom-1" title={dayEvents.map(e => e.title).join(', ')}>
+                    <div className="flex gap-0.5 absolute bottom-1">
                       {dayEvents.slice(0, 3).map((ev, j) => (
-                        <div key={j} className="w-1.5 h-1.5 rounded-full cursor-pointer" style={{ backgroundColor: EVENT_DOT_COLORS[ev.category] || '#8B5CF6' }} title={ev.title} />
+                        <div key={j} className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: EVENT_DOT_COLORS[ev.category] || '#8B5CF6' }} />
                       ))}
                     </div>
                   )}
