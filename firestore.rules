@@ -213,6 +213,17 @@ service cloud.firestore {
       }
     }
 
+    // GC Events: key dates added by guidance counsellors per school
+    match /gcEvents/{schoolId} {
+      // GCs can read/write events for their own school
+      allow read, write: if request.auth != null
+                         && isGC()
+                         && schoolId == gcSchool();
+      // Students can read their school's events (for timetable integration)
+      allow read: if request.auth != null
+                  && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school == schoolId;
+    }
+
     // Default deny — no other collections are accessible
     match /{document=**} {
       allow read, write: if false;
