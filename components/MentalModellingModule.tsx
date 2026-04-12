@@ -13,6 +13,7 @@ import { type ModuleProgress } from '../types';
 import { cyanTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = cyanTheme;
 
@@ -276,6 +277,7 @@ const CycleOfModelling = () => {
 
 // --- MODULE COMPONENT ---
 const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'minds-eye', title: 'The Mind\'s Eye', eyebrow: '01 // The Skill Nobody Teaches', icon: Eye },
     { id: 'modelling-cycle', title: 'The Modelling Cycle', eyebrow: '02 // The Process', icon: Workflow },
@@ -302,15 +304,30 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Mind's Eye." eyebrow="Step 1" icon={Eye} theme={theme}>
-              <p>In subjects like DCG and Engineering, there's a skill nobody actually teaches you — but everyone expects you to have. It's not about what you draw; it's about what you can <em>see</em> in your head before you draw it. This is <Highlight description="Your ability to build a picture in your head — like a 3D model you can spin around, take apart, and test — all without touching a pencil." theme={theme}>Mental Modelling</Highlight>. It's the difference between blindly following steps and truly understanding the shape or mechanism you're working with.</p>
-              <p>This "seeing in your head" skill isn't just one thing. It's actually a few different skills bundled together. The big three for the Leaving Cert are:</p>
-              <ConceptCardGrid
-                cards={[
-                  { number: 1, term: "Spatial Visualisation", description: "The ability to imagine something changing shape step by step — like picturing what happens when you slice through a 3D object, or where two shapes overlap." },
-                  { number: 2, term: "Mental Rotation", description: "Being able to spin an object around in your head quickly and accurately. This is what you need when you're drawing different views of the same object." },
-                  { number: 3, term: "Spatial Orientation", description: "Understanding how things look from different positions — like imagining you're standing somewhere else in the room. This is key for things like Perspective Drawing." },
-                ]}
-              />
+              {essentials ? (
+                <>
+                  <p>In DCG and Engineering, the real skill is seeing shapes in your head before you draw them. This is <Highlight description="Building a 3D picture in your head that you can spin and test." theme={theme}>Mental Modelling</Highlight>. It is actually three skills bundled together:</p>
+                  <ConceptCardGrid
+                    cards={[
+                      { number: 1, term: "Spatial Visualisation", description: "The ability to imagine something changing shape step by step — like picturing what happens when you slice through a 3D object, or where two shapes overlap." },
+                      { number: 2, term: "Mental Rotation", description: "Being able to spin an object around in your head quickly and accurately. This is what you need when you're drawing different views of the same object." },
+                      { number: 3, term: "Spatial Orientation", description: "Understanding how things look from different positions — like imagining you're standing somewhere else in the room. This is key for things like Perspective Drawing." },
+                    ]}
+                  />
+                </>
+              ) : (
+                <>
+                  <p>In subjects like DCG and Engineering, there's a skill nobody actually teaches you — but everyone expects you to have. It's not about what you draw; it's about what you can <em>see</em> in your head before you draw it. This is <Highlight description="Your ability to build a picture in your head — like a 3D model you can spin around, take apart, and test — all without touching a pencil." theme={theme}>Mental Modelling</Highlight>. It's the difference between blindly following steps and truly understanding the shape or mechanism you're working with.</p>
+                  <p>This "seeing in your head" skill isn't just one thing. It's actually a few different skills bundled together. The big three for the Leaving Cert are:</p>
+                  <ConceptCardGrid
+                    cards={[
+                      { number: 1, term: "Spatial Visualisation", description: "The ability to imagine something changing shape step by step — like picturing what happens when you slice through a 3D object, or where two shapes overlap." },
+                      { number: 2, term: "Mental Rotation", description: "Being able to spin an object around in your head quickly and accurately. This is what you need when you're drawing different views of the same object." },
+                      { number: 3, term: "Spatial Orientation", description: "Understanding how things look from different positions — like imagining you're standing somewhere else in the room. This is key for things like Perspective Drawing." },
+                    ]}
+                  />
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 1 && (
@@ -353,27 +370,49 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
                   </div>
                 </div>
               </div>
-              <p>Here's the important part: most students skip Step 3 entirely. They fall back on memorised rules ("always draw this line at 45 degrees") instead of actually picturing the object. This gets you through standard questions, but the moment the exam throws you something slightly different, you're stuck — because you never really understood the shape in the first place.</p>
+              {essentials ? (
+                <p>Most students skip the "test it mentally" step. They memorise drawing rules instead of picturing the object. This works for standard questions but breaks on anything new.</p>
+              ) : (
+                <p>Here's the important part: most students skip Step 3 entirely. They fall back on memorised rules ("always draw this line at 45 degrees") instead of actually picturing the object. This gets you through standard questions, but the moment the exam throws you something slightly different, you're stuck — because you never really understood the shape in the first place.</p>
+              )}
               <CycleOfModelling />
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="The 'Glass Box' (DCG)." eyebrow="Step 3" icon={Box} theme={theme}>
-              <p>For DCG, the key mental picture is the "Glass Box" — imagine an object floating inside a see-through cube, with the Front View, Top View, and Side View projected onto the glass faces. The tricky part is that you have to build this 3D picture in your head while working on a flat 2D page. This gets really hard with abstract ideas like the <Highlight description="The line you get where an imaginary flat surface (like a cutting plane) meets one of the main reference surfaces (like the floor or wall in your drawing). It's a tricky concept because you're imagining something invisible meeting something else invisible." theme={theme}>Traces of a Plane</Highlight>.</p>
-              <p>To tackle those tough Interpenetration questions, strong students use a mental shortcut called <Highlight description="A trick where you imagine taking thin flat slices through a complicated 3D shape. Instead of trying to solve one huge 3D problem all at once, you solve a bunch of simpler flat problems one at a time, then piece the answer together." theme={theme}>"Slicing"</Highlight>. Instead of trying to solve one huge 3D problem in your head all at once, you break it into lots of smaller, simpler flat problems — much easier to handle.</p>
+              {essentials ? (
+                <p>Imagine an object inside a see-through cube. Front, Top, and Side views project onto the glass faces. For tough Interpenetration questions, use <Highlight description="Take thin flat slices through a 3D shape to simplify the problem." theme={theme}>"Slicing"</Highlight>. Break one big 3D problem into many simpler flat problems. Try the interactive tool below.</p>
+              ) : (
+                <>
+                  <p>For DCG, the key mental picture is the "Glass Box" — imagine an object floating inside a see-through cube, with the Front View, Top View, and Side View projected onto the glass faces. The tricky part is that you have to build this 3D picture in your head while working on a flat 2D page. This gets really hard with abstract ideas like the <Highlight description="The line you get where an imaginary flat surface (like a cutting plane) meets one of the main reference surfaces (like the floor or wall in your drawing). It's a tricky concept because you're imagining something invisible meeting something else invisible." theme={theme}>Traces of a Plane</Highlight>.</p>
+                  <p>To tackle those tough Interpenetration questions, strong students use a mental shortcut called <Highlight description="A trick where you imagine taking thin flat slices through a complicated 3D shape. Instead of trying to solve one huge 3D problem all at once, you solve a bunch of simpler flat problems one at a time, then piece the answer together." theme={theme}>"Slicing"</Highlight>. Instead of trying to solve one huge 3D problem in your head all at once, you break it into lots of smaller, simpler flat problems — much easier to handle.</p>
+                </>
+              )}
               <GlassBoxUnfolder/>
             </ReadingSection>
           )}
            {activeSection === 3 && (
             <ReadingSection title="The 'Mental Movie' (Eng)." eyebrow="Step 4" icon={Film} theme={theme}>
-                <p>In Engineering, it's less about picturing still shapes and more about picturing how things <em>move</em>. For Mechanisms, you need to create a <Highlight description="The ability to look at a flat diagram of a mechanism and 'press play' in your head — imagining how all the parts move together, like watching a short video in your mind." theme={theme}>"Mental Movie."</Highlight> You see a flat drawing of a windscreen wiper on the page, and you need to be able to press 'play' in your head to see how it actually moves.</p>
-                <p>For Materials Science, it gets even trickier. You have to picture things you can never actually see with your eyes, like the difference between a <Highlight description="A pattern for how atoms are stacked inside a metal. The way atoms are arranged determines whether a metal bends easily (like copper) or snaps. Picturing this arrangement helps you understand why different metals behave differently." theme={theme}>Face-Centred Cubic (FCC)</Highlight> and Body-Centred Cubic (BCC) crystal structure. If you can't picture how atoms are stacked, then definitions like "ductility" are just empty words you're trying to memorise without understanding.</p>
+                {essentials ? (
+                  <p>In Engineering, you picture how things move. Create a <Highlight description="Press play in your head to see how a mechanism moves." theme={theme}>"Mental Movie"</Highlight> from flat diagrams. For Materials Science, you picture invisible things like <Highlight description="How atoms are stacked inside a metal — this determines if it bends or snaps." theme={theme}>crystal structures</Highlight>. If you cannot picture atom arrangements, words like "ductility" stay meaningless.</p>
+                ) : (
+                  <>
+                    <p>In Engineering, it's less about picturing still shapes and more about picturing how things <em>move</em>. For Mechanisms, you need to create a <Highlight description="The ability to look at a flat diagram of a mechanism and 'press play' in your head �� imagining how all the parts move together, like watching a short video in your mind." theme={theme}>"Mental Movie."</Highlight> You see a flat drawing of a windscreen wiper on the page, and you need to be able to press 'play' in your head to see how it actually moves.</p>
+                    <p>For Materials Science, it gets even trickier. You have to picture things you can never actually see with your eyes, like the difference between a <Highlight description="A pattern for how atoms are stacked inside a metal. The way atoms are arranged determines whether a metal bends easily (like copper) or snaps. Picturing this arrangement helps you understand why different metals behave differently." theme={theme}>Face-Centred Cubic (FCC)</Highlight> and Body-Centred Cubic (BCC) crystal structure. If you can't picture how atoms are stacked, then definitions like "ductility" are just empty words you're trying to memorise without understanding.</p>
+                  </>
+                )}
             </ReadingSection>
           )}
            {activeSection === 4 && (
             <ReadingSection title="The Procedural Trap." eyebrow="Step 5" icon={AlertTriangle} theme={theme}>
-              <p>The single biggest reason students struggle in DCG and Engineering is the <Highlight description="When you memorise the steps to draw something ('first draw this line, then this arc') without actually understanding why those steps work. You know the recipe but you don't understand the cooking." theme={theme}>"Procedural Trap."</Highlight> You end up treating geometry as a set of rules for drawing lines on paper, instead of understanding that those lines represent real 3D objects in space.</p>
-              <p>The problem is that this kind of knowledge is fragile. You can perfectly copy a standard drawing from the textbook, but the moment the exam gives you something slightly different, you're lost — because you never actually understood the shape, you just memorised the steps. The examiner reports come back every year saying students make "conceptual errors" — and this is exactly what they're talking about.</p>
+              {essentials ? (
+                <p>The biggest mistake is the <Highlight description="Memorising drawing steps without understanding the 3D shape they represent." theme={theme}>"Procedural Trap."</Highlight> You memorise steps instead of understanding the shape. This works for textbook drawings but breaks on anything new. Examiners call these "conceptual errors."</p>
+              ) : (
+                <>
+                  <p>The single biggest reason students struggle in DCG and Engineering is the <Highlight description="When you memorise the steps to draw something ('first draw this line, then this arc') without actually understanding why those steps work. You know the recipe but you don't understand the cooking." theme={theme}>"Procedural Trap."</Highlight> You end up treating geometry as a set of rules for drawing lines on paper, instead of understanding that those lines represent real 3D objects in space.</p>
+                  <p>The problem is that this kind of knowledge is fragile. You can perfectly copy a standard drawing from the textbook, but the moment the exam gives you something slightly different, you're lost — because you never actually understood the shape, you just memorised the steps. The examiner reports come back every year saying students make "conceptual errors" — and this is exactly what they're talking about.</p>
+                </>
+              )}
                <MicroCommitment theme={theme}>
                 <p>Look back at your last DCG or Engineering drawing. Can you explain <em>why</em> you drew each line, in terms of the 3D object? Or did you just follow a memorized sequence of steps?</p>
               </MicroCommitment>
@@ -381,7 +420,11 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
           )}
            {activeSection === 5 && (
             <ReadingSection title="The Training Plan." eyebrow="Step 6" icon={Pyramid} theme={theme}>
-              <p>Here's the good news: this "seeing in your head" skill is something you can actually train — it's not a talent you either have or don't. Like any skill, you build it up gradually, starting easy and working your way to the hard stuff. The <Highlight description="A step-by-step training approach where you start by handling real objects, move on to predicting what things look like on screen, and finish by picturing shapes described only in words — each stage stretching your mind's eye a bit further." theme={theme}>Spiral of Visualisation</Highlight> gives you a roadmap for doing exactly that.</p>
+              {essentials ? (
+                <p>You can train this skill. It is not a talent you either have or do not have. The <Highlight description="Start with physical objects, move to predicting on screen, finish picturing shapes from words alone." theme={theme}>Spiral of Visualisation</Highlight> gives you a roadmap. Three phases:</p>
+              ) : (
+                <p>Here's the good news: this "seeing in your head" skill is something you can actually train — it's not a talent you either have or don't. Like any skill, you build it up gradually, starting easy and working your way to the hard stuff. The <Highlight description="A step-by-step training approach where you start by handling real objects, move on to predicting what things look like on screen, and finish by picturing shapes described only in words — each stage stretching your mind's eye a bit further." theme={theme}>Spiral of Visualisation</Highlight> gives you a roadmap for doing exactly that.</p>
+              )}
               <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
                   <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>

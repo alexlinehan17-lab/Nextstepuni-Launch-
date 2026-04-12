@@ -14,6 +14,7 @@ import { type ModuleProgress } from '../types';
 import { fuchsiaTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = fuchsiaTheme;
 
@@ -500,6 +501,7 @@ const WorkingMemorySimulator = () => {
 
 // --- MODULE COMPONENT ---
 const TheCognitiveArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'three-stores', title: 'Your Three Types of Memory', eyebrow: '01 // The Basics', icon: Server },
     { id: 'bottleneck', title: 'Why Your Brain Gets Overloaded', eyebrow: '02 // The Bottleneck', icon: Filter },
@@ -515,40 +517,94 @@ const TheCognitiveArchitectureModule: React.FC<{ onBack: () => void; progress: M
         <>
           {activeSection === 0 && (
             <ReadingSection title="Your Three Types of Memory." eyebrow="Step 1" icon={Server} theme={theme}>
-              <p>To do well in the Leaving Cert, it really helps to understand how the machine you're working with — your own brain — actually handles information. The simplest way to think about it is that your memory has <Highlight description="A simple way of understanding memory: it comes in three stages — a quick flash, a short holding space, and a long-term store." theme={theme}>three stages</Highlight>.</p>
-              <p>First, there's <Highlight description="The very first stage of memory — a split-second snapshot of what you see or hear. If you don't pay attention to it, it's gone instantly." theme={theme}>Sensory Memory</Highlight>, the brief flash of what you see or hear. Anything you don't pay attention to here is gone forever. If you <em>do</em> pay attention, it moves to <Highlight description="Your brain's temporary holding space. It can only hold a small amount of information for a short time — think of it as your mental workbench." theme={theme}>Short-Term Memory</Highlight>, your brain's mental workbench. From there, it has to be deliberately moved to <Highlight description="Your brain's permanent storage. This is where knowledge needs to end up if you want to remember it in an exam." theme={theme}>Long-Term Memory</Highlight>, the permanent hard drive. Your entire job as a student is to get better at moving stuff from that workbench into long-term storage.</p>
+              {essentials ? (
+                <>
+                  <p>Your memory works in three stages. First, <strong>Sensory Memory</strong> catches a quick flash of what you see or hear. If you pay attention, it moves to <strong>Short-Term Memory</strong> -- your mental workbench. From there, you need to deliberately move it into <strong>Long-Term Memory</strong> -- the permanent store.</p>
+                  <p>Your whole job as a student is getting better at moving information from that workbench into long-term storage. That is what good study techniques help you do.</p>
+                </>
+              ) : (
+                <>
+                  <p>To do well in the Leaving Cert, it really helps to understand how the machine you're working with — your own brain — actually handles information. The simplest way to think about it is that your memory has <Highlight description="A simple way of understanding memory: it comes in three stages — a quick flash, a short holding space, and a long-term store." theme={theme}>three stages</Highlight>.</p>
+                  <p>First, there's <Highlight description="The very first stage of memory — a split-second snapshot of what you see or hear. If you don't pay attention to it, it's gone instantly." theme={theme}>Sensory Memory</Highlight>, the brief flash of what you see or hear. Anything you don't pay attention to here is gone forever. If you <em>do</em> pay attention, it moves to <Highlight description="Your brain's temporary holding space. It can only hold a small amount of information for a short time — think of it as your mental workbench." theme={theme}>Short-Term Memory</Highlight>, your brain's mental workbench. From there, it has to be deliberately moved to <Highlight description="Your brain's permanent storage. This is where knowledge needs to end up if you want to remember it in an exam." theme={theme}>Long-Term Memory</Highlight>, the permanent hard drive. Your entire job as a student is to get better at moving stuff from that workbench into long-term storage.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 1 && (
             <ReadingSection title="Why Your Brain Gets Overloaded." eyebrow="Step 2" icon={Filter} theme={theme}>
-              <p>Your Short-Term Memory — the part of your brain that <Highlight description="The part of your brain that holds and works with information right now. Think of it as your mental desk — it can only fit a few things on it at once." theme={theme}>holds and works with information right now</Highlight> — is the biggest bottleneck in your learning. It's shockingly limited. You might think you can juggle loads of info, but realistically your brain can only hold about <strong>4 chunks of information</strong> at a time when dealing with complex Leaving Cert material.</p>
-              <p>Even worse, without active effort, this information fades in about <strong>15-30 seconds</strong>. This is why you can read a whole page of a textbook and have no memory of it. The information landed on your mental desk but disappeared before it could be saved anywhere. Cramming jams this bottleneck, creating a memory that feels strong but vanishes quickly.</p>
+              {essentials ? (
+                <>
+                  <p>Your short-term memory can only hold about <strong>4 chunks</strong> at once. Without active effort, information fades in 15-30 seconds. This is why you can read a page and remember nothing.</p>
+                  <p>Cramming jams this bottleneck. It creates memories that feel strong but vanish quickly. You need strategies that move information into long-term storage instead.</p>
+                </>
+              ) : (
+                <>
+                  <p>Your Short-Term Memory — the part of your brain that <Highlight description="The part of your brain that holds and works with information right now. Think of it as your mental desk — it can only fit a few things on it at once." theme={theme}>holds and works with information right now</Highlight> — is the biggest bottleneck in your learning. It's shockingly limited. You might think you can juggle loads of info, but realistically your brain can only hold about <strong>4 chunks of information</strong> at a time when dealing with complex Leaving Cert material.</p>
+                  <p>Even worse, without active effort, this information fades in about <strong>15-30 seconds</strong>. This is why you can read a whole page of a textbook and have no memory of it. The information landed on your mental desk but disappeared before it could be saved anywhere. Cramming jams this bottleneck, creating a memory that feels strong but vanishes quickly.</p>
+                </>
+              )}
               <ChunkingChallenge/>
               <WorkingMemorySimulator/>
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="How Long-Term Memory Is Organised." eyebrow="Step 3" icon={Archive} theme={theme}>
-              <p>Your Long-Term Memory isn't one big box; it's more like a filing cabinet with different drawers for different types of knowledge. Knowing which drawer you're using helps you study smarter.</p>
-              <p>The first drawer is <Highlight description="Your store of facts and general knowledge — things like Biology definitions, History dates, or what the capital of France is." theme={theme}>fact memory</Highlight> — your library of facts and definitions. The second is <Highlight description="Your store of personal experiences — like remembering a specific Chemistry experiment or what happened in class last Tuesday." theme={theme}>experience memory</Highlight> — your personal collection of things that happened to you. The third, and most important for many subjects, is <Highlight description="Your store of skills and 'how-to' knowledge — like how to solve a Maths equation or conjugate a French verb. It's muscle memory for your brain." theme={theme}>skill memory</Highlight>. Maths isn't about memorising facts; it's about practising steps until they become automatic.</p>
+              {essentials ? (
+                <>
+                  <p>Your long-term memory has three types. <strong>Fact memory</strong> stores definitions and dates. <strong>Experience memory</strong> stores things that happened to you. <strong>Skill memory</strong> stores how-to knowledge.</p>
+                  <p>For many subjects, skill memory matters most. Maths is not about memorising facts. It is about practising steps until they become automatic. Study the type that matches your subject.</p>
+                </>
+              ) : (
+                <>
+                  <p>Your Long-Term Memory isn't one big box; it's more like a filing cabinet with different drawers for different types of knowledge. Knowing which drawer you're using helps you study smarter.</p>
+                  <p>The first drawer is <Highlight description="Your store of facts and general knowledge — things like Biology definitions, History dates, or what the capital of France is." theme={theme}>fact memory</Highlight> — your library of facts and definitions. The second is <Highlight description="Your store of personal experiences — like remembering a specific Chemistry experiment or what happened in class last Tuesday." theme={theme}>experience memory</Highlight> — your personal collection of things that happened to you. The third, and most important for many subjects, is <Highlight description="Your store of skills and 'how-to' knowledge — like how to solve a Maths equation or conjugate a French verb. It's muscle memory for your brain." theme={theme}>skill memory</Highlight>. Maths isn't about memorising facts; it's about practising steps until they become automatic.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="How to Actually Save What You Learn." eyebrow="Step 4" icon={BrainCircuit} theme={theme}>
-              <p>Moving information from your temporary workbench to your permanent hard drive is called <Highlight description="The process of turning a temporary memory into a lasting one. How deeply you think about something decides how well you'll remember it." theme={theme}>encoding</Highlight> — basically, hitting the 'save' button. But not all saving is equal. <Highlight description="When you only skim the surface of something — like re-reading a definition without really thinking about it. This creates weak memories that fade fast." theme={theme}>Surface-level studying</Highlight>, like just re-reading a definition, creates weak, flimsy memories.</p>
-              <p><Highlight description="When you really think about what something means and connect it to things you already know. This creates strong memories that last." theme={theme}>Deep studying</Highlight> is about connecting new information to what you already know. For example, learning that "mitochondria is the powerhouse of the cell" is surface-level. Understanding <em>how</em> it produces energy and why that's essential for your muscles to work is deep. What's actually happening in your brain is that <Highlight description="When brain cells fire together repeatedly, the connections between them get physically stronger — like a path getting worn into a field the more you walk it." theme={theme}>the connections between your brain cells get physically stronger</Highlight> — the more you use a pathway, the easier it becomes to use again.</p>
+              {essentials ? (
+                <>
+                  <p>Moving information into long-term memory is called <strong>encoding</strong>. Re-reading creates weak memories. Connecting new information to what you already know creates strong ones.</p>
+                  <p>Deep studying means thinking about what something means. Your brain cells physically strengthen their connections the more you use them. Use a pathway often and it becomes automatic.</p>
+                </>
+              ) : (
+                <>
+                  <p>Moving information from your temporary workbench to your permanent hard drive is called <Highlight description="The process of turning a temporary memory into a lasting one. How deeply you think about something decides how well you'll remember it." theme={theme}>encoding</Highlight> — basically, hitting the 'save' button. But not all saving is equal. <Highlight description="When you only skim the surface of something — like re-reading a definition without really thinking about it. This creates weak memories that fade fast." theme={theme}>Surface-level studying</Highlight>, like just re-reading a definition, creates weak, flimsy memories.</p>
+                  <p><Highlight description="When you really think about what something means and connect it to things you already know. This creates strong memories that last." theme={theme}>Deep studying</Highlight> is about connecting new information to what you already know. For example, learning that "mitochondria is the powerhouse of the cell" is surface-level. Understanding <em>how</em> it produces energy and why that's essential for your muscles to work is deep. What's actually happening in your brain is that <Highlight description="When brain cells fire together repeatedly, the connections between them get physically stronger — like a path getting worn into a field the more you walk it." theme={theme}>the connections between your brain cells get physically stronger</Highlight> — the more you use a pathway, the easier it becomes to use again.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 4 && (
             <ReadingSection title="Why Sleep Is Non-Negotiable." eyebrow="Step 5" icon={Moon} theme={theme}>
-              <p>Here's something your brain absolutely needs: the final "save" button gets hit while you sleep. During the day, new information sits in a <Highlight description="A small part of your brain that acts like a temporary inbox. Everything you learn during the day lands here first — but it can only hold stuff temporarily." theme={theme}>temporary inbox</Highlight> in your brain. It can hold things for a while, but nothing is permanent yet.</p>
-              <p>During deep sleep, your brain <Highlight description="While you sleep, your brain replays what you learned during the day and moves the important stuff from temporary storage into permanent storage. No sleep = no proper saving." theme={theme}>replays what you learned</Highlight> and moves the important memories from that temporary inbox into permanent storage in the <Highlight description="The outer layer of your brain where long-term memories are permanently stored. Think of it as your brain's hard drive." theme={theme}>main part of your brain</Highlight>. Pulling an all-nighter is like trying to save a file while constantly hitting 'cancel' on the save dialog. It's self-sabotage.</p>
+              {essentials ? (
+                <>
+                  <p>Your brain saves what you learned during deep sleep. New information sits in a temporary inbox during the day. While you sleep, your brain replays it and moves the important stuff into permanent storage.</p>
+                  <p>Pulling an all-nighter cancels this saving process. You need proper sleep for your studying to actually stick.</p>
+                </>
+              ) : (
+                <>
+                  <p>Here's something your brain absolutely needs: the final "save" button gets hit while you sleep. During the day, new information sits in a <Highlight description="A small part of your brain that acts like a temporary inbox. Everything you learn during the day lands here first — but it can only hold stuff temporarily." theme={theme}>temporary inbox</Highlight> in your brain. It can hold things for a while, but nothing is permanent yet.</p>
+                  <p>During deep sleep, your brain <Highlight description="While you sleep, your brain replays what you learned during the day and moves the important stuff from temporary storage into permanent storage. No sleep = no proper saving." theme={theme}>replays what you learned</Highlight> and moves the important memories from that temporary inbox into permanent storage in the <Highlight description="The outer layer of your brain where long-term memories are permanently stored. Think of it as your brain's hard drive." theme={theme}>main part of your brain</Highlight>. Pulling an all-nighter is like trying to save a file while constantly hitting 'cancel' on the save dialog. It's self-sabotage.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 5 && (
             <ReadingSection title="Your Action Plan." eyebrow="Step 6" icon={ClipboardCheck} theme={theme}>
-              <p>Understanding how your memory works gives you an owner's manual for your own brain. It shows that doing well isn't about "natural talent" — it's about using the right approach. Strategies like testing yourself, spacing out your study, and mixing topics are all just ways to work with how your memory naturally operates.</p>
-              <p>But even the best strategies will fail if you're running on empty. Your <Highlight description="How well your body is doing — your sleep, what you're eating, whether you're drinking enough water, and your stress levels. All of these directly affect how well your brain works." theme={theme}>physical state</Highlight> is the foundation. When you're really stressed, your brain releases <Highlight description="A stress hormone. When it stays high for too long, it actually makes it harder for your brain to store and recall memories." theme={theme}>stress hormones</Highlight> that actually block your ability to remember things. Dehydration and poor nutrition starve your brain of the resources it needs. Looking after yourself isn't a 'wellness' tip — it's one of the most important things you can do for your grades.</p>
+              {essentials ? (
+                <>
+                  <p>Good results come from using the right approach, not natural talent. Test yourself, space out your study, and mix topics. These work with how your memory naturally operates.</p>
+                  <p>Sleep, food, water, and stress levels directly affect your brain. High stress blocks memory. Look after yourself -- it is one of the best things you can do for your grades.</p>
+                </>
+              ) : (
+                <>
+                  <p>Understanding how your memory works gives you an owner's manual for your own brain. It shows that doing well isn't about "natural talent" — it's about using the right approach. Strategies like testing yourself, spacing out your study, and mixing topics are all just ways to work with how your memory naturally operates.</p>
+                  <p>But even the best strategies will fail if you're running on empty. Your <Highlight description="How well your body is doing — your sleep, what you're eating, whether you're drinking enough water, and your stress levels. All of these directly affect how well your brain works." theme={theme}>physical state</Highlight> is the foundation. When you're really stressed, your brain releases <Highlight description="A stress hormone. When it stays high for too long, it actually makes it harder for your brain to store and recall memories." theme={theme}>stress hormones</Highlight> that actually block your ability to remember things. Dehydration and poor nutrition starve your brain of the resources it needs. Looking after yourself isn't a 'wellness' tip — it's one of the most important things you can do for your grades.</p>
+                </>
+              )}
               <MicroCommitment theme={theme}>
                 <p>Tonight, set an alarm to put your phone away 60 minutes before you go to bed. This single act of 'sleep hygiene' has a bigger impact on your memory than an extra hour of cramming.</p>
               </MicroCommitment>

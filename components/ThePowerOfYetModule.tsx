@@ -15,6 +15,7 @@ import { type ModuleProgress } from '../types';
 import { yellowTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = yellowTheme;
 
@@ -478,6 +479,7 @@ const YetAudit = () => {
 
 // --- MODULE COMPONENT ---
 const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'full-stop', title: 'The Full Stop', eyebrow: '01 // The Verdict', icon: Book },
     { id: 'software-patch', title: 'The Software Patch', eyebrow: '02 // The "Yet" Upgrade', icon: RotateCcw },
@@ -503,14 +505,32 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Full Stop." eyebrow="Step 1" icon={Book} theme={theme}>
-              <p>When you say "I can't do Honours Maths" or "I'm not good at this," you're putting a full stop at the end of the sentence. Your brain takes that as a <Highlight description="Basically, you're telling yourself the story is over and you've hit your limit. It shuts the door on even trying." theme={theme}>final verdict</Highlight>. It's like saying: "That's it. I'm done. There's nothing more I can do."</p>
-              <p>This is what happens when you're stuck in a <Highlight description="The idea that you're either smart or you're not, and there's nothing you can do about it. When you think this way, every bad result feels like proof you're just not good enough." theme={theme}>Fixed Mindset</Highlight>. It's a dead end. It kills your motivation and tells your brain to give up on the problem. To keep going when things get tough, you need to learn to turn those full stops into commas.</p>
+              {essentials ? (
+                <>
+                  <p>When you say "I can't do this," your brain treats it as a final verdict. It shuts down and stops trying. This is a <strong>fixed mindset</strong> -- the belief that you either have it or you do not.</p>
+                  <p>You need to turn those full stops into commas. That is what this module teaches you to do.</p>
+                </>
+              ) : (
+                <>
+                  <p>When you say "I can't do Honours Maths" or "I'm not good at this," you're putting a full stop at the end of the sentence. Your brain takes that as a <Highlight description="Basically, you're telling yourself the story is over and you've hit your limit. It shuts the door on even trying." theme={theme}>final verdict</Highlight>. It's like saying: "That's it. I'm done. There's nothing more I can do."</p>
+                  <p>This is what happens when you're stuck in a <Highlight description="The idea that you're either smart or you're not, and there's nothing you can do about it. When you think this way, every bad result feels like proof you're just not good enough." theme={theme}>Fixed Mindset</Highlight>. It's a dead end. It kills your motivation and tells your brain to give up on the problem. To keep going when things get tough, you need to learn to turn those full stops into commas.</p>
+                </>
+              )}
             </ReadingSection>
           )}
            {activeSection === 1 && (
             <ReadingSection title="The Software Patch." eyebrow="Step 2" icon={RotateCcw} theme={theme}>
-              <p>The fix is surprisingly simple: the word "yet." Just stick it on the end of any "I can't" statement and the whole meaning changes. "I can't do this" becomes "I can't do this... yet." "I don't understand this" becomes "I don't understand this... yet."</p>
-              <p>That one word turns a final verdict into a progress update. It reminds you that <Highlight description="Where you are right now isn't where you'll always be. You're just at one point on the journey, not the end of it." theme={theme}>where you are now isn't where you'll stay</Highlight>. A school in Chicago actually replaced "Fail" grades with "Not Yet" on report cards, and students started trying harder and finishing more work. You're not a failure -- you're just not finished.</p>
+              {essentials ? (
+                <>
+                  <p>The fix is one word: <strong>"yet."</strong> Stick it on the end of any "I can't" statement. "I can't do this" becomes "I can't do this... yet." It turns a verdict into a progress update.</p>
+                  <p>A school replaced "Fail" with "Not Yet" and students tried harder. You are not a failure. You are just not finished.</p>
+                </>
+              ) : (
+                <>
+                  <p>The fix is surprisingly simple: the word "yet." Just stick it on the end of any "I can't" statement and the whole meaning changes. "I can't do this" becomes "I can't do this... yet." "I don't understand this" becomes "I don't understand this... yet."</p>
+                  <p>That one word turns a final verdict into a progress update. It reminds you that <Highlight description="Where you are right now isn't where you'll always be. You're just at one point on the journey, not the end of it." theme={theme}>where you are now isn't where you'll stay</Highlight>. A school in Chicago actually replaced "Fail" grades with "Not Yet" on report cards, and students started trying harder and finishing more work. You're not a failure -- you're just not finished.</p>
+                </>
+              )}
               <MicroCommitment theme={theme}>
                 <p>Listen to yourself and your friends today. Every time you hear an "I can't" statement, mentally add "yet" to the end of it. Just notice how it changes the feeling.</p>
               </MicroCommitment>
@@ -518,15 +538,30 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
           )}
           {activeSection === 2 && (
             <ReadingSection title="The Brain on 'Yet'." eyebrow="Step 3" icon={Brain} theme={theme}>
-              <p>This isn't just a feel-good trick -- it actually changes what's happening inside your head. When you make a mistake, your brain fires off an <Highlight description="A burst of brain activity that happens when you notice you've made a mistake. The stronger this signal is, the more your brain is actually paying attention to the error and learning from it." theme={theme}>error-attention signal</Highlight>. It's basically your brain saying, "Hold on, let me look at what went wrong here."</p>
-              <p>When people believe they can't improve, their brain spots the mistake but then quickly looks away -- like it's trying to protect their ego. But when people believe they can grow, their brain locks onto the mistake and really digs into it. The word "yet" keeps your brain in that locked-on mode. It's like telling your brain, "This isn't over, stay focused," instead of letting it shut down and move on.</p>
+              {essentials ? (
+                <>
+                  <p>When you make a mistake, your brain fires an error signal. If you believe you cannot improve, your brain quickly looks away from the mistake. If you believe you can grow, your brain locks on and learns from it.</p>
+                  <p>"Yet" keeps your brain in locked-on mode. It tells your brain to stay focused on the error instead of shutting down.</p>
+                </>
+              ) : (
+                <>
+                  <p>This isn't just a feel-good trick -- it actually changes what's happening inside your head. When you make a mistake, your brain fires off an <Highlight description="A burst of brain activity that happens when you notice you've made a mistake. The stronger this signal is, the more your brain is actually paying attention to the error and learning from it." theme={theme}>error-attention signal</Highlight>. It's basically your brain saying, "Hold on, let me look at what went wrong here."</p>
+                  <p>When people believe they can't improve, their brain spots the mistake but then quickly looks away -- like it's trying to protect their ego. But when people believe they can grow, their brain locks onto the mistake and really digs into it. The word "yet" keeps your brain in that locked-on mode. It's like telling your brain, "This isn't over, stay focused," instead of letting it shut down and move on.</p>
+                </>
+              )}
               <YetReframe />
             </ReadingSection>
           )}
            {activeSection === 3 && (
             <ReadingSection title="The Action Bridge." eyebrow="Step 4" icon={Link} theme={theme}>
-                <p>"Yet" is powerful, but on its own it's just a nice thought. To actually make a difference, you need to follow it up with a real plan. That's the crucial third step: the <Highlight description="The specific, concrete thing you're going to do next to move from 'can't do it' to 'can do it'. It stops 'yet' from being empty words and turns it into actual progress." theme={theme}>Bridge to Action</Highlight>.</p>
-                <p>The full sentence isn't just "I can't do this yet." It's "I can't do this yet, *so I will*..." That extra bit stops "yet" from being an excuse and turns it into a starting point. It connects the positive thinking to an actual next step. Here's the full method:</p>
+                {essentials ? (
+                  <p>"Yet" alone is just a nice thought. You need a real plan. The full sentence is: "I can't do this yet, <strong>so I will...</strong>" Follow "yet" with a specific next step. That is the bridge from thinking to action.</p>
+                ) : (
+                  <>
+                    <p>"Yet" is powerful, but on its own it's just a nice thought. To actually make a difference, you need to follow it up with a real plan. That's the crucial third step: the <Highlight description="The specific, concrete thing you're going to do next to move from 'can't do it' to 'can do it'. It stops 'yet' from being empty words and turns it into actual progress." theme={theme}>Bridge to Action</Highlight>.</p>
+                    <p>The full sentence isn't just "I can't do this yet." It's "I can't do this yet, *so I will*..." That extra bit stops "yet" from being an excuse and turns it into a starting point. It connects the positive thinking to an actual next step. Here's the full method:</p>
+                  </>
+                )}
                 <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                   <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
                     <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
@@ -558,8 +593,14 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
           )}
            {activeSection === 4 && (
             <ReadingSection title="Your 'Yet' Audit." eyebrow="Step 5" icon={Wrench} theme={theme}>
-              <p>You've got the full method now. It's a way to catch yourself in those "I can't" moments and turn them into something useful instead of spiralling. The last step is to actually use it on something real.</p>
-              <p>Use the tool below to pick one thing you're genuinely struggling with right now. Run it through the three steps: name the block, add "yet", then figure out your next move. This isn't just practice -- it's you, right now, changing how you deal with the hard stuff.</p>
+              {essentials ? (
+                <p>Now use it for real. Pick one thing you are struggling with. Name the block, add "yet", then choose your next move. Use the tool below to try it right now.</p>
+              ) : (
+                <>
+                  <p>You've got the full method now. It's a way to catch yourself in those "I can't" moments and turn them into something useful instead of spiralling. The last step is to actually use it on something real.</p>
+                  <p>Use the tool below to pick one thing you're genuinely struggling with right now. Run it through the three steps: name the block, add "yet", then figure out your next move. This isn't just practice -- it's you, right now, changing how you deal with the hard stuff.</p>
+                </>
+              )}
               <YetAudit />
             </ReadingSection>
           )}

@@ -14,6 +14,7 @@ import { type ModuleProgress } from '../types';
 import { limeTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = limeTheme;
 
@@ -617,6 +618,7 @@ const PraiseDecoderGame = () => {
 
 // --- MODULE COMPONENT ---
 const ThePraiseProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'praise-paradox', title: 'The Praise Paradox', eyebrow: '01 // The Big Idea', icon: MessageCircle },
     { id: 'dweck-experiment', title: 'The Praise Experiment', eyebrow: '02 // What Actually Happens', icon: BarChart },
@@ -643,40 +645,84 @@ const ThePraiseProtocolModule: React.FC<{ onBack: () => void; progress: ModulePr
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Praise Paradox." eyebrow="Step 1" icon={MessageCircle} theme={theme}>
-              <p>We've been told our whole lives that praise builds confidence. But what if some types of praise are actually a trap? This is the praise paradox. The words you hear — and the words you tell yourself — aren't just nice things to say. They actually shape how your brain deals with success and failure going forward.</p>
-              <p>There are basically two types of praise. <Highlight description="This is when someone praises who you are — like saying 'You're so smart' or 'You're a natural.' It sounds nice, but it makes you afraid to mess up because you start thinking your ability is just something you either have or don't." theme={theme}>Person Praise</Highlight> focuses on who you <em>are</em>. <Highlight description="This is when someone praises what you did — like 'You worked really hard on that' or 'That was a great strategy.' This kind of praise is way more useful because it makes you want to keep trying and improving." theme={theme}>Process Praise</Highlight> focuses on what you <em>do</em>. One makes you fragile, the other makes you resilient. Knowing the difference is a game-changer.</p>
+              {essentials ? (
+                <>
+                  <p>Not all praise helps you. Some praise actually makes you afraid to fail. There are two types. <Highlight description="Praising who you are — 'You're so smart.' Makes you fear mistakes." theme={theme}>Person Praise</Highlight> focuses on who you are. <Highlight description="Praising what you did — 'You worked hard.' Makes you want to keep improving." theme={theme}>Process Praise</Highlight> focuses on what you do. Person praise makes you fragile. Process praise makes you resilient. Learn to spot the difference below.</p>
+                </>
+              ) : (
+                <>
+                  <p>We've been told our whole lives that praise builds confidence. But what if some types of praise are actually a trap? This is the praise paradox. The words you hear — and the words you tell yourself — aren't just nice things to say. They actually shape how your brain deals with success and failure going forward.</p>
+                  <p>There are basically two types of praise. <Highlight description="This is when someone praises who you are — like saying 'You're so smart' or 'You're a natural.' It sounds nice, but it makes you afraid to mess up because you start thinking your ability is just something you either have or don't." theme={theme}>Person Praise</Highlight> focuses on who you <em>are</em>. <Highlight description="This is when someone praises what you did — like 'You worked really hard on that' or 'That was a great strategy.' This kind of praise is way more useful because it makes you want to keep trying and improving." theme={theme}>Process Praise</Highlight> focuses on what you <em>do</em>. One makes you fragile, the other makes you resilient. Knowing the difference is a game-changer.</p>
+                </>
+              )}
               <PraiseDecoderGame />
             </ReadingSection>
           )}
            {activeSection === 1 && (
             <ReadingSection title="The Praise Experiment." eyebrow="Step 2" icon={BarChart} theme={theme}>
-                <p>Here's an experiment that shows just how powerful one sentence of praise can be. A group of students were all given a test, told they did well, and then given one of two responses: "You must be smart" (Person Praise) or "You must have worked hard" (Process Praise). That's it — one sentence.</p>
-                <p>The findings were striking. The "smart" kids immediately started playing it safe, choosing easier tasks so they wouldn't risk looking stupid. When they hit a harder problem and failed, they gave up, their scores tanked, and nearly 40% of them lied about how they did. The "hard-working" kids went the other way: they picked harder challenges, actually enjoyed the struggle, bounced back after failing, and were three times more honest about their scores. Let's run the simulation.</p>
+                {essentials ? (
+                  <>
+                    <p>Students aced a test. Half were told "you're smart." Half were told "you worked hard." One sentence changed everything. The "smart" group played it safe and gave up after failure. Nearly 40% lied about their scores. The "hard-working" group chose harder tasks and bounced back. Try the simulation below.</p>
+                  </>
+                ) : (
+                  <>
+                    <p>Here's an experiment that shows just how powerful one sentence of praise can be. A group of students were all given a test, told they did well, and then given one of two responses: "You must be smart" (Person Praise) or "You must have worked hard" (Process Praise). That's it — one sentence.</p>
+                    <p>The findings were striking. The "smart" kids immediately started playing it safe, choosing easier tasks so they wouldn't risk looking stupid. When they hit a harder problem and failed, they gave up, their scores tanked, and nearly 40% of them lied about how they did. The "hard-working" kids went the other way: they picked harder challenges, actually enjoyed the struggle, bounced back after failing, and were three times more honest about their scores. Let's run the simulation.</p>
+                  </>
+                )}
                 <DweckExperimentSimulator />
             </ReadingSection>
           )}
            {activeSection === 2 && (
             <ReadingSection title="The Brain on Praise." eyebrow="Step 3" icon={Brain} theme={theme}>
-              <p>Why does one sentence make such a big difference? Because the two types of praise light up different parts of your brain. When you get praised, your brain releases <Highlight description="A chemical in your brain that makes you feel good and want to do something again. It's basically your brain's reward signal." theme={theme}>dopamine</Highlight> — the feel-good chemical. Process praise connects that feeling to <em>the work you put in</em>, so your brain starts craving effort. Person praise connects it to <em>who you are</em>, so any failure feels like a personal attack and your motivation crashes.</p>
-              <p>It goes even deeper than that. When we make a mistake, our brains produce an error signal (called the "Pe wave"). With a <Highlight description="Thinking your intelligence is set in stone. If you believe this, every failure feels like proof you're just not good enough." theme={theme}>Fixed Mindset</Highlight>, that signal is tiny — your brain basically flinches away from the mistake to protect your ego. With a <Highlight description="Thinking your intelligence can grow with effort. If you believe this, failure is just information — a chance to figure out what went wrong and do better." theme={theme}>Growth Mindset</Highlight>, the signal is massive — your brain locks onto the mistake and tries to learn from it.</p>
+              {essentials ? (
+                <>
+                  <p>Your brain releases <Highlight description="A feel-good chemical that makes you want to repeat an action." theme={theme}>dopamine</Highlight> when you get praised. Process praise links that feeling to effort. Person praise links it to identity. That is why failure crushes you when you have been told "you're smart." Your brain also fires an error signal when you make mistakes. A <Highlight description="Believing intelligence is fixed." theme={theme}>Fixed Mindset</Highlight> produces a tiny signal. A <Highlight description="Believing intelligence can grow." theme={theme}>Growth Mindset</Highlight> produces a huge one. The bigger the signal, the more you learn.</p>
+                </>
+              ) : (
+                <>
+                  <p>Why does one sentence make such a big difference? Because the two types of praise light up different parts of your brain. When you get praised, your brain releases <Highlight description="A chemical in your brain that makes you feel good and want to do something again. It's basically your brain's reward signal." theme={theme}>dopamine</Highlight> — the feel-good chemical. Process praise connects that feeling to <em>the work you put in</em>, so your brain starts craving effort. Person praise connects it to <em>who you are</em>, so any failure feels like a personal attack and your motivation crashes.</p>
+                  <p>It goes even deeper than that. When we make a mistake, our brains produce an error signal (called the "Pe wave"). With a <Highlight description="Thinking your intelligence is set in stone. If you believe this, every failure feels like proof you're just not good enough." theme={theme}>Fixed Mindset</Highlight>, that signal is tiny — your brain basically flinches away from the mistake to protect your ego. With a <Highlight description="Thinking your intelligence can grow with effort. If you believe this, failure is just information — a chance to figure out what went wrong and do better." theme={theme}>Growth Mindset</Highlight>, the signal is massive — your brain locks onto the mistake and tries to learn from it.</p>
+                </>
+              )}
               <ErrorSignalVisualizer />
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="The Real World Data." eyebrow="Step 4" icon={User} theme={theme}>
-              <p>This isn't just something that works in a lab. A long-term study followed families from when their kids were toddlers all the way through primary school. It found that the amount of process praise parents used (on average, just 18% of all praise) predicted whether their child would develop a growth mindset five years later. More process praise meant a stronger growth mindset, which led to better results in Maths and English.</p>
-              <p>The study also found a big gender gap. From as young as 14 months, boys tended to get more process praise ("You built that tower so high!"), while girls were more likely to hear trait-based praise ("You're such a good girl"). This difference in how boys and girls are talked to from a very young age helps explain why high-achieving girls can sometimes be more likely to develop a fixed mindset later on.</p>
+              {essentials ? (
+                <>
+                  <p>A long-term study found that toddlers who got more process praise developed stronger growth mindsets five years later. They did better in Maths and English. The study also found a gender gap. Boys got more process praise from a very young age. Girls got more person praise. This partly explains why some high-achieving girls develop fixed mindsets.</p>
+                </>
+              ) : (
+                <>
+                  <p>This isn't just something that works in a lab. A long-term study followed families from when their kids were toddlers all the way through primary school. It found that the amount of process praise parents used (on average, just 18% of all praise) predicted whether their child would develop a growth mindset five years later. More process praise meant a stronger growth mindset, which led to better results in Maths and English.</p>
+                  <p>The study also found a big gender gap. From as young as 14 months, boys tended to get more process praise ("You built that tower so high!"), while girls were more likely to hear trait-based praise ("You're such a good girl"). This difference in how boys and girls are talked to from a very young age helps explain why high-achieving girls can sometimes be more likely to develop a fixed mindset later on.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 4 && (
             <ReadingSection title="The 'Effort' Trap." eyebrow="Step 5" icon={AlertTriangle} theme={theme}>
-                <p>As these ideas got popular, people started getting them wrong. The biggest mistake is thinking that a growth mindset just means praising effort. Imagine you fail a test after studying hard, and someone says, "Don't worry, you tried your best!" This is <Highlight description="When someone praises your effort but doesn't help you figure out what went wrong. It sounds kind, but it basically says 'you gave it everything and it still wasn't enough' — which is actually pretty discouraging." theme={theme}>Consolation Praise</Highlight>, and it actually does more harm than good. It sends the message: "Your best isn't good enough, and there's nothing more you can do."</p>
-                <p>Good process praise connects effort to *what worked* and *what didn't*. A better response would be: "I can see you worked hard, but the study method you used didn't click. Let's look at your mistakes and try a different approach." Effort on its own isn't enough — it has to be pointed in the right direction.</p>
+                {essentials ? (
+                  <>
+                    <p>Praising effort alone is not enough. Saying "you tried your best" after failure is <Highlight description="Praising effort without helping fix the problem. Sounds kind but feels discouraging." theme={theme}>Consolation Praise</Highlight>. It tells you there is nothing more you can do. Good process praise connects effort to what worked and what did not. Say "your method didn't click — let's try a different approach." Effort must be pointed in the right direction.</p>
+                  </>
+                ) : (
+                  <>
+                    <p>As these ideas got popular, people started getting them wrong. The biggest mistake is thinking that a growth mindset just means praising effort. Imagine you fail a test after studying hard, and someone says, "Don't worry, you tried your best!" This is <Highlight description="When someone praises your effort but doesn't help you figure out what went wrong. It sounds kind, but it basically says 'you gave it everything and it still wasn't enough' — which is actually pretty discouraging." theme={theme}>Consolation Praise</Highlight>, and it actually does more harm than good. It sends the message: "Your best isn't good enough, and there's nothing more you can do."</p>
+                    <p>Good process praise connects effort to *what worked* and *what didn't*. A better response would be: "I can see you worked hard, but the study method you used didn't click. Let's look at your mistakes and try a different approach." Effort on its own isn't enough — it has to be pointed in the right direction.</p>
+                  </>
+                )}
             </ReadingSection>
           )}
            {activeSection === 5 && (
             <ReadingSection title="The Feedback Audit." eyebrow="Step 6" icon={Settings} theme={theme}>
-              <p>Now that you know the difference, start paying attention to the feedback around you — from teachers, family, and especially how you talk to yourself. The "Feedback Audit" is simple: for one day, just notice the praise you hear and sort it. Is it Person Praise, Process Praise, or just vague outcome stuff ("Good job")?</p>
+              {essentials ? (
+                <p>Start noticing praise around you. For one day, sort every piece of feedback you hear. Is it Person Praise, Process Praise, or vague ("good job")? Pay special attention to how you talk to yourself.</p>
+              ) : (
+                <p>Now that you know the difference, start paying attention to the feedback around you — from teachers, family, and especially how you talk to yourself. The "Feedback Audit" is simple: for one day, just notice the praise you hear and sort it. Is it Person Praise, Process Praise, or just vague outcome stuff ("Good job")?</p>
+              )}
               <MicroCommitment theme={theme}>
                 <p>Tonight, when you're reviewing your day, think of one piece of feedback you received (from yourself or others). Was it Person or Process praise? Just noticing is the first step.</p>
               </MicroCommitment>

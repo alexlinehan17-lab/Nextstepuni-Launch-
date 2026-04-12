@@ -11,6 +11,7 @@ import { type ModuleProgress } from '../types';
 import { roseTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useNorthStar } from '../hooks/useNorthStar';
 import NorthStarCallout from './NorthStarCallout';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
@@ -351,6 +352,7 @@ const IfThenPlanBuilder = () => {
 
 // --- MODULE COMPONENT ---
 const TheImplementationProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const { northStar } = useNorthStar();
   const sections = [
     { id: 'intention-action-gap', title: 'The Intention-Action Gap', eyebrow: '01 // The Problem', icon: Target },
@@ -377,32 +379,65 @@ const TheImplementationProtocolModule: React.FC<{ onBack: () => void; progress: 
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Intention-Action Gap." eyebrow="Step 1" icon={Target} theme={theme}>
-              <p>Here is the most important thing you need to know about getting stuff done: <Highlight description="When researchers looked at over 400 studies on this, they found that how motivated you feel only explains about 28% of whether you actually do the thing. The other 72%? That comes down to strategy, not willpower." theme={theme}>a massive review of over 400 studies</Highlight> found that your intentions -- your motivation, goals, and plans -- only explain about 28% of whether you actually follow through. That means 72% of what determines whether you actually study has nothing to do with how motivated you feel.</p>
-              <p>Think about what that means. Students who say "I'll study more this week" are barely more likely to do so than those who say nothing at all. The desire is real. The follow-through is not. This is the <Highlight description="That massive gap between wanting to do something and actually doing it. It's why New Year's resolutions fail, why study schedules fall apart after a week, and why knowing what you should do is completely different from doing it." theme={theme}>Intention-Action Gap</Highlight> -- the gap between wanting to do something and actually doing it.</p>
-              <p><Highlight description="This gap gets even worse when the thing you need to do requires effort over a long time. A one-off task? Not so bad. But something like a six-month Leaving Cert study plan? That's where the gap is at its widest." theme={theme}>Here's the kicker</Highlight>: this gap is especially large for goals that need sustained effort over time -- like Leaving Cert prep. It's one thing to feel motivated on a Sunday evening when you're planning your week. It's another thing entirely to sit down at 4pm on a rainy Tuesday and actually open your textbook. Motivation is a feeling. Action is a behaviour. And the bridge between them is not willpower -- it's something far more specific.</p>
+              {essentials ? (
+                <>
+                  <p>Motivation only explains about 28% of whether you actually study. The other 72% comes down to strategy, not willpower. Saying "I will study more" barely helps.</p>
+                  <p>This gap between wanting to study and actually doing it is the <strong>Intention-Action Gap</strong>. It is worst for long-term goals like the Leaving Cert. You need specific plans, not just good intentions.</p>
+                </>
+              ) : (
+                <>
+                  <p>Here is the most important thing you need to know about getting stuff done: <Highlight description="When researchers looked at over 400 studies on this, they found that how motivated you feel only explains about 28% of whether you actually do the thing. The other 72%? That comes down to strategy, not willpower." theme={theme}>a massive review of over 400 studies</Highlight> found that your intentions -- your motivation, goals, and plans -- only explain about 28% of whether you actually follow through. That means 72% of what determines whether you actually study has nothing to do with how motivated you feel.</p>
+                  <p>Think about what that means. Students who say "I'll study more this week" are barely more likely to do so than those who say nothing at all. The desire is real. The follow-through is not. This is the <Highlight description="That massive gap between wanting to do something and actually doing it. It's why New Year's resolutions fail, why study schedules fall apart after a week, and why knowing what you should do is completely different from doing it." theme={theme}>Intention-Action Gap</Highlight> -- the gap between wanting to do something and actually doing it.</p>
+                  <p><Highlight description="This gap gets even worse when the thing you need to do requires effort over a long time. A one-off task? Not so bad. But something like a six-month Leaving Cert study plan? That's where the gap is at its widest." theme={theme}>Here's the kicker</Highlight>: this gap is especially large for goals that need sustained effort over time -- like Leaving Cert prep. It's one thing to feel motivated on a Sunday evening when you're planning your week. It's another thing entirely to sit down at 4pm on a rainy Tuesday and actually open your textbook. Motivation is a feeling. Action is a behaviour. And the bridge between them is not willpower -- it's something far more specific.</p>
+                </>
+              )}
               <IntentionGapComparison />
             </ReadingSection>
           )}
           {activeSection === 1 && (
             <ReadingSection title="If-Then Plans." eyebrow="Step 2" icon={GitBranch} theme={theme}>
-              <p>In the late 90s, <Highlight description="A psychologist figured out that simply making a specific 'if-then' plan -- connecting a situation to an action -- roughly doubled how often people actually followed through on their goals. Not a small bump. Doubled." theme={theme}>a psychologist</Highlight> discovered what might be the single most effective way to actually change your behaviour: <Highlight description="Instead of a vague goal like 'I want to study more,' you make a specific plan: 'If this situation happens, then I'll do this action.' You're pre-loading the decision so you don't have to think about it in the moment. It basically puts your good intentions on autopilot." theme={theme}>implementation intentions</Highlight>. These are specific "if-then" plans that link a trigger to an action. Across 94 separate studies, they roughly doubled follow-through rates.</p>
-              <p>The format is deceptively simple: <strong>"If [situation], then [action]."</strong> For example: "If it is 4:00pm on Monday, then I will sit at my desk and do 25 minutes of Maths past papers." The power is entirely in the specificity. Not "I'll study Maths this week" but exactly when, where, and what.</p>
-              <p><Highlight description="A big review of the research showed that if-then plans work because they create an automatic link between a trigger and a behaviour -- the same way habits work. The situation fires and you just do the thing, without having to convince yourself first." theme={theme}>A big review of the research</Highlight> showed why if-then plans work: they create an automatic trigger. The situation fires and the behaviour follows, without needing you to feel motivated in that moment. When 4pm on Monday arrives, you don't sit there debating whether you feel like studying. The trigger goes off and you just do it -- the same way habits work. You've already made the decision in advance, so in the moment, there's no decision to make. And it's the decision that kills you. Every moment of "should I study now or later?" is a moment you're likely to choose later.</p>
+              {essentials ? (
+                <>
+                  <p>Here is what to do: make specific <strong>"if-then" plans</strong>. "If it is 4pm on Monday, then I will do 25 minutes of Maths past papers." This format roughly doubled follow-through in 94 studies.</p>
+                  <p>The power is in the specificity. If-then plans create automatic triggers. When the situation arrives, you just do it. No debate needed. You already decided in advance.</p>
+                </>
+              ) : (
+                <>
+                  <p>In the late 90s, <Highlight description="A psychologist figured out that simply making a specific 'if-then' plan -- connecting a situation to an action -- roughly doubled how often people actually followed through on their goals. Not a small bump. Doubled." theme={theme}>a psychologist</Highlight> discovered what might be the single most effective way to actually change your behaviour: <Highlight description="Instead of a vague goal like 'I want to study more,' you make a specific plan: 'If this situation happens, then I'll do this action.' You're pre-loading the decision so you don't have to think about it in the moment. It basically puts your good intentions on autopilot." theme={theme}>implementation intentions</Highlight>. These are specific "if-then" plans that link a trigger to an action. Across 94 separate studies, they roughly doubled follow-through rates.</p>
+                  <p>The format is deceptively simple: <strong>"If [situation], then [action]."</strong> For example: "If it is 4:00pm on Monday, then I will sit at my desk and do 25 minutes of Maths past papers." The power is entirely in the specificity. Not "I'll study Maths this week" but exactly when, where, and what.</p>
+                  <p><Highlight description="A big review of the research showed that if-then plans work because they create an automatic link between a trigger and a behaviour -- the same way habits work. The situation fires and you just do the thing, without having to convince yourself first." theme={theme}>A big review of the research</Highlight> showed why if-then plans work: they create an automatic trigger. The situation fires and the behaviour follows, without needing you to feel motivated in that moment. When 4pm on Monday arrives, you don't sit there debating whether you feel like studying. The trigger goes off and you just do it -- the same way habits work. You've already made the decision in advance, so in the moment, there's no decision to make. And it's the decision that kills you. Every moment of "should I study now or later?" is a moment you're likely to choose later.</p>
+                </>
+              )}
               <IfThenPlanBuilder />
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="Temptation Bundling." eyebrow="Step 3" icon={Lightbulb} theme={theme}>
               {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'implementation-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
-              <p><Highlight description="In one experiment, people were given really addictive audiobooks they could only listen to while at the gym. That one simple rule -- you only get the fun thing while doing the hard thing -- boosted gym attendance by 51%. No extra willpower needed." theme={theme}>Researchers tested a brilliantly simple idea</Highlight>: what if you paired something boring with something you actually enjoy? They gave people access to addictive audiobooks -- but only at the gym. The result: gym attendance went up by 51%. Not through willpower. Not through motivation. Just by bundling a "should" with a "want."</p>
-              <p>This works perfectly for studying. A <Highlight description="You pair something you have to do (studying) with something you actually enjoy -- but the catch is you ONLY allow yourself the fun thing during the hard thing. If you let yourself have the reward whenever, it stops working. The exclusivity is what makes it powerful." theme={theme}>temptation bundle</Highlight> pairs something you need to do (studying) with something you want to do (listening to a favourite playlist, sitting in your favourite cafe, having a particular snack). The critical rule: the "want" activity is ONLY available during the "should" activity. If you listen to that playlist at other times, the bundle breaks. The exclusivity is what creates the pull.</p>
-              <p>Practical examples for students: only listen to your favourite playlist while doing past papers. Only go to that nice cafe when you're studying. Only have that particular snack during study sessions. Only watch that YouTube channel as a reward between pomodoros. The key is finding something you genuinely look forward to and making it conditional on the study behaviour. You're not using willpower to force yourself to study — you're creating a genuine incentive that makes you want to start.</p>
+              {essentials ? (
+                <>
+                  <p>Pair something you have to do with something you enjoy. Only listen to your favourite playlist while doing past papers. Only go to that nice cafe when studying. The "want" is only available during the "should."</p>
+                  <p>This boosted gym attendance by 51% in one study. The exclusivity creates the pull. You stop needing willpower because you genuinely want to start.</p>
+                </>
+              ) : (
+                <>
+                  <p><Highlight description="In one experiment, people were given really addictive audiobooks they could only listen to while at the gym. That one simple rule -- you only get the fun thing while doing the hard thing -- boosted gym attendance by 51%. No extra willpower needed." theme={theme}>Researchers tested a brilliantly simple idea</Highlight>: what if you paired something boring with something you actually enjoy? They gave people access to addictive audiobooks -- but only at the gym. The result: gym attendance went up by 51%. Not through willpower. Not through motivation. Just by bundling a "should" with a "want."</p>
+                  <p>This works perfectly for studying. A <Highlight description="You pair something you have to do (studying) with something you actually enjoy -- but the catch is you ONLY allow yourself the fun thing during the hard thing. If you let yourself have the reward whenever, it stops working. The exclusivity is what makes it powerful." theme={theme}>temptation bundle</Highlight> pairs something you need to do (studying) with something you want to do (listening to a favourite playlist, sitting in your favourite cafe, having a particular snack). The critical rule: the "want" activity is ONLY available during the "should" activity. If you listen to that playlist at other times, the bundle breaks. The exclusivity is what creates the pull.</p>
+                  <p>Practical examples for students: only listen to your favourite playlist while doing past papers. Only go to that nice cafe when you're studying. Only have that particular snack during study sessions. Only watch that YouTube channel as a reward between pomodoros. The key is finding something you genuinely look forward to and making it conditional on the study behaviour. You're not using willpower to force yourself to study — you're creating a genuine incentive that makes you want to start.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="Commitment Devices." eyebrow="Step 4" icon={Shield} theme={theme}>
-              <p><Highlight description="In one experiment, students who set their own deadlines -- and faced penalties for missing them -- did way better than students given total flexibility. Sounds backwards, right? But when you can do something 'whenever,' you usually do it never. Locking yourself in actually works." theme={theme}>One study found something surprising</Highlight>: students who set their own deadlines -- and accepted penalties for missing them -- performed significantly better than those given complete flexibility. This is counterintuitive. More freedom should mean better outcomes, right? Wrong. Freedom to act is also freedom not to act. Commitment devices work by raising the cost of not following through, making it harder to skip.</p>
-              <p>There are several practical commitment devices that work for students.</p>
+              {essentials ? (
+                <p>Students who set their own deadlines and faced penalties for missing them did way better than those with total freedom. <strong>Commitment devices</strong> raise the cost of skipping. They make it harder to not study than to study.</p>
+              ) : (
+                <>
+                  <p><Highlight description="In one experiment, students who set their own deadlines -- and faced penalties for missing them -- did way better than students given total flexibility. Sounds backwards, right? But when you can do something 'whenever,' you usually do it never. Locking yourself in actually works." theme={theme}>One study found something surprising</Highlight>: students who set their own deadlines -- and accepted penalties for missing them -- performed significantly better than those given complete flexibility. This is counterintuitive. More freedom should mean better outcomes, right? Wrong. Freedom to act is also freedom not to act. Commitment devices work by raising the cost of not following through, making it harder to skip.</p>
+                  <p>There are several practical commitment devices that work for students.</p>
+                </>
+              )}
               <ConceptCardGrid
                 cards={[
                   { number: 1, term: "Give Your Phone Away", description: "Give your phone to a friend during study sessions. The social accountability means you can't mindlessly scroll — and asking for it back feels embarrassing enough to keep you studying." },
@@ -416,7 +451,11 @@ const TheImplementationProtocolModule: React.FC<{ onBack: () => void; progress: 
           )}
           {activeSection === 4 && (
             <ReadingSection title="Building Your Protocol." eyebrow="Step 5" icon={Flag} theme={theme}>
-              <p>The Implementation Playbook combines all four tools into one system. Each one tackles a different reason you might not follow through, and together they make studying close to automatic. Here's how to put yours together.</p>
+              {essentials ? (
+                <p>Combine all four tools into one system: if-then plans, temptation bundles, commitment devices, and weekly reviews. Together, they make studying close to automatic.</p>
+              ) : (
+                <p>The Implementation Playbook combines all four tools into one system. Each one tackles a different reason you might not follow through, and together they make studying close to automatic. Here's how to put yours together.</p>
+              )}
               <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
                   <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
@@ -447,7 +486,9 @@ const TheImplementationProtocolModule: React.FC<{ onBack: () => void; progress: 
                   </div>
                 </div>
               </div>
-              <p><Highlight description="If-then plans are actually most effective for the students who struggle the most with following through. If you're someone who always plans to study but never does, this is genuinely the best tool for you. It's not just for the organised kids -- it works best for everyone else." theme={theme}>Here's the best part</Highlight>: if-then plans are especially effective for students who've always struggled with follow-through. If you're someone who regularly plans to study and then doesn't -- if that gap between intention and action feels painfully familiar -- then this technique was basically built for you. The students who need it most benefit the most.</p>
+              {!essentials && (
+                <p><Highlight description="If-then plans are actually most effective for the students who struggle the most with following through. If you're someone who always plans to study but never does, this is genuinely the best tool for you. It's not just for the organised kids -- it works best for everyone else." theme={theme}>Here's the best part</Highlight>: if-then plans are especially effective for students who've always struggled with follow-through. If you're someone who regularly plans to study and then doesn't -- if that gap between intention and action feels painfully familiar -- then this technique was basically built for you. The students who need it most benefit the most.</p>
+              )}
               <MicroCommitment theme={theme}>
                 <p>Right now, write one if-then plan for tomorrow. Make it specific: "If [exact time and place], then I will [exact subject and technique] for [exact duration]." Text it to a friend or write it on a sticky note and put it where you'll see it in the morning. One specific plan is worth more than a hundred good intentions.</p>
               </MicroCommitment>

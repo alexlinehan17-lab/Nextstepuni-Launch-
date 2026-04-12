@@ -12,6 +12,7 @@ import { type ModuleProgress } from '../types';
 import { tealTheme } from '../moduleThemes';
 import { Highlight, ReadingSection } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = tealTheme;
 
@@ -117,6 +118,7 @@ const SyllabusDeconstructor = () => {
 
 // --- MODULE COMPONENT ---
 const KnowledgeCompressionModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'information-overload', title: 'Information Overload', eyebrow: '01 // The Problem', icon: Target },
     { id: 'pareto-principle', title: 'The 80/20 Rule', eyebrow: '02 // The Principle', icon: SlidersHorizontal },
@@ -140,36 +142,66 @@ const KnowledgeCompressionModule: React.FC<{ onBack: () => void; progress: Modul
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Information Overload." eyebrow="Step 1" icon={Target} theme={theme}>
-              <p>You have the best study techniques in the world. But now you face a new problem: there's too much stuff to study. A typical Leaving Cert subject has hundreds of potential topics. Trying to learn everything equally is a recipe for burnout and shallow knowledge. It's like trying to drink from a firehose.</p>
-              <p>The goal is not to cover everything; it's to cover the <em>right</em> things. To do this, you need to stop thinking like a student and start thinking like a strategic analyst. You need a system for <Highlight description="The process of sorting information based on its importance and urgency to prioritize your attention and effort." theme={theme}>Information Triage</Highlight>.</p>
+              {essentials ? (
+                <p>There is too much stuff to study. You cannot learn everything equally. You need to cover the right things, not everything. Start thinking like a strategic analyst. You need a system for <Highlight description="Sorting information by importance to focus your effort." theme={theme}>Information Triage</Highlight>.</p>
+              ) : (
+                <>
+                  <p>You have the best study techniques in the world. But now you face a new problem: there's too much stuff to study. A typical Leaving Cert subject has hundreds of potential topics. Trying to learn everything equally is a recipe for burnout and shallow knowledge. It's like trying to drink from a firehose.</p>
+                  <p>The goal is not to cover everything; it's to cover the <em>right</em> things. To do this, you need to stop thinking like a student and start thinking like a strategic analyst. You need a system for <Highlight description="The process of sorting information based on its importance and urgency to prioritize your attention and effort." theme={theme}>Information Triage</Highlight>.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 1 && (
             <ReadingSection title="The 80/20 Rule." eyebrow="Step 2" icon={SlidersHorizontal} theme={theme}>
-              <p>The core principle of information triage is the <Highlight description="Also known as the Pareto Principle. It states that for many events, roughly 80% of the effects come from 20% of the causes. In studying, this means 80% of your marks will come from 20% of the syllabus." theme={theme}>80/20 Rule</Highlight>. Not all topics are created equal. A small number of "high-yield" topics consistently deliver the vast majority of the marks on the exam papers year after year.</p>
-              <p>Your job is to identify this "vital few" and ruthlessly prioritize them. This isn't about ignoring the rest of the syllabus. It's about allocating your most precious resource--your focused attention--where it will have the biggest impact. This is the difference between being busy and being effective.</p>
+              {essentials ? (
+                <p>The <Highlight description="80% of your marks come from 20% of the syllabus." theme={theme}>80/20 Rule</Highlight> says a small number of topics deliver most of your marks. Find these high-yield topics. Prioritise them ruthlessly. You are not ignoring the rest. You are putting your focused attention where it has the biggest impact.</p>
+              ) : (
+                <>
+                  <p>The core principle of information triage is the <Highlight description="Also known as the Pareto Principle. It states that for many events, roughly 80% of the effects come from 20% of the causes. In studying, this means 80% of your marks will come from 20% of the syllabus." theme={theme}>80/20 Rule</Highlight>. Not all topics are created equal. A small number of "high-yield" topics consistently deliver the vast majority of the marks on the exam papers year after year.</p>
+                  <p>Your job is to identify this "vital few" and ruthlessly prioritize them. This isn't about ignoring the rest of the syllabus. It's about allocating your most precious resource--your focused attention--where it will have the biggest impact. This is the difference between being busy and being effective.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="The Syllabus Deconstructor." eyebrow="Step 3" icon={Compass} theme={theme}>
-              <p>To find the 20%, you need data. The <Highlight description="A visual tool that breaks down a syllabus into its core topics and uses historical exam data to assign a 'frequency score' to each, revealing the high-yield areas." theme={theme}>Syllabus Deconstructor</Highlight> is an interactive tool that does this for you. By analyzing years of past papers, we can map out the "hot zones" of the curriculum.</p>
-              <p>This tool transforms the syllabus from a long, intimidating list into a strategic map. It shows you where the 'big game' is, allowing you to plan your 'hunt' accordingly. We'll start with Maths, one of the most predictable exams on the schedule.</p>
+              {essentials ? (
+                <p>Use the <Highlight description="A tool that maps how often each topic appears on past papers." theme={theme}>Syllabus Deconstructor</Highlight> below. It analyses past papers to show you which topics come up most. Click any topic to see details. Start with Maths — one of the most predictable exams.</p>
+              ) : (
+                <>
+                  <p>To find the 20%, you need data. The <Highlight description="A visual tool that breaks down a syllabus into its core topics and uses historical exam data to assign a 'frequency score' to each, revealing the high-yield areas." theme={theme}>Syllabus Deconstructor</Highlight> is an interactive tool that does this for you. By analyzing years of past papers, we can map out the "hot zones" of the curriculum.</p>
+                  <p>This tool transforms the syllabus from a long, intimidating list into a strategic map. It shows you where the 'big game' is, allowing you to plan your 'hunt' accordingly. We'll start with Maths, one of the most predictable exams on the schedule.</p>
+                </>
+              )}
               <SyllabusDeconstructor />
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="Distillation Techniques" eyebrow="Step 4" icon={Brain} theme={theme}>
-              <p>This section is under construction. Future content will explore techniques like concept mapping, the Feynman technique, and creating one-page summaries to distill complex information into memorable, high-yield assets.</p>
+              {essentials ? (
+                <p>Coming soon. You will learn concept mapping, the Feynman technique, and one-page summaries.</p>
+              ) : (
+                <p>This section is under construction. Future content will explore techniques like concept mapping, the Feynman technique, and creating one-page summaries to distill complex information into memorable, high-yield assets.</p>
+              )}
             </ReadingSection>
           )}
           {activeSection === 4 && (
             <ReadingSection title="High-Yield Assets" eyebrow="Step 5" icon={BarChart} theme={theme}>
-              <p>This section is under construction. Future content will guide you on how to turn your distilled knowledge into powerful revision tools like summary sheets, flashcards, and mind maps that are optimized for active recall.</p>
+              {essentials ? (
+                <p>Coming soon. You will learn to create summary sheets, flashcards, and mind maps for active recall.</p>
+              ) : (
+                <p>This section is under construction. Future content will guide you on how to turn your distilled knowledge into powerful revision tools like summary sheets, flashcards, and mind maps that are optimized for active recall.</p>
+              )}
             </ReadingSection>
           )}
           {activeSection === 5 && (
             <ReadingSection title="Your Triage Plan" eyebrow="Step 6" icon={Wrench} theme={theme}>
-              <p>This section is under construction. Future content will provide a framework for creating a personalized study plan based on your own syllabus deconstruction, helping you allocate your time and energy for maximum point-scoring efficiency.</p>
+              {essentials ? (
+                <p>Coming soon. You will build a personal study plan based on your syllabus deconstruction.</p>
+              ) : (
+                <p>This section is under construction. Future content will provide a framework for creating a personalized study plan based on your own syllabus deconstruction, helping you allocate your time and energy for maximum point-scoring efficiency.</p>
+              )}
             </ReadingSection>
           )}
         </>

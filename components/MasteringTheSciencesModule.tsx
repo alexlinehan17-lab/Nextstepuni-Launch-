@@ -13,6 +13,7 @@ import { type ModuleProgress } from '../types';
 import { emeraldTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = emeraldTheme;
 
@@ -432,6 +433,7 @@ const KeywordPrecisionTester = () => {
 
 // --- MODULE COMPONENT ---
 const MasteringTheSciencesModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'hidden-curriculum', title: 'What They Don\'t Teach You', eyebrow: '01 // The Big Picture', icon: Key },
     { id: 'biology', title: 'Biology: Every Word Counts', eyebrow: '02 // Know Your Keywords', icon: Leaf },
@@ -459,47 +461,90 @@ const MasteringTheSciencesModule: React.FC<{ onBack: () => void; progress: Modul
         <>
           {activeSection === 0 && (
             <ReadingSection title="What They Don't Teach You." eyebrow="Step 1" icon={Key} theme={theme}>
-              <p>Here's the thing about the Leaving Cert sciences: knowing your stuff is only half the battle. Each subject -- Biology, Chemistry, Physics, and Ag Science -- has its own set of unwritten rules. The marking scheme rewards certain approaches, and if you don't know what those are, you'll lose marks even when you understand the material.</p>
-              <p>This module breaks down each science subject so you can see what the examiner is actually looking for. You'll learn which topics come up most, which mistakes cost the most marks, and how to write answers that tick every box on the marking scheme.</p>
-              <PersonalStory name="Róisín" role="6th Year, Tullamore">
-                <p>I was getting B3s in Biology even though I was studying loads. Turns out I was using my own words for definitions instead of the exact terms from the book. Once I started learning the keywords the examiner wanted, my marks jumped two grades in the mocks. It felt like I'd been playing the wrong game the whole time.</p>
-              </PersonalStory>
+              {essentials ? (
+                <>
+                  <p>Each science subject has unwritten rules. The marking scheme rewards certain approaches. If you do not know them, you lose marks even when you understand the material. This module shows you what the examiner actually wants for each subject.</p>
+                  <PersonalStory name="Róisín" role="6th Year, Tullamore">
+                    <p>I was getting B3s in Biology even though I was studying loads. Turns out I was using my own words for definitions instead of the exact terms from the book. Once I started learning the keywords the examiner wanted, my marks jumped two grades in the mocks. It felt like I'd been playing the wrong game the whole time.</p>
+                  </PersonalStory>
+                </>
+              ) : (
+                <>
+                  <p>Here's the thing about the Leaving Cert sciences: knowing your stuff is only half the battle. Each subject -- Biology, Chemistry, Physics, and Ag Science -- has its own set of unwritten rules. The marking scheme rewards certain approaches, and if you don't know what those are, you'll lose marks even when you understand the material.</p>
+                  <p>This module breaks down each science subject so you can see what the examiner is actually looking for. You'll learn which topics come up most, which mistakes cost the most marks, and how to write answers that tick every box on the marking scheme.</p>
+                  <PersonalStory name="Róisín" role="6th Year, Tullamore">
+                    <p>I was getting B3s in Biology even though I was studying loads. Turns out I was using my own words for definitions instead of the exact terms from the book. Once I started learning the keywords the examiner wanted, my marks jumped two grades in the mocks. It felt like I'd been playing the wrong game the whole time.</p>
+                  </PersonalStory>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 1 && (
             <ReadingSection title="Biology: Every Word Counts." eyebrow="Step 2" icon={Leaf} theme={theme}>
-              <p>Biology is massive -- there's a lot to learn. But the biggest trap isn't the volume of content, it's <Highlight description="The examiner wants the exact keyword from the marking scheme. If it says 'diffusion', writing 'spreading out' gets zero marks, even if you understand the concept perfectly." theme={theme}>using the exact right words</Highlight>. If the marking scheme says "diffusion" and you write "spreading out", you get zero -- even though you clearly know what you're talking about. Definitions need to be learned word-for-word. The exam is split into short questions, experiment questions, and long questions. Make sure you know all 22 mandatory experiments -- they come up every year. And watch out for the <Highlight description="If a question asks for two examples and you write three, a wrong third answer can cancel out a correct one. Only answer what's asked." theme={theme}>extra answer trap</Highlight> in short questions: if you write more answers than asked for and one is wrong, it can cancel out a right one.</p>
+              {essentials ? (
+                <p>The biggest trap in Biology is <Highlight description="The examiner only accepts the exact keyword from the marking scheme." theme={theme}>using the exact right words</Highlight>. "Spreading out" instead of "diffusion" gets zero marks. Learn definitions word-for-word. Know all 22 mandatory experiments. Watch the <Highlight description="Writing more answers than asked can cancel a correct one." theme={theme}>extra answer trap</Highlight>: only answer what is asked.</p>
+              ) : (
+                <p>Biology is massive -- there's a lot to learn. But the biggest trap isn't the volume of content, it's <Highlight description="The examiner wants the exact keyword from the marking scheme. If it says 'diffusion', writing 'spreading out' gets zero marks, even if you understand the concept perfectly." theme={theme}>using the exact right words</Highlight>. If the marking scheme says "diffusion" and you write "spreading out", you get zero -- even though you clearly know what you're talking about. Definitions need to be learned word-for-word. The exam is split into short questions, experiment questions, and long questions. Make sure you know all 22 mandatory experiments -- they come up every year. And watch out for the <Highlight description="If a question asks for two examples and you write three, a wrong third answer can cancel out a correct one. Only answer what's asked." theme={theme}>extra answer trap</Highlight> in short questions: if you write more answers than asked for and one is wrong, it can cancel out a right one.</p>
+              )}
               <KeywordPrecisionTester />
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="Chemistry: Seeing the Molecules." eyebrow="Step 3" icon={Beaker} theme={theme}>
-              <p>Chemistry is about two things: picturing what molecules are doing and being able to do the calculations. The experiment section (Section A) is your <Highlight description="The experiment questions are very predictable -- titrations come up nearly every year. Nailing these can be worth up to 38% of your total grade." theme={theme}>easiest source of marks</Highlight> because the same types of questions keep coming up. Get your titration steps down cold and know how to draw the apparatus.</p>
-              <p>Organic Chemistry makes up about 40% of the paper, so it's worth serious time. You need to know your reaction pathways and understand <Highlight description="Curly arrows show where electrons move. They always start from where electrons are (a lone pair or a bond) and point to where they're going. Drawing them wrong loses you marks." theme={theme}>curly arrows</Highlight> for reaction mechanisms. A classic mistake is drawing a carbon with five bonds instead of four -- that's an instant zero. For calculations, always start by converting to moles. It's the foundation of every chemistry calculation.</p>
+              {essentials ? (
+                <p>Section A (experiments) is your <Highlight description="Predictable questions worth up to 38% of your grade." theme={theme}>easiest source of marks</Highlight>. Know titrations cold. Organic Chemistry is 40% of the paper. Learn reaction pathways and <Highlight description="Arrows showing where electrons move in a reaction." theme={theme}>curly arrows</Highlight>. Never draw carbon with five bonds. For calculations, always start by converting to moles.</p>
+              ) : (
+                <>
+                  <p>Chemistry is about two things: picturing what molecules are doing and being able to do the calculations. The experiment section (Section A) is your <Highlight description="The experiment questions are very predictable -- titrations come up nearly every year. Nailing these can be worth up to 38% of your total grade." theme={theme}>easiest source of marks</Highlight> because the same types of questions keep coming up. Get your titration steps down cold and know how to draw the apparatus.</p>
+                  <p>Organic Chemistry makes up about 40% of the paper, so it's worth serious time. You need to know your reaction pathways and understand <Highlight description="Curly arrows show where electrons move. They always start from where electrons are (a lone pair or a bond) and point to where they're going. Drawing them wrong loses you marks." theme={theme}>curly arrows</Highlight> for reaction mechanisms. A classic mistake is drawing a carbon with five bonds instead of four -- that's an instant zero. For calculations, always start by converting to moles. It's the foundation of every chemistry calculation.</p>
+                </>
+              )}
               <CurlyArrowDrill />
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="Physics: Problem-Solving Mindset." eyebrow="Step 4" icon={Atom} theme={theme}>
-              <p>Physics is about applying ideas to problems you might not have seen before. The experiment section is where you pick up reliable marks if you know the basics of <Highlight description="Always put the thing you changed (independent variable) on the X-axis. Calculate slope from the line of best fit, not from random points in your table." theme={theme}>drawing and reading graphs properly</Highlight>. Learn all your derivations by heart -- including the geometry steps, not just the final formula.</p>
-              <p>When you hit a tricky question, your best friend is <Highlight description="You can use units to figure out or double-check a formula. If Force is in Newtons and Area is in metres squared, then Pressure must be in Newtons per metre squared." theme={theme}>checking your units</Highlight>. If the units on both sides of your equation don't match, something has gone wrong. The number one reason students lose marks in Physics? Forgetting to convert cm to m. Also, always check your calculator is in <strong>Degree</strong> mode before doing any trig.</p>
+              {essentials ? (
+                <p>Experiments give you reliable marks. Learn <Highlight description="Independent variable on X-axis. Use line of best fit for slope." theme={theme}>graphs properly</Highlight>. Memorise derivations including geometry steps. When stuck, <Highlight description="If units do not match on both sides, something is wrong." theme={theme}>check your units</Highlight>. The top mistake is forgetting to convert cm to m. Always set your calculator to Degree mode for trig.</p>
+              ) : (
+                <>
+                  <p>Physics is about applying ideas to problems you might not have seen before. The experiment section is where you pick up reliable marks if you know the basics of <Highlight description="Always put the thing you changed (independent variable) on the X-axis. Calculate slope from the line of best fit, not from random points in your table." theme={theme}>drawing and reading graphs properly</Highlight>. Learn all your derivations by heart -- including the geometry steps, not just the final formula.</p>
+                  <p>When you hit a tricky question, your best friend is <Highlight description="You can use units to figure out or double-check a formula. If Force is in Newtons and Area is in metres squared, then Pressure must be in Newtons per metre squared." theme={theme}>checking your units</Highlight>. If the units on both sides of your equation don't match, something has gone wrong. The number one reason students lose marks in Physics? Forgetting to convert cm to m. Also, always check your calculator is in <strong>Degree</strong> mode before doing any trig.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 4 && (
             <ReadingSection title="Ag Science: Think Like a Scientist." eyebrow="Step 5" icon={Sprout} theme={theme}>
-              <p>Ag Science has changed a lot -- it's not just about farming facts anymore, it's about thinking scientifically. The <Highlight description="This is a big research project worth 25% of your total grade. You need a clear question you can test, a proper experiment, and real data analysis. A vague or descriptive project will lose you serious marks." theme={theme}>Individual Investigative Study (IIS)</Highlight> is worth a quarter of your grade, so it needs proper effort. You need a clear, testable question and a proper write-up with real data -- not just a description of what you did.</p>
-              <p>The written paper now asks you to <Highlight description="This means connecting ideas across different parts of the course. For example, how fertiliser use in the Crops section links to water quality in the Environment section." theme={theme}>connect ideas across topics</Highlight>, not just memorise isolated facts. You might need to link something from the Crops section to the Environment section, for example. The experiment questions are just as detailed as Biology or Physics, so treat them with the same care.</p>
+              {essentials ? (
+                <p>The <Highlight description="A research project worth 25% of your grade." theme={theme}>IIS</Highlight> is worth 25%. You need a clear testable question and real data. The written paper asks you to <Highlight description="Linking ideas from different parts of the course." theme={theme}>connect ideas across topics</Highlight>. Link Crops to Environment, for example. Treat experiment questions with the same detail as Biology or Physics.</p>
+              ) : (
+                <>
+                  <p>Ag Science has changed a lot -- it's not just about farming facts anymore, it's about thinking scientifically. The <Highlight description="This is a big research project worth 25% of your total grade. You need a clear question you can test, a proper experiment, and real data analysis. A vague or descriptive project will lose you serious marks." theme={theme}>Individual Investigative Study (IIS)</Highlight> is worth a quarter of your grade, so it needs proper effort. You need a clear, testable question and a proper write-up with real data -- not just a description of what you did.</p>
+                  <p>The written paper now asks you to <Highlight description="This means connecting ideas across different parts of the course. For example, how fertiliser use in the Crops section links to water quality in the Environment section." theme={theme}>connect ideas across topics</Highlight>, not just memorise isolated facts. You might need to link something from the Crops section to the Environment section, for example. The experiment questions are just as detailed as Biology or Physics, so treat them with the same care.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 5 && (
             <ReadingSection title="Study Smarter for Science." eyebrow="Step 6" icon={BrainCircuit} theme={theme}>
-              <p>If you're just re-reading your notes over and over, you're wasting time. One of the best things you can do for science subjects is <Highlight description="Instead of studying one topic for ages, mix it up. Do a Physics problem, then a Chemistry equation, then a Biology definition. It feels harder, but it trains your brain to switch between different types of thinking." theme={theme}>mixing up your topics</Highlight> within a single study session. Instead of doing an hour of just Biology, try doing a Physics problem, then a Chemistry equation, then a Biology definition all in the same 90-minute block. It feels harder, but that's the point -- your brain gets better at telling different types of problems apart.</p>
-              <p>For memorising the hundreds of definitions in Biology and Ag Science, the winning combination is <Highlight description="Instead of just reading definitions, close your book and try to write them from memory. The effort of pulling the information out of your brain is what makes it stick." theme={theme}>testing yourself from memory</Highlight> and <Highlight description="Review your flashcards or notes at increasing gaps -- after 1 day, then 3 days, then a week, then a month. Free apps like Anki or Quizlet can automate this for you." theme={theme}>spacing out your revision</Highlight>. Free apps like Anki or Quizlet can handle the scheduling for you -- you just need to show up and do the reps.</p>
+              {essentials ? (
+                <p>Stop re-reading notes. Start <Highlight description="Mix Physics, Chemistry, and Biology in one session." theme={theme}>mixing up your topics</Highlight> in each session. It feels harder but you learn faster. For definitions, combine <Highlight description="Write definitions from memory without looking." theme={theme}>testing yourself from memory</Highlight> with <Highlight description="Review at increasing gaps: 1 day, 3 days, 1 week, 1 month." theme={theme}>spaced revision</Highlight>. Use Anki or Quizlet for the scheduling.</p>
+              ) : (
+                <>
+                  <p>If you're just re-reading your notes over and over, you're wasting time. One of the best things you can do for science subjects is <Highlight description="Instead of studying one topic for ages, mix it up. Do a Physics problem, then a Chemistry equation, then a Biology definition. It feels harder, but it trains your brain to switch between different types of thinking." theme={theme}>mixing up your topics</Highlight> within a single study session. Instead of doing an hour of just Biology, try doing a Physics problem, then a Chemistry equation, then a Biology definition all in the same 90-minute block. It feels harder, but that's the point -- your brain gets better at telling different types of problems apart.</p>
+                  <p>For memorising the hundreds of definitions in Biology and Ag Science, the winning combination is <Highlight description="Instead of just reading definitions, close your book and try to write them from memory. The effort of pulling the information out of your brain is what makes it stick." theme={theme}>testing yourself from memory</Highlight> and <Highlight description="Review your flashcards or notes at increasing gaps -- after 1 day, then 3 days, then a week, then a month. Free apps like Anki or Quizlet can automate this for you." theme={theme}>spacing out your revision</Highlight>. Free apps like Anki or Quizlet can handle the scheduling for you -- you just need to show up and do the reps.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 6 && (
             <ReadingSection title="Your Action Plan." eyebrow="Step 7" icon={Flag} theme={theme}>
-              <p>You now know the unwritten rules for each of the Leaving Cert sciences. You know what the examiner is actually looking for and which study methods work best for these subjects. Getting a H1 isn't about grinding harder -- it's about knowing the game you're playing and making every study session count.</p>
+              {essentials ? (
+                <p>You now know the unwritten rules for each science. Getting a H1 is about knowing the game, not grinding harder.</p>
+              ) : (
+                <p>You now know the unwritten rules for each of the Leaving Cert sciences. You know what the examiner is actually looking for and which study methods work best for these subjects. Getting a H1 isn't about grinding harder -- it's about knowing the game you're playing and making every study session count.</p>
+              )}
               <MicroCommitment theme={theme}>
                 <p>Pick ONE subject. Go to the SEC website (examinations.ie) and download the most recent Chief Examiner's Report for that subject. Read just the "Recommendations to Candidates" section. It's basically the examiner telling you exactly what to do differently -- and it's free.</p>
               </MicroCommitment>

@@ -11,6 +11,7 @@ import { type ModuleProgress } from '../types';
 import { fuchsiaTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = fuchsiaTheme;
 
@@ -379,6 +380,7 @@ const CognitiveLoadComparison = () => {
 
 // --- MODULE COMPONENT ---
 const TheCognitiveLoadModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {
+  const essentials = useEssentialsMode();
   const sections = [
     { id: 'the-bottleneck', title: 'The Bottleneck', eyebrow: '01 // The Hard Limit', icon: Cpu },
     { id: 'three-types-of-load', title: 'Three Kinds of Brain Drain', eyebrow: '02 // The Breakdown', icon: SlidersHorizontal },
@@ -404,18 +406,31 @@ const TheCognitiveLoadModule: React.FC<{ onBack: () => void; progress: ModulePro
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Bottleneck." eyebrow="Step 1" icon={Cpu} theme={theme}>
-              <p>For a long time, scientists thought your <Highlight description="Your short-term memory is like a tiny desk — it can only hold a few things at once before stuff starts falling off." theme={theme}>short-term memory</Highlight> could hold about 7 things at once. But more recent research showed the real number is much smaller: roughly 4 items. That's it. This is the hard limit on what your brain can juggle at any one time.</p>
-              <p>Every piece of new information, every instruction, every diagram label competes for those 4 spots. When you go over the limit, information simply drops out — and you don't even notice it happening. This is called <Highlight description="Brain overload happens when you try to process more than your brain can handle at once. The scary part is you don't feel it happening — stuff just quietly disappears." theme={theme}>brain overload</Highlight>, and its most dangerous feature is that it's invisible. You don't feel a "full" signal. Material just fails to stick, and you have no idea what you missed.</p>
-              <p>This is why re-reading a dense paragraph three times still doesn't make sense: your brain overflows on each pass. The words enter short-term storage, but there's no room left to actually process their meaning, connect them to what you already know, or build the <Highlight description="A mental framework is like a web of connected ideas in your long-term memory. Once you build one, you can handle complex topics much more easily because your brain treats the whole web as one 'thing'." theme={theme}>mental frameworks</Highlight> that make up real understanding. You're reading, but you're not learning. And because the text looks familiar on each re-read, you mistake that familiarity for actual comprehension.</p>
-              <PersonalStory name="Niamh" role="6th Year, Galway">
-                <p>I used to sit down with my Biology textbook and read the same chapter three or four times. I'd highlight loads, and it felt like I was really getting it. Then I'd go into the mock and just... blank. It was so frustrating. Once I learned that my brain can only hold about 4 things at a time, I stopped trying to take in a whole chapter at once. I break it into small chunks now, and I actually test myself after each one. It's slower, but I actually remember things in the exam.</p>
-              </PersonalStory>
+              {essentials ? (
+                <>
+                  <p>Your brain can only juggle about <strong>4 items</strong> at once. When you go over that limit, information quietly drops out. You will not even notice it happening.</p>
+                  <p>This is why re-reading a dense paragraph three times still does not make sense. Your brain overflows each time. Break material into small chunks and test yourself after each one.</p>
+                </>
+              ) : (
+                <>
+                  <p>For a long time, scientists thought your <Highlight description="Your short-term memory is like a tiny desk — it can only hold a few things at once before stuff starts falling off." theme={theme}>short-term memory</Highlight> could hold about 7 things at once. But more recent research showed the real number is much smaller: roughly 4 items. That's it. This is the hard limit on what your brain can juggle at any one time.</p>
+                  <p>Every piece of new information, every instruction, every diagram label competes for those 4 spots. When you go over the limit, information simply drops out — and you don't even notice it happening. This is called <Highlight description="Brain overload happens when you try to process more than your brain can handle at once. The scary part is you don't feel it happening — stuff just quietly disappears." theme={theme}>brain overload</Highlight>, and its most dangerous feature is that it's invisible. You don't feel a "full" signal. Material just fails to stick, and you have no idea what you missed.</p>
+                  <p>This is why re-reading a dense paragraph three times still doesn't make sense: your brain overflows on each pass. The words enter short-term storage, but there's no room left to actually process their meaning, connect them to what you already know, or build the <Highlight description="A mental framework is like a web of connected ideas in your long-term memory. Once you build one, you can handle complex topics much more easily because your brain treats the whole web as one 'thing'." theme={theme}>mental frameworks</Highlight> that make up real understanding. You're reading, but you're not learning. And because the text looks familiar on each re-read, you mistake that familiarity for actual comprehension.</p>
+                  <PersonalStory name="Niamh" role="6th Year, Galway">
+                    <p>I used to sit down with my Biology textbook and read the same chapter three or four times. I'd highlight loads, and it felt like I was really getting it. Then I'd go into the mock and just... blank. It was so frustrating. Once I learned that my brain can only hold about 4 things at a time, I stopped trying to take in a whole chapter at once. I break it into small chunks now, and I actually test myself after each one. It's slower, but I actually remember things in the exam.</p>
+                  </PersonalStory>
+                </>
+              )}
               <WorkingMemoryDemo />
             </ReadingSection>
           )}
           {activeSection === 1 && (
             <ReadingSection title="Three Kinds of Brain Drain." eyebrow="Step 2" icon={SlidersHorizontal} theme={theme}>
-              <p>Researchers figured out that there are three types of mental load that compete for your brain's limited capacity. Understanding these three types is the key to making every study session count.</p>
+              {essentials ? (
+                <p>Three types of mental load compete for your brain's 4 slots. <strong>Built-in difficulty</strong> is how hard the topic naturally is. <strong>Wasted effort</strong> is brainpower lost to distractions. <strong>Actual learning effort</strong> is what builds real understanding. Cut the waste so you have room for real learning.</p>
+              ) : (
+                <p>Researchers figured out that there are three types of mental load that compete for your brain's limited capacity. Understanding these three types is the key to making every study session count.</p>
+              )}
               <ConceptCardGrid
                 cards={[
                   { number: 1, term: "Built-in Difficulty", description: "Built-in difficulty is just how hard the topic naturally is. You can't make calculus as easy as basic addition, but you can break it into smaller pieces. Higher Level Maths has more built-in difficulty than basic arithmetic. You can't change this; it comes with the subject." },
@@ -423,29 +438,59 @@ const TheCognitiveLoadModule: React.FC<{ onBack: () => void; progress: ModulePro
                   { number: 3, term: "Actual Learning Effort", description: "Actual learning effort is the brainpower you spend making sense of new ideas and connecting them to what you already know. This is the only type you want more of. The energy you spend genuinely understanding new ideas, building connections, and making things stick. This is the good stuff." },
                 ]}
               />
-              <p>The research shows that good study setups work by cutting wasted effort so your brain has more room for real learning. The maths is simple: your brain's 4-item limit has to fit all three types at once. If distractions eat up 3 of those spots (phone buzzing, cluttered notes, badly laid-out materials), you've only got 1 spot left for actual learning. Flip that ratio, and suddenly your brain has room to build real understanding.</p>
+              {!essentials && (
+                <p>The research shows that good study setups work by cutting wasted effort so your brain has more room for real learning. The maths is simple: your brain's 4-item limit has to fit all three types at once. If distractions eat up 3 of those spots (phone buzzing, cluttered notes, badly laid-out materials), you've only got 1 spot left for actual learning. Flip that ratio, and suddenly your brain has room to build real understanding.</p>
+              )}
               <CognitiveLoadComparison />
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="Why Separate Diagrams Kill Learning." eyebrow="Step 3" icon={AlertTriangle} theme={theme}>
-              <p>One of the sneakiest ways your brain gets overloaded is something called <Highlight description="This happens when a diagram is on one part of the page and the explanation is somewhere else. Your brain wastes energy jumping back and forth instead of actually learning." theme={theme}>split attention</Highlight>. When a diagram and its explanation are in different places — text at the bottom of the page, diagram at the top — your brain has to mentally stitch them together. That stitching process eats up brainpower that should be going towards actually understanding the content.</p>
-              <p>The research is clear: <Highlight description="Putting labels and explanations directly on the diagram means your brain doesn't have to jump around the page. Studies show this leads to 30-50% better results." theme={theme}>putting everything together</Highlight> (labels placed directly on diagrams) massively outperforms having things separated. Students who studied with combined materials performed 30 to 50% better than those who studied the same content with the text and images apart. This isn't a small difference; it's a game-changer.</p>
-              <p>You can use this right away. When studying from textbooks, <Highlight description="Writing notes and labels directly onto a diagram saves your brain from constantly flipping between the image and the explanation." theme={theme}>write your notes directly onto diagrams</Highlight> rather than reading captions separately. When making flashcards, put the visual and the explanation on the same side rather than splitting them across front and back. When using online resources, pick ones with labels built into the images over ones with footnotes or separate panels. Every time you stop your brain from having to jump between two sources, you free it up for the thing that actually matters: understanding.</p>
+              {essentials ? (
+                <>
+                  <p>When a diagram is on one part of the page and the explanation is somewhere else, your brain wastes energy jumping between them. This is called <strong>split attention</strong>.</p>
+                  <p>Here is what to do: write notes directly onto diagrams. Put visuals and explanations together on flashcards. Students who used combined materials scored 30-50% better. Keep related information in one place.</p>
+                </>
+              ) : (
+                <>
+                  <p>One of the sneakiest ways your brain gets overloaded is something called <Highlight description="This happens when a diagram is on one part of the page and the explanation is somewhere else. Your brain wastes energy jumping back and forth instead of actually learning." theme={theme}>split attention</Highlight>. When a diagram and its explanation are in different places — text at the bottom of the page, diagram at the top — your brain has to mentally stitch them together. That stitching process eats up brainpower that should be going towards actually understanding the content.</p>
+                  <p>The research is clear: <Highlight description="Putting labels and explanations directly on the diagram means your brain doesn't have to jump around the page. Studies show this leads to 30-50% better results." theme={theme}>putting everything together</Highlight> (labels placed directly on diagrams) massively outperforms having things separated. Students who studied with combined materials performed 30 to 50% better than those who studied the same content with the text and images apart. This isn't a small difference; it's a game-changer.</p>
+                  <p>You can use this right away. When studying from textbooks, <Highlight description="Writing notes and labels directly onto a diagram saves your brain from constantly flipping between the image and the explanation." theme={theme}>write your notes directly onto diagrams</Highlight> rather than reading captions separately. When making flashcards, put the visual and the explanation on the same side rather than splitting them across front and back. When using online resources, pick ones with labels built into the images over ones with footnotes or separate panels. Every time you stop your brain from having to jump between two sources, you free it up for the thing that actually matters: understanding.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 3 && (
             <ReadingSection title="When Easy Becomes Harmful." eyebrow="Step 4" icon={Activity} theme={theme}>
-              <p>Here's something that surprises most people: study techniques that help beginners can actually <em>hurt</em> you once you get better at a topic. This <Highlight description="What helps you when you're new to a topic can actually slow you down once you've got the basics. Your brain starts wasting energy on stuff it already knows." theme={theme}>plot twist</Highlight> fundamentally changes how you should think about study methods.</p>
-              <p><Highlight description="Step-by-step worked solutions are brilliant when you're starting out because they show you exactly how to approach a problem. But once you know the approach, reading through them again just wastes your brain's energy." theme={theme}>Worked examples</Highlight> (step-by-step solutions) are excellent when you're starting out because they give you the scaffolding you need. You don't have to figure out the approach — you can focus on understanding each step. But once you've already got a good grasp of the method, those same worked examples become pointless repetition. Going through them now just wastes brainpower on things you already know.</p>
-              <p>This means your best study method changes as you improve. Early on in a topic: use worked examples, guided solutions, and practice problems with hints. These lower the difficulty of unfamiliar material. Later, as you get stronger: switch to <Highlight description="Once you know the basics well, testing yourself from memory and solving problems without help builds much stronger learning than re-reading worked examples." theme={theme}>solving problems on your own and testing yourself from memory</Highlight>. The methods that got you from 0 to 60% understanding will actively hold you back from 60 to 90%. The key is recognising when you've crossed that line — which is exactly why knowing what you actually know (from earlier modules) matters so much here.</p>
+              {essentials ? (
+                <>
+                  <p>Study techniques that help beginners can hurt you once you improve. Worked examples are great when you are starting out. But once you know the method, they waste your brainpower.</p>
+                  <p>Here is what to do: when a topic is new, use guided solutions and hints. Once you are comfortable, switch to solving problems on your own and testing from memory. Your best method changes as you improve.</p>
+                </>
+              ) : (
+                <>
+                  <p>Here's something that surprises most people: study techniques that help beginners can actually <em>hurt</em> you once you get better at a topic. This <Highlight description="What helps you when you're new to a topic can actually slow you down once you've got the basics. Your brain starts wasting energy on stuff it already knows." theme={theme}>plot twist</Highlight> fundamentally changes how you should think about study methods.</p>
+                  <p><Highlight description="Step-by-step worked solutions are brilliant when you're starting out because they show you exactly how to approach a problem. But once you know the approach, reading through them again just wastes your brain's energy." theme={theme}>Worked examples</Highlight> (step-by-step solutions) are excellent when you're starting out because they give you the scaffolding you need. You don't have to figure out the approach — you can focus on understanding each step. But once you've already got a good grasp of the method, those same worked examples become pointless repetition. Going through them now just wastes brainpower on things you already know.</p>
+                  <p>This means your best study method changes as you improve. Early on in a topic: use worked examples, guided solutions, and practice problems with hints. These lower the difficulty of unfamiliar material. Later, as you get stronger: switch to <Highlight description="Once you know the basics well, testing yourself from memory and solving problems without help builds much stronger learning than re-reading worked examples." theme={theme}>solving problems on your own and testing yourself from memory</Highlight>. The methods that got you from 0 to 60% understanding will actively hold you back from 60 to 90%. The key is recognising when you've crossed that line — which is exactly why knowing what you actually know (from earlier modules) matters so much here.</p>
+                </>
+              )}
             </ReadingSection>
           )}
           {activeSection === 4 && (
             <ReadingSection title="Managing Your Brain's Limits." eyebrow="Step 5" icon={Wrench} theme={theme}>
-              <p>Everything in this module comes down to a simple game plan for managing your mental load while studying. Step one: <Highlight description="Cut out everything in your study space that wastes brainpower without helping you learn — messy desk, open tabs, phone nearby, background noise with lyrics." theme={theme}>Cut the distractions</Highlight>. Clean desk. Phone in another room — not face-down on the desk, not on silent, in another room entirely. Close every browser tab except what you need. Use study materials where text and diagrams are together, not separated.</p>
-              <p>Step two: <Highlight description="You can't make hard topics easy, but you can break them into smaller pieces that your brain can actually handle one at a time." theme={theme}>Break it down</Highlight>. Split complex topics into smaller chunks that fit within your brain's 4-item limit. Master the basics before jumping ahead — if you don't understand algebra, calculus will overwhelm your brain no matter how well-organised your notes are. Use worked examples when learning new concepts, then switch to solving problems on your own as you get better.</p>
-              <p>Step three: <Highlight description="Once you've cleared away distractions and broken things into chunks, use that freed-up brainpower for the stuff that actually builds understanding." theme={theme}>Make every bit of brainpower count</Highlight>. Once you've cleared away the distractions, use the freed-up brainpower for things that actually build understanding: explaining concepts to yourself in your own words, connecting new information to what you already know, and testing yourself from memory rather than re-reading. Two key principles from the research: <Highlight description="Two simple rules backed by loads of research: remove anything from your study materials that doesn't help you learn, and always keep related images and text together." theme={theme}>remove anything non-essential from your materials</Highlight>, and always keep related text and images together. These two rules make sure every drop of brainpower goes toward real learning.</p>
+              {essentials ? (
+                <>
+                  <p><strong>Step one:</strong> Cut distractions. Phone in another room. Close unused browser tabs. Clean desk.</p>
+                  <p><strong>Step two:</strong> Break complex topics into small chunks your brain can handle. Master basics before moving on.</p>
+                  <p><strong>Step three:</strong> Use freed-up brainpower for real learning. Explain things in your own words, connect new ideas to old ones, and test yourself from memory.</p>
+                </>
+              ) : (
+                <>
+                  <p>Everything in this module comes down to a simple game plan for managing your mental load while studying. Step one: <Highlight description="Cut out everything in your study space that wastes brainpower without helping you learn — messy desk, open tabs, phone nearby, background noise with lyrics." theme={theme}>Cut the distractions</Highlight>. Clean desk. Phone in another room — not face-down on the desk, not on silent, in another room entirely. Close every browser tab except what you need. Use study materials where text and diagrams are together, not separated.</p>
+                  <p>Step two: <Highlight description="You can't make hard topics easy, but you can break them into smaller pieces that your brain can actually handle one at a time." theme={theme}>Break it down</Highlight>. Split complex topics into smaller chunks that fit within your brain's 4-item limit. Master the basics before jumping ahead — if you don't understand algebra, calculus will overwhelm your brain no matter how well-organised your notes are. Use worked examples when learning new concepts, then switch to solving problems on your own as you get better.</p>
+                  <p>Step three: <Highlight description="Once you've cleared away distractions and broken things into chunks, use that freed-up brainpower for the stuff that actually builds understanding." theme={theme}>Make every bit of brainpower count</Highlight>. Once you've cleared away the distractions, use the freed-up brainpower for things that actually build understanding: explaining concepts to yourself in your own words, connecting new information to what you already know, and testing yourself from memory rather than re-reading. Two key principles from the research: <Highlight description="Two simple rules backed by loads of research: remove anything from your study materials that doesn't help you learn, and always keep related images and text together." theme={theme}>remove anything non-essential from your materials</Highlight>, and always keep related text and images together. These two rules make sure every drop of brainpower goes toward real learning.</p>
+                </>
+              )}
               <MicroCommitment theme={theme}>
                 <p>Before your next study session, spend 2 minutes clearing distractions: close every browser tab except what you need, put your phone in another room (not just face-down — another room), and make sure all your notes and materials are within arm's reach so you don't break focus searching for them. Then study for 25 minutes. Notice the difference when your brain isn't wasting energy on distractions.</p>
               </MicroCommitment>
