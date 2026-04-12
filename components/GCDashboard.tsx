@@ -8,7 +8,7 @@ import { MotionDiv } from './Motion';
 import { type CourseData } from './Library';
 import { type SessionUser, getAvatarUrl } from '../utils/authUtils';
 import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays, Moon, Sun } from 'lucide-react';
-import { db } from '../firebase';
+import app, { db } from '../firebase';
 import { collection, query, where, getDocs, doc, getDoc, deleteDoc, setDoc } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { getSchoolName } from '../schoolData';
@@ -128,7 +128,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
   const [resetResult, setResetResult] = useState<{ name: string; password: string } | null>(null);
   const handleResetPassword = async (studentUid: string) => {
     try {
-      const functions = getFunctions();
+      const functions = getFunctions(app);
       const resetFn = httpsCallable<{ studentUid: string }, { tempPassword: string; studentName: string }>(functions, 'resetStudentPassword');
       const result = await resetFn({ studentUid });
       setResetResult({ name: result.data.studentName, password: result.data.tempPassword });

@@ -17,6 +17,6 @@ export default tseslint.config(
     },
   },
   {
-    ignores: ['dist/**', 'node_modules/**', '*.config.*', 'scripts/**', '*.py'],
+    ignores: ['dist/**', 'node_modules/**', '*.config.*', 'scripts/**', '*.py', 'functions/lib/**'],
   }
 );
