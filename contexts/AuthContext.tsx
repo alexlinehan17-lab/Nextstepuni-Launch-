@@ -120,6 +120,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
               role: userData.role,
               school: userData.school,
               yearGroup: userData.yearGroup,
+              needsPasswordChange: userData.needsPasswordChange || false,
             });
 
             if (progressDoc.exists()) {

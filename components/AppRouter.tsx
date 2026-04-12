@@ -3,11 +3,14 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { Suspense, lazy, useEffect, useRef } from 'react';
-import { ArrowLeft } from 'lucide-react';
+import React, { Suspense, lazy, useEffect, useRef, useState } from 'react';
+import { ArrowLeft, Eye, EyeOff, Check } from 'lucide-react';
 import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
 import { useToast } from './Toast';
+import { updatePassword } from 'firebase/auth';
+import { auth as firebaseAuth, db as firebaseDb } from '../firebase';
+import { type SessionUser } from '../utils/authUtils';
 import { LoadingSpinner } from './LoadingSpinner';
 import { KnowledgeTree, type CategoryType } from './KnowledgeTree';
 import { Library } from './Library';
@@ -237,6 +240,11 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   if (!user) {
     return <Suspense fallback={<LoadingSpinner />}><LoginPage handleLoginSuccess={handleLoginSuccess} /></Suspense>;
+  }
+
+  // Force password change if flagged by GC reset
+  if (user.needsPasswordChange) {
+    return <ChangePasswordModal user={user} />;
   }
 
   if (user.isAdmin) {
@@ -541,6 +549,72 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   // Fallback: unknown view state — redirect to tree via effect (not during render)
   return <FallbackRedirect onRedirect={() => nav.navigateToTree()} />;
+};
+
+/** Password change screen — shown when a GC resets a student's password */
+const ChangePasswordModal: React.FC<{ user: SessionUser }> = ({ user }) => {
+  const [newPassword, setNewPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleChangePassword = async () => {
+    if (newPassword.length < 6) { setError('Password must be at least 6 characters.'); return; }
+    setIsLoading(true); setError('');
+    try {
+      const currentUser = firebaseAuth.currentUser;
+      if (!currentUser) throw new Error('Not authenticated');
+      await updatePassword(currentUser, newPassword);
+      // Clear the flag in Firestore
+      await setDoc(doc(firebaseDb, 'users', user.uid), { needsPasswordChange: false }, { merge: true });
+      // Reload to pick up the cleared flag
+      window.location.reload();
+    } catch (err: any) {
+      if (err.code === 'auth/requires-recent-login') {
+        setError('Please log out and log back in, then try again.');
+      } else {
+        setError('Failed to change password. Try again.');
+      }
+    }
+    setIsLoading(false);
+  };
+
+  const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-700 focus:border-[#2A7D6F]";
+
+  return (
+    <div className="min-h-screen flex items-center justify-center p-5" style={{ backgroundColor: '#FDF8F0' }}>
+      <div className="w-full max-w-md bg-white dark:bg-zinc-900 rounded-2xl p-8 md:p-10" style={{ border: '2px solid #1a1a1a' }}>
+        <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Set a new password</h2>
+        <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Your password was reset by your guidance counsellor. Please choose a new password to continue.</p>
+        <div className="space-y-4">
+          <div>
+            <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>New Password</label>
+            <div className="relative">
+              <input type={showPassword ? 'text' : 'password'} value={newPassword} onChange={e => { setNewPassword(e.target.value); setError(''); }} placeholder="Choose a new password" className={inputClass} autoFocus />
+              <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
+                {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+              </button>
+            </div>
+            {newPassword.length > 0 && newPassword.length < 6 && (
+              <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{6 - newPassword.length} more character{6 - newPassword.length !== 1 ? 's' : ''} needed</p>
+            )}
+            {newPassword.length >= 6 && (
+              <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: '#2A7D6F' }}><Check size={12} /> Looks good</p>
+            )}
+          </div>
+          {error && <p className="text-sm text-red-500 font-medium">{error}</p>}
+          <button
+            onClick={handleChangePassword}
+            disabled={isLoading || newPassword.length < 6}
+            className="w-full py-3.5 rounded-full text-white text-[15px] font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+            style={{ backgroundColor: '#2A7D6F', borderBottom: '3px solid #1a5a4e', boxShadow: '0 4px 0 #1a5a4e' }}
+          >
+            {isLoading ? 'Saving...' : 'Set Password'}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 /** Triggers a redirect via useEffect instead of during render — avoids React anti-pattern */

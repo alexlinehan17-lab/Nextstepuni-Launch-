@@ -56,9 +56,10 @@ export const resetStudentPassword = onCall(
       tempPassword += chars.charAt(Math.floor(Math.random() * chars.length));
     }
 
-    // Reset the password
+    // Reset the password and flag account for password change
     try {
       await auth.updateUser(studentUid, { password: tempPassword });
+      await db.collection("users").doc(studentUid).update({ needsPasswordChange: true });
     } catch {
       throw new HttpsError("internal", "Failed to reset password.");
     }

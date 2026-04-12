@@ -15,6 +15,7 @@ export type SessionUser = {
   role?: 'student' | 'gc' | 'admin';
   school?: string;
   yearGroup?: '5th' | '6th';
+  needsPasswordChange?: boolean;
 };
 
 // ─── Avatar Seeds ───────────────────────────────────────────
