@@ -983,9 +983,9 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                 >
                   {cell.day}
                   {dayEvents.length > 0 && (
-                    <div className="flex gap-0.5 absolute bottom-0.5">
+                    <div className="flex gap-0.5 absolute bottom-1" title={dayEvents.map(e => e.title).join(', ')}>
                       {dayEvents.slice(0, 3).map((ev, j) => (
-                        <div key={j} className="w-1 h-1 rounded-full" style={{ backgroundColor: EVENT_DOT_COLORS[ev.category] || '#8B5CF6' }} />
+                        <div key={j} className="w-1.5 h-1.5 rounded-full cursor-pointer" style={{ backgroundColor: EVENT_DOT_COLORS[ev.category] || '#8B5CF6' }} title={ev.title} />
                       ))}
                     </div>
                   )}
