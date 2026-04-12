@@ -489,8 +489,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       className="flex flex-col sm:flex-row gap-4 justify-center"
                     >
                       {([
-                        { id: false, title: 'Full Modules', desc: 'The deep dive \u2014 all the science and strategy behind each idea.', emoji: '\uD83D\uDCD6' },
-                        { id: true, title: 'Essentials', desc: 'Key ideas fast \u2014 less reading, same activities and practice.', emoji: '\u26A1' },
+                        { id: false, title: 'Full Modules', desc: 'The deep dive \u2014 all the science and strategy behind each idea.' },
+                        { id: true, title: 'Essentials', desc: 'Key ideas fast \u2014 less reading, same activities and practice.' },
                       ] as const).map(opt => (
                         <button
                           key={String(opt.id)}
@@ -502,7 +502,6 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                             boxShadow: essentialsMode === opt.id ? '0 0 0 3px rgba(42,125,111,0.1)' : 'none',
                           }}
                         >
-                          <p className="text-2xl mb-2">{opt.emoji}</p>
                           <p className={`text-base font-bold mb-1 ${essentialsMode === opt.id ? 'text-[#2A7D6F]' : 'text-[#1A1A1A] dark:text-white'}`}>{opt.title}</p>
                           <p className={`text-xs ${essentialsMode === opt.id ? 'text-[#2A7D6F]' : 'text-[#A8A29E] dark:text-zinc-500'}`}>{opt.desc}</p>
                         </button>
