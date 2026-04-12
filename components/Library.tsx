@@ -19,7 +19,7 @@ import { type NorthStar, type AccentThemeId, type CardStyleId } from '../types';
 import { type StudentSubjectProfile } from './subjectData';
 import { useSettingsContext } from '../contexts/SettingsContext';
 import { ACCENT_THEME_LIST, ACCENT_THEMES, CARD_STYLES } from '../themeData';
-import { getAvatarUrl } from './Auth';
+import { getAvatarUrl } from '../utils/authUtils';
 import ModuleShowcase from './ModuleShowcase';
 
 // FIX: Cast motion components to any to bypass broken type definitions

@@ -9,7 +9,7 @@ import { MotionDiv } from '../Motion';
 import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2, X, AlertCircle, Eye, Megaphone, FileDown, UserPlus, CheckCircle, MinusCircle, Flag, Sparkles, KeyRound } from 'lucide-react';
 import { type CourseData } from '../Library';
 import { type CategoryType } from '../KnowledgeTree';
-import { getAvatarUrl } from '../Auth';
+import { getAvatarUrl } from '../../utils/authUtils';
 import { getSchoolName } from '../../schoolData';
 import { type GCStudentFullData, type StudentStatus } from './gcTypes';
 import {

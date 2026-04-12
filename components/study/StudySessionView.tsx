@@ -10,7 +10,7 @@ import { ArrowLeft, BookOpen, Target, RotateCcw, Play, Pause, Clock, Sparkles, X
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
-import { type SessionUser } from '../Auth';
+import { type SessionUser } from '../../utils/authUtils';
 import { type StudentSubjectProfile } from '../subjectData';
 import { type UserProgress, type StrategyMasteryMap, type MasteryTier } from '../../types';
 import { type CourseData } from '../Library';

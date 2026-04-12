@@ -7,7 +7,7 @@ import React, { useState, useCallback, useEffect, useRef, Suspense } from 'react
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { ArrowLeft, Mountain, Users, Heart, Gift, X } from 'lucide-react';
-import { type SessionUser } from '../Auth';
+import { type SessionUser } from '../../utils/authUtils';
 import { type NorthStar, type UserProgress } from '../../types';
 import { type MilestoneReward } from '../../islandShopData';
 import { db } from '../../firebase';
@@ -28,7 +28,7 @@ import { useKudos } from '../../hooks/useKudos';
 import { useGifts } from '../../hooks/useGifts';
 import { KUDOS_MESSAGES } from '../../kudosData';
 import { STARTER_PACKS } from '../../islandShopData';
-import { getAvatarUrl } from '../Auth';
+import { getAvatarUrl } from '../../utils/authUtils';
 
 interface CourseInfo {
   id: string;

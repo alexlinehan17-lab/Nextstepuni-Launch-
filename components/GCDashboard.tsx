@@ -6,7 +6,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { type CourseData } from './Library';
-import { type SessionUser, getAvatarUrl } from './Auth';
+import { type SessionUser, getAvatarUrl } from '../utils/authUtils';
 import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays, Moon, Sun } from 'lucide-react';
 import { db } from '../firebase';
 import { collection, query, where, getDocs, doc, getDoc, deleteDoc, setDoc } from 'firebase/firestore';

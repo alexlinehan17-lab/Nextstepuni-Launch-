@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { type SessionUser } from '../Auth';
+import { type SessionUser } from '../../utils/authUtils';
 import { type UserProgress } from '../../types';
 import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak } from '../subjectData';
 import { type NorthStar, type PointsData } from '../../types';

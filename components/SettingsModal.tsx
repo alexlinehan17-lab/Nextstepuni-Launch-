@@ -8,7 +8,7 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { X, Check, Lock, Sun, Moon, RefreshCw, LogOut, ChevronRight, Compass } from 'lucide-react';
-import { AVATAR_SEEDS, getAvatarUrl } from './Auth';
+import { AVATAR_SEEDS, getAvatarUrl } from '../utils/authUtils';
 import { EXTRA_AVATAR_SEEDS } from './RewardShopModal';
 import { type UserSettings } from '../types';
 

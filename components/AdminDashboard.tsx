@@ -5,7 +5,7 @@
 import React, { useState, useEffect } from 'react';
 import { MotionDiv } from './Motion';
 import { type CourseData } from './Library';
-import { type SessionUser, getAvatarUrl } from './Auth';
+import { type SessionUser, getAvatarUrl } from '../utils/authUtils';
 import { GraduationCap, LogOut, Trash2, AlertTriangle } from 'lucide-react';
 import { type CategoryType } from './KnowledgeTree';
 import { db } from '../firebase';

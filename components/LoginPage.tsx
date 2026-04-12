@@ -10,7 +10,7 @@ import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check } from
 import { auth, db } from '../firebase';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from './Auth';
+import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from '../utils/authUtils';
 import { SCHOOLS } from '../schoolData';
 
 // ── Aurora gradient left panel (stable, never re-renders) ──
@@ -83,24 +83,33 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const handleLogin = async () => {
     if (!email.trim() || !password.trim()) { setError('Please enter your email and password.'); return; }
     setIsLoading(true); setError('');
-    try {
-      const cred = await signInWithEmailAndPassword(auth, email.trim().toLowerCase(), password);
-      const userDoc = await getDoc(doc(db, 'users', cred.user.uid));
-      if (userDoc.exists()) {
-        const data = userDoc.data();
-        handleLoginSuccess({
-          uid: cred.user.uid,
-          name: data.name || 'Student',
-          avatar: data.avatar || 'James',
-          isAdmin: data.isAdmin || false,
-          role: data.role || 'student',
-          school: data.school || '',
-          yearGroup: data.yearGroup,
-        });
+    const input = email.trim().toLowerCase();
+    // Try as-is first (real email), then fall back to legacy @nextstep.app format
+    const attempts = input.includes('@') ? [input] : [input, `${input}@nextstep.app`];
+    let success = false;
+    for (const emailToTry of attempts) {
+      try {
+        const cred = await signInWithEmailAndPassword(auth, emailToTry, password);
+        const userDoc = await getDoc(doc(db, 'users', cred.user.uid));
+        if (userDoc.exists()) {
+          const data = userDoc.data();
+          handleLoginSuccess({
+            uid: cred.user.uid,
+            name: data.name || 'Student',
+            avatar: data.avatar || 'James',
+            isAdmin: data.isAdmin || false,
+            role: data.role || 'student',
+            school: data.school || '',
+            yearGroup: data.yearGroup,
+          });
+        }
+        success = true;
+        break;
+      } catch {
+        // Try next format
       }
-    } catch {
-      setError('Invalid email or password.');
     }
+    if (!success) setError('Invalid email or password.');
     setIsLoading(false);
   };
 
@@ -199,12 +208,12 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const primaryBtn = "w-full py-3.5 rounded-full text-white text-[15px] font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed";
   const primaryBtnStyle = { backgroundColor: '#2A7D6F', borderBottom: '3px solid #1a5a4e', boxShadow: '0 4px 0 #1a5a4e' };
 
-  // DEV button (passed to LoginCard so it's outside the animated container)
-  const devButton = (
+  // DEV button — only visible in development builds
+  const devButton = import.meta.env.DEV ? (
     <button onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })} className="mt-6 px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[9px] font-mono hover:bg-red-600/20 transition-colors">
       DEV: Skip Login
     </button>
-  );
+  ) : null;
 
   // ═══════════════════════════════════════════════════════════
   // WELCOME SCREEN — first thing users see

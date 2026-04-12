@@ -7,7 +7,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon, LogOut, Settings, Flame, ChevronRight, Trophy, Award, BarChart3, Star, X } from 'lucide-react';
-import { type SessionUser, getAvatarUrl, handleAvatarError } from './Auth';
+import { type SessionUser, getAvatarUrl, handleAvatarError } from '../utils/authUtils';
 import { type UserSettings } from '../types';
 import { type StreakData } from '../hooks/useStreak';
 import { type FocusRecommendation } from '../hooks/useTodaysFocus';

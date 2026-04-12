@@ -9,7 +9,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
 import { X, Star, Coffee, CalendarOff, Lock, Check, ShoppingBag, ChevronRight, Layers } from 'lucide-react';
 import { type CosmeticUnlocks, type EarnedRest, type UserSettings } from '../types';
-import { getAvatarUrl } from './Auth';
+import { getAvatarUrl } from '../utils/authUtils';
 import { ACCENT_THEME_LIST, CARD_STYLES } from '../themeData';
 
 // Extra avatar seeds beyond the base 8

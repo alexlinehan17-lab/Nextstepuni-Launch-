@@ -78,7 +78,9 @@ interface ModuleProps {
 
 ## Working With This Codebase
 
-**Always build-check after changes.** There are no tests or linting — `npm run build` is the only verification. Run it after any non-trivial change.
+**Always build-check after changes.** Run `npm run build` AND `npm run lint` after any non-trivial change. Both must pass with zero errors and zero warnings (`--max-warnings 0`).
+
+**Check for cascading effects.** After making changes to any file, verify that imports, navigation (both mobile AND desktop), and dependent components still work. Never assume a fix is isolated. Specifically: if you remove an import, grep for the name in the file to confirm it's truly unused. If you touch navigation, check both `MobileBottomNav` in App.tsx and any desktop sidebar. If you modify a hook's return type, check every consumer.
 
 **Batch module awareness.** Changes to `ModuleLayout`, `ModuleShared`, the `ModuleTheme` type, or the module props interface can affect all 43 module files. Confirm the scope before editing.
 

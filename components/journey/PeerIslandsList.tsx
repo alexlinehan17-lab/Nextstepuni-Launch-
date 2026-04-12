@@ -9,7 +9,7 @@ import { MotionDiv } from '../Motion';
 import { X, Compass, Trophy, LayoutGrid, Crown } from 'lucide-react';
 import { type PeerIsland } from '../../hooks/usePeerIslands';
 import { type IslandState } from '../../types';
-import { getAvatarUrl } from '../Auth';
+import { getAvatarUrl } from '../../utils/authUtils';
 
 function computeIslandScore(state: IslandState): number {
   const placementCount = state.placements.filter(p => !p.isStarter).length;

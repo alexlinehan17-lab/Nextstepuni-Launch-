@@ -12,7 +12,7 @@ import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { addNotification } from './gcNotifications';
 import { type CourseData } from '../Library';
 import { type CategoryType } from '../KnowledgeTree';
-import { getAvatarUrl } from '../Auth';
+import { getAvatarUrl } from '../../utils/authUtils';
 import { getSchoolName } from '../../schoolData';
 import { getPointsForGrade, LC_SUBJECTS } from '../subjectData';
 import { ARCHETYPES, STAT_LABELS, getStatGrade, type StatKey } from '../journeySimulatorData';
