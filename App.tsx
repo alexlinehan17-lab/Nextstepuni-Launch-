@@ -196,8 +196,8 @@ const App: React.FC = () => {
       }
       const newState: IslandState = { ...island, placements: newPlacements, lastPurchaseTimestamp: now };
       await setDoc(doc(db, 'progress', uid), { islandState: newState }, { merge: true });
-    } catch {
-      console.error('Failed to grant rank-up tiles:');
+    } catch (err) {
+      console.error('Failed to grant rank-up tiles:', err);
     }
   };
 
@@ -389,8 +389,8 @@ const App: React.FC = () => {
       if (essentialsMode !== undefined) {
         updateSetting('essentialsMode', essentialsMode);
       }
-    } catch {
-      console.error('Failed to save subject profile:');
+    } catch (err) {
+      console.error('Failed to save subject profile:', err);
       showToast('Couldn\'t save — check your connection', 'error');
     }
     setStudentProfile(profile);
@@ -404,8 +404,8 @@ const App: React.FC = () => {
     try {
       const progressDocRef = doc(db, 'progress', user.uid);
       await setDoc(progressDocRef, { northStar: ns }, { merge: true });
-    } catch {
-      console.error('Failed to save North Star:');
+    } catch (err) {
+      console.error('Failed to save North Star:', err);
       showToast('Couldn\'t save — check your connection', 'error');
     }
   };
@@ -422,8 +422,8 @@ const App: React.FC = () => {
     try {
       const progressDocRef = doc(db, 'progress', user.uid);
       await setDoc(progressDocRef, { subjectProfile: profile }, { merge: true });
-    } catch {
-      console.error('Failed to save updated subject profile:');
+    } catch (err) {
+      console.error('Failed to save updated subject profile:', err);
       showToast('Couldn\'t save — check your connection', 'error');
     }
   };
@@ -440,8 +440,8 @@ const App: React.FC = () => {
           { dismissedGuides: { [guideId]: new Date().toISOString() } },
           { merge: true }
         );
-      } catch {
-        console.error('Failed to persist guide dismissal:');
+      } catch (err) {
+        console.error('Failed to persist guide dismissal:', err);
         showToast('Couldn\'t save — check your connection', 'error');
       }
     }

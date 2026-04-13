@@ -107,8 +107,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     const yg = user.yearGroup || '6th';
                     setSchoolEvents(allEvents.filter(e => e.yearGroup === 'both' || e.yearGroup === yg));
                 }
-            } catch {
-                if (!cancelled) console.error('Failed to load school events:');
+            } catch (err) {
+                if (!cancelled) console.error('Failed to load school events:', err);
             }
         };
         loadEvents();
@@ -127,12 +127,12 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const [showRewardShop, setShowRewardShop] = useState(false);
     const [showJournal, setShowJournal] = useState(false);
     const [showPointsExplainer, setShowPointsExplainer] = useState(() => {
-        try { return !localStorage.getItem('nextstep-points-explainer-v2'); } catch { return true; }
+        try { return !localStorage.getItem('nextstep-points-explainer-v2'); } catch (err) { console.error('Failed to read points explainer state:', err); return true; }
     });
 
     const dismissPointsExplainer = useCallback(() => {
         setShowPointsExplainer(false);
-        try { localStorage.setItem('nextstep-points-explainer-v2', '1'); } catch {}
+        try { localStorage.setItem('nextstep-points-explainer-v2', '1'); } catch (err) { console.error('Failed to save points explainer state:', err); }
     }, []);
 
     // Load subject profile from Firebase
@@ -170,8 +170,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                         setEarnedRest(data.earnedRest as EarnedRest);
                     }
                 }
-            } catch {
-                if (!cancelled) console.error('Failed to load subject profile:');
+            } catch (err) {
+                if (!cancelled) console.error('Failed to load subject profile:', err);
             }
             if (!cancelled) setProfileLoaded(true);
         };
@@ -193,7 +193,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     }
                 }
                 if (!cancelled) setGcRecommendations(recMap);
-            } catch {}
+            } catch (err) { console.error('Failed to load GC recommendations:', err); }
         };
         loadRecommendations();
         return () => { cancelled = true; };
@@ -209,8 +209,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         if (user?.uid) {
             try {
                 await setDoc(doc(db, 'progress', user.uid), { subjectProfile: profile }, { merge: true });
-            } catch {
-                console.error('Failed to save subject profile:');
+            } catch (err) {
+                console.error('Failed to save subject profile:', err);
                 showToast('Couldn\'t save — check your connection', 'error');
             }
         }
@@ -250,7 +250,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     timetableCompletions: updated,
                     timetableStreak: newStreak,
                     ...extraFirestoreData,
-                }, { merge: true }).catch(_e => { console.error('Failed to save completions:'); showToast('Couldn\'t save — check your connection', 'error'); });
+                }, { merge: true }).catch(err => { console.error('Failed to save completions:', err); showToast('Couldn\'t save — check your connection', 'error'); });
             }
 
             return updated;
@@ -343,8 +343,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                 'pointsData.totalSpent': increment(cost),
                 earnedRest: updatedEarnedRest,
                 cosmeticUnlocks: updatedCosmeticUnlocks,
-            }, { merge: true }).catch(_e => {
-                console.error('Failed to save purchase:');
+            }, { merge: true }).catch(err => {
+                console.error('Failed to save purchase:', err);
                 showToast('Purchase couldn\'t be saved — check your connection', 'error');
                 // Roll back to latest ref values (may have changed since write started)
                 setPointsData(currentPoints);
@@ -417,7 +417,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
-            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={async (_s, _t, newDuration) => { const updated = { ...subjectProfile, defaultBlockDuration: newDuration }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch { console.error('Failed to save block duration:'); showToast('Couldn\'t save — check your connection', 'error'); } } }} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch { console.error('Failed to save rest days:'); showToast('Couldn\'t save — check your connection', 'error'); } } }} /> : null,
+            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={async (_s, _t, newDuration) => { const updated = { ...subjectProfile, defaultBlockDuration: newDuration }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (err) { console.error('Failed to save block duration:', err); showToast('Couldn\'t save — check your connection', 'error'); } } }} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (err) { console.error('Failed to save rest days:', err); showToast('Couldn\'t save — check your connection', 'error'); } } }} /> : null,
         },
         {
             id: 'war-room', title: 'War Room', description: 'Your strategic study command centre.', icon: Target, needsProfile: true,

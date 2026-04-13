@@ -371,8 +371,8 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
         if (data?.timetableCompletions) {
           setTimetableCompletions(data.timetableCompletions);
         }
-      } catch {
-        console.error('Failed to load Comeback Engine data:');
+      } catch (err) {
+        console.error('Failed to load Comeback Engine data:', err);
       }
       if (!cancelled) setIsLoading(false);
     };
@@ -383,7 +383,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
   const saveData = useCallback((data: ComebackData) => {
     setComebackData(data);
     setDoc(doc(db, 'progress', uid), { comebackEngine: data }, { merge: true })
-      .catch(_e => { console.error('Failed to save comeback data:'); showToast('Couldn\'t save — check your connection', 'error'); });
+      .catch(err => { console.error('Failed to save comeback data:', err); showToast('Couldn\'t save — check your connection', 'error'); });
   }, [uid]);
 
   // ── Anchor Setup ───────────────────────────────────────
@@ -463,7 +463,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
     setAnchorText('');
     setCustomPoints('');
     setDoc(doc(db, 'progress', uid), { comebackEngine: null }, { merge: true })
-      .catch(_e => { console.error('Failed to reset comeback data:'); showToast('Couldn\'t save — check your connection', 'error'); });
+      .catch(err => { console.error('Failed to reset comeback data:', err); showToast('Couldn\'t save — check your connection', 'error'); });
   };
 
   // ── Derived values ─────────────────────────────────────

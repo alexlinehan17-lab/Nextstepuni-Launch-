@@ -73,8 +73,8 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school }) => {
         if (snap.exists()) {
           setEvents(snap.data().events ?? []);
         }
-      } catch {
-        console.error('[GCKeyEvents] Failed to load:');
+      } catch (err) {
+        console.error('[GCKeyEvents] Failed to load:', err);
       }
       if (!cancelled) setIsLoading(false);
     };
@@ -87,8 +87,8 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school }) => {
     setEvents(updated);
     try {
       await setDoc(doc(db, 'gcEvents', school), { events: updated }, { merge: true });
-    } catch {
-      console.error('[GCKeyEvents] Failed to save:');
+    } catch (err) {
+      console.error('[GCKeyEvents] Failed to save:', err);
     }
   };
 

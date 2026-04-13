@@ -89,10 +89,10 @@ export function usePeerIslands(uid?: string, school?: string) {
           .filter((p): p is PeerIsland => p !== null);
 
         setPeers(validPeers);
-      } catch {
+      } catch (err) {
         if (!cancelled) {
           setError('Could not load peer islands');
-          console.error('[PeerIslands] Failed to load:');
+          console.error('[PeerIslands] Failed to load:', err);
         }
       } finally {
         if (!cancelled) setIsLoading(false);

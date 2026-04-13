@@ -291,11 +291,11 @@ export function useStudySession(
       if (totalPoints > 0) {
         updates['pointsData.totalEarned'] = increment(totalPoints);
       }
-      updateDoc(progressDocRef, updates).catch(_err => {
-        console.error('Failed to save study session:');
+      updateDoc(progressDocRef, updates).catch(err => {
+        console.error('Failed to save study session:', err);
       });
-    } catch {
-      console.error('Failed to save study session:');
+    } catch (err) {
+      console.error('Failed to save study session:', err);
     }
   }, [uid, subject, sessionType, plannedMinutes, elapsedSeconds, basePointsEarned]);
 

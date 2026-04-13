@@ -60,7 +60,8 @@ export const resetStudentPassword = onCall(
     try {
       await auth.updateUser(studentUid, { password: tempPassword });
       await db.collection("users").doc(studentUid).update({ needsPasswordChange: true });
-    } catch {
+    } catch (err) {
+      console.error('Failed to reset password:', err);
       throw new HttpsError("internal", "Failed to reset password.");
     }
 
@@ -99,7 +100,8 @@ export const changeOwnPassword = onCall(
     try {
       await auth.updateUser(uid, { password: newPassword });
       await db.collection("users").doc(uid).update({ needsPasswordChange: false });
-    } catch {
+    } catch (err) {
+      console.error('Failed to change password:', err);
       throw new HttpsError("internal", "Failed to change password.");
     }
 

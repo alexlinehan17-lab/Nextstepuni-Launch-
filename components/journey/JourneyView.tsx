@@ -115,8 +115,8 @@ const JourneyView: React.FC<JourneyViewProps> = ({
         }).length;
         setActiveFlareCount(count);
 
-      } catch {
-        console.error('Failed to fetch flare count:');
+      } catch (err) {
+        console.error('Failed to fetch flare count:', err);
       }
     };
     fetchFlareData();

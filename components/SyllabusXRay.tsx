@@ -131,7 +131,7 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
         if (data?.studyDebriefs) {
           setDebriefs(data.studyDebriefs as DebriefEntry[]);
         }
-      } catch { /* permission error */ }
+      } catch (err) { console.error('Failed to load debrief data:', err); }
     };
     load();
     return () => { cancelled = true; };

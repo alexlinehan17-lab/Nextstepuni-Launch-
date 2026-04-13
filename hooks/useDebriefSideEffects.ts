@@ -103,7 +103,7 @@ export async function processDebriefSideEffects(
     if (Object.keys(updates).length > 0) {
       await setDoc(progressRef, updates, { merge: true });
     }
-  } catch {
-    console.error('Failed to process debrief side effects:');
+  } catch (err) {
+    console.error('Failed to process debrief side effects:', err);
   }
 }

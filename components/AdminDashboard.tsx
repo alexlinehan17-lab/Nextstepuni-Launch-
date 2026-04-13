@@ -126,8 +126,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
         // Then delete the users doc last
         await deleteDoc(doc(db, 'users', user.uid));
         setStudentData(prev => prev.filter(s => s.user.uid !== user.uid));
-      } catch {
-        console.error('Error deleting student:');
+      } catch (err) {
+        console.error('Error deleting student:', err);
         alert('Failed to delete student. You may not have permission.');
       }
       setIsDeleting(false);
@@ -163,8 +163,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
                     }));
 
                 setStudentData(combinedData);
-            } catch {
-                console.error("Error fetching admin data:");
+            } catch (err) {
+                console.error("Error fetching admin data:", err);
             }
             if (!cancelled) setIsLoading(false);
         };

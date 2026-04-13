@@ -30,8 +30,8 @@ export function useModuleResponses(moduleId: string) {
             setResponses(data[moduleId]);
           }
         }
-      } catch {
-        console.error('Failed to load responses:');
+      } catch (err) {
+        console.error('Failed to load responses:', err);
       }
       if (!cancelled) setIsLoaded(true);
     };
@@ -46,8 +46,8 @@ export function useModuleResponses(moduleId: string) {
 
       const uid = auth.currentUser?.uid;
       if (uid) {
-        setDoc(doc(db, 'responses', uid), { [moduleId]: next }, { merge: true }).catch(_err =>
-          console.error('Failed to save response:')
+        setDoc(doc(db, 'responses', uid), { [moduleId]: next }, { merge: true }).catch(err =>
+          console.error('Failed to save response:', err)
         );
       }
 

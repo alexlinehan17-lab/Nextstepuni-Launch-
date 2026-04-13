@@ -25,7 +25,7 @@ function readLocalSettings(): Partial<UserSettings> {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (raw) return JSON.parse(raw);
-  } catch {}
+  } catch (err) { console.error('Failed to read local settings:', err); }
   return {};
 }
 
@@ -62,8 +62,8 @@ export function useSettings(uid?: string, userAvatar?: string) {
             return merged;
           });
         }
-      } catch {
-        console.error('Failed to load settings from Firestore:');
+      } catch (err) {
+        console.error('Failed to load settings from Firestore:', err);
       }
       if (!cancelled) setIsLoaded(true);
     };
@@ -128,14 +128,14 @@ export function useSettings(uid?: string, userAvatar?: string) {
 
       // Persist to Firestore
       if (uid) {
-        setDoc(doc(db, 'settings', uid), next, { merge: true }).catch(_err =>
-          console.error('Failed to save settings:')
+        setDoc(doc(db, 'settings', uid), next, { merge: true }).catch(err =>
+          console.error('Failed to save settings:', err)
         );
 
         // If avatar changed, also update users/{uid}.avatar
         if (key === 'avatar') {
-          setDoc(doc(db, 'users', uid), { avatar: value }, { merge: true }).catch(_err =>
-            console.error('Failed to update user avatar:')
+          setDoc(doc(db, 'users', uid), { avatar: value }, { merge: true }).catch(err =>
+            console.error('Failed to update user avatar:', err)
           );
         }
       }

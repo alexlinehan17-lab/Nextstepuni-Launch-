@@ -129,7 +129,8 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
       }
       // Save current status
       localStorage.setItem(key, JSON.stringify({ status, at: Date.now() }));
-    } catch {
+    } catch (err) {
+      console.error('Failed to read previous status:', err);
       setPreviousStatus(null);
     }
   }, [student.user.uid, status]);
@@ -171,7 +172,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
         if (!cancelled && noteDoc.exists()) {
           setSavedNotes(noteDoc.data().notes ?? '');
         }
-      } catch { /* permission error */ }
+      } catch (err) { console.error('Failed to load student notes:', err); }
       if (!cancelled) setNoteLoading(false);
     };
     loadNotes();
@@ -191,8 +192,8 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
       setSavedNotes(updated);
       setNoteText('');
       onNoteSaved?.(student.user.uid, updated, now);
-    } catch {
-      console.error('Failed to save note:');
+    } catch (err) {
+      console.error('Failed to save note:', err);
       setNoteError('Failed to save. Please try again.');
     }
     setNoteSaving(false);

@@ -219,7 +219,8 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
         dateKey: todayKey,
         blockId: getBlockId(block, bi),
       }));
-    } catch {
+    } catch (err) {
+      console.error('Failed to build timetable blocks:', err);
       return [];
     }
   }, [studentProfile, todayBlocks]);
@@ -343,11 +344,11 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       await updateDoc(doc(db, 'progress', user.uid), {
         studyDebriefs: arrayUnion(fullEntry),
       });
-    } catch {
-      console.error('Failed to save debrief:');
+    } catch (err) {
+      console.error('Failed to save debrief:', err);
     }
     // Process side effects: update topic mastery + SM-2 state
-    processDebriefSideEffects(user.uid, fullEntry).catch(_e => console.error('Debrief side effects error:'));
+    processDebriefSideEffects(user.uid, fullEntry).catch(err => console.error('Debrief side effects error:', err));
     completeTimetableBlock();
     pointsReload();
     onStrategyMasteryRecompute?.();

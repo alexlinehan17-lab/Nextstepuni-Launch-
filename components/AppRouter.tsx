@@ -279,8 +279,8 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
               await setDoc(progressRef, {
                 timetableCompletions: { [dateKey]: arrayUnion(blockId) },
               }, { merge: true });
-            } catch {
-              console.error('Failed to auto-complete timetable block:');
+            } catch (err) {
+              console.error('Failed to auto-complete timetable block:', err);
               showToast('Couldn\'t save — check your connection', 'error');
             }
             setTimetableBlockContext(null);
@@ -566,7 +566,8 @@ const ChangePasswordModal: React.FC<{ user: SessionUser }> = ({ user: _user }) =
       const changeFn = httpsCallable(functions, 'changeOwnPassword');
       await changeFn({ newPassword });
       window.location.reload();
-    } catch {
+    } catch (err) {
+      console.error('Failed to change password:', err);
       setError('Failed to change password. Try again.');
     }
     setIsLoading(false);

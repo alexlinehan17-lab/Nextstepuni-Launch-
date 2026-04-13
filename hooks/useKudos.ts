@@ -45,8 +45,8 @@ export function useKudos(uid?: string) {
             createdAt: (data.createdAt as Timestamp)?.toDate?.() ?? new Date(),
           };
         }));
-      } catch {
-        console.error('[useKudos] Failed to load kudos:');
+      } catch (err) {
+        console.error('[useKudos] Failed to load kudos:', err);
       } finally {
         if (!cancelled) setIsLoading(false);
       }
@@ -71,7 +71,8 @@ export function useKudos(uid?: string) {
       );
       const snap = await getDocs(q);
       return snap.empty;
-    } catch {
+    } catch (err) {
+      console.error('[useKudos] Failed to check kudos eligibility:', err);
       return true; // Allow on error
     }
   }, [uid]);
@@ -94,8 +95,8 @@ export function useKudos(uid?: string) {
         createdAt: serverTimestamp(),
       });
       return true;
-    } catch {
-      console.error('[useKudos] Failed to send kudos:');
+    } catch (err) {
+      console.error('[useKudos] Failed to send kudos:', err);
       return false;
     }
   }, [uid]);

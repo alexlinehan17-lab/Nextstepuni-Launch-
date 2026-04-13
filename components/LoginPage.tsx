@@ -105,8 +105,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         }
         success = true;
         break;
-      } catch {
-        // Try next format
+      } catch (err) {
+        console.error('Login attempt failed:', err);
       }
     }
     if (!success) setError('Invalid email or password.');
@@ -120,7 +120,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     try {
       await sendPasswordResetEmail(auth, email.trim().toLowerCase());
       setResetSent(true);
-    } catch {
+    } catch (err) {
+      console.error('Failed to send password reset email:', err);
       setError('Could not send reset email. Check your email address.');
     }
     setIsLoading(false);
@@ -132,7 +133,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     setIsLoading(true); setError('');
     try {
       await signInWithEmailAndPassword(auth, `gc-${gcSchool}@nextstep.app`, password);
-    } catch {
+    } catch (err) {
+      console.error('GC login failed:', err);
       setError('Invalid credentials.');
     }
     setIsLoading(false);
@@ -143,6 +145,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     if (registerStep === 1) {
       if (!email.trim()) { setError('Please enter your email.'); return false; }
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) { setError('Please enter a valid email address.'); return false; }
+      const normalised = email.trim().toLowerCase();
+      if (normalised === 'admin@nextstep.app' || /^gc-.*@nextstep\.app$/.test(normalised)) { setError('This email is reserved.'); return false; }
       if (!name.trim()) { setError('Please enter your name.'); return false; }
       if (!school) { setError('Please select your school.'); return false; }
       return true;
@@ -163,10 +167,16 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ── Register submit (step 3) ──
   const handleRegisterSubmit = async () => {
     setIsLoading(true); setError('');
+    const registrationEmail = email.trim().toLowerCase();
+    if (registrationEmail === 'admin@nextstep.app' || /^gc-.*@nextstep\.app$/.test(registrationEmail)) {
+      setError('This email is reserved.');
+      setIsLoading(false);
+      return;
+    }
     const selectedAvatar = avatar || defaultAvatar;
     let createdUser: any = null;
     try {
-      const cred = await createUserWithEmailAndPassword(auth, email.trim().toLowerCase(), password);
+      const cred = await createUserWithEmailAndPassword(auth, registrationEmail, password);
       createdUser = cred.user;
       await updateProfile(createdUser, { displayName: name.trim() });
       await setDoc(doc(db, 'users', createdUser.uid), {

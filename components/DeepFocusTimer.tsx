@@ -141,7 +141,7 @@ function createAmbientSound(ctx: AudioContext, type: AmbientSound): AmbientDispo
 
   // Collector for all nodes to disconnect on dispose
   const nodes: { stop?: () => void; disconnect: () => void }[] = [];
-  const dispose = () => { for (const n of nodes) { try { n.stop?.(); } catch {} try { n.disconnect(); } catch {} } };
+  const dispose = () => { for (const n of nodes) { try { n.stop?.(); } catch (err) { console.error('Failed to stop audio node:', err); } try { n.disconnect(); } catch (err) { console.error('Failed to disconnect audio node:', err); } } };
 
   // Helper: create a brown noise ScriptProcessor
   const makeBrownNoise = () => {
@@ -445,7 +445,8 @@ const DeepFocusTimer: React.FC<DeepFocusTimerProps> = ({ profile, completions = 
     if (!audioCtxRef.current) {
       try {
         audioCtxRef.current = new AudioContext();
-      } catch {
+      } catch (err) {
+        console.error('Failed to create AudioContext:', err);
         return null;
       }
     }

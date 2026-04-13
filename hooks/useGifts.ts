@@ -60,8 +60,8 @@ export function useGifts(uid?: string) {
             createdAt: (data.createdAt as Timestamp)?.toDate?.() ?? new Date(),
           };
         }));
-      } catch {
-        console.error('[useGifts] Failed to load gifts:');
+      } catch (err) {
+        console.error('[useGifts] Failed to load gifts:', err);
       } finally {
         if (!cancelled) setIsLoading(false);
       }
@@ -85,7 +85,8 @@ export function useGifts(uid?: string) {
       );
       const snap = await getDocs(q);
       return snap.empty;
-    } catch {
+    } catch (err) {
+      console.error('[useGifts] Failed to check gift eligibility:', err);
       return true;
     }
   }, [uid]);
@@ -120,8 +121,8 @@ export function useGifts(uid?: string) {
 
       await batch.commit();
       return true;
-    } catch {
-      console.error('[useGifts] Failed to send gift:');
+    } catch (err) {
+      console.error('[useGifts] Failed to send gift:', err);
       return false;
     }
   }, [uid]);

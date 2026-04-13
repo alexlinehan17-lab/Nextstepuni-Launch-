@@ -160,7 +160,8 @@ const FlareSystem: React.FC<FlareSystemProps> = ({
       } else {
         setSendError(result.error || 'Failed to send flare.');
       }
-    } catch {
+    } catch (err) {
+      console.error('Failed to send flare:', err);
       setSendError('Something went wrong. Try again.');
     } finally {
       setIsSending(false);
@@ -186,7 +187,8 @@ const FlareSystem: React.FC<FlareSystemProps> = ({
       } else {
         setRespondError(result.error || 'Failed to send response.');
       }
-    } catch {
+    } catch (err) {
+      console.error('Failed to respond to flare:', err);
       setRespondError('Something went wrong. Try again.');
     } finally {
       setIsResponding(false);

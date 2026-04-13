@@ -311,7 +311,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         const snap = await getDoc(doc(db, 'progress', uid));
         const data = snap.data()?.studyDebriefs as DebriefEntry[] | undefined;
         if (!cancelled && data) setStrategyHints(computeStrategyHints(data));
-      } catch { /* silent */ }
+      } catch (err) { console.error('Failed to load strategy hints:', err); }
     })();
     return () => { cancelled = true; };
   }, [uid]);

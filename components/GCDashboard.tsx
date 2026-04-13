@@ -114,8 +114,8 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       await deleteDoc(doc(db, 'users', user.uid));
       setStudentData(prev => prev.filter(s => s.user.uid !== user.uid));
       if (selectedStudentUid === user.uid) setSelectedStudentUid(null);
-    } catch {
-      console.error('Error deleting student:');
+    } catch (err) {
+      console.error('Error deleting student:', err);
       alert('Failed to delete student. You may not have permission.');
     }
     setIsDeleting(false);
@@ -143,8 +143,8 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
     setDismissedAlerts(updated);
     try {
       await setDoc(doc(db, 'gcSettings', school), { dismissedAlerts: updated }, { merge: true });
-    } catch {
-      console.error('[GCAlerts] Failed to save dismissal:');
+    } catch (err) {
+      console.error('[GCAlerts] Failed to save dismissal:', err);
     }
   };
 
@@ -197,7 +197,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             try {
               const progressSnap = await getDoc(doc(db, 'progress', user.uid));
               progressDoc = progressSnap.exists() ? progressSnap.data() : null;
-            } catch { /* Permission error */ }
+            } catch (err) { console.error('Failed to fetch student progress:', err); }
 
             const progress: UserProgress = {};
             if (progressDoc) {
@@ -259,7 +259,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             }
           });
           setStudentNotes(notes);
-        } catch { /* Permission error or no notes yet */ }
+        } catch (err) { console.error('Failed to load GC notes:', err); }
 
         // Load dismissed alerts
         try {
@@ -268,9 +268,9 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
           if (settingsSnap.exists()) {
             setDismissedAlerts(settingsSnap.data().dismissedAlerts ?? {});
           }
-        } catch { /* No settings yet */ }
-      } catch {
-        console.error('Error fetching GC data:');
+        } catch (err) { console.error('Failed to load GC settings:', err); }
+      } catch (err) {
+        console.error('Error fetching GC data:', err);
       }
       if (!cancelled) setIsLoading(false);
     };

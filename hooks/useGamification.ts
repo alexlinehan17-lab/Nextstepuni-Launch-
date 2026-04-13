@@ -223,8 +223,8 @@ export function useGamification({
     // Update local state immediately (optimistic)
     setGamificationData(merged);
     // Fire-and-forget Firestore write — queues offline via persistence
-    setDoc(doc(db, 'progress', uid), { gamification: merged }, { merge: true }).catch(_err => {
-      console.error('Failed to save gamification data:');
+    setDoc(doc(db, 'progress', uid), { gamification: merged }, { merge: true }).catch(err => {
+      console.error('Failed to save gamification data:', err);
     });
   }, [uid, gamificationData]);
 
@@ -249,8 +249,8 @@ export function useGamification({
               currentTimestamps = freshGd.achievementTimestamps ?? {};
             }
           }
-        } catch {
-          // Fall back to local state
+        } catch (err) {
+          console.error('Failed to read fresh gamification data:', err);
         }
       }
 
@@ -266,8 +266,8 @@ export function useGamification({
             currentUnlocked.add(achievement.id);
             sessionUnlockedRef.current.add(achievement.id);
           }
-        } catch {
-          // Skip achievements that fail to evaluate
+        } catch (err) {
+          console.error('Failed to evaluate achievement:', err);
         }
       }
 

@@ -325,7 +325,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
         const blockDuration = studentProfile.defaultBlockDuration ?? 45;
         const timetable = generateWeeklyTimetable(allocations, weeksUntilExam, 0, restDays, blockDuration);
         setTodayBlocks(timetable[todayDayIndex]?.blocks ?? []);
-      } catch {
+      } catch (err) {
+        console.error('Failed to generate timetable blocks:', err);
         setTodayBlocks([]);
       }
     });

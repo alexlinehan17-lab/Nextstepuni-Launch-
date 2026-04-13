@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import type * as THREE from 'three';
 import { useFrame } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
@@ -37,6 +37,22 @@ const HexTile: React.FC<HexTileProps> = ({
     });
     return clone;
   }, [scene]);
+
+  useEffect(() => {
+    return () => {
+      cloned.traverse((child) => {
+        if ((child as THREE.Mesh).isMesh) {
+          const mesh = child as THREE.Mesh;
+          mesh.geometry?.dispose();
+          if (Array.isArray(mesh.material)) {
+            mesh.material.forEach((m) => m.dispose());
+          } else if (mesh.material) {
+            (mesh.material as THREE.Material).dispose();
+          }
+        }
+      });
+    };
+  }, [cloned]);
 
   const [wx, wz] = useMemo(() => hexToWorld(q, r, radius), [q, r, radius]);
   const ref = useRef<THREE.Group>(null);

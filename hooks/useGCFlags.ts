@@ -44,8 +44,8 @@ export function useGCFlags(gcUid: string | undefined) {
           };
         });
         setFlags(loaded);
-      } catch {
-        // Permission error or collection doesn't exist yet
+      } catch (err) {
+        console.error('[useGCFlags] Failed to load flags:', err);
       }
       if (!cancelled) setIsLoaded(true);
     };
@@ -70,8 +70,8 @@ export function useGCFlags(gcUid: string | undefined) {
         note: data.note,
         priority: data.priority,
       });
-    } catch {
-      console.error('[useGCFlags] Failed to flag student:');
+    } catch (err) {
+      console.error('[useGCFlags] Failed to flag student:', err);
     }
   }, [gcUid]);
 
@@ -84,8 +84,8 @@ export function useGCFlags(gcUid: string | undefined) {
     });
     try {
       await deleteDoc(doc(db, 'gcFlags', gcUid, 'flaggedStudents', studentUid));
-    } catch {
-      console.error('[useGCFlags] Failed to unflag student:');
+    } catch (err) {
+      console.error('[useGCFlags] Failed to unflag student:', err);
     }
   }, [gcUid]);
 
@@ -98,8 +98,8 @@ export function useGCFlags(gcUid: string | undefined) {
     });
     try {
       await setDoc(doc(db, 'gcFlags', gcUid, 'flaggedStudents', studentUid), { note }, { merge: true });
-    } catch {
-      console.error('[useGCFlags] Failed to update flag note:');
+    } catch (err) {
+      console.error('[useGCFlags] Failed to update flag note:', err);
     }
   }, [gcUid]);
 
@@ -112,8 +112,8 @@ export function useGCFlags(gcUid: string | undefined) {
     });
     try {
       await setDoc(doc(db, 'gcFlags', gcUid, 'flaggedStudents', studentUid), { priority }, { merge: true });
-    } catch {
-      console.error('[useGCFlags] Failed to update flag priority:');
+    } catch (err) {
+      console.error('[useGCFlags] Failed to update flag priority:', err);
     }
   }, [gcUid]);
 
