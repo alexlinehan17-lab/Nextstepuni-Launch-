@@ -30,12 +30,12 @@ const GradientPanel = () => (
 
 // ── Card wrapper — split panel on desktop, full-width on mobile ──
 const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNode }> = ({ children, devButton }) => (
-  <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8" style={{ backgroundColor: '#FDF8F0' }}>
+  <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 light" data-theme="light" style={{ backgroundColor: '#FDF8F0', colorScheme: 'light' }}>
     <MotionDiv
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="w-full max-w-5xl bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden flex"
+      className="w-full max-w-5xl bg-white rounded-2xl overflow-hidden flex"
       style={{ minHeight: 540, boxShadow: '0 2px 8px rgba(0,0,0,0.06), 0 12px 40px rgba(0,0,0,0.04)', border: '1.5px solid rgba(0,0,0,0.25)' }}
     >
       <GradientPanel />
@@ -214,7 +214,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   };
 
   // ── Shared styles ──
-  const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500 outline-none transition-all bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-700 focus:border-[#2A7D6F]";
+  const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 placeholder-zinc-400 outline-none transition-all bg-white border-2 border-zinc-200 focus:border-[#2A7D6F]";
   const primaryBtn = "w-full py-3.5 rounded-full text-white text-[15px] font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed";
   const primaryBtnStyle = { backgroundColor: '#2A7D6F', borderBottom: '3px solid #1a5a4e', boxShadow: '0 4px 0 #1a5a4e' };
 
@@ -488,7 +488,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
             <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Pick one that feels like you. You can change it later.</p>
             <div className="grid grid-cols-4 gap-3 mb-6">
               {AVATAR_SEEDS.map(seed => (
-                <button key={seed} type="button" onClick={() => setAvatar(seed)} className={`rounded-xl aspect-square p-1 transition-all ${selectedAvatar === seed ? 'ring-2 ring-offset-2 bg-[#e8f5f2]' : 'hover:ring-1 hover:ring-zinc-300 bg-white dark:bg-zinc-800'}`} style={selectedAvatar === seed ? { ringColor: '#2A7D6F', borderColor: '#2A7D6F', border: '2px solid #2A7D6F' } : { border: '2px solid #d0cdc8' }}>
+                <button key={seed} type="button" onClick={() => setAvatar(seed)} className={`rounded-xl aspect-square p-1 transition-all ${selectedAvatar === seed ? 'ring-2 ring-offset-2 bg-[#e8f5f2]' : 'hover:ring-1 hover:ring-zinc-300 bg-white'}`} style={selectedAvatar === seed ? { ringColor: '#2A7D6F', borderColor: '#2A7D6F', border: '2px solid #2A7D6F' } : { border: '2px solid #d0cdc8' }}>
                   <img src={getAvatarUrl(seed)} alt={seed} className="w-full h-full rounded-lg" />
                 </button>
               ))}
