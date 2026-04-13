@@ -102,12 +102,6 @@ const DashboardView: React.FC<DashboardViewProps> = ({
           </MotionDiv>
         </div>
 
-        {/* SVG arc transition into cream */}
-        <div className="absolute bottom-0 left-0 right-0" style={{ transform: 'translateY(1px)' }}>
-          <svg viewBox="0 0 1440 60" preserveAspectRatio="none" className="w-full block" style={{ height: 60 }}>
-            <path d="M0,0 C480,60 960,60 1440,0 L1440,60 L0,60 Z" className="fill-[#FDF8F0] dark:fill-zinc-950" />
-          </svg>
-        </div>
       </div>
 
       {/* ── Cream section ── */}

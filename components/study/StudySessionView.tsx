@@ -386,7 +386,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           <div className="absolute pointer-events-none" style={{ top: 10, right: 20, width: 90, height: 90, borderRadius: '50%', background: 'rgba(255,255,255,0.05)' }} />
           <div className="absolute pointer-events-none" style={{ bottom: 30, left: -30, width: 120, height: 120, borderRadius: '50%', background: 'rgba(0,0,0,0.05)' }} />
 
-          <div className="relative z-10 px-6 pt-6 pb-14 max-w-md mx-auto">
+          <div className="relative z-10 px-6 pt-6 pb-8 max-w-md mx-auto">
             <button onClick={onBack} className="p-2 -ml-2 rounded-xl transition-colors mb-8" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
               <ArrowLeft size={20} style={{ color: '#fff' }} />
             </button>
@@ -403,12 +403,6 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
             )}
           </div>
 
-          {/* Wave transition into cream */}
-          <div className="absolute bottom-0 left-0 right-0" style={{ transform: 'translateY(1px)' }}>
-            <svg viewBox="0 0 1440 48" preserveAspectRatio="none" className="w-full block" style={{ height: 48 }}>
-              <path d="M0,0 C480,48 960,48 1440,0 L1440,48 L0,48 Z" className="fill-[#FDF8F0] dark:fill-zinc-950" />
-            </svg>
-          </div>
         </div>
 
         {/* Centered content */}

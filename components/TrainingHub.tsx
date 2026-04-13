@@ -87,10 +87,10 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
     <div className="min-h-screen bg-[#FDF8F0] dark:bg-zinc-950">
 
       {/* ── Hero: dark banner with rank + stats ── */}
-      <div className="relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2a 100%)' }}>
+      <div className="relative overflow-hidden" style={{ background: `linear-gradient(135deg, ${currentRank.colorHex} 0%, ${currentRank.colorHex}dd 100%)` }}>
         {/* Decorative circles */}
-        <div className="absolute pointer-events-none" style={{ top: -60, right: -40, width: 200, height: 200, borderRadius: '50%', background: `${currentRank.colorHex}20` }} />
-        <div className="absolute pointer-events-none" style={{ bottom: -30, left: -30, width: 120, height: 120, borderRadius: '50%', background: `${currentRank.colorHex}15` }} />
+        <div className="absolute pointer-events-none" style={{ top: -60, right: -40, width: 200, height: 200, borderRadius: '50%', background: 'rgba(255,255,255,0.1)' }} />
+        <div className="absolute pointer-events-none" style={{ bottom: -30, left: -30, width: 120, height: 120, borderRadius: '50%', background: 'rgba(255,255,255,0.07)' }} />
 
         {/* Header */}
         <div className="px-6 py-4 flex items-center gap-3">
@@ -106,7 +106,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
             {/* Rank badge */}
             <div
               className="w-16 h-16 rounded-2xl flex items-center justify-center shrink-0"
-              style={{ background: `linear-gradient(135deg, ${currentRank.colorHex}, ${currentRank.colorHex}cc)`, border: '2px solid rgba(255,255,255,0.15)' }}
+              style={{ backgroundColor: 'rgba(255,255,255,0.25)', border: '2px solid rgba(255,255,255,0.3)' }}
             >
               <RankIcon size={28} color="#fff" />
             </div>
@@ -122,10 +122,10 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                 </span>
               </div>
               {/* Progress bar */}
-              <div className="mt-2 h-2 rounded-full overflow-hidden" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}>
+              <div className="mt-2 h-2 rounded-full overflow-hidden" style={{ backgroundColor: 'rgba(255,255,255,0.2)' }}>
                 <motion.div
                   className="h-full rounded-full"
-                  style={{ backgroundColor: currentRank.colorHex }}
+                  style={{ backgroundColor: '#fff' }}
                   initial={{ width: 0 }}
                   animate={{ width: `${Math.min(100, rankProgress)}%` }}
                   transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
@@ -137,13 +137,13 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
           {/* Stats row */}
           <MotionDiv {...stagger(1)} className="grid grid-cols-3 gap-3 mt-6">
             {[
-              { value: streak.currentStreak, label: 'Day Streak', color: '#F59E0B' },
-              { value: totalPointsEarned, label: 'Total XP', color: currentRank.colorHex },
-              { value: `${modulesCompleted}/${allCourses.length}`, label: 'Modules', color: '#6366f1' },
+              { value: streak.currentStreak, label: 'Day Streak' },
+              { value: totalPointsEarned, label: 'Total XP' },
+              { value: `${modulesCompleted}/${allCourses.length}`, label: 'Modules' },
             ].map((stat) => (
-              <div key={stat.label} className="text-center py-3 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.06)' }}>
-                <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '20px', fontWeight: 700, color: stat.color }}>{stat.value}</p>
-                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 600, letterSpacing: '0.1em', color: 'rgba(255,255,255,0.35)', textTransform: 'uppercase', marginTop: '2px' }}>{stat.label}</p>
+              <div key={stat.label} className="text-center py-3 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.2)' }}>
+                <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '20px', fontWeight: 700, color: '#fff' }}>{stat.value}</p>
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 600, letterSpacing: '0.1em', color: 'rgba(255,255,255,0.6)', textTransform: 'uppercase', marginTop: '2px' }}>{stat.label}</p>
               </div>
             ))}
           </MotionDiv>
