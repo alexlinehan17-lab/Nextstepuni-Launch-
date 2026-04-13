@@ -163,16 +163,16 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
 
           {/* Three stat pills — translucent white on colour */}
           <MotionDiv {...stagger(1)} className="grid grid-cols-3 gap-3 mt-8">
-            <div className="rounded-2xl px-4 py-3 text-center" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
-              <p className="text-xl font-apercu font-bold text-white">{streak.currentStreak}</p>
+            <div className="rounded-2xl px-2 md:px-4 py-2 md:py-3 text-center" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
+              <p className="text-lg md:text-xl font-apercu font-bold text-white">{streak.currentStreak}</p>
               <p className="text-[10px] uppercase tracking-widest font-semibold mt-0.5" style={{ color: 'rgba(255,255,255,0.7)' }}>Day Streak</p>
             </div>
-            <div className="rounded-2xl px-4 py-3 text-center" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
-              <p className="text-xl font-apercu font-bold text-white">{totalPointsEarned}</p>
+            <div className="rounded-2xl px-2 md:px-4 py-2 md:py-3 text-center" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
+              <p className="text-lg md:text-xl font-apercu font-bold text-white">{totalPointsEarned}</p>
               <p className="text-[10px] uppercase tracking-widest font-semibold mt-0.5" style={{ color: 'rgba(255,255,255,0.7)' }}>Total XP</p>
             </div>
-            <div className="rounded-2xl px-4 py-3 text-center" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
-              <p className="text-xl font-apercu font-bold text-white">{modulesCompleted}/{allCourses.length}</p>
+            <div className="rounded-2xl px-2 md:px-4 py-2 md:py-3 text-center" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
+              <p className="text-lg md:text-xl font-apercu font-bold text-white">{modulesCompleted}/{allCourses.length}</p>
               <p className="text-[10px] uppercase tracking-widest font-semibold mt-0.5" style={{ color: 'rgba(255,255,255,0.7)' }}>Modules</p>
             </div>
           </MotionDiv>

@@ -172,7 +172,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
         className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
         style={{ background: `radial-gradient(ellipse at 50% 0%, ${accentHex}08 0%, transparent 70%)` }}
       />
-      <div className="relative p-8 h-full flex flex-col justify-between">
+      <div className="relative p-5 md:p-8 h-full flex flex-col justify-between">
         <div>
           <div className="flex items-center justify-between mb-8">
             <div
@@ -193,7 +193,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
             {title}
           </h3>
           {description && (
-            <p className="mt-3 text-[12px] leading-relaxed text-zinc-500 dark:text-zinc-400">{description}</p>
+            <p className="mt-3 text-[12px] leading-relaxed text-zinc-500 dark:text-zinc-400 line-clamp-2">{description}</p>
           )}
         </div>
 
@@ -731,7 +731,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                   style={{ borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}
                 >
                   <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#A8A29E] dark:text-zinc-500">Recommended</p>
-                  <p className="text-xs font-semibold text-[#1A1A1A] dark:text-white">{smartRecommendation.title}</p>
+                  <p className="text-xs font-semibold text-[#1A1A1A] dark:text-white truncate">{smartRecommendation.title}</p>
                   <p className="text-[11px] mt-0.5 text-[#A8A29E] dark:text-zinc-500">{smartRecommendation.description}</p>
                 </button>
               )}
@@ -865,7 +865,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.25 }}
           >
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-3 md:gap-6">
           {modules.map((mod, i) => (
             <BentoTile
               key={mod.id}

@@ -76,9 +76,9 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
             <button
               key={tab.id}
               onClick={tab.action}
-              className={`relative flex flex-col items-center justify-center gap-1 flex-1 h-full transition-colors focus-visible:outline-none focus-visible:bg-zinc-100 dark:focus-visible:bg-zinc-800 ${isActive ? 'text-[var(--accent-hex)]' : 'text-zinc-400 dark:text-zinc-500'}`}
+              className={`relative flex flex-col items-center justify-center gap-1 flex-1 h-full transition-colors focus-visible:outline-none focus-visible:bg-zinc-100 dark:focus-visible:bg-zinc-800 ${isActive ? 'text-[var(--accent-hex)]' : 'text-zinc-500 dark:text-zinc-500'}`}
             >
-              <tab.icon size={20} strokeWidth={isActive ? 2 : 1.5} />
+              <tab.icon size={22} strokeWidth={isActive ? 2 : 1.5} />
               <span className="text-[10px] font-medium">{tab.label}</span>
               {isActive && <div className="absolute bottom-1.5 w-1 h-1 rounded-full bg-[var(--accent-hex)]" />}
               {tab.id === 'profile' && unreadNotifications > 0 && (

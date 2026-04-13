@@ -201,8 +201,8 @@ export default function ModuleShowcase({
               className="absolute rounded-3xl pointer-events-none"
               style={{
                 top: 24,
-                left: 48,
-                right: 48,
+                left: 32,
+                right: 32,
                 height: '100%',
                 backgroundColor: '#E8E0D0',
                 border: '1px solid rgba(0,0,0,0.04)',
@@ -217,8 +217,8 @@ export default function ModuleShowcase({
               className="absolute rounded-3xl pointer-events-none"
               style={{
                 top: 12,
-                left: 24,
-                right: 24,
+                left: 16,
+                right: 16,
                 height: '100%',
                 backgroundColor: '#F0E8D8',
                 border: '1px solid rgba(0,0,0,0.05)',
@@ -249,7 +249,7 @@ export default function ModuleShowcase({
               style={{ backgroundColor: '#FAF7F2', border: '1px solid rgba(0,0,0,0.06)' }}
             >
               {/* The entire card — graphic + content — is ONE unit inside this motion.div */}
-              <div className="flex flex-col md:flex-row min-h-[480px]">
+              <div className="flex flex-col md:flex-row min-h-[320px] md:min-h-[480px]">
                 {/* Left — Aurora graphic */}
                 <div className="relative w-full md:w-[40%] min-h-[200px] md:min-h-0 overflow-hidden">
                   <div className="absolute inset-0" style={{ backgroundColor: aurora.base }} />
