@@ -15,7 +15,7 @@ import {
     Flame, Settings, CalendarDays, Calculator, GitBranch, Rocket,
     Map, ScanSearch
 } from 'lucide-react';
-import { doc, setDoc, getDoc } from 'firebase/firestore';
+import { doc, setDoc, getDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
 import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak, getBlockId, toDateKey } from './subjectData';
 import { type SchoolEvent } from './gc/GCKeyEvents';
@@ -261,13 +261,12 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         if (completed) {
             // "Already Studied" flow: 2 pts flat, no reflection
             const ALREADY_STUDIED_POINTS = 2;
-            const updatedPointsData: PointsData = {
-                totalEarned: pointsData.totalEarned + ALREADY_STUDIED_POINTS,
-                totalSpent: pointsData.totalSpent,
-            };
-            setPointsData(updatedPointsData);
+            setPointsData(prev => ({
+                ...prev,
+                totalEarned: prev.totalEarned + ALREADY_STUDIED_POINTS,
+            }));
             executeToggle(dateKey, blockId, true, {
-                pointsData: updatedPointsData,
+                'pointsData.totalEarned': increment(ALREADY_STUDIED_POINTS),
             });
         } else {
             executeToggle(dateKey, blockId, false);
@@ -341,7 +340,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
 
         if (user?.uid) {
             setDoc(doc(db, 'progress', user.uid), {
-                pointsData: updatedPointsData,
+                'pointsData.totalSpent': increment(cost),
                 earnedRest: updatedEarnedRest,
                 cosmeticUnlocks: updatedCosmeticUnlocks,
             }, { merge: true }).catch(_e => {

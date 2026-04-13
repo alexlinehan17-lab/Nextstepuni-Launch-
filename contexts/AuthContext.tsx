@@ -169,8 +169,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
               setLoadedData({ ...defaultLoadedData, needsOnboarding: true });
             }
           }
-        } catch {
-          console.error('Error fetching user data:');
+        } catch (err) {
+          console.error('Error fetching user data:', err);
           const fallbackName = firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Student';
           setUser({ uid: firebaseUser.uid, name: fallbackName, avatar: 'Charlie', isAdmin: false });
           setLoadedData({ ...defaultLoadedData, needsOnboarding: true });

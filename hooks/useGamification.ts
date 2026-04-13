@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
-import { doc, getDoc, setDoc, runTransaction } from 'firebase/firestore';
+import { doc, getDoc, setDoc, arrayUnion, increment } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
 import { type UserProgress, type NorthStar, type IslandState, type StudyReflection } from '../types';
@@ -278,45 +278,24 @@ export function useGamification({
         }
 
         const updatedList = Array.from(currentUnlocked);
-        const _totalBonus = newlyUnlocked.reduce((sum, a) => sum + a.bonusPoints, 0);
+        const totalBonus = newlyUnlocked.reduce((sum, a) => sum + a.bonusPoints, 0);
 
         if (uid) {
-          // Single transaction: save achievements + award bonus points atomically.
-          // Prevents two concurrent sessions from both detecting the same achievement
-          // and double-awarding bonus points.
+          // Save achievements + award bonus points via setDoc merge.
+          // arrayUnion handles deduplication server-side — no read needed.
+          // increment() handles points atomically — no cache staleness.
           const progressRef = doc(db, 'progress', uid);
           try {
-            await runTransaction(db, async (txn) => {
-              const snap = await txn.get(progressRef);
-              const data = snap.data() || {};
-
-              // Merge achievement list with what's already in Firestore
-              // (another session may have unlocked achievements since we last read)
-              const firestoreUnlocked = new Set<string>(data.gamification?.unlockedAchievements || []);
-              const genuinelyNew = updatedList.filter(id => !firestoreUnlocked.has(id));
-
-              const mergedList = Array.from(new Set([...Array.from(firestoreUnlocked), ...updatedList]));
-              const mergedTimestamps = { ...(data.gamification?.achievementTimestamps || {}), ...timestamps };
-
-              const updates: Record<string, any> = {
-                'gamification.unlockedAchievements': mergedList,
-                'gamification.achievementTimestamps': mergedTimestamps,
-              };
-
-              // Only award points for achievements genuinely new to Firestore,
-              // not ones another session already unlocked
-              const genuineBonus = genuinelyNew.reduce((sum, id) => {
-                const def = newlyUnlocked.find(a => a.id === id);
-                return sum + (def?.bonusPoints ?? 0);
-              }, 0);
-
-              if (genuineBonus > 0) {
-                const currentPoints = data.pointsData?.totalEarned ?? 0;
-                updates['pointsData.totalEarned'] = currentPoints + genuineBonus;
-              }
-
-              txn.set(progressRef, updates, { merge: true });
-            });
+            const updates: Record<string, any> = {
+              gamification: {
+                unlockedAchievements: arrayUnion(...updatedList),
+                achievementTimestamps: timestamps,
+              },
+            };
+            if (totalBonus > 0) {
+              updates.pointsData = { totalEarned: increment(totalBonus) };
+            }
+            await setDoc(progressRef, updates, { merge: true });
 
             // Update local state to match what was written
             setGamificationData(prev => ({
@@ -327,9 +306,6 @@ export function useGamification({
             pointsData.reload();
           } catch (err) {
             console.error('Failed to save achievements:', err);
-            // Transaction failed — don't update local state, it would be
-            // inconsistent with Firestore. The next checkAndUnlockAchievements
-            // call will re-read and retry.
             return [];
           }
         }

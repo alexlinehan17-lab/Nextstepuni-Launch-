@@ -13,7 +13,7 @@ import OfflineBanner from './components/OfflineBanner';
 import SettingsModal from './components/SettingsModal';
 import StudyPassportModal from './components/StudyPassportModal';
 import { db } from './firebase';
-import { doc, getDoc, setDoc, runTransaction } from 'firebase/firestore';
+import { doc, getDoc, setDoc, increment } from 'firebase/firestore';
 import { type ModuleProgress, type NorthStar } from './types';
 import { useToast } from './components/Toast';
 import { ALL_COURSES, categoryTitles, SUBJECT_TO_MODULE } from './courseData';
@@ -302,25 +302,14 @@ const App: React.FC = () => {
         }
       }
 
-      // Single transaction: save progress + award points atomically.
-      // Points are read INSIDE the transaction to avoid stale-closure clobber —
-      // two concurrent sections completing can't overwrite each other's points.
-      await runTransaction(db, async (txn) => {
-        const snap = await txn.get(progressDocRef);
-        const currentData = snap.data() || {};
-
-        // Merge progress update
-        const updates: Record<string, any> = { [moduleId]: newProgress };
-
-        // Award points inside the transaction — read current total from Firestore,
-        // never from a captured closure value
-        if (pointsToAward > 0) {
-          const currentPoints = currentData.pointsData?.totalEarned ?? 0;
-          updates['pointsData.totalEarned'] = currentPoints + pointsToAward;
-        }
-
-        txn.set(progressDocRef, updates, { merge: true });
-      });
+      // Save progress + award points atomically via setDoc merge.
+      // increment() is resolved server-side — no read needed, no cache staleness,
+      // concurrent section completions can't clobber each other's points.
+      const updates: Record<string, any> = { [moduleId]: newProgress };
+      if (pointsToAward > 0) {
+        updates.pointsData = { totalEarned: increment(pointsToAward) };
+      }
+      await setDoc(progressDocRef, updates, { merge: true });
 
       pointsData.reload();
 
