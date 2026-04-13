@@ -136,6 +136,8 @@ interface BentoTileProps {
   description?: string,
   onClick: () => void,
   accentHex: string,
+  gradientFrom?: string,
+  gradientTo?: string,
   progress?: number,
   hideProgress?: boolean,
   className?: string,
@@ -149,60 +151,75 @@ const BentoTile: React.FC<BentoTileProps> = ({
   description,
   onClick,
   accentHex,
+  gradientFrom,
+  gradientTo,
   progress = 0,
   hideProgress = false,
   className = "",
   delay = 0
 }) => {
+  const hasGradient = gradientFrom && gradientTo;
+
   return (
     <MotionDiv
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay, ease: [0.16, 1, 0.3, 1] }}
       onClick={onClick}
-      className={`card-styled group relative overflow-hidden rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 cursor-pointer transition-all duration-300 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-lg md:hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] focus-visible:ring-offset-2 ${className}`}
+      className={`card-styled group relative overflow-hidden rounded-2xl cursor-pointer transition-all duration-300 hover:shadow-xl md:hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 ${hasGradient ? '' : 'bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'} ${className}`}
+      style={hasGradient ? { background: `linear-gradient(135deg, ${gradientFrom} 0%, ${gradientTo} 100%)` } : undefined}
     >
-      {/* Accent top bar — always visible when started, reveals on hover otherwise */}
-      <div
-        className={`absolute top-0 left-0 right-0 h-[3px] transition-opacity duration-300 ${!hideProgress && progress > 0 ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}
-        style={{ backgroundColor: accentHex }}
-      />
-      {/* Hover glow */}
-      <div
-        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-        style={{ background: `radial-gradient(ellipse at 50% 0%, ${accentHex}08 0%, transparent 70%)` }}
-      />
+      {/* Decorative circles — peer-island style */}
+      {hasGradient && (
+        <>
+          <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full pointer-events-none" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }} />
+          <div className="absolute bottom-4 -left-6 w-20 h-20 rounded-full pointer-events-none" style={{ backgroundColor: 'rgba(255,255,255,0.07)' }} />
+          <div className="absolute top-1/2 right-1/4 w-10 h-10 rounded-full pointer-events-none" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }} />
+        </>
+      )}
+
+      {/* Non-gradient: accent top bar */}
+      {!hasGradient && (
+        <div
+          className={`absolute top-0 left-0 right-0 h-[3px] transition-opacity duration-300 ${!hideProgress && progress > 0 ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}
+          style={{ backgroundColor: accentHex }}
+        />
+      )}
+
       <div className="relative p-5 md:p-8 h-full flex flex-col justify-between">
         <div>
-          <div className="flex items-center justify-between mb-8">
+          <div className="flex items-center justify-between mb-6">
             <div
               className="w-12 h-12 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
-              style={{ color: accentHex, backgroundColor: accentHex + '12' }}
+              style={hasGradient
+                ? { color: '#fff', backgroundColor: 'rgba(255,255,255,0.2)', border: '1.5px solid rgba(255,255,255,0.3)' }
+                : { color: accentHex, backgroundColor: accentHex + '12' }
+              }
             >
               <Icon size={24} strokeWidth={1.5} />
             </div>
 
-            <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-0.5">
-               <ArrowRight size={18} className="text-zinc-400 dark:text-zinc-500" />
+            <div className={`opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-0.5 ${hasGradient ? 'text-white/60' : 'text-zinc-400 dark:text-zinc-500'}`}>
+               <ArrowRight size={18} />
             </div>
           </div>
 
-          <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-zinc-400 dark:text-zinc-500 mb-2">
+          <p className={`text-[11px] font-semibold uppercase tracking-[0.15em] mb-2 ${hasGradient ? 'text-white/50' : 'text-zinc-400 dark:text-zinc-500'}`}>
             {subtitle}</p>
-          <h3 className="font-serif text-2xl md:text-3xl text-zinc-900 dark:text-white leading-tight font-semibold tracking-tight">
+          <h3 className={`font-serif text-xl md:text-2xl leading-tight font-semibold tracking-tight ${hasGradient ? 'text-white' : 'text-zinc-900 dark:text-white'}`}>
             {title}
           </h3>
           {description && (
-            <p className="mt-3 text-[12px] leading-relaxed text-zinc-500 dark:text-zinc-400 line-clamp-2">{description}</p>
+            <p className={`mt-3 text-[12px] leading-relaxed line-clamp-2 ${hasGradient ? 'text-white/60' : 'text-zinc-500 dark:text-zinc-400'}`}>{description}</p>
           )}
         </div>
 
         {!hideProgress && (
-          <div className="mt-8 flex items-center justify-between gap-6 pt-6 border-t border-zinc-100 dark:border-zinc-800">
+          <div className={`mt-6 flex items-center justify-between gap-6 pt-5 ${hasGradient ? 'border-t border-white/15' : 'border-t border-zinc-100 dark:border-zinc-800'}`}>
               <div className="flex flex-col">
-                <span className="text-[10px] font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Progress</span>
+                <span className={`text-[10px] font-semibold uppercase tracking-widest ${hasGradient ? 'text-white/40' : 'text-zinc-400 dark:text-zinc-500'}`}>Progress</span>
               </div>
-              <ActivityRing progress={progress} color={accentHex} />
+              <ActivityRing progress={progress} color={hasGradient ? '#ffffff' : accentHex} />
           </div>
         )}
       </div>
@@ -247,6 +264,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
       description: "Build the psychological foundations for academic success. This module covers identity, beliefs, emotional regulation, and the resilience you need to thrive under pressure.",
       icon: Fingerprint,
       hex: "#3b82f6",
+      gradientFrom: "#4f8ef7",
+      gradientTo: "#2563eb",
       className: "md:col-span-4"
     },
     {
@@ -256,6 +275,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
       description: "Understand how your brain physically changes through effort. The neuroscience of learning, neuroplasticity, and why struggle is the engine of growth.",
       icon: Sprout,
       hex: "#f59e0b",
+      gradientFrom: "#f7b84e",
+      gradientTo: "#e8860c",
       className: "md:col-span-2"
     },
     {
@@ -265,6 +286,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
       description: "The practical techniques and study methods that separate high performers from everyone else. Active recall, spaced repetition, interleaving, and more.",
       icon: Lightbulb,
       hex: "#14b8a6",
+      gradientFrom: "#2dd4bf",
+      gradientTo: "#0d9488",
       className: "md:col-span-2"
     },
      {
@@ -273,7 +296,9 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
       subtitle: "Module 04",
       description: "Subject-by-subject deconstruction of the Leaving Cert exams. The marking schemes, the hidden curriculum, and the strategies that unlock top grades in each subject.",
       icon: KeyRound,
-      hex: "#6b7280",
+      hex: "#8b5cf6",
+      gradientFrom: "#a78bfa",
+      gradientTo: "#7c3aed",
       className: "md:col-span-2"
     },
     {
@@ -283,6 +308,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
       description: "Cross-subject exam tactics, scheduling, crisis management, and the performance psychology you need to execute on the day.",
       icon: Target,
       hex: "#ef4444",
+      gradientFrom: "#f87171",
+      gradientTo: "#dc2626",
       className: "md:col-span-2"
     },
   ];
@@ -874,6 +901,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
               description={mod.description}
               icon={mod.icon}
               accentHex={mod.hex}
+              gradientFrom={mod.gradientFrom}
+              gradientTo={mod.gradientTo}
               onClick={() => onSelectCategory(mod.id as CategoryType)}
               progress={getCategoryProgress(mod.id as CategoryType)}
               className={mod.className}
@@ -886,6 +915,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
               description="Your personal AI-powered study companion. Use the Journey Simulator to stress-test your study habits, get personalised feedback, and discover which units will have the biggest impact on your performance."
               icon={Rocket}
               accentHex="#8b5cf6"
+              gradientFrom="#a78bfa"
+              gradientTo="#6d28d9"
               onClick={onGoToInnovationZone}
               className="md:col-span-6"
               delay={modules.length * 0.1}
@@ -896,7 +927,9 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
               subtitle="Dashboard"
               description="Track your modules completed, study streak, and category progress all in one place."
               icon={BarChart3}
-              accentHex="var(--accent-hex)"
+              accentHex="#2A7D6F"
+              gradientFrom="#34a08f"
+              gradientTo="#1a5a4e"
               onClick={onGoToDashboard}
               className="md:col-span-3"
               delay={(modules.length + 1) * 0.1}
@@ -908,6 +941,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
               description="Follow curated sequences of modules designed to take you from foundation to mastery."
               icon={Compass}
               accentHex="#10b981"
+              gradientFrom="#34d399"
+              gradientTo="#059669"
               onClick={onGoToLearningPaths}
               className="md:col-span-3"
               delay={(modules.length + 2) * 0.1}
