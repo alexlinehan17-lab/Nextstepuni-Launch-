@@ -81,7 +81,9 @@ export function useQuests(
   const debriefs: DebriefEntry[] = rawProgressDoc.studyDebriefs ?? [];
   const topicMastery: TopicMasteryMap | undefined = rawProgressDoc.topicMastery ?? undefined;
   const mockResults: any[] = rawProgressDoc.unifiedMockResults ?? [];
-  const [questRewards, setQuestRewards] = useState<Record<string, string>>(rawProgressDoc.questRewards ?? {});
+  const firestoreRewards: Record<string, string> = rawProgressDoc.questRewards ?? {};
+  const [localClaimedIds, setLocalClaimedIds] = useState<Record<string, string>>({});
+  const questRewards = { ...firestoreRewards, ...localClaimedIds };
   const isLoaded = progressLoaded;
 
   const reload = useCallback(() => {
@@ -234,7 +236,7 @@ export function useQuests(
     // Optimistic: mark as claimed immediately so the UI hides the button
     const questId = questState.quest.id;
     const rewardPoints = questState.quest.rewardPoints;
-    setQuestRewards(prev => ({ ...prev, [questId]: new Date().toISOString() }));
+    setLocalClaimedIds(prev => ({ ...prev, [questId]: new Date().toISOString() }));
     try {
       await setDoc(doc(db, 'progress', uid), {
         pointsData: { totalEarned: increment(rewardPoints) },
@@ -243,7 +245,7 @@ export function useQuests(
     } catch (err) {
       console.error('Failed to claim quest reward:', err);
       // Roll back optimistic update
-      if (isMountedRef.current) setQuestRewards(prev => {
+      if (isMountedRef.current) setLocalClaimedIds(prev => {
         const next = { ...prev };
         delete next[questId];
         return next;
