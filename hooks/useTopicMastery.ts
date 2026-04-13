@@ -78,17 +78,17 @@ export function useTopicMastery(uid: string | undefined) {
     source: TopicMasteryEntry['source'] = 'manual'
   ) => {
     if (!uid) return;
+    let next: TopicMasteryMap;
     setMastery(prev => {
-      const next = { ...prev };
+      next = { ...prev };
       if (!next[subject]) next[subject] = {};
       next[subject] = {
         ...next[subject],
         [topic]: { confidence, updatedAt: Date.now(), source },
       };
-      // Persist
-      setDoc(doc(db, 'progress', uid), { topicMastery: next }, { merge: true }).catch(() => {});
       return next;
     });
+    setDoc(doc(db, 'progress', uid), { topicMastery: next! }, { merge: true }).catch(() => {});
   }, [uid]);
 
   const importSyllabusTopics = useCallback((subject: string) => {
@@ -96,8 +96,9 @@ export function useTopicMastery(uid: string | undefined) {
     const topics = getSyllabusTopics(subject);
     if (!topics || topics.length === 0) return;
 
+    let next: TopicMasteryMap;
     setMastery(prev => {
-      const next = { ...prev };
+      next = { ...prev };
       if (!next[subject]) next[subject] = {};
       const now = Date.now();
       for (const topicName of topics) {
@@ -106,15 +107,16 @@ export function useTopicMastery(uid: string | undefined) {
           next[subject][topicName] = { confidence: 'not-started', updatedAt: now, source: 'import' };
         }
       }
-      setDoc(doc(db, 'progress', uid), { topicMastery: next }, { merge: true }).catch(() => {});
       return next;
     });
+    setDoc(doc(db, 'progress', uid), { topicMastery: next! }, { merge: true }).catch(() => {});
   }, [uid]);
 
   const bulkUpdate = useCallback((subject: string, updates: Record<string, UnifiedConfidence>) => {
     if (!uid) return;
+    let next: TopicMasteryMap;
     setMastery(prev => {
-      const next = { ...prev };
+      next = { ...prev };
       if (!next[subject]) next[subject] = {};
       const now = Date.now();
       for (const [topic, confidence] of Object.entries(updates)) {
@@ -125,9 +127,9 @@ export function useTopicMastery(uid: string | undefined) {
           source: 'manual',
         };
       }
-      setDoc(doc(db, 'progress', uid), { topicMastery: next }, { merge: true }).catch(() => {});
       return next;
     });
+    setDoc(doc(db, 'progress', uid), { topicMastery: next! }, { merge: true }).catch(() => {});
   }, [uid]);
 
   const getTopicConfidence = useCallback((subject: string, topic: string): UnifiedConfidence => {

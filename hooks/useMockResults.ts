@@ -73,20 +73,16 @@ export function useMockResults(uid: string | undefined) {
       id: Date.now().toString(36) + Math.random().toString(36).slice(2, 8),
       timestamp: Date.now(),
     };
-    setMocks(prev => {
-      const next = [newMock, ...prev];
-      setDoc(doc(db, 'progress', uid), { mockResults: next }, { merge: true }).catch(() => {});
-      return next;
-    });
+    let next: UnifiedMockResult[];
+    setMocks(prev => { next = [newMock, ...prev]; return next; });
+    setDoc(doc(db, 'progress', uid), { mockResults: next! }, { merge: true }).catch(() => {});
   }, [uid]);
 
   const removeMockResult = useCallback((id: string) => {
     if (!uid) return;
-    setMocks(prev => {
-      const next = prev.filter(m => m.id !== id);
-      setDoc(doc(db, 'progress', uid), { mockResults: next }, { merge: true }).catch(() => {});
-      return next;
-    });
+    let next: UnifiedMockResult[];
+    setMocks(prev => { next = prev.filter(m => m.id !== id); return next; });
+    setDoc(doc(db, 'progress', uid), { mockResults: next! }, { merge: true }).catch(() => {});
   }, [uid]);
 
   const getLatestBySubject = useCallback((subjectName: string) => {

@@ -7,7 +7,7 @@ import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { doc, getDoc, setDoc, arrayUnion, increment } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
-import { type UserProgress, type NorthStar, type IslandState, type StudyReflection } from '../types';
+import { type UserProgress, type NorthStar, type IslandState } from '../types';
 import { type StreakData } from './useStreak';
 import { type PointsData } from './usePoints';
 import {
@@ -103,9 +103,8 @@ export function useGamification({
       setGamificationData({ ...DEFAULT_GAMIFICATION_DATA });
     }
 
-    // Load timetable sessions, reflections, journey milestones
+    // Load timetable sessions and journey milestones
     const completions: TimetableCompletions = data.timetableCompletions ?? {};
-    const reflections: StudyReflection[] = data.timetableReflections ?? [];
     const island: IslandState | undefined = data.islandState;
 
     let totalSessions = 0;
@@ -117,7 +116,7 @@ export function useGamification({
 
     setAsyncCounts({
       totalTimetableSessions: totalSessions,
-      totalReflections: reflections.length,
+      totalReflections: 0,
       journeyMilestones: island?.placements?.length ?? 0,
     });
 

@@ -12,9 +12,11 @@ export function useNorthStar() {
   const [northStar, setNorthStar] = useState<NorthStar | null>(null);
   const [isLoaded, setIsLoaded] = useState(false);
 
+  const uid = auth.currentUser?.uid;
+
   useEffect(() => {
-    const uid = auth.currentUser?.uid;
     if (!uid) {
+      setNorthStar(null);
       setIsLoaded(true);
       return;
     }
@@ -39,7 +41,7 @@ export function useNorthStar() {
 
     load();
     return () => { cancelled = true; };
-  }, []);
+  }, [uid]);
 
   const saveNorthStar = useCallback(async (ns: NorthStar) => {
     setNorthStar(ns);

@@ -649,7 +649,7 @@ export function computeStreak(
   restDays: string[],
   today: Date = new Date(),
   restDayPasses: string[] = []
-): { currentStreak: number; lastActiveDate: string } {
+): { currentStreak: number; longestStreak: number; lastActiveDate: string } {
   const restSet = new Set(restDays);
   const restPassSet = new Set(restDayPasses);
   // Day names matching DAYS_OF_WEEK indexing (0=Mon..6=Sun)
@@ -701,7 +701,7 @@ export function computeStreak(
     // lastActiveDate would have been set in the loop
   }
 
-  return { currentStreak: streak, lastActiveDate: lastActiveDate || todayKey };
+  return { currentStreak: streak, longestStreak: streak, lastActiveDate: lastActiveDate || todayKey };
 }
 
 function interleaveBlocks(blocks: StudyBlock[]): StudyBlock[] {

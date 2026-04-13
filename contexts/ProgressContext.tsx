@@ -119,7 +119,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     const computed = computeStreak(completions, restDays);
     return {
       currentStreak: computed.currentStreak,
-      longestStreak: Math.max(computed.longestStreak ?? 0, saved?.longestStreak ?? 0),
+      longestStreak: Math.max(computed.currentStreak, saved?.longestStreak ?? 0),
       lastActiveDate: computed.lastActiveDate || saved?.lastActiveDate || '',
     };
   }, [rawProgressDoc, timetableCompletions, studentProfile?.restDays]);

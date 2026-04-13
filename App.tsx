@@ -494,8 +494,8 @@ const App: React.FC = () => {
         </div>
       )}
 
-      {/* Mobile: TrainingPulse in top-left when not on tree/category/onboarding */}
-      {user && viewState !== 'onboarding' && viewState !== 'tree' && viewState !== 'category' && viewState !== 'module' && viewState !== 'study-session' && viewState !== 'my-journey' && user.role !== 'gc' && !user.isAdmin && gamification.isLoaded && (
+      {/* Mobile: TrainingPulse in top-left when not on tree/category/onboarding/innovation-zone */}
+      {user && viewState !== 'onboarding' && viewState !== 'tree' && viewState !== 'category' && viewState !== 'module' && viewState !== 'study-session' && viewState !== 'my-journey' && viewState !== 'innovation-zone' && user.role !== 'gc' && !user.isAdmin && gamification.isLoaded && (
         <div className="fixed top-4 left-4 z-[100] md:hidden">
           <TrainingPulse
             gamificationState={gamification.state}
