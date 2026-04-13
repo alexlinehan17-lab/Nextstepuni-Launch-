@@ -227,15 +227,15 @@ export default function ModuleShowcase({
                     </p>
 
                     {/* Actions */}
-                    <div className="flex items-center gap-4 mb-6">
+                    <div className="flex flex-col gap-3 mb-6">
                       <button
                         onClick={() => onSelectCourse(course.id)}
-                        className="text-white font-semibold transition-all active:translate-y-[2px]"
+                        className="w-full text-white font-semibold transition-all active:translate-y-[2px]"
                         style={{
                           background: `linear-gradient(135deg, ${gradient.from}, ${gradient.to})`,
                           borderRadius: 100,
-                          padding: '13px 28px',
-                          fontSize: 15,
+                          padding: '15px 32px',
+                          fontSize: 16,
                           boxShadow: `0 4px 0 ${gradient.to}`,
                           borderBottom: `3px solid ${gradient.to}`,
                         }}
@@ -245,8 +245,8 @@ export default function ModuleShowcase({
 
                       <button
                         onClick={() => setSectionsExpanded(!sectionsExpanded)}
-                        className="flex items-center gap-1.5 transition-colors"
-                        style={{ fontSize: 14, fontWeight: 500, color: gradient.from }}
+                        className="w-full flex items-center justify-center gap-1.5 py-3 rounded-full transition-colors"
+                        style={{ fontSize: 14, fontWeight: 500, color: gradient.from, backgroundColor: `${gradient.from}10`, border: `1.5px solid ${gradient.from}25` }}
                       >
                         What&rsquo;s in this module
                         <motion.span animate={{ rotate: sectionsExpanded ? 180 : 0 }} transition={{ duration: 0.2 }}>
