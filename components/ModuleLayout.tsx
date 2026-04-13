@@ -361,7 +361,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
       </AnimatePresence>
 
       {/* ── Main Content ── */}
-      <main ref={mainRef} className="flex-grow flex flex-col items-center pt-20 md:pt-24 px-6 md:px-16 pb-10 md:pb-0 md:overflow-y-auto md:h-screen bg-[#F8F8F8] dark:bg-zinc-950">
+      <main ref={mainRef} className="flex-grow flex flex-col items-center pt-20 md:pt-24 px-6 md:px-16 pb-24 md:pb-0 md:overflow-y-auto md:h-screen bg-[#F8F8F8] dark:bg-zinc-950">
         <div className="w-full max-w-3xl">
           <AnimatePresence mode="wait">
             <motion.div
