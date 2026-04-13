@@ -140,6 +140,16 @@ export default function ModuleShowcase({
   const goNext = useCallback(() => goTo(currentIndex + 1), [goTo, currentIndex]);
   const goPrev = useCallback(() => goTo(currentIndex - 1), [goTo, currentIndex]);
 
+  // Swipe / drag navigation
+  const handleDragEnd = useCallback((_: any, info: { offset: { x: number } }) => {
+    const swipeThreshold = 50;
+    if (info.offset.x < -swipeThreshold) {
+      goNext();
+    } else if (info.offset.x > swipeThreshold) {
+      goPrev();
+    }
+  }, [goNext, goPrev]);
+
   // Keyboard navigation
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
@@ -218,7 +228,14 @@ export default function ModuleShowcase({
           )}
 
           {/* Primary card area — frontmost, natural flow gives container its height */}
-          <div className="relative" style={{ zIndex: 3, overflow: 'hidden' }}>
+          <motion.div
+            className="relative"
+            style={{ zIndex: 3, overflow: 'hidden', touchAction: 'pan-y' }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.2}
+            onDragEnd={handleDragEnd}
+          >
           <AnimatePresence mode="popLayout" custom={direction} initial={false}>
             <motion.div
               key={course.id}
@@ -379,7 +396,7 @@ export default function ModuleShowcase({
               </div>{/* end flex row */}
             </motion.div>{/* end animated card */}
           </AnimatePresence>
-        </div>{/* end overflow container (primary card) */}
+        </motion.div>{/* end overflow container (primary card) */}
 
         </div>{/* end card stack container */}
 
@@ -387,7 +404,7 @@ export default function ModuleShowcase({
         {currentIndex > 0 && (
           <button
             onClick={goPrev}
-            className="absolute left-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-105 hidden md:flex"
+            className="absolute left-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-105"
             style={{ backgroundColor: 'rgba(255,255,255,0.9)', border: '1px solid rgba(0,0,0,0.08)', zIndex: 10 }}
           >
             <ChevronLeft size={20} style={{ color: '#2A7D6F' }} />
@@ -396,7 +413,7 @@ export default function ModuleShowcase({
         {currentIndex < courses.length - 1 && (
           <button
             onClick={goNext}
-            className="absolute right-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-105 hidden md:flex"
+            className="absolute right-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-105"
             style={{ backgroundColor: 'rgba(255,255,255,0.9)', border: '1px solid rgba(0,0,0,0.08)', zIndex: 10 }}
           >
             <ChevronRight size={20} style={{ color: '#2A7D6F' }} />

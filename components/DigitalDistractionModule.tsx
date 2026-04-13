@@ -145,9 +145,9 @@ const PHASES = [
   },
 ] as const;
 
-const phaseStyles: Record<string, { accent: string; accentBg: string; checkBg: string; checkBorder: string; completedBorder: string; completedGlow: string; badge: string; text: string }> = {
+const phaseStyles: Record<string, { accentDot: string; accentBg: string; checkBg: string; checkBorder: string; completedBorder: string; completedGlow: string; badge: string; text: string }> = {
   blue: {
-    accent: 'border-l-blue-500',
+    accentDot: 'bg-blue-500',
     accentBg: 'bg-blue-500',
     checkBg: 'bg-blue-500',
     checkBorder: 'border-blue-300 dark:border-blue-600',
@@ -157,7 +157,7 @@ const phaseStyles: Record<string, { accent: string; accentBg: string; checkBg: s
     text: 'text-blue-600 dark:text-blue-400',
   },
   amber: {
-    accent: 'border-l-amber-500',
+    accentDot: 'bg-amber-500',
     accentBg: 'bg-amber-500',
     checkBg: 'bg-amber-500',
     checkBorder: 'border-amber-300 dark:border-amber-600',
@@ -167,7 +167,7 @@ const phaseStyles: Record<string, { accent: string; accentBg: string; checkBg: s
     text: 'text-amber-600 dark:text-amber-400',
   },
   rose: {
-    accent: 'border-l-rose-500',
+    accentDot: 'bg-rose-500',
     accentBg: 'bg-rose-500',
     checkBg: 'bg-rose-500',
     checkBorder: 'border-rose-300 dark:border-rose-600',

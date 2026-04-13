@@ -5,6 +5,7 @@
 
 import React, { createContext, useContext, useReducer, useCallback, useEffect, useRef } from 'react';
 import { type CategoryType } from '../components/KnowledgeTree';
+import { useAuth } from './AuthContext';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -161,6 +162,8 @@ export const useNavigation = (): NavigationContextValue => {
 export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [state, dispatch] = useReducer(navigationReducer, undefined, getInitialState);
   const isPopstateRef = useRef(false);
+  const { user } = useAuth();
+  const prevUserUidRef = useRef<string | null | undefined>(undefined);
 
   // Single atomic helper: dispatch + pushState + URL update
   const navigate = useCallback((action: NavigationAction) => {
@@ -225,6 +228,17 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
+
+  // Reset navigation state on logout or user change to prevent stale state leaking
+  // between sessions.
+  useEffect(() => {
+    const currentUid = user?.uid ?? null;
+    // Skip the initial mount (prevUserUidRef starts as undefined)
+    if (prevUserUidRef.current !== undefined && prevUserUidRef.current !== currentUid) {
+      dispatch({ type: 'NAVIGATE_TO_TREE' });
+    }
+    prevUserUidRef.current = currentUid;
+  }, [user]);
 
   // ─── Convenience navigation functions ───────────────────
 

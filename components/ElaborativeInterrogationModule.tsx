@@ -95,10 +95,10 @@ const WHY_CHAIN_FACTS = [
 ];
 
 const CHAIN_COLORS = [
-  { border: 'border-l-zinc-400', bg: 'bg-zinc-50 dark:bg-zinc-700', label: 'text-zinc-500 dark:text-zinc-400' },
-  { border: 'border-l-blue-500', bg: 'bg-blue-50 dark:bg-blue-900/30', label: 'text-blue-600 dark:text-blue-400' },
-  { border: 'border-l-violet-500', bg: 'bg-violet-50 dark:bg-violet-900/30', label: 'text-violet-600 dark:text-violet-400' },
-  { border: 'border-l-emerald-500', bg: 'bg-emerald-50 dark:bg-emerald-900/30', label: 'text-emerald-600 dark:text-emerald-400' },
+  { dot: 'bg-zinc-400', bg: 'bg-zinc-50 dark:bg-zinc-700', label: 'text-zinc-500 dark:text-zinc-400' },
+  { dot: 'bg-blue-500', bg: 'bg-blue-50 dark:bg-blue-900/30', label: 'text-blue-600 dark:text-blue-400' },
+  { dot: 'bg-violet-500', bg: 'bg-violet-50 dark:bg-violet-900/30', label: 'text-violet-600 dark:text-violet-400' },
+  { dot: 'bg-emerald-500', bg: 'bg-emerald-50 dark:bg-emerald-900/30', label: 'text-emerald-600 dark:text-emerald-400' },
 ];
 
 const DEPTH_LABELS = ['Starting Fact', 'Level 1', 'Level 2', 'Level 3'];
@@ -167,9 +167,12 @@ const WhyChainBuilder = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className={`p-4 rounded-lg border-l-4 ${CHAIN_COLORS[i].border} ${CHAIN_COLORS[i].bg}`}
+                  className={`p-4 rounded-lg ${CHAIN_COLORS[i].bg}`}
                 >
-                  <span className={`text-xs font-semibold uppercase tracking-wide ${CHAIN_COLORS[i].label}`}>{DEPTH_LABELS[i]}</span>
+                  <div className="flex items-center gap-2">
+                    <span className={`w-2 h-2 rounded-full flex-shrink-0 ${CHAIN_COLORS[i].dot}`} />
+                    <span className={`text-xs font-semibold uppercase tracking-wide ${CHAIN_COLORS[i].label}`}>{DEPTH_LABELS[i]}</span>
+                  </div>
                   <p className="text-sm text-zinc-800 dark:text-zinc-100 mt-1">{text}</p>
                 </motion.div>
               </React.Fragment>

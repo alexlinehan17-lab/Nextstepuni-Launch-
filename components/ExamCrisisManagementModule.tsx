@@ -606,7 +606,7 @@ type WRAPSection = {
     accentPillText: string;
     accentPillSelectedBg: string;
     accentPillSelectedText: string;
-    accentCardBorder: string;
+    accentCardDot: string;
 };
 
 const wrapSections: WRAPSection[] = [
@@ -624,7 +624,7 @@ const wrapSections: WRAPSection[] = [
         accentPillText: 'text-emerald-700 dark:text-emerald-300',
         accentPillSelectedBg: 'bg-emerald-500 dark:bg-emerald-600',
         accentPillSelectedText: 'text-white',
-        accentCardBorder: 'border-l-emerald-500',
+        accentCardDot: 'bg-emerald-500',
     },
     {
         title: 'Triggers',
@@ -640,7 +640,7 @@ const wrapSections: WRAPSection[] = [
         accentPillText: 'text-amber-700 dark:text-amber-300',
         accentPillSelectedBg: 'bg-amber-500 dark:bg-amber-600',
         accentPillSelectedText: 'text-white',
-        accentCardBorder: 'border-l-amber-500',
+        accentCardDot: 'bg-amber-500',
     },
     {
         title: 'Warning Signs',
@@ -656,7 +656,7 @@ const wrapSections: WRAPSection[] = [
         accentPillText: 'text-rose-700 dark:text-rose-300',
         accentPillSelectedBg: 'bg-rose-500 dark:bg-rose-600',
         accentPillSelectedText: 'text-white',
-        accentCardBorder: 'border-l-rose-500',
+        accentCardDot: 'bg-rose-500',
     },
     {
         title: 'Crisis Plan',
@@ -672,7 +672,7 @@ const wrapSections: WRAPSection[] = [
         accentPillText: 'text-blue-700 dark:text-blue-300',
         accentPillSelectedBg: 'bg-blue-500 dark:bg-blue-600',
         accentPillSelectedText: 'text-white',
-        accentCardBorder: 'border-l-blue-500',
+        accentCardDot: 'bg-blue-500',
     },
 ];
 
@@ -858,8 +858,11 @@ const WRAPBuilder = () => {
                             {/* Card sections */}
                             <div className="p-6 space-y-6">
                                 {wrapSections.map((ws, i) => (
-                                    <div key={i} className={`pl-4 border-l-4 ${ws.accentCardBorder}`}>
-                                        <h6 className={`text-sm font-bold uppercase tracking-wider mb-2 ${ws.accentText}`}>{ws.title}</h6>
+                                    <div key={i} className="pl-4">
+                                        <div className="flex items-center gap-2 mb-2">
+                                            <span className={`w-2 h-2 rounded-full flex-shrink-0 ${ws.accentCardDot}`} />
+                                            <h6 className={`text-sm font-bold uppercase tracking-wider ${ws.accentText}`}>{ws.title}</h6>
+                                        </div>
                                         {selections[i].length > 0 ? (
                                             <ul className="space-y-1">
                                                 {selections[i].map((item, j) => (
