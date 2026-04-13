@@ -166,7 +166,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay, ease: [0.16, 1, 0.3, 1] }}
       onClick={onClick}
-      className={`card-styled group relative overflow-hidden rounded-2xl cursor-pointer transition-all duration-300 hover:shadow-xl md:hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 ${hasGradient ? '' : 'bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'} ${className}`}
+      className={`${hasGradient ? '' : 'card-styled bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'} group relative overflow-hidden rounded-2xl cursor-pointer transition-all duration-300 hover:shadow-xl md:hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 ${className}`}
       style={hasGradient ? { background: `linear-gradient(135deg, ${gradientFrom} 0%, ${gradientTo} 100%)` } : undefined}
     >
       {/* Decorative circles — peer-island style */}
