@@ -340,7 +340,7 @@ export function useGamification({
     }
   }, [gamificationData, saveGamificationData]);
 
-  // Roll for bonus flash (15% chance)
+  // Roll for bonus flash (8% chance)
   const rollBonusFlash = useCallback((): boolean => {
     return Math.random() < BONUS_FLASH_CHANCE;
   }, []);

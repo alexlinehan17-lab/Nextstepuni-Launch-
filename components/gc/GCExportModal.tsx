@@ -8,6 +8,7 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { X, FileDown, FileText, ChevronDown } from 'lucide-react';
+import { useModal } from '../../hooks/useModal';
 import { type GCStudentFullData } from './gcTypes';
 import { type CourseData } from '../Library';
 import {
@@ -30,6 +31,7 @@ interface GCExportModalProps {
 const ACCENT = '#2A7D6F';
 
 const GCExportModal: React.FC<GCExportModalProps> = ({ isOpen, onClose, studentData, allCourses, school }) => {
+  useModal(isOpen, onClose);
   const [includeProgress, setIncludeProgress] = useState(true);
   const [includeAttendance, setIncludeAttendance] = useState(true);
   const [includeSubjectHealth, setIncludeSubjectHealth] = useState(true);
@@ -107,6 +109,7 @@ const GCExportModal: React.FC<GCExportModalProps> = ({ isOpen, onClose, studentD
               </div>
               <button
                 onClick={onClose}
+                aria-label="Close"
                 className="w-8 h-8 flex items-center justify-center rounded-lg text-zinc-400 hover:text-zinc-600 hover:bg-zinc-100 dark:hover:text-zinc-300 dark:hover:bg-zinc-800 transition-colors"
               >
                 <X size={16} />

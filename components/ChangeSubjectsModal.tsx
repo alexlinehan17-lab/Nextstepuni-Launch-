@@ -7,6 +7,7 @@ import React, { useState, useMemo } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { ArrowRight, ArrowLeft, Check, X } from 'lucide-react';
+import { useModal } from '../hooks/useModal';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
   LC_SUBJECTS, SUBJECT_GROUP_LABELS, getGradesForLevel, getPointsForGrade,
@@ -51,6 +52,7 @@ interface ChangeSubjectsModalProps {
 // ─── Component ───────────────────────────────────────────────────────────────
 
 const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClose, onSave, currentProfile }) => {
+  useModal(isOpen, onClose);
   const [step, setStep] = useState<1 | 2>(1);
 
   // Initialise from current profile
@@ -176,6 +178,7 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
           </div>
           <button
             onClick={onClose}
+            aria-label="Close"
             className="w-9 h-9 rounded-lg flex items-center justify-center hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
             <X size={18} className="text-zinc-500" />

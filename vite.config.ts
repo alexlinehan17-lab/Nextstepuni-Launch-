@@ -19,12 +19,12 @@ export default defineConfig(() => {
             short_name: 'Nextstep',
             description: 'Science-backed learning strategies for exam success',
             theme_color: '#131311',
-            background_color: '#131311',
+            background_color: '#FDF8F0',
             display: 'standalone',
             icons: [
               { src: '/icons/icon-192x192.png', sizes: '192x192', type: 'image/png' },
               { src: '/icons/icon-512x512.png', sizes: '512x512', type: 'image/png' },
-              { src: '/icons/apple-touch-icon.png', sizes: '180x180', type: 'image/png', purpose: 'apple touch icon' },
+              { src: '/icons/apple-touch-icon.png', sizes: '180x180', type: 'image/png', purpose: 'any' },
             ],
           },
           workbox: {
@@ -61,6 +61,12 @@ export default defineConfig(() => {
                 handler: 'CacheFirst',
                 options: { cacheName: 'dicebear-avatars', expiration: { maxAgeSeconds: 60 * 60 * 24 * 30 } },
               },
+              // Tailwind CSS CDN — stale-while-revalidate for offline support
+              {
+                urlPattern: /^https:\/\/cdn\.tailwindcss\.com\/.*/i,
+                handler: 'StaleWhileRevalidate',
+                options: { cacheName: 'tailwind-cdn', expiration: { maxAgeSeconds: 60 * 60 * 24 * 30 } },
+              },
             ],
           },
         }),
@@ -73,6 +79,7 @@ export default defineConfig(() => {
               'vendor-firebase': ['firebase/app', 'firebase/auth', 'firebase/firestore'],
               'vendor-framer': ['framer-motion'],
               'vendor-three': ['three', '@react-three/fiber', '@react-three/drei'],
+              'vendor-jspdf': ['jspdf', 'jspdf-autotable'],
             },
           },
         },

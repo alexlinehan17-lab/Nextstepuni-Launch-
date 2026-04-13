@@ -8,6 +8,7 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
 import { X, Star, Coffee, CalendarOff, Lock, Check, ShoppingBag, ChevronRight, Layers } from 'lucide-react';
+import { useModal } from '../hooks/useModal';
 import { type CosmeticUnlocks, type EarnedRest, type UserSettings } from '../types';
 import { getAvatarUrl } from '../utils/authUtils';
 import { ACCENT_THEME_LIST, CARD_STYLES } from '../themeData';
@@ -43,6 +44,7 @@ const SESSION_TYPE_LABELS: Record<string, string> = {
 const RewardShopModal: React.FC<RewardShopModalProps> = ({
   isOpen, onClose, pointsBalance, cosmeticUnlocks, _earnedRest, onSpend, skippableBlocks = [], settings, updateSetting,
 }) => {
+  useModal(isOpen, onClose);
   const [pickingSession, setPickingSession] = useState(false);
   const canAfford = (cost: number) => pointsBalance >= cost;
 
@@ -82,6 +84,7 @@ const RewardShopModal: React.FC<RewardShopModalProps> = ({
               </div>
               <button
                 onClick={onClose}
+                aria-label="Close"
                 className="text-zinc-400 dark:text-white/25 hover:text-zinc-600 dark:hover:text-white/50 transition-colors"
               >
                 <X size={18} />

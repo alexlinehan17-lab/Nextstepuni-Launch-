@@ -8,6 +8,7 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { X, Check, Lock } from 'lucide-react';
+import { useModal } from '../hooks/useModal';
 import { type CategoryType } from './KnowledgeTree';
 import { type CourseData } from './Library';
 
@@ -39,6 +40,7 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
   allCourses,
   categoryTitles,
 }) => {
+  useModal(isOpen, onClose);
   const totalModules = allCourses.length;
   const completedModules = allCourses.filter(course => {
     const progress = userProgress[course.id];
@@ -76,6 +78,7 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
               </div>
               <button
                 onClick={onClose}
+                aria-label="Close"
                 className="text-zinc-400 dark:text-white/25 hover:text-zinc-600 dark:hover:text-white/50 transition-colors"
               >
                 <X size={18} />

@@ -8,6 +8,7 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
 import { X, BookOpen, Target, RotateCcw } from 'lucide-react';
+import { useModal } from '../hooks/useModal';
 
 // ─── Reflection Quality Scoring ─────────────────────────────────────────────
 
@@ -112,6 +113,7 @@ const SESSION_TYPE_LABELS: Record<string, { label: string; icon: React.ElementTy
 const ReflectionModal: React.FC<ReflectionModalProps> = ({
   isOpen, subjectName, sessionType, mode, onSubmit, onCancel,
 }) => {
+  useModal(isOpen, onCancel);
   const [confidence, setConfidence] = useState('');
   const [freeText, setFreeText] = useState('');
   const [submitted, setSubmitted] = useState(false);
@@ -187,6 +189,7 @@ const ReflectionModal: React.FC<ReflectionModalProps> = ({
               </div>
               <button
                 onClick={onCancel}
+                aria-label="Close"
                 className="text-zinc-400 dark:text-white/25 hover:text-zinc-600 dark:hover:text-white/50 transition-colors"
               >
                 <X size={18} />

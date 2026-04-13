@@ -8,6 +8,7 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { X, Check, Lock, Sun, Moon, RefreshCw, LogOut, ChevronRight, Compass } from 'lucide-react';
+import { useModal } from '../hooks/useModal';
 import { AVATAR_SEEDS, getAvatarUrl } from '../utils/authUtils';
 import { EXTRA_AVATAR_SEEDS } from './RewardShopModal';
 import { type UserSettings } from '../types';
@@ -32,6 +33,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
   unlockedAvatarSeeds = [], _unlockedThemes = [], _unlockedCardStyles = [],
   userName, userSchool, onChangeSubjects, onResetNorthStar, onLogout,
 }) => {
+  useModal(isOpen, onClose);
   const [showSaved, setShowSaved] = useState(false);
   const flashTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -85,6 +87,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                 </AnimatePresence>
                 <button
                   onClick={onClose}
+                  aria-label="Close"
                   className="text-zinc-400 dark:text-white/25 hover:text-zinc-600 dark:hover:text-white/50 transition-colors"
                 >
                   <X size={18} />

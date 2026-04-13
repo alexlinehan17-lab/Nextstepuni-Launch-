@@ -8,6 +8,7 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { X, BookOpen, Target, RotateCcw, Star, BookMarked } from 'lucide-react';
+import { useModal } from '../hooks/useModal';
 import { type StudyReflection } from '../types';
 
 const SESSION_ICONS: Record<string, React.ElementType> = {
@@ -29,6 +30,7 @@ interface StudyJournalModalProps {
 }
 
 const StudyJournalModal: React.FC<StudyJournalModalProps> = ({ isOpen, onClose, reflections }) => {
+  useModal(isOpen, onClose);
   const [subjectFilter, setSubjectFilter] = useState<string | null>(null);
 
   const subjects = useMemo(() => {
@@ -97,6 +99,7 @@ const StudyJournalModal: React.FC<StudyJournalModalProps> = ({ isOpen, onClose, 
               </div>
               <button
                 onClick={onClose}
+                aria-label="Close"
                 className="text-zinc-400 dark:text-white/25 hover:text-zinc-600 dark:hover:text-white/50 transition-colors"
               >
                 <X size={18} />

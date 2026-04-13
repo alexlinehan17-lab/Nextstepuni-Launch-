@@ -12,6 +12,7 @@ import {
   Footprints, Flame, TrendingUp, Target, Zap, Award, Crown, Mountain,
   Star, X, ChevronRight,
 } from 'lucide-react';
+import { useModal } from '../hooks/useModal';
 
 const RANK_ICON_MAP: Record<string, React.FC<{ size?: number; strokeWidth?: number; style?: React.CSSProperties }>> = {
   Footprints, Flame, TrendingUp, Target, Zap, Award, Crown, Mountain, Star,
@@ -62,6 +63,7 @@ interface RankUpModalProps {
 }
 
 const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onGoToJourney }) => {
+  useModal(isOpen, onClose);
   if (!newRank) return null;
 
   const rankIndex = ATHLETE_RANKS.findIndex(r => r.id === newRank.id);
@@ -181,6 +183,7 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
                 </span>
                 <button
                   onClick={onClose}
+                  aria-label="Close"
                   className="w-9 h-9 flex items-center justify-center rounded-full transition-opacity hover:opacity-70"
                   style={{ backgroundColor: darkText ? 'rgba(0,0,0,0.06)' : 'rgba(255,255,255,0.15)', color: heroText }}
                 >

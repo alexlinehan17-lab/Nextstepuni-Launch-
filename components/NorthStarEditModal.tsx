@@ -8,6 +8,7 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { X, Star } from 'lucide-react';
+import { useModal } from '../hooks/useModal';
 import { type NorthStar } from '../types';
 import NorthStarOnboarding from './NorthStarOnboarding';
 
@@ -19,6 +20,7 @@ interface NorthStarEditModalProps {
 }
 
 const NorthStarEditModal: React.FC<NorthStarEditModalProps> = ({ isOpen, onClose, onSave, currentNorthStar }) => {
+  useModal(isOpen, onClose);
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -51,7 +53,7 @@ const NorthStarEditModal: React.FC<NorthStarEditModalProps> = ({ isOpen, onClose
             {/* Gradient header */}
             <div className="relative overflow-hidden rounded-t-2xl bg-gradient-to-br from-[rgba(var(--accent),0.2)] via-amber-400/10 to-transparent px-6 pt-6 pb-8">
               <div className="absolute top-3 right-3">
-                <button onClick={onClose} className="p-2 rounded-xl bg-white/50 dark:bg-zinc-800/50 hover:bg-white/80 dark:hover:bg-zinc-800/80 transition-colors backdrop-blur-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
+                <button onClick={onClose} aria-label="Close" className="p-2 rounded-xl bg-white/50 dark:bg-zinc-800/50 hover:bg-white/80 dark:hover:bg-zinc-800/80 transition-colors backdrop-blur-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
                   <X size={18} className="text-zinc-600 dark:text-zinc-400" />
                 </button>
               </div>
