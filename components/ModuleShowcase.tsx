@@ -170,14 +170,19 @@ export default function ModuleShowcase({
                   <div className="absolute bottom-6 -left-8 w-28 h-28 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.08)' }} />
                   <div className="absolute top-1/3 right-1/4 w-14 h-14 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.06)' }} />
 
-                  {/* Module number */}
-                  <div className="relative z-10 text-center">
-                    <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '96px', fontWeight: 700, color: 'rgba(255,255,255,0.35)', lineHeight: 1 }}>
-                      {String(currentIndex + 1).padStart(2, '0')}
+                  {/* Category + module info */}
+                  <div className="relative z-10 text-center px-6 md:px-8">
+                    <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.6)', textTransform: 'uppercase', marginBottom: '12px' }}>
+                      {categoryTitle}
                     </p>
-                    <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '12px', fontWeight: 700, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.7)', textTransform: 'uppercase', marginTop: '10px' }}>
-                      MODULE
-                    </p>
+                    <h3 style={{ fontFamily: "'Source Serif 4', serif", fontSize: '24px', fontWeight: 700, color: '#fff', lineHeight: 1.3 }}>
+                      {course.title}
+                    </h3>
+                    <div className="flex items-center justify-center gap-2 mt-4">
+                      <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '13px', fontWeight: 600, color: 'rgba(255,255,255,0.8)' }}>
+                        {currentIndex + 1} / {courses.length}
+                      </span>
+                    </div>
                   </div>
 
                   {/* Progress badge */}
