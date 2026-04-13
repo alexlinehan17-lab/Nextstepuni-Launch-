@@ -6,7 +6,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import {
   collection, query, where, orderBy, limit, getDocs, doc,
-  getDoc, setDoc, updateDoc, writeBatch, Timestamp,
+  getDoc, updateDoc, writeBatch, Timestamp,
   serverTimestamp, increment,
 } from 'firebase/firestore';
 import { db } from '../firebase';

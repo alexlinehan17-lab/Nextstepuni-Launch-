@@ -11,7 +11,7 @@ import { type SessionUser } from '../../utils/authUtils';
 import { type NorthStar, type UserProgress } from '../../types';
 import { type MilestoneReward } from '../../islandShopData';
 import { db } from '../../firebase';
-import { collection, query, where, getDocs, doc, getDoc } from 'firebase/firestore';
+import { collection, query, where, getDocs } from 'firebase/firestore';
 
 const FlareSystem = React.lazy(() => import('../flares/FlareSystem'));
 import { useIslandShop, type EnrichedShopItem } from '../../hooks/useIslandShop';
