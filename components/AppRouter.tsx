@@ -446,7 +446,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       return (
         <div className="min-h-screen" style={{ backgroundColor: '#FDF8F0' }}>
           {/* Header */}
-          <header className="fixed top-0 left-0 right-0 z-50 px-4 py-4 md:px-10 md:py-5" style={{ backgroundColor: '#FDF8F0', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingTop: 'var(--sat, 0px)' }}>
+          <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10" style={{ backgroundColor: '#FDF8F0', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}>
             <div className="flex items-center gap-4">
               <button onClick={handleBackToTree} className="p-2.5 rounded-xl transition-colors hover:bg-white/60" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>

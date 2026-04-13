@@ -471,7 +471,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
       {/* Main content area */}
       <div className={`flex flex-col items-center pt-24 md:pt-32 pb-24 md:pb-12 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${hasSidebar ? (sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]') : ''}`}>
 
-      <header ref={headerRef} className="fixed top-0 left-0 right-0 z-[60] border-b px-4 py-4 md:px-10 md:py-6" style={{ backgroundColor: '#FDF8F0', borderColor: 'rgba(0,0,0,0.06)', paddingTop: 'var(--sat, 0px)' }}>
+      <header ref={headerRef} className="fixed top-0 left-0 right-0 z-[60] border-b px-4 md:px-10" style={{ backgroundColor: '#FDF8F0', borderColor: 'rgba(0,0,0,0.06)', paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}>
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4 md:gap-8">
             <button onClick={onBack} className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
