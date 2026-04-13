@@ -1197,7 +1197,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                   className="w-full py-3 rounded-xl text-sm font-medium transition-all bg-[#FAF7F4] dark:bg-zinc-900 text-[#A8A29E] dark:text-zinc-500"
                   style={{ borderRadius: 12 }}
                 >
-                  Already Studied (+2 pts)
+                  Already Studied (+5 pts)
                 </button>
                 {onSpendPoints && points >= 20 && (
                   <button

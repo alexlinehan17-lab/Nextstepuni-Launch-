@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { ArrowLeft, BookOpen, Target, RotateCcw, Play, Pause, Clock, Sparkles, X, ChevronRight, Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck, Trophy, CalendarCheck } from 'lucide-react';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
+import PointsExplainer from '../PointsExplainer';
 import { doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
 import { type SessionUser } from '../../utils/authUtils';
@@ -662,6 +663,12 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
             )}
           </div>
         </div>
+
+        {/* Points Explainer (first visit) */}
+        <PointsExplainer
+          isOpen={!dismissedGuides?.['points-explainer']}
+          onDismiss={() => onDismissGuide?.('points-explainer')}
+        />
       </div>
     );
   }

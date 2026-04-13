@@ -9,10 +9,9 @@ import { useToast } from './Toast';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
 import {
-    ArrowLeft, Zap, Clock,
-    BookMarked,
+    ArrowLeft,
     Lock, Compass, Target,
-    Flame, Settings, CalendarDays, Calculator, GitBranch, Rocket,
+    Settings, CalendarDays, Calculator, GitBranch, Rocket,
     Map, ScanSearch
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment } from 'firebase/firestore';
@@ -37,6 +36,7 @@ import { getNotifications } from './gc/gcNotifications';
 import StudyJournalModal from './StudyJournalModal';
 import AcademicJourneyGame, { type JourneyResult } from './AcademicJourneyGame';
 import ToolErrorBoundary from './ToolErrorBoundary';
+import PointsExplainer from './PointsExplainer';
 import { useNavigation } from '../contexts/NavigationContext';
 
 interface InnovationZoneProps {
@@ -49,6 +49,8 @@ interface InnovationZoneProps {
   updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void;
   onCosmeticUnlocksChange?: (unlocks: CosmeticUnlocks) => void;
   onStudyNow?: (block: { subject: string; sessionType: 'new-learning' | 'practice' | 'revision'; durationMinutes: number; dateKey: string; blockId: string }) => void;
+  dismissedGuides?: Record<string, string>;
+  onDismissGuide?: (id: string) => void;
 }
 
 // ─── Data Validation Helpers ─────────────────────────────────────────────────
@@ -71,7 +73,7 @@ function validatePointsData(raw: unknown): PointsData {
 
 // ─── InnovationZone ──────────────────────────────────────────────────────────
 
-const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, savedJourneyResult, onJourneyComplete, settings: _settings, updateSetting: _updateSetting, onCosmeticUnlocksChange, onStudyNow }) => {
+const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, savedJourneyResult, onJourneyComplete, settings: _settings, updateSetting: _updateSetting, onCosmeticUnlocksChange, onStudyNow, dismissedGuides, onDismissGuide }) => {
     const { showToast } = useToast();
     const nav = useNavigation();
     const activeTool = nav.state.activeTool;
@@ -124,14 +126,10 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const onCosmeticUnlocksChangeRef = useRef(onCosmeticUnlocksChange);
     onCosmeticUnlocksChangeRef.current = onCosmeticUnlocksChange;
     const [showJournal, setShowJournal] = useState(false);
-    const [showPointsExplainer, setShowPointsExplainer] = useState(() => {
-        try { return !localStorage.getItem('nextstep-points-explainer-v2'); } catch (err) { console.error('Failed to read points explainer state:', err); return true; }
-    });
-
+    const showPointsExplainer = !dismissedGuides?.['points-explainer'];
     const dismissPointsExplainer = useCallback(() => {
-        setShowPointsExplainer(false);
-        try { localStorage.setItem('nextstep-points-explainer-v2', '1'); } catch (err) { console.error('Failed to save points explainer state:', err); }
-    }, []);
+        onDismissGuide?.('points-explainer');
+    }, [onDismissGuide]);
 
     // Load subject profile from Firebase
     useEffect(() => {
@@ -258,7 +256,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const handleToggleCompletion = useCallback(async (dateKey: string, blockId: string, completed: boolean) => {
         if (completed) {
             // "Already Studied" flow: 2 pts flat, no reflection
-            const ALREADY_STUDIED_POINTS = 2;
+            const ALREADY_STUDIED_POINTS = 5;
             setPointsData(prev => ({
                 ...prev,
                 totalEarned: prev.totalEarned + ALREADY_STUDIED_POINTS,
@@ -622,95 +620,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
 
 
       {/* Points Explainer (first visit) */}
-      <AnimatePresence>
-        {showPointsExplainer && (
-          <MotionDiv
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-[100] p-4"
-            onClick={dismissPointsExplainer}
-          >
-            <MotionDiv
-              initial={{ scale: 0.92, opacity: 0, y: 20 }}
-              animate={{ scale: 1, opacity: 1, y: 0 }}
-              exit={{ scale: 0.92, opacity: 0, y: 20 }}
-              transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-              className="bg-white dark:bg-zinc-900 rounded-2xl max-w-sm w-full shadow-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden"
-              onClick={(e: React.MouseEvent) => e.stopPropagation()}
-            >
-              <div className="h-1.5 bg-gradient-to-r from-amber-400 via-[var(--accent-hex)] to-purple-500" />
-
-              <div className="p-6">
-                <div className="flex items-center gap-3 mb-5">
-                  <div className="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center">
-                    <Zap size={20} className="text-amber-500" />
-                  </div>
-                  <div>
-                    <h3 className="font-serif font-semibold text-lg text-zinc-900 dark:text-white">How Points Work</h3>
-                    <p className="text-xs text-zinc-400 dark:text-zinc-500">Earn & spend in the Innovation Zone</p>
-                  </div>
-                </div>
-
-                <div className="space-y-2.5 mb-4">
-                  <div className="flex items-start gap-3 p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04]">
-                    <div className="w-8 h-8 rounded-lg bg-teal-100 dark:bg-teal-900/30 flex items-center justify-center shrink-0 mt-0.5">
-                      <Clock size={14} className="text-teal-600 dark:text-teal-400" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200">Study Sessions</p>
-                      <p className="text-xs text-zinc-500 dark:text-zinc-400">10 pts per completed timetable session</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3 p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04]">
-                    <div className="w-8 h-8 rounded-lg bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center shrink-0 mt-0.5">
-                      <BookMarked size={14} className="text-purple-600 dark:text-purple-400" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200">Reflections</p>
-                      <p className="text-xs text-zinc-500 dark:text-zinc-400">Bonus points for thoughtful study reflections</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Streak Explainer */}
-                <div className="mb-4 p-3 rounded-xl bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-950/20 dark:to-orange-950/20 border border-amber-200/50 dark:border-amber-800/30">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Flame size={14} className="text-amber-500" />
-                    <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">Streak Multiplier</p>
-                  </div>
-                  <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-2">Complete your timetable sessions on consecutive days to build a streak and multiply your points.</p>
-                  <div className="grid grid-cols-3 gap-1.5">
-                    <div className="text-center p-1.5 rounded-lg bg-white/60 dark:bg-white/[0.04]">
-                      <p className="text-[10px] font-bold text-amber-600 dark:text-amber-400">3+ days</p>
-                      <p className="text-[10px] text-zinc-500 dark:text-zinc-400">1.5x pts</p>
-                    </div>
-                    <div className="text-center p-1.5 rounded-lg bg-white/60 dark:bg-white/[0.04]">
-                      <p className="text-[10px] font-bold text-orange-600 dark:text-orange-400">7+ days</p>
-                      <p className="text-[10px] text-zinc-500 dark:text-zinc-400">2x pts</p>
-                    </div>
-                    <div className="text-center p-1.5 rounded-lg bg-white/60 dark:bg-white/[0.04]">
-                      <p className="text-[10px] font-bold text-red-600 dark:text-red-400">14+ days</p>
-                      <p className="text-[10px] text-zinc-500 dark:text-zinc-400">2.5x pts</p>
-                    </div>
-                  </div>
-                </div>
-
-                <p className="text-xs text-zinc-400 dark:text-zinc-500 text-center mb-4">
-                  Spend points in the <span className="font-semibold text-zinc-600 dark:text-zinc-300">Reward Shop</span> on avatars, themes & card styles.
-                </p>
-
-                <button
-                  onClick={dismissPointsExplainer}
-                  className="w-full py-2.5 rounded-xl bg-[var(--accent-hex)] hover:bg-[var(--accent-dark-hex)] text-white font-semibold text-sm transition-colors"
-                >
-                  Got it!
-                </button>
-              </div>
-            </MotionDiv>
-          </MotionDiv>
-        )}
-      </AnimatePresence>
+      <PointsExplainer isOpen={showPointsExplainer} onDismiss={dismissPointsExplainer} />
     </div>
   );
 };

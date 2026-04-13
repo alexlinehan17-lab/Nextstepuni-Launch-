@@ -57,7 +57,7 @@ export const DURATION_PRESETS = [
 // ── Points Config ──────────────────────────────────────────
 
 export const STUDY_SESSION_POINTS = {
-  PER_10_MINUTES: 8,
+  PER_10_MINUTES: 15,
 } as const;
 
 // ── Subject Colors (duplicated from DeepFocusTimer.tsx to avoid refactoring) ──

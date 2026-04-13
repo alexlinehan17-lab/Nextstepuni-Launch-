@@ -7,18 +7,18 @@ import { type UserProgress } from './types';
 
 // Points earned for completing content
 export const POINTS = {
-  SECTION_COMPLETE: 6,
-  MODULE_COMPLETE_BONUS: 20,
-  CATEGORY_COMPLETE_BONUS: 80,
+  SECTION_COMPLETE: 10,
+  MODULE_COMPLETE_BONUS: 30,
+  CATEGORY_COMPLETE_BONUS: 100,
   DAILY_STREAK: 10,
   // Reflection tiers (Phase 4)
-  REFLECTION_BASIC: 10,
-  REFLECTION_THOUGHTFUL: 15,
-  REFLECTION_DEEP: 20,
+  REFLECTION_BASIC: 15,
+  REFLECTION_THOUGHTFUL: 20,
+  REFLECTION_DEEP: 30,
   // Weekly goal bonuses (Phase 2)
-  WEEKLY_GOAL_1: 50,
-  WEEKLY_GOAL_2: 100,
-  WEEKLY_GOAL_3: 200,
+  WEEKLY_GOAL_1: 75,
+  WEEKLY_GOAL_2: 125,
+  WEEKLY_GOAL_3: 250,
 } as const;
 
 /**

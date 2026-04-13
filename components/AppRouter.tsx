@@ -495,7 +495,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   if (viewState === 'innovation-zone') {
       return (
         <Suspense fallback={<LoadingSpinner />}>
-          <InnovationZone onBack={handleBackToTree} onSelectModule={handleSelectModule} user={user} savedJourneyResult={journeyResult} onJourneyComplete={setJourneyResult} settings={settings} updateSetting={updateSetting} onCosmeticUnlocksChange={(unlocks) => { setUnlockedAvatarSeeds(unlocks.avatarSeeds || []); setUnlockedThemes(unlocks.themeColors || []); setUnlockedCardStyles(unlocks.cardStyles || []); }} onStudyNow={handleStudyFromTimetable} />
+          <InnovationZone onBack={handleBackToTree} onSelectModule={handleSelectModule} user={user} savedJourneyResult={journeyResult} onJourneyComplete={setJourneyResult} settings={settings} updateSetting={updateSetting} onCosmeticUnlocksChange={(unlocks) => { setUnlockedAvatarSeeds(unlocks.avatarSeeds || []); setUnlockedThemes(unlocks.themeColors || []); setUnlockedCardStyles(unlocks.cardStyles || []); }} onStudyNow={handleStudyFromTimetable} dismissedGuides={dismissedGuides} onDismissGuide={handleDismissGuide} />
         </Suspense>
       );
   }
