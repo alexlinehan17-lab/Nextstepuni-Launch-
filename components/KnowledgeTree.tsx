@@ -296,9 +296,9 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
       subtitle: "Module 04",
       description: "Subject-by-subject deconstruction of the Leaving Cert exams. The marking schemes, the hidden curriculum, and the strategies that unlock top grades in each subject.",
       icon: KeyRound,
-      hex: "#8b5cf6",
-      gradientFrom: "#a78bfa",
-      gradientTo: "#7c3aed",
+      hex: "#ec4899",
+      gradientFrom: "#f472b6",
+      gradientTo: "#db2777",
       className: "md:col-span-2"
     },
     {
@@ -914,9 +914,9 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
               subtitle="Explore"
               description="Your personal AI-powered study companion. Use the Journey Simulator to stress-test your study habits, get personalised feedback, and discover which units will have the biggest impact on your performance."
               icon={Rocket}
-              accentHex="#8b5cf6"
-              gradientFrom="#a78bfa"
-              gradientTo="#6d28d9"
+              accentHex="#4f46e5"
+              gradientFrom="#6366f1"
+              gradientTo="#4338ca"
               onClick={onGoToInnovationZone}
               className="md:col-span-6"
               delay={modules.length * 0.1}
