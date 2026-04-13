@@ -11,70 +11,24 @@ import { MODULE_SECTIONS, type SectionInfo } from '../moduleSections';
 import { SUBJECT_MODULE_CONTENT } from '../subjectModuleData';
 
 /* ═══════════════════════════════════════════════════════
-   Aurora gradient palettes per category
+   Category gradients — matching KnowledgeTree tile colours
    ═══════════════════════════════════════════════════════ */
-const CATEGORY_AURORA: Record<string, { base: string; layers: string[] }> = {
-  'architecture-mindset': {
-    base: '#E8E3F0',
-    layers: [
-      'radial-gradient(ellipse 140% 70% at 50% 50%, rgba(140,120,210,0.45) 0%, transparent 65%)',
-      'radial-gradient(ellipse 100% 50% at 35% 40%, rgba(155,135,225,0.3) 0%, transparent 60%)',
-      'radial-gradient(ellipse 120% 55% at 50% 95%, rgba(180,140,210,0.35) 0%, transparent 50%)',
-      'radial-gradient(ellipse 60% 65% at 0% 60%, rgba(120,145,225,0.35) 0%, transparent 60%)',
-      'radial-gradient(ellipse 55% 40% at 80% 20%, rgba(200,170,230,0.25) 0%, transparent 50%)',
-    ],
-  },
-  'science-growth': {
-    base: '#F0EBE0',
-    layers: [
-      'radial-gradient(ellipse 140% 70% at 50% 50%, rgba(210,170,100,0.4) 0%, transparent 65%)',
-      'radial-gradient(ellipse 100% 50% at 35% 40%, rgba(225,190,120,0.3) 0%, transparent 60%)',
-      'radial-gradient(ellipse 120% 55% at 50% 95%, rgba(240,160,100,0.35) 0%, transparent 50%)',
-      'radial-gradient(ellipse 60% 65% at 100% 60%, rgba(200,155,90,0.3) 0%, transparent 60%)',
-      'radial-gradient(ellipse 55% 40% at 20% 80%, rgba(230,180,110,0.25) 0%, transparent 50%)',
-    ],
-  },
-  'learning-cheat-codes': {
-    base: '#E3EDE8',
-    layers: [
-      'radial-gradient(ellipse 140% 70% at 50% 50%, rgba(80,170,150,0.4) 0%, transparent 65%)',
-      'radial-gradient(ellipse 100% 50% at 35% 40%, rgba(100,190,170,0.3) 0%, transparent 60%)',
-      'radial-gradient(ellipse 120% 55% at 50% 95%, rgba(60,155,135,0.35) 0%, transparent 50%)',
-      'radial-gradient(ellipse 60% 65% at 0% 60%, rgba(90,180,160,0.3) 0%, transparent 60%)',
-      'radial-gradient(ellipse 55% 40% at 80% 20%, rgba(120,200,180,0.2) 0%, transparent 50%)',
-    ],
-  },
-  'subject-specific-science': {
-    base: '#E8E8EC',
-    layers: [
-      'radial-gradient(ellipse 140% 70% at 50% 50%, rgba(140,145,165,0.35) 0%, transparent 65%)',
-      'radial-gradient(ellipse 100% 50% at 35% 40%, rgba(160,155,180,0.3) 0%, transparent 60%)',
-      'radial-gradient(ellipse 120% 55% at 50% 95%, rgba(130,140,170,0.3) 0%, transparent 50%)',
-      'radial-gradient(ellipse 60% 65% at 100% 60%, rgba(150,150,175,0.25) 0%, transparent 60%)',
-      'radial-gradient(ellipse 55% 40% at 20% 80%, rgba(170,165,190,0.2) 0%, transparent 50%)',
-    ],
-  },
-  'exam-zone': {
-    base: '#F0E5E5',
-    layers: [
-      'radial-gradient(ellipse 140% 70% at 50% 50%, rgba(210,120,130,0.4) 0%, transparent 65%)',
-      'radial-gradient(ellipse 100% 50% at 35% 40%, rgba(225,140,150,0.3) 0%, transparent 60%)',
-      'radial-gradient(ellipse 120% 55% at 50% 95%, rgba(200,110,140,0.35) 0%, transparent 50%)',
-      'radial-gradient(ellipse 60% 65% at 0% 60%, rgba(190,130,160,0.3) 0%, transparent 60%)',
-      'radial-gradient(ellipse 55% 40% at 80% 20%, rgba(230,150,140,0.2) 0%, transparent 50%)',
-    ],
-  },
+const CATEGORY_GRADIENTS: Record<string, { from: string; to: string }> = {
+  'architecture-mindset': { from: '#4f8ef7', to: '#2563eb' },
+  'science-growth': { from: '#f7b84e', to: '#e8860c' },
+  'learning-cheat-codes': { from: '#2dd4bf', to: '#0d9488' },
+  'subject-specific-science': { from: '#f472b6', to: '#db2777' },
+  'exam-zone': { from: '#f87171', to: '#dc2626' },
+  'the-shield': { from: '#6366f1', to: '#4338ca' },
+  'the-launchpad': { from: '#34d399', to: '#059669' },
 };
 
-const getAurora = (category: string) =>
-  CATEGORY_AURORA[category] || CATEGORY_AURORA['learning-cheat-codes'];
+const getGradient = (category: string) =>
+  CATEGORY_GRADIENTS[category] || { from: '#2dd4bf', to: '#0d9488' };
 
-/* Get section titles for any module — covers both standard and subject modules */
+/* Get section titles for any module */
 function getSectionsForModule(moduleId: string, sectionsCount: number): SectionInfo[] {
-  // Check standard modules first
   if (MODULE_SECTIONS[moduleId]) return MODULE_SECTIONS[moduleId];
-
-  // Check subject modules — strip 'subject-' prefix and '-protocol' suffix to get subjectId
   const subjectMatch = moduleId.match(/^subject-(.+)-protocol$/);
   if (subjectMatch) {
     const subjectId = subjectMatch[1];
@@ -86,8 +40,6 @@ function getSectionsForModule(moduleId: string, sectionsCount: number): SectionI
       }));
     }
   }
-
-  // Fallback to generic
   return Array.from({ length: sectionsCount }, (_, i) => ({
     title: `Section ${i + 1}`,
     eyebrow: '',
@@ -114,7 +66,6 @@ export default function ModuleShowcase({
   onSelectCourse,
 }: ModuleShowcaseProps) {
   const [currentIndex, setCurrentIndex] = useState(() => {
-    // Start on the first non-completed module
     const firstIncomplete = courses.findIndex(c => {
       const p = userProgress[c.id];
       return !p || p.unlockedSection < c.sectionsCount;
@@ -128,7 +79,7 @@ export default function ModuleShowcase({
   const progress = userProgress[course.id];
   const isCompleted = progress && progress.unlockedSection >= course.sectionsCount;
   const isInProgress = progress && progress.unlockedSection > 0 && !isCompleted;
-  const aurora = getAurora(categoryId);
+  const gradient = getGradient(categoryId);
 
   const goTo = useCallback((idx: number) => {
     if (idx < 0 || idx >= courses.length || idx === currentIndex) return;
@@ -140,17 +91,11 @@ export default function ModuleShowcase({
   const goNext = useCallback(() => goTo(currentIndex + 1), [goTo, currentIndex]);
   const goPrev = useCallback(() => goTo(currentIndex - 1), [goTo, currentIndex]);
 
-  // Swipe / drag navigation
   const handleDragEnd = useCallback((_: any, info: { offset: { x: number } }) => {
-    const swipeThreshold = 50;
-    if (info.offset.x < -swipeThreshold) {
-      goNext();
-    } else if (info.offset.x > swipeThreshold) {
-      goPrev();
-    }
+    if (info.offset.x < -50) goNext();
+    else if (info.offset.x > 50) goPrev();
   }, [goNext, goPrev]);
 
-  // Keyboard navigation
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === 'ArrowRight') goNext();
@@ -168,66 +113,32 @@ export default function ModuleShowcase({
     : 'Not started';
   const estimatedMinutes = course.sectionsCount * 8;
 
-  // The entire card is one rigid object — it flicks as a unit
   const cardVariants = {
-    enter: (dir: number) => ({
-      x: dir > 0 ? '110%' : '-110%',
-      rotateZ: 0,
-      opacity: 1,
-    }),
-    center: {
-      x: 0,
-      rotateZ: 0,
-      opacity: 1,
-    },
-    exit: (dir: number) => ({
-      x: dir > 0 ? '-110%' : '110%',
-      rotateZ: dir > 0 ? -4 : 4,
-      opacity: 0.7,
-    }),
+    enter: (dir: number) => ({ x: dir > 0 ? '110%' : '-110%', opacity: 1 }),
+    center: { x: 0, opacity: 1 },
+    exit: (dir: number) => ({ x: dir > 0 ? '-110%' : '110%', rotateZ: dir > 0 ? -4 : 4, opacity: 0.7 }),
   };
 
   return (
     <div className="w-full max-w-5xl mx-auto px-4">
-      {/* Outer container — stays fixed, holds arrows + peeks + dots */}
       <div className="relative">
 
-        {/* Card stack container — peek cards are absolute behind primary */}
+        {/* Peek cards */}
         <div className="relative">
-
-          {/* Second peek card — furthest back, most inset, most offset */}
           {courses.length > 2 && (
             <div
               className="absolute rounded-3xl pointer-events-none"
-              style={{
-                top: 24,
-                left: 32,
-                right: 32,
-                height: '100%',
-                backgroundColor: '#E8E0D0',
-                border: '1px solid rgba(0,0,0,0.04)',
-                zIndex: 1,
-              }}
+              style={{ top: 24, left: 32, right: 32, height: '100%', backgroundColor: gradient.to, opacity: 0.3, zIndex: 1 }}
             />
           )}
-
-          {/* First peek card — middle layer */}
           {courses.length > 1 && (
             <div
               className="absolute rounded-3xl pointer-events-none"
-              style={{
-                top: 12,
-                left: 16,
-                right: 16,
-                height: '100%',
-                backgroundColor: '#F0E8D8',
-                border: '1px solid rgba(0,0,0,0.05)',
-                zIndex: 2,
-              }}
+              style={{ top: 12, left: 16, right: 16, height: '100%', backgroundColor: gradient.to, opacity: 0.5, zIndex: 2 }}
             />
           )}
 
-          {/* Primary card area — frontmost, natural flow gives container its height */}
+          {/* Primary card */}
           <motion.div
             className="relative"
             style={{ zIndex: 3, overflow: 'hidden', touchAction: 'pan-y' }}
@@ -246,168 +157,183 @@ export default function ModuleShowcase({
               exit="exit"
               transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
               className="rounded-3xl overflow-hidden"
-              style={{ backgroundColor: '#FAF7F2', border: '1px solid rgba(0,0,0,0.06)' }}
+              style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.04)' }}
             >
-              {/* The entire card — graphic + content — is ONE unit inside this motion.div */}
-              <div className="flex flex-col md:flex-row min-h-[320px] md:min-h-[480px]">
-                {/* Left — Aurora graphic */}
-                <div className="relative w-full md:w-[40%] min-h-[200px] md:min-h-0 overflow-hidden">
-                  <div className="absolute inset-0" style={{ backgroundColor: aurora.base }} />
-                  {aurora.layers.map((layer, i) => (
-                    <div key={i} className="absolute inset-0" style={{ background: layer }} />
-                  ))}
-                  <div className="absolute inset-0" style={{ opacity: 0.03, backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\'/%3E%3C/svg%3E")' }} />
+              <div className="flex flex-col md:flex-row min-h-[340px] md:min-h-[480px]">
+                {/* Left — Bold gradient panel */}
+                <div
+                  className="relative w-full md:w-[40%] min-h-[180px] md:min-h-0 overflow-hidden flex flex-col items-center justify-center"
+                  style={{ background: `linear-gradient(135deg, ${gradient.from} 0%, ${gradient.to} 100%)` }}
+                >
+                  {/* Decorative circles */}
+                  <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }} />
+                  <div className="absolute bottom-6 -left-8 w-28 h-28 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.08)' }} />
+                  <div className="absolute top-1/3 right-1/4 w-14 h-14 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.06)' }} />
+
+                  {/* Module number */}
+                  <div className="relative z-10 text-center">
+                    <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '72px', fontWeight: 700, color: 'rgba(255,255,255,0.2)', lineHeight: 1 }}>
+                      {String(currentIndex + 1).padStart(2, '0')}
+                    </p>
+                    <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', marginTop: '8px' }}>
+                      MODULE
+                    </p>
+                  </div>
+
+                  {/* Progress badge */}
+                  {(isCompleted || isInProgress) && (
+                    <div
+                      className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1.5 rounded-full"
+                      style={{ backgroundColor: 'rgba(255,255,255,0.2)', backdropFilter: 'blur(8px)' }}
+                    >
+                      {isCompleted && <CheckCircle2 size={12} color="#fff" />}
+                      <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 600, color: '#fff' }}>
+                        {isCompleted ? 'Complete' : `${progress.unlockedSection}/${course.sectionsCount}`}
+                      </span>
+                    </div>
+                  )}
                 </div>
 
-                {/* Right — Content (NO independent animation — moves with card) */}
-                <div className="flex-1 p-8 md:p-10 lg:p-12 flex flex-col">
+                {/* Right — Content */}
+                <div className="flex-1 p-6 md:p-10 lg:p-12 flex flex-col bg-white dark:bg-zinc-900">
                   <div className="flex-1 flex flex-col">
-                  {/* Eyebrow */}
-                  <p
-                    className="text-[11px] font-semibold uppercase tracking-wider mb-4"
-                    style={{ color: '#2A7D6F', letterSpacing: '0.12em' }}
-                  >
-                    {categoryTitle}
-                  </p>
-
-                  {/* Title */}
-                  <h2
-                    className="font-serif font-semibold leading-tight mb-4"
-                    style={{ fontSize: 'clamp(28px, 4vw, 48px)', color: '#1a1a1a', letterSpacing: '-0.02em' }}
-                  >
-                    {course.title}
-                  </h2>
-
-                  {/* Subtitle */}
-                  {course.subtitle && (
-                    <p className="text-base mb-2" style={{ color: '#5a5550', lineHeight: 1.5 }}>
-                      {course.subtitle}
+                    <p
+                      className="text-[11px] font-semibold uppercase tracking-wider mb-3"
+                      style={{ color: gradient.from, letterSpacing: '0.12em' }}
+                    >
+                      {categoryTitle}
                     </p>
-                  )}
 
-                  {/* Description */}
-                  <p className="text-sm mb-6" style={{ color: '#7a7068', lineHeight: 1.6 }}>
-                    {course.description}
-                  </p>
-
-                  {/* Action row */}
-                  <div className="flex items-center gap-4 mb-8">
-                    <button
-                      onClick={() => onSelectCourse(course.id)}
-                      className="text-white font-semibold transition-all"
-                      style={{
-                        backgroundColor: '#2A7D6F',
-                        borderRadius: 100,
-                        padding: '14px 32px',
-                        fontSize: 15,
-                      }}
+                    <h2
+                      className="font-serif font-semibold leading-tight mb-3 text-zinc-900 dark:text-white"
+                      style={{ fontSize: 'clamp(24px, 3.5vw, 42px)', letterSpacing: '-0.02em' }}
                     >
-                      {ctaLabel}
-                    </button>
+                      {course.title}
+                    </h2>
 
-                    <button
-                      onClick={() => setSectionsExpanded(!sectionsExpanded)}
-                      className="flex items-center gap-1.5 transition-colors"
-                      style={{ fontSize: 14, fontWeight: 500, color: '#2A7D6F' }}
-                    >
-                      What&rsquo;s in this module
-                      <motion.span animate={{ rotate: sectionsExpanded ? 180 : 0 }} transition={{ duration: 0.2 }}>
-                        <ChevronDown size={16} />
-                      </motion.span>
-                    </button>
-                  </div>
+                    {course.subtitle && (
+                      <p className="text-base mb-2 text-zinc-600 dark:text-zinc-400" style={{ lineHeight: 1.5 }}>
+                        {course.subtitle}
+                      </p>
+                    )}
 
-                  {/* Expandable sections list */}
-                  <AnimatePresence>
-                    {sectionsExpanded && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3, ease: [0.25, 1, 0.5, 1] }}
-                        className="overflow-hidden mb-6"
+                    <p className="text-sm mb-6 text-zinc-500 dark:text-zinc-500" style={{ lineHeight: 1.6 }}>
+                      {course.description}
+                    </p>
+
+                    {/* Actions */}
+                    <div className="flex items-center gap-4 mb-6">
+                      <button
+                        onClick={() => onSelectCourse(course.id)}
+                        className="text-white font-semibold transition-all active:translate-y-[2px]"
+                        style={{
+                          background: `linear-gradient(135deg, ${gradient.from}, ${gradient.to})`,
+                          borderRadius: 100,
+                          padding: '13px 28px',
+                          fontSize: 15,
+                          boxShadow: `0 4px 0 ${gradient.to}`,
+                          borderBottom: `3px solid ${gradient.to}`,
+                        }}
                       >
-                        <p className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: '#9e9186', letterSpacing: '0.1em' }}>
-                          {course.sectionsCount} sections in this module
-                        </p>
-                        <div className="space-y-2">
-                          {getSectionsForModule(course.id, course.sectionsCount).map((section, i) => {
-                            const sectionDone = progress && progress.unlockedSection > i;
-                            return (
-                              <div
-                                key={i}
-                                className="flex items-start gap-3 py-2"
-                                style={{ borderTop: i === 0 ? 'none' : '1px solid rgba(0,0,0,0.04)' }}
-                              >
-                                <span
-                                  className="shrink-0 mt-0.5 flex items-center justify-center"
-                                  style={{
-                                    width: 22,
-                                    height: 22,
-                                    borderRadius: '50%',
-                                    backgroundColor: sectionDone ? '#2A7D6F' : '#e0dbd4',
-                                    color: sectionDone ? '#fff' : '#9e9186',
-                                    fontSize: 11,
-                                    fontWeight: 700,
-                                  }}
+                        {ctaLabel}
+                      </button>
+
+                      <button
+                        onClick={() => setSectionsExpanded(!sectionsExpanded)}
+                        className="flex items-center gap-1.5 transition-colors"
+                        style={{ fontSize: 14, fontWeight: 500, color: gradient.from }}
+                      >
+                        What&rsquo;s in this module
+                        <motion.span animate={{ rotate: sectionsExpanded ? 180 : 0 }} transition={{ duration: 0.2 }}>
+                          <ChevronDown size={16} />
+                        </motion.span>
+                      </button>
+                    </div>
+
+                    {/* Expandable sections */}
+                    <AnimatePresence>
+                      {sectionsExpanded && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: 'auto', opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.3, ease: [0.25, 1, 0.5, 1] }}
+                          className="overflow-hidden mb-6"
+                        >
+                          <div className="space-y-2">
+                            {getSectionsForModule(course.id, course.sectionsCount).map((section, i) => {
+                              const sectionDone = progress && progress.unlockedSection > i;
+                              return (
+                                <div
+                                  key={i}
+                                  className="flex items-start gap-3 py-2"
+                                  style={{ borderTop: i === 0 ? 'none' : '1px solid rgba(0,0,0,0.04)' }}
                                 >
-                                  {sectionDone ? <CheckCircle2 size={12} /> : i + 1}
-                                </span>
-                                <div>
-                                  <p className="text-sm font-medium" style={{ color: sectionDone ? '#1a6358' : '#1a1a1a' }}>
-                                    {section.title}
-                                  </p>
-                                  {section.eyebrow && (
-                                    <p className="text-xs mt-0.5" style={{ color: '#9e9186' }}>
-                                      {section.eyebrow.split(' // ')[1] || section.eyebrow}
+                                  <span
+                                    className="shrink-0 mt-0.5 flex items-center justify-center"
+                                    style={{
+                                      width: 22, height: 22, borderRadius: '50%',
+                                      backgroundColor: sectionDone ? gradient.from : '#e0dbd4',
+                                      color: sectionDone ? '#fff' : '#9e9186',
+                                      fontSize: 11, fontWeight: 700,
+                                    }}
+                                  >
+                                    {sectionDone ? <CheckCircle2 size={12} /> : i + 1}
+                                  </span>
+                                  <div>
+                                    <p className="text-sm font-medium text-zinc-900 dark:text-white">
+                                      {section.title}
                                     </p>
-                                  )}
+                                    {section.eyebrow && (
+                                      <p className="text-xs mt-0.5" style={{ color: '#9e9186' }}>
+                                        {section.eyebrow.split(' // ')[1] || section.eyebrow}
+                                      </p>
+                                    )}
+                                  </div>
                                 </div>
-                              </div>
-                            );
-                          })}
+                              );
+                            })}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+
+                    {/* Metadata */}
+                    <div className="mt-auto pt-5" style={{ borderTop: '1px solid rgba(0,0,0,0.06)' }}>
+                      <div className="flex flex-wrap items-center gap-6">
+                        <div>
+                          <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400" style={{ letterSpacing: '0.1em' }}>Time</p>
+                          <p className="text-sm font-medium mt-0.5 text-zinc-900 dark:text-white">{estimatedMinutes} min</p>
                         </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-
-                  {/* Divider */}
-                  <div className="mt-auto" style={{ height: 1, backgroundColor: 'rgba(0,0,0,0.06)' }} />
-
-                  {/* Metadata row */}
-                  <div className="flex flex-wrap items-center gap-6 pt-5">
-                    <div>
-                      <p className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: '#9e9186', letterSpacing: '0.1em' }}>Estimated time</p>
-                      <p className="text-sm font-medium mt-0.5" style={{ color: '#1a1a1a' }}>{estimatedMinutes} minutes</p>
-                    </div>
-                    <div>
-                      <p className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: '#9e9186', letterSpacing: '0.1em' }}>Progress</p>
-                      <p className="text-sm font-medium mt-0.5" style={{ color: isCompleted ? '#2A7D6F' : '#1a1a1a' }}>{progressLabel}</p>
-                    </div>
-                    {course.tags.length > 0 && (
-                      <div>
-                        <p className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: '#9e9186', letterSpacing: '0.1em' }}>Topics</p>
-                        <p className="text-sm font-medium mt-0.5" style={{ color: '#7a7068' }}>{course.tags.join(', ')}</p>
+                        <div>
+                          <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400" style={{ letterSpacing: '0.1em' }}>Progress</p>
+                          <p className="text-sm font-medium mt-0.5" style={{ color: isCompleted ? gradient.from : undefined }}>{progressLabel}</p>
+                        </div>
+                        {course.tags.length > 0 && (
+                          <div>
+                            <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400" style={{ letterSpacing: '0.1em' }}>Topics</p>
+                            <p className="text-sm font-medium mt-0.5 text-zinc-500">{course.tags.join(', ')}</p>
+                          </div>
+                        )}
                       </div>
-                    )}
+                    </div>
                   </div>
-                  </div>{/* end flex-col inner */}
-                </div>{/* end right column */}
-              </div>{/* end flex row */}
-            </motion.div>{/* end animated card */}
+                </div>
+              </div>
+            </motion.div>
           </AnimatePresence>
-        </motion.div>{/* end overflow container (primary card) */}
+        </motion.div>
 
-        </div>{/* end card stack container */}
+        </div>
 
-        {/* Navigation arrows — OUTSIDE the card stack, on the outer container */}
+        {/* Navigation arrows */}
         {currentIndex > 0 && (
           <button
             onClick={goPrev}
             className="absolute left-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-105"
             style={{ backgroundColor: 'rgba(255,255,255,0.9)', border: '1px solid rgba(0,0,0,0.08)', zIndex: 10 }}
           >
-            <ChevronLeft size={20} style={{ color: '#2A7D6F' }} />
+            <ChevronLeft size={20} style={{ color: gradient.from }} />
           </button>
         )}
         {currentIndex < courses.length - 1 && (
@@ -416,10 +342,10 @@ export default function ModuleShowcase({
             className="absolute right-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-105"
             style={{ backgroundColor: 'rgba(255,255,255,0.9)', border: '1px solid rgba(0,0,0,0.08)', zIndex: 10 }}
           >
-            <ChevronRight size={20} style={{ color: '#2A7D6F' }} />
+            <ChevronRight size={20} style={{ color: gradient.from }} />
           </button>
         )}
-      </div>{/* end outer relative container */}
+      </div>
 
       {/* Progress chips */}
       <div className="flex items-center justify-center gap-2 flex-nowrap" style={{ marginTop: 48 }}>
@@ -428,17 +354,11 @@ export default function ModuleShowcase({
           const done = p && p.unlockedSection >= c.sectionsCount;
           const isCurrent = i === currentIndex;
           const rawProgress = p ? p.unlockedSection / c.sectionsCount : 0;
-          const isInProgress = rawProgress > 0 && rawProgress < 1;
-
-          // Clamp minimum visible fill to 10% so even 1/20 sections is visible
-          const visibleFillPct = isInProgress ? Math.max(10, Math.round(rawProgress * 100)) : 0;
-          // Text colour: cream if fill >= 50% or completed, black if fill < 50%, grey if no progress
-          const textLight = done || (isInProgress && visibleFillPct >= 50);
+          const chipInProgress = rawProgress > 0 && rawProgress < 1;
+          const visibleFillPct = chipInProgress ? Math.max(10, Math.round(rawProgress * 100)) : 0;
+          const textLight = done || (chipInProgress && visibleFillPct >= 50);
 
           const chipSize = isCurrent ? 44 : 38;
-          const chipRadius = isCurrent ? 9 : 8;
-          const chipFontSize = isCurrent ? 14 : 13;
-          const chipFontWeight = isCurrent ? 600 : 500;
 
           return (
             <motion.button
@@ -446,34 +366,31 @@ export default function ModuleShowcase({
               onClick={() => goTo(i)}
               layout
               transition={{ duration: 0.25, ease: [0.25, 1, 0.5, 1] }}
-              className="relative overflow-hidden shrink-0 flex items-center justify-center"
+              className="relative overflow-hidden shrink-0 flex items-center justify-center rounded-xl"
               style={{
                 width: chipSize,
                 height: chipSize,
-                borderRadius: chipRadius,
-                backgroundColor: done ? '#2A7D6F' : '#EBE0C5',
-                border: isCurrent ? '2px solid #2A7D6F' : 'none',
+                backgroundColor: done ? gradient.from : isCurrent ? `${gradient.from}15` : '#f0ede8',
+                border: isCurrent ? `2px solid ${gradient.from}` : 'none',
                 cursor: 'pointer',
               }}
               whileHover={!isCurrent ? { scale: 1.05 } : {}}
               aria-label={`Go to module ${i + 1}: ${c.title}`}
             >
-              {/* Vertical fill — rendered on ALL chips with partial progress */}
-              {isInProgress && (
+              {chipInProgress && (
                 <motion.div
                   className="absolute left-0 right-0 bottom-0"
-                  style={{ backgroundColor: '#2A7D6F' }}
+                  style={{ backgroundColor: gradient.from }}
                   animate={{ height: `${visibleFillPct}%` }}
                   transition={{ duration: 0.4, ease: [0.25, 1, 0.5, 1] }}
                 />
               )}
-              {/* Number */}
               <span
                 className="relative"
                 style={{
-                  fontSize: chipFontSize,
-                  fontWeight: chipFontWeight,
-                  color: textLight ? '#FDF8F0' : isInProgress ? '#1A1A1A' : done ? '#FDF8F0' : '#8A8A8A',
+                  fontSize: isCurrent ? 14 : 13,
+                  fontWeight: isCurrent ? 600 : 500,
+                  color: textLight ? '#fff' : done ? '#fff' : isCurrent ? gradient.from : '#8a8a8a',
                   zIndex: 1,
                 }}
               >
@@ -484,7 +401,6 @@ export default function ModuleShowcase({
         })}
       </div>
 
-      {/* Module counter */}
       <p className="text-center mt-4 text-xs" style={{ color: '#9e9186' }}>
         Module {currentIndex + 1} of {courses.length}
       </p>
