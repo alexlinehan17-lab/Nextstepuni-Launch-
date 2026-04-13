@@ -46,7 +46,7 @@ interface SpacedRepetitionTimetableProps {
   streak?: TimetableStreak;
   onToggleCompletion?: (dateKey: string, blockId: string, completed: boolean) => void;
   points?: number;
-  onOpenShop?: () => void;
+  onSpendPoints?: (type: 'skip-session' | 'rest-day-pass', detail?: string) => void;
   onOpenJournal?: () => void;
   skippedSessions?: string[];
   onStudyNow?: (block: TimetableBlockInfo) => void;
@@ -289,7 +289,7 @@ const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> =
 
 // ─── Main Component ─────────────────────────────────────────────────────────
 
-const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, uid, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, _points = 0, _onOpenShop, _onOpenJournal, skippedSessions = [], onStudyNow, _onBlockDurationChange, schoolEvents = [] }) => {
+const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, uid, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, points = 0, onSpendPoints, _onOpenJournal, skippedSessions = [], onStudyNow, _onBlockDurationChange, schoolEvents = [] }) => {
   const skippedSet = useMemo(() => new Set(skippedSessions), [skippedSessions]);
   const [weekOffset, setWeekOffset] = useState(0);
   const [showExplainer, setShowExplainer] = useState(false);
@@ -462,6 +462,16 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
     const blockId = getBlockId(block, blockIndex);
     setBlockActionModal(null);
     onToggleCompletion(dateKey, blockId, true);
+  };
+
+  const handleSkipSession = () => {
+    if (!blockActionModal || !onSpendPoints) return;
+    const { block, dayIndex, blockIndex } = blockActionModal;
+    const blockId = getBlockId(block, blockIndex);
+    const dateKey = getDateKeyForDay(dayIndex);
+    const fullId = `${dateKey}::${blockId}`;
+    onSpendPoints('skip-session', fullId);
+    setBlockActionModal(null);
   };
 
   // Helper: get school events for a specific day index
@@ -1189,6 +1199,15 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                 >
                   Already Studied (+2 pts)
                 </button>
+                {onSpendPoints && points >= 20 && (
+                  <button
+                    onClick={handleSkipSession}
+                    className="w-full py-3 rounded-xl text-sm font-medium transition-all text-[#2A7D6F]"
+                    style={{ borderRadius: 12, backgroundColor: '#e8f5f2', border: '1px solid rgba(42,125,111,0.2)' }}
+                  >
+                    Skip Session (20 pts)
+                  </button>
+                )}
                 <button
                   onClick={() => setBlockActionModal(null)}
                   className="w-full py-2 text-sm transition-colors text-[#A8A29E] dark:text-zinc-500"
