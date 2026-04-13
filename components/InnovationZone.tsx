@@ -35,7 +35,6 @@ import { useTopicMastery } from '../hooks/useTopicMastery';
 import { getNotifications } from './gc/gcNotifications';
 // ReflectionModal import removed — "Already Studied" flow gives 2 pts, no reflection
 import StudyJournalModal from './StudyJournalModal';
-import RewardShopModal from './RewardShopModal';
 import AcademicJourneyGame, { type JourneyResult } from './AcademicJourneyGame';
 import ToolErrorBoundary from './ToolErrorBoundary';
 import { useNavigation } from '../contexts/NavigationContext';
@@ -72,7 +71,7 @@ function validatePointsData(raw: unknown): PointsData {
 
 // ─── InnovationZone ──────────────────────────────────────────────────────────
 
-const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, savedJourneyResult, onJourneyComplete, settings, updateSetting, onCosmeticUnlocksChange, onStudyNow }) => {
+const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, savedJourneyResult, onJourneyComplete, settings: _settings, updateSetting: _updateSetting, onCosmeticUnlocksChange, onStudyNow }) => {
     const { showToast } = useToast();
     const nav = useNavigation();
     const activeTool = nav.state.activeTool;
@@ -124,7 +123,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     earnedRestRef.current = earnedRest;
     const onCosmeticUnlocksChangeRef = useRef(onCosmeticUnlocksChange);
     onCosmeticUnlocksChangeRef.current = onCosmeticUnlocksChange;
-    const [showRewardShop, setShowRewardShop] = useState(false);
     const [showJournal, setShowJournal] = useState(false);
     const [showPointsExplainer, setShowPointsExplainer] = useState(() => {
         try { return !localStorage.getItem('nextstep-points-explainer-v2'); } catch (err) { console.error('Failed to read points explainer state:', err); return true; }
@@ -273,19 +271,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         }
     }, [executeToggle, pointsData]);
 
-    const handleSpendPoints = useCallback((type: 'skip-session' | 'rest-day-pass' | 'unlock-avatar' | 'unlock-theme' | 'unlock-card-style', detail?: string) => {
+    const _handleSpendPoints = useCallback((type: 'skip-session' | 'rest-day-pass', detail?: string) => {
         const costs: Record<string, number> = {
             'skip-session': 20,
             'rest-day-pass': 60,
-            'unlock-avatar': 50,
-            'unlock-theme': 40,
-            'unlock-card-style': 40,
         };
         const cost = costs[type];
 
         // Read latest state from refs to avoid stale closures
         const currentPoints = pointsDataRef.current;
-        const currentCosmeticUnlocks = cosmeticUnlocksRef.current;
         const currentEarnedRest = earnedRestRef.current;
 
         const balance = currentPoints.totalEarned - currentPoints.totalSpent;
@@ -299,7 +293,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
 
         const todayKey = toDateKey(new Date());
         let updatedEarnedRest = currentEarnedRest;
-        let updatedCosmeticUnlocks = currentCosmeticUnlocks;
 
         if (type === 'skip-session' && detail) {
             updatedEarnedRest = {
@@ -313,44 +306,17 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                 restDayPasses: [...currentEarnedRest.restDayPasses, todayKey],
             };
             setEarnedRest(updatedEarnedRest);
-        } else if (type === 'unlock-avatar' && detail) {
-            updatedCosmeticUnlocks = {
-                ...currentCosmeticUnlocks,
-                avatarSeeds: [...(currentCosmeticUnlocks.avatarSeeds || []), detail],
-            };
-            setCosmeticUnlocks(updatedCosmeticUnlocks);
-        } else if (type === 'unlock-theme' && detail) {
-            updatedCosmeticUnlocks = {
-                ...currentCosmeticUnlocks,
-                themeColors: [...(currentCosmeticUnlocks.themeColors || []), detail],
-            };
-            setCosmeticUnlocks(updatedCosmeticUnlocks);
-        } else if (type === 'unlock-card-style' && detail) {
-            updatedCosmeticUnlocks = {
-                ...currentCosmeticUnlocks,
-                cardStyles: [...(currentCosmeticUnlocks.cardStyles || []), detail],
-            };
-            setCosmeticUnlocks(updatedCosmeticUnlocks);
-        }
-
-        // Notify parent of cosmetic unlock changes so App.tsx state stays in sync
-        if (updatedCosmeticUnlocks !== currentCosmeticUnlocks) {
-            onCosmeticUnlocksChangeRef.current?.(updatedCosmeticUnlocks);
         }
 
         if (user?.uid) {
             setDoc(doc(db, 'progress', user.uid), {
-                'pointsData.totalSpent': increment(cost),
+                pointsData: { totalSpent: increment(cost) },
                 earnedRest: updatedEarnedRest,
-                cosmeticUnlocks: updatedCosmeticUnlocks,
             }, { merge: true }).catch(err => {
                 console.error('Failed to save purchase:', err);
                 showToast('Purchase couldn\'t be saved — check your connection', 'error');
-                // Roll back to latest ref values (may have changed since write started)
                 setPointsData(currentPoints);
                 setEarnedRest(currentEarnedRest);
-                setCosmeticUnlocks(currentCosmeticUnlocks);
-                onCosmeticUnlocksChangeRef.current?.(currentCosmeticUnlocks);
             });
         }
     }, [user?.uid]);
@@ -365,7 +331,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         setActiveTool(toolId);
     }, [subjectProfile, profileLoaded, setActiveTool]);
 
-    const skippableBlocks = useMemo(() => {
+    const _skippableBlocks = useMemo(() => {
         if (!subjectProfile) return [];
         const today = new Date();
         const todayKey = toDateKey(today);
@@ -417,7 +383,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
-            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenShop={() => setShowRewardShop(true)} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={async (_s, _t, newDuration) => { const updated = { ...subjectProfile, defaultBlockDuration: newDuration }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (err) { console.error('Failed to save block duration:', err); showToast('Couldn\'t save — check your connection', 'error'); } } }} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (err) { console.error('Failed to save rest days:', err); showToast('Couldn\'t save — check your connection', 'error'); } } }} /> : null,
+            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={async (_s, _t, newDuration) => { const updated = { ...subjectProfile, defaultBlockDuration: newDuration }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (err) { console.error('Failed to save block duration:', err); showToast('Couldn\'t save — check your connection', 'error'); } } }} onRestDaysChange={async (days) => { const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { try { await setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }); } catch (err) { console.error('Failed to save rest days:', err); showToast('Couldn\'t save — check your connection', 'error'); } } }} /> : null,
         },
         {
             id: 'war-room', title: 'War Room', description: 'Your strategic study command centre.', icon: Target, needsProfile: true,
@@ -654,18 +620,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         reflections={reflections}
       />
 
-      {/* Reward Shop Modal */}
-      <RewardShopModal
-        isOpen={showRewardShop}
-        onClose={() => setShowRewardShop(false)}
-        pointsBalance={pointsData.totalEarned - pointsData.totalSpent}
-        cosmeticUnlocks={cosmeticUnlocks}
-        earnedRest={earnedRest}
-        onSpend={handleSpendPoints}
-        skippableBlocks={skippableBlocks}
-        settings={settings}
-        updateSetting={updateSetting}
-      />
 
       {/* Points Explainer (first visit) */}
       <AnimatePresence>

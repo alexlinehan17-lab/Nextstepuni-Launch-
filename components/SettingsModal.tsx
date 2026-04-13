@@ -10,7 +10,8 @@ import { MotionDiv } from './Motion';
 import { X, Check, Lock, Sun, Moon, RefreshCw, LogOut, ChevronRight, Compass } from 'lucide-react';
 import { useModal } from '../hooks/useModal';
 import { AVATAR_SEEDS, getAvatarUrl } from '../utils/authUtils';
-import { EXTRA_AVATAR_SEEDS } from './RewardShopModal';
+
+const EXTRA_AVATAR_SEEDS = ['Luna', 'Kai', 'Suki', 'Dara', 'Nico', 'Asha', 'Finn', 'Yuki'];
 import { type UserSettings } from '../types';
 
 interface SettingsModalProps {

@@ -184,10 +184,12 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
     setIslandState(newState);
 
     const progressDocRef = doc(db, 'progress', uid);
-    setDoc(progressDocRef, { islandState: newState }, { merge: true }).catch(console.error);
     setDoc(progressDocRef, {
-      'pointsData.totalSpent': increment(price),
-    }, { merge: true }).catch(() => {});
+      islandState: newState,
+      pointsData: { totalSpent: increment(price) },
+    }, { merge: true }).catch(err => {
+      console.error('Failed to save island purchase:', err);
+    });
 
     return true;
   }, [uid, islandState, placeItem]);
