@@ -446,7 +446,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       return (
         <div className="min-h-screen bg-[#FDF8F0] dark:bg-zinc-950">
           {/* Header */}
-          <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-[#FDF8F0] dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}>
+          <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-[#FDF8F0] dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '24px' }}>
             <div className="flex items-center gap-4">
               <button onClick={handleBackToTree} className="p-2.5 rounded-xl transition-colors hover:bg-white/60" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
@@ -454,7 +454,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
             </div>
           </header>
           {/* Showcase */}
-          <div className="pt-24 md:pt-28 pb-24 md:pb-12 flex items-center justify-center" style={{ minHeight: 'calc(100vh - 80px)' }}>
+          <div className="pt-28 md:pt-32 pb-24 md:pb-12 flex items-center justify-center" style={{ minHeight: 'calc(100vh - 80px)' }}>
             <ModuleShowcase
               courses={categoryCourses}
               categoryTitle={categoryTitles[currentCategory]}
