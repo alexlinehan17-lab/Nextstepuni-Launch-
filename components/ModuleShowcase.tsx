@@ -245,8 +245,8 @@ export default function ModuleShowcase({
 
                       <button
                         onClick={() => setSectionsExpanded(!sectionsExpanded)}
-                        className="w-full flex items-center justify-center gap-1.5 py-3 rounded-full transition-colors"
-                        style={{ fontSize: 14, fontWeight: 500, color: gradient.from, backgroundColor: `${gradient.from}10`, border: `1.5px solid ${gradient.from}25` }}
+                        className="flex items-center gap-1.5 mx-auto transition-colors"
+                        style={{ fontSize: 14, fontWeight: 500, color: gradient.from }}
                       >
                         What&rsquo;s in this module
                         <motion.span animate={{ rotate: sectionsExpanded ? 180 : 0 }} transition={{ duration: 0.2 }}>
