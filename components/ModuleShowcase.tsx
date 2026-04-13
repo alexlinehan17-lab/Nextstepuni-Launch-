@@ -120,7 +120,7 @@ export default function ModuleShowcase({
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto px-4">
+    <div className="w-full max-w-6xl mx-auto px-4">
       <div className="relative">
 
         {/* Peek cards */}
@@ -159,7 +159,7 @@ export default function ModuleShowcase({
               className="rounded-3xl overflow-hidden"
               style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.04)' }}
             >
-              <div className="flex flex-col md:flex-row min-h-[340px] md:min-h-[480px]">
+              <div className="flex flex-col md:flex-row min-h-[340px] md:min-h-[520px]">
                 {/* Left — Bold gradient panel */}
                 <div
                   className="relative w-full md:w-[40%] min-h-[180px] md:min-h-0 overflow-hidden flex flex-col items-center justify-center"
@@ -172,10 +172,10 @@ export default function ModuleShowcase({
 
                   {/* Module number */}
                   <div className="relative z-10 text-center">
-                    <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '72px', fontWeight: 700, color: 'rgba(255,255,255,0.2)', lineHeight: 1 }}>
+                    <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '96px', fontWeight: 700, color: 'rgba(255,255,255,0.35)', lineHeight: 1 }}>
                       {String(currentIndex + 1).padStart(2, '0')}
                     </p>
-                    <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', marginTop: '8px' }}>
+                    <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '12px', fontWeight: 700, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.7)', textTransform: 'uppercase', marginTop: '10px' }}>
                       MODULE
                     </p>
                   </div>
@@ -330,19 +330,19 @@ export default function ModuleShowcase({
         {currentIndex > 0 && (
           <button
             onClick={goPrev}
-            className="absolute left-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-105"
-            style={{ backgroundColor: 'rgba(255,255,255,0.9)', border: '1px solid rgba(0,0,0,0.08)', zIndex: 10 }}
+            className="absolute left-[-24px] top-1/2 -translate-y-1/2 w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"
+            style={{ backgroundColor: '#fff', border: '1px solid rgba(0,0,0,0.08)', zIndex: 10 }}
           >
-            <ChevronLeft size={20} style={{ color: gradient.from }} />
+            <ChevronLeft size={22} style={{ color: gradient.from }} />
           </button>
         )}
         {currentIndex < courses.length - 1 && (
           <button
             onClick={goNext}
-            className="absolute right-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-105"
-            style={{ backgroundColor: 'rgba(255,255,255,0.9)', border: '1px solid rgba(0,0,0,0.08)', zIndex: 10 }}
+            className="absolute right-[-24px] top-1/2 -translate-y-1/2 w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"
+            style={{ backgroundColor: '#fff', border: '1px solid rgba(0,0,0,0.08)', zIndex: 10 }}
           >
-            <ChevronRight size={20} style={{ color: gradient.from }} />
+            <ChevronRight size={22} style={{ color: gradient.from }} />
           </button>
         )}
       </div>
@@ -358,7 +358,7 @@ export default function ModuleShowcase({
           const visibleFillPct = chipInProgress ? Math.max(10, Math.round(rawProgress * 100)) : 0;
           const textLight = done || (chipInProgress && visibleFillPct >= 50);
 
-          const chipSize = isCurrent ? 44 : 38;
+          const chipSize = isCurrent ? 50 : 42;
 
           return (
             <motion.button
@@ -388,8 +388,8 @@ export default function ModuleShowcase({
               <span
                 className="relative"
                 style={{
-                  fontSize: isCurrent ? 14 : 13,
-                  fontWeight: isCurrent ? 600 : 500,
+                  fontSize: isCurrent ? 16 : 14,
+                  fontWeight: isCurrent ? 700 : 500,
                   color: textLight ? '#fff' : done ? '#fff' : isCurrent ? gradient.from : '#8a8a8a',
                   zIndex: 1,
                 }}
