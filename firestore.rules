@@ -45,9 +45,10 @@ service cloud.firestore {
                   && resource.data.school == gcSchool();
     }
 
-    // Progress collection: each user can only read/write their own doc
+    // Progress collection: self read + validated writes
     match /progress/{userId} {
-      allow read, write: if request.auth != null && request.auth.uid == userId;
+      // Self-read
+      allow read: if request.auth != null && request.auth.uid == userId;
       // Admin can read + delete all progress docs (for AdminDashboard)
       allow read, delete: if request.auth != null
                   && request.auth.token.email == 'admin@nextstep.app';
@@ -60,15 +61,32 @@ service cloud.firestore {
                   && request.auth.uid != userId
                   && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school
                      == get(/databases/$(database)/documents/users/$(userId)).data.school;
+
+      // Create: self only, cap initial points
+      allow create: if request.auth != null && request.auth.uid == userId
+                   && (!('pointsData' in request.resource.data)
+                       || request.resource.data.pointsData.totalEarned <= 1000);
+
+      // Update: self + field validation on critical gamification fields
+      allow update: if request.auth != null && request.auth.uid == userId
+        // Points earned can only increase, max +1000 per write
+        && (!('pointsData' in resource.data)
+            || !('totalEarned' in resource.data.pointsData)
+            || (request.resource.data.pointsData.totalEarned >= resource.data.pointsData.totalEarned
+                && request.resource.data.pointsData.totalEarned <= resource.data.pointsData.totalEarned + 1000))
+        // Points spent can only increase (no refunds)
+        && (!('pointsData' in resource.data)
+            || !('totalSpent' in resource.data.pointsData)
+            || request.resource.data.pointsData.totalSpent >= resource.data.pointsData.totalSpent)
+        // Achievements can only be appended, never removed
+        && (!('gamification' in resource.data)
+            || !('unlockedAchievements' in resource.data.gamification)
+            || request.resource.data.gamification.unlockedAchievements
+                 .hasAll(resource.data.gamification.unlockedAchievements));
     }
 
     // Settings collection: each user can only read/write their own doc
     match /settings/{userId} {
-      allow read, write: if request.auth != null && request.auth.uid == userId;
-    }
-
-    // Streaks collection: each user can only read/write their own doc
-    match /streaks/{userId} {
       allow read, write: if request.auth != null && request.auth.uid == userId;
     }
 
@@ -91,9 +109,16 @@ service cloud.firestore {
                          && schoolId == gcSchool();
     }
 
-    // Notifications: students read/write their own; GCs write to any student in their school
+    // Notifications: self read/write + GC read/write for same-school students
     match /notifications/{userId} {
-      allow read, write: if request.auth != null;
+      // Any user can read/write their own notifications (mark read, auto-notifications)
+      allow read, create, update: if request.auth != null && request.auth.uid == userId;
+
+      // GCs can read/write notifications for students in their school
+      // (read needed because addNotification uses runTransaction with txn.get)
+      allow read, create, update: if request.auth != null
+                   && isGC()
+                   && get(/databases/$(database)/documents/users/$(userId)).data.school == gcSchool();
     }
 
     // Kudos collection: peer encouragement notes
@@ -176,10 +201,11 @@ service cloud.firestore {
                     && request.resource.data.question == resource.data.question
                     && request.resource.data.createdAt == resource.data.createdAt
                     && request.resource.data.expiresAt == resource.data.expiresAt;
-      // Same-school peers can increment responseCount (only responseCount changes)
+      // Same-school peers can increment responseCount (pinned to +1, matching teachbacks pattern)
       allow update: if request.auth != null
                     && resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school
                     && resource.data.senderUid != request.auth.uid
+                    && request.resource.data.responseCount == resource.data.responseCount + 1
                     && request.resource.data.status == resource.data.status
                     && request.resource.data.senderUid == resource.data.senderUid
                     && request.resource.data.school == resource.data.school

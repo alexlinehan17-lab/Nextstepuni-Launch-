@@ -52,15 +52,6 @@ const MAX_DAILY = 3;
 const MAX_WEEKLY = 10;
 const FLARE_TTL_MS = 24 * 60 * 60 * 1000; // 24 hours
 
-// ── Lighthouse levels ──────────────────────────────────────
-
-function getLighthouseLevel(count: number): number {
-  if (count >= 30) return 3;  // beacon tower
-  if (count >= 15) return 2;  // lighthouse
-  if (count >= 5) return 1;   // lantern
-  return 0;                   // nothing
-}
-
 // ── Helpers ────────────────────────────────────────────────
 
 function getDateKey(): string {
@@ -88,8 +79,6 @@ export function useFlares(uid?: string, school?: string, subjects?: string[]) {
   const [myFlares, setMyFlares] = useState<FlareDoc[]>([]);
   const [myFlareResponses, setMyFlareResponses] = useState<Record<string, FlareResponse[]>>({});
   const [isLoading, setIsLoading] = useState(false);
-  const [rescueCount, setRescueCount] = useState(0);
-  const [lighthouseLevel, setLighthouseLevel] = useState(0);
   const [flareCounts, setFlareCounts] = useState<FlareCounts>({
     daily: 0, dailyDate: '', weekly: 0, weeklyStart: '',
     dailyRemaining: MAX_DAILY, dailyLimit: MAX_DAILY,
@@ -229,9 +218,6 @@ export function useFlares(uid?: string, school?: string, subjects?: string[]) {
     if (!progressLoaded || !uid) return;
 
     const data = rawProgressDoc;
-    setRescueCount(data.rescueCount || 0);
-    setLighthouseLevel(data.lighthouseLevel || 0);
-
     const rawCounts = data.flareCounts || { daily: 0, dailyDate: '', weekly: 0, weeklyStart: '' };
     const today = getDateKey();
     const weekStart = getWeekStart();
@@ -440,26 +426,6 @@ export function useFlares(uid?: string, school?: string, subjects?: string[]) {
         };
       });
 
-      // Try to update responder's rescueCount (may fail if cross-user write is denied)
-      try {
-        const responseSnap = await getDoc(responseRef);
-        if (responseSnap.exists()) {
-          const responderUid = responseSnap.data().responderUid;
-          const responderProgressRef = doc(db, 'progress', responderUid);
-          const responderSnap = await getDoc(responderProgressRef);
-          const currentRescueCount = responderSnap.exists()
-            ? (responderSnap.data().rescueCount || 0)
-            : 0;
-          const newLevel = getLighthouseLevel(currentRescueCount + 1);
-
-          await setDoc(responderProgressRef, {
-            rescueCount: increment(1),
-            lighthouseLevel: newLevel,
-          }, { merge: true });
-        }
-      } catch {
-        // Cross-user progress write not permitted — rescue count will be updated via Cloud Function later
-      }
     } catch {
       console.error('[useFlares] Failed to mark helpful:');
     }
@@ -501,8 +467,6 @@ export function useFlares(uid?: string, school?: string, subjects?: string[]) {
     myFlares,
     myFlareResponses,
     isLoading,
-    rescueCount,
-    lighthouseLevel,
     flareCounts,
     sendFlare,
     respondToFlare,

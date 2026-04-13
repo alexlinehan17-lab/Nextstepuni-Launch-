@@ -92,9 +92,7 @@ const JourneyView: React.FC<JourneyViewProps> = ({
   const [flareSystemOpen, setFlareSystemOpen] = useState(false);
   const [flareInitialView, setFlareInitialView] = useState<'launcher' | 'feed'>('launcher');
   const [activeFlareCount, setActiveFlareCount] = useState(0);
-  const [rescueCount, setRescueCount] = useState(0);
-
-  // Fetch active flare count + rescue count
+  // Fetch active flare count
   useEffect(() => {
     if (!user?.uid || !user?.school || !subjects?.length || flaresEnabled === false) return;
     let cancelled = false;
@@ -117,15 +115,6 @@ const JourneyView: React.FC<JourneyViewProps> = ({
         }).length;
         setActiveFlareCount(count);
 
-        // Fetch rescue count from user doc
-        try {
-          const userDoc = await getDoc(doc(db, 'users', user.uid));
-          if (!cancelled && userDoc.exists()) {
-            setRescueCount(userDoc.data()?.rescueCount ?? 0);
-          }
-        } catch {
-          // Non-critical
-        }
       } catch {
         console.error('Failed to fetch flare count:');
       }
@@ -364,48 +353,6 @@ const JourneyView: React.FC<JourneyViewProps> = ({
             )}
           </AnimatePresence>
 
-          {/* Lighthouse Visual — based on rescue count */}
-          {!isViewingPeer && flaresEnabled !== false && rescueCount >= 5 && (
-            <div className="absolute bottom-28 right-6 z-[71] pointer-events-none flex flex-col items-center">
-              {rescueCount >= 30 ? (
-                /* Beacon tower — 30+ rescues */
-                <MotionDiv
-                  animate={{ opacity: [0.7, 1, 0.7] }}
-                  transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-                  className="flex flex-col items-center"
-                >
-                  <div className="w-3 h-3 rounded-full bg-amber-400 shadow-lg shadow-amber-400/60 mb-1" />
-                  <svg width="24" height="40" viewBox="0 0 24 40" fill="none" className="text-amber-300">
-                    <rect x="8" y="8" width="8" height="28" rx="2" fill="currentColor" opacity="0.9" />
-                    <rect x="6" y="32" width="12" height="4" rx="1" fill="currentColor" opacity="0.7" />
-                    <rect x="9" y="2" width="6" height="8" rx="3" fill="currentColor" />
-                  </svg>
-                  <p className="text-[9px] font-bold text-amber-400/80 mt-1">{rescueCount} rescues</p>
-                </MotionDiv>
-              ) : rescueCount >= 15 ? (
-                /* Lighthouse — 15-29 rescues */
-                <div className="flex flex-col items-center">
-                  <svg width="20" height="32" viewBox="0 0 20 32" fill="none" className="text-amber-300">
-                    <rect x="7" y="6" width="6" height="22" rx="1.5" fill="currentColor" opacity="0.8" />
-                    <rect x="5" y="24" width="10" height="4" rx="1" fill="currentColor" opacity="0.6" />
-                    <circle cx="10" cy="4" r="3" fill="currentColor" opacity="0.9" />
-                  </svg>
-                  <p className="text-[9px] font-bold text-amber-300/70 mt-1">{rescueCount} rescues</p>
-                </div>
-              ) : (
-                /* Small lantern — 5-14 rescues */
-                <div className="flex flex-col items-center">
-                  <svg width="16" height="20" viewBox="0 0 16 20" fill="none" className="text-yellow-400">
-                    <rect x="5" y="6" width="6" height="10" rx="1" fill="currentColor" opacity="0.7" />
-                    <circle cx="8" cy="4" r="2.5" fill="currentColor" opacity="0.8" />
-                    <rect x="4" y="14" width="8" height="3" rx="1" fill="currentColor" opacity="0.5" />
-                  </svg>
-                  <p className="text-[9px] font-bold text-yellow-400/60 mt-1">{rescueCount} rescues</p>
-                </div>
-              )}
-            </div>
-          )}
-
           {/* Progress Pill — shown when drawer is closed and viewing own island */}
           <AnimatePresence>
             {!sheetOpen && !isViewingPeer && (
@@ -596,12 +543,6 @@ const JourneyView: React.FC<JourneyViewProps> = ({
                         && data.expiresAt?.toDate() > now;
                     }).length;
                     setActiveFlareCount(count);
-                  }).catch(() => {});
-                  // Also re-fetch rescue count
-                  getDoc(doc(db, 'users', user.uid)).then(userDoc => {
-                    if (userDoc.exists()) {
-                      setRescueCount(userDoc.data()?.rescueCount ?? 0);
-                    }
                   }).catch(() => {});
                 }
               }}

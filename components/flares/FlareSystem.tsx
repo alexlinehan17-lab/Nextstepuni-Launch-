@@ -56,13 +56,6 @@ const TAB_ITEMS: { key: FlareTab; label: string; icon: React.ReactNode }[] = [
   { key: 'stats', label: 'Stats', icon: <ThumbsUp size={13} /> },
 ];
 
-const LIGHTHOUSE_LEVELS = [
-  { threshold: 0, label: 'No Light', next: 5 },
-  { threshold: 5, label: 'Lantern', next: 15 },
-  { threshold: 15, label: 'Lighthouse', next: 30 },
-  { threshold: 30, label: 'Beacon Tower', next: null },
-];
-
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
 function timeAgo(date: Date): string {
@@ -78,18 +71,6 @@ function getSubjectColors(subject: string) {
   return SUBJECT_COLORS[subject] ?? DEFAULT_COLOR;
 }
 
-function getLighthouseInfo(rescueCount: number) {
-  let current = LIGHTHOUSE_LEVELS[0];
-  for (const level of LIGHTHOUSE_LEVELS) {
-    if (rescueCount >= level.threshold) current = level;
-  }
-  const idx = LIGHTHOUSE_LEVELS.indexOf(current);
-  const nextLevel = idx < LIGHTHOUSE_LEVELS.length - 1 ? LIGHTHOUSE_LEVELS[idx + 1] : null;
-  const remaining = nextLevel ? nextLevel.threshold - rescueCount : 0;
-  const nextLabel = nextLevel?.label ?? null;
-  return { level: idx, label: current.label, remaining, nextLabel };
-}
-
 // ─── Sub-components ─────────────────────────────────────────────────────────
 
 /** Subject pill badge */
@@ -99,91 +80,6 @@ const SubjectPill: React.FC<{ subject: string; className?: string }> = ({ subjec
     <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider border ${colors.bg} ${colors.text} ${colors.border} ${className}`}>
       {subject}
     </span>
-  );
-};
-
-/** Lighthouse SVG visualization */
-const LighthouseVis: React.FC<{ level: number }> = ({ level }) => {
-  if (level === 0) {
-    return (
-      <div className="w-24 h-32 mx-auto flex items-center justify-center">
-        <svg viewBox="0 0 60 80" className="w-full h-full opacity-20">
-          <rect x="20" y="20" width="20" height="50" rx="2" fill="none" stroke="#71717a" strokeWidth="2" strokeDasharray="4 2" />
-          <polygon points="15,20 45,20 40,8 20,8" fill="none" stroke="#71717a" strokeWidth="2" strokeDasharray="4 2" />
-          <circle cx="30" cy="14" r="4" fill="none" stroke="#71717a" strokeWidth="1.5" strokeDasharray="3 2" />
-          <rect x="16" y="70" width="28" height="4" rx="2" fill="none" stroke="#71717a" strokeWidth="2" strokeDasharray="4 2" />
-        </svg>
-      </div>
-    );
-  }
-
-  if (level === 1) {
-    return (
-      <div className="w-24 h-32 mx-auto flex items-center justify-center">
-        <svg viewBox="0 0 60 80" className="w-full h-full">
-          <rect x="22" y="30" width="16" height="40" rx="2" fill="#78716c" />
-          <polygon points="18,30 42,30 38,18 22,18" fill="#a8a29e" />
-          <circle cx="30" cy="24" r="5" fill="#fbbf24">
-            <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite" />
-          </circle>
-          <rect x="18" y="70" width="24" height="4" rx="2" fill="#57534e" />
-        </svg>
-      </div>
-    );
-  }
-
-  if (level === 2) {
-    return (
-      <div className="w-24 h-32 mx-auto flex items-center justify-center">
-        <svg viewBox="0 0 60 80" className="w-full h-full">
-          <rect x="20" y="25" width="20" height="45" rx="2" fill="#78716c" />
-          <rect x="24" y="40" width="5" height="6" rx="1" fill="#fbbf24" opacity="0.4" />
-          <rect x="31" y="40" width="5" height="6" rx="1" fill="#fbbf24" opacity="0.4" />
-          <rect x="24" y="52" width="5" height="6" rx="1" fill="#fbbf24" opacity="0.3" />
-          <rect x="31" y="52" width="5" height="6" rx="1" fill="#fbbf24" opacity="0.3" />
-          <polygon points="16,25 44,25 40,10 20,10" fill="#a8a29e" />
-          <circle cx="30" cy="17" r="6" fill="#f59e0b">
-            <animate attributeName="opacity" values="0.8;1;0.8" dur="1.5s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="30" cy="17" r="10" fill="#fbbf24" opacity="0.15">
-            <animate attributeName="r" values="10;14;10" dur="2s" repeatCount="indefinite" />
-            <animate attributeName="opacity" values="0.15;0.05;0.15" dur="2s" repeatCount="indefinite" />
-          </circle>
-          <rect x="16" y="70" width="28" height="4" rx="2" fill="#57534e" />
-        </svg>
-      </div>
-    );
-  }
-
-  // Level 3: Beacon Tower
-  return (
-    <div className="w-28 h-36 mx-auto flex items-center justify-center">
-      <svg viewBox="0 0 70 90" className="w-full h-full">
-        <rect x="22" y="28" width="26" height="50" rx="3" fill="#78716c" />
-        <rect x="26" y="42" width="6" height="7" rx="1" fill="#fbbf24" opacity="0.5" />
-        <rect x="34" y="42" width="6" height="7" rx="1" fill="#fbbf24" opacity="0.5" />
-        <rect x="26" y="55" width="6" height="7" rx="1" fill="#fbbf24" opacity="0.4" />
-        <rect x="34" y="55" width="6" height="7" rx="1" fill="#fbbf24" opacity="0.4" />
-        <rect x="26" y="67" width="6" height="5" rx="1" fill="#fbbf24" opacity="0.3" />
-        <rect x="34" y="67" width="6" height="5" rx="1" fill="#fbbf24" opacity="0.3" />
-        <polygon points="17,28 53,28 48,12 22,12" fill="#a8a29e" />
-        <circle cx="35" cy="20" r="7" fill="#f59e0b">
-          <animate attributeName="opacity" values="0.9;1;0.9" dur="1s" repeatCount="indefinite" />
-        </circle>
-        <circle cx="35" cy="20" r="14" fill="#fbbf24" opacity="0.12">
-          <animate attributeName="r" values="14;22;14" dur="2.5s" repeatCount="indefinite" />
-          <animate attributeName="opacity" values="0.12;0.03;0.12" dur="2.5s" repeatCount="indefinite" />
-        </circle>
-        <circle cx="35" cy="20" r="20" fill="#fbbf24" opacity="0.06">
-          <animate attributeName="r" values="20;30;20" dur="3s" repeatCount="indefinite" />
-          <animate attributeName="opacity" values="0.06;0.01;0.06" dur="3s" repeatCount="indefinite" />
-        </circle>
-        <line x1="35" y1="20" x2="0" y2="10" stroke="#fbbf24" strokeWidth="2" opacity="0.15">
-          <animateTransform attributeName="transform" type="rotate" from="0 35 20" to="360 35 20" dur="6s" repeatCount="indefinite" />
-        </line>
-        <rect x="18" y="78" width="34" height="5" rx="2" fill="#57534e" />
-      </svg>
-    </div>
   );
 };
 
@@ -218,8 +114,6 @@ const FlareSystem: React.FC<FlareSystemProps> = ({
   const {
     activeFlares,
     myFlares,
-    rescueCount,
-    _lighthouseLevel,
     flareCounts,
     isLoading,
     sendFlare,
@@ -321,8 +215,6 @@ const FlareSystem: React.FC<FlareSystemProps> = ({
   }, [resolveFlare]);
 
   const canSendFlare = selectedSubject && questionText.trim().length > 0 && !profanityError && !isSending;
-
-  const lighthouseInfo = getLighthouseInfo(rescueCount);
 
   const myActiveFlares = myFlares.filter(f => f.status === 'active');
 
@@ -822,52 +714,12 @@ const FlareSystem: React.FC<FlareSystemProps> = ({
                   {/* ─── Tab: Stats ─── */}
                   {activeTab === 'stats' && (
                     <div className="space-y-6 py-2">
-                      {/* Hero stat */}
                       <div className="text-center">
-                        <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-amber-500/10 to-orange-500/10 border border-amber-500/10 mb-3">
-                          <p className="text-4xl font-bold text-zinc-900 dark:text-white tabular-nums">{rescueCount}</p>
-                        </div>
-                        <p className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">classmates helped</p>
+                        <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">Flare Stats</p>
+                        <p className="text-[11px] text-zinc-400 dark:text-zinc-500 mt-2">
+                          {flareCounts.dailyRemaining} flare{flareCounts.dailyRemaining !== 1 ? 's' : ''} remaining today
+                        </p>
                       </div>
-
-                      {/* Lighthouse visualization */}
-                      <div className="p-5 rounded-xl bg-zinc-50 dark:bg-white/[0.03] border border-zinc-200/50 dark:border-white/[0.06]">
-                        <div className="text-center">
-                          <LighthouseVis level={lighthouseInfo.level} />
-                          <p className="text-sm font-semibold text-amber-600 dark:text-amber-400 mt-2">{lighthouseInfo.label}</p>
-                        </div>
-
-                        {/* Progress to next level */}
-                        {lighthouseInfo.nextLabel && (
-                          <div className="space-y-2 mt-5">
-                            <div className="flex justify-between text-[10px] font-medium text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">
-                              <span>{lighthouseInfo.label}</span>
-                              <span>{lighthouseInfo.nextLabel}</span>
-                            </div>
-                            <div className="h-1.5 bg-zinc-200 dark:bg-white/[0.06] rounded-full overflow-hidden">
-                              <MotionDiv
-                                initial={{ width: 0 }}
-                                animate={{
-                                  width: `${Math.min(100, ((rescueCount - LIGHTHOUSE_LEVELS[lighthouseInfo.level].threshold) / (LIGHTHOUSE_LEVELS[lighthouseInfo.level + 1].threshold - LIGHTHOUSE_LEVELS[lighthouseInfo.level].threshold)) * 100)}%`,
-                                }}
-                                transition={{ duration: 0.8, ease: 'easeOut' }}
-                                className="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full"
-                              />
-                            </div>
-                            <p className="text-[10px] text-zinc-400 dark:text-zinc-500 text-center font-medium">
-                              {lighthouseInfo.remaining} more rescue{lighthouseInfo.remaining !== 1 ? 's' : ''} to reach <span className="text-amber-600 dark:text-amber-400">{lighthouseInfo.nextLabel}</span>
-                            </p>
-                          </div>
-                        )}
-
-                        {lighthouseInfo.level >= 3 && (
-                          <p className="text-xs text-amber-600 dark:text-amber-400 text-center font-semibold mt-4">
-                            Maximum level reached!
-                          </p>
-                        )}
-                      </div>
-
-                      {/* Motivational text */}
                       <div className="text-center">
                         <p className="text-[11px] text-zinc-400 dark:text-zinc-500 italic leading-relaxed">
                           Every response strengthens your own understanding
