@@ -146,7 +146,10 @@ export interface IslandPlacement {
   scale?: number;
   offsetX?: number;
   offsetZ?: number;
-  purchasedAt: string;
+  // Optional: present on the owner's own placements (used for the
+  // "newly purchased" animation in HexIsland.tsx). Absent on placements
+  // loaded from /islandPublic/{uid} for peer view, by design.
+  purchasedAt?: string;
   isStarter?: boolean;
 }
 

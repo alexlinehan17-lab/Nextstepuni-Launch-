@@ -1,20 +1,14 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# NextStepUni Learning Lab
 
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/drive/1aHQFCvlG6rYl0HqBAduwwnHNsBhUiAIu
+Educational web application delivering a study-skills programme to Irish Leaving Cert students. React 19 + TypeScript SPA on Firebase (Auth + Firestore + Hosting + Cloud Functions).
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+**Prerequisites:** Node.js
 
+1. Install dependencies: `npm install`
+2. Run the app: `npm run dev`
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## AI features
+
+None currently active. Future GenAI integration would require an updated AI Governance Schedule per [`compliance/AI_GOVERNANCE_SCHEDULE.md`](compliance/AI_GOVERNANCE_SCHEDULE.md). See [`compliance/GEMINI_AUDIT.md`](compliance/GEMINI_AUDIT.md) for the most recent audit of this position.

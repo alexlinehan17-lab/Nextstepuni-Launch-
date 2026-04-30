@@ -19,7 +19,7 @@ No test runner or linter is configured. There are no test or lint commands.
 
 ## Environment
 
-Requires `GEMINI_API_KEY` set in `.env.local` for Google Gemini API integration.
+No environment variables are required for the current build. There is no active GenAI integration; see `compliance/GEMINI_AUDIT.md` for the audit trail. Any future GenAI integration must go through `compliance/AI_GOVERNANCE_SCHEDULE.md` first.
 
 ## Architecture
 

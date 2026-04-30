@@ -64,15 +64,21 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
   const [tab, setTab] = useState<'islands' | 'leaderboard'>('islands');
 
   const leaderboard = useMemo(() => {
+    // Peers: score and placementCount come pre-computed from the
+    // /islandPublic projection (purchaseHistory is not exposed on the
+    // peer side; the projection ships the score directly).
     const entries = peers.map(p => ({
       uid: p.uid,
       name: p.name,
       avatar: p.avatar,
-      score: computeIslandScore(p.islandState),
-      placements: p.islandState.placements.filter(pl => !pl.isStarter).length,
+      score: p.score,
+      placements: p.placementCount,
       isCurrentUser: false,
       peer: p,
     }));
+    // Current user has the full islandState locally, so we can still
+    // compute their score with the canonical helper (which keeps the
+    // owner's leaderboard placement in lock-step with their own data).
     if (currentUserIsland) {
       entries.push({
         uid: currentUserIsland.uid,

@@ -4,17 +4,30 @@
  */
 
 import { useState, useEffect, useCallback } from 'react';
-import { collection, query, where, getDocs, doc, getDoc } from 'firebase/firestore';
+import { collection, query, where, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
-import { type IslandState, type NorthStarCategory } from '../types';
-import { createStarterState } from './useIslandShop';
+import { type IslandPlacement, type NorthStarCategory } from '../types';
 
+/**
+ * PeerIsland is the in-memory shape exposed to consumers of this hook.
+ * It is derived from the /islandPublic/{uid} projection (see
+ * compliance/PEER_ISLAND_REFACTOR_PLAN.md and
+ * functions/src/islandProjection.ts).
+ *
+ * The `islandState` field is deliberately a thin subset — only `category`
+ * and `placements`, which are the only fields the peer-view UI renders.
+ */
 export interface PeerIsland {
   uid: string;
   name: string;
   avatar: string;
-  islandState: IslandState;
+  islandState: {
+    category: NorthStarCategory;
+    placements: IslandPlacement[];
+  };
   northStarCategory: NorthStarCategory;
+  placementCount: number;
+  score: number;
 }
 
 export function usePeerIslands(uid?: string, school?: string) {
@@ -37,56 +50,34 @@ export function usePeerIslands(uid?: string, school?: string) {
 
     (async () => {
       try {
-        // Query users in the same school
-        const usersRef = collection(db, 'users');
-        const q = query(usersRef, where('school', '==', school));
+        // Single same-school query against the public projection.
+        // Server-side (Cloud Function) ensures only student-role users
+        // appear here — staff accounts are excluded by the projection
+        // builder, so no client-side filtering by role is needed.
+        const islandRef = collection(db, 'islandPublic');
+        const q = query(islandRef, where('school', '==', school));
         const snapshot = await getDocs(q);
 
-        // Filter out self, GCs, and admins
-        const candidates = snapshot.docs.filter(d => {
-          if (d.id === uid) return false;
-          const data = d.data();
-          if (data.role === 'gc' || data.role === 'admin' || data.isAdmin) return false;
-          return true;
-        });
-
-        // Fetch progress for each candidate in parallel
-        const results = await Promise.allSettled(
-          candidates.map(async (userDoc) => {
-            const userData = userDoc.data();
-            const progressSnap = await getDoc(doc(db, 'progress', userDoc.id));
-            if (!progressSnap.exists()) return null;
-
-            const progressData = progressSnap.data();
-            const northStar = progressData?.northStar;
-            const islandState = progressData?.islandState as IslandState | undefined;
-
-            const category = (northStar?.category || islandState?.category) as NorthStarCategory | undefined;
-
-            // Need at least a category to determine which island to show
-            if (!category) return null;
-
-            // If they have a northStar but haven't opened Journey yet, generate starter island
-            const effectiveIsland = (islandState?.placements?.length)
-              ? islandState
-              : createStarterState(category);
-
+        const validPeers: PeerIsland[] = snapshot.docs
+          .filter(d => d.id !== uid)
+          .map(d => {
+            const data = d.data();
+            const category = data.category as NorthStarCategory;
             return {
-              uid: userDoc.id,
-              name: userData.name || 'Student',
-              avatar: userData.avatar || 'James',
-              islandState: effectiveIsland,
+              uid: d.id,
+              name: typeof data.name === 'string' ? data.name : 'Student',
+              avatar: typeof data.avatar === 'string' ? data.avatar : 'James',
+              islandState: {
+                category,
+                placements: (data.placements ?? []) as IslandPlacement[],
+              },
               northStarCategory: category,
-            } as PeerIsland;
-          })
-        );
+              placementCount: typeof data.placementCount === 'number' ? data.placementCount : 0,
+              score: typeof data.score === 'number' ? data.score : 0,
+            };
+          });
 
         if (cancelled) return;
-
-        const validPeers = results
-          .filter((r): r is PromiseFulfilledResult<PeerIsland | null> => r.status === 'fulfilled')
-          .map(r => r.value)
-          .filter((p): p is PeerIsland => p !== null);
 
         setPeers(validPeers);
       } catch (err) {

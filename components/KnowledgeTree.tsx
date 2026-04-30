@@ -159,6 +159,7 @@ const BentoTile: React.FC<BentoTileProps> = ({
   delay = 0
 }) => {
   const hasGradient = gradientFrom && gradientTo;
+  console.log('[BentoTile DEBUG]', { title, gradientFrom, gradientTo, hasGradient: !!hasGradient });
 
   return (
     <MotionDiv

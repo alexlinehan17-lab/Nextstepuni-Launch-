@@ -56,11 +56,10 @@ service cloud.firestore {
       allow read, delete: if request.auth != null
                   && isGC()
                   && get(/databases/$(database)/documents/users/$(userId)).data.school == gcSchool();
-      // Peer Islands: students can read progress of same-school peers
-      allow read: if request.auth != null
-                  && request.auth.uid != userId
-                  && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school
-                     == get(/databases/$(database)/documents/users/$(userId)).data.school;
+      // Remediation 2026-04-29 (DPIA risk R1): the previous same-school
+      // "Peer Islands" peer-read rule on /progress/{userId} was removed.
+      // Read access is now restricted to: self, admin, GC of same school.
+      // See compliance/REMEDIATION_LOG.md.
 
       // Create: self only, cap initial points
       allow create: if request.auth != null && request.auth.uid == userId
@@ -245,6 +244,26 @@ service cloud.firestore {
       // Students can read their school's events (for timetable integration)
       allow read: if request.auth != null
                   && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school == schoolId;
+    }
+
+    // Island Public: minimal public projection of a student's island
+    // (rebuilt 2026-04-29 to replace the same-school read on /progress
+    // that was the original R1 exposure — see
+    // compliance/PEER_ISLAND_REFACTOR_PLAN.md).
+    // Same-school students may read; only Cloud Functions write
+    // (Admin SDK bypasses Firestore rules).
+    //
+    // Rule compares resource.data.school (the queried projection doc's
+    // own school field) against the requester's school via a single
+    // get() on /users. This shape is required for Firestore queries:
+    // a rule that depends on get() of the *target* /users doc cannot
+    // be verified against the query's potential result set, so the
+    // query is denied even when individual docs would be readable.
+    match /islandPublic/{uid} {
+      allow read: if request.auth != null
+                  && resource.data.school
+                     == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
+      allow write: if false;
     }
 
     // Default deny — no other collections are accessible
