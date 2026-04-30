@@ -110,7 +110,7 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
           </div>
           <div className="text-center">
             <p className="text-xl font-medium font-apercu text-zinc-800 dark:text-white">+{pointsEarned}</p>
-            <p className="text-xs text-zinc-400 dark:text-zinc-500">points earned</p>
+            <p className="text-xs text-zinc-400 dark:text-zinc-500">journey points earned</p>
           </div>
         </div>
 
@@ -202,7 +202,7 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
               transition={{ duration: 0.3 }}
               className="text-center mt-3"
             >
-              <p className="text-xs font-medium" style={{ color: '#2A7D6F' }}>+5 bonus points for reflecting</p>
+              <p className="text-xs font-medium" style={{ color: '#2A7D6F' }}>+5 bonus journey points for reflecting</p>
             </MotionDiv>
           )}
         </AnimatePresence>

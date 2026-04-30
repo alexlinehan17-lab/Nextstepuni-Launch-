@@ -209,7 +209,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                 );
               })}
               <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '12px', fontWeight: 600, color: '#2A7D6F', marginLeft: '4px' }}>
-                {weeklyGoals.filter(g => (weeklyGoalProgress[g.metric] ?? 0) >= g.target).length === 3 ? 'Bonus earned!' : '+50 pts bonus'}
+                {weeklyGoals.filter(g => (weeklyGoalProgress[g.metric] ?? 0) >= g.target).length === 3 ? 'Bonus earned!' : '+50 JP bonus'}
               </span>
             </div>
           </div>

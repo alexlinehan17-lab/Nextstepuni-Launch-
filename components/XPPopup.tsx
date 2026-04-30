@@ -41,7 +41,7 @@ const XPPopup: React.FC<XPPopupProps> = ({ points, isVisible, onComplete }) => {
             }}
           >
             <span className="text-white text-lg font-bold">+{points}</span>
-            <span className="text-white/80 text-sm font-medium">pts</span>
+            <span className="text-white/80 text-sm font-medium">JP</span>
           </div>
         </MotionDiv>
       )}

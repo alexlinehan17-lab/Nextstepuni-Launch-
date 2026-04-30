@@ -97,7 +97,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
             </div>
             <div className="rounded-2xl px-4 py-3 text-center" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
               <p className="text-xl font-apercu font-bold text-white">{pointsBalance}</p>
-              <p className="text-[10px] uppercase tracking-widest font-semibold mt-0.5" style={{ color: 'rgba(255,255,255,0.7)' }}>Points</p>
+              <p className="text-[10px] uppercase tracking-widest font-semibold mt-0.5" style={{ color: 'rgba(255,255,255,0.7)' }}>Journey Points</p>
             </div>
           </MotionDiv>
         </div>

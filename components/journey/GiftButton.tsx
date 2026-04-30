@@ -110,7 +110,7 @@ const GiftButton: React.FC<GiftButtonProps> = ({
                       <X size={16} className="text-zinc-400" />
                     </button>
                   </div>
-                  <p className="text-[10px] text-zinc-400 mb-3">Pick a decoration to send. Costs come from your points.</p>
+                  <p className="text-[10px] text-zinc-400 mb-3">Pick a decoration to send. Costs come from your journey points.</p>
 
                   <div className="overflow-y-auto flex-1" style={{ scrollbarWidth: 'none' }}>
                     <div className="grid grid-cols-2 gap-2">
@@ -130,7 +130,7 @@ const GiftButton: React.FC<GiftButtonProps> = ({
                           >
                             <p className="text-xs font-semibold text-zinc-800 dark:text-zinc-200">{item.name}</p>
                             <p className="text-[10px] text-zinc-500 dark:text-zinc-400 mt-0.5 line-clamp-1">{item.description}</p>
-                            <p className="text-[10px] font-bold text-amber-600 dark:text-amber-400 mt-1">{item.price} pts</p>
+                            <p className="text-[10px] font-bold text-amber-600 dark:text-amber-400 mt-1">{item.price} JP</p>
                           </MotionButton>
                         );
                       })}

@@ -226,7 +226,7 @@ const IslandShopDrawer: React.FC<IslandShopDrawerProps> = ({
                         {item.hasDiscount && (
                           <span className="line-through opacity-60 mr-1">{item.originalPrice}</span>
                         )}
-                        {item.effectivePrice} pts
+                        {item.effectivePrice} JP
                       </button>
                     )}
                   </div>
@@ -281,7 +281,7 @@ const IslandShopDrawer: React.FC<IslandShopDrawerProps> = ({
           <div className="flex items-center justify-between px-4 pb-2 pt-2">
             <h3 className="text-sm font-semibold text-zinc-900 dark:text-white">Island Shop</h3>
             <div className="flex items-center gap-2">
-              <span className="text-sm font-bold text-[var(--accent-hex)]">{pointsBalance} pts</span>
+              <span className="text-sm font-bold text-[var(--accent-hex)]">{pointsBalance} JP</span>
               <button onClick={onClose} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800">
                 {isDesktop ? (
                   <ChevronRight size={16} className="text-zinc-400" />

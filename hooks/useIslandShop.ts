@@ -50,7 +50,7 @@ export interface MilestoneRewardStatus {
 }
 
 export function useIslandShop(uid?: string, northStar?: NorthStar | null, completedCount: number = 0) {
-  const { rawProgressDoc, progressLoaded } = useProgress();
+  const { rawProgressDoc, progressLoaded, reloadProgress } = useProgress();
   const [islandState, setIslandState] = useState<IslandState | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -187,12 +187,14 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
     setDoc(progressDocRef, {
       islandState: newState,
       pointsData: { totalSpent: increment(price) },
-    }, { merge: true }).catch(err => {
-      console.error('Failed to save island purchase:', err);
-    });
+    }, { merge: true })
+      .then(() => reloadProgress())
+      .catch(err => {
+        console.error('Failed to save island purchase:', err);
+      });
 
     return true;
-  }, [uid, islandState, placeItem]);
+  }, [uid, islandState, placeItem, reloadProgress]);
 
   // Claim a milestone reward
   const claimReward = useCallback(async (reward: MilestoneReward): Promise<boolean> => {

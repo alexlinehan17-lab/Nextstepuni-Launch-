@@ -26,6 +26,7 @@ import { useQuests } from './hooks/useQuests';
 import TrainingPulse from './components/TrainingPulse';
 import AchievementToast from './components/AchievementToast';
 import RankUpModal from './components/RankUpModal';
+import XPPopup from './components/XPPopup';
 import StreakCelebration from './components/StreakCelebration';
 import { useGamification } from './hooks/useGamification';
 import { createStarterState } from './hooks/useIslandShop';
@@ -159,6 +160,7 @@ const App: React.FC = () => {
   const [currentToast, setCurrentToast] = useState<AchievementDefinition | null>(null);
   const [isBonusFlashToast, setIsBonusFlashToast] = useState(false);
   const [rankUpModal, setRankUpModal] = useState<AthleteRank | null>(null);
+  const [xpPopup, setXpPopup] = useState<{ visible: boolean; points: number }>({ visible: false, points: 0 });
   const prevRankRef = useRef<string | null>(null);
   const [streakCelebration, setStreakCelebration] = useState<number | null>(null);
   const lastStreakRef = useRef(0);
@@ -312,6 +314,10 @@ const App: React.FC = () => {
       await setDoc(progressDocRef, updates, { merge: true });
 
       pointsData.reload();
+
+      if (pointsToAward > 0) {
+        setXpPopup({ visible: true, points: pointsToAward });
+      }
 
       if (isBonus) {
         setToastQueue(q => [...q, 'bonus-flash']);
@@ -591,6 +597,12 @@ const App: React.FC = () => {
       )}
 
       {/* Gamification overlays */}
+      <XPPopup
+        points={xpPopup.points}
+        isVisible={xpPopup.visible}
+        onComplete={() => setXpPopup(prev => ({ ...prev, visible: false }))}
+      />
+
       <RankUpModal
         isOpen={rankUpModal !== null}
         newRank={rankUpModal}

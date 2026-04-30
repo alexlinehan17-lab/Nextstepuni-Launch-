@@ -29,7 +29,7 @@ const JourneyProgressPill: React.FC<JourneyProgressPillProps> = ({ tileCount, de
         </span>
         <div className="w-px h-4 bg-zinc-200 dark:bg-zinc-700" />
         <span className="text-sm font-bold text-[var(--accent-hex)]">
-          {pointsBalance} pts
+          {pointsBalance} JP
         </span>
       </div>
     </MotionDiv>

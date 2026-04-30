@@ -1010,7 +1010,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               style={{ backgroundColor: 'rgba(var(--accent),0.08)' }}
             >
               <CountUpNumber value={session.basePointsEarned} delay={600} />
-              <span className="text-sm font-semibold text-[var(--accent-hex)] opacity-70">pts earned</span>
+              <span className="text-sm font-semibold text-[var(--accent-hex)] opacity-70">JP earned</span>
             </MotionDiv>
           </div>
 

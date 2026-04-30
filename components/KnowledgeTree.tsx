@@ -590,7 +590,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                     : 'No sessions today'}
                 </span>
                 <span className="w-1 h-1 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.3)' }} />
-                <span className="text-sm text-white" style={{ opacity: 0.7 }}>{pointsBalance ?? 0} pts</span>
+                <span className="text-sm text-white" style={{ opacity: 0.7 }}>{pointsBalance ?? 0} JP</span>
                 {streak && streak.currentStreak > 0 && (
                   <>
                     <span className="w-1 h-1 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.3)' }} />
@@ -638,7 +638,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
               {/* PROGRESS */}
               <div className="px-4 py-3 bg-[#FAF7F4] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800" style={{ borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
                 <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#A8A29E] dark:text-zinc-500">Progress</p>
-                <p className="text-2xl font-apercu font-black text-[#1A1A1A] dark:text-white">{pointsBalance ?? 0} pts</p>
+                <p className="text-2xl font-apercu font-black text-[#1A1A1A] dark:text-white">{pointsBalance ?? 0} JP</p>
                 <div className="flex items-center gap-3 text-xs mt-1 mb-2">
                   {streak && streak.currentStreak > 0 ? (
                     <span className="font-bold" style={{ color: '#2A7D6F' }}>{streak.currentStreak}-day streak</span>
@@ -771,7 +771,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                     <p className="text-[10px] font-bold uppercase tracking-widest text-[#A8A29E] dark:text-zinc-500">
                       {questState.isOnboarding ? `Day ${questState.dayNumber} Quest` : 'Daily Quest'}
                     </p>
-                    <span className="text-[10px] font-bold" style={{ color: '#2A7D6F' }}>{questState.quest.rewardPoints} pts</span>
+                    <span className="text-[10px] font-bold" style={{ color: '#2A7D6F' }}>{questState.quest.rewardPoints} JP</span>
                   </div>
                   <p className="text-xs font-semibold text-[#1A1A1A] dark:text-white">{questState.quest.title}</p>
                   <p className="text-[11px] mt-0.5 text-[#A8A29E] dark:text-zinc-500">{questState.quest.description}</p>

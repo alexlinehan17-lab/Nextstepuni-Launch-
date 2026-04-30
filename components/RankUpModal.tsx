@@ -25,7 +25,7 @@ const RANK_DESCRIPTIONS: Record<string, string> = {
   dedicated: "The work is compounding. You can feel it.",
   driven: "Most people stop here. You didn't.",
   elite: "Top 5%. You've outworked almost everyone.",
-  master: "This took real commitment. Every point was earned.",
+  master: "This took real commitment. Every journey point was earned.",
   legend: "The highest rank. You did what most only talk about.",
 };
 
