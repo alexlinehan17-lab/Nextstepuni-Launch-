@@ -543,9 +543,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
   return (
     <div className="space-y-5">
-      {/* ── Header: Title + Settings ── */}
-      <div className="flex items-center justify-between">
-        <h2 className="font-serif text-xl font-semibold text-zinc-900 dark:text-white">Spaced Repetition Timetable</h2>
+      <div className="flex justify-end">
         <button
           onClick={onOpenSettings}
           className="p-2 rounded-lg transition-colors bg-[#FAF7F4] dark:bg-zinc-900"

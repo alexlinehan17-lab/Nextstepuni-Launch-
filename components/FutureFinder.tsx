@@ -320,12 +320,8 @@ export default FutureFinder;
 function IntroPhase({ autoPoints, onStart, onViewResults }: { autoPoints: number; onStart: () => void; onViewResults?: () => void }) {
   return (
     <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
-      <div className="text-center py-12">
-        <div className="w-20 h-20 mx-auto mb-6 rounded-2xl flex items-center justify-center bg-[#FAF7F4] dark:bg-zinc-900">
-          <Compass size={40} style={{ color: '#2A7D6F' }} />
-        </div>
-        <h2 className="font-serif text-3xl font-semibold text-zinc-900 dark:text-white mb-3">Find Your Future</h2>
-        <p className="text-zinc-500 dark:text-zinc-400 max-w-md mx-auto mb-8 leading-relaxed">
+      <div className="text-center py-10">
+        <p className="text-zinc-500 dark:text-zinc-400 max-w-md mx-auto mb-6 leading-relaxed">
           Answer 10 quick questions. We'll match you with college courses that fit who you are {'\u2014'} not just your points.
         </p>
         {autoPoints > 0 && (

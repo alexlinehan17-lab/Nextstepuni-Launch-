@@ -4,6 +4,7 @@
  */
 
 import React, { Suspense, lazy, useEffect, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
 import { ArrowLeft, Eye, EyeOff, Check } from 'lucide-react';
 import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
@@ -19,6 +20,7 @@ const AdminDashboard = lazy(() => import('./AdminDashboard').then(m => ({ defaul
 const GCDashboard = lazy(() => import('./GCDashboard').then(m => ({ default: m.GCDashboard })));
 const DashboardView = lazy(() => import('./DashboardView'));
 const LearningPathsView = lazy(() => import('./LearningPathsView'));
+const ModulesView = lazy(() => import('./ModulesView').then(m => ({ default: m.ModulesView })));
 import { moduleComponents, InnovationZone } from '../moduleRegistry';
 import { ALL_COURSES, categoryTitles, SUBJECT_TO_MODULE } from '../courseData';
 import { type ModuleProgress, type UserProgress, type UserSettings, type NorthStar } from '../types';
@@ -208,6 +210,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   const handleBackToTree = () => { nav.goBack(); };
   const handleBackToCategory = () => { nav.goBack(); };
+  const handleGoToModules = () => { nav.navigateToModules(); };
   const handleGoToInnovationZone = () => { nav.navigateToInnovationZone(); };
   const handleGoToDashboard = () => { nav.navigateToDashboard(); };
   const handleGoToLearningPaths = () => { nav.navigateToLearningPaths(); };
@@ -388,6 +391,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     return <KnowledgeTree
       key="knowledge-tree"
       onSelectCategory={handleSelectCategory}
+      onGoToModules={handleGoToModules}
       onGoToInnovationZone={handleGoToInnovationZone}
       onGoToDashboard={handleGoToDashboard}
       onGoToLearningPaths={handleGoToLearningPaths}
@@ -425,6 +429,21 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     />;
   }
 
+  if (viewState === 'modules') {
+    return (
+      <Suspense fallback={<LoadingSpinner />}>
+        <ModulesView
+          onBack={handleBackToTree}
+          onSelectCategory={handleSelectCategory}
+          onSelectModule={handleSelectModule}
+          allCourses={studentCourses}
+          categoryTitles={categoryTitles}
+          userProgress={userProgress}
+        />
+      </Suspense>
+    );
+  }
+
   if (viewState === 'category' && currentCategory) {
     // Validate category exists — reject garbage URL values
     if (!categoryTitles[currentCategory]) {
@@ -444,7 +463,15 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     const showcaseCategories: string[] = ['architecture-mindset', 'science-growth', 'learning-cheat-codes', 'subject-specific-science', 'exam-zone'];
     if (showcaseCategories.includes(currentCategory)) {
       return (
-        <div className="min-h-screen bg-[#FDF8F0] dark:bg-zinc-950">
+        // Page transition from ModulesView's hero — fade + lift + slight
+        // scale so the carousel arrives feeling like the hero opened up,
+        // not like a hard route change. ~450ms total.
+        <motion.div
+          initial={{ opacity: 0, y: 18, scale: 0.985 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
+          className="min-h-screen bg-[#FDF8F0] dark:bg-zinc-950"
+        >
           {/* Header */}
           <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-[#FDF8F0] dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '24px' }}>
             <div className="flex items-center gap-4">
@@ -463,7 +490,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
               onSelectCourse={handleSelectModule}
             />
           </div>
-        </div>
+        </motion.div>
       );
     }
 

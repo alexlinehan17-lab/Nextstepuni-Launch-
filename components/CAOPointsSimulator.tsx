@@ -314,12 +314,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
 
   return (
     <div className="space-y-6">
-      {/* A. Header */}
-      <div className="flex items-center justify-between">
-        <div>
-          <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white">CAO Points Simulator</h2>
-          <p className="text-sm text-zinc-400 mt-1">Explore how grade changes affect your points.</p>
-        </div>
+      <div className="flex justify-end">
         <button
           onClick={onOpenSettings}
           className="p-2.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800"

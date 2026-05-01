@@ -4,19 +4,19 @@
 */
 
 import React, { useState, useMemo, useEffect } from 'react';
-import { AnimatePresence } from 'framer-motion';
 import { MotionCircle, MotionDiv } from './Motion';
 import {
-  Sprout, Rocket, Target,
-  Fingerprint, ArrowRight, BarChart3, Compass, Lightbulb, KeyRound,
-  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Tag, X, Dumbbell, Bell
+  Rocket, ArrowRight, BarChart3, Compass,
+  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell
 } from 'lucide-react';
 import { getAvatarUrl } from '../utils/authUtils';
-import { type CourseData, BentoModuleTile } from './Library';
+import { type CourseData } from './Library';
 import { type UserSettings } from '../types';
 import { type AthleteRank, ATHLETE_RANKS } from '../gamificationConfig';
 import { toDateKey } from './subjectData';
 import { getSubjectHex } from '../utils/subjectColors';
+import { SectionCard } from './SectionCard';
+import { ModulesIcon, InnovationZoneIcon, MyProgressIcon, LearningPathsIcon } from './sectionIcons';
 
 export type CategoryType =
   | 'architecture-mindset'
@@ -31,6 +31,7 @@ type UserProgress = {
 
 interface KnowledgeTreeProps {
   onSelectCategory: (category: CategoryType) => void;
+  onGoToModules: () => void;
   onGoToInnovationZone: () => void;
   onGoToDashboard: () => void;
   onGoToLearningPaths: () => void;
@@ -65,172 +66,8 @@ interface KnowledgeTreeProps {
   onDevRankUp?: (rank: AthleteRank) => void;
 }
 
-const ActivityRing = ({
-  progress,
-  size = 52,
-  strokeWidth = 4,
-  color = "#3b82f6"
-}: {
-  progress: number,
-  size?: number,
-  strokeWidth?: number,
-  color?: string
-}) => {
-  const radius = (size - strokeWidth) / 2;
-  const circumference = 2 * Math.PI * radius;
-  const offset = circumference - (progress / 100) * circumference;
-  const isZero = progress === 0;
-  const isComplete = progress >= 100;
 
-  return (
-    <div className="relative flex items-center justify-center shrink-0" style={{ width: size, height: size }}>
-      <svg className="w-full h-full -rotate-90 overflow-visible" viewBox={`0 0 ${size} ${size}`}>
-        {/* Track ring — accent-tinted instead of plain grey */}
-        <circle
-          cx={size / 2}
-          cy={size / 2}
-          r={radius}
-          stroke={color}
-          strokeWidth={strokeWidth}
-          fill="transparent"
-          opacity={0.1}
-        />
-        {/* Progress arc with glow */}
-        {!isZero && (
-          <MotionCircle
-            cx={size / 2}
-            cy={size / 2}
-            r={radius}
-            stroke={color}
-            strokeWidth={strokeWidth + 0.5}
-            fill="transparent"
-            strokeDasharray={circumference}
-            initial={{ strokeDashoffset: circumference }}
-            whileInView={{ strokeDashoffset: offset }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
-            strokeLinecap="round"
-            style={{ filter: `drop-shadow(0 0 4px ${color}40)` }}
-          />
-        )}
-      </svg>
-      <div className="absolute flex items-baseline justify-center leading-none">
-        {isComplete ? (
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M3.5 8.5L6.5 11.5L12.5 4.5" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        ) : isZero ? (
-          <span className="text-[10px] font-semibold tracking-wide" style={{ color }}>Start</span>
-        ) : (
-          <span className="text-[13px] font-bold" style={{ color }}>{Math.round(progress)}</span>
-        )}
-      </div>
-    </div>
-  );
-};
-
-interface BentoTileProps {
-  icon: any,
-  title: string,
-  subtitle: string,
-  description?: string,
-  onClick: () => void,
-  accentHex: string,
-  gradientFrom?: string,
-  gradientTo?: string,
-  progress?: number,
-  hideProgress?: boolean,
-  className?: string,
-  delay?: number
-}
-
-const BentoTile: React.FC<BentoTileProps> = ({
-  icon: Icon,
-  title,
-  subtitle,
-  description,
-  onClick,
-  accentHex,
-  gradientFrom,
-  gradientTo,
-  progress = 0,
-  hideProgress = false,
-  className = "",
-  delay = 0
-}) => {
-  const hasGradient = gradientFrom && gradientTo;
-  console.log('[BentoTile DEBUG]', { title, gradientFrom, gradientTo, hasGradient: !!hasGradient });
-
-  return (
-    <MotionDiv
-      initial={{ opacity: 0, y: 8 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, delay, ease: [0.16, 1, 0.3, 1] }}
-      onClick={onClick}
-      className={`${hasGradient ? '' : 'card-styled bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'} group relative overflow-hidden rounded-2xl cursor-pointer transition-all duration-300 hover:shadow-xl md:hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 ${className}`}
-      style={hasGradient ? { background: `linear-gradient(135deg, ${gradientFrom} 0%, ${gradientTo} 100%)` } : undefined}
-    >
-      {/* Decorative circles — peer-island style */}
-      {hasGradient && (
-        <>
-          <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full pointer-events-none" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }} />
-          <div className="absolute bottom-4 -left-6 w-20 h-20 rounded-full pointer-events-none" style={{ backgroundColor: 'rgba(255,255,255,0.07)' }} />
-          <div className="absolute top-1/2 right-1/4 w-10 h-10 rounded-full pointer-events-none" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }} />
-        </>
-      )}
-
-      {/* Non-gradient: accent top bar */}
-      {!hasGradient && (
-        <div
-          className={`absolute top-0 left-0 right-0 h-[3px] transition-opacity duration-300 ${!hideProgress && progress > 0 ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}
-          style={{ backgroundColor: accentHex }}
-        />
-      )}
-
-      <div className="relative p-5 md:p-8 h-full flex flex-col justify-between">
-        <div>
-          <div className="flex items-center justify-between mb-6">
-            <div
-              className="w-12 h-12 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
-              style={hasGradient
-                ? { color: '#fff', backgroundColor: 'rgba(255,255,255,0.2)', border: '1.5px solid rgba(255,255,255,0.3)' }
-                : { color: accentHex, backgroundColor: accentHex + '12' }
-              }
-            >
-              <Icon size={24} strokeWidth={1.5} />
-            </div>
-
-            <div className={`opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-0.5 ${hasGradient ? 'text-white/60' : 'text-zinc-400 dark:text-zinc-500'}`}>
-               <ArrowRight size={18} />
-            </div>
-          </div>
-
-          <p className={`text-[11px] font-semibold uppercase tracking-[0.15em] mb-2 ${hasGradient ? 'text-white/50' : 'text-zinc-400 dark:text-zinc-500'}`}>
-            {subtitle}</p>
-          <h3 className={`font-serif text-xl md:text-2xl leading-tight font-semibold tracking-tight ${hasGradient ? 'text-white' : 'text-zinc-900 dark:text-white'}`}>
-            {title}
-          </h3>
-          {description && (
-            <p className={`mt-3 text-[12px] leading-relaxed line-clamp-2 ${hasGradient ? 'text-white/60' : 'text-zinc-500 dark:text-zinc-400'}`}>{description}</p>
-          )}
-        </div>
-
-        {!hideProgress && (
-          <div className={`mt-6 flex items-center justify-between gap-6 pt-5 ${hasGradient ? 'border-t border-white/15' : 'border-t border-zinc-100 dark:border-zinc-800'}`}>
-              <div className="flex flex-col">
-                <span className={`text-[10px] font-semibold uppercase tracking-widest ${hasGradient ? 'text-white/40' : 'text-zinc-400 dark:text-zinc-500'}`}>Progress</span>
-              </div>
-              <ActivityRing progress={progress} color={hasGradient ? '#ffffff' : accentHex} />
-          </div>
-        )}
-      </div>
-    </MotionDiv>
-  );
-};
-
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, _onGoToInsights, onGoToTrainingHub, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onDevRankUp }) => {
-  const [selectedTags, setSelectedTags] = useState<string[]>([]);
-  const [tagFilterOpen, setTagFilterOpen] = useState(false);
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, _onGoToInsights, onGoToTrainingHub, allCourses, onSelectModule: _onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onDevRankUp }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const sidebarItems = [
@@ -243,99 +80,43 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
     { icon: Rocket, label: 'Innovation Zone', onClick: onGoToInnovationZone, active: false },
   ];
   
-  const getCategoryProgress = (category: CategoryType) => {
-    const categoryCourses = allCourses.filter(c => c.category === category);
-    if (categoryCourses.length === 0) return 0;
-
-    const totalCourses = categoryCourses.length;
-    const completedCourses = categoryCourses.reduce((count, course) => {
-      const progress = userProgress[course.id];
-      const isComplete = progress && progress.unlockedSection >= course.sectionsCount;
-      return count + (isComplete ? 1 : 0);
-    }, 0);
-
-    return (completedCourses / totalCourses) * 100;
-  };
-
-  const modules = [
-    {
-      id: 'architecture-mindset',
-      title: "The Architecture of your Mindset",
-      subtitle: "Module 01",
-      description: "Build the psychological foundations for academic success. This module covers identity, beliefs, emotional regulation, and the resilience you need to thrive under pressure.",
-      icon: Fingerprint,
-      hex: "#3b82f6",
-      gradientFrom: "#4f8ef7",
-      gradientTo: "#2563eb",
-      className: "md:col-span-4"
-    },
-    {
-      id: 'science-growth',
-      title: "The Science of Growth",
-      subtitle: "Module 02",
-      description: "Understand how your brain physically changes through effort. The neuroscience of learning, neuroplasticity, and why struggle is the engine of growth.",
-      icon: Sprout,
-      hex: "#f59e0b",
-      gradientFrom: "#f7b84e",
-      gradientTo: "#e8860c",
-      className: "md:col-span-2"
-    },
-    {
-      id: 'learning-cheat-codes',
-      title: "The Science of Learning Effectively",
-      subtitle: "Module 03",
-      description: "The practical techniques and study methods that separate high performers from everyone else. Active recall, spaced repetition, interleaving, and more.",
-      icon: Lightbulb,
-      hex: "#14b8a6",
-      gradientFrom: "#2dd4bf",
-      gradientTo: "#0d9488",
-      className: "md:col-span-2"
-    },
-     {
-      id: 'subject-specific-science',
-      title: "Decoding the Subjects",
-      subtitle: "Module 04",
-      description: "Subject-by-subject deconstruction of the Leaving Cert exams. The marking schemes, the hidden curriculum, and the strategies that unlock top grades in each subject.",
-      icon: KeyRound,
-      hex: "#ec4899",
-      gradientFrom: "#f472b6",
-      gradientTo: "#db2777",
-      className: "md:col-span-2"
-    },
-    {
-      id: 'exam-zone',
-      title: "Exam Strategy and Points Maximisation",
-      subtitle: "Module 05",
-      description: "Cross-subject exam tactics, scheduling, crisis management, and the performance psychology you need to execute on the day.",
-      icon: Target,
-      hex: "#ef4444",
-      gradientFrom: "#f87171",
-      gradientTo: "#dc2626",
-      className: "md:col-span-2"
-    },
+  // Aggregate + per-category progress for the Modules hero
+  const MODULE_SEGMENTS: Array<{ id: CategoryType; n: string; label: string; accent: string }> = [
+    { id: 'architecture-mindset',     n: '01', label: 'Mind',   accent: '#3b82f6' },
+    { id: 'science-growth',           n: '02', label: 'Growth', accent: '#f59e0b' },
+    { id: 'learning-cheat-codes',     n: '03', label: 'Learn',  accent: '#14b8a6' },
+    { id: 'subject-specific-science', n: '04', label: 'Decode', accent: '#ec4899' },
+    { id: 'exam-zone',                n: '05', label: 'Exam',   accent: '#ef4444' },
   ];
 
-  const allTags = [...new Set(allCourses.flatMap(course => course.tags))].sort();
-
-  const handleTagClick = (tag: string) => {
-    const isSelected = selectedTags.includes(tag);
-    if (isSelected) {
-      const next = selectedTags.filter(t => t !== tag);
-      setSelectedTags(next);
-      if (next.length === 0) setTagFilterOpen(false);
-    } else {
-      if (selectedTags.length < 2) {
-        setSelectedTags([...selectedTags, tag]);
-      } else {
-        setSelectedTags([selectedTags[1], tag]);
-      }
-      setTagFilterOpen(false);
+  const moduleStats = useMemo(() => {
+    const perCategory: Record<string, { completed: number; total: number; percent: number }> = {};
+    let totalCompleted = 0;
+    let total = 0;
+    for (const seg of MODULE_SEGMENTS) {
+      const courses = allCourses.filter(c => c.category === seg.id);
+      const cTotal = courses.length;
+      const cCompleted = courses.reduce((acc, c) => {
+        const p = userProgress[c.id];
+        return acc + (p && p.unlockedSection >= c.sectionsCount ? 1 : 0);
+      }, 0);
+      perCategory[seg.id] = {
+        completed: cCompleted,
+        total: cTotal,
+        percent: cTotal > 0 ? (cCompleted / cTotal) * 100 : 0,
+      };
+      totalCompleted += cCompleted;
+      total += cTotal;
     }
-  };
+    return {
+      perCategory,
+      totalCompleted,
+      total,
+      overallPercent: total > 0 ? (totalCompleted / total) * 100 : 0,
+    };
+  }, [allCourses, userProgress]);
 
-  const filteredCourses = selectedTags.length > 0
-    ? allCourses.filter(course => selectedTags.every(tag => course.tags.includes(tag as string)))
-    : [];
+  const { totalCompleted: totalModulesCompleted, total: totalModules, overallPercent } = moduleStats;
 
   // ── Dashboard computed values ──────────────────────────────────────────
   const [todayBlocks, setTodayBlocks] = useState<any[]>([]);
@@ -578,31 +359,31 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
             transition={{ duration: 0.4, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="mb-6"
           >
-            {/* ── Warm colour banner — day's key stats ── */}
+            {/* ── Day stats — Mercury-styled inline strip ── */}
             <div
-              className="rounded-2xl px-5 py-4 mb-4 flex items-center justify-between flex-wrap gap-3"
-              style={{ backgroundColor: '#2A7D6F', boxShadow: '0 4px 16px rgba(42,125,111,0.15)' }}
+              className="rounded-2xl px-5 py-3.5 mb-4 flex items-center justify-between flex-wrap gap-3 bg-white dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800"
+              style={{ boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}
             >
-              <div className="flex items-center gap-4">
-                <span className="text-sm font-medium text-white">
+              <div className="flex items-center gap-3 flex-wrap text-sm">
+                <span className="font-medium text-[#1A1A1A] dark:text-white">
                   {todayBlocks.length > 0
                     ? `${todayBlocks.length} session${todayBlocks.length !== 1 ? 's' : ''} today`
                     : 'No sessions today'}
                 </span>
-                <span className="w-1 h-1 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.3)' }} />
-                <span className="text-sm text-white" style={{ opacity: 0.7 }}>{pointsBalance ?? 0} JP</span>
+                <span className="w-1 h-1 rounded-full bg-[#D6D3D1] dark:bg-zinc-700" />
+                <span className="text-[#78716C] dark:text-zinc-400">{pointsBalance ?? 0} JP</span>
                 {streak && streak.currentStreak > 0 && (
                   <>
-                    <span className="w-1 h-1 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.3)' }} />
-                    <span className="text-sm font-medium text-white">{streak.currentStreak}-day streak</span>
+                    <span className="w-1 h-1 rounded-full bg-[#D6D3D1] dark:bg-zinc-700" />
+                    <span className="font-medium" style={{ color: '#2A7D6F' }}>{streak.currentStreak}-day streak</span>
                   </>
                 )}
               </div>
               {onGoToStudy && todayBlocks.length > 0 && !todayBlocks.every((_b, i) => todayCompletions.includes(`block-${i}`)) && (
                 <button
                   onClick={onGoToStudy}
-                  className="flex items-center gap-1 text-xs font-bold px-4 py-2 rounded-lg transition-all hover:opacity-90"
-                  style={{ backgroundColor: 'rgba(255,255,255,0.2)', color: '#fff' }}
+                  className="flex items-center gap-1 text-xs font-bold px-4 py-2 rounded-lg text-white transition-transform duration-300 hover:translate-x-0.5"
+                  style={{ backgroundColor: '#2A7D6F' }}
                 >
                   Study Now <ArrowRight size={12} />
                 </button>
@@ -635,21 +416,28 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                 )}
               </div>
 
-              {/* PROGRESS */}
-              <div className="px-4 py-3 bg-[#FAF7F4] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800" style={{ borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
-                <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#A8A29E] dark:text-zinc-500">Progress</p>
-                <p className="text-2xl font-apercu font-black text-[#1A1A1A] dark:text-white">{pointsBalance ?? 0} JP</p>
-                <div className="flex items-center gap-3 text-xs mt-1 mb-2">
-                  {streak && streak.currentStreak > 0 ? (
-                    <span className="font-bold" style={{ color: '#2A7D6F' }}>{streak.currentStreak}-day streak</span>
-                  ) : (
-                    <span className="text-[#A8A29E] dark:text-zinc-500">Start your streak today</span>
-                  )}
-                  <span className="text-[#EDEBE8] dark:text-zinc-700">·</span>
-                  <span className="font-medium text-[#78716C] dark:text-zinc-400">{completedCount}/{totalCount} modules</span>
+              {/* PROGRESS — big focal number */}
+              <div className="px-5 py-4 bg-[#FAF7F4] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800" style={{ borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
+                <p className="text-[10px] font-bold uppercase tracking-widest mb-2 text-[#A8A29E] dark:text-zinc-500">Progress</p>
+                <div className="flex items-baseline gap-1.5">
+                  <span className="font-apercu font-black tabular-nums leading-none text-[#1A1A1A] dark:text-white" style={{ fontSize: 'clamp(40px, 8vw, 56px)' }}>
+                    {Math.round(overallPercent)}
+                  </span>
+                  <span className="font-apercu font-bold text-2xl md:text-3xl text-[#A8A29E] dark:text-zinc-500">%</span>
                 </div>
-                <div className="h-1.5 rounded-full overflow-hidden bg-[#EDEBE8] dark:bg-zinc-700">
-                  <div className="h-full rounded-full" style={{ backgroundColor: '#2A7D6F', width: `${totalCount > 0 ? (completedCount / totalCount) * 100 : 0}%`, transition: 'width 0.5s ease' }} />
+                <div className="h-1.5 rounded-full overflow-hidden bg-[#EDEBE8] dark:bg-zinc-700 mt-2.5">
+                  <div className="h-full rounded-full transition-all duration-700" style={{ backgroundColor: '#2A7D6F', width: `${overallPercent}%` }} />
+                </div>
+                <div className="flex items-center gap-3 text-xs mt-2.5">
+                  <span className="font-medium text-[#78716C] dark:text-zinc-400">{completedCount}/{totalCount} modules</span>
+                  <span className="text-[#EDEBE8] dark:text-zinc-700">·</span>
+                  <span className="font-medium text-[#78716C] dark:text-zinc-400">{pointsBalance ?? 0} JP</span>
+                  {streak && streak.currentStreak > 0 && (
+                    <>
+                      <span className="text-[#EDEBE8] dark:text-zinc-700">·</span>
+                      <span className="font-bold" style={{ color: '#2A7D6F' }}>{streak.currentStreak}-day streak</span>
+                    </>
+                  )}
                 </div>
                 {northStar && (
                   <p className="mt-2 text-[11px] italic leading-relaxed truncate text-[#A8A29E] dark:text-zinc-500">&ldquo;{northStar.statement}&rdquo;</p>
@@ -795,164 +583,42 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
           </MotionDiv>
         )}
 
-        {/* Inline tag filter */}
-        <div className="mb-6">
-          {selectedTags.length === 0 ? (
-            <button
-              onClick={() => setTagFilterOpen(!tagFilterOpen)}
-              className="flex items-center gap-2 px-3.5 py-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors"
-            >
-              <Tag size={14} className="text-zinc-400" />
-              <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400">Filter by topic</span>
-            </button>
-          ) : (
-            <div className="flex items-center gap-2 flex-wrap">
-              <Tag size={14} className="text-zinc-400 shrink-0" />
-              {selectedTags.map(tag => (
-                <button
-                  key={tag}
-                  onClick={() => handleTagClick(tag)}
-                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-[var(--accent-hex)] text-white"
-                >
-                  {tag}
-                  <X size={12} />
-                </button>
-              ))}
-              <button
-                onClick={() => { setSelectedTags([]); setTagFilterOpen(false); }}
-                className="text-[10px] font-medium text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 ml-1"
-              >
-                Clear
-              </button>
-            </div>
-          )}
-          <AnimatePresence>
-            {tagFilterOpen && selectedTags.length === 0 && (
-              <MotionDiv
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 'auto' }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                className="overflow-hidden"
-              >
-                <div className="flex flex-wrap gap-2 mt-3">
-                  {allTags.map(tag => (
-                    <button
-                      key={tag}
-                      onClick={() => handleTagClick(tag)}
-                      className="px-3 py-1.5 text-xs font-medium rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:border-[var(--accent-hex)] hover:text-[var(--accent-hex)] transition-colors"
-                    >
-                      {tag}
-                    </button>
-                  ))}
-                </div>
-              </MotionDiv>
-            )}
-          </AnimatePresence>
-        </div>
-
-        {/* Filtered results or category grid */}
-        <AnimatePresence mode="wait">
-        {selectedTags.length > 0 ? (
-          <MotionDiv
-            key="filtered"
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.25 }}
-          >
-            {filteredCourses.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                {filteredCourses.map((course, index) => {
-                  const progress = userProgress[course.id];
-                  const isCompleted = progress && progress.unlockedSection >= course.sectionsCount;
-                  return (
-                    <BentoModuleTile
-                      key={course.id}
-                      course={course}
-                      index={index}
-                      isUnlocked={true}
-                      isCompleted={isCompleted}
-                      onClick={() => onSelectModule(course.id)}
-                      categoryTitle={categoryTitles[course.category]}
-                    />
-                  );
-                })}
-              </div>
-            ) : (
-              <div className="text-center py-16">
-                <p className="text-sm text-zinc-400 dark:text-zinc-500">No modules match the selected tags.</p>
-              </div>
-            )}
-          </MotionDiv>
-        ) : (
-          <MotionDiv
-            key="grid"
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.25 }}
-          >
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-3 md:gap-6">
-          {modules.map((mod, i) => (
-            <BentoTile
-              key={mod.id}
-              title={mod.title}
-              subtitle={mod.subtitle}
-              description={mod.description}
-              icon={mod.icon}
-              accentHex={mod.hex}
-              gradientFrom={mod.gradientFrom}
-              gradientTo={mod.gradientTo}
-              onClick={() => onSelectCategory(mod.id as CategoryType)}
-              progress={getCategoryProgress(mod.id as CategoryType)}
-              className={mod.className}
-              delay={i * 0.1}
-            />
-          ))}
-           <BentoTile
-              title="The Innovation Zone"
-              subtitle="Explore"
-              description="Your personal AI-powered study companion. Use the Journey Simulator to stress-test your study habits, get personalised feedback, and discover which units will have the biggest impact on your performance."
-              icon={Rocket}
-              accentHex="#4f46e5"
-              gradientFrom="#6366f1"
-              gradientTo="#4338ca"
-              onClick={onGoToInnovationZone}
-              className="md:col-span-6"
-              delay={modules.length * 0.1}
-              hideProgress
-            />
-           <BentoTile
-              title="My Progress"
-              subtitle="Dashboard"
-              description="Track your modules completed, study streak, and category progress all in one place."
-              icon={BarChart3}
-              accentHex="#2A7D6F"
-              gradientFrom="#34a08f"
-              gradientTo="#1a5a4e"
-              onClick={onGoToDashboard}
-              className="md:col-span-3"
-              delay={(modules.length + 1) * 0.1}
-              hideProgress
-            />
-           <BentoTile
-              title="Learning Paths"
-              subtitle="Guided"
-              description="Follow curated sequences of modules designed to take you from foundation to mastery."
-              icon={Compass}
-              accentHex="#10b981"
-              gradientFrom="#34d399"
-              gradientTo="#059669"
-              onClick={onGoToLearningPaths}
-              className="md:col-span-3"
-              delay={(modules.length + 2) * 0.1}
-              hideProgress
-            />
-        </div>
-          </MotionDiv>
-        )}
-        </AnimatePresence>
+        {/* ── Section cards — top-level dashboard nav ── */}
+        <MotionDiv
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4"
+        >
+          <SectionCard
+            eyebrow="The Programme"
+            title="Modules"
+            subtitle={`Five worlds. ${totalModules} modules. ${totalModulesCompleted} complete.`}
+            icon={<ModulesIcon />}
+            onClick={onGoToModules}
+          />
+          <SectionCard
+            eyebrow="Explore"
+            title="Innovation Zone"
+            subtitle="Eight tools to plan, understand, and track."
+            icon={<InnovationZoneIcon />}
+            onClick={onGoToInnovationZone}
+          />
+          <SectionCard
+            eyebrow="Dashboard"
+            title="My Progress"
+            subtitle={`Modules completed, streak, where you're heading.`}
+            icon={<MyProgressIcon />}
+            onClick={onGoToDashboard}
+          />
+          <SectionCard
+            eyebrow="Guided"
+            title="Learning Paths"
+            subtitle="Curated routes from foundation to mastery."
+            icon={<LearningPathsIcon />}
+            onClick={onGoToLearningPaths}
+          />
+        </MotionDiv>
 
       {/* DEV: Rank Up Tester */}
       {onDevRankUp && (

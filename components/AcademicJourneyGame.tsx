@@ -811,11 +811,6 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                                     width: '100vw',
                                 }}
                             >
-                                {/* Decorative blobs — layered system */}
-                                <div className="absolute pointer-events-none" style={{ top: -60, right: -40, width: 280, height: 280, borderRadius: '50%', background: 'rgba(255,255,255,0.1)' }} />
-                                <div className="absolute pointer-events-none" style={{ top: 20, right: 30, width: 100, height: 100, borderRadius: '50%', background: 'rgba(255,255,255,0.06)' }} />
-                                <div className="absolute pointer-events-none" style={{ bottom: 40, left: -50, width: 200, height: 200, borderRadius: '50%', background: 'rgba(0,0,0,0.06)' }} />
-
                                 {/* Centered content within the full-bleed field */}
                                 <div className="relative z-10 max-w-2xl mx-auto px-6 pt-10 pb-16">
                                     <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.4 }}>

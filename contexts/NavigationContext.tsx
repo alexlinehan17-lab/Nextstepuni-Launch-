@@ -10,7 +10,7 @@ import { useAuth } from './AuthContext';
 // ─── Types ──────────────────────────────────────────────────
 
 export type ViewState =
-  | 'tree' | 'category' | 'module' | 'innovation-zone'
+  | 'tree' | 'modules' | 'category' | 'module' | 'innovation-zone'
   | 'dashboard' | 'learning-paths' | 'onboarding'
   | 'my-journey' | 'gamification-hub' | 'study-session' | 'insights';
 
@@ -24,6 +24,7 @@ export interface NavigationState {
 
 type NavigationAction =
   | { type: 'NAVIGATE_TO_TREE' }
+  | { type: 'NAVIGATE_TO_MODULES' }
   | { type: 'NAVIGATE_TO_CATEGORY'; category: CategoryType }
   | { type: 'NAVIGATE_TO_MODULE'; moduleId: string; fromJourney?: boolean; category?: CategoryType | null }
   | { type: 'NAVIGATE_TO_INNOVATION_ZONE'; tool?: string | null }
@@ -41,6 +42,7 @@ interface NavigationContextValue {
   state: NavigationState;
   dispatch: React.Dispatch<NavigationAction>;
   navigateToTree: () => void;
+  navigateToModules: () => void;
   navigateToCategory: (category: CategoryType) => void;
   navigateToModule: (moduleId: string, currentViewState?: ViewState, currentCategory?: CategoryType | null) => void;
   navigateToInnovationZone: (tool?: string | null) => void;
@@ -58,7 +60,7 @@ interface NavigationContextValue {
 // ─── URL Serialization ─────────────────────────────────────
 
 const VALID_VIEWS = new Set<string>([
-  'tree', 'category', 'module', 'innovation-zone',
+  'tree', 'modules', 'category', 'module', 'innovation-zone',
   'dashboard', 'learning-paths', 'onboarding',
   'my-journey', 'gamification-hub', 'study-session', 'insights',
 ]);
@@ -102,6 +104,8 @@ function navigationReducer(state: NavigationState, action: NavigationAction): Na
   switch (action.type) {
     case 'NAVIGATE_TO_TREE':
       return { viewState: 'tree', currentCategory: null, currentModuleId: null, cameFromJourney: false, activeTool: null };
+    case 'NAVIGATE_TO_MODULES':
+      return { ...state, viewState: 'modules', currentCategory: null, currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_CATEGORY':
       return { ...state, viewState: 'category', currentCategory: action.category, currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_MODULE':
@@ -247,6 +251,11 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     window.scrollTo(0, 0);
   }, [navigate]);
 
+  const navigateToModules = useCallback(() => {
+    navigate({ type: 'NAVIGATE_TO_MODULES' });
+    window.scrollTo(0, 0);
+  }, [navigate]);
+
   const navigateToCategory = useCallback((category: CategoryType) => {
     navigate({ type: 'NAVIGATE_TO_CATEGORY', category });
     window.scrollTo(0, 0);
@@ -309,6 +318,7 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     state,
     dispatch,
     navigateToTree,
+    navigateToModules,
     navigateToCategory,
     navigateToModule,
     navigateToInnovationZone,

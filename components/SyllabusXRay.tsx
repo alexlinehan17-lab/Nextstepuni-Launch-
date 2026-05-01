@@ -276,12 +276,6 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
     if (availableSubjects.length === 0) {
       return (
         <div className="space-y-6">
-          <div>
-            <h2 className="font-serif text-2xl font-medium text-zinc-900 dark:text-white">Syllabus X-Ray</h2>
-            <p className="text-sm text-zinc-400 mt-1">
-              See where the marks are hiding in your exams.
-            </p>
-          </div>
           <div className="text-center py-16 space-y-4">
             <div className="w-16 h-16 mx-auto rounded-2xl bg-rose-100 dark:bg-rose-900/30 flex items-center justify-center">
               <ScanSearch size={32} className="text-rose-500" />
@@ -298,13 +292,6 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
 
     return (
       <div className="space-y-6">
-        <div>
-          <h2 className="font-serif text-2xl font-medium text-zinc-900 dark:text-white">Syllabus X-Ray</h2>
-          <p className="text-sm text-zinc-400 mt-1">
-            See where the marks are hiding in your exams.
-          </p>
-        </div>
-
         <div className="grid grid-cols-2 gap-2.5">
           {availableSubjects.map(subject => {
             const data = getSyllabusForSubject(subject);

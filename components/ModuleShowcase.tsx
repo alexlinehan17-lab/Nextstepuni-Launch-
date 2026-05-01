@@ -1,32 +1,74 @@
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
+ *
+ * ModuleShowcase — module detail / picker for a single world.
+ *
+ * Layout: cream hero card on cream page background, with a horizontal
+ * carousel of mini-cards below for the other modules in this world.
+ * Clicking a carousel card promotes it to the hero position with a
+ * Framer Motion `layoutId` morph (same pattern as ModulesView's
+ * hero/satellite swap on the Library page).
+ *
+ * The hero is wrapped in <AnimatePresence mode="popLayout"> with a
+ * `key` tied to the active module id, so when the module changes:
+ *   - The exiting hero stays mounted long enough for Framer to morph
+ *     it back to its carousel slot
+ *   - The entering hero animates in concurrently (popLayout) rather
+ *     than waiting for the exit to finish
+ *
+ * Active-in-carousel: the currently-active module is rendered in the
+ * carousel as a muted, non-interactive card with NO layoutId, so it
+ * doesn't conflict with the hero's layoutId of the same module id.
+ * (Two simultaneously-mounted elements with the same layoutId breaks
+ * Framer's tracking and produces hard cuts instead of morphs.)
  */
-
-import React, { useState, useCallback, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, CheckCircle2, ChevronDown } from 'lucide-react';
+import React, { useState, useCallback, useEffect, useRef } from 'react';
+import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
+import { CheckCircle2, ChevronDown, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { type CourseData } from './Library';
 import { MODULE_SECTIONS, type SectionInfo } from '../moduleSections';
 import { SUBJECT_MODULE_CONTENT } from '../subjectModuleData';
+import { WorldIconBlob, type WorldId } from './WorldIconBlob';
 
-/* ═══════════════════════════════════════════════════════
-   Category gradients — matching KnowledgeTree tile colours
-   ═══════════════════════════════════════════════════════ */
-const CATEGORY_GRADIENTS: Record<string, { from: string; to: string }> = {
-  'architecture-mindset': { from: '#4f8ef7', to: '#2563eb' },
-  'science-growth': { from: '#f7b84e', to: '#e8860c' },
-  'learning-cheat-codes': { from: '#2dd4bf', to: '#0d9488' },
-  'subject-specific-science': { from: '#f472b6', to: '#db2777' },
-  'exam-zone': { from: '#f87171', to: '#dc2626' },
-  'the-shield': { from: '#6366f1', to: '#4338ca' },
-  'the-launchpad': { from: '#34d399', to: '#059669' },
+// ── World theming ──────────────────────────────────────────────────────
+interface WorldTheme {
+  worldKey: WorldId;
+  number: string;
+  worldName: string;
+  blob: string;
+  mid: string;
+  deep: string;
+}
+
+const WORLD_THEMES: Record<string, WorldTheme> = {
+  'architecture-mindset': {
+    worldKey: 'mind',   number: '01', worldName: 'The Architecture',
+    blob: '#B8C9E5', mid: '#5B7DB0', deep: '#1e3a5f',
+  },
+  'science-growth': {
+    worldKey: 'growth', number: '02', worldName: 'The Garden',
+    blob: '#F5C9A8', mid: '#C4873B', deep: '#7c4a14',
+  },
+  'learning-cheat-codes': {
+    worldKey: 'learn',  number: '03', worldName: 'The Cheat Codes',
+    blob: '#B8DDC8', mid: '#2A7D6F', deep: '#115e4f',
+  },
+  'subject-specific-science': {
+    worldKey: 'decode', number: '04', worldName: 'The Decoder',
+    blob: '#F0BFCE', mid: '#C76489', deep: '#8a2860',
+  },
+  'exam-zone': {
+    worldKey: 'exam',   number: '05', worldName: 'The Arena',
+    blob: '#F5BFB0', mid: '#D4564E', deep: '#7f1d1d',
+  },
 };
 
-const getGradient = (category: string) =>
-  CATEGORY_GRADIENTS[category] || { from: '#2dd4bf', to: '#0d9488' };
+const FALLBACK_THEME: WorldTheme = WORLD_THEMES['architecture-mindset'];
 
-/* Get section titles for any module */
+const CARD_WIDTH = 280; // px — matches w-[280px] used on carousel cards
+
+// ── Section helpers ────────────────────────────────────────────────────
 function getSectionsForModule(moduleId: string, sectionsCount: number): SectionInfo[] {
   if (MODULE_SECTIONS[moduleId]) return MODULE_SECTIONS[moduleId];
   const subjectMatch = moduleId.match(/^subject-(.+)-protocol$/);
@@ -46,10 +88,7 @@ function getSectionsForModule(moduleId: string, sectionsCount: number): SectionI
   }));
 }
 
-/* ═══════════════════════════════════════════════════════
-   ModuleShowcase — single-card carousel
-   ═══════════════════════════════════════════════════════ */
-
+// ── Component ──────────────────────────────────────────────────────────
 interface ModuleShowcaseProps {
   courses: CourseData[];
   categoryTitle: string;
@@ -60,355 +99,422 @@ interface ModuleShowcaseProps {
 
 export default function ModuleShowcase({
   courses,
-  categoryTitle,
   categoryId,
   userProgress,
   onSelectCourse,
 }: ModuleShowcaseProps) {
+  const theme = WORLD_THEMES[categoryId] ?? FALLBACK_THEME;
+
+  // Synchronous initialiser — hero mounts with the right module on the
+  // first render, no useEffect tick.
   const [currentIndex, setCurrentIndex] = useState(() => {
+    if (courses.length === 0) return 0;
     const firstIncomplete = courses.findIndex(c => {
       const p = userProgress[c.id];
       return !p || p.unlockedSection < c.sectionsCount;
     });
     return firstIncomplete === -1 ? 0 : firstIncomplete;
   });
-  const [direction, setDirection] = useState(0);
   const [sectionsExpanded, setSectionsExpanded] = useState(false);
 
-  const course = courses[currentIndex];
+  // Defensive: if courses is empty or currentIndex out of bounds, bail
+  // before destructuring to avoid the "blank hero" rendering bug.
+  if (courses.length === 0) return null;
+  const safeIndex = Math.min(Math.max(currentIndex, 0), courses.length - 1);
+  const course = courses[safeIndex];
+
   const progress = userProgress[course.id];
-  const isCompleted = progress && progress.unlockedSection >= course.sectionsCount;
-  const isInProgress = progress && progress.unlockedSection > 0 && !isCompleted;
-  const gradient = getGradient(categoryId);
+  const isCompleted = !!progress && progress.unlockedSection >= course.sectionsCount;
+  const isInProgress = !!progress && progress.unlockedSection > 0 && !isCompleted;
+
+  const sections = getSectionsForModule(course.id, course.sectionsCount);
+  const startStep = isInProgress
+    ? Math.min((progress?.unlockedSection ?? 0) + 1, course.sectionsCount)
+    : 1;
+  const startSection = sections[startStep - 1];
+  const startSectionTitle = startSection?.title ?? `Section ${startStep}`;
+  // Section eyebrow strings tend to be in the form "Section 1 // Sub-headline".
+  // Strip the prefix to get just the sub-headline part.
+  const sectionSubhed = startSection?.eyebrow?.includes(' // ')
+    ? startSection.eyebrow.split(' // ').slice(1).join(' // ')
+    : '';
+
+  const ctaLabel = isCompleted ? 'Review module' : isInProgress ? 'Continue module' : 'Begin module';
 
   const goTo = useCallback((idx: number) => {
-    if (idx < 0 || idx >= courses.length || idx === currentIndex) return;
-    setDirection(idx > currentIndex ? 1 : -1);
+    if (idx < 0 || idx >= courses.length || idx === safeIndex) return;
     setCurrentIndex(idx);
     setSectionsExpanded(false);
-  }, [currentIndex, courses.length]);
+  }, [safeIndex, courses.length]);
 
-  const goNext = useCallback(() => goTo(currentIndex + 1), [goTo, currentIndex]);
-  const goPrev = useCallback(() => goTo(currentIndex - 1), [goTo, currentIndex]);
-
-  const handleDragEnd = useCallback((_: any, info: { offset: { x: number } }) => {
-    if (info.offset.x < -50) goNext();
-    else if (info.offset.x > 50) goPrev();
-  }, [goNext, goPrev]);
-
+  // Keyboard nav
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowRight') goNext();
-      if (e.key === 'ArrowLeft') goPrev();
+      if (e.key === 'ArrowRight') goTo(safeIndex + 1);
+      if (e.key === 'ArrowLeft') goTo(safeIndex - 1);
     };
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
-  }, [goNext, goPrev]);
+  }, [goTo, safeIndex]);
 
-  const ctaLabel = isCompleted ? 'Review module' : isInProgress ? 'Continue module' : 'Start module';
-  const progressLabel = isCompleted
-    ? 'Completed'
-    : isInProgress
-    ? `In progress: ${progress.unlockedSection} of ${course.sectionsCount} sections`
-    : 'Not started';
-  const estimatedMinutes = course.sectionsCount * 8;
+  // ── Carousel scroll affordance ──────────────────────────────────────
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
 
-  const cardVariants = {
-    enter: (dir: number) => ({ x: dir > 0 ? '110%' : '-110%', opacity: 1 }),
-    center: { x: 0, opacity: 1 },
-    exit: (dir: number) => ({ x: dir > 0 ? '-110%' : '110%', rotateZ: dir > 0 ? -4 : 4, opacity: 0.7 }),
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const update = () => {
+      setCanScrollLeft(el.scrollLeft > 8);
+      setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 8);
+    };
+    update();
+    el.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    return () => {
+      el.removeEventListener('scroll', update);
+      window.removeEventListener('resize', update);
+    };
+  }, [courses.length]);
+
+  const scrollByCard = (dir: 1 | -1) => {
+    scrollRef.current?.scrollBy({ left: dir * (CARD_WIDTH + 12), behavior: 'smooth' });
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4">
-      <div className="relative">
-
-        {/* Peek cards */}
+    <div className="w-full max-w-5xl mx-auto px-4 flex flex-col gap-5 md:gap-6">
+      <LayoutGroup>
+        {/* ── Hero card ───────────────────────────────────────────
+            Wrapped in AnimatePresence with key=course.id so each
+            module mount/unmount is tracked. mode="popLayout" lets
+            the exiting hero animate concurrently with the entering
+            one (otherwise the hero slot is blank during the gap). */}
         <div className="relative">
-          {courses.length > 2 && (
-            <div
-              className="absolute rounded-3xl pointer-events-none"
-              style={{ top: 24, left: 32, right: 32, height: '100%', backgroundColor: gradient.to, opacity: 0.3, zIndex: 1 }}
-            />
-          )}
-          {courses.length > 1 && (
-            <div
-              className="absolute rounded-3xl pointer-events-none"
-              style={{ top: 12, left: 16, right: 16, height: '100%', backgroundColor: gradient.to, opacity: 0.5, zIndex: 2 }}
-            />
-          )}
-
-          {/* Primary card */}
-          <motion.div
-            className="relative"
-            style={{ zIndex: 3, overflow: 'hidden', touchAction: 'pan-y' }}
-            drag="x"
-            dragConstraints={{ left: 0, right: 0 }}
-            dragElastic={0.2}
-            onDragEnd={handleDragEnd}
-          >
-          <AnimatePresence mode="popLayout" custom={direction} initial={false}>
+          <AnimatePresence mode="popLayout" initial={false}>
             <motion.div
               key={course.id}
-              custom={direction}
-              variants={cardVariants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-              className="rounded-3xl overflow-hidden"
-              style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.04)' }}
+              layoutId={`module-card-${course.id}`}
+              layout
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ type: 'spring', stiffness: 240, damping: 32, opacity: { duration: 0.18 } }}
+              className="rounded-[24px] md:rounded-[28px] overflow-hidden"
+              style={{
+                background: '#FDF8F0',
+                border: `1px solid ${theme.blob}66`,
+                boxShadow: '0 4px 18px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.04)',
+              }}
             >
-              <div className="flex flex-col md:flex-row min-h-[340px] md:min-h-[520px]">
-                {/* Left — Bold gradient panel */}
-                <div
-                  className="relative w-full md:w-[40%] min-h-[180px] md:min-h-0 overflow-hidden flex flex-col items-center justify-center"
-                  style={{ background: `linear-gradient(135deg, ${gradient.from} 0%, ${gradient.to} 100%)` }}
-                >
-                  {/* Decorative circles */}
-                  <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }} />
-                  <div className="absolute bottom-6 -left-8 w-28 h-28 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.08)' }} />
-                  <div className="absolute top-1/3 right-1/4 w-14 h-14 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.06)' }} />
-
-                  {/* Category + module info */}
-                  <div className="relative z-10 text-center px-6 md:px-8">
-                    <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.6)', textTransform: 'uppercase', marginBottom: '12px' }}>
-                      {categoryTitle}
-                    </p>
-                    <h3 style={{ fontFamily: "'Source Serif 4', serif", fontSize: '24px', fontWeight: 700, color: '#fff', lineHeight: 1.3 }}>
-                      {course.title}
-                    </h3>
-                    <div className="flex items-center justify-center gap-2 mt-4">
-                      <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '13px', fontWeight: 600, color: 'rgba(255,255,255,0.8)' }}>
-                        {currentIndex + 1} / {courses.length}
-                      </span>
-                    </div>
+              <div className="p-6 md:p-9 lg:p-10">
+                {/* ── Eyebrow row — full width, above both columns ── */}
+                <div className="flex items-center gap-5 mb-6 md:mb-8">
+                  <WorldIconBlob world={theme.worldKey} size={140} />
+                  <div className="flex items-center gap-3 min-w-0">
+                    <span className="font-mono text-[11px] font-bold tracking-[0.25em]" style={{ color: theme.deep }}>
+                      {theme.number}
+                    </span>
+                    <span className="h-px w-8 shrink-0" style={{ background: `${theme.deep}40` }} />
+                    <span className="font-mono text-[10px] uppercase tracking-[0.22em]" style={{ color: `${theme.deep}AA` }}>
+                      {theme.worldName}
+                    </span>
                   </div>
-
-                  {/* Progress badge */}
-                  {(isCompleted || isInProgress) && (
-                    <div
-                      className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1.5 rounded-full"
-                      style={{ backgroundColor: 'rgba(255,255,255,0.2)', backdropFilter: 'blur(8px)' }}
-                    >
-                      {isCompleted && <CheckCircle2 size={12} color="#fff" />}
-                      <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 600, color: '#fff' }}>
-                        {isCompleted ? 'Complete' : `${progress.unlockedSection}/${course.sectionsCount}`}
-                      </span>
-                    </div>
-                  )}
                 </div>
 
-                {/* Right — Content */}
-                <div className="flex-1 p-6 md:p-10 lg:p-12 flex flex-col bg-white dark:bg-zinc-900">
-                  <div className="flex-1 flex flex-col">
-                    <p
-                      className="text-[11px] font-semibold uppercase tracking-wider mb-3"
-                      style={{ color: gradient.from, letterSpacing: '0.12em' }}
-                    >
-                      {categoryTitle}
-                    </p>
-
-                    <h2
-                      className="font-serif font-semibold leading-tight mb-3 text-zinc-900 dark:text-white"
-                      style={{ fontSize: 'clamp(24px, 3.5vw, 42px)', letterSpacing: '-0.02em' }}
+                {/* ── Two-column body ────────────────────────────── */}
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10">
+                  {/* Left column — what this is */}
+                  <div className="md:col-span-7 flex flex-col">
+                    <h1
+                      className="font-serif font-medium tracking-[-0.03em] leading-[1.0] text-[#1A1A1A]"
+                      style={{ fontSize: 'clamp(36px, 4.5vw, 56px)' }}
                     >
                       {course.title}
-                    </h2>
+                    </h1>
 
                     {course.subtitle && (
-                      <p className="text-base mb-2 text-zinc-600 dark:text-zinc-400" style={{ lineHeight: 1.5 }}>
+                      <p className="font-serif italic text-[18px] md:text-[22px] mt-4" style={{ color: theme.mid }}>
                         {course.subtitle}
                       </p>
                     )}
 
-                    <p className="text-sm mb-6 text-zinc-500 dark:text-zinc-500" style={{ lineHeight: 1.6 }}>
+                    <p className="text-[14px] md:text-[15px] leading-relaxed mt-5" style={{ color: 'rgba(0,0,0,0.62)' }}>
                       {course.description}
                     </p>
+                  </div>
 
-                    {/* Actions */}
-                    <div className="flex flex-col gap-3 mb-6">
+                  {/* Right column — how to start */}
+                  <div className="md:col-span-5 md:pl-8 md:border-l flex flex-col" style={{ borderColor: `${theme.mid}4D` }}>
+                    <p className="font-mono text-[11px] font-medium uppercase tracking-[0.22em]" style={{ color: theme.mid }}>
+                      {isInProgress ? 'Continue here' : 'Start here'}
+                    </p>
+
+                    <h3 className="font-serif font-medium leading-snug tracking-tight text-[#1A1A1A] mt-3" style={{ fontSize: 'clamp(20px, 2vw, 24px)' }}>
+                      {startSectionTitle}
+                    </h3>
+
+                    {sectionSubhed && (
+                      <p className="font-serif italic text-[14px] mt-1.5" style={{ color: 'rgba(0,0,0,0.6)' }}>
+                        {sectionSubhed}
+                      </p>
+                    )}
+
+                    {/* Begins with panel — hairline rule on left */}
+                    <div className="mt-5 pl-3 border-l-2" style={{ borderColor: theme.mid }}>
+                      <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: `${theme.deep}AA` }}>
+                        {isInProgress
+                          ? `Up next · Section ${startStep} of ${course.sectionsCount}`
+                          : `Begins with · Section 1 of ${course.sectionsCount}`}
+                      </p>
+                    </div>
+
+                    {/* Buttons */}
+                    <div className="mt-6 flex flex-col items-start gap-3">
                       <button
                         onClick={() => onSelectCourse(course.id)}
-                        className="w-full text-white font-semibold transition-all active:translate-y-[2px]"
+                        className="group inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-white text-[14px] font-semibold transition-all duration-300 hover:gap-3.5"
                         style={{
-                          background: `linear-gradient(135deg, ${gradient.from}, ${gradient.to})`,
-                          borderRadius: 100,
-                          padding: '15px 32px',
-                          fontSize: 16,
-                          boxShadow: `0 4px 0 ${gradient.to}`,
-                          borderBottom: `3px solid ${gradient.to}`,
+                          background: theme.mid,
+                          boxShadow: `0 6px 16px ${theme.mid}55`,
                         }}
                       >
                         {ctaLabel}
+                        <ArrowRight size={16} />
                       </button>
-
                       <button
                         onClick={() => setSectionsExpanded(!sectionsExpanded)}
-                        className="flex items-center gap-1.5 mx-auto transition-colors"
-                        style={{ fontSize: 14, fontWeight: 500, color: gradient.from }}
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[12px] font-semibold transition-colors duration-200"
+                        style={{ color: theme.mid, border: `1px solid ${theme.mid}55` }}
                       >
                         What&rsquo;s in this module
                         <motion.span animate={{ rotate: sectionsExpanded ? 180 : 0 }} transition={{ duration: 0.2 }}>
-                          <ChevronDown size={16} />
+                          <ChevronDown size={12} />
                         </motion.span>
                       </button>
                     </div>
-
-                    {/* Expandable sections */}
-                    <AnimatePresence>
-                      {sectionsExpanded && (
-                        <motion.div
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: 'auto', opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          transition={{ duration: 0.3, ease: [0.25, 1, 0.5, 1] }}
-                          className="overflow-hidden mb-6"
-                        >
-                          <div className="space-y-2">
-                            {getSectionsForModule(course.id, course.sectionsCount).map((section, i) => {
-                              const sectionDone = progress && progress.unlockedSection > i;
-                              return (
-                                <div
-                                  key={i}
-                                  className="flex items-start gap-3 py-2"
-                                  style={{ borderTop: i === 0 ? 'none' : '1px solid rgba(0,0,0,0.04)' }}
-                                >
-                                  <span
-                                    className="shrink-0 mt-0.5 flex items-center justify-center"
-                                    style={{
-                                      width: 22, height: 22, borderRadius: '50%',
-                                      backgroundColor: sectionDone ? gradient.from : '#e0dbd4',
-                                      color: sectionDone ? '#fff' : '#9e9186',
-                                      fontSize: 11, fontWeight: 700,
-                                    }}
-                                  >
-                                    {sectionDone ? <CheckCircle2 size={12} /> : i + 1}
-                                  </span>
-                                  <div>
-                                    <p className="text-sm font-medium text-zinc-900 dark:text-white">
-                                      {section.title}
-                                    </p>
-                                    {section.eyebrow && (
-                                      <p className="text-xs mt-0.5" style={{ color: '#9e9186' }}>
-                                        {section.eyebrow.split(' // ')[1] || section.eyebrow}
-                                      </p>
-                                    )}
-                                  </div>
-                                </div>
-                              );
-                            })}
-                          </div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-
-                    {/* Metadata */}
-                    <div className="mt-auto pt-5" style={{ borderTop: '1px solid rgba(0,0,0,0.06)' }}>
-                      <div className="flex flex-wrap items-center gap-6">
-                        <div>
-                          <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400" style={{ letterSpacing: '0.1em' }}>Time</p>
-                          <p className="text-sm font-medium mt-0.5 text-zinc-900 dark:text-white">{estimatedMinutes} min</p>
-                        </div>
-                        <div>
-                          <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400" style={{ letterSpacing: '0.1em' }}>Progress</p>
-                          <p className="text-sm font-medium mt-0.5" style={{ color: isCompleted ? gradient.from : undefined }}>{progressLabel}</p>
-                        </div>
-                        {course.tags.length > 0 && (
-                          <div>
-                            <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400" style={{ letterSpacing: '0.1em' }}>Topics</p>
-                            <p className="text-sm font-medium mt-0.5 text-zinc-500">{course.tags.join(', ')}</p>
-                          </div>
-                        )}
-                      </div>
-                    </div>
                   </div>
+                </div>
+
+                {/* Expandable sections — full width below body */}
+                <AnimatePresence>
+                  {sectionsExpanded && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: [0.25, 1, 0.5, 1] }}
+                      className="overflow-hidden mt-6"
+                    >
+                      <div className="space-y-1">
+                        {sections.map((section, i) => {
+                          const sectionDone = !!progress && progress.unlockedSection > i;
+                          return (
+                            <div
+                              key={i}
+                              className="flex items-start gap-3 py-2"
+                              style={{ borderTop: i === 0 ? 'none' : '1px solid rgba(0,0,0,0.04)' }}
+                            >
+                              <span
+                                className="shrink-0 mt-0.5 flex items-center justify-center"
+                                style={{
+                                  width: 22, height: 22, borderRadius: '50%',
+                                  backgroundColor: sectionDone ? theme.mid : '#e0dbd4',
+                                  color: sectionDone ? '#fff' : '#9e9186',
+                                  fontSize: 11, fontWeight: 700,
+                                }}
+                              >
+                                {sectionDone ? <CheckCircle2 size={12} /> : i + 1}
+                              </span>
+                              <div>
+                                <p className="text-sm font-medium text-[#1A1A1A]">{section.title}</p>
+                                {section.eyebrow && (
+                                  <p className="text-xs mt-0.5" style={{ color: '#9e9186' }}>
+                                    {section.eyebrow.split(' // ')[1] || section.eyebrow}
+                                  </p>
+                                )}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+
+                {/* ── Metadata footer — full width below both columns ── */}
+                <div className="mt-7 pt-5 flex flex-wrap items-baseline gap-x-8 gap-y-3" style={{ borderTop: '1px solid rgba(0,0,0,0.06)' }}>
+                  <div className="flex items-baseline gap-2">
+                    <span className="font-mono text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: `${theme.deep}99` }}>Progress</span>
+                    <span className="text-[13px] font-medium" style={{ color: isCompleted ? theme.mid : '#1A1A1A' }}>
+                      {isCompleted ? 'Completed' : isInProgress ? `${progress?.unlockedSection} of ${course.sectionsCount} sections` : 'Not started'}
+                    </span>
+                  </div>
+                  {course.tags.length > 0 && (
+                    <div className="flex items-baseline gap-2 min-w-0">
+                      <span className="font-mono text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: `${theme.deep}99` }}>Topics</span>
+                      <span className="text-[13px] font-medium text-[#1A1A1A] truncate">{course.tags.slice(0, 3).join(', ')}</span>
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>
           </AnimatePresence>
-        </motion.div>
-
         </div>
 
-        {/* Navigation arrows */}
-        {currentIndex > 0 && (
-          <button
-            onClick={goPrev}
-            className="absolute left-[-24px] top-1/2 -translate-y-1/2 w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"
-            style={{ backgroundColor: '#fff', border: '1px solid rgba(0,0,0,0.08)', zIndex: 10 }}
-          >
-            <ChevronLeft size={22} style={{ color: gradient.from }} />
-          </button>
-        )}
-        {currentIndex < courses.length - 1 && (
-          <button
-            onClick={goNext}
-            className="absolute right-[-24px] top-1/2 -translate-y-1/2 w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"
-            style={{ backgroundColor: '#fff', border: '1px solid rgba(0,0,0,0.08)', zIndex: 10 }}
-          >
-            <ChevronRight size={22} style={{ color: gradient.from }} />
-          </button>
-        )}
-      </div>
+        {/* ── Carousel ─────────────────────────────────────────── */}
+        {courses.length > 1 && (
+          <div>
+            <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em] mb-3" style={{ color: theme.mid }}>
+              More in {theme.worldName}
+            </p>
 
-      {/* Progress chips */}
-      <div className="flex items-center justify-center gap-2 flex-nowrap" style={{ marginTop: 48 }}>
-        {courses.map((c, i) => {
-          const p = userProgress[c.id];
-          const done = p && p.unlockedSection >= c.sectionsCount;
-          const isCurrent = i === currentIndex;
-          const rawProgress = p ? p.unlockedSection / c.sectionsCount : 0;
-          const chipInProgress = rawProgress > 0 && rawProgress < 1;
-          const visibleFillPct = chipInProgress ? Math.max(10, Math.round(rawProgress * 100)) : 0;
-          const textLight = done || (chipInProgress && visibleFillPct >= 50);
-
-          const chipSize = isCurrent ? 50 : 42;
-
-          return (
-            <motion.button
-              key={c.id}
-              onClick={() => goTo(i)}
-              layout
-              transition={{ duration: 0.25, ease: [0.25, 1, 0.5, 1] }}
-              className="relative overflow-hidden shrink-0 flex items-center justify-center rounded-xl"
-              style={{
-                width: chipSize,
-                height: chipSize,
-                backgroundColor: done ? gradient.from : isCurrent ? `${gradient.from}15` : '#f0ede8',
-                border: isCurrent ? `2px solid ${gradient.from}` : 'none',
-                cursor: 'pointer',
-              }}
-              whileHover={!isCurrent ? { scale: 1.05 } : {}}
-              aria-label={`Go to module ${i + 1}: ${c.title}`}
-            >
-              {chipInProgress && (
-                <motion.div
-                  className="absolute left-0 right-0 bottom-0"
-                  style={{ backgroundColor: gradient.from }}
-                  animate={{ height: `${visibleFillPct}%` }}
-                  transition={{ duration: 0.4, ease: [0.25, 1, 0.5, 1] }}
-                />
-              )}
-              <span
-                className="relative"
-                style={{
-                  fontSize: isCurrent ? 16 : 14,
-                  fontWeight: isCurrent ? 700 : 500,
-                  color: textLight ? '#fff' : done ? '#fff' : isCurrent ? gradient.from : '#8a8a8a',
-                  zIndex: 1,
-                }}
+            <div className="relative">
+              {/* Scroll container — scrollbar hidden, arrow buttons drive nav */}
+              <div
+                ref={scrollRef}
+                className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 snap-x scroll-px-4 [&::-webkit-scrollbar]:hidden"
+                style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
               >
-                {i + 1}
-              </span>
-            </motion.button>
-          );
-        })}
-      </div>
+                {courses.map((c, originalIdx) => {
+                  const isActive = originalIdx === safeIndex;
+                  const cProgress = userProgress[c.id];
+                  const cCompleted = !!cProgress && cProgress.unlockedSection >= c.sectionsCount;
+                  const cPct = cProgress ? Math.round((cProgress.unlockedSection / c.sectionsCount) * 100) : 0;
+                  const cNumber = String(originalIdx + 1).padStart(2, '0');
 
-      <p className="text-center mt-4 text-xs" style={{ color: '#9e9186' }}>
-        Module {currentIndex + 1} of {courses.length}
-      </p>
+                  // Active card: muted, non-interactive, NO layoutId — never
+                  // share a layoutId with the hero or Framer drops the morph.
+                  if (isActive) {
+                    return (
+                      <div
+                        key={c.id}
+                        aria-current="true"
+                        className="shrink-0 w-[260px] md:w-[280px] rounded-2xl overflow-hidden snap-start cursor-default"
+                        style={{
+                          background: '#FDF8F0',
+                          border: `1px dashed ${theme.mid}55`,
+                          boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.04)',
+                          opacity: 0.5,
+                        }}
+                      >
+                        <div className="flex flex-col h-full p-5 min-h-[220px]">
+                          <div className="flex justify-center -mt-4 -mb-2">
+                            <WorldIconBlob world={theme.worldKey} size={120} />
+                          </div>
+                          <span className="font-mono text-[11px] font-medium tracking-[0.2em]" style={{ color: theme.mid }}>
+                            {cNumber}
+                          </span>
+                          <h4 className="font-serif text-[20px] md:text-[22px] font-medium tracking-tight leading-[1.05] text-[#1A1A1A] mt-1">
+                            {c.title}
+                          </h4>
+                          <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] mt-auto pt-3" style={{ color: theme.mid }}>
+                            Currently viewing
+                          </p>
+                        </div>
+                      </div>
+                    );
+                  }
+
+                  return (
+                    <motion.button
+                      key={c.id}
+                      layoutId={`module-card-${c.id}`}
+                      layout
+                      transition={{ type: 'spring', stiffness: 240, damping: 32 }}
+                      onClick={() => goTo(originalIdx)}
+                      whileHover={{ y: -2 }}
+                      className="shrink-0 w-[260px] md:w-[280px] text-left rounded-2xl overflow-hidden snap-start transition-shadow hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+                      style={{
+                        background: '#FDF8F0',
+                        border: `1px solid ${theme.blob}66`,
+                        boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                      }}
+                    >
+                      <div className="flex flex-col h-full p-5 min-h-[220px]">
+                        <div className="flex justify-center -mt-4 -mb-2">
+                          <WorldIconBlob world={theme.worldKey} size={120} />
+                        </div>
+                        <span className="font-mono text-[11px] font-medium tracking-[0.2em]" style={{ color: theme.mid }}>
+                          {cNumber}
+                        </span>
+                        <h4 className="font-serif text-[20px] md:text-[22px] font-medium tracking-tight leading-[1.05] text-[#1A1A1A] mt-1">
+                          {c.title}
+                        </h4>
+                        <p className="text-[12px] leading-snug mt-2" style={{ color: 'rgba(0,0,0,0.55)' }}>
+                          {c.description}
+                        </p>
+                        <div className="mt-auto pt-3 flex items-center gap-2">
+                          {cCompleted ? (
+                            <span className="inline-flex items-center justify-center w-4 h-4 rounded-full" style={{ background: theme.mid, color: 'white' }}>
+                              <CheckCircle2 size={10} />
+                            </span>
+                          ) : (
+                            <span className="h-1 rounded-full overflow-hidden flex-1" style={{ background: `${theme.deep}1F` }}>
+                              <span className="block h-full rounded-full" style={{ width: `${cPct}%`, background: theme.mid }} />
+                            </span>
+                          )}
+                          <span className="text-[10px] font-mono font-bold tabular-nums" style={{ color: theme.deep }}>
+                            {cCompleted ? 'Done' : `${cPct}%`}
+                          </span>
+                        </div>
+                      </div>
+                    </motion.button>
+                  );
+                })}
+              </div>
+
+              {/* Scroll arrows — fade in/out based on scroll position */}
+              <AnimatePresence>
+                {canScrollLeft && (
+                  <motion.button
+                    key="left"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.8 }}
+                    transition={{ duration: 0.18 }}
+                    onClick={() => scrollByCard(-1)}
+                    aria-label="Scroll modules left"
+                    className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full flex items-center justify-center"
+                    style={{
+                      background: '#FFFFFF',
+                      border: `1px solid ${theme.blob}66`,
+                      boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
+                      color: theme.mid,
+                    }}
+                  >
+                    <ChevronLeft size={18} />
+                  </motion.button>
+                )}
+                {canScrollRight && (
+                  <motion.button
+                    key="right"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.8 }}
+                    transition={{ duration: 0.18 }}
+                    onClick={() => scrollByCard(1)}
+                    aria-label="Scroll modules right"
+                    className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full flex items-center justify-center"
+                    style={{
+                      background: '#FFFFFF',
+                      border: `1px solid ${theme.blob}66`,
+                      boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
+                      color: theme.mid,
+                    }}
+                  >
+                    <ChevronRight size={18} />
+                  </motion.button>
+                )}
+              </AnimatePresence>
+            </div>
+
+            <p className="text-center mt-3 font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: `${theme.deep}99` }}>
+              Module {safeIndex + 1} of {courses.length}
+            </p>
+          </div>
+        )}
+      </LayoutGroup>
     </div>
   );
 }

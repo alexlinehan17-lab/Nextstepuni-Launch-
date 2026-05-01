@@ -208,13 +208,6 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
 
   return (
     <div className="space-y-6">
-      {/* Header */}
-      <div>
-        <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">Points Passport</h2>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
-          Your points are a snapshot, not a sentence. Track your trajectory and find your fastest path forward.
-        </p>
-      </div>
 
       {/* Points overview cards */}
       <div className="grid grid-cols-3 gap-3">

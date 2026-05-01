@@ -19,6 +19,8 @@ import AchievementGallery from './AchievementGallery';
 import { type CourseData } from './Library';
 import { STRATEGY_REGISTRY } from '../utils/strategyRegistry';
 import { type WeeklyChallengeState } from '../hooks/useWeeklyChallenge';
+import { ToolHeader } from './ToolHeader';
+import { TrainingHubIcon } from './toolIcons';
 
 // ─── Config ─────────────────────────────────────────────────
 
@@ -86,68 +88,72 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
   return (
     <div className="min-h-screen bg-[#FDF8F0] dark:bg-zinc-950">
 
-      {/* ── Hero: dark banner with rank + stats ── */}
-      <div className="relative overflow-hidden" style={{ background: `linear-gradient(135deg, ${currentRank.colorHex} 0%, ${currentRank.colorHex}dd 100%)` }}>
-        {/* Decorative circles */}
-        <div className="absolute pointer-events-none" style={{ top: -60, right: -40, width: 200, height: 200, borderRadius: '50%', background: 'rgba(255,255,255,0.1)' }} />
-        <div className="absolute pointer-events-none" style={{ bottom: -30, left: -30, width: 120, height: 120, borderRadius: '50%', background: 'rgba(255,255,255,0.07)' }} />
+      {/* Back affordance — small chip above the header */}
+      <div className="px-6 pt-5">
+        <button
+          onClick={onBack}
+          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[12px] font-semibold text-[#1A1A1A] dark:text-white border border-[#EDEBE8] dark:border-zinc-700 hover:bg-white/60 dark:hover:bg-zinc-900 transition-colors"
+        >
+          <ArrowLeft size={14} />
+          Back
+        </button>
+      </div>
 
-        {/* Header */}
-        <div className="px-6 py-4 flex items-center gap-3">
-          <button onClick={onBack} className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors" style={{ backgroundColor: 'rgba(255,255,255,0.08)' }}>
-            <ArrowLeft size={18} color="#fff" />
-          </button>
-          <h1 style={{ fontFamily: "'Source Serif 4', serif", fontSize: '18px', fontWeight: 600, color: '#fff' }}>Training Hub</h1>
-        </div>
+      {/* ── Editorial header ── */}
+      <div className="px-6 max-w-3xl mx-auto pt-4">
+        <ToolHeader
+          themeColor="#2A7D6F"
+          eyebrow="The Programme"
+          title="Training Hub"
+          subtitle="Build your streak. Earn your rank. Watch the work compound — week by week, point by point."
+          icon={<TrainingHubIcon />}
+        />
+      </div>
 
-        {/* Rank + Progress */}
-        <div className="px-6 max-w-3xl mx-auto pb-8 pt-4">
-          <MotionDiv {...stagger(0)} className="flex items-center gap-5">
-            {/* Rank badge */}
+      {/* ── Rank + stats — relocated from the old dark hero onto cream ── */}
+      <div className="px-6 max-w-3xl mx-auto pt-6">
+        <MotionDiv {...stagger(0)} className="rounded-2xl bg-white dark:bg-zinc-900 p-5" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
+          <div className="flex items-center gap-5">
             <div
-              className="w-16 h-16 rounded-2xl flex items-center justify-center shrink-0"
-              style={{ backgroundColor: 'rgba(255,255,255,0.25)', border: '2px solid rgba(255,255,255,0.3)' }}
+              className="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0"
+              style={{ backgroundColor: `${currentRank.colorHex}18` }}
             >
-              <RankIcon size={28} color="#fff" />
+              <RankIcon size={26} color={currentRank.colorHex} />
             </div>
-
-            {/* Rank info + bar */}
             <div className="flex-1 min-w-0">
               <div className="flex items-baseline gap-2">
-                <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '22px', fontWeight: 700, color: '#fff' }}>
+                <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '20px', fontWeight: 600, color: '#1a1a1a' }}>
                   {currentRank.title}
                 </p>
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '12px', color: 'rgba(255,255,255,0.4)' }}>
+                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '12px', color: '#9e9186' }}>
                   {nextRank ? `${totalPointsEarned} / ${nextRank.minPoints} XP` : 'Max rank'}
                 </span>
               </div>
-              {/* Progress bar */}
-              <div className="mt-2 h-2 rounded-full overflow-hidden" style={{ backgroundColor: 'rgba(255,255,255,0.2)' }}>
+              <div className="mt-2 h-2 rounded-full overflow-hidden" style={{ backgroundColor: '#f0ede8' }}>
                 <motion.div
                   className="h-full rounded-full"
-                  style={{ backgroundColor: '#fff' }}
+                  style={{ backgroundColor: currentRank.colorHex }}
                   initial={{ width: 0 }}
                   animate={{ width: `${Math.min(100, rankProgress)}%` }}
                   transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                 />
               </div>
             </div>
-          </MotionDiv>
+          </div>
+        </MotionDiv>
 
-          {/* Stats row */}
-          <MotionDiv {...stagger(1)} className="grid grid-cols-3 gap-3 mt-6">
-            {[
-              { value: streak.currentStreak, label: 'Day Streak' },
-              { value: totalPointsEarned, label: 'Total XP' },
-              { value: `${modulesCompleted}/${allCourses.length}`, label: 'Modules' },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center py-3 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.2)' }}>
-                <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '20px', fontWeight: 700, color: '#fff' }}>{stat.value}</p>
-                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 600, letterSpacing: '0.1em', color: 'rgba(255,255,255,0.6)', textTransform: 'uppercase', marginTop: '2px' }}>{stat.label}</p>
-              </div>
-            ))}
-          </MotionDiv>
-        </div>
+        <MotionDiv {...stagger(1)} className="grid grid-cols-3 gap-3 mt-3">
+          {[
+            { value: streak.currentStreak, label: 'Day Streak' },
+            { value: totalPointsEarned, label: 'Total XP' },
+            { value: `${modulesCompleted}/${allCourses.length}`, label: 'Modules' },
+          ].map((stat) => (
+            <div key={stat.label} className="text-center py-3 rounded-xl bg-white dark:bg-zinc-900" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
+              <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '20px', fontWeight: 600, color: '#1a1a1a' }}>{stat.value}</p>
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 600, letterSpacing: '0.1em', color: '#9e9186', textTransform: 'uppercase', marginTop: '2px' }}>{stat.label}</p>
+            </div>
+          ))}
+        </MotionDiv>
       </div>
 
       {/* ── Content area ── */}

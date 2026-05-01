@@ -38,6 +38,42 @@ import AcademicJourneyGame, { type JourneyResult } from './AcademicJourneyGame';
 import ToolErrorBoundary from './ToolErrorBoundary';
 import PointsExplainer from './PointsExplainer';
 import { useNavigation } from '../contexts/NavigationContext';
+import { ToolHeader } from './ToolHeader';
+import {
+  AcademicJourneyIcon, CAOPointsIcon, FutureFinderIcon, SyllabusXRayIcon,
+  SpacedRepetitionIcon, WarRoomIcon, ComebackEngineIcon, PointsPassportIcon,
+} from './toolIcons';
+
+// ── Editorial chrome registry ──────────────────────────────────────────
+//
+// All chrome (theme colour, eyebrow, subtitle, icon, whether to show the
+// auto ToolHeader) lives in one place so the launchpad grid and the
+// active-tool header use identical metadata.
+//
+// `showHeader: false` for tools whose own immersive entry visual makes a
+// stacked ToolHeader feel redundant — War Room (red countdown hero) and
+// Academic Journey Simulator (full-screen scene-based game). Those tools
+// still get the new tile + icon style in the launchpad grid; the auto
+// ToolHeader just doesn't render once the tool is open.
+
+interface ToolChrome {
+  themeColor: string;
+  eyebrow: string;
+  subtitle: string;
+  IconComponent: React.FC<{ themeColor?: string }>;
+  showHeader: boolean;
+}
+
+const TOOL_CHROME: Record<string, ToolChrome> = {
+  'journey':         { themeColor: '#8B82B8', eyebrow: 'Track · Simulator',           subtitle: 'Navigate the choices of your final school year. Test-drive your future.',         IconComponent: AcademicJourneyIcon, showHeader: false },
+  'cao-simulator':   { themeColor: '#5B7DB0', eyebrow: 'Understand · Simulator',      subtitle: 'Run the numbers. See how grade changes ripple through your CAO total.',           IconComponent: CAOPointsIcon,        showHeader: true  },
+  'planner':         { themeColor: '#7DA37A', eyebrow: 'Plan · Planner',              subtitle: 'A data-driven study planner powered by your subject goals.',                       IconComponent: SpacedRepetitionIcon, showHeader: true  },
+  'war-room':        { themeColor: '#D85F47', eyebrow: 'Plan · Strategy',             subtitle: 'Where the strategy gets made. Map the syllabus, allocate the hours, plan the attack.', IconComponent: WarRoomIcon,         showHeader: false },
+  'comeback':        { themeColor: '#E08938', eyebrow: 'Plan · Comeback',             subtitle: 'Find your quickest wins and build a comeback plan.',                                IconComponent: ComebackEngineIcon,   showHeader: true  },
+  'future-finder':   { themeColor: '#C76489', eyebrow: 'Understand · Career discovery', subtitle: 'Discover the courses, careers, and possible lives that fit who you are.',         IconComponent: FutureFinderIcon,     showHeader: true  },
+  'syllabus-xray':   { themeColor: '#2C4B6E', eyebrow: 'Understand · Exam intel',     subtitle: 'See where the marks are hiding in every paper, every section, every question.',   IconComponent: SyllabusXRayIcon,     showHeader: true  },
+  'points-passport': { themeColor: '#B8A079', eyebrow: 'Track · Tracker',             subtitle: 'Mock trends and grade bargains, all at a glance.',                                  IconComponent: PointsPassportIcon,   showHeader: true  },
+};
 
 interface InnovationZoneProps {
   onBack: () => void;
@@ -504,9 +540,9 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     {/* Bento card grid */}
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
                         {filteredTools.map((tool, i) => {
-                            const Icon = tool.icon;
                             const disabled = (tool.needsProfile && !profileLoaded) || (tool.needsProfile && !subjectProfile);
                             const gcRecommended = gcRecommendations[tool.id];
+                            const chrome = TOOL_CHROME[tool.id];
 
                             return (
                                 <MotionDiv
@@ -522,14 +558,24 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                                     } bg-white dark:bg-zinc-900`}
                                 >
                                     <div className="p-6 flex-1 flex flex-col">
-                                        {/* Icon in colored circle */}
-                                        <div className={`w-10 h-10 rounded-full flex items-center justify-center mb-4 ${
-                                            disabled ? 'bg-zinc-100 dark:bg-zinc-800' : tool.iconBg
-                                        }`}>
-                                            {disabled
-                                                ? <Lock size={18} className="text-zinc-400 dark:text-zinc-600" />
-                                                : <Icon size={18} className={tool.iconColor} />
-                                            }
+                                        {/* Saturated tile + white SVG (matches the ToolHeader visual language) */}
+                                        <div
+                                            className="flex items-center justify-center mb-4 overflow-hidden"
+                                            style={{
+                                                width: 56,
+                                                height: 56,
+                                                borderRadius: 12,
+                                                background: disabled ? '#E7E5E2' : (chrome?.themeColor ?? tool.accentHex),
+                                                opacity: disabled ? 0.65 : 1,
+                                            }}
+                                        >
+                                            {disabled ? (
+                                                <Lock size={20} className="text-zinc-500" />
+                                            ) : chrome ? (
+                                                <div style={{ width: '64%', height: '64%' }}>
+                                                    <chrome.IconComponent themeColor={chrome.themeColor} />
+                                                </div>
+                                            ) : null}
                                         </div>
 
                                         {/* Category label */}
@@ -583,6 +629,20 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                 >
+                    {currentTool && TOOL_CHROME[currentTool.id]?.showHeader && (
+                        <div className="mb-6">
+                            <ToolHeader
+                                themeColor={TOOL_CHROME[currentTool.id].themeColor}
+                                eyebrow={TOOL_CHROME[currentTool.id].eyebrow}
+                                title={currentTool.title}
+                                subtitle={TOOL_CHROME[currentTool.id].subtitle}
+                                icon={(() => {
+                                    const Icon = TOOL_CHROME[currentTool.id].IconComponent;
+                                    return <Icon themeColor={TOOL_CHROME[currentTool.id].themeColor} />;
+                                })()}
+                            />
+                        </div>
+                    )}
                     <InnovationDataProvider uid={user?.uid} subjectProfile={subjectProfile}>
                         <ToolErrorBoundary
                             key={currentTool?.id}
