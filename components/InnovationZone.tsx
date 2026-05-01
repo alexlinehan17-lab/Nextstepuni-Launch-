@@ -36,7 +36,7 @@ import { getNotifications } from './gc/gcNotifications';
 import StudyJournalModal from './StudyJournalModal';
 import AcademicJourneyGame, { type JourneyResult } from './AcademicJourneyGame';
 import ToolErrorBoundary from './ToolErrorBoundary';
-import PointsExplainer from './PointsExplainer';
+import PointsPanel from './PointsPanel';
 import { useNavigation } from '../contexts/NavigationContext';
 import { ToolHeader } from './ToolHeader';
 import {
@@ -162,10 +162,20 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const onCosmeticUnlocksChangeRef = useRef(onCosmeticUnlocksChange);
     onCosmeticUnlocksChangeRef.current = onCosmeticUnlocksChange;
     const [showJournal, setShowJournal] = useState(false);
-    const showPointsExplainer = !dismissedGuides?.['points-explainer'];
-    const dismissPointsExplainer = useCallback(() => {
+    // Inline points panel — open by default until the user hides it via
+    // `dismissedGuides`. `pointsPanelOverride` lets the "How points work"
+    // header link force-open the panel after dismissal without resetting
+    // the persisted flag.
+    const guideOpen = !dismissedGuides?.['points-explainer'];
+    const [pointsPanelOverride, setPointsPanelOverride] = useState<boolean | null>(null);
+    const showPointsPanel = pointsPanelOverride ?? guideOpen;
+    const hidePointsPanel = useCallback(() => {
+        setPointsPanelOverride(false);
         onDismissGuide?.('points-explainer');
     }, [onDismissGuide]);
+    const openPointsPanel = useCallback(() => {
+        setPointsPanelOverride(true);
+    }, []);
 
     // Load subject profile from Firebase
     useEffect(() => {
@@ -496,6 +506,18 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             </div>
           </div>
           <div className="flex items-center gap-3">
+            {!activeTool && !showPointsPanel && (
+              <button
+                onClick={openPointsPanel}
+                className="text-[13px] transition-colors hover:text-[#2A7D6F] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(42,125,111,0.4)] rounded px-2 py-1"
+                style={{
+                  fontFamily: "'DM Sans', system-ui, sans-serif",
+                  color: 'rgba(0,0,0,0.55)',
+                }}
+              >
+                How points work
+              </button>
+            )}
             {subjectProfile && (
               <button
                 onClick={() => setShowOnboarding(true)}
@@ -518,6 +540,9 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                 >
+                    {/* Inline points panel — replaces the old PointsExplainer modal */}
+                    <PointsPanel open={showPointsPanel} onHide={hidePointsPanel} />
+
                     {/* Filter pills */}
                     <div className="mb-8">
                         <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit">
@@ -679,8 +704,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
       />
 
 
-      {/* Points Explainer (first visit) */}
-      <PointsExplainer isOpen={showPointsExplainer} onDismiss={dismissPointsExplainer} />
     </div>
   );
 };
