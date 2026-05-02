@@ -39,10 +39,7 @@ import ToolErrorBoundary from './ToolErrorBoundary';
 import PointsPanel from './PointsPanel';
 import { useNavigation } from '../contexts/NavigationContext';
 import { ToolHeader } from './ToolHeader';
-import {
-  AcademicJourneyIcon, CAOPointsIcon, FutureFinderIcon, SyllabusXRayIcon,
-  SpacedRepetitionIcon, WarRoomIcon, ComebackEngineIcon, PointsPassportIcon,
-} from './toolIcons';
+import ToolIconBlob, { type ToolIconKey } from './ToolIconBlob';
 
 // ── Editorial chrome registry ──────────────────────────────────────────
 //
@@ -60,19 +57,18 @@ interface ToolChrome {
   themeColor: string;
   eyebrow: string;
   subtitle: string;
-  IconComponent: React.FC<{ themeColor?: string }>;
   showHeader: boolean;
 }
 
 const TOOL_CHROME: Record<string, ToolChrome> = {
-  'journey':         { themeColor: '#8B82B8', eyebrow: 'Track · Simulator',           subtitle: 'Navigate the choices of your final school year. Test-drive your future.',         IconComponent: AcademicJourneyIcon, showHeader: false },
-  'cao-simulator':   { themeColor: '#5B7DB0', eyebrow: 'Understand · Simulator',      subtitle: 'Run the numbers. See how grade changes ripple through your CAO total.',           IconComponent: CAOPointsIcon,        showHeader: true  },
-  'planner':         { themeColor: '#7DA37A', eyebrow: 'Plan · Planner',              subtitle: 'A data-driven study planner powered by your subject goals.',                       IconComponent: SpacedRepetitionIcon, showHeader: true  },
-  'war-room':        { themeColor: '#D85F47', eyebrow: 'Plan · Strategy',             subtitle: 'Where the strategy gets made. Map the syllabus, allocate the hours, plan the attack.', IconComponent: WarRoomIcon,         showHeader: false },
-  'comeback':        { themeColor: '#E08938', eyebrow: 'Plan · Comeback',             subtitle: 'Find your quickest wins and build a comeback plan.',                                IconComponent: ComebackEngineIcon,   showHeader: true  },
-  'future-finder':   { themeColor: '#C76489', eyebrow: 'Understand · Career discovery', subtitle: 'Discover the courses, careers, and possible lives that fit who you are.',         IconComponent: FutureFinderIcon,     showHeader: true  },
-  'syllabus-xray':   { themeColor: '#2C4B6E', eyebrow: 'Understand · Exam intel',     subtitle: 'See where the marks are hiding in every paper, every section, every question.',   IconComponent: SyllabusXRayIcon,     showHeader: true  },
-  'points-passport': { themeColor: '#B8A079', eyebrow: 'Track · Tracker',             subtitle: 'Mock trends and grade bargains, all at a glance.',                                  IconComponent: PointsPassportIcon,   showHeader: true  },
+  'journey':         { themeColor: '#8B82B8', eyebrow: 'Track · Simulator',           subtitle: 'Navigate the choices of your final school year. Test-drive your future.',         showHeader: false },
+  'cao-simulator':   { themeColor: '#5B7DB0', eyebrow: 'Understand · Simulator',      subtitle: 'Run the numbers. See how grade changes ripple through your CAO total.',           showHeader: true  },
+  'planner':         { themeColor: '#7DA37A', eyebrow: 'Plan · Planner',              subtitle: 'A data-driven study planner powered by your subject goals.',                       showHeader: true  },
+  'war-room':        { themeColor: '#D85F47', eyebrow: 'Plan · Strategy',             subtitle: 'Where the strategy gets made. Map the syllabus, allocate the hours, plan the attack.', showHeader: false },
+  'comeback':        { themeColor: '#E08938', eyebrow: 'Plan · Comeback',             subtitle: 'Find your quickest wins and build a comeback plan.',                                showHeader: true  },
+  'future-finder':   { themeColor: '#C76489', eyebrow: 'Understand · Career discovery', subtitle: 'Discover the courses, careers, and possible lives that fit who you are.',         showHeader: true  },
+  'syllabus-xray':   { themeColor: '#2C4B6E', eyebrow: 'Understand · Exam intel',     subtitle: 'See where the marks are hiding in every paper, every section, every question.',   showHeader: true  },
+  'points-passport': { themeColor: '#B8A079', eyebrow: 'Track · Tracker',             subtitle: 'Mock trends and grade bargains, all at a glance.',                                  showHeader: true  },
 };
 
 interface InnovationZoneProps {
@@ -162,20 +158,12 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const onCosmeticUnlocksChangeRef = useRef(onCosmeticUnlocksChange);
     onCosmeticUnlocksChangeRef.current = onCosmeticUnlocksChange;
     const [showJournal, setShowJournal] = useState(false);
-    // Inline points panel — open by default until the user hides it via
-    // `dismissedGuides`. `pointsPanelOverride` lets the "How points work"
-    // header link force-open the panel after dismissal without resetting
-    // the persisted flag.
-    const guideOpen = !dismissedGuides?.['points-explainer'];
-    const [pointsPanelOverride, setPointsPanelOverride] = useState<boolean | null>(null);
-    const showPointsPanel = pointsPanelOverride ?? guideOpen;
-    const hidePointsPanel = useCallback(() => {
-        setPointsPanelOverride(false);
-        onDismissGuide?.('points-explainer');
-    }, [onDismissGuide]);
-    const openPointsPanel = useCallback(() => {
-        setPointsPanelOverride(true);
-    }, []);
+    // Points panel is hidden by default; revealed by the `?` tooltip
+    // button in the header. Pure local state — the old persisted-guide
+    // flow was retired since the panel no longer interrupts on landing.
+    const [showPointsPanel, setShowPointsPanel] = useState(false);
+    const hidePointsPanel = useCallback(() => setShowPointsPanel(false), []);
+    const togglePointsPanel = useCallback(() => setShowPointsPanel(v => !v), []);
 
     // Load subject profile from Firebase
     useEffect(() => {
@@ -506,18 +494,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             </div>
           </div>
           <div className="flex items-center gap-3">
-            {!activeTool && !showPointsPanel && (
-              <button
-                onClick={openPointsPanel}
-                className="text-[13px] transition-colors hover:text-[#2A7D6F] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(42,125,111,0.4)] rounded px-2 py-1"
-                style={{
-                  fontFamily: "'DM Sans', system-ui, sans-serif",
-                  color: 'rgba(0,0,0,0.55)',
-                }}
-              >
-                How points work
-              </button>
-            )}
             {subjectProfile && (
               <button
                 onClick={() => setShowOnboarding(true)}
@@ -543,8 +519,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     {/* Inline points panel — replaces the old PointsExplainer modal */}
                     <PointsPanel open={showPointsPanel} onHide={hidePointsPanel} />
 
-                    {/* Filter pills */}
-                    <div className="mb-8">
+                    {/* Filter pills + Points trigger — same row, opposite ends */}
+                    <div className="mb-8 flex items-center justify-between gap-3 flex-wrap">
                         <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit">
                             {(['all', 'understand', 'plan', 'track'] as const).map(filter => (
                                 <button
@@ -559,6 +535,32 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                                     {filter === 'all' ? 'All' : filter.charAt(0).toUpperCase() + filter.slice(1)}
                                 </button>
                             ))}
+                        </div>
+                        <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit">
+                            <button
+                                onClick={togglePointsPanel}
+                                aria-label="How points work"
+                                aria-expanded={showPointsPanel}
+                                title="How points work"
+                                className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-all ${
+                                    showPointsPanel
+                                        ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-medium shadow-sm'
+                                        : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
+                                }`}
+                            >
+                                <span
+                                    className="inline-flex items-center justify-center w-4 h-4 rounded-full shrink-0 text-[11px] font-semibold"
+                                    style={{
+                                        background: showPointsPanel ? 'rgba(0,0,0,0.06)' : 'rgba(0,0,0,0.05)',
+                                        fontFamily: "'Source Serif 4', serif",
+                                        lineHeight: 1,
+                                    }}
+                                    aria-hidden="true"
+                                >
+                                    ?
+                                </span>
+                                Points
+                            </button>
                         </div>
                     </div>
 
@@ -583,24 +585,26 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                                     } bg-white dark:bg-zinc-900`}
                                 >
                                     <div className="p-6 flex-1 flex flex-col">
-                                        {/* Saturated tile + white SVG (matches the ToolHeader visual language) */}
-                                        <div
-                                            className="flex items-center justify-center mb-4 overflow-hidden"
-                                            style={{
-                                                width: 56,
-                                                height: 56,
-                                                borderRadius: 12,
-                                                background: disabled ? '#E7E5E2' : (chrome?.themeColor ?? tool.accentHex),
-                                                opacity: disabled ? 0.65 : 1,
-                                            }}
-                                        >
+                                        {/* Painted blob + hand-drawn ink illustration. Disabled state
+                                            falls back to the muted lock tile so locked tools still
+                                            communicate gating without showing the bright illustration. */}
+                                        <div className="mb-4">
                                             {disabled ? (
-                                                <Lock size={20} className="text-zinc-500" />
-                                            ) : chrome ? (
-                                                <div style={{ width: '64%', height: '64%' }}>
-                                                    <chrome.IconComponent themeColor={chrome.themeColor} />
+                                                <div
+                                                    className="flex items-center justify-center"
+                                                    style={{
+                                                        width: 72,
+                                                        height: 72,
+                                                        borderRadius: 18,
+                                                        background: '#E7E5E2',
+                                                        opacity: 0.7,
+                                                    }}
+                                                >
+                                                    <Lock size={20} className="text-zinc-500" />
                                                 </div>
-                                            ) : null}
+                                            ) : (
+                                                <ToolIconBlob toolId={tool.id as ToolIconKey} size={72} />
+                                            )}
                                         </div>
 
                                         {/* Category label */}
@@ -661,10 +665,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                                 eyebrow={TOOL_CHROME[currentTool.id].eyebrow}
                                 title={currentTool.title}
                                 subtitle={TOOL_CHROME[currentTool.id].subtitle}
-                                icon={(() => {
-                                    const Icon = TOOL_CHROME[currentTool.id].IconComponent;
-                                    return <Icon themeColor={TOOL_CHROME[currentTool.id].themeColor} />;
-                                })()}
+                                iconBlob={<ToolIconBlob toolId={currentTool.id as ToolIconKey} size={108} />}
                             />
                         </div>
                     )}

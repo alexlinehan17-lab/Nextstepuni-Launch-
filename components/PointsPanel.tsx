@@ -2,70 +2,166 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * PointsPanel — inline reference panel for the Innovation Zone landing
- * page. Replaces the old <PointsExplainer> modal which interrupted the
- * user with reference content disguised as a checkpoint.
+ * PointsPanel — reference panel for the Innovation Zone, surfaced via
+ * a `?` tooltip icon in the IZ header rather than autoshown inline.
  *
- * Sits above the IZ tool grid by default; "Hide" persists dismissal via
- * the existing `dismissedGuides` mechanism. A small "How points work"
- * link in the IZ header (rendered by InnovationZone, not here) toggles
- * a local override so the panel can be re-opened after dismissal
- * without resetting the persisted flag.
+ * Visual register matches the home dashboard SectionCards:
+ *   - Painted-blob + ink-illustration tile per item (not a tinted dot)
+ *   - Cream card surface with soft teal border
+ *   - Source Serif 4 display + DM Sans UI; no Lucide on the surface
  *
- * Visual register matches the rest of the cream + paint-blob system:
- * cream card, soft teal border, ink-style inline SVG icons sat on small
- * teal-tinted blobs (no Lucide).
+ * Each item icon is a self-contained inline SVG with a Bezier blob fill
+ * at 0.75 opacity and a black-ink illustration on top, drawn in the
+ * same vocabulary as components/sectionIcons.tsx.
  */
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const TEAL = '#2A7D6F';
 
-// ── Inline ink-style icons ──────────────────────────────────────────────
-// Drawn rather than imported from Lucide so the line weight, terminals,
-// and proportions match the rest of the illustrated icons in the app.
-const ClockIcon: React.FC = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <circle cx="12" cy="12" r="9" />
-    <path d="M12 7v5l3 2" />
+// ── Item icons — painted-blob + ink-illustration, 100x100 viewBox ───────
+const StudySessionIcon: React.FC = () => (
+  <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
+    <path
+      d="M 12 28 Q 6 50 14 72 Q 28 88 50 86 Q 78 84 84 62 Q 90 38 76 22 Q 58 10 36 16 Q 18 22 12 28 Z"
+      fill="#B8DDC8"
+      opacity="0.75"
+    />
+    <g>
+      <circle cx="50" cy="50" r="22" fill="white" stroke="#1a1a1a" strokeWidth="1.5" />
+      <line x1="50" y1="50" x2="50" y2="36" stroke="#1a1a1a" strokeWidth="1.6" strokeLinecap="round" />
+      <line x1="50" y1="50" x2="60" y2="56" stroke="#1a1a1a" strokeWidth="1.4" strokeLinecap="round" />
+      <circle cx="50" cy="50" r="1.5" fill="#1a1a1a" />
+      <circle cx="50" cy="32" r="0.9" fill="#1a1a1a" />
+      <circle cx="68" cy="50" r="0.9" fill="#1a1a1a" />
+      <circle cx="50" cy="68" r="0.9" fill="#1a1a1a" />
+      <circle cx="32" cy="50" r="0.9" fill="#1a1a1a" />
+    </g>
   </svg>
 );
-const PageIcon: React.FC = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M6 3h9l3 3v15H6z" />
-    <line x1="9" y1="10" x2="14" y2="10" />
-    <line x1="9" y1="14" x2="15" y2="14" />
-    <line x1="9" y1="18" x2="13" y2="18" />
+
+const ModuleSectionIcon: React.FC = () => (
+  <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
+    <path
+      d="M 14 26 Q 8 48 14 70 Q 26 86 48 84 Q 76 82 82 62 Q 88 38 78 24 Q 62 12 38 16 Q 20 22 14 26 Z"
+      fill="#F5C9A8"
+      opacity="0.75"
+    />
+    <g>
+      <path
+        d="M 32 22 L 60 22 L 72 34 L 72 80 L 32 80 Z"
+        fill="white"
+        stroke="#1a1a1a"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <path d="M 60 22 L 60 34 L 72 34" fill="none" stroke="#1a1a1a" strokeWidth="1.5" strokeLinejoin="round" />
+      <line x1="38" y1="44" x2="60" y2="44" stroke="#1a1a1a" strokeWidth="1.2" strokeLinecap="round" />
+      <line x1="38" y1="52" x2="66" y2="52" stroke="#1a1a1a" strokeWidth="1.2" strokeLinecap="round" />
+      <line x1="38" y1="60" x2="62" y2="60" stroke="#1a1a1a" strokeWidth="1.2" strokeLinecap="round" />
+      <line x1="38" y1="68" x2="56" y2="68" stroke="#1a1a1a" strokeWidth="1.2" strokeLinecap="round" />
+    </g>
   </svg>
 );
-const FlagIcon: React.FC = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M5 21V4M5 4l11 4-3 3 3 3H5" />
+
+const CompleteModuleIcon: React.FC = () => (
+  <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
+    <path
+      d="M 14 28 Q 8 48 16 68 Q 28 84 50 84 Q 76 84 84 64 Q 90 40 78 24 Q 60 12 38 18 Q 20 24 14 28 Z"
+      fill="#D4B978"
+      opacity="0.75"
+    />
+    <g>
+      <line x1="32" y1="22" x2="32" y2="80" stroke="#1a1a1a" strokeWidth="1.6" strokeLinecap="round" />
+      <path
+        d="M 32 22 L 70 28 L 60 38 L 70 48 L 32 48 Z"
+        fill="white"
+        stroke="#1a1a1a"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M 44 32 L 50 38 L 60 28"
+        fill="none"
+        stroke="#1a1a1a"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
   </svg>
 );
-const TargetIcon: React.FC = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
-    <circle cx="12" cy="12" r="9" />
-    <circle cx="12" cy="12" r="5" />
-    <circle cx="12" cy="12" r="1.5" fill="currentColor" />
+
+const QuestsIcon: React.FC = () => (
+  <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
+    <path
+      d="M 12 30 Q 6 52 16 72 Q 28 88 52 84 Q 78 80 84 60 Q 90 36 76 20 Q 58 10 36 18 Q 20 24 12 30 Z"
+      fill="#D9A9C2"
+      opacity="0.75"
+    />
+    <g>
+      <circle cx="50" cy="50" r="24" fill="white" stroke="#1a1a1a" strokeWidth="1.5" />
+      <circle cx="50" cy="50" r="15" fill="none" stroke="#1a1a1a" strokeWidth="1.2" />
+      <circle cx="50" cy="50" r="6" fill="#1a1a1a" />
+    </g>
   </svg>
 );
-const TagIcon: React.FC = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M3 12V3h9l9 9-9 9z" />
-    <circle cx="7.5" cy="7.5" r="1.5" />
+
+const IslandShopIcon: React.FC = () => (
+  <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
+    <path
+      d="M 14 28 Q 8 50 16 70 Q 28 88 50 86 Q 76 84 84 62 Q 90 38 76 22 Q 58 10 36 16 Q 18 22 14 28 Z"
+      fill="#A8C9A0"
+      opacity="0.75"
+    />
+    <g>
+      <path
+        d="M 32 24 L 78 24 L 78 50 L 54 78 L 22 50 L 22 34 Z"
+        fill="white"
+        stroke="#1a1a1a"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <circle cx="34" cy="36" r="3.5" fill="#FDF8F0" stroke="#1a1a1a" strokeWidth="1.3" />
+    </g>
   </svg>
 );
-const ChevronsRightIcon: React.FC = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M6 6l6 6-6 6M13 6l6 6-6 6" />
+
+const SkipBlockIcon: React.FC = () => (
+  <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
+    <path
+      d="M 12 28 Q 6 50 14 72 Q 28 88 52 86 Q 80 82 86 60 Q 90 36 76 22 Q 58 10 36 16 Q 18 22 12 28 Z"
+      fill="#9DB7CC"
+      opacity="0.75"
+    />
+    <g>
+      <path d="M 28 28 L 50 50 L 28 72" fill="none" stroke="#1a1a1a" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M 50 28 L 72 50 L 50 72" fill="none" stroke="#1a1a1a" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+    </g>
   </svg>
 );
-const MoonIcon: React.FC = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M21 13.5A9 9 0 1 1 10.5 3a7 7 0 0 0 10.5 10.5z" />
+
+const RestDayIcon: React.FC = () => (
+  <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
+    <path
+      d="M 14 28 Q 8 50 16 70 Q 28 88 50 86 Q 78 84 84 62 Q 90 38 76 22 Q 58 10 36 16 Q 20 22 14 28 Z"
+      fill="#B8C9E5"
+      opacity="0.75"
+    />
+    <g>
+      <path
+        d="M 72 52 A 24 24 0 1 1 48 28 A 18 18 0 0 0 72 52 Z"
+        fill="white"
+        stroke="#1a1a1a"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <circle cx="78" cy="30" r="1.2" fill="#1a1a1a" />
+      <circle cx="32" cy="22" r="1" fill="#1a1a1a" />
+    </g>
   </svg>
 );
+
 const CloseIcon: React.FC = () => (
   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <path d="M18 6 6 18M6 6l12 12" />
@@ -81,53 +177,39 @@ interface Item {
 }
 
 const EARN_ITEMS: Item[] = [
-  { Icon: ClockIcon,  label: 'Study session',     value: '15 pts',     sub: 'Per 10 min' },
-  { Icon: PageIcon,   label: 'Module section',    value: '10 pts',     sub: 'Each section' },
-  { Icon: FlagIcon,   label: 'Complete a module', value: '+30 bonus',  sub: 'On finish' },
-  { Icon: TargetIcon, label: 'Quests & challenges', value: '25–200 pts', sub: 'Varies' },
+  { Icon: StudySessionIcon,   label: 'Study session',        value: '15 pts',     sub: 'Per 10 min' },
+  { Icon: ModuleSectionIcon,  label: 'Module section',       value: '10 pts',     sub: 'Each section' },
+  { Icon: CompleteModuleIcon, label: 'Complete a module',    value: '+30 bonus',  sub: 'On finish' },
+  { Icon: QuestsIcon,         label: 'Quests & challenges',  value: '25–200 pts', sub: 'Varies' },
 ];
 
 const SPEND_ITEMS: Item[] = [
-  { Icon: TagIcon,            label: 'Island shop',   value: 'Varies', sub: 'Build your island' },
-  { Icon: ChevronsRightIcon,  label: 'Skip a block',  value: '20 pts', sub: 'Skip one session' },
-  { Icon: MoonIcon,           label: 'Rest day pass', value: '60 pts', sub: 'Day off, streak safe' },
+  { Icon: IslandShopIcon, label: 'Island shop',   value: 'Varies', sub: 'Build your island' },
+  { Icon: SkipBlockIcon,  label: 'Skip a block',  value: '20 pts', sub: 'Skip one session' },
+  { Icon: RestDayIcon,    label: 'Rest day pass', value: '60 pts', sub: 'Day off, streak safe' },
 ];
 
-// ── Subcomponents ──────────────────────────────────────────────────────
-const TealBlob: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <div className="relative shrink-0" style={{ width: 36, height: 36 }}>
-    <div
-      className="absolute inset-0 rounded-full"
-      style={{ background: `${TEAL}26` }}
-      aria-hidden="true"
-    />
-    <span
-      className="absolute inset-0 flex items-center justify-center"
-      style={{ color: TEAL }}
-    >
-      {children}
-    </span>
-  </div>
-);
-
+// ── Item card ──────────────────────────────────────────────────────────
 const ItemCard: React.FC<{ item: Item }> = ({ item }) => (
   <div
     className="rounded-xl"
     style={{
       background: '#FDF8F0',
-      border: `1px solid ${TEAL}2E`,
-      padding: 16,
+      border: `1px solid ${TEAL}26`,
+      padding: 18,
     }}
   >
-    <TealBlob><item.Icon /></TealBlob>
+    <div style={{ width: 56, height: 56 }}>
+      <item.Icon />
+    </div>
     <p
-      className="mt-3"
       style={{
         fontFamily: "'DM Sans', system-ui, sans-serif",
         fontSize: 14,
         fontWeight: 500,
         color: 'rgba(0,0,0,0.85)',
         margin: 0,
+        marginTop: 14,
         lineHeight: 1.3,
       }}
     >
@@ -139,7 +221,8 @@ const ItemCard: React.FC<{ item: Item }> = ({ item }) => (
         fontSize: 22,
         fontWeight: 500,
         color: TEAL,
-        marginTop: 2,
+        margin: 0,
+        marginTop: 4,
         lineHeight: 1.15,
         letterSpacing: '-0.3px',
       }}
@@ -152,7 +235,7 @@ const ItemCard: React.FC<{ item: Item }> = ({ item }) => (
         fontSize: 12,
         color: 'rgba(0,0,0,0.55)',
         margin: 0,
-        marginTop: 2,
+        marginTop: 4,
         lineHeight: 1.4,
       }}
     >
@@ -245,7 +328,6 @@ const PointsPanel: React.FC<PointsPanelProps> = ({ open, onHide }) => (
             </button>
           </div>
 
-          {/* Hairline */}
           <div className="h-px w-full" style={{ background: 'rgba(0,0,0,0.08)' }} />
 
           {/* Earn */}

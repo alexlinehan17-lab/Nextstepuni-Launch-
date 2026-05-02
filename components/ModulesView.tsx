@@ -311,14 +311,13 @@ interface CardWrapperProps {
 const CardWrapper: React.FC<CardWrapperProps> = ({ config, isHero, children, onClick, ariaLabel }) => {
   const { blob, tintFocal, worldKey } = config;
 
-  // Cream + soft world-colour tint at one corner (radial fade, no hard edge).
-  // The tint is alpha-mixed (~22% blob colour) onto the cream baseline.
-  // Mind opts out — its pale blue tint reads cold against the cream and the
-  // user wanted the card flat for that world.
+  // White tile + soft world-colour tint at one corner (radial fade, no hard edge).
+  // The tint is alpha-mixed (~22% blob colour) onto the white baseline so the
+  // tile reads as a clean white surface against the cream page.
   const background =
     worldKey === 'mind'
-      ? '#FDF8F0'
-      : `radial-gradient(ellipse 60% 55% ${tintFocal}, ${blob}38 0%, transparent 70%), #FDF8F0`;
+      ? '#FFFFFF'
+      : `radial-gradient(ellipse 60% 55% ${tintFocal}, ${blob}38 0%, transparent 70%), #FFFFFF`;
   const border = `1px solid ${blob}66`; // ~40% — visible but soft.
   const boxShadow = isHero
     ? '0 4px 18px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.04)'
@@ -499,7 +498,7 @@ const SatelliteInner: React.FC<SatelliteInnerProps> = ({ config, stats }) => {
   return (
     <div className="flex flex-col h-full p-5 md:p-6">
       <div className="flex justify-center -mb-4 -mt-10">
-        <WorldIconBlob world={worldKey} size={180} />
+        <WorldIconBlob world={worldKey} size={180} compact />
       </div>
 
       <span className="font-mono text-[11px] font-medium tracking-[0.15em]" style={{ color: mid }}>

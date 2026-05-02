@@ -18,7 +18,7 @@
 
 import React from 'react';
 
-// ── Modules — sage blob, books on a shelf + book pulled forward ─────────
+// ── Modules — sage blob, hand-drawn open door + terracotta mat ──────────
 
 export const ModulesIcon: React.FC = () => (
   <svg viewBox="0 0 100 100" width="100%" height="100%">
@@ -27,18 +27,14 @@ export const ModulesIcon: React.FC = () => (
       fill="#A8C9A0"
       opacity="0.75"
     />
-    <g transform="translate(8, 12)">
-      <rect x="8" y="32" width="11" height="46" fill="white" stroke="#1a1a1a" strokeWidth="0.8" />
-      <rect x="20" y="36" width="9" height="42" fill="#FDF8F0" stroke="#1a1a1a" strokeWidth="0.8" />
-      <rect x="30" y="28" width="13" height="50" fill="white" stroke="#1a1a1a" strokeWidth="0.8" />
-      <line x1="11" y1="42" x2="16" y2="42" stroke="#2A7D6F" strokeWidth="1.5" />
-      <line x1="33" y1="38" x2="40" y2="38" stroke="#2A7D6F" strokeWidth="1.5" />
-      <line x1="33" y1="44" x2="38" y2="44" stroke="#2A7D6F" strokeWidth="1" />
-      <path d="M 50 50 L 78 46 L 78 80 L 50 84 Z" fill="white" stroke="#1a1a1a" strokeWidth="1" />
-      <path d="M 50 50 L 50 84 L 47 82 L 47 50 Z" fill="#FDF8F0" stroke="#1a1a1a" strokeWidth="1" />
-      <line x1="56" y1="58" x2="72" y2="56" stroke="#2A7D6F" strokeWidth="1.5" />
-      <line x1="56" y1="64" x2="68" y2="62" stroke="#2A7D6F" strokeWidth="1.2" />
-    </g>
+    <image
+      href="/assets/section-icons/modules.png"
+      x="10"
+      y="10"
+      width="80"
+      height="80"
+      preserveAspectRatio="xMidYMid meet"
+    />
   </svg>
 );
 
@@ -85,7 +81,7 @@ export const InnovationZoneIcon: React.FC = () => (
   </svg>
 );
 
-// ── My Progress — warm amber blob, mountain + flag + dotted trail ───────
+// ── My Progress — warm amber blob, hand-drawn mountain + winding trail ──
 
 export const MyProgressIcon: React.FC = () => (
   <svg viewBox="0 0 100 100" width="100%" height="100%">
@@ -94,26 +90,18 @@ export const MyProgressIcon: React.FC = () => (
       fill="#D4B978"
       opacity="0.75"
     />
-    <g>
-      <path d="M 18 78 L 50 28 L 82 78 Z" fill="white" stroke="#1a1a1a" strokeWidth="1" />
-      <path d="M 42 40 L 50 28 L 58 40 L 54 42 L 50 38 L 46 42 Z" fill="#FDF8F0" stroke="#1a1a1a" strokeWidth="0.8" />
-      <path
-        d="M 24 76 Q 30 70 34 64 Q 38 58 36 52 Q 34 44 42 38 Q 48 32 50 30"
-        fill="none"
-        stroke="#1a1a1a"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeDasharray="2 3"
-      />
-      <line x1="50" y1="28" x2="50" y2="14" stroke="#1a1a1a" strokeWidth="1.5" />
-      <path d="M 50 14 L 60 17 L 50 20 Z" fill="#1a1a1a" />
-      <circle cx="24" cy="76" r="3" fill="#1a1a1a" />
-      <line x1="10" y1="80" x2="90" y2="80" stroke="#1a1a1a" strokeWidth="1" />
-    </g>
+    <image
+      href="/assets/section-icons/my-progress.png"
+      x="10"
+      y="10"
+      width="80"
+      height="80"
+      preserveAspectRatio="xMidYMid meet"
+    />
   </svg>
 );
 
-// ── Learning Paths — soft blue blob, compass face-up ────────────────────
+// ── Learning Paths — soft blue blob, hand-drawn map illustration ─────────
 
 export const LearningPathsIcon: React.FC = () => (
   <svg viewBox="0 0 100 100" width="100%" height="100%">
@@ -122,18 +110,13 @@ export const LearningPathsIcon: React.FC = () => (
       fill="#9DB7CC"
       opacity="0.75"
     />
-    <g transform="translate(50, 52)">
-      <circle cx="0" cy="0" r="26" fill="white" stroke="#1a1a1a" strokeWidth="1" />
-      <line x1="0" y1="-26" x2="0" y2="-22" stroke="#1a1a1a" strokeWidth="1.5" />
-      <line x1="0" y1="22" x2="0" y2="26" stroke="#1a1a1a" strokeWidth="1" />
-      <line x1="-26" y1="0" x2="-22" y2="0" stroke="#1a1a1a" strokeWidth="1" />
-      <line x1="22" y1="0" x2="26" y2="0" stroke="#1a1a1a" strokeWidth="1" />
-      <path d="M 0 0 L 14 -16 L 4 0 Z" fill="#5B7DB0" stroke="#1a1a1a" strokeWidth="0.8" strokeLinejoin="round" />
-      <path d="M 0 0 L -8 9 L -3 0 Z" fill="white" stroke="#1a1a1a" strokeWidth="0.8" strokeLinejoin="round" />
-      <circle cx="0" cy="0" r="2" fill="#1a1a1a" />
-      <text x="0" y="-29" textAnchor="middle" fontFamily="Source Serif 4, serif" fontSize="8" fontWeight="600" fill="#1a1a1a">
-        N
-      </text>
-    </g>
+    <image
+      href="/assets/section-icons/learning-paths.png"
+      x="10"
+      y="10"
+      width="80"
+      height="80"
+      preserveAspectRatio="xMidYMid meet"
+    />
   </svg>
 );

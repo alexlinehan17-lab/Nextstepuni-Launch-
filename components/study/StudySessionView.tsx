@@ -30,7 +30,6 @@ import { computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, co
 import { getBlockId, toDateKey } from '../subjectData';
 import { processDebriefSideEffects } from '../../hooks/useDebriefSideEffects';
 import { getSyllabusTopics } from '../syllabusTopics';
-import XPPopup from '../XPPopup';
 
 const TIER_COLORS: Record<MasteryTier, { text: string; bar: string }> = {
   none: { text: 'text-zinc-400 dark:text-zinc-500', bar: 'bg-zinc-200 dark:bg-zinc-700' },
@@ -160,7 +159,6 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const [isSaving, setIsSaving] = useState(false);
 
   // XP popup state
-  const [xpPopup, setXpPopup] = useState<{ points: number; visible: boolean }>({ points: 0, visible: false });
 
   // Previous debrief notes — surface "whatWorked" back to the student
   const [prevDebriefs, setPrevDebriefs] = useState<DebriefEntry[]>([]);
@@ -379,30 +377,87 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   if (session.phase === 'idle') {
     return (
       <div className="min-h-screen bg-[#FDF8F0] dark:bg-zinc-950 flex flex-col">
-        {/* ── Coloured hero banner ── */}
-        <div className="relative shrink-0" style={{ backgroundColor: '#2A7D6F' }}>
-          {/* Decorative blobs */}
-          <div className="absolute pointer-events-none" style={{ top: -60, right: -40, width: 180, height: 180, borderRadius: '50%', background: 'rgba(255,255,255,0.07)' }} />
-          <div className="absolute pointer-events-none" style={{ top: 10, right: 20, width: 90, height: 90, borderRadius: '50%', background: 'rgba(255,255,255,0.05)' }} />
-          <div className="absolute pointer-events-none" style={{ bottom: 30, left: -30, width: 120, height: 120, borderRadius: '50%', background: 'rgba(0,0,0,0.05)' }} />
+        {/* ── Editorial header — replaces the old teal hero banner ── */}
+        <div className="shrink-0 px-6 pt-6 max-w-md mx-auto w-full">
+          <button
+            onClick={onBack}
+            aria-label="Back"
+            className="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-[#EDEBE8] hover:bg-[#F8F4EC] transition-colors"
+            style={{ boxShadow: '0 1px 2px rgba(28,25,23,0.04)' }}
+          >
+            <ArrowLeft size={18} className="text-[#1a1a1a]" />
+          </button>
 
-          <div className="relative z-10 px-6 pt-6 pb-8 max-w-md mx-auto">
-            <button onClick={onBack} className="p-2 -ml-2 rounded-xl transition-colors mb-8" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
-              <ArrowLeft size={20} style={{ color: '#fff' }} />
-            </button>
+          <div className="flex items-center gap-4 md:gap-5 mt-7">
+            {/* Painted blob + hand-drawn study icon */}
+            <div className="relative shrink-0" style={{ width: 96, height: 96 }}>
+              <svg
+                className="absolute pointer-events-none"
+                viewBox="0 0 100 100"
+                aria-hidden="true"
+                preserveAspectRatio="xMidYMid meet"
+                style={{
+                  width: '92%',
+                  height: '92%',
+                  left: '50%',
+                  top: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  zIndex: 0,
+                }}
+              >
+                <path
+                  d="M 6 24 Q -2 52 8 78 Q 24 98 52 94 Q 86 90 94 62 Q 100 30 84 10 Q 60 -4 32 4 Q 12 12 6 24 Z"
+                  fill="#B8DDC8"
+                  opacity="0.85"
+                />
+              </svg>
+              <img
+                src="/assets/study/study-session.png"
+                alt=""
+                style={{
+                  position: 'absolute',
+                  left: '50%',
+                  top: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  width: '108%',
+                  height: '108%',
+                  objectFit: 'contain',
+                  zIndex: 1,
+                }}
+                draggable={false}
+              />
+            </div>
 
-            <h1 className="font-serif font-bold text-white mb-2" style={{ fontSize: 'clamp(32px, 8vw, 44px)', letterSpacing: '-0.03em', lineHeight: 1 }}>
-              Study Session
-            </h1>
-            {session.todaySessions.length > 0 ? (
-              <p className="text-sm" style={{ color: 'rgba(255,255,255,0.6)' }}>
-                {session.todaySessions.length} session{session.todaySessions.length !== 1 ? 's' : ''} today &middot; {session.todayTotalMinutes} min total
+            {/* Title + subtitle */}
+            <div className="min-w-0">
+              <h1
+                style={{
+                  fontFamily: "'Source Serif 4', serif",
+                  fontSize: 'clamp(32px, 6vw, 44px)',
+                  fontWeight: 500,
+                  letterSpacing: '-0.6px',
+                  lineHeight: 1.05,
+                  color: '#1a1a1a',
+                  margin: 0,
+                }}
+              >
+                Study Session
+              </h1>
+              <p
+                style={{
+                  fontFamily: "'DM Sans', system-ui, sans-serif",
+                  fontSize: 14,
+                  color: 'rgba(0,0,0,0.55)',
+                  margin: 0,
+                  marginTop: 6,
+                }}
+              >
+                {session.todaySessions.length > 0
+                  ? `${session.todaySessions.length} session${session.todaySessions.length !== 1 ? 's' : ''} today · ${session.todayTotalMinutes} min total`
+                  : 'Choose a subject and start studying'}
               </p>
-            ) : (
-              <p className="text-sm" style={{ color: 'rgba(255,255,255,0.6)' }}>Choose a subject and start studying</p>
-            )}
+            </div>
           </div>
-
         </div>
 
         {/* Centered content */}
@@ -967,12 +1022,10 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           onContinue={(ids) => {
             setSelectedStrategies(ids);
             setPickerDone(true);
-            setXpPopup({ points: session.basePointsEarned, visible: true });
           }}
           onSkip={() => {
             setSelectedStrategies([]);
             setPickerDone(true);
-            setXpPopup({ points: session.basePointsEarned, visible: true });
           }}
         />
       );
@@ -1013,13 +1066,6 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               <span className="text-sm font-semibold text-[var(--accent-hex)] opacity-70">JP earned</span>
             </MotionDiv>
           </div>
-
-          {/* XP Popup */}
-          <XPPopup
-            points={xpPopup.points}
-            isVisible={xpPopup.visible}
-            onComplete={() => setXpPopup(prev => ({ ...prev, visible: false }))}
-          />
 
           {/* Session details — compact chips instead of receipt table */}
           <MotionDiv

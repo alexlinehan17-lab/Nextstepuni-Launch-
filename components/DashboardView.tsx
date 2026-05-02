@@ -3,13 +3,15 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import { MotionDiv } from './Motion';
-import { ArrowLeft, BookOpen, ChevronRight, TrendingUp } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { type CategoryType } from './KnowledgeTree';
 import { type CourseData } from './Library';
 import { type StreakData } from '../hooks/useStreak';
 import { type FocusRecommendation } from '../hooks/useTodaysFocus';
+import MountainLandscape, { type WorldProgress } from './MountainLandscape';
+import WorldIconBlob, { type WorldId } from './WorldIconBlob';
 
 type UserProgress = {
   [moduleId: string]: { unlockedSection: number };
@@ -26,156 +28,319 @@ interface DashboardViewProps {
   pointsBalance: number;
 }
 
-const CATEGORY_ORDER: { key: CategoryType; color: string }[] = [
-  { key: 'architecture-mindset', color: '#3B82F6' },
-  { key: 'science-growth', color: '#F59E0B' },
-  { key: 'learning-cheat-codes', color: '#2A7D6F' },
-  { key: 'subject-specific-science', color: '#64748B' },
-  { key: 'exam-zone', color: '#EF4444' },
-];
+// Map the five world ids to their backing course categories. The five
+// worlds are a subset of the seven categories — 'the-shield' and
+// 'the-launchpad' aren't represented as climbs on this page.
+const WORLD_TO_CATEGORY: Record<WorldId, CategoryType> = {
+  mind:   'architecture-mindset',
+  growth: 'science-growth',
+  learn:  'learning-cheat-codes',
+  decode: 'subject-specific-science',
+  exam:   'exam-zone',
+};
 
-const stagger = (i: number) => ({
-  initial: { opacity: 0, y: 16 },
-  animate: { opacity: 1, y: 0 },
-  transition: { delay: i * 0.06, duration: 0.4, ease: [0.16, 1, 0.3, 1] as number[] },
-});
+// Inverse lookup used by Today's Focus to pick the world icon for a
+// recommended module's category. Categories that aren't worlds (the-shield,
+// the-launchpad) fall back to the learn icon at the call site.
+const CATEGORY_TO_WORLD: Partial<Record<CategoryType, WorldId>> = {
+  'architecture-mindset':       'mind',
+  'science-growth':             'growth',
+  'learning-cheat-codes':       'learn',
+  'subject-specific-science':   'decode',
+  'exam-zone':                  'exam',
+};
+
+const WORLD_LABEL: Record<WorldId, string> = {
+  mind:   'Mind',
+  growth: 'Growth',
+  learn:  'Learn',
+  decode: 'Decode',
+  exam:   'Exam',
+};
+
+const WORLD_ORDER: WorldId[] = ['mind', 'growth', 'learn', 'decode', 'exam'];
+
+const SERIF: React.CSSProperties = { fontFamily: "'Source Serif 4', serif" };
+const SANS: React.CSSProperties = { fontFamily: "'DM Sans', system-ui, sans-serif" };
+
+interface StatCellProps {
+  eyebrow: string;
+  value: string;
+  meta: string;
+  /** Furthest-along uses a smaller serif so the longer composite value fits. */
+  smallValue?: boolean;
+}
+const StatCell: React.FC<StatCellProps> = ({ eyebrow, value, meta, smallValue }) => (
+  <div>
+    <p
+      className="uppercase"
+      style={{ ...SANS, fontSize: 11, fontWeight: 500, letterSpacing: '1.5px', color: 'rgba(0,0,0,0.5)', margin: 0 }}
+    >
+      {eyebrow}
+    </p>
+    <p
+      style={{
+        ...SERIF,
+        fontSize: smallValue ? 22 : 36,
+        fontWeight: 500,
+        color: '#1a1a1a',
+        margin: 0,
+        marginTop: 8,
+        lineHeight: 1.05,
+      }}
+    >
+      {value}
+    </p>
+    <p
+      style={{ ...SANS, fontSize: 12, color: 'rgba(0,0,0,0.55)', margin: 0, marginTop: 6 }}
+    >
+      {meta}
+    </p>
+  </div>
+);
 
 const DashboardView: React.FC<DashboardViewProps> = ({
   userProgress,
   allCourses,
-  categoryTitles,
+  categoryTitles: _categoryTitles,
   streak,
   recommendation,
   onSelectModule,
   onBack,
   pointsBalance,
 }) => {
-  const completedCount = allCourses.filter(c => {
-    const p = userProgress[c.id];
-    return p && p.unlockedSection >= c.sectionsCount;
-  }).length;
+  // Per-world progress: count modules in each of the five categories and
+  // how many are completed. The mountain landscape, the page subtitle,
+  // and the "Furthest along" stat all derive from this.
+  const worldProgress = useMemo<Record<WorldId, WorldProgress>>(() => {
+    const out = {} as Record<WorldId, WorldProgress>;
+    for (const w of WORLD_ORDER) {
+      const cat = WORLD_TO_CATEGORY[w];
+      const courses = allCourses.filter(c => c.category === cat);
+      const completed = courses.filter(c => {
+        const p = userProgress[c.id];
+        return p && p.unlockedSection >= c.sectionsCount;
+      }).length;
+      out[w] = { completed, total: courses.length };
+    }
+    return out;
+  }, [allCourses, userProgress]);
 
-  const totalPct = allCourses.length > 0 ? Math.round((completedCount / allCourses.length) * 100) : 0;
+  const fiveWorldTotal = WORLD_ORDER.reduce((acc, w) => acc + worldProgress[w].total, 0);
+  const fiveWorldCompleted = WORLD_ORDER.reduce((acc, w) => acc + worldProgress[w].completed, 0);
+  const overallPct = fiveWorldTotal > 0 ? Math.round((fiveWorldCompleted / fiveWorldTotal) * 100) : 0;
+
+  // Furthest along — the world with the highest completion ratio. Ties
+  // resolve to the world that appears first in WORLD_ORDER.
+  const furthest = useMemo(() => {
+    let bestRatio = -1;
+    let bestWorld: WorldId = 'mind';
+    for (const w of WORLD_ORDER) {
+      const wp = worldProgress[w];
+      if (wp.total === 0) continue;
+      const ratio = wp.completed / wp.total;
+      if (ratio > bestRatio) {
+        bestRatio = ratio;
+        bestWorld = w;
+      }
+    }
+    const wp = worldProgress[bestWorld];
+    const pct = wp.total > 0 ? Math.round(bestRatio * 100) : 0;
+    return { world: bestWorld, pct, completed: wp.completed };
+  }, [worldProgress]);
+
+  const todayLabel = useMemo(
+    () => new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' }),
+    []
+  );
 
   return (
     <div className="min-h-screen bg-[#FDF8F0] dark:bg-zinc-950">
-
-      {/* ── Coloured hero ── */}
-      <div className="relative" style={{ backgroundColor: '#2A7D6F' }}>
-        {/* Decorative blobs */}
-        <div className="absolute pointer-events-none" style={{ top: -80, right: -60, width: 240, height: 240, borderRadius: '50%', background: 'rgba(255,255,255,0.07)' }} />
-        <div className="absolute pointer-events-none" style={{ top: 30, right: -20, width: 120, height: 120, borderRadius: '50%', background: 'rgba(255,255,255,0.05)' }} />
-        <div className="absolute pointer-events-none" style={{ bottom: 20, left: -40, width: 160, height: 160, borderRadius: '50%', background: 'rgba(0,0,0,0.06)' }} />
-
-        <div className="relative z-10 px-6 pt-6 pb-16 max-w-2xl mx-auto">
-          {/* Header */}
-          <div className="flex items-center gap-3 mb-10">
-            <button onClick={onBack} className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
-              <ArrowLeft size={18} style={{ color: '#fff' }} />
-            </button>
-            <h1 className="font-serif text-lg font-semibold text-white">My Progress</h1>
-          </div>
-
-          {/* Overall progress */}
-          <MotionDiv {...stagger(0)} className="mb-8">
-            <p className="text-[11px] uppercase tracking-[0.14em] font-semibold mb-2" style={{ color: 'rgba(255,255,255,0.5)' }}>Overall Completion</p>
-            <div className="flex items-baseline gap-2">
-              <span className="font-serif font-bold text-white" style={{ fontSize: 'clamp(40px, 10vw, 56px)', letterSpacing: '-0.03em', lineHeight: 1 }}>{totalPct}%</span>
-              <span className="text-sm font-medium" style={{ color: 'rgba(255,255,255,0.6)' }}>{completedCount}/{allCourses.length} modules</span>
-            </div>
-          </MotionDiv>
-
-          {/* Stat pills — translucent white on colour */}
-          <MotionDiv {...stagger(1)} className="grid grid-cols-3 gap-3">
-            <div className="rounded-2xl px-4 py-3 text-center" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
-              <p className="text-xl font-apercu font-bold text-white">{completedCount}</p>
-              <p className="text-[10px] uppercase tracking-widest font-semibold mt-0.5" style={{ color: 'rgba(255,255,255,0.7)' }}>Completed</p>
-            </div>
-            <div className="rounded-2xl px-4 py-3 text-center" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
-              <p className="text-xl font-apercu font-bold text-white">{streak.currentStreak}</p>
-              <p className="text-[10px] uppercase tracking-widest font-semibold mt-0.5" style={{ color: 'rgba(255,255,255,0.7)' }}>Day Streak</p>
-            </div>
-            <div className="rounded-2xl px-4 py-3 text-center" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
-              <p className="text-xl font-apercu font-bold text-white">{pointsBalance}</p>
-              <p className="text-[10px] uppercase tracking-widest font-semibold mt-0.5" style={{ color: 'rgba(255,255,255,0.7)' }}>Journey Points</p>
-            </div>
-          </MotionDiv>
-        </div>
-
+      {/* Back arrow row */}
+      <div className="max-w-5xl mx-auto px-6 pt-6">
+        <button
+          onClick={onBack}
+          aria-label="Back"
+          className="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-[#EDEBE8] hover:bg-[#F8F4EC] transition-colors"
+          style={{ boxShadow: '0 1px 2px rgba(28,25,23,0.04)' }}
+        >
+          <ArrowLeft size={18} className="text-[#1a1a1a]" />
+        </button>
       </div>
 
-      {/* ── Cream section ── */}
-      <div className="px-6 pb-24 max-w-2xl mx-auto">
+      {/* Single content card — the new mountain hero */}
+      <div className="max-w-5xl mx-auto px-6 pt-6 pb-10">
+        <MotionDiv
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] as number[] }}
+          className="rounded-3xl bg-[#FDF8F0] p-7 md:p-10"
+          style={{ boxShadow: '0 4px 28px rgba(28,25,23,0.06), 0 1px 3px rgba(28,25,23,0.04)' }}
+        >
+          {/* 1. Eyebrow row */}
+          <div className="flex items-center justify-between">
+            <span
+              className="uppercase"
+              style={{ ...SANS, fontSize: 11, fontWeight: 500, letterSpacing: '1.8px', color: 'rgba(0,0,0,0.5)' }}
+            >
+              My Progress
+            </span>
+            <span
+              style={{ ...SANS, fontSize: 12, color: 'rgba(0,0,0,0.5)' }}
+            >
+              {todayLabel}
+            </span>
+          </div>
 
-        {/* Category progress */}
-        <MotionDiv {...stagger(2)} className="mt-8">
-          <p className="text-xs uppercase tracking-[0.2em] font-semibold mb-4 text-[#A8A29E] dark:text-zinc-500">Category Progress</p>
-          <div className="rounded-2xl bg-[#FEFDFB] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800 px-5 py-2" style={{ boxShadow: '0 1px 4px rgba(28,25,23,0.04)' }}>
-            {CATEGORY_ORDER.map(({ key, color }, ci) => {
-              const categoryCourses = allCourses.filter(c => c.category === key);
-              if (categoryCourses.length === 0) return null;
-              const completed = categoryCourses.filter(c => {
-                const p = userProgress[c.id];
-                return p && p.unlockedSection >= c.sectionsCount;
-              }).length;
-              const pct = Math.round((completed / categoryCourses.length) * 100);
+          {/* 2. Title */}
+          <h1
+            style={{
+              ...SERIF,
+              fontSize: 'clamp(32px, 4.5vw, 44px)',
+              fontWeight: 500,
+              letterSpacing: '-0.8px',
+              lineHeight: 1.05,
+              color: '#1a1a1a',
+              margin: 0,
+              marginTop: 22,
+            }}
+          >
+            Five climbs, all your own.
+          </h1>
 
-              return (
-                <div key={key} className={`py-4 ${ci < CATEGORY_ORDER.length - 1 ? 'border-b border-[#F0EFED] dark:border-zinc-800' : ''}`}>
-                  <div className="flex items-center gap-3 mb-2.5">
-                    <div className="w-8 h-8 rounded-xl shrink-0 flex items-center justify-center" style={{ backgroundColor: `${color}14` }}>
-                      <TrendingUp size={16} style={{ color }} />
-                    </div>
-                    <p className="text-sm font-medium flex-1 text-[#1A1A1A] dark:text-white truncate">{categoryTitles[key]}</p>
-                    <span className="text-xs font-semibold tabular-nums" style={{ color }}>{completed}/{categoryCourses.length}</span>
-                  </div>
-                  <div className="w-full h-2 rounded-full overflow-hidden ml-11" style={{ backgroundColor: `${color}15`, width: 'calc(100% - 2.75rem)' }}>
-                    <MotionDiv
-                      className="h-full rounded-full"
-                      style={{ backgroundColor: color }}
-                      initial={{ width: 0 }}
-                      animate={{ width: `${pct}%` }}
-                      transition={{ duration: 1, delay: 0.3 + ci * 0.08, ease: 'easeOut' }}
-                    />
-                  </div>
-                </div>
-              );
-            })}
+          {/* 3. Italic sub-headline */}
+          <p
+            style={{
+              ...SERIF,
+              fontStyle: 'italic',
+              fontSize: 17,
+              color: '#2A7D6F',
+              margin: 0,
+              marginTop: 10,
+            }}
+          >
+            {fiveWorldCompleted} of {fiveWorldTotal} modules · each mountain fills as you progress
+          </p>
+
+          {/* 4. The mountain landscape */}
+          <div className="mt-8">
+            <MountainLandscape progress={worldProgress} />
+          </div>
+
+          {/* 5. Hairline rule */}
+          <div className="mt-2 mb-7" style={{ borderTop: '1px solid rgba(0,0,0,0.08)' }} />
+
+          {/* 6. Stat row */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+            <StatCell
+              eyebrow="Overall"
+              value={`${overallPct}%`}
+              meta={`${fiveWorldCompleted} of ${fiveWorldTotal} modules`}
+            />
+            <StatCell
+              eyebrow="Streak"
+              value={String(streak.currentStreak)}
+              meta="days running"
+            />
+            <StatCell
+              eyebrow="Journey points"
+              value={String(pointsBalance)}
+              meta="earned to date"
+            />
+            <StatCell
+              eyebrow="Furthest along"
+              value={`${WORLD_LABEL[furthest.world]} · ${furthest.pct}%`}
+              meta={`${furthest.completed} module${furthest.completed === 1 ? '' : 's'} complete`}
+              smallValue
+            />
           </div>
         </MotionDiv>
+      </div>
 
-        {/* Today's Focus */}
-        {recommendation && recommendation.reason !== 'all-complete' && (
-          <MotionDiv {...stagger(3)} className="mt-8">
-            <p className="text-xs uppercase tracking-[0.2em] font-semibold mb-4 text-[#A8A29E] dark:text-zinc-500">Today's Focus</p>
-            <div
-              className="rounded-2xl overflow-hidden relative"
-              style={{
-                backgroundColor: '#2A7D6F',
-                boxShadow: '0 4px 20px rgba(42,125,111,0.25)',
-              }}
+      {/* ── Today's Focus — editorial cream card ── */}
+      <div className="max-w-5xl mx-auto px-6 pb-24">
+        {recommendation && recommendation.reason !== 'all-complete' && (() => {
+          const focusCourse = allCourses.find(c => c.id === recommendation.moduleId);
+          const focusWorld: WorldId = (focusCourse && CATEGORY_TO_WORLD[focusCourse.category]) || 'learn';
+
+          return (
+            <MotionDiv
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.18, duration: 0.4, ease: [0.16, 1, 0.3, 1] as number[] }}
+              className="mt-2"
             >
-              {/* Decorative blob */}
-              <div className="absolute pointer-events-none" style={{ top: -20, right: -20, width: 80, height: 80, borderRadius: '50%', background: 'rgba(255,255,255,0.08)' }} />
-
+              <p
+                className="uppercase mb-4"
+                style={{ ...SANS, fontSize: 11, fontWeight: 500, letterSpacing: '1.8px', color: 'rgba(0,0,0,0.5)' }}
+              >
+                Today's Focus
+              </p>
               <button
                 onClick={() => onSelectModule(recommendation.moduleId)}
-                className="relative w-full px-5 py-5 flex items-center gap-4 group text-left"
+                className="w-full text-left flex items-center gap-5 px-6 py-5 group transition-shadow hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(42,125,111,0.35)]"
+                style={{
+                  background: '#FFFFFF',
+                  border: '1px solid #E8E2D8',
+                  borderRadius: 22,
+                  boxShadow: '0 4px 28px rgba(28,25,23,0.06), 0 1px 3px rgba(28,25,23,0.04)',
+                }}
               >
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(255,255,255,0.18)' }}>
-                  <BookOpen size={18} style={{ color: '#fff' }} />
-                </div>
+                {/* World icon — painted blob behind hand-drawn ink illustration,
+                    matching the same recipe used elsewhere in the app. */}
+                <WorldIconBlob world={focusWorld} size={72} compact />
+
+
+                {/* Title + subtext + terracotta accent */}
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm font-semibold text-white">{recommendation.title}</p>
-                  <p className="text-xs mt-0.5" style={{ color: 'rgba(255,255,255,0.6)' }}>
+                  <h3
+                    style={{
+                      ...SERIF,
+                      fontSize: 22,
+                      fontWeight: 500,
+                      letterSpacing: '-0.4px',
+                      color: '#1a1a1a',
+                      margin: 0,
+                      lineHeight: 1.2,
+                    }}
+                  >
+                    {recommendation.title}
+                  </h3>
+                  <p
+                    style={{
+                      ...SANS,
+                      fontSize: 13,
+                      color: 'rgba(0,0,0,0.55)',
+                      margin: 0,
+                      marginTop: 5,
+                    }}
+                  >
                     {recommendation.reason === 'in-progress' ? 'Continue where you left off' : 'Start this module'}
                   </p>
+                  {/* Terracotta accent — small underline */}
+                  <div
+                    aria-hidden="true"
+                    style={{
+                      width: 28,
+                      height: 2,
+                      background: '#D85F47',
+                      borderRadius: 1,
+                      marginTop: 8,
+                    }}
+                  />
                 </div>
-                <ChevronRight size={16} className="text-white/60 shrink-0 group-hover:translate-x-0.5 transition-transform" />
+
+                {/* Simple charcoal arrow */}
+                <div
+                  className="shrink-0 transition-transform group-hover:translate-x-1"
+                  style={{ color: '#1a1a1a' }}
+                >
+                  <ArrowRight size={22} strokeWidth={1.6} />
+                </div>
               </button>
-            </div>
-          </MotionDiv>
-        )}
+            </MotionDiv>
+          );
+        })()}
       </div>
     </div>
   );

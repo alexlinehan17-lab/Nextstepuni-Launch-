@@ -202,7 +202,7 @@ export default function ModuleShowcase({
               transition={{ type: 'spring', stiffness: 240, damping: 32, opacity: { duration: 0.18 } }}
               className="rounded-[24px] md:rounded-[28px] overflow-hidden"
               style={{
-                background: '#FDF8F0',
+                background: '#FFFFFF',
                 border: `1px solid ${theme.blob}66`,
                 boxShadow: '0 4px 18px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.04)',
               }}
@@ -392,7 +392,7 @@ export default function ModuleShowcase({
                         aria-current="true"
                         className="shrink-0 w-[260px] md:w-[280px] rounded-2xl overflow-hidden snap-start cursor-default"
                         style={{
-                          background: '#FDF8F0',
+                          background: '#FFFFFF',
                           border: `1px dashed ${theme.mid}55`,
                           boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.04)',
                           opacity: 0.5,
@@ -400,7 +400,7 @@ export default function ModuleShowcase({
                       >
                         <div className="flex flex-col h-full p-5 min-h-[220px]">
                           <div className="flex justify-center -mt-4 -mb-2">
-                            <WorldIconBlob world={theme.worldKey} size={120} />
+                            <WorldIconBlob world={theme.worldKey} size={120} compact />
                           </div>
                           <span className="font-mono text-[11px] font-medium tracking-[0.2em]" style={{ color: theme.mid }}>
                             {cNumber}
@@ -426,14 +426,14 @@ export default function ModuleShowcase({
                       whileHover={{ y: -2 }}
                       className="shrink-0 w-[260px] md:w-[280px] text-left rounded-2xl overflow-hidden snap-start transition-shadow hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
                       style={{
-                        background: '#FDF8F0',
+                        background: '#FFFFFF',
                         border: `1px solid ${theme.blob}66`,
                         boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
                       }}
                     >
                       <div className="flex flex-col h-full p-5 min-h-[220px]">
                         <div className="flex justify-center -mt-4 -mb-2">
-                          <WorldIconBlob world={theme.worldKey} size={120} />
+                          <WorldIconBlob world={theme.worldKey} size={120} compact />
                         </div>
                         <span className="font-mono text-[11px] font-medium tracking-[0.2em]" style={{ color: theme.mid }}>
                           {cNumber}
