@@ -17,7 +17,7 @@ import { SCHOOLS } from '../schoolData';
 const GradientPanel = () => (
   <div className="hidden md:block w-1/2 relative overflow-hidden" style={{ borderRadius: '16px 0 0 16px' }}>
     <div className="absolute inset-0" style={{ backgroundColor: '#EAE5DE' }} />
-    <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, #FDF8F0 0%, transparent 15%)' }} />
+    <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, #FAFBF6 0%, transparent 15%)' }} />
     <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 140% 70% at 50% 50%, rgba(140,120,210,0.5) 0%, transparent 65%)' }} />
     <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 100% 50% at 35% 40%, rgba(155,135,225,0.35) 0%, transparent 60%)' }} />
     <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 120% 55% at 50% 95%, rgba(225,110,160,0.65) 0%, transparent 50%)' }} />
@@ -30,7 +30,7 @@ const GradientPanel = () => (
 
 // ── Card wrapper — split panel on desktop, full-width on mobile ──
 const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNode }> = ({ children, devButton }) => (
-  <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 light" data-theme="light" style={{ backgroundColor: '#FDF8F0', colorScheme: 'light' }}>
+  <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 light" data-theme="light" style={{ backgroundColor: '#FAFBF6', colorScheme: 'light' }}>
     <MotionDiv
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}

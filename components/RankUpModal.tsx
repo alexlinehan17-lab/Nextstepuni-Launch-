@@ -30,7 +30,7 @@ import { useModal } from '../hooks/useModal';
 const SERIF: React.CSSProperties = { fontFamily: "'Source Serif 4', serif" };
 const SANS: React.CSSProperties = { fontFamily: "'DM Sans', system-ui, sans-serif" };
 const TERRACOTTA = '#D85F47';
-const CREAM = '#FDF8F0';
+const CREAM = '#FAFBF6';
 const NODE_BG = '#F5EFE3';
 const TEXT = '#1a1a1a';
 

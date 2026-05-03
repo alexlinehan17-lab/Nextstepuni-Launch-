@@ -111,7 +111,7 @@ const CountdownPanel: React.FC<CountdownPanelProps> = ({ daysUntilExam, subjects
         {/* Wavy bottom edge */}
         <div className="absolute bottom-0 left-0 right-0" style={{ transform: 'translateY(1px)' }}>
           <svg viewBox="0 0 1440 40" preserveAspectRatio="none" className="block w-full" style={{ height: 36 }}>
-            <path d="M0,20 C360,40 720,8 1080,28 C1260,38 1360,18 1440,24 L1440,40 L0,40 Z" className="fill-[#FDF8F0] dark:fill-zinc-950" />
+            <path d="M0,20 C360,40 720,8 1080,28 C1260,38 1360,18 1440,24 L1440,40 L0,40 Z" className="fill-[#FAFBF6] dark:fill-zinc-950" />
           </svg>
         </div>
       </div>

@@ -338,7 +338,7 @@ const CardWrapper: React.FC<CardWrapperProps> = ({ config, isHero, children, onC
         onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick(); } }}
         aria-label={ariaLabel}
         whileHover={isHero ? undefined : { y: -2 }}
-        className={`relative h-full overflow-hidden cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-4 focus-visible:ring-offset-[#FDF8F0] ${isHero ? 'rounded-[28px] md:rounded-[32px]' : 'rounded-2xl md:rounded-[22px]'}`}
+        className={`relative h-full overflow-hidden cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-4 focus-visible:ring-offset-[#FAFBF6] ${isHero ? 'rounded-[28px] md:rounded-[32px]' : 'rounded-2xl md:rounded-[22px]'}`}
         style={{ background, border, boxShadow }}
       >
         <div className="relative">{children}</div>
@@ -562,12 +562,12 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
   ];
 
   return (
-    <div className="min-h-screen bg-[#FDF8F0] dark:bg-zinc-950">
+    <div className="min-h-screen bg-[#FAFBF6] dark:bg-zinc-950">
       {/* Header — left side only. Right side intentionally empty so the
           App-level top-right cluster (TrainingPulse + bell + profile)
           owns that real estate without any leakage. */}
       <header
-        className="fixed top-0 left-0 z-40 px-4 md:px-10 bg-[#FDF8F0]/85 dark:bg-zinc-950/90 backdrop-blur-md"
+        className="fixed top-0 left-0 z-40 px-4 md:px-10 bg-[#FAFBF6]/85 dark:bg-zinc-950/90 backdrop-blur-md"
         style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}
       >
         <div className="flex items-center gap-4">

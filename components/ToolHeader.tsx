@@ -7,7 +7,7 @@
  * coloured banner with circle blobs in the corners" pattern.
  *
  * Recipe:
- *   - Cream ground (#FDF8F0), no border, no shadow
+ *   - Cream ground (#FAFBF6), no border, no shadow
  *   - 108px square colour tile on the left, white-ink illustration inside
  *   - Eyebrow + serif title + sans subtitle on the right
  *

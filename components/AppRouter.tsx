@@ -230,7 +230,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   // during token refresh / IndexedDB rehydration.
   if (!userResolved) {
     return (
-      <div className="flex items-center justify-center min-h-screen w-full bg-[#FDF8F0] dark:bg-zinc-950">
+      <div className="flex items-center justify-center min-h-screen w-full bg-[#FAFBF6] dark:bg-zinc-950">
         <svg className="animate-spin" width="36" height="36" viewBox="0 0 36 36" fill="none">
           <circle cx="18" cy="18" r="15" stroke="#e0dbd4" strokeWidth="3" />
           <path d="M18 3a15 15 0 0 1 15 15" stroke="#2A7D6F" strokeWidth="3" strokeLinecap="round" />
@@ -470,10 +470,10 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           initial={{ opacity: 0, y: 18, scale: 0.985 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
-          className="min-h-screen bg-[#FDF8F0] dark:bg-zinc-950"
+          className="min-h-screen bg-[#FAFBF6] dark:bg-zinc-950"
         >
           {/* Header */}
-          <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-[#FDF8F0] dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '24px' }}>
+          <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-[#FAFBF6] dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '24px' }}>
             <div className="flex items-center gap-4">
               <button onClick={handleBackToTree} className="p-2.5 rounded-xl transition-colors hover:bg-white/60" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
@@ -603,7 +603,7 @@ const ChangePasswordModal: React.FC<{ user: SessionUser }> = ({ user: _user }) =
   const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-700 focus:border-[#2A7D6F]";
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-5 bg-[#FDF8F0] dark:bg-zinc-950">
+    <div className="min-h-screen flex items-center justify-center p-5 bg-[#FAFBF6] dark:bg-zinc-950">
       <div className="w-full max-w-md bg-white dark:bg-zinc-900 rounded-2xl p-8 md:p-10" style={{ border: '2px solid #1a1a1a' }}>
         <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Set a new password</h2>
         <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Your password was reset by your guidance counsellor. Please choose a new password to continue.</p>

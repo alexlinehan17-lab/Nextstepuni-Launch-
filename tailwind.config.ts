@@ -32,7 +32,7 @@ const config: Config = {
         },
         brand: {
           teal: '#2A7D6F',
-          cream: '#FDF8F0',
+          cream: '#FAFBF6',
           sage: '#6B8F71',
           amber: '#C4873B',
         },

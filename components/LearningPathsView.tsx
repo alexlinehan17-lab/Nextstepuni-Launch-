@@ -76,7 +76,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
   };
 
   return (
-    <div className="min-h-screen bg-[#FDF8F0] dark:bg-zinc-950 pt-16 md:pt-20 pb-32 px-4 sm:px-6 transition-colors duration-500">
+    <div className="min-h-screen bg-[#FAFBF6] dark:bg-zinc-950 pt-16 md:pt-20 pb-32 px-4 sm:px-6 transition-colors duration-500">
       <div className="max-w-5xl mx-auto">
         {/* ── Header row: back arrow + serif title ── */}
         <div className="flex items-center gap-4 mb-12">

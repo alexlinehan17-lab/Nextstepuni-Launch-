@@ -37,7 +37,7 @@ const ModuleCompleteScreen: React.FC<ModuleCompleteScreenProps> = ({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.35 }}
-          className="fixed inset-0 z-[300] overflow-y-auto bg-[#FDF8F0] dark:bg-zinc-950"
+          className="fixed inset-0 z-[300] overflow-y-auto bg-[#FAFBF6] dark:bg-zinc-950"
         >
           <div className="min-h-screen flex flex-col items-center justify-center px-6 py-16">
             <div className="max-w-md w-full text-center">

@@ -86,7 +86,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
   const stagger = (i: number) => ({ initial: { opacity: 0, y: 16 }, animate: { opacity: 1, y: 0 }, transition: { delay: i * 0.06, duration: 0.4, ease: [0.16, 1, 0.3, 1] as number[] } });
 
   return (
-    <div className="min-h-screen bg-[#FDF8F0] dark:bg-zinc-950">
+    <div className="min-h-screen bg-[#FAFBF6] dark:bg-zinc-950">
 
       {/* Back affordance — small chip above the header */}
       <div className="px-6 pt-5">

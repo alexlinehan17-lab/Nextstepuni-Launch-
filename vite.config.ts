@@ -19,7 +19,7 @@ export default defineConfig(() => {
             short_name: 'Nextstep',
             description: 'Science-backed learning strategies for exam success',
             theme_color: '#131311',
-            background_color: '#FDF8F0',
+            background_color: '#FAFBF6',
             display: 'standalone',
             icons: [
               { src: '/icons/icon-192x192.png', sizes: '192x192', type: 'image/png' },

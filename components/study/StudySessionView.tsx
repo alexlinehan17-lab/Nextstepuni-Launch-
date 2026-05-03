@@ -376,7 +376,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   // ── SETUP PHASE ──
   if (session.phase === 'idle') {
     return (
-      <div className="min-h-screen bg-[#FDF8F0] dark:bg-zinc-950 flex flex-col">
+      <div className="min-h-screen bg-[#FAFBF6] dark:bg-zinc-950 flex flex-col">
         {/* ── Editorial header — replaces the old teal hero banner ── */}
         <div className="shrink-0 px-6 pt-6 max-w-md mx-auto w-full">
           <button
@@ -461,7 +461,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
         </div>
 
         {/* Centered content */}
-        <div className="flex-1 px-6 pb-28 bg-[#FDF8F0] dark:bg-zinc-950">
+        <div className="flex-1 px-6 pb-28 bg-[#FAFBF6] dark:bg-zinc-950">
           <div className="w-full max-w-md mx-auto space-y-10 pt-6">
             {/* First-visit intro card */}
             <AnimatePresence>

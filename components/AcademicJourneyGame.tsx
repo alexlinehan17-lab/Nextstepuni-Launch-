@@ -832,7 +832,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                                 {/* Wavy edge to cream */}
                                 <div className="absolute bottom-0 left-0 right-0" style={{ transform: 'translateY(1px)' }}>
                                     <svg viewBox="0 0 1440 48" preserveAspectRatio="none" className="block w-full" style={{ height: 40 }}>
-                                        <path d="M0,24 C240,48 480,8 720,32 C960,56 1200,16 1440,28 L1440,48 L0,48 Z" className="fill-[#FDF8F0] dark:fill-zinc-900" />
+                                        <path d="M0,24 C240,48 480,8 720,32 C960,56 1200,16 1440,28 L1440,48 L0,48 Z" className="fill-[#FAFBF6] dark:fill-zinc-900" />
                                     </svg>
                                 </div>
                             </div>

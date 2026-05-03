@@ -155,7 +155,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
   );
 
   return (
-    <div className="min-h-screen bg-[#FDF8F0] dark:bg-zinc-950">
+    <div className="min-h-screen bg-[#FAFBF6] dark:bg-zinc-950">
       {/* Back arrow row */}
       <div className="max-w-5xl mx-auto px-6 pt-6">
         <button

@@ -304,7 +304,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
     <div className="fixed inset-0 flex flex-col z-[60] overflow-hidden">
 
       {/* ─── Solid background — matches Library (module selection) screen ─── */}
-      <div className="fixed inset-0 pointer-events-none dark:bg-zinc-900" aria-hidden="true" style={{ backgroundColor: '#FDF8F0' }} />
+      <div className="fixed inset-0 pointer-events-none dark:bg-zinc-900" aria-hidden="true" style={{ backgroundColor: '#FAFBF6' }} />
 
       {/* ─── Fixed Header: Progress bar + Skip ─── */}
       <div className="shrink-0 relative z-10 px-6 pt-5 pb-3">

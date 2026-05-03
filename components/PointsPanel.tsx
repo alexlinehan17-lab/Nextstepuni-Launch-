@@ -122,7 +122,7 @@ const IslandShopIcon: React.FC = () => (
         strokeWidth="1.5"
         strokeLinejoin="round"
       />
-      <circle cx="34" cy="36" r="3.5" fill="#FDF8F0" stroke="#1a1a1a" strokeWidth="1.3" />
+      <circle cx="34" cy="36" r="3.5" fill="#FAFBF6" stroke="#1a1a1a" strokeWidth="1.3" />
     </g>
   </svg>
 );
@@ -194,7 +194,7 @@ const ItemCard: React.FC<{ item: Item }> = ({ item }) => (
   <div
     className="rounded-xl"
     style={{
-      background: '#FDF8F0',
+      background: '#FAFBF6',
       border: `1px solid ${TEAL}26`,
       padding: 18,
     }}
@@ -264,7 +264,7 @@ const PointsPanel: React.FC<PointsPanelProps> = ({ open, onHide }) => (
         <div
           className="rounded-[18px]"
           style={{
-            background: '#FDF8F0',
+            background: '#FAFBF6',
             border: `1px solid ${TEAL}40`,
             boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
             padding: 32,
