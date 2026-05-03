@@ -174,7 +174,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] as number[] }}
-          className="rounded-3xl bg-[#FDF8F0] p-7 md:p-10"
+          className="rounded-3xl bg-white p-7 md:p-10"
           style={{ boxShadow: '0 4px 28px rgba(28,25,23,0.06), 0 1px 3px rgba(28,25,23,0.04)' }}
         >
           {/* 1. Eyebrow row */}
