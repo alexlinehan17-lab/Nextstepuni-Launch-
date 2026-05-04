@@ -37,6 +37,7 @@ interface FutureFinderData {
   answers: FutureFinderAnswers;
   topPicks: string[];
   savedComparisons: string[][];
+  compareCodes?: string[];
 }
 
 type Phase = 'intro' | 'assessment' | 'results' | 'detail' | 'compare';
@@ -145,6 +146,13 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
           // Re-run algorithm with migrated answers
           const res = runFutureFinderAssessment(migrated, profile, autoPoints);
           setResults(res);
+          // Restore compare selections by matching codes against results
+          if (ff.compareCodes && ff.compareCodes.length > 0) {
+            const restored = ff.compareCodes
+              .map(code => res.find(r => r.course.code === code))
+              .filter((r): r is RecommendationResult => !!r);
+            setCompareCourses(restored);
+          }
           setPhase('results');
         } else {
           // No saved data — auto-populate estimated points from profile
@@ -201,13 +209,24 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
   // Toggle compare
   const toggleCompare = useCallback((result: RecommendationResult) => {
     setCompareCourses(prev => {
+      let next: RecommendationResult[];
       if (prev.find(c => c.course.code === result.course.code)) {
-        return prev.filter(c => c.course.code !== result.course.code);
+        next = prev.filter(c => c.course.code !== result.course.code);
+      } else if (prev.length >= 3) {
+        return prev;
+      } else {
+        next = [...prev, result];
       }
-      if (prev.length >= 3) return prev;
-      return [...prev, result];
+      // Persist compare selection so it survives navigating away
+      if (savedData) {
+        const codes = next.map(c => c.course.code);
+        const updated = { ...savedData, compareCodes: codes };
+        setDoc(doc(db, 'progress', uid), { futureFinder: updated }, { merge: true }).catch(() => {});
+        setSavedData(updated);
+      }
+      return next;
     });
-  }, []);
+  }, [uid, savedData]);
 
   // Sorted and filtered results
   const displayResults = useMemo(() => {
@@ -304,7 +323,17 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
             courses={compareCourses}
             answers={answers}
             onBack={() => setPhase('results')}
-            onRemove={(code) => setCompareCourses(prev => prev.filter(c => c.course.code !== code))}
+            onRemove={(code) => {
+              setCompareCourses(prev => {
+                const next = prev.filter(c => c.course.code !== code);
+                if (savedData) {
+                  const updated = { ...savedData, compareCodes: next.map(c => c.course.code) };
+                  setDoc(doc(db, 'progress', uid), { futureFinder: updated }, { merge: true }).catch(() => {});
+                  setSavedData(updated);
+                }
+                return next;
+              });
+            }}
           />
         )}
       </AnimatePresence>
@@ -1008,7 +1037,16 @@ function ComparePhase({
         <ChevronLeft size={16} /> Back to results
       </button>
 
-      <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-6">Compare Courses</h2>
+      <div className="flex items-start justify-between gap-4 mb-6">
+        <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">Compare Courses</h2>
+        <img
+          src="/assets/future-finder-compare.png"
+          alt=""
+          aria-hidden
+          className="shrink-0"
+          style={{ width: 'clamp(56px, 7vw, 88px)', height: 'auto', objectFit: 'contain' }}
+        />
+      </div>
 
       <div className="overflow-x-auto">
         <table className="w-full text-sm">

@@ -1462,36 +1462,48 @@ export function hydrateCourses(codes: string[]): CAOCourse[] {
 
 // ─── Course Page URLs ──────────────────────────────────────────────────────
 
-function slugify(s: string): string {
-  return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-}
-
 export function getCoursePageUrl(course: CAOCourse): string {
   const code = course.code.toLowerCase();
-  const slug = slugify(course.title);
   const institution = INSTITUTIONS[course.institution] || course.institution;
 
+  // DuckDuckGo's !ducky bang auto-redirects to the first organic result —
+  // so the user lands directly on the official course page instead of a
+  // search results interstitial.
+  const duckyTo = (domain: string) =>
+    `https://duckduckgo.com/?q=${encodeURIComponent(`! site:${domain} ${course.title} ${course.code}`)}`;
+  const duckyDefault = () =>
+    `https://duckduckgo.com/?q=${encodeURIComponent(`! ${course.code} ${course.title} ${institution}`)}`;
+
   switch (course.institution) {
-    // CAO code in URL — verified working
+    // CAO code in URL — stable structure, always resolves.
     case 'UCC': return `https://www.ucc.ie/en/${code}/`;
     case 'MTU': return `https://www.mtu.ie/courses/${code}/`;
     case 'TUS': return `https://tus.ie/courses/${code}/`;
 
-    // Title slug in URL — verified working
-    case 'TCD': return `https://www.tcd.ie/courses/undergraduate/courses/${slug}/`;
-    case 'UL': return `https://www.ul.ie/courses/${slug}`;
-    case 'RCSI': return `https://www.rcsi.com/dublin/undergraduate/${slug}`;
+    // Slug-based URLs are unreliable — many courses have parenthetical
+    // qualifiers, ampersands, or non-standard slugs. Use !ducky which
+    // 302-redirects to the first result on the institution's domain.
+    case 'TCD': return duckyTo('tcd.ie');
+    case 'UL': return duckyTo('ul.ie');
+    case 'RCSI': return duckyTo('rcsi.com');
+    case 'TU Dublin': return duckyTo('tudublin.ie');
+    case 'UCD': return duckyTo('ucd.ie');
+    case 'U of Galway': return duckyTo('universityofgalway.ie');
+    case 'DCU': return duckyTo('dcu.ie');
+    case 'MU': return duckyTo('maynoothuniversity.ie');
+    case 'ATU': return duckyTo('atu.ie');
+    case 'SETU': return duckyTo('setu.ie');
 
-    // Title slug + CAO code in URL — verified working
-    case 'TU Dublin': return `https://www.tudublin.ie/study/undergraduate/courses/${slug}-${code}/`;
+    // PLC courses are listed on Qualifax — use !ducky to 302-redirect
+    // straight to the specific course page on qualifax.ie.
+    case 'PLC': return duckyTo('qualifax.ie');
+    // SOLAS: our internal codes (e.g. APP-ELEC) aren't real, so omit them.
+    case 'SOLAS':
+      return `https://duckduckgo.com/?q=${encodeURIComponent(`! site:apprenticeship.ie ${course.title}`)}`;
+    case 'ETB': return duckyTo('etbi.ie');
 
-    // PLC / Apprenticeship portals
-    case 'PLC': return `https://www.qualifax.ie/`;
-    case 'SOLAS': return `https://www.apprenticeship.ie/`;
-    case 'ETB': return `https://www.etbi.ie/`;
-
-    // All others: DuckDuckGo auto-redirect to first result
+    // All others: !ducky redirect to the first result.
     default:
-      return `https://duckduckgo.com/?q=${encodeURIComponent(`\\ ${course.code} ${course.title} ${institution} undergraduate`)}`;
+      return duckyDefault();
   }
 }

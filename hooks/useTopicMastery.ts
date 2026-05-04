@@ -78,59 +78,53 @@ export function useTopicMastery(uid: string | undefined) {
     source: TopicMasteryEntry['source'] = 'manual'
   ) => {
     if (!uid) return;
-    let next: TopicMasteryMap;
-    setMastery(prev => {
-      next = { ...prev };
-      if (!next[subject]) next[subject] = {};
-      next[subject] = {
-        ...next[subject],
-        [topic]: { confidence, updatedAt: Date.now(), source },
-      };
-      return next;
-    });
-    setDoc(doc(db, 'progress', uid), { topicMastery: next! }, { merge: true }).catch(() => {});
-  }, [uid]);
+    const next: TopicMasteryMap = { ...mastery };
+    next[subject] = {
+      ...(next[subject] ?? {}),
+      [topic]: { confidence, updatedAt: Date.now(), source },
+    };
+    setMastery(next);
+    setDoc(doc(db, 'progress', uid), { topicMastery: next }, { merge: true }).catch(() => {});
+  }, [uid, mastery]);
 
   const importSyllabusTopics = useCallback((subject: string) => {
     if (!uid) return;
     const topics = getSyllabusTopics(subject);
     if (!topics || topics.length === 0) return;
 
-    let next: TopicMasteryMap;
-    setMastery(prev => {
-      next = { ...prev };
-      if (!next[subject]) next[subject] = {};
-      const now = Date.now();
-      for (const topicName of topics) {
-        // Don't overwrite existing entries
-        if (!next[subject][topicName]) {
-          next[subject][topicName] = { confidence: 'not-started', updatedAt: now, source: 'import' };
-        }
+    const next: TopicMasteryMap = { ...mastery };
+    const subjectMap = { ...(next[subject] ?? {}) };
+    const now = Date.now();
+    let added = false;
+    for (const topicName of topics) {
+      if (!subjectMap[topicName]) {
+        subjectMap[topicName] = { confidence: 'not-started', updatedAt: now, source: 'import' };
+        added = true;
       }
-      return next;
-    });
-    setDoc(doc(db, 'progress', uid), { topicMastery: next! }, { merge: true }).catch(() => {});
-  }, [uid]);
+    }
+    if (!added) return;
+    next[subject] = subjectMap;
+    setMastery(next);
+    setDoc(doc(db, 'progress', uid), { topicMastery: next }, { merge: true }).catch(() => {});
+  }, [uid, mastery]);
 
   const bulkUpdate = useCallback((subject: string, updates: Record<string, UnifiedConfidence>) => {
     if (!uid) return;
-    let next: TopicMasteryMap;
-    setMastery(prev => {
-      next = { ...prev };
-      if (!next[subject]) next[subject] = {};
-      const now = Date.now();
-      for (const [topic, confidence] of Object.entries(updates)) {
-        next[subject][topic] = {
-          ...next[subject][topic],
-          confidence,
-          updatedAt: now,
-          source: 'manual',
-        };
-      }
-      return next;
-    });
-    setDoc(doc(db, 'progress', uid), { topicMastery: next! }, { merge: true }).catch(() => {});
-  }, [uid]);
+    const next: TopicMasteryMap = { ...mastery };
+    const subjectMap = { ...(next[subject] ?? {}) };
+    const now = Date.now();
+    for (const [topic, confidence] of Object.entries(updates)) {
+      subjectMap[topic] = {
+        ...subjectMap[topic],
+        confidence,
+        updatedAt: now,
+        source: 'manual',
+      };
+    }
+    next[subject] = subjectMap;
+    setMastery(next);
+    setDoc(doc(db, 'progress', uid), { topicMastery: next }, { merge: true }).catch(() => {});
+  }, [uid, mastery]);
 
   const getTopicConfidence = useCallback((subject: string, topic: string): UnifiedConfidence => {
     return mastery[subject]?.[topic]?.confidence ?? 'not-started';

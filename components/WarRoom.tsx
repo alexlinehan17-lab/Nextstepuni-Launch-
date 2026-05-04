@@ -7,7 +7,6 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { useToast } from './Toast';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { Clock, Map, TrendingUp, Target } from 'lucide-react';
 import { db } from '../firebase';
 import { doc, getDoc } from 'firebase/firestore';
 import {
@@ -19,7 +18,13 @@ import {
 import { type DebriefEntry } from './StudyDebrief';
 import { type StudySessionRecord } from '../utils/strategyRegistry';
 import { useInnovationData } from '../contexts/InnovationDataContext';
-import { type TopicEntry, type TopicMap, type MockResult, computeCurrentTotal } from './war-room/warRoomShared';
+import {
+  type TopicEntry, type TopicMap, type MockResult, computeCurrentTotal,
+  INK, INK_MUTE, ACCENT,
+} from './war-room/warRoomShared';
+import {
+  Overline,
+} from './war-room/warRoomPrimitives';
 import CountdownPanel from './war-room/CountdownPanel';
 import CoveragePanel from './war-room/CoveragePanel';
 import TrajectoryPanel from './war-room/TrajectoryPanel';
@@ -33,12 +38,68 @@ interface WarRoomProps {
   timetableCompletions: TimetableCompletions;
 }
 
+// Hand-drawn tab icons supplied as transparent PNGs.
 const PANEL_TABS = [
-  { id: 0, label: 'Countdown', icon: Clock },
-  { id: 1, label: 'Coverage', icon: Map },
-  { id: 2, label: 'Trajectory', icon: TrendingUp },
-  { id: 3, label: 'Briefing', icon: Target },
+  { id: 0, label: 'Countdown',  iconSrc: '/assets/war-room-icons/countdown.png' },
+  { id: 1, label: 'Coverage',   iconSrc: '/assets/war-room-icons/coverage.png' },
+  { id: 2, label: 'Trajectory', iconSrc: '/assets/war-room-icons/trajectory.png' },
+  { id: 3, label: 'Briefing',   iconSrc: '/assets/war-room-icons/briefing.png' },
 ] as const;
+
+// ── Hand-drawn sketch tab ──────────────────────────────────
+// Inactive: single thin charcoal border. Active: double-stroke outline + 3 small orange spark lines at top-left.
+
+const SketchTab: React.FC<{
+  label: string;
+  iconSrc: string;
+  isActive: boolean;
+  onClick: () => void;
+}> = ({ label, iconSrc, isActive, onClick }) => (
+  <button
+    type="button"
+    role="tab"
+    aria-selected={isActive}
+    onClick={onClick}
+    className="relative inline-flex items-center gap-2.5 px-5 sm:px-6 py-2.5 transition-all"
+    style={{
+      background: '#FFFFFF',
+      borderRadius: 14,
+      border: `1.5px solid ${INK}`,
+      boxShadow: isActive
+        ? `0 0 0 3px #FFFFFF, 0 0 0 4.5px ${INK}, 0 6px 16px rgba(31,27,23,0.06)`
+        : '0 1px 0 rgba(31,27,23,0.04), 0 4px 12px rgba(31,27,23,0.04)',
+      color: INK,
+      transform: isActive ? 'rotate(-0.4deg)' : 'rotate(0deg)',
+    }}
+  >
+    {/* Active spark marks — three orange dashes radiating up-and-left from the top-left corner */}
+    {isActive && (
+      <span
+        className="absolute pointer-events-none"
+        style={{ top: -16, left: -4 }}
+        aria-hidden
+      >
+        <svg width="26" height="22" viewBox="0 0 26 22" fill="none">
+          <path d="M14 2 L 11 9" stroke={ACCENT} strokeWidth={1.8} strokeLinecap="round" />
+          <path d="M8 1 L 7 9" stroke={ACCENT} strokeWidth={1.8} strokeLinecap="round" />
+          <path d="M2 4 L 4 10" stroke={ACCENT} strokeWidth={1.8} strokeLinecap="round" />
+        </svg>
+      </span>
+    )}
+    <img src={iconSrc} alt="" aria-hidden style={{ width: 34, height: 34, objectFit: 'contain' }} />
+    <span
+      className="font-serif"
+      style={{
+        fontSize: 17,
+        fontWeight: isActive ? 700 : 500,
+        color: INK,
+        letterSpacing: '-0.005em',
+      }}
+    >
+      {label}
+    </span>
+  </button>
+);
 
 // ── Main Component ─────────────────────────────────────────
 
@@ -49,11 +110,9 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
   const [debriefs, setDebriefs] = useState<DebriefEntry[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Shared data from InnovationDataContext
   const { topicMastery, mockResults: mockResultsHook, futureFinderPicks } = useInnovationData();
   const targetCourse = futureFinderPicks.length > 0 ? futureFinderPicks[0] : null;
 
-  // Derive a TopicMap from unified mastery for legacy sub-components that still expect TopicMap
   const derivedTopicMap: TopicMap = useMemo(() => {
     const map: TopicMap = {};
     for (const [subject, topics] of Object.entries(topicMastery.mastery)) {
@@ -67,7 +126,6 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
     return map;
   }, [topicMastery.mastery]);
 
-  // Derive legacy MockResult[] from unified mock results for sub-components
   const derivedMockResults: MockResult[] = useMemo(() => {
     const results: MockResult[] = [];
     for (const mock of mockResultsHook.mocks) {
@@ -85,7 +143,6 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
     return results;
   }, [mockResultsHook.mocks]);
 
-  // Load remaining data from Firestore (study sessions, debriefs)
   useEffect(() => {
     if (!uid) return;
     let cancelled = false;
@@ -94,12 +151,8 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
         const snap = await getDoc(doc(db, 'progress', uid));
         if (cancelled) return;
         const data = snap.data() || {};
-        if (data.studySessions) {
-          setStudySessions(data.studySessions as StudySessionRecord[]);
-        }
-        if (data.studyDebriefs) {
-          setDebriefs(data.studyDebriefs as DebriefEntry[]);
-        }
+        if (data.studySessions) setStudySessions(data.studySessions as StudySessionRecord[]);
+        if (data.studyDebriefs) setDebriefs(data.studyDebriefs as DebriefEntry[]);
       } catch (err) {
         console.error('Failed to load War Room data:', err);
       }
@@ -109,7 +162,6 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
     return () => { cancelled = true; };
   }, [uid]);
 
-  // Shared computations
   const subjects = profile.subjects;
   const daysUntilExam = useMemo(() => {
     const examDate = new Date(profile.examStartDate);
@@ -124,13 +176,11 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
     return allocateSessions(priorities, weeksUntilExam);
   }, [subjects, weeksUntilExam]);
 
-  // Hours studied per subject from study sessions
   const hoursStudiedMap = useMemo(() => {
     const map: Record<string, number> = {};
     for (const s of studySessions) {
       map[s.subject] = (map[s.subject] || 0) + s.actualSeconds / 3600;
     }
-    // Also count timetable completions as approximate study time
     for (const [, blockIds] of Object.entries(timetableCompletions)) {
       for (const blockId of blockIds) {
         const parts = blockId.split('|');
@@ -146,114 +196,172 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
   if (isLoading) {
     return (
       <div className="flex items-center justify-center py-20">
-        <div className="w-6 h-6 border-2 border-zinc-300 dark:border-zinc-600 border-t-[var(--accent-hex)] rounded-full animate-spin" />
+        <div className="w-6 h-6 border-2 rounded-full animate-spin"
+             style={{ borderColor: `${INK}22`, borderTopColor: ACCENT }} />
       </div>
     );
   }
 
-  const phaseColorMain = daysUntilExam > 180 ? '#2A7D6F' : daysUntilExam > 90 ? '#D4891C' : daysUntilExam > 30 ? '#D4564E' : '#C5981A';
-
-  // Shared tab row component (rendered inside colour or on cream)
-  const tabRow = (onColor: boolean) => (
-    <div className="flex justify-center gap-1 px-4">
-      {PANEL_TABS.map(tab => {
-        const Icon = tab.icon;
-        const isActive = activePanel === tab.id;
-        return (
-          <button
-            key={tab.id}
-            onClick={() => setActivePanel(tab.id)}
-            className={`flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg text-[13px] transition-all ${
-              !onColor
-                ? isActive
-                  ? 'bg-[#FEFDFB] dark:bg-zinc-900 text-[#1C1917] dark:text-white border border-[#EDEBE8] dark:border-zinc-800'
-                  : 'text-[#A8A29E] dark:text-zinc-500 border border-transparent'
-                : ''
-            }`}
-            style={onColor ? {
-              backgroundColor: isActive ? 'rgba(255,255,255,0.18)' : 'transparent',
-              color: isActive ? '#fff' : 'rgba(255,255,255,0.55)',
-              fontWeight: isActive ? 700 : 500,
-            } : {
-              fontWeight: isActive ? 700 : 500,
-              boxShadow: isActive ? '0 1px 3px rgba(28,25,23,0.04)' : 'none',
-            }}
-          >
-            <Icon size={13} />
-            <span className="hidden sm:inline">{tab.label}</span>
-          </button>
-        );
-      })}
-    </div>
-  );
+  // ── Editorial header ─────────────────────────────────────
+  // Cream paper banner — small overline, serif title, hand-drawn horizon, days badge.
+  // Replaces the previous heavy coloured banner.
 
   return (
-    <div>
-      {/* ── Colour header with integrated tabs ── */}
-      {activePanel === 0 ? (
-        /* Countdown: full hero with tabs inside */
-        <CountdownPanel
-          daysUntilExam={daysUntilExam}
-          subjects={subjects}
-          allocations={allocations}
-          weeksUntilExam={weeksUntilExam}
-          hoursStudiedMap={hoursStudiedMap}
-          blockDuration={blockDuration}
-          mockResults={derivedMockResults}
-          targetCourse={targetCourse}
-          currentPoints={computeCurrentTotal(subjects)}
-          tabRow={tabRow(true)}
-          phaseColor={phaseColorMain}
+    <div
+      className="relative"
+      style={{
+        // Break out to viewport width so the cream surface reaches the page edges.
+        position: 'relative',
+        left: '50%',
+        right: '50%',
+        marginLeft: '-50vw',
+        marginRight: '-50vw',
+        width: '100vw',
+        background: '#FAFBF6',
+        minHeight: '100vh',
+      }}
+    >
+      {/* War Room target crest — anchored top-right of the page, with painted blob behind */}
+      <div
+        aria-hidden
+        className="absolute z-10"
+        style={{
+          top: 'clamp(16px, 2.5vw, 32px)',
+          right: 'clamp(16px, 3vw, 40px)',
+          width: 'clamp(96px, 11vw, 144px)',
+          height: 'clamp(96px, 11vw, 144px)',
+        }}
+      >
+        <svg
+          viewBox="0 0 100 100"
+          aria-hidden
+          preserveAspectRatio="xMidYMid meet"
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+          }}
+        >
+          <path
+            d="M 6 22 Q -2 50 10 78 Q 26 98 56 94 Q 90 88 96 56 Q 100 24 80 6 Q 56 -6 28 6 Q 10 14 6 22 Z"
+            fill="#F1B7AB"
+            opacity="0.85"
+          />
+        </svg>
+        <img
+          src="/assets/war-room-crest.png"
+          alt=""
+          aria-hidden
+          style={{
+            position: 'absolute',
+            left: '50%',
+            top: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: '78%',
+            height: '78%',
+            objectFit: 'contain',
+          }}
         />
-      ) : (
-        /* Other tabs: short colour strip with tabs, then cream content */
-        <>
-          <div
-            className="relative overflow-hidden"
+      </div>
+
+      <div className="max-w-5xl mx-auto px-4 sm:px-8 pt-10 sm:pt-14 pb-16">
+        {/* ── Centered editorial hero ── */}
+        <header className="relative mb-2 text-center">
+          {/* Title — large, centred serif */}
+          <h1
+            className="font-serif font-bold leading-[1.0]"
             style={{
-              backgroundColor: phaseColorMain,
-              position: 'relative',
-              left: '50%',
-              right: '50%',
-              marginLeft: '-50vw',
-              marginRight: '-50vw',
-              width: '100vw',
+              color: INK,
+              fontSize: 'clamp(48px, 9vw, 96px)',
+              letterSpacing: '-0.022em',
             }}
           >
-            <div className="relative z-10 pt-16 md:pt-20 pb-5 max-w-4xl mx-auto">
-              {tabRow(true)}
-            </div>
-            {/* Wavy edge */}
-            <div className="absolute bottom-0 left-0 right-0" style={{ transform: 'translateY(1px)' }}>
-              <svg viewBox="0 0 1440 24" preserveAspectRatio="none" className="block w-full" style={{ height: 20 }}>
-                <path d="M0,12 C360,24 720,4 1080,16 C1260,22 1360,10 1440,14 L1440,24 L0,24 Z" className="fill-[#FAFBF6] dark:fill-zinc-950" />
-              </svg>
-            </div>
-          </div>
+            Strategy Briefing
+          </h1>
 
-          <div className="pt-5">
-            <AnimatePresence mode="wait">
-              <MotionDiv
-                key={activePanel}
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.2 }}
-              >
-                {activePanel === 1 && (
-                  <CoveragePanel subjects={subjects} topicMastery={topicMastery} debriefs={debriefs} />
-                )}
-                {activePanel === 2 && (
-                  <TrajectoryPanel subjects={subjects} mockResults={derivedMockResults} mockResultsHook={mockResultsHook} daysUntilExam={daysUntilExam} />
-                )}
-                {activePanel === 3 && (
-                  <BriefingPanel subjects={subjects} topicMap={derivedTopicMap} mockResults={derivedMockResults} allocations={allocations} hoursStudiedMap={hoursStudiedMap} weeksUntilExam={weeksUntilExam} blockDuration={blockDuration} daysUntilExam={daysUntilExam} timetableCompletions={timetableCompletions} />
-                )}
-              </MotionDiv>
-            </AnimatePresence>
+          {/* Subtitle */}
+          <p
+            className="font-sans mt-5 mx-auto leading-relaxed"
+            style={{
+              color: INK_MUTE,
+              fontSize: 'clamp(15px, 1.5vw, 18px)',
+              maxWidth: 560,
+            }}
+          >
+            An editorial overview of the road to your Leaving Cert.
+          </p>
+        </header>
+
+        {/* Hand-drawn path illustration spanning the hero */}
+        <div className="relative -mx-4 sm:-mx-8 mt-2 mb-6 select-none pointer-events-none">
+          <img
+            src="/assets/war-room-path.png"
+            alt=""
+            aria-hidden
+            className="w-full block"
+            style={{ maxHeight: 220, objectFit: 'contain', objectPosition: 'center' }}
+          />
+        </div>
+
+        {/* ── Tab navigation ── */}
+        {/* Hand-drawn rounded-rectangle buttons; active state adds a sketchy double border + orange spark marks. */}
+        <nav role="tablist" className="relative mb-8 flex items-center justify-center" aria-label="War Room tabs">
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+            {PANEL_TABS.map(tab => {
+              const isActive = activePanel === tab.id;
+              return (
+                <SketchTab
+                  key={tab.id}
+                  label={tab.label}
+                  iconSrc={tab.iconSrc}
+                  isActive={isActive}
+                  onClick={() => setActivePanel(tab.id)}
+                />
+              );
+            })}
           </div>
-        </>
-      )}
+        </nav>
+
+        {/* ── Active panel ── */}
+        <AnimatePresence mode="wait">
+          <MotionDiv
+            key={activePanel}
+            initial={{ opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -4 }}
+            transition={{ duration: 0.22 }}
+          >
+            {activePanel === 0 && (
+              <CountdownPanel
+                daysUntilExam={daysUntilExam}
+                subjects={subjects}
+                allocations={allocations}
+                weeksUntilExam={weeksUntilExam}
+                hoursStudiedMap={hoursStudiedMap}
+                blockDuration={blockDuration}
+                mockResults={derivedMockResults}
+                targetCourse={targetCourse}
+                currentPoints={computeCurrentTotal(subjects)}
+              />
+            )}
+            {activePanel === 1 && (
+              <CoveragePanel subjects={subjects} topicMastery={topicMastery} debriefs={debriefs} />
+            )}
+            {activePanel === 2 && (
+              <TrajectoryPanel subjects={subjects} mockResults={derivedMockResults} mockResultsHook={mockResultsHook} daysUntilExam={daysUntilExam} />
+            )}
+            {activePanel === 3 && (
+              <BriefingPanel
+                subjects={subjects} topicMap={derivedTopicMap} mockResults={derivedMockResults}
+                allocations={allocations} hoursStudiedMap={hoursStudiedMap}
+                weeksUntilExam={weeksUntilExam} blockDuration={blockDuration}
+                daysUntilExam={daysUntilExam} timetableCompletions={timetableCompletions}
+              />
+            )}
+          </MotionDiv>
+        </AnimatePresence>
+      </div>
     </div>
   );
 };

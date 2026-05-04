@@ -7,7 +7,7 @@ import React, { useState, useMemo } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import {
-  Clock, Activity, ChevronDown, AlertTriangle, BookOpen,
+  Activity, ChevronDown, AlertTriangle, BookOpen,
   Shield, CheckCircle, Target,
 } from 'lucide-react';
 import {
@@ -18,8 +18,16 @@ import { getDistinctSubjectHex } from '../../studySessionData';
 import { getSubjectGuidance, type SubjectGuidance } from '../subjectGuidance';
 import {
   type TopicMap, type MockResult,
-  CARD_STYLE, CARD_CLASS, gradeToPoints,
+  gradeToPoints, mutedSubjectHex,
+  PAPER, PAPER_SOFT, INK, INK_SOFT, INK_MUTE, INK_FAINT, ACCENT,
+  STATUS_SOLID, STATUS_SOLID_DEEP, STATUS_SOLID_TINT,
+  STATUS_SHAKY, STATUS_SHAKY_DEEP, STATUS_SHAKY_TINT,
+  STATUS_GAP, STATUS_GAP_DEEP, STATUS_GAP_TINT,
 } from './warRoomShared';
+import {
+  Overline, SectionHeader, EditorialCard, Pill,
+  SketchedStar, SketchedFlag, SketchedLeaf, SunburstRule, PaperRule,
+} from './warRoomPrimitives';
 
 // ── Helpers for study pattern charts ───────────────────────
 
@@ -36,11 +44,9 @@ function toISODateKey(d: Date): string {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
 
-// ── Types ──────────────────────────────────────────────────
-
 interface Recommendation {
   subject: string;
-  priority: number; // 0-100
+  priority: number;
   concerns: string[];
   action: string;
   guidance?: SubjectGuidance;
@@ -59,14 +65,12 @@ interface BriefingPanelProps {
   timetableCompletions: TimetableCompletions;
 }
 
-// ── Component ──────────────────────────────────────────────
-
 const BriefingPanel: React.FC<BriefingPanelProps> = ({
-  subjects, topicMap, mockResults, allocations, _hoursStudiedMap, weeksUntilExam, _blockDuration, daysUntilExam, timetableCompletions,
+  subjects, topicMap, mockResults, allocations, weeksUntilExam, daysUntilExam, timetableCompletions,
 }) => {
   const [showStudyPatterns, setShowStudyPatterns] = useState(false);
 
-  // ── Study pattern data (merged from Insights) ──
+  // ── Study pattern data ──
   const weeklyData = useMemo(() => {
     const weeks: { label: string; startDate: Date; totalBlocks: number; subjectBlocks: Record<string, number> }[] = [];
     const today = new Date();
@@ -113,6 +117,7 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
   const spPlotW = SPW - SPAD.left - SPAD.right;
   const spPlotH = SPH - SPAD.top - SPAD.bottom;
 
+  // ── Recommendations ──
   const recommendations = useMemo((): Recommendation[] => {
     const recs: Recommendation[] = [];
 
@@ -120,7 +125,6 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
       const concerns: string[] = [];
       let priority = 0;
 
-      // Coverage analysis
       const topics = topicMap[s.subjectName] || [];
       if (topics.length > 0) {
         const notStarted = topics.filter(t => t.confidence === 'not-started').length;
@@ -136,7 +140,6 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
         }
       }
 
-      // Trajectory analysis
       const results = mockResults
         .filter(r => r.subject === s.subjectName && r.grade && r.date)
         .sort((a, b) => (a.date ?? '').localeCompare(b.date ?? ''));
@@ -149,7 +152,6 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
           concerns.push(`${gap} point gap to target (${latest.grade} → ${s.targetGrade})`);
           priority += Math.min(40, (gap / targetPts) * 60);
         }
-        // Declining trend
         if (results.length >= 2) {
           const prev = results[results.length - 2];
           const prevPts = gradeToPoints(prev.grade);
@@ -160,17 +162,14 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
         }
       }
 
-      // Time allocation relative to need
       const alloc = allocations.find(a => a.subjectName === s.subjectName);
       const sessionsPerWeek = alloc?.sessions ?? 1;
 
       if (concerns.length === 0 && topics.length === 0 && results.length === 0) {
-        // No data — gentle nudge
         concerns.push('no coverage data or test results logged yet');
         priority += 5;
       }
 
-      // Generate action text
       let action = '';
       if (concerns.length > 0) {
         const weakTopics = topics.filter(t => t.confidence === 'not-started').slice(0, 2).map(t => t.name);
@@ -185,7 +184,6 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
       }
 
       if (concerns.length > 0) {
-        // Derive latest grade for subject guidance
         const latestGrade = results.length > 0
           ? results[results.length - 1].grade
           : (s.currentGrade as string | undefined);
@@ -198,7 +196,6 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
     return recs;
   }, [subjects, topicMap, mockResults, allocations]);
 
-  // Best and worst subjects
   const subjectsWithResults = subjects.filter(s =>
     mockResults.some(r => r.subject === s.subjectName)
   );
@@ -206,47 +203,73 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
   const bestSubject = useMemo(() => {
     let best: { name: string; surplus: number } | null = null;
     for (const s of subjectsWithResults) {
-      const results = mockResults.filter(r => r.subject === s.subjectName && r.grade && r.date).sort((a, b) => (a.date ?? '').localeCompare(b.date ?? ''));
+      const results = mockResults.filter(r => r.subject === s.subjectName && r.grade && r.date)
+        .sort((a, b) => (a.date ?? '').localeCompare(b.date ?? ''));
       const latest = results[results.length - 1];
       if (!latest) continue;
       const surplus = gradeToPoints(latest.grade) - getPointsForGrade(s.targetGrade, false);
-      if (!best || surplus > best.surplus) {
-        best = { name: s.subjectName, surplus };
-      }
+      if (!best || surplus > best.surplus) best = { name: s.subjectName, surplus };
     }
     return best;
   }, [subjectsWithResults, mockResults]);
 
-  const hasData = topicMap && Object.values(topicMap).some(t => t.length > 0) || mockResults.length > 0;
-
+  const hasData = (topicMap && Object.values(topicMap).some(t => t.length > 0)) || mockResults.length > 0;
   const [expandedGuidance, setExpandedGuidance] = useState<string | null>(null);
 
+  const topRec = recommendations[0];
+  const supportingRecs = recommendations.slice(1, 3);
+  const otherRecs = recommendations.slice(3, 5);
+
+  const subjectIdx = (name: string) => subjects.findIndex(s => s.subjectName === name);
+  const subjectHex = (name: string, fallback = 0) => mutedSubjectHex(getDistinctSubjectHex(name, subjectIdx(name) >= 0 ? subjectIdx(name) : fallback), 0.22);
+
   return (
-    <div className="space-y-5">
-      {/* Countdown reminder — bold warm banner */}
-      <div className="flex items-center gap-3 px-5 py-4 rounded-2xl" style={{ backgroundColor: '#F5D08A', boxShadow: '0 2px 8px rgba(212,137,28,0.12)' }}>
-        <Clock size={20} style={{ color: '#8B5E2A' }} className="shrink-0" />
-        <p style={{ color: '#5C3D14' }}>
-          <span className="text-2xl font-black text-[#1A1A1A] dark:text-white">{daysUntilExam}</span>{' '}
-          <span className="text-sm font-bold">days remaining</span>
-          <span className="text-sm"> — {weeksUntilExam} weeks of study</span>
-        </p>
+    <div className="space-y-7">
+      {/* ── Today's Brief masthead ── */}
+      <div className="relative">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <Overline color={ACCENT}>Today’s brief</Overline>
+            <h2 className="font-serif font-bold mt-1.5 leading-[1.05]"
+                style={{ color: INK, fontSize: 'clamp(28px, 4.5vw, 36px)' }}>
+              The strategic read
+            </h2>
+            <div className="mt-2 flex items-center gap-2">
+              <img
+                src="/assets/war-room-rule.png"
+                alt=""
+                aria-hidden
+                style={{ width: 72, height: 'auto', objectFit: 'contain', flexShrink: 0 }}
+              />
+              <p className="font-sans text-[12px]" style={{ color: INK_MUTE }}>
+                {daysUntilExam} days · {weeksUntilExam} weeks of study left
+              </p>
+            </div>
+          </div>
+          <div className="hidden sm:block">
+            <SketchedStar size={36} color={ACCENT} />
+          </div>
+        </div>
+        <PaperRule className="mt-5" />
       </div>
 
-      {/* Study Patterns — collapsible */}
-      <div className={`overflow-hidden ${CARD_CLASS}`} style={CARD_STYLE}>
+      {/* ── Study Patterns — refined collapsible ── */}
+      <EditorialCard tone="soft" padded={false}>
         <button
           onClick={() => setShowStudyPatterns(!showStudyPatterns)}
-          className="w-full flex items-center justify-between px-4 py-3 text-left"
+          className="w-full flex items-center justify-between px-5 py-3.5 text-left"
         >
           <div className="flex items-center gap-2">
-            <Activity size={14} style={{ color: '#2A7D6F' }} />
-            <span className="text-xs font-bold text-zinc-700 dark:text-zinc-300">Study Patterns</span>
+            <Activity size={14} style={{ color: ACCENT }} />
+            <span className="font-serif text-[13px] font-semibold" style={{ color: INK }}>Study patterns</span>
             {currentWeekTotal > 0 && (
-              <span className="text-[10px] text-zinc-400 dark:text-zinc-500">{currentWeekTotal} sessions this week</span>
+              <span className="font-mono text-[11px]" style={{ color: INK_MUTE }}>
+                {currentWeekTotal} sessions this week
+              </span>
             )}
           </div>
-          <ChevronDown size={14} className={`text-zinc-400 transition-transform ${showStudyPatterns ? 'rotate-180' : ''}`} />
+          <ChevronDown size={14} style={{ color: INK_MUTE }}
+                       className={`transition-transform ${showStudyPatterns ? 'rotate-180' : ''}`} />
         </button>
         <AnimatePresence>
           {showStudyPatterns && (
@@ -256,19 +279,22 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.25 }}
               className="overflow-hidden"
+              style={{ borderTop: `1px solid ${INK}10` }}
             >
-              <div className="px-4 pb-4 space-y-5">
-                {/* Weekly volume bar chart */}
+              <div className="px-5 py-5 space-y-6">
+                {/* Weekly volume */}
                 <div>
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Weekly Volume</p>
+                  <Overline className="mb-2">Weekly volume</Overline>
                   <svg viewBox={`0 0 ${SPW} ${SPH}`} className="w-full" style={{ maxHeight: 140 }}>
                     {[0, 0.5, 1].map(frac => {
                       const y = SPAD.top + spPlotH * (1 - frac);
                       const val = Math.round(maxWeekBlocks * frac);
                       return (
                         <g key={frac}>
-                          <line x1={SPAD.left} y1={y} x2={SPW - SPAD.right} y2={y} stroke="currentColor" className="text-zinc-200 dark:text-zinc-700" strokeWidth="0.5" />
-                          {frac > 0 && <text x={SPAD.left - 4} y={y + 3} textAnchor="end" className="text-zinc-400 dark:text-zinc-500 fill-current" fontSize="7">{val}</text>}
+                          <line x1={SPAD.left} y1={y} x2={SPW - SPAD.right} y2={y}
+                                stroke={INK} strokeOpacity={0.08} strokeWidth="0.5" />
+                          {frac > 0 && <text x={SPAD.left - 4} y={y + 3} textAnchor="end"
+                                             fill={INK_MUTE} fontSize="7">{val}</text>}
                         </g>
                       );
                     })}
@@ -279,72 +305,77 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
                       const isCurrentWeek = i === weeklyData.length - 1;
                       return (
                         <g key={i}>
-                          <rect x={x} y={SPAD.top + spPlotH - barH} width={barW} height={Math.max(0, barH)} rx="3" fill={isCurrentWeek ? '#2A7D6F' : undefined} className={isCurrentWeek ? '' : 'fill-zinc-300 dark:fill-zinc-600'} opacity={isCurrentWeek ? 1 : 0.7} />
-                          <text x={x + barW / 2} y={SPH - 4} textAnchor="middle" className="fill-current text-zinc-400 dark:text-zinc-500" fontSize="7">{w.label}</text>
-                          {w.totalBlocks > 0 && <text x={x + barW / 2} y={SPAD.top + spPlotH - barH - 3} textAnchor="middle" className="fill-current text-zinc-500 dark:text-zinc-400" fontSize="7" fontWeight="600">{w.totalBlocks}</text>}
+                          <rect x={x} y={SPAD.top + spPlotH - barH} width={barW} height={Math.max(0, barH)}
+                                rx="3" fill={isCurrentWeek ? ACCENT : INK_FAINT} opacity={isCurrentWeek ? 1 : 0.6} />
+                          <text x={x + barW / 2} y={SPH - 4} textAnchor="middle"
+                                fill={INK_MUTE} fontSize="7">{w.label}</text>
+                          {w.totalBlocks > 0 && <text x={x + barW / 2} y={SPAD.top + spPlotH - barH - 3} textAnchor="middle"
+                                                     fill={INK_SOFT} fontSize="7" fontWeight="600">{w.totalBlocks}</text>}
                         </g>
                       );
                     })}
                   </svg>
                 </div>
 
-                {/* Daily consistency heatmap */}
+                {/* Daily heatmap */}
                 <div>
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Daily Consistency (28 days)</p>
+                  <Overline className="mb-2">Daily consistency (28 days)</Overline>
                   <div className="flex flex-wrap gap-1 justify-center">
                     {heatmapData.map(d => {
                       const intensity = d.blocks / maxDayBlocks;
                       const bgColor = d.blocks === 0
-                        ? '#EDEAE6'
-                        : intensity > 0.66
-                          ? '#2A7D6F'
-                          : intensity > 0.33
-                            ? '#6BB5A8'
-                            : '#B8DDD5';
-                      return <div key={d.date} className="w-5 h-5 rounded-sm" style={{ backgroundColor: bgColor }} title={`${d.date}: ${d.blocks} session${d.blocks !== 1 ? 's' : ''}`} />;
+                        ? '#EFEAE0'
+                        : intensity > 0.66 ? STATUS_SOLID
+                          : intensity > 0.33 ? '#9DBFAF'
+                            : '#C9DCD2';
+                      return <div key={d.date} className="rounded-sm"
+                                  style={{ width: 18, height: 18, background: bgColor, border: `1px solid ${INK}10` }}
+                                  title={`${d.date}: ${d.blocks} session${d.blocks !== 1 ? 's' : ''}`} />;
                     })}
                   </div>
-                  <div className="flex items-center justify-center gap-2 mt-2 text-[10px] text-zinc-400 dark:text-zinc-500">
+                  <div className="flex items-center justify-center gap-2 mt-2 font-mono text-[10px]" style={{ color: INK_MUTE }}>
                     <span>Less</span>
-                    <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#EDEAE6' }} />
-                    <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#B8DDD5' }} />
-                    <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#6BB5A8' }} />
-                    <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#2A7D6F' }} />
+                    <div className="rounded-sm" style={{ width: 12, height: 12, background: '#EFEAE0' }} />
+                    <div className="rounded-sm" style={{ width: 12, height: 12, background: '#C9DCD2' }} />
+                    <div className="rounded-sm" style={{ width: 12, height: 12, background: '#9DBFAF' }} />
+                    <div className="rounded-sm" style={{ width: 12, height: 12, background: STATUS_SOLID }} />
                     <span>More</span>
                   </div>
                 </div>
 
-                {/* Subject balance — this week */}
+                {/* Subject balance */}
                 {currentWeekTotal > 0 && (
                   <div>
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Subject Balance — This Week</p>
-                    <div className="flex h-3.5 rounded-full overflow-hidden">
+                    <Overline className="mb-2">Subject balance — this week</Overline>
+                    <div className="flex h-3 rounded-full overflow-hidden" style={{ border: `1px solid ${INK}1A` }}>
                       {subjects.map((s, i) => {
                         const count = currentWeekSubjects[s.subjectName] || 0;
                         if (count === 0) return null;
                         const pct = (count / currentWeekTotal) * 100;
-                        const hexColor = getDistinctSubjectHex(s.subjectName, i);
-                        return <div key={s.subjectName} style={{ width: `${pct}%`, backgroundColor: hexColor }} className="h-full" title={`${s.subjectName}: ${count} sessions`} />;
+                        const hex = subjectHex(s.subjectName, i);
+                        return <div key={s.subjectName} style={{ width: `${pct}%`, background: hex }} className="h-full" title={`${s.subjectName}: ${count} sessions`} />;
                       })}
                     </div>
-                    <div className="flex flex-wrap gap-x-3 gap-y-1 mt-2">
+                    <div className="flex flex-wrap gap-x-3 gap-y-1.5 mt-2.5">
                       {subjects.map((s, i) => {
                         const count = currentWeekSubjects[s.subjectName] || 0;
                         if (count === 0) return null;
-                        const hexColor = getDistinctSubjectHex(s.subjectName, i);
+                        const hex = subjectHex(s.subjectName, i);
                         return (
                           <div key={s.subjectName} className="flex items-center gap-1.5">
-                            <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: hexColor }} />
-                            <span className="text-[10px] text-zinc-500 dark:text-zinc-400">{s.subjectName}</span>
-                            <span className="text-[10px] font-bold text-zinc-600 dark:text-zinc-300">{count}</span>
+                            <span className="w-2 h-2 rounded-full shrink-0"
+                                  style={{ background: hex, border: `1px solid ${INK}33` }} />
+                            <span className="font-sans text-[11px]" style={{ color: INK_SOFT }}>{s.subjectName}</span>
+                            <span className="font-mono text-[11px] font-bold" style={{ color: INK }}>{count}</span>
                           </div>
                         );
                       })}
                     </div>
                     {subjects.filter(s => !currentWeekSubjects[s.subjectName]).length > 0 && (
-                      <div className="mt-2 flex items-start gap-2 px-3 py-2 rounded-lg bg-amber-50 dark:bg-amber-900/15 border border-amber-200 dark:border-amber-800/30">
-                        <AlertTriangle size={12} className="text-amber-500 mt-0.5 shrink-0" />
-                        <p className="text-[10px] text-amber-700 dark:text-amber-300">
+                      <div className="mt-3 flex items-start gap-2 px-3 py-2 rounded-lg"
+                           style={{ background: STATUS_SHAKY_TINT, border: `1px solid ${STATUS_SHAKY}33` }}>
+                        <AlertTriangle size={12} style={{ color: STATUS_SHAKY_DEEP }} className="mt-0.5 shrink-0" />
+                        <p className="font-sans text-[11px]" style={{ color: STATUS_SHAKY_DEEP }}>
                           <strong>Not studied this week:</strong>{' '}
                           {subjects.filter(s => !currentWeekSubjects[s.subjectName]).map(s => s.subjectName).join(', ')}
                         </p>
@@ -356,155 +387,249 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
             </MotionDiv>
           )}
         </AnimatePresence>
-      </div>
+      </EditorialCard>
 
       {hasData ? (
         <>
-          {/* Priority Actions — all in one card, Linear-style rows */}
-          <div>
-            <p className="text-[10px] font-bold uppercase tracking-widest mb-2 text-[#A8A29E] dark:text-zinc-500">Priority Actions</p>
-            <div className="space-y-2">
-              {recommendations.slice(0, 5).map((rec, i) => {
-                const subjectIdx = subjects.findIndex(s => s.subjectName === rec.subject);
-                // Maximally distinct colours
-                const BRIEFING_COLORS: Record<string, string> = {
-                  'Applied Maths': '#6C5CE7', 'Applied Mathematics': '#6C5CE7',
-                  'Economics': '#E67E22', 'Religious Education': '#E84393',
-                  'Business': '#0984E3', 'Politics & Society': '#00B894',
-                  'Mathematics': '#2D3436', 'English': '#E74C3C',
-                };
-                const hex = BRIEFING_COLORS[rec.subject] || getDistinctSubjectHex(rec.subject, subjectIdx >= 0 ? subjectIdx : i);
-                const _isUrgent = rec.priority >= 30;
-                const isTop = i === 0;
-                return (
-                  <div
-                    key={rec.subject}
-                    className="rounded-2xl px-5 py-4 transition-all"
-                    style={{
-                      backgroundColor: isTop ? `${hex}14` : `${hex}08`,
-                      border: `1px solid ${hex}12`,
-                    }}
-                  >
-                    {/* L1: Subject name — 18px bold, subject colour */}
-                    <div className="flex items-center gap-2.5 mb-1 flex-wrap">
-                      <div className="w-3.5 h-3.5 rounded-full shrink-0" style={{ backgroundColor: hex }} />
-                      <span className="text-lg font-bold" style={{ color: hex }}>{rec.subject}</span>
-                      {isTop && <span className="text-[8px] font-bold uppercase tracking-wider px-2 py-0.5 rounded" style={{ backgroundColor: '#2D2D2D', color: '#fff' }}>Top priority</span>}
-                    </div>
-
-                    {/* L2: Stats — 13px regular, warm grey */}
-                    <p className="text-[13px] ml-6 mb-2 text-[#78716C] dark:text-zinc-400" style={{ fontWeight: 400 }}>
-                      {rec.concerns.join(' · ')}
-                    </p>
-
-                    {/* L3: Action text — 15px medium, teal */}
-                    {rec.action && (
-                      <p className="text-[15px] ml-6 mb-3" style={{ color: '#2A7D6F', fontWeight: 500 }}>{rec.action}</p>
-                    )}
-
-                    {/* Examiner Insights — pill button */}
-                    {rec.guidance && (
-                      <div className="ml-6">
-                        <button
-                          onClick={() => setExpandedGuidance(expandedGuidance === rec.subject ? null : rec.subject)}
-                          className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[12px] font-semibold transition-all ${
-                            expandedGuidance === rec.subject ? '' : 'bg-[#F0EDE8] dark:bg-zinc-700 text-[#78716C] dark:text-zinc-400'
-                          }`}
-                          style={expandedGuidance === rec.subject ? {
-                            backgroundColor: `${hex}15`,
-                            color: hex,
-                          } : undefined}
-                        >
-                          <BookOpen size={13} />
-                          Examiner Insights
-                          <ChevronDown size={12} className={`transition-transform ${expandedGuidance === rec.subject ? 'rotate-180' : ''}`} />
-                        </button>
-                        <AnimatePresence>
-                          {expandedGuidance === rec.subject && (
-                            <MotionDiv
-                              initial={{ height: 0, opacity: 0 }}
-                              animate={{ height: 'auto', opacity: 1 }}
-                              exit={{ height: 0, opacity: 0 }}
-                              transition={{ duration: 0.25 }}
-                              className="overflow-hidden"
-                            >
-                              <div className="mt-3 pt-3 space-y-3 border-t border-[#EDEBE8] dark:border-zinc-800">
-                                {/* L4: Section headers — 14px semibold */}
-                                <div>
-                                  <p className="text-[14px] mb-1.5" style={{ color: '#2D2D2D', fontWeight: 600 }}>Why students struggle here</p>
-                                  <ul className="space-y-1.5">
-                                    {rec.guidance.commonStruggles.map((s, si) => (
-                                      <li key={si} className="flex items-start gap-2.5 text-[14px]" style={{ color: '#4A4A4A', fontWeight: 400 }}>
-                                        <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: '#D4891C' }} />
-                                        {s}
-                                      </li>
-                                    ))}
-                                  </ul>
-                                </div>
-                                <div>
-                                  <p className="text-[14px] mb-1.5" style={{ color: '#2D2D2D', fontWeight: 600 }}>What to do</p>
-                                  <ul className="space-y-1.5">
-                                    {rec.guidance.actions.map((a, ai) => (
-                                      <li key={ai} className="flex items-start gap-2.5 text-[14px]" style={{ color: '#4A4A4A', fontWeight: 400 }}>
-                                        <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: '#2A7D6F' }} />
-                                        {a}
-                                      </li>
-                                    ))}
-                                  </ul>
-                                </div>
-                                {/* Exam trap callout */}
-                                <div className="flex items-start gap-2.5 p-3.5 rounded-xl" style={{ backgroundColor: '#FDEBD0' }}>
-                                  <AlertTriangle size={14} style={{ color: '#D4891C' }} className="shrink-0 mt-0.5" />
-                                  <div>
-                                    <p className="text-[14px] mb-0.5" style={{ color: '#D4891C', fontWeight: 700 }}>Exam trap</p>
-                                    <p className="text-[14px]" style={{ color: '#4A4A4A', fontWeight: 400 }}>{rec.guidance.examTrap}</p>
-                                  </div>
-                                </div>
-                                {/* Mindset shift callout */}
-                                <div className="flex items-start gap-2.5 p-3.5 rounded-xl" style={{ backgroundColor: '#E8F8F5' }}>
-                                  <Shield size={14} style={{ color: '#2A7D6F' }} className="shrink-0 mt-0.5" />
-                                  <div>
-                                    <p className="text-[14px] mb-0.5" style={{ color: '#2A7D6F', fontWeight: 700 }}>Mindset shift</p>
-                                    <p className="text-[14px]" style={{ color: '#4A4A4A', fontWeight: 400 }}>{rec.guidance.mindsetShift}</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </MotionDiv>
-                          )}
-                        </AnimatePresence>
+          {/* ── Top priority hero ── */}
+          {topRec && (() => {
+            const hex = subjectHex(topRec.subject);
+            return (
+              <section>
+                <SectionHeader overline="Top priority" title="Where to focus first" rule />
+                <div className="mt-3">
+                  <EditorialCard tone="paper">
+                    <div className="flex items-start gap-4">
+                      {/* Sketched motif as marker */}
+                      <div className="shrink-0 mt-1">
+                        <SketchedFlag size={34} />
                       </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="w-3 h-3 rounded-full shrink-0"
+                                style={{ background: hex, border: `1px solid ${INK}33` }} />
+                          <h3 className="font-serif text-[22px] font-bold leading-tight" style={{ color: INK }}>
+                            {topRec.subject}
+                          </h3>
+                          <Pill bg={INK} fg={PAPER}>Highest impact</Pill>
+                        </div>
+                        <p className="font-sans text-[13px] mt-2.5 leading-relaxed" style={{ color: INK_SOFT }}>
+                          {topRec.concerns.join(' · ')}
+                        </p>
+                        {topRec.action && (
+                          <p className="font-serif text-[15px] mt-2 leading-relaxed" style={{ color: ACCENT, fontWeight: 600 }}>
+                            {topRec.action}
+                          </p>
+                        )}
+                        <ExaminerInsightsBlock
+                          rec={topRec}
+                          isOpen={expandedGuidance === topRec.subject}
+                          onToggle={() => setExpandedGuidance(expandedGuidance === topRec.subject ? null : topRec.subject)}
+                          accent={hex}
+                        />
+                      </div>
+                    </div>
+                  </EditorialCard>
+                </div>
+              </section>
+            );
+          })()}
 
-          {/* Overall summary */}
-          {bestSubject && (
-            <div className="px-5 py-4 rounded-2xl" style={{ backgroundColor: '#C6F0D9', border: '1px solid #8DD7AE' }}>
-              <div className="flex items-center gap-2.5">
-                <CheckCircle size={18} style={{ color: '#1B5E3B' }} />
-                <p className="text-sm font-bold" style={{ color: '#1B5E3B' }}>
-                  {bestSubject.surplus >= 0
-                    ? `Strongest: ${bestSubject.name} — above target`
-                    : `Closest to target: ${bestSubject.name}`
-                  }
-                </p>
+          {/* ── Supporting priorities ── */}
+          {supportingRecs.length > 0 && (
+            <section>
+              <SectionHeader overline="Supporting priorities" title="Worth defending" rule ruleColor={INK_MUTE} />
+              <div className="mt-3 grid sm:grid-cols-2 gap-3">
+                {supportingRecs.map(rec => {
+                  const hex = subjectHex(rec.subject);
+                  return (
+                    <EditorialCard key={rec.subject} tone="soft">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="w-2.5 h-2.5 rounded-full shrink-0"
+                              style={{ background: hex, border: `1px solid ${INK}33` }} />
+                        <h4 className="font-serif text-[16px] font-bold" style={{ color: INK }}>{rec.subject}</h4>
+                      </div>
+                      <p className="font-sans text-[12px] mt-2" style={{ color: INK_MUTE }}>
+                        {rec.concerns.join(' · ')}
+                      </p>
+                      {rec.action && (
+                        <p className="font-sans text-[13px] mt-1.5" style={{ color: INK_SOFT }}>
+                          {rec.action}
+                        </p>
+                      )}
+                      <ExaminerInsightsBlock
+                        rec={rec}
+                        isOpen={expandedGuidance === rec.subject}
+                        onToggle={() => setExpandedGuidance(expandedGuidance === rec.subject ? null : rec.subject)}
+                        accent={hex}
+                        compact
+                      />
+                    </EditorialCard>
+                  );
+                })}
               </div>
-            </div>
+            </section>
+          )}
+
+          {/* ── Other priorities ── */}
+          {otherRecs.length > 0 && (
+            <section>
+              <SectionHeader overline="On the radar" title="Other subjects to watch" rule ruleColor={INK_MUTE} />
+              <div className="mt-3 space-y-2">
+                {otherRecs.map(rec => {
+                  const hex = subjectHex(rec.subject);
+                  return (
+                    <div
+                      key={rec.subject}
+                      className="px-4 py-3"
+                      style={{
+                        background: '#FFFFFF',
+                        border: `1px solid ${INK}14`,
+                        borderRadius: 12,
+                        boxShadow: '0 1px 0 rgba(31,27,23,0.03)',
+                      }}
+                    >
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="w-2.5 h-2.5 rounded-full shrink-0"
+                              style={{ background: hex, border: `1px solid ${INK}33` }} />
+                        <span className="font-serif text-[14px] font-semibold" style={{ color: INK }}>{rec.subject}</span>
+                        <span className="font-sans text-[11px]" style={{ color: INK_MUTE }}>{rec.concerns.join(' · ')}</span>
+                      </div>
+                      {rec.action && (
+                        <p className="font-sans text-[12px] mt-1.5 ml-4" style={{ color: INK_SOFT }}>{rec.action}</p>
+                      )}
+                      <ExaminerInsightsBlock
+                        rec={rec}
+                        isOpen={expandedGuidance === rec.subject}
+                        onToggle={() => setExpandedGuidance(expandedGuidance === rec.subject ? null : rec.subject)}
+                        accent={hex}
+                        compact
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+          )}
+
+          {/* ── Momentum / closest-to-target ── */}
+          {bestSubject && (
+            <section>
+              <SectionHeader overline="Momentum" title="Hold the line" rule ruleColor={STATUS_SOLID} />
+              <div className="mt-3">
+                <EditorialCard tone="soft" style={{ background: STATUS_SOLID_TINT }}>
+                  <div className="flex items-center gap-3">
+                    <SketchedLeaf size={28} color={STATUS_SOLID_DEEP} />
+                    <div className="flex-1">
+                      <p className="font-serif text-[15px] font-bold" style={{ color: STATUS_SOLID_DEEP }}>
+                        {bestSubject.surplus >= 0
+                          ? `Strongest: ${bestSubject.name} — above target`
+                          : `Closest to target: ${bestSubject.name}`}
+                      </p>
+                      <p className="font-sans text-[12px] mt-0.5" style={{ color: INK_SOFT }}>
+                        {bestSubject.surplus >= 0
+                          ? 'Protect this lead — keep doing what’s working.'
+                          : 'A small push here will tip you over your target.'}
+                      </p>
+                    </div>
+                    <CheckCircle size={18} style={{ color: STATUS_SOLID_DEEP }} />
+                  </div>
+                </EditorialCard>
+              </div>
+            </section>
           )}
         </>
       ) : (
-        <div className="text-center py-12 text-zinc-400 dark:text-zinc-500 space-y-3">
-          <Target size={36} className="mx-auto opacity-40" />
-          <p className="text-sm font-medium">No strategic data yet</p>
-          <div className="text-xs space-y-1">
-            <p>Add topics in the <strong>Coverage</strong> tab to track what you've studied</p>
-            <p>Log test results in the <strong>Trajectory</strong> tab to track your grades</p>
+        <EditorialCard tone="soft">
+          <div className="text-center py-8 space-y-3">
+            <Target size={36} style={{ color: ACCENT, opacity: 0.7 }} className="mx-auto" />
+            <p className="font-serif text-[16px] font-bold" style={{ color: INK }}>No strategic data yet</p>
+            <div className="font-sans text-[12px] space-y-1" style={{ color: INK_MUTE }}>
+              <p>Add topics in the <strong>Coverage</strong> tab to track what you've studied.</p>
+              <p>Log test results in the <strong>Trajectory</strong> tab to track your grades.</p>
+            </div>
           </div>
-        </div>
+        </EditorialCard>
       )}
+    </div>
+  );
+};
+
+// ── Examiner Insights — quieter accordion block ────────────
+
+const ExaminerInsightsBlock: React.FC<{
+  rec: Recommendation;
+  isOpen: boolean;
+  onToggle: () => void;
+  accent: string;
+  compact?: boolean;
+}> = ({ rec, isOpen, onToggle, accent, compact }) => {
+  if (!rec.guidance) return null;
+  return (
+    <div className={compact ? 'mt-2.5' : 'mt-3.5'}>
+      <button
+        onClick={onToggle}
+        className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-[11px] font-semibold transition-colors"
+        style={isOpen
+          ? { background: accent + '22', color: INK }
+          : { background: 'transparent', color: INK_SOFT, border: `1px solid ${INK}22` }}
+      >
+        <BookOpen size={12} />
+        Examiner insights
+        <ChevronDown size={11} className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+      </button>
+      <AnimatePresence>
+        {isOpen && (
+          <MotionDiv
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            className="overflow-hidden"
+          >
+            <div className="mt-3 pt-3 space-y-3" style={{ borderTop: `1px dashed ${INK}22` }}>
+              <div>
+                <Overline color={STATUS_SHAKY_DEEP}>Why students struggle here</Overline>
+                <ul className="space-y-1.5 mt-1.5">
+                  {rec.guidance.commonStruggles.map((s, si) => (
+                    <li key={si} className="flex items-start gap-2.5 font-sans text-[13px]" style={{ color: INK_SOFT }}>
+                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ background: STATUS_SHAKY_DEEP }} />
+                      {s}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <Overline color={STATUS_SOLID_DEEP}>What to do</Overline>
+                <ul className="space-y-1.5 mt-1.5">
+                  {rec.guidance.actions.map((a, ai) => (
+                    <li key={ai} className="flex items-start gap-2.5 font-sans text-[13px]" style={{ color: INK_SOFT }}>
+                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ background: STATUS_SOLID_DEEP }} />
+                      {a}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="flex items-start gap-2.5 p-3 rounded-lg"
+                   style={{ background: STATUS_SHAKY_TINT, border: `1px solid ${STATUS_SHAKY}33` }}>
+                <AlertTriangle size={13} style={{ color: STATUS_SHAKY_DEEP }} className="shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-sans text-[11px] font-bold uppercase tracking-[0.18em]" style={{ color: STATUS_SHAKY_DEEP }}>Exam trap</p>
+                  <p className="font-sans text-[13px] mt-0.5" style={{ color: INK_SOFT }}>{rec.guidance.examTrap}</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-2.5 p-3 rounded-lg"
+                   style={{ background: STATUS_SOLID_TINT, border: `1px solid ${STATUS_SOLID}33` }}>
+                <Shield size={13} style={{ color: STATUS_SOLID_DEEP }} className="shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-sans text-[11px] font-bold uppercase tracking-[0.18em]" style={{ color: STATUS_SOLID_DEEP }}>Mindset shift</p>
+                  <p className="font-sans text-[13px] mt-0.5" style={{ color: INK_SOFT }}>{rec.guidance.mindsetShift}</p>
+                </div>
+              </div>
+            </div>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
