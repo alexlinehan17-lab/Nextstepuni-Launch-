@@ -40,6 +40,9 @@ interface AuthContextValue {
   loadedData: AuthLoadedData;
   handleLoginSuccess: (user: SessionUser) => void;
   handleLogout: () => Promise<void>;
+  /** Called by App.tsx after the onboarding flow saves a subject profile, so
+   *  the redirect at App.tsx:252 doesn't fire again on the next render. */
+  markOnboardingComplete: () => void;
 }
 
 const defaultLoadedData: AuthLoadedData = {
@@ -66,6 +69,7 @@ const AuthContext = createContext<AuthContextValue>({
   loadedData: defaultLoadedData,
   handleLoginSuccess: () => {},
   handleLogout: async () => {},
+  markOnboardingComplete: () => {},
 });
 
 export const useAuth = () => useContext(AuthContext);
@@ -200,6 +204,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     await signOut(auth);
   }, []);
 
+  const markOnboardingComplete = useCallback(() => {
+    setLoadedData(prev => ({ ...prev, needsOnboarding: false }));
+  }, []);
+
   const value: AuthContextValue = {
     user,
     isLoadingAuth,
@@ -209,6 +217,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     loadedData,
     handleLoginSuccess,
     handleLogout,
+    markOnboardingComplete,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

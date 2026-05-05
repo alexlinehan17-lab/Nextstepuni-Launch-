@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { type ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ToolJumpCard } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useModuleResponses } from '../hooks/useModuleResponses';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
@@ -802,6 +802,12 @@ const PointsOptimizationModule: React.FC<{
               <MicroCommitment theme={theme}>
                 <p>Complete the Portfolio Optimizer with your real subjects and honest grade expectations. Screenshot the result. This is your 625 Blueprint — the gap between your projected total and 625 is exactly what you need to close between now and June.</p>
               </MicroCommitment>
+              <ToolJumpCard
+                toolId="cao-simulator"
+                title="Run your portfolio through the CAO Simulator"
+                description="Plug your projected grades into the CAO Simulator and see exactly how each subject moves your total. Test different what-ifs without doing the maths yourself."
+                ctaLabel="Open the CAO Simulator"
+              />
             </ReadingSection>
           )}
         </>

@@ -117,15 +117,12 @@ export interface AppRouterProps {
   gamification: {
     state: GamificationState;
     isLoaded: boolean;
-    rollBonusFlash: () => boolean;
     checkAndUnlockAchievements: () => Promise<AchievementDefinition[]>;
     updateWeeklyGoalProgress: (metric: 'sections' | 'sessions' | 'reflections', incrementBy?: number) => Promise<void>;
     reload: () => void;
   };
   currentToast: AchievementDefinition | null;
-  isBonusFlashToast: boolean;
   setCurrentToast: (toast: AchievementDefinition | null) => void;
-  setIsBonusFlashToast: (v: boolean) => void;
   setRankUpModal: (rank: AthleteRank | null) => void;
 
   // Computed data
@@ -167,12 +164,10 @@ export interface AppRouterProps {
   setChangeSubjectsOpen: (open: boolean) => void;
   setNorthStarEditOpen: (open: boolean) => void;
 
-  // Cosmetic unlocks
-  unlockedAvatarSeeds: string[];
+  // Cosmetic unlocks (only setters needed at this layer; values flow through SettingsContext)
   setUnlockedAvatarSeeds: (seeds: string[]) => void;
   unlockedThemes: string[];
   setUnlockedThemes: (themes: string[]) => void;
-  unlockedCardStyles: string[];
   setUnlockedCardStyles: (styles: string[]) => void;
 }
 
@@ -180,12 +175,12 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   const { showToast } = useToast();
   const nav = useNavigation();
   const { viewState, currentCategory, currentModuleId, cameFromJourney } = nav.state;
-  const { user, isLoadingAuth: _isLoadingAuth, authResolved: _authResolved, userResolved, handleLoginSuccess, handleLogout } = useAuth();
+  const { user, userResolved, handleLoginSuccess, handleLogout } = useAuth();
 
   const {
     studentProfile, userProgress, northStar, timetableCompletions,
     pointsData, streak, settings, updateSetting, gamification,
-    _currentToast, _isBonusFlashToast, _setCurrentToast, _setIsBonusFlashToast, setRankUpModal,
+    setRankUpModal,
     studentCourses, completedCount, smartRec, questState, claimQuestReward, reloadQuest,
     recommendation, strategyMastery, weeklyChallenge,
     dismissedGuides, handleDismissGuide,
@@ -194,9 +189,9 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     handleOnboardingComplete, handleOnboardingSkip,
     handleProgressUpdate,
     setSettingsOpen, setPassportOpen, setChangeSubjectsOpen, setNorthStarEditOpen,
-    _unlockedAvatarSeeds, setUnlockedAvatarSeeds,
+    setUnlockedAvatarSeeds,
     unlockedThemes, setUnlockedThemes,
-    _unlockedCardStyles, setUnlockedCardStyles,
+    setUnlockedCardStyles,
   } = props;
 
   // Navigation handlers from context

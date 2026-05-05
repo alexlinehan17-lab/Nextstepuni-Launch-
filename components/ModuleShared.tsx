@@ -6,8 +6,9 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { Zap, Quote, Sparkles } from 'lucide-react';
+import { Zap, Quote, Sparkles, ArrowRight } from 'lucide-react';
 import { type ModuleTheme } from '../types';
+import { useNavigation } from '../contexts/NavigationContext';
 
 /* ═══════════════════════════════════════════════════════
    Highlight — inline discovery tooltip
@@ -204,6 +205,84 @@ export const MicroCommitment = ({ children, _theme, northStarNudge }: MicroCommi
     </motion.div>
   </MotionDiv>
 );
+
+/* ═══════════════════════════════════════════════════════
+   ToolJumpCard — link from a module to the relevant tool
+   ═══════════════════════════════════════════════════════ */
+
+interface ToolJumpCardProps {
+  /** Tool ID — must match an Innovation Zone tool key
+   *  ('planner', 'war-room', 'cao-simulator', 'future-finder',
+   *   'syllabus-xray', 'comeback', 'journey', 'points-passport'). */
+  toolId: string;
+  /** Headline shown to the student, e.g. "Try this in the Spaced Repetition Timetable" */
+  title: string;
+  /** Short supporting line under the title. */
+  description: string;
+  /** Optional CTA label. Defaults to "Open tool". */
+  ctaLabel?: string;
+}
+
+export const ToolJumpCard: React.FC<ToolJumpCardProps> = ({ toolId, title, description, ctaLabel }) => {
+  const nav = useNavigation();
+  return (
+    <MotionDiv
+      initial={{ opacity: 0, y: 12 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-40px' }}
+      transition={{ duration: 0.5, ease: [0.25, 1, 0.5, 1] }}
+      className="my-14"
+    >
+      <button
+        type="button"
+        onClick={() => nav.navigateToInnovationZone(toolId)}
+        className="w-full text-left"
+        style={{
+          backgroundColor: '#FFFFFF',
+          border: '2px solid #1a1a1a',
+          borderRadius: 16,
+          padding: '20px 22px',
+          boxShadow: '4px 4px 0px 0px #1a1a1a',
+          transition: 'transform 120ms ease, box-shadow 120ms ease',
+        }}
+        onMouseEnter={(e) => {
+          (e.currentTarget as HTMLButtonElement).style.transform = 'translate(-2px, -2px)';
+          (e.currentTarget as HTMLButtonElement).style.boxShadow = '6px 6px 0px 0px #1a1a1a';
+        }}
+        onMouseLeave={(e) => {
+          (e.currentTarget as HTMLButtonElement).style.transform = 'translate(0, 0)';
+          (e.currentTarget as HTMLButtonElement).style.boxShadow = '4px 4px 0px 0px #1a1a1a';
+        }}
+      >
+        <div className="flex items-center gap-4">
+          <div className="flex-1 min-w-0">
+            <p className="text-[10px] font-bold uppercase tracking-[0.15em] mb-1.5" style={{ color: '#2A7D6F' }}>
+              Apply this · Tool
+            </p>
+            <h4 className="font-serif text-lg sm:text-xl font-semibold text-zinc-900 dark:text-white mb-1">
+              {title}
+            </h4>
+            <p className="text-[13px] sm:text-sm text-zinc-600 dark:text-zinc-400 leading-snug">
+              {description}
+            </p>
+          </div>
+          <div
+            className="shrink-0 w-11 h-11 rounded-full flex items-center justify-center"
+            style={{ backgroundColor: '#2A7D6F' }}
+          >
+            <ArrowRight size={18} style={{ color: '#fff' }} />
+          </div>
+        </div>
+        {ctaLabel && (
+          <div className="mt-3 inline-flex items-center gap-1 text-xs font-bold tracking-wide" style={{ color: '#2A7D6F' }}>
+            {ctaLabel}
+            <ArrowRight size={12} />
+          </div>
+        )}
+      </button>
+    </MotionDiv>
+  );
+};
 
 /* ═══════════════════════════════════════════════════════
    PersonalStory — intimate, warm founder quote

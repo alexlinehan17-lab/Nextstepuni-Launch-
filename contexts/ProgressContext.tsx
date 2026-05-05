@@ -5,11 +5,13 @@
 
 import React, { createContext, useContext, useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { db } from '../firebase';
-import { doc, getDoc } from 'firebase/firestore';
-import { type UserProgress, type NorthStar } from '../types';
+import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
+import { type UserProgress, type NorthStar, type TopicMasteryMap, type UnifiedMockResult } from '../types';
 import { type StudentSubjectProfile } from '../components/subjectData';
 import { computeStreak } from '../components/timetableAlgorithm';
 import { useAuth } from './AuthContext';
+import { type StudySessionRecord } from '../utils/strategyRegistry';
+import { type DebriefEntry } from '../components/StudyDebrief';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -62,8 +64,20 @@ interface ProgressContextValue {
   // True after progress data has been synced at least once from auth
   progressLoaded: boolean;
 
-  /** The full raw progress/{uid} doc. Hooks derive their fields from this
-   *  instead of making independent getDoc calls. */
+  // Typed accessors over the raw progress/{uid} doc. Hooks that read these
+  // shared fields should use these rather than the underlying doc shape so the
+  // schema can evolve without breaking every consumer.
+  studySessions: StudySessionRecord[];
+  studyDebriefs: DebriefEntry[];
+  topicMastery: TopicMasteryMap | undefined;
+  unifiedMockResults: UnifiedMockResult[];
+  questRewards: Record<string, string>;
+  teachBacksSeen: string[];
+
+  /** Escape hatch — only for hooks that own their own field on the progress
+   *  doc (useGamification, useIslandShop, useFlares, useWeeklyChallenge,
+   *  useTopicMastery, useMockResults). New code should use the typed
+   *  accessors above. */
   rawProgressDoc: Record<string, any>;
 
   /** Re-fetches the progress doc from Firestore and updates all derived state.
@@ -98,6 +112,10 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [progressLoaded, setProgressLoaded] = useState(false);
   const [rawProgressDoc, setRawProgressDoc] = useState<Record<string, any>>({});
   const [reloadVersion, setReloadVersion] = useState(0);
+  // Study sessions live in /progress/{uid}/sessions/{sessionId} subcollection
+  // (migrated from the old rawProgressDoc.studySessions array — see Schema
+  // notes). Loaded once on user-change and on reloadProgress().
+  const [sessionsFromSubcollection, setSessionsFromSubcollection] = useState<StudySessionRecord[]>([]);
 
   // Derive points from raw doc
   const pointsData: PointsData = useMemo(() => {
@@ -179,6 +197,37 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     return () => { cancelled = true; };
   }, [reloadVersion, user?.uid]);
 
+  // Load study sessions from the /progress/{uid}/sessions subcollection.
+  // Re-runs on user change and on reloadProgress() bumps.
+  useEffect(() => {
+    if (!user?.uid) {
+      setSessionsFromSubcollection([]);
+      return;
+    }
+    let cancelled = false;
+    getDocs(collection(db, 'progress', user.uid, 'sessions'))
+      .then(snap => {
+        if (cancelled) return;
+        const records = snap.docs.map(d => d.data() as StudySessionRecord);
+        setSessionsFromSubcollection(records);
+      })
+      .catch(err => {
+        console.error('Failed to load study sessions:', err);
+      });
+    return () => { cancelled = true; };
+  }, [user?.uid, reloadVersion]);
+
+  // Typed accessors derived from the raw doc — see the interface comment.
+  // studySessions is sourced from the /progress/{uid}/sessions subcollection
+  // (loaded by the effect above). The legacy rawProgressDoc.studySessions
+  // array is no longer written to and is ignored here.
+  const studySessions = sessionsFromSubcollection;
+  const studyDebriefs: DebriefEntry[] = rawProgressDoc.studyDebriefs ?? [];
+  const topicMastery: TopicMasteryMap | undefined = rawProgressDoc.topicMastery ?? undefined;
+  const unifiedMockResults: UnifiedMockResult[] = rawProgressDoc.unifiedMockResults ?? [];
+  const questRewards: Record<string, string> = rawProgressDoc.questRewards ?? {};
+  const teachBacksSeen: string[] = rawProgressDoc.teachBacksSeen ?? [];
+
   const value: ProgressContextValue = {
     userProgress,
     setUserProgress,
@@ -199,6 +248,12 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     dismissedGuides,
     setDismissedGuides,
     progressLoaded,
+    studySessions,
+    studyDebriefs,
+    topicMastery,
+    unifiedMockResults,
+    questRewards,
+    teachBacksSeen,
     rawProgressDoc,
     reloadProgress,
   };

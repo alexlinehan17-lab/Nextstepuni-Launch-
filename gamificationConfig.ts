@@ -16,15 +16,18 @@ export interface AthleteRank {
   colorHex: string;   // For inline styles
 }
 
+// Thresholds tuned so rank-ups feel earned: ~1 module/day for a keen
+// student should still take ~1 week to reach Beginner, and Legend should
+// sit beyond a full-catalogue completion (~7.5k pts from sections alone).
 export const ATHLETE_RANKS: AthleteRank[] = [
-  { id: 'newcomer',   title: 'Newcomer',   minPoints: 0,    icon: 'Footprints', color: 'teal-500',   colorHex: '#2A7D6F' },
-  { id: 'beginner',   title: 'Beginner',   minPoints: 100,  icon: 'Flame',      color: 'blue-500',   colorHex: '#4361EE' },
-  { id: 'consistent', title: 'Consistent', minPoints: 300,  icon: 'TrendingUp', color: 'emerald-500', colorHex: '#10b981' },
-  { id: 'dedicated',  title: 'Dedicated',  minPoints: 600,  icon: 'Target',     color: 'teal-500',   colorHex: '#14b8a6' },
-  { id: 'driven',     title: 'Driven',     minPoints: 1000, icon: 'Zap',        color: 'amber-500',  colorHex: '#f59e0b' },
-  { id: 'elite',      title: 'Elite',      minPoints: 1800, icon: 'Award',      color: 'purple-500', colorHex: '#7209B7' },
-  { id: 'master',     title: 'Master',     minPoints: 3000, icon: 'Crown',      color: 'orange-500', colorHex: '#f97316' },
-  { id: 'legend',     title: 'Legend',     minPoints: 5000, icon: 'Mountain',   color: 'rose-500',   colorHex: '#E94560' },
+  { id: 'newcomer',   title: 'Newcomer',   minPoints: 0,     icon: 'Footprints', color: 'teal-500',    colorHex: '#2A7D6F' },
+  { id: 'beginner',   title: 'Beginner',   minPoints: 400,   icon: 'Flame',      color: 'blue-500',    colorHex: '#4361EE' },
+  { id: 'consistent', title: 'Consistent', minPoints: 1200,  icon: 'TrendingUp', color: 'emerald-500', colorHex: '#10b981' },
+  { id: 'dedicated',  title: 'Dedicated',  minPoints: 2400,  icon: 'Target',     color: 'teal-500',    colorHex: '#14b8a6' },
+  { id: 'driven',     title: 'Driven',     minPoints: 4000,  icon: 'Zap',        color: 'amber-500',   colorHex: '#f59e0b' },
+  { id: 'elite',      title: 'Elite',      minPoints: 7200,  icon: 'Award',      color: 'purple-500',  colorHex: '#7209B7' },
+  { id: 'master',     title: 'Master',     minPoints: 12000, icon: 'Crown',      color: 'orange-500',  colorHex: '#f97316' },
+  { id: 'legend',     title: 'Legend',     minPoints: 20000, icon: 'Mountain',   color: 'rose-500',    colorHex: '#E94560' },
 ];
 
 export function getRankForPoints(totalPoints: number): AthleteRank {
@@ -244,6 +247,3 @@ export const MILESTONE_SURPRISES: MilestoneSurprise[] = [
   { threshold: 4000, label: 'Legend in the Making', bonusPoints: 150 },
 ];
 
-// ─── Variable Reward (Bonus Flash) ──────────────────────────────────────────
-
-export const BONUS_FLASH_CHANCE = 0.08; // 8% chance of 2x multiplier

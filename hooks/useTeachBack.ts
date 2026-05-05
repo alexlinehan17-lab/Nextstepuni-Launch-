@@ -37,7 +37,7 @@ function weightedPick(items: TeachBackEntry[]): TeachBackEntry {
 // ── Hook ───────────────────────────────────────────────────
 
 export function useTeachBack(uid?: string, school?: string) {
-  const { rawProgressDoc, progressLoaded } = useProgress();
+  const { teachBacksSeen, progressLoaded } = useProgress();
   const [teachBackToRead, setTeachBackToRead] = useState<TeachBackEntry | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const seenIdsRef = useRef<Set<string>>(new Set());
@@ -48,9 +48,8 @@ export function useTeachBack(uid?: string, school?: string) {
   // Load seen IDs from context
   useEffect(() => {
     if (!progressLoaded) return;
-    const seen: string[] = rawProgressDoc.teachBacksSeen || [];
-    seenIdsRef.current = new Set(seen);
-  }, [progressLoaded, rawProgressDoc]);
+    seenIdsRef.current = new Set(teachBacksSeen);
+  }, [progressLoaded, teachBacksSeen]);
 
   // Fetch a teach-back for a given subject (weighted by helpfulness)
   const fetchTeachBack = useCallback(async (subject: string) => {

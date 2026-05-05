@@ -4,7 +4,7 @@
  */
 
 import { useState, useCallback, useMemo, useRef, useEffect } from 'react';
-import { doc, setDoc, increment } from 'firebase/firestore';
+import { doc, increment, runTransaction } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
 import { type UserProgress, type TopicMasteryMap } from '../types';
@@ -73,15 +73,18 @@ export function useQuests(
   studentProfile: StudentSubjectProfile | null,
   timetableCompletions: Record<string, string[]> | undefined,
 ): { questState: QuestState | null; claimReward: () => Promise<void>; reload: () => void } {
-  const { rawProgressDoc, progressLoaded, reloadProgress } = useProgress();
+  const {
+    studySessions: sessions,
+    studyDebriefs: debriefs,
+    topicMastery,
+    unifiedMockResults: mockResults,
+    questRewards: firestoreRewards,
+    progressLoaded,
+    reloadProgress,
+  } = useProgress();
   const isMountedRef = useRef(true);
   useEffect(() => () => { isMountedRef.current = false; }, []);
 
-  const sessions: StudySessionRecord[] = rawProgressDoc.studySessions ?? [];
-  const debriefs: DebriefEntry[] = rawProgressDoc.studyDebriefs ?? [];
-  const topicMastery: TopicMasteryMap | undefined = rawProgressDoc.topicMastery ?? undefined;
-  const mockResults: any[] = rawProgressDoc.unifiedMockResults ?? [];
-  const firestoreRewards: Record<string, string> = rawProgressDoc.questRewards ?? {};
   const [localClaimedIds, setLocalClaimedIds] = useState<Record<string, string>>({});
   const questRewards = { ...firestoreRewards, ...localClaimedIds };
   const isLoaded = progressLoaded;
@@ -238,10 +241,20 @@ export function useQuests(
     const rewardPoints = questState.quest.rewardPoints;
     setLocalClaimedIds(prev => ({ ...prev, [questId]: new Date().toISOString() }));
     try {
-      await setDoc(doc(db, 'progress', uid), {
-        pointsData: { totalEarned: increment(rewardPoints) },
-        questRewards: { [questId]: new Date().toISOString() },
-      }, { merge: true });
+      // Transaction: read the questRewards map; bail if this questId is already
+      // claimed (covers the multi-tab race where two tabs both pass the optimistic
+      // gate). Firestore rules also reject overwrites, but failing fast here
+      // avoids a useless round-trip and a confusing rules error in the console.
+      await runTransaction(db, async (txn) => {
+        const ref = doc(db, 'progress', uid);
+        const snap = await txn.get(ref);
+        const existing = (snap.data()?.questRewards ?? {}) as Record<string, string>;
+        if (existing[questId]) return; // Already claimed in another tab
+        txn.set(ref, {
+          pointsData: { totalEarned: increment(rewardPoints) },
+          questRewards: { [questId]: new Date().toISOString() },
+        }, { merge: true });
+      });
     } catch (err) {
       console.error('Failed to claim quest reward:', err);
       // Roll back optimistic update

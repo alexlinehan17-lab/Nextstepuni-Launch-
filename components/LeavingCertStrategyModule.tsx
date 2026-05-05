@@ -9,7 +9,7 @@ import { MotionDiv } from './Motion';
 import { Calculator, Briefcase, Target, PenSquare, Eye, HeartPulse } from 'lucide-react';
 import { type ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid, ToolJumpCard } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useNorthStar } from '../hooks/useNorthStar';
@@ -481,6 +481,12 @@ const LeavingCertStrategyModule: React.FC<{ onBack: () => void; progress: Module
               <p>Start with the <Highlight description="When you sit down, take 30 seconds to breathe slowly and calm your nerves. Then scribble down key formulas, quotes, or facts onto your rough work page before you forget them. This frees up your brain to focus on answering." theme={theme}>"First 5 Minutes" trick</Highlight> -- breathe, then brain-dump your key facts onto rough paper. Stick to a <Highlight description="Give each question a set amount of time and move on when it's up, no matter what. The first few marks on the next question are always easier to pick up than squeezing out the last marks on the current one." theme={theme}>strict timing plan</Highlight> -- when time's up on a question, move on. The first marks on the next question are always easier to get than the last marks on the one you're stuck on.</p>
               </>)}
               <ExamDayTimelineBuilder />
+              <ToolJumpCard
+                toolId="cao-simulator"
+                title="See where your points sit right now"
+                description="The CAO Simulator turns your projected grades into a points total and tells you which course offers you'd land. Run the numbers before you commit to a strategy."
+                ctaLabel="Open the CAO Simulator"
+              />
             </ReadingSection>
           )}
         </>

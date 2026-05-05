@@ -8,7 +8,7 @@ import { motion, Reorder } from 'framer-motion';
 import { CheckCircle2, History, DraftingCompass, ClipboardList, Layers, BrainCircuit, Shield } from 'lucide-react';
 import { type ModuleProgress } from '../types';
 import { skyTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, PersonalStory } from './ModuleShared';
+import { Highlight, ReadingSection, PersonalStory, ToolJumpCard } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
@@ -381,6 +381,12 @@ const ReverseEngineeringModule: React.FC<{ onBack: () => void; progress: ModuleP
                 </>
               )}
               <ImplementationChecklist />
+              <ToolJumpCard
+                toolId="war-room"
+                title="Map your syllabus in the War Room"
+                description="The War Room is the strategic version of this — break each subject into topics, set confidence levels, and let it tell you where to spend the next hour."
+                ctaLabel="Open the War Room"
+              />
             </ReadingSection>
           )}
         </>

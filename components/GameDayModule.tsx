@@ -9,7 +9,7 @@ import { MotionDiv } from './Motion';
 import { Target, Brain, SlidersHorizontal, Shield, Moon, Utensils, Zap, Wind, Leaf, Droplet, Coffee, X } from 'lucide-react';
 import { type ModuleProgress } from '../types';
 import { amberTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ToolJumpCard } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useNorthStar } from '../hooks/useNorthStar';
@@ -593,6 +593,12 @@ const GameDayModule: React.FC<{ onBack: () => void; progress: ModuleProgress; on
               <MicroCommitment theme={theme}>
                 <p>Go to your calendar (phone, wall, whatever you have). Find the date one month before your first exam. Set a reminder: "Start my game day prep." From that point on, you're not just studying -- you're training.</p>
               </MicroCommitment>
+              <ToolJumpCard
+                toolId="war-room"
+                title="Lock in your final-stretch plan"
+                description="The War Room maps your remaining time across subjects and tells you what to focus on right up to game day. The strategic side of what you just read."
+                ctaLabel="Open the War Room"
+              />
             </ReadingSection>
           )}
         </>

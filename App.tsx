@@ -113,8 +113,7 @@ const App: React.FC = () => {
   const nav = useNavigation();
   const { viewState, currentCategory, currentModuleId: _currentModuleId, cameFromJourney: _cameFromJourney } = nav.state;
   const [journeyResult, setJourneyResult] = useState<{ endingId: string; finalStats?: any } | null>(null);
-  const { user, isLoadingAuth, authResolved, needsOnboarding: _authNeedsOnboarding, loadedData, handleLoginSuccess: _handleLoginSuccess, handleLogout } = useAuth();
-  const [needsOnboarding, setNeedsOnboarding] = useState(false);
+  const { user, authResolved, needsOnboarding, handleLogout, markOnboardingComplete } = useAuth();
 
   // Progress state from context
   const progress = useProgress();
@@ -122,7 +121,7 @@ const App: React.FC = () => {
     userProgress, setUserProgress,
     studentProfile, setStudentProfile,
     northStar, setNorthStar,
-    timetableCompletions, setTimetableCompletions: _setTimetableCompletions,
+    timetableCompletions,
     pointsData, streak,
     unlockedAvatarSeeds, setUnlockedAvatarSeeds,
     unlockedThemes, setUnlockedThemes,
@@ -130,13 +129,6 @@ const App: React.FC = () => {
     dismissedGuides, setDismissedGuides,
     progressLoaded,
   } = progress;
-
-  // Sync needsOnboarding from auth
-  useEffect(() => {
-    if (!isLoadingAuth) {
-      setNeedsOnboarding(loadedData.needsOnboarding);
-    }
-  }, [isLoadingAuth, loadedData.needsOnboarding]);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [passportOpen, setPassportOpen] = useState(false);
   const [northStarEditOpen, setNorthStarEditOpen] = useState(false);
@@ -155,9 +147,8 @@ const App: React.FC = () => {
     streak,
     northStar,
   });
-  const [toastQueue, setToastQueue] = useState<(AchievementDefinition | 'bonus-flash')[]>([]);
+  const [toastQueue, setToastQueue] = useState<AchievementDefinition[]>([]);
   const [currentToast, setCurrentToast] = useState<AchievementDefinition | null>(null);
-  const [isBonusFlashToast, setIsBonusFlashToast] = useState(false);
   const [rankUpModal, setRankUpModal] = useState<AthleteRank | null>(null);
   const prevRankRef = useRef<string | null>(null);
   const [streakCelebration, setStreakCelebration] = useState<number | null>(null);
@@ -165,16 +156,12 @@ const App: React.FC = () => {
 
   // Process toast queue
   useEffect(() => {
-    if (currentToast || isBonusFlashToast) return;
+    if (currentToast) return;
     if (toastQueue.length === 0) return;
     const next = toastQueue[0];
     setToastQueue(q => q.slice(1));
-    if (next === 'bonus-flash') {
-      setIsBonusFlashToast(true);
-    } else {
-      setCurrentToast(next);
-    }
-  }, [toastQueue, currentToast, isBonusFlashToast]);
+    setCurrentToast(next);
+  }, [toastQueue, currentToast]);
 
   // Grant 3 grass tiles on rank-up
   const grantRankUpTiles = async (uid: string) => {
@@ -277,7 +264,6 @@ const App: React.FC = () => {
 
       // Compute points to award (pure computation, no Firestore reads)
       let pointsToAward = 0;
-      let isBonus = false;
       if (newSection > prevSection) {
         const sectionsUnlocked = newSection - prevSection;
         pointsToAward = sectionsUnlocked * POINTS.SECTION_COMPLETE;
@@ -295,11 +281,6 @@ const App: React.FC = () => {
             }
           }
         }
-
-        if (pointsToAward > 0) {
-          isBonus = gamification.rollBonusFlash();
-          if (isBonus) pointsToAward *= 2;
-        }
       }
 
       // Save progress + award points atomically via setDoc merge.
@@ -312,10 +293,6 @@ const App: React.FC = () => {
       await setDoc(progressDocRef, updates, { merge: true });
 
       pointsData.reload();
-
-      if (isBonus) {
-        setToastQueue(q => [...q, 'bonus-flash']);
-      }
 
       if (newSection > prevSection) {
         const sectionsUnlocked = newSection - prevSection;
@@ -394,7 +371,7 @@ const App: React.FC = () => {
       showToast('Couldn\'t save — check your connection', 'error');
     }
     setStudentProfile(profile);
-    setNeedsOnboarding(false);
+    markOnboardingComplete();
     nav.navigateToTree();
   };
 
@@ -411,7 +388,7 @@ const App: React.FC = () => {
   };
 
   const handleOnboardingSkip = () => {
-    setNeedsOnboarding(false);
+    markOnboardingComplete();
     nav.navigateToTree();
   };
 
@@ -450,8 +427,8 @@ const App: React.FC = () => {
   const routerProps = {
     studentProfile, userProgress, northStar, timetableCompletions,
     pointsData, streak, settings, updateSetting,
-    gamification, currentToast, isBonusFlashToast,
-    setCurrentToast, setIsBonusFlashToast, setRankUpModal,
+    gamification, currentToast,
+    setCurrentToast, setRankUpModal,
     studentCourses, completedCount, smartRec, questState,
     claimQuestReward, reloadQuest,
     recommendation, strategyMastery, weeklyChallenge,
@@ -461,9 +438,9 @@ const App: React.FC = () => {
     handleOnboardingComplete, handleOnboardingSkip,
     handleProgressUpdate,
     setSettingsOpen, setPassportOpen, setChangeSubjectsOpen, setNorthStarEditOpen,
-    unlockedAvatarSeeds, setUnlockedAvatarSeeds,
+    setUnlockedAvatarSeeds,
     unlockedThemes, setUnlockedThemes,
-    unlockedCardStyles, setUnlockedCardStyles,
+    setUnlockedCardStyles,
   };
 
   return (
@@ -484,8 +461,7 @@ const App: React.FC = () => {
               )}
               <AchievementToast
                 achievement={currentToast}
-                isBonusFlash={isBonusFlashToast}
-                onDismiss={() => { setCurrentToast(null); setIsBonusFlashToast(false); }}
+                onDismiss={() => setCurrentToast(null)}
               />
             </div>
             <NotificationBell uid={user.uid} onUnreadCountChange={setUnreadNotificationCount} />
@@ -505,8 +481,7 @@ const App: React.FC = () => {
           />
           <AchievementToast
             achievement={currentToast}
-            isBonusFlash={isBonusFlashToast}
-            onDismiss={() => { setCurrentToast(null); setIsBonusFlashToast(false); }}
+            onDismiss={() => setCurrentToast(null)}
           />
         </div>
       )}

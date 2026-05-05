@@ -252,9 +252,7 @@ export function useRecommendation(
   studentProfile: StudentSubjectProfile | null,
   timetableCompletions: Record<string, string[]> | undefined,
 ): { recommendation: SmartRecommendation | null } {
-  const { rawProgressDoc, progressLoaded } = useProgress();
-  const sessions: StudySessionRecord[] = rawProgressDoc.studySessions ?? [];
-  const topicMastery: TopicMasteryMap | undefined = rawProgressDoc.topicMastery ?? undefined;
+  const { studySessions: sessions, topicMastery, progressLoaded } = useProgress();
   const isLoaded = progressLoaded;
 
   const recommendation = useMemo(() => {

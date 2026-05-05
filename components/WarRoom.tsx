@@ -221,49 +221,20 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
         minHeight: '100vh',
       }}
     >
-      {/* War Room target crest — anchored top-right of the page, with painted blob behind */}
-      <div
+      {/* War Room target crest — anchored top-right of the page */}
+      <img
+        src="/assets/war-room-crest.png"
+        alt=""
         aria-hidden
         className="absolute z-10"
         style={{
           top: 'clamp(16px, 2.5vw, 32px)',
           right: 'clamp(16px, 3vw, 40px)',
-          width: 'clamp(96px, 11vw, 144px)',
-          height: 'clamp(96px, 11vw, 144px)',
+          width: 'clamp(75px, 8.6vw, 112px)',
+          height: 'clamp(75px, 8.6vw, 112px)',
+          objectFit: 'contain',
         }}
-      >
-        <svg
-          viewBox="0 0 100 100"
-          aria-hidden
-          preserveAspectRatio="xMidYMid meet"
-          style={{
-            position: 'absolute',
-            inset: 0,
-            width: '100%',
-            height: '100%',
-          }}
-        >
-          <path
-            d="M 6 22 Q -2 50 10 78 Q 26 98 56 94 Q 90 88 96 56 Q 100 24 80 6 Q 56 -6 28 6 Q 10 14 6 22 Z"
-            fill="#F1B7AB"
-            opacity="0.85"
-          />
-        </svg>
-        <img
-          src="/assets/war-room-crest.png"
-          alt=""
-          aria-hidden
-          style={{
-            position: 'absolute',
-            left: '50%',
-            top: '50%',
-            transform: 'translate(-50%, -50%)',
-            width: '78%',
-            height: '78%',
-            objectFit: 'contain',
-          }}
-        />
-      </div>
+      />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-8 pt-10 sm:pt-14 pb-16">
         {/* ── Centered editorial hero ── */}

@@ -21,7 +21,6 @@ import {
   getNextRank,
   getRankProgress,
   getWeekStartDate,
-  BONUS_FLASH_CHANCE,
 } from '../gamificationConfig';
 import { ACHIEVEMENTS } from '../achievementData';
 import { ALL_COURSES } from '../courseData';
@@ -41,7 +40,6 @@ interface UseGamificationReturn {
   checkAndUnlockAchievements: () => Promise<AchievementDefinition[]>;
   updateWeeklyGoalProgress: (metric: 'sections' | 'sessions' | 'reflections', incrementBy?: number) => Promise<void>;
   recordPersonalBest: (type: keyof PersonalBests, value: number) => Promise<void>;
-  rollBonusFlash: () => boolean;
   reload: () => void;
 }
 
@@ -340,11 +338,6 @@ export function useGamification({
     }
   }, [gamificationData, saveGamificationData]);
 
-  // Roll for bonus flash (8% chance)
-  const rollBonusFlash = useCallback((): boolean => {
-    return Math.random() < BONUS_FLASH_CHANCE;
-  }, []);
-
   const reload = useCallback(() => {
     setVersion(v => v + 1);
   }, []);
@@ -355,7 +348,6 @@ export function useGamification({
     checkAndUnlockAchievements,
     updateWeeklyGoalProgress,
     recordPersonalBest,
-    rollBonusFlash,
     reload,
   };
 }

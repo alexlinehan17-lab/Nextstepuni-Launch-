@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { doc, updateDoc, increment, arrayUnion } from 'firebase/firestore';
+import { collection, doc, increment, setDoc, updateDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
 import { type UserProgress } from '../types';
@@ -39,7 +39,7 @@ export function useStudySession(
   userProgress: UserProgress,
   allCourses: CourseData[],
 ) {
-  const { rawProgressDoc, progressLoaded } = useProgress();
+  const { studySessions, progressLoaded } = useProgress();
 
   const [phase, setPhase] = useState<SessionPhase>('idle');
   const [subject, setSubject] = useState('');
@@ -66,10 +66,9 @@ export function useStudySession(
 
   useEffect(() => {
     if (!progressLoaded) return;
-    const sessions: StudySessionRecord[] = rawProgressDoc.studySessions || [];
     const today = new Date().toISOString().slice(0, 10);
-    setTodaySessions(sessions.filter(s => s.date === today));
-  }, [progressLoaded, rawProgressDoc]);
+    setTodaySessions(studySessions.filter(s => s.date === today));
+  }, [progressLoaded, studySessions]);
 
   // ── Build shuffled prompt queue from completed strategies ──
 
@@ -282,18 +281,22 @@ export function useStudySession(
     // Update local state immediately (optimistic)
     setTodaySessions(prev => [...prev, record]);
 
-    // Fire-and-forget Firestore write — queues offline via persistence
+    // Fire-and-forget Firestore writes — queues offline via persistence.
+    // Each session goes in its own subcollection doc so the parent /progress/{uid}
+    // document doesn't grow unboundedly on heavy users.
     try {
-      const progressDocRef = doc(db, 'progress', uid);
-      const updates: Record<string, any> = {
-        studySessions: arrayUnion(record),
-      };
-      if (totalPoints > 0) {
-        updates['pointsData.totalEarned'] = increment(totalPoints);
-      }
-      updateDoc(progressDocRef, updates).catch(err => {
+      const sessionRef = doc(collection(db, 'progress', uid, 'sessions'), record.id);
+      setDoc(sessionRef, record).catch(err => {
         console.error('Failed to save study session:', err);
       });
+      if (totalPoints > 0) {
+        const progressDocRef = doc(db, 'progress', uid);
+        updateDoc(progressDocRef, {
+          'pointsData.totalEarned': increment(totalPoints),
+        }).catch(err => {
+          console.error('Failed to award session points:', err);
+        });
+      }
     } catch (err) {
       console.error('Failed to save study session:', err);
     }

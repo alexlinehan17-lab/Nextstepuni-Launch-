@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { type ModuleProgress } from '../types';
 import { indigoTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, ToolJumpCard } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
@@ -218,6 +218,12 @@ const MasteringActiveRecallModule: React.FC<{ onBack: () => void; progress: Modu
               <MicroCommitment theme={theme}>
                 <p>For your next study session, try the 20/80 rule. Spend 20% of your time consuming information (reading, watching) and 80% of your time actively recalling it (self-quizzing, explaining it out loud).</p>
               </MicroCommitment>
+              <ToolJumpCard
+                toolId="syllabus-xray"
+                title="See where to test yourself first"
+                description="Syllabus X-Ray shows the exact topics most likely to come up. Pick a shaky one and run an active recall session against it now."
+                ctaLabel="Open Syllabus X-Ray"
+              />
             </ReadingSection>
           )}
         </>

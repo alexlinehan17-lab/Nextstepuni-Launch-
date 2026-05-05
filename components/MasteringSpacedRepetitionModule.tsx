@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { type ModuleProgress } from '../types';
 import { skyTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, ToolJumpCard } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
@@ -764,6 +764,12 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
               <MicroCommitment theme={theme}>
                 <p>Pick one subject you have a test for in the next two weeks. Open your calendar and schedule two short review sessions for it between now and then, using the rule of thumb above.</p>
               </MicroCommitment>
+              <ToolJumpCard
+                toolId="planner"
+                title="Build your spacing schedule in the Planner"
+                description="Drop your subjects in and the Planner lays out the Day 1 / Day 2-3 / Day 7 reviews for you, on the dates that match your timetable."
+                ctaLabel="Open the Planner"
+              />
             </ReadingSection>
           )}
         </>

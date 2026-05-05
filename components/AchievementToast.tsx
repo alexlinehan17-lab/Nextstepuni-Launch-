@@ -24,26 +24,25 @@ const ICON_MAP: Record<string, React.ElementType> = {
 interface AchievementToastProps {
   achievement: AchievementDefinition | null;
   onDismiss: () => void;
-  isBonusFlash?: boolean;
 }
 
-const AchievementToast: React.FC<AchievementToastProps> = ({ achievement, onDismiss, isBonusFlash }) => {
+const AchievementToast: React.FC<AchievementToastProps> = ({ achievement, onDismiss }) => {
   // Use ref for onDismiss to avoid resetting the timer on every render
   const onDismissRef = useRef(onDismiss);
   onDismissRef.current = onDismiss;
 
-  const isVisible = achievement !== null || isBonusFlash;
+  const isVisible = achievement !== null;
 
   // Auto-dismiss after 3 seconds — only re-triggers when visibility actually changes
   useEffect(() => {
     if (!isVisible) return;
     const timer = setTimeout(() => onDismissRef.current(), 3000);
     return () => clearTimeout(timer);
-  }, [isVisible, achievement?.id, isBonusFlash]);
+  }, [isVisible, achievement?.id]);
 
   return (
     <AnimatePresence>
-      {isVisible && (
+      {achievement && (
         <MotionDiv
           initial={{ opacity: 0, y: -6, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -52,23 +51,16 @@ const AchievementToast: React.FC<AchievementToastProps> = ({ achievement, onDism
           onClick={onDismiss}
           className="mt-2 cursor-pointer w-full"
         >
-          {isBonusFlash && !achievement ? (
-            <div className="flex items-center justify-center gap-2 px-3.5 py-2 rounded-full bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700/40 shadow-sm">
-              <Zap size={14} className="text-amber-500 shrink-0" />
-              <span className="text-xs font-bold text-amber-600 dark:text-amber-300 whitespace-nowrap">2x BONUS</span>
-            </div>
-          ) : achievement ? (
-            <div className="flex items-center justify-center gap-2 px-3.5 py-2 rounded-full bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700/40 shadow-sm">
-              {(() => {
-                const Icon = ICON_MAP[achievement.icon] || Trophy;
-                return <Icon size={14} className="text-purple-500 dark:text-purple-400 shrink-0" />;
-              })()}
-              <span className="text-xs font-bold text-purple-700 dark:text-purple-300 truncate max-w-[140px]">{achievement.title}</span>
-              {achievement.bonusPoints > 0 && (
-                <span className="text-[10px] font-bold text-amber-500 whitespace-nowrap">+{achievement.bonusPoints}</span>
-              )}
-            </div>
-          ) : null}
+          <div className="flex items-center justify-center gap-2 px-3.5 py-2 rounded-full bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700/40 shadow-sm">
+            {(() => {
+              const Icon = ICON_MAP[achievement.icon] || Trophy;
+              return <Icon size={14} className="text-purple-500 dark:text-purple-400 shrink-0" />;
+            })()}
+            <span className="text-xs font-bold text-purple-700 dark:text-purple-300 truncate max-w-[140px]">{achievement.title}</span>
+            {achievement.bonusPoints > 0 && (
+              <span className="text-[10px] font-bold text-amber-500 whitespace-nowrap">+{achievement.bonusPoints}</span>
+            )}
+          </div>
         </MotionDiv>
       )}
     </AnimatePresence>

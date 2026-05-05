@@ -9,7 +9,7 @@ import { MotionDiv } from './Motion';
 import { Eye, Layers, FileSearch, Key, Shield, PenTool, Target } from 'lucide-react';
 import { type ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid, GlossaryGrid } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid, GlossaryGrid, ToolJumpCard } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
@@ -645,6 +645,12 @@ const MarkingSchemeDecoderModule: React.FC<{ onBack: () => void; progress: Modul
                 <p>Pick your 3 most important subjects. Download each marking scheme from <strong>examinations.ie</strong>. For each subject, find one question type where you are losing marks to technique, not knowledge. Write down what you will do differently.</p>
               </MicroCommitment>
               <p className="mt-8 text-center font-serif text-lg font-semibold text-zinc-800 dark:text-white">You now know something most students never learn: the examiner is on your side. The marking scheme is their way of telling you exactly what they want. Give it to them.</p>
+              <ToolJumpCard
+                toolId="syllabus-xray"
+                title="See where the marks actually live"
+                description="Syllabus X-Ray breaks each paper into question types and tells you which ones recur every year. Use it to choose what to practise — with the marking scheme open."
+                ctaLabel="Open Syllabus X-Ray"
+              />
             </ReadingSection>
           )}
         </>

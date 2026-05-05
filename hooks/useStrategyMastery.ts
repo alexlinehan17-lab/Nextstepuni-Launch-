@@ -16,7 +16,7 @@ export function useStrategyMastery(
   userProgress: UserProgress,
   allCourses: CourseData[],
 ): { masteryMap: StrategyMasteryMap; isLoaded: boolean; recompute: () => Promise<void> } {
-  const { rawProgressDoc, progressLoaded } = useProgress();
+  const { studySessions, progressLoaded } = useProgress();
   const [masteryMap, setMasteryMap] = useState<StrategyMasteryMap>({});
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -97,7 +97,7 @@ export function useStrategyMastery(
   useEffect(() => {
     if (!uid) { setMasteryMap({}); setIsLoaded(true); return; }
     if (!progressLoaded) return;
-    computeAndPersist(rawProgressDoc.studySessions || []);
+    computeAndPersist(studySessions);
   }, [uid, progressLoaded]);
 
   // Explicit recompute: re-reads from Firestore for fresh data

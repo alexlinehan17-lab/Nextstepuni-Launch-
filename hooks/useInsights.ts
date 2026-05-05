@@ -589,9 +589,7 @@ export function useInsights(
   streak: StreakData,
   strategyMastery: StrategyMasteryMap,
 ): { insights: Insight[]; isLoaded: boolean } {
-  const { rawProgressDoc, progressLoaded } = useProgress();
-  const sessions: StudySessionRecord[] = rawProgressDoc.studySessions ?? [];
-  const debriefs: DebriefEntry[] = rawProgressDoc.studyDebriefs ?? [];
+  const { studySessions: sessions, studyDebriefs: debriefs, progressLoaded } = useProgress();
   const isLoaded = progressLoaded;
 
   const insights = useMemo(() => {

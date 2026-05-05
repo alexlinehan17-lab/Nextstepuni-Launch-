@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { type ModuleProgress } from '../types';
 import { roseTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ToolJumpCard } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useModuleResponses } from '../hooks/useModuleResponses';
@@ -361,6 +361,12 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
               <MicroCommitment theme={theme}>
                 <p>Pick one phase. Just one. Commit to trying it for one week. You're not just studying -- you're building something that matters to you.</p>
               </MicroCommitment>
+              <ToolJumpCard
+                toolId="future-finder"
+                title="Find courses that fit who you are"
+                description="The Future Finder turns your interests, work style, and points target into a shortlist of CAO courses, PLCs, and apprenticeships. Concrete next steps for the goal you're studying for."
+                ctaLabel="Open the Future Finder"
+              />
             </ReadingSection>
           )}
         </>

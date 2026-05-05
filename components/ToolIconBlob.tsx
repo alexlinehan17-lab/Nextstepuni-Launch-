@@ -24,7 +24,8 @@ export type ToolIconKey =
   | 'comeback'
   | 'future-finder'
   | 'syllabus-xray'
-  | 'points-passport';
+  | 'points-passport'
+  | 'exam-strategiser';
 
 interface ToolIconConfig {
   blob: string;
@@ -82,6 +83,12 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     blob: '#DDC9A4',
     iconPath: '/assets/tools/points-passport.png',
     blobPath: 'M 8 28 Q 4 54 12 82 Q 28 100 56 94 Q 88 90 96 60 Q 100 30 84 12 Q 60 -4 32 6 Q 14 14 8 28 Z',
+    iconScale: 1.0,
+  },
+  'exam-strategiser': {
+    blob: '#B5D4CC',
+    iconPath: '/assets/tools/exam-strategiser.png',
+    blobPath: 'M 6 24 Q 2 52 12 80 Q 28 98 56 94 Q 90 90 96 58 Q 100 26 82 8 Q 58 -4 30 6 Q 12 14 6 24 Z',
     iconScale: 1.0,
   },
 };
