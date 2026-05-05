@@ -4,6 +4,7 @@
  *
  * Leaving Cert English exam questions for the Exam Strategiser.
  * 2025 Paper 1 (Higher Level), theme: Perspectives.
+ * 2024 Paper 1 (Higher Level), theme: Connections.
  */
 
 import { type ExamQuestion } from '../../types/examStrategiser';
@@ -335,5 +336,340 @@ export const englishQuestions: ExamQuestion[] = [
       'Caricature opponents — the privileged opponent should feel real, not cartoon villain',
     ],
     markScheme: 'P 30 / C 30 / L 30 / M 10. P: short story with plucky chancer challenging privileged opponent, effective use of narrative shape, setting, plot, characterisation, dialogue, tension, narrative voice, resolution. C: shaped, developed, sustained. L: quality and control. M: accuracy.',
+  },
+
+  // ────────────────────────────────────────────────────────────────────
+  // 2024 Paper 1 (Higher Level) — theme: Connections
+  // Source: SEC paper + marking scheme.
+  // ────────────────────────────────────────────────────────────────────
+
+  {
+    id: 'english-2024-p1-text1-qa-i',
+    subject: 'english',
+    year: 2024,
+    paper: 'Paper 1',
+    section: "Section I — Comprehending — Text 1 (Family Connections and the Natural World — Fintan O'Toole) Question A",
+    questionNumber: '(i)',
+    level: 'higher',
+    marks: 15,
+    totalPaperMarks: 200,
+    totalPaperMinutes: 170,
+    commandWords: ['What does the writer reveal'],
+    questionText: [
+      {
+        type: 'paragraph',
+        content: [
+          { text: 'What, in your opinion, ' },
+          { text: 'does the writer reveal', annotation: { type: 'command', note: '"Reveal" = the question is comprehension-of-text plus inference. Not asking for your views on family — asking what the writer SHOWS US through the article. Anchor every point in something specific in the passage.' } },
+          { text: ' about ' },
+          { text: 'the nature of family relationships', annotation: { type: 'keyword', note: 'Anchor concept. Each of your three points should be a different facet of "family relationships" the writer reveals — not three variations on "family is important".' } },
+          { text: ' in TEXT 1? ' },
+          { text: 'Make three points', annotation: { type: 'keyword', note: "THREE is enforced. Two points won't hit the mark band. Four points dilute. Make three discrete, well-developed points — not overlapping rephrasings." } },
+          { text: ', ' },
+          { text: 'supporting your response with reference to the text', annotation: { type: 'trap', note: 'Marking scheme: "Responses should be supported with reference to Text 1." Pure personal views with no textual anchor caps you in the lower bands. Quote or paraphrase a specific moment for each of your three points.' } },
+          { text: '. ' },
+          { text: '(15)', annotation: { type: 'marks-allocation', note: 'Marked ex 15 against the criteria (P/C/L/M). H1 band: 15-14. H4 (mid-band): 11. Indicative material: generational differences; genetic/environmental/historical connections; values/beliefs/interests shaping relationships; memories and bonds; the power of memory.' } },
+        ],
+      },
+    ],
+    predictPrompts: [
+      {
+        id: 'q1ai-three',
+        type: 'multiple-choice',
+        prompt: 'How many points does this question want?',
+        options: ['Two', 'Three', 'Four', 'As many as you can think of'],
+        correctAnswer: 'Three',
+      },
+      {
+        id: 'q1ai-where',
+        type: 'multiple-choice',
+        prompt: 'Where must your evidence come from?',
+        options: ['Your own family experience', 'The text only', 'Other texts on the paper', 'A mix is fine but each point needs textual reference'],
+        correctAnswer: 'A mix is fine but each point needs textual reference',
+      },
+      {
+        id: 'q1ai-moment',
+        type: 'short-text',
+        prompt: 'Name one specific moment in the text that reveals something about family relationships.',
+        hint: 'The waxwing tattoo, the bus trip to Ballsbridge, the pallid swift in the museum, the four-year-old grandson…',
+      },
+    ],
+    topAnswerIncludes: [
+      'POINT 1 — Generational connection: the waxwing tattoo links three generations (grandfather → father → son → grandson). Family relationships transmit memory across time, even when individual members have died.',
+      'POINT 2 — Family relationships are built through shared experience: the writer\'s father took him on the bus to Ballsbridge to see waxwings — "the sharing of this pleasure with us was a gift of time and love." Time spent together becomes the substance of the bond.',
+      'POINT 3 — Family identity is shaped by inherited interests/values: the writer\'s lifelong interest in birds is a "genetic memory with wings" — the father\'s passion has been transmitted, not by genetics literally, but by formation of attachment to what the parent loved.',
+      'POINT 4 (alternative) — Tension between generations: the opening paragraph notes that parents of the writer\'s age "don\'t like the idea of their children getting tattoos" — family relationships involve push-pull, ego, the desire that children remain "spotless".',
+      'Each point quoted or paraphrased with a specific reference to the text (the tattoo, the swift, the bus trip, the grandson\'s indifference to the swift but not to the giant elks).',
+      'Three points that are DIFFERENT facets — generational transmission, shared experience, inherited values — not three variations on "family is loving".',
+    ],
+    commonTraps: [
+      'Personal opinions about family with no textual anchor — caps in the lower bands. Marking scheme: "Responses should be supported with reference to Text 1."',
+      'Two points (or three points that overlap) — caps you below H1.',
+      'Generic "family is important" without naming what specifically the writer reveals.',
+      'Narrating the article instead of identifying what it REVEALS — students sometimes paraphrase the whole piece and forget to surface the underlying insight.',
+      'Confusing this with A(ii) — A(i) is anchored in what the writer reveals; A(ii) is your personal views.',
+    ],
+  },
+
+  {
+    id: 'english-2024-p1-text1-qa-ii',
+    subject: 'english',
+    year: 2024,
+    paper: 'Paper 1',
+    section: "Section I — Comprehending — Text 1 (Family Connections and the Natural World — Fintan O'Toole) Question A",
+    questionNumber: '(ii)',
+    level: 'higher',
+    marks: 15,
+    totalPaperMarks: 200,
+    totalPaperMinutes: 170,
+    commandWords: ['Why do you think', 'Develop three points'],
+    questionText: [
+      {
+        type: 'paragraph',
+        content: [
+          { text: "The writer in TEXT 1 tells us that some parents don't like the idea of their children getting tattoos. " },
+          { text: 'Why do you think', annotation: { type: 'command', note: 'PERSONAL VIEWS task — not comprehension. Marking scheme: "Candidates may draw deductions from the text and/or from their own views and experience." This is the structural opposite of A(i). A(i) wants what the writer reveals; A(ii) wants what YOU think.' } },
+          { text: " that some parents don't like the idea of their children getting tattoos? " },
+          { text: 'Develop three points', annotation: { type: 'keyword', note: "\"Develop\" is the load-bearing word. Listing three reasons in single sentences won't cut it — each point needs to be EXTENDED. Reasoning, example, consequence, contrast. A developed point is a paragraph, not a sentence." } },
+          { text: ' in your response. ' },
+          { text: '(15)', annotation: { type: 'marks-allocation', note: 'Marked ex 15 against the criteria. H1 band: 15-14. Pay attention to the QUALITY of the points (marking scheme) — quality > quantity. A well-developed three is worth more than a thin five.' } },
+        ],
+      },
+    ],
+    predictPrompts: [
+      {
+        id: 'q1aii-vs-i',
+        type: 'multiple-choice',
+        prompt: 'How is A(ii) different from A(i)?',
+        options: [
+          'No difference — both want textual reference',
+          'A(i) = what the writer reveals; A(ii) = your own views (text and/or experience)',
+          'A(ii) is shorter',
+          'A(ii) wants a counter-argument',
+        ],
+        correctAnswer: 'A(i) = what the writer reveals; A(ii) = your own views (text and/or experience)',
+      },
+      {
+        id: 'q1aii-develop',
+        type: 'multiple-choice',
+        prompt: 'What does "develop" mean in this question?',
+        options: [
+          'List three short reasons',
+          'Extend each reason — reasoning, example, consequence — paragraph not sentence',
+          'Develop one reason in great detail',
+          'Build it gradually like a story',
+        ],
+        correctAnswer: 'Extend each reason — reasoning, example, consequence — paragraph not sentence',
+      },
+      {
+        id: 'q1aii-reasons',
+        type: 'short-text',
+        prompt: "Name two reasons parents might dislike tattoos that you'd actually develop in the answer.",
+        hint: 'The writer hints at one ("the flesh of our flesh should remain spotless" — ego/possessiveness). Others: permanence, judgement of others, religious/cultural views, employment concerns, parental control.',
+      },
+    ],
+    topAnswerIncludes: [
+      'POINT 1 — The "ego thing" the writer himself names: parents see their child\'s body as an extension of themselves. A tattoo asserts that the body belongs to the child, not the parent. Develop with the writer\'s own phrase ("flesh of our flesh") and an example.',
+      'POINT 2 — Permanence and regret: tattoos are decisions made young that the person carries into middle age. Parents have the longer view on "this seemed important at 18" not always still feeling that way at 40.',
+      'POINT 3 — Social/professional consequences: in some careers, sectors, or older social circles, visible tattoos still carry stigma. Parents may worry less about the tattoo itself than about how it might shape opportunities.',
+      'POINT 4 (alternative) — Generational/cultural inheritance: parents grew up when tattoos signified subcultures (sailors, prisoners, gangs); they may not have caught up with the mainstreaming of body art.',
+      'POINT 5 (alternative) — Religious/cultural objection: some faith traditions explicitly prohibit body modification.',
+      'Each point genuinely DEVELOPED — not just stated. A "developed point" includes the reason, an example or illustration, and an implication or consequence.',
+      'Optional: brief reference to the text (the writer\'s self-aware "ego thing") — but personal views with examples from your own observation are equally valid here.',
+    ],
+    commonTraps: [
+      "Quoting/paraphrasing the article without offering your own developed views — that's the A(i) task, not A(ii). A(ii) wants YOUR thinking.",
+      "Listing 5+ thin reasons instead of developing 3. Marking scheme rewards quality of points; volume doesn't compensate.",
+      'Three reasons that are essentially the same dressed differently ("parents are old-fashioned" / "parents don\'t understand" / "parents are stuck in their ways"). Need three DIFFERENT angles.',
+      'A point stated in one sentence and not developed — single sentences read as listing, not developing.',
+      'Assuming the question wants you to AGREE with parents — you\'re free to challenge the premise as long as you develop your view ("Some parents dislike it for X, but…").',
+    ],
+  },
+
+  {
+    id: 'english-2024-p1-text2-qb',
+    subject: 'english',
+    year: 2024,
+    paper: 'Paper 1',
+    section: 'Section I — Comprehending — Text 2 (Friendship — The Bee Sting, Paul Murray) Question B',
+    questionNumber: 'B',
+    level: 'higher',
+    marks: 50,
+    totalPaperMarks: 200,
+    totalPaperMinutes: 170,
+    commandWords: ['Write a proposal', 'outline', 'propose', 'suggest'],
+    questionText: [
+      {
+        type: 'paragraph',
+        content: [
+          { text: 'Certain aspects of the area where you live have become run down and neglected. ' },
+          { text: 'Write a proposal', annotation: { type: 'command', note: "GENRE PRESCRIBED — proposal, not letter, not article, not essay. Distinct features: structured headings or clearly-marked sections; formal civic register; addressed to a body, not an individual; combines analysis (what's wrong) with action (what to do)." } },
+          { text: ' to your local ' },
+          { text: 'Tidy Towns Committee', annotation: { type: 'keyword', note: 'AUDIENCE — a formal civic committee of mostly older volunteers. Register: respectful, evidence-based, constructive. NOT teen voice, NOT casual, NOT ranty. The audience matters as much as the genre — a brilliant proposal in the wrong register caps Purpose.' } },
+          { text: ' in which you: ' },
+          { text: 'outline your key concerns', annotation: { type: 'command', note: 'TASK COMPONENT 1 of 3. You MUST address this. Be specific — name actual problems (litter on a named road, dilapidated playground, derelict shop fronts). Vague "the area is run-down" caps Purpose.' } },
+          { text: ' in relation to the problems you have identified, ' },
+          { text: 'propose a project', annotation: { type: 'command', note: 'TASK COMPONENT 2 of 3. A specific, actionable project — not three competing ideas. Name it, scope it, say roughly what it costs in time/money/volunteers. Concrete > vague.' } },
+          { text: ' that you believe would improve the situation, and ' },
+          { text: 'suggest how the committee could encourage', annotation: { type: 'trap', note: 'TASK COMPONENT 3 of 3 — most commonly skipped. Marking scheme P descriptor: "outline their key concerns... propose a project... suggest how the committee could encourage more members of the local community". Skip this and your Purpose mark is capped, which CAPS your Coherence and Language marks too (P caps C and L).' } },
+          { text: ' more members of the local community to become active in improving the local area. ' },
+          { text: '(50)', annotation: { type: 'marks-allocation', note: 'P 15 / C 15 / L 15 / M 5. CRUCIAL RULE: P caps C and L — your Coherence and Language marks cannot exceed your Purpose mark. Brilliant prose on the wrong genre or missing a sub-task is capped at the level of Purpose. ~43 mins.' } },
+        ],
+      },
+    ],
+    predictPrompts: [
+      {
+        id: 'q2b-genre',
+        type: 'multiple-choice',
+        prompt: 'What genre is required?',
+        options: ['Personal letter', 'Newspaper article', 'Formal proposal to a committee', 'Speech'],
+        correctAnswer: 'Formal proposal to a committee',
+      },
+      {
+        id: 'q2b-three',
+        type: 'multiple-choice',
+        prompt: 'How many distinct task components must your proposal address?',
+        options: ['One', 'Two', 'Three', 'As many as you have ideas for'],
+        correctAnswer: 'Three',
+      },
+      {
+        id: 'q2b-pcaps',
+        type: 'multiple-choice',
+        prompt: "Your prose is brilliant but you skip the third sub-task. What's the ceiling on your Coherence and Language marks?",
+        options: [
+          "No effect — they're marked separately",
+          'Capped at the level of your Purpose mark (P caps C and L)',
+          'Capped at half',
+          'Only Purpose suffers',
+        ],
+        correctAnswer: 'Capped at the level of your Purpose mark (P caps C and L)',
+      },
+      {
+        id: 'q2b-time',
+        type: 'number',
+        prompt: 'Roughly how many minutes should you spend?',
+        correctAnswer: 43,
+      },
+    ],
+    topAnswerIncludes: [
+      'Sustained civic-proposal register — formal, respectful, evidence-based, constructive. Could open with "Dear Members of the [Town] Tidy Towns Committee," and close with a respectful sign-off. Headed sections OK.',
+      'COMPONENT 1 — Concrete concerns: name 2-3 specific problems (e.g. derelict shop fronts on Main Street; overgrown verges along the river walk; vandalism in the playground; dog fouling in the park). Specific > general.',
+      'COMPONENT 2 — One named project: pitched specifically (e.g. "Adopt-a-Street volunteer scheme"; "monthly community clean-up paired with a coffee morning"; "wildflower verges programme run with the local primary school"). Include who, what, when, rough cost.',
+      'COMPONENT 3 — Community engagement strategies: practical mechanisms — schools, social media, transition-year volunteer hours, GAA club tie-ups, local business sponsorship of equipment, recognition (annual award), inclusive language ("all welcome regardless of fitness/age").',
+      'Public-civic awareness — the proposal is a document a committee will read and discuss. Bullet points or headed sections aid Coherence; long undifferentiated paragraphs make it harder to find the three components.',
+      'Originality and freshness — a proposal that sounds genuinely thought-through, not generic ("plant trees, pick up litter").',
+    ],
+    commonTraps: [
+      'Wrong register — slipping into teen voice, casual tone, or aggressive ranting. Caps Purpose.',
+      'Addressing only one or two of the three components — almost always the third (community engagement) is the one skipped. P-cap then ceilings your other marks.',
+      'Vague "the area is run-down" without specific concerns. Marking scheme rewards focused, fluent expression — vague ≠ focused.',
+      'Generic project ("plant flowers") with no detail on who runs it, who participates, what it costs.',
+      'Treating it as a personal letter — losing the public, civic dimension. Proposals are documents for a body, not letters to a friend.',
+      'P 15 / C 15 / L 15 / M 5 — the P-caps-C-L rule means a thin Purpose ceilings the whole answer. Get all three sub-tasks right, in proposal register, before worrying about flourishes.',
+    ],
+  },
+
+  {
+    id: 'english-2024-p1-composing-5',
+    subject: 'english',
+    year: 2024,
+    paper: 'Paper 1',
+    section: 'Section II — Composing',
+    questionNumber: '5',
+    level: 'higher',
+    marks: 100,
+    totalPaperMarks: 200,
+    totalPaperMinutes: 170,
+    commandWords: ['Write a discursive essay', 'consider'],
+    questionText: [
+      {
+        type: 'paragraph',
+        content: [
+          { text: 'The writer in TEXT 3 regrets losing her anonymity by engaging with social media.' },
+        ],
+      },
+      {
+        type: 'paragraph',
+        content: [
+          { text: 'Write a discursive essay', annotation: { type: 'command', note: 'GENRE PRESCRIBED — discursive, NOT argumentative or persuasive. A discursive essay considers MULTIPLE views, weighs evidence, and arrives at a considered position. It is not a speech for one side. Picking one side and arguing it is the most common genre error and caps Purpose.' } },
+          { text: ' in which you ' },
+          { text: 'consider', annotation: { type: 'keyword', note: '"Consider" reinforces discursive register. Weighing, balancing, examining from multiple angles — not advocating. Marking scheme indicative material includes "arguments and counter-arguments, consideration of a variety of views".' } },
+          { text: ' ' },
+          { text: 'whether or not it is possible, or even desirable, to maintain privacy', annotation: { type: 'trap', note: 'TWO QUESTIONS in one — possible AND desirable. They are NOT the same. (a) Is it technically possible to be private in 2024? (b) Even if it were, would we want to be? Engaging with only one half caps Purpose. Strong essays interrogate both and may conclude the two halves diverge.' } },
+          { text: ' ' },
+          { text: "in today's world", annotation: { type: 'keyword', note: 'CONTEMPORARY references expected — not abstract philosophy. Named platforms (Meta, TikTok, X), named technologies (AI, facial recognition, location data), named scandals (Cambridge Analytica, Pegasus, data breaches), named figures or cases. "Today\'s world" is doing work in the prompt.' } },
+          { text: '. ' },
+          { text: '(100)', annotation: { type: 'marks-allocation', note: 'P 30 / C 30 / L 30 / M 10. ~85 mins — the largest single piece on Paper 1. P CAPS C AND L: brilliant writing in the wrong genre (e.g. an argumentative essay, a personal essay) is capped at the level of your Purpose mark. Get the genre right first, then dazzle.' } },
+        ],
+      },
+    ],
+    predictPrompts: [
+      {
+        id: 'comp5-genre',
+        type: 'multiple-choice',
+        prompt: 'A "discursive" essay differs from "argumentative" how?',
+        options: [
+          'No difference — both argue a side',
+          'Discursive considers multiple views and weighs them; argumentative picks one and defends it',
+          'Discursive is shorter',
+          'Discursive avoids personal opinion',
+        ],
+        correctAnswer: 'Discursive considers multiple views and weighs them; argumentative picks one and defends it',
+      },
+      {
+        id: 'comp5-twohalves',
+        type: 'multiple-choice',
+        prompt: "Which of the prompt's halves do you have to engage with?",
+        options: [
+          'Just whether privacy is possible',
+          'Just whether privacy is desirable',
+          'Both — "possible" AND "desirable" are separate questions',
+          'Either one is fine',
+        ],
+        correctAnswer: 'Both — "possible" AND "desirable" are separate questions',
+      },
+      {
+        id: 'comp5-pcaps',
+        type: 'multiple-choice',
+        prompt: 'You write a beautiful argumentative essay (one side, well-defended). Genre is wrong. What happens to your max C and L marks?',
+        options: [
+          'Unaffected — only Purpose drops',
+          "They're capped at your Purpose mark (P caps C and L)",
+          'You lose 10%',
+          'Examiner reclassifies it',
+        ],
+        correctAnswer: "They're capped at your Purpose mark (P caps C and L)",
+      },
+      {
+        id: 'comp5-references',
+        type: 'short-text',
+        prompt: 'Name three contemporary references (platforms, scandals, technologies, figures) you\'d use to ground "today\'s world".',
+        hint: "Cambridge Analytica, GDPR, Edward Snowden, TikTok minor-data investigations, AI deepfakes, Apple's privacy-vs-FBI cases, Clearview AI, Pegasus spyware, Meta Pixel litigation, the right-to-be-forgotten EU rulings…",
+      },
+      {
+        id: 'comp5-time',
+        type: 'number',
+        prompt: 'Roughly how many minutes should you spend?',
+        correctAnswer: 85,
+      },
+    ],
+    topAnswerIncludes: [
+      'Discursive register sustained throughout — weighing, considering, "on one hand", "however", "yet it could equally be argued". Not "I will prove that…".',
+      'Both halves of the prompt explicitly addressed — one section (or interleaved threads) on POSSIBILITY (technical reality of digital footprints, surveillance capitalism, default-collect data architectures) and another on DESIRABILITY (do we actually want privacy from family/employers/the state? would total transparency reduce harm? what do we lose with privacy — accountability, trust?).',
+      'Genuine counter-arguments — a strong discursive essay will, at least once, steel-man the opposite of its own emerging view before resolving.',
+      'Contemporary, specific references — Cambridge Analytica, GDPR, Snowden, AI deepfakes, the Apple-FBI San Bernardino case, the right-to-be-forgotten rulings, employer monitoring of remote work, smart-home device data flows. Specific > generic.',
+      'Personal observation/anecdote OK in moderation — discursive can still have a "voice" — but evidence and references do the load-bearing work, not autobiography.',
+      'A considered, qualified conclusion — not a tidy victory for one side but a distillation of where the weighing has led ("privacy as we knew it is gone; what we can fight for is informed consent and proportionality"). Avoid "in conclusion, privacy is good".',
+      'Genre-features per the marking scheme: "factual information, references, arguments and counter-arguments, consideration of a variety of views, opinions and personal experiences, illustrations, allusions, analysis."',
+    ],
+    commonTraps: [
+      'Writing an ARGUMENTATIVE essay (picking one side and defending it) instead of a DISCURSIVE one — caps Purpose, which caps Coherence and Language. Most common 100-mark error on this kind of question.',
+      'Engaging with only "possible" OR only "desirable" instead of both — they\'re distinct and a strong essay distinguishes them.',
+      'Vague "the modern world is bad for privacy" with no named platforms, technologies, scandals, or cases.',
+      'Personal essay drift — turning a discursive task into "my own thoughts on privacy". Personal anecdote can support, but discursive essays draw on a broader evidence pool.',
+      'Long sub-claused sentences and ornate vocabulary in pursuit of L marks while Purpose is weak — P caps L. Land Purpose first.',
+      'No counter-argument — discursive essays MUST consider perspectives the writer doesn\'t hold. A one-sided essay is argumentative by another name.',
+      "Mechanics (M) only 10% but marking scheme is strict — apostrophes, comma splices, run-ons, capitalisation. Don't neglect basic accuracy.",
+    ],
   },
 ];

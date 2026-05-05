@@ -27,7 +27,7 @@ export interface PredictPrompt {
   hint?: string;
 }
 
-export type ExamSubject = 'english' | 'irish' | 'maths';
+export type ExamSubject = 'english' | 'irish' | 'maths' | 'geography';
 
 export interface ExamQuestion {
   id: string;                    // e.g. "english-2023-p2-q1"
