@@ -361,31 +361,48 @@ Both are examiner-authored and citable. Marking schemes are particularly useful 
 
 ## Necessary Knowledge tab
 
-A third peer view inside the Exam Strategiser, alongside Practice and Trap Patterns. It teaches the *hidden curriculum* of the Leaving Cert — command words, marking-scheme grammars, time allocation, examiner pet peeves — material no syllabus covers but every Chief Examiner Report keeps complaining about.
+A third peer view inside the Exam Strategiser, alongside Practice and Trap Patterns. It teaches the *hidden curriculum* of the Leaving Cert — command words, marking-scheme grammars, time allocation, examiner pet peeves, SRPs, mark provenance, sanity checks, traps, ceilings — material no syllabus covers but every Chief Examiner Report keeps complaining about.
+
+The tab ships in **two stages with intentionally different aesthetic registers**. Read the Aesthetic register section below before editing or adding modules — there are two parallel systems and they shouldn't be mixed within a single module.
 
 ### Architecture
 
 ```
 components/ExamStrategiser/
-├── index.tsx                        # adds 'knowledge' to View, routes module sub-views
+├── index.tsx                        # routes 'knowledge' view + module sub-views
 └── knowledge/
-    ├── NecessaryKnowledge.tsx       # tab landing — 5 tiles + closing CER quote
-    ├── KnowledgeModuleShell.tsx     # shared wrapper (breadcrumb, header, why-card, summary)
-    ├── QuickCheck.tsx               # reusable end-of-module multi-choice quiz
+    ├── NecessaryKnowledge.tsx       # tab landing — Stage 1 + Stage 2 tile groups
+    ├── KnowledgeModuleShell.tsx     # Stage 1 shell (breadcrumb, why-card, summary)
+    ├── QuickCheck.tsx               # Stage 1 reusable multi-choice quiz
     └── modules/
+        # Stage 1 — quieter Strategiser register
         ├── CommandWordDecoder.tsx           # E1
         ├── PCLMAllocator.tsx                # E2 (Purpose Ceiling)
         ├── TimeAllocationCalculator.tsx     # E3 + sunk-cost simulator
         ├── ExaminerPetPeeveTrainer.tsx      # E12
-        └── MarkingSchemeGrammarExplainer.tsx
+        ├── MarkingSchemeGrammarExplainer.tsx
+        # Stage 2 — bold instrument-panel register
+        ├── SrpIdentifier.tsx                # E10 — three-phase SRP heat map
+        ├── WorkingShownAllocator.tsx        # E9 — mark provenance ribbons
+        ├── SanityCheckTrainer.tsx           # E6 — absurdity radar SVG
+        ├── SpotTheTrap.tsx                  # E4 — 30-sec timer + pattern card
+        └── SubTaskCeilingVisualiser.tsx     # E5 — bar-chart ceiling drop
 ```
 
 Data lives in `data/knowledge/`:
-- `commandWords.ts` — 13 commands + 4 modifiers (source: dossier § A1)
-- `examinerPetPeeves.ts` — 12 perennial peeves (sources: § B1-B11, § D)
-- `subjectMarkingGrammar.ts` — 5 marking architectures (source: § A2)
-- `subjectTiming.ts` — 12 subject timing tables (source: § A3)
-- `index.ts` — registry
+
+Stage 1:
+- `commandWords.ts` — 13 commands + 4 modifiers (dossier § A1)
+- `examinerPetPeeves.ts` — 12 perennial peeves (§ B1-B11, § D)
+- `subjectMarkingGrammar.ts` — 5 marking architectures (§ A2)
+- `subjectTiming.ts` — 12 subject timing tables (§ A3)
+
+Stage 2:
+- `srpSamples.ts` — 4 paragraphs (Geo / History / Business) with per-sentence SRP classification, `developsFactor` and `buried` flag (§ A2, § B5-B7)
+- `workedQuestions.ts` — 5 worked questions (Maths algebra/geometry, Chemistry mole calc, Physics mechanics, Accounting depreciation) with stepwise mark allocation, slip/blunder variants, and 5 answer paths each (§ A2)
+- `sanityChecks.ts` — 12 absurdity questions (Maths / Chem / Phys / Bio) each with one correct + three absurd candidates, each absurd tagged with its primary catching check (§ C1)
+- `trapCards.ts` — 15 paraphrased past-paper trap cards across 6 subjects + `TRAP_CATEGORY_LABELS` and `TRAP_CATEGORY_FIXES` lookup tables (multiple CERs)
+- `ceilingScenarios.ts` — 4 cap-rule scenarios with sentence-level `isCapTrigger` flag and counterfactual `liftedScore` (§ A2, § A5, § B6, § B7)
 
 Types in `types/knowledge.ts`. Every entry carries a `DossierRef { section, page, cite }` for audit traceability.
 
@@ -393,25 +410,67 @@ Types in `types/knowledge.ts`. Every entry carries a `DossierRef { section, page
 
 Every claim in the Necessary Knowledge tab traces to `/docs/leaving-cert-knowledge-dossier.md`. The dossier itself draws on SEC marking schemes, Chief Examiner Reports, and NCCA documents. **Do not generate Necessary Knowledge content from your own knowledge of the Leaving Cert** — the dossier is the authority. If a claim does not appear there, flag it rather than write it.
 
-### Aesthetic register
+Per-question or per-sample text that paraphrases an SEC paper must stay below the 15-words-verbatim threshold. The data files are the place where this rule is policed; if you find paraphrasing slipping above that threshold, fix the data file, not the rendering component.
 
-Necessary Knowledge follows the **Strategiser register** (matching the rest of `components/ExamStrategiser/`), not the bold module register from the Visual Design System above:
+### Aesthetic register — two parallel systems
+
+**Stage 1 — Strategiser register** (quieter, matches the rest of `components/ExamStrategiser/`):
 - Cards: `background: #FFFFFF`, `border: 1px solid #EDEBE8`, `border-radius: 16px`
 - Highlight panels (callouts, "Why this matters", outcomes): `background: #FAF7F4`, `border: 1px solid ${TEAL}33`
 - Sliders: `accent-color: #2A7D6F`
-- The TEAL constant is `#2A7D6F`, same as the rest of the app
-- This is a deliberate departure from the 2px #1a1a1a card border used in the educational modules — the Strategiser is a working tool, not a teaching narrative, and uses a quieter palette
+- TEAL = `#2A7D6F` (app-wide)
+- All Stage 1 modules share the `KnowledgeModuleShell` wrapper
+
+**Stage 2 — Brilliant.org / Mercury hybrid** (denser, more instrument-panel):
+- Cards: `background: #FFFFFF`, `border: 2px solid #1a1a1a`, `border-radius: 16px`
+- Cream panels: `background: #FDF8F0` for inset content (rewind tracks, paragraph displays)
+- Inverted insight panels: `background: #1a1a1a`, `color: #FFFFFF`, `#FFD8A8` for warm highlights inside (this is a soft tan — *not* orange — and is the only off-palette accent permitted on dark surfaces)
+- TEAL_DARK = `#1a5a4e`, INK = `#1a1a1a`, WARN = `#A8746E` (warm muted brown for cap/blunder semantics — **not** red, **not** orange)
+- Stage 2 modules **do not use** `KnowledgeModuleShell`. They build their own minimal back-bar + hero + content stack so they can be visually denser
+- Framer Motion is used freely for animation-as-explanation: provenance-trail entries, ceiling-drop springs, radar pulses, trap-reveal fades. Animation must encode meaning — never decorate
+- SVG for diagrammatic interactives: timer rings (`<circle>` with `stroke-dasharray`), absurdity radar (concentric `<rect>` rings), cap line (CSS dashed border), bar chart (`motion.div` height animations)
+
+Banned palette colours (orange, amber, bright green, purple, red as a primary) apply across both stages. Coloured left borders are banned project-wide (memory: `feedback_no_left_borders`); use background tints, full backgrounds, or dot accents instead.
+
+### Stage 2 visual primitives — what to reuse
+
+The five Stage 2 modules introduced reusable visual idioms that future modules (Stage 3 and beyond) should pick up:
+
+| Idiom | Source module | Reusable for |
+|---|---|---|
+| **Three-phase student-then-examiner heat map** | `SrpIdentifier` | Any module where the educational arc is "predict → reveal → consequence". |
+| **Mark-ribbon stack with running total** | `WorkingShownAllocator` | Any quantitative-marking module where steps accrue marks. The `Ribbon` component's `kind = 'earned' / 'slip' / 'blunder' / 'misread'` directly mirrors the dossier penalty grammar. |
+| **Path-rewind picker with sparkline comparison** | `WorkingShownAllocator` | Any module that has multiple "what a student might do" trajectories with different scores. |
+| **Absurdity radar SVG** | `SanityCheckTrainer` | Any module that needs a colour-keyed pulse around a target element. The four-check colour scheme (TEAL, TEAL_DARK, INK, WARN) is the canonical four-axis palette. |
+| **Reaction-time-aware closing report** | `SanityCheckTrainer` | Any module where speed is a learning signal, not just accuracy. |
+| **Three-state flip card with timer ring** | `SpotTheTrap` | Any module with a "spot it before the reveal" gameplay loop. |
+| **Pattern-break interstitial every N items** | `SpotTheTrap` | Any module long enough to warrant a halfway-through pattern callout. |
+| **Bar-chart ceiling drop with cap line** | `SubTaskCeilingVisualiser` | Any module visualising a marking-scheme cap or band ceiling. |
+| **Sentence-level rewind sequencer** | `SubTaskCeilingVisualiser` | Any module that needs to walk a student backwards through their answer. |
+| **Counterfactual lift animation** | `SubTaskCeilingVisualiser` | Any "what if you had X instead?" recovery interaction. |
+
+When you build a Stage 3 module that overlaps with one of these, **lift the visual idiom into a shared `knowledge/primitives/` folder before duplicating the implementation**. The current Stage 2 modules each own their primitives inline because they only need them once; a third user crosses the abstraction threshold.
 
 ### Adding a new module
 
-1. Add the module ID to `KnowledgeModuleId` in `NecessaryKnowledge.tsx` and add a tile to `TILES`.
-2. Author the data in `data/knowledge/<file>.ts` if new types of data are needed (else extend an existing file). All entries must carry a `source: DossierRef`.
-3. Create the component in `components/ExamStrategiser/knowledge/modules/<ModuleName>.tsx`. Wrap in `<KnowledgeModuleShell>` with `whyThisMatters` and `summary`. Close with a `<QuickCheck>` of 3 questions.
+1. Author the data in `data/knowledge/<file>.ts`. New types go in `types/knowledge.ts`. Every entry carries a `source: DossierRef`. Re-export from `data/knowledge/index.ts`.
+2. Add the module ID to `KnowledgeModuleId` in `NecessaryKnowledge.tsx` and a tile to `TILES` (set `stage: 1` or `stage: 2`).
+3. Create the component in `components/ExamStrategiser/knowledge/modules/<ModuleName>.tsx`.
+   - **Stage 1**: wrap in `<KnowledgeModuleShell>` with `whyThisMatters` and `summary`; close with a 3-question `<QuickCheck>`.
+   - **Stage 2**: build a minimal back-bar + hero + dense interactive body. Don't use the Stage 1 shell. Animation must encode meaning.
 4. Wire it into `index.tsx`'s `KnowledgeModuleView` switch.
+5. `npm run build` to verify clean. (No tests / linter — build is the only verification.)
+6. Commit per module if it's a significant standalone shipment.
 
 ### Stage roadmap
 
-The dossier defines E1-E22 interactive concepts. Stage 1 ships the five highest-leverage modules (the five currently built). Stage 2 candidates: SRP Engine (E5), Mock-Calibration Predictor (E15), Choice-Question Optimiser (E14), Diagram Mark Counter (E11). Stage 3: longer-form simulators where appropriate.
+The dossier defines E1-E22 interactive concepts.
+
+- **Stage 1 (shipped):** E1 Command Word Decoder, E2 PCLM Allocator, E3 Time-Allocation Calculator, E12 Examiner Pet-Peeve Trainer, Marking-Scheme Grammar Explainer.
+- **Stage 2 (shipped):** E10 SRP Identifier, E9 Working-Shown Allocator, E6 Sanity-Check Trainer, E4 Spot the Trap, E5 Sub-task Ceiling Visualiser.
+- **Stage 3 candidates (subject-deep):** E18 Comparative Texts Linker (English), E19 RSR Section Allocator (History), E17 Marking-Scheme Phrase Match (Sciences), E20 Oral-Exam Authenticity Coach (Languages / Irish), E21 "Examiner View" mode, E22 Time-of-Day Pacing Coach. These are longer-form simulators with a single-subject focus, suited to deep-dive sessions rather than general literacy.
+
+When Stage 3 begins, lift the Stage 2 visual primitives listed above into `knowledge/primitives/` first.
 
 ## Strategiser content quality rules
 
