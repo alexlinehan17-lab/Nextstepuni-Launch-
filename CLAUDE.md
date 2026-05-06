@@ -349,3 +349,43 @@ The insights file is the curated synthesis. The `<year>-chief-examiner.md` is th
 4. Convert to markdown (PyPDF2 if `pdftotext` is unavailable — see prior session for the conversion script pattern).
 5. Author the insights file against the schema above.
 6. Update `examiner-reports/README.md` index.
+
+### Source types
+
+The library holds two source types per subject/year:
+
+- `<year>-chief-examiner.{pdf,md}` — SEC Chief Examiner's Report
+- `<year>-marking-scheme.{pdf,md}` — SEC marking scheme
+
+Both are examiner-authored and citable. Marking schemes are particularly useful for per-question rules ("Max X SRPs if…", "Apply a *", indicative material lists). Cite as `Marking scheme YYYY` inline.
+
+## Strategiser content quality rules
+
+Every Strategiser unit must consult the relevant report(s) in /examiner-reports/[subject]/ before generating debrief content. Cite the year inline (e.g. "Chief Examiner 2023 noted...").
+
+Predict questions must test strategic understanding, not content knowledge. Good targets: genre identification, sub-task counting, mark allocation rules, ceiling/cap effects, time allocation, command-word interpretation. Bad: "what's the answer to part (a)" — that's content, not strategy.
+
+Banned generic phrases (treat as failure modes — reject the draft if any appear):
+- "Read the question carefully"
+- "Manage your time"
+- "Show your working"
+- "Plan before you write"
+- Any sentence that could apply to any exam in any subject
+
+Good insights name a specific error pattern, a specific mark allocation rule, or a specific examiner observation. Examples:
+- "Examiners noted in 2022 that candidates who skipped the Personal Response sub-task had their Coherence mark capped at the Purpose level."
+- "1 attempt mark is awarded for writing the correct formula even if you can't complete the calculation."
+- "Examiner reports flag that most lost marks on simultaneous equations come from compounded algebraic slips — substitute back into the original to catch them."
+
+Per-question debrief is mandatory. Flat 'insights' lists are banned.
+
+If you can't find an examiner-sourced insight for a particular point, flag it rather than filling with generic content.
+
+### Schema enforcement
+
+New questions in `data/examQuestions/<subject>.ts` MUST include:
+
+- `biggestMistake`: question-level closing card (`{ title, body, source? }`)
+- `predictPrompts[].debrief`: per-prompt block (`{ strategicPrinciple, commonWrongAnswer: { answer, reason, source? } }`)
+
+Legacy fields (`topAnswerIncludes`, `commonTraps`, `markScheme`) are `@deprecated` and only present so existing questions continue rendering until migrated. Do not use them in new questions. Migration backlog: `/STRATEGISER_MIGRATION.md`.

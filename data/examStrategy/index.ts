@@ -10,6 +10,7 @@ import { englishStrategy } from './english';
 import { mathsStrategy } from './maths';
 import { geographyStrategy } from './geography';
 import { irishStrategy } from './irish';
+import { businessStrategy } from './business';
 
 export { TASK_TYPES, getTaskType, getTaskTypesForSubject } from './taskTypes';
 export type { TaskTypeMeta } from './taskTypes';
@@ -20,6 +21,7 @@ const SUBJECT_STRATEGIES: Record<ExamSubject, SubjectStrategy> = {
   maths: mathsStrategy,
   geography: geographyStrategy,
   irish: irishStrategy,
+  business: businessStrategy,
 };
 
 export function getSubjectStrategy(subject: ExamSubject): SubjectStrategy {

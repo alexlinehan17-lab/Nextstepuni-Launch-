@@ -3,12 +3,18 @@
  * SPDX-License-Identifier: Apache-2.0
  *
  * AnnotatedText — renders a QuestionPart[] with optional inline annotations.
- * Two render modes:
- *   - mode="raw": annotations are stripped, plain question text only
- *   - mode="annotated": annotations are visualised, hover/tap reveals notes
+ * Three render modes:
+ *   - mode="raw": annotations are stripped, plain text only
+ *   - mode="annotated", interactive=false: passive visual cues only
+ *     (underlines, wavy lines, marks pill) — no hover/click behaviour
+ *   - mode="annotated", interactive=true: passive cues + hover-to-reveal
+ *     and click-to-pin tooltip showing the annotation's note
+ *
+ * Interactive mode is opted-in by the Debrief stage, where annotations are
+ * part of the examiner reveal. Question and Predict stages stay clean.
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import { type QuestionPart, type AnnotationType } from '../../types/examStrategiser';
 
 const TEAL = '#2A7D6F';
@@ -18,41 +24,28 @@ interface AnnotatedTextProps {
   mode: 'raw' | 'annotated';
   /** marks-to-minutes computation context. Only used by 'marks-allocation' annotations. */
   marksToMinutesContext?: { totalPaperMarks: number; totalPaperMinutes: number; questionMarks: number };
-  /** Currently revealed annotation id (click-to-reveal on mobile). null = none open. */
-  revealedAnnotationId?: string | null;
-  /** Tells the parent which annotation a tap opened, so the side-panel can scroll to it. */
-  onAnnotationClick?: (annotationId: string) => void;
+  /** When true and mode='annotated', annotated spans become interactive —
+   *  hover reveals the note transiently; click pins it (click again to
+   *  unpin). When false, annotations render as passive visual cues only. */
+  interactive?: boolean;
 }
 
-/** Each annotated segment gets a stable id derived from its position in the
- *  parts tree. Used so the side-panel and inline tooltip stay in sync. */
-function makeAnnotationId(partIdx: number, segIdx: number) {
-  return `ann-${partIdx}-${segIdx}`;
-}
-
-const annotationStyle = (type: AnnotationType): React.CSSProperties => {
+const annotationStyle = (type: AnnotationType, interactive: boolean): React.CSSProperties => {
+  const base = interactive ? { cursor: 'help' as const } : {};
   switch (type) {
     case 'command':
-      return { textDecoration: `underline solid ${TEAL}`, textDecorationThickness: 2, textUnderlineOffset: 4, cursor: 'help' };
+      return { ...base, textDecoration: `underline solid ${TEAL}`, textDecorationThickness: 2, textUnderlineOffset: 4 };
     case 'keyword':
-      return { textDecoration: `underline dotted ${TEAL}`, textDecorationThickness: 2, textUnderlineOffset: 4, cursor: 'help' };
+      return { ...base, textDecoration: `underline dotted ${TEAL}`, textDecorationThickness: 2, textUnderlineOffset: 4 };
     case 'trap':
-      return { textDecoration: `underline wavy ${TEAL}`, textDecorationThickness: 1.5, textDecorationSkipInk: 'auto', textUnderlineOffset: 4, cursor: 'help', opacity: 0.95 };
+      return { ...base, textDecoration: `underline wavy ${TEAL}`, textDecorationThickness: 1.5, textDecorationSkipInk: 'auto', textUnderlineOffset: 4, opacity: 0.95 };
     case 'marks-allocation':
-      // Pill is rendered separately, segment span just gets neutral style.
-      return { cursor: 'help' };
+      // Pill is rendered separately; segment span gets neutral style.
+      return base;
   }
 };
 
-const TrapIcon: React.FC = () => (
-  <svg width="11" height="11" viewBox="0 0 12 12" aria-hidden style={{ display: 'inline-block', marginLeft: 3, verticalAlign: 'middle', color: TEAL, opacity: 0.65 }}>
-    <path d="M6 2L11 10H1L6 2Z" stroke="currentColor" strokeWidth="1.4" fill="none" strokeLinejoin="round" />
-    <line x1="6" y1="5" x2="6" y2="7.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
-    <circle cx="6" cy="9" r="0.6" fill="currentColor" />
-  </svg>
-);
-
-const MarksPill: React.FC<{ label: string }> = ({ label }) => (
+const MarksPill: React.FC<{ label: string; interactive: boolean }> = ({ label, interactive }) => (
   <span
     className="inline-flex items-center gap-1 align-middle"
     style={{
@@ -64,38 +57,50 @@ const MarksPill: React.FC<{ label: string }> = ({ label }) => (
       fontSize: 11,
       fontWeight: 700,
       letterSpacing: 0.2,
+      cursor: interactive ? 'help' : 'default',
     }}
   >
     {label}
   </span>
 );
 
-const AnnotatedText: React.FC<AnnotatedTextProps> = ({
-  parts,
-  mode,
-  marksToMinutesContext,
-  revealedAnnotationId,
-  onAnnotationClick,
-}) => {
-  const renderSegment = (
-    seg: QuestionPart['content'][number],
-    partIdx: number,
-    segIdx: number,
-  ) => {
+/** Per-segment id derived from its position in the parts tree. Used to
+ *  identify which annotation is currently revealed/pinned. */
+const segmentId = (partIdx: number, segIdx: number) => `ann-${partIdx}-${segIdx}`;
+
+const AnnotatedText: React.FC<AnnotatedTextProps> = ({ parts, mode, marksToMinutesContext, interactive = false }) => {
+  // Two-state interaction model:
+  //   hoverId  — transient, set on mouseenter, cleared on mouseleave
+  //   pinnedId — sticky, set on click, cleared on click of same span
+  // Tooltip shows when either matches the current segment.
+  const [hoverId, setHoverId] = useState<string | null>(null);
+  const [pinnedId, setPinnedId] = useState<string | null>(null);
+
+  const revealId = pinnedId ?? hoverId;
+
+  const renderSegment = (seg: QuestionPart['content'][number], partIdx: number, segIdx: number) => {
     const text = seg.text;
     if (mode === 'raw' || !seg.annotation) {
       return <span key={segIdx}>{text}</span>;
     }
-    const id = makeAnnotationId(partIdx, segIdx);
-    const isOpen = revealedAnnotationId === id;
+    const id = segmentId(partIdx, segIdx);
     const ann = seg.annotation;
+    const isOpen = interactive && revealId === id;
+
+    const interactiveHandlers = interactive
+      ? {
+          onMouseEnter: () => setHoverId(id),
+          onMouseLeave: () => setHoverId(null),
+          onClick: (e: React.MouseEvent) => {
+            e.stopPropagation();
+            setPinnedId(prev => (prev === id ? null : id));
+          },
+        }
+      : {};
 
     if (ann.type === 'marks-allocation') {
-      // Heuristic: a "question-level marker" is a segment whose text is a
-      // parenthesised marks number like "(20)" or "(50)". Those keep the
-      // existing computed pill ("20 marks · 17 mins"). Anything else (e.g.
-      // a subpart label like "(a)" with per-subpart marks in the note) uses
-      // the annotation note as the pill text directly.
+      // Question-level marker like "(20)" → computed pill from question-wide
+      // marks/minutes. Otherwise (e.g. subpart label "(a)") → use the note.
       const isQuestionLevelMarker = /^\s*\(\d+\)\s*$/.test(text);
       let pillLabel: string;
       if (isQuestionLevelMarker && marksToMinutesContext) {
@@ -105,17 +110,19 @@ const AnnotatedText: React.FC<AnnotatedTextProps> = ({
       } else {
         pillLabel = ann.note;
       }
+      // Show tooltip for marks-allocation only when the pill label differs
+      // from the note (i.e. the pill text doesn't already convey the note).
+      const showTooltip = isOpen && pillLabel !== ann.note;
       return (
         <span
           key={segIdx}
           id={id}
           data-annotation-id={id}
-          onMouseEnter={() => onAnnotationClick?.(id)}
-          onClick={() => onAnnotationClick?.(id)}
-          style={{ position: 'relative', cursor: 'help' }}
+          {...interactiveHandlers}
+          style={{ position: 'relative', display: 'inline-block' }}
         >
-          <MarksPill label={pillLabel} />
-          {pillLabel !== ann.note && <AnnotationTooltip note={ann.note} open={isOpen} />}
+          <MarksPill label={pillLabel} interactive={interactive} />
+          {showTooltip && <AnnotationTooltip note={ann.note} />}
         </span>
       );
     }
@@ -125,20 +132,26 @@ const AnnotatedText: React.FC<AnnotatedTextProps> = ({
         key={segIdx}
         id={id}
         data-annotation-id={id}
-        onMouseEnter={() => onAnnotationClick?.(id)}
-        onMouseLeave={() => { /* hover close handled by parent if needed */ }}
-        onClick={(e) => { e.stopPropagation(); onAnnotationClick?.(id); }}
-        style={{ ...annotationStyle(ann.type), position: 'relative' }}
+        {...interactiveHandlers}
+        style={{ ...annotationStyle(ann.type, interactive), position: 'relative' }}
       >
         {text}
-        {ann.type === 'trap' && <TrapIcon />}
-        <AnnotationTooltip note={ann.note} open={isOpen} />
+        {isOpen && <AnnotationTooltip note={ann.note} />}
       </span>
     );
   };
 
+  // Click anywhere outside an annotated span clears the pin. Wrapping the
+  // whole article in this handler lets users dismiss tooltips by clicking
+  // off the annotation.
+  const onArticleClick = () => setPinnedId(null);
+
   return (
-    <div className="font-serif text-zinc-900 dark:text-zinc-100" style={{ fontSize: 18, lineHeight: 1.65 }}>
+    <div
+      className="font-serif text-zinc-900 dark:text-zinc-100"
+      style={{ fontSize: 18, lineHeight: 1.65 }}
+      onClick={interactive ? onArticleClick : undefined}
+    >
       {parts.map((part, partIdx) => {
         if (part.type === 'spacer') return <div key={partIdx} style={{ height: 12 }} />;
         if (part.type === 'subpart-label') {
@@ -172,35 +185,31 @@ const AnnotatedText: React.FC<AnnotatedTextProps> = ({
   );
 };
 
-const AnnotationTooltip: React.FC<{ note: string; open: boolean }> = ({ note, open }) => {
-  if (!open) return null;
-  return (
-    <span
-      role="tooltip"
-      style={{
-        position: 'absolute',
-        top: 'calc(100% + 8px)',
-        left: 0,
-        zIndex: 20,
-        width: 'min(320px, 80vw)',
-        backgroundColor: '#FFFFFF',
-        border: '1px solid #EDEBE8',
-        boxShadow: '0 8px 24px rgba(0,0,0,0.06)',
-        borderRadius: 10,
-        padding: '10px 12px',
-        fontFamily: 'DM Sans, system-ui, sans-serif',
-        fontSize: 12.5,
-        lineHeight: 1.5,
-        color: '#3F3B36',
-        textDecoration: 'none',
-        fontWeight: 400,
-        opacity: 1,
-      }}
-    >
-      {note}
-    </span>
-  );
-};
+const AnnotationTooltip: React.FC<{ note: string }> = ({ note }) => (
+  <span
+    role="tooltip"
+    onClick={(e) => e.stopPropagation()}
+    style={{
+      position: 'absolute',
+      top: 'calc(100% + 8px)',
+      left: 0,
+      zIndex: 20,
+      width: 'min(320px, 80vw)',
+      backgroundColor: '#FFFFFF',
+      border: '1px solid #EDEBE8',
+      boxShadow: '0 8px 24px rgba(0,0,0,0.08)',
+      borderRadius: 10,
+      padding: '10px 12px',
+      fontFamily: 'DM Sans, system-ui, sans-serif',
+      fontSize: 12.5,
+      lineHeight: 1.5,
+      color: '#3F3B36',
+      textDecoration: 'none',
+      fontWeight: 400,
+    }}
+  >
+    {note}
+  </span>
+);
 
 export default AnnotatedText;
-export { makeAnnotationId };

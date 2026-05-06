@@ -20,10 +20,11 @@ For multi-year syntheses, the prefix is `<start-year>-<end-year>-` (e.g.
 
 ## Index
 
-| Subject | Year(s) | Levels | Original filename | Status |
-|---|---|---|---|---|
-| Maths | 2015 | Higher / Ordinary / Foundation | `CHEIFEXAMINERREPORTMATHEMATICS.pdf` | PDF + MD + insights |
-| Business | 2015 | Higher / Ordinary | `CHIEFEXAMINERREPORTBUSINESS.pdf` | PDF + MD + insights |
+| Subject | Year | Source type | Levels | Original filename | Status |
+|---|---|---|---|---|---|
+| Maths | 2015 | Chief Examiner | Higher / Ordinary / Foundation | `CHEIFEXAMINERREPORTMATHEMATICS.pdf` | PDF + MD + insights |
+| Business | 2015 | Chief Examiner | Higher / Ordinary | `CHIEFEXAMINERREPORTBUSINESS.pdf` | PDF + MD + insights |
+| Business | 2025 | Marking scheme | Higher | `BUSINESS HL MARK SCHEME 2025.pdf` | PDF + MD + insights |
 
 _Last updated: 2026-05-06_
 

@@ -22,11 +22,9 @@ interface StageProgressProps {
 }
 
 const STAGE_LABELS: Record<ExamStrategiserStage, string> = {
-  raw: 'Question',
+  question: 'Question',
   predict: 'Predict',
-  annotation: 'Examiner notes',
-  insights: 'Insights',
-  'mark-scheme': 'Mark scheme',
+  debrief: 'Debrief',
 };
 
 const StageProgress: React.FC<StageProgressProps> = ({

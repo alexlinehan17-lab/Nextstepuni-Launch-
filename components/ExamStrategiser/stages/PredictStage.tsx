@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { type ExamQuestion, type PredictAnswers, type PredictPrompt } from '../../../types/examStrategiser';
+import CollapsibleQuestionCard from '../CollapsibleQuestionCard';
 
 const TEAL = '#2A7D6F';
 
@@ -25,15 +26,17 @@ const PredictStage: React.FC<Props> = ({ question, answers, submitted, onAnswer,
 
   return (
     <div className="space-y-6">
+      <CollapsibleQuestionCard question={question} />
+
       <header>
         <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#A8A29E' }}>
           Stage 2 · Predict
         </p>
         <h2 className="font-serif" style={{ fontSize: 24, fontWeight: 600, color: '#1A1A1A', marginTop: 4 }}>
-          Read the question first. Then answer these.
+          Predict before the debrief.
         </h2>
         <p className="font-sans" style={{ fontSize: 13, color: '#78716C', marginTop: 4 }}>
-          Predicting before you see the examiner's notes makes the notes stick. Don't worry about being right.
+          Predicting before you see the examiner's view makes the debrief stick. Don't worry about being right.
         </p>
       </header>
 

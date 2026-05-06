@@ -25,9 +25,47 @@ export interface PredictPrompt {
   options?: string[];
   correctAnswer?: string | number;
   hint?: string;
+  /** Per-prompt debrief content (Stage 3). REQUIRED for new questions.
+   *  See /CLAUDE.md § "Strategiser content quality rules". */
+  debrief?: PromptDebrief;
 }
 
-export type ExamSubject = 'english' | 'irish' | 'maths' | 'geography';
+// ─── Per-prompt debrief (Stage 3) ───────────────────────────────────────
+// Replaces the legacy flat `topAnswerIncludes` / `commonTraps` fields.
+// Per-prompt structure forces specificity — each prompt names the
+// strategic principle it tests and the common wrong answer to it.
+
+export interface ExaminerSource {
+  /** Year of the report or marking scheme. */
+  year: number;
+  /** Document type. Marking schemes are examiner-authored too. */
+  type: 'chief-examiner' | 'marking-scheme' | 'sample-paper';
+  /** Optional page reference into the source. */
+  pageRef?: string;
+}
+
+export interface PromptDebrief {
+  /** One short line: what strategic principle this prompt was testing. */
+  strategicPrinciple: string;
+  /** Common wrong answer + why students pick it. Source citation required
+   *  if drawn from a report; flagged unsourced otherwise. */
+  commonWrongAnswer: {
+    answer: string;
+    reason: string;
+    source?: ExaminerSource;
+  };
+}
+
+export interface BiggestMistake {
+  /** Short headline framing the mistake. */
+  title: string;
+  /** 2-4 sentences explaining the recurring mistake on this task type. */
+  body: string;
+  /** Examiner-source citation. Required if drawn from a report. */
+  source?: ExaminerSource;
+}
+
+export type ExamSubject = 'english' | 'irish' | 'maths' | 'geography' | 'business';
 
 export interface ExamQuestion {
   id: string;                    // e.g. "english-2023-p2-q1"
@@ -47,9 +85,21 @@ export interface ExamQuestion {
   commandWords: string[];
   questionText: QuestionPart[];
   predictPrompts: PredictPrompt[];
-  topAnswerIncludes: string[];
-  commonTraps: string[];
-  markScheme?: string;           // markdown, optional
+
+  /** Closing card on the Debrief stage. REQUIRED for new questions per
+   *  /CLAUDE.md § "Strategiser content quality rules". */
+  biggestMistake?: BiggestMistake;
+
+  /** @deprecated Replaced by per-prompt `PromptDebrief` and question-level
+   *  `biggestMistake`. Kept as legacy fallback so existing questions
+   *  continue rendering until migrated — see /STRATEGISER_MIGRATION.md.
+   *  Do not use in new questions. */
+  topAnswerIncludes?: string[];
+  /** @deprecated As above. */
+  commonTraps?: string[];
+  /** @deprecated The mark-scheme stage was folded into Debrief's biggest
+   *  mistake card. Do not use. */
+  markScheme?: string;
 }
 
 export interface ExamSubjectMeta {
@@ -58,7 +108,7 @@ export interface ExamSubjectMeta {
   questions: ExamQuestion[];
 }
 
-export type ExamStrategiserStage = 'raw' | 'predict' | 'annotation' | 'insights' | 'mark-scheme';
+export type ExamStrategiserStage = 'question' | 'predict' | 'debrief';
 
 /** Player-local predict answers — kept in component state only, never persisted. */
 export type PredictAnswers = Record<string, string | number>;

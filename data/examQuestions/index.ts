@@ -11,12 +11,14 @@ import { englishQuestions } from './english';
 import { irishQuestions } from './irish';
 import { mathsQuestions } from './maths';
 import { geographyQuestions } from './geography';
+import { businessQuestions } from './business';
 
 export const EXAM_SUBJECTS: ExamSubjectMeta[] = [
   { id: 'english',   label: 'English',   questions: englishQuestions },
   { id: 'irish',     label: 'Irish',     questions: irishQuestions },
   { id: 'maths',     label: 'Maths',     questions: mathsQuestions },
   { id: 'geography', label: 'Geography', questions: geographyQuestions },
+  { id: 'business',  label: 'Business',  questions: businessQuestions },
 ];
 
 export function getQuestionsBySubject(subject: ExamSubject): ExamQuestion[] {

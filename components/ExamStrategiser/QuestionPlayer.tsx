@@ -3,50 +3,63 @@
  * SPDX-License-Identifier: Apache-2.0
  *
  * QuestionPlayer — controls stage navigation for a single ExamQuestion.
+ * Three stages: question → predict → debrief.
  * State (predictAnswers, predictSubmitted, current stage) lives here and
  * resets when the student returns to the question list.
  *
- * Student-mode forward gating: the top-bar forward arrow can advance from
- * any stage EXCEPT predict, where it requires the student to have submitted
- * their predictions. This stops accidental skip-aheads through the active-
- * recall stage.
+ * Forward gating: the top-bar forward arrow can advance from any stage
+ * EXCEPT predict, where it requires the student to have submitted their
+ * predictions. Stops accidental skip-aheads through the active-recall stage.
+ *
+ * Legacy detection: a dev-only console warning surfaces when a question
+ * lacking the new-schema `debrief` / `biggestMistake` fields is loaded, so
+ * the migration backlog stays visible. See /STRATEGISER_MIGRATION.md.
  */
 
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { type ExamQuestion, type ExamStrategiserStage, type PredictAnswers } from '../../types/examStrategiser';
 import StageProgress from './StageProgress';
-import RawQuestionStage from './stages/RawQuestionStage';
+import QuestionStage from './stages/QuestionStage';
 import PredictStage from './stages/PredictStage';
-import AnnotationStage from './stages/AnnotationStage';
-import InsightsStage from './stages/InsightsStage';
-import MarkSchemeStage from './stages/MarkSchemeStage';
+import DebriefStage from './stages/DebriefStage';
 
 interface Props {
   question: ExamQuestion;
   onBackToList: () => void;
 }
 
-const QuestionPlayer: React.FC<Props> = ({ question, onBackToList }) => {
-  const stages: ExamStrategiserStage[] = useMemo(() => {
-    const base: ExamStrategiserStage[] = ['raw', 'predict', 'annotation', 'insights'];
-    if (question.markScheme) base.push('mark-scheme');
-    return base;
-  }, [question.markScheme]);
+const STAGES: ExamStrategiserStage[] = ['question', 'predict', 'debrief'];
 
+const QuestionPlayer: React.FC<Props> = ({ question, onBackToList }) => {
   const [stageIdx, setStageIdx] = useState(0);
   const [answers, setAnswers] = useState<PredictAnswers>({});
   const [predictSubmitted, setPredictSubmitted] = useState(false);
 
-  const stage = stages[stageIdx];
+  // Dev-only legacy-schema warning. Surfaces in the console when a question
+  // hasn't been migrated to the per-prompt `debrief` + question-level
+  // `biggestMistake` shape. Helps keep the migration backlog visible.
+  useEffect(() => {
+    if (!import.meta.env.DEV) return;
+    const isLegacy = !question.biggestMistake
+      || question.predictPrompts.some(p => !p.debrief);
+    if (isLegacy) {
+      console.warn(
+        `[Strategiser] Legacy-format question loaded: "${question.id}". ` +
+        `See /STRATEGISER_MIGRATION.md to track migration status.`,
+      );
+    }
+  }, [question.id, question.biggestMistake, question.predictPrompts]);
+
+  const stage = STAGES[stageIdx];
 
   const goBack = () => {
     if (stageIdx > 0) setStageIdx(i => i - 1);
     else onBackToList();
   };
   const goForward = () => {
-    if (stageIdx < stages.length - 1) setStageIdx(i => i + 1);
+    if (stageIdx < STAGES.length - 1) setStageIdx(i => i + 1);
     else onBackToList();
   };
 
@@ -70,13 +83,13 @@ const QuestionPlayer: React.FC<Props> = ({ question, onBackToList }) => {
       </button>
 
       <StageProgress
-        stages={stages}
+        stages={STAGES}
         current={stage}
         onBack={goBack}
         onForward={goForward}
         canGoBack={stageIdx > 0}
         canGoForward={canGoForward}
-        forwardLabel={stageIdx === stages.length - 1 ? 'Done' : 'Next'}
+        forwardLabel={stageIdx === STAGES.length - 1 ? 'Done' : 'Next'}
       />
 
       <AnimatePresence mode="wait">
@@ -87,8 +100,8 @@ const QuestionPlayer: React.FC<Props> = ({ question, onBackToList }) => {
           exit={{ opacity: 0, y: -8 }}
           transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
         >
-          {stage === 'raw' && (
-            <RawQuestionStage question={question} onPredictStart={() => setStageIdx(stages.indexOf('predict'))} />
+          {stage === 'question' && (
+            <QuestionStage question={question} onPredictStart={() => setStageIdx(STAGES.indexOf('predict'))} />
           )}
           {stage === 'predict' && (
             <PredictStage
@@ -97,12 +110,10 @@ const QuestionPlayer: React.FC<Props> = ({ question, onBackToList }) => {
               submitted={predictSubmitted}
               onAnswer={(id, v) => setAnswers(prev => ({ ...prev, [id]: v }))}
               onMarkSubmitted={() => setPredictSubmitted(true)}
-              onAdvance={() => setStageIdx(stages.indexOf('annotation'))}
+              onAdvance={() => setStageIdx(STAGES.indexOf('debrief'))}
             />
           )}
-          {stage === 'annotation' && <AnnotationStage question={question} />}
-          {stage === 'insights' && <InsightsStage question={question} />}
-          {stage === 'mark-scheme' && <MarkSchemeStage question={question} />}
+          {stage === 'debrief' && <DebriefStage question={question} answers={answers} />}
         </MotionDiv>
       </AnimatePresence>
     </div>

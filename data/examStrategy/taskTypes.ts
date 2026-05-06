@@ -119,6 +119,50 @@ export const TASK_TYPES: TaskTypeMeta[] = [
     subject: 'maths',
   },
 
+  // ── Business ────────────────────────────────────────────────────────
+  {
+    id: 'business-section-1-short',
+    label: 'Section 1 — short response',
+    description: 'Compulsory 10-mark short-response questions. Mix of definitions, ratio calculations, true/false, matching. Brevity rewarded for "list/name/state" cues; full sentences for "outline/explain".',
+    subject: 'business',
+  },
+  {
+    id: 'business-abq',
+    label: 'Applied Business Question (ABQ)',
+    description: 'Compulsory 80-mark case-study question (20% of paper). The defining HL Business challenge — answers must combine business theory with direct quotes/phrases from the case. Theory without case-link scores 0; case-summary without theory scores 0.',
+    subject: 'business',
+  },
+  {
+    id: 'business-people-in-business',
+    label: 'Section 3 — People in Business (Unit 1)',
+    description: 'Section 3 Part 1 60-mark question (Q1 / Q4). Three sub-parts at 20 marks each. Tests contract law, industrial relations, employment legislation, conflict/co-operative relationships.',
+    subject: 'business',
+  },
+  {
+    id: 'business-domestic-environment',
+    label: 'Section 3 — Domestic Environment (Unit 6)',
+    description: 'Section 3 Part 1 60-mark question (Q2). Often least popular in cohort but well-marked when attempted. Tests business organisations, government taxes/policy, social/environmental responsibility.',
+    subject: 'business',
+  },
+  {
+    id: 'business-international-environment',
+    label: 'Section 3 — International Environment (Unit 7)',
+    description: 'Section 3 Part 1 60-mark question (Q3). Tests EU institutions, directives/regulations, global marketing, free-trade barriers, MNCs.',
+    subject: 'business',
+  },
+  {
+    id: 'business-managing',
+    label: 'Section 3 — Managing (Units 4 / 5)',
+    description: 'Section 3 Part 2 60-mark question (Q5 / Q6). Tests management activities, communication, change management, insurance, taxation, motivation theories, financial calculations.',
+    subject: 'business',
+  },
+  {
+    id: 'business-business-in-action',
+    label: 'Section 3 — Business in Action (Units 2 / 3 / 5)',
+    description: 'Section 3 Part 2 60-mark question (Q7 / Q8). Tests expansion methods, marketing mix, market research, finance sources, breakeven analysis. Often rewards numerical-plus-theory mixes.',
+    subject: 'business',
+  },
+
   // ── Geography ───────────────────────────────────────────────────────
   {
     id: 'geography-physical-process-explanation',
