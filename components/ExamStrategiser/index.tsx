@@ -24,6 +24,7 @@ import TimeAllocationCalculator from './knowledge/modules/TimeAllocationCalculat
 import ExaminerPetPeeveTrainer from './knowledge/modules/ExaminerPetPeeveTrainer';
 import MarkingSchemeGrammarExplainer from './knowledge/modules/MarkingSchemeGrammarExplainer';
 import SrpIdentifier from './knowledge/modules/SrpIdentifier';
+import WorkingShownAllocator from './knowledge/modules/WorkingShownAllocator';
 
 const TEAL = '#2A7D6F';
 
@@ -175,6 +176,7 @@ const KnowledgeModuleView: React.FC<{ moduleId: KnowledgeModuleId; onBack: () =>
     case 'pet-peeves': return <ExaminerPetPeeveTrainer onBack={onBack} />;
     case 'marking-grammar': return <MarkingSchemeGrammarExplainer onBack={onBack} />;
     case 'srp-identifier': return <SrpIdentifier onBack={onBack} />;
+    case 'working-shown': return <WorkingShownAllocator onBack={onBack} />;
   }
 };
 

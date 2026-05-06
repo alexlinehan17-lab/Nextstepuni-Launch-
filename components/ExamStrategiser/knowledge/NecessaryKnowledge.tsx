@@ -29,7 +29,8 @@ export type KnowledgeModuleId =
   | 'pet-peeves'
   | 'marking-grammar'
   // Stage 2 — built tiles only; new tiles arrive with each module commit
-  | 'srp-identifier';
+  | 'srp-identifier'
+  | 'working-shown';
 
 type Stage = 1 | 2;
 
@@ -85,6 +86,13 @@ const TILES: ModuleTile[] = [
     title: 'SRP Identifier',
     valueProp: 'Read a real long-question paragraph like an examiner. Three phases: highlight what you think counts, see the actual classification, then watch every credited SRP draw down to a live mark counter.',
     estimatedMinutes: 12,
+  },
+  {
+    id: 'working-shown',
+    stage: 2,
+    title: 'Working-Shown Allocator',
+    valueProp: 'Build a Maths/Science answer step by step. Marks land as ribbons next to each step. Slips and blunders are deducted in real time. Five answer paths show what each level of "showing your work" actually scores.',
+    estimatedMinutes: 14,
   },
 ];
 

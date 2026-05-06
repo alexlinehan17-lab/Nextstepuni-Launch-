@@ -13,3 +13,4 @@ export { SUBJECT_TIMING } from './subjectTiming';
 
 // Stage 2
 export { SRP_SAMPLES } from './srpSamples';
+export { WORKED_QUESTIONS } from './workedQuestions';
