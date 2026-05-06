@@ -14,3 +14,4 @@ export { SUBJECT_TIMING } from './subjectTiming';
 // Stage 2
 export { SRP_SAMPLES } from './srpSamples';
 export { WORKED_QUESTIONS } from './workedQuestions';
+export { SANITY_CHECK_QUESTIONS } from './sanityChecks';

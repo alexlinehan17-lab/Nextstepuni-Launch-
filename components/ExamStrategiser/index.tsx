@@ -25,6 +25,7 @@ import ExaminerPetPeeveTrainer from './knowledge/modules/ExaminerPetPeeveTrainer
 import MarkingSchemeGrammarExplainer from './knowledge/modules/MarkingSchemeGrammarExplainer';
 import SrpIdentifier from './knowledge/modules/SrpIdentifier';
 import WorkingShownAllocator from './knowledge/modules/WorkingShownAllocator';
+import SanityCheckTrainer from './knowledge/modules/SanityCheckTrainer';
 
 const TEAL = '#2A7D6F';
 
@@ -177,6 +178,7 @@ const KnowledgeModuleView: React.FC<{ moduleId: KnowledgeModuleId; onBack: () =>
     case 'marking-grammar': return <MarkingSchemeGrammarExplainer onBack={onBack} />;
     case 'srp-identifier': return <SrpIdentifier onBack={onBack} />;
     case 'working-shown': return <WorkingShownAllocator onBack={onBack} />;
+    case 'sanity-check': return <SanityCheckTrainer onBack={onBack} />;
   }
 };
 

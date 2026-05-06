@@ -30,7 +30,8 @@ export type KnowledgeModuleId =
   | 'marking-grammar'
   // Stage 2 — built tiles only; new tiles arrive with each module commit
   | 'srp-identifier'
-  | 'working-shown';
+  | 'working-shown'
+  | 'sanity-check';
 
 type Stage = 1 | 2;
 
@@ -93,6 +94,13 @@ const TILES: ModuleTile[] = [
     title: 'Working-Shown Allocator',
     valueProp: 'Build a Maths/Science answer step by step. Marks land as ribbons next to each step. Slips and blunders are deducted in real time. Five answer paths show what each level of "showing your work" actually scores.',
     estimatedMinutes: 14,
+  },
+  {
+    id: 'sanity-check',
+    stage: 2,
+    title: 'Sanity-Check Trainer',
+    valueProp: 'Four candidate answers, three absurd. Tap each wrong one and identify which check (Order of Magnitude, Units, Sign, Substitute-Back) catches it. The radar pulses around the answer in the colour of the catching check. Reaction time logged.',
+    estimatedMinutes: 12,
   },
 ];
 
