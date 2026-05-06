@@ -359,6 +359,60 @@ The library holds two source types per subject/year:
 
 Both are examiner-authored and citable. Marking schemes are particularly useful for per-question rules ("Max X SRPs if…", "Apply a *", indicative material lists). Cite as `Marking scheme YYYY` inline.
 
+## Necessary Knowledge tab
+
+A third peer view inside the Exam Strategiser, alongside Practice and Trap Patterns. It teaches the *hidden curriculum* of the Leaving Cert — command words, marking-scheme grammars, time allocation, examiner pet peeves — material no syllabus covers but every Chief Examiner Report keeps complaining about.
+
+### Architecture
+
+```
+components/ExamStrategiser/
+├── index.tsx                        # adds 'knowledge' to View, routes module sub-views
+└── knowledge/
+    ├── NecessaryKnowledge.tsx       # tab landing — 5 tiles + closing CER quote
+    ├── KnowledgeModuleShell.tsx     # shared wrapper (breadcrumb, header, why-card, summary)
+    ├── QuickCheck.tsx               # reusable end-of-module multi-choice quiz
+    └── modules/
+        ├── CommandWordDecoder.tsx           # E1
+        ├── PCLMAllocator.tsx                # E2 (Purpose Ceiling)
+        ├── TimeAllocationCalculator.tsx     # E3 + sunk-cost simulator
+        ├── ExaminerPetPeeveTrainer.tsx      # E12
+        └── MarkingSchemeGrammarExplainer.tsx
+```
+
+Data lives in `data/knowledge/`:
+- `commandWords.ts` — 13 commands + 4 modifiers (source: dossier § A1)
+- `examinerPetPeeves.ts` — 12 perennial peeves (sources: § B1-B11, § D)
+- `subjectMarkingGrammar.ts` — 5 marking architectures (source: § A2)
+- `subjectTiming.ts` — 12 subject timing tables (source: § A3)
+- `index.ts` — registry
+
+Types in `types/knowledge.ts`. Every entry carries a `DossierRef { section, page, cite }` for audit traceability.
+
+### Source-of-truth rule
+
+Every claim in the Necessary Knowledge tab traces to `/docs/leaving-cert-knowledge-dossier.md`. The dossier itself draws on SEC marking schemes, Chief Examiner Reports, and NCCA documents. **Do not generate Necessary Knowledge content from your own knowledge of the Leaving Cert** — the dossier is the authority. If a claim does not appear there, flag it rather than write it.
+
+### Aesthetic register
+
+Necessary Knowledge follows the **Strategiser register** (matching the rest of `components/ExamStrategiser/`), not the bold module register from the Visual Design System above:
+- Cards: `background: #FFFFFF`, `border: 1px solid #EDEBE8`, `border-radius: 16px`
+- Highlight panels (callouts, "Why this matters", outcomes): `background: #FAF7F4`, `border: 1px solid ${TEAL}33`
+- Sliders: `accent-color: #2A7D6F`
+- The TEAL constant is `#2A7D6F`, same as the rest of the app
+- This is a deliberate departure from the 2px #1a1a1a card border used in the educational modules — the Strategiser is a working tool, not a teaching narrative, and uses a quieter palette
+
+### Adding a new module
+
+1. Add the module ID to `KnowledgeModuleId` in `NecessaryKnowledge.tsx` and add a tile to `TILES`.
+2. Author the data in `data/knowledge/<file>.ts` if new types of data are needed (else extend an existing file). All entries must carry a `source: DossierRef`.
+3. Create the component in `components/ExamStrategiser/knowledge/modules/<ModuleName>.tsx`. Wrap in `<KnowledgeModuleShell>` with `whyThisMatters` and `summary`. Close with a `<QuickCheck>` of 3 questions.
+4. Wire it into `index.tsx`'s `KnowledgeModuleView` switch.
+
+### Stage roadmap
+
+The dossier defines E1-E22 interactive concepts. Stage 1 ships the five highest-leverage modules (the five currently built). Stage 2 candidates: SRP Engine (E5), Mock-Calibration Predictor (E15), Choice-Question Optimiser (E14), Diagram Mark Counter (E11). Stage 3: longer-form simulators where appropriate.
+
 ## Strategiser content quality rules
 
 Every Strategiser unit must consult the relevant report(s) in /examiner-reports/[subject]/ before generating debrief content. Cite the year inline (e.g. "Chief Examiner 2023 noted...").
