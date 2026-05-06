@@ -4,8 +4,13 @@
  *
  * Necessary Knowledge — tab landing.
  *
- * Hero, five entry tiles for Stage 1 modules, and a closing Chief Examiner
- * Report quote that frames the whole tab's thesis.
+ * Hero, two stages of entry tiles, and a closing Chief Examiner Report
+ * quote that frames the whole tab's thesis.
+ *
+ * Stage 1 modules use the quieter Strategiser register.
+ * Stage 2 modules use the bolder Brilliant.org / Mercury hybrid register
+ * — denser and more instrument-panel-like — and are flagged as such on
+ * their tiles.
  *
  * Source of truth for content: /docs/leaving-cert-knowledge-dossier.md.
  * Every claim here traces to that file.
@@ -14,51 +19,72 @@
 import React from 'react';
 
 const TEAL = '#2A7D6F';
+const INK = '#1a1a1a';
 
 export type KnowledgeModuleId =
+  // Stage 1
   | 'command-words'
   | 'pclm'
   | 'time-allocation'
   | 'pet-peeves'
-  | 'marking-grammar';
+  | 'marking-grammar'
+  // Stage 2 — built tiles only; new tiles arrive with each module commit
+  | 'srp-identifier';
+
+type Stage = 1 | 2;
 
 interface ModuleTile {
   id: KnowledgeModuleId;
+  stage: Stage;
   title: string;
   valueProp: string;
   estimatedMinutes: number;
 }
 
 const TILES: ModuleTile[] = [
+  // ─── Stage 1 ────────────────────────────────────────────────────────
   {
     id: 'command-words',
+    stage: 1,
     title: 'Command Word Decoder',
     valueProp: 'Paste any LC question. See the command words, modifiers, the structural template the examiner expects, and the specific error each one catches.',
     estimatedMinutes: 8,
   },
   {
     id: 'pclm',
+    stage: 1,
     title: 'PCLM Allocator',
     valueProp: 'The Purpose Ceiling rule in English caps your Coherence and Language marks at your Purpose mark. See it in action with sliders.',
     estimatedMinutes: 6,
   },
   {
     id: 'time-allocation',
+    stage: 1,
     title: 'Time-Allocation Calculator',
     valueProp: 'Per-mark timing for every paper. Plus a sunk-cost simulator showing why a part-answer to all required questions beats a perfect answer to fewer.',
     estimatedMinutes: 7,
   },
   {
     id: 'pet-peeves',
+    stage: 1,
     title: 'Examiner Pet-Peeve Trainer',
     valueProp: 'The same complaints every Chief Examiner Report makes, year after year. Card-stack of the perennial 12, with the fix for each.',
     estimatedMinutes: 10,
   },
   {
     id: 'marking-grammar',
+    stage: 1,
     title: 'Marking-Scheme Grammar',
     valueProp: 'How each subject is actually marked: PCLM in English, SRPs in Geography, Attempt-mark/Blunder/Slip in Maths, headings in Accounting, key-phrases in Sciences.',
     estimatedMinutes: 9,
+  },
+  // ─── Stage 2 ────────────────────────────────────────────────────────
+  {
+    id: 'srp-identifier',
+    stage: 2,
+    title: 'SRP Identifier',
+    valueProp: 'Read a real long-question paragraph like an examiner. Three phases: highlight what you think counts, see the actual classification, then watch every credited SRP draw down to a live mark counter.',
+    estimatedMinutes: 12,
   },
 ];
 
@@ -67,6 +93,9 @@ interface Props {
 }
 
 const NecessaryKnowledge: React.FC<Props> = ({ onOpenModule }) => {
+  const stage1 = TILES.filter(t => t.stage === 1);
+  const stage2 = TILES.filter(t => t.stage === 2);
+
   return (
     <div className="space-y-6">
       <header>
@@ -81,9 +110,17 @@ const NecessaryKnowledge: React.FC<Props> = ({ onOpenModule }) => {
         </p>
       </header>
 
+      <StageHeader number={1} title="Foundations" subtitle="Five fundamentals every LC student should learn first." />
       <div className="grid sm:grid-cols-2 gap-3">
-        {TILES.map(tile => (
+        {stage1.map(tile => (
           <Tile key={tile.id} tile={tile} onOpen={() => onOpenModule(tile.id)} />
+        ))}
+      </div>
+
+      <StageHeader number={2} title="See marks happen" subtitle="Denser, more visual interactives. Mistake-first pedagogy — see the wrong answer, feel why it loses marks, then surface the fix." />
+      <div className="grid sm:grid-cols-2 gap-3">
+        {stage2.map(tile => (
+          <Stage2Tile key={tile.id} tile={tile} onOpen={() => onOpenModule(tile.id)} />
         ))}
       </div>
 
@@ -91,6 +128,36 @@ const NecessaryKnowledge: React.FC<Props> = ({ onOpenModule }) => {
     </div>
   );
 };
+
+const StageHeader: React.FC<{ number: number; title: string; subtitle: string }> = ({ number, title, subtitle }) => (
+  <div className="flex items-baseline gap-3 pt-1">
+    <span
+      className="font-serif shrink-0"
+      style={{
+        backgroundColor: TEAL,
+        color: '#FFFFFF',
+        borderRadius: 999,
+        width: 26,
+        height: 26,
+        fontSize: 12,
+        fontWeight: 700,
+        display: 'inline-flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      {number}
+    </span>
+    <div>
+      <p className="font-serif" style={{ fontSize: 17, fontWeight: 600, color: INK }}>
+        {title}
+      </p>
+      <p className="font-sans" style={{ fontSize: 12.5, color: '#78716C', marginTop: 1 }}>
+        {subtitle}
+      </p>
+    </div>
+  </div>
+);
 
 const Tile: React.FC<{ tile: ModuleTile; onOpen: () => void }> = ({ tile, onOpen }) => (
   <button
@@ -136,6 +203,63 @@ const Tile: React.FC<{ tile: ModuleTile; onOpen: () => void }> = ({ tile, onOpen
       Start
       <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden>
         <path d="M4 3L7 6L4 9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    </span>
+  </button>
+);
+
+/** Stage 2 tile — denser, bolder. Inverts on hover. */
+const Stage2Tile: React.FC<{ tile: ModuleTile; onOpen: () => void }> = ({ tile, onOpen }) => (
+  <button
+    type="button"
+    onClick={onOpen}
+    className="rounded-2xl text-left transition-colors w-full"
+    style={{
+      backgroundColor: '#FFFFFF',
+      border: `2px solid ${INK}`,
+      padding: '20px 22px',
+      cursor: 'pointer',
+    }}
+    onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = INK; e.currentTarget.querySelectorAll('[data-flip]').forEach(el => { (el as HTMLElement).style.color = '#FFFFFF'; }); }}
+    onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#FFFFFF'; e.currentTarget.querySelectorAll('[data-flip]').forEach(el => { (el as HTMLElement).style.color = INK; }); }}
+  >
+    <div className="flex items-start justify-between gap-3 mb-2">
+      <div>
+        <p
+          className="font-sans"
+          style={{ fontSize: 9.5, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.7, color: TEAL, marginBottom: 4 }}
+        >
+          Stage 2 · Interactive
+        </p>
+        <h3 data-flip className="font-serif" style={{ fontSize: 17, fontWeight: 600, color: INK, lineHeight: 1.25, transition: 'color 0.2s' }}>
+          {tile.title}
+        </h3>
+      </div>
+      <span
+        className="font-sans shrink-0"
+        style={{
+          fontSize: 10,
+          fontWeight: 700,
+          color: '#FFFFFF',
+          backgroundColor: TEAL,
+          borderRadius: 999,
+          padding: '3px 9px',
+          whiteSpace: 'nowrap',
+        }}
+      >
+        {tile.estimatedMinutes} min
+      </span>
+    </div>
+    <p data-flip className="font-sans" style={{ fontSize: 12.5, color: '#3F3B36', lineHeight: 1.55, marginBottom: 14, transition: 'color 0.2s' }}>
+      {tile.valueProp}
+    </p>
+    <span
+      className="font-sans inline-flex items-center gap-1"
+      style={{ fontSize: 12, fontWeight: 700, color: TEAL }}
+    >
+      Open the instrument panel
+      <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden>
+        <path d="M4 3L7 6L4 9" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     </span>
   </button>

@@ -23,6 +23,7 @@ import PCLMAllocator from './knowledge/modules/PCLMAllocator';
 import TimeAllocationCalculator from './knowledge/modules/TimeAllocationCalculator';
 import ExaminerPetPeeveTrainer from './knowledge/modules/ExaminerPetPeeveTrainer';
 import MarkingSchemeGrammarExplainer from './knowledge/modules/MarkingSchemeGrammarExplainer';
+import SrpIdentifier from './knowledge/modules/SrpIdentifier';
 
 const TEAL = '#2A7D6F';
 
@@ -173,6 +174,7 @@ const KnowledgeModuleView: React.FC<{ moduleId: KnowledgeModuleId; onBack: () =>
     case 'time-allocation': return <TimeAllocationCalculator onBack={onBack} />;
     case 'pet-peeves': return <ExaminerPetPeeveTrainer onBack={onBack} />;
     case 'marking-grammar': return <MarkingSchemeGrammarExplainer onBack={onBack} />;
+    case 'srp-identifier': return <SrpIdentifier onBack={onBack} />;
   }
 };
 
