@@ -11,6 +11,7 @@ import { type ExamQuestion } from '../../types/examStrategiser';
 export const mathsQuestions: ExamQuestion[] = [
   {
     id: 'maths-placeholder-2024-p1-q1',
+    taskType: 'maths-section-a-algebra',
     subject: 'maths',
     year: 2024,
     paper: 'Paper 1',
@@ -133,6 +134,7 @@ export const mathsQuestions: ExamQuestion[] = [
   },
   {
     id: 'maths-2025-ord-p1-q3',
+    taskType: 'maths-section-a-algebra',
     subject: 'maths',
     year: 2025,
     paper: 'Paper 1',
@@ -266,6 +268,7 @@ export const mathsQuestions: ExamQuestion[] = [
   },
   {
     id: 'maths-2025-ord-p1-q4',
+    taskType: 'maths-section-a-calculus',
     subject: 'maths',
     year: 2025,
     paper: 'Paper 1',
@@ -391,6 +394,7 @@ export const mathsQuestions: ExamQuestion[] = [
   },
   {
     id: 'maths-2025-ord-p1-q7',
+    taskType: 'maths-section-b-functions-graphing',
     subject: 'maths',
     year: 2025,
     paper: 'Paper 1',
@@ -578,6 +582,7 @@ export const mathsQuestions: ExamQuestion[] = [
   },
   {
     id: 'maths-2025-ord-p1-q8',
+    taskType: 'maths-section-b-functions-graphing',
     subject: 'maths',
     year: 2025,
     paper: 'Paper 1',
@@ -738,6 +743,7 @@ export const mathsQuestions: ExamQuestion[] = [
   },
   {
     id: 'maths-2025-ord-p2-q7',
+    taskType: 'maths-section-b-probability',
     subject: 'maths',
     year: 2025,
     paper: 'Paper 2',
@@ -914,6 +920,7 @@ export const mathsQuestions: ExamQuestion[] = [
   },
   {
     id: 'maths-2025-ord-p2-q8',
+    taskType: 'maths-section-b-statistics',
     subject: 'maths',
     year: 2025,
     paper: 'Paper 2',
@@ -1097,6 +1104,7 @@ export const mathsQuestions: ExamQuestion[] = [
   },
   {
     id: 'maths-2025-ord-p2-q9',
+    taskType: 'maths-section-b-geometry',
     subject: 'maths',
     year: 2025,
     paper: 'Paper 2',
@@ -1260,6 +1268,7 @@ export const mathsQuestions: ExamQuestion[] = [
   },
   {
     id: 'maths-2025-ord-p2-q10',
+    taskType: 'maths-section-b-trigonometry',
     subject: 'maths',
     year: 2025,
     paper: 'Paper 2',

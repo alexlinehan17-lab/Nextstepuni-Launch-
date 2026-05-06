@@ -11,6 +11,7 @@ import { type ExamQuestion } from '../../types/examStrategiser';
 export const irishQuestions: ExamQuestion[] = [
   {
     id: 'irish-placeholder-2024-p2-q1',
+    taskType: 'irish-literature-essay',
     subject: 'irish',
     year: 2024,
     paper: 'Paper 2',

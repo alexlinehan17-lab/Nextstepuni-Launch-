@@ -12,6 +12,7 @@ import { type ExamQuestion } from '../../types/examStrategiser';
 export const englishQuestions: ExamQuestion[] = [
   {
     id: 'english-2025-p1-text1-qa-iii',
+    taskType: 'english-style-elements',
     subject: 'english',
     year: 2025,
     paper: 'Paper 1',
@@ -84,6 +85,7 @@ export const englishQuestions: ExamQuestion[] = [
 
   {
     id: 'english-2025-p1-text2-qb',
+    taskType: 'english-composition-genre-task',
     subject: 'english',
     year: 2025,
     paper: 'Paper 1',
@@ -177,6 +179,7 @@ export const englishQuestions: ExamQuestion[] = [
 
   {
     id: 'english-2025-p1-composing-2',
+    taskType: 'english-composition-speech',
     subject: 'english',
     year: 2025,
     paper: 'Paper 1',
@@ -258,6 +261,7 @@ export const englishQuestions: ExamQuestion[] = [
 
   {
     id: 'english-2025-p1-composing-3',
+    taskType: 'english-composition-short-story',
     subject: 'english',
     year: 2025,
     paper: 'Paper 1',
@@ -345,6 +349,7 @@ export const englishQuestions: ExamQuestion[] = [
 
   {
     id: 'english-2024-p1-text1-qa-i',
+    taskType: 'english-comprehension-insight',
     subject: 'english',
     year: 2024,
     paper: 'Paper 1',
@@ -413,6 +418,7 @@ export const englishQuestions: ExamQuestion[] = [
 
   {
     id: 'english-2024-p1-text1-qa-ii',
+    taskType: 'english-personal-views',
     subject: 'english',
     year: 2024,
     paper: 'Paper 1',
@@ -488,6 +494,7 @@ export const englishQuestions: ExamQuestion[] = [
 
   {
     id: 'english-2024-p1-text2-qb',
+    taskType: 'english-composition-genre-task',
     subject: 'english',
     year: 2024,
     paper: 'Paper 1',
@@ -571,6 +578,7 @@ export const englishQuestions: ExamQuestion[] = [
 
   {
     id: 'english-2024-p1-composing-5',
+    taskType: 'english-composition-discursive',
     subject: 'english',
     year: 2024,
     paper: 'Paper 1',

@@ -3,8 +3,13 @@
  * SPDX-License-Identifier: Apache-2.0
  *
  * QuestionPlayer — controls stage navigation for a single ExamQuestion.
- * State (predictAnswers, current stage) lives here and resets when the
- * student returns to the question list.
+ * State (predictAnswers, predictSubmitted, current stage) lives here and
+ * resets when the student returns to the question list.
+ *
+ * Student-mode forward gating: the top-bar forward arrow can advance from
+ * any stage EXCEPT predict, where it requires the student to have submitted
+ * their predictions. This stops accidental skip-aheads through the active-
+ * recall stage.
  */
 
 import React, { useMemo, useState } from 'react';
@@ -32,6 +37,7 @@ const QuestionPlayer: React.FC<Props> = ({ question, onBackToList }) => {
 
   const [stageIdx, setStageIdx] = useState(0);
   const [answers, setAnswers] = useState<PredictAnswers>({});
+  const [predictSubmitted, setPredictSubmitted] = useState(false);
 
   const stage = stages[stageIdx];
 
@@ -43,6 +49,11 @@ const QuestionPlayer: React.FC<Props> = ({ question, onBackToList }) => {
     if (stageIdx < stages.length - 1) setStageIdx(i => i + 1);
     else onBackToList();
   };
+
+  // Forward arrow gating — student-mode. The predict stage is the only
+  // active-recall stage; advancing past it without engaging defeats the
+  // pedagogy. Other stages are reveal-only, so forward is unconstrained.
+  const canGoForward = stage !== 'predict' || predictSubmitted;
 
   return (
     <div>
@@ -64,7 +75,7 @@ const QuestionPlayer: React.FC<Props> = ({ question, onBackToList }) => {
         onBack={goBack}
         onForward={goForward}
         canGoBack={stageIdx > 0}
-        canGoForward={true}
+        canGoForward={canGoForward}
         forwardLabel={stageIdx === stages.length - 1 ? 'Done' : 'Next'}
       />
 
@@ -83,8 +94,10 @@ const QuestionPlayer: React.FC<Props> = ({ question, onBackToList }) => {
             <PredictStage
               question={question}
               answers={answers}
+              submitted={predictSubmitted}
               onAnswer={(id, v) => setAnswers(prev => ({ ...prev, [id]: v }))}
-              onSubmit={() => setStageIdx(stages.indexOf('annotation'))}
+              onMarkSubmitted={() => setPredictSubmitted(true)}
+              onAdvance={() => setStageIdx(stages.indexOf('annotation'))}
             />
           )}
           {stage === 'annotation' && <AnnotationStage question={question} />}

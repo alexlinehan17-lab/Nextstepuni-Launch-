@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
+import React from 'react';
 import { type ExamQuestion, type PredictAnswers, type PredictPrompt } from '../../../types/examStrategiser';
 
 const TEAL = '#2A7D6F';
@@ -11,18 +11,17 @@ const TEAL = '#2A7D6F';
 interface Props {
   question: ExamQuestion;
   answers: PredictAnswers;
+  /** Lifted from QuestionPlayer so the top-bar forward arrow can gate on it. */
+  submitted: boolean;
   onAnswer: (promptId: string, value: string | number) => void;
-  onSubmit: () => void;
+  /** Marks the predict stage as submitted (reveals correct answers + advance CTA). */
+  onMarkSubmitted: () => void;
+  /** Advances to the annotation stage. */
+  onAdvance: () => void;
 }
 
-const PredictStage: React.FC<Props> = ({ question, answers, onAnswer, onSubmit }) => {
-  const [submitted, setSubmitted] = useState(false);
+const PredictStage: React.FC<Props> = ({ question, answers, submitted, onAnswer, onMarkSubmitted, onAdvance }) => {
   const allAnswered = question.predictPrompts.every(p => answers[p.id] !== undefined && answers[p.id] !== '');
-
-  const handleSubmit = () => {
-    setSubmitted(true);
-    // Don't auto-advance — let the student see the marked answers, then advance from the bottom CTA.
-  };
 
   return (
     <div className="space-y-6">
@@ -55,7 +54,7 @@ const PredictStage: React.FC<Props> = ({ question, answers, onAnswer, onSubmit }
         {!submitted ? (
           <button
             type="button"
-            onClick={handleSubmit}
+            onClick={onMarkSubmitted}
             disabled={!allAnswered}
             className="rounded-full transition-colors"
             style={{
@@ -73,7 +72,7 @@ const PredictStage: React.FC<Props> = ({ question, answers, onAnswer, onSubmit }
         ) : (
           <button
             type="button"
-            onClick={onSubmit}
+            onClick={onAdvance}
             className="rounded-full transition-colors"
             style={{
               backgroundColor: TEAL,

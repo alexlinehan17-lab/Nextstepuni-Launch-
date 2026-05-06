@@ -2,10 +2,10 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Exam Strategiser — top-level: subject tabs + question list + player switch.
- * No props — pulls all data from the static question registry. Eventually
- * will filter by the student's subject profile, but for now it shows all
- * subjects regardless.
+ * Exam Strategiser — top-level. Two views, peer to each other:
+ *   - Practice: subject tabs → strategy preamble → question list → player
+ *   - Trap Patterns: cross-subject trap library, with example links that
+ *     navigate back into Practice mode at the linked question
  */
 
 import React, { useMemo, useState } from 'react';
@@ -13,10 +13,15 @@ import { EXAM_SUBJECTS } from '../../data/examQuestions';
 import { type ExamQuestion, type ExamSubject } from '../../types/examStrategiser';
 import QuestionList from './QuestionList';
 import QuestionPlayer from './QuestionPlayer';
+import SubjectStrategyPanel from './SubjectStrategyPanel';
+import TrapLibrary from './TrapLibrary';
 
 const TEAL = '#2A7D6F';
 
+type View = 'practice' | 'patterns';
+
 const ExamStrategiser: React.FC = () => {
+  const [view, setView] = useState<View>('practice');
   const [subject, setSubject] = useState<ExamSubject>('english');
   const [activeQuestion, setActiveQuestion] = useState<ExamQuestion | null>(null);
 
@@ -25,6 +30,21 @@ const ExamStrategiser: React.FC = () => {
     [subject],
   );
 
+  /** Cross-view navigation — clicking a trap-pattern example switches to
+   *  Practice mode at the right subject and opens the question. */
+  const openQuestionById = (questionId: string) => {
+    for (const meta of EXAM_SUBJECTS) {
+      const q = meta.questions.find(qq => qq.id === questionId);
+      if (q) {
+        setSubject(meta.id);
+        setActiveQuestion(q);
+        setView('practice');
+        return;
+      }
+    }
+  };
+
+  // Question-player view — full takeover when a question is active.
   if (activeQuestion) {
     return (
       <div className="max-w-4xl mx-auto w-full">
@@ -50,14 +70,18 @@ const ExamStrategiser: React.FC = () => {
         </p>
       </header>
 
+      {/* Top-level view switcher */}
       <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit">
-        {EXAM_SUBJECTS.map(s => {
-          const active = s.id === subject;
+        {([
+          { id: 'practice', label: 'Practice' },
+          { id: 'patterns', label: 'Trap Patterns' },
+        ] as const).map(opt => {
+          const active = opt.id === view;
           return (
             <button
-              key={s.id}
+              key={opt.id}
               type="button"
-              onClick={() => setSubject(s.id)}
+              onClick={() => setView(opt.id)}
               className="rounded-lg transition-colors font-sans"
               style={{
                 padding: '8px 16px',
@@ -70,13 +94,48 @@ const ExamStrategiser: React.FC = () => {
                 boxShadow: active ? '0 1px 2px rgba(0,0,0,0.04)' : 'none',
               }}
             >
-              {s.label}
+              {opt.label}
             </button>
           );
         })}
       </div>
 
-      <QuestionList questions={questions} onSelect={(q) => setActiveQuestion(q)} />
+      {view === 'practice' ? (
+        <>
+          {/* Subject tabs */}
+          <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit">
+            {EXAM_SUBJECTS.map(s => {
+              const active = s.id === subject;
+              return (
+                <button
+                  key={s.id}
+                  type="button"
+                  onClick={() => setSubject(s.id)}
+                  className="rounded-lg transition-colors font-sans"
+                  style={{
+                    padding: '8px 16px',
+                    fontSize: 13,
+                    fontWeight: 600,
+                    backgroundColor: active ? '#FFFFFF' : 'transparent',
+                    color: active ? TEAL : '#78716C',
+                    border: 'none',
+                    cursor: 'pointer',
+                    boxShadow: active ? '0 1px 2px rgba(0,0,0,0.04)' : 'none',
+                  }}
+                >
+                  {s.label}
+                </button>
+              );
+            })}
+          </div>
+
+          <SubjectStrategyPanel subject={subject} />
+
+          <QuestionList questions={questions} onSelect={(q) => setActiveQuestion(q)} />
+        </>
+      ) : (
+        <TrapLibrary onOpenQuestion={openQuestionById} />
+      )}
     </div>
   );
 };

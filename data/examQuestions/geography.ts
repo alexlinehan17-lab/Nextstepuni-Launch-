@@ -13,6 +13,7 @@ import { type ExamQuestion } from '../../types/examStrategiser';
 export const geographyQuestions: ExamQuestion[] = [
   {
     id: 'geo-2025-hl-q1c',
+    taskType: 'geography-physical-process-explanation',
     subject: 'geography',
     year: 2025,
     paper: 'Paper 2',
@@ -79,6 +80,7 @@ export const geographyQuestions: ExamQuestion[] = [
 
   {
     id: 'geo-2025-hl-q2bi',
+    taskType: 'geography-physical-process-explanation',
     subject: 'geography',
     year: 2025,
     paper: 'Paper 2',
@@ -146,6 +148,7 @@ export const geographyQuestions: ExamQuestion[] = [
 
   {
     id: 'geo-2025-hl-q2c',
+    taskType: 'geography-physical-process-explanation',
     subject: 'geography',
     year: 2025,
     paper: 'Paper 2',
@@ -216,6 +219,7 @@ export const geographyQuestions: ExamQuestion[] = [
 
   {
     id: 'geo-2025-hl-q4b',
+    taskType: 'geography-regional-economic-activity',
     subject: 'geography',
     year: 2025,
     paper: 'Paper 2',
