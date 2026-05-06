@@ -28,11 +28,12 @@ export type KnowledgeModuleId =
   | 'time-allocation'
   | 'pet-peeves'
   | 'marking-grammar'
-  // Stage 2 — built tiles only; new tiles arrive with each module commit
+  // Stage 2
   | 'srp-identifier'
   | 'working-shown'
   | 'sanity-check'
-  | 'spot-the-trap';
+  | 'spot-the-trap'
+  | 'ceiling-visualiser';
 
 type Stage = 1 | 2;
 
@@ -109,6 +110,13 @@ const TILES: ModuleTile[] = [
     title: 'Spot the Trap',
     valueProp: 'Past-paper-style traps across six subjects. 30-second timer to spot the trap before the reveal. Pattern card every 5 cards shows where your blind spots cluster. Closing trap-map names your worst category.',
     estimatedMinutes: 16,
+  },
+  {
+    id: 'ceiling-visualiser',
+    stage: 2,
+    title: 'Sub-task Ceiling Visualiser',
+    valueProp: 'Watch a beautiful answer hit the ceiling and drop. Rewind to the exact sentence where the cap fired. See what 2 minutes on the missed sub-task would have done. Four cap-rule scenarios; closing pattern names the single habit that defeats all four.',
+    estimatedMinutes: 10,
   },
 ];
 

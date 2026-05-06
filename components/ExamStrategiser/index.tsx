@@ -27,6 +27,7 @@ import SrpIdentifier from './knowledge/modules/SrpIdentifier';
 import WorkingShownAllocator from './knowledge/modules/WorkingShownAllocator';
 import SanityCheckTrainer from './knowledge/modules/SanityCheckTrainer';
 import SpotTheTrap from './knowledge/modules/SpotTheTrap';
+import SubTaskCeilingVisualiser from './knowledge/modules/SubTaskCeilingVisualiser';
 
 const TEAL = '#2A7D6F';
 
@@ -181,6 +182,7 @@ const KnowledgeModuleView: React.FC<{ moduleId: KnowledgeModuleId; onBack: () =>
     case 'working-shown': return <WorkingShownAllocator onBack={onBack} />;
     case 'sanity-check': return <SanityCheckTrainer onBack={onBack} />;
     case 'spot-the-trap': return <SpotTheTrap onBack={onBack} />;
+    case 'ceiling-visualiser': return <SubTaskCeilingVisualiser onBack={onBack} />;
   }
 };
 
