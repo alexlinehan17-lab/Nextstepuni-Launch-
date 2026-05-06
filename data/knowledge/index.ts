@@ -15,3 +15,4 @@ export { SUBJECT_TIMING } from './subjectTiming';
 export { SRP_SAMPLES } from './srpSamples';
 export { WORKED_QUESTIONS } from './workedQuestions';
 export { SANITY_CHECK_QUESTIONS } from './sanityChecks';
+export { TRAP_CARDS, TRAP_CATEGORY_LABELS, TRAP_CATEGORY_FIXES } from './trapCards';

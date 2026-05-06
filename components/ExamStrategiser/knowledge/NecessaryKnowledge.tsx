@@ -31,7 +31,8 @@ export type KnowledgeModuleId =
   // Stage 2 — built tiles only; new tiles arrive with each module commit
   | 'srp-identifier'
   | 'working-shown'
-  | 'sanity-check';
+  | 'sanity-check'
+  | 'spot-the-trap';
 
 type Stage = 1 | 2;
 
@@ -101,6 +102,13 @@ const TILES: ModuleTile[] = [
     title: 'Sanity-Check Trainer',
     valueProp: 'Four candidate answers, three absurd. Tap each wrong one and identify which check (Order of Magnitude, Units, Sign, Substitute-Back) catches it. The radar pulses around the answer in the colour of the catching check. Reaction time logged.',
     estimatedMinutes: 12,
+  },
+  {
+    id: 'spot-the-trap',
+    stage: 2,
+    title: 'Spot the Trap',
+    valueProp: 'Past-paper-style traps across six subjects. 30-second timer to spot the trap before the reveal. Pattern card every 5 cards shows where your blind spots cluster. Closing trap-map names your worst category.',
+    estimatedMinutes: 16,
   },
 ];
 
