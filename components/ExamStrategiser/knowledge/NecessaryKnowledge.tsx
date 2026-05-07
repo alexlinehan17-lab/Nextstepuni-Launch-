@@ -35,7 +35,8 @@ export type KnowledgeModuleId =
   | 'spot-the-trap'
   | 'ceiling-visualiser'
   // Stage 3
-  | 'comparative-linker';
+  | 'comparative-linker'
+  | 'rsr-allocator';
 
 type Stage = 1 | 2 | 3;
 
@@ -127,6 +128,13 @@ const TILES: ModuleTile[] = [
     title: 'Comparative Texts Linker',
     valueProp: 'English Comparative answers fail when paragraphs are about one text at a time. Build your answer point by point; watch each point either thread across all three texts or sit isolated. Six sample questions across all four modes.',
     estimatedMinutes: 18,
+  },
+  {
+    id: 'rsr-allocator',
+    stage: 3,
+    title: 'RSR Section Allocator',
+    valueProp: 'Word-budget meter for every section of the History Research Study Report against its mark weight. Source-evaluation quality checker (Origin / Purpose / Value / Limitations). Review-of-Process slop detector with prescriptions.',
+    estimatedMinutes: 16,
   },
 ];
 

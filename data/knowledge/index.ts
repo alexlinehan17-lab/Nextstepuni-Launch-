@@ -20,3 +20,4 @@ export { CEILING_SCENARIOS } from './ceilingScenarios';
 
 // Stage 3
 export { COMPARATIVE_QUESTIONS } from './comparativeQuestions';
+export { RSR_SECTIONS, SOURCE_EVAL_CHECKS, SLOP_PATTERNS } from './rsrConfig';
