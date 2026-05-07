@@ -7,8 +7,9 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { MotionCircle, MotionDiv } from './Motion';
 import {
   Rocket, ArrowRight, BarChart3, Compass,
-  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell
+  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell, MessageSquare
 } from 'lucide-react';
+import FeedbackQrModal from './FeedbackQrModal';
 import { getAvatarUrl } from '../utils/authUtils';
 import { type CourseData } from './Library';
 import { type UserSettings } from '../types';
@@ -69,6 +70,7 @@ interface KnowledgeTreeProps {
 
 export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, _onGoToInsights, onGoToTrainingHub, allCourses, onSelectModule: _onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onDevRankUp }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [feedbackQrOpen, setFeedbackQrOpen] = useState(false);
 
   const sidebarItems = [
     { icon: Home, label: 'Home', onClick: () => {}, active: true },
@@ -274,6 +276,19 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
             </div>
             <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
               {settings.darkMode ? 'Light Mode' : 'Dark Mode'}
+            </span>
+          </button>
+
+          {/* Share feedback (QR) */}
+          <button
+            onClick={() => setFeedbackQrOpen(true)}
+            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+          >
+            <div className="shrink-0 flex items-center justify-center w-[18px]">
+              <MessageSquare size={18} strokeWidth={1.5} className="text-zinc-500" />
+            </div>
+            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              Share Feedback
             </span>
           </button>
 
@@ -638,6 +653,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
 
       </div>
       </div>
+
+      <FeedbackQrModal open={feedbackQrOpen} onClose={() => setFeedbackQrOpen(false)} />
     </div>
   );
 };
