@@ -65,7 +65,8 @@ type CandidateVerdict =
   | { kind: 'pending-check'; tapMs: number } // student tagged absurd, picking which check
   | { kind: 'tagged-correct' }
   | { kind: 'absurd-resolved'; check: SanityCheck; reactionMs: number; rightCheck: boolean }
-  | { kind: 'wrong-tagged-correct' }; // student tagged absurd as correct
+  | { kind: 'wrong-tagged-correct' }   // student let an absurd answer through as "looks fine"
+  | { kind: 'wrong-tagged-absurd' };   // student tagged the correct answer as absurd
 
 interface QuestionLog {
   questionId: string;
@@ -101,7 +102,12 @@ const SanityCheckTrainer: React.FC<Props> = ({ onBack }) => {
   const allResolved = useMemo(() => {
     return question.candidates.every(c => {
       const v = log.candidates[c.id];
-      return v.kind === 'absurd-resolved' || v.kind === 'tagged-correct' || v.kind === 'wrong-tagged-correct';
+      return (
+        v.kind === 'absurd-resolved' ||
+        v.kind === 'tagged-correct' ||
+        v.kind === 'wrong-tagged-correct' ||
+        v.kind === 'wrong-tagged-absurd'
+      );
     });
   }, [log, question]);
 
@@ -133,7 +139,23 @@ const SanityCheckTrainer: React.FC<Props> = ({ onBack }) => {
     const v = log.candidates[cid];
     if (v.kind !== 'pending-check') return;
     const candidate = question.candidates.find(c => c.id === cid)!;
-    if (!candidate.catchingCheck) return; // shouldn't happen — only absurds reach here
+
+    // The student tagged the correct answer as absurd. Picking any check
+    // here resolves to a "wrong-tagged-absurd" verdict — the answer was
+    // actually correct, the student over-corrected. We don't record this
+    // in the reaction history because the timing isn't a meaningful signal.
+    if (candidate.correct) {
+      setLog(prev => ({
+        ...prev,
+        candidates: {
+          ...prev.candidates,
+          [cid]: { kind: 'wrong-tagged-absurd' },
+        },
+      }));
+      return;
+    }
+
+    if (!candidate.catchingCheck) return;
     const reactionMs = Date.now() - log.startMs;
     const rightCheck = candidate.catchingCheck === check;
     setLog(prev => ({
@@ -144,6 +166,16 @@ const SanityCheckTrainer: React.FC<Props> = ({ onBack }) => {
       },
     }));
     setHistory(prev => [...prev, { check, reactionMs, correct: rightCheck }]);
+  };
+
+  /** Lets a student back out of a pending-check tag — useful when they
+   *  realise they\'ve clicked "Absurd" on the correct answer. */
+  const onUndoPending = (cid: string) => {
+    if (log.candidates[cid].kind !== 'pending-check') return;
+    setLog(prev => ({
+      ...prev,
+      candidates: { ...prev.candidates, [cid]: { kind: 'open' } },
+    }));
   };
 
   const onAdvance = () => {
@@ -184,6 +216,7 @@ const SanityCheckTrainer: React.FC<Props> = ({ onBack }) => {
           onTagAbsurd={onTagAbsurd}
           onTagCorrect={onTagCorrect}
           onPickCheck={onPickCheck}
+          onUndoPending={onUndoPending}
         />
 
         {allResolved && (
@@ -298,7 +331,8 @@ const CandidateGrid: React.FC<{
   onTagAbsurd: (cid: string) => void;
   onTagCorrect: (cid: string) => void;
   onPickCheck: (cid: string, check: SanityCheck) => void;
-}> = ({ question, log, onTagAbsurd, onTagCorrect, onPickCheck }) => (
+  onUndoPending: (cid: string) => void;
+}> = ({ question, log, onTagAbsurd, onTagCorrect, onPickCheck, onUndoPending }) => (
   <div className="grid sm:grid-cols-2 gap-4">
     {question.candidates.map(c => (
       <CandidateCard
@@ -308,6 +342,7 @@ const CandidateGrid: React.FC<{
         onTagAbsurd={() => onTagAbsurd(c.id)}
         onTagCorrect={() => onTagCorrect(c.id)}
         onPickCheck={(check) => onPickCheck(c.id, check)}
+        onUndo={() => onUndoPending(c.id)}
       />
     ))}
   </div>
@@ -319,12 +354,14 @@ const CandidateCard: React.FC<{
   onTagAbsurd: () => void;
   onTagCorrect: () => void;
   onPickCheck: (check: SanityCheck) => void;
-}> = ({ candidate, verdict, onTagAbsurd, onTagCorrect, onPickCheck }) => {
+  onUndo: () => void;
+}> = ({ candidate, verdict, onTagAbsurd, onTagCorrect, onPickCheck, onUndo }) => {
   const open = verdict.kind === 'open';
   const pending = verdict.kind === 'pending-check';
   const correctTagged = verdict.kind === 'tagged-correct';
   const absurdResolved = verdict.kind === 'absurd-resolved';
   const wrongCorrectTag = verdict.kind === 'wrong-tagged-correct';
+  const wrongAbsurdTag = verdict.kind === 'wrong-tagged-absurd';
 
   let outerBorder = `2px solid ${INK}`;
   let outerBg = '#FFFFFF';
@@ -336,7 +373,7 @@ const CandidateCard: React.FC<{
     const c = CHECK_COLOURS[verdict.check];
     outerBorder = `2px solid ${c}`;
     outerBg = `${c}10`;
-  } else if (wrongCorrectTag) {
+  } else if (wrongCorrectTag || wrongAbsurdTag) {
     outerBorder = `2px solid ${WARN}`;
     outerBg = `${WARN}10`;
   } else if (pending) {
@@ -422,7 +459,7 @@ const CandidateCard: React.FC<{
         )}
 
         {pending && (
-          <CheckPicker onPick={onPickCheck} />
+          <CheckPicker onPick={onPickCheck} onUndo={onUndo} />
         )}
 
         {correctTagged && (
@@ -449,12 +486,20 @@ const CandidateCard: React.FC<{
             detail={`${candidate.absurdityExplanation || ''} Catching check: ${CHECK_LABELS[candidate.catchingCheck!]}.`}
           />
         )}
+
+        {wrongAbsurdTag && (
+          <ResolvedNote
+            tone="miss"
+            headline="This was actually the correct answer."
+            detail="You over-corrected. The right answer can look surprising — that\'s why the four checks need to discriminate between unusual and absurd. None of the checks applies here."
+          />
+        )}
       </motion.div>
     </div>
   );
 };
 
-const CheckPicker: React.FC<{ onPick: (check: SanityCheck) => void }> = ({ onPick }) => {
+const CheckPicker: React.FC<{ onPick: (check: SanityCheck) => void; onUndo: () => void }> = ({ onPick, onUndo }) => {
   const checks: SanityCheck[] = ['order-of-magnitude', 'units', 'sign', 'substitute-back'];
   return (
     <motion.div
@@ -462,9 +507,19 @@ const CheckPicker: React.FC<{ onPick: (check: SanityCheck) => void }> = ({ onPic
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.25 }}
     >
-      <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: '#78716C', marginBottom: 8 }}>
-        Which check catches it?
-      </p>
+      <div className="flex items-baseline justify-between gap-3 mb-2">
+        <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: '#78716C' }}>
+          Which check catches it?
+        </p>
+        <button
+          type="button"
+          onClick={onUndo}
+          className="font-sans"
+          style={{ fontSize: 11, color: '#78716C', background: 'transparent', border: 'none', padding: 0, cursor: 'pointer', textDecoration: 'underline' }}
+        >
+          Not absurd — undo
+        </button>
+      </div>
       <div className="grid grid-cols-2 gap-1.5">
         {checks.map(c => (
           <button
