@@ -324,85 +324,65 @@ const Constellation: React.FC<{
   return (
     <section
       className="rounded-2xl"
-      style={{
-        backgroundColor: INK,
-        color: '#FFFFFF',
-        padding: '22px 24px',
-        position: 'relative',
-        overflow: 'hidden',
-      }}
+      style={{ backgroundColor: '#FFFFFF', border: `2px solid ${INK}`, padding: '22px 24px' }}
     >
-      {/* Starfield background dots */}
-      <StarfieldBackground />
+      <div className="flex items-baseline justify-between gap-3 mb-3 flex-wrap">
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+          Marking-scheme constellation
+        </p>
+        <span className="font-serif" style={{ fontSize: 18, fontWeight: 700, color: hits === total ? TEAL : INK }}>
+          {hits}<span style={{ fontSize: 13, color: '#9e9186', fontWeight: 500 }}> / {total} phrases lit</span>
+        </span>
+      </div>
 
-      <div className="relative" style={{ zIndex: 2 }}>
-        <div className="flex items-baseline justify-between gap-3 mb-3 flex-wrap">
-          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#FFD8A8', opacity: 0.85 }}>
-            Marking-scheme constellation
-          </p>
-          <span className="font-serif" style={{ fontSize: 18, fontWeight: 700, color: hits === total ? TEAL : '#FFFFFF' }}>
-            {hits}<span style={{ fontSize: 13, color: '#FFD8A8', fontWeight: 500, opacity: 0.85 }}> / {total} phrases lit</span>
-          </span>
-        </div>
-
-        <div style={{ position: 'relative', height: 240 }}>
-          <svg viewBox="0 0 100 100" preserveAspectRatio="none" width="100%" height={240} style={{ display: 'block' }} aria-hidden>
-            {/* Phrase nodes */}
-            {question.keys.map((key, i) => {
-              const pos = positions[i];
-              const matched = !!matchMap[key.id];
-              return (
-                <PhraseNode
-                  key={key.id}
-                  pos={pos}
-                  label={key.canonical}
-                  matched={matched}
-                  index={i}
-                />
-              );
-            })}
-          </svg>
-        </div>
+      <div
+        className="relative rounded-xl"
+        style={{
+          backgroundColor: CREAM,
+          border: `1.5px solid ${INK}`,
+          height: 240,
+          overflow: 'hidden',
+        }}
+      >
+        <DotBackdrop />
+        {question.keys.map((key, i) => {
+          const pos = positions[i];
+          const matched = !!matchMap[key.id];
+          return <PhrasePill key={key.id} pos={pos} label={key.canonical} matched={matched} index={i} />;
+        })}
       </div>
     </section>
   );
 };
 
-const StarfieldBackground: React.FC = () => (
-  <svg
+/** Subtle dot pattern on the cream inset. Renders the "constellation"
+ *  feel without competing with the phrases. Pure CSS background — no
+ *  SVG warping. */
+const DotBackdrop: React.FC = () => (
+  <div
     aria-hidden
-    style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', zIndex: 1, opacity: 0.35, pointerEvents: 'none' }}
-    viewBox="0 0 100 100"
-    preserveAspectRatio="none"
-  >
-    {Array.from({ length: 60 }).map((_, i) => {
-      // Deterministic pseudo-random positions
-      const x = ((i * 37) % 100);
-      const y = ((i * 53) % 100);
-      const r = 0.15 + ((i * 13) % 5) * 0.06;
-      const op = 0.3 + ((i * 7) % 5) * 0.1;
-      return (
-        <circle key={i} cx={x} cy={y} r={r} fill="#FFD8A8" opacity={op} />
-      );
-    })}
-  </svg>
+    style={{
+      position: 'absolute',
+      inset: 0,
+      backgroundImage: `radial-gradient(circle, ${INK}15 1px, transparent 1.5px)`,
+      backgroundSize: '18px 18px',
+      pointerEvents: 'none',
+    }}
+  />
 );
 
 interface PhrasePos { x: number; y: number }
 
 function layoutPhrases(keys: PhraseMatchKey[], seed: string): PhrasePos[] {
-  // Deterministic layout: spread keys across a 100x100 viewport in a
-  // balanced starfield pattern based on key count.
   const n = keys.length;
   const positions: PhrasePos[] = [];
   const seedNum = simpleHash(seed);
   for (let i = 0; i < n; i++) {
-    // Distribute around an oval with jitter
-    const angle = (i / n) * Math.PI * 2 + (seedNum % 100) * 0.02;
-    const radius = 28 + ((seedNum * (i + 1)) % 12);
+    const angle = (i / n) * Math.PI * 2 + (seedNum % 100) * 0.04;
+    const radius = 30 + ((seedNum * (i + 1)) % 8);
     const cx = 50 + Math.cos(angle) * radius;
-    const cy = 50 + Math.sin(angle) * radius * 0.78; // squash vertically for landscape feel
-    positions.push({ x: clamp(cx, 12, 88), y: clamp(cy, 18, 82) });
+    const cy = 50 + Math.sin(angle) * radius * 0.6;
+    positions.push({ x: clamp(cx, 18, 82), y: clamp(cy, 22, 78) });
   }
   return positions;
 }
@@ -419,66 +399,54 @@ function simpleHash(s: string): number {
   return Math.abs(h);
 }
 
-const PhraseNode: React.FC<{
+const PhrasePill: React.FC<{
   pos: PhrasePos;
   label: string;
   matched: boolean;
   index: number;
-}> = ({ pos, label, matched, index }) => {
-  // Render as <foreignObject> for HTML-text rendering inside SVG.
-  // Width/height in SVG units (viewBox 0..100).
-  const width = 30;
-  const height = 12;
-  const x = pos.x - width / 2;
-  const y = pos.y - height / 2;
-  return (
-    <motion.g
-      initial={{ opacity: 0.4 }}
-      animate={{ opacity: matched ? 1 : 0.55 }}
-      transition={{ duration: 0.3 }}
-    >
-      {matched && (
-        <motion.circle
-          cx={pos.x}
-          cy={pos.y}
-          r="4"
-          fill={TEAL}
-          opacity="0.45"
-          animate={{ scale: [1, 1.4, 1], opacity: [0.45, 0.0, 0.45] }}
-          transition={{ duration: 2, repeat: Infinity, delay: index * 0.15, ease: 'easeOut' }}
-          style={{ transformOrigin: `${pos.x}px ${pos.y}px` }}
-        />
-      )}
-      <foreignObject x={x} y={y} width={width} height={height}>
-        <div
-          className="font-sans"
-          style={{
-            width: '100%',
-            height: '100%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundColor: matched ? TEAL : 'rgba(63, 59, 54, 0.85)',
-            color: '#FFFFFF',
-            border: `0.4px solid ${matched ? '#FFFFFF' : '#5a5550'}`,
-            borderRadius: 1.5,
-            padding: '0.6px 1.2px',
-            fontSize: '2.4px',
-            fontWeight: 600,
-            textAlign: 'center',
-            lineHeight: 1.15,
-            overflow: 'hidden',
-            wordBreak: 'break-word',
-            boxShadow: matched ? `0 0 4px ${TEAL}` : 'none',
-            transition: 'background-color 0.3s, border-color 0.3s',
-          }}
-        >
-          {label}
-        </div>
-      </foreignObject>
-    </motion.g>
-  );
-};
+}> = ({ pos, label, matched, index }) => (
+  <motion.div
+    initial={{ opacity: 0, scale: 0.9 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.4, delay: index * 0.05, ease: 'easeOut' }}
+    className="font-serif absolute"
+    style={{
+      left: `${pos.x}%`,
+      top: `${pos.y}%`,
+      transform: 'translate(-50%, -50%)',
+      backgroundColor: matched ? TEAL : '#FFFFFF',
+      color: matched ? '#FFFFFF' : '#3F3B36',
+      border: `1.5px solid ${matched ? TEAL_DARK : '#d0cdc8'}`,
+      borderRadius: 8,
+      padding: '7px 12px',
+      fontSize: 13,
+      fontWeight: 600,
+      lineHeight: 1.3,
+      maxWidth: 180,
+      textAlign: 'center',
+      boxShadow: matched ? `0 4px 12px ${TEAL}33` : '0 1px 3px rgba(0,0,0,0.04)',
+      zIndex: matched ? 2 : 1,
+      transition: 'background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s',
+    }}
+  >
+    {matched && (
+      <motion.span
+        aria-hidden
+        initial={{ scale: 1, opacity: 0.5 }}
+        animate={{ scale: 1.15, opacity: 0 }}
+        transition={{ duration: 1.8, repeat: Infinity, ease: 'easeOut', delay: index * 0.15 }}
+        style={{
+          position: 'absolute',
+          inset: -3,
+          borderRadius: 11,
+          border: `2px solid ${TEAL}`,
+          pointerEvents: 'none',
+        }}
+      />
+    )}
+    {label}
+  </motion.div>
+);
 
 // ─── Missed phrases panel ─────────────────────────────────────────────
 
