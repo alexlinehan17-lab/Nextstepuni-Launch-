@@ -30,6 +30,7 @@ import SpotTheTrap from './knowledge/modules/SpotTheTrap';
 import SubTaskCeilingVisualiser from './knowledge/modules/SubTaskCeilingVisualiser';
 import ComparativeTextsLinker from './knowledge/modules/ComparativeTextsLinker';
 import RsrSectionAllocator from './knowledge/modules/RsrSectionAllocator';
+import PhraseMatch from './knowledge/modules/PhraseMatch';
 
 const TEAL = '#2A7D6F';
 
@@ -187,6 +188,7 @@ const KnowledgeModuleView: React.FC<{ moduleId: KnowledgeModuleId; onBack: () =>
     case 'ceiling-visualiser': return <SubTaskCeilingVisualiser onBack={onBack} />;
     case 'comparative-linker': return <ComparativeTextsLinker onBack={onBack} />;
     case 'rsr-allocator': return <RsrSectionAllocator onBack={onBack} />;
+    case 'phrase-match': return <PhraseMatch onBack={onBack} />;
   }
 };
 

@@ -36,7 +36,8 @@ export type KnowledgeModuleId =
   | 'ceiling-visualiser'
   // Stage 3
   | 'comparative-linker'
-  | 'rsr-allocator';
+  | 'rsr-allocator'
+  | 'phrase-match';
 
 type Stage = 1 | 2 | 3;
 
@@ -135,6 +136,13 @@ const TILES: ModuleTile[] = [
     title: 'RSR Section Allocator',
     valueProp: 'Word-budget meter for every section of the History Research Study Report against its mark weight. Source-evaluation quality checker (Origin / Purpose / Value / Limitations). Review-of-Process slop detector with prescriptions.',
     estimatedMinutes: 16,
+  },
+  {
+    id: 'phrase-match',
+    stage: 3,
+    title: 'Phrase Match Constellation',
+    valueProp: 'Marking schemes in Sciences hunt for specific key phrases. Type your answer; phrases light up in a constellation as you match them. 18 questions across Biology, Chemistry, Physics. Reverse mode lets you build the model paragraph from phrases.',
+    estimatedMinutes: 14,
   },
 ];
 
