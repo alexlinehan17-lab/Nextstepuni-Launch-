@@ -149,8 +149,8 @@ const TILES: ModuleTile[] = [
   {
     id: 'phrase-match',
     stage: 3,
-    title: 'Phrase Match Constellation',
-    valueProp: 'Marking schemes in Sciences hunt for specific key phrases. Type your answer; phrases light up in a constellation as you match them. 18 questions across Biology, Chemistry, Physics. Reverse mode lets you build the model paragraph from phrases.',
+    title: 'Phrase Match Petri-Dish',
+    valueProp: 'Marking schemes in Sciences hunt for specific key phrases. Write your definition first; reveal the petri-dish to see which phrases lit up. 18 questions across Biology, Chemistry, Physics. Reverse mode lets you build the model paragraph from phrases.',
     estimatedMinutes: 14,
   },
   {

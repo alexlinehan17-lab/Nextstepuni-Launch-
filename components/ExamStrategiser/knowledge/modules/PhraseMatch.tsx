@@ -4,18 +4,21 @@
  *
  * Marking Scheme Phrase Match (Stage 3.3, E17).
  *
- * Visual metaphor: a phrase constellation. The marking scheme's required
- * key phrases are displayed as nodes scattered in a starfield. The
- * student types or pastes their answer; phrases the answer matches
- * (verbatim or by acceptable paraphrase) light up TEAL with a soft pulse
- * and draw a thin connecting line down to the answer panel below.
- * Missed phrases stay dim — visible gaps in the constellation.
+ * Visual metaphor: a phrase petri-dish. The marking scheme's required
+ * key phrases are scattered across a cream petri-dish surface. Hidden
+ * by default — students must write their definition first; revealing
+ * the petri-dish before writing would just hand them the answer.
+ *
+ * Once revealed, phrases the answer matches (verbatim or by acceptable
+ * paraphrase) light up TEAL with a soft pulsing aura. Missed phrases
+ * stay in muted brown-grey. The student can hide the dish again to
+ * keep writing without peeking.
  *
  * Two modes:
  *
- *   FORWARD — student writes; tool matches against the constellation
- *   and reports phrases hit / total. Each missed phrase carries a
- *   tooltip with acceptable paraphrases drawn from the marking scheme.
+ *   FORWARD — student writes; petri-dish (when revealed) shows phrases
+ *   hit / total. Each missed phrase carries a tooltip with acceptable
+ *   paraphrases drawn from the marking scheme.
  *
  *   REVERSE — "build the model answer". Student is given the question
  *   and the canonical phrases out of order; they click them in the
@@ -27,8 +30,8 @@
  *
  * Source: dossier § B4 (Sciences key-phrase matching).
  *
- * Aesthetic: Stage 3 register — 2px #1a1a1a borders, dark constellation
- * panel for visual contrast, SVG nodes via Framer Motion.
+ * Aesthetic: Stage 3 register — 2px #1a1a1a borders, cream petri-dish
+ * surface inset, framer-motion pulse on matched pills.
  */
 
 import React, { useMemo, useState } from 'react';
@@ -130,13 +133,13 @@ const Hero: React.FC = () => (
       Necessary Knowledge · Stage 3 · Sciences
     </p>
     <h1 className="font-serif" style={{ fontSize: 30, fontWeight: 600, color: INK, marginTop: 4, lineHeight: 1.15 }}>
-      Phrase Match Constellation.
+      Phrase Match Petri-Dish.
     </h1>
     <p className="font-sans max-w-2xl" style={{ fontSize: 14.5, color: '#5a5550', marginTop: 8, lineHeight: 1.55 }}>
       Marking schemes in Biology, Chemistry, and Physics hunt for specific key phrases. Per the dossier, "isotope" must
       include "same atomic number" and "different mass numbers"; "myelin sheath function" requires "to insulate" or
-      "to speed up the transmission". Type your answer; the constellation shows which phrases you hit and which gaps
-      remain.
+      "to speed up the transmission". Write your definition first — then reveal the petri-dish to see which phrases
+      you hit and which gaps remain.
     </p>
   </header>
 );
@@ -267,9 +270,23 @@ const ForwardMode: React.FC<{
   const hits = question.keys.filter(k => matchMap[k.id]).length;
   const total = question.keys.length;
 
+  // Hidden by default — revealing the petri-dish before writing would
+  // hand students the canonical phrases they\'re supposed to recall.
+  const [revealed, setRevealed] = useState(false);
+
+  // Reset reveal state when the question changes.
+  React.useEffect(() => {
+    setRevealed(false);
+  }, [question.id]);
+
   return (
     <>
-      <Constellation question={question} matchMap={matchMap} />
+      <PetriDish
+        question={question}
+        matchMap={matchMap}
+        revealed={revealed}
+        onToggle={() => setRevealed(v => !v)}
+      />
 
       <section
         className="rounded-2xl"
@@ -279,7 +296,7 @@ const ForwardMode: React.FC<{
           <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
             Your answer
           </p>
-          {answer.trim() && (
+          {answer.trim() && revealed && (
             <span className="font-serif" style={{ fontSize: 14, fontWeight: 700, color: hits === total ? TEAL : hits >= total / 2 ? TEAL_DARK : WARN }}>
               {hits} / {total} phrases matched
             </span>
@@ -288,7 +305,7 @@ const ForwardMode: React.FC<{
         <textarea
           value={answer}
           onChange={(e) => setAnswer(e.target.value)}
-          placeholder="Write your answer here. Phrases above will light up as you match them."
+          placeholder="Write your definition here. The petri-dish stays hidden until you ask for it."
           className="w-full font-serif rounded-lg"
           style={{
             backgroundColor: CREAM,
@@ -304,19 +321,21 @@ const ForwardMode: React.FC<{
         />
       </section>
 
-      {answer.trim() && hits < total && (
+      {answer.trim() && revealed && hits < total && (
         <MissedPhrases question={question} matchMap={matchMap} />
       )}
     </>
   );
 };
 
-// ─── Constellation ────────────────────────────────────────────────────
+// ─── Petri-dish ───────────────────────────────────────────────────────
 
-const Constellation: React.FC<{
+const PetriDish: React.FC<{
   question: PhraseMatchQuestion;
   matchMap: Record<string, string | null>;
-}> = ({ question, matchMap }) => {
+  revealed: boolean;
+  onToggle: () => void;
+}> = ({ question, matchMap, revealed, onToggle }) => {
   const positions = useMemo(() => layoutPhrases(question.keys, question.id), [question]);
   const hits = question.keys.filter(k => matchMap[k.id]).length;
   const total = question.keys.length;
@@ -328,32 +347,111 @@ const Constellation: React.FC<{
     >
       <div className="flex items-baseline justify-between gap-3 mb-3 flex-wrap">
         <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
-          Marking-scheme constellation
+          Marking-scheme petri-dish
         </p>
-        <span className="font-serif" style={{ fontSize: 18, fontWeight: 700, color: hits === total ? TEAL : INK }}>
-          {hits}<span style={{ fontSize: 13, color: '#9e9186', fontWeight: 500 }}> / {total} phrases lit</span>
-        </span>
+        {revealed ? (
+          <div className="flex items-baseline gap-3">
+            <span className="font-serif" style={{ fontSize: 18, fontWeight: 700, color: hits === total ? TEAL : INK }}>
+              {hits}<span style={{ fontSize: 13, color: '#9e9186', fontWeight: 500 }}> / {total} phrases lit</span>
+            </span>
+            <button
+              type="button"
+              onClick={onToggle}
+              className="font-sans"
+              style={{ fontSize: 11.5, color: '#78716C', background: 'transparent', border: 'none', padding: 0, cursor: 'pointer', textDecoration: 'underline' }}
+            >
+              Hide
+            </button>
+          </div>
+        ) : (
+          <span className="font-sans" style={{ fontSize: 11.5, color: '#9e9186' }}>
+            {total} phrases · hidden
+          </span>
+        )}
       </div>
 
-      <div
-        className="relative rounded-xl"
-        style={{
-          backgroundColor: CREAM,
-          border: `1.5px solid ${INK}`,
-          height: 240,
-          overflow: 'hidden',
-        }}
-      >
-        <DotBackdrop />
-        {question.keys.map((key, i) => {
-          const pos = positions[i];
-          const matched = !!matchMap[key.id];
-          return <PhrasePill key={key.id} pos={pos} label={key.canonical} matched={matched} index={i} />;
-        })}
-      </div>
+      {revealed ? (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.98 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4, ease: 'easeOut' }}
+          className="relative rounded-xl"
+          style={{
+            backgroundColor: CREAM,
+            border: `1.5px solid ${INK}`,
+            height: 240,
+            overflow: 'hidden',
+          }}
+        >
+          <DotBackdrop />
+          {question.keys.map((key, i) => {
+            const pos = positions[i];
+            const matched = !!matchMap[key.id];
+            return <PhrasePill key={key.id} pos={pos} label={key.canonical} matched={matched} index={i} />;
+          })}
+        </motion.div>
+      ) : (
+        <PetriDishHidden total={total} onReveal={onToggle} />
+      )}
     </section>
   );
 };
+
+const PetriDishHidden: React.FC<{ total: number; onReveal: () => void }> = ({ total, onReveal }) => (
+  <div
+    className="relative rounded-xl"
+    style={{
+      backgroundColor: CREAM,
+      border: `1.5px dashed ${INK}`,
+      padding: '34px 28px',
+      textAlign: 'center',
+      overflow: 'hidden',
+    }}
+  >
+    <DotBackdrop />
+    <div className="relative" style={{ zIndex: 2 }}>
+      <PetriDishGlyph />
+      <p className="font-serif" style={{ fontSize: 17, fontWeight: 600, color: INK, marginTop: 12 }}>
+        {total} phrases live in this petri-dish.
+      </p>
+      <p className="font-sans max-w-md" style={{ fontSize: 12.5, color: '#5a5550', marginTop: 6, marginLeft: 'auto', marginRight: 'auto', lineHeight: 1.55 }}>
+        Write your definition first — peeking at the phrases now would hand you the answer. Reveal when you\'re ready to see what you matched.
+      </p>
+      <button
+        type="button"
+        onClick={onReveal}
+        className="font-sans rounded-full inline-flex items-center gap-1.5"
+        style={{
+          marginTop: 16,
+          backgroundColor: INK,
+          color: '#FFFFFF',
+          border: `2px solid ${INK}`,
+          padding: '10px 22px',
+          fontSize: 13,
+          fontWeight: 600,
+          cursor: 'pointer',
+        }}
+      >
+        Reveal the petri-dish
+        <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden>
+          <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </div>
+);
+
+/** Tiny petri-dish SVG mark — concentric circles with one or two dots
+ *  inside, suggesting colonies. Sits above the reveal button. */
+const PetriDishGlyph: React.FC = () => (
+  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" style={{ display: 'inline-block' }} aria-hidden>
+    <circle cx="21" cy="21" r="18" stroke={INK} strokeWidth="1.5" />
+    <circle cx="21" cy="21" r="14" stroke={INK} strokeWidth="0.8" strokeDasharray="2 1.5" />
+    <circle cx="15" cy="18" r="2" fill={TEAL} opacity="0.7" />
+    <circle cx="26" cy="24" r="1.4" fill={TEAL_DARK} opacity="0.55" />
+    <circle cx="22" cy="13" r="0.9" fill={INK} opacity="0.5" />
+  </svg>
+);
 
 /** Subtle dot pattern on the cream inset. Renders the "constellation"
  *  feel without competing with the phrases. Pure CSS background — no
