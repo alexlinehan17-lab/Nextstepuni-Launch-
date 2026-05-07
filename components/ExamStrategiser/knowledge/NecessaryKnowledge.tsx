@@ -217,7 +217,7 @@ const NecessaryKnowledge: React.FC<Props> = ({ onOpenModule }) => {
       />
       <div className="grid sm:grid-cols-2 gap-3">
         {stage2.map(tile => (
-          <Stage2Tile key={tile.id} tile={tile} onOpen={() => onOpenModule(tile.id)} />
+          <Tile key={tile.id} tile={tile} onOpen={() => onOpenModule(tile.id)} />
         ))}
       </div>
 
@@ -231,7 +231,7 @@ const NecessaryKnowledge: React.FC<Props> = ({ onOpenModule }) => {
           />
           <div className="grid sm:grid-cols-2 gap-3">
             {stage3.map(tile => (
-              <Stage2Tile key={tile.id} tile={tile} onOpen={() => onOpenModule(tile.id)} />
+              <Tile key={tile.id} tile={tile} onOpen={() => onOpenModule(tile.id)} />
             ))}
           </div>
         </>
@@ -467,57 +467,15 @@ const GroupHeader: React.FC<{
   </div>
 );
 
-const Tile: React.FC<{ tile: ModuleTile; onOpen: () => void }> = ({ tile, onOpen }) => (
-  <button
-    type="button"
-    onClick={onOpen}
-    className="rounded-2xl text-left transition-colors w-full"
-    style={{
-      backgroundColor: '#FFFFFF',
-      border: '1px solid #EDEBE8',
-      padding: '20px 22px',
-      cursor: 'pointer',
-    }}
-    onMouseEnter={(e) => { e.currentTarget.style.borderColor = `${TEAL}55`; e.currentTarget.style.backgroundColor = '#FAF7F4'; }}
-    onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#EDEBE8'; e.currentTarget.style.backgroundColor = '#FFFFFF'; }}
-  >
-    <div className="flex items-start justify-between gap-3 mb-2">
-      <h3 className="font-serif" style={{ fontSize: 16, fontWeight: 600, color: '#1A1A1A', lineHeight: 1.3 }}>
-        {tile.title}
-      </h3>
-      <span
-        className="font-sans shrink-0"
-        style={{
-          fontSize: 10,
-          fontWeight: 700,
-          color: TEAL,
-          backgroundColor: '#FAF7F4',
-          border: `1px solid ${TEAL}33`,
-          borderRadius: 999,
-          padding: '2px 8px',
-          whiteSpace: 'nowrap',
-        }}
-      >
-        {tile.estimatedMinutes} min
-      </span>
-    </div>
-    <p className="font-sans" style={{ fontSize: 13, color: '#5C5852', lineHeight: 1.55, marginBottom: 14 }}>
-      {tile.valueProp}
-    </p>
-    <span
-      className="font-sans inline-flex items-center gap-1"
-      style={{ fontSize: 12, fontWeight: 600, color: TEAL }}
-    >
-      Start
-      <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden>
-        <path d="M4 3L7 6L4 9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    </span>
-  </button>
-);
+const STAGE_KICKERS: Record<Stage, string> = {
+  1: 'Stage 1 · Foundations',
+  2: 'Stage 2 · Tools',
+  3: 'Stage 3 · Subject deep dive',
+};
 
-/** Stage 2 tile — denser, bolder. Inverts on hover. */
-const Stage2Tile: React.FC<{ tile: ModuleTile; onOpen: () => void }> = ({ tile, onOpen }) => (
+/** Unified module tile — bold register across all three stages. Inverts
+ *  on hover. The kicker text reflects the tile's stage. */
+const Tile: React.FC<{ tile: ModuleTile; onOpen: () => void }> = ({ tile, onOpen }) => (
   <button
     type="button"
     onClick={onOpen}
@@ -537,7 +495,7 @@ const Stage2Tile: React.FC<{ tile: ModuleTile; onOpen: () => void }> = ({ tile, 
           className="font-sans"
           style={{ fontSize: 9.5, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.7, color: TEAL, marginBottom: 4 }}
         >
-          Stage 2 · Interactive
+          {STAGE_KICKERS[tile.stage]}
         </p>
         <h3 data-flip className="font-serif" style={{ fontSize: 17, fontWeight: 600, color: INK, lineHeight: 1.25, transition: 'color 0.2s' }}>
           {tile.title}
@@ -565,7 +523,7 @@ const Stage2Tile: React.FC<{ tile: ModuleTile; onOpen: () => void }> = ({ tile, 
       className="font-sans inline-flex items-center gap-1"
       style={{ fontSize: 12, fontWeight: 700, color: TEAL }}
     >
-      Open the instrument panel
+      Start
       <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden>
         <path d="M4 3L7 6L4 9" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
