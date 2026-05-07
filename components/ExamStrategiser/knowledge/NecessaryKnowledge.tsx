@@ -37,7 +37,8 @@ export type KnowledgeModuleId =
   // Stage 3
   | 'comparative-linker'
   | 'rsr-allocator'
-  | 'phrase-match';
+  | 'phrase-match'
+  | 'oral-coach';
 
 type Stage = 1 | 2 | 3;
 
@@ -143,6 +144,13 @@ const TILES: ModuleTile[] = [
     title: 'Phrase Match Constellation',
     valueProp: 'Marking schemes in Sciences hunt for specific key phrases. Type your answer; phrases light up in a constellation as you match them. 18 questions across Biology, Chemistry, Physics. Reverse mode lets you build the model paragraph from phrases.',
     estimatedMinutes: 14,
+  },
+  {
+    id: 'oral-coach',
+    stage: 3,
+    title: 'Oral Authenticity Coach',
+    valueProp: 'French / Irish / German / Spanish. Type your prepared oral answer; four toggleable diagnostic layers — Rote phrases, Tense monotony, Structure repetition, Missing personalisation — flag what makes a memorised answer obvious. Before/after view for each prompt.',
+    estimatedMinutes: 18,
   },
 ];
 

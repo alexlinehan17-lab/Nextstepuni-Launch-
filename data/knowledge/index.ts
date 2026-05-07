@@ -22,3 +22,12 @@ export { CEILING_SCENARIOS } from './ceilingScenarios';
 export { COMPARATIVE_QUESTIONS } from './comparativeQuestions';
 export { RSR_SECTIONS, SOURCE_EVAL_CHECKS, SLOP_PATTERNS } from './rsrConfig';
 export { PHRASE_MATCH_QUESTIONS } from './phraseMatch';
+export {
+  ORAL_PROMPTS,
+  ROTE_PATTERNS,
+  TENSE_SIGNALS,
+  GENERIC_NOUN_SIGNALS,
+  SAMPLE_ROTE_ANSWERS,
+  POLISHED_EXEMPLARS,
+  LANGUAGE_LABELS,
+} from './oralCoach';
