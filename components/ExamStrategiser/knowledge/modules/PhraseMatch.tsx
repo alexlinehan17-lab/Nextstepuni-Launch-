@@ -415,7 +415,7 @@ const PetriDishHidden: React.FC<{ total: number; onReveal: () => void }> = ({ to
         {total} phrases live in this petri-dish.
       </p>
       <p className="font-sans max-w-md" style={{ fontSize: 12.5, color: '#5a5550', marginTop: 6, marginLeft: 'auto', marginRight: 'auto', lineHeight: 1.55 }}>
-        Write your definition first — peeking at the phrases now would hand you the answer. Reveal when you\'re ready to see what you matched.
+        Write your definition first — peeking at the phrases now would hand you the answer. Reveal when you&rsquo;re ready to see what you matched.
       </p>
       <button
         type="button"

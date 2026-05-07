@@ -680,7 +680,7 @@ const PatternBreakCard: React.FC<{ history: ResolvedCard[]; onContinue: () => vo
 
       {recentMisses.length === 0 && (
         <p className="font-sans" style={{ fontSize: 13.5, color: '#E8E4DE', lineHeight: 1.6, marginTop: 4 }}>
-          That five-card streak is the trap-reader\'s habit forming. Keep reading every cue twice — modifier, count, restriction, command — before answering.
+          That five-card streak is the trap-reader&rsquo;s habit forming. Keep reading every cue twice — modifier, count, restriction, command — before answering.
         </p>
       )}
 

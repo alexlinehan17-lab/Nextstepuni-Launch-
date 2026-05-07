@@ -435,7 +435,7 @@ const Rewind: React.FC<{
         </button>
       </div>
       <p className="font-sans" style={{ fontSize: 12.5, color: '#5a5550', marginBottom: 16, lineHeight: 1.55 }}>
-        Walk back through the answer until you reach the moment the cap fired. Everything after that point is uncapped quality — but it\'s all stuck under the ceiling.
+        Walk back through the answer until you reach the moment the cap fired. Everything after that point is uncapped quality — but it&rsquo;s all stuck under the ceiling.
       </p>
 
       <div className="space-y-2">

@@ -491,7 +491,7 @@ const CandidateCard: React.FC<{
           <ResolvedNote
             tone="miss"
             headline="This was actually the correct answer."
-            detail="You over-corrected. The right answer can look surprising — that\'s why the four checks need to discriminate between unusual and absurd. None of the checks applies here."
+            detail={'You over-corrected. The right answer can look surprising — that\'s why the four checks need to discriminate between unusual and absurd. None of the checks applies here.'}
           />
         )}
       </motion.div>
