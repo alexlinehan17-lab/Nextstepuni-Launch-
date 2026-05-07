@@ -33,9 +33,11 @@ export type KnowledgeModuleId =
   | 'working-shown'
   | 'sanity-check'
   | 'spot-the-trap'
-  | 'ceiling-visualiser';
+  | 'ceiling-visualiser'
+  // Stage 3
+  | 'comparative-linker';
 
-type Stage = 1 | 2;
+type Stage = 1 | 2 | 3;
 
 interface ModuleTile {
   id: KnowledgeModuleId;
@@ -118,6 +120,14 @@ const TILES: ModuleTile[] = [
     valueProp: 'Watch a beautiful answer hit the ceiling and drop. Rewind to the exact sentence where the cap fired. See what 2 minutes on the missed sub-task would have done. Four cap-rule scenarios; closing pattern names the single habit that defeats all four.',
     estimatedMinutes: 10,
   },
+  // ─── Stage 3 — subject-deep ────────────────────────────────────────
+  {
+    id: 'comparative-linker',
+    stage: 3,
+    title: 'Comparative Texts Linker',
+    valueProp: 'English Comparative answers fail when paragraphs are about one text at a time. Build your answer point by point; watch each point either thread across all three texts or sit isolated. Six sample questions across all four modes.',
+    estimatedMinutes: 18,
+  },
 ];
 
 interface Props {
@@ -127,6 +137,7 @@ interface Props {
 const NecessaryKnowledge: React.FC<Props> = ({ onOpenModule }) => {
   const stage1 = TILES.filter(t => t.stage === 1);
   const stage2 = TILES.filter(t => t.stage === 2);
+  const stage3 = TILES.filter(t => t.stage === 3);
 
   return (
     <div className="space-y-6">
@@ -155,6 +166,17 @@ const NecessaryKnowledge: React.FC<Props> = ({ onOpenModule }) => {
           <Stage2Tile key={tile.id} tile={tile} onOpen={() => onOpenModule(tile.id)} />
         ))}
       </div>
+
+      {stage3.length > 0 && (
+        <>
+          <StageHeader number={3} title="Subject deep dives" subtitle="Per-subject simulators that go where teachers can rarely reach — into the precise mechanics of how a top answer differs from a middle one." />
+          <div className="grid sm:grid-cols-2 gap-3">
+            {stage3.map(tile => (
+              <Stage2Tile key={tile.id} tile={tile} onOpen={() => onOpenModule(tile.id)} />
+            ))}
+          </div>
+        </>
+      )}
 
       <ChiefExaminerCallout />
     </div>

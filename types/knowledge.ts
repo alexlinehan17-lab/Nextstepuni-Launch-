@@ -291,3 +291,156 @@ export interface CeilingScenario {
   crossLink?: { moduleId: string; moduleLabel: string };
   source: DossierRef;
 }
+
+// ─── Stage 3.1: Comparative Texts Linker (E18) ──────────────────────────
+
+export type ComparativeMode = 'theme' | 'cultural-context' | 'general-vision' | 'literary-genre';
+
+/** A single text in the comparative grid. Texts are referenced by widely-
+ *  studied LC titles; their content is paraphrased and never reproduced. */
+export interface ComparativeText {
+  id: string;
+  label: string;        // e.g. "Hamlet"
+  formLabel: string;    // e.g. "Play", "Novel", "Film"
+  descriptor: string;   // 1-line paraphrased context
+}
+
+/** A point a student might write in a comparative answer. */
+export interface ComparativePoint {
+  id: string;
+  text: string;
+  /** IDs of texts this point genuinely engages with — not just name-checks. */
+  textsTouched: string[];
+  /** Examiner-voice classification of why this counts as integrated or serial. */
+  rationale: string;
+  /** If the point is serial (touches < 3 texts), an integrated rewrite is
+   *  surfaced as the counterfactual. */
+  integratedRewrite?: string;
+  /** Connecting verbs the point uses ("whereas", "similarly", "in contrast
+   *  to") — load-bearing words for integration. */
+  connectingVerbs?: string[];
+}
+
+export interface ComparativeQuestion {
+  id: string;
+  mode: ComparativeMode;
+  /** Paraphrased question prompt. Never more than 15 words verbatim from
+   *  any SEC paper. */
+  questionPrompt: string;
+  texts: ComparativeText[]; // 3 texts
+  /** Pre-curated bank of points the student picks from to build their answer. */
+  pointBank: ComparativePoint[];
+  source: DossierRef;
+}
+
+// ─── Stage 3.2: RSR Section Allocator (E19) ────────────────────────────
+
+export type RsrSectionId = 'outline-plan' | 'evaluation-sources' | 'extended-essay' | 'review-process';
+
+export interface RsrSectionSpec {
+  id: RsrSectionId;
+  label: string;
+  /** Marks out of 100. */
+  marksOf100: number;
+  /** Word target ranges per level. */
+  hlMin: number;
+  hlMax: number;
+  olMin: number;
+  olMax: number;
+  /** What this section is supposed to contain — for the inline guide. */
+  guidance: string;
+}
+
+export type SourceEvalCheck = 'origin' | 'purpose' | 'value' | 'limitations';
+
+export interface SourceEvalCheckSpec {
+  id: SourceEvalCheck;
+  label: string;
+  /** Question the criterion is asking. */
+  promptQuestion: string;
+  /** Keyword patterns (case-insensitive substrings) that signal the
+   *  criterion has been addressed. */
+  signalPatterns: string[];
+  /** Examiner-voice prescription if missing. */
+  prescription: string;
+}
+
+export interface SlopPattern {
+  id: string;
+  /** Regex source (case-insensitive). */
+  pattern: string;
+  flag: string;
+  prescription: string;
+}
+
+// ─── Stage 3.3: Marking Scheme Phrase Match (E17) ──────────────────────
+
+export interface PhraseMatchKey {
+  id: string;
+  /** The canonical phrase as listed in the marking scheme. */
+  canonical: string;
+  /** Acceptable paraphrases — case-insensitive substring matches. */
+  acceptable: string[];
+  /** Why this phrase is required. */
+  rationale: string;
+}
+
+export interface PhraseMatchQuestion {
+  id: string;
+  subject: 'biology' | 'chemistry' | 'physics';
+  topicLabel: string;
+  /** Paraphrased question prompt. */
+  questionPrompt: string;
+  /** Required key phrases. */
+  keys: PhraseMatchKey[];
+  /** Model paragraph that uses every phrase coherently — used in Reverse
+   *  mode and as a worked-example reference. */
+  modelAnswer: string;
+  source: DossierRef;
+}
+
+// ─── Stage 3.4: Oral Exam Authenticity Coach (E20) ─────────────────────
+
+export type LanguageId = 'french' | 'german' | 'spanish' | 'irish';
+
+export interface OralPromptSeed {
+  id: string;
+  language: LanguageId;
+  /** Question students prepare answers for in the oral exam. */
+  question: string;
+  topic: 'family' | 'hobbies' | 'school' | 'future-plans' | 'recent-trip';
+  /** Personalisation prompts — concrete moves to push beyond rote. */
+  personalisationPrompts: string[];
+}
+
+export interface RotePattern {
+  id: string;
+  language: LanguageId;
+  /** Regex source (case-insensitive). */
+  pattern: string;
+  flag: string;
+  prescription: string;
+}
+
+/** A simple tense-detector signal — keywords or verb-ending patterns
+ *  that strongly suggest the sentence is in a particular tense. The
+ *  detector produces a tense strip so monotony can be visualised. */
+export interface TenseSignal {
+  id: string;
+  language: LanguageId;
+  /** Short tense label, e.g. "Pres", "Past", "Cond", "Imp", "Subj". */
+  tenseLabel: string;
+  /** Regex patterns whose presence marks the sentence as that tense. */
+  patterns: string[];
+}
+
+/** A generic-noun → personalisation prompt map. Detects sentences with
+ *  unspecified family / friend / place references. */
+export interface GenericNounSignal {
+  id: string;
+  language: LanguageId;
+  /** Regex source. */
+  pattern: string;
+  /** What to append to make it specific. */
+  prescription: string;
+}
