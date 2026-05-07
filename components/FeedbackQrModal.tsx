@@ -134,7 +134,7 @@ const FeedbackQrModal: React.FC<Props> = ({ open, onClose }) => {
             <div
               className="rounded-xl"
               style={{
-                backgroundColor: '#FDF8F0',
+                backgroundColor: '#FFFFFF',
                 border: `1.5px solid ${INK}`,
                 padding: 18,
                 display: 'flex',
