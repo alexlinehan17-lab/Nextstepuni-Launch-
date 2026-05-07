@@ -25,6 +25,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { SANITY_CHECK_QUESTIONS } from '../../../../data/knowledge/sanityChecks';
+import { writePattern } from '../knowledgePatterns';
 import {
   type SanityCheckQuestion,
   type SanityCandidate,
@@ -705,6 +706,29 @@ const SummaryReport: React.FC<{
 
   // Detect neglected checks (low usage relative to others or low accuracy)
   const neglected = byCheck.filter(b => b.total > 0 && b.correctCount / b.total < 0.5);
+
+  // Persist the weakest check to localStorage so the landing's "Your patterns"
+  // panel can surface it cross-module.
+  useEffect(() => {
+    if (totalAttempts < 3) return;
+    const ranked = byCheck
+      .filter(b => b.total > 0)
+      .map(b => ({ check: b.check, accuracy: b.correctCount / b.total }))
+      .sort((a, b) => a.accuracy - b.accuracy);
+    if (ranked.length === 0) return;
+    const weakestCheck = ranked[0].check;
+    const accuracyByCheck: Record<string, number> = {};
+    byCheck.forEach(b => {
+      accuracyByCheck[b.check] = b.total > 0 ? b.correctCount / b.total : 0;
+    });
+    writePattern('sanityCheck', {
+      weakestCheck,
+      accuracyByCheck,
+      sampleSize: totalAttempts,
+      updatedAt: Date.now(),
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [totalAttempts]);
 
   return (
     <section

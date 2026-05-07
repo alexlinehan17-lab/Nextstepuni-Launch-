@@ -361,9 +361,19 @@ Both are examiner-authored and citable. Marking schemes are particularly useful 
 
 ## Necessary Knowledge tab
 
-A third peer view inside the Exam Strategiser, alongside Practice and Trap Patterns. It teaches the *hidden curriculum* of the Leaving Cert — command words, marking-scheme grammars, time allocation, examiner pet peeves, SRPs, mark provenance, sanity checks, traps, ceilings — material no syllabus covers but every Chief Examiner Report keeps complaining about.
+A third peer view inside the Exam Strategiser, alongside Practice and Trap Patterns. It teaches the *hidden curriculum* of the Leaving Cert — command words, marking-scheme grammars, time allocation, examiner pet peeves, SRPs, mark provenance, sanity checks, traps, ceilings, comparative integration, RSR section budgeting, Sciences phrase matching, Languages oral authenticity — material no syllabus covers but every Chief Examiner Report keeps complaining about.
 
-The tab ships in **two stages with intentionally different aesthetic registers**. Read the Aesthetic register section below before editing or adding modules — there are two parallel systems and they shouldn't be mixed within a single module.
+The tab ships in **three groups with intentionally different aesthetic registers and depth**. Read the Aesthetic register section below before editing or adding modules — Stage 1 (Foundations) and Stages 2/3 (Tools / Subject Deep Dives) use different visual systems, and they shouldn't be mixed within a single module.
+
+### Landing taxonomy (Foundations / Tools / Subject Deep Dives)
+
+The landing is grouped into three stage clusters, mapped 1:1 to dossier interactive-concept priority:
+
+- **Foundations (Stage 1)** — five fundamentals every LC student should learn first. Marking-grammar literacy, command-word interpretation, time-per-mark discipline, perennial CER complaints. The quieter Strategiser register.
+- **Tools (Stage 2)** — five mistake-first interactives. Mark provenance, ceiling drops, sanity radar, trap detection. Bold register, animation-as-explanation.
+- **Subject Deep Dives (Stage 3)** — four subject-specific simulators (English / History / Sciences / Languages). The same bold register, denser content. Where teachers can rarely reach — the precise mechanics that separate a top answer from a middle one.
+
+The grouping reflects the dossier's E1-E22 priority ordering plus the user-facing pedagogy (literacy → interactive practice → subject-deep simulation). New modules fit into one of the three groups.
 
 ### Architecture
 
@@ -371,22 +381,28 @@ The tab ships in **two stages with intentionally different aesthetic registers**
 components/ExamStrategiser/
 ├── index.tsx                        # routes 'knowledge' view + module sub-views
 └── knowledge/
-    ├── NecessaryKnowledge.tsx       # tab landing — Stage 1 + Stage 2 tile groups
+    ├── NecessaryKnowledge.tsx       # tab landing — 3 groups + your-patterns panel
     ├── KnowledgeModuleShell.tsx     # Stage 1 shell (breadcrumb, why-card, summary)
     ├── QuickCheck.tsx               # Stage 1 reusable multi-choice quiz
+    ├── knowledgePatterns.ts         # cross-module localStorage signals
     └── modules/
-        # Stage 1 — quieter Strategiser register
+        # Stage 1 — Foundations (quieter Strategiser register)
         ├── CommandWordDecoder.tsx           # E1
         ├── PCLMAllocator.tsx                # E2 (Purpose Ceiling)
         ├── TimeAllocationCalculator.tsx     # E3 + sunk-cost simulator
         ├── ExaminerPetPeeveTrainer.tsx      # E12
         ├── MarkingSchemeGrammarExplainer.tsx
-        # Stage 2 — bold instrument-panel register
+        # Stage 2 — Tools (bold instrument-panel register)
         ├── SrpIdentifier.tsx                # E10 — three-phase SRP heat map
         ├── WorkingShownAllocator.tsx        # E9 — mark provenance ribbons
         ├── SanityCheckTrainer.tsx           # E6 — absurdity radar SVG
         ├── SpotTheTrap.tsx                  # E4 — 30-sec timer + pattern card
-        └── SubTaskCeilingVisualiser.tsx     # E5 — bar-chart ceiling drop
+        ├── SubTaskCeilingVisualiser.tsx     # E5 — bar-chart ceiling drop
+        # Stage 3 — Subject Deep Dives
+        ├── ComparativeTextsLinker.tsx       # E18 — SVG thread weaver
+        ├── RsrSectionAllocator.tsx          # E19 — word-budget meter + slop
+        ├── PhraseMatch.tsx                  # E17 — phrase constellation
+        └── OralAuthenticityCoach.tsx        # E20 — diagnostic underline layers
 ```
 
 Data lives in `data/knowledge/`:
@@ -404,7 +420,28 @@ Stage 2:
 - `trapCards.ts` — 15 paraphrased past-paper trap cards across 6 subjects + `TRAP_CATEGORY_LABELS` and `TRAP_CATEGORY_FIXES` lookup tables (multiple CERs)
 - `ceilingScenarios.ts` — 4 cap-rule scenarios with sentence-level `isCapTrigger` flag and counterfactual `liftedScore` (§ A2, § A5, § B6, § B7)
 
+Stage 3:
+- `comparativeQuestions.ts` — 6 sample questions across 4 LC English Comparative modes (Theme/Issue, Cultural Context, General Vision, Literary Genre); each question has 3 widely-studied LC English texts (paraphrased descriptors only) plus a curated point bank of 4-6 mixed integrated/serial points with `integratedRewrite` counterfactuals (§ B1, § A5)
+- `rsrConfig.ts` — 4 `RSR_SECTIONS` specs (mark-of-100 + HL/OL word ranges), 4 `SOURCE_EVAL_CHECKS` (Origin/Purpose/Value/Limitations) with signal-pattern arrays + prescriptions, 12 `SLOP_PATTERNS` regexes for Review-of-Process filler detection (§ A2, § B5)
+- `phraseMatch.ts` — 18 questions across Biology / Chemistry / Physics; each question has 2-4 canonical key phrases with 3-7 acceptable paraphrases (substring-tolerant matcher) plus a model paragraph (§ B4)
+- `oralCoach.ts` — language-keyed pattern banks for French / Irish / German / Spanish: `ORAL_PROMPTS` (11 sample prompts), `ROTE_PATTERNS` (~20 regexes), `TENSE_SIGNALS` (per-language tense detection patterns), `GENERIC_NOUN_SIGNALS` (~25 family/place patterns with personalisation prompts), plus paired `SAMPLE_ROTE_ANSWERS` and `POLISHED_EXEMPLARS` for the before/after view (§ B3, § B8)
+
 Types in `types/knowledge.ts`. Every entry carries a `DossierRef { section, page, cite }` for audit traceability.
+
+### Cross-module pattern signals (`knowledgePatterns.ts`)
+
+Several modules write a pattern signal to `localStorage` at their closing screen. The landing reads these and surfaces them on a "Your patterns" panel above the Foundations group:
+
+| Signal | Source module | What it captures |
+|---|---|---|
+| `sanityCheck` | `SanityCheckTrainer` | Weakest of the four checks (OoM / Units / Sign / Sub-Back) by accuracy across the session, plus per-check accuracy map |
+| `spotTrap` | `SpotTheTrap` | Weakest trap category (modifier / plural-singular / etc.) by hit rate, plus per-category accuracy map |
+| `comparative` | `ComparativeTextsLinker` | Last integration ratio (0..100) plus sample size |
+| `ceiling` | `SubTaskCeilingVisualiser` | Number of cap-rule scenarios viewed (0..4) |
+
+Storage key: `nk:patterns:v1`. Latest-write-wins per module — we keep the most recent observation, not a history. The shape is versioned so future migrations can ignore stale data cleanly. The panel renders only insights for which a signal exists; it disappears entirely when the user resets patterns or has run no modules yet.
+
+Adding a new pattern signal: extend `PatternSignals` in `knowledgePatterns.ts`, add a `writePattern('newKey', { ... })` call inside the relevant module's closing screen, and extend `buildInsights()` in `NecessaryKnowledge.tsx` to render the new card with kicker / headline / body / openModuleId.
 
 ### Source-of-truth rule
 
@@ -421,20 +458,21 @@ Per-question or per-sample text that paraphrases an SEC paper must stay below th
 - TEAL = `#2A7D6F` (app-wide)
 - All Stage 1 modules share the `KnowledgeModuleShell` wrapper
 
-**Stage 2 — Brilliant.org / Mercury hybrid** (denser, more instrument-panel):
+**Stage 2 / Stage 3 — Brilliant.org / Mercury hybrid** (denser, more instrument-panel):
 - Cards: `background: #FFFFFF`, `border: 2px solid #1a1a1a`, `border-radius: 16px`
-- Cream panels: `background: #FDF8F0` for inset content (rewind tracks, paragraph displays)
+- Cream panels: `background: #FDF8F0` for inset content (rewind tracks, paragraph displays, answer textareas)
 - Inverted insight panels: `background: #1a1a1a`, `color: #FFFFFF`, `#FFD8A8` for warm highlights inside (this is a soft tan — *not* orange — and is the only off-palette accent permitted on dark surfaces)
 - TEAL_DARK = `#1a5a4e`, INK = `#1a1a1a`, WARN = `#A8746E` (warm muted brown for cap/blunder semantics — **not** red, **not** orange)
-- Stage 2 modules **do not use** `KnowledgeModuleShell`. They build their own minimal back-bar + hero + content stack so they can be visually denser
-- Framer Motion is used freely for animation-as-explanation: provenance-trail entries, ceiling-drop springs, radar pulses, trap-reveal fades. Animation must encode meaning — never decorate
-- SVG for diagrammatic interactives: timer rings (`<circle>` with `stroke-dasharray`), absurdity radar (concentric `<rect>` rings), cap line (CSS dashed border), bar chart (`motion.div` height animations)
+- Stage 2/3 modules **do not use** `KnowledgeModuleShell`. They build their own minimal back-bar + hero + content stack so they can be visually denser
+- Framer Motion is used freely for animation-as-explanation: provenance-trail entries, ceiling-drop springs, radar pulses, trap-reveal fades, thread weaving, bar chart drops. Animation must encode meaning — never decorate
+- SVG for diagrammatic interactives: timer rings (`<circle>` with `stroke-dasharray`), absurdity radar (concentric `<rect>` rings), cap line (CSS dashed border), bar chart (`motion.div` height animations), comparative threads (cubic Bézier `<path>` with woven dips), phrase constellation (`<foreignObject>` HTML labels inside SVG starfield)
+- For text-heavy diagnostic surfaces (Oral Coach), use wavy / dashed `text-decoration` underlines as the layer encoding, not coloured backgrounds — readability first
 
-Banned palette colours (orange, amber, bright green, purple, red as a primary) apply across both stages. Coloured left borders are banned project-wide (memory: `feedback_no_left_borders`); use background tints, full backgrounds, or dot accents instead.
+Banned palette colours (orange, amber, bright green, purple, red as a primary) apply across all three stages. Coloured left borders are banned project-wide (memory: `feedback_no_left_borders`); use background tints, full backgrounds, or dot accents instead.
 
-### Stage 2 visual primitives — what to reuse
+### Stage 2 / Stage 3 visual primitives — what to reuse
 
-The five Stage 2 modules introduced reusable visual idioms that future modules (Stage 3 and beyond) should pick up:
+Stage 2 and Stage 3 each introduced reusable visual idioms. Stage 3 specifically resisted lifting Stage 2 primitives into a shared `primitives/` folder because each idiom still has only one consumer; pre-emptive abstraction is more expensive than the duplication. **The threshold for lifting is the third consumer**, not the second.
 
 | Idiom | Source module | Reusable for |
 |---|---|---|
@@ -448,19 +486,25 @@ The five Stage 2 modules introduced reusable visual idioms that future modules (
 | **Bar-chart ceiling drop with cap line** | `SubTaskCeilingVisualiser` | Any module visualising a marking-scheme cap or band ceiling. |
 | **Sentence-level rewind sequencer** | `SubTaskCeilingVisualiser` | Any module that needs to walk a student backwards through their answer. |
 | **Counterfactual lift animation** | `SubTaskCeilingVisualiser` | Any "what if you had X instead?" recovery interaction. |
-
-When you build a Stage 3 module that overlaps with one of these, **lift the visual idiom into a shared `knowledge/primitives/` folder before duplicating the implementation**. The current Stage 2 modules each own their primitives inline because they only need them once; a third user crosses the abstraction threshold.
+| **Cross-text SVG thread weaver** | `ComparativeTextsLinker` | Any module showing relationships across N parallel columns. The cubic-Bézier with mid-point dip is the woven-feel idiom. |
+| **Two-layer overlay bar (filled fill + outlined target)** | `RsrSectionAllocator` | Any module where progress vs target needs to be visible at a glance. |
+| **Signal-pattern checker with prescription** | `RsrSectionAllocator` (Source Eval + Slop Detector) | Any module that detects keyword patterns in student text and surfaces examiner-voice prescriptions for misses. |
+| **Phrase constellation (SVG starfield with `<foreignObject>` labels + matched-glow halos)** | `PhraseMatch` | Any module where matching against a fixed reference set is the core mechanic. |
+| **Sequence-builder with model-order grading** | `PhraseMatch` (Reverse mode) | Any module where ordering matters as much as completeness. |
+| **Toggleable diagnostic underline layers + tense strip** | `OralAuthenticityCoach` | Any module that overlays multiple independent diagnostic signals onto the same student text without making one cancel the others. |
+| **Before/after compare (paired panes with shared diagnostic layers)** | `OralAuthenticityCoach` | Any module showing the cost/benefit of a rewrite via direct comparison. |
 
 ### Adding a new module
 
 1. Author the data in `data/knowledge/<file>.ts`. New types go in `types/knowledge.ts`. Every entry carries a `source: DossierRef`. Re-export from `data/knowledge/index.ts`.
-2. Add the module ID to `KnowledgeModuleId` in `NecessaryKnowledge.tsx` and a tile to `TILES` (set `stage: 1` or `stage: 2`).
+2. Add the module ID to `KnowledgeModuleId` in `NecessaryKnowledge.tsx` and a tile to `TILES` (set `stage: 1`, `2`, or `3`).
 3. Create the component in `components/ExamStrategiser/knowledge/modules/<ModuleName>.tsx`.
-   - **Stage 1**: wrap in `<KnowledgeModuleShell>` with `whyThisMatters` and `summary`; close with a 3-question `<QuickCheck>`.
-   - **Stage 2**: build a minimal back-bar + hero + dense interactive body. Don't use the Stage 1 shell. Animation must encode meaning.
+   - **Stage 1 (Foundations)**: wrap in `<KnowledgeModuleShell>` with `whyThisMatters` and `summary`; close with a 3-question `<QuickCheck>`.
+   - **Stage 2 / Stage 3 (Tools / Subject Deep Dives)**: build a minimal back-bar + hero + dense interactive body. Don't use the Stage 1 shell. Animation must encode meaning.
 4. Wire it into `index.tsx`'s `KnowledgeModuleView` switch.
-5. `npm run build` to verify clean. (No tests / linter — build is the only verification.)
-6. Commit per module if it's a significant standalone shipment.
+5. If the module's closing screen produces a personalised insight, add a `writePattern('<key>', { ... })` call to capture it for the cross-module "Your patterns" panel. See `knowledgePatterns.ts` for the registered keys; extend the `PatternSignals` interface and `buildInsights()` in `NecessaryKnowledge.tsx` to surface it.
+6. `npm run build` to verify clean. (No tests / linter — build is the only verification.)
+7. Commit per module if it's a significant standalone shipment.
 
 ### Stage roadmap
 
@@ -468,9 +512,18 @@ The dossier defines E1-E22 interactive concepts.
 
 - **Stage 1 (shipped):** E1 Command Word Decoder, E2 PCLM Allocator, E3 Time-Allocation Calculator, E12 Examiner Pet-Peeve Trainer, Marking-Scheme Grammar Explainer.
 - **Stage 2 (shipped):** E10 SRP Identifier, E9 Working-Shown Allocator, E6 Sanity-Check Trainer, E4 Spot the Trap, E5 Sub-task Ceiling Visualiser.
-- **Stage 3 candidates (subject-deep):** E18 Comparative Texts Linker (English), E19 RSR Section Allocator (History), E17 Marking-Scheme Phrase Match (Sciences), E20 Oral-Exam Authenticity Coach (Languages / Irish), E21 "Examiner View" mode, E22 Time-of-Day Pacing Coach. These are longer-form simulators with a single-subject focus, suited to deep-dive sessions rather than general literacy.
+- **Stage 3 (shipped):** E18 Comparative Texts Linker (English), E19 RSR Section Allocator (History), E17 Marking-Scheme Phrase Match (Sciences), E20 Oral-Exam Authenticity Coach (Languages — French / Irish / German / Spanish).
 
-When Stage 3 begins, lift the Stage 2 visual primitives listed above into `knowledge/primitives/` first.
+### Post-Stage-3 deferred backlog
+
+The following dossier concepts remain candidates for future expansion. Do not build pre-emptively; defer until analytics show which Stage 1-3 modules drive the most engagement and the most measurable score lift. Re-prioritise from there.
+
+- **E22 Time-of-Day Pacing Coach** — real-time exam simulator; gives the student a paper, sets the clock, throws prompts at calculated intervals ("10 minutes left for question 3"; "you should be finishing the comparative now"). Trains internal pacing. Heavy on state management; useful only if students will commit to running a 3-hour mock inside the app.
+- **E15 Genre Identifier (English Question B)** — student is given a Question B prompt; tool asks: is this a letter, blog, podcast, speech, article, diary, editorial? Shows genre conventions, length expectations, common errors per genre. Useful if Composition genre-misjudging shows up as a dominant Stage 1 pattern.
+- **E13 Diagram Annotation Practice (Geography / Biology / Physics)** — student is given an unannotated diagram and a question; must drag annotation labels to correct positions. Distinguishes labelling from annotating. Heavy on diagram authoring; defer until the SRP Identifier surfaces diagram-mark patterns as a real student weak spot.
+- **E11 PCLM Comment Translator (English)** — student pastes a marker comment ("Your purpose drifts in paragraph 3"); tool explains which PCLM band is affected and what to fix. Useful adjunct to the PCLM Allocator (Stage 1) once students start having mock-graded comments to feed in.
+
+When the third consumer of any Stage 2/3 visual primitive lands, lift the primitive into `knowledge/primitives/` *before* duplicating the implementation a third time. The current modules each own their primitives inline because the implementation cost of a generic version is higher than two copies.
 
 ## Strategiser content quality rules
 

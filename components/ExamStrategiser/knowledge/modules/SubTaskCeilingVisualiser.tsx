@@ -32,10 +32,11 @@
  * drop and counterfactual lift; SVG cap line with dashed pattern.
  */
 
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { CEILING_SCENARIOS } from '../../../../data/knowledge/ceilingScenarios';
 import { type CeilingScenario } from '../../../../types/knowledge';
+import { writePattern } from '../knowledgePatterns';
 
 const TEAL = '#2A7D6F';
 const TEAL_DARK = '#1a5a4e';
@@ -64,6 +65,15 @@ const SubTaskCeilingVisualiser: React.FC<Props> = ({ onBack }) => {
   };
 
   const allViewed = viewedIds.size === CEILING_SCENARIOS.length;
+
+  // Persist scenario-viewing progress for the cross-module "Your patterns" panel.
+  useEffect(() => {
+    if (viewedIds.size === 0) return;
+    writePattern('ceiling', {
+      scenariosViewed: viewedIds.size,
+      updatedAt: Date.now(),
+    });
+  }, [viewedIds]);
 
   return (
     <div className="space-y-6" style={{ color: INK }}>

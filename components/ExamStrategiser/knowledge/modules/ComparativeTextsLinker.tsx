@@ -29,7 +29,7 @@
  * SVG cubic-Bézier threads via Framer Motion path drawing.
  */
 
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { COMPARATIVE_QUESTIONS } from '../../../../data/knowledge/comparativeQuestions';
 import {
@@ -37,6 +37,7 @@ import {
   type ComparativePoint,
   type ComparativeMode,
 } from '../../../../types/knowledge';
+import { writePattern } from '../knowledgePatterns';
 
 const TEAL = '#2A7D6F';
 const TEAL_DARK = '#1a5a4e';
@@ -582,6 +583,17 @@ const Diagnostic: React.FC<{
     });
     return Array.from(set);
   }, [selectedPoints]);
+
+  // Persist integration ratio to localStorage for the cross-module "Your patterns" panel.
+  useEffect(() => {
+    if (selectedPoints.length < 3) return;
+    writePattern('comparative', {
+      avgIntegrationRatio: integrationRatio,
+      sampleSize: selectedPoints.length,
+      updatedAt: Date.now(),
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [integrationRatio, selectedPoints.length]);
 
   return (
     <section

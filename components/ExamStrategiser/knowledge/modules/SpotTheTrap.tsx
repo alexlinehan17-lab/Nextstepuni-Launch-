@@ -33,6 +33,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { TRAP_CARDS, TRAP_CATEGORY_LABELS, TRAP_CATEGORY_FIXES } from '../../../../data/knowledge/trapCards';
 import { type TrapCard, type TrapCategory } from '../../../../types/knowledge';
+import { writePattern } from '../knowledgePatterns';
 
 const TEAL = '#2A7D6F';
 const TEAL_DARK = '#1a5a4e';
@@ -720,6 +721,25 @@ const FinalReport: React.FC<{ history: ResolvedCard[]; totalCards: number; onRes
   }, [history]);
 
   const blindSpot = byCategory.find(c => c.total >= 1 && c.hits / c.total <= 0.5);
+
+  // Persist the weakest trap category to localStorage for the cross-module
+  // "Your patterns" panel.
+  useEffect(() => {
+    if (history.length < 5) return;
+    const accuracyByCategory: Record<string, number> = {};
+    byCategory.forEach(b => {
+      accuracyByCategory[b.category] = b.total > 0 ? b.hits / b.total : 0;
+    });
+    const weakest = byCategory[0]; // already sorted worst-first
+    if (!weakest) return;
+    writePattern('spotTrap', {
+      weakestCategory: weakest.category,
+      accuracyByCategory,
+      sampleSize: history.length,
+      updatedAt: Date.now(),
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [history.length]);
 
   return (
     <section
