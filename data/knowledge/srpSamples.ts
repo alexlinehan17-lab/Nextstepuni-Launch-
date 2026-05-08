@@ -35,6 +35,12 @@ export const SRP_SAMPLES: SrpSample[] = [
         developsFactor: 'Definition + landform identification',
       },
       {
+        id: 'g1-1a',
+        text: 'Erosion is the wearing away of rock by natural forces such as wind, water, and ice.',
+        type: 'unsupported',
+        reason: 'A general definition of erosion. Accurate but doesn\'t develop the formation of *this* landform — the marker wants named marine processes acting on the cliff, not a glossary entry.',
+      },
+      {
         id: 'g1-2',
         text: 'A famous example is the Old Man of Hoy off the coast of Scotland.',
         type: 'srp',
@@ -64,6 +70,12 @@ export const SRP_SAMPLES: SrpSample[] = [
         text: 'Abrasion uses the wave\'s load — pebbles and boulders — as cutting tools against the cliff.',
         type: 'srp',
         developsFactor: 'Process — abrasion',
+      },
+      {
+        id: 'g1-6a',
+        text: 'Solution and attrition are also forms of marine erosion.',
+        type: 'unsupported',
+        reason: 'Name-drop without development. Listing process names earns no SRP — the marker credits the mechanism described, not the vocabulary listed.',
       },
       {
         id: 'g1-7',
@@ -144,6 +156,12 @@ export const SRP_SAMPLES: SrpSample[] = [
         developsFactor: 'Named example',
       },
       {
+        id: 'g2-2a',
+        text: 'The Mississippi flows through ten US states before reaching the Gulf of Mexico.',
+        type: 'unsupported',
+        reason: 'A factual extension of the named example, but the question is about feature *formation*. Examples earn one SRP for naming — adding geography doesn\'t compound.',
+      },
+      {
         id: 'g2-3',
         text: 'They form because of flooding.',
         type: 'unsupported',
@@ -173,6 +191,12 @@ export const SRP_SAMPLES: SrpSample[] = [
         text: 'A drop in velocity reduces the river\'s ability to carry its load — its capacity falls.',
         type: 'srp',
         developsFactor: 'Process — capacity loss',
+      },
+      {
+        id: 'g2-7a',
+        text: 'A river carries its load in three main ways: solution, suspension, and traction.',
+        type: 'unsupported',
+        reason: 'Accurate textbook recall, but it\'s general fluvial transport — not levée formation. The marker wants what happens at the moment of overbank flooding, not a transport glossary.',
       },
       {
         id: 'g2-8',
@@ -221,6 +245,12 @@ export const SRP_SAMPLES: SrpSample[] = [
         text: 'The Treaty of Versailles was signed on 28 June 1919 in the Hall of Mirrors.',
         type: 'srp',
         developsFactor: 'Date + place',
+      },
+      {
+        id: 'h1-1a',
+        text: 'It was negotiated by the Big Three: Woodrow Wilson, David Lloyd George, and Georges Clemenceau.',
+        type: 'unsupported',
+        reason: 'Accurate and specific, but the question asks for terms and consequences — not the negotiating personnel. Names alone develop neither.',
       },
       {
         id: 'h1-2',
@@ -278,6 +308,12 @@ export const SRP_SAMPLES: SrpSample[] = [
         developsFactor: 'Consequence — political resentment',
       },
       {
+        id: 'h1-10a',
+        text: 'The harshness of the treaty has been debated by historians for over a century.',
+        type: 'unsupported',
+        reason: 'Historiographical framing without taking a position. Examiners credit a judgement, not a meta-comment that one exists.',
+      },
+      {
         id: 'h1-11',
         text: 'Hitler used resentment of the treaty as a central plank of the Nazi platform from 1920 onwards.',
         type: 'srp',
@@ -328,6 +364,12 @@ export const SRP_SAMPLES: SrpSample[] = [
         buried: true,
       },
       {
+        id: 'b1-4a',
+        text: 'Maslow\'s hierarchy has five levels, from physiological needs at the base to self-actualisation at the top.',
+        type: 'unsupported',
+        reason: 'Textbook recall of the theory in the abstract. The ABQ rule rewards Theory + Application + Quote — theory un-applied to FreshFoods doesn\'t earn the Application or Quote credit.',
+      },
+      {
         id: 'b1-5',
         text: 'It also slows decision-making, as consultation takes time, which can hurt fast-moving sectors.',
         type: 'srp',
@@ -356,6 +398,12 @@ export const SRP_SAMPLES: SrpSample[] = [
         text: 'In my opinion this style is well-suited to FreshFoods because the workforce is highly skilled and engagement drives innovation in food product development.',
         type: 'srp',
         developsFactor: 'Evaluation — student opinion (required for "Evaluate")',
+      },
+      {
+        id: 'b1-9a',
+        text: 'Mary was a hard-working and respected CEO at FreshFoods.',
+        type: 'unsupported',
+        reason: 'Sounds like evaluation but it\'s a personality compliment, not a reasoned judgement of her management *style*. "Evaluate" needs a position with reasons tied to the case.',
       },
       {
         id: 'b1-10',
