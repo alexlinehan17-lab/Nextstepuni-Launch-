@@ -211,176 +211,228 @@ const QuestionFrame: React.FC<{ question: ComparativeQuestion }> = ({ question }
 );
 
 // ─── Thread canvas ─────────────────────────────────────────────────────
+//
+// All HTML — no SVG, no viewBox, no aspect-ratio distortion. Each row is
+// a strict horizontal stripe. Connecting line is a 0-height div with a
+// border-top, spanning leftmost-to-rightmost touched columns. Dots are
+// small filled/hollow circles. Each row gets a numeric label on the left.
 
-const COL_DOT_RADIUS = 9;
-const CANVAS_HEIGHT = 200;
-const COL_TOP_Y = 30;
+const HEADER_H = 60;
+const ROW_H = 44;
+const PADDING_TOP = 14;
+const PADDING_BOTTOM = 18;
+const MIN_ROWS = 3;
+const ROW_LABEL_W = 32;
 
 const ThreadCanvas: React.FC<{
   question: ComparativeQuestion;
   selectedPoints: ComparativePoint[];
 }> = ({ question, selectedPoints }) => {
   const cols = question.texts;
-  const colCenters = useMemo(
-    () => cols.map((_, i) => ((i + 1) / (cols.length + 1)) * 100), // percentage X positions
-    [cols],
-  );
+  const colCount = cols.length;
+
+  // Column X position. Distribute across the area to the right of the row
+  // label (which occupies ROW_LABEL_W on the left).
+  const xPercent = (i: number) =>
+    `calc(${ROW_LABEL_W}px + (100% - ${ROW_LABEL_W}px) * ${(i + 1) / (colCount + 1)})`;
+
+  const rowsToRender = Math.max(selectedPoints.length, MIN_ROWS);
+  const canvasHeight = HEADER_H + PADDING_TOP + rowsToRender * ROW_H + PADDING_BOTTOM;
+
+  const integrationOf = (p: ComparativePoint): 'integrated' | 'partial' | 'serial' =>
+    p.textsTouched.length === colCount ? 'integrated' :
+    p.textsTouched.length === 1 ? 'serial' : 'partial';
+  const colourOf = (kind: 'integrated' | 'partial' | 'serial') =>
+    kind === 'integrated' ? TEAL : kind === 'partial' ? TEAL_DARK : WARN;
 
   return (
     <section
       className="rounded-2xl"
-      style={{
-        backgroundColor: CREAM,
-        border: `2px solid ${INK}`,
-        padding: '24px 26px',
-      }}
+      style={{ backgroundColor: CREAM, border: `2px solid ${INK}`, padding: '22px 26px' }}
     >
-      <div className="flex items-baseline justify-between gap-3 mb-4 flex-wrap">
+      <div className="flex items-baseline justify-between gap-3 mb-2 flex-wrap">
         <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
           Thread canvas
         </p>
         <span className="font-sans" style={{ fontSize: 11.5, color: '#5a5550' }}>
-          {selectedPoints.length === 0 ? 'Pick points below — threads weave between texts.' : `${selectedPoints.length} point${selectedPoints.length === 1 ? '' : 's'} on the canvas`}
+          {selectedPoints.length === 0
+            ? 'Pick points below — threads weave between texts.'
+            : `${selectedPoints.length} point${selectedPoints.length === 1 ? '' : 's'} on the canvas`}
         </span>
       </div>
 
-      {/* Column headers */}
-      <div className="grid gap-3 mb-3" style={{ gridTemplateColumns: `repeat(${cols.length}, 1fr)` }}>
-        {cols.map(t => (
-          <div key={t.id} className="text-center">
-            <p className="font-serif" style={{ fontSize: 14, fontWeight: 700, color: INK }}>{t.label}</p>
-            <p className="font-sans" style={{ fontSize: 10.5, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: '#9e9186', marginTop: 1 }}>
+      <div style={{ position: 'relative', width: '100%', height: canvasHeight }}>
+        {/* Column headers */}
+        {cols.map((t, i) => (
+          <div
+            key={t.id}
+            style={{
+              position: 'absolute',
+              left: xPercent(i),
+              top: 0,
+              transform: 'translateX(-50%)',
+              textAlign: 'center',
+              minWidth: 90,
+            }}
+          >
+            <p className="font-serif" style={{ fontSize: 14.5, fontWeight: 700, color: INK, lineHeight: 1.15 }}>
+              {t.label}
+            </p>
+            <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: '#9e9186', marginTop: 2 }}>
               {t.formLabel}
             </p>
           </div>
         ))}
-      </div>
 
-      {/* SVG canvas */}
-      <div style={{ position: 'relative', height: CANVAS_HEIGHT, width: '100%' }}>
-        <svg
-          viewBox={`0 0 100 ${CANVAS_HEIGHT}`}
-          preserveAspectRatio="none"
-          width="100%"
-          height={CANVAS_HEIGHT}
-          style={{ display: 'block' }}
-          aria-hidden
-        >
-          {/* Column trunk lines */}
-          {colCenters.map((cx, i) => (
-            <line
-              key={i}
-              x1={cx}
-              y1={COL_TOP_Y}
-              x2={cx}
-              y2={CANVAS_HEIGHT - 10}
-              stroke="#d0cdc8"
-              strokeWidth="0.3"
-              strokeDasharray="0.8 1"
-            />
-          ))}
+        {/* Subtle column trunks — 1px-wide div centered on xPercent via
+            translateX(-50%), so the trunk axis aligns exactly with the
+            dot centers (which are also translateX(-50%) centered). */}
+        {cols.map((_, i) => (
+          <div
+            key={`trunk-${i}`}
+            aria-hidden
+            style={{
+              position: 'absolute',
+              left: xPercent(i),
+              transform: 'translateX(-50%)',
+              top: HEADER_H - 2,
+              bottom: PADDING_BOTTOM / 2,
+              width: 1,
+              backgroundImage: 'repeating-linear-gradient(to bottom, #dbd6cf 0 3px, transparent 3px 6px)',
+            }}
+          />
+        ))}
 
-          {/* Threads — one per selected point */}
-          {selectedPoints.map((point, i) => {
-            const yOffset = COL_TOP_Y + 18 + (i * 22);
-            const yClamped = Math.min(yOffset, CANVAS_HEIGHT - 22);
-            const touched = cols
-              .map((c, ci) => ({ idx: ci, cx: colCenters[ci], touched: point.textsTouched.includes(c.id) }))
-              .filter(c => c.touched);
-            return (
-              <ThreadGroup key={point.id} colCenters={colCenters} cols={cols} touched={touched} y={yClamped} pointIndex={i} />
-            );
-          })}
+        {/* Selected-point rows */}
+        {selectedPoints.map((point, i) => {
+          const kind = integrationOf(point);
+          const colour = colourOf(kind);
+          const y = HEADER_H + PADDING_TOP + i * ROW_H + ROW_H / 2;
+          const touchedIdxs = cols
+            .map((c, ci) => ({ ci, touched: point.textsTouched.includes(c.id) }))
+            .filter(t => t.touched)
+            .map(t => t.ci)
+            .sort((a, b) => a - b);
+          const leftmost = touchedIdxs[0];
+          const rightmost = touchedIdxs[touchedIdxs.length - 1];
 
-          {/* Column dots (always visible above threads) */}
-          {colCenters.map((cx, i) => (
-            <circle
-              key={`dot-${i}`}
-              cx={cx}
-              cy={COL_TOP_Y}
-              r="0.8"
-              fill={INK}
-            />
-          ))}
-        </svg>
+          return (
+            <React.Fragment key={point.id}>
+              {/* Row label */}
+              <div
+                style={{
+                  position: 'absolute',
+                  left: 0,
+                  top: y,
+                  transform: 'translateY(-50%)',
+                  width: ROW_LABEL_W,
+                  textAlign: 'left',
+                }}
+              >
+                <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, color: '#9e9186', letterSpacing: 0.5 }}>
+                  {String(i + 1).padStart(2, '0')}
+                </p>
+              </div>
+
+              {/* Connector line — straight, between leftmost and rightmost touched */}
+              {touchedIdxs.length >= 2 && (
+                <motion.div
+                  aria-hidden
+                  initial={{ scaleX: 0, opacity: 0 }}
+                  animate={{ scaleX: 1, opacity: 1 }}
+                  transition={{ duration: 0.5, ease: 'easeOut', delay: i * 0.06 }}
+                  style={{
+                    position: 'absolute',
+                    left: xPercent(leftmost),
+                    width: `calc(${xPercent(rightmost)} - ${xPercent(leftmost)})`,
+                    top: y,
+                    height: 0,
+                    borderTop: `2px solid ${colour}`,
+                    transformOrigin: 'left center',
+                    pointerEvents: 'none',
+                  }}
+                />
+              )}
+
+              {/* Dots — one per column */}
+              {cols.map((c, ci) => (
+                <ThreadDot
+                  key={c.id}
+                  xCalc={xPercent(ci)}
+                  y={y}
+                  isTouched={point.textsTouched.includes(c.id)}
+                  colour={colour}
+                  delay={i * 0.06 + ci * 0.03}
+                />
+              ))}
+
+              {/* Serial isolation halo */}
+              {kind === 'serial' && leftmost !== undefined && (
+                <motion.div
+                  aria-hidden
+                  initial={{ opacity: 0, scale: 0.6 }}
+                  animate={{ opacity: 0.55, scale: 1 }}
+                  transition={{ delay: i * 0.06 + 0.2, duration: 0.4 }}
+                  style={{
+                    position: 'absolute',
+                    left: xPercent(leftmost),
+                    top: y,
+                    transform: 'translate(-50%, -50%)',
+                    width: 28,
+                    height: 28,
+                    borderRadius: '50%',
+                    border: `1.5px dashed ${colour}`,
+                    pointerEvents: 'none',
+                  }}
+                />
+              )}
+            </React.Fragment>
+          );
+        })}
+
+        {/* Empty-state hint dots on the first row when nothing selected */}
+        {selectedPoints.length === 0 && cols.map((_, ci) => (
+          <div
+            key={`ghost-${ci}`}
+            aria-hidden
+            style={{
+              position: 'absolute',
+              left: xPercent(ci),
+              top: HEADER_H + PADDING_TOP + ROW_H / 2,
+              transform: 'translate(-50%, -50%)',
+              width: 7,
+              height: 7,
+              borderRadius: '50%',
+              border: '1.5px solid #c8c4be',
+              opacity: 0.7,
+            }}
+          />
+        ))}
       </div>
     </section>
   );
 };
 
-const ThreadGroup: React.FC<{
-  colCenters: number[];
-  cols: ComparativeQuestion['texts'];
-  touched: { idx: number; cx: number; touched: boolean }[];
-  y: number;
-  pointIndex: number;
-}> = ({ colCenters, touched, y, pointIndex }) => {
-  const fullyIntegrated = touched.length === colCenters.length;
-  const partial = touched.length === 2;
-  const serial = touched.length === 1;
-
-  const colour = fullyIntegrated ? TEAL : partial ? TEAL_DARK : '#9e9186';
-  const strokeWidth = fullyIntegrated ? 0.7 : partial ? 0.5 : 0.4;
-  const opacity = fullyIntegrated ? 0.95 : partial ? 0.55 : 0.4;
-
-  // Build the thread path — connect touched columns left-to-right with cubic curves.
-  const sorted = touched.slice().sort((a, b) => a.cx - b.cx);
-
-  // Dot at each touched column
-  return (
-    <motion.g
-      initial={{ opacity: 0 }}
-      animate={{ opacity }}
-      transition={{ duration: 0.45, ease: 'easeOut', delay: pointIndex * 0.05 }}
-    >
-      {/* Connecting curve for 2+ touched columns */}
-      {sorted.length >= 2 && (
-        <motion.path
-          initial={{ pathLength: 0 }}
-          animate={{ pathLength: 1 }}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.05 + pointIndex * 0.05 }}
-          d={buildCurve(sorted.map(s => s.cx), y)}
-          stroke={colour}
-          strokeWidth={strokeWidth}
-          fill="none"
-          strokeLinecap="round"
-        />
-      )}
-      {/* Touched dots — all the same colour as the thread */}
-      {sorted.map((s, i) => (
-        <motion.circle
-          key={i}
-          cx={s.cx}
-          cy={y}
-          r={fullyIntegrated ? 1.3 : partial ? 1.1 : 1.0}
-          fill={colour}
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ type: 'spring', stiffness: 280, damping: 18, delay: pointIndex * 0.05 + i * 0.04 }}
-        />
-      ))}
-      {/* Serial: render a small dashed isolation indicator */}
-      {serial && (
-        <circle cx={sorted[0].cx} cy={y} r={2.5} stroke={colour} strokeWidth="0.25" strokeDasharray="0.5 0.4" fill="none" />
-      )}
-    </motion.g>
-  );
-};
-
-function buildCurve(xs: number[], y: number): string {
-  if (xs.length < 2) return '';
-  // For each adjacent pair build a small dip below y to make the thread look woven.
-  let d = `M ${xs[0]} ${y}`;
-  for (let i = 1; i < xs.length; i++) {
-    const x0 = xs[i - 1];
-    const x1 = xs[i];
-    const cx0 = x0 + (x1 - x0) * 0.35;
-    const cx1 = x0 + (x1 - x0) * 0.65;
-    const dipY = y + 8;
-    d += ` C ${cx0} ${dipY}, ${cx1} ${dipY}, ${x1} ${y}`;
-  }
-  return d;
-}
+const ThreadDot: React.FC<{ xCalc: string; y: number; isTouched: boolean; colour: string; delay: number }> = ({ xCalc, y, isTouched, colour, delay }) => (
+  <motion.div
+    aria-hidden
+    initial={{ scale: 0 }}
+    animate={{ scale: 1 }}
+    transition={{ type: 'spring', stiffness: 340, damping: 22, delay }}
+    style={{
+      position: 'absolute',
+      left: xCalc,
+      top: y,
+      transform: 'translate(-50%, -50%)',
+      width: isTouched ? 12 : 6,
+      height: isTouched ? 12 : 6,
+      borderRadius: '50%',
+      backgroundColor: isTouched ? colour : CREAM,
+      border: isTouched ? `2px solid ${colour}` : `1.5px solid #b8b1a8`,
+      zIndex: 1,
+    }}
+  />
+);
 
 // ─── Point bank ────────────────────────────────────────────────────────
 
