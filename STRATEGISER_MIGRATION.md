@@ -23,11 +23,11 @@ naming the question id. Production console stays clean.
 | english-2024-p1-composing-5   | english   | legacy | —        |
 | irish-placeholder-2024-p2-q1  | irish     | legacy | —        |
 | maths-placeholder-2024-p1-q1  | maths     | legacy | —        |
-| maths-2025-ord-p1-q3          | maths     | legacy | —        |
-| maths-2025-ord-p1-q4          | maths     | legacy | —        |
+| maths-2025-ord-p1-q3          | maths     | migrated | 2026-05-19 |
+| maths-2025-ord-p1-q4          | maths     | migrated | 2026-05-19 |
 | maths-2025-ord-p1-q7          | maths     | legacy | —        |
 | maths-2025-ord-p1-q8          | maths     | legacy | —        |
-| maths-2025-ord-p2-q7          | maths     | legacy | —        |
+| maths-2025-ord-p2-q7          | maths     | migrated | 2026-05-19 |
 | maths-2025-ord-p2-q8          | maths     | legacy | —        |
 | maths-2025-ord-p2-q9          | maths     | legacy | —        |
 | maths-2025-ord-p2-q10         | maths     | legacy | —        |
@@ -40,7 +40,20 @@ naming the question id. Production console stays clean.
 | business-2025-hl-s3-q1        | business  | migrated | 2026-05-06 |
 | business-2025-hl-s3-q8        | business  | migrated | 2026-05-06 |
 
-_Last updated: 2026-05-06_
+_Last updated: 2026-05-19_
+
+## Per-subject blocker — examiner reports needed
+
+For new migrations to follow CLAUDE.md content quality rules ("must consult `/examiner-reports/[subject]/` for citable insights"), the following subject reports need to land in `/examiner-reports/` before further migrations are feasible:
+
+| Subject   | Reports currently in library | Legacy questions blocked |
+|-----------|------------------------------|--------------------------|
+| english   | none                         | 8                        |
+| geography | none                         | 4                        |
+| irish     | none                         | 1                        |
+| maths     | 2015 chief examiner only     | 5 OL remaining (feasible — 2015 CER documents perennial OL patterns that cite cleanly onto 2025 questions) |
+
+Maths migrations already done leverage the 2015 Chief Examiner Report's documented OL perennial patterns (algebra struggles, substituting wrong derivative, not showing working, not writing conclusions). The 5 remaining Maths OL questions can be migrated the same way without new reports.
 
 ## Workflow per question
 

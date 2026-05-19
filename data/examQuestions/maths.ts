@@ -227,6 +227,13 @@ export const mathsQuestions: ExamQuestion[] = [
         type: 'number',
         correctAnswer: 15,
         hint: 'Marks ÷ 2 = minutes (300 marks / 150 minutes).',
+        debrief: {
+          strategicPrinciple: 'OL Maths runs at half a minute per mark. 30 marks gets 15 minutes — across all three sub-parts, not per part.',
+          commonWrongAnswer: {
+            answer: '5',
+            reason: 'Students see 10 marks per sub-part and budget 5 minutes per sub-part. Multiplying gives 15 minutes for the question, but it also signals they are budgeting per-part rather than per-question, which under-runs on the harder sub-part and over-runs on the easier one.',
+          },
+        },
       },
       {
         id: 'q3a-calc',
@@ -239,6 +246,14 @@ export const mathsQuestions: ExamQuestion[] = [
           'You only need calculations if you choose Offer B',
         ],
         correctAnswer: 'The working is required for full marks — ticking alone gets only Low Partial Credit',
+        debrief: {
+          strategicPrinciple: 'Maths marking schemes award credit per visible procedural step, not just for the final answer. The wording "Use calculations to support" makes the requirement explicit — without the per-bar calculation, the marker has no procedure to credit.',
+          commonWrongAnswer: {
+            answer: 'You can just tick the correct box and skip the working',
+            reason: 'Students treat "Use calculations to support your answer" as polite framing rather than a marking-scheme cue. The 2015 Chief Examiner Report noted that "marks are generally not awarded for an incorrect answer without any supporting work" — and the inverse: a correct conclusion without working is capped at the final-answer mark only.',
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.31' },
+          },
+        },
       },
       {
         id: 'q3b-flip',
@@ -251,20 +266,21 @@ export const mathsQuestions: ExamQuestion[] = [
           'You should leave it as −4x ≥ −12',
         ],
         correctAnswer: 'It flips: x ≤ 3',
+        debrief: {
+          strategicPrinciple: 'Dividing or multiplying an inequality by a negative flips the sign. Reaching −4x ≥ −12 is High Partial Credit; the flip is what unlocks full credit. The 2015 Maths CER flagged that OL candidates "struggled noticeably with questions that involved any significant amount of algebra" — this is exactly the kind of procedural rule that gets skipped under time pressure.',
+          commonWrongAnswer: {
+            answer: 'It stays the same: x ≥ 3',
+            reason: 'Students follow the procedural muscle memory from positive-coefficient inequalities. The flip is a rule learned but easily forgotten — and the wrong direction passes a sanity check (x ≥ 3 is a reasonable-looking solution), so there is no internal signal to catch it.',
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.17' },
+          },
+        },
       },
     ],
-    topAnswerIncludes: [
-      'Part (a): Like-for-like comparison (cost per bar) with both calculations shown — Offer A: €6·60/3 = €2·20, Offer B: €29·99/12 = €2·50. Tick Offer A.',
-      'Part (b): Transposes correctly, isolates x, FLIPS the inequality when dividing by −4, ends at x ≤ 3.',
-      'Part (c)(i): Any valid integer pair where k × t = 12.',
-      'Part (c)(ii): Uses the EXACT values from (c)(i) — b = k + t (so b = 8 if you picked k=6,t=2; b=7 if k=3,t=4).',
-    ],
-    commonTraps: [
-      "Ticking 'Offer A' in (a) without showing the per-bar comparison — Low Partial Credit only.",
-      'Forgetting to flip the inequality sign when dividing by a negative — easily costs you a level of credit.',
-      'In (c)(ii), using values different to those given in (c)(i) — answer must be consistent.',
-      'Treating ≥ like > and excluding x = 3 from the solution.',
-    ],
+    biggestMistake: {
+      title: 'Treating "Use calculations" as optional framing',
+      body: 'All three parts of Q3 turn on showing visible procedural work. (a) explicitly demands calculations; (b) requires the inequality-flip step to be visible; (c)(ii) requires consistent use of YOUR k and t from (c)(i). The 2015 Maths CER is explicit: marks are awarded for procedures that would lead to a solution even when the final answer is wrong — and conversely, a correct answer without supporting work is generally not credited beyond the final-answer mark. Every line you write is a separately-marked component.',
+      source: { year: 2015, type: 'chief-examiner', pageRef: 'p.31' },
+    },
   },
   {
     id: 'maths-2025-ord-p1-q4',
@@ -358,6 +374,13 @@ export const mathsQuestions: ExamQuestion[] = [
         prompt: 'Q4 is worth 30 marks. How many minutes should you spend on it?',
         type: 'number',
         correctAnswer: 15,
+        debrief: {
+          strategicPrinciple: 'OL Maths runs at half a minute per mark. 30 marks gets 15 minutes, distributed across sub-parts roughly in mark proportion: (a) 5 marks → 2.5 mins, (b) 10 marks → 5 mins, (c) 15 marks → 7.5 mins.',
+          commonWrongAnswer: {
+            answer: '10',
+            reason: 'Students treat 30 marks as "about 10 minutes" from rough memory, under-budgeting and leaving themselves no margin on the heavier (c) sub-part. The per-mark rule keeps the proportion right between sub-parts.',
+          },
+        },
       },
       {
         id: 'q4b-substitute',
@@ -365,6 +388,14 @@ export const mathsQuestions: ExamQuestion[] = [
         type: 'multiple-choice',
         options: ['f(x)', 'f′(x)', 'Both f(x) and f′(x)', 'Neither — graph it'],
         correctAnswer: 'f′(x)',
+        debrief: {
+          strategicPrinciple: "The slope of a tangent is the value of the derivative at the point. 'Hence' means use the f′(x) you just computed — substitute x = 2 into f′(x), not f(x). The marking scheme awards zero credit for substituting into f.",
+          commonWrongAnswer: {
+            answer: 'f(x)',
+            reason: 'Students see the point (2, −4) and substitute x = 2 into the function that gave them the y-coordinate — natural reflex. The 2015 Maths CER documented this exact confusion at HL: candidates "did not know that solving f′(x) = 0 would yield the x-coordinates of the turning point of the function. In many instances, candidates sought to solve f″(x) = 0 instead, which illustrated a lack of comprehension of the concept of a turning point and its relationship to the derivative." Same family of error: applying the wrong order of derivative.',
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.21' },
+          },
+        },
       },
       {
         id: 'q4c-reason',
@@ -377,20 +408,21 @@ export const mathsQuestions: ExamQuestion[] = [
           "Reasons aren't marked at Ordinary Level",
         ],
         correctAnswer: "It's one of the four marked items in this part — skipping it drops a level of credit",
+        debrief: {
+          strategicPrinciple: "'Give a reason' is a command word — each command earns marks separately. The marking-scheme convention treats every command in a question as a separately-credited item: labelled sub-parts, named answers, AND reasons.",
+          commonWrongAnswer: {
+            answer: 'Optional — the matching in (c)(i) gets all the credit',
+            reason: 'Students read "give a reason" as flavour text — the matching already feels like the answer. A one-line sentence ("P is a turning point" or "the slope of the tangent at P is zero") is the entire requirement. The 2015 Maths CER noted that strong OL candidates wrote a clear conclusion alongside their calculation — "some candidates wrote the equation, substituted, calculated — and then forgot to write the conclusion. This loses marks" (p.22).',
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.22' },
+          },
+        },
       },
     ],
-    topAnswerIncludes: [
-      'Part (a): Three clean steps — distribute (5a − 15 = 2a + 7), transpose (3a = 22), solve (a = 22/3).',
-      'Part (b): f′(x) = 3x² − 6x + 4. Then f′(2) = 12 − 12 + 4 = 4. Slope = 4.',
-      'Part (c)(i): Q matches g′(x) < 0; P matches g′(x) = 0; R matches g′(x) > 0.',
-      'Part (c)(ii): One-line reason — "P is a turning point" or "the slope of the tangent at P is zero".',
-    ],
-    commonTraps: [
-      'Substituting x = 2 into f(x) instead of f′(x) in part (b) — zero credit per the marking scheme.',
-      'Distributing the 5 incorrectly in (a) — writing 5a − 3 instead of 5a − 15.',
-      'Skipping the reason in (c)(ii) — costs a level of credit even with (c)(i) perfect.',
-      'Mixing up Q and R — Q is on the descending side (negative slope), R on the ascending side.',
-    ],
+    biggestMistake: {
+      title: "Substituting into f instead of f′ — and skipping 'give a reason'",
+      body: 'Q4 spans three sub-parts but two errors carry most of the lost marks. (b) tests whether you substitute into f′(x) or f(x) — the marking scheme is explicit that substituting into f earns zero. (c)(ii) tests whether you write the one-line reason — skipping it drops a level of credit. The 2015 Maths CER documented the f vs f′ confusion at HL (p.21); at OL the pattern is the same, often amplified by "I\'ll just compute and move on." Both are 30-second writes that lock in the marks.',
+      source: { year: 2015, type: 'chief-examiner', pageRef: 'p.21' },
+    },
   },
   {
     id: 'maths-2025-ord-p1-q7',
@@ -873,6 +905,14 @@ export const mathsQuestions: ExamQuestion[] = [
           'Multiply 0·6 × 0·7',
         ],
         correctAnswer: '1 − P(no wins) = 1 − P(LL)',
+        debrief: {
+          strategicPrinciple: "For 'at least 1' questions, the complement (1 − P(none)) is one calculation; the direct sum is three. Both score full marks if correct — the complement just has fewer steps to slip on.",
+          commonWrongAnswer: {
+            answer: 'Direct sum P(WW) + P(WL) + P(LW)',
+            reason: "Reads 'at least 1' as 'count all win-bearing outcomes' — mathematically valid, but three multiplications plus an addition instead of one subtraction. The 2015 Maths CER noted top OL candidates 'presented the relevant formula, substituted correctly, did the calculation, and gave the answer correct to two decimal places with the relevant unit' — clean order, fewer error points.",
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.23' },
+          },
+        },
       },
       {
         id: 'q7-third-loss',
@@ -885,6 +925,14 @@ export const mathsQuestions: ExamQuestion[] = [
           'It doesn\'t matter — just compute P(L)',
         ],
         correctAnswer: 'Multiply in order: W, W, L → 0·78 × 0·78 × 0·22',
+        debrief: {
+          strategicPrinciple: "When the question specifies 'first loss is the third game,' the sequence W, W, L is fixed — multiply along that single path. Combinations would apply for 'exactly one loss in three games', where the loss could fall anywhere.",
+          commonWrongAnswer: {
+            answer: 'Use ³C₁ × 0·22',
+            reason: "Students hear 'three games' and reach for combinatorial machinery — a rote pattern from Bernoulli trials. The 2015 Maths CER flagged this exact failure mode on OL counting questions: candidates 'simply worked with a factorial (6!), while others worked with ⁿPᵣ, neither of which displays any appreciable level of understanding' — deploying ⁿCᵣ/ⁿPᵣ without parsing what the question is actually counting.",
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.21' },
+          },
+        },
       },
       {
         id: 'q7-diameter',
@@ -897,26 +945,20 @@ export const mathsQuestions: ExamQuestion[] = [
           'Cube it',
         ],
         correctAnswer: 'Halve it: r = 9',
+        debrief: {
+          strategicPrinciple: "The volume formula uses radius, not diameter. Halving the diameter is a one-second operation, but it's the single most-skipped step on sphere questions — and the answer is off by a factor of 8 (since r³ scales cubically).",
+          commonWrongAnswer: {
+            answer: 'Substitute 18 directly as r',
+            reason: "Students see a number and substitute. The diameter value is sitting right there next to the formula — the cognitive shortcut is to plug it in. A sanity check (does 5832 sound like the volume of a child's football?) would catch it, but most OL candidates don't run the check.",
+          },
+        },
       },
     ],
-    topAnswerIncludes: [
-      'Tree completed: P(L₁) = 0·4, P(L₂|W₁) = 0·3, P(W₂|L₁) = 0·7; P(WL) = 0·18, P(LW) = 0·28',
-      'P(at least 1 win) = 1 − 0·12 = 0·88',
-      'P(loss next service game) = 1 − 0·78 = 0·22',
-      'P(W,W,L) = 0·78 × 0·78 × 0·22 = 0·134 (3 d.p.)',
-      'V = (4/3)π(9)³ = 972π cm³ (in terms of π — do not evaluate)',
-      'r = ³√(5424·6 × 3 / (4π)) ≈ 10·9 cm (1 d.p.)',
-      'E(X) = 6(0·1) + 5(0·2) + 3(0·4) + 1(0·7) = 3·5 expected goals',
-    ],
-    commonTraps: [
-      "'At least 1' read as 'exactly 1' — student computes only WL + LW and forgets WW",
-      "Adding 0·78 + 0·78 + 0·22 instead of multiplying for 'first loss = third game'",
-      'Using diameter 18 as the radius in the volume formula',
-      "Evaluating π in (c)(i) when 'in terms of π' is explicitly stated → Full Credit −1",
-      'Forgetting the cube root in (c)(ii) and reporting r³ ≈ 1295',
-      'Not rounding (b)(ii) to 3 d.p. → Full Credit −1',
-      "(d): treating the 'Number of shots' row as probabilities, or only summing one row",
-    ],
+    biggestMistake: {
+      title: 'Substituting the first number you see without checking what it is',
+      body: "Q7 is four small procedures — each one tests whether you read what the question actually asks before reaching for the formula. (a)(iii) tests 'at least 1' vs 'exactly 1'. (b)(ii) tests 'first loss is the third game' (sequence) vs 'one loss in three games' (combination). (c)(i) tests diameter vs radius. The 2015 Maths CER consistently identified this as the OL/HL behavioural difference: top OL candidates 'presented the relevant formula, substituted correctly, did the calculation, and gave the answer correct to two decimal places with the relevant unit' (p.23). Mid-band candidates substitute the first number they see.",
+      source: { year: 2015, type: 'chief-examiner', pageRef: 'p.23' },
+    },
   },
   {
     id: 'maths-2025-ord-p2-q8',
