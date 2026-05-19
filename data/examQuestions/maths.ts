@@ -106,6 +106,13 @@ export const mathsQuestions: ExamQuestion[] = [
         options: ['1', '2', '3', '4'],
         correctAnswer: '2',
         hint: 'Look at the start of part (a) and part (b).',
+        debrief: {
+          strategicPrinciple: "Identifying command words is the first step before writing — each one sets up a separately-marked item. This question has TWO: 'Solve' (part a) and 'Show that...justify each step' (part b). Spotting them before answering anchors your time budget per command.",
+          commonWrongAnswer: {
+            answer: '1',
+            reason: "Students count only 'Solve' and miss 'Show that' / 'Justify each step' as a single composite command. The marking scheme treats each separately-credited demand as its own item — and 'justify each step' adds a procedural-justification mark on top of the show-that derivation.",
+          },
+        },
       },
       {
         id: 'time-allocation',
@@ -113,24 +120,35 @@ export const mathsQuestions: ExamQuestion[] = [
         type: 'number',
         correctAnswer: 12,
         hint: '25 marks out of 300 on a 150-minute paper.',
+        debrief: {
+          strategicPrinciple: 'HL Maths runs at half a minute per mark (150 min / 300 marks). 25 marks → ~12-13 minutes.',
+          commonWrongAnswer: {
+            answer: '25',
+            reason: 'Students conflate "marks" with "minutes" on the first read. The 2015 Maths CER noted top HL candidates "made a determined effort to complete the entire examination paper" and "persevere in solving problems even when, because of errors, the numerical values were not user-friendly" (p.20) — but that perseverance only works if the time budget is correct. 25 marks at 0.5 min/mark = 12.5 minutes.',
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.20' },
+          },
+        },
       },
       {
         id: 'sum-roots-rule',
         prompt: 'Which rule gives the sum of the roots most efficiently?',
         type: 'short-text',
         hint: 'Relates the coefficients of a quadratic to its roots.',
+        debrief: {
+          strategicPrinciple: "For a quadratic ax² + bx + c = 0, sum of roots = −b/a, product = c/a (Vieta's formulas). 'Show that the sum is 2.5' becomes a one-line proof using the coefficients of part (a) — not a re-derivation from the solved roots.",
+          commonWrongAnswer: {
+            answer: 'Solve the equation and add the roots',
+            reason: 'Students re-solve part (a) and sum the answers — works, but uses 4-5 lines for a result Vieta gives in one. The 2015 Maths CER noted top HL candidates "showed a good depth of understanding of the whole syllabus, along with an ability to be both flexible and accurate in their work, and to bring knowledge and skills from a number of different strands to bear on a given question" (p.27) — recognising when −b/a applies is exactly that strand-bridging move.',
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.27' },
+          },
+        },
       },
     ],
-    topAnswerIncludes: [
-      'The two roots of part (a) presented clearly: x = 3 or x = -1/2',
-      'For part (b), use of -b/a (or Vieta\'s) rather than re-solving',
-      'Each step labelled with the rule applied',
-      'Final result restated to confirm what was asked',
-    ],
-    commonTraps: [
-      'Solving part (b) from scratch instead of using sum-of-roots',
-      'Skipping justification — markers cannot award procedural marks for unjustified steps',
-    ],
+    biggestMistake: {
+      title: 'Re-deriving when Vieta gives the answer in one line',
+      body: "Q1(b) asks you to 'show that' the sum of roots equals 2.5. The lazy path re-solves part (a) and sums; the elegant path uses sum of roots = −b/a directly — a one-line proof from the coefficients. The 2015 Maths CER consistently noted that top HL candidates 'showed a good depth of understanding of the whole syllabus, along with an ability to be both flexible and accurate in their work' (p.27) — the flexibility is recognising when a less-obvious formula gives a tighter proof. Plus: 'Justify each step' requires naming the rule ('by Vieta's formulas') — a bare algebraic line without justification loses procedural marks.",
+      source: { year: 2015, type: 'chief-examiner', pageRef: 'p.27' },
+    },
   },
   {
     id: 'maths-2025-ord-p1-q3',
@@ -561,6 +579,13 @@ export const mathsQuestions: ExamQuestion[] = [
         prompt: 'Q7 is worth 50 marks. How many minutes should you spend?',
         type: 'number',
         correctAnswer: 25,
+        debrief: {
+          strategicPrinciple: 'OL Maths runs at half a minute per mark. 50 marks → 25 minutes — a sixth of the paper on one question. Going past 25 means another sub-part later runs short.',
+          commonWrongAnswer: {
+            answer: '10',
+            reason: 'Students see "10 marks → 5 mins" from earlier per-part allocations and round the 50-mark whole-question budget down by reflex. The per-mark rule scales linearly: 50 × 0.5 = 25 minutes.',
+          },
+        },
       },
       {
         id: 'q7a-greatest',
@@ -573,6 +598,14 @@ export const mathsQuestions: ExamQuestion[] = [
           'June (end of the biggest jump)',
         ],
         correctAnswer: 'May (start of the biggest jump, May→June)',
+        debrief: {
+          strategicPrinciple: "'During which... increased by the greatest amount' specifies a CHANGE over a time period, not a level at a moment. The biggest change is May (€1.20) → June (€6.00) = +€4.80, so the answer is May.",
+          commonWrongAnswer: {
+            answer: 'March (highest value reached)',
+            reason: 'Students read "greatest amount" and pick the month with the highest value. The phrase "during which... increased" picks out a delta, not an absolute. The 2015 Maths CER documented that strong OL candidates "presented the relevant formula, substituted correctly, did the calculation, and gave the answer... as required" — clean reading first. Mid-band candidates skim the question and substitute the first interpretation that fits.',
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.23' },
+          },
+        },
       },
       {
         id: 'q7c-error',
@@ -585,6 +618,14 @@ export const mathsQuestions: ExamQuestion[] = [
           '0·163 − 1·50',
         ],
         correctAnswer: '1·50 ÷ 0·163',
+        debrief: {
+          strategicPrinciple: 'Percentage error = error / true value × 100. So true value = error / percentage. The arithmetic is a division (1.50 ÷ 0.163 ≈ €9.20), not a multiplication (which returns €0.24 — clearly not a share value).',
+          commonWrongAnswer: {
+            answer: '1·50 × 0·163',
+            reason: 'Students see a percentage and reach for multiplication — the rote pattern from "find X% of Y" questions. The 2015 Maths CER noted OL candidates "struggled noticeably with questions that involved any significant amount of algebra" (p.17); rearranging error/value = percentage to solve for value is exactly this kind of algebraic step. A sanity check (€0.24 for a share value? €9.20 fits the graph?) would catch it.',
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.17' },
+          },
+        },
       },
       {
         id: 'q7e-natural',
@@ -592,25 +633,21 @@ export const mathsQuestions: ExamQuestion[] = [
         type: 'multiple-choice',
         options: ['24', '25', '24·06', 'Either 24 or 25'],
         correctAnswer: '25',
+        debrief: {
+          strategicPrinciple: 'n ∈ ℕ + "falls below €2" = round UP, not down. At n = 24, the value still equals €2; the next natural number, n = 25, is the first that pushes below. The marking scheme applies a star (Full Credit −1) for n = 24.',
+          commonWrongAnswer: {
+            answer: '24',
+            reason: 'Students compute 24.06… and round down by reflex — truncation feels safer than rounding up. But the question requires the value to fall BELOW €2, so boundary cases don\'t count. The 2015 Maths CER documented a related pattern at HL — candidates "did not test the resulting roots" on squared equations, "assuming instead that both solutions would satisfy the original equation" (p.21). Same family: not checking whether the candidate solution actually satisfies the question\'s constraint.',
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.21' },
+          },
+        },
       },
     ],
-    topAnswerIncludes: [
-      'Part (a)(i): €7·30 read straight from the graph at March.',
-      'Part (a)(ii): May — recognised that "during which" means the month in which the biggest INCREASE happens (May→June, +€4·80).',
-      'Part (b): Both 8 × 0·85 = €6·80 AND the point plotted on the graph.',
-      'Part (c): Recognises error/true value = percentage error → true value = 1·50 / 0·163 ≈ €9·20.',
-      'Part (d)(i): Table values P(1) = 2·58, P(3) = 4·29, P(4) = 5·54, P(5) = 7·14.',
-      'Part (d)(iii): Identifies the single crossing point from the graph (around March).',
-      'Part (e)(i): The missing number is 9·22 (the peak P(6)).',
-      'Part (e)(ii): Solves 2 = 9·22 − 0·3n → n = 24·06… → ROUNDS UP to n = 25.',
-    ],
-    commonTraps: [
-      "Reading 'during which the value increased by the greatest amount' as 'in which month was the value highest' — answers March instead of May.",
-      'In (b): writing €6·80 but forgetting to plot the point — High Partial Credit instead of full marks.',
-      'In (c): doing 1·50 × 0·163 = €0·24 instead of 1·50 ÷ 0·163 = €9·20.',
-      'In (e)(i): writing the slope (−0·3) again instead of the peak value (9·22).',
-      'In (e)(ii): rounding DOWN to n = 24 — Full Credit −1 in the marking scheme (boundary case where value would equal €2, not fall below).',
-    ],
+    biggestMistake: {
+      title: "Misreading 'during which' and rounding the wrong direction",
+      body: "Q7's marks are scattered across five sub-parts and each one rewards a single careful parse: (a)(ii) wants the month a CHANGE happened, not the highest value; (b) wants both a calculation AND a plot; (c) wants division by the percentage (not multiplication); (e)(ii) wants the next natural number, not the truncated one. The 2015 Maths CER noted top OL candidates 'presented the relevant formula, substituted correctly, did the calculation, and gave the answer correct to two decimal places with the relevant unit' (p.23) — clean reading, clean execution. Q7 is where 'I'll skim and substitute' costs you the band.",
+      source: { year: 2015, type: 'chief-examiner', pageRef: 'p.23' },
+    },
   },
   {
     id: 'maths-2025-ord-p1-q8',
@@ -718,6 +755,13 @@ export const mathsQuestions: ExamQuestion[] = [
         prompt: 'Q8 is worth 50 marks. How many minutes should you spend?',
         type: 'number',
         correctAnswer: 25,
+        debrief: {
+          strategicPrinciple: 'OL Maths runs at half a minute per mark. 50 marks → 25 minutes. Q8 has three sub-parts at 20+15+15 — budget proportionally to keep the chain moving.',
+          commonWrongAnswer: {
+            answer: '15',
+            reason: 'Students under-budget the big questions because they feel intimidating. 50 marks × 0.5 min/mark = 25 mins — that\'s a sixth of the paper on this single question.',
+          },
+        },
       },
       {
         id: 'q8a-explain',
@@ -730,6 +774,14 @@ export const mathsQuestions: ExamQuestion[] = [
           'All 5 marks',
         ],
         correctAnswer: '1–2 marks (Low Partial Credit if explanation is in shape)',
+        debrief: {
+          strategicPrinciple: "'AND explain what it means' is a separately marked item. Marking-scheme convention treats every command in a question as separately credited — the calculation gets one mark band, the explanation gets another. Skipping the sentence drops a level of credit.",
+          commonWrongAnswer: {
+            answer: '0 marks — the number is the answer',
+            reason: 'Students write "−4" and move on, treating "explain" as polite framing. The 2015 Maths CER noted that strong OL candidates wrote a clear conclusion alongside their calculation — some candidates "wrote the equation, substituted, calculated — and then forgot to write the conclusion. This loses marks" (p.22). Same pattern: the explanation is the conclusion the marker is looking for.',
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.22' },
+          },
+        },
       },
       {
         id: 'q8b-max',
@@ -742,6 +794,14 @@ export const mathsQuestions: ExamQuestion[] = [
           'Find Q′(7)',
         ],
         correctAnswer: 'Set Q′(x) = 0 and solve for x',
+        debrief: {
+          strategicPrinciple: "Maximum/minimum of a function ⇒ derivative equals zero. Find Q′(x), set Q′(x) = 0, solve for x. Then substitute that x back into Q(x) — not Q′(x) — for the maximum value.",
+          commonWrongAnswer: {
+            answer: 'Substitute x = 0',
+            reason: 'Students see "maximum" and substitute the first available x (often a boundary like 0 or 7). The 2015 Maths CER documented this confusion at HL: candidates "sought to solve f″(x) = 0 instead, which illustrated a lack of comprehension of the concept of a turning point and its relationship to the derivative" (p.21). Same family: misapplying the derivative-to-extremum link.',
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.21' },
+          },
+        },
       },
       {
         id: 'q8c-translation',
@@ -754,24 +814,21 @@ export const mathsQuestions: ExamQuestion[] = [
           'Shifting it left by 3',
         ],
         correctAnswer: 'Shifting it up by 3',
+        debrief: {
+          strategicPrinciple: 'R(x) + 3 puts the +3 OUTSIDE the function — every y-value increases by 3, a vertical shift up. R(x + 3) would put the +3 INSIDE the function input and shift the graph LEFT by 3 (because R is now evaluated 3 units earlier).',
+          commonWrongAnswer: {
+            answer: 'Shifting it down by 3',
+            reason: 'Students see "+ 3" and reach for whichever direction first comes to mind. The rule (+ outside = up, + inside = left) is procedural but easily skipped under time pressure. The 2015 Maths CER noted OL candidates "struggled noticeably with questions that involved any significant amount of algebra" (p.17) — graph transformations are exactly this kind of rule-based algebra that gets dropped when the question feels visual.',
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.17' },
+          },
+        },
       },
     ],
-    topAnswerIncludes: [
-      'Part (a)(i): P(0) = −4 AND a sentence explaining it as a loss of €4 million if zero phones are produced.',
-      'Part (a)(ii): Correct values P(0) = −4, P(2) = 11, P(3) = 14, P(4) = 14, P(6) = 5, P(7) = −4.',
-      'Part (a)(iv): Horizontal line at y = 6 drawn on the graph, both intersection points marked, answer 1·2 ≤ x ≤ 5·8.',
-      'Part (b)(i): Q′(x) = −3x + 9·6, sets to zero, x = 3·2.',
-      'Part (b)(ii): Substitutes x = 3·2 into Q(x) (not Q′(x)) — maximum = €11·86 million.',
-      'Part (c)(i): R(2) ≈ 8, R(2) + 3 = 11.',
-      'Part (c)(ii): Same parabola shape lifted vertically by 3 units (peak from ≈9·5 to ≈12·5; roots and y-intercept all shift up by 3).',
-    ],
-    commonTraps: [
-      'Part (a)(i): finding P(0) = −4 but skipping the explanation — drops a level of credit.',
-      'Part (a)(iv): writing 1·2 ≤ x ≤ 5·8 with no graph work — capped at High Partial Credit.',
-      'Part (b)(i): forgetting to set Q′(x) = 0; just leaving Q′(x) = −3x + 9·6 as the final answer.',
-      'Part (b)(ii): substituting x = 3·2 into Q′(x) instead of Q(x) — gives 0 instead of the maximum.',
-      'Part (c)(ii): translating left or right by 3, or stretching vertically by 3, instead of shifting up.',
-    ],
+    biggestMistake: {
+      title: "Reading 'explain' and 'hence' as polite framing",
+      body: "Q8 has three sub-parts and each one rewards reading the command word literally. (a)(i) demands BOTH a number AND a one-sentence explanation — the explanation carries marks. (b)(i)/(ii) chain via 'hence' — find Q′(x), set it to zero, then substitute back into Q(x) (not Q′(x)). (c)(ii) tests whether you can distinguish R(x) + 3 (vertical shift up) from R(x + 3) (horizontal shift left). The 2015 Maths CER noted strong OL candidates 'presented the relevant formula, substituted correctly, did the calculation, and gave the answer correct to two decimal places with the relevant unit, as required' (p.23). Q8 is full of 'as required' moments.",
+      source: { year: 2015, type: 'chief-examiner', pageRef: 'p.23' },
+    },
   },
   {
     id: 'maths-2025-ord-p2-q7',
@@ -1084,6 +1141,13 @@ export const mathsQuestions: ExamQuestion[] = [
         type: 'short-text',
         prompt: 'What three things does (c)(iii) require for full marks?',
         hint: 'Calculations, conclusion, reason.',
+        debrief: {
+          strategicPrinciple: "Calculations + Conclusion + Reason. The (c)(iii) marking rule explicitly applies Full Credit −1 if either conclusion OR reason is missing or incorrect. The calculation alone caps you below full marks.",
+          commonWrongAnswer: {
+            answer: 'Just the calculation',
+            reason: 'Students compute the confidence interval [9.5, 16.5] and stop, treating "state your conclusion, and give a reason" as polite framing. The OL marking convention treats each command word as a separately credited item — three commands = three items.',
+          },
+        },
       },
       {
         id: 'q8-r-bound',
@@ -1096,6 +1160,14 @@ export const mathsQuestions: ExamQuestion[] = [
           'r must be less than 1·96',
         ],
         correctAnswer: 'r must satisfy −1 ≤ r ≤ 1',
+        debrief: {
+          strategicPrinciple: 'Correlation coefficient r is bounded: −1 ≤ r ≤ 1. Any value outside that range is mathematically impossible. The range itself is the reason "r = 5" is wrong, not just that 5 feels large.',
+          commonWrongAnswer: {
+            answer: 'r must be a whole number',
+            reason: 'Students invent a constraint to rule out 5 without recalling the actual bound. The 2015 Maths CER noted OL candidates "struggled noticeably with questions that involved any significant amount of algebra" (p.17) — the [−1, 1] bound is a procedural fact, easily forgotten under pressure.',
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.17' },
+          },
+        },
       },
       {
         id: 'q8-me-formula',
@@ -1108,6 +1180,14 @@ export const mathsQuestions: ExamQuestion[] = [
           '1·96/√n',
         ],
         correctAnswer: '1/√n',
+        debrief: {
+          strategicPrinciple: 'OL margin of error at 5% significance is 1/√n. HL uses 1·96·√(p̂(1−p̂)/n). Don\'t import the HL formula onto an OL paper — the OL marking scheme expects 1/√n exactly.',
+          commonWrongAnswer: {
+            answer: '1·96 × √(p̂(1−p̂)/n)',
+            reason: 'Students conflate OL and HL formulae. The 2015 Maths CER documented that cohort migration was reshaping grade distributions — many candidates "would previously have done OL are now doing HL" (p.27), and the reverse pattern (OL candidates exposed to HL material) leads them to reach for the more sophisticated formula. The marker awards on the OL convention only.',
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.27' },
+          },
+        },
       },
       {
         id: 'q8-show-that',
@@ -1120,29 +1200,21 @@ export const mathsQuestions: ExamQuestion[] = [
           'It\'s optional working',
         ],
         correctAnswer: 'Demonstrate the calculation that produces 3·5%',
+        debrief: {
+          strategicPrinciple: "'Show that' means the answer is given; demonstrate the working that produces it. Stating '3.5%' is not the answer — the working IS the answer. Without the derivation (ME = 1/√815 = 0.03503… = 3.5%), the marker has nothing to credit.",
+          commonWrongAnswer: {
+            answer: 'Just write 3·5% as the answer',
+            reason: "Students treat 'show that' as confirmation, not derivation. The 2015 Maths CER is explicit: 'marks are generally not awarded for an incorrect answer without any supporting work, whereas if candidates show a procedure which would lead to a solution, then they may get credit for this' (p.31). 'Show that' inverts the rule — the correct answer alone gets no credit because the marking scheme is testing whether you can derive it.",
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.31' },
+          },
+        },
       },
     ],
-    topAnswerIncludes: [
-      'Diesel: 22·06%, 79°. Hybrid: 25·81%. Fully Electric: 69°',
-      'Pie chart with three new sectors drawn AND labelled (Diesel, Fully Electric, Hybrid)',
-      '(b)(i): Strong negative — "cars with greater engine size are less fuel efficient"',
-      '(b)(ii): "r cannot be greater than 1" / "r must lie between −1 and +1"',
-      '(c)(i): ME = 1/√815 = 0·035028... = 3·5% (1 d.p.)',
-      '(c)(ii): 106/815 × 100 = 13% (nearest percent)',
-      '(c)(iii) calculations: 13 ± 3·5 → CI is [9·5%, 16·5%]',
-      '(c)(iii) conclusion: "Reject the claim that 2024 is the same as 2023" / "There is evidence the proportion changed"',
-      '(c)(iii) reason: "19·2% lies outside the CI [9·5%, 16·5%]"',
-    ],
-    commonTraps: [
-      'Drawing pie chart sectors but not labelling them → Full Credit −1',
-      "(b)(i) saying 'weak negative' when the trend is clearly strong",
-      "(b)(ii) writing '5 is wrong' without giving the [−1, 1] range",
-      '(c)(i) using the HL formula 1·96·√(p̂(1−p̂)/n) — OL formula is just 1/√n',
-      "(c)(i) stating 3·5% without showing the derivation — fails 'Show that'",
-      '(c)(iii) STOPPING at the calculation 13 ± 3·5 = [9·5, 16·5] without conclusion or reason',
-      '(c)(iii) writing the conclusion but not the reason → Full Credit −1',
-      '(c)(iii) comparing 13% to its own CI instead of comparing 19·2% (the 2023 value) to the 2024 CI',
-    ],
+    biggestMistake: {
+      title: 'Stopping at the calculation — and importing the HL formula',
+      body: "Q8 is statistics-heavy: pie chart, correlation, hypothesis test. Two failure modes carry most of the lost marks. (c)(iii) explicitly requires THREE items — calculation, conclusion, reason; the marking scheme applies a star if conclusion or reason is missing. (c)(i) tests the OL margin-of-error formula (1/√n), which mixed-cohort candidates often substitute the HL formula for. The 2015 Maths CER: 'Marks are generally not awarded for an incorrect answer without any supporting work, whereas if candidates show a procedure which would lead to a solution, then they may get credit for this' (p.31) — and conversely, a correct answer without the demanded conclusion + reason is capped at the calculation mark only.",
+      source: { year: 2015, type: 'chief-examiner', pageRef: 'p.31' },
+    },
   },
   {
     id: 'maths-2025-ord-p2-q9',
@@ -1263,6 +1335,14 @@ export const mathsQuestions: ExamQuestion[] = [
         prompt: 'Lengths scale by k. Areas scale by:',
         options: ['k', 'k²', 'k³', '√k'],
         correctAnswer: 'k²',
+        debrief: {
+          strategicPrinciple: "Lengths scale by k; areas scale by k². Doubling a triangle's side quadruples its area. For enlargements: bigger area / smaller area = k², not k. Volumes scale by k³ — same logic.",
+          commonWrongAnswer: {
+            answer: 'k',
+            reason: "Students apply the scale factor uniformly to everything — lengths AND areas — without distinguishing dimension. The 2015 Maths CER pinpointed this exact pattern as the defining OL P2 weakness: 'Many candidates struggled with the construction of the centre of enlargement and the subsequent determination and application of scale factor' (p.22) — enlargements were the lowest-mean OL P2 question at 46%.",
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.22' },
+          },
+        },
       },
       {
         id: 'q9-floor',
@@ -1275,6 +1355,14 @@ export const mathsQuestions: ExamQuestion[] = [
           'Floor and round are the same for positive numbers',
         ],
         correctAnswer: '"Needs at least 60 cm" means each must have ≥60 cm — 12 participants would only have 58 cm each',
+        debrief: {
+          strategicPrinciple: "'Maximum' + 'needs at least' = floor, not round. 11.6 means 12 participants would each get 58 cm — short of the 60 cm constraint. So 11 is the actual maximum.",
+          commonWrongAnswer: {
+            answer: 'Because rounding 11·6 gives 12',
+            reason: "Students round to nearest by reflex. The 2015 Maths CER documented a related failure mode at HL — candidates 'did not test the resulting roots, assuming instead that both solutions would satisfy the original equation' (p.21). Same family of error: not checking whether the rounded answer actually satisfies the question's constraint (60 cm per person).",
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.21' },
+          },
+        },
       },
       {
         id: 'q9-centroid',
@@ -1287,26 +1375,21 @@ export const mathsQuestions: ExamQuestion[] = [
           'Altitudes',
         ],
         correctAnswer: 'Medians (vertex to midpoint of opposite side)',
+        debrief: {
+          strategicPrinciple: 'Centroid = intersection of MEDIANS (vertex to midpoint of opposite side). The other three: circumcentre = perpendicular bisectors, incentre = angle bisectors, orthocentre = altitudes. Four named centres; the centroid is the only one that\'s a balance point.',
+          commonWrongAnswer: {
+            answer: 'Perpendicular bisectors of the sides',
+            reason: "Students learn the four triangle centres as a set and confuse the constructions. Both centroid and circumcentre involve lines drawn from sides — easy to swap under pressure. The 2015 Maths CER noted OL candidates 'struggled with the construction of the centre of enlargement' (p.22); construction-of-named-points more broadly remains a recurring OL weak spot.",
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.22' },
+          },
+        },
       },
     ],
-    topAnswerIncludes: [
-      '(a)(i): compass arcs from A and B (equal radius) intersecting above/below [AB]; line through intersections crosses [AB] at midpoint D',
-      '(a)(ii): at least two medians drawn (vertex to midpoint of opposite side); intersection labelled O',
-      '(b)(i): k = 45/36 = 1·25 (shown as a calculation)',
-      '(b)(ii): 25·5 × 1·25 = 31·9 cm (1 d.p.)',
-      '(b)(iii): 724 / 1·5625 = 463 cm² (nearest cm²)',
-      '(c)(i): (250/360) × π(160² − 120²) = (250/360) × π(11 200) = 24 435 cm² (nearest cm²)',
-      '(c)(ii): outer arc = (250/360) × 2π(160) = 698·13 cm → 698·13 / 60 = 11·63... → 11 participants (FLOOR)',
-    ],
-    commonTraps: [
-      'Measuring with a ruler instead of constructing with compass arcs',
-      'Not labelling D and/or O → Full Credit −1',
-      "Drawing perpendicular bisectors instead of medians (that's the circumcentre, not the centroid)",
-      'k² area trap — multiplying by k once (724 × 1·25 = 905) or dividing by k once (724 / 1·25 = 579·2)',
-      '(c)(i) calculating the full sector at 160 only (forgetting to subtract the inner sector)',
-      '(c)(ii) using inner circumference 2π(120) instead of outer 2π(160)',
-      "(c)(ii) rounding 11·6 UP to 12 — must FLOOR for 'maximum needing at least'",
-    ],
+    biggestMistake: {
+      title: 'k² for areas — the most-failed enlargement rule',
+      body: "Q9 turns on three named procedural rules: centroid = medians (not perpendicular bisectors); areas scale by k² (not k); 'maximum needing at least' = floor (not round). The 2015 Maths CER pinpointed this exact category as the lowest-mean OL P2 question at 46%: 'Many candidates struggled with the construction of the centre of enlargement and the subsequent determination and application of scale factor' (p.22). Each rule is a single line of work, but each carries a sub-part's worth of marks.",
+      source: { year: 2015, type: 'chief-examiner', pageRef: 'p.22' },
+    },
   },
   {
     id: 'maths-2025-ord-p2-q10',
@@ -1420,6 +1503,14 @@ export const mathsQuestions: ExamQuestion[] = [
         prompt: 'Two sides and the included angle, want the area. Which formula?',
         options: ['Sine rule', 'Cosine rule', '½ ab sin C', 'Pythagoras'],
         correctAnswer: '½ ab sin C',
+        debrief: {
+          strategicPrinciple: 'Two sides + included angle, want AREA → ½ ab sin C. (Cosine rule finds a missing side; sine rule finds missing angles in non-right triangles; Pythagoras only works for right-angled triangles.) Formula choice turns on what is given and what is wanted.',
+          commonWrongAnswer: {
+            answer: 'Cosine rule',
+            reason: 'Students see "triangle + included angle" in their formula bank and reach for cosine rule by reflex — but cosine rule returns a side, not an area. The 2015 Maths CER noted OL candidates "struggled noticeably with questions that involved any significant amount of algebra" (p.17); choosing among trig formulae is exactly this kind of structural decision that gets skipped under time pressure.',
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.17' },
+          },
+        },
       },
       {
         id: 'q10-perm-comb',
@@ -1432,31 +1523,34 @@ export const mathsQuestions: ExamQuestion[] = [
           'Different — but multiply ⁵C₂ by 2',
         ],
         correctAnswer: 'Different route — permutation (⁵P₂ = 20)',
+        debrief: {
+          strategicPrinciple: 'Routes have order: A→B→C→A and A→C→B→A are DIFFERENT sequences of swims. Order matters → permutation (ⁿPᵣ), not combination (ⁿCᵣ). ⁵P₂ = 5×4 = 20.',
+          commonWrongAnswer: {
+            answer: 'Same route — combination (⁵C₂ = 10)',
+            reason: 'Students see "pick 2 from 5" and reach for combinations — the rote pattern. The 2015 Maths CER flagged this exact failure mode at OL on a parallel counting question: candidates "simply worked with a factorial (6!), while others worked with ⁿPᵣ, neither of which displays any appreciable level of understanding" (p.21) — deploying counting machinery without parsing whether order matters.',
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.21' },
+          },
+        },
       },
       {
         id: 'q10-decompose',
         type: 'short-text',
         prompt: 'How does ABCDEF decompose into shapes you can find areas of?',
         hint: 'Two triangles plus a rectangle.',
+        debrief: {
+          strategicPrinciple: "ABCDEF = two congruent triangles (ABC, DEF) + rectangle ACDF in the middle. The 'hence' in (iv) is the cue — use the |AC| you just found as one side of the rectangle. Decomposition turns a 'six-sided shape' into three formula applications you already know.",
+          commonWrongAnswer: {
+            answer: 'Treat it as one shape and search for a hexagon formula',
+            reason: "Students look for a single polygon-area formula instead of decomposing. The decomposition is the strategic move; once you see two triangles + a rectangle, the formula choice is just 2 × ½ab sin C + length × width. The 2015 Maths CER noted that strong OL candidates 'presented the relevant formula, substituted correctly, did the calculation, and gave the answer correct to two decimal places with the relevant unit' (p.23) — clean decomposition is what makes the formula choice trivial.",
+            source: { year: 2015, type: 'chief-examiner', pageRef: 'p.23' },
+          },
+        },
       },
     ],
-    topAnswerIncludes: [
-      '(a)(i): 4×200 + 2×150 = 1100 m',
-      '(a)(ii): ½(150)(200) sin 110° = 14 095 m² (nearest m²)',
-      '(a)(iii): |AC|² = 150² + 200² − 2(150)(200) cos 110° = 83 021 → |AC| = 288 m',
-      '(a)(iv): 2 × 14 095 + 200 × 288 = 85 790 m² (two triangles + rectangle ACDF)',
-      '(b)(i): any valid permutation, e.g. A → B → C → D → E → F → A',
-      '(b)(ii): 5! = 120 routes',
-      '(b)(iii): ⁵P₂ = 5 × 4 = 20 routes',
-    ],
-    commonTraps: [
-      '(a)(i) forgetting two of the six sides',
-      '(a)(ii) using cosine rule when ½ ab sin C is intended',
-      '(a)(iii) using a non-included angle in the cosine rule',
-      '(a)(iv) treating the polygon as one triangle, or two triangles only (missing the rectangle)',
-      '(b)(ii) computing 6! — A is fixed at start and end, only 5 middle markers permute',
-      '(b)(iii) using ⁵C₂ = 10 instead of ⁵P₂ = 20 — order matters',
-      '(b)(iii) multiplying ⁵C₂ by 2 — ⁵P₂ already accounts for order',
-    ],
+    biggestMistake: {
+      title: 'Combinations vs permutations, and the wrong trig formula for area',
+      body: "Q10 spans trig and counting; each sub-part has a single high-value choice. (a)(ii) chooses between ½ ab sin C (for area) and cosine rule (for sides) — pick the one matching what you need to find. (a)(iv) uses 'hence' to chain (iii)'s |AC| into a decomposition (two triangles + rectangle). (b)(ii) is 5! (not 6! — A is fixed). (b)(iii) is ⁵P₂ (not ⁵C₂ — routes have order). The 2015 Maths CER documented this exact OL counting-confusion pattern: 'Many students simply worked with a factorial (6!), while others worked with ⁿPᵣ, neither of which displays any appreciable level of understanding' (p.21).",
+      source: { year: 2015, type: 'chief-examiner', pageRef: 'p.21' },
+    },
   },
 ];

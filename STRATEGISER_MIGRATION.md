@@ -22,15 +22,15 @@ naming the question id. Production console stays clean.
 | english-2024-p1-text2-qb      | english   | legacy | —        |
 | english-2024-p1-composing-5   | english   | legacy | —        |
 | irish-placeholder-2024-p2-q1  | irish     | legacy | —        |
-| maths-placeholder-2024-p1-q1  | maths     | legacy | —        |
+| maths-placeholder-2024-p1-q1  | maths     | migrated | 2026-05-19 |
 | maths-2025-ord-p1-q3          | maths     | migrated | 2026-05-19 |
 | maths-2025-ord-p1-q4          | maths     | migrated | 2026-05-19 |
-| maths-2025-ord-p1-q7          | maths     | legacy | —        |
-| maths-2025-ord-p1-q8          | maths     | legacy | —        |
+| maths-2025-ord-p1-q7          | maths     | migrated | 2026-05-19 |
+| maths-2025-ord-p1-q8          | maths     | migrated | 2026-05-19 |
 | maths-2025-ord-p2-q7          | maths     | migrated | 2026-05-19 |
-| maths-2025-ord-p2-q8          | maths     | legacy | —        |
-| maths-2025-ord-p2-q9          | maths     | legacy | —        |
-| maths-2025-ord-p2-q10         | maths     | legacy | —        |
+| maths-2025-ord-p2-q8          | maths     | migrated | 2026-05-19 |
+| maths-2025-ord-p2-q9          | maths     | migrated | 2026-05-19 |
+| maths-2025-ord-p2-q10         | maths     | migrated | 2026-05-19 |
 | geo-2025-hl-q1c               | geography | legacy | —        |
 | geo-2025-hl-q2bi              | geography | legacy | —        |
 | geo-2025-hl-q2c               | geography | legacy | —        |
@@ -51,9 +51,9 @@ For new migrations to follow CLAUDE.md content quality rules ("must consult `/ex
 | english   | none                         | 8                        |
 | geography | none                         | 4                        |
 | irish     | none                         | 1                        |
-| maths     | 2015 chief examiner only     | 5 OL remaining (feasible — 2015 CER documents perennial OL patterns that cite cleanly onto 2025 questions) |
+| maths     | 2015 chief examiner          | 0 — all 9 migrated using 2015 CER perennial-pattern citations |
 
-Maths migrations already done leverage the 2015 Chief Examiner Report's documented OL perennial patterns (algebra struggles, substituting wrong derivative, not showing working, not writing conclusions). The 5 remaining Maths OL questions can be migrated the same way without new reports.
+All Maths migrations leverage the 2015 Chief Examiner Report's documented OL perennial patterns (algebra struggles, substituting into wrong derivative, not showing working, not writing conclusions, k² for areas, permutation-vs-combination confusion, formula misapplication). The English, Geography, and Irish migrations require their respective Chief Examiner Reports to be added to the library first.
 
 ## Workflow per question
 
