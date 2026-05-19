@@ -38,7 +38,7 @@ import { writePattern } from '../knowledgePatterns';
 const TEAL = '#2A7D6F';
 const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#FDF8F0';
+const CREAM = '#F0FAF8';
 const WARN = '#A8746E';
 
 const TIMER_SECONDS = 30;
@@ -480,9 +480,9 @@ const NeutralActions: React.FC<{ onSpot: () => void; onFine: () => void }> = ({ 
       onClick={onSpot}
       className="font-sans rounded-full"
       style={{
-        backgroundColor: INK,
+        backgroundColor: TEAL,
         color: '#FFFFFF',
-        border: `2px solid ${INK}`,
+        border: `1px solid ${TEAL}`,
         padding: '11px 22px',
         fontSize: 13,
         fontWeight: 600,
@@ -497,8 +497,8 @@ const NeutralActions: React.FC<{ onSpot: () => void; onFine: () => void }> = ({ 
       className="font-sans rounded-full"
       style={{
         backgroundColor: '#FFFFFF',
-        color: INK,
-        border: `2px solid ${INK}`,
+        color: TEAL,
+        border: `1px solid ${TEAL}55`,
         padding: '11px 22px',
         fontSize: 13,
         fontWeight: 600,
@@ -536,9 +536,9 @@ const RevealPanel: React.FC<{ card: TrapCard; verdict: 'spotted' | 'missed' | nu
         onClick={onContinue}
         className="font-sans rounded-full"
         style={{
-          backgroundColor: INK,
+          backgroundColor: TEAL,
           color: '#FFFFFF',
-          border: `2px solid ${INK}`,
+          border: `1px solid ${TEAL}`,
           padding: '9px 20px',
           fontSize: 12.5,
           fontWeight: 600,
@@ -556,20 +556,20 @@ const ConsequencePanel: React.FC<{ card: TrapCard; onContinue: () => void }> = (
     <div
       className="rounded-xl"
       style={{
-        backgroundColor: INK,
-        color: '#FFFFFF',
+        backgroundColor: '#F0FAF8',
+        border: `1px solid ${WARN}33`,
         padding: '18px 20px',
       }}
     >
-      <p className="font-sans" style={{ fontSize: 10.5, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: '#FFD8A8', opacity: 0.9, marginBottom: 8 }}>
+      <p className="font-sans" style={{ fontSize: 10.5, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: WARN, marginBottom: 8 }}>
         Marking-scheme cost
       </p>
-      <p className="font-sans" style={{ fontSize: 13.5, color: '#E8E4DE', lineHeight: 1.6, marginBottom: 14 }}>
+      <p className="font-sans" style={{ fontSize: 13.5, color: '#3F3B36', lineHeight: 1.6, marginBottom: 14 }}>
         {card.consequence}
       </p>
       <RiskMeter pct={card.marksAtRiskPct} />
       {card.source.cite && (
-        <p className="font-sans" style={{ fontSize: 11, color: '#9e9186', marginTop: 12, fontStyle: 'italic' }}>
+        <p className="font-sans" style={{ fontSize: 11, color: '#78716C', marginTop: 12, fontStyle: 'italic' }}>
           {card.source.cite}
         </p>
       )}
@@ -580,9 +580,9 @@ const ConsequencePanel: React.FC<{ card: TrapCard; onContinue: () => void }> = (
         onClick={onContinue}
         className="font-sans rounded-full"
         style={{
-          backgroundColor: INK,
+          backgroundColor: TEAL,
           color: '#FFFFFF',
-          border: `2px solid ${INK}`,
+          border: `1px solid ${TEAL}`,
           padding: '9px 20px',
           fontSize: 12.5,
           fontWeight: 600,
@@ -599,17 +599,17 @@ const ConsequencePanel: React.FC<{ card: TrapCard; onContinue: () => void }> = (
 const RiskMeter: React.FC<{ pct: number }> = ({ pct }) => (
   <div>
     <div className="flex items-baseline justify-between mb-1.5">
-      <span className="font-sans" style={{ fontSize: 11, fontWeight: 700, color: '#FFD8A8', opacity: 0.85 }}>
+      <span className="font-sans" style={{ fontSize: 11, fontWeight: 700, color: WARN }}>
         Marks at risk on this question
       </span>
-      <span className="font-serif" style={{ fontSize: 18, fontWeight: 700, color: '#FFFFFF' }}>
+      <span className="font-serif" style={{ fontSize: 18, fontWeight: 700, color: INK }}>
         {pct}%
       </span>
     </div>
     <div
       style={{
         height: 8,
-        backgroundColor: '#3F3B36',
+        backgroundColor: '#EDEBE8',
         borderRadius: 999,
         overflow: 'hidden',
       }}
@@ -651,15 +651,15 @@ const PatternBreakCard: React.FC<{ history: ResolvedCard[]; onContinue: () => vo
       transition={{ duration: 0.45, ease: 'easeOut' }}
       className="rounded-2xl"
       style={{
-        backgroundColor: INK,
-        color: '#FFFFFF',
-        padding: '28px 30px',
+        backgroundColor: '#F0FAF8',
+        border: `1px solid ${TEAL}33`,
+        padding: '24px 26px',
       }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#FFD8A8', opacity: 0.85 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
         Pattern check · {history.length} cards in
       </p>
-      <h3 className="font-serif" style={{ fontSize: 22, fontWeight: 600, lineHeight: 1.25, marginTop: 6 }}>
+      <h3 className="font-serif" style={{ fontSize: 22, fontWeight: 600, color: INK, lineHeight: 1.25, marginTop: 6 }}>
         {recentMisses.length === 0
           ? 'Five cards, five spots. You\'re reading the questions like an examiner.'
           : topCategory && topCount >= 2
@@ -669,17 +669,17 @@ const PatternBreakCard: React.FC<{ history: ResolvedCard[]; onContinue: () => vo
 
       {topCategory && topCount >= 2 && (
         <div className="mt-4">
-          <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#FFD8A8', opacity: 0.85, marginBottom: 6 }}>
+          <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 6 }}>
             Behavioural fix
           </p>
-          <p className="font-sans" style={{ fontSize: 13.5, color: '#E8E4DE', lineHeight: 1.6 }}>
+          <p className="font-sans" style={{ fontSize: 13.5, color: '#3F3B36', lineHeight: 1.6 }}>
             {TRAP_CATEGORY_FIXES[topCategory]}
           </p>
         </div>
       )}
 
       {recentMisses.length === 0 && (
-        <p className="font-sans" style={{ fontSize: 13.5, color: '#E8E4DE', lineHeight: 1.6, marginTop: 4 }}>
+        <p className="font-sans" style={{ fontSize: 13.5, color: '#3F3B36', lineHeight: 1.6, marginTop: 4 }}>
           That five-card streak is the trap-reader&rsquo;s habit forming. Keep reading every cue twice — modifier, count, restriction, command — before answering.
         </p>
       )}
@@ -690,9 +690,9 @@ const PatternBreakCard: React.FC<{ history: ResolvedCard[]; onContinue: () => vo
           onClick={onContinue}
           className="font-sans rounded-full"
           style={{
-            backgroundColor: '#FFFFFF',
-            color: INK,
-            border: '2px solid #FFFFFF',
+            backgroundColor: TEAL,
+            color: '#FFFFFF',
+            border: `1px solid ${TEAL}`,
             padding: '10px 22px',
             fontSize: 13,
             fontWeight: 600,
@@ -744,12 +744,12 @@ const FinalReport: React.FC<{ history: ResolvedCard[]; totalCards: number; onRes
   return (
     <section
       className="rounded-2xl"
-      style={{ backgroundColor: INK, color: '#FFFFFF', padding: '32px 32px 28px' }}
+      style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '26px 28px' }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#FFD8A8', opacity: 0.85 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
         Your trap map
       </p>
-      <h2 className="font-serif" style={{ fontSize: 26, fontWeight: 600, lineHeight: 1.2, marginTop: 6 }}>
+      <h2 className="font-serif" style={{ fontSize: 26, fontWeight: 600, color: INK, lineHeight: 1.2, marginTop: 6 }}>
         {spotted} of {totalCards} traps caught.
       </h2>
 
@@ -759,14 +759,14 @@ const FinalReport: React.FC<{ history: ResolvedCard[]; totalCards: number; onRes
           return (
             <div key={b.category}>
               <div className="flex items-baseline justify-between mb-1">
-                <span className="font-sans" style={{ fontSize: 12, fontWeight: 600, color: '#FFFFFF' }}>
+                <span className="font-sans" style={{ fontSize: 12, fontWeight: 600, color: INK }}>
                   {TRAP_CATEGORY_LABELS[b.category]}
                 </span>
-                <span className="font-sans" style={{ fontSize: 11, color: '#FFD8A8', opacity: 0.85 }}>
+                <span className="font-sans" style={{ fontSize: 11, color: '#78716C' }}>
                   {b.hits}/{b.total}
                 </span>
               </div>
-              <div style={{ height: 6, backgroundColor: '#3F3B36', borderRadius: 999, overflow: 'hidden' }}>
+              <div style={{ height: 6, backgroundColor: '#EDEBE8', borderRadius: 999, overflow: 'hidden' }}>
                 <motion.div
                   initial={{ width: 0 }}
                   animate={{ width: `${pct}%` }}
@@ -780,14 +780,14 @@ const FinalReport: React.FC<{ history: ResolvedCard[]; totalCards: number; onRes
       </div>
 
       {blindSpot && (
-        <div className="mt-7" style={{ borderLeft: `3px solid ${TEAL}`, paddingLeft: 16 }}>
-          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#FFD8A8', opacity: 0.9 }}>
+        <div className="mt-7">
+          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
             Your biggest blind spot
           </p>
-          <h4 className="font-serif" style={{ fontSize: 17, fontWeight: 600, marginTop: 4, marginBottom: 6 }}>
+          <h4 className="font-serif" style={{ fontSize: 17, fontWeight: 600, color: INK, marginTop: 4, marginBottom: 6 }}>
             {TRAP_CATEGORY_LABELS[blindSpot.category]}
           </h4>
-          <p className="font-sans" style={{ fontSize: 13.5, color: '#E8E4DE', lineHeight: 1.6 }}>
+          <p className="font-sans" style={{ fontSize: 13.5, color: '#3F3B36', lineHeight: 1.6 }}>
             {TRAP_CATEGORY_FIXES[blindSpot.category]}
           </p>
         </div>
@@ -799,9 +799,9 @@ const FinalReport: React.FC<{ history: ResolvedCard[]; totalCards: number; onRes
           onClick={onRestart}
           className="font-sans rounded-full"
           style={{
-            backgroundColor: '#FFFFFF',
-            color: INK,
-            border: '2px solid #FFFFFF',
+            backgroundColor: TEAL,
+            color: '#FFFFFF',
+            border: `1px solid ${TEAL}`,
             padding: '10px 22px',
             fontSize: 13,
             fontWeight: 600,

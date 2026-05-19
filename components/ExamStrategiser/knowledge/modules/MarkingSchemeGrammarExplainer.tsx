@@ -146,7 +146,7 @@ const SubjectTabs: React.FC<{
 const ArchitectureCard: React.FC<{ grammar: SubjectMarkingGrammar }> = ({ grammar }) => (
   <section
     className="rounded-2xl"
-    style={{ backgroundColor: '#FAF7F4', border: `1px solid ${TEAL}33`, padding: '22px 26px' }}
+    style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '22px 26px' }}
   >
     <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 8 }}>
       The architecture
@@ -223,7 +223,7 @@ const WorkedExampleCard: React.FC<{ example: NonNullable<SubjectMarkingGrammar['
     </div>
     <div
       className="rounded-xl"
-      style={{ backgroundColor: '#FAF7F4', border: `1px solid ${TEAL}33`, padding: '14px 16px' }}
+      style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '14px 16px' }}
     >
       <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: TEAL, marginBottom: 4 }}>
         Outcome

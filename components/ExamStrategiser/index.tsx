@@ -18,6 +18,7 @@ import QuestionPlayer from './QuestionPlayer';
 import SubjectStrategyPanel from './SubjectStrategyPanel';
 import TrapLibrary from './TrapLibrary';
 import NecessaryKnowledge, { type KnowledgeModuleId } from './knowledge/NecessaryKnowledge';
+import YourPatternsContainer from './knowledge/YourPatternsContainer';
 import CommandWordDecoder from './knowledge/modules/CommandWordDecoder';
 import PCLMAllocator from './knowledge/modules/PCLMAllocator';
 import TimeAllocationCalculator from './knowledge/modules/TimeAllocationCalculator';
@@ -69,6 +70,10 @@ const ExamStrategiser: React.FC = () => {
         <QuestionPlayer
           question={activeQuestion}
           onBackToList={() => setActiveQuestion(null)}
+          onOpenTrapPatterns={() => {
+            setActiveQuestion(null);
+            setView('patterns');
+          }}
         />
       </div>
     );
@@ -161,6 +166,13 @@ const ExamStrategiser: React.FC = () => {
           </div>
 
           <SubjectStrategyPanel subject={subject} />
+
+          <YourPatternsContainer
+            onOpenModule={(id) => {
+              setActiveKnowledgeModule(id);
+              setView('knowledge');
+            }}
+          />
 
           <QuestionList questions={questions} onSelect={(q) => setActiveQuestion(q)} />
         </>

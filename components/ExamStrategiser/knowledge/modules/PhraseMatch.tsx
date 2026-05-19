@@ -42,7 +42,7 @@ import { type PhraseMatchQuestion, type PhraseMatchKey } from '../../../../types
 const TEAL = '#2A7D6F';
 const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#FDF8F0';
+const CREAM = '#F0FAF8';
 const WARN = '#A8746E';
 
 type SubjectFilter = 'all' | 'biology' | 'chemistry' | 'physics';
@@ -423,9 +423,9 @@ const PetriDishHidden: React.FC<{ total: number; onReveal: () => void }> = ({ to
         className="font-sans rounded-full inline-flex items-center gap-1.5"
         style={{
           marginTop: 16,
-          backgroundColor: INK,
+          backgroundColor: TEAL,
           color: '#FFFFFF',
-          border: `2px solid ${INK}`,
+          border: `1px solid ${TEAL}`,
           padding: '10px 22px',
           fontSize: 13,
           fontWeight: 600,
@@ -745,15 +745,15 @@ const ReverseDiagnostic: React.FC<{ question: PhraseMatchQuestion; order: string
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
       className="rounded-xl"
-      style={{ backgroundColor: INK, color: '#FFFFFF', padding: '18px 20px' }}
+      style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '18px 20px' }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#FFD8A8', opacity: 0.85, marginBottom: 6 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 6 }}>
         Sequence diagnostic
       </p>
-      <h4 className="font-serif" style={{ fontSize: 16, fontWeight: 600, lineHeight: 1.4 }}>
+      <h4 className="font-serif" style={{ fontSize: 16, fontWeight: 600, color: INK, lineHeight: 1.4 }}>
         All {order.length} phrases placed · {orderQuality}% match the model order.
       </h4>
-      <p className="font-sans" style={{ fontSize: 12.5, color: '#E8E4DE', marginTop: 8, lineHeight: 1.55 }}>
+      <p className="font-sans" style={{ fontSize: 12.5, color: '#3F3B36', marginTop: 8, lineHeight: 1.55 }}>
         {orderQuality === 100
           ? 'Both completeness and coherence achieved. The marker reads this paragraph in the same order they read the marking scheme.'
           : orderQuality >= 60
@@ -761,10 +761,10 @@ const ReverseDiagnostic: React.FC<{ question: PhraseMatchQuestion; order: string
           : 'Phrases all used but the order doesn\'t flow. The model order builds: definition first, then mechanism, then conditions.'}
       </p>
       <div className="mt-4">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: '#FFD8A8', opacity: 0.85, marginBottom: 6 }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: TEAL, marginBottom: 6 }}>
           Model paragraph
         </p>
-        <p className="font-serif" style={{ fontSize: 13, color: '#E8E4DE', lineHeight: 1.65, fontStyle: 'italic' }}>
+        <p className="font-serif" style={{ fontSize: 13, color: '#3F3B36', lineHeight: 1.65, fontStyle: 'italic' }}>
           {question.modelAnswer}
         </p>
       </div>

@@ -132,7 +132,7 @@ const SubjectPickerCard: React.FC<{
       onChange={(e) => onChange(e.target.value)}
       className="w-full font-sans rounded-xl"
       style={{
-        backgroundColor: '#FAF7F4',
+        backgroundColor: '#F0FAF8',
         border: '1px solid #EDEBE8',
         padding: '12px 14px',
         fontSize: 14,
@@ -158,7 +158,7 @@ const PerMarkRateCard: React.FC<{
 }> = ({ subject, minPerMark, secPerMark }) => (
   <section
     className="rounded-2xl"
-    style={{ backgroundColor: '#FAF7F4', border: `1px solid ${TEAL}33`, padding: '22px 26px' }}
+    style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '22px 26px' }}
   >
     <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 6 }}>
       Your per-mark rate
@@ -318,7 +318,7 @@ const SunkCostSimulator: React.FC = () => {
 
       <div
         className="rounded-xl mt-5"
-        style={{ backgroundColor: '#FAF7F4', border: `1px solid ${TEAL}33`, padding: '16px 18px' }}
+        style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '16px 18px' }}
       >
         <div className="grid sm:grid-cols-3 gap-3">
           <SimStat label="Time used" value={`${totalSpent} / ${totalAllocated} min`} highlight={overBudget ? 'warn' : null} />

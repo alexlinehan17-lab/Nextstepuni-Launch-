@@ -38,7 +38,7 @@ const annotationStyle = (type: AnnotationType, interactive: boolean): React.CSSP
     case 'keyword':
       return { ...base, textDecoration: `underline dotted ${TEAL}`, textDecorationThickness: 2, textUnderlineOffset: 4 };
     case 'trap':
-      return { ...base, textDecoration: `underline wavy ${TEAL}`, textDecorationThickness: 1.5, textDecorationSkipInk: 'auto', textUnderlineOffset: 4, opacity: 0.95 };
+      return { ...base, textDecoration: `underline wavy ${TEAL}`, textDecorationThickness: 1.5, textDecorationSkipInk: 'auto', textUnderlineOffset: 4 };
     case 'marks-allocation':
       // Pill is rendered separately; segment span gets neutral style.
       return base;
@@ -49,7 +49,7 @@ const MarksPill: React.FC<{ label: string; interactive: boolean }> = ({ label, i
   <span
     className="inline-flex items-center gap-1 align-middle"
     style={{
-      backgroundColor: '#FAF7F4',
+      backgroundColor: '#F0FAF8',
       border: `1px solid ${TEAL}33`,
       color: TEAL,
       borderRadius: 999,
@@ -163,7 +163,7 @@ const AnnotatedText: React.FC<AnnotatedTextProps> = ({ parts, mode, marksToMinut
         }
         if (part.type === 'formula') {
           return (
-            <div key={partIdx} className="font-mono" style={{ fontSize: 16, padding: '10px 14px', backgroundColor: '#FAF7F4', border: '1px solid #EDEBE8', borderRadius: 8, margin: '8px 0', display: 'inline-block' }}>
+            <div key={partIdx} className="font-mono" style={{ fontSize: 16, padding: '10px 14px', backgroundColor: '#F0FAF8', border: '1px solid #EDEBE8', borderRadius: 8, margin: '8px 0', display: 'inline-block' }}>
               {part.content.map((s, i) => renderSegment(s, partIdx, i))}
             </div>
           );
@@ -193,7 +193,7 @@ const AnnotationTooltip: React.FC<{ note: string }> = ({ note }) => (
       position: 'absolute',
       top: 'calc(100% + 8px)',
       left: 0,
-      zIndex: 20,
+      zIndex: 50,
       width: 'min(320px, 80vw)',
       backgroundColor: '#FFFFFF',
       border: '1px solid #EDEBE8',

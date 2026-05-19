@@ -42,7 +42,7 @@ import { writePattern } from '../knowledgePatterns';
 const TEAL = '#2A7D6F';
 const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#FDF8F0';
+const CREAM = '#F0FAF8';
 const WARN = '#A8746E';
 
 const MODE_LABELS: Record<ComparativeMode, string> = {
@@ -650,17 +650,17 @@ const Diagnostic: React.FC<{
   return (
     <section
       className="rounded-2xl"
-      style={{ backgroundColor: INK, color: '#FFFFFF', padding: '28px 30px' }}
+      style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '26px 28px' }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#FFD8A8', opacity: 0.85 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
         Integration diagnostic
       </p>
       <div className="flex items-baseline gap-4 mt-2 flex-wrap">
         <div>
-          <span className="font-serif" style={{ fontSize: 38, fontWeight: 700, color: '#FFFFFF' }}>
+          <span className="font-serif" style={{ fontSize: 38, fontWeight: 700, color: INK }}>
             {integrationRatio}%
           </span>
-          <span className="font-sans" style={{ fontSize: 12.5, color: '#FFD8A8', marginLeft: 8, opacity: 0.85 }}>
+          <span className="font-sans" style={{ fontSize: 12.5, color: '#78716C', marginLeft: 8 }}>
             integration ratio
           </span>
         </div>
@@ -671,7 +671,7 @@ const Diagnostic: React.FC<{
         </div>
       </div>
 
-      <p className="font-sans" style={{ fontSize: 13, color: '#E8E4DE', marginTop: 16, lineHeight: 1.6 }}>
+      <p className="font-sans" style={{ fontSize: 13, color: '#3F3B36', marginTop: 16, lineHeight: 1.6 }}>
         {integrationRatio >= 80
           ? 'You are reading the question like an examiner. H1 answers run at 80%+ — every paragraph operates on three texts at once.'
           : integrationRatio >= 50
@@ -683,7 +683,7 @@ const Diagnostic: React.FC<{
 
       {connectingVerbs.length > 0 && (
         <div className="mt-4">
-          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: '#FFD8A8', opacity: 0.75, marginBottom: 6 }}>
+          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: TEAL, marginBottom: 6 }}>
             Connecting verbs in your answer
           </p>
           <div className="flex items-center gap-1.5 flex-wrap">
@@ -695,7 +695,7 @@ const Diagnostic: React.FC<{
                   fontSize: 11,
                   fontWeight: 600,
                   color: TEAL,
-                  backgroundColor: 'rgba(42,125,111,0.18)',
+                  backgroundColor: 'rgba(42,125,111,0.12)',
                   borderRadius: 4,
                   padding: '2px 8px',
                 }}

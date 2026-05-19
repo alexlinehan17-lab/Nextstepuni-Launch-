@@ -63,7 +63,7 @@ const TrapLibrary: React.FC<Props> = ({ onOpenQuestion }) => {
         <div
           className="rounded-2xl text-center"
           style={{
-            backgroundColor: '#FAF7F4',
+            backgroundColor: '#F0FAF8',
             border: '1px solid #EDEBE8',
             padding: '36px 24px',
           }}
@@ -136,7 +136,7 @@ const PatternCard: React.FC<{ pattern: TrapPattern; onOpenQuestion: (id: string)
               textTransform: 'uppercase',
               letterSpacing: 0.5,
               color: TEAL,
-              backgroundColor: '#FAF7F4',
+              backgroundColor: '#F0FAF8',
               border: `1px solid ${TEAL}33`,
               borderRadius: 999,
               padding: '2px 8px',
@@ -152,7 +152,7 @@ const PatternCard: React.FC<{ pattern: TrapPattern; onOpenQuestion: (id: string)
       {pattern.description}
     </p>
 
-    <div className="rounded-lg" style={{ backgroundColor: '#FAF7F4', border: '1px solid #EDEBE8', padding: '10px 14px', marginBottom: 14 }}>
+    <div className="rounded-lg" style={{ backgroundColor: '#F0FAF8', border: '1px solid #EDEBE8', padding: '10px 14px', marginBottom: 14 }}>
       <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 4 }}>
         How to spot it
       </p>
@@ -177,7 +177,7 @@ const PatternCard: React.FC<{ pattern: TrapPattern; onOpenQuestion: (id: string)
               padding: '10px 14px',
               cursor: 'pointer',
             }}
-            onMouseEnter={(e) => { e.currentTarget.style.borderColor = TEAL + '55'; e.currentTarget.style.backgroundColor = '#FAF7F4'; }}
+            onMouseEnter={(e) => { e.currentTarget.style.borderColor = TEAL + '55'; e.currentTarget.style.backgroundColor = '#F0FAF8'; }}
             onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#EDEBE8'; e.currentTarget.style.backgroundColor = '#FFFFFF'; }}
           >
             <div className="flex items-start justify-between gap-3">

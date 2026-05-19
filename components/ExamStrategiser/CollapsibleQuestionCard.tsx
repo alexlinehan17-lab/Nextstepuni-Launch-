@@ -80,7 +80,7 @@ const CollapsibleQuestionCard: React.FC<Props> = ({ question, defaultOpen = true
               fontSize: 11,
               fontWeight: 700,
               color: TEAL,
-              backgroundColor: '#FAF7F4',
+              backgroundColor: '#F0FAF8',
               border: `1px solid ${TEAL}33`,
               borderRadius: 999,
               padding: '2px 9px',

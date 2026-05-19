@@ -36,7 +36,7 @@ import { type SrpSample, type SrpSentence } from '../../../../types/knowledge';
 const TEAL = '#2A7D6F';
 const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#FDF8F0';
+const CREAM = '#F0FAF8';
 
 type Phase = 'student' | 'examiner' | 'provenance';
 
@@ -253,7 +253,7 @@ const PhaseStepper: React.FC<{
                 onClick={() => reachable && onChange(p)}
                 className="font-sans flex-1 text-left rounded-xl transition-colors"
                 style={{
-                  backgroundColor: isActive ? TEAL : isPast ? '#FAF7F4' : '#FFFFFF',
+                  backgroundColor: isActive ? TEAL : isPast ? '#F0FAF8' : '#FFFFFF',
                   color: isActive ? '#FFFFFF' : isPast ? INK : '#9e9186',
                   border: `1.5px solid ${isActive ? TEAL : isPast ? INK : '#d0cdc8'}`,
                   padding: '10px 14px',
@@ -735,7 +735,7 @@ const ProvenanceTrail: React.FC<{ sample: SrpSample }> = ({ sample }) => {
               top: -3,
               bottom: -3,
               width: 2,
-              backgroundColor: INK,
+              backgroundColor: TEAL,
             }}
           />
         </div>
@@ -941,27 +941,27 @@ const PatternCard: React.FC<{ sample: SrpSample; studentPicks: Set<string> }> = 
     <section
       className="rounded-2xl"
       style={{
-        backgroundColor: INK,
-        color: '#FFFFFF',
-        padding: '26px 28px',
+        backgroundColor: '#F0FAF8',
+        border: `1px solid ${TEAL}33`,
+        padding: '24px 26px',
       }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#FFD8A8', marginBottom: 10, opacity: 0.85 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 10 }}>
         Your pattern
       </p>
       <div className="space-y-4">
         {patternMessages.map((msg, i) => (
           <div key={i}>
-            <h4 className="font-serif" style={{ fontSize: 18, fontWeight: 600, lineHeight: 1.3 }}>
+            <h4 className="font-serif" style={{ fontSize: 18, fontWeight: 600, color: INK, lineHeight: 1.3 }}>
               {msg.headline}
             </h4>
-            <p className="font-sans" style={{ fontSize: 13.5, color: '#E8E4DE', marginTop: 4, lineHeight: 1.6 }}>
+            <p className="font-sans" style={{ fontSize: 13.5, color: '#3F3B36', marginTop: 4, lineHeight: 1.6 }}>
               {msg.detail}
             </p>
           </div>
         ))}
       </div>
-      <p className="font-sans" style={{ fontSize: 11, color: '#9e9186', marginTop: 18, lineHeight: 1.5 }}>
+      <p className="font-sans" style={{ fontSize: 11, color: '#78716C', marginTop: 18, lineHeight: 1.5 }}>
         Pattern feedback is generated from your picks on this paragraph only. Try a different subject — habits travel; the absolute hits won't.
       </p>
     </section>

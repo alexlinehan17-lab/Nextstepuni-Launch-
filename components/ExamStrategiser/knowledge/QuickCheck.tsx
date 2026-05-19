@@ -105,7 +105,7 @@ const QuestionCard: React.FC<{
     <div
       className="rounded-xl"
       style={{
-        backgroundColor: '#FAF7F4',
+        backgroundColor: '#F0FAF8',
         border: '1px solid #EDEBE8',
         padding: '14px 16px',
       }}
@@ -169,12 +169,10 @@ const QuestionCard: React.FC<{
         <p
           className="font-sans"
           style={{
-            marginTop: 10,
+            marginTop: 12,
             fontSize: 12.5,
             color: '#3F3B36',
             lineHeight: 1.55,
-            paddingTop: 10,
-            borderTop: '1px solid #EDEBE8',
           }}
         >
           <span style={{ color: isCorrect ? TEAL : '#78716C', fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.5 }}>

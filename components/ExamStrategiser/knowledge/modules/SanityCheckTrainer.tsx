@@ -35,7 +35,7 @@ import {
 const TEAL = '#2A7D6F';
 const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#FDF8F0';
+const CREAM = '#F0FAF8';
 const WARN = '#A8746E';
 
 const CHECK_LABELS: Record<SanityCheck, string> = {
@@ -444,9 +444,9 @@ const CandidateCard: React.FC<{
               onClick={onTagAbsurd}
               className="font-sans flex-1 rounded-full"
               style={{
-                backgroundColor: INK,
+                backgroundColor: TEAL,
                 color: '#FFFFFF',
-                border: `1.5px solid ${INK}`,
+                border: `1px solid ${TEAL}`,
                 padding: '8px 14px',
                 fontSize: 12,
                 fontWeight: 600,
@@ -659,9 +659,9 @@ const ResolvedFooter: React.FC<{ onAdvance: () => void; isLast: boolean }> = ({ 
       onClick={onAdvance}
       className="font-sans rounded-full"
       style={{
-        backgroundColor: INK,
+        backgroundColor: TEAL,
         color: '#FFFFFF',
-        border: `2px solid ${INK}`,
+        border: `1px solid ${TEAL}`,
         padding: '11px 24px',
         fontSize: 13,
         fontWeight: 600,
@@ -788,12 +788,12 @@ const SummaryReport: React.FC<{
   return (
     <section
       className="rounded-2xl"
-      style={{ backgroundColor: INK, color: '#FFFFFF', padding: '32px 32px 28px' }}
+      style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '28px 30px 26px' }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#FFD8A8', opacity: 0.85 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
         Your checks-neglected report
       </p>
-      <h2 className="font-serif" style={{ fontSize: 26, fontWeight: 600, lineHeight: 1.2, marginTop: 6 }}>
+      <h2 className="font-serif" style={{ fontSize: 26, fontWeight: 600, color: INK, lineHeight: 1.2, marginTop: 6 }}>
         {totalCorrect} of {totalAttempts} absurd answers caught.
       </h2>
 
@@ -839,9 +839,9 @@ const SummaryReport: React.FC<{
           onClick={onRestart}
           className="font-sans rounded-full"
           style={{
-            backgroundColor: '#FFFFFF',
-            color: INK,
-            border: '2px solid #FFFFFF',
+            backgroundColor: TEAL,
+            color: '#FFFFFF',
+            border: `1px solid ${TEAL}`,
             padding: '10px 22px',
             fontSize: 13,
             fontWeight: 600,
@@ -860,11 +860,11 @@ const CheckBar: React.FC<{ entry: { check: SanityCheck; total: number; correctCo
   return (
     <div>
       <div className="flex items-baseline justify-between gap-3 mb-1">
-        <span className="font-sans" style={{ fontSize: 12, fontWeight: 600, color: '#FFFFFF' }}>
+        <span className="font-sans" style={{ fontSize: 12, fontWeight: 600, color: INK }}>
           <span style={{ color: CHECK_COLOURS[entry.check], marginRight: 6 }}>●</span>
           {CHECK_LABELS[entry.check]}
         </span>
-        <span className="font-sans" style={{ fontSize: 11, color: '#FFD8A8', opacity: 0.85 }}>
+        <span className="font-sans" style={{ fontSize: 11, color: '#78716C' }}>
           {entry.correctCount}/{entry.total}
           {entry.avgMs !== null && ` · ${formatMs(entry.avgMs)} avg`}
         </span>
@@ -872,7 +872,7 @@ const CheckBar: React.FC<{ entry: { check: SanityCheck; total: number; correctCo
       <div
         style={{
           height: 6,
-          backgroundColor: '#3F3B36',
+          backgroundColor: '#EDEBE8',
           borderRadius: 999,
           overflow: 'hidden',
         }}
@@ -892,16 +892,11 @@ const CheckBar: React.FC<{ entry: { check: SanityCheck; total: number; correctCo
 };
 
 const Insight: React.FC<{ label: string; body: string; highlight?: boolean }> = ({ label, body, highlight }) => (
-  <div
-    style={{
-      borderLeft: highlight ? `3px solid ${TEAL}` : '3px solid transparent',
-      paddingLeft: highlight ? 14 : 0,
-    }}
-  >
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#FFD8A8', opacity: 0.9 }}>
+  <div>
+    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: highlight ? TEAL : '#A8A29E' }}>
       {label}
     </p>
-    <p className="font-sans" style={{ fontSize: 13.5, color: '#E8E4DE', marginTop: 2, lineHeight: 1.55 }}>
+    <p className="font-sans" style={{ fontSize: 13.5, color: '#3F3B36', marginTop: 2, lineHeight: 1.55 }}>
       {body}
     </p>
   </div>

@@ -296,7 +296,7 @@ const ResultPanel: React.FC<{
   return (
     <section
       className="rounded-2xl"
-      style={{ backgroundColor: '#FAF7F4', border: `1px solid ${TEAL}33`, padding: '22px 26px' }}
+      style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '22px 26px' }}
     >
       <div className="flex items-baseline justify-between gap-4 flex-wrap">
         <div>
@@ -357,7 +357,7 @@ const ScenarioPanel: React.FC<{
             onClick={() => onSelect(s)}
             className="text-left rounded-xl transition-colors"
             style={{
-              backgroundColor: active ? '#FAF7F4' : '#FFFFFF',
+              backgroundColor: active ? '#F0FAF8' : '#FFFFFF',
               border: `1px solid ${active ? `${TEAL}66` : '#EDEBE8'}`,
               padding: '14px 16px',
               cursor: 'pointer',

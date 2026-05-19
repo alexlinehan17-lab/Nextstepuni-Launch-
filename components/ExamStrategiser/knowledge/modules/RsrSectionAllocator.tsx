@@ -52,7 +52,7 @@ import {
 const TEAL = '#2A7D6F';
 const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#FDF8F0';
+const CREAM = '#F0FAF8';
 const WARN = '#A8746E';
 
 type Level = 'hl' | 'ol';
@@ -672,15 +672,15 @@ const ClosingSummary: React.FC<{
   return (
     <section
       className="rounded-2xl"
-      style={{ backgroundColor: INK, color: '#FFFFFF', padding: '28px 30px' }}
+      style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '26px 28px' }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#FFD8A8', opacity: 0.85 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
         Section-by-section estimate
       </p>
-      <h3 className="font-serif" style={{ fontSize: 26, fontWeight: 600, lineHeight: 1.2, marginTop: 6 }}>
+      <h3 className="font-serif" style={{ fontSize: 26, fontWeight: 600, color: INK, lineHeight: 1.2, marginTop: 6 }}>
         ~{totalEstimate} / 100 marks under current word allocation.
       </h3>
-      <p className="font-sans" style={{ fontSize: 12, color: '#FFD8A8', opacity: 0.85, marginTop: 4 }}>
+      <p className="font-sans" style={{ fontSize: 12, color: '#78716C', marginTop: 4 }}>
         Estimate is structural — based on word allocation against mark weight. Execution quality (sources, chronology, source criticism) lives on top of this.
       </p>
 
@@ -690,19 +690,20 @@ const ClosingSummary: React.FC<{
             key={sc.section.id}
             className="rounded-xl"
             style={{
-              backgroundColor: '#3F3B36',
+              backgroundColor: '#FFFFFF',
+              border: '1px solid #EDEBE8',
               padding: '12px 14px',
             }}
           >
             <div className="flex items-baseline justify-between mb-1">
-              <span className="font-serif" style={{ fontSize: 13, fontWeight: 700, color: '#FFFFFF' }}>
+              <span className="font-serif" style={{ fontSize: 13, fontWeight: 700, color: INK }}>
                 {sc.section.label}
               </span>
               <span className="font-serif" style={{ fontSize: 14, fontWeight: 700, color: sc.inRange ? TEAL : WARN }}>
                 ~{Math.round(sc.estimateBand)} / {sc.section.marksOf100}
               </span>
             </div>
-            <p className="font-sans" style={{ fontSize: 11, color: '#E8E4DE', opacity: 0.85, lineHeight: 1.5 }}>
+            <p className="font-sans" style={{ fontSize: 11, color: '#78716C', lineHeight: 1.5 }}>
               {sc.isEmpty
                 ? 'Empty.'
                 : sc.isOver
@@ -716,11 +717,11 @@ const ClosingSummary: React.FC<{
       </div>
 
       {weakestSection && (
-        <div className="mt-6" style={{ borderLeft: `3px solid ${TEAL}`, paddingLeft: 16 }}>
-          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#FFD8A8', opacity: 0.9 }}>
+        <div className="mt-6">
+          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
             Weakest section · {weakestSection.section.label}
           </p>
-          <p className="font-sans" style={{ fontSize: 13, color: '#E8E4DE', marginTop: 4, lineHeight: 1.55 }}>
+          <p className="font-sans" style={{ fontSize: 13, color: '#3F3B36', marginTop: 4, lineHeight: 1.55 }}>
             {weakestSection.isEmpty
               ? `This section is empty. ${weakestSection.section.marksOf100} marks are unscored. ${weakestSection.section.guidance}`
               : weakestSection.isOver

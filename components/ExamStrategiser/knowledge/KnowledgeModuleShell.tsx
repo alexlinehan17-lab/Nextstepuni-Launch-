@@ -40,7 +40,7 @@ const KnowledgeModuleShell: React.FC<Props> = ({
   title,
   subtitle,
   whyThisMatters,
-  whyDefaultOpen = true,
+  whyDefaultOpen = false,
   summary,
   onBackToLanding,
   children,
@@ -81,9 +81,9 @@ const KnowledgeModuleShell: React.FC<Props> = ({
         <section
           className="rounded-2xl"
           style={{
-            backgroundColor: '#FAF7F4',
+            backgroundColor: '#F0FAF8',
             border: `1px solid ${TEAL}33`,
-            padding: '20px 24px',
+            padding: '18px 20px',
           }}
         >
           <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 8 }}>
@@ -94,25 +94,6 @@ const KnowledgeModuleShell: React.FC<Props> = ({
           </div>
         </section>
       )}
-
-      <div className="pt-2">
-        <button
-          type="button"
-          onClick={onBackToLanding}
-          className="font-sans rounded-full transition-colors"
-          style={{
-            backgroundColor: '#FFFFFF',
-            color: TEAL,
-            border: `1px solid ${TEAL}55`,
-            padding: '9px 20px',
-            fontSize: 13,
-            fontWeight: 600,
-            cursor: 'pointer',
-          }}
-        >
-          ← Back to Necessary Knowledge
-        </button>
-      </div>
     </div>
   );
 };

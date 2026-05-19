@@ -200,7 +200,7 @@ const PeeveCard: React.FC<{
   <article
     className="rounded-2xl"
     style={{
-      backgroundColor: revealed ? '#FAF7F4' : '#FFFFFF',
+      backgroundColor: revealed ? '#F0FAF8' : '#FFFFFF',
       border: `1px solid ${revealed ? `${TEAL}55` : '#EDEBE8'}`,
       transition: 'background-color 200ms ease, border-color 200ms ease',
     }}

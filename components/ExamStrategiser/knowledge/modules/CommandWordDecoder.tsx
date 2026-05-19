@@ -115,7 +115,7 @@ const CommandWordDecoder: React.FC<Props> = ({ onBack }) => {
       {!text.trim() && (
         <section
           className="rounded-2xl"
-          style={{ backgroundColor: '#FAF7F4', border: '1px solid #EDEBE8', padding: '20px 22px' }}
+          style={{ backgroundColor: '#F0FAF8', border: '1px solid #EDEBE8', padding: '20px 22px' }}
         >
           <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 10 }}>
             Try a sample question
@@ -201,7 +201,7 @@ const PasteCard: React.FC<{ text: string; setText: (v: string) => void }> = ({ t
       placeholder="e.g. Discuss, with reference to two of the texts you have studied, how a significant insight into a chosen theme was shared with the reader."
       className="w-full font-serif rounded-xl"
       style={{
-        backgroundColor: '#FAF7F4',
+        backgroundColor: '#F0FAF8',
         border: '1px solid #EDEBE8',
         padding: '14px 16px',
         fontSize: 14.5,
@@ -239,7 +239,7 @@ const DecodedView: React.FC<{
     <div className="space-y-4">
       <section
         className="rounded-2xl"
-        style={{ backgroundColor: '#FAF7F4', border: `1px solid ${TEAL}33`, padding: '20px 24px' }}
+        style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '20px 24px' }}
       >
         <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 10 }}>
           Highlighted question
@@ -306,7 +306,7 @@ const CommandCard: React.FC<{ detected: DetectedCommand }> = ({ detected }) => (
           fontSize: 10,
           fontWeight: 700,
           color: TEAL,
-          backgroundColor: '#FAF7F4',
+          backgroundColor: '#F0FAF8',
           border: `1px solid ${TEAL}33`,
           borderRadius: 999,
           padding: '2px 9px',
@@ -337,7 +337,7 @@ const ModifierCard: React.FC<{ detected: DetectedModifier }> = ({ detected }) =>
 );
 
 const DetailRow: React.FC<{ label: string; body: string; highlight?: boolean }> = ({ label, body, highlight }) => (
-  <div style={{ marginTop: 10, paddingTop: 10, borderTop: '1px solid #F5F4F1' }}>
+  <div style={{ marginTop: 14 }}>
     <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: highlight ? '#A8746E' : '#A8A29E', marginBottom: 4 }}>
       {label}
     </p>

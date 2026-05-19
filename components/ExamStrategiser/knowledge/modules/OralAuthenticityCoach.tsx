@@ -53,7 +53,7 @@ import {
 const TEAL = '#2A7D6F';
 const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#FDF8F0';
+const CREAM = '#F0FAF8';
 const WARN = '#A8746E';
 
 const TENSE_COLOURS: Record<string, string> = {
@@ -620,22 +620,22 @@ const PrescriptionPanel: React.FC<{
   return (
     <section
       className="rounded-2xl"
-      style={{ backgroundColor: INK, color: '#FFFFFF', padding: '26px 28px' }}
+      style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '24px 26px' }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#FFD8A8', opacity: 0.85 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
         Personalisation prescription
       </p>
-      <p className="font-sans" style={{ fontSize: 12, color: '#FFD8A8', opacity: 0.75, marginTop: 4, marginBottom: 16 }}>
+      <p className="font-sans" style={{ fontSize: 12, color: '#78716C', marginTop: 4, marginBottom: 16 }}>
         Three concrete moves drawn from your answer.
       </p>
 
       <div className="space-y-3">
         {moves.map((m, i) => (
-          <div key={i} style={{ borderLeft: `3px solid ${TEAL}`, paddingLeft: 14 }}>
-            <p className="font-serif" style={{ fontSize: 14, fontWeight: 700, color: '#FFFFFF', lineHeight: 1.4 }}>
+          <div key={i}>
+            <p className="font-serif" style={{ fontSize: 14, fontWeight: 700, color: INK, lineHeight: 1.4 }}>
               {i + 1}. {m.label}
             </p>
-            <p className="font-sans" style={{ fontSize: 12.5, color: '#E8E4DE', marginTop: 4, lineHeight: 1.55 }}>
+            <p className="font-sans" style={{ fontSize: 12.5, color: '#3F3B36', marginTop: 4, lineHeight: 1.55 }}>
               {m.detail}
             </p>
           </div>

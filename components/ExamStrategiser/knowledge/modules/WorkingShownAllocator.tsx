@@ -43,7 +43,7 @@ import {
 const TEAL = '#2A7D6F';
 const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#FDF8F0';
+const CREAM = '#F0FAF8';
 const WARN = '#A8746E';
 
 interface Props {
@@ -394,7 +394,7 @@ const ScaffoldRow: React.FC<{
         <span
           className="font-serif inline-flex items-center justify-center"
           style={{
-            backgroundColor: INK,
+            backgroundColor: TEAL,
             color: '#FFFFFF',
             borderRadius: 999,
             width: 28,
@@ -552,21 +552,21 @@ const PathInsight: React.FC<{
     <section
       className="rounded-2xl"
       style={{
-        backgroundColor: INK,
-        color: '#FFFFFF',
-        padding: '24px 28px',
+        backgroundColor: '#F0FAF8',
+        border: `1px solid ${TEAL}33`,
+        padding: '22px 26px',
       }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#FFD8A8', opacity: 0.85, marginBottom: 8 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 8 }}>
         Path characterisation
       </p>
-      <h4 className="font-serif" style={{ fontSize: 18, fontWeight: 600, lineHeight: 1.4 }}>
+      <h4 className="font-serif" style={{ fontSize: 18, fontWeight: 600, color: INK, lineHeight: 1.4 }}>
         {path.characterisation}
       </h4>
 
       {/* Path-vs-path comparison sparkline */}
       <div className="mt-5">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: '#FFD8A8', opacity: 0.75, marginBottom: 8 }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: TEAL, marginBottom: 8 }}>
           All five paths · {minScore} → {maxScore} marks
         </p>
         <SparklineBars
@@ -576,7 +576,7 @@ const PathInsight: React.FC<{
         />
       </div>
 
-      <p className="font-sans" style={{ fontSize: 12.5, color: '#E8E4DE', marginTop: 16, lineHeight: 1.6 }}>
+      <p className="font-sans" style={{ fontSize: 12.5, color: '#3F3B36', marginTop: 16, lineHeight: 1.6 }}>
         {path.id === 'blank' && 'A panic-blank costs every available mark. Recognising the formula alone earns 30%.'}
         {path.id === 'formula-only' && 'The formula alone is worth a third of the available marks. Most students who run out of time and scribble the formula on the way out earn more than they expect.'}
         {path.id === 'formula-sub' && 'Five marks for half the work. The student understood the structure. The next step — the actual computation — is where confidence usually breaks.'}
@@ -611,13 +611,13 @@ const SparklineBars: React.FC<{
               transition={{ duration: 0.45, ease: 'easeOut' }}
               style={{
                 width: '100%',
-                backgroundColor: isActive ? '#FFFFFF' : '#5a5550',
+                backgroundColor: isActive ? TEAL : '#D6D2CC',
                 borderRadius: 3,
                 minHeight: 2,
               }}
             />
           </div>
-          <span className="font-sans" style={{ fontSize: 10, color: isActive ? '#FFFFFF' : '#9e9186', fontWeight: isActive ? 700 : 500, textAlign: 'center', lineHeight: 1.2 }}>
+          <span className="font-sans" style={{ fontSize: 10, color: isActive ? TEAL : '#A8A29E', fontWeight: isActive ? 700 : 500, textAlign: 'center', lineHeight: 1.2 }}>
             {p.finalScore}/{marksAvailable}
           </span>
         </div>

@@ -41,7 +41,7 @@ import { writePattern } from '../knowledgePatterns';
 const TEAL = '#2A7D6F';
 const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#FDF8F0';
+const CREAM = '#F0FAF8';
 const WARN = '#A8746E';
 
 interface Props {
@@ -421,9 +421,9 @@ const Rewind: React.FC<{
           onClick={playRewind}
           className="font-sans rounded-full"
           style={{
-            backgroundColor: INK,
+            backgroundColor: TEAL,
             color: '#FFFFFF',
-            border: `2px solid ${INK}`,
+            border: `1px solid ${TEAL}`,
             padding: '7px 16px',
             fontSize: 12,
             fontWeight: 600,
@@ -621,15 +621,15 @@ const UnifiedSummary: React.FC<{ scenarios: CeilingScenario[] }> = ({ scenarios 
       transition={{ duration: 0.5 }}
       className="rounded-2xl"
       style={{
-        backgroundColor: INK,
-        color: '#FFFFFF',
-        padding: '28px 30px',
+        backgroundColor: '#F0FAF8',
+        border: `1px solid ${TEAL}33`,
+        padding: '26px 28px',
       }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#FFD8A8', opacity: 0.85 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
         Ceilings you saw fire
       </p>
-      <h3 className="font-serif" style={{ fontSize: 22, fontWeight: 600, lineHeight: 1.25, marginTop: 6 }}>
+      <h3 className="font-serif" style={{ fontSize: 22, fontWeight: 600, color: INK, lineHeight: 1.25, marginTop: 6 }}>
         Four cap rules. {totalLost} marks of beautifully written work, capped.
       </h3>
 
@@ -638,7 +638,7 @@ const UnifiedSummary: React.FC<{ scenarios: CeilingScenario[] }> = ({ scenarios 
           <li
             key={label}
             className="font-sans flex items-baseline gap-2"
-            style={{ fontSize: 13, color: '#E8E4DE' }}
+            style={{ fontSize: 13, color: '#3F3B36' }}
           >
             <span style={{ color: TEAL, fontSize: 18, lineHeight: 1 }}>·</span>
             <span><strong>{label}</strong></span>
@@ -646,11 +646,11 @@ const UnifiedSummary: React.FC<{ scenarios: CeilingScenario[] }> = ({ scenarios 
         ))}
       </ul>
 
-      <div className="mt-5" style={{ borderLeft: `3px solid ${TEAL}`, paddingLeft: 16 }}>
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#FFD8A8', opacity: 0.9 }}>
+      <div className="mt-5">
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
           The single habit that defeats all four
         </p>
-        <p className="font-sans" style={{ fontSize: 13.5, color: '#E8E4DE', marginTop: 4, lineHeight: 1.6 }}>
+        <p className="font-sans" style={{ fontSize: 13.5, color: '#3F3B36', marginTop: 4, lineHeight: 1.6 }}>
           Read the rubric for sub-task counts, named-example demands, and quotation rules <em>before</em> writing. Underline the cue and tick it off in the answer. Two minutes of rubric-reading at the start defeats every ceiling on this dashboard.
         </p>
       </div>

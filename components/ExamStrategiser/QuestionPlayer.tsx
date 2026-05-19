@@ -28,11 +28,14 @@ import DebriefStage from './stages/DebriefStage';
 interface Props {
   question: ExamQuestion;
   onBackToList: () => void;
+  /** Called when the Debrief's "See all trap patterns" link is clicked.
+   *  Parent typically dismisses the active question and switches views. */
+  onOpenTrapPatterns?: () => void;
 }
 
 const STAGES: ExamStrategiserStage[] = ['question', 'predict', 'debrief'];
 
-const QuestionPlayer: React.FC<Props> = ({ question, onBackToList }) => {
+const QuestionPlayer: React.FC<Props> = ({ question, onBackToList, onOpenTrapPatterns }) => {
   const [stageIdx, setStageIdx] = useState(0);
   const [answers, setAnswers] = useState<PredictAnswers>({});
   const [predictSubmitted, setPredictSubmitted] = useState(false);
@@ -113,7 +116,7 @@ const QuestionPlayer: React.FC<Props> = ({ question, onBackToList }) => {
               onAdvance={() => setStageIdx(STAGES.indexOf('debrief'))}
             />
           )}
-          {stage === 'debrief' && <DebriefStage question={question} answers={answers} />}
+          {stage === 'debrief' && <DebriefStage question={question} answers={answers} onOpenTrapPatterns={onOpenTrapPatterns} />}
         </MotionDiv>
       </AnimatePresence>
     </div>
