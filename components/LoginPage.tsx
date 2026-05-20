@@ -5,7 +5,7 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { MotionButton, MotionDiv } from './Motion';
+import { MotionButton, MotionDiv, MotionSpan } from './Motion';
 import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check } from 'lucide-react';
 import { auth, db } from '../firebase';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
@@ -52,20 +52,73 @@ const GoogleIcon: React.FC<{ size?: number }> = ({ size = 18 }) => (
   </svg>
 );
 
-// ── Aurora gradient left panel (stable, never re-renders) ──
-const GradientPanel = () => (
-  <div className="hidden md:block w-1/2 relative overflow-hidden" style={{ borderRadius: '16px 0 0 16px' }}>
-    <div className="absolute inset-0" style={{ backgroundColor: '#EAE5DE' }} />
-    <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, #FAFBF6 0%, transparent 15%)' }} />
-    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 140% 70% at 50% 50%, rgba(140,120,210,0.5) 0%, transparent 65%)' }} />
-    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 100% 50% at 35% 40%, rgba(155,135,225,0.35) 0%, transparent 60%)' }} />
-    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 120% 55% at 50% 95%, rgba(225,110,160,0.65) 0%, transparent 50%)' }} />
-    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 90% 45% at 50% 75%, rgba(215,130,175,0.4) 0%, transparent 55%)' }} />
-    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 65% at 0% 60%, rgba(120,145,225,0.4) 0%, transparent 60%)' }} />
-    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 65% at 100% 60%, rgba(120,145,225,0.35) 0%, transparent 60%)' }} />
-    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 55% 40% at 65% 88%, rgba(240,150,120,0.4) 0%, transparent 50%)' }} />
-  </div>
-);
+// ── Gateway panel ──────────────────────────────────────────
+// Left half of the auth card. Off-white on the far left fading to
+// pure white at the inner edge so there is no visible seam where
+// the right (form) panel meets it. The gateway artwork sits
+// centred with a cycling verb above ("Prepare to learn / perform /
+// excel / …").
+const CYCLING_VERBS = ['learn', 'perform', 'excel', 'develop', 'succeed', 'win'];
+
+const GatewayPanel = () => {
+  const [verbIdx, setVerbIdx] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setVerbIdx(i => (i + 1) % CYCLING_VERBS.length);
+    }, 2200);
+    return () => clearInterval(id);
+  }, []);
+
+  return (
+    <div
+      className="hidden md:flex md:flex-col items-center justify-center w-1/2 relative overflow-hidden"
+      style={{
+        borderRadius: '16px 0 0 16px',
+        background: 'linear-gradient(to right, #F1ECE2 0%, #FFFFFF 100%)',
+        padding: '48px 32px',
+      }}
+    >
+      <p
+        className="font-serif text-center"
+        style={{
+          fontSize: 30,
+          fontWeight: 600,
+          color: '#1a1a1a',
+          lineHeight: 1.2,
+          letterSpacing: '-0.01em',
+          marginBottom: 28,
+        }}
+      >
+        Prepare to{' '}
+        <span style={{ display: 'inline-block', position: 'relative', minWidth: 160, textAlign: 'left' }}>
+          <AnimatePresence mode="wait">
+            <MotionSpan
+              key={CYCLING_VERBS[verbIdx]}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ type: 'spring', stiffness: 340, damping: 28 }}
+              style={{
+                display: 'inline-block',
+                fontStyle: 'italic',
+                color: '#CC785C',
+              }}
+            >
+              {CYCLING_VERBS[verbIdx]}.
+            </MotionSpan>
+          </AnimatePresence>
+        </span>
+      </p>
+
+      <img
+        src="/icons/gateway.png"
+        alt="Gateway"
+        style={{ width: '70%', maxWidth: 320, height: 'auto' }}
+      />
+    </div>
+  );
+};
 
 // ── Card wrapper — split panel on desktop, full-width on mobile ──
 const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNode }> = ({ children, devButton }) => (
@@ -77,7 +130,7 @@ const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNo
       className="w-full max-w-5xl bg-white rounded-2xl overflow-hidden flex"
       style={{ minHeight: 540, boxShadow: '0 2px 8px rgba(0,0,0,0.06), 0 12px 40px rgba(0,0,0,0.04)', border: '1.5px solid rgba(0,0,0,0.25)' }}
     >
-      <GradientPanel />
+      <GatewayPanel />
       <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-14 py-12">
         <div className="w-full max-w-[380px] mx-auto">
           {children}
