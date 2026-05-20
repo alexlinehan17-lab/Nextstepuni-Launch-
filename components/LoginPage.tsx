@@ -66,7 +66,7 @@ const GatewayPanel = () => {
   useEffect(() => {
     const id = setInterval(() => {
       setVerbIdx(i => (i + 1) % CYCLING_VERBS.length);
-    }, 2200);
+    }, 3500);
     return () => clearInterval(id);
   }, []);
 
@@ -91,24 +91,22 @@ const GatewayPanel = () => {
         }}
       >
         Prepare to{' '}
-        <span style={{ display: 'inline-block', position: 'relative', minWidth: 160, textAlign: 'left' }}>
-          <AnimatePresence mode="wait">
-            <MotionSpan
-              key={CYCLING_VERBS[verbIdx]}
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ type: 'spring', stiffness: 340, damping: 28 }}
-              style={{
-                display: 'inline-block',
-                fontStyle: 'italic',
-                color: '#CC785C',
-              }}
-            >
-              {CYCLING_VERBS[verbIdx]}.
-            </MotionSpan>
-          </AnimatePresence>
-        </span>
+        <AnimatePresence mode="wait">
+          <MotionSpan
+            key={CYCLING_VERBS[verbIdx]}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ type: 'spring', stiffness: 340, damping: 28 }}
+            style={{
+              display: 'inline-block',
+              fontStyle: 'italic',
+              color: '#CC785C',
+            }}
+          >
+            {CYCLING_VERBS[verbIdx]}.
+          </MotionSpan>
+        </AnimatePresence>
       </p>
 
       <img
