@@ -105,21 +105,37 @@ const GatewayPanel = () => {
       <div className="flex-1 flex flex-col items-center justify-center text-center">
         <div
           style={{
-            borderRadius: 28,
-            border: '1px solid rgba(26,26,26,0.07)',
-            backgroundColor: '#FCFBF9',
-            padding: 24,
+            position: 'relative',
             marginBottom: 28,
             display: 'inline-flex',
             alignItems: 'center',
             justifyContent: 'center',
           }}
         >
+          {/* Soft terracotta blob backdrop */}
+          <div
+            aria-hidden
+            style={{
+              position: 'absolute',
+              inset: '-22px -34px',
+              backgroundColor: 'rgba(204,120,92,0.22)',
+              borderRadius: '63% 37% 54% 46% / 55% 48% 52% 45%',
+              filter: 'blur(12px)',
+              zIndex: 0,
+            }}
+          />
           <img
             src="/icons/gateway.png"
             alt=""
             aria-hidden
-            style={{ width: '100%', maxWidth: 300, height: 'auto', display: 'block' }}
+            style={{
+              position: 'relative',
+              width: '100%',
+              maxWidth: 300,
+              height: 'auto',
+              display: 'block',
+              zIndex: 1,
+            }}
           />
         </div>
 
@@ -431,7 +447,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           {/* ── WELCOME ────────────────────────────────────── */}
           {view === 'welcome' && (
             <div className="text-center">
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] mb-6" style={{ color: '#9e9186' }}>STUDENT ACCESS</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] mb-6" style={{ color: '#9e9186' }}>LOG-IN</p>
               <h1 className="text-3xl md:text-4xl font-semibold tracking-tight mb-3" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
                 Your study,<br />your way.
               </h1>
