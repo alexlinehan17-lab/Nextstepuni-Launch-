@@ -44,38 +44,49 @@ export const geographyQuestions: ExamQuestion[] = [
         type: 'short-text',
         prompt: "Name one specific Irish landscape feature you'd attribute to isostasy.",
         hint: 'Raised beach, fossil cliff, river terrace, knickpoint, incised meander…',
+        debrief: {
+          strategicPrinciple: 'The first 2 marks come from naming a recognised isostatic feature in Ireland (raised beach, fossil cliff, river terrace, knickpoint, incised meander). Generic "a coastline" or "a beach" without specifying the isostatic origin earns the feature credit only.',
+          commonWrongAnswer: {
+            answer: 'An eroded coastline',
+            reason: 'Vague non-specific feature — the marking scheme awards 2 marks for a recognised isostatic feature, not for any coastal landform. Erosion features (sea stacks, sea cliffs) aren\'t isostatic and don\'t score on this question.',
+            source: { year: 2025, type: 'marking-scheme' },
+          },
+        },
       },
       {
         id: 'q1c-second',
         type: 'short-text',
         prompt: 'Name a second feature in a different Irish location, with a real place name.',
         hint: 'Antrim Coast, Bray Head, Dargle, Liffey valley, Inistioge…',
+        debrief: {
+          strategicPrinciple: 'Two named examples in DIFFERENT locations earns the +2 SRPs bonus. The bonus only fires if the examples are genuinely distinct — not the same coast or the same valley named twice.',
+          commonWrongAnswer: {
+            answer: 'The Antrim coast (a raised beach there) and the Antrim coast (a fossil cliff there)',
+            reason: 'Repeating the same location for both features misses the +2 SRPs example bonus — the marking scheme rewards two distinct Irish locations, not two features in the same place.',
+            source: { year: 2025, type: 'marking-scheme' },
+          },
+        },
       },
       {
         id: 'q1c-mechanism',
         type: 'short-text',
         prompt: 'In one sentence: what is the mechanism of isostasy in post-glacial Ireland?',
         hint: 'Ice load → crustal depression → ice melt → rebound.',
+        debrief: {
+          strategicPrinciple: 'Mechanism = ice load → crustal depression → ice melt ~10,000 years ago → ongoing rebound. The 2025 marking scheme caps at 2 SRPs for any explanation that describes the mechanism without anchoring it to the Irish landscape.',
+          commonWrongAnswer: {
+            answer: 'Tectonic plates move and cause the land to rise',
+            reason: 'Confusing tectonics with isostasy. Isostasy is vertical adjustment in response to LOAD changes (ice, water, sediment), not plate motion. The 2025 scheme distinguishes isostasy from eustasy (sea-level change); a tectonic answer earns nothing in either category.',
+            source: { year: 2025, type: 'marking-scheme' },
+          },
+        },
       },
     ],
-    topAnswerIncludes: [
-      "Definition: isostasy is the vertical adjustment of the Earth's crust in response to changes in load (ice, sediment, water).",
-      'Mechanism: during the last Ice Age, ice sheets several hundred metres thick depressed the Irish landmass into the underlying mantle. As ice melted ~10,000 years ago, the land began rebounding upward — a process still ongoing today.',
-      'Feature 1 — Raised beaches: former shorelines now elevated above current sea level, common along the north Antrim coast (Portrush, Cushendun).',
-      'Feature 2 — Fossil/relic cliffs: cliffs no longer facing the sea due to land emergence, e.g. inland from Bray Head or Howth Head.',
-      'Feature 3 — Rejuvenation features (knickpoints, waterfalls, river terraces): rivers re-cut their channels into uplifted land — Dargle waterfall in Wicklow, terraces along the Liffey.',
-      'Feature 4 — Incised meanders: meanders cut deep into bedrock as land rose, e.g. River Nore at Inistioge.',
-      'Two named Irish examples in different locations earns the +2 SRPs example credit.',
-      'Labelled diagram showing ice load → depression → melt → rebound, with arrows and labelled crust/mantle/ice. Additional labelled detail (timeframe, depth) earns the +2 SRPs diagram-info bonus.',
-    ],
-    commonTraps: [
-      'Writing about isostasy as a theoretical process without anchoring to Ireland — caps at 2 SRPs (4 marks). The marking scheme is explicit on this.',
-      'Using foreign examples (Scotland, Norway, Hudson Bay) — 0 marks here; the question is tied to Ireland.',
-      'Confusing isostasy with eustasy — coastal emergence is accepted but the explanation must be isostatic, not sea-level change.',
-      'Diagram without labels — 0 marks. The diagram bonus only applies when fully labelled.',
-      'Repeating the same Irish location for every feature — the +2 SRPs requires two DIFFERENT examples.',
-      'Listing features without explaining the isostatic mechanism — partial credit only. Each feature needs identification (2 marks) plus mechanism explanation (SRPs).',
-    ],
+    biggestMistake: {
+      title: 'Writing isostasy theory without anchoring to Ireland',
+      body: 'The 2025 marking scheme is explicit: "Max 2 x SRPs if there is merely a description of isostasy without a reference to the impact on the Irish landscape." A textbook-perfect mechanism explanation that never names an Irish location caps at 4 of 30 marks. Lead with Ireland — pick your features first (raised beach in Antrim, fossil cliff at Bray, incised meander at Inistioge), then walk through the isostatic mechanism that produced each one.',
+      source: { year: 2025, type: 'marking-scheme' },
+    },
   },
 
   {
@@ -113,37 +124,49 @@ export const geographyQuestions: ExamQuestion[] = [
         type: 'short-text',
         prompt: 'Pick your strongest deposition-formed landform — fluvial, coastal, or glacial.',
         hint: 'Fluvial: levee, floodplain, delta. Coastal: beach, spit, tombolo, bar. Glacial: drumlin, esker, moraine, outwash plain.',
+        debrief: {
+          strategicPrinciple: 'Pick a landform formed BY deposition (levee, beach, spit, tombolo, bar, drumlin, esker, moraine, outwash plain, delta, floodplain). The 2025 marking scheme caps any examination of erosion processes at 0 marks on this question — wrong category is unrecoverable.',
+          commonWrongAnswer: {
+            answer: 'A waterfall',
+            reason: 'Erosion-formed feature. The 2025 marking scheme states: "Examination of processes of erosion 0 marks." Even a perfectly executed erosion explanation scores nothing — the question examines deposition only.',
+            source: { year: 2025, type: 'marking-scheme' },
+          },
+        },
       },
       {
         id: 'q2bi-mechanisms',
         type: 'short-text',
         prompt: 'Name 3 deposition mechanisms (NOT erosion processes) that contribute to your landform.',
         hint: 'For a spit: longshore drift, prevailing wind, sediment supply. For a drumlin: sub-glacial deposition, ice flow direction, till.',
+        debrief: {
+          strategicPrinciple: 'Each SRP needs to engage with HOW deposition forms the landform — not just describe its appearance. The 2025 marking scheme caps at 2 SRPs for description without formation. Three deposition mechanisms specific to your landform (for a spit: longshore drift, swash/backwash angle, sediment supply at headland) anchors every SRP.',
+          commonWrongAnswer: {
+            answer: 'Hydraulic action, abrasion, attrition',
+            reason: 'All three are erosion processes — they earn 0 marks on this question. Even where erosion and deposition co-occur (longshore drift involves both), the SRPs must be framed around the depositional output, not the erosional input.',
+            source: { year: 2025, type: 'marking-scheme' },
+          },
+        },
       },
       {
         id: 'q2bi-example',
         type: 'short-text',
         prompt: 'Specific named example with location for the +1 SRP.',
         hint: 'Spurn Head (England), Inch Strand (Kerry), Clew Bay drumlin field, Mississippi levees…',
+        debrief: {
+          strategicPrinciple: 'A specific named example with location is worth +1 SRP under the 2025 marking scheme. The marker awards the bonus for a recognisable place — Spurn Head, Inch Strand, Rossbeigh, Clew Bay, Mississippi delta — not for generic location language.',
+          commonWrongAnswer: {
+            answer: 'Various beaches in Ireland',
+            reason: 'Vague — the +1 SRP example bonus requires a specific named location. "Various beaches" identifies without specifying; doesn\'t earn the bonus.',
+            source: { year: 2025, type: 'marking-scheme' },
+          },
+        },
       },
     ],
-    topAnswerIncludes: [
-      "Landform clearly named and identified as a deposition feature (e.g. 'A spit is a long, narrow ridge of deposited sediment extending from the coast…').",
-      'EXAMPLE — Spit: longshore drift carries sediment along coast in zig-zag pattern (swash up at angle, backwash straight back); where coastline changes direction, sediment continues in original direction; deposited in calmer water, gradually building outward; recurved end forms from secondary winds; e.g. Inch Strand (Kerry), Rossbeigh, Spurn Head.',
-      'EXAMPLE — Levee: river floods over banks; energy drops sharply on contact with floodplain; coarse sediment dropped first at edges, finer carried further; over repeated floods, banks build above floodplain level; e.g. Mississippi, Po, lower Shannon.',
-      'EXAMPLE — Drumlin: sub-glacial deposition of till, moulded by ice flow into elongated egg-shape; steep stoss side faces ice direction, gentle lee side; deposition occurs when ice loses competence to carry load; e.g. Clew Bay drumlin field, Co. Down "Basket of Eggs" topography.',
-      'Specific named example with location (+1 SRP).',
-      'Labelled diagram showing the deposition process building the landform (cross-section with arrows showing sediment movement, deposition zones marked). Additional labelled detail earns +2 SRPs.',
-      'Repeated explicit reference to deposition as the formative process — not just deposition mentioned once and then narrative drift.',
-    ],
-    commonTraps: [
-      'Writing about EROSION processes (hydraulic action, abrasion, attrition, solution) — 0 marks per the marking scheme.',
-      'Picking a landform formed mainly by erosion (waterfall, sea stack, corrie, U-shaped valley) — wrong category. Even a perfect answer scores low.',
-      'Just describing what the landform looks like without explaining how deposition formed it — caps at 2 SRPs (4 marks).',
-      'Mentioning deposition once at the start then drifting into general landform narrative — each SRP needs to engage with deposition.',
-      'Diagram without labels — 0 marks for the diagram.',
-      'No specific named example — losing 1 free SRP.',
-    ],
+    biggestMistake: {
+      title: 'Writing about erosion when the question demands deposition',
+      body: 'The 2025 marking scheme is unambiguous: "Examination of processes of erosion 0 marks." Half the cohort sees "landform" in the prompt and writes about whatever erosion processes they know best — and earns nothing for technically excellent erosion exposition. Pick your landform first, verify it\'s deposition-formed (levee, beach, spit, drumlin, delta), and frame every SRP around the depositional mechanism that built it.',
+      source: { year: 2025, type: 'marking-scheme' },
+    },
   },
 
   {
@@ -179,12 +202,28 @@ export const geographyQuestions: ExamQuestion[] = [
         type: 'short-text',
         prompt: 'Name your one physical AND one chemical process. State the rock type each typically affects.',
         hint: 'Physical examples: freeze-thaw (any jointed rock); exfoliation (granite). Chemical: carbonation (limestone); oxidation (iron-rich rocks); hydrolysis (granite/feldspar).',
+        debrief: {
+          strategicPrinciple: 'Each process named earns 2 marks (4 marks total for both names). The 2025 marking scheme requires BOTH a physical and a chemical process — "if only physical weathering process or chemical weathering process explained max 7 x SRPs," capping you at roughly half marks before you start.',
+          commonWrongAnswer: {
+            answer: 'Freeze-thaw and exfoliation',
+            reason: 'Both are physical processes — misses the "and a chemical process" requirement entirely. The 2025 marking scheme caps you at 7 SRPs (~14 of 30 marks) for doing only one category, regardless of how well each process is explained.',
+            source: { year: 2025, type: 'marking-scheme' },
+          },
+        },
       },
       {
         id: 'q2c-conditions',
         type: 'short-text',
         prompt: 'For each process: list 3 conditions or inputs needed (temperature, water, gas).',
         hint: 'Freeze-thaw: water, jointed rock, temp fluctuation around 0°C. Carbonation: rainwater + atmospheric CO₂ + limestone.',
+        debrief: {
+          strategicPrinciple: 'Naming the process earns 2 marks; the SRPs come from the mechanism. Each condition or input is an SRP opportunity (freeze-thaw needs water, jointed rock, temperature fluctuation around 0°C, repeated cycles). Generic "rock breaks down" earns no SRP because there\'s no mechanism to credit.',
+          commonWrongAnswer: {
+            answer: 'Water gets in cracks and breaks the rock',
+            reason: 'Reads as description, not explanation — no temperature, no expansion percentage, no repeated cycles. The 2025 marking scheme rewards SRPs that name the conditions and the step-by-step process; a one-line summary earns at most the identification mark.',
+            source: { year: 2025, type: 'marking-scheme' },
+          },
+        },
       },
       {
         id: 'q2c-distinguish',
@@ -197,24 +236,21 @@ export const geographyQuestions: ExamQuestion[] = [
           'Both are chemical',
         ],
         correctAnswer: 'Freeze-thaw is physical, carbonation is chemical',
+        debrief: {
+          strategicPrinciple: 'Physical weathering = mechanical breakdown without chemical change (freeze-thaw, exfoliation, frost shattering). Chemical weathering = rock chemistry alters (carbonation, oxidation, hydrolysis). Mixing the categories puts the 2-mark naming credit at risk.',
+          commonWrongAnswer: {
+            answer: 'Freeze-thaw is chemical, carbonation is physical',
+            reason: 'Inverted classification — freeze-thaw involves no chemical reaction (water just changes phase), while carbonation involves an acid-base reaction (H₂CO₃ + CaCO₃). Getting this wrong loses the 2-mark naming credit for both processes.',
+            source: { year: 2025, type: 'marking-scheme' },
+          },
+        },
       },
     ],
-    topAnswerIncludes: [
-      'PHYSICAL — Freeze-thaw (frost shattering): water enters cracks/joints in rock; overnight temperatures drop below 0°C; water freezes and expands by ~9%; expansion exerts pressure on surrounding rock; cracks widen with each cycle; over many cycles, fragments break off; produces angular scree at base of slopes; common in upland Ireland (Wicklow Mountains, Errigal) and high mountain regions.',
-      'CHEMICAL — Carbonation: rainwater absorbs CO₂ to form weak carbonic acid (H₂O + CO₂ → H₂CO₃); acid reacts with calcium carbonate in limestone (CaCO₃ + H₂CO₃ → Ca(HCO₃)₂); calcium bicarbonate is soluble and carried away in solution; widens joints and bedding planes; produces karst landscapes (the Burren) with clints, grikes, swallow holes, caves.',
-      'Alternative physical: exfoliation/onion-skin — diurnal heating/cooling causes outer rock layers to expand and contract differently from interior, eventually peeling off (granite domes in arid regions like Yosemite, Uluru).',
-      'Alternative chemical: oxidation — iron-bearing minerals react with oxygen in presence of water, forming iron oxide (rust); weakens rock structure; common in granite with biotite mica or in basalt.',
-      'Specific examples (the Burren for carbonation; Wicklow scree slopes for freeze-thaw) — +1 SRP each.',
-      'Labelled diagrams of both processes — cross-sections with arrows showing water entry, freezing, expansion (physical) or chemical reaction zones (chemical). Diagram without labels: 0 marks.',
-    ],
-    commonTraps: [
-      'Doing only one process — caps at 7 SRPs (14 marks of 30). The "and" is enforced by the marking scheme.',
-      'Mixing up the two categories — labelling carbonation as physical, or freeze-thaw as chemical. The 2-mark naming credit is at risk.',
-      'Naming the process but not explaining the mechanism — saying "freeze-thaw breaks down rock" without the freezing/expansion/9%/repeated-cycles steps.',
-      'Confusing weathering (in situ breakdown) with erosion (transport of weathered material).',
-      'Diagrams without labels — 0 marks each.',
-      'Generic "water gets in cracks and breaks rock" answers without specifying temperature, expansion percentage, or repeated cycles — reads as description, not explanation.',
-    ],
+    biggestMistake: {
+      title: 'Doing only one weathering type — capped at half marks',
+      body: 'The 2025 marking scheme is explicit: "If only physical weathering process or chemical weathering process explained max 7 x SRPs." The "and" in the question is enforced — doing only one process (no matter how thoroughly) caps you at roughly 14 marks of 30 before any other consideration. Author both halves to a similar standard; the marker allocates the extra SRP to whichever you developed better, but you need both on the page.',
+      source: { year: 2025, type: 'marking-scheme' },
+    },
   },
 
   {
@@ -254,12 +290,28 @@ export const geographyQuestions: ExamQuestion[] = [
         type: 'short-text',
         prompt: 'Name your Continental/Sub-Continental region (NOT in Europe).',
         hint: 'India? Brazil? US Midwest? Sahel? Amazon Basin? Be specific — "Asia" alone is 0 marks.',
+        debrief: {
+          strategicPrinciple: 'The region must be specifically named and located. The 2025 marking scheme states: "Examination without link to a named or clearly inferred region 0 marks." Generic "Asia" or "Africa" earns nothing — you need India / Brazil / US Midwest / Sahel / Amazon Basin level of specificity.',
+          commonWrongAnswer: {
+            answer: 'Asia',
+            reason: 'Too generic — "Asia" spans the Indian monsoon belt, Siberian permafrost, Saudi desert, and Indonesian rainforest. The marker can\'t award SRPs to a region this loose. The 2025 marking scheme requires a named or clearly inferred sub-region.',
+            source: { year: 2025, type: 'marking-scheme' },
+          },
+        },
       },
       {
         id: 'q4b-factors',
         type: 'short-text',
         prompt: 'Name your two factors. Mix is fine — physical (climate, soil, relief) and/or human (technology, government policy, market access, labour).',
         hint: 'For India: Indian monsoon climate + Green Revolution technology. For US Midwest: prairie soils + market access via rail.',
+        debrief: {
+          strategicPrinciple: 'Two factors are required and each one must link explicitly to the development of primary activity. The 2025 marking scheme: "Max 1 SRP per factor if merely describing the factor without linking to development of primary activity." Describing the climate is not enough — show how the climate enabled a specific primary activity.',
+          commonWrongAnswer: {
+            answer: 'The climate is hot and wet',
+            reason: 'Describes the factor without linking it to primary activity development. The 2025 scheme caps this at 1 SRP per factor — you need the chain "hot and wet → enables rice paddy cultivation in the kharif season → sustains intensive multi-crop rotation in the Ganges plain."',
+            source: { year: 2025, type: 'marking-scheme' },
+          },
+        },
       },
       {
         id: 'q4b-not-europe',
@@ -267,23 +319,20 @@ export const geographyQuestions: ExamQuestion[] = [
         prompt: 'You write a brilliant answer about primary activity in France. Mark out of 30?',
         options: ['30', '20', '10', '0'],
         correctAnswer: '0',
+        debrief: {
+          strategicPrinciple: 'The "not in Europe" constraint is absolute. The 2025 marking scheme states: "Do not accept examination of primary activity in an Irish or European region." Even a perfect answer about France or Germany scores 0 because the question excludes European regions entirely.',
+          commonWrongAnswer: {
+            answer: '20',
+            reason: 'Underestimates the severity of the regional constraint. Some constraints reduce marks proportionally — this one zeroes the question. The 2025 scheme is binary on region: in-scope = scored normally, out-of-scope = 0. Author always answers in writing should verify region BEFORE committing to a paragraph.',
+            source: { year: 2025, type: 'marking-scheme' },
+          },
+        },
       },
     ],
-    topAnswerIncludes: [
-      "Region clearly named and located (e.g. 'India, focusing on the Indo-Gangetic Plain' or 'the US Midwest Corn Belt').",
-      'FACTOR 1 (Climate, India): Indian monsoon system — kharif season (Jun-Sept) brings heavy rainfall to Ganges plain enabling rice paddy cultivation; rabi season (Oct-Mar) cooler conditions support wheat in Punjab and Haryana; drought-prone Deccan Plateau limited to drought-resistant millet and sorghum; rainfall variability creates risk for farmers.',
-      'FACTOR 2 (Soil, India): deep alluvial soils of Indo-Gangetic Plain deposited by Himalayan rivers — extremely fertile, high water retention, support intensive multi-crop rotation (rice, wheat, sugarcane); thinner black regur soils on Deccan suit cotton; laterite soils in south require fertiliser inputs.',
-      'FACTOR 2 alternative (Government policy, India): Green Revolution from 1960s — HYV seeds, irrigation expansion, subsidised fertilisers, improved storage and credit; transformed Punjab into India\'s breadbasket; doubled wheat yields 1965-80.',
-      'Specific examples of primary activity (rice paddies of West Bengal, wheat farms of Punjab, beef ranching in Brazilian cerrado, corn in Iowa) — +2 SRPs.',
-      'Sketch map of region with major agricultural zones / climate regions labelled (+1 SRP map, +1 SRP additional labelled info).',
-    ],
-    commonTraps: [
-      'Writing about Ireland, France, Germany, or any European region — 0 MARKS. The "not in Europe" constraint is absolute. The most common way students score 0 on this question.',
-      'Vague references to "Asia" or "Africa" without naming a specific region — 0 marks per the scheme: "Examination without link to a named or clearly inferred region 0 marks."',
-      'Doing only one factor — caps at 7 SRPs (14 marks).',
-      'Just describing the factor (e.g. "the climate is hot and wet") without linking it to the development of primary activity — caps at 1 SRP per factor.',
-      'Confusing primary (farming, fishing, mining, forestry) with secondary (manufacturing) or tertiary (services).',
-      'Sketch map without labels — loses the diagram credit.',
-    ],
+    biggestMistake: {
+      title: 'Writing about a European region — 0 marks regardless of quality',
+      body: 'The 2025 marking scheme is unambiguous: "Do not accept examination of primary activity in an Irish or European region." A brilliantly argued answer about French viticulture or German Bavarian dairy farming scores 0 of 30 because the question excludes Europe. This is the single most common way students lose this question. Pick your region (India, Brazil, US Midwest, Sahel) BEFORE you start writing, and write the region name at the top of your answer as a self-check.',
+      source: { year: 2025, type: 'marking-scheme' },
+    },
   },
 ];

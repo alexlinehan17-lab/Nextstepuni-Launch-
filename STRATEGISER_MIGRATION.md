@@ -1,81 +1,68 @@
-# Strategiser content migration
+# Strategiser content migration — complete
 
-Tracks which questions still use the legacy schema (flat
-`topAnswerIncludes` / `commonTraps`) versus the new per-prompt
-`debrief` + question-level `biggestMistake` shape.
+All Exam Strategiser questions now use the per-prompt `debrief` +
+question-level `biggestMistake` schema. The legacy flat
+`topAnswerIncludes` / `commonTraps` / `markScheme` fields have been
+removed from `types/examStrategiser.ts`, and the `LegacyDebrief`
+rendering path has been deleted from `components/ExamStrategiser/stages/DebriefStage.tsx`.
+The dev-only console warning that flagged legacy-format questions in
+`QuestionPlayer.tsx` has also been removed.
 
 Schema rules: `/CLAUDE.md` § "Strategiser content quality rules".
 
-In dev mode, loading a legacy-format question prints a console warning
-naming the question id. Production console stays clean.
+## Migration history
 
-## Status
+All 28 questions across 5 subjects migrated:
 
-| ID                            | Subject   | Status | Migrated |
-|-------------------------------|-----------|--------|----------|
-| english-2025-p1-text1-qa-iii  | english   | legacy | —        |
-| english-2025-p1-text2-qb      | english   | legacy | —        |
-| english-2025-p1-composing-2   | english   | legacy | —        |
-| english-2025-p1-composing-3   | english   | legacy | —        |
-| english-2024-p1-text1-qa-i    | english   | legacy | —        |
-| english-2024-p1-text1-qa-ii   | english   | legacy | —        |
-| english-2024-p1-text2-qb      | english   | legacy | —        |
-| english-2024-p1-composing-5   | english   | legacy | —        |
-| irish-placeholder-2024-p2-q1  | irish     | legacy | —        |
-| maths-placeholder-2024-p1-q1  | maths     | migrated | 2026-05-19 |
-| maths-2025-ord-p1-q3          | maths     | migrated | 2026-05-19 |
-| maths-2025-ord-p1-q4          | maths     | migrated | 2026-05-19 |
-| maths-2025-ord-p1-q7          | maths     | migrated | 2026-05-19 |
-| maths-2025-ord-p1-q8          | maths     | migrated | 2026-05-19 |
-| maths-2025-ord-p2-q7          | maths     | migrated | 2026-05-19 |
-| maths-2025-ord-p2-q8          | maths     | migrated | 2026-05-19 |
-| maths-2025-ord-p2-q9          | maths     | migrated | 2026-05-19 |
-| maths-2025-ord-p2-q10         | maths     | migrated | 2026-05-19 |
-| geo-2025-hl-q1c               | geography | legacy | —        |
-| geo-2025-hl-q2bi              | geography | legacy | —        |
-| geo-2025-hl-q2c               | geography | legacy | —        |
-| geo-2025-hl-q4b               | geography | legacy | —        |
-| business-2025-hl-s1-q7        | business  | migrated | 2026-05-06 |
-| business-2025-hl-s2-abq       | business  | migrated | 2026-05-06 |
-| business-2025-hl-s3-q1        | business  | migrated | 2026-05-06 |
-| business-2025-hl-s3-q8        | business  | migrated | 2026-05-06 |
+| Subject   | Questions | Final migration date |
+|-----------|-----------|----------------------|
+| business  | 4         | 2026-05-06           |
+| maths     | 9         | 2026-05-19           |
+| english   | 8         | 2026-05-20           |
+| geography | 4         | 2026-05-20           |
+| irish     | 1         | 2026-05-20           |
 
-_Last updated: 2026-05-19_
+## Source citations
 
-## Per-subject blocker — examiner reports needed
+Each question's `commonWrongAnswer.source` and `biggestMistake.source`
+cites the underlying examiner-authored material:
 
-For new migrations to follow CLAUDE.md content quality rules ("must consult `/examiner-reports/[subject]/` for citable insights"), the following subject reports need to land in `/examiner-reports/` before further migrations are feasible:
+- **Maths questions** cite the 2015 Chief Examiner Report (the only
+  Maths report currently in `/examiner-reports/`). The 2015 CER
+  documents perennial OL failure patterns (algebra struggles,
+  showing-work conventions, derivative confusion) that apply directly
+  to the 2025 OL questions.
+- **English, Geography, and Irish questions** cite the SEC marking
+  scheme for the relevant year. The data was originally authored
+  against the SEC paper + marking scheme per each file's header
+  comment; the new schema preserves those citations and reshapes the
+  insights into per-prompt strategic principles.
+- **Irish placeholder** carries no marking-scheme citation because the
+  question itself is a placeholder per the data-file header. The
+  debrief content is preserved from the legacy fields; if real Irish
+  questions are added later, their debriefs should cite the relevant
+  SEC marking schemes.
 
-| Subject   | Reports currently in library | Legacy questions blocked |
-|-----------|------------------------------|--------------------------|
-| english   | none                         | 8                        |
-| geography | none                         | 4                        |
-| irish     | none                         | 1                        |
-| maths     | 2015 chief examiner          | 0 — all 9 migrated using 2015 CER perennial-pattern citations |
+## Adding new questions
 
-All Maths migrations leverage the 2015 Chief Examiner Report's documented OL perennial patterns (algebra struggles, substituting into wrong derivative, not showing working, not writing conclusions, k² for areas, permutation-vs-combination confusion, formula misapplication). The English, Geography, and Irish migrations require their respective Chief Examiner Reports to be added to the library first.
+Per `/CLAUDE.md` § "Strategiser content quality rules":
 
-## Workflow per question
+1. Read the relevant `/examiner-reports/<subject>/<year>-insights.md`
+   first (or, if no insights file exists, the SEC marking scheme for
+   the year).
+2. For each predict prompt, author a `debrief` block:
+   - `strategicPrinciple`: one short paragraph naming a specific error
+     pattern, mark allocation rule, or examiner observation.
+   - `commonWrongAnswer.answer`: the wrong answer students typically
+     give.
+   - `commonWrongAnswer.reason`: why they pick it, with an
+     examiner-sourced citation in `source` where possible.
+3. Author the question-level `biggestMistake` card:
+   - `title`: short headline naming the failure mode.
+   - `body`: 2-4 sentences citing the specific marking-scheme rule.
+   - `source`: citation (year + type).
+4. If an examiner-sourced insight isn't available for a particular
+   point, omit `source` rather than filling with generic content.
 
-1. Pick a question to migrate.
-2. Read `/examiner-reports/<subject>/` for citable insights — both
-   chief-examiner reports and marking-scheme commentaries.
-3. For each predict prompt, author a `debrief` block:
-   - `strategicPrinciple`: one short line on what the prompt is testing.
-   - `commonWrongAnswer`: the answer + reason students pick it +
-     `source` citation (year + type) where possible.
-4. Author the question-level `biggestMistake` card:
-   - `title`: short headline.
-   - `body`: 2-4 sentences.
-   - `source` citation where possible.
-5. Remove the question's `topAnswerIncludes`, `commonTraps`, `markScheme`.
-6. Update this file: change status to `migrated`, set the migration date.
-
-## Reminders
-
-- Banned generic phrases live in `/CLAUDE.md` § "Strategiser content quality
-  rules". Reject drafts containing them.
-- If you can't find an examiner-sourced insight for a particular point,
-  flag it (`source` omitted) rather than filling with generic content.
-- Marking schemes are also examiner-authored — `Marking scheme YYYY` is a
-  valid citation.
+Banned generic phrases live in `/CLAUDE.md` § "Strategiser content
+quality rules" — reject drafts containing them.

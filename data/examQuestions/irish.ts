@@ -77,6 +77,13 @@ export const irishQuestions: ExamQuestion[] = [
         options: ['Summarise', 'Discuss', 'Translate', 'Compare two texts'],
         correctAnswer: 'Discuss',
         hint: 'It is the Irish equivalent of a familiar English command word.',
+        debrief: {
+          strategicPrinciple: 'Pléigh = Discuss. Like English "Discuss", the command demands balanced analysis with reference to specific moments in the text — not a plot summary. A position taken and defended, with multiple textual moments to support it.',
+          commonWrongAnswer: {
+            answer: 'Summarise',
+            reason: 'Treating Pléigh as "retell the story" produces a plot summary rather than discussion of the chosen theme. Plot retelling without analysis caps in the lower marking bands regardless of how thorough the recount.',
+          },
+        },
       },
       {
         id: 'time-allocation',
@@ -84,23 +91,31 @@ export const irishQuestions: ExamQuestion[] = [
         type: 'number',
         correctAnswer: 45,
         hint: '50 marks out of 200 on a 180-minute paper.',
+        debrief: {
+          strategicPrinciple: 'Paper 2 Litríocht runs at 0.9 minutes per mark (180 min / 200 marks). A 50-mark essay gets 45 minutes — roughly 7-8 minutes per paragraph across 5-6 paragraphs plus a tight opening and closing.',
+          commonWrongAnswer: {
+            answer: '30',
+            reason: 'Under-budgets a quarter-of-the-paper question. The per-mark rate gives 45 minutes for a 50-mark essay; going under leaves the essay thin (not enough textual reference); going over starves the next question on the paper.',
+          },
+        },
       },
       {
         id: 'reference-count',
         prompt: 'Roughly how many specific textual references should a top answer include?',
         type: 'short-text',
         hint: 'Per paragraph — across 5-6 paragraphs.',
+        debrief: {
+          strategicPrinciple: 'Two specific textual references per paragraph across 5-6 paragraphs = 10-12 quoted or paraphrased moments. Vague "sa scéal seo" or "an príomhcharachtar" without naming costs you in the content and language bands.',
+          commonWrongAnswer: {
+            answer: 'One per paragraph',
+            reason: 'Halves your evidence density. The marking convention for Irish literature essays rewards specific reference — two per paragraph keeps every claim anchored. Single references per paragraph read as general assertion supported by one moment, rather than theme analysis grounded in the text.',
+          },
+        },
       },
     ],
-    topAnswerIncludes: [
-      'A single main theme identified clearly in the opening line',
-      'Specific characters named, not "an príomhcharachtar"',
-      'At least two quoted or paraphrased moments per paragraph',
-      'A short closing paragraph linking the theme back to the title of the gearrscéal',
-    ],
-    commonTraps: [
-      'Picking three or four themes and covering each shallowly',
-      'Vague references like "sa scéal seo" without quoting specific moments',
-    ],
+    biggestMistake: {
+      title: 'Vague references and plot summary instead of theme analysis',
+      body: 'Pléigh asks for discussion of ONE main theme with specific evidence from the gearrscéal. Two patterns consistently cap students: (a) covering three or four themes shallowly instead of one in depth, and (b) using vague references like "sa scéal seo" or "an príomhcharachtar" without naming characters or quoting moments. Pick one theme, write 5-6 paragraphs, two specific references in each — names, quoted phrases, exchanges, decisions.',
+    },
   },
 ];

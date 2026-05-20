@@ -10,13 +10,9 @@
  * Forward gating: the top-bar forward arrow can advance from any stage
  * EXCEPT predict, where it requires the student to have submitted their
  * predictions. Stops accidental skip-aheads through the active-recall stage.
- *
- * Legacy detection: a dev-only console warning surfaces when a question
- * lacking the new-schema `debrief` / `biggestMistake` fields is loaded, so
- * the migration backlog stays visible. See /STRATEGISER_MIGRATION.md.
  */
 
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { type ExamQuestion, type ExamStrategiserStage, type PredictAnswers } from '../../types/examStrategiser';
@@ -39,21 +35,6 @@ const QuestionPlayer: React.FC<Props> = ({ question, onBackToList, onOpenTrapPat
   const [stageIdx, setStageIdx] = useState(0);
   const [answers, setAnswers] = useState<PredictAnswers>({});
   const [predictSubmitted, setPredictSubmitted] = useState(false);
-
-  // Dev-only legacy-schema warning. Surfaces in the console when a question
-  // hasn't been migrated to the per-prompt `debrief` + question-level
-  // `biggestMistake` shape. Helps keep the migration backlog visible.
-  useEffect(() => {
-    if (!import.meta.env.DEV) return;
-    const isLegacy = !question.biggestMistake
-      || question.predictPrompts.some(p => !p.debrief);
-    if (isLegacy) {
-      console.warn(
-        `[Strategiser] Legacy-format question loaded: "${question.id}". ` +
-        `See /STRATEGISER_MIGRATION.md to track migration status.`,
-      );
-    }
-  }, [question.id, question.biggestMistake, question.predictPrompts]);
 
   const stage = STAGES[stageIdx];
 

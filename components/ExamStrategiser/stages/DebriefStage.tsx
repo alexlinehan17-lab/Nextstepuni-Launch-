@@ -44,10 +44,6 @@ interface Props {
 }
 
 const DebriefStage: React.FC<Props> = ({ question, answers, onOpenTrapPatterns }) => {
-  const isMigrated =
-    !!question.biggestMistake ||
-    question.predictPrompts.some(p => !!p.debrief);
-
   const relatedPatterns = TRAP_PATTERNS.filter(
     p => p.examples.some(e => e.questionId === question.id),
   );
@@ -65,10 +61,19 @@ const DebriefStage: React.FC<Props> = ({ question, answers, onOpenTrapPatterns }
         </h2>
       </header>
 
-      {isMigrated ? (
-        <MigratedDebrief question={question} answers={answers} />
-      ) : (
-        <LegacyDebrief question={question} />
+      <div className="space-y-3">
+        {question.predictPrompts.map((prompt, idx) => (
+          <PromptDebriefCard
+            key={prompt.id}
+            prompt={prompt}
+            index={idx}
+            studentAnswer={answers[prompt.id]}
+          />
+        ))}
+      </div>
+
+      {question.biggestMistake && (
+        <BiggestMistakeCard mistake={question.biggestMistake} />
       )}
 
       {relatedPatterns.length > 0 && onOpenTrapPatterns && (
@@ -77,27 +82,6 @@ const DebriefStage: React.FC<Props> = ({ question, answers, onOpenTrapPatterns }
     </div>
   );
 };
-
-// ── Migrated rendering ────────────────────────────────────────────────
-
-const MigratedDebrief: React.FC<Props> = ({ question, answers }) => (
-  <>
-    <div className="space-y-3">
-      {question.predictPrompts.map((prompt, idx) => (
-        <PromptDebriefCard
-          key={prompt.id}
-          prompt={prompt}
-          index={idx}
-          studentAnswer={answers[prompt.id]}
-        />
-      ))}
-    </div>
-
-    {question.biggestMistake && (
-      <BiggestMistakeCard mistake={question.biggestMistake} />
-    )}
-  </>
-);
 
 const PromptDebriefCard: React.FC<{
   prompt: PredictPrompt;
@@ -225,49 +209,6 @@ const BiggestMistakeCard: React.FC<{ mistake: NonNullable<ExamQuestion['biggestM
       {mistake.source && <SourceCitation source={mistake.source} />}
     </p>
   </article>
-);
-
-// ── Legacy fallback ───────────────────────────────────────────────────
-
-const LegacyDebrief: React.FC<{ question: ExamQuestion }> = ({ question }) => {
-  const top = question.topAnswerIncludes ?? [];
-  const traps = question.commonTraps ?? [];
-  if (top.length === 0 && traps.length === 0) {
-    return (
-      <p className="font-sans" style={{ fontSize: 13, color: '#A8A29E', textAlign: 'center', padding: '40px 16px' }}>
-        Debrief content for this question hasn't been authored yet.
-      </p>
-    );
-  }
-  return (
-    <div className="grid md:grid-cols-2 gap-4">
-      <LegacyPanel title="What a top answer includes" items={top} kind="positive" />
-      <LegacyPanel title="Common traps" items={traps} kind="trap" />
-    </div>
-  );
-};
-
-const LegacyPanel: React.FC<{ title: string; items: string[]; kind: 'positive' | 'trap' }> = ({ title, items, kind }) => (
-  <section
-    className="rounded-2xl"
-    style={{
-      backgroundColor: kind === 'positive' ? '#FFFFFF' : '#F0FAF8',
-      border: `1px solid ${kind === 'positive' ? '#EDEBE8' : `${TEAL}33`}`,
-      padding: '18px 20px',
-    }}
-  >
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 8 }}>
-      {title}
-    </p>
-    <ul className="space-y-2">
-      {items.map((item, i) => (
-        <li key={i} className="flex gap-2.5" style={{ fontSize: 13, lineHeight: 1.55, color: '#3F3B36', fontFamily: 'DM Sans, system-ui, sans-serif' }}>
-          <span style={{ color: TEAL, fontWeight: 700, flexShrink: 0 }}>·</span>
-          <span>{item}</span>
-        </li>
-      ))}
-    </ul>
-  </section>
 );
 
 // ── Related trap patterns ─────────────────────────────────────────────

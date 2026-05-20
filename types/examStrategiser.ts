@@ -86,20 +86,9 @@ export interface ExamQuestion {
   questionText: QuestionPart[];
   predictPrompts: PredictPrompt[];
 
-  /** Closing card on the Debrief stage. REQUIRED for new questions per
+  /** Closing card on the Debrief stage. REQUIRED per
    *  /CLAUDE.md § "Strategiser content quality rules". */
   biggestMistake?: BiggestMistake;
-
-  /** @deprecated Replaced by per-prompt `PromptDebrief` and question-level
-   *  `biggestMistake`. Kept as legacy fallback so existing questions
-   *  continue rendering until migrated — see /STRATEGISER_MIGRATION.md.
-   *  Do not use in new questions. */
-  topAnswerIncludes?: string[];
-  /** @deprecated As above. */
-  commonTraps?: string[];
-  /** @deprecated The mark-scheme stage was folded into Debrief's biggest
-   *  mistake card. Do not use. */
-  markScheme?: string;
 }
 
 export interface ExamSubjectMeta {
