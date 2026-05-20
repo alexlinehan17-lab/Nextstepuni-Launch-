@@ -5,7 +5,7 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { MotionButton, MotionDiv, MotionSpan } from './Motion';
+import { MotionButton, MotionDiv, MotionP } from './Motion';
 import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check } from 'lucide-react';
 import { auth, db } from '../firebase';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
@@ -55,73 +55,100 @@ const GoogleIcon: React.FC<{ size?: number }> = ({ size = 18 }) => (
 // ── Gateway panel ──────────────────────────────────────────
 // Left half of the auth card. Premium product-entry composition:
 // three structural zones (brand strip top / icon centred /
-// statement + caption bottom) on a pure white surface. The
-// gateway artwork is the visual anchor. No decoration that
-// doesn't earn its place.
-const GatewayPanel = () => (
-  <div
-    className="hidden md:flex md:flex-col w-1/2 relative overflow-hidden"
-    style={{
-      backgroundColor: '#FFFFFF',
-      borderRadius: '16px 0 0 16px',
-      padding: '36px 44px',
-    }}
-  >
-    {/* Brand strip */}
-    <div className="flex items-center gap-3">
-      <p
-        className="font-sans"
-        style={{
-          fontSize: 10,
-          fontWeight: 700,
-          textTransform: 'uppercase',
-          letterSpacing: '0.22em',
-          color: '#5a5550',
-        }}
-      >
-        Nextstepuni
-      </p>
-      <div style={{ flex: 1, height: 1, backgroundColor: 'rgba(26,26,26,0.12)' }} />
-    </div>
+// statement + cycling caption bottom) on a pure white surface.
+// The gateway artwork is the visual anchor.
+const CYCLING_CAPTIONS = [
+  'Personalised study, examiner-grounded.',
+  'Built on marking schemes, not memorisation.',
+  'Subject-tailored, strategy-led.',
+  'Smarter than rote learning.',
+  'Where examiner insight meets your routine.',
+];
 
-    {/* Icon — centred anchor */}
-    <div className="flex-1 flex items-center justify-center" style={{ padding: '24px 0' }}>
-      <img
-        src="/icons/gateway.png"
-        alt=""
-        aria-hidden
-        style={{ width: '60%', maxWidth: 260, height: 'auto' }}
-      />
-    </div>
+const GatewayPanel = () => {
+  const [capIdx, setCapIdx] = useState(0);
 
-    {/* Statement + caption */}
-    <div>
-      <h2
-        className="font-serif"
-        style={{
-          fontSize: 24,
-          fontWeight: 600,
-          color: '#1a1a1a',
-          lineHeight: 1.2,
-          letterSpacing: '-0.01em',
-          marginBottom: 6,
-        }}
-      >
-        Built for the Leaving Cert.
-      </h2>
-      <p
-        className="font-sans"
-        style={{
-          fontSize: 13,
-          color: '#7a7068',
-          lineHeight: 1.55,
-        }}
-      >
-        Personalised study, examiner-grounded.
-      </p>
+  useEffect(() => {
+    const id = setInterval(() => {
+      setCapIdx(i => (i + 1) % CYCLING_CAPTIONS.length);
+    }, 4500);
+    return () => clearInterval(id);
+  }, []);
+
+  return (
+    <div
+      className="hidden md:flex md:flex-col w-1/2 relative overflow-hidden"
+      style={{
+        backgroundColor: '#FFFFFF',
+        borderRadius: '16px 0 0 16px',
+        padding: '36px 44px',
+      }}
+    >
+      {/* Brand strip */}
+      <div className="flex items-center gap-3">
+        <p
+          className="font-sans"
+          style={{
+            fontSize: 10,
+            fontWeight: 700,
+            textTransform: 'uppercase',
+            letterSpacing: '0.22em',
+            color: '#5a5550',
+          }}
+        >
+          Nextstepuni
+        </p>
+        <div style={{ flex: 1, height: 1, backgroundColor: 'rgba(26,26,26,0.12)' }} />
+      </div>
+
+      {/* Icon — centred anchor */}
+      <div className="flex-1 flex items-center justify-center" style={{ padding: '16px 0' }}>
+        <img
+          src="/icons/gateway.png"
+          alt=""
+          aria-hidden
+          style={{ width: '78%', maxWidth: 340, height: 'auto' }}
+        />
+      </div>
+
+      {/* Statement + cycling caption */}
+      <div>
+        <h2
+          className="font-serif"
+          style={{
+            fontSize: 24,
+            fontWeight: 600,
+            color: '#1a1a1a',
+            lineHeight: 1.2,
+            letterSpacing: '-0.01em',
+            marginBottom: 8,
+          }}
+        >
+          Made for ambitious students.
+        </h2>
+        <div style={{ minHeight: 22 }}>
+          <AnimatePresence mode="wait">
+            <MotionP
+              key={CYCLING_CAPTIONS[capIdx]}
+              initial={{ opacity: 0, y: 4 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -4 }}
+              transition={{ type: 'spring', stiffness: 340, damping: 30 }}
+              className="font-sans"
+              style={{
+                fontSize: 13,
+                color: '#7a7068',
+                lineHeight: 1.55,
+              }}
+            >
+              {CYCLING_CAPTIONS[capIdx]}
+            </MotionP>
+          </AnimatePresence>
+        </div>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 // ── Card wrapper — split panel on desktop, full-width on mobile ──
 const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNode }> = ({ children, devButton }) => (
