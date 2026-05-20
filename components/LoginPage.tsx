@@ -112,20 +112,22 @@ const GatewayPanel = () => {
             justifyContent: 'center',
           }}
         >
-          {/* Pale-teal organic blob — smaller than the icon so the
-              gateway extends beyond its edges. Asymmetric
-              border-radius for a hand-drawn, non-geometric shape. */}
-          <div
+          {/* Hand-drawn blob artwork — matches the gateway icon's
+              illustration language. Sits behind the icon, smaller,
+              so the gateway extends beyond its edges. */}
+          <img
+            src="/icons/blob.png"
+            alt=""
             aria-hidden
             style={{
               position: 'absolute',
-              top: '14%',
-              left: '18%',
-              right: '12%',
-              bottom: '18%',
-              backgroundColor: '#C8DCD4',
-              borderRadius: '58% 42% 65% 35% / 48% 62% 38% 52%',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              width: '90%',
+              height: 'auto',
               zIndex: 0,
+              pointerEvents: 'none',
             }}
           />
           <img
