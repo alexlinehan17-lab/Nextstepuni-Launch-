@@ -24,7 +24,7 @@ const SPRING_POP = { type: 'spring' as const, stiffness: 420, damping: 18 };
 // tween easing keeps it crisp — no spring wobble.
 const SLIDE_DISTANCE = 56;
 const SLIDE_EASE = [0.32, 0.72, 0, 1] as const;
-const slideTransition = { duration: 0.22, ease: SLIDE_EASE };
+const slideTransition = { duration: 0.34, ease: SLIDE_EASE };
 const slideVariants = {
   enter: (dir: number) => ({ x: dir * SLIDE_DISTANCE, opacity: 0 }),
   center: { x: 0, opacity: 1 },
