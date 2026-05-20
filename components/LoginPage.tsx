@@ -25,6 +25,13 @@ const stepAnim = {
   transition: SPRING_GENTLE,
 };
 
+const viewAnim = {
+  initial: { opacity: 0, y: 14, scale: 0.97 },
+  animate: { opacity: 1, y: 0, scale: 1 },
+  exit: { opacity: 0, y: -10, scale: 0.97 },
+  transition: SPRING_GENTLE,
+};
+
 const errorAnim = {
   initial: { opacity: 0, y: -6, scale: 0.96 },
   animate: { opacity: 1, y: 0, scale: 1 },
@@ -307,8 +314,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
   // ── Shared styles ──
   const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 placeholder-zinc-400 outline-none transition-all bg-white border-2 border-zinc-200 focus:border-[#2A7D6F]";
-  const primaryBtn = "w-full py-3.5 rounded-full text-white text-[15px] font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed";
-  const primaryBtnStyle = { backgroundColor: '#2A7D6F', borderBottom: '3px solid #1a5a4e', boxShadow: '0 4px 0 #1a5a4e' };
+  const primaryBtn = "w-full py-3.5 rounded-full text-[15px] font-semibold transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed";
+  const primaryBtnStyle = { backgroundColor: '#FFFFFF', color: '#1A1A1A', borderColor: '#1A1A1A' };
 
   // DEV button — only visible in development builds
   const devButton = (
@@ -317,352 +324,341 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     </button>
   );
 
-  // ═══════════════════════════════════════════════════════════
-  // WELCOME SCREEN — first thing users see
-  // ═══════════════════════════════════════════════════════════
-  if (view === 'welcome') {
-    return (
-      <LoginCard devButton={devButton}>
-        <div className="text-center">
-          <p className="text-[10px] font-bold uppercase tracking-[0.2em] mb-6" style={{ color: '#9e9186' }}>NEXTSTEPUNI</p>
-          <h1 className="text-3xl md:text-4xl font-semibold tracking-tight mb-3" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
-            Your Leaving Cert,<br />your way.
-          </h1>
-          <p className="text-sm mb-10" style={{ fontFamily: "'DM Sans', sans-serif", color: '#7a7068' }}>
-            Science-backed study strategies personalised to your subjects, your goals, and your exam.
-          </p>
-
-          <div className="space-y-3">
-            <MotionButton
-              whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
-              onClick={() => { resetForm(); setView('register'); }}
-              className={primaryBtn}
-              style={primaryBtnStyle}
-            >
-              Get Started
-            </MotionButton>
-            <MotionButton
-              whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
-              onClick={() => { resetForm(); setView('login'); }}
-              className="w-full py-3.5 rounded-full text-[15px] font-semibold transition-all border-2"
-              style={{ color: '#2A7D6F', borderColor: 'rgba(42,125,111,0.3)', backgroundColor: 'white' }}
-            >
-              I already have an account
-            </MotionButton>
-            <MotionButton
-              whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
-              onClick={handleGoogleSignIn}
-              disabled={isLoading}
-              className="w-full py-3.5 rounded-full text-[15px] font-semibold transition-all border-2 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
-              style={{ color: '#1a1a1a', borderColor: '#d0cdc8', backgroundColor: 'white' }}
-            >
-              <GoogleIcon />
-              Continue with Google
-            </MotionButton>
-          </div>
-
-          <div className="flex items-center gap-4 mt-8">
-            <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
-            <span className="text-[11px] font-medium" style={{ color: '#9e9186' }}>OR</span>
-            <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
-          </div>
-          <button
-            onClick={() => { resetForm(); setView('gc'); }}
-            className="w-full py-3 rounded-full text-sm font-medium transition-all flex items-center justify-center gap-2 mt-4 border-2"
-            style={{ color: '#7a7068', borderColor: '#d0cdc8', backgroundColor: 'white' }}
-          >
-            <GraduationCap size={16} /> Sign in as Guidance Counsellor
-          </button>
-        </div>
-      </LoginCard>
-    );
-  }
-
-  // ═══════════════════════════════════════════════════════════
-  // LOGIN SCREEN
-  // ═══════════════════════════════════════════════════════════
-  if (view === 'login') {
-    return (
-      <LoginCard devButton={devButton}>
-        <button type="button" onClick={() => setView('welcome')} className="flex items-center gap-1.5 text-sm font-medium mb-6 transition-colors" style={{ color: '#9e9186' }}>
-          <ArrowLeft size={14} /> Back
-        </button>
-        <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Welcome back</h2>
-        <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Sign in with your email and password.</p>
-        <form onSubmit={e => { e.preventDefault(); handleLogin(); }} className="space-y-4">
-          <div>
-            <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-            <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus />
-          </div>
-          <div>
-            <div className="flex items-center justify-between mb-1.5">
-              <label className="text-xs font-bold uppercase tracking-wider" style={{ color: '#9e9186' }}>Password</label>
-              <button type="button" onClick={() => { setView('forgot'); setError(''); }} className="text-xs font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Forgot?</button>
-            </div>
-            <div className="relative">
-              <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={inputClass} />
-              <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
-                {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
-              </button>
-            </div>
-          </div>
-          <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-          <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
-            {isLoading ? 'Signing in...' : 'Sign In'}
-          </MotionButton>
-        </form>
-        <div className="flex items-center gap-4 my-5">
-          <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
-          <span className="text-[11px] font-medium" style={{ color: '#9e9186' }}>OR</span>
-          <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
-        </div>
-        <MotionButton
-          whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
-          onClick={handleGoogleSignIn}
-          disabled={isLoading}
-          className="w-full py-3.5 rounded-full text-[15px] font-semibold transition-all border-2 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
-          style={{ color: '#1a1a1a', borderColor: '#d0cdc8', backgroundColor: 'white' }}
-        >
-          <GoogleIcon />
-          Continue with Google
-        </MotionButton>
-        <p className="text-sm text-center mt-6" style={{ color: '#9e9186' }}>
-          Don&apos;t have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('register'); }} className="font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Register</button>
-        </p>
-      </LoginCard>
-    );
-  }
-
-  // ═══════════════════════════════════════════════════════════
-  // GC LOGIN SCREEN
-  // ═══════════════════════════════════════════════════════════
-  if (view === 'gc') {
-    return (
-      <LoginCard devButton={devButton}>
-        <button type="button" onClick={() => setView('welcome')} className="flex items-center gap-1.5 text-sm font-medium mb-6 transition-colors" style={{ color: '#9e9186' }}>
-          <ArrowLeft size={14} /> Back
-        </button>
-        <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Guidance Counsellor</h2>
-        <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Select your school and enter your password.</p>
-        <form onSubmit={e => { e.preventDefault(); handleGCLogin(); }} className="space-y-4">
-          <div>
-            <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
-            <div className="relative">
-              <select value={gcSchool} onChange={e => { setGcSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!gcSchool ? 'text-zinc-400' : ''}`} autoFocus>
-                <option value="" disabled>Select your school</option>
-                {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
-              </select>
-              <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
-            </div>
-          </div>
-          <div>
-            <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
-            <div className="relative">
-              <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={inputClass} />
-              <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
-                {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
-              </button>
-            </div>
-          </div>
-          <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-          <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
-            {isLoading ? 'Signing in...' : 'Sign In'}
-          </MotionButton>
-        </form>
-      </LoginCard>
-    );
-  }
-
-  // ═══════════════════════════════════════════════════════════
-  // FORGOT PASSWORD
-  // ═══════════════════════════════════════════════════════════
-  if (view === 'forgot') {
-    return (
-      <LoginCard devButton={devButton}>
-        <button type="button" onClick={() => { setView('login'); setError(''); setResetSent(false); }} className="flex items-center gap-1.5 text-sm font-medium mb-6 transition-colors" style={{ color: '#9e9186' }}>
-          <ArrowLeft size={14} /> Back to sign in
-        </button>
-        <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Reset your password</h2>
-        <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Enter your email and we&apos;ll send you a link to reset your password.</p>
-        {resetSent ? (
-          <MotionDiv
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ ...SPRING_GENTLE, staggerChildren: 0.08, delayChildren: 0.05 }}
-            className="text-center py-2"
-          >
-            <MotionDiv
-              initial={{ scale: 0, rotate: -8 }}
-              animate={{ scale: 1, rotate: 0 }}
-              transition={SPRING_POP}
-              className="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center"
-              style={{ backgroundColor: '#e8f5f2' }}
-            >
-              <Check size={24} style={{ color: '#2A7D6F' }} />
-            </MotionDiv>
-            <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={SPRING_GENTLE}>
-              <p className="text-sm font-medium mb-1" style={{ color: '#1a1a1a' }}>Check your inbox</p>
-              <p className="text-sm mb-2" style={{ color: '#7a7068' }}>We&apos;ve sent a password reset link to <span className="font-medium" style={{ color: '#1a1a1a' }}>{email}</span></p>
-              <p className="text-xs mb-6" style={{ color: '#9e9186' }}>Can&apos;t find it? Check your spam folder.</p>
-            </MotionDiv>
-
-            <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={SPRING_GENTLE} className="space-y-2.5">
-              <MotionButton
-                onClick={() => { resetForm(); setView('login'); }}
-                whileHover={btnHover}
-                whileTap={btnTap}
-                transition={SPRING_FAST}
-                className={primaryBtn}
-                style={primaryBtnStyle}
-              >
-                Back to sign in
-              </MotionButton>
-              <MotionButton
-                onClick={handleForgotPassword}
-                disabled={resendCountdown > 0 || isLoading}
-                whileHover={resendCountdown > 0 ? {} : btnHover}
-                whileTap={resendCountdown > 0 ? {} : btnTap}
-                transition={SPRING_FAST}
-                className="w-full py-3 rounded-full text-[14px] font-medium transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed"
-                style={{ color: '#2A7D6F', borderColor: 'rgba(42,125,111,0.3)', backgroundColor: 'white' }}
-              >
-                {resendCountdown > 0
-                  ? `Resend in ${resendCountdown}s`
-                  : isLoading
-                  ? 'Sending…'
-                  : 'Resend email'}
-              </MotionButton>
-            </MotionDiv>
-          </MotionDiv>
-        ) : (
-          <form onSubmit={e => { e.preventDefault(); handleForgotPassword(); }} className="space-y-4">
-            <div>
-              <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-              <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus />
-            </div>
-            <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-            <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
-              {isLoading ? 'Sending...' : 'Send Reset Link'}
-            </MotionButton>
-          </form>
-        )}
-      </LoginCard>
-    );
-  }
-
-  // ═══════════════════════════════════════════════════════════
-  // REGISTER — Multi-step
-  // ═══════════════════════════════════════════════════════════
   const selectedAvatar = avatar || defaultAvatar;
 
+  // ═══════════════════════════════════════════════════════════
+  // Single LoginCard with view-level AnimatePresence so navigating
+  // between Welcome / Login / GC / Forgot / Register actually
+  // animates — was an instant render before.
+  // ═══════════════════════════════════════════════════════════
   return (
     <LoginCard devButton={devButton}>
-      {/* Back + progress */}
-      <div className="flex items-center justify-between mb-6">
-        <button type="button" onClick={() => {
-          if (registerStep > 1) { setRegisterStep(s => s - 1); setError(''); }
-          else setView('welcome');
-        }} className="flex items-center gap-1.5 text-sm font-medium transition-colors" style={{ color: '#9e9186' }}>
-          <ArrowLeft size={14} /> Back
-        </button>
-        <div className="flex items-center gap-1.5">
-          {[1, 2, 3].map(s => (
-            <MotionDiv
-              key={s}
-              className="h-1.5 rounded-full"
-              animate={{
-                width: s === registerStep ? 24 : 8,
-                backgroundColor: s <= registerStep ? '#2A7D6F' : '#d0cdc8',
-              }}
-              transition={SPRING_GENTLE}
-            />
-          ))}
-        </div>
-      </div>
+      <AnimatePresence mode="wait" initial={false}>
+        <MotionDiv key={view} {...viewAnim}>
+          {/* ── WELCOME ────────────────────────────────────── */}
+          {view === 'welcome' && (
+            <div className="text-center">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] mb-6" style={{ color: '#9e9186' }}>NEXTSTEPUNI</p>
+              <h1 className="text-3xl md:text-4xl font-semibold tracking-tight mb-3" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
+                Your Leaving Cert,<br />your way.
+              </h1>
+              <p className="text-sm mb-10" style={{ fontFamily: "'DM Sans', sans-serif", color: '#7a7068' }}>
+                Science-backed study strategies personalised to your subjects, your goals, and your exam.
+              </p>
 
-      <AnimatePresence mode="wait">
-        {/* ── Step 1: School + Name ── */}
-        {registerStep === 1 && (
-          <MotionDiv key="step1" {...stepAnim}>
-            <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Let&apos;s get you set up</h2>
-            <p className="text-sm mb-8" style={{ color: '#7a7068' }}>We&apos;ll use your email to create your account and for password resets.</p>
-            <div className="space-y-4">
-              <div>
-                <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus />
+              <div className="space-y-3">
+                <MotionButton
+                  whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
+                  onClick={() => { resetForm(); setView('register'); }}
+                  className={primaryBtn}
+                  style={primaryBtnStyle}
+                >
+                  Get Started
+                </MotionButton>
+                <MotionButton
+                  whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
+                  onClick={() => { resetForm(); setView('login'); }}
+                  className="w-full py-3.5 rounded-full text-[15px] font-semibold transition-all border-2"
+                  style={{ color: '#2A7D6F', borderColor: 'rgba(42,125,111,0.3)', backgroundColor: 'white' }}
+                >
+                  I already have an account
+                </MotionButton>
+                <MotionButton
+                  whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
+                  onClick={handleGoogleSignIn}
+                  disabled={isLoading}
+                  className="w-full py-3.5 rounded-full text-[15px] font-semibold transition-all border-2 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
+                  style={{ color: '#1a1a1a', borderColor: '#d0cdc8', backgroundColor: 'white' }}
+                >
+                  <GoogleIcon />
+                  Continue with Google
+                </MotionButton>
               </div>
-              <div>
-                <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your Name</label>
-                <input type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="e.g. Sean, Emma, Jordan" className={inputClass} />
+
+              <div className="flex items-center gap-4 mt-8">
+                <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
+                <span className="text-[11px] font-medium" style={{ color: '#9e9186' }}>OR</span>
+                <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
               </div>
-              <div>
-                <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
-                <div className="relative">
-                  <select value={school} onChange={e => { setSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!school ? 'text-zinc-400' : ''}`}>
-                    <option value="" disabled>Select your school</option>
-                    {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
-                  </select>
-                  <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
-                </div>
-              </div>
-              <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-              <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleRegisterNext} className={primaryBtn} style={primaryBtnStyle}>
-                <span className="flex items-center justify-center gap-2">Continue <ArrowRight size={16} /></span>
-              </MotionButton>
+              <button
+                onClick={() => { resetForm(); setView('gc'); }}
+                className="w-full py-3 rounded-full text-sm font-medium transition-all flex items-center justify-center gap-2 mt-4 border-2"
+                style={{ color: '#7a7068', borderColor: '#d0cdc8', backgroundColor: 'white' }}
+              >
+                <GraduationCap size={16} /> Sign in as Guidance Counsellor
+              </button>
             </div>
-            <p className="text-sm text-center mt-6" style={{ color: '#9e9186' }}>
-              Already have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('login'); }} className="font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Sign in</button>
-            </p>
-          </MotionDiv>
-        )}
+          )}
 
-        {/* ── Step 2: Password ── */}
-        {registerStep === 2 && (
-          <MotionDiv key="step2" {...stepAnim}>
-            <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Create a password</h2>
-            <p className="text-sm mb-8" style={{ color: '#7a7068' }}>At least 6 characters. You&apos;ll need this to log in.</p>
-            <div className="space-y-4">
-              <div>
-                <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
-                <div className="relative">
-                  <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Create a password" className={inputClass} autoFocus />
-                  <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
-                    {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
-                  </button>
+          {/* ── LOGIN ──────────────────────────────────────── */}
+          {view === 'login' && (
+            <>
+              <button type="button" onClick={() => setView('welcome')} className="flex items-center gap-1.5 text-sm font-medium mb-6 transition-colors" style={{ color: '#9e9186' }}>
+                <ArrowLeft size={14} /> Back
+              </button>
+              <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Welcome back</h2>
+              <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Sign in with your email and password.</p>
+              <form onSubmit={e => { e.preventDefault(); handleLogin(); }} className="space-y-4">
+                <div>
+                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
+                  <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus />
                 </div>
-                {password.length > 0 && password.length < 6 && (
-                  <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{6 - password.length} more character{6 - password.length !== 1 ? 's' : ''} needed</p>
-                )}
-                {password.length >= 6 && (
-                  <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: '#2A7D6F' }}><Check size={12} /> Looks good</p>
-                )}
+                <div>
+                  <div className="flex items-center justify-between mb-1.5">
+                    <label className="text-xs font-bold uppercase tracking-wider" style={{ color: '#9e9186' }}>Password</label>
+                    <button type="button" onClick={() => { setView('forgot'); setError(''); }} className="text-xs font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Forgot?</button>
+                  </div>
+                  <div className="relative">
+                    <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={inputClass} />
+                    <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
+                      {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                    </button>
+                  </div>
+                </div>
+                <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
+                  {isLoading ? 'Signing in...' : 'Sign In'}
+                </MotionButton>
+              </form>
+              <div className="flex items-center gap-4 my-5">
+                <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
+                <span className="text-[11px] font-medium" style={{ color: '#9e9186' }}>OR</span>
+                <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
               </div>
-              <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-              <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleRegisterNext} className={primaryBtn} style={primaryBtnStyle}>
-                <span className="flex items-center justify-center gap-2">Continue <ArrowRight size={16} /></span>
+              <MotionButton
+                whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
+                onClick={handleGoogleSignIn}
+                disabled={isLoading}
+                className="w-full py-3.5 rounded-full text-[15px] font-semibold transition-all border-2 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
+                style={{ color: '#1a1a1a', borderColor: '#d0cdc8', backgroundColor: 'white' }}
+              >
+                <GoogleIcon />
+                Continue with Google
               </MotionButton>
-            </div>
-          </MotionDiv>
-        )}
+              <p className="text-sm text-center mt-6" style={{ color: '#9e9186' }}>
+                Don&apos;t have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('register'); }} className="font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Register</button>
+              </p>
+            </>
+          )}
 
-        {/* ── Step 3: Avatar ── */}
-        {registerStep === 3 && (
-          <MotionDiv key="step3" {...stepAnim}>
-            <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Choose your avatar</h2>
-            <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Pick one that feels like you. You can change it later.</p>
-            <div className="grid grid-cols-4 gap-3 mb-6">
-              {AVATAR_SEEDS.map(seed => (
-                <button key={seed} type="button" onClick={() => setAvatar(seed)} className={`rounded-xl aspect-square p-1 transition-all ${selectedAvatar === seed ? 'ring-2 ring-offset-2 bg-[#e8f5f2]' : 'hover:ring-1 hover:ring-zinc-300 bg-white'}`} style={selectedAvatar === seed ? { ringColor: '#2A7D6F', borderColor: '#2A7D6F', border: '2px solid #2A7D6F' } : { border: '2px solid #d0cdc8' }}>
-                  <img src={getAvatarUrl(seed)} alt={seed} className="w-full h-full rounded-lg" />
+          {/* ── GC LOGIN ───────────────────────────────────── */}
+          {view === 'gc' && (
+            <>
+              <button type="button" onClick={() => setView('welcome')} className="flex items-center gap-1.5 text-sm font-medium mb-6 transition-colors" style={{ color: '#9e9186' }}>
+                <ArrowLeft size={14} /> Back
+              </button>
+              <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Guidance Counsellor</h2>
+              <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Select your school and enter your password.</p>
+              <form onSubmit={e => { e.preventDefault(); handleGCLogin(); }} className="space-y-4">
+                <div>
+                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
+                  <div className="relative">
+                    <select value={gcSchool} onChange={e => { setGcSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!gcSchool ? 'text-zinc-400' : ''}`} autoFocus>
+                      <option value="" disabled>Select your school</option>
+                      {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
+                    </select>
+                    <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
+                  </div>
+                </div>
+                <div>
+                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
+                  <div className="relative">
+                    <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={inputClass} />
+                    <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
+                      {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                    </button>
+                  </div>
+                </div>
+                <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
+                  {isLoading ? 'Signing in...' : 'Sign In'}
+                </MotionButton>
+              </form>
+            </>
+          )}
+
+          {/* ── FORGOT PASSWORD ─────────────────────────────── */}
+          {view === 'forgot' && (
+            <>
+              <button type="button" onClick={() => { setView('login'); setError(''); setResetSent(false); }} className="flex items-center gap-1.5 text-sm font-medium mb-6 transition-colors" style={{ color: '#9e9186' }}>
+                <ArrowLeft size={14} /> Back to sign in
+              </button>
+              <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Reset your password</h2>
+              <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Enter your email and we&apos;ll send you a link to reset your password.</p>
+              {resetSent ? (
+                <MotionDiv
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ ...SPRING_GENTLE, staggerChildren: 0.08, delayChildren: 0.05 }}
+                  className="text-center py-2"
+                >
+                  <MotionDiv
+                    initial={{ scale: 0, rotate: -8 }}
+                    animate={{ scale: 1, rotate: 0 }}
+                    transition={SPRING_POP}
+                    className="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center"
+                    style={{ backgroundColor: '#e8f5f2' }}
+                  >
+                    <Check size={24} style={{ color: '#2A7D6F' }} />
+                  </MotionDiv>
+                  <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={SPRING_GENTLE}>
+                    <p className="text-sm font-medium mb-1" style={{ color: '#1a1a1a' }}>Check your inbox</p>
+                    <p className="text-sm mb-2" style={{ color: '#7a7068' }}>We&apos;ve sent a password reset link to <span className="font-medium" style={{ color: '#1a1a1a' }}>{email}</span></p>
+                    <p className="text-xs mb-6" style={{ color: '#9e9186' }}>Can&apos;t find it? Check your spam folder.</p>
+                  </MotionDiv>
+
+                  <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={SPRING_GENTLE} className="space-y-2.5">
+                    <MotionButton
+                      onClick={() => { resetForm(); setView('login'); }}
+                      whileHover={btnHover}
+                      whileTap={btnTap}
+                      transition={SPRING_FAST}
+                      className={primaryBtn}
+                      style={primaryBtnStyle}
+                    >
+                      Back to sign in
+                    </MotionButton>
+                    <MotionButton
+                      onClick={handleForgotPassword}
+                      disabled={resendCountdown > 0 || isLoading}
+                      whileHover={resendCountdown > 0 ? {} : btnHover}
+                      whileTap={resendCountdown > 0 ? {} : btnTap}
+                      transition={SPRING_FAST}
+                      className="w-full py-3 rounded-full text-[14px] font-medium transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                      style={{ color: '#2A7D6F', borderColor: 'rgba(42,125,111,0.3)', backgroundColor: 'white' }}
+                    >
+                      {resendCountdown > 0
+                        ? `Resend in ${resendCountdown}s`
+                        : isLoading
+                        ? 'Sending…'
+                        : 'Resend email'}
+                    </MotionButton>
+                  </MotionDiv>
+                </MotionDiv>
+              ) : (
+                <form onSubmit={e => { e.preventDefault(); handleForgotPassword(); }} className="space-y-4">
+                  <div>
+                    <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
+                    <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus />
+                  </div>
+                  <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                  <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
+                    {isLoading ? 'Sending...' : 'Send Reset Link'}
+                  </MotionButton>
+                </form>
+              )}
+            </>
+          )}
+
+          {/* ── REGISTER (multi-step) ───────────────────────── */}
+          {view === 'register' && (
+            <>
+              <div className="flex items-center justify-between mb-6">
+                <button type="button" onClick={() => {
+                  if (registerStep > 1) { setRegisterStep(s => s - 1); setError(''); }
+                  else setView('welcome');
+                }} className="flex items-center gap-1.5 text-sm font-medium transition-colors" style={{ color: '#9e9186' }}>
+                  <ArrowLeft size={14} /> Back
                 </button>
-              ))}
-            </div>
-            <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-            <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleRegisterSubmit} disabled={isLoading} className={primaryBtn} style={primaryBtnStyle}>
-              {isLoading ? 'Creating your account...' : 'Create Account'}
-            </MotionButton>
-          </MotionDiv>
-        )}
+                <div className="flex items-center gap-1.5">
+                  {[1, 2, 3].map(s => (
+                    <MotionDiv
+                      key={s}
+                      className="h-1.5 rounded-full"
+                      animate={{
+                        width: s === registerStep ? 24 : 8,
+                        backgroundColor: s <= registerStep ? '#2A7D6F' : '#d0cdc8',
+                      }}
+                      transition={SPRING_GENTLE}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              <AnimatePresence mode="wait">
+                {registerStep === 1 && (
+                  <MotionDiv key="step1" {...stepAnim}>
+                    <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Let&apos;s get you set up</h2>
+                    <p className="text-sm mb-8" style={{ color: '#7a7068' }}>We&apos;ll use your email to create your account and for password resets.</p>
+                    <div className="space-y-4">
+                      <div>
+                        <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
+                        <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus />
+                      </div>
+                      <div>
+                        <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your Name</label>
+                        <input type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="e.g. Sean, Emma, Jordan" className={inputClass} />
+                      </div>
+                      <div>
+                        <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
+                        <div className="relative">
+                          <select value={school} onChange={e => { setSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!school ? 'text-zinc-400' : ''}`}>
+                            <option value="" disabled>Select your school</option>
+                            {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
+                          </select>
+                          <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
+                        </div>
+                      </div>
+                      <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                      <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleRegisterNext} className={primaryBtn} style={primaryBtnStyle}>
+                        <span className="flex items-center justify-center gap-2">Continue <ArrowRight size={16} /></span>
+                      </MotionButton>
+                    </div>
+                    <p className="text-sm text-center mt-6" style={{ color: '#9e9186' }}>
+                      Already have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('login'); }} className="font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Sign in</button>
+                    </p>
+                  </MotionDiv>
+                )}
+
+                {registerStep === 2 && (
+                  <MotionDiv key="step2" {...stepAnim}>
+                    <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Create a password</h2>
+                    <p className="text-sm mb-8" style={{ color: '#7a7068' }}>At least 6 characters. You&apos;ll need this to log in.</p>
+                    <div className="space-y-4">
+                      <div>
+                        <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
+                        <div className="relative">
+                          <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Create a password" className={inputClass} autoFocus />
+                          <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
+                            {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                          </button>
+                        </div>
+                        {password.length > 0 && password.length < 6 && (
+                          <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{6 - password.length} more character{6 - password.length !== 1 ? 's' : ''} needed</p>
+                        )}
+                        {password.length >= 6 && (
+                          <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: '#2A7D6F' }}><Check size={12} /> Looks good</p>
+                        )}
+                      </div>
+                      <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                      <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleRegisterNext} className={primaryBtn} style={primaryBtnStyle}>
+                        <span className="flex items-center justify-center gap-2">Continue <ArrowRight size={16} /></span>
+                      </MotionButton>
+                    </div>
+                  </MotionDiv>
+                )}
+
+                {registerStep === 3 && (
+                  <MotionDiv key="step3" {...stepAnim}>
+                    <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Choose your avatar</h2>
+                    <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Pick one that feels like you. You can change it later.</p>
+                    <div className="grid grid-cols-4 gap-3 mb-6">
+                      {AVATAR_SEEDS.map(seed => (
+                        <button key={seed} type="button" onClick={() => setAvatar(seed)} className={`rounded-xl aspect-square p-1 transition-all ${selectedAvatar === seed ? 'ring-2 ring-offset-2 bg-[#e8f5f2]' : 'hover:ring-1 hover:ring-zinc-300 bg-white'}`} style={selectedAvatar === seed ? { ringColor: '#2A7D6F', borderColor: '#2A7D6F', border: '2px solid #2A7D6F' } : { border: '2px solid #d0cdc8' }}>
+                          <img src={getAvatarUrl(seed)} alt={seed} className="w-full h-full rounded-lg" />
+                        </button>
+                      ))}
+                    </div>
+                    <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                    <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleRegisterSubmit} disabled={isLoading} className={primaryBtn} style={primaryBtnStyle}>
+                      {isLoading ? 'Creating your account...' : 'Create Account'}
+                    </MotionButton>
+                  </MotionDiv>
+                )}
+              </AnimatePresence>
+            </>
+          )}
+        </MotionDiv>
       </AnimatePresence>
     </LoginCard>
   );
