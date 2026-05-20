@@ -16,6 +16,7 @@ import { Library } from './Library';
 import ModuleShowcase from './ModuleShowcase';
 
 const LoginPage = lazy(() => import('./LoginPage'));
+const ResetPasswordPage = lazy(() => import('./ResetPasswordPage'));
 const AdminDashboard = lazy(() => import('./AdminDashboard').then(m => ({ default: m.AdminDashboard })));
 const GCDashboard = lazy(() => import('./GCDashboard').then(m => ({ default: m.GCDashboard })));
 const DashboardView = lazy(() => import('./DashboardView'));
@@ -216,6 +217,16 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     nav.navigateToStudySession();
   };
   const handleGoToInsights = () => { nav.navigateToInsights(); };
+
+  // Firebase password-reset action URL — handled before any auth gating so the
+  // user can land here whether or not they're signed in. Triggered when the
+  // URL carries `mode=resetPassword&oobCode=…` from a Firebase reset email.
+  if (typeof window !== 'undefined') {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('mode') === 'resetPassword' && params.get('oobCode')) {
+      return <Suspense fallback={<LoadingSpinner />}><ResetPasswordPage /></Suspense>;
+    }
+  }
 
   // Auth gate: show branded loading until userResolved, then decide login vs app.
   // userResolved is true once either:

@@ -10,6 +10,7 @@ export const SCHOOLS = [
   { id: 'oconnells', name: "O'Connell's" },
   { id: 'mountcarmel', name: 'Mount Carmel' },
   { id: 'rosmini', name: 'Rosmini' },
+  { id: 'pwc', name: 'PwC' },
 ] as const;
 
 export type SchoolId = (typeof SCHOOLS)[number]['id'];

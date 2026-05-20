@@ -3,15 +3,47 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
 import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check } from 'lucide-react';
 import { auth, db } from '../firebase';
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail } from 'firebase/auth';
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from '../utils/authUtils';
 import { SCHOOLS } from '../schoolData';
+
+// ── Shared animation tokens ──
+const SPRING_FAST = { type: 'spring' as const, stiffness: 500, damping: 28 };
+const SPRING_GENTLE = { type: 'spring' as const, stiffness: 340, damping: 30 };
+const SPRING_POP = { type: 'spring' as const, stiffness: 420, damping: 18 };
+
+const stepAnim = {
+  initial: { opacity: 0, x: 24 },
+  animate: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: -24 },
+  transition: SPRING_GENTLE,
+};
+
+const errorAnim = {
+  initial: { opacity: 0, y: -6, scale: 0.96 },
+  animate: { opacity: 1, y: 0, scale: 1 },
+  exit: { opacity: 0, y: -4, scale: 0.96 },
+  transition: SPRING_FAST,
+};
+
+const btnHover = { scale: 1.02, y: -1 };
+const btnTap = { scale: 0.97, y: 1 };
+
+// ── Google G logo, official 4-colour ──
+const GoogleIcon: React.FC<{ size?: number }> = ({ size = 18 }) => (
+  <svg width={size} height={size} viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+    <path d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z" fill="#4285F4" />
+    <path d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z" fill="#34A853" />
+    <path d="M3.964 10.71c-.18-.54-.282-1.117-.282-1.71 0-.593.102-1.17.282-1.71V4.958H.957C.347 6.173 0 7.548 0 9c0 1.452.348 2.827.957 4.042l3.007-2.332z" fill="#FBBC05" />
+    <path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z" fill="#EA4335" />
+  </svg>
+);
 
 // ── Aurora gradient left panel (stable, never re-renders) ──
 const GradientPanel = () => (
@@ -69,6 +101,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [resetSent, setResetSent] = useState(false);
+  const [resendCountdown, setResendCountdown] = useState(0);
+
+  // Countdown tick for the resend button on the forgot-password success screen.
+  useEffect(() => {
+    if (resendCountdown <= 0) return;
+    const t = setTimeout(() => setResendCountdown(c => c - 1), 1000);
+    return () => clearTimeout(t);
+  }, [resendCountdown]);
 
   // Random default avatar for step 3
   const defaultAvatar = useMemo(() => AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)], []);
@@ -77,6 +117,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     setEmail(''); setPassword(''); setName(''); setSchool('');
     setGcSchool(''); setAvatar(''); setError('');
     setShowPassword(false); setRegisterStep(1); setResetSent(false);
+    setResendCountdown(0);
   };
 
   // ── Login handler ──
@@ -113,13 +154,64 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     setIsLoading(false);
   };
 
+  // ── Google sign-in handler ──
+  const handleGoogleSignIn = async () => {
+    setIsLoading(true); setError('');
+    try {
+      const provider = new GoogleAuthProvider();
+      const cred = await signInWithPopup(auth, provider);
+      const userRef = doc(db, 'users', cred.user.uid);
+      const userDoc = await getDoc(userRef);
+      if (userDoc.exists()) {
+        const data = userDoc.data();
+        handleLoginSuccess({
+          uid: cred.user.uid,
+          name: data.name || cred.user.displayName || 'Student',
+          avatar: data.avatar || AVATAR_SEEDS[0],
+          isAdmin: data.isAdmin || false,
+          role: data.role || 'student',
+          school: data.school || '',
+          yearGroup: data.yearGroup,
+        });
+      } else {
+        // First-time Google sign-in: create the user doc with school empty;
+        // they can set it later in-app.
+        const newName = cred.user.displayName || (cred.user.email?.split('@')[0]) || 'Student';
+        const newAvatar = AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)];
+        await setDoc(userRef, { name: newName, avatar: newAvatar, school: '' });
+        handleLoginSuccess({
+          uid: cred.user.uid,
+          name: newName,
+          avatar: newAvatar,
+          school: '',
+          role: 'student',
+        });
+      }
+    } catch (err: any) {
+      if (err.code === 'auth/popup-closed-by-user' || err.code === 'auth/cancelled-popup-request') {
+        // Silent — user dismissed the popup
+      } else if (err.code === 'auth/operation-not-allowed') {
+        setError('Google sign-in is not enabled. Contact support.');
+      } else {
+        console.error('Google sign-in failed:', err);
+        setError('Could not sign in with Google. Try again or use email.');
+      }
+    }
+    setIsLoading(false);
+  };
+
   // ── Forgot password handler ──
   const handleForgotPassword = async () => {
     if (!email.trim()) { setError('Please enter your email address.'); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
+      setError('Please enter a valid email address.');
+      return;
+    }
     setIsLoading(true); setError('');
     try {
       await sendPasswordResetEmail(auth, email.trim().toLowerCase());
       setResetSent(true);
+      setResendCountdown(30);
     } catch (err) {
       console.error('Failed to send password reset email:', err);
       setError('Could not send reset email. Check your email address.');
@@ -242,7 +334,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
           <div className="space-y-3">
             <MotionButton
-              whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.97 }}
+              whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
               onClick={() => { resetForm(); setView('register'); }}
               className={primaryBtn}
               style={primaryBtnStyle}
@@ -250,12 +342,22 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
               Get Started
             </MotionButton>
             <MotionButton
-              whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.97 }}
+              whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
               onClick={() => { resetForm(); setView('login'); }}
               className="w-full py-3.5 rounded-full text-[15px] font-semibold transition-all border-2"
               style={{ color: '#2A7D6F', borderColor: 'rgba(42,125,111,0.3)', backgroundColor: 'white' }}
             >
               I already have an account
+            </MotionButton>
+            <MotionButton
+              whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
+              onClick={handleGoogleSignIn}
+              disabled={isLoading}
+              className="w-full py-3.5 rounded-full text-[15px] font-semibold transition-all border-2 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
+              style={{ color: '#1a1a1a', borderColor: '#d0cdc8', backgroundColor: 'white' }}
+            >
+              <GoogleIcon />
+              Continue with Google
             </MotionButton>
           </div>
 
@@ -304,11 +406,26 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
               </button>
             </div>
           </div>
-          <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-          <MotionButton type="submit" disabled={isLoading} whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.97 }} className={primaryBtn} style={primaryBtnStyle}>
+          <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+          <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
             {isLoading ? 'Signing in...' : 'Sign In'}
           </MotionButton>
         </form>
+        <div className="flex items-center gap-4 my-5">
+          <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
+          <span className="text-[11px] font-medium" style={{ color: '#9e9186' }}>OR</span>
+          <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
+        </div>
+        <MotionButton
+          whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
+          onClick={handleGoogleSignIn}
+          disabled={isLoading}
+          className="w-full py-3.5 rounded-full text-[15px] font-semibold transition-all border-2 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
+          style={{ color: '#1a1a1a', borderColor: '#d0cdc8', backgroundColor: 'white' }}
+        >
+          <GoogleIcon />
+          Continue with Google
+        </MotionButton>
         <p className="text-sm text-center mt-6" style={{ color: '#9e9186' }}>
           Don&apos;t have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('register'); }} className="font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Register</button>
         </p>
@@ -347,8 +464,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
               </button>
             </div>
           </div>
-          <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-          <MotionButton type="submit" disabled={isLoading} whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.97 }} className={primaryBtn} style={primaryBtnStyle}>
+          <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+          <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
             {isLoading ? 'Signing in...' : 'Sign In'}
           </MotionButton>
         </form>
@@ -368,21 +485,63 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Reset your password</h2>
         <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Enter your email and we&apos;ll send you a link to reset your password.</p>
         {resetSent ? (
-          <div className="text-center py-4">
-            <div className="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: '#e8f5f2' }}>
+          <MotionDiv
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ ...SPRING_GENTLE, staggerChildren: 0.08, delayChildren: 0.05 }}
+            className="text-center py-2"
+          >
+            <MotionDiv
+              initial={{ scale: 0, rotate: -8 }}
+              animate={{ scale: 1, rotate: 0 }}
+              transition={SPRING_POP}
+              className="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center"
+              style={{ backgroundColor: '#e8f5f2' }}
+            >
               <Check size={24} style={{ color: '#2A7D6F' }} />
-            </div>
-            <p className="text-sm font-medium mb-1" style={{ color: '#1a1a1a' }}>Check your inbox</p>
-            <p className="text-sm" style={{ color: '#7a7068' }}>We&apos;ve sent a password reset link to <span className="font-medium" style={{ color: '#1a1a1a' }}>{email}</span></p>
-          </div>
+            </MotionDiv>
+            <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={SPRING_GENTLE}>
+              <p className="text-sm font-medium mb-1" style={{ color: '#1a1a1a' }}>Check your inbox</p>
+              <p className="text-sm mb-2" style={{ color: '#7a7068' }}>We&apos;ve sent a password reset link to <span className="font-medium" style={{ color: '#1a1a1a' }}>{email}</span></p>
+              <p className="text-xs mb-6" style={{ color: '#9e9186' }}>Can&apos;t find it? Check your spam folder.</p>
+            </MotionDiv>
+
+            <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={SPRING_GENTLE} className="space-y-2.5">
+              <MotionButton
+                onClick={() => { resetForm(); setView('login'); }}
+                whileHover={btnHover}
+                whileTap={btnTap}
+                transition={SPRING_FAST}
+                className={primaryBtn}
+                style={primaryBtnStyle}
+              >
+                Back to sign in
+              </MotionButton>
+              <MotionButton
+                onClick={handleForgotPassword}
+                disabled={resendCountdown > 0 || isLoading}
+                whileHover={resendCountdown > 0 ? {} : btnHover}
+                whileTap={resendCountdown > 0 ? {} : btnTap}
+                transition={SPRING_FAST}
+                className="w-full py-3 rounded-full text-[14px] font-medium transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                style={{ color: '#2A7D6F', borderColor: 'rgba(42,125,111,0.3)', backgroundColor: 'white' }}
+              >
+                {resendCountdown > 0
+                  ? `Resend in ${resendCountdown}s`
+                  : isLoading
+                  ? 'Sending…'
+                  : 'Resend email'}
+              </MotionButton>
+            </MotionDiv>
+          </MotionDiv>
         ) : (
           <form onSubmit={e => { e.preventDefault(); handleForgotPassword(); }} className="space-y-4">
             <div>
               <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
               <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus />
             </div>
-            <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-            <MotionButton type="submit" disabled={isLoading} whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.97 }} className={primaryBtn} style={primaryBtnStyle}>
+            <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+            <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
               {isLoading ? 'Sending...' : 'Send Reset Link'}
             </MotionButton>
           </form>
@@ -408,10 +567,15 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         </button>
         <div className="flex items-center gap-1.5">
           {[1, 2, 3].map(s => (
-            <div key={s} className="h-1.5 rounded-full transition-all" style={{
-              width: s === registerStep ? 24 : 8,
-              backgroundColor: s <= registerStep ? '#2A7D6F' : '#d0cdc8',
-            }} />
+            <MotionDiv
+              key={s}
+              className="h-1.5 rounded-full"
+              animate={{
+                width: s === registerStep ? 24 : 8,
+                backgroundColor: s <= registerStep ? '#2A7D6F' : '#d0cdc8',
+              }}
+              transition={SPRING_GENTLE}
+            />
           ))}
         </div>
       </div>
@@ -419,7 +583,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       <AnimatePresence mode="wait">
         {/* ── Step 1: School + Name ── */}
         {registerStep === 1 && (
-          <MotionDiv key="step1" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.25 }}>
+          <MotionDiv key="step1" {...stepAnim}>
             <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Let&apos;s get you set up</h2>
             <p className="text-sm mb-8" style={{ color: '#7a7068' }}>We&apos;ll use your email to create your account and for password resets.</p>
             <div className="space-y-4">
@@ -441,8 +605,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
                 </div>
               </div>
-              <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-              <MotionButton whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.97 }} onClick={handleRegisterNext} className={primaryBtn} style={primaryBtnStyle}>
+              <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+              <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleRegisterNext} className={primaryBtn} style={primaryBtnStyle}>
                 <span className="flex items-center justify-center gap-2">Continue <ArrowRight size={16} /></span>
               </MotionButton>
             </div>
@@ -454,7 +618,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
         {/* ── Step 2: Password ── */}
         {registerStep === 2 && (
-          <MotionDiv key="step2" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.25 }}>
+          <MotionDiv key="step2" {...stepAnim}>
             <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Create a password</h2>
             <p className="text-sm mb-8" style={{ color: '#7a7068' }}>At least 6 characters. You&apos;ll need this to log in.</p>
             <div className="space-y-4">
@@ -473,8 +637,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: '#2A7D6F' }}><Check size={12} /> Looks good</p>
                 )}
               </div>
-              <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-              <MotionButton whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.97 }} onClick={handleRegisterNext} className={primaryBtn} style={primaryBtnStyle}>
+              <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+              <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleRegisterNext} className={primaryBtn} style={primaryBtnStyle}>
                 <span className="flex items-center justify-center gap-2">Continue <ArrowRight size={16} /></span>
               </MotionButton>
             </div>
@@ -483,7 +647,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
         {/* ── Step 3: Avatar ── */}
         {registerStep === 3 && (
-          <MotionDiv key="step3" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.25 }}>
+          <MotionDiv key="step3" {...stepAnim}>
             <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Choose your avatar</h2>
             <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Pick one that feels like you. You can change it later.</p>
             <div className="grid grid-cols-4 gap-3 mb-6">
@@ -493,8 +657,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 </button>
               ))}
             </div>
-            <AnimatePresence>{error && <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-            <MotionButton whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.97 }} onClick={handleRegisterSubmit} disabled={isLoading} className={primaryBtn} style={primaryBtnStyle}>
+            <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+            <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleRegisterSubmit} disabled={isLoading} className={primaryBtn} style={primaryBtnStyle}>
               {isLoading ? 'Creating your account...' : 'Create Account'}
             </MotionButton>
           </MotionDiv>
