@@ -53,70 +53,75 @@ const GoogleIcon: React.FC<{ size?: number }> = ({ size = 18 }) => (
 );
 
 // ── Gateway panel ──────────────────────────────────────────
-// Left half of the auth card. Off-white on the far left fading to
-// pure white at the inner edge so there is no visible seam where
-// the right (form) panel meets it. The gateway artwork sits
-// centred with a cycling verb above ("Prepare to learn / perform /
-// excel / …").
-const CYCLING_VERBS = ['learn', 'perform', 'excel', 'develop', 'succeed', 'win'];
-
-const GatewayPanel = () => {
-  const [verbIdx, setVerbIdx] = useState(0);
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setVerbIdx(i => (i + 1) % CYCLING_VERBS.length);
-    }, 3500);
-    return () => clearInterval(id);
-  }, []);
-
-  return (
-    <div
-      className="hidden md:flex md:flex-col items-center justify-center w-1/2 relative overflow-hidden"
-      style={{
-        borderRadius: '16px 0 0 16px',
-        backgroundColor: '#FFFFFF',
-        padding: '48px 32px',
-      }}
-    >
+// Left half of the auth card. Premium product-entry composition:
+// three structural zones (brand strip top / icon centred /
+// statement + caption bottom) on a pure white surface. The
+// gateway artwork is the visual anchor. No decoration that
+// doesn't earn its place.
+const GatewayPanel = () => (
+  <div
+    className="hidden md:flex md:flex-col w-1/2 relative overflow-hidden"
+    style={{
+      backgroundColor: '#FFFFFF',
+      borderRadius: '16px 0 0 16px',
+      padding: '36px 44px',
+    }}
+  >
+    {/* Brand strip */}
+    <div className="flex items-center gap-3">
       <p
-        className="font-serif text-center"
+        className="font-sans"
         style={{
-          fontSize: 30,
+          fontSize: 10,
+          fontWeight: 700,
+          textTransform: 'uppercase',
+          letterSpacing: '0.22em',
+          color: '#5a5550',
+        }}
+      >
+        Nextstepuni
+      </p>
+      <div style={{ flex: 1, height: 1, backgroundColor: 'rgba(26,26,26,0.12)' }} />
+    </div>
+
+    {/* Icon — centred anchor */}
+    <div className="flex-1 flex items-center justify-center" style={{ padding: '24px 0' }}>
+      <img
+        src="/icons/gateway.png"
+        alt=""
+        aria-hidden
+        style={{ width: '60%', maxWidth: 260, height: 'auto' }}
+      />
+    </div>
+
+    {/* Statement + caption */}
+    <div>
+      <h2
+        className="font-serif"
+        style={{
+          fontSize: 24,
           fontWeight: 600,
           color: '#1a1a1a',
           lineHeight: 1.2,
           letterSpacing: '-0.01em',
-          marginBottom: 28,
+          marginBottom: 6,
         }}
       >
-        Prepare to{' '}
-        <AnimatePresence mode="wait">
-          <MotionSpan
-            key={CYCLING_VERBS[verbIdx]}
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ type: 'spring', stiffness: 340, damping: 28 }}
-            style={{
-              display: 'inline-block',
-              fontStyle: 'italic',
-              color: '#CC785C',
-            }}
-          >
-            {CYCLING_VERBS[verbIdx]}.
-          </MotionSpan>
-        </AnimatePresence>
+        Built for the Leaving Cert.
+      </h2>
+      <p
+        className="font-sans"
+        style={{
+          fontSize: 13,
+          color: '#7a7068',
+          lineHeight: 1.55,
+        }}
+      >
+        Personalised study, examiner-grounded.
       </p>
-
-      <img
-        src="/icons/gateway.png"
-        alt="Gateway"
-        style={{ width: '70%', maxWidth: 320, height: 'auto' }}
-      />
     </div>
-  );
-};
+  </div>
+);
 
 // ── Card wrapper — split panel on desktop, full-width on mobile ──
 const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNode }> = ({ children, devButton }) => (
