@@ -124,7 +124,7 @@ const GatewayPanel = () => {
             marginBottom: 8,
           }}
         >
-          Made for ambitious students.
+          Built around how you learn.
         </h2>
         <div style={{ minHeight: 22 }}>
           <AnimatePresence mode="wait">
@@ -423,7 +423,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
             <div className="text-center">
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] mb-6" style={{ color: '#9e9186' }}>NEXTSTEPUNI</p>
               <h1 className="text-3xl md:text-4xl font-semibold tracking-tight mb-3" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
-                Your Leaving Cert,<br />your way.
+                Your study,<br />your way.
               </h1>
               <p className="text-sm mb-10" style={{ fontFamily: "'DM Sans', sans-serif", color: '#7a7068' }}>
                 Science-backed study strategies personalised to your subjects, your goals, and your exam.
