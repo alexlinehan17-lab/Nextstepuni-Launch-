@@ -112,35 +112,15 @@ const GatewayPanel = () => {
             justifyContent: 'center',
           }}
         >
-          {/* Hand-drawn blob artwork — matches the gateway icon's
-              illustration language. Sits behind the icon, smaller,
-              so the gateway extends beyond its edges. */}
-          <img
-            src="/icons/blob.png"
-            alt=""
-            aria-hidden
-            style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              width: '90%',
-              height: 'auto',
-              zIndex: 0,
-              pointerEvents: 'none',
-            }}
-          />
           <img
             src="/icons/gateway.png"
             alt=""
             aria-hidden
             style={{
-              position: 'relative',
               width: '100%',
               maxWidth: 300,
               height: 'auto',
               display: 'block',
-              zIndex: 1,
             }}
           />
         </div>
