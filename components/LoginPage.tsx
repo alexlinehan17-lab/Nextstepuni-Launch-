@@ -112,15 +112,16 @@ const GatewayPanel = () => {
             justifyContent: 'center',
           }}
         >
-          {/* Soft terracotta blob backdrop */}
+          {/* Pale-teal solid blob — defined, on-brand counterpoint to
+              the icon's terracotta accents. Same flat-illustration
+              language as the icon. */}
           <div
             aria-hidden
             style={{
               position: 'absolute',
-              inset: '-22px -34px',
-              backgroundColor: 'rgba(204,120,92,0.22)',
-              borderRadius: '63% 37% 54% 46% / 55% 48% 52% 45%',
-              filter: 'blur(12px)',
+              inset: '-10px -22px',
+              backgroundColor: '#C8DCD4',
+              borderRadius: '50%',
               zIndex: 0,
             }}
           />
@@ -423,7 +424,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
   // ── Shared styles ──
   const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 placeholder-zinc-400 outline-none transition-all bg-white border-2 border-zinc-200 focus:border-[#2A7D6F]";
-  const primaryBtn = "w-full py-3.5 rounded-full text-[15px] font-semibold transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed";
+  const primaryBtn = "w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed";
   const primaryBtnStyle = { backgroundColor: '#FFFFFF', color: '#1A1A1A', borderColor: 'rgba(26,26,26,0.55)' };
 
   // DEV button — only visible in development builds
@@ -467,7 +468,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 <MotionButton
                   whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
                   onClick={() => { resetForm(); setView('login'); }}
-                  className="w-full py-3.5 rounded-full text-[15px] font-semibold transition-all border-2"
+                  className="w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2"
                   style={{ color: '#2A7D6F', borderColor: 'rgba(42,125,111,0.3)', backgroundColor: 'white' }}
                 >
                   I already have an account
@@ -476,7 +477,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
                   onClick={handleGoogleSignIn}
                   disabled={isLoading}
-                  className="w-full py-3.5 rounded-full text-[15px] font-semibold transition-all border-2 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
                   style={{ color: '#1a1a1a', borderColor: '#d0cdc8', backgroundColor: 'white' }}
                 >
                   <GoogleIcon />
@@ -491,7 +492,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
               </div>
               <button
                 onClick={() => { resetForm(); setView('gc'); }}
-                className="w-full py-3 rounded-full text-sm font-medium transition-all flex items-center justify-center gap-2 mt-4 border-2"
+                className="w-full py-3 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 mt-4 border-2"
                 style={{ color: '#7a7068', borderColor: '#d0cdc8', backgroundColor: 'white' }}
               >
                 <GraduationCap size={16} /> Sign in as Guidance Counsellor
@@ -538,7 +539,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
                 onClick={handleGoogleSignIn}
                 disabled={isLoading}
-                className="w-full py-3.5 rounded-full text-[15px] font-semibold transition-all border-2 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
                 style={{ color: '#1a1a1a', borderColor: '#d0cdc8', backgroundColor: 'white' }}
               >
                 <GoogleIcon />
@@ -633,7 +634,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                       whileHover={resendCountdown > 0 ? {} : btnHover}
                       whileTap={resendCountdown > 0 ? {} : btnTap}
                       transition={SPRING_FAST}
-                      className="w-full py-3 rounded-full text-[14px] font-medium transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full py-3 rounded-xl text-[14px] font-medium transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed"
                       style={{ color: '#2A7D6F', borderColor: 'rgba(42,125,111,0.3)', backgroundColor: 'white' }}
                     >
                       {resendCountdown > 0

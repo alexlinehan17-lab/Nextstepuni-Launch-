@@ -101,7 +101,7 @@ const ResetPasswordPage: React.FC = () => {
   };
 
   const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 placeholder-zinc-400 outline-none transition-all bg-white border-2 border-zinc-200 focus:border-[#2A7D6F]";
-  const primaryBtn = "w-full py-3.5 rounded-full text-[15px] font-semibold transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed";
+  const primaryBtn = "w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed";
   const primaryBtnStyle = { backgroundColor: '#FFFFFF', color: '#1A1A1A', borderColor: 'rgba(26,26,26,0.55)' };
 
   const goToSignIn = () => { window.location.href = '/'; };
