@@ -138,7 +138,7 @@ const GatewayPanel = () => {
         >
           Built around how you learn.
         </h2>
-        <div style={{ minHeight: 22 }}>
+        <div style={{ minHeight: 26 }}>
           <AnimatePresence mode="wait">
             <MotionP
               key={CYCLING_CAPTIONS[capIdx]}
@@ -148,9 +148,9 @@ const GatewayPanel = () => {
               transition={{ type: 'spring', stiffness: 340, damping: 30 }}
               className="font-sans"
               style={{
-                fontSize: 13,
-                color: '#7a7068',
-                lineHeight: 1.55,
+                fontSize: 15,
+                color: '#4a4540',
+                lineHeight: 1.5,
               }}
             >
               {CYCLING_CAPTIONS[capIdx]}
