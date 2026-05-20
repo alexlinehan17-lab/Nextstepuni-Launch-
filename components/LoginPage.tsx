@@ -112,16 +112,19 @@ const GatewayPanel = () => {
             justifyContent: 'center',
           }}
         >
-          {/* Pale-teal solid blob — defined, on-brand counterpoint to
-              the icon's terracotta accents. Same flat-illustration
-              language as the icon. */}
+          {/* Pale-teal organic blob — smaller than the icon so the
+              gateway extends beyond its edges. Asymmetric
+              border-radius for a hand-drawn, non-geometric shape. */}
           <div
             aria-hidden
             style={{
               position: 'absolute',
-              inset: '-10px -22px',
+              top: '14%',
+              left: '18%',
+              right: '12%',
+              bottom: '18%',
               backgroundColor: '#C8DCD4',
-              borderRadius: '50%',
+              borderRadius: '58% 42% 65% 35% / 48% 62% 38% 52%',
               zIndex: 0,
             }}
           />
