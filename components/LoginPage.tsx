@@ -52,121 +52,18 @@ const GoogleIcon: React.FC<{ size?: number }> = ({ size = 18 }) => (
   </svg>
 );
 
-// ── Brand + value-prop left panel ──────────────────────────
-// Anthropic-style: warm beige canvas, serif headline doing the
-// heavy lifting, three numbered value props in a structural list.
-// Type-led, no decoration — the panel earns its space by saying
-// something instead of just looking pretty.
-const ValuePropPanel = () => (
-  <div
-    className="hidden md:flex md:flex-col w-1/2 relative overflow-hidden"
-    style={{
-      backgroundColor: '#F4EFE5',
-      borderRadius: '16px 0 0 16px',
-      padding: '40px 48px',
-    }}
-  >
-    {/* Brand strip */}
-    <div className="flex items-center gap-3">
-      <p
-        className="font-sans"
-        style={{
-          fontSize: 10,
-          fontWeight: 700,
-          textTransform: 'uppercase',
-          letterSpacing: '0.22em',
-          color: '#5a5550',
-        }}
-      >
-        Nextstepuni
-      </p>
-      <div style={{ flex: 1, height: 1, backgroundColor: 'rgba(26,26,26,0.12)' }} />
-    </div>
-
-    {/* Headline + value props, centred vertically */}
-    <div className="flex-1 flex flex-col justify-center" style={{ paddingTop: 24, paddingBottom: 24 }}>
-      <h2
-        className="font-serif"
-        style={{
-          fontSize: 38,
-          fontWeight: 600,
-          color: '#1a1a1a',
-          lineHeight: 1.08,
-          letterSpacing: '-0.015em',
-          marginBottom: 36,
-        }}
-      >
-        Built for the<br />Leaving Cert.
-      </h2>
-
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-        <ValueProp
-          num="01"
-          title="Personalised by subject"
-          body="A plan shaped around the subjects you're sitting and the date you sit them."
-        />
-        <ValueProp
-          num="02"
-          title="Strategy over memorisation"
-          body="Modules teach the marking scheme — not just the content."
-        />
-        <ValueProp
-          num="03"
-          title="Examiner-sourced"
-          body="Every insight cites the SEC Chief Examiner reports, not generic advice."
-        />
-      </div>
-    </div>
-
-    {/* Footer note */}
-    <p
-      className="font-sans"
-      style={{
-        fontSize: 11,
-        color: '#7a7068',
-        letterSpacing: '0.02em',
-      }}
-    >
-      Made in Ireland.
-    </p>
-  </div>
-);
-
-const ValueProp: React.FC<{ num: string; title: string; body: string }> = ({ num, title, body }) => (
-  <div>
-    <div className="flex items-baseline gap-3" style={{ marginBottom: 4 }}>
-      <span
-        className="font-serif"
-        style={{
-          fontSize: 13,
-          fontWeight: 600,
-          color: '#9e9186',
-        }}
-      >
-        {num}
-      </span>
-      <p
-        className="font-sans"
-        style={{
-          fontSize: 15,
-          fontWeight: 600,
-          color: '#1a1a1a',
-        }}
-      >
-        {title}
-      </p>
-    </div>
-    <p
-      className="font-sans"
-      style={{
-        fontSize: 13,
-        color: '#5a5550',
-        lineHeight: 1.55,
-        paddingLeft: 28,
-      }}
-    >
-      {body}
-    </p>
+// ── Aurora gradient left panel (stable, never re-renders) ──
+const GradientPanel = () => (
+  <div className="hidden md:block w-1/2 relative overflow-hidden" style={{ borderRadius: '16px 0 0 16px' }}>
+    <div className="absolute inset-0" style={{ backgroundColor: '#EAE5DE' }} />
+    <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, #FAFBF6 0%, transparent 15%)' }} />
+    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 140% 70% at 50% 50%, rgba(140,120,210,0.5) 0%, transparent 65%)' }} />
+    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 100% 50% at 35% 40%, rgba(155,135,225,0.35) 0%, transparent 60%)' }} />
+    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 120% 55% at 50% 95%, rgba(225,110,160,0.65) 0%, transparent 50%)' }} />
+    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 90% 45% at 50% 75%, rgba(215,130,175,0.4) 0%, transparent 55%)' }} />
+    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 65% at 0% 60%, rgba(120,145,225,0.4) 0%, transparent 60%)' }} />
+    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 65% at 100% 60%, rgba(120,145,225,0.35) 0%, transparent 60%)' }} />
+    <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 55% 40% at 65% 88%, rgba(240,150,120,0.4) 0%, transparent 50%)' }} />
   </div>
 );
 
@@ -180,7 +77,7 @@ const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNo
       className="w-full max-w-5xl bg-white rounded-2xl overflow-hidden flex"
       style={{ minHeight: 540, boxShadow: '0 2px 8px rgba(0,0,0,0.06), 0 12px 40px rgba(0,0,0,0.04)', border: '1.5px solid rgba(0,0,0,0.25)' }}
     >
-      <ValuePropPanel />
+      <GradientPanel />
       <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-14 py-12">
         <div className="w-full max-w-[380px] mx-auto">
           {children}
