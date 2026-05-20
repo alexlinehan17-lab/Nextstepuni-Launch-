@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionP } from './Motion';
 import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check } from 'lucide-react';
@@ -18,18 +18,29 @@ const SPRING_FAST = { type: 'spring' as const, stiffness: 500, damping: 28 };
 const SPRING_GENTLE = { type: 'spring' as const, stiffness: 340, damping: 30 };
 const SPRING_POP = { type: 'spring' as const, stiffness: 420, damping: 18 };
 
-const stepAnim = {
-  initial: { opacity: 0, x: 24 },
-  animate: { opacity: 1, x: 0 },
-  exit: { opacity: 0, x: -24 },
-  transition: SPRING_GENTLE,
+// Slide-and-fade for view/step transitions. Direction-aware:
+// `custom={1}` slides forward (new view enters from right),
+// `custom={-1}` slides back (new view enters from left). Pure
+// tween easing keeps it crisp — no spring wobble.
+const SLIDE_DISTANCE = 56;
+const SLIDE_EASE = [0.32, 0.72, 0, 1] as const;
+const slideTransition = { duration: 0.22, ease: SLIDE_EASE };
+const slideVariants = {
+  enter: (dir: number) => ({ x: dir * SLIDE_DISTANCE, opacity: 0 }),
+  center: { x: 0, opacity: 1 },
+  exit: (dir: number) => ({ x: dir * -SLIDE_DISTANCE, opacity: 0 }),
 };
 
-const viewAnim = {
-  initial: { opacity: 0, y: 14, scale: 0.97 },
-  animate: { opacity: 1, y: 0, scale: 1 },
-  exit: { opacity: 0, y: -10, scale: 0.97 },
-  transition: SPRING_GENTLE,
+// Depth ordering for the auth views — used to compute swipe direction.
+// Welcome is root (0); login/register/gc are one level in (1); forgot
+// sits behind login (2). Going deeper slides forward, going shallower
+// slides back.
+const VIEW_DEPTH: Record<string, number> = {
+  welcome: 0,
+  login: 1,
+  register: 1,
+  gc: 1,
+  forgot: 2,
 };
 
 const errorAnim = {
@@ -204,6 +215,24 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [resetSent, setResetSent] = useState(false);
   const [resendCountdown, setResendCountdown] = useState(0);
+
+  // Direction tracking for view transitions. Computed synchronously on
+  // each render so AnimatePresence sees the correct direction the moment
+  // the new key arrives — useEffect-based tracking would lag by one frame.
+  const prevViewRef = useRef(view);
+  const viewDirection = useMemo(() => {
+    const next = VIEW_DEPTH[view] ?? 0;
+    const prev = VIEW_DEPTH[prevViewRef.current] ?? 0;
+    return next >= prev ? 1 : -1;
+  }, [view]);
+  useEffect(() => { prevViewRef.current = view; }, [view]);
+
+  const prevStepRef = useRef(registerStep);
+  const stepDirection = useMemo(
+    () => (registerStep >= prevStepRef.current ? 1 : -1),
+    [registerStep],
+  );
+  useEffect(() => { prevStepRef.current = registerStep; }, [registerStep]);
 
   // Countdown tick for the resend button on the forgot-password success screen.
   useEffect(() => {
@@ -428,8 +457,16 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ═══════════════════════════════════════════════════════════
   return (
     <LoginCard devButton={devButton}>
-      <AnimatePresence mode="wait" initial={false}>
-        <MotionDiv key={view} {...viewAnim}>
+      <AnimatePresence mode="wait" initial={false} custom={viewDirection}>
+        <MotionDiv
+          key={view}
+          custom={viewDirection}
+          variants={slideVariants}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          transition={slideTransition}
+        >
           {/* ── WELCOME ────────────────────────────────────── */}
           {view === 'welcome' && (
             <div className="text-center">
@@ -670,9 +707,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 </div>
               </div>
 
-              <AnimatePresence mode="wait">
+              <AnimatePresence mode="wait" initial={false} custom={stepDirection}>
                 {registerStep === 1 && (
-                  <MotionDiv key="step1" {...stepAnim}>
+                  <MotionDiv key="step1" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={slideTransition}>
                     <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Let&apos;s get you set up</h2>
                     <p className="text-sm mb-8" style={{ color: '#7a7068' }}>We&apos;ll use your email to create your account and for password resets.</p>
                     <div className="space-y-4">
@@ -706,7 +743,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 )}
 
                 {registerStep === 2 && (
-                  <MotionDiv key="step2" {...stepAnim}>
+                  <MotionDiv key="step2" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={slideTransition}>
                     <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Create a password</h2>
                     <p className="text-sm mb-8" style={{ color: '#7a7068' }}>At least 6 characters. You&apos;ll need this to log in.</p>
                     <div className="space-y-4">
@@ -734,7 +771,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 )}
 
                 {registerStep === 3 && (
-                  <MotionDiv key="step3" {...stepAnim}>
+                  <MotionDiv key="step3" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={slideTransition}>
                     <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Choose your avatar</h2>
                     <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Pick one that feels like you. You can change it later.</p>
                     <div className="grid grid-cols-4 gap-3 mb-6">
