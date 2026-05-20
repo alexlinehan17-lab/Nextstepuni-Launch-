@@ -101,18 +101,28 @@ const GatewayPanel = () => {
         <div style={{ flex: 1, height: 1, backgroundColor: 'rgba(26,26,26,0.12)' }} />
       </div>
 
-      {/* Icon — centred anchor */}
-      <div className="flex-1 flex items-center justify-center" style={{ padding: '16px 0' }}>
-        <img
-          src="/icons/gateway.png"
-          alt=""
-          aria-hidden
-          style={{ width: '78%', maxWidth: 340, height: 'auto' }}
-        />
-      </div>
+      {/* Icon emblem + statement — grouped as one centred unit */}
+      <div className="flex-1 flex flex-col items-center justify-center text-center">
+        <div
+          style={{
+            borderRadius: 28,
+            border: '1px solid rgba(26,26,26,0.07)',
+            backgroundColor: '#FCFBF9',
+            padding: 24,
+            marginBottom: 28,
+            display: 'inline-flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <img
+            src="/icons/gateway.png"
+            alt=""
+            aria-hidden
+            style={{ width: '100%', maxWidth: 300, height: 'auto', display: 'block' }}
+          />
+        </div>
 
-      {/* Statement + cycling caption */}
-      <div>
         <h2
           className="font-serif"
           style={{
@@ -421,7 +431,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           {/* ── WELCOME ────────────────────────────────────── */}
           {view === 'welcome' && (
             <div className="text-center">
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] mb-6" style={{ color: '#9e9186' }}>NEXTSTEPUNI</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] mb-6" style={{ color: '#9e9186' }}>STUDENT ACCESS</p>
               <h1 className="text-3xl md:text-4xl font-semibold tracking-tight mb-3" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
                 Your study,<br />your way.
               </h1>
