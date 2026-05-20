@@ -219,11 +219,15 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   const handleGoToInsights = () => { nav.navigateToInsights(); };
 
   // Firebase password-reset action URL — handled before any auth gating so the
-  // user can land here whether or not they're signed in. Triggered when the
-  // URL carries `mode=resetPassword&oobCode=…` from a Firebase reset email.
+  // user can land here whether or not they're signed in. Triggered by either
+  // the path /reset-password or the query params mode=resetPassword + oobCode
+  // (the latter is what Firebase appends to the configured Action URL).
   if (typeof window !== 'undefined') {
     const params = new URLSearchParams(window.location.search);
-    if (params.get('mode') === 'resetPassword' && params.get('oobCode')) {
+    const path = window.location.pathname;
+    const hasResetParams = params.get('mode') === 'resetPassword' && !!params.get('oobCode');
+    const isResetPath = path === '/reset-password' || path.startsWith('/reset-password/');
+    if (hasResetParams || isResetPath) {
       return <Suspense fallback={<LoadingSpinner />}><ResetPasswordPage /></Suspense>;
     }
   }

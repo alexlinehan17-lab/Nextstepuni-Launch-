@@ -182,6 +182,17 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       isPopstateRef.current = false;
       return;
     }
+    // Skip URL sync entirely when we're on a Firebase auth action route — the
+    // query params (mode=resetPassword, oobCode, apiKey) carry the reset code
+    // and must survive long enough for ResetPasswordPage to read them.
+    // Re-rewriting the URL from navigation state strips those params.
+    if (typeof window !== 'undefined') {
+      const path = window.location.pathname;
+      const search = window.location.search;
+      if (path === '/reset-password' || path.startsWith('/reset-password/') || search.includes('mode=resetPassword')) {
+        return;
+      }
+    }
     const url = serializeToURL(state);
     // Replace (not push) on the initial mount to seed URL without adding a history entry
     if (!window.history.state?.__navSynced) {
