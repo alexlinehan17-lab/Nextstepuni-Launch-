@@ -75,7 +75,7 @@ const GatewayPanel = () => {
       className="hidden md:flex md:flex-col items-center justify-center w-1/2 relative overflow-hidden"
       style={{
         borderRadius: '16px 0 0 16px',
-        backgroundColor: '#F1ECE2',
+        backgroundColor: '#FFFFFF',
         padding: '48px 32px',
       }}
     >
