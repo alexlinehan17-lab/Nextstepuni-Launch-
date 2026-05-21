@@ -66,7 +66,7 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
 
   return (
     <nav
-      className="fixed bottom-0 left-0 right-0 z-[90] md:hidden bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl border-t border-zinc-200/50 dark:border-white/[0.06]"
+      className="fixed bottom-0 left-0 right-0 z-[90] md:hidden bg-[#FAFBF6]/95 dark:bg-zinc-900/95 backdrop-blur-xl border-t border-zinc-200/50 dark:border-white/[0.06]"
       style={{ paddingBottom: 'var(--sab, 0px)' }}
     >
       <div className="flex items-center justify-around h-16">
@@ -470,19 +470,17 @@ const App: React.FC = () => {
         </div>
       )}
 
-      {/* Mobile: TrainingPulse in top-left when not on tree/category/onboarding/innovation-zone */}
-      {user && viewState !== 'onboarding' && viewState !== 'tree' && viewState !== 'category' && viewState !== 'module' && viewState !== 'study-session' && viewState !== 'my-journey' && viewState !== 'innovation-zone' && user.role !== 'gc' && !user.isAdmin && gamification.isLoaded && (
-        <div className="fixed top-4 left-4 z-[100] md:hidden">
-          <TrainingPulse
-            gamificationState={gamification.state}
-            onOpenHub={handleGoToGamificationHub}
-            streak={streak}
-            pointsBalance={pointsData.balance}
-          />
-          <AchievementToast
-            achievement={currentToast}
-            onDismiss={() => setCurrentToast(null)}
-          />
+      {/* Mobile achievement toast — TrainingPulse removed on mobile per design feedback.
+          AchievementToast still needs a mount point on mobile so it appears
+          unobtrusively at top-left when a new achievement fires. */}
+      {user && viewState !== 'onboarding' && viewState !== 'module' && user.role !== 'gc' && !user.isAdmin && (
+        <div className="fixed top-4 left-4 z-[100] md:hidden pointer-events-none">
+          <div className="pointer-events-auto">
+            <AchievementToast
+              achievement={currentToast}
+              onDismiss={() => setCurrentToast(null)}
+            />
+          </div>
         </div>
       )}
 

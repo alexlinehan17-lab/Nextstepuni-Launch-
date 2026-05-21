@@ -490,7 +490,16 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const currentTool = tools.find(t => t.id === activeTool);
 
   return (
-    <div className={`min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24 ${activeTool === 'journey' || activeTool === 'war-room' ? 'pt-14 md:pt-16' : 'pt-24 md:pt-32'}`}>
+    <div
+      className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24"
+      // Fixed header at top is ~80px tall (back button + eyebrow + title) + safe-area-inset-top.
+      // The journey/war-room tools historically had a smaller header offset (pt-14)
+      // which left content peeking out behind the bar. Use the same generous offset
+      // for every tool so nothing slides under the fixed banner.
+      style={{
+        paddingTop: `calc(96px + var(--sat, 0px))`,
+      }}
+    >
 
       <header className={`fixed top-0 left-0 right-0 z-[60] bg-zinc-50 dark:bg-zinc-950 px-4 md:px-10 ${activeTool === 'journey' || activeTool === 'war-room' ? '' : 'border-b border-zinc-200 dark:border-zinc-800'}`} style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}>
         <div className="container mx-auto flex items-center justify-between">

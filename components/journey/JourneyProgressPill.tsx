@@ -21,7 +21,10 @@ const JourneyProgressPill: React.FC<JourneyProgressPillProps> = ({ tileCount, de
       exit={{ opacity: 0, y: 20 }}
       transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
       onClick={onTap}
-      className="absolute bottom-20 md:bottom-6 left-0 right-0 z-[80] flex justify-center cursor-pointer"
+      // Mobile: sit above the fixed bottom nav (h-16 = 64px) plus the home-indicator
+      // safe-area inset. md+: use the smaller bottom-6 inset (no fixed nav there).
+      className="absolute md:bottom-6 left-0 right-0 z-[80] flex justify-center cursor-pointer"
+      style={{ bottom: 'calc(80px + var(--sab, 0px))' }}
     >
       <div className="flex items-center gap-3 px-5 py-3 rounded-full bg-white/90 dark:bg-zinc-900/90 backdrop-blur-lg border border-zinc-200 dark:border-zinc-800 shadow-lg">
         <span className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">

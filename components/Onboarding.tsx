@@ -329,7 +329,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
 
       {/* ─── Scrollable Content ─── */}
       <div className="flex-1 overflow-y-auto min-h-0 relative z-10">
-        <div className="max-w-2xl mx-auto px-6 py-10">
+        <div className="max-w-2xl mx-auto px-7 sm:px-6 py-10">
           <AnimatePresence mode="wait" custom={direction}>
 
             {/* Step 1: Welcome — staggered entrance, glass card, preview chips */}

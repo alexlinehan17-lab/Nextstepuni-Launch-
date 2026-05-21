@@ -258,7 +258,12 @@ const DashboardView: React.FC<DashboardViewProps> = ({
       </div>
 
       {/* ── Today's Focus — editorial cream card ── */}
-      <div className="max-w-5xl mx-auto px-6 pb-24">
+      {/* Bottom padding clears the fixed mobile bottom nav (h-16 = 64px) plus
+          the home-indicator safe-area, with breathing room above. */}
+      <div
+        className="max-w-5xl mx-auto px-6"
+        style={{ paddingBottom: 'calc(120px + var(--sab, 0px))' }}
+      >
         {recommendation && recommendation.reason !== 'all-complete' && (() => {
           const focusCourse = allCourses.find(c => c.id === recommendation.moduleId);
           const focusWorld: WorldId = (focusCourse && CATEGORY_TO_WORLD[focusCourse.category]) || 'learn';

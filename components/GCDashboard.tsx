@@ -290,7 +290,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF9F6] dark:bg-zinc-950 relative">
+    <div className="min-h-screen bg-[#FAF9F6] dark:bg-zinc-950 relative overflow-x-hidden">
       {/* ─── Sidebar (exact student dashboard replica) ───────────────────── */}
       <aside
         className={`hidden md:flex flex-col fixed top-0 left-0 h-full z-40 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-r border-zinc-200 dark:border-zinc-800 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}

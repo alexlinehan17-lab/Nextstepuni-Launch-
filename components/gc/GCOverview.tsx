@@ -559,7 +559,10 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
   const greeting = hour < 12 ? 'Good morning.' : hour < 18 ? 'Good afternoon.' : 'Good evening.';
 
   return (
-    <div className="p-6 lg:p-8 space-y-5">
+    // overflow-x-hidden contains any wide grandchild (tables, charts, etc.)
+    // so the page itself stays at the iPhone viewport width and "Guidance
+    // Dashboard" / school name don't slide off the screen edges.
+    <div className="p-6 lg:p-8 space-y-5 overflow-x-hidden">
       {/* ═══════════════════════════════════════════════════════════════════
           ROW 0 — Header (full width)
           ═══════════════════════════════════════════════════════════════════ */}
@@ -569,14 +572,16 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           <h1 className="font-serif text-3xl font-semibold text-zinc-900 dark:text-white tracking-tight">{greeting}</h1>
           <p className={`text-sm mt-0.5 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{getSchoolName(school)}</p>
         </div>
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl dark:!bg-[rgba(77,184,164,0.1)] dark:!border-[rgba(77,184,164,0.25)]" style={{ backgroundColor: 'rgba(42,125,111,0.08)', border: '1px solid rgba(42,125,111,0.2)' }}>
+        {/* flex-1 + basis-0 on each pill gives all 3 the same width regardless
+            of label length. justify-center keeps content centred inside. */}
+        <div className="flex items-stretch gap-3">
+          <div className="flex-1 basis-0 flex items-center justify-center gap-2 px-3 py-2 rounded-xl dark:!bg-[rgba(77,184,164,0.1)] dark:!border-[rgba(77,184,164,0.25)]" style={{ backgroundColor: 'rgba(42,125,111,0.08)', border: '1px solid rgba(42,125,111,0.2)' }}>
             <span className={`text-lg font-bold ${TEXT_ACCENT_DARK}`} style={{ color: ACCENT }}>{daysUntilLC}</span>
             <span className="text-[10px] font-bold uppercase tracking-wider dark:!text-[rgba(77,184,164,0.7)]" style={{ color: 'rgba(42,125,111,0.7)' }}>days to LC</span>
           </div>
           <button
             onClick={() => setShowExportModal(true)}
-            className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold transition-colors ${TEXT_ACCENT_DARK} dark:!border-[rgba(77,184,164,0.3)]`}
+            className={`flex-1 basis-0 flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold transition-colors ${TEXT_ACCENT_DARK} dark:!border-[rgba(77,184,164,0.3)]`}
             style={{ color: ACCENT, border: '1px solid rgba(42,125,111,0.3)', backgroundColor: 'transparent' }}
           >
             <FileDown size={14} />
@@ -584,11 +589,11 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           </button>
           <button
             onClick={() => setShowBroadcastModal(true)}
-            className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold transition-colors ${TEXT_ACCENT_DARK} dark:!border-[rgba(77,184,164,0.3)]`}
+            className={`flex-1 basis-0 flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold transition-colors text-center ${TEXT_ACCENT_DARK} dark:!border-[rgba(77,184,164,0.3)]`}
             style={{ color: ACCENT, border: '1px solid rgba(42,125,111,0.3)', backgroundColor: 'transparent' }}
           >
             <Megaphone size={14} />
-            Broadcast to Class
+            Broadcast
           </button>
         </div>
       </div>

@@ -544,7 +544,15 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
         <ModuleErrorBoundary onBack={handleBackToCategory}>
           <Suspense fallback={<LoadingSpinner />}>
             {cameFromJourney && (
-              <div className="fixed top-0 left-0 right-0 z-[80] bg-[var(--accent-hex)] dark:bg-[var(--accent-hex)]">
+              // Coral "back" banner sits at the very top of the viewport,
+              // respecting the iPhone's safe-area-top so it doesn't slide
+              // under the dynamic island. The wrapper below pushes the
+              // module content down by the banner's full height so the
+              // module's own header doesn't get covered.
+              <div
+                className="fixed top-0 left-0 right-0 z-[80] bg-[var(--accent-hex)] dark:bg-[var(--accent-hex)]"
+                style={{ paddingTop: 'var(--sat, 0px)' }}
+              >
                 <button
                   onClick={handleBackToCategory}
                   className="w-full flex items-center justify-center gap-2 py-2 text-white text-xs font-bold hover:bg-[var(--accent-dark-hex)] dark:hover:bg-[var(--accent-dark-hex)] transition-colors"
@@ -554,11 +562,18 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
                 </button>
               </div>
             )}
-            <ModuleComponent
-              onBack={handleBackToCategory}
-              progress={userProgress[currentModuleId] || { unlockedSection: 0 }}
-              onProgressUpdate={(p) => handleProgressUpdate(currentModuleId, p)}
-            />
+            <div
+              // When the journey back-banner is present, offset the module
+              // content so its sticky top header lands BELOW the banner.
+              // Banner height ≈ 28px button + safe-area-inset-top.
+              style={cameFromJourney ? { paddingTop: 'calc(28px + var(--sat, 0px))' } : undefined}
+            >
+              <ModuleComponent
+                onBack={handleBackToCategory}
+                progress={userProgress[currentModuleId] || { unlockedSection: 0 }}
+                onProgressUpdate={(p) => handleProgressUpdate(currentModuleId, p)}
+              />
+            </div>
           </Suspense>
         </ModuleErrorBoundary>
       );

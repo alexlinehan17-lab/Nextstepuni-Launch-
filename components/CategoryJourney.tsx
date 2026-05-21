@@ -289,7 +289,10 @@ const CategoryJourney: React.FC<CategoryJourneyProps> = ({
       </div>
 
       {/* ═══ FOOTER ═══ */}
-      <div className="text-center pb-20 px-6">
+      <div
+        className="text-center px-6"
+        style={{ paddingBottom: 'calc(96px + var(--sab, 0px))' }}
+      >
         <p className="text-xs" style={{ color: '#b5b0a5', fontFamily: SERIF, fontStyle: 'italic' }}>
           {completedCount === totalCount
             ? 'You\'ve built the architecture. Now build on it.'

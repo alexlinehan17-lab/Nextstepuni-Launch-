@@ -209,8 +209,9 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
   return (
     <div className="space-y-6">
 
-      {/* Points overview cards */}
-      <div className="grid grid-cols-3 gap-3">
+      {/* Points overview cards — stack on phones where 3-up makes "+133 pts"
+          and similar widths overflow the card edges. */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <div className="rounded-xl p-4 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
           <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#9A9590] dark:text-zinc-500">Current</p>
           <span className="font-apercu text-3xl font-black" style={{ color: '#2A7D6F' }}>{currentPoints}</span>

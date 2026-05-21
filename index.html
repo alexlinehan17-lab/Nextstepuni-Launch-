@@ -30,6 +30,12 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
+      /* Prevent iOS auto-zoom on input focus (triggered when font-size < 16px) */
+      @supports (-webkit-touch-callout: none) {
+        input, textarea, select {
+          font-size: 16px !important;
+        }
+      }
       :root {
         --accent: 204, 120, 92;
         --accent-hex: #CC785C;

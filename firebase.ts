@@ -5,7 +5,7 @@
 */
 
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { initializeAuth, indexedDBLocalPersistence } from "firebase/auth";
 import { initializeFirestore, persistentLocalCache, persistentMultipleTabManager } from "firebase/firestore";
 
 // Your web app's Firebase configuration
@@ -22,8 +22,17 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Export the necessary Firebase services to be used throughout the app
-export const auth = getAuth(app);
+// Export the necessary Firebase services to be used throughout the app.
+//
+// We use `initializeAuth` with `indexedDBLocalPersistence` instead of the
+// default `getAuth(app)` so the Auth SDK skips loading the gapi.iframes
+// OAuth helper from apis.google.com. Inside Capacitor's WKWebView the
+// origin is `capacitor://localhost`, which fails CORS against that helper
+// and causes `onAuthStateChanged` to hang forever. IndexedDB persistence
+// also works fine in normal browsers, so the same config is used everywhere.
+export const auth = initializeAuth(app, {
+  persistence: indexedDBLocalPersistence,
+});
 export const db = initializeFirestore(app, {
   localCache: persistentLocalCache({ tabManager: persistentMultipleTabManager() }),
 });

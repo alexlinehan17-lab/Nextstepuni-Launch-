@@ -329,7 +329,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
         className="rounded-2xl px-6 py-5 bg-[#FAF7F4] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800"
         style={{ boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}
       >
-        <div className={`grid gap-6 ${activeTab === 'what-if' ? 'grid-cols-3' : 'grid-cols-2'}`}>
+        <div className={`grid gap-6 ${activeTab === 'what-if' ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-2'}`}>
           <PointsCard label="Current" points={currentAnalysis.total} maxPoints={625} accentColor="#C4C0BC" variant="current" />
           <PointsCard label="Target" points={targetAnalysis.total} maxPoints={625} delta={targetAnalysis.total - currentAnalysis.total} accentColor="#2A7D6F" variant="target" />
           {activeTab === 'what-if' && (

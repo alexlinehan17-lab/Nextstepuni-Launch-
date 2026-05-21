@@ -221,12 +221,14 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
         minHeight: '100vh',
       }}
     >
-      {/* War Room target crest — anchored top-right of the page */}
+      {/* War Room target crest — anchored top-right of the page. Hidden on
+          narrow phones where it collides with the centred "Strategy Briefing"
+          title; reappears at sm+ where the layout has horizontal room. */}
       <img
         src="/assets/war-room-crest.png"
         alt=""
         aria-hidden
-        className="absolute z-10"
+        className="absolute z-10 hidden sm:block"
         style={{
           top: 'clamp(16px, 2.5vw, 32px)',
           right: 'clamp(16px, 3vw, 40px)',

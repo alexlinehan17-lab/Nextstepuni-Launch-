@@ -7,11 +7,17 @@ import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionP } from './Motion';
 import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check } from 'lucide-react';
+import { Capacitor } from '@capacitor/core';
 import { auth, db } from '../firebase';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from '../utils/authUtils';
 import { SCHOOLS } from '../schoolData';
+
+// Google Sign-In uses signInWithPopup which doesn't work inside Capacitor's
+// WKWebView (no real popup support). We hide the button on native iOS/Android
+// builds until the native @capacitor-firebase/authentication plugin is wired up.
+const SHOW_GOOGLE_SIGN_IN = !Capacitor.isNativePlatform();
 
 // ── Shared animation tokens ──
 const SPRING_FAST = { type: 'spring' as const, stiffness: 500, damping: 28 };
@@ -356,9 +362,19 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     setIsLoading(true); setError('');
     try {
       await signInWithEmailAndPassword(auth, `gc-${gcSchool}@nextstep.app`, password);
-    } catch (err) {
-      console.error('GC login failed:', err);
-      setError('Invalid credentials.');
+    } catch (err: any) {
+      // Surface a more specific message so we know whether the GC account is
+      // missing entirely vs. wrong password vs. network issue.
+      console.error('GC login failed:', err.code, err.message);
+      if (err.code === 'auth/user-not-found' || err.code === 'auth/invalid-credential' || err.code === 'auth/invalid-login-credentials') {
+        setError('No counsellor account exists for this school yet. Contact support to provision one.');
+      } else if (err.code === 'auth/wrong-password') {
+        setError('Wrong password. Try again or contact support.');
+      } else if (err.code === 'auth/network-request-failed') {
+        setError('Network error. Check your connection and try again.');
+      } else {
+        setError(`Sign-in failed (${err.code || 'unknown'}). Try again.`);
+      }
     }
     setIsLoading(false);
   };
@@ -438,11 +454,16 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
   // ── Shared styles ──
   const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 placeholder-zinc-400 outline-none transition-all bg-white border-2 border-zinc-200 focus:border-[#2A7D6F]";
+  // Password inputs need extra right padding so the show/hide eye toggle and
+  // iOS's own AutoFill / Strong-Password key icon don't visually collide
+  // inside the field.
+  const passwordInputClass = `${inputClass} pr-12`;
   const primaryBtn = "w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed";
   const primaryBtnStyle = { backgroundColor: '#FFFFFF', color: '#1A1A1A', borderColor: 'rgba(26,26,26,0.55)' };
 
-  // DEV button — only visible in development builds
-  const devButton = (
+  // DEV button — only rendered when Vite is in dev mode. `import.meta.env.PROD`
+  // is replaced at build time, so production bundles strip this branch entirely.
+  const devButton = import.meta.env.PROD ? null : (
     <button onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })} className="mt-6 px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[9px] font-mono hover:bg-red-600/20 transition-colors">
       DEV: Skip Login
     </button>
@@ -495,16 +516,18 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 >
                   I already have an account
                 </MotionButton>
-                <MotionButton
-                  whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
-                  onClick={handleGoogleSignIn}
-                  disabled={isLoading}
-                  className="w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
-                  style={{ color: '#1a1a1a', borderColor: '#d0cdc8', backgroundColor: 'white' }}
-                >
-                  <GoogleIcon />
-                  Continue with Google
-                </MotionButton>
+                {SHOW_GOOGLE_SIGN_IN && (
+                  <MotionButton
+                    whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
+                    onClick={handleGoogleSignIn}
+                    disabled={isLoading}
+                    className="w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
+                    style={{ color: '#1a1a1a', borderColor: '#d0cdc8', backgroundColor: 'white' }}
+                  >
+                    <GoogleIcon />
+                    Continue with Google
+                  </MotionButton>
+                )}
               </div>
 
               <div className="flex items-center gap-4 mt-8">
@@ -533,7 +556,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
               <form onSubmit={e => { e.preventDefault(); handleLogin(); }} className="space-y-4">
                 <div>
                   <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                  <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus />
+                  <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
                 </div>
                 <div>
                   <div className="flex items-center justify-between mb-1.5">
@@ -541,7 +564,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     <button type="button" onClick={() => { setView('forgot'); setError(''); }} className="text-xs font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Forgot?</button>
                   </div>
                   <div className="relative">
-                    <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={inputClass} />
+                    <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
                     <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
                       {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                     </button>
@@ -552,21 +575,25 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   {isLoading ? 'Signing in...' : 'Sign In'}
                 </MotionButton>
               </form>
-              <div className="flex items-center gap-4 my-5">
-                <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
-                <span className="text-[11px] font-medium" style={{ color: '#9e9186' }}>OR</span>
-                <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
-              </div>
-              <MotionButton
-                whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
-                onClick={handleGoogleSignIn}
-                disabled={isLoading}
-                className="w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
-                style={{ color: '#1a1a1a', borderColor: '#d0cdc8', backgroundColor: 'white' }}
-              >
-                <GoogleIcon />
-                Continue with Google
-              </MotionButton>
+              {SHOW_GOOGLE_SIGN_IN && (
+                <>
+                  <div className="flex items-center gap-4 my-5">
+                    <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
+                    <span className="text-[11px] font-medium" style={{ color: '#9e9186' }}>OR</span>
+                    <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
+                  </div>
+                  <MotionButton
+                    whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
+                    onClick={handleGoogleSignIn}
+                    disabled={isLoading}
+                    className="w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
+                    style={{ color: '#1a1a1a', borderColor: '#d0cdc8', backgroundColor: 'white' }}
+                  >
+                    <GoogleIcon />
+                    Continue with Google
+                  </MotionButton>
+                </>
+              )}
               <p className="text-sm text-center mt-6" style={{ color: '#9e9186' }}>
                 Don&apos;t have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('register'); }} className="font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Register</button>
               </p>
@@ -595,7 +622,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 <div>
                   <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
                   <div className="relative">
-                    <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={inputClass} />
+                    <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
                     <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
                       {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                     </button>
@@ -671,7 +698,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 <form onSubmit={e => { e.preventDefault(); handleForgotPassword(); }} className="space-y-4">
                   <div>
                     <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                    <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus />
+                    <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
                   </div>
                   <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
                   <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
@@ -715,11 +742,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     <div className="space-y-4">
                       <div>
                         <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                        <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus />
+                        <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
                       </div>
                       <div>
                         <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your Name</label>
-                        <input type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="e.g. Sean, Emma, Jordan" className={inputClass} />
+                        <input type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="e.g. Sean, Emma, Jordan" className={inputClass} autoComplete="given-name" autoCapitalize="words" autoCorrect="off" spellCheck={false} />
                       </div>
                       <div>
                         <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
@@ -750,7 +777,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                       <div>
                         <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
                         <div className="relative">
-                          <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Create a password" className={inputClass} autoFocus />
+                          <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Create a password" className={passwordInputClass} autoFocus autoComplete="new-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
                           <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
                             {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                           </button>

@@ -66,6 +66,15 @@ const PHASE_DISPLAY: Record<Phase, string> = {
     'Final Stretch': 'Final Stretch',
 };
 
+// Mobile-friendly short labels for the bottom trail stepper. Used at <sm
+// widths where the full labels would extend past the screen edge and get
+// clipped beside their 36px circle.
+const PHASE_DISPLAY_SHORT: Record<Phase, string> = {
+    'Foundation': 'Begin',
+    'Pressure Cooker': 'Crunch',
+    'Final Stretch': 'Final',
+};
+
 // ════════════════════════════════════════════════════════════════════════════
 // HAND-DRAWN SVG PRIMITIVES
 // All strokes use slightly varied widths and "rough" pathing to feel sketched.
@@ -299,12 +308,20 @@ const JourneyTrail: React.FC<{ currentPhase: Phase; compact?: boolean }> = ({ cu
                                     {node.i}
                                 </div>
                                 {!compact && (
-                                    <span
-                                        className="mt-2 text-[10px] font-semibold uppercase tracking-[0.18em] whitespace-nowrap text-center"
-                                        style={{ color: labelColor }}
-                                    >
-                                        {PHASE_DISPLAY[node.phase]}
-                                    </span>
+                                    <>
+                                        <span
+                                            className="mt-2 text-[10px] font-semibold uppercase tracking-[0.18em] whitespace-nowrap text-center hidden sm:inline"
+                                            style={{ color: labelColor }}
+                                        >
+                                            {PHASE_DISPLAY[node.phase]}
+                                        </span>
+                                        <span
+                                            className="mt-2 text-[10px] font-semibold uppercase tracking-[0.18em] whitespace-nowrap text-center sm:hidden"
+                                            style={{ color: labelColor }}
+                                        >
+                                            {PHASE_DISPLAY_SHORT[node.phase]}
+                                        </span>
+                                    </>
                                 )}
                             </div>
                             {idx < TRAIL_LAYOUT.length - 1 && (
@@ -378,7 +395,14 @@ const PhaseTransition: React.FC<{ phase: Phase; onComplete: () => void }> = ({ p
             transition={{ duration: 0.6 }}
             onClick={onComplete}
             className="cursor-pointer fixed inset-0 z-[70] flex items-center justify-center overflow-y-auto"
-            style={{ background: PAPER }}
+            // pb keeps the centered transition card above the fixed mobile bottom
+            // nav (z-90 sits in front of this overlay at z-70). sat keeps the top
+            // clear of the dynamic island.
+            style={{
+                background: PAPER,
+                paddingTop: 'var(--sat, 0px)',
+                paddingBottom: 'calc(96px + var(--sab, 0px))',
+            }}
         >
             <div
                 className="relative w-full max-w-3xl mx-4 my-8 overflow-hidden"
