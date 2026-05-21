@@ -11,6 +11,7 @@ import { StatusBar, Style } from '@capacitor/status-bar';
 import './index.css';
 import App from './App';
 import ErrorBoundary from './components/ErrorBoundary';
+import PullToRefresh from './components/PullToRefresh';
 import { ToastProvider } from './components/Toast';
 import { AuthProvider } from './contexts/AuthContext';
 import { NavigationProvider } from './contexts/NavigationContext';
@@ -38,7 +39,9 @@ root.render(
         <AuthProvider>
           <ProgressProvider>
             <NavigationProvider>
-              <App />
+              <PullToRefresh>
+                <App />
+              </PullToRefresh>
             </NavigationProvider>
           </ProgressProvider>
         </AuthProvider>

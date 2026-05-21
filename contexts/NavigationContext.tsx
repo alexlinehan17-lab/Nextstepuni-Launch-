@@ -166,7 +166,7 @@ export const useNavigation = (): NavigationContextValue => {
 export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [state, dispatch] = useReducer(navigationReducer, undefined, getInitialState);
   const isPopstateRef = useRef(false);
-  const { user } = useAuth();
+  const { user, authResolved } = useAuth();
   const prevUserUidRef = useRef<string | null | undefined>(undefined);
 
   // Single atomic helper: dispatch + pushState + URL update
@@ -246,14 +246,19 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
   // Reset navigation state on logout or user change to prevent stale state leaking
   // between sessions.
+  //
+  // Gated on `authResolved` because on page reload the auth flow goes
+  // null → resolved user across multiple renders. Without this gate, the
+  // first transition (null → user) trips the "user changed" branch and
+  // wipes the URL-restored view back to tree on every reload.
   useEffect(() => {
+    if (!authResolved) return;
     const currentUid = user?.uid ?? null;
-    // Skip the initial mount (prevUserUidRef starts as undefined)
     if (prevUserUidRef.current !== undefined && prevUserUidRef.current !== currentUid) {
       dispatch({ type: 'NAVIGATE_TO_TREE' });
     }
     prevUserUidRef.current = currentUid;
-  }, [user]);
+  }, [user, authResolved]);
 
   // ─── Convenience navigation functions ───────────────────
 

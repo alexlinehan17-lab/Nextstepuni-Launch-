@@ -461,9 +461,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const primaryBtn = "w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed";
   const primaryBtnStyle = { backgroundColor: '#FFFFFF', color: '#1A1A1A', borderColor: 'rgba(26,26,26,0.55)' };
 
-  // DEV button — only rendered when Vite is in dev mode. `import.meta.env.PROD`
-  // is replaced at build time, so production bundles strip this branch entirely.
-  const devButton = import.meta.env.PROD ? null : (
+  // DEV button — temporarily always rendered (including production builds) so
+  // it's available on the iOS Capacitor build for on-device testing. Remove
+  // before shipping to App Store.
+  const devButton = (
     <button onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })} className="mt-6 px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[9px] font-mono hover:bg-red-600/20 transition-colors">
       DEV: Skip Login
     </button>

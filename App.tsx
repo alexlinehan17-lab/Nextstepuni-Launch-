@@ -5,6 +5,7 @@
 */
 
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import { createPortal } from 'react-dom';
 import { Home, Rocket, Dumbbell, Timer, Mountain, User } from 'lucide-react';
 import { UserProfile, MobileProfileSheet } from './components/UserProfileMenu';
 import { type CategoryType } from './components/KnowledgeTree';
@@ -64,7 +65,10 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
     { id: 'profile', label: 'Profile', icon: User, action: onOpenProfile },
   ];
 
-  return (
+  // Portaled to document.body so the nav stays viewport-anchored even when an
+  // ancestor (e.g. PullToRefresh) applies a transform, which would otherwise
+  // re-anchor position: fixed to the transformed wrapper.
+  return createPortal(
     <nav
       className="fixed bottom-0 left-0 right-0 z-[90] md:hidden bg-[#FAFBF6]/95 dark:bg-zinc-900/95 backdrop-blur-xl border-t border-zinc-200/50 dark:border-white/[0.06]"
       style={{ paddingBottom: 'var(--sab, 0px)' }}
@@ -88,7 +92,8 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
           );
         })}
       </div>
-    </nav>
+    </nav>,
+    document.body
   );
 };
 
