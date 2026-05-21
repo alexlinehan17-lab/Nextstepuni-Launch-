@@ -16,6 +16,18 @@ const ICON_MAP: Record<string, React.ComponentType<{ size?: number; className?: 
   TrendingUp, MicOff, Signpost, Plane, PartyPopper, HandHeart,
 };
 
+// Custom hand-drawn illustrations for the "What's driving you?" category
+// picker. When a category has an entry here, the picker renders this image
+// instead of the Lucide icon from ICON_MAP.
+const CATEGORY_ICON_IMG: Partial<Record<NorthStarCategory, string>> = {
+  'independence': '/icons/north-star/my-own-path.png',
+  'family-community': '/icons/north-star/community.png',
+  'career-craft': '/icons/north-star/career.png',
+  'college-learning': '/icons/north-star/learning.png',
+  'prove-myself': '/icons/north-star/prove-them-wrong.png',
+  'options-freedom': '/icons/north-star/open-options.png',
+};
+
 interface NorthStarOnboardingProps {
   onComplete: (northStar: NorthStar) => void;
   initialData?: NorthStar | null;
@@ -106,6 +118,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                 const colors = CATEGORY_COLORS[cat.id];
                 const isSelected = selectedCategory === cat.id;
                 const Icon = ICON_MAP[cat.icon];
+                const imgSrc = CATEGORY_ICON_IMG[cat.id];
                 return (
                   <button
                     key={cat.id}
@@ -116,8 +129,12 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                         : `bg-white/70 dark:bg-white/[0.03] border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-zinc-300 dark:hover:border-zinc-600`
                     }`}
                   >
-                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${isSelected ? colors.iconBg : 'bg-zinc-100 dark:bg-zinc-800'}`}>
-                      {Icon && <Icon size={20} className={isSelected ? colors.text : 'text-zinc-400 dark:text-zinc-500'} />}
+                    <div className={`w-14 h-14 rounded-xl flex items-center justify-center shrink-0 ${isSelected ? colors.iconBg : 'bg-zinc-100 dark:bg-zinc-800'}`}>
+                      {imgSrc ? (
+                        <img src={imgSrc} alt="" aria-hidden className="w-11 h-11 object-contain" />
+                      ) : (
+                        Icon && <Icon size={22} className={isSelected ? colors.text : 'text-zinc-400 dark:text-zinc-500'} />
+                      )}
                     </div>
                     <div>
                       <p className="text-sm font-bold">{cat.label}</p>
