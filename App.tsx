@@ -411,7 +411,20 @@ const App: React.FC = () => {
       }
     } catch (err) {
       console.error('Failed to save subject profile:', err);
-      showToast('Couldn\'t save — check your connection', 'error');
+      // Surface the actual Firebase error in the toast itself so silent
+      // bugs (rules rejection, App Check, quota, malformed data) can't
+      // hide behind a generic "check your connection" message. We saw a
+      // case on 2026-05-23 where this masked a real Firestore rules bug.
+      const rawMsg = err instanceof Error ? err.message : String(err);
+      // Truncate to keep the toast readable; full error still in console.
+      const trimmed = rawMsg.length > 120 ? rawMsg.slice(0, 120) + '…' : rawMsg;
+      showToast(`Couldn't save: ${trimmed}`, 'error');
+      // Don't navigate away on error — leave the user on the final
+      // onboarding step so they can hit Finish again after the issue
+      // is resolved. If we navigate, the user lands on the home screen
+      // with no profile and looks "onboarded" — which is exactly the
+      // confusing state that hid the rules bug for so long.
+      return;
     }
     setStudentProfile(profile);
     markOnboardingComplete();

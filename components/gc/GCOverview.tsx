@@ -711,6 +711,91 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
         </div>
       </div>
 
+      {/* ═══════════════════════════════════════════════════════════════════
+          ROW 0.5 — Global cohort filter (Phase 6)
+          Sits right under the header so it's always visible. Cascades to
+          all panels below: Progress Breakdown, Subject-Level Gaps, Subject
+          Health, and the student table. Always rendered; curriculum toggle
+          + year dropdown both always show all options (not just years
+          actually present in the cohort) so a GC can scope to a year that
+          doesn't have students yet — useful for planning, and necessary
+          for surfacing the "No JC students yet" empty state in localhost
+          before any JC students have onboarded.
+          ═══════════════════════════════════════════════════════════════════ */}
+      <div
+        className={`flex flex-wrap items-center gap-3 px-4 py-3 rounded-xl ${CARD_STYLE_DARK_CLASS}`}
+        style={CARD_STYLE}
+      >
+        <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 dark:text-zinc-400">Cohort filter</span>
+        {/* Curriculum toggle — always visible */}
+        <div className="flex items-center gap-0.5 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-0.5">
+          {(['all', 'junior', 'senior'] as const).map(lvl => (
+            <button
+              key={lvl}
+              onClick={() => handleCurriculumChange(lvl)}
+              className={`px-2.5 py-1 rounded-md text-[11px] font-bold transition-all ${
+                curriculumFilter === lvl
+                  ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
+                  : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200'
+              }`}
+            >
+              {lvl === 'all' ? 'All' : lvl === 'junior' ? 'Junior Cycle' : 'Senior Cycle'}
+            </button>
+          ))}
+        </div>
+        {/* Year-group select — scoped by the active curriculum toggle so
+            the JC view never offers 5th/6th and the senior view never
+            offers 1st/2nd/3rd. TY rides senior content per Phase 1, so
+            it appears under Senior Cycle. */}
+        {(() => {
+          const yearOptions: readonly YearGroup[] =
+            curriculumFilter === 'junior' ? ['1st', '2nd', '3rd'] as const
+            : curriculumFilter === 'senior' ? ['TY', '5th', '6th'] as const
+            : ['1st', '2nd', '3rd', 'TY', '5th', '6th'] as const;
+          return (
+            <select
+              value={yearGroupFilter}
+              onChange={e => setYearGroupFilter(e.target.value as YearGroupFilter)}
+              className="px-2 py-1 rounded-md text-[11px] font-bold bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 border-0"
+            >
+              <option value="all">All years</option>
+              {yearOptions.map(yg => (
+                <option key={yg} value={yg}>
+                  {yg === 'TY' ? 'TY' : `${yg} Year`}
+                  {availableYearGroups.includes(yg) ? '' : ' (none yet)'}
+                </option>
+              ))}
+            </select>
+          );
+        })()}
+          {/* Filtered count + breakdown — auto-pushed to the right */}
+          <div className="ml-auto flex items-center gap-2">
+            {cohortScopeLabel && (
+              <span className="text-[11px] font-semibold text-zinc-700 dark:text-zinc-300">
+                Showing: {cohortScopeLabel}
+              </span>
+            )}
+            <span className="text-[11px] text-zinc-500 dark:text-zinc-400">
+              {filtered.length === cohortCurriculumCounts.total
+                ? `${cohortCurriculumCounts.total} students`
+                : `${filtered.length} of ${cohortCurriculumCounts.total}`}
+              {cohortCurriculumCounts.junior > 0 && cohortCurriculumCounts.senior > 0 && curriculumFilter === 'all' && (
+                <span className="text-zinc-400 dark:text-zinc-500 ml-1">
+                  · {cohortCurriculumCounts.junior} JC · {cohortCurriculumCounts.senior} senior
+                </span>
+              )}
+            </span>
+            {(curriculumFilter !== 'all' || yearGroupFilter !== 'all') && (
+              <button
+                onClick={() => { setCurriculumFilter('all'); setYearGroupFilter('all'); }}
+                className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 underline"
+              >
+                Reset
+              </button>
+            )}
+          </div>
+      </div>
+
       {/* Broadcast Modal */}
       <AnimatePresence>
         {showBroadcastModal && (
@@ -1217,59 +1302,8 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
               Export CSV
             </button>
           </div>
-          {/* Cohort filters (Phase 6 JC support) — curriculum is the primary
-              (broader) cut; year-group is secondary and populated from the
-              actual cohort scoped by the curriculum filter. Only shown
-              when there's a mixed cohort, or at least 2 distinct year
-              groups present — for a single-curriculum school these would
-              be visual noise. */}
-          {(cohortCurriculumCounts.junior > 0 && cohortCurriculumCounts.senior > 0 || availableYearGroups.length > 1) && (
-            <div className="flex flex-wrap items-center gap-3 mb-3 text-xs">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Cohort:</span>
-              {/* Curriculum filter — only show if mixed cohort */}
-              {cohortCurriculumCounts.junior > 0 && cohortCurriculumCounts.senior > 0 && (
-                <div className="flex items-center gap-0.5 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-0.5">
-                  {(['all', 'junior', 'senior'] as const).map(lvl => (
-                    <button
-                      key={lvl}
-                      onClick={() => handleCurriculumChange(lvl)}
-                      className={`px-2.5 py-1 rounded-md text-[11px] font-bold transition-all ${
-                        curriculumFilter === lvl
-                          ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
-                          : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200'
-                      }`}
-                    >
-                      {lvl === 'all' ? 'All' : lvl === 'junior' ? 'Junior Cycle' : 'Senior Cycle'}
-                    </button>
-                  ))}
-                </div>
-              )}
-              {/* Year-group dropdown — dynamic from cohort */}
-              {availableYearGroups.length > 1 && (
-                <select
-                  value={yearGroupFilter}
-                  onChange={e => setYearGroupFilter(e.target.value as YearGroupFilter)}
-                  className="px-2 py-1 rounded-md text-[11px] font-bold bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 border-0"
-                >
-                  <option value="all">All years</option>
-                  {availableYearGroups.map(yg => (
-                    <option key={yg} value={yg}>{yg === 'TY' ? 'TY' : `${yg} Year`}</option>
-                  ))}
-                </select>
-              )}
-              {/* Filtered count vs total — gives the GC a sense of scope */}
-              <span className="text-[11px] text-zinc-500 dark:text-zinc-400">
-                {filtered.length === cohortCurriculumCounts.total
-                  ? `${cohortCurriculumCounts.total} students`
-                  : `${filtered.length} of ${cohortCurriculumCounts.total}`}
-                {cohortCurriculumCounts.junior > 0 && cohortCurriculumCounts.senior > 0 && curriculumFilter === 'all' && (
-                  <span className="text-zinc-400 dark:text-zinc-500 ml-1">
-                    · {cohortCurriculumCounts.junior} JC · {cohortCurriculumCounts.senior} senior
-                  </span>
-                )}
-              </span>
-            </div>
-          )}
+          {/* Cohort filter for this section lives at the top of the
+              dashboard (Row 0.5) so it's discoverable from any panel. */}
 
           {/* Filter pills */}
           <div className="flex flex-wrap gap-1.5">

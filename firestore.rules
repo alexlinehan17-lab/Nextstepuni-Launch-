@@ -28,14 +28,30 @@ service cloud.firestore {
                    && request.resource.data.avatar is string
                    && request.resource.data.avatar.size() <= 100
                    && (!('school' in request.resource.data) || (request.resource.data.school is string && request.resource.data.school.size() <= 50));
+      // Update: self-write with immutability guarantees on role/school +
+      // length validation on name/avatar.
+      //
+      // BUGFIX 2026-05-23: original rule used `resource.data.role/school`
+      // directly. In Firestore CEL, indexed access to a missing map field
+      // THROWS rather than returning null, so any merge update on a doc
+      // that lacked `role` (e.g. fresh student accounts created via
+      // registration) silently failed. Using `.get(field, null)` makes
+      // missing-field access safe.
+      //
+      // BUGFIX 2026-05-23 (round 2): the `name is string` / `avatar is
+      // string` checks ALSO threw when those fields were missing from
+      // the merge result (e.g. a GC user doc seeded manually via Firebase
+      // Console with only role + school). Wrap them in existence checks
+      // so updates only validate name/avatar when those fields are
+      // actually present in the post-write state.
       allow update: if request.auth != null && request.auth.uid == userId
                    && !('isAdmin' in request.resource.data)
-                   && request.resource.data.role == resource.data.role
-                   && request.resource.data.school == resource.data.school
-                   && request.resource.data.name is string
-                   && request.resource.data.name.size() <= 50
-                   && request.resource.data.avatar is string
-                   && request.resource.data.avatar.size() <= 100;
+                   && request.resource.data.get('role', null) == resource.data.get('role', null)
+                   && request.resource.data.get('school', null) == resource.data.get('school', null)
+                   && (!('name' in request.resource.data)
+                       || (request.resource.data.name is string && request.resource.data.name.size() <= 50))
+                   && (!('avatar' in request.resource.data)
+                       || (request.resource.data.avatar is string && request.resource.data.avatar.size() <= 100));
       // Admin can read all user docs + delete students (for AdminDashboard)
       allow read, delete: if request.auth != null
                   && request.auth.token.email == 'admin@nextstep.app';

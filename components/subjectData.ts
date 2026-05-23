@@ -231,7 +231,13 @@ export const DAYS_OF_WEEK = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Frid
 /**
  * Returns CAO points for a given grade, including the +25 Maths bonus for Higher Level H6+.
  */
-export function getPointsForGrade(grade: Grade, isMaths: boolean = false): number {
+export function getPointsForGrade(grade: Grade | undefined | null, isMaths: boolean = false): number {
+  // JC subjects don't carry currentGrade/targetGrade (they use bands), so
+  // call sites that iterate a mixed cohort may pass undefined. Guard here
+  // rather than at every caller. Returns 0 cleanly — calculateCAOPoints +
+  // getStudentCurrentCAO end up giving JC students a CAO total of 0, which
+  // is the correct semantic (no LC points to compute).
+  if (!grade || typeof grade !== 'string') return 0;
   let points = grade.startsWith('H')
     ? (HIGHER_POINTS[grade] ?? 0)
     : (ORDINARY_POINTS[grade] ?? 0);

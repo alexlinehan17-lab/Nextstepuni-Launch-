@@ -23,11 +23,29 @@ function isBuilding(model: string): boolean {
   return model.startsWith('building-') || model.startsWith('unit-') || model === 'bridge.glb';
 }
 
+// JC NorthStar categories (added Phase 5) don't yet have dedicated
+// STARTER_PACKS entries — the island shop content was built for the 6
+// senior categories and a JC-specific design pass is still pending.
+// Map each JC category to its closest senior equivalent so onboarding
+// doesn't crash for JC students. The category field on the saved island
+// state preserves the user's actual JC choice — only the starter
+// placements come from the senior equivalent.
+const JC_TO_SENIOR_PACK_ALIAS: Partial<Record<NorthStarCategory, NorthStarCategory>> = {
+  'family-people':     'family-community',
+  'prove-myself-jc':   'prove-myself',
+  'curiosity-craft':   'career-craft',
+  'future-doors':      'options-freedom',
+};
+
 export function createStarterState(category: NorthStarCategory): IslandState {
-  const pack = STARTER_PACKS[category];
+  // Look up the pack via alias for JC categories; senior categories
+  // resolve directly. Fall back to 'independence' as an absolute last
+  // resort so a missing pack never crashes onboarding again.
+  const aliasedCategory = JC_TO_SENIOR_PACK_ALIAS[category] ?? category;
+  const pack = STARTER_PACKS[aliasedCategory] ?? STARTER_PACKS['independence'];
   const now = new Date().toISOString();
   return {
-    category,
+    category, // keep the original JC category — used by island UI for theming
     placements: pack.placements.map(p => ({ ...p, purchasedAt: now })),
     totalSpent: 0,
     purchaseHistory: [],
