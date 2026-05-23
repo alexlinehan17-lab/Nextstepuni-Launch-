@@ -76,17 +76,21 @@ interface GCStudentDetailProps {
   gcFlags?: GCFlagsAPI;
 }
 
-const INNOVATION_TOOLS = [
-  { id: 'journey', title: 'Academic Journey Simulator' },
-  { id: 'cao-simulator', title: 'CAO Points Simulator' },
-  { id: 'flashcards', title: 'Flashcard Studio' },
-  { id: 'planner', title: 'Spaced Repetition Timetable' },
-  { id: 'war-room', title: 'War Room' },
-  { id: 'comeback', title: 'Comeback Engine' },
-  { id: 'future-finder', title: 'Future Finder' },
-  { id: 'learning-dna', title: 'Learning DNA' },
-  { id: 'first-gen-intel', title: 'First Gen Intel' },
-  { id: 'syllabus-xray', title: 'Syllabus X-Ray' },
+// Recommendable IZ tools, tagged by curriculum so the recommend-tool modal
+// can hide senior-only tools when the recommended student is JC. 'both' =
+// tool works for both curricula (Spaced Rep Timetable, Comeback Engine,
+// Future Finder/Subject Explorer per Phase 2 builds).
+const INNOVATION_TOOLS: { id: string; title: string; jcTitle?: string; curriculum: 'junior' | 'senior' | 'both' }[] = [
+  { id: 'journey',          title: 'Academic Journey Simulator', curriculum: 'senior' },
+  { id: 'cao-simulator',    title: 'CAO Points Simulator',       curriculum: 'senior' },
+  { id: 'flashcards',       title: 'Flashcard Studio',           curriculum: 'both' },
+  { id: 'planner',          title: 'Spaced Repetition Timetable', curriculum: 'both' },
+  { id: 'war-room',         title: 'War Room',                   curriculum: 'senior' },
+  { id: 'comeback',         title: 'Comeback Engine',            curriculum: 'both' },
+  { id: 'future-finder',    title: 'Future Finder', jcTitle: 'Subject Explorer', curriculum: 'both' },
+  { id: 'learning-dna',     title: 'Learning DNA',               curriculum: 'both' },
+  { id: 'first-gen-intel',  title: 'First Gen Intel',            curriculum: 'senior' },
+  { id: 'syllabus-xray',    title: 'Syllabus X-Ray',             curriculum: 'senior' },
 ];
 
 export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCourses, onBack, school, isTrayMode, onNoteSaved, alerts = [], gcName, gcFlags }) => {
@@ -105,6 +109,14 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   const status = getStudentStatus(student, allCourses);
   const statusReasons = getStatusReasons(student, allCourses);
   const supportReasons = statusReasons;
+
+  // ─── Curriculum branch (Phase 6) ────────────────────────────────────────
+  // For JC students we hide CAO-based sections (CAO Current/Target cards,
+  // CAO bar, points-gain column, CAO Simulator recommendations) and surface
+  // the band-based subject profile instead. The student.curriculumLevel is
+  // populated by Phase 1 plumbing; we fall back to deriving from yearGroup.
+  const isJunior = student.curriculumLevel === 'junior'
+    || (student.yearGroup === '1st' || student.yearGroup === '2nd' || student.yearGroup === '3rd');
 
   const STATUS_ICONS: Record<StudentStatus, React.ElementType> = {
     'new': UserPlus, 'at-risk': AlertTriangle, 'drifting': TrendingDown,
@@ -312,21 +324,55 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
               <p className="text-[10px] font-medium text-zinc-500">Progress</p>
             </div>
           </div>
-          {/* Current CAO */}
-          <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-            <p className="text-xl font-bold text-zinc-900 dark:text-white">{student.subjectProfile ? currentCAO : '\u2014'}</p>
-            <p className="text-[10px] font-medium text-zinc-500">Current CAO</p>
-          </div>
-          {/* Target CAO */}
-          <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-            <p className="text-xl font-bold text-zinc-900 dark:text-white">{student.subjectProfile ? targetCAO : '\u2014'}</p>
-            <p className="text-[10px] font-medium text-zinc-500">Target CAO</p>
-          </div>
-          {/* Days to exam */}
-          <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-            <p className="text-xl font-bold text-zinc-900 dark:text-white">{daysUntilLC}</p>
-            <p className="text-[10px] font-medium text-zinc-500">Days to Exam</p>
-          </div>
+          {/* Curriculum-aware tiles (Phase 6). Senior: Current CAO, Target
+              CAO, Days to LC. Junior: Subjects covered, At Merit+, Target
+              Merit+. The Days-to-Exam tile is senior-only \u2014 JC users either
+              have no imminent exam (1st/2nd year) or a Junior Cert date
+              that would need its own getDaysUntilJC helper; for Phase 6 we
+              just drop the tile for JC. */}
+          {!isJunior && (
+            <>
+              <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
+                <p className="text-xl font-bold text-zinc-900 dark:text-white">{student.subjectProfile ? currentCAO : '\u2014'}</p>
+                <p className="text-[10px] font-medium text-zinc-500">Current CAO</p>
+              </div>
+              <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
+                <p className="text-xl font-bold text-zinc-900 dark:text-white">{student.subjectProfile ? targetCAO : '\u2014'}</p>
+                <p className="text-[10px] font-medium text-zinc-500">Target CAO</p>
+              </div>
+              <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
+                <p className="text-xl font-bold text-zinc-900 dark:text-white">{daysUntilLC}</p>
+                <p className="text-[10px] font-medium text-zinc-500">Days to Exam</p>
+              </div>
+            </>
+          )}
+          {isJunior && (() => {
+            const subjectsCovered = student.subjectProfile?.subjects.length ?? 0;
+            const atMerit = (student.subjectProfile?.subjects ?? []).filter(s => {
+              const b = s.currentBand;
+              return b === 'Distinction' || b === 'Higher Merit' || b === 'Merit';
+            }).length;
+            const targetMerit = (student.subjectProfile?.subjects ?? []).filter(s => {
+              const b = s.targetBand;
+              return b === 'Distinction' || b === 'Higher Merit' || b === 'Merit';
+            }).length;
+            return (
+              <>
+                <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
+                  <p className="text-xl font-bold text-zinc-900 dark:text-white">{subjectsCovered || '\u2014'}</p>
+                  <p className="text-[10px] font-medium text-zinc-500">Subjects</p>
+                </div>
+                <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
+                  <p className="text-xl font-bold text-zinc-900 dark:text-white">{subjectsCovered ? `${atMerit}/${subjectsCovered}` : '\u2014'}</p>
+                  <p className="text-[10px] font-medium text-zinc-500">At Merit+</p>
+                </div>
+                <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
+                  <p className="text-xl font-bold text-zinc-900 dark:text-white">{subjectsCovered ? `${targetMerit}/${subjectsCovered}` : '\u2014'}</p>
+                  <p className="text-[10px] font-medium text-zinc-500">Target Merit+</p>
+                </div>
+              </>
+            );
+          })()}
         </div>
 
         {/* Status explainer for at-risk / drifting */}
@@ -396,33 +442,41 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
       <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6">
         <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">Subject Profile</h3>
 
-        {/* CAO bar */}
-        <div className="mb-5">
-          <div className="flex justify-between text-xs text-zinc-500 dark:text-zinc-400 mb-1">
-            <span>Current: {currentCAO} pts</span>
-            <span>Target: {targetCAO} pts</span>
-          </div>
-          <div className="relative w-full h-5 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden">
-            <MotionDiv
-              className="absolute inset-y-0 left-0 bg-[var(--accent-hex)] rounded-full"
-              initial={{ width: 0 }}
-              animate={{ width: `${currentPct}%` }}
-              transition={{ duration: 0.6, ease: 'easeOut' }}
-            />
-            {targetPct > currentPct && (
-              <div
-                className="absolute inset-y-0 border-2 border-dashed border-[rgba(var(--accent),0.5)] rounded-full"
-                style={{ left: `${currentPct}%`, width: `${targetPct - currentPct}%` }}
+        {/* CAO bar — senior only (JC has no points concept). For JC the
+            band-by-band breakdown in the table below carries the same
+            information without a single "total" number to anchor to. */}
+        {!isJunior && (
+          <div className="mb-5">
+            <div className="flex justify-between text-xs text-zinc-500 dark:text-zinc-400 mb-1">
+              <span>Current: {currentCAO} pts</span>
+              <span>Target: {targetCAO} pts</span>
+            </div>
+            <div className="relative w-full h-5 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden">
+              <MotionDiv
+                className="absolute inset-y-0 left-0 bg-[var(--accent-hex)] rounded-full"
+                initial={{ width: 0 }}
+                animate={{ width: `${currentPct}%` }}
+                transition={{ duration: 0.6, ease: 'easeOut' }}
               />
-            )}
+              {targetPct > currentPct && (
+                <div
+                  className="absolute inset-y-0 border-2 border-dashed border-[rgba(var(--accent),0.5)] rounded-full"
+                  style={{ left: `${currentPct}%`, width: `${targetPct - currentPct}%` }}
+                />
+              )}
+            </div>
+            <div className="flex justify-between text-[10px] text-zinc-400 mt-1">
+              <span>0</span>
+              <span>625</span>
+            </div>
           </div>
-          <div className="flex justify-between text-[10px] text-zinc-400 mt-1">
-            <span>0</span>
-            <span>625</span>
-          </div>
-        </div>
+        )}
 
-        {/* Subject table */}
+        {/* Subject table — Phase 6 makes the rightmost column curriculum-
+            aware. Senior: HL/OL · current grade · target grade · Pts Gain.
+            Junior: Common (or HL/OL for English/Irish/Maths) · current
+            band · target band · Bands Gained. Level chip is shown for both
+            but defaults to "Common" for JC subjects without a level choice. */}
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
@@ -431,39 +485,63 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                 <th className="text-center py-2.5 px-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Level</th>
                 <th className="text-center py-2.5 px-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Current</th>
                 <th className="text-center py-2.5 px-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Target</th>
-                <th className="text-center py-2.5 px-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Pts Gain</th>
+                <th className="text-center py-2.5 px-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">{isJunior ? 'Bands Gained' : 'Pts Gain'}</th>
               </tr>
             </thead>
             <tbody>
               {student.subjectProfile.subjects.map((sub, idx) => {
+                // Senior path
                 const isMaths = LC_SUBJECTS.find(lc => lc.name === sub.subjectName)?.isMaths ?? false;
-                const currentPts = getPointsForGrade(sub.currentGrade, isMaths);
-                const targetPts = getPointsForGrade(sub.targetGrade, isMaths);
+                const currentPts = sub.currentGrade ? getPointsForGrade(sub.currentGrade, isMaths) : 0;
+                const targetPts = sub.targetGrade ? getPointsForGrade(sub.targetGrade, isMaths) : 0;
                 const gain = targetPts - currentPts;
+                // JC path
+                const jcBands = ['Distinction', 'Higher Merit', 'Merit', 'Achieved', 'Partially Achieved', 'Not Graded'];
+                const currentBandIdx = sub.currentBand ? jcBands.indexOf(sub.currentBand) : -1;
+                const targetBandIdx = sub.targetBand ? jcBands.indexOf(sub.targetBand) : -1;
+                // Bands-gained = how many bands lower the target is from current
+                // (positive = improvement, since lower index = better band)
+                const bandsGained = (currentBandIdx >= 0 && targetBandIdx >= 0)
+                  ? currentBandIdx - targetBandIdx
+                  : 0;
+                const levelLabel = sub.level === 'higher' ? 'HL' : sub.level === 'ordinary' ? 'OL' : 'Common';
+                const levelClass = sub.level === 'higher'
+                  ? 'bg-blue-50 text-blue-700 dark:bg-blue-900/20 dark:text-blue-400'
+                  : sub.level === 'ordinary'
+                  ? 'bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400'
+                  : 'bg-zinc-50 text-zinc-500 dark:bg-zinc-800/50 dark:text-zinc-500';
                 return (
                   <tr key={sub.subjectName} className={`border-b border-zinc-100 dark:border-zinc-800/50 ${idx % 2 === 1 ? 'bg-zinc-50/50 dark:bg-zinc-800/10' : ''}`}>
                     <td className="py-2.5 px-3 text-zinc-800 dark:text-white font-medium">{sub.subjectName}</td>
                     <td className="py-2.5 px-3 text-center">
-                      <span className={`inline-flex px-2 py-0.5 rounded-md text-[10px] font-bold uppercase ${
-                        sub.level === 'higher'
-                          ? 'bg-blue-50 text-blue-700 dark:bg-blue-900/20 dark:text-blue-400'
-                          : 'bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400'
-                      }`}>
-                        {sub.level === 'higher' ? 'HL' : 'OL'}
+                      <span className={`inline-flex px-2 py-0.5 rounded-md text-[10px] font-bold uppercase ${levelClass}`}>
+                        {levelLabel}
                       </span>
                     </td>
-                    <td className="py-2.5 px-3 text-center text-zinc-600 dark:text-zinc-300">{sub.currentGrade}</td>
-                    <td className="py-2.5 px-3 text-center text-zinc-600 dark:text-zinc-300">{sub.targetGrade}</td>
+                    <td className="py-2.5 px-3 text-center text-zinc-600 dark:text-zinc-300">{isJunior ? (sub.currentBand ?? '—') : (sub.currentGrade ?? '—')}</td>
+                    <td className="py-2.5 px-3 text-center text-zinc-600 dark:text-zinc-300">{isJunior ? (sub.targetBand ?? '—') : (sub.targetGrade ?? '—')}</td>
                     <td className="py-2.5 px-3 text-center">
-                      <span className={`inline-flex px-2 py-0.5 rounded-md text-xs font-semibold ${
-                        gain > 0
-                          ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-900/20 dark:text-emerald-400'
-                          : gain < 0
-                          ? 'bg-rose-50 text-rose-700 dark:bg-rose-900/20 dark:text-rose-400'
-                          : 'text-zinc-400'
-                      }`}>
-                        {gain > 0 ? `+${gain}` : gain === 0 ? '0' : gain}
-                      </span>
+                      {isJunior ? (
+                        <span className={`inline-flex px-2 py-0.5 rounded-md text-xs font-semibold ${
+                          bandsGained > 0
+                            ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-900/20 dark:text-emerald-400'
+                            : bandsGained < 0
+                            ? 'bg-rose-50 text-rose-700 dark:bg-rose-900/20 dark:text-rose-400'
+                            : 'text-zinc-400'
+                        }`}>
+                          {bandsGained > 0 ? `+${bandsGained}` : bandsGained}
+                        </span>
+                      ) : (
+                        <span className={`inline-flex px-2 py-0.5 rounded-md text-xs font-semibold ${
+                          gain > 0
+                            ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-900/20 dark:text-emerald-400'
+                            : gain < 0
+                            ? 'bg-rose-50 text-rose-700 dark:bg-rose-900/20 dark:text-rose-400'
+                            : 'text-zinc-400'
+                        }`}>
+                          {gain > 0 ? `+${gain}` : gain === 0 ? '0' : gain}
+                        </span>
+                      )}
                     </td>
                   </tr>
                 );
@@ -904,7 +982,10 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   const handleSendRecommendation = async () => {
     if (!recommendToolId) return;
     setIsSendingAction(true);
-    const toolName = INNOVATION_TOOLS.find(t => t.id === recommendToolId)?.title || recommendToolId;
+    const toolDef = INNOVATION_TOOLS.find(t => t.id === recommendToolId);
+    const toolName = toolDef
+      ? (isJunior && toolDef.jcTitle ? toolDef.jcTitle : toolDef.title)
+      : recommendToolId;
     await addNotification(student.user.uid, {
       type: 'gc-recommendation',
       title: `Tool Recommended: ${toolName}`,
@@ -976,13 +1057,17 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                 </div>
               </div>
               <div className="space-y-3 max-h-48 overflow-y-auto mb-3">
-                {INNOVATION_TOOLS.map(tool => (
+                {/* Filter to tools available to this student's curriculum so
+                    a GC can't recommend a senior-only tool to a JC student. */}
+                {INNOVATION_TOOLS
+                  .filter(t => t.curriculum === 'both' || t.curriculum === (isJunior ? 'junior' : 'senior'))
+                  .map(tool => (
                   <button
                     key={tool.id}
                     onClick={() => setRecommendToolId(tool.id)}
                     className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${recommendToolId === tool.id ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 font-medium' : 'hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-300'}`}
                   >
-                    {tool.title}
+                    {isJunior && tool.jcTitle ? tool.jcTitle : tool.title}
                   </button>
                 ))}
               </div>

@@ -12,16 +12,42 @@ import { doc, getDoc, setDoc } from 'firebase/firestore';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
+// Year-group targeting (Phase 1 was '5th' | '6th' | 'both'; Phase 6 extends
+// to the JC years + TY). 'both' = both senior years (legacy semantics);
+// 'all' = everyone regardless of year. Keep 'both' as-is to avoid migrating
+// existing Firestore docs.
+export type EventYearGroup =
+  | '1st' | '2nd' | '3rd'
+  | 'TY'
+  | '5th' | '6th'
+  | 'both'         // legacy: senior cycle (5th + 6th)
+  | 'all';         // everyone
+
 export interface SchoolEvent {
   id: string;
   title: string;
   date: string;        // ISO "YYYY-MM-DD"
-  yearGroup: '5th' | '6th' | 'both';
+  yearGroup: EventYearGroup;
   category: EventCategory;
   createdAt: string;
 }
 
 type EventCategory = 'exams' | 'deadlines' | 'school' | 'other';
+
+// Curriculum tag on a preset — drives context-aware filtering in the
+// "Add Event" dropdown. 'both' means the preset is relevant to both
+// curricula (e.g. Christmas Tests, Parent-Teacher Meeting).
+export type EventCurriculum = 'junior' | 'senior' | 'both';
+
+interface PresetEvent {
+  title: string;
+  category: EventCategory;
+  curriculum: EventCurriculum;
+  // Default yearGroup to pre-fill when the GC picks this preset. Helps
+  // them avoid having to re-pick year manually for events that only apply
+  // to one specific year (Junior Cert → 3rd, LC Starts → 6th).
+  defaultYearGroup: EventYearGroup;
+}
 
 const EVENT_CATEGORIES: { id: EventCategory; label: string; color: string; dotColor: string }[] = [
   { id: 'exams', label: 'Exams', color: 'text-red-600 dark:text-red-400', dotColor: 'bg-red-500' },
@@ -30,38 +56,88 @@ const EVENT_CATEGORIES: { id: EventCategory; label: string; color: string; dotCo
   { id: 'other', label: 'Other', color: 'text-zinc-600 dark:text-zinc-400', dotColor: 'bg-zinc-500' },
 ];
 
-const PRESET_EVENTS: { title: string; category: EventCategory }[] = [
-  { title: 'Mocks Start', category: 'exams' },
-  { title: 'Mocks End', category: 'exams' },
-  { title: 'CAO Application Deadline', category: 'deadlines' },
-  { title: 'CAO Change of Mind Deadline', category: 'deadlines' },
-  { title: 'SUSI Grant Deadline', category: 'deadlines' },
-  { title: 'Leaving Cert Starts', category: 'exams' },
-  { title: 'Leaving Cert Ends', category: 'exams' },
-  { title: 'Parent-Teacher Meeting', category: 'school' },
-  { title: 'Career Talks', category: 'school' },
-  { title: 'College Open Day', category: 'school' },
-  { title: 'Study Week', category: 'school' },
+// Preset events — Phase 6 splits Mocks into JC/LC variants, retags existing
+// senior events explicitly, and adds JC-relevant presets. Universal
+// in-school events (Christmas Tests, Summer Tests, Parent-Teacher Meeting)
+// are tagged 'both'.
+const PRESET_EVENTS: PresetEvent[] = [
+  // Mocks (split per Phase 6 spec — dates differ between JC and LC)
+  { title: 'LC Mocks Start',                  category: 'exams',     curriculum: 'senior', defaultYearGroup: '6th' },
+  { title: 'LC Mocks End',                    category: 'exams',     curriculum: 'senior', defaultYearGroup: '6th' },
+  { title: 'JC Mocks Start',                  category: 'exams',     curriculum: 'junior', defaultYearGroup: '3rd' },
+  { title: 'JC Mocks End',                    category: 'exams',     curriculum: 'junior', defaultYearGroup: '3rd' },
+  // Senior-only — CAO / SUSI / LC
+  { title: 'CAO Application Deadline',        category: 'deadlines', curriculum: 'senior', defaultYearGroup: '6th' },
+  { title: 'CAO Change of Mind Deadline',     category: 'deadlines', curriculum: 'senior', defaultYearGroup: '6th' },
+  { title: 'SUSI Grant Deadline',             category: 'deadlines', curriculum: 'senior', defaultYearGroup: '6th' },
+  { title: 'Leaving Cert Starts',             category: 'exams',     curriculum: 'senior', defaultYearGroup: '6th' },
+  { title: 'Leaving Cert Ends',               category: 'exams',     curriculum: 'senior', defaultYearGroup: '6th' },
+  // JC-only
+  { title: 'Junior Cert Starts',              category: 'exams',     curriculum: 'junior', defaultYearGroup: '3rd' },
+  { title: 'Junior Cert Ends',                category: 'exams',     curriculum: 'junior', defaultYearGroup: '3rd' },
+  { title: 'Junior Cert Results Day',         category: 'school',    curriculum: 'junior', defaultYearGroup: '3rd' },
+  { title: 'LC Subject Choice Deadline',      category: 'deadlines', curriculum: 'junior', defaultYearGroup: '3rd' },
+  // TY-specific (lives under senior since TY rides senior content per Phase 1)
+  { title: 'TY Mini-Company Final',           category: 'school',    curriculum: 'senior', defaultYearGroup: 'TY' },
+  { title: 'TY Work Experience',              category: 'school',    curriculum: 'senior', defaultYearGroup: 'TY' },
+  // Universal — applies to both curricula
+  { title: 'Christmas Tests',                 category: 'exams',     curriculum: 'both',   defaultYearGroup: 'all' },
+  { title: 'Summer Tests',                    category: 'exams',     curriculum: 'both',   defaultYearGroup: 'all' },
+  { title: 'Parent-Teacher Meeting',          category: 'school',    curriculum: 'both',   defaultYearGroup: 'all' },
+  { title: 'Career Talks',                    category: 'school',    curriculum: 'both',   defaultYearGroup: 'all' },
+  { title: 'College Open Day',                category: 'school',    curriculum: 'senior', defaultYearGroup: '6th' },
+  { title: 'Study Week',                      category: 'school',    curriculum: 'both',   defaultYearGroup: 'all' },
 ];
 
 // ─── Firestore path: gcEvents/{school} → { events: SchoolEvent[] } ──────────
 
 interface GCKeyEventsProps {
   school: string;
+  /** Per-student context for preset filtering. When the GC opens this
+   *  component from within a student detail view, pass the student's
+   *  curriculum + year so the "Quick Add" presets only show those
+   *  relevant to that student. From the school-wide GC dashboard, omit
+   *  this prop — all presets show. */
+  studentContext?: {
+    curriculumLevel?: 'junior' | 'senior';
+    yearGroup?: EventYearGroup;
+  };
 }
 
-export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school }) => {
+export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school, studentContext }) => {
   const [events, setEvents] = useState<SchoolEvent[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [showAddForm, setShowAddForm] = useState(false);
-  const [yearFilter, setYearFilter] = useState<'all' | '5th' | '6th'>('all');
+  // Year-group filter widened to include JC years + TY so a school running
+  // a mixed cohort can scope the events list by any actual year group.
+  const [yearFilter, setYearFilter] = useState<'all' | EventYearGroup>('all');
 
   // Add form state
   const [newTitle, setNewTitle] = useState('');
   const [newDate, setNewDate] = useState('');
-  const [newYearGroup, setNewYearGroup] = useState<'5th' | '6th' | 'both'>('both');
+  const [newYearGroup, setNewYearGroup] = useState<EventYearGroup>('both');
   const [newCategory, setNewCategory] = useState<EventCategory>('school');
   const [showPresets, setShowPresets] = useState(false);
+
+  // Filter presets by context: per-student context → only presets matching
+  // that student's curriculum + (loosely) their year group. School-wide
+  // context (studentContext undefined) → all presets.
+  const visiblePresets = useMemo(() => {
+    if (!studentContext) return PRESET_EVENTS;
+    return PRESET_EVENTS.filter(p => {
+      // Curriculum gate: 'both' presets always show; otherwise must match.
+      if (p.curriculum !== 'both' && p.curriculum !== studentContext.curriculumLevel) {
+        return false;
+      }
+      // Year-group gate (loose): if the student has a known yearGroup and
+      // the preset defaults to a specific year that doesn't match, hide it.
+      // Presets defaulting to 'all' or 'both' always pass.
+      if (studentContext.yearGroup && p.defaultYearGroup !== 'all' && p.defaultYearGroup !== 'both') {
+        if (p.defaultYearGroup !== studentContext.yearGroup) return false;
+      }
+      return true;
+    });
+  }, [studentContext]);
 
   // Load events
   useEffect(() => {
@@ -114,17 +190,25 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school }) => {
     saveEvents(events.filter(e => e.id !== id));
   };
 
-  const handlePresetClick = (preset: { title: string; category: EventCategory }) => {
+  const handlePresetClick = (preset: PresetEvent) => {
     setNewTitle(preset.title);
     setNewCategory(preset.category);
+    setNewYearGroup(preset.defaultYearGroup);
     setShowPresets(false);
   };
 
-  // Filter events
+  // Filter events. Match logic:
+  //   - filter 'all' → show everything
+  //   - filter equal to event.yearGroup → match
+  //   - event tagged 'all' → matches any year filter
+  //   - event tagged 'both' (legacy = senior 5th+6th) → matches 5th, 6th, or 'both' filter
   const filteredEvents = useMemo(() => {
     return events.filter(e => {
       if (yearFilter === 'all') return true;
-      return e.yearGroup === yearFilter || e.yearGroup === 'both';
+      if (e.yearGroup === yearFilter) return true;
+      if (e.yearGroup === 'all') return true;
+      if (e.yearGroup === 'both' && (yearFilter === '5th' || yearFilter === '6th')) return true;
+      return false;
     });
   }, [events, yearFilter]);
 
@@ -173,22 +257,22 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school }) => {
           </span>
         </div>
         <div className="flex items-center gap-2">
-          {/* Year filter */}
-          <div className="flex items-center gap-0.5 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-0.5">
-            {(['all', '5th', '6th'] as const).map(yr => (
-              <button
-                key={yr}
-                onClick={() => setYearFilter(yr)}
-                className={`px-2 py-1 rounded-md text-[10px] font-bold transition-all ${
-                  yearFilter === yr
-                    ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
-                    : 'text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300'
-                }`}
-              >
-                {yr === 'all' ? 'All' : yr + ' Year'}
-              </button>
-            ))}
-          </div>
+          {/* Year filter. JC schools see JC years + TY in the dropdown;
+              the legacy 5th/6th + 'all' remain for senior. Rendered as a
+              select rather than a pill row to fit 6 + 'all' cleanly. */}
+          <select
+            value={yearFilter}
+            onChange={e => setYearFilter(e.target.value as 'all' | EventYearGroup)}
+            className="px-2 py-1 rounded-md text-[10px] font-bold bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 border-0"
+          >
+            <option value="all">All years</option>
+            <option value="1st">1st Year</option>
+            <option value="2nd">2nd Year</option>
+            <option value="3rd">3rd Year</option>
+            <option value="TY">TY</option>
+            <option value="5th">5th Year</option>
+            <option value="6th">6th Year</option>
+          </select>
           {/* Add button */}
           <button
             onClick={() => setShowAddForm(!showAddForm)}
@@ -221,7 +305,12 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school }) => {
                 </button>
                 {showPresets && (
                   <div className="flex flex-wrap gap-1.5 mb-3">
-                    {PRESET_EVENTS.map(preset => {
+                    {visiblePresets.length === 0 && (
+                      <p className="text-[10px] italic text-zinc-400 dark:text-zinc-500">
+                        No quick-add presets match this student's curriculum / year.
+                      </p>
+                    )}
+                    {visiblePresets.map(preset => {
                       const cat = getCategoryConfig(preset.category);
                       return (
                         <button
@@ -255,24 +344,24 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school }) => {
                 />
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                {/* Year group */}
+                {/* Year group — widened to JC years + TY + 'all' for mixed
+                    cohorts. Rendered as a select to fit 8 options cleanly. */}
                 <div>
                   <p className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase mb-1">Year Group</p>
-                  <div className="flex gap-1">
-                    {(['5th', '6th', 'both'] as const).map(yr => (
-                      <button
-                        key={yr}
-                        onClick={() => setNewYearGroup(yr)}
-                        className={`flex-1 py-1.5 rounded-md text-[11px] font-bold border transition-all ${
-                          newYearGroup === yr
-                            ? 'bg-indigo-50 dark:bg-indigo-900/30 border-indigo-400 dark:border-indigo-500 text-indigo-600 dark:text-indigo-400'
-                            : 'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400'
-                        }`}
-                      >
-                        {yr === 'both' ? 'Both' : yr}
-                      </button>
-                    ))}
-                  </div>
+                  <select
+                    value={newYearGroup}
+                    onChange={e => setNewYearGroup(e.target.value as EventYearGroup)}
+                    className="w-full py-1.5 px-2 rounded-md text-[11px] font-bold bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-200"
+                  >
+                    <option value="all">Everyone</option>
+                    <option value="1st">1st Year</option>
+                    <option value="2nd">2nd Year</option>
+                    <option value="3rd">3rd Year</option>
+                    <option value="TY">TY</option>
+                    <option value="5th">5th Year</option>
+                    <option value="6th">6th Year</option>
+                    <option value="both">Both senior years</option>
+                  </select>
                 </div>
                 {/* Category */}
                 <div>
@@ -333,9 +422,9 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school }) => {
                           <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200 truncate">{event.title}</p>
                           <p className="text-[10px] text-zinc-400 dark:text-zinc-500">
                             {formatDate(event.date)}
-                            {event.yearGroup !== 'both' && (
+                            {event.yearGroup !== 'both' && event.yearGroup !== 'all' && (
                               <span className="ml-2 px-1.5 py-0.5 rounded bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 font-bold">
-                                {event.yearGroup} Year
+                                {event.yearGroup === 'TY' ? 'TY' : `${event.yearGroup} Year`}
                               </span>
                             )}
                           </p>
@@ -372,8 +461,8 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school }) => {
                           <p className="text-sm font-medium text-zinc-500 dark:text-zinc-400 truncate line-through">{event.title}</p>
                           <p className="text-[10px] text-zinc-400 dark:text-zinc-500">
                             {formatDate(event.date)}
-                            {event.yearGroup !== 'both' && (
-                              <span className="ml-2 font-bold">{event.yearGroup} Year</span>
+                            {event.yearGroup !== 'both' && event.yearGroup !== 'all' && (
+                              <span className="ml-2 font-bold">{event.yearGroup === 'TY' ? 'TY' : `${event.yearGroup} Year`}</span>
                             )}
                           </p>
                         </div>

@@ -9,7 +9,8 @@ import { MotionDiv } from '../Motion';
 import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2, X, AlertCircle, Eye, Megaphone, FileDown, UserPlus, CheckCircle, MinusCircle, Flag, Sparkles, KeyRound } from 'lucide-react';
 import { type CourseData } from '../Library';
 import { type CategoryType } from '../KnowledgeTree';
-import { getAvatarUrl } from '../../utils/authUtils';
+import { getAvatarUrl, type CurriculumLevel } from '../../utils/authUtils';
+import { type YearGroup } from '../subjectData';
 import { getSchoolName } from '../../schoolData';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
@@ -21,6 +22,9 @@ import {
   getStudentStatus,
   getStudentCurrentCAO,
   getStudentTargetCAO,
+  getStudentSubjectsCovered,
+  getStudentTopBandsCount,
+  getStudentTargetTopBandsCount,
   getDaysUntilLC,
   isActiveThisWeek,
   getProgressDistribution,
@@ -79,6 +83,23 @@ const CATEGORIES: { id: CategoryType; title: string; color: string; dotColor: st
 type SortKey = 'name' | 'progress' | 'cao-current' | 'cao-target' | 'gap' | 'streak';
 type SortDir = 'asc' | 'desc';
 type StatusFilter = 'all' | 'flagged' | 'needs-attention' | StudentStatus;
+type CurriculumFilter = 'all' | 'junior' | 'senior';
+type YearGroupFilter = 'all' | YearGroup;
+
+// Canonical year-group order (Phase 6). Used to sort the dynamic
+// year-group filter options so 1st-year shows before 6th-year regardless
+// of the order they happen to appear in the cohort.
+const YEAR_GROUP_ORDER: readonly YearGroup[] = ['1st', '2nd', '3rd', 'TY', '5th', '6th'];
+
+function yearGroupSortOrder(a: YearGroup, b: YearGroup): number {
+  return YEAR_GROUP_ORDER.indexOf(a) - YEAR_GROUP_ORDER.indexOf(b);
+}
+
+// Junior vs senior split (Phase 1 derivation). Phase 6 uses this client-side
+// only — server-side curriculumLevel is already on the user doc.
+function isJuniorYear(yg: YearGroup | undefined): boolean {
+  return yg === '1st' || yg === '2nd' || yg === '3rd';
+}
 
 // ─── Calendar helpers ────────────────────────────────────────────────────────
 
@@ -153,6 +174,16 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
   const [broadcastMessage, setBroadcastMessage] = useState('');
   const [isBroadcasting, setIsBroadcasting] = useState(false);
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all');
+  // Cohort filters (Phase 6 JC support). curriculumFilter is the primary
+  // (broader) filter; yearGroupFilter is the secondary narrower filter.
+  // Changing curriculumFilter resets yearGroupFilter to 'all' to avoid
+  // stale combinations (e.g. junior + 6th).
+  const [curriculumFilter, setCurriculumFilter] = useState<CurriculumFilter>('all');
+  const [yearGroupFilter, setYearGroupFilter] = useState<YearGroupFilter>('all');
+  const handleCurriculumChange = (next: CurriculumFilter) => {
+    setCurriculumFilter(next);
+    setYearGroupFilter('all');
+  };
   const [sortKey, setSortKey] = useState<SortKey>('name');
   const [sortDir, setSortDir] = useState<SortDir>('asc');
   const [flagPopoverUid, setFlagPopoverUid] = useState<string | null>(null);
@@ -167,12 +198,48 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       student: s,
       progress: getOverallProgress(s.progress, allCourses),
       status: getStudentStatus(s, allCourses),
-      currentCAO: getStudentCurrentCAO(s),
-      targetCAO: getStudentTargetCAO(s),
+      currentCAO: getStudentCurrentCAO(s),  // returns 0 for JC (silent no-op)
+      targetCAO: getStudentTargetCAO(s),    // returns 0 for JC (silent no-op)
+      // JC metrics — non-zero only when the student has currentBand/targetBand
+      subjectsCovered: getStudentSubjectsCovered(s),
+      topBandsCount: getStudentTopBandsCount(s),
+      targetTopBandsCount: getStudentTargetTopBandsCount(s),
       streak: s.streak?.currentStreak ?? 0,
       activeThisWeek: isActiveThisWeek(s),
     }));
   }, [studentData, allCourses]);
+
+  // ─── Cohort breakdown (Phase 6) ─────────────────────────────────────────
+
+  // Counts for the summary header. Curriculum is the server-set value when
+  // present; otherwise we derive client-side from yearGroup.
+  const cohortCurriculumCounts = useMemo(() => {
+    let junior = 0;
+    let senior = 0;
+    let unknown = 0;
+    for (const s of studentData) {
+      const lvl: CurriculumLevel | undefined =
+        s.curriculumLevel ?? (s.yearGroup ? (isJuniorYear(s.yearGroup) ? 'junior' : 'senior') : undefined);
+      if (lvl === 'junior') junior++;
+      else if (lvl === 'senior') senior++;
+      else unknown++;
+    }
+    return { junior, senior, unknown, total: studentData.length };
+  }, [studentData]);
+
+  // Dynamic year-group dropdown: only show year groups actually present in
+  // the cohort, scoped by the active curriculum filter so junior+6th
+  // can never be selectable.
+  const availableYearGroups = useMemo(() => {
+    const groups = new Set<YearGroup>();
+    for (const s of studentData) {
+      const lvl: CurriculumLevel | undefined =
+        s.curriculumLevel ?? (s.yearGroup ? (isJuniorYear(s.yearGroup) ? 'junior' : 'senior') : undefined);
+      if (curriculumFilter !== 'all' && lvl !== curriculumFilter) continue;
+      if (s.yearGroup) groups.add(s.yearGroup);
+    }
+    return Array.from(groups).sort(yearGroupSortOrder);
+  }, [studentData, curriculumFilter]);
 
   const avgProgress = studentStats.length > 0
     ? studentStats.reduce((sum, s) => sum + s.progress, 0) / studentStats.length
@@ -358,6 +425,19 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       const q = searchQuery.toLowerCase();
       result = result.filter(s => s.student.user.name.toLowerCase().includes(q));
     }
+    // Curriculum gate (Phase 6) — applied before status so curriculum is
+    // the broadest cut.
+    if (curriculumFilter !== 'all') {
+      result = result.filter(s => {
+        const lvl: CurriculumLevel | undefined =
+          s.student.curriculumLevel ?? (s.student.yearGroup ? (isJuniorYear(s.student.yearGroup) ? 'junior' : 'senior') : undefined);
+        return lvl === curriculumFilter;
+      });
+    }
+    // Year-group gate (Phase 6)
+    if (yearGroupFilter !== 'all') {
+      result = result.filter(s => s.student.yearGroup === yearGroupFilter);
+    }
     if (statusFilter === 'flagged') {
       result = result.filter(s => gcFlags?.isFlagged(s.student.user.uid));
     } else if (statusFilter === 'needs-attention') {
@@ -391,7 +471,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       return sortDir === 'desc' ? -cmp : cmp;
     });
     return result;
-  }, [studentStats, searchQuery, statusFilter, sortKey, sortDir, gcFlags]);
+  }, [studentStats, searchQuery, statusFilter, curriculumFilter, yearGroupFilter, sortKey, sortDir, gcFlags]);
 
   const handleSort = (key: SortKey) => {
     if (sortKey === key) {
@@ -1104,6 +1184,60 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
               Export CSV
             </button>
           </div>
+          {/* Cohort filters (Phase 6 JC support) — curriculum is the primary
+              (broader) cut; year-group is secondary and populated from the
+              actual cohort scoped by the curriculum filter. Only shown
+              when there's a mixed cohort, or at least 2 distinct year
+              groups present — for a single-curriculum school these would
+              be visual noise. */}
+          {(cohortCurriculumCounts.junior > 0 && cohortCurriculumCounts.senior > 0 || availableYearGroups.length > 1) && (
+            <div className="flex flex-wrap items-center gap-3 mb-3 text-xs">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Cohort:</span>
+              {/* Curriculum filter — only show if mixed cohort */}
+              {cohortCurriculumCounts.junior > 0 && cohortCurriculumCounts.senior > 0 && (
+                <div className="flex items-center gap-0.5 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-0.5">
+                  {(['all', 'junior', 'senior'] as const).map(lvl => (
+                    <button
+                      key={lvl}
+                      onClick={() => handleCurriculumChange(lvl)}
+                      className={`px-2.5 py-1 rounded-md text-[11px] font-bold transition-all ${
+                        curriculumFilter === lvl
+                          ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
+                          : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200'
+                      }`}
+                    >
+                      {lvl === 'all' ? 'All' : lvl === 'junior' ? 'Junior Cycle' : 'Senior Cycle'}
+                    </button>
+                  ))}
+                </div>
+              )}
+              {/* Year-group dropdown — dynamic from cohort */}
+              {availableYearGroups.length > 1 && (
+                <select
+                  value={yearGroupFilter}
+                  onChange={e => setYearGroupFilter(e.target.value as YearGroupFilter)}
+                  className="px-2 py-1 rounded-md text-[11px] font-bold bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 border-0"
+                >
+                  <option value="all">All years</option>
+                  {availableYearGroups.map(yg => (
+                    <option key={yg} value={yg}>{yg === 'TY' ? 'TY' : `${yg} Year`}</option>
+                  ))}
+                </select>
+              )}
+              {/* Filtered count vs total — gives the GC a sense of scope */}
+              <span className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                {filtered.length === cohortCurriculumCounts.total
+                  ? `${cohortCurriculumCounts.total} students`
+                  : `${filtered.length} of ${cohortCurriculumCounts.total}`}
+                {cohortCurriculumCounts.junior > 0 && cohortCurriculumCounts.senior > 0 && curriculumFilter === 'all' && (
+                  <span className="text-zinc-400 dark:text-zinc-500 ml-1">
+                    · {cohortCurriculumCounts.junior} JC · {cohortCurriculumCounts.senior} senior
+                  </span>
+                )}
+              </span>
+            </div>
+          )}
+
           {/* Filter pills */}
           <div className="flex flex-wrap gap-1.5">
             {([
@@ -1171,7 +1305,12 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           )}
         </AnimatePresence>
 
-        {/* Table */}
+        {/* Table \u2014 Phase 6 makes the middle columns curriculum-aware:
+             - senior view: existing CAO Current / Target / Gap
+             - junior view: Subjects covered / At Merit+ / Target Merit+
+             - mixed (curriculumFilter='all') with mixed cohort: drop the
+               curriculum-specific columns entirely; show only universals.
+            Outer columns (Student, Progress, Streak, Status) stay constant. */}
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
@@ -1179,10 +1318,6 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                 {[
                   { key: 'name' as SortKey, label: 'Student' },
                   { key: 'progress' as SortKey, label: 'Progress' },
-                  { key: 'cao-current' as SortKey, label: 'CAO Current' },
-                  { key: 'cao-target' as SortKey, label: 'CAO Target' },
-                  { key: 'gap' as SortKey, label: 'Gap' },
-                  { key: 'streak' as SortKey, label: 'Streak' },
                 ].map(col => (
                   <th
                     key={col.key}
@@ -1192,6 +1327,23 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                     {col.label}{sortIndicator(col.key)}
                   </th>
                 ))}
+                {/* Curriculum-specific column headers */}
+                {curriculumFilter === 'senior' && (
+                  <>
+                    <th onClick={() => handleSort('cao-current')} className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 cursor-pointer hover:text-zinc-700 dark:hover:text-zinc-200 select-none whitespace-nowrap">CAO Current{sortIndicator('cao-current')}</th>
+                    <th onClick={() => handleSort('cao-target')} className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 cursor-pointer hover:text-zinc-700 dark:hover:text-zinc-200 select-none whitespace-nowrap">CAO Target{sortIndicator('cao-target')}</th>
+                    <th onClick={() => handleSort('gap')} className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 cursor-pointer hover:text-zinc-700 dark:hover:text-zinc-200 select-none whitespace-nowrap">Gap{sortIndicator('gap')}</th>
+                  </>
+                )}
+                {curriculumFilter === 'junior' && (
+                  <>
+                    <th className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 whitespace-nowrap">Subjects</th>
+                    <th className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 whitespace-nowrap" title="Subjects with a current band of Merit or above">At Merit+</th>
+                    <th className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 whitespace-nowrap" title="Subjects targeted to reach Merit or above">Target Merit+</th>
+                  </>
+                )}
+                {/* curriculumFilter === 'all' renders no curriculum-specific cols */}
+                <th onClick={() => handleSort('streak')} className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 cursor-pointer hover:text-zinc-700 dark:hover:text-zinc-200 select-none whitespace-nowrap">Streak{sortIndicator('streak')}</th>
                 <th className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 whitespace-nowrap">Status</th>
                 {gcFlags && <th className="px-2 py-3 w-10"></th>}
                 {onDeleteStudent && <th className="px-3 py-3 w-10"></th>}
@@ -1231,11 +1383,22 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                         </div>
                       </div>
                     </td>
-                    <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.student.subjectProfile ? row.currentCAO : '\u2014'}</td>
-                    <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.student.subjectProfile ? row.targetCAO : '\u2014'}</td>
-                    <td className="px-5 py-4 align-middle">
-                      {row.student.subjectProfile ? gapPill(gap) : '\u2014'}
-                    </td>
+                    {curriculumFilter === 'senior' && (
+                      <>
+                        <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.student.subjectProfile ? row.currentCAO : '\u2014'}</td>
+                        <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.student.subjectProfile ? row.targetCAO : '\u2014'}</td>
+                        <td className="px-5 py-4 align-middle">
+                          {row.student.subjectProfile ? gapPill(gap) : '\u2014'}
+                        </td>
+                      </>
+                    )}
+                    {curriculumFilter === 'junior' && (
+                      <>
+                        <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.subjectsCovered || '\u2014'}</td>
+                        <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.subjectsCovered ? `${row.topBandsCount}/${row.subjectsCovered}` : '\u2014'}</td>
+                        <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.subjectsCovered ? `${row.targetTopBandsCount}/${row.subjectsCovered}` : '\u2014'}</td>
+                      </>
+                    )}
                     <td className="px-5 py-4 align-middle">
                       <div className="flex items-center gap-1">
                         <Flame size={14} className={row.streak > 0 ? 'text-orange-500' : 'text-zinc-300 dark:text-zinc-600'} />
@@ -1366,10 +1529,22 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           <div className="text-center py-16">
             <UserX size={32} className="mx-auto text-zinc-300 dark:text-zinc-600 mb-3" />
             <p className="text-zinc-500 dark:text-zinc-400 text-sm font-medium">
-              {studentData.length === 0 ? 'No students have signed up yet.' : 'No students match your filters.'}
+              {studentData.length === 0
+                ? 'No students have signed up yet.'
+                : curriculumFilter === 'junior' && cohortCurriculumCounts.junior === 0
+                  ? 'No Junior Cycle students yet.'
+                  : curriculumFilter === 'senior' && cohortCurriculumCounts.senior === 0
+                    ? 'No Senior Cycle students yet.'
+                    : 'No students match your filters.'}
             </p>
             <p className="text-zinc-400 dark:text-zinc-500 text-xs mt-1">
-              {studentData.length === 0 ? 'Students will appear here once they register.' : 'Try adjusting your search or filter criteria.'}
+              {studentData.length === 0
+                ? 'Students will appear here once they register.'
+                : curriculumFilter === 'junior' && cohortCurriculumCounts.junior === 0
+                  ? 'Junior Cycle support is new — when 1st/2nd/3rd-year students sign up they\'ll appear here.'
+                  : curriculumFilter === 'senior' && cohortCurriculumCounts.senior === 0
+                    ? 'When 5th/6th-year students sign up they\'ll appear here.'
+                    : 'Try adjusting your search or filter criteria.'}
             </p>
           </div>
         )}

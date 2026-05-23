@@ -6,7 +6,7 @@
 import { type CourseData } from '../Library';
 import { type CategoryType } from '../KnowledgeTree';
 import { type UserProgress } from '../../types';
-import { getPointsForGrade, LC_SUBJECTS } from '../subjectData';
+import { getPointsForGrade, LC_SUBJECTS, JC_BANDS, type JCBand } from '../subjectData';
 import { type TimetableCompletions } from '../subjectData';
 import { type GCStudentFullData, type SubjectGapData } from './gcTypes';
 import { getStudentStatus } from '../../utils/studentStatus';
@@ -80,6 +80,45 @@ export function getStudentTargetCAO(student: GCStudentFullData): number {
       level: s.level,
     }))
   );
+}
+
+// ─── JC Metrics (Phase 6 — replace CAO columns for JC students) ─────────────
+//
+// JC students have currentBand / targetBand instead of currentGrade /
+// targetGrade. The senior helpers above silently return 0 for them
+// (HIGHER_POINTS[undefined] ?? 0). These JC-flavoured equivalents
+// surface what's actually meaningful for a JC student's GC view.
+
+const MERIT_INDEX = JC_BANDS.indexOf('Merit'); // 2 — bands ≤ this index are Merit-or-above
+
+/** Count of subjects the JC student has set up. Same shape as senior — just
+ *  reads from the array length. Returns 0 if no profile / no subjects. */
+export function getStudentSubjectsCovered(student: GCStudentFullData): number {
+  return student.subjectProfile?.subjects.length ?? 0;
+}
+
+/** Subjects with a current band of Merit or above (Distinction / Higher
+ *  Merit / Merit). Read as "subjects on track" for the JC dashboard.
+ *  Returns 0 if the student is senior (no currentBand on their subjects)
+ *  or has no profile. */
+export function getStudentTopBandsCount(student: GCStudentFullData): number {
+  if (!student.subjectProfile) return 0;
+  return student.subjectProfile.subjects.filter(s => {
+    if (!s.currentBand) return false;
+    const idx = JC_BANDS.indexOf(s.currentBand as JCBand);
+    return idx >= 0 && idx <= MERIT_INDEX;
+  }).length;
+}
+
+/** Target-side equivalent — subjects the student is *aiming* for Merit
+ *  or above. Useful as a "target ambition" indicator on the GC view. */
+export function getStudentTargetTopBandsCount(student: GCStudentFullData): number {
+  if (!student.subjectProfile) return 0;
+  return student.subjectProfile.subjects.filter(s => {
+    if (!s.targetBand) return false;
+    const idx = JC_BANDS.indexOf(s.targetBand as JCBand);
+    return idx >= 0 && idx <= MERIT_INDEX;
+  }).length;
 }
 
 // ─── Student Status (delegated to utils/studentStatus.ts) ────────────────────
