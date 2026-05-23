@@ -321,9 +321,37 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     return counts;
   }, [studentStats, flaggedCount, needsAttentionCount]);
   const daysUntilLC = getDaysUntilLC();
-  const distribution = getProgressDistribution(studentData, allCourses);
+
+  // Cohort-scoped student list — drives Progress Breakdown + Subject-Level
+  // Gaps + SubjectHealthPanel. Respects the active curriculum + year-group
+  // filters so a GC filtering to "Junior Cycle / 3rd Year" sees panel
+  // breakdowns scoped to that slice.
+  const cohortScopedStudents = useMemo(() => {
+    return studentData.filter(s => {
+      if (curriculumFilter !== 'all') {
+        const lvl: CurriculumLevel | undefined =
+          s.curriculumLevel ?? (s.yearGroup ? (isJuniorYear(s.yearGroup) ? 'junior' : 'senior') : undefined);
+        if (lvl !== curriculumFilter) return false;
+      }
+      if (yearGroupFilter !== 'all' && s.yearGroup !== yearGroupFilter) return false;
+      return true;
+    });
+  }, [studentData, curriculumFilter, yearGroupFilter]);
+
+  const distribution = getProgressDistribution(cohortScopedStudents, allCourses);
   const distributionTotal = Math.max(1, distribution.reduce((a, b) => a + b, 0));
   const distributionMax = Math.max(1, ...distribution);
+
+  // Human-readable label for the active cohort filter — used in panel
+  // headings so the GC can see what scope they're looking at without
+  // jumping back to the filter bar.
+  const cohortScopeLabel = useMemo(() => {
+    const parts: string[] = [];
+    if (curriculumFilter === 'junior') parts.push('Junior Cycle');
+    else if (curriculumFilter === 'senior') parts.push('Senior Cycle');
+    if (yearGroupFilter !== 'all') parts.push(yearGroupFilter === 'TY' ? 'TY' : `${yearGroupFilter} Year`);
+    return parts.join(' · ');
+  }, [curriculumFilter, yearGroupFilter]);
 
   // ─── Category averages ─────────────────────────────────────────────────
 
@@ -528,7 +556,12 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
 
   // ─── Subject Gaps ──────────────────────────────────────────────────────
 
-  const subjectGaps = useMemo(() => getSubjectGaps(studentData), [studentData]);
+  // Uses cohortScopedStudents so the gaps panel narrows when the GC picks
+  // a curriculum + year. For senior-LC students the existing CAO-points
+  // gap math applies; for JC students the same helper returns no gaps
+  // (no currentGrade), so a JC-filtered view will show an empty gaps
+  // panel rather than misleading senior numbers.
+  const subjectGaps = useMemo(() => getSubjectGaps(cohortScopedStudents), [cohortScopedStudents]);
   const topGaps = subjectGaps.slice(0, 8);
   const maxAvgGap = topGaps.length > 0 ? Math.max(...topGaps.map(g => g.avgGap)) : 1;
 
@@ -1077,7 +1110,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
         >
           <div className="flex items-baseline justify-between mb-5">
             <div>
-              <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Distribution</p>
+              <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Distribution{cohortScopeLabel ? ` · ${cohortScopeLabel}` : ''}</p>
               <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5">Progress Breakdown</p>
             </div>
             <span className={`text-xs font-medium ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{distributionTotal} students</span>
@@ -1118,7 +1151,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
             className={CARD_STYLE_DARK_CLASS}
             style={{ ...CARD_STYLE, gridColumn: '1 / -1' }}
           >
-            <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Subject Analysis</p>
+            <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Subject Analysis{cohortScopeLabel ? ` · ${cohortScopeLabel}` : ''}</p>
             <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5 mb-4">Subject-Level Gaps</p>
             <div className="space-y-2.5">
               {topGaps.map((gap, i) => {
@@ -1149,7 +1182,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       {/* ═══════════════════════════════════════════════════════════════════
           Subject Health (full width)
           ═══════════════════════════════════════════════════════════════════ */}
-      <SubjectHealthPanel studentData={studentData} />
+      <SubjectHealthPanel studentData={cohortScopedStudents} />
 
       {/* ═══════════════════════════════════════════════════════════════════
           Student Table — DO NOT CHANGE

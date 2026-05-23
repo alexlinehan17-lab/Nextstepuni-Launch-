@@ -135,13 +135,21 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
               ).catch(err => console.error('Failed to backfill curriculumLevel:', err));
             }
 
+            // Defence-in-depth: if the email is a GC-pattern address but
+            // the user doc lacks role/school (legacy or partially-seeded
+            // accounts), derive them from the email so the GC dashboard
+            // still loads. Doc values still win when present.
+            const email = firebaseUser.email ?? '';
+            const gcMatch = email.match(/^gc-([^@]+)@nextstep\.app$/);
+            const isGCByEmail = gcMatch !== null;
+            const schoolFromEmail = gcMatch ? gcMatch[1] : undefined;
             setUser({
               uid: firebaseUser.uid,
               name: userData.name,
               avatar: userData.avatar || 'Charlie',
               isAdmin: false,
-              role: userData.role,
-              school: userData.school,
+              role: userData.role ?? (isGCByEmail ? 'gc' : undefined),
+              school: userData.school ?? schoolFromEmail,
               yearGroup: userData.yearGroup,
               curriculumLevel,
               needsPasswordChange: userData.needsPasswordChange || false,
@@ -174,7 +182,22 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             // don't sign out — that destroys the session. Use a fallback user,
             // but still check the progress doc for onboarding state.
             const fallbackName = firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Student';
-            setUser({ uid: firebaseUser.uid, name: fallbackName, avatar: 'Charlie', isAdmin: false });
+            // GC fallback: emails of the form gc-{school}@nextstep.app are
+            // counsellor accounts (see LoginPage handleGCLogin). Derive
+            // role + school from the email so AppRouter can route to the
+            // GC dashboard even when the Firestore user doc is missing
+            // (common in localhost / fresh setups before Firestore is seeded).
+            const email = firebaseUser.email ?? '';
+            const gcMatch = email.match(/^gc-([^@]+)@nextstep\.app$/);
+            const isGCByEmail = gcMatch !== null;
+            const schoolFromEmail = gcMatch ? gcMatch[1] : undefined;
+            setUser({
+              uid: firebaseUser.uid,
+              name: fallbackName,
+              avatar: 'Charlie',
+              isAdmin: false,
+              ...(isGCByEmail ? { role: 'gc' as const, school: schoolFromEmail } : {}),
+            });
             if (progressDoc.exists()) {
               const pd = progressDoc.data();
               setLoadedData({
@@ -196,7 +219,20 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         } catch (err) {
           console.error('Error fetching user data:', err);
           const fallbackName = firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Student';
-          setUser({ uid: firebaseUser.uid, name: fallbackName, avatar: 'Charlie', isAdmin: false });
+          // Same GC email-pattern fallback as the no-doc branch above —
+          // keeps GC sign-in functional even when the Firestore fetch
+          // fails (e.g. offline / permissions transient).
+          const email = firebaseUser.email ?? '';
+          const gcMatch = email.match(/^gc-([^@]+)@nextstep\.app$/);
+          const isGCByEmail = gcMatch !== null;
+          const schoolFromEmail = gcMatch ? gcMatch[1] : undefined;
+          setUser({
+            uid: firebaseUser.uid,
+            name: fallbackName,
+            avatar: 'Charlie',
+            isAdmin: false,
+            ...(isGCByEmail ? { role: 'gc' as const, school: schoolFromEmail } : {}),
+          });
           setLoadedData({ ...defaultLoadedData, needsOnboarding: true });
         }
       } else {

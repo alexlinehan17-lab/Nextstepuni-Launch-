@@ -241,6 +241,23 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                   {STATUS_CONFIG[previousStatus].label} &rarr;
                 </span>
               )}
+              {/* Curriculum + year badge — mirror of the full-detail header
+                  badge above; shown here so the tray-mode summary row is
+                  also explicit about curriculum/year. */}
+              {(student.yearGroup || student.curriculumLevel) && (
+                <span
+                  className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider shrink-0"
+                  style={isJunior
+                    ? { backgroundColor: '#EDF2EE', color: '#4A6B4F' }
+                    : { backgroundColor: '#FDEEDF', color: '#8C3A0E' }}
+                  title={isJunior ? 'Junior Cycle student' : 'Senior Cycle student'}
+                >
+                  {isJunior ? 'JC' : 'Senior'}
+                  {student.yearGroup && (
+                    <span className="opacity-70 normal-case">· {student.yearGroup === 'TY' ? 'TY' : `${student.yearGroup}`}</span>
+                  )}
+                </span>
+              )}
             </div>
           </div>
         </div>
@@ -296,6 +313,26 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
               {previousStatus && (
                 <span className="text-xs text-zinc-400 dark:text-zinc-500 shrink-0">
                   {STATUS_CONFIG[previousStatus].label} &rarr;
+                </span>
+              )}
+              {/* Curriculum + year badge (Phase 6). Surfaces the student's
+                  level/year at a glance so the GC knows whether they're
+                  looking at a JC or senior cycle student before they
+                  scroll into the detail cards. */}
+              {(student.yearGroup || student.curriculumLevel) && (
+                <span
+                  className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider shrink-0"
+                  style={isJunior
+                    ? { backgroundColor: '#EDF2EE', color: '#4A6B4F' }
+                    : { backgroundColor: '#FDEEDF', color: '#8C3A0E' }}
+                  title={isJunior ? 'Junior Cycle student' : 'Senior Cycle student'}
+                >
+                  {isJunior ? 'JC' : 'Senior'}
+                  {student.yearGroup && (
+                    <span className="opacity-70 normal-case">
+                      · {student.yearGroup === 'TY' ? 'TY' : `${student.yearGroup} yr`}
+                    </span>
+                  )}
                 </span>
               )}
             </div>
