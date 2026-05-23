@@ -50,10 +50,10 @@ const VISION_ICON_IMG: Record<string, string> = {
   'real-choices': '/icons/north-star/vision/real-choices.png',
   'see-world': '/icons/north-star/vision/see-world.png',
   'freedom-no': '/icons/north-star/vision/freedom-no.png',
-  // ─── JC vision cards (Phase 5) — reuse senior PNGs where concepts match
-  // 1:1. Four JC cards still lack art and fall back to the lucide icon:
-  // jc-really-good, jc-solve-hard, jc-subject-choice, jc-try-new. Bespoke
-  // PNGs needed for those (flagged to designer 2026-05-24).
+  // ─── JC vision cards (Phase 5) ───────────────────────────────────────
+  // 8 reuse senior PNGs where concepts map 1:1; 4 use bespoke JC art
+  // (jc-really-good, jc-solve-hard, jc-subject-choice, jc-try-new) added
+  // 2026-05-24.
   'jc-family-proud': '/icons/north-star/vision/family-proud.png',
   'jc-role-model': '/icons/north-star/vision/role-model.png',
   'jc-giving-back': '/icons/north-star/vision/giving-back.png',
@@ -62,6 +62,10 @@ const VISION_ICON_IMG: Record<string, string> = {
   'jc-results-day': '/icons/north-star/vision/results-day.png',
   'jc-mastering-skill': '/icons/north-star/vision/skilled-trade.png',
   'jc-real-choices': '/icons/north-star/vision/real-choices.png',
+  'jc-really-good': '/icons/north-star/vision/jc-really-good.png',
+  'jc-solve-hard': '/icons/north-star/vision/jc-solve-hard.png',
+  'jc-subject-choice': '/icons/north-star/vision/jc-subject-choice.png',
+  'jc-try-new': '/icons/north-star/vision/jc-try-new.png',
 };
 
 const CATEGORY_BLOBS: Partial<Record<NorthStarCategory, CategoryBlobConfig>> = {
