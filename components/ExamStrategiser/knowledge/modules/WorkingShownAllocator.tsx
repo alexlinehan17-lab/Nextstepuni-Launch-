@@ -39,11 +39,9 @@ import {
   type WorkingStep,
   type WorkingAnswerPath,
 } from '../../../../types/knowledge';
+import { ACCENT, ACCENT_DARK, ACCENT_TINT } from '../../colors';
 
-const TEAL = '#2A7D6F';
-const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#F0FAF8';
 const WARN = '#A8746E';
 
 interface Props {
@@ -185,7 +183,7 @@ const QuestionHeader: React.FC<{ question: WorkingQuestion }> = ({ question }) =
       padding: '20px 24px',
     }}
   >
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 6 }}>
+    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 6 }}>
       Question
     </p>
     <p className="font-serif" style={{ fontSize: 16, fontWeight: 500, color: INK, lineHeight: 1.5, fontStyle: 'italic' }}>
@@ -213,10 +211,10 @@ const Pill: React.FC<{ label: string; value: string }> = ({ label, value }) => (
 
 const PATH_PALETTE: Record<WorkingAnswerPath['id'], { tint: string; ink: string }> = {
   'blank':           { tint: '#F5F4F1', ink: '#9e9186' },
-  'formula-only':    { tint: `${TEAL}15`, ink: TEAL_DARK },
-  'formula-sub':     { tint: `${TEAL}28`, ink: TEAL_DARK },
+  'formula-only':    { tint: `${ACCENT}15`, ink: ACCENT_DARK },
+  'formula-sub':     { tint: `${ACCENT}28`, ink: ACCENT_DARK },
   'full-with-slip':  { tint: `${WARN}26`, ink: WARN },
-  'full-correct':    { tint: `${TEAL}45`, ink: TEAL_DARK },
+  'full-correct':    { tint: `${ACCENT}45`, ink: ACCENT_DARK },
 };
 
 const PathPicker: React.FC<{
@@ -232,7 +230,7 @@ const PathPicker: React.FC<{
       padding: '18px 22px',
     }}
   >
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 10 }}>
+    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 10 }}>
       Rewind to a path
     </p>
     <div className="grid sm:grid-cols-5 gap-2">
@@ -299,7 +297,7 @@ const Scaffold: React.FC<{
       }}
     >
       <div className="flex items-baseline justify-between gap-3 mb-4 flex-wrap">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
           Answer scaffold · {path.label}
         </p>
         <ScoreReadout finalScore={path.finalScore} marksAvailable={question.marksAvailable} />
@@ -340,7 +338,7 @@ const BlankAnswerHint: React.FC<{ marksAvailable: number }> = ({ marksAvailable 
   <div
     className="rounded-xl"
     style={{
-      backgroundColor: CREAM,
+      backgroundColor: ACCENT_TINT,
       border: `1.5px dashed ${INK}`,
       padding: '32px 24px',
       textAlign: 'center',
@@ -381,7 +379,7 @@ const ScaffoldRow: React.FC<{
       transition={{ duration: 0.35, ease: 'easeOut', delay: idx * 0.08 }}
       className="rounded-xl relative"
       style={{
-        backgroundColor: hasPenalty ? `${WARN}10` : `${TEAL}08`,
+        backgroundColor: hasPenalty ? `${WARN}10` : `${ACCENT}08`,
         border: `1.5px solid ${hasPenalty ? WARN : INK}`,
         padding: '14px 16px 14px 18px',
         display: 'grid',
@@ -394,7 +392,7 @@ const ScaffoldRow: React.FC<{
         <span
           className="font-serif inline-flex items-center justify-center"
           style={{
-            backgroundColor: TEAL,
+            backgroundColor: ACCENT,
             color: '#FFFFFF',
             borderRadius: 999,
             width: 28,
@@ -443,9 +441,9 @@ const ScaffoldRow: React.FC<{
             className="font-sans inline-flex items-center gap-1 mt-3"
             style={{
               fontSize: 11,
-              color: whatIfActive ? TEAL_DARK : '#78716C',
-              backgroundColor: whatIfActive ? `${TEAL}15` : 'transparent',
-              border: `1px dashed ${whatIfActive ? TEAL_DARK : '#d0cdc8'}`,
+              color: whatIfActive ? ACCENT_DARK : '#78716C',
+              backgroundColor: whatIfActive ? `${ACCENT}15` : 'transparent',
+              border: `1px dashed ${whatIfActive ? ACCENT_DARK : '#d0cdc8'}`,
               padding: '4px 10px',
               borderRadius: 999,
               cursor: 'help',
@@ -464,7 +462,7 @@ const ScaffoldRow: React.FC<{
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             className="font-sans"
-            style={{ fontSize: 11.5, color: TEAL_DARK, marginTop: 6, lineHeight: 1.55 }}
+            style={{ fontSize: 11.5, color: ACCENT_DARK, marginTop: 6, lineHeight: 1.55 }}
           >
             Stopping after step {stepNum}: <strong>{runningMarksAfter} / {marksAvailable}</strong> ({Math.round((runningMarksAfter / marksAvailable) * 100)}%).
             Continuing earns more — but every step has its own risk profile.
@@ -483,7 +481,7 @@ const ScaffoldRow: React.FC<{
           style={{
             fontSize: 11,
             fontWeight: 700,
-            color: netDelta < 0 ? WARN : netDelta === 0 ? '#9e9186' : TEAL_DARK,
+            color: netDelta < 0 ? WARN : netDelta === 0 ? '#9e9186' : ACCENT_DARK,
             marginTop: 2,
             whiteSpace: 'nowrap',
           }}
@@ -509,7 +507,7 @@ const Ribbon: React.FC<{
     kind === 'slip' ? `${amount} slip` :
     kind === 'blunder' ? `${amount} blunder` :
     `${amount} misread`;
-  const bg = isPositive ? TEAL : WARN;
+  const bg = isPositive ? ACCENT : WARN;
   return (
     <motion.div
       layout
@@ -521,13 +519,13 @@ const Ribbon: React.FC<{
       style={{
         backgroundColor: bg,
         color: '#FFFFFF',
-        border: `1.5px solid ${isPositive ? TEAL_DARK : '#7A4944'}`,
+        border: `1.5px solid ${isPositive ? ACCENT_DARK : '#7A4944'}`,
         borderRadius: 6,
         padding: '4px 10px',
         fontSize: 11,
         fontWeight: 700,
         whiteSpace: 'nowrap',
-        boxShadow: isPositive ? '2px 2px 0 0 #1a5a4e' : '2px 2px 0 0 #7A4944',
+        boxShadow: isPositive ? '2px 2px 0 0 #B54D14' : '2px 2px 0 0 #7A4944',
       }}
     >
       {label}
@@ -552,12 +550,12 @@ const PathInsight: React.FC<{
     <section
       className="rounded-2xl"
       style={{
-        backgroundColor: '#F0FAF8',
-        border: `1px solid ${TEAL}33`,
+        backgroundColor: ACCENT_TINT,
+        border: `1px solid ${ACCENT}33`,
         padding: '22px 26px',
       }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 8 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 8 }}>
         Path characterisation
       </p>
       <h4 className="font-serif" style={{ fontSize: 18, fontWeight: 600, color: INK, lineHeight: 1.4 }}>
@@ -566,7 +564,7 @@ const PathInsight: React.FC<{
 
       {/* Path-vs-path comparison sparkline */}
       <div className="mt-5">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: TEAL, marginBottom: 8 }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: ACCENT, marginBottom: 8 }}>
           All five paths · {minScore} → {maxScore} marks
         </p>
         <SparklineBars
@@ -611,13 +609,13 @@ const SparklineBars: React.FC<{
               transition={{ duration: 0.45, ease: 'easeOut' }}
               style={{
                 width: '100%',
-                backgroundColor: isActive ? TEAL : '#D6D2CC',
+                backgroundColor: isActive ? ACCENT : '#D6D2CC',
                 borderRadius: 3,
                 minHeight: 2,
               }}
             />
           </div>
-          <span className="font-sans" style={{ fontSize: 10, color: isActive ? TEAL : '#A8A29E', fontWeight: isActive ? 700 : 500, textAlign: 'center', lineHeight: 1.2 }}>
+          <span className="font-sans" style={{ fontSize: 10, color: isActive ? ACCENT : '#A8A29E', fontWeight: isActive ? 700 : 500, textAlign: 'center', lineHeight: 1.2 }}>
             {p.finalScore}/{marksAvailable}
           </span>
         </div>

@@ -6,7 +6,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { type CourseData } from './Library';
-import { type SessionUser, getAvatarUrl } from '../utils/authUtils';
+import { type SessionUser, getAvatarUrl, yearGroupToCurriculumLevel } from '../utils/authUtils';
 import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays } from 'lucide-react';
 import app, { db } from '../firebase';
 import { collection, query, where, limit, getDocs, doc, getDoc, deleteDoc, setDoc } from 'firebase/firestore';
@@ -227,6 +227,13 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             const debriefArr = progressDoc?.studyDebriefs as DebriefEntry[] | undefined;
             const recentDebriefs = debriefArr ? debriefArr.slice(-20) : null;
 
+            // Derive year-group / curriculum-level (Phase 1 JC plumbing).
+            // Prefer the user doc (set during onboarding + by AuthContext
+            // migration), fall back to subjectProfile (legacy location).
+            const yearGroup = user.yearGroup ?? subjectProfile?.yearGroup;
+            const curriculumLevel = user.curriculumLevel
+              ?? (yearGroup ? yearGroupToCurriculumLevel(yearGroup) : undefined);
+
             return {
               user,
               progress,
@@ -239,6 +246,8 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
               futureFinder,
               mockResults: wrMocks,
               recentDebriefs,
+              yearGroup,
+              curriculumLevel,
             };
           })
         );
@@ -490,7 +499,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             <button
               onClick={() => setResetResult(null)}
               className="w-full px-4 py-2.5 text-sm font-medium rounded-xl text-white transition-colors"
-              style={{ backgroundColor: '#2A7D6F' }}
+              style={{ backgroundColor: '#F26B1F' }}
             >
               Done
             </button>

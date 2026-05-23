@@ -16,7 +16,7 @@ import {
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
-import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak, getBlockId, toDateKey } from './subjectData';
+import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak, type YearGroup, getBlockId, toDateKey } from './subjectData';
 import { type SchoolEvent } from './gc/GCKeyEvents';
 import { computeStreak, computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, computeWeeksUntilExam } from './timetableAlgorithm';
 import { type StudyReflection, type PointsData, type CosmeticUnlocks, type EarnedRest, type UserSettings } from '../types';
@@ -70,13 +70,13 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'future-finder':   { themeColor: '#C76489', eyebrow: 'Understand · Career discovery', subtitle: 'Discover the courses, careers, and possible lives that fit who you are.',         showHeader: true  },
   'syllabus-xray':   { themeColor: '#2C4B6E', eyebrow: 'Understand · Exam intel',     subtitle: 'See where the marks are hiding in every paper, every section, every question.',   showHeader: true  },
   'points-passport': { themeColor: '#B8A079', eyebrow: 'Track · Tracker',             subtitle: 'Mock trends and grade bargains, all at a glance.',                                  showHeader: true  },
-  'exam-strategiser':{ themeColor: '#2A7D6F', eyebrow: 'Plan · Exam strategy',        subtitle: 'Real exam questions, decoded. Predict before revealing — see the question the way an examiner does.', showHeader: true  },
+  'exam-strategiser':{ themeColor: '#F26B1F', eyebrow: 'Plan · Exam strategy',        subtitle: 'Real exam questions, decoded. Predict before revealing — see the question the way an examiner does.', showHeader: true  },
 };
 
 interface InnovationZoneProps {
   onBack: () => void;
   onSelectModule?: (moduleId: string) => void;
-  user?: { uid: string; school?: string; yearGroup?: '5th' | '6th' } | null;
+  user?: { uid: string; school?: string; yearGroup?: YearGroup; curriculumLevel?: 'junior' | 'senior' } | null;
   savedJourneyResult?: JourneyResult | null;
   onJourneyComplete?: (result: JourneyResult) => void;
   settings: UserSettings;
@@ -397,6 +397,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const tools = [
         {
             id: 'journey', title: 'Academic Journey Simulator', description: 'Navigate the choices of your final school year.', icon: GitBranch, needsProfile: false,
+            curriculum: 'senior' as const,
             tag: 'Simulator', accentHex: '#f59e0b', gridClass: 'md:col-span-3',
             iconBg: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400',
             accentBarColor: 'bg-amber-500', tagBg: 'bg-amber-100 dark:bg-amber-900/30', tagText: 'text-amber-700 dark:text-amber-400',
@@ -405,6 +406,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         },
         {
             id: 'cao-simulator', title: 'CAO Points Simulator', description: 'Explore how grade changes affect your CAO points.', icon: Calculator, needsProfile: true,
+            curriculum: 'senior' as const,
             tag: 'Simulator', accentHex: '#64748b', gridClass: 'md:col-span-3',
             iconBg: 'bg-slate-100 dark:bg-slate-800/40', iconColor: 'text-slate-600 dark:text-slate-300',
             accentBarColor: 'bg-slate-500', tagBg: 'bg-slate-100 dark:bg-slate-800/40', tagText: 'text-slate-600 dark:text-slate-300',
@@ -413,6 +415,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         },
         {
             id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true,
+            curriculum: 'senior' as const,
             tag: 'Planner', accentHex: '#6366f1', gridClass: 'md:col-span-2',
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
@@ -421,6 +424,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         },
         {
             id: 'war-room', title: 'War Room', description: 'Your strategic study command centre.', icon: Target, needsProfile: true,
+            curriculum: 'senior' as const,
             tag: 'Strategy', accentHex: '#dc2626', gridClass: 'md:col-span-2',
             iconBg: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400',
             accentBarColor: 'bg-red-500', tagBg: 'bg-red-100 dark:bg-red-900/30', tagText: 'text-red-700 dark:text-red-400',
@@ -429,6 +433,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         },
         {
             id: 'comeback', title: 'Comeback Engine', description: 'Find your quickest wins and build a comeback plan.', icon: Rocket, needsProfile: true,
+            curriculum: 'senior' as const,
             tag: 'Comeback', accentHex: '#f97316', gridClass: 'md:col-span-2',
             iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400',
             accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
@@ -437,6 +442,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         },
         {
             id: 'future-finder', title: 'Future Finder', description: 'Discover college courses that fit who you are.', icon: Compass, needsProfile: true,
+            curriculum: 'senior' as const,
             tag: 'Career Discovery', accentHex: '#6366f1', gridClass: 'md:col-span-2',
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
@@ -445,6 +451,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         },
         {
             id: 'syllabus-xray', title: 'Syllabus X-Ray', description: 'See where the marks are hiding in your exams.', icon: ScanSearch, needsProfile: false,
+            curriculum: 'senior' as const,
             tag: 'Exam Intel', accentHex: '#e11d48', gridClass: 'md:col-span-2',
             iconBg: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400',
             accentBarColor: 'bg-rose-500', tagBg: 'bg-rose-100 dark:bg-rose-900/30', tagText: 'text-rose-700 dark:text-rose-400',
@@ -453,6 +460,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         },
         {
             id: 'points-passport', title: 'Points Passport', description: 'Mock trends & grade bargains at a glance.', icon: Map, needsProfile: true,
+            curriculum: 'senior' as const,
             tag: 'Tracker', accentHex: '#0ea5e9', gridClass: 'md:col-span-2',
             iconBg: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-600 dark:text-sky-400',
             accentBarColor: 'bg-sky-500', tagBg: 'bg-sky-100 dark:bg-sky-900/30', tagText: 'text-sky-700 dark:text-sky-400',
@@ -461,7 +469,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         },
         {
             id: 'exam-strategiser', title: 'Exam Strategiser', description: 'Real exam questions, decoded line-by-line.', icon: ClipboardList, needsProfile: false,
-            tag: 'Exam Strategy', accentHex: '#2A7D6F', gridClass: 'md:col-span-2',
+            curriculum: 'senior' as const,
+            tag: 'Exam Strategy', accentHex: '#F26B1F', gridClass: 'md:col-span-2',
             iconBg: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400',
             accentBarColor: 'bg-teal-500', tagBg: 'bg-teal-100 dark:bg-teal-900/30', tagText: 'text-teal-700 dark:text-teal-400',
             hoverBorder: 'hover:border-teal-400/50 dark:hover:border-teal-500/40',
@@ -483,9 +492,17 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'exam-strategiser': 'plan',
     };
 
+    // Curriculum gating (Phase 4): JC users only see tools tagged 'both'
+    // or 'junior'. Senior users see everything (incl. tools without a tag).
+    const curriculumLevel = user?.curriculumLevel ?? 'senior';
+    const curriculumVisibleTools = tools.filter(t => {
+      const tag = t.curriculum ?? 'senior';
+      return tag === 'both' || tag === curriculumLevel;
+    });
+
     const filteredTools = activeFilter === 'all'
-        ? tools
-        : tools.filter(t => TOOL_CATEGORIES[t.id] === activeFilter);
+        ? curriculumVisibleTools
+        : curriculumVisibleTools.filter(t => TOOL_CATEGORIES[t.id] === activeFilter);
 
     const currentTool = tools.find(t => t.id === activeTool);
 
@@ -584,8 +601,20 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                         </div>
                     </div>
 
+                    {/* Empty state for JC users when no tools are curriculum-visible.
+                        Phase 4 ships zero JC-visible tools by design — Phase 2 adds
+                        Spaced Repetition + Comeback Engine + Subject Explorer. */}
+                    {filteredTools.length === 0 && curriculumLevel === 'junior' && (
+                      <div className="rounded-2xl p-10 text-center" style={{ backgroundColor: '#FDF8F0', border: '2px solid #1A1A1A' }}>
+                        <p className="font-serif text-xl font-bold mb-2 text-[#1A1A1A]">Tools for Junior Cycle are on the way.</p>
+                        <p className="text-sm text-[#78716C] max-w-md mx-auto">
+                          We're building Junior Cycle versions of our study tools — spaced repetition timetables, comeback plans, and a subject explorer. Check back soon.
+                        </p>
+                      </div>
+                    )}
+
                     {/* Bento card grid */}
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
+                    <div style={{ display: filteredTools.length === 0 ? 'none' : 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
                         {filteredTools.map((tool, i) => {
                             const disabled = (tool.needsProfile && !profileLoaded) || (tool.needsProfile && !subjectProfile);
                             const gcRecommended = gcRecommendations[tool.id];

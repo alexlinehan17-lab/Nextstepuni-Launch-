@@ -12,6 +12,7 @@ import { amberTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { COLORS } from '../design/tokens';
 
 const theme = amberTheme;
 
@@ -236,28 +237,28 @@ const MPMCalculator = () => {
     return (
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <div className="text-center mb-6">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 22, color: '#1a1a1a' }}>Minutes-Per-Mark Calculator</h4>
              </div>
              <div className="grid grid-cols-3 gap-4">
                 <div>
                     <label style={{ fontSize: 14, fontWeight: 600, color: '#1a1a1a' }}>Total Time (mins)</label>
-                    <input type="number" value={time} onChange={e=>setTime(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 16, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
+                    <input type="number" value={time} onChange={e=>setTime(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 16, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
                 </div>
                 <div>
                     <label style={{ fontSize: 14, fontWeight: 600, color: '#1a1a1a' }}>Total Marks</label>
-                    <input type="number" value={marks} onChange={e=>setMarks(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 16, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
+                    <input type="number" value={marks} onChange={e=>setMarks(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 16, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
                 </div>
                 <div>
                     <label style={{ fontSize: 14, fontWeight: 600, color: '#1a1a1a' }}>Buffer (mins)</label>
-                    <input type="number" value={buffer} onChange={e=>setBuffer(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 16, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
+                    <input type="number" value={buffer} onChange={e=>setBuffer(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 16, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
                 </div>
              </div>
-             <div className="mt-6 text-center" style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '20px 24px' }}>
+             <div className="mt-6 text-center" style={{ backgroundColor: COLORS.accentTint, border: `2px solid ${COLORS.accent}`, borderRadius: 14, padding: '20px 24px' }}>
                 <span style={{ fontSize: 16, color: '#1a1a1a' }}>Your MPM is </span>
-                <span className="font-serif font-bold" style={{ fontSize: 22, color: '#2A7D6F' }}>{mpm.toFixed(2)}</span>
+                <span className="font-serif font-bold" style={{ fontSize: 22, color: COLORS.accent }}>{mpm.toFixed(2)}</span>
                 <span style={{ fontSize: 16, color: '#1a1a1a' }}>. A 20-mark question gets </span>
-                <span className="font-serif font-bold" style={{ fontSize: 22, color: '#2A7D6F' }}>{(mpm*20).toFixed(1)}</span>
+                <span className="font-serif font-bold" style={{ fontSize: 22, color: COLORS.accent }}>{(mpm*20).toFixed(1)}</span>
                 <span style={{ fontSize: 16, color: '#1a1a1a' }}> minutes.</span>
              </div>
         </div>
@@ -274,7 +275,7 @@ const BoxBreathingVisualizer = () => {
     const phases = [
       { label: 'Breathe In', color: 'text-cyan-500' },
       { label: 'Hold', color: 'text-sky-400' },
-      { label: 'Breathe Out', color: 'text-teal-500' },
+      { label: 'Breathe Out', color: 'text-[#F26B1F]' },
       { label: 'Hold', color: 'text-sky-400' },
     ];
 
@@ -355,7 +356,7 @@ const BoxBreathingVisualizer = () => {
 
              <div className={`absolute -top-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 0 ? 'text-cyan-500 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Inhale</div>
              <div className={`absolute top-1/2 -right-10 -translate-y-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 1 ? 'text-sky-400 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Hold</div>
-             <div className={`absolute -bottom-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 2 ? 'text-teal-500 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Exhale</div>
+             <div className={`absolute -bottom-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 2 ? 'text-[#F26B1F] opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Exhale</div>
              <div className={`absolute top-1/2 -left-8 -translate-y-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 3 ? 'text-sky-400 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Hold</div>
 
              <div className="absolute inset-0 flex items-center justify-center">
@@ -510,17 +511,17 @@ const DumpSheetBuilder = () => {
     if (phase === 'ready') {
         return (
             <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 22, color: '#1a1a1a' }}>Dump Sheet Drill</h4>
                 <p className="text-sm mt-1 mb-6 max-w-lg mx-auto" style={{ color: '#7a7068' }}>Practice the brain dump that should be your first action in every exam.</p>
                 <div className="flex items-center justify-center gap-3 mb-6 flex-wrap">
-                    <span style={{ backgroundColor: '#e8f5f2', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: '#1a6358' }}>30s to memorise</span>
+                    <span style={{ backgroundColor: COLORS.accentTint, border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: COLORS.accentDarkText }}>30s to memorise</span>
                     <span style={{ color: '#d0cdc8' }}>→</span>
-                    <span style={{ backgroundColor: '#e8f5f2', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: '#1a6358' }}>60s to recall</span>
+                    <span style={{ backgroundColor: COLORS.accentTint, border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: COLORS.accentDarkText }}>60s to recall</span>
                     <span style={{ color: '#d0cdc8' }}>→</span>
-                    <span style={{ backgroundColor: '#e8f5f2', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: '#1a6358' }}>See your score</span>
+                    <span style={{ backgroundColor: COLORS.accentTint, border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: COLORS.accentDarkText }}>See your score</span>
                 </div>
-                <motion.button onClick={startDrill} whileTap={{ y: 3 }} className="text-white font-semibold" style={{ backgroundColor: '#2A7D6F', borderRadius: 100, padding: '13px 28px', fontSize: 15, borderBottom: '3px solid #1a5a4e', boxShadow: '0 4px 0 #1a5a4e' }}>Start Drill</motion.button>
+                <motion.button onClick={startDrill} whileTap={{ y: 3 }} className="text-white font-semibold" style={{ backgroundColor: COLORS.accent, borderRadius: 100, padding: '13px 28px', fontSize: 15, borderBottom: `3px solid ${COLORS.accentDark}`, boxShadow: `0 4px 0 ${COLORS.accentDark}` }}>Start Drill</motion.button>
             </div>
         );
     }
@@ -530,21 +531,21 @@ const DumpSheetBuilder = () => {
         const low = isTimerLow(memoriseTime, 30);
         return (
             <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-4" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-4" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
                 <div className="flex items-center justify-between mb-2">
                     <h4 className="font-serif font-semibold" style={{ fontSize: 22, color: '#1a1a1a' }}>Memorise These Facts</h4>
-                    <span style={{ backgroundColor: low ? '#fde4e4' : '#e8f5f2', border: `1.5px solid ${low ? 'rgba(227,93,117,0.3)' : 'rgba(42,125,111,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>
-                        <span className="font-serif font-bold" style={{ fontSize: 18, color: low ? '#E85D75' : '#2A7D6F' }}>{memoriseTime}</span>
+                    <span style={{ backgroundColor: low ? '#fde4e4' : COLORS.successTint, border: `1.5px solid ${low ? 'rgba(227,93,117,0.3)' : 'rgba(58,141,95,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>
+                        <span className="font-serif font-bold" style={{ fontSize: 18, color: low ? '#E85D75' : COLORS.success }}>{memoriseTime}</span>
                         <span style={{ fontSize: 13, color: '#9e9186', marginLeft: 2 }}>s</span>
                     </span>
                 </div>
                 <div style={{ height: 4, backgroundColor: '#e0dbd4', borderRadius: 2, marginBottom: 24 }}>
-                    <motion.div style={{ height: '100%', backgroundColor: '#2A7D6F', borderRadius: 2 }} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
+                    <motion.div style={{ height: '100%', backgroundColor: COLORS.accent, borderRadius: 2 }} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                     {dumpSheetFacts.map((fact, i) => (
                         <MotionDiv key={i} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} className="flex items-start gap-3 bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '16px 18px' }}>
-                            <span className="flex items-center justify-center shrink-0" style={{ width: 28, height: 28, borderRadius: '50%', backgroundColor: '#2A7D6F', fontSize: 13, fontWeight: 700, color: '#FFFFFF' }}>{i + 1}</span>
+                            <span className="flex items-center justify-center shrink-0" style={{ width: 28, height: 28, borderRadius: '50%', backgroundColor: COLORS.accent, fontSize: 13, fontWeight: 700, color: '#FFFFFF' }}>{i + 1}</span>
                             <span style={{ fontSize: 14, color: '#1a1a1a', lineHeight: 1.5 }}>{fact.text}</span>
                         </MotionDiv>
                     ))}
@@ -560,13 +561,13 @@ const DumpSheetBuilder = () => {
             <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 <div className="flex items-center justify-between mb-2">
                     <h4 className="font-serif font-semibold" style={{ fontSize: 22, color: '#1a1a1a' }}>Write Everything You Remember</h4>
-                    <span style={{ backgroundColor: low ? '#fde4e4' : '#e8f5f2', border: `1.5px solid ${low ? 'rgba(227,93,117,0.3)' : 'rgba(42,125,111,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>
-                        <span className="font-serif font-bold" style={{ fontSize: 18, color: low ? '#E85D75' : '#2A7D6F' }}>{recallTime}</span>
+                    <span style={{ backgroundColor: low ? '#fde4e4' : COLORS.successTint, border: `1.5px solid ${low ? 'rgba(227,93,117,0.3)' : 'rgba(58,141,95,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>
+                        <span className="font-serif font-bold" style={{ fontSize: 18, color: low ? '#E85D75' : COLORS.success }}>{recallTime}</span>
                         <span style={{ fontSize: 13, color: '#9e9186', marginLeft: 2 }}>s</span>
                     </span>
                 </div>
                 <div style={{ height: 4, backgroundColor: '#e0dbd4', borderRadius: 2, marginBottom: 16 }}>
-                    <motion.div style={{ height: '100%', backgroundColor: '#2A7D6F', borderRadius: 2 }} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
+                    <motion.div style={{ height: '100%', backgroundColor: COLORS.accent, borderRadius: 2 }} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
                 </div>
                 <p className="text-sm mb-4" style={{ color: '#7a7068' }}>Don't worry about order or exact wording.</p>
                 <textarea
@@ -576,7 +577,7 @@ const DumpSheetBuilder = () => {
                     placeholder="Start typing everything you remember..."
                     className="w-full h-48 outline-none font-serif"
                     style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '14px 16px', fontSize: 15, color: '#1a1a1a', lineHeight: 1.6, resize: 'none' as const }}
-                    onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }}
+                    onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
                     onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }}
                     autoFocus
                 />
@@ -590,8 +591,8 @@ const DumpSheetBuilder = () => {
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif font-bold text-center" style={{ fontSize: 22, color: '#1a1a1a' }}>Results</h4>
             <div className="text-center my-5">
-                <div className="inline-block" style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '16px 24px' }}>
-                    <span className="font-serif font-bold" style={{ fontSize: 40, color: '#2A7D6F' }}>{score}</span>
+                <div className="inline-block" style={{ backgroundColor: COLORS.successTint, border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '16px 24px' }}>
+                    <span className="font-serif font-bold" style={{ fontSize: 40, color: COLORS.success }}>{score}</span>
                     <span className="font-serif" style={{ fontSize: 20, color: '#9e9186' }}>/{dumpSheetFacts.length} recalled</span>
                 </div>
             </div>
@@ -599,8 +600,8 @@ const DumpSheetBuilder = () => {
                 {dumpSheetFacts.map((fact, i) => {
                     const recalled = results[i];
                     return (
-                        <MotionDiv key={i} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} className="flex items-start gap-3 bg-white dark:bg-zinc-900" style={{ border: recalled ? '2px solid #2A7D6F' : '2px solid #1a1a1a', borderLeft: recalled ? undefined : '4px solid #E85D75', borderRadius: 14, padding: '14px 16px' }}>
-                            <span className="flex items-center justify-center shrink-0 mt-0.5" style={{ width: 22, height: 22, borderRadius: '50%', backgroundColor: recalled ? '#2A7D6F' : '#E85D75', fontSize: 12, fontWeight: 700, color: '#FFFFFF' }}>
+                        <MotionDiv key={i} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} className="flex items-start gap-3 bg-white dark:bg-zinc-900" style={{ border: recalled ? `2px solid ${COLORS.success}` : '2px solid #1a1a1a', borderLeft: recalled ? undefined : '4px solid #E85D75', borderRadius: 14, padding: '14px 16px' }}>
+                            <span className="flex items-center justify-center shrink-0 mt-0.5" style={{ width: 22, height: 22, borderRadius: '50%', backgroundColor: recalled ? COLORS.success : '#E85D75', fontSize: 12, fontWeight: 700, color: '#FFFFFF' }}>
                                 {recalled ? '✓' : '✗'}
                             </span>
                             <span style={{ fontSize: 14, color: '#1a1a1a', lineHeight: 1.5 }}>{fact.text}</span>
@@ -608,11 +609,11 @@ const DumpSheetBuilder = () => {
                     );
                 })}
             </div>
-            <div style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px', marginBottom: 16 }}>
-                <p className="text-sm italic" style={{ color: '#1a6358' }}>In the real exam, your dump sheet prevents interference — facts written down can't be displaced by exam stress. Do this in the first 2 minutes of every paper.</p>
+            <div style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: COLORS.accentTint, borderRadius: '0 10px 10px 0', padding: '12px 16px', marginBottom: 16 }}>
+                <p className="text-sm italic" style={{ color: COLORS.accentDarkText }}>In the real exam, your dump sheet prevents interference — facts written down can't be displaced by exam stress. Do this in the first 2 minutes of every paper.</p>
             </div>
             <div className="text-center">
-                <button onClick={tryAgain} style={{ backgroundColor: '#2A7D6F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Try Again</button>
+                <button onClick={tryAgain} style={{ backgroundColor: COLORS.accent, borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Try Again</button>
             </div>
         </div>
     );

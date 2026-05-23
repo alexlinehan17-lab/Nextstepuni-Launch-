@@ -16,6 +16,7 @@ import {
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useInnovationData } from '../contexts/InnovationDataContext';
+import { COLORS } from '../design/tokens';
 
 // ─── Subject Colours ─────────────────────────────────────────────────────────
 
@@ -96,7 +97,7 @@ const PointsCard: React.FC<{
   accentColor?: string;
   variant?: 'current' | 'target' | 'whatif';
   basePoints?: number;
-}> = ({ label, points, maxPoints, delta, accentColor = '#2A7D6F', variant = 'current', basePoints }) => {
+}> = ({ label, points, maxPoints, delta, accentColor = COLORS.accent, variant = 'current', basePoints }) => {
   const pct = maxPoints > 0 ? Math.min(100, (points / maxPoints) * 100) : 0;
 
   // Typography sizing by variant
@@ -105,13 +106,13 @@ const PointsCard: React.FC<{
   const numberSize = isTarget ? 'text-5xl' : 'text-4xl';
   // Label: teal for target, muted for others
   const labelColorClass = isTarget ? '' : 'text-[#A8A29E] dark:text-zinc-500';
-  const labelColorStyle = isTarget ? { color: '#2A7D6F' } : undefined;
+  const labelColorStyle = isTarget ? { color: COLORS.accent } : undefined;
 
   // What-If number colour reacts to changes
   let numberColorClass = 'text-[#1A1A1A] dark:text-white';
   let numberColorStyle: React.CSSProperties | undefined = undefined;
   if (isWhatIf && basePoints !== undefined) {
-    if (points > basePoints) { numberColorClass = ''; numberColorStyle = { color: '#2A7D6F' }; }
+    if (points > basePoints) { numberColorClass = ''; numberColorStyle = { color: COLORS.accent }; }
     else if (points < basePoints) { numberColorClass = ''; numberColorStyle = { color: '#DC2626' }; }
     // else stays dark — no change
   }
@@ -135,7 +136,7 @@ const PointsCard: React.FC<{
       {delta !== undefined && delta !== 0 && (
         <span
           className="inline-block mt-2 text-xs font-bold"
-          style={{ color: delta > 0 ? '#2A7D6F' : '#DC2626' }}
+          style={{ color: delta > 0 ? COLORS.accent : '#DC2626' }}
         >
           {delta > 0 ? '+' : ''}{delta} pts
         </span>
@@ -304,7 +305,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
         <button
           onClick={onOpenSettings}
           className="px-6 py-3 rounded-xl text-white text-sm font-medium transition-colors"
-          style={{ backgroundColor: '#2A7D6F' }}
+          style={{ backgroundColor: COLORS.accent }}
         >
           Set up subjects
         </button>
@@ -331,7 +332,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
       >
         <div className={`grid gap-6 ${activeTab === 'what-if' ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-2'}`}>
           <PointsCard label="Current" points={currentAnalysis.total} maxPoints={625} accentColor="#C4C0BC" variant="current" />
-          <PointsCard label="Target" points={targetAnalysis.total} maxPoints={625} delta={targetAnalysis.total - currentAnalysis.total} accentColor="#2A7D6F" variant="target" />
+          <PointsCard label="Target" points={targetAnalysis.total} maxPoints={625} delta={targetAnalysis.total - currentAnalysis.total} accentColor={COLORS.accent} variant="target" />
           {activeTab === 'what-if' && (
             <PointsCard label="What-If" points={whatIfAnalysis.total} maxPoints={625} delta={whatIfAnalysis.total - currentAnalysis.total} accentColor="#3b82f6" variant="whatif" basePoints={currentAnalysis.total} />
           )}
@@ -360,7 +361,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
           <div className="mt-4 pt-4 flex items-center justify-between border-t border-[#EDEBE8] dark:border-zinc-800">
             <span className="text-xs font-medium text-[#78716C] dark:text-zinc-400">Gap to target</span>
             <div className="flex items-center gap-2">
-              <span className="text-base font-black" style={{ color: '#2A7D6F' }}>+{targetAnalysis.total - currentAnalysis.total} pts</span>
+              <span className="text-base font-black" style={{ color: COLORS.accent }}>+{targetAnalysis.total - currentAnalysis.total} pts</span>
               <span className="text-xs font-medium text-[#A8A29E] dark:text-zinc-500">{Math.round((currentAnalysis.total / targetAnalysis.total) * 100)}% there</span>
             </div>
           </div>
@@ -391,7 +392,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
           <div className="space-y-1">
             {mockUpdatesAvailable.slice(0, 3).map(u => (
               <p key={u.subjectName} className="text-xs text-zinc-500">
-                {u.subjectName}: {u.currentGrade} → <span className="font-medium" style={{ color: '#2A7D6F' }}>{u.mockGrade}</span> (mock)
+                {u.subjectName}: {u.currentGrade} → <span className="font-medium" style={{ color: COLORS.accent }}>{u.mockGrade}</span> (mock)
               </p>
             ))}
           </div>
@@ -403,7 +404,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
               setMockBannerDismissed(true);
             }}
             className="px-4 py-2 rounded-lg text-xs font-medium text-white transition-colors"
-            style={{ backgroundColor: '#2A7D6F' }}
+            style={{ backgroundColor: COLORS.accent }}
           >
             Apply mock grades to What-If
           </button>
@@ -476,14 +477,14 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
                     <div className="w-3 h-3 rounded-full flex-shrink-0" style={{ backgroundColor: getSubjectHex(sub.subjectName) }} />
                     <p className="text-sm font-semibold flex-1 min-w-0 truncate text-[#1A1A1A] dark:text-white">{sub.subjectName}</p>
                     {mathsBonus && (
-                      <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full" style={{ backgroundColor: '#EDF5F3', color: '#2A7D6F' }}>+25</span>
+                      <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accent }}>+25</span>
                     )}
                     <div className="flex items-center gap-1.5 flex-shrink-0">
                       <span className="text-xs text-[#A8A29E] dark:text-zinc-500">{sub.grade} → {targetGrade}</span>
                       <span className="text-sm font-bold font-mono text-[#1A1A1A] dark:text-white">{sub.points}</span>
                     </div>
                     {targetPoints !== sub.points && (
-                      <span className="text-xs font-semibold flex-shrink-0" style={{ color: targetPoints > sub.points ? '#2A7D6F' : '#ef4444' }}>
+                      <span className="text-xs font-semibold flex-shrink-0" style={{ color: targetPoints > sub.points ? COLORS.accent : '#ef4444' }}>
                         {targetPoints > sub.points ? '+' : ''}{targetPoints - sub.points}
                       </span>
                     )}
@@ -653,7 +654,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
                       className={`flex items-center gap-3 py-2.5 ${idx < biggestGains.length - 1 ? 'border-b border-[#EDEBE8] dark:border-zinc-800' : ''}`}
                     >
                       {idx === 0 ? (
-                        <span className="text-[9px] font-bold uppercase px-1.5 py-0.5 rounded" style={{ backgroundColor: '#EDF5F3', color: '#2A7D6F' }}>Best</span>
+                        <span className="text-[9px] font-bold uppercase px-1.5 py-0.5 rounded" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accent }}>Best</span>
                       ) : (
                         <span className="text-[11px] font-bold w-8 text-center" style={{ color: '#C4C0BC' }}>{idx + 1}</span>
                       )}
@@ -662,7 +663,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
                       <p className="text-xs text-[#A8A29E] dark:text-zinc-500">
                         {gain.fromGrade} → {gain.toGrade}
                       </p>
-                      <span className="text-sm font-bold" style={{ color: '#2A7D6F' }}>
+                      <span className="text-sm font-bold" style={{ color: COLORS.accent }}>
                         +{gain.netGain}
                       </span>
                     </div>
@@ -699,7 +700,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
                       On track
                     </span>
                   ) : (
-                    <span className="text-xs font-medium" style={{ color: '#2A7D6F' }}>
+                    <span className="text-xs font-medium" style={{ color: COLORS.accent }}>
                       {gap} pts to go
                     </span>
                   )}

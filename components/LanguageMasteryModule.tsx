@@ -102,7 +102,7 @@ const OralBlueprintSliders = () => {
                             </div>
                             <input type="range" min="0" max="100" value={value}
                                 onChange={e => setQ({ ...q, [s.key]: parseInt(e.target.value) })}
-                                className="chunky-slider chunky-slider-teal" />
+                                className="chunky-slider chunky-slider-accent" />
                         </div>
                     );
                 })}

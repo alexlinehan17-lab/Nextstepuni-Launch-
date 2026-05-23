@@ -120,7 +120,7 @@ const CATEGORIES: CategoryConfig[] = [
     blurb: 'Techniques that compound',
     description: 'Active recall, spaced repetition, interleaving — the practical strategies that separate high performers.',
     blob: '#B8DDC8',
-    mid: '#2A7D6F',
+    mid: '#F26B1F',
     deep: '#115e4f',
     tintFocal: 'at 100% 0%',
   },
@@ -553,13 +553,24 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
     pickHeroId(allCourses, userProgress),
   );
 
+  // Hide categories with no visible courses for the current user (Phase 4
+  // JC gating). The `allCourses` prop is the already-curriculum-filtered
+  // list from App.tsx#studentCourses, so a category empty here means the
+  // user has no modules to study in it.
+  const visibleCategories = CATEGORIES.filter(cat =>
+    allCourses.some(c => c.category === cat.id),
+  );
+  const resolvedHeroId = visibleCategories.some(c => c.id === heroId)
+    ? heroId
+    : (visibleCategories[0]?.id ?? heroId);
+
   // Order: hero first, satellites in their original order. This keeps the
   // hero in the first row (col-span-12) and the four satellites in the
   // second row (4 × col-span-3 = 12). Promotion just shuffles this array.
   const ordered = [
-    CATEGORIES.find(c => c.id === heroId)!,
-    ...CATEGORIES.filter(c => c.id !== heroId),
-  ];
+    visibleCategories.find(c => c.id === resolvedHeroId),
+    ...visibleCategories.filter(c => c.id !== resolvedHeroId),
+  ].filter(Boolean) as CategoryConfig[];
 
   return (
     <div className="min-h-screen bg-[#FAFBF6] dark:bg-zinc-950">

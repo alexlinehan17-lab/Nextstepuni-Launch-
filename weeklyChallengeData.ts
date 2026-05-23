@@ -16,6 +16,9 @@ export interface WeeklyChallengeDefinition {
   rewardPoints: number;
   icon: string;
   strategyModuleId?: string;
+  /** Phase 5 plumbing: which curriculum level(s) this challenge applies to.
+   *  Defaults to 'senior' if absent. */
+  curriculum?: 'junior' | 'senior' | 'both';
 }
 
 // ── Challenge Definitions ──────────────────────────────────
@@ -230,6 +233,16 @@ export const WEEKLY_CHALLENGES: WeeklyChallengeDefinition[] = [
 
 // ── Selector ──────────────────────────────────────────────
 
-export function getWeeklyChallenge(weekNumber: number): WeeklyChallengeDefinition {
-  return WEEKLY_CHALLENGES[weekNumber % WEEKLY_CHALLENGES.length];
+export function getWeeklyChallenge(
+  weekNumber: number,
+  curriculumLevel: 'junior' | 'senior' = 'senior',
+): WeeklyChallengeDefinition | null {
+  // Phase 5 plumbing: filter to the user's curriculum. Existing challenges
+  // default to 'senior'. JC sees no challenges in Phase 5.
+  const visible = WEEKLY_CHALLENGES.filter(c => {
+    const tag = c.curriculum ?? 'senior';
+    return tag === 'both' || tag === curriculumLevel;
+  });
+  if (visible.length === 0) return null;
+  return visible[weekNumber % visible.length];
 }

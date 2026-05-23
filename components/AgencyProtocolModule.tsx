@@ -16,6 +16,7 @@ import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './Mod
 import { ModuleLayout } from './ModuleLayout';
 import { useModuleResponses } from '../hooks/useModuleResponses';
 import { useNorthStar } from '../hooks/useNorthStar';
+import { COLORS } from '../design/tokens';
 import NorthStarCallout from './NorthStarCallout';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
@@ -74,10 +75,10 @@ const FlipCard = ({ front, back, frontIcon: FrontIcon, backIcon: _BackIcon, colo
           className="absolute w-full h-full [backface-visibility:hidden] p-6 flex flex-col items-center justify-center text-center"
           style={{
             transform: 'rotateY(180deg)',
-            backgroundColor: '#2A7D6F',
-            border: '2.5px solid #1F5F54',
+            backgroundColor: COLORS.accent,
+            border: `2.5px solid ${COLORS.accentDark}`,
             borderRadius: 18,
-            boxShadow: '4px 4px 0px 0px #1F5F54',
+            boxShadow: `4px 4px 0px 0px ${COLORS.accentDark}`,
           }}
         >
           <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: 'rgba(255,255,255,0.2)' }}>
@@ -193,7 +194,7 @@ const MindsetSorter = () => {
 
 /* ═══ Reorder item colours ═══ */
 const REORDER_COLORS = [
-  { bg: '#2A7D6F', border: '#1F5F54' },
+  { bg: COLORS.accent, border: COLORS.accentDark },
   { bg: '#EA580C', border: '#C2410C' },
   { bg: '#2563EB', border: '#1D4ED8' },
   { bg: '#D97706', border: '#B45309' },

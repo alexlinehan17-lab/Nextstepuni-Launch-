@@ -16,8 +16,8 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { readPatterns, clearPatterns, type PatternSignals } from './knowledgePatterns';
 import { TRAP_CATEGORY_LABELS, TRAP_CATEGORY_FIXES } from '../../../data/knowledge/trapCards';
+import { ACCENT, ACCENT_TINT } from '../colors';
 
-const TEAL = '#2A7D6F';
 const WARN = '#A8746E';
 const INK = '#1A1A1A';
 
@@ -82,21 +82,21 @@ const YourPatternsContainer: React.FC<Props> = ({ onOpenModule }) => {
       animate={{ opacity: 1, y: 0 }}
       className="rounded-2xl"
       style={{
-        backgroundColor: '#F0FAF8',
-        border: `1px solid ${TEAL}33`,
+        backgroundColor: ACCENT_TINT,
+        border: `1px solid ${ACCENT}33`,
         color: INK,
         padding: '22px 24px',
       }}
     >
       <div className="flex items-baseline justify-between gap-3 flex-wrap mb-2">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
           Your patterns · {insights.length} signal{insights.length === 1 ? '' : 's'} from your sessions
         </p>
         <button
           type="button"
           onClick={handleReset}
           className="font-sans"
-          style={{ fontSize: 11, color: TEAL, opacity: 0.75, background: 'transparent', border: 'none', padding: 0, cursor: 'pointer' }}
+          style={{ fontSize: 11, color: ACCENT, opacity: 0.75, background: 'transparent', border: 'none', padding: 0, cursor: 'pointer' }}
         >
           Reset
         </button>
@@ -119,7 +119,7 @@ const YourPatternsContainer: React.FC<Props> = ({ onOpenModule }) => {
               padding: '14px 16px',
             }}
           >
-            <p className="font-sans" style={{ fontSize: 9.5, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ins.tone === 'ok' ? TEAL : WARN, marginBottom: 4 }}>
+            <p className="font-sans" style={{ fontSize: 9.5, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ins.tone === 'ok' ? ACCENT : WARN, marginBottom: 4 }}>
               {ins.kicker}
             </p>
             <p className="font-serif" style={{ fontSize: 14, fontWeight: 600, color: INK, lineHeight: 1.4 }}>
@@ -133,7 +133,7 @@ const YourPatternsContainer: React.FC<Props> = ({ onOpenModule }) => {
                 type="button"
                 onClick={() => onOpenModule(ins.openModuleId!)}
                 className="font-sans inline-flex items-center gap-1 mt-3"
-                style={{ fontSize: 11.5, fontWeight: 600, color: TEAL, background: 'transparent', border: 'none', padding: 0, cursor: 'pointer' }}
+                style={{ fontSize: 11.5, fontWeight: 600, color: ACCENT, background: 'transparent', border: 'none', padding: 0, cursor: 'pointer' }}
               >
                 {ins.openModuleLabel ?? 'Re-run tool'}
                 <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden>

@@ -29,7 +29,7 @@ const getMessage = (count: number): string => {
   return MILESTONE_MESSAGES[count] || `${count} days. Keep the momentum going.`;
 };
 
-const PARTICLE_COLORS = ['#2A7D6F', '#4CC9F0', '#6B8F71', '#F59E0B', '#E94560'];
+const PARTICLE_COLORS = ['#F26B1F', '#4CC9F0', '#6B8F71', '#F59E0B', '#E94560'];
 
 const DAY_LABELS = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
 
@@ -70,7 +70,7 @@ const StreakCelebration: React.FC<StreakCelebrationProps> = ({ streakCount, isOp
           {/* Gradient background */}
           <div
             className="absolute inset-0"
-            style={{ background: 'linear-gradient(180deg, rgba(42,125,111,0.08) 0%, rgba(42,125,111,0.15) 100%)', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)' }}
+            style={{ background: 'linear-gradient(180deg, rgba(242,107,31,0.08) 0%, rgba(242,107,31,0.15) 100%)', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)' }}
           />
 
           {/* Particle burst */}
@@ -92,7 +92,7 @@ const StreakCelebration: React.FC<StreakCelebrationProps> = ({ streakCount, isOp
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              style={{ fontSize: 128, fontWeight: 800, color: '#2A7D6F', letterSpacing: '-0.05em', lineHeight: 1 }}
+              style={{ fontSize: 128, fontWeight: 800, color: '#F26B1F', letterSpacing: '-0.05em', lineHeight: 1 }}
             >
               {streakCount}
             </MotionDiv>
@@ -120,11 +120,11 @@ const StreakCelebration: React.FC<StreakCelebrationProps> = ({ streakCount, isOp
                   <div
                     className="w-8 h-8 rounded-full transition-colors"
                     style={{
-                      backgroundColor: weekDays[i] ? '#2A7D6F' : undefined,
+                      backgroundColor: weekDays[i] ? '#F26B1F' : undefined,
                     }}
-                    {...(!weekDays[i] ? { className: 'w-8 h-8 rounded-full bg-zinc-200 dark:bg-zinc-700' } : { className: 'w-8 h-8 rounded-full', style: { backgroundColor: '#2A7D6F' } })}
+                    {...(!weekDays[i] ? { className: 'w-8 h-8 rounded-full bg-zinc-200 dark:bg-zinc-700' } : { className: 'w-8 h-8 rounded-full', style: { backgroundColor: '#F26B1F' } })}
                   />
-                  <span className={`text-xs font-medium ${weekDays[i] ? 'text-[#2A7D6F]' : 'text-[#9A9590] dark:text-zinc-500'}`}>{day}</span>
+                  <span className={`text-xs font-medium ${weekDays[i] ? 'text-[#F26B1F]' : 'text-[#9A9590] dark:text-zinc-500'}`}>{day}</span>
                 </div>
               ))}
             </MotionDiv>

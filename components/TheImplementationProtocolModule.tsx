@@ -15,6 +15,7 @@ import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useNorthStar } from '../hooks/useNorthStar';
 import NorthStarCallout from './NorthStarCallout';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
+import { COLORS } from '../design/tokens';
 
 const theme = roseTheme;
 
@@ -251,7 +252,7 @@ const IfThenPlanBuilder = () => {
               <p className="text-[11px] font-semibold uppercase tracking-wider mb-4" style={{ color: '#9e9186', letterSpacing: '0.08em' }}>Plan {i + 1}</p>
               <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div>
-                  <span className="inline-block text-xs font-bold mb-2" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '3px 10px' }}>IF</span>
+                  <span className="inline-block text-xs font-bold mb-2" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '3px 10px' }}>IF</span>
                   <input
                     type="text"
                     value={plan.ifText}
@@ -259,12 +260,12 @@ const IfThenPlanBuilder = () => {
                     placeholder={i === 0 ? 'it is 4pm on Monday' : i === 1 ? 'I sit down after dinner' : 'I finish my last class on Wednesday'}
                     className="w-full outline-none"
                     style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 14, color: '#1a1a1a' }}
-                    onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }}
+                    onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
                     onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }}
                   />
                 </div>
                 <div>
-                  <span className="inline-block text-xs font-bold mb-2" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '3px 10px' }}>THEN</span>
+                  <span className="inline-block text-xs font-bold mb-2" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '3px 10px' }}>THEN</span>
                   <input
                     type="text"
                     value={plan.thenText}
@@ -272,7 +273,7 @@ const IfThenPlanBuilder = () => {
                     placeholder={i === 0 ? 'do 25 minutes of Maths past papers' : i === 1 ? 'revise Biology flashcards for 30 mins at my desk' : 'practice Chemistry problems for 20 mins in the library'}
                     className="w-full outline-none"
                     style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 14, color: '#1a1a1a' }}
-                    onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }}
+                    onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
                     onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }}
                   />
                 </div>
@@ -288,16 +289,16 @@ const IfThenPlanBuilder = () => {
                         transition={{ duration: 0.3 }}
                         className="inline-flex items-center gap-1.5"
                         style={{
-                          backgroundColor: checkValues[ci] ? '#e8f5f2' : '#FFFFFF',
-                          border: checkValues[ci] ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+                          backgroundColor: checkValues[ci] ? COLORS.successTint : '#FFFFFF',
+                          border: checkValues[ci] ? `2px solid ${COLORS.success}` : '2px solid #d0cdc8',
                           borderRadius: 20,
                           padding: '6px 14px',
                         }}
                       >
-                        <span style={{ fontWeight: 700, color: checkValues[ci] ? '#2A7D6F' : '#b0a898', fontSize: 13 }}>
+                        <span style={{ fontWeight: 700, color: checkValues[ci] ? COLORS.success : '#b0a898', fontSize: 13 }}>
                           {checkValues[ci] ? '\u2713' : '\u2013'}
                         </span>
-                        <span style={{ fontSize: 13, fontWeight: 600, color: checkValues[ci] ? '#1a6358' : '#b0a898' }}>
+                        <span style={{ fontSize: 13, fontWeight: 600, color: checkValues[ci] ? COLORS.successDarkText : '#b0a898' }}>
                           {name}
                         </span>
                       </motion.span>
@@ -305,9 +306,9 @@ const IfThenPlanBuilder = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="flex-1 overflow-hidden" style={{ height: 8, backgroundColor: '#e0dbd4', borderRadius: 4 }}>
-                      <MotionDiv style={{ height: '100%', backgroundColor: '#2A7D6F', borderRadius: 4 }} initial={{ width: 0 }} animate={{ width: `${strength.pct}%` }} transition={{ duration: 0.5 }} />
+                      <MotionDiv style={{ height: '100%', backgroundColor: COLORS.accent, borderRadius: 4 }} initial={{ width: 0 }} animate={{ width: `${strength.pct}%` }} transition={{ duration: 0.5 }} />
                     </div>
-                    <span className="text-xs font-bold shrink-0" style={{ color: detectedCount === 4 ? '#1a6358' : detectedCount >= 2 ? '#2A7D6F' : '#b0a898', fontWeight: detectedCount === 4 ? 700 : 600 }}>{strength.label}</span>
+                    <span className="text-xs font-bold shrink-0" style={{ color: detectedCount === 4 ? COLORS.successDarkText : detectedCount >= 2 ? COLORS.accent : '#b0a898', fontWeight: detectedCount === 4 ? 700 : 600 }}>{strength.label}</span>
                   </div>
                 </MotionDiv>
               )}
@@ -321,9 +322,9 @@ const IfThenPlanBuilder = () => {
           <motion.button
             onClick={() => setShowSummary(true)}
             className="px-6 py-3 text-white font-bold text-sm"
-            style={{ backgroundColor: '#2A7D6F', border: '2.5px solid #1F5F54', borderRadius: 14, boxShadow: '4px 4px 0px 0px #1F5F54' }}
-            whileHover={{ x: -2, y: -2, boxShadow: '6px 6px 0px 0px #1F5F54' }}
-            whileTap={{ x: 2, y: 2, boxShadow: '1px 1px 0px 0px #1F5F54' }}
+            style={{ backgroundColor: COLORS.accent, border: `2.5px solid ${COLORS.accentDark}`, borderRadius: 14, boxShadow: `4px 4px 0px 0px ${COLORS.accentDark}` }}
+            whileHover={{ x: -2, y: -2, boxShadow: `6px 6px 0px 0px ${COLORS.accentDark}` }}
+            whileTap={{ x: 2, y: 2, boxShadow: `1px 1px 0px 0px ${COLORS.accentDark}` }}
             transition={{ type: 'spring', stiffness: 400, damping: 25 }}
           >
             View My Protocol
@@ -332,18 +333,18 @@ const IfThenPlanBuilder = () => {
       )}
 
       {showSummary && (
-        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="mt-6" style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '20px 24px' }}>
-          <h5 className="font-serif text-lg font-semibold mb-4 text-center" style={{ color: '#1a6358' }}>Your Implementation Intentions</h5>
+        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="mt-6" style={{ backgroundColor: COLORS.successTint, border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '20px 24px' }}>
+          <h5 className="font-serif text-lg font-semibold mb-4 text-center" style={{ color: COLORS.successDarkText }}>Your Implementation Intentions</h5>
           <div className="space-y-3">
             {plans.map((plan, i) => (
               <div key={i} className="p-3 bg-white dark:bg-zinc-800" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10 }}>
                 <p className="text-sm" style={{ color: '#1a1a1a' }}>
-                  <span className="font-bold" style={{ color: '#1a6358' }}>If</span> {plan.ifText}, <span className="font-bold" style={{ color: '#1a6358' }}>then I will</span> {plan.thenText}.
+                  <span className="font-bold" style={{ color: COLORS.successDarkText }}>If</span> {plan.ifText}, <span className="font-bold" style={{ color: COLORS.successDarkText }}>then I will</span> {plan.thenText}.
                 </p>
               </div>
             ))}
           </div>
-          <p className="text-xs mt-4 text-center" style={{ color: '#2A7D6F' }}>Write these down. Put them where you'll see them. The specificity is what makes them work.</p>
+          <p className="text-xs mt-4 text-center" style={{ color: COLORS.success }}>Write these down. Put them where you'll see them. The specificity is what makes them work.</p>
         </MotionDiv>
       )}
     </div>

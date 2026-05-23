@@ -13,6 +13,7 @@ import {
   BookmarkPlus, Check, ArrowUpRight, TrendingUp, X, Clock,
 } from 'lucide-react';
 import PrimaryActionButton from './ui/PrimaryActionButton';
+import { COLORS } from '../design/tokens';
 import { db } from '../firebase';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { type StudentSubjectProfile, LC_SUBJECTS, getPointsForGrade } from './subjectData';
@@ -255,7 +256,7 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center py-32">
-        <div className="w-8 h-8 border-2 border-t-transparent rounded-full animate-spin" style={{ borderColor: '#2A7D6F', borderTopColor: 'transparent' }} />
+        <div className="w-8 h-8 border-2 border-t-transparent rounded-full animate-spin" style={{ borderColor: COLORS.accent, borderTopColor: 'transparent' }} />
       </div>
     );
   }
@@ -354,7 +355,7 @@ function IntroPhase({ autoPoints, onStart, onViewResults }: { autoPoints: number
           Answer 10 quick questions. We'll match you with college courses that fit who you are {'\u2014'} not just your points.
         </p>
         {autoPoints > 0 && (
-          <p className="text-sm font-medium max-w-sm mx-auto mb-4" style={{ color: '#2A7D6F' }}>
+          <p className="text-sm font-medium max-w-sm mx-auto mb-4" style={{ color: COLORS.accent }}>
             Based on your current grades, you're at {autoPoints} points
           </p>
         )}
@@ -364,7 +365,7 @@ function IntroPhase({ autoPoints, onStart, onViewResults }: { autoPoints: number
         <div className="flex flex-col items-center gap-3">
           <PrimaryActionButton label="Let's Go" onClick={onStart} icon={Compass} />
           {onViewResults && (
-            <button onClick={onViewResults} className="text-sm hover:underline" style={{ color: '#2A7D6F' }}>
+            <button onClick={onViewResults} className="text-sm hover:underline" style={{ color: COLORS.accent }}>
               View previous results
             </button>
           )}
@@ -408,11 +409,11 @@ function AssessmentPhase({
       {/* Progress bar */}
       <div className="mb-8">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-xs font-bold" style={{ color: '#2A7D6F' }}>Question {currentQ + 1} of {ASSESSMENT_QUESTIONS.length}</span>
+          <span className="text-xs font-bold" style={{ color: COLORS.accent }}>Question {currentQ + 1} of {ASSESSMENT_QUESTIONS.length}</span>
           <span className="text-xs text-zinc-400 dark:text-zinc-500">{question.dimension}</span>
         </div>
         <div className="h-1.5 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
-          <div className="h-full rounded-full transition-all duration-500" style={{ width: `${progress}%`, backgroundColor: '#2A7D6F' }} />
+          <div className="h-full rounded-full transition-all duration-500" style={{ width: `${progress}%`, backgroundColor: COLORS.accent }} />
         </div>
       </div>
 
@@ -444,9 +445,9 @@ function AssessmentPhase({
               ? 'text-white'
               : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-400 cursor-not-allowed'
           }`}
-          style={isValid || shouldSkipRegions ? { backgroundColor: '#2A7D6F' } : undefined}
-          onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { if (isValid || shouldSkipRegions) e.currentTarget.style.backgroundColor = '#1F5F54'; }}
-          onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { if (isValid || shouldSkipRegions) e.currentTarget.style.backgroundColor = '#2A7D6F'; }}>
+          style={isValid || shouldSkipRegions ? { backgroundColor: COLORS.accent } : undefined}
+          onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { if (isValid || shouldSkipRegions) e.currentTarget.style.backgroundColor = '#B54D14'; }}
+          onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { if (isValid || shouldSkipRegions) e.currentTarget.style.backgroundColor = COLORS.accent; }}>
           {isLast ? 'See Results' : 'Next'} <ChevronRight size={16} />
         </MotionButton>
       </div>
@@ -475,7 +476,7 @@ function QuestionInput({ question, value, onChange }: { question: AssessmentQues
                   ? ''
                   : 'bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500'
               }`}
-              style={isSelected ? { backgroundColor: '#2A7D6F', color: 'white', borderColor: '#2A7D6F' } : undefined}
+              style={isSelected ? { backgroundColor: COLORS.accent, color: 'white', borderColor: COLORS.accent } : undefined}
             >
               {isSelected && <Check size={14} className="inline mr-1.5 -mt-0.5" />}
               {opt.label}
@@ -498,7 +499,7 @@ function QuestionInput({ question, value, onChange }: { question: AssessmentQues
                 ? ''
                 : 'bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500'
             }`}
-            style={value === opt.value ? { backgroundColor: '#2A7D6F', color: 'white', borderColor: '#2A7D6F' } : undefined}
+            style={value === opt.value ? { backgroundColor: COLORS.accent, color: 'white', borderColor: COLORS.accent } : undefined}
           >
             {opt.label}
           </button>
@@ -526,7 +527,7 @@ function QuestionInput({ question, value, onChange }: { question: AssessmentQues
                   ? 'shadow-lg'
                   : 'bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500'
               }`}
-              style={isSelected ? { backgroundColor: '#2A7D6F', color: 'white', borderColor: '#2A7D6F', boxShadow: '0 10px 15px -3px rgba(42,125,111,0.25)' } : undefined}
+              style={isSelected ? { backgroundColor: COLORS.accent, color: 'white', borderColor: COLORS.accent, boxShadow: '0 10px 15px -3px rgba(242,107,31,0.25)' } : undefined}
             >
               {label}
             </MotionButton>
@@ -544,7 +545,7 @@ function QuestionInput({ question, value, onChange }: { question: AssessmentQues
           className={`flex-1 py-3 rounded-xl text-sm font-semibold transition-all border ${
             value === true ? '' : 'bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400'
           }`}
-          style={value === true ? { backgroundColor: '#2A7D6F', color: 'white', borderColor: '#2A7D6F' } : undefined}
+          style={value === true ? { backgroundColor: COLORS.accent, color: 'white', borderColor: COLORS.accent } : undefined}
         >
           Open to anywhere
         </button>
@@ -553,7 +554,7 @@ function QuestionInput({ question, value, onChange }: { question: AssessmentQues
           className={`flex-1 py-3 rounded-xl text-sm font-semibold transition-all border ${
             value === false ? '' : 'bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400'
           }`}
-          style={value === false ? { backgroundColor: '#2A7D6F', color: 'white', borderColor: '#2A7D6F' } : undefined}
+          style={value === false ? { backgroundColor: COLORS.accent, color: 'white', borderColor: COLORS.accent } : undefined}
         >
           I have a preference
         </button>
@@ -591,7 +592,7 @@ function ResultsPhase({
           <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">Your Top Matches</h2>
           <p className="text-sm text-zinc-400 dark:text-zinc-500 mt-1">Courses ranked by how well they fit you</p>
           {autoPoints > 0 && (
-            <p className="text-xs font-medium mt-1" style={{ color: '#2A7D6F' }}>
+            <p className="text-xs font-medium mt-1" style={{ color: COLORS.accent }}>
               Based on your current grades, you're at {autoPoints} points
             </p>
           )}
@@ -630,8 +631,8 @@ function ResultsPhase({
 
       {/* Compare bar */}
       {compareCourses.length > 0 && (
-        <div className="mb-4 p-3 rounded-xl border flex items-center justify-between bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(42,125,111,0.2)' }}>
-          <span className="text-xs font-semibold" style={{ color: '#2A7D6F' }}>
+        <div className="mb-4 p-3 rounded-xl border flex items-center justify-between bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.2)' }}>
+          <span className="text-xs font-semibold" style={{ color: COLORS.accent }}>
             {compareCourses.length} course{compareCourses.length > 1 ? 's' : ''} selected for comparison
           </span>
           <button
@@ -640,7 +641,7 @@ function ResultsPhase({
             className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-colors ${
               compareCourses.length >= 2 ? 'text-white' : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-400 cursor-not-allowed'
             }`}
-            style={compareCourses.length >= 2 ? { backgroundColor: '#2A7D6F' } : undefined}
+            style={compareCourses.length >= 2 ? { backgroundColor: COLORS.accent } : undefined}
           >
             Compare
           </button>
@@ -697,12 +698,12 @@ function ResultCard({
       style={{ borderColor: 'rgba(0,0,0,0.07)' }}
       onClick={onClick}
     >
-      <div className="h-[2px] opacity-0 group-hover:opacity-100 transition-opacity" style={{ backgroundColor: '#2A7D6F' }} />
+      <div className="h-[2px] opacity-0 group-hover:opacity-100 transition-opacity" style={{ backgroundColor: COLORS.accent }} />
       <div className="p-4 md:p-5">
         <div className="flex items-start justify-between gap-3 mb-3">
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-1 flex-wrap">
-              <span className="text-xs font-bold" style={{ color: '#2A7D6F' }}>#{rank}</span>
+              <span className="text-xs font-bold" style={{ color: COLORS.accent }}>#{rank}</span>
               <span className="text-xs font-mono text-zinc-400 dark:text-zinc-500">{c.code}</span>
               <span className="px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-xs font-semibold text-zinc-500 dark:text-zinc-400">Level {c.level}</span>
               {c.pathwayType === 'plc' && (
@@ -764,7 +765,7 @@ function ResultCard({
             className={`flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-colors border ${
               isSaved ? 'bg-transparent border-zinc-300 dark:border-zinc-600' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-800'
             }`}
-            style={isSaved ? { color: '#2A7D6F' } : undefined}
+            style={isSaved ? { color: COLORS.accent } : undefined}
           >
             {isSaved ? <Check size={12} /> : <BookmarkPlus size={12} />}
             {isSaved ? 'Saved' : 'Save'}
@@ -774,7 +775,7 @@ function ResultCard({
             className={`flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-colors border ${
               isCompared ? 'bg-transparent border-zinc-300 dark:border-zinc-600' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-800'
             }`}
-            style={isCompared ? { color: '#2A7D6F' } : undefined}
+            style={isCompared ? { color: COLORS.accent } : undefined}
           >
             <SlidersHorizontal size={12} />
             {isCompared ? 'Comparing' : 'Compare'}
@@ -820,7 +821,7 @@ function DetailPhase({
 
       <div className="bg-[#FAF7F4] dark:bg-zinc-900 overflow-hidden" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: '12px' }}>
         {/* Header */}
-        <div className="p-6" style={{ backgroundColor: '#2A7D6F' }}>
+        <div className="p-6" style={{ backgroundColor: COLORS.accent }}>
           <div className="flex items-center gap-2 mb-2 flex-wrap">
             <span className="px-2.5 py-0.5 rounded-full bg-white/20 text-white text-xs font-bold">{c.code}</span>
             <span className="px-2.5 py-0.5 rounded-full bg-white/20 text-white text-xs font-bold">Level {c.level}</span>
@@ -856,7 +857,7 @@ function DetailPhase({
 
           {/* Your Points section */}
           {c.typicalPoints === 0 ? (
-            <div className="p-4 rounded-xl border bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(42,125,111,0.15)' }}>
+            <div className="p-4 rounded-xl border bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.15)' }}>
               <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Entry Requirements</h4>
               <p className="text-sm text-zinc-700 dark:text-zinc-300">
                 {c.pathwayType === 'apprenticeship'
@@ -865,11 +866,11 @@ function DetailPhase({
               </p>
             </div>
           ) : autoPoints > 0 ? (
-            <div className="p-4 rounded-xl border bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(42,125,111,0.15)' }}>
+            <div className="p-4 rounded-xl border bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.15)' }}>
               <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Your Points</h4>
               <div className="grid grid-cols-3 gap-3 text-center">
                 <div>
-                  <p className="text-2xl font-bold" style={{ color: '#2A7D6F' }}>{autoPoints}</p>
+                  <p className="text-2xl font-bold" style={{ color: COLORS.accent }}>{autoPoints}</p>
                   <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-0.5">Your current points</p>
                 </div>
                 <div>
@@ -918,20 +919,20 @@ function DetailPhase({
             <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-2">Subjects That Help</h4>
             <div className="flex flex-wrap gap-2">
               {c.subjectBonus.map(sub => (
-                <span key={sub} className="px-3 py-1.5 rounded-lg text-sm font-medium bg-[#FAF7F4] dark:bg-zinc-900" style={{ color: '#2A7D6F' }}>{sub}</span>
+                <span key={sub} className="px-3 py-1.5 rounded-lg text-sm font-medium bg-[#FAF7F4] dark:bg-zinc-900" style={{ color: COLORS.accent }}>{sub}</span>
               ))}
             </div>
           </div>
 
           {/* Why this suits you — show up to 5 reasons */}
-          <div className="p-4 rounded-xl border bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(42,125,111,0.15)' }}>
-            <h4 className="text-sm font-bold mb-3 flex items-center gap-2" style={{ color: '#2A7D6F' }}>
-              <Heart size={16} style={{ color: '#2A7D6F' }} /> Why This Suits You
+          <div className="p-4 rounded-xl border bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.15)' }}>
+            <h4 className="text-sm font-bold mb-3 flex items-center gap-2" style={{ color: COLORS.accent }}>
+              <Heart size={16} style={{ color: COLORS.accent }} /> Why This Suits You
             </h4>
             <ul className="space-y-2">
               {result.reasons.slice(0, 5).map((reason, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
-                  <Star size={14} className="mt-0.5 shrink-0" style={{ color: '#2A7D6F' }} />
+                  <Star size={14} className="mt-0.5 shrink-0" style={{ color: COLORS.accent }} />
                   {reason}
                 </li>
               ))}
@@ -954,7 +955,7 @@ function DetailPhase({
               className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold transition-colors border ${
                 isSaved ? 'text-white' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800'
               }`}
-              style={isSaved ? { backgroundColor: '#2A7D6F', borderColor: '#2A7D6F' } : undefined}>
+              style={isSaved ? { backgroundColor: COLORS.accent, borderColor: COLORS.accent } : undefined}>
               {isSaved ? <Check size={16} /> : <BookmarkPlus size={16} />}
               {isSaved ? 'Saved to Picks' : 'Save to Picks'}
             </MotionButton>
@@ -962,7 +963,7 @@ function DetailPhase({
               className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold transition-colors border ${
                 isCompared ? 'text-white' : 'bg-transparent border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800'
               }`}
-              style={isCompared ? { backgroundColor: '#2A7D6F', borderColor: '#2A7D6F' } : undefined}>
+              style={isCompared ? { backgroundColor: COLORS.accent, borderColor: COLORS.accent } : undefined}>
               <SlidersHorizontal size={16} />
               {isCompared ? 'Added to Compare' : 'Add to Compare'}
             </MotionButton>
@@ -991,7 +992,7 @@ function ScoreBar({ label, score }: { label: string; score: number }) {
       <div className="flex-1 h-2 bg-zinc-200 dark:bg-zinc-700 rounded-full overflow-hidden">
         <div
           className="h-full rounded-full transition-all duration-500"
-          style={{ width: `${pct}%`, backgroundColor: '#2A7D6F' }}
+          style={{ width: `${pct}%`, backgroundColor: COLORS.accent }}
         />
       </div>
       <span className="text-xs font-bold text-zinc-600 dark:text-zinc-400 w-10 text-right">{pct}%</span>
@@ -1086,7 +1087,7 @@ function ComparePhase({
                   <ul className="space-y-1">
                     {r.reasons.slice(0, 5).map((reason, i) => (
                       <li key={i} className="flex items-start gap-1 text-xs text-zinc-700 dark:text-zinc-300">
-                        <Star size={10} className="mt-0.5 shrink-0" style={{ color: '#2A7D6F' }} /> {reason}
+                        <Star size={10} className="mt-0.5 shrink-0" style={{ color: COLORS.accent }} /> {reason}
                       </li>
                     ))}
                   </ul>

@@ -37,6 +37,19 @@ export const SUBJECT_COLORS: Record<string, { dot: string; bg: string; border: s
   'Technology':          { dot: 'bg-slate-500', bg: 'bg-slate-50 dark:bg-slate-900/20', border: 'border-slate-200 dark:border-slate-800/40', text: 'text-slate-700 dark:text-slate-300' },
   'Design & Communication Graphics': { dot: 'bg-indigo-600', bg: 'bg-indigo-50 dark:bg-indigo-900/20', border: 'border-indigo-200 dark:border-indigo-800/40', text: 'text-indigo-700 dark:text-indigo-300' },
   'Physical Education':  { dot: 'bg-red-600', bg: 'bg-red-50 dark:bg-red-900/20', border: 'border-red-200 dark:border-red-800/40', text: 'text-red-700 dark:text-red-300' },
+  // ─── Junior Cycle-only subject colour entries (Phase 1) ────────────────
+  // Reuses the existing group-colour ranges; picks hues that aren't already
+  // used by an LC subject so each card reads distinctly in mixed grids
+  // (e.g., a school's GC dashboard listing both cohorts).
+  'Science':                     { dot: 'bg-green-600',   bg: 'bg-green-50 dark:bg-green-900/20',     border: 'border-green-200 dark:border-green-800/40',     text: 'text-green-700 dark:text-green-300' },
+  'CSPE':                        { dot: 'bg-purple-600',  bg: 'bg-purple-50 dark:bg-purple-900/20',   border: 'border-purple-200 dark:border-purple-800/40',   text: 'text-purple-700 dark:text-purple-300' },
+  'SPHE':                        { dot: 'bg-fuchsia-400', bg: 'bg-fuchsia-50 dark:bg-fuchsia-900/20', border: 'border-fuchsia-200 dark:border-fuchsia-800/40', text: 'text-fuchsia-700 dark:text-fuchsia-300' },
+  'Business Studies':            { dot: 'bg-amber-700',   bg: 'bg-amber-50 dark:bg-amber-900/20',     border: 'border-amber-200 dark:border-amber-800/40',     text: 'text-amber-700 dark:text-amber-300' },
+  'Materials Technology (Wood)': { dot: 'bg-stone-600',   bg: 'bg-stone-50 dark:bg-stone-900/20',     border: 'border-stone-200 dark:border-stone-800/40',     text: 'text-stone-700 dark:text-stone-300' },
+  'Metalwork':                   { dot: 'bg-zinc-600',    bg: 'bg-zinc-50 dark:bg-zinc-900/20',       border: 'border-zinc-200 dark:border-zinc-800/40',       text: 'text-zinc-700 dark:text-zinc-300' },
+  'Graphics':                    { dot: 'bg-indigo-700',  bg: 'bg-indigo-50 dark:bg-indigo-900/20',   border: 'border-indigo-200 dark:border-indigo-800/40',   text: 'text-indigo-700 dark:text-indigo-300' },
+  'Classical Studies':           { dot: 'bg-violet-600',  bg: 'bg-violet-50 dark:bg-violet-900/20',   border: 'border-violet-200 dark:border-violet-800/40',   text: 'text-violet-700 dark:text-violet-300' },
+  'Latin':                       { dot: 'bg-slate-600',   bg: 'bg-slate-50 dark:bg-slate-900/20',     border: 'border-slate-200 dark:border-slate-800/40',     text: 'text-slate-700 dark:text-slate-300' },
 };
 
 const DEFAULT_COLOR = { dot: 'bg-zinc-500', bg: 'bg-zinc-50 dark:bg-zinc-800/40', border: 'border-zinc-200 dark:border-zinc-700/40', text: 'text-zinc-700 dark:text-zinc-300' };
@@ -76,6 +89,16 @@ export const SUBJECT_HEX_COLORS: Record<string, string> = {
   'Technology': '#636E72',
   'Design & Communication Graphics': '#6C5CE7',
   'Physical Education': '#D63031',
+  // ─── Junior Cycle-only hex entries (Phase 1) ───────────────────────────
+  'Science': '#16a34a',
+  'CSPE': '#9333ea',
+  'SPHE': '#e879f9',
+  'Business Studies': '#b45309',
+  'Materials Technology (Wood)': '#57534e',
+  'Metalwork': '#52525b',
+  'Graphics': '#4338ca',
+  'Classical Studies': '#7c3aed',
+  'Latin': '#475569',
 };
 
 export function getSubjectHex(name: string): string {

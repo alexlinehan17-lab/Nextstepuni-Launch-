@@ -34,11 +34,9 @@ import { motion } from 'framer-motion';
 import { TRAP_CARDS, TRAP_CATEGORY_LABELS, TRAP_CATEGORY_FIXES } from '../../../../data/knowledge/trapCards';
 import { type TrapCard, type TrapCategory } from '../../../../types/knowledge';
 import { writePattern } from '../knowledgePatterns';
+import { ACCENT, ACCENT_DARK, ACCENT_TINT } from '../../colors';
 
-const TEAL = '#2A7D6F';
-const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#F0FAF8';
 const WARN = '#A8746E';
 
 const TIMER_SECONDS = 30;
@@ -212,7 +210,7 @@ const ProgressTrack: React.FC<{ idx: number; total: number; history: ResolvedCar
         const past = history[i];
         const current = i === idx;
         let bg = '#EDEBE8';
-        if (past) bg = past.spotted ? TEAL : WARN;
+        if (past) bg = past.spotted ? ACCENT : WARN;
         else if (current) bg = INK;
         return (
           <div
@@ -309,9 +307,9 @@ const Card: React.FC<{ card: TrapCard; onResolve: (r: ResolvedCard) => void }> =
               fontWeight: 700,
               textTransform: 'uppercase',
               letterSpacing: 0.5,
-              color: TEAL,
-              backgroundColor: `${TEAL}15`,
-              border: `1px solid ${TEAL}66`,
+              color: ACCENT,
+              backgroundColor: `${ACCENT}15`,
+              border: `1px solid ${ACCENT}66`,
               borderRadius: 999,
               padding: '3px 10px',
             }}
@@ -362,9 +360,9 @@ const PhaseBadge: React.FC<{ phase: Phase; secondsLeft: number; verdict: 'spotte
           fontWeight: 700,
           textTransform: 'uppercase',
           letterSpacing: 0.5,
-          color: verdict === 'spotted' ? TEAL : WARN,
-          backgroundColor: verdict === 'spotted' ? `${TEAL}15` : `${WARN}15`,
-          border: `1px solid ${verdict === 'spotted' ? TEAL : WARN}`,
+          color: verdict === 'spotted' ? ACCENT : WARN,
+          backgroundColor: verdict === 'spotted' ? `${ACCENT}15` : `${WARN}15`,
+          border: `1px solid ${verdict === 'spotted' ? ACCENT : WARN}`,
           borderRadius: 999,
           padding: '4px 12px',
         }}
@@ -393,7 +391,7 @@ const TimerRing: React.FC<{ seconds: number }> = ({ seconds }) => {
         cy="14"
         r={r}
         fill="none"
-        stroke={seconds <= 5 ? WARN : TEAL}
+        stroke={seconds <= 5 ? WARN : ACCENT}
         strokeWidth="2"
         strokeLinecap="round"
         strokeDasharray={`${dash} ${c}`}
@@ -417,7 +415,7 @@ const QuestionDisplay: React.FC<{ card: TrapCard; phase: Phase }> = ({ card, pha
         color: INK,
         fontStyle: 'italic',
         padding: '18px 22px',
-        backgroundColor: CREAM,
+        backgroundColor: ACCENT_TINT,
         borderRadius: 12,
         border: `1.5px solid ${INK}`,
       }}
@@ -450,14 +448,14 @@ const RenderedQuestion: React.FC<{
           <motion.span
             key={i}
             initial={{ backgroundColor: 'transparent' }}
-            animate={{ backgroundColor: `${TEAL}33` }}
+            animate={{ backgroundColor: `${ACCENT}33` }}
             transition={{ duration: 0.35 }}
             style={{
               padding: '2px 4px',
               borderRadius: 4,
               fontWeight: 700,
-              color: TEAL_DARK,
-              borderBottom: `2px solid ${TEAL}`,
+              color: ACCENT_DARK,
+              borderBottom: `2px solid ${ACCENT}`,
               fontStyle: 'normal',
             }}
           >
@@ -480,9 +478,9 @@ const NeutralActions: React.FC<{ onSpot: () => void; onFine: () => void }> = ({ 
       onClick={onSpot}
       className="font-sans rounded-full"
       style={{
-        backgroundColor: TEAL,
+        backgroundColor: ACCENT,
         color: '#FFFFFF',
-        border: `1px solid ${TEAL}`,
+        border: `1px solid ${ACCENT}`,
         padding: '11px 22px',
         fontSize: 13,
         fontWeight: 600,
@@ -497,8 +495,8 @@ const NeutralActions: React.FC<{ onSpot: () => void; onFine: () => void }> = ({ 
       className="font-sans rounded-full"
       style={{
         backgroundColor: '#FFFFFF',
-        color: TEAL,
-        border: `1px solid ${TEAL}55`,
+        color: ACCENT,
+        border: `1px solid ${ACCENT}55`,
         padding: '11px 22px',
         fontSize: 13,
         fontWeight: 600,
@@ -515,12 +513,12 @@ const RevealPanel: React.FC<{ card: TrapCard; verdict: 'spotted' | 'missed' | nu
     <div
       className="rounded-xl"
       style={{
-        backgroundColor: verdict === 'spotted' ? `${TEAL}10` : `${WARN}10`,
-        border: `1.5px solid ${verdict === 'spotted' ? TEAL : WARN}`,
+        backgroundColor: verdict === 'spotted' ? `${ACCENT}10` : `${WARN}10`,
+        border: `1.5px solid ${verdict === 'spotted' ? ACCENT : WARN}`,
         padding: '14px 16px',
       }}
     >
-      <p className="font-sans" style={{ fontSize: 10.5, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: verdict === 'spotted' ? TEAL_DARK : WARN, marginBottom: 6 }}>
+      <p className="font-sans" style={{ fontSize: 10.5, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: verdict === 'spotted' ? ACCENT_DARK : WARN, marginBottom: 6 }}>
         {TRAP_CATEGORY_LABELS[card.category]}
       </p>
       <p className="font-serif" style={{ fontSize: 16, fontWeight: 600, color: INK, marginBottom: 6, lineHeight: 1.4 }}>
@@ -536,9 +534,9 @@ const RevealPanel: React.FC<{ card: TrapCard; verdict: 'spotted' | 'missed' | nu
         onClick={onContinue}
         className="font-sans rounded-full"
         style={{
-          backgroundColor: TEAL,
+          backgroundColor: ACCENT,
           color: '#FFFFFF',
-          border: `1px solid ${TEAL}`,
+          border: `1px solid ${ACCENT}`,
           padding: '9px 20px',
           fontSize: 12.5,
           fontWeight: 600,
@@ -556,7 +554,7 @@ const ConsequencePanel: React.FC<{ card: TrapCard; onContinue: () => void }> = (
     <div
       className="rounded-xl"
       style={{
-        backgroundColor: '#F0FAF8',
+        backgroundColor: ACCENT_TINT,
         border: `1px solid ${WARN}33`,
         padding: '18px 20px',
       }}
@@ -580,9 +578,9 @@ const ConsequencePanel: React.FC<{ card: TrapCard; onContinue: () => void }> = (
         onClick={onContinue}
         className="font-sans rounded-full"
         style={{
-          backgroundColor: TEAL,
+          backgroundColor: ACCENT,
           color: '#FFFFFF',
-          border: `1px solid ${TEAL}`,
+          border: `1px solid ${ACCENT}`,
           padding: '9px 20px',
           fontSize: 12.5,
           fontWeight: 600,
@@ -651,12 +649,12 @@ const PatternBreakCard: React.FC<{ history: ResolvedCard[]; onContinue: () => vo
       transition={{ duration: 0.45, ease: 'easeOut' }}
       className="rounded-2xl"
       style={{
-        backgroundColor: '#F0FAF8',
-        border: `1px solid ${TEAL}33`,
+        backgroundColor: ACCENT_TINT,
+        border: `1px solid ${ACCENT}33`,
         padding: '24px 26px',
       }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
         Pattern check · {history.length} cards in
       </p>
       <h3 className="font-serif" style={{ fontSize: 22, fontWeight: 600, color: INK, lineHeight: 1.25, marginTop: 6 }}>
@@ -669,7 +667,7 @@ const PatternBreakCard: React.FC<{ history: ResolvedCard[]; onContinue: () => vo
 
       {topCategory && topCount >= 2 && (
         <div className="mt-4">
-          <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 6 }}>
+          <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 6 }}>
             Behavioural fix
           </p>
           <p className="font-sans" style={{ fontSize: 13.5, color: '#3F3B36', lineHeight: 1.6 }}>
@@ -690,9 +688,9 @@ const PatternBreakCard: React.FC<{ history: ResolvedCard[]; onContinue: () => vo
           onClick={onContinue}
           className="font-sans rounded-full"
           style={{
-            backgroundColor: TEAL,
+            backgroundColor: ACCENT,
             color: '#FFFFFF',
-            border: `1px solid ${TEAL}`,
+            border: `1px solid ${ACCENT}`,
             padding: '10px 22px',
             fontSize: 13,
             fontWeight: 600,
@@ -744,9 +742,9 @@ const FinalReport: React.FC<{ history: ResolvedCard[]; totalCards: number; onRes
   return (
     <section
       className="rounded-2xl"
-      style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '26px 28px' }}
+      style={{ backgroundColor: ACCENT_TINT, border: `1px solid ${ACCENT}33`, padding: '26px 28px' }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
         Your trap map
       </p>
       <h2 className="font-serif" style={{ fontSize: 26, fontWeight: 600, color: INK, lineHeight: 1.2, marginTop: 6 }}>
@@ -771,7 +769,7 @@ const FinalReport: React.FC<{ history: ResolvedCard[]; totalCards: number; onRes
                   initial={{ width: 0 }}
                   animate={{ width: `${pct}%` }}
                   transition={{ duration: 0.6, ease: 'easeOut' }}
-                  style={{ height: '100%', backgroundColor: pct >= 67 ? TEAL : WARN }}
+                  style={{ height: '100%', backgroundColor: pct >= 67 ? ACCENT : WARN }}
                 />
               </div>
             </div>
@@ -781,7 +779,7 @@ const FinalReport: React.FC<{ history: ResolvedCard[]; totalCards: number; onRes
 
       {blindSpot && (
         <div className="mt-7">
-          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
             Your biggest blind spot
           </p>
           <h4 className="font-serif" style={{ fontSize: 17, fontWeight: 600, color: INK, marginTop: 4, marginBottom: 6 }}>
@@ -799,9 +797,9 @@ const FinalReport: React.FC<{ history: ResolvedCard[]; totalCards: number; onRes
           onClick={onRestart}
           className="font-sans rounded-full"
           style={{
-            backgroundColor: TEAL,
+            backgroundColor: ACCENT,
             color: '#FFFFFF',
-            border: `1px solid ${TEAL}`,
+            border: `1px solid ${ACCENT}`,
             padding: '10px 22px',
             fontSize: 13,
             fontWeight: 600,

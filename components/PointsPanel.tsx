@@ -17,7 +17,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const TEAL = '#2A7D6F';
+const TEAL = '#F26B1F'; // Brand pivot — was #F26B1F (teal); now orange. TODO: rename constant.
 
 // ── Item icons — painted-blob + ink-illustration, 100x100 viewBox ───────
 const StudySessionIcon: React.FC = () => (
@@ -315,7 +315,7 @@ const PointsPanel: React.FC<PointsPanelProps> = ({ open, onHide }) => (
             </div>
             <button
               onClick={onHide}
-              className="shrink-0 inline-flex items-center gap-1.5 px-2 py-1 -mr-2 rounded-md transition-colors hover:text-[#1A1A1A] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(42,125,111,0.4)]"
+              className="shrink-0 inline-flex items-center gap-1.5 px-2 py-1 -mr-2 rounded-md transition-colors hover:text-[#1A1A1A] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.4)]"
               style={{
                 fontFamily: "'DM Sans', system-ui, sans-serif",
                 fontSize: 13,

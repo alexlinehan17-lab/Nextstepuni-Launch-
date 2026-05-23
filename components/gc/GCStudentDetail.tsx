@@ -1062,8 +1062,9 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   const renderFlagBanner = () => {
     if (!flagData) return null;
     const isHigh = flagData.priority === 'high';
-    const bannerColor = isHigh ? '#D97706' : '#2A7D6F';
-    const bannerBg = isHigh ? 'rgba(217,119,6,0.08)' : 'rgba(42,125,111,0.08)';
+    // Semantic banner: warning (amber) when high priority, normal (green) otherwise.
+    const bannerColor = isHigh ? '#D97706' : '#3A8D5F';
+    const bannerBg = isHigh ? 'rgba(217,119,6,0.08)' : 'rgba(58,141,95,0.08)';
     return (
       <div className="flex items-center gap-3 px-6 py-2.5" style={{ backgroundColor: bannerBg }} role="status" aria-label={`Student is ${isHigh ? 'high priority' : ''} flagged`}>
         <Flag size={13} fill={bannerColor} style={{ color: bannerColor }} className="shrink-0" aria-hidden="true" />

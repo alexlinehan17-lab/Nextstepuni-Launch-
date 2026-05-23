@@ -8,6 +8,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { WifiOff, Wifi } from 'lucide-react';
 import { useOnlineStatus } from '../hooks/useOnlineStatus';
+import { COLORS } from '../design/tokens';
 
 const OfflineBanner: React.FC = () => {
   const isOnline = useOnlineStatus();
@@ -45,7 +46,7 @@ const OfflineBanner: React.FC = () => {
           transition={{ duration: 0.3, ease: [0.25, 1, 0.5, 1] }}
           className="fixed top-0 left-0 right-0 z-[200] flex items-center justify-center gap-2 py-2 px-4 text-xs font-medium"
           style={{
-            backgroundColor: isOnline ? '#2A7D6F' : '#D4891C',
+            backgroundColor: isOnline ? COLORS.success : '#D4891C',
             color: '#fff',
           }}
         >

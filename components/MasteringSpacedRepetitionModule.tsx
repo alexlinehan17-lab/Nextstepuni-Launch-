@@ -15,6 +15,7 @@ import { skyTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, ToolJumpCard } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { COLORS } from '../design/tokens';
 
 const theme = skyTheme;
 
@@ -123,7 +124,7 @@ const ForgettingCurveVisualizer = () => {
     return (
       <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         <div className="text-center mb-6">
-          <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Memory Science</span>
+          <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Memory Science</span>
           <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>The Forgetting Curve</h4>
           <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Each review doesn't just refresh the memory — it makes the decay slower. Add reviews one at a time.</p>
         </div>
@@ -135,7 +136,7 @@ const ForgettingCurveVisualizer = () => {
             <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#f0ece6', color: '#9e9186', border: '1px solid #d0cdc8', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Retention over 30 days</span>
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-1.5">
-                <div style={{ width: 14, height: 2, backgroundColor: '#2A7D6F', borderRadius: 2 }} />
+                <div style={{ width: 14, height: 2, backgroundColor: COLORS.accent, borderRadius: 2 }} />
                 <span style={{ fontSize: 11, color: '#5a5550' }}>With reviews</span>
               </div>
               <div className="flex items-center gap-1.5">
@@ -148,8 +149,8 @@ const ForgettingCurveVisualizer = () => {
           <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto">
             <defs>
               <linearGradient id="srActiveGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#2A7D6F" stopOpacity="0.08" />
-                <stop offset="100%" stopColor="#2A7D6F" stopOpacity="0" />
+                <stop offset="0%" stopColor={COLORS.accent} stopOpacity="0.08" />
+                <stop offset="100%" stopColor={COLORS.accent} stopOpacity="0" />
               </linearGradient>
             </defs>
 
@@ -179,19 +180,19 @@ const ForgettingCurveVisualizer = () => {
             )}
 
             {/* Active curve — always teal */}
-            <motion.path key={`curve-${reviewCount}`} d={activePath} fill="none" stroke="#2A7D6F" strokeWidth="2.5" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2, ease: 'easeOut' }} />
+            <motion.path key={`curve-${reviewCount}`} d={activePath} fill="none" stroke={COLORS.accent} strokeWidth="2.5" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2, ease: 'easeOut' }} />
 
             {/* Review markers — all teal */}
             {reviewSchedule.slice(0, reviewCount).map((r, i) => (
               <g key={i}>
-                <motion.circle cx={toX(r.day)} cy={toY(98)} r="5" fill="#2A7D6F" stroke="white" strokeWidth="2" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.3, type: 'spring' }} />
-                <motion.line x1={toX(r.day)} y1={padT} x2={toX(r.day)} y2={H - padB} stroke="rgba(42,125,111,0.2)" strokeWidth="1" strokeDasharray="4 3" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} />
+                <motion.circle cx={toX(r.day)} cy={toY(98)} r="5" fill={COLORS.accent} stroke="white" strokeWidth="2" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.3, type: 'spring' }} />
+                <motion.line x1={toX(r.day)} y1={padT} x2={toX(r.day)} y2={H - padB} stroke="rgba(242,107,31,0.2)" strokeWidth="1" strokeDasharray="4 3" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} />
               </g>
             ))}
 
             {/* Endpoints */}
             <circle cx={toX(totalDays)} cy={toY(baselineRetention)} r="3" fill="#d0cdc8" />
-            <motion.circle key={`end-${reviewCount}`} cx={toX(totalDays)} cy={toY(finalRetention)} r="5" fill="#2A7D6F" stroke="white" strokeWidth="2" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.8 }} />
+            <motion.circle key={`end-${reviewCount}`} cx={toX(totalDays)} cy={toY(finalRetention)} r="5" fill={COLORS.accent} stroke="white" strokeWidth="2" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.8 }} />
           </svg>
         </div>
 
@@ -203,9 +204,9 @@ const ForgettingCurveVisualizer = () => {
               onClick={() => setReviewCount(i + 1)}
               disabled={i + 1 <= reviewCount}
               style={{
-                backgroundColor: i < reviewCount ? '#2A7D6F' : '#FFFFFF',
+                backgroundColor: i < reviewCount ? COLORS.accent : '#FFFFFF',
                 color: i < reviewCount ? '#FFFFFF' : i === reviewCount ? '#1a1a1a' : '#b0a898',
-                border: i < reviewCount ? '2px solid #2A7D6F' : '2px solid #1a1a1a',
+                border: i < reviewCount ? `2px solid ${COLORS.accent}` : '2px solid #1a1a1a',
                 borderRadius: 20,
                 padding: '10px 18px',
                 fontSize: 13,
@@ -231,12 +232,12 @@ const ForgettingCurveVisualizer = () => {
             <p className="font-serif font-bold" style={{ fontSize: 40, color: '#E85D75', lineHeight: 1 }}>{baselineRetention}%</p>
             <p style={{ fontSize: 12, color: '#9e9186', marginTop: 6 }}>retention without practice</p>
           </div>
-          <div className="text-center" style={{ backgroundColor: reviewCount > 0 ? '#e8f5f2' : '#FFFFFF', border: reviewCount > 0 ? '2px solid #2A7D6F' : '2px solid #1a1a1a', borderRadius: 14, padding: '18px 20px' }}>
-            <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: reviewCount > 0 ? '#1a6358' : '#9e9186', marginBottom: 8, textTransform: 'uppercase' as const }}>
+          <div className="text-center" style={{ backgroundColor: reviewCount > 0 ? COLORS.accentTint : '#FFFFFF', border: reviewCount > 0 ? `2px solid ${COLORS.accent}` : '2px solid #1a1a1a', borderRadius: 14, padding: '18px 20px' }}>
+            <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: reviewCount > 0 ? COLORS.accentDarkText : '#9e9186', marginBottom: 8, textTransform: 'uppercase' as const }}>
               {reviewCount > 0 ? `${reviewCount} review${reviewCount > 1 ? 's' : ''} — Day 30` : 'Add reviews'}
             </p>
-            <p className="font-serif font-bold" style={{ fontSize: 40, color: reviewCount > 0 ? '#2A7D6F' : '#b0a898', lineHeight: 1 }}>{finalRetention}%</p>
-            <p style={{ fontSize: 12, color: reviewCount > 0 ? '#2A7D6F' : '#9e9186', marginTop: 6 }}>retention with spaced practice</p>
+            <p className="font-serif font-bold" style={{ fontSize: 40, color: reviewCount > 0 ? COLORS.accent : '#b0a898', lineHeight: 1 }}>{finalRetention}%</p>
+            <p style={{ fontSize: 12, color: reviewCount > 0 ? COLORS.accent : '#9e9186', marginTop: 6 }}>retention with spaced practice</p>
           </div>
         </div>
 
@@ -247,9 +248,9 @@ const ForgettingCurveVisualizer = () => {
             initial={{ opacity: 0, y: 6 }}
             animate={{ opacity: 1, y: 0 }}
             className="mt-4"
-            style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
+            style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: COLORS.accentTint, borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
           >
-            <p className="text-sm italic" style={{ color: '#1a6358' }}>
+            <p className="text-sm italic" style={{ color: COLORS.accentDarkText }}>
               {reviewCount === 1 && 'After 1 review, the memory is slightly more stable — but still fragile.'}
               {reviewCount === 2 && 'After 2 reviews, the decay is noticeably slower. The curve is flattening.'}
               {reviewCount === 3 && 'After 3 reviews, the memory is becoming durable. Notice how much flatter the curve is.'}

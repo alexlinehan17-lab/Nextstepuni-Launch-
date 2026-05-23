@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @keyframes streak-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(42,125,111,0.3); }
-  50% { box-shadow: 0 0 0 4px rgba(42,125,111,0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(242,107,31,0.3); }
+  50% { box-shadow: 0 0 0 4px rgba(242,107,31,0); }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -44,11 +44,11 @@
 }
 .chunky-slider:active::-moz-range-thumb { cursor: grabbing; }
 
-/* Colour variants — Teal (default / single slider) */
-.chunky-slider-teal::-webkit-slider-thumb { background: #2A7D6F; border: 2.5px solid #1F5F54; box-shadow: 3px 3px 0px 0px #1F5F54; }
-.chunky-slider-teal::-moz-range-thumb { background: #2A7D6F; border: 2.5px solid #1F5F54; box-shadow: 3px 3px 0px 0px #1F5F54; }
-.chunky-slider-teal:hover::-webkit-slider-thumb { box-shadow: 4px 4px 0px 0px #1F5F54; }
-.chunky-slider-teal:active::-webkit-slider-thumb { box-shadow: 1px 1px 0px 0px #1F5F54; }
+/* Colour variants — Accent (default / single slider) */
+.chunky-slider-accent::-webkit-slider-thumb { background: #F26B1F; border: 2.5px solid #B54D14; box-shadow: 3px 3px 0px 0px #B54D14; }
+.chunky-slider-accent::-moz-range-thumb { background: #F26B1F; border: 2.5px solid #B54D14; box-shadow: 3px 3px 0px 0px #B54D14; }
+.chunky-slider-accent:hover::-webkit-slider-thumb { box-shadow: 4px 4px 0px 0px #B54D14; }
+.chunky-slider-accent:active::-webkit-slider-thumb { box-shadow: 1px 1px 0px 0px #B54D14; }
 
 /* Sky (1st in group) */
 .chunky-slider-sky::-webkit-slider-thumb { background: #2563EB; border: 2.5px solid #1D4ED8; box-shadow: 3px 3px 0px 0px #1D4ED8; }

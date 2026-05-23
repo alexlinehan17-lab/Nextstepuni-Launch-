@@ -6,16 +6,18 @@
 import { useState, useEffect, useCallback } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { type UserSettings, type AccentThemeId } from '../types';
-import { ACCENT_THEMES } from '../themeData';
+import { type UserSettings } from '../types';
 
 const STORAGE_KEY = 'nextstep-settings';
 
+// `accentTheme` was removed as part of the teal→orange brand pivot — the
+// `--accent` CSS variables now come solely from index.html. Any existing
+// `accentTheme` field on settings/{uid} docs is orphan data and is ignored
+// on read.
 const DEFAULT_SETTINGS: UserSettings = {
   language: 'en',
   avatar: '',
   darkMode: false,
-  accentTheme: 'terracotta',
   cardStyle: 'default',
   defaultWorkMinutes: 25,
   flaresToggle: true,
@@ -88,31 +90,14 @@ export function useSettings(uid?: string, userAvatar?: string) {
     }
   }, [settings.darkMode]);
 
-  // Sync accent CSS vars
-  useEffect(() => {
-    const theme = ACCENT_THEMES[settings.accentTheme] || ACCENT_THEMES.terracotta;
-    const el = document.documentElement;
-    el.style.setProperty('--accent', theme.rgb);
-    el.style.setProperty('--accent-hex', theme.hex);
-    el.style.setProperty('--accent-dark', theme.darkRgb);
-    el.style.setProperty('--accent-dark-hex', theme.darkHex);
-  }, [settings.accentTheme]);
-
   // Sync card style data attribute
   useEffect(() => {
     document.body.dataset.cardStyle = settings.cardStyle || 'default';
   }, [settings.cardStyle]);
 
   const updateSetting = useCallback(<K extends keyof UserSettings>(key: K, value: UserSettings[K]) => {
-    // Immediately sync CSS vars / DOM before React re-render
-    if (key === 'accentTheme') {
-      const theme = ACCENT_THEMES[value as AccentThemeId] || ACCENT_THEMES.terracotta;
-      const el = document.documentElement;
-      el.style.setProperty('--accent', theme.rgb);
-      el.style.setProperty('--accent-hex', theme.hex);
-      el.style.setProperty('--accent-dark', theme.darkRgb);
-      el.style.setProperty('--accent-dark-hex', theme.darkHex);
-    } else if (key === 'darkMode') {
+    // Immediately sync DOM before React re-render
+    if (key === 'darkMode') {
       if (value) {
         document.documentElement.classList.add('dark');
       } else {

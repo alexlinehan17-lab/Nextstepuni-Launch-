@@ -11,8 +11,8 @@
 import React, { useMemo, useState } from 'react';
 import { type ExamSubject, type TrapPattern } from '../../types/examStrategiser';
 import { TRAP_PATTERNS } from '../../data/examStrategy';
+import { ACCENT, ACCENT_TINT } from './colors';
 
-const TEAL = '#2A7D6F';
 
 interface Props {
   /** Called when a student clicks an example. Navigates to the question. */
@@ -63,7 +63,7 @@ const TrapLibrary: React.FC<Props> = ({ onOpenQuestion }) => {
         <div
           className="rounded-2xl text-center"
           style={{
-            backgroundColor: '#F0FAF8',
+            backgroundColor: ACCENT_TINT,
             border: '1px solid #EDEBE8',
             padding: '36px 24px',
           }}
@@ -97,7 +97,7 @@ const FilterStrip: React.FC<{ value: SubjectFilter; onChange: (v: SubjectFilter)
             fontSize: 13,
             fontWeight: 600,
             backgroundColor: active ? '#FFFFFF' : 'transparent',
-            color: active ? TEAL : '#78716C',
+            color: active ? ACCENT : '#78716C',
             border: 'none',
             cursor: 'pointer',
             boxShadow: active ? '0 1px 2px rgba(0,0,0,0.04)' : 'none',
@@ -135,9 +135,9 @@ const PatternCard: React.FC<{ pattern: TrapPattern; onOpenQuestion: (id: string)
               fontWeight: 700,
               textTransform: 'uppercase',
               letterSpacing: 0.5,
-              color: TEAL,
-              backgroundColor: '#F0FAF8',
-              border: `1px solid ${TEAL}33`,
+              color: ACCENT,
+              backgroundColor: ACCENT_TINT,
+              border: `1px solid ${ACCENT}33`,
               borderRadius: 999,
               padding: '2px 8px',
             }}
@@ -152,8 +152,8 @@ const PatternCard: React.FC<{ pattern: TrapPattern; onOpenQuestion: (id: string)
       {pattern.description}
     </p>
 
-    <div className="rounded-lg" style={{ backgroundColor: '#F0FAF8', border: '1px solid #EDEBE8', padding: '10px 14px', marginBottom: 14 }}>
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 4 }}>
+    <div className="rounded-lg" style={{ backgroundColor: ACCENT_TINT, border: '1px solid #EDEBE8', padding: '10px 14px', marginBottom: 14 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 4 }}>
         How to spot it
       </p>
       <p className="font-sans" style={{ fontSize: 12.5, color: '#3F3B36', lineHeight: 1.55 }}>
@@ -177,7 +177,7 @@ const PatternCard: React.FC<{ pattern: TrapPattern; onOpenQuestion: (id: string)
               padding: '10px 14px',
               cursor: 'pointer',
             }}
-            onMouseEnter={(e) => { e.currentTarget.style.borderColor = TEAL + '55'; e.currentTarget.style.backgroundColor = '#F0FAF8'; }}
+            onMouseEnter={(e) => { e.currentTarget.style.borderColor = ACCENT + '55'; e.currentTarget.style.backgroundColor = ACCENT_TINT; }}
             onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#EDEBE8'; e.currentTarget.style.backgroundColor = '#FFFFFF'; }}
           >
             <div className="flex items-start justify-between gap-3">
@@ -199,7 +199,7 @@ const PatternCard: React.FC<{ pattern: TrapPattern; onOpenQuestion: (id: string)
 );
 
 const ArrowIcon: React.FC = () => (
-  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden style={{ flexShrink: 0, color: TEAL, marginTop: 2 }}>
+  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden style={{ flexShrink: 0, color: ACCENT, marginTop: 2 }}>
     <path d="M5 3L10 8L5 13" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );

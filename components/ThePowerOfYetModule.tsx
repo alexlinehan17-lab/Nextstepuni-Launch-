@@ -279,7 +279,7 @@ const BridgeBuilder = () => {
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       {/* Section chip + title */}
       <div className="text-center mb-2">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Growth Mindset Activity</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Growth Mindset Activity</span>
         <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Bridge Builder</h4>
         <p className="text-sm mt-1" style={{ color: '#7a7068' }}>
           Build a bridge from "Yet" to your goal by choosing <strong>specific, concrete</strong> actions.
@@ -288,9 +288,9 @@ const BridgeBuilder = () => {
 
       {/* Bridge strength chip */}
       <div className="flex justify-center mb-8 mt-3">
-        <div className="inline-flex items-center gap-2" style={{ backgroundColor: '#e8f5f2', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '5px 14px' }}>
+        <div className="inline-flex items-center gap-2" style={{ backgroundColor: '#FDEEDF', border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '5px 14px' }}>
           <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.08em', color: '#9e9186', textTransform: 'uppercase' as const }}>Bridge Strength</span>
-          <span style={{ fontSize: 13, fontWeight: 600, color: '#1a6358' }}>{placedStrong.length} / 3 planks</span>
+          <span style={{ fontSize: 13, fontWeight: 600, color: '#8C3A0E' }}>{placedStrong.length} / 3 planks</span>
         </div>
       </div>
 
@@ -325,8 +325,8 @@ const BridgeBuilder = () => {
                     flex: 1,
                     height: 48,
                     borderRadius: 8,
-                    backgroundColor: placed ? '#2A7D6F' : '#f4f0eb',
-                    border: placed ? '2px solid #1a5a4e' : '2px dashed #d0cdc8',
+                    backgroundColor: placed ? '#F26B1F' : '#f4f0eb',
+                    border: placed ? '2px solid #B54D14' : '2px dashed #d0cdc8',
                   }}
                 >
                   {placed && (
@@ -357,8 +357,8 @@ const BridgeBuilder = () => {
 
         {/* Right — Goal card */}
         <div className="flex items-center z-10 w-28 md:w-36 shrink-0">
-          <div className="w-full flex items-center justify-center px-3" style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '20px 16px' }}>
-            <p className="font-serif font-semibold text-center leading-tight" style={{ fontSize: 15, color: '#1a6358' }}>
+          <div className="w-full flex items-center justify-center px-3" style={{ backgroundColor: '#FDEEDF', border: '2px solid #F26B1F', borderRadius: 14, padding: '20px 16px' }}>
+            <p className="font-serif font-semibold text-center leading-tight" style={{ fontSize: 15, color: '#8C3A0E' }}>
               {scenario.goal}
             </p>
           </div>
@@ -389,10 +389,10 @@ const BridgeBuilder = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             className="mb-4"
-            style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 16, padding: 24 }}
+            style={{ backgroundColor: '#FDEEDF', border: '2px solid #F26B1F', borderRadius: 16, padding: 24 }}
           >
-            <p className="font-serif font-bold text-center" style={{ fontSize: 20, color: '#1a6358' }}>Bridge complete.</p>
-            <p className="text-center mt-1" style={{ fontSize: 14, color: '#2A7D6F' }}>You turned "yet" into a concrete plan.</p>
+            <p className="font-serif font-bold text-center" style={{ fontSize: 20, color: '#8C3A0E' }}>Bridge complete.</p>
+            <p className="text-center mt-1" style={{ fontSize: 14, color: '#F26B1F' }}>You turned "yet" into a concrete plan.</p>
           </MotionDiv>
         )}
       </AnimatePresence>
@@ -419,7 +419,7 @@ const BridgeBuilder = () => {
                   className="text-left text-sm transition-all"
                   style={
                     isPlaced
-                      ? { backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '16px 20px', color: '#1a6358', opacity: 0.7 }
+                      ? { backgroundColor: '#FDEEDF', border: '2px solid #F26B1F', borderRadius: 14, padding: '16px 20px', color: '#8C3A0E', opacity: 0.7 }
                       : isDiscarded
                       ? { backgroundColor: '#fafaf8', border: '2px solid #e0dbd4', borderRadius: 14, padding: '16px 20px', color: '#b0a898', textDecoration: 'line-through', pointerEvents: 'none' as const }
                       : { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 14, padding: '16px 20px', color: '#1a1a1a', cursor: 'pointer' }
@@ -439,7 +439,7 @@ const BridgeBuilder = () => {
           onClick={handleNewScenario}
           className="font-medium transition-colors"
           style={{ fontSize: 13, color: '#9e9186', background: 'none', border: 'none' }}
-          onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#2A7D6F'; }}
+          onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#F26B1F'; }}
           onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#9e9186'; }}
         >
           New Scenario

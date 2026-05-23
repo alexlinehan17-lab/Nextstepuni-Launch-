@@ -32,11 +32,9 @@ import React, { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { SRP_SAMPLES } from '../../../../data/knowledge/srpSamples';
 import { type SrpSample, type SrpSentence } from '../../../../types/knowledge';
+import { ACCENT, ACCENT_DARK, ACCENT_TINT } from '../../colors';
 
-const TEAL = '#2A7D6F';
-const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#F0FAF8';
 
 type Phase = 'student' | 'examiner' | 'provenance';
 
@@ -186,7 +184,7 @@ const SampleHeader: React.FC<{ sample: SrpSample }> = ({ sample }) => (
       padding: '20px 24px',
     }}
   >
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 6 }}>
+    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 6 }}>
       Question prompt
     </p>
     <p className="font-serif" style={{ fontSize: 16, fontWeight: 500, color: INK, lineHeight: 1.5, fontStyle: 'italic' }}>
@@ -253,9 +251,9 @@ const PhaseStepper: React.FC<{
                 onClick={() => reachable && onChange(p)}
                 className="font-sans flex-1 text-left rounded-xl transition-colors"
                 style={{
-                  backgroundColor: isActive ? TEAL : isPast ? '#F0FAF8' : '#FFFFFF',
+                  backgroundColor: isActive ? ACCENT : isPast ? ACCENT_TINT : '#FFFFFF',
                   color: isActive ? '#FFFFFF' : isPast ? INK : '#9e9186',
-                  border: `1.5px solid ${isActive ? TEAL : isPast ? INK : '#d0cdc8'}`,
+                  border: `1.5px solid ${isActive ? ACCENT : isPast ? INK : '#d0cdc8'}`,
                   padding: '10px 14px',
                   cursor: reachable ? 'pointer' : 'not-allowed',
                 }}
@@ -292,12 +290,12 @@ const ParagraphPanel: React.FC<{
   <section
     className="rounded-2xl"
     style={{
-      backgroundColor: CREAM,
+      backgroundColor: ACCENT_TINT,
       border: `2px solid ${INK}`,
       padding: '24px 26px',
     }}
   >
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 10 }}>
+    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 10 }}>
       Sample answer paragraph
     </p>
     <div className="space-y-1.5" style={{ fontSize: 15.5, lineHeight: 1.7 }}>
@@ -333,20 +331,20 @@ const SentenceLine: React.FC<{
 
   if (phase === 'student') {
     if (studentPicked) {
-      bg = `${TEAL}20`;
-      border = `1.5px solid ${TEAL}`;
+      bg = `${ACCENT}20`;
+      border = `1.5px solid ${ACCENT}`;
     }
   } else if (phase === 'examiner' || phase === 'provenance') {
     if (isExaminerSrp && studentPicked) {
       // Confirmed SRP — both student and examiner agree
-      bg = TEAL;
+      bg = ACCENT;
       textColor = '#FFFFFF';
-      border = `1.5px solid ${TEAL_DARK}`;
+      border = `1.5px solid ${ACCENT_DARK}`;
     } else if (isExaminerSrp && !studentPicked) {
       // Missed SRP
       bg = 'transparent';
-      border = `1.5px dashed ${TEAL}`;
-      textColor = TEAL_DARK;
+      border = `1.5px dashed ${ACCENT}`;
+      textColor = ACCENT_DARK;
     } else if (!isExaminerSrp && studentPicked) {
       // False positive
       bg = '#FFFFFF';
@@ -386,7 +384,7 @@ const SentenceLine: React.FC<{
       }}
       animate={
         phase !== 'student' && isExaminerSrp && !studentPicked
-          ? { boxShadow: [`0 0 0 0 ${TEAL}00`, `0 0 0 4px ${TEAL}33`, `0 0 0 0 ${TEAL}00`] }
+          ? { boxShadow: [`0 0 0 0 ${ACCENT}00`, `0 0 0 4px ${ACCENT}33`, `0 0 0 0 ${ACCENT}00`] }
           : { boxShadow: '0 0 0 0 transparent' }
       }
       transition={
@@ -433,8 +431,8 @@ const SentenceMarker: React.FC<{
           width: 18,
           height: 18,
           borderRadius: 6,
-          border: `1.5px solid ${studentPicked ? TEAL : '#9e9186'}`,
-          backgroundColor: studentPicked ? TEAL : 'transparent',
+          border: `1.5px solid ${studentPicked ? ACCENT : '#9e9186'}`,
+          backgroundColor: studentPicked ? ACCENT : 'transparent',
           flexShrink: 0,
           marginTop: 4,
           display: 'flex',
@@ -596,7 +594,7 @@ const ProvenanceTrail: React.FC<{ sample: SrpSample }> = ({ sample }) => {
     >
       <div className="flex items-baseline justify-between gap-3 mb-4 flex-wrap">
         <div>
-          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
             Mark provenance
           </p>
           <p className="font-serif" style={{ fontSize: 17, fontWeight: 600, color: INK, marginTop: 2 }}>
@@ -630,9 +628,9 @@ const ProvenanceTrail: React.FC<{ sample: SrpSample }> = ({ sample }) => {
               }
               transition={{ duration: 0.4, ease: 'easeOut' }}
               style={{
-                backgroundColor: accrued ? TEAL : '#F5F4F1',
+                backgroundColor: accrued ? ACCENT : '#F5F4F1',
                 color: accrued ? '#FFFFFF' : '#9e9186',
-                border: `1.5px solid ${accrued ? TEAL_DARK : '#d0cdc8'}`,
+                border: `1.5px solid ${accrued ? ACCENT_DARK : '#d0cdc8'}`,
                 padding: '4px 9px',
                 fontSize: 11,
                 fontWeight: 700,
@@ -661,7 +659,7 @@ const ProvenanceTrail: React.FC<{ sample: SrpSample }> = ({ sample }) => {
                     position: 'absolute',
                     inset: 0,
                     borderRadius: 6,
-                    border: `2px solid ${TEAL}`,
+                    border: `2px solid ${ACCENT}`,
                   }}
                 />
               )}
@@ -674,7 +672,7 @@ const ProvenanceTrail: React.FC<{ sample: SrpSample }> = ({ sample }) => {
       <div
         className="rounded-xl"
         style={{
-          backgroundColor: CREAM,
+          backgroundColor: ACCENT_TINT,
           border: `1.5px solid ${INK}`,
           padding: '18px 20px',
         }}
@@ -709,7 +707,7 @@ const ProvenanceTrail: React.FC<{ sample: SrpSample }> = ({ sample }) => {
               left: 0,
               top: 0,
               bottom: 0,
-              backgroundColor: TEAL,
+              backgroundColor: ACCENT,
             }}
           />
           {cappedAtCap && fillBufferPct > 0 && (
@@ -722,7 +720,7 @@ const ProvenanceTrail: React.FC<{ sample: SrpSample }> = ({ sample }) => {
                 left: `${(cap / safetyMargin) * 100}%`,
                 top: 0,
                 bottom: 0,
-                backgroundColor: TEAL_DARK,
+                backgroundColor: ACCENT_DARK,
               }}
             />
           )}
@@ -735,7 +733,7 @@ const ProvenanceTrail: React.FC<{ sample: SrpSample }> = ({ sample }) => {
               top: -3,
               bottom: -3,
               width: 2,
-              backgroundColor: TEAL,
+              backgroundColor: ACCENT,
             }}
           />
         </div>
@@ -753,7 +751,7 @@ const ProvenanceTrail: React.FC<{ sample: SrpSample }> = ({ sample }) => {
             initial={{ opacity: 0, y: 6 }}
             animate={{ opacity: 1, y: 0 }}
             className="font-sans"
-            style={{ fontSize: 12.5, color: TEAL, marginTop: 12, lineHeight: 1.55, fontWeight: 600 }}
+            style={{ fontSize: 12.5, color: ACCENT, marginTop: 12, lineHeight: 1.55, fontWeight: 600 }}
           >
             Ceiling reached at {cap} SRPs. The next two carry into the safety margin — they cushion against any SRP the marker might reject as not "developing the question".
           </motion.p>
@@ -794,7 +792,7 @@ const DiagnosticPanel: React.FC<{
         padding: '24px 26px',
       }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 12 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 12 }}>
         Diagnostic
       </p>
 
@@ -814,15 +812,15 @@ const DiagnosticPanel: React.FC<{
               key={s.id}
               className="rounded-lg"
               style={{
-                backgroundColor: CREAM,
-                border: `1.5px solid ${TEAL}`,
+                backgroundColor: ACCENT_TINT,
+                border: `1.5px solid ${ACCENT}`,
                 padding: '10px 14px',
               }}
             >
               <p className="font-serif" style={{ fontSize: 13, color: INK, lineHeight: 1.5 }}>
                 {s.text}
               </p>
-              <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: TEAL_DARK, marginTop: 6 }}>
+              <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: ACCENT_DARK, marginTop: 6 }}>
                 +2 · {s.developsFactor}
                 {s.buried && <span style={{ color: '#9e9186', marginLeft: 8 }}>· buried after waffle</span>}
               </p>
@@ -872,7 +870,7 @@ const DiagnosticStat: React.FC<{ label: string; value: string; subtitle: string 
   <div
     className="rounded-xl"
     style={{
-      backgroundColor: CREAM,
+      backgroundColor: ACCENT_TINT,
       border: `1.5px solid ${INK}`,
       padding: '14px 16px',
     }}
@@ -941,12 +939,12 @@ const PatternCard: React.FC<{ sample: SrpSample; studentPicks: Set<string> }> = 
     <section
       className="rounded-2xl"
       style={{
-        backgroundColor: '#F0FAF8',
-        border: `1px solid ${TEAL}33`,
+        backgroundColor: ACCENT_TINT,
+        border: `1px solid ${ACCENT}33`,
         padding: '24px 26px',
       }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 10 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 10 }}>
         Your pattern
       </p>
       <div className="space-y-4">

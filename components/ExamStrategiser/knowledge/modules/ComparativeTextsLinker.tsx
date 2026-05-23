@@ -38,11 +38,9 @@ import {
   type ComparativeMode,
 } from '../../../../types/knowledge';
 import { writePattern } from '../knowledgePatterns';
+import { ACCENT, ACCENT_DARK, ACCENT_TINT } from '../../colors';
 
-const TEAL = '#2A7D6F';
-const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#F0FAF8';
 const WARN = '#A8746E';
 
 const MODE_LABELS: Record<ComparativeMode, string> = {
@@ -201,7 +199,7 @@ const QuestionFrame: React.FC<{ question: ComparativeQuestion }> = ({ question }
     className="rounded-2xl"
     style={{ backgroundColor: '#FFFFFF', border: `2px solid ${INK}`, padding: '20px 24px' }}
   >
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 6 }}>
+    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 6 }}>
       Question · {MODE_LABELS[question.mode]}
     </p>
     <p className="font-serif" style={{ fontSize: 16, fontWeight: 500, color: INK, lineHeight: 1.5, fontStyle: 'italic' }}>
@@ -243,15 +241,15 @@ const ThreadCanvas: React.FC<{
     p.textsTouched.length === colCount ? 'integrated' :
     p.textsTouched.length === 1 ? 'serial' : 'partial';
   const colourOf = (kind: 'integrated' | 'partial' | 'serial') =>
-    kind === 'integrated' ? TEAL : kind === 'partial' ? TEAL_DARK : WARN;
+    kind === 'integrated' ? ACCENT : kind === 'partial' ? ACCENT_DARK : WARN;
 
   return (
     <section
       className="rounded-2xl"
-      style={{ backgroundColor: CREAM, border: `2px solid ${INK}`, padding: '22px 26px' }}
+      style={{ backgroundColor: ACCENT_TINT, border: `2px solid ${INK}`, padding: '22px 26px' }}
     >
       <div className="flex items-baseline justify-between gap-3 mb-2 flex-wrap">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
           Thread canvas
         </p>
         <span className="font-sans" style={{ fontSize: 11.5, color: '#5a5550' }}>
@@ -427,7 +425,7 @@ const ThreadDot: React.FC<{ xCalc: string; y: number; isTouched: boolean; colour
       width: isTouched ? 12 : 6,
       height: isTouched ? 12 : 6,
       borderRadius: '50%',
-      backgroundColor: isTouched ? colour : CREAM,
+      backgroundColor: isTouched ? colour : ACCENT_TINT,
       border: isTouched ? `2px solid ${colour}` : `1.5px solid #b8b1a8`,
       zIndex: 1,
     }}
@@ -447,7 +445,7 @@ const PointBank: React.FC<{
     className="rounded-2xl"
     style={{ backgroundColor: '#FFFFFF', border: `2px solid ${INK}`, padding: '22px 24px' }}
   >
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 6 }}>
+    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 6 }}>
       Point bank
     </p>
     <p className="font-sans" style={{ fontSize: 12.5, color: '#5a5550', marginBottom: 14, lineHeight: 1.55 }}>
@@ -482,15 +480,15 @@ const PointCard: React.FC<{
     point.textsTouched.length === 1 ? 'serial' : 'partial';
   const hasRewrite = !!point.integratedRewrite;
 
-  const tagColour = integrationLevel === 'integrated' ? TEAL : integrationLevel === 'partial' ? TEAL_DARK : WARN;
+  const tagColour = integrationLevel === 'integrated' ? ACCENT : integrationLevel === 'partial' ? ACCENT_DARK : WARN;
   const tagLabel = integrationLevel === 'integrated' ? 'Integrated' : integrationLevel === 'partial' ? 'Partial' : 'Serial';
 
   return (
     <article
       className="rounded-xl"
       style={{
-        backgroundColor: selected ? `${TEAL}10` : '#FFFFFF',
-        border: `1.5px solid ${selected ? TEAL : '#d0cdc8'}`,
+        backgroundColor: selected ? `${ACCENT}10` : '#FFFFFF',
+        border: `1.5px solid ${selected ? ACCENT : '#d0cdc8'}`,
         padding: '14px 16px',
       }}
     >
@@ -504,8 +502,8 @@ const PointCard: React.FC<{
             width: 22,
             height: 22,
             borderRadius: 6,
-            border: `1.5px solid ${selected ? TEAL : '#9e9186'}`,
-            backgroundColor: selected ? TEAL : '#FFFFFF',
+            border: `1.5px solid ${selected ? ACCENT : '#9e9186'}`,
+            backgroundColor: selected ? ACCENT : '#FFFFFF',
             cursor: 'pointer',
             marginTop: 2,
             display: 'flex',
@@ -557,8 +555,8 @@ const PointCard: React.FC<{
                   style={{
                     fontSize: 10.5,
                     fontWeight: 600,
-                    color: TEAL_DARK,
-                    backgroundColor: `${TEAL}15`,
+                    color: ACCENT_DARK,
+                    backgroundColor: `${ACCENT}15`,
                     borderRadius: 4,
                     padding: '1px 6px',
                   }}
@@ -578,9 +576,9 @@ const PointCard: React.FC<{
                 marginTop: 8,
                 fontSize: 11.5,
                 fontWeight: 600,
-                color: TEAL,
+                color: ACCENT,
                 backgroundColor: 'transparent',
-                border: `1px dashed ${TEAL}`,
+                border: `1px dashed ${ACCENT}`,
                 borderRadius: 999,
                 padding: '4px 10px',
                 cursor: 'pointer',
@@ -597,12 +595,12 @@ const PointCard: React.FC<{
               transition={{ duration: 0.25 }}
               className="rounded-lg mt-3"
               style={{
-                backgroundColor: CREAM,
-                border: `1.5px solid ${TEAL}`,
+                backgroundColor: ACCENT_TINT,
+                border: `1.5px solid ${ACCENT}`,
                 padding: '10px 12px',
               }}
             >
-              <p className="font-sans" style={{ fontSize: 9.5, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: TEAL, marginBottom: 4 }}>
+              <p className="font-sans" style={{ fontSize: 9.5, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: ACCENT, marginBottom: 4 }}>
                 Integrated rewrite
               </p>
               <p className="font-serif" style={{ fontSize: 13, color: INK, lineHeight: 1.55 }}>
@@ -650,9 +648,9 @@ const Diagnostic: React.FC<{
   return (
     <section
       className="rounded-2xl"
-      style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '26px 28px' }}
+      style={{ backgroundColor: ACCENT_TINT, border: `1px solid ${ACCENT}33`, padding: '26px 28px' }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
         Integration diagnostic
       </p>
       <div className="flex items-baseline gap-4 mt-2 flex-wrap">
@@ -665,8 +663,8 @@ const Diagnostic: React.FC<{
           </span>
         </div>
         <div className="flex items-baseline gap-3 flex-wrap">
-          <Badge label="Integrated" count={integratedCount} colour={TEAL} />
-          <Badge label="Partial (2-text)" count={partialCount} colour={TEAL_DARK} />
+          <Badge label="Integrated" count={integratedCount} colour={ACCENT} />
+          <Badge label="Partial (2-text)" count={partialCount} colour={ACCENT_DARK} />
           <Badge label="Serial (1-text)" count={serialCount} colour={WARN} />
         </div>
       </div>
@@ -683,7 +681,7 @@ const Diagnostic: React.FC<{
 
       {connectingVerbs.length > 0 && (
         <div className="mt-4">
-          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: TEAL, marginBottom: 6 }}>
+          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: ACCENT, marginBottom: 6 }}>
             Connecting verbs in your answer
           </p>
           <div className="flex items-center gap-1.5 flex-wrap">
@@ -694,8 +692,8 @@ const Diagnostic: React.FC<{
                 style={{
                   fontSize: 11,
                   fontWeight: 600,
-                  color: TEAL,
-                  backgroundColor: 'rgba(42,125,111,0.12)',
+                  color: ACCENT,
+                  backgroundColor: 'rgba(242,107,31,0.12)',
                   borderRadius: 4,
                   padding: '2px 8px',
                 }}

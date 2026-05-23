@@ -12,6 +12,7 @@ import { redTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { COLORS } from '../design/tokens';
 
 const theme = redTheme;
 
@@ -192,7 +193,7 @@ const PEELBuilder = () => {
           <p className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Available sentences</p>
           {availableSentences.map(i => (
             <button key={i} onClick={() => handlePlaceSentence(i)}
-              className="w-full text-left p-3 rounded-lg border border-zinc-200 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-sm text-zinc-700 dark:text-zinc-200 hover:border-teal-400 dark:hover:border-teal-600 hover:bg-teal-50 dark:hover:bg-teal-900/20 transition-all cursor-pointer"
+              className="w-full text-left p-3 rounded-lg border border-zinc-200 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-sm text-zinc-700 dark:text-zinc-200 hover:border-[#F26B1F]/60 dark:hover:border-[#F26B1F] hover:bg-[#FDEEDF] dark:hover:bg-[#F26B1F]/20 transition-all cursor-pointer"
               style={{ borderColor: undefined }}>
               {ex.sentences[i].text}
             </button>
@@ -392,12 +393,12 @@ const StackBuilder = () => {
         <span className="text-xs font-bold text-zinc-400">Marks so far:</span>
         <div className="flex-1 h-2 bg-zinc-200 dark:bg-zinc-600 rounded-full overflow-hidden">
           <motion.div
-            className="h-full bg-teal-500 rounded-full"
+            className="h-full bg-[#3A8D5F] rounded-full"
             animate={{ width: `${(earnedMarks / stackProblem.totalMarks) * 100}%` }}
             transition={{ duration: 0.5 }}
           />
         </div>
-        <span className="text-xs font-bold text-teal-600 dark:text-teal-400">{earnedMarks}/{stackProblem.totalMarks}</span>
+        <span className="text-xs font-bold text-[#3A8D5F]">{earnedMarks}/{stackProblem.totalMarks}</span>
       </div>
 
       {/* Step prompt */}
@@ -429,7 +430,7 @@ const StackBuilder = () => {
               className={`w-full text-left p-3 rounded-xl font-mono text-sm border transition-all ${
                 isAnswer ? 'bg-emerald-50 dark:bg-emerald-900/30 border-emerald-400 dark:border-emerald-600 ring-2 ring-emerald-500 ring-offset-1' :
                 selected && !isAnswer ? 'bg-rose-50 dark:bg-rose-900/30 border-rose-400 dark:border-rose-600' :
-                'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-600 hover:border-teal-400 dark:hover:border-teal-600 hover:bg-teal-50 dark:hover:bg-teal-900/20'
+                'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-600 hover:border-[#F26B1F]/60 dark:hover:border-[#F26B1F] hover:bg-[#FDEEDF] dark:hover:bg-[#F26B1F]/20'
               } ${showStepFeedback ? 'cursor-default' : 'cursor-pointer'}`}>
               {opt}
             </button>
@@ -511,10 +512,10 @@ const ShapeQuiz = () => {
   if (phase === 'ready') {
     return (
       <div className="my-10 bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 24 }}>
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Exam Skills Quiz</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Skills Quiz</span>
         <h4 className="font-serif font-semibold" style={{ fontSize: 20, color: '#1a1a1a' }}>Shape Quiz</h4>
         <p className="text-sm mt-2 mb-6 max-w-md mx-auto" style={{ color: '#7a7068' }}>Can you match the mark allocation to the right answer shape?</p>
-        <button onClick={startQuiz} style={{ backgroundColor: '#2A7D6F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Start Quiz</button>
+        <button onClick={startQuiz} style={{ backgroundColor: COLORS.accent, borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Start Quiz</button>
       </div>
     );
   }
@@ -524,8 +525,8 @@ const ShapeQuiz = () => {
       <div className="my-10 bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 24 }}>
         <h4 className="font-serif font-semibold text-center" style={{ fontSize: 20, color: '#1a1a1a' }}>Shape Quiz Results</h4>
         <div className="flex justify-center my-5">
-          <div className="text-center" style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '14px 20px' }}>
-            <div className="font-serif font-bold" style={{ fontSize: 28, color: '#2A7D6F' }}>{score}/{shapeQuestions.length}</div>
+          <div className="text-center" style={{ backgroundColor: COLORS.accentTint, border: `2px solid ${COLORS.accent}`, borderRadius: 14, padding: '14px 20px' }}>
+            <div className="font-serif font-bold" style={{ fontSize: 28, color: COLORS.accent }}>{score}/{shapeQuestions.length}</div>
             <div style={{ fontSize: 11, fontWeight: 600, color: '#9e9186' }}>Correct</div>
           </div>
         </div>
@@ -534,10 +535,10 @@ const ShapeQuiz = () => {
             const got = choices[i];
             const correct = got === q.correct;
             return (
-              <div key={i} className="bg-white dark:bg-zinc-900" style={{ border: correct ? '2px solid #2A7D6F' : '2px solid #1a1a1a', borderLeft: correct ? undefined : '4px solid #E85D75', borderRadius: 14, padding: '14px 16px' }}>
+              <div key={i} className="bg-white dark:bg-zinc-900" style={{ border: correct ? `2px solid ${COLORS.accent}` : '2px solid #1a1a1a', borderLeft: correct ? undefined : '4px solid #E85D75', borderRadius: 14, padding: '14px 16px' }}>
                 <div className="flex items-center justify-between mb-1">
                   <span className="font-serif font-bold" style={{ fontSize: 14, color: '#1a1a1a' }}>{q.marks}</span>
-                  <span style={{ fontSize: 12, fontWeight: 700, color: correct ? '#1a6358' : '#b33030' }}>{correct ? '✓ Correct' : '✗ Incorrect'}</span>
+                  <span style={{ fontSize: 12, fontWeight: 700, color: correct ? COLORS.accentDarkText : '#b33030' }}>{correct ? '✓ Correct' : '✗ Incorrect'}</span>
                 </div>
                 <p style={{ fontSize: 14, color: '#5a5550' }}>{q.correct}</p>
                 {!correct && got && <p className="italic mt-1" style={{ fontSize: 12, color: '#b33030' }}>You said: {got}</p>}
@@ -546,7 +547,7 @@ const ShapeQuiz = () => {
           })}
         </div>
         <div className="text-center">
-          <button onClick={startQuiz} style={{ backgroundColor: '#2A7D6F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Try Again</button>
+          <button onClick={startQuiz} style={{ backgroundColor: COLORS.accent, borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Try Again</button>
         </div>
       </div>
     );
@@ -560,7 +561,7 @@ const ShapeQuiz = () => {
     <div className="my-10 bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 24 }}>
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)' }}>Exam Skills Quiz</span>
+          <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)' }}>Exam Skills Quiz</span>
           <h4 className="font-serif font-semibold" style={{ fontSize: 18, color: '#1a1a1a' }}>Shape Quiz</h4>
         </div>
         <span style={{ fontSize: 13, fontWeight: 600, color: '#9e9186', backgroundColor: '#f0ece6', border: '1px solid #d0cdc8', borderRadius: 20, padding: '3px 10px' }}>{qIndex + 1} / {shapeQuestions.length}</span>
@@ -572,10 +573,10 @@ const ShapeQuiz = () => {
           className="mb-5" style={{ backgroundColor: '#f4f0eb', border: '1.5px solid #d0cdc8', borderRadius: 12, padding: '14px 18px', minHeight: 80, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
           <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', marginBottom: 8, textTransform: 'uppercase' as const }}>Mark allocation</p>
           <p style={{ lineHeight: 1 }}>
-            <span className="font-serif font-bold" style={{ fontSize: 32, color: '#2A7D6F' }}>{q.marks.replace(/[()]/g, '')}</span>
+            <span className="font-serif font-bold" style={{ fontSize: 32, color: COLORS.accent }}>{q.marks.replace(/[()]/g, '')}</span>
           </p>
           {showFeedback && (
-            <motion.p initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} className="italic mt-3" style={{ fontSize: 13, color: isCorrect ? '#1a6358' : '#b33030' }}>
+            <motion.p initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} className="italic mt-3" style={{ fontSize: 13, color: isCorrect ? COLORS.accentDarkText : '#b33030' }}>
               {isCorrect ? 'Correct! You can read the marks.' : `Not quite — the right shape is: ${q.correct}`}
             </motion.p>
           )}
@@ -590,7 +591,7 @@ const ShapeQuiz = () => {
           return (
             <button key={i} onClick={() => handleChoice(opt)} disabled={showFeedback} className="w-full text-left transition-all" style={
               isAnswer
-                ? { backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 600, color: '#1a6358', cursor: 'default' }
+                ? { backgroundColor: COLORS.accentTint, border: `2px solid ${COLORS.accent}`, borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 600, color: COLORS.accentDarkText, cursor: 'default' }
                 : selected && !isAnswer
                 ? { backgroundColor: '#fde4e4', border: '2px solid #E85D75', borderLeft: '4px solid #E85D75', borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: '#b33030', cursor: 'default' }
                 : showFeedback
@@ -606,7 +607,7 @@ const ShapeQuiz = () => {
       {/* Progress dots */}
       <div className="flex justify-center gap-1.5 mt-5">
         {shapeQuestions.map((_, i) => (
-          <div key={i} style={{ width: 10, height: 10, borderRadius: '50%', backgroundColor: i <= qIndex ? '#2A7D6F' : '#d0cdc8', transition: 'background-color 0.3s' }} />
+          <div key={i} style={{ width: 10, height: 10, borderRadius: '50%', backgroundColor: i <= qIndex ? COLORS.accent : '#d0cdc8', transition: 'background-color 0.3s' }} />
         ))}
       </div>
     </div>

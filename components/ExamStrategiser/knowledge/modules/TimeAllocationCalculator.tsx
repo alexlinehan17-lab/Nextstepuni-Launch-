@@ -16,8 +16,8 @@ import { SUBJECT_TIMING } from '../../../../data/knowledge';
 import { type SubjectTiming } from '../../../../types/knowledge';
 import KnowledgeModuleShell from '../KnowledgeModuleShell';
 import QuickCheck from '../QuickCheck';
+import { ACCENT, ACCENT_TINT } from '../../colors';
 
-const TEAL = '#2A7D6F';
 
 interface Props {
   onBack: () => void;
@@ -123,7 +123,7 @@ const SubjectPickerCard: React.FC<{
     className="rounded-2xl"
     style={{ backgroundColor: '#FFFFFF', border: '1px solid #EDEBE8', padding: '20px 24px' }}
   >
-    <label htmlFor="ta-subject" className="font-sans block" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 8 }}>
+    <label htmlFor="ta-subject" className="font-sans block" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 8 }}>
       Subject
     </label>
     <select
@@ -132,7 +132,7 @@ const SubjectPickerCard: React.FC<{
       onChange={(e) => onChange(e.target.value)}
       className="w-full font-sans rounded-xl"
       style={{
-        backgroundColor: '#F0FAF8',
+        backgroundColor: ACCENT_TINT,
         border: '1px solid #EDEBE8',
         padding: '12px 14px',
         fontSize: 14,
@@ -158,9 +158,9 @@ const PerMarkRateCard: React.FC<{
 }> = ({ subject, minPerMark, secPerMark }) => (
   <section
     className="rounded-2xl"
-    style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '22px 26px' }}
+    style={{ backgroundColor: ACCENT_TINT, border: `1px solid ${ACCENT}33`, padding: '22px 26px' }}
   >
-    <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 6 }}>
+    <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 6 }}>
       Your per-mark rate
     </p>
     <div className="flex items-baseline gap-3 flex-wrap">
@@ -208,7 +208,7 @@ const BreakdownTable: React.FC<{
     className="rounded-2xl"
     style={{ backgroundColor: '#FFFFFF', border: '1px solid #EDEBE8', padding: '22px 24px' }}
   >
-    <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 12 }}>
+    <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 12 }}>
       Section-by-section budget
     </p>
     <div className="space-y-2">
@@ -225,7 +225,7 @@ const BreakdownTable: React.FC<{
           <span className="font-sans" style={{ fontSize: 13, color: '#1A1A1A', fontWeight: 600, width: 60, textAlign: 'right' }}>
             {row.marks}
           </span>
-          <span className="font-sans" style={{ fontSize: 13, color: TEAL, fontWeight: 600, width: 70, textAlign: 'right' }}>
+          <span className="font-sans" style={{ fontSize: 13, color: ACCENT, fontWeight: 600, width: 70, textAlign: 'right' }}>
             {row.minutes} min
           </span>
         </div>
@@ -288,7 +288,7 @@ const SunkCostSimulator: React.FC = () => {
       style={{ backgroundColor: '#FFFFFF', border: '1px solid #EDEBE8', padding: '24px 26px' }}
     >
       <div className="flex items-baseline justify-between gap-3 mb-2">
-        <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+        <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
           Sunk-cost simulator
         </p>
         <button
@@ -318,7 +318,7 @@ const SunkCostSimulator: React.FC = () => {
 
       <div
         className="rounded-xl mt-5"
-        style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '16px 18px' }}
+        style={{ backgroundColor: ACCENT_TINT, border: `1px solid ${ACCENT}33`, padding: '16px 18px' }}
       >
         <div className="grid sm:grid-cols-3 gap-3">
           <SimStat label="Time used" value={`${totalSpent} / ${totalAllocated} min`} highlight={overBudget ? 'warn' : null} />
@@ -353,7 +353,7 @@ const SimRow: React.FC<{
             {question.marks} marks · {question.minutesAllocated} min budget
           </span>
         </div>
-        <div className="font-serif" style={{ fontSize: 14, fontWeight: 600, color: TEAL }}>
+        <div className="font-serif" style={{ fontSize: 14, fontWeight: 600, color: ACCENT }}>
           ~{Math.round(estimatedScore)} / {question.marks}
         </div>
       </div>
@@ -364,7 +364,7 @@ const SimRow: React.FC<{
         value={question.minutesSpent}
         onChange={(e) => onChange(Number(e.target.value))}
         className="w-full"
-        style={{ accentColor: overBudget ? '#A8746E' : TEAL }}
+        style={{ accentColor: overBudget ? '#A8746E' : ACCENT }}
       />
       <p className="font-sans" style={{ fontSize: 11.5, color: overBudget ? '#A8746E' : '#78716C', marginTop: 2 }}>
         {question.minutesSpent} min spent {overBudget ? `· ${question.minutesSpent - question.minutesAllocated} over budget` : ''}

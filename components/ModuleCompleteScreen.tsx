@@ -8,6 +8,7 @@ import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { CheckCircle2, BookOpen, Layers, Compass, ArrowRight, Star } from 'lucide-react';
+import { COLORS } from '../design/tokens';
 
 interface ModuleCompleteScreenProps {
   isOpen: boolean;
@@ -115,12 +116,12 @@ const ModuleCompleteScreen: React.FC<ModuleCompleteScreenProps> = ({
                   onClick={onContinue}
                   className="w-full py-4 rounded-2xl text-base font-bold text-white flex items-center justify-center gap-2"
                   style={{
-                    backgroundColor: '#2A7D6F',
-                    border: '2.5px solid #1F5F54',
-                    boxShadow: '4px 4px 0px 0px #1F5F54',
+                    backgroundColor: COLORS.success,
+                    border: `2.5px solid ${COLORS.successDarkText}`,
+                    boxShadow: `4px 4px 0px 0px ${COLORS.successDarkText}`,
                   }}
-                  whileHover={{ x: -2, y: -2, boxShadow: '6px 6px 0px 0px #1F5F54' }}
-                  whileTap={{ x: 2, y: 2, boxShadow: '1px 1px 0px 0px #1F5F54' }}
+                  whileHover={{ x: -2, y: -2, boxShadow: `6px 6px 0px 0px ${COLORS.successDarkText}` }}
+                  whileTap={{ x: 2, y: 2, boxShadow: `1px 1px 0px 0px ${COLORS.successDarkText}` }}
                   transition={{ type: 'spring', stiffness: 400, damping: 25 }}
                 >
                   Continue <ArrowRight size={18} />

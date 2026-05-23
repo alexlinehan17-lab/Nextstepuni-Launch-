@@ -310,7 +310,7 @@ const DownwardArrowDrill = () => {
                 >
                   <div style={{ width: 2, height: 32, backgroundColor: committed[index] || isActive ? '#d0cdc8' : '#e0dbd4' }} />
                   <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1L8 8L15 1" stroke={committed[index] || isActive ? '#2A7D6F' : '#c0bbb5'} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M1 1L8 8L15 1" stroke={committed[index] || isActive ? '#F26B1F' : '#c0bbb5'} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </MotionDiv>
               )}
@@ -324,13 +324,13 @@ const DownwardArrowDrill = () => {
               >
                 <div
                   style={{
-                    backgroundColor: isActive ? '#f0faf8' : isLocked ? '#fafaf8' : '#FFFFFF',
-                    border: isActive ? '2px solid #2A7D6F' : isLocked ? '2px solid #d0cdc8' : '2px solid #1a1a1a',
+                    backgroundColor: isActive ? '#FDEEDF' : isLocked ? '#fafaf8' : '#FFFFFF',
+                    border: isActive ? '2px solid #F26B1F' : isLocked ? '2px solid #d0cdc8' : '2px solid #1a1a1a',
                     borderRadius: 14,
                     padding: '18px 22px',
                   }}
                 >
-                  <p className="text-[11px] font-bold uppercase tracking-wider mb-2" style={{ color: isLocked ? '#b0a898' : '#2A7D6F' }}>
+                  <p className="text-[11px] font-bold uppercase tracking-wider mb-2" style={{ color: isLocked ? '#b0a898' : '#F26B1F' }}>
                     {index === 0 ? 'Your worst fear' : `Level ${index + 1}: And then what?`}
                   </p>
 
@@ -351,7 +351,7 @@ const DownwardArrowDrill = () => {
                         onClick={() => handleNext(index)}
                         disabled={!entry.trim()}
                         className="self-end px-5 py-2.5 text-xs font-bold text-white transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-                        style={{ backgroundColor: '#2A7D6F', borderRadius: 10 }}
+                        style={{ backgroundColor: '#F26B1F', borderRadius: 10 }}
                       >
                         {index + 1 < CHAIN_LENGTH ? 'And then what happens?' : 'See the full chain'}
                       </button>
@@ -374,20 +374,20 @@ const DownwardArrowDrill = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-8 max-w-lg mx-auto"
           >
-            <div style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '18px 22px' }}>
-              <p className="text-[11px] font-bold uppercase tracking-wider mb-3" style={{ color: '#1a6358' }}>Catastrophe Dissolved</p>
+            <div style={{ backgroundColor: '#FDEEDF', border: '2px solid #F26B1F', borderRadius: 14, padding: '18px 22px' }}>
+              <p className="text-[11px] font-bold uppercase tracking-wider mb-3" style={{ color: '#8C3A0E' }}>Catastrophe Dissolved</p>
 
               <div className="space-y-2 mb-5">
                 {entries.filter((_, i) => committed[i]).map((entry, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <span className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-[10px] font-bold text-white" style={{ backgroundColor: '#2A7D6F' }}>{index + 1}</span>
-                    <p className="text-sm font-serif italic" style={{ color: '#1a6358' }}>{entry}</p>
+                    <span className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-[10px] font-bold text-white" style={{ backgroundColor: '#F26B1F' }}>{index + 1}</span>
+                    <p className="text-sm font-serif italic" style={{ color: '#8C3A0E' }}>{entry}</p>
                   </div>
                 ))}
               </div>
 
-              <p className="text-sm mb-1" style={{ color: '#1a6358' }}>Is your final answer really as catastrophic as the first one felt?</p>
-              <p className="text-sm font-serif italic font-medium" style={{ color: '#1a6358' }}>Most catastrophic chains end somewhere manageable. The fear lives in the ambiguity — not the reality.</p>
+              <p className="text-sm mb-1" style={{ color: '#8C3A0E' }}>Is your final answer really as catastrophic as the first one felt?</p>
+              <p className="text-sm font-serif italic font-medium" style={{ color: '#8C3A0E' }}>Most catastrophic chains end somewhere manageable. The fear lives in the ambiguity — not the reality.</p>
             </div>
           </MotionDiv>
         )}

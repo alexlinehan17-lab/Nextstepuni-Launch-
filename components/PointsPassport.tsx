@@ -20,6 +20,7 @@ import { useToast } from './Toast';
 import { useMockResults } from '../hooks/useMockResults';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
+import { COLORS } from '../design/tokens';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -201,7 +202,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
   if (!loaded) {
     return (
       <div className="flex items-center justify-center py-20">
-        <div className="w-6 h-6 border-2 rounded-full animate-spin" style={{ borderColor: '#2A7D6F', borderTopColor: 'transparent' }} />
+        <div className="w-6 h-6 border-2 rounded-full animate-spin" style={{ borderColor: COLORS.accent, borderTopColor: 'transparent' }} />
       </div>
     );
   }
@@ -214,7 +215,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <div className="rounded-xl p-4 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
           <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#9A9590] dark:text-zinc-500">Current</p>
-          <span className="font-apercu text-3xl font-black" style={{ color: '#2A7D6F' }}>{currentPoints}</span>
+          <span className="font-apercu text-3xl font-black" style={{ color: COLORS.accent }}>{currentPoints}</span>
           <span className="text-sm ml-1 text-[#9A9590] dark:text-zinc-500">/625</span>
         </div>
         <div className="rounded-xl p-4" style={{ backgroundColor: '#EDF2EE', border: '0.5px solid rgba(0,0,0,0.07)' }}>
@@ -234,9 +235,9 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
       {/* Identity reframing card */}
       <div className="rounded-xl p-5 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
         <div className="flex items-start gap-3">
-          <TrendingUp size={18} className="shrink-0 mt-0.5" style={{ color: '#2A7D6F' }} />
+          <TrendingUp size={18} className="shrink-0 mt-0.5" style={{ color: COLORS.accent }} />
           <div>
-            <p className="text-sm font-bold" style={{ color: '#2A7D6F' }}>
+            <p className="text-sm font-bold" style={{ color: COLORS.accent }}>
               Students scoring {trajectoryInfo.range} typically improve by {trajectoryInfo.typical} points
             </p>
             <p className="text-xs leading-relaxed mt-1 text-zinc-600 dark:text-zinc-400">
@@ -313,17 +314,17 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
             {/* CAO Simulator insights (Connection 4: CAO Simulator → Points Passport) */}
             {caoData && caoData.whatIfScenarios && caoData.whatIfScenarios.length > 0 && (
               <div className="rounded-xl p-4 space-y-2 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
-                <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: '#2A7D6F' }}>From Your Simulator</p>
+                <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: COLORS.accent }}>From Your Simulator</p>
                 {caoData.whatIfScenarios.slice(0, 3).map((s: any, i: number) => (
                   <div key={i} className="flex items-center justify-between text-xs">
                     <span className="text-zinc-600 dark:text-zinc-400">
                       {s.subjectName}: {s.currentGrade} → {s.whatIfGrade}
                     </span>
-                    <span className="font-bold" style={{ color: '#2A7D6F' }}>+{s.pointsGain} pts</span>
+                    <span className="font-bold" style={{ color: COLORS.accent }}>+{s.pointsGain} pts</span>
                   </div>
                 ))}
                 {caoData.computedPoints && (
-                  <p className="text-[10px] pt-1" style={{ color: '#2A7D6F' }}>
+                  <p className="text-[10px] pt-1" style={{ color: COLORS.accent }}>
                     Current: {caoData.computedPoints.current} pts → Target: {caoData.computedPoints.target} pts
                   </p>
                 )}
@@ -378,7 +379,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
                           )}
                           <MotionDiv
                             className="w-full rounded-t-lg min-h-[4px]"
-                            style={{ backgroundColor: '#2A7D6F' }}
+                            style={{ backgroundColor: COLORS.accent }}
                             initial={{ height: 0 }}
                             animate={{ height: `${pct}%` }}
                             transition={{ delay: idx * 0.1, duration: 0.5 }}
@@ -391,15 +392,15 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
                     })}
                     {/* Current grade marker */}
                     <div className="flex-1 flex flex-col items-center gap-1">
-                      <span className="text-[10px] font-bold" style={{ color: '#2A7D6F' }}>{currentPoints}</span>
+                      <span className="text-[10px] font-bold" style={{ color: COLORS.accent }}>{currentPoints}</span>
                       <MotionDiv
                         className="w-full rounded-t-lg min-h-[4px] border-2 border-dashed"
-                        style={{ backgroundColor: '#4DB8A4', borderColor: '#2A7D6F' }}
+                        style={{ backgroundColor: '#F8B080', borderColor: COLORS.accent }}
                         initial={{ height: 0 }}
                         animate={{ height: `${Math.min(100, (currentPoints / 625) * 100)}%` }}
                         transition={{ delay: mockResults.length * 0.1, duration: 0.5 }}
                       />
-                      <span className="text-[9px] text-center leading-tight mt-1 font-bold" style={{ color: '#2A7D6F' }}>Now</span>
+                      <span className="text-[9px] text-center leading-tight mt-1 font-bold" style={{ color: COLORS.accent }}>Now</span>
                     </div>
                   </div>
                 </div>
@@ -419,7 +420,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
                       <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">{mock.label}</p>
                       <p className="text-[11px] text-[#9A9590] dark:text-zinc-500">{mock.date}</p>
                     </div>
-                    <span className="text-sm font-bold" style={{ color: '#2A7D6F' }}>{mock.totalPoints} pts</span>
+                    <span className="text-sm font-bold" style={{ color: COLORS.accent }}>{mock.totalPoints} pts</span>
                     <button
                       onClick={() => deleteMock(mock.id)}
                       className="p-1.5 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
@@ -444,7 +445,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
               <button
                 onClick={initMockForm}
                 className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-bold text-white transition-colors"
-                style={{ backgroundColor: '#2A7D6F' }}
+                style={{ backgroundColor: COLORS.accent }}
               >
                 <Plus size={16} /> Record Mock Results
               </button>
@@ -469,7 +470,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
                             ? 'text-white'
                             : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
                         }`}
-                        style={mockLabel === preset ? { backgroundColor: '#2A7D6F' } : undefined}
+                        style={mockLabel === preset ? { backgroundColor: COLORS.accent } : undefined}
                       >
                         {preset}
                       </button>
@@ -498,7 +499,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
                                   ? 'text-white shadow-sm'
                                   : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
                               }`}
-                              style={mockGrades[sub.subjectName] === g ? { backgroundColor: '#2A7D6F' } : undefined}
+                              style={mockGrades[sub.subjectName] === g ? { backgroundColor: COLORS.accent } : undefined}
                             >
                               {g}
                             </button>
@@ -514,7 +515,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
                   <button
                     onClick={saveMock}
                     className="flex-1 py-2.5 rounded-xl text-sm font-bold text-white transition-colors"
-                    style={{ backgroundColor: '#2A7D6F' }}
+                    style={{ backgroundColor: COLORS.accent }}
                   >
                     Save Mock
                   </button>

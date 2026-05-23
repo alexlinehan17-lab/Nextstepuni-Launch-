@@ -6,55 +6,168 @@
 import React, { useState, useMemo } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { ArrowRight, ArrowLeft, Check, Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen, Banknote, Car, Home, Users, Briefcase, Rocket, Award, UserPlus, TrendingUp, MicOff, Signpost, Plane, PartyPopper, HandHeart } from 'lucide-react';
+import { ArrowRight, ArrowLeft, Check, Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen, Banknote, Car, Home, Users, Briefcase, Rocket, Award, UserPlus, TrendingUp, MicOff, Signpost, Plane, PartyPopper, HandHeart, Sparkles, Compass, Star, Puzzle, BookOpen } from 'lucide-react';
 import { type NorthStarCategory, type NorthStar } from '../types';
-import { NORTH_STAR_CATEGORIES, VISION_CARDS, CATEGORY_COLORS, CATEGORY_PROMPTS } from '../northStarData';
+import { type CurriculumLevel } from '../utils/authUtils';
+import { CATEGORY_COLORS, CATEGORY_PROMPTS, getActiveCategories, getVisionCardsForLevel } from '../northStarData';
 
 const ICON_MAP: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
   Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen,
   Banknote, Car, Home, Users, Briefcase, Rocket, Award, UserPlus,
   TrendingUp, MicOff, Signpost, Plane, PartyPopper, HandHeart,
+  // Junior cycle additions (Phase 5)
+  Sparkles, Compass, Star, Puzzle, BookOpen,
 };
 
 // Custom hand-drawn illustrations for the "What's driving you?" category
-// picker. When a category has an entry here, the picker renders this image
-// instead of the Lucide icon from ICON_MAP.
-const CATEGORY_ICON_IMG: Partial<Record<NorthStarCategory, string>> = {
-  'independence': '/icons/north-star/my-own-path.png',
-  'family-community': '/icons/north-star/community.png',
-  'career-craft': '/icons/north-star/career.png',
-  'college-learning': '/icons/north-star/learning.png',
-  'prove-myself': '/icons/north-star/prove-them-wrong.png',
-  'options-freedom': '/icons/north-star/open-options.png',
+// picker. Each category has a soft pastel painted blob behind the hand-drawn
+// PNG, modelled on the Innovation Zone ToolIconBlob. The blob paths are
+// slightly different per category so the six tiles don't read as identical.
+interface CategoryBlobConfig {
+  iconPath: string;
+  blob: string;
+  blobPath: string;
+}
+
+// Vision board icons (sub-step 3). Each PNG matches a VISION_CARDS id and
+// is rendered behind the category-coloured blob from CATEGORY_BLOBS.
+const VISION_ICON_IMG: Record<string, string> = {
+  'first-paycheck': '/icons/north-star/vision/first-paycheck.png',
+  'own-car': '/icons/north-star/vision/own-car.png',
+  'own-place': '/icons/north-star/vision/own-place.png',
+  'family-proud': '/icons/north-star/vision/family-proud.png',
+  'role-model': '/icons/north-star/vision/role-model.png',
+  'giving-back': '/icons/north-star/vision/giving-back.png',
+  'dream-job': '/icons/north-star/vision/dream-job.png',
+  'own-thing': '/icons/north-star/vision/own-thing.png',
+  'skilled-trade': '/icons/north-star/vision/skilled-trade.png',
+  'campus': '/icons/north-star/vision/campus.png',
+  'scholarship': '/icons/north-star/vision/scholarship.png',
+  'new-people': '/icons/north-star/vision/new-people.png',
+  'results-day': '/icons/north-star/vision/results-day.png',
+  'beating-odds': '/icons/north-star/vision/beating-odds.png',
+  'silence-doubters': '/icons/north-star/vision/silence-doubters.png',
+  'real-choices': '/icons/north-star/vision/real-choices.png',
+  'see-world': '/icons/north-star/vision/see-world.png',
+  'freedom-no': '/icons/north-star/vision/freedom-no.png',
 };
+
+const CATEGORY_BLOBS: Partial<Record<NorthStarCategory, CategoryBlobConfig>> = {
+  'independence': {
+    iconPath: '/icons/north-star/my-own-path.png',
+    blob: '#DDC9A4',
+    blobPath: 'M 6 24 Q -2 52 8 78 Q 24 98 52 94 Q 86 90 94 62 Q 100 30 84 10 Q 60 -4 32 4 Q 12 12 6 24 Z',
+  },
+  'family-community': {
+    iconPath: '/icons/north-star/community.png',
+    blob: '#ECBBCC',
+    blobPath: 'M 4 28 Q 0 56 12 82 Q 28 100 56 96 Q 90 92 96 60 Q 100 28 82 8 Q 56 -6 30 6 Q 10 16 4 28 Z',
+  },
+  'career-craft': {
+    iconPath: '/icons/north-star/career.png',
+    blob: '#F5C7A0',
+    blobPath: 'M 8 22 Q 0 48 6 76 Q 20 96 50 96 Q 84 96 94 70 Q 100 40 84 14 Q 64 -2 36 4 Q 14 12 8 22 Z',
+  },
+  'college-learning': {
+    iconPath: '/icons/north-star/learning.png',
+    blob: '#BCCCE3',
+    blobPath: 'M 6 22 Q -2 50 10 78 Q 26 98 56 94 Q 90 88 96 56 Q 100 24 80 6 Q 56 -6 28 6 Q 10 14 6 22 Z',
+  },
+  'prove-myself': {
+    iconPath: '/icons/north-star/prove-them-wrong.png',
+    blob: '#F1B7AB',
+    blobPath: 'M 4 26 Q 2 56 12 82 Q 26 98 52 96 Q 88 94 96 64 Q 100 34 84 10 Q 60 -4 30 6 Q 10 18 4 26 Z',
+  },
+  'options-freedom': {
+    iconPath: '/icons/north-star/open-options.png',
+    blob: '#B5D4CC',
+    blobPath: 'M 8 26 Q 0 50 8 78 Q 22 96 54 96 Q 88 94 96 64 Q 100 32 80 10 Q 56 -2 28 8 Q 12 16 8 26 Z',
+  },
+};
+
+// Renders an icon + organic painted blob behind it. The icon is sized
+// slightly bigger than the blob so it spills past the edges — matches the
+// Innovation Zone aesthetic.
+const CategoryIconBlob: React.FC<{ config: CategoryBlobConfig; size: number }> = ({ config, size }) => (
+  <div
+    className="relative shrink-0"
+    style={{ width: size, height: size, overflow: 'visible' }}
+    aria-hidden
+  >
+    <svg
+      className="absolute pointer-events-none"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="xMidYMid meet"
+      style={{
+        width: '88%',
+        height: '88%',
+        left: '50%',
+        top: '50%',
+        transform: 'translate(-50%, -50%)',
+        zIndex: 0,
+      }}
+    >
+      <path d={config.blobPath} fill={config.blob} opacity="0.85" />
+    </svg>
+    <img
+      src={config.iconPath}
+      alt=""
+      style={{
+        position: 'absolute',
+        left: '50%',
+        top: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: '105%',
+        height: '105%',
+        objectFit: 'contain',
+        zIndex: 1,
+      }}
+      draggable={false}
+    />
+  </div>
+);
 
 interface NorthStarOnboardingProps {
   onComplete: (northStar: NorthStar) => void;
   initialData?: NorthStar | null;
+  /** Curriculum level controls which themes + vision cards are shown.
+   *  Senior sees the 6 senior themes + 18 senior cards; junior sees the
+   *  4 JC themes + 12 JC cards. Defaults to 'senior' for back-compat. */
+  curriculumLevel?: CurriculumLevel;
 }
 
-const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, initialData }) => {
+const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, initialData, curriculumLevel = 'senior' }) => {
   const [subStep, setSubStep] = useState<1 | 2 | 3>(1);
   const [direction, setDirection] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState<NorthStarCategory | null>(initialData?.category ?? null);
   const [statement, setStatement] = useState(initialData?.statement ?? '');
   const [selectedCards, setSelectedCards] = useState<Set<string>>(new Set(initialData?.visionBoard ?? []));
 
+  const activeCategories = useMemo(() => getActiveCategories(curriculumLevel), [curriculumLevel]);
+  const activeVisionCards = useMemo(() => getVisionCardsForLevel(curriculumLevel), [curriculumLevel]);
+
   const sortedVisionCards = useMemo(() => {
-    if (!selectedCategory) return VISION_CARDS;
-    return [...VISION_CARDS].sort((a, b) => {
+    if (!selectedCategory) return activeVisionCards;
+    return [...activeVisionCards].sort((a, b) => {
       const aMatch = a.category === selectedCategory ? 0 : 1;
       const bMatch = b.category === selectedCategory ? 0 : 1;
       return aMatch - bMatch;
     });
-  }, [selectedCategory]);
+  }, [selectedCategory, activeVisionCards]);
+
+  // Vision board bounds — JC has fewer cards per theme (3 vs 6) so the
+  // minimum and maximum scale down. Picking 2-of-3 in your chosen JC theme
+  // feels appropriate; picking 3-of-6 in a senior theme is the existing
+  // mental model.
+  const minCards = curriculumLevel === 'junior' ? 2 : 3;
+  const maxCards = curriculumLevel === 'junior' ? 3 : 5;
 
   const toggleCard = (cardId: string) => {
     setSelectedCards(prev => {
       const next = new Set(prev);
       if (next.has(cardId)) {
         next.delete(cardId);
-      } else if (next.size < 5) {
+      } else if (next.size < maxCards) {
         next.add(cardId);
       }
       return next;
@@ -76,7 +189,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
   const canProceedSub = () => {
     if (subStep === 1) return selectedCategory !== null;
     if (subStep === 2) return statement.trim().length > 0;
-    if (subStep === 3) return selectedCards.size >= 3;
+    if (subStep === 3) return selectedCards.size >= minCards;
     return false;
   };
 
@@ -100,7 +213,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
     exit: (dir: number) => ({ opacity: 0, x: dir > 0 ? -40 : 40 }),
   };
 
-  const categoryLabel = selectedCategory ? NORTH_STAR_CATEGORIES.find(c => c.id === selectedCategory)?.label : '';
+  const categoryLabel = selectedCategory ? activeCategories.find(c => c.id === selectedCategory)?.label : '';
 
   return (
     <div className="space-y-6">
@@ -111,31 +224,33 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
           <MotionDiv key="ns-sub1" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
             <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">What's driving you?</h2>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
-              Everyone has a reason for doing the Leaving Cert. Pick the one that feels most like yours.
+              {curriculumLevel === 'junior'
+                ? 'Everyone has a reason for putting in the work. What’s yours?'
+                : 'Everyone has a reason for doing the Leaving Cert. Pick the one that feels most like yours.'}
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {NORTH_STAR_CATEGORIES.map((cat) => {
+              {activeCategories.map((cat) => {
                 const colors = CATEGORY_COLORS[cat.id];
                 const isSelected = selectedCategory === cat.id;
                 const Icon = ICON_MAP[cat.icon];
-                const imgSrc = CATEGORY_ICON_IMG[cat.id];
+                const blobCfg = CATEGORY_BLOBS[cat.id];
                 return (
                   <button
                     key={cat.id}
                     onClick={() => setSelectedCategory(cat.id)}
-                    className={`flex items-start gap-3.5 p-4 rounded-xl border-2 transition-all text-left ${
+                    className={`flex items-center gap-3.5 p-4 rounded-xl border-2 transition-all text-left ${
                       isSelected
                         ? `${colors.selectedBg} ${colors.selectedBorder} ${colors.text}`
                         : `bg-white/70 dark:bg-white/[0.03] border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-zinc-300 dark:hover:border-zinc-600`
                     }`}
                   >
-                    <div className={`w-14 h-14 rounded-xl flex items-center justify-center shrink-0 ${isSelected ? colors.iconBg : 'bg-zinc-100 dark:bg-zinc-800'}`}>
-                      {imgSrc ? (
-                        <img src={imgSrc} alt="" aria-hidden className="w-11 h-11 object-contain" />
-                      ) : (
-                        Icon && <Icon size={22} className={isSelected ? colors.text : 'text-zinc-400 dark:text-zinc-500'} />
-                      )}
-                    </div>
+                    {blobCfg ? (
+                      <CategoryIconBlob config={blobCfg} size={64} />
+                    ) : (
+                      <div className={`w-14 h-14 rounded-xl flex items-center justify-center shrink-0 ${isSelected ? colors.iconBg : 'bg-zinc-100 dark:bg-zinc-800'}`}>
+                        {Icon && <Icon size={22} className={isSelected ? colors.text : 'text-zinc-400 dark:text-zinc-500'} />}
+                      </div>
+                    )}
                     <div>
                       <p className="text-sm font-bold">{cat.label}</p>
                       <p className={`text-xs mt-0.5 ${isSelected ? colors.text : 'text-zinc-400 dark:text-zinc-500'}`}>{cat.description}</p>
@@ -181,14 +296,16 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
           <MotionDiv key="ns-sub3" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
             <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Build Your Vision Board</h2>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
-              Pick <span className="font-semibold text-[var(--accent-hex)]">3-5 things</span> that represent what you're working towards. <span className="font-semibold text-[var(--accent-hex)]">{selectedCards.size} selected</span>
+              Pick <span className="font-semibold text-[var(--accent-hex)]">{minCards}-{maxCards} things</span> that represent what you're working towards. <span className="font-semibold text-[var(--accent-hex)]">{selectedCards.size} selected</span>
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
               {sortedVisionCards.map((card) => {
                 const isSelected = selectedCards.has(card.id);
                 const colors = CATEGORY_COLORS[card.category];
                 const Icon = ICON_MAP[card.icon];
-                const isDisabled = !isSelected && selectedCards.size >= 5;
+                const isDisabled = !isSelected && selectedCards.size >= maxCards;
+                const visionIcon = VISION_ICON_IMG[card.id];
+                const categoryBlob = CATEGORY_BLOBS[card.category];
                 return (
                   <button
                     key={card.id}
@@ -202,9 +319,16 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                         : 'bg-white/70 dark:bg-white/[0.03] border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:border-zinc-300 dark:hover:border-zinc-600'
                     }`}
                   >
-                    <div className={`w-9 h-9 rounded-lg flex items-center justify-center ${isSelected ? colors.iconBg : 'bg-zinc-100 dark:bg-zinc-800'}`}>
-                      {Icon && <Icon size={18} className={isSelected ? colors.text : 'text-zinc-400 dark:text-zinc-500'} />}
-                    </div>
+                    {visionIcon && categoryBlob ? (
+                      <CategoryIconBlob
+                        config={{ iconPath: visionIcon, blob: categoryBlob.blob, blobPath: categoryBlob.blobPath }}
+                        size={56}
+                      />
+                    ) : (
+                      <div className={`w-9 h-9 rounded-lg flex items-center justify-center ${isSelected ? colors.iconBg : 'bg-zinc-100 dark:bg-zinc-800'}`}>
+                        {Icon && <Icon size={18} className={isSelected ? colors.text : 'text-zinc-400 dark:text-zinc-500'} />}
+                      </div>
+                    )}
                     <span className="text-[11px] font-semibold text-center leading-tight">{card.label}</span>
                     {isSelected && (
                       <div className={`w-5 h-5 rounded-full flex items-center justify-center ${colors.selectedBg} ${colors.selectedBorder} border`}>

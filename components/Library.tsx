@@ -15,10 +15,10 @@ import {
   Sun, Moon, Home, BarChart3, Rocket, PanelLeft, Award, Settings, LogOut, Layers, RefreshCw, User, Mountain, Bell
 } from 'lucide-react';
 import { type CategoryType } from './KnowledgeTree';
-import { type NorthStar, type AccentThemeId, type CardStyleId } from '../types';
+import { type NorthStar, type CardStyleId } from '../types';
 import { type StudentSubjectProfile } from './subjectData';
 import { useSettingsContext } from '../contexts/SettingsContext';
-import { ACCENT_THEME_LIST, ACCENT_THEMES, CARD_STYLES } from '../themeData';
+import { CARD_STYLES } from '../themeData';
 import { getAvatarUrl } from '../utils/authUtils';
 import ModuleShowcase from './ModuleShowcase';
 
@@ -36,6 +36,15 @@ export interface CourseData {
   accentColor: string;
   auraColor?: string;
   pillBgColor: string;
+  /** Which curriculum level(s) can see this module. Phase 1 seeds every
+   *  existing module as 'senior' — module-by-module re-classification
+   *  happens in Phase 4. JC users see only entries matching 'junior' or 'both'. */
+  curriculum?: 'junior' | 'senior' | 'both';
+  /** For modules tagged `curriculum: 'both'` that aren't yet JC-ready:
+   *  show the tile to JC users but intercept the click and route to the
+   *  "Coming Soon for Junior Cycle" placeholder. Defaults to 'available'
+   *  for any module without this field. */
+  jcStatus?: 'available' | 'coming-soon';
 }
 
 type UserProgress = {
@@ -301,7 +310,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
                 className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
               >
                 <div className="shrink-0 flex items-center justify-center w-[18px]">
-                  <RefreshCw size={18} strokeWidth={1.5} className="text-teal-500" />
+                  <RefreshCw size={18} strokeWidth={1.5} className="text-[#F26B1F]" />
                 </div>
                 <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
                   Change Subjects
@@ -326,9 +335,6 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
                   <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
                     Theme
                   </span>
-                  <span className={`transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-                    <div className="w-3.5 h-3.5 rounded-full border border-zinc-200 dark:border-zinc-700" style={{ backgroundColor: ACCENT_THEMES[settingsCtx.settings.accentTheme]?.hex || '#CC785C' }} />
-                  </span>
                 </button>
                 <AnimatePresence>
                   {themePickerOpen && sidebarOpen && (
@@ -346,28 +352,6 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
                         <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300">{settingsCtx.settings.darkMode ? 'Light Mode' : 'Dark Mode'}</span>
                         {settingsCtx.settings.darkMode ? <Sun size={14} className="text-amber-400" /> : <Moon size={14} className="text-zinc-500" />}
                       </button>
-                      <div className="border-t border-zinc-100 dark:border-zinc-800 pt-2">
-                        <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2 px-1">Accent</p>
-                        <div className="grid grid-cols-4 gap-1.5">
-                          {ACCENT_THEME_LIST.filter(t => t.price === 0 || settingsCtx.unlockedThemes.includes(t.id)).map(theme => (
-                            <button
-                              key={theme.id}
-                              onClick={() => { settingsCtx.updateSetting('accentTheme', theme.id as AccentThemeId); }}
-                              title={theme.name}
-                              className={`flex items-center justify-center p-1.5 rounded-lg transition-all ${
-                                settingsCtx.settings.accentTheme === theme.id
-                                  ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]'
-                                  : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'
-                              }`}
-                            >
-                              <div
-                                className="w-5 h-5 rounded-full border border-white dark:border-zinc-700 shadow-sm"
-                                style={{ backgroundColor: theme.hex }}
-                              />
-                            </button>
-                          ))}
-                        </div>
-                      </div>
                     </MotionDiv>
                   )}
                 </AnimatePresence>

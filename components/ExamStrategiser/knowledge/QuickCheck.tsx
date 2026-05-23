@@ -9,8 +9,8 @@
 
 import React, { useState } from 'react';
 import { type QuickCheckQuestion } from '../../../types/knowledge';
+import { ACCENT, ACCENT_TINT } from '../colors';
 
-const TEAL = '#2A7D6F';
 
 interface Props {
   questions: QuickCheckQuestion[];
@@ -35,7 +35,7 @@ const QuickCheck: React.FC<Props> = ({ questions, heading = 'Test yourself' }) =
       }}
     >
       <header className="mb-5">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 4 }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 4 }}>
           Quick check
         </p>
         <h3 className="font-serif" style={{ fontSize: 18, fontWeight: 600, color: '#1A1A1A' }}>
@@ -59,7 +59,7 @@ const QuickCheck: React.FC<Props> = ({ questions, heading = 'Test yourself' }) =
       <div className="mt-5 flex items-center justify-between">
         {submitted ? (
           <p className="font-sans" style={{ fontSize: 13, color: '#3F3B36', fontWeight: 500 }}>
-            <span style={{ color: TEAL, fontWeight: 700 }}>{correctCount} / {questions.length}</span>
+            <span style={{ color: ACCENT, fontWeight: 700 }}>{correctCount} / {questions.length}</span>
             {' correct'}
           </p>
         ) : (
@@ -74,7 +74,7 @@ const QuickCheck: React.FC<Props> = ({ questions, heading = 'Test yourself' }) =
             disabled={!allAnswered}
             className="rounded-full transition-colors font-sans"
             style={{
-              backgroundColor: allAnswered ? TEAL : '#F5F4F1',
+              backgroundColor: allAnswered ? ACCENT : '#F5F4F1',
               color: allAnswered ? '#FFFFFF' : '#C4C0BC',
               padding: '9px 20px',
               fontSize: 13,
@@ -105,7 +105,7 @@ const QuestionCard: React.FC<{
     <div
       className="rounded-xl"
       style={{
-        backgroundColor: '#F0FAF8',
+        backgroundColor: ACCENT_TINT,
         border: '1px solid #EDEBE8',
         padding: '14px 16px',
       }}
@@ -136,18 +136,18 @@ const QuestionCard: React.FC<{
                 fontSize: 13,
                 fontWeight: 500,
                 backgroundColor: isCorrectOpt
-                  ? TEAL
+                  ? ACCENT
                   : selected && !submitted
-                  ? TEAL
+                  ? ACCENT
                   : '#FFFFFF',
                 color: isCorrectOpt || (selected && !submitted) ? '#FFFFFF' : '#1A1A1A',
                 border: `1px solid ${
                   isCorrectOpt
-                    ? TEAL
+                    ? ACCENT
                     : isWrongSelected
                     ? '#C4C0BC'
                     : selected && !submitted
-                    ? TEAL
+                    ? ACCENT
                     : '#EDEBE8'
                 }`,
                 cursor: submitted ? 'default' : 'pointer',
@@ -175,7 +175,7 @@ const QuestionCard: React.FC<{
             lineHeight: 1.55,
           }}
         >
-          <span style={{ color: isCorrect ? TEAL : '#78716C', fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.5 }}>
+          <span style={{ color: isCorrect ? ACCENT : '#78716C', fontWeight: 700, fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.5 }}>
             {isCorrect ? 'Correct · ' : isWrong ? 'Examiner\'s answer · ' : 'Note · '}
           </span>
           {question.explanation}

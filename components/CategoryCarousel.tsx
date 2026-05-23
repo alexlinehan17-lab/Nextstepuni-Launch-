@@ -7,6 +7,7 @@ import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import { ArrowLeft, ArrowRight, Check } from 'lucide-react';
 import { type CourseData } from './Library';
 import { type UserProgress } from '../types';
+import { COLORS } from '../design/tokens';
 
 const SERIF = "'Source Serif 4', serif";
 
@@ -289,9 +290,9 @@ const CategoryCarousel: React.FC<CategoryCarouselProps> = ({
                     {isStarted && !isCompleted && (
                       <div className="mb-4">
                         <div className="w-full h-1 rounded-full bg-zinc-100 dark:bg-zinc-800 overflow-hidden">
-                          <div className="h-full rounded-full" style={{ width: `${pct}%`, backgroundColor: '#2A7D6F', transition: 'width 0.5s ease-out' }} />
+                          <div className="h-full rounded-full" style={{ width: `${pct}%`, backgroundColor: COLORS.accent, transition: 'width 0.5s ease-out' }} />
                         </div>
-                        <p className="text-[10px] font-medium mt-1" style={{ color: '#2A7D6F' }}>{pct}% complete</p>
+                        <p className="text-[10px] font-medium mt-1" style={{ color: COLORS.accent }}>{pct}% complete</p>
                       </div>
                     )}
 
@@ -305,7 +306,7 @@ const CategoryCarousel: React.FC<CategoryCarouselProps> = ({
                           <button
                             onClick={(e) => { e.stopPropagation(); onSelectCourse(course.id); }}
                             className="flex items-center gap-1.5 px-4 py-2 rounded-full text-[13px] font-medium transition-colors"
-                            style={{ border: '1.5px solid rgba(42,125,111,0.25)', color: '#2A7D6F' }}
+                            style={{ border: '1.5px solid rgba(242,107,31,0.25)', color: COLORS.accent }}
                           >
                             <Check size={13} /> Review
                           </button>
@@ -313,7 +314,7 @@ const CategoryCarousel: React.FC<CategoryCarouselProps> = ({
                           <button
                             onClick={(e) => { e.stopPropagation(); onSelectCourse(course.id); }}
                             className="flex items-center gap-1.5 px-4 py-2 rounded-full text-[13px] font-medium text-white transition-colors hover:opacity-90 active:scale-[0.97]"
-                            style={{ backgroundColor: '#2A7D6F' }}
+                            style={{ backgroundColor: COLORS.accent }}
                           >
                             {isStarted ? 'Continue' : 'Start'} <ArrowRight size={13} />
                           </button>

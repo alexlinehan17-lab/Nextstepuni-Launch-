@@ -134,7 +134,7 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
                     disabled={isAuto}
                     className={`inline-flex items-center gap-2 rounded-xl transition-all duration-200 ${
                       isSelected
-                        ? 'border-[1.5px] border-[#2A7D6F]'
+                        ? 'border-[1.5px] border-[#F26B1F]'
                         : 'border-[1.5px] border-zinc-200 dark:border-zinc-700 hover:border-zinc-300 dark:hover:border-zinc-600'
                     } ${isAuto ? 'cursor-default' : 'cursor-pointer'}`}
                     style={{
@@ -152,9 +152,9 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
                         width: 18,
                         height: 18,
                         borderRadius: 5,
-                        backgroundColor: isSelected ? '#2A7D6F' : 'transparent',
-                        borderColor: isSelected ? '#2A7D6F' : undefined,
-                        border: isSelected ? '1.5px solid #2A7D6F' : undefined,
+                        backgroundColor: isSelected ? '#F26B1F' : 'transparent',
+                        borderColor: isSelected ? '#F26B1F' : undefined,
+                        border: isSelected ? '1.5px solid #F26B1F' : undefined,
                       }}
                     >
                       {isSelected && (
@@ -184,7 +184,7 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
           }`}
           style={{
             padding: 14,
-            backgroundColor: count > 0 ? '#2A7D6F' : undefined,
+            backgroundColor: count > 0 ? '#F26B1F' : undefined,
           }}
         >
           {count > 0
@@ -202,7 +202,7 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
               transition={{ duration: 0.3 }}
               className="text-center mt-3"
             >
-              <p className="text-xs font-medium" style={{ color: '#2A7D6F' }}>+5 bonus journey points for reflecting</p>
+              <p className="text-xs font-medium" style={{ color: '#F26B1F' }}>+5 bonus journey points for reflecting</p>
             </MotionDiv>
           )}
         </AnimatePresence>

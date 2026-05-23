@@ -11,8 +11,8 @@
 import React from 'react';
 import { type ExamQuestion } from '../../../types/examStrategiser';
 import AnnotatedText from '../AnnotatedText';
+import { ACCENT } from '../colors';
 
-const TEAL = '#2A7D6F';
 
 interface Props {
   question: ExamQuestion;
@@ -39,7 +39,7 @@ const QuestionStage: React.FC<Props> = ({ question, onPredictStart }) => {
           onClick={onPredictStart}
           className="rounded-full transition-colors"
           style={{
-            backgroundColor: TEAL,
+            backgroundColor: ACCENT,
             color: '#FFFFFF',
             padding: '12px 28px',
             fontSize: 14,

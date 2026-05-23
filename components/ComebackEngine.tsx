@@ -13,6 +13,7 @@ import {
   GraduationCap, BookOpen, Wrench, DoorOpen, Compass,
 } from 'lucide-react';
 import { db } from '../firebase';
+import { COLORS } from '../design/tokens';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import {
   type StudentSubjectProfile, type Grade, type Level,
@@ -521,7 +522,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center py-20">
-        <div className="w-6 h-6 border-2 border-zinc-300 dark:border-zinc-600 rounded-full animate-spin" style={{ borderTopColor: '#2A7D6F' }} />
+        <div className="w-6 h-6 border-2 border-zinc-300 dark:border-zinc-600 rounded-full animate-spin" style={{ borderTopColor: COLORS.accent }} />
       </div>
     );
   }
@@ -534,7 +535,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
         {/* Intro */}
         <div className="text-center space-y-3 py-4">
           <div className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto bg-[#FAF7F4] dark:bg-zinc-900">
-            <Rocket className="w-7 h-7" style={{ color: '#2A7D6F' }} />
+            <Rocket className="w-7 h-7" style={{ color: COLORS.accent }} />
           </div>
           <h2 className="text-xl font-bold text-zinc-800 dark:text-white">Let's be real for a second.</h2>
           <p className="text-sm text-zinc-500 dark:text-zinc-400 max-w-md mx-auto leading-relaxed">
@@ -543,8 +544,8 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
           </p>
           {northStar && (
             <div className="dark:border rounded-lg px-4 py-3 max-w-sm mx-auto bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(0,0,0,0.07)' }}>
-              <p className="text-[10px] font-bold uppercase tracking-wider mb-1" style={{ color: '#2A7D6F' }}>Your North Star</p>
-              <p className="text-sm italic" style={{ color: '#2A7D6F' }}>"{northStar.statement}"</p>
+              <p className="text-[10px] font-bold uppercase tracking-wider mb-1" style={{ color: COLORS.accent }}>Your North Star</p>
+              <p className="text-sm italic" style={{ color: COLORS.accent }}>"{northStar.statement}"</p>
             </div>
           )}
         </div>
@@ -566,19 +567,19 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                     ? 'shadow-sm bg-[#FAF7F4] dark:bg-zinc-900'
                     : 'border-zinc-200 dark:border-zinc-700/50 bg-white dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-600'
                 }`}
-                style={!ffDisabled && selectedAnchor === opt.type ? { borderColor: '#2A7D6F' } : undefined}
+                style={!ffDisabled && selectedAnchor === opt.type ? { borderColor: COLORS.accent } : undefined}
               >
-                <opt.icon size={18} className={selectedAnchor === opt.type && !ffDisabled ? '' : 'text-zinc-400 dark:text-zinc-500'} style={selectedAnchor === opt.type && !ffDisabled ? { color: '#2A7D6F' } : undefined} />
+                <opt.icon size={18} className={selectedAnchor === opt.type && !ffDisabled ? '' : 'text-zinc-400 dark:text-zinc-500'} style={selectedAnchor === opt.type && !ffDisabled ? { color: COLORS.accent } : undefined} />
                 <div className="flex-1 min-w-0">
                   <span className={`text-sm font-semibold ${
                     selectedAnchor === opt.type && !ffDisabled ? '' : 'text-zinc-700 dark:text-zinc-300'
-                  }`} style={selectedAnchor === opt.type && !ffDisabled ? { color: '#2A7D6F' } : undefined}>{opt.label}</span>
+                  }`} style={selectedAnchor === opt.type && !ffDisabled ? { color: COLORS.accent } : undefined}>{opt.label}</span>
                   {ffDisabled && (
                     <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">Complete Future Finder first</p>
                   )}
                 </div>
                 {selectedAnchor === opt.type && !ffDisabled && (
-                  <CheckCircle size={16} className="ml-auto" style={{ color: '#2A7D6F' }} />
+                  <CheckCircle size={16} className="ml-auto" style={{ color: COLORS.accent }} />
                 )}
               </button>
             );
@@ -613,7 +614,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                           ? 'bg-[#FAF7F4] dark:bg-zinc-900'
                           : 'bg-zinc-50 dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-700'
                       }`}
-                      style={selectedFfPick?.code === course.code ? { borderColor: '#2A7D6F' } : undefined}
+                      style={selectedFfPick?.code === course.code ? { borderColor: COLORS.accent } : undefined}
                     >
                       <div className="flex-1 min-w-0">
                         <p className="text-xs font-semibold text-zinc-800 dark:text-zinc-200 truncate">{course.title}</p>
@@ -621,7 +622,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                       </div>
                       <span className="text-xs font-bold text-zinc-600 dark:text-zinc-300 shrink-0">{course.typicalPoints} pts</span>
                       {selectedFfPick?.code === course.code && (
-                        <CheckCircle size={14} className="shrink-0" style={{ color: '#2A7D6F' }} />
+                        <CheckCircle size={14} className="shrink-0" style={{ color: COLORS.accent }} />
                       )}
                     </button>
                   ))}
@@ -640,7 +641,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                     onChange={e => setAnchorText(e.target.value)}
                     placeholder="Type here..."
                     maxLength={100}
-                    className="w-full mt-1 px-3 py-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-white placeholder-zinc-400 outline-none focus:border-[#2A7D6F] dark:focus:border-[#4DB8A4] transition-colors"
+                    className="w-full mt-1 px-3 py-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-white placeholder-zinc-400 outline-none focus:border-[#F26B1F] dark:focus:border-[#F26B1F] transition-colors"
                   />
                 </div>
               )}
@@ -658,7 +659,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                     placeholder="e.g. 350"
                     min={0}
                     max={625}
-                    className="w-full mt-1 px-3 py-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-white placeholder-zinc-400 outline-none focus:border-[#2A7D6F] dark:focus:border-[#4DB8A4] transition-colors"
+                    className="w-full mt-1 px-3 py-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-white placeholder-zinc-400 outline-none focus:border-[#F26B1F] dark:focus:border-[#F26B1F] transition-colors"
                   />
                 </div>
               )}
@@ -667,7 +668,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                 onClick={handleSetAnchor}
                 disabled={selectedAnchor === 'future-finder' && !selectedFfPick}
                 className="w-full py-3 rounded-xl text-sm font-bold text-white active:scale-[0.98] transition-all disabled:opacity-40 disabled:cursor-not-allowed"
-                style={{ backgroundColor: '#2A7D6F', boxShadow: '0 10px 15px -3px rgba(42,125,111,0.2)' }}
+                style={{ backgroundColor: COLORS.accent, boxShadow: '0 10px 15px -3px rgba(242,107,31,0.2)' }}
               >
                 Show me what's possible
               </button>
@@ -696,7 +697,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
         {/* Current projection */}
         <div className="rounded-2xl p-5 text-center space-y-1 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
           <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Your projected CAO points</p>
-          <p className="text-5xl font-black" style={{ color: '#2A7D6F' }}>{projectedPoints}</p>
+          <p className="text-5xl font-black" style={{ color: COLORS.accent }}>{projectedPoints}</p>
           <p className="text-xs text-zinc-400 dark:text-zinc-500">Based on your best 6 subjects right now</p>
         </div>
 
@@ -716,23 +717,23 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
             ) : (
               <>
                 <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: '#C4873B' }}>The gap</p>
-                <p className="text-4xl font-black" style={{ color: '#2A7D6F' }}>{gap} points</p>
+                <p className="text-4xl font-black" style={{ color: COLORS.accent }}>{gap} points</p>
                 <p className="text-xs text-zinc-500 dark:text-zinc-400">
                   You need <span className="font-bold">{targetPoints}</span> points.
                   That's <span className="font-bold">{gap}</span> to close.
                 </p>
                 {gap <= 50 && (
-                  <p className="text-xs font-semibold pt-1" style={{ color: '#2A7D6F' }}>
+                  <p className="text-xs font-semibold pt-1" style={{ color: COLORS.accent }}>
                     That's smaller than you think. One or two grade jumps could close it.
                   </p>
                 )}
                 {gap > 50 && gap <= 120 && (
-                  <p className="text-xs font-semibold pt-1" style={{ color: '#2A7D6F' }}>
+                  <p className="text-xs font-semibold pt-1" style={{ color: COLORS.accent }}>
                     That's doable. A few smart moves in the right subjects and you're there.
                   </p>
                 )}
                 {gap > 120 && (
-                  <p className="text-xs font-semibold pt-1" style={{ color: '#2A7D6F' }}>
+                  <p className="text-xs font-semibold pt-1" style={{ color: COLORS.accent }}>
                     It's a stretch — but every single point you close matters. Let's find your quickest wins.
                   </p>
                 )}
@@ -756,7 +757,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
         <button
           onClick={() => setPhase('wins')}
           className="w-full py-3 rounded-xl text-sm font-bold text-white active:scale-[0.98] transition-all flex items-center justify-center gap-2"
-          style={{ backgroundColor: '#2A7D6F', boxShadow: '0 10px 15px -3px rgba(42,125,111,0.2)' }}
+          style={{ backgroundColor: COLORS.accent, boxShadow: '0 10px 15px -3px rgba(242,107,31,0.2)' }}
         >
           Show me the quickest wins <ChevronRight size={16} />
         </button>
@@ -805,7 +806,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                         style={
                           win.effort === 'low' ? { backgroundColor: '#EDF2EE', color: '#4A6B4F' }
                             : win.effort === 'medium' ? { backgroundColor: '#FDF3E7', color: '#8B5E2A' }
-                            : { backgroundColor: '#ECF5F3', color: '#1F5F54' }
+                            : { backgroundColor: '#ECF5F3', color: '#B54D14' }
                         }
                       >
                         {win.effort === 'low' ? 'Easiest' : win.effort === 'medium' ? 'Moderate' : 'Harder'}
@@ -841,7 +842,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
         <button
           onClick={() => setPhase('plan')}
           className="w-full py-3 rounded-xl text-sm font-bold text-white active:scale-[0.98] transition-all flex items-center justify-center gap-2"
-          style={{ backgroundColor: '#2A7D6F', boxShadow: '0 10px 15px -3px rgba(42,125,111,0.2)' }}
+          style={{ backgroundColor: COLORS.accent, boxShadow: '0 10px 15px -3px rgba(242,107,31,0.2)' }}
         >
           Give me a plan <ChevronRight size={16} />
         </button>
@@ -903,7 +904,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                       const priority = subjectPriorities.find(p => p.subjectName === m.subject);
                       if (!priority) return null;
                       const label = priority.sessions >= 3 ? 'High' : priority.sessions >= 2 ? 'Med' : 'Low';
-                      const color = label === 'High' ? '#C4873B' : label === 'Med' ? '#2A7D6F' : '#A8A29E';
+                      const color = label === 'High' ? '#C4873B' : label === 'Med' ? COLORS.accent : '#A8A29E';
                       return <span className="ml-1.5 text-[9px] font-bold" style={{ color }}>{label} priority</span>;
                     })()}
                   </p>
@@ -927,7 +928,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
           <div className="h-2 rounded-full overflow-hidden bg-[#9A9590] dark:bg-zinc-700">
             <div
               className="h-full rounded-full transition-all duration-500"
-              style={{ width: `${totalMissions > 0 ? (completedCount / totalMissions) * 100 : 0}%`, backgroundColor: '#2A7D6F' }}
+              style={{ width: `${totalMissions > 0 ? (completedCount / totalMissions) * 100 : 0}%`, backgroundColor: COLORS.accent }}
             />
           </div>
         </div>
@@ -937,14 +938,14 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             className="rounded-xl p-4 text-center space-y-2 border bg-[#FAF7F4] dark:bg-zinc-900"
-            style={{ borderColor: 'rgba(42,125,111,0.3)' }}
+            style={{ borderColor: 'rgba(242,107,31,0.3)' }}
           >
-            <Flame className="w-8 h-8 mx-auto" style={{ color: '#2A7D6F' }} />
-            <p className="text-sm font-bold" style={{ color: '#2A7D6F' }}>All missions complete. Comeback is happening.</p>
+            <Flame className="w-8 h-8 mx-auto" style={{ color: COLORS.accent }} />
+            <p className="text-sm font-bold" style={{ color: COLORS.accent }}>All missions complete. Comeback is happening.</p>
             <button
               onClick={() => { handleNewWeek(); }}
               className="px-4 py-2 rounded-lg text-xs font-bold text-white transition-colors"
-              style={{ backgroundColor: '#2A7D6F' }}
+              style={{ backgroundColor: COLORS.accent }}
             >
               Generate next week's missions
             </button>
@@ -969,7 +970,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
       <div className="grid grid-cols-2 gap-3">
         <div className="rounded-xl p-4 text-center bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: '12px' }}>
           <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Projected</p>
-          <p className="text-3xl font-black" style={{ color: '#2A7D6F' }}>{projectedPoints}</p>
+          <p className="text-3xl font-black" style={{ color: COLORS.accent }}>{projectedPoints}</p>
           <p className="text-[10px] text-zinc-400 dark:text-zinc-500">CAO points</p>
         </div>
         {targetPoints !== null && gap !== null ? (
@@ -1007,7 +1008,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
             ? { backgroundColor: '#EDF2EE', borderColor: 'rgba(107,143,113,0.3)' }
             : pointsGained === 0
             ? { borderColor: 'rgba(0,0,0,0.07)' }
-            : { backgroundColor: '#ECF5F3', borderColor: 'rgba(42,125,111,0.3)' }
+            : { backgroundColor: '#ECF5F3', borderColor: 'rgba(242,107,31,0.3)' }
           }
         >
           <div className="flex items-center justify-center gap-2">
@@ -1060,11 +1061,11 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
 
       {/* NorthStar motivation connector */}
       {northStar && (
-        <div className="rounded-xl p-4 space-y-2 border bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(42,125,111,0.2)' }}>
-          <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: '#2A7D6F' }}>Your Why</p>
-          <p className="text-sm font-semibold italic" style={{ color: '#2A7D6F' }}>"{northStar.statement}"</p>
+        <div className="rounded-xl p-4 space-y-2 border bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.2)' }}>
+          <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: COLORS.accent }}>Your Why</p>
+          <p className="text-sm font-semibold italic" style={{ color: COLORS.accent }}>"{northStar.statement}"</p>
           {targetPoints !== null && gap !== null && gap > 0 && (
-            <p className="text-xs" style={{ color: '#2A7D6F' }}>
+            <p className="text-xs" style={{ color: COLORS.accent }}>
               {gap <= 30
                 ? `You're so close — just ${gap} points from making this real.`
                 : gap <= 80
@@ -1101,7 +1102,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
       <div className="space-y-2">
         <div className="flex items-center justify-between">
           <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">This week's missions</p>
-          <span className="text-xs font-bold" style={{ color: '#2A7D6F' }}>{completedCount}/{totalMissions}</span>
+          <span className="text-xs font-bold" style={{ color: COLORS.accent }}>{completedCount}/{totalMissions}</span>
         </div>
         {comebackData?.weeklyMissions.map(m => (
           <button
@@ -1132,7 +1133,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
           <button
             onClick={handleNewWeek}
             className="w-full py-2 rounded-lg text-xs font-bold transition-colors border bg-[#FAF7F4] dark:bg-zinc-900"
-            style={{ color: '#2A7D6F', borderColor: 'rgba(42,125,111,0.3)' }}
+            style={{ color: COLORS.accent, borderColor: 'rgba(242,107,31,0.3)' }}
           >
             Generate next week's missions
           </button>
@@ -1142,7 +1143,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
       {/* Days remaining */}
       <div className="text-center py-2">
         <p className="text-xs text-zinc-400 dark:text-zinc-500">
-          <span className="font-bold" style={{ color: '#2A7D6F' }}>{daysUntilExam}</span> days until exam — every day counts
+          <span className="font-bold" style={{ color: COLORS.accent }}>{daysUntilExam}</span> days until exam — every day counts
         </p>
       </div>
 

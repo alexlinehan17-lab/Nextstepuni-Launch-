@@ -8,8 +8,8 @@
 
 import React from 'react';
 import { type ExamStrategiserStage } from '../../types/examStrategiser';
+import { ACCENT } from './colors';
 
-const TEAL = '#2A7D6F';
 
 interface StageProgressProps {
   stages: ExamStrategiserStage[];
@@ -64,7 +64,7 @@ const StageProgress: React.FC<StageProgressProps> = ({
                     width: isCurrent ? 28 : 8,
                     height: 8,
                     borderRadius: 999,
-                    backgroundColor: isCurrent ? TEAL : isPast ? `${TEAL}66` : '#E5E3DF',
+                    backgroundColor: isCurrent ? ACCENT : isPast ? `${ACCENT}66` : '#E5E3DF',
                     transition: 'all 200ms ease',
                   }}
                 />
@@ -98,7 +98,7 @@ const StageProgress: React.FC<StageProgressProps> = ({
         aria-label="Next stage"
         className="flex items-center justify-center gap-2 h-9 rounded-full transition-colors"
         style={{
-          backgroundColor: canGoForward ? TEAL : '#F5F4F1',
+          backgroundColor: canGoForward ? ACCENT : '#F5F4F1',
           color: canGoForward ? '#FFFFFF' : '#C4C0BC',
           padding: forwardLabel ? '0 14px' : '0',
           width: forwardLabel ? 'auto' : 36,

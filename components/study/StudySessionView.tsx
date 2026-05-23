@@ -475,7 +475,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                   style={{ boxShadow: '0 1px 4px rgba(28,25,23,0.04)' }}
                 >
                   <div className="flex items-start gap-3">
-                    <Sparkles size={18} className="text-[#2A7D6F] shrink-0 mt-0.5" />
+                    <Sparkles size={18} className="text-[#F26B1F] shrink-0 mt-0.5" />
                     <div className="space-y-2">
                       <p className="font-semibold text-sm text-[#1A1A1A] dark:text-white">Welcome to Study Sessions</p>
                       <p className="text-sm text-[#78716C] dark:text-zinc-400 leading-relaxed">
@@ -484,7 +484,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                       <button
                         onClick={() => onDismissGuide?.('study-session-intro')}
                         className="mt-1 text-sm font-medium hover:underline"
-                        style={{ color: '#2A7D6F' }}
+                        style={{ color: '#F26B1F' }}
                       >
                         Got it
                       </button>
@@ -1101,7 +1101,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           )}
 
           {/* Weekly Challenge nudge */}
-          {weeklyChallenge?.isLoaded && !weeklyChallenge?.isClaimed && (
+          {weeklyChallenge?.isLoaded && weeklyChallenge?.challenge && !weeklyChallenge?.isClaimed && (
             <div className="flex items-center gap-3 p-3 rounded-xl bg-amber-50 dark:bg-amber-900/20 border border-amber-200/60 dark:border-amber-800/30">
               <Trophy size={16} className="text-amber-500 shrink-0" />
               <div className="flex-1 min-w-0">
@@ -1129,7 +1129,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               onClick={() => { setReflectionMode('quick'); setReflectionOpen(true); }}
               disabled={isSaving}
               className="w-full py-3.5 rounded-xl text-sm font-bold text-white active:scale-[0.98] transition-all disabled:opacity-50"
-              style={{ backgroundColor: '#2A7D6F' }}
+              style={{ backgroundColor: '#F26B1F' }}
             >
               Quick Debrief (+{QUICK_DEBRIEF_POINTS} pts)
             </button>
@@ -1137,7 +1137,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               onClick={() => { setReflectionMode('full'); setReflectionOpen(true); }}
               disabled={isSaving}
               className="w-full py-3 rounded-xl text-sm font-medium transition-all disabled:opacity-50"
-              style={{ backgroundColor: 'rgba(42,125,111,0.08)', color: '#2A7D6F' }}
+              style={{ backgroundColor: 'rgba(242,107,31,0.08)', color: '#F26B1F' }}
             >
               Write a Reflection (+{FULL_REFLECTION_POINTS} pts)
             </button>

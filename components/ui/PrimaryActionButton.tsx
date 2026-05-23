@@ -4,11 +4,15 @@
  */
 
 import React from 'react';
+import { COLORS } from '../../design/tokens';
 
-type Variant = 'teal' | 'dark';
+// 'teal' kept as a back-compat alias for callsites that haven't been
+// updated yet. New code should use 'accent'.
+type Variant = 'accent' | 'teal' | 'dark';
 
 const VARIANTS: Record<Variant, { fill: string; depth: string }> = {
-  teal: { fill: '#2A7D6F', depth: '#1F5F54' },
+  accent: { fill: COLORS.accent, depth: COLORS.accentDark },
+  teal: { fill: COLORS.accent, depth: COLORS.accentDark },
   dark: { fill: '#1C1C1C', depth: '#000000' },
 };
 
@@ -23,7 +27,7 @@ const PrimaryActionButton: React.FC<PrimaryActionButtonProps> = ({
   label,
   onClick,
   icon: Icon,
-  variant = 'teal',
+  variant = 'accent',
   disabled,
   className = '',
   ...rest

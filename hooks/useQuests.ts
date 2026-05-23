@@ -97,6 +97,15 @@ export function useQuests(
   const questState = useMemo((): QuestState | null => {
     if (!isLoaded || !uid) return null;
 
+    // Phase 5 plumbing: JC users see no quests for now. Existing onboarding
+    // quests + personalized templates default to senior. JC-specific quest
+    // content is deferred to a later phase.
+    const curriculumLevel = studentProfile?.curriculumLevel ?? 'senior';
+    const passesCurriculum = (c: 'junior' | 'senior' | 'both' | undefined) => {
+      const tag = c ?? 'senior';
+      return tag === 'both' || tag === curriculumLevel;
+    };
+
     const dayNumber = getDayNumber(studentProfile?.createdAt);
     const todayKey = toDateKey(new Date());
     const isOnboarding = dayNumber >= 1 && dayNumber <= 7;
@@ -105,7 +114,9 @@ export function useQuests(
     let quest: QuestDefinition;
 
     if (isOnboarding) {
-      quest = ONBOARDING_QUESTS[dayNumber - 1];
+      const candidate = ONBOARDING_QUESTS[dayNumber - 1];
+      if (!candidate || !passesCurriculum(candidate.curriculum)) return null;
+      quest = candidate;
     } else {
       // Determine condition context
       const hasShaky = topicMastery
@@ -122,8 +133,9 @@ export function useQuests(
       const hasSubjects = !!studentProfile && studentProfile.subjects.length > 0;
       const streakActive = streak.currentStreak > 0;
 
-      // Filter eligible templates
+      // Filter eligible templates (also gated by curriculum — Phase 5).
       const eligible = PERSONALIZED_TEMPLATES.filter(t => {
+        if (!passesCurriculum(t.curriculum)) return false;
         switch (t.condition) {
           case 'has-shaky-topics': return hasShaky;
           case 'has-in-progress-module': return !!inProgressModule;

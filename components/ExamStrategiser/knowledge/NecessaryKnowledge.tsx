@@ -20,8 +20,8 @@
 
 import React from 'react';
 import YourPatternsContainer, { type KnowledgeModuleId } from './YourPatternsContainer';
+import { ACCENT, ACCENT_TINT } from '../colors';
 
-const TEAL = '#2A7D6F';
 const INK = '#1a1a1a';
 
 export type { KnowledgeModuleId };
@@ -222,7 +222,7 @@ const StageSection: React.FC<{
 }> = ({ kicker, title, subtitle, meta, tiles, onOpenModule }) => (
   <section className="space-y-3">
     <div className="pt-2">
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
         {kicker}
         <span style={{ color: '#D6D2CC', margin: '0 6px' }}>·</span>
         <span style={{ color: '#A8A29E' }}>{meta}</span>
@@ -256,13 +256,13 @@ const ModuleRow: React.FC<{ tile: ModuleTile; onOpen: () => void }> = ({ tile, o
       padding: '14px 18px',
       cursor: 'pointer',
     }}
-    onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#F0FAF8'; }}
+    onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = ACCENT_TINT; }}
     onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#FFFFFF'; }}
   >
     <div className="flex items-center gap-3">
       <div className="flex-1 min-w-0">
         {tile.subject && (
-          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 3 }}>
+          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 3 }}>
             {tile.subject}
           </p>
         )}
@@ -295,12 +295,12 @@ const ChiefExaminerCallout: React.FC = () => (
   <section
     className="rounded-2xl"
     style={{
-      backgroundColor: '#F0FAF8',
-      border: `1px solid ${TEAL}33`,
+      backgroundColor: ACCENT_TINT,
+      border: `1px solid ${ACCENT}33`,
       padding: '22px 26px',
     }}
   >
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 8 }}>
+    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 8 }}>
       What the examiners keep saying
     </p>
     <blockquote

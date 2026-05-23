@@ -54,12 +54,12 @@ const CircadianShifter = () => {
              <p className="text-center text-sm mt-1 mb-6" style={{ color: '#7a7068' }}>Enter your current weekend wake-up time to get a 4-week plan for shifting it earlier.</p>
              <div className="flex flex-col items-center gap-2">
                 <label style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', textTransform: 'uppercase' as const }}>Current Wake-up Time</label>
-                <input type="time" value={`${String(Math.floor(wakeTime)).padStart(2,'0')}:${String((wakeTime % 1)*60).padStart(2,'0')}`} onChange={e => setWakeTime(parseInt(e.target.value.split(':')[0]) + parseInt(e.target.value.split(':')[1])/60)} className="outline-none" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 16, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
+                <input type="time" value={`${String(Math.floor(wakeTime)).padStart(2,'0')}:${String((wakeTime % 1)*60).padStart(2,'0')}`} onChange={e => setWakeTime(parseInt(e.target.value.split(':')[0]) + parseInt(e.target.value.split(':')[1])/60)} className="outline-none" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 16, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = '#F26B1F'; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
              </div>
              {wakeTime > 7 && (
-                <div className="mt-6 text-center" style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '20px 24px' }}>
-                    <p className="font-serif font-semibold" style={{ fontSize: 18, color: '#1a6358' }}>Your Plan:</p>
-                    <p className="mt-2" style={{ fontSize: 15, color: '#1a1a1a' }}>Shift your alarm back by 15 mins every <span className="font-bold" style={{ color: '#2A7D6F' }}>3–4 days</span> for the next <span className="font-bold" style={{ color: '#2A7D6F' }}>{shifts}</span> shifts to reach your 7:00 AM target.</p>
+                <div className="mt-6 text-center" style={{ backgroundColor: '#FDEEDF', border: '2px solid #F26B1F', borderRadius: 14, padding: '20px 24px' }}>
+                    <p className="font-serif font-semibold" style={{ fontSize: 18, color: '#8C3A0E' }}>Your Plan:</p>
+                    <p className="mt-2" style={{ fontSize: 15, color: '#1a1a1a' }}>Shift your alarm back by 15 mins every <span className="font-bold" style={{ color: '#F26B1F' }}>3–4 days</span> for the next <span className="font-bold" style={{ color: '#F26B1F' }}>{shifts}</span> shifts to reach your 7:00 AM target.</p>
                 </div>
              )}
         </div>

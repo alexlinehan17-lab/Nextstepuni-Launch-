@@ -48,11 +48,9 @@ import {
   type SourceEvalCheckSpec,
   type SlopPattern,
 } from '../../../../types/knowledge';
+import { ACCENT, ACCENT_DARK, ACCENT_TINT } from '../../colors';
 
-const TEAL = '#2A7D6F';
-const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#F0FAF8';
 const WARN = '#A8746E';
 
 type Level = 'hl' | 'ol';
@@ -178,7 +176,7 @@ const WordBudgetMeter: React.FC<{
       style={{ backgroundColor: '#FFFFFF', border: `2px solid ${INK}`, padding: '24px 26px' }}
     >
       <div className="flex items-baseline justify-between gap-3 mb-4 flex-wrap">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
           Word-budget meter
         </p>
         <span className="font-sans" style={{ fontSize: 11.5, color: '#5a5550' }}>
@@ -214,7 +212,7 @@ const SectionBar: React.FC<{
   const inRange = words >= min && words <= max;
   const isOver = words > max;
   const isUnder = words > 0 && words < min;
-  const filledColour = inRange ? TEAL : isOver ? WARN : isUnder ? '#9e9186' : '#9e9186';
+  const filledColour = inRange ? ACCENT : isOver ? WARN : isUnder ? '#9e9186' : '#9e9186';
 
   return (
     <div>
@@ -228,9 +226,9 @@ const SectionBar: React.FC<{
             style={{
               fontSize: 10,
               fontWeight: 700,
-              color: TEAL,
-              backgroundColor: `${TEAL}15`,
-              border: `1px solid ${TEAL}66`,
+              color: ACCENT,
+              backgroundColor: `${ACCENT}15`,
+              border: `1px solid ${ACCENT}66`,
               borderRadius: 999,
               padding: '1px 8px',
             }}
@@ -291,7 +289,7 @@ const SectionBar: React.FC<{
             style={{
               position: 'absolute',
               inset: 0,
-              backgroundColor: TEAL,
+              backgroundColor: ACCENT,
               zIndex: 3,
               pointerEvents: 'none',
             }}
@@ -322,9 +320,9 @@ const SectionEditors: React.FC<{
 }> = ({ sections, sectionTexts, updateSection, level }) => (
   <section
     className="rounded-2xl"
-    style={{ backgroundColor: CREAM, border: `2px solid ${INK}`, padding: '24px 26px' }}
+    style={{ backgroundColor: ACCENT_TINT, border: `2px solid ${INK}`, padding: '24px 26px' }}
   >
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 14 }}>
+    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 14 }}>
       Paste your RSR by section
     </p>
     <div className="space-y-4">
@@ -356,7 +354,7 @@ const SectionEditor: React.FC<{
         className="font-sans block"
         style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: '#9e9186', marginBottom: 6 }}
       >
-        {section.label} <span style={{ color: TEAL }}>· {section.marksOf100} marks · {min}–{max} words</span>
+        {section.label} <span style={{ color: ACCENT }}>· {section.marksOf100} marks · {min}–{max} words</span>
       </label>
       <textarea
         id={`rsr-${section.id}`}
@@ -402,11 +400,11 @@ const SourceEvalSubTool: React.FC = () => {
       style={{ backgroundColor: '#FFFFFF', border: `2px solid ${INK}`, padding: '24px 26px' }}
     >
       <div className="flex items-baseline justify-between gap-3 mb-2 flex-wrap">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
           Source-evaluation quality
         </p>
         {detected && (
-          <span className="font-serif" style={{ fontSize: 14, fontWeight: 700, color: passed === total ? TEAL : passed >= 2 ? TEAL_DARK : WARN }}>
+          <span className="font-serif" style={{ fontSize: 14, fontWeight: 700, color: passed === total ? ACCENT : passed >= 2 ? ACCENT_DARK : WARN }}>
             {passed} / {total} criteria addressed
           </span>
         )}
@@ -420,7 +418,7 @@ const SourceEvalSubTool: React.FC = () => {
         placeholder={'e.g. "Robert Fisk\'s The Great War for Civilisation was published in 2005 by Knopf. The author was a journalist with the Independent who covered the Middle East from the 1970s onwards. The purpose of the book was to provide..."'}
         className="w-full font-serif rounded-lg"
         style={{
-          backgroundColor: CREAM,
+          backgroundColor: ACCENT_TINT,
           border: `1.5px solid ${INK}`,
           padding: '12px 14px',
           fontSize: 13.5,
@@ -445,12 +443,12 @@ const SourceEvalSubTool: React.FC = () => {
 
 const CheckCard: React.FC<{ check: SourceEvalCheckSpec; hits: string[] }> = ({ check, hits }) => {
   const passed = hits.length > 0;
-  const colour = passed ? TEAL : WARN;
+  const colour = passed ? ACCENT : WARN;
   return (
     <article
       className="rounded-xl"
       style={{
-        backgroundColor: passed ? `${TEAL}10` : `${WARN}10`,
+        backgroundColor: passed ? `${ACCENT}10` : `${WARN}10`,
         border: `1.5px solid ${colour}`,
         padding: '12px 14px',
       }}
@@ -523,11 +521,11 @@ const SlopDetectorSubTool: React.FC = () => {
       style={{ backgroundColor: '#FFFFFF', border: `2px solid ${INK}`, padding: '24px 26px' }}
     >
       <div className="flex items-baseline justify-between gap-3 mb-2 flex-wrap">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
           Review-of-process slop detector
         </p>
         {text.trim() && (
-          <span className="font-serif" style={{ fontSize: 14, fontWeight: 700, color: flagged.length === 0 ? TEAL : WARN }}>
+          <span className="font-serif" style={{ fontSize: 14, fontWeight: 700, color: flagged.length === 0 ? ACCENT : WARN }}>
             {flagged.length} {flagged.length === 1 ? 'slop pattern' : 'slop patterns'} flagged
           </span>
         )}
@@ -541,7 +539,7 @@ const SlopDetectorSubTool: React.FC = () => {
         placeholder='Paste your Review of Process here. The tool will flag generic phrases and propose specific replacements.'
         className="w-full font-serif rounded-lg"
         style={{
-          backgroundColor: CREAM,
+          backgroundColor: ACCENT_TINT,
           border: `1.5px solid ${INK}`,
           padding: '12px 14px',
           fontSize: 13.5,
@@ -672,9 +670,9 @@ const ClosingSummary: React.FC<{
   return (
     <section
       className="rounded-2xl"
-      style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '26px 28px' }}
+      style={{ backgroundColor: ACCENT_TINT, border: `1px solid ${ACCENT}33`, padding: '26px 28px' }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
         Section-by-section estimate
       </p>
       <h3 className="font-serif" style={{ fontSize: 26, fontWeight: 600, color: INK, lineHeight: 1.2, marginTop: 6 }}>
@@ -699,7 +697,7 @@ const ClosingSummary: React.FC<{
               <span className="font-serif" style={{ fontSize: 13, fontWeight: 700, color: INK }}>
                 {sc.section.label}
               </span>
-              <span className="font-serif" style={{ fontSize: 14, fontWeight: 700, color: sc.inRange ? TEAL : WARN }}>
+              <span className="font-serif" style={{ fontSize: 14, fontWeight: 700, color: sc.inRange ? ACCENT : WARN }}>
                 ~{Math.round(sc.estimateBand)} / {sc.section.marksOf100}
               </span>
             </div>
@@ -718,7 +716,7 @@ const ClosingSummary: React.FC<{
 
       {weakestSection && (
         <div className="mt-6">
-          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
             Weakest section · {weakestSection.section.label}
           </p>
           <p className="font-sans" style={{ fontSize: 13, color: '#3F3B36', marginTop: 4, lineHeight: 1.55 }}>

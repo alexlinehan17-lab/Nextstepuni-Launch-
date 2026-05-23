@@ -214,7 +214,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
               ...SERIF,
               fontStyle: 'italic',
               fontSize: 17,
-              color: '#2A7D6F',
+              color: '#F26B1F',
               margin: 0,
               marginTop: 10,
             }}
@@ -283,7 +283,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
               </p>
               <button
                 onClick={() => onSelectModule(recommendation.moduleId)}
-                className="w-full text-left flex items-center gap-5 px-6 py-5 group transition-shadow hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(42,125,111,0.35)]"
+                className="w-full text-left flex items-center gap-5 px-6 py-5 group transition-shadow hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)]"
                 style={{
                   background: '#FFFFFF',
                   border: '1px solid #E8E2D8',

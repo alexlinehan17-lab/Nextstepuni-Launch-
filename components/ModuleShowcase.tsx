@@ -52,7 +52,7 @@ const WORLD_THEMES: Record<string, WorldTheme> = {
   },
   'learning-cheat-codes': {
     worldKey: 'learn',  number: '03', worldName: 'The Cheat Codes',
-    blob: '#B8DDC8', mid: '#2A7D6F', deep: '#115e4f',
+    blob: '#B8DDC8', mid: '#F26B1F', deep: '#115e4f',
   },
   'subject-specific-science': {
     worldKey: 'decode', number: '04', worldName: 'The Decoder',

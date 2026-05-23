@@ -20,6 +20,7 @@ import { doc, getDoc } from 'firebase/firestore';
 import { type DebriefEntry } from './StudyDebrief';
 import { useTopicMastery } from '../hooks/useTopicMastery';
 import { type UnifiedConfidence } from '../types';
+import { COLORS } from '../design/tokens';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -395,7 +396,7 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
               bgClass = 'bg-[#E0F0ED] dark:bg-emerald-900/30';
               borderColor = 'rgba(0,0,0,0.18)';
               nameClass = 'text-zinc-700 dark:text-zinc-300';
-              markColor = '#2A7D6F';
+              markColor = COLORS.accent;
             } else if (hasSelection) {
               bgClass = 'bg-[#F7F5F2] dark:bg-zinc-800/50';
               borderColor = 'rgba(0,0,0,0.03)';
@@ -405,7 +406,7 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
               bgClass = 'bg-[#FAF7F4] dark:bg-zinc-900';
               borderColor = 'rgba(0,0,0,0.07)';
               nameClass = 'text-zinc-700 dark:text-zinc-300';
-              markColor = '#2A7D6F';
+              markColor = COLORS.accent;
             }
 
             return (
@@ -473,7 +474,7 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
               </p>
 
               {/* Hero marks */}
-              <p className="text-[48px] font-medium leading-none" style={{ color: '#2A7D6F' }}>
+              <p className="text-[48px] font-medium leading-none" style={{ color: COLORS.accent }}>
                 {Math.round((selectedTopicData.markWeight / 100) * syllabus.totalMarks)}
               </p>
               <p className="text-xs text-zinc-400 mt-1 mb-5">

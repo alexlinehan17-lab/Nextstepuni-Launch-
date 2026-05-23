@@ -25,13 +25,21 @@ const config: Config = {
           900: '#191919',
           950: '#131311',
         },
-        accent: {
-          DEFAULT: '#CC785C',
-          light: '#D98E74',
-          dark: '#B56A50',
-        },
+        // ─── Primary brand accent (orange) ──────────────────────────────
+        // Pivot from teal #F26B1F → orange #F26B1F. Source of truth for
+        // inline-style consumers (SVG fills, dynamic hex strings) is
+        // design/tokens.ts. `accent` is the brand colour for CTAs and
+        // selected states; it does NOT carry "good/correct/complete"
+        // semantics — use `success` for those.
+        accent: '#F26B1F',
+        accentDark: '#B54D14',
+        accentTint: '#FDEEDF',
+        accentDarkText: '#8C3A0E',
+        // ─── Success / positive semantic (green) ────────────────────────
+        success: '#3A8D5F',
+        successTint: '#E8F2EC',
+        successDarkText: '#1F5F3E',
         brand: {
-          teal: '#2A7D6F',
           cream: '#FAFBF6',
           sage: '#6B8F71',
           amber: '#C4873B',

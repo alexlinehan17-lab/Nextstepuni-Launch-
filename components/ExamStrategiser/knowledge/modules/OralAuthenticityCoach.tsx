@@ -49,18 +49,16 @@ import {
   type RotePattern,
   type GenericNounSignal,
 } from '../../../../types/knowledge';
+import { ACCENT, ACCENT_DARK, ACCENT_TINT } from '../../colors';
 
-const TEAL = '#2A7D6F';
-const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#F0FAF8';
 const WARN = '#A8746E';
 
 const TENSE_COLOURS: Record<string, string> = {
   Pres: '#9e9186',
-  Past: TEAL_DARK,
+  Past: ACCENT_DARK,
   Imp: '#5a5550',
-  Cond: TEAL,
+  Cond: ACCENT,
   Fut: '#FFD8A8',
   Subj: '#7A4944',
 };
@@ -257,7 +255,7 @@ const PromptCard: React.FC<{ prompt: OralPromptSeed; hasSample: boolean; onUseSa
     style={{ backgroundColor: '#FFFFFF', border: `2px solid ${INK}`, padding: '20px 24px' }}
   >
     <div className="flex items-baseline justify-between gap-3 mb-2 flex-wrap">
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
         Examiner question
       </p>
       {hasSample && (
@@ -290,7 +288,7 @@ const AnswerEditor: React.FC<{ text: string; onChange: (s: string) => void }> = 
     className="rounded-2xl"
     style={{ backgroundColor: '#FFFFFF', border: `2px solid ${INK}`, padding: '22px 24px' }}
   >
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 8 }}>
+    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 8 }}>
       Your prepared answer
     </p>
     <textarea
@@ -299,7 +297,7 @@ const AnswerEditor: React.FC<{ text: string; onChange: (s: string) => void }> = 
       placeholder="Type or paste your prepared oral answer. The coach will run four diagnostic passes as you write."
       className="w-full font-serif rounded-lg"
       style={{
-        backgroundColor: CREAM,
+        backgroundColor: ACCENT_TINT,
         border: `1.5px solid ${INK}`,
         padding: '12px 14px',
         fontSize: 14,
@@ -323,14 +321,14 @@ const LayerToggles: React.FC<{
 }> = ({ showRote, setShowRote, showTense, setShowTense, showRepetition, setShowRepetition, showPersonalisation, setShowPersonalisation }) => {
   const toggles: { label: string; on: boolean; set: (b: boolean) => void; colour: string }[] = [
     { label: 'Rote phrases', on: showRote, set: setShowRote, colour: WARN },
-    { label: 'Tense monotony', on: showTense, set: setShowTense, colour: TEAL },
+    { label: 'Tense monotony', on: showTense, set: setShowTense, colour: ACCENT },
     { label: 'Structure repetition', on: showRepetition, set: setShowRepetition, colour: '#5a5550' },
-    { label: 'Missing personalisation', on: showPersonalisation, set: setShowPersonalisation, colour: TEAL_DARK },
+    { label: 'Missing personalisation', on: showPersonalisation, set: setShowPersonalisation, colour: ACCENT_DARK },
   ];
   return (
     <section
       className="rounded-2xl"
-      style={{ backgroundColor: CREAM, border: `2px solid ${INK}`, padding: '14px 18px' }}
+      style={{ backgroundColor: ACCENT_TINT, border: `2px solid ${INK}`, padding: '14px 18px' }}
     >
       <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#9e9186', marginBottom: 8 }}>
         Diagnostic layers
@@ -414,14 +412,14 @@ const DiagnosticView: React.FC<{
       style={{ backgroundColor: '#FFFFFF', border: `2px solid ${INK}`, padding: '22px 24px' }}
     >
       <div className="flex items-baseline justify-between gap-3 mb-3 flex-wrap">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
           Annotated answer
         </p>
         <div className="flex items-baseline gap-3 flex-wrap">
           <Stat label="Sentences" value={`${sentences.length}`} />
           {showTense && <Stat label="Tenses used" value={`${tenseDiversity}`} />}
-          {showRote && <Stat label="Rote hits" value={`${roteHits.length}`} colour={roteHits.length > 0 ? WARN : TEAL} />}
-          {showPersonalisation && <Stat label="Generic refs" value={`${genericHits.length}`} colour={genericHits.length > 0 ? TEAL_DARK : TEAL} />}
+          {showRote && <Stat label="Rote hits" value={`${roteHits.length}`} colour={roteHits.length > 0 ? WARN : ACCENT} />}
+          {showPersonalisation && <Stat label="Generic refs" value={`${genericHits.length}`} colour={genericHits.length > 0 ? ACCENT_DARK : ACCENT} />}
         </div>
       </div>
 
@@ -527,7 +525,7 @@ const AnnotatedText: React.FC<{
     <div
       className="font-serif rounded-lg"
       style={{
-        backgroundColor: CREAM,
+        backgroundColor: ACCENT_TINT,
         border: `1.5px solid ${INK}`,
         padding: '14px 16px',
         fontSize: 14,
@@ -564,9 +562,9 @@ const AnnotatedText: React.FC<{
               style={{
                 textDecorationLine: 'underline',
                 textDecorationStyle: 'dashed',
-                textDecorationColor: TEAL_DARK,
+                textDecorationColor: ACCENT_DARK,
                 textUnderlineOffset: 4,
-                backgroundColor: `${TEAL_DARK}18`,
+                backgroundColor: `${ACCENT_DARK}18`,
                 padding: '0 2px',
                 borderRadius: 2,
               }}
@@ -620,9 +618,9 @@ const PrescriptionPanel: React.FC<{
   return (
     <section
       className="rounded-2xl"
-      style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '24px 26px' }}
+      style={{ backgroundColor: ACCENT_TINT, border: `1px solid ${ACCENT}33`, padding: '24px 26px' }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
         Personalisation prescription
       </p>
       <p className="font-sans" style={{ fontSize: 12, color: '#78716C', marginTop: 4, marginBottom: 16 }}>
@@ -668,7 +666,7 @@ const CompareSection: React.FC<{
         className="w-full flex items-baseline justify-between gap-3 text-left"
         style={{ background: 'transparent', border: 'none', padding: 0, cursor: 'pointer' }}
       >
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
           Before / after — sample for this prompt
         </p>
         <span
@@ -723,13 +721,13 @@ const BeforeAfterPane: React.FC<{
   const roteHits = useMemo(() => findRoteHits(text, language), [text, language]);
   const genericHits = useMemo(() => findGenericHits(text, language), [text, language]);
   const tenseDiversity = new Set(sentences.map(s => s.tense)).size;
-  const colour = tone === 'ok' ? TEAL : WARN;
+  const colour = tone === 'ok' ? ACCENT : WARN;
 
   return (
     <div
       className="rounded-xl"
       style={{
-        backgroundColor: CREAM,
+        backgroundColor: ACCENT_TINT,
         border: `1.5px solid ${colour}`,
         padding: '14px 16px',
       }}

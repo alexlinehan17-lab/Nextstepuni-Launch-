@@ -33,8 +33,8 @@ import ComparativeTextsLinker from './knowledge/modules/ComparativeTextsLinker';
 import RsrSectionAllocator from './knowledge/modules/RsrSectionAllocator';
 import PhraseMatch from './knowledge/modules/PhraseMatch';
 import OralAuthenticityCoach from './knowledge/modules/OralAuthenticityCoach';
+import { ACCENT } from './colors';
 
-const TEAL = '#2A7D6F';
 
 type View = 'practice' | 'patterns' | 'knowledge';
 
@@ -124,7 +124,7 @@ const ExamStrategiser: React.FC = () => {
                 fontSize: 13,
                 fontWeight: 600,
                 backgroundColor: active ? '#FFFFFF' : 'transparent',
-                color: active ? TEAL : '#78716C',
+                color: active ? ACCENT : '#78716C',
                 border: 'none',
                 cursor: 'pointer',
                 boxShadow: active ? '0 1px 2px rgba(0,0,0,0.04)' : 'none',
@@ -153,7 +153,7 @@ const ExamStrategiser: React.FC = () => {
                     fontSize: 13,
                     fontWeight: 600,
                     backgroundColor: active ? '#FFFFFF' : 'transparent',
-                    color: active ? TEAL : '#78716C',
+                    color: active ? ACCENT : '#78716C',
                     border: 'none',
                     cursor: 'pointer',
                     boxShadow: active ? '0 1px 2px rgba(0,0,0,0.04)' : 'none',

@@ -10,13 +10,15 @@ import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff, BookOpen, Target, 
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
-  type YearGroup,
-  LC_SUBJECTS, SUBJECT_GROUP_LABELS, getGradesForLevel, getPointsForGrade,
+  type YearGroup, type JCBand, type JCSubject,
+  LC_SUBJECTS, JC_SUBJECTS, JC_BANDS, SUBJECT_GROUP_LABELS, getGradesForLevel, getPointsForGrade,
   getGradeIndex, DAYS_OF_WEEK,
   type LCSubject,
 } from './subjectData';
 import { type NorthStar } from '../types';
+import { type CurriculumLevel, yearGroupToCurriculumLevel } from '../utils/authUtils';
 import NorthStarOnboarding from './NorthStarOnboarding';
+import { COLORS } from '../design/tokens';
 
 interface OnboardingProps {
   userName: string;
@@ -32,7 +34,7 @@ const TOTAL_STEPS = 10;
 const _STEP_BLOBS: Record<Step, { a: string; b: string; c: string }> = {
   1: { a: 'bg-[rgba(var(--accent),0.07)]', b: 'bg-yellow-300/[0.09]', c: 'bg-orange-200/[0.08]' },
   2: { a: 'bg-indigo-300/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-sky-200/[0.06]' },
-  3: { a: 'bg-teal-300/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-emerald-200/[0.06]' },
+  3: { a: 'bg-[#F26B1F]/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-emerald-200/[0.06]' },
   4: { a: 'bg-purple-300/[0.08]', b: 'bg-[rgba(var(--accent),0.07)]', c: 'bg-amber-200/[0.06]' },
   5: { a: 'bg-blue-300/[0.08]', b: 'bg-emerald-300/[0.07]', c: 'bg-purple-200/[0.06]' },
   6: { a: 'bg-emerald-300/[0.08]', b: 'bg-amber-300/[0.07]', c: 'bg-blue-200/[0.06]' },
@@ -53,6 +55,19 @@ const GROUP_COLORS: Record<LCSubject['group'], { bg: string; border: string; tex
   creative: { bg: 'bg-rose-50 dark:bg-rose-900/20', border: 'border-rose-200 dark:border-rose-800/40', text: 'text-rose-700 dark:text-rose-300', selectedBg: 'bg-rose-100 dark:bg-rose-900/40', selectedBorder: 'border-rose-400 dark:border-rose-500' },
 };
 
+// Solid hex per subject group — used for the small colour dot on each
+// subject card on Step 5 (Select Your Subjects). Practical is shifted off
+// the primary brand orange (#F26B1F) so the dot reads distinctly against
+// the selected-state orange background.
+const GROUP_DOT_HEX: Record<LCSubject['group'], string> = {
+  languages: '#3B82F6',
+  stem: '#10B981',
+  business: '#F59E0B',
+  humanities: '#A855F7',
+  practical: '#FB923C',
+  creative: '#F43F5E',
+};
+
 // ─── Grade pill color helpers (literal Tailwind for CDN) ────────────────────
 
 function getCurrentGradePillClass(isSelected: boolean): string {
@@ -63,8 +78,8 @@ function getCurrentGradePillClass(isSelected: boolean): string {
 
 function getTargetGradePillClass(isSelected: boolean): string {
   return isSelected
-    ? 'bg-teal-600 dark:bg-teal-500 text-white border-teal-600 dark:border-teal-500 shadow-sm'
-    : 'bg-white dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-teal-400 dark:hover:border-teal-500';
+    ? 'bg-[#F26B1F] dark:bg-[#F26B1F] text-white border-[#F26B1F] dark:border-[#F26B1F] shadow-sm'
+    : 'bg-white dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-[#F26B1F]/60 dark:hover:border-[#F26B1F]/80';
 }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -138,8 +153,13 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
   // Subject selection
   const [selectedSubjects, setSelectedSubjects] = useState<Set<string>>(new Set());
 
-  // Grade configs
+  // Grade configs (LC: Grade + Higher/Ordinary level)
   const [subjectConfigs, setSubjectConfigs] = useState<Record<string, { level: Level; currentGrade: Grade; targetGrade: Grade }>>({});
+
+  // JC band configs (parallel state for junior students: JCBand + level
+  // which is 'higher' / 'ordinary' for the 3 jcHasLevelChoice subjects,
+  // 'common' for all others). Phase 4 plumbing.
+  const [subjectBands, setSubjectBands] = useState<Record<string, { level: Level; currentBand: JCBand; targetBand: JCBand }>>({});
 
   const [examDate, setExamDate] = useState(getDefaultExamDate());
 
@@ -155,10 +175,46 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
   // Rest days
   const [restDays, setRestDays] = useState<Set<string>>(new Set());
 
+  // ─── Curriculum-level-derived helpers (Phase 1 JC plumbing) ───────────
+  //
+  // Steps 4 (North Star), 6 (grade config), and 7 (exam date for 1st/2nd
+  // JC) are skipped for junior students in Phase 1. JC content for those
+  // steps lands in Phases 4/5. Senior flow is unchanged.
+
+  const curriculumLevel: CurriculumLevel | null = yearGroup
+    ? yearGroupToCurriculumLevel(yearGroup)
+    : null;
+
+  const shouldSkipStep = (s: Step): boolean => {
+    if (curriculumLevel !== 'junior') return false;
+    // Step 4: JC North Star lands in Phase 5 — no longer skipped.
+    // Step 6: JC descriptor band picker lands in Phase 4 — no longer skipped.
+    if (s === 7 && (yearGroup === '1st' || yearGroup === '2nd')) return true; // no imminent exam
+    return false;
+  };
+
   // ─── Navigation ─────────────────────────────────────────────────────────
 
-  const goNext = () => { setDirection(1); setStep(s => Math.min(TOTAL_STEPS, s + 1) as Step); };
-  const goBack = () => { setDirection(-1); setStep(s => Math.max(1, s - 1) as Step); };
+  const goNext = () => {
+    setDirection(1);
+    setStep(s => {
+      let next = Math.min(TOTAL_STEPS, s + 1) as Step;
+      while (next < TOTAL_STEPS && shouldSkipStep(next)) {
+        next = (next + 1) as Step;
+      }
+      return next;
+    });
+  };
+  const goBack = () => {
+    setDirection(-1);
+    setStep(s => {
+      let prev = Math.max(1, s - 1) as Step;
+      while (prev > 1 && shouldSkipStep(prev)) {
+        prev = (prev - 1) as Step;
+      }
+      return prev;
+    });
+  };
 
   // ─── Subject toggle ─────────────────────────────────────────────────────
 
@@ -169,14 +225,45 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
         next.delete(name);
       } else {
         next.add(name);
+        // Seed both LC config and JC band defaults — only the one matching
+        // the user's curriculumLevel actually gets surfaced in Step 6.
         if (!subjectConfigs[name]) {
           setSubjectConfigs(prev => ({
             ...prev,
             [name]: { level: 'higher' as Level, currentGrade: 'H4' as Grade, targetGrade: 'H2' as Grade },
           }));
         }
+        if (!subjectBands[name]) {
+          const jc = JC_SUBJECTS.find(s => s.name === name);
+          const defaultLevel: Level = jc?.jcHasLevelChoice ? 'higher' : 'common';
+          setSubjectBands(prev => ({
+            ...prev,
+            [name]: { level: defaultLevel, currentBand: 'Merit', targetBand: 'Higher Merit' },
+          }));
+        }
       }
       return next;
+    });
+  };
+
+  // ─── JC band config update ──────────────────────────────────────────────
+
+  const updateBand = (subjectName: string, field: 'level' | 'currentBand' | 'targetBand', value: string) => {
+    setSubjectBands(prev => {
+      const current = prev[subjectName] || { level: 'common' as Level, currentBand: 'Merit' as JCBand, targetBand: 'Higher Merit' as JCBand };
+      const next = { ...current };
+      if (field === 'level') {
+        next.level = value as Level;
+      } else if (field === 'currentBand') {
+        next.currentBand = value as JCBand;
+        // Target should be at least as good as current (lower index = better band)
+        if (JC_BANDS.indexOf(next.targetBand) > JC_BANDS.indexOf(next.currentBand)) {
+          next.targetBand = next.currentBand;
+        }
+      } else {
+        next.targetBand = value as JCBand;
+      }
+      return { ...prev, [subjectName]: next };
     });
   };
 
@@ -219,7 +306,14 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
   // ─── Build final profile ────────────────────────────────────────────────
 
   const buildProfile = (): StudentSubjectProfile => {
+    const finalYearGroup = yearGroup ?? '6th';
+    const level = yearGroupToCurriculumLevel(finalYearGroup);
+
     const subjects: StudentSubject[] = Array.from(selectedSubjects).map(name => {
+      if (level === 'junior') {
+        const band = subjectBands[name] || { level: 'common' as Level, currentBand: 'Merit' as JCBand, targetBand: 'Higher Merit' as JCBand };
+        return { subjectName: name, level: band.level, currentBand: band.currentBand, targetBand: band.targetBand };
+      }
       const config = subjectConfigs[name] || { level: 'higher' as Level, currentGrade: 'H4' as Grade, targetGrade: 'H2' as Grade };
       return { subjectName: name, level: config.level, currentGrade: config.currentGrade, targetGrade: config.targetGrade };
     });
@@ -228,7 +322,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
       subjects,
       examStartDate: examDate,
       restDays: Array.from(restDays),
-      yearGroup: yearGroup ?? '6th',
+      yearGroup: finalYearGroup,
+      curriculumLevel: level,
       createdAt: now,
       updatedAt: now,
     };
@@ -255,16 +350,20 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
     return { current, target, gain: target - current };
   }, [selectedSubjects, subjectConfigs]);
 
-  // ─── Grouped subjects ──────────────────────────────────────────────────
+  // ─── Grouped subjects (curriculum-aware) ───────────────────────────────
+  //
+  // JC students see the 24-subject JC list; senior students see LC_SUBJECTS
+  // unchanged. The 6 group buckets and GROUP_DOT_HEX map work for both.
 
   const groupedSubjects = useMemo(() => {
+    const list = curriculumLevel === 'junior' ? JC_SUBJECTS : LC_SUBJECTS;
     const groups: Record<string, LCSubject[]> = {};
-    for (const subj of LC_SUBJECTS) {
+    for (const subj of list) {
       if (!groups[subj.group]) groups[subj.group] = [];
-      groups[subj.group].push(subj);
+      groups[subj.group].push(subj as LCSubject);
     }
     return groups;
-  }, []);
+  }, [curriculumLevel]);
 
   // ─── Step validation ───────────────────────────────────────────────────
 
@@ -276,8 +375,10 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
       case 4: return northStarData !== null;
       case 5: return selectedSubjects.size > 0;
       case 6: {
+        // Curriculum-aware: JC checks subjectBands, senior checks subjectConfigs.
+        const map = curriculumLevel === 'junior' ? subjectBands : subjectConfigs;
         for (const name of selectedSubjects) {
-          if (!subjectConfigs[name]) return false;
+          if (!map[name]) return false;
         }
         return true;
       }
@@ -385,7 +486,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                           className="flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium"
                           style={{ backgroundColor: 'rgba(255,255,255,0.85)', border: '1px solid rgba(0,0,0,0.06)', color: '#57534E' }}
                         >
-                          <chip.icon size={12} style={{ color: '#2A7D6F' }} />
+                          <chip.icon size={12} style={{ color: COLORS.accent }} />
                           {chip.label}
                         </motion.div>
                       ))}
@@ -395,19 +496,19 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 2: Year Group */}
+            {/* Step 2: Year Group — Junior Cycle + Senior Cycle two-band layout (Phase 1 JC) */}
             {step === 2 && (
               <MotionDiv key="step2" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
-                <div className="flex items-center justify-center min-h-[60vh]">
-                  <div className="text-center w-full max-w-lg mx-auto">
+                <div className="flex flex-col items-center justify-center min-h-[60vh] py-6">
+                  <div className="text-center w-full max-w-xl mx-auto">
                     <motion.div
                       initial={{ scale: 0.8, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
                       className="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
-                      style={{ backgroundColor: 'rgba(42,125,111,0.1)' }}
+                      style={{ backgroundColor: 'rgba(242,107,31,0.1)' }}
                     >
-                      <BookOpen size={32} style={{ color: '#2A7D6F' }} />
+                      <BookOpen size={32} style={{ color: COLORS.accent }} />
                     </motion.div>
                     <motion.h2
                       initial={{ opacity: 0, y: 12 }}
@@ -425,27 +526,64 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                     >
                       This helps us show you the right events and deadlines for your year group.
                     </motion.p>
+
+                    {/* Junior Cycle band */}
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                      className="flex gap-4 justify-center"
+                      className="mb-8"
                     >
-                      {(['5th', '6th'] as const).map(yr => (
-                        <button
-                          key={yr}
-                          onClick={() => setYearGroup(yr)}
-                          className="w-36 py-6 rounded-2xl transition-all"
-                          style={{
-                            backgroundColor: yearGroup === yr ? 'rgba(42,125,111,0.08)' : 'rgba(255,255,255,0.85)',
-                            border: yearGroup === yr ? '2px solid #2A7D6F' : '1px solid rgba(0,0,0,0.08)',
-                            boxShadow: yearGroup === yr ? '0 0 0 3px rgba(42,125,111,0.1)' : 'none',
-                          }}
-                        >
-                          <p className={`text-3xl font-bold mb-1 ${yearGroup === yr ? 'text-[#2A7D6F]' : 'text-[#1A1A1A] dark:text-white'}`}>{yr}</p>
-                          <p className={`text-xs font-medium ${yearGroup === yr ? 'text-[#2A7D6F]' : 'text-[#A8A29E] dark:text-zinc-500'}`}>Year</p>
-                        </button>
-                      ))}
+                      <p className="text-[11px] font-semibold uppercase tracking-wider mb-3 text-[#6B6B6B] font-sans text-left">
+                        Junior Cycle
+                      </p>
+                      <div className="grid grid-cols-3 gap-3">
+                        {(['1st', '2nd', '3rd'] as const).map(yr => {
+                          const selected = yearGroup === yr;
+                          return (
+                            <button
+                              key={yr}
+                              onClick={() => setYearGroup(yr)}
+                              className={`group flex flex-col items-center justify-center py-5 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
+                                selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                              }`}
+                            >
+                              <span className="text-2xl font-bold leading-none">{yr}</span>
+                              <span className="text-[11px] font-medium mt-1 opacity-80">Year</span>
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </motion.div>
+
+                    {/* Senior Cycle band */}
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                    >
+                      <p className="text-[11px] font-semibold uppercase tracking-wider mb-3 text-[#6B6B6B] font-sans text-left">
+                        Senior Cycle
+                      </p>
+                      <div className="grid grid-cols-3 gap-3">
+                        {(['TY', '5th', '6th'] as const).map(yr => {
+                          const selected = yearGroup === yr;
+                          const label = yr === 'TY' ? 'TY' : yr;
+                          const sub = yr === 'TY' ? 'Transition' : 'Year';
+                          return (
+                            <button
+                              key={yr}
+                              onClick={() => setYearGroup(yr)}
+                              className={`group flex flex-col items-center justify-center py-5 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
+                                selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                              }`}
+                            >
+                              <span className="text-2xl font-bold leading-none">{label}</span>
+                              <span className="text-[11px] font-medium mt-1 opacity-80">{sub}</span>
+                            </button>
+                          );
+                        })}
+                      </div>
                     </motion.div>
                   </div>
                 </div>
@@ -462,9 +600,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       animate={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
                       className="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
-                      style={{ backgroundColor: 'rgba(42,125,111,0.1)' }}
+                      style={{ backgroundColor: 'rgba(242,107,31,0.1)' }}
                     >
-                      <Layers size={32} style={{ color: '#2A7D6F' }} />
+                      <Layers size={32} style={{ color: COLORS.accent }} />
                     </motion.div>
                     <motion.h2
                       initial={{ opacity: 0, y: 12 }}
@@ -497,13 +635,13 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                           onClick={() => setEssentialsMode(opt.id)}
                           className="flex-1 py-6 px-5 rounded-2xl transition-all text-left"
                           style={{
-                            backgroundColor: essentialsMode === opt.id ? 'rgba(42,125,111,0.08)' : 'rgba(255,255,255,0.85)',
-                            border: essentialsMode === opt.id ? '2px solid #2A7D6F' : '1px solid rgba(0,0,0,0.08)',
-                            boxShadow: essentialsMode === opt.id ? '0 0 0 3px rgba(42,125,111,0.1)' : 'none',
+                            backgroundColor: essentialsMode === opt.id ? 'rgba(242,107,31,0.08)' : 'rgba(255,255,255,0.85)',
+                            border: essentialsMode === opt.id ? `2px solid ${COLORS.accent}` : '1px solid rgba(0,0,0,0.08)',
+                            boxShadow: essentialsMode === opt.id ? '0 0 0 3px rgba(242,107,31,0.1)' : 'none',
                           }}
                         >
-                          <p className={`text-base font-bold mb-1 ${essentialsMode === opt.id ? 'text-[#2A7D6F]' : 'text-[#1A1A1A] dark:text-white'}`}>{opt.title}</p>
-                          <p className={`text-xs ${essentialsMode === opt.id ? 'text-[#2A7D6F]' : 'text-[#A8A29E] dark:text-zinc-500'}`}>{opt.desc}</p>
+                          <p className={`text-base font-bold mb-1 ${essentialsMode === opt.id ? 'text-[#F26B1F]' : 'text-[#1A1A1A] dark:text-white'}`}>{opt.title}</p>
+                          <p className={`text-xs ${essentialsMode === opt.id ? 'text-[#F26B1F]' : 'text-[#A8A29E] dark:text-zinc-500'}`}>{opt.desc}</p>
                         </button>
                       ))}
                     </motion.div>
@@ -512,12 +650,13 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 4: North Star */}
+            {/* Step 4: North Star — JC sees the 4 JC themes, senior sees the 6 senior themes */}
             {step === 4 && (
               <MotionDiv key="step4" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <NorthStarOnboarding
                   onComplete={(ns) => { setNorthStarData(ns); goNext(); }}
                   initialData={northStarData}
+                  curriculumLevel={curriculumLevel ?? 'senior'}
                 />
               </MotionDiv>
             )}
@@ -527,29 +666,40 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               <MotionDiv key="step5" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <h2 className="font-serif text-2xl font-bold text-center mb-1 text-[#1A1A1A] dark:text-white">Select Your Subjects</h2>
                 <p className="text-sm text-center mb-8 text-[#78716C] dark:text-zinc-400">
-                  Tap to select your Leaving Cert subjects. <span className="font-semibold text-[var(--accent-hex)]">{selectedSubjects.size} selected</span>
+                  {curriculumLevel === 'junior'
+                    ? 'Tap to select your subjects.'
+                    : 'Tap to select your Leaving Cert subjects.'}{' '}
+                  <span className="font-semibold text-[#F26B1F]">{selectedSubjects.size} selected</span>
                 </p>
-                <div className="space-y-6">
+                <div>
                   {Object.entries(groupedSubjects).map(([group, subjects]) => {
-                    const colors = GROUP_COLORS[group as LCSubject['group']];
+                    const dotHex = GROUP_DOT_HEX[group as LCSubject['group']];
                     return (
-                      <div key={group}>
-                        <p className={`text-[10px] font-bold uppercase tracking-widest mb-3 ${colors.text}`}>
+                      <div key={group} className="mb-8 last:mb-0">
+                        <p className="text-[11px] font-semibold uppercase tracking-wider mb-3 text-[#6B6B6B] font-sans">
                           {SUBJECT_GROUP_LABELS[group as LCSubject['group']]}
                         </p>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-3">
                           {subjects.map(subj => {
                             const selected = selectedSubjects.has(subj.name);
                             return (
-                              <button key={subj.name} onClick={() => toggleSubject(subj.name)}
-                                className="px-3.5 py-2 rounded-full text-xs font-semibold transition-all"
-                                style={{
-                                  backgroundColor: selected ? 'rgba(42,125,111,0.08)' : 'rgba(255,255,255,0.85)',
-                                  border: selected ? '2px solid #2A7D6F' : '1px solid rgba(0,0,0,0.08)',
-                                  color: selected ? '#2A7D6F' : '#57534E',
-                                }}
+                              <button
+                                key={subj.name}
+                                onClick={() => toggleSubject(subj.name)}
+                                className={`group flex items-center gap-2.5 px-4 py-3 rounded-2xl border-2 border-[#1A1A1A] font-sans font-medium text-[15px] transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
+                                  selected
+                                    ? 'bg-[#F26B1F] text-[#FDF8F0]'
+                                    : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                }`}
                               >
-                                {selected && <Check size={12} className="inline mr-1 -mt-0.5" />}
+                                <span
+                                  className="w-2.5 h-2.5 rounded-full shrink-0"
+                                  style={{
+                                    backgroundColor: selected ? 'transparent' : dotHex,
+                                    boxShadow: selected ? 'inset 0 0 0 1.5px #FDF8F0' : 'none',
+                                  }}
+                                  aria-hidden
+                                />
                                 {subj.name}
                               </button>
                             );
@@ -563,7 +713,110 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
             )}
 
             {/* Step 6: Grade Configuration */}
-            {step === 6 && (
+            {step === 6 && curriculumLevel === 'junior' && (
+              <MotionDiv key="step6-jc" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+                <h2 className="font-serif text-2xl font-bold text-center mb-1 text-[#1A1A1A] dark:text-white">Where are you now, where do you want to be?</h2>
+                <p className="text-sm text-center mb-6 text-[#78716C] dark:text-zinc-400">
+                  For each subject, set your current band and where you're aiming.
+                </p>
+
+                <div className="space-y-4">
+                  {Array.from(selectedSubjects).map(name => {
+                    const band = subjectBands[name] || { level: 'common' as Level, currentBand: 'Merit' as JCBand, targetBand: 'Higher Merit' as JCBand };
+                    const jcSubject: JCSubject | undefined = JC_SUBJECTS.find(s => s.name === name);
+                    const hasLevelChoice = jcSubject?.jcHasLevelChoice ?? false;
+                    const groupColor = jcSubject ? GROUP_COLORS[jcSubject.group] : GROUP_COLORS.stem;
+                    const currentIdx = JC_BANDS.indexOf(band.currentBand);
+
+                    return (
+                      <div key={name} className="rounded-xl overflow-hidden" style={{ backgroundColor: 'rgba(255,255,255,0.9)', border: '1px solid rgba(0,0,0,0.06)' }}>
+                        {/* Subject header row */}
+                        <div className="flex items-center justify-between px-4 pt-3 pb-2">
+                          <span className={`text-sm font-bold ${groupColor.text}`}>{name}</span>
+                          {hasLevelChoice ? (
+                            <div className="flex items-center gap-1 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-0.5">
+                              <button
+                                onClick={() => updateBand(name, 'level', 'higher')}
+                                className={`px-2.5 py-1 rounded-md text-[10px] font-bold transition-all ${
+                                  band.level === 'higher'
+                                    ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
+                                    : 'text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300'
+                                }`}
+                              >
+                                Higher
+                              </button>
+                              <button
+                                onClick={() => updateBand(name, 'level', 'ordinary')}
+                                className={`px-2.5 py-1 rounded-md text-[10px] font-bold transition-all ${
+                                  band.level === 'ordinary'
+                                    ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
+                                    : 'text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300'
+                                }`}
+                              >
+                                Ordinary
+                              </button>
+                            </div>
+                          ) : (
+                            <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Common Level</span>
+                          )}
+                        </div>
+
+                        {/* Two-row band selection */}
+                        <div className="px-4 pb-3 space-y-2">
+                          {/* Current band */}
+                          <div>
+                            <p className="text-[10px] font-semibold text-zinc-500 dark:text-zinc-400 mb-1">Where I am now</p>
+                            <div className="flex flex-wrap gap-1">
+                              {JC_BANDS.map(b => (
+                                <button
+                                  key={b}
+                                  onClick={() => updateBand(name, 'currentBand', b)}
+                                  className={`flex-1 min-w-[70px] py-1.5 rounded-lg text-[10px] font-bold border transition-all ${
+                                    b === band.currentBand
+                                      ? getCurrentGradePillClass(true)
+                                      : getCurrentGradePillClass(false)
+                                  }`}
+                                >
+                                  {b}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                          {/* Target band */}
+                          <div>
+                            <p className="text-[10px] font-semibold text-[#F26B1F] dark:text-[#F26B1F] mb-1">My target</p>
+                            <div className="flex flex-wrap gap-1">
+                              {JC_BANDS.map((b, bi) => {
+                                // Target must be at least as good as current (lower index = better)
+                                const disabled = bi > currentIdx;
+                                return (
+                                  <button
+                                    key={b}
+                                    onClick={() => { if (!disabled) updateBand(name, 'targetBand', b); }}
+                                    disabled={disabled}
+                                    className={`flex-1 min-w-[70px] py-1.5 rounded-lg text-[10px] font-bold border transition-all ${
+                                      disabled
+                                        ? 'bg-zinc-50 dark:bg-zinc-900 text-zinc-300 dark:text-zinc-700 border-zinc-100 dark:border-zinc-800 cursor-not-allowed'
+                                        : b === band.targetBand
+                                          ? getTargetGradePillClass(true)
+                                          : getTargetGradePillClass(false)
+                                    }`}
+                                  >
+                                    {b}
+                                  </button>
+                                );
+                              })}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </MotionDiv>
+            )}
+
+            {step === 6 && curriculumLevel !== 'junior' && (
               <MotionDiv key="step6" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <h2 className="font-serif text-2xl font-bold text-center mb-1 text-[#1A1A1A] dark:text-white">Set Your Grades</h2>
                 <p className="text-sm text-center mb-6 text-[#78716C] dark:text-zinc-400">
@@ -631,7 +884,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                           </div>
                           {/* Target grade row */}
                           <div>
-                            <p className="text-[10px] font-semibold text-teal-600 dark:text-teal-400 mb-1">My target</p>
+                            <p className="text-[10px] font-semibold text-[#F26B1F] dark:text-[#F26B1F] mb-1">My target</p>
                             <div className="flex gap-1">
                               {grades.map((g, gi) => {
                                 const disabled = gi > currentIdx;
@@ -683,9 +936,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       animate={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
                       className="w-14 h-14 mx-auto mb-5 rounded-2xl flex items-center justify-center"
-                      style={{ backgroundColor: 'rgba(42,125,111,0.1)' }}
+                      style={{ backgroundColor: 'rgba(242,107,31,0.1)' }}
                     >
-                      <Calendar size={28} style={{ color: '#2A7D6F' }} />
+                      <Calendar size={28} style={{ color: COLORS.accent }} />
                     </motion.div>
                     <motion.h2
                       initial={{ opacity: 0, y: 12 }}
@@ -693,7 +946,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                       className="font-serif text-2xl font-bold mb-1 text-[#1A1A1A] dark:text-white"
                     >
-                      When Do Exams Start?
+                      {curriculumLevel === 'junior'
+                        ? 'When Is Your Junior Cert?'
+                        : 'When Do Exams Start?'}
                     </motion.h2>
                     <motion.p
                       initial={{ opacity: 0, y: 10 }}
@@ -740,9 +995,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       animate={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
                       className="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
-                      style={{ backgroundColor: 'rgba(42,125,111,0.1)' }}
+                      style={{ backgroundColor: 'rgba(242,107,31,0.1)' }}
                     >
-                      <CalendarOff size={32} style={{ color: '#2A7D6F' }} />
+                      <CalendarOff size={32} style={{ color: COLORS.accent }} />
                     </motion.div>
                     <motion.h2
                       initial={{ opacity: 0, y: 12 }}
@@ -806,7 +1061,10 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                 <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Your Study Profile</h2>
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Here's a summary of everything you've set up.</p>
 
-                {/* Projected points banner — current → target with animated gain */}
+                {/* Projected points banner — current → target with animated gain.
+                    Senior-only: JC has no CAO points concept. The JC grade-summary
+                    banner (descriptor bands) lands in Phase 4. */}
+                {curriculumLevel === 'senior' && (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -837,14 +1095,46 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                     </p>
                   </div>
                 </motion.div>
+                )}
 
-                {/* Subject summary */}
+                {/* Subject summary — senior: grade + points columns;
+                    junior: subject names only (grade/band columns land in Phase 4). */}
                 <div className="space-y-2 mb-6">
                   {Array.from(selectedSubjects).map((name, i) => {
                     const config = subjectConfigs[name];
-                    if (!config) return null;
                     const lcSubject = LC_SUBJECTS.find(s => s.name === name);
                     const isMaths = lcSubject?.isMaths || false;
+
+                    if (curriculumLevel === 'junior') {
+                      const band = subjectBands[name];
+                      const jc = JC_SUBJECTS.find(s => s.name === name);
+                      const levelLabel = band?.level === 'higher' ? 'Higher'
+                        : band?.level === 'ordinary' ? 'Ordinary'
+                        : jc?.jcHasLevelChoice ? 'Higher' : 'Common';
+                      return (
+                        <motion.div
+                          key={name}
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.3, delay: 0.2 + i * 0.04, ease: [0.16, 1, 0.3, 1] }}
+                          className="flex items-center justify-between p-3 rounded-xl bg-white/70 dark:bg-white/[0.03] backdrop-blur-sm border border-zinc-200/50 dark:border-white/[0.06]"
+                        >
+                          <div>
+                            <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">{name}</p>
+                            <p className="text-[10px] text-zinc-400 dark:text-zinc-500">{levelLabel} Level</p>
+                          </div>
+                          {band && (
+                            <div className="flex items-center gap-2">
+                              <span className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400">{band.currentBand}</span>
+                              <ArrowRight size={12} className="text-zinc-300 dark:text-zinc-600" />
+                              <span className="text-[11px] font-bold text-[#F26B1F] dark:text-[#F26B1F]">{band.targetBand}</span>
+                            </div>
+                          )}
+                        </motion.div>
+                      );
+                    }
+
+                    if (!config) return null;
                     const currentPts = getPointsForGrade(config.currentGrade, isMaths);
                     const targetPts = getPointsForGrade(config.targetGrade, isMaths);
                     const gain = targetPts - currentPts;
@@ -866,7 +1156,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                         <div className="flex items-center gap-2">
                           <span className="text-xs font-bold text-zinc-500 dark:text-zinc-400">{config.currentGrade}</span>
                           <ArrowRight size={12} className="text-zinc-300 dark:text-zinc-600" />
-                          <span className="text-xs font-bold text-teal-600 dark:text-teal-400">{config.targetGrade}</span>
+                          <span className="text-xs font-bold text-[#F26B1F] dark:text-[#F26B1F]">{config.targetGrade}</span>
                           {gain > 0 && (
                             <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 ml-1">+{gain}pts</span>
                           )}
@@ -900,7 +1190,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       animate={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
                       className="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center"
-                      style={{ backgroundColor: '#2A7D6F' }}
+                      style={{ backgroundColor: COLORS.accent }}
                     >
                       <Check size={32} style={{ color: '#fff' }} strokeWidth={3} />
                     </motion.div>
@@ -997,7 +1287,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
             ) : (
               <button onClick={() => onComplete(buildProfile(), northStarData ?? undefined, essentialsMode)}
                 className="flex items-center gap-2 px-8 py-3 rounded-2xl font-semibold text-sm transition-all active:scale-[0.98]"
-                style={{ backgroundColor: '#2A7D6F', color: '#fff', minWidth: 160 }}
+                style={{ backgroundColor: COLORS.accent, color: '#fff', minWidth: 160 }}
               >
                 <span className="flex-1 text-center">Start learning</span>
                 <ArrowRight size={14} />

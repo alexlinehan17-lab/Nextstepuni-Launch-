@@ -25,6 +25,7 @@ import {
   type SessionAllocation,
 } from './timetableAlgorithm';
 import { type DebriefEntry, computeStrategyHints, type SubjectStrategyHint } from './StudyDebrief';
+import { COLORS } from '../design/tokens';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useInnovationData } from '../contexts/InnovationDataContext';
@@ -245,14 +246,14 @@ const _PRIORITY_BAR_COLORS: Record<string, string> = {
 };
 
 const _PRIORITY_BAR_INLINE: Record<string, React.CSSProperties> = {
-  High: { backgroundColor: '#2A7D6F' },
-  Medium: { backgroundColor: '#2A7D6F' },
-  Low: { backgroundColor: '#2A7D6F' },
+  High: { backgroundColor: COLORS.success },
+  Medium: { backgroundColor: COLORS.success },
+  Low: { backgroundColor: COLORS.success },
 };
 
 const PRIORITY_BADGE_INLINE: Record<string, React.CSSProperties> = {
   High: { backgroundColor: '#FDF3E7', color: '#C4873B' },
-  Medium: { backgroundColor: '#EDF5F3', color: '#2A7D6F' },
+  Medium: { backgroundColor: COLORS.successTint, color: COLORS.success },
   Low: {},
 };
 
@@ -526,7 +527,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
     return (
       <div className="text-center py-16 space-y-4">
         <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
-          <CalendarDays size={32} style={{ color: '#2A7D6F' }} />
+          <CalendarDays size={32} style={{ color: COLORS.accent }} />
         </div>
         <h3 className="text-lg font-bold text-zinc-800 dark:text-white">Your study plan, built around your life</h3>
         <p className="text-sm text-zinc-500 dark:text-zinc-400 max-w-sm mx-auto leading-relaxed">
@@ -617,7 +618,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         <button
           onClick={() => setStudyHoursRange(r => r === 'week' ? 'month' : r === 'month' ? 'all' : 'week')}
           className="font-medium transition-colors cursor-pointer"
-          style={{ color: '#2A7D6F' }}
+          style={{ color: COLORS.accent }}
           title="Click to cycle: this week / this month / all time"
         >
           {studiedHours}h {studiedRemainingMins}m {studyHoursRangeLabel}
@@ -720,7 +721,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                   initial={{ strokeDashoffset: 2 * Math.PI * 20 }}
                   animate={{ strokeDashoffset: 2 * Math.PI * 20 * (1 - todayProgress) }}
                   transition={{ duration: 0.6, ease: 'easeOut' }}
-                  style={{ strokeDasharray: 2 * Math.PI * 20, stroke: '#2A7D6F' }}
+                  style={{ strokeDasharray: 2 * Math.PI * 20, stroke: COLORS.accent }}
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
@@ -848,7 +849,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                   <div className={`text-center py-2 mb-2 rounded-lg ${isTodayCol ? 'font-bold' : ''}`}>
                     <span
                       className={`text-xs font-bold ${isTodayCol ? '' : 'text-zinc-500 dark:text-zinc-400'}`}
-                      style={isTodayCol ? { color: '#2A7D6F' } : undefined}
+                      style={isTodayCol ? { color: COLORS.accent } : undefined}
                     >
                       {day}
                     </span>
@@ -911,7 +912,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
           <button
             onClick={() => setShowExplainer(!showExplainer)}
             className="flex items-center gap-1.5 text-xs font-semibold transition-colors"
-            style={{ color: '#2A7D6F' }}
+            style={{ color: COLORS.accent }}
           >
             <HelpCircle size={14} />
             {showExplainer ? 'Hide explanation' : 'How is this calculated?'}
@@ -946,11 +947,11 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                   </button>
                 </div>
                 <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed mb-4">
-                  Each subject gets a <span className="font-bold" style={{ color: '#2A7D6F' }}>priority score</span> that determines how many study sessions it receives each week. The score combines two factors:
+                  Each subject gets a <span className="font-bold" style={{ color: COLORS.accent }}>priority score</span> that determines how many study sessions it receives each week. The score combines two factors:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
                   <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
-                    <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#2A7D6F' }}>Points Gain</p>
+                    <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: COLORS.accent }}>Points Gain</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
                       The CAO points difference between your target grade and current grade. Bigger gaps = more room to grow = higher priority.
                     </p>
@@ -964,7 +965,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                 </div>
                 <div className="p-3 rounded-xl text-center" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
                   <p className="text-xs font-mono font-bold text-zinc-600 dark:text-zinc-300">
-                    Priority Score = Points Gain <span style={{ color: '#2A7D6F' }}>x</span> Difficulty Multiplier
+                    Priority Score = Points Gain <span style={{ color: COLORS.accent }}>x</span> Difficulty Multiplier
                   </p>
                 </div>
               </div>
@@ -985,7 +986,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                             <div className={`w-2.5 h-2.5 rounded-full ${color.dot} flex-shrink-0`} />
                             <span className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{p.subjectName}</span>
                           </div>
-                          <span className="text-sm font-mono font-bold" style={{ color: '#2A7D6F' }}>
+                          <span className="text-sm font-mono font-bold" style={{ color: COLORS.accent }}>
                             {Math.round(p.priorityScore)}
                           </span>
                         </div>
@@ -1006,7 +1007,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                           <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-semibold text-[#A8A29E] dark:text-zinc-500" style={{ backgroundColor: 'rgba(0,0,0,0.04)' }}>
                             {p.currentGrade} <ArrowRight size={8} /> {p.targetGrade}
                           </span>
-                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-bold" style={{ backgroundColor: 'rgba(42,125,111,0.1)', color: '#2A7D6F' }}>
+                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-bold" style={{ backgroundColor: 'rgba(242,107,31,0.1)', color: COLORS.accent }}>
                             +{p.pointsGain} pts{p.isMaths ? ' (incl. bonus)' : ''}
                           </span>
                           <span className="font-mono text-[#A8A29E] dark:text-zinc-500">x</span>
@@ -1014,7 +1015,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                             {p.difficultyMultiplier.toFixed(2)} efficiency
                           </span>
                           <span className="font-mono text-[#A8A29E] dark:text-zinc-500">=</span>
-                          <span className="inline-flex items-center px-2 py-0.5 rounded-full font-bold bg-[#FAF7F4] dark:bg-zinc-900" style={{ color: '#2A7D6F' }}>
+                          <span className="inline-flex items-center px-2 py-0.5 rounded-full font-bold bg-[#FAF7F4] dark:bg-zinc-900" style={{ color: COLORS.accent }}>
                             {Math.round(p.priorityScore)}
                           </span>
                         </div>
@@ -1065,11 +1066,11 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                     <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
                       <p className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: '#6B8F71' }}>Projected CAO Points (Best 6)</p>
                       <div className="flex items-baseline gap-2 mb-3">
-                        <p className="text-4xl font-bold font-mono" style={{ color: '#2A7D6F' }}>{projectedTotal}</p>
+                        <p className="text-4xl font-bold font-mono" style={{ color: COLORS.accent }}>{projectedTotal}</p>
                         <p className="text-sm font-semibold text-[#A8A29E] dark:text-zinc-500">/ 625</p>
                       </div>
                       <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
-                        If you hit your target grade in every subject, your <span className="font-bold">best 6</span> will total <span className="font-bold" style={{ color: '#2A7D6F' }}>{projectedTotal} points</span>. Only your top 6 subjects count for CAO.
+                        If you hit your target grade in every subject, your <span className="font-bold">best 6</span> will total <span className="font-bold" style={{ color: COLORS.accent }}>{projectedTotal} points</span>. Only your top 6 subjects count for CAO.
                       </p>
                       <div className="mt-3 space-y-0">
                         {best6.map((s, i) => (
@@ -1078,11 +1079,11 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                               <span className="text-[10px] font-bold w-3 text-[#A8A29E] dark:text-zinc-500">{i + 1}.</span>
                               <div className={`w-2.5 h-2.5 rounded-full ${getSubjectColor(s.subjectName).dot}`} />
                               <span className="font-semibold text-zinc-700 dark:text-zinc-300">{s.subjectName}</span>
-                              {s.isMaths && <span className="text-[9px] font-bold" style={{ color: '#2A7D6F' }}>+25</span>}
+                              {s.isMaths && <span className="text-[9px] font-bold" style={{ color: COLORS.accent }}>+25</span>}
                             </div>
                             <div className="flex items-center gap-2">
                               <span className="font-medium text-[#A8A29E] dark:text-zinc-500">{s.targetGrade}</span>
-                              <span className="font-mono font-bold" style={{ color: '#2A7D6F' }}>{s.targetPoints}</span>
+                              <span className="font-mono font-bold" style={{ color: COLORS.accent }}>{s.targetPoints}</span>
                             </div>
                           </div>
                         ))}
@@ -1134,9 +1135,9 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
               {/* Session count & intensity note */}
               <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
-                <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#2A7D6F' }}>Session Allocation</p>
+                <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: COLORS.accent }}>Session Allocation</p>
                 <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
-                  Sessions are split proportionally by priority score, with a minimum of 1 per subject. The total number of sessions per week ramps from <span className="font-bold">14</span> (2/day) to <span className="font-bold">21</span> (3/day) as exams approach. Right now you're at <span className="font-bold" style={{ color: '#2A7D6F' }}>{totalSessions} sessions</span> this week.
+                  Sessions are split proportionally by priority score, with a minimum of 1 per subject. The total number of sessions per week ramps from <span className="font-bold">14</span> (2/day) to <span className="font-bold">21</span> (3/day) as exams approach. Right now you're at <span className="font-bold" style={{ color: COLORS.accent }}>{totalSessions} sessions</span> this week.
                 </p>
               </div>
             </div>
@@ -1200,8 +1201,8 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                 {onSpendPoints && points >= 20 && (
                   <button
                     onClick={handleSkipSession}
-                    className="w-full py-3 rounded-xl text-sm font-medium transition-all text-[#2A7D6F]"
-                    style={{ borderRadius: 12, backgroundColor: '#e8f5f2', border: '1px solid rgba(42,125,111,0.2)' }}
+                    className="w-full py-3 rounded-xl text-sm font-medium transition-all text-[#F26B1F]"
+                    style={{ borderRadius: 12, backgroundColor: COLORS.accentTint, border: '1px solid rgba(242,107,31,0.2)' }}
                   >
                     Skip Session (20 pts)
                   </button>

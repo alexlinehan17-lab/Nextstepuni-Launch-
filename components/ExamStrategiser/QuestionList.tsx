@@ -11,8 +11,8 @@
 import React, { useState } from 'react';
 import { type ExamQuestion } from '../../types/examStrategiser';
 import { getTaskType } from '../../data/examStrategy/taskTypes';
+import { ACCENT, ACCENT_TINT } from './colors';
 
-const TEAL = '#2A7D6F';
 
 type GroupBy = 'year' | 'type';
 
@@ -29,7 +29,7 @@ const QuestionList: React.FC<Props> = ({ questions, onSelect }) => {
       <div
         className="rounded-2xl text-center"
         style={{
-          backgroundColor: '#F0FAF8',
+          backgroundColor: ACCENT_TINT,
           border: '1px solid #EDEBE8',
           padding: '36px 24px',
         }}
@@ -75,7 +75,7 @@ const GroupByToggle: React.FC<{ value: GroupBy; onChange: (g: GroupBy) => void }
               fontSize: 12,
               fontWeight: 600,
               backgroundColor: active ? '#FFFFFF' : 'transparent',
-              color: active ? TEAL : '#78716C',
+              color: active ? ACCENT : '#78716C',
               border: 'none',
               cursor: 'pointer',
               boxShadow: active ? '0 1px 2px rgba(0,0,0,0.04)' : 'none',
@@ -156,7 +156,7 @@ const ByType: React.FC<Props> = ({ questions, onSelect }) => {
                 <p className="font-serif" style={{ fontSize: 14, fontWeight: 600, color: '#1A1A1A' }}>
                   {label}
                 </p>
-                <span className="font-sans" style={{ fontSize: 10, fontWeight: 700, color: TEAL, backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, borderRadius: 999, padding: '1px 7px' }}>
+                <span className="font-sans" style={{ fontSize: 10, fontWeight: 700, color: ACCENT, backgroundColor: ACCENT_TINT, border: `1px solid ${ACCENT}33`, borderRadius: 999, padding: '1px 7px' }}>
                   {count}
                 </span>
               </div>
@@ -189,7 +189,7 @@ const QuestionRow: React.FC<{ q: ExamQuestion; onSelect: (q: ExamQuestion) => vo
       padding: '16px 18px',
       cursor: 'pointer',
     }}
-    onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#F0FAF8'; }}
+    onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = ACCENT_TINT; }}
     onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#FFFFFF'; }}
   >
     <div className="flex items-baseline justify-between gap-3">
@@ -218,9 +218,9 @@ const QuestionRow: React.FC<{ q: ExamQuestion; onSelect: (q: ExamQuestion) => vo
           style={{
             fontSize: 11,
             fontWeight: 700,
-            color: TEAL,
-            backgroundColor: '#F0FAF8',
-            border: `1px solid ${TEAL}33`,
+            color: ACCENT,
+            backgroundColor: ACCENT_TINT,
+            border: `1px solid ${ACCENT}33`,
             borderRadius: 999,
             padding: '3px 9px',
           }}

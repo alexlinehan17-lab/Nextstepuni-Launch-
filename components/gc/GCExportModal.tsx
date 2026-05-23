@@ -28,7 +28,7 @@ interface GCExportModalProps {
   school: string;
 }
 
-const ACCENT = '#2A7D6F';
+const ACCENT = '#F26B1F';
 
 const GCExportModal: React.FC<GCExportModalProps> = ({ isOpen, onClose, studentData, allCourses, school }) => {
   useModal(isOpen, onClose);
@@ -101,9 +101,9 @@ const GCExportModal: React.FC<GCExportModalProps> = ({ isOpen, onClose, studentD
               <div className="flex items-center gap-3">
                 <div
                   className="w-9 h-9 rounded-xl flex items-center justify-center dark:!bg-[rgba(77,184,164,0.1)]"
-                  style={{ backgroundColor: 'rgba(42,125,111,0.1)' }}
+                  style={{ backgroundColor: 'rgba(242,107,31,0.1)' }}
                 >
-                  <FileDown size={18} style={{ color: ACCENT }} className="dark:!text-[#4DB8A4]" />
+                  <FileDown size={18} style={{ color: ACCENT }} className="dark:!text-[#F26B1F]" />
                 </div>
                 <h2 className="text-base font-semibold text-zinc-900 dark:text-white">Export Data</h2>
               </div>
@@ -147,7 +147,7 @@ const GCExportModal: React.FC<GCExportModalProps> = ({ isOpen, onClose, studentD
                     <select
                       value={selectedStudentUid}
                       onChange={e => setSelectedStudentUid(e.target.value)}
-                      className="w-full appearance-none bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl px-3 py-2.5 pr-8 text-sm text-zinc-800 dark:text-white focus:outline-none focus:border-[rgba(42,125,111,0.5)]"
+                      className="w-full appearance-none bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl px-3 py-2.5 pr-8 text-sm text-zinc-800 dark:text-white focus:outline-none focus:border-[rgba(242,107,31,0.5)]"
                     >
                       <option value="">Select a student...</option>
                       {sortedStudents.map(s => (
@@ -170,7 +170,7 @@ const GCExportModal: React.FC<GCExportModalProps> = ({ isOpen, onClose, studentD
               <button
                 onClick={handleExportCSV}
                 disabled={!hasSelection}
-                className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold text-white disabled:opacity-40 disabled:cursor-not-allowed transition-colors dark:!bg-[#4DB8A4]"
+                className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold text-white disabled:opacity-40 disabled:cursor-not-allowed transition-colors dark:!bg-[#F26B1F]"
                 style={{ backgroundColor: ACCENT }}
               >
                 <FileText size={14} />
@@ -179,7 +179,7 @@ const GCExportModal: React.FC<GCExportModalProps> = ({ isOpen, onClose, studentD
               <button
                 onClick={handleExportPDF}
                 disabled={!hasSelection}
-                className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold text-white disabled:opacity-40 disabled:cursor-not-allowed transition-colors dark:!bg-[#4DB8A4]"
+                className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold text-white disabled:opacity-40 disabled:cursor-not-allowed transition-colors dark:!bg-[#F26B1F]"
                 style={{ backgroundColor: ACCENT }}
               >
                 <FileDown size={14} />
@@ -203,14 +203,14 @@ function ToggleOption({ label, checked, onChange }: { label: string; checked: bo
       onClick={() => onChange(!checked)}
       className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${
         checked
-          ? 'bg-[rgba(42,125,111,0.08)] text-zinc-800 dark:bg-[rgba(77,184,164,0.1)] dark:text-white'
+          ? 'bg-[rgba(242,107,31,0.08)] text-zinc-800 dark:bg-[rgba(77,184,164,0.1)] dark:text-white'
           : 'bg-zinc-50 text-zinc-500 dark:bg-zinc-800/50 dark:text-zinc-400'
       }`}
     >
       <div
         className={`w-5 h-5 rounded-md flex items-center justify-center flex-shrink-0 transition-colors ${
           checked
-            ? 'dark:!bg-[#4DB8A4]'
+            ? 'dark:!bg-[#F26B1F]'
             : 'bg-zinc-200 dark:bg-zinc-700'
         }`}
         style={checked ? { backgroundColor: ACCENT } : undefined}

@@ -15,6 +15,7 @@ import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './Mod
 import { ModuleLayout } from './ModuleLayout';
 import { useModuleResponses } from '../hooks/useModuleResponses';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { COLORS } from '../design/tokens';
 
 const theme = blueTheme;
 
@@ -118,7 +119,8 @@ const WorkingMemoryGrid = () => {
   const productiveBlocks = blocks.filter(b => !b.threatened);
   const intrusiveBlocks = blocks.filter(b => b.threatened);
   const showBar = phase === 'threatened' && !animating;
-  const pctColor = percentage === 100 ? '#2A7D6F' : percentage < 70 ? '#DC2626' : '#D97706';
+  // Semantic: 100% = success (green), <70 = danger (red), otherwise warning (amber).
+  const pctColor = percentage === 100 ? COLORS.success : percentage < 70 ? '#DC2626' : '#D97706';
 
   return (
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
@@ -246,9 +248,9 @@ const WorkingMemoryGrid = () => {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             className="px-6 py-3 text-white font-bold text-sm disabled:opacity-50"
-            style={{ backgroundColor: '#2A7D6F', border: '2.5px solid #1F5F54', borderRadius: 14, boxShadow: '4px 4px 0px 0px #1F5F54' }}
-            whileHover={{ x: -2, y: -2, boxShadow: '6px 6px 0px 0px #1F5F54' }}
-            whileTap={{ x: 2, y: 2, boxShadow: '1px 1px 0px 0px #1F5F54' }}
+            style={{ backgroundColor: COLORS.accent, border: `2.5px solid ${COLORS.accentDark}`, borderRadius: 14, boxShadow: `4px 4px 0px 0px ${COLORS.accentDark}` }}
+            whileHover={{ x: -2, y: -2, boxShadow: `6px 6px 0px 0px ${COLORS.accentDark}` }}
+            whileTap={{ x: 2, y: 2, boxShadow: `1px 1px 0px 0px ${COLORS.accentDark}` }}
             transition={{ type: 'spring', stiffness: 400, damping: 25 }}
           >
             Activate Shield (Values Affirmation)

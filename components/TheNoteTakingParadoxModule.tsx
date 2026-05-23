@@ -293,7 +293,7 @@ const CornellNoteSimulator = () => {
 
       {/* Buttons */}
       <div className="flex justify-center items-center gap-5 mb-4">
-        <motion.button onClick={handleCheck} whileTap={{ y: 3 }} className="text-white font-semibold" style={{ backgroundColor: '#2A7D6F', borderRadius: 100, padding: '13px 28px', fontSize: 15, borderBottom: '3px solid #1a5a4e', boxShadow: '0 4px 0 #1a5a4e' }}>
+        <motion.button onClick={handleCheck} whileTap={{ y: 3 }} className="text-white font-semibold" style={{ backgroundColor: '#F26B1F', borderRadius: 100, padding: '13px 28px', fontSize: 15, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}>
           Check My Notes
         </motion.button>
         <button onClick={handleReset} className="font-medium" style={{ fontSize: 14, color: '#9e9186', background: 'none', border: 'none' }} onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#5a5550'; }} onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#9e9186'; }}>
@@ -306,21 +306,21 @@ const CornellNoteSimulator = () => {
         <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="space-y-2">
           {feedback.map((f, i) => (
             <div key={i} className="flex items-start gap-2.5" style={f.type === 'success'
-              ? { background: '#f0faf8', borderLeft: '3px solid #2A7D6F', borderRadius: '0 10px 10px 0', padding: '12px 16px' }
+              ? { background: '#FDEEDF', borderLeft: '3px solid #F26B1F', borderRadius: '0 10px 10px 0', padding: '12px 16px' }
               : { background: 'white', border: '1.5px solid #d0cdc8', borderLeft: '3px solid #9e9186', borderRadius: '0 10px 10px 0', padding: '12px 16px' }
             }>
               {f.type === 'success' ? (
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2A7D6F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 2 }}><polyline points="20 6 9 17 4 12"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F26B1F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 2 }}><polyline points="20 6 9 17 4 12"/></svg>
               ) : (
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9e9186" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 2 }}><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
               )}
-              <p style={{ fontSize: 14, color: f.type === 'success' ? '#1a6358' : '#5a5550' }}>{f.message}</p>
+              <p style={{ fontSize: 14, color: f.type === 'success' ? '#8C3A0E' : '#5a5550' }}>{f.message}</p>
             </div>
           ))}
           {allSuccess && (
-            <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '16px 20px', textAlign: 'center' }}>
-              <p className="font-serif font-semibold" style={{ fontSize: 16, color: '#1a6358' }}>Cornell cycle complete.</p>
-              <p style={{ fontSize: 14, color: '#2A7D6F', marginTop: 4 }}>Now the real power comes from covering the right column and testing yourself using only the cue questions.</p>
+            <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} style={{ backgroundColor: '#FDEEDF', border: '2px solid #F26B1F', borderRadius: 14, padding: '16px 20px', textAlign: 'center' }}>
+              <p className="font-serif font-semibold" style={{ fontSize: 16, color: '#8C3A0E' }}>Cornell cycle complete.</p>
+              <p style={{ fontSize: 14, color: '#F26B1F', marginTop: 4 }}>Now the real power comes from covering the right column and testing yourself using only the cue questions.</p>
             </MotionDiv>
           )}
         </MotionDiv>

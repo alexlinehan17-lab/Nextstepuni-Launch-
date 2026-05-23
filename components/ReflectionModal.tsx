@@ -9,6 +9,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
 import { X, BookOpen, Target, RotateCcw } from 'lucide-react';
 import { useModal } from '../hooks/useModal';
+import { COLORS } from '../design/tokens';
 
 // ─── Reflection Quality Scoring ─────────────────────────────────────────────
 
@@ -100,7 +101,7 @@ const CONFIDENCE_OPTIONS = [
   { value: 'lost', label: 'Lost', desc: "I don't understand this at all", color: '#DC2626' },
   { value: 'shaky', label: 'Shaky', desc: 'I get the basics but would struggle in an exam', color: '#E67E22' },
   { value: 'okay', label: 'Okay', desc: 'I could answer some questions on this', color: '#FDCB6E' },
-  { value: 'good', label: 'Good', desc: 'I feel solid — could explain it to someone', color: '#2A7D6F' },
+  { value: 'good', label: 'Good', desc: 'I feel solid — could explain it to someone', color: COLORS.success },
   { value: 'confident', label: 'Confident', desc: 'I could ace an exam question on this right now', color: '#276749' },
 ] as const;
 
@@ -247,7 +248,7 @@ const ReflectionModal: React.FC<ReflectionModalProps> = ({
                     value={freeText}
                     onChange={(e) => setFreeText(e.target.value)}
                     placeholder="What worked, what didn't, what you'd change next time..."
-                    className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl p-3.5 text-sm text-zinc-800 dark:text-white placeholder:text-zinc-400 resize-none h-28 focus:outline-none focus:border-[rgba(42,125,111,0.5)] transition-colors"
+                    className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl p-3.5 text-sm text-zinc-800 dark:text-white placeholder:text-zinc-400 resize-none h-28 focus:outline-none focus:border-[rgba(242,107,31,0.5)] transition-colors"
                   />
                   <p className="text-[10px] text-zinc-400 text-right mt-1">
                     {freeText.trim().length < 15 ? `${15 - freeText.trim().length} more chars needed` : `${freeText.trim().length} chars`}
@@ -266,7 +267,7 @@ const ReflectionModal: React.FC<ReflectionModalProps> = ({
                     ? 'text-white'
                     : 'bg-zinc-100 dark:bg-white/[0.06] text-zinc-400 dark:text-white/20 cursor-not-allowed'
                 }`}
-                style={isValid && !submitted ? { backgroundColor: '#2A7D6F' } : undefined}
+                style={isValid && !submitted ? { backgroundColor: COLORS.accent } : undefined}
               >
                 {submitted ? 'Saving...' : `Complete & Earn +${bonusPts} pts`}
               </MotionButton>

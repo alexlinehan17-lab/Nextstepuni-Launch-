@@ -232,7 +232,7 @@ const formatTime = (hour24: number): string => {
 };
 
 const getZone = (hoursAwake: number): { fill: string; bg: string; border: string; text: string; label: string; desc: string; zoneIdx: number } => {
-  if (hoursAwake < 12) return { fill: '#2A7D6F', bg: '#e8f5f2', border: '#2A7D6F', text: '#1a6358', label: 'Sharp', desc: 'Peak cognitive performance window', zoneIdx: 0 };
+  if (hoursAwake < 12) return { fill: '#F26B1F', bg: '#FDEEDF', border: '#F26B1F', text: '#8C3A0E', label: 'Sharp', desc: 'Peak cognitive performance window', zoneIdx: 0 };
   if (hoursAwake < 15) return { fill: '#9e9186', bg: '#f4f0eb', border: '#d0cdc8', text: '#5a5550', label: 'Declining', desc: 'Focus and recall starting to dip', zoneIdx: 1 };
   if (hoursAwake < 17) return { fill: '#E85D75', bg: '#fde4e4', border: '#E85D75', text: '#b33030', label: 'Impaired', desc: 'Significant reduction in working memory', zoneIdx: 2 };
   return { fill: '#b33030', bg: '#fde4e4', border: '#b33030', text: '#7a0000', label: 'Critical', desc: 'Equivalent to mild alcohol impairment', zoneIdx: 3 };
@@ -338,7 +338,7 @@ const CognitiveImpairmentClock = () => {
   return (
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
         <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Cognitive Impairment Clock</h4>
         <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Pick your wake-up time and watch how wakefulness erodes your brain power throughout the day.</p>
       </div>
@@ -353,13 +353,13 @@ const CognitiveImpairmentClock = () => {
                 key={opt.hour}
                 onClick={() => { setWakeHour(opt.hour); setHoursAwake(0); setFinished(false); setLastMilestone(null); }}
                 style={{
-                  backgroundColor: wakeHour === opt.hour ? '#e8f5f2' : '#FFFFFF',
-                  border: wakeHour === opt.hour ? '2px solid #2A7D6F' : '2px solid #1a1a1a',
+                  backgroundColor: wakeHour === opt.hour ? '#FDEEDF' : '#FFFFFF',
+                  border: wakeHour === opt.hour ? '2px solid #F26B1F' : '2px solid #1a1a1a',
                   borderRadius: 20,
                   padding: '10px 20px',
                   fontSize: 14,
                   fontWeight: 600,
-                  color: wakeHour === opt.hour ? '#1a6358' : '#1a1a1a',
+                  color: wakeHour === opt.hour ? '#8C3A0E' : '#1a1a1a',
                   cursor: 'pointer',
                 }}
               >
@@ -369,7 +369,7 @@ const CognitiveImpairmentClock = () => {
           </div>
           {wakeHour !== null && (
             <MotionDiv initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}>
-              <button onClick={startAnimation} className="mt-2 text-white font-semibold" style={{ backgroundColor: '#2A7D6F', borderRadius: 100, padding: '14px 32px', fontSize: 15 }}>
+              <button onClick={startAnimation} className="mt-2 text-white font-semibold" style={{ backgroundColor: '#F26B1F', borderRadius: 100, padding: '14px 32px', fontSize: 15 }}>
                 Play Day
               </button>
             </MotionDiv>
@@ -422,7 +422,7 @@ const CognitiveImpairmentClock = () => {
 
           {/* Controls */}
           <div className="flex justify-center gap-3 pt-2">
-            <button onClick={togglePause} style={{ backgroundColor: paused ? '#2A7D6F' : '#FFFFFF', color: paused ? '#FFFFFF' : '#1a1a1a', border: paused ? '2px solid #2A7D6F' : '2px solid #1a1a1a', borderRadius: 20, padding: '10px 24px', fontSize: 14, fontWeight: 600 }}>
+            <button onClick={togglePause} style={{ backgroundColor: paused ? '#F26B1F' : '#FFFFFF', color: paused ? '#FFFFFF' : '#1a1a1a', border: paused ? '2px solid #F26B1F' : '2px solid #1a1a1a', borderRadius: 20, padding: '10px 24px', fontSize: 14, fontWeight: 600 }}>
               {paused ? 'Resume' : 'Pause'}
             </button>
             <button onClick={reset} className="font-medium" style={{ fontSize: 13, color: '#9e9186', background: 'none', border: 'none' }}>
@@ -453,7 +453,7 @@ const CognitiveImpairmentClock = () => {
           </div>
 
           <div className="flex justify-center">
-            <button onClick={reset} className="text-white font-semibold" style={{ backgroundColor: '#2A7D6F', borderRadius: 100, padding: '14px 32px', fontSize: 15 }}>
+            <button onClick={reset} className="text-white font-semibold" style={{ backgroundColor: '#F26B1F', borderRadius: 100, padding: '14px 32px', fontSize: 15 }}>
               Try a Different Wake Time
             </button>
           </div>

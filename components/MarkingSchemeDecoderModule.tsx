@@ -12,6 +12,7 @@ import { redTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid, GlossaryGrid, ToolJumpCard } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { COLORS } from '../design/tokens';
 
 const theme = redTheme;
 
@@ -236,7 +237,7 @@ const SchemeDecoder = () => {
   return (
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <div className="text-center mb-6">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
         <h4 className="font-serif font-bold" style={{ fontSize: 22, color: '#1a1a1a' }}>Scheme Decoder</h4>
         <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Click the highlighted terms to decode what they really mean.</p>
       </div>
@@ -246,8 +247,8 @@ const SchemeDecoder = () => {
         {schemeExtracts.map((_, i) => (
           <button key={i} onClick={() => { setActiveExtract(i); setActiveAnnotation(null); }}
             style={{
-              backgroundColor: activeExtract === i ? '#2A7D6F' : '#FFFFFF',
-              border: activeExtract === i ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+              backgroundColor: activeExtract === i ? COLORS.accent : '#FFFFFF',
+              border: activeExtract === i ? `2px solid ${COLORS.accent}` : '2px solid #d0cdc8',
               borderRadius: 20,
               padding: '8px 18px',
               fontSize: 13,
@@ -277,13 +278,13 @@ const SchemeDecoder = () => {
               parts.push(
                 <button key={`a-${i}`} onClick={() => setActiveAnnotation(activeAnnotation === i ? null : i)}
                   style={{
-                    backgroundColor: isClicked ? '#2A7D6F' : '#e8f5f2',
-                    color: isClicked ? '#FFFFFF' : '#1a6358',
+                    backgroundColor: isClicked ? COLORS.accent : COLORS.accentTint,
+                    color: isClicked ? '#FFFFFF' : COLORS.accentDarkText,
                     fontWeight: 700,
                     borderRadius: 4,
                     padding: '1px 6px',
                     cursor: 'pointer',
-                    borderBottom: isClicked ? 'none' : '2px solid #2A7D6F',
+                    borderBottom: isClicked ? 'none' : `2px solid ${COLORS.accent}`,
                     transition: 'all 0.2s',
                   }}>
                   {ann.term}
@@ -303,8 +304,8 @@ const SchemeDecoder = () => {
       <AnimatePresence mode="wait">
         {activeAnnotation !== null && (
           <motion.div key={activeAnnotation} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 8 }}
-            style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px', marginTop: 12 }}>
-            <p className="font-serif font-semibold" style={{ fontSize: 15, color: '#1a6358', marginBottom: 4 }}>{extract.annotations[activeAnnotation].term}</p>
+            style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: COLORS.accentTint, borderRadius: '0 10px 10px 0', padding: '12px 16px', marginTop: 12 }}>
+            <p className="font-serif font-semibold" style={{ fontSize: 15, color: COLORS.accentDarkText, marginBottom: 4 }}>{extract.annotations[activeAnnotation].term}</p>
             <p className="italic" style={{ fontSize: 14, color: '#5a5550' }}>{extract.annotations[activeAnnotation].explanation}</p>
           </motion.div>
         )}
@@ -361,7 +362,7 @@ const AnswerUpgrader = () => {
           parts.push(<span key={`t-${keyIndex}`}>{remaining.slice(0, idx)}</span>);
         }
         parts.push(
-          <span key={`k-${keyIndex}`} className="px-1 py-0.5 rounded bg-teal-100 dark:bg-teal-900/50 text-teal-700 dark:text-teal-300 font-bold">
+          <span key={`k-${keyIndex}`} className="px-1 py-0.5 rounded bg-[#FDEEDF] dark:bg-[#F26B1F]/30 text-[#8C3A0E] dark:text-[#F26B1F] font-bold">
             {remaining.slice(idx, idx + keyword.length)}
           </span>
         );
@@ -414,10 +415,10 @@ const AnswerUpgrader = () => {
         </div>
 
         {/* After */}
-        <div className={`p-5 rounded-xl border transition-all duration-300 ${showAfter ? 'border-teal-300 dark:border-teal-700 bg-teal-50/50 dark:bg-teal-950/20' : 'border-zinc-200 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-700/50'}`}>
+        <div className={`p-5 rounded-xl border transition-all duration-300 ${showAfter ? 'border-[#3A8D5F]/60 dark:border-[#3A8D5F] bg-[#E8F2EC]/50 dark:bg-[#3A8D5F]/20' : 'border-zinc-200 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-700/50'}`}>
           <div className="flex items-center justify-between mb-3">
             <span className="text-xs font-bold uppercase tracking-wider text-zinc-400">After</span>
-            {showAfter && <span className="text-xs font-bold text-teal-600 dark:text-teal-400">{ex.after.marks}/{ex.maxMarks} marks</span>}
+            {showAfter && <span className="text-xs font-bold text-[#3A8D5F]">{ex.after.marks}/{ex.maxMarks} marks</span>}
           </div>
           {showAfter ? (
             <>
@@ -426,7 +427,7 @@ const AnswerUpgrader = () => {
               </p>
               <div className="mt-3 w-full h-2 bg-zinc-200 dark:bg-zinc-600 rounded-full overflow-hidden">
                 <motion.div
-                  className="h-full bg-teal-500 rounded-full"
+                  className="h-full bg-[#3A8D5F] rounded-full"
                   initial={{ width: `${(ex.before.marks / ex.maxMarks) * 100}%` }}
                   animate={{ width: `${(ex.after.marks / ex.maxMarks) * 100}%` }}
                   transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -450,7 +451,7 @@ const AnswerUpgrader = () => {
           <div className="flex justify-center mb-4">
             <button onClick={() => setShowKeywords(!showKeywords)}
               className={`px-4 py-2 rounded-lg text-sm font-bold transition-colors ${
-                showKeywords ? 'bg-teal-500 text-white' : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-600'
+                showKeywords ? 'bg-[#F26B1F] text-white' : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-600'
               }`}>
               {showKeywords ? 'Hide Keywords' : 'Show Keywords'}
             </button>
@@ -458,7 +459,7 @@ const AnswerUpgrader = () => {
           {showKeywords && (
             <div className="flex flex-wrap gap-2 justify-center">
               {ex.keywords.map((kw, i) => (
-                <span key={i} className="px-2.5 py-1 rounded-full text-xs font-bold bg-teal-100 dark:bg-teal-900/40 text-teal-700 dark:text-teal-300 border border-teal-200 dark:border-teal-700">
+                <span key={i} className="px-2.5 py-1 rounded-full text-xs font-bold bg-[#FDEEDF] dark:bg-[#F26B1F]/30 text-[#8C3A0E] dark:text-[#F26B1F] border border-[#F26B1F]/40 dark:border-[#F26B1F]/60">
                   {kw}
                 </span>
               ))}

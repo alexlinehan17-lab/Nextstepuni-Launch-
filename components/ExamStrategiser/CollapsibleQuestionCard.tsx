@@ -13,8 +13,8 @@
 import React, { useState } from 'react';
 import { type ExamQuestion } from '../../types/examStrategiser';
 import AnnotatedText from './AnnotatedText';
+import { ACCENT, ACCENT_TINT } from './colors';
 
-const TEAL = '#2A7D6F';
 
 interface Props {
   question: ExamQuestion;
@@ -79,9 +79,9 @@ const CollapsibleQuestionCard: React.FC<Props> = ({ question, defaultOpen = true
             style={{
               fontSize: 11,
               fontWeight: 700,
-              color: TEAL,
-              backgroundColor: '#F0FAF8',
-              border: `1px solid ${TEAL}33`,
+              color: ACCENT,
+              backgroundColor: ACCENT_TINT,
+              border: `1px solid ${ACCENT}33`,
               borderRadius: 999,
               padding: '2px 9px',
               whiteSpace: 'nowrap',

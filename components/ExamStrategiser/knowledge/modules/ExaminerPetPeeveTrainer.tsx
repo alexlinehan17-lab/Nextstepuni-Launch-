@@ -15,8 +15,8 @@ import { EXAMINER_PET_PEEVES } from '../../../../data/knowledge';
 import { type ExaminerPetPeeve } from '../../../../types/knowledge';
 import KnowledgeModuleShell from '../KnowledgeModuleShell';
 import QuickCheck from '../QuickCheck';
+import { ACCENT, ACCENT_TINT } from '../../colors';
 
-const TEAL = '#2A7D6F';
 
 interface Props {
   onBack: () => void;
@@ -160,9 +160,9 @@ const FilterBar: React.FC<{
               padding: '6px 14px',
               fontSize: 12,
               fontWeight: 600,
-              backgroundColor: isActive ? TEAL : '#FFFFFF',
+              backgroundColor: isActive ? ACCENT : '#FFFFFF',
               color: isActive ? '#FFFFFF' : '#3F3B36',
-              border: `1px solid ${isActive ? TEAL : '#EDEBE8'}`,
+              border: `1px solid ${isActive ? ACCENT : '#EDEBE8'}`,
               cursor: 'pointer',
             }}
           >
@@ -175,7 +175,7 @@ const FilterBar: React.FC<{
           type="button"
           onClick={onRevealAll}
           className="font-sans"
-          style={{ fontSize: 12, color: TEAL, background: 'transparent', border: 'none', padding: 0, cursor: 'pointer', fontWeight: 600 }}
+          style={{ fontSize: 12, color: ACCENT, background: 'transparent', border: 'none', padding: 0, cursor: 'pointer', fontWeight: 600 }}
         >
           Reveal all
         </button>
@@ -200,8 +200,8 @@ const PeeveCard: React.FC<{
   <article
     className="rounded-2xl"
     style={{
-      backgroundColor: revealed ? '#F0FAF8' : '#FFFFFF',
-      border: `1px solid ${revealed ? `${TEAL}55` : '#EDEBE8'}`,
+      backgroundColor: revealed ? ACCENT_TINT : '#FFFFFF',
+      border: `1px solid ${revealed ? `${ACCENT}55` : '#EDEBE8'}`,
       transition: 'background-color 200ms ease, border-color 200ms ease',
     }}
   >
@@ -222,9 +222,9 @@ const PeeveCard: React.FC<{
                 fontWeight: 700,
                 textTransform: 'uppercase',
                 letterSpacing: 0.5,
-                color: TEAL,
+                color: ACCENT,
                 backgroundColor: '#FFFFFF',
-                border: `1px solid ${TEAL}33`,
+                border: `1px solid ${ACCENT}33`,
                 borderRadius: 999,
                 padding: '2px 8px',
               }}
@@ -275,7 +275,7 @@ const PeeveCard: React.FC<{
 
 const DetailBlock: React.FC<{ label: string; body: string; highlight?: boolean }> = ({ label, body, highlight }) => (
   <div style={{ marginTop: 4, marginBottom: 10 }}>
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: highlight ? TEAL : '#A8A29E', marginBottom: 4 }}>
+    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: highlight ? ACCENT : '#A8A29E', marginBottom: 4 }}>
       {label}
     </p>
     <p className="font-sans" style={{ fontSize: 13, color: highlight ? '#1A1A1A' : '#3F3B36', lineHeight: 1.55 }}>

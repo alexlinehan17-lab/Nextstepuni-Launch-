@@ -38,6 +38,7 @@ import { doc, setDoc, arrayUnion } from 'firebase/firestore';
 import { db } from '../firebase';
 
 const Onboarding = lazy(() => import('./Onboarding'));
+const JCComingSoon = lazy(() => import('./JCComingSoon'));
 const JourneyView = lazy(() => import('./journey/JourneyView'));
 const TrainingHub = lazy(() => import('./TrainingHub'));
 const StudySessionView = lazy(() => import('./study/StudySessionView'));
@@ -243,7 +244,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       <div className="flex items-center justify-center min-h-screen w-full bg-[#FAFBF6] dark:bg-zinc-950">
         <svg className="animate-spin" width="36" height="36" viewBox="0 0 36 36" fill="none">
           <circle cx="18" cy="18" r="15" stroke="#e0dbd4" strokeWidth="3" />
-          <path d="M18 3a15 15 0 0 1 15 15" stroke="#2A7D6F" strokeWidth="3" strokeLinecap="round" />
+          <path d="M18 3a15 15 0 0 1 15 15" stroke="#F26B1F" strokeWidth="3" strokeLinecap="round" />
         </svg>
       </div>
     );
@@ -374,6 +375,20 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     return (
       <Suspense fallback={<LoadingSpinner />}>
         <Onboarding userName={user.name} onComplete={handleOnboardingComplete} onSkip={handleOnboardingSkip} />
+      </Suspense>
+    );
+  }
+
+  if (viewState === 'jc-coming-soon') {
+    const fromCourse = currentModuleId
+      ? studentCourses.find(c => c.id === currentModuleId)
+      : undefined;
+    return (
+      <Suspense fallback={<LoadingSpinner />}>
+        <JCComingSoon
+          fromCourseTitle={fromCourse?.title}
+          onBack={handleBackToTree}
+        />
       </Suspense>
     );
   }
@@ -625,7 +640,7 @@ const ChangePasswordModal: React.FC<{ user: SessionUser }> = ({ user: _user }) =
     setIsLoading(false);
   };
 
-  const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-700 focus:border-[#2A7D6F]";
+  const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-700 focus:border-[#F26B1F]";
 
   return (
     <div className="min-h-screen flex items-center justify-center p-5 bg-[#FAFBF6] dark:bg-zinc-950">
@@ -645,7 +660,7 @@ const ChangePasswordModal: React.FC<{ user: SessionUser }> = ({ user: _user }) =
               <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{6 - newPassword.length} more character{6 - newPassword.length !== 1 ? 's' : ''} needed</p>
             )}
             {newPassword.length >= 6 && (
-              <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: '#2A7D6F' }}><Check size={12} /> Looks good</p>
+              <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: '#F26B1F' }}><Check size={12} /> Looks good</p>
             )}
           </div>
           {error && <p className="text-sm text-red-500 font-medium">{error}</p>}
@@ -653,7 +668,7 @@ const ChangePasswordModal: React.FC<{ user: SessionUser }> = ({ user: _user }) =
             onClick={handleChangePassword}
             disabled={isLoading || newPassword.length < 6}
             className="w-full py-3.5 rounded-full text-white text-[15px] font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-            style={{ backgroundColor: '#2A7D6F', borderBottom: '3px solid #1a5a4e', boxShadow: '0 4px 0 #1a5a4e' }}
+            style={{ backgroundColor: '#F26B1F', borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
           >
             {isLoading ? 'Saving...' : 'Set Password'}
           </button>

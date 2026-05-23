@@ -19,6 +19,9 @@ export interface QuestDefinition {
   day?: number;
   moduleId?: string;
   subjectName?: string;
+  /** Phase 5 plumbing: curriculum level(s) the quest applies to. Defaults
+   *  to 'senior' if absent (every existing quest was authored for senior). */
+  curriculum?: 'junior' | 'senior' | 'both';
 }
 
 export const ONBOARDING_QUESTS: QuestDefinition[] = [
@@ -41,6 +44,8 @@ export interface PersonalizedQuestTemplate {
   rewardPoints: number;
   // Conditions for when this quest should be selected
   condition: 'has-shaky-topics' | 'has-in-progress-module' | 'low-completion-rate' | 'streak-active' | 'has-subjects' | 'always';
+  /** Phase 5 plumbing: curriculum level(s) the template applies to. */
+  curriculum?: 'junior' | 'senior' | 'both';
 }
 
 export const PERSONALIZED_TEMPLATES: PersonalizedQuestTemplate[] = [

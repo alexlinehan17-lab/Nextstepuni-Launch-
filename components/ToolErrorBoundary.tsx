@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import { COLORS } from '../design/tokens';
 
 interface ToolErrorBoundaryProps {
   children: React.ReactNode;
@@ -56,7 +57,7 @@ class ToolErrorBoundary extends React.Component<ToolErrorBoundaryProps, ToolErro
             <button
               onClick={this.props.onBack}
               className="px-6 py-2.5 rounded-xl text-sm font-semibold text-white transition-colors"
-              style={{ backgroundColor: '#2A7D6F' }}
+              style={{ backgroundColor: COLORS.accent }}
             >
               Back to Innovation Zone
             </button>

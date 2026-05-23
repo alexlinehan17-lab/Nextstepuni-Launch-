@@ -3,9 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { type SessionUser } from '../../utils/authUtils';
+import { type SessionUser, type CurriculumLevel } from '../../utils/authUtils';
 import { type UserProgress } from '../../types';
-import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak } from '../subjectData';
+import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak, type YearGroup } from '../subjectData';
 import { type NorthStar, type PointsData } from '../../types';
 import { type GameState } from '../journeySimulatorData';
 import { type DebriefEntry } from '../StudyDebrief';
@@ -44,6 +44,12 @@ export interface GCStudentFullData {
   futureFinder: { topPicks: string[]; completedAt: string } | null;
   mockResults: MockResultEntry[] | null;
   recentDebriefs: DebriefEntry[] | null;
+  /** First-class year-group + curriculum-level for fast filtering at the
+   *  cohort level. Both derive from the user doc (yearGroup) with
+   *  subjectProfile.yearGroup as a fallback. Surfaced in Phase 1 so Phase 6
+   *  can add the dashboard filters without changing the loader. */
+  yearGroup?: YearGroup;
+  curriculumLevel?: CurriculumLevel;
 }
 
 // ─── Status types ───────────────────────────────────────────────────────────

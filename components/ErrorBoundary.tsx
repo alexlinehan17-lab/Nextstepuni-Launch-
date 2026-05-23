@@ -54,7 +54,7 @@ class ErrorBoundary extends React.Component<{ children: React.ReactNode }, Error
             <div className="space-y-3">
               <button
                 onClick={this.handleReload}
-                className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[var(--accent-hex,#2A7D6F)] text-white text-sm font-bold shadow-lg hover:shadow-xl active:scale-[0.98] transition-all"
+                className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[var(--accent-hex,#F26B1F)] text-white text-sm font-bold shadow-lg hover:shadow-xl active:scale-[0.98] transition-all"
               >
                 <RefreshCw size={16} />
                 Reload

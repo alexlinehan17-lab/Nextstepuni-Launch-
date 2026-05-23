@@ -16,6 +16,7 @@ import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './Mod
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useModuleResponses } from '../hooks/useModuleResponses';
+import { COLORS } from '../design/tokens';
 
 const theme = amberTheme;
 
@@ -90,7 +91,7 @@ const NeuroplasticityVisualizer = () => {
   return (
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
         <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>The Brain Rewiring Simulator</h4>
         <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Every time you practice, you strengthen the physical connections in your brain.</p>
       </div>
@@ -114,7 +115,7 @@ const NeuroplasticityVisualizer = () => {
                   key={i}
                   d={`M 70 50 Q 125 ${50 + (i - (connections-1)/2) * 15} 180 50`}
                   fill="none"
-                  stroke="#2A7D6F"
+                  stroke={COLORS.accent}
                   initial={{ pathLength: 0, opacity: 0, strokeWidth: sw }}
                   animate={{ pathLength: 1, opacity, strokeWidth: sw }}
                   transition={{ duration: 0.5 }}
@@ -124,10 +125,10 @@ const NeuroplasticityVisualizer = () => {
           </AnimatePresence>
 
           {/* Neuron A */}
-          <circle cx="50" cy="50" r="20" fill="#2A7D6F" stroke="#1a5a4e" strokeWidth="2" />
+          <circle cx="50" cy="50" r="20" fill={COLORS.accent} stroke={COLORS.accentDark} strokeWidth="2" />
           <circle cx="50" cy="50" r="8" fill="rgba(255,255,255,0.25)" />
           {/* Neuron B */}
-          <circle cx="200" cy="50" r="20" fill="#2A7D6F" stroke="#1a5a4e" strokeWidth="2" />
+          <circle cx="200" cy="50" r="20" fill={COLORS.accent} stroke={COLORS.accentDark} strokeWidth="2" />
           <circle cx="200" cy="50" r="8" fill="rgba(255,255,255,0.25)" />
 
           {/* Node labels */}
@@ -148,9 +149,9 @@ const NeuroplasticityVisualizer = () => {
           initial={{ opacity: 0, y: 6 }}
           animate={{ opacity: 1, y: 0 }}
           className="mt-4 max-w-sm mx-auto"
-          style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
+          style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: COLORS.accentTint, borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
         >
-          <p className="text-sm italic" style={{ color: '#1a6358' }}>{milestone}</p>
+          <p className="text-sm italic" style={{ color: COLORS.accentDarkText }}>{milestone}</p>
         </motion.div>
       )}
 
@@ -160,7 +161,7 @@ const NeuroplasticityVisualizer = () => {
           onClick={() => setConnections(c => Math.min(c + 1, 5))}
           whileTap={{ y: 3 }}
           className="text-white font-semibold"
-          style={{ backgroundColor: '#2A7D6F', borderRadius: 100, padding: '14px 32px', fontSize: 15, borderBottom: '3px solid #1a5a4e', boxShadow: '0 4px 0 #1a5a4e' }}
+          style={{ backgroundColor: COLORS.accent, borderRadius: 100, padding: '14px 32px', fontSize: 15, borderBottom: `3px solid ${COLORS.accentDark}`, boxShadow: `0 4px 0 ${COLORS.accentDark}` }}
         >
           Practice a Skill
         </motion.button>
@@ -189,7 +190,7 @@ const ReframeChallenge = ({ savedText, onSave }: { savedText?: string; onSave?: 
     return(
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Growth Mindset Activity</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Growth Mindset Activity</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>The "Yet" Reframe Challenge</h4>
                 <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Upgrade this fixed thought into a growth mindset statement using the power of "yet".</p>
             </div>
@@ -203,18 +204,18 @@ const ReframeChallenge = ({ savedText, onSave }: { savedText?: string; onSave?: 
             {/* Transformation connector */}
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '16px 0' }}>
                 <div style={{ width: 2, height: 20, background: '#d0cdc8' }} />
-                <div style={{ background: '#e8f5f2', border: '1.5px solid rgba(42,125,111,0.3)', borderRadius: 20, padding: '6px 14px' }}>
-                    <span style={{ fontSize: 12, fontWeight: 700, color: '#1a6358', letterSpacing: '0.05em' }}>ADD "YET"</span>
+                <div style={{ background: COLORS.accentTint, border: '1.5px solid rgba(242,107,31,0.3)', borderRadius: 20, padding: '6px 14px' }}>
+                    <span style={{ fontSize: 12, fontWeight: 700, color: COLORS.accentDarkText, letterSpacing: '0.05em' }}>ADD "YET"</span>
                 </div>
                 <div style={{ width: 2, height: 20, background: '#d0cdc8' }} />
                 <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1L8 8L15 1" stroke="#2A7D6F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M1 1L8 8L15 1" stroke={COLORS.accent} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
             </div>
 
             {/* Rewrite area */}
-            <div className="max-w-lg mx-auto" style={{ backgroundColor: '#f0faf8', border: '2px solid #2A7D6F', borderRadius: 14, padding: '18px 20px' }}>
-                <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-3" style={{ backgroundColor: '#d0ede8', color: '#1a6358', borderRadius: 20, padding: '3px 10px' }}>Your Reframe</span>
+            <div className="max-w-lg mx-auto" style={{ backgroundColor: COLORS.accentTint, border: `2px solid ${COLORS.accent}`, borderRadius: 14, padding: '18px 20px' }}>
+                <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, borderRadius: 20, padding: '3px 10px' }}>Your Reframe</span>
                 <textarea
                     value={reframe}
                     onChange={(e) => setReframe(e.target.value)}
@@ -222,15 +223,15 @@ const ReframeChallenge = ({ savedText, onSave }: { savedText?: string; onSave?: 
                     placeholder="Rewrite this using the word 'yet'..."
                     className="w-full outline-none font-serif"
                     style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '14px 16px', fontSize: 15, color: '#1a1a1a', lineHeight: 1.6, minHeight: 100, resize: 'none' as const }}
-                    onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }}
+                    onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
                     onBlurCapture={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }}
                 />
 
                 <AnimatePresence>
                     {containsYet && (
-                        <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} style={{ marginTop: 12, backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '16px 20px', textAlign: 'center' }}>
-                            <p className="font-serif font-semibold" style={{ fontSize: 16, color: '#1a6358' }}>Reframe complete.</p>
-                            <p style={{ fontSize: 13, color: '#2A7D6F', marginTop: 4 }}>You've opened up the possibility of future growth.</p>
+                        <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} style={{ marginTop: 12, backgroundColor: COLORS.successTint, border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '16px 20px', textAlign: 'center' }}>
+                            <p className="font-serif font-semibold" style={{ fontSize: 16, color: COLORS.successDarkText }}>Reframe complete.</p>
+                            <p style={{ fontSize: 13, color: COLORS.success, marginTop: 4 }}>You've opened up the possibility of future growth.</p>
                         </motion.div>
                     )}
                 </AnimatePresence>
@@ -296,15 +297,15 @@ const FeedbackTranslator = () => {
   return (
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <div className="text-center mb-2">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Interactive Activity</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Interactive Activity</span>
         <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Feedback Translator</h4>
         <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Tap each card to translate harsh "verdict language" into constructive "data language."</p>
       </div>
 
       {/* Progress chip */}
       <div className="flex justify-center mb-8 mt-3">
-        <div className="inline-flex items-center gap-2" style={{ backgroundColor: '#e8f5f2', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '5px 14px' }}>
-          <span style={{ fontSize: 13, fontWeight: 600, color: '#1a6358' }}>
+        <div className="inline-flex items-center gap-2" style={{ backgroundColor: COLORS.accentTint, border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '5px 14px' }}>
+          <span style={{ fontSize: 13, fontWeight: 600, color: COLORS.accentDarkText }}>
             {allTranslated ? `All ${feedbackPairs.length} translated ✓` : `${translatedCount} / ${feedbackPairs.length} translated`}
           </span>
         </div>
@@ -338,12 +339,12 @@ const FeedbackTranslator = () => {
                   animate={{ opacity: 1, rotateY: 0 }}
                   transition={{ duration: 0.3 }}
                   className="relative"
-                  style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '20px 22px' }}
+                  style={{ backgroundColor: COLORS.successTint, border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '20px 22px' }}
                 >
-                  <span className="absolute top-4 right-4 font-bold" style={{ fontSize: 16, color: '#2A7D6F' }}>✓</span>
-                  <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: '#d0ede8', color: '#1a6358', borderRadius: 20, padding: '3px 10px', letterSpacing: '0.1em' }}>Data Language</span>
+                  <span className="absolute top-4 right-4 font-bold" style={{ fontSize: 16, color: COLORS.success }}>✓</span>
+                  <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: COLORS.successTint, color: COLORS.successDarkText, borderRadius: 20, padding: '3px 10px', letterSpacing: '0.1em' }}>Data Language</span>
                   <p className="font-serif mt-2" style={{ fontSize: 16, color: '#1a1a1a' }}>{pair.data}</p>
-                  <p className="italic mt-3" style={{ fontSize: 13, color: '#2A7D6F' }}>{pair.shift}</p>
+                  <p className="italic mt-3" style={{ fontSize: 13, color: COLORS.success }}>{pair.shift}</p>
                 </MotionDiv>
               )}
             </AnimatePresence>
@@ -354,9 +355,9 @@ const FeedbackTranslator = () => {
       {/* Completion */}
       <AnimatePresence>
         {allTranslated && (
-          <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="mt-6" style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 16, padding: '20px 24px', textAlign: 'center' }}>
-            <p className="font-serif font-semibold" style={{ fontSize: 18, color: '#1a6358' }}>Translation complete.</p>
-            <p style={{ fontSize: 14, color: '#2A7D6F', marginTop: 4 }}>You can now hear feedback as information, not judgment.</p>
+          <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="mt-6" style={{ backgroundColor: COLORS.successTint, border: `2px solid ${COLORS.success}`, borderRadius: 16, padding: '20px 24px', textAlign: 'center' }}>
+            <p className="font-serif font-semibold" style={{ fontSize: 18, color: COLORS.successDarkText }}>Translation complete.</p>
+            <p style={{ fontSize: 14, color: COLORS.success, marginTop: 4 }}>You can now hear feedback as information, not judgment.</p>
           </MotionDiv>
         )}
       </AnimatePresence>
@@ -372,7 +373,7 @@ const FeedbackTranslator = () => {
           placeholder="e.g. You always make silly mistakes..."
           className="w-full outline-none"
           style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '14px 16px', fontSize: 14, color: '#1a1a1a' }}
-          onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }}
+          onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
           onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }}
         />
         <AnimatePresence>
@@ -385,7 +386,7 @@ const FeedbackTranslator = () => {
                   onClick={() => setSelectedTranslation(i)}
                   className="w-full text-left text-sm font-medium transition-all"
                   style={selectedTranslation === i
-                    ? { backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '16px 20px', color: '#1a6358' }
+                    ? { backgroundColor: COLORS.successTint, border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '16px 20px', color: COLORS.successDarkText }
                     : { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 14, padding: '16px 20px', color: '#1a1a1a', cursor: 'pointer' }
                   }
                 >
@@ -394,9 +395,9 @@ const FeedbackTranslator = () => {
               ))}
               <AnimatePresence>
                 {selectedTranslation !== null && (
-                  <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '16px 20px', textAlign: 'center' }}>
-                    <p className="font-serif font-semibold" style={{ fontSize: 16, color: '#1a6358' }}>You just turned a verdict into data.</p>
-                    <p style={{ fontSize: 13, color: '#2A7D6F', marginTop: 4 }}>That's the growth mindset in action.</p>
+                  <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} style={{ backgroundColor: COLORS.successTint, border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '16px 20px', textAlign: 'center' }}>
+                    <p className="font-serif font-semibold" style={{ fontSize: 16, color: COLORS.successDarkText }}>You just turned a verdict into data.</p>
+                    <p style={{ fontSize: 13, color: COLORS.success, marginTop: 4 }}>That's the growth mindset in action.</p>
                   </MotionDiv>
                 )}
               </AnimatePresence>

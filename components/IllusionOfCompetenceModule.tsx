@@ -9,12 +9,12 @@ import {
   Eye, AlertTriangle, Lightbulb, SlidersHorizontal, Brain, Wrench
 } from 'lucide-react';
 import { type ModuleProgress } from '../types';
-import { tealTheme } from '../moduleThemes';
+import { accentTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
-const theme = tealTheme;
+const theme = accentTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 
@@ -188,7 +188,7 @@ const ForgettingCurveSimulator = () => {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-2">
               <div className="text-center sm:text-left">
                 <p className="text-sm text-zinc-500 dark:text-zinc-400">Retention after 7 days:</p>
-                <p className="text-3xl font-bold text-teal-600">{finalRetention}%
+                <p className="text-3xl font-bold text-[#F26B1F]">{finalRetention}%
                   <span className="text-sm font-normal text-zinc-400 ml-2">
                     {pins.length === 0 ? '(no reviews)' : `(${pins.length} review${pins.length > 1 ? 's' : ''})`}
                   </span>

@@ -37,11 +37,9 @@ import { motion } from 'framer-motion';
 import { CEILING_SCENARIOS } from '../../../../data/knowledge/ceilingScenarios';
 import { type CeilingScenario } from '../../../../types/knowledge';
 import { writePattern } from '../knowledgePatterns';
+import { ACCENT, ACCENT_DARK, ACCENT_TINT } from '../../colors';
 
-const TEAL = '#2A7D6F';
-const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#F0FAF8';
 const WARN = '#A8746E';
 
 interface Props {
@@ -174,7 +172,7 @@ const ScenarioPicker: React.FC<{
               {s.capRuleLabel}
             </span>
             {viewed && !active && (
-              <span aria-hidden style={{ color: TEAL, fontSize: 12, fontWeight: 700 }}>•</span>
+              <span aria-hidden style={{ color: ACCENT, fontSize: 12, fontWeight: 700 }}>•</span>
             )}
           </div>
           <p className="font-serif" style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.35 }}>
@@ -206,7 +204,7 @@ const Dashboard: React.FC<{
       }}
     >
       <div className="flex items-baseline justify-between gap-3 mb-1 flex-wrap">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
           Answer-quality dashboard
         </p>
         <span
@@ -214,9 +212,9 @@ const Dashboard: React.FC<{
           style={{
             fontSize: 11,
             fontWeight: 700,
-            color: counterfactualOn ? TEAL : WARN,
-            backgroundColor: counterfactualOn ? `${TEAL}15` : `${WARN}15`,
-            border: `1px solid ${counterfactualOn ? TEAL : WARN}`,
+            color: counterfactualOn ? ACCENT : WARN,
+            backgroundColor: counterfactualOn ? `${ACCENT}15` : `${WARN}15`,
+            border: `1px solid ${counterfactualOn ? ACCENT : WARN}`,
             borderRadius: 999,
             padding: '4px 10px',
           }}
@@ -348,8 +346,8 @@ const BarColumn: React.FC<{
           style={{
             width: '78%',
             maxWidth: 92,
-            backgroundColor: bar.tone === 'subtle' ? '#EDEBE8' : isLifted ? TEAL : WARN,
-            border: `2px solid ${bar.tone === 'subtle' ? '#9e9186' : isLifted ? TEAL_DARK : '#7A4944'}`,
+            backgroundColor: bar.tone === 'subtle' ? '#EDEBE8' : isLifted ? ACCENT : WARN,
+            border: `2px solid ${bar.tone === 'subtle' ? '#9e9186' : isLifted ? ACCENT_DARK : '#7A4944'}`,
             borderBottom: 'none',
             borderRadius: '6px 6px 0 0',
           }}
@@ -362,7 +360,7 @@ const BarColumn: React.FC<{
             bottom: heightPx + 6,
             fontSize: 13,
             fontWeight: 700,
-            color: bar.tone === 'subtle' ? '#5a5550' : isLifted ? TEAL_DARK : INK,
+            color: bar.tone === 'subtle' ? '#5a5550' : isLifted ? ACCENT_DARK : INK,
           }}
         >
           {bar.value}
@@ -407,13 +405,13 @@ const Rewind: React.FC<{
     <section
       className="rounded-2xl"
       style={{
-        backgroundColor: CREAM,
+        backgroundColor: ACCENT_TINT,
         border: `2px solid ${INK}`,
         padding: '24px 26px',
       }}
     >
       <div className="flex items-baseline justify-between gap-3 mb-3 flex-wrap">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
           Rewind to the cap-trigger
         </p>
         <button
@@ -421,9 +419,9 @@ const Rewind: React.FC<{
           onClick={playRewind}
           className="font-sans rounded-full"
           style={{
-            backgroundColor: TEAL,
+            backgroundColor: ACCENT,
             color: '#FFFFFF',
-            border: `1px solid ${TEAL}`,
+            border: `1px solid ${ACCENT}`,
             padding: '7px 16px',
             fontSize: 12,
             fontWeight: 600,
@@ -547,14 +545,14 @@ const Counterfactual: React.FC<{
     <section
       className="rounded-2xl"
       style={{
-        backgroundColor: counterfactualOn ? `${TEAL}10` : '#FFFFFF',
-        border: `2px solid ${counterfactualOn ? TEAL : INK}`,
+        backgroundColor: counterfactualOn ? `${ACCENT}10` : '#FFFFFF',
+        border: `2px solid ${counterfactualOn ? ACCENT : INK}`,
         padding: '22px 24px',
         transition: 'background-color 0.3s, border-color 0.3s',
       }}
     >
       <div className="flex items-baseline justify-between gap-3 mb-2 flex-wrap">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: counterfactualOn ? TEAL_DARK : TEAL }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: counterfactualOn ? ACCENT_DARK : ACCENT }}>
           Counter-factual
         </p>
         <button
@@ -562,9 +560,9 @@ const Counterfactual: React.FC<{
           onClick={onToggle}
           className="font-sans rounded-full"
           style={{
-            backgroundColor: counterfactualOn ? TEAL : INK,
+            backgroundColor: counterfactualOn ? ACCENT : INK,
             color: '#FFFFFF',
-            border: `2px solid ${counterfactualOn ? TEAL : INK}`,
+            border: `2px solid ${counterfactualOn ? ACCENT : INK}`,
             padding: '8px 18px',
             fontSize: 12.5,
             fontWeight: 600,
@@ -596,11 +594,11 @@ const CrossLink: React.FC<{ crossLink: { moduleId: string; moduleLabel: string }
     className="rounded-xl flex items-center gap-3"
     style={{
       backgroundColor: '#FFFFFF',
-      border: `1.5px solid ${TEAL}`,
+      border: `1.5px solid ${ACCENT}`,
       padding: '12px 16px',
     }}
   >
-    <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden style={{ color: TEAL, flexShrink: 0 }}>
+    <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden style={{ color: ACCENT, flexShrink: 0 }}>
       <path d="M8 1L8 15M1 8L15 8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
     </svg>
     <p className="font-sans" style={{ fontSize: 13, color: INK, lineHeight: 1.5 }}>
@@ -621,12 +619,12 @@ const UnifiedSummary: React.FC<{ scenarios: CeilingScenario[] }> = ({ scenarios 
       transition={{ duration: 0.5 }}
       className="rounded-2xl"
       style={{
-        backgroundColor: '#F0FAF8',
-        border: `1px solid ${TEAL}33`,
+        backgroundColor: ACCENT_TINT,
+        border: `1px solid ${ACCENT}33`,
         padding: '26px 28px',
       }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
         Ceilings you saw fire
       </p>
       <h3 className="font-serif" style={{ fontSize: 22, fontWeight: 600, color: INK, lineHeight: 1.25, marginTop: 6 }}>
@@ -640,14 +638,14 @@ const UnifiedSummary: React.FC<{ scenarios: CeilingScenario[] }> = ({ scenarios 
             className="font-sans flex items-baseline gap-2"
             style={{ fontSize: 13, color: '#3F3B36' }}
           >
-            <span style={{ color: TEAL, fontSize: 18, lineHeight: 1 }}>·</span>
+            <span style={{ color: ACCENT, fontSize: 18, lineHeight: 1 }}>·</span>
             <span><strong>{label}</strong></span>
           </li>
         ))}
       </ul>
 
       <div className="mt-5">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
           The single habit that defeats all four
         </p>
         <p className="font-sans" style={{ fontSize: 13.5, color: '#3F3B36', marginTop: 4, lineHeight: 1.6 }}>

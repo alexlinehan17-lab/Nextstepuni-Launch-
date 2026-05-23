@@ -10,7 +10,7 @@
  * the petri-dish before writing would just hand them the answer.
  *
  * Once revealed, phrases the answer matches (verbatim or by acceptable
- * paraphrase) light up TEAL with a soft pulsing aura. Missed phrases
+ * paraphrase) light up ACCENT with a soft pulsing aura. Missed phrases
  * stay in muted brown-grey. The student can hide the dish again to
  * keep writing without peeking.
  *
@@ -38,11 +38,9 @@ import React, { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { PHRASE_MATCH_QUESTIONS } from '../../../../data/knowledge/phraseMatch';
 import { type PhraseMatchQuestion, type PhraseMatchKey } from '../../../../types/knowledge';
+import { ACCENT, ACCENT_DARK, ACCENT_TINT } from '../../colors';
 
-const TEAL = '#2A7D6F';
-const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#F0FAF8';
 const WARN = '#A8746E';
 
 type SubjectFilter = 'all' | 'biology' | 'chemistry' | 'physics';
@@ -220,7 +218,7 @@ const QuestionFrame: React.FC<{ question: PhraseMatchQuestion }> = ({ question }
     className="rounded-2xl"
     style={{ backgroundColor: '#FFFFFF', border: `2px solid ${INK}`, padding: '20px 24px' }}
   >
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 6 }}>
+    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 6 }}>
       Question
     </p>
     <p className="font-serif" style={{ fontSize: 16, fontWeight: 500, color: INK, lineHeight: 1.5, fontStyle: 'italic' }}>
@@ -293,11 +291,11 @@ const ForwardMode: React.FC<{
         style={{ backgroundColor: '#FFFFFF', border: `2px solid ${INK}`, padding: '22px 24px' }}
       >
         <div className="flex items-baseline justify-between gap-3 mb-2 flex-wrap">
-          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
             Your answer
           </p>
           {answer.trim() && revealed && (
-            <span className="font-serif" style={{ fontSize: 14, fontWeight: 700, color: hits === total ? TEAL : hits >= total / 2 ? TEAL_DARK : WARN }}>
+            <span className="font-serif" style={{ fontSize: 14, fontWeight: 700, color: hits === total ? ACCENT : hits >= total / 2 ? ACCENT_DARK : WARN }}>
               {hits} / {total} phrases matched
             </span>
           )}
@@ -308,7 +306,7 @@ const ForwardMode: React.FC<{
           placeholder="Write your definition here. The petri-dish stays hidden until you ask for it."
           className="w-full font-serif rounded-lg"
           style={{
-            backgroundColor: CREAM,
+            backgroundColor: ACCENT_TINT,
             border: `1.5px solid ${INK}`,
             padding: '12px 14px',
             fontSize: 14,
@@ -346,12 +344,12 @@ const PetriDish: React.FC<{
       style={{ backgroundColor: '#FFFFFF', border: `2px solid ${INK}`, padding: '22px 24px' }}
     >
       <div className="flex items-baseline justify-between gap-3 mb-3 flex-wrap">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
           Marking-scheme petri-dish
         </p>
         {revealed ? (
           <div className="flex items-baseline gap-3">
-            <span className="font-serif" style={{ fontSize: 18, fontWeight: 700, color: hits === total ? TEAL : INK }}>
+            <span className="font-serif" style={{ fontSize: 18, fontWeight: 700, color: hits === total ? ACCENT : INK }}>
               {hits}<span style={{ fontSize: 13, color: '#9e9186', fontWeight: 500 }}> / {total} phrases lit</span>
             </span>
             <button
@@ -377,7 +375,7 @@ const PetriDish: React.FC<{
           transition={{ duration: 0.4, ease: 'easeOut' }}
           className="relative rounded-xl"
           style={{
-            backgroundColor: CREAM,
+            backgroundColor: ACCENT_TINT,
             border: `1.5px solid ${INK}`,
             height: 240,
             overflow: 'hidden',
@@ -401,7 +399,7 @@ const PetriDishHidden: React.FC<{ total: number; onReveal: () => void }> = ({ to
   <div
     className="relative rounded-xl"
     style={{
-      backgroundColor: CREAM,
+      backgroundColor: ACCENT_TINT,
       border: `1.5px dashed ${INK}`,
       padding: '34px 28px',
       textAlign: 'center',
@@ -423,9 +421,9 @@ const PetriDishHidden: React.FC<{ total: number; onReveal: () => void }> = ({ to
         className="font-sans rounded-full inline-flex items-center gap-1.5"
         style={{
           marginTop: 16,
-          backgroundColor: TEAL,
+          backgroundColor: ACCENT,
           color: '#FFFFFF',
-          border: `1px solid ${TEAL}`,
+          border: `1px solid ${ACCENT}`,
           padding: '10px 22px',
           fontSize: 13,
           fontWeight: 600,
@@ -447,8 +445,8 @@ const PetriDishGlyph: React.FC = () => (
   <svg width="42" height="42" viewBox="0 0 42 42" fill="none" style={{ display: 'inline-block' }} aria-hidden>
     <circle cx="21" cy="21" r="18" stroke={INK} strokeWidth="1.5" />
     <circle cx="21" cy="21" r="14" stroke={INK} strokeWidth="0.8" strokeDasharray="2 1.5" />
-    <circle cx="15" cy="18" r="2" fill={TEAL} opacity="0.7" />
-    <circle cx="26" cy="24" r="1.4" fill={TEAL_DARK} opacity="0.55" />
+    <circle cx="15" cy="18" r="2" fill={ACCENT} opacity="0.7" />
+    <circle cx="26" cy="24" r="1.4" fill={ACCENT_DARK} opacity="0.55" />
     <circle cx="22" cy="13" r="0.9" fill={INK} opacity="0.5" />
   </svg>
 );
@@ -512,9 +510,9 @@ const PhrasePill: React.FC<{
       left: `${pos.x}%`,
       top: `${pos.y}%`,
       transform: 'translate(-50%, -50%)',
-      backgroundColor: matched ? TEAL : '#FFFFFF',
+      backgroundColor: matched ? ACCENT : '#FFFFFF',
       color: matched ? '#FFFFFF' : '#3F3B36',
-      border: `1.5px solid ${matched ? TEAL_DARK : '#d0cdc8'}`,
+      border: `1.5px solid ${matched ? ACCENT_DARK : '#d0cdc8'}`,
       borderRadius: 8,
       padding: '7px 12px',
       fontSize: 13,
@@ -522,7 +520,7 @@ const PhrasePill: React.FC<{
       lineHeight: 1.3,
       maxWidth: 180,
       textAlign: 'center',
-      boxShadow: matched ? `0 4px 12px ${TEAL}33` : '0 1px 3px rgba(0,0,0,0.04)',
+      boxShadow: matched ? `0 4px 12px ${ACCENT}33` : '0 1px 3px rgba(0,0,0,0.04)',
       zIndex: matched ? 2 : 1,
       transition: 'background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s',
     }}
@@ -537,7 +535,7 @@ const PhrasePill: React.FC<{
           position: 'absolute',
           inset: -3,
           borderRadius: 11,
-          border: `2px solid ${TEAL}`,
+          border: `2px solid ${ACCENT}`,
           pointerEvents: 'none',
         }}
       />
@@ -589,9 +587,9 @@ const MissedPhrases: React.FC<{
                   className="font-sans"
                   style={{
                     fontSize: 11,
-                    color: TEAL_DARK,
+                    color: ACCENT_DARK,
                     backgroundColor: '#FFFFFF',
-                    border: `1px solid ${TEAL}66`,
+                    border: `1px solid ${ACCENT}66`,
                     borderRadius: 4,
                     padding: '2px 7px',
                   }}
@@ -628,7 +626,7 @@ const ReverseMode: React.FC<{
       style={{ backgroundColor: '#FFFFFF', border: `2px solid ${INK}`, padding: '24px 26px' }}
     >
       <div className="flex items-baseline justify-between gap-3 mb-2 flex-wrap">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
           Build the model answer
         </p>
         <button
@@ -688,15 +686,15 @@ const ReverseMode: React.FC<{
               key={k.id}
               className="rounded-lg flex items-center gap-3"
               style={{
-                backgroundColor: CREAM,
-                border: `1.5px solid ${TEAL}`,
+                backgroundColor: ACCENT_TINT,
+                border: `1.5px solid ${ACCENT}`,
                 padding: '10px 12px',
               }}
             >
               <span
                 className="font-serif inline-flex items-center justify-center"
                 style={{
-                  backgroundColor: TEAL,
+                  backgroundColor: ACCENT,
                   color: '#FFFFFF',
                   borderRadius: 999,
                   width: 24,
@@ -745,9 +743,9 @@ const ReverseDiagnostic: React.FC<{ question: PhraseMatchQuestion; order: string
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
       className="rounded-xl"
-      style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '18px 20px' }}
+      style={{ backgroundColor: ACCENT_TINT, border: `1px solid ${ACCENT}33`, padding: '18px 20px' }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 6 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 6 }}>
         Sequence diagnostic
       </p>
       <h4 className="font-serif" style={{ fontSize: 16, fontWeight: 600, color: INK, lineHeight: 1.4 }}>
@@ -761,7 +759,7 @@ const ReverseDiagnostic: React.FC<{ question: PhraseMatchQuestion; order: string
           : 'Phrases all used but the order doesn\'t flow. The model order builds: definition first, then mechanism, then conditions.'}
       </p>
       <div className="mt-4">
-        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: TEAL, marginBottom: 6 }}>
+        <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: ACCENT, marginBottom: 6 }}>
           Model paragraph
         </p>
         <p className="font-serif" style={{ fontSize: 13, color: '#3F3B36', lineHeight: 1.65, fontStyle: 'italic' }}>

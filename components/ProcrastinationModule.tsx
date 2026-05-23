@@ -16,6 +16,7 @@ import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useNorthStar } from '../hooks/useNorthStar';
 import NorthStarCallout from './NorthStarCallout';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
+import { COLORS } from '../design/tokens';
 
 const theme = orangeTheme;
 
@@ -61,7 +62,7 @@ const ProcrastinationEquation = () => {
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Procrastination Equation</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Adjust the four levers to see what drives — or kills — your motivation.</p>
             <p className="text-center text-xs mb-8" style={{ color: '#7a7068' }}>
-              <span className="font-semibold" style={{ color: '#2A7D6F' }}>E and V</span> boost motivation. <span className="font-semibold" style={{ color: '#1a1a1a' }}>I and D</span> drain it.
+              <span className="font-semibold" style={{ color: COLORS.success }}>E and V</span> boost motivation. <span className="font-semibold" style={{ color: '#1a1a1a' }}>I and D</span> drain it.
             </p>
 
             {/* Gauge */}
@@ -107,7 +108,7 @@ const ProcrastinationEquation = () => {
                     style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: '20px 16px' }}
                   >
                     {/* Letter */}
-                    <p className="font-serif font-bold" style={{ fontSize: 32, color: isPositive ? '#2A7D6F' : '#1a1a1a' }}>{lever.letter}</p>
+                    <p className="font-serif font-bold" style={{ fontSize: 32, color: isPositive ? COLORS.success : '#1a1a1a' }}>{lever.letter}</p>
                     {/* Term */}
                     <p className="text-xs font-bold text-center mt-1" style={{ color: '#1a1a1a' }}>{lever.label}</p>
                     {/* Description */}
@@ -129,7 +130,7 @@ const ProcrastinationEquation = () => {
                             bottom: 0,
                             left: 0,
                             right: 0,
-                            backgroundColor: isPositive ? '#2A7D6F' : '#E85D75',
+                            backgroundColor: isPositive ? COLORS.success : '#E85D75',
                             borderRadius: 16,
                           }}
                           animate={{ height: `${val}%` }}
@@ -143,12 +144,12 @@ const ProcrastinationEquation = () => {
                       <input
                         type="range" min="1" max="100" value={val}
                         onChange={e => setVars({...vars, [lever.key]: parseInt(e.target.value)})}
-                        className="chunky-slider chunky-slider-teal"
+                        className="chunky-slider chunky-slider-accent"
                       />
                     </div>
 
                     {/* Direction label */}
-                    <p className="text-xs font-semibold" style={{ color: isPositive ? '#2A7D6F' : '#7a7068' }}>{direction}</p>
+                    <p className="text-xs font-semibold" style={{ color: isPositive ? COLORS.success : '#7a7068' }}>{direction}</p>
                   </div>
                 );
               })}
@@ -492,25 +493,25 @@ const CircuitBreaker = () => {
             {/* Transformation connector */}
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '16px 0' }}>
               <div style={{ width: 2, height: 20, background: '#d0cdc8' }} />
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8, background: '#e8f5f2', border: '1.5px solid rgba(42,125,111,0.3)', borderRadius: 20, padding: '6px 14px' }}>
-                <span style={{ fontSize: 12, fontWeight: 700, color: '#1a6358', letterSpacing: '0.05em' }}>REWRITE IT</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, background: COLORS.accentTint, border: '1.5px solid rgba(242,107,31,0.3)', borderRadius: 20, padding: '6px 14px' }}>
+                <span style={{ fontSize: 12, fontWeight: 700, color: COLORS.accentDarkText, letterSpacing: '0.05em' }}>REWRITE IT</span>
               </div>
               <div style={{ width: 2, height: 20, background: '#d0cdc8' }} />
               <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
-                <path d="M1 1L8 8L15 1" stroke="#2A7D6F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M1 1L8 8L15 1" stroke={COLORS.accent} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
 
             {/* Section 2 — Rewrite textarea */}
-            <div className="max-w-lg mx-auto" style={{ backgroundColor: '#f0faf8', border: '2px solid #2A7D6F', borderRadius: 14, padding: 20 }}>
-              <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-3" style={{ backgroundColor: '#d0ede8', color: '#1a6358', borderRadius: 20, padding: '3px 10px' }}>Your rewrite</span>
+            <div className="max-w-lg mx-auto" style={{ backgroundColor: COLORS.accentTint, border: `2px solid ${COLORS.accent}`, borderRadius: 14, padding: 20 }}>
+              <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, borderRadius: 20, padding: '3px 10px' }}>Your rewrite</span>
               <textarea
                 value={reframe}
                 onChange={e => setReframe(e.target.value)}
                 placeholder="Rewrite this into something kinder and more action-focused..."
                 className="w-full outline-none font-serif"
                 style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '14px 16px', fontSize: 15, color: '#1a1a1a', lineHeight: 1.6, minHeight: 100, resize: 'none' }}
-                onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }}
+                onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
                 onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }}
               />
 
@@ -524,15 +525,15 @@ const CircuitBreaker = () => {
                     transition={{ duration: 0.3 }}
                     className="inline-flex items-center gap-2"
                     style={{
-                      backgroundColor: q.detected ? '#e8f5f2' : '#FFFFFF',
-                      border: q.detected ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+                      backgroundColor: q.detected ? COLORS.successTint : '#FFFFFF',
+                      border: q.detected ? `2px solid ${COLORS.success}` : '2px solid #d0cdc8',
                       borderRadius: 20,
                       padding: '8px 16px',
                     }}
                   >
-                    <span className="w-2 h-2 rounded-full" style={{ backgroundColor: q.detected ? '#2A7D6F' : '#d0cdc8' }} />
-                    <span className="text-[13px] font-semibold" style={{ color: q.detected ? '#1a6358' : '#b0a898' }}>
-                      {q.detected && <span style={{ color: '#2A7D6F', fontWeight: 700, marginRight: 4 }}>✓</span>}
+                    <span className="w-2 h-2 rounded-full" style={{ backgroundColor: q.detected ? COLORS.success : '#d0cdc8' }} />
+                    <span className="text-[13px] font-semibold" style={{ color: q.detected ? COLORS.successDarkText : '#b0a898' }}>
+                      {q.detected && <span style={{ color: COLORS.success, fontWeight: 700, marginRight: 4 }}>✓</span>}
                       {q.label}
                     </span>
                   </motion.span>
@@ -544,12 +545,12 @@ const CircuitBreaker = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
-                  style={{ marginTop: 16, background: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '16px 20px', display: 'flex', alignItems: 'center', gap: 12 }}
+                  style={{ marginTop: 16, background: COLORS.successTint, border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '16px 20px', display: 'flex', alignItems: 'center', gap: 12 }}
                 >
-                  <div style={{ width: 36, height: 36, borderRadius: '50%', background: '#2A7D6F', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontSize: 18, color: 'white' }}>✓</div>
+                  <div style={{ width: 36, height: 36, borderRadius: '50%', background: COLORS.success, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontSize: 18, color: 'white' }}>✓</div>
                   <div>
-                    <p style={{ fontSize: 14, fontWeight: 700, color: '#1a6358', marginBottom: 2 }}>Circuit broken.</p>
-                    <p style={{ fontSize: 13, color: '#2A7D6F' }}>You rewrote a harmful thought into something that actually helps you move forward.</p>
+                    <p style={{ fontSize: 14, fontWeight: 700, color: COLORS.successDarkText, marginBottom: 2 }}>Circuit broken.</p>
+                    <p style={{ fontSize: 13, color: COLORS.success }}>You rewrote a harmful thought into something that actually helps you move forward.</p>
                   </div>
                 </motion.div>
               )}

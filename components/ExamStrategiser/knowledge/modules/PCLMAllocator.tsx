@@ -14,8 +14,8 @@
 import React, { useMemo, useState } from 'react';
 import KnowledgeModuleShell from '../KnowledgeModuleShell';
 import QuickCheck from '../QuickCheck';
+import { ACCENT, ACCENT_TINT } from '../../colors';
 
-const TEAL = '#2A7D6F';
 
 interface Props {
   onBack: () => void;
@@ -203,7 +203,7 @@ const SliderPanel: React.FC<{
     className="rounded-2xl"
     style={{ backgroundColor: '#FFFFFF', border: '1px solid #EDEBE8', padding: '24px 26px' }}
   >
-    <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 4 }}>
+    <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 4 }}>
       Set the marks
     </p>
     <p className="font-sans" style={{ fontSize: 12.5, color: '#78716C', marginBottom: 18, lineHeight: 1.5 }}>
@@ -260,13 +260,13 @@ const SliderRow: React.FC<{
         {capped !== null && capped !== undefined ? (
           <>
             <span style={{ fontSize: 13, color: '#A8A29E', textDecoration: 'line-through' }}>{value}</span>
-            <span style={{ fontSize: 18, fontWeight: 700, color: TEAL }}>{capped}</span>
+            <span style={{ fontSize: 18, fontWeight: 700, color: ACCENT }}>{capped}</span>
             <span className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: '#A8746E' }}>
               capped
             </span>
           </>
         ) : (
-          <span style={{ fontSize: 18, fontWeight: 700, color: TEAL }}>{value}</span>
+          <span style={{ fontSize: 18, fontWeight: 700, color: ACCENT }}>{value}</span>
         )}
       </div>
     </div>
@@ -277,7 +277,7 @@ const SliderRow: React.FC<{
       value={value}
       onChange={(e) => onChange(Number(e.target.value))}
       className="w-full"
-      style={{ accentColor: TEAL }}
+      style={{ accentColor: ACCENT }}
     />
     <p className="font-sans" style={{ fontSize: 11.5, color: '#78716C', marginTop: 4 }}>
       {description}
@@ -296,11 +296,11 @@ const ResultPanel: React.FC<{
   return (
     <section
       className="rounded-2xl"
-      style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '22px 26px' }}
+      style={{ backgroundColor: ACCENT_TINT, border: `1px solid ${ACCENT}33`, padding: '22px 26px' }}
     >
       <div className="flex items-baseline justify-between gap-4 flex-wrap">
         <div>
-          <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 4 }}>
+          <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 4 }}>
             Final mark
           </p>
           <div className="flex items-baseline gap-3">
@@ -308,7 +308,7 @@ const ResultPanel: React.FC<{
               {total}
               <span style={{ fontSize: 18, color: '#78716C', fontWeight: 500 }}> / 100</span>
             </span>
-            <span className="font-sans" style={{ fontSize: 13, fontWeight: 700, color: TEAL, backgroundColor: '#FFFFFF', border: `1px solid ${TEAL}55`, padding: '4px 10px', borderRadius: 999 }}>
+            <span className="font-sans" style={{ fontSize: 13, fontWeight: 700, color: ACCENT, backgroundColor: '#FFFFFF', border: `1px solid ${ACCENT}55`, padding: '4px 10px', borderRadius: 999 }}>
               {grade}
             </span>
           </div>
@@ -357,8 +357,8 @@ const ScenarioPanel: React.FC<{
             onClick={() => onSelect(s)}
             className="text-left rounded-xl transition-colors"
             style={{
-              backgroundColor: active ? '#F0FAF8' : '#FFFFFF',
-              border: `1px solid ${active ? `${TEAL}66` : '#EDEBE8'}`,
+              backgroundColor: active ? ACCENT_TINT : '#FFFFFF',
+              border: `1px solid ${active ? `${ACCENT}66` : '#EDEBE8'}`,
               padding: '14px 16px',
               cursor: 'pointer',
             }}

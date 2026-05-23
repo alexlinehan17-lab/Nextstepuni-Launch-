@@ -60,7 +60,7 @@ const VIEWBOX_H = 480;
 const PEAKS: PeakConfig[] = [
   { id: 'mind',   label: 'Mind',   baseLeft:  60, baseRight:  300, summitX: 180, summitY: 140, snowColor: '#B8C9E5', flagColor: '#5B7DB0', seed: 17,  silhouetteStroke: 1.9 },
   { id: 'growth', label: 'Growth', baseLeft: 250, baseRight:  470, summitX: 360, summitY: 200, snowColor: '#F5C9A8', flagColor: '#D89060', seed: 41,  silhouetteStroke: 1.9 },
-  { id: 'learn',  label: 'Learn',  baseLeft: 430, baseRight:  690, summitX: 560, summitY:  90, snowColor: '#B8DDC8', flagColor: '#2A7D6F', seed: 73,  silhouetteStroke: 2.0 },
+  { id: 'learn',  label: 'Learn',  baseLeft: 430, baseRight:  690, summitX: 560, summitY:  90, snowColor: '#B8DDC8', flagColor: '#F26B1F', seed: 73,  silhouetteStroke: 2.0 },
   { id: 'decode', label: 'Decode', baseLeft: 650, baseRight:  890, summitX: 770, summitY: 180, snowColor: '#F0BFCE', flagColor: '#C76489', seed: 109, silhouetteStroke: 1.9 },
   { id: 'exam',   label: 'Exam',   baseLeft: 850, baseRight: 1080, summitX: 970, summitY: 160, snowColor: '#F5BFB0', flagColor: '#D85F47', seed: 197, silhouetteStroke: 1.9 },
 ];

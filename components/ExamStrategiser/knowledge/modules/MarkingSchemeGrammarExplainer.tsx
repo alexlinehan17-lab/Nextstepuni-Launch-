@@ -16,8 +16,8 @@ import { SUBJECT_MARKING_GRAMMARS } from '../../../../data/knowledge';
 import { type SubjectMarkingGrammar } from '../../../../types/knowledge';
 import KnowledgeModuleShell from '../KnowledgeModuleShell';
 import QuickCheck from '../QuickCheck';
+import { ACCENT, ACCENT_TINT } from '../../colors';
 
-const TEAL = '#2A7D6F';
 
 interface Props {
   onBack: () => void;
@@ -128,9 +128,9 @@ const SubjectTabs: React.FC<{
             padding: '10px 14px',
             fontSize: 12.5,
             fontWeight: 600,
-            backgroundColor: active ? TEAL : '#FFFFFF',
+            backgroundColor: active ? ACCENT : '#FFFFFF',
             color: active ? '#FFFFFF' : '#1A1A1A',
-            border: `1px solid ${active ? TEAL : '#EDEBE8'}`,
+            border: `1px solid ${active ? ACCENT : '#EDEBE8'}`,
             cursor: 'pointer',
             flex: '1 1 auto',
             minWidth: 0,
@@ -146,9 +146,9 @@ const SubjectTabs: React.FC<{
 const ArchitectureCard: React.FC<{ grammar: SubjectMarkingGrammar }> = ({ grammar }) => (
   <section
     className="rounded-2xl"
-    style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '22px 26px' }}
+    style={{ backgroundColor: ACCENT_TINT, border: `1px solid ${ACCENT}33`, padding: '22px 26px' }}
   >
-    <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 8 }}>
+    <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 8 }}>
       The architecture
     </p>
     <p className="font-serif" style={{ fontSize: 16, color: '#1A1A1A', lineHeight: 1.55 }}>
@@ -177,7 +177,7 @@ const RulesList: React.FC<{ rules: SubjectMarkingGrammar['rules'] }> = ({ rules 
           <span
             className="font-serif shrink-0"
             style={{
-              backgroundColor: TEAL,
+              backgroundColor: ACCENT,
               color: '#FFFFFF',
               borderRadius: 999,
               width: 26,
@@ -210,7 +210,7 @@ const WorkedExampleCard: React.FC<{ example: NonNullable<SubjectMarkingGrammar['
     className="rounded-2xl"
     style={{ backgroundColor: '#FFFFFF', border: '1px solid #EDEBE8', padding: '22px 26px' }}
   >
-    <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 12 }}>
+    <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 12 }}>
       Worked example
     </p>
     <div style={{ marginBottom: 14 }}>
@@ -223,9 +223,9 @@ const WorkedExampleCard: React.FC<{ example: NonNullable<SubjectMarkingGrammar['
     </div>
     <div
       className="rounded-xl"
-      style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '14px 16px' }}
+      style={{ backgroundColor: ACCENT_TINT, border: `1px solid ${ACCENT}33`, padding: '14px 16px' }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: TEAL, marginBottom: 4 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: ACCENT, marginBottom: 4 }}>
         Outcome
       </p>
       <p className="font-serif" style={{ fontSize: 14, color: '#1A1A1A', lineHeight: 1.55, fontWeight: 500 }}>

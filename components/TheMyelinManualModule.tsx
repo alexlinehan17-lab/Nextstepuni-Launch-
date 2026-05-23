@@ -14,6 +14,7 @@ import { amberTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { COLORS } from '../design/tokens';
 
 const theme = amberTheme;
 
@@ -30,7 +31,7 @@ const MyelinWrapper = () => {
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             {/* Section chip + title */}
             <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 26, color: '#1a1a1a' }}>The Myelin Wrapper</h4>
                 <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Each time you practice a skill, you add a layer of myelin, making the signal faster.</p>
             </div>
@@ -54,7 +55,7 @@ const MyelinWrapper = () => {
                                 {isNewest ? (
                                     <motion.circle
                                         cx="110" cy="110" r={outerR}
-                                        fill={i % 2 === 0 ? '#2A7D6F' : '#3d9e8f'}
+                                        fill={i % 2 === 0 ? COLORS.accent : COLORS.accentDark}
                                         opacity={opacity}
                                         initial={{ scale: 0.7, opacity: 0 }}
                                         animate={{ scale: 1, opacity }}
@@ -62,7 +63,7 @@ const MyelinWrapper = () => {
                                         style={{ transformOrigin: '110px 110px' }}
                                     />
                                 ) : (
-                                    <circle cx="110" cy="110" r={outerR} fill={i % 2 === 0 ? '#2A7D6F' : '#3d9e8f'} opacity={opacity} />
+                                    <circle cx="110" cy="110" r={outerR} fill={i % 2 === 0 ? COLORS.accent : COLORS.accentDark} opacity={opacity} />
                                 )}
                                 <circle cx="110" cy="110" r={innerR} fill="#f4f0eb" />
                             </g>
@@ -70,11 +71,11 @@ const MyelinWrapper = () => {
                     })}
 
                     {/* Central axon */}
-                    <circle cx="110" cy="110" r={axonR} fill="#e8f5f2" stroke="#2A7D6F" strokeWidth="2" />
+                    <circle cx="110" cy="110" r={axonR} fill={COLORS.accentTint} stroke={COLORS.accent} strokeWidth="2" />
 
                     {/* Speed pulse dot */}
                     {wraps > 0 && (
-                        <circle cx="110" cy={110 - axonR} r="5" fill="#2A7D6F" opacity="0.9"/>
+                        <circle cx="110" cy={110 - axonR} r="5" fill={COLORS.accent} opacity="0.9"/>
                     )}
 
                     {/* Zero state label */}
@@ -89,7 +90,7 @@ const MyelinWrapper = () => {
                 {/* Signal speed stat */}
                 <div className="text-center mt-4 pt-4" style={{ borderTop: '1px solid #e8e0d8' }}>
                     <p style={{ lineHeight: 1 }}>
-                        <span className="font-serif font-bold" style={{ fontSize: 40, color: '#2A7D6F' }}>{speed}</span>
+                        <span className="font-serif font-bold" style={{ fontSize: 40, color: COLORS.accent }}>{speed}</span>
                         <span className="font-sans" style={{ fontSize: 16, color: '#9e9186', marginLeft: 4 }}>m/s</span>
                     </p>
                     <p className="mt-1" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', color: '#9e9186', textTransform: 'uppercase' as const }}>Signal Speed</p>
@@ -103,9 +104,9 @@ const MyelinWrapper = () => {
                     initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
                     className="mt-4 max-w-xs mx-auto"
-                    style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
+                    style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: COLORS.accentTint, borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
                 >
-                    <p className="text-sm italic" style={{ color: '#1a6358' }}>{milestone}</p>
+                    <p className="text-sm italic" style={{ color: COLORS.accentDarkText }}>{milestone}</p>
                 </motion.div>
             )}
 
@@ -115,9 +116,9 @@ const MyelinWrapper = () => {
                     onClick={() => setWraps(w => Math.min(w + 1, maxWraps))}
                     whileTap={{ scale: 0.97 }}
                     className="text-white font-semibold"
-                    style={{ backgroundColor: '#2A7D6F', borderRadius: 100, padding: '14px 32px', fontSize: 15, border: 'none' }}
-                    onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.backgroundColor = '#1a5a4e'; }}
-                    onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.backgroundColor = '#2A7D6F'; }}
+                    style={{ backgroundColor: COLORS.accent, borderRadius: 100, padding: '14px 32px', fontSize: 15, border: 'none' }}
+                    onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.backgroundColor = COLORS.accentDark; }}
+                    onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.backgroundColor = COLORS.accent; }}
                 >
                     Practice Skill
                 </motion.button>

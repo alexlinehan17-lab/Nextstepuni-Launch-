@@ -9,6 +9,7 @@ import { MotionDiv } from './Motion';
 import { Zap, Quote, Sparkles, ArrowRight } from 'lucide-react';
 import { type ModuleTheme } from '../types';
 import { useNavigation } from '../contexts/NavigationContext';
+import { COLORS } from '../design/tokens';
 
 /* ═══════════════════════════════════════════════════════
    Highlight — inline discovery tooltip
@@ -175,20 +176,20 @@ export const MicroCommitment = ({ children, _theme, northStarNudge }: MicroCommi
       className="rounded-2xl relative px-7 py-6 md:px-8 md:py-7"
       style={{
         backgroundColor: '#FFFFFF',
-        border: '2.5px solid #2A7D6F',
-        boxShadow: '4px 4px 0px 0px #1F5F54',
+        border: `2.5px solid ${COLORS.accent}`,
+        boxShadow: `4px 4px 0px 0px ${COLORS.accentDark}`,
         borderRadius: 18,
       }}
-      whileHover={{ x: -2, y: -2, boxShadow: '6px 6px 0px 0px #1F5F54' }}
-      whileTap={{ x: 2, y: 2, boxShadow: '1px 1px 0px 0px #1F5F54' }}
+      whileHover={{ x: -2, y: -2, boxShadow: `6px 6px 0px 0px ${COLORS.accentDark}` }}
+      whileTap={{ x: 2, y: 2, boxShadow: `1px 1px 0px 0px ${COLORS.accentDark}` }}
       transition={{ type: 'spring', stiffness: 400, damping: 25 }}
     >
       <div className="flex items-start gap-4">
-        <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: '#2A7D6F' }}>
+        <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: COLORS.accent }}>
           <Zap size={18} style={{ color: '#fff' }} />
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-[10px] font-bold uppercase tracking-[0.15em] mb-2" style={{ color: '#2A7D6F' }}>
+          <p className="text-[10px] font-bold uppercase tracking-[0.15em] mb-2" style={{ color: COLORS.accent }}>
             Quick Challenge
           </p>
           <div className="text-[15px] leading-relaxed font-sans text-zinc-700 dark:text-zinc-300">
@@ -196,7 +197,7 @@ export const MicroCommitment = ({ children, _theme, northStarNudge }: MicroCommi
           </div>
           {northStarNudge && (
             <p className="text-xs mt-4 pt-3 text-zinc-400 dark:text-zinc-500" style={{ borderTop: '1px solid #E8E4DE' }}>
-              <Zap size={10} className="inline -mt-0.5 mr-1 text-[#2A7D6F]" />
+              <Zap size={10} className="inline -mt-0.5 mr-1" style={{ color: COLORS.accent }} />
               Remember: {northStarNudge}
             </p>
           )}
@@ -256,7 +257,7 @@ export const ToolJumpCard: React.FC<ToolJumpCardProps> = ({ toolId, title, descr
       >
         <div className="flex items-center gap-4">
           <div className="flex-1 min-w-0">
-            <p className="text-[10px] font-bold uppercase tracking-[0.15em] mb-1.5" style={{ color: '#2A7D6F' }}>
+            <p className="text-[10px] font-bold uppercase tracking-[0.15em] mb-1.5" style={{ color: COLORS.accent }}>
               Apply this · Tool
             </p>
             <h4 className="font-serif text-lg sm:text-xl font-semibold text-zinc-900 dark:text-white mb-1">
@@ -268,13 +269,13 @@ export const ToolJumpCard: React.FC<ToolJumpCardProps> = ({ toolId, title, descr
           </div>
           <div
             className="shrink-0 w-11 h-11 rounded-full flex items-center justify-center"
-            style={{ backgroundColor: '#2A7D6F' }}
+            style={{ backgroundColor: COLORS.accent }}
           >
             <ArrowRight size={18} style={{ color: '#fff' }} />
           </div>
         </div>
         {ctaLabel && (
-          <div className="mt-3 inline-flex items-center gap-1 text-xs font-bold tracking-wide" style={{ color: '#2A7D6F' }}>
+          <div className="mt-3 inline-flex items-center gap-1 text-xs font-bold tracking-wide" style={{ color: COLORS.accent }}>
             {ctaLabel}
             <ArrowRight size={12} />
           </div>
@@ -382,18 +383,18 @@ export const ConceptCardGrid = ({ cards, columns = 2, accentNote }: ConceptCardG
           key={card.number}
           className="relative"
           style={{
-            backgroundColor: card.highlight ? '#e8f5f2' : '#FFFFFF',
-            border: card.highlight ? '2px solid #2A7D6F' : '2px solid #1a1a1a',
+            backgroundColor: card.highlight ? COLORS.accentTint : '#FFFFFF',
+            border: card.highlight ? `2px solid ${COLORS.accent}` : '2px solid #1a1a1a',
             borderRadius: 14,
             padding: '18px 20px',
           }}
         >
           {card.highlight && (
-            <span className="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider" style={{ backgroundColor: '#c8e8e0', color: '#1a6358', borderRadius: 20, padding: '3px 8px' }}>
+            <span className="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, borderRadius: 20, padding: '3px 8px' }}>
               Key Lever
             </span>
           )}
-          <div className="w-9 h-9 rounded-full flex items-center justify-center mb-3" style={{ backgroundColor: '#2A7D6F' }}>
+          <div className="w-9 h-9 rounded-full flex items-center justify-center mb-3" style={{ backgroundColor: COLORS.accent }}>
             <span className="font-serif font-bold text-base text-white">{card.number}</span>
           </div>
           <p className="font-serif font-bold text-base mb-1" style={{ color: '#1a1a1a' }}>{card.term}</p>
@@ -402,8 +403,8 @@ export const ConceptCardGrid = ({ cards, columns = 2, accentNote }: ConceptCardG
       ))}
     </div>
     {accentNote && (
-      <div className="mt-3" style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf7', padding: '12px 16px', borderRadius: '0 10px 10px 0' }}>
-        <p className="text-[13px] italic" style={{ color: '#1a6358' }}>{accentNote}</p>
+      <div className="mt-3" style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: COLORS.accentTint, padding: '12px 16px', borderRadius: '0 10px 10px 0' }}>
+        <p className="text-[13px] italic" style={{ color: COLORS.accentDarkText }}>{accentNote}</p>
       </div>
     )}
   </div>
@@ -428,8 +429,8 @@ export const GlossaryGrid: React.FC<GlossaryGridProps> = ({ items }) => (
   <div className="my-8 not-prose" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
     {items.map((item, i) => (
       <div key={i} style={{
-        background: item.highlight ? '#e8f5f2' : 'white',
-        border: item.highlight ? '2px solid #2A7D6F' : '2px solid #1a1a1a',
+        background: item.highlight ? COLORS.accentTint : 'white',
+        border: item.highlight ? `2px solid ${COLORS.accent}` : '2px solid #1a1a1a',
         borderRadius: 14,
         padding: '16px 20px',
         display: 'flex',
@@ -437,7 +438,7 @@ export const GlossaryGrid: React.FC<GlossaryGridProps> = ({ items }) => (
         gap: 16,
       }}>
         <div style={{
-          background: item.highlight ? '#2A7D6F' : '#f0ece6',
+          background: item.highlight ? COLORS.accent : '#f0ece6',
           border: item.highlight ? 'none' : '1.5px solid #d0cdc8',
           borderRadius: 10,
           padding: '6px 12px',
@@ -451,7 +452,7 @@ export const GlossaryGrid: React.FC<GlossaryGridProps> = ({ items }) => (
           &ldquo;{item.term}&rdquo;
         </div>
         <div style={{ flex: 1 }}>
-          <div style={{ fontSize: 13, fontWeight: 700, color: item.highlight ? '#1a6358' : '#2A7D6F', marginBottom: 4 }}>
+          <div style={{ fontSize: 13, fontWeight: 700, color: item.highlight ? COLORS.accentDarkText : COLORS.accent, marginBottom: 4 }}>
             = {item.definition}
           </div>
           <div style={{ fontSize: 14, color: '#5a5550', lineHeight: 1.5 }}>

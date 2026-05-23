@@ -6,8 +6,8 @@
 import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
 import { auth, db } from '../firebase';
 import { onAuthStateChanged, signOut, type User as FirebaseUser } from 'firebase/auth';
-import { doc, getDoc } from 'firebase/firestore';
-import { type SessionUser } from '../utils/authUtils';
+import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { type SessionUser, yearGroupToCurriculumLevel, type CurriculumLevel } from '../utils/authUtils';
 import { type UserProgress, type NorthStar } from '../types';
 import { type StudentSubjectProfile } from '../components/subjectData';
 import { generateAutoNotifications } from '../components/gc/gcNotifications';
@@ -116,6 +116,25 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
           if (userDoc.exists()) {
             const userData = userDoc.data();
+
+            // ─── Junior Cycle Phase 1: backfill curriculumLevel ──────────
+            // Existing users (created before Phase 1) lack the
+            // `curriculumLevel` field. Compute it from `yearGroup` if
+            // present, default to 'senior' otherwise (everyone pre-JC was
+            // by definition senior). Write back to Firestore so the next
+            // session reads it directly. Idempotent.
+            let curriculumLevel: CurriculumLevel | undefined = userData.curriculumLevel;
+            if (!curriculumLevel) {
+              curriculumLevel = userData.yearGroup
+                ? yearGroupToCurriculumLevel(userData.yearGroup)
+                : 'senior';
+              setDoc(
+                doc(db, 'users', firebaseUser.uid),
+                { curriculumLevel },
+                { merge: true },
+              ).catch(err => console.error('Failed to backfill curriculumLevel:', err));
+            }
+
             setUser({
               uid: firebaseUser.uid,
               name: userData.name,
@@ -124,6 +143,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
               role: userData.role,
               school: userData.school,
               yearGroup: userData.yearGroup,
+              curriculumLevel,
               needsPasswordChange: userData.needsPasswordChange || false,
             });
 

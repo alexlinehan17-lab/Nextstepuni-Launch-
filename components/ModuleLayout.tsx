@@ -6,10 +6,11 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ArrowRight, CheckCircle2, Lock, List, X, Palette, Sun, Moon } from 'lucide-react';
-import { type ModuleProgress, type SectionDefinition, type ModuleTheme, type AccentThemeId, type CardStyleId } from '../types';
+import { type ModuleProgress, type SectionDefinition, type ModuleTheme, type CardStyleId } from '../types';
 import { ActivityRing } from './ModuleShared';
 import { useSettingsContext } from '../contexts/SettingsContext';
-import { ACCENT_THEME_LIST, CARD_STYLES } from '../themeData';
+import { CARD_STYLES } from '../themeData';
+import { COLORS } from '../design/tokens';
 import ModuleCompleteScreen from './ModuleCompleteScreen';
 
 /* ── Confetti celebration overlay ── */
@@ -259,15 +260,6 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
                     <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300">{settingsCtx.settings.darkMode ? 'Light Mode' : 'Dark Mode'}</span>
                     {settingsCtx.settings.darkMode ? <Sun size={14} className="text-amber-400" /> : <Moon size={14} className="text-zinc-600" />}
                   </button>
-                  {/* Accent colors */}
-                  <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-1.5">Accent</p>
-                  <div className="flex flex-wrap gap-1.5 mb-3">
-                    {ACCENT_THEME_LIST.filter(t => t.price === 0 || settingsCtx.unlockedThemes.includes(t.id)).map(t => (
-                      <button key={t.id} onClick={() => settingsCtx.updateSetting('accentTheme', t.id as AccentThemeId)} title={t.name} className={`p-1 rounded-lg transition-all ${settingsCtx.settings.accentTheme === t.id ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]' : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'}`}>
-                        <div className="w-5 h-5 rounded-full border border-white dark:border-zinc-700 shadow-sm" style={{ backgroundColor: t.hex }} />
-                      </button>
-                    ))}
-                  </div>
                   {/* Card styles */}
                   <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-1.5">Card Style</p>
                   <div className="space-y-1">
@@ -392,7 +384,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
         isOpen={showCelebration}
         moduleTitle={moduleTitle}
         moduleSubtitle={moduleSubtitle}
-        categoryColor={categoryColor || '#2A7D6F'}
+        categoryColor={categoryColor || COLORS.accent}
         modulesCompleted={modulesCompleted}
         totalModules={totalModules}
         sectionsCount={sections.length}

@@ -12,6 +12,7 @@ import { skyTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { COLORS } from '../design/tokens';
 
 const theme = skyTheme;
 
@@ -27,9 +28,9 @@ const CognitionShiftVisualizer = () => {
     const amygPct = Math.max(5, Math.round((stress / 100) * 100));
 
     const stages = [
-        { min: 0, max: 15, label: 'Calm', desc: 'Too relaxed. You\'re chilled out but not switched on — not enough energy to perform.', color: '#2A7D6F', zone: 'low' as const },
-        { min: 15, max: 35, label: 'Focused', desc: 'A bit of stress is sharpening you up. Your thinking brain is fully in charge and your memory is working well.', color: '#2A7D6F', zone: 'good' as const },
-        { min: 35, max: 55, label: 'Optimal', desc: 'The sweet spot. Just the right amount of adrenaline — you\'re alert, fast, and accurate.', color: '#2A7D6F', zone: 'good' as const },
+        { min: 0, max: 15, label: 'Calm', desc: 'Too relaxed. You\'re chilled out but not switched on — not enough energy to perform.', color: COLORS.success, zone: 'low' as const },
+        { min: 15, max: 35, label: 'Focused', desc: 'A bit of stress is sharpening you up. Your thinking brain is fully in charge and your memory is working well.', color: COLORS.success, zone: 'good' as const },
+        { min: 35, max: 55, label: 'Optimal', desc: 'The sweet spot. Just the right amount of adrenaline — you\'re alert, fast, and accurate.', color: COLORS.success, zone: 'good' as const },
         { min: 55, max: 72, label: 'Anxious', desc: 'Stress is tipping over. Your focus is narrowing. You re-read questions without taking them in.', color: '#9e9186', zone: 'past' as const },
         { min: 72, max: 88, label: 'Panic', desc: 'Your alarm brain is taking over. Heart racing, shallow breathing. Your thinking brain is losing control.', color: '#E85D75', zone: 'danger' as const },
         { min: 88, max: 101, label: 'Going Blank', desc: 'Full shutdown. You stare at the page and nothing comes. Your thinking brain has gone offline.', color: '#E85D75', zone: 'danger' as const },
@@ -66,7 +67,7 @@ const CognitionShiftVisualizer = () => {
     const dotY = toY(perf);
 
     const calloutStyle = stage.zone === 'good' || stage.zone === 'low'
-      ? { borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', iconBg: '#e8f5f2', iconColor: '#2A7D6F', labelColor: '#1a6358', textColor: '#5a5550' }
+      ? { borderLeft: `3px solid ${COLORS.success}`, backgroundColor: COLORS.successTint, iconBg: COLORS.successTint, iconColor: COLORS.success, labelColor: COLORS.successDarkText, textColor: '#5a5550' }
       : stage.zone === 'past'
       ? { borderLeft: '3px solid #9e9186', backgroundColor: '#FFFFFF', iconBg: '#f0ece6', iconColor: '#9e9186', labelColor: '#5a5550', textColor: '#5a5550' }
       : { borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', iconBg: '#fde4e4', iconColor: '#E85D75', labelColor: '#b33030', textColor: '#5a5550' };
@@ -77,7 +78,7 @@ const CognitionShiftVisualizer = () => {
     return (
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <div className="text-center mb-5">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Hot vs. Cold Cognition</h4>
                 <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Drag the slider to see how stress affects your brain during an exam.</p>
             </div>
@@ -93,22 +94,22 @@ const CognitionShiftVisualizer = () => {
                     <line x1={padL} y1={padT} x2={padL} y2={toY(0)} stroke="#d0cdc8" strokeWidth="1.5" />
 
                     {/* Optimal zone */}
-                    <rect x={toX(0.30)} y={padT} width={toX(0.60) - toX(0.30)} height={chartH} fill="rgba(42,125,111,0.06)" rx="4" />
-                    <rect x={toX(0.30)} y={padT} width={toX(0.60) - toX(0.30)} height={chartH} fill="none" stroke="rgba(42,125,111,0.2)" strokeWidth="1" strokeDasharray="4 3" rx="4" />
-                    <text x={(toX(0.30) + toX(0.60)) / 2} y={toY(0) - 4} fontSize="10" fill="#1a6358" textAnchor="middle" fontWeight="700" letterSpacing="0.08em">OPTIMAL ZONE</text>
+                    <rect x={toX(0.30)} y={padT} width={toX(0.60) - toX(0.30)} height={chartH} fill="rgba(58,141,95,0.06)" rx="4" />
+                    <rect x={toX(0.30)} y={padT} width={toX(0.60) - toX(0.30)} height={chartH} fill="none" stroke="rgba(58,141,95,0.2)" strokeWidth="1" strokeDasharray="4 3" rx="4" />
+                    <text x={(toX(0.30) + toX(0.60)) / 2} y={toY(0) - 4} fontSize="10" fill={COLORS.successDarkText} textAnchor="middle" fontWeight="700" letterSpacing="0.08em">OPTIMAL ZONE</text>
 
                     {/* Area fill — two-tone */}
                     <clipPath id="left-clip"><rect x={padL} y={padT} width={toX(0.45) - padL} height={chartH} /></clipPath>
                     <clipPath id="right-clip"><rect x={toX(0.45)} y={padT} width={W - padR - toX(0.45)} height={chartH} /></clipPath>
-                    <path d={areaPath} fill="rgba(42,125,111,0.08)" clipPath="url(#left-clip)" />
+                    <path d={areaPath} fill="rgba(58,141,95,0.08)" clipPath="url(#left-clip)" />
                     <path d={areaPath} fill="rgba(232,93,117,0.07)" clipPath="url(#right-clip)" />
 
                     {/* Curve — two-tone via clip paths */}
-                    <path d={curvePath} fill="none" stroke="#2A7D6F" strokeWidth="3" strokeLinecap="round" clipPath="url(#left-clip)" />
+                    <path d={curvePath} fill="none" stroke={COLORS.success} strokeWidth="3" strokeLinecap="round" clipPath="url(#left-clip)" />
                     <path d={curvePath} fill="none" stroke="#E85D75" strokeWidth="3" strokeLinecap="round" clipPath="url(#right-clip)" />
 
                     {/* Tracking line */}
-                    <line x1={dotX} x2={dotX} y1={dotY} y2={toY(0)} stroke={stress <= 55 ? 'rgba(42,125,111,0.3)' : 'rgba(232,93,117,0.3)'} strokeWidth="1" strokeDasharray="4 3" />
+                    <line x1={dotX} x2={dotX} y1={dotY} y2={toY(0)} stroke={stress <= 55 ? 'rgba(58,141,95,0.3)' : 'rgba(232,93,117,0.3)'} strokeWidth="1" strokeDasharray="4 3" />
 
                     {/* Dot */}
                     <circle cx={dotX} cy={dotY} r="6" fill={stage.color} stroke="white" strokeWidth="2.5" />
@@ -126,7 +127,7 @@ const CognitionShiftVisualizer = () => {
 
                 {/* Slider */}
                 <div className="px-2">
-                    <input type="range" min="0" max="100" value={stress} onChange={e => setStress(Number(e.target.value))} className="chunky-slider chunky-slider-teal" />
+                    <input type="range" min="0" max="100" value={stress} onChange={e => setStress(Number(e.target.value))} className="chunky-slider chunky-slider-accent" />
                 </div>
             </div>
 
@@ -152,11 +153,11 @@ const CognitionShiftVisualizer = () => {
             <div className="grid grid-cols-2 gap-3 mt-4">
                 <div className="bg-white dark:bg-zinc-900" style={{ border: '1.5px solid #d0cdc8', borderRadius: 12, padding: 12 }}>
                     <div className="flex items-center justify-between mb-1.5">
-                        <span className="text-xs font-bold flex items-center gap-1" style={{ color: '#2A7D6F' }}><Brain size={12} /> Thinking Brain</span>
+                        <span className="text-xs font-bold flex items-center gap-1" style={{ color: COLORS.success }}><Brain size={12} /> Thinking Brain</span>
                         <span className="text-xs font-bold" style={{ color: '#9e9186' }}>{pfcPct}%</span>
                     </div>
                     <div style={{ height: 6, backgroundColor: '#e0dbd4', borderRadius: 3 }}>
-                        <motion.div style={{ height: '100%', backgroundColor: '#2A7D6F', borderRadius: 3 }} animate={{ width: `${pfcPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }} />
+                        <motion.div style={{ height: '100%', backgroundColor: COLORS.success, borderRadius: 3 }} animate={{ width: `${pfcPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }} />
                     </div>
                     <p className="text-xs mt-1" style={{ color: '#9e9186' }}>Logic, planning, working memory</p>
                 </div>
@@ -212,10 +213,10 @@ const PhysiologicalSighGuide = () => {
 
     const phaseConfig = {
         idle: { label: '', instruction: '', color: '#d0cdc8', scale: 0.45 },
-        inhale1: { label: 'Inhale', instruction: 'Breathe in through your nose', color: '#2A7D6F', scale: 0.45 + progress * 0.35 },
-        inhale2: { label: 'Inhale', instruction: 'Quick second sip of air', color: '#2A7D6F', scale: 0.8 + progress * 0.2 },
-        exhale: { label: 'Exhale', instruction: 'Slow exhale through your mouth', color: '#2A7D6F', scale: 1.0 - progress * 0.55 },
-        done: { label: '', instruction: '', color: '#2A7D6F', scale: 0.45 },
+        inhale1: { label: 'Inhale', instruction: 'Breathe in through your nose', color: COLORS.success, scale: 0.45 + progress * 0.35 },
+        inhale2: { label: 'Inhale', instruction: 'Quick second sip of air', color: COLORS.success, scale: 0.8 + progress * 0.2 },
+        exhale: { label: 'Exhale', instruction: 'Slow exhale through your mouth', color: COLORS.success, scale: 1.0 - progress * 0.55 },
+        done: { label: '', instruction: '', color: COLORS.success, scale: 0.45 },
     };
     const cfg = phaseConfig[phase];
 
@@ -231,7 +232,7 @@ const PhysiologicalSighGuide = () => {
     return (
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <div className="text-center mb-6">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Breathing Technique</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Breathing Technique</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>The Physiological Sigh</h4>
                 <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Your emergency brake for acute panic. Two quick inhales, one long exhale.</p>
             </div>
@@ -242,27 +243,27 @@ const PhysiologicalSighGuide = () => {
                     <svg viewBox="0 0 200 200" className="w-full h-full">
                         <circle cx={cx} cy={cy} r="44" fill="none" stroke="#e0dbd4" strokeWidth="8" />
                         {isActive && (
-                            <circle cx={cx} cy={cy} r="44" fill="none" stroke="#2A7D6F" strokeWidth="8" strokeLinecap="round" strokeDasharray={circumference} strokeDashoffset={circumference * (1 - progress)} transform={`rotate(-90 ${cx} ${cy})`} />
+                            <circle cx={cx} cy={cy} r="44" fill="none" stroke={COLORS.success} strokeWidth="8" strokeLinecap="round" strokeDasharray={circumference} strokeDashoffset={circumference * (1 - progress)} transform={`rotate(-90 ${cx} ${cy})`} />
                         )}
                         {phase === 'done' && (
-                            <circle cx={cx} cy={cy} r="44" fill="none" stroke="#2A7D6F" strokeWidth="8" strokeDasharray={circumference} strokeDashoffset={0} transform={`rotate(-90 ${cx} ${cy})`} />
+                            <circle cx={cx} cy={cy} r="44" fill="none" stroke={COLORS.success} strokeWidth="8" strokeDasharray={circumference} strokeDashoffset={0} transform={`rotate(-90 ${cx} ${cy})`} />
                         )}
-                        <motion.circle cx={cx} cy={cy} fill="#2A7D6F" fillOpacity="0.1" animate={{ r }} transition={{ type: 'tween', ease: 'easeInOut', duration: 0.15 }} />
-                        <motion.circle cx={cx} cy={cy} fill="#2A7D6F" fillOpacity="0.05" animate={{ r: r + 8 }} transition={{ type: 'tween', ease: 'easeInOut', duration: 0.15 }} />
+                        <motion.circle cx={cx} cy={cy} fill={COLORS.success} fillOpacity="0.1" animate={{ r }} transition={{ type: 'tween', ease: 'easeInOut', duration: 0.15 }} />
+                        <motion.circle cx={cx} cy={cy} fill={COLORS.success} fillOpacity="0.05" animate={{ r: r + 8 }} transition={{ type: 'tween', ease: 'easeInOut', duration: 0.15 }} />
                     </svg>
                     <div className="absolute inset-0 flex flex-col items-center justify-center">
                         {phase === 'idle' && (
-                            <button onClick={start} className="text-white font-semibold" style={{ backgroundColor: '#2A7D6F', borderRadius: 20, padding: '12px 24px', fontSize: 14 }}>Begin</button>
+                            <button onClick={start} className="text-white font-semibold" style={{ backgroundColor: COLORS.accent, borderRadius: 20, padding: '12px 24px', fontSize: 14 }}>Begin</button>
                         )}
                         {phase === 'done' && (
                             <div className="text-center">
-                                <p className="font-serif font-semibold mb-2" style={{ fontSize: 16, color: '#1a6358' }}>Complete</p>
+                                <p className="font-serif font-semibold mb-2" style={{ fontSize: 16, color: COLORS.successDarkText }}>Complete</p>
                                 <button onClick={reset} className="font-medium" style={{ fontSize: 13, color: '#9e9186' }}>Again</button>
                             </div>
                         )}
                         {isActive && (
                             <div className="text-center">
-                                <p className="font-serif font-semibold" style={{ fontSize: 24, color: '#2A7D6F' }}>{cfg.label}</p>
+                                <p className="font-serif font-semibold" style={{ fontSize: 24, color: COLORS.success }}>{cfg.label}</p>
                                 <p className="mt-0.5 max-w-[120px]" style={{ fontSize: 14, color: '#7a7068' }}>{cfg.instruction}</p>
                             </div>
                         )}
@@ -272,7 +273,7 @@ const PhysiologicalSighGuide = () => {
                 {/* Cycle dots */}
                 <div className="flex items-center gap-2 mb-3">
                     {Array.from({ length: totalCycles }).map((_, i) => (
-                        <div key={i} style={{ width: i === cycle && running ? 12 : 10, height: i === cycle && running ? 12 : 10, borderRadius: '50%', backgroundColor: i < cycle || phase === 'done' ? '#2A7D6F' : i === cycle && running ? '#2A7D6F' : '#d0cdc8', transition: 'all 0.3s' }} />
+                        <div key={i} style={{ width: i === cycle && running ? 12 : 10, height: i === cycle && running ? 12 : 10, borderRadius: '50%', backgroundColor: i < cycle || phase === 'done' ? COLORS.success : i === cycle && running ? COLORS.success : '#d0cdc8', transition: 'all 0.3s' }} />
                     ))}
                     <span style={{ fontSize: 12, color: '#9e9186', marginLeft: 4 }}>{phase === 'done' ? '3/3' : running ? `${cycle + 1}/3` : '0/3'}</span>
                 </div>
@@ -280,11 +281,11 @@ const PhysiologicalSighGuide = () => {
                 {/* Phase labels */}
                 {running && phase !== 'done' && (
                     <div className="flex items-center gap-1.5 text-xs font-bold">
-                        <span style={{ color: phaseIdx >= 0 ? '#2A7D6F' : '#d0cdc8', fontWeight: phaseIdx === 0 ? 700 : 600 }}>Inhale 1</span>
+                        <span style={{ color: phaseIdx >= 0 ? COLORS.success : '#d0cdc8', fontWeight: phaseIdx === 0 ? 700 : 600 }}>Inhale 1</span>
                         <span style={{ color: '#d0cdc8' }}>→</span>
-                        <span style={{ color: phaseIdx >= 1 ? '#2A7D6F' : '#d0cdc8', fontWeight: phaseIdx === 1 ? 700 : 600 }}>Inhale 2</span>
+                        <span style={{ color: phaseIdx >= 1 ? COLORS.success : '#d0cdc8', fontWeight: phaseIdx === 1 ? 700 : 600 }}>Inhale 2</span>
                         <span style={{ color: '#d0cdc8' }}>→</span>
-                        <span style={{ color: phaseIdx >= 2 ? '#2A7D6F' : '#d0cdc8', fontWeight: phaseIdx === 2 ? 700 : 600 }}>Exhale</span>
+                        <span style={{ color: phaseIdx >= 2 ? COLORS.success : '#d0cdc8', fontWeight: phaseIdx === 2 ? 700 : 600 }}>Exhale</span>
                     </div>
                 )}
 
@@ -298,12 +299,12 @@ const PhysiologicalSighGuide = () => {
                         const isStepActive = phase === step.key;
                         return (
                             <div key={step.key} className="bg-white dark:bg-zinc-900" style={{
-                                border: isStepActive ? '2px solid #2A7D6F' : '1.5px solid #d0cdc8',
+                                border: isStepActive ? `2px solid ${COLORS.success}` : '1.5px solid #d0cdc8',
                                 borderRadius: 14,
                                 padding: '12px 8px',
-                                backgroundColor: isStepActive ? '#e8f5f2' : '#FFFFFF',
+                                backgroundColor: isStepActive ? COLORS.successTint : '#FFFFFF',
                             }}>
-                                <p className="font-serif font-semibold" style={{ fontSize: 15, color: isStepActive ? '#1a6358' : '#9e9186' }}>{step.label}</p>
+                                <p className="font-serif font-semibold" style={{ fontSize: 15, color: isStepActive ? COLORS.successDarkText : '#9e9186' }}>{step.label}</p>
                                 <p style={{ fontSize: 13, color: isStepActive ? '#5a5550' : '#b0a898', marginTop: 2 }}>{step.desc}</p>
                             </div>
                         );
@@ -458,7 +459,7 @@ const CrisisScenarioTrainer = () => {
     const optimalCount = results.filter(r => r === 'good').length;
 
     const consequenceStyle = (quality: 'bad' | 'ok' | 'good') => {
-        if (quality === 'good') return { bg: '#f0faf8', border: '#2A7D6F', text: '#1a6358', label: '#1a6358' };
+        if (quality === 'good') return { bg: COLORS.successTint, border: COLORS.success, text: COLORS.successDarkText, label: COLORS.successDarkText };
         if (quality === 'ok') return { bg: '#f4f0eb', border: '#9e9186', text: '#5a5550', label: '#5a5550' };
         return { bg: '#fde4e4', border: '#E85D75', text: '#5a5550', label: '#b33030' };
     };
@@ -466,7 +467,7 @@ const CrisisScenarioTrainer = () => {
     return (
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Exam Skills Trainer</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Skills Trainer</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Crisis Scenario Trainer</h4>
                 <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Your brain will default to its training. Build the right instincts now.</p>
             </div>
@@ -479,7 +480,7 @@ const CrisisScenarioTrainer = () => {
                             <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', textTransform: 'uppercase' as const }}>Scenario {scenarioIndex + 1}/4</span>
                             <div className="flex gap-1.5">
                                 {crisisScenarios.map((_, i) => (
-                                    <div key={i} style={{ width: 10, height: 10, borderRadius: '50%', backgroundColor: i <= scenarioIndex ? '#2A7D6F' : '#d0cdc8', transition: 'background-color 0.3s' }} />
+                                    <div key={i} style={{ width: 10, height: 10, borderRadius: '50%', backgroundColor: i <= scenarioIndex ? COLORS.success : '#d0cdc8', transition: 'background-color 0.3s' }} />
                                 ))}
                             </div>
                         </div>
@@ -508,7 +509,7 @@ const CrisisScenarioTrainer = () => {
                                             isRevealed
                                                 ? isChosen
                                                     ? response.quality === 'good'
-                                                        ? { backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14 }
+                                                        ? { backgroundColor: COLORS.successTint, border: `2px solid ${COLORS.success}`, borderRadius: 14 }
                                                         : response.quality === 'bad'
                                                             ? { backgroundColor: '#fde4e4', border: '2px solid #E85D75', borderLeft: '4px solid #E85D75', borderRadius: 14 }
                                                             : { backgroundColor: '#f4f0eb', border: '2px solid #9e9186', borderRadius: 14 }
@@ -518,7 +519,7 @@ const CrisisScenarioTrainer = () => {
                                             <div className="flex items-start gap-3">
                                                 <span className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold mt-0.5" style={{
                                                     backgroundColor: isRevealed && isChosen
-                                                        ? response.quality === 'good' ? '#2A7D6F' : response.quality === 'bad' ? '#E85D75' : '#9e9186'
+                                                        ? response.quality === 'good' ? COLORS.success : response.quality === 'bad' ? '#E85D75' : '#9e9186'
                                                         : '#f0ece6',
                                                     color: isRevealed && isChosen ? '#FFFFFF' : '#9e9186',
                                                 }}>
@@ -546,7 +547,7 @@ const CrisisScenarioTrainer = () => {
                         <AnimatePresence>
                             {chosenIndex !== null && (
                                 <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.25 }} className="flex justify-end mt-6">
-                                    <button onClick={handleNext} style={{ backgroundColor: '#2A7D6F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>
+                                    <button onClick={handleNext} style={{ backgroundColor: COLORS.accent, borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>
                                         {scenarioIndex + 1 >= crisisScenarios.length ? 'See Results' : 'Next Scenario'}
                                     </button>
                                 </MotionDiv>
@@ -556,20 +557,20 @@ const CrisisScenarioTrainer = () => {
                 ) : (
                     <MotionDiv key="results" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -16 }} transition={{ duration: 0.35 }} className="text-center">
                         <div className="mb-6">
-                            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4" style={{ backgroundColor: '#e8f5f2' }}>
-                                <span className="font-serif font-bold" style={{ fontSize: 28, color: '#2A7D6F' }}>{optimalCount}/4</span>
+                            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4" style={{ backgroundColor: COLORS.successTint }}>
+                                <span className="font-serif font-bold" style={{ fontSize: 28, color: COLORS.success }}>{optimalCount}/4</span>
                             </div>
                             <p className="font-serif font-semibold text-lg mb-1" style={{ color: '#1a1a1a' }}>{optimalCount}/4 optimal responses</p>
                         </div>
 
                         <div className="mb-6" style={
                             optimalCount === 4
-                                ? { borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '16px 20px', textAlign: 'left' }
+                                ? { borderLeft: `3px solid ${COLORS.success}`, backgroundColor: COLORS.successTint, borderRadius: '0 10px 10px 0', padding: '16px 20px', textAlign: 'left' }
                                 : optimalCount >= 2
                                     ? { borderLeft: '3px solid #9e9186', backgroundColor: '#f4f0eb', borderRadius: '0 10px 10px 0', padding: '16px 20px', textAlign: 'left' }
                                     : { borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 10px 10px 0', padding: '16px 20px', textAlign: 'left' }
                         }>
-                            <p className="text-sm leading-relaxed" style={{ color: optimalCount === 4 ? '#1a6358' : optimalCount >= 2 ? '#5a5550' : '#b33030' }}>
+                            <p className="text-sm leading-relaxed" style={{ color: optimalCount === 4 ? COLORS.successDarkText : optimalCount >= 2 ? '#5a5550' : '#b33030' }}>
                                 {optimalCount === 4 ? "You\u2019ve built exam-crisis muscle memory. When panic hits, your training will take over." : optimalCount >= 2 ? "Good instincts, but some panic responses slipped through. Review the scenarios where you chose poorly." : "Under pressure, your brain defaulted to panic. That\u2019s exactly why we practice. Run through these again."}
                             </p>
                         </div>
@@ -577,13 +578,13 @@ const CrisisScenarioTrainer = () => {
                         <div className="flex justify-center gap-2 mb-6">
                             {results.map((r, i) => (
                                 <div key={i} className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold" style={{
-                                    backgroundColor: r === 'good' ? '#2A7D6F' : r === 'ok' ? '#9e9186' : '#E85D75',
+                                    backgroundColor: r === 'good' ? COLORS.success : r === 'ok' ? '#9e9186' : '#E85D75',
                                     color: '#FFFFFF',
                                 }}>{i + 1}</div>
                             ))}
                         </div>
 
-                        <button onClick={handlePlayAgain} style={{ backgroundColor: '#2A7D6F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Play Again</button>
+                        <button onClick={handlePlayAgain} style={{ backgroundColor: COLORS.accent, borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Play Again</button>
                     </MotionDiv>
                 )}
             </AnimatePresence>

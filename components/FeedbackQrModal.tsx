@@ -11,7 +11,7 @@ import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 
-const TEAL = '#2A7D6F';
+const TEAL = '#F26B1F';
 const INK = '#1a1a1a';
 
 interface Props {

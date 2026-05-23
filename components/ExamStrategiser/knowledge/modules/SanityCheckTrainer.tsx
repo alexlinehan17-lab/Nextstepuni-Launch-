@@ -31,11 +31,9 @@ import {
   type SanityCandidate,
   type SanityCheck,
 } from '../../../../types/knowledge';
+import { ACCENT, ACCENT_DARK, ACCENT_TINT } from '../../colors';
 
-const TEAL = '#2A7D6F';
-const TEAL_DARK = '#1a5a4e';
 const INK = '#1a1a1a';
-const CREAM = '#F0FAF8';
 const WARN = '#A8746E';
 
 const CHECK_LABELS: Record<SanityCheck, string> = {
@@ -46,8 +44,8 @@ const CHECK_LABELS: Record<SanityCheck, string> = {
 };
 
 const CHECK_COLOURS: Record<SanityCheck, string> = {
-  'order-of-magnitude': TEAL,
-  'units': TEAL_DARK,
+  'order-of-magnitude': ACCENT,
+  'units': ACCENT_DARK,
   'sign': INK,
   'substitute-back': WARN,
 };
@@ -276,7 +274,7 @@ const ProgressBar: React.FC<{ idx: number; total: number }> = ({ idx, total }) =
         <motion.div
           animate={{ width: `${pct}%` }}
           transition={{ duration: 0.4 }}
-          style={{ height: '100%', backgroundColor: TEAL }}
+          style={{ height: '100%', backgroundColor: ACCENT }}
         />
       </div>
       <span className="font-sans" style={{ fontSize: 11, color: '#78716C', whiteSpace: 'nowrap' }}>
@@ -303,9 +301,9 @@ const QuestionFrame: React.FC<{ question: SanityCheckQuestion; idx: number; chil
           fontWeight: 700,
           textTransform: 'uppercase',
           letterSpacing: 0.5,
-          color: TEAL,
-          backgroundColor: `${TEAL}15`,
-          border: `1px solid ${TEAL}66`,
+          color: ACCENT,
+          backgroundColor: `${ACCENT}15`,
+          border: `1px solid ${ACCENT}66`,
           borderRadius: 999,
           padding: '3px 10px',
         }}
@@ -367,8 +365,8 @@ const CandidateCard: React.FC<{
   let outerBg = '#FFFFFF';
 
   if (correctTagged) {
-    outerBorder = `2px solid ${TEAL}`;
-    outerBg = `${TEAL}10`;
+    outerBorder = `2px solid ${ACCENT}`;
+    outerBg = `${ACCENT}10`;
   } else if (absurdResolved) {
     const c = CHECK_COLOURS[verdict.check];
     outerBorder = `2px solid ${c}`;
@@ -444,9 +442,9 @@ const CandidateCard: React.FC<{
               onClick={onTagAbsurd}
               className="font-sans flex-1 rounded-full"
               style={{
-                backgroundColor: TEAL,
+                backgroundColor: ACCENT,
                 color: '#FFFFFF',
-                border: `1px solid ${TEAL}`,
+                border: `1px solid ${ACCENT}`,
                 padding: '8px 14px',
                 fontSize: 12,
                 fontWeight: 600,
@@ -571,13 +569,13 @@ const ResolvedNote: React.FC<{
   colour?: string;
 }> = ({ tone, headline, detail, colour }) => {
   const tint =
-    tone === 'ok' ? `${TEAL}10` :
+    tone === 'ok' ? `${ACCENT}10` :
     tone === 'miss' ? `${WARN}15` :
     `${colour}15`;
   const accent =
-    tone === 'ok' ? TEAL :
+    tone === 'ok' ? ACCENT :
     tone === 'miss' ? WARN :
-    colour || TEAL;
+    colour || ACCENT;
   return (
     <motion.div
       initial={{ opacity: 0, y: 6 }}
@@ -659,9 +657,9 @@ const ResolvedFooter: React.FC<{ onAdvance: () => void; isLast: boolean }> = ({ 
       onClick={onAdvance}
       className="font-sans rounded-full"
       style={{
-        backgroundColor: TEAL,
+        backgroundColor: ACCENT,
         color: '#FFFFFF',
-        border: `1px solid ${TEAL}`,
+        border: `1px solid ${ACCENT}`,
         padding: '11px 24px',
         fontSize: 13,
         fontWeight: 600,
@@ -687,7 +685,7 @@ const CheckLegend: React.FC = () => {
   return (
     <section
       className="rounded-2xl"
-      style={{ backgroundColor: CREAM, border: '1.5px solid #d0cdc8', padding: '18px 22px' }}
+      style={{ backgroundColor: ACCENT_TINT, border: '1.5px solid #d0cdc8', padding: '18px 22px' }}
     >
       <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: '#9e9186', marginBottom: 10 }}>
         The four checks
@@ -788,9 +786,9 @@ const SummaryReport: React.FC<{
   return (
     <section
       className="rounded-2xl"
-      style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '28px 30px 26px' }}
+      style={{ backgroundColor: ACCENT_TINT, border: `1px solid ${ACCENT}33`, padding: '28px 30px 26px' }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
         Your checks-neglected report
       </p>
       <h2 className="font-serif" style={{ fontSize: 26, fontWeight: 600, color: INK, lineHeight: 1.2, marginTop: 6 }}>
@@ -839,9 +837,9 @@ const SummaryReport: React.FC<{
           onClick={onRestart}
           className="font-sans rounded-full"
           style={{
-            backgroundColor: TEAL,
+            backgroundColor: ACCENT,
             color: '#FFFFFF',
-            border: `1px solid ${TEAL}`,
+            border: `1px solid ${ACCENT}`,
             padding: '10px 22px',
             fontSize: 13,
             fontWeight: 600,
@@ -893,7 +891,7 @@ const CheckBar: React.FC<{ entry: { check: SanityCheck; total: number; correctCo
 
 const Insight: React.FC<{ label: string; body: string; highlight?: boolean }> = ({ label, body, highlight }) => (
   <div>
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: highlight ? TEAL : '#A8A29E' }}>
+    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: highlight ? ACCENT : '#A8A29E' }}>
       {label}
     </p>
     <p className="font-sans" style={{ fontSize: 13.5, color: '#3F3B36', marginTop: 2, lineHeight: 1.55 }}>

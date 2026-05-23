@@ -49,8 +49,8 @@ const CARD_STYLE: React.CSSProperties = {
 
 const CARD_STYLE_DARK_CLASS = 'dark:!bg-[rgba(255,255,255,0.04)] dark:!border-[rgba(255,255,255,0.08)]';
 
-const ACCENT = '#2A7D6F';
-const _ACCENT_DARK = '#4DB8A4';
+const ACCENT = '#F26B1F';
+const _ACCENT_DARK = '#B54D14';
 const SAGE = '#6B8F71';
 const WARM_AMBER = '#C4873B';
 const NEUTRAL_GREY = '#9A9590';
@@ -59,8 +59,8 @@ const TRACK_BG = '#EDEAE6';
 // Dark mode badge/surface overrides (used via Tailwind dark: classes)
 const _BADGE_SAGE_DARK = 'dark:!bg-[rgba(107,143,113,0.15)] dark:!text-[#8AB592]';
 const _BADGE_AMBER_DARK = 'dark:!bg-[rgba(196,135,59,0.15)] dark:!text-[#D4A95C]';
-const _BADGE_CLAY_DARK = 'dark:!bg-[rgba(42,125,111,0.15)] dark:!text-[#6BC4B0]';
-const TEXT_ACCENT_DARK = 'dark:!text-[#4DB8A4]';
+const _BADGE_CLAY_DARK = 'dark:!bg-[rgba(242,107,31,0.15)] dark:!text-[#FDEEDF]';
+const TEXT_ACCENT_DARK = 'dark:!text-[#F26B1F]';
 const TEXT_NEUTRAL_DARK = 'dark:!text-zinc-400';
 const TRACK_BG_DARK = 'dark:!bg-zinc-800';
 
@@ -575,22 +575,22 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
         {/* flex-1 + basis-0 on each pill gives all 3 the same width regardless
             of label length. justify-center keeps content centred inside. */}
         <div className="flex items-stretch gap-3">
-          <div className="flex-1 basis-0 flex items-center justify-center gap-2 px-3 py-2 rounded-xl dark:!bg-[rgba(77,184,164,0.1)] dark:!border-[rgba(77,184,164,0.25)]" style={{ backgroundColor: 'rgba(42,125,111,0.08)', border: '1px solid rgba(42,125,111,0.2)' }}>
+          <div className="flex-1 basis-0 flex items-center justify-center gap-2 px-3 py-2 rounded-xl dark:!bg-[rgba(242,107,31,0.1)] dark:!border-[rgba(242,107,31,0.25)]" style={{ backgroundColor: 'rgba(242,107,31,0.08)', border: '1px solid rgba(242,107,31,0.2)' }}>
             <span className={`text-lg font-bold ${TEXT_ACCENT_DARK}`} style={{ color: ACCENT }}>{daysUntilLC}</span>
-            <span className="text-[10px] font-bold uppercase tracking-wider dark:!text-[rgba(77,184,164,0.7)]" style={{ color: 'rgba(42,125,111,0.7)' }}>days to LC</span>
+            <span className="text-[10px] font-bold uppercase tracking-wider dark:!text-[rgba(242,107,31,0.7)]" style={{ color: 'rgba(242,107,31,0.7)' }}>days to LC</span>
           </div>
           <button
             onClick={() => setShowExportModal(true)}
-            className={`flex-1 basis-0 flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold transition-colors ${TEXT_ACCENT_DARK} dark:!border-[rgba(77,184,164,0.3)]`}
-            style={{ color: ACCENT, border: '1px solid rgba(42,125,111,0.3)', backgroundColor: 'transparent' }}
+            className={`flex-1 basis-0 flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold transition-colors ${TEXT_ACCENT_DARK} dark:!border-[rgba(242,107,31,0.3)]`}
+            style={{ color: ACCENT, border: '1px solid rgba(242,107,31,0.3)', backgroundColor: 'transparent' }}
           >
             <FileDown size={14} />
             Export
           </button>
           <button
             onClick={() => setShowBroadcastModal(true)}
-            className={`flex-1 basis-0 flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold transition-colors text-center ${TEXT_ACCENT_DARK} dark:!border-[rgba(77,184,164,0.3)]`}
-            style={{ color: ACCENT, border: '1px solid rgba(42,125,111,0.3)', backgroundColor: 'transparent' }}
+            className={`flex-1 basis-0 flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold transition-colors text-center ${TEXT_ACCENT_DARK} dark:!border-[rgba(242,107,31,0.3)]`}
+            style={{ color: ACCENT, border: '1px solid rgba(242,107,31,0.3)', backgroundColor: 'transparent' }}
           >
             <Megaphone size={14} />
             Broadcast
@@ -610,7 +610,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
               onClick={(e: React.MouseEvent) => e.stopPropagation()}
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center dark:!bg-[rgba(77,184,164,0.1)]" style={{ backgroundColor: 'rgba(42,125,111,0.1)' }}>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center dark:!bg-[rgba(242,107,31,0.1)]" style={{ backgroundColor: 'rgba(242,107,31,0.1)' }}>
                   <Megaphone size={20} style={{ color: ACCENT }} className={TEXT_ACCENT_DARK} />
                 </div>
                 <div>
@@ -623,7 +623,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                 onChange={(e) => setBroadcastMessage(e.target.value)}
                 placeholder="Write a message to all your students..."
                 maxLength={300}
-                className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl p-3 text-sm text-zinc-800 dark:text-white placeholder:text-zinc-400 resize-none h-28 focus:outline-none focus:border-[rgba(42,125,111,0.5)] mb-1"
+                className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl p-3 text-sm text-zinc-800 dark:text-white placeholder:text-zinc-400 resize-none h-28 focus:outline-none focus:border-[rgba(242,107,31,0.5)] mb-1"
               />
               <p className="text-[10px] text-zinc-400 text-right mb-3">{broadcastMessage.length}/300</p>
               <div className="flex gap-2">
@@ -647,7 +647,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                     setBroadcastMessage('');
                   }}
                   disabled={!broadcastMessage.trim() || isBroadcasting}
-                  className="flex-1 py-2 rounded-xl text-sm font-medium text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors dark:!bg-[#4DB8A4]"
+                  className="flex-1 py-2 rounded-xl text-sm font-medium text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors dark:!bg-[#F26B1F]"
                   style={{ backgroundColor: ACCENT }}
                 >
                   {isBroadcasting ? 'Sending...' : 'Send to All'}
@@ -1085,7 +1085,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search students..."
-                className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2.5 pl-10 pr-4 text-zinc-900 dark:text-white text-sm placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-[rgba(42,125,111,0.5)] transition-colors"
+                className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl py-2.5 pl-10 pr-4 text-zinc-900 dark:text-white text-sm placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-[rgba(242,107,31,0.5)] transition-colors"
               />
             </div>
             <button
@@ -1098,7 +1098,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
             <button
               onClick={handleExportCSV}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-colors ${TEXT_ACCENT_DARK}`}
-              style={{ backgroundColor: 'rgba(42,125,111,0.08)', color: ACCENT }}
+              style={{ backgroundColor: 'rgba(242,107,31,0.08)', color: ACCENT }}
             >
               <Download size={16} />
               Export CSV
@@ -1150,7 +1150,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                 <p className="text-sm font-semibold text-zinc-800 dark:text-white mb-3">What do the statuses mean?</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                   {[
-                    { status: 'New', color: '#2A7D6F', desc: 'Signed up within the last 7 days. Give them time to explore.' },
+                    { status: 'New', color: '#F26B1F', desc: 'Signed up within the last 7 days. Give them time to explore.' },
                     { status: 'Active', color: '#3B82F6', desc: 'Logged a study session in the past 7 days. On track.' },
                     { status: 'Thriving', color: '#10B981', desc: 'Active with a 5+ day streak, 3+ modules completed, or 3+ consecutive active weeks.' },
                     { status: 'Drifting', color: '#F59E0B', desc: '8\u201314 days since last session, or lost a strong streak recently. May need a nudge.' },
@@ -1282,7 +1282,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                                 value={flagNote}
                                 onChange={(e) => setFlagNote(e.target.value)}
                                 placeholder="Add a private note..."
-                                className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-lg p-2.5 text-sm text-zinc-800 dark:text-white placeholder:text-zinc-400 resize-none h-16 focus:outline-none focus:border-[rgba(42,125,111,0.5)] mb-3"
+                                className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-lg p-2.5 text-sm text-zinc-800 dark:text-white placeholder:text-zinc-400 resize-none h-16 focus:outline-none focus:border-[rgba(242,107,31,0.5)] mb-3"
                               />
                               <div className="flex items-center gap-2 mb-3">
                                 <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Priority:</span>
@@ -1337,7 +1337,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                           {onResetPassword && (
                             <button
                               onClick={(e) => { e.stopPropagation(); onResetPassword(row.student.user.uid); }}
-                              className="w-7 h-7 rounded-lg flex items-center justify-center text-zinc-300 dark:text-zinc-600 hover:text-[#2A7D6F] dark:hover:text-[#2A7D6F] hover:bg-[#e8f5f2] dark:hover:bg-[#2A7D6F]/10 transition-colors"
+                              className="w-7 h-7 rounded-lg flex items-center justify-center text-zinc-300 dark:text-zinc-600 hover:text-[#F26B1F] dark:hover:text-[#F26B1F] hover:bg-[#FDEEDF] dark:hover:bg-[#F26B1F]/10 transition-colors"
                               title="Reset password"
                             >
                               <KeyRound size={14} />
@@ -1651,7 +1651,7 @@ function DailyActivityChart({
                 borderRadius: '50%',
                 backgroundColor: '#FAF7F4',
                 border: `2px solid ${ACCENT}`,
-                boxShadow: '0 0 0 3px rgba(42,125,111,0.1)',
+                boxShadow: '0 0 0 3px rgba(242,107,31,0.1)',
               }}
             />
             <div

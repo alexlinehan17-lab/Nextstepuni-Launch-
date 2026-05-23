@@ -10,6 +10,7 @@ import { MotionDiv } from './Motion';
 import { X, Star } from 'lucide-react';
 import { useModal } from '../hooks/useModal';
 import { type NorthStar } from '../types';
+import { type CurriculumLevel } from '../utils/authUtils';
 import NorthStarOnboarding from './NorthStarOnboarding';
 
 interface NorthStarEditModalProps {
@@ -17,9 +18,13 @@ interface NorthStarEditModalProps {
   onClose: () => void;
   onSave: (northStar: NorthStar) => void;
   currentNorthStar: NorthStar | null;
+  /** Must be passed so JC users see the 4 JC themes when editing their NS
+   *  post-onboarding (not the 6 senior themes). Defaults to 'senior' if absent
+   *  to preserve pre-Phase-5 behaviour. */
+  curriculumLevel?: CurriculumLevel;
 }
 
-const NorthStarEditModal: React.FC<NorthStarEditModalProps> = ({ isOpen, onClose, onSave, currentNorthStar }) => {
+const NorthStarEditModal: React.FC<NorthStarEditModalProps> = ({ isOpen, onClose, onSave, currentNorthStar, curriculumLevel }) => {
   useModal(isOpen, onClose);
   useEffect(() => {
     if (isOpen) {
@@ -76,6 +81,7 @@ const NorthStarEditModal: React.FC<NorthStarEditModalProps> = ({ isOpen, onClose
               <NorthStarOnboarding
                 onComplete={(ns) => { onSave(ns); onClose(); }}
                 initialData={currentNorthStar}
+                curriculumLevel={curriculumLevel ?? 'senior'}
               />
             </div>
           </MotionDiv>

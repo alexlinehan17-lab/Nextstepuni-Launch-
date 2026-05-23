@@ -151,7 +151,7 @@ const PullToRefresh: React.FC<PullToRefreshProps> = ({ children }) => {
             cy="11"
             r={ARC_RADIUS}
             fill="none"
-            stroke="rgba(42,125,111,0.12)"
+            stroke="rgba(242,107,31,0.12)"
             strokeWidth="2"
           />
           {/* Progress arc */}
@@ -160,7 +160,7 @@ const PullToRefresh: React.FC<PullToRefreshProps> = ({ children }) => {
             cy="11"
             r={ARC_RADIUS}
             fill="none"
-            stroke="#2A7D6F"
+            stroke="#F26B1F"
             strokeWidth="2"
             strokeLinecap="round"
             strokeDasharray={ARC_CIRCUMFERENCE}

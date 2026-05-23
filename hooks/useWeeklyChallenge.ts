@@ -12,7 +12,9 @@ import { getWeeklyChallenge, type WeeklyChallengeDefinition } from '../weeklyCha
 import { type StudySessionRecord } from '../utils/strategyRegistry';
 
 export interface WeeklyChallengeState {
-  challenge: WeeklyChallengeDefinition;
+  /** Null when no challenge is available for the user's curriculum level
+   *  (Phase 5: JC users see no challenges yet — challenge content lands later). */
+  challenge: WeeklyChallengeDefinition | null;
   current: number;
   isCompleted: boolean;
   isClaimed: boolean;
@@ -24,7 +26,10 @@ export interface WeeklyChallengeState {
 export function useWeeklyChallenge(uid: string | undefined): WeeklyChallengeState {
   const { rawProgressDoc, progressLoaded } = useProgress();
   const weekNumber = getWeekNumber();
-  const challenge = getWeeklyChallenge(weekNumber);
+  // Phase 5: filter to user's curriculum. JC has no senior-tagged challenges
+  // to surface; treat as "no challenge this week" rather than crashing.
+  const curriculumLevel = rawProgressDoc?.subjectProfile?.curriculumLevel ?? 'senior';
+  const challenge = getWeeklyChallenge(weekNumber, curriculumLevel);
   const weekStart = getWeekStartDate();
 
   const [current, setCurrent] = useState(0);
@@ -41,7 +46,7 @@ export function useWeeklyChallenge(uid: string | undefined): WeeklyChallengeStat
   useEffect(() => {
     if (!progressLoaded) return;
 
-    if (!uid) {
+    if (!uid || !challenge) {
       setCurrent(0);
       setIsClaimed(false);
       setIsLoaded(true);
@@ -94,10 +99,10 @@ export function useWeeklyChallenge(uid: string | undefined): WeeklyChallengeStat
 
     setCurrent(progress);
     setIsLoaded(true);
-  }, [uid, version, challenge.id, challenge.metric, challenge.strategyModuleId, weekStart, progressLoaded, rawProgressDoc]);
+  }, [uid, version, challenge?.id, challenge?.metric, challenge?.strategyModuleId, weekStart, progressLoaded, rawProgressDoc]);
 
   const claimReward = useCallback(async () => {
-    if (!uid || isClaimed) return;
+    if (!uid || isClaimed || !challenge) return;
     try {
       await setDoc(doc(db, 'progress', uid), {
         pointsData: { totalEarned: increment(challenge.rewardPoints) },
@@ -107,9 +112,9 @@ export function useWeeklyChallenge(uid: string | undefined): WeeklyChallengeStat
     } catch (err) {
       console.error('Failed to claim weekly challenge reward:', err);
     }
-  }, [uid, isClaimed, challenge.id, challenge.rewardPoints]);
+  }, [uid, isClaimed, challenge?.id, challenge?.rewardPoints]);
 
-  const isCompleted = current >= challenge.target;
+  const isCompleted = challenge ? current >= challenge.target : false;
 
   return { challenge, current, isCompleted, isClaimed, isLoaded, claimReward, reload };
 }

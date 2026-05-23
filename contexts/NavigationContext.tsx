@@ -12,7 +12,8 @@ import { useAuth } from './AuthContext';
 export type ViewState =
   | 'tree' | 'modules' | 'category' | 'module' | 'innovation-zone'
   | 'dashboard' | 'learning-paths' | 'onboarding'
-  | 'my-journey' | 'gamification-hub' | 'study-session' | 'insights';
+  | 'my-journey' | 'gamification-hub' | 'study-session' | 'insights'
+  | 'jc-coming-soon';
 
 export interface NavigationState {
   viewState: ViewState;
@@ -35,6 +36,7 @@ type NavigationAction =
   | { type: 'NAVIGATE_TO_STUDY_SESSION' }
   | { type: 'NAVIGATE_TO_INSIGHTS' }
   | { type: 'NAVIGATE_TO_ONBOARDING' }
+  | { type: 'NAVIGATE_TO_JC_COMING_SOON'; fromModuleId: string }
   | { type: 'SET_ACTIVE_TOOL'; tool: string | null }
   | { type: 'RESTORE_STATE'; state: Partial<NavigationState> };
 
@@ -53,6 +55,7 @@ interface NavigationContextValue {
   navigateToStudySession: () => void;
   navigateToInsights: () => void;
   navigateToOnboarding: () => void;
+  navigateToJCComingSoon: (fromModuleId: string) => void;
   setActiveTool: (tool: string | null) => void;
   goBack: () => void;
 }
@@ -63,6 +66,7 @@ const VALID_VIEWS = new Set<string>([
   'tree', 'modules', 'category', 'module', 'innovation-zone',
   'dashboard', 'learning-paths', 'onboarding',
   'my-journey', 'gamification-hub', 'study-session', 'insights',
+  'jc-coming-soon',
 ]);
 
 function serializeToURL(state: NavigationState): string {
@@ -126,6 +130,10 @@ function navigationReducer(state: NavigationState, action: NavigationAction): Na
       return { ...state, viewState: 'insights', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_ONBOARDING':
       return { ...state, viewState: 'onboarding', currentModuleId: null, cameFromJourney: false, activeTool: null };
+    case 'NAVIGATE_TO_JC_COMING_SOON':
+      // Reuse `currentModuleId` to remember which module the JC user clicked
+      // so the placeholder can show its title and so browser back works.
+      return { ...state, viewState: 'jc-coming-soon', currentModuleId: action.fromModuleId, cameFromJourney: false, activeTool: null };
     case 'SET_ACTIVE_TOOL':
       if (state.activeTool === action.tool) return state;
       return { ...state, activeTool: action.tool };
@@ -322,6 +330,11 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     navigate({ type: 'NAVIGATE_TO_ONBOARDING' });
   }, [navigate]);
 
+  const navigateToJCComingSoon = useCallback((fromModuleId: string) => {
+    navigate({ type: 'NAVIGATE_TO_JC_COMING_SOON', fromModuleId });
+    window.scrollTo(0, 0);
+  }, [navigate]);
+
   const setActiveTool = useCallback((tool: string | null) => {
     navigate({ type: 'SET_ACTIVE_TOOL', tool });
   }, [navigate]);
@@ -345,6 +358,7 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     navigateToStudySession,
     navigateToInsights,
     navigateToOnboarding,
+    navigateToJCComingSoon,
     setActiveTool,
     goBack,
   };

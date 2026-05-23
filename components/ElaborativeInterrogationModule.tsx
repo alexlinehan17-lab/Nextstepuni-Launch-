@@ -57,8 +57,8 @@ const FlashcardFlipper = () => {
                         <p className="italic mt-4" style={{ fontSize: 12, color: '#9e9186' }}>Tap to reveal</p>
                     </div>
                     {/* Back */}
-                    <div className="absolute inset-0 flex flex-col items-center justify-center" style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden', transform: 'rotateY(180deg)', backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 16, padding: '32px 28px' }}>
-                        <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#1a6358', marginBottom: 16, textTransform: 'uppercase' as const }}>Back</p>
+                    <div className="absolute inset-0 flex flex-col items-center justify-center" style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden', transform: 'rotateY(180deg)', backgroundColor: '#FDEEDF', border: '2px solid #F26B1F', borderRadius: 16, padding: '32px 28px' }}>
+                        <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#8C3A0E', marginBottom: 16, textTransform: 'uppercase' as const }}>Back</p>
                         <p className="font-serif" style={{ fontSize: 18, color: '#1a1a1a', lineHeight: 1.6 }}>Because it pumps blood to the whole body (high pressure), while the right only pumps to the lungs (low pressure).</p>
                     </div>
                 </motion.div>

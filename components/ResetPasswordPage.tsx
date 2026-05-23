@@ -23,6 +23,7 @@ import { MotionButton, MotionDiv } from './Motion';
 import { Eye, EyeOff, Check, AlertTriangle } from 'lucide-react';
 import { auth } from '../firebase';
 import { verifyPasswordResetCode, confirmPasswordReset } from 'firebase/auth';
+import { COLORS } from '../design/tokens';
 
 const SPRING_FAST = { type: 'spring' as const, stiffness: 500, damping: 28 };
 const SPRING_GENTLE = { type: 'spring' as const, stiffness: 340, damping: 30 };
@@ -100,7 +101,7 @@ const ResetPasswordPage: React.FC = () => {
     }
   };
 
-  const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 placeholder-zinc-400 outline-none transition-all bg-white border-2 border-zinc-200 focus:border-[#2A7D6F]";
+  const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 placeholder-zinc-400 outline-none transition-all bg-white border-2 border-zinc-200 focus:border-[#F26B1F]";
   const primaryBtn = "w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed";
   const primaryBtnStyle = { backgroundColor: '#FFFFFF', color: '#1A1A1A', borderColor: 'rgba(26,26,26,0.55)' };
 
@@ -121,7 +122,7 @@ const ResetPasswordPage: React.FC = () => {
           <div className="py-6 text-center">
             <svg className="animate-spin mx-auto mb-4" width="32" height="32" viewBox="0 0 36 36" fill="none">
               <circle cx="18" cy="18" r="15" stroke="#e0dbd4" strokeWidth="3" />
-              <path d="M18 3a15 15 0 0 1 15 15" stroke="#2A7D6F" strokeWidth="3" strokeLinecap="round" />
+              <path d="M18 3a15 15 0 0 1 15 15" stroke={COLORS.accent} strokeWidth="3" strokeLinecap="round" />
             </svg>
             <p className="text-sm" style={{ color: '#7a7068' }}>Verifying your reset link…</p>
           </div>
@@ -177,7 +178,7 @@ const ResetPasswordPage: React.FC = () => {
                   <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{6 - newPassword.length} more character{6 - newPassword.length !== 1 ? 's' : ''} needed</p>
                 )}
                 {newPassword.length >= 6 && (
-                  <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: '#2A7D6F' }}><Check size={12} /> Looks good</p>
+                  <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: COLORS.success }}><Check size={12} /> Looks good</p>
                 )}
               </div>
               <AnimatePresence>
@@ -210,9 +211,9 @@ const ResetPasswordPage: React.FC = () => {
               animate={{ scale: 1, rotate: 0 }}
               transition={SPRING_POP}
               className="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center"
-              style={{ backgroundColor: '#e8f5f2' }}
+              style={{ backgroundColor: COLORS.successTint }}
             >
-              <Check size={24} style={{ color: '#2A7D6F' }} />
+              <Check size={24} style={{ color: COLORS.success }} />
             </MotionDiv>
             <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={SPRING_GENTLE}>
               <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Password updated</h2>

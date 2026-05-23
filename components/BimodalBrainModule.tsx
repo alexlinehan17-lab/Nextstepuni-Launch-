@@ -29,7 +29,7 @@ const PinballSimulator = () => {
     return(
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
           <div className="text-center mb-8">
-            <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Interactive Simulation</span>
+            <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Interactive Simulation</span>
             <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>The Pinball Metaphor</h4>
             <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Toggle between modes to see how your thoughts travel.</p>
           </div>
@@ -41,15 +41,15 @@ const PinballSimulator = () => {
             borderRadius: 16,
             backgroundImage: 'radial-gradient(circle, #e0dbd4 1px, transparent 1px)',
             backgroundSize: '24px 24px',
-            boxShadow: isFocused ? 'inset 0 0 0 3px rgba(42,125,111,0.15)' : 'inset 0 0 0 3px rgba(0,0,0,0.04)',
+            boxShadow: isFocused ? 'inset 0 0 0 3px rgba(242,107,31,0.15)' : 'inset 0 0 0 3px rgba(0,0,0,0.04)',
           }}>
             {/* Mode chip */}
             <div className="absolute top-3 left-3 z-10">
               <span style={{
                 fontSize: 9, fontWeight: 700, letterSpacing: '0.08em',
-                backgroundColor: isFocused ? '#e8f5f2' : '#f0ece6',
-                color: isFocused ? '#1a6358' : '#9e9186',
-                border: isFocused ? '1px solid rgba(42,125,111,0.2)' : '1px solid #d0cdc8',
+                backgroundColor: isFocused ? '#FDEEDF' : '#f0ece6',
+                color: isFocused ? '#8C3A0E' : '#9e9186',
+                border: isFocused ? '1px solid rgba(242,107,31,0.2)' : '1px solid #d0cdc8',
                 borderRadius: 20, padding: '2px 8px',
                 textTransform: 'uppercase' as const,
               }}>
@@ -65,7 +65,7 @@ const PinballSimulator = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0 }}
                   className="absolute rounded-full"
-                  style={{ width: 12, height: 12, backgroundColor: '#2A7D6F', border: '1.5px solid #1a5a4e', top: `${d.top}%`, left: `${d.left}%` }}
+                  style={{ width: 12, height: 12, backgroundColor: '#F26B1F', border: '1.5px solid #B54D14', top: `${d.top}%`, left: `${d.left}%` }}
                 />
               ))}
               {!isFocused && DIFFUSE_DOTS.map(d => (
@@ -84,8 +84,8 @@ const PinballSimulator = () => {
           {/* Toggle buttons */}
           <div className="flex justify-center gap-3 mt-6">
             <button onClick={() => setMode('focused')} style={{
-              backgroundColor: isFocused ? '#2A7D6F' : '#FFFFFF',
-              border: isFocused ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+              backgroundColor: isFocused ? '#F26B1F' : '#FFFFFF',
+              border: isFocused ? '2px solid #F26B1F' : '2px solid #d0cdc8',
               borderRadius: 20, padding: '12px 24px',
               fontSize: 14, fontWeight: 600,
               color: isFocused ? '#FFFFFF' : '#7a7068',
@@ -94,8 +94,8 @@ const PinballSimulator = () => {
               Focused Mode
             </button>
             <button onClick={() => setMode('diffuse')} style={{
-              backgroundColor: !isFocused ? '#2A7D6F' : '#FFFFFF',
-              border: !isFocused ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+              backgroundColor: !isFocused ? '#F26B1F' : '#FFFFFF',
+              border: !isFocused ? '2px solid #F26B1F' : '2px solid #d0cdc8',
               borderRadius: 20, padding: '12px 24px',
               fontSize: 14, fontWeight: 600,
               color: !isFocused ? '#FFFFFF' : '#7a7068',
@@ -112,11 +112,11 @@ const PinballSimulator = () => {
             animate={{ opacity: 1, y: 0 }}
             className="mt-4"
             style={isFocused
-              ? { borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px' }
+              ? { borderLeft: '3px solid #F26B1F', backgroundColor: '#FDEEDF', borderRadius: '0 10px 10px 0', padding: '12px 16px' }
               : { borderLeft: '3px solid #d0cdc8', backgroundColor: '#f4f0eb', borderRadius: '0 10px 10px 0', padding: '12px 16px' }
             }
           >
-            <p className="text-sm italic" style={{ color: isFocused ? '#1a6358' : '#7a7068' }}>
+            <p className="text-sm italic" style={{ color: isFocused ? '#8C3A0E' : '#7a7068' }}>
               {isFocused
                 ? 'Focused mode: thoughts bounce between closely connected ideas. Great for execution and problem-solving.'
                 : 'Diffuse mode: thoughts roam freely. This is where creative connections and insight happen.'}
@@ -254,7 +254,7 @@ const IncubationEffectDemo = () => {
   return (
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Interactive Experiment</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Interactive Experiment</span>
         <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>The Incubation Effect</h4>
         <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Experience how stepping away unlocks fresh insight.</p>
       </div>
@@ -265,7 +265,7 @@ const IncubationEffectDemo = () => {
           <MotionDiv key="focused" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4 }}>
             <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 24 }}>
               <div className="flex items-center justify-between mb-4">
-                <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Focused Mode</span>
+                <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Focused Mode</span>
                 <span style={{ fontSize: 13, fontWeight: 600, backgroundColor: focusedTime >= 25 ? '#fde4e4' : '#f0ece6', color: focusedTime >= 25 ? '#b33030' : '#5a5550', border: `1.5px solid ${focusedTime >= 25 ? 'rgba(227,93,117,0.3)' : '#d0cdc8'}`, borderRadius: 20, padding: '4px 12px' }}>{focusedTime}s</span>
               </div>
               <p style={{ fontSize: 15, color: '#5a5550', marginBottom: 16 }}>Rearrange these letters to form a common English word:</p>
@@ -277,16 +277,16 @@ const IncubationEffectDemo = () => {
                 ))}
               </div>
               <div className="flex flex-col sm:flex-row gap-3 items-center justify-center">
-                <input type="text" value={input} onChange={e => setInput(e.target.value)} onKeyDown={e => e.key === 'Enter' && handleCheck()} placeholder="Type your answer..." className="w-full sm:w-48 outline-none text-center" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 15, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
-                <button onClick={handleCheck} style={{ backgroundColor: '#2A7D6F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Check Answer</button>
+                <input type="text" value={input} onChange={e => setInput(e.target.value)} onKeyDown={e => e.key === 'Enter' && handleCheck()} placeholder="Type your answer..." className="w-full sm:w-48 outline-none text-center" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 15, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = '#F26B1F'; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
+                <button onClick={handleCheck} style={{ backgroundColor: '#F26B1F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Check Answer</button>
               </div>
               {wrongAttempt && (
                 <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center mt-3" style={{ fontSize: 14, color: '#E85D75', fontWeight: 500 }}>Not quite. Keep trying!</MotionDiv>
               )}
               {showStuckPrompt && (
-                <MotionDiv initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mt-6" style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '16px 20px', textAlign: 'center' }}>
-                  <p className="italic mb-3" style={{ fontSize: 14, color: '#1a6358' }}>Stuck? Your focused mode has hit a wall.</p>
-                  <motion.button onClick={handleDiffuseBreak} whileTap={{ y: 3 }} className="text-white font-semibold" style={{ backgroundColor: '#2A7D6F', borderRadius: 100, padding: '13px 28px', fontSize: 15, borderBottom: '3px solid #1a5a4e', boxShadow: '0 4px 0 #1a5a4e' }}>Take a Diffuse Break</motion.button>
+                <MotionDiv initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mt-6" style={{ borderLeft: '3px solid #F26B1F', backgroundColor: '#FDEEDF', borderRadius: '0 10px 10px 0', padding: '16px 20px', textAlign: 'center' }}>
+                  <p className="italic mb-3" style={{ fontSize: 14, color: '#8C3A0E' }}>Stuck? Your focused mode has hit a wall.</p>
+                  <motion.button onClick={handleDiffuseBreak} whileTap={{ y: 3 }} className="text-white font-semibold" style={{ backgroundColor: '#F26B1F', borderRadius: 100, padding: '13px 28px', fontSize: 15, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}>Take a Diffuse Break</motion.button>
                 </MotionDiv>
               )}
             </div>
@@ -297,12 +297,12 @@ const IncubationEffectDemo = () => {
         {phase === 'diffuse' && (
           <MotionDiv key="diffuse" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.5 }}>
             <div className="bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: '32px 28px' }}>
-              <div className="flex items-center justify-center mb-5" style={{ width: 80, height: 80, borderRadius: '50%', backgroundColor: '#e8f5f2', border: '2px solid rgba(42,125,111,0.25)', margin: '0 auto' }}>
-                <span className="font-serif font-bold" style={{ fontSize: 36, color: '#2A7D6F' }}>{diffuseTime}</span>
+              <div className="flex items-center justify-center mb-5" style={{ width: 80, height: 80, borderRadius: '50%', backgroundColor: '#FDEEDF', border: '2px solid rgba(242,107,31,0.25)', margin: '0 auto' }}>
+                <span className="font-serif font-bold" style={{ fontSize: 36, color: '#F26B1F' }}>{diffuseTime}</span>
               </div>
               {/* Progress bar */}
               <div className="mx-auto mb-5" style={{ height: 4, backgroundColor: '#e0dbd4', borderRadius: 2, maxWidth: 200 }}>
-                <div style={{ height: '100%', backgroundColor: '#2A7D6F', borderRadius: 2, width: `${(diffuseTime / 15) * 100}%`, transition: 'width 1s linear' }} />
+                <div style={{ height: '100%', backgroundColor: '#F26B1F', borderRadius: 2, width: `${(diffuseTime / 15) * 100}%`, transition: 'width 1s linear' }} />
               </div>
               <p className="font-serif font-semibold" style={{ fontSize: 22, color: '#1a1a1a', marginBottom: 4 }}>Let your mind wander...</p>
               <p style={{ fontSize: 15, color: '#7a7068', marginBottom: 24 }}>Your subconscious is still working on it.</p>
@@ -318,7 +318,7 @@ const IncubationEffectDemo = () => {
         {phase === 'return' && (
           <MotionDiv key="return" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4 }}>
             <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 24 }}>
-              <span className="inline-block mb-4" style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Back from your break</span>
+              <span className="inline-block mb-4" style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Back from your break</span>
               <div className="flex justify-center gap-2 mb-4 flex-wrap">
                 {puzzle.letters.split('').map((letter, i) => (
                   <MotionDiv key={`r-${puzzleIndex}-${i}`} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: i * 0.06, type: 'spring', stiffness: 300, damping: 20 }} className="flex items-center justify-center bg-white dark:bg-zinc-800" style={{ width: 52, height: 52, border: '2px solid #1a1a1a', borderRadius: 10 }}>
@@ -326,12 +326,12 @@ const IncubationEffectDemo = () => {
                   </MotionDiv>
                 ))}
               </div>
-              <MotionDiv initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.3 }} className="mb-5 text-center" style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-                <p className="text-sm italic" style={{ color: '#1a6358' }}>Hint: {puzzle.hint}</p>
+              <MotionDiv initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.3 }} className="mb-5 text-center" style={{ borderLeft: '3px solid #F26B1F', backgroundColor: '#FDEEDF', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
+                <p className="text-sm italic" style={{ color: '#8C3A0E' }}>Hint: {puzzle.hint}</p>
               </MotionDiv>
               <div className="flex flex-col sm:flex-row gap-3 items-center justify-center">
-                <input type="text" value={input} onChange={e => setInput(e.target.value)} onKeyDown={e => e.key === 'Enter' && handleReturnCheck()} placeholder="Try again..." className="w-full sm:w-48 outline-none text-center" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 15, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
-                <button onClick={handleReturnCheck} style={{ backgroundColor: '#2A7D6F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Check Answer</button>
+                <input type="text" value={input} onChange={e => setInput(e.target.value)} onKeyDown={e => e.key === 'Enter' && handleReturnCheck()} placeholder="Try again..." className="w-full sm:w-48 outline-none text-center" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 15, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = '#F26B1F'; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
+                <button onClick={handleReturnCheck} style={{ backgroundColor: '#F26B1F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Check Answer</button>
               </div>
               {wrongAttempt && !revealAnswer && (
                 <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center mt-3" style={{ fontSize: 14, color: '#E85D75', fontWeight: 500 }}>Not quite. Try once more!</MotionDiv>
@@ -339,8 +339,8 @@ const IncubationEffectDemo = () => {
               {revealAnswer && (
                 <MotionDiv initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mt-4 text-center">
                   <p style={{ fontSize: 14, color: '#7a7068', marginBottom: 4 }}>The answer was:</p>
-                  <p className="font-serif font-bold" style={{ fontSize: 28, color: '#2A7D6F', marginBottom: 12 }}>{puzzle.answer}</p>
-                  <button onClick={() => setPhase('results')} style={{ backgroundColor: '#2A7D6F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>See the Science</button>
+                  <p className="font-serif font-bold" style={{ fontSize: 28, color: '#F26B1F', marginBottom: 12 }}>{puzzle.answer}</p>
+                  <button onClick={() => setPhase('results')} style={{ backgroundColor: '#F26B1F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>See the Science</button>
                 </MotionDiv>
               )}
             </div>
@@ -352,16 +352,16 @@ const IncubationEffectDemo = () => {
           <MotionDiv key="results" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4 }}>
             <div className="bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: '28px 24px' }}>
               <MotionDiv initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: 'spring', stiffness: 200, damping: 15 }} className="mb-4">
-                <div className="mx-auto flex items-center justify-center" style={{ width: 56, height: 56, borderRadius: '50%', backgroundColor: '#e8f5f2', border: '2px solid rgba(42,125,111,0.25)' }}>
-                  <Lightbulb style={{ width: 28, height: 28, color: '#2A7D6F' }} />
+                <div className="mx-auto flex items-center justify-center" style={{ width: 56, height: 56, borderRadius: '50%', backgroundColor: '#FDEEDF', border: '2px solid rgba(242,107,31,0.25)' }}>
+                  <Lightbulb style={{ width: 28, height: 28, color: '#F26B1F' }} />
                 </div>
               </MotionDiv>
               <h5 className="font-serif font-semibold mb-3" style={{ fontSize: 20, color: '#1a1a1a' }}>This is the Incubation Effect in action.</h5>
               <div className="max-w-md mx-auto space-y-3 mb-6">
                 <p style={{ fontSize: 14, color: '#5a5550' }}>Your focused brain locked onto wrong patterns. The diffuse break let your subconscious restructure the problem — making the hint click instantly.</p>
-                <p className="font-semibold" style={{ fontSize: 14, color: '#2A7D6F' }}>Stepping away from a hard problem is not laziness. It's strategy.</p>
+                <p className="font-semibold" style={{ fontSize: 14, color: '#F26B1F' }}>Stepping away from a hard problem is not laziness. It's strategy.</p>
               </div>
-              <button onClick={handleTryAnother} style={{ backgroundColor: '#2A7D6F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Try Another Puzzle</button>
+              <button onClick={handleTryAnother} style={{ backgroundColor: '#F26B1F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Try Another Puzzle</button>
             </div>
           </MotionDiv>
         )}

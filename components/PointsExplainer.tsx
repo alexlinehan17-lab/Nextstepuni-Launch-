@@ -9,6 +9,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { useModal } from '../hooks/useModal';
 import { BookOpen, Timer, Trophy, Gem, MapPin, SkipForward, CalendarOff } from 'lucide-react';
+import { COLORS } from '../design/tokens';
 
 interface PointsExplainerProps {
   isOpen: boolean;
@@ -79,18 +80,18 @@ const PointsExplainer: React.FC<PointsExplainerProps> = ({ isOpen, onDismiss }) 
                     style={{
                       padding: '14px 12px',
                       borderRadius: '12px',
-                      background: item.accent ? '#e8f5f2' : '#fafaf8',
-                      border: item.accent ? '1.5px solid rgba(42,125,111,0.25)' : '1px solid rgba(0,0,0,0.05)',
+                      background: item.accent ? '#FDEEDF' : '#fafaf8',
+                      border: item.accent ? '1.5px solid rgba(242,107,31,0.25)' : '1px solid rgba(0,0,0,0.05)',
                     }}
                   >
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
-                      <item.icon size={14} color={item.accent ? '#2A7D6F' : '#9e9186'} strokeWidth={2} />
+                      <item.icon size={14} color={item.accent ? COLORS.accent : '#9e9186'} strokeWidth={2} />
                       <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 600, color: '#7a7068' }}>
                         {item.label}
                       </span>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'baseline', gap: '4px' }}>
-                      <span style={{ fontFamily: "'Source Serif 4', serif", fontSize: '22px', fontWeight: 700, color: item.accent ? '#2A7D6F' : '#1a1a1a' }}>
+                      <span style={{ fontFamily: "'Source Serif 4', serif", fontSize: '22px', fontWeight: 700, color: item.accent ? COLORS.accent : '#1a1a1a' }}>
                         {item.value}
                       </span>
                       <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', color: '#9e9186' }}>
@@ -119,8 +120,8 @@ const PointsExplainer: React.FC<PointsExplainerProps> = ({ isOpen, onDismiss }) 
                       border: '1px solid rgba(0,0,0,0.05)',
                     }}
                   >
-                    <div style={{ width: '32px', height: '32px', borderRadius: '8px', background: '#e8f5f2', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                      <item.icon size={16} color="#2A7D6F" strokeWidth={2} />
+                    <div style={{ width: '32px', height: '32px', borderRadius: '8px', background: '#FDEEDF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                      <item.icon size={16} color={COLORS.accent} strokeWidth={2} />
                     </div>
                     <div style={{ flex: 1, minWidth: 0 }}>
                       <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '13px', fontWeight: 600, color: '#1a1a1a', margin: 0 }}>
@@ -130,7 +131,7 @@ const PointsExplainer: React.FC<PointsExplainerProps> = ({ isOpen, onDismiss }) 
                         {item.desc}
                       </p>
                     </div>
-                    <span style={{ fontFamily: "'Source Serif 4', serif", fontSize: '13px', fontWeight: 700, color: '#2A7D6F', flexShrink: 0 }}>
+                    <span style={{ fontFamily: "'Source Serif 4', serif", fontSize: '13px', fontWeight: 700, color: COLORS.accent, flexShrink: 0 }}>
                       {item.cost}
                     </span>
                   </div>
@@ -142,15 +143,15 @@ const PointsExplainer: React.FC<PointsExplainerProps> = ({ isOpen, onDismiss }) 
                 onClick={onDismiss}
                 className="w-full transition-all active:translate-y-[3px]"
                 style={{
-                  background: '#2A7D6F',
+                  background: COLORS.accent,
                   color: '#ffffff',
                   fontFamily: "'DM Sans', sans-serif",
                   fontSize: '15px',
                   fontWeight: 600,
                   border: 'none',
                   borderRadius: '100px',
-                  borderBottom: '3px solid #1a5a4e',
-                  boxShadow: '0 4px 0 #1a5a4e',
+                  borderBottom: `3px solid ${COLORS.accentDark}`,
+                  boxShadow: `0 4px 0 ${COLORS.accentDark}`,
                   padding: '14px 28px',
                   cursor: 'pointer',
                 }}

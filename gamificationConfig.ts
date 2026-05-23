@@ -20,7 +20,7 @@ export interface AthleteRank {
 // student should still take ~1 week to reach Beginner, and Legend should
 // sit beyond a full-catalogue completion (~7.5k pts from sections alone).
 export const ATHLETE_RANKS: AthleteRank[] = [
-  { id: 'newcomer',   title: 'Newcomer',   minPoints: 0,     icon: 'Footprints', color: 'teal-500',    colorHex: '#2A7D6F' },
+  { id: 'newcomer',   title: 'Newcomer',   minPoints: 0,     icon: 'Footprints', color: 'orange-500',  colorHex: '#F26B1F' },
   { id: 'beginner',   title: 'Beginner',   minPoints: 400,   icon: 'Flame',      color: 'blue-500',    colorHex: '#4361EE' },
   { id: 'consistent', title: 'Consistent', minPoints: 1200,  icon: 'TrendingUp', color: 'emerald-500', colorHex: '#10b981' },
   { id: 'dedicated',  title: 'Dedicated',  minPoints: 2400,  icon: 'Target',     color: 'teal-500',    colorHex: '#14b8a6' },
@@ -63,6 +63,10 @@ export interface AchievementDefinition {
   condition: (state: GamificationState) => boolean;
   bonusPoints: number;
   isHidden: boolean;
+  /** Phase 5 plumbing: curriculum level(s) the achievement applies to.
+   *  Defaults to 'senior' if absent. The 4 JC North Star tracks added in
+   *  Phase 5 set this to 'junior'. */
+  curriculum?: 'junior' | 'senior' | 'both';
 }
 
 // ─── Weekly Goals ───────────────────────────────────────────────────────────

@@ -16,6 +16,7 @@ import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardG
 import { ModuleLayout } from './ModuleLayout';
 import { useNorthStar } from '../hooks/useNorthStar';
 import NorthStarCallout from './NorthStarCallout';
+import { COLORS } from '../design/tokens';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
@@ -79,7 +80,7 @@ const EfficacyRadar: React.FC = () => {
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       {/* Section chip + title */}
       <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)' }}>Self-Assessment</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)' }}>Self-Assessment</span>
         <h4 className="font-serif text-2xl font-bold" style={{ color: '#1a1a1a' }}>Self-Efficacy Radar</h4>
         <p className="text-sm mt-1 max-w-md mx-auto" style={{ color: '#7a7068' }}>
           Rate your belief in your ability across these 6 domains (1 = no confidence, 10 = total confidence).
@@ -99,7 +100,7 @@ const EfficacyRadar: React.FC = () => {
               <polygon
                 key={scale}
                 points={hexagonPoints(maxR * scale)}
-                fill={gi % 2 === 0 ? 'rgba(42,125,111,0.04)' : 'rgba(42,125,111,0.02)'}
+                fill={gi % 2 === 0 ? 'rgba(242,107,31,0.04)' : 'rgba(242,107,31,0.02)'}
                 stroke="#e0dbd4"
                 strokeWidth="1.5"
               />
@@ -116,8 +117,8 @@ const EfficacyRadar: React.FC = () => {
             {/* Data polygon — teal */}
             <MotionPolygon
               points={dataPoints}
-              fill="rgba(42,125,111,0.18)"
-              stroke="#2A7D6F"
+              fill="rgba(242,107,31,0.18)"
+              stroke={COLORS.accent}
               strokeWidth="2.5"
               strokeLinejoin="round"
               initial={false}
@@ -130,7 +131,7 @@ const EfficacyRadar: React.FC = () => {
               const r = (v / 10) * maxR;
               const pt = pointOnHex(i, r);
               return (
-                <circle key={i} cx={pt.x} cy={pt.y} r="5" fill="#2A7D6F" stroke="#fff" strokeWidth="2" />
+                <circle key={i} cx={pt.x} cy={pt.y} r="5" fill={COLORS.accent} stroke="#fff" strokeWidth="2" />
               );
             })}
 
@@ -173,7 +174,7 @@ const EfficacyRadar: React.FC = () => {
           <div key={domain}>
             <div className="flex justify-between items-baseline mb-1.5">
               <label className="text-[15px] font-medium" style={{ color: '#1a1a1a' }}>{domain}</label>
-              <span className="text-sm font-bold tabular-nums" style={{ color: '#2A7D6F' }}>{values[i]}</span>
+              <span className="text-sm font-bold tabular-nums" style={{ color: COLORS.accent }}>{values[i]}</span>
             </div>
             <input
               type="range"
@@ -185,7 +186,7 @@ const EfficacyRadar: React.FC = () => {
                 next[i] = Number(e.target.value);
                 setValues(next);
               }}
-              className="chunky-slider chunky-slider-teal"
+              className="chunky-slider chunky-slider-accent"
             />
           </div>
         ))}
@@ -194,7 +195,7 @@ const EfficacyRadar: React.FC = () => {
       {/* Score card */}
       <div className="max-w-xs mx-auto bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: '20px 28px' }}>
         <p className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: '#9e9186', letterSpacing: '0.1em' }}>Your Self-Efficacy Score</p>
-        <p className="font-serif font-bold mt-1" style={{ fontSize: 48, color: '#2A7D6F', lineHeight: 1.1 }}>{average.toFixed(1)}</p>
+        <p className="font-serif font-bold mt-1" style={{ fontSize: 48, color: COLORS.accent, lineHeight: 1.1 }}>{average.toFixed(1)}</p>
         <p className="text-[13px] mt-1" style={{ color: '#9e9186' }}>{scoreLabel}</p>
         {lowDomains.length > 0 && (
           <motion.p
@@ -252,7 +253,7 @@ const IcebergInteractive = () => {
         <div className="my-10">
             {/* Section chip + title */}
             <div className="text-center mb-6">
-                <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)' }}>Reflection Activity</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)' }}>Reflection Activity</span>
                 <h4 className="font-serif text-2xl font-bold" style={{ color: '#1a1a1a' }}>The Success Iceberg</h4>
                 <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Success is what people see. Process is what it takes.</p>
             </div>
@@ -268,13 +269,13 @@ const IcebergInteractive = () => {
                 </div>
 
                 {/* WATERLINE */}
-                <div className="relative" style={{ height: 3, background: 'linear-gradient(to right, #93c5fd, #2A7D6F)' }}>
+                <div className="relative" style={{ height: 3, background: `linear-gradient(to right, #93c5fd, ${COLORS.accent})` }}>
                     <span className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] bg-white px-2" style={{ color: '#5a5550' }}>~ waterline ~</span>
                 </div>
 
                 {/* BOTTOM: Below the waterline */}
                 <div style={{ backgroundColor: '#F8F8F8', padding: '24px 28px', minHeight: 220 }}>
-                    <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: 'rgba(42,125,111,0.1)', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '3px 10px' }}>Below the waterline</span>
+                    <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: 'rgba(242,107,31,0.1)', color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '3px 10px' }}>Below the waterline</span>
                     <p className="font-serif font-bold text-lg" style={{ color: '#1a1a1a' }}>The Invisible Process</p>
                     <p className="text-xs mb-4" style={{ color: '#7a7068' }}>What actually made it happen — that nobody sees</p>
 
@@ -282,7 +283,7 @@ const IcebergInteractive = () => {
                     {inputs.length > 0 && (
                         <div className="flex flex-wrap gap-2 mb-4">
                             {inputs.map((input, i) => (
-                                <span key={i} className="text-[13px] font-medium" style={{ backgroundColor: 'rgba(42,125,111,0.1)', border: '1.5px solid rgba(42,125,111,0.25)', color: '#1a6358', borderRadius: 20, padding: '4px 12px' }}>{input}</span>
+                                <span key={i} className="text-[13px] font-medium" style={{ backgroundColor: 'rgba(242,107,31,0.1)', border: '1.5px solid rgba(242,107,31,0.25)', color: COLORS.accentDarkText, borderRadius: 20, padding: '4px 12px' }}>{input}</span>
                             ))}
                         </div>
                     )}
@@ -301,7 +302,7 @@ const IcebergInteractive = () => {
                             color: '#1a1a1a',
                             fontSize: 14,
                         }}
-                        onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }}
+                        onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
                         onBlur={(e) => { e.currentTarget.style.borderColor = '#E7E5E4'; }}
                         onKeyDown={(e) => {
                             if (e.key === 'Enter' && textVal.trim()) {
@@ -318,7 +319,7 @@ const IcebergInteractive = () => {
                                 key={s}
                                 onClick={() => addItem(s)}
                                 className="text-xs transition-opacity hover:opacity-80"
-                                style={{ backgroundColor: 'rgba(42,125,111,0.08)', border: '1px solid rgba(42,125,111,0.2)', color: '#1a6358', borderRadius: 20, padding: '4px 10px' }}
+                                style={{ backgroundColor: 'rgba(242,107,31,0.08)', border: '1px solid rgba(242,107,31,0.2)', color: COLORS.accentDarkText, borderRadius: 20, padding: '4px 10px' }}
                             >
                               + {s}
                             </button>

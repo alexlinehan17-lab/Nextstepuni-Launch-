@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-export type AccentThemeId = 'terracotta' | 'ocean' | 'sage' | 'midnight' | 'dusk-rose' | 'golden' | 'arctic' | 'obsidian';
 export type CardStyleId = 'default' | 'glass' | 'neon' | 'flat' | 'gradient';
 
 export type ModuleProgress = {
@@ -89,7 +88,6 @@ export interface UserSettings {
   language: string;
   avatar: string;
   darkMode: boolean;
-  accentTheme: AccentThemeId;
   cardStyle: CardStyleId;
   defaultWorkMinutes: number;
   flaresToggle?: boolean;
@@ -98,14 +96,20 @@ export interface UserSettings {
 }
 
 export type NorthStarCategory =
+  // Senior cycle (6)
   | 'independence' | 'family-community' | 'career-craft'
-  | 'college-learning' | 'prove-myself' | 'options-freedom';
+  | 'college-learning' | 'prove-myself' | 'options-freedom'
+  // Junior cycle (4) — Phase 5
+  | 'family-people' | 'prove-myself-jc' | 'curiosity-craft' | 'future-doors';
 
 export interface NorthStarVisionCard {
   id: string;
   label: string;
   icon: string;
   category: NorthStarCategory;
+  /** Phase 5: which curriculum level(s) can see this card. Default 'senior'
+   *  for any existing card without the field. */
+  curriculum?: 'junior' | 'senior' | 'both';
 }
 
 export interface NorthStar {

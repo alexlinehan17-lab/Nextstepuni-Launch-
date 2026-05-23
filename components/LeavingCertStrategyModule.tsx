@@ -118,7 +118,7 @@ const CommandWordDecoder = () => {
     return (
          <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Command Word Decoder</h4>
                 <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Misinterpreting this word is the #1 cause of losing marks.</p>
             </div>
@@ -128,8 +128,8 @@ const CommandWordDecoder = () => {
                         key={w.word}
                         onClick={() => setSelected(w)}
                         style={{
-                            backgroundColor: selected.word === w.word ? '#2A7D6F' : '#FFFFFF',
-                            border: selected.word === w.word ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+                            backgroundColor: selected.word === w.word ? '#F26B1F' : '#FFFFFF',
+                            border: selected.word === w.word ? '2px solid #F26B1F' : '2px solid #d0cdc8',
                             borderRadius: 20,
                             padding: '10px 20px',
                             fontSize: 14,
@@ -143,8 +143,8 @@ const CommandWordDecoder = () => {
                 ))}
             </div>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                 <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #2A7D6F', borderRadius: 14, padding: '20px 22px' }}>
-                    <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#e8f5f2', color: '#1a6358', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Expectation</span>
+                 <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #F26B1F', borderRadius: 14, padding: '20px 22px' }}>
+                    <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#FDEEDF', color: '#8C3A0E', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Expectation</span>
                     <p className="mt-3" style={{ fontSize: 15, color: '#1a1a1a' }}>{selected.expectation}</p>
                  </div>
                  <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderLeft: '4px solid #E85D75', borderRadius: 14, padding: '20px 22px' }}>
@@ -240,7 +240,7 @@ const ExamDayTimelineBuilder = () => {
     return (
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Exam Preparation</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Preparation</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Exam Morning Planner</h4>
                 <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Build your optimal exam morning routine. Order matters.</p>
             </div>
@@ -268,7 +268,7 @@ const ExamDayTimelineBuilder = () => {
                                 className="inline-flex items-center gap-1.5 transition-all"
                                 style={
                                     isSelected
-                                        ? { backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: '#1a6358', opacity: 0.6, cursor: 'default' }
+                                        ? { backgroundColor: '#FDEEDF', border: '2px solid #F26B1F', borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: '#8C3A0E', opacity: 0.6, cursor: 'default' }
                                         : activity.isBad
                                         ? { backgroundColor: '#FFFFFF', border: '2px solid #d0cdc8', borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: '#9e9186', cursor: 'pointer' }
                                         : { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: '#1a1a1a', cursor: 'pointer' }
@@ -297,7 +297,7 @@ const ExamDayTimelineBuilder = () => {
                                     {index < sequence.length - 1 && (
                                         <div className="absolute top-6 bottom-0" style={{ left: -1, width: 2, backgroundColor: '#e0dbd4' }} />
                                     )}
-                                    <div className="absolute top-4 rounded-full" style={{ left: -5, width: 8, height: 8, backgroundColor: activity.isBad ? '#E85D75' : '#2A7D6F' }} />
+                                    <div className="absolute top-4 rounded-full" style={{ left: -5, width: 8, height: 8, backgroundColor: activity.isBad ? '#E85D75' : '#F26B1F' }} />
                                     <div className="ml-4 mb-2 flex-1 flex items-center gap-2 bg-white dark:bg-zinc-900" style={{ border: activity.isBad ? '1.5px solid #E85D75' : '1.5px solid #d0cdc8', borderLeft: activity.isBad ? '4px solid #E85D75' : undefined, borderRadius: 12, padding: '14px 16px' }}>
                                         {activity.isBad && (
                                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E85D75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
@@ -324,7 +324,7 @@ const ExamDayTimelineBuilder = () => {
             {/* Buttons */}
             {sequence.length > 0 && !showFeedback && (
                 <div className="flex justify-center items-center gap-4 mt-6">
-                    <motion.button onClick={handleCheckPlan} whileTap={{ y: 3 }} className="text-white font-semibold" style={{ backgroundColor: '#2A7D6F', borderRadius: 100, padding: '13px 32px', fontSize: 15, borderBottom: '3px solid #1a5a4e', boxShadow: '0 4px 0 #1a5a4e' }}>
+                    <motion.button onClick={handleCheckPlan} whileTap={{ y: 3 }} className="text-white font-semibold" style={{ backgroundColor: '#F26B1F', borderRadius: 100, padding: '13px 32px', fontSize: 15, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}>
                         Check My Plan
                     </motion.button>
                     <button onClick={handleReset} style={{ backgroundColor: '#FFFFFF', border: '2px solid #d0cdc8', borderRadius: 100, padding: '13px 24px', fontSize: 14, fontWeight: 600, color: '#7a7068' }}>
@@ -351,11 +351,11 @@ const ExamDayTimelineBuilder = () => {
                             </div>
                         )}
 
-                        <div style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
-                            <p className="font-serif font-semibold mb-2" style={{ fontSize: 16, color: '#1a6358' }}>Optimal morning sequence:</p>
+                        <div style={{ borderLeft: '3px solid #F26B1F', backgroundColor: '#FDEEDF', borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
+                            <p className="font-serif font-semibold mb-2" style={{ fontSize: 16, color: '#8C3A0E' }}>Optimal morning sequence:</p>
                             <ol className="list-decimal list-inside space-y-1">
                                 {optimalSequence.map(a => (
-                                    <li key={a.id} style={{ fontSize: 14, color: '#1a6358' }}>{a.label} <span style={{ color: '#9e9186' }}>({a.time} min)</span></li>
+                                    <li key={a.id} style={{ fontSize: 14, color: '#8C3A0E' }}>{a.label} <span style={{ color: '#9e9186' }}>({a.time} min)</span></li>
                                 ))}
                             </ol>
                         </div>

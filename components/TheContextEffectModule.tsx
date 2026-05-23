@@ -216,16 +216,16 @@ const ContextCueExplorer = () => {
               onClick={() => toggleCue(cue.id)}
               className="flex items-center gap-3 text-left transition-all duration-200"
               style={{
-                backgroundColor: isSelected ? '#e8f5f2' : '#FFFFFF',
-                border: isSelected ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+                backgroundColor: isSelected ? '#FDEEDF' : '#FFFFFF',
+                border: isSelected ? '2px solid #F26B1F' : '2px solid #d0cdc8',
                 borderRadius: 14,
                 padding: '14px 18px',
-                color: isSelected ? '#1a6358' : '#9e9186',
+                color: isSelected ? '#8C3A0E' : '#9e9186',
                 cursor: revealed ? 'default' : 'pointer',
               }}
             >
-              <span style={{ flexShrink: 0, color: isSelected ? '#2A7D6F' : '#9e9186' }}>{CUE_ICONS[cue.id]}</span>
-              <span style={{ fontSize: 14, fontWeight: isSelected ? 600 : 500, color: isSelected ? '#1a6358' : '#5a5550' }}>{cue.label}</span>
+              <span style={{ flexShrink: 0, color: isSelected ? '#F26B1F' : '#9e9186' }}>{CUE_ICONS[cue.id]}</span>
+              <span style={{ fontSize: 14, fontWeight: isSelected ? 600 : 500, color: isSelected ? '#8C3A0E' : '#5a5550' }}>{cue.label}</span>
             </button>
           );
         })}
@@ -234,7 +234,7 @@ const ContextCueExplorer = () => {
       {selectedCount > 0 && !revealed && (
         <div className="text-center">
           <p className="text-sm mb-3" style={{ color: '#7a7068' }}>{selectedCount} cue{selectedCount !== 1 ? 's' : ''} selected</p>
-          <button onClick={() => setRevealed(true)} style={{ backgroundColor: '#2A7D6F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>
+          <button onClick={() => setRevealed(true)} style={{ backgroundColor: '#F26B1F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>
             See the Exam Hall
           </button>
         </div>
@@ -249,8 +249,8 @@ const ContextCueExplorer = () => {
                 <p className="font-serif font-semibold mb-2" style={{ fontSize: 14, color: '#1a1a1a' }}>Your Study Room — {selectedCount} cues</p>
                 <div className="flex flex-wrap gap-1.5">
                   {STUDY_CUES.filter((c) => selectedCues.has(c.id)).map((c) => (
-                    <span key={c.id} className="inline-flex items-center gap-1.5" style={{ backgroundColor: '#e8f5f2', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '4px 10px', fontSize: 12, fontWeight: 500, color: '#1a6358' }}>
-                      <span style={{ color: '#2A7D6F' }}>{CUE_ICONS[c.id]}</span> {c.label}
+                    <span key={c.id} className="inline-flex items-center gap-1.5" style={{ backgroundColor: '#FDEEDF', border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 10px', fontSize: 12, fontWeight: 500, color: '#8C3A0E' }}>
+                      <span style={{ color: '#F26B1F' }}>{CUE_ICONS[c.id]}</span> {c.label}
                     </span>
                   ))}
                 </div>
@@ -260,8 +260,8 @@ const ContextCueExplorer = () => {
                 <p className="font-serif font-semibold mb-2" style={{ fontSize: 14, color: '#1a1a1a' }}>The Exam Hall — {survivingCount} cue{survivingCount !== 1 ? 's' : ''} remain</p>
                 <div className="flex flex-wrap gap-1.5">
                   {STUDY_CUES.filter((c) => selectedCues.has(c.id) && c.survivesExam).map((c) => (
-                    <span key={c.id} className="inline-flex items-center gap-1.5" style={{ backgroundColor: '#e8f5f2', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '4px 10px', fontSize: 12, fontWeight: 500, color: '#1a6358' }}>
-                      <span style={{ color: '#2A7D6F' }}>{CUE_ICONS[c.id]}</span> {c.label}
+                    <span key={c.id} className="inline-flex items-center gap-1.5" style={{ backgroundColor: '#FDEEDF', border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 10px', fontSize: 12, fontWeight: 500, color: '#8C3A0E' }}>
+                      <span style={{ color: '#F26B1F' }}>{CUE_ICONS[c.id]}</span> {c.label}
                     </span>
                   ))}
                   {survivingCount === 0 && (
@@ -276,7 +276,7 @@ const ContextCueExplorer = () => {
               <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', marginBottom: 6, textTransform: 'uppercase' as const }}>Memory clues that survive</p>
               <div className="flex" style={{ border: '2px solid #1a1a1a', borderRadius: 100, height: 28, overflow: 'hidden' }}>
                 {survivingCount > 0 && (
-                  <MotionDiv className="h-full flex items-center justify-center" style={{ backgroundColor: '#2A7D6F' }} initial={{ width: 0 }} animate={{ width: `${100 - lostPercent}%` }} transition={{ duration: 0.8, ease: 'easeOut' }}>
+                  <MotionDiv className="h-full flex items-center justify-center" style={{ backgroundColor: '#F26B1F' }} initial={{ width: 0 }} animate={{ width: `${100 - lostPercent}%` }} transition={{ duration: 0.8, ease: 'easeOut' }}>
                     {(100 - lostPercent) > 15 && <span style={{ fontSize: 11, fontWeight: 600, color: '#FFFFFF' }}>{100 - lostPercent}% survive</span>}
                   </MotionDiv>
                 )}
@@ -357,7 +357,7 @@ const NoiseLevelCurve = () => {
   return (
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <div className="text-center mb-6">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Research Evidence</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Research Evidence</span>
         <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>The Noise-Performance Curve</h4>
         <p className="text-sm mt-1" style={{ color: '#7a7068' }}>How noise level affects how well your brain performs.</p>
       </div>
@@ -365,7 +365,7 @@ const NoiseLevelCurve = () => {
       {!revealed ? (
         <div className="text-center">
           <p className="text-sm mb-4" style={{ color: '#7a7068' }}>Is silence always best for studying? Or does a little noise actually help?</p>
-          <button onClick={() => setRevealed(true)} style={{ backgroundColor: '#2A7D6F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>
+          <button onClick={() => setRevealed(true)} style={{ backgroundColor: '#F26B1F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>
             See the Noise Curve
           </button>
         </div>
@@ -381,37 +381,37 @@ const NoiseLevelCurve = () => {
               <line x1={padL} y1={padT} x2={padL} y2={toY(0)} stroke="#d0cdc8" strokeWidth="1.5" />
 
               {/* Sweet spot zone */}
-              <rect x={toX(0.22)} y={padT} width={toX(0.62) - toX(0.22)} height={chartH} fill="rgba(42,125,111,0.06)" rx="4" />
-              <rect x={toX(0.22)} y={padT} width={toX(0.62) - toX(0.22)} height={chartH} fill="none" stroke="rgba(42,125,111,0.15)" strokeWidth="1" strokeDasharray="4 3" rx="4" />
+              <rect x={toX(0.22)} y={padT} width={toX(0.62) - toX(0.22)} height={chartH} fill="rgba(242,107,31,0.06)" rx="4" />
+              <rect x={toX(0.22)} y={padT} width={toX(0.62) - toX(0.22)} height={chartH} fill="none" stroke="rgba(242,107,31,0.15)" strokeWidth="1" strokeDasharray="4 3" rx="4" />
 
               {/* Zone labels */}
               <text x={toX(0.08)} y={toY(0.05)} fontSize="10" fill="#9e9186" textAnchor="middle" fontWeight="600">Too quiet</text>
               <text x={toX(0.88)} y={toY(0.05)} fontSize="10" fill="#9e9186" textAnchor="middle" fontWeight="600">Too loud</text>
 
               {/* Sweet spot label — positioned above chart to avoid overlap */}
-              <rect x={toX(0.42) - 32} y={padT - 20} width="64" height="16" rx="8" fill="white" stroke="rgba(42,125,111,0.2)" strokeWidth="1" />
-              <text x={toX(0.42)} y={padT - 9} fontSize="9" fill="#1a6358" textAnchor="middle" fontWeight="700">Sweet spot</text>
+              <rect x={toX(0.42) - 32} y={padT - 20} width="64" height="16" rx="8" fill="white" stroke="rgba(242,107,31,0.2)" strokeWidth="1" />
+              <text x={toX(0.42)} y={padT - 9} fontSize="9" fill="#8C3A0E" textAnchor="middle" fontWeight="700">Sweet spot</text>
 
               {/* Area fill */}
-              <motion.path d={buildArea(curvePoints)} fill="rgba(42,125,111,0.08)" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} />
+              <motion.path d={buildArea(curvePoints)} fill="rgba(242,107,31,0.08)" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} />
 
               {/* Curve line */}
-              <motion.path d={buildCurve(curvePoints)} fill="none" stroke="#2A7D6F" strokeWidth="3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.5, ease: 'easeOut' }} />
+              <motion.path d={buildCurve(curvePoints)} fill="none" stroke="#F26B1F" strokeWidth="3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.5, ease: 'easeOut' }} />
 
               {/* Focused/Analytical marker — offset left to avoid overlap */}
-              <motion.circle cx={toX(focusedPeakX)} cy={toY(focusedPeakY)} r="6" fill="#2A7D6F" stroke="white" strokeWidth="2.5" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 1.0 }} />
+              <motion.circle cx={toX(focusedPeakX)} cy={toY(focusedPeakY)} r="6" fill="#F26B1F" stroke="white" strokeWidth="2.5" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 1.0 }} />
               <motion.g initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}>
                 <line x1={toX(focusedPeakX)} y1={toY(focusedPeakY) - 8} x2={toX(focusedPeakX) - 30} y2={toY(focusedPeakY) - 35} stroke="#d0cdc8" strokeWidth="1" />
-                <rect x={toX(focusedPeakX) - 72} y={toY(focusedPeakY) - 47} width="84" height="18" rx="9" fill="white" stroke="rgba(42,125,111,0.2)" strokeWidth="1" />
-                <text x={toX(focusedPeakX) - 30} y={toY(focusedPeakY) - 34} fontSize="9" fill="#2A7D6F" textAnchor="middle" fontWeight="600">Focused tasks</text>
+                <rect x={toX(focusedPeakX) - 72} y={toY(focusedPeakY) - 47} width="84" height="18" rx="9" fill="white" stroke="rgba(242,107,31,0.2)" strokeWidth="1" />
+                <text x={toX(focusedPeakX) - 30} y={toY(focusedPeakY) - 34} fontSize="9" fill="#F26B1F" textAnchor="middle" fontWeight="600">Focused tasks</text>
               </motion.g>
 
               {/* Creative/Conceptual marker — offset right */}
-              <motion.circle cx={toX(creativePeakX)} cy={toY(creativePeakY)} r="6" fill="#2A7D6F" stroke="white" strokeWidth="2.5" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 1.3 }} />
+              <motion.circle cx={toX(creativePeakX)} cy={toY(creativePeakY)} r="6" fill="#F26B1F" stroke="white" strokeWidth="2.5" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 1.3 }} />
               <motion.g initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }}>
                 <line x1={toX(creativePeakX)} y1={toY(creativePeakY) - 8} x2={toX(creativePeakX) + 30} y2={toY(creativePeakY) - 35} stroke="#d0cdc8" strokeWidth="1" />
-                <rect x={toX(creativePeakX) - 12} y={toY(creativePeakY) - 47} width="84" height="18" rx="9" fill="white" stroke="rgba(42,125,111,0.2)" strokeWidth="1" />
-                <text x={toX(creativePeakX) + 30} y={toY(creativePeakY) - 34} fontSize="9" fill="#2A7D6F" textAnchor="middle" fontWeight="600">Creative tasks</text>
+                <rect x={toX(creativePeakX) - 12} y={toY(creativePeakY) - 47} width="84" height="18" rx="9" fill="white" stroke="rgba(242,107,31,0.2)" strokeWidth="1" />
+                <text x={toX(creativePeakX) + 30} y={toY(creativePeakY) - 34} fontSize="9" fill="#F26B1F" textAnchor="middle" fontWeight="600">Creative tasks</text>
               </motion.g>
 
               {/* X-axis labels */}
@@ -428,9 +428,9 @@ const NoiseLevelCurve = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-3 mt-4">
-            <div className="flex items-start gap-3" style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2A7D6F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 2 }}><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg>
-              <p style={{ fontSize: 14, color: '#1a6358' }}><strong>Focused tasks</strong> (maths problems, memorisation) work best in quiet spots. Silence lets you concentrate without distraction.</p>
+            <div className="flex items-start gap-3" style={{ borderLeft: '3px solid #F26B1F', backgroundColor: '#FDEEDF', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F26B1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 2 }}><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg>
+              <p style={{ fontSize: 14, color: '#8C3A0E' }}><strong>Focused tasks</strong> (maths problems, memorisation) work best in quiet spots. Silence lets you concentrate without distraction.</p>
             </div>
             <div className="flex items-start gap-3" style={{ borderLeft: '3px solid #d0cdc8', backgroundColor: '#f4f0eb', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7a7068" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 2 }}><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0018 8 6 6 0 006 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 018.91 14"/></svg>

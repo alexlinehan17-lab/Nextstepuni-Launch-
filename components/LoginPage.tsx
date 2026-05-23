@@ -453,7 +453,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   };
 
   // ── Shared styles ──
-  const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 placeholder-zinc-400 outline-none transition-all bg-white border-2 border-zinc-200 focus:border-[#2A7D6F]";
+  const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 placeholder-zinc-400 outline-none transition-all bg-white border-2 border-zinc-200 focus:border-[#F26B1F]";
   // Password inputs need extra right padding so the show/hide eye toggle and
   // iOS's own AutoFill / Strong-Password key icon don't visually collide
   // inside the field.
@@ -513,7 +513,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
                   onClick={() => { resetForm(); setView('login'); }}
                   className="w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2"
-                  style={{ color: '#2A7D6F', borderColor: 'rgba(42,125,111,0.3)', backgroundColor: 'white' }}
+                  style={{ color: '#F26B1F', borderColor: 'rgba(242,107,31,0.3)', backgroundColor: 'white' }}
                 >
                   I already have an account
                 </MotionButton>
@@ -562,7 +562,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 <div>
                   <div className="flex items-center justify-between mb-1.5">
                     <label className="text-xs font-bold uppercase tracking-wider" style={{ color: '#9e9186' }}>Password</label>
-                    <button type="button" onClick={() => { setView('forgot'); setError(''); }} className="text-xs font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Forgot?</button>
+                    <button type="button" onClick={() => { setView('forgot'); setError(''); }} className="text-xs font-semibold transition-colors hover:opacity-80" style={{ color: '#F26B1F' }}>Forgot?</button>
                   </div>
                   <div className="relative">
                     <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
@@ -596,7 +596,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 </>
               )}
               <p className="text-sm text-center mt-6" style={{ color: '#9e9186' }}>
-                Don&apos;t have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('register'); }} className="font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Register</button>
+                Don&apos;t have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('register'); }} className="font-semibold transition-colors hover:opacity-80" style={{ color: '#F26B1F' }}>Register</button>
               </p>
             </>
           )}
@@ -657,9 +657,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     animate={{ scale: 1, rotate: 0 }}
                     transition={SPRING_POP}
                     className="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center"
-                    style={{ backgroundColor: '#e8f5f2' }}
+                    style={{ backgroundColor: '#FDEEDF' }}
                   >
-                    <Check size={24} style={{ color: '#2A7D6F' }} />
+                    <Check size={24} style={{ color: '#F26B1F' }} />
                   </MotionDiv>
                   <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={SPRING_GENTLE}>
                     <p className="text-sm font-medium mb-1" style={{ color: '#1a1a1a' }}>Check your inbox</p>
@@ -685,7 +685,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                       whileTap={resendCountdown > 0 ? {} : btnTap}
                       transition={SPRING_FAST}
                       className="w-full py-3 rounded-xl text-[14px] font-medium transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed"
-                      style={{ color: '#2A7D6F', borderColor: 'rgba(42,125,111,0.3)', backgroundColor: 'white' }}
+                      style={{ color: '#F26B1F', borderColor: 'rgba(242,107,31,0.3)', backgroundColor: 'white' }}
                     >
                       {resendCountdown > 0
                         ? `Resend in ${resendCountdown}s`
@@ -727,7 +727,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                       className="h-1.5 rounded-full"
                       animate={{
                         width: s === registerStep ? 24 : 8,
-                        backgroundColor: s <= registerStep ? '#2A7D6F' : '#d0cdc8',
+                        backgroundColor: s <= registerStep ? '#F26B1F' : '#d0cdc8',
                       }}
                       transition={SPRING_GENTLE}
                     />
@@ -765,7 +765,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                       </MotionButton>
                     </div>
                     <p className="text-sm text-center mt-6" style={{ color: '#9e9186' }}>
-                      Already have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('login'); }} className="font-semibold transition-colors hover:opacity-80" style={{ color: '#2A7D6F' }}>Sign in</button>
+                      Already have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('login'); }} className="font-semibold transition-colors hover:opacity-80" style={{ color: '#F26B1F' }}>Sign in</button>
                     </p>
                   </MotionDiv>
                 )}
@@ -787,7 +787,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                           <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{6 - password.length} more character{6 - password.length !== 1 ? 's' : ''} needed</p>
                         )}
                         {password.length >= 6 && (
-                          <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: '#2A7D6F' }}><Check size={12} /> Looks good</p>
+                          <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: '#F26B1F' }}><Check size={12} /> Looks good</p>
                         )}
                       </div>
                       <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
@@ -804,7 +804,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Pick one that feels like you. You can change it later.</p>
                     <div className="grid grid-cols-4 gap-3 mb-6">
                       {AVATAR_SEEDS.map(seed => (
-                        <button key={seed} type="button" onClick={() => setAvatar(seed)} className={`rounded-xl aspect-square p-1 transition-all ${selectedAvatar === seed ? 'ring-2 ring-offset-2 bg-[#e8f5f2]' : 'hover:ring-1 hover:ring-zinc-300 bg-white'}`} style={selectedAvatar === seed ? { ringColor: '#2A7D6F', borderColor: '#2A7D6F', border: '2px solid #2A7D6F' } : { border: '2px solid #d0cdc8' }}>
+                        <button key={seed} type="button" onClick={() => setAvatar(seed)} className={`rounded-xl aspect-square p-1 transition-all ${selectedAvatar === seed ? 'ring-2 ring-offset-2 bg-[#FDEEDF]' : 'hover:ring-1 hover:ring-zinc-300 bg-white'}`} style={selectedAvatar === seed ? { ringColor: '#F26B1F', borderColor: '#F26B1F', border: '2px solid #F26B1F' } : { border: '2px solid #d0cdc8' }}>
                           <img src={getAvatarUrl(seed)} alt={seed} className="w-full h-full rounded-lg" />
                         </button>
                       ))}

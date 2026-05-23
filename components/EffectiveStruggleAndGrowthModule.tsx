@@ -10,12 +10,13 @@ import {
   Scaling, Brain, SlidersHorizontal, Thermometer, Puzzle, BarChartHorizontal
 } from 'lucide-react';
 import { type ModuleProgress } from '../types';
-import { tealTheme } from '../moduleThemes';
+import { accentTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { COLORS } from '../design/tokens';
 
-const theme = tealTheme;
+const theme = accentTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 const CognitiveLoadBalancer = () => {
@@ -28,14 +29,14 @@ const CognitiveLoadBalancer = () => {
     const loadTypes: { key: 'intrinsic' | 'extraneous' | 'germane'; label: string; plain: string; example: string; direction: string; color: string; barColor: string; fixed?: boolean }[] = [
       { key: 'intrinsic', label: 'Intrinsic Load', plain: 'The difficulty of the topic itself', example: 'e.g., Probability is harder than basic addition', direction: 'Fixed — you can\'t change this, only manage around it', color: '#1a1a1a', barColor: '#e0dbd4', fixed: true },
       { key: 'extraneous', label: 'Extraneous Load', plain: 'Waste from distractions & confusion', example: 'e.g., Phone buzzing, noisy room, unclear instructions', direction: 'Minimize this — it steals space from learning', color: '#E85D75', barColor: '#E85D75' },
-      { key: 'germane', label: 'Germane Load', plain: 'The productive effort that builds memory', example: 'e.g., Active recall, self-explanation, practice questions', direction: 'Maximize this — it\'s the only load that causes learning', color: '#2A7D6F', barColor: '#2A7D6F' },
+      { key: 'germane', label: 'Germane Load', plain: 'The productive effort that builds memory', example: 'e.g., Active recall, self-explanation, practice questions', direction: 'Maximize this — it\'s the only load that causes learning', color: COLORS.success, barColor: COLORS.success },
     ];
 
     return (
       <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
         {/* Section chip + title */}
         <div className="text-center mb-8">
-          <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Interactive Simulation</span>
+          <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Interactive Simulation</span>
           <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Cognitive Load Balancer</h4>
           <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Your Working Memory is a small container. Three types of load compete for space inside it.</p>
         </div>
@@ -44,13 +45,13 @@ const CognitiveLoadBalancer = () => {
         <div className="mb-8">
           <div className="flex items-center justify-between mb-2">
             <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', textTransform: 'uppercase' as const }}>Working Memory Capacity</span>
-            <span className="font-semibold" style={{ fontSize: 13, color: overload ? '#E85D75' : '#2A7D6F' }}>{total}% / 100%</span>
+            <span className="font-semibold" style={{ fontSize: 13, color: overload ? '#E85D75' : COLORS.success }}>{total}% / 100%</span>
           </div>
           <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 12, overflow: 'hidden', height: 28 }}>
             <div className="flex h-full">
               <motion.div style={{ backgroundColor: '#e0dbd4' }} animate={{ width: `${Math.min(loads.intrinsic, 100)}%` }} transition={{ duration: 0.3 }} />
               <motion.div style={{ backgroundColor: '#E85D75' }} animate={{ width: `${Math.min(loads.extraneous, 100 - loads.intrinsic > 0 ? loads.extraneous : 0)}%` }} transition={{ duration: 0.3 }} />
-              <motion.div style={{ backgroundColor: '#2A7D6F' }} animate={{ width: `${Math.min(loads.germane, germaneRoom > 0 ? loads.germane : 0)}%` }} transition={{ duration: 0.3 }} />
+              <motion.div style={{ backgroundColor: COLORS.success }} animate={{ width: `${Math.min(loads.germane, germaneRoom > 0 ? loads.germane : 0)}%` }} transition={{ duration: 0.3 }} />
             </div>
           </div>
           {/* Legend */}
@@ -64,7 +65,7 @@ const CognitiveLoadBalancer = () => {
               <span style={{ fontSize: 12, color: '#7a7068' }}>Extraneous</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#2A7D6F' }} />
+              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: COLORS.success }} />
               <span style={{ fontSize: 12, color: '#7a7068' }}>Germane</span>
             </div>
           </div>
@@ -91,7 +92,7 @@ const CognitiveLoadBalancer = () => {
                 type="range" min="5" max="70"
                 value={loads[l.key]}
                 onChange={e => setLoads({ ...loads, [l.key]: parseInt(e.target.value) })}
-                className="chunky-slider chunky-slider-teal"
+                className="chunky-slider chunky-slider-accent"
                 disabled={l.fixed}
                 style={l.fixed ? { opacity: 0.5 } : undefined}
               />
@@ -107,8 +108,8 @@ const CognitiveLoadBalancer = () => {
               <p className="text-sm italic" style={{ color: '#b33030' }}>Working memory overloaded — learning becomes very difficult at this point.</p>
             </motion.div>
           ) : healthy ? (
-            <motion.div key="healthy" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-              <p className="text-sm italic" style={{ color: '#1a6358' }}>Good balance — your working memory has space to form lasting memories.</p>
+            <motion.div key="healthy" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} style={{ borderLeft: `3px solid ${COLORS.success}`, backgroundColor: COLORS.successTint, borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
+              <p className="text-sm italic" style={{ color: COLORS.successDarkText }}>Good balance — your working memory has space to form lasting memories.</p>
             </motion.div>
           ) : (
             <motion.div key="moderate" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} style={{ borderLeft: '3px solid #d0cdc8', backgroundColor: '#f8f6f2', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
@@ -151,7 +152,7 @@ const IllusionOfCompetenceChart = () => {
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             {/* Section chip + title */}
             <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Research Evidence</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Research Evidence</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>The Great Deception</h4>
                 <p className="text-sm mt-1" style={{ color: '#7a7068' }}>The gap between what <em>feels</em> effective and what <em>is</em> effective is massive.</p>
             </div>
@@ -182,7 +183,7 @@ const IllusionOfCompetenceChart = () => {
                         <div className="relative flex items-end justify-center" style={{ height: 200 }}>
                             <motion.div
                                 className="w-full relative"
-                                style={{ backgroundColor: '#2A7D6F', borderRadius: '8px 8px 0 0', maxWidth: 80 }}
+                                style={{ backgroundColor: COLORS.success, borderRadius: '8px 8px 0 0', maxWidth: 80 }}
                                 initial={{ height: 0 }}
                                 animate={{ height: `${activeH}%` }}
                                 transition={{ type: 'spring', stiffness: 100 }}
@@ -204,9 +205,9 @@ const IllusionOfCompetenceChart = () => {
                         borderRadius: 20,
                         fontSize: 13,
                         fontWeight: 600,
-                        backgroundColor: view === 'prediction' ? '#2A7D6F' : '#FFFFFF',
+                        backgroundColor: view === 'prediction' ? COLORS.accent : '#FFFFFF',
                         color: view === 'prediction' ? '#FFFFFF' : '#7a7068',
-                        border: view === 'prediction' ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+                        border: view === 'prediction' ? `2px solid ${COLORS.accent}` : '2px solid #d0cdc8',
                         cursor: 'pointer',
                     }}
                 >
@@ -219,9 +220,9 @@ const IllusionOfCompetenceChart = () => {
                         borderRadius: 20,
                         fontSize: 13,
                         fontWeight: 600,
-                        backgroundColor: view === 'reality' ? '#2A7D6F' : '#FFFFFF',
+                        backgroundColor: view === 'reality' ? COLORS.accent : '#FFFFFF',
                         color: view === 'reality' ? '#FFFFFF' : '#7a7068',
-                        border: view === 'reality' ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+                        border: view === 'reality' ? `2px solid ${COLORS.accent}` : '2px solid #d0cdc8',
                         cursor: 'pointer',
                     }}
                 >
@@ -237,9 +238,9 @@ const IllusionOfCompetenceChart = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 6 }}
                         className="mt-4 max-w-lg mx-auto"
-                        style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
+                        style={{ borderLeft: `3px solid ${COLORS.success}`, backgroundColor: COLORS.successTint, borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
                     >
-                        <p className="text-sm italic" style={{ color: '#1a6358' }}>Active self-testing produces 3× better retention — but most students never use it because it feels harder.</p>
+                        <p className="text-sm italic" style={{ color: COLORS.successDarkText }}>Active self-testing produces 3× better retention — but most students never use it because it feels harder.</p>
                     </motion.div>
                 )}
             </AnimatePresence>
@@ -315,7 +316,7 @@ const ScenarioDiagnosis = () => {
             className={`flex-1 h-2 rounded-full transition-all ${
               revealed.has(i)
                 ? answers[i] === scenarios[i].answer ? 'bg-emerald-500' : 'bg-rose-400'
-                : i === current ? 'bg-teal-400' : 'bg-zinc-200 dark:bg-zinc-700'
+                : i === current ? 'bg-[#F26B1F]/70' : 'bg-zinc-200 dark:bg-zinc-700'
             }`}
           />
         ))}
@@ -394,7 +395,7 @@ const ScenarioDiagnosis = () => {
         {current < scenarios.length - 1 ? (
           <button
             onClick={() => setCurrent(c => c + 1)}
-            className="px-4 py-2 text-xs font-bold text-teal-600 dark:text-teal-400"
+            className="px-4 py-2 text-xs font-bold text-[#F26B1F] dark:text-[#F26B1F]"
           >
             Next
           </button>
@@ -410,12 +411,12 @@ const ScenarioDiagnosis = () => {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-4 p-4 bg-teal-50 dark:bg-teal-950/20 rounded-xl border border-teal-200 dark:border-teal-800/40 text-center"
+          className="mt-4 p-4 bg-[#E8F2EC] dark:bg-[#3A8D5F]/20 rounded-xl border border-[#3A8D5F]/40 dark:border-[#3A8D5F]/60 text-center"
         >
-          <p className="text-sm font-semibold text-teal-700 dark:text-teal-300">
+          <p className="text-sm font-semibold text-[#1F5F3E] dark:text-[#3A8D5F]">
             The formula: Right Zone + Low Noise + Real Friction = Optimized Learning.
           </p>
-          <p className="text-xs text-teal-600/70 dark:text-teal-400/60 mt-1">
+          <p className="text-xs text-[#3A8D5F]/70 dark:text-[#3A8D5F]/60 mt-1">
             Before every study session, run this quick diagnostic on your setup.
           </p>
         </motion.div>
@@ -550,7 +551,7 @@ const ConfidenceRetentionParadox = () => {
             {!revealed ? (
                 <div className="text-center">
                     <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Most students judge their learning by how confident they feel. What does that confidence actually track over time?</p>
-                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-teal-500 text-white hover:bg-teal-600 transition-colors">
+                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[#F26B1F] text-white hover:bg-[#B54D14] transition-colors">
                         Reveal the Trap
                     </button>
                 </div>

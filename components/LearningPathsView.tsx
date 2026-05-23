@@ -83,7 +83,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
           <button
             onClick={onBack}
             aria-label="Back"
-            className="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-[#EDEBE8] hover:bg-[#F8F4EC] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(42,125,111,0.35)]"
+            className="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-[#EDEBE8] hover:bg-[#F8F4EC] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)]"
             style={{ boxShadow: '0 1px 2px rgba(28,25,23,0.04)' }}
           >
             <ArrowLeft size={18} className="text-[#1a1a1a]" />
@@ -251,7 +251,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
                     ) : (
                       <button
                         onClick={() => firstIncomplete && onSelectModule(firstIncomplete)}
-                        className="group inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(42,125,111,0.35)] rounded-md"
+                        className="group inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)] rounded-md"
                         style={{
                           ...SANS,
                           fontSize: 14,
@@ -271,7 +271,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
 
                     <button
                       onClick={() => setExpandedPathId(isExpanded ? null : path.id)}
-                      className="inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(42,125,111,0.35)] rounded-md"
+                      className="inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)] rounded-md"
                       style={{
                         ...SANS,
                         fontSize: 12,

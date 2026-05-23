@@ -21,6 +21,7 @@ import { STRATEGY_REGISTRY } from '../utils/strategyRegistry';
 import { type WeeklyChallengeState } from '../hooks/useWeeklyChallenge';
 import { ToolHeader } from './ToolHeader';
 import { TrainingHubIcon } from './toolIcons';
+import { COLORS } from '../design/tokens';
 
 // ─── Config ─────────────────────────────────────────────────
 
@@ -30,6 +31,9 @@ const RANK_ICONS: Record<string, React.ElementType> = {
 
 const _TIER_ORDER: MasteryTier[] = ['habitual', 'applied', 'practiced', 'learned'];
 const TIER_LABELS: Record<MasteryTier, string> = { none: '', learned: 'Learned', practiced: 'Practiced', applied: 'Applied', habitual: 'Habitual' };
+// `practiced` tier deliberately keeps the legacy teal #2A7D6F — this is the
+// mastery-tier data-viz colour, not brand accent. Preserved per the colour
+// pivot scope notes (data-viz preserve).
 const TIER_COLORS: Record<MasteryTier, string> = { none: '#A8A29E', learned: '#3B82F6', practiced: '#2A7D6F', applied: '#F59E0B', habitual: '#7C3AED' };
 const TIER_INDEX: Record<MasteryTier, number> = { none: -1, learned: 0, practiced: 1, applied: 2, habitual: 3 };
 
@@ -44,7 +48,7 @@ const CHALLENGE_ICONS: Record<string, React.ElementType> = {
   Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck, Zap, Trophy,
 };
 
-const GOAL_COLORS = ['#2A7D6F', '#E67E22', '#6366f1'];
+const GOAL_COLORS = [COLORS.accent, '#E67E22', '#6366f1'];
 
 // ─── Component ──────────────────────────────────────────────
 
@@ -102,7 +106,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
       {/* ── Editorial header ── */}
       <div className="px-6 max-w-3xl mx-auto pt-4">
         <ToolHeader
-          themeColor="#2A7D6F"
+          themeColor={COLORS.accent}
           eyebrow="The Programme"
           title="Training Hub"
           subtitle="Build your streak. Earn your rank. Watch the work compound — week by week, point by point."
@@ -214,36 +218,36 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                   </div>
                 );
               })}
-              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '12px', fontWeight: 600, color: '#2A7D6F', marginLeft: '4px' }}>
+              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '12px', fontWeight: 600, color: COLORS.accent, marginLeft: '4px' }}>
                 {weeklyGoals.filter(g => (weeklyGoalProgress[g.metric] ?? 0) >= g.target).length === 3 ? 'Bonus earned!' : '+50 JP bonus'}
               </span>
             </div>
           </div>
 
           {/* Weekly Challenge */}
-          {weeklyChallenge?.isLoaded && !weeklyChallenge.isClaimed && (() => {
+          {weeklyChallenge?.isLoaded && weeklyChallenge?.challenge && !weeklyChallenge.isClaimed && (() => {
             const ch = weeklyChallenge;
-            const CIcon = CHALLENGE_ICONS[ch.challenge.icon] || Trophy;
-            const pct = Math.min(100, Math.round((ch.current / ch.challenge.target) * 100));
+            const CIcon = CHALLENGE_ICONS[ch.challenge!.icon] || Trophy;
+            const pct = Math.min(100, Math.round((ch.current / ch.challenge!.target) * 100));
             return (
               <div className="flex items-center gap-3 rounded-2xl px-5 py-4 mt-3 bg-white dark:bg-zinc-900" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(42,125,111,0.12)' }}>
-                  <CIcon size={20} style={{ color: '#2A7D6F' }} />
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(242,107,31,0.12)' }}>
+                  <CIcon size={20} style={{ color: COLORS.accent }} />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm font-semibold truncate" style={{ color: '#1a1a1a' }}>{ch.challenge.title}</p>
-                  <p className="text-xs" style={{ color: '#9e9186' }}>{ch.challenge.description || `${ch.current}/${ch.challenge.target}`}</p>
+                  <p className="text-sm font-semibold truncate" style={{ color: '#1a1a1a' }}>{ch.challenge!.title}</p>
+                  <p className="text-xs" style={{ color: '#9e9186' }}>{ch.challenge!.description || `${ch.current}/${ch.challenge!.target}`}</p>
                 </div>
                 {ch.isCompleted && !ch.isClaimed ? (
-                  <button onClick={async () => { await ch.claimReward(); pointsReload?.(); }} className="px-4 py-2 rounded-full text-xs font-bold text-white shrink-0" style={{ backgroundColor: '#2A7D6F' }}>
+                  <button onClick={async () => { await ch.claimReward(); pointsReload?.(); }} className="px-4 py-2 rounded-full text-xs font-bold text-white shrink-0" style={{ backgroundColor: COLORS.accent }}>
                     Claim
                   </button>
                 ) : (
                   <div className="flex items-center gap-2 shrink-0">
                     <div className="w-10 h-2 rounded-full overflow-hidden" style={{ backgroundColor: '#e8e4de' }}>
-                      <div className="h-full rounded-full" style={{ backgroundColor: '#2A7D6F', width: `${pct}%` }} />
+                      <div className="h-full rounded-full" style={{ backgroundColor: COLORS.accent, width: `${pct}%` }} />
                     </div>
-                    <span style={{ fontSize: '11px', fontWeight: 700, color: '#2A7D6F' }}>{pct}%</span>
+                    <span style={{ fontSize: '11px', fontWeight: 700, color: COLORS.accent }}>{pct}%</span>
                   </div>
                 )}
               </div>
@@ -377,7 +381,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
             <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 700, letterSpacing: '0.15em', color: '#9e9186', textTransform: 'uppercase', marginBottom: '12px' }}>Personal Bests</p>
             <div className="grid grid-cols-2 gap-3">
               {[
-                { key: 'bestDayPoints', label: 'Best Day Points', color: '#2A7D6F' },
+                { key: 'bestDayPoints', label: 'Best Day Points', color: COLORS.accent },
                 { key: 'bestDaySections', label: 'Best Day Sections', color: '#E67E22' },
                 { key: 'bestWeekPoints', label: 'Best Week Points', color: '#6366f1' },
                 { key: 'bestWeekSessions', label: 'Best Week Sessions', color: '#E84393' },

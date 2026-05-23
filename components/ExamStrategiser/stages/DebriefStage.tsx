@@ -30,8 +30,8 @@ import {
 } from '../../../types/examStrategiser';
 import CollapsibleQuestionCard from '../CollapsibleQuestionCard';
 import { TRAP_PATTERNS } from '../../../data/examStrategy';
+import { ACCENT, ACCENT_TINT } from '../colors';
 
-const TEAL = '#2A7D6F';
 
 interface Props {
   question: ExamQuestion;
@@ -151,12 +151,12 @@ const AnswerBox: React.FC<{
     <div
       className="rounded-lg"
       style={{
-        backgroundColor: isCorrect ? '#F0FAF8' : '#FFFFFF',
-        border: `1px solid ${isCorrect ? `${TEAL}33` : '#EDEBE8'}`,
+        backgroundColor: isCorrect ? ACCENT_TINT : '#FFFFFF',
+        border: `1px solid ${isCorrect ? `${ACCENT}33` : '#EDEBE8'}`,
         padding: '10px 14px',
       }}
     >
-      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: isCorrect ? TEAL : '#A8A29E', marginBottom: 4 }}>
+      <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: isCorrect ? ACCENT : '#A8A29E', marginBottom: 4 }}>
         {label}
       </p>
       <p className="font-sans" style={{ fontSize: 13, color: '#1A1A1A', lineHeight: 1.45, fontWeight: isCorrect ? 600 : 500 }}>
@@ -168,7 +168,7 @@ const AnswerBox: React.FC<{
 
 const Block: React.FC<{ label: string; children: React.ReactNode }> = ({ label, children }) => (
   <div className="mt-4">
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: TEAL, marginBottom: 5 }}>
+    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: ACCENT, marginBottom: 5 }}>
       {label}
     </p>
     {children}
@@ -193,12 +193,12 @@ const BiggestMistakeCard: React.FC<{ mistake: NonNullable<ExamQuestion['biggestM
   <article
     className="rounded-2xl"
     style={{
-      backgroundColor: '#F0FAF8',
-      border: `1px solid ${TEAL}33`,
+      backgroundColor: ACCENT_TINT,
+      border: `1px solid ${ACCENT}33`,
       padding: '20px 22px',
     }}
   >
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 6 }}>
+    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 6 }}>
       The biggest mistake on this question type
     </p>
     <h3 className="font-serif" style={{ fontSize: 17, fontWeight: 600, color: '#1A1A1A', marginBottom: 8, lineHeight: 1.35 }}>
@@ -217,12 +217,12 @@ const RelatedPatternsCard: React.FC<{ patterns: TrapPattern[]; onOpen: () => voi
   <section
     className="rounded-2xl"
     style={{
-      backgroundColor: '#F0FAF8',
-      border: `1px solid ${TEAL}33`,
+      backgroundColor: ACCENT_TINT,
+      border: `1px solid ${ACCENT}33`,
       padding: '18px 20px',
     }}
   >
-    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 6 }}>
+    <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 6 }}>
       Recognised in {patterns.length} trap pattern{patterns.length === 1 ? '' : 's'}
     </p>
     <p className="font-sans" style={{ fontSize: 12.5, color: '#5a5550', lineHeight: 1.55, marginBottom: 12 }}>
@@ -231,7 +231,7 @@ const RelatedPatternsCard: React.FC<{ patterns: TrapPattern[]; onOpen: () => voi
     <ul className="space-y-1.5">
       {patterns.map(p => (
         <li key={p.id} className="font-sans" style={{ fontSize: 13, color: '#1A1A1A' }}>
-          <span style={{ color: TEAL, marginRight: 6 }}>·</span>
+          <span style={{ color: ACCENT, marginRight: 6 }}>·</span>
           <span style={{ fontWeight: 600 }}>{p.name}</span>
         </li>
       ))}
@@ -240,7 +240,7 @@ const RelatedPatternsCard: React.FC<{ patterns: TrapPattern[]; onOpen: () => voi
       type="button"
       onClick={onOpen}
       className="font-sans inline-flex items-center gap-1 mt-4"
-      style={{ fontSize: 12, fontWeight: 600, color: TEAL, background: 'transparent', border: 'none', padding: 0, cursor: 'pointer' }}
+      style={{ fontSize: 12, fontWeight: 600, color: ACCENT, background: 'transparent', border: 'none', padding: 0, cursor: 'pointer' }}
     >
       See all trap patterns
       <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden>

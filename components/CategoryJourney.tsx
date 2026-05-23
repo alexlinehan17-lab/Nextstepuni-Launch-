@@ -15,6 +15,7 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight, Check, Clock, ChevronDown, Sparkles } from 'lucide-react';
 import { type CourseData } from './Library';
 import { type UserProgress } from '../types';
+import { COLORS } from '../design/tokens';
 
 const MotionDiv = motion.div as any;
 const EASE = [0.16, 1, 0.3, 1] as number[];
@@ -23,19 +24,19 @@ const SERIF = "'Source Serif 4', serif";
 // ── Unique SVG backgrounds — abstract, architectural, no emojis ──
 
 const CARD_SHAPES: React.ReactNode[] = [
-  /* 01 */ <><circle cx="420" cy="140" r="200" fill="rgba(42,125,111,0.04)" /><circle cx="420" cy="140" r="120" fill="rgba(42,125,111,0.03)" /></>,
-  /* 02 */ <><path d="M350 0 Q500 200 350 400" stroke="rgba(42,125,111,0.06)" strokeWidth="1.5" fill="none" /><path d="M380 0 Q530 200 380 400" stroke="rgba(42,125,111,0.04)" strokeWidth="1.5" fill="none" /></>,
-  /* 03 */ <><rect x="320" y="60" width="220" height="280" rx="110" fill="rgba(42,125,111,0.035)" transform="rotate(-15 430 200)" /></>,
-  /* 04 */ <><circle cx="450" cy="200" r="160" fill="none" stroke="rgba(42,125,111,0.05)" strokeWidth="1" /><circle cx="450" cy="200" r="100" fill="none" stroke="rgba(42,125,111,0.04)" strokeWidth="1" /><circle cx="450" cy="200" r="40" fill="rgba(42,125,111,0.04)" /></>,
-  /* 05 */ <><path d="M300 50 L550 200 L300 350 Z" fill="rgba(42,125,111,0.03)" stroke="rgba(42,125,111,0.04)" strokeWidth="1" /></>,
-  /* 06 */ <><ellipse cx="430" cy="200" rx="180" ry="120" fill="rgba(42,125,111,0.035)" transform="rotate(20 430 200)" /></>,
-  /* 07 */ <><line x1="300" y1="0" x2="550" y2="400" stroke="rgba(42,125,111,0.04)" strokeWidth="60" strokeLinecap="round" /><line x1="550" y1="0" x2="300" y2="400" stroke="rgba(42,125,111,0.03)" strokeWidth="40" strokeLinecap="round" /></>,
-  /* 08 */ <><rect x="340" y="80" width="160" height="240" rx="6" fill="rgba(42,125,111,0.03)" /><rect x="370" y="110" width="160" height="200" rx="6" fill="rgba(42,125,111,0.03)" /></>,
-  /* 09 */ <><path d="M320 200 Q420 60 520 200 Q420 340 320 200Z" fill="rgba(42,125,111,0.04)" /></>,
-  /* 10 */ <><path d="M300 300 Q400 100 500 300" fill="none" stroke="rgba(42,125,111,0.05)" strokeWidth="2" /><path d="M300 320 Q400 120 500 320" fill="none" stroke="rgba(42,125,111,0.04)" strokeWidth="2" /><path d="M300 340 Q400 140 500 340" fill="none" stroke="rgba(42,125,111,0.03)" strokeWidth="2" /></>,
-  /* 11 */ <><polygon points="430,60 530,180 490,320 370,320 330,180" fill="rgba(42,125,111,0.03)" stroke="rgba(42,125,111,0.04)" strokeWidth="1" /></>,
-  /* 12 */ <><circle cx="380" cy="150" r="80" fill="rgba(42,125,111,0.03)" /><circle cx="470" cy="250" r="80" fill="rgba(42,125,111,0.035)" /><circle cx="360" cy="280" r="60" fill="rgba(42,125,111,0.03)" /></>,
-  /* 13 */ <><circle cx="430" cy="200" r="130" fill="rgba(42,125,111,0.04)" /><line x1="430" y1="70" x2="430" y2="330" stroke="rgba(42,125,111,0.05)" strokeWidth="1" /><line x1="300" y1="200" x2="560" y2="200" stroke="rgba(42,125,111,0.05)" strokeWidth="1" /></>,
+  /* 01 */ <><circle cx="420" cy="140" r="200" fill="rgba(242,107,31,0.04)" /><circle cx="420" cy="140" r="120" fill="rgba(242,107,31,0.03)" /></>,
+  /* 02 */ <><path d="M350 0 Q500 200 350 400" stroke="rgba(242,107,31,0.06)" strokeWidth="1.5" fill="none" /><path d="M380 0 Q530 200 380 400" stroke="rgba(242,107,31,0.04)" strokeWidth="1.5" fill="none" /></>,
+  /* 03 */ <><rect x="320" y="60" width="220" height="280" rx="110" fill="rgba(242,107,31,0.035)" transform="rotate(-15 430 200)" /></>,
+  /* 04 */ <><circle cx="450" cy="200" r="160" fill="none" stroke="rgba(242,107,31,0.05)" strokeWidth="1" /><circle cx="450" cy="200" r="100" fill="none" stroke="rgba(242,107,31,0.04)" strokeWidth="1" /><circle cx="450" cy="200" r="40" fill="rgba(242,107,31,0.04)" /></>,
+  /* 05 */ <><path d="M300 50 L550 200 L300 350 Z" fill="rgba(242,107,31,0.03)" stroke="rgba(242,107,31,0.04)" strokeWidth="1" /></>,
+  /* 06 */ <><ellipse cx="430" cy="200" rx="180" ry="120" fill="rgba(242,107,31,0.035)" transform="rotate(20 430 200)" /></>,
+  /* 07 */ <><line x1="300" y1="0" x2="550" y2="400" stroke="rgba(242,107,31,0.04)" strokeWidth="60" strokeLinecap="round" /><line x1="550" y1="0" x2="300" y2="400" stroke="rgba(242,107,31,0.03)" strokeWidth="40" strokeLinecap="round" /></>,
+  /* 08 */ <><rect x="340" y="80" width="160" height="240" rx="6" fill="rgba(242,107,31,0.03)" /><rect x="370" y="110" width="160" height="200" rx="6" fill="rgba(242,107,31,0.03)" /></>,
+  /* 09 */ <><path d="M320 200 Q420 60 520 200 Q420 340 320 200Z" fill="rgba(242,107,31,0.04)" /></>,
+  /* 10 */ <><path d="M300 300 Q400 100 500 300" fill="none" stroke="rgba(242,107,31,0.05)" strokeWidth="2" /><path d="M300 320 Q400 120 500 320" fill="none" stroke="rgba(242,107,31,0.04)" strokeWidth="2" /><path d="M300 340 Q400 140 500 340" fill="none" stroke="rgba(242,107,31,0.03)" strokeWidth="2" /></>,
+  /* 11 */ <><polygon points="430,60 530,180 490,320 370,320 330,180" fill="rgba(242,107,31,0.03)" stroke="rgba(242,107,31,0.04)" strokeWidth="1" /></>,
+  /* 12 */ <><circle cx="380" cy="150" r="80" fill="rgba(242,107,31,0.03)" /><circle cx="470" cy="250" r="80" fill="rgba(242,107,31,0.035)" /><circle cx="360" cy="280" r="60" fill="rgba(242,107,31,0.03)" /></>,
+  /* 13 */ <><circle cx="430" cy="200" r="130" fill="rgba(242,107,31,0.04)" /><line x1="430" y1="70" x2="430" y2="330" stroke="rgba(242,107,31,0.05)" strokeWidth="1" /><line x1="300" y1="200" x2="560" y2="200" stroke="rgba(242,107,31,0.05)" strokeWidth="1" /></>,
 ];
 
 // ── Scroll-driven stacking card ────────────────────────────
@@ -88,13 +89,13 @@ const StackCard: React.FC<StackCardProps> = ({
           <div className="flex items-center justify-between mb-5">
             <div className="flex items-center gap-3">
               {isCompleted ? (
-                <div className="w-7 h-7 rounded-full flex items-center justify-center" style={{ backgroundColor: '#2A7D6F' }}>
+                <div className="w-7 h-7 rounded-full flex items-center justify-center" style={{ backgroundColor: COLORS.accent }}>
                   <Check size={13} color="white" strokeWidth={2.5} />
                 </div>
               ) : isRecommended ? (
                 <div className="relative">
-                  <div className="w-7 h-7 rounded-full flex items-center justify-center" style={{ border: '2px solid #2A7D6F' }}>
-                    <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#2A7D6F' }} />
+                  <div className="w-7 h-7 rounded-full flex items-center justify-center" style={{ border: '2px solid #F26B1F' }}>
+                    <div className="w-2 h-2 rounded-full" style={{ backgroundColor: COLORS.accent }} />
                   </div>
                 </div>
               ) : (
@@ -106,14 +107,14 @@ const StackCard: React.FC<StackCardProps> = ({
             </div>
 
             {isRecommended && (
-              <div className="flex items-center gap-1.5 px-3 py-1 rounded-full" style={{ backgroundColor: 'rgba(42,125,111,0.08)' }}>
-                <Sparkles size={11} style={{ color: '#2A7D6F' }} />
-                <span className="text-[10px] font-semibold" style={{ color: '#2A7D6F' }}>Up next</span>
+              <div className="flex items-center gap-1.5 px-3 py-1 rounded-full" style={{ backgroundColor: 'rgba(242,107,31,0.08)' }}>
+                <Sparkles size={11} style={{ color: COLORS.accent }} />
+                <span className="text-[10px] font-semibold" style={{ color: COLORS.accent }}>Up next</span>
               </div>
             )}
 
             {isCompleted && (
-              <span className="text-[11px] font-medium" style={{ color: '#2A7D6F' }}>Complete</span>
+              <span className="text-[11px] font-medium" style={{ color: COLORS.accent }}>Complete</span>
             )}
           </div>
 
@@ -138,10 +139,10 @@ const StackCard: React.FC<StackCardProps> = ({
           {/* Progress bar */}
           {isStarted && !isCompleted && (
             <div className="mb-5">
-              <div className="w-full h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: 'rgba(42,125,111,0.08)' }}>
-                <div className="h-full rounded-full" style={{ width: `${progressPct}%`, backgroundColor: '#2A7D6F', transition: 'width 0.6s ease-out' }} />
+              <div className="w-full h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: 'rgba(242,107,31,0.08)' }}>
+                <div className="h-full rounded-full" style={{ width: `${progressPct}%`, backgroundColor: COLORS.accent, transition: 'width 0.6s ease-out' }} />
               </div>
-              <p className="text-[10px] font-semibold mt-1.5" style={{ color: '#2A7D6F' }}>{progressPct}%</p>
+              <p className="text-[10px] font-semibold mt-1.5" style={{ color: COLORS.accent }}>{progressPct}%</p>
             </div>
           )}
 
@@ -155,10 +156,10 @@ const StackCard: React.FC<StackCardProps> = ({
             <div
               className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-150 active:scale-[0.96] group-hover:gap-3"
               style={{
-                backgroundColor: isCompleted ? 'transparent' : '#2A7D6F',
-                color: isCompleted ? '#2A7D6F' : 'white',
-                border: isCompleted ? '1.5px solid rgba(42,125,111,0.25)' : '1.5px solid #2A7D6F',
-                boxShadow: isCompleted ? 'none' : '2px 3px 0 0 #1F5F54',
+                backgroundColor: isCompleted ? 'transparent' : COLORS.accent,
+                color: isCompleted ? COLORS.accent : 'white',
+                border: isCompleted ? '1.5px solid rgba(242,107,31,0.25)' : '1.5px solid #F26B1F',
+                boxShadow: isCompleted ? 'none' : '2px 3px 0 0 #B54D14',
               }}
             >
               {isCompleted ? 'Review' : isStarted ? 'Continue' : 'Start'}
@@ -225,7 +226,7 @@ const CategoryJourney: React.FC<CategoryJourneyProps> = ({
           transition={{ duration: 0.5, ease: EASE }}
           className="flex items-baseline justify-center gap-1 mb-3"
         >
-          <span className="font-apercu text-3xl font-bold" style={{ color: '#2A7D6F' }}>{completedCount}</span>
+          <span className="font-apercu text-3xl font-bold" style={{ color: COLORS.accent }}>{completedCount}</span>
           <span className="text-base text-zinc-300">/</span>
           <span className="font-apercu text-base text-zinc-400">{totalCount}</span>
         </MotionDiv>
@@ -255,7 +256,7 @@ const CategoryJourney: React.FC<CategoryJourneyProps> = ({
               style={{
                 width: 4,
                 height: m.isRecommended ? 20 : 14,
-                backgroundColor: m.isCompleted ? '#2A7D6F' : m.isRecommended ? 'rgba(42,125,111,0.3)' : '#e0dbd2',
+                backgroundColor: m.isCompleted ? COLORS.accent : m.isRecommended ? 'rgba(242,107,31,0.3)' : '#e0dbd2',
                 transition: 'all 0.4s',
               }}
             />

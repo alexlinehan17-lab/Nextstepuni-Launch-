@@ -11,8 +11,6 @@ import { type SessionUser, getAvatarUrl, handleAvatarError } from '../utils/auth
 import { type UserSettings } from '../types';
 import { type StreakData } from '../hooks/useStreak';
 import { type FocusRecommendation } from '../hooks/useTodaysFocus';
-import { ACCENT_THEME_LIST } from '../themeData';
-import { type AccentThemeId } from '../types';
 
 interface UserProfileProps {
   user: SessionUser;
@@ -157,31 +155,6 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settin
                       )}
                   </AnimatePresence>
               </button>
-              {/* Accent Theme Picker */}
-              {ACCENT_THEME_LIST.filter(t => t.price === 0 || unlockedThemes.includes(t.id)).length > 1 && (
-                <div className="mt-1 px-2">
-                  <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-1.5">Accent</p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {ACCENT_THEME_LIST.filter(t => t.price === 0 || unlockedThemes.includes(t.id)).map(theme => (
-                      <button
-                        key={theme.id}
-                        onClick={() => updateSetting('accentTheme', theme.id as AccentThemeId)}
-                        title={theme.name}
-                        className={`p-1 rounded-lg transition-all ${
-                          settings.accentTheme === theme.id
-                            ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]'
-                            : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'
-                        }`}
-                      >
-                        <div
-                          className="w-5 h-5 rounded-full border border-white dark:border-zinc-700 shadow-sm"
-                          style={{ backgroundColor: theme.hex }}
-                        />
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
               <button onClick={() => { setIsOpen(false); onOpenSettings(); }} className="w-full flex items-center gap-2 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5 mt-1">
                 <Settings size={16} className="text-zinc-500" />
                 <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Settings</span>
@@ -316,30 +289,6 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
                   </div>
                   <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">{settings.darkMode ? 'Light Mode' : 'Dark Mode'}</span>
                 </button>
-                {ACCENT_THEME_LIST.filter(t => t.price === 0 || unlockedThemes.includes(t.id)).length > 1 && (
-                  <div className="px-3 py-2">
-                    <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-1.5">Accent</p>
-                    <div className="flex flex-wrap gap-1.5">
-                      {ACCENT_THEME_LIST.filter(t => t.price === 0 || unlockedThemes.includes(t.id)).map(theme => (
-                        <button
-                          key={theme.id}
-                          onClick={() => updateSetting('accentTheme', theme.id as AccentThemeId)}
-                          title={theme.name}
-                          className={`p-1.5 rounded-lg transition-all ${
-                            settings.accentTheme === theme.id
-                              ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]'
-                              : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'
-                          }`}
-                        >
-                          <div
-                            className="w-6 h-6 rounded-full border border-white dark:border-zinc-700 shadow-sm"
-                            style={{ backgroundColor: theme.hex }}
-                          />
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
                 <button onClick={() => { onClose(); onOpenSettings(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
                   <div className="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center"><Settings size={16} className="text-zinc-500" /></div>
                   <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">Settings</span>

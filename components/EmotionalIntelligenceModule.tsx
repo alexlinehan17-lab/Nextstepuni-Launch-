@@ -13,6 +13,7 @@ import { cyanTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { COLORS } from '../design/tokens';
 
 const theme = cyanTheme;
 
@@ -187,7 +188,7 @@ const PFCShutdownSimulator = () => {
     return (
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
           <div className="text-center mb-8">
-            <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
+            <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: ' 1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
             <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>PFC Shutdown Simulator</h4>
             <p className="text-sm mt-1" style={{ color: '#7a7068' }}>See what happens when your Amygdala hijacks your brain under exam stress.</p>
           </div>
@@ -214,9 +215,9 @@ const PFCShutdownSimulator = () => {
 
               <span className="inline-block text-[10px] font-bold uppercase" style={{
                 letterSpacing: '0.08em',
-                backgroundColor: stressed ? '#fde4e4' : '#e8f5f2',
-                color: stressed ? '#b33030' : '#1a6358',
-                border: stressed ? '1px solid rgba(232,93,117,0.3)' : '1px solid rgba(42,125,111,0.3)',
+                backgroundColor: stressed ? '#fde4e4' : COLORS.successTint,
+                color: stressed ? '#b33030' : COLORS.successDarkText,
+                border: stressed ? '1px solid rgba(232,93,117,0.3)' : `1px solid ${COLORS.success}4D`,
                 borderRadius: 20, padding: '3px 10px',
               }}>
                 {stressed ? 'HIJACKING' : 'CALM'}
@@ -224,13 +225,13 @@ const PFCShutdownSimulator = () => {
             </div>
 
             {/* PFC card */}
-            <div className="bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #2A7D6F', borderRadius: 14, padding: '20px 16px' }}>
+            <div className="bg-white dark:bg-zinc-900 text-center" style={{ border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '20px 16px' }}>
               <motion.div
                 animate={{ opacity: stressed ? 0.3 : 1 }}
                 transition={{ duration: 0.5 }}
-                style={{ width: 52, height: 52, borderRadius: '50%', background: '#e8f5f2', border: '2px solid rgba(42,125,111,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px' }}
+                style={{ width: 52, height: 52, borderRadius: '50%', background: COLORS.successTint, border: `2px solid ${COLORS.success}33`, display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px' }}
               >
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2A7D6F" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke={COLORS.success} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M9.5 2C7 2 5 4 5 6.5c0 .8.2 1.5.5 2.1C4.2 9.3 3 10.8 3 12.5 3 15 5 17 7.5 17H9v3h6v-3h1.5C19 17 21 15 21 12.5c0-1.7-1.2-3.2-2.5-3.9.3-.6.5-1.3.5-2.1C19 4 17 2 14.5 2c-1.2 0-2.3.5-3 1.3C10.8 2.5 9.7 2 9.5 2z"/>
                 </svg>
               </motion.div>
@@ -251,9 +252,9 @@ const PFCShutdownSimulator = () => {
                     </div>
                     <span className="text-[10px] font-bold uppercase" style={{
                       letterSpacing: '0.06em',
-                      backgroundColor: stressed ? '#f0ece6' : '#e8f5f2',
-                      color: stressed ? '#9e9186' : '#1a6358',
-                      border: stressed ? '1px solid #d0cdc8' : '1px solid rgba(42,125,111,0.3)',
+                      backgroundColor: stressed ? '#f0ece6' : COLORS.successTint,
+                      color: stressed ? '#9e9186' : COLORS.successDarkText,
+                      border: stressed ? '1px solid #d0cdc8' : `1px solid ${COLORS.success}4D`,
                       borderRadius: 20, padding: '2px 8px',
                     }}>
                       {stressed ? 'OFFLINE' : 'ONLINE'}
@@ -286,9 +287,9 @@ const PFCShutdownSimulator = () => {
             <button
               onClick={() => setStressed(!stressed)}
               style={{
-                backgroundColor: stressed ? '#2A7D6F' : '#E85D75',
+                backgroundColor: stressed ? COLORS.accent : '#E85D75',
                 color: '#FFFFFF',
-                border: stressed ? '2px solid #2A7D6F' : '2px solid #E85D75',
+                border: stressed ? `2px solid ${COLORS.accent}` : '2px solid #E85D75',
                 borderRadius: 20,
                 padding: '12px 24px',
                 fontSize: 14,
@@ -483,7 +484,7 @@ const BoxBreathing = () => {
     const phases = [
       { label: 'Breathe In', color: 'text-cyan-500' },
       { label: 'Hold', color: 'text-sky-400' },
-      { label: 'Breathe Out', color: 'text-teal-500' },
+      { label: 'Breathe Out', color: 'text-[#F26B1F]' },
       { label: 'Hold', color: 'text-sky-400' },
     ];
 
@@ -570,7 +571,7 @@ const BoxBreathing = () => {
              {/* Phase labels on each side */}
              <div className={`absolute -top-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 0 ? 'text-cyan-500 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Inhale</div>
              <div className={`absolute top-1/2 -right-10 -translate-y-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 1 ? 'text-sky-400 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Hold</div>
-             <div className={`absolute -bottom-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 2 ? 'text-teal-500 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Exhale</div>
+             <div className={`absolute -bottom-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 2 ? 'text-[#F26B1F] opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Exhale</div>
              <div className={`absolute top-1/2 -left-8 -translate-y-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 3 ? 'text-sky-400 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Hold</div>
 
              {/* Inner breathing circle */}

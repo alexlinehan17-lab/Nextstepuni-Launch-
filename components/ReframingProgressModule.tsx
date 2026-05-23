@@ -10,12 +10,12 @@ import {
   Target, BarChart, PieChart, Gamepad2, Columns, CalendarClock, Star
 } from 'lucide-react';
 import { type ModuleProgress } from '../types';
-import { tealTheme } from '../moduleThemes';
+import { accentTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
-const theme = tealTheme;
+const theme = accentTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 
@@ -107,7 +107,7 @@ const RetrospectiveLog = () => {
             ))}
              <div className="mt-6 text-center">
                  <button onClick={findNext} className="px-4 py-2 bg-zinc-800 text-white text-xs font-bold rounded-lg">Find Next Task</button>
-                 <p className="mt-4 text-sm">Next up: <span className="font-bold text-teal-600">{nextTopic}</span></p>
+                 <p className="mt-4 text-sm">Next up: <span className="font-bold text-[#F26B1F]">{nextTopic}</span></p>
              </div>
         </div>
     );

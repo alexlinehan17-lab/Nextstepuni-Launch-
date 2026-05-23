@@ -18,6 +18,7 @@ import { toDateKey } from './subjectData';
 import { getSubjectHex } from '../utils/subjectColors';
 import { SectionCard } from './SectionCard';
 import { ModulesIcon, InnovationZoneIcon, MyProgressIcon, LearningPathsIcon } from './sectionIcons';
+import { COLORS } from '../design/tokens';
 
 export type CategoryType =
   | 'architecture-mindset'
@@ -254,7 +255,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
               className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
             >
               <div className="shrink-0 flex items-center justify-center w-[18px]">
-                <RefreshCw size={18} strokeWidth={1.5} className="text-teal-500" />
+                <RefreshCw size={18} strokeWidth={1.5} className="text-[#F26B1F]" />
               </div>
               <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
                 Change Subjects
@@ -343,7 +344,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="mb-6"
         >
-          <p className="text-[12px] font-semibold uppercase tracking-[0.2em] mb-3" style={{ color: '#2A7D6F' }}>
+          <p className="text-[12px] font-semibold uppercase tracking-[0.2em] mb-3" style={{ color: COLORS.accent }}>
             Learning Lab
           </p>
           <h1 className="font-serif tracking-tight leading-tight font-bold text-[#1A1A1A] dark:text-white" style={{ fontSize: 'clamp(28px, 5vw, 36px)' }}>
@@ -390,7 +391,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                 {streak && streak.currentStreak > 0 && (
                   <>
                     <span className="w-1 h-1 rounded-full bg-[#D6D3D1] dark:bg-zinc-700" />
-                    <span className="font-medium" style={{ color: '#2A7D6F' }}>{streak.currentStreak}-day streak</span>
+                    <span className="font-medium" style={{ color: COLORS.accent }}>{streak.currentStreak}-day streak</span>
                   </>
                 )}
               </div>
@@ -398,7 +399,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                 <button
                   onClick={onGoToStudy}
                   className="flex items-center gap-1 text-xs font-bold px-4 py-2 rounded-lg text-white transition-transform duration-300 hover:translate-x-0.5"
-                  style={{ backgroundColor: '#2A7D6F' }}
+                  style={{ backgroundColor: COLORS.accent }}
                 >
                   Study Now <ArrowRight size={12} />
                 </button>
@@ -441,7 +442,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                   <span className="font-apercu font-bold text-2xl md:text-3xl text-[#A8A29E] dark:text-zinc-500">%</span>
                 </div>
                 <div className="h-1.5 rounded-full overflow-hidden bg-[#EDEBE8] dark:bg-zinc-700 mt-2.5">
-                  <div className="h-full rounded-full transition-all duration-700" style={{ backgroundColor: '#2A7D6F', width: `${overallPercent}%` }} />
+                  <div className="h-full rounded-full transition-all duration-700" style={{ backgroundColor: COLORS.accent, width: `${overallPercent}%` }} />
                 </div>
                 <div className="flex items-center gap-3 text-xs mt-2.5">
                   <span className="font-medium text-[#78716C] dark:text-zinc-400">{completedCount}/{totalCount} modules</span>
@@ -450,7 +451,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                   {streak && streak.currentStreak > 0 && (
                     <>
                       <span className="text-[#EDEBE8] dark:text-zinc-700">·</span>
-                      <span className="font-bold" style={{ color: '#2A7D6F' }}>{streak.currentStreak}-day streak</span>
+                      <span className="font-bold" style={{ color: COLORS.accent }}>{streak.currentStreak}-day streak</span>
                     </>
                   )}
                 </div>
@@ -491,7 +492,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                     <div className="flex items-center bg-[#FAF7F4] dark:bg-zinc-900 rounded-xl px-5 py-4 border border-[#EDEBE8] dark:border-zinc-800" style={{ borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
                       {/* Left: streak count */}
                       <div className="flex flex-col items-center justify-center pr-5" style={{ minWidth: 88 }}>
-                        <p className="font-apercu font-semibold tabular-nums" style={{ fontSize: 22, color: '#2A7D6F' }}>{streakCount}</p>
+                        <p className="font-apercu font-semibold tabular-nums" style={{ fontSize: 22, color: COLORS.accent }}>{streakCount}</p>
                         <p className="text-xs text-zinc-400 dark:text-zinc-500">current streak</p>
                       </div>
 
@@ -512,7 +513,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                               <div
                                 className={`w-full relative overflow-hidden rounded-md ${
                                   isToday
-                                    ? 'border-[1.5px] border-[#2A7D6F]'
+                                    ? 'border-[1.5px] border-[#F26B1F]'
                                     : ''
                                 }`}
                                 style={{
@@ -527,7 +528,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                                     className="absolute bottom-0 left-0 right-0 rounded-md"
                                     style={{
                                       height: `${fillPct}%`,
-                                      backgroundColor: isToday ? 'rgba(42,125,111,0.7)' : '#2A7D6F',
+                                      backgroundColor: isToday ? 'rgba(242,107,31,0.7)' : COLORS.accent,
                                     }}
                                   />
                                 )}
@@ -541,7 +542,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                                       ? 'text-zinc-300 dark:text-zinc-700'
                                       : 'text-zinc-500 dark:text-zinc-500'
                                 }`}
-                                style={isToday ? { color: '#2A7D6F' } : undefined}
+                                style={isToday ? { color: COLORS.accent } : undefined}
                               >
                                 {day}
                               </span>
@@ -574,23 +575,23 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory, 
                     <p className="text-[10px] font-bold uppercase tracking-widest text-[#A8A29E] dark:text-zinc-500">
                       {questState.isOnboarding ? `Day ${questState.dayNumber} Quest` : 'Daily Quest'}
                     </p>
-                    <span className="text-[10px] font-bold" style={{ color: '#2A7D6F' }}>{questState.quest.rewardPoints} JP</span>
+                    <span className="text-[10px] font-bold" style={{ color: COLORS.accent }}>{questState.quest.rewardPoints} JP</span>
                   </div>
                   <p className="text-xs font-semibold text-[#1A1A1A] dark:text-white">{questState.quest.title}</p>
                   <p className="text-[11px] mt-0.5 text-[#A8A29E] dark:text-zinc-500">{questState.quest.description}</p>
                   <div className="mt-2 flex items-center gap-2">
                     <div className="flex-1 h-1.5 rounded-full overflow-hidden bg-[#EDEBE8] dark:bg-zinc-700">
-                      <div className="h-full rounded-full transition-all duration-500" style={{ width: `${Math.min(100, (questState.current / questState.quest.target) * 100)}%`, backgroundColor: '#2A7D6F' }} />
+                      <div className="h-full rounded-full transition-all duration-500" style={{ width: `${Math.min(100, (questState.current / questState.quest.target) * 100)}%`, backgroundColor: COLORS.accent }} />
                     </div>
                     <span className="text-[10px] font-bold tabular-nums text-[#A8A29E] dark:text-zinc-500">{questState.current}/{questState.quest.target}</span>
                   </div>
                   {questState.isCompleted && !questState.isClaimed && onClaimQuestReward && (
-                    <button onClick={onClaimQuestReward} className="mt-2 w-full py-1.5 rounded-lg text-xs font-bold text-white" style={{ backgroundColor: '#2A7D6F' }}>
+                    <button onClick={onClaimQuestReward} className="mt-2 w-full py-1.5 rounded-lg text-xs font-bold text-white" style={{ backgroundColor: COLORS.accent }}>
                       Claim {questState.quest.rewardPoints} pts
                     </button>
                   )}
                   {questState.isClaimed && (
-                    <p className="mt-2 text-[10px] font-bold" style={{ color: '#2A7D6F' }}>Claimed</p>
+                    <p className="mt-2 text-[10px] font-bold" style={{ color: COLORS.accent }}>Claimed</p>
                   )}
                 </div>
               )}

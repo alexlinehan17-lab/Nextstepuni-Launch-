@@ -15,8 +15,8 @@ import { COMMAND_WORDS, COMMAND_MODIFIERS } from '../../../../data/knowledge';
 import { type CommandWordEntry, type ModifierEntry } from '../../../../types/knowledge';
 import KnowledgeModuleShell from '../KnowledgeModuleShell';
 import QuickCheck from '../QuickCheck';
+import { ACCENT, ACCENT_TINT } from '../../colors';
 
-const TEAL = '#2A7D6F';
 
 interface Props {
   onBack: () => void;
@@ -115,9 +115,9 @@ const CommandWordDecoder: React.FC<Props> = ({ onBack }) => {
       {!text.trim() && (
         <section
           className="rounded-2xl"
-          style={{ backgroundColor: '#F0FAF8', border: '1px solid #EDEBE8', padding: '20px 22px' }}
+          style={{ backgroundColor: ACCENT_TINT, border: '1px solid #EDEBE8', padding: '20px 22px' }}
         >
-          <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 10 }}>
+          <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 10 }}>
             Try a sample question
           </p>
           <div className="grid sm:grid-cols-2 gap-2">
@@ -134,7 +134,7 @@ const CommandWordDecoder: React.FC<Props> = ({ onBack }) => {
                   cursor: 'pointer',
                 }}
               >
-                <p style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: TEAL, marginBottom: 4 }}>
+                <p style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, color: ACCENT, marginBottom: 4 }}>
                   {s.label}
                 </p>
                 <p style={{ fontSize: 12.5, color: '#3F3B36', lineHeight: 1.45 }}>{s.text}</p>
@@ -191,7 +191,7 @@ const PasteCard: React.FC<{ text: string; setText: (v: string) => void }> = ({ t
     className="rounded-2xl"
     style={{ backgroundColor: '#FFFFFF', border: '1px solid #EDEBE8', padding: '22px 24px' }}
   >
-    <label htmlFor="cw-input" className="font-sans block" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 8 }}>
+    <label htmlFor="cw-input" className="font-sans block" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 8 }}>
       Paste a Leaving Cert question
     </label>
     <textarea
@@ -201,7 +201,7 @@ const PasteCard: React.FC<{ text: string; setText: (v: string) => void }> = ({ t
       placeholder="e.g. Discuss, with reference to two of the texts you have studied, how a significant insight into a chosen theme was shared with the reader."
       className="w-full font-serif rounded-xl"
       style={{
-        backgroundColor: '#F0FAF8',
+        backgroundColor: ACCENT_TINT,
         border: '1px solid #EDEBE8',
         padding: '14px 16px',
         fontSize: 14.5,
@@ -239,9 +239,9 @@ const DecodedView: React.FC<{
     <div className="space-y-4">
       <section
         className="rounded-2xl"
-        style={{ backgroundColor: '#F0FAF8', border: `1px solid ${TEAL}33`, padding: '20px 24px' }}
+        style={{ backgroundColor: ACCENT_TINT, border: `1px solid ${ACCENT}33`, padding: '20px 24px' }}
       >
-        <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 10 }}>
+        <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 10 }}>
           Highlighted question
         </p>
         <p className="font-serif" style={{ fontSize: 16, lineHeight: 1.6, color: '#1A1A1A' }}>
@@ -305,9 +305,9 @@ const CommandCard: React.FC<{ detected: DetectedCommand }> = ({ detected }) => (
         style={{
           fontSize: 10,
           fontWeight: 700,
-          color: TEAL,
-          backgroundColor: '#F0FAF8',
-          border: `1px solid ${TEAL}33`,
+          color: ACCENT,
+          backgroundColor: ACCENT_TINT,
+          border: `1px solid ${ACCENT}33`,
           borderRadius: 999,
           padding: '2px 9px',
           whiteSpace: 'nowrap',
@@ -359,7 +359,7 @@ const HighlightedText: React.FC<{ text: string; terms: string[] }> = ({ text, te
           <mark
             key={i}
             style={{
-              backgroundColor: `${TEAL}26`,
+              backgroundColor: `${ACCENT}26`,
               color: '#1A1A1A',
               padding: '1px 4px',
               borderRadius: 4,

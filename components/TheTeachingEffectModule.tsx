@@ -12,6 +12,7 @@ import { limeTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { COLORS } from '../design/tokens';
 
 const theme = limeTheme;
 
@@ -225,7 +226,7 @@ const ExplainItBackChallenge = () => {
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       {/* Section header */}
       <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Feynman Technique</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Feynman Technique</span>
         <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Explain It Back Challenge</h4>
         <p className="mt-1" style={{ fontSize: 15, color: '#7a7068' }}>Explain this definition in simple terms — as if to a 12-year-old.</p>
       </div>
@@ -234,7 +235,7 @@ const ExplainItBackChallenge = () => {
       <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '20px 24px' }}>
         <div className="flex items-center justify-between mb-3">
           <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#f0ece6', color: '#9e9186', border: '1px solid #d0cdc8', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>The Definition</span>
-          <span style={{ fontSize: 11, fontWeight: 600, backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', borderRadius: 20, padding: '3px 10px' }}>Biology</span>
+          <span style={{ fontSize: 11, fontWeight: 600, backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '3px 10px' }}>Biology</span>
         </div>
         <p className="font-serif" style={{ fontSize: 16, color: '#1a1a1a', lineHeight: 1.7 }}>{ORIGINAL_CONCEPT}</p>
       </div>
@@ -244,16 +245,16 @@ const ExplainItBackChallenge = () => {
           {/* Connector */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, margin: '16px 0' }}>
             <div style={{ flex: 1, height: 1, background: '#e0dbd4' }} />
-            <div style={{ background: '#e8f5f2', border: '1.5px solid rgba(42,125,111,0.3)', borderRadius: 20, padding: '6px 14px', flexShrink: 0 }}>
-              <span style={{ fontSize: 12, fontWeight: 700, color: '#1a6358', letterSpacing: '0.05em' }}>NOW EXPLAIN IT</span>
+            <div style={{ background: COLORS.accentTint, border: '1.5px solid rgba(242,107,31,0.3)', borderRadius: 20, padding: '6px 14px', flexShrink: 0 }}>
+              <span style={{ fontSize: 12, fontWeight: 700, color: COLORS.accentDarkText, letterSpacing: '0.05em' }}>NOW EXPLAIN IT</span>
             </div>
             <div style={{ flex: 1, height: 1, background: '#e0dbd4' }} />
           </div>
 
           {/* Zone 2 — Response */}
-          <div style={{ backgroundColor: '#f0faf8', border: '2px solid #2A7D6F', borderRadius: 14, padding: '18px 20px' }}>
+          <div style={{ backgroundColor: COLORS.accentTint, border: `2px solid ${COLORS.accent}`, borderRadius: 14, padding: '18px 20px' }}>
             <div className="flex items-center justify-between mb-3">
-              <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#d0ede8', color: '#1a6358', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Your Explanation</span>
+              <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Your Explanation</span>
               <span style={{ fontSize: 11, color: '#9e9186' }}>Aim for 2–3 sentences</span>
             </div>
             <textarea
@@ -262,7 +263,7 @@ const ExplainItBackChallenge = () => {
               placeholder="Imagine you're explaining this to a younger sibling..."
               className="w-full outline-none font-serif"
               style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '14px 16px', fontSize: 15, color: '#1a1a1a', lineHeight: 1.6, minHeight: 120, resize: 'none' as const }}
-              onFocus={(e) => { e.currentTarget.style.borderColor = '#2A7D6F'; }}
+              onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
               onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }}
             />
 
@@ -273,12 +274,12 @@ const ExplainItBackChallenge = () => {
                   <p className="font-serif font-bold" style={{ fontSize: 18, color: '#1a1a1a' }}>{analysis.wordCount}</p>
                   <p style={{ fontSize: 10, color: '#9e9186' }}>Words</p>
                 </div>
-                <div className="text-center p-2 bg-white rounded-lg" style={{ border: `1.5px solid ${analysis.jargonWords.length > 5 ? '#E85D75' : '#2A7D6F'}` }}>
-                  <p className="font-serif font-bold" style={{ fontSize: 18, color: analysis.jargonWords.length > 5 ? '#E85D75' : '#2A7D6F' }}>{analysis.jargonWords.length}</p>
+                <div className="text-center p-2 bg-white rounded-lg" style={{ border: `1.5px solid ${analysis.jargonWords.length > 5 ? '#E85D75' : COLORS.success}` }}>
+                  <p className="font-serif font-bold" style={{ fontSize: 18, color: analysis.jargonWords.length > 5 ? '#E85D75' : COLORS.success }}>{analysis.jargonWords.length}</p>
                   <p style={{ fontSize: 10, color: '#9e9186' }}>Borrowed</p>
                 </div>
-                <div className="text-center p-2 bg-white rounded-lg" style={{ border: `1.5px solid ${analysis.simplicityScore >= 60 ? '#2A7D6F' : '#9e9186'}` }}>
-                  <p className="font-serif font-bold" style={{ fontSize: 18, color: analysis.simplicityScore >= 60 ? '#2A7D6F' : '#9e9186' }}>{analysis.simplicityScore}%</p>
+                <div className="text-center p-2 bg-white rounded-lg" style={{ border: `1.5px solid ${analysis.simplicityScore >= 60 ? COLORS.success : '#9e9186'}` }}>
+                  <p className="font-serif font-bold" style={{ fontSize: 18, color: analysis.simplicityScore >= 60 ? COLORS.success : '#9e9186' }}>{analysis.simplicityScore}%</p>
                   <p style={{ fontSize: 10, color: '#9e9186' }}>Simplicity</p>
                 </div>
               </MotionDiv>
@@ -301,7 +302,7 @@ const ExplainItBackChallenge = () => {
                 disabled={userText.trim().length <= 10}
                 whileTap={{ y: 3 }}
                 className="text-white font-semibold"
-                style={{ backgroundColor: userText.trim().length > 10 ? '#2A7D6F' : '#d0cdc8', borderRadius: 100, padding: '13px 32px', fontSize: 15, borderBottom: userText.trim().length > 10 ? '3px solid #1a5a4e' : 'none', boxShadow: userText.trim().length > 10 ? '0 4px 0 #1a5a4e' : 'none', cursor: userText.trim().length > 10 ? 'pointer' : 'not-allowed', opacity: userText.trim().length > 10 ? 1 : 0.5 }}
+                style={{ backgroundColor: userText.trim().length > 10 ? COLORS.accent : '#d0cdc8', borderRadius: 100, padding: '13px 32px', fontSize: 15, borderBottom: userText.trim().length > 10 ? `3px solid ${COLORS.accentDark}` : 'none', boxShadow: userText.trim().length > 10 ? `0 4px 0 ${COLORS.accentDark}` : 'none', cursor: userText.trim().length > 10 ? 'pointer' : 'not-allowed', opacity: userText.trim().length > 10 ? 1 : 0.5 }}
               >
                 Submit Explanation
               </motion.button>
@@ -316,8 +317,8 @@ const ExplainItBackChallenge = () => {
               <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', color: '#9e9186', textTransform: 'uppercase' as const }}>Original</span>
               <p className="font-serif mt-2" style={{ fontSize: 14, color: '#5a5550', lineHeight: 1.6 }}>{ORIGINAL_CONCEPT}</p>
             </div>
-            <div style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '16px 20px' }}>
-              <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', color: '#1a6358', textTransform: 'uppercase' as const }}>Your Explanation</span>
+            <div style={{ backgroundColor: COLORS.successTint, border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '16px 20px' }}>
+              <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', color: COLORS.successDarkText, textTransform: 'uppercase' as const }}>Your Explanation</span>
               <p className="font-serif mt-2" style={{ fontSize: 14, color: '#1a1a1a', lineHeight: 1.6 }}>{userText}</p>
             </div>
           </div>
@@ -328,12 +329,12 @@ const ExplainItBackChallenge = () => {
               <p className="font-serif font-bold" style={{ fontSize: 22, color: '#1a1a1a' }}>{analysis.wordCount}</p>
               <p style={{ fontSize: 10, color: '#9e9186' }}>Words</p>
             </div>
-            <div className="text-center p-3 bg-white rounded-xl" style={{ border: `2px solid ${analysis.jargonWords.length > 5 ? '#E85D75' : analysis.jargonWords.length > 2 ? '#9e9186' : '#2A7D6F'}` }}>
-              <p className="font-serif font-bold" style={{ fontSize: 22, color: analysis.jargonWords.length > 5 ? '#E85D75' : analysis.jargonWords.length > 2 ? '#9e9186' : '#2A7D6F' }}>{analysis.jargonWords.length}</p>
+            <div className="text-center p-3 bg-white rounded-xl" style={{ border: `2px solid ${analysis.jargonWords.length > 5 ? '#E85D75' : analysis.jargonWords.length > 2 ? '#9e9186' : COLORS.success}` }}>
+              <p className="font-serif font-bold" style={{ fontSize: 22, color: analysis.jargonWords.length > 5 ? '#E85D75' : analysis.jargonWords.length > 2 ? '#9e9186' : COLORS.success }}>{analysis.jargonWords.length}</p>
               <p style={{ fontSize: 10, color: '#9e9186' }}>Borrowed</p>
             </div>
-            <div className="text-center p-3 bg-white rounded-xl" style={{ border: `2px solid ${analysis.simplicityScore >= 60 ? '#2A7D6F' : '#9e9186'}` }}>
-              <p className="font-serif font-bold" style={{ fontSize: 22, color: analysis.simplicityScore >= 60 ? '#2A7D6F' : '#9e9186' }}>{analysis.simplicityScore}%</p>
+            <div className="text-center p-3 bg-white rounded-xl" style={{ border: `2px solid ${analysis.simplicityScore >= 60 ? COLORS.success : '#9e9186'}` }}>
+              <p className="font-serif font-bold" style={{ fontSize: 22, color: analysis.simplicityScore >= 60 ? COLORS.success : '#9e9186' }}>{analysis.simplicityScore}%</p>
               <p style={{ fontSize: 10, color: '#9e9186' }}>Simplicity</p>
             </div>
           </div>
@@ -341,12 +342,12 @@ const ExplainItBackChallenge = () => {
           {/* Feedback */}
           <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
             {isGood ? (
-              <div style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 14, padding: '20px 22px' }}>
+              <div style={{ backgroundColor: COLORS.successTint, border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '20px 22px' }}>
                 <div className="flex items-center gap-3 mb-2">
-                  <div style={{ width: 36, height: 36, borderRadius: '50%', backgroundColor: '#2A7D6F', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontSize: 18, color: 'white' }}>✓</div>
-                  <p className="font-serif font-semibold" style={{ fontSize: 18, color: '#1a6358' }}>Explanation approved.</p>
+                  <div style={{ width: 36, height: 36, borderRadius: '50%', backgroundColor: COLORS.success, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontSize: 18, color: 'white' }}>✓</div>
+                  <p className="font-serif font-semibold" style={{ fontSize: 18, color: COLORS.successDarkText }}>Explanation approved.</p>
                 </div>
-                <p style={{ fontSize: 14, color: '#2A7D6F' }}>Nice one! You properly rebuilt that in your own words. That's exactly the kind of explaining that makes things stick long-term.</p>
+                <p style={{ fontSize: 14, color: COLORS.success }}>Nice one! You properly rebuilt that in your own words. That's exactly the kind of explaining that makes things stick long-term.</p>
               </div>
             ) : (
               <div style={{ borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 14px 14px 0', padding: '16px 20px' }}>
@@ -360,7 +361,7 @@ const ExplainItBackChallenge = () => {
           </MotionDiv>
 
           <div className="mt-6 text-center">
-            <button onClick={handleReset} className="font-medium transition-colors" style={{ fontSize: 13, color: '#2A7D6F', background: 'none', border: 'none', cursor: 'pointer' }}>
+            <button onClick={handleReset} className="font-medium transition-colors" style={{ fontSize: 13, color: COLORS.accent, background: 'none', border: 'none', cursor: 'pointer' }}>
               Try again
             </button>
           </div>

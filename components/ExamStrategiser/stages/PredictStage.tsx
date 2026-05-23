@@ -6,8 +6,8 @@
 import React from 'react';
 import { type ExamQuestion, type PredictAnswers, type PredictPrompt } from '../../../types/examStrategiser';
 import CollapsibleQuestionCard from '../CollapsibleQuestionCard';
+import { ACCENT } from '../colors';
 
-const TEAL = '#2A7D6F';
 
 interface Props {
   question: ExamQuestion;
@@ -61,7 +61,7 @@ const PredictStage: React.FC<Props> = ({ question, answers, submitted, onAnswer,
             disabled={!allAnswered}
             className="rounded-full transition-colors"
             style={{
-              backgroundColor: allAnswered ? TEAL : '#F5F4F1',
+              backgroundColor: allAnswered ? ACCENT : '#F5F4F1',
               color: allAnswered ? '#FFFFFF' : '#C4C0BC',
               padding: '11px 24px',
               fontSize: 13,
@@ -78,7 +78,7 @@ const PredictStage: React.FC<Props> = ({ question, answers, submitted, onAnswer,
             onClick={onAdvance}
             className="rounded-full transition-colors"
             style={{
-              backgroundColor: TEAL,
+              backgroundColor: ACCENT,
               color: '#FFFFFF',
               padding: '11px 24px',
               fontSize: 13,
@@ -140,9 +140,9 @@ const PromptCard: React.FC<{
                   fontSize: 13,
                   fontWeight: 500,
                   fontFamily: 'DM Sans, system-ui, sans-serif',
-                  backgroundColor: selected ? TEAL : '#FFFFFF',
+                  backgroundColor: selected ? ACCENT : '#FFFFFF',
                   color: selected ? '#FFFFFF' : '#1A1A1A',
-                  border: `1px solid ${selected ? TEAL : '#EDEBE8'}`,
+                  border: `1px solid ${selected ? ACCENT : '#EDEBE8'}`,
                   cursor: submitted ? 'default' : 'pointer',
                   opacity: submitted && !selected ? 0.45 : 1,
                 }}
@@ -202,7 +202,7 @@ const PromptCard: React.FC<{
       )}
 
       {submitted && prompt.correctAnswer !== undefined && (
-        <div className="font-sans" style={{ fontSize: 12, marginTop: 8, color: isCorrect ? TEAL : isWrong ? '#78716C' : '#78716C' }}>
+        <div className="font-sans" style={{ fontSize: 12, marginTop: 8, color: isCorrect ? ACCENT : isWrong ? '#78716C' : '#78716C' }}>
           {isCorrect && <span style={{ fontWeight: 700 }}>Correct.</span>}
           {isWrong && (
             <>

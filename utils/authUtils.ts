@@ -4,6 +4,24 @@
  */
 
 import type React from 'react';
+import type { YearGroup } from '../components/subjectData';
+
+// ─── Curriculum level ───────────────────────────────────────
+//
+// Computed from the user's `yearGroup` (see `yearGroupToCurriculumLevel`
+// below) but also stored explicitly on the user doc for fast O(1) gating
+// without re-deriving it at every call site.
+//
+// Mapping rule (Phase 1):
+//   1st / 2nd / 3rd  → junior
+//   TY / 5th / 6th   → senior  (TY rides senior content for now;
+//                                revisit post-launch per the audit).
+
+export type CurriculumLevel = 'junior' | 'senior';
+
+export function yearGroupToCurriculumLevel(yg: YearGroup): CurriculumLevel {
+  return yg === '1st' || yg === '2nd' || yg === '3rd' ? 'junior' : 'senior';
+}
 
 // ─── Session User Type ──────────────────────────────────────
 
@@ -14,7 +32,8 @@ export type SessionUser = {
   isAdmin?: boolean;
   role?: 'student' | 'gc' | 'admin';
   school?: string;
-  yearGroup?: '5th' | '6th';
+  yearGroup?: YearGroup;
+  curriculumLevel?: CurriculumLevel;
   needsPasswordChange?: boolean;
 };
 

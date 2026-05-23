@@ -33,7 +33,7 @@ const JugglingStudyVisualizer = () => {
              <div className="w-full max-w-xs mx-auto h-48 flex justify-center items-end">
                 <motion.div
                     className="w-24 rounded-t-lg"
-                    style={{ backgroundColor: '#2A7D6F' }}
+                    style={{ backgroundColor: '#F26B1F' }}
                     initial={{height: '50%'}}
                     animate={{height: `${currentData.value}%`}}
                     transition={{type: 'spring', damping: 15, stiffness: 100}}
@@ -46,8 +46,8 @@ const JugglingStudyVisualizer = () => {
                     key={n}
                     onClick={() => setScan(n)}
                     style={{
-                      backgroundColor: scan === n ? '#2A7D6F' : '#FFFFFF',
-                      border: scan === n ? '2px solid #2A7D6F' : '2px solid #d0cdc8',
+                      backgroundColor: scan === n ? '#F26B1F' : '#FFFFFF',
+                      border: scan === n ? '2px solid #F26B1F' : '2px solid #d0cdc8',
                       borderRadius: 100,
                       padding: '8px 20px',
                       fontSize: 13,
@@ -98,7 +98,7 @@ const getPathStyle = (walked: number): { bg: string; border: string } => {
   if (walked <= 0) return { bg: '#f0ece6', border: '#ddd8d0' };
   if (walked === 1) return { bg: '#c8e8e0', border: '#a0d4c8' };
   if (walked === 2) return { bg: '#8ecfbf', border: '#6ab8a4' };
-  if (walked >= 3) return { bg: '#2A7D6F', border: '#1a5a4e' };
+  if (walked >= 3) return { bg: '#F26B1F', border: '#B54D14' };
   return { bg: '#f0ece6', border: '#ddd8d0' };
 };
 
@@ -212,7 +212,7 @@ const DesirePathMaker = () => {
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       {/* Section chip + title */}
       <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)' }}>Interactive Simulation</span>
+        <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)' }}>Interactive Simulation</span>
         <h4 className="font-serif text-2xl font-bold" style={{ color: '#1a1a1a' }}>Desire Path Maker</h4>
         <p className="text-sm mt-1" style={{ color: '#7a7068' }}>
           Click cells to walk on them. Repeat the same path to build strong connections — or scatter your effort and watch them fade.
@@ -252,8 +252,8 @@ const DesirePathMaker = () => {
 
       {/* Stat card */}
       <div className="flex justify-center mt-4">
-        <div className="inline-flex items-center gap-3" style={{ backgroundColor: '#e8f5f2', border: '1.5px solid rgba(42,125,111,0.25)', borderRadius: 12, padding: '10px 20px' }}>
-          <span className="font-serif font-bold" style={{ fontSize: 28, color: '#2A7D6F' }}>{strongPathCount(grid)}</span>
+        <div className="inline-flex items-center gap-3" style={{ backgroundColor: '#FDEEDF', border: '1.5px solid rgba(242,107,31,0.25)', borderRadius: 12, padding: '10px 20px' }}>
+          <span className="font-serif font-bold" style={{ fontSize: 28, color: '#F26B1F' }}>{strongPathCount(grid)}</span>
           <span className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: '#9e9186', letterSpacing: '0.08em' }}>Strong paths<br/>built</span>
         </div>
       </div>
@@ -267,8 +267,8 @@ const DesirePathMaker = () => {
           <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: '#E85D75', display: 'inline-block' }} />
           Cramming Pattern
         </button>
-        <button onClick={handleSpacedRepetition} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: '#e8f5f2', border: '2px solid #2A7D6F', borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: '#1a6358' }}>
-          <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: '#2A7D6F', display: 'inline-block' }} />
+        <button onClick={handleSpacedRepetition} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: '#FDEEDF', border: '2px solid #F26B1F', borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: '#8C3A0E' }}>
+          <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: '#F26B1F', display: 'inline-block' }} />
           Spaced Repetition
         </button>
         <button onClick={handleReset} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: '#FFFFFF', border: '2px solid #d0cdc8', borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: '#b0a898' }}>
@@ -282,9 +282,9 @@ const DesirePathMaker = () => {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           className="mt-4 max-w-lg mx-auto"
-          style={{ borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
+          style={{ borderLeft: '3px solid #F26B1F', backgroundColor: '#FDEEDF', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
         >
-          <p className="text-sm italic" style={{ color: '#1a6358' }}>{resultMessage}</p>
+          <p className="text-sm italic" style={{ color: '#8C3A0E' }}>{resultMessage}</p>
         </motion.div>
       )}
     </div>

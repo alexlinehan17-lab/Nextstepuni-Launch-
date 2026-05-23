@@ -47,6 +47,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Taking the Wheel of Your Education',
     description: 'Learn how to stop being a passenger in your own school life and start driving toward the future you actually want.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Mindset', 'Motivation'],
   },
   {
@@ -56,6 +57,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Brain\'s Engineering Manual',
     description: 'Hope isn\'t wishful thinking — it\'s a skill you can train. Learn how your brain creates motivation and how to get it working for you.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Brain Science', 'Resilience'],
   },
   {
@@ -65,6 +67,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Psychological Shield',
     description: 'Discover the invisible pressure that steals your brainpower in exams — and a simple 15-minute exercise that shields you from it.',
     sectionsCount: 5,
+    curriculum: 'senior' as const,
     tags: ['Mindset', 'Resilience'],
   },
   {
@@ -74,6 +77,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Future-Proofing Playbook',
     description: 'Daydreaming about the future feels good — but it can kill your motivation. Learn how to turn vague wishes into real plans that stick.',
     sectionsCount: 5,
+    curriculum: 'senior' as const,
     tags: ['Motivation', 'Productivity'],
   },
   {
@@ -83,6 +87,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Language of Resilience',
     description: 'The way you talk to yourself after a setback matters more than you think. This module shows you how to spot the patterns and change them.',
     sectionsCount: 5,
+    curriculum: 'senior' as const,
     tags: ['Mindset', 'Resilience'],
   },
   {
@@ -92,6 +97,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Attribution Retraining Guide',
     description: 'Learn to distinguish between what you can and cannot control, and rewire your brain to see failure as feedback, not a final verdict.',
     sectionsCount: 5,
+    curriculum: 'senior' as const,
     tags: ['Mindset', 'Resilience'],
   },
   {
@@ -101,6 +107,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Narrative Identity Playbook',
     description: 'Learn how to take the tough parts of your story and turn them into your biggest strength -- in school, in college, and in life.',
     sectionsCount: 5,
+    curriculum: 'senior' as const,
     tags: ['Mindset', 'Resilience'],
   },
   {
@@ -110,6 +117,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Architecture of Agency',
     description: '"Try harder" is useless advice. This module shows you how to actually build real belief in yourself — where it comes from, why some people seem to have more of it, and how you can grow yours from scratch.',
     sectionsCount: 5,
+    curriculum: 'senior' as const,
     tags: ['Mindset', 'Motivation'],
   },
   {
@@ -119,6 +127,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Why You Think You Know It (But Don\'t)',
     description: 'Ever walked out of a study session feeling confident, only to blank in the exam? Here\'s why that happens and how to make sure what you study actually sticks.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Learning Strategy', 'Brain Science'],
   },
   {
@@ -128,6 +137,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Architecture of Delay',
     description: 'Procrastination isn\'t laziness -- your brain is just wired to dodge things that feel bad. Learn what\'s really going on and how to get yourself moving.',
     sectionsCount: 8,
+    curriculum: 'senior' as const,
     tags: ['Motivation', 'Productivity'],
   },
   {
@@ -137,6 +147,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The CBT Toolkit',
     description: 'Ever had your brain spiral into worst-case scenarios before an exam? Learn practical tools to catch those panic thoughts, challenge them, and take back control.',
     sectionsCount: 8,
+    curriculum: 'senior' as const,
     tags: ['Resilience', 'Performance Psych'],
   },
   {
@@ -146,6 +157,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Stress Management Toolkit',
     description: 'Understand why your brain freaks out during exams and learn practical techniques -- both mental and physical -- to turn stress into something that works for you, not against you.',
     sectionsCount: 7,
+    curriculum: 'senior' as const,
     tags: ['Performance Psych', 'Resilience'],
   },
   {
@@ -155,6 +167,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Brain\'s User Manual',
     description: 'Your brain isn\'t stuck the way it is -- it physically changes shape when you learn new things. This module shows you how that works and how to make it work for you.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Brain Science', 'Learning Strategy'],
   },
   {
@@ -164,6 +177,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'How Your Brain Gets Faster',
     description: 'That stuck, frustrated feeling when you\'re working on something hard? It\'s not a sign you\'re failing — it\'s how your brain builds faster connections. Learn why the hard stuff is the stuff that actually works.',
     sectionsCount: 5,
+    curriculum: 'senior' as const,
     tags: ['Brain Science', 'Learning Strategy'],
   },
   {
@@ -173,6 +187,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'How Words Shape Your Mindset',
     description: 'The way people praise you — and the way you talk to yourself — can either set you up to grow or keep you stuck. Here\'s how to tell the difference.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Mindset', 'Motivation'],
   },
   {
@@ -182,6 +197,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Why the Hard Stuff Is the Stuff That Works',
     description: 'That frustrated feeling when you\'re stuck on a hard question? It\'s not a sign you\'re failing — it\'s how real learning actually happens. Learn to find the sweet spot of difficulty and reset your idea of what good study feels like.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Learning Strategy', 'Brain Science'],
   },
   {
@@ -191,6 +207,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Why Mistakes Are Your Best Study Tool',
     description: 'Your brain does something incredible when you mess up — if you let it. Here\'s how to stop fearing mistakes and start using them to get better, especially when the pressure is on.',
     sectionsCount: 5,
+    curriculum: 'senior' as const,
     tags: ['Brain Science', 'Resilience'],
   },
   {
@@ -200,6 +217,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'How to Be Your Own Teacher',
     description: 'When you\'re studying alone, you don\'t have a teacher to tell you what you\'re getting wrong. This module shows you how to build that feedback into your study sessions yourself.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Learning Strategy', 'Productivity'],
   },
   {
@@ -209,6 +227,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Persistence Playbook',
     description: 'One tiny word that changes everything about how you handle setbacks. Learn a dead-simple three-step method to stop beating yourself up when things go wrong and start actually moving forward.',
     sectionsCount: 5,
+    curriculum: 'senior' as const,
     tags: ['Mindset', 'Resilience'],
   },
   {
@@ -218,6 +237,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Sleep, Food, and Exercise',
     description: 'Your brain runs on three things: sleep, food, and exercise. Get these right and everything else gets easier. This module shows you how they actually work and what to do about it.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Performance Psych', 'Brain Science'],
   },
   {
@@ -227,6 +247,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Outcome-Based Approach',
     description: 'Stop counting hours and start counting wins. This module shows you simple tools to track what actually matters so you can see real progress every day.',
     sectionsCount: 7,
+    curriculum: 'senior' as const,
     tags: ['Productivity', 'Mindset'],
   },
   {
@@ -236,6 +257,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Finding Your Why',
     description: 'Ever sat down to study and thought "what\'s the point?" This module helps you figure out why your subjects actually matter to you -- and how to stay motivated when the work feels pointless.',
     sectionsCount: 8,
+    curriculum: 'senior' as const,
     tags: ['Motivation', 'Productivity'],
   },
   {
@@ -245,6 +267,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Mind\'s Operating System',
     description: 'Your brain can actually change and get better at things -- and once you believe that, everything shifts. This module shows you how to stop thinking "I\'m just not smart enough" and start seeing every challenge as a chance to grow.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Mindset', 'Brain Science'],
   },
   {
@@ -254,6 +277,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Why Testing Yourself Is a Superpower',
     description: 'Testing yourself isn\'t just for checking what you know — it\'s actually the single best way to make things stick in your memory for good.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Learning Strategy', 'Brain Science'],
   },
   {
@@ -263,6 +287,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Forgetting Curve Method',
     description: 'Stop forgetting what you study. Learn when and how often to review so the stuff you learn actually sticks for the Leaving Cert and beyond.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Learning Strategy', 'Productivity'],
   },
   {
@@ -272,6 +297,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Topic Salad Method',
     description: 'Stop studying one subject for hours on end. Mixing your topics feels harder, but it\'s the fastest way to build the kind of knowledge that actually holds up in the Leaving Cert.',
     sectionsCount: 5,
+    curriculum: 'senior' as const,
     tags: ['Learning Strategy', 'Brain Science'],
   },
   {
@@ -281,6 +307,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Brain\'s User Manual',
     description: 'Learn how your memory actually works — how information gets in, why most of it falls out, and what you can do to make the important stuff stick for the Leaving Cert.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Brain Science', 'Learning Strategy'],
   },
   {
@@ -290,6 +317,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The "Why" Method',
     description: 'Stop just memorising facts and start actually understanding them by asking one simple question: "Why?". This module shows you how to make what you study stick — and mean something — for the Leaving Cert.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Learning Strategy', 'Mindset'],
   },
   {
@@ -299,6 +327,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Marathon Method',
     description: 'The Leaving Cert isn\'t a sprint. Learn how to keep your brain sharp across weeks of exams, even when you\'re tired and stressed.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Performance Psych', 'Brain Science'],
   },
   {
@@ -308,6 +337,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Mind\'s Eye Method',
     description: 'Learn to see the answer in your head before you put pen to paper. In subjects like DCG and Engineering, the real skill isn\'t drawing — it\'s picturing 3D objects in your mind. This module shows you how.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Learning Strategy', 'Subject Strategy'],
   },
   {
@@ -317,6 +347,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Bimodal Brain',
     description: 'Your brain has two modes — one for grinding through problems, one for creative breakthroughs. Learning when to switch between them is a game-changer for your study.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Brain Science', 'Productivity'],
   },
   {
@@ -326,6 +357,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'How to Beat the Exam',
     description: 'Everything you need to know about how Higher Level Maths actually works -- the papers, the marking, and the tricks that earn you extra marks.',
     sectionsCount: 9,
+    curriculum: 'senior' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -335,6 +367,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Guide to the Language Exams',
     description: 'Whether you\'re aiming to pass or chasing a H1, this module breaks down exactly how the Leaving Cert language exams work and how to get the most out of every section.',
     sectionsCount: 8,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -344,6 +378,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Science Subjects, Decoded',
     description: 'Each science exam has its own unwritten rules. This module breaks them down so you know exactly what the examiner is looking for.',
     sectionsCount: 7,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -353,6 +389,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your 2026 Project & Exam Guide',
     description: 'Everything you need to know about this year\'s Engineering, DCG, Computer Science, and Construction projects -- plus how to nail the exams.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -362,6 +400,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete English Strategy Guide',
     description: 'From PCLM marking to Paper 1 composing and Paper 2 poetry -- learn exactly how the English exam works and where the marks are hiding.',
     sectionsCount: 7,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -371,6 +411,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Business Strategy Guide',
     description: 'Break down the Business exam from the ABQ to the short questions -- understand the marking patterns and learn how to pick up every available mark.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -380,6 +422,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Art, Music & Film Playbook',
     description: 'Think you need \'natural talent\' for the creatives? Think again. This module breaks it all down into skills you can learn step by step.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics', 'Creativity'],
   },
   {
@@ -389,6 +433,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Game Plan for the Leaving Cert',
     description: 'The Leaving Cert is a points game -- and once you know the rules, you can play it way smarter. Here\'s your game plan for getting the most points you can.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Exam Tactics', 'Productivity'],
   },
   {
@@ -398,6 +443,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Plan Backwards, Get Ahead',
     description: 'Most study plans fall apart within weeks. This module shows you how to start from your exam date and work backwards to build a schedule that actually holds up.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Productivity', 'Exam Tactics'],
   },
   {
@@ -407,6 +453,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Game Plan for Exam Day',
     description: 'You\'ve done the study — now learn the practical tips that help top students turn what they know into the marks they deserve.',
     sectionsCount: 7,
+    curriculum: 'senior' as const,
     tags: ['Exam Tactics', 'Performance Psych'],
   },
   {
@@ -416,6 +463,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Exam Survival Guide',
     description: 'Understand why your brain freezes under pressure and learn practical techniques to stay calm, think clearly, and bounce back when things go wrong in an exam.',
     sectionsCount: 7,
+    curriculum: 'senior' as const,
     tags: ['Resilience', 'Performance Psych'],
   },
   {
@@ -425,6 +473,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Peak Performance on Demand',
     description: 'Train for the Leaving Cert the way athletes train for competition. Sleep, food, mindset, and a solid game plan -- this is your playbook for performing at your best when it counts.',
     sectionsCount: 8,
+    curriculum: 'senior' as const,
     tags: ['Performance Psych', 'Exam Tactics'],
   },
   {
@@ -434,6 +483,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Guide to Getting Better Marks',
     description: 'History, Geography, and Politics & Society each have their own unwritten rules for how marks are given. Once you know them, everything changes.',
     sectionsCount: 5,
+    curriculum: 'senior' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -443,6 +493,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Take Back Your Focus',
     description: 'Your phone is designed to steal your attention. This module gives you a step-by-step plan to block distractions and actually get your study hours to count.',
     sectionsCount: 7,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Productivity', 'Performance Psych'],
   },
   {
@@ -452,6 +504,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Know What You Actually Know',
     description: 'Most students think they know more than they do — and it costs them marks. This module shows you how to spot your blind spots and study smarter.',
     sectionsCount: 6,
+    curriculum: 'senior' as const,
     tags: ['Learning Strategy', 'Brain Science'],
   },
   {
@@ -461,6 +514,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Why Less Is More',
     description: 'More notes doesn\'t mean more learning. Find out why writing less — but thinking more — is the secret to notes that actually help you in the exam.',
     sectionsCount: 5,
+    curriculum: 'senior' as const,
     tags: ['Learning Strategy', 'Productivity'],
   },
   {
@@ -470,6 +524,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Learn It by Teaching It',
     description: 'Want to actually remember what you study? Pretend you have to explain it to someone else. It completely changes how your brain stores everything -- even if you never teach a single person.',
     sectionsCount: 5,
+    curriculum: 'senior' as const,
     tags: ['Learning Strategy', 'Brain Science'],
   },
   {
@@ -479,6 +534,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Why Your Brain Gets Overloaded',
     description: 'Your brain can only juggle about 4 things at once. Most study sessions accidentally blow past that limit — and you don\'t even notice. This module shows you how to stop wasting brainpower and start actually learning.',
     sectionsCount: 5,
+    curriculum: 'senior' as const,
     tags: ['Brain Science', 'Learning Strategy'],
   },
   {
@@ -488,6 +544,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Intention-Action Blueprint',
     description: 'Feeling motivated doesn\'t mean you\'ll actually study. This module teaches you a dead-simple planning trick that closes the gap between saying you\'ll study and actually doing it.',
     sectionsCount: 5,
+    curriculum: 'senior' as const,
     tags: ['Motivation', 'Productivity'],
   },
   {
@@ -497,6 +554,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Where You Study Matters',
     description: 'Where you study changes what you remember. Learn why switching study spots beats sticking to one \'perfect\' place.',
     sectionsCount: 5,
+    curriculum: 'senior' as const,
     tags: ['Learning Strategy', 'Performance Psych'],
   },
   {
@@ -506,6 +564,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'How to Maximise Your Points',
     description: 'The Leaving Cert is a points game — and there are smart ways to play it. Use real data on H1 rates, how points really work, and marking scheme tricks to get the most points you can.',
     sectionsCount: 7,
+    curriculum: 'senior' as const,
     tags: ['Exam Tactics', 'Productivity'],
   },
   {
@@ -515,6 +574,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Turn the Examiner\'s Playbook Into Your Advantage',
     description: 'Every SEC marking scheme follows patterns. Once you see them, you\'ll know exactly how to write answers that collect every available mark.',
     sectionsCount: 7,
+    curriculum: 'senior' as const,
     tags: ['Exam Tactics', 'Points Maximisation'],
   },
   {
@@ -524,6 +584,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Why Some Students Get More Marks for the Same Knowledge',
     description: 'Two students know the same content. One gets a H3, the other gets a H1. The difference is how they structure their answers. This module teaches you the frameworks.',
     sectionsCount: 7,
+    curriculum: 'senior' as const,
     tags: ['Exam Tactics', 'Points Maximisation'],
   },
   // ── Per-Subject Modules (data-driven) ──────────────────────────────
@@ -534,6 +595,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete English Exam Guide',
     description: 'Understand how PCLM marking works, what Paper 1 and Paper 2 really reward, and exactly how to write the answers that get top marks.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -543,6 +606,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Irish Exam Guide',
     description: 'From the oral to the aural to the written papers — everything you need to know about how the Irish exam works and where the easy marks are hiding.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -552,6 +617,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete French Exam Guide',
     description: 'Break down the French exam paper by paper — from the oral and aural to reading comprehension and written production — and learn where to pick up the most marks.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -561,6 +628,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete German Exam Guide',
     description: 'Decode the German exam structure, understand what the examiner rewards in each section, and build a study plan that targets the highest-value marks.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -570,6 +639,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Spanish Exam Guide',
     description: 'Master the Spanish exam from oral to written — understand how marks are allocated, what the examiner looks for, and how to avoid the most common mistakes.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -579,6 +650,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Italian Exam Guide',
     description: 'Understand the Italian exam inside and out — the oral, aural, reading, and writing components — and learn how to maximise your marks in each section.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -588,6 +661,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Japanese Exam Guide',
     description: 'Break down the Japanese exam structure, from listening and reading to writing and the oral — and learn how to target the marks that matter most.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -597,6 +672,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Maths Exam Guide',
     description: 'Understand how Paper 1 and Paper 2 work, where the marks are hiding, and exactly how to show your work to pick up every attempt mark.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -606,6 +683,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Applied Maths Guide',
     description: 'Decode the Applied Maths exam — understand the topic weighting, how to set up problems correctly, and where students leave the most marks on the table.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -615,6 +694,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Physics Exam Guide',
     description: 'Master the Physics exam from experiments to problem-solving — understand how marks are allocated and what the examiner actually wants to see.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -624,6 +705,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Chemistry Exam Guide',
     description: 'Break down the Chemistry exam by section — mandatory experiments, theory questions, and calculations — and learn where the high-value marks are.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -633,6 +716,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Biology Exam Guide',
     description: 'Understand how the Biology exam really works, why some topics are worth far more than others, and how to write answers the examiner can actually give marks to.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -642,6 +727,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete CS Exam Guide',
     description: 'Navigate the Computer Science exam and coursework — understand the ALT project, the written paper structure, and how to maximise marks across both.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -651,6 +738,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Ag Science Guide',
     description: 'Crack the Agricultural Science exam — from the CBAs and mandatory experiments to the written paper — and learn what the examiner rewards.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -660,6 +749,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Accounting Exam Guide',
     description: 'Understand the Accounting exam inside and out — the layout, mark allocation, and the specific presentation standards that separate top marks from average.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -669,6 +760,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Business Exam Guide',
     description: 'Everything you need to crack the Business exam — from the ABQ to action words and the answer structures that examiners actually reward.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -678,6 +771,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Economics Exam Guide',
     description: 'Decode the Economics exam — understand how Section A and B work, where the easy marks are, and how to write answers that hit every marking point.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -687,6 +782,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete History Exam Guide',
     description: 'Master the History exam from the Document Question to the essays — understand how marks are allocated and what the examiner is actually looking for.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -696,6 +793,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Geography Exam Guide',
     description: 'Break down the Geography exam by section — short questions, long questions, and the Geographical Investigation — and learn where to pick up the best marks.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -705,6 +804,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete P&S Exam Guide',
     description: 'Navigate the Politics & Society exam — from the citizenship project to the written paper — and understand what the examiner rewards.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -714,6 +815,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete RE Exam Guide',
     description: 'Understand how the Religious Education exam works, where the marks are distributed, and how to write clear, structured answers that get top marks.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -723,6 +826,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Classics Exam Guide',
     description: 'Decode the Classical Studies exam — understand the text-based questions, the essay structure, and how to show the depth of knowledge examiners reward.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -732,6 +837,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Home Ec Exam Guide',
     description: 'Master the Home Economics exam and practical components — from the food practical to the journal and written paper — and learn where the marks really are.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -741,6 +848,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Construction Guide',
     description: 'Understand the Construction Studies exam and project — how marks are split between practical and written, and what the examiner rewards in each.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -750,6 +859,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Engineering Guide',
     description: 'Break down the Engineering exam and project — understand the practical marks, the written paper structure, and how to maximise your overall grade.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -759,6 +870,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete DCG Exam Guide',
     description: 'Master Design & Communication Graphics — from the student assignment to the written exam — and learn how to present your work for maximum marks.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -768,6 +881,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Technology Guide',
     description: 'Navigate the Technology exam and project — understand the design brief, the written paper, and how marks are allocated across both components.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -777,6 +892,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Art Exam Guide',
     description: 'Understand the Art exam from the practical to the History of Art paper — learn what the examiner rewards and how to present your work for top marks.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -786,6 +903,8 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete Music Exam Guide',
     description: 'Decode the Music exam — from the practical performance to the listening and composing components — and understand where the high-value marks are.',
     sectionsCount: 6,
+    curriculum: 'both' as const,
+    jcStatus: 'coming-soon' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
 ] as const;

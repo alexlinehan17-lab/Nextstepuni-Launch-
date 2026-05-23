@@ -14,6 +14,7 @@ import { slateTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { COLORS } from '../design/tokens';
 
 const theme = slateTheme;
 
@@ -25,9 +26,9 @@ const AttentionDeficitCalculator = () => {
     const deepWorkTime = Math.max(0, 60 - timeLost);
     const deepPct = Math.round((deepWorkTime / 60) * 100);
 
-    const statColor = deepWorkTime >= 45 ? '#2A7D6F' : deepWorkTime >= 20 ? '#9e9186' : '#E85D75';
+    const statColor = deepWorkTime >= 45 ? COLORS.success : deepWorkTime >= 20 ? '#9e9186' : '#E85D75';
     const calloutStyle = checks === 0
-      ? { borderLeft: '3px solid #2A7D6F', backgroundColor: '#f0faf8', color: '#1a6358' }
+      ? { borderLeft: `3px solid ${COLORS.success}`, backgroundColor: COLORS.successTint, color: COLORS.successDarkText }
       : checks <= 3
       ? { borderLeft: '3px solid #9e9186', backgroundColor: '#f4f0eb', color: '#5a5550' }
       : checks <= 7
@@ -37,7 +38,7 @@ const AttentionDeficitCalculator = () => {
     return (
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <div className="text-center mb-6">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#e8f5f2', color: '#1a6358', border: '1px solid rgba(42,125,111,0.2)', letterSpacing: '0.06em' }}>Interactive Calculator</span>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Interactive Calculator</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Attention Deficit Calculator</h4>
                 <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Every phone check triggers a ~23 minute attention recovery. How much of your study hour survives?</p>
             </div>
@@ -53,7 +54,7 @@ const AttentionDeficitCalculator = () => {
 
             {/* Split bar */}
             <div className="flex mb-2" style={{ border: '2px solid #1a1a1a', borderRadius: 100, height: 28, overflow: 'hidden' }}>
-                <motion.div className="h-full flex items-center justify-center" style={{ backgroundColor: '#2A7D6F' }} animate={{ width: `${deepPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }}>
+                <motion.div className="h-full flex items-center justify-center" style={{ backgroundColor: COLORS.success }} animate={{ width: `${deepPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }}>
                     {deepPct > 15 && <span style={{ fontSize: 12, fontWeight: 600, color: '#FFFFFF' }}>{deepPct}%</span>}
                 </motion.div>
                 <motion.div className="h-full flex items-center justify-center" style={{ backgroundColor: '#E85D75' }} animate={{ width: `${100 - deepPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }}>
@@ -61,7 +62,7 @@ const AttentionDeficitCalculator = () => {
                 </motion.div>
             </div>
             <div className="flex justify-between text-xs mb-6">
-                <span className="font-semibold" style={{ color: '#2A7D6F' }}>Deep Work</span>
+                <span className="font-semibold" style={{ color: COLORS.success }}>Deep Work</span>
                 <span className="font-semibold" style={{ color: '#E85D75' }}>Recovery Time</span>
             </div>
 
@@ -72,8 +73,8 @@ const AttentionDeficitCalculator = () => {
                     {Array.from({ length: 11 }).map((_, i) => (
                         <button key={i} onClick={() => setChecks(i)} className="flex-1 flex items-center justify-center transition-all" style={{
                             width: 52, height: 52,
-                            backgroundColor: i === checks ? '#2A7D6F' : '#FFFFFF',
-                            border: i === checks ? '2px solid #1a5a4e' : '2px solid #d0cdc8',
+                            backgroundColor: i === checks ? COLORS.success : '#FFFFFF',
+                            border: i === checks ? `2px solid ${COLORS.successDarkText}` : '2px solid #d0cdc8',
                             borderRadius: 10,
                             fontSize: 15, fontWeight: i === checks ? 700 : 600,
                             color: i === checks ? '#FFFFFF' : '#7a7068',

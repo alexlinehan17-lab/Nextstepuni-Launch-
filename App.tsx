@@ -18,6 +18,7 @@ import { doc, getDoc, setDoc, increment } from 'firebase/firestore';
 import { type ModuleProgress, type NorthStar } from './types';
 import { useToast } from './components/Toast';
 import { ALL_COURSES, categoryTitles, SUBJECT_TO_MODULE } from './courseData';
+import { type CourseData } from './components/Library';
 import { useSettings } from './hooks/useSettings';
 import { useTodaysFocus } from './hooks/useTodaysFocus';
 import { useStrategyMastery } from './hooks/useStrategyMastery';
@@ -219,17 +220,42 @@ const App: React.FC = () => {
   }, [streak.currentStreak]);
 
   const studentCourses = useMemo(() => {
-    if (!studentProfile) return ALL_COURSES;
-    const relevantModuleIds = new Set(
-      studentProfile.subjects.map(s => SUBJECT_TO_MODULE[s.subjectName]).filter(Boolean)
-    );
+    const level = user?.curriculumLevel ?? 'senior';
+
+    // Curriculum gating (Phase 4): a module is visible if it's tagged for
+    // the user's level or for 'both'. Pre-Phase-1 modules without a tag are
+    // assumed senior (every existing module was seeded 'senior' in Phase 1).
+    const passesCurriculum = (c: CourseData) => {
+      const tag = c.curriculum ?? 'senior';
+      return tag === 'both' || tag === level;
+    };
+
+    const relevantModuleIds = studentProfile
+      ? new Set(studentProfile.subjects.map(s => SUBJECT_TO_MODULE[s.subjectName]).filter(Boolean))
+      : null;
+
     return ALL_COURSES.filter(c => {
+      if (!passesCurriculum(c)) return false;
+
       if (c.category === 'subject-specific-science') {
-        return relevantModuleIds.has(c.id);
+        // Per-subject Decode (subject-*-protocol): only show for picked
+        // subjects (existing senior behaviour, applied to both levels).
+        if (c.id.startsWith('subject-')) {
+          return !relevantModuleIds || relevantModuleIds.has(c.id);
+        }
+        // General strategy modules (mastering-*-protocol, applied-sciences,
+        // digital-distraction, etc.): for JC users with a coming-soon tag,
+        // surface them as "JC version coming" tiles regardless of picked
+        // subjects. Senior behaviour unchanged (pre-existing filter quirk:
+        // these are invisible to senior unless they're in SUBJECT_TO_MODULE
+        // — separate cleanup, not Phase 4 scope).
+        if (level === 'junior' && c.jcStatus === 'coming-soon') return true;
+        return !relevantModuleIds || relevantModuleIds.has(c.id);
       }
+
       return true;
     });
-  }, [studentProfile]);
+  }, [studentProfile, user?.curriculumLevel]);
 
   const strategyMastery = useStrategyMastery(user?.uid, userProgress, studentCourses);
   const weeklyChallenge = useWeeklyChallenge(user?.uid);
@@ -323,6 +349,16 @@ const App: React.FC = () => {
   };
 
   const handleSelectModule = (moduleId: string) => {
+    // JC click interception (Phase 4): if the user is JC and the target
+    // module is tagged `jcStatus: 'coming-soon'`, route to the placeholder
+    // screen instead of opening the senior LC module body.
+    if (user?.curriculumLevel === 'junior') {
+      const course = ALL_COURSES.find(c => c.id === moduleId);
+      if (course?.jcStatus === 'coming-soon') {
+        nav.navigateToJCComingSoon(moduleId);
+        return;
+      }
+    }
     nav.navigateToModule(moduleId, viewState, currentCategory);
   };
 
@@ -361,11 +397,13 @@ const App: React.FC = () => {
         setNorthStar(northStarData);
       }
       await setDoc(progressDocRef, saveData, { merge: true });
-      // Also save yearGroup to the users doc for GC dashboard filtering
+      // Also save yearGroup + curriculumLevel to the users doc for GC dashboard
+      // filtering and content gating (Phase 1 JC plumbing).
       if (profile.yearGroup) {
         const userDocRef = doc(db, 'users', user.uid);
-        await setDoc(userDocRef, { yearGroup: profile.yearGroup }, { merge: true });
-        // yearGroup saved to Firestore — will be picked up on next auth refresh
+        const userPatch: Record<string, any> = { yearGroup: profile.yearGroup };
+        if (profile.curriculumLevel) userPatch.curriculumLevel = profile.curriculumLevel;
+        await setDoc(userDocRef, userPatch, { merge: true });
       }
       // Save essentials mode preference to settings (use updateSetting to sync local state)
       if (essentialsMode !== undefined) {
@@ -556,6 +594,7 @@ const App: React.FC = () => {
             onClose={() => setNorthStarEditOpen(false)}
             onSave={handleNorthStarSave}
             currentNorthStar={northStar}
+            curriculumLevel={user?.curriculumLevel}
           />
           {studentProfile && (
             <ChangeSubjectsModal

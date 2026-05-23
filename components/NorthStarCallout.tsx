@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { MotionDiv } from './Motion';
-import { Star, Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen, Banknote, Car, Home, Users, Briefcase, Rocket, Award, UserPlus, TrendingUp, MicOff, Signpost, Plane, PartyPopper, HandHeart } from 'lucide-react';
+import { Star, Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen, Banknote, Car, Home, Users, Briefcase, Rocket, Award, UserPlus, TrendingUp, MicOff, Signpost, Plane, PartyPopper, HandHeart, Sparkles, Compass, Puzzle, BookOpen } from 'lucide-react';
 import { type NorthStar } from '../types';
 import { NORTH_STAR_CATEGORIES, VISION_CARDS, CATEGORY_COLORS } from '../northStarData';
 
@@ -13,6 +13,8 @@ const ICON_MAP: Record<string, React.ComponentType<{ size?: number; className?: 
   Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen,
   Banknote, Car, Home, Users, Briefcase, Rocket, Award, UserPlus,
   TrendingUp, MicOff, Signpost, Plane, PartyPopper, HandHeart,
+  // Junior cycle additions (Phase 5)
+  Sparkles, Compass, Star, Puzzle, BookOpen,
 };
 
 interface NorthStarCalloutProps {

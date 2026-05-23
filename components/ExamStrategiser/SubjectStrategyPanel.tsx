@@ -12,8 +12,8 @@
 import React, { useState, useEffect } from 'react';
 import { type ExamSubject } from '../../types/examStrategiser';
 import { getSubjectStrategy } from '../../data/examStrategy';
+import { ACCENT, ACCENT_TINT } from './colors';
 
-const TEAL = '#2A7D6F';
 const STORAGE_KEY_PREFIX = 'examStrategiser:strategy:hidden:';
 
 interface Props {
@@ -52,7 +52,7 @@ const SubjectStrategyPanel: React.FC<Props> = ({ subject }) => {
         className="font-sans flex items-center gap-1.5 transition-colors"
         style={{
           fontSize: 12,
-          color: TEAL,
+          color: ACCENT,
           background: 'transparent',
           border: 'none',
           padding: 0,
@@ -73,14 +73,14 @@ const SubjectStrategyPanel: React.FC<Props> = ({ subject }) => {
     <section
       className="rounded-2xl"
       style={{
-        backgroundColor: '#F0FAF8',
+        backgroundColor: ACCENT_TINT,
         border: '1px solid #EDEBE8',
         padding: '24px 26px',
       }}
     >
       <header className="flex items-start justify-between gap-4 mb-4">
         <div className="min-w-0">
-          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
             Read me first
           </p>
           <h3 className="font-serif" style={{ fontSize: 19, fontWeight: 600, color: '#1A1A1A', marginTop: 3, lineHeight: 1.3 }}>
@@ -146,7 +146,7 @@ const RuleCard: React.FC<{ rule: { id: string; title: string; body: string }; is
   >
     <div className="flex items-baseline gap-2 mb-1">
       {isKey && (
-        <span className="font-sans" style={{ fontSize: 9, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, flexShrink: 0 }}>
+        <span className="font-sans" style={{ fontSize: 9, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, flexShrink: 0 }}>
           Key
         </span>
       )}

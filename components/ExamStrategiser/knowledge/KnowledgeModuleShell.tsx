@@ -12,12 +12,12 @@
  *   - Footer back-link
  *
  * Aesthetic register matches CAO Simulator / Strategiser: warm cream
- * panels, 1px #EDEBE8 borders, teal #2A7D6F accent.
+ * panels, 1px #EDEBE8 borders, teal #F26B1F accent.
  */
 
 import React, { useState } from 'react';
+import { ACCENT, ACCENT_TINT } from '../colors';
 
-const TEAL = '#2A7D6F';
 
 interface Props {
   /** Module title shown in the header. */
@@ -81,12 +81,12 @@ const KnowledgeModuleShell: React.FC<Props> = ({
         <section
           className="rounded-2xl"
           style={{
-            backgroundColor: '#F0FAF8',
-            border: `1px solid ${TEAL}33`,
+            backgroundColor: ACCENT_TINT,
+            border: `1px solid ${ACCENT}33`,
             padding: '18px 20px',
           }}
         >
-          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL, marginBottom: 8 }}>
+          <p className="font-sans" style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT, marginBottom: 8 }}>
             What you just learned
           </p>
           <div className="font-sans" style={{ fontSize: 13.5, color: '#3F3B36', lineHeight: 1.6 }}>
@@ -115,7 +115,7 @@ const WhyThisMattersCard: React.FC<{ defaultOpen: boolean; children: React.React
         style={{ padding: '14px 18px', cursor: 'pointer', background: 'transparent', border: 'none' }}
         aria-expanded={open}
       >
-        <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: TEAL }}>
+        <p className="font-sans" style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.6, color: ACCENT }}>
           Why this matters
         </p>
         <svg
