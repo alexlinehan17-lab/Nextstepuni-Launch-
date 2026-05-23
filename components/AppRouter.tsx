@@ -177,7 +177,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   const { showToast } = useToast();
   const nav = useNavigation();
   const { viewState, currentCategory, currentModuleId, cameFromJourney } = nav.state;
-  const { user, userResolved, handleLoginSuccess, handleLogout } = useAuth();
+  const { user, userResolved, needsOnboarding, handleLoginSuccess, handleLogout } = useAuth();
 
   const {
     studentProfile, userProgress, northStar, timetableCompletions,
@@ -265,6 +265,22 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   if (user.role === 'gc' && user.school) {
     return <Suspense fallback={<LoadingSpinner />}><GCDashboard school={user.school} onLogout={handleLogout} allCourses={ALL_COURSES} gcName={user.name} gcUid={user.uid} /></Suspense>;
+  }
+
+  // Onboarding gate: render Onboarding immediately when the auth+progress
+  // load has resolved needsOnboarding=true. Previously the redirect went
+  // through a useEffect in App.tsx that nav.navigateToOnboarding()'d after
+  // viewState=tree had already rendered KnowledgeTree for one or two
+  // frames — causing a brief home-screen flash for fresh signups before
+  // they were bounced into onboarding. Synchronous gate here removes the
+  // flash because Onboarding renders on the same render pass as the
+  // user/needsOnboarding being set.
+  if (needsOnboarding) {
+    return (
+      <Suspense fallback={<LoadingSpinner />}>
+        <Onboarding userName={user.name} onComplete={handleOnboardingComplete} onSkip={handleOnboardingSkip} />
+      </Suspense>
+    );
   }
 
   if (viewState === 'study-session') {

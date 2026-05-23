@@ -170,6 +170,15 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
   const [searchQuery, setSearchQuery] = useState('');
   const [showStatusGuide, setShowStatusGuide] = useState(false);
   const [showBroadcastModal, setShowBroadcastModal] = useState(false);
+  // Broadcast audience scope (Phase 6 follow-up). Independent of the
+  // dashboard's cohort filter so a GC can broadcast to "JC + TY" or
+  // "5th + 6th" without disturbing what they're viewing on the dashboard.
+  //   - broadcastCurriculum scopes which years can be picked
+  //   - broadcastYearGroups is a Set; an EMPTY set means "all years in
+  //     the active curriculum scope" (so the default broadcast hits
+  //     everyone). Toggling a chip narrows the audience.
+  const [broadcastCurriculum, setBroadcastCurriculum] = useState<CurriculumFilter>('all');
+  const [broadcastYearGroups, setBroadcastYearGroups] = useState<Set<YearGroup>>(new Set());
   const [showExportModal, setShowExportModal] = useState(false);
   const [broadcastMessage, setBroadcastMessage] = useState('');
   const [isBroadcasting, setIsBroadcasting] = useState(false);
@@ -798,7 +807,50 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
 
       {/* Broadcast Modal */}
       <AnimatePresence>
-        {showBroadcastModal && (
+        {showBroadcastModal && (() => {
+          // Year options scoped by the active broadcast curriculum, same
+          // pattern as the dashboard cohort filter.
+          const broadcastYearOptions: readonly YearGroup[] =
+            broadcastCurriculum === 'junior' ? ['1st', '2nd', '3rd'] as const
+            : broadcastCurriculum === 'senior' ? ['TY', '5th', '6th'] as const
+            : ['1st', '2nd', '3rd', 'TY', '5th', '6th'] as const;
+
+          // Compute recipients based on the modal's own audience scope.
+          // Empty set = "all years in scope" (whole-curriculum broadcast).
+          const broadcastRecipients = studentData.filter(s => {
+            if (broadcastCurriculum !== 'all') {
+              const lvl: CurriculumLevel | undefined =
+                s.curriculumLevel ?? (s.yearGroup ? (isJuniorYear(s.yearGroup) ? 'junior' : 'senior') : undefined);
+              if (lvl !== broadcastCurriculum) return false;
+            }
+            if (broadcastYearGroups.size > 0) {
+              if (!s.yearGroup || !broadcastYearGroups.has(s.yearGroup)) return false;
+            }
+            return true;
+          });
+
+          const toggleYear = (yg: YearGroup) => {
+            setBroadcastYearGroups(prev => {
+              const next = new Set(prev);
+              if (next.has(yg)) next.delete(yg); else next.add(yg);
+              return next;
+            });
+          };
+          const selectAllYears = () => setBroadcastYearGroups(new Set());
+          const isYearActive = (yg: YearGroup) => broadcastYearGroups.size === 0 || broadcastYearGroups.has(yg);
+
+          // Build a human-readable audience label for the button + subtitle.
+          const audienceLabel = (() => {
+            const parts: string[] = [];
+            if (broadcastCurriculum === 'junior') parts.push('Junior Cycle');
+            else if (broadcastCurriculum === 'senior') parts.push('Senior Cycle');
+            if (broadcastYearGroups.size > 0) {
+              const sortedYears = broadcastYearOptions.filter(y => broadcastYearGroups.has(y));
+              parts.push(sortedYears.map(y => y === 'TY' ? 'TY' : `${y} Year`).join(', '));
+            }
+            return parts.length === 0 ? 'all students' : parts.join(' · ');
+          })();
+          return (
           <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isBroadcasting && setShowBroadcastModal(false)}>
             <MotionDiv
               initial={{ opacity: 0, scale: 0.95 }}
@@ -813,13 +865,72 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                 </div>
                 <div>
                   <h3 className="text-sm font-semibold text-zinc-800 dark:text-white">Broadcast Message</h3>
-                  <p className="text-xs text-zinc-500">Send to all {studentData.length} students</p>
+                  <p className="text-xs text-zinc-500">
+                    Sending to <span className="font-semibold text-zinc-700 dark:text-zinc-300">{broadcastRecipients.length}</span> {broadcastRecipients.length === 1 ? 'student' : 'students'}
+                    {broadcastCurriculum !== 'all' || broadcastYearGroup !== 'all' ? ` · ${audienceLabel}` : ''}
+                  </p>
                 </div>
               </div>
+
+              {/* Audience picker — curriculum toggle + multi-select year chips */}
+              <div className="mb-3 space-y-2">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 dark:text-zinc-400">Audience</p>
+                {/* Curriculum toggle — exclusive (one of three) */}
+                <div className="flex items-center gap-0.5 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-0.5">
+                  {(['all', 'junior', 'senior'] as const).map(lvl => (
+                    <button
+                      key={lvl}
+                      onClick={() => { setBroadcastCurriculum(lvl); setBroadcastYearGroups(new Set()); }}
+                      className={`flex-1 px-2 py-1.5 rounded-md text-[11px] font-bold transition-all ${
+                        broadcastCurriculum === lvl
+                          ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
+                          : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200'
+                      }`}
+                    >
+                      {lvl === 'all' ? 'Everyone' : lvl === 'junior' ? 'Junior Cycle' : 'Senior Cycle'}
+                    </button>
+                  ))}
+                </div>
+                {/* Year chips — multi-select. Empty set = "all years in
+                    curriculum". Tap to toggle individual years; "All years"
+                    chip resets to the whole-curriculum default. */}
+                <div className="flex flex-wrap gap-1.5">
+                  <button
+                    onClick={selectAllYears}
+                    className={`px-2.5 py-1 rounded-md text-[11px] font-bold border transition-all ${
+                      broadcastYearGroups.size === 0
+                        ? 'bg-[rgba(242,107,31,0.08)] border-[rgba(242,107,31,0.3)] text-[#F26B1F]'
+                        : 'bg-zinc-100 dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200'
+                    }`}
+                  >
+                    All years
+                  </button>
+                  {broadcastYearOptions.map(yg => {
+                    const count = studentData.filter(s => s.yearGroup === yg).length;
+                    const active = broadcastYearGroups.has(yg);
+                    return (
+                      <button
+                        key={yg}
+                        onClick={() => toggleYear(yg)}
+                        className={`px-2.5 py-1 rounded-md text-[11px] font-bold border transition-all ${
+                          active
+                            ? 'bg-[rgba(242,107,31,0.08)] border-[rgba(242,107,31,0.3)] text-[#F26B1F]'
+                            : isYearActive(yg) && broadcastYearGroups.size === 0
+                              ? 'bg-zinc-50 dark:bg-zinc-800/60 border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300'
+                              : 'bg-zinc-100 dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 text-zinc-400 dark:text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-200'
+                        }`}
+                      >
+                        {yg === 'TY' ? 'TY' : `${yg} Year`} <span className="opacity-60 font-normal">· {count}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
               <textarea
                 value={broadcastMessage}
                 onChange={(e) => setBroadcastMessage(e.target.value)}
-                placeholder="Write a message to all your students..."
+                placeholder={`Write a message to ${audienceLabel}...`}
                 maxLength={300}
                 className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl p-3 text-sm text-zinc-800 dark:text-white placeholder:text-zinc-400 resize-none h-28 focus:outline-none focus:border-[rgba(242,107,31,0.5)] mb-1"
               />
@@ -830,9 +941,9 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                 </button>
                 <button
                   onClick={async () => {
-                    if (!broadcastMessage.trim()) return;
+                    if (!broadcastMessage.trim() || broadcastRecipients.length === 0) return;
                     setIsBroadcasting(true);
-                    const uids = studentData.map(s => s.user.uid);
+                    const uids = broadcastRecipients.map(s => s.user.uid);
                     await addNotificationToMultiple(uids, {
                       type: 'gc-broadcast',
                       title: 'Message from your Guidance Counsellor',
@@ -843,17 +954,25 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                     setIsBroadcasting(false);
                     setShowBroadcastModal(false);
                     setBroadcastMessage('');
+                    // Reset audience to default for the next broadcast
+                    setBroadcastCurriculum('all');
+                    setBroadcastYearGroups(new Set());
                   }}
-                  disabled={!broadcastMessage.trim() || isBroadcasting}
+                  disabled={!broadcastMessage.trim() || isBroadcasting || broadcastRecipients.length === 0}
                   className="flex-1 py-2 rounded-xl text-sm font-medium text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors dark:!bg-[#F26B1F]"
                   style={{ backgroundColor: ACCENT }}
                 >
-                  {isBroadcasting ? 'Sending...' : 'Send to All'}
+                  {isBroadcasting
+                    ? 'Sending...'
+                    : broadcastRecipients.length === 0
+                      ? 'No recipients'
+                      : `Send to ${broadcastRecipients.length}`}
                 </button>
               </div>
             </MotionDiv>
           </div>
-        )}
+          );
+        })()}
       </AnimatePresence>
 
       {/* ─── Early Warning Alerts ──────────────────────────────────────── */}

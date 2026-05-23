@@ -107,13 +107,78 @@ const DAY_SHORTS: Record<string, string> = {
 };
 
 // ─── Feature preview chips for welcome step ─────────────────────────────────
+//
+// Hand-drawn PNG icons sit on a soft pastel blob, matching the vision-board
+// styling from NorthStarOnboarding (CategoryIconBlob). Blob paths borrowed
+// from CATEGORY_BLOBS so the visual language stays consistent — four
+// distinct pastel tones, one per preview chip.
 
-const PREVIEW_CHIPS = [
-  { icon: Star, label: 'Your North Star' },
-  { icon: BookOpen, label: 'Your Subjects' },
-  { icon: Target, label: 'Grade Targets' },
-  { icon: CalendarDays, label: 'Exam Countdown' },
+interface PreviewChipConfig {
+  label: string;
+  iconPath: string;
+  blob: string;
+  blobPath: string;
+}
+
+const PREVIEW_CHIPS: PreviewChipConfig[] = [
+  {
+    label: 'Your North Star',
+    iconPath: '/icons/onboarding/north-star.png',
+    blob: '#DDC9A4',
+    blobPath: 'M 6 24 Q -2 52 8 78 Q 24 98 52 94 Q 86 90 94 62 Q 100 30 84 10 Q 60 -4 32 4 Q 12 12 6 24 Z',
+  },
+  {
+    label: 'Your Subjects',
+    iconPath: '/icons/onboarding/subjects.png',
+    blob: '#BCCCE3',
+    blobPath: 'M 6 22 Q -2 50 10 78 Q 26 98 56 94 Q 90 88 96 56 Q 100 24 80 6 Q 56 -6 28 6 Q 10 14 6 22 Z',
+  },
+  {
+    label: 'Grade Targets',
+    iconPath: '/icons/onboarding/grade-targets.png',
+    blob: '#F5C7A0',
+    blobPath: 'M 8 22 Q 0 48 6 76 Q 20 96 50 96 Q 84 96 94 70 Q 100 40 84 14 Q 64 -2 36 4 Q 14 12 8 22 Z',
+  },
+  {
+    label: 'Exam Countdown',
+    iconPath: '/icons/onboarding/countdown.png',
+    blob: '#B5D4CC',
+    blobPath: 'M 8 26 Q 0 50 8 78 Q 22 96 54 96 Q 88 94 96 64 Q 100 32 80 10 Q 56 -2 28 8 Q 12 16 8 26 Z',
+  },
 ];
+
+// Inline icon-on-blob renderer for the preview chips. Mirrors the
+// CategoryIconBlob component from NorthStarOnboarding.
+const PreviewChipIcon: React.FC<{ config: PreviewChipConfig; size: number }> = ({ config, size }) => (
+  // overflow visible so the oversized icon can poke past the blob bounds
+  // without being clipped.
+  <div className="relative shrink-0" style={{ width: size, height: size, overflow: 'visible' }} aria-hidden>
+    <svg
+      className="absolute pointer-events-none"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="xMidYMid meet"
+      style={{ width: '100%', height: '100%', left: 0, top: 0, zIndex: 0 }}
+    >
+      <path d={config.blobPath} fill={config.blob} opacity="0.85" />
+    </svg>
+    <img
+      src={config.iconPath}
+      alt=""
+      style={{
+        position: 'absolute',
+        left: '50%',
+        top: '50%',
+        transform: 'translate(-50%, -50%)',
+        // Oversize the icon relative to the blob so it pokes past the
+        // edges, mirroring the vision-board chip styling.
+        width: '115%',
+        height: '115%',
+        objectFit: 'contain',
+        zIndex: 1,
+      }}
+    />
+  </div>
+);
 
 // ─── Animated number counter ────────────────────────────────────────────────
 
@@ -475,7 +540,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       initial={{ opacity: 0, y: 16 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                      className="grid grid-cols-2 gap-2 max-w-sm mx-auto"
+                      className="grid grid-cols-2 gap-3 max-w-md mx-auto"
                     >
                       {PREVIEW_CHIPS.map((chip, i) => (
                         <motion.div
@@ -483,11 +548,11 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                           initial={{ opacity: 0, scale: 0.9 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ duration: 0.4, delay: 0.9 + i * 0.08, ease: [0.16, 1, 0.3, 1] }}
-                          className="flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium"
-                          style={{ backgroundColor: 'rgba(255,255,255,0.85)', border: '1px solid rgba(0,0,0,0.06)', color: '#57534E' }}
+                          className="flex flex-col items-center justify-center gap-2 px-3 py-5 rounded-2xl text-sm font-semibold text-center"
+                          style={{ backgroundColor: 'rgba(255,255,255,0.85)', border: '1px solid rgba(0,0,0,0.06)', color: '#3a3530' }}
                         >
-                          <chip.icon size={12} style={{ color: COLORS.accent }} />
-                          {chip.label}
+                          <PreviewChipIcon config={chip} size={72} />
+                          <span>{chip.label}</span>
                         </motion.div>
                       ))}
                     </motion.div>
@@ -568,8 +633,12 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       <div className="grid grid-cols-3 gap-3">
                         {(['TY', '5th', '6th'] as const).map(yr => {
                           const selected = yearGroup === yr;
-                          const label = yr === 'TY' ? 'TY' : yr;
-                          const sub = yr === 'TY' ? 'Transition' : 'Year';
+                          // TY = "4th year" colloquially, but the underlying
+                          // YearGroup token stays 'TY' to match Phase 1's
+                          // type union (no migration needed). UI shows "4th"
+                          // with "Transition Year" subtitle for clarity.
+                          const label = yr === 'TY' ? '4th' : yr;
+                          const sub = yr === 'TY' ? 'Transition Year' : 'Year';
                           return (
                             <button
                               key={yr}

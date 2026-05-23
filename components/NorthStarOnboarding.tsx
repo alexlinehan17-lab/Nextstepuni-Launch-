@@ -50,6 +50,18 @@ const VISION_ICON_IMG: Record<string, string> = {
   'real-choices': '/icons/north-star/vision/real-choices.png',
   'see-world': '/icons/north-star/vision/see-world.png',
   'freedom-no': '/icons/north-star/vision/freedom-no.png',
+  // ─── JC vision cards (Phase 5) — reuse senior PNGs where concepts match
+  // 1:1. Four JC cards still lack art and fall back to the lucide icon:
+  // jc-really-good, jc-solve-hard, jc-subject-choice, jc-try-new. Bespoke
+  // PNGs needed for those (flagged to designer 2026-05-24).
+  'jc-family-proud': '/icons/north-star/vision/family-proud.png',
+  'jc-role-model': '/icons/north-star/vision/role-model.png',
+  'jc-giving-back': '/icons/north-star/vision/giving-back.png',
+  'jc-beating-odds': '/icons/north-star/vision/beating-odds.png',
+  'jc-silence-doubters': '/icons/north-star/vision/silence-doubters.png',
+  'jc-results-day': '/icons/north-star/vision/results-day.png',
+  'jc-mastering-skill': '/icons/north-star/vision/skilled-trade.png',
+  'jc-real-choices': '/icons/north-star/vision/real-choices.png',
 };
 
 const CATEGORY_BLOBS: Partial<Record<NorthStarCategory, CategoryBlobConfig>> = {
@@ -79,6 +91,29 @@ const CATEGORY_BLOBS: Partial<Record<NorthStarCategory, CategoryBlobConfig>> = {
     blobPath: 'M 4 26 Q 2 56 12 82 Q 26 98 52 96 Q 88 94 96 64 Q 100 34 84 10 Q 60 -4 30 6 Q 10 18 4 26 Z',
   },
   'options-freedom': {
+    iconPath: '/icons/north-star/open-options.png',
+    blob: '#B5D4CC',
+    blobPath: 'M 8 26 Q 0 50 8 78 Q 22 96 54 96 Q 88 94 96 64 Q 100 32 80 10 Q 56 -2 28 8 Q 12 16 8 26 Z',
+  },
+  // ─── JC categories (Phase 5) ─────────────────────────────────────────
+  // Reuse the senior category PNGs since the underlying themes map 1:1.
+  // Distinct blob colours so the JC view still feels its own visually.
+  'family-people': {
+    iconPath: '/icons/north-star/community.png',
+    blob: '#ECBBCC',
+    blobPath: 'M 4 28 Q 0 56 12 82 Q 28 100 56 96 Q 90 92 96 60 Q 100 28 82 8 Q 56 -6 30 6 Q 10 16 4 28 Z',
+  },
+  'prove-myself-jc': {
+    iconPath: '/icons/north-star/prove-them-wrong.png',
+    blob: '#F1B7AB',
+    blobPath: 'M 4 26 Q 2 56 12 82 Q 26 98 52 96 Q 88 94 96 64 Q 100 34 84 10 Q 60 -4 30 6 Q 10 18 4 26 Z',
+  },
+  'curiosity-craft': {
+    iconPath: '/icons/north-star/career.png',
+    blob: '#F5C7A0',
+    blobPath: 'M 8 22 Q 0 48 6 76 Q 20 96 50 96 Q 84 96 94 70 Q 100 40 84 14 Q 64 -2 36 4 Q 14 12 8 22 Z',
+  },
+  'future-doors': {
     iconPath: '/icons/north-star/open-options.png',
     blob: '#B5D4CC',
     blobPath: 'M 8 26 Q 0 50 8 78 Q 22 96 54 96 Q 88 94 96 64 Q 100 32 80 10 Q 56 -2 28 8 Q 12 16 8 26 Z',
