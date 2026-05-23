@@ -394,6 +394,11 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             .filter((b): b is { blockId: string; fullId: string; subjectName: string; sessionType: string } => b !== null);
     }, [subjectProfile, timetableCompletions, earnedRest.skippedSessions]);
 
+    // Curriculum level — used by the tools array below for curriculum-aware
+    // titles (e.g. Future Finder → "Subject Explorer" for JC users) and by
+    // the filter further down. Declared here so the tools array can read it.
+    const curriculumLevel = user?.curriculumLevel ?? 'senior';
+
     const tools = [
         {
             id: 'journey', title: 'Academic Journey Simulator', description: 'Navigate the choices of your final school year.', icon: GitBranch, needsProfile: false,
@@ -415,7 +420,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         },
         {
             id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true,
-            curriculum: 'senior' as const,
+            curriculum: 'both' as const,
             tag: 'Planner', accentHex: '#6366f1', gridClass: 'md:col-span-2',
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
@@ -433,7 +438,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         },
         {
             id: 'comeback', title: 'Comeback Engine', description: 'Find your quickest wins and build a comeback plan.', icon: Rocket, needsProfile: true,
-            curriculum: 'senior' as const,
+            curriculum: 'both' as const,
             tag: 'Comeback', accentHex: '#f97316', gridClass: 'md:col-span-2',
             iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400',
             accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
@@ -441,8 +446,17 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             component: subjectProfile ? <ComebackEngine uid={user!.uid} profile={subjectProfile} /> : null,
         },
         {
-            id: 'future-finder', title: 'Future Finder', description: 'Discover college courses that fit who you are.', icon: Compass, needsProfile: true,
-            curriculum: 'senior' as const,
+            // Option B (per Phase 2 spec): same tile, but the title and
+            // description swap for JC users. Inside FutureFinder.tsx the
+            // entire post-quiz output diverges — JC runs the cluster
+            // matcher and renders the Subject Explorer results view.
+            id: 'future-finder',
+            title: curriculumLevel === 'junior' ? 'Subject Explorer' : 'Future Finder',
+            description: curriculumLevel === 'junior'
+              ? 'Find out which subjects you\'d enjoy in senior cycle.'
+              : 'Discover college courses that fit who you are.',
+            icon: Compass, needsProfile: true,
+            curriculum: 'both' as const,
             tag: 'Career Discovery', accentHex: '#6366f1', gridClass: 'md:col-span-2',
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
@@ -494,7 +508,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
 
     // Curriculum gating (Phase 4): JC users only see tools tagged 'both'
     // or 'junior'. Senior users see everything (incl. tools without a tag).
-    const curriculumLevel = user?.curriculumLevel ?? 'senior';
+    // (curriculumLevel itself is now declared above the tools array.)
     const curriculumVisibleTools = tools.filter(t => {
       const tag = t.curriculum ?? 'senior';
       return tag === 'both' || tag === curriculumLevel;
@@ -602,13 +616,16 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     </div>
 
                     {/* Empty state for JC users when no tools are curriculum-visible.
-                        Phase 4 ships zero JC-visible tools by design — Phase 2 adds
-                        Spaced Repetition + Comeback Engine + Subject Explorer. */}
+                        Phase 2 ships 3 JC-visible tools (Spaced Repetition,
+                        Comeback Engine, Subject Explorer). This branch is now
+                        only reachable when the user filters by a category that
+                        contains zero JC-visible tools — so the message reflects
+                        a filter mismatch, not a roadmap gap. */}
                     {filteredTools.length === 0 && curriculumLevel === 'junior' && (
                       <div className="rounded-2xl p-10 text-center" style={{ backgroundColor: '#FDF8F0', border: '2px solid #1A1A1A' }}>
-                        <p className="font-serif text-xl font-bold mb-2 text-[#1A1A1A]">Tools for Junior Cycle are on the way.</p>
+                        <p className="font-serif text-xl font-bold mb-2 text-[#1A1A1A]">No tools in this category for Junior Cycle yet.</p>
                         <p className="text-sm text-[#78716C] max-w-md mx-auto">
-                          We're building Junior Cycle versions of our study tools — spaced repetition timetables, comeback plans, and a subject explorer. Check back soon.
+                          Try a different category, or hit "All" to see the tools we have ready for you — Spaced Repetition Timetable, Comeback Engine, and Subject Explorer.
                         </p>
                       </div>
                     )}

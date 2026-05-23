@@ -16,14 +16,15 @@ import { db } from '../firebase';
 import { COLORS } from '../design/tokens';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import {
-  type StudentSubjectProfile, type Grade, type Level,
+  type StudentSubjectProfile, type Grade, type Level, type JCBand,
   getPointsForGrade, getGradeIndex,
-  HIGHER_GRADES, ORDINARY_GRADES,
+  HIGHER_GRADES, ORDINARY_GRADES, JC_BANDS,
   LC_SUBJECTS,
 } from './subjectData';
 import { getDistinctSubjectHex } from '../studySessionData';
 import { type CAOCourse } from './futureFinderData';
 import { useInnovationData } from '../contexts/InnovationDataContext';
+import { useAuth } from '../contexts/AuthContext';
 
 // ── Types ──────────────────────────────────────────────────
 
@@ -37,7 +38,11 @@ interface ComebackData {
   history: ProgressSnapshot[];
 }
 
-type AnchorType = 'course' | 'apprenticeship' | 'plc' | 'options' | 'prove-them-wrong' | 'custom' | 'future-finder';
+type AnchorType =
+  // Senior (LC) anchors — tied to post-LC progression
+  | 'course' | 'apprenticeship' | 'plc' | 'options' | 'prove-them-wrong' | 'custom' | 'future-finder'
+  // JC anchors (Phase 2 JC support) — tied to in-school improvement targets
+  | 'subject-target' | 'streak-recovery' | 'topic-mastery' | 'subject-explorer';
 
 interface WeeklyMission {
   id: string;
@@ -83,6 +88,19 @@ const ANCHOR_OPTIONS: { type: AnchorType; label: string; icon: React.ElementType
   { type: 'custom', icon: Sparkles, label: 'Something else', prompt: 'What\'s your goal?' },
 ];
 
+// JC anchor options (Phase 2 JC support) — JC kids don't have CAO/PLC/
+// apprenticeship targets yet. Their meaningful anchors are in-school: hit
+// a band, recover a broken study streak, master a shaky topic, or use
+// Subject Explorer to think ahead about senior cycle.
+const ANCHOR_OPTIONS_JC: { type: AnchorType; label: string; icon: React.ElementType; prompt: string }[] = [
+  { type: 'subject-target', icon: Target, label: 'Hit a band in a specific subject', prompt: 'Which subject? (We\'ll set up the plan)' },
+  { type: 'streak-recovery', icon: Flame, label: 'Get my study streak back', prompt: '' },
+  { type: 'topic-mastery', icon: BookOpen, label: 'Master a specific topic', prompt: 'Which topic? (Optional — leave blank to pick later)' },
+  { type: 'subject-explorer', icon: Compass, label: 'My Subject Explorer pick', prompt: '' },
+  { type: 'prove-them-wrong', icon: Sparkles, label: 'Prove someone wrong', prompt: '' },
+  { type: 'custom', icon: Sparkles, label: 'Something else', prompt: 'What\'s your goal?' },
+];
+
 // Common PLC/apprenticeship thresholds — not exact, but good motivational targets
 const POINTS_THRESHOLDS: Record<string, number> = {
   'plc-general': 200,
@@ -109,6 +127,57 @@ function _getTwoGradesUp(grade: Grade): Grade | null {
   if (idx <= 1) return getOneGradeUp(grade);
   if (grade.startsWith('H')) return HIGHER_GRADES[idx - 2];
   return ORDINARY_GRADES[idx - 2];
+}
+
+// JC band walk — JC_BANDS is ordered best→worst (Distinction=0,
+// Not Graded=5). One band up = move toward 0.
+function getOneBandUp(band: JCBand): JCBand | null {
+  const idx = JC_BANDS.indexOf(band);
+  if (idx <= 0) return null; // already at Distinction
+  return JC_BANDS[idx - 1];
+}
+
+interface QuickWinJC {
+  subject: string;
+  currentBand: JCBand;
+  targetBand: JCBand; // one band up
+  bandsGapped: number;
+  effort: 'low' | 'medium' | 'high';
+  level: Level;
+  trending?: 'up' | 'down' | 'stable';
+}
+
+function calculateQuickWinsJC(subjects: StudentSubjectProfile['subjects'], mockTrends?: Record<string, 'up' | 'down' | 'stable'>): QuickWinJC[] {
+  const wins: QuickWinJC[] = [];
+  for (const s of subjects) {
+    const currentBand = s.currentBand;
+    if (!currentBand) continue; // skip subjects with no band data
+    const oneUp = getOneBandUp(currentBand);
+    if (!oneUp) continue; // already at Distinction
+
+    const currentIdx = JC_BANDS.indexOf(currentBand);
+    // Bands toward the bottom (higher index) are easier to improve from —
+    // mirrors the senior "low grade = low effort" heuristic.
+    let effort: QuickWinJC['effort'] = 'medium';
+    if (currentIdx >= 4) effort = 'low';        // Partially Achieved / Not Graded → low effort one-band gain
+    else if (currentIdx <= 1) effort = 'high';  // Distinction / Higher Merit already → high effort to push further
+
+    wins.push({
+      subject: s.subjectName,
+      currentBand,
+      targetBand: oneUp,
+      bandsGapped: 1,
+      effort,
+      level: s.level,
+      trending: mockTrends?.[s.subjectName],
+    });
+  }
+
+  // Sort by effort (low first), then trending-down boost
+  const effortWeight = { low: 3, medium: 2, high: 1 };
+  const trendWeight = (t?: string) => t === 'down' ? 1.3 : t === 'up' ? 0.8 : 1;
+  wins.sort((a, b) => (effortWeight[b.effort] * trendWeight(b.trending)) - (effortWeight[a.effort] * trendWeight(a.trending)));
+  return wins;
 }
 
 function calculateQuickWins(subjects: StudentSubjectProfile['subjects'], mockTrends?: Record<string, 'up' | 'down' | 'stable'>): QuickWin[] {
@@ -279,9 +348,93 @@ function generateMissions(
   return missions;
 }
 
+// ── JC Mission Generation ──────────────────────────────────
+//
+// JC equivalent of generateMissions. Missions are framed as band-progress
+// targets rather than CAO-points gains. The WeeklyMission shape is shared
+// (pointsImpact=0 for JC), so all downstream rendering works — but the
+// "+X pts" badge on each mission is hidden for JC via the isJunior gate.
+
+function generateMissionsJC(
+  quickWins: QuickWinJC[],
+  topicMastery?: Record<string, Record<string, { confidence: string }>>,
+): WeeklyMission[] {
+  const missions: WeeklyMission[] = [];
+  const topWins = quickWins.slice(0, 3);
+  const missionSubjects = new Set<string>();
+
+  for (const win of topWins) {
+    missionSubjects.add(win.subject);
+    missions.push({
+      id: genId(),
+      subject: win.subject,
+      action: `Do one past-paper question or sample question in ${win.subject}`,
+      reason: `Going from ${win.currentBand} to ${win.targetBand} starts with active practice`,
+      pointsImpact: 0,
+      done: false,
+    });
+  }
+
+  if (topWins.length > 0) {
+    const biggest = topWins[0];
+    missions.push({
+      id: genId(),
+      subject: biggest.subject,
+      action: `Spend 20 minutes reviewing your weakest topic in ${biggest.subject}`,
+      reason: `${biggest.subject} has the most room to improve right now`,
+      pointsImpact: 0,
+      done: false,
+    });
+  }
+
+  // Topic-specific missions from mastery data, same shape as senior
+  if (topicMastery) {
+    for (const win of topWins) {
+      const subjectTopics = topicMastery[win.subject];
+      if (!subjectTopics) continue;
+      const shakyTopics = Object.entries(subjectTopics)
+        .filter(([, t]) => t.confidence === 'shaky')
+        .map(([name]) => name);
+      if (shakyTopics.length > 0) {
+        const idx = missions.findIndex(m => m.subject === win.subject && m.action.includes('weakest topic'));
+        const specificTopic = shakyTopics[0];
+        const newMission: WeeklyMission = {
+          id: genId(),
+          subject: win.subject,
+          action: `Focus on "${specificTopic}" in ${win.subject} — it's marked as shaky`,
+          reason: `${shakyTopics.length} topic${shakyTopics.length > 1 ? 's' : ''} still shaky in ${win.subject}`,
+          pointsImpact: 0,
+          done: false,
+        };
+        if (idx >= 0) missions[idx] = newMission;
+        else if (missions.length < 7) missions.push(newMission);
+      }
+    }
+  }
+
+  // One mindset mission — generic, no exam-countdown framing for JC
+  missions.push({
+    id: genId(),
+    subject: 'General',
+    action: 'Write down one reason you want to do better — keep it somewhere you can see it',
+    reason: 'Students who write their goals down are 42% more likely to achieve them',
+    pointsImpact: 0,
+    done: false,
+  });
+
+  return missions;
+}
+
 // ── Main Component ─────────────────────────────────────────
 
 const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
+  // Curriculum flag (Phase 2 JC support). When isJunior, we render the
+  // JC anchor list, swap CAO-points framing for descriptor-band framing,
+  // and skip Future Finder integration in favour of Subject Explorer.
+  const { user } = useAuth();
+  const curriculumLevel = user?.curriculumLevel ?? profile.curriculumLevel ?? 'senior';
+  const isJunior = curriculumLevel === 'junior';
+
   const { showToast } = useToast();
   const [comebackData, setComebackData] = useState<ComebackData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -313,12 +466,20 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
 
   const subjects = profile.subjects;
   const daysUntilExam = useMemo(() => {
+    if (!profile.examStartDate) return 999; // no exam date set (e.g. 1st/2nd JC): treat as "far away" — skips the timed nudges
     const exam = new Date(profile.examStartDate);
     return Math.max(0, Math.ceil((exam.getTime() - Date.now()) / 86400000));
   }, [profile.examStartDate]);
 
+  // Senior CAO-points projections — JC subjects have no currentGrade so these
+  // would return 0. Computed unconditionally for type/wiring stability;
+  // gated to senior-only in render below.
   const projectedPoints = useMemo(() => computeProjectedPoints(subjects), [subjects]);
   const maxRealisticPoints = useMemo(() => computeMaxRealisticPoints(subjects), [subjects]);
+
+  // JC quick-wins — band-walk equivalent of senior calculateQuickWins.
+  // Computed unconditionally; only consumed when isJunior is true.
+  const quickWinsJC = useMemo(() => calculateQuickWinsJC(subjects, undefined), [subjects]);
 
   // Compute mock trends: compare last two mocks per subject
   const { mockResults: mockResultsCtx, subjectPriorities } = useInnovationData();
@@ -393,7 +554,12 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
     if (!selectedAnchor) return;
 
     let targetPts: number | null = null;
-    if (selectedAnchor === 'future-finder' && selectedFfPick) {
+    // JC anchors never carry a CAO points target — JC has no points concept.
+    // (subject-target / streak-recovery / topic-mastery / subject-explorer
+    //  all run without a numerical target.)
+    if (isJunior) {
+      targetPts = null;
+    } else if (selectedAnchor === 'future-finder' && selectedFfPick) {
       targetPts = selectedFfPick.typicalPoints;
     } else if (customPoints && !isNaN(Number(customPoints))) {
       targetPts = Number(customPoints);
@@ -407,12 +573,19 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
       targetPts = null;
     }
 
-    const missions = generateMissions(quickWins, daysUntilExam, whatIfScenarios, topicMasteryData);
+    // Missions: senior uses CAO-points-flavoured calculateQuickWins;
+    // JC uses band-walk equivalent. Both feed the same WeeklyMission
+    // shape (pointsImpact=0 for JC missions — the field is rendered
+    // conditionally below).
+    const missions = isJunior
+      ? generateMissionsJC(quickWinsJC, topicMasteryData)
+      : generateMissions(quickWins, daysUntilExam, whatIfScenarios, topicMasteryData);
     const today = new Date().toISOString().split('T')[0];
 
+    const anchorList = isJunior ? ANCHOR_OPTIONS_JC : ANCHOR_OPTIONS;
     const anchorLabel = selectedAnchor === 'future-finder' && selectedFfPick
       ? `${selectedFfPick.title} (${selectedFfPick.institution})`
-      : anchorText || ANCHOR_OPTIONS.find(a => a.type === selectedAnchor)?.label || '';
+      : anchorText || anchorList.find(a => a.type === selectedAnchor)?.label || '';
 
     const data: ComebackData = {
       anchor: anchorLabel,
@@ -550,9 +723,11 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
           )}
         </div>
 
-        {/* Anchor selection */}
+        {/* Anchor selection — JC users see in-school anchors (subject-target,
+            streak-recovery, topic-mastery, Subject Explorer); senior users see
+            CAO/PLC/apprenticeship anchors. */}
         <div className="space-y-2">
-          {ANCHOR_OPTIONS.map(opt => {
+          {(isJunior ? ANCHOR_OPTIONS_JC : ANCHOR_OPTIONS).map(opt => {
             const isFf = opt.type === 'future-finder';
             const ffDisabled = isFf && ffPicks.length === 0;
             return (
@@ -629,11 +804,12 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                 </div>
               )}
 
-              {/* Text input for goal */}
-              {(selectedAnchor === 'course' || selectedAnchor === 'plc' || selectedAnchor === 'apprenticeship' || selectedAnchor === 'custom') && (
+              {/* Text input for goal — covers both senior (course/plc/apprenticeship/custom)
+                  and JC (subject-target/topic-mastery/custom) anchors that need a prompt */}
+              {(selectedAnchor === 'course' || selectedAnchor === 'plc' || selectedAnchor === 'apprenticeship' || selectedAnchor === 'custom' || selectedAnchor === 'subject-target' || selectedAnchor === 'topic-mastery') && (
                 <div>
                   <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">
-                    {ANCHOR_OPTIONS.find(a => a.type === selectedAnchor)?.prompt}
+                    {(isJunior ? ANCHOR_OPTIONS_JC : ANCHOR_OPTIONS).find(a => a.type === selectedAnchor)?.prompt}
                   </label>
                   <input
                     type="text"
@@ -694,15 +870,37 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
           <p className="text-xs text-zinc-400 dark:text-zinc-500">No judgement. Just the facts.</p>
         </div>
 
-        {/* Current projection */}
-        <div className="rounded-2xl p-5 text-center space-y-1 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
-          <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Your projected CAO points</p>
-          <p className="text-5xl font-black" style={{ color: COLORS.accent }}>{projectedPoints}</p>
-          <p className="text-xs text-zinc-400 dark:text-zinc-500">Based on your best 6 subjects right now</p>
-        </div>
+        {/* Current projection — senior only (JC has no CAO points concept).
+            JC users get a band-summary card immediately below. */}
+        {!isJunior && (
+          <div className="rounded-2xl p-5 text-center space-y-1 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+            <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Your projected CAO points</p>
+            <p className="text-5xl font-black" style={{ color: COLORS.accent }}>{projectedPoints}</p>
+            <p className="text-xs text-zinc-400 dark:text-zinc-500">Based on your best 6 subjects right now</p>
+          </div>
+        )}
 
-        {/* Target & gap */}
-        {targetPoints !== null && gap !== null && (
+        {/* JC band-summary: subjects with the biggest room to improve right
+            now, framed as bands-below-target rather than points-gap. */}
+        {isJunior && (
+          <div className="rounded-2xl p-5 space-y-2 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+            <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 text-center">Your subjects right now</p>
+            {subjects.length === 0 && (
+              <p className="text-xs text-zinc-400 text-center">No subjects yet — add them in your profile.</p>
+            )}
+            {subjects.map(s => (
+              <div key={s.subjectName} className="flex items-center justify-between text-sm">
+                <span className="font-semibold text-zinc-800 dark:text-zinc-200">{s.subjectName}</span>
+                <span className="text-xs text-zinc-500 dark:text-zinc-400">
+                  {s.currentBand ?? '—'} {s.targetBand ? ` → ${s.targetBand}` : ''}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Target & gap — senior only (gap is measured in CAO points) */}
+        {!isJunior && targetPoints !== null && gap !== null && (
           <div className="rounded-2xl p-5 text-center space-y-2 border"
             style={gap === 0
               ? { backgroundColor: '#EDF2EE', borderColor: '#6B8F71' }
@@ -742,8 +940,9 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
           </div>
         )}
 
-        {/* No target set — show what's possible */}
-        {targetPoints === null && (
+        {/* No target set — show what's possible. Senior only; JC band
+            progression doesn't render meaningfully as points. */}
+        {!isJunior && targetPoints === null && (
           <div className="bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700/50 rounded-2xl p-5 text-center space-y-2">
             <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">What's realistically possible</p>
             <p className="text-3xl font-black text-zinc-800 dark:text-white">{projectedPoints} → {maxRealisticPoints}</p>
@@ -770,6 +969,9 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
   if (phase === 'wins') {
     const top5 = quickWins.slice(0, 5);
     const totalPossible = top5.reduce((sum, w) => sum + w.gain, 0);
+    // JC alternate: band-walk wins. Rendered only when isJunior; otherwise
+    // top5 (senior LC grade-walk) is used unchanged.
+    const top5JC = quickWinsJC.slice(0, 5);
 
     return (
       <div className="space-y-5">
@@ -784,8 +986,13 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
         </div>
 
         <div className="space-y-3">
-          {top5.map((win, i) => {
+          {(isJunior ? top5JC : top5).map((win, i) => {
             const hexColor = getDistinctSubjectHex(win.subject, i);
+            // Junior rows use currentBand/targetBand; senior uses
+            // currentGrade/targetGrade and gain (CAO points).
+            const isJC = isJunior;
+            const fromLabel = isJC ? (win as QuickWinJC).currentBand : (win as QuickWin).currentGrade;
+            const toLabel = isJC ? (win as QuickWinJC).targetBand : (win as QuickWin).targetGrade;
             return (
               <MotionDiv
                 key={win.subject}
@@ -816,28 +1023,34 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                       {win.trending === 'stable' && <span className="text-[10px] text-[#A8A29E] dark:text-zinc-500">—</span>}
                     </div>
                     <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
-                      {win.currentGrade} → {win.targetGrade}
+                      {fromLabel} → {toLabel}
                     </p>
                   </div>
-                  <div className="text-right shrink-0">
-                    <p className="text-lg font-black" style={{ color: '#6B8F71' }}>+{win.gain}</p>
-                    <p className="text-[10px] text-zinc-400 dark:text-zinc-500">CAO pts</p>
-                  </div>
+                  {/* CAO-points payoff — senior only. JC shows the band
+                      walk in the from→to row above; no numerical payoff. */}
+                  {!isJunior && (
+                    <div className="text-right shrink-0">
+                      <p className="text-lg font-black" style={{ color: '#6B8F71' }}>+{(win as QuickWin).gain}</p>
+                      <p className="text-[10px] text-zinc-400 dark:text-zinc-500">CAO pts</p>
+                    </div>
+                  )}
                 </div>
               </MotionDiv>
             );
           })}
         </div>
 
-        {/* Total potential */}
-        <div className="rounded-xl p-4 text-center" style={{ backgroundColor: '#EDF2EE', border: '0.5px solid rgba(107,143,113,0.3)' }}>
-          <p className="text-xs" style={{ color: '#4A6B4F' }}>
-            Just these {top5.length} moves alone could be worth up to <span className="font-black text-lg">+{totalPossible}</span> CAO points
-          </p>
-          <p className="text-[10px] mt-1" style={{ color: '#6B8F71' }}>
-            {projectedPoints} → {projectedPoints + totalPossible} projected
-          </p>
-        </div>
+        {/* Total potential — senior only (CAO points sum doesn't translate to JC) */}
+        {!isJunior && (
+          <div className="rounded-xl p-4 text-center" style={{ backgroundColor: '#EDF2EE', border: '0.5px solid rgba(107,143,113,0.3)' }}>
+            <p className="text-xs" style={{ color: '#4A6B4F' }}>
+              Just these {top5.length} moves alone could be worth up to <span className="font-black text-lg">+{totalPossible}</span> CAO points
+            </p>
+            <p className="text-[10px] mt-1" style={{ color: '#6B8F71' }}>
+              {projectedPoints} → {projectedPoints + totalPossible} projected
+            </p>
+          </div>
+        )}
 
         <button
           onClick={() => setPhase('plan')}
@@ -966,7 +1179,10 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
 
   return (
     <div className="space-y-5">
-      {/* Top stats row */}
+      {/* Top stats row — senior-only (CAO points framing). JC users see
+          the band-summary on the gap phase and rely on weekly missions
+          here, so we skip the top stats row entirely for JC. */}
+      {!isJunior && (
       <div className="grid grid-cols-2 gap-3">
         <div className="rounded-xl p-4 text-center bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: '12px' }}>
           <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Projected</p>
@@ -1000,9 +1216,10 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
           </div>
         )}
       </div>
+      )}
 
-      {/* Momentum indicator */}
-      {comebackData && comebackData.history.length > 1 && (
+      {/* Momentum indicator — senior-only (driven by CAO points delta) */}
+      {!isJunior && comebackData && comebackData.history.length > 1 && (
         <div className={`rounded-xl p-4 text-center border ${pointsGained === 0 ? 'bg-[#FAF7F4] dark:bg-zinc-900' : ''}`}
           style={pointsGained > 0
             ? { backgroundColor: '#EDF2EE', borderColor: 'rgba(107,143,113,0.3)' }

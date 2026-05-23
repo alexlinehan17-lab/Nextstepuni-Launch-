@@ -25,6 +25,8 @@ import {
   type RecommendationResult,
   type AssessmentQuestion,
 } from './futureFinderAlgorithm';
+import { useAuth } from '../contexts/AuthContext';
+import { runSubjectExplorerMatch, type ClusterMatchResult } from './subjectExplorerData';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -113,12 +115,35 @@ function getMatchLabel(pct: number): string {
 // ─── Component ──────────────────────────────────────────────────────────────
 
 const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
+  // ─── Curriculum flag (Phase 2 JC support) ──────────────────────────────
+  // For JC users this tool is rebranded as "Subject Explorer" — same 10-q
+  // intent quiz (Q1-Q7 only; Q8-Q10 about study duration / region are CAO-
+  // specific and skipped), but matches answers to clusters of LC subjects
+  // they'd enjoy in senior cycle rather than to CAO courses.
+  const { user } = useAuth();
+  const curriculumLevel = user?.curriculumLevel ?? profile.curriculumLevel ?? 'senior';
+  const isJunior = curriculumLevel === 'junior';
+
+  // Effective question set: JC skips the CAO-flavoured Q8-Q11
+  // (studyDuration, willingToRelocate, preferredRegions, estimatedPoints).
+  const effectiveQuestions = useMemo(
+    () => isJunior
+      ? ASSESSMENT_QUESTIONS.filter(q =>
+          q.id !== 'studyDuration' && q.id !== 'willingToRelocate' &&
+          q.id !== 'preferredRegions' && q.id !== 'estimatedPoints'
+        )
+      : ASSESSMENT_QUESTIONS,
+    [isJunior]
+  );
+
   const { showToast } = useToast();
   const [isLoading, setIsLoading] = useState(true);
   const [phase, setPhase] = useState<Phase>('intro');
   const [answers, setAnswers] = useState<FutureFinderAnswers>(getDefaultAnswers());
   const [currentQ, setCurrentQ] = useState(0);
   const [results, setResults] = useState<RecommendationResult[]>([]);
+  // JC cluster matches — populated in handleAssessmentComplete when isJunior.
+  const [clusterResults, setClusterResults] = useState<ClusterMatchResult[]>([]);
   const [selectedCourse, setSelectedCourse] = useState<RecommendationResult | null>(null);
   const [compareCourses, setCompareCourses] = useState<RecommendationResult[]>([]);
   const [savedPicks, setSavedPicks] = useState<string[]>([]);
@@ -144,15 +169,20 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
           const migrated = migrateAnswers(ff.answers);
           setAnswers(migrated);
           setSavedPicks(ff.topPicks || []);
-          // Re-run algorithm with migrated answers
-          const res = runFutureFinderAssessment(migrated, profile, autoPoints);
-          setResults(res);
-          // Restore compare selections by matching codes against results
-          if (ff.compareCodes && ff.compareCodes.length > 0) {
-            const restored = ff.compareCodes
-              .map(code => res.find(r => r.course.code === code))
-              .filter((r): r is RecommendationResult => !!r);
-            setCompareCourses(restored);
+          // Re-run the appropriate algorithm with migrated answers. JC
+          // runs the cluster matcher; senior runs the CAO course matcher.
+          if (isJunior) {
+            setClusterResults(runSubjectExplorerMatch(migrated));
+          } else {
+            const res = runFutureFinderAssessment(migrated, profile, autoPoints);
+            setResults(res);
+            // Restore compare selections by matching codes against results
+            if (ff.compareCodes && ff.compareCodes.length > 0) {
+              const restored = ff.compareCodes
+                .map(code => res.find(r => r.course.code === code))
+                .filter((r): r is RecommendationResult => !!r);
+              setCompareCourses(restored);
+            }
           }
           setPhase('results');
         } else {
@@ -166,7 +196,7 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
     };
     load();
     return () => { cancelled = true; };
-  }, [uid, profile, autoPoints]);
+  }, [uid, profile, autoPoints, isJunior]);
 
   // Save data to Firestore
   const saveToFirestore = useCallback((data: FutureFinderData) => {
@@ -176,8 +206,27 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
       .catch(err => { console.error('Failed to save:', err); showToast('Couldn\'t save \u2014 check your connection', 'error'); });
   }, [uid, showToast]);
 
-  // Handle assessment completion
+  // Handle assessment completion. JC users run the cluster matcher
+  // (Subject Explorer); senior users run the CAO course matcher (Future
+  // Finder). Both paths land in the same 'results' phase, but the render
+  // branches on isJunior.
   const handleAssessmentComplete = useCallback(() => {
+    if (isJunior) {
+      const clusters = runSubjectExplorerMatch(answers);
+      setClusterResults(clusters);
+      setPhase('results');
+      // Persist a marker so we know the assessment was completed; we don't
+      // currently persist the cluster ranking itself — it's cheap to re-run
+      // from saved answers on next load.
+      const data: FutureFinderData = {
+        completedAt: new Date().toISOString(),
+        answers,
+        topPicks: [],
+        savedComparisons: [],
+      };
+      saveToFirestore(data);
+      return;
+    }
     const res = runFutureFinderAssessment(answers, profile, autoPoints);
     setResults(res);
     setPhase('results');
@@ -191,7 +240,7 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
       savedComparisons: [],
     };
     saveToFirestore(data);
-  }, [answers, profile, autoPoints, saveToFirestore]);
+  }, [isJunior, answers, profile, autoPoints, saveToFirestore]);
 
   // Toggle a saved pick
   const toggleSavedPick = useCallback((code: string) => {
@@ -265,17 +314,18 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
     <div className="max-w-3xl mx-auto">
       <AnimatePresence mode="wait">
         {phase === 'intro' && (
-          <IntroPhase key="intro" autoPoints={autoPoints} onStart={() => { setPhase('assessment'); setCurrentQ(0); }} onViewResults={results.length > 0 ? () => setPhase('results') : undefined} />
+          <IntroPhase key="intro" isJunior={isJunior} autoPoints={autoPoints} onStart={() => { setPhase('assessment'); setCurrentQ(0); }} onViewResults={(isJunior ? clusterResults.length > 0 : results.length > 0) ? () => setPhase('results') : undefined} />
         )}
         {phase === 'assessment' && (
           <AssessmentPhase
             key="assessment"
+            questions={effectiveQuestions}
             currentQ={currentQ}
             answers={answers}
             autoPoints={autoPoints}
             onUpdateAnswer={(key, value) => setAnswers(prev => ({ ...prev, [key]: value }))}
             onNext={() => {
-              if (currentQ < ASSESSMENT_QUESTIONS.length - 1) {
+              if (currentQ < effectiveQuestions.length - 1) {
                 setCurrentQ(currentQ + 1);
               } else {
                 handleAssessmentComplete();
@@ -287,7 +337,17 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
             }}
           />
         )}
-        {phase === 'results' && (
+        {/* JC results: render cluster-based Subject Explorer instead of
+            CAO course list. Detail/compare phases are senior-only — JC
+            results don't need a per-course deep dive. */}
+        {phase === 'results' && isJunior && (
+          <SubjectExplorerResults
+            key="se-results"
+            clusters={clusterResults}
+            onRetake={handleRetake}
+          />
+        )}
+        {phase === 'results' && !isJunior && (
           <ResultsPhase
             key="results"
             results={displayResults}
@@ -347,20 +407,24 @@ export default FutureFinder;
 // ─── Phase Components ───────────────────────────────────────────────────────
 
 /** Phase 1: Intro */
-function IntroPhase({ autoPoints, onStart, onViewResults }: { autoPoints: number; onStart: () => void; onViewResults?: () => void }) {
+function IntroPhase({ isJunior, autoPoints, onStart, onViewResults }: { isJunior: boolean; autoPoints: number; onStart: () => void; onViewResults?: () => void }) {
   return (
     <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
       <div className="text-center py-10">
         <p className="text-zinc-500 dark:text-zinc-400 max-w-md mx-auto mb-6 leading-relaxed">
-          Answer 10 quick questions. We'll match you with college courses that fit who you are {'\u2014'} not just your points.
+          {isJunior
+            ? <>Answer 7 quick questions. We'll suggest the subjects you might enjoy most in senior cycle {'\u2014'} based on what you're actually into.</>
+            : <>Answer 10 quick questions. We'll match you with college courses that fit who you are {'\u2014'} not just your points.</>}
         </p>
-        {autoPoints > 0 && (
+        {!isJunior && autoPoints > 0 && (
           <p className="text-sm font-medium max-w-sm mx-auto mb-4" style={{ color: COLORS.accent }}>
             Based on your current grades, you're at {autoPoints} points
           </p>
         )}
         <p className="text-sm text-zinc-400 dark:text-zinc-500 max-w-sm mx-auto mb-8">
-          We look at your interests, values, work style and preferred location to find courses you'll actually enjoy.
+          {isJunior
+            ? 'We look at your interests, the scenarios you find appealing, and how you like to work to suggest subject clusters that fit.'
+            : 'We look at your interests, values, work style and preferred location to find courses you\'ll actually enjoy.'}
         </p>
         <div className="flex flex-col items-center gap-3">
           <PrimaryActionButton label="Let's Go" onClick={onStart} icon={Compass} />
@@ -377,8 +441,9 @@ function IntroPhase({ autoPoints, onStart, onViewResults }: { autoPoints: number
 
 /** Phase 2: Assessment */
 function AssessmentPhase({
-  currentQ, answers, _autoPoints, onUpdateAnswer, onNext, onBack,
+  questions, currentQ, answers, _autoPoints, onUpdateAnswer, onNext, onBack,
 }: {
+  questions: AssessmentQuestion[];
   currentQ: number;
   answers: FutureFinderAnswers;
   autoPoints: number;
@@ -386,9 +451,9 @@ function AssessmentPhase({
   onNext: () => void;
   onBack: () => void;
 }) {
-  const question = ASSESSMENT_QUESTIONS[currentQ];
-  const progress = ((currentQ + 1) / ASSESSMENT_QUESTIONS.length) * 100;
-  const isLast = currentQ === ASSESSMENT_QUESTIONS.length - 1;
+  const question = questions[currentQ];
+  const progress = ((currentQ + 1) / questions.length) * 100;
+  const isLast = currentQ === questions.length - 1;
 
   // Check if current question has a valid answer
   const isValid = (() => {
@@ -409,7 +474,7 @@ function AssessmentPhase({
       {/* Progress bar */}
       <div className="mb-8">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-xs font-bold" style={{ color: COLORS.accent }}>Question {currentQ + 1} of {ASSESSMENT_QUESTIONS.length}</span>
+          <span className="text-xs font-bold" style={{ color: COLORS.accent }}>Question {currentQ + 1} of {questions.length}</span>
           <span className="text-xs text-zinc-400 dark:text-zinc-500">{question.dimension}</span>
         </div>
         <div className="h-1.5 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
@@ -1103,6 +1168,120 @@ function ComparePhase({
           Add at least 2 courses to compare. Go back and use the Compare button on result cards.
         </p>
       )}
+    </MotionDiv>
+  );
+}
+
+// ─── JC Subject Explorer Results ────────────────────────────────────────────
+//
+// JC variant of the results phase. Instead of CAO course matches we show
+// 1 top cluster + 2 alternates + a "things to try" section + a soft career
+// callout. No saving/comparing — clusters aren't selectable artefacts, just
+// a sense of direction.
+function SubjectExplorerResults({
+  clusters, onRetake,
+}: {
+  clusters: ClusterMatchResult[];
+  onRetake: () => void;
+}) {
+  if (clusters.length === 0) {
+    return (
+      <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="py-10 text-center space-y-4">
+        <p className="text-zinc-500 dark:text-zinc-400">We couldn't find a strong pattern from your answers. Try the quiz again and pick whichever options actually appeal to you, not what you think you should pick.</p>
+        <PrimaryActionButton onClick={onRetake}>Retake the quiz</PrimaryActionButton>
+      </MotionDiv>
+    );
+  }
+
+  const top = clusters[0];
+  const alternates = clusters.slice(1, 3);
+
+  return (
+    <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }} className="space-y-8">
+      {/* Top cluster — primary suggestion */}
+      <div>
+        <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Best fit</p>
+        <div className="rounded-2xl p-6 bg-[#FDEEDF] dark:bg-zinc-900" style={{ border: `2px solid ${COLORS.accent}` }}>
+          <div className="flex items-start gap-3 mb-3">
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: COLORS.accent }}>
+              <Compass className="w-5 h-5 text-white" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <h3 className="font-serif text-xl font-bold text-zinc-900 dark:text-white">{top.cluster.label}</h3>
+              <p className="text-sm text-zinc-700 dark:text-zinc-300 mt-1 leading-relaxed">{top.cluster.blurb}</p>
+            </div>
+          </div>
+
+          <p className="text-[10px] font-bold uppercase tracking-widest mt-4 mb-2" style={{ color: COLORS.accent }}>Subjects to consider</p>
+          <div className="flex flex-wrap gap-2 mb-4">
+            {top.cluster.subjects.map(s => (
+              <span key={s} className="text-xs font-semibold px-3 py-1.5 rounded-full bg-white dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200" style={{ border: `1px solid rgba(242,107,31,0.2)` }}>
+                {s}
+              </span>
+            ))}
+          </div>
+
+          {top.matchedSignals.length > 0 && (
+            <p className="text-xs text-zinc-500 dark:text-zinc-400 italic mt-3">
+              Why this fits: {top.matchedSignals.slice(0, 3).join(' · ')}.
+            </p>
+          )}
+        </div>
+      </div>
+
+      {/* Alternate clusters */}
+      {alternates.length > 0 && (
+        <div>
+          <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Also worth a look</p>
+          <div className="space-y-3">
+            {alternates.map(alt => (
+              <div key={alt.cluster.id} className="rounded-xl p-4 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+                <h4 className="font-serif text-base font-bold text-zinc-900 dark:text-white mb-1">{alt.cluster.label}</h4>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-2">{alt.cluster.blurb}</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {alt.cluster.subjects.slice(0, 5).map(s => (
+                    <span key={s} className="text-[10px] font-semibold px-2 py-1 rounded-full bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400" style={{ border: '0.5px solid rgba(0,0,0,0.08)' }}>
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Things to try — concrete, low-stakes exploration from the top cluster */}
+      <div>
+        <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Things to try in TY or before senior cycle</p>
+        <ul className="space-y-2">
+          {top.cluster.thingsToTry.map((thing, i) => (
+            <li key={i} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+              <Star size={14} className="mt-0.5 shrink-0" style={{ color: COLORS.accent }} />
+              <span>{thing}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Soft career callout — low-prescription. NOT "your future career". */}
+      <div className="rounded-xl p-4 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+        <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Where this can lead</p>
+        <p className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">{top.cluster.careerHint}</p>
+        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-2 italic">
+          You don't have to decide anything now — this is just a sense of where these subjects open doors to.
+        </p>
+      </div>
+
+      {/* Retake */}
+      <div className="text-center pt-2">
+        <button
+          onClick={onRetake}
+          className="inline-flex items-center gap-2 text-xs font-semibold text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
+        >
+          <RotateCcw size={12} /> Retake the quiz
+        </button>
+      </div>
     </MotionDiv>
   );
 }

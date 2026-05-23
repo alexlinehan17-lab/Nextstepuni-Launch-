@@ -5,10 +5,12 @@
 
 import {
   type StudentSubject, type StudyBlock, type WeeklyTimetable, type Grade,
-  type TimetableCompletions,
+  type TimetableCompletions, type JCBand,
   LC_SUBJECTS, DAYS_OF_WEEK, getPointsForGrade, getGradeIndex, HIGHER_GRADES, ORDINARY_GRADES,
+  JC_BANDS,
   toDateKey,
 } from './subjectData';
+import type { CurriculumLevel } from '../utils/authUtils';
 import { getSyllabusForSubject, computeEfficiency } from './syllabusData';
 import { type TopicMasteryMap } from '../types';
 
@@ -141,6 +143,93 @@ export interface SubjectPriority {
   difficultyMultiplier: number;
   efficiencyMultiplier: number;
   priorityScore: number;
+}
+
+/**
+ * JC-friendly priority weighting.
+ *
+ * Senior priority is driven by CAO-points gain; JC has no points concept.
+ * Instead we weight by *band deficit*: how many descriptor bands the
+ * student is below their target. Subjects more than two bands below
+ * target get the highest priority, mirroring "where the most room to grow
+ * is" without invoking points. Topic mastery still feeds the boost.
+ *
+ * Returns the same SubjectPriority shape so the downstream session
+ * allocator + timetable generator work unchanged. Points-related fields
+ * (currentPoints/targetPoints/pointsGain) are populated with band index
+ * deltas so existing UI that references pointsGain still renders a number
+ * (semantically: "bands of room to grow"). UI that displays the field as
+ * a CAO-points label must be gated on curriculumLevel.
+ */
+export function computeSubjectPrioritiesJC(
+  subjects: StudentSubject[],
+  topicMastery?: TopicMasteryMap
+): SubjectPriority[] {
+  return subjects.map(s => {
+    const currentBand: JCBand = s.currentBand ?? 'Not Graded';
+    const targetBand: JCBand = s.targetBand ?? 'Distinction';
+    const currentIdx = JC_BANDS.indexOf(currentBand);
+    const targetIdx = JC_BANDS.indexOf(targetBand);
+    // bandDeficit > 0 when below target. JC_BANDS is ordered best→worst, so
+    // higher currentIdx (further from 0/Distinction) at a fixed targetIdx
+    // means a larger deficit.
+    const bandDeficit = Math.max(0, currentIdx - targetIdx);
+
+    // Two-bands-below-target is the inflection point per spec — boost it.
+    // 0 deficit → minimal priority, 1 → low, 2 → medium, 3+ → high.
+    const deficitWeight = bandDeficit === 0 ? 0
+      : bandDeficit === 1 ? 0.4
+      : bandDeficit === 2 ? 0.8
+      : 1.0;
+
+    // Topic mastery boost — same shaky-ratio logic as senior.
+    let topicBoost = 1.0;
+    if (topicMastery && topicMastery[s.subjectName]) {
+      const topics = topicMastery[s.subjectName];
+      const topicEntries = Object.values(topics);
+      if (topicEntries.length > 0) {
+        const shakyCount = topicEntries.filter(t => t.confidence === 'shaky').length;
+        const notStartedCount = topicEntries.filter(t => t.confidence === 'not-started').length;
+        const shakyRatio = (shakyCount + notStartedCount * 0.5) / topicEntries.length;
+        topicBoost = 1.0 + shakyRatio * 0.5; // slightly stronger boost than senior (no points signal to anchor)
+      }
+    }
+
+    // Base score so even at-target subjects still get >0 — keeps maintenance
+    // sessions flowing rather than zeroing out cleanly-mastered subjects.
+    const baseScore = 0.2;
+    const priorityScore = (baseScore + deficitWeight) * topicBoost;
+
+    return {
+      subjectName: s.subjectName,
+      // The Grade-typed fields are LC-only; populate with placeholders the
+      // JC UI never reads. Downstream allocator only touches priorityScore +
+      // subjectName.
+      currentGrade: 'H8' as Grade,
+      targetGrade: 'H8' as Grade,
+      isMaths: false,
+      currentPoints: currentIdx,
+      targetPoints: targetIdx,
+      pointsGain: bandDeficit, // reinterpreted: "bands of room to grow"
+      difficultyMultiplier: deficitWeight,
+      efficiencyMultiplier: topicBoost,
+      priorityScore,
+    };
+  }).sort((a, b) => b.priorityScore - a.priorityScore);
+}
+
+/**
+ * Curriculum-aware dispatcher. Existing callers that pass only subjects
+ * + mastery default to senior behaviour (zero regression).
+ */
+export function computeSubjectPrioritiesForCurriculum(
+  subjects: StudentSubject[],
+  topicMastery: TopicMasteryMap | undefined,
+  curriculumLevel: CurriculumLevel
+): SubjectPriority[] {
+  return curriculumLevel === 'junior'
+    ? computeSubjectPrioritiesJC(subjects, topicMastery)
+    : computeSubjectPriorities(subjects, topicMastery);
 }
 
 export function computeSubjectPriorities(

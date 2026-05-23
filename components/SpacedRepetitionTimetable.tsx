@@ -20,10 +20,12 @@ import {
   computeBargains,
 } from './subjectData';
 import {
-  computeSubjectPriorities, allocateSessions, generateWeeklyTimetable,
+  computeSubjectPriorities, computeSubjectPrioritiesForCurriculum,
+  allocateSessions, generateWeeklyTimetable,
   computeWeeksUntilExam, computeIntensityFactor,
   type SessionAllocation,
 } from './timetableAlgorithm';
+import { useAuth } from '../contexts/AuthContext';
 import { type DebriefEntry, computeStrategyHints, type SubjectStrategyHint } from './StudyDebrief';
 import { COLORS } from '../design/tokens';
 import { doc, getDoc } from 'firebase/firestore';
@@ -291,6 +293,16 @@ const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> =
 // ─── Main Component ─────────────────────────────────────────────────────────
 
 const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, uid, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, points = 0, onSpendPoints, _onOpenJournal, skippedSessions = [], onStudyNow, _onBlockDurationChange, schoolEvents = [] }) => {
+  // ─── Curriculum flags (Phase 2 JC support) ────────────────────────────────
+  // isJunior: branch points-vs-bands UI and priority algorithm.
+  // isPreExamJunior: 1st/2nd-year JC users have no imminent exam; we frame
+  // the timetable as "weekly study plan" with no exam countdown ribbon.
+  const { user } = useAuth();
+  const curriculumLevel = user?.curriculumLevel ?? profile.curriculumLevel ?? 'senior';
+  const isJunior = curriculumLevel === 'junior';
+  const yearGroup = user?.yearGroup ?? profile.yearGroup;
+  const isPreExamJunior = isJunior && (yearGroup === '1st' || yearGroup === '2nd');
+
   const skippedSet = useMemo(() => new Set(skippedSessions), [skippedSessions]);
   const [weekOffset, setWeekOffset] = useState(0);
   const [showExplainer, setShowExplainer] = useState(false);
@@ -327,9 +339,20 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
     });
   };
 
-  const weeksUntilExam = computeWeeksUntilExam(profile.examStartDate);
+  // Pre-exam JC (1st/2nd year): no real exam countdown. The placeholder LC
+  // June date that Phase 1 writes would yield a 22-month figure — meaningless
+  // here. Synthesise a "school-term cadence" weeks value (~18 weeks ≈ one
+  // term) so the intensity factor stays low and the sustainability caps
+  // resolve to the "far from exams" base values. The UI ribbon below is
+  // hidden for this case.
+  const weeksUntilExam = isPreExamJunior
+    ? 22 // > 20 → maxWeeklyHours falls to the 10h baseline, intensity → 0
+    : (profile.examStartDate ? computeWeeksUntilExam(profile.examStartDate) : 22);
 
-  const priorities = useMemo(() => computeSubjectPriorities(profile.subjects, topicMastery), [profile.subjects, topicMastery]);
+  const priorities = useMemo(
+    () => computeSubjectPrioritiesForCurriculum(profile.subjects, topicMastery, curriculumLevel),
+    [profile.subjects, topicMastery, curriculumLevel]
+  );
 
   // Top 3 bargain subjects (for badge display on study blocks)
   const bargainMap = useMemo(() => {
@@ -396,7 +419,9 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   const _totalHours = Math.floor(totalMinutes / 60);
   const _remainingMins = totalMinutes % 60;
 
-  const _daysUntilExam = Math.max(0, Math.ceil((new Date(profile.examStartDate).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)));
+  const _daysUntilExam = profile.examStartDate
+    ? Math.max(0, Math.ceil((new Date(profile.examStartDate).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)))
+    : 0;
   const maxSessions = Math.max(...allocations.map(a => a.sessions), 1);
 
   const DAY_SHORTS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -909,14 +934,20 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
       <div className="p-5 rounded-xl bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
         <div className="flex items-center justify-between mb-4">
           <h3 className="font-bold text-xs uppercase tracking-widest text-[#A8A29E] dark:text-zinc-500">Priority Breakdown</h3>
-          <button
-            onClick={() => setShowExplainer(!showExplainer)}
-            className="flex items-center gap-1.5 text-xs font-semibold transition-colors"
-            style={{ color: COLORS.accent }}
-          >
-            <HelpCircle size={14} />
-            {showExplainer ? 'Hide explanation' : 'How is this calculated?'}
-          </button>
+          {/* The deep-dive explainer is senior-only — it documents the CAO
+              points-gain × efficiency formula, which doesn't apply to JC.
+              JC priority is band-deficit driven and shown via session count
+              in the list below. */}
+          {!isJunior && (
+            <button
+              onClick={() => setShowExplainer(!showExplainer)}
+              className="flex items-center gap-1.5 text-xs font-semibold transition-colors"
+              style={{ color: COLORS.accent }}
+            >
+              <HelpCircle size={14} />
+              {showExplainer ? 'Hide explanation' : 'How is this calculated?'}
+            </button>
+          )}
         </div>
         <div className="space-y-2.5">
           {allocations
@@ -927,9 +958,9 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         </div>
       </div>
 
-      {/* ── Priority Explainer ── */}
+      {/* ── Priority Explainer ── (senior-only — CAO-points-flavoured) */}
       <AnimatePresence>
-        {showExplainer && (
+        {showExplainer && !isJunior && (
           <MotionDiv
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
@@ -1146,12 +1177,15 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
       </AnimatePresence>
 
       {/* ── Intensity indicator ── */}
-      {weekOffset > 0 && (
+      {/* Pre-exam JC (1st/2nd year) has no real exam countdown, so suppress
+          the "weeks to exam" label entirely. 3rd-year JC and senior still
+          see it; 3rd-year JC sees "Junior Cert" framing. */}
+      {weekOffset > 0 && !isPreExamJunior && (
         <div className="text-center">
           <p className="text-xs text-[#A8A29E] dark:text-zinc-500">
             Intensity: {Math.round(computeIntensityFactor(Math.max(0, weeksUntilExam - weekOffset)) * 100)}% — {
               Math.max(0, weeksUntilExam - weekOffset)
-            } weeks to exam
+            } weeks to {isJunior ? 'Junior Cert' : 'exam'}
           </p>
         </div>
       )}
