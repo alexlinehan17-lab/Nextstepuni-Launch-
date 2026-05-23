@@ -278,7 +278,9 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ _user, existingPr
                   </div>
                   <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-3">Set Up Your Subjects</h2>
                   <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed max-w-sm mx-auto">
-                    Tell us about your Leaving Cert subjects to power all Innovation Zone tools. This takes about 2 minutes.
+                    {existingProfile?.curriculumLevel === 'junior'
+                      ? 'Tell us about your subjects to power all Innovation Zone tools. This takes about 2 minutes.'
+                      : 'Tell us about your Leaving Cert subjects to power all Innovation Zone tools. This takes about 2 minutes.'}
                   </p>
                 </div>
               </MotionDiv>
@@ -529,13 +531,15 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ _user, existingPr
                   })}
                 </div>
 
-                {/* Projected total gain */}
-                <div className="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-700/30 text-center mb-4">
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-1">Projected CAO Points Gain</p>
-                  <p className="text-3xl font-bold font-mono text-emerald-600 dark:text-emerald-400">
-                    {projectedGain > 0 ? `+${projectedGain}` : projectedGain}
-                  </p>
-                </div>
+                {/* Projected total gain — senior-only (JC has no CAO points concept) */}
+                {existingProfile?.curriculumLevel !== 'junior' && (
+                  <div className="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-700/30 text-center mb-4">
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-1">Projected CAO Points Gain</p>
+                    <p className="text-3xl font-bold font-mono text-emerald-600 dark:text-emerald-400">
+                      {projectedGain > 0 ? `+${projectedGain}` : projectedGain}
+                    </p>
+                  </div>
+                )}
 
                 <div className="flex items-center justify-center gap-4 text-xs text-zinc-400 dark:text-zinc-500">
                   <span className="flex items-center gap-1"><Calendar size={12} /> {daysLeft} days left</span>

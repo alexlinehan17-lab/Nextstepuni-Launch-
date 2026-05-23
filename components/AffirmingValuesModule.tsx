@@ -375,7 +375,7 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
                 </>
               ) : (
                 <>
-                  <p>In a high-stakes situation like the Leaving Cert, your brain is on high alert. For students from disadvantaged backgrounds, there's an extra, invisible threat in the room: the fear that a bad result will confirm what people already think about "people like you." This is called <Highlight description="That nagging background voice during an exam that says 'people like me don't get these results.' It's not just nerves — it actually takes up space in your brain, leaving less room for the actual questions." theme={theme}>Stereotype Threat</Highlight>.</p>
+                  <p>In a high-stakes situation like a big exam, your brain is on high alert. For students from disadvantaged backgrounds, there's an extra, invisible threat in the room: the fear that a bad result will confirm what people already think about "people like you." This is called <Highlight description="That nagging background voice during an exam that says 'people like me don't get these results.' It's not just nerves — it actually takes up space in your brain, leaving less room for the actual questions." theme={theme}>Stereotype Threat</Highlight>.</p>
                   <p>It's like a hidden tax on your brainpower. Part of your working memory gets hijacked by this background anxiety, leaving less room for the actual exam questions. This isn't just "in your head" — it's a real stress response that can cost you marks, even when you know the material perfectly.</p>
                   <PersonalStory name="Alex" role="Founder, NextStepUni">
                     <p>I know what this feels like. Walking into an exam hall, part of my brain was always running a background programme: "People from Togher don't get these kinds of results." I didn't have a name for it then, but it was stereotype threat. I was fighting the exam and fighting that voice at the same time — and I didn't realise it was costing me marks until I learned the science behind it.</p>
@@ -395,7 +395,7 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
           {!essentials && activeSection === 2 && (
             <ReadingSection title="How It Works: The Zoom-Out Effect." eyebrow="Step 3" icon={BrainCircuit} theme={theme}>
               <p>How can a simple writing exercise have such a powerful effect? It comes down to how your brain handles emotions. When you're scared, your focus narrows — all you can see is the threat. But positive emotions do the opposite: they <Highlight description="When you feel good about who you are, your brain literally opens up. You see more options, think more clearly, and stop fixating on the one thing that's scaring you. It's like going from tunnel vision to a wide-angle lens." theme={theme}>Broaden Your Perspective</Highlight>.</p>
-              <p>When you write about your values, your brain gets a hit of positive emotion — a reminder that you're more than this one exam. That "zooms out" your perspective. Suddenly the Leaving Cert isn't a life-or-death verdict on your entire identity; it's just one part of a much bigger, more meaningful life. That shift is what reduces the threat and frees up your working memory.</p>
+              <p>When you write about your values, your brain gets a hit of positive emotion — a reminder that you're more than this one exam. That "zooms out" your perspective. Suddenly the exam isn't a life-or-death verdict on your entire identity; it's just one part of a much bigger, more meaningful life. That shift is what reduces the threat and frees up your working memory.</p>
             </ReadingSection>
           )}
           {!essentials && activeSection === 3 && (
@@ -419,7 +419,7 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
               ) : (
                 <>
                   <p>You now have a genuine tool to protect your brain under pressure. The last step is to make it a habit — a pre-exam ritual you do every time, just like checking you have the right pens.</p>
-                  <p>The steps are simple: <strong>1. Pick your core values below.</strong> <strong>2. Choose the one that matters most right now.</strong> <strong>3. Write for 15 minutes.</strong> This isn't an essay — it's a private reflection. Write about why the value is important to you and describe a specific time you lived up to it. Do this before every major exam, especially the Mocks and the Leaving Cert.</p>
+                  <p>The steps are simple: <strong>1. Pick your core values below.</strong> <strong>2. Choose the one that matters most right now.</strong> <strong>3. Write for 15 minutes.</strong> This isn't an essay — it's a private reflection. Write about why the value is important to you and describe a specific time you lived up to it. Do this before every major exam, especially the mocks and your end-of-year tests.</p>
                 </>
               )}
               <ValuesSelector savedValues={responses['selected-values']} onSave={(v) => saveResponse('selected-values', v)} />

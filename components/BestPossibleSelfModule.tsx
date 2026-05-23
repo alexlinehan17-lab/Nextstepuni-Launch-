@@ -39,7 +39,7 @@ const WOOPPlanner = ({ responses, saveResponse }: { responses: Record<string, an
                         <div className="w-8 h-8 flex items-center justify-center shrink-0 font-serif font-medium text-base" style={{ backgroundColor: '#FCD34D', border: '2px solid #D97706', borderRadius: 10, boxShadow: '2px 2px 0px 0px #D97706', color: '#78350F' }}>W</div>
                         <span className="text-[13px] font-medium text-zinc-900 dark:text-white">Wish — your most important goal right now</span>
                     </div>
-                    <input value={wish} onChange={e => saveResponse('woopWish', e.target.value)} placeholder="e.g., Get a H3 or higher in English" className="w-full bg-transparent py-2.5 px-0 text-[15px] text-zinc-900 dark:text-white placeholder-zinc-400 outline-none border-b-2 border-zinc-200 dark:border-zinc-700 focus:border-amber-600" />
+                    <input value={wish} onChange={e => saveResponse('woopWish', e.target.value)} placeholder="e.g., Get a top grade in English" className="w-full bg-transparent py-2.5 px-0 text-[15px] text-zinc-900 dark:text-white placeholder-zinc-400 outline-none border-b-2 border-zinc-200 dark:border-zinc-700 focus:border-amber-600" />
                 </div>
                 {/* Outcome */}
                 <div>
@@ -47,7 +47,7 @@ const WOOPPlanner = ({ responses, saveResponse }: { responses: Record<string, an
                         <div className="w-8 h-8 flex items-center justify-center shrink-0 font-serif font-medium text-base" style={{ backgroundColor: '#93C5FD', border: '2px solid #2563EB', borderRadius: 10, boxShadow: '2px 2px 0px 0px #2563EB', color: '#1E3A8A' }}>O</div>
                         <span className="text-[13px] font-medium text-zinc-900 dark:text-white">Outcome — the best thing that would happen</span>
                     </div>
-                    <input value={outcome} onChange={e => saveResponse('woopOutcome', e.target.value)} placeholder="e.g., I'd feel proud and confident applying for college" className="w-full bg-transparent py-2.5 px-0 text-[15px] text-zinc-900 dark:text-white placeholder-zinc-400 outline-none border-b-2 border-zinc-200 dark:border-zinc-700 focus:border-blue-600" />
+                    <input value={outcome} onChange={e => saveResponse('woopOutcome', e.target.value)} placeholder="e.g., I'd feel proud and ready for whatever I take on next" className="w-full bg-transparent py-2.5 px-0 text-[15px] text-zinc-900 dark:text-white placeholder-zinc-400 outline-none border-b-2 border-zinc-200 dark:border-zinc-700 focus:border-blue-600" />
                 </div>
                 {/* Obstacle */}
                 <div>
@@ -113,7 +113,7 @@ const BestPossibleSelfModule: React.FC<{ onBack: () => void; progress: ModulePro
                 </>
               ) : (
                 <>
-                  <p>We're told to "think positive" and visualise our dreams. But here's the trap: pure <Highlight description="When you daydream about success without thinking about the work, your brain actually relaxes — as if you've already done it. It feels great in the moment, but it drains the energy you need to actually get started." theme={theme}>positive fantasising</Highlight> can backfire. When you spend time daydreaming about acing the Leaving Cert or getting that college offer without thinking about the work involved, your brain treats it like you've already made it. It feels good — but it quietly drains the energy you need to actually get started.</p>
+                  <p>We're told to "think positive" and visualise our dreams. But here's the trap: pure <Highlight description="When you daydream about success without thinking about the work, your brain actually relaxes — as if you've already done it. It feels great in the moment, but it drains the energy you need to actually get started." theme={theme}>positive fantasising</Highlight> can backfire. When you spend time daydreaming about acing your exams without thinking about the work involved, your brain treats it like you've already made it. It feels good — but it quietly drains the energy you need to actually get started.</p>
                   <p>This is why some of the most ambitious, optimistic students still struggle to follow through. The dreaming itself is eating their motivation. The fix isn't to stop dreaming — it's to dream smarter.</p>
                 </>
               )}

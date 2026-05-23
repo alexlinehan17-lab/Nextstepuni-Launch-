@@ -662,7 +662,7 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
   ];
 
   return (
-    <ModuleLayout moduleNumber="02" moduleTitle="Spaced Repetition" moduleSubtitle="The Forgetting Curve Method" moduleDescription={`Stop forgetting what you study. Learn when and how often to review so the stuff you learn actually sticks for the Leaving Cert and beyond.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Space It Out">
+    <ModuleLayout moduleNumber="02" moduleTitle="Spaced Repetition" moduleSubtitle="The Forgetting Curve Method" moduleDescription={`Stop forgetting what you study. Learn when and how often to review so the stuff you learn actually sticks for your big exams and beyond.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Space It Out">
       {(activeSection) => (
         <>
           {activeSection === 0 && (
@@ -712,11 +712,11 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
           {activeSection === 3 && (
             <ReadingSection title="The Best Review Schedule." eyebrow="Step 4" icon={CalendarDays} theme={theme}>
               {essentials ? (
-                <p>Your <Highlight description="The gap between your study sessions. The right gap depends on how far away your test is." theme={theme}>review gap</Highlight> should be 5-20% of the time until your <Highlight description="The time between your last study session and the actual test or exam." theme={theme}>test date</Highlight>. Test in a week? Review every 1-2 days. Leaving Cert in 6 months? Review every 3 weeks.</p>
+                <p>Your <Highlight description="The gap between your study sessions. The right gap depends on how far away your test is." theme={theme}>review gap</Highlight> should be 5-20% of the time until your <Highlight description="The time between your last study session and the actual test or exam." theme={theme}>test date</Highlight>. Test in a week? Review every 1-2 days. Big exam in 6 months? Review every 3 weeks.</p>
               ) : (
                 <>
                   <p>So, what's the perfect gap between study sessions? There's no single magic number. The <Highlight description="The gap between your study sessions. The right gap depends on how far away your test is." theme={theme}>best review gap</Highlight> depends entirely on when you need to remember the information -- basically, how far away your <Highlight description="The time between your last study session and the actual test or exam." theme={theme}>test date</Highlight> is.</p>
-                  <p>Here's a handy rule of thumb: your review gap should be roughly <strong>5-20%</strong> of the time until the test. For a test in a week, you need a short gap (1-2 days). For the Leaving Cert in 6 months, you need a much longer gap (e.g., 3 weeks). This is because a longer gap lets you forget a little more, which makes your brain work harder when you review -- and that extra effort is exactly what locks it in for the long term.</p>
+                  <p>Here's a handy rule of thumb: your review gap should be roughly <strong>5-20%</strong> of the time until the test. For a test in a week, you need a short gap (1-2 days). For a big exam in 6 months, you need a much longer gap (e.g., 3 weeks). This is because a longer gap lets you forget a little more, which makes your brain work harder when you review -- and that extra effort is exactly what locks it in for the long term.</p>
                 </>
               )}
               <OptimalScheduleCalculator />

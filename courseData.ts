@@ -57,7 +57,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Brain\'s Engineering Manual',
     description: 'Hope isn\'t wishful thinking — it\'s a skill you can train. Learn how your brain creates motivation and how to get it working for you.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Brain Science', 'Resilience'],
   },
   {
@@ -67,7 +67,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Psychological Shield',
     description: 'Discover the invisible pressure that steals your brainpower in exams — and a simple 15-minute exercise that shields you from it.',
     sectionsCount: 5,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Mindset', 'Resilience'],
   },
   {
@@ -77,7 +77,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Future-Proofing Playbook',
     description: 'Daydreaming about the future feels good — but it can kill your motivation. Learn how to turn vague wishes into real plans that stick.',
     sectionsCount: 5,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Motivation', 'Productivity'],
   },
   {
@@ -87,7 +87,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Language of Resilience',
     description: 'The way you talk to yourself after a setback matters more than you think. This module shows you how to spot the patterns and change them.',
     sectionsCount: 5,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Mindset', 'Resilience'],
   },
   {
@@ -97,7 +97,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Attribution Retraining Guide',
     description: 'Learn to distinguish between what you can and cannot control, and rewire your brain to see failure as feedback, not a final verdict.',
     sectionsCount: 5,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Mindset', 'Resilience'],
   },
   {
@@ -105,9 +105,9 @@ const COURSE_DEFINITIONS = [
     category: 'architecture-mindset',
     title: 'Your Strategic Advantage',
     subtitle: 'The Narrative Identity Playbook',
-    description: 'Learn how to take the tough parts of your story and turn them into your biggest strength -- in school, in college, and in life.',
+    description: 'Learn how to take the tough parts of your story and turn them into your biggest strength -- in school, in exams, and in life.',
     sectionsCount: 5,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Mindset', 'Resilience'],
   },
   {
@@ -117,7 +117,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Architecture of Agency',
     description: '"Try harder" is useless advice. This module shows you how to actually build real belief in yourself — where it comes from, why some people seem to have more of it, and how you can grow yours from scratch.',
     sectionsCount: 5,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Mindset', 'Motivation'],
   },
   {
@@ -127,7 +127,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Why You Think You Know It (But Don\'t)',
     description: 'Ever walked out of a study session feeling confident, only to blank in the exam? Here\'s why that happens and how to make sure what you study actually sticks.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Learning Strategy', 'Brain Science'],
   },
   {
@@ -137,7 +137,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Architecture of Delay',
     description: 'Procrastination isn\'t laziness -- your brain is just wired to dodge things that feel bad. Learn what\'s really going on and how to get yourself moving.',
     sectionsCount: 8,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Motivation', 'Productivity'],
   },
   {
@@ -147,7 +147,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The CBT Toolkit',
     description: 'Ever had your brain spiral into worst-case scenarios before an exam? Learn practical tools to catch those panic thoughts, challenge them, and take back control.',
     sectionsCount: 8,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Resilience', 'Performance Psych'],
   },
   {
@@ -157,7 +157,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Stress Management Toolkit',
     description: 'Understand why your brain freaks out during exams and learn practical techniques -- both mental and physical -- to turn stress into something that works for you, not against you.',
     sectionsCount: 7,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Performance Psych', 'Resilience'],
   },
   {
@@ -167,7 +167,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Brain\'s User Manual',
     description: 'Your brain isn\'t stuck the way it is -- it physically changes shape when you learn new things. This module shows you how that works and how to make it work for you.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Brain Science', 'Learning Strategy'],
   },
   {
@@ -177,7 +177,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'How Your Brain Gets Faster',
     description: 'That stuck, frustrated feeling when you\'re working on something hard? It\'s not a sign you\'re failing — it\'s how your brain builds faster connections. Learn why the hard stuff is the stuff that actually works.',
     sectionsCount: 5,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Brain Science', 'Learning Strategy'],
   },
   {
@@ -187,7 +187,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'How Words Shape Your Mindset',
     description: 'The way people praise you — and the way you talk to yourself — can either set you up to grow or keep you stuck. Here\'s how to tell the difference.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Mindset', 'Motivation'],
   },
   {
@@ -197,7 +197,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Why the Hard Stuff Is the Stuff That Works',
     description: 'That frustrated feeling when you\'re stuck on a hard question? It\'s not a sign you\'re failing — it\'s how real learning actually happens. Learn to find the sweet spot of difficulty and reset your idea of what good study feels like.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Learning Strategy', 'Brain Science'],
   },
   {
@@ -207,7 +207,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Why Mistakes Are Your Best Study Tool',
     description: 'Your brain does something incredible when you mess up — if you let it. Here\'s how to stop fearing mistakes and start using them to get better, especially when the pressure is on.',
     sectionsCount: 5,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Brain Science', 'Resilience'],
   },
   {
@@ -217,7 +217,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'How to Be Your Own Teacher',
     description: 'When you\'re studying alone, you don\'t have a teacher to tell you what you\'re getting wrong. This module shows you how to build that feedback into your study sessions yourself.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Learning Strategy', 'Productivity'],
   },
   {
@@ -227,7 +227,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Persistence Playbook',
     description: 'One tiny word that changes everything about how you handle setbacks. Learn a dead-simple three-step method to stop beating yourself up when things go wrong and start actually moving forward.',
     sectionsCount: 5,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Mindset', 'Resilience'],
   },
   {
@@ -237,7 +237,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Sleep, Food, and Exercise',
     description: 'Your brain runs on three things: sleep, food, and exercise. Get these right and everything else gets easier. This module shows you how they actually work and what to do about it.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Performance Psych', 'Brain Science'],
   },
   {
@@ -267,7 +267,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Mind\'s Operating System',
     description: 'Your brain can actually change and get better at things -- and once you believe that, everything shifts. This module shows you how to stop thinking "I\'m just not smart enough" and start seeing every challenge as a chance to grow.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Mindset', 'Brain Science'],
   },
   {
@@ -277,7 +277,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Why Testing Yourself Is a Superpower',
     description: 'Testing yourself isn\'t just for checking what you know — it\'s actually the single best way to make things stick in your memory for good.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Learning Strategy', 'Brain Science'],
   },
   {
@@ -285,9 +285,9 @@ const COURSE_DEFINITIONS = [
     category: 'learning-cheat-codes',
     title: 'Mastering Spaced Repetition',
     subtitle: 'The Forgetting Curve Method',
-    description: 'Stop forgetting what you study. Learn when and how often to review so the stuff you learn actually sticks for the Leaving Cert and beyond.',
+    description: 'Stop forgetting what you study. Learn when and how often to review so the stuff you learn actually sticks for your big exams and beyond.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Learning Strategy', 'Productivity'],
   },
   {
@@ -295,9 +295,9 @@ const COURSE_DEFINITIONS = [
     category: 'learning-cheat-codes',
     title: 'Mix It Up',
     subtitle: 'The Topic Salad Method',
-    description: 'Stop studying one subject for hours on end. Mixing your topics feels harder, but it\'s the fastest way to build the kind of knowledge that actually holds up in the Leaving Cert.',
+    description: 'Stop studying one subject for hours on end. Mixing your topics feels harder, but it\'s the fastest way to build the kind of knowledge that actually holds up under exam pressure.',
     sectionsCount: 5,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Learning Strategy', 'Brain Science'],
   },
   {
@@ -305,9 +305,9 @@ const COURSE_DEFINITIONS = [
     category: 'learning-cheat-codes',
     title: 'How Your Memory Works',
     subtitle: 'Your Brain\'s User Manual',
-    description: 'Learn how your memory actually works — how information gets in, why most of it falls out, and what you can do to make the important stuff stick for the Leaving Cert.',
+    description: 'Learn how your memory actually works — how information gets in, why most of it falls out, and what you can do to make the important stuff stick when it counts.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Brain Science', 'Learning Strategy'],
   },
   {
@@ -315,9 +315,9 @@ const COURSE_DEFINITIONS = [
     category: 'learning-cheat-codes',
     title: 'Elaborative Interrogation',
     subtitle: 'The "Why" Method',
-    description: 'Stop just memorising facts and start actually understanding them by asking one simple question: "Why?". This module shows you how to make what you study stick — and mean something — for the Leaving Cert.',
+    description: 'Stop just memorising facts and start actually understanding them by asking one simple question: "Why?". This module shows you how to make what you study stick — and mean something — when it counts.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Learning Strategy', 'Mindset'],
   },
   {
@@ -325,9 +325,9 @@ const COURSE_DEFINITIONS = [
     category: 'learning-cheat-codes',
     title: 'Cognitive Endurance',
     subtitle: 'The Marathon Method',
-    description: 'The Leaving Cert isn\'t a sprint. Learn how to keep your brain sharp across weeks of exams, even when you\'re tired and stressed.',
+    description: 'A season of big exams isn\'t a sprint. Learn how to keep your brain sharp across weeks of exams, even when you\'re tired and stressed.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Performance Psych', 'Brain Science'],
   },
   {
@@ -335,9 +335,9 @@ const COURSE_DEFINITIONS = [
     category: 'learning-cheat-codes',
     title: 'Mental Modelling',
     subtitle: 'The Mind\'s Eye Method',
-    description: 'Learn to see the answer in your head before you put pen to paper. In subjects like DCG and Engineering, the real skill isn\'t drawing — it\'s picturing 3D objects in your mind. This module shows you how.',
+    description: 'Learn to see the answer in your head before you put pen to paper. In subjects like DCG, Graphics and Engineering, the real skill isn\'t drawing — it\'s picturing 3D objects in your mind. This module shows you how.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Learning Strategy', 'Subject Strategy'],
   },
   {
@@ -347,7 +347,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Bimodal Brain',
     description: 'Your brain has two modes — one for grinding through problems, one for creative breakthroughs. Learning when to switch between them is a game-changer for your study.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Brain Science', 'Productivity'],
   },
   {
@@ -378,8 +378,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Science Subjects, Decoded',
     description: 'Each science exam has its own unwritten rules. This module breaks them down so you know exactly what the examiner is looking for.',
     sectionsCount: 7,
-    curriculum: 'both' as const,
-    jcStatus: 'coming-soon' as const,
+    curriculum: 'senior' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -389,8 +388,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your 2026 Project & Exam Guide',
     description: 'Everything you need to know about this year\'s Engineering, DCG, Computer Science, and Construction projects -- plus how to nail the exams.',
     sectionsCount: 6,
-    curriculum: 'both' as const,
-    jcStatus: 'coming-soon' as const,
+    curriculum: 'senior' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -400,8 +398,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Complete English Strategy Guide',
     description: 'From PCLM marking to Paper 1 composing and Paper 2 poetry -- learn exactly how the English exam works and where the marks are hiding.',
     sectionsCount: 7,
-    curriculum: 'both' as const,
-    jcStatus: 'coming-soon' as const,
+    curriculum: 'senior' as const,
     tags: ['Subject Strategy', 'Exam Tactics'],
   },
   {
@@ -443,7 +440,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Plan Backwards, Get Ahead',
     description: 'Most study plans fall apart within weeks. This module shows you how to start from your exam date and work backwards to build a schedule that actually holds up.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Productivity', 'Exam Tactics'],
   },
   {
@@ -453,7 +450,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Game Plan for Exam Day',
     description: 'You\'ve done the study — now learn the practical tips that help top students turn what they know into the marks they deserve.',
     sectionsCount: 7,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Exam Tactics', 'Performance Psych'],
   },
   {
@@ -463,7 +460,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Your Exam Survival Guide',
     description: 'Understand why your brain freezes under pressure and learn practical techniques to stay calm, think clearly, and bounce back when things go wrong in an exam.',
     sectionsCount: 7,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Resilience', 'Performance Psych'],
   },
   {
@@ -471,9 +468,9 @@ const COURSE_DEFINITIONS = [
     category: 'exam-zone',
     title: 'Game Day: Peak Performance',
     subtitle: 'Peak Performance on Demand',
-    description: 'Train for the Leaving Cert the way athletes train for competition. Sleep, food, mindset, and a solid game plan -- this is your playbook for performing at your best when it counts.',
+    description: 'Train for your big exams the way athletes train for competition. Sleep, food, mindset, and a solid game plan -- this is your playbook for performing at your best when it counts.',
     sectionsCount: 8,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Performance Psych', 'Exam Tactics'],
   },
   {
@@ -494,7 +491,6 @@ const COURSE_DEFINITIONS = [
     description: 'Your phone is designed to steal your attention. This module gives you a step-by-step plan to block distractions and actually get your study hours to count.',
     sectionsCount: 7,
     curriculum: 'both' as const,
-    jcStatus: 'coming-soon' as const,
     tags: ['Productivity', 'Performance Psych'],
   },
   {
@@ -504,7 +500,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Know What You Actually Know',
     description: 'Most students think they know more than they do — and it costs them marks. This module shows you how to spot your blind spots and study smarter.',
     sectionsCount: 6,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Learning Strategy', 'Brain Science'],
   },
   {
@@ -514,7 +510,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Why Less Is More',
     description: 'More notes doesn\'t mean more learning. Find out why writing less — but thinking more — is the secret to notes that actually help you in the exam.',
     sectionsCount: 5,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Learning Strategy', 'Productivity'],
   },
   {
@@ -524,7 +520,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Learn It by Teaching It',
     description: 'Want to actually remember what you study? Pretend you have to explain it to someone else. It completely changes how your brain stores everything -- even if you never teach a single person.',
     sectionsCount: 5,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Learning Strategy', 'Brain Science'],
   },
   {
@@ -534,7 +530,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Why Your Brain Gets Overloaded',
     description: 'Your brain can only juggle about 4 things at once. Most study sessions accidentally blow past that limit — and you don\'t even notice. This module shows you how to stop wasting brainpower and start actually learning.',
     sectionsCount: 5,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Brain Science', 'Learning Strategy'],
   },
   {
@@ -544,7 +540,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'The Intention-Action Blueprint',
     description: 'Feeling motivated doesn\'t mean you\'ll actually study. This module teaches you a dead-simple planning trick that closes the gap between saying you\'ll study and actually doing it.',
     sectionsCount: 5,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Motivation', 'Productivity'],
   },
   {
@@ -554,7 +550,7 @@ const COURSE_DEFINITIONS = [
     subtitle: 'Where You Study Matters',
     description: 'Where you study changes what you remember. Learn why switching study spots beats sticking to one \'perfect\' place.',
     sectionsCount: 5,
-    curriculum: 'senior' as const,
+    curriculum: 'both' as const,
     tags: ['Learning Strategy', 'Performance Psych'],
   },
   {

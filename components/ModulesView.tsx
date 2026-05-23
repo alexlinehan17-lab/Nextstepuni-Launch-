@@ -131,7 +131,7 @@ const CATEGORIES: CategoryConfig[] = [
     name: 'Decode',
     worldName: 'The Decoder',
     blurb: 'Subject by subject',
-    description: 'How each Leaving Cert paper actually works — marking schemes, examiner patterns, hidden curriculum.',
+    description: 'How each exam paper actually works — marking schemes, examiner patterns, hidden curriculum.',
     blob: '#F0BFCE',
     mid: '#C76489',
     deep: '#8a2860',

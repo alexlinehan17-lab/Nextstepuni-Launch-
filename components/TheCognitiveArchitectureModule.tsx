@@ -512,7 +512,7 @@ const TheCognitiveArchitectureModule: React.FC<{ onBack: () => void; progress: M
   ];
 
   return (
-    <ModuleLayout moduleNumber="04" moduleTitle="How Your Memory Works" moduleSubtitle="Your Brain's User Manual" moduleDescription="Learn how your memory actually works — how information gets in, why most of it falls out, and what you can do to make the important stuff stick for the Leaving Cert." theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Map Your Memory">
+    <ModuleLayout moduleNumber="04" moduleTitle="How Your Memory Works" moduleSubtitle="Your Brain's User Manual" moduleDescription="Learn how your memory actually works — how information gets in, why most of it falls out, and what you can do to make the important stuff stick when it counts." theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Map Your Memory">
       {(activeSection) => (
         <>
           {activeSection === 0 && (
@@ -524,7 +524,7 @@ const TheCognitiveArchitectureModule: React.FC<{ onBack: () => void; progress: M
                 </>
               ) : (
                 <>
-                  <p>To do well in the Leaving Cert, it really helps to understand how the machine you're working with — your own brain — actually handles information. The simplest way to think about it is that your memory has <Highlight description="A simple way of understanding memory: it comes in three stages — a quick flash, a short holding space, and a long-term store." theme={theme}>three stages</Highlight>.</p>
+                  <p>To do well in school, it really helps to understand how the machine you're working with — your own brain — actually handles information. The simplest way to think about it is that your memory has <Highlight description="A simple way of understanding memory: it comes in three stages — a quick flash, a short holding space, and a long-term store." theme={theme}>three stages</Highlight>.</p>
                   <p>First, there's <Highlight description="The very first stage of memory — a split-second snapshot of what you see or hear. If you don't pay attention to it, it's gone instantly." theme={theme}>Sensory Memory</Highlight>, the brief flash of what you see or hear. Anything you don't pay attention to here is gone forever. If you <em>do</em> pay attention, it moves to <Highlight description="Your brain's temporary holding space. It can only hold a small amount of information for a short time — think of it as your mental workbench." theme={theme}>Short-Term Memory</Highlight>, your brain's mental workbench. From there, it has to be deliberately moved to <Highlight description="Your brain's permanent storage. This is where knowledge needs to end up if you want to remember it in an exam." theme={theme}>Long-Term Memory</Highlight>, the permanent hard drive. Your entire job as a student is to get better at moving stuff from that workbench into long-term storage.</p>
                 </>
               )}
@@ -539,7 +539,7 @@ const TheCognitiveArchitectureModule: React.FC<{ onBack: () => void; progress: M
                 </>
               ) : (
                 <>
-                  <p>Your Short-Term Memory — the part of your brain that <Highlight description="The part of your brain that holds and works with information right now. Think of it as your mental desk — it can only fit a few things on it at once." theme={theme}>holds and works with information right now</Highlight> — is the biggest bottleneck in your learning. It's shockingly limited. You might think you can juggle loads of info, but realistically your brain can only hold about <strong>4 chunks of information</strong> at a time when dealing with complex Leaving Cert material.</p>
+                  <p>Your Short-Term Memory — the part of your brain that <Highlight description="The part of your brain that holds and works with information right now. Think of it as your mental desk — it can only fit a few things on it at once." theme={theme}>holds and works with information right now</Highlight> — is the biggest bottleneck in your learning. It's shockingly limited. You might think you can juggle loads of info, but realistically your brain can only hold about <strong>4 chunks of information</strong> at a time when dealing with complex schoolwork.</p>
                   <p>Even worse, without active effort, this information fades in about <strong>15-30 seconds</strong>. This is why you can read a whole page of a textbook and have no memory of it. The information landed on your mental desk but disappeared before it could be saved anywhere. Cramming jams this bottleneck, creating a memory that feels strong but vanishes quickly.</p>
                 </>
               )}

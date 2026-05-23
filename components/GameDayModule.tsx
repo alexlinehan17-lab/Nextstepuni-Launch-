@@ -477,7 +477,7 @@ const GameDayModule: React.FC<{ onBack: () => void; progress: ModuleProgress; on
       moduleNumber="06"
       moduleTitle="Game Day: Peak Performance"
       moduleSubtitle="Peak Performance on Demand"
-      moduleDescription="Train for the Leaving Cert the way athletes train for competition. Sleep, food, mindset, and a solid game plan -- this is your playbook for performing at your best when it counts."
+      moduleDescription="Train for your big exams the way athletes train for competition. Sleep, food, mindset, and a solid game plan -- this is your playbook for performing at your best when it counts."
       theme={theme}
       sections={sections}
       onBack={onBack}
@@ -496,7 +496,7 @@ const GameDayModule: React.FC<{ onBack: () => void; progress: ModuleProgress; on
                 </>
               ) : (
                 <>
-                  <p>The Leaving Cert is not just an academic test -- it's an endurance event. Your brain uses 20% of your body's energy. A 3-hour exam is basically a marathon for your head. This module is about treating yourself like an <Highlight description="The idea that you're not just studying with your mind -- your body matters too. Sleep, food, and stress management all directly affect how well your brain performs on the day." theme={theme}>Exam Athlete</Highlight>. How well you do isn't just about what you know -- it's about the state your brain is in when it's trying to remember it all.</p>
+                  <p>Big exams aren't just academic tests -- they're endurance events. Your brain uses 20% of your body's energy. A 2-3 hour paper is basically a marathon for your head. This module is about treating yourself like an <Highlight description="The idea that you're not just studying with your mind -- your body matters too. Sleep, food, and stress management all directly affect how well your brain performs on the day." theme={theme}>Exam Athlete</Highlight>. How well you do isn't just about what you know -- it's about the state your brain is in when it's trying to remember it all.</p>
                   <p>The goal is to get yourself into a <Highlight description="That 'I've got this' feeling. When you feel prepared and energised, your body sends more blood and oxygen to your brain. You think faster and stay focused." theme={theme}>Challenge State</Highlight> ("pumped") and avoid a <Highlight description="That 'I'm going to fail' feeling. When your brain thinks the exam is too much, stress hormones take over and your thinking brain basically shuts down. That's where 'mind blanking' comes from." theme={theme}>Threat State</Highlight> ("scared"). This isn't about positive thinking. It's about real, practical steps you can take to get your body and brain working together.</p>
                   <PersonalStory name="Aisling" role="6th Year, Limerick">
                     <p>Before my mocks, I used to just cram until 2am and hope for the best. I'd walk into the exam wrecked and my mind would go blank on stuff I definitely knew. When I started treating exam prep more like training -- sorting my sleep, eating properly, doing a warm-up routine -- it was like night and day. I wasn't any smarter, I was just less wrecked.</p>
@@ -538,7 +538,7 @@ const GameDayModule: React.FC<{ onBack: () => void; progress: ModuleProgress; on
                 <p>Do not just picture the result. Picture the process. Run a mental movie: waking up, eating, walking in, reading the paper, hitting a hard question. When you have "been there" in your head, your brain stays calm on the day.</p>
               ) : (
                 <>
-                  <p>Top athletes don't just train their bodies -- they train their minds through visualization. But there's a trap. <Highlight description="Picturing the end result (e.g. getting 625 points or opening your CAO offer). This can actually make you feel like you've already achieved it, which drains your motivation and can increase anxiety." theme={theme}>Just picturing the result</Highlight> (like imagining your CAO points) can actually backfire.</p>
+                  <p>Top athletes don't just train their bodies -- they train their minds through visualization. But there's a trap. <Highlight description="Picturing the end result (e.g. opening your results envelope and seeing top grades). This can actually make you feel like you've already achieved it, which drains your motivation and can increase anxiety." theme={theme}>Just picturing the result</Highlight> (like imagining your final grades) can actually backfire.</p>
                   <p>What works is <Highlight description="Picturing the actual steps: waking up calm, walking into the hall, reading the first question, taking a breath before writing. When you've 'been there' in your head, your brain handles the real thing much better -- instead of panicking, it goes 'I know what to do here.'" theme={theme}>picturing the process</Highlight>. Run a "mental movie" of exam day in your head -- waking up, eating, walking in, reading the paper. When you hit a hard question on the day, your brain recognises the moment ("I've been here before") and stays calm instead of panicking.</p>
                 </>
               )}

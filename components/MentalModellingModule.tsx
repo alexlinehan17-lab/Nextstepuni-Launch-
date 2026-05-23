@@ -318,7 +318,7 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
               ) : (
                 <>
                   <p>In subjects like DCG and Engineering, there's a skill nobody actually teaches you — but everyone expects you to have. It's not about what you draw; it's about what you can <em>see</em> in your head before you draw it. This is <Highlight description="Your ability to build a picture in your head — like a 3D model you can spin around, take apart, and test — all without touching a pencil." theme={theme}>Mental Modelling</Highlight>. It's the difference between blindly following steps and truly understanding the shape or mechanism you're working with.</p>
-                  <p>This "seeing in your head" skill isn't just one thing. It's actually a few different skills bundled together. The big three for the Leaving Cert are:</p>
+                  <p>This "seeing in your head" skill isn't just one thing. It's actually a few different skills bundled together. The big three for these subjects are:</p>
                   <ConceptCardGrid
                     cards={[
                       { number: 1, term: "Spatial Visualisation", description: "The ability to imagine something changing shape step by step — like picturing what happens when you slice through a 3D object, or where two shapes overlap." },

@@ -145,7 +145,7 @@ const AllostaticLoadComparison = () => {
 
             {!revealed ? (
                 <div className="text-center">
-                    <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Two students face the same Leaving Cert year. What happens when one builds in strategic recovery?</p>
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Two students face the same exam year. What happens when one builds in strategic recovery?</p>
                     <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-orange-500 text-white hover:bg-orange-600 transition-colors">
                         Reveal the Recovery Effect
                     </button>
@@ -227,7 +227,7 @@ const AllostaticLoadVisualizer = () => {
 
     return (
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Stress Build-Up Over the Leaving Cert</h4>
+            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Stress Build-Up Over Exam Season</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Your brain's stress builds up over time and spikes during exam clusters.</p>
             <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">This is why mental stamina matters — not just knowledge.</p>
 
@@ -514,7 +514,7 @@ const CognitiveEnduranceModule: React.FC<{ onBack: () => void; progress: ModuleP
       moduleNumber="06"
       moduleTitle="Cognitive Endurance"
       moduleSubtitle="The Marathon Method"
-      moduleDescription="The Leaving Cert isn't a sprint. Learn how to keep your brain sharp across weeks of exams, even when you're tired and stressed."
+      moduleDescription="A season of big exams isn't a sprint. Learn how to keep your brain sharp across weeks of exams, even when you're tired and stressed."
       theme={theme}
       sections={sections}
       fullSectionsCount={6}
@@ -529,13 +529,13 @@ const CognitiveEnduranceModule: React.FC<{ onBack: () => void; progress: ModuleP
             <ReadingSection title="The Marathon Mindset." eyebrow="Step 1" icon={Brain} theme={theme}>
               {essentials ? (
                 <>
-                  <p>The Leaving Cert is a marathon, not a sprint. You need to think clearly at 4 PM on Friday after a brutal exam week. That takes <Highlight description="Your ability to stay focused and think clearly for long stretches, even when you're tired or stressed. Think of it like fitness for your brain." theme={theme}>Cognitive Endurance</Highlight>.</p>
+                  <p>Exam season is a marathon, not a sprint. You need to think clearly at 4 PM on Friday after a brutal exam week. That takes <Highlight description="Your ability to stay focused and think clearly for long stretches, even when you're tired or stressed. Think of it like fitness for your brain." theme={theme}>Cognitive Endurance</Highlight>.</p>
                   <p>Your brain builds up <Highlight description="The total stress build-up in your body and brain from weeks of pressure. When it gets too high, your thinking gets foggy and your emotions get harder to control." theme={theme}>Stress Load</Highlight> over weeks of pressure. You can train your brain to handle this.</p>
                 </>
               ) : (
                 <>
-                  <p>The Leaving Cert isn't a sprint; it's a marathon. Success isn't just about knowing the material. It's about being able to access that knowledge at 4 PM on a Friday after a brutal week of exams. This is <Highlight description="Your ability to stay focused and think clearly for long stretches, even when you're tired or stressed. Think of it like fitness for your brain." theme={theme}>Cognitive Endurance</Highlight>.</p>
-                  <p>It's a trainable skill, not a measure of willpower. Your brain is an organ that uses 20% of your body's energy. Under the constant stress of the Leaving Cert, your brain builds up "wear and tear" over time — we call this <Highlight description="The total stress build-up in your body and brain from weeks of pressure. When it gets too high, your thinking gets foggy and your emotions get harder to control." theme={theme}>Stress Load</Highlight>. Building cognitive endurance is about training your brain to handle this build-up.</p>
+                  <p>Exam season isn't a sprint; it's a marathon. Success isn't just about knowing the material. It's about being able to access that knowledge at 4 PM on a Friday after a brutal week of exams. This is <Highlight description="Your ability to stay focused and think clearly for long stretches, even when you're tired or stressed. Think of it like fitness for your brain." theme={theme}>Cognitive Endurance</Highlight>.</p>
+                  <p>It's a trainable skill, not a measure of willpower. Your brain is an organ that uses 20% of your body's energy. Under the constant stress of exam season, your brain builds up "wear and tear" over time — we call this <Highlight description="The total stress build-up in your body and brain from weeks of pressure. When it gets too high, your thinking gets foggy and your emotions get harder to control." theme={theme}>Stress Load</Highlight>. Building cognitive endurance is about training your brain to handle this build-up.</p>
                 </>
               )}
               <AllostaticLoadVisualizer />

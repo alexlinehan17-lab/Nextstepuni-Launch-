@@ -25,7 +25,7 @@ const YetReframe = () => {
       { fixed: "I can't do Honours Maths", yet: "I can't do Honours Maths... yet", shift: "Difficulty = challenge to overcome" },
       { fixed: "I'm terrible at Irish essays", yet: "I'm terrible at Irish essays... yet", shift: "Weakness = area of future growth" },
       { fixed: "I don't understand Chemistry", yet: "I don't understand Chemistry... yet", shift: "Confusion = starting point, not endpoint" },
-      { fixed: "I'll never get the points I need", yet: "I'll never get the points I need... yet", shift: "Gap = distance to close, not a wall" },
+      { fixed: "I'll never get the grades I need", yet: "I'll never get the grades I need... yet", shift: "Gap = distance to close, not a wall" },
     ];
 
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -163,10 +163,10 @@ const YetReframe = () => {
 const BRIDGE_SCENARIOS = [
   {
     yet: "I can't write good essays... yet",
-    goal: "Write H1-level essays",
+    goal: "Write top-grade essays",
     strong: [
       "Write one paragraph and compare to the marking scheme",
-      "Highlight 3 techniques in a sample H1 essay",
+      "Highlight 3 techniques in a sample top-grade essay",
       "Rewrite my weakest paragraph using feedback",
     ],
     weak: [

@@ -165,7 +165,7 @@ const MasteringInterleavingModule: React.FC<{ onBack: () => void; progress: Modu
   ];
 
   return (
-    <ModuleLayout moduleNumber="03" moduleTitle="Mix It Up" moduleSubtitle="The Topic Salad Method" moduleDescription={`Stop studying one subject for hours on end. Mixing your topics feels harder, but it's the fastest way to build the kind of knowledge that actually holds up in the Leaving Cert.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Shake Up Your Study">
+    <ModuleLayout moduleNumber="03" moduleTitle="Mix It Up" moduleSubtitle="The Topic Salad Method" moduleDescription={`Stop studying one subject for hours on end. Mixing your topics feels harder, but it's the fastest way to build the kind of knowledge that actually holds up under exam pressure.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Shake Up Your Study">
       {(activeSection) => (
         <>
           {activeSection === 0 && (
@@ -178,7 +178,7 @@ const MasteringInterleavingModule: React.FC<{ onBack: () => void; progress: Modu
               ) : (
                 <>
                   <p>Most students study using <Highlight description="When you study one topic for ages before moving on, like doing Maths all Monday, English all Tuesday, Biology all Wednesday." theme={theme}>Blocked Practice</Highlight>. You spend Monday night on Maths, Tuesday on English, Wednesday on Biology. It feels productive. After three hours of Algebra, you feel like you've nailed it. But that feeling is actually a <Highlight description="That fake 'I totally know this' feeling you get right after studying something, just because it's still fresh in your head." theme={theme}>false sense of confidence</Highlight>.</p>
-                  <p>Here's the problem: your brain isn't being trained for the real Leaving Cert. The exam doesn't hand you 20 algebra questions in a row. It throws a mix at you. When you practise the same type of question over and over, you never have to figure out <em>what</em> to do, only <em>how</em> to do it. You never build the skill of <Highlight description="Being able to look at a question and figure out which approach to use -- like knowing whether you need the chain rule or the product rule." theme={theme}>telling similar problems apart</Highlight>, and that's exactly what the exam tests.</p>
+                  <p>Here's the problem: your brain isn't being trained for the real exam. The exam doesn't hand you 20 algebra questions in a row. It throws a mix at you. When you practise the same type of question over and over, you never have to figure out <em>what</em> to do, only <em>how</em> to do it. You never build the skill of <Highlight description="Being able to look at a question and figure out which approach to use -- like knowing whether you need the chain rule or the product rule." theme={theme}>telling similar problems apart</Highlight>, and that's exactly what the exam tests.</p>
                 </>
               )}
             </ReadingSection>
@@ -209,7 +209,7 @@ const MasteringInterleavingModule: React.FC<{ onBack: () => void; progress: Modu
               ) : (
                 <>
                   <p>Mixing topics feels harder -- and that's the whole point. When you switch from Maths to English, your brain has to work to "reload" a completely different way of thinking. That extra effort is actually a <Highlight description="When studying feels tougher but that struggle is actually making your memory way stronger in the long run." theme={theme}>good kind of difficulty</Highlight>. Studying one thing on repeat feels smooth because it's like re-watching the same scene of a film over and over. Mixing it up forces your brain to keep switching gears, and that builds the mental muscle you need for the exam.</p>
-                  <p>Here's the key idea: when you put similar but different concepts next to each other (like differentiation and integration), your brain is forced to <Highlight description="When you study similar topics back-to-back, your brain has to figure out what makes each one different -- and that's what helps you pick the right approach in the exam." theme={theme}>spot the differences between them</Highlight>. You're not just learning a rule -- you're learning <em>when</em> to use that rule. And that's exactly what the Leaving Cert asks you to do.</p>
+                  <p>Here's the key idea: when you put similar but different concepts next to each other (like differentiation and integration), your brain is forced to <Highlight description="When you study similar topics back-to-back, your brain has to figure out what makes each one different -- and that's what helps you pick the right approach in the exam." theme={theme}>spot the differences between them</Highlight>. You're not just learning a rule -- you're learning <em>when</em> to use that rule. And that's exactly what the exam asks you to do.</p>
                 </>
               )}
               <ProblemTypeSpotter/>
@@ -237,7 +237,7 @@ const MasteringInterleavingModule: React.FC<{ onBack: () => void; progress: Modu
                 <p>Break up the blocks. Shuffle question types. Jump between topics. Train your brain for the mixed reality of the exam. Study smarter, not more.</p>
               ) : (
                 <>
-                  <p>You've got the idea. Now you need the action plan. Mixing your topics isn't some vague notion -- it's a set of real, practical strategies you can use for every single subject you study for the Leaving Cert.</p>
+                  <p>You've got the idea. Now you need the action plan. Mixing your topics isn't some vague notion -- it's a set of real, practical strategies you can use for every single subject you study.</p>
                   <p>Whether it's shuffling question types in Maths or jumping between poets in English, the goal is always the same: break up the blocks, lean into the struggle of switching, and train your brain for the reality of the exam. This is not about studying more -- it's about studying smarter.</p>
                 </>
               )}

@@ -1223,14 +1223,18 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       style={{ backgroundColor: 'rgba(255,255,255,0.85)', border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 4px 24px rgba(0,0,0,0.06)' }}
                     >
                       <div className="flex items-center justify-around">
-                        <div>
-                          <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#A8A29E] dark:text-zinc-500">Target</p>
-                          <p className="text-3xl font-apercu font-black text-[#1A1A1A] dark:text-white">
-                            <AnimatedNumber value={pointsTotals.target} delay={0.7} />
-                          </p>
-                          <p className="text-[11px] text-[#A8A29E] dark:text-zinc-500">CAO pts</p>
-                        </div>
-                        <div className="w-px h-12" style={{ backgroundColor: 'rgba(0,0,0,0.08)' }} />
+                        {curriculumLevel === 'senior' && (
+                          <>
+                            <div>
+                              <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#A8A29E] dark:text-zinc-500">Target</p>
+                              <p className="text-3xl font-apercu font-black text-[#1A1A1A] dark:text-white">
+                                <AnimatedNumber value={pointsTotals.target} delay={0.7} />
+                              </p>
+                              <p className="text-[11px] text-[#A8A29E] dark:text-zinc-500">CAO pts</p>
+                            </div>
+                            <div className="w-px h-12" style={{ backgroundColor: 'rgba(0,0,0,0.08)' }} />
+                          </>
+                        )}
                         <div>
                           <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#A8A29E] dark:text-zinc-500">Countdown</p>
                           <p className="text-3xl font-apercu font-black text-[#1A1A1A] dark:text-white">

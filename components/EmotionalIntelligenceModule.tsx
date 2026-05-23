@@ -670,7 +670,7 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
                 </>
               ) : (
                 <>
-                  <p>Exam stress isn't a character flaw -- it's your brain doing exactly what it's designed to do. Your body has a built-in alarm system called the <Highlight description="Your body's built-in alarm system. When your brain senses danger (like opening an exam paper), it fires off a chain reaction that floods you with stress hormones, especially cortisol." theme={theme}>HPA Axis</Highlight>, and it floods you with stress hormones like cortisol. A small hit of cortisol actually sharpens your focus. But the Leaving Cert isn't one scary moment -- it's months of pressure, and that's where things go wrong.</p>
+                  <p>Exam stress isn't a character flaw -- it's your brain doing exactly what it's designed to do. Your body has a built-in alarm system called the <Highlight description="Your body's built-in alarm system. When your brain senses danger (like opening an exam paper), it fires off a chain reaction that floods you with stress hormones, especially cortisol." theme={theme}>HPA Axis</Highlight>, and it floods you with stress hormones like cortisol. A small hit of cortisol actually sharpens your focus. But a season of big exams isn't one scary moment -- it's months of pressure, and that's where things go wrong.</p>
                   <p>When stress stays high for weeks, all that cortisol basically takes your <Highlight description="Think of this as the 'boss' part of your brain. It handles planning, logic, and holding information in your head. It's still developing in your teens, which is why stress can knock it offline so easily at your age." theme={theme}>Prefrontal Cortex (PFC)</Highlight> offline. That's the part of your brain you need for thinking, planning, and remembering. This is the real reason you "go blank" in an exam -- your brain has switched into survival mode and shut down the thinking part. Understanding this isn't an excuse; it's the first step to taking back control.</p>
                 </>
               )}
@@ -685,7 +685,7 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
               ) : (
                 <>
                   <p><Highlight description="Being able to notice what you're feeling, understand why, and then do something useful about it instead of just reacting on autopilot." theme={theme}>Emotional Intelligence (EI)</Highlight> isn't about being "nice." It's a practical set of skills for noticing what's going on inside you and doing something useful about it. Having good EI doesn't mean you don't feel stress -- it means you can turn that stress into fuel (<Highlight description="The good kind of stress -- the buzz you get before a match or a performance that actually helps you do better. Same racing heart, but it's working for you, not against you." theme={theme}>eustress</Highlight>) instead of letting it wreck your performance.</p>
-                  <p>For the Leaving Cert, we can break EI into three skills you can actually train:</p>
+                  <p>For big exams, we can break EI into three skills you can actually train:</p>
                 </>
               )}
               <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>

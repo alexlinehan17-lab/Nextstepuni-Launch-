@@ -195,7 +195,10 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
                 <MotionDiv key="cs-step1" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                   <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Change Your Subjects</h2>
                   <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
-                    Tap to select your Leaving Cert subjects. <span className="font-semibold text-[var(--accent-hex)]">{selectedSubjects.size} selected</span>
+                    {currentProfile.curriculumLevel === 'junior'
+                      ? 'Tap to select your subjects.'
+                      : 'Tap to select your Leaving Cert subjects.'}{' '}
+                    <span className="font-semibold text-[var(--accent-hex)]">{selectedSubjects.size} selected</span>
                   </p>
                   <div className="space-y-6">
                     {Object.entries(groupedSubjects).map(([group, subjects]) => {

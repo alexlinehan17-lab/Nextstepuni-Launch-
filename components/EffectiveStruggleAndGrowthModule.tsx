@@ -266,7 +266,7 @@ const ScenarioDiagnosis = () => {
       explanation: 'The task is in the Comfort Zone — it feels productive because the explanation is fluent, but your brain is doing zero work. No struggle means no growth. You need to attempt harder problems on this topic.',
     },
     {
-      situation: 'Attempting a university-level Maths proof with no guidance on a topic you haven\'t covered.',
+      situation: 'Attempting a Maths proof on a topic you haven\'t covered yet, with no guidance.',
       answer: 'zpd',
       explanation: 'This is the Frustration Zone. The task is so far beyond your current level that Working Memory overloads immediately. You need to step back to a worked example or ask for help to bring it into your ZPD.',
     },
@@ -706,7 +706,7 @@ const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress:
                 <>
                   <p>Your brain is lazy by design. It prefers the escalator to the stairs. This means your gut feeling about how well you're learning is basically broken. You have to learn to override it.</p>
                   <p>From now on, when learning feels slow, frustrating, and difficult, that's not a sign you should stop. It's a sign that you're in the sweet spot. It's the feeling of your brain actually rewiring itself. You're not "confused" — you're building real understanding. You're not "slow" — you're building long-term memory. If it feels like a struggle, it's working.</p>
-                  <p>Here's a bonus: regular low-stakes self-testing doesn't just improve your memory — it also crushes exam anxiety. Think about it: anxiety usually comes from uncertainty. You *think* you know the material, but you've never actually tested that belief until the Leaving Cert. Quizzing yourself regularly is a form of <Highlight description="Getting honest with yourself about what you actually know vs. what you just think you know. When you quiz yourself regularly, you stop guessing and start knowing exactly where your gaps are — so there are no nasty surprises on exam day." theme={theme}>Metacognitive Calibration</Highlight> — it replaces false confidence with honest self-knowledge. When you test yourself regularly, you walk into the exam hall knowing exactly what you know and what you don't. No surprises, no panic. You've already faced the hard stuff at home.</p>
+                  <p>Here's a bonus: regular low-stakes self-testing doesn't just improve your memory — it also crushes exam anxiety. Think about it: anxiety usually comes from uncertainty. You *think* you know the material, but you've never actually tested that belief until the day of the real exam. Quizzing yourself regularly is a form of <Highlight description="Getting honest with yourself about what you actually know vs. what you just think you know. When you quiz yourself regularly, you stop guessing and start knowing exactly where your gaps are — so there are no nasty surprises on exam day." theme={theme}>Metacognitive Calibration</Highlight> — it replaces false confidence with honest self-knowledge. When you test yourself regularly, you walk into the exam knowing exactly what you know and what you don't. No surprises, no panic. You've already faced the hard stuff at home.</p>
                 </>
               )}
               <MicroCommitment theme={theme}>

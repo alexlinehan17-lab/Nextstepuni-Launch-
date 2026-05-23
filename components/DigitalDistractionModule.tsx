@@ -475,7 +475,7 @@ const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleP
               {essentials ? (
                 <p>Build your digital fortress in three phases. Phase 1 (Sept-Dec): turn off notifications and charge your phone outside your room. Phase 2 (Jan-Mar): install blockers and batch social media. Phase 3 (Apr-Jun): go all-in with minimal phone use for exams.</p>
               ) : (
-                <p>You don't have to do everything at once. This is a gradual plan that builds up across the Leaving Cert year.</p>
+                <p>You don't have to do everything at once. This is a gradual plan that builds up across the school year.</p>
               )}
               <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 {/* Card 1 — Sky */}
@@ -499,7 +499,7 @@ const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleP
                   <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
                   <div>
                     <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Phase 3: Full Focus (Apr - June)</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>This is where you go all-in for the exams. Minimal phone use, locked blockers on your laptop, and maybe even deactivating social media until the Leaving Cert is over.</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>This is where you go all-in for the exams. Minimal phone use, locked blockers on your laptop, and maybe even deactivating social media until exam season is over.</p>
                   </div>
                 </div>
               </div>

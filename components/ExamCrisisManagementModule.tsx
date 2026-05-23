@@ -981,7 +981,7 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
                 <p>Sleep is your brain's best recovery tool. Bank extra sleep the week before exams. Your brain cleans itself during sleep. Pulling an all-nighter skips that cleanup and leaves you foggy.</p>
               ) : (
                 <>
-                  <p>Think of the weeks before the Leaving Cert like a championship season. Your brain is the muscle that matters most right now. And sleep is the single best thing you can do for it.</p>
+                  <p>Think of the weeks before your big exams like a championship season. Your brain is the muscle that matters most right now. And sleep is the single best thing you can do for it.</p>
                   <p>In the week before exams, try <Highlight description="Getting an extra hour of sleep per night in the days before exams. It builds up a reserve so that if you sleep badly the night before a paper, you've got a buffer and your brain still works well." theme={theme}>sleep banking</Highlight> -- getting an extra hour of sleep per night. This builds a reserve that protects you if you sleep badly the night before a paper. While you sleep, your brain also runs its own <Highlight description="While you sleep, your brain literally flushes out the waste that builds up during the day -- the stuff that causes brain fog and makes it hard to concentrate. Pulling an all-nighter means skipping this clean-up." theme={theme}>cleaning cycle</Highlight>, flushing out the waste that causes brain fog. Pulling an all-nighter means skipping that clean-up entirely.</p>
                 </>
               )}

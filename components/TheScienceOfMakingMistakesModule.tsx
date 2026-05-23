@@ -415,7 +415,7 @@ const AmygdalaHijackSimulator = () => {
             className="px-5 py-2.5 text-sm font-bold transition-all duration-200 disabled:opacity-50"
             style={scenario === 'high' ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
           >
-            High Stakes — Leaving Cert Exam
+            High Stakes — Big Exam
           </button>
         </div>
       </div>
@@ -617,7 +617,7 @@ const TheScienceOfMakingMistakesModule: React.FC<{ onBack: () => void; progress:
     { id: 'brain-alarm', title: "The Brain's Alarm", eyebrow: '01 // The "Uh-Oh" Signal', icon: AlertTriangle },
     { id: 'second-signal', title: 'The Second Signal', eyebrow: '02 // The Analysis', icon: Lightbulb },
     { id: 'mindset-switch', title: 'The Mindset Switch', eyebrow: '03 // Leaning In', icon: ToggleRight },
-    { id: 'high-stakes-hijack', title: 'The High-Stakes Hijack', eyebrow: '04 // The Leaving Cert Brain', icon: ZapOff },
+    { id: 'high-stakes-hijack', title: 'The High-Stakes Hijack', eyebrow: '04 // The High-Stakes Brain', icon: ZapOff },
     { id: 'error-toolkit', title: 'Your Error Toolkit', eyebrow: '05 // Building Better Habits', icon: Wrench },
   ];
 
@@ -691,7 +691,7 @@ const TheScienceOfMakingMistakesModule: React.FC<{ onBack: () => void; progress:
                   </>
                 ) : (
                   <>
-                    <p>This whole system can be hijacked by stress. In a high-pressure situation like the Leaving Cert, the fear of messing up can trigger an <Highlight description="When the emotional, panicky part of your brain completely takes over and shuts down the calm, logical part. It's why one bad moment in an exam can make your whole brain feel like it's frozen." theme={theme}>amygdala hijack</Highlight>. This floods your brain with stress chemicals that basically put it into panic mode.</p>
+                    <p>This whole system can be hijacked by stress. In a high-pressure situation like a big exam, the fear of messing up can trigger an <Highlight description="When the emotional, panicky part of your brain completely takes over and shuts down the calm, logical part. It's why one bad moment in an exam can make your whole brain feel like it's frozen." theme={theme}>amygdala hijack</Highlight>. This floods your brain with stress chemicals that basically put it into panic mode.</p>
                     <p>When that happens, two things go wrong at once. First, the logical, problem-solving part of your brain gets weaker, making it harder to think straight. Second, that important Pe signal gets squashed. Your brain stops trying to learn from the mistake and just tries to survive the moment. This is exactly why you can "go blank" after one bad question in an exam and feel like you can't recover.</p>
                   </>
                 )}

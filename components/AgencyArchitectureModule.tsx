@@ -213,7 +213,7 @@ const AttributionReframeDrill = () => {
   const examples = [
     { id: 1, maladaptive: "I failed the test because I am stupid.", adaptive: "I failed the test because my study strategy for this topic was ineffective." },
     { id: 2, maladaptive: "I'm just naturally bad at Maths.", adaptive: "I haven't found an effective way to learn Maths yet." },
-    { id: 3, maladaptive: "I'll never be good enough to get a H1.", adaptive: "Getting a H1 is a difficult goal, so I will need to break it down into smaller, manageable steps." },
+    { id: 3, maladaptive: "I'll never be good enough to get a top grade.", adaptive: "Getting a top grade is a difficult goal, so I will need to break it down into smaller, manageable steps." },
   ];
 
   const [flipped, setFlipped] = useState<number[]>([]);

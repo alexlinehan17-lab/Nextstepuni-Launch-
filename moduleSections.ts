@@ -123,7 +123,7 @@ export const MODULE_SECTIONS: Record<string, SectionInfo[]> = {
     { title: "The Brain's Alarm", eyebrow: '01 // The "Uh-Oh" Signal' },
     { title: 'The Second Signal', eyebrow: '02 // The Analysis' },
     { title: 'The Mindset Switch', eyebrow: '03 // Leaning In' },
-    { title: 'The High-Stakes Hijack', eyebrow: '04 // The Leaving Cert Brain' },
+    { title: 'The High-Stakes Hijack', eyebrow: '04 // The High-Stakes Brain' },
     { title: 'Your Error Toolkit', eyebrow: '05 // Building Better Habits' },
   ],
   'autodidact-engine-protocol': [
