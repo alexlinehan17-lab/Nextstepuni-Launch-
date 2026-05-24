@@ -35,7 +35,13 @@ export interface StudentSubject {
 // (1st/2nd/3rd) and Transition Year (4th) alongside the existing senior
 // years. TY is mapped to senior content for now per the audit decision —
 // revisit post-launch.
-export type YearGroup = '1st' | '2nd' | '3rd' | 'TY' | '5th' | '6th';
+//
+// Phase 8: 'graduated' added as a forward-only soft state — set when a
+// 6th-year user explicitly marks themselves as having finished their
+// Leaving Cert via Settings → School Year. Graduated users retain full
+// app access; the value just drives a different label in Settings and a
+// muted treatment on the GC dashboard.
+export type YearGroup = '1st' | '2nd' | '3rd' | 'TY' | '5th' | '6th' | 'graduated';
 
 import type { CurriculumLevel } from '../utils/authUtils';
 

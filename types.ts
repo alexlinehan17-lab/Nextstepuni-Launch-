@@ -112,6 +112,26 @@ export interface NorthStarVisionCard {
   curriculum?: 'junior' | 'senior' | 'both';
 }
 
+// ─── Past JC archive (Phase 8) ──────────────────────────────────────────
+//
+// When a 3rd-year JC user transitions into senior cycle (TY or 5th), their
+// JC band data and JC North Star are moved out of the active subjectProfile
+// /northStar fields and parked on users/{uid}.pastJCData. The active
+// profile is then cleared so the senior re-onboarding picks fresh LC
+// subjects / grades / NS without legacy data leaking through.
+//
+// Nothing in Phase 8 surfaces this archive in the UI — it's stored for
+// potential future "Your JC journey" features and as a manual rollback
+// path for GC/admin if a student transitions by mistake.
+import type { StudentSubject } from './components/subjectData';
+
+export interface PastJCData {
+  transitionedAt: string;       // ISO timestamp of the transition
+  jcYearGroup: '3rd';            // always 3rd at time of transition
+  jcSubjects: StudentSubject[]; // JC subjects with currentBand/targetBand intact
+  jcNorthStar?: NorthStar;       // their JC NS at time of transition (may be unset)
+}
+
 export interface NorthStar {
   category: NorthStarCategory;
   statement: string;

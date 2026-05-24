@@ -117,6 +117,10 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   // populated by Phase 1 plumbing; we fall back to deriving from yearGroup.
   const isJunior = student.curriculumLevel === 'junior'
     || (student.yearGroup === '1st' || student.yearGroup === '2nd' || student.yearGroup === '3rd');
+  // Phase 8: graduated students should show a muted "Graduated" badge
+  // and have the days-to-LC tile suppressed (the countdown is meaningless
+  // post-LC).
+  const isGraduated = student.yearGroup === 'graduated';
 
   const STATUS_ICONS: Record<StudentStatus, React.ElementType> = {
     'new': UserPlus, 'at-risk': AlertTriangle, 'drifting': TrendingDown,
@@ -242,18 +246,21 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                 </span>
               )}
               {/* Curriculum + year badge — mirror of the full-detail header
-                  badge above; shown here so the tray-mode summary row is
-                  also explicit about curriculum/year. */}
+                  badge above; muted treatment for graduated past-cohort. */}
               {(student.yearGroup || student.curriculumLevel) && (
                 <span
                   className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider shrink-0"
-                  style={isJunior
-                    ? { backgroundColor: '#EDF2EE', color: '#4A6B4F' }
-                    : { backgroundColor: '#FDEEDF', color: '#8C3A0E' }}
-                  title={isJunior ? 'Junior Cycle student' : 'Senior Cycle student'}
+                  style={
+                    isGraduated
+                      ? { backgroundColor: '#F4F4F2', color: '#78716C', border: '1px solid #E5E3DE' }
+                      : isJunior
+                        ? { backgroundColor: '#EDF2EE', color: '#4A6B4F' }
+                        : { backgroundColor: '#FDEEDF', color: '#8C3A0E' }
+                  }
+                  title={isGraduated ? 'Graduated student (past cohort)' : isJunior ? 'Junior Cycle student' : 'Senior Cycle student'}
                 >
-                  {isJunior ? 'JC' : 'Senior'}
-                  {student.yearGroup && (
+                  {isGraduated ? 'Graduated' : isJunior ? 'JC' : 'Senior'}
+                  {!isGraduated && student.yearGroup && (
                     <span className="opacity-70 normal-case">· {student.yearGroup === 'TY' ? 'TY' : `${student.yearGroup}`}</span>
                   )}
                 </span>
@@ -315,20 +322,23 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                   {STATUS_CONFIG[previousStatus].label} &rarr;
                 </span>
               )}
-              {/* Curriculum + year badge (Phase 6). Surfaces the student's
-                  level/year at a glance so the GC knows whether they're
-                  looking at a JC or senior cycle student before they
-                  scroll into the detail cards. */}
+              {/* Curriculum + year badge (Phase 6 + 8). Graduated students
+                  get a muted treatment to distinguish past-cohort from
+                  active students; the badge reads simply "Graduated". */}
               {(student.yearGroup || student.curriculumLevel) && (
                 <span
                   className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider shrink-0"
-                  style={isJunior
-                    ? { backgroundColor: '#EDF2EE', color: '#4A6B4F' }
-                    : { backgroundColor: '#FDEEDF', color: '#8C3A0E' }}
-                  title={isJunior ? 'Junior Cycle student' : 'Senior Cycle student'}
+                  style={
+                    isGraduated
+                      ? { backgroundColor: '#F4F4F2', color: '#78716C', border: '1px solid #E5E3DE' }
+                      : isJunior
+                        ? { backgroundColor: '#EDF2EE', color: '#4A6B4F' }
+                        : { backgroundColor: '#FDEEDF', color: '#8C3A0E' }
+                  }
+                  title={isGraduated ? 'Graduated student (past cohort)' : isJunior ? 'Junior Cycle student' : 'Senior Cycle student'}
                 >
-                  {isJunior ? 'JC' : 'Senior'}
-                  {student.yearGroup && (
+                  {isGraduated ? 'Graduated' : isJunior ? 'JC' : 'Senior'}
+                  {!isGraduated && student.yearGroup && (
                     <span className="opacity-70 normal-case">
                       · {student.yearGroup === 'TY' ? 'TY' : `${student.yearGroup} yr`}
                     </span>
@@ -377,10 +387,19 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                 <p className="text-xl font-bold text-zinc-900 dark:text-white">{student.subjectProfile ? targetCAO : '\u2014'}</p>
                 <p className="text-[10px] font-medium text-zinc-500">Target CAO</p>
               </div>
-              <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-                <p className="text-xl font-bold text-zinc-900 dark:text-white">{daysUntilLC}</p>
-                <p className="text-[10px] font-medium text-zinc-500">Days to Exam</p>
-              </div>
+              {/* Days-to-Exam \u2014 hidden for graduated students (LC already done). */}
+              {!isGraduated && (
+                <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
+                  <p className="text-xl font-bold text-zinc-900 dark:text-white">{daysUntilLC}</p>
+                  <p className="text-[10px] font-medium text-zinc-500">Days to Exam</p>
+                </div>
+              )}
+              {isGraduated && (
+                <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
+                  <p className="text-base font-semibold text-zinc-600 dark:text-zinc-300">Best of luck</p>
+                  <p className="text-[10px] font-medium text-zinc-500">Past cohort</p>
+                </div>
+              )}
             </>
           )}
           {isJunior && (() => {

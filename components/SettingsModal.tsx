@@ -7,9 +7,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { X, Check, Lock, Sun, Moon, RefreshCw, LogOut, ChevronRight, Compass } from 'lucide-react';
+import { X, Check, Lock, Sun, Moon, RefreshCw, LogOut, ChevronRight, Compass, GraduationCap, ArrowRight } from 'lucide-react';
 import { useModal } from '../hooks/useModal';
-import { AVATAR_SEEDS, getAvatarUrl } from '../utils/authUtils';
+import { AVATAR_SEEDS, getAvatarUrl, nextYearAction, yearGroupLabel } from '../utils/authUtils';
+import { type YearGroup } from './subjectData';
 
 const EXTRA_AVATAR_SEEDS = ['Luna', 'Kai', 'Suki', 'Dara', 'Nico', 'Asha', 'Finn', 'Yuki'];
 import { type UserSettings } from '../types';
@@ -24,15 +25,21 @@ interface SettingsModalProps {
   unlockedCardStyles?: string[];
   userName?: string;
   userSchool?: string;
+  /** Phase 8: current year group, used by the School Year section to
+   *  render the "I'm now in X" forward-progression button. */
+  userYearGroup?: YearGroup;
   onChangeSubjects?: () => void;
   onResetNorthStar?: () => void;
+  /** Phase 8: opens the year transition flow (quiet bump confirm /
+   *  TY-vs-5th picker / graduation confirm depending on current year). */
+  onAdvanceYear?: () => void;
   onLogout?: () => void;
 }
 
 const SettingsModal: React.FC<SettingsModalProps> = ({
   isOpen, onClose, settings, updateSetting,
   unlockedAvatarSeeds = [], _unlockedThemes = [], _unlockedCardStyles = [],
-  userName, userSchool, onChangeSubjects, onResetNorthStar, onLogout,
+  userName, userSchool, userYearGroup, onChangeSubjects, onResetNorthStar, onAdvanceYear, onLogout,
 }) => {
   useModal(isOpen, onClose);
   const [showSaved, setShowSaved] = useState(false);
@@ -260,6 +267,45 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                   </button>
                 </div>
               </section>
+
+              {/* School Year (Phase 8) — forward-progression action.
+                  Button label and behaviour depend on current year. Hidden
+                  if userYearGroup is undefined (legacy account) or if the
+                  parent didn't wire an onAdvanceYear handler. */}
+              {userYearGroup && onAdvanceYear && (() => {
+                const action = nextYearAction(userYearGroup);
+                const isGraduated = userYearGroup === 'graduated';
+                return (
+                  <section>
+                    <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
+                      School Year
+                    </h3>
+                    <div className="rounded-2xl p-4 bg-zinc-50 dark:bg-white/[0.04] border border-zinc-200/60 dark:border-white/[0.06]">
+                      <div className="flex items-center gap-3 mb-3">
+                        <GraduationCap size={18} className="text-zinc-400" />
+                        <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">
+                          {isGraduated
+                            ? "You've completed your Leaving Cert."
+                            : `You're in ${yearGroupLabel(userYearGroup)}.`}
+                        </p>
+                      </div>
+                      {action.kind === 'terminal' ? (
+                        <p className="text-xs text-zinc-500 dark:text-zinc-400 italic">
+                          {action.label}.
+                        </p>
+                      ) : (
+                        <button
+                          onClick={() => { onClose(); onAdvanceYear(); }}
+                          className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans font-bold text-sm transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A]"
+                        >
+                          {action.label}
+                          <ArrowRight size={14} />
+                        </button>
+                      )}
+                    </div>
+                  </section>
+                );
+              })()}
 
               {/* Actions */}
               <section>

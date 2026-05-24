@@ -12,6 +12,9 @@ import { type CategoryType } from './components/KnowledgeTree';
 import AppRouter from './components/AppRouter';
 import OfflineBanner from './components/OfflineBanner';
 import SettingsModal from './components/SettingsModal';
+import YearTransitionFlow from './components/YearTransitionFlow';
+import { type YearGroup, type StudentSubject } from './components/subjectData';
+import { type PastJCData } from './types';
 import StudyPassportModal from './components/StudyPassportModal';
 import { db } from './firebase';
 import { doc, getDoc, setDoc, increment } from 'firebase/firestore';
@@ -140,6 +143,13 @@ const App: React.FC = () => {
   const [passportOpen, setPassportOpen] = useState(false);
   const [northStarEditOpen, setNorthStarEditOpen] = useState(false);
   const [changeSubjectsOpen, setChangeSubjectsOpen] = useState(false);
+  // Phase 8: forward year-progression state. yearTransitionOpen drives
+  // the YearTransitionFlow modal (quiet bump / TY-or-5th picker /
+  // graduate confirm). transitionToSeniorMode triggers the re-onboarding
+  // flow after a successful JC→senior crossover — the Onboarding shell
+  // reads it and starts at step 5 (Subjects) instead of step 1.
+  const [yearTransitionOpen, setYearTransitionOpen] = useState(false);
+  const [transitionToSeniorMode, setTransitionToSeniorMode] = useState(false);
   const [mobileProfileOpen, setMobileProfileOpen] = useState(false);
   const [timetableBlockContext, setTimetableBlockContext] = useState<{ subject: string; sessionType: 'new-learning' | 'practice' | 'revision'; durationMinutes: number; dateKey: string; blockId: string } | null>(null);
   const [unreadNotificationCount, setUnreadNotificationCount] = useState(0);
@@ -415,6 +425,14 @@ const App: React.FC = () => {
       // and the next render — surfaced 2026-05-24 when JourneyView reported
       // northStar=null right after a successful onboarding.
       reloadProgress();
+      // Phase 8: if this was a JC→senior re-onboarding, clear the
+      // transition flag and show a celebratory toast. The flag-clear
+      // hands control back to the regular fresh-mode flow for any
+      // future re-runs (which wouldn't happen anyway).
+      if (transitionToSeniorMode) {
+        setTransitionToSeniorMode(false);
+        showToast('Welcome to senior cycle!', 'success');
+      }
     } catch (err) {
       console.error('Failed to save subject profile:', err);
       // Surface the actual Firebase error in the toast itself so silent
@@ -452,6 +470,88 @@ const App: React.FC = () => {
   const handleOnboardingSkip = () => {
     markOnboardingComplete();
     nav.navigateToTree();
+  };
+
+  // ─── Phase 8: year-progression handlers ─────────────────────────────
+  //
+  // All three handlers write to users/{uid} (and progress/{uid} where
+  // relevant), then trigger a ProgressContext reload so the next render
+  // reflects the new authoritative Firestore state. The YearTransitionFlow
+  // modal closes itself on completion.
+
+  // Quiet bump: write the new yearGroup to users/{uid}, refresh local
+  // SessionUser via AuthContext, brief celebratory toast. Curriculum
+  // doesn't change for any of these transitions (1st→2nd, 2nd→3rd
+  // stay junior; TY→5th, 5th→6th stay senior).
+  const handleConfirmYearBump = async (next: YearGroup) => {
+    if (!user) return;
+    try {
+      await setDoc(doc(db, 'users', user.uid), { yearGroup: next }, { merge: true });
+      showToast(`Welcome to ${next === 'TY' ? 'TY' : next + ' Year'}!`, 'success');
+    } catch (err) {
+      console.error('Failed to bump year:', err);
+      showToast('Couldn\'t update — check your connection.', 'error');
+    }
+  };
+
+  // JC → senior crossover: archive JC data, clear active JC fields,
+  // update yearGroup + curriculumLevel, then enter the re-onboarding
+  // wrapper so the user picks fresh senior subjects/grades/NS.
+  const handleConfirmJCtoSenior = async (target: 'TY' | '5th') => {
+    if (!user || !studentProfile) return;
+    try {
+      const now = new Date().toISOString();
+      // 1. Build the PastJCData archive from the current active state.
+      const archive: PastJCData = {
+        transitionedAt: now,
+        jcYearGroup: '3rd',
+        jcSubjects: studentProfile.subjects.map((s: StudentSubject) => ({ ...s })),
+        ...(northStar ? { jcNorthStar: northStar } : {}),
+      };
+      // 2. Write archive + new yearGroup + senior curriculumLevel to users/{uid}.
+      await setDoc(doc(db, 'users', user.uid), {
+        yearGroup: target,
+        curriculumLevel: 'senior',
+        pastJCData: archive,
+      }, { merge: true });
+      // 3. Clear the active progress doc fields that need re-onboarding:
+      //    subjectProfile (will be rebuilt with LC subjects) and northStar
+      //    (will be rebuilt with senior NS).
+      await setDoc(doc(db, 'progress', user.uid), {
+        subjectProfile: null,
+        northStar: null,
+      }, { merge: true });
+      // 4. Flip local state and open the transition re-onboarding shell.
+      setStudentProfile(null);
+      setNorthStar(null);
+      setTransitionToSeniorMode(true);
+      // Onboarding gate in AppRouter will catch needsOnboarding=true and
+      // render Onboarding. The transitionToSeniorMode flag passes through
+      // to switch the flow to Subjects → Grades → NS.
+      // We need to mark onboarding as needed again so the gate fires.
+      // markOnboardingNeeded is set via the progressDoc subjectProfile=null
+      // write above; AuthContext's loadedData.needsOnboarding derives
+      // from that, but it won't auto-refresh — trigger a reload.
+      reloadProgress();
+      nav.navigateToOnboarding();
+    } catch (err) {
+      console.error('Failed to transition to senior cycle:', err);
+      showToast('Couldn\'t update — check your connection.', 'error');
+    }
+  };
+
+  // Graduation: write yearGroup='graduated'. No sign-out, no special
+  // screen — the user retains full app access. Settings flips to the
+  // soft post-LC label on next render.
+  const handleConfirmGraduate = async () => {
+    if (!user) return;
+    try {
+      await setDoc(doc(db, 'users', user.uid), { yearGroup: 'graduated' }, { merge: true });
+      showToast('Best of luck with what\'s next.', 'success');
+    } catch (err) {
+      console.error('Failed to mark graduated:', err);
+      showToast('Couldn\'t update — check your connection.', 'error');
+    }
   };
 
   const handleChangeSubjectsSave = async (profile: StudentSubjectProfile) => {
@@ -498,6 +598,7 @@ const App: React.FC = () => {
     timetableBlockContext, setTimetableBlockContext, handleStudyFromTimetable,
     journeyResult, setJourneyResult,
     handleOnboardingComplete, handleOnboardingSkip,
+    transitionToSeniorMode, transitionTargetYear: transitionToSeniorMode ? (user?.yearGroup === 'TY' ? 'TY' : '5th') : undefined,
     handleProgressUpdate,
     setSettingsOpen, setPassportOpen, setChangeSubjectsOpen, setNorthStarEditOpen,
     setUnlockedAvatarSeeds,
@@ -597,9 +698,19 @@ const App: React.FC = () => {
             unlockedCardStyles={unlockedCardStyles}
             userName={user?.name}
             userSchool={user?.school}
+            userYearGroup={user?.yearGroup}
             onChangeSubjects={studentProfile ? () => { setSettingsOpen(false); setChangeSubjectsOpen(true); } : undefined}
             onResetNorthStar={() => { setSettingsOpen(false); setNorthStarEditOpen(true); }}
+            onAdvanceYear={() => { setSettingsOpen(false); setYearTransitionOpen(true); }}
             onLogout={handleLogout}
+          />
+          <YearTransitionFlow
+            isOpen={yearTransitionOpen}
+            onClose={() => setYearTransitionOpen(false)}
+            currentYearGroup={user?.yearGroup}
+            onConfirmBump={handleConfirmYearBump}
+            onConfirmJCtoSenior={handleConfirmJCtoSenior}
+            onConfirmGraduate={handleConfirmGraduate}
           />
           <StudyPassportModal
             isOpen={passportOpen}

@@ -16,11 +16,67 @@ import type { YearGroup } from '../components/subjectData';
 //   1st / 2nd / 3rd  → junior
 //   TY / 5th / 6th   → senior  (TY rides senior content for now;
 //                                revisit post-launch per the audit).
+//   graduated        → senior  (Phase 8 — graduates came from senior;
+//                                this is just a label-flip post-LC and
+//                                doesn't drive any active UI gating.)
 
 export type CurriculumLevel = 'junior' | 'senior';
 
 export function yearGroupToCurriculumLevel(yg: YearGroup): CurriculumLevel {
   return yg === '1st' || yg === '2nd' || yg === '3rd' ? 'junior' : 'senior';
+}
+
+/** Phase 8: convenience predicate. Used in places that want to gate
+ *  forward-progression UI (e.g. the "I'm now in X" button) or recognise
+ *  post-LC users for label tweaks without re-deriving from yearGroup. */
+export function isGraduated(yg: YearGroup | undefined): boolean {
+  return yg === 'graduated';
+}
+
+// ─── Year progression ──────────────────────────────────────
+//
+// Phase 8: forward-only year progression. Used by Settings → School Year
+// to render the "I'm now in X" button label and decide what transition
+// flow to run.
+//   - JC→JC (1st→2nd, 2nd→3rd) and senior→senior (TY→5th, 5th→6th) are
+//     quiet bumps: write the new yearGroup, brief celebratory toast.
+//   - 3rd→TY|5th crosses the curriculum boundary: triggers JC→senior
+//     re-onboarding (TransitionToSenior wrapper).
+//   - 6th→graduated is the terminal soft-state transition.
+
+export type NextYearAction =
+  | { kind: 'bump'; next: YearGroup; label: string }                // quiet bump
+  | { kind: 'pick-senior'; label: string }                          // 3rd → TY or 5th picker
+  | { kind: 'graduate'; label: string }                             // 6th → graduated
+  | { kind: 'terminal'; label: string };                            // graduated — no further button
+
+/** Resolve what the "I'm now in X" button should do for a given year. */
+export function nextYearAction(yg: YearGroup | undefined): NextYearAction {
+  switch (yg) {
+    case '1st': return { kind: 'bump', next: '2nd', label: "I'm now in 2nd Year" };
+    case '2nd': return { kind: 'bump', next: '3rd', label: "I'm now in 3rd Year" };
+    case '3rd': return { kind: 'pick-senior', label: "I'm starting Senior Cycle" };
+    case 'TY':  return { kind: 'bump', next: '5th', label: "I'm now in 5th Year" };
+    case '5th': return { kind: 'bump', next: '6th', label: "I'm now in 6th Year" };
+    case '6th': return { kind: 'graduate', label: 'Mark as graduated' };
+    case 'graduated': return { kind: 'terminal', label: "Best of luck with what's next" };
+    default: return { kind: 'terminal', label: '' }; // undefined — shouldn't reach UI
+  }
+}
+
+/** Human-readable label for the current year (used in Settings header
+ *  copy and the GC dashboard year cell). */
+export function yearGroupLabel(yg: YearGroup | undefined): string {
+  switch (yg) {
+    case '1st': return '1st Year';
+    case '2nd': return '2nd Year';
+    case '3rd': return '3rd Year';
+    case 'TY':  return 'Transition Year';
+    case '5th': return '5th Year';
+    case '6th': return '6th Year';
+    case 'graduated': return 'Graduated';
+    default: return '';
+  }
 }
 
 // ─── Session User Type ──────────────────────────────────────

@@ -24,6 +24,17 @@ interface OnboardingProps {
   userName: string;
   onComplete: (profile: StudentSubjectProfile, northStar?: NorthStar, essentialsMode?: boolean) => void;
   onSkip: () => void;
+  /** Phase 8: switches the flow into JC→senior re-onboarding mode. Skips
+   *  the welcome/year/mode/rest-days/exam-date/summary steps and runs
+   *  Subjects → Grades → North Star (5 → 6 → 4) in that order, starting
+   *  from a known yearGroup='5th' or 'TY' and curriculumLevel='senior'
+   *  (set by handleConfirmJCtoSenior before this component renders). */
+  mode?: 'fresh' | 'transition-to-senior';
+  /** When mode='transition-to-senior', this is the year picked in the
+   *  TY-or-5th sub-modal — passed in so the rest of onboarding renders
+   *  with the right curriculum already set without needing the year-picker
+   *  step. */
+  transitionTargetYear?: 'TY' | '5th';
 }
 
 type Step = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
@@ -219,8 +230,12 @@ const AnimatedNumber: React.FC<{ value: number; prefix?: string; className?: str
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
-const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip }) => {
-  const [step, setStep] = useState<Step>(1);
+const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, mode = 'fresh', transitionTargetYear }) => {
+  const isTransition = mode === 'transition-to-senior';
+  // In transition mode, we skip the welcome/year/mode steps and start
+  // at Step 5 (Subjects). The target year is pre-set from the modal
+  // pick, so the year picker never renders.
+  const [step, setStep] = useState<Step>(isTransition ? 5 : 1);
   const [direction, setDirection] = useState(1);
 
   // Subject selection
@@ -236,8 +251,12 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
 
   const [examDate, setExamDate] = useState(getDefaultExamDate());
 
-  // Year group
-  const [yearGroup, setYearGroup] = useState<YearGroup | null>(null);
+  // Year group. In transition mode we initialise from the prop (TY or
+  // 5th) — the user has already picked in the YearTransitionFlow modal,
+  // so the year picker step doesn't render and the value is fixed.
+  const [yearGroup, setYearGroup] = useState<YearGroup | null>(
+    isTransition ? (transitionTargetYear ?? '5th') : null
+  );
 
   // Module mode
   const [essentialsMode, setEssentialsMode] = useState<boolean>(false);
@@ -259,6 +278,13 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
     : null;
 
   const shouldSkipStep = (s: Step): boolean => {
+    // Phase 8: transition-to-senior mode only runs Subjects (5), Grades
+    // (6), and North Star (4). Skip every other step so the linear step
+    // walker advances cleanly even though we route 5 → 6 → 4 manually
+    // via the goNext override below.
+    if (isTransition) {
+      return s !== 4 && s !== 5 && s !== 6;
+    }
     if (curriculumLevel !== 'junior') return false;
     // Step 4: JC North Star lands in Phase 5 — no longer skipped.
     // Step 6: JC descriptor band picker lands in Phase 4 — no longer skipped.
@@ -268,7 +294,25 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
 
   // ─── Navigation ─────────────────────────────────────────────────────────
 
+  // Transition mode hops 5 → 6 → 4 → complete (NS is the emotional
+  // anchor for the new chapter and lands last). After step 4 the
+  // "Start Senior Cycle" button calls onComplete directly.
+  const transitionGoNext = () => {
+    setDirection(1);
+    setStep(s => {
+      if (s === 5) return 6;
+      if (s === 6) return 4;
+      // s === 4 (NS) handled by the dedicated Finish button — never
+      // reached via this function in practice.
+      return s;
+    });
+  };
+
   const goNext = () => {
+    if (isTransition) {
+      transitionGoNext();
+      return;
+    }
     setDirection(1);
     setStep(s => {
       let next = Math.min(TOTAL_STEPS, s + 1) as Step;
@@ -730,11 +774,27 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
               </MotionDiv>
             )}
 
-            {/* Step 4: North Star — JC sees the 4 JC themes, senior sees the 6 senior themes */}
+            {/* Step 4: North Star — JC sees the 4 JC themes, senior sees the 6 senior themes.
+                In transition mode (JC→senior re-onboarding) this is the LAST step:
+                picking the senior NS finalizes the whole flow via onComplete. */}
             {step === 4 && (
               <MotionDiv key="step4" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+                {isTransition && (
+                  <div className="mb-4 px-4 py-3 rounded-xl border-2 border-[#F26B1F] bg-[rgba(242,107,31,0.08)] text-center">
+                    <p className="text-xs font-bold uppercase tracking-widest text-[#F26B1F] mb-1">Stepping into senior cycle</p>
+                    <p className="text-sm text-[#1A1A1A] dark:text-zinc-200">Last step — your new North Star for this chapter.</p>
+                  </div>
+                )}
                 <NorthStarOnboarding
-                  onComplete={(ns) => { setNorthStarData(ns); goNext(); }}
+                  onComplete={(ns) => {
+                    setNorthStarData(ns);
+                    if (isTransition) {
+                      // Final step in transition mode — finalise immediately.
+                      onComplete(buildProfile(), ns, essentialsMode);
+                    } else {
+                      goNext();
+                    }
+                  }}
                   initialData={northStarData}
                   curriculumLevel={curriculumLevel ?? 'senior'}
                 />
@@ -744,7 +804,15 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
             {/* Step 5: Select Subjects */}
             {step === 5 && (
               <MotionDiv key="step5" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
-                <h2 className="font-serif text-2xl font-bold text-center mb-1 text-[#1A1A1A] dark:text-white">Select Your Subjects</h2>
+                {isTransition && (
+                  <div className="mb-4 px-4 py-3 rounded-xl border-2 border-[#F26B1F] bg-[rgba(242,107,31,0.08)] text-center">
+                    <p className="text-xs font-bold uppercase tracking-widest text-[#F26B1F] mb-1">Stepping into senior cycle</p>
+                    <p className="text-sm text-[#1A1A1A] dark:text-zinc-200">Let's set up your Leaving Cert profile.</p>
+                  </div>
+                )}
+                <h2 className="font-serif text-2xl font-bold text-center mb-1 text-[#1A1A1A] dark:text-white">
+                  {isTransition ? 'Pick your Leaving Cert subjects' : 'Select Your Subjects'}
+                </h2>
                 <p className="text-sm text-center mb-8 text-[#78716C] dark:text-zinc-400">
                   {curriculumLevel === 'junior'
                     ? 'Tap to select your subjects.'
@@ -895,6 +963,12 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
 
             {step === 6 && curriculumLevel !== 'junior' && (
               <MotionDiv key="step6" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+                {isTransition && (
+                  <div className="mb-4 px-4 py-3 rounded-xl border-2 border-[#F26B1F] bg-[rgba(242,107,31,0.08)] text-center">
+                    <p className="text-xs font-bold uppercase tracking-widest text-[#F26B1F] mb-1">Stepping into senior cycle</p>
+                    <p className="text-sm text-[#1A1A1A] dark:text-zinc-200">Pick where you are now and where you're aiming for your Leaving Cert.</p>
+                  </div>
+                )}
                 <h2 className="font-serif text-2xl font-bold text-center mb-1 text-[#1A1A1A] dark:text-white">Set Your Grades</h2>
                 <p className="text-sm text-center mb-6 text-[#78716C] dark:text-zinc-400">
                   For each subject, set where you are now and where you want to be.

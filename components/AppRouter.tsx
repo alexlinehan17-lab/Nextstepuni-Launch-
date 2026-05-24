@@ -156,6 +156,12 @@ export interface AppRouterProps {
   // Onboarding handlers
   handleOnboardingComplete: (profile: StudentSubjectProfile, northStarData?: NorthStar) => Promise<void>;
   handleOnboardingSkip: () => void;
+  /** Phase 8: when set, Onboarding renders in JC→senior re-onboarding mode
+   *  (Subjects → Grades → North Star, starting from step 5). */
+  transitionToSeniorMode?: boolean;
+  /** Year already chosen in the YearTransitionFlow modal — passed so the
+   *  year-picker step doesn't need to render in transition mode. */
+  transitionTargetYear?: 'TY' | '5th';
 
   // Progress handler
   handleProgressUpdate: (moduleId: string, newProgress: ModuleProgress) => Promise<void>;
@@ -189,6 +195,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     timetableBlockContext, setTimetableBlockContext, handleStudyFromTimetable,
     journeyResult, setJourneyResult,
     handleOnboardingComplete, handleOnboardingSkip,
+    transitionToSeniorMode, transitionTargetYear,
     handleProgressUpdate,
     setSettingsOpen, setPassportOpen, setChangeSubjectsOpen, setNorthStarEditOpen,
     setUnlockedAvatarSeeds,
@@ -278,7 +285,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   if (needsOnboarding) {
     return (
       <Suspense fallback={<LoadingSpinner />}>
-        <Onboarding userName={user.name} onComplete={handleOnboardingComplete} onSkip={handleOnboardingSkip} />
+        <Onboarding userName={user.name} onComplete={handleOnboardingComplete} onSkip={handleOnboardingSkip} mode={transitionToSeniorMode ? "transition-to-senior" : "fresh"} transitionTargetYear={transitionTargetYear} />
       </Suspense>
     );
   }
@@ -390,7 +397,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   if (viewState === 'onboarding') {
     return (
       <Suspense fallback={<LoadingSpinner />}>
-        <Onboarding userName={user.name} onComplete={handleOnboardingComplete} onSkip={handleOnboardingSkip} />
+        <Onboarding userName={user.name} onComplete={handleOnboardingComplete} onSkip={handleOnboardingSkip} mode={transitionToSeniorMode ? "transition-to-senior" : "fresh"} transitionTargetYear={transitionTargetYear} />
       </Suspense>
     );
   }
