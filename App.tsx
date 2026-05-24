@@ -134,6 +134,7 @@ const App: React.FC = () => {
     unlockedCardStyles, setUnlockedCardStyles,
     dismissedGuides, setDismissedGuides,
     progressLoaded,
+    reloadProgress,
   } = progress;
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [passportOpen, setPassportOpen] = useState(false);
@@ -409,6 +410,11 @@ const App: React.FC = () => {
       if (essentialsMode !== undefined) {
         updateSetting('essentialsMode', essentialsMode);
       }
+      // Trigger a Firestore re-fetch so local state matches the just-written
+      // doc. Defensive against any setter drift between handleOnboardingComplete
+      // and the next render — surfaced 2026-05-24 when JourneyView reported
+      // northStar=null right after a successful onboarding.
+      reloadProgress();
     } catch (err) {
       console.error('Failed to save subject profile:', err);
       // Surface the actual Firebase error in the toast itself so silent

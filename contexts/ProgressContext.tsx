@@ -181,7 +181,16 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     syncedRef.current = false;
   }, [user?.uid]);
 
-  // Reload: re-fetch progress doc from Firestore when reloadVersion bumps
+  // Reload: re-fetch progress doc from Firestore when reloadVersion bumps.
+  // Used after onboarding completion and any write that the GC/student app
+  // wants to surface immediately.
+  //
+  // BUGFIX 2026-05-24: previously this effect only refreshed
+  // rawProgressDoc + timetableCompletions, which meant a post-onboarding
+  // reload would silently leave northStar / studentProfile / unlocks /
+  // userProgress stuck at their pre-write values. The Journey view then
+  // saw northStar=null and asked the user to set one again. Now we
+  // refresh every cherry-picked field that came from loadedData.
   useEffect(() => {
     if (reloadVersion === 0 || !user?.uid) return;
     let cancelled = false;
@@ -190,8 +199,21 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       if (snap.exists()) {
         const pd = snap.data();
         setRawProgressDoc(pd);
-        // Also refresh the cherry-picked fields for backwards compat
+        // Cherry-picked field refresh (parity with initial sync above).
+        const progressMap: UserProgress = {};
+        for (const [key, val] of Object.entries(pd)) {
+          if (val && typeof val === 'object' && 'unlockedSection' in val) {
+            progressMap[key] = val as { unlockedSection: number };
+          }
+        }
+        setUserProgress(progressMap);
+        setStudentProfile((pd.subjectProfile as StudentSubjectProfile) ?? null);
+        setNorthStar((pd.northStar as NorthStar) ?? null);
         setTimetableCompletions(pd.timetableCompletions || {});
+        setUnlockedAvatarSeeds(pd.cosmeticUnlocks?.avatarSeeds || []);
+        setUnlockedThemes(pd.cosmeticUnlocks?.themeColors || []);
+        setUnlockedCardStyles(pd.cosmeticUnlocks?.cardStyles || []);
+        setDismissedGuides(pd.dismissedGuides || {});
       }
     }).catch(() => {});
     return () => { cancelled = true; };
