@@ -58,12 +58,17 @@ export const YearTransitionFlow: React.FC<YearTransitionFlowProps> = ({
   isOpen, onClose, currentYearGroup, onConfirmBump, onConfirmJCtoSenior, onConfirmGraduate,
 }) => {
   const action = currentYearGroup ? nextYearAction(currentYearGroup) : null;
-  const [phase, setPhase] = useState<Phase>(() => {
-    if (!action) return 'confirm-bump';
-    if (action.kind === 'pick-senior') return 'pick-senior';
-    if (action.kind === 'graduate') return 'confirm-graduate';
-    return 'confirm-bump';
-  });
+  // Derive phase from `action` every render. Previously this was a
+  // useState lazy initializer that locked phase at first mount — when
+  // action was still null (currentYearGroup populated late) — leaving
+  // the modal empty for 3rd-year users whose real phase was 'pick-senior'.
+  const phase: Phase = !action
+    ? 'confirm-bump'
+    : action.kind === 'pick-senior'
+      ? 'pick-senior'
+      : action.kind === 'graduate'
+        ? 'confirm-graduate'
+        : 'confirm-bump';
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const close = () => { if (!isSubmitting) onClose(); };

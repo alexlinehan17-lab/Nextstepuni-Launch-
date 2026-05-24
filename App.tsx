@@ -122,7 +122,7 @@ const App: React.FC = () => {
   const nav = useNavigation();
   const { viewState, currentCategory, currentModuleId: _currentModuleId, cameFromJourney: _cameFromJourney } = nav.state;
   const [journeyResult, setJourneyResult] = useState<{ endingId: string; finalStats?: any } | null>(null);
-  const { user, authResolved, needsOnboarding, handleLogout, markOnboardingComplete } = useAuth();
+  const { user, authResolved, needsOnboarding, handleLogout, markOnboardingComplete, patchUser } = useAuth();
 
   // Progress state from context
   const progress = useProgress();
@@ -415,6 +415,13 @@ const App: React.FC = () => {
         const userPatch: Record<string, any> = { yearGroup: profile.yearGroup };
         if (profile.curriculumLevel) userPatch.curriculumLevel = profile.curriculumLevel;
         await setDoc(userDocRef, userPatch, { merge: true });
+        // Mirror the write into the in-memory SessionUser so the rest of
+        // the app (Settings → School Year, GC dashboard filters, etc.)
+        // doesn't have to wait for the next sign-in to see the values.
+        patchUser({
+          yearGroup: profile.yearGroup,
+          curriculumLevel: profile.curriculumLevel,
+        });
       }
       // Save essentials mode preference to settings (use updateSetting to sync local state)
       if (essentialsMode !== undefined) {
@@ -487,6 +494,7 @@ const App: React.FC = () => {
     if (!user) return;
     try {
       await setDoc(doc(db, 'users', user.uid), { yearGroup: next }, { merge: true });
+      patchUser({ yearGroup: next });
       showToast(`Welcome to ${next === 'TY' ? 'TY' : next + ' Year'}!`, 'success');
     } catch (err) {
       console.error('Failed to bump year:', err);
@@ -514,6 +522,7 @@ const App: React.FC = () => {
         curriculumLevel: 'senior',
         pastJCData: archive,
       }, { merge: true });
+      patchUser({ yearGroup: target, curriculumLevel: 'senior' });
       // 3. Clear the active progress doc fields that need re-onboarding:
       //    subjectProfile (will be rebuilt with LC subjects) and northStar
       //    (will be rebuilt with senior NS).
@@ -547,6 +556,7 @@ const App: React.FC = () => {
     if (!user) return;
     try {
       await setDoc(doc(db, 'users', user.uid), { yearGroup: 'graduated' }, { merge: true });
+      patchUser({ yearGroup: 'graduated' });
       showToast('Best of luck with what\'s next.', 'success');
     } catch (err) {
       console.error('Failed to mark graduated:', err);

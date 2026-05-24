@@ -263,8 +263,12 @@ export function getGradesForLevel(level: Level): Grade[] {
 
 /**
  * Returns the grade index within its scale (0 = best, 7 = worst).
+ * JC subjects don't carry an LC grade — return a sentinel mid-band so
+ * downstream comparators don't crash. Same defensive pattern as
+ * getPointsForGrade.
  */
-export function getGradeIndex(grade: Grade): number {
+export function getGradeIndex(grade: Grade | undefined): number {
+  if (!grade) return ORDINARY_GRADES.length; // off-scale → lowest priority
   if (grade.startsWith('H')) {
     return HIGHER_GRADES.indexOf(grade);
   }

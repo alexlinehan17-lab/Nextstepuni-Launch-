@@ -416,7 +416,6 @@ export const ASSESSMENT_QUESTIONS: AssessmentQuestion[] = [
       { value: 'finance', label: 'Finance & Numbers' },
       { value: 'engineering', label: 'Engineering & Building' },
       { value: 'arts', label: 'Arts & Humanities' },
-      { value: 'media', label: 'Media & Communication' },
       { value: 'education', label: 'Teaching & Education' },
       { value: 'law', label: 'Law & Justice' },
       { value: 'environment', label: 'Environment & Sustainability' },
@@ -424,6 +423,14 @@ export const ASSESSMENT_QUESTIONS: AssessmentQuestion[] = [
       { value: 'psychology', label: 'Psychology & Mind' },
       { value: 'social-care', label: 'Social Care & Community' },
       { value: 'design', label: 'Design & Visual' },
+      // Phase 2 refinement (May 2026): subject-specific hooks so kids who
+      // *specifically* love these areas don't have to route through the
+      // generic 'arts' / 'law' / 'education' tags. 'media' was dropped to
+      // make room — it overlapped heavily with 'arts' + the new
+      // 'writing-and-literature' tag.
+      { value: 'history-and-politics', label: 'History & Politics' },
+      { value: 'writing-and-literature', label: 'Writing & Literature' },
+      { value: 'languages-i-love', label: 'Languages' },
     ],
   },
 

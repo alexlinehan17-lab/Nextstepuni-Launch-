@@ -311,13 +311,14 @@ interface CardWrapperProps {
 const CardWrapper: React.FC<CardWrapperProps> = ({ config, isHero, children, onClick, ariaLabel }) => {
   const { blob, tintFocal, worldKey } = config;
 
-  // White tile + soft world-colour tint at one corner (radial fade, no hard edge).
-  // The tint is alpha-mixed (~22% blob colour) onto the white baseline so the
-  // tile reads as a clean white surface against the cream page.
+  // Card surface + soft world-colour tint at one corner (radial fade, no hard
+  // edge). The base layer uses var(--bg-card) so dark mode swaps in zinc-900
+  // automatically; the world-colour tint stays the same (~22% alpha) and
+  // reads fine on either surface.
   const background =
     worldKey === 'mind'
-      ? '#FFFFFF'
-      : `radial-gradient(ellipse 60% 55% ${tintFocal}, ${blob}38 0%, transparent 70%), #FFFFFF`;
+      ? 'var(--bg-card)'
+      : `radial-gradient(ellipse 60% 55% ${tintFocal}, ${blob}38 0%, transparent 70%), var(--bg-card)`;
   const border = `1px solid ${blob}66`; // ~40% — visible but soft.
   const boxShadow = isHero
     ? '0 4px 18px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.04)'

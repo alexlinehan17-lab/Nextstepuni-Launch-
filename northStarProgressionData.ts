@@ -295,15 +295,17 @@ export const NORTH_STAR_TRACKS: Record<NorthStarCategory, NorthStarTrack> = {
     ],
   },
 
-  // ─── Junior Cycle tracks (4) — Phase 5 ─────────────────────────────────────
-  // Minimum-viable: 3 milestones per track, mirroring the senior structure.
+  // ─── Junior Cycle tracks (4) — Phase 5 (extended to 5 milestones) ──────────
+  // Mirrors the senior structure 1:1 — 5 milestone names + 5 milestone
+  // achievements per track, unlocking at the same metric thresholds the
+  // senior tracks use (1, 5/10, 15, 30, 50 depending on metric).
   // Copy tuned to JC tone (peer-from-6th-year voice, no LC framing).
 
   'family-people': {
     category: 'family-people',
     trackTitle: 'For My People',
     trackDescription: 'Show the people who believe in you that they were right to.',
-    milestoneNames: ['First Step', 'Building Up', 'Making Them Proud'],
+    milestoneNames: ['First Step', 'Building Up', 'Making Them Proud', 'Role Model', 'Family Legacy'],
     progressMetric: 'reflections',
     weeklyChallengeFlavors: [
       'They see your effort, even when you don\'t feel it.',
@@ -321,7 +323,7 @@ export const NORTH_STAR_TRACKS: Record<NorthStarCategory, NorthStarTrack> = {
         condition: (s: GamificationState) => s.northStarCategory === 'family-people' && s.totalReflections >= 1,
         bonusPoints: 15,
         isHidden: false,
-      curriculum: 'junior' as const,
+        curriculum: 'junior' as const,
       },
       {
         id: 'ns-family-people-10',
@@ -332,7 +334,7 @@ export const NORTH_STAR_TRACKS: Record<NorthStarCategory, NorthStarTrack> = {
         condition: (s: GamificationState) => s.northStarCategory === 'family-people' && s.totalReflections >= 10,
         bonusPoints: 30,
         isHidden: false,
-      curriculum: 'junior' as const,
+        curriculum: 'junior' as const,
       },
       {
         id: 'ns-family-people-25',
@@ -343,7 +345,29 @@ export const NORTH_STAR_TRACKS: Record<NorthStarCategory, NorthStarTrack> = {
         condition: (s: GamificationState) => s.northStarCategory === 'family-people' && s.totalReflections >= 25,
         bonusPoints: 50,
         isHidden: false,
-      curriculum: 'junior' as const,
+        curriculum: 'junior' as const,
+      },
+      {
+        id: 'ns-family-people-40',
+        title: 'Role Model',
+        description: 'Write 40 reflections on the For My People track',
+        category: 'north-star',
+        icon: 'Award',
+        condition: (s: GamificationState) => s.northStarCategory === 'family-people' && s.totalReflections >= 40,
+        bonusPoints: 75,
+        isHidden: false,
+        curriculum: 'junior' as const,
+      },
+      {
+        id: 'ns-family-people-60',
+        title: 'Family Legacy',
+        description: 'Write 60 reflections on the For My People track',
+        category: 'north-star',
+        icon: 'Crown',
+        condition: (s: GamificationState) => s.northStarCategory === 'family-people' && s.totalReflections >= 60,
+        bonusPoints: 125,
+        isHidden: false,
+        curriculum: 'junior' as const,
       },
     ],
   },
@@ -352,7 +376,7 @@ export const NORTH_STAR_TRACKS: Record<NorthStarCategory, NorthStarTrack> = {
     category: 'prove-myself-jc',
     trackTitle: 'Show What I Can Do',
     trackDescription: 'Prove what you\'re actually capable of — to yourself first.',
-    milestoneNames: ['First Spark', 'Stacking Wins', 'Beyond Doubt'],
+    milestoneNames: ['First Spark', 'Stacking Wins', 'Beyond Doubt', 'Quietly Lethal', 'Undeniable'],
     progressMetric: 'sessions',
     weeklyChallengeFlavors: [
       'Quiet wins build loud results.',
@@ -394,6 +418,28 @@ export const NORTH_STAR_TRACKS: Record<NorthStarCategory, NorthStarTrack> = {
         isHidden: false,
       curriculum: 'junior' as const,
       },
+      {
+        id: 'ns-prove-jc-40',
+        title: 'Quietly Lethal',
+        description: 'Log 40 sessions on the Show What I Can Do track',
+        category: 'north-star',
+        icon: 'Target',
+        condition: (s: GamificationState) => s.northStarCategory === 'prove-myself-jc' && s.totalTimetableSessions >= 40,
+        bonusPoints: 75,
+        isHidden: false,
+      curriculum: 'junior' as const,
+      },
+      {
+        id: 'ns-prove-jc-60',
+        title: 'Undeniable',
+        description: 'Log 60 sessions on the Show What I Can Do track',
+        category: 'north-star',
+        icon: 'Trophy',
+        condition: (s: GamificationState) => s.northStarCategory === 'prove-myself-jc' && s.totalTimetableSessions >= 60,
+        bonusPoints: 125,
+        isHidden: false,
+      curriculum: 'junior' as const,
+      },
     ],
   },
 
@@ -401,7 +447,7 @@ export const NORTH_STAR_TRACKS: Record<NorthStarCategory, NorthStarTrack> = {
     category: 'curiosity-craft',
     trackTitle: 'Get Good at Something',
     trackDescription: 'Find the thing you love and go deep on it.',
-    milestoneNames: ['Hooked', 'Sharper', 'Mastering It'],
+    milestoneNames: ['Hooked', 'Sharper', 'Mastering It', 'In the Zone', 'Craft Locked In'],
     progressMetric: 'sessions',
     weeklyChallengeFlavors: [
       'Pick the thing you can\'t stop thinking about — go deeper.',
@@ -443,6 +489,28 @@ export const NORTH_STAR_TRACKS: Record<NorthStarCategory, NorthStarTrack> = {
         isHidden: false,
       curriculum: 'junior' as const,
       },
+      {
+        id: 'ns-curiosity-40',
+        title: 'In the Zone',
+        description: 'Log 40 sessions on the Get Good at Something track',
+        category: 'north-star',
+        icon: 'Zap',
+        condition: (s: GamificationState) => s.northStarCategory === 'curiosity-craft' && s.totalTimetableSessions >= 40,
+        bonusPoints: 75,
+        isHidden: false,
+      curriculum: 'junior' as const,
+      },
+      {
+        id: 'ns-curiosity-60',
+        title: 'Craft Locked In',
+        description: 'Log 60 sessions on the Get Good at Something track',
+        category: 'north-star',
+        icon: 'Crown',
+        condition: (s: GamificationState) => s.northStarCategory === 'curiosity-craft' && s.totalTimetableSessions >= 60,
+        bonusPoints: 125,
+        isHidden: false,
+      curriculum: 'junior' as const,
+      },
     ],
   },
 
@@ -450,7 +518,7 @@ export const NORTH_STAR_TRACKS: Record<NorthStarCategory, NorthStarTrack> = {
     category: 'future-doors',
     trackTitle: 'Keep My Future Open',
     trackDescription: 'Do well now so you have real choices later.',
-    milestoneNames: ['First Door', 'More Options', 'Open Future'],
+    milestoneNames: ['First Door', 'More Options', 'Open Future', 'Wide Horizon', 'Wherever You Want'],
     progressMetric: 'modules',
     weeklyChallengeFlavors: [
       'Every module you finish opens another door.',
@@ -489,6 +557,28 @@ export const NORTH_STAR_TRACKS: Record<NorthStarCategory, NorthStarTrack> = {
         icon: 'DoorOpen',
         condition: (s: GamificationState) => s.northStarCategory === 'future-doors' && s.modulesCompleted >= 15,
         bonusPoints: 50,
+        isHidden: false,
+      curriculum: 'junior' as const,
+      },
+      {
+        id: 'ns-future-30',
+        title: 'Wide Horizon',
+        description: 'Complete 30 modules on the Keep My Future Open track',
+        category: 'north-star',
+        icon: 'Mountain',
+        condition: (s: GamificationState) => s.northStarCategory === 'future-doors' && s.modulesCompleted >= 30,
+        bonusPoints: 75,
+        isHidden: false,
+      curriculum: 'junior' as const,
+      },
+      {
+        id: 'ns-future-50',
+        title: 'Wherever You Want',
+        description: 'Complete 50 modules on the Keep My Future Open track',
+        category: 'north-star',
+        icon: 'Sparkles',
+        condition: (s: GamificationState) => s.northStarCategory === 'future-doors' && s.modulesCompleted >= 50,
+        bonusPoints: 125,
         isHidden: false,
       curriculum: 'junior' as const,
       },

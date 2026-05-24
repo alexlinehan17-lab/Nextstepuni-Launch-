@@ -269,11 +269,12 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
               </section>
 
               {/* School Year (Phase 8) — forward-progression action.
-                  Button label and behaviour depend on current year. Hidden
-                  if userYearGroup is undefined (legacy account) or if the
-                  parent didn't wire an onAdvanceYear handler. */}
-              {userYearGroup && onAdvanceYear && (() => {
-                const action = nextYearAction(userYearGroup);
+                  Renders for any logged-in student. If userYearGroup is
+                  unknown (legacy account, pre-Phase-8), we still surface
+                  the section with an empty-state CTA so the flow is
+                  discoverable instead of silently hidden. */}
+              {onAdvanceYear && (() => {
+                const action = userYearGroup ? nextYearAction(userYearGroup) : null;
                 const isGraduated = userYearGroup === 'graduated';
                 return (
                   <section>
@@ -284,14 +285,16 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                       <div className="flex items-center gap-3 mb-3">
                         <GraduationCap size={18} className="text-zinc-400" />
                         <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">
-                          {isGraduated
-                            ? "You've completed your Leaving Cert."
-                            : `You're in ${yearGroupLabel(userYearGroup)}.`}
+                          {!userYearGroup
+                            ? "We don't have your school year on file."
+                            : isGraduated
+                              ? "You've completed your Leaving Cert."
+                              : `You're in ${yearGroupLabel(userYearGroup)}.`}
                         </p>
                       </div>
-                      {action.kind === 'terminal' ? (
+                      {!action || action.kind === 'terminal' ? (
                         <p className="text-xs text-zinc-500 dark:text-zinc-400 italic">
-                          {action.label}.
+                          {action?.label ?? 'Set your school year so we can tune content to where you are.'}
                         </p>
                       ) : (
                         <button

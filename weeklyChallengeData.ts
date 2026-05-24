@@ -229,6 +229,37 @@ export const WEEKLY_CHALLENGES: WeeklyChallengeDefinition[] = [
     icon: 'Shield',
     strategyModuleId: 'digital-distraction-protocol',
   },
+
+  // ─── Junior Cycle challenges (mirrors senior 1:1 — JC voice) ──────────────
+  // 9 × strategy-sessions
+  { id: 'wc-jc-active-recall-sessions', title: 'Active Recall Week', description: 'Use Active Recall in 3 study sessions this week', metric: 'strategy-sessions', target: 3, rewardPoints: 100, icon: 'Brain', strategyModuleId: 'mastering-active-recall-protocol', curriculum: 'junior' },
+  { id: 'wc-jc-spaced-rep-sessions', title: 'Spaced Repetition Week', description: 'Use Spaced Repetition in 3 study sessions this week', metric: 'strategy-sessions', target: 3, rewardPoints: 100, icon: 'Repeat', strategyModuleId: 'mastering-spaced-repetition-protocol', curriculum: 'junior' },
+  { id: 'wc-jc-interleaving-sessions', title: 'Mix-It-Up Week', description: 'Use Interleaving in 3 study sessions this week', metric: 'strategy-sessions', target: 3, rewardPoints: 100, icon: 'Shuffle', strategyModuleId: 'mastering-interleaving-protocol', curriculum: 'junior' },
+  { id: 'wc-jc-elaboration-sessions', title: 'Ask-Why Week', description: 'Use Elaboration in 3 study sessions this week', metric: 'strategy-sessions', target: 3, rewardPoints: 100, icon: 'HelpCircle', strategyModuleId: 'elaborative-interrogation-protocol', curriculum: 'junior' },
+  { id: 'wc-jc-agency-sessions', title: 'Own It Week', description: 'Use Agency Mindset in 3 study sessions this week', metric: 'strategy-sessions', target: 3, rewardPoints: 100, icon: 'Compass', strategyModuleId: 'agency-protocol', curriculum: 'junior' },
+  { id: 'wc-jc-growth-mindset-sessions', title: 'Get-Better Week', description: 'Use Growth Mindset in 3 study sessions this week', metric: 'strategy-sessions', target: 3, rewardPoints: 100, icon: 'Sprout', strategyModuleId: 'growth-mindset-protocol', curriculum: 'junior' },
+  { id: 'wc-jc-deep-focus-sessions', title: 'Phone-Down Week', description: 'Use Deep Focus in 3 study sessions this week', metric: 'strategy-sessions', target: 3, rewardPoints: 100, icon: 'Shield', strategyModuleId: 'digital-distraction-protocol', curriculum: 'junior' },
+  { id: 'wc-jc-metacognition-sessions', title: 'Notice-Yourself Week', description: 'Use Metacognition in 3 study sessions this week', metric: 'strategy-sessions', target: 3, rewardPoints: 100, icon: 'Radar', strategyModuleId: 'learning-radar-protocol', curriculum: 'junior' },
+  { id: 'wc-jc-exam-strategy-sessions', title: 'Test Day Week', description: 'Use Exam Strategy in 3 study sessions this week', metric: 'strategy-sessions', target: 3, rewardPoints: 100, icon: 'ClipboardCheck', strategyModuleId: 'exam-hall-strategies-protocol', curriculum: 'junior' },
+
+  // 5 × strategy-subjects
+  { id: 'wc-jc-active-recall-subjects', title: 'Recall Across Subjects', description: 'Use Active Recall in 2 different subjects', metric: 'strategy-subjects', target: 2, rewardPoints: 150, icon: 'Brain', strategyModuleId: 'mastering-active-recall-protocol', curriculum: 'junior' },
+  { id: 'wc-jc-spaced-rep-subjects', title: 'Spaced Rep Across Subjects', description: 'Use Spaced Repetition in 2 different subjects', metric: 'strategy-subjects', target: 2, rewardPoints: 150, icon: 'Repeat', strategyModuleId: 'mastering-spaced-repetition-protocol', curriculum: 'junior' },
+  { id: 'wc-jc-interleaving-subjects', title: 'Mix It Across Subjects', description: 'Use Interleaving in 2 different subjects', metric: 'strategy-subjects', target: 2, rewardPoints: 150, icon: 'Shuffle', strategyModuleId: 'mastering-interleaving-protocol', curriculum: 'junior' },
+  { id: 'wc-jc-deep-focus-subjects', title: 'Focus Across Subjects', description: 'Use Deep Focus in 2 different subjects', metric: 'strategy-subjects', target: 2, rewardPoints: 150, icon: 'Shield', strategyModuleId: 'digital-distraction-protocol', curriculum: 'junior' },
+  { id: 'wc-jc-exam-strategy-subjects', title: 'Test Strategy Across Subjects', description: 'Use Exam Strategy in 2 different subjects', metric: 'strategy-subjects', target: 2, rewardPoints: 150, icon: 'ClipboardCheck', strategyModuleId: 'exam-hall-strategies-protocol', curriculum: 'junior' },
+
+  // 2 × total-sessions
+  { id: 'wc-jc-total-sessions-5', title: 'Steady Week', description: 'Get 5 study sessions in this week', metric: 'total-sessions', target: 5, rewardPoints: 150, icon: 'Clock', curriculum: 'junior' },
+  { id: 'wc-jc-total-sessions-8', title: 'Big Week', description: 'Get 8 study sessions in this week', metric: 'total-sessions', target: 8, rewardPoints: 200, icon: 'Zap', curriculum: 'junior' },
+
+  // 2 × reflection-sessions
+  { id: 'wc-jc-reflections-3', title: 'Quick Thinker', description: 'Debrief 3 of your sessions this week', metric: 'reflection-sessions', target: 3, rewardPoints: 150, icon: 'PenLine', curriculum: 'junior' },
+  { id: 'wc-jc-reflections-5', title: 'Real Reflector', description: 'Debrief 5 of your sessions this week', metric: 'reflection-sessions', target: 5, rewardPoints: 200, icon: 'PenLine', curriculum: 'junior' },
+
+  // 2 × stretch
+  { id: 'wc-jc-deep-focus-stretch', title: 'Focus Beast', description: 'Use Deep Focus in 4 study sessions this week', metric: 'strategy-sessions', target: 4, rewardPoints: 150, icon: 'Shield', strategyModuleId: 'digital-distraction-protocol', curriculum: 'junior' },
+  { id: 'wc-jc-deep-focus-subjects-stretch', title: 'Focus, Three Subjects', description: 'Use Deep Focus in 3 different subjects', metric: 'strategy-subjects', target: 3, rewardPoints: 175, icon: 'Shield', strategyModuleId: 'digital-distraction-protocol', curriculum: 'junior' },
 ];
 
 // ── Selector ──────────────────────────────────────────────

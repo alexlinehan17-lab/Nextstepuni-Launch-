@@ -72,7 +72,8 @@ export const SectionCard: React.FC<SectionCardProps> = ({
         {icon}
       </div>
 
-      {/* Text */}
+      {/* Text — colours reference --text-* vars so the dark-mode swap in
+          index.html takes effect on `html.dark`. */}
       <div className="flex-1 min-w-0">
         <p
           style={{
@@ -81,7 +82,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
             fontWeight: 500,
             letterSpacing: '1.5px',
             textTransform: 'uppercase',
-            color: 'rgba(0,0,0,0.5)',
+            color: 'var(--text-muted)',
             margin: 0,
           }}
         >
@@ -94,7 +95,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
             fontWeight: 500,
             letterSpacing: '-0.4px',
             lineHeight: 1.1,
-            color: '#1a1a1a',
+            color: 'var(--text-primary)',
             margin: 0,
             marginTop: 6,
           }}
@@ -106,7 +107,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
             fontFamily: "'DM Sans', system-ui, sans-serif",
             fontSize: 13,
             fontWeight: 400,
-            color: 'rgba(0,0,0,0.6)',
+            color: 'var(--text-muted)',
             lineHeight: 1.5,
             margin: 0,
             marginTop: 6,

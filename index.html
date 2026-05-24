@@ -61,6 +61,135 @@
         --sar: env(safe-area-inset-right);
         --sab: env(safe-area-inset-bottom);
         --sal: env(safe-area-inset-left);
+
+        /* ─── Surface + text tokens (May 2026 dark-mode foundation) ─────
+           These swap on `html.dark` (see block below) so any consumer
+           that references the var() name automatically adapts. New code
+           should reference these instead of hardcoding hex literals like
+           '#1a1a1a' inside inline style props. */
+        --bg-page: #f0f0f0;
+        --bg-card: #ffffff;
+        --bg-card-soft: #FAF7F4;
+        --bg-card-cream: #FDF8F0;
+        --text-primary: #1a1a1a;
+        --text-body: #3a3530;
+        --text-muted: #7a7068;
+        --text-label: #9e9186;
+        --border-strong: #1a1a1a;
+        --border-soft: #d0cdc8;
+        --border-faint: rgba(0, 0, 0, 0.07);
+      }
+      /* Dark-mode swap. Activated when the AuthContext / settings flip
+         html's class to `dark` (see Settings → Dark Mode). All surface
+         + text variables flip together; brand accent stays the same so
+         CTAs read identically. */
+      html.dark {
+        --bg-page: #09090b;
+        --bg-card: #18181b;          /* zinc-900 */
+        --bg-card-soft: #1f1f23;
+        --bg-card-cream: #1f1f23;
+        --text-primary: #f4f4f5;     /* zinc-100 */
+        --text-body: #d4d4d8;        /* zinc-300 */
+        --text-muted: #a1a1aa;       /* zinc-400 */
+        --text-label: #71717a;       /* zinc-500 */
+        --border-strong: #3f3f46;    /* zinc-700 */
+        --border-soft: #27272a;      /* zinc-800 */
+        --border-faint: rgba(255, 255, 255, 0.06);
+        /* The accent-tint also needs a darker companion or callouts
+           with bg #FDEEDF look like pink confetti on a black canvas. */
+        --accent-tint-hex: rgba(242, 107, 31, 0.14);
+      }
+
+      /* ─── Mass-coverage dark overrides ──────────────────────────────
+         Forty-plus educational modules hardcode hex colours via inline
+         style props (e.g. style={{ color: '#1a1a1a' }}) — React renders
+         these as `style="color: rgb(26, 26, 26)"` in the DOM. Attribute
+         selectors below catch the dominant patterns so the modules
+         become legible in dark mode without touching every file. New
+         code should use the var() tokens above; these rules are the
+         safety net for the existing pile. !important is necessary to
+         beat inline style specificity.
+
+         Patterns covered (hex → rgb normalisation by the browser):
+           #1a1a1a / #1A1A1A → rgb(26, 26, 26)       primary text
+           #3a3530          → rgb(58, 53, 48)        body text
+           #7a7068          → rgb(122, 112, 104)     muted
+           #9e9186          → rgb(158, 145, 134)     label
+           #ffffff / white  → rgb(255, 255, 255)     card bg
+           #FAF7F4          → rgb(250, 247, 244)     cream soft
+           #FDF8F0          → rgb(253, 248, 240)     cream
+           #f0f0f0          → rgb(240, 240, 240)     page bg
+           rgba(0,0,0,…)    → muted text variants    */
+
+      html.dark [style*="color: rgb(26, 26, 26)"],
+      html.dark [style*="color:#1a1a1a"],
+      html.dark [style*="color:#1A1A1A"] {
+        color: var(--text-primary) !important;
+      }
+      html.dark [style*="color: rgb(58, 53, 48)"],
+      html.dark [style*="color:#3a3530"] {
+        color: var(--text-body) !important;
+      }
+      html.dark [style*="color: rgb(122, 112, 104)"],
+      html.dark [style*="color:#7a7068"] {
+        color: var(--text-muted) !important;
+      }
+      html.dark [style*="color: rgb(158, 145, 134)"],
+      html.dark [style*="color:#9e9186"] {
+        color: var(--text-label) !important;
+      }
+      html.dark [style*="color: rgba(0, 0, 0, 0.5)"],
+      html.dark [style*="color: rgba(0, 0, 0, 0.55)"],
+      html.dark [style*="color: rgba(0, 0, 0, 0.6)"],
+      html.dark [style*="color: rgba(0, 0, 0, 0.62)"],
+      html.dark [style*="color: rgba(0, 0, 0, 0.65)"] {
+        color: var(--text-muted) !important;
+      }
+      html.dark [style*="color: rgba(0, 0, 0, 0.7)"],
+      html.dark [style*="color: rgba(0, 0, 0, 0.75)"],
+      html.dark [style*="color: rgba(0, 0, 0, 0.8)"],
+      html.dark [style*="color: rgba(0, 0, 0, 0.85)"],
+      html.dark [style*="color: rgba(0, 0, 0, 0.9)"] {
+        color: var(--text-body) !important;
+      }
+
+      /* Backgrounds — both `background:` and `background-color:` shorthands. */
+      html.dark [style*="background: rgb(255, 255, 255)"],
+      html.dark [style*="background-color: rgb(255, 255, 255)"],
+      html.dark [style*="background:#fff"],
+      html.dark [style*="background-color:#fff"],
+      html.dark [style*="background:#FFFFFF"],
+      html.dark [style*="background-color:#FFFFFF"],
+      html.dark [style*="background: white"],
+      html.dark [style*="background-color: white"] {
+        background-color: var(--bg-card) !important;
+      }
+      html.dark [style*="background: rgb(250, 247, 244)"],
+      html.dark [style*="background-color: rgb(250, 247, 244)"],
+      html.dark [style*="background:#FAF7F4"],
+      html.dark [style*="background-color:#FAF7F4"] {
+        background-color: var(--bg-card-soft) !important;
+      }
+      html.dark [style*="background: rgb(253, 248, 240)"],
+      html.dark [style*="background-color: rgb(253, 248, 240)"],
+      html.dark [style*="background:#FDF8F0"],
+      html.dark [style*="background-color:#FDF8F0"] {
+        background-color: var(--bg-card-cream) !important;
+      }
+      html.dark [style*="background: rgb(240, 240, 240)"],
+      html.dark [style*="background-color: rgb(240, 240, 240)"] {
+        background-color: var(--bg-page) !important;
+      }
+
+      /* Borders — only the strong-black `#1a1a1a` border tokens that the
+         module visual system uses as the canonical card border. The
+         softer #d0cdc8 borders read OK against dark surfaces already. */
+      html.dark [style*="border-color: rgb(26, 26, 26)"],
+      html.dark [style*="border:2px solid #1a1a1a"],
+      html.dark [style*="border: 2px solid #1a1a1a"],
+      html.dark [style*="border:2px solid #1A1A1A"],
+      html.dark [style*="border: 2px solid #1A1A1A"] {
+        border-color: var(--border-strong) !important;
       }
       @keyframes sectionFadeIn {
         from { opacity: 0; transform: translateY(12px); }

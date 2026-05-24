@@ -43,6 +43,11 @@ interface AuthContextValue {
   /** Called by App.tsx after the onboarding flow saves a subject profile, so
    *  the redirect at App.tsx:252 doesn't fire again on the next render. */
   markOnboardingComplete: () => void;
+  /** Patch in-memory user fields after a Firestore write to users/{uid} so
+   *  callers don't have to wait for the next sign-in to see the change.
+   *  Used after onboarding writes yearGroup, and after year-progression
+   *  writes update yearGroup/curriculumLevel. */
+  patchUser: (patch: Partial<SessionUser>) => void;
 }
 
 const defaultLoadedData: AuthLoadedData = {
@@ -70,6 +75,7 @@ const AuthContext = createContext<AuthContextValue>({
   handleLoginSuccess: () => {},
   handleLogout: async () => {},
   markOnboardingComplete: () => {},
+  patchUser: () => {},
 });
 
 export const useAuth = () => useContext(AuthContext);
@@ -264,6 +270,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setLoadedData(prev => ({ ...prev, needsOnboarding: false }));
   }, []);
 
+  const patchUser = useCallback((patch: Partial<SessionUser>) => {
+    setUser(prev => (prev ? { ...prev, ...patch } : prev));
+  }, []);
+
   const value: AuthContextValue = {
     user,
     isLoadingAuth,
@@ -274,6 +284,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     handleLoginSuccess,
     handleLogout,
     markOnboardingComplete,
+    patchUser,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

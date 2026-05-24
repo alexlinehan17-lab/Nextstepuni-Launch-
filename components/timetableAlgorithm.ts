@@ -244,9 +244,11 @@ export function computeSubjectPriorities(
     const targetPoints = getPointsForGrade(s.targetGrade, isMaths);
     const pointsGain = Math.max(0, targetPoints - currentPoints);
 
-    // Diminishing returns: weaker students (higher grade index) get higher multiplier
+    // Diminishing returns: weaker students (higher grade index) get higher multiplier.
+    // JC subjects don't carry an LC grade; guard so the algorithm still produces a
+    // sensible priority instead of crashing on undefined.startsWith().
     const gradeIdx = getGradeIndex(s.currentGrade);
-    const scale = s.currentGrade.startsWith('H') ? HIGHER_GRADES.length : ORDINARY_GRADES.length;
+    const scale = s.currentGrade?.startsWith('H') ? HIGHER_GRADES.length : ORDINARY_GRADES.length;
     const difficultyMultiplier = Math.max(0.3, gradeIdx / (scale - 1));
 
     // Syllabus efficiency: subjects with higher-efficiency topics get a small boost
