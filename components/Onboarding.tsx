@@ -69,17 +69,25 @@ const GROUP_DOT_HEX: Record<LCSubject['group'], string> = {
 };
 
 // ─── Grade pill color helpers (literal Tailwind for CDN) ────────────────────
+//
+// Chunky-shadow language matching the rest of onboarding (year + subject
+// pickers). Selected current grade fills black; selected target grade fills
+// orange. Unselected pills stay cream with the same black border + smaller
+// drop shadow so the row still has weight. Press animation translates +
+// drops the shadow on active, identical to the year picker.
+
+const PILL_BASE = 'border-2 border-[#1A1A1A] font-bold font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 shadow-[2px_2px_0_0_#1A1A1A] hover:shadow-[3px_3px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A]';
 
 function getCurrentGradePillClass(isSelected: boolean): string {
   return isSelected
-    ? 'bg-zinc-800 dark:bg-white text-white dark:text-zinc-900 border-zinc-800 dark:border-white shadow-sm'
-    : 'bg-white dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500';
+    ? `${PILL_BASE} bg-[#1A1A1A] text-[#FDF8F0]`
+    : `${PILL_BASE} bg-[#FDF8F0] text-[#1A1A1A]`;
 }
 
 function getTargetGradePillClass(isSelected: boolean): string {
   return isSelected
-    ? 'bg-[#F26B1F] dark:bg-[#F26B1F] text-white border-[#F26B1F] dark:border-[#F26B1F] shadow-sm'
-    : 'bg-white dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-[#F26B1F]/60 dark:hover:border-[#F26B1F]/80';
+    ? `${PILL_BASE} bg-[#F26B1F] text-[#FDF8F0]`
+    : `${PILL_BASE} bg-[#FDF8F0] text-[#1A1A1A]`;
 }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -698,21 +706,24 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                       {([
                         { id: false, title: 'Full Modules', desc: 'The deep dive \u2014 all the science and strategy behind each idea.' },
                         { id: true, title: 'Essentials', desc: 'Key ideas fast \u2014 less reading, same activities and practice.' },
-                      ] as const).map(opt => (
-                        <button
-                          key={String(opt.id)}
-                          onClick={() => setEssentialsMode(opt.id)}
-                          className="flex-1 py-6 px-5 rounded-2xl transition-all text-left"
-                          style={{
-                            backgroundColor: essentialsMode === opt.id ? 'rgba(242,107,31,0.08)' : 'rgba(255,255,255,0.85)',
-                            border: essentialsMode === opt.id ? `2px solid ${COLORS.accent}` : '1px solid rgba(0,0,0,0.08)',
-                            boxShadow: essentialsMode === opt.id ? '0 0 0 3px rgba(242,107,31,0.1)' : 'none',
-                          }}
-                        >
-                          <p className={`text-base font-bold mb-1 ${essentialsMode === opt.id ? 'text-[#F26B1F]' : 'text-[#1A1A1A] dark:text-white'}`}>{opt.title}</p>
-                          <p className={`text-xs ${essentialsMode === opt.id ? 'text-[#F26B1F]' : 'text-[#A8A29E] dark:text-zinc-500'}`}>{opt.desc}</p>
-                        </button>
-                      ))}
+                      ] as const).map(opt => {
+                        const selected = essentialsMode === opt.id;
+                        return (
+                          <button
+                            key={String(opt.id)}
+                            onClick={() => setEssentialsMode(opt.id)}
+                            // Chunky-shadow card to match the year/subject pickers.
+                            // Same border-2 / 4-6px black drop-shadow / press
+                            // translate as the rest of onboarding.
+                            className={`flex-1 py-6 px-5 rounded-2xl border-2 border-[#1A1A1A] text-left font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
+                              selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                            }`}
+                          >
+                            <p className="text-base font-bold mb-1">{opt.title}</p>
+                            <p className={`text-xs ${selected ? 'text-[#FDF8F0]/85' : 'text-[#78716C]'}`}>{opt.desc}</p>
+                          </button>
+                        );
+                      })}
                     </motion.div>
                   </div>
                 </div>
@@ -798,49 +809,46 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                     const currentIdx = JC_BANDS.indexOf(band.currentBand);
 
                     return (
-                      <div key={name} className="rounded-xl overflow-hidden" style={{ backgroundColor: 'rgba(255,255,255,0.9)', border: '1px solid rgba(0,0,0,0.06)' }}>
+                      <div
+                        key={name}
+                        className="rounded-2xl overflow-hidden border-2 border-[#1A1A1A] shadow-[4px_4px_0_0_#1A1A1A]"
+                        style={{ backgroundColor: '#FDF8F0' }}
+                      >
                         {/* Subject header row */}
-                        <div className="flex items-center justify-between px-4 pt-3 pb-2">
+                        <div className="flex items-center justify-between px-4 pt-3 pb-2 border-b-2 border-[#1A1A1A]/10">
                           <span className={`text-sm font-bold ${groupColor.text}`}>{name}</span>
                           {hasLevelChoice ? (
-                            <div className="flex items-center gap-1 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-0.5">
-                              <button
-                                onClick={() => updateBand(name, 'level', 'higher')}
-                                className={`px-2.5 py-1 rounded-md text-[10px] font-bold transition-all ${
-                                  band.level === 'higher'
-                                    ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
-                                    : 'text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300'
-                                }`}
-                              >
-                                Higher
-                              </button>
-                              <button
-                                onClick={() => updateBand(name, 'level', 'ordinary')}
-                                className={`px-2.5 py-1 rounded-md text-[10px] font-bold transition-all ${
-                                  band.level === 'ordinary'
-                                    ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
-                                    : 'text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300'
-                                }`}
-                              >
-                                Ordinary
-                              </button>
+                            <div className="flex items-center gap-1">
+                              {(['higher', 'ordinary'] as const).map(lvl => (
+                                <button
+                                  key={lvl}
+                                  onClick={() => updateBand(name, 'level', lvl)}
+                                  className={`px-2.5 py-1 rounded-md text-[10px] font-bold border-2 border-[#1A1A1A] transition-all duration-150 shadow-[2px_2px_0_0_#1A1A1A] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[0px_0px_0_0_#1A1A1A] ${
+                                    band.level === lvl
+                                      ? 'bg-[#1A1A1A] text-[#FDF8F0]'
+                                      : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                  }`}
+                                >
+                                  {lvl === 'higher' ? 'Higher' : 'Ordinary'}
+                                </button>
+                              ))}
                             </div>
                           ) : (
-                            <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Common Level</span>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-[#78716C]">Common Level</span>
                           )}
                         </div>
 
                         {/* Two-row band selection */}
-                        <div className="px-4 pb-3 space-y-2">
+                        <div className="px-4 pt-3 pb-3 space-y-3">
                           {/* Current band */}
                           <div>
-                            <p className="text-[10px] font-semibold text-zinc-500 dark:text-zinc-400 mb-1">Where I am now</p>
-                            <div className="flex flex-wrap gap-1">
+                            <p className="text-[10px] font-bold uppercase tracking-wider text-[#78716C] mb-1.5">Where I am now</p>
+                            <div className="flex flex-wrap gap-1.5">
                               {JC_BANDS.map(b => (
                                 <button
                                   key={b}
                                   onClick={() => updateBand(name, 'currentBand', b)}
-                                  className={`flex-1 min-w-[70px] py-1.5 rounded-lg text-[10px] font-bold border transition-all ${
+                                  className={`flex-1 min-w-[70px] py-2 rounded-lg text-[10px] ${
                                     b === band.currentBand
                                       ? getCurrentGradePillClass(true)
                                       : getCurrentGradePillClass(false)
@@ -853,8 +861,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                           </div>
                           {/* Target band */}
                           <div>
-                            <p className="text-[10px] font-semibold text-[#F26B1F] dark:text-[#F26B1F] mb-1">My target</p>
-                            <div className="flex flex-wrap gap-1">
+                            <p className="text-[10px] font-bold uppercase tracking-wider text-[#F26B1F] mb-1.5">My target</p>
+                            <div className="flex flex-wrap gap-1.5">
                               {JC_BANDS.map((b, bi) => {
                                 // Target must be at least as good as current (lower index = better)
                                 const disabled = bi > currentIdx;
@@ -863,9 +871,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                                     key={b}
                                     onClick={() => { if (!disabled) updateBand(name, 'targetBand', b); }}
                                     disabled={disabled}
-                                    className={`flex-1 min-w-[70px] py-1.5 rounded-lg text-[10px] font-bold border transition-all ${
+                                    className={`flex-1 min-w-[70px] py-2 rounded-lg text-[10px] ${
                                       disabled
-                                        ? 'bg-zinc-50 dark:bg-zinc-900 text-zinc-300 dark:text-zinc-700 border-zinc-100 dark:border-zinc-800 cursor-not-allowed'
+                                        ? 'border-2 border-[#1A1A1A]/15 bg-[#FDF8F0]/40 text-[#1A1A1A]/25 cursor-not-allowed font-bold'
                                         : b === band.targetBand
                                           ? getTargetGradePillClass(true)
                                           : getTargetGradePillClass(false)
@@ -902,45 +910,42 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                     const targetIdx = getGradeIndex(config.targetGrade);
 
                     return (
-                      <div key={name} className="rounded-xl overflow-hidden" style={{ backgroundColor: 'rgba(255,255,255,0.9)', border: '1px solid rgba(0,0,0,0.06)' }}>
+                      <div
+                        key={name}
+                        className="rounded-2xl overflow-hidden border-2 border-[#1A1A1A] shadow-[4px_4px_0_0_#1A1A1A]"
+                        style={{ backgroundColor: '#FDF8F0' }}
+                      >
                         {/* Subject header row */}
-                        <div className="flex items-center justify-between px-4 pt-3 pb-2">
+                        <div className="flex items-center justify-between px-4 pt-3 pb-2 border-b-2 border-[#1A1A1A]/10">
                           <span className={`text-sm font-bold ${groupColor.text}`}>{name}</span>
-                          <div className="flex items-center gap-1 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-0.5">
-                            <button
-                              onClick={() => updateConfig(name, 'level', 'higher')}
-                              className={`px-2.5 py-1 rounded-md text-[10px] font-bold transition-all ${
-                                config.level === 'higher'
-                                  ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
-                                  : 'text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300'
-                              }`}
-                            >
-                              Higher
-                            </button>
-                            <button
-                              onClick={() => updateConfig(name, 'level', 'ordinary')}
-                              className={`px-2.5 py-1 rounded-md text-[10px] font-bold transition-all ${
-                                config.level === 'ordinary'
-                                  ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
-                                  : 'text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300'
-                              }`}
-                            >
-                              Ordinary
-                            </button>
+                          <div className="flex items-center gap-1">
+                            {(['higher', 'ordinary'] as const).map(lvl => (
+                              <button
+                                key={lvl}
+                                onClick={() => updateConfig(name, 'level', lvl)}
+                                className={`px-2.5 py-1 rounded-md text-[10px] font-bold border-2 border-[#1A1A1A] transition-all duration-150 shadow-[2px_2px_0_0_#1A1A1A] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[0px_0px_0_0_#1A1A1A] ${
+                                  config.level === lvl
+                                    ? 'bg-[#1A1A1A] text-[#FDF8F0]'
+                                    : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                }`}
+                              >
+                                {lvl === 'higher' ? 'Higher' : 'Ordinary'}
+                              </button>
+                            ))}
                           </div>
                         </div>
 
                         {/* Two-row grade selection */}
-                        <div className="px-4 pb-3 space-y-2">
+                        <div className="px-4 pt-3 pb-3 space-y-3">
                           {/* Current grade row */}
                           <div>
-                            <p className="text-[10px] font-semibold text-zinc-500 dark:text-zinc-400 mb-1">Where I am now</p>
-                            <div className="flex gap-1">
+                            <p className="text-[10px] font-bold uppercase tracking-wider text-[#78716C] mb-1.5">Where I am now</p>
+                            <div className="flex gap-1.5">
                               {grades.map((g, _gi) => (
                                 <button
                                   key={g}
                                   onClick={() => updateConfig(name, 'currentGrade', g)}
-                                  className={`flex-1 py-1.5 rounded-lg text-[11px] font-bold border transition-all ${
+                                  className={`flex-1 py-2 rounded-lg text-[11px] ${
                                     g === config.currentGrade
                                       ? getCurrentGradePillClass(true)
                                       : getCurrentGradePillClass(false)
@@ -953,8 +958,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                           </div>
                           {/* Target grade row */}
                           <div>
-                            <p className="text-[10px] font-semibold text-[#F26B1F] dark:text-[#F26B1F] mb-1">My target</p>
-                            <div className="flex gap-1">
+                            <p className="text-[10px] font-bold uppercase tracking-wider text-[#F26B1F] mb-1.5">My target</p>
+                            <div className="flex gap-1.5">
                               {grades.map((g, gi) => {
                                 const disabled = gi > currentIdx;
                                 return (
@@ -962,9 +967,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                                     key={g}
                                     onClick={() => { if (!disabled) updateConfig(name, 'targetGrade', g); }}
                                     disabled={disabled}
-                                    className={`flex-1 py-1.5 rounded-lg text-[11px] font-bold border transition-all ${
+                                    className={`flex-1 py-2 rounded-lg text-[11px] ${
                                       disabled
-                                        ? 'bg-zinc-50 dark:bg-zinc-900 text-zinc-300 dark:text-zinc-700 border-zinc-100 dark:border-zinc-800 cursor-not-allowed'
+                                        ? 'border-2 border-[#1A1A1A]/15 bg-[#FDF8F0]/40 text-[#1A1A1A]/25 cursor-not-allowed font-bold'
                                         : g === config.targetGrade
                                           ? getTargetGradePillClass(true)
                                           : getTargetGradePillClass(false)
@@ -1097,15 +1102,18 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
                           <button
                             key={day}
                             onClick={() => toggleRestDay(day)}
-                            className={`flex flex-col items-center gap-1.5 py-3.5 rounded-xl transition-all ${isRest ? '' : 'text-[#1A1A1A] dark:text-white'}`}
-                            style={{
-                              backgroundColor: isRest ? 'rgba(220,38,38,0.06)' : 'rgba(255,255,255,0.9)',
-                              border: isRest ? '2px solid #DC2626' : '1px solid rgba(0,0,0,0.08)',
-                              ...(isRest ? { color: '#DC2626' } : {}),
-                            }}
+                            // Chunky day card. Rest = orange fill on cream
+                            // background (matches selected state language).
+                            // Study day = cream fill. Same press animation
+                            // as the year + grade pickers.
+                            className={`flex flex-col items-center justify-center gap-2 py-4 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
+                              isRest ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                            }`}
                           >
-                            <span className="text-[10px] font-bold uppercase">{DAY_SHORTS[day]}</span>
-                            {isRest ? <CalendarOff size={14} className="text-rose-500 dark:text-rose-400" /> : <Check size={14} className="text-emerald-500 dark:text-emerald-400" />}
+                            <span className="text-[11px] font-bold uppercase tracking-wider">{DAY_SHORTS[day]}</span>
+                            {isRest
+                              ? <CalendarOff size={16} className="text-[#FDF8F0]" />
+                              : <Check size={16} className="text-[#1A1A1A]" />}
                           </button>
                         );
                       })}
@@ -1350,17 +1358,22 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip })
         <div className="shrink-0 px-6 py-5 relative z-10">
           <div className="max-w-2xl mx-auto flex flex-col items-center gap-3">
             {step < TOTAL_STEPS ? (
-              <button onClick={goNext} disabled={!canProceed()}
-                className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl transition-all disabled:opacity-40 disabled:cursor-not-allowed"
-                style={{ backgroundColor: 'rgba(0,0,0,0.65)', color: '#fff', minWidth: 160 }}
+              <button
+                onClick={goNext}
+                disabled={!canProceed()}
+                // Chunky orange CTA matching the year/subject pickers'
+                // shadow language. Disabled state drops the shadow + dims.
+                className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-40 disabled:cursor-not-allowed disabled:shadow-[2px_2px_0_0_#1A1A1A] disabled:translate-x-0 disabled:translate-y-0 disabled:hover:translate-y-0"
+                style={{ minWidth: 160 }}
               >
                 <span className="flex-1 text-center">{step === 1 ? 'Get Started' : 'Next'}</span>
                 <ArrowRight size={14} />
               </button>
             ) : (
-              <button onClick={() => onComplete(buildProfile(), northStarData ?? undefined, essentialsMode)}
-                className="flex items-center gap-2 px-8 py-3 rounded-2xl font-semibold text-sm transition-all active:scale-[0.98]"
-                style={{ backgroundColor: COLORS.accent, color: '#fff', minWidth: 160 }}
+              <button
+                onClick={() => onComplete(buildProfile(), northStarData ?? undefined, essentialsMode)}
+                className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A]"
+                style={{ minWidth: 160 }}
               >
                 <span className="flex-1 text-center">Start learning</span>
                 <ArrowRight size={14} />
