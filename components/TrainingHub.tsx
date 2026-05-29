@@ -20,7 +20,6 @@ import { type CourseData } from './Library';
 import { STRATEGY_REGISTRY } from '../utils/strategyRegistry';
 import { type WeeklyChallengeState } from '../hooks/useWeeklyChallenge';
 import { ToolHeader } from './ToolHeader';
-import { TrainingHubIcon } from './toolIcons';
 import { COLORS } from '../design/tokens';
 
 // ─── Config ─────────────────────────────────────────────────
@@ -107,54 +106,84 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
       <div className="px-6 max-w-3xl mx-auto pt-4">
         <ToolHeader
           themeColor={COLORS.accent}
-          eyebrow="The Programme"
+          eyebrow="Track · Progress"
           title="Training Hub"
           subtitle="Build your streak. Earn your rank. Watch the work compound — week by week, point by point."
-          icon={<TrainingHubIcon />}
+          iconBlob={
+            <img
+              src="/icons/training-hub.png"
+              alt=""
+              style={{ width: 108, height: 108, objectFit: 'contain' }}
+            />
+          }
         />
       </div>
 
-      {/* ── Rank + stats — relocated from the old dark hero onto cream ── */}
+      {/* ── Rank + stats ──
+          Chunky-shadow card grammar matches the rest of the app
+          (YearTransitionFlow, GC tiles, onboarding pickers). The ring
+          wraps the rank icon as one combined identity — Mercury-dense
+          replacement for the old linear progress bar. */}
       <div className="px-6 max-w-3xl mx-auto pt-6">
-        <MotionDiv {...stagger(0)} className="rounded-2xl bg-white dark:bg-zinc-900 p-5" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
+        <MotionDiv
+          {...stagger(0)}
+          className="rounded-2xl bg-white dark:bg-zinc-900 p-5 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46]"
+        >
           <div className="flex items-center gap-5">
-            <div
-              className="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0"
-              style={{ backgroundColor: `${currentRank.colorHex}18` }}
-            >
-              <RankIcon size={26} color={currentRank.colorHex} />
-            </div>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-baseline gap-2">
-                <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '20px', fontWeight: 600, color: '#1a1a1a' }}>
-                  {currentRank.title}
-                </p>
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '12px', color: '#9e9186' }}>
-                  {nextRank ? `${totalPointsEarned} / ${nextRank.minPoints} XP` : 'Max rank'}
-                </span>
-              </div>
-              <div className="mt-2 h-2 rounded-full overflow-hidden" style={{ backgroundColor: '#f0ede8' }}>
-                <motion.div
-                  className="h-full rounded-full"
-                  style={{ backgroundColor: currentRank.colorHex }}
-                  initial={{ width: 0 }}
-                  animate={{ width: `${Math.min(100, rankProgress)}%` }}
-                  transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+            {/* Rank identity — ring wraps the icon, fill colour is the
+                rank's own colour so the ring reads "you, at this stage". */}
+            <div className="relative shrink-0" style={{ width: 76, height: 76 }}>
+              <svg width="76" height="76" viewBox="0 0 76 76" className="-rotate-90 overflow-visible">
+                <circle cx="38" cy="38" r="32" stroke="var(--accent-tint-hex)" strokeWidth="6" fill="transparent" />
+                <motion.circle
+                  cx="38" cy="38" r="32"
+                  stroke={currentRank.colorHex}
+                  strokeWidth="6"
+                  fill="transparent"
+                  strokeDasharray={2 * Math.PI * 32}
+                  initial={{ strokeDashoffset: 2 * Math.PI * 32 }}
+                  animate={{ strokeDashoffset: (2 * Math.PI * 32) - (Math.min(100, rankProgress) / 100) * (2 * Math.PI * 32) }}
+                  transition={{ duration: 1.5, ease: 'easeOut' }}
+                  strokeLinecap="round"
+                  style={{ filter: `drop-shadow(0 0 6px ${currentRank.colorHex}33)` }}
                 />
+              </svg>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <RankIcon size={28} color={currentRank.colorHex} />
               </div>
+            </div>
+            {/* Title + XP — restraint here so the ring carries the visual weight. */}
+            <div className="flex-1 min-w-0">
+              <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '22px', fontWeight: 600, color: 'var(--text-primary)' }}>
+                {currentRank.title}
+              </p>
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '12px', color: 'var(--text-muted)', marginTop: 2 }}>
+                {nextRank ? `${totalPointsEarned.toLocaleString()} / ${nextRank.minPoints.toLocaleString()} XP` : 'Max rank reached'}
+              </p>
+              {nextRank && (
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 600, color: currentRank.colorHex, marginTop: 6 }}>
+                  {(nextRank.minPoints - totalPointsEarned).toLocaleString()} XP to {nextRank.title}
+                </p>
+              )}
             </div>
           </div>
         </MotionDiv>
 
+        {/* Stat tiles — chunky-shadow + press feel. Not buttons (no nav)
+            but the tactile language makes them feel like part of the same
+            family as the year-bump CTA and onboarding pickers. */}
         <MotionDiv {...stagger(1)} className="grid grid-cols-3 gap-3 mt-3">
           {[
             { value: streak.currentStreak, label: 'Day Streak' },
-            { value: totalPointsEarned, label: 'Total XP' },
+            { value: totalPointsEarned.toLocaleString(), label: 'Total XP' },
             { value: `${modulesCompleted}/${allCourses.length}`, label: 'Modules' },
           ].map((stat) => (
-            <div key={stat.label} className="text-center py-3 rounded-xl bg-white dark:bg-zinc-900" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
-              <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '20px', fontWeight: 600, color: '#1a1a1a' }}>{stat.value}</p>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 600, letterSpacing: '0.1em', color: '#9e9186', textTransform: 'uppercase', marginTop: '2px' }}>{stat.label}</p>
+            <div
+              key={stat.label}
+              className="text-center py-4 rounded-xl bg-white dark:bg-zinc-900 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] dark:hover:shadow-[6px_6px_0_0_#3f3f46] active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] dark:active:shadow-[0px_0px_0_0_#3f3f46] transition-all duration-150 cursor-default"
+            >
+              <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '22px', fontWeight: 600, color: 'var(--text-primary)' }}>{stat.value}</p>
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 600, letterSpacing: '0.1em', color: 'var(--text-label)', textTransform: 'uppercase', marginTop: '2px' }}>{stat.label}</p>
             </div>
           ))}
         </MotionDiv>
@@ -190,7 +219,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                       <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '13px', fontWeight: 500, color: met ? GOAL_COLORS[gi] : '#5a5550' }}>{goal.label}</span>
                       <span style={{ fontFamily: "'Source Serif 4', serif", fontSize: '13px', fontWeight: 700, color: met ? GOAL_COLORS[gi] : '#9e9186' }}>{current}/{goal.target}</span>
                     </div>
-                    <div className="h-2 rounded-full overflow-hidden" style={{ backgroundColor: '#f0ede8' }}>
+                    <div className="h-2 rounded-full overflow-hidden" style={{ backgroundColor: 'var(--accent-tint-hex)' }}>
                       <motion.div
                         className="h-full rounded-full"
                         style={{ backgroundColor: GOAL_COLORS[gi] }}
@@ -244,7 +273,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                   </button>
                 ) : (
                   <div className="flex items-center gap-2 shrink-0">
-                    <div className="w-10 h-2 rounded-full overflow-hidden" style={{ backgroundColor: '#e8e4de' }}>
+                    <div className="w-10 h-2 rounded-full overflow-hidden" style={{ backgroundColor: 'var(--accent-tint-hex)' }}>
                       <div className="h-full rounded-full" style={{ backgroundColor: COLORS.accent, width: `${pct}%` }} />
                     </div>
                     <span style={{ fontSize: '11px', fontWeight: 700, color: COLORS.accent }}>{pct}%</span>
@@ -269,7 +298,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                   <div className="flex-1 min-w-0 text-left">
                     <p className="text-sm font-semibold" style={{ color: '#1a1a1a' }}>Strategy Mastery</p>
                     <div className="flex items-center gap-2 mt-1.5">
-                      <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: '#e8e4de', maxWidth: 120 }}>
+                      <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: 'var(--accent-tint-hex)', maxWidth: 120 }}>
                         <div className="h-full rounded-full" style={{ backgroundColor: '#6C5CE7', width: `${masteryPct}%` }} />
                       </div>
                       <span style={{ fontSize: '10px', fontWeight: 600, color: '#9e9186' }}>{masteredCount}/{STRATEGY_REGISTRY.length}</span>
@@ -344,7 +373,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                   <div className="flex-1 min-w-0 text-left">
                     <p className="text-sm font-semibold" style={{ color: '#1a1a1a' }}>Achievements</p>
                     <div className="flex items-center gap-2 mt-1.5">
-                      <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: '#e8e4de', maxWidth: 120 }}>
+                      <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: 'var(--accent-tint-hex)', maxWidth: 120 }}>
                         <div className="h-full rounded-full" style={{ backgroundColor: '#E67E22', width: `${achievePct}%` }} />
                       </div>
                       <span style={{ fontSize: '10px', fontWeight: 600, color: '#9e9186' }}>{unlockedAchievements.length}/58</span>
