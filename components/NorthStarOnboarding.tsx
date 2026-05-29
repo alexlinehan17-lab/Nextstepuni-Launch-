@@ -9,7 +9,7 @@ import { MotionDiv } from './Motion';
 import { ArrowRight, ArrowLeft, Check, Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen, Banknote, Car, Home, Users, Briefcase, Rocket, Award, UserPlus, TrendingUp, MicOff, Signpost, Plane, PartyPopper, HandHeart, Sparkles, Compass, Star, Puzzle, BookOpen } from 'lucide-react';
 import { type NorthStarCategory, type NorthStar } from '../types';
 import { type CurriculumLevel } from '../utils/authUtils';
-import { CATEGORY_COLORS, CATEGORY_PROMPTS, getActiveCategories, getVisionCardsForLevel } from '../northStarData';
+import { CATEGORY_COLORS, getActiveCategories, getVisionCardsForLevel } from '../northStarData';
 
 const ICON_MAP: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
   Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen,
@@ -176,10 +176,17 @@ interface NorthStarOnboardingProps {
 }
 
 const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, initialData, curriculumLevel = 'senior' }) => {
-  const [subStep, setSubStep] = useState<1 | 2 | 3>(1);
+  // Sub-step flow simplified to 2 steps (picker → vision board). The old
+  // "Tell us more" textarea step was removed — the displayed
+  // northStar.statement now defaults to the chosen category's own
+  // first-person description (e.g. "I want to make my family proud…"),
+  // which already reads as a personal "why" quote on the rank card and
+  // surfaces like Knowledge Tree's North Star line. Existing accounts
+  // with a typed statement keep theirs via initialData.
+  const [subStep, setSubStep] = useState<1 | 2>(1);
   const [direction, setDirection] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState<NorthStarCategory | null>(initialData?.category ?? null);
-  const [statement, setStatement] = useState(initialData?.statement ?? '');
+  const [statement] = useState(initialData?.statement ?? '');
   const [selectedCards, setSelectedCards] = useState<Set<string>>(new Set(initialData?.visionBoard ?? []));
 
   const activeCategories = useMemo(() => getActiveCategories(curriculumLevel), [curriculumLevel]);
@@ -216,9 +223,14 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
   const handleComplete = () => {
     if (!selectedCategory) return;
     const now = new Date().toISOString();
+    // Fall back to the category's first-person description if the user
+    // has no statement saved. Preserves existing typed statements from
+    // pre-removal accounts.
+    const catDescription = activeCategories.find(c => c.id === selectedCategory)?.description ?? '';
+    const finalStatement = statement.trim() || catDescription;
     onComplete({
       category: selectedCategory,
-      statement,
+      statement: finalStatement,
       visionBoard: Array.from(selectedCards),
       createdAt: initialData?.createdAt ?? now,
       updatedAt: now,
@@ -227,23 +239,22 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
 
   const canProceedSub = () => {
     if (subStep === 1) return selectedCategory !== null;
-    if (subStep === 2) return statement.trim().length > 0;
-    if (subStep === 3) return selectedCards.size >= minCards;
+    if (subStep === 2) return selectedCards.size >= minCards;
     return false;
   };
 
   const goNextSub = () => {
-    if (subStep === 3) {
+    if (subStep === 2) {
       handleComplete();
       return;
     }
     setDirection(1);
-    setSubStep(s => Math.min(3, s + 1) as 1 | 2 | 3);
+    setSubStep(s => Math.min(2, s + 1) as 1 | 2);
   };
 
   const goBackSub = () => {
     setDirection(-1);
-    setSubStep(s => Math.max(1, s - 1) as 1 | 2 | 3);
+    setSubStep(s => Math.max(1, s - 1) as 1 | 2);
   };
 
   const stepVariants = {
@@ -251,8 +262,6 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
     visible: { opacity: 1, x: 0 },
     exit: (dir: number) => ({ opacity: 0, x: dir > 0 ? -40 : 40 }),
   };
-
-  const categoryLabel = selectedCategory ? activeCategories.find(c => c.id === selectedCategory)?.label : '';
 
   return (
     <div className="space-y-6">
@@ -310,33 +319,9 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
           </MotionDiv>
         )}
 
-        {/* Sub-step 2: Personal statement */}
+        {/* Sub-step 2: Vision board */}
         {subStep === 2 && (
           <MotionDiv key="ns-sub2" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
-            <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Tell us more</h2>
-            <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-2">
-              You picked <span className="font-semibold text-[var(--accent-hex)]">"{categoryLabel}"</span>
-            </p>
-            <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
-              {selectedCategory ? CATEGORY_PROMPTS[selectedCategory] : ''}
-            </p>
-            <textarea
-              value={statement}
-              onChange={(e) => setStatement(e.target.value)}
-              placeholder="Write a sentence or two about what this means to you..."
-              maxLength={300}
-              rows={4}
-              className="w-full p-4 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white/80 dark:bg-zinc-800 text-zinc-900 dark:text-white text-sm leading-relaxed resize-none focus:outline-none focus:ring-2 focus:ring-[rgba(var(--accent),0.4)] focus:border-[rgba(var(--accent),0.6)] transition-all placeholder:text-zinc-400 dark:placeholder:text-zinc-500"
-            />
-            <p className="text-right text-[10px] text-zinc-400 dark:text-zinc-500 mt-1">
-              {statement.length}/300
-            </p>
-          </MotionDiv>
-        )}
-
-        {/* Sub-step 3: Vision board */}
-        {subStep === 3 && (
-          <MotionDiv key="ns-sub3" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
             <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Build Your Vision Board</h2>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
               Pick <span className="font-semibold text-[var(--accent-hex)]">{minCards}-{maxCards} things</span> that represent what you're working towards. <span className="font-semibold text-[var(--accent-hex)]">{selectedCards.size} selected</span>
@@ -401,7 +386,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
           disabled={!canProceedSub()}
           className="flex items-center gap-2 px-6 py-2.5 bg-[var(--accent-hex)] text-white font-semibold text-sm rounded-full hover:bg-[var(--accent-dark-hex)] transition-colors disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-[rgba(var(--accent),0.2)]"
         >
-          {subStep === 3 ? (
+          {subStep === 2 ? (
             <><Check size={14} /> Save My North Star</>
           ) : (
             <>Continue <ArrowRight size={14} /></>
