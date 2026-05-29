@@ -4,6 +4,7 @@
  */
 
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import { createPortal } from 'react-dom';
 import { useToast } from './Toast';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
@@ -1307,7 +1308,11 @@ function SubjectExplorerResults({
 // hand-curated reference value — so they can use the result as a guide
 // without treating it as a prediction.
 function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
-  return (
+  // Portalled to document.body so the modal escapes ResultsPhase's Framer
+  // `<MotionDiv>` transform context. Without the portal, `position: fixed`
+  // is positioned relative to the transformed ancestor instead of the
+  // viewport, and the modal spills off the top of the screen.
+  return createPortal(
     <MotionDiv
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -1429,6 +1434,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
           </button>
         </div>
       </MotionDiv>
-    </MotionDiv>
+    </MotionDiv>,
+    document.body
   );
 }

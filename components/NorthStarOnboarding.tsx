@@ -282,18 +282,19 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                 const isSelected = selectedCategory === cat.id;
                 const Icon = ICON_MAP[cat.icon];
                 const blobCfg = CATEGORY_BLOBS[cat.id];
-                // Selection language now matches the rest of the app:
-                // accent-tint background + accent border + chunky offset
-                // shadow. The painted blob carries category identity; the
-                // background doesn't need to rainbow-shift per category.
+                // Every card gets the full chunky-shadow + black border
+                // grammar so the unselected ones don't read as "undesigned"
+                // next to the selected. Selection is communicated by the
+                // accent-tint background + accent border swap only — same
+                // pattern as YearTransitionFlow's TY-vs-5th picker.
                 return (
                   <button
                     key={cat.id}
                     onClick={() => setSelectedCategory(cat.id)}
-                    className={`flex items-center gap-3.5 p-4 rounded-xl border-2 transition-all duration-150 text-left text-[#1A1A1A] dark:text-zinc-100 ${
+                    className={`flex items-center gap-3.5 p-4 rounded-2xl border-2 text-left text-[#1A1A1A] dark:text-zinc-100 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] dark:hover:shadow-[6px_6px_0_0_#3f3f46] active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] dark:active:shadow-[0px_0px_0_0_#3f3f46] transition-all duration-150 ${
                       isSelected
-                        ? 'bg-[#FDEEDF] dark:bg-[rgba(242,107,31,0.14)] border-[#F26B1F] shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46]'
-                        : 'bg-white dark:bg-zinc-900 border-[#EDEBE8] dark:border-zinc-700 hover:-translate-y-0.5 hover:shadow-[2px_2px_0_0_#1A1A1A] dark:hover:shadow-[2px_2px_0_0_#3f3f46]'
+                        ? 'bg-[#FDEEDF] dark:bg-[rgba(242,107,31,0.14)] border-[#F26B1F]'
+                        : 'bg-white dark:bg-zinc-900 border-[#1A1A1A] dark:border-zinc-600'
                     }`}
                   >
                     {blobCfg ? (
