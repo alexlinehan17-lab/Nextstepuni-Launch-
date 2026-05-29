@@ -10,7 +10,7 @@ import { MotionButton, MotionDiv } from './Motion';
 import {
   Compass, ChevronRight, ChevronLeft, SlidersHorizontal,
   MapPin, Briefcase, Heart, Star, RotateCcw,
-  BookmarkPlus, Check, ArrowUpRight, TrendingUp, X, Clock,
+  BookmarkPlus, Check, ArrowUpRight, TrendingUp, X, Clock, Eye,
 } from 'lucide-react';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import { COLORS } from '../design/tokens';
@@ -649,11 +649,12 @@ function ResultsPhase({
   onCompare: () => void;
   onRetake: () => void;
 }) {
+  const [explainerOpen, setExplainerOpen] = useState(false);
   return (
     <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
       {/* Header */}
-      <div className="flex items-center justify-between mb-6">
-        <div>
+      <div className="flex items-start justify-between mb-6 gap-3">
+        <div className="min-w-0">
           <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">Your Top Matches</h2>
           <p className="text-sm text-zinc-400 dark:text-zinc-500 mt-1">Courses ranked by how well they fit you</p>
           {autoPoints > 0 && (
@@ -662,10 +663,23 @@ function ResultsPhase({
             </p>
           )}
         </div>
-        <button onClick={onRetake} className="flex items-center gap-1.5 text-xs font-semibold text-zinc-400 dark:text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">
-          <RotateCcw size={14} /> Retake
-        </button>
+        <div className="flex items-center gap-3 shrink-0 pt-1">
+          <button
+            onClick={() => setExplainerOpen(true)}
+            className="flex items-center gap-1.5 text-xs font-semibold text-zinc-400 dark:text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"
+            aria-label="How are these results calculated?"
+          >
+            <Eye size={14} /> How this works
+          </button>
+          <button onClick={onRetake} className="flex items-center gap-1.5 text-xs font-semibold text-zinc-400 dark:text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">
+            <RotateCcw size={14} /> Retake
+          </button>
+        </div>
       </div>
+
+      <AnimatePresence>
+        {explainerOpen && <ScoringExplainerModal onClose={() => setExplainerOpen(false)} />}
+      </AnimatePresence>
 
       {/* Sort & Filter controls */}
       <div className="flex flex-wrap gap-2 mb-4">
@@ -1282,6 +1296,139 @@ function SubjectExplorerResults({
           <RotateCcw size={12} /> Retake the quiz
         </button>
       </div>
+    </MotionDiv>
+  );
+}
+
+// ── Scoring explainer modal ────────────────────────────────────────────────
+// Surfaces what's actually happening behind the match %, how the salary band
+// is derived, and how the employability number is sourced. The intent is to
+// be honest with the student about what's a real algorithm vs. what's a
+// hand-curated reference value — so they can use the result as a guide
+// without treating it as a prediction.
+function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
+  return (
+    <MotionDiv
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-[200] flex items-center justify-center bg-black/55 backdrop-blur-sm p-4 overflow-y-auto"
+      onClick={onClose}
+    >
+      <MotionDiv
+        initial={{ opacity: 0, scale: 0.96, y: 12 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        exit={{ opacity: 0, scale: 0.96, y: 12 }}
+        transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] as number[] }}
+        className="bg-[#FDF8F0] dark:bg-zinc-900 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[6px_6px_0_0_#1A1A1A] dark:shadow-[6px_6px_0_0_#3f3f46] max-w-xl w-full my-8 overflow-hidden"
+        onClick={(e: React.MouseEvent) => e.stopPropagation()}
+      >
+        {/* Header */}
+        <div className="flex items-start justify-between p-6 pb-4">
+          <div className="flex items-start gap-3 min-w-0">
+            <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-[rgba(242,107,31,0.12)] shrink-0">
+              <Eye size={20} className="text-[#F26B1F]" />
+            </div>
+            <div className="min-w-0">
+              <h2 className="font-serif text-xl font-bold text-[#1A1A1A] dark:text-white">How your results are calculated</h2>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">A quick look behind the match percentage</p>
+            </div>
+          </div>
+          <button
+            onClick={onClose}
+            className="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-black/5 dark:hover:bg-white/10 transition-colors shrink-0"
+            aria-label="Close"
+          >
+            <X size={18} className="text-zinc-500" />
+          </button>
+        </div>
+
+        {/* Body */}
+        <div className="px-6 pb-6 space-y-5">
+          {/* Matching */}
+          <section>
+            <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">The match score</p>
+            <p className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed mb-3">
+              Every course gets a 0–100% score made of three parts:
+            </p>
+            <div className="space-y-2.5">
+              <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+                <div className="flex items-baseline justify-between mb-1">
+                  <p className="text-sm font-bold text-[#1A1A1A] dark:text-white">Interest fit</p>
+                  <span className="text-xs font-bold" style={{ color: COLORS.accent }}>45%</span>
+                </div>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                  How well your interest tags and the scenarios you picked overlap with the course's own tags. Full credit at 3+ matching interests, with a bonus for matching scenarios.
+                </p>
+              </div>
+              <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+                <div className="flex items-baseline justify-between mb-1">
+                  <p className="text-sm font-bold text-[#1A1A1A] dark:text-white">Values alignment</p>
+                  <span className="text-xs font-bold" style={{ color: COLORS.accent }}>30%</span>
+                </div>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                  Your salary, job-security, and helping-others sliders weighted against the course's salary band and employability rating. Plus your work-style picks (analytical / hands-on / etc.) and team preference.
+                </p>
+              </div>
+              <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+                <div className="flex items-baseline justify-between mb-1">
+                  <p className="text-sm font-bold text-[#1A1A1A] dark:text-white">Feasibility</p>
+                  <span className="text-xs font-bold" style={{ color: COLORS.accent }}>25%</span>
+                </div>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                  Does your preferred study length match the course's NFQ level, and are your current points realistic for the course's typical entry threshold. Geographic preferences nudge the final score up or down.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Salary */}
+          <section>
+            <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Salary band</p>
+            <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+              <p className="text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed mb-2">
+                Every course carries a <span className="font-bold">Low / Mid / High</span> salary band. These are <span className="font-bold">hand-curated reference values</span>, not predictions for you personally — they reflect typical mid-career graduate earnings in Ireland for that pathway, drawn from CSO labour data, the HEA Graduate Outcomes Survey, and published industry salary guides.
+              </p>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed italic">
+                Two students in the same course will end up in very different bands depending on specialisation, region, and employer. The band is a useful first signal — not a number to bank on.
+              </p>
+            </div>
+          </section>
+
+          {/* Employability */}
+          <section>
+            <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Employability rating</p>
+            <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+              <p className="text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed mb-2">
+                A <span className="font-bold">1 to 5 rating</span> per course, also hand-curated. Drawn from the HEA's "What Do Graduates Do" reports — specifically the share of graduates in further study or substantive employment within 9 months of finishing.
+              </p>
+              <ul className="text-xs text-zinc-600 dark:text-zinc-400 space-y-1 leading-relaxed">
+                <li><span className="font-bold text-[#1A1A1A] dark:text-white">5</span> — 90%+ in employment or further study (medicine, nursing, education, accounting)</li>
+                <li><span className="font-bold text-[#1A1A1A] dark:text-white">4</span> — 80–90% (engineering, computer science, most business)</li>
+                <li><span className="font-bold text-[#1A1A1A] dark:text-white">3</span> — 70–80% (general degrees, sciences, social sciences)</li>
+                <li><span className="font-bold text-[#1A1A1A] dark:text-white">1–2</span> — Niche or saturated fields where placement is less predictable</li>
+              </ul>
+            </div>
+          </section>
+
+          {/* Disclaimer */}
+          <section className="rounded-xl p-3" style={{ backgroundColor: 'rgba(242,107,31,0.10)' }}>
+            <p className="text-xs text-[#8C3A0E] dark:text-[#FDEEDF] leading-relaxed">
+              <span className="font-bold">Treat the result as a guide, not a verdict.</span> The algorithm reflects fit between you and a course, not how your career will go. Use it to surface options you hadn't thought about — then go talk to people doing the job.
+            </p>
+          </section>
+        </div>
+
+        {/* Footer CTA */}
+        <div className="px-6 pb-6">
+          <button
+            onClick={onClose}
+            className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
+          >
+            Got it
+          </button>
+        </div>
+      </MotionDiv>
     </MotionDiv>
   );
 }
