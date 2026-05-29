@@ -273,14 +273,18 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                 const isSelected = selectedCategory === cat.id;
                 const Icon = ICON_MAP[cat.icon];
                 const blobCfg = CATEGORY_BLOBS[cat.id];
+                // Selection language now matches the rest of the app:
+                // accent-tint background + accent border + chunky offset
+                // shadow. The painted blob carries category identity; the
+                // background doesn't need to rainbow-shift per category.
                 return (
                   <button
                     key={cat.id}
                     onClick={() => setSelectedCategory(cat.id)}
-                    className={`flex items-center gap-3.5 p-4 rounded-xl border-2 transition-all text-left ${
+                    className={`flex items-center gap-3.5 p-4 rounded-xl border-2 transition-all duration-150 text-left text-[#1A1A1A] dark:text-zinc-100 ${
                       isSelected
-                        ? `${colors.selectedBg} ${colors.selectedBorder} ${colors.text}`
-                        : `bg-white/70 dark:bg-white/[0.03] border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-zinc-300 dark:hover:border-zinc-600`
+                        ? 'bg-[#FDEEDF] dark:bg-[rgba(242,107,31,0.14)] border-[#F26B1F] shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46]'
+                        : 'bg-white dark:bg-zinc-900 border-[#EDEBE8] dark:border-zinc-700 hover:-translate-y-0.5 hover:shadow-[2px_2px_0_0_#1A1A1A] dark:hover:shadow-[2px_2px_0_0_#3f3f46]'
                     }`}
                   >
                     {blobCfg ? (
@@ -292,11 +296,11 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                     )}
                     <div>
                       <p className="text-sm font-bold">{cat.label}</p>
-                      <p className={`text-xs mt-0.5 ${isSelected ? colors.text : 'text-zinc-400 dark:text-zinc-500'}`}>{cat.description}</p>
+                      <p className={`text-xs mt-0.5 ${isSelected ? 'text-[#8C3A0E] dark:text-zinc-300' : 'text-zinc-500 dark:text-zinc-400'}`}>{cat.description}</p>
                     </div>
                     {isSelected && (
-                      <div className={`ml-auto shrink-0 w-6 h-6 rounded-full flex items-center justify-center ${colors.selectedBg} ${colors.selectedBorder} border`}>
-                        <Check size={12} className={colors.text} />
+                      <div className="ml-auto shrink-0 w-6 h-6 rounded-full flex items-center justify-center bg-[#F26B1F]">
+                        <Check size={12} className="text-white" strokeWidth={3} />
                       </div>
                     )}
                   </button>
@@ -345,17 +349,20 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                 const isDisabled = !isSelected && selectedCards.size >= maxCards;
                 const visionIcon = VISION_ICON_IMG[card.id];
                 const categoryBlob = CATEGORY_BLOBS[card.category];
+                // Same selection language as the category picker above —
+                // accent-tint + accent border + offset shadow, scaled
+                // smaller (3px shadow) for the tighter tile grid.
                 return (
                   <button
                     key={card.id}
                     onClick={() => toggleCard(card.id)}
                     disabled={isDisabled}
-                    className={`flex flex-col items-center gap-2 p-3.5 rounded-xl border-2 transition-all ${
+                    className={`flex flex-col items-center gap-2 p-3.5 rounded-xl border-2 transition-all duration-150 text-[#1A1A1A] dark:text-zinc-100 ${
                       isSelected
-                        ? `${colors.selectedBg} ${colors.selectedBorder} ${colors.text}`
+                        ? 'bg-[#FDEEDF] dark:bg-[rgba(242,107,31,0.14)] border-[#F26B1F] shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]'
                         : isDisabled
-                        ? 'bg-zinc-100 dark:bg-zinc-800/50 border-zinc-200 dark:border-zinc-700 text-zinc-300 dark:text-zinc-600 cursor-not-allowed'
-                        : 'bg-white/70 dark:bg-white/[0.03] border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:border-zinc-300 dark:hover:border-zinc-600'
+                        ? 'bg-zinc-50 dark:bg-zinc-800/50 border-zinc-200 dark:border-zinc-700 text-zinc-300 dark:text-zinc-600 cursor-not-allowed'
+                        : 'bg-white dark:bg-zinc-900 border-[#EDEBE8] dark:border-zinc-700 hover:-translate-y-0.5 hover:shadow-[2px_2px_0_0_#1A1A1A] dark:hover:shadow-[2px_2px_0_0_#3f3f46]'
                     }`}
                   >
                     {visionIcon && categoryBlob ? (
@@ -370,8 +377,8 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                     )}
                     <span className="text-[11px] font-semibold text-center leading-tight">{card.label}</span>
                     {isSelected && (
-                      <div className={`w-5 h-5 rounded-full flex items-center justify-center ${colors.selectedBg} ${colors.selectedBorder} border`}>
-                        <Check size={10} className={colors.text} />
+                      <div className="w-5 h-5 rounded-full flex items-center justify-center bg-[#F26B1F]">
+                        <Check size={10} className="text-white" strokeWidth={3} />
                       </div>
                     )}
                   </button>
