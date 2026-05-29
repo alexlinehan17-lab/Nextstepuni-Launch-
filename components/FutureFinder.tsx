@@ -1312,7 +1312,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[200] flex items-center justify-center bg-black/55 backdrop-blur-sm p-4 overflow-y-auto"
+      className="fixed inset-0 z-[200] flex items-center justify-center bg-black/55 backdrop-blur-sm p-4"
       onClick={onClose}
     >
       <MotionDiv
@@ -1320,11 +1320,11 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.96, y: 12 }}
         transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] as number[] }}
-        className="bg-[#FDF8F0] dark:bg-zinc-900 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[6px_6px_0_0_#1A1A1A] dark:shadow-[6px_6px_0_0_#3f3f46] max-w-xl w-full my-8 overflow-hidden"
+        className="bg-[#FAFBF6] dark:bg-zinc-900 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[6px_6px_0_0_#1A1A1A] dark:shadow-[6px_6px_0_0_#3f3f46] max-w-xl w-full max-h-[90vh] flex flex-col overflow-hidden"
         onClick={(e: React.MouseEvent) => e.stopPropagation()}
       >
-        {/* Header */}
-        <div className="flex items-start justify-between p-6 pb-4">
+        {/* Header (fixed) */}
+        <div className="flex items-start justify-between p-6 pb-4 shrink-0">
           <div className="flex items-start gap-3 min-w-0">
             <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-[rgba(242,107,31,0.12)] shrink-0">
               <Eye size={20} className="text-[#F26B1F]" />
@@ -1343,8 +1343,8 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
           </button>
         </div>
 
-        {/* Body */}
-        <div className="px-6 pb-6 space-y-5">
+        {/* Body (scrolls when content exceeds the viewport-capped modal) */}
+        <div className="px-6 pb-6 space-y-5 overflow-y-auto flex-1 min-h-0">
           {/* Matching */}
           <section>
             <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">The match score</p>
@@ -1419,8 +1419,8 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
           </section>
         </div>
 
-        {/* Footer CTA */}
-        <div className="px-6 pb-6">
+        {/* Footer CTA (fixed below the scrolling body) */}
+        <div className="px-6 pb-6 pt-2 shrink-0 border-t border-black/[0.04] dark:border-white/[0.06]">
           <button
             onClick={onClose}
             className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
