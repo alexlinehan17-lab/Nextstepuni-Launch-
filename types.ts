@@ -90,7 +90,6 @@ export interface UserSettings {
   darkMode: boolean;
   cardStyle: CardStyleId;
   defaultWorkMinutes: number;
-  flaresToggle?: boolean;
   showDashboard?: boolean;
   essentialsMode?: boolean;
 }

@@ -4,8 +4,10 @@
  */
 
 /**
- * Client-side profanity filter for SOS Flare text content.
- * Checks against a keyword list with basic leetspeak normalization.
+ * Client-side profanity filter for student-typed text. Originally built
+ * for the SOS Flares system; retained after Flares was decommissioned
+ * because the teach-back explanations in `hooks/useTeachBack.ts` still
+ * rely on it. Keyword list with basic leetspeak normalization.
  */
 
 const PROFANITY_LIST: string[] = [

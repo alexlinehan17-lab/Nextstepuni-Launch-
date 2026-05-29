@@ -3,17 +3,14 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useCallback, useEffect, useRef, Suspense } from 'react';
+import React, { useState, useCallback, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { ArrowLeft, Mountain, Users, Heart, Gift, X } from 'lucide-react';
 import { type SessionUser } from '../../utils/authUtils';
 import { type NorthStar, type UserProgress } from '../../types';
 import { type MilestoneReward } from '../../islandShopData';
-import { db } from '../../firebase';
-import { collection, query, where, getDocs } from 'firebase/firestore';
 
-const FlareSystem = React.lazy(() => import('../flares/FlareSystem'));
 import { useIslandShop, type EnrichedShopItem } from '../../hooks/useIslandShop';
 import JourneyCanvas from './JourneyCanvas';
 import JourneyProgressPill from './JourneyProgressPill';
@@ -45,12 +42,11 @@ interface JourneyViewProps {
   userProgress?: UserProgress;
   allCourses?: CourseInfo[];
   subjects?: string[];
-  flaresEnabled?: boolean;
 }
 
 const JourneyView: React.FC<JourneyViewProps> = ({
   onBack, user, northStar, onOpenNorthStar, pointsBalance, onPointsReload,
-  userProgress, allCourses, subjects, flaresEnabled,
+  userProgress, allCourses,
 }) => {
   // Compute completed module count
   const completedCount = (allCourses ?? []).filter(c => {
@@ -87,41 +83,6 @@ const JourneyView: React.FC<JourneyViewProps> = ({
 
   const [kudosModalOpen, setKudosModalOpen] = useState(false);
   const [giftsModalOpen, setGiftsModalOpen] = useState(false);
-
-  // Flare system state
-  const [flareSystemOpen, setFlareSystemOpen] = useState(false);
-  const [flareInitialView, setFlareInitialView] = useState<'launcher' | 'feed'>('launcher');
-  const [activeFlareCount, setActiveFlareCount] = useState(0);
-  // Fetch active flare count
-  useEffect(() => {
-    if (!user?.uid || !user?.school || !subjects?.length || flaresEnabled === false) return;
-    let cancelled = false;
-    const fetchFlareData = async () => {
-      try {
-        // Fetch active flares count
-        const q = query(
-          collection(db, 'flares'),
-          where('school', '==', user.school),
-          where('status', '==', 'active'),
-        );
-        const snap = await getDocs(q);
-        if (cancelled) return;
-        const now = new Date();
-        const count = snap.docs.filter(d => {
-          const data = d.data();
-          return data.senderUid !== user.uid
-            && subjects?.includes(data.subject)
-            && data.expiresAt?.toDate() > now;
-        }).length;
-        setActiveFlareCount(count);
-
-      } catch (err) {
-        console.error('Failed to fetch flare count:', err);
-      }
-    };
-    fetchFlareData();
-    return () => { cancelled = true; };
-  }, [user?.uid, user?.school, subjects, flaresEnabled]);
 
   const isViewingPeer = peerViewMode === 'peer-island' && selectedPeer !== null;
 
@@ -308,50 +269,11 @@ const JourneyView: React.FC<JourneyViewProps> = ({
                 >
                   <Users size={18} className="text-zinc-900 dark:text-white" />
                 </button>
-                {/* SOS Flare button */}
-                {flaresEnabled !== false && (
-                  <MotionDiv
-                    animate={{ scale: [1, 1.08, 1] }}
-                    transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-                  >
-                    <button
-                      onClick={() => { setFlareInitialView('launcher'); setFlareSystemOpen(true); }}
-                      className="p-2.5 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 backdrop-blur-sm border border-amber-400/50 hover:from-amber-400 hover:to-orange-500 transition-all shadow-lg shadow-amber-500/30"
-                      title="SOS Flare"
-                    >
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-white">
-                        <path d="M12 2L8 10h8L12 2z" fill="currentColor" />
-                        <path d="M12 10v8" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                        <circle cx="12" cy="21" r="1.5" fill="currentColor" opacity="0.6" />
-                        <path d="M5 5l2 2M19 5l-2 2M3 12h3M18 12h3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.5" />
-                      </svg>
-                    </button>
-                  </MotionDiv>
-                )}
               </div>
             ) : (
               <div className="w-[42px]" />
             )}
           </div>
-
-          {/* Horizon Glow — shown when active flares exist */}
-          <AnimatePresence>
-            {activeFlareCount > 0 && flaresEnabled !== false && !isViewingPeer && (
-              <MotionDiv
-                initial={{ opacity: 0 }}
-                animate={{ opacity: [0.3, 0.6, 0.3] }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-                onClick={() => { setFlareInitialView('feed'); setFlareSystemOpen(true); }}
-                className="fixed top-20 left-1/2 -translate-x-1/2 z-[72] cursor-pointer flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-500/80 to-orange-500/80 backdrop-blur-sm shadow-lg shadow-amber-500/20"
-              >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="text-white">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
-                </svg>
-                <span className="text-xs font-bold text-white">{activeFlareCount} active</span>
-              </MotionDiv>
-            )}
-          </AnimatePresence>
 
           {/* Progress Pill — shown when drawer is closed and viewing own island */}
           <AnimatePresence>
@@ -519,41 +441,6 @@ const JourneyView: React.FC<JourneyViewProps> = ({
         }}
       />
 
-      {/* SOS Flare System Modal */}
-      <AnimatePresence>
-        {flareSystemOpen && (
-          <Suspense fallback={null}>
-            <FlareSystem
-              isOpen={flareSystemOpen}
-              onClose={() => {
-                setFlareSystemOpen(false);
-                // Re-fetch flare count on close
-                if (user?.uid && user?.school && subjects?.length && flaresEnabled !== false) {
-                  const q = query(
-                    collection(db, 'flares'),
-                    where('school', '==', user.school),
-                    where('status', '==', 'active'),
-                  );
-                  getDocs(q).then(snap => {
-                    const now = new Date();
-                    const count = snap.docs.filter(d => {
-                      const data = d.data();
-                      return data.senderUid !== user.uid
-                        && subjects?.includes(data.subject)
-                        && data.expiresAt?.toDate() > now;
-                    }).length;
-                    setActiveFlareCount(count);
-                  }).catch(() => {});
-                }
-              }}
-              initialView={flareInitialView}
-              uid={user.uid}
-              school={user.school || ''}
-              subjects={subjects || []}
-            />
-          </Suspense>
-        )}
-      </AnimatePresence>
     </div>
   );
 };

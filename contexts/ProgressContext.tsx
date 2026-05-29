@@ -75,7 +75,7 @@ interface ProgressContextValue {
   teachBacksSeen: string[];
 
   /** Escape hatch — only for hooks that own their own field on the progress
-   *  doc (useGamification, useIslandShop, useFlares, useWeeklyChallenge,
+   *  doc (useGamification, useIslandShop, useWeeklyChallenge,
    *  useTopicMastery, useMockResults). New code should use the typed
    *  accessors above. */
   rawProgressDoc: Record<string, any>;

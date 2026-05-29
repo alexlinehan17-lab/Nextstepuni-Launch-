@@ -10,7 +10,7 @@ import {
 } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
-import { containsProfanity } from '../components/flares/profanityFilter';
+import { containsProfanity } from '../utils/profanityFilter';
 
 // ── Types ──────────────────────────────────────────────────
 

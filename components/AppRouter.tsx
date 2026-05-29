@@ -429,7 +429,6 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           userProgress={userProgress}
           allCourses={studentCourses}
           subjects={studentProfile?.subjects?.map((s: any) => s.subjectName) ?? []}
-          flaresEnabled={settings?.flaresToggle !== false}
         />
       </Suspense>
     );
