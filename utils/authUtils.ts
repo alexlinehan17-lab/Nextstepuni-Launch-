@@ -33,6 +33,23 @@ export function isGraduated(yg: YearGroup | undefined): boolean {
   return yg === 'graduated';
 }
 
+// ─── Active senior cycle ────────────────────────────────────
+//
+// The TRUE "4th/5th/6th year" set — active senior cycle EXCLUDING
+// graduated. There is no '4th' token: Transition Year is 'TY'.
+//
+// NB: `yearGroupToCurriculumLevel('graduated')` is 'senior', so a plain
+// `curriculum: 'senior'` gate LEAKS senior-only tools to graduated users.
+// Tools that should disappear once a student has left school (e.g. the
+// CAO/HEAR/DARE roadmap) must gate on this predicate instead. Undefined
+// (legacy / partially-onboarded / GC / admin accounts) returns false.
+
+export const ACTIVE_SENIOR_YEARS = ['TY', '5th', '6th'] as const;
+
+export function isActiveSeniorYear(yg: YearGroup | undefined): boolean {
+  return yg === 'TY' || yg === '5th' || yg === '6th';
+}
+
 // ─── Year progression ──────────────────────────────────────
 //
 // Phase 8: forward-only year progression. Used by Settings → School Year
