@@ -1387,7 +1387,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
             <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Salary band</p>
             <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
               <p className="text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed mb-2">
-                Every course carries a <span className="font-bold">Low / Mid / High</span> salary band. These are <span className="font-bold">hand-curated reference values</span>, not predictions for you personally — they reflect typical mid-career graduate earnings in Ireland for that pathway, drawn from CSO labour data, the HEA Graduate Outcomes Survey, and published industry salary guides.
+                Every course carries a <span className="font-bold">Low / Mid / High</span> salary band. These are <span className="font-bold">informed reference values</span>, not predictions for you personally — they reflect roughly where typical mid-career graduate earnings sit in Ireland for that pathway, based on the general patterns visible across publicly-available labour-market and graduate-outcome reporting.
               </p>
               <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed italic">
                 Two students in the same course will end up in very different bands depending on specialisation, region, and employer. The band is a useful first signal — not a number to bank on.
@@ -1400,13 +1400,13 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
             <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">Employability rating</p>
             <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
               <p className="text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed mb-2">
-                A <span className="font-bold">1 to 5 rating</span> per course, also hand-curated. Drawn from the HEA's "What Do Graduates Do" reports — specifically the share of graduates in further study or substantive employment within 9 months of finishing.
+                A <span className="font-bold">1 to 5 rating</span> per course, also informed-but-curated. Higher means the path from this course to substantive employment or further study tends to be more predictable in the Irish market.
               </p>
               <ul className="text-xs text-zinc-600 dark:text-zinc-400 space-y-1 leading-relaxed">
-                <li><span className="font-bold text-[#1A1A1A] dark:text-white">5</span> — 90%+ in employment or further study (medicine, nursing, education, accounting)</li>
-                <li><span className="font-bold text-[#1A1A1A] dark:text-white">4</span> — 80–90% (engineering, computer science, most business)</li>
-                <li><span className="font-bold text-[#1A1A1A] dark:text-white">3</span> — 70–80% (general degrees, sciences, social sciences)</li>
-                <li><span className="font-bold text-[#1A1A1A] dark:text-white">1–2</span> — Niche or saturated fields where placement is less predictable</li>
+                <li><span className="font-bold text-[#1A1A1A] dark:text-white">5</span> — Very strong outcomes (medicine, nursing, education, accounting)</li>
+                <li><span className="font-bold text-[#1A1A1A] dark:text-white">4</span> — Strong (engineering, computer science, most business)</li>
+                <li><span className="font-bold text-[#1A1A1A] dark:text-white">3</span> — Solid (general degrees, sciences, social sciences)</li>
+                <li><span className="font-bold text-[#1A1A1A] dark:text-white">1–2</span> — Niche or competitive fields where placement is less predictable</li>
               </ul>
             </div>
           </section>
