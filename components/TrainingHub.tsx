@@ -427,24 +427,48 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
           </MotionDiv>
         )}
 
-        {/* ── North Star ── */}
+        {/* ── North Star ──
+            Pulled into the chunky-shadow + painted-blob language. The
+            rank colour now lives in the blob and compass ink (instead of
+            being the full gradient background), which keeps the emotional
+            link between rank and "why you're studying" without turning
+            the panel into a saturated island that's at odds with every
+            other surface on the page. */}
         {northStar && (
           <MotionDiv {...stagger(6)} className="mt-10">
-            <div className="relative overflow-hidden rounded-2xl" style={{ background: `linear-gradient(135deg, ${currentRank.colorHex}, ${currentRank.colorHex}dd)` }}>
-              {/* Decorative circles */}
-              <div className="absolute pointer-events-none" style={{ top: -30, right: -20, width: 100, height: 100, borderRadius: '50%', background: 'rgba(255,255,255,0.1)' }} />
-              <div className="absolute pointer-events-none" style={{ bottom: -15, left: -15, width: 70, height: 70, borderRadius: '50%', background: 'rgba(255,255,255,0.07)' }} />
-
-              <div className="relative z-10 p-6 text-center">
-                <div className="w-10 h-10 rounded-full mx-auto mb-3 flex items-center justify-center" style={{ backgroundColor: 'rgba(255,255,255,0.18)' }}>
-                  <Compass size={20} color="#fff" />
+            <div className="rounded-2xl bg-white dark:bg-zinc-900 p-6 md:p-8 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46]">
+              <div className="flex flex-col items-center text-center">
+                {/* Painted blob compass — same recipe as AchievementGallery,
+                    rank-colour fills the blob + ink so the card still
+                    reads as "your" North Star at your current stage. */}
+                <div className="relative w-16 h-16 mb-4 shrink-0">
+                  <svg viewBox="0 0 64 64" className="absolute inset-0 w-full h-full" aria-hidden="true">
+                    <path
+                      d="M 38 4 Q 12 6 6 28 Q 2 50 22 56 Q 50 62 60 36 Q 64 12 48 4 Q 42 2 38 4 Z"
+                      fill={`${currentRank.colorHex}33`}
+                    />
+                  </svg>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <Compass size={28} color={currentRank.colorHex} />
+                  </div>
                 </div>
-                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 700, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', marginBottom: '8px' }}>Your North Star</p>
-                <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '18px', fontStyle: 'italic', lineHeight: 1.5, color: '#fff' }}>
+
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: 'var(--text-label)', textTransform: 'uppercase', marginBottom: '10px' }}>
+                  Your North Star
+                </p>
+
+                <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '20px', fontStyle: 'italic', lineHeight: 1.45, color: 'var(--text-primary)', maxWidth: 460 }}>
                   &ldquo;{northStar.statement}&rdquo;
                 </p>
-                <button onClick={onOpenJourney} className="mt-4 inline-flex items-center gap-1.5 group px-4 py-2 rounded-full text-xs font-semibold transition-colors" style={{ backgroundColor: 'rgba(255,255,255,0.2)', color: '#fff' }}>
-                  My Journey <ArrowRight size={12} className="group-hover:translate-x-0.5 transition-transform" />
+
+                {/* Chunky-shadow accent button — same press feel as the
+                    year-bump CTA. */}
+                <button
+                  onClick={onOpenJourney}
+                  className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
+                >
+                  My Journey
+                  <ArrowRight size={14} />
                 </button>
               </div>
             </div>
