@@ -230,10 +230,10 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
       <div className={cardShell}>
         {selectionChip}
         <div className="flex items-center justify-between mb-4">
-          <span className="text-[10px] font-bold uppercase tracking-[0.15em] px-2.5 py-1 rounded-full" style={{ backgroundColor: '#F0EEEB', color: '#7a7068' }}>
+          <span className="text-[10px] font-bold uppercase tracking-[0.15em] px-2.5 py-1 rounded-full truncate min-w-0" style={{ backgroundColor: '#F0EEEB', color: '#7a7068' }}>
             {card.subjectLabel} · {card.questionRef}
           </span>
-          <span className="text-[11px] font-semibold text-[#7a7068] dark:text-zinc-400">
+          <span className="text-[11px] font-semibold text-[#7a7068] dark:text-zinc-400 shrink-0 ml-2 whitespace-nowrap">
             {card.marks} marks · ~{card.minutes} min
           </span>
         </div>

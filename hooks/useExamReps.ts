@@ -70,6 +70,7 @@ export function useExamReps(uid: string | undefined) {
         ? [...prev.leakCardIds, result.cardId]
         : prev.leakCardIds.filter(id => result.missedRibbons > 0 || id !== result.cardId);
       const next: ExamRepsState = {
+        ...prev, // preserve selection + any other fields
         banked: prev.banked + Math.max(0, result.capturedMarks),
         attempts: prev.attempts + 1,
         seenCardIds: seen,
