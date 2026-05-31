@@ -123,7 +123,9 @@ function renderQuestion(card: RepCard, tappable: boolean, tipOpen: boolean, onTo
 const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid, studentSubjects }) => {
   const { state, isLoaded, recordRep, setSelection } = useExamReps(uid);
   const sel = state.selection;
-  const [forcePicker, setForcePicker] = useState(false);
+  // Picker is the landing screen on every entry; the saved selection is kept
+  // and highlighted there for a one-tap continue.
+  const [showPicker, setShowPicker] = useState(true);
   const studentSubjectIds = useMemo(() => mapStudentSubjects(studentSubjects), [studentSubjects]);
 
   const [cardIndex, setCardIndex] = useState(0);
@@ -166,13 +168,13 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
     recordedRef.current = false; setBeat('intro');
   };
 
-  const onPick = (s: RepSelection) => { setSelection(s); setForcePicker(false); setCardIndex(0); resetRep(); };
+  const onPick = (s: RepSelection) => { setSelection(s); setShowPicker(false); setCardIndex(0); resetRep(); };
 
   // ── Gates: loading → picker → empty topic → the rep loop ──
   if (!isLoaded) {
     return <div className="w-full max-w-xl mx-auto py-16 text-center text-sm text-zinc-400">Loading…</div>;
   }
-  if (forcePicker || !sel) {
+  if (showPicker || !sel) {
     return <SubjectPicker selection={sel} onSelect={onPick} studentSubjectIds={studentSubjectIds} />;
   }
   if (!card || !derived) {
@@ -180,7 +182,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
     return (
       <div className="w-full max-w-xl mx-auto py-16 text-center">
         <p className="text-sm text-[#7a7068] mb-4">No {subjName} reps for this topic yet — we’re forging them.</p>
-        <PrimaryActionButton label="Pick another topic" onClick={() => setForcePicker(true)} />
+        <PrimaryActionButton label="Pick another topic" onClick={() => setShowPicker(true)} />
       </div>
     );
   }
@@ -209,7 +211,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
   const selectionChip = (
     <button
       type="button"
-      onClick={() => setForcePicker(true)}
+      onClick={() => setShowPicker(true)}
       className="w-full flex items-center gap-2 mb-4 px-3 py-1.5 rounded-lg text-left transition-colors hover:bg-[#EDEBE8]"
       style={{ backgroundColor: '#F9F9F7' }}
     >
