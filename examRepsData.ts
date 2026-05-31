@@ -4832,5 +4832,477 @@ export const REP_CARDS: RepCard[] = [
     },
     "subjectId": "mathematics",
     "topicId": "mathematics-2-2"
+  },
+  {
+    "id": "maths-ol-0-3-2",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "ordinary",
+    "year": 2018,
+    "questionRef": "2018 OL P2 Q9 (representative)",
+    "questionText": "A national newspaper publishes the following headline:\n\n\"POLL SHOWS 54% OF IRISH ADULTS SUPPORT THE NEW RECYCLING LAW\"\n\nUnderneath the headline, the newspaper prints the following note about how the poll was carried out:\n\n\"1,100 adults were surveyed. The poll has a margin of error of ±3% at a confidence level of 95%.\"\n\n(a) The newspaper claims that \"a clear majority of all Irish adults support the new law.\" Using the figures given, explain whether the margin of error supports this claim. Justify your answer fully.\n\n(b) Write down the interval (range of percentages) within which the true level of support in the whole adult population is likely to lie.\n\n(c) A reader makes the following statement: \"Because the margin of error is only ±3%, we can be 100% certain that the true support is between those two values.\" State whether the reader is correct, and explain your answer with reference to the confidence level.\n\n(d) The newspaper wants to reduce the margin of error for its next poll. State one thing it could do to achieve this, and explain why it would work.",
+    "marks": 25,
+    "minutes": 25,
+    "answerKind": "written",
+    "commandWord": {
+      "word": "explain",
+      "reminder": "Give clear reasons; show how the figures justify your answer."
+    },
+    "ribbons": [
+      {
+        "label": "(a) Calculates lower bound 54 − 3 = 51%",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(a) Compares with 50% and states majority is supported",
+        "marks": 4,
+        "kind": "explain"
+      },
+      {
+        "label": "(b) States lower value 51%",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(b) States upper value 57%",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(c) States reader is incorrect",
+        "marks": 3,
+        "kind": "attempt"
+      },
+      {
+        "label": "(c) Explanation referring to 95% (not 100%) / 1-in-20 chance outside",
+        "marks": 4,
+        "kind": "explain"
+      },
+      {
+        "label": "(d) States increase the sample size",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(d) Correct reason (larger sample → smaller margin of error)",
+        "marks": 2,
+        "kind": "explain"
+      }
+    ],
+    "lesson": {
+      "text": "The most common error in part (a) is to argue from the headline figure of 54% alone (\"54% is more than 50%, so yes\"). That earns no credit for the reasoning — the whole point of the margin of error is that you must test the WORST case. Always subtract the margin of error first (54 − 3 = 51) and compare the LOWER bound to 50%. The claim only holds if the entire interval stays above 50%. Had the figure been, say, 52% with ±3%, the lower bound (49%) would dip below 50% and the \"clear majority\" claim would NOT be supported.",
+      "source": "2018 OL P2 Q9 (representative)"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-0-3"
+  },
+  {
+    "id": "maths-ol-0-3-3",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "ordinary",
+    "year": 2017,
+    "questionRef": "2017 OL P2 Q8 (representative)",
+    "questionText": "A company that sells a sports drink runs an advertisement. The advertisement makes the following claim:\n\n\"9 OUT OF 10 ATHLETES PREFER our drink to any other!\"\n\nThe small print at the bottom of the advertisement gives the following details about how this result was found:\n\n• 20 people were asked.\n• All 20 people were members of a team that is sponsored by (paid by) the sports-drink company.\n• The 20 people were asked the question: \"Don't you agree that our amazing drink is the best you have ever tasted?\"\n\n(a) The advertisement says \"9 out of 10 athletes prefer our drink.\" Write \"9 out of 10\" as a percentage.\n\n(b) Give TWO different reasons why this survey is biased (not fair), and for each reason explain clearly how it could affect the result.\n\n(c) The advertisement suggests the result applies to athletes in general. Explain why the sample used is too small and unsuitable to support a claim about \"athletes\" as a whole.\n\n(d) Describe one specific change the company could make to carry out a fairer survey. Explain why your change would improve the survey.",
+    "marks": 25,
+    "minutes": 25,
+    "answerKind": "written",
+    "commandWord": {
+      "word": "explain",
+      "reminder": "Give clear reasons; for bias, attack from different angles (who, how, how many)."
+    },
+    "ribbons": [
+      {
+        "label": "(a) Correct percentage 90%",
+        "marks": 4,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Reason 1: valid reason stated",
+        "marks": 2,
+        "kind": "explain"
+      },
+      {
+        "label": "(b) Reason 1: explanation of effect on result",
+        "marks": 3,
+        "kind": "explain"
+      },
+      {
+        "label": "(b) Reason 2: valid (different) reason stated",
+        "marks": 2,
+        "kind": "explain"
+      },
+      {
+        "label": "(b) Reason 2: explanation of effect on result",
+        "marks": 3,
+        "kind": "explain"
+      },
+      {
+        "label": "(c) States 20 is too small / not representative",
+        "marks": 3,
+        "kind": "attempt"
+      },
+      {
+        "label": "(c) Valid explanation (unreliable / cannot generalise / large effect per person)",
+        "marks": 3,
+        "kind": "explain"
+      },
+      {
+        "label": "(d) States a specific, valid change",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(d) Explanation of why it improves the survey",
+        "marks": 2,
+        "kind": "explain"
+      }
+    ],
+    "lesson": {
+      "text": "In part (b) students very often give two versions of the SAME reason — for example \"the question is unfair\" and \"the words are pushy\" — and lose half the marks because the examiner counts them as one point. Train yourself to attack a biased survey from DIFFERENT angles: (1) WHO was asked (the sample — biased, not random, vested interest), (2) HOW they were asked (the question — leading/loaded), and (3) HOW MANY were asked (sample size). One reason from each angle guarantees two distinct, creditworthy points.",
+      "source": "2017 OL P2 Q8 (representative)"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-0-3"
+  },
+  {
+    "id": "maths-hl-1-1-2",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "higher",
+    "year": 2018,
+    "questionRef": "2018 HL P2 Q2 (representative)",
+    "questionText": "The points A(−2, 5) and B(6, 1) are two vertices of a triangle in the coordinate plane.\n\n(a) Find the coordinates of M, the midpoint of [AB].\n\n(b) The line k is the perpendicular bisector of [AB]. Show that the equation of k is 2x − y − 1 = 0.\n\n(c) A third point, C(4, 7), is the remaining vertex of the triangle. Verify that C lies on the line k, and hence explain what this tells you about the lengths |CA| and |CB|.\n\n(d) Find the area of triangle ABC.\n\n(e) Find the perpendicular distance from the origin O(0, 0) to the line k. Give your answer in the form a√5⁄5, where a ∈ ℚ.",
+    "marks": 25,
+    "minutes": 25,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Find",
+      "reminder": "Work out the value or expression, showing your steps."
+    },
+    "ribbons": [
+      {
+        "label": "(a) Midpoint correct",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Slope of AB and perpendicular slope (2), substituted through M to obtain stated equation",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "(c) Correct substitution showing C on k AND correct conclusion |CA| = |CB| (isosceles)",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "(d) Area formula applied correctly with right substitution → 20",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "(e) Distance-from-point-to-line formula applied → √5/5",
+        "marks": 5,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "In part (e) the most common error is forgetting that the perpendicular-distance formula requires the line in the form ax + by + c = 0 and then dividing by √(a² + b²) — students routinely divide by the wrong quantity (e.g. by a + b, or omit the square root). In part (b), \"Show that\" means you must derive the equation independently and arrive at the exact given form; just verifying a point satisfies it earns no marks.",
+      "source": "2018 HL P2 Q2 (representative)"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-1-1"
+  },
+  {
+    "id": "maths-hl-1-1-3",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "higher",
+    "year": 2019,
+    "questionRef": "2019 HL P2 Q4 (representative)",
+    "questionText": "A circle c has equation x² + y² − 6x + 4y − 12 = 0.\n\n(a) Find the coordinates of the centre and the length of the radius of c.\n\n(b) Verify that the point P(7, 1) lies on the circle c, and find the equation of the tangent to c at P. Give your answer in the form ax + by + d = 0, where a, b, d ∈ ℤ.\n\n(c) The line L: x − 2y − 2 = 0 intersects the circle c at two points. Find the coordinates of these two points of intersection.\n\n(d) Hence, or otherwise, find the length of the chord that L cuts on the circle, in the form k√5, k ∈ ℕ.",
+    "marks": 30,
+    "minutes": 30,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Find",
+      "reminder": "Work out the value or expression, showing your steps."
+    },
+    "ribbons": [
+      {
+        "label": "(a) Centre (3, −2) correct",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "(a) Radius = 5 correct",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Verify P on c AND obtain tangent slope −4/3 from perpendicular radius",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Correct tangent equation 4x + 3y − 31 = 0 in required form",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "(c) Substitute L into c, solve quadratic, both points found correctly",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "(d) Correct chord length 4√5",
+        "marks": 5,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "In part (b) candidates frequently use the slope of the radius directly as the tangent slope, forgetting the tangent is perpendicular to the radius at the point of contact (so they must take the negative reciprocal). In part (c) the most common loss of marks is solving the quadratic for one variable and then forgetting to back-substitute to find the partner coordinate — you must give full (x, y) coordinate pairs, not just the y-values. A quick sanity check (each found point should satisfy the original circle equation) catches sign slips.",
+      "source": "2019 HL P2 Q4 (representative)"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-1-1"
+  },
+  {
+    "id": "maths-hl-1-3-2",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "higher",
+    "year": 2017,
+    "questionRef": "2017 HL P2 Q4 (representative)",
+    "questionText": "A triangle has vertices A(2, 1), B(6, 1) and C(2, 4). A second triangle has vertices A′(−1, −2), B′(11, −2) and C′(−1, 7). The triangle ABC is mapped onto the triangle A′B′C′ by an enlargement.\n\n(a) Find the scale factor k of the enlargement.\n\n(b) Find the coordinates of the centre of enlargement O.\n\n(c) The area of triangle ABC is 6 square units. Find the area of triangle A′B′C′.",
+    "marks": 15,
+    "minutes": 15,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Find",
+      "reminder": "Work it out and give the result."
+    },
+    "ribbons": [
+      {
+        "label": "(a) Correct length of one object side AND its image side computed",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(a) Correct k = 3 from the ratio",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Correct method/relation linking O, P and P′ via factor k set up",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Correct O_x = 3.5",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Correct O_y = 2.5",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(c) States/uses area factor k²",
+        "marks": 1,
+        "kind": "method"
+      },
+      {
+        "label": "(c) Correct answer 54 square units",
+        "marks": 2,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "The most common error in part (b) is averaging the object and image coordinates or guessing the midpoint — students forget the centre is the unique fixed point and that O divides each ray in the ratio 1 : (k−1). Use the relation P′ − O = k(P − O) and solve for O; never assume the centre lies at the origin or at the midpoint of AA′. A second frequent slip is in (c): multiplying the area by k (=3) instead of k² (=9). Area always scales by the square of the linear scale factor.",
+      "source": "LESSON"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-1-3"
+  },
+  {
+    "id": "maths-hl-1-3-3",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "higher",
+    "year": 2019,
+    "questionRef": "2019 HL P2 Q3 (representative)",
+    "questionText": "An enlargement has centre O(1, 2) and scale factor k = −2 (a negative scale factor, so the image appears on the opposite side of the centre and is inverted).\n\n(a) The point P has coordinates (4, 6). Find the coordinates of its image P′ under this enlargement.\n\n(b) A second point Q has image Q′(7, −4) under the same enlargement. Find the coordinates of Q.\n\n(c) A line segment in the object has length 5 cm. State the length of its image. State also, with a reason, whether the image segment is parallel to the object segment.",
+    "marks": 15,
+    "minutes": 15,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Find / State",
+      "reminder": "Work out P′ and Q; state the image length and parallel reason."
+    },
+    "ribbons": [
+      {
+        "label": "(a) Vector P − O found using P′ = O + k(P − O)",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(a) Correct multiplication by −2",
+        "marks": 1,
+        "kind": "method"
+      },
+      {
+        "label": "(a) Correct P′ = (−5, −6)",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Correct rearrangement Q = O + (Q′ − O)/k",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Correct (Q′ − O)/k = (−3, 3)",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Correct Q = (−2, 5)",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(c) Correct image length 10 cm using |k|",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(c) States parallel",
+        "marks": 1,
+        "kind": "explain"
+      },
+      {
+        "label": "(c) Valid reason that enlargements preserve direction/slope",
+        "marks": 1,
+        "kind": "explain"
+      }
+    ],
+    "lesson": {
+      "text": "With a negative scale factor students routinely make two errors. First, they treat k as if it were +2 and place the image on the same side of the centre as the object — you must keep the minus sign, so the image is on the opposite side and inverted. Second, for lengths and areas they forget that distance uses the magnitude |k| (here length multiplies by 2, area by k² = 4), since a length can never be negative. When working backwards from image to object (part b), divide by k including its sign — do not multiply — or you will land four times too far from the centre on the wrong side.",
+      "source": "LESSON"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-1-3"
+  },
+  {
+    "id": "maths-hl-4-0-2",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "higher",
+    "year": 2017,
+    "questionRef": "2017 HL P1 Q5 (representative)",
+    "questionText": "The function f is defined for all real numbers x as f(x) = 2x² − 5x − 3.\n\n(a) Find f(−2).\n\n(b) Show that x = 3 is a root of f(x), and hence find the other value of x for which f(x) = 0.\n\n(c) The function g is defined for all real numbers x as g(x) = x + 1. Find an expression in x for the composite function f(g(x)), and write it in the form ax² + bx + c.",
+    "marks": 25,
+    "minutes": 25,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Find",
+      "reminder": "Work it out and give the result"
+    },
+    "ribbons": [
+      {
+        "label": "Correct substitution and evaluation f(−2) = 15",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "Shows f(3) = 0 by substitution",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "Correct factorisation / valid method to find second root",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "States other root x = −1/2",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "Correct substitution f(x + 1) and expansion of (x + 1)²",
+        "marks": 4,
+        "kind": "method"
+      },
+      {
+        "label": "Correct simplified answer 2x² − x − 6",
+        "marks": 3,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "In part (c) the most common error is computing g(f(x)) instead of f(g(x)), or substituting only into the squared term and forgetting the linear term — students write 2(x+1)² − 5x − 3. The inner function must replace x EVERYWHERE in f, including the −5x term, giving −5(x+1). Always rewrite f with empty brackets first: f(▢) = 2(▢)² − 5(▢) − 3, then drop g(x) into every box.",
+      "source": "LESSON"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-4-0"
+  },
+  {
+    "id": "maths-hl-4-0-3",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "higher",
+    "year": 2019,
+    "questionRef": "2019 HL P1 Q4 (representative)",
+    "questionText": "The function h is defined as h(x) = (3x − 4) / (x + 2), where x ∈ ℝ, x ≠ −2.\n\n(a) Evaluate h(0).\n\n(b) Find h⁻¹(x), the inverse function of h.\n\n(c) Using your answer to part (b), or otherwise, find the value of x for which h(x) = 5.\n\n(d) State the value of x that must be excluded from the domain of h⁻¹(x), and explain briefly why.",
+    "marks": 25,
+    "minutes": 25,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Find",
+      "reminder": "Work it out and give the result"
+    },
+    "ribbons": [
+      {
+        "label": "Correct evaluation h(0) = −2",
+        "marks": 4,
+        "kind": "method"
+      },
+      {
+        "label": "Sets y = h(x) and clears the fraction (multiplies by x + 2)",
+        "marks": 4,
+        "kind": "method"
+      },
+      {
+        "label": "Correctly gathers x-terms and factors out x",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "Correct inverse h⁻¹(x) = (−2x − 4)/(x − 3) (or equivalent)",
+        "marks": 4,
+        "kind": "method"
+      },
+      {
+        "label": "Correct value x = −7 (by either method)",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "States x = 3 excluded with valid reason (denominator zero / not an output of h)",
+        "marks": 3,
+        "kind": "explain"
+      }
+    ],
+    "lesson": {
+      "text": "In part (b) the classic mistake is failing to collect ALL the x-terms on one side before factoring — students leave an x on each side and cannot isolate it. After cross-multiplying you must move every term containing x to one side (yx − 3x) and everything else to the other, then factor x out as a common factor; you cannot \"divide across\" while x still appears in two places. A quick reliability check (verify h⁻¹ undoes h using the part (a) point) catches sign slips that are extremely common in rational inverses.",
+      "source": "LESSON"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-4-0"
   }
 ];
