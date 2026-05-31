@@ -14,6 +14,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
+import { type RepSelection } from '../types/examReps';
 
 export interface ExamRepsState {
   /** All-time marks captured across every rep (the competence tally). */
@@ -22,6 +23,8 @@ export interface ExamRepsState {
   seenCardIds: string[];
   /** Card ids where the student missed ≥1 ribbon — for later resurfacing. */
   leakCardIds: string[];
+  /** The student's current Subject → Level → Topic selection. */
+  selection?: RepSelection;
   updatedAt: string;
 }
 
@@ -80,5 +83,14 @@ export function useExamReps(uid: string | undefined) {
     });
   }, [uid]);
 
-  return { state, isLoaded, recordRep };
+  /** Persist the student's Subject → Level → Topic selection. */
+  const setSelection = useCallback((selection: RepSelection) => {
+    setState(prev => {
+      const next = { ...prev, selection, updatedAt: new Date().toISOString() };
+      if (uid) setDoc(doc(db, 'progress', uid), { examReps: next }, { merge: true }).catch(() => {});
+      return next;
+    });
+  }, [uid]);
+
+  return { state, isLoaded, recordRep, setSelection };
 }

@@ -20,7 +20,11 @@ import { COLORS } from '../../design/tokens';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { useExamReps } from '../../hooks/useExamReps';
 import { REP_CARDS } from '../../examRepsData';
-import { type RepCard, type Confidence, ribbonId } from '../../types/examReps';
+import { CURRICULUM } from '../../curriculum';
+import SubjectPicker from './SubjectPicker';
+import { type RepCard, type Confidence, type RepSelection, ribbonId } from '../../types/examReps';
+
+const LEVEL_LABEL: Record<string, string> = { higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation', common: 'Common' };
 
 type Beat = 'intro' | 'attempt' | 'mark' | 'done';
 
@@ -96,7 +100,9 @@ function renderQuestion(card: RepCard, tappable: boolean, tipOpen: boolean, onTo
 }
 
 const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
-  const { state, recordRep } = useExamReps(uid);
+  const { state, isLoaded, recordRep, setSelection } = useExamReps(uid);
+  const sel = state.selection;
+  const [forcePicker, setForcePicker] = useState(false);
 
   const [cardIndex, setCardIndex] = useState(0);
   const [beat, setBeat] = useState<Beat>('intro');
@@ -108,7 +114,11 @@ const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
   const [finished, setFinished] = useState(false);
   const recordedRef = useRef(false);
 
-  const card = REP_CARDS[cardIndex];
+  const activeCards = useMemo(
+    () => (sel ? REP_CARDS.filter(c => c.subjectId === sel.subjectId && c.level === sel.level && c.topicId === sel.topicId) : []),
+    [sel],
+  );
+  const card = activeCards[cardIndex];
 
   // soft timer — only runs during the attempt
   useEffect(() => {
@@ -128,26 +138,34 @@ const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
     return { totalMarks, captured, onTable, allMarked, missedCount, gateMissed };
   }, [card, ribbonHad]);
 
-  if (!card || !derived) {
-    return (
-      <div className="w-full max-w-xl mx-auto py-16 text-center text-[#7a7068]">
-        No reps available yet — more are being added.
-      </div>
-    );
-  }
-
   const resetRep = () => {
     setConfidence(null); setAnswer(''); setTipOpen(false);
     setRibbonHad({}); setElapsed(0); setFinished(false);
     recordedRef.current = false; setBeat('intro');
   };
 
+  const onPick = (s: RepSelection) => { setSelection(s); setForcePicker(false); setCardIndex(0); resetRep(); };
+
+  // ── Gates: loading → picker → empty topic → the rep loop ──
+  if (!isLoaded) {
+    return <div className="w-full max-w-xl mx-auto py-16 text-center text-sm text-zinc-400">Loading…</div>;
+  }
+  if (forcePicker || !sel) {
+    return <SubjectPicker selection={sel} onSelect={onPick} />;
+  }
+  if (!card || !derived) {
+    const subjName = CURRICULUM.find(s => s.id === sel.subjectId)?.name ?? 'these';
+    return (
+      <div className="w-full max-w-xl mx-auto py-16 text-center">
+        <p className="text-sm text-[#7a7068] mb-4">No {subjName} reps for this topic yet — we’re forging them.</p>
+        <PrimaryActionButton label="Pick another topic" onClick={() => setForcePicker(true)} />
+      </div>
+    );
+  }
+
   const pickNext = (): number => {
-    if (REP_CARDS.length <= 1) return cardIndex;
-    const curr = REP_CARDS[cardIndex];
-    const others = REP_CARDS.map((c, i) => ({ c, i })).filter(x => x.i !== cardIndex);
-    const diffSubject = others.filter(x => x.c.subject !== curr.subject);
-    return (diffSubject.length ? diffSubject : others)[0].i;
+    if (activeCards.length <= 1) return cardIndex;
+    return (cardIndex + 1) % activeCards.length;
   };
 
   const goDone = () => {
@@ -164,10 +182,27 @@ const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
 
   const cardShell = 'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
 
+  const selSubject = CURRICULUM.find(s => s.id === sel.subjectId);
+  const selTopic = selSubject?.strands.flatMap(st => st.subtopics).find(t => t.id === sel.topicId);
+  const selectionChip = (
+    <button
+      type="button"
+      onClick={() => setForcePicker(true)}
+      className="w-full flex items-center gap-2 mb-4 px-3 py-1.5 rounded-lg text-left transition-colors hover:bg-[#EDEBE8]"
+      style={{ backgroundColor: '#F9F9F7' }}
+    >
+      <span className="text-[11px] font-semibold text-[#7a7068] truncate flex-1">
+        {selSubject?.name} · {LEVEL_LABEL[sel.level] ?? sel.level} · {selTopic?.name ?? '—'}
+      </span>
+      <span className="text-[10px] font-bold uppercase tracking-wide shrink-0" style={{ color: COLORS.accentDarkText }}>Change ›</span>
+    </button>
+  );
+
   // ── INTRO ──────────────────────────────────────────────────────────────
   if (beat === 'intro') {
     return (
       <div className={cardShell}>
+        {selectionChip}
         <div className="flex items-center justify-between mb-4">
           <span className="text-[10px] font-bold uppercase tracking-[0.15em] px-2.5 py-1 rounded-full" style={{ backgroundColor: '#F0EEEB', color: '#7a7068' }}>
             {card.subjectLabel} · {card.questionRef}

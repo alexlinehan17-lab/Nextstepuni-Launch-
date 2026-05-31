@@ -2,21 +2,12 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Exam Reps — the Rep Card bank.
+ * Exam Reps — the Rep Card bank. AGENT-FORGED from real SEC sources via a
+ * forge → verify → repair → re-verify pipeline. Each card is tagged
+ * subjectId · level · topicId against curriculum.ts.
  *
- * Cards are AGENT-FORGED from real State Examinations Commission sources via a
- * forge → verify → repair → re-verify pipeline. Question text reproduced
- * faithfully; the real marking scheme rebuilt as checkable "mark ribbons"
- * whose non-gate marks sum to the tariff; every lesson examiner-cited.
- *
- * ⚠️ HARD CONTENT RULE — cards MUST be SELF-CONTAINED: answerable from the
- * student's own knowledge, or with ALL needed data in the stem. NEVER a
- * question depending on an external case study (Business ABQ), comprehension
- * passage (English Paper 1), or accompanying data/map/diagram not reproduced
- * here. English/History essays are self-contained: the student supplies the
- * studied text / topic.
- *
- * ⚠️ Cycle-dated reference content — re-verify against current schemes yearly.
+ * ⚠️ HARD RULES: SELF-CONTAINED (no external case/passage/data); every card
+ * carries a valid curriculum topicId. Re-verify yearly.
  */
 import { type RepCard } from './types/examReps';
 
@@ -56,7 +47,9 @@ export const REP_CARDS: RepCard[] = [
     "lesson": {
       "text": "This is the exact part the Chief Examiner singled out: candidates handled single-rate conversions in (a) and (b) well, but 'when asked to convert using two exchange rates (Part (c)...), the majority were unable to successfully complete this conversion.' Part (c) runs on a 5-mark (0, 3, 4, 5) scale — 3 for working on the $→€ or £→€ rate, 4 for the correct intermediate rate, 5 for the final answer. The trick is to go via the euro: $1 = €(1/1·24) ≈ €0·806, then × 0·83 to get £0·67 — don't try to combine the two rates directly.",
       "source": "Chief Examiner 2015 p.26; Marking scheme 2015, Paper 1 Q1(c), Scale 5C (0, 3, 4, 5)"
-    }
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-2-2"
   },
   {
     "id": "business-hl-2025-s1-q5-cgt-cat",
@@ -98,7 +91,9 @@ export const REP_CARDS: RepCard[] = [
     "lesson": {
       "text": "'Distinguish' questions reward a clear contrast, not two parallel definitions. The 2015 Chief Examiner repeatedly flagged that 'recall of definitions has merit... however the requirement to build on the definitions to answer the actual questions set at the Higher level was not always evident' — define both taxes, then make the difference between them explicit.",
       "source": "Chief Examiner 2015, p.16-17; Marking scheme 2025 Section 1 Q5 (3+2)(3+2)"
-    }
+    },
+    "subjectId": "business",
+    "topicId": "business-3-3"
   },
   {
     "id": "geo-hl-2023-q6b",
@@ -139,7 +134,9 @@ export const REP_CARDS: RepCard[] = [
     "lesson": {
       "text": "You can write a flawless description of each factor and still be capped at just 4 marks per factor — the scheme rewards “merely describing the factor” at a maximum of 2 points. The marks live in the LINK: “Because [factor]…, [the activity] developed/located here…”. And name your European (non-Irish) region up front — an examination with no named or clearly-inferred region scores zero.",
       "source": "Chief Examiner 2012, p.27 · Marking scheme 2023, p.22"
-    }
+    },
+    "subjectId": "geography",
+    "topicId": "geography-1-1"
   },
   {
     "id": "business-hl-2025-s1-q6-ethical-practice",
@@ -181,7 +178,9 @@ export const REP_CARDS: RepCard[] = [
     "lesson": {
       "text": "The cue 'Outline' expects two developed points, each scored Name (3) + Explain (2). Reviewing the 2015 paper, the Chief Examiner warned that 'only one valid point is often given when two or three points are required' and that cues such as 'outline' and 'explain' 'are often not addressed adequately' — pick two genuinely different methods and develop each rather than repeating one.",
       "source": "Chief Examiner 2015, p.20; Marking scheme 2025 Section 1 Q6 2@(3+2)"
-    }
+    },
+    "subjectId": "business",
+    "topicId": "business-5-11"
   },
   {
     "id": "lc-maths-ol-2019-p1-q1",
@@ -218,7 +217,9 @@ export const REP_CARDS: RepCard[] = [
     "lesson": {
       "text": "Income tax is a three-step routine: (1) gross tax = 20% of the cut-off + 40% of whatever is above it, (2) tax payable = gross tax − tax credits, (3) net income = gross wage − tax payable. The marking scheme gives 'Low Partial Credit' just for 'use of 20%, 40% or similar', so always start the layout even if unsure – each correct step earns marks. The standard-rate tax is on €35 300, the 40% rate only on the €4700 remainder.",
       "source": "SEC Leaving Certificate 2019 Mathematics Ordinary Level Marking Scheme, Paper 1, Q1 model solution (examinations.ie; copy hosted at educateplus.ie)"
-    }
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-2-2"
   },
   {
     "id": "geog-hl-2023-q3b-tectonic-cycle",
@@ -255,7 +256,9 @@ export const REP_CARDS: RepCard[] = [
     "lesson": {
       "text": "Do not just describe plate-tectonic theory. The examiner flagged candidates who 'over emphasised the description of the theory of plate tectonics, and failed to link the theory to the distribution' — the marks are for the LINK, so every point should connect the process to the global pattern.",
       "source": "SEC Leaving Certificate Geography 2012 Chief Examiner's Report, Higher Level, p.25 (Q1C commentary)"
-    }
+    },
+    "subjectId": "geography",
+    "topicId": "geography-0-0"
   },
   {
     "id": "eng-hl-p2-singletext-hamlet-2012",
@@ -297,7 +300,9 @@ export const REP_CARDS: RepCard[] = [
     "lesson": {
       "text": "A recurring warning across SEC English reports is that, in the Single Text section, 'unfocused narrative remained a feature of the less successful attempts.' Whatever the prescribed play, the strongest answers avoid simple character sketches and plot retelling and instead build a focused discussion that engages clearly with the exact terms of the question, using apt quotation to drive an argument.",
       "source": "SEC Chief Examiner's Report, Leaving Certificate English, Higher Level, Section 3.3 (The Single Text) — general Single Text technique; the quoted line on 'unfocused narrative' is verbatim from the 2008 report, examinations.ie"
-    }
+    },
+    "subjectId": "english",
+    "topicId": "english-6-1"
   },
   {
     "id": "lc-maths-ol-2024-p1-q1",
@@ -334,7 +339,9 @@ export const REP_CARDS: RepCard[] = [
     "lesson": {
       "text": "Always show supporting work. The marking scheme states that 'an answer without sufficient supporting work is generally awarded the lowest non-zero level of credit', so a bare correct figure can lose most of the marks. For part (c), the safe method is reverse-percentage: divide by 112·5 and multiply by 100 (€47 000) – do NOT just take 12·5% of €52 875, which is the most common error.",
       "source": "SEC Leaving Certificate 2024 Mathematics Ordinary Level Marking Scheme, Paper 1, Q1 model solution and marking-scheme structure note (examinations.ie; copy hosted at educateplus.ie)"
-    }
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-2-2"
   },
   {
     "id": "geog-hl-2023-q1b-igneous-rocks",
@@ -376,7 +383,9 @@ export const REP_CARDS: RepCard[] = [
     "lesson": {
       "text": "Focus on the formation of the ROCK, not features or weathering. The examiner penalised candidates who 'described the formation of limestone features or described the process of weathering... instead of focusing on the formation of limestone rock' — the same trap applies to igneous rock: explain how the rock itself forms.",
       "source": "SEC Leaving Certificate Geography 2012 Chief Examiner's Report, Higher Level, p.25 (Q1B commentary)"
-    }
+    },
+    "subjectId": "geography",
+    "topicId": "geography-0-1"
   },
   {
     "id": "hist-hl-2019-s3t4-q1",
@@ -413,7 +422,9 @@ export const REP_CARDS: RepCard[] = [
     "lesson": {
       "text": "Examiners recommend that \"Candidates should learn to be aware from what perspective(s) a question is asked and what narrative and/or analytical demands the question is making\" and \"should be prepared to engage in historical argument.\" A two-part \"how... and how...\" question makes BOTH a narrative demand (developments) and an analytical one — cover both elements or CM is capped, and argue rather than merely retell to score the Overall Evaluation.",
       "source": "SEC Leaving Certificate 2006 History Chief Examiner's Report, Higher Level, Recommendations to Teachers and Candidates (p.31); 2019 HL Marking Scheme, Section 3 Topic 4 Q1 (TWO elements develop+end; if only ONE, Max CM=50)."
-    }
+    },
+    "subjectId": "history",
+    "topicId": "history-3-12"
   },
   {
     "id": "eng-hl-p2-comparative-themeissue-keymoments-2008",
@@ -455,7 +466,9 @@ export const REP_CARDS: RepCard[] = [
     "lesson": {
       "text": "On this exact question examiners noted many worthwhile answers offered 'a focused analysis of texts in the light of the wording of the question. However, some candidates lost sight of the \"sharp focus\" element and took a very general approach.' The best comparative answers address the nuances within the wording and make insightful, continuous comparisons rather than outlining broad similarities and differences.",
       "source": "SEC Chief Examiner's Report 2008, Leaving Certificate English, Higher Level, Section 3.3 (Section II, The Comparative Study, Theme or Issue, Q2), examinations.ie"
-    }
+    },
+    "subjectId": "english",
+    "topicId": "english-7-0"
   },
   {
     "id": "hist-hl-2019-s3t3-q1",
@@ -492,6 +505,8 @@ export const REP_CARDS: RepCard[] = [
     "lesson": {
       "text": "Examiners warn that some candidates \"offered historical content which was irrelevant to the set question\" and \"ignored the date parameters of the question,\" advising that \"Candidates should read each question carefully and answer it as it is set.\" Here that means staying inside the inter-war frame, covering the PLURAL \"regimes\" (so CM is not capped at 50), and answering the analytical word \"characteristics\" rather than narrating one dictator's rise to power.",
       "source": "SEC Leaving Certificate 2006 History Chief Examiner's Report, Higher Level, Conclusions (p.30) and Recommendations to Teachers and Candidates (p.31); 2019 HL Marking Scheme, Section 3 Topic 3 Q1 (Regimes plural; if only ONE regime, Max CM=50)."
-    }
+    },
+    "subjectId": "history",
+    "topicId": "history-3-8"
   }
 ];

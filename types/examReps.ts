@@ -52,6 +52,17 @@ export interface RepCard {
   /** ONE specific, examiner-sourced takeaway about this question's biggest leak. */
   lesson: { text: string; source: string };
   taskType?: string;       // for interleaving + coverage
+  /** Curriculum subject id (curriculum.ts), e.g. 'mathematics'. */
+  subjectId?: string;
+  /** Curriculum sub-topic id (curriculum.ts) — what the picker filters on. */
+  topicId?: string;
+}
+
+/** A student's Subject → Level → Topic selection, persisted. */
+export interface RepSelection {
+  subjectId: string;
+  level: string;
+  topicId: string;
 }
 
 /** Stable id for a ribbon (falls back to index when a forged card omits one). */
