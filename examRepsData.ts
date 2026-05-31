@@ -508,5 +508,722 @@ export const REP_CARDS: RepCard[] = [
     },
     "subjectId": "history",
     "topicId": "history-3-8"
+  },
+  {
+    "id": "maths-hl-2-0-1",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "higher",
+    "year": 2017,
+    "questionRef": "2017 HL P1 Q1",
+    "questionText": "(a) Write each of the following numbers in the form a + b, where a is an integer and b is an irrational number written in the form k√3 (k a rational number), and hence show that the sum is irrational:\n   (2 + √27) + (5 − √12).\n(b) Prove, by contradiction, that √3 is irrational. In your proof, you may assume that if 3 divides p², then 3 divides p, where p is a natural number.",
+    "marks": 25,
+    "minutes": 25,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Prove",
+      "reminder": "Give rigorous logical argument; justify every step"
+    },
+    "ribbons": [
+      {
+        "label": "Some correct simplification of at least one surd (√27 = 3√3 or √12 = 2√3) OR a correct opening statement of the contradiction in (b)",
+        "marks": 3,
+        "kind": "attempt"
+      },
+      {
+        "label": "(a) Low partial: both surds correctly simplified to 3√3 and 2√3, not yet combined",
+        "marks": 4,
+        "kind": "method"
+      },
+      {
+        "label": "(a) High partial: correct sum 7 + √3 obtained AND a valid reason it is irrational",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Setup: assumes √3 = p/q rational in lowest terms and squares to reach p² = 3q²",
+        "marks": 4,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Mid credit: deduces 3 | p, substitutes p = 3m, and reaches 3m² = q²",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Completion: deduces 3 | q, identifies common-factor contradiction, concludes √3 is irrational",
+        "marks": 6,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "The most common error in part (b) is forgetting to state at the outset that p/q is in its lowest terms (or that p, q share no common factor). Without that assumption there is no contradiction to reach at the end — the whole proof collapses because finding \"3 divides both p and q\" is only contradictory if you began by ruling out common factors. Examiners withhold the high partial credit when this lowest-terms condition is missing or only implied.",
+      "source": "SEC Chief Examiner's Report"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-2-0"
+  },
+  {
+    "id": "maths-ol-2-0-1",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "ordinary",
+    "year": 2018,
+    "questionRef": "2018 OL P1 Q1",
+    "questionText": "(a) The number 360 can be written as a product of its prime factors in the form 2^a x 3^b x 5^c. Find the value of a, the value of b and the value of c.\n\n(b)(i) Write the number 0.000 47 in the form a x 10^n, where 1 ≤ a < 10 and n is an integer.\n(ii) Write the number 3.6 x 10^5 as a natural number (i.e. without using powers of 10).\n\n(c) Two whole numbers are written as products of their prime factors:\n   P = 2^3 x 3^2 x 5\n   Q = 2^2 x 3 x 5^2\nUse these prime factorisations to find the Highest Common Factor (HCF) of P and Q.",
+    "marks": 25,
+    "minutes": 25,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Express / Write",
+      "reminder": "Rewrite the number in required form"
+    },
+    "ribbons": [
+      {
+        "label": "(a) Attempt: any correct division by a prime, or factor tree begun",
+        "marks": 3,
+        "kind": "attempt"
+      },
+      {
+        "label": "(a) Full: a = 3, b = 2, c = 1 all correct",
+        "marks": 7,
+        "kind": "method"
+      },
+      {
+        "label": "(b)(i) 4.7 x 10^(-4) fully correct (3 for correct digits, wrong index)",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "(b)(ii) 360 000 fully correct (3 for method with one place-value slip)",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "(c) HCF = 60 correct (2 for identifying common primes)",
+        "marks": 5,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "The single most common error is confusing HCF with LCM. For HCF you take the LOWEST power of each shared prime (giving 60 here); for LCM you take the HIGHEST power of every prime that appears in either number (which would give 2^3 x 3^2 x 5^2 = 1800). Students who \"multiply everything\" get 1800 and lose the marks. Underline whether the question asks for Highest Common Factor or Lowest Common Multiple before answering.",
+      "source": "SEC Chief Examiner's Report"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-2-0"
+  },
+  {
+    "id": "maths-ol-2-0-2",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "ordinary",
+    "year": 2017,
+    "questionRef": "2017 OL P1 Q2",
+    "questionText": "The natural numbers (N), integers (Z), rational numbers (Q) and real numbers (R) are different number sets.\n\n(a) State which of the following numbers are rational and which are irrational. Give a reason in each case.\n   (i) 0.75   (ii) √16   (iii) √7   (iv) π\n\n(b) A rational number is any number that can be written in the form p/q, where p and q are integers and q ≠ 0.\n   (i) Write the recurring decimal 0.4444... (0.4 recurring) as a fraction in the form p/q in its simplest form.\n   (ii) Hence, or otherwise, state whether 0.4444... is rational or irrational.\n\n(c) Two students are discussing the number √7. Aoife says: \"√7 lies between 2 and 3.\" Brian says: \"√7 lies between 2.6 and 2.7.\" By squaring, investigate whether each statement is true. State clearly who, if anyone, is correct.",
+    "marks": 25,
+    "minutes": 25,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Investigate / Show / Write",
+      "reminder": "Test the claims and state outcome"
+    },
+    "ribbons": [
+      {
+        "label": "(a) 2.5 per part: correct classification with valid reason (×4)",
+        "marks": 10,
+        "kind": "explain"
+      },
+      {
+        "label": "(b)(i) Attempt: sets up x = 0.444... and 10x = 4.444...",
+        "marks": 3,
+        "kind": "attempt"
+      },
+      {
+        "label": "(b)(i) Full: reaches 9x = 4 and x = 4/9 in simplest form",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "(b)(ii) States rational, consistent with part (i)",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(c) Both squarings (6.76 and 7.29) correct, compared to 7, conclusion",
+        "marks": 5,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "In part (c) the classic mistake is to \"check\" √7 by squaring √7 itself (getting 7) rather than squaring the BOUNDARY values and comparing them with 7. The valid method is: to test whether a < √7 < b, square the bounds to get a^2 < 7 < b^2. Also, in part (a) students frequently lose marks by giving the right classification with NO reason — the SEC scheme explicitly requires a reason, so always justify (perfect square / not a perfect square / terminating or recurring decimal).",
+      "source": "SEC Chief Examiner's Report"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-2-0"
+  },
+  {
+    "id": "maths-hl-2-1-1",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "higher",
+    "year": 2017,
+    "questionRef": "2017 HL P1 Q2",
+    "questionText": "Express each of the following in the form 2^k, where k is a rational number. (a) √8 × 4. (b) (1/16) ÷ (⁴√2). Hence, or otherwise, solve the equation (√8 × 4)^x ÷ 2^5 = (1/16) ÷ (⁴√2), giving your answer as a fraction in its lowest terms.",
+    "marks": 15,
+    "minutes": 15,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Express ... Hence ... solve",
+      "reminder": "Rewrite as power, then solve equation"
+    },
+    "ribbons": [
+      {
+        "label": "(a) Write √8 or 4 as power of 2 (e.g. 2^(3/2) or 2^2)",
+        "marks": 2,
+        "kind": "attempt"
+      },
+      {
+        "label": "(a) Correct answer 2^(7/2)",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Write 1/16 = 2^(-4) or ⁴√2 = 2^(1/4)",
+        "marks": 2,
+        "kind": "attempt"
+      },
+      {
+        "label": "(b) Correct answer 2^(-17/4)",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(c) Form 2^(7x/2 - 5) or equate exponents 7x/2 - 5 = -17/4",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(c) x = 3/14",
+        "marks": 3,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "The most common error is mishandling the index when a power is divided or raised to a further power. Students routinely write (2^(7/2))^x as 2^(7/2 + x) (adding instead of multiplying), or treat ÷ 2^5 as subtracting 5 from the base rather than from the exponent. Multiply exponents when raising a power to a power; subtract exponents when dividing. Keep everything as a single power of 2 before equating exponents, and never equate exponents until the bases are identical.",
+      "source": "SEC Chief Examiner's Report"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-2-1"
+  },
+  {
+    "id": "maths-ol-2-1-1",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "ordinary",
+    "year": 2016,
+    "questionRef": "2016 OL P1 Q1",
+    "questionText": "(a) Evaluate each of the following without using a calculator. Give each answer as a natural number.\n    (i)  5^3\n    (ii) 2^(-2)\n    (iii) 36^(1/2)\n(b) Write 27^(2/3) in the form 3^n, where n is a natural number, and hence evaluate 27^(2/3).",
+    "marks": 15,
+    "minutes": 15,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Evaluate",
+      "reminder": "Work out the exact numerical value"
+    },
+    "ribbons": [
+      {
+        "label": "(a)(i) 5^3 = 125 (attempt at repeated multiplication 1 mark)",
+        "marks": 3,
+        "kind": "attempt"
+      },
+      {
+        "label": "(a)(ii) recognise negative index as reciprocal; 2^(-2) = 1/4",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(a)(iii) recognise power 1/2 as square root; 36^(1/2) = 6",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(b) express 27 as 3^3 / set up (3^3)^(2/3) (low partial credit)",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(b) apply index rule to get 3^2 and evaluate as 9 (high partial credit)",
+        "marks": 3,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "The single most common error here is mishandling fractional and negative indices. Students frequently compute 2^(-2) as -4 (treating the negative index as a sign change instead of a reciprocal) and read 36^(1/2) as \"36 divided by 2 = 18\" instead of the square root. Remember: a negative index flips to a fraction (a^(-n) = 1/a^n) and never makes the answer negative, while a fractional index a^(p/q) means the q-th root raised to the power p. For part (b), always rewrite the base as a power of the target (27 = 3^3) BEFORE applying (a^m)^n = a^(mn) — multiply the indices, never add them.",
+      "source": "SEC Chief Examiner's Report"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-2-1"
+  },
+  {
+    "id": "maths-ol-2-1-2",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "ordinary",
+    "year": 2018,
+    "questionRef": "2018 OL P1 Q3",
+    "questionText": "(a) Simplify (2^5 x 2^4) / 2^7, giving your answer in the form 2^n where n is a natural number, and evaluate it.\n(b) Solve the equation 3^(x+1) = 81 for x. (Hint: write 81 as a power of 3.)",
+    "marks": 15,
+    "minutes": 15,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Solve",
+      "reminder": "Find the value of the unknown"
+    },
+    "ribbons": [
+      {
+        "label": "(a) multiply numerator: 2^5 x 2^4 = 2^9 (attempt adds indices 1 mark)",
+        "marks": 3,
+        "kind": "attempt"
+      },
+      {
+        "label": "(a) divide by subtracting indices to get 2^2",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(a) evaluate 2^2 = 4",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(b) write 81 = 3^4 (low partial credit)",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(b) equate indices: x + 1 = 4",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(b) solve to get x = 3",
+        "marks": 2,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "The classic mistake in part (a) is to ADD the index in the denominator instead of subtracting it (writing 2^(5+4+7) = 2^16) or to \"cancel\" by dividing the indices (2^9 / 2^7 = 2^(9/7)). The rule for division is to SUBTRACT indices: a^m / a^n = a^(m-n). In part (b), the most common error is forgetting that the whole exponent is (x+1): students set x = 4 directly instead of x + 1 = 4. Always rewrite both sides to the same base first, then equate the FULL exponents and solve the resulting equation carefully.",
+      "source": "SEC Chief Examiner's Report"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-2-1"
+  },
+  {
+    "id": "maths-hl-2-2-1",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "higher",
+    "year": 2018,
+    "questionRef": "2018 HL P1 Q1",
+    "questionText": "A person invests €18,000 in an account that earns compound interest at an Annual Equivalent Rate (AER) of 3.75%.\n(a) Calculate, correct to the nearest euro, the value of the investment at the end of 4 years.\n(b) The same person wishes instead to have €25,000 in the account at the end of 4 years. Calculate, correct to the nearest euro, the additional amount they would need to invest at the start, at the same AER of 3.75%.\n(c) A different financial product offers a nominal annual interest rate that is compounded monthly. The AER of this product is 3.75%. Find the monthly interest rate, correct to four significant figures, and hence find the nominal annual interest rate compounded monthly, correct to two decimal places.",
+    "marks": 25,
+    "minutes": 25,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Calculate / Find",
+      "reminder": "Work out the numerical value shown"
+    },
+    "ribbons": [
+      {
+        "label": "(a) Correct formula with values substituted, P(1.0375)^4",
+        "marks": 4,
+        "kind": "method"
+      },
+      {
+        "label": "(a) Correct evaluation to €20,856",
+        "marks": 4,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Sets up P = 25000/(1.0375)^4 and evaluates ≈ €21,577",
+        "marks": 5,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Subtracts 18000 to get additional €3,577",
+        "marks": 4,
+        "kind": "method"
+      },
+      {
+        "label": "(c) Forms (1+i)^12 = 1.0375 and finds monthly rate 0.003072",
+        "marks": 4,
+        "kind": "method"
+      },
+      {
+        "label": "(c) Multiplies by 12 for nominal rate 3.69%",
+        "marks": 4,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "The most common error is in part (c): students confuse the AER with the nominal rate and either multiply 3.75% by 12 or divide by 12 directly. The AER is what one full year of monthly compounding actually produces, so you must take the 12th root of 1.0375 (not divide 3.75% by 12) to get the monthly rate, then multiply that monthly rate by 12 for the nominal rate. A second frequent slip is rounding (1.0375)^4 too early — keep full calculator accuracy until the final line, or the \"nearest euro\" answer drifts by several euro.",
+      "source": "SEC Chief Examiner's Report"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-2-2"
+  },
+  {
+    "id": "maths-ol-2-2-1",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "ordinary",
+    "year": 2017,
+    "questionRef": "2017 OL P1 Q1",
+    "questionText": "A car is bought for €18 500. In the first year its value depreciates (loses value) by 12% of the purchase price. In the second year its value depreciates by a further 9% of its value at the end of the first year.\n(a) Find the value of the car at the end of the first year.\n(b) Find the value of the car at the end of the second year. Give your answer correct to the nearest euro.\n(c) Find the overall percentage of the original purchase price that the car has lost in value over the two years. Give your answer correct to one decimal place.",
+    "marks": 20,
+    "minutes": 20,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Find",
+      "reminder": "Work out and state the value"
+    },
+    "ribbons": [
+      {
+        "label": "(a) Attempt: writes 12% of 18 500 or 0.12 × 18 500 or finds 2 220",
+        "marks": 2,
+        "kind": "attempt"
+      },
+      {
+        "label": "(a) Full: correct value €16 280",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Attempt: finds 9% of 16 280 (1 465.20) or uses 0.91 × Year-1 value",
+        "marks": 3,
+        "kind": "attempt"
+      },
+      {
+        "label": "(b) Partial: correct unrounded value 14 814.80",
+        "marks": 4,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Full: rounded correctly to €14 815",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(c) Partial: correct loss 3 685.20 AND divides by 18 500 (or uses 0.8008 multiplier)",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(c) Full: correct answer 19.9%",
+        "marks": 2,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "The most common error is treating the second year's 9% as 9% of the original €18 500 rather than 9% of the reduced Year-1 value (€16 280). Depreciation compounds on the most recent value each year. A second frequent slip in part (c) is adding the percentages (12% + 9% = 21%) — this is wrong because the two percentages are taken of different amounts; the true loss (19.9%) is less than 21%.",
+      "source": "SEC Chief Examiner's Report"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-2-2"
+  },
+  {
+    "id": "maths-ol-2-2-2",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "ordinary",
+    "year": 2019,
+    "questionRef": "2019 OL P1 Q2",
+    "questionText": "Aoife invests €4 000 in an account that pays compound interest at a rate of 3% per annum. The interest is added to the account at the end of each year.\n(a) Find the amount of money in the account at the end of 2 years.\n(b) Find the total interest earned over the 2 years.\n(c) Aoife must pay DIRT (Deposit Interest Retention Tax) at a rate of 33% on the interest she earns. Calculate the amount of DIRT she must pay on the interest earned over the 2 years.",
+    "marks": 20,
+    "minutes": 20,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Find / Calculate",
+      "reminder": "Work out and state the amount"
+    },
+    "ribbons": [
+      {
+        "label": "(a) Attempt: correct substitution into F = P(1+i)^t, i.e. 4 000 × (1.03)^2, or correct Year-1 amount 4 120",
+        "marks": 3,
+        "kind": "attempt"
+      },
+      {
+        "label": "(a) Partial: correct method fully shown but one slip, or (1.03)^2 = 1.0609 found",
+        "marks": 4,
+        "kind": "method"
+      },
+      {
+        "label": "(a) Full: correct amount €4 243.60",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Attempt: subtracts principal from their final amount (final − 4 000)",
+        "marks": 2,
+        "kind": "attempt"
+      },
+      {
+        "label": "(b) Full: correct interest €243.60",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(c) Attempt: writes 33% of their interest, i.e. 0.33 × 243.60",
+        "marks": 2,
+        "kind": "attempt"
+      },
+      {
+        "label": "(c) Full: correct DIRT €80.39",
+        "marks": 3,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "The most common mistake is calculating simple interest instead of compound interest — students multiply 4 000 × 0.03 × 2 = €240 and lose the extra \"interest on interest\" (the €3.60 difference here). With compound interest you must apply the rate to the growing balance each year, or use F = P(1 + i)^t. A second common error in part (c) is applying the 33% DIRT to the full account balance (€4 243.60) rather than only to the interest earned (€243.60) — DIRT is a tax on interest, not on the whole investment.",
+      "source": "SEC Chief Examiner's Report"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-2-2"
+  },
+  {
+    "id": "maths-hl-2-3-1",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "higher",
+    "year": 2017,
+    "questionRef": "2017 HL P2 Q4 (representative)",
+    "questionText": "A solid metal object is made by attaching a right circular cone exactly on top of a hemisphere, so that the flat circular face of the cone coincides with the flat circular face of the hemisphere. Both the cone and the hemisphere have radius r = 6 cm. The perpendicular height of the cone is 8 cm.\n\n(a) Show that the slant height of the cone is 10 cm.\n\n(b) Calculate the total surface area of the solid object (the curved surface of the cone plus the curved surface of the hemisphere). Give your answer in terms of π.\n\n(c) The solid object is melted down and recast, without any loss of metal, into a single solid sphere. Calculate the radius of this sphere, giving your answer correct to two decimal places.",
+    "marks": 15,
+    "minutes": 15,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Calculate",
+      "reminder": "Work out the numerical value, showing working"
+    },
+    "ribbons": [
+      {
+        "label": "(a) Sets up l² = r² + h² with values substituted, e.g. l = √(6²+8²)",
+        "marks": 2,
+        "kind": "attempt"
+      },
+      {
+        "label": "(a) Shows l = √100 = 10 cm",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(b) One correct curved area: πrl = 60π OR 2πr² = 72π",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Both curved areas correct and summed (flat faces excluded): 60π + 72π = 132π cm²",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(c) Correct total volume 240π (or both components 96π and 144π), or correct equation (4/3)πR³ = volume",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(c) Solves to R = ∛180 ≈ 5.65 cm to two decimals",
+        "marks": 3,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "The single most common error is counting the flat circular faces in the surface area. Because the cone sits exactly on the hemisphere, the two flat circles are joined internally and form NO part of the outside surface — so you use only the curved areas (πrl and 2πr²), never πr² for either base. Students reflexively add πr² 'for the base' and lose marks. A close second: using the perpendicular height (8) instead of the slant height (10) in the cone's curved surface area πrl.",
+      "source": "SEC Chief Examiner's Report"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-2-3"
+  },
+  {
+    "id": "maths-hl-2-3-2",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "higher",
+    "year": 2019,
+    "questionRef": "2019 HL P2 Q5 (representative)",
+    "questionText": "A sector of a circle has a radius of 9 cm and the angle at the centre of the sector is 120°. Take π = 3.14 where a decimal value is required, unless stated otherwise.\n\n(a) Find the length of the arc of this sector. Give your answer in terms of π.\n\n(b) Find the area of this sector. Give your answer in terms of π.\n\n(c) The sector is rolled up and the two straight edges (the two radii) are joined together to form the curved surface of a right circular cone, with the arc of the sector becoming the circumference of the circular base of the cone.\n   (i) Find the radius of the base of the cone formed, giving your answer as a fraction or exact value.\n   (ii) Hence find the vertical (perpendicular) height of the cone, correct to two decimal places.",
+    "marks": 20,
+    "minutes": 20,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Find",
+      "reminder": "Obtain the answer, showing necessary working"
+    },
+    "ribbons": [
+      {
+        "label": "(a) Uses θ/360 = 1/3, or formula (θ/360)(2πR) with substitution",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(a) Arc length = 6π cm",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Formula (θ/360)(πR²) with values substituted, or 81π seen",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Sector area = 27π cm²",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(c)(i) Recognises base circumference = arc length: sets 2πr = 6π",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(c)(i) r = 3 cm",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(c)(ii) Recognises slant height = 9 and writes h² = 9² − 3² (h² = l² − r²)",
+        "marks": 2,
+        "kind": "method"
+      },
+      {
+        "label": "(c)(ii) h = √72 = 6√2 ≈ 8.49 cm",
+        "marks": 3,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "The classic mistake in the 'roll the sector into a cone' question is mixing up which length becomes what. You must recognise two transfers: the sector's RADIUS (9 cm) becomes the cone's SLANT height (not the vertical height), and the sector's ARC LENGTH (6π) becomes the base CIRCUMFERENCE (not the base radius). The frequent error is treating 9 cm as the perpendicular height, or setting the arc length equal to the radius. Once r = 3 and l = 9 are correctly identified, h is found from h² = l² − r² (NOT l² + r²) — another common slip is adding instead of subtracting because the slant height is the hypotenuse.",
+      "source": "SEC Chief Examiner's Report"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-2-3"
+  },
+  {
+    "id": "maths-ol-2-3-1",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "ordinary",
+    "year": 2017,
+    "questionRef": "2017 OL P2 Q4",
+    "questionText": "A cylindrical water tank has a circular base of radius 0.6 m and a height of 1.4 m.\n(a) Calculate the volume of the tank, in cubic metres. Give your answer correct to two decimal places. Take pi = 3.14.\n(b) Water is poured into the empty tank at a rate of 0.05 cubic metres per minute. Find, correct to the nearest minute, how long it takes to fill the tank completely.\n(c) The curved surface of the tank (not including the top or bottom) is to be painted. Calculate the area of the curved surface, in square metres, correct to two decimal places. Take pi = 3.14.",
+    "marks": 15,
+    "minutes": 15,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Calculate / Find",
+      "reminder": "Work out the numerical value shown"
+    },
+    "ribbons": [
+      {
+        "label": "(a) Attempt: correct formula V = pi r^2 h with a value substituted, or r^2 = 0.36 found",
+        "marks": 2,
+        "kind": "attempt"
+      },
+      {
+        "label": "(a) Full credit: V = 1.58 m^3 correct to 2 d.p.",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Attempt: divides a volume by 0.05, or sets up Time = Volume / rate",
+        "marks": 2,
+        "kind": "attempt"
+      },
+      {
+        "label": "(b) Full credit: 32 minutes, correctly rounded",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(c) Attempt: correct CSA formula 2 pi r h with a value substituted",
+        "marks": 2,
+        "kind": "attempt"
+      },
+      {
+        "label": "(c) Full credit: 5.28 m^2 correct to 2 d.p.",
+        "marks": 3,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "The single most common error is mixing up the formulae: students use 2 pi r h for volume or pi r^2 h for surface area. Anchor it by units — volume needs three lengths multiplied (gives m^3: r x r x h), area needs two (gives m^2: r x h or r x r). A second frequent slip in part (b) is rounding the volume to 1.58 before dividing; carry the full unrounded value through the calculation and only round the final answer.",
+      "source": "SEC Chief Examiner's Report"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-2-3"
+  },
+  {
+    "id": "maths-ol-2-3-2",
+    "subject": "maths",
+    "subjectLabel": "Mathematics",
+    "level": "ordinary",
+    "year": 2019,
+    "questionRef": "2019 OL P2 Q3",
+    "questionText": "A rectangular field is 80 m long and 55 m wide.\n(a) Calculate the perimeter of the field, in metres.\n(b) Calculate the area of the field, in square metres.\n(c) A path 2 m wide is built along the inside of the entire boundary of the field, all the way around. The rest of the field (the inner rectangle surrounded by the path) is grass. Calculate the area of grass, in square metres.\n(d) Grass seed is sold in bags. One bag covers 250 square metres. Calculate the smallest number of full bags needed to seed the grass area found in part (c).",
+    "marks": 20,
+    "minutes": 20,
+    "answerKind": "steps",
+    "commandWord": {
+      "word": "Calculate",
+      "reminder": "Work out the numerical value shown"
+    },
+    "ribbons": [
+      {
+        "label": "(a) Attempt: adds two or more sides, or uses 2(l + w) with a value in",
+        "marks": 2,
+        "kind": "attempt"
+      },
+      {
+        "label": "(a) Full credit: 270 m",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(b) Attempt: multiplies length by width",
+        "marks": 2,
+        "kind": "attempt"
+      },
+      {
+        "label": "(b) Full credit: 4400 m^2",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(c) Attempt: reduces at least one dimension by the path width",
+        "marks": 2,
+        "kind": "attempt"
+      },
+      {
+        "label": "(c) Full credit: 3876 m^2 (76 x 51)",
+        "marks": 3,
+        "kind": "method"
+      },
+      {
+        "label": "(d) Attempt: divides grass area by 250",
+        "marks": 2,
+        "kind": "attempt"
+      },
+      {
+        "label": "(d) Full credit: 16 bags, correctly rounded up",
+        "marks": 3,
+        "kind": "method"
+      }
+    ],
+    "lesson": {
+      "text": "In part (c) the classic mistake is subtracting the path width only once (80 - 2) instead of twice (80 - 2 - 2), forgetting the path runs along BOTH opposite edges. Sketch the rectangle and mark the 2 m strip on all four sides — that makes it obvious each dimension loses 2 + 2 = 4 m. In part (d) the other trap is rounding 15.504 down to 15; because partial bags can't be bought and 15 bags fall short, you must always round UP for \"how many full bags are needed\".",
+      "source": "SEC Chief Examiner's Report"
+    },
+    "subjectId": "mathematics",
+    "topicId": "mathematics-2-3"
   }
 ];
