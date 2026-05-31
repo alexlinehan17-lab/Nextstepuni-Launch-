@@ -402,7 +402,18 @@ The library holds two source types per subject/year:
 
 Both are examiner-authored and citable. Marking schemes are particularly useful for per-question rules ("Max X SRPs if…", "Apply a *", indicative material lists). Cite as `Marking scheme YYYY` inline.
 
-## Necessary Knowledge tab
+## ⚠️ Exam Strategiser — REMOVED (redesign in progress)
+
+> The Exam Strategiser tool was removed on 2026-05-31 (it had become
+> overcomplicated and confusing). Deleted: `components/ExamStrategiser/`,
+> `data/examStrategy/`, `data/examQuestions/`, `types/examStrategiser.ts`,
+> `STRATEGISER_MIGRATION.md`. A new, simpler exam-strategy tool is being
+> designed from research. The `examiner-reports/` library + the citation
+> discipline above remain valid and will feed the new tool's agent-forged
+> content pipeline. **Everything from here down describes the removed tool —
+> kept only as redesign reference.**
+
+## Necessary Knowledge tab (removed tool — reference only)
 
 A third peer view inside the Exam Strategiser, alongside Practice and Trap Patterns. It teaches the *hidden curriculum* of the Leaving Cert — command words, marking-scheme grammars, time allocation, examiner pet peeves, SRPs, mark provenance, sanity checks, traps, ceilings, comparative integration, RSR section budgeting, Sciences phrase matching, Languages oral authenticity — material no syllabus covers but every Chief Examiner Report keeps complaining about.
 

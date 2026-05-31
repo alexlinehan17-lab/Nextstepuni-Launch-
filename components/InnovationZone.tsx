@@ -12,7 +12,7 @@ import {
     ArrowLeft,
     Lock, Compass, Target,
     Settings, CalendarDays, Calculator, GitBranch, Rocket,
-    Map, ScanSearch, ClipboardList
+    Map, ScanSearch, Dumbbell, Milestone
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -27,9 +27,10 @@ import ComebackEngine from './ComebackEngine';
 import CAOPointsSimulator from './CAOPointsSimulator';
 
 import FutureFinder from './FutureFinder';
+import CollegeCompass from './CollegeCompass';
 import SyllabusXRay from './SyllabusXRay';
 import PointsPassport from './PointsPassport';
-import ExamStrategiser from './ExamStrategiser';
+import ExamReps from './ExamReps';
 import { InnovationDataProvider } from '../contexts/InnovationDataContext';
 import { useTopicMastery } from '../hooks/useTopicMastery';
 import { getNotifications } from './gc/gcNotifications';
@@ -41,6 +42,7 @@ import PointsPanel from './PointsPanel';
 import { useNavigation } from '../contexts/NavigationContext';
 import { ToolHeader } from './ToolHeader';
 import ToolIconBlob, { type ToolIconKey } from './ToolIconBlob';
+import { isActiveSeniorYear } from '../utils/authUtils';
 
 // ── Editorial chrome registry ──────────────────────────────────────────
 //
@@ -70,7 +72,8 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'future-finder':   { themeColor: '#C76489', eyebrow: 'Understand · Career discovery', subtitle: 'Discover the courses, careers, and possible lives that fit who you are.',         showHeader: true  },
   'syllabus-xray':   { themeColor: '#2C4B6E', eyebrow: 'Understand · Exam intel',     subtitle: 'See where the marks are hiding in every paper, every section, every question.',   showHeader: true  },
   'points-passport': { themeColor: '#B8A079', eyebrow: 'Track · Tracker',             subtitle: 'Mock trends and grade bargains, all at a glance.',                                  showHeader: true  },
-  'exam-strategiser':{ themeColor: '#F26B1F', eyebrow: 'Plan · Exam strategy',        subtitle: 'Real exam questions, decoded. Predict before revealing — see the question the way an examiner does.', showHeader: true  },
+  'exam-reps':       { themeColor: '#5E9C7B', eyebrow: 'Technique · Practice',        subtitle: 'One real exam question at a time — marked the examiner’s way, so you see exactly where the marks were.', showHeader: true  },
+  'college-compass': { themeColor: '#2A7D6F', eyebrow: 'Plan · Roadmap',              subtitle: 'Your year-by-year runway to college — every CAO, HEAR, DARE and scholarship deadline, in order.', showHeader: false },
 };
 
 interface InnovationZoneProps {
@@ -482,13 +485,26 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             component: subjectProfile && user ? <PointsPassport uid={user.uid} profile={subjectProfile} /> : null,
         },
         {
-            id: 'exam-strategiser', title: 'Exam Strategiser', description: 'Real exam questions, decoded line-by-line.', icon: ClipboardList, needsProfile: false,
+            id: 'exam-reps', title: 'Exam Reps', description: 'One real exam question, marked the examiner’s way.', icon: Dumbbell, needsProfile: false,
             curriculum: 'senior' as const,
-            tag: 'Exam Strategy', accentHex: '#F26B1F', gridClass: 'md:col-span-2',
-            iconBg: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400',
-            accentBarColor: 'bg-teal-500', tagBg: 'bg-teal-100 dark:bg-teal-900/30', tagText: 'text-teal-700 dark:text-teal-400',
+            tag: 'Practice', accentHex: '#5E9C7B', gridClass: 'md:col-span-2',
+            iconBg: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-700 dark:text-emerald-300',
+            accentBarColor: 'bg-emerald-500', tagBg: 'bg-emerald-100 dark:bg-emerald-900/30', tagText: 'text-emerald-700 dark:text-emerald-400',
+            hoverBorder: 'hover:border-emerald-400/50 dark:hover:border-emerald-500/40',
+            component: <ExamReps uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
+        },
+        {
+            // Senior-cycle only (TY/5th/6th). `seniorYearsOnly` additionally
+            // hides it from graduated users, who still map to the 'senior'
+            // curriculum level (see isActiveSeniorYear). needsProfile:false —
+            // it reads only the student's year, never their subject profile.
+            id: 'college-compass', title: 'College Compass', description: 'Your runway to college — CAO, HEAR, DARE & scholarships, in order.', icon: Milestone, needsProfile: false,
+            curriculum: 'senior' as const, seniorYearsOnly: true,
+            tag: 'Roadmap', accentHex: '#2A7D6F', gridClass: 'md:col-span-3',
+            iconBg: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-700 dark:text-teal-300',
+            accentBarColor: 'bg-teal-600', tagBg: 'bg-teal-100 dark:bg-teal-900/30', tagText: 'text-teal-700 dark:text-teal-400',
             hoverBorder: 'hover:border-teal-400/50 dark:hover:border-teal-500/40',
-            component: <ExamStrategiser />,
+            component: <CollegeCompass uid={user?.uid} yearGroup={user?.yearGroup} />,
         },
     ];
 
@@ -503,7 +519,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'comeback': 'plan',
         'points-passport': 'track',
         'journey': 'track',
-        'exam-strategiser': 'plan',
+        'exam-reps': 'plan',
+        'college-compass': 'plan',
     };
 
     // Curriculum gating (Phase 4): JC users only see tools tagged 'both'
@@ -511,7 +528,13 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     // (curriculumLevel itself is now declared above the tools array.)
     const curriculumVisibleTools = tools.filter(t => {
       const tag = t.curriculum ?? 'senior';
-      return tag === 'both' || tag === curriculumLevel;
+      const okCurriculum = tag === 'both' || tag === curriculumLevel;
+      // Tools flagged `seniorYearsOnly` must ALSO be an active senior year
+      // (TY/5th/6th) — this is what excludes graduated users, who still
+      // resolve to the 'senior' curriculum level. JC users are already
+      // excluded by okCurriculum above.
+      const okYear = !(t as { seniorYearsOnly?: boolean }).seniorYearsOnly || isActiveSeniorYear(user?.yearGroup);
+      return okCurriculum && okYear;
     });
 
     const filteredTools = activeFilter === 'all'
@@ -532,7 +555,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
       }}
     >
 
-      <header className={`fixed top-0 left-0 right-0 z-[60] bg-zinc-50 dark:bg-zinc-950 px-4 md:px-10 ${activeTool === 'journey' || activeTool === 'war-room' ? '' : 'border-b border-zinc-200 dark:border-zinc-800'}`} style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}>
+      <header className={`fixed top-0 left-0 right-0 z-[60] bg-zinc-50 dark:bg-zinc-950 px-4 md:px-10 ${activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' ? '' : 'border-b border-zinc-200 dark:border-zinc-800'}`} style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}>
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4 md:gap-8">
             <MotionButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={activeTool ? () => nav.goBack() : onBack} className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
@@ -558,7 +581,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         </div>
       </header>
 
-      <main className={`flex-grow w-full max-w-4xl relative z-10 ${activeTool === 'journey' || activeTool === 'war-room' ? 'px-6 pt-0' : 'px-6 pt-16'}`}>
+      <main className={`flex-grow w-full max-w-4xl relative z-10 ${activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' ? 'px-6 pt-0' : 'px-6 pt-16'}`}>
          <AnimatePresence mode="wait">
             {!activeTool ? (
                 <MotionDiv

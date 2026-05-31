@@ -223,3 +223,22 @@ export interface UnifiedMockResult {
   totalPoints: number;
   timestamp: number;
 }
+
+// ── College Compass ──────────────────────────────────────────
+// Per-user state for the College Compass tool. Lives namespaced under the
+// `collegeCompass` field on the shared progress/{uid} doc. Store ONLY
+// IDs/codes/booleans — content (stops, dates, labels) is rehydrated from
+// collegeCompassData.ts at render time.
+export interface CollegeCompassState {
+  /** checklistItem id ("<stopId>:<itemId>") -> done. Live mode (6th) only. */
+  checklist: Record<string, boolean>;
+  /** Optional: institution codes for the "set my target colleges" picker. */
+  targetInstitutionCodes?: string[];
+  /** Optional: last-used HEAR meter indicator selection (ids only). */
+  hearIndicators?: string[];
+  /** Optional: last-used DARE category id. */
+  dareCategoryId?: string;
+  /** Stops the student has hidden (e.g. DARE if not applicable). */
+  dismissedStops?: string[];
+  updatedAt: string; // ISO timestamp
+}
