@@ -29,9 +29,14 @@ const LEVEL_LABEL: Record<string, string> = { higher: 'Higher', ordinary: 'Ordin
 interface SubjectPickerProps {
   selection?: RepSelection;
   onSelect: (sel: RepSelection) => void;
+  /** Curriculum subject ids the student chose during onboarding. */
+  studentSubjectIds?: string[];
 }
 
-const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect }) => {
+const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect, studentSubjectIds }) => {
+  const mySet = useMemo(() => new Set(studentSubjectIds ?? []), [studentSubjectIds]);
+  // Default to the student's own subjects; if they have none, show everything.
+  const [showAll, setShowAll] = useState((studentSubjectIds?.length ?? 0) === 0);
   // which subject ids / topic ids have at least one rep
   const avail = useMemo(() => {
     const subj = new Set<string>();
@@ -63,14 +68,26 @@ const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect }) =>
   if (step === 'subject') {
     return (
       <div className="w-full max-w-2xl mx-auto pb-12">
-        <header className="mb-6">
-          <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400 mb-1">Exam Reps</p>
-          <h1 className="font-serif text-2xl md:text-3xl font-bold text-[#1A1A1A] dark:text-white">Pick your subject</h1>
-          <p className="text-sm text-[#7a7068] dark:text-zinc-400 mt-1">Choose what you want to drill. Subjects without reps yet are marked “soon”.</p>
+        <header className="mb-6 flex items-start justify-between gap-3">
+          <div>
+            <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400 mb-1">Exam Reps</p>
+            <h1 className="font-serif text-2xl md:text-3xl font-bold text-[#1A1A1A] dark:text-white">Pick your subject</h1>
+            <p className="text-sm text-[#7a7068] dark:text-zinc-400 mt-1">{showAll ? 'All Leaving Cert subjects. ' : 'Your subjects. '}Ones without reps yet are marked “soon”.</p>
+          </div>
+          {(studentSubjectIds?.length ?? 0) > 0 && (
+            <button
+              type="button"
+              onClick={() => setShowAll(v => !v)}
+              className="shrink-0 rounded-full border-2 px-3 py-1.5 text-xs font-semibold transition-colors"
+              style={{ borderColor: COLORS.border, backgroundColor: showAll ? COLORS.accentTint : '#FFFFFF', color: '#1A1A1A' }}
+            >
+              {showAll ? 'My subjects' : 'All subjects'}
+            </button>
+          )}
         </header>
 
         {CATEGORY_ORDER.map(cat => {
-          const subs = CURRICULUM.filter(s => s.category === cat.id);
+          const subs = CURRICULUM.filter(s => s.category === cat.id && (showAll || mySet.has(s.id)));
           if (subs.length === 0) return null;
           return (
             <section key={cat.id} className="mb-5">

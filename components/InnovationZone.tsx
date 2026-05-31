@@ -491,7 +491,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-700 dark:text-emerald-300',
             accentBarColor: 'bg-emerald-500', tagBg: 'bg-emerald-100 dark:bg-emerald-900/30', tagText: 'text-emerald-700 dark:text-emerald-400',
             hoverBorder: 'hover:border-emerald-400/50 dark:hover:border-emerald-500/40',
-            component: <ExamReps uid={user?.uid} />,
+            component: <ExamReps uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
         },
         {
             // Senior-cycle only (TY/5th/6th). `seniorYearsOnly` additionally

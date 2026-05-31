@@ -16,6 +16,8 @@
  */
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { Check, ArrowRight } from 'lucide-react';
+import { AnimatePresence } from 'framer-motion';
+import { MotionDiv } from '../Motion';
 import { COLORS } from '../../design/tokens';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { useExamReps } from '../../hooks/useExamReps';
@@ -25,6 +27,25 @@ import SubjectPicker from './SubjectPicker';
 import { type RepCard, type Confidence, type RepSelection, ribbonId } from '../../types/examReps';
 
 const LEVEL_LABEL: Record<string, string> = { higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation', common: 'Common' };
+
+// Map a student's onboarding subject names to curriculum subject ids.
+const SUBJECT_ALIAS: Record<string, string> = {
+  maths: 'mathematics', math: 'mathematics', appliedmaths: 'applied-mathematics',
+  gaeilge: 'irish', dcg: 'design-and-communication-graphics', homeec: 'home-economics', pe: 'physical-education',
+};
+function mapStudentSubjects(names?: string[]): string[] {
+  if (!names) return [];
+  const norm = (x: string) => x.toLowerCase().replace(/[^a-z]/g, '');
+  const ids = new Set<string>();
+  for (const nm of names) {
+    const w = norm(nm);
+    if (!w) continue;
+    if (SUBJECT_ALIAS[w]) { ids.add(SUBJECT_ALIAS[w]); continue; }
+    const s = CURRICULUM.find(x => { const sn = norm(x.name); return sn === w || sn.includes(w) || w.includes(sn); });
+    if (s) ids.add(s.id);
+  }
+  return [...ids];
+}
 
 type Beat = 'intro' | 'attempt' | 'mark' | 'done';
 
@@ -99,10 +120,11 @@ function renderQuestion(card: RepCard, tappable: boolean, tipOpen: boolean, onTo
   );
 }
 
-const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
+const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid, studentSubjects }) => {
   const { state, isLoaded, recordRep, setSelection } = useExamReps(uid);
   const sel = state.selection;
   const [forcePicker, setForcePicker] = useState(false);
+  const studentSubjectIds = useMemo(() => mapStudentSubjects(studentSubjects), [studentSubjects]);
 
   const [cardIndex, setCardIndex] = useState(0);
   const [beat, setBeat] = useState<Beat>('intro');
@@ -151,7 +173,7 @@ const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
     return <div className="w-full max-w-xl mx-auto py-16 text-center text-sm text-zinc-400">Loading…</div>;
   }
   if (forcePicker || !sel) {
-    return <SubjectPicker selection={sel} onSelect={onPick} />;
+    return <SubjectPicker selection={sel} onSelect={onPick} studentSubjectIds={studentSubjectIds} />;
   }
   if (!card || !derived) {
     const subjName = CURRICULUM.find(s => s.id === sel.subjectId)?.name ?? 'these';
@@ -198,9 +220,11 @@ const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
     </button>
   );
 
+  let body: React.ReactNode = null;
+
   // ── INTRO ──────────────────────────────────────────────────────────────
   if (beat === 'intro') {
-    return (
+    body = (
       <div className={cardShell}>
         {selectionChip}
         <div className="flex items-center justify-between mb-4">
@@ -246,7 +270,7 @@ const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
 
   // ── ATTEMPT ────────────────────────────────────────────────────────────
   if (beat === 'attempt') {
-    return (
+    body = (
       <div className={cardShell}>
         <div className="flex items-center justify-between mb-3">
           <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400">{card.subjectLabel} · {card.questionRef}</span>
@@ -286,7 +310,7 @@ const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
 
   // ── MARK ───────────────────────────────────────────────────────────────
   if (beat === 'mark') {
-    return (
+    body = (
       <div className={cardShell}>
         {card.answerKind === 'paper' ? (
           <p className="text-xs text-[#7a7068] dark:text-zinc-400 mb-5">You did this one on paper — now mark it against the scheme.</p>
@@ -308,8 +332,11 @@ const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
             const had = ribbonHad[id];
             const isGate = r.kind === 'gate';
             return (
-              <div
+              <MotionDiv
                 key={id}
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: i * 0.06, duration: 0.25, ease: [0.16, 1, 0.3, 1] as number[] }}
                 className="rounded-xl border-2 p-3 transition-colors"
                 style={{
                   borderColor: had === true ? COLORS.success : had === false ? '#d0cdc8' : COLORS.border,
@@ -342,7 +369,7 @@ const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
                     </button>
                   </div>
                 </div>
-              </div>
+              </MotionDiv>
             );
           })}
         </div>
@@ -374,7 +401,7 @@ const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
     : confidence === 'unsure' && derived.captured >= derived.totalMarks * 0.6 ? 'Better than you thought — trust that more.'
     : 'Good calibration.';
 
-  return (
+  if (beat === 'done') body = (
     <div className={cardShell}>
       <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400 mb-2">The one lesson</p>
       <div className="pl-3 py-1 mb-3" style={{ borderLeft: `3px solid ${COLORS.accent}` }}>
@@ -411,6 +438,20 @@ const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
         </>
       )}
     </div>
+  );
+
+  return (
+    <AnimatePresence mode="wait">
+      <MotionDiv
+        key={beat}
+        initial={{ opacity: 0, y: 14 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -14 }}
+        transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] as number[] }}
+      >
+        {body}
+      </MotionDiv>
+    </AnimatePresence>
   );
 };
 
