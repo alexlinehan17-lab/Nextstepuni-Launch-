@@ -12,7 +12,7 @@ import {
     ArrowLeft,
     Lock, Compass, Target,
     Settings, CalendarDays, Calculator, GitBranch, Rocket,
-    Map, ScanSearch
+    Map, ScanSearch, Dumbbell
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -29,6 +29,7 @@ import CAOPointsSimulator from './CAOPointsSimulator';
 import FutureFinder from './FutureFinder';
 import SyllabusXRay from './SyllabusXRay';
 import PointsPassport from './PointsPassport';
+import ExamReps from './ExamReps';
 import { InnovationDataProvider } from '../contexts/InnovationDataContext';
 import { useTopicMastery } from '../hooks/useTopicMastery';
 import { getNotifications } from './gc/gcNotifications';
@@ -69,6 +70,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'future-finder':   { themeColor: '#C76489', eyebrow: 'Understand · Career discovery', subtitle: 'Discover the courses, careers, and possible lives that fit who you are.',         showHeader: true  },
   'syllabus-xray':   { themeColor: '#2C4B6E', eyebrow: 'Understand · Exam intel',     subtitle: 'See where the marks are hiding in every paper, every section, every question.',   showHeader: true  },
   'points-passport': { themeColor: '#B8A079', eyebrow: 'Track · Tracker',             subtitle: 'Mock trends and grade bargains, all at a glance.',                                  showHeader: true  },
+  'exam-reps':       { themeColor: '#5E9C7B', eyebrow: 'Technique · Practice',        subtitle: 'One real exam question at a time — marked the examiner’s way, so you see exactly where the marks were.', showHeader: true  },
 };
 
 interface InnovationZoneProps {
@@ -479,6 +481,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             hoverBorder: 'hover:border-sky-400/50 dark:hover:border-sky-500/40',
             component: subjectProfile && user ? <PointsPassport uid={user.uid} profile={subjectProfile} /> : null,
         },
+        {
+            id: 'exam-reps', title: 'Exam Reps', description: 'One real exam question, marked the examiner’s way.', icon: Dumbbell, needsProfile: false,
+            curriculum: 'senior' as const,
+            tag: 'Practice', accentHex: '#5E9C7B', gridClass: 'md:col-span-2',
+            iconBg: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-700 dark:text-emerald-300',
+            accentBarColor: 'bg-emerald-500', tagBg: 'bg-emerald-100 dark:bg-emerald-900/30', tagText: 'text-emerald-700 dark:text-emerald-400',
+            hoverBorder: 'hover:border-emerald-400/50 dark:hover:border-emerald-500/40',
+            component: <ExamReps uid={user?.uid} />,
+        },
     ];
 
     const [activeFilter, setActiveFilter] = useState<'all' | 'understand' | 'plan' | 'track'>('all');
@@ -492,6 +503,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'comeback': 'plan',
         'points-passport': 'track',
         'journey': 'track',
+        'exam-reps': 'plan',
     };
 
     // Curriculum gating (Phase 4): JC users only see tools tagged 'both'
