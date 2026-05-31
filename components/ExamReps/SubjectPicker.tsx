@@ -9,6 +9,8 @@
  */
 import React, { useState, useMemo } from 'react';
 import { ArrowLeft, Check } from 'lucide-react';
+import { AnimatePresence } from 'framer-motion';
+import { MotionDiv } from '../Motion';
 import { COLORS } from '../../design/tokens';
 import { CURRICULUM, type CurriculumLevel } from '../../curriculum';
 import { REP_CARDS } from '../../examRepsData';
@@ -64,9 +66,11 @@ const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect, stud
     setSubjectId(id); setLevel(lvl); setStep('detail');
   };
 
+  let body: React.ReactNode = null;
+
   // ── Subject step ────────────────────────────────────────────────────────
   if (step === 'subject') {
-    return (
+    body = (
       <div className="w-full max-w-2xl mx-auto pb-12">
         <header className="mb-6 flex items-start justify-between gap-3">
           <div>
@@ -122,10 +126,9 @@ const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect, stud
   }
 
   // ── Detail step (level + topics) ────────────────────────────────────────
-  if (!subject || !level) return null;
-  const subjectHasAny = avail.subj.has(subject.id);
-
-  return (
+  if (step === 'detail' && subject && level) {
+    const subjectHasAny = avail.subj.has(subject.id);
+    body = (
     <div className="w-full max-w-2xl mx-auto pb-12">
       <button type="button" onClick={() => setStep('subject')} className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#7a7068] hover:text-[#1A1A1A] transition-colors mb-3">
         <ArrowLeft size={14} /> Subjects
@@ -188,6 +191,21 @@ const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect, stud
         </section>
       ))}
     </div>
+  );
+  }
+
+  return (
+    <AnimatePresence mode="wait">
+      <MotionDiv
+        key={step}
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -12 }}
+        transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] as number[] }}
+      >
+        {body}
+      </MotionDiv>
+    </AnimatePresence>
   );
 };
 
