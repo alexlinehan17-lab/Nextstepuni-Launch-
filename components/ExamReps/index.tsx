@@ -230,7 +230,7 @@ const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
           <div className="rounded-xl border-2 border-dashed p-5 mb-5 text-center" style={{ borderColor: '#d0cdc8', backgroundColor: '#F9F9F7' }}>
             <p className="text-sm font-semibold text-[#1A1A1A] dark:text-zinc-200">Grab a piece of paper for this one.</p>
             <p className="text-xs text-[#7a7068] dark:text-zinc-400 mt-1">
-              Sketch it out as you would in the exam, then tap <span className="font-semibold">Mark it</span> when you’re ready.
+              Work it out on paper as you would in the exam, then tap <span className="font-semibold">Mark it</span> when you’re ready.
             </p>
           </div>
         ) : (
