@@ -50,8 +50,9 @@ const TimerArc: React.FC<{ progress: number; label: string }> = ({ progress, lab
   );
 };
 
-// Render the question, making the command word a tappable highlight in the attempt beat.
-function renderQuestion(card: RepCard, tappable: boolean, tapped: boolean, onTap: () => void): React.ReactNode {
+// Render the question. In the attempt beat the command word is a tappable
+// highlight that pops a tooltip with what the word is actually asking for.
+function renderQuestion(card: RepCard, tappable: boolean, tipOpen: boolean, onToggle: () => void): React.ReactNode {
   const text = card.questionText;
   const word = card.commandWord?.word;
   if (!word) return <span className="whitespace-pre-line">{text}</span>;
@@ -64,18 +65,28 @@ function renderQuestion(card: RepCard, tappable: boolean, tapped: boolean, onTap
     <span className="whitespace-pre-line">
       {before}
       {tappable ? (
-        <button
-          type="button"
-          onClick={onTap}
-          className="font-semibold rounded px-0.5 transition-colors"
-          style={{
-            backgroundColor: tapped ? COLORS.successTint : COLORS.accentTint,
-            color: tapped ? COLORS.successDarkText : COLORS.accentDarkText,
-            boxShadow: tapped ? `inset 0 -2px 0 ${COLORS.success}` : `inset 0 -2px 0 ${COLORS.accent}`,
-          }}
-        >
-          {match}
-        </button>
+        <span style={{ position: 'relative', display: 'inline-block' }}>
+          <button
+            type="button"
+            onClick={onToggle}
+            aria-expanded={tipOpen}
+            className="font-semibold rounded px-0.5 transition-colors"
+            style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, boxShadow: `inset 0 -2px 0 ${COLORS.accent}` }}
+          >
+            {match}
+          </button>
+          {tipOpen && (
+            <span
+              role="tooltip"
+              className="absolute z-30 left-0 top-full mt-1.5 w-64 max-w-[80vw] rounded-xl border-2 p-3 block"
+              style={{ borderColor: COLORS.border, backgroundColor: '#FAFBF6', boxShadow: `4px 4px 0 0 ${COLORS.border}` }}
+            >
+              <span className="block text-xs font-normal leading-relaxed normal-case" style={{ color: '#1A1A1A' }}>
+                {card.commandWord!.reminder}
+              </span>
+            </span>
+          )}
+        </span>
       ) : (
         <span className="font-semibold">{match}</span>
       )}
@@ -91,7 +102,7 @@ const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
   const [beat, setBeat] = useState<Beat>('intro');
   const [confidence, setConfidence] = useState<Confidence | null>(null);
   const [answer, setAnswer] = useState('');
-  const [primerTapped, setPrimerTapped] = useState(false);
+  const [tipOpen, setTipOpen] = useState(false);
   const [ribbonHad, setRibbonHad] = useState<Record<string, boolean>>({});
   const [elapsed, setElapsed] = useState(0);
   const [finished, setFinished] = useState(false);
@@ -126,7 +137,7 @@ const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
   }
 
   const resetRep = () => {
-    setConfidence(null); setAnswer(''); setPrimerTapped(false);
+    setConfidence(null); setAnswer(''); setTipOpen(false);
     setRibbonHad({}); setElapsed(0); setFinished(false);
     recordedRef.current = false; setBeat('intro');
   };
@@ -207,31 +218,31 @@ const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
           <TimerArc progress={timerProgress} label={atCap ? 'that’s your exam budget — finish if you need' : `~${card.minutes} min budget`} />
         </div>
 
-        {/* command-word primer */}
-        {card.commandWord && (
-          <p className="text-xs text-[#7a7068] dark:text-zinc-400 mb-1.5">
-            {primerTapped ? '✓ Good — that word tells you what to do:' : 'Tap the word that tells you what to DO.'}
-          </p>
+        {card.commandWord && !tipOpen && (
+          <p className="text-[11px] text-zinc-400 mb-1.5">Tap the highlighted word to see what it’s asking for.</p>
         )}
 
-        <p className="font-serif text-lg leading-relaxed text-[#1A1A1A] dark:text-white mb-2">
-          {renderQuestion(card, !!card.commandWord, primerTapped, () => setPrimerTapped(true))}
-        </p>
+        <div className="font-serif text-lg leading-relaxed text-[#1A1A1A] dark:text-white mb-4">
+          {renderQuestion(card, !!card.commandWord, tipOpen, () => setTipOpen(v => !v))}
+        </div>
 
-        {card.commandWord && primerTapped && (
-          <div className="mb-4 pl-3 py-1" style={{ borderLeft: `3px solid ${COLORS.success}` }}>
-            <p className="text-xs italic leading-relaxed" style={{ color: COLORS.successDarkText }}>{card.commandWord.reminder}</p>
+        {card.answerKind === 'paper' ? (
+          <div className="rounded-xl border-2 border-dashed p-5 mb-5 text-center" style={{ borderColor: '#d0cdc8', backgroundColor: '#F9F9F7' }}>
+            <p className="text-sm font-semibold text-[#1A1A1A] dark:text-zinc-200">Grab a piece of paper for this one.</p>
+            <p className="text-xs text-[#7a7068] dark:text-zinc-400 mt-1">
+              Sketch it out as you would in the exam, then tap <span className="font-semibold">Mark it</span> when you’re ready.
+            </p>
           </div>
+        ) : (
+          <textarea
+            value={answer}
+            onChange={e => setAnswer(e.target.value)}
+            placeholder={card.answerKind === 'steps' ? 'Show your steps — exactly what you’d write…' : 'Write what you’d actually write in the exam…'}
+            rows={8}
+            className="w-full rounded-xl border-2 p-3 text-sm leading-relaxed text-[#1A1A1A] dark:text-white bg-white dark:bg-zinc-800 focus:outline-none resize-y mb-5"
+            style={{ borderColor: COLORS.border }}
+          />
         )}
-
-        <textarea
-          value={answer}
-          onChange={e => setAnswer(e.target.value)}
-          placeholder={card.answerKind === 'steps' ? 'Show your steps — exactly what you’d write…' : 'Write what you’d actually write in the exam…'}
-          rows={8}
-          className="w-full rounded-xl border-2 p-3 text-sm leading-relaxed text-[#1A1A1A] dark:text-white bg-white dark:bg-zinc-800 focus:outline-none resize-y mb-5"
-          style={{ borderColor: COLORS.border }}
-        />
 
         <PrimaryActionButton label="Mark it" onClick={() => setBeat('mark')} className="w-full" />
       </div>
@@ -242,10 +253,16 @@ const ExamReps: React.FC<{ uid?: string }> = ({ uid }) => {
   if (beat === 'mark') {
     return (
       <div className={cardShell}>
-        <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400 mb-2">Your answer</p>
-        <div className="rounded-xl p-3 mb-5 text-sm leading-relaxed whitespace-pre-wrap max-h-32 overflow-y-auto" style={{ backgroundColor: '#F9F9F7', color: '#5a544e' }}>
-          {answer.trim() || <span className="italic text-zinc-400">(left blank)</span>}
-        </div>
+        {card.answerKind === 'paper' ? (
+          <p className="text-xs text-[#7a7068] dark:text-zinc-400 mb-5">You did this one on paper — now mark it against the scheme.</p>
+        ) : (
+          <>
+            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400 mb-2">Your answer</p>
+            <div className="rounded-xl p-3 mb-5 text-sm leading-relaxed whitespace-pre-wrap max-h-32 overflow-y-auto" style={{ backgroundColor: '#F9F9F7', color: '#5a544e' }}>
+              {answer.trim() || <span className="italic text-zinc-400">(left blank)</span>}
+            </div>
+          </>
+        )}
 
         <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400 mb-1">Mark it like the examiner</p>
         <p className="text-xs text-[#7a7068] dark:text-zinc-400 mb-3">For each point the scheme rewards, did your answer have it?</p>

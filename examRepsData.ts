@@ -60,7 +60,7 @@ export const REP_CARDS: RepCard[] = [
       'Illustrate the following by means of a breakeven chart:\n(i) Breakeven point\n(ii) Margin of safety at the forecast output\n(iii) Profit at forecast output.',
     marks: 25,
     minutes: 11,
-    answerKind: 'steps',
+    answerKind: 'paper',
     taskType: 'breakeven-chart',
     commandWord: {
       word: 'Illustrate',
@@ -92,7 +92,7 @@ export const REP_CARDS: RepCard[] = [
       'Evaluate the effectiveness of the types of management control in place at Inis Bia. Refer to the text in your answer.',
     marks: 28,
     minutes: 13,
-    answerKind: 'steps',
+    answerKind: 'written',
     taskType: 'abq-evaluate',
     commandWord: {
       word: 'Evaluate',

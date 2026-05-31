@@ -43,7 +43,9 @@ export interface RepCard {
   questionText: string;    // faithfully reproduced SEC stem
   marks: number;           // the tariff
   minutes: number;         // derived ~1 min/mark
-  answerKind: 'written' | 'steps';
+  /** 'written' = text box; 'steps' = text box for working; 'paper' = a chart
+   *  / diagram / drawing the student does on paper (no text box). */
+  answerKind: 'written' | 'steps' | 'paper';
   commandWord?: CommandWordPrimer;
   /** The marking scheme as 3–7 checkable components. Non-gate marks sum ≈ tariff. */
   ribbons: MarkRibbon[];
