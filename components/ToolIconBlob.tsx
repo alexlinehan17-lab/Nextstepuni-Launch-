@@ -25,7 +25,8 @@ export type ToolIconKey =
   | 'future-finder'
   | 'syllabus-xray'
   | 'points-passport'
-  | 'exam-reps';
+  | 'exam-reps'
+  | 'college-compass';
 
 interface ToolIconConfig {
   blob: string;
@@ -90,6 +91,12 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     iconPath: '/assets/tools/exam-reps.png',
     blobPath: 'M 6 24 Q 2 52 12 80 Q 28 98 56 94 Q 90 90 96 58 Q 100 26 82 8 Q 58 -4 30 6 Q 12 14 6 24 Z',
     iconScale: 1.28,
+  },
+  'college-compass': {
+    blob: '#A8D5C9',
+    iconPath: '/assets/tools/college-compass.png',
+    blobPath: 'M 6 26 Q 0 52 10 80 Q 26 98 54 94 Q 88 90 96 60 Q 100 28 82 8 Q 56 -4 30 8 Q 12 16 6 26 Z',
+    iconScale: 1.0,
   },
 };
 
