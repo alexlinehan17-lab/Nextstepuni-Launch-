@@ -13,6 +13,11 @@ export default defineConfig(() => {
         react(),
         VitePWA({
           registerType: 'autoUpdate',
+          // Don't auto-inject the SW registration. We register manually in
+          // index.tsx, gated on !Capacitor.isNativePlatform(), so the service
+          // worker never runs inside the native WebView where its
+          // navigateFallback can serve a stale/white screen. (audit item 12)
+          injectRegister: false,
           includeAssets: ['icons/*.png', 'fonts/*.otf'],
           manifest: {
             name: 'Nextstep Learning Lab',
@@ -72,6 +77,10 @@ export default defineConfig(() => {
         }),
       ],
       build: {
+        // The eager entry is ~470KB; the >500KB chunks (vendor-firebase, and
+        // the lazy-only vendor-three / InnovationZone) are intentional, so
+        // document the accepted ceiling rather than emit a warning. (item 18)
+        chunkSizeWarningLimit: 1200,
         rollupOptions: {
           output: {
             // Function form (not the object/array form) so EVERY module id is

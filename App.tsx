@@ -17,7 +17,7 @@ import { type YearGroup, type StudentSubject } from './components/subjectData';
 import { type PastJCData } from './types';
 import StudyPassportModal from './components/StudyPassportModal';
 import { db } from './firebase';
-import { doc, getDoc, setDoc, increment } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, increment, arrayUnion } from 'firebase/firestore';
 import { type ModuleProgress, type NorthStar } from './types';
 import { useToast } from './components/Toast';
 import { ALL_COURSES, categoryTitles, SUBJECT_TO_MODULE } from './courseData';
@@ -191,15 +191,19 @@ const App: React.FC = () => {
       for (const p of island.placements) {
         if (p.type === 'hex') occupied.add(`${p.q},${p.r}`);
       }
-      const newPlacements = [...island.placements];
       const now = new Date().toISOString();
+      const tiles: IslandState['placements'] = [];
       for (let i = 0; i < 3; i++) {
         const pos = findBestLandPlacement(occupied);
         occupied.add(`${pos.q},${pos.r}`);
-        newPlacements.push({ itemId: 'terrain-grass', model: 'grass.glb', type: 'hex', q: pos.q, r: pos.r, purchasedAt: now });
+        tiles.push({ itemId: 'terrain-grass', model: 'grass.glb', type: 'hex', q: pos.q, r: pos.r, purchasedAt: now });
       }
-      const newState: IslandState = { ...island, placements: newPlacements, lastPurchaseTimestamp: now };
-      await setDoc(doc(db, 'progress', uid), { islandState: newState }, { merge: true });
+      // Atomic append (arrayUnion) so a concurrent purchase/claim can't clobber
+      // these rank-up tiles via a whole-array overwrite. (audit item 18)
+      await updateDoc(doc(db, 'progress', uid), {
+        'islandState.placements': arrayUnion(...tiles),
+        'islandState.lastPurchaseTimestamp': now,
+      });
     } catch (err) {
       console.error('Failed to grant rank-up tiles:', err);
     }

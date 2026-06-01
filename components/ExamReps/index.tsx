@@ -75,11 +75,29 @@ const TimerArc: React.FC<{ progress: number; label: string }> = ({ progress, lab
   );
 };
 
+// The stored command word may be a slashed/elided form ("Differentiate / Find",
+// "Show…"); anchor the highlight on the first concrete token so it matches the
+// stem. (audit 2026-06-01)
+function commandAnchor(card: RepCard): string | null {
+  const w = card.commandWord?.word;
+  if (!w) return null;
+  const token = w.split(/\s*\/\s*|\s*…\s*|\.{3}/)[0].trim();
+  return token || null;
+}
+
+// Whether the command-word affordance can actually anchor in this card's stem.
+// Used to gate the tappable highlight AND the "tap the highlighted word" hint
+// so they never appear when there is nothing to tap.
+function commandResolves(card: RepCard): boolean {
+  const a = commandAnchor(card);
+  return !!a && card.questionText.toLowerCase().includes(a.toLowerCase());
+}
+
 // Render the question. In the attempt beat the command word is a tappable
 // highlight that pops a tooltip with what the word is actually asking for.
 function renderQuestion(card: RepCard, tappable: boolean, tipOpen: boolean, onToggle: () => void): React.ReactNode {
   const text = card.questionText;
-  const word = card.commandWord?.word;
+  const word = commandAnchor(card);
   if (!word) return <span className="whitespace-pre-line">{text}</span>;
   const idx = text.toLowerCase().indexOf(word.toLowerCase());
   if (idx < 0) return <span className="whitespace-pre-line">{text}</span>;
@@ -279,12 +297,12 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
           <TimerArc progress={timerProgress} label={atCap ? 'that’s your exam budget — finish if you need' : `~${card.minutes} min budget`} />
         </div>
 
-        {card.commandWord && !tipOpen && (
+        {card.commandWord && commandResolves(card) && !tipOpen && (
           <p className="text-[11px] text-zinc-400 mb-1.5">Tap the highlighted word to see what it’s asking for.</p>
         )}
 
         <div className="font-serif text-lg leading-relaxed text-[#1A1A1A] dark:text-white mb-4">
-          {renderQuestion(card, !!card.commandWord, tipOpen, () => setTipOpen(v => !v))}
+          {renderQuestion(card, !!card.commandWord && commandResolves(card), tipOpen, () => setTipOpen(v => !v))}
         </div>
 
         {card.answerKind === 'paper' ? (

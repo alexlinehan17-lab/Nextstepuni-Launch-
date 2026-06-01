@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect, useCallback, useMemo } from 'react';
-import { doc, setDoc, increment } from 'firebase/firestore';
+import { doc, setDoc, updateDoc, increment, arrayUnion } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
 import { type NorthStar, type IslandState, type IslandPlacement, type ShopItem, type NorthStarCategory } from '../types';
@@ -201,11 +201,17 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
     };
     setIslandState(newState);
 
+    // Atomic deltas (audit item 18): append only the new placement / history /
+    // spend rather than overwriting the whole islandState, removing the
+    // read-modify-write race with a concurrent purchase or rank-up grant.
     const progressDocRef = doc(db, 'progress', uid);
-    setDoc(progressDocRef, {
-      islandState: newState,
-      pointsData: { totalSpent: increment(price) },
-    }, { merge: true })
+    updateDoc(progressDocRef, {
+      'islandState.placements': arrayUnion(placement),
+      'islandState.totalSpent': increment(price),
+      'islandState.purchaseHistory': arrayUnion(item.id),
+      'islandState.lastPurchaseTimestamp': newState.lastPurchaseTimestamp,
+      'pointsData.totalSpent': increment(price),
+    })
       .then(() => reloadProgress())
       .catch(err => {
         console.error('Failed to save island purchase:', err);
@@ -231,7 +237,11 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
     setIslandState(newState);
 
     const progressDocRef = doc(db, 'progress', uid);
-    setDoc(progressDocRef, { islandState: newState }, { merge: true }).catch(console.error);
+    updateDoc(progressDocRef, {
+      'islandState.placements': arrayUnion(placement),
+      'islandState.claimedRewards': arrayUnion(reward.id),
+      'islandState.lastPurchaseTimestamp': newState.lastPurchaseTimestamp,
+    }).catch(console.error);
 
     return true;
   }, [uid, islandState, placeItem]);
@@ -253,7 +263,10 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
     setIslandState(newState);
 
     const progressDocRef = doc(db, 'progress', uid);
-    setDoc(progressDocRef, { islandState: newState }, { merge: true }).catch(console.error);
+    updateDoc(progressDocRef, {
+      'islandState.placements': arrayUnion(placement),
+      'islandState.purchaseHistory': arrayUnion(item.id),
+    }).catch(console.error);
 
     return true;
   }, [uid, islandState, placeItem]);

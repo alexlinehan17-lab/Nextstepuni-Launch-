@@ -139,7 +139,10 @@ export interface StarterPack {
   waterColor: string;
 }
 
-export const STARTER_PACKS: Record<NorthStarCategory, StarterPack> = {
+// Partial: only the 6 senior NorthStar categories have packs defined (junior
+// keys are intentionally absent). The type now matches reality so consumers
+// keep their `?? fallback` guards (audit 2026-06-01, item 18).
+export const STARTER_PACKS: Partial<Record<NorthStarCategory, StarterPack>> = {
   'independence': {
     waterColor: '#4A8ECF',
     placements: [
@@ -226,7 +229,8 @@ function makeReward(id: string, idx: number, label: string, item: ShopItem): Mil
   return { id, modulesRequired: THRESHOLDS[idx], item, label };
 }
 
-export const MILESTONE_REWARDS: Record<NorthStarCategory, MilestoneReward[]> = {
+// Partial for the same reason as STARTER_PACKS above (senior-only; item 18).
+export const MILESTONE_REWARDS: Partial<Record<NorthStarCategory, MilestoneReward[]>> = {
   'independence': [
     makeReward('reward-ind-1', 0, 'First Steps',     { id: 'rw-ind-1', name: 'Campfire',       description: 'A cosy campfire pit',      model: 'campfire-pit.glb',    category: 'atmosphere', type: 'decoration', price: 0, defaultScale: 0.5 }),
     makeReward('reward-ind-2', 1, 'Road Ahead',      { id: 'rw-ind-2', name: 'Sedan',           description: 'Your own ride',            model: 'sedan.glb',           category: 'vehicle',    type: 'decoration', price: 0, defaultScale: 0.4 }),

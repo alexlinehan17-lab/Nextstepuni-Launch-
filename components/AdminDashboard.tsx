@@ -9,7 +9,7 @@ import { type SessionUser, getAvatarUrl } from '../utils/authUtils';
 import { GraduationCap, LogOut, Trash2, AlertTriangle } from 'lucide-react';
 import { type CategoryType } from './KnowledgeTree';
 import app, { db } from '../firebase';
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs, query, limit, where, documentId } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 
 // FIX: Cast motion components to any to bypass broken type definitions
@@ -138,28 +138,31 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
         const fetchData = async () => {
             setIsLoading(true);
             try {
-                // Fetch all user profiles
+                // Bound the read (audit item 17): cap the user list, then
+                // batch-read progress for just those students in chunks of 30,
+                // instead of scanning the entire users + progress collections.
+                const ADMIN_PAGE = 1000;
                 const usersCol = collection(db, "users");
-                const userSnapshot = await getDocs(usersCol);
+                const userSnapshot = await getDocs(query(usersCol, limit(ADMIN_PAGE)));
                 const users = userSnapshot.docs.map(doc => ({ uid: doc.id, ...doc.data() })) as SessionUser[];
 
-                // Fetch all progress data
-                const progressCol = collection(db, "progress");
-                const progressSnapshot = await getDocs(progressCol);
-                const allProgress = progressSnapshot.docs.reduce((acc, doc) => {
-                    acc[doc.id] = doc.data();
-                    return acc;
-                }, {} as AllUserProgress);
+                // Students only (exclude admin and GC accounts)
+                const students = users.filter(u => !u.isAdmin && (u as any).role !== 'gc' && (u as any).role !== 'admin');
+
+                const allProgress: AllUserProgress = {};
+                const ids = students.map(s => s.uid);
+                for (let i = 0; i < ids.length; i += 30) {
+                    const chunk = ids.slice(i, i + 30);
+                    const snap = await getDocs(query(collection(db, "progress"), where(documentId(), 'in', chunk)));
+                    snap.docs.forEach(d => { allProgress[d.id] = d.data(); });
+                }
 
                 if (cancelled) return;
 
-                // Combine data for each student (exclude admin and GC accounts)
-                const combinedData = users
-                    .filter(u => !u.isAdmin && (u as any).role !== 'gc' && (u as any).role !== 'admin')
-                    .map(user => ({
-                        user,
-                        progress: allProgress[user.uid] || {}
-                    }));
+                const combinedData = students.map(user => ({
+                    user,
+                    progress: allProgress[user.uid] || {}
+                }));
 
                 setStudentData(combinedData);
             } catch (err) {

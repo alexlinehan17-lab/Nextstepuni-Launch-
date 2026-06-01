@@ -134,12 +134,18 @@ service cloud.firestore {
 
     // Settings collection: each user can only read/write their own doc
     match /settings/{userId} {
-      allow read, write: if request.auth != null && request.auth.uid == userId;
+      // Split read/write (audit item 18). Settings hold only small UI prefs.
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow write: if request.auth != null && request.auth.uid == userId;
     }
 
     // Responses collection: each user can only read/write their own doc
     match /responses/{userId} {
-      allow read, write: if request.auth != null && request.auth.uid == userId;
+      // Split read/write (audit item 18). Free-text response values are bounded
+      // by Firestore's 1MB document cap; a per-field size guard isn't practical
+      // given the dynamic { [moduleId]: data } shape.
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow write: if request.auth != null && request.auth.uid == userId;
     }
 
     // GC Notes: GCs can read/write notes for their own school

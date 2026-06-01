@@ -9,7 +9,7 @@ import { type CourseData } from './Library';
 import { type SessionUser, getAvatarUrl, yearGroupToCurriculumLevel } from '../utils/authUtils';
 import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays } from 'lucide-react';
 import app, { db } from '../firebase';
-import { collection, query, where, limit, getDocs, doc, getDoc, setDoc } from 'firebase/firestore';
+import { collection, query, where, limit, getDocs, doc, getDoc, setDoc, documentId } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { getSchoolName } from '../schoolData';
 import { type UserProgress, type PointsData } from '../types';
@@ -188,14 +188,20 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
 
         const students = users.filter(u => u.role !== 'gc' && u.role !== 'admin');
 
-        const fullData: GCStudentFullData[] = await Promise.all(
-          students.map(async (user) => {
-            let progressDoc: Record<string, any> | null = null;
+        // Batch-read progress in chunks of 30 (Firestore 'in' limit) rather than
+        // one getDoc per student — removes the N+1 read on the dashboard. (item 17)
+        const progressByUid = new Map<string, Record<string, any>>();
+        const studentIds = students.map(s => s.uid);
+        for (let i = 0; i < studentIds.length; i += 30) {
+          const chunk = studentIds.slice(i, i + 30);
+          try {
+            const chunkSnap = await getDocs(query(collection(db, 'progress'), where(documentId(), 'in', chunk)));
+            chunkSnap.docs.forEach(d => progressByUid.set(d.id, d.data()));
+          } catch (err) { console.error('Failed to batch-fetch student progress:', err); }
+        }
 
-            try {
-              const progressSnap = await getDoc(doc(db, 'progress', user.uid));
-              progressDoc = progressSnap.exists() ? progressSnap.data() : null;
-            } catch (err) { console.error('Failed to fetch student progress:', err); }
+        const fullData: GCStudentFullData[] = students.map((user) => {
+            const progressDoc: Record<string, any> | null = progressByUid.get(user.uid) ?? null;
 
             const progress: UserProgress = {};
             if (progressDoc) {
@@ -247,8 +253,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
               yearGroup,
               curriculumLevel,
             };
-          })
-        );
+        });
 
         if (cancelled) return;
         setStudentData(fullData);
