@@ -183,50 +183,6 @@ export const REP_CARDS: RepCard[] = [
     "topicId": "geography-0-0"
   },
   {
-    "id": "eng-hl-p2-singletext-hamlet-2012",
-    "subject": "english",
-    "subjectLabel": "English",
-    "level": "higher",
-    "year": 2012,
-    "questionRef": "2012 HL · Hamlet",
-    "questionText": "\"Hamlet's madness, whether genuine or not, adds to the fascination of his character for the audience.\" Discuss this statement, supporting your answer with suitable reference to the play, Hamlet. (60 marks)",
-    "marks": 60,
-    "minutes": 50,
-    "answerKind": "paper",
-    "commandWord": {
-      "word": "Discuss",
-      "reminder": "Take a clear, sustained position on the precise terms of the statement (here: that Hamlet's madness 'adds to the fascination of his character for the audience'). Weigh the 'whether genuine or not' tension, develop an argument across the whole play, and anchor every point in apt, judicious quotation. This is a discursive literary essay, not a plot retelling or a general character sketch."
-    },
-    "ribbons": [
-      {
-        "label": "P - Clarity of Purpose: engages directly with the precise statement (madness as a source of 'fascination' for the audience; the genuine/feigned question) and sustains a focused, on-task argument throughout, avoiding unfocused narrative",
-        "marks": 18,
-        "kind": "explain"
-      },
-      {
-        "label": "C - Coherence of Delivery: a structured, logically developed response (clear line of argument, ordered paragraphs, effective linkage) that stays on the question rather than drifting into general plot summary",
-        "marks": 18,
-        "kind": "link"
-      },
-      {
-        "label": "L - Efficiency of Language Use: controlled, fluent critical register appropriate to a literary essay, with apt and judicious quotation/reference from Hamlet used to illustrate points",
-        "marks": 18,
-        "kind": "quote"
-      },
-      {
-        "label": "M - Accuracy of Mechanics: accurate spelling, grammar and syntax (the 'nuts and bolts' of the writing)",
-        "marks": 6,
-        "kind": "other"
-      }
-    ],
-    "lesson": {
-      "text": "A recurring warning across SEC English reports is that, in the Single Text section, 'unfocused narrative remained a feature of the less successful attempts.' Whatever the prescribed play, the strongest answers avoid simple character sketches and plot retelling and instead build a focused discussion that engages clearly with the exact terms of the question, using apt quotation to drive an argument.",
-      "source": "SEC Chief Examiner's Report, Leaving Certificate English, Higher Level, Section 3.3 (The Single Text) — general Single Text technique; the quoted line on 'unfocused narrative' is verbatim from the 2008 report, examinations.ie"
-    },
-    "subjectId": "english",
-    "topicId": "english-6-1"
-  },
-  {
     "id": "geog-hl-2023-q1b-igneous-rocks",
     "subject": "geography",
     "subjectLabel": "Geography",
@@ -308,50 +264,6 @@ export const REP_CARDS: RepCard[] = [
     },
     "subjectId": "history",
     "topicId": "history-3-12"
-  },
-  {
-    "id": "eng-hl-p2-comparative-themeissue-keymoments-2008",
-    "subject": "english",
-    "subjectLabel": "English",
-    "level": "higher",
-    "year": 2008,
-    "questionRef": "2008 HL · Comparative",
-    "questionText": "Compare how key moments brought a theme or issue into sharp focus in the texts you have studied as part of your comparative course. (70 marks)",
-    "marks": 70,
-    "minutes": 55,
-    "answerKind": "paper",
-    "commandWord": {
-      "word": "Compare",
-      "reminder": "This demands genuine comparison, not separate text summaries. Choose key moments from each of your comparative texts and show how each brings the same theme or issue into 'sharp focus'. Link the texts continuously (similarities and differences), keep the 'sharp focus' element central, and support with reference to the texts. A general overview of the theme without the comparative key-moments lens will not score."
-    },
-    "ribbons": [
-      {
-        "label": "P - Clarity of Purpose: keeps the 'sharp focus' / key-moments element central and engages directly with the chosen theme or issue, rather than taking a general approach to the texts",
-        "marks": 21,
-        "kind": "explain"
-      },
-      {
-        "label": "C - Coherence of Delivery: sustains genuine comparison across the comparative texts (continuous linking of similarities/differences) with a clear, well-organised structure built around selected key moments",
-        "marks": 21,
-        "kind": "link"
-      },
-      {
-        "label": "L - Efficiency of Language Use: fluent, analytical critical language appropriate to the comparative mode, with apt reference to the key moments in each text",
-        "marks": 21,
-        "kind": "quote"
-      },
-      {
-        "label": "M - Accuracy of Mechanics: accurate spelling, grammar and syntax",
-        "marks": 7,
-        "kind": "other"
-      }
-    ],
-    "lesson": {
-      "text": "On this exact question examiners noted many worthwhile answers offered 'a focused analysis of texts in the light of the wording of the question. However, some candidates lost sight of the \"sharp focus\" element and took a very general approach.' The best comparative answers address the nuances within the wording and make insightful, continuous comparisons rather than outlining broad similarities and differences.",
-      "source": "SEC Chief Examiner's Report 2008, Leaving Certificate English, Higher Level, Section 3.3 (Section II, The Comparative Study, Theme or Issue, Q2), examinations.ie"
-    },
-    "subjectId": "english",
-    "topicId": "english-7-0"
   },
   {
     "id": "hist-hl-2019-s3t3-q1",
@@ -3728,5 +3640,1787 @@ export const REP_CARDS: RepCard[] = [
     },
     "subjectId": "mathematics",
     "topicId": "mathematics-4-1"
+  },
+  {
+    "id": "eng-ol-6-0-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2022,
+    "questionRef": "2022 OL P2 Section I A Q3 By the Bog of Cats",
+    "questionText": "By the Bog of Cats – Marina Carr. As the director of an amateur drama group, you have been interviewed by a local radio station ahead of the opening night of your production of Marina Carr's play, By the Bog of Cats. In the interview you were asked to: give listeners an overview of what the play is about; explain the greatest challenge you had to overcome in staging the play; give reasons why you think listeners should go to see the production. Write the text of the interview you gave. Your interview should demonstrate your knowledge and understanding of Marina Carr's play, By the Bog of Cats.",
+    "marks": 35,
+    "minutes": 28,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Write",
+      "reminder": "Produce the text in the named genre (a radio interview) — adopt the persona and address all three bullet tasks."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P)",
+        "marks": 11,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C)",
+        "marks": 11,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L)",
+        "marks": 11,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M)",
+        "marks": 2,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "This is a persona/genre task with three required elements (overview, greatest staging challenge, reasons to attend). The scheme expects all three addressed 'although not necessarily equally' — answers that drop the staging-challenge element or never adopt the director's interview voice lose Clarity-of-Purpose marks.",
+      "source": "SEC 2022 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-6-0"
+  },
+  {
+    "id": "eng-ol-6-0-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2024,
+    "questionRef": "2024 OL P2 Section I A All the Light We Cannot See Q2",
+    "questionText": "Identify three objects, featured or referred to, in Doerr's novel, All the Light We Cannot See, that you believe helped you to understand a key aspect of the novel. In the case of each object, explain how it helped you to understand a key aspect of the novel. Your response should demonstrate your knowledge of the text.",
+    "marks": 30,
+    "minutes": 24,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Identify",
+      "reminder": "'Identify' here means name three objects exactly, but the marks live in the 'explain how each helped you understand a key aspect' - don't just list."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P)",
+        "marks": 9,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C)",
+        "marks": 9,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L)",
+        "marks": 9,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M)",
+        "marks": 3,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The scheme requires THREE objects, each with its own explanation of how it opened up a key aspect (symbol, theme, character, plot). 'Key aspect' is interpreted liberally, but an answer that names three objects and only describes them, without linking each to understanding, leaves Coherence marks on the table.",
+      "source": "SEC 2024 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-6-0"
+  },
+  {
+    "id": "eng-hl-6-1-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2022,
+    "questionRef": "2022 HL P2 C(i) Othello",
+    "questionText": "\"Various aspects of the relationship between Iago and Emilia in Shakespeare's play, Othello, are both fascinating and disturbing.\"\n\nDiscuss the reasons why you agree or disagree with the above statement. Develop your discussion with reference to the text.",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Discuss",
+      "reminder": "Weigh both sides on whether the Iago–Emilia relationship is fascinating AND disturbing; reach a reasoned position with textual support."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — focus, relevance, well-chosen compelling points, originality, critical literacy",
+        "marks": 21,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained focus, sequencing, points substantiated with apt references/quotations and key moments",
+        "marks": 21,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language Use (L) — controlled language, fluency, quality of expression",
+        "marks": 21,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar",
+        "marks": 7,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The scheme codes R for 'various aspects of the relationship between Iago and Emilia' and F for 'are both fascinating and disturbing'. This is a tightly bounded relationship question — answers that drift into a general character study of Iago or into the Othello–Desdemona plot lose focus. Examiners reward attention to the contradictions the scheme flags (Iago treats Emilia badly yet she procures the handkerchief; she underestimates his villainy, he her goodness), proving BOTH the fascination and the disturbance.",
+      "source": "SEC 2022 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-6-1"
+  },
+  {
+    "id": "eng-hl-6-1-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2024,
+    "questionRef": "2024 HL P2 Single Text C(i) Hamlet",
+    "questionText": "“Shakespeare uses Hamlet’s complex relationship with Gertrude to explore a variety of core issues in his play, Hamlet.” Discuss this statement, developing your response with reference to Shakespeare’s play, Hamlet.",
+    "marks": 60,
+    "minutes": 48,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Discuss",
+      "reminder": "Examine and weigh the statement, building a sustained argument with textual support — not a plot summary."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — focus/relevance/well-chosen compelling points/critical literacy",
+        "marks": 18,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained focus, sequencing, apt examples and quotation",
+        "marks": 18,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L) — controlled, fluent expression",
+        "marks": 18,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar",
+        "marks": 6,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The scheme codes 'R' for the use of Hamlet's complex relationship with Gertrude and 'I' for the core issues. The Closet Scene is flagged as the natural anchor, but the answer must use the mother-son relationship to open up issues (loyalty/betrayal, Hamlet's view of women/Ophelia, Oedipal/Freudian/Feminist readings), discussing at least two issues — not a free-standing character sketch of Gertrude.",
+      "source": "SEC 2024 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-6-1"
+  },
+  {
+    "id": "eng-ol-6-1-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2023,
+    "questionRef": "2023 OL P2 Section I F Macbeth",
+    "questionText": "MACBETH – William Shakespeare. Answer any two of the following four questions. Each question carries 30 marks.\n\n1. (a) In general, characters in texts are neither all good nor all bad. Do you agree or disagree with this statement in relation to Lady Macbeth? Support your answer with reference to the text. (10)\n(b) Identify a moment in the play when one character was either a good or bad influence on a second character. Explain, with reference to the text, why the first character was either a good or bad influence on the second character. (10)\n(c) Would you describe Macbeth as a hopeful play? Give two reasons for your answer supporting your response with reference to the text. (10)\n\n2. In his play, Macbeth, Shakespeare wants us to think about ambition. Identify the three most important occasions when, in your opinion, this is revealed to the audience and explain what you learned about ambition on each occasion.\n\n3. You have just watched a production of Shakespeare's play, Macbeth. The editor of your school website has asked you to write a review of it for the website. Write the text of the review in which you discuss: which of the characters in the play you found most fascinating; what was interesting about the setting of the play; the reasons why you would or would not recommend the play to others. Support your response with reference to the text.\n\n4. There are many dramatic and tense scenes in Shakespeare's play, Macbeth. Identify three scenes which you found to be dramatic or tense or both and explain why you found these scenes dramatic or tense or both.",
+    "marks": 60,
+    "minutes": 48,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Identify and explain / Do you agree",
+      "reminder": "The 'good or bad influence' part wants the influence of one character on another (e.g. Lady Macbeth on Macbeth) — keep the focus on the EFFECT on the second character, not a general character sketch of the first."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P)",
+        "marks": 18,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C)",
+        "marks": 18,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L)",
+        "marks": 18,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M)",
+        "marks": 6,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The 'good or bad influence' question is graded on whether you show one character influencing 'the second character's behaviour... thoughts, outlook, perspective' or changing 'the course of action for the second character' — the influence must land on the second person. A frequent slip is describing the first character (e.g. Lady Macbeth) at length while never demonstrating the effect on the second (Macbeth's decision to kill Duncan). For a Shakespeare play, you may also support points by reference to a performance you have seen.",
+      "source": "SEC 2023 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-6-1"
+  },
+  {
+    "id": "eng-ol-6-1-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2022,
+    "questionRef": "2022 OL P2 Section I F Q1 Othello",
+    "questionText": "Othello – William Shakespeare.\n(a) Identify a relationship, between two characters, in Shakespeare's play, Othello, that you found fascinating and explain one reason why this relationship fascinated you. Support your answer with reference to the text. (10)\n(b) Identify a moment in the text which revealed something important about this relationship and explain what this moment taught you about the relationship. Support your answer with reference to the text. (10)\n(c) Did this relationship change or remain the same during the course of the text? Explain your answer with reference to the text. (15)",
+    "marks": 35,
+    "minutes": 28,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Explain",
+      "reminder": "Give reasons or causes; make the point clear and show WHY, not just WHAT."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P)",
+        "marks": 11,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C)",
+        "marks": 11,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L)",
+        "marks": 11,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M)",
+        "marks": 2,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "Split 10+10+15, parts marked separately. Part (c) asks whether the relationship changed — the Othello/Iago or Othello/Desdemona bond is poisoned across the play, so the scheme expects that deterioration tracked. Re-describing the relationship in (c) without charting its change loses the 15-mark band.",
+      "source": "SEC 2022 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-6-1"
+  },
+  {
+    "id": "eng-hl-6-2-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2022,
+    "questionRef": "2022 HL P2 A(i) All the Light We Cannot See",
+    "questionText": "\"The consequences of Werner Pfennig's passion for science and technology in Anthony Doerr's novel, All the Light We Cannot See, are both fascinating and disturbing.\"\n\nDiscuss the reasons why you agree or disagree with the above statement. Develop your discussion with reference to the text.",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Discuss",
+      "reminder": "Build a two-sided argument: weigh reasons for agreeing AND disagreeing, then reach a considered position grounded in the text."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — focus, relevance, well-chosen compelling points, originality, critical literacy",
+        "marks": 21,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained focus, sequencing, points substantiated with apt references/quotations and key moments",
+        "marks": 21,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language Use (L) — controlled language, fluency, quality of expression",
+        "marks": 21,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar",
+        "marks": 7,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The scheme codes this question with two tags — C for 'the consequences of Werner's passion for science and technology' and F for 'are both fascinating and disturbing'. Weaker answers track only the consequences and forget to argue that they are BOTH fascinating AND disturbing; the examiner is explicitly checking that both halves of the statement are engaged, so make the dual response the spine of every paragraph rather than narrating Werner's plot.",
+      "source": "SEC 2022 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-6-2"
+  },
+  {
+    "id": "eng-hl-6-2-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2024,
+    "questionRef": "2024 HL P2 Single Text A(i) All the Light We Cannot See",
+    "questionText": "“We are fascinated by the tensions that emerge from Doerr’s exploration of a variety of moral and ethical issues in his novel, All the Light We Cannot See.” Discuss this statement, developing your response with reference to Doerr’s novel.",
+    "marks": 60,
+    "minutes": 48,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Discuss",
+      "reminder": "Examine and weigh the statement, building a sustained argument with textual support — not a plot summary."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — focus/relevance/well-chosen compelling points/critical literacy",
+        "marks": 18,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained focus, sequencing, apt examples and quotation",
+        "marks": 18,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L) — controlled, fluent expression",
+        "marks": 18,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar",
+        "marks": 6,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The scheme codes the answer for two distinct elements: 'T' for the tensions that emerge and 'M' for the exploration of moral and ethical issues. Candidates must address at least two issues AND show the tensions arising from them — simply naming themes without dramatising the moral tension underrewards. 'Fascinated' may be handled implicitly, but the response is anchored to the precise wording of the statement, not a generic 'themes in the novel' essay.",
+      "source": "SEC 2024 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-6-2"
+  },
+  {
+    "id": "eng-ol-6-2-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2023,
+    "questionRef": "2023 OL P2 Section I A All the Light We Cannot See",
+    "questionText": "ALL THE LIGHT WE CANNOT SEE – Anthony Doerr. Answer any two of the following four questions. Each question carries 30 marks.\n\n1. (a) In general, characters in texts are neither all good nor all bad. Do you agree or disagree with this statement in relation to Werner Pfennig? Support your answer with reference to the text. (10)\n(b) Identify a moment in the novel when one character was either a good or bad influence on a second character. Explain, with reference to the text, why the first character was either a good or bad influence on the second character. (10)\n(c) Would you describe All the Light We Cannot See as a hopeful novel? Give two reasons for your answer supporting your response with reference to the text. (10)\n\n2. In his novel, All the Light We Cannot See, Doerr wants us to think about courage. Identify the three most important occasions when, in your opinion, this is revealed to the reader and explain what you learned about courage on each occasion.\n\n3. You have just read Doerr's novel, All the Light We Cannot See. The editor of your school website has asked you to write a review of it for the website. Write the text of the review in which you discuss: whether or not the characters in the novel were believable; what was interesting about the setting of the novel; the reasons why you would or would not recommend the novel to others. Support your response with reference to the text.\n\n4. There are many dramatic and tense incidents in Doerr's novel, All the Light We Cannot See. Identify three incidents which you found to be dramatic or tense or both and explain why you found these incidents dramatic or tense or both.",
+    "marks": 60,
+    "minutes": 48,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Identify and explain / Do you agree",
+      "reminder": "Each part has its own command. 'Do you agree or disagree' wants a clear stance you then justify with textual reference; 'Identify ... and explain' wants both the example AND the reason it matters — naming without explaining caps you on Clarity of Purpose."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P)",
+        "marks": 18,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C)",
+        "marks": 18,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L)",
+        "marks": 18,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M)",
+        "marks": 6,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The marking scheme for the 30-mark questions on this text marks discretely (P=9, C=9, L=9, M=3), but the 10-mark sub-parts mark P and C combined (P+C=6, L+M=4) — meaning on the short parts there is no separate reward for an essay-style structure, so spend the words on a precise point plus one supporting reference rather than a long introduction. Across the text the scheme repeatedly asks candidates to 'explain' (e.g. why a character was a good or bad influence, what was learned about courage on each occasion): examiners award the explanation, not the retelling, so every chosen moment must be followed by an explicit 'this shows...' sentence.",
+      "source": "SEC 2023 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-6-2"
+  },
+  {
+    "id": "eng-ol-6-2-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2022,
+    "questionRef": "2022 OL P2 Section I A Q1 By the Bog of Cats",
+    "questionText": "By the Bog of Cats – Marina Carr.\n(a) Identify a relationship, between two characters, that you found fascinating in Marina Carr's play, By the Bog of Cats. Explain one reason why this relationship fascinated you. Support your answer with reference to the text. (10)\n(b) Identify a moment in the text which revealed something important about this relationship and explain what this moment taught you about the relationship. Support your answer with reference to the text. (10)\n(c) Did this relationship change or remain the same during the course of the text? Explain your answer with reference to the text. (15)",
+    "marks": 35,
+    "minutes": 28,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Explain",
+      "reminder": "Give reasons or causes; make the point clear and show WHY, not just WHAT."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P)",
+        "marks": 11,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C)",
+        "marks": 11,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L)",
+        "marks": 11,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M)",
+        "marks": 2,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "This three-part question is split 10+10+15. The marking scheme awards each part separately, so a candidate who pours everything into part (a) and skimps on (c) loses the 15-mark band. Part (c) specifically asks whether the relationship CHANGED — examiners flag answers that just re-describe the relationship without tracking its development across the play.",
+      "source": "SEC 2022 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-6-2"
+  },
+  {
+    "id": "eng-hl-6-3-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2022,
+    "questionRef": "2022 HL P2 A(ii) All the Light We Cannot See",
+    "questionText": "Discuss the narrative purposes served by Doerr's inclusion of the story of the diamond, the Sea of Flames, in his novel, All the Light We Cannot See. Develop your discussion with reference to the text.",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Discuss",
+      "reminder": "Examine the narrative FUNCTION of the Sea of Flames — what it does for plot, genre, theme and character — not just what the diamond is."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — focus, relevance, well-chosen compelling points, originality, critical literacy",
+        "marks": 21,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained focus, sequencing, points substantiated with apt references/quotations and key moments",
+        "marks": 21,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language Use (L) — controlled language, fluency, quality of expression",
+        "marks": 21,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar",
+        "marks": 7,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The scheme tags this question NP for 'the narrative purpose served by Doerr's inclusion of the story of the diamond'. The trap is to retell the diamond's storyline; the examiner rewards answers that explain PURPOSES — how it introduces genre elements (myth, mystery, quest), advances plot toward the climax, carries symbolic value and illuminates characters like Von Rumpel and Marie-Laure. Every reference must be tethered to a stated narrative function.",
+      "source": "SEC 2022 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-6-3"
+  },
+  {
+    "id": "eng-hl-6-3-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2024,
+    "questionRef": "2024 HL P2 Single Text A(ii) All the Light We Cannot See",
+    "questionText": "To what extent do you think the narrative structure adopted by Doerr in his novel, All the Light We Cannot See, is effective in engaging the reader? Develop your response with reference to Doerr’s novel.",
+    "marks": 60,
+    "minutes": 48,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "To what extent",
+      "reminder": "Take a measured position on the degree to which the claim holds — you may argue it is effective, ineffective, or qualified, but you must judge, not just describe."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — focus/relevance/well-chosen compelling points/critical literacy",
+        "marks": 18,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained focus, sequencing, apt examples and quotation",
+        "marks": 18,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L) — controlled, fluent expression",
+        "marks": 18,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar",
+        "marks": 6,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The scheme codes 'S' for narrative structure and 'E' for effective engagement of the reader — a 'To what extent' question explicitly invites you to argue that features such as the non-linear, multi-time-frame, multi-narrator structure can equally engage OR frustrate/irritate the reader. The indicative material lists both reactions, so the top answers weigh effectiveness rather than just listing structural devices.",
+      "source": "SEC 2024 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-6-3"
+  },
+  {
+    "id": "eng-ol-6-3-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2024,
+    "questionRef": "2024 OL P2 Section I A All the Light We Cannot See Q3",
+    "questionText": "You are giving a talk to your class about the powerful mood created by Doerr in his novel, All the Light We Cannot See. In your talk you should: Describe two moments in the novel when the mood was particularly powerful; Explain why the mood was so powerful in your chosen moments; Explain what your overall feelings were when you finished studying the novel. Your response should demonstrate your knowledge of the text.",
+    "marks": 30,
+    "minutes": 24,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Describe / Explain",
+      "reminder": "This is a three-bullet task in talk format. The scheme checks all three bullets are addressed - two moments, why the mood was powerful, and your overall feelings."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P)",
+        "marks": 9,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C)",
+        "marks": 9,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L)",
+        "marks": 9,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M)",
+        "marks": 3,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The scheme says candidates are free to choose any moments 'provided that their focus is on the mood'. Answers that retell two dramatic scenes but never analyse HOW mood is created, or skip the third bullet (overall feelings), miss the Purpose the task demands.",
+      "source": "SEC 2024 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-6-3"
+  },
+  {
+    "id": "eng-ol-6-3-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2025,
+    "questionRef": "2025 OL P2 A2 The Tenant of Wildfell Hall",
+    "questionText": "The Tenant of Wildfell Hall by Anne Brontë (30 marks).\n\nYou and a friend present a monthly podcast called 'Star Reads' in which you review and rate novels and plays. At the end of each podcast, the text you are discussing is given a star rating, from one to five. A one-star rating means – Give it a Miss! A five-star rating means – Not to be Missed! This month you will be discussing Brontë's novel, The Tenant of Wildfell Hall. Write the dialogue, for the podcast, between you and your friend, in which you discuss three compelling reasons why you arrive at your star rating for Brontë's novel. Your response should demonstrate your knowledge of the text.",
+    "marks": 30,
+    "minutes": 24,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Write the dialogue",
+      "reminder": "This is a genre task: lay it out as a two-voice podcast dialogue, not an essay. The marking scheme rewards a genuine dialogue format AND three text-grounded reasons."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — a star rating (not just 1 or 5) plus three compelling, text-based reasons",
+        "marks": 9,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained podcast dialogue between two voices",
+        "marks": 9,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L) — register suited to a review podcast, evidence from the text",
+        "marks": 9,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling, grammar, punctuation",
+        "marks": 3,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The scheme flags a specific trap: 'N.B. – not just one and five.' Candidates who give an extreme rating with no nuance lose marks; pick a defensible rating and back it with at least three reasons drawn from the actual text, in dialogue form rather than a prose essay.",
+      "source": "SEC 2025 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-6-3"
+  },
+  {
+    "id": "eng-hl-7-0-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2024,
+    "questionRef": "2024 HL P2 Comparative C2 Theme or Issue",
+    "questionText": "In the case of at least two texts on your comparative course, compare the extent to which the exploration of a theme or issue in these texts, instilled in you a sense that human beings are selfless in their thoughts and actions. Develop your response with reference to your chosen texts.",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Compare",
+      "reminder": "Sustain genuine cross-text comparison on the degree to which the texts convey human selflessness — weave the texts together."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — understanding of the Theme or Issue mode; focus on the extent to which exploration of a theme instils a sense of human selflessness; evidence of effective comparison",
+        "marks": 21,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained comparative focus, sequencing, apt examples, engagement with texts",
+        "marks": 21,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L) — controlled expression, use of comparative language",
+        "marks": 21,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar",
+        "marks": 7,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "This single 70-mark Theme or Issue option carries the full discrete PCLM split (21/21/21/7). 'The extent to which' and the personal phrasing 'instilled in you' mean candidates must judge the degree of selflessness and respond personally — the indicative material even notes texts may present humans as contradictory or selfish, so a candidate may legitimately argue the sense of selflessness is partial or undercut, provided they sustain comparison across at least two texts.",
+      "source": "SEC 2024 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-7-0"
+  },
+  {
+    "id": "eng-hl-7-0-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2023,
+    "questionRef": "2023 HL P2 C2 Comparative — Theme or Issue",
+    "questionText": "Compare how comprehensively similar or different ethical (moral) questions are explored in the treatment of the same theme or issue, in at least two texts on your comparative course. Develop your response with reference to your chosen texts.",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Compare",
+      "reminder": "Single 70-mark task: compare how COMPREHENSIVELY the ethical questions are explored across at least two texts on the same theme — judge depth of treatment, not just list the morals."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — Theme/Issue mode + effective comparison of ethical exploration",
+        "marks": 21,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained comparative focus, sequencing",
+        "marks": 21,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L) — fluency + comparative language",
+        "marks": 21,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar",
+        "marks": 7,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The task pivots on the ethical (moral) questions raised by a shared theme and how 'comprehensively' (and how similarly or differently) each text explores them. The strongest answers compare the DEPTH and angle of the moral exploration across texts; weaker ones identify the theme and recount the plot, never engaging the 'how comprehensively' or the 'similar or different' axis that the Purpose mark is built around.",
+      "source": "SEC 2023 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-7-0"
+  },
+  {
+    "id": "eng-hl-7-2-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2024,
+    "questionRef": "2024 HL P2 Comparative A2 Literary Genre",
+    "questionText": "Compare how effectively at least one technique is employed, by the authors of at least two texts on your comparative course, to manipulate the reader’s emotional response to these texts. Develop your response with reference to your chosen texts. You may refer to the same or different techniques in relation to each of your chosen texts.",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Compare",
+      "reminder": "Sustain genuine cross-text comparison on how the technique manipulates emotion — weave the texts, don't summarise them in turn."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — understanding of the Literary Genre mode; focus on how effectively technique manipulates emotional response; evidence of effective comparison",
+        "marks": 21,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained comparative focus, sequencing, apt examples, engagement with texts",
+        "marks": 21,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L) — controlled expression, use of comparative language",
+        "marks": 21,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar",
+        "marks": 7,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "This single 70-mark Literary Genre option carries the full discrete PCLM split (21/21/21/7) and the word 'effectively' is load-bearing — it is not enough to identify a technique and the emotion it produces; you must judge how well it manipulates the reader's response and sustain comparison across at least two texts. The scheme's Purpose descriptor again demands 'evidence of effective comparison within the mode', so genuine integration across texts, not serial treatment, is what lifts the grade.",
+      "source": "SEC 2024 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-7-2"
+  },
+  {
+    "id": "eng-hl-7-2-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2022,
+    "questionRef": "2022 HL P2 Section II A Q1 Literary Genre",
+    "questionText": "Literary Genre.\n\n(a) Identify two techniques used to advance the plot in one text on your comparative course and discuss how effectively these techniques are used for this purpose in this text. Develop your answer with reference to the text. (30)\n\n(b) In the case of each of two other texts on your comparative course, identify at least one technique used to advance the plot and compare how effectively this technique or these techniques are employed for this purpose in these texts. You may refer to the same technique or different techniques in each text during the course of your response. Develop your answer with reference to your chosen texts. (40)",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Compare",
+      "reminder": "In part (b) COMPARE across texts — set the plot-advancing techniques side by side rather than handling each text in an isolated block."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — relevant genre focus on plot-advancing techniques, well-chosen points, critical literacy",
+        "marks": 21,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained comparison, sequencing, points substantiated with apt references and key moments",
+        "marks": 21,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language Use (L) — controlled comparative language, fluency, quality of expression",
+        "marks": 21,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar",
+        "marks": 7,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The 30+40 split is deliberate: part (a) is single-text (one text, two techniques) and part (b) is genuinely comparative (two OTHER texts). The classic Literary Genre failing is answering (b) as two more single-text essays — the 40-mark part is rewarded for COMPARISON of how effectively techniques advance plot across the texts. Use comparative linking language throughout (b), and do not reuse the part (a) text. Effectiveness, not mere identification, is what the mode asks.",
+      "source": "SEC 2022 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-7-2"
+  },
+  {
+    "id": "eng-hl-7-3-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2024,
+    "questionRef": "2024 HL P2 Comparative B2 Cultural Context",
+    "questionText": "In the case of at least two texts on your comparative course, compare the extent to which aspects of the cultural context, prevalent in these texts, nurture admirable values and attitudes. Develop your response with reference to your chosen texts.",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Compare",
+      "reminder": "Sustain genuine cross-text comparison on how cultural context nurtures admirable values — weave the texts, don't summarise each in turn."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — understanding of the Cultural Context mode; focus on how context nurtures admirable values; evidence of effective comparison",
+        "marks": 21,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained comparative focus, sequencing, apt examples, engagement with texts",
+        "marks": 21,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L) — controlled expression, use of comparative language",
+        "marks": 21,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar",
+        "marks": 7,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "This single 70-mark Cultural Context option carries the full discrete PCLM split (21/21/21/7). The scheme allows a broad definition of 'admirable' and requires 'the extent to which' the cultural context nurtures these values — so candidates should show how social structures, institutions or attitudes in each text actively cultivate (or fail to cultivate) commendable values, sustaining comparison across at least two texts rather than asserting that the texts contain good characters.",
+      "source": "SEC 2024 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-7-3"
+  },
+  {
+    "id": "eng-hl-7-3-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2022,
+    "questionRef": "2022 HL P2 Section II B Q1 Cultural Context",
+    "questionText": "Cultural Context.\n\n(a) Discuss how those in power in society maintain their dominant position in one text on your comparative course. Develop your response with reference to the text. (30)\n\n(b) Compare how those in power in society maintain their dominant position in each of two other texts on your comparative course. Develop your response with reference to your chosen texts. (40)",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Compare",
+      "reminder": "In part (b) COMPARE how power is maintained across two other texts — link them, don't write two separate accounts."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — relevant cultural-context focus on how power is maintained, well-chosen points, critical literacy",
+        "marks": 21,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained comparison, sequencing, points substantiated with apt references and key moments",
+        "marks": 21,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language Use (L) — controlled comparative language, fluency, quality of expression",
+        "marks": 21,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar",
+        "marks": 7,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "Cultural Context answers lose marks when they slide into theme or plot rather than the structures of society the mode is built on. Here the precise focus is how those in POWER MAINTAIN their dominant position — examiners reward discussion of the mechanisms (law, class, gender, money, religion, institutions) that preserve dominance. In part (b) the 40 marks demand a genuine comparison across two other texts, not a second pair of single-text paragraphs.",
+      "source": "SEC 2022 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-7-3"
+  },
+  {
+    "id": "eng-hl-7-4-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2022,
+    "questionRef": "2022 HL P2 Section II C Q1 General Vision and Viewpoint",
+    "questionText": "General Vision and Viewpoint.\n\n(a) Discuss how the level of resilience you found displayed by individuals or communities in one text on your comparative course helped to shape your sense of the general vision and viewpoint of this text. (30)\n\n(b) Compare how the levels of resilience you found displayed by individuals or communities in each of two other texts on your comparative course influenced your sense of the general vision and viewpoint of these texts. Develop your response with reference to your chosen texts. (40)",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Compare",
+      "reminder": "In part (b) COMPARE how resilience shapes the general vision and viewpoint across two other texts — keep your personal response present."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — relevant focus on resilience shaping the general vision and viewpoint, personal engagement, critical literacy",
+        "marks": 21,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained comparison, sequencing, points substantiated with apt references and key moments",
+        "marks": 21,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language Use (L) — controlled comparative language, fluency, quality of expression",
+        "marks": 21,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar",
+        "marks": 7,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "General Vision and Viewpoint is the personal-response mode — note the repeated 'you found' and 'your sense'. The failing examiners flag is answering as if resilience were the topic in itself; the marks require you to connect resilience to the OUTLOOK (optimistic/pessimistic/affirming) the text leaves you with. In part (b) the 40 marks are for COMPARING how resilience shaped your vision across two other texts, not for narrating resilient moments separately.",
+      "source": "SEC 2022 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-7-4"
+  },
+  {
+    "id": "eng-hl-7-4-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2023,
+    "questionRef": "2023 HL P2 A2 Comparative — General Vision and Viewpoint",
+    "questionText": "Compare how the response of characters to personal or societal crises, in at least two texts on your comparative course, influence your sense of the general vision and viewpoint. Develop your response with reference to your chosen texts. In your response you may discuss personal or societal crises, or both.",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Compare",
+      "reminder": "The single 70-mark task: sustain a genuine comparison of at least two texts throughout — the mark is for comparative writing on the mode, not parallel summaries."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — GVV mode + effective comparison across texts",
+        "marks": 21,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained comparative focus, sequencing",
+        "marks": 21,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L) — fluency + comparative language",
+        "marks": 21,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar",
+        "marks": 7,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "In the single-question 70-mark route the P descriptor demands focus on how characters' RESPONSE to crises (not the crises themselves) influences the general vision, plus 'evidence of effective comparison'. Candidates lose marks by narrating the crisis events; the scheme's indicative material points to acquiescence/resilience/courage/passivity as responses — it is the response, compared across texts, that shapes the vision.",
+      "source": "SEC 2023 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-7-4"
+  },
+  {
+    "id": "eng-ol-7-5-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2022,
+    "questionRef": "2022 OL P2 Section II C Q1 Hero, Heroine, Villain",
+    "questionText": "Comparative Study — Hero, Heroine, Villain.\n(a)(i) Name one text on your comparative course and identify a hero or a heroine or a villain you studied in it. Explain at least one reason why you do or do not believe this character is a good role model for teenagers. Support your answer with reference to your chosen text. (15)\n(a)(ii) Name another text on your comparative course and identify a hero or a heroine or a villain you studied in it. Explain at least one reason why you do or do not believe this character is a good role model for teenagers. Support your answer with reference to your chosen text. (15)\n(b) Most characters, whether heroic or villainous, possess some kind of flaw or weakness. Identify a hero, heroine or villain from each of at least two texts on your comparative course and compare the flaws or weaknesses evident in each of these characters. Support your answer with reference to your chosen texts. (40)",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Compare",
+      "reminder": "In part (b) you MUST set the characters side by side — point out similarities and/or differences in their flaws throughout, not one then the other."
+    },
+    "ribbons": [
+      {
+        "label": "(a)(i) single text — Clarity & Coherence (P+C)",
+        "marks": 9,
+        "kind": "explain"
+      },
+      {
+        "label": "(a)(i) single text — Language & Mechanics (L+M)",
+        "marks": 6,
+        "kind": "quote"
+      },
+      {
+        "label": "(a)(ii) single text — Clarity & Coherence (P+C)",
+        "marks": 9,
+        "kind": "explain"
+      },
+      {
+        "label": "(a)(ii) single text — Language & Mechanics (L+M)",
+        "marks": 6,
+        "kind": "quote"
+      },
+      {
+        "label": "(b) Clarity of Purpose (P)",
+        "marks": 12,
+        "kind": "explain"
+      },
+      {
+        "label": "(b) Coherence of Delivery (C)",
+        "marks": 12,
+        "kind": "link"
+      },
+      {
+        "label": "(b) Efficiency of Language (L)",
+        "marks": 12,
+        "kind": "quote"
+      },
+      {
+        "label": "(b) Accuracy of Mechanics (M)",
+        "marks": 4,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "Parts (a) are single-text (15+15) and ask whether the character is a good role model for teenagers — the explanation of the judgement, with at least one developed reason, carries the marks. Part (b) (40) compares FLAWS or weaknesses across two characters and requires comparison throughout (code C). Describing each character's flaws in isolation, with no cross-text linking, caps the 40-mark part.",
+      "source": "SEC 2022 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-7-5"
+  },
+  {
+    "id": "eng-ol-7-5-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2023,
+    "questionRef": "2023 OL P2 Section II B Q1 Hero, Heroine, Villain (decision)",
+    "questionText": "THE COMPARATIVE STUDY — B HERO, HEROINE, VILLAIN. (You may not use the text you answered on in Section I.)\n\n1. (a) (i) Name one of the texts on your comparative course. Choose a hero, heroine or villain from the text who made an important decision. Describe the important decision made and explain why this character either regretted or was satisfied with this decision. Support your answer with reference to your chosen text. (15)\n(ii) Name another text on your comparative course. Choose a hero, heroine or villain from the text who made an important decision. Describe the important decision made and explain why this character either regretted or was satisfied this decision. Support your answer with reference to your chosen text. (15)\n(b) Identify a hero, heroine or villain from each of at least two texts on your comparative course. Compare the life lessons you learned from some of the actions of these characters. Support your answer with reference to your chosen texts. (40)",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Compare",
+      "reminder": "Part (b) asks you to 'compare the life lessons you learned' — the comparison is between the LESSONS across texts, not just the characters. The single-text parts (a)(i)/(ii) only need a described decision plus why the character regretted or was satisfied with it."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P)",
+        "marks": 21,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C)",
+        "marks": 21,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L)",
+        "marks": 21,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M)",
+        "marks": 7,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "In part (b) the scheme requires the answer to be 'supported with reference to at least two comparative texts' and stresses comparison 'throughout their response' (coded C), so a 'life lesson' from only one text cannot earn the comparative marks. The (a) parts are graded partly on 'the knowledge of the text evident in the response' — name the character and the specific decision precisely; vague 'the hero made a choice he regretted' answers without textual grounding are capped.",
+      "source": "SEC 2023 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-7-5"
+  },
+  {
+    "id": "eng-ol-7-6-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2022,
+    "questionRef": "2022 OL P2 Section II B Q1 Relationships",
+    "questionText": "Comparative Study — Relationships.\n(a)(i) Name one of the comparative texts you have studied and identify a relationship in it. Use one or more key moments to help explain whether this was an equal or an unequal relationship. Support your answer with reference to the text. (15)\n(a)(ii) Name another comparative text you have studied and identify a relationship in it. Use one or more key moments to help explain whether this was an equal or an unequal relationship. Support your answer with reference to the text. (15)\n(b) Identify one relationship in each of at least two texts on your comparative course. Compare what you learned about developing positive relationships from studying both the good and the bad aspects of the relationships you have identified. Support your answer with reference to your chosen texts. (40)",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Compare",
+      "reminder": "In part (b) you MUST set the texts side by side — point out similarities and/or differences throughout, not one text then the other."
+    },
+    "ribbons": [
+      {
+        "label": "(a)(i) single text — Clarity & Coherence (P+C)",
+        "marks": 9,
+        "kind": "explain"
+      },
+      {
+        "label": "(a)(i) single text — Language & Mechanics (L+M)",
+        "marks": 6,
+        "kind": "quote"
+      },
+      {
+        "label": "(a)(ii) single text — Clarity & Coherence (P+C)",
+        "marks": 9,
+        "kind": "explain"
+      },
+      {
+        "label": "(a)(ii) single text — Language & Mechanics (L+M)",
+        "marks": 6,
+        "kind": "quote"
+      },
+      {
+        "label": "(b) Clarity of Purpose (P)",
+        "marks": 12,
+        "kind": "explain"
+      },
+      {
+        "label": "(b) Coherence of Delivery (C)",
+        "marks": 12,
+        "kind": "link"
+      },
+      {
+        "label": "(b) Efficiency of Language (L)",
+        "marks": 12,
+        "kind": "quote"
+      },
+      {
+        "label": "(b) Accuracy of Mechanics (M)",
+        "marks": 4,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "Parts (a) are single-text (15+15) and demand 'one or more key moments' to judge equal vs unequal — generic relationship description without anchoring moments loses marks. Part (b) (40) requires comparison throughout (code C) of what you LEARNED about positive relationships, not just plot recap. Telling each text's story in turn caps the 40-mark part.",
+      "source": "SEC 2022 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-7-6"
+  },
+  {
+    "id": "eng-ol-7-6-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2023,
+    "questionRef": "2023 OL P2 Section II A Q1 Relationships (lonely/fulfilled)",
+    "questionText": "THE COMPARATIVE STUDY — A RELATIONSHIPS. (You may not use the text you answered on in Section I. Texts must be prescribed for comparative study; you may refer to only one film.)\n\n1. (a) (i) In a relationship, characters can feel lonely or fulfilled. Name one of the texts on your comparative course and choose a relationship from it. Describe a key moment when a character in this relationship felt either lonely or fulfilled. Explain how this loneliness or fulfilment affected this character's behaviour towards the other character(s) in the relationship. Support your answer with reference to your chosen text. (15)\n(ii) Name another text on your comparative course and choose a relationship from it. Describe a key moment when a character in this relationship felt either lonely or fulfilled. Explain how this loneliness or fulfilment affected this character's behaviour towards the other character(s) in the relationship. Support your answer with reference to your chosen text. (15)\n(b) Identify one relationship in each of at least two texts on your comparative course. Compare the aspect or aspects evident in each of your chosen relationships which helped these relationships to either flourish or fail. Support your answer with reference to your chosen texts. (40)",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Compare",
+      "reminder": "'Compare' is the command in part (b) and it is the marked behaviour — examiners are told to use code 'C' wherever a relevant similarity or difference is given. Part (a)(i) and (ii) are single-text 'describe and explain' tasks; the comparison is only required in (b)."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P)",
+        "marks": 21,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C)",
+        "marks": 21,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L)",
+        "marks": 21,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M)",
+        "marks": 7,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The 40-mark part (b) is the only discretely-marked part (P=12, C=12, L=12, M=4) and it is where comparison is graded — the scheme says 'the emphasis is on identifying similarities and/or differences' and 'requires the candidate to make comparison(s) throughout their response', with examiners coding each comparative link 'C'. Candidates who write two separate text-by-text accounts in (b) and only compare in a final paragraph lose Coherence marks; weave the comparison through. Parts (a)(i)/(ii) are combined-marked (P+C=9, L+M=6) single-text tasks — do NOT compare there, just describe one key moment and explain its effect on behaviour.",
+      "source": "SEC 2023 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-7-6"
+  },
+  {
+    "id": "eng-ol-7-7-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2022,
+    "questionRef": "2022 OL P2 Section II A Q1 Social Setting",
+    "questionText": "Comparative Study — Social Setting.\n(a)(i) Name one comparative text you have studied. Identify an aspect of the social setting of this text you would like to change if you had the power to do so. Explain why you would choose to make this particular change. Support your answer with reference to the text. (15)\n(a)(ii) Name another comparative text you have studied. Identify an aspect of the social setting of this text you would like to change if you had the power to do so. Explain why you would choose to make this particular change. Support your answer with reference to the text. (15)\n(b) Compare the reasons why you would or would not like to live in the world you encountered in each of at least two texts on your comparative course. Support your answer with reference to the social settings evident in your chosen texts. (40)",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Compare",
+      "reminder": "In part (b) you MUST set the texts side by side — point out similarities and/or differences throughout, not one text then the other."
+    },
+    "ribbons": [
+      {
+        "label": "(a)(i) single text — Clarity & Coherence (P+C)",
+        "marks": 9,
+        "kind": "explain"
+      },
+      {
+        "label": "(a)(i) single text — Language & Mechanics (L+M)",
+        "marks": 6,
+        "kind": "quote"
+      },
+      {
+        "label": "(a)(ii) single text — Clarity & Coherence (P+C)",
+        "marks": 9,
+        "kind": "explain"
+      },
+      {
+        "label": "(a)(ii) single text — Language & Mechanics (L+M)",
+        "marks": 6,
+        "kind": "quote"
+      },
+      {
+        "label": "(b) Clarity of Purpose (P)",
+        "marks": 12,
+        "kind": "explain"
+      },
+      {
+        "label": "(b) Coherence of Delivery (C)",
+        "marks": 12,
+        "kind": "link"
+      },
+      {
+        "label": "(b) Efficiency of Language (L)",
+        "marks": 12,
+        "kind": "quote"
+      },
+      {
+        "label": "(b) Accuracy of Mechanics (M)",
+        "marks": 4,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "Parts (a) handle ONE text each (15+15); part (b) is the only comparative part (40) and the scheme tells examiners to 'use code C to indicate where relevant similarities and/or differences are given' — comparison must run THROUGHOUT, not appear once. Answers that describe each social setting in turn without sustained cross-text comparison forfeit the bulk of the 40 marks.",
+      "source": "SEC 2022 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-7-7"
+  },
+  {
+    "id": "eng-ol-7-7-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2024,
+    "questionRef": "2024 OL P2 Section II C Social Setting Q1",
+    "questionText": "(a)(i) Name one of the texts on your comparative course. In your view, did the social setting encourage the characters in the text to be considerate of others? Use one or more key moment(s) to support your response. (15) (ii) Name another text on your comparative course. In your view, did the social setting encourage characters in this text to be considerate of others? Use one or more key moment(s) to support your response. (15) (b) The social setting in any text can give a reader reasons to feel hopeful or reasons to feel hopeless. In relation to at least two texts on your comparative course, compare the ways the social settings in these texts gave you reasons to feel hopeful or to feel hopeless. Your response can be based on a combination of the two feelings. Support your response with reference to your chosen texts. (40)",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Compare",
+      "reminder": "Parts (a)(i)/(ii) ask for a clear view ('did the setting encourage...') grounded in a key moment; part (b) 'Compare' demands hopeful/hopeless similarities and differences running throughout."
+    },
+    "ribbons": [
+      {
+        "label": "(a)(i) single text - P+C",
+        "marks": 9,
+        "kind": "explain"
+      },
+      {
+        "label": "(a)(i) single text - L+M",
+        "marks": 6,
+        "kind": "other"
+      },
+      {
+        "label": "(a)(ii) single text - P+C",
+        "marks": 9,
+        "kind": "explain"
+      },
+      {
+        "label": "(a)(ii) single text - L+M",
+        "marks": 6,
+        "kind": "other"
+      },
+      {
+        "label": "(b) comparative - Clarity of Purpose",
+        "marks": 12,
+        "kind": "explain"
+      },
+      {
+        "label": "(b) comparative - Coherence of Delivery",
+        "marks": 12,
+        "kind": "link"
+      },
+      {
+        "label": "(b) comparative - Efficiency of Language",
+        "marks": 12,
+        "kind": "quote"
+      },
+      {
+        "label": "(b) comparative - Accuracy of Mechanics",
+        "marks": 4,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The scheme wants the social SETTING (not the plot) shown to encourage or discourage consideration, anchored in a key moment. Part (b) requires comparison of hopeful/hopeless feelings throughout (code C); the chosen text must not be your Single Text and must be prescribed.",
+      "source": "SEC 2024 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-7-7"
+  },
+  {
+    "id": "eng-ol-7-9-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2023,
+    "questionRef": "2023 OL P2 Section II C Q1 Theme (key moment highlights theme)",
+    "questionText": "THE COMPARATIVE STUDY — C THEME. (You may not use the text you answered on in Section I.)\n\n1. (a) (i) Name one of the texts on your comparative course and identify a theme you have studied in that text. Describe a key moment from the text when, in your opinion, the author wanted to highlight this theme. Explain why the key moment made something important about your chosen theme clearer to you. Support your answer with reference to the text. (15)\n(ii) Name another text on your comparative course that deals with the same theme you discussed in part (a) (i). Describe a key moment from the text when, in your opinion, the author wanted to highlight this theme. Explain why the key moment made something important about your chosen theme clearer to you. Support your answer with reference to the text. (15)\n(b) Some texts can explore the same theme in greater depth than others. In relation to at least two of the texts on your comparative course, compare how deeply the same theme was explored in each text. You must discuss the same theme you discussed in part (a). Support your answer with reference to your chosen texts. (40)",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Compare",
+      "reminder": "Note the binding instruction: the theme in (a)(ii) and (b) MUST be the same theme you named in (a)(i). Changing theme between parts breaks the question's logic and forfeits coherence and comparative marks."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P)",
+        "marks": 21,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C)",
+        "marks": 21,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L)",
+        "marks": 21,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M)",
+        "marks": 7,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The single most common way to lose marks on the Theme question is the consistency rule: the scheme states (a)(ii) must deal with 'the same theme you discussed in part (a)(i)' and (b) demands 'the same theme you discussed in part (a)'. Pick a theme that genuinely runs through at least two prescribed comparative texts before you commit. In (b) the comparison is about DEPTH — 'compare how deeply the same theme was explored in each text' — so you must judge which text treats it more fully, not just confirm both contain the theme.",
+      "source": "SEC 2023 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-7-9"
+  },
+  {
+    "id": "eng-ol-7-9-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2024,
+    "questionRef": "2024 OL P2 Section II B Theme Q1",
+    "questionText": "(a)(i) Name one of the texts on your comparative course. Identify a theme you explored while studying this text. Explain how the actions of a character in one or more key moment(s) in that text helped to make the author's exploration of that theme more interesting for you. Support your response with reference to your chosen text. (15) (ii) Name another text on your comparative course. Explain how the actions of a character in one or more key moment(s) in that text helped to make the author's exploration of the same theme discussed in part (i) more interesting for you. Support your response with reference to your chosen text. (15) (b) We can be affected emotionally by the way authors explore themes in their texts. In relation to the theme you discussed in part (a) above, compare how the treatment of that theme, in at least two texts on your comparative course, affected you emotionally. Support your response with reference to your chosen texts. (40)",
+    "marks": 70,
+    "minutes": 56,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Compare",
+      "reminder": "You must carry the SAME theme through (a)(i), (a)(ii) and (b). Part (b) 'Compare' demands linked similarities/differences throughout, not two separate emotional reactions."
+    },
+    "ribbons": [
+      {
+        "label": "(a)(i) single text - P+C",
+        "marks": 9,
+        "kind": "explain"
+      },
+      {
+        "label": "(a)(i) single text - L+M",
+        "marks": 6,
+        "kind": "other"
+      },
+      {
+        "label": "(a)(ii) single text - P+C",
+        "marks": 9,
+        "kind": "explain"
+      },
+      {
+        "label": "(a)(ii) single text - L+M",
+        "marks": 6,
+        "kind": "other"
+      },
+      {
+        "label": "(b) comparative - Clarity of Purpose",
+        "marks": 12,
+        "kind": "explain"
+      },
+      {
+        "label": "(b) comparative - Coherence of Delivery",
+        "marks": 12,
+        "kind": "link"
+      },
+      {
+        "label": "(b) comparative - Efficiency of Language",
+        "marks": 12,
+        "kind": "quote"
+      },
+      {
+        "label": "(b) comparative - Accuracy of Mechanics",
+        "marks": 4,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The scheme ties (a)(ii) and (b) explicitly to 'the same theme discussed in part (i)' - switching theme between parts breaks the question's logic. Part (b) needs comparison throughout (code C); the text must not be your Single Text and must be prescribed.",
+      "source": "SEC 2024 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-7-9"
+  },
+  {
+    "id": "eng-hl-8-0-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2024,
+    "questionRef": "2024 HL P2 Prescribed Poetry 1 W.B. Yeats",
+    "questionText": "“Yeats utilises powerful imagery to explore fascinating contradictions that are central to his poetry.” Discuss this statement developing your response with reference to the poetry by W.B. Yeats on your Leaving Certificate English course.",
+    "marks": 50,
+    "minutes": 40,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Discuss",
+      "reminder": "Engage with both halves of the statement using the poems themselves — not a general appreciation of Yeats."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — focus/relevance/critical literacy/originality",
+        "marks": 15,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained focus, sequencing, cross-reference, accurate quotation and reference",
+        "marks": 15,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L) — controlled, fluent expression",
+        "marks": 15,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar",
+        "marks": 5,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The scheme codes 'I' for 'utilises powerful imagery' and 'C' for 'fascinating contradictions central to his poetry' — both halves must be served. A common failing is to answer only on imagery OR only on themes; the question links the two, requiring candidates to show how Yeats's images dramatise paradoxes (youth/age, art/reality, idealism/fanaticism). Coherence specifically rewards accurate quotation and cross-reference across poems, so apt textual support across several poems is essential.",
+      "source": "SEC 2024 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-8-0"
+  },
+  {
+    "id": "eng-hl-8-0-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2022,
+    "questionRef": "2022 HL P2 Section III B Q1 Brendan Kennelly",
+    "questionText": "Brendan Kennelly.\n\n\"Brendan Kennelly effectively employs an appealing descriptive style to reflect on the triumphs, trials and limitations of the human condition.\"\n\nTo what extent do you agree or disagree with the above statement? Develop your response with reference to the poems by Brendan Kennelly on your Leaving Certificate English course.",
+    "marks": 50,
+    "minutes": 40,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "To what extent do you agree or disagree",
+      "reminder": "Take a measured stance — you can partly agree; address BOTH the 'appealing descriptive style' AND the human-condition content the statement bundles together."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — relevant engagement with the statement, well-chosen points, personal response, critical literacy",
+        "marks": 15,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustained focus, sequencing, points substantiated with apt quotation and reference to named poems",
+        "marks": 15,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language Use (L) — controlled language, fluency, quality of expression",
+        "marks": 15,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar",
+        "marks": 5,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The scheme codes D for 'Kennelly effectively employs an appealing descriptive style' — it is a TWO-PART statement, style PLUS the triumphs/trials/limitations of the human condition. The standard Prescribed Poetry failing is to answer the theme and ignore the style claim (or vice versa). Top-band answers address both, name specific poems and quote precisely; a thematic summary with no engagement with descriptive style cannot reach the top Clarity-of-Purpose band.",
+      "source": "SEC 2022 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-8-0"
+  },
+  {
+    "id": "eng-ol-8-1-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2022,
+    "questionRef": "2022 OL P2 Section III B A Prescribed Poetry — The Lake Isle of Innisfree (Yeats)",
+    "questionText": "Prescribed Poetry — \"The Lake Isle of Innisfree\" by W.B. Yeats.\n1.(a) What impression of the island of Innisfree do you form from reading this poem? Support your answer with reference to the poem. (15)\n1.(b) In your opinion, which of the following word or words best describe(s) the feelings Innisfree inspires in Yeats? Longing / Love / Calm. Support your answer with reference to the poem. (15)\n2. Answer ONE of the following [Each part carries 20 marks]:\n(i) Identify your two favourite stanzas from the above poem and explain why these stanzas appeal to you. Support your answer with reference to the content and language of your chosen stanzas.\nOR (ii) Explain why, in your opinion, Yeats's use of vivid imagery does or does not add to the appeal of the above poem. Support your answer with reference to the poet's use of vivid imagery in the poem.\nOR (iii) Your class is creating a book of students' favourite poems. Each student has been invited to write a piece for inclusion in the book in which they: nominate their favourite poem, introduce the poem to readers and explain why this poem is their favourite. You have chosen Yeats's poem, \"The Lake Isle of Innisfree\", as your favourite. Write the piece you would contribute to the book.",
+    "marks": 50,
+    "minutes": 40,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Explain",
+      "reminder": "Give reasons throughout — every impression, word-choice and image claim must be backed by reference to the poem."
+    },
+    "ribbons": [
+      {
+        "label": "1(a) impression — Clarity & Coherence (P+C)",
+        "marks": 9,
+        "kind": "explain"
+      },
+      {
+        "label": "1(a) impression — Language & Mechanics (L+M)",
+        "marks": 6,
+        "kind": "quote"
+      },
+      {
+        "label": "1(b) best word — Clarity & Coherence (P+C)",
+        "marks": 9,
+        "kind": "explain"
+      },
+      {
+        "label": "1(b) best word — Language & Mechanics (L+M)",
+        "marks": 6,
+        "kind": "quote"
+      },
+      {
+        "label": "2 chosen part — Clarity & Coherence (P+C)",
+        "marks": 12,
+        "kind": "explain"
+      },
+      {
+        "label": "2 chosen part — Language & Mechanics (L+M)",
+        "marks": 8,
+        "kind": "quote"
+      }
+    ],
+    "lesson": {
+      "text": "The 50 marks split 15 (impression) + 15 (best word, supported) + 20 (one of three options). For 1(b) the scheme stresses the choice of word matters less than the SUPPORT from the poem — picking 'Longing' or 'Calm' is fine either way, but it must be justified with reference. Candidates who name a word and never anchor it in the poem's lines lose half the part.",
+      "source": "SEC 2022 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-8-1"
+  },
+  {
+    "id": "eng-ol-8-1-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2023,
+    "questionRef": "2023 OL P2 Section III B A kitchenette building",
+    "questionText": "PRESCRIBED POETRY — A: 'kitchenette building' by Gwendolyn Brooks (50 marks).\n\n1. (a) What do you think is the most important message in this poem? Explain your answer with reference to the poem. (15)\n(b) What impression do you get of the place in which this poem is set? Support your answer with reference to the poem. (15)\n\n2. Answer ONE of the following: [Each part carries 20 marks]\n(i) Your local library is trying to encourage people to read poetry. They are running a competition inviting people to write a letter about how their favourite poem makes them feel. You decide to enter the competition. Write your letter in which you outline what the poem, 'kitchenette building' makes you feel when you read it. Support your answer with reference to the poem.\nOR\n(ii) Do you think Brooks makes effective use of imagery in this poem? Support your answer with reference to the poet's use of imagery in the poem.\nOR\n(iii) You have been asked to suggest a poem that would be a good poem to make into a short film. The poem you have chosen is 'kitchenette building'. Explain three reasons why you think 'kitchenette building' would be a good choice. If you wish, you may refer to some of the following areas: character, mood, sounds, images, setting.",
+    "marks": 50,
+    "minutes": 40,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Explain / Support with reference",
+      "reminder": "Every part ends with 'with reference to the poem' — an unsupported assertion about message, place or imagery cannot reach the top band. Question 2 is a CHOICE of one part only; do not answer more than one of (i)/(ii)/(iii)."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P)",
+        "marks": 15,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C)",
+        "marks": 15,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L)",
+        "marks": 15,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M)",
+        "marks": 5,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The scheme allows 'a wide range of responses' for the 'most important message' part, so there is no single right reading — but every part is marked on support 'with reference to the poem', meaning unquoted, unevidenced claims sit in the lower bands. For the imagery option (2(ii)), examiners want discussion of the poet's actual images (e.g. 'onion fumes', 'yesterday's garbage ripening') and the effect, not a paraphrase of the poem's meaning. The Q2 parts are worth 20 marks each, more than either Q1 part (15) — budget time accordingly.",
+      "source": "SEC 2023 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-8-1"
+  },
+  {
+    "id": "eng-hl-9-1-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2024,
+    "questionRef": "2024 HL P1 Composing 1 (short story)",
+    "questionText": "In TEXT 2, we see a complicated relationship between friends and family.\n\nWrite a short story focusing on tensions either in a family or in a group of friends in which a connection between the past and the present is important.",
+    "marks": 100,
+    "minutes": 80,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Write",
+      "reminder": "Write a short story — narrate, don't just describe; build a scene with characters and a turn."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P): focus on a short story about tensions in a family/group of friends where a past-present connection matters; understanding of the short-story genre, relevance, originality",
+        "marks": 30,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C): the extent to which the narrative is successfully shaped, developed and sustained; sequencing and management of ideas",
+        "marks": 30,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L): quality and control of language — style, vocabulary, syntax, punctuation",
+        "marks": 30,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M): spelling and grammar",
+        "marks": 10,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The scheme rewards 'controlled use of features of the genre' — narrative shape, setting, characterisation, atmosphere, dialogue, tension, narrative voice, resolution. A common failing is producing a descriptive personal essay rather than a true story: the prompt's twin requirements (the named tension AND a working past-present connection) must both drive the plot, not be tacked on. Because P caps C and L, a story that drifts off the 'tension + past/present' brief loses marks across all three primary criteria, not just Purpose.",
+      "source": "SEC 2024 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-9-1"
+  },
+  {
+    "id": "eng-hl-9-1-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "higher",
+    "year": 2022,
+    "questionRef": "2022 HL P1 Composing 1",
+    "questionText": "In TEXT 2, Tom Gatti suggests that albums can become “faithful companions” in our lives.\n\nWrite a personal essay in which you identify some of the items or objects that have become “faithful companions” in your life and reflect on the importance of these items or objects to you.",
+    "marks": 100,
+    "minutes": 80,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Write a personal essay",
+      "reminder": "A personal essay is reflective and written in the first person – use an authentic personal voice, real anecdotes and revealing personal insights rather than a detached, general discussion. The marker rewards a distinctive, sincere “you” on the page."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) – sustained, relevant engagement with the personal-essay task",
+        "marks": 30,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) – the personal approach shaped, developed and sustained; ideas sequenced",
+        "marks": 30,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L) – quality and control of language: style, vocabulary, syntax, punctuation",
+        "marks": 30,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) – spelling and grammar",
+        "marks": 10,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "Personal essays are graded for an authentic personal voice, not just neat prose. The marking scheme rewards first-person writing, a reflective tone, personal anecdotes/observations and revealing personal insights – and warns that Clarity of Purpose (P) governs everything: marks for Coherence (C) or Language (L) can never exceed your P mark. So a fluent but impersonal, generic essay that drifts from ‘items that are faithful companions to YOU’ caps its own grade. Anchor every paragraph in a specific object and what it genuinely means to you.",
+      "source": "SEC 2022 HL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-9-1"
+  },
+  {
+    "id": "eng-ol-9-1-1",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2022,
+    "questionRef": "2022 OL P1 Composition 1",
+    "questionText": "TEXTS 1, 2 and 3 all deal with the theme of Exploring Friendship.\n\nWrite a personal essay in which you consider the sort of friend you would like to be, how you think you can best support your friends during difficult times and reflect on how you benefit from being a good friend to others.",
+    "marks": 100,
+    "minutes": 80,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Write a personal essay",
+      "reminder": "A personal essay needs the authentic engaged 'I' — first person, a confessional/reflective tone, personal anecdotes and pertinent personal details. The marking scheme rewards 'use of authentic personal voice', so show YOUR thinking, not generic statements about friendship anyone could write."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — stay focused on all three strands: the friend you'd like to be, how you support friends, and how you benefit from being a good friend; shape it as a genuine personal essay",
+        "marks": 30,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — sustain and develop the personal perspective; sequence and manage ideas so the reflection flows rather than jumping between disconnected points",
+        "marks": 30,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L) — control of style, vocabulary, syntax and punctuation appropriate to a reflective personal register",
+        "marks": 30,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling, grammar and punctuation accuracy",
+        "marks": 10,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The 2022 OL scheme rewards 'originality and freshness' and an 'authentic personal voice' for the personal essay. The common failing is writing in vague generalities about friendship that any candidate could produce; top answers anchor each of the three strands (the friend you'd be, supporting friends in hard times, how you benefit) in specific personal anecdote and individual observation rather than dictionary-definition statements about what makes a good friend.",
+      "source": "SEC 2022 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-9-1"
+  },
+  {
+    "id": "eng-ol-9-1-2",
+    "subject": "english",
+    "subjectLabel": "English",
+    "level": "ordinary",
+    "year": 2023,
+    "questionRef": "2023 OL P1 Composition 1",
+    "questionText": "TEXT 1 details Denise O'Sullivan's passionate love of football.\n\nWrite a personal essay in which you describe some of the things in life that you are passionate about and explain why these things are so important to you.",
+    "marks": 100,
+    "minutes": 80,
+    "answerKind": "paper",
+    "commandWord": {
+      "word": "Write a personal essay",
+      "reminder": "A personal essay wants the engaged 'I' — first person, a personal/confessional register, your own anecdotes and strongly held views. The scheme rewards an authentic personal voice, not a detached general discussion. You must reflect on at least two things you are passionate about, and explain WHY each matters, not just list them."
+    },
+    "ribbons": [
+      {
+        "label": "Clarity of Purpose (P) — sustained focus on the personal-essay task, reflecting on at least two passions and why they matter",
+        "marks": 30,
+        "kind": "explain"
+      },
+      {
+        "label": "Coherence of Delivery (C) — the personal perspective successfully sustained and developed; effective shaping and sequencing",
+        "marks": 30,
+        "kind": "link"
+      },
+      {
+        "label": "Efficiency of Language (L) — quality and control of language: style, vocabulary, syntax, punctuation",
+        "marks": 30,
+        "kind": "quote"
+      },
+      {
+        "label": "Accuracy of Mechanics (M) — spelling and grammar accuracy",
+        "marks": 10,
+        "kind": "other"
+      }
+    ],
+    "lesson": {
+      "text": "The marking scheme insists candidates 'must reflect on at least two things' — answers that pour everything into one passion, or that name passions without explaining why they matter, lose Purpose marks. The genre note demands the 'engaged I': written in the first person with personal anecdotes, confessional tone and authentic personal voice. A flat, impersonal 'essay about hobbies in general' misses the personal-essay register the scheme rewards. Note also the marking rule that Coherence and Language can never exceed the Purpose mark, so a drifting focus caps the whole script.",
+      "source": "SEC 2023 OL Marking Scheme"
+    },
+    "subjectId": "english",
+    "topicId": "english-9-1"
   }
 ];
