@@ -98,6 +98,23 @@ service cloud.firestore {
             || !('unlockedAchievements' in resource.data.gamification)
             || request.resource.data.gamification.unlockedAchievements
                  .hasAll(resource.data.gamification.unlockedAchievements));
+
+      // Study sessions subcollection. Firestore rules are non-hierarchical, so
+      // this must be declared explicitly — otherwise it falls through to the
+      // default-deny at the bottom and every session save AND reload is denied,
+      // silently breaking the streak/mastery/insights/quests pipeline.
+      // (Audit 2026-06-01, blocker B3.)
+      match /sessions/{sessionId} {
+        // Self read + write
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+        // Admin read (AdminDashboard)
+        allow read: if request.auth != null
+                    && request.auth.token.email == 'admin@nextstep.app';
+        // GC of the same school can read (mirrors the parent /progress read above)
+        allow read: if request.auth != null
+                    && isGC()
+                    && get(/databases/$(database)/documents/users/$(userId)).data.school == gcSchool();
+      }
     }
 
     // Settings collection: each user can only read/write their own doc

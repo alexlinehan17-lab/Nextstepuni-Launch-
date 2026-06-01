@@ -867,7 +867,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                   <h3 className="text-sm font-semibold text-zinc-800 dark:text-white">Broadcast Message</h3>
                   <p className="text-xs text-zinc-500">
                     Sending to <span className="font-semibold text-zinc-700 dark:text-zinc-300">{broadcastRecipients.length}</span> {broadcastRecipients.length === 1 ? 'student' : 'students'}
-                    {broadcastCurriculum !== 'all' || broadcastYearGroup !== 'all' ? ` · ${audienceLabel}` : ''}
+                    {broadcastCurriculum !== 'all' || broadcastYearGroups.size > 0 ? ` · ${audienceLabel}` : ''}
                   </p>
                 </div>
               </div>
