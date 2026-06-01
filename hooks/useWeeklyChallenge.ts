@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { doc, setDoc, increment } from 'firebase/firestore';
+import { collection, doc, getDocs, increment, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
 import { getWeekNumber, getWeekStartDate } from '../gamificationConfig';
@@ -53,52 +53,69 @@ export function useWeeklyChallenge(uid: string | undefined): WeeklyChallengeStat
       return;
     }
 
-    const data = rawProgressDoc;
-    const sessions: StudySessionRecord[] = data.studySessions || [];
-    const rewards: Record<string, string> = data.weeklyChallengeRewards || {};
+    let cancelled = false;
+    const load = async () => {
+      // Sessions live in the /progress/{uid}/sessions subcollection (migrated
+      // from the dead rawProgressDoc.studySessions array). Reading the legacy
+      // array here meant study-session-based weekly challenges never
+      // progressed — audit 2026-06-01. reload() bumps `version`, re-running
+      // this effect so a just-saved session is counted immediately.
+      let sessions: StudySessionRecord[] = [];
+      try {
+        const snap = await getDocs(collection(db, 'progress', uid, 'sessions'));
+        sessions = snap.docs.map(d => d.data() as StudySessionRecord);
+      } catch (err) {
+        console.error('Failed to load sessions for weekly challenge:', err);
+      }
+      if (cancelled) return;
 
-    // Check if already claimed
-    setIsClaimed(!!rewards[challenge.id]);
+      const rewards: Record<string, string> = rawProgressDoc.weeklyChallengeRewards || {};
 
-    // Filter sessions to current week
-    const weekSessions = sessions.filter(s => s.date >= weekStart);
+      // Check if already claimed
+      setIsClaimed(!!rewards[challenge.id]);
 
-    // Compute progress based on metric
-    let progress = 0;
-    switch (challenge.metric) {
-      case 'strategy-sessions': {
-        const moduleId = challenge.strategyModuleId;
-        if (moduleId) {
-          progress = weekSessions.filter(
-            s => s.strategiesShown?.includes(moduleId)
-          ).length;
+      // Filter sessions to current week
+      const weekSessions = sessions.filter(s => s.date >= weekStart);
+
+      // Compute progress based on metric
+      let progress = 0;
+      switch (challenge.metric) {
+        case 'strategy-sessions': {
+          const moduleId = challenge.strategyModuleId;
+          if (moduleId) {
+            progress = weekSessions.filter(
+              s => s.strategiesShown?.includes(moduleId)
+            ).length;
+          }
+          break;
         }
-        break;
-      }
-      case 'strategy-subjects': {
-        const moduleId = challenge.strategyModuleId;
-        if (moduleId) {
-          const subjects = new Set(
-            weekSessions
-              .filter(s => s.strategiesShown?.includes(moduleId))
-              .map(s => s.subject)
-          );
-          progress = subjects.size;
+        case 'strategy-subjects': {
+          const moduleId = challenge.strategyModuleId;
+          if (moduleId) {
+            const subjects = new Set(
+              weekSessions
+                .filter(s => s.strategiesShown?.includes(moduleId))
+                .map(s => s.subject)
+            );
+            progress = subjects.size;
+          }
+          break;
         }
-        break;
+        case 'total-sessions': {
+          progress = weekSessions.length;
+          break;
+        }
+        case 'reflection-sessions': {
+          progress = weekSessions.filter(s => s.hadReflection).length;
+          break;
+        }
       }
-      case 'total-sessions': {
-        progress = weekSessions.length;
-        break;
-      }
-      case 'reflection-sessions': {
-        progress = weekSessions.filter(s => s.hadReflection).length;
-        break;
-      }
-    }
 
-    setCurrent(progress);
-    setIsLoaded(true);
+      setCurrent(progress);
+      setIsLoaded(true);
+    };
+    load();
+    return () => { cancelled = true; };
   }, [uid, version, challenge?.id, challenge?.metric, challenge?.strategyModuleId, weekStart, progressLoaded, rawProgressDoc]);
 
   const claimReward = useCallback(async () => {

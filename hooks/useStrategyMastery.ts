@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect, useCallback } from 'react';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { collection, doc, getDocs, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
 import { type UserProgress, type StrategyMasteryMap, type MasteryTier } from '../types';
@@ -104,9 +104,13 @@ export function useStrategyMastery(
   const recompute = useCallback(async () => {
     if (!uid) return;
     try {
-      const progressDoc = await getDoc(doc(db, 'progress', uid));
-      const data = progressDoc.exists() ? progressDoc.data() : {};
-      await computeAndPersist(data.studySessions || []);
+      // Sessions live in the /progress/{uid}/sessions subcollection (migrated
+      // from the dead rawProgressDoc.studySessions array). Reading the legacy
+      // array here returned [] and wiped mastery to base tier after every
+      // study session — audit 2026-06-01.
+      const snap = await getDocs(collection(db, 'progress', uid, 'sessions'));
+      const sessions = snap.docs.map(d => d.data() as StudySessionRecord);
+      await computeAndPersist(sessions);
     } catch (err) {
       console.error('Failed to recompute strategy mastery:', err);
       setIsLoaded(true);

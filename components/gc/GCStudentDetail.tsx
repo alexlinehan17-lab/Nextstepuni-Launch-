@@ -1266,8 +1266,10 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
             </div>
           </div>
 
-          {/* Needs Support */}
-          {status === 'needs-support' && supportReasons.length > 0 && (
+          {/* Needs Support (at-risk / drifting — mirrors the full-mode panel).
+              Audit 2026-06-01: previously compared to 'needs-support', which is
+              not in the StudentStatus union, so this tray panel never rendered. */}
+          {(status === 'at-risk' || status === 'drifting') && supportReasons.length > 0 && (
             <div className="rounded-xl bg-rose-50 dark:bg-rose-900/10 border border-rose-200 dark:border-rose-800/40 p-4">
               <div className="flex items-start gap-2.5">
                 <AlertTriangle size={16} className="text-rose-500 mt-0.5 shrink-0" />

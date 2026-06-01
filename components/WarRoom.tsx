@@ -8,7 +8,7 @@ import { useToast } from './Toast';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { db } from '../firebase';
-import { doc, getDoc } from 'firebase/firestore';
+import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
 import {
   type StudentSubjectProfile, type TimetableCompletions,
 } from './subjectData';
@@ -148,10 +148,17 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
     let cancelled = false;
     const load = async () => {
       try {
-        const snap = await getDoc(doc(db, 'progress', uid));
+        // Study sessions live in the /progress/{uid}/sessions subcollection
+        // (migrated from the dead rawProgressDoc.studySessions array). Reading
+        // the legacy array made War Room undercount study-timer hours — audit
+        // 2026-06-01. Debriefs still live on the parent progress doc.
+        const [sessionsSnap, docSnap] = await Promise.all([
+          getDocs(collection(db, 'progress', uid, 'sessions')),
+          getDoc(doc(db, 'progress', uid)),
+        ]);
         if (cancelled) return;
-        const data = snap.data() || {};
-        if (data.studySessions) setStudySessions(data.studySessions as StudySessionRecord[]);
+        setStudySessions(sessionsSnap.docs.map(d => d.data() as StudySessionRecord));
+        const data = docSnap.data() || {};
         if (data.studyDebriefs) setDebriefs(data.studyDebriefs as DebriefEntry[]);
       } catch (err) {
         console.error('Failed to load War Room data:', err);

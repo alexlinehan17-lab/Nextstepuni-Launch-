@@ -15,11 +15,15 @@ service cloud.firestore {
 
     // Users collection: each user can only read/write their own doc
     match /users/{userId} {
-      // Self-read OR same-school read (merged so school-query works)
-      allow read: if request.auth != null
-                  && (request.auth.uid == userId
-                      || (resource.data.school != null
-                          && resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school));
+      // Self-read only.
+      // Audit 2026-06-01 (high finding): the previous same-school read branch
+      // let ANY authenticated student read every same-school student's full
+      // users doc — including minors' real names + year group. Peer features
+      // now read the /islandPublic projection instead of /users, so no student
+      // path needs same-school /users access. GC + admin reads are granted
+      // explicitly below (lines for isGC()/admin), so the GCDashboard — the
+      // only legitimate cross-student consumer — stays authorized.
+      allow read: if request.auth != null && request.auth.uid == userId;
       allow create: if request.auth != null && request.auth.uid == userId
                    && !('isAdmin' in request.resource.data)
                    && !('role' in request.resource.data)
@@ -59,6 +63,17 @@ service cloud.firestore {
       allow read, delete: if request.auth != null
                   && isGC()
                   && resource.data.school == gcSchool();
+    }
+
+    // GC student-flagging: each GC owns gcFlags/{their-uid}/flaggedStudents/*.
+    // Audit 2026-06-01 (high finding): this subcollection had no rule and fell
+    // through to default-deny, so the flag/note/priority feature was silently
+    // non-functional (writes + reads denied, errors swallowed).
+    // Path written by hooks/useGCFlags.ts.
+    match /gcFlags/{gcUid}/flaggedStudents/{studentUid} {
+      allow read, write: if request.auth != null
+                  && isGC()
+                  && gcUid == request.auth.uid;
     }
 
     // Progress collection: self read + validated writes
