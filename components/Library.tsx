@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
@@ -20,7 +20,9 @@ import { type StudentSubjectProfile } from './subjectData';
 import { useSettingsContext } from '../contexts/SettingsContext';
 import { CARD_STYLES } from '../themeData';
 import { getAvatarUrl } from '../utils/authUtils';
-import ModuleShowcase from './ModuleShowcase';
+// Lazy-loaded: ModuleShowcase pulls in ~442KB of subjectContent data; loading
+// it eagerly folded that into the entry chunk (audit 2026-06-01).
+const ModuleShowcase = lazy(() => import('./ModuleShowcase'));
 
 // FIX: Cast motion components to any to bypass broken type definitions
 
@@ -471,13 +473,15 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
       </header>
 
       <main className="w-full px-4 md:px-6 pt-4 md:pt-10 relative z-10 flex items-center justify-center" style={{ minHeight: 'calc(100vh - 120px)' }}>
-        <ModuleShowcase
-          courses={courses}
-          categoryTitle={title}
-          categoryId={courses[0]?.category || 'learning-cheat-codes'}
-          userProgress={userProgress}
-          onSelectCourse={onSelectCourse}
-        />
+        <Suspense fallback={<div className="min-h-[40vh]" />}>
+          <ModuleShowcase
+            courses={courses}
+            categoryTitle={title}
+            categoryId={courses[0]?.category || 'learning-cheat-codes'}
+            userProgress={userProgress}
+            onSelectCourse={onSelectCourse}
+          />
+        </Suspense>
       </main>
       </div>
     </div>

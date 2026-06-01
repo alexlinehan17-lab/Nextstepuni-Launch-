@@ -13,8 +13,12 @@ import { type SessionUser } from '../utils/authUtils';
 import { LoadingSpinner } from './LoadingSpinner';
 import { KnowledgeTree, type CategoryType } from './KnowledgeTree';
 import { Library } from './Library';
-import ModuleShowcase from './ModuleShowcase';
 
+// Lazy-loaded: ModuleShowcase statically pulls in subjectModuleData + the six
+// subjectContent* files (~442KB). Loading it eagerly folded all of that into
+// the entry chunk — audit 2026-06-01. Its only other consumer, SubjectModule,
+// is already lazy (moduleRegistry.ts).
+const ModuleShowcase = lazy(() => import('./ModuleShowcase'));
 const LoginPage = lazy(() => import('./LoginPage'));
 const ResetPasswordPage = lazy(() => import('./ResetPasswordPage'));
 const AdminDashboard = lazy(() => import('./AdminDashboard').then(m => ({ default: m.AdminDashboard })));
@@ -529,13 +533,15 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           </header>
           {/* Showcase */}
           <div className="pt-28 md:pt-32 pb-24 md:pb-12 flex items-center justify-center" style={{ minHeight: 'calc(100vh - 80px)' }}>
-            <ModuleShowcase
-              courses={categoryCourses}
-              categoryTitle={categoryTitles[currentCategory]}
-              categoryId={currentCategory}
-              userProgress={userProgress}
-              onSelectCourse={handleSelectModule}
-            />
+            <Suspense fallback={<LoadingSpinner />}>
+              <ModuleShowcase
+                courses={categoryCourses}
+                categoryTitle={categoryTitles[currentCategory]}
+                categoryId={currentCategory}
+                userProgress={userProgress}
+                onSelectCourse={handleSelectModule}
+              />
+            </Suspense>
           </div>
         </motion.div>
       );
