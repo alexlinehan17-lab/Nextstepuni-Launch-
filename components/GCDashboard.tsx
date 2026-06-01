@@ -9,7 +9,7 @@ import { type CourseData } from './Library';
 import { type SessionUser, getAvatarUrl, yearGroupToCurriculumLevel } from '../utils/authUtils';
 import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays } from 'lucide-react';
 import app, { db } from '../firebase';
-import { collection, query, where, limit, getDocs, doc, getDoc, deleteDoc, setDoc } from 'firebase/firestore';
+import { collection, query, where, limit, getDocs, doc, getDoc, setDoc } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { getSchoolName } from '../schoolData';
 import { type UserProgress, type PointsData } from '../types';
@@ -101,17 +101,15 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
   const [isDeleting, setIsDeleting] = useState(false);
   const [dismissedAlerts, setDismissedAlerts] = useState<Record<string, DismissedAlert>>({});
 
-  // TODO: When Cloud Functions are set up, call a deleteStudentAccount function
-  // that uses Firebase Admin SDK to delete both the Auth account and Firestore docs.
-  // Current approach: delete Firestore docs only. AuthContext.tsx blocks orphaned
-  // Auth accounts from re-entering the app by refusing to auto-recover missing user docs.
+  // Full cascade delete via the requestAccountDeletion Cloud Function (Admin
+  // SDK): removes the Auth account + every Firestore collection holding the
+  // student's data, not just users + progress. Audit 2026-06-01 (item 15).
   const handleDeleteStudent = async (user: SessionUser) => {
     setIsDeleting(true);
     try {
-      // Delete progress FIRST (their rules reference the users doc)
-      await deleteDoc(doc(db, 'progress', user.uid)).catch(() => {});
-      // Then delete the users doc last
-      await deleteDoc(doc(db, 'users', user.uid));
+      const functions = getFunctions(app);
+      const deleteFn = httpsCallable<{ uid: string }, { success: boolean }>(functions, 'requestAccountDeletion');
+      await deleteFn({ uid: user.uid });
       setStudentData(prev => prev.filter(s => s.user.uid !== user.uid));
       if (selectedStudentUid === user.uid) setSelectedStudentUid(null);
     } catch (err) {

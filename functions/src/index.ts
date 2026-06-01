@@ -8,6 +8,11 @@ import { buildPublicProjection } from "./islandProjection";
 
 initializeApp();
 
+// GDPR Article 15 (export) + Article 17 (erasure) — see ./dataRights.ts.
+// Handlers call getFirestore()/getAuth() lazily, so they run after the
+// initializeApp() above despite the import being hoisted.
+export { requestAccountDeletion, exportMyData } from "./dataRights";
+
 /**
  * resetStudentPassword
  *
