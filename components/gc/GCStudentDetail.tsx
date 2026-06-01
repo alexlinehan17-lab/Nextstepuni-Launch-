@@ -6,7 +6,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { ArrowLeft, Flame, Coins, ChevronDown, ChevronRight, BookOpen, AlertTriangle, FileText, X, Save, Compass, BarChart3, Brain, Lightbulb, Heart, UserPlus, TrendingDown, TrendingUp, CheckCircle, MinusCircle, Flag } from 'lucide-react';
+import { ArrowLeft, Flame, Coins, ChevronDown, ChevronRight, BookOpen, AlertTriangle, FileText, X, Save, Compass, BarChart3, Brain, Lightbulb, Heart, UserPlus, TrendingDown, TrendingUp, CheckCircle, MinusCircle, Flag, type LucideIcon } from 'lucide-react';
 import { db } from '../../firebase';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { addNotification } from './gcNotifications';
@@ -122,7 +122,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   // post-LC).
   const isGraduated = student.yearGroup === 'graduated';
 
-  const STATUS_ICONS: Record<StudentStatus, React.ElementType> = {
+  const STATUS_ICONS: Record<StudentStatus, LucideIcon> = {
     'new': UserPlus, 'at-risk': AlertTriangle, 'drifting': TrendingDown,
     'thriving': TrendingUp, 'active': CheckCircle, 'inactive': MinusCircle,
   };

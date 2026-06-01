@@ -7,11 +7,11 @@ import React, { useState, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { X, BookOpen, Target, RotateCcw, Star, BookMarked } from 'lucide-react';
+import { X, BookOpen, Target, RotateCcw, Star, BookMarked, type LucideIcon } from 'lucide-react';
 import { useModal } from '../hooks/useModal';
 import { type StudyReflection } from '../types';
 
-const SESSION_ICONS: Record<string, React.ElementType> = {
+const SESSION_ICONS: Record<string, LucideIcon> = {
   'new-learning': BookOpen,
   'practice': Target,
   'revision': RotateCcw,

@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import { type LucideIcon } from 'lucide-react';
 import { COLORS } from '../../design/tokens';
 
 // 'teal' kept as a back-compat alias for callsites that haven't been
@@ -19,7 +20,7 @@ const VARIANTS: Record<Variant, { fill: string; depth: string }> = {
 interface PrimaryActionButtonProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'style'> {
   label: string;
   onClick: () => void;
-  icon?: React.ElementType;
+  icon?: LucideIcon;
   variant?: Variant;
 }
 

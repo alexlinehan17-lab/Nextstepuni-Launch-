@@ -10,6 +10,7 @@ import {
   ArrowLeft, Flame, TrendingUp, Target, Zap, Award, Crown, Mountain,
   Footprints, Star, Brain, Repeat, Shuffle, HelpCircle,
   Compass, Sprout, Shield, Radar, ClipboardCheck, Trophy, ArrowRight, ChevronDown, Play,
+  type LucideIcon,
 } from 'lucide-react';
 import { type GamificationState, generateWeeklyGoals, getWeekNumber } from '../gamificationConfig';
 import PrimaryActionButton from './ui/PrimaryActionButton';
@@ -24,7 +25,7 @@ import { COLORS } from '../design/tokens';
 
 // ─── Config ─────────────────────────────────────────────────
 
-const RANK_ICONS: Record<string, React.ElementType> = {
+const RANK_ICONS: Record<string, LucideIcon> = {
   Footprints, Flame, TrendingUp, Target, Zap, Award, Crown, Mountain,
 };
 
@@ -36,14 +37,14 @@ const TIER_LABELS: Record<MasteryTier, string> = { none: '', learned: 'Learned',
 const TIER_COLORS: Record<MasteryTier, string> = { none: '#A8A29E', learned: '#3B82F6', practiced: '#2A7D6F', applied: '#F59E0B', habitual: '#7C3AED' };
 const TIER_INDEX: Record<MasteryTier, number> = { none: -1, learned: 0, practiced: 1, applied: 2, habitual: 3 };
 
-const STRATEGY_ICONS: Record<string, React.ElementType> = {
+const STRATEGY_ICONS: Record<string, LucideIcon> = {
   'mastering-active-recall-protocol': Brain, 'mastering-spaced-repetition-protocol': Repeat,
   'mastering-interleaving-protocol': Shuffle, 'elaborative-interrogation-protocol': HelpCircle,
   'agency-protocol': Compass, 'growth-mindset-protocol': Sprout, 'digital-distraction-protocol': Shield,
   'learning-radar-protocol': Radar, 'exam-hall-strategies-protocol': ClipboardCheck,
 };
 
-const CHALLENGE_ICONS: Record<string, React.ElementType> = {
+const CHALLENGE_ICONS: Record<string, LucideIcon> = {
   Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck, Zap, Trophy,
 };
 

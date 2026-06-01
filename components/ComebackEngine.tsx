@@ -11,6 +11,7 @@ import {
   Rocket, ChevronRight, ChevronLeft, TrendingUp, Target,
   CheckCircle, Circle, Flame, RotateCcw, Sparkles,
   GraduationCap, BookOpen, Wrench, DoorOpen, Compass,
+  type LucideIcon,
 } from 'lucide-react';
 import { db } from '../firebase';
 import { COLORS } from '../design/tokens';
@@ -78,7 +79,7 @@ interface ComebackEngineProps {
 
 // ── Constants ──────────────────────────────────────────────
 
-const ANCHOR_OPTIONS: { type: AnchorType; label: string; icon: React.ElementType; prompt: string }[] = [
+const ANCHOR_OPTIONS: { type: AnchorType; label: string; icon: LucideIcon; prompt: string }[] = [
   { type: 'future-finder', icon: Compass, label: 'My Future Finder pick', prompt: '' },
   { type: 'course', icon: GraduationCap, label: 'A specific course', prompt: 'What course? (We\'ll figure out the points)' },
   { type: 'plc', icon: BookOpen, label: 'A PLC / Further Ed course', prompt: 'Which PLC or area?' },
@@ -92,7 +93,7 @@ const ANCHOR_OPTIONS: { type: AnchorType; label: string; icon: React.ElementType
 // apprenticeship targets yet. Their meaningful anchors are in-school: hit
 // a band, recover a broken study streak, master a shaky topic, or use
 // Subject Explorer to think ahead about senior cycle.
-const ANCHOR_OPTIONS_JC: { type: AnchorType; label: string; icon: React.ElementType; prompt: string }[] = [
+const ANCHOR_OPTIONS_JC: { type: AnchorType; label: string; icon: LucideIcon; prompt: string }[] = [
   { type: 'subject-target', icon: Target, label: 'Hit a band in a specific subject', prompt: 'Which subject? (We\'ll set up the plan)' },
   { type: 'streak-recovery', icon: Flame, label: 'Get my study streak back', prompt: '' },
   { type: 'topic-mastery', icon: BookOpen, label: 'Master a specific topic', prompt: 'Which topic? (Optional — leave blank to pick later)' },

@@ -6,7 +6,7 @@
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { ArrowLeft, BookOpen, Target, RotateCcw, Play, Pause, Clock, Sparkles, X, ChevronRight, Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck, Trophy, CalendarCheck } from 'lucide-react';
+import { ArrowLeft, BookOpen, Target, RotateCcw, Play, Pause, Clock, Sparkles, X, ChevronRight, Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck, Trophy, CalendarCheck, type LucideIcon } from 'lucide-react';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import PointsExplainer from '../PointsExplainer';
 import { doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
@@ -45,7 +45,7 @@ const TIER_LABELS: Record<MasteryTier, string> = {
 
 const TIER_ORDER: MasteryTier[] = ['learned', 'practiced', 'applied', 'habitual'];
 
-const STRATEGY_ICONS: Record<string, React.ElementType> = {
+const STRATEGY_ICONS: Record<string, LucideIcon> = {
   'mastering-active-recall-protocol': Brain,
   'mastering-spaced-repetition-protocol': Repeat,
   'mastering-interleaving-protocol': Shuffle,
@@ -78,7 +78,7 @@ const CountUpNumber: React.FC<{ value: number; delay?: number }> = ({ value, del
   return <span className="text-3xl font-bold text-[var(--accent-hex)] tabular-nums">+{display}</span>;
 };
 
-const SESSION_TYPE_CONFIG: Record<string, { icon: React.ElementType; label: string }> = {
+const SESSION_TYPE_CONFIG: Record<string, { icon: LucideIcon; label: string }> = {
   'new-learning': { icon: BookOpen, label: 'New Learning' },
   'practice': { icon: Target, label: 'Practice' },
   'revision': { icon: RotateCcw, label: 'Revision' },

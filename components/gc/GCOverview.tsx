@@ -6,7 +6,7 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2, X, AlertCircle, Eye, Megaphone, FileDown, UserPlus, CheckCircle, MinusCircle, Flag, Sparkles, KeyRound } from 'lucide-react';
+import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2, X, AlertCircle, Eye, Megaphone, FileDown, UserPlus, CheckCircle, MinusCircle, Flag, Sparkles, KeyRound, type LucideIcon } from 'lucide-react';
 import { type CourseData } from '../Library';
 import { type CategoryType } from '../KnowledgeTree';
 import { getAvatarUrl, type CurriculumLevel } from '../../utils/authUtils';
@@ -526,7 +526,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
 
   // ─── Status pill helper ─────────────────────────────────────────────────
 
-  const STATUS_ICONS: Record<StudentStatus, React.ElementType> = {
+  const STATUS_ICONS: Record<StudentStatus, LucideIcon> = {
     'new': UserPlus, 'at-risk': AlertTriangle, 'drifting': TrendingDown,
     'thriving': TrendingUp, 'active': CheckCircle, 'inactive': MinusCircle,
   };

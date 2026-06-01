@@ -15,7 +15,7 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { useModal } from '../hooks/useModal';
-import { BookOpen, Timer, Trophy, Gem, MapPin, SkipForward, CalendarOff, X, ArrowRight, Sparkles } from 'lucide-react';
+import { BookOpen, Timer, Trophy, Gem, MapPin, SkipForward, CalendarOff, X, ArrowRight, Sparkles, type LucideIcon } from 'lucide-react';
 import { COLORS } from '../design/tokens';
 
 interface PointsExplainerProps {
@@ -28,7 +28,7 @@ interface PointsExplainerProps {
 const BLOB_PATH = 'M 38 4 Q 12 6 6 28 Q 2 50 22 56 Q 50 62 60 36 Q 64 12 48 4 Q 42 2 38 4 Z';
 
 interface EarnItem {
-  icon: React.ElementType;
+  icon: LucideIcon;
   label: string;
   value: string;
   unit: string;
@@ -43,7 +43,7 @@ const EARN_ITEMS: EarnItem[] = [
 ];
 
 interface SpendItem {
-  icon: React.ElementType;
+  icon: LucideIcon;
   label: string;
   cost: string;
   desc: string;
@@ -57,7 +57,7 @@ const SPEND_ITEMS: SpendItem[] = [
 
 // Tiny painted-blob + ink-icon. blob fill = accent-tint var so it reads
 // soft on the cream surface; ink is the saturated accent.
-const BlobIcon: React.FC<{ Icon: React.ElementType; size?: number; iconSize?: number }> = ({
+const BlobIcon: React.FC<{ Icon: LucideIcon; size?: number; iconSize?: number }> = ({
   Icon, size = 44, iconSize = 18,
 }) => (
   <div className="relative shrink-0" style={{ width: size, height: size }}>

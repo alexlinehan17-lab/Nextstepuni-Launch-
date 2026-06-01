@@ -6,11 +6,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimationControls } from 'framer-motion';
 import { MotionButton, MotionSpan } from './Motion';
-import { Flame, TrendingUp, Target, Zap, Award, Crown, Mountain, Footprints, Coins } from 'lucide-react';
+import { Flame, TrendingUp, Target, Zap, Award, Crown, Mountain, Footprints, Coins, type LucideIcon } from 'lucide-react';
 import { type GamificationState, type StreakTier, getStreakTier } from '../gamificationConfig';
 import { type StreakData } from '../hooks/useStreak';
 
-const RANK_ICONS: Record<string, React.ElementType> = {
+const RANK_ICONS: Record<string, LucideIcon> = {
   Footprints,
   TrendingUp,
   Target,

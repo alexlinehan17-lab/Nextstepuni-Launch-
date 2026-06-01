@@ -11,6 +11,7 @@ import {
   Settings, HelpCircle, X, ArrowRight, AlertTriangle, CalendarOff,
   CheckCircle, Flame, CalendarDays,
   Play,
+  type LucideIcon,
 } from 'lucide-react';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import { type SchoolEvent } from './gc/GCKeyEvents';
@@ -119,7 +120,7 @@ function getSubjectHexColor(name: string): string {
 
 // ─── Session Type Icons ─────────────────────────────────────────────────────
 
-const SESSION_TYPE_CONFIG: Record<StudyBlock['sessionType'], { icon: React.ElementType; label: string }> = {
+const SESSION_TYPE_CONFIG: Record<StudyBlock['sessionType'], { icon: LucideIcon; label: string }> = {
   'new-learning': { icon: BookOpen, label: 'Learn' },
   'practice': { icon: Target, label: 'Practice' },
   'revision': { icon: RotateCcw, label: 'Revise' },

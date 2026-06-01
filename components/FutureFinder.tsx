@@ -12,6 +12,7 @@ import {
   Compass, ChevronRight, ChevronLeft, SlidersHorizontal,
   MapPin, Briefcase, Heart, Star, RotateCcw,
   BookmarkPlus, Check, ArrowUpRight, TrendingUp, X, Clock, Eye,
+  type LucideIcon,
 } from 'lucide-react';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import { COLORS } from '../design/tokens';
@@ -1081,7 +1082,7 @@ function ScoreBar({ label, score }: { label: string; score: number }) {
 }
 
 /** Info Tile (for detail view) */
-function InfoTile({ icon: Icon, label, value }: { icon: React.ElementType; label: string; value: string }) {
+function InfoTile({ icon: Icon, label, value }: { icon: LucideIcon; label: string; value: string }) {
   return (
     <div className="p-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 text-center">
       <Icon size={16} className="mx-auto text-zinc-400 dark:text-zinc-500 mb-1" />

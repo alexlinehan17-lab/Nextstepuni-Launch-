@@ -7,7 +7,7 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useToast } from './Toast';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionPolygon, MotionSpan } from './Motion';
-import { Zap, Shield, TrendingUp, Users, BookOpen, Lock } from 'lucide-react';
+import { Zap, Shield, TrendingUp, Users, BookOpen, Lock, type LucideIcon } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import {
@@ -43,7 +43,7 @@ const PHASE_TOKENS: Record<Phase, { ink: string; wash: string; tint: string; dee
   'Final Stretch':   { ink: '#B86F5A', wash: '#EFD9CD', tint: '#E0B8A2', deep: '#8C4D3B' },
 };
 
-const STAT_ICONS: Record<StatKey, React.ElementType> = {
+const STAT_ICONS: Record<StatKey, LucideIcon> = {
     energy: Zap,
     academicCap: TrendingUp,
     socialSupport: Users,

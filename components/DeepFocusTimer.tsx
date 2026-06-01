@@ -9,6 +9,7 @@ import { MotionButton, MotionDiv } from './Motion';
 import {
   Play, Pause, RotateCcw, SkipForward, Sparkles, ChevronDown, ChevronUp,
   BookOpen, Target, Clock, Volume2, VolumeX, CloudRain, Waves, Wind, Flame, Headphones,
+  type LucideIcon,
 } from 'lucide-react';
 import {
   type StudentSubjectProfile, type StudyBlock, type TimetableCompletions,
@@ -112,7 +113,7 @@ function getSubjectStroke(name: string): string {
 
 // ─── Session Type Config ────────────────────────────────────────────────────
 
-const SESSION_TYPE_CONFIG: Record<StudyBlock['sessionType'], { icon: React.ElementType; label: string }> = {
+const SESSION_TYPE_CONFIG: Record<StudyBlock['sessionType'], { icon: LucideIcon; label: string }> = {
   'new-learning': { icon: BookOpen, label: 'Learn' },
   'practice': { icon: Target, label: 'Practice' },
   'revision': { icon: RotateCcw, label: 'Revise' },

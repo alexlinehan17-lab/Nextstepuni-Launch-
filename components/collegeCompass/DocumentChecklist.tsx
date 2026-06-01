@@ -7,7 +7,7 @@
  * DareGate above it. Guide only — the live handbook is the source of truth.
  */
 import React from 'react';
-import { FileText, Mail, ShieldCheck, Laptop, Stethoscope } from 'lucide-react';
+import { FileText, Mail, ShieldCheck, Laptop, Stethoscope, type LucideIcon } from 'lucide-react';
 import { COLORS } from '../../design/tokens';
 import { buildDocumentPack, DOCUMENT_DEADLINE_NOTE } from '../../collegeCompassData';
 
@@ -16,7 +16,7 @@ interface DocumentChecklistProps {
   dareCategoryId?: string;
 }
 
-const PostRow: React.FC<{ icon: React.ElementType; tint: string; iconColor: string; text: string; muted?: boolean }> = ({ icon: Icon, tint, iconColor, text, muted }) => (
+const PostRow: React.FC<{ icon: LucideIcon; tint: string; iconColor: string; text: string; muted?: boolean }> = ({ icon: Icon, tint, iconColor, text, muted }) => (
   <div className="flex items-start gap-2.5">
     <span className="inline-flex items-center justify-center w-6 h-6 rounded-lg shrink-0 mt-0.5" style={{ backgroundColor: tint }}>
       <Icon size={13} style={{ color: iconColor }} />

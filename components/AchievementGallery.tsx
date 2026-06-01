@@ -8,11 +8,12 @@ import { MotionDiv } from './Motion';
 import {
   Trophy, Star, Flame, BookOpen, Clock, Target, Award, Crown, Mountain, Zap,
   Eye, Brain, Lightbulb, Shield, Sparkles, HelpCircle,
+  type LucideIcon,
 } from 'lucide-react';
 import { type AchievementCategory } from '../gamificationConfig';
 import { ACHIEVEMENTS } from '../achievementData';
 
-const ICON_MAP: Record<string, React.ElementType> = {
+const ICON_MAP: Record<string, LucideIcon> = {
   Trophy, Star, Flame, BookOpen, Clock, Target, Award, Crown, Mountain, Zap,
   Eye, Brain, Lightbulb, Shield, Sparkles, HelpCircle,
   Footprints: Target, PlayCircle: Zap, BookCheck: BookOpen,
@@ -40,7 +41,7 @@ const CATEGORY_PALETTE: Record<AchievementCategory, { blob: string; ink: string 
   journey:      { blob: '#A8D0C5', ink: '#2A7D6F' },
 };
 
-const BlobIcon: React.FC<{ category: AchievementCategory; Icon: React.ElementType; locked?: boolean }> = ({ category, Icon, locked }) => {
+const BlobIcon: React.FC<{ category: AchievementCategory; Icon: LucideIcon; locked?: boolean }> = ({ category, Icon, locked }) => {
   const palette = CATEGORY_PALETTE[category];
   return (
     <div className="relative w-12 h-12 mb-2.5 shrink-0">

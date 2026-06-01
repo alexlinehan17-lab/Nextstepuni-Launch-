@@ -6,10 +6,10 @@
 import React, { useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { Trophy, Star, Flame, BookOpen, Clock, Target, Award, Crown, Mountain, Zap, Eye, Brain, Lightbulb, Shield, Sparkles } from 'lucide-react';
+import { Trophy, Star, Flame, BookOpen, Clock, Target, Award, Crown, Mountain, Zap, Eye, Brain, Lightbulb, Shield, Sparkles, type LucideIcon } from 'lucide-react';
 import { type AchievementDefinition } from '../gamificationConfig';
 
-const ICON_MAP: Record<string, React.ElementType> = {
+const ICON_MAP: Record<string, LucideIcon> = {
   Trophy, Star, Flame, BookOpen, Clock, Target, Award, Crown, Mountain, Zap,
   Eye, Brain, Lightbulb, Shield, Sparkles,
   Footprints: Target, PlayCircle: Zap, BookCheck: BookOpen,

@@ -6,10 +6,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { BookOpen, Clock, PenLine, ChevronRight, Layers, Timer, MessageSquare, CalendarCheck, NotebookPen, CheckCircle2 } from 'lucide-react';
+import { BookOpen, Clock, PenLine, ChevronRight, Layers, Timer, MessageSquare, CalendarCheck, NotebookPen, CheckCircle2, type LucideIcon } from 'lucide-react';
 import { type WeeklyGoal, WEEKLY_GOAL_BONUS } from '../gamificationConfig';
 
-const GOAL_ICONS: Record<string, React.ElementType> = {
+const GOAL_ICONS: Record<string, LucideIcon> = {
   BookOpen, Clock, PenLine, Layers, Timer, MessageSquare, CalendarCheck, NotebookPen, ChevronRight,
 };
 

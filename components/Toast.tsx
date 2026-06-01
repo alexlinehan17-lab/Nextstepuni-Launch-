@@ -6,7 +6,7 @@
 import React, { createContext, useContext, useState, useCallback, useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { WifiOff, AlertCircle, CheckCircle, X, Info } from 'lucide-react';
+import { WifiOff, AlertCircle, CheckCircle, X, Info, type LucideIcon } from 'lucide-react';
 
 // ── Types ──────────────────────────────────────────────────
 
@@ -34,7 +34,7 @@ export const useToast = () => useContext(ToastContext);
 // ── Icons & Styles ─────────────────────────────────────────
 
 const TOAST_CONFIG: Record<ToastType, {
-  icon: React.ElementType;
+  icon: LucideIcon;
   bg: string;
   border: string;
   text: string;

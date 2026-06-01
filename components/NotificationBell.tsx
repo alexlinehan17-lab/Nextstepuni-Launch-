@@ -6,10 +6,10 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { Bell, MessageSquare, Flame, TrendingUp, BookOpen, AlertTriangle, Megaphone, Heart, CheckCheck } from 'lucide-react';
+import { Bell, MessageSquare, Flame, TrendingUp, BookOpen, AlertTriangle, Megaphone, Heart, CheckCheck, type LucideIcon } from 'lucide-react';
 import { getNotifications, markNotificationRead, markAllRead, type AppNotification, type NotificationType } from './gc/gcNotifications';
 
-const ICON_MAP: Record<NotificationType, React.ElementType> = {
+const ICON_MAP: Record<NotificationType, LucideIcon> = {
   'gc-recommendation': BookOpen,
   'gc-kudos': Heart,
   'comeback': Flame,

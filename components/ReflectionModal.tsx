@@ -7,7 +7,7 @@ import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
-import { X, BookOpen, Target, RotateCcw } from 'lucide-react';
+import { X, BookOpen, Target, RotateCcw, type LucideIcon } from 'lucide-react';
 import { useModal } from '../hooks/useModal';
 import { COLORS } from '../design/tokens';
 
@@ -105,7 +105,7 @@ const CONFIDENCE_OPTIONS = [
   { value: 'confident', label: 'Confident', desc: 'I could ace an exam question on this right now', color: '#276749' },
 ] as const;
 
-const SESSION_TYPE_LABELS: Record<string, { label: string; icon: React.ElementType }> = {
+const SESSION_TYPE_LABELS: Record<string, { label: string; icon: LucideIcon }> = {
   'new-learning': { label: 'New Learning', icon: BookOpen },
   'practice': { label: 'Practice', icon: Target },
   'revision': { label: 'Revision', icon: RotateCcw },
