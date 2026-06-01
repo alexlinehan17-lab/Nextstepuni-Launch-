@@ -13,6 +13,7 @@ import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfi
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from '../utils/authUtils';
 import { SCHOOLS } from '../schoolData';
+import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
 
 // Google Sign-In uses signInWithPopup which doesn't work inside Capacitor's
 // WKWebView (no real popup support). We hide the button on native iOS/Android
@@ -221,6 +222,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [resetSent, setResetSent] = useState(false);
   const [resendCountdown, setResendCountdown] = useState(0);
+  // B4 (audit 2026-06-01): student must accept the Privacy Notice + Terms
+  // before an account is created; `legalDoc` controls the reachable policy modal.
+  const [agreedToTerms, setAgreedToTerms] = useState(false);
+  const [legalDoc, setLegalDoc] = useState<LegalDoc | null>(null);
 
   // Direction tracking for view transitions. Computed synchronously on
   // each render so AnimatePresence sees the correct direction the moment
@@ -254,7 +259,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     setEmail(''); setPassword(''); setName(''); setSchool('');
     setGcSchool(''); setAvatar(''); setError('');
     setShowPassword(false); setRegisterStep(1); setResetSent(false);
-    setResendCountdown(0);
+    setResendCountdown(0); setAgreedToTerms(false);
   };
 
   // ── Login handler ──
@@ -412,6 +417,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       setIsLoading(false);
       return;
     }
+    if (!agreedToTerms) {
+      setError('Please confirm you have read the Privacy Notice and Terms of Use to continue.');
+      setIsLoading(false);
+      return;
+    }
     const selectedAvatar = avatar || defaultAvatar;
     let createdUser: any = null;
     try {
@@ -422,6 +432,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         name: name.trim(),
         avatar: selectedAvatar,
         school,
+        // B4 (audit 2026-06-01): record acceptance of the transparency notice +
+        // terms. The Art 8 parental consent itself is captured at school
+        // enrolment (basis = school-enrolment); see compliance/DPIA.md.
+        consent: {
+          policyVersion: PRIVACY_POLICY_VERSION,
+          acceptedAt: new Date().toISOString(),
+          basis: CONSENT_BASIS,
+        },
       });
       handleLoginSuccess({
         uid: createdUser.uid,
@@ -809,8 +827,33 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                         </button>
                       ))}
                     </div>
+                    {/* B4 (audit 2026-06-01): privacy/terms acceptance gate */}
+                    <div className="mb-4 rounded-xl border-2 p-3.5" style={{ borderColor: '#e5e2dd' }}>
+                      <div className="flex items-start gap-2.5">
+                        <button
+                          type="button"
+                          role="checkbox"
+                          aria-checked={agreedToTerms}
+                          aria-label="I have read the Privacy Notice and agree to the Terms of Use"
+                          onClick={() => { setAgreedToTerms(v => !v); setError(''); }}
+                          className="mt-0.5 w-5 h-5 rounded-md border-2 flex items-center justify-center shrink-0 transition-colors"
+                          style={agreedToTerms ? { backgroundColor: '#F26B1F', borderColor: '#F26B1F' } : { borderColor: '#d0cdc8' }}
+                        >
+                          {agreedToTerms && <Check size={13} className="text-white" strokeWidth={3} />}
+                        </button>
+                        <span className="text-[13px] leading-snug" style={{ color: '#5a5550' }}>
+                          I have read the{' '}
+                          <button type="button" onClick={() => setLegalDoc('privacy')} className="font-semibold underline" style={{ color: '#F26B1F' }}>Privacy Notice</button>
+                          {' '}and agree to the{' '}
+                          <button type="button" onClick={() => setLegalDoc('terms')} className="font-semibold underline" style={{ color: '#F26B1F' }}>Terms of Use</button>.
+                        </span>
+                      </div>
+                      <p className="text-[11px] leading-snug mt-2" style={{ color: '#9e9186', paddingLeft: '30px' }}>
+                        Your school provides NextStepUni with your parent or guardian’s permission as part of enrolment. The Privacy Notice explains how your information is used.
+                      </p>
+                    </div>
                     <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-                    <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleRegisterSubmit} disabled={isLoading} className={primaryBtn} style={primaryBtnStyle}>
+                    <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleRegisterSubmit} disabled={isLoading || !agreedToTerms} className={primaryBtn} style={primaryBtnStyle}>
                       {isLoading ? 'Creating your account...' : 'Create Account'}
                     </MotionButton>
                   </MotionDiv>
@@ -820,6 +863,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           )}
         </MotionDiv>
       </AnimatePresence>
+      <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} />
     </LoginCard>
   );
 };

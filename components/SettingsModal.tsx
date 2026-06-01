@@ -7,8 +7,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { X, Check, Lock, Sun, Moon, RefreshCw, LogOut, ChevronRight, Compass, GraduationCap, ArrowRight } from 'lucide-react';
+import { X, Check, Lock, Sun, Moon, RefreshCw, LogOut, ChevronRight, Compass, GraduationCap, ArrowRight, ShieldCheck, FileText } from 'lucide-react';
 import { useModal } from '../hooks/useModal';
+import { LegalModal, type LegalDoc } from './legal/LegalModal';
 import { AVATAR_SEEDS, getAvatarUrl, nextYearAction, yearGroupLabel } from '../utils/authUtils';
 import { type YearGroup } from './subjectData';
 
@@ -43,6 +44,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
 }) => {
   useModal(isOpen, onClose);
   const [showSaved, setShowSaved] = useState(false);
+  const [legalDoc, setLegalDoc] = useState<LegalDoc | null>(null);
   const flashTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
@@ -57,6 +59,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
   };
 
   return createPortal(
+    <>
     <AnimatePresence>
       {isOpen && (
         <MotionDiv
@@ -291,6 +294,35 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
               })()}
 
               {/* Actions */}
+              {/* Legal — Privacy Notice + Terms (audit 2026-06-01, B4) */}
+              <section>
+                <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
+                  Legal
+                </h3>
+                <div className="space-y-1">
+                  <button
+                    onClick={() => setLegalDoc('privacy')}
+                    className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-white/[0.04] transition-colors"
+                  >
+                    <div className="flex items-center gap-3">
+                      <ShieldCheck size={16} className="text-zinc-400" />
+                      <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Privacy Notice</p>
+                    </div>
+                    <ChevronRight size={14} className="text-zinc-300 dark:text-zinc-600" />
+                  </button>
+                  <button
+                    onClick={() => setLegalDoc('terms')}
+                    className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-white/[0.04] transition-colors"
+                  >
+                    <div className="flex items-center gap-3">
+                      <FileText size={16} className="text-zinc-400" />
+                      <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Terms of Use</p>
+                    </div>
+                    <ChevronRight size={14} className="text-zinc-300 dark:text-zinc-600" />
+                  </button>
+                </div>
+              </section>
+
               <section>
                 <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
                   Actions
@@ -337,7 +369,9 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
           </MotionDiv>
         </MotionDiv>
       )}
-    </AnimatePresence>,
+    </AnimatePresence>
+    <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} />
+    </>,
     document.body
   );
 };

@@ -270,6 +270,19 @@ the actual process.
 - Where are the signed consents stored? _______
 - Is there a withdrawal flow? Y / N : _______
 
+**Implementation note (2026-06-01, audit B4):** the *in-app* half of this is now
+built. Registration (`components/LoginPage.tsx`) requires the student to accept
+a reachable Privacy Notice + Terms of Use before an account is created, and
+records `users/{uid}.consent = { policyVersion, acceptedAt, basis:
+'school-enrolment' }`. The notice (`components/legal/LegalModal.tsx`, DRAFT
+pending counsel) states the Art 6(1)(e) + Art 8 school-enrolment basis and is
+also reachable from Settings. **Still outstanding (operational / for Alex +
+counsel):** the actual verifiable *parental* consent captured at school
+enrolment — the four questions above (where collected, exact text, where signed
+consents are stored, withdrawal flow) remain unanswered and are not evidenced in
+the app. A student-facing withdrawal/erasure flow is tracked separately (audit
+item 15 / DPIA T-NEW-8).
+
 ---
 
 ## Section D — Code / product items raised by Phase 1
