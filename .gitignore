@@ -25,3 +25,6 @@ dist-ssr
 *.sln
 *.sw?
 functions/lib/
+
+# Source exam PDFs (read locally to build verbatim cards; not committed)
+exam-papers/
