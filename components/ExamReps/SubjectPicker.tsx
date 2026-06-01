@@ -2,10 +2,11 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * SubjectPicker — Subject → Level → Topic chooser for Exam Reps. Shows the
- * full Leaving Cert curriculum (all 41 subjects, every strand → sub-topic);
- * subjects/topics that don't have reps yet are shown but marked "soon". The
- * chosen Subject·Level·Topic scopes the rep loop.
+ * SubjectPicker — Subject → Level → Topic chooser for Exam Reps. The subject
+ * grid lists all Leaving Cert subjects (ones without reps are marked "soon");
+ * the topic step shows ONLY topics that actually have a rep at the chosen level
+ * (empty topics and strands are hidden, not greyed). The chosen
+ * Subject·Level·Topic scopes the rep loop.
  */
 import React, { useState, useMemo } from 'react';
 import { ArrowLeft, Check } from 'lucide-react';
@@ -154,42 +155,49 @@ const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect, stud
         })}
       </div>
 
-      {!subjectHasAny && (
-        <div className="rounded-xl p-4 mb-4 text-center" style={{ backgroundColor: '#F9F9F7' }}>
-          <p className="text-sm text-[#7a7068]">No reps for {subject.name} yet — we’re forging them. Browse the topics below.</p>
-        </div>
-      )}
-
-      {subject.strands.map(strand => (
-        <section key={strand.id} className="mb-4">
-          <p className="text-[11px] font-bold text-[#1A1A1A] dark:text-zinc-200 mb-2">{strand.name}</p>
-          <div className="flex flex-wrap gap-1.5">
-            {strand.subtopics.map(st => {
-              const has = avail.topicLevel.has(`${st.id}|${level}`);
-              const isCurrent = selection && selection.subjectId === subject.id && selection.level === level && selection.topicId === st.id;
-              return (
-                <button
-                  key={st.id}
-                  type="button"
-                  disabled={!has}
-                  onClick={() => has && onSelect({ subjectId: subject.id, level, topicId: st.id })}
-                  className="rounded-full border-2 px-3 py-1.5 text-xs font-semibold transition-colors text-left"
-                  style={{
-                    borderColor: isCurrent ? COLORS.accent : has ? COLORS.border : '#e8e5e0',
-                    backgroundColor: isCurrent ? COLORS.accentTint : has ? '#FFFFFF' : '#FAFAF8',
-                    color: has ? '#1A1A1A' : '#b5ada3',
-                    cursor: has ? 'pointer' : 'default',
-                  }}
-                >
-                  {isCurrent && <Check size={11} className="inline -mt-0.5 mr-1" style={{ color: COLORS.accent }} />}
-                  {st.name}
-                  {!has && <span className="ml-1.5 text-[9px] font-semibold uppercase">soon</span>}
-                </button>
-              );
-            })}
-          </div>
-        </section>
-      ))}
+      {(() => {
+        // Only show topics (and strands) that actually have a rep at this level.
+        const visibleStrands = subject.strands
+          .map(strand => ({ strand, subs: strand.subtopics.filter(st => avail.topicLevel.has(`${st.id}|${level}`)) }))
+          .filter(x => x.subs.length > 0);
+        if (visibleStrands.length === 0) {
+          return (
+            <div className="rounded-xl p-4 text-center" style={{ backgroundColor: '#F9F9F7' }}>
+              <p className="text-sm text-[#7a7068]">
+                {subjectHasAny
+                  ? `No reps at ${LEVEL_LABEL[level] ?? level} level yet — try the other level.`
+                  : `No reps for ${subject.name} yet — we’re forging them.`}
+              </p>
+            </div>
+          );
+        }
+        return visibleStrands.map(({ strand, subs }) => (
+          <section key={strand.id} className="mb-4">
+            <p className="text-[11px] font-bold text-[#1A1A1A] dark:text-zinc-200 mb-2">{strand.name}</p>
+            <div className="flex flex-wrap gap-1.5">
+              {subs.map(st => {
+                const isCurrent = selection && selection.subjectId === subject.id && selection.level === level && selection.topicId === st.id;
+                return (
+                  <button
+                    key={st.id}
+                    type="button"
+                    onClick={() => onSelect({ subjectId: subject.id, level, topicId: st.id })}
+                    className="rounded-full border-2 px-3 py-1.5 text-xs font-semibold transition-colors text-left"
+                    style={{
+                      borderColor: isCurrent ? COLORS.accent : COLORS.border,
+                      backgroundColor: isCurrent ? COLORS.accentTint : '#FFFFFF',
+                      color: '#1A1A1A',
+                    }}
+                  >
+                    {isCurrent && <Check size={11} className="inline -mt-0.5 mr-1" style={{ color: COLORS.accent }} />}
+                    {st.name}
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+        ));
+      })()}
     </div>
   );
   }

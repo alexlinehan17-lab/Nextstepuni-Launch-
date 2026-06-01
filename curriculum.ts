@@ -315,260 +315,24 @@ export const CURRICULUM: CurriculumSubject[] = [
     ],
     "strands": [
       {
-        "id": "english-0",
-        "name": "Comprehending and Composing",
-        "subtopics": [
-          {
-            "id": "english-0-0",
-            "name": "Comprehending"
-          },
-          {
-            "id": "english-0-1",
-            "name": "Composing"
-          },
-          {
-            "id": "english-0-2",
-            "name": "Style, Genre and Context"
-          },
-          {
-            "id": "english-0-3",
-            "name": "Texts and Genres"
-          },
-          {
-            "id": "english-0-4",
-            "name": "Oracy"
-          }
-        ]
-      },
-      {
-        "id": "english-1",
-        "name": "The Language of Information",
-        "subtopics": [
-          {
-            "id": "english-1-0",
-            "name": "Information Texts"
-          },
-          {
-            "id": "english-1-1",
-            "name": "Comprehending: Gist and Details"
-          },
-          {
-            "id": "english-1-2",
-            "name": "Comprehending: Summarise and Evaluate"
-          },
-          {
-            "id": "english-1-3",
-            "name": "Comprehending: Author's Point of View"
-          },
-          {
-            "id": "english-1-4",
-            "name": "Comprehending: Genre and Language Use"
-          },
-          {
-            "id": "english-1-5",
-            "name": "Composing: Records and Precis"
-          },
-          {
-            "id": "english-1-6",
-            "name": "Composing: Letters"
-          },
-          {
-            "id": "english-1-7",
-            "name": "Composing: Reports and Projects"
-          },
-          {
-            "id": "english-1-8",
-            "name": "Composing: Media and News Reports"
-          }
-        ]
-      },
-      {
-        "id": "english-2",
-        "name": "The Language of Argument",
-        "subtopics": [
-          {
-            "id": "english-2-0",
-            "name": "Argumentative Texts"
-          },
-          {
-            "id": "english-2-1",
-            "name": "Comprehending: Stages of an Argument"
-          },
-          {
-            "id": "english-2-2",
-            "name": "Comprehending: Reasoning Structure"
-          },
-          {
-            "id": "english-2-3",
-            "name": "Comprehending: Evidence vs Opinion"
-          },
-          {
-            "id": "english-2-4",
-            "name": "Comprehending: Validity and Assumptions"
-          },
-          {
-            "id": "english-2-5",
-            "name": "Composing: Theory or Hypothesis"
-          },
-          {
-            "id": "english-2-6",
-            "name": "Composing: Justify and Overview"
-          }
-        ]
-      },
-      {
-        "id": "english-3",
-        "name": "The Language of Persuasion",
-        "subtopics": [
-          {
-            "id": "english-3-0",
-            "name": "Persuasive Texts"
-          },
-          {
-            "id": "english-3-1",
-            "name": "Comprehending: Persuasive Techniques"
-          },
-          {
-            "id": "english-3-2",
-            "name": "Comprehending: Impact and Audience"
-          },
-          {
-            "id": "english-3-3",
-            "name": "Comprehending: Value-System and Interests"
-          },
-          {
-            "id": "english-3-4",
-            "name": "Composing: Newspaper Articles"
-          },
-          {
-            "id": "english-3-5",
-            "name": "Composing: Advertising Copy"
-          },
-          {
-            "id": "english-3-6",
-            "name": "Composing: PR and Propaganda"
-          }
-        ]
-      },
-      {
-        "id": "english-4",
-        "name": "The Language of Narration",
-        "subtopics": [
-          {
-            "id": "english-4-0",
-            "name": "Narrative Texts"
-          },
-          {
-            "id": "english-4-1",
-            "name": "Comprehending: Personal Response"
-          },
-          {
-            "id": "english-4-2",
-            "name": "Comprehending: Significant Aspects"
-          },
-          {
-            "id": "english-4-3",
-            "name": "Comprehending: Narrative Structure"
-          },
-          {
-            "id": "english-4-4",
-            "name": "Comprehending: Genre and Language"
-          },
-          {
-            "id": "english-4-5",
-            "name": "Comprehending: Critical Viewpoints"
-          },
-          {
-            "id": "english-4-6",
-            "name": "Comprehending: Comparing Genres"
-          },
-          {
-            "id": "english-4-7",
-            "name": "Composing: Anecdote"
-          },
-          {
-            "id": "english-4-8",
-            "name": "Composing: Parable and Fable"
-          },
-          {
-            "id": "english-4-9",
-            "name": "Composing: Short Story"
-          },
-          {
-            "id": "english-4-10",
-            "name": "Composing: Autobiographical Sketch"
-          },
-          {
-            "id": "english-4-11",
-            "name": "Composing: Scripts and Dialogues"
-          }
-        ]
-      },
-      {
-        "id": "english-5",
-        "name": "The Aesthetic Use of Language",
-        "subtopics": [
-          {
-            "id": "english-5-0",
-            "name": "Literary Genres"
-          },
-          {
-            "id": "english-5-1",
-            "name": "Comprehending: Reading Stances"
-          },
-          {
-            "id": "english-5-2",
-            "name": "Comprehending: Interpretative Performance"
-          },
-          {
-            "id": "english-5-3",
-            "name": "Comprehending: Responses and Interpretation"
-          },
-          {
-            "id": "english-5-4",
-            "name": "Comprehending: Re-Reading for Meaning"
-          },
-          {
-            "id": "english-5-5",
-            "name": "Comprehending: Comparing and Evaluating"
-          },
-          {
-            "id": "english-5-6",
-            "name": "Composing: Aesthetic Forms"
-          },
-          {
-            "id": "english-5-7",
-            "name": "Composing: Interventions"
-          },
-          {
-            "id": "english-5-8",
-            "name": "Composing: Response Journals"
-          },
-          {
-            "id": "english-5-9",
-            "name": "Composing: Analytical Essays"
-          }
-        ]
-      },
-      {
         "id": "english-6",
         "name": "Single Text",
         "subtopics": [
           {
             "id": "english-6-0",
-            "name": "In-Depth Study of One Text"
+            "name": "In-depth study of one prescribed text"
           },
           {
             "id": "english-6-1",
-            "name": "Shakespearean Drama"
+            "name": "Shakespearean drama"
           },
           {
             "id": "english-6-2",
-            "name": "Attitudes, Values and Style"
+            "name": "Attitudes, values and themes"
           },
           {
             "id": "english-6-3",
-            "name": "Form, Structure and Genre"
+            "name": "Form, structure and style"
           }
         ]
       },
@@ -578,51 +342,47 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "english-7-0",
-            "name": "Higher Level: Theme or Issue"
+            "name": "Theme or Issue"
           },
           {
             "id": "english-7-1",
-            "name": "Higher Level: Historical/Literary Period"
+            "name": "Historical/Literary Period"
           },
           {
             "id": "english-7-2",
-            "name": "Higher Level: Literary Genre"
+            "name": "Literary Genre"
           },
           {
             "id": "english-7-3",
-            "name": "Higher Level: Cultural Context"
+            "name": "Cultural Context"
           },
           {
             "id": "english-7-4",
-            "name": "Higher Level: General Vision and Viewpoint"
+            "name": "General Vision and Viewpoint"
           },
           {
             "id": "english-7-5",
-            "name": "Ordinary Level: Hero/Heroine/Villain"
+            "name": "Hero/Heroine/Villain"
           },
           {
             "id": "english-7-6",
-            "name": "Ordinary Level: Relationships"
+            "name": "Relationships"
           },
           {
             "id": "english-7-7",
-            "name": "Ordinary Level: Social Setting"
+            "name": "Social Setting"
           },
           {
             "id": "english-7-8",
-            "name": "Ordinary Level: Change and Development"
+            "name": "Change and Development"
           },
           {
             "id": "english-7-9",
-            "name": "Ordinary Level: Specific Themes"
+            "name": "Specific Themes"
           },
           {
             "id": "english-7-10",
-            "name": "Ordinary Level: Aspects of Story"
-          },
-          {
-            "id": "english-7-11",
-            "name": "Film in the Comparative Study"
+            "name": "Aspects of Story"
           }
         ]
       },
@@ -632,45 +392,21 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "english-8-0",
-            "name": "Higher Level: Prescribed Poets"
+            "name": "Prescribed poetry (Higher — eight poets)"
           },
           {
             "id": "english-8-1",
-            "name": "Ordinary Level: Prescribed Poetry"
-          },
-          {
-            "id": "english-8-2",
-            "name": "Unseen Poem"
-          },
-          {
-            "id": "english-8-3",
-            "name": "Reading Widely in Poetry"
+            "name": "Prescribed poetry (Ordinary)"
           }
         ]
       },
       {
         "id": "english-9",
-        "name": "Examination Structure",
+        "name": "Composing",
         "subtopics": [
           {
-            "id": "english-9-0",
-            "name": "Paper I: Comprehending"
-          },
-          {
             "id": "english-9-1",
-            "name": "Paper I: Composing"
-          },
-          {
-            "id": "english-9-2",
-            "name": "Paper II, Section A: Single Text"
-          },
-          {
-            "id": "english-9-3",
-            "name": "Paper II, Section B: Comparative Study"
-          },
-          {
-            "id": "english-9-4",
-            "name": "Paper II, Section C: Poetry"
+            "name": "Composition (essay / speech / article / short story)"
           }
         ]
       }
