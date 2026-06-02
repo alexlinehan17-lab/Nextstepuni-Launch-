@@ -15,7 +15,7 @@
  *   - IZ active-tool ToolHeader: size=108
  */
 import React from 'react';
-import { Waypoints, type LucideIcon } from 'lucide-react';
+import { Waypoints, Highlighter, type LucideIcon } from 'lucide-react';
 
 export type ToolIconKey =
   | 'journey'
@@ -28,7 +28,8 @@ export type ToolIconKey =
   | 'points-passport'
   | 'exam-reps'
   | 'college-compass'
-  | 'catch-up-lane';
+  | 'catch-up-lane'
+  | 'command-word-reflex';
 
 interface ToolIconConfig {
   blob: string;
@@ -111,6 +112,13 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     iconScale: 1.0,
     icon: Waypoints,
     iconColor: '#0B6E7A',
+  },
+  'command-word-reflex': {
+    blob: '#C7C9F5',
+    blobPath: 'M 8 26 Q 0 52 8 78 Q 22 96 54 96 Q 88 94 96 64 Q 100 32 80 10 Q 56 -2 28 8 Q 12 16 8 26 Z',
+    iconScale: 1.0,
+    icon: Highlighter,
+    iconColor: '#4338CA',
   },
 };
 

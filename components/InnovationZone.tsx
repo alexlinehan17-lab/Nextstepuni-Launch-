@@ -12,7 +12,7 @@ import {
     ArrowLeft,
     Lock, Compass, Target,
     Settings, CalendarDays, Calculator, GitBranch, Rocket,
-    Map, ScanSearch, Dumbbell, Milestone, Waypoints
+    Map, ScanSearch, Dumbbell, Milestone, Waypoints, Highlighter
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -32,6 +32,7 @@ import SyllabusXRay from './SyllabusXRay';
 import PointsPassport from './PointsPassport';
 import ExamReps from './ExamReps';
 import CatchUpLane from './CatchUpLane';
+import CommandWordReflex from './CommandWordReflex';
 import { InnovationDataProvider } from '../contexts/InnovationDataContext';
 import { useTopicMastery } from '../hooks/useTopicMastery';
 import { getNotifications } from './gc/gcNotifications';
@@ -76,6 +77,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'exam-reps':       { themeColor: '#5E9C7B', eyebrow: 'Technique · Practice',        subtitle: 'One real exam question at a time — marked the examiner’s way, so you see exactly where the marks were.', showHeader: true  },
   'college-compass': { themeColor: '#2A7D6F', eyebrow: 'Plan · Roadmap',              subtitle: 'Your year-by-year runway to college — every CAO, HEAR, DARE and scholarship deadline, in order.', showHeader: false },
   'catch-up-lane':   { themeColor: '#0E9AA8', eyebrow: 'Catch up · Recovery',         subtitle: 'Missed some classes? Pick a subject and get caught up one quick topic at a time — no catch-up is too small.', showHeader: true  },
+  'command-word-reflex': { themeColor: '#6366F1', eyebrow: 'Technique · Exam skills', subtitle: 'Half of exam technique is reading the question right. Spot the command word in real questions and learn what it’s really asking — and the trap that loses marks.', showHeader: true },
 };
 
 interface InnovationZoneProps {
@@ -517,6 +519,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             hoverBorder: 'hover:border-cyan-400/50 dark:hover:border-cyan-500/40',
             component: <CatchUpLane uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
         },
+        {
+            id: 'command-word-reflex', title: 'Command-Word Reflex', description: 'Spot the command word in real questions — and dodge the trap.', icon: Highlighter, needsProfile: false,
+            curriculum: 'senior' as const,
+            tag: 'Exam skills', accentHex: '#6366F1', gridClass: 'md:col-span-2',
+            iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-700 dark:text-indigo-300',
+            accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
+            hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
+            component: <CommandWordReflex uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
+        },
     ];
 
     const [activeFilter, setActiveFilter] = useState<'all' | 'understand' | 'plan' | 'track'>('all');
@@ -533,6 +544,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'exam-reps': 'plan',
         'college-compass': 'plan',
         'catch-up-lane': 'plan',
+        'command-word-reflex': 'understand',
     };
 
     // Curriculum gating (Phase 4): JC users only see tools tagged 'both'

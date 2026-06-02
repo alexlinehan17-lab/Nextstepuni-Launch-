@@ -1,0 +1,244 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Command-Word Reflex — read the question like an examiner.
+ *
+ * Pick a subject → see a real exam question → tap the command word (the cue
+ * that says what to DO) → learn what it demands and the examiner-flagged trap.
+ * Trains the decode-the-question skill on authentic questions.
+ *
+ * Aesthetics: Innovation-Zone tool vocabulary (chunky cardShell +
+ * PrimaryActionButton); scholarly indigo identity with an amber "highlighter"
+ * for the spotted cue word. Cool tints, no warm cream, no coloured left borders.
+ */
+
+import React, { useMemo, useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
+import { MotionDiv } from '../Motion';
+import { ArrowLeft, ArrowRight, Check, Highlighter, AlertTriangle, BookOpenCheck } from 'lucide-react';
+import { COLORS } from '../../design/tokens';
+import PrimaryActionButton from '../ui/PrimaryActionButton';
+import { useCommandWordReflex } from '../../hooks/useCommandWordReflex';
+import { COMMAND_WORD_QUESTIONS, commandSubjects, questionsForSubject } from '../../commandWordData';
+import { type CommandWordQuestion } from '../../types/commandWord';
+
+const INDIGO = '#6366F1';
+const INDIGO_DARK_TEXT = '#3730A3';
+const INDIGO_TINT = '#EEF0FF';
+const HL_BG = '#FDE68A';        // amber-200 highlighter
+const HL_TEXT = '#92400E';      // amber-800
+const AMBER_TINT = '#FFFBEB';   // amber-50 (a tint, not warm cream)
+const AMBER_ICON = '#D97706';   // amber-600
+
+const cardShell =
+  'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
+
+const norm = (s: string) => s.replace(/[^a-zA-Z]/g, '').toLowerCase();
+
+const fade = { initial: { opacity: 0, y: 10 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0, y: -8 }, transition: { duration: 0.22 } };
+
+const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid, studentSubjects }) => {
+  const { state, isLoaded, recordResult } = useCommandWordReflex(uid);
+
+  const [view, setView] = useState<'home' | 'play'>('home');
+  const [subjectId, setSubjectId] = useState<string | null>(null);
+  const [qIndex, setQIndex] = useState(0);
+  const [phase, setPhase] = useState<'spot' | 'reveal'>('spot');
+  const [wrong, setWrong] = useState<Set<number>>(new Set());
+  const [usedReveal, setUsedReveal] = useState(false);
+
+  const subjects = useMemo(() => commandSubjects(), []);
+  const studentSet = useMemo(() => new Set((studentSubjects ?? []).map(s => s.toLowerCase())), [studentSubjects]);
+  const comingSoon = useMemo(
+    () => (studentSubjects ?? []).filter(name => !subjects.some(s => s.subjectLabel.toLowerCase() === name.toLowerCase())),
+    [studentSubjects, subjects],
+  );
+
+  const queue = subjectId ? questionsForSubject(subjectId) : [];
+  const q: CommandWordQuestion | undefined = queue[qIndex];
+
+  const tokens = useMemo(() => (q ? q.stem.split(/(\s+)/) : []), [q]);
+
+  const startSubject = (sid: string) => { setSubjectId(sid); setQIndex(0); resetQuestion(); setView('play'); };
+  const resetQuestion = () => { setPhase('spot'); setWrong(new Set()); setUsedReveal(false); };
+
+  const solve = (firstTry: boolean) => {
+    if (!q) return;
+    setPhase('reveal');
+    recordResult(q.id, q.commandWord, firstTry);
+  };
+
+  const onTapToken = (i: number, token: string) => {
+    if (!q || phase === 'reveal') return;
+    if (norm(token) === q.commandWord.toLowerCase()) {
+      solve(wrong.size === 0 && !usedReveal);
+    } else {
+      setWrong(prev => new Set(prev).add(i));
+    }
+  };
+
+  const reveal = () => { setUsedReveal(true); solve(false); };
+  const next = () => {
+    if (qIndex + 1 < queue.length) { setQIndex(qIndex + 1); resetQuestion(); }
+    else setView('home');
+  };
+
+  if (!isLoaded) {
+    return <div className="w-full max-w-xl mx-auto py-16 text-center text-sm text-zinc-400">Loading…</div>;
+  }
+
+  // ───────── HOME ─────────
+  if (view === 'home') {
+    const totalQs = COMMAND_WORD_QUESTIONS.length;
+    return (
+      <div className="w-full max-w-xl mx-auto pb-12">
+        <p className="text-[15px] leading-relaxed mb-5" style={{ color: '#5a5550', fontFamily: "'DM Sans', sans-serif" }}>
+          Half of exam technique is reading the question right. Pick a subject, find the command word in real questions,
+          and learn exactly what each one is telling you to do — and the trap that loses marks.
+        </p>
+
+        {state.wordsMet.length > 0 && (
+          <div className="rounded-2xl p-5 mb-6" style={{ backgroundColor: INDIGO_TINT }}>
+            <div className="flex items-baseline justify-between mb-2">
+              <span className="text-[11px] font-bold uppercase tracking-[0.14em]" style={{ color: INDIGO_DARK_TEXT }}>Your reflex</span>
+              <span className="text-[11px] font-semibold" style={{ color: INDIGO_DARK_TEXT }}>{state.firstTryIds.length}/{state.seenIds.length} spotted first try</span>
+            </div>
+            <p className="text-2xl font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
+              {state.wordsMet.length} command {state.wordsMet.length === 1 ? 'word' : 'words'} met
+            </p>
+            <div className="h-2.5 rounded-full overflow-hidden mt-3" style={{ backgroundColor: '#ffffff' }}>
+              <div className="h-full rounded-full transition-all" style={{ width: `${Math.round((state.seenIds.length / totalQs) * 100)}%`, backgroundColor: INDIGO }} />
+            </div>
+          </div>
+        )}
+
+        <h2 className="text-[13px] font-bold uppercase tracking-[0.14em] mb-3" style={{ color: '#9e9186' }}>Pick a subject</h2>
+        <div className="space-y-3">
+          {subjects.map(s => {
+            const isMine = studentSet.has(s.subjectLabel.toLowerCase());
+            return (
+              <button
+                key={s.subjectId}
+                onClick={() => startSubject(s.subjectId)}
+                className="w-full text-left rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46] p-4 flex items-center gap-4 transition-transform hover:-translate-y-0.5"
+              >
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: INDIGO_TINT }}>
+                  <Highlighter size={20} style={{ color: INDIGO }} />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <p className="text-base font-semibold text-zinc-900 dark:text-white" style={{ fontFamily: "'Source Serif 4', serif" }}>{s.subjectLabel}</p>
+                    {isMine && <span className="text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full" style={{ backgroundColor: INDIGO_TINT, color: INDIGO_DARK_TEXT }}>Yours</span>}
+                  </div>
+                  <p className="text-[12px] text-zinc-500">{s.count} real questions</p>
+                </div>
+                <ArrowRight size={18} className="text-zinc-300 dark:text-zinc-600 shrink-0" />
+              </button>
+            );
+          })}
+        </div>
+        {comingSoon.length > 0 && (
+          <p className="text-[12px] leading-relaxed mt-5" style={{ color: '#9e9186' }}>More of your subjects are coming — we’re adding them subject by subject.</p>
+        )}
+      </div>
+    );
+  }
+
+  // ───────── PLAY ─────────
+  if (view === 'play' && q) {
+    return (
+      <div className="w-full">
+        <button onClick={() => setView('home')} className="flex items-center gap-1.5 text-[13px] font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-4 max-w-xl mx-auto w-full">
+          <ArrowLeft size={15} /> {q.subjectLabel}
+        </button>
+
+        <AnimatePresence mode="wait">
+          <MotionDiv key={`${q.id}-${phase}`} {...fade} className={cardShell}>
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-[11px] font-bold uppercase tracking-[0.14em]" style={{ color: INDIGO_DARK_TEXT }}>{q.questionRef}</span>
+              <span className="text-[11px] font-medium text-zinc-400">{qIndex + 1} / {queue.length}</span>
+            </div>
+
+            {phase === 'spot' && (
+              <p className="text-[12px] font-semibold mb-3" style={{ color: INDIGO_DARK_TEXT }}>
+                Tap the command word — the cue telling you what to actually <span className="italic">do</span>.
+              </p>
+            )}
+
+            {/* The question stem as tappable tokens */}
+            <p className="text-[18px] leading-[1.7] mb-5" style={{ color: '#1a1a1a', fontFamily: "'Source Serif 4', serif" }}>
+              {tokens.map((tok, i) => {
+                if (/^\s+$/.test(tok)) return <span key={i}>{tok}</span>;
+                const isCmd = norm(tok) === q.commandWord.toLowerCase() && norm(tok).length > 0;
+                const isWrong = wrong.has(i);
+                if (phase === 'reveal' && isCmd) {
+                  return <span key={i} className="rounded px-1 py-0.5 font-semibold" style={{ backgroundColor: HL_BG, color: HL_TEXT }}>{tok}</span>;
+                }
+                return (
+                  <button
+                    key={i}
+                    onClick={() => onTapToken(i, tok)}
+                    disabled={phase === 'reveal'}
+                    className="rounded transition-colors"
+                    style={isWrong
+                      ? { textDecoration: 'line-through', color: '#b0a898', cursor: phase === 'reveal' ? 'default' : 'pointer' }
+                      : { color: 'inherit', cursor: phase === 'reveal' ? 'default' : 'pointer' }}
+                    onMouseEnter={(e) => { if (phase === 'spot') e.currentTarget.style.backgroundColor = INDIGO_TINT; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; }}
+                  >{tok}</button>
+                );
+              })}
+            </p>
+
+            {phase === 'spot' && (
+              <>
+                {wrong.size > 0 && (
+                  <p className="text-[12px] mb-3" style={{ color: '#9e9186' }}>That’s a topic word — look for the <span className="font-semibold">action</span> word (the verb telling you what to produce).</p>
+                )}
+                <div className="flex justify-end">
+                  <button onClick={reveal} className="text-[13px] font-medium text-zinc-400 hover:text-zinc-700 underline">Reveal it</button>
+                </div>
+              </>
+            )}
+
+            {phase === 'reveal' && (
+              <>
+                <div className="flex items-center gap-1.5 mb-3">
+                  <Check size={16} strokeWidth={3} style={{ color: COLORS.success }} />
+                  <span className="text-[12px] font-semibold" style={{ color: COLORS.successDarkText }}>
+                    {usedReveal ? `The command word is “${q.commandWord}”` : wrong.size === 0 ? 'Spotted it first try' : `Got it — it’s “${q.commandWord}”`}
+                  </span>
+                </div>
+
+                {/* What it demands */}
+                <div className="rounded-xl p-4 mb-3" style={{ backgroundColor: INDIGO_TINT }}>
+                  <p className="text-[11px] font-bold uppercase tracking-[0.12em] mb-1.5" style={{ color: INDIGO_DARK_TEXT }}>What “{q.commandWord}” is asking you to do</p>
+                  <p className="text-[14px] leading-relaxed" style={{ color: '#2a2622' }}>{q.demand}</p>
+                </div>
+
+                {/* The trap */}
+                <div className="rounded-xl p-4 mb-3" style={{ backgroundColor: AMBER_TINT }}>
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <AlertTriangle size={15} style={{ color: AMBER_ICON }} />
+                    <p className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: '#92400E' }}>The trap</p>
+                  </div>
+                  <p className="text-[14px] leading-relaxed mb-2" style={{ color: '#3a3530' }}>{q.trap}</p>
+                  <p className="text-[11px]" style={{ color: '#9e9186' }}>{q.source} · ~{q.marks} marks at stake</p>
+                </div>
+
+                <div className="flex justify-end">
+                  <PrimaryActionButton label={qIndex + 1 < queue.length ? 'Next question' : 'Finish'} icon={qIndex + 1 < queue.length ? ArrowRight : BookOpenCheck} onClick={next} />
+                </div>
+              </>
+            )}
+          </MotionDiv>
+        </AnimatePresence>
+      </div>
+    );
+  }
+
+  return null;
+};
+
+export default CommandWordReflex;
