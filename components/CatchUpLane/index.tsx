@@ -19,7 +19,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import {
   ArrowLeft, ArrowRight, Check, CheckCircle2, Circle, RotateCcw,
-  Sparkles, Waypoints, BookOpenCheck,
+  Sparkles, Waypoints, BookOpenCheck, Heart,
 } from 'lucide-react';
 import { COLORS } from '../../design/tokens';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
@@ -27,11 +27,13 @@ import { useCatchUpLane } from '../../hooks/useCatchUpLane';
 import { useInnovationData } from '../../contexts/InnovationDataContext';
 import { RECOVERY_CARDS, cardsForSubject, subjectsWithContent } from '../../catchUpLaneData';
 import { type RecoveryCard } from '../../types/catchUpLane';
+import Comeback from './Comeback';
 
 const CYAN = '#0E9AA8';
 const CYAN_DARK = '#0B6E7A';
 const CYAN_TINT = '#E6F4F5';
 const CYAN_DARK_TEXT = '#0A5560';
+const WARM_FIELD = 'linear-gradient(135deg, #FFE3CC, #FCD9E2)';
 
 const cardShell =
   'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
@@ -47,9 +49,11 @@ const fade = {
 };
 
 const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid, studentSubjects }) => {
-  const { state, isLoaded, markRecovered, markShaky, marksProtected } = useCatchUpLane(uid);
+  const { state, isLoaded, markRecovered, markShaky, saveComeback, marksProtected } = useCatchUpLane(uid);
   const { topicMastery } = useInnovationData();
 
+  // Which arm: the hub chooser, the content arm (arm 1), or the comeback arm (arm 2).
+  const [arm, setArm] = useState<'hub' | 'content' | 'comeback'>('hub');
   const [view, setView] = useState<View>('home');
   const [subjectId, setSubjectId] = useState<string | null>(null);
   const [cardId, setCardId] = useState<string | null>(null);
@@ -104,10 +108,80 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
     return <div className="w-full max-w-xl mx-auto py-16 text-center text-sm text-zinc-400">Loading…</div>;
   }
 
-  // ───────────────────────── HOME ─────────────────────────
+  // ───────────────────────── ARM 2: COMEBACK ─────────────────────────
+  if (arm === 'comeback') {
+    return (
+      <Comeback
+        saved={state.comeback}
+        onSave={saveComeback}
+        onExit={() => setArm('hub')}
+        onGoContent={() => { setArm('content'); setView('home'); }}
+      />
+    );
+  }
+
+  // ───────────────────────── HUB (two arms) ─────────────────────────
+  if (arm === 'hub') {
+    const cb = state.comeback;
+    return (
+      <div className="w-full max-w-xl mx-auto pb-12">
+        <p className="text-[15px] leading-relaxed mb-5" style={{ color: '#5a5550', fontFamily: "'DM Sans', sans-serif" }}>
+          Been out of school? There are two sides to getting back on track — the schoolwork you missed, and getting yourself back in the door. Start wherever feels easier.
+        </p>
+
+        {/* Saved comeback plan, surfaced on the home (one tap away) */}
+        {cb && (
+          <button
+            onClick={() => setArm('comeback')}
+            className="w-full text-left rounded-2xl p-4 mb-4 flex items-center gap-3.5 transition-transform hover:-translate-y-0.5"
+            style={{ background: 'linear-gradient(135deg,#FFE6D2,#FCDCE4)' }}
+          >
+            <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0"><Check size={18} strokeWidth={3} style={{ color: '#E07A4E' }} /></div>
+            <div className="flex-1 min-w-0">
+              <p className="text-[13px] font-semibold" style={{ color: '#1a1a1a' }}>Your comeback plan is ready</p>
+              <p className="text-[12px] truncate" style={{ color: '#8C3A0E' }}>First step: {cb.firstStep}</p>
+            </div>
+            <ArrowRight size={18} style={{ color: '#B5532A' }} className="shrink-0" />
+          </button>
+        )}
+
+        {/* Arm 1 — catch up on content */}
+        <button
+          onClick={() => { setArm('content'); setView('home'); }}
+          className="w-full text-left rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-5 mb-3 flex items-center gap-4 transition-transform hover:-translate-y-0.5"
+        >
+          <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: CYAN_TINT }}><BookOpenCheck size={22} style={{ color: CYAN }} /></div>
+          <div className="flex-1 min-w-0">
+            <p className="text-lg font-semibold text-zinc-900 dark:text-white" style={{ fontFamily: "'Source Serif 4', serif" }}>Catch up on what you missed</p>
+            <p className="text-[13px] text-zinc-500">Short subject pieces for the classes you missed{recoveredCount > 0 ? ` · ${recoveredCount} recovered` : ''}.</p>
+          </div>
+          <ArrowRight size={18} className="text-zinc-300 dark:text-zinc-600 shrink-0" />
+        </button>
+
+        {/* Arm 2 — comeback */}
+        <button
+          onClick={() => setArm('comeback')}
+          className="w-full text-left rounded-2xl p-5 flex items-center gap-4 transition-transform hover:-translate-y-0.5"
+          style={{ background: WARM_FIELD, border: '2px solid #1A1A1A', boxShadow: '4px 4px 0 0 #1A1A1A' }}
+        >
+          <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-white"><Heart size={22} style={{ color: '#E07A4E' }} /></div>
+          <div className="flex-1 min-w-0">
+            <p className="text-lg font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Your comeback</p>
+            <p className="text-[13px]" style={{ color: '#8C3A0E' }}>{cb ? 'Your plan’s saved — tap to view or update.' : 'Make the first day back feel smaller. Build your plan.'}</p>
+          </div>
+          <ArrowRight size={18} style={{ color: '#B5532A' }} className="shrink-0" />
+        </button>
+      </div>
+    );
+  }
+
+  // ───────────────────────── HOME (arm 1: content) ─────────────────────────
   if (view === 'home') {
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
+        <button onClick={() => setArm('hub')} className="flex items-center gap-1.5 text-[13px] font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-4">
+          <ArrowLeft size={15} /> Catch-Up Lane
+        </button>
         {/* Reassurance intro */}
         <p className="text-[15px] leading-relaxed mb-5" style={{ color: '#5a5550', fontFamily: "'DM Sans', sans-serif" }}>
           Missed a few classes? It happens — and it’s fixable. Pick a subject and we’ll get you back on track,

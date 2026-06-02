@@ -68,5 +68,33 @@ export interface CatchUpLaneState {
   attempts: number;
   /** Light absence log (used only for friendly framing, not topic mapping). */
   absences: AbsenceLog[];
+  /** Arm 2: the student's saved re-entry plan (see ComebackPlan). */
+  comeback?: ComebackPlan;
   updatedAt: string;
+}
+
+/**
+ * Arm 2 ("Your Comeback") — a saved, personal re-entry plan the student builds.
+ * Grounded in EBSA / NEPS guidance + implementation-intentions evidence:
+ * a personal why, the obstacle that triggers avoidance, one tiny graded step,
+ * an if-then plan against that obstacle, a low-disclosure script, and their one
+ * trusted adult + safe space. Shame is designed out (no "why were you out?",
+ * no days-missed counters).
+ */
+export interface ComebackPlan {
+  /** A personally meaningful reason it matters (powers the if-then). */
+  why: string;
+  /** Worry ids the student named as what's hard (obstacles). */
+  obstacleIds: string[];
+  /** The tiny, almost-guaranteed first step (graded exposure). */
+  firstStep: string;
+  /** Implementation intention against the named obstacle. */
+  ifThen: { trigger: string; action: string };
+  /** Chosen low-disclosure line for the "where were you?" moment. */
+  script: string;
+  /** Their one trusted adult (role label, e.g. "My year head"). */
+  person: string;
+  /** Where they'll go / their exit signal if it gets too much. */
+  safeSpace: string;
+  savedAt: string;
 }

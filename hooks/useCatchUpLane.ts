@@ -14,7 +14,7 @@ import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
-import { type CatchUpLaneState } from '../types/catchUpLane';
+import { type CatchUpLaneState, type ComebackPlan } from '../types/catchUpLane';
 import { RECOVERY_CARDS } from '../catchUpLaneData';
 
 const EMPTY: CatchUpLaneState = {
@@ -96,11 +96,24 @@ export function useCatchUpLane(uid?: string) {
     });
   }, [persist]);
 
+  // Arm 2: save the student's re-entry plan (stamps savedAt).
+  const saveComeback = useCallback((plan: Omit<ComebackPlan, 'savedAt'>) => {
+    setState(prev => {
+      const next: CatchUpLaneState = {
+        ...prev,
+        comeback: { ...plan, savedAt: new Date().toISOString() },
+        updatedAt: new Date().toISOString(),
+      };
+      persist(next);
+      return next;
+    });
+  }, [persist]);
+
   // Total marks "protected" so far — conservative sum of recovered topics' weights.
   const marksProtected = useMemo(() => {
     const recovered = new Set(state.recoveredTopicIds);
     return RECOVERY_CARDS.reduce((sum, c) => sum + (recovered.has(c.topicId) ? c.marksWeight : 0), 0);
   }, [state.recoveredTopicIds]);
 
-  return { state, isLoaded, markRecovered, markShaky, logAbsence, marksProtected };
+  return { state, isLoaded, markRecovered, markShaky, logAbsence, saveComeback, marksProtected };
 }
