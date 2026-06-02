@@ -12,10 +12,10 @@
  * the <Portrait> falls back automatically, so dropping the images in just works.
  */
 
-import React, { useMemo, useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import React, { useMemo, useState, useEffect } from 'react';
+import { AnimatePresence, motion, useMotionValue, useTransform, animate } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, Users, Sparkles, Hand } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, Users, Sparkles, Hand, X, BookOpen, RotateCcw } from 'lucide-react';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { useHowTheyDidIt } from '../../hooks/useHowTheyDidIt';
 import { PEOPLE, peopleForBarrier } from '../../howTheyDidItData';
@@ -47,6 +47,55 @@ const Portrait: React.FC<{ person: PersonCard; size: number }> = ({ person, size
 
 const barrierLabel = (b: Barrier) => BARRIERS.find(x => x.id === b)?.label ?? '';
 
+/** Large portrait for the Tinder-style card — tries the PNG, falls back to a big monogram. */
+const BigPortrait: React.FC<{ person: PersonCard }> = ({ person }) => {
+  const [failed, setFailed] = useState(false);
+  if (failed) return <span className="font-semibold" style={{ color: GOLD_DARK, fontSize: 96, fontFamily: "'Source Serif 4', serif" }}>{initials(person.name)}</span>;
+  return <img src={`/assets/people/${person.portraitKey}.png`} alt="" onError={() => setFailed(true)} className="max-h-[80%] max-w-[80%] object-contain" draggable={false} />;
+};
+
+/** The card face — a tall "profile card" (illustration on a tint + name/field/obstacle). */
+const CardFace: React.FC<{ person: PersonCard; saved: boolean }> = ({ person, saved }) => (
+  <div className="w-full h-full rounded-3xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[5px_7px_0_0_#1A1A1A] dark:shadow-[5px_7px_0_0_#3f3f46] overflow-hidden flex flex-col select-none">
+    <div className="relative flex-1 flex items-center justify-center" style={{ backgroundColor: GOLD_TINT }}>
+      <span className="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-[0.1em] px-2 py-0.5 rounded-full bg-white" style={{ color: GOLD_DARK }}>{barrierLabel(person.barrier)}</span>
+      {saved && <span className="absolute top-3 right-3 w-7 h-7 rounded-full bg-white flex items-center justify-center"><BookmarkCheck size={15} style={{ color: GOLD }} /></span>}
+      <BigPortrait person={person} />
+    </div>
+    <div className="px-5 py-4 shrink-0">
+      <h3 className="text-xl font-semibold text-zinc-900 dark:text-white leading-tight" style={{ fontFamily: "'Source Serif 4', serif" }}>{person.name}</h3>
+      <p className="text-[12px] text-zinc-500 mb-1.5">{person.field}</p>
+      <p className="text-[13.5px] leading-snug line-clamp-3" style={{ color: '#3a3530' }}>{person.start}</p>
+    </div>
+  </div>
+);
+
+/** Draggable top card — fling left/right to advance (right = save). */
+const SwipeCard: React.FC<{ person: PersonCard; saved: boolean; onDismiss: (dir: 'left' | 'right') => void }> = ({ person, saved, onDismiss }) => {
+  const x = useMotionValue(0);
+  const rotate = useTransform(x, [-220, 220], [-13, 13]);
+  const saveOp = useTransform(x, [30, 120], [0, 1]);
+  const skipOp = useTransform(x, [-120, -30], [1, 0]);
+  return (
+    <motion.div
+      className="absolute inset-0 cursor-grab active:cursor-grabbing"
+      style={{ x, rotate, zIndex: 30 }}
+      drag="x"
+      dragConstraints={{ left: 0, right: 0 }}
+      dragElastic={0.7}
+      onDragEnd={(_e, info) => {
+        if (info.offset.x > 110 || info.velocity.x > 600) animate(x, 720, { duration: 0.3, onComplete: () => onDismiss('right') });
+        else if (info.offset.x < -110 || info.velocity.x < -600) animate(x, -720, { duration: 0.3, onComplete: () => onDismiss('left') });
+        else animate(x, 0, { type: 'spring', stiffness: 320, damping: 30 });
+      }}
+    >
+      <motion.div className="absolute top-7 left-5 z-10 px-2.5 py-1 rounded-lg border-2 text-[15px] font-extrabold tracking-wide" style={{ opacity: saveOp, color: GOLD, borderColor: GOLD, transform: 'rotate(-12deg)' }}>SAVE</motion.div>
+      <motion.div className="absolute top-7 right-5 z-10 px-2.5 py-1 rounded-lg border-2 text-[15px] font-extrabold tracking-wide text-zinc-400 border-zinc-300" style={{ opacity: skipOp, transform: 'rotate(12deg)' }}>SKIP</motion.div>
+      <CardFace person={person} saved={saved} />
+    </motion.div>
+  );
+};
+
 type Beat = 'front' | 'middle' | 'moves' | 'now';
 
 const HowTheyDidIt: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid }) => {
@@ -55,12 +104,20 @@ const HowTheyDidIt: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ 
   const [cardId, setCardId] = useState<string | null>(null);
   const [beat, setBeat] = useState<Beat>('front');
   const [showSaved, setShowSaved] = useState(false);
+  const [index, setIndex] = useState(0); // top card in the swipe stack
+  useEffect(() => { setIndex(0); }, [filter]);
 
   const deck = useMemo(() => (filter === 'all' ? PEOPLE : peopleForBarrier(filter)), [filter]);
   const card = cardId ? PEOPLE.find(p => p.id === cardId) ?? null : null;
   const savedCards = useMemo(() => PEOPLE.filter(p => state.savedIds.includes(p.id)), [state.savedIds]);
 
   const open = (p: PersonCard) => { setCardId(p.id); setBeat('front'); markSeen(p.id); };
+  // Swipe stack: right = save the person, left = skip; both advance to the next.
+  const advance = (dir: 'left' | 'right') => {
+    const p = deck[index];
+    if (dir === 'right' && p && !state.savedIds.includes(p.id)) toggleSaved(p.id);
+    setIndex(i => i + 1);
+  };
   const nextCard = (): PersonCard | null => deck.find(p => p.id !== card?.id && !state.seenIds.includes(p.id)) ?? deck.find(p => p.id !== card?.id) ?? null;
 
   if (!isLoaded) return <div className="w-full max-w-xl mx-auto py-16 text-center text-sm text-zinc-400">Loading…</div>;
@@ -184,9 +241,7 @@ const HowTheyDidIt: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ 
   // ── DECK (browse) ─────────────────────────────────────────────
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
-      <p className="text-[15px] leading-relaxed mb-4" style={{ color: '#5a5550', fontFamily: "'DM Sans', sans-serif" }}>
-        Real people who started where you are — and the actual moves they made. Pick what’s closest to your own situation to find someone who gets it.
-      </p>
+      <p className="text-[13px] font-medium mb-2.5" style={{ color: GOLD_DARK }}>Pick what’s closest to your situation:</p>
 
       {/* barrier filter */}
       <div className="flex flex-wrap gap-1.5 mb-5">
@@ -196,21 +251,35 @@ const HowTheyDidIt: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ 
         ))}
       </div>
 
-      <div className="space-y-3">
-        {deck.map(p => (
-          <button key={p.id} onClick={() => open(p)} className="w-full text-left rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46] p-4 flex items-center gap-3.5 transition-transform hover:-translate-y-0.5">
-            <Portrait person={p} size={52} />
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2">
-                <p className="text-[15px] font-semibold text-zinc-900 dark:text-white" style={{ fontFamily: "'Source Serif 4', serif" }}>{p.name}</p>
-                {state.savedIds.includes(p.id) && <BookmarkCheck size={13} style={{ color: GOLD }} />}
-              </div>
-              <p className="text-[12.5px] leading-snug text-zinc-500 line-clamp-2">{p.start}</p>
-            </div>
-            <ArrowRight size={18} className="text-zinc-300 dark:text-zinc-600 shrink-0" />
-          </button>
-        ))}
-      </div>
+      {index < deck.length ? (
+        <>
+          {/* Tinder-style swipe stack */}
+          <div className="relative mx-auto" style={{ maxWidth: 330, height: 430 }}>
+            {[2, 1, 0].map(off => {
+              const p = deck[index + off];
+              if (!p) return null;
+              if (off === 0) return <SwipeCard key={p.id} person={p} saved={state.savedIds.includes(p.id)} onDismiss={advance} />;
+              return (
+                <div key={p.id} className="absolute inset-0" style={{ transform: `translateY(${off * 10}px) scale(${1 - off * 0.045})`, zIndex: 10 - off }}>
+                  <CardFace person={p} saved={state.savedIds.includes(p.id)} />
+                </div>
+              );
+            })}
+          </div>
+          {/* controls (for non-swipers + accessibility) */}
+          <div className="flex items-center justify-center gap-3 mt-5">
+            <button onClick={() => advance('left')} aria-label="Skip" className="w-12 h-12 rounded-full border-2 border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 flex items-center justify-center transition-transform hover:scale-105"><X size={20} className="text-zinc-400" /></button>
+            <PrimaryActionButton label="Read their story" icon={BookOpen} onClick={() => open(deck[index])} />
+            <button onClick={() => advance('right')} aria-label="Save" className="w-12 h-12 rounded-full border-2 bg-white dark:bg-zinc-900 flex items-center justify-center transition-transform hover:scale-105" style={{ borderColor: GOLD }}><Bookmark size={20} style={{ color: GOLD }} /></button>
+          </div>
+          <p className="text-center text-[12px] mt-3" style={{ color: '#9e9186' }}>Swipe the card, or use the buttons · {deck.length - index} to go</p>
+        </>
+      ) : (
+        <div className={`${cardShell} text-center`}>
+          <p className="text-[15px] mb-4" style={{ color: '#5a5550' }}>That’s everyone in this group. Start over, or pick another group above.</p>
+          <PrimaryActionButton label="Start over" icon={RotateCcw} onClick={() => setIndex(0)} />
+        </div>
+      )}
 
       {state.savedIds.length > 0 && (
         <button onClick={() => setShowSaved(true)} className="w-full mt-5 flex items-center justify-center gap-2 rounded-xl border-2 border-zinc-200 dark:border-zinc-700 py-3 text-[13px] font-semibold" style={{ color: GOLD_DARK }}>
