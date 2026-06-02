@@ -12,7 +12,7 @@ import {
     ArrowLeft,
     Lock, Compass, Target,
     Settings, CalendarDays, Calculator, GitBranch, Rocket,
-    Map, ScanSearch, Dumbbell, Milestone, Waypoints, Highlighter
+    Map, ScanSearch, Dumbbell, Milestone, Waypoints, Highlighter, Users
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -33,6 +33,7 @@ import PointsPassport from './PointsPassport';
 import ExamReps from './ExamReps';
 import CatchUpLane from './CatchUpLane';
 import CommandWordReflex from './CommandWordReflex';
+import HowTheyDidIt from './HowTheyDidIt';
 import { InnovationDataProvider } from '../contexts/InnovationDataContext';
 import { useTopicMastery } from '../hooks/useTopicMastery';
 import { getNotifications } from './gc/gcNotifications';
@@ -78,6 +79,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'college-compass': { themeColor: '#2A7D6F', eyebrow: 'Plan · Roadmap',              subtitle: 'Your year-by-year runway to college — every CAO, HEAR, DARE and scholarship deadline, in order.', showHeader: false },
   'catch-up-lane':   { themeColor: '#0E9AA8', eyebrow: 'Catch up · Recovery',         subtitle: 'Missed some classes? Pick a subject and get caught up one quick topic at a time — no catch-up is too small.', showHeader: true  },
   'command-word-reflex': { themeColor: '#6366F1', eyebrow: 'Technique · Exam skills', subtitle: 'Half of exam technique is reading the question right. Spot the command word in real questions and learn what it’s really asking — and the trap that loses marks.', showHeader: true },
+  'how-they-did-it':  { themeColor: '#C8862B', eyebrow: 'Mindset · Real stories', subtitle: 'Real people who started where you are — money tight, learning differently, new to the country, first in the family — and the actual moves they made.', showHeader: true },
 };
 
 interface InnovationZoneProps {
@@ -528,6 +530,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
             component: <CommandWordReflex uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
         },
+        {
+            id: 'how-they-did-it', title: 'How They Did It', description: 'Real people who started where you are — and the moves they made.', icon: Users, needsProfile: false,
+            curriculum: 'both' as const,
+            tag: 'Real stories', accentHex: '#C8862B', gridClass: 'md:col-span-3',
+            iconBg: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-700 dark:text-amber-300',
+            accentBarColor: 'bg-amber-500', tagBg: 'bg-amber-100 dark:bg-amber-900/30', tagText: 'text-amber-700 dark:text-amber-400',
+            hoverBorder: 'hover:border-amber-400/50 dark:hover:border-amber-500/40',
+            component: <HowTheyDidIt uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
+        },
     ];
 
     const [activeFilter, setActiveFilter] = useState<'all' | 'understand' | 'plan' | 'track'>('all');
@@ -545,6 +556,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'college-compass': 'plan',
         'catch-up-lane': 'plan',
         'command-word-reflex': 'understand',
+        'how-they-did-it': 'understand',
     };
 
     // Curriculum gating (Phase 4): JC users only see tools tagged 'both'
