@@ -33,7 +33,6 @@ const CYAN = '#0E9AA8';
 const CYAN_DARK = '#0B6E7A';
 const CYAN_TINT = '#E6F4F5';
 const CYAN_DARK_TEXT = '#0A5560';
-const WARM_FIELD = 'linear-gradient(135deg, #FFE3CC, #FCD9E2)';
 
 const cardShell =
   'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
@@ -133,15 +132,15 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
         {cb && (
           <button
             onClick={() => setArm('comeback')}
-            className="w-full text-left rounded-2xl p-4 mb-4 flex items-center gap-3.5 transition-transform hover:-translate-y-0.5"
-            style={{ background: 'linear-gradient(135deg,#FFE6D2,#FCDCE4)' }}
+            className="w-full text-left rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 p-4 mb-4 flex items-center gap-3.5 transition-transform hover:-translate-y-0.5 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]"
+            style={{ backgroundColor: CYAN_TINT }}
           >
-            <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0"><Check size={18} strokeWidth={3} style={{ color: '#E07A4E' }} /></div>
+            <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0"><Check size={18} strokeWidth={3} style={{ color: CYAN }} /></div>
             <div className="flex-1 min-w-0">
               <p className="text-[13px] font-semibold" style={{ color: '#1a1a1a' }}>Your comeback plan is ready</p>
-              <p className="text-[12px] truncate" style={{ color: '#8C3A0E' }}>First step: {cb.firstStep}</p>
+              <p className="text-[12px] truncate" style={{ color: CYAN_DARK_TEXT }}>First step: {cb.firstStep}</p>
             </div>
-            <ArrowRight size={18} style={{ color: '#B5532A' }} className="shrink-0" />
+            <ArrowRight size={18} style={{ color: CYAN }} className="shrink-0" />
           </button>
         )}
 
@@ -161,15 +160,14 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
         {/* Arm 2 — comeback */}
         <button
           onClick={() => setArm('comeback')}
-          className="w-full text-left rounded-2xl p-5 flex items-center gap-4 transition-transform hover:-translate-y-0.5"
-          style={{ background: WARM_FIELD, border: '2px solid #1A1A1A', boxShadow: '4px 4px 0 0 #1A1A1A' }}
+          className="w-full text-left rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-5 flex items-center gap-4 transition-transform hover:-translate-y-0.5"
         >
-          <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-white"><Heart size={22} style={{ color: '#E07A4E' }} /></div>
+          <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: CYAN_TINT }}><Heart size={22} style={{ color: CYAN }} /></div>
           <div className="flex-1 min-w-0">
-            <p className="text-lg font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Your comeback</p>
-            <p className="text-[13px]" style={{ color: '#8C3A0E' }}>{cb ? 'Your plan’s saved — tap to view or update.' : 'Make the first day back feel smaller. Build your plan.'}</p>
+            <p className="text-lg font-semibold text-zinc-900 dark:text-white" style={{ fontFamily: "'Source Serif 4', serif" }}>Your comeback</p>
+            <p className="text-[13px] text-zinc-500">{cb ? 'Your plan’s saved — tap to view or update.' : 'Make the first day back feel smaller — build your plan.'}</p>
           </div>
-          <ArrowRight size={18} style={{ color: '#B5532A' }} className="shrink-0" />
+          <ArrowRight size={18} className="text-zinc-300 dark:text-zinc-600 shrink-0" />
         </button>
       </div>
     );
