@@ -12,7 +12,7 @@ import {
     ArrowLeft,
     Lock, Compass, Target,
     Settings, CalendarDays, Calculator, GitBranch, Rocket,
-    Map, ScanSearch, Dumbbell, Milestone
+    Map, ScanSearch, Dumbbell, Milestone, Waypoints
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -31,6 +31,7 @@ import CollegeCompass from './CollegeCompass';
 import SyllabusXRay from './SyllabusXRay';
 import PointsPassport from './PointsPassport';
 import ExamReps from './ExamReps';
+import CatchUpLane from './CatchUpLane';
 import { InnovationDataProvider } from '../contexts/InnovationDataContext';
 import { useTopicMastery } from '../hooks/useTopicMastery';
 import { getNotifications } from './gc/gcNotifications';
@@ -74,6 +75,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'points-passport': { themeColor: '#B8A079', eyebrow: 'Track · Tracker',             subtitle: 'Mock trends and grade bargains, all at a glance.',                                  showHeader: true  },
   'exam-reps':       { themeColor: '#5E9C7B', eyebrow: 'Technique · Practice',        subtitle: 'One real exam question at a time — marked the examiner’s way, so you see exactly where the marks were.', showHeader: true  },
   'college-compass': { themeColor: '#2A7D6F', eyebrow: 'Plan · Roadmap',              subtitle: 'Your year-by-year runway to college — every CAO, HEAR, DARE and scholarship deadline, in order.', showHeader: false },
+  'catch-up-lane':   { themeColor: '#0E9AA8', eyebrow: 'Catch up · Recovery',         subtitle: 'Missed some classes? Pick a subject and get caught up one quick topic at a time — no catch-up is too small.', showHeader: true  },
 };
 
 interface InnovationZoneProps {
@@ -506,6 +508,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             hoverBorder: 'hover:border-teal-400/50 dark:hover:border-teal-500/40',
             component: <CollegeCompass uid={user?.uid} yearGroup={user?.yearGroup} />,
         },
+        {
+            id: 'catch-up-lane', title: 'Catch-Up Lane', description: 'Missed class? Get caught up, one quick topic at a time.', icon: Waypoints, needsProfile: false,
+            curriculum: 'senior' as const,
+            tag: 'Catch up', accentHex: '#0E9AA8', gridClass: 'md:col-span-2',
+            iconBg: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-700 dark:text-cyan-300',
+            accentBarColor: 'bg-cyan-500', tagBg: 'bg-cyan-100 dark:bg-cyan-900/30', tagText: 'text-cyan-700 dark:text-cyan-400',
+            hoverBorder: 'hover:border-cyan-400/50 dark:hover:border-cyan-500/40',
+            component: <CatchUpLane uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
+        },
     ];
 
     const [activeFilter, setActiveFilter] = useState<'all' | 'understand' | 'plan' | 'track'>('all');
@@ -521,6 +532,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'journey': 'track',
         'exam-reps': 'plan',
         'college-compass': 'plan',
+        'catch-up-lane': 'plan',
     };
 
     // Curriculum gating (Phase 4): JC users only see tools tagged 'both'

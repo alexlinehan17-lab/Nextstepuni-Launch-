@@ -15,6 +15,7 @@
  *   - IZ active-tool ToolHeader: size=108
  */
 import React from 'react';
+import { Waypoints, type LucideIcon } from 'lucide-react';
 
 export type ToolIconKey =
   | 'journey'
@@ -26,13 +27,18 @@ export type ToolIconKey =
   | 'syllabus-xray'
   | 'points-passport'
   | 'exam-reps'
-  | 'college-compass';
+  | 'college-compass'
+  | 'catch-up-lane';
 
 interface ToolIconConfig {
   blob: string;
   blobPath: string;
-  iconPath: string;
+  /** Hand-drawn PNG art (preferred). Omit when using an inline lucide icon instead. */
+  iconPath?: string;
   iconScale: number;
+  /** Inline lucide icon — used when no PNG art exists yet (e.g. catch-up-lane). */
+  icon?: LucideIcon;
+  iconColor?: string;
 }
 
 const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
@@ -98,6 +104,14 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     blobPath: 'M 6 26 Q 0 52 10 80 Q 26 98 54 94 Q 88 90 96 60 Q 100 28 82 8 Q 56 -4 30 8 Q 12 16 6 26 Z',
     iconScale: 1.0,
   },
+  // No hand-drawn PNG yet — renders an inline lucide icon over the blob.
+  'catch-up-lane': {
+    blob: '#AEDDE2',
+    blobPath: 'M 6 24 Q 0 52 10 80 Q 26 98 54 94 Q 88 90 96 60 Q 100 28 82 8 Q 56 -4 30 6 Q 12 14 6 24 Z',
+    iconScale: 1.0,
+    icon: Waypoints,
+    iconColor: '#0B6E7A',
+  },
 };
 
 interface ToolIconBlobProps {
@@ -136,21 +150,31 @@ export const ToolIconBlob: React.FC<ToolIconBlobProps> = ({
       >
         <path d={cfg.blobPath} fill={cfg.blob} opacity="0.85" />
       </svg>
-      <img
-        src={cfg.iconPath}
-        alt=""
-        style={{
-          position: 'absolute',
-          left: '50%',
-          top: '50%',
-          transform: `translate(-50%, -50%) scale(${cfg.iconScale})`,
-          width: '94%',
-          height: '94%',
-          objectFit: 'contain',
-          zIndex: 1,
-        }}
-        draggable={false}
-      />
+      {cfg.icon ? (
+        <cfg.icon
+          size={size * 0.42}
+          strokeWidth={2}
+          color={cfg.iconColor ?? '#1a1a1a'}
+          style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', zIndex: 1 }}
+          aria-hidden="true"
+        />
+      ) : (
+        <img
+          src={cfg.iconPath}
+          alt=""
+          style={{
+            position: 'absolute',
+            left: '50%',
+            top: '50%',
+            transform: `translate(-50%, -50%) scale(${cfg.iconScale})`,
+            width: '94%',
+            height: '94%',
+            objectFit: 'contain',
+            zIndex: 1,
+          }}
+          draggable={false}
+        />
+      )}
     </div>
   );
 };
