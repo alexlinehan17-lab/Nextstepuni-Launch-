@@ -61,8 +61,8 @@ const GCExportModal: React.FC<GCExportModalProps> = ({ isOpen, onClose, studentD
     onClose();
   };
 
-  const handleExportPDF = () => {
-    generateReport({
+  const handleExportPDF = async () => {
+    await generateReport({
       school,
       students: studentData,
       allCourses,

@@ -3,8 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import jsPDF from 'jspdf';
-import 'jspdf-autotable';
+// jspdf + jspdf-autotable are ~580KB. Imported lazily inside generateReport so
+// they load only when a report is actually exported — not when the GC dashboard
+// mounts.
 
 import { type GCStudentFullData } from '../components/gc/gcTypes';
 import { type CourseData } from '../components/Library';
@@ -76,7 +77,7 @@ const ALTERNATE_ROW_STYLES = {
 
 // ─── Main export ────────────────────────────────────────────────────────────
 
-export function generateReport(options: {
+export async function generateReport(options: {
   school: string;
   students: GCStudentFullData[];
   allCourses: CourseData[];
@@ -84,8 +85,10 @@ export function generateReport(options: {
   includeAttendance: boolean;
   includeSubjectHealth: boolean;
   individualStudent?: GCStudentFullData;
-}): void {
+}): Promise<void> {
   const { school, students, allCourses, includeProgress, includeAttendance, includeSubjectHealth, individualStudent } = options;
+  const { default: jsPDF } = await import('jspdf');
+  await import('jspdf-autotable');
   const doc = new jsPDF('p', 'mm', 'a4');
   const pageWidth = doc.internal.pageSize.getWidth();
   const pageHeight = doc.internal.pageSize.getHeight();
