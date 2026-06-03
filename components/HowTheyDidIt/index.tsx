@@ -17,7 +17,7 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, Sparkles, HandHeart, X, BookOpen, RotateCcw, RefreshCw, ChevronDown, ExternalLink } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, Sparkles, HandHeart, X, BookOpen, RotateCcw, RefreshCw, ChevronDown, ExternalLink, type LucideIcon } from 'lucide-react';
 import { useHowTheyDidIt } from '../../hooks/useHowTheyDidIt';
 import { PEOPLE, peopleForBarrier } from '../../howTheyDidItData';
 import { BARRIERS, type Barrier, type PersonCard, type PersonMove } from '../../types/howTheyDidIt';
@@ -47,7 +47,7 @@ const Label: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 );
 
 /** Primary "next" button styled to pop on a colour world (white pill, coloured text). */
-const WorldButton: React.FC<{ label: string; icon?: React.ElementType; onClick: () => void; wd: ColorWorld }> = ({ label, icon: Icon, onClick, wd }) => (
+const WorldButton: React.FC<{ label: string; icon?: LucideIcon; onClick: () => void; wd: ColorWorld }> = ({ label, icon: Icon, onClick, wd }) => (
   <button
     onClick={onClick}
     className="inline-flex items-center gap-2 px-5 py-3 rounded-full text-[14px] font-semibold transition-transform active:translate-y-0.5"

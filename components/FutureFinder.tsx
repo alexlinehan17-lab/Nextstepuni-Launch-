@@ -446,7 +446,7 @@ function IntroPhase({ isJunior, autoPoints, onStart, onViewResults }: { isJunior
 
 /** Phase 2: Assessment */
 function AssessmentPhase({
-  questions, currentQ, answers, _autoPoints, onUpdateAnswer, onNext, onBack,
+  questions, currentQ, answers, autoPoints: _autoPoints, onUpdateAnswer, onNext, onBack,
 }: {
   questions: AssessmentQuestion[];
   currentQ: number;
@@ -898,7 +898,7 @@ function ResultCard({
 
 /** Phase 4: Detail View */
 function DetailPhase({
-  result, _answers, autoPoints, isSaved, isCompared, onToggleSave, onToggleCompare, onBack,
+  result, answers: _answers, autoPoints, isSaved, isCompared, onToggleSave, onToggleCompare, onBack,
 }: {
   result: RecommendationResult;
   answers: FutureFinderAnswers;
@@ -1114,7 +1114,7 @@ function InfoTile({ icon: Icon, label, value }: { icon: LucideIcon; label: strin
 
 /** Phase 5: Compare View */
 function ComparePhase({
-  courses, _answers, onBack, onRemove,
+  courses, answers: _answers, onBack, onRemove,
 }: {
   courses: RecommendationResult[];
   answers: FutureFinderAnswers;
@@ -1224,7 +1224,7 @@ function SubjectExplorerResults({
     return (
       <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="py-10 text-center space-y-4">
         <p className="text-zinc-500 dark:text-zinc-400">We couldn't find a strong pattern from your answers. Try the quiz again and pick whichever options actually appeal to you, not what you think you should pick.</p>
-        <PrimaryActionButton onClick={onRetake}>Retake the quiz</PrimaryActionButton>
+        <PrimaryActionButton onClick={onRetake} label="Retake the quiz" />
       </MotionDiv>
     );
   }

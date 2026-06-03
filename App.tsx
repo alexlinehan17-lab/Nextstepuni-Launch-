@@ -612,7 +612,7 @@ const App: React.FC = () => {
     timetableBlockContext, setTimetableBlockContext, handleStudyFromTimetable,
     journeyResult, setJourneyResult,
     handleOnboardingComplete, handleOnboardingSkip,
-    transitionToSeniorMode, transitionTargetYear: transitionToSeniorMode ? (user?.yearGroup === 'TY' ? 'TY' : '5th') : undefined,
+    transitionToSeniorMode, transitionTargetYear: (transitionToSeniorMode ? (user?.yearGroup === 'TY' ? 'TY' : '5th') : undefined) as 'TY' | '5th' | undefined,
     handleProgressUpdate,
     setSettingsOpen, setPassportOpen, setChangeSubjectsOpen, setNorthStarEditOpen,
     setUnlockedAvatarSeeds,

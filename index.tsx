@@ -31,7 +31,7 @@ if (Capacitor.isNativePlatform()) {
 // the WebView. vite-plugin-pwa is configured with injectRegister:false so this
 // is the single registration site. (audit 2026-06-01, item 12)
 if (!Capacitor.isNativePlatform()) {
-  // @ts-ignore — virtual module provided by vite-plugin-pwa at build time
+  // @ts-expect-error — virtual module provided by vite-plugin-pwa at build time
   import('virtual:pwa-register')
     .then(({ registerSW }) => registerSW({ immediate: true }))
     .catch(() => {});

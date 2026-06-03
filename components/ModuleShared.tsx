@@ -21,7 +21,7 @@ interface HighlightProps {
   theme: ModuleTheme;
 }
 
-export const Highlight = ({ children, description, _theme }: HighlightProps) => {
+export const Highlight = ({ children, description, theme: _theme }: HighlightProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
@@ -103,7 +103,7 @@ interface ReadingSectionProps {
   theme: ModuleTheme;
 }
 
-export const ReadingSection = ({ title, eyebrow, icon: Icon, children, _theme }: ReadingSectionProps) => (
+export const ReadingSection = ({ title, eyebrow, icon: Icon, children, theme: _theme }: ReadingSectionProps) => (
   <article className="relative">
     <header className="mb-14 relative">
       <MotionDiv
@@ -164,7 +164,7 @@ interface MicroCommitmentProps {
   northStarNudge?: string;
 }
 
-export const MicroCommitment = ({ children, _theme, northStarNudge }: MicroCommitmentProps) => (
+export const MicroCommitment = ({ children, theme: _theme, northStarNudge }: MicroCommitmentProps) => (
   <MotionDiv
     initial={{ opacity: 0, y: 12 }}
     whileInView={{ opacity: 1, y: 0 }}

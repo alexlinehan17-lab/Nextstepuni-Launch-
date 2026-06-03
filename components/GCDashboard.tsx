@@ -38,8 +38,8 @@ interface GCDashboardProps {
 
 // ─── Shimmer skeleton ────────────────────────────────────────────────────────
 
-const SkeletonPulse: React.FC<{ className?: string }> = ({ className = '' }) => (
-  <div className={`rounded-xl bg-zinc-200 dark:bg-zinc-800 animate-[shine_1.5s_ease-in-out_infinite] ${className}`} />
+const SkeletonPulse: React.FC<{ className?: string; style?: React.CSSProperties }> = ({ className = '', style }) => (
+  <div className={`rounded-xl bg-zinc-200 dark:bg-zinc-800 animate-[shine_1.5s_ease-in-out_infinite] ${className}`} style={style} />
 );
 
 const LoadingSkeleton: React.FC = () => (

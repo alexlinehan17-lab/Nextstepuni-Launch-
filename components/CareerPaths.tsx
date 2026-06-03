@@ -16,7 +16,7 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, X, BookOpen, RotateCcw, Star, GraduationCap, ChevronDown, ExternalLink, ThumbsUp, ThumbsDown, Compass } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, X, BookOpen, RotateCcw, Star, GraduationCap, ChevronDown, ExternalLink, ThumbsUp, ThumbsDown, Compass, type LucideIcon } from 'lucide-react';
 import { useCareerPaths } from '../hooks/useCareerPaths';
 import { CAREERS } from '../careerPathsData';
 import { type CareerCard, type CareerField } from '../types/careerPaths';
@@ -58,7 +58,7 @@ const Label: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <p className="text-[10px] font-bold uppercase tracking-[0.16em] mb-3" style={{ color: 'rgba(255,255,255,0.7)' }}>{children}</p>
 );
 
-const WorldButton: React.FC<{ label: string; icon?: React.ElementType; onClick: () => void; wd: ColorWorld }> = ({ label, icon: Icon, onClick, wd }) => (
+const WorldButton: React.FC<{ label: string; icon?: LucideIcon; onClick: () => void; wd: ColorWorld }> = ({ label, icon: Icon, onClick, wd }) => (
   <button onClick={onClick} className="inline-flex items-center gap-2 px-5 py-3 rounded-full text-[14px] font-semibold transition-transform active:translate-y-0.5" style={{ backgroundColor: '#fff', color: wd.deep, boxShadow: '0 4px 0 0 rgba(0,0,0,0.18)' }}>
     {label} {Icon && <Icon size={16} />}
   </button>

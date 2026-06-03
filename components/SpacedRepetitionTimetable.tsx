@@ -153,7 +153,7 @@ const StudyBlockCard: React.FC<{
   strategyHint?: SubjectStrategyHint;
   isToday?: boolean;
   onStudyNow?: () => void;
-}> = ({ block, completed, skipped, onToggle, _bargainPts, strategyHint, isToday, onStudyNow }) => {
+}> = ({ block, completed, skipped, onToggle, bargainPts: _bargainPts, strategyHint, isToday, onStudyNow }) => {
   const _color = getSubjectColor(block.subjectName);
   const typeConfig = SESSION_TYPE_CONFIG[block.sessionType];
 
@@ -293,7 +293,7 @@ const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> =
 
 // ─── Main Component ─────────────────────────────────────────────────────────
 
-const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, uid, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, points = 0, onSpendPoints, _onOpenJournal, skippedSessions = [], onStudyNow, _onBlockDurationChange, schoolEvents = [] }) => {
+const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, uid, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, points = 0, onSpendPoints, onOpenJournal: _onOpenJournal, skippedSessions = [], onStudyNow, onBlockDurationChange: _onBlockDurationChange, schoolEvents = [] }) => {
   // ─── Curriculum flags (Phase 2 JC support) ────────────────────────────────
   // isJunior: branch points-vs-bands UI and priority algorithm.
   // isPreExamJunior: 1st/2nd-year JC users have no imminent exam; we frame

@@ -118,7 +118,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   userProgress,
   allCourses,
   pointsReload,
-  _streak,
+  streak: _streak,
   onBack,
   onStrategyMasteryRecompute,
   strategyMastery,

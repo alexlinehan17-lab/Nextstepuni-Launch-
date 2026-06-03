@@ -31,7 +31,7 @@ export type Choice = {
   effects: Partial<GameState>;
   nextSceneId: string;
   moduleLink?: ModuleLink;
-  requires?: { stat: StatKey; min: number }[];
+  requires?: { stat: StatKey; min?: number; max?: number }[];
   requiresVisited?: string[];
   flavor?: string;
 };

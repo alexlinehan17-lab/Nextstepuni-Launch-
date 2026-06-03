@@ -1117,7 +1117,8 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                     {(() => {
                       const priority = subjectPriorities.find(p => p.subjectName === m.subject);
                       if (!priority) return null;
-                      const label = priority.sessions >= 3 ? 'High' : priority.sessions >= 2 ? 'Med' : 'Low';
+                      const maxScore = Math.max(...subjectPriorities.map(p => p.priorityScore));
+                      const label = priority.priorityScore >= maxScore * 0.66 ? 'High' : priority.priorityScore >= maxScore * 0.33 ? 'Med' : 'Low';
                       const color = label === 'High' ? '#C4873B' : label === 'Med' ? COLORS.accent : '#A8A29E';
                       return <span className="ml-1.5 text-[9px] font-bold" style={{ color }}>{label} priority</span>;
                     })()}

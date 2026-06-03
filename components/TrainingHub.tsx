@@ -71,10 +71,10 @@ interface TrainingHubProps {
 }
 
 const TrainingHub: React.FC<TrainingHubProps> = ({
-  gamificationState, streak, _pointsBalance, northStar, onBack, onOpenJourney,
-  userProgress, allCourses, strategyMastery, weeklyChallenge, pointsReload, onGoToStudy, _uid,
+  gamificationState, streak, pointsBalance: _pointsBalance, northStar, onBack, onOpenJourney,
+  userProgress, allCourses, strategyMastery, weeklyChallenge, pointsReload, onGoToStudy, uid: _uid,
 }) => {
-  const { currentRank, nextRank, rankProgress, totalPointsEarned, unlockedAchievements, weeklyGoalProgress, _weekStartDate, personalBests } = gamificationState;
+  const { currentRank, nextRank, rankProgress, totalPointsEarned, unlockedAchievements, weeklyGoalProgress, weekStartDate: _weekStartDate, personalBests } = gamificationState;
   const weekNumber = getWeekNumber();
   const weeklyGoals = generateWeeklyGoals(currentRank.id, weekNumber);
   const RankIcon = RANK_ICONS[currentRank.icon] || Star;

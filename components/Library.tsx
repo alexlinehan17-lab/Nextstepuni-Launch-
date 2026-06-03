@@ -181,7 +181,7 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
   );
 };
 
-export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse, onBack, userProgress, _northStar, _studentProfile, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onGoToDashboard, onGoToLearningPaths, onGoToInnovationZone, onGoToJourney, onChangeSubjects, completedCount = 0, totalCount = 0 }) => {
+export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse, onBack, userProgress, northStar: _northStar, studentProfile: _studentProfile, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onGoToDashboard, onGoToLearningPaths, onGoToInnovationZone, onGoToJourney, onChangeSubjects, completedCount = 0, totalCount = 0 }) => {
   const settingsCtx = useSettingsContext();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [themePickerOpen, setThemePickerOpen] = useState(false);

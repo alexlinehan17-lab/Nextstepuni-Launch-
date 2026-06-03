@@ -75,7 +75,7 @@ const DAY_SHORTS: Record<string, string> = {
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
-const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ _user, existingProfile, onComplete, onClose }) => {
+const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, existingProfile, onComplete, onClose }) => {
   const isEditMode = !!existingProfile;
 
   const [step, setStep] = useState<Step>(isEditMode ? 2 : 1);

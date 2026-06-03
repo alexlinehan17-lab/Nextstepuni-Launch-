@@ -75,7 +75,7 @@ const TaperPlanner = () => {
         1: { volume: 10, intensity: 20, activity: 'Strategy Review' },
     };
     const taperKey = Object.keys(taperData).reverse().find(d => parseInt(d) >= day) || Object.keys(taperData)[0];
-    const currentData = taperData[day as keyof typeof taperData] || taperData[taperKey as keyof typeof taperData];
+    const currentData = taperData[day as keyof typeof taperData] || taperData[taperKey as unknown as keyof typeof taperData];
 
     return (
         <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>

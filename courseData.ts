@@ -960,6 +960,7 @@ export const ALL_COURSES: CourseData[] = COURSE_DEFINITIONS.map(course => {
     gradient: 'bg-gradient-to-tr from-zinc-50 via-white to-zinc-50',
     accentColor: 'text-zinc-700',
     auraColor: 'hover:shadow-[0_20px_50px_rgba(71,85,105,0.15)]',
+    pillBgColor: 'bg-zinc-700',
   };
   return {
     ...course,

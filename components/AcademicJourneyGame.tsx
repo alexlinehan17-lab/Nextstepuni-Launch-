@@ -497,7 +497,7 @@ const ChoiceButton: React.FC<{
     onChoose: (choice: Choice) => void; disabled?: boolean; chosen?: boolean;
     index?: number; phase: Phase;
 }> = ({ choice, gameState, visitedScenes, onChoose, disabled, chosen, index = 0, phase }) => {
-    const statRequirementsMet = !choice.requires || choice.requires.every(r => gameState[r.stat] >= r.min);
+    const statRequirementsMet = !choice.requires || choice.requires.every(r => (r.min === undefined || gameState[r.stat] >= r.min) && (r.max === undefined || gameState[r.stat] <= r.max));
     const visitRequirementsMet = !choice.requiresVisited || choice.requiresVisited.every(id => visitedScenes.includes(id));
     const isLocked = !statRequirementsMet || !visitRequirementsMet;
     const letter = String.fromCharCode(65 + index);
@@ -517,7 +517,7 @@ const ChoiceButton: React.FC<{
                         <p className="text-[14px] italic" style={{ color: INK_MUTE }}>{choice.text}</p>
                         {choice.requires && (
                             <p className="text-[10px] mt-1 uppercase tracking-[0.15em] font-semibold" style={{ color: INK_MUTE }}>
-                                Requires: {choice.requires.map(r => `${STAT_LABELS[r.stat]} ${r.min}+`).join(', ')}
+                                Requires: {choice.requires.map(r => `${STAT_LABELS[r.stat]} ${r.max !== undefined ? `≤${r.max}` : `${r.min}+`}`).join(', ')}
                             </p>
                         )}
                     </div>
@@ -714,8 +714,8 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
         const choices = item.scene.choices || [];
         for (const alt of choices) {
             if (alt.text !== item.choiceText && alt.requires) {
-                const reqText = alt.requires.map(r => `${STAT_LABELS[r.stat]} ${r.min}+`).join(', ');
-                const meetsReqs = alt.requires.every(r => gameState[r.stat] >= r.min);
+                const reqText = alt.requires.map(r => `${STAT_LABELS[r.stat]} ${r.max !== undefined ? `≤${r.max}` : `${r.min}+`}`).join(', ');
+                const meetsReqs = alt.requires.every(r => (r.min === undefined || gameState[r.stat] >= r.min) && (r.max === undefined || gameState[r.stat] <= r.max));
                 if (!meetsReqs) pathsNotTaken.push({ sceneTitle: item.scene.title, choiceText: alt.text, requirement: reqText });
             }
         }

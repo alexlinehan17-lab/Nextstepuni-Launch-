@@ -822,7 +822,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Pick one that feels like you. You can change it later.</p>
                     <div className="grid grid-cols-4 gap-3 mb-6">
                       {AVATAR_SEEDS.map(seed => (
-                        <button key={seed} type="button" onClick={() => setAvatar(seed)} className={`rounded-xl aspect-square p-1 transition-all ${selectedAvatar === seed ? 'ring-2 ring-offset-2 bg-[#FDEEDF]' : 'hover:ring-1 hover:ring-zinc-300 bg-white'}`} style={selectedAvatar === seed ? { ringColor: '#F26B1F', borderColor: '#F26B1F', border: '2px solid #F26B1F' } : { border: '2px solid #d0cdc8' }}>
+                        <button key={seed} type="button" onClick={() => setAvatar(seed)} className={`rounded-xl aspect-square p-1 transition-all ${selectedAvatar === seed ? 'ring-2 ring-offset-2 bg-[#FDEEDF]' : 'hover:ring-1 hover:ring-zinc-300 bg-white'}`} style={selectedAvatar === seed ? { borderColor: '#F26B1F', border: '2px solid #F26B1F' } : { border: '2px solid #d0cdc8' }}>
                           <img src={getAvatarUrl(seed)} alt={seed} className="w-full h-full rounded-lg" />
                         </button>
                       ))}

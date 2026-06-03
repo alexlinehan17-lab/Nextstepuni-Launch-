@@ -23,7 +23,7 @@ interface GiftButtonProps {
 }
 
 const GiftButton: React.FC<GiftButtonProps> = ({
-  _senderUid, senderName, targetUid, targetName, school,
+  senderUid: _senderUid, senderName, targetUid, targetName, school,
   pointsBalance, canSendGiftToday, sendGift, onPointsReload,
 }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);

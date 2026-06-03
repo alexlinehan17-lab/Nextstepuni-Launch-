@@ -23,7 +23,13 @@ jobs:
       - name: Lint
         run: npm run lint:ci
 
-      - name: Type check & Build
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Test
+        run: npm test
+
+      - name: Build
         run: npm run build
         env:
           GEMINI_API_KEY: 'dummy-key-for-ci'

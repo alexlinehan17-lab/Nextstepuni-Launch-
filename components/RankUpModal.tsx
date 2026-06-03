@@ -118,7 +118,7 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
             <MotionDiv
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1, duration: 0.5, ease: [0.16, 1, 0.3, 1] as number[] }}
+              transition={{ delay: 0.1, duration: 0.5, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
               style={{
                 width: '100%',
                 maxWidth: 1240,
@@ -258,7 +258,7 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
             <MotionDiv
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.4, ease: [0.16, 1, 0.3, 1] as number[] }}
+              transition={{ delay: 0.8, duration: 0.4, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
               style={{ marginTop: 64, width: '100%', maxWidth: 600 }}
             >
               <div
@@ -502,7 +502,7 @@ const NumberNodeSvg: React.FC<NumberNodeSvgProps> = ({ number, isCurrent, isLege
         <motion.g
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay, duration: 0.35, ease: [0.34, 1.56, 0.64, 1] as number[] }}
+          transition={{ delay, duration: 0.35, ease: [0.34, 1.56, 0.64, 1] as [number, number, number, number] }}
         >
           <circle r={NODE_R} cx={0} cy={0} fill={TERRACOTTA} />
           <text
@@ -541,7 +541,7 @@ const NumberNodeSvg: React.FC<NumberNodeSvgProps> = ({ number, isCurrent, isLege
           fill={TERRACOTTA}
           initial={{ scale: 1 }}
           animate={{ scale: [1, 1.15, 1] }}
-          transition={{ delay: 0.7, duration: 0.6, ease: [0.34, 1.56, 0.64, 1] as number[] }}
+          transition={{ delay: 0.7, duration: 0.6, ease: [0.34, 1.56, 0.64, 1] as [number, number, number, number] }}
         />
         <text
           x="0"
@@ -611,7 +611,7 @@ const FlagSvg: React.FC<{ isLegendCelebration: boolean }> = ({ isLegendCelebrati
       preserveAspectRatio="xMidYMid meet"
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: LEGEND_FLAG_DELAY, duration: 0.55, ease: [0.16, 1, 0.3, 1] as number[] }}
+      transition={{ delay: LEGEND_FLAG_DELAY, duration: 0.55, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
     />
   ) : (
     <image

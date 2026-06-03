@@ -40,7 +40,7 @@ interface SettingsModalProps {
 
 const SettingsModal: React.FC<SettingsModalProps> = ({
   isOpen, onClose, settings, updateSetting,
-  unlockedAvatarSeeds = [], _unlockedThemes = [], _unlockedCardStyles = [],
+  unlockedAvatarSeeds = [], unlockedThemes: _unlockedThemes = [], unlockedCardStyles: _unlockedCardStyles = [],
   userName, userSchool, userYearGroup, onChangeSubjects, onResetNorthStar, onAdvanceYear, onLogout,
 }) => {
   useModal(isOpen, onClose);

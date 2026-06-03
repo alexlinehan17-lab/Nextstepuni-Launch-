@@ -151,7 +151,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
   const [activeTab, setActiveTab] = useState<'overview' | 'what-if'>('overview');
   const [showGains, setShowGains] = useState(true);
   const [simSubjects, setSimSubjects] = useState<SimSubject[]>([]);
-  const saveTimerRef = useRef<ReturnType<typeof setTimeout>>();
+  const saveTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
   // Shared data from InnovationDataContext
   const { mockResults: mockResultsCtx, futureFinderPicks: ffPicks } = useInnovationData();

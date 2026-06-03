@@ -19,7 +19,7 @@ interface KudosButtonProps {
 }
 
 const KudosButton: React.FC<KudosButtonProps> = ({
-  _senderUid, senderName, targetUid, school,
+  senderUid: _senderUid, senderName, targetUid, school,
   canSendKudosTo, sendKudos,
 }) => {
   const [pickerOpen, setPickerOpen] = useState(false);

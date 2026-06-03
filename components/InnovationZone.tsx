@@ -410,7 +410,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                 if (isCompleted || isSkipped) return null;
                 return { blockId, fullId, subjectName: block.subjectName, sessionType: block.sessionType };
             })
-            .filter((b): b is { blockId: string; fullId: string; subjectName: string; sessionType: string } => b !== null);
+            .filter((b): b is { blockId: string; fullId: string; subjectName: string; sessionType: 'new-learning' | 'practice' | 'revision' } => b !== null);
     }, [subjectProfile, timetableCompletions, earnedRest.skippedSessions]);
 
     // Curriculum level — used by the tools array below for curriculum-aware

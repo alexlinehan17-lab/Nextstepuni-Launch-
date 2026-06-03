@@ -9,7 +9,7 @@ import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
 import { type UserProgress, type NorthStar, type IslandState } from '../types';
 import { type StreakData } from './useStreak';
-import { type PointsData } from './usePoints';
+import { type PointsData } from '../contexts/ProgressContext';
 import {
   type GamificationState,
   type GamificationFirestoreData,

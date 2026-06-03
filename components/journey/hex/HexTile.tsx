@@ -54,7 +54,7 @@ const HexTile: React.FC<HexTileProps> = ({
     };
   }, [cloned]);
 
-  const [wx, wz] = useMemo(() => hexToWorld(q, r, radius), [q, r, radius]);
+  const [wx, wz] = useMemo(() => hexToWorld(q, r), [q, r]);
   const ref = useRef<THREE.Group>(null);
   const startTime = useRef(-1);
   const [hasAnimated, setHasAnimated] = useState(false);

@@ -51,7 +51,7 @@ interface StrategyPickerStepProps {
 }
 
 const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
-  _learnedStrategyIds,
+  learnedStrategyIds: _learnedStrategyIds,
   autoTrackedIds,
   onContinue,
   onSkip,

@@ -51,7 +51,7 @@ const NarrativeSwitcher = () => {
       good: 'bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800/50',
     };
 
-    const renderSequence = (steps: typeof contamination, active: boolean) => (
+    const renderSequence = (steps: typeof contamination | typeof redemption, active: boolean) => (
       <div className="space-y-3">
         {steps.map((step, i) => (
           <motion.div
