@@ -11,21 +11,24 @@
  * ranked by INTEREST FIT (Pearson correlation, O*NET's method), each annotated
  * with an independent points-REACH badge. Fit is never altered by points.
  */
-import React, { useMemo, useState, useEffect } from 'react';
+import React, { useMemo, useState, useEffect, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { ArrowRight, ArrowLeft, RotateCcw, ExternalLink, Compass, Info } from 'lucide-react';
+import { ArrowLeft, Compass, Info, X } from 'lucide-react';
 import { COLORS } from '../design/tokens';
-import { useFutureFinderRevamped } from '../hooks/useFutureFinderRevamped';
+import { useFutureFinderRevamped, type FutureFinderRevampedState } from '../hooks/useFutureFinderRevamped';
 import {
   buildStudentProfile, codeFromProfile, scoreCourseFit,
   RIASEC_LETTERS, RIASEC_LABELS, WORK_VALUE_LABELS,
   type RiasecLetter, type WorkValue, type CourseFitResult,
 } from './futureFinderRiasec';
 import { RIASEC_ITEMS, VALUE_ITEMS, riasecItems } from './futureFinderRiasecItems';
-import { CAO_COURSES, INSTITUTIONS, getCoursePageUrl, type CAOCourse } from './futureFinderData';
+import { CAO_COURSES, type CAOCourse } from './futureFinderData';
 import { COURSE_RIASEC } from './futureFinderRiasecData';
 import { type StudentSubjectProfile, getPointsForGrade, LC_SUBJECTS } from './subjectData';
+import FutureFinderResults, { type DisplayResult, type SortMode } from './FutureFinderResults';
+import { riasecToRecommendation } from './futureFinderRevampedAdapter';
 
 const SCALE_INTEREST = ['Strongly dislike', 'Dislike', 'Neutral', 'Like', 'Strongly like'];
 const SCALE_VALUE = ['Not important', 'A little', 'Neutral', 'Important', 'Very important'];
@@ -47,15 +50,6 @@ function computeCurrentPoints(profile: StudentSubjectProfile): number {
     .reduce((sum, p) => sum + p, 0);
 }
 
-const REACH_META: Record<string, { label: string; color: string; bg: string }> = {
-  safety: { label: 'Comfortable on points', color: '#1F5F3E', bg: '#E8F2EC' },
-  match: { label: 'On target', color: '#2A5F8F', bg: '#E6EEF7' },
-  reach: { label: 'A stretch', color: '#8C5A12', bg: '#FBF1E0' },
-  'out-of-reach': { label: 'Big points stretch', color: '#8a5a5a', bg: '#F3ECEC' },
-  open: { label: 'No points race', color: '#1F5F3E', bg: '#E8F2EC' },
-};
-const FIT_LABEL: Record<string, string> = { best: 'Excellent fit', great: 'Strong fit', good: 'Good fit', none: '' };
-
 const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProfile; studentSubjects?: string[] }> = ({ uid, profile }) => {
   const { saved, isLoaded, persist, reset } = useFutureFinderRevamped(uid);
   const [phase, setPhase] = useState<'intro' | 'quiz' | 'results'>('intro');
@@ -63,6 +57,11 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
   const [responses, setResponses] = useState<Record<string, number>>({});
   const [valueResponses, setValueResponses] = useState<Record<string, number>>({});
   const [idx, setIdx] = useState(0);
+  // Results-UI state, seeded from the persisted revamped namespace.
+  const [savedPicks, setSavedPicks] = useState<string[]>([]);
+  const [compareCodes, setCompareCodes] = useState<string[]>([]);
+  const [sortMode, setSortMode] = useState<SortMode>('match');
+  const [regionFilter, setRegionFilter] = useState<string>('');
 
   // Re-show saved results on revisit.
   useEffect(() => {
@@ -70,6 +69,8 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
     setResponses(saved.responses ?? {});
     setValueResponses(saved.valueResponses ?? {});
     setLength(saved.length ?? 'full');
+    setSavedPicks(saved.picks ?? []);
+    setCompareCodes(saved.compareCodes ?? []);
     setPhase('results');
   }, [isLoaded, saved]);
 
@@ -103,7 +104,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
     if (q.kind === 'interest') setResponses((r) => ({ ...r, [q.id]: val }));
     else setValueResponses((r) => ({ ...r, [q.id]: val }));
     if (idx + 1 >= questions.length) {
-      const next = { length, responses: q.kind === 'interest' ? { ...responses, [q.id]: val } : responses, valueResponses: q.kind === 'value' ? { ...valueResponses, [q.id]: val } : valueResponses, completedAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
+      const next: FutureFinderRevampedState = { length, responses: q.kind === 'interest' ? { ...responses, [q.id]: val } : responses, valueResponses: q.kind === 'value' ? { ...valueResponses, [q.id]: val } : valueResponses, picks: savedPicks, compareCodes, completedAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
       persist(next);
       setPhase('results');
     } else {
@@ -111,7 +112,48 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
     }
   };
 
-  const retake = () => { reset(); setResponses({}); setValueResponses({}); setIdx(0); setPhase('intro'); };
+  const retake = () => { reset(); setResponses({}); setValueResponses({}); setSavedPicks([]); setCompareCodes([]); setSortMode('match'); setRegionFilter(''); setIdx(0); setPhase('intro'); };
+
+  // Full-state merge to the revamped namespace — mirrors the original's
+  // toggleSavedPick/toggleCompare, but writing futureFinderRevamped.
+  const persistResultsState = useCallback((picks: string[], compares: string[]) => {
+    persist({
+      length: saved?.length ?? length,
+      responses: saved?.responses ?? responses,
+      valueResponses: saved?.valueResponses ?? valueResponses,
+      picks,
+      compareCodes: compares,
+      completedAt: saved?.completedAt ?? new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    });
+  }, [persist, saved, length, responses, valueResponses]);
+
+  const onToggleSave = useCallback((code: string) => {
+    setSavedPicks((prev) => {
+      const next = prev.includes(code) ? prev.filter((c) => c !== code) : [...prev, code];
+      persistResultsState(next, compareCodes);
+      return next;
+    });
+  }, [compareCodes, persistResultsState]);
+
+  const onToggleCompare = useCallback((r: DisplayResult) => {
+    setCompareCodes((prev) => {
+      let next: string[];
+      if (prev.includes(r.course.code)) next = prev.filter((c) => c !== r.course.code);
+      else if (prev.length >= 3) return prev;
+      else next = [...prev, r.course.code];
+      persistResultsState(savedPicks, next);
+      return next;
+    });
+  }, [savedPicks, persistResultsState]);
+
+  const onRemoveCompare = useCallback((code: string) => {
+    setCompareCodes((prev) => {
+      const next = prev.filter((c) => c !== code);
+      persistResultsState(savedPicks, next);
+      return next;
+    });
+  }, [savedPicks, persistResultsState]);
 
   if (!isLoaded) return <div className="w-full max-w-2xl mx-auto py-16 text-center text-sm text-zinc-400">Loading…</div>;
 
@@ -178,6 +220,21 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
   // ── RESULTS ───────────────────────────────────────────────────
   const a = analysis;
   const topTypes = [...RIASEC_LETTERS].sort((x, y) => a.studentProfile[y] - a.studentProfile[x]).slice(0, 3).filter((l) => a.studentProfile[l] > 0);
+
+  // Map the RIASEC-scored courses into the shared results UI's shape, then
+  // apply the SAME sort/region filtering the original Future Finder does
+  // (FutureFinder.tsx displayResults memo): top 30 → region → sort → top 10.
+  const allResults: DisplayResult[] = a.shown.map(({ course, fit }) =>
+    riasecToRecommendation(course, fit, topTypes, a.studentValues));
+  let displayResults = allResults.slice(0, 30);
+  if (regionFilter) displayResults = displayResults.filter((r) => r.course.region === regionFilter);
+  if (sortMode === 'points') displayResults = [...displayResults].sort((x, y) => x.course.typicalPoints - y.course.typicalPoints);
+  else if (sortMode === 'institution') displayResults = [...displayResults].sort((x, y) => x.course.institution.localeCompare(y.course.institution));
+  displayResults = displayResults.slice(0, 10);
+  const compareCourses = compareCodes
+    .map((code) => allResults.find((r) => r.course.code === code))
+    .filter((r): r is DisplayResult => !!r);
+
   return (
     <div className="w-full max-w-2xl mx-auto pb-12">
       {/* profile read-back */}
@@ -196,34 +253,22 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
         <p className="text-[11.5px] text-zinc-400 mt-2 italic">A snapshot, not a verdict — these are directions worth exploring.</p>
       </div>
 
-      <div className="flex items-center justify-between mb-3">
-        <p className="text-[13px] font-semibold text-zinc-700 dark:text-zinc-300">Courses ranked by interest fit</p>
-        <button onClick={retake} className="inline-flex items-center gap-1.5 text-[12px] font-semibold text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200"><RotateCcw size={13} /> Retake</button>
-      </div>
-
-      <div className="space-y-2.5">
-        {a.shown.map(({ course, fit }) => {
-          const reach = REACH_META[fit.reach];
-          const inst = INSTITUTIONS[course.institution] || course.institution;
-          return (
-            <a key={course.code} href={getCoursePageUrl(course)} target="_blank" rel="noreferrer" className="block rounded-xl border-2 border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-4 hover:border-zinc-300 dark:hover:border-zinc-600 transition-colors">
-              <div className="flex items-start justify-between gap-3">
-                <div className="min-w-0 flex-1">
-                  <p className="text-[14.5px] font-semibold text-zinc-900 dark:text-white leading-tight">{course.title}</p>
-                  <p className="text-[12px] text-zinc-500 dark:text-zinc-400">{inst} · Level {course.level}{course.typicalPoints ? ` · ~${course.typicalPoints} pts` : ' · Apprenticeship/PLC'}</p>
-                </div>
-                <ExternalLink size={14} className="text-zinc-300 shrink-0 mt-1" />
-              </div>
-              <div className="flex flex-wrap items-center gap-1.5 mt-2.5">
-                <span className="text-[11px] font-bold px-2 py-0.5 rounded-full" style={{ color: '#fff', backgroundColor: COLORS.accent }}>{fit.matchPct}% match · {FIT_LABEL[fit.fitBucket]}</span>
-                <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full" style={{ color: reach.color, backgroundColor: reach.bg }}>{reach.label}</span>
-                {course.careerPaths.slice(0, 2).map((cp) => <span key={cp} className="text-[11px] text-zinc-500 dark:text-zinc-400 px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800">{cp}</span>)}
-              </div>
-            </a>
-          );
-        })}
-        {a.shown.length === 0 && <p className="text-[13px] text-zinc-500 py-6 text-center">No strong matches yet — try retaking with a few more honest answers.</p>}
-      </div>
+      <FutureFinderResults
+        results={displayResults}
+        autoPoints={studentPoints}
+        sortMode={sortMode}
+        onSortChange={setSortMode}
+        regionFilter={regionFilter}
+        onRegionFilterChange={setRegionFilter}
+        savedPicks={savedPicks}
+        compareCourses={compareCourses}
+        onToggleSave={onToggleSave}
+        onToggleCompare={onToggleCompare}
+        onRemoveCompare={onRemoveCompare}
+        onRetake={retake}
+        explainer={RiasecExplainerModal}
+        scoreBreakdownLabels={{ interest: 'Interest fit', values: 'Values fit', feasibility: 'Points reach' }}
+      />
 
       <p className="text-[11px] text-zinc-400 mt-5 leading-relaxed">Interest fit is computed purely from your interests (Pearson correlation on the RIASEC profile, the O*NET method) and is never changed by points. The points badge is a separate, honest signal — a great-fit course that’s a stretch on points is shown as exactly that. Points move year to year; check current cutoffs.</p>
     </div>
@@ -231,3 +276,112 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
 };
 
 export default FutureFinderRevamped;
+
+// ── RIASEC scoring explainer modal ─────────────────────────────────────────
+// Replaces the original tool's ScoringExplainerModal when opened from the
+// shared results UI's "How this works". Explains the RIASEC/Pearson interest-
+// fit method (O*NET), what the three score bars mean, and why points-reach is
+// kept as a SEPARATE axis that never lowers a course's interest match.
+function RiasecExplainerModal({ onClose }: { onClose: () => void }) {
+  // Portalled to document.body so the modal escapes the results' Framer
+  // transform context (otherwise `position: fixed` anchors to the transformed
+  // ancestor and the modal spills off-screen).
+  return createPortal(
+    <MotionDiv
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-[200] flex items-center justify-center bg-black/55 backdrop-blur-sm p-4"
+      onClick={onClose}
+    >
+      <MotionDiv
+        initial={{ opacity: 0, scale: 0.96, y: 12 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        exit={{ opacity: 0, scale: 0.96, y: 12 }}
+        transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] as number[] }}
+        className="bg-[#FAFBF6] dark:bg-zinc-900 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[6px_6px_0_0_#1A1A1A] dark:shadow-[6px_6px_0_0_#3f3f46] max-w-xl w-full max-h-[90vh] flex flex-col overflow-hidden"
+        onClick={(e: React.MouseEvent) => e.stopPropagation()}
+      >
+        {/* Header (fixed) */}
+        <div className="flex items-start justify-between p-6 pb-4 shrink-0">
+          <div className="flex items-start gap-3 min-w-0">
+            <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-[rgba(242,107,31,0.12)] shrink-0">
+              <Compass size={20} className="text-[#F26B1F]" />
+            </div>
+            <div className="min-w-0">
+              <h2 className="font-serif text-xl font-bold text-[#1A1A1A] dark:text-white">How your matches are calculated</h2>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">Interest fit, the RIASEC way</p>
+            </div>
+          </div>
+          <button
+            onClick={onClose}
+            className="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-black/5 dark:hover:bg-white/10 transition-colors shrink-0"
+            aria-label="Close"
+          >
+            <X size={18} className="text-zinc-500" />
+          </button>
+        </div>
+
+        {/* Body (scrolls when content exceeds the viewport-capped modal) */}
+        <div className="px-6 pb-6 space-y-5 overflow-y-auto flex-1 min-h-0">
+          {/* Interest fit */}
+          <section>
+            <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">The match percentage</p>
+            <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+              <p className="text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed mb-2">
+                Your answers build a six-part interest profile using the <span className="font-bold">Holland RIASEC model</span> (Realistic, Investigative, Artistic, Social, Enterprising, Conventional) — the same framework Irish guidance services use.
+              </p>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                Each course has its own RIASEC profile. The match % compares the <span className="font-bold">shape</span> of your profile against the course's (a Pearson correlation — O*NET's method), so it rewards courses that lean the same way you do, not just ones with high scores everywhere.
+              </p>
+            </div>
+          </section>
+
+          {/* The three bars */}
+          <section>
+            <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">The three bars</p>
+            <div className="space-y-2.5">
+              <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+                <p className="text-sm font-bold text-[#1A1A1A] dark:text-white mb-1">Interest fit</p>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">How closely the course's interest profile matches yours.</p>
+              </div>
+              <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+                <p className="text-sm font-bold text-[#1A1A1A] dark:text-white mb-1">Values fit</p>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">Whether the things you said matter to you in work (achievement, independence, helping people, and so on) line up with the field.</p>
+              </div>
+              <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
+                <p className="text-sm font-bold text-[#1A1A1A] dark:text-white mb-1">Points reach</p>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">How comfortable the course's typical points are given your current grades — a separate signal, shown so you can see it honestly.</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Points stay separate */}
+          <section className="rounded-xl p-3" style={{ backgroundColor: 'rgba(242,107,31,0.10)' }}>
+            <p className="text-xs text-[#8C3A0E] dark:text-[#FDEEDF] leading-relaxed">
+              <span className="font-bold">Points never lower your interest match.</span> Reach is kept as its own axis, so a course that fits you perfectly but is a points stretch is shown as exactly that — a great fit that's a stretch — rather than being quietly demoted.
+            </p>
+          </section>
+
+          {/* Snapshot, not a verdict */}
+          <section>
+            <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed italic">
+              This is a snapshot of your interests right now, not a verdict. It's worth re-taking, and it's best used alongside your guidance counsellor. Points move year to year — always check current cutoffs.
+            </p>
+          </section>
+        </div>
+
+        {/* Footer CTA (fixed below the scrolling body) */}
+        <div className="px-6 pb-6 pt-2 shrink-0 border-t border-black/[0.04] dark:border-white/[0.06]">
+          <button
+            onClick={onClose}
+            className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
+          >
+            Got it
+          </button>
+        </div>
+      </MotionDiv>
+    </MotionDiv>,
+    document.body
+  );
+}

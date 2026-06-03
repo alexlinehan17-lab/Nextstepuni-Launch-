@@ -17,6 +17,10 @@ export interface FutureFinderRevampedState {
   responses: Record<string, number>;
   /** work-value item id -> 1..5 (not important→very important). */
   valueResponses: Record<string, number>;
+  /** Saved-pick course codes (the shared results UI's "Save to Picks"). */
+  picks?: string[];
+  /** Course codes selected for the compare view. */
+  compareCodes?: string[];
   completedAt: string;
   updatedAt: string;
 }
