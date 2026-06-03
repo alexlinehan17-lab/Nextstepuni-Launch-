@@ -15,7 +15,7 @@
  *   - IZ active-tool ToolHeader: size=108
  */
 import React from 'react';
-import { Waypoints, Highlighter, Users, Briefcase, Telescope, type LucideIcon } from 'lucide-react';
+import { Waypoints, Highlighter, Users, Briefcase, Telescope, Sunrise, type LucideIcon } from 'lucide-react';
 
 export type ToolIconKey =
   | 'journey'
@@ -32,7 +32,8 @@ export type ToolIconKey =
   | 'command-word-reflex'
   | 'how-they-did-it'
   | 'career-paths'
-  | 'future-finder-revamped';
+  | 'future-finder-revamped'
+  | 'your-possible-life';
 
 interface ToolIconConfig {
   blob: string;
@@ -143,6 +144,13 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     iconScale: 1.0,
     icon: Telescope,
     iconColor: '#A33A63',
+  },
+  'your-possible-life': {
+    blob: '#BCD3E0',
+    blobPath: 'M 6 24 Q -2 52 8 78 Q 24 98 52 94 Q 86 90 94 62 Q 100 30 84 10 Q 60 -4 32 4 Q 12 12 6 24 Z',
+    iconScale: 1.0,
+    icon: Sunrise,
+    iconColor: '#2E6E8E',
   },
 };
 

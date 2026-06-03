@@ -12,7 +12,7 @@ import {
     ArrowLeft,
     Lock, Compass, Target,
     Settings, CalendarDays, Calculator, GitBranch, Rocket,
-    Map, ScanSearch, Dumbbell, Milestone, Waypoints, Highlighter, Users, Briefcase
+    Map, ScanSearch, Dumbbell, Milestone, Waypoints, Highlighter, Users, Briefcase, Sunrise
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -36,6 +36,7 @@ import CatchUpLane from './CatchUpLane';
 import CommandWordReflex from './CommandWordReflex';
 import HowTheyDidIt from './HowTheyDidIt';
 import CareerPaths from './CareerPaths';
+import YourPossibleLife from './YourPossibleLife';
 import { InnovationDataProvider } from '../contexts/InnovationDataContext';
 import { useTopicMastery } from '../hooks/useTopicMastery';
 import { getNotifications } from './gc/gcNotifications';
@@ -84,6 +85,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'command-word-reflex': { themeColor: '#6366F1', eyebrow: 'Technique · Exam skills', subtitle: 'Half of exam technique is reading the question right. Spot the command word in real questions and learn what it’s really asking — and the trap that loses marks.', showHeader: true },
   'how-they-did-it':  { themeColor: '#0E7C6B', eyebrow: 'Mindset · Real stories', subtitle: 'Real people who started where you are — money tight, learning differently, new to the country, first in the family — and the actual moves they made.', showHeader: true },
   'career-paths':     { themeColor: '#0E7C6B', eyebrow: 'Understand · Career discovery', subtitle: 'Real careers — what they pay, the day-to-day, the skills, and the courses that lead there.', showHeader: true },
+  'your-possible-life': { themeColor: '#2E6E8E', eyebrow: 'Understand · Your future', subtitle: 'See the life your effort now could open up — and the bridge from your grades today to get there.', showHeader: true },
 };
 
 interface InnovationZoneProps {
@@ -569,6 +571,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             hoverBorder: 'hover:border-teal-400/50 dark:hover:border-teal-500/40',
             component: <CareerPaths uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} seedMatches={careerSeedMatches} seedMatchStrings={careerSeedStrings} />,
         },
+        {
+            id: 'your-possible-life', title: 'Your Possible Life', description: 'Connect the effort you put in now to the life it could open up.', icon: Sunrise, needsProfile: true,
+            curriculum: 'senior' as const,
+            tag: 'Career Discovery', accentHex: '#2E6E8E', gridClass: 'md:col-span-3',
+            iconBg: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-700 dark:text-sky-300',
+            accentBarColor: 'bg-sky-500', tagBg: 'bg-sky-100 dark:bg-sky-900/30', tagText: 'text-sky-700 dark:text-sky-400',
+            hoverBorder: 'hover:border-sky-400/50 dark:hover:border-sky-500/40',
+            component: subjectProfile ? <YourPossibleLife uid={user!.uid} profile={subjectProfile} /> : null,
+        },
     ];
 
     const [activeFilter, setActiveFilter] = useState<'all' | 'understand' | 'plan' | 'track'>('all');
@@ -589,6 +600,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'how-they-did-it': 'understand',
         'career-paths': 'understand',
         'future-finder-revamped': 'understand',
+        'your-possible-life': 'understand',
     };
 
     // Curriculum gating (Phase 4): JC users only see tools tagged 'both'
