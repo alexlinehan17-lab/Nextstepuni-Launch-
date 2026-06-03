@@ -46,6 +46,7 @@ export const WORLDS = {
   pine: w('#1F6B4A', '#154E36', '#3F8E68'),
   forest: w('#2C5E3F', '#1F472E', '#4C815F'),
   slate: w('#3B4A6B', '#2B3650', '#5E6E92'),
+  cocoa: w('#6E4A36', '#523629', '#8C6A54'),
 } as const;
 
 export type WorldName = keyof typeof WORLDS;

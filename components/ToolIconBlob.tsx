@@ -15,7 +15,7 @@
  *   - IZ active-tool ToolHeader: size=108
  */
 import React from 'react';
-import { Waypoints, Highlighter, Users, type LucideIcon } from 'lucide-react';
+import { Waypoints, Highlighter, Users, Briefcase, type LucideIcon } from 'lucide-react';
 
 export type ToolIconKey =
   | 'journey'
@@ -30,7 +30,8 @@ export type ToolIconKey =
   | 'college-compass'
   | 'catch-up-lane'
   | 'command-word-reflex'
-  | 'how-they-did-it';
+  | 'how-they-did-it'
+  | 'career-paths';
 
 interface ToolIconConfig {
   blob: string;
@@ -122,11 +123,18 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     iconColor: '#4338CA',
   },
   'how-they-did-it': {
-    blob: '#EBD3A6',
+    blob: '#A8D0CE',
     blobPath: 'M 6 24 Q 0 52 10 80 Q 26 98 54 94 Q 88 90 96 60 Q 100 28 82 8 Q 56 -4 30 6 Q 12 14 6 24 Z',
     iconScale: 1.0,
     icon: Users,
-    iconColor: '#7c5414',
+    iconColor: '#0A5B4E',
+  },
+  'career-paths': {
+    blob: '#A8D0CE',
+    blobPath: 'M 8 26 Q 0 50 8 78 Q 22 96 54 96 Q 88 94 96 64 Q 100 32 80 10 Q 56 -2 28 8 Q 12 16 8 26 Z',
+    iconScale: 1.0,
+    icon: Briefcase,
+    iconColor: '#0A5B4E',
   },
 };
 

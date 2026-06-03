@@ -35,6 +35,8 @@ import { runSubjectExplorerMatch, type ClusterMatchResult } from './subjectExplo
 interface FutureFinderProps {
   uid: string;
   profile: StudentSubjectProfile;
+  /** Launch the Career Paths tool, seeded to the student's matched careers. */
+  onOpenCareerPaths?: () => void;
 }
 
 interface FutureFinderData {
@@ -116,7 +118,7 @@ function getMatchLabel(pct: number): string {
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
-const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
+const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile, onOpenCareerPaths }) => {
   // ─── Curriculum flag (Phase 2 JC support) ──────────────────────────────
   // For JC users this tool is rebranded as "Subject Explorer" — same 10-q
   // intent quiz (Q1-Q7 only; Q8-Q10 about study duration / region are CAO-
@@ -365,6 +367,7 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile }) => {
             onSelectCourse={(r) => { setSelectedCourse(r); setPhase('detail'); }}
             onCompare={() => setPhase('compare')}
             onRetake={handleRetake}
+            onOpenCareerPaths={onOpenCareerPaths}
           />
         )}
         {phase === 'detail' && selectedCourse && (
@@ -635,7 +638,7 @@ function QuestionInput({ question, value, onChange }: { question: AssessmentQues
 /** Phase 3: Results */
 function ResultsPhase({
   results, autoPoints, sortMode, onSortChange, regionFilter, onRegionFilterChange,
-  savedPicks, compareCourses, onToggleSave, onToggleCompare, onSelectCourse, onCompare, onRetake,
+  savedPicks, compareCourses, onToggleSave, onToggleCompare, onSelectCourse, onCompare, onRetake, onOpenCareerPaths,
 }: {
   results: RecommendationResult[];
   autoPoints: number;
@@ -650,6 +653,7 @@ function ResultsPhase({
   onSelectCourse: (r: RecommendationResult) => void;
   onCompare: () => void;
   onRetake: () => void;
+  onOpenCareerPaths?: () => void;
 }) {
   const [explainerOpen, setExplainerOpen] = useState(false);
   return (
@@ -678,6 +682,22 @@ function ResultsPhase({
           </button>
         </div>
       </div>
+
+      {onOpenCareerPaths && (
+        <button
+          onClick={onOpenCareerPaths}
+          className="w-full mb-6 flex items-center gap-3 rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 p-4 text-left transition-transform active:translate-y-0.5 hover:shadow-md"
+        >
+          <span className="w-11 h-11 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: '#0E7C6B' }}>
+            <Briefcase size={20} className="text-white" />
+          </span>
+          <span className="flex-1 min-w-0">
+            <span className="block text-sm font-semibold text-zinc-900 dark:text-white">Explore these as careers</span>
+            <span className="block text-xs text-zinc-500 dark:text-zinc-400">What they pay, the day-to-day, and the routes in — for the careers your results point to.</span>
+          </span>
+          <ArrowUpRight size={18} className="text-zinc-400 shrink-0" />
+        </button>
+      )}
 
       <AnimatePresence>
         {explainerOpen && <ScoringExplainerModal onClose={() => setExplainerOpen(false)} />}

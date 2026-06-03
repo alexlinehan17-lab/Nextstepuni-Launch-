@@ -12,7 +12,7 @@ import {
     ArrowLeft,
     Lock, Compass, Target,
     Settings, CalendarDays, Calculator, GitBranch, Rocket,
-    Map, ScanSearch, Dumbbell, Milestone, Waypoints, Highlighter, Users
+    Map, ScanSearch, Dumbbell, Milestone, Waypoints, Highlighter, Users, Briefcase
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -34,6 +34,7 @@ import ExamReps from './ExamReps';
 import CatchUpLane from './CatchUpLane';
 import CommandWordReflex from './CommandWordReflex';
 import HowTheyDidIt from './HowTheyDidIt';
+import CareerPaths from './CareerPaths';
 import { InnovationDataProvider } from '../contexts/InnovationDataContext';
 import { useTopicMastery } from '../hooks/useTopicMastery';
 import { getNotifications } from './gc/gcNotifications';
@@ -79,7 +80,8 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'college-compass': { themeColor: '#2A7D6F', eyebrow: 'Plan · Roadmap',              subtitle: 'Your year-by-year runway to college — every CAO, HEAR, DARE and scholarship deadline, in order.', showHeader: false },
   'catch-up-lane':   { themeColor: '#0E9AA8', eyebrow: 'Catch up · Recovery',         subtitle: 'Missed some classes? Pick a subject and get caught up one quick topic at a time — no catch-up is too small.', showHeader: true  },
   'command-word-reflex': { themeColor: '#6366F1', eyebrow: 'Technique · Exam skills', subtitle: 'Half of exam technique is reading the question right. Spot the command word in real questions and learn what it’s really asking — and the trap that loses marks.', showHeader: true },
-  'how-they-did-it':  { themeColor: '#C8862B', eyebrow: 'Mindset · Real stories', subtitle: 'Real people who started where you are — money tight, learning differently, new to the country, first in the family — and the actual moves they made.', showHeader: true },
+  'how-they-did-it':  { themeColor: '#0E7C6B', eyebrow: 'Mindset · Real stories', subtitle: 'Real people who started where you are — money tight, learning differently, new to the country, first in the family — and the actual moves they made.', showHeader: true },
+  'career-paths':     { themeColor: '#0E7C6B', eyebrow: 'Understand · Career discovery', subtitle: 'Real careers — what they pay, the day-to-day, the skills, and the courses that lead there.', showHeader: true },
 };
 
 interface InnovationZoneProps {
@@ -125,6 +127,9 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const [showOnboarding, setShowOnboarding] = useState(false);
     const [profileLoaded, setProfileLoaded] = useState(false);
     const [pendingToolId, setPendingToolId] = useState<string | null>(null);
+    // When the Future Finder results screen launches Career Paths, seed it to
+    // land on the student's matched careers; grid launches reset this to false.
+    const [careerSeedMatches, setCareerSeedMatches] = useState(false);
     const [timetableCompletions, setTimetableCompletions] = useState<TimetableCompletions>({});
     const [timetableStreak, setTimetableStreak] = useState<TimetableStreak>({ currentStreak: 0, lastActiveDate: '', longestStreak: 0 });
     const [reflections, setReflections] = useState<StudyReflection[]>([]);
@@ -371,6 +376,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             setShowOnboarding(true);
             return;
         }
+        setCareerSeedMatches(false);
         setActiveTool(toolId);
     }, [subjectProfile, profileLoaded, setActiveTool]);
 
@@ -470,7 +476,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
-            component: subjectProfile ? <FutureFinder uid={user!.uid} profile={subjectProfile} /> : null,
+            component: subjectProfile ? <FutureFinder uid={user!.uid} profile={subjectProfile} onOpenCareerPaths={() => { setCareerSeedMatches(true); setActiveTool('career-paths'); }} /> : null,
         },
         {
             id: 'syllabus-xray', title: 'Syllabus X-Ray', description: 'See where the marks are hiding in your exams.', icon: ScanSearch, needsProfile: false,
@@ -539,6 +545,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             hoverBorder: 'hover:border-amber-400/50 dark:hover:border-amber-500/40',
             component: <HowTheyDidIt uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
         },
+        {
+            id: 'career-paths', title: 'Career Paths', description: 'Real careers — what they pay, the day-to-day, and how to get there.', icon: Briefcase, needsProfile: false,
+            curriculum: 'both' as const,
+            tag: 'Career Discovery', accentHex: '#0E7C6B', gridClass: 'md:col-span-3',
+            iconBg: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-700 dark:text-teal-300',
+            accentBarColor: 'bg-teal-500', tagBg: 'bg-teal-100 dark:bg-teal-900/30', tagText: 'text-teal-700 dark:text-teal-400',
+            hoverBorder: 'hover:border-teal-400/50 dark:hover:border-teal-500/40',
+            component: <CareerPaths uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} seedMatches={careerSeedMatches} />,
+        },
     ];
 
     const [activeFilter, setActiveFilter] = useState<'all' | 'understand' | 'plan' | 'track'>('all');
@@ -557,6 +572,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'catch-up-lane': 'plan',
         'command-word-reflex': 'understand',
         'how-they-did-it': 'understand',
+        'career-paths': 'understand',
     };
 
     // Curriculum gating (Phase 4): JC users only see tools tagged 'both'
