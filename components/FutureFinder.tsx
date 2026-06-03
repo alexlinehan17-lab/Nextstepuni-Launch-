@@ -36,7 +36,7 @@ interface FutureFinderProps {
   uid: string;
   profile: StudentSubjectProfile;
   /** Launch the Career Paths tool, seeded to the student's matched careers. */
-  onOpenCareerPaths?: () => void;
+  onOpenCareerPaths?: (careerStrings: string[]) => void;
 }
 
 interface FutureFinderData {
@@ -653,7 +653,7 @@ function ResultsPhase({
   onSelectCourse: (r: RecommendationResult) => void;
   onCompare: () => void;
   onRetake: () => void;
-  onOpenCareerPaths?: () => void;
+  onOpenCareerPaths?: (careerStrings: string[]) => void;
 }) {
   const [explainerOpen, setExplainerOpen] = useState(false);
   return (
@@ -685,7 +685,7 @@ function ResultsPhase({
 
       {onOpenCareerPaths && (
         <button
-          onClick={onOpenCareerPaths}
+          onClick={() => onOpenCareerPaths(results.flatMap((r) => r.course.careerPaths))}
           className="w-full mb-6 flex items-center gap-3 rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 p-4 text-left transition-transform active:translate-y-0.5 hover:shadow-md"
         >
           <span className="w-11 h-11 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: '#0E7C6B' }}>

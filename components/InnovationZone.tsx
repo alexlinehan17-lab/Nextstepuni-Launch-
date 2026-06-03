@@ -129,7 +129,10 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const [pendingToolId, setPendingToolId] = useState<string | null>(null);
     // When the Future Finder results screen launches Career Paths, seed it to
     // land on the student's matched careers; grid launches reset this to false.
+    // The career strings are passed through directly (Future Finder has them
+    // live) so matching is robust even if the shared context's picks are stale.
     const [careerSeedMatches, setCareerSeedMatches] = useState(false);
+    const [careerSeedStrings, setCareerSeedStrings] = useState<string[]>([]);
     const [timetableCompletions, setTimetableCompletions] = useState<TimetableCompletions>({});
     const [timetableStreak, setTimetableStreak] = useState<TimetableStreak>({ currentStreak: 0, lastActiveDate: '', longestStreak: 0 });
     const [reflections, setReflections] = useState<StudyReflection[]>([]);
@@ -377,6 +380,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             return;
         }
         setCareerSeedMatches(false);
+        setCareerSeedStrings([]);
         setActiveTool(toolId);
     }, [subjectProfile, profileLoaded, setActiveTool]);
 
@@ -476,7 +480,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
-            component: subjectProfile ? <FutureFinder uid={user!.uid} profile={subjectProfile} onOpenCareerPaths={() => { setCareerSeedMatches(true); setActiveTool('career-paths'); }} /> : null,
+            component: subjectProfile ? <FutureFinder uid={user!.uid} profile={subjectProfile} onOpenCareerPaths={(strings) => { setCareerSeedStrings(strings); setCareerSeedMatches(true); setActiveTool('career-paths'); }} /> : null,
         },
         {
             id: 'syllabus-xray', title: 'Syllabus X-Ray', description: 'See where the marks are hiding in your exams.', icon: ScanSearch, needsProfile: false,
@@ -552,7 +556,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-700 dark:text-teal-300',
             accentBarColor: 'bg-teal-500', tagBg: 'bg-teal-100 dark:bg-teal-900/30', tagText: 'text-teal-700 dark:text-teal-400',
             hoverBorder: 'hover:border-teal-400/50 dark:hover:border-teal-500/40',
-            component: <CareerPaths uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} seedMatches={careerSeedMatches} />,
+            component: <CareerPaths uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} seedMatches={careerSeedMatches} seedMatchStrings={careerSeedStrings} />,
         },
     ];
 

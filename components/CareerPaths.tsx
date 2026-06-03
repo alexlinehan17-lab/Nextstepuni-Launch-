@@ -139,18 +139,21 @@ const CardFace: React.FC<{ c: CareerCard; saved: boolean; matched: boolean }> = 
 type Beat = 'front' | 'day' | 'deal' | 'route';
 const BEAT_IDX: Record<Beat, number> = { front: 0, day: 1, deal: 2, route: 3 };
 
-const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatches?: boolean }> = ({ uid, seedMatches }) => {
+const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatches?: boolean; seedMatchStrings?: string[] }> = ({ uid, seedMatches, seedMatchStrings }) => {
   const { state, isLoaded, markSeen, toggleSaved } = useCareerPaths(uid);
   const { futureFinderPicks } = useInnovationData();
   const sound = useDeckSound();
 
-  // Careers the student's Future Finder results point to.
+  // Careers the student's Future Finder results point to. Prefer the strings
+  // passed straight from the Future Finder (always current); fall back to the
+  // shared context's saved picks when opened cold from the tool grid.
   const matchedIds = useMemo(() => {
     const picked = new Set<string>();
-    futureFinderPicks.forEach((course) => course.careerPaths.forEach((cp) => picked.add(cp)));
+    const strings = seedMatchStrings && seedMatchStrings.length ? seedMatchStrings : futureFinderPicks.flatMap((c) => c.careerPaths);
+    strings.forEach((cp) => picked.add(cp));
     if (picked.size === 0) return new Set<string>();
     return new Set(CAREERS.filter((c) => c.matchStrings.some((m) => picked.has(m))).map((c) => c.id));
-  }, [futureFinderPicks]);
+  }, [futureFinderPicks, seedMatchStrings]);
   const hasMatches = matchedIds.size > 0;
 
   const [filter, setFilter] = useState<'all' | 'matches'>(seedMatches && hasMatches ? 'matches' : 'all');
