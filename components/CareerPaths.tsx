@@ -24,7 +24,7 @@ import { CAREERS } from '../careerPathsData';
 import { type CareerCard } from '../types/careerPaths';
 import {
   WORLDS, type ColorWorld, DeckStack, useDeckSound, Celebration, CountUp,
-  FIELD_WORLD, FIELD_ICON,
+  FIELD_WORLD, careerIcon,
   HybridCard, Band, BlobIcon, ProgressDots, OrangeBtn, NeutralBtn, Eyebrow,
   SERIF, INK, BODY, MUTED, LABEL, HAIRLINE,
 } from './immersiveDeck';
@@ -85,7 +85,7 @@ const Sources: React.FC<{ sources: string[] }> = ({ sources }) => {
 /** The swipe-card / stack face — bespoke white card with a top colour zone. */
 const CardFace: React.FC<{ c: CareerCard; saved: boolean; matched: boolean }> = ({ c, saved, matched }) => {
   const wd = FIELD_WORLD[c.field];
-  const Icon = FIELD_ICON[c.field];
+  const Icon = careerIcon(c.field, c.iconKey);
   return (
     <div className="w-full h-full rounded-[28px] overflow-hidden flex flex-col select-none relative" style={{ backgroundColor: '#fff', border: '2px solid #1a1a1a', boxShadow: '6px 8px 0 0 #1a1a1a' }}>
       <div className="relative flex-1 flex items-center justify-center pt-8">
@@ -156,7 +156,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
   // ── CARD DETAIL ───────────────────────────────────────────────
   if (card) {
     const wd = FIELD_WORLD[card.field];
-    const CareerIcon = FIELD_ICON[card.field];
+    const CareerIcon = careerIcon(card.field, card.iconKey);
     const isSaved = state.savedIds.includes(card.id);
     const bi = BEAT_IDX[beat];
     const courses = coursesFor(card);
@@ -292,7 +292,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
           <div className="space-y-3">
             {savedCards.map((c) => {
               const wd = FIELD_WORLD[c.field];
-              const Icon = FIELD_ICON[c.field];
+              const Icon = careerIcon(c.field, c.iconKey);
               return (
                 <div key={c.id} className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46] p-4">
                   <div className="flex items-center gap-2.5 mb-1">

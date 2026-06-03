@@ -26,7 +26,7 @@ import {
 import { CAREERS } from '../careerPathsData';
 import { type CareerCard } from '../types/careerPaths';
 import {
-  WORLDS, CountUp, Celebration, FIELD_WORLD, FIELD_ICON,
+  WORLDS, CountUp, Celebration, FIELD_WORLD, careerIcon,
   HybridCard, Band, ProgressDots, OrangeBtn, NeutralBtn, Eyebrow, Segment, BackLink,
   SERIF, INK, BODY, MUTED, LABEL, HAIRLINE,
 } from './immersiveDeck';
@@ -56,7 +56,7 @@ const dotsFor = (s: Step) => <ProgressDots total={STEP_ORDER.length} active={STE
 /** A small tinted, coloured-ink career chip with its field icon. */
 const CareerChip: React.FC<{ c: CareerCard; onClick: () => void }> = ({ c, onClick }) => {
   const cw = FIELD_WORLD[c.field];
-  const CI = FIELD_ICON[c.field];
+  const CI = careerIcon(c.field, c.iconKey);
   return (
     <button onClick={onClick} className="inline-flex items-center gap-1.5 text-[12.5px] font-semibold px-3 py-1.5 rounded-full transition-transform active:translate-y-0.5" style={{ backgroundColor: cw.tint, color: cw.deep }}>
       <CI size={13} /> {c.title}
@@ -142,7 +142,7 @@ const YourPossibleLife: React.FC<{ uid?: string; profile: StudentSubjectProfile 
           <HybridCard>
             <Band
               wd={wd}
-              icon={FIELD_ICON[topMatch.field]}
+              icon={careerIcon(topMatch.field, topMatch.iconKey)}
               eyebrow={<span className="inline-flex items-center gap-1"><Star size={10} /> Your Future Finder match</span>}
               title={topMatch.title}
               subtitle={topMatch.tagline}
@@ -177,7 +177,7 @@ const YourPossibleLife: React.FC<{ uid?: string; profile: StudentSubjectProfile 
               <div className="grid grid-cols-2 gap-2.5">
                 {CAREERS.map((c) => {
                   const cw = FIELD_WORLD[c.field];
-                  const CI = FIELD_ICON[c.field];
+                  const CI = careerIcon(c.field, c.iconKey);
                   const matched = matchedCareers.some((m) => m.id === c.id);
                   return (
                     <button key={c.id} onClick={() => chooseCareer(c.id)} className="flex items-center gap-2.5 rounded-2xl p-3 text-left transition-transform active:translate-y-0.5" style={{ backgroundColor: '#fff', border: `1.5px solid ${HAIRLINE}`, color: INK }}>
@@ -202,7 +202,7 @@ const YourPossibleLife: React.FC<{ uid?: string; profile: StudentSubjectProfile 
 
   if (!career) return null;
   const wd = FIELD_WORLD[career.field];
-  const CareerIcon = FIELD_ICON[career.field];
+  const CareerIcon = careerIcon(career.field, career.iconKey);
   const grossK = horizon === 'experienced' ? career.salary.experiencedK : career.salary.startK;
   const pay = irishNetPay(grossK * 1000);
   const life = lifestyleFromNet(pay.netMonthly, region);

@@ -6,7 +6,7 @@
  */
 
 export { WORLDS, world, type ColorWorld, type WorldName } from './colorWorlds';
-export { FIELD_WORLD, FIELD_ICON, initials } from './deckGlyphs';
+export { FIELD_WORLD, FIELD_ICON, CAREER_ICONS, careerIcon, initials } from './deckGlyphs';
 export {
   HybridCard, Band, BlobIcon, ProgressDots, OrangeBtn, NeutralBtn, Eyebrow, Segment, BackLink,
   SERIF, INK, BODY, MUTED, LABEL, HAIRLINE, CARD_SHADOW, ACCENT, ACCENT_DARK,

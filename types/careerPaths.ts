@@ -50,8 +50,12 @@ export interface CareerCard {
   id: string;
   title: string;
   field: CareerField;
-  /** Emoji glyph for the colour-world face. */
+  /** Emoji glyph (legacy data shape; the UI renders a line icon, not this). */
   emoji: string;
+  /** Optional per-card icon key (see immersiveDeck/deckGlyphs CAREER_ICONS) — a
+   *  distinct line icon while keeping the field's colour world. Falls back to the
+   *  field icon when omitted. */
+  iconKey?: string;
   /** A short identity / "what it's really like" line (≤10 words). */
   tagline: string;
   /** Day-to-day, 2-3 short bullets. */

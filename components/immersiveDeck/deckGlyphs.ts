@@ -9,7 +9,10 @@
  */
 import {
   Stethoscope, PawPrint, Code2, Cog, Scale, Brain, BarChart3, GraduationCap,
-  Ruler, FlaskConical, Wrench, Palette, type LucideIcon,
+  Ruler, FlaskConical, Wrench, Palette,
+  Database, ShieldCheck, Headset, Activity, Smile, HeartPulse, HeartHandshake,
+  Users, Newspaper, Megaphone, Coins, Dumbbell, ChefHat, Microscope, Tractor,
+  type LucideIcon,
 } from 'lucide-react';
 import { type CareerField } from '../../types/careerPaths';
 import { WORLDS, type ColorWorld } from './colorWorlds';
@@ -45,6 +48,31 @@ export const FIELD_ICON: Record<CareerField, LucideIcon> = {
   trades: Wrench,
   creative: Palette,
 };
+
+/** Per-card icon keys → line icons. Lets several careers share a field colour
+ *  world while each keeping a distinct glyph. */
+export const CAREER_ICONS: Record<string, LucideIcon> = {
+  database: Database,
+  shield: ShieldCheck,
+  headset: Headset,
+  activity: Activity,
+  smile: Smile,
+  'heart-pulse': HeartPulse,
+  'hands-helping': HeartHandshake,
+  users: Users,
+  newspaper: Newspaper,
+  megaphone: Megaphone,
+  coins: Coins,
+  dumbbell: Dumbbell,
+  chef: ChefHat,
+  microscope: Microscope,
+  tractor: Tractor,
+};
+
+/** A career's glyph — its per-card iconKey if set, else the field's icon. */
+export function careerIcon(field: CareerField, iconKey?: string): LucideIcon {
+  return (iconKey && CAREER_ICONS[iconKey]) || FIELD_ICON[field];
+}
 
 /** First-letter initials from a person's name, e.g. "Kellie Harrington" → "KH". */
 export function initials(name: string): string {
