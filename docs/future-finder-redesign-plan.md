@@ -80,8 +80,7 @@ PIC flow + Super framing:
 
 ## 9. Migration / phasing
 
-- **Phase A (data):** add `riasecProfile`/`workValues` to the 149 courses (derive → inherit-from-O*NET where clean → review). Outcome set untouched.
-- **Phase B (engine):** new `riasec` scoring module (sum scales → Pearson r → Iachan M → buckets) + the Fit/Reach/Eligibility separation, behind the existing `runFutureFinderAssessment` interface so the results screen barely changes structurally.
+- **Phase A — engine + data ✅ DONE (2026-06-03):** `components/futureFinderRiasec.ts` (profile↔code, Pearson-r matching, Iachan M, fit buckets, Fit/Reach/Eligibility separation) + `components/futureFinderRiasecData.ts` (all 149 courses coded). Coding was **multi-rater** (3 independent rater agents/course, position-weighted consensus): **lead-letter unanimous 95%, majority 100%, mean pairwise Iachan congruence 0.973**, zero adjudications. Outcome set untouched; not yet wired into the live tool. Recommended final 10%: a human guidance-counsellor ratification pass on the codes.
 - **Phase C (questions):** swap the question set for the 60-item adapted O*NET Short Form + values block; keep the existing answer-persistence shape where possible.
 - **Phase D (results UX):** the 2-D Fit/Reach view + Super framing. Tests: scoring determinism, a known-profile → expected-course fixture, gender-balance check on items, and a fit-never-changes-with-points regression.
 
