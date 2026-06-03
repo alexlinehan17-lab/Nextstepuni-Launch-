@@ -47,8 +47,16 @@ export function useCollegeCompass(uid: string | undefined) {
   // Seed local state from the raw progress doc, once, after progress loads.
   useEffect(() => {
     if (!progressLoaded || seededRef.current) return;
-    const saved = rawProgressDoc?.collegeCompass as CollegeCompassState | undefined;
-    if (saved) setState({ ...EMPTY, ...saved, checklist: { ...(saved.checklist ?? {}) } });
+    const saved = rawProgressDoc?.collegeCompass as (Omit<CollegeCompassState, 'checklist'> & { checklist?: Record<string, unknown> }) | undefined;
+    if (saved) {
+      // Normalise the checklist, tolerating legacy boolean `true` (= done).
+      const checklist: Record<string, 'in-progress' | 'done'> = {};
+      for (const [k, v] of Object.entries(saved.checklist ?? {})) {
+        if (v === 'done' || v === true) checklist[k] = 'done';
+        else if (v === 'in-progress') checklist[k] = 'in-progress';
+      }
+      setState({ ...EMPTY, ...saved, checklist });
+    }
     seededRef.current = true;
     setIsLoaded(true);
   }, [progressLoaded, rawProgressDoc]);
@@ -77,12 +85,15 @@ export function useCollegeCompass(uid: string | undefined) {
     }
   }, [uid]);
 
-  /** Toggle a checklist item. `key` should be namespaced "<stopId>:<itemId>". */
-  const toggleChecklistItem = useCallback((key: string) => {
+  /** Cycle a checklist item: not-started -> in-progress -> done -> not-started.
+   *  `key` should be namespaced "<stopId>:<itemId>". */
+  const cycleItemStatus = useCallback((key: string) => {
     setState(prev => {
       const checklist = { ...prev.checklist };
-      if (checklist[key]) delete checklist[key];
-      else checklist[key] = true;
+      const cur = checklist[key];
+      if (cur === undefined) checklist[key] = 'in-progress';
+      else if (cur === 'in-progress') checklist[key] = 'done';
+      else delete checklist[key];
       const next = { ...prev, checklist };
       persist(next, true);
       return next;
@@ -128,7 +139,7 @@ export function useCollegeCompass(uid: string | undefined) {
   return {
     state,
     isLoaded,
-    toggleChecklistItem,
+    cycleItemStatus,
     setHearIndicators,
     setDareCategory,
     setTargetInstitutions,

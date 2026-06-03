@@ -6,7 +6,7 @@
 import { type SessionUser, type CurriculumLevel } from '../../utils/authUtils';
 import { type UserProgress } from '../../types';
 import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak, type YearGroup } from '../subjectData';
-import { type NorthStar, type PointsData } from '../../types';
+import { type NorthStar, type PointsData, type CollegeCompassState } from '../../types';
 import { type GameState } from '../journeySimulatorData';
 import { type DebriefEntry } from '../StudyDebrief';
 
@@ -44,6 +44,8 @@ export interface GCStudentFullData {
   futureFinder: { topPicks: string[]; completedAt: string } | null;
   mockResults: MockResultEntry[] | null;
   recentDebriefs: DebriefEntry[] | null;
+  /** College Compass checklist completions — the student's marks, read-only on the GC side. */
+  collegeCompass: CollegeCompassState | null;
   /** First-class year-group + curriculum-level for fast filtering at the
    *  cohort level. Both derive from the user doc (yearGroup) with
    *  subjectProfile.yearGroup as a fallback. Surfaced in Phase 1 so Phase 6

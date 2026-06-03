@@ -622,3 +622,85 @@ export function computeStopStates(
 
   return { entryYear, states, currentIndex };
 }
+
+// ─── Completion model — the SINGLE source of derived truth ───────────────────
+//
+// Both the student-facing College Compass UI and the GC dashboard card compute
+// progress through these helpers, so what the student marks and what the GC
+// sees can never diverge (same input state -> same output, by construction).
+
+export type CompassItemStatus = 'not-started' | 'in-progress' | 'done';
+
+/** An item's status from a stored checklist map, tolerating legacy boolean `true` (= done). */
+export function itemStatus(checklist: Record<string, unknown> | undefined, key: string): CompassItemStatus {
+  const v = checklist?.[key];
+  if (v === 'done' || v === true) return 'done';
+  if (v === 'in-progress') return 'in-progress';
+  return 'not-started';
+}
+
+export interface StopProgress {
+  stopId: string;
+  title: string;
+  scheme: CompassScheme;
+  /** Student hid this stop (e.g. not applying HEAR/DARE) — excluded from totals. */
+  dismissed: boolean;
+  total: number;
+  done: number;
+  inProgress: number;
+  notStarted: number;
+  items: { key: string; label: string; status: CompassItemStatus }[];
+}
+
+export interface CompassProgress {
+  stops: StopProgress[];
+  /** Totals across NON-dismissed stops only (matches what the student is working). */
+  totalItems: number;
+  doneItems: number;
+  inProgressItems: number;
+  /** 0-100, of non-dismissed items. */
+  percentDone: number;
+  updatedAt?: string;
+}
+
+/**
+ * Derive per-stop + overall progress from a CollegeCompassState-shaped value.
+ * Used identically by the student tool and the GC dashboard.
+ */
+export function computeCompassProgress(
+  state: { checklist?: Record<string, unknown>; dismissedStops?: string[]; updatedAt?: string } | null | undefined,
+): CompassProgress {
+  const checklist = state?.checklist ?? {};
+  const dismissed = new Set(state?.dismissedStops ?? []);
+  const stops: StopProgress[] = JOURNEY_STOPS.map(stop => {
+    const items = stop.checklistItems.map(it => {
+      const key = `${stop.id}:${it.id}`;
+      return { key, label: it.label, status: itemStatus(checklist, key) };
+    });
+    const done = items.filter(i => i.status === 'done').length;
+    const inProgress = items.filter(i => i.status === 'in-progress').length;
+    return {
+      stopId: stop.id,
+      title: stop.title,
+      scheme: stop.scheme,
+      dismissed: dismissed.has(stop.id),
+      total: items.length,
+      done,
+      inProgress,
+      notStarted: items.length - done - inProgress,
+      items,
+    };
+  });
+  const active = stops.filter(s => !s.dismissed);
+  const totalItems = active.reduce((n, s) => n + s.total, 0);
+  const doneItems = active.reduce((n, s) => n + s.done, 0);
+  const inProgressItems = active.reduce((n, s) => n + s.inProgress, 0);
+  return {
+    stops,
+    totalItems,
+    doneItems,
+    inProgressItems,
+    percentDone: totalItems === 0 ? 0 : Math.round((doneItems / totalItems) * 100),
+    updatedAt: state?.updatedAt,
+  };
+}

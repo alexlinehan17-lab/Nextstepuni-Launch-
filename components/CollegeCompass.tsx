@@ -40,6 +40,7 @@ import {
   CYCLE_NOTE,
   COMPASS_LAST_VERIFIED,
   computeStopStates,
+  itemStatus,
   type CompassMode,
   type JourneyStop,
   type StopState,
@@ -234,15 +235,15 @@ interface StopCardProps {
   mode: CompassMode;
   isOpen: boolean;
   onToggle: () => void;
-  checklist: Record<string, boolean>;
-  onToggleChecklist: (key: string) => void;
+  checklist: Record<string, 'in-progress' | 'done'>;
+  onCycleItem: (key: string) => void;
   embedded?: React.ReactNode;
   cardRef: (el: HTMLDivElement | null) => void;
 }
 
 const STATUS_LABEL: Record<StopStatus, string> = { past: 'Done', now: 'Now', future: 'Ahead' };
 
-const JourneyStopCard: React.FC<StopCardProps> = ({ stop, state, mode, isOpen, onToggle, checklist, onToggleChecklist, embedded, cardRef }) => {
+const JourneyStopCard: React.FC<StopCardProps> = ({ stop, state, mode, isOpen, onToggle, checklist, onCycleItem, embedded, cardRef }) => {
   const preview = mode === 'orientation';
   const dateLabel = stop.end ? `${stop.start.label} → ${stop.end.label}` : stop.start.label;
 
@@ -316,22 +317,27 @@ const JourneyStopCard: React.FC<StopCardProps> = ({ stop, state, mode, isOpen, o
                 <div className="space-y-1.5">
                   {stop.checklistItems.map(item => {
                     const key = `${stop.id}:${item.id}`;
-                    const done = !!checklist[key];
+                    const status = itemStatus(checklist, key);
+                    const done = status === 'done';
+                    const inProg = status === 'in-progress';
+                    const next = status === 'not-started' ? 'mark in progress' : status === 'in-progress' ? 'mark done' : 'clear';
                     return (
                       <button
                         key={item.id}
                         type="button"
-                        onClick={() => onToggleChecklist(key)}
+                        onClick={() => onCycleItem(key)}
+                        aria-label={`${item.label}. ${done ? 'Done' : inProg ? 'In progress' : 'Not started'}. Tap to ${next}.`}
                         className="w-full text-left rounded-xl border-2 px-3 py-2.5 flex items-start gap-2.5 transition-colors"
-                        style={{ borderColor: done ? COLORS.success : COLORS.border, backgroundColor: done ? COLORS.successTint : '#FFFFFF' }}
+                        style={{ borderColor: done ? COLORS.success : inProg ? COLORS.accent : COLORS.border, backgroundColor: done ? COLORS.successTint : inProg ? COLORS.accentTint : '#FFFFFF' }}
                       >
-                        <span className="inline-flex items-center justify-center w-5 h-5 rounded-md shrink-0 mt-0.5" style={{ backgroundColor: done ? COLORS.success : '#F0EEEB' }}>
-                          {done && <Check size={13} className="text-white" />}
+                        <span className="inline-flex items-center justify-center w-5 h-5 rounded-md shrink-0 mt-0.5" style={{ backgroundColor: done ? COLORS.success : inProg ? COLORS.accent : '#F0EEEB' }}>
+                          {done ? <Check size={13} className="text-white" /> : inProg ? <span className="block w-2.5 h-[2px] rounded-full bg-white" /> : null}
                         </span>
-                        <span className="min-w-0">
+                        <span className="min-w-0 flex-1">
                           <span className={`block text-sm font-semibold ${done ? 'text-[#7a7068] line-through' : 'text-[#1A1A1A]'}`}>{item.label}</span>
                           {item.detail && <span className="block text-xs text-[#7a7068] mt-0.5">{item.detail}</span>}
                         </span>
+                        {inProg && <span className="text-[10px] font-bold uppercase tracking-[0.1em] shrink-0 mt-1" style={{ color: COLORS.accentDarkText }}>In progress</span>}
                       </button>
                     );
                   })}
@@ -363,7 +369,7 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup }) => {
   const mode: CompassMode = yearGroup === '6th' ? 'live' : 'orientation';
   const preview = mode === 'orientation';
 
-  const { state, toggleChecklistItem, setHearIndicators, setDareCategory, setTargetInstitutions } = useCollegeCompass(uid);
+  const { state, cycleItemStatus, setHearIndicators, setDareCategory, setTargetInstitutions } = useCollegeCompass(uid);
 
   // Resolve dates/statuses once. `new Date()` is the project "today".
   const { entryYear, states, currentIndex } = useMemo(() => computeStopStates(new Date(), mode), [mode]);
@@ -388,7 +394,7 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup }) => {
     for (let i = 0; i < JOURNEY_STOPS.length; i++) {
       const stop = JOURNEY_STOPS[i];
       for (const item of stop.checklistItems) {
-        if (!state.checklist[`${stop.id}:${item.id}`]) {
+        if (state.checklist[`${stop.id}:${item.id}`] !== 'done') {
           return { stop, item, st: states[i] };
         }
       }
@@ -559,7 +565,7 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup }) => {
               isOpen={openId === stop.id}
               onToggle={() => setOpenId(openId === stop.id ? '' : stop.id)}
               checklist={state.checklist}
-              onToggleChecklist={toggleChecklistItem}
+              onCycleItem={cycleItemStatus}
               embedded={embeddedFor(stop.id)}
               cardRef={el => { stopRefs.current[stop.id] = el; }}
             />

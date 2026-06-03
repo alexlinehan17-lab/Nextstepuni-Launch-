@@ -12,7 +12,7 @@ import app, { db } from '../firebase';
 import { collection, query, where, limit, getDocs, doc, getDoc, setDoc, documentId } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { getSchoolName } from '../schoolData';
-import { type UserProgress, type PointsData } from '../types';
+import { type UserProgress, type PointsData, type CollegeCompassState } from '../types';
 import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak } from './subjectData';
 import { type NorthStar } from '../types';
 import { type GameState } from './journeySimulatorData';
@@ -176,6 +176,20 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
     return () => { document.body.style.overflow = ''; };
   }, [selectedStudentUid]);
 
+  // On opening a student's tray, re-pull their latest College Compass marks so
+  // the GC always sees the most recent committed state. Reads the SAME
+  // progress/{uid} doc the student writes — single source of truth, no drift.
+  useEffect(() => {
+    if (!selectedStudentUid) return;
+    let cancelled = false;
+    getDoc(doc(db, 'progress', selectedStudentUid)).then(snap => {
+      if (cancelled || !snap.exists()) return;
+      const cc = (snap.data()?.collegeCompass as CollegeCompassState) ?? null;
+      setStudentData(prev => prev.map(s => s.user.uid === selectedStudentUid ? { ...s, collegeCompass: cc } : s));
+    }).catch(() => {});
+    return () => { cancelled = true; };
+  }, [selectedStudentUid]);
+
   useEffect(() => {
     let cancelled = false;
     const fetchData = async () => {
@@ -231,6 +245,9 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             const debriefArr = progressDoc?.studyDebriefs as DebriefEntry[] | undefined;
             const recentDebriefs = debriefArr ? debriefArr.slice(-20) : null;
 
+            // College Compass — read the SAME field the student writes (no copy, no drift).
+            const collegeCompass = (progressDoc?.collegeCompass as CollegeCompassState) ?? null;
+
             // Derive year-group / curriculum-level (Phase 1 JC plumbing).
             // Prefer the user doc (set during onboarding + by AuthContext
             // migration), fall back to subjectProfile (legacy location).
@@ -250,6 +267,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
               futureFinder,
               mockResults: wrMocks,
               recentDebriefs,
+              collegeCompass,
               yearGroup,
               curriculumLevel,
             };

@@ -230,8 +230,12 @@ export interface UnifiedMockResult {
 // IDs/codes/booleans — content (stops, dates, labels) is rehydrated from
 // collegeCompassData.ts at render time.
 export interface CollegeCompassState {
-  /** checklistItem id ("<stopId>:<itemId>") -> done. Live mode (6th) only. */
-  checklist: Record<string, boolean>;
+  /**
+   * checklistItem id ("<stopId>:<itemId>") -> 'in-progress' | 'done'.
+   * Absent key = not started. Live mode (6th) only. Legacy docs stored the
+   * boolean `true` for done; useCollegeCompass normalises that to 'done' on read.
+   */
+  checklist: Record<string, 'in-progress' | 'done'>;
   /** Optional: institution codes for the "set my target colleges" picker. */
   targetInstitutionCodes?: string[];
   /** Optional: last-used HEAR meter indicator selection (ids only). */
