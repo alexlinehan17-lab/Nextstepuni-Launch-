@@ -11,12 +11,13 @@
  * ranked by INTEREST FIT (Pearson correlation, O*NET's method), each annotated
  * with an independent points-REACH badge. Fit is never altered by points.
  */
-import React, { useMemo, useState, useEffect, useCallback } from 'react';
+import React, { useMemo, useState, useEffect, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { ArrowLeft, Compass, Info, X } from 'lucide-react';
+import { ArrowLeft, Compass, X, ArrowRight } from 'lucide-react';
 import { COLORS } from '../design/tokens';
+import PrimaryActionButton from './ui/PrimaryActionButton';
 import { useFutureFinderRevamped, type FutureFinderRevampedState } from '../hooks/useFutureFinderRevamped';
 import {
   buildStudentProfile, codeFromProfile, scoreCourseFit,
@@ -50,7 +51,7 @@ function computeCurrentPoints(profile: StudentSubjectProfile): number {
     .reduce((sum, p) => sum + p, 0);
 }
 
-const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProfile; studentSubjects?: string[] }> = ({ uid, profile }) => {
+const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProfile; studentSubjects?: string[]; onOpenCareerPaths?: (careerStrings: string[]) => void }> = ({ uid, profile, onOpenCareerPaths }) => {
   const { saved, isLoaded, persist, reset } = useFutureFinderRevamped(uid);
   const [phase, setPhase] = useState<'intro' | 'quiz' | 'results'>('intro');
   const [length, setLength] = useState<'full' | 'quick'>('full');
@@ -61,6 +62,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
   const [savedPicks, setSavedPicks] = useState<string[]>([]);
   const [compareCodes, setCompareCodes] = useState<string[]>([]);
   const [sortMode, setSortMode] = useState<SortMode>('match');
+  const [pointsAsc, setPointsAsc] = useState(true);
   const [regionFilter, setRegionFilter] = useState<string>('');
 
   // Re-show saved results on revisit.
@@ -99,20 +101,29 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
     return { studentProfile, studentCode, studentValues, maxScale, shown: scored.filter((s) => s.fit.fitBucket !== 'none').slice(0, 24) };
   }, [responses, valueResponses, studentPoints, studentSubjectNames]);
 
+  // Holds true between selecting an answer and the (brief) auto-advance, so the
+  // orange selected state is actually visible and a fast double-tap can't skip
+  // two questions.
+  const advancingRef = useRef(false);
   const answer = (val: number) => {
+    if (advancingRef.current) return;
     const q = questions[idx];
     if (q.kind === 'interest') setResponses((r) => ({ ...r, [q.id]: val }));
     else setValueResponses((r) => ({ ...r, [q.id]: val }));
-    if (idx + 1 >= questions.length) {
-      const next: FutureFinderRevampedState = { length, responses: q.kind === 'interest' ? { ...responses, [q.id]: val } : responses, valueResponses: q.kind === 'value' ? { ...valueResponses, [q.id]: val } : valueResponses, picks: savedPicks, compareCodes, completedAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
-      persist(next);
-      setPhase('results');
-    } else {
-      setIdx((i) => i + 1);
-    }
+    advancingRef.current = true;
+    window.setTimeout(() => {
+      advancingRef.current = false;
+      if (idx + 1 >= questions.length) {
+        const next: FutureFinderRevampedState = { length, responses: q.kind === 'interest' ? { ...responses, [q.id]: val } : responses, valueResponses: q.kind === 'value' ? { ...valueResponses, [q.id]: val } : valueResponses, picks: savedPicks, compareCodes, completedAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
+        persist(next);
+        setPhase('results');
+      } else {
+        setIdx((i) => i + 1);
+      }
+    }, 280);
   };
 
-  const retake = () => { reset(); setResponses({}); setValueResponses({}); setSavedPicks([]); setCompareCodes([]); setSortMode('match'); setRegionFilter(''); setIdx(0); setPhase('intro'); };
+  const retake = () => { reset(); setResponses({}); setValueResponses({}); setSavedPicks([]); setCompareCodes([]); setSortMode('match'); setPointsAsc(true); setRegionFilter(''); setIdx(0); setPhase('intro'); };
 
   // Full-state merge to the revamped namespace — mirrors the original's
   // toggleSavedPick/toggleCompare, but writing futureFinderRevamped.
@@ -160,27 +171,37 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
   // ── INTRO ─────────────────────────────────────────────────────
   if (phase === 'intro') {
     return (
-      <div className="w-full max-w-2xl mx-auto">
-        <div className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 p-6 md:p-8 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46]">
-          <div className="flex items-center gap-2 mb-3"><Compass size={20} style={{ color: COLORS.accent }} /><p className="text-[11px] font-bold uppercase tracking-[0.14em]" style={{ color: COLORS.accentDarkText }}>Interests · RIASEC</p></div>
-          <h2 className="text-2xl font-semibold mb-2" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Find courses that fit who you are</h2>
-          <p className="text-[14px] leading-relaxed text-zinc-600 dark:text-zinc-300 mb-4">Rate how much you’d enjoy a series of activities. We build your interest profile (the Holland RIASEC model used by Irish guidance services), then show CAO courses ranked by how well they <span className="font-semibold">fit your interests</span> — with points kept as a separate, honest signal.</p>
-          <div className="rounded-xl p-3 mb-5 flex items-start gap-2" style={{ backgroundColor: COLORS.accentTint }}>
-            <Info size={15} className="mt-0.5 shrink-0" style={{ color: COLORS.accentDarkText }} />
-            <p className="text-[12.5px]" style={{ color: COLORS.accentDarkText }}>A snapshot of your interests right now — not a verdict. Worth re-taking, and best used alongside your guidance counsellor.</p>
-          </div>
-          <p className="text-[13px] font-semibold text-zinc-700 dark:text-zinc-300 mb-2">Choose your length:</p>
-          <div className="grid sm:grid-cols-2 gap-3">
-            <button onClick={() => { setLength('full'); setIdx(0); setPhase('quiz'); }} className="text-left rounded-xl border-2 p-4 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800/40" style={{ borderColor: COLORS.accent }}>
-              <p className="text-[15px] font-bold text-zinc-900 dark:text-white">Full · 72 quick taps</p>
-              <p className="text-[12.5px] text-zinc-500 dark:text-zinc-400 mt-0.5">~9 min · most accurate read</p>
-            </button>
-            <button onClick={() => { setLength('quick'); setIdx(0); setPhase('quiz'); }} className="text-left rounded-xl border-2 border-zinc-200 dark:border-zinc-700 p-4 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800/40">
-              <p className="text-[15px] font-bold text-zinc-900 dark:text-white">Quick · 42 quick taps</p>
-              <p className="text-[12.5px] text-zinc-500 dark:text-zinc-400 mt-0.5">~5 min · a faster, rougher steer</p>
-            </button>
-          </div>
+      <div className="w-full max-w-md mx-auto py-6 text-center">
+        <img src="/assets/tools/future-finder.png" alt="" draggable={false} className="w-44 h-44 md:w-52 md:h-52 mx-auto -mb-1 object-contain pointer-events-none select-none" />
+        <div className="inline-flex items-center gap-1.5 mb-3 px-3 py-1.5 rounded-full" style={{ backgroundColor: COLORS.accentTint }}>
+          <Compass size={14} style={{ color: COLORS.accent }} />
+          <span className="text-[10.5px] font-bold uppercase tracking-[0.14em]" style={{ color: COLORS.accentDarkText }}>Interests · RIASEC</span>
         </div>
+        <h2 className="font-serif text-[28px] md:text-[32px] font-semibold leading-[1.08] mb-3" style={{ color: '#1a1a1a' }}>Find courses that fit<br />who you are</h2>
+        <p className="text-[14.5px] leading-relaxed text-zinc-500 dark:text-zinc-400 max-w-sm mx-auto mb-6">Rate quick activities, we build your interest profile, then rank CAO courses by how well they <span className="font-semibold text-zinc-700 dark:text-zinc-200">fit you</span> — points kept separate and honest.</p>
+
+        {/* length choice — chunky year-selector style buttons (a touch smaller) */}
+        <div className="grid grid-cols-2 gap-3 max-w-sm mx-auto mb-6">
+          {(['full', 'quick'] as const).map((l) => {
+            const selected = length === l;
+            return (
+              <button
+                key={l}
+                onClick={() => setLength(l)}
+                className={`flex flex-col items-center justify-center py-4 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[5px_5px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'}`}
+              >
+                <span className="text-xl font-bold leading-none">{l === 'full' ? 'Full' : 'Quick'}</span>
+                <span className="text-[11px] font-medium mt-1 opacity-80">{l === 'full' ? '72 taps · ~9 min' : '42 taps · ~5 min'}</span>
+              </button>
+            );
+          })}
+        </div>
+
+        <div className="flex justify-center">
+          <PrimaryActionButton label="Start" onClick={() => { setIdx(0); setPhase('quiz'); }} icon={ArrowRight} />
+        </div>
+
+        <p className="text-[12px] text-zinc-400 italic max-w-sm mx-auto mt-7">A snapshot of your interests right now — not a verdict. Best re-taken, and used alongside your guidance counsellor.</p>
       </div>
     );
   }
@@ -195,11 +216,11 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
       <div className="w-full max-w-2xl mx-auto">
         <div className="flex items-center gap-3 mb-4">
           <button onClick={() => (idx > 0 ? setIdx((i) => i - 1) : setPhase('intro'))} className="text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200"><ArrowLeft size={18} /></button>
-          <div className="flex-1 h-2 rounded-full bg-zinc-100 dark:bg-zinc-800 overflow-hidden"><div className="h-full rounded-full" style={{ width: `${pct}%`, backgroundColor: COLORS.accent }} /></div>
+          <div className="flex-1 h-2 rounded-full bg-zinc-100 dark:bg-zinc-800 overflow-hidden"><div className="h-full rounded-full" style={{ width: `${pct}%`, backgroundColor: COLORS.accent, transition: 'width 0.45s cubic-bezier(0.22,1,0.36,1)' }} /></div>
           <span className="text-[12px] font-semibold text-zinc-400 shrink-0">{idx + 1}/{questions.length}</span>
         </div>
         <AnimatePresence mode="wait">
-          <MotionDiv key={q.id} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.2 }} className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 p-6 md:p-8 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46]">
+          <MotionDiv key={q.id} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.2 }} className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-6 md:p-8 shadow-sm">
             <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-zinc-400 mb-2">{prompt}</p>
             <p className="text-[22px] leading-tight font-semibold mb-7" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{q.text}</p>
             <div className="space-y-2">
@@ -207,7 +228,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
                 const val = i + 1;
                 const cur = (q.kind === 'interest' ? responses[q.id] : valueResponses[q.id]) === val;
                 return (
-                  <button key={val} onClick={() => answer(val)} className="w-full text-left rounded-xl border-2 px-4 py-3 text-[14px] font-medium transition-colors" style={cur ? { borderColor: COLORS.accent, backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText } : { borderColor: '#E2E0DC', color: '#3a3530' }}>{label}</button>
+                  <button key={val} onClick={() => answer(val)} className="w-full text-left rounded-xl border-2 px-4 py-3 text-[14px] font-medium transition-colors" style={cur ? { borderColor: COLORS.accent, backgroundColor: COLORS.accent, color: '#fff' } : { borderColor: '#E2E0DC', color: '#3a3530' }}>{label}</button>
                 );
               })}
             </div>
@@ -228,8 +249,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
     riasecToRecommendation(course, fit, topTypes, a.studentValues));
   let displayResults = allResults.slice(0, 30);
   if (regionFilter) displayResults = displayResults.filter((r) => r.course.region === regionFilter);
-  if (sortMode === 'points') displayResults = [...displayResults].sort((x, y) => x.course.typicalPoints - y.course.typicalPoints);
-  else if (sortMode === 'institution') displayResults = [...displayResults].sort((x, y) => x.course.institution.localeCompare(y.course.institution));
+  if (sortMode === 'points') displayResults = [...displayResults].sort((x, y) => pointsAsc ? x.course.typicalPoints - y.course.typicalPoints : y.course.typicalPoints - x.course.typicalPoints);
   displayResults = displayResults.slice(0, 10);
   const compareCourses = compareCodes
     .map((code) => allResults.find((r) => r.course.code === code))
@@ -238,7 +258,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
   return (
     <div className="w-full max-w-2xl mx-auto pb-12">
       {/* profile read-back */}
-      <div className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 p-6 mb-5 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46]">
+      <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-6 mb-5 shadow-sm">
         <p className="text-[11px] font-bold uppercase tracking-[0.14em] mb-1" style={{ color: COLORS.accentDarkText }}>Your interest profile</p>
         <h2 className="text-xl font-semibold mb-3" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>You lean {topTypes.map((l, i) => <span key={l}>{i > 0 ? (i === topTypes.length - 1 ? ' & ' : ', ') : ''}<span style={{ color: COLORS.accent }}>{RIASEC_LABELS[l]}</span></span>)}</h2>
         <div className="flex items-end gap-2 h-20 mb-2">
@@ -258,8 +278,11 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
         autoPoints={studentPoints}
         sortMode={sortMode}
         onSortChange={setSortMode}
+        pointsAsc={pointsAsc}
+        onPointsDirToggle={() => setPointsAsc((v) => !v)}
         regionFilter={regionFilter}
         onRegionFilterChange={setRegionFilter}
+        onOpenCareerPaths={onOpenCareerPaths}
         savedPicks={savedPicks}
         compareCourses={compareCourses}
         onToggleSave={onToggleSave}

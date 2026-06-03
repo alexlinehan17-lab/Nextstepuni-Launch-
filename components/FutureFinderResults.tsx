@@ -27,7 +27,7 @@ import { MotionButton, MotionDiv } from './Motion';
 import {
   ChevronLeft, SlidersHorizontal,
   MapPin, Briefcase, Heart, Star, RotateCcw,
-  BookmarkPlus, Check, ArrowUpRight, TrendingUp, X, Clock, Eye,
+  BookmarkPlus, Check, ArrowUpRight, ArrowUp, ArrowDown, TrendingUp, X, Clock, Eye,
   type LucideIcon,
 } from 'lucide-react';
 import { COLORS } from '../design/tokens';
@@ -36,7 +36,7 @@ import { type RecommendationResult } from './futureFinderAlgorithm';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
-export type SortMode = 'match' | 'points' | 'institution';
+export type SortMode = 'match' | 'points';
 
 /**
  * A result row for the shared UI. Extends the legacy RecommendationResult with
@@ -65,6 +65,10 @@ interface FutureFinderResultsProps {
   autoPoints: number;
   sortMode: SortMode;
   onSortChange: (m: SortMode) => void;
+  /** Points sort direction: true = low→high. */
+  pointsAsc?: boolean;
+  /** Flip the points sort direction (only meaningful when sortMode === 'points'). */
+  onPointsDirToggle?: () => void;
   regionFilter: string;
   onRegionFilterChange: (r: string) => void;
   savedPicks: string[];
@@ -91,7 +95,7 @@ function getMatchLabel(pct: number): string {
 // ─── Component ──────────────────────────────────────────────────────────────
 
 const FutureFinderResults: React.FC<FutureFinderResultsProps> = ({
-  results, autoPoints, sortMode, onSortChange, regionFilter, onRegionFilterChange,
+  results, autoPoints, sortMode, onSortChange, pointsAsc, onPointsDirToggle, regionFilter, onRegionFilterChange,
   savedPicks, compareCourses, onToggleSave, onToggleCompare, onRemoveCompare,
   onRetake, onOpenCareerPaths, explainer, scoreBreakdownLabels,
 }) => {
@@ -108,6 +112,8 @@ const FutureFinderResults: React.FC<FutureFinderResultsProps> = ({
           autoPoints={autoPoints}
           sortMode={sortMode}
           onSortChange={onSortChange}
+          pointsAsc={pointsAsc}
+          onPointsDirToggle={onPointsDirToggle}
           regionFilter={regionFilter}
           onRegionFilterChange={onRegionFilterChange}
           savedPicks={savedPicks}
@@ -152,7 +158,7 @@ export default FutureFinderResults;
 
 /** Phase 3: Results */
 function ResultsPhase({
-  results, autoPoints, sortMode, onSortChange, regionFilter, onRegionFilterChange,
+  results, autoPoints, sortMode, onSortChange, pointsAsc, onPointsDirToggle, regionFilter, onRegionFilterChange,
   savedPicks, compareCourses, onToggleSave, onToggleCompare, onSelectCourse, onCompare, onRetake, onOpenCareerPaths,
   explainer: Explainer,
 }: {
@@ -160,6 +166,8 @@ function ResultsPhase({
   autoPoints: number;
   sortMode: SortMode;
   onSortChange: (m: SortMode) => void;
+  pointsAsc?: boolean;
+  onPointsDirToggle?: () => void;
   regionFilter: string;
   onRegionFilterChange: (r: string) => void;
   savedPicks: string[];
@@ -224,17 +232,23 @@ function ResultsPhase({
       {/* Sort & Filter controls */}
       <div className="flex flex-wrap gap-2 mb-4">
         <div className="flex items-center gap-1 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-0.5">
-          {([['match', 'Match %'], ['points', 'Points'], ['institution', 'College']] as const).map(([key, label]) => (
-            <button
-              key={key}
-              onClick={() => onSortChange(key)}
-              className={`px-3 py-1.5 rounded-md text-xs font-semibold transition-colors ${
-                sortMode === key ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm' : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
-              }`}
-            >
-              {label}
-            </button>
-          ))}
+          {([['match', 'Match %'], ['points', 'Points']] as const).map(([key, label]) => {
+            const active = sortMode === key;
+            const isPoints = key === 'points';
+            return (
+              <button
+                key={key}
+                onClick={() => { if (isPoints && active && onPointsDirToggle) onPointsDirToggle(); else onSortChange(key); }}
+                title={isPoints ? (active ? `Points: ${pointsAsc ? 'low → high' : 'high → low'} — tap to flip` : 'Sort by points') : undefined}
+                className={`px-3 py-1.5 rounded-md text-xs font-semibold transition-colors inline-flex items-center gap-1 ${
+                  active ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm' : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
+                }`}
+              >
+                {isPoints && active && (pointsAsc ? <ArrowUp size={12} /> : <ArrowDown size={12} />)}
+                {label}
+              </button>
+            );
+          })}
         </div>
         <select
           value={regionFilter}

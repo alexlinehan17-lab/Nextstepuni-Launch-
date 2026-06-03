@@ -493,7 +493,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-pink-100 dark:bg-pink-900/30', iconColor: 'text-pink-700 dark:text-pink-300',
             accentBarColor: 'bg-pink-500', tagBg: 'bg-pink-100 dark:bg-pink-900/30', tagText: 'text-pink-700 dark:text-pink-400',
             hoverBorder: 'hover:border-pink-400/50 dark:hover:border-pink-500/40',
-            component: subjectProfile ? <FutureFinderRevamped uid={user!.uid} profile={subjectProfile} /> : null,
+            component: subjectProfile ? <FutureFinderRevamped uid={user!.uid} profile={subjectProfile} onOpenCareerPaths={(strings) => { setCareerSeedStrings(strings); setCareerSeedMatches(true); setActiveTool('career-paths'); }} /> : null,
         },
         {
             id: 'syllabus-xray', title: 'Syllabus X-Ray', description: 'See where the marks are hiding in your exams.', icon: ScanSearch, needsProfile: false,
