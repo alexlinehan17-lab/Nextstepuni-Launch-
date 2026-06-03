@@ -13,6 +13,7 @@ import {
   RIASEC_LETTERS, WORK_VALUES, type WorkValue,
 } from '@/components/futureFinderRiasec';
 import { COURSE_RIASEC } from '@/components/futureFinderRiasecData';
+import { RIASEC_ITEMS, VALUE_ITEMS, riasecItems } from '@/components/futureFinderRiasecItems';
 
 describe('RIASEC scoring engine', () => {
   test('profileFromCode / codeFromProfile round-trip', () => {
@@ -104,5 +105,32 @@ describe('RIASEC course data', () => {
     expect(COURSE_RIASEC['DN450']?.riasecCode[0]).toBe('S'); // General Nursing → Social
     expect(COURSE_RIASEC['DN201']?.riasecCode[0]).toBe('I'); // Computer Science → Investigative
     expect(COURSE_RIASEC['DC232']?.riasecCode[0]).toBe('E'); // Civil Law → Enterprising
+  });
+});
+
+describe('RIASEC item bank', () => {
+  test('60 interest items: 10 per scale, 5 flagged Quick per scale', () => {
+    expect(RIASEC_ITEMS.length).toBe(60);
+    for (const scale of RIASEC_LETTERS) {
+      const items = RIASEC_ITEMS.filter((i) => i.scale === scale);
+      expect(items.length).toBe(10);
+      expect(items.filter((i) => i.quick).length).toBe(5);
+    }
+  });
+
+  test('Quick subset = 30 items', () => {
+    expect(riasecItems(true).length).toBe(30);
+    expect(riasecItems(false).length).toBe(60);
+  });
+
+  test('12 work-values items, 2 per value', () => {
+    expect(VALUE_ITEMS.length).toBe(12);
+    for (const v of WORK_VALUES) expect(VALUE_ITEMS.filter((x) => x.value === v).length).toBe(2);
+  });
+
+  test('all item ids unique, text non-trivial', () => {
+    const ids = [...RIASEC_ITEMS.map((i) => i.id), ...VALUE_ITEMS.map((i) => i.id)];
+    expect(new Set(ids).size).toBe(ids.length);
+    for (const i of [...RIASEC_ITEMS, ...VALUE_ITEMS]) expect(i.text.length).toBeGreaterThan(5);
   });
 });

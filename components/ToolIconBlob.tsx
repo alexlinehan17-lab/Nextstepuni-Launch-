@@ -15,7 +15,7 @@
  *   - IZ active-tool ToolHeader: size=108
  */
 import React from 'react';
-import { Waypoints, Highlighter, Users, Briefcase, type LucideIcon } from 'lucide-react';
+import { Waypoints, Highlighter, Users, Briefcase, Telescope, type LucideIcon } from 'lucide-react';
 
 export type ToolIconKey =
   | 'journey'
@@ -31,7 +31,8 @@ export type ToolIconKey =
   | 'catch-up-lane'
   | 'command-word-reflex'
   | 'how-they-did-it'
-  | 'career-paths';
+  | 'career-paths'
+  | 'future-finder-revamped';
 
 interface ToolIconConfig {
   blob: string;
@@ -135,6 +136,13 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     iconScale: 1.0,
     icon: Briefcase,
     iconColor: '#0A5B4E',
+  },
+  'future-finder-revamped': {
+    blob: '#ECBBCC',
+    blobPath: 'M 8 26 Q 0 50 8 78 Q 22 96 54 96 Q 88 94 96 64 Q 100 32 80 10 Q 56 -2 28 8 Q 12 16 8 26 Z',
+    iconScale: 1.0,
+    icon: Telescope,
+    iconColor: '#A33A63',
   },
 };
 

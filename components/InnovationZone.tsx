@@ -27,6 +27,7 @@ import ComebackEngine from './ComebackEngine';
 import CAOPointsSimulator from './CAOPointsSimulator';
 
 import FutureFinder from './FutureFinder';
+import FutureFinderRevamped from './FutureFinderRevamped';
 import CollegeCompass from './CollegeCompass';
 import SyllabusXRay from './SyllabusXRay';
 import PointsPassport from './PointsPassport';
@@ -74,6 +75,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'war-room':        { themeColor: '#D85F47', eyebrow: 'Plan · Strategy',             subtitle: 'Where the strategy gets made. Map the syllabus, allocate the hours, plan the attack.', showHeader: false },
   'comeback':        { themeColor: '#E08938', eyebrow: 'Plan · Comeback',             subtitle: 'Find your quickest wins and build a comeback plan.',                                showHeader: true  },
   'future-finder':   { themeColor: '#C76489', eyebrow: 'Understand · Career discovery', subtitle: 'Discover the courses, careers, and possible lives that fit who you are.',         showHeader: true  },
+  'future-finder-revamped': { themeColor: '#C76489', eyebrow: 'Understand · Interests (RIASEC)', subtitle: 'A new, interest-based version of the Future Finder — built to compare against the original before we switch.', showHeader: true },
   'syllabus-xray':   { themeColor: '#2C4B6E', eyebrow: 'Understand · Exam intel',     subtitle: 'See where the marks are hiding in every paper, every section, every question.',   showHeader: true  },
   'points-passport': { themeColor: '#B8A079', eyebrow: 'Track · Tracker',             subtitle: 'Mock trends and grade bargains, all at a glance.',                                  showHeader: true  },
   'exam-reps':       { themeColor: '#5E9C7B', eyebrow: 'Technique · Practice',        subtitle: 'One real exam question at a time — marked the examiner’s way, so you see exactly where the marks were.', showHeader: true  },
@@ -483,6 +485,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             component: subjectProfile ? <FutureFinder uid={user!.uid} profile={subjectProfile} onOpenCareerPaths={(strings) => { setCareerSeedStrings(strings); setCareerSeedMatches(true); setActiveTool('career-paths'); }} /> : null,
         },
         {
+            id: 'future-finder-revamped', title: 'Future Finder Revamped', description: 'Interest-based (RIASEC) course matching — the new version, to compare with the original.', icon: Compass, needsProfile: true,
+            curriculum: 'senior' as const,
+            tag: 'Career Discovery', accentHex: '#C76489', gridClass: 'md:col-span-2',
+            iconBg: 'bg-pink-100 dark:bg-pink-900/30', iconColor: 'text-pink-700 dark:text-pink-300',
+            accentBarColor: 'bg-pink-500', tagBg: 'bg-pink-100 dark:bg-pink-900/30', tagText: 'text-pink-700 dark:text-pink-400',
+            hoverBorder: 'hover:border-pink-400/50 dark:hover:border-pink-500/40',
+            component: subjectProfile ? <FutureFinderRevamped uid={user!.uid} profile={subjectProfile} /> : null,
+        },
+        {
             id: 'syllabus-xray', title: 'Syllabus X-Ray', description: 'See where the marks are hiding in your exams.', icon: ScanSearch, needsProfile: false,
             curriculum: 'senior' as const,
             tag: 'Exam Intel', accentHex: '#e11d48', gridClass: 'md:col-span-2',
@@ -577,6 +588,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'command-word-reflex': 'understand',
         'how-they-did-it': 'understand',
         'career-paths': 'understand',
+        'future-finder-revamped': 'understand',
     };
 
     // Curriculum gating (Phase 4): JC users only see tools tagged 'both'
