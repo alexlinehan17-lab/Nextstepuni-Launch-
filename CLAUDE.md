@@ -11,11 +11,15 @@ Nextstepuni is an educational platform ("Learning Lab") that teaches university-
 ```bash
 npm install          # Install dependencies
 npm run dev          # Start dev server (localhost:3000)
-npm run build        # Production build via Vite
+npm run build        # Production build via Vite (esbuild — does NOT type-check)
 npm run preview      # Preview production build
+npm run typecheck    # tsc --noEmit — the type gate (sets --max-old-space-size=4096)
+npm run lint:ci      # ESLint (errors fail; warnings tolerated)
+npm run lint         # ESLint strict (--max-warnings 0; ~45 legacy warnings remain)
+npm test             # Vitest unit/smoke tests
 ```
 
-No test runner or linter is configured. There are no test or lint commands.
+CI (`.github/workflows/ci.yml`) runs `lint:ci` → `typecheck` → `build` on every push/PR to `main`. Important: `npm run build` (Vite/esbuild) transpiles per-file and does **not** type-check — `npm run typecheck` is the real type gate (and it needs extra Node heap, hence the script flag).
 
 ## Environment
 
@@ -23,19 +27,19 @@ No environment variables are required for the current build. There is no active 
 
 ## Architecture
 
-**Stack:** React 19 + TypeScript, Vite, Tailwind CSS (CDN), Framer Motion, Three.js (@react-three/fiber), Firebase (Auth + Firestore)
+**Stack:** React 19 + TypeScript, Vite, Tailwind CSS (v3, compiled at build time via PostCSS + autoprefixer — `tailwind.config.ts` + `index.css`, NOT a CDN), Framer Motion, Three.js (@react-three/fiber), Firebase (Auth + Firestore)
 
 **Entry flow:** `index.html` → `index.tsx` → `App.tsx`
 
-**App.tsx** (~310 lines) is the central orchestrator. It manages:
+**App.tsx** (~780 lines) is the central orchestrator. It manages:
 - Authentication state via Firebase `onAuthStateChanged`
 - User progress persistence (Firestore `users/{uid}` and `progress/{uid}` collections)
 - Route-like navigation via local state (no router library — views switch based on state)
 
 **Root-level modules:**
-- `moduleRegistry.ts` — Lazy-loads all 43 educational modules + InnovationZone via `React.lazy()` with default imports
+- `moduleRegistry.ts` — Lazy-loads ~83 registered modules (≈55 `*Module.tsx` component files; the per-subject modules all share one `SubjectModule.tsx`) + InnovationZone via `React.lazy()` with default imports
 - `courseData.ts` — Course metadata definitions (titles, descriptions, categories, tags) and `categoryColorMap`
-- `moduleThemes.ts` — Per-color Tailwind theme objects (literal class strings required for CDN scanning)
+- `moduleThemes.ts` — Per-color Tailwind theme objects (literal class strings required for Tailwind's JIT content scan)
 - `types.ts` — Shared types: `ModuleProgress`, `UserProgress`, `SectionDefinition`, `ModuleTheme`
 
 **Key components in `components/`:**
@@ -45,7 +49,7 @@ No environment variables are required for the current build. There is no active 
 - `AdminDashboard.tsx` — Admin-only analytics view
 - `ModuleLayout.tsx` — Shared sidebar + content layout used by all educational modules
 - `ModuleShared.tsx` — Reusable UI primitives: `Highlight`, `ReadingSection`, `MicroCommitment`, `ActivityRing`
-- `*Module.tsx` (43 files) — Individual educational modules, each using `ModuleLayout` with default exports
+- `*Module.tsx` (~55 files) — Individual educational modules, each using `ModuleLayout` with default exports
 
 **Module component interface:**
 ```typescript
@@ -73,18 +77,18 @@ interface ModuleProps {
 
 - User avatars generated via DiceBear API (`api.dicebear.com/9.x/notionists-neutral/svg`)
 - Firebase config is in `firebase.ts`; hosting config in `firebase.json`
-- Tailwind theme customization (fonts, colors) is in `index.html` via CDN config, not a tailwind.config file
+- Tailwind is compiled at build time (PostCSS + autoprefixer); config is `tailwind.config.ts`, directives in `index.css`. The hand-written `<style>` blocks in `index.html` are plain CSS, not Tailwind config. (A `cdn.tailwindcss.com` Workbox cache rule in `vite.config.ts` is a dead leftover — nothing loads Tailwind from a CDN.)
 - All module components use default exports for clean lazy-loading in `moduleRegistry.ts`
 
 ## Working With This Codebase
 
-**Always build-check after changes.** Run `npm run build` AND `npm run lint` after any non-trivial change. Both must pass with zero errors and zero warnings (`--max-warnings 0`).
+**Always check after changes.** Run `npm run typecheck` AND `npm run build` after any non-trivial change (CI also runs `npm run lint:ci`). `typecheck` must be clean (0 errors) — it's the real type gate; `build` alone does not type-check. The strict `npm run lint` (`--max-warnings 0`) still has ~45 legacy unused-var warnings, so CI uses `lint:ci` (errors fail, warnings tolerated) until those are burned down.
 
 **Check for cascading effects.** After making changes to any file, verify that imports, navigation (both mobile AND desktop), and dependent components still work. Never assume a fix is isolated. Specifically: if you remove an import, grep for the name in the file to confirm it's truly unused. If you touch navigation, check both `MobileBottomNav` in App.tsx and any desktop sidebar. If you modify a hook's return type, check every consumer.
 
-**Batch module awareness.** Changes to `ModuleLayout`, `ModuleShared`, the `ModuleTheme` type, or the module props interface can affect all 43 module files. Confirm the scope before editing.
+**Batch module awareness.** Changes to `ModuleLayout`, `ModuleShared`, the `ModuleTheme` type, or the module props interface can affect all ~55 module files. Confirm the scope before editing.
 
-**Tailwind CDN constraint.** Class strings must be written as full literals — never dynamically constructed (e.g. `` `bg-${color}-500` `` won't work). This is why `moduleThemes.ts` spells out every class per color. Any new theme tokens must follow this pattern.
+**Tailwind JIT content-scan constraint.** Class strings must be written as full literals — never dynamically constructed (e.g. `` `bg-${color}-500` `` won't work). Tailwind's JIT scans the source files in `tailwind.config.ts`'s `content` globs for literal class strings; constructed names are invisible to it. This is why `moduleThemes.ts` spells out every class per color. Any new theme tokens must follow this pattern.
 
 **Creating a new module:**
 1. Create `components/NewModule.tsx` — import a theme from `moduleThemes`, define `SectionDefinition[]`, use `ModuleLayout` + `ModuleShared` primitives, `export default`
@@ -319,15 +323,15 @@ Highlight variant (key concept): `background: #FDEEDF` (accent tint), `border: 2
 
 ---
 
-### Tailwind CDN Constraint — Critical
+### Tailwind JIT Constraint — Critical
 
-All Tailwind class strings must be FULL LITERALS. Never dynamically construct classes like `bg-${color}-500` — the CDN scanner cannot detect these and they will not render. Use inline `style={{}}` props for any dynamic values (e.g. cell colours driven by state, progress bar widths, dynamic hex values).
+All Tailwind class strings must be FULL LITERALS. Never dynamically construct classes like `bg-${color}-500` — Tailwind's JIT content scan cannot detect these and they will not render. Use inline `style={{}}` props for any dynamic values (e.g. cell colours driven by state, progress bar widths, dynamic hex values).
 
 ---
 
 ### Build Verification
 
-Always run `npm run build` after any non-trivial visual change. There are no tests or linters — the build is the only verification.
+Always run `npm run typecheck` and `npm run build` after any non-trivial visual change. Vitest smoke tests run via `npm test`; CI runs lint:ci → typecheck → build.
 
 ## Examiner reports library
 
@@ -557,7 +561,7 @@ Stage 2 and Stage 3 each introduced reusable visual idioms. Stage 3 specifically
    - **Stage 2 / Stage 3 (Tools / Subject Deep Dives)**: build a minimal back-bar + hero + dense interactive body. Don't use the Stage 1 shell. Animation must encode meaning.
 4. Wire it into `index.tsx`'s `KnowledgeModuleView` switch.
 5. If the module's closing screen produces a personalised insight, add a `writePattern('<key>', { ... })` call to capture it for the cross-module "Your patterns" panel. See `knowledgePatterns.ts` for the registered keys; extend the `PatternSignals` interface and `buildInsights()` in `NecessaryKnowledge.tsx` to surface it.
-6. `npm run build` to verify clean. (No tests / linter — build is the only verification.)
+6. `npm run typecheck` + `npm run build` to verify clean.
 7. Commit per module if it's a significant standalone shipment.
 
 ### Stage roadmap
