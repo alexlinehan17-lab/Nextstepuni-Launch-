@@ -3,18 +3,23 @@
  * SPDX-License-Identifier: Apache-2.0
  *
  * useCollegeCompass — owns the `collegeCompass` field on the shared
- * progress/{uid} Firestore doc. Modelled on useMockResults.
+ * progress/{uid} Firestore doc.
+ *
+ * Loads FRESH from Firestore on every mount (getDoc) rather than from the shared
+ * progress context: that context snapshot is taken at app start and isn't
+ * refreshed after this tool writes, so seeding from it dropped the student's
+ * marks when they left and came back. A direct read always restores them. (Same
+ * fix applied to useFutureFinderRevamped.)
  *
  * Writes are additive merge writes scoped to the `collegeCompass` namespace —
  * they never touch pointsData/gamification, so they can't violate the strict
  * progress-doc invariants in firestore.rules, and need NO rules change.
- * Checklist toggles are debounced; a pending write is flushed on unmount so
- * the last toggle isn't lost when the student navigates back out of the tool.
+ * Checklist toggles are debounced; a pending write is flushed on unmount so the
+ * last toggle isn't lost when the student navigates back out of the tool.
  */
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { doc, setDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { useProgress } from '../contexts/ProgressContext';
 import { type CollegeCompassState } from '../types';
 
 const EMPTY: CollegeCompassState = { checklist: {}, updatedAt: '' };
@@ -29,37 +34,38 @@ function stripUndefined<T extends Record<string, unknown>>(obj: T): T {
   return out as T;
 }
 
+/** Normalise a stored checklist, tolerating legacy boolean `true` (= done). */
+function normaliseChecklist(raw: Record<string, unknown> | undefined): Record<string, 'in-progress' | 'done'> {
+  const checklist: Record<string, 'in-progress' | 'done'> = {};
+  for (const [k, v] of Object.entries(raw ?? {})) {
+    if (v === 'done' || v === true) checklist[k] = 'done';
+    else if (v === 'in-progress') checklist[k] = 'in-progress';
+  }
+  return checklist;
+}
+
 export function useCollegeCompass(uid: string | undefined) {
-  const { rawProgressDoc, progressLoaded } = useProgress();
   const [state, setState] = useState<CollegeCompassState>(EMPTY);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const seededRef = useRef(false);
   const writeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const pendingWrite = useRef<(() => void) | null>(null);
 
-  // Re-seed when the user changes.
+  // Load fresh from Firestore on every mount / uid change.
   useEffect(() => {
-    seededRef.current = false;
+    let cancelled = false;
     setIsLoaded(false);
+    if (!uid) { setState(EMPTY); setIsLoaded(true); return; }
+    getDoc(doc(db, 'progress', uid))
+      .then((snap) => {
+        if (cancelled) return;
+        const saved = snap.data()?.collegeCompass as (Omit<CollegeCompassState, 'checklist'> & { checklist?: Record<string, unknown> }) | undefined;
+        setState(saved ? { ...EMPTY, ...saved, checklist: normaliseChecklist(saved.checklist) } : EMPTY);
+        setIsLoaded(true);
+      })
+      .catch(() => { if (!cancelled) { setState(EMPTY); setIsLoaded(true); } });
+    return () => { cancelled = true; };
   }, [uid]);
-
-  // Seed local state from the raw progress doc, once, after progress loads.
-  useEffect(() => {
-    if (!progressLoaded || seededRef.current) return;
-    const saved = rawProgressDoc?.collegeCompass as (Omit<CollegeCompassState, 'checklist'> & { checklist?: Record<string, unknown> }) | undefined;
-    if (saved) {
-      // Normalise the checklist, tolerating legacy boolean `true` (= done).
-      const checklist: Record<string, 'in-progress' | 'done'> = {};
-      for (const [k, v] of Object.entries(saved.checklist ?? {})) {
-        if (v === 'done' || v === true) checklist[k] = 'done';
-        else if (v === 'in-progress') checklist[k] = 'in-progress';
-      }
-      setState({ ...EMPTY, ...saved, checklist });
-    }
-    seededRef.current = true;
-    setIsLoaded(true);
-  }, [progressLoaded, rawProgressDoc]);
 
   // Flush any pending debounced write on unmount (navigating back out).
   useEffect(() => () => {

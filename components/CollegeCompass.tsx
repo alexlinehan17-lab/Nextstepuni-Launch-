@@ -310,8 +310,10 @@ const JourneyStopCard: React.FC<StopCardProps> = ({ stop, state, mode, isOpen, o
             {/* embedded mini-tool */}
             {embedded}
 
-            {/* checklist (live mode only) */}
-            {!preview && stop.checklistItems.length > 0 && (
+            {/* checklist — markable by all senior years (the date countdowns
+                stay year-calibrated above; only this tappable list is shown
+                everywhere so students can mark progress + it reaches the GC). */}
+            {stop.checklistItems.length > 0 && (
               <div>
                 <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400 mb-2">Your checklist</p>
                 <div className="space-y-1.5">
