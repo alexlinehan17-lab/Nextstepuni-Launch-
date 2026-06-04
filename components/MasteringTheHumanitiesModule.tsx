@@ -189,7 +189,7 @@ const SRPBuilder = () => {
 
       {/* Assembled SRP */}
       {completed && (
-        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.15 }} className="mt-8 p-5 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl" style={{ borderLeft: '4px solid #10B981' }}>
+        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.15 }} className="mt-8 p-5 rounded-xl" style={{ backgroundColor: '#E8F2EC', borderLeft: '3px solid #3A8D5F' }}>
           <div className="flex items-center justify-between mb-2">
             <p className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Assembled SRP</p>
             <span className="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500 text-white">2 MARKS</span>

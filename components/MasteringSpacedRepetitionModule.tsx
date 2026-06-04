@@ -229,7 +229,7 @@ const ForgettingCurveVisualizer = () => {
         <div className="grid grid-cols-2 gap-3">
           <div className="bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '18px 20px' }}>
             <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', marginBottom: 8, textTransform: 'uppercase' as const }}>No reviews — Day 30</p>
-            <p className="font-serif font-bold" style={{ fontSize: 40, color: '#E85D75', lineHeight: 1 }}>{baselineRetention}%</p>
+            <p className="font-serif font-bold" style={{ fontSize: 40, color: '#9e9186', lineHeight: 1 }}>{baselineRetention}%</p>
             <p style={{ fontSize: 12, color: '#9e9186', marginTop: 6 }}>retention without practice</p>
           </div>
           <div className="text-center" style={{ backgroundColor: reviewCount > 0 ? COLORS.accentTint : '#FFFFFF', border: reviewCount > 0 ? `2px solid ${COLORS.accent}` : '2px solid #1a1a1a', borderRadius: 14, padding: '18px 20px' }}>
@@ -309,9 +309,9 @@ const RetentionCurveComparison = () => {
         { label: 'Gone', x1: 0.66, x2: 1, color: '#ef4444' },
     ];
     const spacerPhases = [
-        { label: 'Learn + review', x1: 0, x2: 0.33, color: '#6ee7b7' },
-        { label: 'Spaces widen', x1: 0.33, x2: 0.66, color: '#34d399' },
-        { label: 'Locked in', x1: 0.66, x2: 1, color: '#10b981' },
+        { label: 'Learn + review', x1: 0, x2: 0.33, color: '#3A8D5F' },
+        { label: 'Spaces widen', x1: 0.33, x2: 0.66, color: '#3A8D5F' },
+        { label: 'Locked in', x1: 0.66, x2: 1, color: '#3A8D5F' },
     ];
 
     const Chart = ({ effort, stress, phases, areaColor, areaId, stressColor, label }: {
@@ -401,7 +401,7 @@ const RetentionCurveComparison = () => {
                         </div>
                         <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
                             <Chart effort={spacerRetention} stress={spacerStress} phases={spacerPhases}
-                                areaColor="#10b981" areaId="spacer-grad" stressColor="#f59e0b" label="The Spacer" />
+                                areaColor="#3A8D5F" areaId="spacer-grad" stressColor="#f59e0b" label="The Spacer" />
                         </div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-4 text-sm">

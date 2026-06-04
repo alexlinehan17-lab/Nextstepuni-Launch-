@@ -86,7 +86,7 @@ const YetReframe = () => {
                   {/* Status indicator */}
                   <motion.div
                     animate={{
-                      backgroundColor: isReframed ? '#10b981' : '#e4e4e7',
+                      backgroundColor: isReframed ? '#3A8D5F' : '#e4e4e7',
                       scale: isAnimating ? [1, 1.3, 1] : 1,
                     }}
                     className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
@@ -347,9 +347,9 @@ const BridgeBuilder = () => {
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.3 }}
                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
-                style={{ height: 48, width: '30%', borderRadius: 8, backgroundColor: '#fde4e4', border: '2px solid #E85D75' }}
+                style={{ height: 48, width: '30%', borderRadius: 8, backgroundColor: '#F1F0ED', border: '2px solid #A8746E' }}
               >
-                <span style={{ fontSize: 12, fontWeight: 600, color: '#E85D75' }}>Crack!</span>
+                <span style={{ fontSize: 12, fontWeight: 600, color: '#A8746E' }}>Crack!</span>
               </MotionDiv>
             )}
           </AnimatePresence>
@@ -374,9 +374,9 @@ const BridgeBuilder = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
             className="mb-4"
-            style={{ borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
+            style={{ border: '1px solid #d0cdc8', backgroundColor: '#F1F0ED', borderRadius: 10, padding: '12px 16px' }}
           >
-            <p className="text-sm italic" style={{ color: '#b33030' }}>{feedback}</p>
+            <p className="text-sm italic" style={{ color: '#A8746E' }}>{feedback}</p>
           </MotionDiv>
         )}
       </AnimatePresence>

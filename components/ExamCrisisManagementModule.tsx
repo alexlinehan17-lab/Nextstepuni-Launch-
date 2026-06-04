@@ -486,7 +486,7 @@ const CrisisScenarioTrainer = () => {
                         </div>
 
                         {/* Scenario card */}
-                        <div className="bg-white dark:bg-zinc-900 mb-6 flex items-start gap-3" style={{ border: '2px solid #1a1a1a', borderLeft: '5px solid #E85D75', borderRadius: 14, padding: '20px 24px' }}>
+                        <div className="bg-white dark:bg-zinc-900 mb-6 flex items-start gap-3" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '20px 24px' }}>
                             <div className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center mt-0.5" style={{ backgroundColor: '#fde4e4' }}>
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E85D75" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
                             </div>
@@ -511,7 +511,7 @@ const CrisisScenarioTrainer = () => {
                                                     ? response.quality === 'good'
                                                         ? { backgroundColor: COLORS.successTint, border: `2px solid ${COLORS.success}`, borderRadius: 14 }
                                                         : response.quality === 'bad'
-                                                            ? { backgroundColor: '#fde4e4', border: '2px solid #E85D75', borderLeft: '4px solid #E85D75', borderRadius: 14 }
+                                                            ? { backgroundColor: '#fde4e4', border: '2px solid #E85D75', borderRadius: 14 }
                                                             : { backgroundColor: '#f4f0eb', border: '2px solid #9e9186', borderRadius: 14 }
                                                     : { backgroundColor: '#FFFFFF', border: '2px solid #d0cdc8', borderRadius: 14, opacity: 0.4 }
                                                 : { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 14, cursor: 'pointer' }

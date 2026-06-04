@@ -156,7 +156,7 @@ const ABQAnswerScaffold = () => {
       </p>
 
       {/* Case extract */}
-      <div className="mt-8 p-5 bg-zinc-50 dark:bg-zinc-900 rounded-lg" style={{ borderLeft: '4px solid #A1A1AA' }}>
+      <div className="mt-8 p-5 bg-zinc-50 dark:bg-zinc-900 rounded-lg" style={{ border: '1px solid #d0cdc8' }}>
         <p className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-2">
           Case Extract
         </p>

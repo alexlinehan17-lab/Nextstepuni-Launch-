@@ -17,7 +17,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const TEAL = '#F26B1F'; // Brand pivot — was #F26B1F (teal); now orange. TODO: rename constant.
+const ACCENT = '#F26B1F'; // Brand accent (orange).
 
 // ── Item icons — painted-blob + ink-illustration, 100x100 viewBox ───────
 const StudySessionIcon: React.FC = () => (
@@ -195,7 +195,7 @@ const ItemCard: React.FC<{ item: Item }> = ({ item }) => (
     className="rounded-xl"
     style={{
       background: '#FAFBF6',
-      border: `1px solid ${TEAL}26`,
+      border: `1px solid ${ACCENT}26`,
       padding: 18,
     }}
   >
@@ -220,7 +220,7 @@ const ItemCard: React.FC<{ item: Item }> = ({ item }) => (
       style={{
         fontSize: 22,
         fontWeight: 500,
-        color: TEAL,
+        color: ACCENT,
         margin: 0,
         marginTop: 4,
         lineHeight: 1.15,
@@ -265,7 +265,7 @@ const PointsPanel: React.FC<PointsPanelProps> = ({ open, onHide }) => (
           className="rounded-[18px]"
           style={{
             background: '#FAFBF6',
-            border: `1px solid ${TEAL}40`,
+            border: `1px solid ${ACCENT}40`,
             boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
             padding: 32,
           }}
@@ -304,7 +304,7 @@ const PointsPanel: React.FC<PointsPanelProps> = ({ open, onHide }) => (
                 className="font-serif italic"
                 style={{
                   fontSize: 18,
-                  color: TEAL,
+                  color: ACCENT,
                   margin: 0,
                   marginTop: 6,
                   lineHeight: 1.35,
@@ -338,7 +338,7 @@ const PointsPanel: React.FC<PointsPanelProps> = ({ open, onHide }) => (
               fontWeight: 700,
               letterSpacing: '0.22em',
               textTransform: 'uppercase',
-              color: TEAL,
+              color: ACCENT,
               margin: 0,
               marginTop: 24,
               marginBottom: 12,
@@ -360,7 +360,7 @@ const PointsPanel: React.FC<PointsPanelProps> = ({ open, onHide }) => (
               fontWeight: 700,
               letterSpacing: '0.22em',
               textTransform: 'uppercase',
-              color: TEAL,
+              color: ACCENT,
               margin: 0,
               marginTop: 24,
               marginBottom: 12,

@@ -718,11 +718,11 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
 
       {/* H. Maths Bonus Explainer */}
       {hasMathsHL && (
-        <div className="flex items-start gap-3 pl-4" style={{ borderLeft: '2px solid #e4e4e7' }}>
-          <Info size={16} className="text-zinc-400 flex-shrink-0 mt-0.5" />
+        <div className="flex items-start gap-3 p-3 rounded-r-lg" style={{ backgroundColor: '#FDEEDF', borderLeft: '3px solid #F26B1F' }}>
+          <Info size={16} className="flex-shrink-0 mt-0.5" style={{ color: '#F26B1F' }} />
           <div>
-            <p className="text-xs font-medium text-zinc-500 italic">Maths HL Bonus</p>
-            <p className="text-xs text-zinc-500 leading-relaxed mt-1 italic">
+            <p className="text-xs font-medium italic" style={{ color: '#8C3A0E' }}>Maths HL Bonus</p>
+            <p className="text-xs leading-relaxed mt-1 italic" style={{ color: '#8C3A0E' }}>
               Students taking Higher Level Mathematics receive an additional 25 CAO points for grades H1 through H6. This bonus is automatically included in all calculations above.
             </p>
           </div>

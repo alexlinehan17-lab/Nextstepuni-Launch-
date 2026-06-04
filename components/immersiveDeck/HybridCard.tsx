@@ -91,14 +91,14 @@ export const Band: React.FC<{
 
 /** Primary CTA — the app's orange chunky pill. */
 export const OrangeBtn: React.FC<{ label: string; icon?: LucideIcon; onClick: () => void; className?: string }> = ({ label, icon: Icon, onClick, className }) => (
-  <button onClick={onClick} className={`inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-[14px] font-semibold text-white transition-transform active:translate-y-[3px] ${className ?? ''}`} style={{ backgroundColor: ACCENT, boxShadow: `0 4px 0 ${ACCENT_DARK}` }}>
+  <button onClick={onClick} className={`inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-[14px] font-semibold text-white transition-transform active:translate-y-[3px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a1a1a] ${className ?? ''}`} style={{ backgroundColor: ACCENT, boxShadow: `0 4px 0 ${ACCENT_DARK}` }}>
     {label} {Icon && <Icon size={16} />}
   </button>
 );
 
 /** Neutral / secondary action — white pill, muted border. */
 export const NeutralBtn: React.FC<{ label: string; icon?: LucideIcon; onClick: () => void }> = ({ label, icon: Icon, onClick }) => (
-  <button onClick={onClick} className="inline-flex items-center gap-1.5 px-5 py-3 rounded-full text-[13.5px] font-semibold transition-colors" style={{ backgroundColor: '#fff', border: '2px solid #d0cdc8', color: MUTED }}>
+  <button onClick={onClick} className="inline-flex items-center gap-1.5 px-5 py-3 rounded-full text-[13.5px] font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F26B1F]" style={{ backgroundColor: '#fff', border: '2px solid #d0cdc8', color: MUTED }}>
     {Icon && <Icon size={15} />} {label}
   </button>
 );
@@ -110,11 +110,11 @@ export const Eyebrow: React.FC<{ children: React.ReactNode }> = ({ children }) =
 
 /** Light segmented toggle (active pill = colour). */
 export const Segment: React.FC<{ options: { value: string; label: string }[]; value: string; onChange: (v: string) => void; wd: ColorWorld }> = ({ options, value, onChange, wd }) => (
-  <div className="inline-flex rounded-full p-1" style={{ backgroundColor: '#f0efed' }}>
+  <div role="group" className="inline-flex rounded-full p-1" style={{ backgroundColor: '#f0efed' }}>
     {options.map((o) => {
       const active = o.value === value;
       return (
-        <button key={o.value} onClick={() => onChange(o.value)} className="px-3.5 py-1.5 rounded-full text-[12.5px] font-semibold transition-colors" style={active ? { backgroundColor: wd.bg, color: '#fff' } : { color: MUTED }}>
+        <button key={o.value} type="button" aria-pressed={active} onClick={() => onChange(o.value)} className="px-3.5 py-1.5 rounded-full text-[12.5px] font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F26B1F]" style={active ? { backgroundColor: wd.bg, color: '#fff' } : { color: MUTED }}>
           {o.label}
         </button>
       );

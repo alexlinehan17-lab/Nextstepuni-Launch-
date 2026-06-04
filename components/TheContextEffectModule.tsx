@@ -265,7 +265,7 @@ const ContextCueExplorer = () => {
                     </span>
                   ))}
                   {survivingCount === 0 && (
-                    <span className="italic" style={{ fontSize: 12, color: '#E85D75' }}>Nothing matches — your brain has zero familiar clues to help you remember</span>
+                    <span className="italic" style={{ fontSize: 12, color: '#A8746E' }}>Nothing matches — your brain has zero familiar clues to help you remember</span>
                   )}
                 </div>
               </div>
@@ -280,14 +280,14 @@ const ContextCueExplorer = () => {
                     {(100 - lostPercent) > 15 && <span style={{ fontSize: 11, fontWeight: 600, color: '#FFFFFF' }}>{100 - lostPercent}% survive</span>}
                   </MotionDiv>
                 )}
-                <MotionDiv className="h-full flex items-center justify-center" style={{ backgroundColor: '#E85D75' }} initial={{ width: 0 }} animate={{ width: `${lostPercent}%` }} transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}>
-                  {lostPercent > 15 && <span style={{ fontSize: 11, fontWeight: 600, color: '#FFFFFF' }}>{lostPercent}% lost</span>}
+                <MotionDiv className="h-full flex items-center justify-center" style={{ backgroundColor: '#d0cdc8' }} initial={{ width: 0 }} animate={{ width: `${lostPercent}%` }} transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}>
+                  {lostPercent > 15 && <span style={{ fontSize: 11, fontWeight: 600, color: '#5a5550' }}>{lostPercent}% lost</span>}
                 </MotionDiv>
               </div>
             </div>
 
-            <div style={{ borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-              <p className="text-sm" style={{ color: '#b33030' }}>
+            <div style={{ border: '1px solid #d0cdc8', backgroundColor: '#F1F0ED', borderRadius: 10, padding: '12px 16px' }}>
+              <p className="text-sm" style={{ color: '#7a7068' }}>
                 <strong>You lost {lostPercent}% of the clues your brain uses to remember.</strong>{' '}
                 {lostPercent >= 75
                   ? 'Your memories are tied tightly to your study spot. Studying in different places would help your brain remember without needing those clues.'

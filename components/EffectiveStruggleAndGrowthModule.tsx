@@ -28,7 +28,7 @@ const CognitiveLoadBalancer = () => {
 
     const loadTypes: { key: 'intrinsic' | 'extraneous' | 'germane'; label: string; plain: string; example: string; direction: string; color: string; barColor: string; fixed?: boolean }[] = [
       { key: 'intrinsic', label: 'Intrinsic Load', plain: 'The difficulty of the topic itself', example: 'e.g., Probability is harder than basic addition', direction: 'Fixed — you can\'t change this, only manage around it', color: '#1a1a1a', barColor: '#e0dbd4', fixed: true },
-      { key: 'extraneous', label: 'Extraneous Load', plain: 'Waste from distractions & confusion', example: 'e.g., Phone buzzing, noisy room, unclear instructions', direction: 'Minimize this — it steals space from learning', color: '#E85D75', barColor: '#E85D75' },
+      { key: 'extraneous', label: 'Extraneous Load', plain: 'Waste from distractions & confusion', example: 'e.g., Phone buzzing, noisy room, unclear instructions', direction: 'Minimize this — it steals space from learning', color: '#A8746E', barColor: '#A8746E' },
       { key: 'germane', label: 'Germane Load', plain: 'The productive effort that builds memory', example: 'e.g., Active recall, self-explanation, practice questions', direction: 'Maximize this — it\'s the only load that causes learning', color: COLORS.success, barColor: COLORS.success },
     ];
 
@@ -45,12 +45,12 @@ const CognitiveLoadBalancer = () => {
         <div className="mb-8">
           <div className="flex items-center justify-between mb-2">
             <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', textTransform: 'uppercase' as const }}>Working Memory Capacity</span>
-            <span className="font-semibold" style={{ fontSize: 13, color: overload ? '#E85D75' : COLORS.success }}>{total}% / 100%</span>
+            <span className="font-semibold" style={{ fontSize: 13, color: overload ? '#A8746E' : COLORS.success }}>{total}% / 100%</span>
           </div>
           <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 12, overflow: 'hidden', height: 28 }}>
             <div className="flex h-full">
               <motion.div style={{ backgroundColor: '#e0dbd4' }} animate={{ width: `${Math.min(loads.intrinsic, 100)}%` }} transition={{ duration: 0.3 }} />
-              <motion.div style={{ backgroundColor: '#E85D75' }} animate={{ width: `${Math.min(loads.extraneous, 100 - loads.intrinsic > 0 ? loads.extraneous : 0)}%` }} transition={{ duration: 0.3 }} />
+              <motion.div style={{ backgroundColor: '#A8746E' }} animate={{ width: `${Math.min(loads.extraneous, 100 - loads.intrinsic > 0 ? loads.extraneous : 0)}%` }} transition={{ duration: 0.3 }} />
               <motion.div style={{ backgroundColor: COLORS.success }} animate={{ width: `${Math.min(loads.germane, germaneRoom > 0 ? loads.germane : 0)}%` }} transition={{ duration: 0.3 }} />
             </div>
           </div>
@@ -61,7 +61,7 @@ const CognitiveLoadBalancer = () => {
               <span style={{ fontSize: 12, color: '#7a7068' }}>Intrinsic</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#E85D75' }} />
+              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#A8746E' }} />
               <span style={{ fontSize: 12, color: '#7a7068' }}>Extraneous</span>
             </div>
             <div className="flex items-center gap-1.5">
@@ -104,8 +104,8 @@ const CognitiveLoadBalancer = () => {
         {/* Diagnosis callout */}
         <AnimatePresence mode="wait">
           {overload ? (
-            <motion.div key="overload" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} style={{ borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-              <p className="text-sm italic" style={{ color: '#b33030' }}>Working memory overloaded — learning becomes very difficult at this point.</p>
+            <motion.div key="overload" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} style={{ borderLeft: '3px solid #A8746E', backgroundColor: '#F1ECEA', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
+              <p className="text-sm italic" style={{ color: '#A8746E' }}>Working memory overloaded — learning becomes very difficult at this point.</p>
             </motion.div>
           ) : healthy ? (
             <motion.div key="healthy" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} style={{ borderLeft: `3px solid ${COLORS.success}`, backgroundColor: COLORS.successTint, borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
@@ -474,7 +474,7 @@ const ConfidenceRetentionParadox = () => {
     const activePhases = [
         { label: 'Feels hard', x1: 0, x2: 0.33, color: '#6ee7b7' },
         { label: 'Building', x1: 0.33, x2: 0.66, color: '#34d399' },
-        { label: 'Exam ready', x1: 0.66, x2: 1, color: '#10b981' },
+        { label: 'Exam ready', x1: 0.66, x2: 1, color: COLORS.success },
     ];
 
     const Chart = ({ confidence, retention, phases, areaColor, areaId, areaData, label }: {
@@ -564,7 +564,7 @@ const ConfidenceRetentionParadox = () => {
                         </div>
                         <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
                             <Chart confidence={activeConfidence} retention={activeRetention} phases={activePhases}
-                                areaColor="#10b981" areaId="active-grad" areaData={activeRetention} label="Active Recall" />
+                                areaColor={COLORS.success} areaId="active-grad" areaData={activeRetention} label="Active Recall" />
                         </div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-4 text-sm">

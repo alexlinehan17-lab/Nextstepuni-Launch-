@@ -99,8 +99,8 @@ const GlycemicIndexSimulator = () => {
             onClick={() => toggle('low')}
             className={`px-4 py-2 text-xs font-bold rounded-lg border transition-all ${
               selected.has('low')
-                ? 'bg-emerald-500 text-white border-emerald-500'
-                : 'bg-emerald-50 text-emerald-700 border-emerald-200 hover:border-emerald-400'
+                ? 'bg-success text-white border-success'
+                : 'bg-successTint text-successDarkText border-success/40 hover:border-success'
             }`}
           >
             Porridge (Low-GI)
@@ -114,13 +114,12 @@ const GlycemicIndexSimulator = () => {
             <rect
               x={padL} y={focusTop}
               width={chartW} height={focusBottom - focusTop}
-              fill="currentColor"
-              className="text-emerald-100 dark:text-emerald-900/20"
+              fill="#E8F2EC"
             />
             <text
               x={padL + 4} y={focusTop + 11}
               className="text-[7px] font-bold"
-              fill="#10b981"
+              fill="#3A8D5F"
               opacity={0.6}
             >
               FOCUS ZONE
@@ -175,7 +174,7 @@ const GlycemicIndexSimulator = () => {
               <motion.path
                 d={lowPath}
                 fill="none"
-                stroke="#10b981"
+                stroke="#3A8D5F"
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -202,7 +201,7 @@ const GlycemicIndexSimulator = () => {
             )}
             {selected.has('low') && (
               <div className="flex items-center gap-2">
-                <div className="w-5 h-1 rounded-full bg-emerald-500" />
+                <div className="w-5 h-1 rounded-full" style={{ backgroundColor: '#3A8D5F' }} />
                 <span className="text-[10px] text-zinc-500 dark:text-zinc-400">Steady release — stays in focus zone for 3 hours</span>
               </div>
             )}
@@ -234,7 +233,7 @@ const formatTime = (hour24: number): string => {
 const getZone = (hoursAwake: number): { fill: string; bg: string; border: string; text: string; label: string; desc: string; zoneIdx: number } => {
   if (hoursAwake < 12) return { fill: '#F26B1F', bg: '#FDEEDF', border: '#F26B1F', text: '#8C3A0E', label: 'Sharp', desc: 'Peak cognitive performance window', zoneIdx: 0 };
   if (hoursAwake < 15) return { fill: '#9e9186', bg: '#f4f0eb', border: '#d0cdc8', text: '#5a5550', label: 'Declining', desc: 'Focus and recall starting to dip', zoneIdx: 1 };
-  if (hoursAwake < 17) return { fill: '#E85D75', bg: '#fde4e4', border: '#E85D75', text: '#b33030', label: 'Impaired', desc: 'Significant reduction in working memory', zoneIdx: 2 };
+  if (hoursAwake < 17) return { fill: '#A8746E', bg: '#F1F0ED', border: '#A8746E', text: '#A8746E', label: 'Impaired', desc: 'Significant reduction in working memory', zoneIdx: 2 };
   return { fill: '#b33030', bg: '#fde4e4', border: '#b33030', text: '#7a0000', label: 'Critical', desc: 'Equivalent to mild alcohol impairment', zoneIdx: 3 };
 };
 
@@ -415,8 +414,8 @@ const CognitiveImpairmentClock = () => {
 
           {/* Milestone flash */}
           {lastMilestone && (
-            <MotionDiv key={lastMilestone} initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: 'spring', stiffness: 300, damping: 20 }} style={{ borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-              <p className="text-sm font-bold italic" style={{ color: '#b33030' }}>{lastMilestone}</p>
+            <MotionDiv key={lastMilestone} initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: 'spring', stiffness: 300, damping: 20 }} style={{ backgroundColor: '#F1F0ED', border: '1px solid #d0cdc8', borderRadius: 10, padding: '12px 16px' }}>
+              <p className="text-sm font-bold italic" style={{ color: '#A8746E' }}>{lastMilestone}</p>
             </MotionDiv>
           )}
 
@@ -437,17 +436,17 @@ const CognitiveImpairmentClock = () => {
         <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="space-y-5">
           <div className="bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: '28px 32px', maxWidth: 380, margin: '0 auto' }}>
             <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', textTransform: 'uppercase' as const, marginBottom: 8 }}>Impairment Begins At</p>
-            <p className="font-serif font-semibold" style={{ fontSize: 48, color: '#E85D75', letterSpacing: '-0.02em' }}>{impairedTime}</p>
+            <p className="font-serif font-semibold" style={{ fontSize: 48, color: '#A8746E', letterSpacing: '-0.02em' }}>{impairedTime}</p>
             <p className="mt-2" style={{ fontSize: 14, color: '#7a7068' }}>This is when you become cognitively impaired.</p>
           </div>
 
-          <div style={{ borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-            <p className="text-sm" style={{ color: '#b33030' }}>
+          <div style={{ backgroundColor: '#F1F0ED', border: '1px solid #d0cdc8', borderRadius: 10, padding: '12px 16px' }}>
+            <p className="text-sm" style={{ color: '#7a7068' }}>
               <span className="font-bold">If you wake at {formatTime(wakeHour)}</span>, your cognition starts declining by{' '}
               <span className="font-bold">{decliningTime}</span> and you are cognitively impaired by{' '}
               <span className="font-bold">{impairedTime}</span>.
             </p>
-            <p className="text-sm font-bold mt-1" style={{ color: '#b33030' }}>
+            <p className="text-sm font-bold mt-1" style={{ color: '#A8746E' }}>
               Studying after {impairedTime} is like studying drunk.
             </p>
           </div>

@@ -9,6 +9,7 @@ import ReactDOM from 'react-dom/client';
 import { Capacitor } from '@capacitor/core';
 import { StatusBar, Style } from '@capacitor/status-bar';
 import './index.css';
+import { MotionConfig } from 'framer-motion';
 import App from './App';
 import ErrorBoundary from './components/ErrorBoundary';
 import PullToRefresh from './components/PullToRefresh';
@@ -50,9 +51,11 @@ root.render(
         <AuthProvider>
           <ProgressProvider>
             <NavigationProvider>
-              <PullToRefresh>
-                <App />
-              </PullToRefresh>
+              <MotionConfig reducedMotion="user">
+                <PullToRefresh>
+                  <App />
+                </PullToRefresh>
+              </MotionConfig>
             </NavigationProvider>
           </ProgressProvider>
         </AuthProvider>

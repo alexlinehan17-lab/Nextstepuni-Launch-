@@ -55,7 +55,7 @@ const StressResponseComparison = () => {
     };
 
     const phases = [
-        { label: 'Thinking zone', x1: 0, x2: 0.33, color: '#10b981' },
+        { label: 'Thinking zone', x1: 0, x2: 0.33, color: '#3A8D5F' },
         { label: 'Tipping point', x1: 0.33, x2: 0.66, color: '#f59e0b' },
         { label: 'Survival mode', x1: 0.66, x2: 1, color: '#ef4444' },
     ];
@@ -64,8 +64,8 @@ const StressResponseComparison = () => {
         <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
             <defs>
                 <linearGradient id="pfc-grad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#10b981" stopOpacity="0.4" />
-                    <stop offset="100%" stopColor="#10b981" stopOpacity="0.03" />
+                    <stop offset="0%" stopColor="#3A8D5F" stopOpacity="0.4" />
+                    <stop offset="100%" stopColor="#3A8D5F" stopOpacity="0.03" />
                 </linearGradient>
                 <linearGradient id="amyg-grad" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="0%" stopColor="#ef4444" stopOpacity="0.4" />
@@ -97,7 +97,7 @@ const StressResponseComparison = () => {
             {/* PFC line */}
             <motion.path
                 d={buildLine(pfcData)}
-                fill="none" stroke="#10b981" strokeWidth="2.5" strokeLinecap="round"
+                fill="none" stroke="#3A8D5F" strokeWidth="2.5" strokeLinecap="round"
                 initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
                 transition={{ duration: 1.2, ease: 'easeOut' }}
             />
@@ -110,7 +110,7 @@ const StressResponseComparison = () => {
             />
             {/* PFC dots */}
             {pfcData.map((v, i) => (
-                <motion.circle key={`pfc-${i}`} cx={toX(i / (pfcData.length - 1))} cy={toY(v)} r="3.5" fill="#10b981"
+                <motion.circle key={`pfc-${i}`} cx={toX(i / (pfcData.length - 1))} cy={toY(v)} r="3.5" fill="#3A8D5F"
                     initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 * i + 0.3 }}
                 />
             ))}
@@ -134,7 +134,7 @@ const StressResponseComparison = () => {
             {/* Chart label */}
             <text x={W / 2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">Brain Activity Under Exam Stress</text>
             {/* Legend */}
-            <line x1={W - padR - 168} x2={W - padR - 152} y1={14} y2={14} stroke="#10b981" strokeWidth="2" />
+            <line x1={W - padR - 168} x2={W - padR - 152} y1={14} y2={14} stroke="#3A8D5F" strokeWidth="2" />
             <text x={W - padR - 148} y={17} fontSize="8" fill="#a1a1aa">Prefrontal Cortex</text>
             <line x1={W - padR - 64} x2={W - padR - 48} y1={14} y2={14} stroke="#ef4444" strokeWidth="2" />
             <text x={W - padR - 44} y={17} fontSize="8" fill="#a1a1aa">Amygdala</text>
@@ -195,13 +195,13 @@ const PFCShutdownSimulator = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             {/* Amygdala card */}
-            <div className="bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #E85D75', borderRadius: 14, padding: '20px 16px' }}>
+            <div className="bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #A8746E', borderRadius: 14, padding: '20px 16px' }}>
               <motion.div
                 animate={stressed ? { scale: [1, 1.1, 1] } : { scale: 1 }}
                 transition={stressed ? { duration: 1.2, repeat: Infinity } : {}}
-                style={{ width: 52, height: 52, borderRadius: '50%', background: '#fde4e4', border: '2px solid rgba(232,93,117,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px' }}
+                style={{ width: 52, height: 52, borderRadius: '50%', background: '#F3EBE9', border: '2px solid rgba(168,116,110,0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px' }}
               >
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#E85D75" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#A8746E" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
                   <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
                 </svg>
@@ -209,15 +209,15 @@ const PFCShutdownSimulator = () => {
               <p className="font-serif font-bold" style={{ fontSize: 16, color: '#1a1a1a' }}>Amygdala</p>
               <p style={{ fontSize: 13, color: '#7a7068', marginBottom: 12 }}>Threat Response</p>
 
-              <div style={{ height: 6, borderRadius: 3, backgroundColor: '#fde4e4', overflow: 'hidden', marginBottom: 8 }}>
-                <motion.div animate={{ width: stressed ? '100%' : '20%' }} transition={{ duration: 0.8 }} style={{ height: '100%', backgroundColor: '#E85D75', borderRadius: 3 }} />
+              <div style={{ height: 6, borderRadius: 3, backgroundColor: '#F3EBE9', overflow: 'hidden', marginBottom: 8 }}>
+                <motion.div animate={{ width: stressed ? '100%' : '20%' }} transition={{ duration: 0.8 }} style={{ height: '100%', backgroundColor: '#A8746E', borderRadius: 3 }} />
               </div>
 
               <span className="inline-block text-[10px] font-bold uppercase" style={{
                 letterSpacing: '0.08em',
-                backgroundColor: stressed ? '#fde4e4' : COLORS.successTint,
-                color: stressed ? '#b33030' : COLORS.successDarkText,
-                border: stressed ? '1px solid rgba(232,93,117,0.3)' : `1px solid ${COLORS.success}4D`,
+                backgroundColor: stressed ? '#F3EBE9' : COLORS.successTint,
+                color: stressed ? '#7a5650' : COLORS.successDarkText,
+                border: stressed ? '1px solid rgba(168,116,110,0.35)' : `1px solid ${COLORS.success}4D`,
                 borderRadius: 20, padding: '3px 10px',
               }}>
                 {stressed ? 'HIJACKING' : 'CALM'}
@@ -273,9 +273,9 @@ const PFCShutdownSimulator = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 6 }}
                 className="mb-6"
-                style={{ borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
+                style={{ border: '1px solid #d0cdc8', backgroundColor: '#F3EBE9', borderRadius: 10, padding: '12px 16px' }}
               >
-                <p className="text-sm italic" style={{ color: '#b33030' }}>
+                <p className="text-sm italic" style={{ color: '#7a5650' }}>
                   Cortisol is blocking the connection between your PFC and your stored knowledge. Your memory isn't gone — the pathway is temporarily offline.
                 </p>
               </motion.div>
@@ -287,9 +287,9 @@ const PFCShutdownSimulator = () => {
             <button
               onClick={() => setStressed(!stressed)}
               style={{
-                backgroundColor: stressed ? COLORS.accent : '#E85D75',
+                backgroundColor: stressed ? COLORS.accent : '#A8746E',
                 color: '#FFFFFF',
-                border: stressed ? `2px solid ${COLORS.accent}` : '2px solid #E85D75',
+                border: stressed ? `2px solid ${COLORS.accent}` : '2px solid #A8746E',
                 borderRadius: 20,
                 padding: '12px 24px',
                 fontSize: 14,
@@ -397,7 +397,7 @@ const ArousalReappraisal = () => {
                      <motion.line
                        x1={emotions.anxiety.x} y1={emotions.anxiety.y}
                        x2={emotions.excitement.x} y2={emotions.excitement.y}
-                       stroke="#10b981" strokeWidth="0.8" strokeDasharray="2 2"
+                       stroke="#3A8D5F" strokeWidth="0.8" strokeDasharray="2 2"
                        initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
                        transition={{ duration: 0.5 }}
                      />

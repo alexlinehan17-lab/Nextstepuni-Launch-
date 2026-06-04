@@ -66,12 +66,6 @@ export default defineConfig(() => {
                 handler: 'CacheFirst',
                 options: { cacheName: 'dicebear-avatars', expiration: { maxAgeSeconds: 60 * 60 * 24 * 30 } },
               },
-              // Tailwind CSS CDN — stale-while-revalidate for offline support
-              {
-                urlPattern: /^https:\/\/cdn\.tailwindcss\.com\/.*/i,
-                handler: 'StaleWhileRevalidate',
-                options: { cacheName: 'tailwind-cdn', expiration: { maxAgeSeconds: 60 * 60 * 24 * 30 } },
-              },
             ],
           },
         }),

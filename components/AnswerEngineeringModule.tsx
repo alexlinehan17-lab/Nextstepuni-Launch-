@@ -535,7 +535,7 @@ const ShapeQuiz = () => {
             const got = choices[i];
             const correct = got === q.correct;
             return (
-              <div key={i} className="bg-white dark:bg-zinc-900" style={{ border: correct ? `2px solid ${COLORS.accent}` : '2px solid #1a1a1a', borderLeft: correct ? undefined : '4px solid #E85D75', borderRadius: 14, padding: '14px 16px' }}>
+              <div key={i} className="bg-white dark:bg-zinc-900" style={{ border: correct ? `2px solid ${COLORS.accent}` : '2px solid #1a1a1a', borderRadius: 14, padding: '14px 16px' }}>
                 <div className="flex items-center justify-between mb-1">
                   <span className="font-serif font-bold" style={{ fontSize: 14, color: '#1a1a1a' }}>{q.marks}</span>
                   <span style={{ fontSize: 12, fontWeight: 700, color: correct ? COLORS.accentDarkText : '#b33030' }}>{correct ? '✓ Correct' : '✗ Incorrect'}</span>
@@ -593,7 +593,7 @@ const ShapeQuiz = () => {
               isAnswer
                 ? { backgroundColor: COLORS.accentTint, border: `2px solid ${COLORS.accent}`, borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 600, color: COLORS.accentDarkText, cursor: 'default' }
                 : selected && !isAnswer
-                ? { backgroundColor: '#fde4e4', border: '2px solid #E85D75', borderLeft: '4px solid #E85D75', borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: '#b33030', cursor: 'default' }
+                ? { backgroundColor: '#F1F0ED', border: '2px solid #d0cdc8', borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: '#7a7068', cursor: 'default' }
                 : showFeedback
                 ? { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: '#1a1a1a', opacity: 0.5, cursor: 'not-allowed' }
                 : { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: '#1a1a1a', cursor: 'pointer' }

@@ -196,7 +196,7 @@ const ReframeChallenge = ({ savedText, onSave }: { savedText?: string; onSave?: 
             </div>
 
             {/* Fixed thought card */}
-            <div className="bg-white dark:bg-zinc-900 max-w-lg mx-auto" style={{ border: '2px solid #1a1a1a', borderRadius: 14, borderLeft: '4px solid #E85D75', padding: '20px 24px' }}>
+            <div className="bg-white dark:bg-zinc-900 max-w-lg mx-auto" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '20px 24px' }}>
                 <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: '#fde4e4', color: '#b33030', borderRadius: 20, padding: '3px 10px' }}>Fixed Mindset Thought</span>
                 <p className="font-serif italic" style={{ fontSize: 17, color: '#1a1a1a' }}>I'm just not a maths person.</p>
             </div>
@@ -323,7 +323,7 @@ const FeedbackTranslator = () => {
                   transition={{ duration: 0.25 }}
                   onClick={() => handleFlip(i)}
                   className="cursor-pointer bg-white dark:bg-zinc-900"
-                  style={{ border: '2px solid #1a1a1a', borderLeft: '4px solid #E85D75', borderRadius: 14, padding: '20px 22px' }}
+                  style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '20px 22px' }}
                 >
                   <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: '#fde4e4', color: '#b33030', borderRadius: 20, padding: '3px 10px', letterSpacing: '0.1em' }}>Verdict Language</span>
                   <p className="font-serif italic mt-2" style={{ fontSize: 16, color: '#1a1a1a' }}>{pair.verdict}</p>

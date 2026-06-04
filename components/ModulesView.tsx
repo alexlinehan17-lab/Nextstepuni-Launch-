@@ -433,7 +433,7 @@ const HeroInner: React.FC<HeroInnerProps> = ({ config, stats, nextUp, onContinue
             </p>
 
             {/* Section preview */}
-            <div className="mt-5 md:mt-6 pl-3 border-l-2" style={{ borderColor: mid }}>
+            <div className="mt-5 md:mt-6 rounded-xl p-3.5" style={{ border: '1px solid #d0cdc8' }}>
               <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: `${deep}AA` }}>
                 {nextUp.isContinue
                   ? `Up next · Section ${nextUp.sectionNumber} of ${nextUp.course.sectionsCount}`

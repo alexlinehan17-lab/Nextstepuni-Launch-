@@ -26,14 +26,10 @@ const AttentionDeficitCalculator = () => {
     const deepWorkTime = Math.max(0, 60 - timeLost);
     const deepPct = Math.round((deepWorkTime / 60) * 100);
 
-    const statColor = deepWorkTime >= 45 ? COLORS.success : deepWorkTime >= 20 ? '#9e9186' : '#E85D75';
+    const statColor = deepWorkTime >= 45 ? COLORS.success : deepWorkTime >= 20 ? '#9e9186' : '#A8746E';
     const calloutStyle = checks === 0
       ? { borderLeft: `3px solid ${COLORS.success}`, backgroundColor: COLORS.successTint, color: COLORS.successDarkText }
-      : checks <= 3
-      ? { borderLeft: '3px solid #9e9186', backgroundColor: '#f4f0eb', color: '#5a5550' }
-      : checks <= 7
-      ? { borderLeft: '3px solid #d0a070', backgroundColor: '#fff8f0', color: '#7a5030' }
-      : { borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', color: '#b33030' };
+      : { border: '1px solid #d0cdc8', backgroundColor: '#F1F0ED', color: '#7a7068' };
 
     return (
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
@@ -57,13 +53,13 @@ const AttentionDeficitCalculator = () => {
                 <motion.div className="h-full flex items-center justify-center" style={{ backgroundColor: COLORS.success }} animate={{ width: `${deepPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }}>
                     {deepPct > 15 && <span style={{ fontSize: 12, fontWeight: 600, color: '#FFFFFF' }}>{deepPct}%</span>}
                 </motion.div>
-                <motion.div className="h-full flex items-center justify-center" style={{ backgroundColor: '#E85D75' }} animate={{ width: `${100 - deepPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }}>
+                <motion.div className="h-full flex items-center justify-center" style={{ backgroundColor: '#A8746E' }} animate={{ width: `${100 - deepPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }}>
                     {(100 - deepPct) > 15 && <span style={{ fontSize: 12, fontWeight: 600, color: '#FFFFFF' }}>{100 - deepPct}%</span>}
                 </motion.div>
             </div>
             <div className="flex justify-between text-xs mb-6">
                 <span className="font-semibold" style={{ color: COLORS.success }}>Deep Work</span>
-                <span className="font-semibold" style={{ color: '#E85D75' }}>Recovery Time</span>
+                <span className="font-semibold" style={{ color: '#A8746E' }}>Recovery Time</span>
             </div>
 
             {/* Phone check selector */}
@@ -222,7 +218,7 @@ const PhasedDetoxRoadmap = () => {
           animate={{ scale: 1, opacity: 1 }}
           className="inline-block"
         >
-          <span className={`text-4xl font-bold tabular-nums ${allDone ? 'text-emerald-500' : 'text-zinc-700 dark:text-zinc-200'}`}>
+          <span className={`text-4xl font-bold tabular-nums ${allDone ? '' : 'text-zinc-700 dark:text-zinc-200'}`} style={allDone ? { color: COLORS.success } : undefined}>
             {totalChecked}
           </span>
           <span className="text-lg font-bold text-zinc-400 ml-1">/ {totalItems}</span>
@@ -235,7 +231,8 @@ const PhasedDetoxRoadmap = () => {
         {/* Vertical progress line */}
         <div className="absolute left-3 md:left-4 top-0 bottom-0 w-1 rounded-full bg-zinc-200 dark:bg-zinc-700">
           <motion.div
-            className="w-full rounded-full bg-emerald-500"
+            className="w-full rounded-full"
+            style={{ backgroundColor: COLORS.success }}
             animate={{ height: `${progressPct}%` }}
             transition={{ type: 'spring', stiffness: 80, damping: 18 }}
           />
@@ -254,10 +251,10 @@ const PhasedDetoxRoadmap = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: pi * 0.12 }}
                 className="relative rounded-xl p-5 md:p-6 transition-all duration-500"
-                style={phaseDone ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 16, boxShadow: '4px 4px 0px 0px #059669' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 16, boxShadow: '4px 4px 0px 0px #1C1917' }}
+                style={phaseDone ? { backgroundColor: COLORS.successTint, border: `2.5px solid ${COLORS.success}`, borderRadius: 16, boxShadow: `4px 4px 0px 0px ${COLORS.success}` } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 16, boxShadow: '4px 4px 0px 0px #1C1917' }}
               >
                 {/* Dot on timeline */}
-                <div className={`absolute -left-[calc(2rem+10px)] md:-left-[calc(2.5rem+10px)] top-6 w-5 h-5 rounded-full border-4 border-white dark:border-zinc-800 ${phaseDone ? 'bg-emerald-500' : style.accentBg}`} />
+                <div className={`absolute -left-[calc(2rem+10px)] md:-left-[calc(2.5rem+10px)] top-6 w-5 h-5 rounded-full border-4 border-white dark:border-zinc-800 ${phaseDone ? '' : style.accentBg}`} style={phaseDone ? { backgroundColor: COLORS.success } : undefined} />
 
                 {/* Phase header */}
                 <div className="flex flex-wrap items-center gap-2 mb-3">
@@ -314,7 +311,8 @@ const PhasedDetoxRoadmap = () => {
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: 'auto' }}
                       exit={{ opacity: 0, height: 0 }}
-                      className="mt-4 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 text-center text-sm font-semibold text-emerald-700 dark:text-emerald-300"
+                      className="mt-4 p-3 rounded-lg text-center text-sm font-semibold"
+                      style={{ backgroundColor: COLORS.successTint, border: `1px solid ${COLORS.success}`, color: COLORS.successDarkText }}
                     >
                       Phase {phase.number} complete
                     </MotionDiv>
@@ -334,12 +332,12 @@ const PhasedDetoxRoadmap = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
             className="mt-8 p-5 rounded-xl text-center"
-            style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669' }}
+            style={{ backgroundColor: COLORS.successTint, border: `2.5px solid ${COLORS.success}`, boxShadow: `3px 3px 0px 0px ${COLORS.success}` }}
           >
-            <p className="font-serif text-lg font-semibold" style={{ color: '#064E3B' }}>
+            <p className="font-serif text-lg font-semibold" style={{ color: COLORS.successDarkText }}>
               Full digital fortress activated.
             </p>
-            <p className="text-sm mt-1" style={{ color: '#065F46' }}>
+            <p className="text-sm mt-1" style={{ color: COLORS.successDarkText }}>
               You&apos;ve removed every barrier between you and deep focus.
             </p>
           </MotionDiv>

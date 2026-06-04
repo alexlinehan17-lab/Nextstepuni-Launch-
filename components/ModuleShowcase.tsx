@@ -260,8 +260,8 @@ export default function ModuleShowcase({
                       </p>
                     )}
 
-                    {/* Begins with panel — hairline rule on left */}
-                    <div className="mt-5 pl-3 border-l-2" style={{ borderColor: theme.mid }}>
+                    {/* Begins with panel — muted secondary chip */}
+                    <div className="mt-5 px-3 py-2 rounded-lg" style={{ background: '#F1F0ED', border: '1px solid #d0cdc8' }}>
                       <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: `${theme.deep}AA` }}>
                         {isInProgress
                           ? `Up next · Section ${startStep} of ${course.sectionsCount}`

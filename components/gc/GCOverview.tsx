@@ -1472,7 +1472,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                   {[
                     { status: 'New', color: '#F26B1F', desc: 'Signed up within the last 7 days. Give them time to explore.' },
                     { status: 'Active', color: '#3B82F6', desc: 'Logged a study session in the past 7 days. On track.' },
-                    { status: 'Thriving', color: '#10B981', desc: 'Active with a 5+ day streak, 3+ modules completed, or 3+ consecutive active weeks.' },
+                    { status: 'Thriving', color: '#3A8D5F', desc: 'Active with a 5+ day streak, 3+ modules completed, or 3+ consecutive active weeks.' },
                     { status: 'Drifting', color: '#F59E0B', desc: '8\u201314 days since last session, or lost a strong streak recently. May need a nudge.' },
                     { status: 'At Risk', color: '#EF4444', desc: '15+ days inactive, lost a 7+ day streak, or 3+ weeks with zero sessions. Needs attention.' },
                     { status: 'Inactive', color: '#71717A', desc: 'Past the 7-day new window but has never logged a single study session.' },

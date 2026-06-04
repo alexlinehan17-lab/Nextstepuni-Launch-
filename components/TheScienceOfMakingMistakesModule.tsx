@@ -343,7 +343,7 @@ const AmygdalaHijackSimulator = () => {
         <div className="flex items-center justify-between mb-1.5">
           <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Cortisol Level</span>
           <span className="text-[10px] font-bold uppercase tracking-widest" style={{
-            color: stressLevel > 0.7 ? '#dc2626' : stressLevel > 0.4 ? '#f59e0b' : '#22c55e',
+            color: stressLevel > 0.7 ? '#dc2626' : stressLevel > 0.4 ? '#f59e0b' : '#3A8D5F',
           }}>
             {stressLevel < 0.15 ? 'Low' : stressLevel < 0.5 ? 'Moderate' : stressLevel < 0.8 ? 'High' : 'Extreme'}
           </span>
@@ -353,7 +353,7 @@ const AmygdalaHijackSimulator = () => {
             className="h-full rounded-full transition-all duration-300"
             style={{
               width: `${cortisolHeight}%`,
-              backgroundColor: stressLevel > 0.7 ? '#dc2626' : stressLevel > 0.4 ? '#f59e0b' : '#22c55e',
+              backgroundColor: stressLevel > 0.7 ? '#dc2626' : stressLevel > 0.4 ? '#f59e0b' : '#3A8D5F',
             }}
           />
         </div>

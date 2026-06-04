@@ -264,7 +264,7 @@ const DesirePathMaker = () => {
           Days Pass (Decay)
         </button>
         <button onClick={handleCramming} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: '#FFFFFF', border: '2px solid #d0cdc8', borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: '#7a7068' }}>
-          <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: '#E85D75', display: 'inline-block' }} />
+          <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: '#A8746E', display: 'inline-block' }} />
           Cramming Pattern
         </button>
         <button onClick={handleSpacedRepetition} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: '#FDEEDF', border: '2px solid #F26B1F', borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: '#8C3A0E' }}>

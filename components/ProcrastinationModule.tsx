@@ -130,7 +130,7 @@ const ProcrastinationEquation = () => {
                             bottom: 0,
                             left: 0,
                             right: 0,
-                            backgroundColor: isPositive ? COLORS.success : '#E85D75',
+                            backgroundColor: isPositive ? COLORS.success : '#1a1a1a',
                             borderRadius: 16,
                           }}
                           animate={{ height: `${val}%` }}
@@ -485,7 +485,7 @@ const CircuitBreaker = () => {
             <p className="text-center text-sm mt-1 mb-8" style={{ color: '#7a7068' }}>Rewrite this self-critical thought into something kinder and more action-focused.</p>
 
             {/* Section 1 — Negative thought */}
-            <div className="bg-white dark:bg-zinc-900 max-w-lg mx-auto" style={{ border: '2px solid #1a1a1a', borderRadius: 14, borderLeft: '4px solid #E85D75', padding: '20px 24px' }}>
+            <div className="bg-white dark:bg-zinc-900 max-w-lg mx-auto" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '20px 24px' }}>
               <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: '#fde4e4', color: '#b33030', borderRadius: 20, padding: '3px 10px' }}>Self-critical thought</span>
               <p className="font-serif italic" style={{ fontSize: 18, color: '#1a1a1a' }}>I'm so useless, I wasted the whole day.</p>
             </div>

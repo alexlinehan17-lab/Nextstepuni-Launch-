@@ -69,7 +69,7 @@ const TeachVsTestComparison = () => {
   const teachPhases = [
     { label: 'Building framework', x1: 0, x2: 0.33, color: '#6ee7b7' },
     { label: 'Deepening', x1: 0.33, x2: 0.66, color: '#34d399' },
-    { label: 'Teachable', x1: 0.66, x2: 1, color: '#10b981' },
+    { label: 'Teachable', x1: 0.66, x2: 1, color: '#3A8D5F' },
   ];
 
   const Chart = ({ recall, organization, phases, areaColor, areaId, label }: {
@@ -159,7 +159,7 @@ const TeachVsTestComparison = () => {
             </div>
             <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
               <Chart recall={teachRecall} organization={teachOrganization} phases={teachPhases}
-                areaColor="#10b981" areaId="teach-grad" label="Preparing to Teach" />
+                areaColor="#3A8D5F" areaId="teach-grad" label="Preparing to Teach" />
             </div>
           </div>
           <div className="grid md:grid-cols-2 gap-4 text-sm">
@@ -274,8 +274,8 @@ const ExplainItBackChallenge = () => {
                   <p className="font-serif font-bold" style={{ fontSize: 18, color: '#1a1a1a' }}>{analysis.wordCount}</p>
                   <p style={{ fontSize: 10, color: '#9e9186' }}>Words</p>
                 </div>
-                <div className="text-center p-2 bg-white rounded-lg" style={{ border: `1.5px solid ${analysis.jargonWords.length > 5 ? '#E85D75' : COLORS.success}` }}>
-                  <p className="font-serif font-bold" style={{ fontSize: 18, color: analysis.jargonWords.length > 5 ? '#E85D75' : COLORS.success }}>{analysis.jargonWords.length}</p>
+                <div className="text-center p-2 bg-white rounded-lg" style={{ border: `1.5px solid ${analysis.jargonWords.length > 5 ? '#d0cdc8' : COLORS.success}` }}>
+                  <p className="font-serif font-bold" style={{ fontSize: 18, color: analysis.jargonWords.length > 5 ? '#7a7068' : COLORS.success }}>{analysis.jargonWords.length}</p>
                   <p style={{ fontSize: 10, color: '#9e9186' }}>Borrowed</p>
                 </div>
                 <div className="text-center p-2 bg-white rounded-lg" style={{ border: `1.5px solid ${analysis.simplicityScore >= 60 ? COLORS.success : '#9e9186'}` }}>
@@ -329,8 +329,8 @@ const ExplainItBackChallenge = () => {
               <p className="font-serif font-bold" style={{ fontSize: 22, color: '#1a1a1a' }}>{analysis.wordCount}</p>
               <p style={{ fontSize: 10, color: '#9e9186' }}>Words</p>
             </div>
-            <div className="text-center p-3 bg-white rounded-xl" style={{ border: `2px solid ${analysis.jargonWords.length > 5 ? '#E85D75' : analysis.jargonWords.length > 2 ? '#9e9186' : COLORS.success}` }}>
-              <p className="font-serif font-bold" style={{ fontSize: 22, color: analysis.jargonWords.length > 5 ? '#E85D75' : analysis.jargonWords.length > 2 ? '#9e9186' : COLORS.success }}>{analysis.jargonWords.length}</p>
+            <div className="text-center p-3 bg-white rounded-xl" style={{ border: `2px solid ${analysis.jargonWords.length > 5 ? '#d0cdc8' : analysis.jargonWords.length > 2 ? '#9e9186' : COLORS.success}` }}>
+              <p className="font-serif font-bold" style={{ fontSize: 22, color: analysis.jargonWords.length > 5 ? '#7a7068' : analysis.jargonWords.length > 2 ? '#9e9186' : COLORS.success }}>{analysis.jargonWords.length}</p>
               <p style={{ fontSize: 10, color: '#9e9186' }}>Borrowed</p>
             </div>
             <div className="text-center p-3 bg-white rounded-xl" style={{ border: `2px solid ${analysis.simplicityScore >= 60 ? COLORS.success : '#9e9186'}` }}>
@@ -350,7 +350,7 @@ const ExplainItBackChallenge = () => {
                 <p style={{ fontSize: 14, color: COLORS.success }}>Nice one! You properly rebuilt that in your own words. That's exactly the kind of explaining that makes things stick long-term.</p>
               </div>
             ) : (
-              <div style={{ borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 14px 14px 0', padding: '16px 20px' }}>
+              <div style={{ border: '1px solid #d0cdc8', backgroundColor: '#F1F0ED', borderRadius: 14, padding: '16px 20px' }}>
                 <p className="italic" style={{ fontSize: 14, color: '#5a5550' }}>
                   {isMid
                     ? "Good effort, but some of your phrasing is pretty close to the original. Try pushing further — can you explain it using a totally different comparison or example?"

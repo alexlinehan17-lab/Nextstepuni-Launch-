@@ -68,7 +68,7 @@ const NoteTakingComparison = () => {
   const generativePhases = [
     { label: 'Feels slow', x1: 0, x2: 0.33, color: '#6ee7b7' },
     { label: 'Processing', x1: 0.33, x2: 0.66, color: '#34d399' },
-    { label: 'Locked in', x1: 0.66, x2: 1, color: '#10b981' },
+    { label: 'Locked in', x1: 0.66, x2: 1, color: '#3A8D5F' },
   ];
 
   const Chart = ({ volume, understanding, phases, areaColor, areaId, label }: {
@@ -158,7 +158,7 @@ const NoteTakingComparison = () => {
             </div>
             <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
               <Chart volume={generativeVolume} understanding={generativeUnderstanding} phases={generativePhases}
-                areaColor="#10b981" areaId="gen-grad" label="Generative Notes" />
+                areaColor="#3A8D5F" areaId="gen-grad" label="Generative Notes" />
             </div>
           </div>
           <div className="grid md:grid-cols-2 gap-4 text-sm">
@@ -307,7 +307,7 @@ const CornellNoteSimulator = () => {
           {feedback.map((f, i) => (
             <div key={i} className="flex items-start gap-2.5" style={f.type === 'success'
               ? { background: '#FDEEDF', borderLeft: '3px solid #F26B1F', borderRadius: '0 10px 10px 0', padding: '12px 16px' }
-              : { background: 'white', border: '1.5px solid #d0cdc8', borderLeft: '3px solid #9e9186', borderRadius: '0 10px 10px 0', padding: '12px 16px' }
+              : { background: 'white', border: '1.5px solid #d0cdc8', borderRadius: '10px', padding: '12px 16px' }
             }>
               {f.type === 'success' ? (
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F26B1F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 2 }}><polyline points="20 6 9 17 4 12"/></svg>

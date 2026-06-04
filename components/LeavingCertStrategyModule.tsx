@@ -147,8 +147,8 @@ const CommandWordDecoder = () => {
                     <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#FDEEDF', color: '#8C3A0E', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Expectation</span>
                     <p className="mt-3" style={{ fontSize: 15, color: '#1a1a1a' }}>{selected.expectation}</p>
                  </div>
-                 <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderLeft: '4px solid #E85D75', borderRadius: 14, padding: '20px 22px' }}>
-                    <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#fde4e4', color: '#b33030', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Common Pitfall</span>
+                 <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '20px 22px' }}>
+                    <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#F1F0ED', color: '#A8746E', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Common Pitfall</span>
                     <p className="mt-3" style={{ fontSize: 15, color: '#1a1a1a' }}>{selected.pitfall}</p>
                  </div>
              </div>
@@ -248,8 +248,8 @@ const ExamDayTimelineBuilder = () => {
             {/* Warning flash */}
             <AnimatePresence>
                 {flashWarning && (
-                    <MotionDiv initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} className="mb-6" style={{ borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-                        <p className="text-sm italic" style={{ color: '#b33030' }}>{flashWarning}</p>
+                    <MotionDiv initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} className="mb-6" style={{ borderLeft: '3px solid #A8746E', backgroundColor: '#F1F0ED', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
+                        <p className="text-sm italic" style={{ color: '#A8746E' }}>{flashWarning}</p>
                     </MotionDiv>
                 )}
             </AnimatePresence>
@@ -274,7 +274,7 @@ const ExamDayTimelineBuilder = () => {
                                         : { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: '#1a1a1a', cursor: 'pointer' }
                                 }
                             >
-                                {activity.isBad && !isSelected && <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: '#E85D75', flexShrink: 0 }} />}
+                                {activity.isBad && !isSelected && <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: '#A8746E', flexShrink: 0 }} />}
                                 {activity.label}
                                 <span style={{ fontSize: 11, color: '#9e9186', marginLeft: 4 }}>{activity.time}m</span>
                             </button>
@@ -297,14 +297,14 @@ const ExamDayTimelineBuilder = () => {
                                     {index < sequence.length - 1 && (
                                         <div className="absolute top-6 bottom-0" style={{ left: -1, width: 2, backgroundColor: '#e0dbd4' }} />
                                     )}
-                                    <div className="absolute top-4 rounded-full" style={{ left: -5, width: 8, height: 8, backgroundColor: activity.isBad ? '#E85D75' : '#F26B1F' }} />
-                                    <div className="ml-4 mb-2 flex-1 flex items-center gap-2 bg-white dark:bg-zinc-900" style={{ border: activity.isBad ? '1.5px solid #E85D75' : '1.5px solid #d0cdc8', borderLeft: activity.isBad ? '4px solid #E85D75' : undefined, borderRadius: 12, padding: '14px 16px' }}>
+                                    <div className="absolute top-4 rounded-full" style={{ left: -5, width: 8, height: 8, backgroundColor: activity.isBad ? '#A8746E' : '#F26B1F' }} />
+                                    <div className="ml-4 mb-2 flex-1 flex items-center gap-2 bg-white dark:bg-zinc-900" style={{ border: activity.isBad ? '1.5px solid #A8746E' : '1.5px solid #d0cdc8', borderRadius: 12, padding: '14px 16px' }}>
                                         {activity.isBad && (
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E85D75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A8746E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
                                                 <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
                                             </svg>
                                         )}
-                                        <span style={{ fontSize: 14, fontWeight: 500, color: activity.isBad ? '#b33030' : '#1a1a1a' }}>{activity.label}</span>
+                                        <span style={{ fontSize: 14, fontWeight: 500, color: activity.isBad ? '#A8746E' : '#1a1a1a' }}>{activity.label}</span>
                                         <span style={{ marginLeft: 'auto', fontSize: 13, color: '#9e9186' }}>{activity.time} min</span>
                                     </div>
                                 </MotionDiv>
@@ -338,14 +338,14 @@ const ExamDayTimelineBuilder = () => {
                 {showFeedback && (
                     <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="mt-8 space-y-4">
                         {hasBadChoices && (
-                            <div style={{ borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
-                                <p className="font-serif font-semibold mb-2" style={{ fontSize: 16, color: '#b33030' }}>Bad choices detected:</p>
+                            <div style={{ borderLeft: '3px solid #A8746E', backgroundColor: '#F1F0ED', borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
+                                <p className="font-serif font-semibold mb-2" style={{ fontSize: 16, color: '#A8746E' }}>Bad choices detected:</p>
                                 {sequence.filter(a => a.isBad).map(a => (
                                     <div key={a.id} className="flex items-start gap-2 mb-1">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E85D75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 3 }}>
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A8746E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 3 }}>
                                             <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
                                         </svg>
-                                        <p style={{ fontSize: 14, color: '#b33030' }}><strong>{a.label}</strong> — {a.warning}</p>
+                                        <p style={{ fontSize: 14, color: '#A8746E' }}><strong>{a.label}</strong> — {a.warning}</p>
                                     </div>
                                 ))}
                             </div>

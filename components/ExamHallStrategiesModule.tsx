@@ -534,8 +534,8 @@ const DumpSheetBuilder = () => {
                 <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-4" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
                 <div className="flex items-center justify-between mb-2">
                     <h4 className="font-serif font-semibold" style={{ fontSize: 22, color: '#1a1a1a' }}>Memorise These Facts</h4>
-                    <span style={{ backgroundColor: low ? '#fde4e4' : COLORS.successTint, border: `1.5px solid ${low ? 'rgba(227,93,117,0.3)' : 'rgba(58,141,95,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>
-                        <span className="font-serif font-bold" style={{ fontSize: 18, color: low ? '#E85D75' : COLORS.success }}>{memoriseTime}</span>
+                    <span style={{ backgroundColor: low ? '#F1F0ED' : COLORS.successTint, border: `1.5px solid ${low ? '#d0cdc8' : 'rgba(58,141,95,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>
+                        <span className="font-serif font-bold" style={{ fontSize: 18, color: low ? '#A8746E' : COLORS.success }}>{memoriseTime}</span>
                         <span style={{ fontSize: 13, color: '#9e9186', marginLeft: 2 }}>s</span>
                     </span>
                 </div>
@@ -561,8 +561,8 @@ const DumpSheetBuilder = () => {
             <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 <div className="flex items-center justify-between mb-2">
                     <h4 className="font-serif font-semibold" style={{ fontSize: 22, color: '#1a1a1a' }}>Write Everything You Remember</h4>
-                    <span style={{ backgroundColor: low ? '#fde4e4' : COLORS.successTint, border: `1.5px solid ${low ? 'rgba(227,93,117,0.3)' : 'rgba(58,141,95,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>
-                        <span className="font-serif font-bold" style={{ fontSize: 18, color: low ? '#E85D75' : COLORS.success }}>{recallTime}</span>
+                    <span style={{ backgroundColor: low ? '#F1F0ED' : COLORS.successTint, border: `1.5px solid ${low ? '#d0cdc8' : 'rgba(58,141,95,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>
+                        <span className="font-serif font-bold" style={{ fontSize: 18, color: low ? '#A8746E' : COLORS.success }}>{recallTime}</span>
                         <span style={{ fontSize: 13, color: '#9e9186', marginLeft: 2 }}>s</span>
                     </span>
                 </div>
@@ -600,8 +600,8 @@ const DumpSheetBuilder = () => {
                 {dumpSheetFacts.map((fact, i) => {
                     const recalled = results[i];
                     return (
-                        <MotionDiv key={i} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} className="flex items-start gap-3 bg-white dark:bg-zinc-900" style={{ border: recalled ? `2px solid ${COLORS.success}` : '2px solid #1a1a1a', borderLeft: recalled ? undefined : '4px solid #E85D75', borderRadius: 14, padding: '14px 16px' }}>
-                            <span className="flex items-center justify-center shrink-0 mt-0.5" style={{ width: 22, height: 22, borderRadius: '50%', backgroundColor: recalled ? COLORS.success : '#E85D75', fontSize: 12, fontWeight: 700, color: '#FFFFFF' }}>
+                        <MotionDiv key={i} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} className="flex items-start gap-3 bg-white dark:bg-zinc-900" style={{ border: recalled ? `2px solid ${COLORS.success}` : '2px solid #d0cdc8', borderRadius: 14, padding: '14px 16px' }}>
+                            <span className="flex items-center justify-center shrink-0 mt-0.5" style={{ width: 22, height: 22, borderRadius: '50%', backgroundColor: recalled ? COLORS.success : '#A8746E', fontSize: 12, fontWeight: 700, color: '#FFFFFF' }}>
                                 {recalled ? '✓' : '✗'}
                             </span>
                             <span style={{ fontSize: 14, color: '#1a1a1a', lineHeight: 1.5 }}>{fact.text}</span>

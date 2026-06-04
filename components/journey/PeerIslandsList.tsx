@@ -377,7 +377,6 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
                           ...(isYou ? {
                             backgroundColor: 'rgba(242,107,31,0.08)',
                             border: '2px solid rgba(242,107,31,0.25)',
-                            borderLeft: '4px solid #2A7D6F',
                             boxShadow: '0 2px 8px rgba(242,107,31,0.08)',
                           } : {
                             boxShadow: '0 1px 3px rgba(28,25,23,0.03)',
@@ -435,7 +434,6 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
                             borderRadius: 14,
                             backgroundColor: 'rgba(242,107,31,0.08)',
                             border: '2px solid rgba(242,107,31,0.25)',
-                            borderLeft: '4px solid #2A7D6F',
                           }}
                         >
                           <span className="w-7 text-center text-[13px] font-bold shrink-0" style={{ color: '#F26B1F' }}>{yourIdx + 1}</span>

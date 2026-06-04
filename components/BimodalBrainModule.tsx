@@ -113,7 +113,7 @@ const PinballSimulator = () => {
             className="mt-4"
             style={isFocused
               ? { borderLeft: '3px solid #F26B1F', backgroundColor: '#FDEEDF', borderRadius: '0 10px 10px 0', padding: '12px 16px' }
-              : { borderLeft: '3px solid #d0cdc8', backgroundColor: '#f4f0eb', borderRadius: '0 10px 10px 0', padding: '12px 16px' }
+              : { border: '1.5px solid #d0cdc8', backgroundColor: '#f4f0eb', borderRadius: 10, padding: '12px 16px' }
             }
           >
             <p className="text-sm italic" style={{ color: isFocused ? '#8C3A0E' : '#7a7068' }}>
@@ -281,7 +281,7 @@ const IncubationEffectDemo = () => {
                 <button onClick={handleCheck} style={{ backgroundColor: '#F26B1F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Check Answer</button>
               </div>
               {wrongAttempt && (
-                <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center mt-3" style={{ fontSize: 14, color: '#E85D75', fontWeight: 500 }}>Not quite. Keep trying!</MotionDiv>
+                <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center mt-3" style={{ fontSize: 14, color: '#A8746E', fontWeight: 500 }}>Not quite. Keep trying!</MotionDiv>
               )}
               {showStuckPrompt && (
                 <MotionDiv initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mt-6" style={{ borderLeft: '3px solid #F26B1F', backgroundColor: '#FDEEDF', borderRadius: '0 10px 10px 0', padding: '16px 20px', textAlign: 'center' }}>
@@ -334,7 +334,7 @@ const IncubationEffectDemo = () => {
                 <button onClick={handleReturnCheck} style={{ backgroundColor: '#F26B1F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Check Answer</button>
               </div>
               {wrongAttempt && !revealAnswer && (
-                <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center mt-3" style={{ fontSize: 14, color: '#E85D75', fontWeight: 500 }}>Not quite. Try once more!</MotionDiv>
+                <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center mt-3" style={{ fontSize: 14, color: '#A8746E', fontWeight: 500 }}>Not quite. Try once more!</MotionDiv>
               )}
               {revealAnswer && (
                 <MotionDiv initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mt-4 text-center">
