@@ -30,6 +30,7 @@ import { computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, co
 import { getBlockId, toDateKey } from '../subjectData';
 import { processDebriefSideEffects } from '../../hooks/useDebriefSideEffects';
 import { getSyllabusTopics } from '../syllabusTopics';
+import { logError } from '../../utils/logError';
 
 const TIER_COLORS: Record<MasteryTier, { text: string; bar: string }> = {
   none: { text: 'text-zinc-400 dark:text-zinc-500', bar: 'bg-zinc-200 dark:bg-zinc-700' },
@@ -169,7 +170,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       if (cancelled) return;
       const data = snap.data();
       if (data?.studyDebriefs) setPrevDebriefs(data.studyDebriefs);
-    }).catch(() => {});
+    }).catch((e) => logError('StudySessionView.loadPrevDebriefs', e));
     return () => { cancelled = true; };
   }, [user.uid]);
 

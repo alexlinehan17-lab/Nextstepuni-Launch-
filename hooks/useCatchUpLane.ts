@@ -16,6 +16,7 @@ import { db } from '../firebase';
 import { useFreshProgress } from './useFreshProgress';
 import { type CatchUpLaneState, type ComebackPlan } from '../types/catchUpLane';
 import { RECOVERY_CARDS } from '../catchUpLaneData';
+import { reportSaveError } from '../utils/logError';
 
 const EMPTY: CatchUpLaneState = {
   recoveredTopicIds: [],
@@ -47,7 +48,7 @@ export function useCatchUpLane(uid?: string) {
 
   const persist = useCallback((next: CatchUpLaneState) => {
     if (uid) {
-      setDoc(doc(db, 'progress', uid), { catchUpLane: next }, { merge: true }).catch(() => {});
+      setDoc(doc(db, 'progress', uid), { catchUpLane: next }, { merge: true }).catch((e) => reportSaveError('useCatchUpLane.save', e));
     }
   }, [uid]);
 

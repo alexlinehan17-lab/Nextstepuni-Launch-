@@ -7,6 +7,7 @@ import React, { createContext, useContext, useState, useCallback, useEffect, use
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { WifiOff, AlertCircle, CheckCircle, X, Info, type LucideIcon } from 'lucide-react';
+import { SAVE_ERROR_EVENT, type SaveErrorDetail } from '../utils/logError';
 
 // ── Types ──────────────────────────────────────────────────
 
@@ -96,6 +97,19 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       return [...prev, { id, message, type, duration }];
     });
   }, []);
+
+  // Bridge: the data layer (hooks, contexts, plain async fns) reports save
+  // failures via a window event (see utils/logError.ts → reportSaveError) so it
+  // can surface a toast without holding this context. The dedupe in showToast
+  // keeps a burst of failures to a single visible toast.
+  useEffect(() => {
+    const onSaveError = (e: Event) => {
+      const detail = (e as CustomEvent<SaveErrorDetail>).detail;
+      showToast(detail?.message ?? "Couldn't save — check your connection", 'error');
+    };
+    window.addEventListener(SAVE_ERROR_EVENT, onSaveError);
+    return () => window.removeEventListener(SAVE_ERROR_EVENT, onSaveError);
+  }, [showToast]);
 
   const timerMapRef = useRef<Map<string, ReturnType<typeof setTimeout>>>(new Map());
 

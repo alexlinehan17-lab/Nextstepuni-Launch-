@@ -12,6 +12,7 @@ import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useFreshProgress } from './useFreshProgress';
 import { type CareerPathsState } from '../types/careerPaths';
+import { reportSaveError } from '../utils/logError';
 
 const EMPTY: CareerPathsState = { seenIds: [], savedIds: [], updatedAt: '' };
 const add = (arr: string[], v: string) => (arr.includes(v) ? arr : [...arr, v]);
@@ -33,7 +34,7 @@ export function useCareerPaths(uid?: string) {
   }, [progressLoaded, rawProgressDoc, uid]);
 
   const persist = useCallback((next: CareerPathsState) => {
-    if (uid) setDoc(doc(db, 'progress', uid), { careerPaths: next }, { merge: true }).catch(() => {});
+    if (uid) setDoc(doc(db, 'progress', uid), { careerPaths: next }, { merge: true }).catch((e) => reportSaveError('useCareerPaths.save', e));
   }, [uid]);
 
   const markSeen = useCallback((id: string) => {

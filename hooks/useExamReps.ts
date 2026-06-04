@@ -15,6 +15,7 @@ import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useFreshProgress } from './useFreshProgress';
 import { type RepSelection } from '../types/examReps';
+import { reportSaveError } from '../utils/logError';
 
 export interface ExamRepsState {
   /** All-time marks captured across every rep (the competence tally). */
@@ -78,7 +79,7 @@ export function useExamReps(uid: string | undefined) {
         updatedAt: new Date().toISOString(),
       };
       if (uid) {
-        setDoc(doc(db, 'progress', uid), { examReps: next }, { merge: true }).catch(() => {});
+        setDoc(doc(db, 'progress', uid), { examReps: next }, { merge: true }).catch((e) => reportSaveError('useExamReps.save', e));
       }
       return next;
     });
@@ -88,7 +89,7 @@ export function useExamReps(uid: string | undefined) {
   const setSelection = useCallback((selection: RepSelection) => {
     setState(prev => {
       const next = { ...prev, selection, updatedAt: new Date().toISOString() };
-      if (uid) setDoc(doc(db, 'progress', uid), { examReps: next }, { merge: true }).catch(() => {});
+      if (uid) setDoc(doc(db, 'progress', uid), { examReps: next }, { merge: true }).catch((e) => reportSaveError('useExamReps.save', e));
       return next;
     });
   }, [uid]);

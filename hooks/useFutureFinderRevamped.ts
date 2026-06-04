@@ -16,6 +16,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
+import { reportSaveError, logError } from '../utils/logError';
 
 export interface FutureFinderRevampedState {
   length: 'full' | 'quick';
@@ -45,18 +46,18 @@ export function useFutureFinderRevamped(uid?: string) {
         setSaved((snap.data()?.futureFinderRevamped as FutureFinderRevampedState) ?? null);
         setIsLoaded(true);
       })
-      .catch(() => { if (!cancelled) { setSaved(null); setIsLoaded(true); } });
+      .catch((e) => { logError('useFutureFinderRevamped.load', e); if (!cancelled) { setSaved(null); setIsLoaded(true); } });
     return () => { cancelled = true; };
   }, [uid]);
 
   const persist = useCallback((next: FutureFinderRevampedState) => {
     setSaved(next);
-    if (uid) setDoc(doc(db, 'progress', uid), { futureFinderRevamped: next }, { merge: true }).catch(() => {});
+    if (uid) setDoc(doc(db, 'progress', uid), { futureFinderRevamped: next }, { merge: true }).catch((e) => reportSaveError('useFutureFinderRevamped.save', e));
   }, [uid]);
 
   const reset = useCallback(() => {
     setSaved(null);
-    if (uid) setDoc(doc(db, 'progress', uid), { futureFinderRevamped: null }, { merge: true }).catch(() => {});
+    if (uid) setDoc(doc(db, 'progress', uid), { futureFinderRevamped: null }, { merge: true }).catch((e) => reportSaveError('useFutureFinderRevamped.save', e));
   }, [uid]);
 
   return { saved, isLoaded, persist, reset };

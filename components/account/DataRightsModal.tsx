@@ -12,6 +12,7 @@ import { EmailAuthProvider, reauthenticateWithCredential, signOut } from 'fireba
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import app, { auth } from '../../firebase';
 import { useModal } from '../../hooks/useModal';
+import { logError } from '../../utils/logError';
 
 // Self-service GDPR Article 15 (export) + Article 17 (erasure) — audit item 15.
 // Backed by the exportMyData / requestAccountDeletion Cloud Functions.
@@ -91,7 +92,7 @@ export const DataRightsModal: React.FC<DataRightsModalProps> = ({ open, onClose,
       const fns = getFunctions(app);
       const deleteFn = httpsCallable<{ uid?: string }, { success: boolean }>(fns, 'requestAccountDeletion');
       await deleteFn({});
-      await signOut(auth).catch(() => {});
+      await signOut(auth).catch((e) => logError('DataRightsModal.signOut', e));
       setPhase('deleted');
     } catch (err) {
       console.error('Account deletion failed:', err);

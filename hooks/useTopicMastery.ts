@@ -9,6 +9,7 @@ import { db } from '../firebase';
 import { useFreshProgress } from './useFreshProgress';
 import { type TopicMasteryMap, type UnifiedConfidence, type TopicMasteryEntry } from '../types';
 import { getSyllabusTopics } from '../components/syllabusTopics';
+import { reportSaveError } from '../utils/logError';
 
 export function useTopicMastery(uid: string | undefined) {
   const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
@@ -65,7 +66,7 @@ export function useTopicMastery(uid: string | undefined) {
 
       // Save migrated data if we had any old data
       if (Object.keys(merged).length > 0) {
-        setDoc(doc(db, 'progress', uid), { topicMastery: merged }, { merge: true }).catch(() => {});
+        setDoc(doc(db, 'progress', uid), { topicMastery: merged }, { merge: true }).catch((e) => reportSaveError('useTopicMastery.save', e));
       }
     }
     setIsLoaded(true);
@@ -84,7 +85,7 @@ export function useTopicMastery(uid: string | undefined) {
       [topic]: { confidence, updatedAt: Date.now(), source },
     };
     setMastery(next);
-    setDoc(doc(db, 'progress', uid), { topicMastery: next }, { merge: true }).catch(() => {});
+    setDoc(doc(db, 'progress', uid), { topicMastery: next }, { merge: true }).catch((e) => reportSaveError('useTopicMastery.save', e));
   }, [uid, mastery]);
 
   const importSyllabusTopics = useCallback((subject: string) => {
@@ -105,7 +106,7 @@ export function useTopicMastery(uid: string | undefined) {
     if (!added) return;
     next[subject] = subjectMap;
     setMastery(next);
-    setDoc(doc(db, 'progress', uid), { topicMastery: next }, { merge: true }).catch(() => {});
+    setDoc(doc(db, 'progress', uid), { topicMastery: next }, { merge: true }).catch((e) => reportSaveError('useTopicMastery.save', e));
   }, [uid, mastery]);
 
   const bulkUpdate = useCallback((subject: string, updates: Record<string, UnifiedConfidence>) => {
@@ -123,7 +124,7 @@ export function useTopicMastery(uid: string | undefined) {
     }
     next[subject] = subjectMap;
     setMastery(next);
-    setDoc(doc(db, 'progress', uid), { topicMastery: next }, { merge: true }).catch(() => {});
+    setDoc(doc(db, 'progress', uid), { topicMastery: next }, { merge: true }).catch((e) => reportSaveError('useTopicMastery.save', e));
   }, [uid, mastery]);
 
   const getTopicConfidence = useCallback((subject: string, topic: string): UnifiedConfidence => {

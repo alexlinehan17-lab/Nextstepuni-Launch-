@@ -15,6 +15,7 @@ import {
 } from './subjectData';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
+import { reportSaveError } from '../utils/logError';
 import { useInnovationData } from '../contexts/InnovationDataContext';
 import { COLORS } from '../design/tokens';
 
@@ -245,7 +246,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
     const timer = setTimeout(() => {
       setDoc(doc(db, 'progress', uid), {
         computedPoints: { current: currentAnalysis.total, target: targetAnalysis.total },
-      }, { merge: true }).catch(() => {});
+      }, { merge: true }).catch((e) => reportSaveError('CAOPointsSimulator.save', e));
     }, 2000);
     return () => clearTimeout(timer);
   }, [uid, currentAnalysis.total, targetAnalysis.total, simSubjects.length]);
@@ -272,7 +273,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
             }));
           setDoc(doc(db, 'progress', uid), {
             caoSimulator: { whatIfScenarios: scenarios, updatedAt: new Date().toISOString() },
-          }, { merge: true }).catch(() => {});
+          }, { merge: true }).catch((e) => reportSaveError('CAOPointsSimulator.save', e));
         }, 1500);
       }
       return next;
@@ -285,7 +286,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
     if (uid) {
       setDoc(doc(db, 'progress', uid), {
         caoSimulator: { whatIfScenarios: [], updatedAt: new Date().toISOString() },
-      }, { merge: true }).catch(() => {});
+      }, { merge: true }).catch((e) => reportSaveError('CAOPointsSimulator.save', e));
     }
   };
 

@@ -27,6 +27,7 @@ import { GCKeyEvents } from './gc/GCKeyEvents';
 import { GCStudentDetail } from './gc/GCStudentDetail';
 import { generateAlerts, type DismissedAlert, type EarlyWarningAlert } from './gc/gcAlerts';
 import { useGCFlags } from '../hooks/useGCFlags';
+import { logError } from '../utils/logError';
 
 interface GCDashboardProps {
   school: string;
@@ -186,7 +187,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       if (cancelled || !snap.exists()) return;
       const cc = (snap.data()?.collegeCompass as CollegeCompassState) ?? null;
       setStudentData(prev => prev.map(s => s.user.uid === selectedStudentUid ? { ...s, collegeCompass: cc } : s));
-    }).catch(() => {});
+    }).catch((e) => logError('GCDashboard.reloadStudentCompass', e));
     return () => { cancelled = true; };
   }, [selectedStudentUid]);
 

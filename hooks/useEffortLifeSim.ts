@@ -12,6 +12,7 @@ import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useFreshProgress } from './useFreshProgress';
 import { type LifeRegion } from '../components/effortLifeModel';
+import { reportSaveError } from '../utils/logError';
 
 export interface EffortLifeSimState {
   /** The career id the student is exploring (from CAREERS). */
@@ -43,14 +44,14 @@ export function useEffortLifeSim(uid?: string) {
   const save = useCallback((patch: Partial<EffortLifeSimState>) => {
     setSaved((prev) => {
       const next: EffortLifeSimState = { ...(prev ?? {}), ...patch, updatedAt: new Date().toISOString() };
-      if (uid) setDoc(doc(db, 'progress', uid), { effortLifeSim: next }, { merge: true }).catch(() => {});
+      if (uid) setDoc(doc(db, 'progress', uid), { effortLifeSim: next }, { merge: true }).catch((e) => reportSaveError('useEffortLifeSim.save', e));
       return next;
     });
   }, [uid]);
 
   const reset = useCallback(() => {
     setSaved(null);
-    if (uid) setDoc(doc(db, 'progress', uid), { effortLifeSim: null }, { merge: true }).catch(() => {});
+    if (uid) setDoc(doc(db, 'progress', uid), { effortLifeSim: null }, { merge: true }).catch((e) => reportSaveError('useEffortLifeSim.save', e));
   }, [uid]);
 
   return { saved, isLoaded, save, reset };

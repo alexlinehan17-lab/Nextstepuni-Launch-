@@ -20,6 +20,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
+import { reportSaveError, logError } from '../utils/logError';
 import { type CollegeCompassState } from '../types';
 
 const EMPTY: CollegeCompassState = { checklist: {}, updatedAt: '' };
@@ -63,7 +64,7 @@ export function useCollegeCompass(uid: string | undefined) {
         setState(saved ? { ...EMPTY, ...saved, checklist: normaliseChecklist(saved.checklist) } : EMPTY);
         setIsLoaded(true);
       })
-      .catch(() => { if (!cancelled) { setState(EMPTY); setIsLoaded(true); } });
+      .catch((e) => { logError('useCollegeCompass.load', e); if (!cancelled) { setState(EMPTY); setIsLoaded(true); } });
     return () => { cancelled = true; };
   }, [uid]);
 
@@ -79,7 +80,7 @@ export function useCollegeCompass(uid: string | undefined) {
     const write = () => {
       pendingWrite.current = null;
       writeTimer.current = null;
-      setDoc(doc(db, 'progress', uid), { collegeCompass: payload }, { merge: true }).catch(() => {});
+      setDoc(doc(db, 'progress', uid), { collegeCompass: payload }, { merge: true }).catch((e) => reportSaveError('useCollegeCompass.save', e));
     };
     if (writeTimer.current) clearTimeout(writeTimer.current);
     if (debounce) {

@@ -10,6 +10,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
+import { reportSaveError } from '../utils/logError';
 import { useFreshProgress } from './useFreshProgress';
 import { type HowTheyDidItState } from '../types/howTheyDidIt';
 
@@ -33,7 +34,7 @@ export function useHowTheyDidIt(uid?: string) {
   }, [progressLoaded, rawProgressDoc, uid]);
 
   const persist = useCallback((next: HowTheyDidItState) => {
-    if (uid) setDoc(doc(db, 'progress', uid), { howTheyDidIt: next }, { merge: true }).catch(() => {});
+    if (uid) setDoc(doc(db, 'progress', uid), { howTheyDidIt: next }, { merge: true }).catch((e) => reportSaveError('useHowTheyDidIt.save', e));
   }, [uid]);
 
   const markSeen = useCallback((id: string) => {

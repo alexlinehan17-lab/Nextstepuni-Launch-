@@ -39,6 +39,7 @@ import { addNotificationToMultiple } from './gcNotifications';
 import GCExportModal from './GCExportModal';
 import { STATUS_CONFIG } from '../../utils/studentStatus';
 import { type FlagData, type FlagPriority } from '../../hooks/useGCFlags';
+import { logError } from '../../utils/logError';
 
 const CUSTOM_EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -621,7 +622,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       if (snap.exists()) {
         setSchoolEvents((snap.data().events as SchoolEvent[]) || []);
       }
-    }).catch(() => {});
+    }).catch((e) => logError('GCOverview.loadSchoolEvents', e));
     return () => { cancelled = true; };
   }, [school]);
 

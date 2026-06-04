@@ -12,6 +12,7 @@ import { computeStreak } from '../components/timetableAlgorithm';
 import { useAuth } from './AuthContext';
 import { type StudySessionRecord } from '../utils/strategyRegistry';
 import { type DebriefEntry } from '../components/StudyDebrief';
+import { logError } from '../utils/logError';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -215,7 +216,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         setUnlockedCardStyles(pd.cosmeticUnlocks?.cardStyles || []);
         setDismissedGuides(pd.dismissedGuides || {});
       }
-    }).catch(() => {});
+    }).catch((e) => logError('ProgressContext.load', e));
     return () => { cancelled = true; };
   }, [reloadVersion, user?.uid]);
 

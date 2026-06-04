@@ -479,14 +479,22 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const primaryBtn = "w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed";
   const primaryBtnStyle = { backgroundColor: '#FFFFFF', color: '#1A1A1A', borderColor: 'rgba(26,26,26,0.55)' };
 
-  // DEV button — temporarily always rendered (including production builds) so
-  // it's available on the iOS Capacitor build for on-device testing. Remove
-  // before shipping to App Store.
-  const devButton = (
+  // DEV "Skip Login" — drops into a local-only session with uid 'dev-student'
+  // that has NO Firebase auth token, so every Firestore read/write is rejected
+  // by the security rules (it's a no-data ghost session, useful only for UI
+  // smoke-testing). It must NOT appear on the deployed production WEB app, where
+  // it just traps real users in a broken session. Gate it to the native
+  // Capacitor shell (kept for on-device iOS testing) and local dev hosts; the
+  // deployed Firebase Hosting domain is neither, so the button is stripped
+  // there. (Still remove before an App Store submission.)
+  const isLocalHost = typeof window !== 'undefined'
+    && /^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location.hostname);
+  const showDevButton = Capacitor.isNativePlatform() || isLocalHost;
+  const devButton = showDevButton ? (
     <button onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })} className="mt-6 px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[9px] font-mono hover:bg-red-600/20 transition-colors">
       DEV: Skip Login
     </button>
-  );
+  ) : null;
 
   const selectedAvatar = avatar || defaultAvatar;
 

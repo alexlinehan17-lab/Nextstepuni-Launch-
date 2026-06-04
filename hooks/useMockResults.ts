@@ -6,6 +6,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
+import { reportSaveError } from '../utils/logError';
 import { useFreshProgress } from './useFreshProgress';
 import { type UnifiedMockResult } from '../types';
 
@@ -60,7 +61,7 @@ export function useMockResults(uid: string | undefined) {
       if (migrated.length > 0) {
         migrated.sort((a, b) => b.timestamp - a.timestamp);
         setMocks(migrated);
-        setDoc(doc(db, 'progress', uid), { mockResults: migrated }, { merge: true }).catch(() => {});
+        setDoc(doc(db, 'progress', uid), { mockResults: migrated }, { merge: true }).catch((e) => reportSaveError('useMockResults.save', e));
       }
     }
     setIsLoaded(true);
@@ -75,14 +76,14 @@ export function useMockResults(uid: string | undefined) {
     };
     let next: UnifiedMockResult[];
     setMocks(prev => { next = [newMock, ...prev]; return next; });
-    setDoc(doc(db, 'progress', uid), { mockResults: next! }, { merge: true }).catch(() => {});
+    setDoc(doc(db, 'progress', uid), { mockResults: next! }, { merge: true }).catch((e) => reportSaveError('useMockResults.save', e));
   }, [uid]);
 
   const removeMockResult = useCallback((id: string) => {
     if (!uid) return;
     let next: UnifiedMockResult[];
     setMocks(prev => { next = prev.filter(m => m.id !== id); return next; });
-    setDoc(doc(db, 'progress', uid), { mockResults: next! }, { merge: true }).catch(() => {});
+    setDoc(doc(db, 'progress', uid), { mockResults: next! }, { merge: true }).catch((e) => reportSaveError('useMockResults.save', e));
   }, [uid]);
 
   const getLatestBySubject = useCallback((subjectName: string) => {

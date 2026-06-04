@@ -12,6 +12,7 @@ import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useFreshProgress } from './useFreshProgress';
 import { type CommandWordState } from '../types/commandWord';
+import { reportSaveError } from '../utils/logError';
 
 const EMPTY: CommandWordState = {
   seenIds: [],
@@ -41,7 +42,7 @@ export function useCommandWordReflex(uid?: string) {
 
   const persist = useCallback((next: CommandWordState) => {
     if (uid) {
-      setDoc(doc(db, 'progress', uid), { commandWordReflex: next }, { merge: true }).catch(() => {});
+      setDoc(doc(db, 'progress', uid), { commandWordReflex: next }, { merge: true }).catch((e) => reportSaveError('useCommandWordReflex.save', e));
     }
   }, [uid]);
 

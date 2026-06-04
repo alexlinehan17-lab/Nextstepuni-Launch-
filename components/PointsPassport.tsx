@@ -21,6 +21,7 @@ import { useMockResults } from '../hooks/useMockResults';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { COLORS } from '../design/tokens';
+import { logError } from '../utils/logError';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -134,7 +135,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
           computedPoints: data?.computedPoints,
         });
       }
-    }).catch(() => {});
+    }).catch((e) => logError('PointsPassport.loadCao', e));
     return () => { cancelled = true; };
   }, [uid]);
 

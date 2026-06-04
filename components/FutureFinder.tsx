@@ -29,6 +29,7 @@ import {
 } from './futureFinderAlgorithm';
 import { useAuth } from '../contexts/AuthContext';
 import { runSubjectExplorerMatch, type ClusterMatchResult } from './subjectExplorerData';
+import { reportSaveError } from '../utils/logError';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -253,7 +254,7 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile, onOpenCareerP
       // Update Firestore
       if (savedData) {
         const updated = { ...savedData, topPicks: next };
-        setDoc(doc(db, 'progress', uid), { futureFinder: updated }, { merge: true }).catch(() => {});
+        setDoc(doc(db, 'progress', uid), { futureFinder: updated }, { merge: true }).catch((e) => reportSaveError('FutureFinder.save', e));
         setSavedData(updated);
       }
       return next;
@@ -275,7 +276,7 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile, onOpenCareerP
       if (savedData) {
         const codes = next.map(c => c.course.code);
         const updated = { ...savedData, compareCodes: codes };
-        setDoc(doc(db, 'progress', uid), { futureFinder: updated }, { merge: true }).catch(() => {});
+        setDoc(doc(db, 'progress', uid), { futureFinder: updated }, { merge: true }).catch((e) => reportSaveError('FutureFinder.save', e));
         setSavedData(updated);
       }
       return next;
@@ -394,7 +395,7 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile, onOpenCareerP
                 const next = prev.filter(c => c.course.code !== code);
                 if (savedData) {
                   const updated = { ...savedData, compareCodes: next.map(c => c.course.code) };
-                  setDoc(doc(db, 'progress', uid), { futureFinder: updated }, { merge: true }).catch(() => {});
+                  setDoc(doc(db, 'progress', uid), { futureFinder: updated }, { merge: true }).catch((e) => reportSaveError('FutureFinder.save', e));
                   setSavedData(updated);
                 }
                 return next;

@@ -11,6 +11,7 @@ import { type SessionUser, yearGroupToCurriculumLevel, type CurriculumLevel } fr
 import { type UserProgress, type NorthStar } from '../types';
 import { type StudentSubjectProfile } from '../components/subjectData';
 import { generateAutoNotifications } from '../components/gc/gcNotifications';
+import { logError } from '../utils/logError';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -177,7 +178,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
               });
               // Fire-and-forget auto-notifications
               if (userData.role !== 'gc') {
-                generateAutoNotifications(firebaseUser.uid, pd).catch(() => {});
+                generateAutoNotifications(firebaseUser.uid, pd).catch((e) => logError('AuthContext.autoNotifications', e));
               }
             } else {
               setLoadedData({ ...defaultLoadedData, needsOnboarding: true });
