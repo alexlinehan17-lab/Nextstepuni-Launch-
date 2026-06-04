@@ -10,14 +10,14 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { useProgress } from '../contexts/ProgressContext';
+import { useFreshProgress } from './useFreshProgress';
 import { type CareerPathsState } from '../types/careerPaths';
 
 const EMPTY: CareerPathsState = { seenIds: [], savedIds: [], updatedAt: '' };
 const add = (arr: string[], v: string) => (arr.includes(v) ? arr : [...arr, v]);
 
 export function useCareerPaths(uid?: string) {
-  const { rawProgressDoc, progressLoaded } = useProgress();
+  const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
   const [state, setState] = useState<CareerPathsState>(EMPTY);
   const [isLoaded, setIsLoaded] = useState(false);
   const seededRef = useRef(false);

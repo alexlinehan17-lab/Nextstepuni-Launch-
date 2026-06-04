@@ -22,9 +22,6 @@ import {
   type TopicEntry, type TopicMap, type MockResult, computeCurrentTotal,
   INK, INK_MUTE, ACCENT,
 } from './war-room/warRoomShared';
-import {
-  Overline,
-} from './war-room/warRoomPrimitives';
 import CountdownPanel from './war-room/CountdownPanel';
 import CoveragePanel from './war-room/CoveragePanel';
 import TrajectoryPanel from './war-room/TrajectoryPanel';

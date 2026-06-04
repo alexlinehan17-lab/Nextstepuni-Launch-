@@ -14,8 +14,8 @@ All commands assume cwd `/Users/alexlinehan/Nextstepuni-Launch-`.
 Run the exact CI pipeline locally, in this order. CI (`.github/workflows/ci.yml`) runs the same four steps on every push/PR to `main`, so a clean local run = a green CI.
 
 ```bash
-# 1. Lint — errors fail, legacy warnings tolerated
-npm run lint:ci
+# 1. Lint — strict, must be 0 warnings (the CI gate)
+npm run lint
 
 # 2. Type check — THE real type gate; must print 0 errors
 npm run typecheck
@@ -28,7 +28,7 @@ npm run build
 ```
 
 **What "pass" means**
-- `lint:ci` — exit 0. ESLint with warnings tolerated (errors still fail).
+- `lint` — exit 0 with **0 warnings** (`--max-warnings 0`, the CI gate). `lint:ci` is a legacy escape hatch (warnings tolerated) — don't rely on it.
 - `typecheck` — exit 0 and **0 errors**. This is the type gate, not `build`.
 - `test` — exit 0, no failing tests.
 - `build` — exit 0, artifact in `dist/`.
@@ -37,7 +37,7 @@ npm run build
 - **Heap / never bare `tsc`.** Always invoke `npm run typecheck`. It sets `--max-old-space-size=4096`; bare `tsc` OOMs at the default Node heap and gives a misleading crash.
 - **`typecheck` IS the gate.** `npm run build` (esbuild) transpiles per-file and does **not** type-check. Type errors only surface in `typecheck`. After any non-trivial change run **both** `typecheck` and `build` before pushing — don't lean on CI to catch type breakage you skipped.
 - **`typecheck` excludes test code.** `tsconfig` excludes `test/`, `vitest.config.ts`, `scripts/`, `functions/`. Type errors in those files won't appear in `typecheck` — validate them with `npm test`.
-- **Strict lint is broken.** `npm run lint` (`--max-warnings 0`) fails on ~45 legacy unused-var warnings. Use `npm run lint:ci`. For fast iteration on just your edits, lint only changed files:
+- **Strict lint is the gate and is clean** (the ~45 legacy warnings were burned down 2026-06-04). `npm run lint` (`--max-warnings 0`) must stay at zero — don't introduce new unused-var warnings. For fast iteration on just your edits, lint only changed files:
   ```bash
   npx eslint path/to/changed-file.tsx path/to/other.ts
   ```

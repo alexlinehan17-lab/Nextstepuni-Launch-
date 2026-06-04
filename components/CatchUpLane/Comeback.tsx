@@ -21,7 +21,6 @@ import React, { useMemo, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { ArrowLeft, ArrowRight, Check, Heart, ChevronDown, RotateCcw, Shield, BookOpenCheck } from 'lucide-react';
-import { COLORS } from '../../design/tokens';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { useProgress } from '../../contexts/ProgressContext';
 import {

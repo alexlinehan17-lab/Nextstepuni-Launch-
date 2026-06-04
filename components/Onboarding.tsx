@@ -6,7 +6,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv, MotionP, MotionSpan } from './Motion';
-import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff, BookOpen, Target, CalendarDays, Star, Layers } from 'lucide-react';
+import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff, BookOpen, Layers } from 'lucide-react';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,

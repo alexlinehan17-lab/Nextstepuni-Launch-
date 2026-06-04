@@ -13,7 +13,7 @@
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { useProgress } from '../contexts/ProgressContext';
+import { useFreshProgress } from './useFreshProgress';
 import { type CatchUpLaneState, type ComebackPlan } from '../types/catchUpLane';
 import { RECOVERY_CARDS } from '../catchUpLaneData';
 
@@ -26,7 +26,7 @@ const EMPTY: CatchUpLaneState = {
 };
 
 export function useCatchUpLane(uid?: string) {
-  const { rawProgressDoc, progressLoaded } = useProgress();
+  const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
   const [state, setState] = useState<CatchUpLaneState>(EMPTY);
   const [isLoaded, setIsLoaded] = useState(false);
   const seededRef = useRef(false);

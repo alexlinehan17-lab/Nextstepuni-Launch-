@@ -16,9 +16,9 @@ import { getSubjectColor, getDistinctSubjectHex } from '../../studySessionData';
 import { type useMockResults } from '../../hooks/useMockResults';
 import {
   type MockResult, gradeToPoints,
-  PAPER, PAPER_SOFT, INK, INK_SOFT, INK_MUTE, INK_FAINT, ACCENT,
-  STATUS_SOLID, STATUS_SOLID_DEEP, STATUS_SOLID_TINT,
-  STATUS_GAP, STATUS_GAP_DEEP, STATUS_GAP_TINT,
+  PAPER, INK, INK_SOFT, INK_MUTE, INK_FAINT, ACCENT,
+  STATUS_SOLID_DEEP, STATUS_SOLID_TINT,
+  STATUS_GAP_DEEP, STATUS_GAP_TINT,
   mutedSubjectHex,
 } from './warRoomShared';
 import {

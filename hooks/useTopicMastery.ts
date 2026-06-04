@@ -6,12 +6,12 @@
 import { useState, useEffect, useCallback } from 'react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { useProgress } from '../contexts/ProgressContext';
+import { useFreshProgress } from './useFreshProgress';
 import { type TopicMasteryMap, type UnifiedConfidence, type TopicMasteryEntry } from '../types';
 import { getSyllabusTopics } from '../components/syllabusTopics';
 
 export function useTopicMastery(uid: string | undefined) {
-  const { rawProgressDoc, progressLoaded } = useProgress();
+  const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
   const [mastery, setMastery] = useState<TopicMasteryMap>({});
   const [isLoaded, setIsLoaded] = useState(false);
 

@@ -13,7 +13,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { useProgress } from '../contexts/ProgressContext';
+import { useFreshProgress } from './useFreshProgress';
 import { type RepSelection } from '../types/examReps';
 
 export interface ExamRepsState {
@@ -37,7 +37,7 @@ export interface RepResult {
 }
 
 export function useExamReps(uid: string | undefined) {
-  const { rawProgressDoc, progressLoaded } = useProgress();
+  const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
   const [state, setState] = useState<ExamRepsState>(EMPTY);
   const [isLoaded, setIsLoaded] = useState(false);
   const seededRef = useRef(false);

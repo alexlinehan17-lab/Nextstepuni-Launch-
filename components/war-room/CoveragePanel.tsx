@@ -16,15 +16,15 @@ import {
   CONFIDENCE_LABELS,
   CONFIDENCE_CYCLE,
   CONFIDENCE_HEX,
-  PAPER, PAPER_SOFT, INK, INK_SOFT, INK_MUTE, INK_FAINT, ACCENT,
-  STATUS_SOLID, STATUS_SHAKY, STATUS_GAP, STATUS_GAP_DEEP,
-  STATUS_SOLID_TINT, STATUS_SHAKY_TINT, STATUS_GAP_TINT, STATUS_SOLID_DEEP,
+  PAPER, INK, INK_SOFT, INK_MUTE, INK_FAINT, ACCENT,
+  STATUS_SHAKY, STATUS_GAP_DEEP,
+  STATUS_SHAKY_TINT, STATUS_SOLID_DEEP,
   mutedSubjectHex,
   type TopicEntry,
   type TopicMap,
 } from './warRoomShared';
 import {
-  Overline, SectionHeader, EditorialCard, MutedProgress, Pill, ConfidenceDot,
+  Overline, SectionHeader, EditorialCard, ConfidenceDot,
   fieldClass, fieldStyle,
 } from './warRoomPrimitives';
 

@@ -14,12 +14,12 @@ npm run dev          # Start dev server (localhost:3000)
 npm run build        # Production build via Vite (esbuild — does NOT type-check)
 npm run preview      # Preview production build
 npm run typecheck    # tsc --noEmit — the type gate (sets --max-old-space-size=4096)
-npm run lint:ci      # ESLint (errors fail; warnings tolerated)
-npm run lint         # ESLint strict (--max-warnings 0; ~45 legacy warnings remain)
+npm run lint         # ESLint strict (--max-warnings 0) — the CI lint gate; currently clean
+npm run lint:ci      # ESLint (errors fail; warnings tolerated) — legacy escape hatch
 npm test             # Vitest unit/smoke tests
 ```
 
-CI (`.github/workflows/ci.yml`) runs `lint:ci` → `typecheck` → `build` on every push/PR to `main`. Important: `npm run build` (Vite/esbuild) transpiles per-file and does **not** type-check — `npm run typecheck` is the real type gate (and it needs extra Node heap, hence the script flag).
+CI (`.github/workflows/ci.yml`) runs `lint` (strict, `--max-warnings 0`) → `typecheck` → `test` → `build` on every push/PR to `main`. Important: `npm run build` (Vite/esbuild) transpiles per-file and does **not** type-check — `npm run typecheck` is the real type gate (and it needs extra Node heap, hence the script flag).
 
 ## Environment
 
@@ -82,7 +82,7 @@ interface ModuleProps {
 
 ## Working With This Codebase
 
-**Always check after changes.** Run `npm run typecheck` AND `npm run build` after any non-trivial change (CI also runs `npm run lint:ci`). `typecheck` must be clean (0 errors) — it's the real type gate; `build` alone does not type-check. The strict `npm run lint` (`--max-warnings 0`) still has ~45 legacy unused-var warnings, so CI uses `lint:ci` (errors fail, warnings tolerated) until those are burned down.
+**Always check after changes.** Run `npm run typecheck` AND `npm run build` after any non-trivial change (CI also runs `npm run lint` strict + `npm test`). `typecheck` must be clean (0 errors) — it's the real type gate; `build` alone does not type-check. `npm run lint` (`--max-warnings 0`) is now CLEAN and is the CI lint gate (the ~45 legacy warnings were burned down 2026-06-04) — keep it at zero; don't introduce new unused-var warnings.
 
 **Check for cascading effects.** After making changes to any file, verify that imports, navigation (both mobile AND desktop), and dependent components still work. Never assume a fix is isolated. Specifically: if you remove an import, grep for the name in the file to confirm it's truly unused. If you touch navigation, check both `MobileBottomNav` in App.tsx and any desktop sidebar. If you modify a hook's return type, check every consumer.
 
@@ -331,7 +331,7 @@ All Tailwind class strings must be FULL LITERALS. Never dynamically construct cl
 
 ### Build Verification
 
-Always run `npm run typecheck` and `npm run build` after any non-trivial visual change. Vitest smoke tests run via `npm test`; CI runs lint:ci → typecheck → build.
+Always run `npm run typecheck` and `npm run build` after any non-trivial visual change. Vitest smoke tests run via `npm test`; CI runs lint (strict) → typecheck → test → build.
 
 ## Examiner reports library
 

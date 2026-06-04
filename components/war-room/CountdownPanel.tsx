@@ -10,8 +10,8 @@ import { type StudentSubjectProfile } from '../subjectData';
 import { getDistinctSubjectHex } from '../../studySessionData';
 import {
   type MockResult, gradeToPoints,
-  PAPER, PAPER_SOFT, INK, INK_SOFT, INK_MUTE, INK_FAINT, ACCENT,
-  STATUS_SOLID, STATUS_GAP, STATUS_GAP_DEEP, STATUS_GAP_TINT, STATUS_SOLID_DEEP, STATUS_SOLID_TINT,
+  INK, INK_SOFT, INK_MUTE, INK_FAINT, ACCENT,
+  STATUS_GAP_DEEP, STATUS_GAP_TINT, STATUS_SOLID_DEEP, STATUS_SOLID_TINT,
   mutedSubjectHex,
 } from './warRoomShared';
 import {

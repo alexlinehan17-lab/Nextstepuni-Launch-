@@ -22,7 +22,7 @@ interface HexTileProps {
 }
 
 const HexTile: React.FC<HexTileProps> = ({
-  q, r, model, rotation = 0, radius = 1,
+  q, r, model, rotation = 0, radius: _radius = 1,
   animateIn = false, delay = 0,
 }) => {
   const { scene } = useGLTF(`${HEX_PATH}${model}`);

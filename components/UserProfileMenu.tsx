@@ -31,7 +31,7 @@ interface UserProfileProps {
   unlockedThemes: string[];
 }
 
-export const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes }) => {
+export const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes: _unlockedThemes }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const displayAvatar = avatarOverride || user.avatar;
@@ -193,7 +193,7 @@ interface MobileProfileSheetProps {
   unlockedThemes: string[];
 }
 
-export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard: _onGoToDashboard, onGoToInsights: _onGoToInsights, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes }) => {
+export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard: _onGoToDashboard, onGoToInsights: _onGoToInsights, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes: _unlockedThemes }) => {
   const displayAvatar = avatarOverride || user.avatar;
   return (
     <AnimatePresence>

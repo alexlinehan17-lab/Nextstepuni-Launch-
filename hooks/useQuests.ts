@@ -7,12 +7,10 @@ import { useState, useCallback, useMemo, useRef, useEffect } from 'react';
 import { doc, increment, runTransaction } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
-import { type UserProgress, type TopicMasteryMap } from '../types';
+import { type UserProgress } from '../types';
 import { type StreakData } from './useStreak';
 import { type StudentSubjectProfile, toDateKey } from '../components/subjectData';
 import { type CourseData } from '../components/Library';
-import { type StudySessionRecord } from '../utils/strategyRegistry';
-import { type DebriefEntry } from '../components/StudyDebrief';
 import {
   ONBOARDING_QUESTS,
   PERSONALIZED_TEMPLATES,

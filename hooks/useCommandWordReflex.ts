@@ -10,7 +10,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { useProgress } from '../contexts/ProgressContext';
+import { useFreshProgress } from './useFreshProgress';
 import { type CommandWordState } from '../types/commandWord';
 
 const EMPTY: CommandWordState = {
@@ -24,7 +24,7 @@ const EMPTY: CommandWordState = {
 const uniqPush = (arr: string[], v: string) => (arr.includes(v) ? arr : [...arr, v]);
 
 export function useCommandWordReflex(uid?: string) {
-  const { rawProgressDoc, progressLoaded } = useProgress();
+  const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
   const [state, setState] = useState<CommandWordState>(EMPTY);
   const [isLoaded, setIsLoaded] = useState(false);
   const seededRef = useRef(false);

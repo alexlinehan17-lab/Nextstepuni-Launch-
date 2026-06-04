@@ -122,7 +122,7 @@ function validatePointsData(raw: unknown): PointsData {
 
 // ─── InnovationZone ──────────────────────────────────────────────────────────
 
-const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, savedJourneyResult, onJourneyComplete, settings: _settings, updateSetting: _updateSetting, onCosmeticUnlocksChange, onStudyNow, dismissedGuides, onDismissGuide }) => {
+const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, savedJourneyResult, onJourneyComplete, settings: _settings, updateSetting: _updateSetting, onCosmeticUnlocksChange, onStudyNow, dismissedGuides: _dismissedGuides, onDismissGuide: _onDismissGuide }) => {
     const { showToast } = useToast();
     const nav = useNavigation();
     const activeTool = nav.state.activeTool;
@@ -738,7 +738,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                         {filteredTools.map((tool, i) => {
                             const disabled = (tool.needsProfile && !profileLoaded) || (tool.needsProfile && !subjectProfile);
                             const gcRecommended = gcRecommendations[tool.id];
-                            const chrome = TOOL_CHROME[tool.id];
 
                             return (
                                 <MotionDiv

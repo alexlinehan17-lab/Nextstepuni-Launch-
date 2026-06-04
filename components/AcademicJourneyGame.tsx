@@ -7,7 +7,7 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useToast } from './Toast';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionPolygon, MotionSpan } from './Motion';
-import { Zap, Shield, TrendingUp, Users, BookOpen, Lock, type LucideIcon } from 'lucide-react';
+import { Lock } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import {
@@ -29,26 +29,16 @@ export interface JourneyResult {
 // ════════════════════════════════════════════════════════════════════════════
 
 const PAPER = '#F6F1E6';        // warm cream, slightly toastier than the global cream so the simulator feels like a separate journal
-const PAPER_DEEP = '#EFE7D5';   // for nested paper cards within the simulator
 const INK = '#1F1B17';          // near-black charcoal — never use #000
 const INK_SOFT = '#5C544A';     // body copy
 const INK_MUTE = '#8E8378';     // overlines, muted descriptors
 const ACCENT = '#CC785C';       // brand orange — focal accent only
-const ACCENT_DARK = '#B56A50';
 
 // Softened phase palette — muted, paper-friendly, never neon
 const PHASE_TOKENS: Record<Phase, { ink: string; wash: string; tint: string; deep: string }> = {
   'Foundation':      { ink: '#5E8B7E', wash: '#E8EDE6', tint: '#D8E4DA', deep: '#3F6A5E' },
   'Pressure Cooker': { ink: '#B8843D', wash: '#EFE0BF', tint: '#E6CE94', deep: '#8C6022' },
   'Final Stretch':   { ink: '#B86F5A', wash: '#EFD9CD', tint: '#E0B8A2', deep: '#8C4D3B' },
-};
-
-const STAT_ICONS: Record<StatKey, LucideIcon> = {
-    energy: Zap,
-    academicCap: TrendingUp,
-    socialSupport: Users,
-    systemSavvy: BookOpen,
-    resilience: Shield,
 };
 
 const LOCATION_CONFIG: Record<Location, { label: string }> = {
@@ -92,25 +82,6 @@ const SketchedSun: React.FC<{ size?: number; color?: string; className?: string 
         <path d="M42 22 L 48 13" stroke={color} strokeWidth={1.2} strokeLinecap="round" />
         <path d="M14 32 L 6 30"  stroke={color} strokeWidth={1.2} strokeLinecap="round" />
         <path d="M50 32 L 58 31" stroke={color} strokeWidth={1.2} strokeLinecap="round" />
-    </svg>
-);
-
-const SketchedMountain: React.FC<{ size?: number; color?: string; flag?: boolean; className?: string }> = ({ size = 64, color = INK, flag = true, className }) => (
-    <svg width={size} height={size} viewBox="0 0 80 80" fill="none" className={className} aria-hidden>
-        {/* Two overlapping peaks, slightly imperfect */}
-        <path d="M6 64 L 30 22 L 48 50 L 56 38 L 74 64 Z" stroke={color} strokeWidth={1.3} strokeLinejoin="round" fill="none" />
-        {/* Hatching for shading on the right face */}
-        <path d="M30 28 L 33 38" stroke={color} strokeWidth={0.9} strokeLinecap="round" />
-        <path d="M33 32 L 36 44" stroke={color} strokeWidth={0.8} strokeLinecap="round" />
-        <path d="M36 38 L 39 50" stroke={color} strokeWidth={0.8} strokeLinecap="round" />
-        <path d="M56 42 L 59 52" stroke={color} strokeWidth={0.8} strokeLinecap="round" />
-        <path d="M59 46 L 62 56" stroke={color} strokeWidth={0.8} strokeLinecap="round" />
-        {flag && (
-            <>
-                <path d="M30 22 L 30 10" stroke={color} strokeWidth={1.2} strokeLinecap="round" />
-                <path d="M30 10 L 38 12 L 30 16 Z" fill={ACCENT} stroke={color} strokeWidth={1} />
-            </>
-        )}
     </svg>
 );
 
@@ -160,13 +131,6 @@ const SketchedFlag: React.FC<{ size?: number; color?: string; className?: string
     <svg width={size} height={size} viewBox="0 0 32 32" fill="none" className={className} aria-hidden>
         <path d="M8 28 L 8 4" stroke={color} strokeWidth={1.3} strokeLinecap="round" />
         <path d="M8 4 Q 18 6, 24 4 Q 22 10, 24 14 Q 16 12, 8 14 Z" fill={ACCENT} stroke={color} strokeWidth={1.1} strokeLinejoin="round" />
-    </svg>
-);
-
-const SketchedStar: React.FC<{ size?: number; color?: string; className?: string }> = ({ size = 24, color = ACCENT, className }) => (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
-        <path d="M12 3 L 14.3 9.4 L 21 9.7 L 15.7 13.8 L 17.6 20.3 L 12 16.6 L 6.4 20.3 L 8.3 13.8 L 3 9.7 L 9.7 9.4 Z"
-              stroke={color} strokeWidth={1.3} strokeLinejoin="round" strokeLinecap="round" />
     </svg>
 );
 
@@ -354,24 +318,6 @@ const JourneyTrail: React.FC<{ currentPhase: Phase; compact?: boolean }> = ({ cu
 
 const Overline: React.FC<{ children: React.ReactNode; color?: string; className?: string }> = ({ children, color = INK_MUTE, className = '' }) => (
     <p className={`text-[10px] font-semibold uppercase tracking-[0.22em] ${className}`} style={{ color }}>{children}</p>
-);
-
-// Sticky-note callout used in the scenario hero illustration
-const StickyNote: React.FC<{ children: React.ReactNode; rotate?: number; className?: string }> = ({ children, rotate = -3, className = '' }) => (
-    <div
-        className={`relative inline-block px-3 py-2 font-serif text-[12px] leading-snug ${className}`}
-        style={{
-            background: '#FBF6E5',
-            color: INK,
-            transform: `rotate(${rotate}deg)`,
-            boxShadow: '0 2px 0 rgba(31,27,23,0.06), 0 6px 14px rgba(31,27,23,0.08)',
-            border: `1px solid rgba(31,27,23,0.08)`,
-            // Faintly torn edges via clip-path-ish: just rounded with slight skew
-            borderRadius: '2px 6px 3px 7px',
-        }}
-    >
-        {children}
-    </div>
 );
 
 // ════════════════════════════════════════════════════════════════════════════

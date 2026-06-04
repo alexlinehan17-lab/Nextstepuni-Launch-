@@ -83,7 +83,7 @@ export const SectionHeader: React.FC<{
   ruleColor?: string;
   trailing?: React.ReactNode;
   className?: string;
-}> = ({ overline, title, rule = true, ruleColor = ACCENT, trailing, className = '' }) => (
+}> = ({ overline, title, rule = true, ruleColor: _ruleColor = ACCENT, trailing, className = '' }) => (
   <div className={`flex items-end justify-between gap-3 ${className}`}>
     <div>
       {overline && <Overline className="mb-1.5">{overline}</Overline>}

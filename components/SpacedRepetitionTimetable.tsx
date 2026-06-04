@@ -21,7 +21,7 @@ import {
   computeBargains,
 } from './subjectData';
 import {
-  computeSubjectPriorities, computeSubjectPrioritiesForCurriculum,
+  computeSubjectPrioritiesForCurriculum,
   allocateSessions, generateWeeklyTimetable,
   computeWeeksUntilExam, computeIntensityFactor,
   type SessionAllocation,

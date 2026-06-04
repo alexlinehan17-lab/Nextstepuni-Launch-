@@ -19,14 +19,13 @@ import { getSubjectGuidance, type SubjectGuidance } from '../subjectGuidance';
 import {
   type TopicMap, type MockResult,
   gradeToPoints, mutedSubjectHex,
-  PAPER, PAPER_SOFT, INK, INK_SOFT, INK_MUTE, INK_FAINT, ACCENT,
+  PAPER, INK, INK_SOFT, INK_MUTE, INK_FAINT, ACCENT,
   STATUS_SOLID, STATUS_SOLID_DEEP, STATUS_SOLID_TINT,
   STATUS_SHAKY, STATUS_SHAKY_DEEP, STATUS_SHAKY_TINT,
-  STATUS_GAP, STATUS_GAP_DEEP, STATUS_GAP_TINT,
 } from './warRoomShared';
 import {
   Overline, SectionHeader, EditorialCard, Pill,
-  SketchedStar, SketchedFlag, SketchedLeaf, SunburstRule, PaperRule,
+  SketchedStar, SketchedFlag, SketchedLeaf, PaperRule,
 } from './warRoomPrimitives';
 
 // ── Helpers for study pattern charts ───────────────────────

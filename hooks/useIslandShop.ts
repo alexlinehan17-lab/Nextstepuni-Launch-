@@ -7,6 +7,7 @@ import { useState, useEffect, useCallback, useMemo } from 'react';
 import { doc, setDoc, updateDoc, increment, arrayUnion } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
+import { useFreshProgress } from './useFreshProgress';
 import { type NorthStar, type IslandState, type IslandPlacement, type ShopItem, type NorthStarCategory } from '../types';
 import {
   SHOP_CATALOG, EXCLUSIVE_ITEMS, STARTER_PACKS,
@@ -68,7 +69,8 @@ export interface MilestoneRewardStatus {
 }
 
 export function useIslandShop(uid?: string, northStar?: NorthStar | null, completedCount: number = 0) {
-  const { rawProgressDoc, progressLoaded, reloadProgress } = useProgress();
+  const { reloadProgress } = useProgress();
+  const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
   const [islandState, setIslandState] = useState<IslandState | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 

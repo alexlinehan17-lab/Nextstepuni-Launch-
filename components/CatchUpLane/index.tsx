@@ -19,7 +19,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import {
   ArrowLeft, ArrowRight, Check, CheckCircle2, Circle, RotateCcw,
-  Sparkles, Waypoints, BookOpenCheck, Heart,
+  Sparkles, BookOpenCheck, Heart,
 } from 'lucide-react';
 import { COLORS } from '../../design/tokens';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
@@ -30,7 +30,6 @@ import { type RecoveryCard } from '../../types/catchUpLane';
 import Comeback from './Comeback';
 
 const CYAN = '#0E9AA8';
-const CYAN_DARK = '#0B6E7A';
 const CYAN_TINT = '#E6F4F5';
 const CYAN_DARK_TEXT = '#0A5560';
 

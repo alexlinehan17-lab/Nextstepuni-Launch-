@@ -6,11 +6,11 @@
 import { useState, useEffect, useCallback } from 'react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { useProgress } from '../contexts/ProgressContext';
+import { useFreshProgress } from './useFreshProgress';
 import { type UnifiedMockResult } from '../types';
 
 export function useMockResults(uid: string | undefined) {
-  const { rawProgressDoc, progressLoaded } = useProgress();
+  const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
   const [mocks, setMocks] = useState<UnifiedMockResult[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
 

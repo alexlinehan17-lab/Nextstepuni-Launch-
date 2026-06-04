@@ -10,7 +10,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { useProgress } from '../contexts/ProgressContext';
+import { useFreshProgress } from './useFreshProgress';
 import { type LifeRegion } from '../components/effortLifeModel';
 
 export interface EffortLifeSimState {
@@ -26,7 +26,7 @@ export interface EffortLifeSimState {
 }
 
 export function useEffortLifeSim(uid?: string) {
-  const { rawProgressDoc, progressLoaded } = useProgress();
+  const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
   const [saved, setSaved] = useState<EffortLifeSimState | null>(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const seededRef = useRef(false);
