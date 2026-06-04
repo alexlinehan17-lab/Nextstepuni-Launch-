@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useCallback, useRef, useMemo, lazy, Suspense } from 'react';
 import { useToast } from './Toast';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
@@ -21,28 +21,33 @@ import { type SchoolEvent } from './gc/GCKeyEvents';
 import { computeStreak, computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, computeWeeksUntilExam } from './timetableAlgorithm';
 import { type StudyReflection, type PointsData, type CosmeticUnlocks, type EarnedRest, type UserSettings } from '../types';
 import SubjectOnboarding from './SubjectOnboarding';
-import SpacedRepetitionTimetable from './SpacedRepetitionTimetable';
-import WarRoom from './WarRoom';
-import ComebackEngine from './ComebackEngine';
-import CAOPointsSimulator from './CAOPointsSimulator';
-
-import FutureFinder from './FutureFinder';
-import FutureFinderRevamped from './FutureFinderRevamped';
-import CollegeCompass from './CollegeCompass';
-import SyllabusXRay from './SyllabusXRay';
-import PointsPassport from './PointsPassport';
-import ExamReps from './ExamReps';
-import CatchUpLane from './CatchUpLane';
-import CommandWordReflex from './CommandWordReflex';
-import HowTheyDidIt from './HowTheyDidIt';
-import CareerPaths from './CareerPaths';
-import YourPossibleLife from './YourPossibleLife';
+// Tool components are code-split: each loads its own chunk only when the
+// student opens it (rendered inside <Suspense> below). This keeps the
+// InnovationZone shell light and, crucially, defers the heavy Three.js
+// bundle (pulled in only by AcademicJourneyGame) until the Journey is
+// actually opened, instead of at zone boot. (audit M21)
+const SpacedRepetitionTimetable = lazy(() => import('./SpacedRepetitionTimetable'));
+const WarRoom = lazy(() => import('./WarRoom'));
+const ComebackEngine = lazy(() => import('./ComebackEngine'));
+const CAOPointsSimulator = lazy(() => import('./CAOPointsSimulator'));
+const FutureFinder = lazy(() => import('./FutureFinder'));
+const FutureFinderRevamped = lazy(() => import('./FutureFinderRevamped'));
+const CollegeCompass = lazy(() => import('./CollegeCompass'));
+const SyllabusXRay = lazy(() => import('./SyllabusXRay'));
+const PointsPassport = lazy(() => import('./PointsPassport'));
+const ExamReps = lazy(() => import('./ExamReps'));
+const CatchUpLane = lazy(() => import('./CatchUpLane'));
+const CommandWordReflex = lazy(() => import('./CommandWordReflex'));
+const HowTheyDidIt = lazy(() => import('./HowTheyDidIt'));
+const CareerPaths = lazy(() => import('./CareerPaths'));
+const YourPossibleLife = lazy(() => import('./YourPossibleLife'));
 import { InnovationDataProvider } from '../contexts/InnovationDataContext';
 import { useTopicMastery } from '../hooks/useTopicMastery';
 import { getNotifications } from './gc/gcNotifications';
 // ReflectionModal import removed — "Already Studied" flow gives 2 pts, no reflection
 import StudyJournalModal from './StudyJournalModal';
-import AcademicJourneyGame, { type JourneyResult } from './AcademicJourneyGame';
+import { type JourneyResult } from './AcademicJourneyGame';
+const AcademicJourneyGame = lazy(() => import('./AcademicJourneyGame'));
 import ToolErrorBoundary from './ToolErrorBoundary';
 import PointsPanel from './PointsPanel';
 import { useNavigation } from '../contexts/NavigationContext';
@@ -119,6 +124,17 @@ function validatePointsData(raw: unknown): PointsData {
         totalSpent: safeNum(obj.totalSpent),
     };
 }
+
+/** Suspense fallback shown while a tool's code-split chunk loads. */
+const ToolLoadingFallback: React.FC = () => (
+    <div className="flex flex-col items-center justify-center py-24 gap-3" role="status" aria-live="polite">
+        <span
+            className="block rounded-full animate-spin"
+            style={{ width: 28, height: 28, border: '3px solid rgba(242,107,31,0.25)', borderTopColor: '#F26B1F' }}
+        />
+        <span className="text-[13px] font-medium text-zinc-400 dark:text-zinc-500">Loading…</span>
+    </div>
+);
 
 // ─── InnovationZone ──────────────────────────────────────────────────────────
 
@@ -843,7 +859,9 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                             toolName={currentTool?.title ?? 'this tool'}
                             onBack={() => nav.goBack()}
                         >
-                            {currentTool?.component}
+                            <Suspense fallback={<ToolLoadingFallback />}>
+                                {currentTool?.component}
+                            </Suspense>
                         </ToolErrorBoundary>
                     </InnovationDataProvider>
                 </MotionDiv>
