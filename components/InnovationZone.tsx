@@ -579,7 +579,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             component: <HowTheyDidIt uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
         },
         {
-            id: 'career-paths', title: 'Career Paths', description: 'Real careers — what they pay, the day-to-day, and how to get there.', icon: Briefcase, needsProfile: false,
+            id: 'career-paths', title: 'Exploring Options', description: 'Real careers — what they pay, the day-to-day, and how to get there.', icon: Briefcase, needsProfile: false,
             curriculum: 'both' as const,
             tag: 'Career Discovery', accentHex: '#0E7C6B', gridClass: 'md:col-span-3',
             iconBg: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-700 dark:text-teal-300',
