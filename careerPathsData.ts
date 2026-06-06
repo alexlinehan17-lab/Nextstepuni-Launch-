@@ -20,6 +20,7 @@ export const CAREERS: CareerCard[] = [
     "title": "Nurse",
     "field": "health",
     "emoji": "👩‍⚕️",
+    "image": "career-icons/nurse.png",
     "tagline": "Hands-on, high-pressure, never the same day twice.",
     "whatYouDo": [
       "Give meds, dress wounds, monitor vitals and charts",

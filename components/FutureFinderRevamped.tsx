@@ -77,6 +77,14 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
   }, [isLoaded, saved]);
 
   const questions = useMemo(() => buildQuestions(length), [length]);
+
+  // Safety net: if the index ever runs past the last question — e.g. a tap that
+  // lands during the card transition advances twice — finish the quiz instead of
+  // rendering questions[idx].kind on `undefined` (which used to crash to the
+  // tool error boundary right as the student completed the quiz).
+  useEffect(() => {
+    if (phase === 'quiz' && idx >= questions.length) setPhase('results');
+  }, [phase, idx, questions.length]);
   const studentPoints = useMemo(() => computeCurrentPoints(profile), [profile]);
   const studentSubjectNames = useMemo(() => profile.subjects.map((s) => s.subjectName), [profile]);
 
@@ -108,6 +116,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
   const answer = (val: number) => {
     if (advancingRef.current) return;
     const q = questions[idx];
+    if (!q) return;
     if (q.kind === 'interest') setResponses((r) => ({ ...r, [q.id]: val }));
     else setValueResponses((r) => ({ ...r, [q.id]: val }));
     advancingRef.current = true;
@@ -209,6 +218,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
   // ── QUIZ ──────────────────────────────────────────────────────
   if (phase === 'quiz') {
     const q = questions[idx];
+    if (!q) return null; // overshoot guard — the effect above flips phase to results
     const scale = q.kind === 'interest' ? SCALE_INTEREST : SCALE_VALUE;
     const prompt = q.kind === 'interest' ? 'How much would you enjoy this?' : 'How important is this to you?';
     const pct = Math.round((idx / questions.length) * 100);

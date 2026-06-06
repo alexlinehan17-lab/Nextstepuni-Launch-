@@ -81,7 +81,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'war-room':        { themeColor: '#D85F47', eyebrow: 'Plan · Strategy',             subtitle: 'Where the strategy gets made. Map the syllabus, allocate the hours, plan the attack.', showHeader: false },
   'comeback':        { themeColor: '#E08938', eyebrow: 'Plan · Comeback',             subtitle: 'Find your quickest wins and build a comeback plan.',                                showHeader: true  },
   'future-finder':   { themeColor: '#C76489', eyebrow: 'Understand · Career discovery', subtitle: 'Discover the courses, careers, and possible lives that fit who you are.',         showHeader: true  },
-  'future-finder-revamped': { themeColor: '#C76489', eyebrow: 'Understand · Interests (RIASEC)', subtitle: 'A new, interest-based version of the Future Finder — built to compare against the original before we switch.', showHeader: true },
+  'future-finder-revamped': { themeColor: '#C76489', eyebrow: 'Understand · Interests (RIASEC)', subtitle: 'Discover the courses, careers and lives that fit who you are — your interests matched to CAO courses, points kept honest.', showHeader: true },
   'syllabus-xray':   { themeColor: '#2C4B6E', eyebrow: 'Understand · Exam intel',     subtitle: 'See where the marks are hiding in every paper, every section, every question.',   showHeader: true  },
   'points-passport': { themeColor: '#B8A079', eyebrow: 'Track · Tracker',             subtitle: 'Mock trends and grade bargains, all at a glance.',                                  showHeader: true  },
   'exam-reps':       { themeColor: '#5E9C7B', eyebrow: 'Technique · Practice',        subtitle: 'One real exam question at a time — marked the examiner’s way, so you see exactly where the marks were.', showHeader: true  },
@@ -490,7 +490,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             // entire post-quiz output diverges — JC runs the cluster
             // matcher and renders the Subject Explorer results view.
             id: 'future-finder',
-            title: curriculumLevel === 'junior' ? 'Subject Explorer' : 'Future Finder',
+            title: curriculumLevel === 'junior' ? 'Subject Explorer' : 'Future Finder Old',
             description: curriculumLevel === 'junior'
               ? 'Find out which subjects you\'d enjoy in senior cycle.'
               : 'Discover college courses that fit who you are.',
@@ -503,7 +503,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             component: subjectProfile ? <FutureFinder uid={user!.uid} profile={subjectProfile} onOpenCareerPaths={(strings) => { setCareerSeedStrings(strings); setCareerSeedMatches(true); setActiveTool('career-paths'); }} /> : null,
         },
         {
-            id: 'future-finder-revamped', title: 'Future Finder Revamped', description: 'Interest-based (RIASEC) course matching — the new version, to compare with the original.', icon: Compass, needsProfile: true,
+            id: 'future-finder-revamped', title: 'Future Finder', description: 'Interest-based (RIASEC) course matching — ranked CAO courses that fit who you are.', icon: Compass, needsProfile: true,
             curriculum: 'senior' as const,
             tag: 'Career Discovery', accentHex: '#C76489', gridClass: 'md:col-span-2',
             iconBg: 'bg-pink-100 dark:bg-pink-900/30', iconColor: 'text-pink-700 dark:text-pink-300',

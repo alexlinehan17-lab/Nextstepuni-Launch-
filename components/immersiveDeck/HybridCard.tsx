@@ -51,33 +51,40 @@ const BLOBS = [
 const blobFor = (seed: string) => BLOBS[(seed ? seed.charCodeAt(0) + seed.length : 0) % BLOBS.length];
 
 /** Line icon (careers) or serif initials (people) over a soft pastel blob — the app's tool-tile icon language. */
-export const BlobIcon: React.FC<{ wd: ColorWorld; icon?: LucideIcon; initials?: string; size?: number; seed?: string }> = ({ wd, icon: Icon, initials, size = 46, seed }) => (
-  <span className="relative inline-flex items-center justify-center shrink-0" style={{ width: size, height: size }}>
-    <svg viewBox="0 0 100 100" width={size} height={size} className="absolute inset-0" aria-hidden="true">
-      <path d={blobFor(seed ?? initials ?? '')} fill={wd.bg} opacity={0.18} />
-    </svg>
-    {Icon ? (
-      <Icon size={Math.round(size * 0.46)} color={wd.deep} strokeWidth={2} className="relative" />
-    ) : initials ? (
-      <span className="relative font-bold leading-none" style={{ fontFamily: SERIF, color: wd.deep, fontSize: Math.round(size * 0.34) }}>{initials}</span>
-    ) : null}
-  </span>
-);
+export const BlobIcon: React.FC<{ wd: ColorWorld; icon?: LucideIcon; initials?: string; image?: string; size?: number; seed?: string }> = ({ wd, icon: Icon, initials, image, size = 46, seed }) => {
+  const [imgError, setImgError] = React.useState(false);
+  const showImg = !!image && !imgError;
+  return (
+    <span className="relative inline-flex items-center justify-center shrink-0" style={{ width: size, height: size }}>
+      <svg viewBox="0 0 100 100" width={size} height={size} className="absolute inset-0" aria-hidden="true">
+        <path d={blobFor(seed ?? initials ?? '')} fill={wd.bg} opacity={0.18} />
+      </svg>
+      {showImg ? (
+        <img src={image} alt="" width={Math.round(size * 0.82)} height={Math.round(size * 0.82)} className="relative object-contain" onError={() => setImgError(true)} />
+      ) : Icon ? (
+        <Icon size={Math.round(size * 0.46)} color={wd.deep} strokeWidth={2} className="relative" />
+      ) : initials ? (
+        <span className="relative font-bold leading-none" style={{ fontFamily: SERIF, color: wd.deep, fontSize: Math.round(size * 0.34) }}>{initials}</span>
+      ) : null}
+    </span>
+  );
+};
 
 /** White header atop a white card: pastel blob glyph + coloured eyebrow + ink serif title. Pass `icon` (careers) OR `initials` (people). */
 export const Band: React.FC<{
   wd: ColorWorld;
   icon?: LucideIcon;
   initials?: string;
+  image?: string;
   eyebrow?: React.ReactNode;
   title?: string;
   subtitle?: string;
   right?: React.ReactNode;
-}> = ({ wd, icon, initials, eyebrow, title, subtitle, right }) => (
+}> = ({ wd, icon, initials, image, eyebrow, title, subtitle, right }) => (
   <div className="relative px-6 pt-5 pb-4 bg-white" style={{ borderBottom: `1px solid ${HAIRLINE}` }}>
     <div className="flex items-start justify-between gap-3">
       <div className="flex items-center gap-3 min-w-0">
-        <BlobIcon wd={wd} icon={icon} initials={initials} size={46} seed={title ?? initials} />
+        <BlobIcon wd={wd} icon={icon} initials={initials} image={image} size={46} seed={title ?? initials} />
         <div className="min-w-0">
           {eyebrow && <p className="text-[10px] font-bold uppercase tracking-[0.14em]" style={{ color: wd.deep }}>{eyebrow}</p>}
           {title && <h2 className="text-[21px] font-semibold leading-tight" style={{ fontFamily: SERIF, color: INK }}>{title}</h2>}

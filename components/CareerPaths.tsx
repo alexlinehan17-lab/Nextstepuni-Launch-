@@ -91,7 +91,7 @@ const CardFace: React.FC<{ c: CareerCard; saved: boolean; matched: boolean }> = 
       <div className="relative flex-1 flex items-center justify-center pt-8">
         {matched && <span className="absolute top-4 left-4 text-[10px] font-bold uppercase tracking-[0.1em] px-2.5 py-1 rounded-full inline-flex items-center gap-1" style={{ backgroundColor: wd.tint, color: wd.deep }}><Star size={11} /> Your match</span>}
         {saved && <span className="absolute top-4 right-4 w-7 h-7 rounded-full flex items-center justify-center" style={{ backgroundColor: wd.tint }}><BookmarkCheck size={15} style={{ color: wd.deep }} /></span>}
-        <BlobIcon wd={wd} icon={Icon} size={108} seed={c.title} />
+        <BlobIcon wd={wd} icon={Icon} image={c.image ? `/${c.image}` : undefined} size={108} seed={c.title} />
       </div>
       <div className="px-6 pb-6 pt-2">
         <h3 className="text-[24px] leading-tight font-semibold" style={{ fontFamily: SERIF, color: INK }}>{c.title}</h3>
@@ -165,7 +165,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
         <button onClick={() => setCardId(null)} className="flex items-center gap-1.5 text-[13px] font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-4"><ArrowLeft size={15} /> All careers</button>
         <HybridCard>
           {burst && <Celebration colors={[wd.bg, wd.glow]} />}
-          <Band wd={wd} icon={CareerIcon} eyebrow={card.field} title={card.title} right={<ProgressDots total={4} active={bi} />} />
+          <Band wd={wd} icon={CareerIcon} image={card.image ? `/${card.image}` : undefined} eyebrow={card.field} title={card.title} right={<ProgressDots total={4} active={bi} />} />
           <div className="p-6 md:p-7">
             <AnimatePresence mode="wait">
               <MotionDiv key={beat} {...fade}>

@@ -56,6 +56,10 @@ export interface CareerCard {
    *  distinct line icon while keeping the field's colour world. Falls back to the
    *  field icon when omitted. */
   iconKey?: string;
+  /** Optional custom image for the card icon, path relative to /public
+   *  (e.g. "career-icons/nurse.png"). Rendered in place of the line icon; falls
+   *  back to the line icon if the image is missing. */
+  image?: string;
   /** A short identity / "what it's really like" line (≤10 words). */
   tagline: string;
   /** Day-to-day, 2-3 short bullets. */

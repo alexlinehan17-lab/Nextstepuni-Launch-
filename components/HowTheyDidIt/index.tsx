@@ -103,7 +103,7 @@ const CardFace: React.FC<{ p: PersonCard; saved: boolean }> = ({ p, saved }) => 
       <div className="relative flex-1 flex items-center justify-center pt-8">
         <span className="absolute top-4 left-4 text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-full" style={{ backgroundColor: wd.tint, color: wd.deep }}>{barrierLabel(p.barrier)}</span>
         {saved && <span className="absolute top-4 right-4 w-7 h-7 rounded-full flex items-center justify-center" style={{ backgroundColor: wd.tint }}><BookmarkCheck size={15} style={{ color: wd.deep }} /></span>}
-        <BlobIcon wd={wd} initials={initials(p.name)} size={108} seed={p.name} />
+        <BlobIcon wd={wd} initials={initials(p.name)} image={p.portraitKey ? `/portraits/${p.portraitKey}.png` : undefined} size={108} seed={p.name} />
       </div>
       {/* white bottom zone — name, field, hook */}
       <div className="relative px-6 pt-2 pb-6 flex flex-col">
@@ -173,6 +173,7 @@ const HowTheyDidIt: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ 
           <Band
             wd={wd}
             initials={initials(card.name)}
+            image={card.portraitKey ? `/portraits/${card.portraitKey}.png` : undefined}
             eyebrow={barrierLabel(card.barrier)}
             title={card.name}
             right={<ProgressDots total={4} active={bi} />}
