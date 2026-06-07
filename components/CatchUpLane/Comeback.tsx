@@ -20,13 +20,15 @@
 import React, { useMemo, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { ArrowLeft, ArrowRight, Check, Heart, ChevronDown, RotateCcw, Shield, BookOpenCheck } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Check, CheckCircle2, Circle, Heart, ChevronDown, RotateCcw, Shield, BookOpenCheck, Sparkles, Sunrise } from 'lucide-react';
+import { COLORS } from '../../design/tokens';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { useProgress } from '../../contexts/ProgressContext';
 import {
   LOOP_STEPS, OBSTACLES, PEER_SCRIPTS, SUPPORT_PEOPLE, EWO_NOTE, GROUNDING, WHY_OPTIONS,
+  FIRST_WEEK, TEACHER_SCRIPT,
 } from '../../comebackData';
-import { type ComebackPlan } from '../../types/catchUpLane';
+import { type ComebackPlan, type FirstWeekDayProgress } from '../../types/catchUpLane';
 
 const CYAN = '#0E9AA8';
 const CYAN_TINT = '#E6F4F5';
@@ -44,9 +46,11 @@ interface ComebackProps {
   onSave: (plan: Omit<ComebackPlan, 'savedAt'>) => void;
   onExit: () => void;
   onGoContent: () => void;
+  /** Patch one day of the First-Week-Back timeline (persisted by the hook). */
+  onDayUpdate?: (day: number, patch: Partial<FirstWeekDayProgress>) => void;
 }
 
-const Comeback: React.FC<ComebackProps> = ({ saved, onSave, onExit, onGoContent }) => {
+const Comeback: React.FC<ComebackProps> = ({ saved, onSave, onExit, onGoContent, onDayUpdate }) => {
   const { northStar } = useProgress();
   const [step, setStep] = useState<Step>(saved ? 'summary' : 0);
 
@@ -57,6 +61,9 @@ const Comeback: React.FC<ComebackProps> = ({ saved, onSave, onExit, onGoContent 
   const [person, setPerson] = useState(saved?.person ?? '');
   const [safeSpace, setSafeSpace] = useState(saved?.safeSpace ?? '');
   const [showGrounding, setShowGrounding] = useState(false);
+  const [showPlan, setShowPlan] = useState(false);
+  // Per-day reflection drafts (local until the student marks the day done).
+  const [reflectDrafts, setReflectDrafts] = useState<Record<number, string>>({});
 
   const primary = useMemo(() => OBSTACLES.find(o => o.id === obstacleIds[0]) ?? null, [obstacleIds]);
   const northStarWhy = (northStar as { headline?: string; goal?: string } | null)?.headline
@@ -98,37 +105,163 @@ const Comeback: React.FC<ComebackProps> = ({ saved, onSave, onExit, onGoContent 
 
   const label = (t: string) => <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1.5" style={{ color: CYAN_DARK_TEXT }}>{t}</p>;
 
-  // ── SUMMARY ────────────────────────────────────────────────────
+  // ── FIRST WEEK BACK (the living timeline) ──────────────────────
+  // Reached once a plan is saved. The static record becomes a graded 5-day
+  // walk: one cue-bound if-then a day, the right adult on the right day, a
+  // quiet reflection that closes the loop, and a non-punitive "not today".
   if (step === 'summary') {
-    const plan = saved ?? null;
-    const rows: [string, string | undefined][] = [
-      ['Your why', why || plan?.why],
-      ['Your tiny first step', plan?.firstStep ?? primary?.firstStep],
-      ['Your if-then', `${plan?.ifThen.trigger ?? primary?.ifThen.trigger ?? ''} — ${plan?.ifThen.action ?? actionText}`],
-      ['If someone asks where you were', script || plan?.script],
-      ['Your person', person || plan?.person],
-      ['Your safe space', safeSpace || plan?.safeSpace],
+    const eff = {
+      why: saved?.why ?? why,
+      ifThen: saved?.ifThen ?? { trigger: primary?.ifThen.trigger ?? '', action: actionText || primary?.ifThen.action || '' },
+      script: saved?.script ?? script,
+      person: saved?.person ?? person,
+      safeSpace: saved?.safeSpace ?? safeSpace,
+    };
+    const fw = saved?.firstWeek;
+    const dayDone = (d: number) => Boolean(fw?.days[d]?.doneAt);
+    const currentDay = FIRST_WEEK.find(d => !dayDone(d.day))?.day ?? null;
+    const allDone = currentDay === null;
+
+    const planRows: [string, string | undefined][] = [
+      ['Your why', eff.why],
+      ['If someone asks where you were', eff.script],
+      ['Your person', eff.person],
+      ['Your safe space', eff.safeSpace],
     ];
+
     return (
       <div className="w-full">
         <Back onClick={onExit} />
         <div className={cardShell}>
           <div className="flex items-center gap-2.5 mb-1">
-            <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: CYAN_TINT }}><Heart size={18} style={{ color: CYAN }} /></div>
-            <h2 className="text-xl font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>Your comeback plan</h2>
+            <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: CYAN_TINT }}><Sunrise size={18} style={{ color: CYAN }} /></div>
+            <h2 className="text-xl font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>Your first week back</h2>
           </div>
-          <p className="text-[14px] mb-4" style={{ color: '#5a5550' }}>Someone’s glad you’re back. Here’s your plan — it’s here whenever you need it.</p>
+          <p className="text-[14px] mb-4" style={{ color: '#5a5550' }}>
+            {allDone
+              ? 'You walked the whole week back in — one small step at a time. That’s the loop broken.'
+              : 'One small, do-able thing a day. We’ll take the week together — you don’t have to feel ready first.'}
+          </p>
 
-          <div className="rounded-xl overflow-hidden" style={{ backgroundColor: CYAN_TINT }}>
-            {rows.filter(([, v]) => v && v !== ' — ').map(([k, v], i) => (
-              <div key={k} className={`px-4 py-2.5 ${i > 0 ? 'border-t border-white/70' : ''}`}>
-                <p className="text-[10px] font-bold uppercase tracking-[0.1em] mb-0.5" style={{ color: CYAN_DARK_TEXT }}>{k}</p>
-                <p className="text-[14px] leading-snug" style={{ color: '#2a2622' }}>{v}</p>
-              </div>
-            ))}
+          {/* day stepper (done = green, today = cyan, ahead = muted — never rainbow) */}
+          <div className="flex items-center gap-1.5 justify-center mb-5">
+            {FIRST_WEEK.map(d => {
+              const done = dayDone(d.day);
+              const isCur = d.day === currentDay;
+              return <span key={d.day} className="h-2 rounded-full transition-all" style={{ width: isCur ? 24 : 9, backgroundColor: done ? COLORS.success : isCur ? CYAN : '#d0cdc8' }} />;
+            })}
           </div>
 
-          <button onClick={() => setShowGrounding(v => !v)} className="w-full mt-3 flex items-center justify-between rounded-xl px-4 py-3 border-2 border-zinc-200 dark:border-zinc-700">
+          <div className="space-y-2.5">
+            {FIRST_WEEK.map(d => {
+              const done = dayDone(d.day);
+              const isCur = d.day === currentDay;
+
+              if (done) {
+                const refl = fw?.days[d.day]?.reflection;
+                return (
+                  <div key={d.day} className="flex gap-2.5 px-1">
+                    <CheckCircle2 size={18} style={{ color: COLORS.success }} className="shrink-0 mt-0.5" />
+                    <div className="flex-1 min-w-0">
+                      <p className="text-[13.5px] font-semibold" style={{ color: '#5a6a64' }}>Day {d.day} · {d.title}</p>
+                      {refl && <p className="text-[12.5px] italic leading-snug mt-0.5" style={{ color: '#7a7068' }}>“{refl}”</p>}
+                    </div>
+                  </div>
+                );
+              }
+
+              if (isCur) {
+                const it = d.ifThen ?? eff.ifThen; // day 1's ifThen is null → use the student's own
+                const softened = Boolean(fw?.days[d.day]?.softened);
+                const draft = reflectDrafts[d.day] ?? '';
+                return (
+                  <div key={d.day} className="rounded-xl border-2 p-4" style={{ borderColor: CYAN }}>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-1" style={{ color: CYAN_DARK_TEXT }}>Today · Day {d.day} of 5</p>
+                    <h3 className="text-lg font-semibold mb-1.5" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{d.title}</h3>
+
+                    {softened && primary && (
+                      <div className="rounded-xl px-3.5 py-2.5 mb-3" style={{ backgroundColor: CYAN_TINT }}>
+                        <p className="text-[13px] leading-relaxed italic mb-1" style={{ color: '#2a4a4a' }}>{primary.reframe}</p>
+                        <p className="text-[12.5px]" style={{ color: CYAN_DARK_TEXT }}>No rush — this step waits for you. Come back to it when you’re ready.</p>
+                      </div>
+                    )}
+
+                    <p className="text-[14px] leading-relaxed mb-3" style={{ color: '#3a3530' }}>{d.goal}</p>
+
+                    {(it.trigger || it.action) && (
+                      <div className="rounded-xl px-3.5 py-3 mb-3" style={{ backgroundColor: CYAN_TINT }}>
+                        <div className="flex items-center gap-1.5 mb-1"><Sparkles size={14} style={{ color: CYAN }} /><span className="text-[10px] font-bold uppercase tracking-[0.12em]" style={{ color: CYAN_DARK_TEXT }}>Today’s if-then</span></div>
+                        <p className="text-[13.5px] leading-snug" style={{ color: '#2a2622' }}>{it.trigger}, {it.action}</p>
+                      </div>
+                    )}
+
+                    {d.useTeacherScript && (
+                      <div className="rounded-xl px-3.5 py-3 mb-3 border-2 border-zinc-200 dark:border-zinc-700">
+                        <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: CYAN_DARK_TEXT }}>Your person today</p>
+                        <p className="text-[13.5px] font-semibold mb-1" style={{ color: INK }}>{eff.person || 'Your year head or tutor'}</p>
+                        <p className="text-[12.5px] leading-snug italic" style={{ color: '#5a6a6a' }}>“{TEACHER_SCRIPT}”</p>
+                      </div>
+                    )}
+
+                    {d.linkCatchUp && (
+                      <button onClick={onGoContent} className="w-full mb-3 rounded-xl px-4 py-2.5 text-[13px] font-semibold inline-flex items-center justify-center gap-2 border-2" style={{ borderColor: CYAN, color: CYAN_DARK_TEXT }}>
+                        <BookOpenCheck size={15} /> Clear one Catch-Up topic →
+                      </button>
+                    )}
+
+                    <p className="text-[12px] mb-1.5" style={{ color: '#7a7068' }}>{d.reflectPrompt}</p>
+                    <textarea
+                      value={draft}
+                      onChange={e => setReflectDrafts(p => ({ ...p, [d.day]: e.target.value }))}
+                      rows={2}
+                      className="w-full text-[13.5px] rounded-lg p-2.5 outline-none resize-none border-2 border-zinc-200 focus:border-[#0E9AA8] mb-3"
+                      style={{ backgroundColor: '#F6F6F4', color: '#2a2622' }}
+                      placeholder="One line, just for you (optional)"
+                    />
+
+                    <div className="flex flex-col sm:flex-row gap-2.5">
+                      <PrimaryActionButton label="I did this today" icon={Check} onClick={() => onDayUpdate?.(d.day, { doneAt: new Date().toISOString(), reflection: draft.trim() || undefined })} />
+                      <button onClick={() => onDayUpdate?.(d.day, { softened: true })} className="px-5 py-3 rounded-full text-[14px] font-semibold border-2 border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300 inline-flex items-center justify-center gap-2">
+                        Not today
+                      </button>
+                    </div>
+                  </div>
+                );
+              }
+
+              // ahead of the student — shown muted so they can see the shape of the week
+              return (
+                <div key={d.day} className="flex gap-2.5 px-1 opacity-60">
+                  <Circle size={18} className="shrink-0 mt-0.5 text-zinc-300 dark:text-zinc-600" />
+                  <p className="text-[13.5px] font-medium" style={{ color: '#9e9186' }}>Day {d.day} · {d.title}</p>
+                </div>
+              );
+            })}
+          </div>
+
+          {allDone && (
+            <div className="rounded-xl px-4 py-3 mt-4" style={{ backgroundColor: COLORS.successTint }}>
+              <p className="text-[13.5px] leading-relaxed" style={{ color: COLORS.successDarkText }}>That’s your first week back, done. The dread said it was impossible — and you did it one small step at a time. Keep your person close.</p>
+            </div>
+          )}
+
+          {/* the full plan, tucked away */}
+          <button onClick={() => setShowPlan(v => !v)} className="w-full mt-4 flex items-center justify-between rounded-xl px-4 py-3 border-2 border-zinc-200 dark:border-zinc-700">
+            <span className="text-[13px] font-semibold" style={{ color: INK }}>Your plan</span>
+            <ChevronDown size={16} className="text-zinc-400" style={{ transform: showPlan ? 'rotate(180deg)' : 'none', transition: 'transform .2s' }} />
+          </button>
+          {showPlan && (
+            <div className="mt-2 rounded-xl overflow-hidden" style={{ backgroundColor: CYAN_TINT }}>
+              {planRows.filter(([, v]) => v).map(([k, v], i) => (
+                <div key={k} className={`px-4 py-2.5 ${i > 0 ? 'border-t border-white/70' : ''}`}>
+                  <p className="text-[10px] font-bold uppercase tracking-[0.1em] mb-0.5" style={{ color: CYAN_DARK_TEXT }}>{k}</p>
+                  <p className="text-[14px] leading-snug" style={{ color: '#2a2622' }}>{v}</p>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <button onClick={() => setShowGrounding(v => !v)} className="w-full mt-2.5 flex items-center justify-between rounded-xl px-4 py-3 border-2 border-zinc-200 dark:border-zinc-700">
             <span className="text-[13px] font-semibold" style={{ color: INK }}>{GROUNDING.title}</span>
             <ChevronDown size={16} className="text-zinc-400" style={{ transform: showGrounding ? 'rotate(180deg)' : 'none', transition: 'transform .2s' }} />
           </button>
@@ -139,7 +272,7 @@ const Comeback: React.FC<ComebackProps> = ({ saved, onSave, onExit, onGoContent 
           )}
 
           <div className="flex flex-col sm:flex-row gap-2.5 mt-5">
-            <PrimaryActionButton label="Done" icon={Check} onClick={onExit} />
+            <PrimaryActionButton label="Done for now" icon={Check} onClick={onExit} />
             <button onClick={() => setStep(0)} className="px-5 py-3 rounded-full text-[14px] font-semibold border-2 border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300 inline-flex items-center justify-center gap-2">
               <RotateCcw size={15} /> Redo my plan
             </button>

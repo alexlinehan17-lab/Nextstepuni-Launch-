@@ -74,6 +74,30 @@ export interface CatchUpLaneState {
 }
 
 /**
+ * Per-day progress on the First-Week-Back timeline (Arm 2's living layer).
+ * Shame stays designed out: a softened day is acknowledged, never penalised.
+ */
+export interface FirstWeekDayProgress {
+  /** ISO timestamp set when the student marks the day done. */
+  doneAt?: string;
+  /** True once the student has tapped "not today" — softens the copy, never scolds. */
+  softened?: boolean;
+  /** One quiet end-of-day reflection line (SRL self-reflection phase). */
+  reflection?: string;
+}
+
+/**
+ * Arm 2's living timeline: a graded 5-day re-entry walk seeded from the saved
+ * plan. Turns a static record into plan → do the tiny thing → reflect → next.
+ */
+export interface FirstWeekProgress {
+  /** ISO timestamp when the student first opened the timeline. */
+  startedAt: string;
+  /** Per-day progress, keyed by day number (1–5). */
+  days: Record<number, FirstWeekDayProgress>;
+}
+
+/**
  * Arm 2 ("Your Comeback") — a saved, personal re-entry plan the student builds.
  * Grounded in EBSA / NEPS guidance + implementation-intentions evidence:
  * a personal why, the obstacle that triggers avoidance, one tiny graded step,
@@ -97,4 +121,6 @@ export interface ComebackPlan {
   /** Where they'll go / their exit signal if it gets too much. */
   safeSpace: string;
   savedAt: string;
+  /** The living 5-day re-entry timeline built on top of this plan (added lazily). */
+  firstWeek?: FirstWeekProgress;
 }

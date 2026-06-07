@@ -26,6 +26,7 @@ import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { useCatchUpLane } from '../../hooks/useCatchUpLane';
 import { useInnovationData } from '../../contexts/InnovationDataContext';
 import { RECOVERY_CARDS, cardsForSubject, subjectsWithContent } from '../../catchUpLaneData';
+import { FIRST_WEEK } from '../../comebackData';
 import { type RecoveryCard } from '../../types/catchUpLane';
 import Comeback from './Comeback';
 
@@ -47,7 +48,7 @@ const fade = {
 };
 
 const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid, studentSubjects }) => {
-  const { state, isLoaded, markRecovered, markShaky, saveComeback, marksProtected } = useCatchUpLane(uid);
+  const { state, isLoaded, markRecovered, markShaky, saveComeback, setFirstWeekDay, marksProtected } = useCatchUpLane(uid);
   const { topicMastery } = useInnovationData();
 
   // Which arm: the hub chooser, the content arm (arm 1), or the comeback arm (arm 2).
@@ -114,6 +115,7 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
         onSave={saveComeback}
         onExit={() => setArm('hub')}
         onGoContent={() => { setArm('content'); setView('home'); }}
+        onDayUpdate={setFirstWeekDay}
       />
     );
   }
@@ -121,6 +123,9 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
   // ───────────────────────── HUB (two arms) ─────────────────────────
   if (arm === 'hub') {
     const cb = state.comeback;
+    // Where the student is in their First-Week-Back walk (null = complete).
+    const fwCurrent = cb ? (FIRST_WEEK.find(d => !cb.firstWeek?.days[d.day]?.doneAt) ?? null) : null;
+    const fwComplete = cb != null && fwCurrent === null;
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
         <p className="text-[15px] leading-relaxed mb-5" style={{ color: '#5a5550', fontFamily: "'DM Sans', sans-serif" }}>
@@ -136,8 +141,8 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
           >
             <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0"><Check size={18} strokeWidth={3} style={{ color: CYAN }} /></div>
             <div className="flex-1 min-w-0">
-              <p className="text-[13px] font-semibold" style={{ color: '#1a1a1a' }}>Your comeback plan is ready</p>
-              <p className="text-[12px] truncate" style={{ color: CYAN_DARK_TEXT }}>First step: {cb.firstStep}</p>
+              <p className="text-[13px] font-semibold" style={{ color: '#1a1a1a' }}>{fwComplete ? 'Your first week back — complete' : `Day ${fwCurrent?.day} of your first week back`}</p>
+              <p className="text-[12px] truncate" style={{ color: CYAN_DARK_TEXT }}>{fwComplete ? 'Nice work — tap to look back' : `Today: ${fwCurrent?.title}`}</p>
             </div>
             <ArrowRight size={18} style={{ color: CYAN }} className="shrink-0" />
           </button>
@@ -164,7 +169,7 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
           <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: CYAN_TINT }}><Heart size={22} style={{ color: CYAN }} /></div>
           <div className="flex-1 min-w-0">
             <p className="text-lg font-semibold text-zinc-900 dark:text-white" style={{ fontFamily: "'Source Serif 4', serif" }}>Your comeback</p>
-            <p className="text-[13px] text-zinc-500">{cb ? 'Your plan’s saved — tap to view or update.' : 'Make the first day back feel smaller — build your plan.'}</p>
+            <p className="text-[13px] text-zinc-500">{cb ? (fwComplete ? 'Your first week back — complete. Tap to look back.' : `Day ${fwCurrent?.day} of 5: ${fwCurrent?.title}`) : 'Make the first day back feel smaller — build your plan.'}</p>
           </div>
           <ArrowRight size={18} className="text-zinc-300 dark:text-zinc-600 shrink-0" />
         </button>

@@ -14,7 +14,7 @@ import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useFreshProgress } from './useFreshProgress';
-import { type CatchUpLaneState, type ComebackPlan } from '../types/catchUpLane';
+import { type CatchUpLaneState, type ComebackPlan, type FirstWeekDayProgress } from '../types/catchUpLane';
 import { RECOVERY_CARDS } from '../catchUpLaneData';
 import { reportSaveError } from '../utils/logError';
 
@@ -110,11 +110,33 @@ export function useCatchUpLane(uid?: string) {
     });
   }, [persist]);
 
+  // Arm 2 timeline: patch one day of the First-Week-Back walk. Lazily creates
+  // the firstWeek object on the saved plan (no-op if no plan is saved yet).
+  const setFirstWeekDay = useCallback((day: number, patch: Partial<FirstWeekDayProgress>) => {
+    setState(prev => {
+      if (!prev.comeback) return prev;
+      const fw = prev.comeback.firstWeek ?? { startedAt: new Date().toISOString(), days: {} };
+      const next: CatchUpLaneState = {
+        ...prev,
+        comeback: {
+          ...prev.comeback,
+          firstWeek: {
+            ...fw,
+            days: { ...fw.days, [day]: { ...fw.days[day], ...patch } },
+          },
+        },
+        updatedAt: new Date().toISOString(),
+      };
+      persist(next);
+      return next;
+    });
+  }, [persist]);
+
   // Total marks "protected" so far — conservative sum of recovered topics' weights.
   const marksProtected = useMemo(() => {
     const recovered = new Set(state.recoveredTopicIds);
     return RECOVERY_CARDS.reduce((sum, c) => sum + (recovered.has(c.topicId) ? c.marksWeight : 0), 0);
   }, [state.recoveredTopicIds]);
 
-  return { state, isLoaded, markRecovered, markShaky, logAbsence, saveComeback, marksProtected };
+  return { state, isLoaded, markRecovered, markShaky, logAbsence, saveComeback, setFirstWeekDay, marksProtected };
 }

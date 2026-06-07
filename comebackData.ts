@@ -147,3 +147,69 @@ export const WHY_OPTIONS: string[] = [
   'I’ve come too far to stop now',
   'Future me will be glad I went in',
 ];
+
+/**
+ * The First-Week-Back ladder — Arm 2's living timeline.
+ *
+ * A graded-return sequence (NEPS: small, predictable, escalating steps; never a
+ * cold jump back to a full day). Each day is ONE cue-bound if-then action so the
+ * stated plan gets a volitional trigger (Gollwitzer & Sheeran 2006, d≈.65), the
+ * right adult is surfaced on the right day (NEPS: one key adult), and the day
+ * closes with a quiet reflection so the SRL loop completes (Zimmerman 2002).
+ *
+ * Day 1's if-then is `null` on purpose — the timeline substitutes the student's
+ * OWN if-then from their saved plan, so day one is the cue they already chose.
+ */
+export interface FirstWeekDay {
+  day: number;          // 1–5
+  title: string;        // the rung, in plain language
+  goal: string;         // the graded-exposure target for the day
+  /** The day's cue-bound if-then. `null` = use the student's own plan if-then. */
+  ifThen: { trigger: string; action: string } | null;
+  /** Offer the self-advocacy line for telling a teacher you're back (surfaces the student's chosen adult). */
+  useTeacherScript?: boolean;
+  /** Cross-link into Arm 1 (clear one Catch-Up topic) today. */
+  linkCatchUp?: boolean;
+  /** One quiet end-of-day reflection prompt. */
+  reflectPrompt: string;
+}
+
+export const FIRST_WEEK: FirstWeekDay[] = [
+  {
+    day: 1,
+    title: 'Get to the gate',
+    goal: 'Today, just aim to get to the school gate. You don’t have to decide about the whole day yet — arriving is the win.',
+    ifThen: null, // uses the student's own if-then from their plan
+    reflectPrompt: 'What turned out smaller than the dread told you it would be?',
+  },
+  {
+    day: 2,
+    title: 'Tell your person you’re back',
+    goal: 'Let the one adult you picked know you’re back and want to catch up. Having one trusted adult in your corner makes the rest of the week lighter.',
+    ifThen: { trigger: 'When I get in, before class starts', action: 'then I’ll tell my person I’m back — before I can talk myself out of it' },
+    useTeacherScript: true,
+    reflectPrompt: 'How did it feel once someone knew you were back?',
+  },
+  {
+    day: 3,
+    title: 'Sit through one class',
+    goal: 'Pick one class — even the one you’d normally dread most — and aim to stay for the whole thing. Being in the room is the whole job today.',
+    ifThen: { trigger: 'When the class I dread is next', action: 'then I’ll walk in and take my usual seat, even if my head says don’t' },
+    reflectPrompt: 'Which part of the day felt more doable than you expected?',
+  },
+  {
+    day: 4,
+    title: 'Close one gap',
+    goal: 'Clear just ONE thing you missed — not the whole pile. One closed gap is proof the rest is closeable too.',
+    ifThen: { trigger: 'When I get a free few minutes', action: 'then I’ll do one short Catch-Up topic, then stop' },
+    linkCatchUp: true,
+    reflectPrompt: 'What’s one thing you understand now that you didn’t at the start of the week?',
+  },
+  {
+    day: 5,
+    title: 'A full morning in',
+    goal: 'Aim for a full morning — gate to lunch. You’ve already done each piece this week; today is just them joined up.',
+    ifThen: { trigger: 'When the morning starts to feel long', action: 'then I’ll get to the next break, one class at a time' },
+    reflectPrompt: 'What’s different about walking in now compared to Day 1?',
+  },
+];
