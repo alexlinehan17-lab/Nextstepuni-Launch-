@@ -15,7 +15,7 @@
  *   - IZ active-tool ToolHeader: size=108
  */
 import React from 'react';
-import { Waypoints, Highlighter, Users, Briefcase, Telescope, Sunrise, type LucideIcon } from 'lucide-react';
+import { Users, Briefcase, Telescope, type LucideIcon } from 'lucide-react';
 
 export type ToolIconKey =
   | 'journey'
@@ -87,9 +87,7 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     blob: '#B8C5D8',
     iconPath: '/assets/tools/syllabus-xray.png',
     blobPath: 'M 6 26 Q 2 54 14 80 Q 30 98 56 94 Q 88 92 94 60 Q 100 30 82 10 Q 56 -4 30 8 Q 12 18 6 26 Z',
-    // Subject sits in a smaller portion of this PNG's canvas than the others —
-    // boost so it reads at the same visible scale as its siblings.
-    iconScale: 1.28,
+    iconScale: 1.0,
   },
   'points-passport': {
     blob: '#DDC9A4',
@@ -101,7 +99,7 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     blob: '#B5D4CC',
     iconPath: '/assets/tools/exam-reps.png',
     blobPath: 'M 6 24 Q 2 52 12 80 Q 28 98 56 94 Q 90 90 96 58 Q 100 26 82 8 Q 58 -4 30 6 Q 12 14 6 24 Z',
-    iconScale: 1.28,
+    iconScale: 1.0,
   },
   'college-compass': {
     blob: '#A8D5C9',
@@ -109,20 +107,17 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     blobPath: 'M 6 26 Q 0 52 10 80 Q 26 98 54 94 Q 88 90 96 60 Q 100 28 82 8 Q 56 -4 30 8 Q 12 16 6 26 Z',
     iconScale: 1.0,
   },
-  // No hand-drawn PNG yet — renders an inline lucide icon over the blob.
   'catch-up-lane': {
     blob: '#AEDDE2',
+    iconPath: '/assets/tools/catch-up-lane.png',
     blobPath: 'M 6 24 Q 0 52 10 80 Q 26 98 54 94 Q 88 90 96 60 Q 100 28 82 8 Q 56 -4 30 6 Q 12 14 6 24 Z',
     iconScale: 1.0,
-    icon: Waypoints,
-    iconColor: '#0B6E7A',
   },
   'command-word-reflex': {
     blob: '#C7C9F5',
+    iconPath: '/assets/tools/command-word-reflex.png',
     blobPath: 'M 8 26 Q 0 52 8 78 Q 22 96 54 96 Q 88 94 96 64 Q 100 32 80 10 Q 56 -2 28 8 Q 12 16 8 26 Z',
     iconScale: 1.0,
-    icon: Highlighter,
-    iconColor: '#4338CA',
   },
   'how-they-did-it': {
     blob: '#A8D0CE',
@@ -147,10 +142,9 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
   },
   'your-possible-life': {
     blob: '#BCD3E0',
+    iconPath: '/assets/tools/your-possible-life.png',
     blobPath: 'M 6 24 Q -2 52 8 78 Q 24 98 52 94 Q 86 90 94 62 Q 100 30 84 10 Q 60 -4 32 4 Q 12 12 6 24 Z',
     iconScale: 1.0,
-    icon: Sunrise,
-    iconColor: '#2E6E8E',
   },
 };
 
