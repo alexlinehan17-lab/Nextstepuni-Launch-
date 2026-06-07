@@ -5,8 +5,9 @@ _The loop pops the top **ready** item, builds it end-to-end, runs the gate, comm
 
 ## Loop status
 
-- **NEXT (building):** #2 `catch-up-lane` — First-Week Back — a graded re-entry timeline that turns the saved plan into daily if-then actions with the people built in
-- **Deferred (B4-gated):** #1 college-compass, #28 college-compass, #33 journey — these collect/expose minors' financial or peer data; the loop will not build them until the B4 privacy gate is decided (a product/ethics call surfaced to the user).
+- **DONE:** #2 `catch-up-lane` — First-Week Back ✓ (commit `3b02b5f`, gate green, independent review SHIP). Committed to `main`, not yet deployed.
+- **NEXT (ready):** #3 `comeback` — Schedule the Evidence (turn vague missions into typed retrieval/spacing/interleaving actions; fixes the confidence-slider fluency illusion).
+- **Deferred (B4-gated):** #1 college-compass (Open Door income estimate), #28 college-compass (Runway parent-link/push), #33 journey (Choices Wall UGC + aggregates) — collect/expose minors' financial or peer data; the loop will not build them until the B4 privacy gate is decided (a product/ethics call surfaced to the user).
 
 > **Why not #1 first?** The synthesis ranked College Compass *Open Door* #1 (perfect 5×5), but its income self-estimate collects financial data from minors and intersects the unresolved **B4** blocker. Per CHARTER guardrails (minors'-data = stop-and-surface), the loop defers it and builds the highest-ranked **B4-clean** concept first. A B4-safe slice of Open Door (illustrative bands, no income capture) can be built once decided.
 
@@ -15,7 +16,7 @@ _The loop pops the top **ready** item, builds it end-to-end, runs the gate, comm
 | # | Status | Tool | Concept | Cx | Why |
 |---|--------|------|---------|----|-----|
 | 1 | ⏸ B4 | `college-compass` | The Open Door — affordability-and-access engine | L | The only concept scoring a perfect 5x5 on evidence AND impact — the brief's primary signal. It IS Destin & Oyserman's open-vs-closed-path manipulation applied to the exact low-income cohort it was demonstrated in, the EEF aspiration cite… |
-| 2 | ✔ ready | `catch-up-lane` | First-Week Back — a graded re-entry timeline that turns the saved plan into daily if-then actions with the people built in | M | Highest weightedTotal in the set (4.62) and second-highest evidence×impact (4.7x4.8=22.56). Instantiates Gollwitzer/Sheeran if-then (d=.65) plus Zimmerman's full SRL loop on the most vulnerable moment (return after absence) for the core … |
+| 2 | ✅ DONE | `catch-up-lane` | First-Week Back — a graded re-entry timeline that turns the saved plan into daily if-then actions with the people built in | M | Highest weightedTotal in the set (4.62) and second-highest evidence×impact (4.7x4.8=22.56). Instantiates Gollwitzer/Sheeran if-then (d=.65) plus Zimmerman's full SRL loop on the most vulnerable moment (return after absence) for the core … |
 | 3 | ✔ ready | `comeback` | Schedule the Evidence — missions become retrieval/spacing/interleaving actions, not 'do a past paper' | L | Perfect evidence (5/5) x 4.5 impact = 22.50, on four real, correctly-directed citations whose active ingredients are instantiated not labelled — a 'retrieval' mission is a close-the-book attempt, not a re-show of notes. Fixes the science… |
 | 4 | ✔ ready | `career-paths` | More than one way in — the de-circumscription pathway map | L | KEEPER of the de-circumscription cluster (collapses your-possible-life/More Than One Way In, college-compass/Route Map, future-finder-revamped/The Other Way In). 4.5x4.5 evidence×impact and the single most on-mission concept for the DEIS… |
 | 5 | ✔ ready | `exam-reps` | Show Me One — the fading model-answer scaffold | L | 4.6x4.5=20.70 evidence×impact and wt 4.41. Fading-by-competence IS the expertise-reversal remedy (Sweller/Kalyuga) and the compare-with-mark reveal IS the corrective feedback the pretesting boundary condition requires — both verified as … |
@@ -60,3 +61,5 @@ _The loop pops the top **ready** item, builds it end-to-end, runs the gate, comm
 ## Build log
 
 _Append one line per completed build: date · #rank · tool · concept · commit SHA · gate result._
+
+- 2026-06-07 · #2 · `catch-up-lane` · First-Week Back (5-day graded re-entry timeline) · `3b02b5f` · typecheck 0 / lint clean / 46 tests / build OK · independent review: SHIP, no blockers · activated dead `TEACHER_SCRIPT` export · not yet deployed.
