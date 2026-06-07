@@ -348,7 +348,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
             </div>
             <div className="text-right shrink-0 ml-3">
               {currentAnalysis.total >= ffPicks[0].typicalPoints ? (
-                <span className="text-[10px] font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: '#DEF7EC', color: '#276749' }}>On track</span>
+                <span className="text-[10px] font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: '#E8F2EC', color: '#1F5F3E' }}>On track</span>
               ) : (
                 <span className="text-[10px] font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: '#FDE8E8', color: '#C53030' }}>
                   {ffPicks[0].typicalPoints - currentAnalysis.total}pt gap
@@ -697,7 +697,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
                     <p className="text-[10px] text-zinc-400">{course.institution} — {course.typicalPoints} pts</p>
                   </div>
                   {isReachable ? (
-                    <span className="text-xs font-medium text-emerald-600">
+                    <span className="text-xs font-medium text-success">
                       On track
                     </span>
                   ) : (

@@ -161,9 +161,9 @@ const StressResponseComparison = () => {
                         </div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-4 text-sm">
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
-                            <span className="text-emerald-500 text-lg mt-0.5">&#x1F9E0;</span>
-                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Your PFC</strong> handles planning, working memory, and rational thinking. It's your exam brain. But it shuts down as cortisol rises.</p>
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-successTint dark:bg-success/15 border border-success/30 dark:border-success/40">
+                            <span className="text-success text-lg mt-0.5">&#x1F9E0;</span>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-success dark:text-success">Your PFC</strong> handles planning, working memory, and rational thinking. It's your exam brain. But it shuts down as cortisol rises.</p>
                         </div>
                         <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
                             <span className="text-rose-500 text-lg mt-0.5">&#x26A1;</span>
@@ -318,7 +318,7 @@ const ArousalReappraisal = () => {
     // Y: Arousal (0=high, 100=low) — inverted so high arousal is at top
     const emotions = {
       anxiety:    { x: 15, y: 12, label: 'Anxiety',    color: 'bg-rose-500' },
-      excitement: { x: 85, y: 12, label: 'Excitement', color: 'bg-emerald-500' },
+      excitement: { x: 85, y: 12, label: 'Excitement', color: 'bg-success' },
       calm:       { x: 85, y: 85, label: 'Calm',       color: 'bg-blue-500' },
       boredom:    { x: 15, y: 85, label: 'Boredom',    color: 'bg-zinc-400' },
     };
@@ -341,7 +341,7 @@ const ArousalReappraisal = () => {
                {/* Background quadrants */}
                <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 rounded-xl overflow-hidden">
                  <div className="bg-rose-50 dark:bg-rose-950/15" />
-                 <div className="bg-emerald-50 dark:bg-emerald-950/15" />
+                 <div className="bg-successTint dark:bg-success/15" />
                  <div className="bg-zinc-50 dark:bg-zinc-800/30" />
                  <div className="bg-blue-50 dark:bg-blue-950/15" />
                </div>
@@ -378,7 +378,7 @@ const ArousalReappraisal = () => {
                >
                  <div className="relative">
                    <div className={`w-6 h-6 rounded-full border-2 border-white shadow-lg ${
-                     attempt === 'reframe' ? 'bg-emerald-500' : attempt === 'calm' ? 'bg-amber-500' : 'bg-rose-500'
+                     attempt === 'reframe' ? 'bg-success' : attempt === 'calm' ? 'bg-amber-500' : 'bg-rose-500'
                    }`} />
                    <p className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[9px] font-bold text-zinc-500 dark:text-zinc-400 whitespace-nowrap">YOU</p>
                  </div>
@@ -402,7 +402,7 @@ const ArousalReappraisal = () => {
                        transition={{ duration: 0.5 }}
                      />
                    </svg>
-                   <div className="absolute text-[8px] font-bold text-emerald-500" style={{ left: '50%', top: `${emotions.anxiety.y}%`, transform: 'translate(-50%, -150%)' }}>
+                   <div className="absolute text-[8px] font-bold text-success" style={{ left: '50%', top: `${emotions.anxiety.y}%`, transform: 'translate(-50%, -150%)' }}>
                      Short path (same arousal)
                    </div>
                  </motion.div>
@@ -444,7 +444,7 @@ const ArousalReappraisal = () => {
                <button
                  onClick={() => handleAttempt('reframe')}
                  className="p-4 rounded-xl text-left text-sm font-medium transition-all"
-                 style={attempt === 'reframe' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}
+                 style={attempt === 'reframe' ? { backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', borderRadius: 14, boxShadow: '3px 3px 0px 0px #3A8D5F', color: '#1F5F3E' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}
                >
                  <p className="font-bold">"I'm excited!"</p>
                  <p className="text-xs mt-1 opacity-70">Reframe the same arousal</p>

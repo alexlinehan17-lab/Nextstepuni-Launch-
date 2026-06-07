@@ -67,8 +67,8 @@ const WOOPPlanner = ({ responses, saveResponse }: { responses: Record<string, an
                 </div>
             </div>
             {isComplete && (
-                <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-8 p-4 rounded-xl text-center" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669' }}>
-                    <p className="text-sm font-bold" style={{ color: '#064E3B' }}>Blueprint complete. You've turned a wish into an actual plan.</p>
+                <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-8 p-4 rounded-xl text-center" style={{ backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', boxShadow: '3px 3px 0px 0px #3A8D5F' }}>
+                    <p className="text-sm font-bold" style={{ color: '#1F5F3E' }}>Blueprint complete. You've turned a wish into an actual plan.</p>
                 </motion.div>
             )}
         </div>

@@ -145,7 +145,7 @@ const PEELBuilder = () => {
           const isCorrect = phase === 'result' && sentIdx === ex.correctOrder[slotIdx];
           const isWrong = phase === 'result' && sentIdx !== null && sentIdx !== ex.correctOrder[slotIdx];
           const correctSentIdx = phase === 'result' ? ex.correctOrder[slotIdx] : null;
-          const borderColor = isCorrect ? '#059669' : isWrong ? '#DC2626' : '#1C1917';
+          const borderColor = isCorrect ? '#3A8D5F' : isWrong ? '#DC2626' : '#1C1917';
 
           return (
             <div key={slotIdx}>
@@ -178,7 +178,7 @@ const PEELBuilder = () => {
                 </div>
               </div>
               {isWrong && correctSentIdx !== null && (
-                <div className="mt-1 ml-2 text-xs text-emerald-600 dark:text-emerald-400 italic">
+                <div className="mt-1 ml-2 text-xs text-success dark:text-success italic">
                   Correct: {ex.sentences[correctSentIdx].text.slice(0, 80)}...
                 </div>
               )}
@@ -342,16 +342,16 @@ const StackBuilder = () => {
             const got = choices[i];
             const correct = got === step.correct;
             return (
-              <div key={i} className={`p-3 rounded-lg border ${correct ? 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-300 dark:border-emerald-700' : 'bg-rose-50 dark:bg-rose-900/20 border-rose-300 dark:border-rose-700'}`}>
+              <div key={i} className={`p-3 rounded-lg border ${correct ? 'bg-successTint dark:bg-success/15 border-success/30 dark:border-success/40' : 'bg-rose-50 dark:bg-rose-900/20 border-rose-300 dark:border-rose-700'}`}>
                 <div className="flex items-center justify-between mb-1">
                   <span className="text-xs font-bold text-zinc-500">{step.label}</span>
-                  <span className={`text-xs font-bold ${correct ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
+                  <span className={`text-xs font-bold ${correct ? 'text-success dark:text-success' : 'text-rose-600 dark:text-rose-400'}`}>
                     {correct ? `+${step.marks} marks` : '0 marks'}
                   </span>
                 </div>
                 <p className="text-sm font-mono text-zinc-700 dark:text-zinc-200">{got}</p>
                 {!correct && (
-                  <p className="text-xs text-emerald-600 dark:text-emerald-400 mt-1 italic">Correct: {step.correct}</p>
+                  <p className="text-xs text-success dark:text-success mt-1 italic">Correct: {step.correct}</p>
                 )}
               </div>
             );
@@ -405,7 +405,7 @@ const StackBuilder = () => {
       <AnimatePresence mode="wait">
         <motion.div key={stepIndex} initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }}
           className={`p-5 rounded-xl border mb-5 transition-colors ${
-            isCorrect ? 'bg-emerald-50 dark:bg-emerald-900/30 border-emerald-300 dark:border-emerald-700' :
+            isCorrect ? 'bg-successTint dark:bg-success/15 border-success/30 dark:border-success/40' :
             isWrong ? 'bg-rose-50 dark:bg-rose-900/30 border-rose-300 dark:border-rose-700' :
             'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-600'
           }`}>
@@ -413,7 +413,7 @@ const StackBuilder = () => {
           <p className="text-sm text-zinc-600 dark:text-zinc-300">Choose the correct step worth <strong>{step.marks} marks</strong>:</p>
           {showStepFeedback && (
             <motion.p initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }}
-              className={`text-xs mt-3 italic ${isCorrect ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
+              className={`text-xs mt-3 italic ${isCorrect ? 'text-success dark:text-success' : 'text-rose-600 dark:text-rose-400'}`}>
               {isCorrect ? `Correct! +${step.marks} marks` : `Not quite. The correct step was: ${step.correct}`}
             </motion.p>
           )}
@@ -428,7 +428,7 @@ const StackBuilder = () => {
           return (
             <button key={i} onClick={() => handleChoice(opt)} disabled={showStepFeedback}
               className={`w-full text-left p-3 rounded-xl font-mono text-sm border transition-all ${
-                isAnswer ? 'bg-emerald-50 dark:bg-emerald-900/30 border-emerald-400 dark:border-emerald-600 ring-2 ring-emerald-500 ring-offset-1' :
+                isAnswer ? 'bg-successTint dark:bg-success/15 border-success dark:border-success ring-2 ring-success ring-offset-1' :
                 selected && !isAnswer ? 'bg-rose-50 dark:bg-rose-900/30 border-rose-400 dark:border-rose-600' :
                 'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-600 hover:border-[#F26B1F]/60 dark:hover:border-[#F26B1F] hover:bg-[#FDEEDF] dark:hover:bg-[#F26B1F]/20'
               } ${showStepFeedback ? 'cursor-default' : 'cursor-pointer'}`}>
@@ -442,7 +442,7 @@ const StackBuilder = () => {
       <div className="flex justify-center gap-1.5 mt-5">
         {stackProblem.steps.map((_, i) => (
           <div key={i} className={`w-2 h-2 rounded-full transition-colors ${
-            i < stepIndex ? (choices[i] === stackProblem.steps[i].correct ? 'bg-emerald-500' : 'bg-rose-500') :
+            i < stepIndex ? (choices[i] === stackProblem.steps[i].correct ? 'bg-success' : 'bg-rose-500') :
             i === stepIndex ? 'bg-red-500' : 'bg-zinc-200 dark:bg-zinc-600'
           }`} />
         ))}

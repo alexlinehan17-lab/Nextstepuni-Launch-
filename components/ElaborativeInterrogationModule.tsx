@@ -30,7 +30,7 @@ const HungryManExperiment = () => {
             <div className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-xl text-center font-mono mb-6">"The hungry man got in the car."</div>
             <div className="grid grid-cols-2 gap-4">
                 <button onClick={() => setMethod('passive')} className="p-4 rounded-xl text-sm font-bold" style={{ backgroundColor: method === 'passive' ? '#FCA5A5' : '#FFFFFF', border: `2.5px solid ${method === 'passive' ? '#DC2626' : '#1C1917'}`, borderRadius: 14, boxShadow: method === 'passive' ? 'none' : '3px 3px 0px 0px #1C1917', color: method === 'passive' ? '#7F1D1D' : '#1C1917' }}>Read Passively</button>
-                <button onClick={() => setMethod('ei')} className="p-4 rounded-xl text-sm font-bold" style={{ backgroundColor: method === 'ei' ? '#6EE7B7' : '#FFFFFF', border: `2.5px solid ${method === 'ei' ? '#059669' : '#1C1917'}`, borderRadius: 14, boxShadow: method === 'ei' ? 'none' : '3px 3px 0px 0px #1C1917', color: method === 'ei' ? '#064E3B' : '#1C1917' }}>Ask "Why?"</button>
+                <button onClick={() => setMethod('ei')} className="p-4 rounded-xl text-sm font-bold" style={{ backgroundColor: method === 'ei' ? '#E8F2EC' : '#FFFFFF', border: `2.5px solid ${method === 'ei' ? '#3A8D5F' : '#1C1917'}`, borderRadius: 14, boxShadow: method === 'ei' ? 'none' : '3px 3px 0px 0px #1C1917', color: method === 'ei' ? '#1F5F3E' : '#1C1917' }}>Ask "Why?"</button>
             </div>
             {method && (
                  <div className="mt-6">
@@ -227,10 +227,10 @@ const WhyChainBuilder = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="mt-6 p-6 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-700 text-center space-y-3"
+              className="mt-6 p-6 rounded-xl bg-successTint dark:bg-success/15 border border-success/30 dark:border-success/40 text-center space-y-3"
             >
-              <p className="font-serif text-lg font-semibold text-emerald-800 dark:text-emerald-300">Nice one — you've gone 4 levels deep.</p>
-              <p className="text-sm text-emerald-700 dark:text-emerald-400">Each "Why?" created a new connection in your memory. That's why this technique beats just reading your notes over and over.</p>
+              <p className="font-serif text-lg font-semibold text-successDarkText dark:text-success">Nice one — you've gone 4 levels deep.</p>
+              <p className="text-sm text-successDarkText dark:text-success">Each "Why?" created a new connection in your memory. That's why this technique beats just reading your notes over and over.</p>
               <button
                 onClick={handleStartOver}
                 className="mt-3 px-5 py-2 rounded-full bg-zinc-800 dark:bg-zinc-200 text-white dark:text-zinc-800 text-sm font-semibold hover:opacity-80 transition-opacity"

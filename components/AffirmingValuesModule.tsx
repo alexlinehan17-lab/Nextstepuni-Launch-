@@ -262,8 +262,8 @@ const WorkingMemoryGrid = () => {
             animate={{ opacity: 1, y: 0 }}
             className="flex flex-col items-center gap-3"
           >
-            <div className="p-4 rounded-xl text-center" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669' }}>
-              <p className="text-sm font-bold" style={{ color: '#064E3B' }}>
+            <div className="p-4 rounded-xl text-center" style={{ backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', boxShadow: '3px 3px 0px 0px #3A8D5F' }}>
+              <p className="text-sm font-bold" style={{ color: '#1F5F3E' }}>
                 Full capacity restored. Affirming your values frees your working memory.
               </p>
             </div>

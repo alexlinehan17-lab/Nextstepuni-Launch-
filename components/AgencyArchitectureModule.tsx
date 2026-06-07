@@ -79,13 +79,13 @@ const AttributionMapper = ({ savedValues, onSave }: { savedValues?: { locus: num
   const label = getLabel();
 
   const labelBgClass = label.color === 'emerald'
-    ? 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300'
+    ? 'bg-successTint dark:bg-success/15 text-successDarkText dark:text-success'
     : label.color === 'rose'
     ? 'bg-rose-100 dark:bg-rose-900/40 text-rose-700 dark:text-rose-300'
     : 'bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300';
 
   const borderClass = label.color === 'emerald'
-    ? 'border-emerald-200 dark:border-emerald-700'
+    ? 'border-success/30 dark:border-success/40'
     : label.color === 'rose'
     ? 'border-rose-200 dark:border-rose-700'
     : 'border-amber-200 dark:border-amber-700';
@@ -199,9 +199,9 @@ const AttributionSorter = ({ savedChoices, onSave }: { savedChoices?: { [key: st
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Scenario: You fail a test. Which of these reasons are actually within your control?</p>
             <div className="space-y-3">
                 {reasons.map(reason => (
-                    <button key={reason.text} onClick={() => { const next = {...choice, [reason.text]: !choice[reason.text]}; setChoice(next); onSave?.(next); }} className={`w-full p-4 rounded-xl text-left font-bold text-sm transition-all`} style={choice[reason.text] ? (reason.control ? { backgroundColor: '#ECFDF5', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669' } : { backgroundColor: '#FEF2F2', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626' }) : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}>
+                    <button key={reason.text} onClick={() => { const next = {...choice, [reason.text]: !choice[reason.text]}; setChoice(next); onSave?.(next); }} className={`w-full p-4 rounded-xl text-left font-bold text-sm transition-all`} style={choice[reason.text] ? (reason.control ? { backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', borderRadius: 14, boxShadow: '3px 3px 0px 0px #3A8D5F' } : { backgroundColor: '#FEF2F2', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626' }) : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}>
                         {reason.text}
-                        {choice[reason.text] && <span className={`ml-2 font-semibold text-xs ${reason.control ? 'text-emerald-600' : 'text-rose-600'}`}>{reason.control ? '(CONTROLLABLE)' : '(UNCONTROLLABLE)'}</span>}
+                        {choice[reason.text] && <span className={`ml-2 font-semibold text-xs ${reason.control ? 'text-success' : 'text-rose-600'}`}>{reason.control ? '(CONTROLLABLE)' : '(UNCONTROLLABLE)'}</span>}
                     </button>
                 ))}
             </div>
@@ -237,8 +237,8 @@ const AttributionReframeDrill = () => {
             onClick={() => handleFlip(ex.id)}
             className="p-6 rounded-xl cursor-pointer border relative min-h-[100px] flex items-center justify-center transition-colors"
             animate={{
-              backgroundColor: flipped.includes(ex.id) ? 'rgba(236, 253, 245, 1)' : 'rgba(250, 250, 247, 1)',
-              borderColor: flipped.includes(ex.id) ? 'rgb(167 243 208)' : 'rgb(229 228 223)'
+              backgroundColor: flipped.includes(ex.id) ? 'rgba(232, 242, 236, 1)' : 'rgba(250, 250, 247, 1)',
+              borderColor: flipped.includes(ex.id) ? 'rgb(58 141 95)' : 'rgb(229 228 223)'
             }}
           >
             <AnimatePresence mode="wait">
@@ -248,7 +248,7 @@ const AttributionReframeDrill = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
-                className={`text-sm text-center font-medium ${flipped.includes(ex.id) ? 'text-emerald-800' : 'text-zinc-600 dark:text-zinc-400'}`}
+                className={`text-sm text-center font-medium ${flipped.includes(ex.id) ? 'text-successDarkText' : 'text-zinc-600 dark:text-zinc-400'}`}
               >
                 "{flipped.includes(ex.id) ? ex.adaptive : ex.maladaptive}"
               </motion.p>

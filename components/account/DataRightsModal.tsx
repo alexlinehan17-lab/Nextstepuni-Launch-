@@ -141,7 +141,7 @@ export const DataRightsModal: React.FC<DataRightsModalProps> = ({ open, onClose,
               disabled={phase === 'downloading'}
               className="w-full flex items-center gap-3 p-3.5 rounded-xl border-2 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-white/[0.04] transition-colors disabled:opacity-50 text-left"
             >
-              {phase === 'downloading' ? <Loader2 size={18} className="text-zinc-500 animate-spin shrink-0" /> : phase === 'downloaded' ? <Check size={18} className="text-emerald-500 shrink-0" /> : <Download size={18} className="text-zinc-500 shrink-0" />}
+              {phase === 'downloading' ? <Loader2 size={18} className="text-zinc-500 animate-spin shrink-0" /> : phase === 'downloaded' ? <Check size={18} className="text-success shrink-0" /> : <Download size={18} className="text-zinc-500 shrink-0" />}
               <div>
                 <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-100">Download my data</p>
                 <p className="text-[12px] text-zinc-500">{phase === 'downloading' ? 'Preparing your export…' : phase === 'downloaded' ? 'Saved. Check your downloads.' : 'A machine-readable copy of everything we hold about you.'}</p>
@@ -241,8 +241,8 @@ export const DataRightsModal: React.FC<DataRightsModalProps> = ({ open, onClose,
         <>
           {header('Account deleted', false)}
           <div className="p-5 text-center">
-            <div className="w-12 h-12 rounded-full bg-emerald-50 dark:bg-emerald-900/20 flex items-center justify-center mx-auto mb-3">
-              <Check size={24} className="text-emerald-500" />
+            <div className="w-12 h-12 rounded-full bg-successTint dark:bg-success/15 flex items-center justify-center mx-auto mb-3">
+              <Check size={24} className="text-success" />
             </div>
             <p className="text-sm text-zinc-600 dark:text-zinc-300 mb-5">Your account and all your data have been permanently deleted. Take care.</p>
             <button onClick={() => { setPhase('menu'); onAccountDeleted(); }} className="w-full py-3 rounded-xl text-sm font-semibold text-white" style={{ backgroundColor: '#1a1a1a' }}>Done</button>

@@ -904,14 +904,14 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
         {!isJunior && targetPoints !== null && gap !== null && (
           <div className="rounded-2xl p-5 text-center space-y-2 border"
             style={gap === 0
-              ? { backgroundColor: '#EDF2EE', borderColor: '#6B8F71' }
+              ? { backgroundColor: '#E8F2EC', borderColor: '#3A8D5F' }
               : { backgroundColor: '#FDF3E7', borderColor: '#C4873B' }
             }
           >
             {gap === 0 ? (
               <>
-                <p className="text-sm font-bold" style={{ color: '#4A6B4F' }}>You're already there.</p>
-                <p className="text-xs" style={{ color: '#6B8F71' }}>Your current grades already meet your target. Now it's about holding the line.</p>
+                <p className="text-sm font-bold" style={{ color: '#1F5F3E' }}>You're already there.</p>
+                <p className="text-xs" style={{ color: '#3A8D5F' }}>Your current grades already meet your target. Now it's about holding the line.</p>
               </>
             ) : (
               <>
@@ -949,7 +949,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
             <p className="text-3xl font-black text-zinc-800 dark:text-white">{projectedPoints} → {maxRealisticPoints}</p>
             <p className="text-xs text-zinc-500 dark:text-zinc-400">
               If you improve each subject by just one grade, you go from {projectedPoints} to {maxRealisticPoints}.
-              That's <span className="font-bold" style={{ color: '#6B8F71' }}>+{maxRealisticPoints - projectedPoints} points</span>.
+              That's <span className="font-bold" style={{ color: '#3A8D5F' }}>+{maxRealisticPoints - projectedPoints} points</span>.
             </p>
           </div>
         )}
@@ -1012,14 +1012,14 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                       <span className="text-sm font-bold text-zinc-800 dark:text-white">{win.subject}</span>
                       <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full"
                         style={
-                          win.effort === 'low' ? { backgroundColor: '#EDF2EE', color: '#4A6B4F' }
+                          win.effort === 'low' ? { backgroundColor: '#E8F2EC', color: '#1F5F3E' }
                             : win.effort === 'medium' ? { backgroundColor: '#FDF3E7', color: '#8B5E2A' }
                             : { backgroundColor: '#ECF5F3', color: '#B54D14' }
                         }
                       >
                         {win.effort === 'low' ? 'Easiest' : win.effort === 'medium' ? 'Moderate' : 'Harder'}
                       </span>
-                      {win.trending === 'up' && <TrendingUp size={13} style={{ color: '#276749' }} />}
+                      {win.trending === 'up' && <TrendingUp size={13} style={{ color: '#1F5F3E' }} />}
                       {win.trending === 'down' && <TrendingUp size={13} style={{ color: '#DC2626', transform: 'scaleY(-1)' }} />}
                       {win.trending === 'stable' && <span className="text-[10px] text-[#A8A29E] dark:text-zinc-500">—</span>}
                     </div>
@@ -1031,7 +1031,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                       walk in the from→to row above; no numerical payoff. */}
                   {!isJunior && (
                     <div className="text-right shrink-0">
-                      <p className="text-lg font-black" style={{ color: '#6B8F71' }}>+{(win as QuickWin).gain}</p>
+                      <p className="text-lg font-black" style={{ color: '#3A8D5F' }}>+{(win as QuickWin).gain}</p>
                       <p className="text-[10px] text-zinc-400 dark:text-zinc-500">CAO pts</p>
                     </div>
                   )}
@@ -1043,11 +1043,11 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
 
         {/* Total potential — senior only (CAO points sum doesn't translate to JC) */}
         {!isJunior && (
-          <div className="rounded-xl p-4 text-center" style={{ backgroundColor: '#EDF2EE', border: '0.5px solid rgba(107,143,113,0.3)' }}>
-            <p className="text-xs" style={{ color: '#4A6B4F' }}>
+          <div className="rounded-xl p-4 text-center" style={{ backgroundColor: '#E8F2EC', border: '0.5px solid rgba(58,141,95,0.3)' }}>
+            <p className="text-xs" style={{ color: '#1F5F3E' }}>
               Just these {top5.length} moves alone could be worth up to <span className="font-black text-lg">+{totalPossible}</span> CAO points
             </p>
-            <p className="text-[10px] mt-1" style={{ color: '#6B8F71' }}>
+            <p className="text-[10px] mt-1" style={{ color: '#3A8D5F' }}>
               {projectedPoints} → {projectedPoints + totalPossible} projected
             </p>
           </div>
@@ -1092,22 +1092,22 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                 onClick={() => handleToggleMission(m.id)}
                 className={`w-full flex items-start gap-3 px-4 py-3.5 rounded-xl border text-left transition-all ${m.done ? '' : 'bg-[#FAF7F4] dark:bg-zinc-900'}`}
                 style={m.done
-                  ? { backgroundColor: '#EDF2EE', borderColor: 'rgba(107,143,113,0.3)' }
+                  ? { backgroundColor: '#E8F2EC', borderColor: 'rgba(58,141,95,0.3)' }
                   : { border: '0.5px solid rgba(0,0,0,0.07)' }
                 }
               >
                 <div className="mt-0.5 shrink-0">
                   {m.done ? (
-                    <CheckCircle size={18} style={{ color: '#6B8F71' }} />
+                    <CheckCircle size={18} style={{ color: '#3A8D5F' }} />
                   ) : (
                     <Circle size={18} className="text-[#9A9590] dark:text-zinc-500" />
                   )}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className={`text-sm font-semibold ${m.done ? 'line-through' : 'text-zinc-700 dark:text-zinc-300'}`} style={m.done ? { color: '#4A6B4F' } : undefined}>
+                  <p className={`text-sm font-semibold ${m.done ? 'line-through' : 'text-zinc-700 dark:text-zinc-300'}`} style={m.done ? { color: '#1F5F3E' } : undefined}>
                     {m.action}
                     {!m.done && autoCompletableMissions.has(m.id) && (
-                      <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full ml-1" style={{ color: '#4A6B4F', backgroundColor: '#EDF2EE' }}>
+                      <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full ml-1" style={{ color: '#1F5F3E', backgroundColor: '#E8F2EC' }}>
                         studied today
                       </span>
                     )}
@@ -1125,7 +1125,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                   </p>
                 </div>
                 {m.pointsImpact > 0 && (
-                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full shrink-0" style={{ color: '#4A6B4F', backgroundColor: '#EDF2EE' }}>
+                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full shrink-0" style={{ color: '#1F5F3E', backgroundColor: '#E8F2EC' }}>
                     +{m.pointsImpact} pts
                   </span>
                 )}
@@ -1194,7 +1194,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
         {targetPoints !== null && gap !== null ? (
           <div className={`border rounded-xl p-4 text-center ${gap === 0 ? '' : 'bg-[#FAF7F4] dark:bg-zinc-900'}`}
             style={gap === 0
-              ? { backgroundColor: '#EDF2EE', borderColor: '#6B8F71', borderRadius: '12px' }
+              ? { backgroundColor: '#E8F2EC', borderColor: '#3A8D5F', borderRadius: '12px' }
               : { borderColor: 'rgba(196,135,59,0.3)', borderRadius: '12px' }
             }
           >
@@ -1202,9 +1202,9 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
               {gap === 0 ? 'Status' : 'Gap to close'}
             </p>
             <p className="text-3xl font-black"
-              style={gap === 0 ? { color: '#6B8F71' } : { color: '#C4873B' }}
+              style={gap === 0 ? { color: '#3A8D5F' } : { color: '#C4873B' }}
             >
-              {gap === 0 ? <CheckCircle size={28} className="mx-auto" style={{ color: '#6B8F71' }} /> : gap}
+              {gap === 0 ? <CheckCircle size={28} className="mx-auto" style={{ color: '#3A8D5F' }} /> : gap}
             </p>
             <p className="text-[10px] text-zinc-400 dark:text-zinc-500">
               {gap === 0 ? 'On target' : `Need ${targetPoints}`}
@@ -1213,7 +1213,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
         ) : (
           <div className="rounded-xl p-4 text-center bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: '12px' }}>
             <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Potential</p>
-            <p className="text-3xl font-black" style={{ color: '#6B8F71' }}>{maxRealisticPoints}</p>
+            <p className="text-3xl font-black" style={{ color: '#3A8D5F' }}>{maxRealisticPoints}</p>
             <p className="text-[10px] text-zinc-400 dark:text-zinc-500">If each up 1 grade</p>
           </div>
         )}
@@ -1224,7 +1224,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
       {!isJunior && comebackData && comebackData.history.length > 1 && (
         <div className={`rounded-xl p-4 text-center border ${pointsGained === 0 ? 'bg-[#FAF7F4] dark:bg-zinc-900' : ''}`}
           style={pointsGained > 0
-            ? { backgroundColor: '#EDF2EE', borderColor: 'rgba(107,143,113,0.3)' }
+            ? { backgroundColor: '#E8F2EC', borderColor: 'rgba(58,141,95,0.3)' }
             : pointsGained === 0
             ? { borderColor: 'rgba(0,0,0,0.07)' }
             : { backgroundColor: '#ECF5F3', borderColor: 'rgba(242,107,31,0.3)' }
@@ -1232,7 +1232,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
         >
           <div className="flex items-center justify-center gap-2">
             {pointsGained > 0 ? (
-              <TrendingUp size={18} style={{ color: '#6B8F71' }} />
+              <TrendingUp size={18} style={{ color: '#3A8D5F' }} />
             ) : pointsGained === 0 ? (
               <Target size={18} className="text-[#9A9590] dark:text-zinc-500" />
             ) : (
@@ -1240,7 +1240,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
             )}
             <span className={`text-sm font-bold ${pointsGained === 0 ? 'text-[#9A9590] dark:text-zinc-500' : ''}`}
               style={pointsGained > 0
-                ? { color: '#4A6B4F' }
+                ? { color: '#1F5F3E' }
                 : pointsGained === 0
                 ? undefined
                 : { color: '#B85C4A' }
@@ -1294,7 +1294,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
             </p>
           )}
           {targetPoints !== null && gap !== null && gap === 0 && (
-            <p className="text-xs font-medium" style={{ color: '#6B8F71' }}>
+            <p className="text-xs font-medium" style={{ color: '#3A8D5F' }}>
               You're on track to make this happen. Keep going.
             </p>
           )}
@@ -1311,7 +1311,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
               <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: hexColor }} />
               <span className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 flex-1">{win.subject}</span>
               <span className="text-xs text-zinc-400 dark:text-zinc-500">{win.currentGrade} → {win.targetGrade}</span>
-              <span className="text-xs font-bold" style={{ color: '#6B8F71' }}>+{win.gain}</span>
+              <span className="text-xs font-bold" style={{ color: '#3A8D5F' }}>+{win.gain}</span>
             </div>
           );
         })}
@@ -1329,19 +1329,19 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
             onClick={() => handleToggleMission(m.id)}
             className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg border text-left transition-all ${m.done ? '' : 'bg-[#FAF7F4] dark:bg-zinc-900'}`}
             style={m.done
-              ? { backgroundColor: '#EDF2EE', borderColor: 'rgba(107,143,113,0.3)' }
+              ? { backgroundColor: '#E8F2EC', borderColor: 'rgba(58,141,95,0.3)' }
               : { border: '0.5px solid rgba(0,0,0,0.07)' }
             }
           >
             {m.done ? (
-              <CheckCircle size={14} className="shrink-0" style={{ color: '#6B8F71' }} />
+              <CheckCircle size={14} className="shrink-0" style={{ color: '#3A8D5F' }} />
             ) : (
               <Circle size={14} className="shrink-0 text-[#9A9590] dark:text-zinc-500" />
             )}
-            <span className={`text-xs font-medium flex-1 ${m.done ? 'line-through' : 'text-zinc-600 dark:text-zinc-400'}`} style={m.done ? { color: '#4A6B4F' } : undefined}>
+            <span className={`text-xs font-medium flex-1 ${m.done ? 'line-through' : 'text-zinc-600 dark:text-zinc-400'}`} style={m.done ? { color: '#1F5F3E' } : undefined}>
               {m.action}
               {!m.done && autoCompletableMissions.has(m.id) && (
-                <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full ml-1" style={{ color: '#4A6B4F', backgroundColor: '#EDF2EE' }}>
+                <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full ml-1" style={{ color: '#1F5F3E', backgroundColor: '#E8F2EC' }}>
                   studied today
                 </span>
               )}

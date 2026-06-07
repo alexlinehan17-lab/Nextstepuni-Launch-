@@ -138,13 +138,13 @@ const MindsetSorter = () => {
           </div>
         </div>
         <div className="bg-white dark:bg-zinc-900" style={{ border: '2.5px solid #1C1917', borderRadius: 18, boxShadow: '4px 4px 0px 0px #1C1917', overflow: 'hidden' }}>
-          <div style={{ backgroundColor: '#059669', padding: '10px 16px', borderBottom: '2.5px solid #1C1917' }}>
+          <div style={{ backgroundColor: '#3A8D5F', padding: '10px 16px', borderBottom: '2.5px solid #1C1917' }}>
             <p className="text-[13px] font-medium tracking-wider uppercase text-white text-center">Driver</p>
           </div>
           <div className="p-4 min-h-[100px]">
             <AnimatePresence>
               {driver.map(d => (
-                <motion.div key={d.id} initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} className="text-center mb-2" style={{ backgroundColor: '#FFFFFF', border: '2px solid #059669', borderRadius: 12, boxShadow: '2px 2px 0px 0px #059669', padding: '8px 12px', fontSize: '13px', fontWeight: 700, color: '#064E3B' }}>
+                <motion.div key={d.id} initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} className="text-center mb-2" style={{ backgroundColor: '#FFFFFF', border: '2px solid #3A8D5F', borderRadius: 12, boxShadow: '2px 2px 0px 0px #3A8D5F', padding: '8px 12px', fontSize: '13px', fontWeight: 700, color: '#1F5F3E' }}>
                   {d.text}
                 </motion.div>
               ))}
@@ -173,7 +173,7 @@ const MindsetSorter = () => {
               <motion.button whileTap={{ scale: 0.9 }} onClick={() => handleSort(thought, 'passenger')} className="px-3 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-wider text-white" style={{ backgroundColor: '#DC2626' }}>
                 <X size={12} className="inline -mt-0.5" />
               </motion.button>
-              <motion.button whileTap={{ scale: 0.9 }} onClick={() => handleSort(thought, 'driver')} className="px-3 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-wider text-white" style={{ backgroundColor: '#059669' }}>
+              <motion.button whileTap={{ scale: 0.9 }} onClick={() => handleSort(thought, 'driver')} className="px-3 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-wider text-white" style={{ backgroundColor: '#3A8D5F' }}>
                 <CheckCircle2 size={12} className="inline -mt-0.5" />
               </motion.button>
             </div>
@@ -183,7 +183,7 @@ const MindsetSorter = () => {
 
       {allSorted && (
         <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="text-center py-3">
-          <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold text-white" style={{ backgroundColor: '#059669', boxShadow: '3px 3px 0px 0px #047857' }}>
+          <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold text-white" style={{ backgroundColor: '#3A8D5F', boxShadow: '3px 3px 0px 0px #1F5F3E' }}>
             <CheckCircle2 size={16} /> All sorted!
           </span>
         </motion.div>
@@ -287,8 +287,8 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
                     <input value={dailyAction} onChange={(e) => setDailyAction(e.target.value)} onBlur={() => saveResponse('dailyAction', dailyAction)} placeholder="e.g., 20 minutes of Maths revision" className="w-full bg-white dark:bg-zinc-800 rounded-xl px-4 py-3 text-sm text-zinc-800 dark:text-white placeholder-zinc-400 outline-none" style={{ border: '1.5px solid #E7E5E4' }} />
                   </div>
                   {futureSelf && dailyAction && (
-                    <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="p-4 rounded-xl text-center" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669' }}>
-                      <p className="text-sm font-bold" style={{ color: '#064E3B' }}><CheckCircle2 size={14} className="inline -mt-0.5 mr-1" /> Route locked in. The journey starts now.</p>
+                    <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="p-4 rounded-xl text-center" style={{ backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', boxShadow: '3px 3px 0px 0px #3A8D5F' }}>
+                      <p className="text-sm font-bold" style={{ color: '#1F5F3E' }}><CheckCircle2 size={14} className="inline -mt-0.5 mr-1" /> Route locked in. The journey starts now.</p>
                     </motion.div>
                   )}
                 </div>
@@ -380,7 +380,7 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
                           boxShadow: scenarioChoice === 'agentic' ? '2px 2px 0px 0px #1C1917' : '4px 4px 0px 0px #1C1917',
                         }}
                       >
-                        <div className="w-10 h-10 flex items-center justify-center shrink-0" style={{ backgroundColor: '#059669', borderRadius: 12 }}>
+                        <div className="w-10 h-10 flex items-center justify-center shrink-0" style={{ backgroundColor: '#3A8D5F', borderRadius: 12 }}>
                           <CheckCircle2 size={18} style={{ color: '#fff' }} />
                         </div>
                         <div>
@@ -397,7 +397,7 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
                     <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="mt-5 max-w-lg mx-auto">
                       <div className="bg-white dark:bg-zinc-900 overflow-hidden" style={{ border: '2.5px solid #1C1917', borderRadius: 18, boxShadow: '4px 4px 0px 0px #1C1917' }}>
                         {/* Coloured header bar */}
-                        <div style={{ backgroundColor: scenarioChoice === 'passive' ? '#DC2626' : '#059669', padding: '10px 16px', borderBottom: '2.5px solid #1C1917' }}>
+                        <div style={{ backgroundColor: scenarioChoice === 'passive' ? '#DC2626' : '#3A8D5F', padding: '10px 16px', borderBottom: '2.5px solid #1C1917' }}>
                           <p className="text-[13px] font-medium tracking-wider uppercase text-white text-center">
                             {scenarioChoice === 'passive' ? 'Roadblock ahead!' : 'Route recalculated!'}
                           </p>
@@ -457,8 +457,8 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
                   />
                 </div>
                 {responses['reframeText'] && (
-                  <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="mt-4 p-4 rounded-xl" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669' }}>
-                    <p className="text-sm font-bold" style={{ color: '#064E3B' }}><CheckCircle2 size={14} className="inline -mt-0.5 mr-1" /> Suspension installed. Pothole → speed bump.</p>
+                  <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="mt-4 p-4 rounded-xl" style={{ backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', boxShadow: '3px 3px 0px 0px #3A8D5F' }}>
+                    <p className="text-sm font-bold" style={{ color: '#1F5F3E' }}><CheckCircle2 size={14} className="inline -mt-0.5 mr-1" /> Suspension installed. Pothole → speed bump.</p>
                   </motion.div>
                 )}
               </div>

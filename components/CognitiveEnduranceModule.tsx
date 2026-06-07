@@ -67,9 +67,9 @@ const AllostaticLoadComparison = () => {
         { label: 'Burnout', x1: 0.66, x2: 1, color: '#ef4444' },
     ];
     const recPhases = [
-        { label: 'Build + recover', x1: 0, x2: 0.33, color: '#6ee7b7' },
-        { label: 'Sustain', x1: 0.33, x2: 0.66, color: '#34d399' },
-        { label: 'Peak form', x1: 0.66, x2: 1, color: '#10b981' },
+        { label: 'Build + recover', x1: 0, x2: 0.33, color: '#3A8D5F' },
+        { label: 'Sustain', x1: 0.33, x2: 0.66, color: '#3A8D5F' },
+        { label: 'Peak form', x1: 0.66, x2: 1, color: '#3A8D5F' },
     ];
 
     const Chart = ({ primary, secondary, phases, areaColor, areaId, areaData, label }: {
@@ -157,9 +157,9 @@ const AllostaticLoadComparison = () => {
                             <Chart primary={noRecStress} secondary={noRecPerf} phases={noRecPhases}
                                 areaColor="#ef4444" areaId="norec-grad" areaData={noRecStress} label="No Recovery Protocol" />
                         </div>
-                        <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
+                        <div className="rounded-lg border border-success/30 dark:border-success/40 bg-successTint/50 dark:bg-success/15 p-3">
                             <Chart primary={recStress} secondary={recPerf} phases={recPhases}
-                                areaColor="#10b981" areaId="rec-grad" areaData={recPerf} label="Strategic Recovery" />
+                                areaColor="#3A8D5F" areaId="rec-grad" areaData={recPerf} label="Strategic Recovery" />
                         </div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-4 text-sm">
@@ -167,9 +167,9 @@ const AllostaticLoadComparison = () => {
                             <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
                             <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Without recovery</strong>, stress piles up like debt with interest. By May, you're so worn out that studying becomes pointless — you're running on fumes.</p>
                         </div>
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
-                            <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
-                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Strategic recovery</strong> — proper sleep, exercise, guided relaxation — creates deliberate dips in the stress curve. You arrive at exams with energy left in the tank.</p>
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-successTint dark:bg-success/15 border border-success/30 dark:border-success/40">
+                            <span className="text-success dark:text-success text-lg mt-0.5">&#x2714;</span>
+                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-success dark:text-success">Strategic recovery</strong> — proper sleep, exercise, guided relaxation — creates deliberate dips in the stress curve. You arrive at exams with energy left in the tank.</p>
                         </div>
                     </div>
                 </motion.div>
@@ -278,7 +278,7 @@ const AllostaticLoadVisualizer = () => {
                                 <text x={toX((start + end) / 2)} y={H - padB + 14}
                                     textAnchor="middle"
                                     className="text-[7px] font-bold"
-                                    fill={isExam ? '#dc2626' : isPreExam ? '#ef4444' : isSummer ? '#10b981' : '#a1a1aa'}
+                                    fill={isExam ? '#dc2626' : isPreExam ? '#ef4444' : isSummer ? '#3A8D5F' : '#a1a1aa'}
                                 >
                                     {label}
                                 </text>
@@ -302,9 +302,9 @@ const AllostaticLoadVisualizer = () => {
                     />
 
                     {/* Summer recovery annotation */}
-                    <circle cx={toX(0.48)} cy={toY(0.08)} r="3" fill="#10b981" />
+                    <circle cx={toX(0.48)} cy={toY(0.08)} r="3" fill="#3A8D5F" />
                     <text x={toX(0.48)} y={toY(0.08) + 12} textAnchor="middle"
-                        className="text-[5px] font-semibold" fill="#10b981">Recovery</text>
+                        className="text-[5px] font-semibold" fill="#3A8D5F">Recovery</text>
 
                     {/* Peak load annotation */}
                     <circle cx={toX(0.97)} cy={toY(0.96)} r="3" fill="#dc2626" />

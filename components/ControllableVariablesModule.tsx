@@ -482,13 +482,13 @@ const HighPerformanceChecklist = () => {
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">A solid study day from start to finish. Tick each one off as you go.</p>
             <div className="space-y-3">
                 {items.map(item => (
-                    <div key={item.key} onClick={() => toggle(item.key)} className="p-4 rounded-xl flex items-center gap-4 cursor-pointer transition-all" style={checks[item.key] ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}>
+                    <div key={item.key} onClick={() => toggle(item.key)} className="p-4 rounded-xl flex items-center gap-4 cursor-pointer transition-all" style={checks[item.key] ? { backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', borderRadius: 14, boxShadow: '3px 3px 0px 0px #3A8D5F' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}>
                         <span className="font-mono text-xs font-bold w-12">{item.time}</span>
                         <div className="flex-grow">
                             <p className="font-bold text-sm">{item.task}</p>
                             <p className="text-xs text-zinc-500 dark:text-zinc-400">{item.details}</p>
                         </div>
-                        <div className={`w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center ${checks[item.key] ? 'bg-emerald-500' : 'bg-zinc-300'}`}><CheckCircle2 size={12} className="text-white"/></div>
+                        <div className={`w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center ${checks[item.key] ? 'bg-success' : 'bg-zinc-300'}`}><CheckCircle2 size={12} className="text-white"/></div>
                     </div>
                 ))}
             </div>

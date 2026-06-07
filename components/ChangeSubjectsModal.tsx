@@ -322,7 +322,7 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
                                 <span className="text-[10px] text-zinc-400 dark:text-zinc-500">
                                   {config.currentGrade} <ArrowRight size={8} className="inline -mt-0.5" /> {config.targetGrade}
                                 </span>
-                                <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400">
+                                <span className="text-[10px] font-bold text-success dark:text-success">
                                   +{getPointsForGrade(config.targetGrade, lcSubject?.isMaths || false) - getPointsForGrade(config.currentGrade, lcSubject?.isMaths || false)} pts
                                 </span>
                               </div>

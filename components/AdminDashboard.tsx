@@ -95,7 +95,7 @@ const StudentProgressCard: React.FC<{ user: SessionUser; userProgress: UserProgr
               </div>
               <div className="w-full bg-zinc-200 dark:bg-zinc-700 rounded-full h-2 mt-1">
                 <MotionDiv
-                  className={`h-2 rounded-full ${categoryProgress >= 100 ? 'bg-emerald-500' : 'bg-blue-500'}`}
+                  className={`h-2 rounded-full ${categoryProgress >= 100 ? 'bg-success' : 'bg-blue-500'}`}
                   initial={{ width: 0 }}
                   animate={{ width: `${categoryProgress}%` }}
                   transition={{ duration: 0.5, ease: 'easeOut' }}

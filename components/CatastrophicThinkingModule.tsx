@@ -38,7 +38,7 @@ const ThoughtRecord = () => {
                 {step === 3 && <div><label className="font-bold">4. Evidence For:</label><textarea value={record.evidenceFor} onChange={e => update('evidenceFor', e.target.value)} placeholder="e.g., I got some dates wrong on last week's test." className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all mt-2 h-24" style={{ border: '1.5px solid #E7E5E4' }}/></div>}
                 {step === 4 && <div><label className="font-bold">5. Evidence Against:</label><textarea value={record.evidenceAgainst} onChange={e => update('evidenceAgainst', e.target.value)} placeholder="e.g., I passed my last test. I have 3 months to study." className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all mt-2 h-24" style={{ border: '1.5px solid #E7E5E4' }}/></div>}
                 {step === 5 && <div><label className="font-bold">6. Alternative Thought:</label><textarea value={record.alternative} onChange={e => update('alternative', e.target.value)} placeholder="e.g., History is hard, but if I use flashcards I can pass." className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all mt-2 h-24" style={{ border: '1.5px solid #E7E5E4' }}/></div>}
-                {step === 6 && <div className="space-y-4"><label className="font-bold">7. Re-Rate Emotion:</label>{record.alternative && <div className="p-3 bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 rounded-lg"><p className="text-[10px] font-bold uppercase tracking-wider text-emerald-500 mb-1">Your Alternative Thought</p><p className="text-sm text-emerald-700 dark:text-emerald-300">{record.alternative}</p></div>}<p className="text-sm">Initial Panic: <span className="font-bold text-rose-500">{record.intensity}%</span></p><label className="text-sm">New Panic Level: <span className="font-bold">{record.reRate}%</span></label><input type="range" value={record.reRate} onChange={e => update('reRate', e.target.value)} className="chunky-slider chunky-slider-coral"/>{Number(record.reRate) < Number(record.intensity) && <p className="text-xs text-emerald-600 dark:text-emerald-400 font-medium">Panic reduced by {Number(record.intensity) - Number(record.reRate)}%. The reframe is working.</p>}</div>}
+                {step === 6 && <div className="space-y-4"><label className="font-bold">7. Re-Rate Emotion:</label>{record.alternative && <div className="p-3 bg-successTint dark:bg-success/15 border border-success/30 dark:border-success/40 rounded-lg"><p className="text-[10px] font-bold uppercase tracking-wider text-success mb-1">Your Alternative Thought</p><p className="text-sm text-successDarkText dark:text-success">{record.alternative}</p></div>}<p className="text-sm">Initial Panic: <span className="font-bold text-rose-500">{record.intensity}%</span></p><label className="text-sm">New Panic Level: <span className="font-bold">{record.reRate}%</span></label><input type="range" value={record.reRate} onChange={e => update('reRate', e.target.value)} className="chunky-slider chunky-slider-coral"/>{Number(record.reRate) < Number(record.intensity) && <p className="text-xs text-success dark:text-success font-medium">Panic reduced by {Number(record.intensity) - Number(record.reRate)}%. The reframe is working.</p>}</div>}
              </motion.div>
              </AnimatePresence>
              <div className="flex justify-between mt-4">
@@ -122,9 +122,9 @@ const PassengersOnBus = () => {
 
     // Speed indicator
     const speed = allAcknowledged ? 'Full Speed' : shoutingCount <= 1 ? 'Cruising' : shoutingCount <= 3 ? 'Slowing' : 'Stalled';
-    const speedColor = allAcknowledged ? 'text-emerald-500' : shoutingCount <= 1 ? 'text-emerald-400' : shoutingCount <= 3 ? 'text-amber-500' : 'text-rose-500';
+    const speedColor = allAcknowledged ? 'text-success' : shoutingCount <= 1 ? 'text-success' : shoutingCount <= 3 ? 'text-amber-500' : 'text-rose-500';
     const barWidth = allAcknowledged ? 100 : Math.max(5, Math.round(100 - (shoutingCount / Math.max(1, totalCount)) * 100));
-    const barColor = allAcknowledged ? 'bg-emerald-500' : shoutingCount <= 1 ? 'bg-emerald-400' : shoutingCount <= 3 ? 'bg-amber-500' : 'bg-rose-500';
+    const barColor = allAcknowledged ? 'bg-success' : shoutingCount <= 1 ? 'bg-success' : shoutingCount <= 3 ? 'bg-amber-500' : 'bg-rose-500';
 
     return (
          <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
@@ -192,7 +192,7 @@ const PassengersOnBus = () => {
                         </button>
                         <button
                           onClick={() => handleAcknowledge(p.id)}
-                          className="px-3 py-1.5 text-[11px] font-bold bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-lg hover:bg-emerald-200 dark:hover:bg-emerald-900/60 transition-colors"
+                          className="px-3 py-1.5 text-[11px] font-bold bg-successTint dark:bg-success/15 text-successDarkText dark:text-success rounded-lg hover:bg-success/20 dark:hover:bg-success/25 transition-colors"
                         >
                           Acknowledge
                         </button>
@@ -218,7 +218,7 @@ const PassengersOnBus = () => {
               <motion.div
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="p-4 bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 rounded-xl text-sm text-emerald-700 dark:text-emerald-300 font-medium text-center mb-4"
+                className="p-4 bg-successTint dark:bg-success/15 border border-success/30 dark:border-success/40 rounded-xl text-sm text-successDarkText dark:text-success font-medium text-center mb-4"
               >
                 The passengers are still on the bus — but you're driving. That's defusion.
               </motion.div>

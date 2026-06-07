@@ -129,10 +129,10 @@ const StairsEscalator = () => {
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Which path leads to real learning?</p>
             <div className="grid grid-cols-2 gap-4">
                 <button onClick={() => setChoice('escalator')} className="p-4 rounded-xl text-center font-medium transition-all" style={choice === 'escalator' ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}><strong>The Escalator:</strong> A perfectly clear lecture, re-reading your notes.</button>
-                <button onClick={() => setChoice('stairs')} className="p-4 rounded-xl text-center font-medium transition-all" style={choice === 'stairs' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}><strong>The Stairs:</strong> Struggling with a past paper, trying to explain a topic.</button>
+                <button onClick={() => setChoice('stairs')} className="p-4 rounded-xl text-center font-medium transition-all" style={choice === 'stairs' ? { backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', borderRadius: 14, boxShadow: '3px 3px 0px 0px #3A8D5F', color: '#1F5F3E' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}><strong>The Stairs:</strong> Struggling with a past paper, trying to explain a topic.</button>
             </div>
             {choice &&
-            <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6 p-4 rounded-xl text-sm" style={choice === 'stairs' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' }}>
+            <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6 p-4 rounded-xl text-sm" style={choice === 'stairs' ? { backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', boxShadow: '3px 3px 0px 0px #3A8D5F', color: '#1F5F3E' } : { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' }}>
                 {choice === 'escalator' && <p><strong>You chose the escalator.</strong> It feels smooth and effortless. You arrive at the top (the answer) quickly. But your muscles (your brain) did no work. The feeling of fluency is high, but long-term learning is low.</p>}
                 {choice === 'stairs' && <p><strong>You chose the stairs.</strong> It's slow and feels hard. You might stumble (make mistakes). But this effort is what strengthens your cardiovascular system (your long-term memory). The feeling of learning is low, but the actual result is high.</p>}
             </motion.div>}
@@ -286,7 +286,7 @@ const ScenarioDiagnosis = () => {
     { key: 'zpd', label: 'Wrong Zone', desc: 'Too easy or too hard', color: 'bg-blue-500 text-white', borderActive: 'border-blue-500' },
     { key: 'extraneous', label: 'Too Much Noise', desc: 'Extraneous load is high', color: 'bg-rose-500 text-white', borderActive: 'border-rose-500' },
     { key: 'desirable', label: 'Fake Friction', desc: 'No desirable difficulties', color: 'bg-amber-500 text-white', borderActive: 'border-amber-500' },
-    { key: 'optimal', label: 'Optimized', desc: 'All three pillars aligned', color: 'bg-emerald-500 text-white', borderActive: 'border-emerald-500' },
+    { key: 'optimal', label: 'Optimized', desc: 'All three pillars aligned', color: 'bg-success text-white', borderActive: 'border-success' },
   ];
 
   const [current, setCurrent] = useState(0);
@@ -315,7 +315,7 @@ const ScenarioDiagnosis = () => {
             onClick={() => setCurrent(i)}
             className={`flex-1 h-2 rounded-full transition-all ${
               revealed.has(i)
-                ? answers[i] === scenarios[i].answer ? 'bg-emerald-500' : 'bg-rose-400'
+                ? answers[i] === scenarios[i].answer ? 'bg-success' : 'bg-rose-400'
                 : i === current ? 'bg-[#F26B1F]/70' : 'bg-zinc-200 dark:bg-zinc-700'
             }`}
           />
@@ -344,9 +344,9 @@ const ScenarioDiagnosis = () => {
 
               let btnStyle: React.CSSProperties = { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' };
               let btnTextColor = '';
-              if (isRevealed && isChosen && isCorrect) { btnStyle = { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669' }; btnTextColor = '#064E3B'; }
+              if (isRevealed && isChosen && isCorrect) { btnStyle = { backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', borderRadius: 14, boxShadow: '3px 3px 0px 0px #3A8D5F' }; btnTextColor = '#1F5F3E'; }
               else if (isRevealed && isChosen && !isCorrect) { btnStyle = { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626' }; btnTextColor = '#7F1D1D'; }
-              else if (isRevealed && isCorrect) { btnStyle = { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', opacity: 0.7 }; btnTextColor = '#064E3B'; }
+              else if (isRevealed && isCorrect) { btnStyle = { backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', borderRadius: 14, boxShadow: '3px 3px 0px 0px #3A8D5F', opacity: 0.7 }; btnTextColor = '#1F5F3E'; }
 
               return (
                 <button
@@ -370,11 +370,11 @@ const ScenarioDiagnosis = () => {
               animate={{ opacity: 1, y: 0 }}
               className={`p-4 rounded-xl border ${
                 answers[current] === scenarios[current].answer
-                  ? 'bg-emerald-50 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800/40'
+                  ? 'bg-successTint dark:bg-success/15 border-success/30 dark:border-success/40'
                   : 'bg-rose-50 dark:bg-rose-950/20 border-rose-200 dark:border-rose-800/40'
               }`}
             >
-              <p className={`text-xs font-bold mb-1 ${answers[current] === scenarios[current].answer ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
+              <p className={`text-xs font-bold mb-1 ${answers[current] === scenarios[current].answer ? 'text-success dark:text-success' : 'text-rose-600 dark:text-rose-400'}`}>
                 {answers[current] === scenarios[current].answer ? 'Correct' : 'Not quite'}
               </p>
               <p className="text-sm text-zinc-700 dark:text-zinc-300">{scenarios[current].explanation}</p>
@@ -400,7 +400,7 @@ const ScenarioDiagnosis = () => {
             Next
           </button>
         ) : allDone ? (
-          <span className="px-4 py-2 text-xs font-bold text-emerald-600 dark:text-emerald-400">
+          <span className="px-4 py-2 text-xs font-bold text-success dark:text-success">
             {correct}/{scenarios.length} correct
           </span>
         ) : null}
@@ -472,8 +472,8 @@ const ConfidenceRetentionParadox = () => {
         { label: 'Exam shock', x1: 0.66, x2: 1, color: '#ef4444' },
     ];
     const activePhases = [
-        { label: 'Feels hard', x1: 0, x2: 0.33, color: '#6ee7b7' },
-        { label: 'Building', x1: 0.33, x2: 0.66, color: '#34d399' },
+        { label: 'Feels hard', x1: 0, x2: 0.33, color: COLORS.success },
+        { label: 'Building', x1: 0.33, x2: 0.66, color: COLORS.success },
         { label: 'Exam ready', x1: 0.66, x2: 1, color: COLORS.success },
     ];
 
@@ -562,7 +562,7 @@ const ConfidenceRetentionParadox = () => {
                             <Chart confidence={passiveConfidence} retention={passiveRetention} phases={passivePhases}
                                 areaColor="#ef4444" areaId="passive-grad" areaData={passiveConfidence} label="Passive Re-reading" />
                         </div>
-                        <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
+                        <div className="rounded-lg border border-success/30 dark:border-success/40 bg-successTint/50 dark:bg-success/15 p-3">
                             <Chart confidence={activeConfidence} retention={activeRetention} phases={activePhases}
                                 areaColor={COLORS.success} areaId="active-grad" areaData={activeRetention} label="Active Recall" />
                         </div>
