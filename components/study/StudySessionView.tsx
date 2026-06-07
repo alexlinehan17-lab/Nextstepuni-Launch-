@@ -13,7 +13,7 @@ import { doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
 import { type SessionUser } from '../../utils/authUtils';
 import { type StudentSubjectProfile } from '../subjectData';
-import { type UserProgress, type StrategyMasteryMap, type MasteryTier } from '../../types';
+import { type UserProgress, type StrategyMasteryMap, type MasteryTier, type StudyReflection } from '../../types';
 import { type CourseData } from '../Library';
 import { STRATEGY_REGISTRY, PROMPT_AUTO_DISMISS_SECONDS } from '../../studySessionData';
 import { type StreakData } from '../../hooks/useStreak';
@@ -22,6 +22,7 @@ import { getSubjectColor, getSubjectHex, DURATION_PRESETS } from '../../studySes
 import StrategyPickerStep from './StrategyPickerStep';
 import ReflectionModal from '../ReflectionModal';
 import { QUICK_DEBRIEF_POINTS, FULL_REFLECTION_POINTS } from '../ReflectionModal';
+import StudyJournalModal from '../StudyJournalModal';
 import { type DebriefEntry } from '../StudyDebrief';
 import { type WeeklyChallengeState } from '../../hooks/useWeeklyChallenge';
 import { useTeachBack } from '../../hooks/useTeachBack';
@@ -159,6 +160,16 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const [_debriefOpen, setDebriefOpen] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
 
+  // Reflection journal (view past reflections)
+  const [reflections, setReflections] = useState<StudyReflection[]>([]);
+  const [journalOpen, setJournalOpen] = useState(false);
+  const loadReflections = () => {
+    if (!user.uid) return;
+    getDoc(doc(db, 'progress', user.uid))
+      .then(snap => setReflections((snap.data()?.reflections as StudyReflection[] | undefined) ?? []))
+      .catch((e) => logError('StudySessionView.loadReflections', e));
+  };
+
   // XP popup state
 
   // Previous debrief notes — surface "whatWorked" back to the student
@@ -170,6 +181,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       if (cancelled) return;
       const data = snap.data();
       if (data?.studyDebriefs) setPrevDebriefs(data.studyDebriefs);
+      if (data?.reflections) setReflections(data.reflections as StudyReflection[]);
     }).catch((e) => logError('StudySessionView.loadPrevDebriefs', e));
     return () => { cancelled = true; };
   }, [user.uid]);
@@ -380,14 +392,24 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       <div className="min-h-screen bg-[#FAFBF6] dark:bg-zinc-950 flex flex-col">
         {/* ── Editorial header — replaces the old teal hero banner ── */}
         <div className="shrink-0 px-6 pt-6 max-w-md mx-auto w-full">
-          <button
-            onClick={onBack}
-            aria-label="Back"
-            className="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-[#EDEBE8] hover:bg-[#F8F4EC] transition-colors"
-            style={{ boxShadow: '0 1px 2px rgba(28,25,23,0.04)' }}
-          >
-            <ArrowLeft size={18} className="text-[#1a1a1a]" />
-          </button>
+          <div className="flex items-center justify-between">
+            <button
+              onClick={onBack}
+              aria-label="Back"
+              className="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-[#EDEBE8] hover:bg-[#F8F4EC] transition-colors"
+              style={{ boxShadow: '0 1px 2px rgba(28,25,23,0.04)' }}
+            >
+              <ArrowLeft size={18} className="text-[#1a1a1a]" />
+            </button>
+            <button
+              onClick={() => { loadReflections(); setJournalOpen(true); }}
+              className="inline-flex items-center gap-1.5 h-10 px-3.5 rounded-xl bg-white border border-[#EDEBE8] hover:bg-[#F8F4EC] transition-colors text-[13px] font-semibold text-[#1a1a1a]"
+              style={{ boxShadow: '0 1px 2px rgba(28,25,23,0.04)' }}
+            >
+              <BookOpen size={15} className="text-[#1a1a1a]" />
+              My reflections{reflections.length > 0 ? ` (${reflections.length})` : ''}
+            </button>
+          </div>
 
           <div className="flex items-center gap-4 md:gap-5 mt-7">
             {/* Painted blob + hand-drawn study icon */}
@@ -718,6 +740,13 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
         <PointsExplainer
           isOpen={!dismissedGuides?.['points-explainer']}
           onDismiss={() => onDismissGuide?.('points-explainer')}
+        />
+
+        {/* Reflection journal — view past reflections */}
+        <StudyJournalModal
+          isOpen={journalOpen}
+          onClose={() => setJournalOpen(false)}
+          reflections={reflections}
         />
       </div>
     );
