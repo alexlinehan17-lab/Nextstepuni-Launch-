@@ -615,8 +615,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
           />
           <SectionCard
             eyebrow="Explore"
-            title="Innovation Zone"
-            subtitle="Eight tools to plan, understand, and track."
+            title="Launchpad"
+            subtitle="Tools to plan, understand, and track."
             icon={<InnovationZoneIcon />}
             onClick={onGoToInnovationZone}
           />

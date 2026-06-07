@@ -65,7 +65,7 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
     { id: 'gamification-hub', label: 'Training', icon: Dumbbell, action: onGoToTrainingHub },
     { id: 'study-session', label: 'Study', icon: Timer, action: onGoToStudy },
     { id: 'my-journey', label: 'Journey', icon: Mountain, action: onGoToJourney },
-    { id: 'innovation-zone', label: 'Innovate', icon: Rocket, action: onGoToInnovationZone },
+    { id: 'innovation-zone', label: 'Launch', icon: Rocket, action: onGoToInnovationZone },
     { id: 'profile', label: 'Profile', icon: User, action: onOpenProfile },
   ];
 

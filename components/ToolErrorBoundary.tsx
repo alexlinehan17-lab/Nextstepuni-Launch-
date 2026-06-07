@@ -59,7 +59,7 @@ class ToolErrorBoundary extends React.Component<ToolErrorBoundaryProps, ToolErro
               className="px-6 py-2.5 rounded-xl text-sm font-semibold text-white transition-colors"
               style={{ backgroundColor: COLORS.accent }}
             >
-              Back to Innovation Zone
+              Back to the Launchpad
             </button>
           </div>
         </div>

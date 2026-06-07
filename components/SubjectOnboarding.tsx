@@ -279,8 +279,8 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
                   <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-3">Set Up Your Subjects</h2>
                   <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed max-w-sm mx-auto">
                     {existingProfile?.curriculumLevel === 'junior'
-                      ? 'Tell us about your subjects to power all Innovation Zone tools. This takes about 2 minutes.'
-                      : 'Tell us about your Leaving Cert subjects to power all Innovation Zone tools. This takes about 2 minutes.'}
+                      ? 'Tell us about your subjects to power all Launchpad tools. This takes about 2 minutes.'
+                      : 'Tell us about your Leaving Cert subjects to power all Launchpad tools. This takes about 2 minutes.'}
                   </p>
                 </div>
               </MotionDiv>
