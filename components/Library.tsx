@@ -207,7 +207,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
     { icon: Mountain, label: 'My Journey', onClick: onGoToJourney, active: false },
     { icon: BarChart3, label: 'Dashboard', onClick: onGoToDashboard, active: false },
     { icon: Compass, label: 'Learning Paths', onClick: onGoToLearningPaths, active: false },
-    { icon: Rocket, label: 'Innovation Zone', onClick: onGoToInnovationZone, active: false },
+    { icon: Rocket, label: 'Launchpad', onClick: onGoToInnovationZone, active: false },
   ];
 
   const calculateCategoryProgress = () => {

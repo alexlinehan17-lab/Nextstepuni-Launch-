@@ -80,7 +80,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
     { icon: Timer, label: 'Study Session', onClick: onGoToStudy ?? (() => {}), active: false },
     { icon: BarChart3, label: 'Dashboard', onClick: onGoToDashboard, active: false },
     { icon: Compass, label: 'Learning Paths', onClick: onGoToLearningPaths, active: false },
-    { icon: Rocket, label: 'Innovation Zone', onClick: onGoToInnovationZone, active: false },
+    { icon: Rocket, label: 'Launchpad', onClick: onGoToInnovationZone, active: false },
   ];
   
   // Aggregate + per-category progress for the Modules hero
