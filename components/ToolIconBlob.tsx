@@ -15,7 +15,7 @@
  *   - IZ active-tool ToolHeader: size=108
  */
 import React from 'react';
-import { Users, Briefcase, Telescope, type LucideIcon } from 'lucide-react';
+import { Users, Briefcase, type LucideIcon } from 'lucide-react';
 
 export type ToolIconKey =
   | 'journey'
@@ -135,10 +135,9 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
   },
   'future-finder-revamped': {
     blob: '#ECBBCC',
+    iconPath: '/assets/tools/future-finder-revamped.png',
     blobPath: 'M 8 26 Q 0 50 8 78 Q 22 96 54 96 Q 88 94 96 64 Q 100 32 80 10 Q 56 -2 28 8 Q 12 16 8 26 Z',
     iconScale: 1.0,
-    icon: Telescope,
-    iconColor: '#A33A63',
   },
   'your-possible-life': {
     blob: '#BCD3E0',
