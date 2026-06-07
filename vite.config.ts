@@ -42,6 +42,16 @@ export default defineConfig(() => {
                 handler: 'NetworkFirst',
                 options: { cacheName: 'app-chunks', expiration: { maxAgeSeconds: 60 * 60 * 24 * 7 } },
               },
+              // Tool icons — small PNGs that get re-arted occasionally. Must come
+              // BEFORE the broad CacheFirst rule below: CacheFirst pins the first
+              // cached copy forever, so a re-deployed icon at the same URL never
+              // updated. StaleWhileRevalidate serves cache instantly but refetches
+              // in the background, so new icon art self-updates on the next load.
+              {
+                urlPattern: /\/assets\/tools\/.*\.png$/i,
+                handler: 'StaleWhileRevalidate',
+                options: { cacheName: 'tool-icons-v1', expiration: { maxEntries: 60, maxAgeSeconds: 60 * 60 * 24 * 30 } },
+              },
               // Static assets and 3D models — cache first
               {
                 urlPattern: /\/(assets|models)\/.*\.(glb|png|jpg|svg|webp|woff2?)$/i,
