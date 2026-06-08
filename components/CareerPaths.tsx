@@ -36,11 +36,30 @@ const euro = (k: number) => `€${k}k`;
 /** Neutral light panel for "the catch" — not dark, not red, not warm-cream. */
 const NEUTRAL_PANEL = '#F1F0ED';
 
-/** Courses that lead to this career — computed at runtime from the real CAO catalog. */
-const coursesFor = (c: CareerCard): CAOCourse[] =>
-  CAO_COURSES.filter((course) => course.careerPaths.some((cp) => c.matchStrings.includes(cp)))
-    .sort((a, b) => b.level - a.level || b.typicalPoints - a.typicalPoints)
-    .slice(0, 6);
+/** One "way in" to a career — a route grouping of real CAO courses. */
+export interface RouteDoor { key: string; label: string; sub: string; courses: CAOCourse[] }
+
+/**
+ * Group the real CAO courses that lead to this career into parallel routes —
+ * the Level-8 degree, the PLC / Level 6–7 ladder, and the apprenticeship — so a
+ * high-points number never silently hides the lower-barrier way in (Gottfredson
+ * circumscription: a field is sacrificed first, by perceived points ceiling).
+ * Every route that has ANY course is guaranteed a slot — route diversity by
+ * construction, not "top 6 by level then points" (which buried the back doors).
+ * Degree courses are sorted LOWEST points first so the most reachable L8 shows.
+ */
+export const coursesByRoute = (c: CareerCard): RouteDoor[] => {
+  const all = CAO_COURSES.filter((course) => course.careerPaths.some((cp) => c.matchStrings.includes(cp)));
+  const pts = (co: CAOCourse) => co.typicalPoints || 0;
+  const appr = all.filter((co) => co.pathwayType === 'apprenticeship').sort((a, b) => pts(a) - pts(b));
+  const ladder = all.filter((co) => co.pathwayType !== 'apprenticeship' && co.level <= 7).sort((a, b) => a.level - b.level || pts(a) - pts(b));
+  const degree = all.filter((co) => co.pathwayType !== 'apprenticeship' && co.level >= 8).sort((a, b) => pts(a) - pts(b));
+  const doors: RouteDoor[] = [];
+  if (degree.length) doors.push({ key: 'degree', label: 'CAO degree', sub: 'Level 8', courses: degree.slice(0, 3) });
+  if (ladder.length) doors.push({ key: 'ladder', label: 'PLC / Level 6–7, then top up', sub: 'lower points in — same destination', courses: ladder.slice(0, 3) });
+  if (appr.length) doors.push({ key: 'appr', label: 'Apprenticeship', sub: 'earn while you learn — no CAO points', courses: appr.slice(0, 3) });
+  return doors;
+};
 
 /** A tappable "course that leads here" row → opens the course page (white bordered row). */
 const CourseRow: React.FC<{ course: CAOCourse; wd: ColorWorld }> = ({ course, wd }) => {
@@ -159,7 +178,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
     const CareerIcon = careerIcon(card.field, card.iconKey);
     const isSaved = state.savedIds.includes(card.id);
     const bi = BEAT_IDX[beat];
-    const courses = coursesFor(card);
+    const doors = coursesByRoute(card);
     return (
       <div className="w-full max-w-xl mx-auto pb-10">
         <button onClick={() => setCardId(null)} className="flex items-center gap-1.5 text-[13px] font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-4"><ArrowLeft size={15} /> All careers</button>
@@ -252,10 +271,33 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
                       ))}
                     </div>
 
-                    {courses.length > 0 && (
+                    {doors.length > 0 && (
                       <>
-                        <Eyebrow>Courses that lead here</Eyebrow>
-                        <div className="space-y-2 mb-6">{courses.map((co) => <CourseRow key={co.code} course={co} wd={wd} />)}</div>
+                        <Eyebrow>More than one way in</Eyebrow>
+                        <p className="text-[13px] leading-snug mb-3" style={{ color: MUTED }}>
+                          A points total never closes a field. These routes all lead to the same place — the lower-points ones count just as much.
+                        </p>
+                        {/* Parallel routes on a muted rail with the sanctioned chevron idiom
+                            (mirrors the College Compass trail rail — not a coloured card border). */}
+                        <div className="relative pl-7 mb-6">
+                          <div className="absolute left-[8px] top-3 bottom-3 w-0.5" style={{ backgroundColor: '#d0cdc8' }} />
+                          <div className="space-y-2.5">
+                            {doors.map((d) => (
+                              <div key={d.key} className="relative">
+                                <span className="absolute -left-[26px] top-3.5" aria-hidden="true">
+                                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F26B1F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+                                </span>
+                                <div className="rounded-2xl p-3.5" style={{ backgroundColor: '#fff', border: '2px solid #1a1a1a' }}>
+                                  <div className="flex items-baseline justify-between gap-2 mb-2">
+                                    <p className="text-[13.5px] font-bold" style={{ color: INK }}>{d.label}</p>
+                                    <span className="text-[11px] font-semibold text-right shrink-0" style={{ color: wd.deep }}>{d.sub}</span>
+                                  </div>
+                                  <div className="space-y-2">{d.courses.map((co) => <CourseRow key={co.code} course={co} wd={wd} />)}</div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
                       </>
                     )}
 
