@@ -58,11 +58,18 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
   const [cardId, setCardId] = useState<string | null>(null);
   const [beat, setBeat] = useState<Beat>('gist');
   const [ticks, setTicks] = useState<boolean[]>([]);
+  // Higher / Ordinary filter — 'common' cards show at both levels; level-specific
+  // ones (e.g. HL-only de Moivre) show only at their level.
+  const [levelFilter, setLevelFilter] = useState<'higher' | 'ordinary'>('higher');
+  const matchesLevel = (c: RecoveryCard) => c.level === 'common' || c.level === levelFilter;
 
   const recovered = useMemo(() => new Set(state.recoveredTopicIds), [state.recoveredTopicIds]);
   const shaky = useMemo(() => new Set(state.shakyTopicIds), [state.shakyTopicIds]);
 
-  const available = useMemo(() => subjectsWithContent(), []);
+  // Subjects that have at least one card at the selected level (count = visible cards).
+  const available = useMemo(() => subjectsWithContent()
+    .map(s => ({ ...s, count: cardsForSubject(s.subjectId).filter(c => c.level === 'common' || c.level === levelFilter).length }))
+    .filter(s => s.count > 0), [levelFilter]);
   const studentSet = useMemo(
     () => new Set((studentSubjects ?? []).map(s => s.toLowerCase())),
     [studentSubjects],
@@ -75,7 +82,7 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
     [studentSubjects, available],
   );
 
-  const subjectCards = subjectId ? cardsForSubject(subjectId) : [];
+  const subjectCards = subjectId ? cardsForSubject(subjectId).filter(matchesLevel) : [];
   const card = cardId ? RECOVERY_CARDS.find(c => c.id === cardId) ?? null : null;
   const totalCards = RECOVERY_CARDS.length;
   const recoveredCount = recovered.size;
@@ -190,6 +197,22 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
           one quick topic at a time. No catch-up is too small.
         </p>
 
+        {/* Higher / Ordinary level filter */}
+        <div className="flex items-center gap-2.5 mb-5">
+          <span className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: '#9e9186' }}>Your level</span>
+          <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50">
+            {(['higher', 'ordinary'] as const).map(lv => (
+              <button
+                key={lv}
+                onClick={() => setLevelFilter(lv)}
+                className={`px-4 py-1.5 rounded-lg text-[13px] transition-all ${levelFilter === lv ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-semibold shadow-sm' : 'text-zinc-500 dark:text-zinc-400'}`}
+              >
+                {lv === 'higher' ? 'Higher' : 'Ordinary'}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* Progress (only once they've recovered something) */}
         {recoveredCount > 0 && (
           <div className="rounded-2xl p-5 mb-6" style={{ backgroundColor: CYAN_TINT }}>
@@ -212,7 +235,7 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
 
         <div className="space-y-3">
           {available.map(s => {
-            const cards = cardsForSubject(s.subjectId);
+            const cards = cardsForSubject(s.subjectId).filter(matchesLevel);
             const done = cards.filter(c => recovered.has(c.topicId)).length;
             const isMine = studentSet.has(s.subjectLabel.toLowerCase());
             return (
