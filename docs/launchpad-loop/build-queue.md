@@ -5,6 +5,8 @@ _The loop pops the top **ready** item, builds it end-to-end, runs the gate, comm
 
 ## Loop status
 
+**⏸ PAUSED (2026-06-08): the user-directed exam-content track is COMPLETE.** Phase 1 download (`fd51025`), phase 2 Catch-Up Lane content + HL/OL filter (`5469ddf`, `a0a9232`), phase 3 Command-Word Reflex content + multi-word cues + HL/OL filter (`cc76760`). All on `main`, none deployed. Both tools now filter by Higher/Ordinary. Irish still held. The ranked queue (#9 War Room, #10 How They Did It, …) is NOT auto-resumed — awaiting the user's direction (resume queue / deploy / something else).
+
 **Mode:** autonomous, self-paced (user, 2026-06-08) — work down the ready queue, gate + independently verify + commit each to `main`; the user reviews at deploy time. Pause only for irreversible/outward actions.
 
 - **DONE:** #2 First-Week Back (`3b02b5f`); #1 Open Door B4-safe (`c77bd01`); #3 Schedule the Evidence (`8c3b772`); #4 `career-paths` More than one way in (`91d8ba3`, gate green, independent review SHIP). All on `main`, not yet deployed.
