@@ -331,7 +331,7 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
                           ? <RotateCcw size={18} style={{ color: CYAN }} className="shrink-0" />
                           : <Circle size={20} className="text-zinc-300 dark:text-zinc-600 shrink-0" />}
                       <div className="flex-1 min-w-0">
-                        <p className={`text-[15px] font-medium ${isRec ? 'text-zinc-400 dark:text-zinc-500' : 'text-zinc-800 dark:text-zinc-100'}`}>{c.topicLabel}</p>
+                        <p className={`text-[15px] font-medium ${isRec ? 'text-zinc-400 dark:text-zinc-500' : 'text-zinc-800 dark:text-zinc-100'}`}>{c.focus ?? c.topicLabel}</p>
                         {isShaky && <p className="text-[11px]" style={{ color: CYAN_DARK_TEXT }}>Marked to revisit</p>}
                       </div>
                       {isRec

@@ -39,6 +39,12 @@ export interface RecoveryCard {
   topicId: string;
   subjectLabel: string;
   topicLabel: string;
+  /**
+   * Optional short, specific row label shown in the topic list when a subtopic
+   * has more than one card (e.g. two "Calculus" cards → "Differentiation" vs
+   * "Slope from a graph"). Falls back to topicLabel when absent.
+   */
+  focus?: string;
   level: RecoveryLevel;
   /** "The 90-second version" — the core idea, plain language. */
   gist: string;

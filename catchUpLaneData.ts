@@ -38,6 +38,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'bio-enzymes',
     subjectId: 'biology', topicId: 'biology-1-1',
     subjectLabel: 'Biology', topicLabel: 'Cell Metabolism', level: 'common',
+    focus: 'Enzymes',
     gist: 'Enzymes are biological catalysts — proteins that speed up reactions without being used up. Each enzyme is specific to its substrate (the lock-and-key idea). Activity rises with temperature up to an optimum, then falls sharply as the enzyme denatures. pH affects them in the same way.',
     oneMove: {
       label: "Say 'denatures', never 'dies'",
@@ -106,6 +107,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'bio-ecology-principles',
     subjectId: 'biology', topicId: 'biology-0-3',
     subjectLabel: 'Biology', topicLabel: 'General Principles of Ecology', level: 'common',
+    focus: 'Ecology basics',
     gist: 'An ecosystem is the living organisms in an area plus their non-living environment. Energy enters through producers (plants, by photosynthesis) and passes along a food chain to consumers. About 90% of the energy is lost at each step (as heat, movement and waste), so only ~10% passes on.',
     oneMove: {
       label: 'Use the 10% rule to explain short food chains',
@@ -295,6 +297,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'maths-calculus-differentiation',
     subjectId: 'mathematics', topicId: 'mathematics-4-1',
     subjectLabel: 'Mathematics', topicLabel: 'Calculus', level: 'common',
+    focus: 'Differentiation',
     gist: 'Differentiation finds the slope of a curve at any point. The derivative f\'(x) tells you the rate of change. Set f\'(x) = 0 to find turning points (local max/min), and use the second derivative f\'\'(x) = 0 to find the point of inflection. On Paper 1 this shows up as: differentiate a function, find the tangent to a curve at a point, or find a max/min. The tangent at x = a uses slope m = f\'(a) and the point (a, f(a)) in y - y1 = m(x - x1).',
     oneMove: {
       label: 'Sub the x-value into f\'(x), not f(x), for slope',
@@ -329,6 +332,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'maths-complex-numbers-demoivre',
     subjectId: 'mathematics', topicId: 'mathematics-3-3',
     subjectLabel: 'Mathematics', topicLabel: 'Complex Numbers', level: 'higher',
+    focus: 'de Moivre’s theorem',
     gist: 'A complex number a + bi can be written in polar form r(cos T + i sin T), where r = root(a^2 + b^2) is the modulus and T is the argument. De Moivre\'s theorem says [r(cos T + i sin T)]^n = r^n(cos nT + i sin nT) - the fast way to raise a complex number to a power. On Paper 1 (Higher) you convert to polar, apply de Moivre, then convert back to a + bi form.',
     oneMove: {
       label: 'Put the angle in the correct quadrant before using de Moivre',
@@ -380,6 +384,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'maths-trigonometry-sine-cosine-rule',
     subjectId: 'mathematics', topicId: 'mathematics-1-2',
     subjectLabel: 'Mathematics', topicLabel: 'Trigonometry', level: 'common',
+    focus: 'Sine & cosine rule',
     gist: 'In any triangle: the Sine Rule a/sin A = b/sin B relates sides to opposite angles; the Cosine Rule a^2 = b^2 + c^2 - 2bc cos A handles two sides and the included angle (or all three sides). The area of a triangle is (1/2)ab sin C. Use the Cosine Rule when no angle-opposite-side pair is known; otherwise the Sine Rule. These appear on Paper 2 nearly every year.',
     oneMove: {
       label: 'Sine Rule for an angle? Check the second (obtuse) solution',
@@ -397,6 +402,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'maths-probability-expected-value',
     subjectId: 'mathematics', topicId: 'mathematics-0-1',
     subjectLabel: 'Mathematics', topicLabel: 'Concepts of Probability', level: 'common',
+    focus: 'Expected value',
     gist: 'Expected value is the long-run average outcome: multiply each possible value by its probability and add them, E(X) = sum of (value x probability). A game is fair when the expected return equals the cost to play (equivalently, expected net gain = 0). Other staples: mutually exclusive events have P(A and B) = 0 so P(A or B) = P(A) + P(B); independent events have P(A and B) = P(A) x P(B). Probability appears on Paper 2 nearly every year.',
     oneMove: {
       label: 'Compare the expected return to the cost before calling a game \'fair\'',
@@ -414,6 +420,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'maths-volume-sphere-cone',
     subjectId: 'mathematics', topicId: 'mathematics-2-3',
     subjectLabel: 'Mathematics', topicLabel: 'Length, Area & Volume', level: 'common',
+    focus: 'Volume: sphere & cone',
     gist: 'Volume questions on Paper 2 combine standard solids: sphere (4/3)pi r^3, cone (1/3)pi r^2 h, cylinder pi r^2 h. Composite-solid problems set the total volume equal to the sum (or difference) of parts - for example, melting a sphere and recasting it as cones means equal volumes. All the formulas are in the Formulae and Tables booklet, so the marks are for choosing the right one and substituting correctly. This topic appears on Paper 2 most years.',
     oneMove: {
       label: 'Use the radius, not the diameter, in the formula',
@@ -432,6 +439,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'geo-tectonic-cycle',
     subjectId: 'geography', topicId: 'geography-0-0',
     subjectLabel: 'Geography', topicLabel: 'The Tectonic Cycle', level: 'common',
+    focus: 'Plate boundaries',
     gist: 'The Earth\'s crust is broken into plates that move on the semi-molten layer of the upper mantle below, dragged by convection currents. Where plates pull apart (constructive), push together (destructive) or slide past each other (transform), you get earthquakes, volcanoes and fold mountains. Because these events cluster along plate boundaries, plate-tectonic theory explains why they are NOT scattered randomly around the globe.',
     oneMove: {
       label: 'Link the hazard to the boundary, don\'t just describe it',
@@ -449,6 +457,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'geo-rock-cycle-human-interaction',
     subjectId: 'geography', topicId: 'geography-0-1',
     subjectLabel: 'Geography', topicLabel: 'The Rock Cycle', level: 'common',
+    focus: 'Rock cycle & people',
     gist: 'Rocks are continuously recycled: igneous rock forms when magma/lava cools, weathering and erosion break rock into sediment that compacts into sedimentary rock, and heat plus pressure change rock into metamorphic rock, which can melt back to magma. Humans interact with this cycle through mining, extraction of building materials, oil/gas exploitation, and geothermal energy production — a high-value exam theme.',
     oneMove: {
       label: 'Name the interaction AND a place, then examine the impact',
@@ -602,6 +611,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'bio-photosynthesis-absorption',
     subjectId: 'biology', topicId: 'biology-1-1',
     subjectLabel: 'Biology', topicLabel: 'Cell Metabolism', level: 'higher',
+    focus: 'Chlorophyll absorption (graph)',
     gist: 'Photosynthesis happens in the chloroplast, where the pigment chlorophyll absorbs light energy — but not all colours equally. Chlorophyll a and b absorb mainly in the blue/violet and red parts of the spectrum and absorb green light least, so green is reflected (which is why leaves look green). The absorbed energy excites electrons that drive the light stage.',
     oneMove: {
       label: 'Read the peaks — and remember green is REFLECTED, not absorbed',
@@ -624,6 +634,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'eng-comprehending-gravel-heart',
     subjectId: 'english', topicId: 'english-10-0',
     subjectLabel: 'English', topicLabel: 'Reading & comprehension', level: 'higher',
+    focus: 'Gravel Heart (Gurnah)',
     gist: 'Question A on Paper 1 (50 marks) is close reading, not opinion. You are asked for insights (into a character or idea), your own developed response to a view, and the writer’s style/language features. Marks live in PRECISE points that are anchored to the text — make the point, quote or reference the line that proves it, then explain its effect.',
     oneMove: {
       label: 'Anchor every point to the text — quote, then explain the effect',
@@ -683,6 +694,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'geography-2022-hl-forest-cover-barchart',
     subjectId: 'geography', topicId: 'geography-2-0',
     subjectLabel: 'Geography', topicLabel: 'Geographical Skills', level: 'higher',
+    focus: 'Forest cover (bar chart)',
     gist: 'Part One short-answer questions on a graph are pure data-reading: every mark is sitting in the figure if you read the axes and the question wording exactly. A bar chart gives you a category axis (the countries) and a value axis (here, % of land under forest, 0-70). Three moves cover almost every variant: COMPARE (count how many bars clear a reference line, e.g. the EU average), RELATE (find a bar that is double / half / equal to another), and CALCULATE (work out an average or a difference). The trap is the reference category: an EU Average bar is shown for comparison but is NOT one of the countries, so it is excluded when you are asked to average \'the countries shown\'. Read the value off the top of each bar, not the gridline nearest it.',
     oneMove: {
       label: 'The exam move',
@@ -701,6 +713,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'geography-2022-hl-irelands-progress-infographic',
     subjectId: 'geography', topicId: 'geography-2-0',
     subjectLabel: 'Geography', topicLabel: 'Geographical Skills', level: 'higher',
+    focus: 'Ireland’s Progress (infographic)',
     gist: 'A graphical-interpretation question hands you an infographic and tests whether you can extract a specific figure and do simple comparison and arithmetic on it. This CSO \'Measuring Ireland\'s Progress\' infographic ranks Ireland among the 27 EU states on three metrics, each shown as a row: a ranked strip from EU27 Lowest (rank 27) to EU27 Highest (rank 1), with the named lowest country, Ireland\'s own value, and the named highest country. Read each row separately. The marks come from: LIFT a single value straight off the row (Ireland\'s health spend); SPOT a country that appears at the same rank in more than one row; and SUBTRACT the highest from the lowest in a row. Watch the unit type printed on each row — persons vs % of GDP vs per 1,000 population — so you don\'t mix figures from different rows.',
     oneMove: {
       label: 'The exam move',
@@ -720,6 +733,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'mathematics-2023-ol-scatterplot-correlation',
     subjectId: 'mathematics', topicId: 'mathematics-0-6',
     subjectLabel: 'Mathematics', topicLabel: 'Analysing & Interpreting Data', level: 'ordinary',
+    focus: 'Correlation (scatter graph)',
     gist: 'The correlation coefficient r is a single number from -1 to +1 that captures two things about a scatterplot at once: DIRECTION and STRENGTH. The SIGN gives direction - positive means the cloud of points slopes up (as x rises, y rises), negative means it slopes down. The SIZE (how close |r| is to 1) gives strength - the tighter the points hug a straight line, the closer r is to 1 or -1; a loose, scattered cloud sits nearer 0. So r = 0.95 is a strong upward line, r = -0.95 is an equally strong downward line, and r = 0.6 is a weaker (looser) upward trend. You read the picture before you reach for a number: first ask \'up or down?\' to fix the sign, then ask \'tight or loose?\' to fix the size.',
     oneMove: {
       label: 'Sign first, then strength',
@@ -738,6 +752,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'mathematics-2023-ol-cosine-rule-triangle',
     subjectId: 'mathematics', topicId: 'mathematics-1-2',
     subjectLabel: 'Mathematics', topicLabel: 'Trigonometry', level: 'ordinary',
+    focus: 'Cosine rule (triangle)',
     gist: 'When a triangle is NOT right-angled and you know all three sides but want an angle, the Cosine Rule is the tool: cos A = (b^2 + c^2 - a^2) / (2bc), where the angle you want sits opposite the side you label \'a\', and \'b\' and \'c\' are the two sides that meet AT that angle. The single most common slip is mislabelling: students plug the three numbers in without checking which side is actually opposite the wanted angle. The diagram is what tells you that. Find the angle\'s vertex, see which two sides touch it (those are b and c, on the bottom of the fraction), and the remaining side - the one across the triangle from the angle - is \'a\', the one that gets subtracted on top. Once cos A is a number, finish with the inverse cosine, cos^-1, on your calculator (in degrees mode) to recover the angle.',
     oneMove: {
       label: 'Opposite side gets subtracted',
@@ -757,6 +772,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'eng-comprehending-waxwing-birds-hl',
     subjectId: 'english', topicId: 'english-10-0',
     subjectLabel: 'English', topicLabel: 'Reading & comprehension', level: 'higher',
+    focus: 'Waxwings (O’Toole)',
     gist: 'Paper 1 Question A is a close-reading test, not a comprehension-of-the-gist test. The examiner is checking whether you can do three separate things on the SAME text: (i) understand what the writer says, (ii) respond to an idea it raises, and (iii) analyse HOW the writing works (style). The trap is treating it like a summary. A summary scores the floor. What lifts you is that every single point you make is anchored to a specific moment in the text — a named image, a phrase you can point to, a sentence you can quote. Marks here are awarded for \'engagement with the text\', so a point with no textual reference is a half-point, however true it is.  Work the 2024 HL Text 1 example: Fintan O\'Toole\'s article \'We have taken flight from our deep link with birds\'. It links three generations of his family — himself, his father, his son — through birds: a waxwing tattoo on his son\'s arm, and a pallid swift his father found dead and had stuffed for the Natural History Museum (the \'Dead Zoo\'). Notice that he never states \'family relationships are about shared memory\' as an abstract claim — he SHOWS it through the swift in the freezer, the bus to Ballsbridge, the boy who would rather look at sharks. Your job in Question A is to read those concrete moments back to the examiner as evidence.',
     oneMove: {
       label: 'Anchor every point to a quotable moment in the text',
@@ -778,6 +794,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'eng-comprehending-ai-robots-friends-or-foes-ol',
     subjectId: 'english', topicId: 'english-10-0',
     subjectLabel: 'English', topicLabel: 'Reading & comprehension', level: 'ordinary',
+    focus: 'AI robots: friends or foes?',
     gist: 'At Ordinary Level, Paper 1 Question A is worth 40 marks and almost always asks you to (i) say what you LEARNED from the text, (ii) give a personal response to an idea it raises, and (iii) do a short personal task. The single biggest mark-loser is answering from your own opinion when the question says \'support your answer with reference to the text\'. The examiner cannot give you the marks for \'I think robots are scary\' — they CAN give you the marks for \'the text says HAL murders the humans it was designed to assist, which is frightening\'. Same idea; only the second one is paid.  Work the 2022 OL Text 1 example: an information text titled \'Humans and AI robots: friends or foes?\'. It walks through how our relationship with artificially intelligent (AI) robots is changing — people thanking their vacuum cleaners, robotic pets, the lifelike robot Sophia being given citizenship by Saudi Arabia, and two films (HAL in 2001: A Space Odyssey, and Robot and Frank) that show a frightening future and a hopeful one. When the question asks what you LEARNED, you go back and lift the specific facts — Sophia, the bar-codes idea, the two films — rather than writing your general feelings about technology.',
     oneMove: {
       label: 'For every point, point back to a fact the text actually states',
@@ -800,6 +817,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'biology-2024-hl-marine-food-web',
     subjectId: 'biology', topicId: 'biology-0-3',
     subjectLabel: 'Biology', topicLabel: 'General Principles of Ecology', level: 'higher',
+    focus: 'Marine food web (diagram)',
     gist: 'A food web is just many food chains joined together, and you read it by following the arrows. Every arrow points in the direction the energy flows — from the thing being eaten to the thing eating it. Producers (which make their own food, e.g. phytoplankton and seaweed) sit at the bottom; the arrow then runs up through primary consumers, secondary consumers and finally the top carnivore that nothing eats. A trophic level is just a feeding level — count the organisms in a single chain and that is the number of trophic levels. Chains are short because roughly 90% of the energy is lost as heat and movement at each level, so there is rarely enough left to support more than four or five links.',
     oneMove: {
       label: 'Follow the arrow — it always points to the eater',
@@ -874,6 +892,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'mathematics-2024-ol-argand-diagram',
     subjectId: 'mathematics', topicId: 'mathematics-3-3',
     subjectLabel: 'Mathematics', topicLabel: 'Complex Numbers', level: 'ordinary',
+    focus: 'Argand diagram (graph)',
     gist: 'On an Argand diagram, the horizontal axis (Re) is the real part and the vertical axis (Im) is the imaginary part, so every complex number a + bi is just a point at (a, b). Reading a plotted point off the grid is identical to reading a coordinate: count across for the real part, count up or down for the imaginary part. A point sitting exactly on the imaginary axis has real part 0 (e.g. 2i = 0 + 2i); a point on the real axis has imaginary part 0. The modulus |z| is the distance from the origin to the point — for a number on an axis it is simply how many units along that axis it sits.',
     oneMove: {
       label: 'Read it like a coordinate',
@@ -892,6 +911,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'mathematics-2024-ol-normal-distribution',
     subjectId: 'mathematics', topicId: 'mathematics-0-6',
     subjectLabel: 'Mathematics', topicLabel: 'Analysing & Interpreting Data', level: 'ordinary',
+    focus: 'Normal distribution (graph)',
     gist: 'For a normal distribution the Empirical Rule says about 68% of values lie within 1 standard deviation of the mean (between μ - σ and μ + σ), about 95% within 2 standard deviations, and about 99.7% within 3. The curve is symmetric about the mean, which sits under the peak. So if a labelled middle 68% region runs between two given values, those two values are μ - σ and μ + σ: the mean is their midpoint, and half their difference is σ. Once you have μ and σ you can mark μ ± 2σ on the axis and find tail percentages — e.g. the area above μ + 2σ is (100% - 95%)/2 = 2.5%.',
     oneMove: {
       label: 'Mean = midpoint, sigma = half the gap',
@@ -911,6 +931,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'eng-comprehending-atwood-wise-old-counsellor',
     subjectId: 'english', topicId: 'english-10-0',
     subjectLabel: 'English', topicLabel: 'Reading & comprehension', level: 'higher',
+    focus: 'Atwood: ‘it’s been worse’',
     gist: 'Question A close reading is not about your opinion of the topic — it is about what THIS writer says and how the text earns marks. Read the intro/context box first (it tells you who is speaking, where, and why), then read the whole passage once for the gist before you write anything. The examiner rewards three distinct, text-anchored points, each one quoting or closely paraphrasing a specific moment in the passage. Range matters: spread your points across different parts of the text rather than mining one paragraph three times.',
     oneMove: {
       label: 'Anchor every point to the text',
@@ -932,6 +953,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'eng-comprehending-adeleke-beat-the-clock',
     subjectId: 'english', topicId: 'english-10-0',
     subjectLabel: 'English', topicLabel: 'Reading & comprehension', level: 'ordinary',
+    focus: 'Beat the Clock (Adeleke)',
     gist: 'For Question A at Ordinary Level, the marks come from showing the examiner you have actually read the passage closely — not from general knowledge about the person or topic. When the question asks for an \'impression\' or three points, treat the text as your only evidence. Read the context box first (it tells you who the person is and what the extract is about), then make each point clear and back it up with a detail or quotation lifted straight from the passage. Three separate, clearly-made points each supported from the text is exactly what the marking scheme rewards.',
     oneMove: {
       label: 'Anchor every point to the text',
@@ -954,6 +976,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'biology-2022-hl-heart-cycle',
     subjectId: 'biology', topicId: 'biology-2-2',
     subjectLabel: 'Biology', topicLabel: 'Transport and Nutrition', level: 'higher',
+    focus: 'Heart cycle (diagram)',
     gist: 'The heart cycle (cardiac cycle) has two phases: systole, when cardiac muscle CONTRACTS to push blood out, and diastole, when it relaxes and the chambers refill. The trick to reading a heart-cycle diagram is to follow the arrows and watch the valves. When the ATRIA contract, blood is pushed down into the ventricles. When the VENTRICLES contract (ventricular systole), the atrioventricular (AV) valves snap shut so blood can\'t flow back, the semilunar valves open, and blood is forced UP and OUT into the arteries. So a diagram with arrows pointing up out of the ventricles into the arteries, with the AV valves closed, is showing ventricular contraction. The lubb-dupp sounds of each heartbeat are simply the valves closing.',
     oneMove: {
       label: 'Read the arrows and the valves, not the shape',
@@ -972,6 +995,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'biology-2021-hl-villus-lacteal',
     subjectId: 'biology', topicId: 'biology-2-2',
     subjectLabel: 'Biology', topicLabel: 'Transport and Nutrition', level: 'higher',
+    focus: 'Villus & lacteal (diagram)',
     gist: 'A villus is one of the millions of tiny finger-like projections lining the small intestine (ileum). Their job is to massively increase the surface area for the absorption of digested food. Each villus is covered by a single layer of cells called the epithelium, and inside it has two transport routes. A dense network of blood capillaries absorbs the water-soluble products — glucose and amino acids — which then drain into the hepatic portal vein and go first to the liver. In the very centre is a single lacteal, part of the lymphatic system, whose special job is to absorb the digested fats (fatty acids and glycerol). So on a longitudinal-section diagram, the central vessel is the lacteal and the branching network around it is the blood capillary supply.',
     oneMove: {
       label: 'Centre vessel = lacteal (fats); network = capillaries (sugars)',
@@ -991,6 +1015,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'geography-cul-rock-cycle-2023-hl',
     subjectId: 'geography', topicId: 'geography-0-1',
     subjectLabel: 'Geography', topicLabel: 'The Rock Cycle', level: 'higher',
+    focus: 'Rock cycle (diagram)',
     gist: 'The rock cycle is the continuous journey of material between the three rock types. IGNEOUS rock forms when molten magma cools and crystallises (e.g. granite, basalt). When any rock is exposed at the surface it is broken down by WEATHERING and EROSION; the loose material is then transported and deposited (sedimentation). As these sediments are buried, COMPACTION AND CEMENTATION turn them into SEDIMENTARY rock (e.g. sandstone, limestone): the weight of overlying material squeezes the grains together and dissolved minerals cement them into solid rock. If rock is then subjected to great heat and pressure (deep burial, or contact with magma) it is altered into METAMORPHIC rock (e.g. marble, quartzite) without melting. If it is buried deep enough it melts back into magma, and the cycle begins again. The exam diagram links each rock type to the PROCESS that creates it, so learn the three transforming processes: crystallisation of magma (makes igneous), weathering/erosion then compaction/cementation (makes sedimentary), and heat + pressure (makes metamorphic).',
     oneMove: {
       label: 'Match the process to where it sits in the cycle',
@@ -1009,6 +1034,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'geography-cul-tectonic-cross-section-2025-hl',
     subjectId: 'geography', topicId: 'geography-0-0',
     subjectLabel: 'Geography', topicLabel: 'The Tectonic Cycle', level: 'higher',
+    focus: 'Subduction (cross-section)',
     gist: 'The tectonic cycle is driven from deep inside the Earth. Heat from the core sets up CONVECTION CURRENTS in the mantle: hot material rises, cools, spreads sideways and sinks in giant looping cells. These currents drag the rigid plates of the LITHOSPHERE (the crust plus the very top of the mantle) along on top of them. Where two plates move toward each other you get a CONVERGENT (destructive) boundary. The cross-section in the exam shows an oceanic plate meeting another plate: the denser oceanic plate bends down and slides beneath the other in the process of SUBDUCTION. As it sinks, it drags the seabed down to create a deep OCEAN TRENCH at the meeting point, and the descending plate melts, feeding magma up to a volcano on the surface. So one diagram ties together four ideas you must be able to name on sight: convection currents (the engine), the lithosphere (what moves), subduction (how one plate goes under), and the ocean trench (the surface landform it creates).',
     oneMove: {
       label: 'Name the layer, the current, the process and the landform — not just \'plates\'',
@@ -1065,6 +1091,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'eng-comprehending-underdog-effect-hl',
     subjectId: 'english', topicId: 'english-10-0',
     subjectLabel: 'English', topicLabel: 'Reading & comprehension', level: 'higher',
+    focus: 'The underdog effect',
     gist: 'Question A is a test of close reading, not of what you already think about underdogs. Read the context box first (it tells you this is an edited BBC article by David Robson about how the \'underdog effect\' changes our perspectives), then read the whole passage once for the argument before you write. Part (i) asks for INSIGHTS into how the effect influences our perspectives, so each point must name a specific way the effect works on us and prove it from the text. The examiner rewards three distinct, clearly-made points spread across different parts of the article (the studies, the emotional bias, the cultural pull), each anchored to the writer\'s own words rather than to your general opinion about sport or politics.',
     oneMove: {
       label: 'Anchor every point to the text',
@@ -1086,6 +1113,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'eng-comprehending-saunders-failures-of-kindness-ol',
     subjectId: 'english', topicId: 'english-10-0',
     subjectLabel: 'English', topicLabel: 'Reading & comprehension', level: 'ordinary',
+    focus: 'Saunders on kindness',
     gist: 'At Ordinary Level, the marks in Question A come from showing you have actually read the passage closely, not from your general view about kindness or graduation speeches. Read the context box first (it tells you this is an edited speech by Booker Prize winner George Saunders to graduating students), then read the whole speech once before you write. When the question asks for an \'impression\' of the speaker, treat the text as your only evidence: make each point clear and prove it with a detail or short quotation lifted straight from the passage. Three separate, clearly-made points, each backed up from the text, is exactly what the marking scheme rewards.',
     oneMove: {
       label: 'Anchor every point to the text',
@@ -1108,6 +1136,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'maths-hl-functions-piecewise-slope-2025',
     subjectId: 'mathematics', topicId: 'mathematics-4-1',
     subjectLabel: 'Mathematics', topicLabel: 'Calculus', level: 'higher',
+    focus: 'Slope from a graph',
     gist: 'On a graph, the derivative g\'(x) is just the slope (steepness) of the line at that point. For a graph made of straight line segments, each segment has a single constant slope you can read off directly: slope = rise/run = (change in y) divided by (change in x) between the two endpoints of that segment. A shallow segment has a small slope; a steep segment has a large slope. So a question like \'where is g\'(x) > 2?\' is really asking \'on which part of the graph is the line steeper than a slope of 2?\' You answer it by computing rise-over-run for each segment and comparing - no formula for g(x) needed. Reading a graph this way also lets you evaluate nested values like g(g(3)): work the inside first (find g(3) on the graph), then feed that answer back in as the new input.',
     oneMove: {
       label: 'Exam move',
@@ -1126,6 +1155,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'mg-hl-venn-three-set-independence-2025',
     subjectId: 'mathematics', topicId: 'mathematics-0-1',
     subjectLabel: 'Mathematics', topicLabel: 'Concepts of Probability', level: 'higher',
+    focus: 'Venn & independence (diagram)',
     gist: 'A three-set Venn diagram splits a survey of 240 people into eight regions: each country alone, each pair-overlap, the triple-overlap in the middle, and the \'none\' region outside all three circles. To find the probability of any event, add up every region inside that circle and divide by the universal total (here 240). For the AND of two events, P(A∩B), you only count the regions where those two circles overlap (including the central triple region). The acid test for independence is whether P(A∩B) equals P(A)·P(B): if multiplying the two separate probabilities reproduces the overlap probability, the events are independent; if not, they are dependent. Independence is a numerical coincidence of the data, not something you can eyeball from the picture, so you must actually compute all three numbers.',
     oneMove: {
       label: 'Exam move',
@@ -1144,6 +1174,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'mg-hl-square-pyramid-faces-2025',
     subjectId: 'mathematics', topicId: 'mathematics-1-2',
     subjectLabel: 'Mathematics', topicLabel: 'Trigonometry', level: 'higher',
+    focus: 'Square pyramid (3-D)',
     gist: 'A square-based pyramid is a classic 3D problem where the trick is to slice out a flat right-angled triangle hidden inside the solid. The apex P sits directly above O, the centre of the square base, so OP is the vertical height. The diagonals of the base meet at O, and half a diagonal of a square of side a is (a√2)/2 — so for a 6 m base, OB = 3√2 m. Then triangle OPB is right-angled at O, and Pythagoras gives the height: OP² = PB² − OB². Once you can find lengths inside the solid, the slant faces are just triangles you handle with area = ½·a·b·sin C, where C is the included angle between two known sides. Because the four triangular faces are congruent, you work out one face and multiply by four. The whole question is reading the 3D picture, picking the right 2D triangle, and choosing Pythagoras versus the area-with-sine formula for each step.',
     oneMove: {
       label: 'Exam move',
@@ -1180,6 +1211,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     id: 'maths-ol-figure-composite-area-perimeter-2021',
     subjectId: 'mathematics', topicId: 'mathematics-2-3',
     subjectLabel: 'Mathematics', topicLabel: 'Length, Area & Volume', level: 'ordinary',
+    focus: 'Composite area (diagram)',
     gist: 'A composite-shape question hands you a figure built from simpler pieces and asks for its total area (and often perimeter). The trick is to break the picture apart, find each piece, then add. Here figure ABCDE is a large square ACDE sitting on the diagonal AC of a smaller square ABCF, and only one measurement is given: the small square has side 2 cm. So |AB| = |BC| = 2 cm. The shared diagonal AC is found with Pythagoras: AC = √(2² + 2²) = √8 cm, and that same √8 is the side of the big square. The whole figure = the big square (area = side² = (√8)² = 8) plus the little triangle ABC below it (half the small square = ½×2×2 = 2). For perimeter you only trace the OUTSIDE edges — the diagonal AC is internal and is NOT counted.',
     oneMove: {
       label: 'Pythagoras unlocks the hidden length',
