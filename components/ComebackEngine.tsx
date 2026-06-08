@@ -26,6 +26,8 @@ import { getDistinctSubjectHex } from '../studySessionData';
 import { type CAOCourse } from './futureFinderData';
 import { useInnovationData } from '../contexts/InnovationDataContext';
 import { useAuth } from '../contexts/AuthContext';
+import { MISSION_TECHNIQUES, spacingGapDays, type TechniqueType } from '../comebackMissionData';
+import FluencyTrap from './comeback/FluencyTrap';
 
 // ── Types ──────────────────────────────────────────────────
 
@@ -52,6 +54,10 @@ interface WeeklyMission {
   reason: string;
   pointsImpact: number; // potential CAO points gained
   done: boolean;
+  /** Evidence-graded study technique this mission instantiates (Schedule the Evidence). */
+  techniqueType?: TechniqueType;
+  /** One-line "why this beats rereading" rationale, surfaced on the card. */
+  why?: string;
 }
 
 interface ProgressSnapshot {
@@ -262,14 +268,17 @@ function generateMissions(
 
   for (const win of topWins) {
     missionSubjects.add(win.subject);
-    // Study mission
+    // Study mission — typed as RETRIEVAL (book-closed practice testing), not a
+    // vague "do a past paper" the student might do with notes open.
     missions.push({
       id: genId(),
       subject: win.subject,
-      action: `Do one ${win.level === 'higher' ? 'HL' : 'OL'} ${win.subject} past paper question`,
+      action: `Do one ${win.level === 'higher' ? 'HL' : 'OL'} ${win.subject} past-paper question from memory — book closed, then mark it`,
       reason: `Going ${win.currentGrade} → ${win.targetGrade} is worth +${win.gain} CAO points`,
       pointsImpact: win.gain,
       done: false,
+      techniqueType: 'retrieval',
+      why: MISSION_TECHNIQUES.retrieval.why,
     });
   }
 
@@ -292,20 +301,25 @@ function generateMissions(
     }
   }
 
-  // Add a general mission based on biggest win
+  // SPACED-REVIEW mission on the biggest win — gap scaled to time-to-exam
+  // (Cepeda: the gap widens when the exam is far, tightens as it nears).
   if (topWins.length > 0) {
     const biggest = topWins[0];
+    const gapDays = spacingGapDays(daysUntilExam);
     missions.push({
       id: genId(),
       subject: biggest.subject,
-      action: `Spend 20 minutes reviewing your weakest topic in ${biggest.subject}`,
+      action: `Re-test yourself on ${biggest.subject} again in about ${gapDays} day${gapDays === 1 ? '' : 's'} — don't just re-read it`,
       reason: `${biggest.subject} has the highest return on your time right now`,
       pointsImpact: 0,
       done: false,
+      techniqueType: 'spaced-review',
+      why: MISSION_TECHNIQUES['spaced-review'].why,
     });
   }
 
-  // Add topic-specific missions from mastery data (War Room integration)
+  // INTERLEAVED mission from mastery data (War Room integration): mix the shaky
+  // topic with another rather than blocking on one — harder, but it sticks.
   if (topicMastery) {
     for (const win of topWins) {
       const subjectTopics = topicMastery[win.subject];
@@ -313,24 +327,20 @@ function generateMissions(
       const shakyTopics = Object.entries(subjectTopics)
         .filter(([, t]) => t.confidence === 'shaky')
         .map(([name]) => name);
-      if (shakyTopics.length > 0 && !missions.some(m => m.subject === win.subject && m.action.includes('weakest topic'))) {
-        // Replace the generic "review weakest topic" mission with a specific one
-        const idx = missions.findIndex(m => m.subject === win.subject && m.action.includes('weakest topic'));
-        const specificTopic = shakyTopics[0];
-        const newMission: WeeklyMission = {
-          id: genId(),
-          subject: win.subject,
-          action: `Focus on "${specificTopic}" in ${win.subject} — it's marked as shaky`,
-          reason: `${shakyTopics.length} topic${shakyTopics.length > 1 ? 's' : ''} still shaky in ${win.subject}`,
-          pointsImpact: 0,
-          done: false,
-        };
-        if (idx >= 0) {
-          missions[idx] = newMission;
-        } else if (missions.length < 7) {
-          missions.push(newMission);
-        }
-      }
+      if (shakyTopics.length === 0) continue;
+      if (missions.some(m => m.subject === win.subject && m.techniqueType === 'interleaved')) continue;
+      if (missions.length >= 7) break;
+      const specificTopic = shakyTopics[0];
+      missions.push({
+        id: genId(),
+        subject: win.subject,
+        action: `Mix questions on "${specificTopic}" with another ${win.subject} topic in one sitting`,
+        reason: `It'll feel harder than doing one topic at a time — that harder feeling is what makes it stick`,
+        pointsImpact: 0,
+        done: false,
+        techniqueType: 'interleaved',
+        why: MISSION_TECHNIQUES.interleaved.why,
+      });
     }
   }
 
@@ -340,7 +350,7 @@ function generateMissions(
       id: genId(),
       subject: 'General',
       action: 'Write down one reason you want to do better — keep it somewhere you can see it',
-      reason: 'Students who write their goals down are 42% more likely to achieve them',
+      reason: 'A goal you can see keeps the comeback going on the hard days',
       pointsImpact: 0,
       done: false,
     });
@@ -369,10 +379,12 @@ function generateMissionsJC(
     missions.push({
       id: genId(),
       subject: win.subject,
-      action: `Do one past-paper question or sample question in ${win.subject}`,
-      reason: `Going from ${win.currentBand} to ${win.targetBand} starts with active practice`,
+      action: `Do one ${win.subject} question from memory — book closed, then check it`,
+      reason: `Going from ${win.currentBand} to ${win.targetBand} starts with testing yourself, not re-reading`,
       pointsImpact: 0,
       done: false,
+      techniqueType: 'retrieval',
+      why: MISSION_TECHNIQUES.retrieval.why,
     });
   }
 
@@ -381,14 +393,16 @@ function generateMissionsJC(
     missions.push({
       id: genId(),
       subject: biggest.subject,
-      action: `Spend 20 minutes reviewing your weakest topic in ${biggest.subject}`,
+      action: `Come back and re-test yourself on ${biggest.subject} in a few days — don't just re-read it`,
       reason: `${biggest.subject} has the most room to improve right now`,
       pointsImpact: 0,
       done: false,
+      techniqueType: 'spaced-review',
+      why: MISSION_TECHNIQUES['spaced-review'].why,
     });
   }
 
-  // Topic-specific missions from mastery data, same shape as senior
+  // Interleaved mission from mastery data, same shape as senior
   if (topicMastery) {
     for (const win of topWins) {
       const subjectTopics = topicMastery[win.subject];
@@ -396,20 +410,20 @@ function generateMissionsJC(
       const shakyTopics = Object.entries(subjectTopics)
         .filter(([, t]) => t.confidence === 'shaky')
         .map(([name]) => name);
-      if (shakyTopics.length > 0) {
-        const idx = missions.findIndex(m => m.subject === win.subject && m.action.includes('weakest topic'));
-        const specificTopic = shakyTopics[0];
-        const newMission: WeeklyMission = {
-          id: genId(),
-          subject: win.subject,
-          action: `Focus on "${specificTopic}" in ${win.subject} — it's marked as shaky`,
-          reason: `${shakyTopics.length} topic${shakyTopics.length > 1 ? 's' : ''} still shaky in ${win.subject}`,
-          pointsImpact: 0,
-          done: false,
-        };
-        if (idx >= 0) missions[idx] = newMission;
-        else if (missions.length < 7) missions.push(newMission);
-      }
+      if (shakyTopics.length === 0) continue;
+      if (missions.some(m => m.subject === win.subject && m.techniqueType === 'interleaved')) continue;
+      if (missions.length >= 7) break;
+      const specificTopic = shakyTopics[0];
+      missions.push({
+        id: genId(),
+        subject: win.subject,
+        action: `Mix questions on "${specificTopic}" with another ${win.subject} topic in one sitting`,
+        reason: `It'll feel harder than doing one topic at a time — that harder feeling is what makes it stick`,
+        pointsImpact: 0,
+        done: false,
+        techniqueType: 'interleaved',
+        why: MISSION_TECHNIQUES.interleaved.why,
+      });
     }
   }
 
@@ -418,7 +432,7 @@ function generateMissionsJC(
     id: genId(),
     subject: 'General',
     action: 'Write down one reason you want to do better — keep it somewhere you can see it',
-    reason: 'Students who write their goals down are 42% more likely to achieve them',
+    reason: 'A goal you can see keeps the comeback going on the hard days',
     pointsImpact: 0,
     done: false,
   });
@@ -1079,6 +1093,9 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
           </p>
         </div>
 
+        {/* Mistake-first: expose the fluency gap before prescribing the fix */}
+        <FluencyTrap />
+
         {/* Missions */}
         <div className="space-y-2">
           {comebackData?.weeklyMissions.map((m, i) => (
@@ -1123,6 +1140,15 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
                       return <span className="ml-1.5 text-[9px] font-bold" style={{ color }}>{label} priority</span>;
                     })()}
                   </p>
+                  {/* "Why this beats rereading" disclosure — teaches the technique hierarchy */}
+                  {!m.done && m.why && m.techniqueType && (
+                    <div className="mt-1.5 rounded-md px-2.5 py-1.5" style={{ backgroundColor: COLORS.accentTint }}>
+                      <span className="text-[9px] font-bold uppercase tracking-wide" style={{ color: COLORS.accentDarkText }}>
+                        {MISSION_TECHNIQUES[m.techniqueType].label} · why it works
+                      </span>
+                      <p className="text-[11px] italic leading-snug mt-0.5" style={{ color: COLORS.accentDarkText }}>{m.why}</p>
+                    </div>
+                  )}
                 </div>
                 {m.pointsImpact > 0 && (
                   <span className="text-[10px] font-bold px-2 py-0.5 rounded-full shrink-0" style={{ color: '#1F5F3E', backgroundColor: '#E8F2EC' }}>

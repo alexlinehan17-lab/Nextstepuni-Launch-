@@ -283,8 +283,8 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
         </div>
 
         {confidenceAfter > confidenceBefore && (
-          <p className="text-xs text-emerald-600 dark:text-emerald-400 font-medium">
-            +{confidenceAfter - confidenceBefore} confidence — that session worked.
+          <p className="text-xs font-medium" style={{ color: '#1F5F3E' }}>
+            +{confidenceAfter - confidenceBefore} confidence. Good — but feeling sure isn’t the same as remembering. Lock it in by testing yourself on this, book closed, in a day or two.
           </p>
         )}
         {confidenceAfter < confidenceBefore && (
