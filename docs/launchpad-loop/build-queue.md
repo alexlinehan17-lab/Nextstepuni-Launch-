@@ -7,9 +7,9 @@ _The loop pops the top **ready** item, builds it end-to-end, runs the gate, comm
 
 **Mode:** autonomous, self-paced (user, 2026-06-08) — work down the ready queue, gate + independently verify + commit each to `main`; the user reviews at deploy time. Pause only for irreversible/outward actions.
 
-- **DONE:** #2 `catch-up-lane` — First-Week Back ✓ (commit `3b02b5f`, gate green, independent review SHIP). On `main`, not yet deployed.
-- **NEXT:** #1 `college-compass` — **The Open Door (B4-SAFE variant)**. See the build spec below.
-- **Then:** #3 `comeback` Schedule the Evidence → #4 `career-paths` More-than-one-way-in → #5 `exam-reps` Show Me One → … (table order, skipping the deferred items).
+- **DONE:** #2 `catch-up-lane` First-Week Back ✓ (`3b02b5f`); #1 `college-compass` The Open Door (B4-safe) ✓ (`c77bd01`, gate green, independent review FIXED after a figure-accuracy catch). Both on `main`, not yet deployed.
+- **NEXT:** #3 `comeback` — Schedule the Evidence (turn vague missions into typed retrieval/spacing/interleaving actions; fix the confidence-slider fluency illusion).
+- **Then:** #4 `career-paths` More-than-one-way-in → #5 `exam-reps` Show Me One → #6 `planner` The Intention Engine → … (table order, skipping the deferred items).
 - **Still deferred (B4-gated, NOT approved):** #28 `college-compass` Runway (parent-link / web-push — capability doesn't exist + intersects B4); #33 `journey` Choices Wall (minors' UGC + cross-student aggregates). Leave parked until B4 is resolved.
 
 ### B4-safe Open Door — build spec (user-approved 2026-06-08)
@@ -28,7 +28,7 @@ The synthesis ranked Open Door #1 (perfect 5×5 evidence×impact). The user appr
 
 | # | Status | Tool | Concept | Cx | Why |
 |---|--------|------|---------|----|-----|
-| 1 | ▶ NEXT (B4-safe) | `college-compass` | The Open Door — affordability-and-access engine | L | The only concept scoring a perfect 5x5 on evidence AND impact — the brief's primary signal. It IS Destin & Oyserman's open-vs-closed-path manipulation applied to the exact low-income cohort it was demonstrated in, the EEF aspiration cite… |
+| 1 | ✅ DONE (B4-safe) | `college-compass` | The Open Door — affordability-and-access engine | L | The only concept scoring a perfect 5x5 on evidence AND impact — the brief's primary signal. It IS Destin & Oyserman's open-vs-closed-path manipulation applied to the exact low-income cohort it was demonstrated in, the EEF aspiration cite… |
 | 2 | ✅ DONE | `catch-up-lane` | First-Week Back — a graded re-entry timeline that turns the saved plan into daily if-then actions with the people built in | M | Highest weightedTotal in the set (4.62) and second-highest evidence×impact (4.7x4.8=22.56). Instantiates Gollwitzer/Sheeran if-then (d=.65) plus Zimmerman's full SRL loop on the most vulnerable moment (return after absence) for the core … |
 | 3 | ✔ ready | `comeback` | Schedule the Evidence — missions become retrieval/spacing/interleaving actions, not 'do a past paper' | L | Perfect evidence (5/5) x 4.5 impact = 22.50, on four real, correctly-directed citations whose active ingredients are instantiated not labelled — a 'retrieval' mission is a close-the-book attempt, not a re-show of notes. Fixes the science… |
 | 4 | ✔ ready | `career-paths` | More than one way in — the de-circumscription pathway map | L | KEEPER of the de-circumscription cluster (collapses your-possible-life/More Than One Way In, college-compass/Route Map, future-finder-revamped/The Other Way In). 4.5x4.5 evidence×impact and the single most on-mission concept for the DEIS… |
@@ -76,3 +76,4 @@ The synthesis ranked Open Door #1 (perfect 5×5 evidence×impact). The user appr
 _Append one line per completed build: date · #rank · tool · concept · commit SHA · gate result._
 
 - 2026-06-07 · #2 · `catch-up-lane` · First-Week Back (5-day graded re-entry timeline) · `3b02b5f` · typecheck 0 / lint clean / 46 tests / build OK · independent review: SHIP, no blockers · activated dead `TEACHER_SCRIPT` export · not yet deployed.
+- 2026-06-08 · #1 · `college-compass` · The Open Door, B4-safe (mistake-first closed→open cost-drop at Money Stops; Free Fees / SUSI / HEAR; no income capture) · `c77bd01` · typecheck 0 / lint clean / 46 tests / build OK · independent review caught 2 stale-figure blockers (2025/26 vs 2026/27) → corrected → re-verified FIXED · all euro figures source-stamped 2026/27 estimates · GC-dashboard status surfacing deferred (it needed the dropped income signal) · not yet deployed.
