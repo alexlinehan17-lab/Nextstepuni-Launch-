@@ -31,6 +31,7 @@ import { INSTITUTIONS } from './futureFinderData';
 import HearMeter from './collegeCompass/HearMeter';
 import DareGate from './collegeCompass/DareGate';
 import MoneySorter from './collegeCompass/MoneySorter';
+import OpenDoor from './collegeCompass/OpenDoor';
 import DocumentChecklist from './collegeCompass/DocumentChecklist';
 import {
   JOURNEY_STOPS,
@@ -422,7 +423,14 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup }) => {
         </div>
       );
     }
-    if (stopId === 'money-stops') return <MoneySorter />;
+    if (stopId === 'money-stops') {
+      return (
+        <div className="space-y-3">
+          <OpenDoor />
+          <MoneySorter />
+        </div>
+      );
+    }
     return null;
   };
 

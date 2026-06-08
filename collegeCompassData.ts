@@ -523,6 +523,97 @@ export const MONEY_ITEMS: MoneyItem[] = [
   { id: 'hear-dare', name: 'HEAR / DARE', bucket: 'admission', isAutomatic: false, deadlineWindow: 'Via CAO ~1 Feb / ~1 Mar', note: 'Reduced-points routes — not cash, but unlock places at lower points plus supports.', sourceUrl: 'https://accesscollege.ie' },
 ];
 
+// ─── The Open Door — affordability reframe (Money Stops) ─────────────────────
+//
+// Mistake-first: lead with the "closed door" sticker price a student fears, then
+// drop the real numbers in — each labelled with what removes it (Free Fees,
+// SUSI, HEAR) — to reveal the real, smaller, supported cost. Grounded in Destin
+// & Oyserman (an OPEN, affordable-looking path raises low-income students' school
+// effort; a closed/expensive one suppresses it) and Snyder's hope theory (show
+// multiple workable routes). EVERY euro figure is an ESTIMATE for the 2026 cycle,
+// source-stamped below and gated by COMPASS_LAST_VERIFIED — the UI always says so.
+// NO student income is ever collected; the bands below are PUBLIC info only.
+//
+// Figures verified 2026-06 against the live 2026/27 cycle (primary sources):
+//  - Free Fees covers tuition, not means-tested (hea.ie).
+//  - Student contribution capped at €3,000; the permanent Budget 2026 cut makes the
+//    STANDARD charge €2,500; a SUSI contribution grant brings it to ~€2,000 for
+//    households under €120k; €0 for maintenance-grant holders (gov.ie Budget 2026; susi.ie).
+//  - SUSI maintenance up to ~€7,936/yr (2026/27 Special Rate, non-adjacent; susi.ie).
+//  - SUSI income thresholds (2026/27, <4 dependent children): Special Rate ~€28,600,
+//    full maintenance (Band 1) ~€47,010, 100% contribution grant ~€64,315, 50% ~€71,300.
+//  - Living costs ~€16,400/yr away from home (DCU Cost of Attending University 2025/26).
+
+export interface OpenDoorLine {
+  id: string;
+  label: string;
+  /** What it looks like through the "closed door" (the fear). */
+  sticker: string;
+  /** What it actually is once the relevant scheme applies. */
+  open: string;
+  /** The scheme that removes/reduces it. */
+  removedBy: string;
+  detail: string;
+  source: { label: string; url: string };
+}
+
+export const OPEN_DOOR_LINES: OpenDoorLine[] = [
+  {
+    id: 'tuition',
+    label: 'Tuition fees',
+    sticker: 'thousands a year',
+    open: '€0',
+    removedBy: 'Free Fees',
+    detail: 'The State pays undergraduate tuition for eligible EU first-time students through the Free Fees scheme — and it is NOT means-tested, so your family’s income doesn’t come into it.',
+    source: { label: 'hea.ie — Free Fees', url: 'https://hea.ie/funding-governance-performance/funding/student-finance/course-fees/' },
+  },
+  {
+    id: 'contribution',
+    label: 'Student contribution',
+    sticker: '€3,000 / year',
+    open: '€2,500 — or as low as €0 with SUSI',
+    removedBy: 'Budget 2026 + SUSI',
+    detail: 'The contribution is capped at €3,000; the permanent Budget 2026 cut brings the standard charge to €2,500. A SUSI contribution grant takes it to about €2,000 for households under €120,000, and SUSI pays it in full for maintenance-grant holders.',
+    source: { label: 'susi.ie — Budget 2026', url: 'https://www.susi.ie/news/budget-2026/' },
+  },
+  {
+    id: 'living',
+    label: 'Living costs',
+    sticker: '~€16,400 / year away from home',
+    open: 'up to ~€7,900 / year covered',
+    removedBy: 'SUSI maintenance grant',
+    detail: 'If your family income qualifies, SUSI pays a maintenance grant — up to about €7,936 a year living away from home (2026/27 Special Rate). The Student Assistance Fund and part-time work help with the rest, and living at home costs far less again.',
+    source: { label: 'susi.ie — grant rates', url: 'https://www.susi.ie/eligibility-criteria/income/full-time-undergraduate-income-thresholds-and-grant-award-rates/' },
+  },
+];
+
+/** The "second, lower door" — HEAR (a points route, not cash). */
+export const OPEN_DOOR_HEAR = {
+  label: 'A second, lower-points door',
+  detail: 'HEAR offers reduced-points places into the very same courses for students from under-represented backgrounds — plus extra supports once you’re in. It’s a real second door beside the standard-points one, not a consolation prize.',
+  source: { label: 'accesscollege.ie — HEAR', url: 'https://accesscollege.ie/hear/' },
+};
+
+/** Illustrative SUSI bands — PUBLIC info, NEVER an income self-estimate. */
+export const OPEN_DOOR_SUSI_BANDS: string[] = [
+  'Family income under ~€28,600? You’d likely get the higher Special Rate grant.',
+  'Under ~€47,000? Likely the full maintenance grant.',
+  'Under ~€64,000? SUSI likely pays your student contribution in full.',
+  'Under ~€120,000? A SUSI contribution grant brings what you pay down to about €2,000 (2026/27).',
+];
+
+export const OPEN_DOOR_COPY = {
+  closedHeading: 'The door a lot of people see',
+  closedSub: '“College costs a fortune — that’s not for someone like me.” It’s the wall that makes people stop before they even start.',
+  revealCta: 'Open the door',
+  openHeading: 'The door that’s actually there',
+  openSub: 'Once the supports you’re entitled to are in, the real cost is far smaller — and for many students, most of it is covered.',
+  bandsHeading: 'Would a grant cover me?',
+  bandsNote: 'Rough guide only — SUSI decides on your household’s reckonable income and size, not on these round numbers. Check the real thing; it takes about 10 minutes.',
+  step: { label: 'Check your SUSI eligibility', url: 'https://www.susi.ie/eligibility-criteria/' },
+  disclaimer: 'Every figure here is an estimate for the 2026 cycle and changes each year — your actual costs depend on your course, college and circumstances. Always confirm on susi.ie and hea.ie.',
+};
+
 // ─── Restricted-course quick check ───────────────────────────────────────────
 
 export interface RestrictedCourseType {
