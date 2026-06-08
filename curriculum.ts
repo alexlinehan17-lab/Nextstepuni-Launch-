@@ -8149,5 +8149,100 @@ export const CURRICULUM: CurriculumSubject[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "home-economics",
+    "name": "Home Economics",
+    "category": "practical-applied",
+    "levels": [
+      "higher",
+      "ordinary"
+    ],
+    "strands": [
+      {
+        "id": "home-economics-0",
+        "name": "Food Studies",
+        "subtopics": [
+          {
+            "id": "home-economics-0-0",
+            "name": "Food & Nutrition"
+          },
+          {
+            "id": "home-economics-0-1",
+            "name": "Diet & Health"
+          },
+          {
+            "id": "home-economics-0-2",
+            "name": "Food Science & Food Commodities"
+          },
+          {
+            "id": "home-economics-0-3",
+            "name": "Culinary Skills & Food Preparation"
+          },
+          {
+            "id": "home-economics-0-4",
+            "name": "Food Safety, Hygiene & Legislation"
+          }
+        ]
+      },
+      {
+        "id": "home-economics-1",
+        "name": "Resource Management & Consumer Studies",
+        "subtopics": [
+          {
+            "id": "home-economics-1-0",
+            "name": "Family Resource Management"
+          },
+          {
+            "id": "home-economics-1-1",
+            "name": "Household Financial Management"
+          },
+          {
+            "id": "home-economics-1-2",
+            "name": "Consumer Studies"
+          },
+          {
+            "id": "home-economics-1-3",
+            "name": "Household Technology & Energy"
+          }
+        ]
+      },
+      {
+        "id": "home-economics-2",
+        "name": "Social Studies",
+        "subtopics": [
+          {
+            "id": "home-economics-2-0",
+            "name": "The Family in Society"
+          },
+          {
+            "id": "home-economics-2-1",
+            "name": "Marriage & the Family Life Cycle"
+          },
+          {
+            "id": "home-economics-2-2",
+            "name": "Education, Work & Leisure"
+          }
+        ]
+      },
+      {
+        "id": "home-economics-3",
+        "name": "Electives",
+        "subtopics": [
+          {
+            "id": "home-economics-3-0",
+            "name": "Home Design & Management"
+          },
+          {
+            "id": "home-economics-3-1",
+            "name": "Textiles, Fashion & Design"
+          },
+          {
+            "id": "home-economics-3-2",
+            "name": "Social Studies (elective)"
+          }
+        ]
+      }
+    ]
   }
 ];
