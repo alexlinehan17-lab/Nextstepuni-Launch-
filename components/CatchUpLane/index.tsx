@@ -28,6 +28,7 @@ import { useInnovationData } from '../../contexts/InnovationDataContext';
 import { RECOVERY_CARDS, cardsForSubject, subjectsWithContent } from '../../catchUpLaneData';
 import { FIRST_WEEK } from '../../comebackData';
 import { type RecoveryCard } from '../../types/catchUpLane';
+import { CURRICULUM } from '../../curriculum';
 import Comeback from './Comeback';
 
 const CYAN = '#0E9AA8';
@@ -39,6 +40,14 @@ const cardShell =
 
 type View = 'home' | 'queue' | 'unit';
 type Beat = 'gist' | 'move' | 'check' | 'reveal' | 'done';
+
+// Strand (syllabus category) lookup, built from curriculum.ts: the topic queue is
+// grouped under these so it mirrors each subject's real LC syllabus structure
+// (Biology Units, Maths Strands, Geography Core/Elective/Option units, etc.).
+const STRAND_INFO = new Map<string, { name: string; order: number }>();
+CURRICULUM.forEach((subj) => subj.strands.forEach((st, i) => STRAND_INFO.set(st.id, { name: st.name, order: i })));
+/** topicId 'biology-2-3' → strand id 'biology-2'. */
+const strandIdOf = (topicId: string) => topicId.split('-').slice(0, 2).join('-');
 
 const fade = {
   initial: { opacity: 0, y: 10 },
@@ -278,11 +287,18 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
   if (view === 'queue' && subjectId) {
     const subjLabel = subjectCards[0]?.subjectLabel ?? '';
     const done = subjectCards.filter(c => recovered.has(c.topicId)).length;
-    // shaky first, then not-started, then recovered last
-    const ordered = [...subjectCards].sort((a, b) => {
-      const rank = (c: RecoveryCard) => recovered.has(c.topicId) ? 2 : shaky.has(c.topicId) ? 0 : 1;
-      return rank(a) - rank(b);
-    });
+    const rank = (c: RecoveryCard) => recovered.has(c.topicId) ? 2 : shaky.has(c.topicId) ? 0 : 1;
+    // Group topics under their syllabus category (strand), in curriculum order.
+    // Within a category: shaky first, then not-started, then recovered.
+    const byStrand = new Map<string, RecoveryCard[]>();
+    for (const c of subjectCards) {
+      const sid = strandIdOf(c.topicId);
+      const arr = byStrand.get(sid) ?? (byStrand.set(sid, []), byStrand.get(sid)!);
+      arr.push(c);
+    }
+    const groups = [...byStrand.entries()]
+      .sort((a, b) => (STRAND_INFO.get(a[0])?.order ?? 99) - (STRAND_INFO.get(b[0])?.order ?? 99))
+      .map(([sid, cards]) => ({ sid, name: STRAND_INFO.get(sid)?.name ?? sid, cards: [...cards].sort((x, y) => rank(x) - rank(y)) }));
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
         <button onClick={() => setView('home')} className="flex items-center gap-1.5 text-[13px] font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-4">
@@ -295,31 +311,38 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
         </div>
         <p className="text-[13px] mb-5" style={{ color: '#7a7068' }}>Tap a topic you missed. Each one’s about three minutes.</p>
 
-        <div className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] overflow-hidden">
-          {ordered.map((c, i) => {
-            const isRec = recovered.has(c.topicId);
-            const isShaky = shaky.has(c.topicId);
-            return (
-              <button
-                key={c.id}
-                onClick={() => openCard(c)}
-                className={`w-full text-left flex items-center gap-3 px-4 py-3.5 transition-colors hover:bg-zinc-50 dark:hover:bg-white/[0.04] ${i > 0 ? 'border-t border-zinc-100 dark:border-zinc-800' : ''}`}
-              >
-                {isRec
-                  ? <CheckCircle2 size={20} style={{ color: COLORS.success }} className="shrink-0" />
-                  : isShaky
-                    ? <RotateCcw size={18} style={{ color: CYAN }} className="shrink-0" />
-                    : <Circle size={20} className="text-zinc-300 dark:text-zinc-600 shrink-0" />}
-                <div className="flex-1 min-w-0">
-                  <p className={`text-[15px] font-medium ${isRec ? 'text-zinc-400 dark:text-zinc-500' : 'text-zinc-800 dark:text-zinc-100'}`}>{c.topicLabel}</p>
-                  {isShaky && <p className="text-[11px]" style={{ color: CYAN_DARK_TEXT }}>Marked to revisit</p>}
-                </div>
-                {isRec
-                  ? <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: COLORS.success }}>Recovered</span>
-                  : <ArrowRight size={16} className="text-zinc-300 dark:text-zinc-600 shrink-0" />}
-              </button>
-            );
-          })}
+        <div className="space-y-5">
+          {groups.map(({ sid, name, cards }) => (
+            <div key={sid}>
+              <h3 className="text-[12px] font-bold uppercase tracking-[0.12em] mb-2 px-1" style={{ color: CYAN_DARK_TEXT }}>{name}</h3>
+              <div className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] overflow-hidden">
+                {cards.map((c, i) => {
+                  const isRec = recovered.has(c.topicId);
+                  const isShaky = shaky.has(c.topicId);
+                  return (
+                    <button
+                      key={c.id}
+                      onClick={() => openCard(c)}
+                      className={`w-full text-left flex items-center gap-3 px-4 py-3.5 transition-colors hover:bg-zinc-50 dark:hover:bg-white/[0.04] ${i > 0 ? 'border-t border-zinc-100 dark:border-zinc-800' : ''}`}
+                    >
+                      {isRec
+                        ? <CheckCircle2 size={20} style={{ color: COLORS.success }} className="shrink-0" />
+                        : isShaky
+                          ? <RotateCcw size={18} style={{ color: CYAN }} className="shrink-0" />
+                          : <Circle size={20} className="text-zinc-300 dark:text-zinc-600 shrink-0" />}
+                      <div className="flex-1 min-w-0">
+                        <p className={`text-[15px] font-medium ${isRec ? 'text-zinc-400 dark:text-zinc-500' : 'text-zinc-800 dark:text-zinc-100'}`}>{c.topicLabel}</p>
+                        {isShaky && <p className="text-[11px]" style={{ color: CYAN_DARK_TEXT }}>Marked to revisit</p>}
+                      </div>
+                      {isRec
+                        ? <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: COLORS.success }}>Recovered</span>
+                        : <ArrowRight size={16} className="text-zinc-300 dark:text-zinc-600 shrink-0" />}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     );
