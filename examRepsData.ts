@@ -53,6 +53,15 @@ export const REP_CARDS: RepCard[] = [
       "text": "'Distinguish' questions reward a clear contrast, not two parallel definitions. The 2015 Chief Examiner repeatedly flagged that 'recall of definitions has merit... however the requirement to build on the definitions to answer the actual questions set at the Higher level was not always evident' — define both taxes, then make the difference between them explicit.",
       "source": "Chief Examiner 2015, p.16-17; Marking scheme 2025 Section 1 Q5 (3+2)(3+2)"
     },
+    "modelAnswer": {
+      "segments": [
+        { "ribbonIndex": 0, "text": "Capital Gains Tax is a tax you pay on the profit (the capital gain) you make when you dispose of an asset — for example, selling shares or a property for more than you paid for it." },
+        { "ribbonIndex": 1, "text": "It is charged when you DISPOSE of an asset, and it is paid by the person making the gain." },
+        { "ribbonIndex": 2, "text": "Capital Acquisitions Tax, by contrast, is a tax on gifts and inheritances — it is paid by the person who RECEIVES the gift or inheritance." },
+        { "ribbonIndex": 3, "text": "And unlike CGT, how much you can receive tax-free depends on your relationship to the giver: a child can receive far more tax-free from a parent than a stranger could." }
+      ],
+      "source": "Marking scheme 2025 Section 1 Q5"
+    },
     "subjectId": "business",
     "topicId": "business-3-3"
   },
@@ -139,6 +148,15 @@ export const REP_CARDS: RepCard[] = [
     "lesson": {
       "text": "The cue 'Outline' expects two developed points, each scored Name (3) + Explain (2). Reviewing the 2015 paper, the Chief Examiner warned that 'only one valid point is often given when two or three points are required' and that cues such as 'outline' and 'explain' 'are often not addressed adequately' — pick two genuinely different methods and develop each rather than repeating one.",
       "source": "Chief Examiner 2015, p.20; Marking scheme 2025 Section 1 Q6 2@(3+2)"
+    },
+    "modelAnswer": {
+      "segments": [
+        { "ribbonIndex": 0, "text": "Develop a code of ethics." },
+        { "ribbonIndex": 1, "text": "Writing a clear code of conduct into employees’ contracts spells out exactly what behaviour is and is not acceptable, which discourages unethical conduct because staff know the standard they will be held to." },
+        { "ribbonIndex": 2, "text": "Provide ethics training." },
+        { "ribbonIndex": 3, "text": "Running regular training on how to handle ethical dilemmas helps staff recognise the right course of action, so they are more likely to act ethically when a real situation comes up." }
+      ],
+      "source": "Marking scheme 2025 Section 1 Q6"
     },
     "subjectId": "business",
     "topicId": "business-5-11"

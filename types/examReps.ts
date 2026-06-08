@@ -33,6 +33,20 @@ export interface CommandWordPrimer {
 
 export type Confidence = 'unsure' | 'maybe' | 'confident';
 
+/**
+ * A full-mark exemplar for a card ("Show Me One"). Each segment is tied to the
+ * ribbon it earns (by index into `ribbons`), so the reveal can light the ribbons
+ * in sequence on the model. Agent-forged from the SEC marking scheme + Chief
+ * Examiner reports already cited on the card — never invented. Optional per card:
+ * cards without one behave exactly as before (no scaffold, no compare).
+ */
+export interface ModelAnswer {
+  /** Exemplar segments, each tied to the ribbon index it earns. */
+  segments: { ribbonIndex: number; text: string }[];
+  /** Source citation (SEC marking scheme / Chief Examiner report). */
+  source: string;
+}
+
 export interface RepCard {
   id: string;
   subject: RepSubject;
@@ -51,6 +65,8 @@ export interface RepCard {
   ribbons: MarkRibbon[];
   /** ONE specific, examiner-sourced takeaway about this question's biggest leak. */
   lesson: { text: string; source: string };
+  /** Optional full-mark exemplar ("Show Me One"). Rolled out subject-by-subject. */
+  modelAnswer?: ModelAnswer;
   taskType?: string;       // for interleaving + coverage
   /** Curriculum subject id (curriculum.ts), e.g. 'mathematics'. */
   subjectId?: string;

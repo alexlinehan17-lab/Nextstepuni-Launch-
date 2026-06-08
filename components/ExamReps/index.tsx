@@ -15,7 +15,7 @@
  * (commit a confidence before you see the truth). See the build plan.
  */
 import React, { useState, useEffect, useMemo, useRef } from 'react';
-import { Check, ArrowRight } from 'lucide-react';
+import { Check, ArrowRight, BookOpen } from 'lucide-react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { COLORS } from '../../design/tokens';
@@ -71,6 +71,40 @@ const TimerArc: React.FC<{ progress: number; label: string }> = ({ progress, lab
         />
       </svg>
       <span className="text-xs text-[#7a7068] dark:text-zinc-400">{label}</span>
+    </div>
+  );
+};
+
+// ─── "Show Me One" — the full-mark exemplar, ribbons pre-lit as earned ───────
+// Reused on the attempt beat (novice "study one first" scaffold) and the mark
+// beat (corrective "compare with a full-mark answer" reveal). Each segment is
+// tied to the ribbon it earns and lights in sequence — animation encodes the
+// marks accruing, not decoration. Cards with no modelAnswer render nothing.
+const ModelAnswerPanel: React.FC<{ card: RepCard }> = ({ card }) => {
+  const m = card.modelAnswer;
+  if (!m) return null;
+  return (
+    <div className="rounded-xl border-2 p-4" style={{ borderColor: COLORS.success, backgroundColor: COLORS.successTint }}>
+      <p className="text-[10px] font-bold uppercase tracking-[0.15em] mb-3" style={{ color: COLORS.successDarkText }}>A full-mark answer — each part earns its mark</p>
+      <div className="space-y-2.5">
+        {m.segments.map((seg, i) => {
+          const ribbon = card.ribbons[seg.ribbonIndex];
+          return (
+            <MotionDiv key={i} initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.18, duration: 0.3 }} className="flex items-start gap-2.5">
+              <span className="mt-0.5 shrink-0 w-5 h-5 rounded-md flex items-center justify-center" style={{ backgroundColor: COLORS.success }}><Check size={12} className="text-white" /></span>
+              <div className="min-w-0">
+                <p className="text-sm leading-relaxed text-[#1A1A1A]">{seg.text}</p>
+                {ribbon && (
+                  <p className="text-[10px] font-bold uppercase tracking-wide mt-0.5" style={{ color: COLORS.successDarkText }}>
+                    earns: {ribbon.label}{ribbon.kind !== 'gate' ? ` · ${ribbon.marks} marks` : ''}
+                  </p>
+                )}
+              </div>
+            </MotionDiv>
+          );
+        })}
+      </div>
+      <p className="text-[10px] mt-3" style={{ color: COLORS.successDarkText }}>Model answer · {m.source}</p>
     </div>
   );
 };
@@ -154,6 +188,8 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
   const [ribbonHad, setRibbonHad] = useState<Record<string, boolean>>({});
   const [elapsed, setElapsed] = useState(0);
   const [finished, setFinished] = useState(false);
+  const [modelFirstOpen, setModelFirstOpen] = useState(false); // "show me one first" scaffold (attempt beat)
+  const [showCompare, setShowCompare] = useState(false);        // "compare with a full-mark answer" (mark beat)
   const recordedRef = useRef(false);
 
   const activeCards = useMemo(
@@ -183,6 +219,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
   const resetRep = () => {
     setConfidence(null); setAnswer(''); setTipOpen(false);
     setRibbonHad({}); setElapsed(0); setFinished(false);
+    setModelFirstOpen(false); setShowCompare(false);
     recordedRef.current = false; setBeat('intro');
   };
 
@@ -221,6 +258,13 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
   const timerProgress = elapsed / (card.minutes * 60);
   const atCap = timerProgress >= 1;
   const bankedAllTime = state.banked; // includes this rep once recorded
+
+  // "Show Me One" support routing (expertise reversal): novices and students who
+  // leaked this card before get the model scaffold nudged; the confident go cold.
+  // `leakCardIds` was tracked-but-unread until now — this gives it a consumer.
+  const hasModel = !!card.modelAnswer;
+  const leakedBefore = state.leakCardIds.includes(card.id);
+  const autoSuggestModel = hasModel && (confidence === 'unsure' || leakedBefore);
 
   const cardShell = 'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
 
@@ -304,6 +348,29 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
         <div className="font-serif text-lg leading-relaxed text-[#1A1A1A] dark:text-white mb-4">
           {renderQuestion(card, !!card.commandWord && commandResolves(card), tipOpen, () => setTipOpen(v => !v))}
         </div>
+
+        {/* "Show me one first" — opt-in worked example for novices (Sweller/Kalyuga
+            expertise reversal); nudged for unsure/leaked, never auto-spoils the attempt. */}
+        {hasModel && (modelFirstOpen ? (
+          <div className="mb-5">
+            <ModelAnswerPanel card={card} />
+            <button type="button" onClick={() => setModelFirstOpen(false)} className="mt-2 text-[12px] font-semibold" style={{ color: '#7a7068' }}>
+              Hide — I’ll try it cold
+            </button>
+          </div>
+        ) : (
+          <button
+            type="button"
+            onClick={() => setModelFirstOpen(true)}
+            className="w-full mb-4 rounded-xl border-2 px-3 py-2.5 text-left text-[12.5px] font-semibold inline-flex items-center gap-2 transition-colors"
+            style={autoSuggestModel
+              ? { borderColor: COLORS.accent, backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText }
+              : { borderColor: COLORS.border, backgroundColor: '#FFFFFF', color: COLORS.accentDarkText }}
+          >
+            <BookOpen size={14} className="shrink-0" />
+            {autoSuggestModel ? 'New to this kind of question? See a full-mark answer first' : 'Show a full-mark answer first'}
+          </button>
+        ))}
 
         {card.answerKind === 'paper' ? (
           <div className="rounded-xl border-2 border-dashed p-5 mb-5 text-center" style={{ borderColor: '#d0cdc8', backgroundColor: '#F9F9F7' }}>
@@ -408,6 +475,25 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
             {derived.gateMissed ? card.marks : derived.onTable}
           </span>
         </div>
+
+        {/* Corrective feedback (pretesting boundary condition, Kornell et al.):
+            turn the blind self-mark into a checkable diff against a full-mark answer. */}
+        {hasModel && (
+          <div className="mb-5">
+            {showCompare ? (
+              <ModelAnswerPanel card={card} />
+            ) : (
+              <button
+                type="button"
+                onClick={() => setShowCompare(true)}
+                className="w-full rounded-xl border-2 px-3 py-2.5 text-[12.5px] font-semibold inline-flex items-center justify-center gap-2 transition-colors"
+                style={{ borderColor: COLORS.success, backgroundColor: '#FFFFFF', color: COLORS.successDarkText }}
+              >
+                <BookOpen size={14} /> Compare with a full-mark answer
+              </button>
+            )}
+          </div>
+        )}
 
         <PrimaryActionButton label="See what you missed" onClick={goDone} disabled={!derived.allMarked} className="w-full" />
         {!derived.allMarked && <p className="text-[11px] text-center text-zinc-400 mt-2">Mark every point above to continue.</p>}
