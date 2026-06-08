@@ -47,18 +47,45 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[] }> 
   const [phase, setPhase] = useState<'spot' | 'reveal'>('spot');
   const [wrong, setWrong] = useState<Set<number>>(new Set());
   const [usedReveal, setUsedReveal] = useState(false);
+  // Higher / Ordinary filter — a command-word question comes from a specific
+  // level's paper; 'common' (if any) shows at both.
+  const [levelFilter, setLevelFilter] = useState<'higher' | 'ordinary'>('higher');
+  const atLevel = (q: CommandWordQuestion) => q.level === 'common' || q.level === levelFilter;
 
-  const subjects = useMemo(() => commandSubjects(), []);
+  // Subjects with at least one question at the selected level (count = visible).
+  const subjects = useMemo(() => commandSubjects()
+    .map(s => ({ ...s, count: questionsForSubject(s.subjectId).filter(q => q.level === 'common' || q.level === levelFilter).length }))
+    .filter(s => s.count > 0), [levelFilter]);
   const studentSet = useMemo(() => new Set((studentSubjects ?? []).map(s => s.toLowerCase())), [studentSubjects]);
   const comingSoon = useMemo(
     () => (studentSubjects ?? []).filter(name => !subjects.some(s => s.subjectLabel.toLowerCase() === name.toLowerCase())),
     [studentSubjects, subjects],
   );
 
-  const queue = subjectId ? questionsForSubject(subjectId) : [];
+  const queue = subjectId ? questionsForSubject(subjectId).filter(atLevel) : [];
   const q: CommandWordQuestion | undefined = queue[qIndex];
 
   const tokens = useMemo(() => (q ? q.stem.split(/(\s+)/) : []), [q]);
+
+  // Token indices that make up the command word — supports MULTI-WORD cues
+  // ("Account for", "To what extent", "Show that", "Distinguish between"), which
+  // a single-token match could never catch. Marks every matching run, so any
+  // word of the cue is tappable and single-word cues keep working unchanged.
+  const cmdIndices = useMemo(() => {
+    const set = new Set<number>();
+    if (!q) return set;
+    const cmdWords = q.commandWord.toLowerCase().split(/\s+/).map(w => w.replace(/[^a-z]/g, '')).filter(Boolean);
+    if (cmdWords.length === 0) return set;
+    const wordPos = tokens.map((t, i) => (/^\s+$/.test(t) ? -1 : i)).filter(i => i >= 0);
+    for (let p = 0; p + cmdWords.length <= wordPos.length; p++) {
+      let ok = true;
+      for (let k = 0; k < cmdWords.length; k++) {
+        if (norm(tokens[wordPos[p + k]]) !== cmdWords[k]) { ok = false; break; }
+      }
+      if (ok) for (let k = 0; k < cmdWords.length; k++) set.add(wordPos[p + k]);
+    }
+    return set;
+  }, [q, tokens]);
 
   const startSubject = (sid: string) => { setSubjectId(sid); setQIndex(0); resetQuestion(); setView('play'); };
   const resetQuestion = () => { setPhase('spot'); setWrong(new Set()); setUsedReveal(false); };
@@ -69,9 +96,9 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[] }> 
     recordResult(q.id, q.commandWord, firstTry);
   };
 
-  const onTapToken = (i: number, token: string) => {
+  const onTapToken = (i: number) => {
     if (!q || phase === 'reveal') return;
-    if (norm(token) === q.commandWord.toLowerCase()) {
+    if (cmdIndices.has(i)) {
       solve(wrong.size === 0 && !usedReveal);
     } else {
       setWrong(prev => new Set(prev).add(i));
@@ -97,6 +124,22 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[] }> 
           Half of exam technique is reading the question right. Pick a subject, find the command word in real questions,
           and learn exactly what each one is telling you to do — and the trap that loses marks.
         </p>
+
+        {/* Higher / Ordinary level filter */}
+        <div className="flex items-center gap-2.5 mb-5">
+          <span className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: '#9e9186' }}>Your level</span>
+          <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50">
+            {(['higher', 'ordinary'] as const).map(lv => (
+              <button
+                key={lv}
+                onClick={() => setLevelFilter(lv)}
+                className={`px-4 py-1.5 rounded-lg text-[13px] transition-all ${levelFilter === lv ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-semibold shadow-sm' : 'text-zinc-500 dark:text-zinc-400'}`}
+              >
+                {lv === 'higher' ? 'Higher' : 'Ordinary'}
+              </button>
+            ))}
+          </div>
+        </div>
 
         {state.wordsMet.length > 0 && (
           <div className="rounded-2xl p-5 mb-6" style={{ backgroundColor: INDIGO_TINT }}>
@@ -170,7 +213,7 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[] }> 
             <p className="text-[18px] leading-[1.7] mb-5" style={{ color: '#1a1a1a', fontFamily: "'Source Serif 4', serif" }}>
               {tokens.map((tok, i) => {
                 if (/^\s+$/.test(tok)) return <span key={i}>{tok}</span>;
-                const isCmd = norm(tok) === q.commandWord.toLowerCase() && norm(tok).length > 0;
+                const isCmd = cmdIndices.has(i);
                 const isWrong = wrong.has(i);
                 if (phase === 'reveal' && isCmd) {
                   return <span key={i} className="rounded px-1 py-0.5 font-semibold" style={{ backgroundColor: HL_BG, color: HL_TEXT }}>{tok}</span>;
@@ -178,7 +221,7 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[] }> 
                 return (
                   <button
                     key={i}
-                    onClick={() => onTapToken(i, tok)}
+                    onClick={() => onTapToken(i)}
                     disabled={phase === 'reveal'}
                     className="rounded transition-colors"
                     style={isWrong
