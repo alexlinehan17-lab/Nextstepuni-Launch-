@@ -1226,6 +1226,103 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     marksWeight: 10,
     figure: { src: '/exam-figures/maths/mathematics-2021-ol-composite-area-perimeter.png', alt: 'A composite 2D shape from an SEC exam paper, labelled figure ABCDE. A large upright square ACDE forms the upper part, with corners E (top-left), D (top-right), A (bottom-left) and C (bottom-right) of the square. Below the side AC, two slanted equal sides AB and BC drop to a lower vertex B, forming a triangle ABC; a dashed point F at the centre of the figure with dashed lines to A and C marks the apex of the smaller square ABCF, of which triangle ABC is the lower half. The side AB is labelled \'2 cm\'. The diagonal AC is shared between the triangle and the base of the large square.', source: 'SEC Leaving Certificate Mathematics 2021 Ordinary Level, Paper 2 Q2(b) — © State Examinations Commission' },
   },
+  // ── Biology (OL figures) ──
+  {
+    id: 'biology-2021-ol-digestive-system',
+    subjectId: 'biology', topicId: 'biology-2-2',
+    subjectLabel: 'Biology', topicLabel: 'Transport and Nutrition',
+    focus: 'Digestive system (diagram)', level: 'ordinary',
+    gist: 'The human digestive system is one long tube with helper organs attached. Trace food downwards: it leaves the stomach, where hydrochloric acid and enzymes start protein digestion, then enters the small intestine (the first loop is the duodenum) where most digestion and absorption happens. The liver sits above the stomach and makes bile, which is stored in the gall bladder; the pancreas adds digestive juices into the duodenum. Undigested material then passes into the colon (large intestine), where water is reabsorbed. Knowing the position of each organ lets you name an unlabelled diagram with confidence.',
+    oneMove: {
+      label: 'Use position + the free label to anchor every letter',
+      text: 'The gall bladder is already named for you, and it always tucks under the liver - so the big organ right above it is the liver, and the sac it empties into is the stomach. Once you fix those, the first loop coming off the stomach is the duodenum (small intestine) and the wide framing loop around the small intestine is the colon. Anchor from the free label outward rather than guessing each letter cold.',
+    },
+    check: {
+      prompt: 'In the digestive system diagram above, name the parts labelled A, B, C, D and E, and state which acid is released by part C.',
+      modelAnswer: 'A = duodenum (small intestine). B = liver. C = stomach. D = pancreas. E = colon (large intestine). The acid released by part C (the stomach) is hydrochloric acid.',
+      needed: ['A = duodenum / small intestine', 'B = liver', 'C = stomach', 'D = pancreas', 'E = colon / large intestine', 'Stomach releases hydrochloric acid'],
+    },
+    source: 'SEC Leaving Certificate Biology 2021 Ordinary Level marking scheme, Q14(b): A duodenum (small intestine), B liver, C stomach, D pancreas, E colon (large intestine); acid released by C = hydrochloric acid',
+    marksWeight: 18,
+    figure: { src: '/exam-figures/biology/biology-2021-ol-digestive-system.png', alt: 'A line drawing of the human digestive system seen from the front, with six leader-arrow labels. \'Gall bladder\' points to a small sac tucked under a large smooth organ at the top left. B points to that large organ above it (the liver). C points to the rounded sac to the right of the liver (the stomach). A points to the short first loop of gut emerging just below the stomach (the duodenum/start of the small intestine). D points to an elongated organ behind the stomach feeding into that loop (the pancreas). The coiled small intestine fills the lower middle, and E points to the wider tube that frames it around the outside (the colon/large intestine), which narrows to the rectum at the very bottom.', source: 'SEC Leaving Certificate Biology 2021 Ordinary Level, Q14(b) - © State Examinations Commission' },
+  },
+  {
+    id: 'biology-2021-ol-ear-structure',
+    subjectId: 'biology', topicId: 'biology-2-4',
+    subjectLabel: 'Biology', topicLabel: 'Responses to Stimuli',
+    focus: 'Human ear (diagram)', level: 'ordinary',
+    gist: 'The ear is the body\'s organ of hearing and balance, and you read it from outside in. Sound waves funnelled by the outer ear (pinna) hit the eardrum, which vibrates. Those vibrations cross the air-filled middle ear (via the tiny ear bones) and reach the cochlea, the coiled, snail-shaped structure that converts vibrations into nerve impulses for hearing. The looping semi-circular canals sit above the cochlea and control balance, not hearing. Impulses leave along the auditory nerve to the brain. The Eustachian tube links the middle ear to the throat to equalise pressure.',
+    oneMove: {
+      label: 'Split balance from hearing by SHAPE, then trace inwards',
+      text: 'Don\'t lump the inner-ear structures together. The looping rings at the top are the semi-circular canals - their job is balance. The single coiled snail shape is the cochlea - its job is hearing. The eardrum is the taut membrane at the entrance to the middle ear. Naming the part and its correct function each score, so always give both: e.g. \'cochlea - converts vibrations to nerve impulses\', not just \'cochlea\'.',
+    },
+    check: {
+      prompt: 'In the ear diagram above, name the parts labelled A, B and C, and give the function of each.',
+      modelAnswer: 'A = semi-circular canals - function: balance. B = cochlea - function: hearing (it converts sound vibrations into nerve impulses). C = eardrum - function: it detects sound and passes the sound vibrations on into the middle ear.',
+      needed: ['A = semi-circular canals; function = balance', 'B = cochlea; function = hearing / convert vibrations to nerve impulses', 'C = eardrum; function = detect sound / pass vibrations to the middle ear'],
+    },
+    source: 'SEC Leaving Certificate Biology 2021 Ordinary Level marking scheme, Q16(a): A semi-circular canals (balance), B cochlea (hearing / convert vibrations to nerve impulses), C eardrum (detect sound / pass sound vibrations to the middle ear)',
+    marksWeight: 18,
+    figure: { src: '/exam-figures/biology/biology-2021-ol-ear.png', alt: 'A cross-section line drawing of the human ear with six leader-arrow labels. On the left is the large external flap of the outer ear (pinna), feeding into a narrow ear canal that runs to the right toward the eardrum. C points to the small taut membrane (eardrum) at the inner end of the canal. Beyond it is the air-filled \'Middle ear\', labelled with an upward arrow. A points to the looping rings at the top of the inner ear (the semi-circular canals). B points to the coiled, snail-shell-shaped structure (the cochlea) below the canals. The \'Auditory nerve\' is labelled leaving the cochlea to the right, and the \'Eustachian tube\' is labelled as the channel running down and away from the middle ear.', source: 'SEC Leaving Certificate Biology 2021 Ordinary Level, Q16(a) - © State Examinations Commission' },
+  },
+  {
+    id: 'biology-2021-ol-foetus-womb',
+    subjectId: 'biology', topicId: 'biology-2-5',
+    subjectLabel: 'Biology', topicLabel: 'Reproduction and Growth',
+    focus: 'Foetus in the womb (diagram)', level: 'ordinary',
+    gist: 'This diagram shows a developing foetus inside the female reproductive system. Three free labels orient you: the placenta is the disc on the womb wall that lets nutrients and oxygen pass from mother to foetus and waste pass back; the umbilical cord connects the foetus to the placenta; and the womb wall is the muscular boundary that contracts during childbirth. Above the womb, the two fallopian tubes (oviducts) curve out to the ovaries - the ovary is where egg cells are produced and released. At the base of the womb, the cervix is the narrow neck that opens (dilates) to let the baby out.',
+    oneMove: {
+      label: 'Read the female tract top-down: tube -> ovary -> cervix',
+      text: 'Use the three printed labels (placenta, umbilical cord, womb wall) as your map, then work the lettered parts by position. The curving channels at the top are the fallopian tubes; the rounded organ each one reaches is the ovary; the narrow neck at the very bottom of the womb is the cervix. Don\'t confuse the fallopian tube (the curving channel) with the ovary (the round end structure) - they score as two different marks.',
+    },
+    check: {
+      prompt: 'In the diagram above, identify the structures labelled A, B and C, and give two functions of the placenta.',
+      modelAnswer: 'A = fallopian tube (oviduct). B = ovary. C = cervix. Two functions of the placenta: (1) it allows food/nutrients and oxygen to pass from the mother to the foetus; (2) it allows waste products (e.g. carbon dioxide) to pass from the foetus to the mother. (Also acceptable: it produces hormones, prevents pathogens reaching the foetus, or keeps the mother\'s and foetus\'s blood separate.)',
+      needed: ['A = fallopian tube / oviduct', 'B = ovary', 'C = cervix', 'Placenta function 1: passes nutrients/food/oxygen to the foetus', 'Placenta function 2: passes waste from foetus to mother (or produces hormones / prevents pathogens / keeps the two bloods separate)'],
+    },
+    source: 'SEC Leaving Certificate Biology 2021 Ordinary Level marking scheme, Q17(a): A fallopian tube (oviduct), B ovary, C cervix; placenta functions = allow food/nutrients/oxygen to foetus, allow waste to mother, produce hormones, prevent pathogens reaching foetus, keep foetal and maternal blood separate',
+    marksWeight: 15,
+    figure: { src: '/exam-figures/biology/biology-2021-ol-foetus-womb.png', alt: 'A line drawing of the female reproductive system holding a curled-up foetus, with six labels. Two curving channels arch outward from the top of the central womb, each ending in a small rounded structure: A (with an upward arrow) points to the left curving channel (the fallopian tube/oviduct), and B points to the rounded structure at the end of the right channel (the ovary). Inside the pear-shaped womb a foetus lies head-down. \'Placenta\' points to the textured disc attached to the upper inner wall; \'Umbilical cord\' points to the twisted cord linking the foetus to that disc; \'Womb wall\' points to the thick muscular outer boundary on the right. C points to the narrow neck at the very bottom of the womb (the cervix).', source: 'SEC Leaving Certificate Biology 2021 Ordinary Level, Q17(a) - © State Examinations Commission' },
+  },
+  // ── Geography (OL figures) ──
+  {
+    id: 'geography-2022-ol-population-pyramid',
+    subjectId: 'geography', topicId: 'geography-4-0',
+    subjectLabel: 'Geography', topicLabel: 'Population: Change Over Time and Space',
+    focus: 'Population pyramid (graph)', level: 'ordinary',
+    gist: 'A population pyramid is a back-to-back horizontal bar chart of a country\'s age-sex structure: age groups stack up the centre (youngest at the bottom, 0-4, oldest at the top, 85+), males read out to the LEFT, females out to the RIGHT, and the axis is % of the TOTAL population (not % of that age group). On the Ordinary-Level short questions every mark is sitting on the chart if you read it carefully. Three moves cover almost every variant. LIFT: read one bar value straight off (the female 20-24 bar). COMPARE: for a single age group, see which side\'s bar is longer to say \'more males or more females\'. ADD: for a \'percentage of total population aged X\' calculation, you must add BOTH the male bar AND the female bar for that age group, because each side is only half the story. The classic slip is answering with just one side. The shape also tells a story: a developed country like projected-2050 Ireland has fairly even, near-vertical sides (low birth rate, ageing), whereas a developing country tapers to a wide base and narrow top.',
+    oneMove: {
+      label: 'The exam move',
+      text: 'For a \'calculate the percentage of the total population aged X\' question, ADD the male bar and the female bar for that age group. Each side is only its own sex\'s share of the total, so one bar alone always under-counts. For a \'more males or females?\' question, just compare which side\'s bar is longer for that one row.',
+    },
+    check: {
+      prompt: 'Using the population pyramid above: (a) what percentage of females are projected to be aged 20-24? (b) in the 85+ age group, are there projected to be more males or more females? and (c) calculate the percentage of the total population that is projected to be aged 65-69.',
+      modelAnswer: '(a) 2.5% — read straight off the female (right-hand) bar for the 20-24 row. (b) Females — in the 85+ row the female bar reaches 2.5% while the male bar only reaches 1.9%, so females outnumber males. (c) Aged 65-69 = the male bar (3.1%) PLUS the female bar (3.4%) = 6.5% of the total population. You must add both sides, not read just one bar.',
+      needed: ['Female 20-24 read correctly as 2.5%', '85+ identified as more females (2.5% female vs 1.9% male)', '65-69 total = male 3.1% + female 3.4% = 6.5%, adding BOTH sides'],
+    },
+    source: 'SEC Leaving Certificate Geography 2022 Ordinary Level, Q11A Population Dynamics (marking scheme: (i) 2.5 / (ii) Females / (iv) 6.5)',
+    marksWeight: 12,
+    figure: { src: '/exam-figures/geography/geography-2022-ol-population-pyramid.png', alt: 'A back-to-back horizontal bar chart titled \'Projected Population Pyramid for Ireland in 2050\'. Age groups in years run up the centre from 0-4 at the bottom to 85+ at the top; blue Males bars extend to the left and pink Females bars to the right, and the horizontal axis is labelled \'% of Total Population\' running 0 to 4 on each side. Reading each row Male / Female: 85+ 1.9 / 2.5; 80-84 1.9 / 2.1; 75-79 2.6 / 2.8; 70-74 3.0 / 3.3; 65-69 3.1 / 3.4; 60-64 2.7 / 2.8; 55-59 2.6 / 2.6; 50-54 2.8 / 2.8; 45-49 3.1 / 3.0; 40-44 3.5 / 3.4; 35-39 3.5 / 3.4; 30-34 3.1 / 3.0; 25-29 2.8 / 2.7; 20-24 2.6 / 2.5; 15-19 2.6 / 2.4; 10-14 2.7 / 2.5; 5-9 2.7 / 2.6; 0-4 2.7 / 2.6. The sides are fairly even and near-vertical, the profile of an ageing developed country. Attribution: \'Amended from www.populationpyramid.net\'.', source: 'SEC Leaving Certificate Geography 2022 Ordinary Level, Q11 — © State Examinations Commission' },
+  },
+  {
+    id: 'geography-2024-ol-exports-pie-chart',
+    subjectId: 'geography', topicId: 'geography-3-2',
+    subjectLabel: 'Geography', topicLabel: 'The Global Economy',
+    focus: 'Irish exports (pie chart)', level: 'ordinary',
+    gist: 'A pie chart shows how a whole (here, all of Ireland\'s exported goods) is split into shares, and because it is a whole, EVERY slice must add up to exactly 100%. That single fact unlocks the hardest mark on these questions. The Ordinary-Level moves are: MATCH a slice to its destination using the colour key (legend), LIFT a labelled value straight off a slice, IDENTIFY the biggest slice as the largest share, and — the calculation that catches people — FIND THE MISSING SLICE \'X\' by adding up all the labelled slices and subtracting from 100. The trap is reading the legend wrong: two slices can share the same value (here the United Kingdom and Germany are both 11%), so you must match by colour, not by size alone, and check the legend order against the slices. The big takeaway about Irish trade: the United States is by far Ireland\'s largest single export destination, reflecting how globalised and US-linked the Irish economy is, while the UK\'s share has been shrinking.',
+    oneMove: {
+      label: 'The exam move',
+      text: 'To find a missing slice labelled X, use the fact that a pie chart sums to 100%: add every labelled slice and subtract from 100. Here 32 + 11 + 11 + 8 + 7 = 69, so X = 100 - 69 = 31%. Match same-value slices (UK and Germany are both 11%) by their legend colour, never by size alone.',
+    },
+    check: {
+      prompt: 'Using the pie chart above: (a) which country did Ireland export 7% of its goods to? (b) what percentage of goods went to the United Kingdom? (c) calculate X, the percentage of goods that went to \'Other\' destinations; and (d) which country received the largest amount of goods from Ireland in 2021?',
+      modelAnswer: '(a) China — the 7% (green) slice matches China in the legend. (b) The United Kingdom is the grey slice = 11%. (c) A pie chart totals 100%, so X = 100 - (32 + 11 + 11 + 8 + 7) = 100 - 69 = 31%. (d) The United States — its blue slice is the largest at 32%, so it received the largest amount of goods.',
+      needed: ['7% slice identified as China', 'United Kingdom = 11% (grey slice, matched by colour not size)', 'X = 100 - (32+11+11+8+7) = 31%', 'Largest destination = United States (32%)'],
+    },
+    source: 'SEC Leaving Certificate Geography 2024 Ordinary Level, Q8A Irish Trade (marking scheme: (i) China / (ii) 11 / (iii) 31 / (iv) United States)',
+    marksWeight: 15,
+    figure: { src: '/exam-figures/geography/geography-2024-ol-exports-pie-chart.png', alt: 'A pie chart titled \'Destination of Goods Exported from Ireland 2021\' with six slices and a colour legend (United States, Germany, Belgium, United Kingdom, China, Other). By colour: United States is the large blue slice labelled 32%; Other is the orange slice labelled X%; United Kingdom is a grey slice labelled 11%; Germany is a yellow/gold slice labelled 11%; Belgium is a pink slice labelled 8%; and China is a green slice labelled 7%. The labelled slices (32, 11, 11, 8, 7) sum to 69, leaving the orange \'Other\' slice X = 31%. The United States blue slice is clearly the largest. Attribution: \'Amended from Eurostat\'.', source: 'SEC Leaving Certificate Geography 2024 Ordinary Level, Q8 — © State Examinations Commission' },
+  },
 ];
 
 /** Subject ids that currently have recovery content (drives the picker). */
