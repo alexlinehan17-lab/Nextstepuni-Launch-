@@ -46,8 +46,10 @@ type Beat = 'gist' | 'move' | 'check' | 'reveal' | 'done';
 // (Biology Units, Maths Strands, Geography Core/Elective/Option units, etc.).
 const STRAND_INFO = new Map<string, { name: string; order: number }>();
 CURRICULUM.forEach((subj) => subj.strands.forEach((st, i) => STRAND_INFO.set(st.id, { name: st.name, order: i })));
-/** topicId 'biology-2-3' → strand id 'biology-2'. */
-const strandIdOf = (topicId: string) => topicId.split('-').slice(0, 2).join('-');
+/** topicId → strand id by dropping the last segment (the subtopic index).
+ *  'biology-2-3' → 'biology-2'; 'home-economics-0-1' → 'home-economics-0'
+ *  (handles hyphenated subject ids, which slicing the first 2 parts did not). */
+const strandIdOf = (topicId: string) => topicId.split('-').slice(0, -1).join('-');
 
 const fade = {
   initial: { opacity: 0, y: 10 },

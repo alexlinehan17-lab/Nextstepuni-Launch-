@@ -22,6 +22,14 @@ describe('Catch-Up Lane recovery cards', () => {
     }
   });
 
+  it('every card topic resolves to a real curriculum strand (drives category grouping)', () => {
+    const strandIds = new Set(CURRICULUM.flatMap((s) => s.strands.map((st) => st.id)));
+    for (const c of RECOVERY_CARDS) {
+      const strand = c.topicId.split('-').slice(0, -1).join('-');
+      expect(strandIds.has(strand), `${c.id}: strand "${strand}" (from topicId "${c.topicId}") is not a curriculum strand`).toBe(true);
+    }
+  });
+
   it('every card is well-formed', () => {
     for (const c of RECOVERY_CARDS) {
       expect(c.gist.trim().length, `${c.id}: empty gist`).toBeGreaterThan(0);
