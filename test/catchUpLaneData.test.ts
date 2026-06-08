@@ -6,6 +6,7 @@
  * curriculum subject + subtopic id (the picker filters on these), be
  * well-formed, and have a unique id.
  */
+import { existsSync } from 'node:fs';
 import { describe, it, expect } from 'vitest';
 import { RECOVERY_CARDS } from '../catchUpLaneData';
 import { CURRICULUM } from '../curriculum';
@@ -36,6 +37,15 @@ describe('Catch-Up Lane recovery cards', () => {
   it('all card ids are unique', () => {
     const ids = RECOVERY_CARDS.map((c) => c.id);
     expect(new Set(ids).size).toBe(ids.length);
+  });
+
+  it('every figure points to a committed asset, with alt text + SEC attribution', () => {
+    for (const c of RECOVERY_CARDS.filter((c) => c.figure)) {
+      const f = c.figure!;
+      expect(existsSync('public' + f.src), `${c.id}: figure asset public${f.src} is missing`).toBe(true);
+      expect(f.alt.trim().length, `${c.id}: figure has no alt text`).toBeGreaterThan(0);
+      expect(/SEC|State Examinations/i.test(f.source), `${c.id}: figure source lacks SEC attribution`).toBe(true);
+    }
   });
 
   it('covers the four target subjects', () => {

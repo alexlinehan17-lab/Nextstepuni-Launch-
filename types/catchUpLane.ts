@@ -49,6 +49,13 @@ export interface RecoveryCard {
   source: string;
   /** Conservative heuristic: roughly how many marks this topic protects. */
   marksWeight: number;
+  /**
+   * Optional figure for visually-dependent topics (a graph, diagram, map, or
+   * comprehension extract a description can't replace). Cropped from the real
+   * SEC paper via tools/extract_exam_figure.py and stored under public/exam-figures/.
+   * `source` MUST carry the SEC attribution (used under NextStepUni's SEC agreement).
+   */
+  figure?: { src: string; alt: string; source: string };
 }
 
 /** A light, optional record of days the student flagged as missed. */

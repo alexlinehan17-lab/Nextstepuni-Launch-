@@ -598,6 +598,28 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     source: 'LC Geography — Elective (Settlement: Site, Situation, Function); marking criteria from 2024 HL Q10B \'Urban Settlement\' (Bantry: three reasons @ 10 marks each — reason stated 2 + map/photo evidence 2 + explanation; no/incorrect map reference loses the evidence marks). Related OS-map settlement question: 2025 HL Q12B \'Settlement Distribution\'.',
     marksWeight: 30,
   },
+  {
+    id: 'bio-photosynthesis-absorption',
+    subjectId: 'biology', topicId: 'biology-1-1',
+    subjectLabel: 'Biology', topicLabel: 'Cell Metabolism', level: 'higher',
+    gist: 'Photosynthesis happens in the chloroplast, where the pigment chlorophyll absorbs light energy — but not all colours equally. Chlorophyll a and b absorb mainly in the blue/violet and red parts of the spectrum and absorb green light least, so green is reflected (which is why leaves look green). The absorbed energy excites electrons that drive the light stage.',
+    oneMove: {
+      label: 'Read the peaks — and remember green is REFLECTED, not absorbed',
+      text: 'On an absorption-spectrum graph the colour absorbed “most” is wherever the curve PEAKS (blue/violet and red). The dip across the green/yellow band means that light is reflected, not used — the classic exam point that explains why plants are green.',
+    },
+    check: {
+      prompt: 'Using the graph above, which colour of light does chlorophyll b absorb most strongly, and what happens to green light?',
+      modelAnswer: 'Chlorophyll b absorbs most strongly in the blue (its tallest peak), with a second peak in the red. Green light is barely absorbed — it is reflected/transmitted, which is why leaves appear green.',
+      needed: ['Blue (chlorophyll b’s main peak)', 'Green light is reflected / not absorbed', 'Why leaves appear green'],
+    },
+    source: 'LC Biology syllabus — Unit 2: Cell Metabolism (Photosynthesis)',
+    marksWeight: 9,
+    figure: {
+      src: '/exam-figures/biology/bio-2023-hl-photosynthesis-absorption.png',
+      alt: 'Graph of light absorption against colour of light (violet to red) for chlorophyll a (dotted) and chlorophyll b (solid): peaks in blue/violet and red, a dip across green and yellow.',
+      source: 'SEC Leaving Certificate Biology 2023 Higher Level, Q7 — © State Examinations Commission',
+    },
+  },
 ];
 
 /** Subject ids that currently have recovery content (drives the picker). */

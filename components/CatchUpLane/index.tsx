@@ -368,6 +368,15 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
                 </div>
               </div>
 
+              {/* Figure for visually-dependent topics — the real SEC figure, shown
+                  (not described), with attribution. Persists across the beats. */}
+              {card.figure && (
+                <figure className="mb-5 rounded-xl border-2 border-[#1A1A1A] dark:border-zinc-700 overflow-hidden bg-white">
+                  <img src={card.figure.src} alt={card.figure.alt} loading="lazy" className="w-full h-auto block" />
+                  <figcaption className="text-[10px] px-3 py-1.5" style={{ color: CYAN_DARK_TEXT, backgroundColor: CYAN_TINT }}>{card.figure.source}</figcaption>
+                </figure>
+              )}
+
               {beat === 'gist' && (
                 <>
                   <p className="text-[11px] font-bold uppercase tracking-[0.14em] mb-2" style={{ color: '#9e9186' }}>The 90-second version</p>
