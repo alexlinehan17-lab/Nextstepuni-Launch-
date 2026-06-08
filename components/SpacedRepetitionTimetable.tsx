@@ -32,6 +32,8 @@ import { COLORS } from '../design/tokens';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useInnovationData } from '../contexts/InnovationDataContext';
+import { usePlanCues } from '../hooks/usePlanCues';
+import { PLAN_TRIGGERS, PLAN_WHY, defaultThen } from '../planIntentionData';
 
 export interface TimetableBlockInfo {
   subject: string;
@@ -293,7 +295,48 @@ const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> =
 
 // ─── Main Component ─────────────────────────────────────────────────────────
 
+// ─── Per-block "if-then" cue editor (The Intention Engine) ───────────────────
+// Self-contained so it re-seeds per block (keyed by blockId in the modal): pick a
+// fixed situational trigger + write the "…then I'll…" line, bound to the block.
+// Implementation intentions ~double follow-through (Gollwitzer & Sheeran 2006).
+const BlockCueEditor: React.FC<{ subject: string; saved?: { trigger: string; then: string }; onSave: (cue: { trigger: string; then: string }) => void }> = ({ subject, saved, onSave }) => {
+  const [open, setOpen] = useState(!!saved);
+  const [trigger, setTrigger] = useState(saved?.trigger ?? PLAN_TRIGGERS[0]);
+  const [thenText, setThenText] = useState(saved?.then ?? defaultThen(subject));
+  const [savedOk, setSavedOk] = useState(!!saved);
+
+  if (!open) {
+    return (
+      <button type="button" onClick={() => setOpen(true)} className="w-full py-2.5 rounded-xl text-sm font-semibold inline-flex items-center justify-center gap-1.5" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)' }}>
+        + Add your if-then
+      </button>
+    );
+  }
+  return (
+    <div className="rounded-xl p-3 text-left" style={{ backgroundColor: '#F9F9F7', border: '0.5px solid rgba(0,0,0,0.07)' }}>
+      <p className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: COLORS.accentDarkText }}>Your if-then for this block</p>
+      <div className="flex flex-wrap gap-1.5 mb-2">
+        {PLAN_TRIGGERS.map(t => {
+          const on = trigger === t;
+          return (
+            <button key={t} type="button" onClick={() => { setTrigger(t); setSavedOk(false); }} className="text-[11px] font-medium px-2 py-1 rounded-full transition-colors" style={on ? { backgroundColor: COLORS.accent, color: '#fff' } : { backgroundColor: '#fff', color: '#5a544e', border: '1px solid #d0cdc8' }}>
+              {t}
+            </button>
+          );
+        })}
+      </div>
+      <textarea value={thenText} onChange={e => { setThenText(e.target.value); setSavedOk(false); }} rows={2} className="w-full text-[13px] rounded-lg p-2 outline-none resize-none border" style={{ borderColor: '#d0cdc8', backgroundColor: '#fff', color: '#2a2622' }} placeholder="…then I’ll…" />
+      <p className="text-[11px] italic mt-1.5" style={{ color: COLORS.accentDarkText }}>“{trigger}, {thenText}”</p>
+      <button type="button" onClick={() => { onSave({ trigger, then: thenText.trim() }); setSavedOk(true); }} disabled={!thenText.trim()} className="w-full mt-2 py-2 rounded-lg text-[13px] font-bold text-white disabled:opacity-40" style={{ backgroundColor: COLORS.accent }}>
+        {savedOk ? 'Saved' : 'Save my if-then'}
+      </button>
+      <p className="text-[10px] leading-snug mt-2" style={{ color: '#7a7068' }}>{PLAN_WHY.text} <span className="block mt-0.5" style={{ color: '#A8A29E' }}>{PLAN_WHY.source}</span></p>
+    </div>
+  );
+};
+
 const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, uid, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, points = 0, onSpendPoints, onOpenJournal: _onOpenJournal, skippedSessions = [], onStudyNow, onBlockDurationChange: _onBlockDurationChange, schoolEvents = [] }) => {
+  const { cues: planCues, setCue: setPlanCue } = usePlanCues(uid);
   // ─── Curriculum flags (Phase 2 JC support) ────────────────────────────────
   // isJunior: branch points-vs-bands UI and priority algorithm.
   // isPreExamJunior: 1st/2nd-year JC users have no imminent exam; we frame
@@ -392,8 +435,8 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
     for (const key of filteredKeys) {
       totalBlocks += completions[key].length;
     }
-    return totalBlocks * 45;
-  }, [completions, studyHoursRange]);
+    return totalBlocks * (profile.defaultBlockDuration ?? 45);
+  }, [completions, studyHoursRange, profile.defaultBlockDuration]);
 
   const studiedHours = Math.floor(studiedMinutes / 60);
   const studiedRemainingMins = studiedMinutes % 60;
@@ -416,7 +459,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   weekEnd.setDate(weekStart.getDate() + 6);
 
   const totalSessions = timetable.reduce((sum, day) => sum + day.blocks.length, 0);
-  const totalMinutes = totalSessions * 45;
+  const totalMinutes = totalSessions * blockDuration;
   const _totalHours = Math.floor(totalMinutes / 60);
   const _remainingMins = totalMinutes % 60;
 
@@ -1124,20 +1167,16 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
                     {/* Deprioritise suggestion */}
                     {deprioritiseCandidates.length > 0 && (
-                      <div className="rounded-2xl overflow-hidden" style={{ backgroundColor: '#F59E0B', boxShadow: '0 4px 16px rgba(245,158,11,0.15)' }}>
-                        {/* Amber header */}
+                      <div className="rounded-2xl overflow-hidden" style={{ backgroundColor: '#FFFFFF', border: '2px solid #1A1A1A' }}>
+                        {/* Header — token system (was a banned raw-amber panel) */}
                         <div className="relative px-5 pt-5 pb-4">
-                          {/* Decorative blob */}
-                          <div className="absolute pointer-events-none" style={{ top: -20, right: -15, width: 80, height: 80, borderRadius: '50%', background: 'rgba(255,255,255,0.1)' }} />
-                          <div className="relative z-10">
-                            <div className="flex items-center gap-2 mb-2">
-                              <AlertTriangle size={16} style={{ color: 'rgba(0,0,0,0.5)' }} />
-                              <p className="text-[11px] font-bold uppercase tracking-[0.1em]" style={{ color: 'rgba(0,0,0,0.5)' }}>Subjects Outside Your Best 6</p>
-                            </div>
-                            <p className="text-[13px] leading-relaxed" style={{ color: 'rgba(0,0,0,0.7)' }}>
-                              Based on your target grades, <span className="font-bold" style={{ color: 'rgba(0,0,0,0.85)' }}>{deprioritiseCandidates.map(s => s.subjectName).join(' and ')}</span> {deprioritiseCandidates.length === 1 ? 'falls' : 'fall'} outside your top 6.
-                            </p>
+                          <div className="flex items-center gap-2 mb-2">
+                            <AlertTriangle size={16} style={{ color: COLORS.accent }} />
+                            <p className="text-[11px] font-bold uppercase tracking-[0.1em]" style={{ color: COLORS.accentDarkText }}>Subjects Outside Your Best 6</p>
                           </div>
+                          <p className="text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-300">
+                            Based on your target grades, <span className="font-bold text-[#1A1A1A] dark:text-white">{deprioritiseCandidates.map(s => s.subjectName).join(' and ')}</span> {deprioritiseCandidates.length === 1 ? 'falls' : 'fall'} outside your top 6.
+                          </p>
                         </div>
 
                         {/* Subject rows on white */}
@@ -1148,14 +1187,14 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                                 <div className={`w-2.5 h-2.5 rounded-full ${getSubjectColor(s.subjectName).dot}`} />
                                 <span className="font-semibold text-[#1A1A1A] dark:text-white">{s.subjectName}</span>
                               </div>
-                              <span className="font-mono font-bold" style={{ color: '#92400E' }}>{s.targetGrade} — {s.targetPoints} pts</span>
+                              <span className="font-mono font-bold" style={{ color: COLORS.accentDarkText }}>{s.targetGrade} — {s.targetPoints} pts</span>
                             </div>
                           ))}
                         </div>
 
                         {/* Warning callout on white */}
                         <div className="bg-white mx-3 mb-3 px-3 py-2.5 rounded-xl">
-                          <p className="text-[10px] leading-relaxed" style={{ color: '#92400E' }}>
+                          <p className="text-[10px] leading-relaxed" style={{ color: COLORS.accentDarkText }}>
                             <span className="font-bold">High-risk strategy.</span> Only deprioritise a subject if you're confident you're significantly stronger in at least 6 others. The timetable still allocates minimum sessions to every subject for safety.
                           </p>
                         </div>
@@ -1220,6 +1259,14 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                   {SESSION_TYPE_CONFIG[blockActionModal.block.sessionType].label} · {blockActionModal.block.durationMinutes} min
                 </p>
               </div>
+
+              {/* Bind a when-then cue to this block (The Intention Engine) */}
+              <BlockCueEditor
+                key={getBlockId(blockActionModal.block, blockActionModal.blockIndex)}
+                subject={blockActionModal.block.subjectName}
+                saved={planCues[getBlockId(blockActionModal.block, blockActionModal.blockIndex)]}
+                onSave={(cue) => setPlanCue(getBlockId(blockActionModal.block, blockActionModal.blockIndex), cue)}
+              />
 
               {/* Actions */}
               <div className="space-y-3">
