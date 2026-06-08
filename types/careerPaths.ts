@@ -46,6 +46,32 @@ export interface EducationRoute {
   detail: string;
 }
 
+/**
+ * "A Day in the Life" — a mistake-first decision moment from the real job.
+ * The student makes the call, often picks the tempting-but-wrong option, sees
+ * the realistic consequence, then the experienced-practitioner fix. Vicarious
+ * mastery rehearsal (Bandura 1997 — the strongest mover of self-efficacy).
+ * Each moment cites a real professional standard; paraphrased under the
+ * 15-word verbatim threshold, decision-support not drama.
+ */
+export interface ShiftMoment {
+  /** The dilemma, set in the real day-to-day. */
+  setup: string;
+  /** 2–3 choices; exactly one is correct. */
+  options: string[];
+  /** Index of the correct choice. */
+  correctIndex: number;
+  /** Index of the intuitive-but-wrong choice (the one most will reach for). */
+  temptingIndex: number;
+  /** Realistic outcome of the tempting-wrong choice. */
+  consequence: string;
+  /** The experienced-practitioner reasoning. */
+  fix: string;
+  /** Professional body / guidance the fix is grounded in. */
+  source: string;
+}
+export interface DayInLife { moments: ShiftMoment[]; }
+
 export interface CareerCard {
   id: string;
   title: string;
@@ -82,6 +108,9 @@ export interface CareerCard {
   matchStrings: string[];
   /** Source citations for the salary + route claims. */
   sources: string[];
+  /** Optional mistake-first decision sim ("A Day in the Life"). Per-card + optional:
+   *  careers without one show the standard 4-beat walkthrough unchanged. */
+  dayInLife?: DayInLife;
 }
 
 /** Persisted under progress/{uid}.careerPaths (additive-merge namespace). */
@@ -90,5 +119,7 @@ export interface CareerPathsState {
   seenIds: string[];
   /** Career ids saved / shortlisted. */
   savedIds: string[];
+  /** Per-career "could I see myself doing this?" self-rating (1–5) from the sim. */
+  shiftRatings?: Record<string, number>;
   updatedAt: string;
 }

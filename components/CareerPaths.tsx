@@ -18,10 +18,11 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, X, BookOpen, RotateCcw, Star, GraduationCap, ChevronDown, ExternalLink, ThumbsUp, Compass } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, X, BookOpen, RotateCcw, Star, GraduationCap, ChevronDown, ExternalLink, ThumbsUp, Compass, Check } from 'lucide-react';
+import { COLORS } from '../design/tokens';
 import { useCareerPaths } from '../hooks/useCareerPaths';
 import { CAREERS } from '../careerPathsData';
-import { type CareerCard } from '../types/careerPaths';
+import { type CareerCard, type ShiftMoment } from '../types/careerPaths';
 import {
   WORLDS, type ColorWorld, DeckStack, useDeckSound, Celebration, CountUp,
   FIELD_WORLD, careerIcon,
@@ -123,11 +124,87 @@ const CardFace: React.FC<{ c: CareerCard; saved: boolean; matched: boolean }> = 
   );
 };
 
-type Beat = 'front' | 'day' | 'deal' | 'route';
-const BEAT_IDX: Record<Beat, number> = { front: 0, day: 1, deal: 2, route: 3 };
+type Beat = 'front' | 'day' | 'deal' | 'shift' | 'route';
+
+// ─── "A Day in the Life" — mistake-first decision sim (Bandura vicarious mastery) ───
+// Make the call, often pick the tempting-wrong option, see the consequence (neutral,
+// never red-as-punishment), then the experienced move (success-tinted) with its source.
+const ShiftSim: React.FC<{ moments: ShiftMoment[]; wd: ColorWorld; savedRating?: number; onRate: (n: number) => void }> = ({ moments, wd, savedRating, onRate }) => {
+  const [idx, setIdx] = useState(0);
+  const [chosen, setChosen] = useState<number | null>(null);
+  const [phase, setPhase] = useState<'play' | 'rate'>('play');
+  const [rating, setRating] = useState<number | null>(savedRating ?? null);
+  const m = moments[idx];
+  const isLast = idx === moments.length - 1;
+
+  if (phase === 'rate') {
+    return (
+      <div>
+        <Eyebrow>Could you see yourself doing this?</Eyebrow>
+        <p className="text-[13px] mb-3" style={{ color: MUTED }}>No right answer — it’s just useful to know. This goes on your shortlist for your guidance counsellor.</p>
+        <div className="flex gap-2 mb-1.5">
+          {[1, 2, 3, 4, 5].map((n) => {
+            const on = rating === n;
+            return (
+              <button key={n} onClick={() => { setRating(n); onRate(n); }} className="flex-1 py-2.5 rounded-xl text-sm font-bold transition-colors" style={on ? { backgroundColor: wd.bg, color: '#fff' } : { backgroundColor: '#fff', color: INK, border: `2px solid ${HAIRLINE}` }}>{n}</button>
+            );
+          })}
+        </div>
+        <div className="flex justify-between text-[10px]" style={{ color: MUTED }}><span>Not for me</span><span>Definitely me</span></div>
+        {rating != null && <p className="text-[12px] mt-3 font-semibold" style={{ color: wd.deep }}>Saved.</p>}
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      <Eyebrow>Try a shift · {idx + 1} of {moments.length}</Eyebrow>
+      <p className="text-[16px] leading-snug font-semibold mb-3" style={{ color: INK, fontFamily: SERIF }}>{m.setup}</p>
+      <div className="space-y-2 mb-3">
+        {m.options.map((opt, i) => {
+          const isCorrect = i === m.correctIndex;
+          const showCorrect = chosen != null && isCorrect;
+          const pickedWrong = chosen === i && !isCorrect;
+          return (
+            <button key={i} disabled={chosen != null} onClick={() => setChosen(i)} className="w-full text-left rounded-xl p-3 text-[13.5px] leading-snug transition-colors disabled:cursor-default" style={
+              showCorrect ? { backgroundColor: '#fff', border: `2px solid ${COLORS.success}`, color: INK }
+              : pickedWrong ? { backgroundColor: wd.tint, border: `2px solid ${wd.bg}`, color: INK }
+              : { backgroundColor: '#fff', border: `2px solid ${HAIRLINE}`, color: INK }
+            }>
+              <span className="flex items-start gap-2">
+                {showCorrect && <Check size={15} style={{ color: COLORS.success }} className="shrink-0 mt-0.5" />}
+                <span>{opt}</span>
+              </span>
+            </button>
+          );
+        })}
+      </div>
+      {chosen != null && (
+        <>
+          {chosen !== m.correctIndex && (
+            <MotionDiv initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} transition={{ type: 'spring', stiffness: 200, damping: 26 }} style={{ overflow: 'hidden' }}>
+              <div className="rounded-xl p-3 mb-2" style={{ backgroundColor: NEUTRAL_PANEL }}>
+                <p className="text-[10px] font-bold uppercase tracking-[0.1em] mb-1" style={{ color: MUTED }}>What happens</p>
+                <p className="text-[12.5px] leading-snug" style={{ color: BODY }}>{m.consequence}</p>
+              </div>
+            </MotionDiv>
+          )}
+          <div className="rounded-xl p-3 mb-3" style={{ backgroundColor: COLORS.successTint }}>
+            <p className="text-[10px] font-bold uppercase tracking-[0.1em] mb-1" style={{ color: COLORS.successDarkText }}>The experienced move</p>
+            <p className="text-[12.5px] leading-snug" style={{ color: INK }}>{m.fix}</p>
+            <p className="text-[10px] mt-1.5" style={{ color: MUTED }}>{m.source}</p>
+          </div>
+          <button onClick={() => { if (isLast) setPhase('rate'); else { setIdx(idx + 1); setChosen(null); } }} className="text-[13px] font-semibold inline-flex items-center gap-1" style={{ color: wd.deep }}>
+            {isLast ? 'How did that feel?' : 'Next call'} <ArrowRight size={13} />
+          </button>
+        </>
+      )}
+    </div>
+  );
+};
 
 const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatches?: boolean; seedMatchStrings?: string[] }> = ({ uid, seedMatches, seedMatchStrings }) => {
-  const { state, isLoaded, markSeen, toggleSaved } = useCareerPaths(uid);
+  const { state, isLoaded, markSeen, toggleSaved, setShiftRating } = useCareerPaths(uid);
   const { futureFinderPicks } = useInnovationData();
   const sound = useDeckSound();
 
@@ -177,14 +254,15 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
     const wd = FIELD_WORLD[card.field];
     const CareerIcon = careerIcon(card.field, card.iconKey);
     const isSaved = state.savedIds.includes(card.id);
-    const bi = BEAT_IDX[beat];
+    const BEATS: Beat[] = card.dayInLife ? ['front', 'day', 'deal', 'shift', 'route'] : ['front', 'day', 'deal', 'route'];
+    const bi = BEATS.indexOf(beat);
     const doors = coursesByRoute(card);
     return (
       <div className="w-full max-w-xl mx-auto pb-10">
         <button onClick={() => setCardId(null)} className="flex items-center gap-1.5 text-[13px] font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-4"><ArrowLeft size={15} /> All careers</button>
         <HybridCard>
           {burst && <Celebration colors={[wd.bg, wd.glow]} />}
-          <Band wd={wd} icon={CareerIcon} image={card.image ? `/${card.image}` : undefined} eyebrow={card.field} title={card.title} right={<ProgressDots total={4} active={bi} />} />
+          <Band wd={wd} icon={CareerIcon} image={card.image ? `/${card.image}` : undefined} eyebrow={card.field} title={card.title} right={<ProgressDots total={BEATS.length} active={bi} />} />
           <div className="p-6 md:p-7">
             <AnimatePresence mode="wait">
               <MotionDiv key={beat} {...fade}>
@@ -254,6 +332,21 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
                     </div>
                     <div className="flex justify-between items-center">
                       <NeutralBtn label="Back" onClick={() => goBeat('day')} />
+                      <OrangeBtn label={card.dayInLife ? 'Try a shift' : 'How you get there'} icon={ArrowRight} onClick={() => goBeat(card.dayInLife ? 'shift' : 'route')} />
+                    </div>
+                  </>
+                )}
+
+                {beat === 'shift' && card.dayInLife && (
+                  <>
+                    <ShiftSim
+                      moments={card.dayInLife.moments}
+                      wd={wd}
+                      savedRating={state.shiftRatings?.[card.id]}
+                      onRate={(n) => setShiftRating(card.id, n)}
+                    />
+                    <div className="flex justify-between items-center mt-6">
+                      <NeutralBtn label="Back" onClick={() => goBeat('deal')} />
                       <OrangeBtn label="How you get there" icon={ArrowRight} onClick={() => goBeat('route')} />
                     </div>
                   </>
@@ -342,6 +435,9 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
                     <div><p className="text-[14px] font-semibold leading-tight" style={{ color: INK }}>{c.title}</p><p className="text-[12px]" style={{ color: MUTED }}>{euro(c.salary.startK)} → {euro(c.salary.experiencedK)}</p></div>
                   </div>
                   <p className="text-[13px] leading-snug" style={{ color: BODY }}>{c.tagline}</p>
+                  {state.shiftRatings?.[c.id] != null && (
+                    <p className="text-[11px] mt-1 font-semibold" style={{ color: wd.deep }}>You rated trying this {state.shiftRatings[c.id]}/5</p>
+                  )}
                   <button onClick={() => open(c)} className="text-[12px] font-semibold mt-1.5" style={{ color: wd.deep }}>Open card →</button>
                 </div>
               );

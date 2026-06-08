@@ -14,7 +14,7 @@ import { useFreshProgress } from './useFreshProgress';
 import { type CareerPathsState } from '../types/careerPaths';
 import { reportSaveError } from '../utils/logError';
 
-const EMPTY: CareerPathsState = { seenIds: [], savedIds: [], updatedAt: '' };
+const EMPTY: CareerPathsState = { seenIds: [], savedIds: [], shiftRatings: {}, updatedAt: '' };
 const add = (arr: string[], v: string) => (arr.includes(v) ? arr : [...arr, v]);
 
 export function useCareerPaths(uid?: string) {
@@ -55,5 +55,14 @@ export function useCareerPaths(uid?: string) {
     });
   }, [persist]);
 
-  return { state, isLoaded, markSeen, toggleSaved };
+  /** "Could I see myself doing this?" 1–5 self-rating from the Day-in-the-Life sim. */
+  const setShiftRating = useCallback((id: string, rating: number) => {
+    setState((prev) => {
+      const next = { ...prev, shiftRatings: { ...(prev.shiftRatings ?? {}), [id]: rating }, updatedAt: new Date().toISOString() };
+      persist(next);
+      return next;
+    });
+  }, [persist]);
+
+  return { state, isLoaded, markSeen, toggleSaved, setShiftRating };
 }

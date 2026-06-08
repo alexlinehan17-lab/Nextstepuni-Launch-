@@ -651,6 +651,36 @@ export const CAREERS: CareerCard[] = [
   },
   {
     "id": "electrician",
+    "dayInLife": {
+      "moments": [
+        {
+          "setup": "You're called to swap a faulty socket. The board is old and badly labelled, and the customer's in a rush — 'just be quick, yeah?'",
+          "options": [
+            "Work on it live — it's only a socket, and isolating takes time",
+            "Switch off at the board, lock it off, and prove it's dead before touching anything",
+            "Flick the socket's own switch off and start"
+          ],
+          "correctIndex": 1,
+          "temptingIndex": 0,
+          "consequence": "Working live risks a shock or an arc flash. A 'quick' job is never worth a contact burn — or worse — and you'd have carried it out unsafely.",
+          "fix": "Safe isolation, every time: switch off, lock off, and prove dead with an approved voltage tester before you touch a conductor. The customer's rush doesn't change the rule.",
+          "source": "Safe Electric / National Rules for Electrical Installations (I.S. 10101)"
+        },
+        {
+          "setup": "You've wired a new circuit. It looks right, but you haven't tested the RCD yet. The customer wants to plug in tonight.",
+          "options": [
+            "Energise it — it looks right and they need it now",
+            "Run the required tests, including the RCD, and certify only once they pass",
+            "Energise it now and come back to test another day"
+          ],
+          "correctIndex": 1,
+          "temptingIndex": 0,
+          "consequence": "An untested RCD might not trip on a fault — the one device meant to save a life. 'Looks right' isn't a test result.",
+          "fix": "You energise and certify only after the prescribed tests pass. The cert isn't paperwork — it's you standing over the safety of the install.",
+          "source": "Safe Electric / National Rules for Electrical Installations (I.S. 10101) — test & certification"
+        }
+      ]
+    },
     "title": "Electrician",
     "field": "trades",
     "emoji": "🔌",
@@ -1074,6 +1104,36 @@ export const CAREERS: CareerCard[] = [
   },
   {
     "id": "healthcare-assistant",
+    "dayInLife": {
+      "moments": [
+        {
+          "setup": "You're short-staffed and behind. Washing Mr K, you notice he's more confused than yesterday and breathing faster. Your list is long.",
+          "options": [
+            "Finish your round first — you can mention it at handover",
+            "Tell the nurse in charge now — a sudden change can't wait",
+            "Keep an eye on him and check again in an hour"
+          ],
+          "correctIndex": 1,
+          "temptingIndex": 0,
+          "consequence": "A sudden change in confusion or breathing can be the first sign of something serious, like sepsis. Waiting for your round to finish can cost the time that matters most.",
+          "fix": "Spotting deterioration and escalating fast is the heart of the HCA role. Tell the nurse the moment you notice — they decide what's urgent, not your task list.",
+          "source": "HSE National Early Warning Score (NEWS) — escalation guidance"
+        },
+        {
+          "setup": "A resident quietly tells you someone has been rough with them — then says, 'please don't tell anyone, I don't want a fuss.'",
+          "options": [
+            "Promise to keep it secret — they trust you",
+            "Reassure them gently, but explain you have to pass a safeguarding concern to the nurse",
+            "Decide it's probably nothing and let it go"
+          ],
+          "correctIndex": 1,
+          "temptingIndex": 0,
+          "consequence": "Keeping it secret leaves a possible abuse concern unreported — and breaks your duty to protect them, however kindly you meant it.",
+          "fix": "You can't promise secrecy for a safeguarding disclosure. Be honest and gentle: you must tell the nurse in charge, because their safety comes first.",
+          "source": "HSE — Safeguarding Vulnerable Persons at Risk of Abuse (National Policy)"
+        }
+      ]
+    },
     "title": "Healthcare Assistant",
     "field": "health",
     "emoji": "🧑‍⚕️",
@@ -1516,6 +1576,36 @@ export const CAREERS: CareerCard[] = [
   },
   {
     "id": "chef",
+    "dayInLife": {
+      "moments": [
+        {
+          "setup": "Friday service, three tickets up, the pass is calling. You drop a cooked steak on the kitchen floor. The section's slammed.",
+          "options": [
+            "Rinse it and plate it — five-second rule, nobody sees",
+            "Bin it, re-fire, and call the delay to the pass",
+            "Wipe it and hide it under the sauce"
+          ],
+          "correctIndex": 1,
+          "temptingIndex": 0,
+          "consequence": "Floor contamination is a food-safety breach — and the one plate that makes a guest sick is the one that ends up online. The pressure's real; the risk isn't worth it.",
+          "fix": "Food safety isn't negotiable, even mid-rush: bin it, fire a fresh one, own the delay. A slow plate is recoverable; a sick guest isn't.",
+          "source": "FSAI / HACCP food-safety principles"
+        },
+        {
+          "setup": "You're flat out. The only board to hand just had raw chicken on it, and you need to chop salad leaves right now.",
+          "options": [
+            "Give it a quick wipe and use it — you're slammed",
+            "Stop, wash and sanitise it (or grab a clean colour-coded board) before the salad",
+            "Just use the other side of the same board"
+          ],
+          "correctIndex": 1,
+          "temptingIndex": 0,
+          "consequence": "Raw-chicken juices on a ready-to-eat salad is a classic cross-contamination route for campylobacter — the most common cause of food poisoning in Ireland.",
+          "fix": "Keep raw and ready-to-eat apart: separate, colour-coded boards, washed and sanitised between tasks. Speed never beats separation.",
+          "source": "FSAI / HACCP — cross-contamination control"
+        }
+      ]
+    },
     "title": "Chef",
     "field": "trades",
     "emoji": "👨‍🍳",
