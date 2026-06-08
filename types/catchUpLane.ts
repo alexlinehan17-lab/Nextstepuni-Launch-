@@ -56,6 +56,14 @@ export interface RecoveryCard {
    * `source` MUST carry the SEC attribution (used under NextStepUni's SEC agreement).
    */
   figure?: { src: string; alt: string; source: string };
+  /**
+   * Optional comprehension passage, shown VERBATIM (under NextStepUni's SEC
+   * agreement) in a scrollable reading panel — for prose-comprehension topics
+   * where the student must read the actual text to answer. The right medium for
+   * prose (selectable, reflows, accessible), as opposed to `figure` for diagrams/
+   * graphs/maps. `source` MUST carry the SEC attribution.
+   */
+  passage?: { text: string; source: string };
 }
 
 /** A light, optional record of days the student flagged as missed. */

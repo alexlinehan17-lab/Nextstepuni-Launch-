@@ -48,6 +48,14 @@ describe('Catch-Up Lane recovery cards', () => {
     }
   });
 
+  it('every comprehension passage has real text + SEC attribution', () => {
+    for (const c of RECOVERY_CARDS.filter((c) => c.passage)) {
+      const p = c.passage!;
+      expect(p.text.trim().length, `${c.id}: passage text too short/empty`).toBeGreaterThan(50);
+      expect(/SEC|State Examinations/i.test(p.source), `${c.id}: passage source lacks SEC attribution`).toBe(true);
+    }
+  });
+
   it('covers the four target subjects', () => {
     const subs = new Set(RECOVERY_CARDS.map((c) => c.subjectId));
     for (const s of ['biology', 'english', 'mathematics', 'geography']) {

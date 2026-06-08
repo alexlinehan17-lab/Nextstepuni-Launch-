@@ -620,6 +620,27 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
       source: 'SEC Leaving Certificate Biology 2023 Higher Level, Q7 — © State Examinations Commission',
     },
   },
+  {
+    id: 'eng-comprehending-gravel-heart',
+    subjectId: 'english', topicId: 'english-10-0',
+    subjectLabel: 'English', topicLabel: 'Reading & comprehension', level: 'higher',
+    gist: 'Question A on Paper 1 (50 marks) is close reading, not opinion. You are asked for insights (into a character or idea), your own developed response to a view, and the writer’s style/language features. Marks live in PRECISE points that are anchored to the text — make the point, quote or reference the line that proves it, then explain its effect.',
+    oneMove: {
+      label: 'Anchor every point to the text — quote, then explain the effect',
+      text: 'The single biggest comprehension mark-loss is asserting without evidence. For each point: name it, give a short quotation or reference from the passage, then say what it shows or does. A point with no textual anchor is barely rewarded; three anchored points beat six floating assertions.',
+    },
+    check: {
+      prompt: 'Read the passage. Give two insights into Salim’s character, each supported by a reference to the text.',
+      modelAnswer: 'e.g. (1) He is bookish / drawn to literature — he had "worked my way through most of my father’s books" and thought of himself as "a future student of literature". (2) He is passive / lacks the courage to assert himself — he "did not have the courage" to tell Uncle Amir he would have preferred to study literature. (Also creditable: observant — he notices "the amplitude of space and the expensive furnishings".)',
+      needed: ['One insight into Salim (e.g. bookish / loves literature)', 'A second, different insight (e.g. passive / lacks courage)', 'A short quotation or reference from the passage for each'],
+    },
+    source: 'LC English Paper 1 — Section I Comprehending, Question A (close-reading technique)',
+    marksWeight: 15,
+    passage: {
+      text: 'TEXT 1 – BETWEEN TWO WORLDS: VILLAGE AND CITY This text is based on an edited extract from Gravel Heart, a novel by Abdulrazak Gurnah, 2021 Nobel Prize winner for literature. In this extract Salim, from a small island village in Zanzibar, comes to stay with his uncle in London to further his education. He doesn’t know how to belong in this strange city and feels cut off from the world he has left behind.\n\nWhen I went to live with Uncle Amir in London, it was his wish that I should study for a career in business. “In your circumstances, it is the perfect option and it will allow you to work anywhere in the world. Make money! Think of the outcomes: accountancy, management, consultancy, and at the end of it all plenty of money in the bank.”\n\nIt would have sounded cowardly to tell him that I should have preferred to study literature. By the time I left for London, I had worked my way through most of my father’s books, had made good progress through the school library shelves, had borrowed and exchanged books with friends, and I thought of myself as someone with proven credentials as a future student of literature. When I came to London I realised how unimpressive my credentials were, how much there was to read, how much there was to work through. Uncle Amir had different plans for me and I did not have the courage to say anything about how I might have preferred to proceed with my life.\n\nhad bought new just before I left, looked cheap and flimsy and tiny on that rug, like a cardboard box. I sat on the bed when I was left alone, looking around the room, gazing out of the darkened window then at the clean bare desk with its angled lamp, and I smiled. That is the desk where I will sit and write to Mama about the wonders I encounter and I won’t allow the thought of my ignorance to discourage me. I allowed this resolution to overcome the slight feeling of panic I sensed at the edge of my mind. What was I doing here?\n\nI was moved by the pleasure they took in my arrival. They both beamed smiles at me and Auntie Asha spoke to me as if I was a diffident younger brother who needed to be brought out of himself. I was too flustered to take in everything immediately, but I noticed the amplitude of space and the expensive furnishings. Auntie Asha took me upstairs to show me my room which was luxurious: a large bed, a dark wardrobe the depth of a coffin, a wide desk, a chest of drawers, a bookshelf, a comfortable reading chair, and still enough space in the middle for a rug. A whole family lived in a room of this size where I had come from. My suitcase, which I\n\nDear Mama, I hope you are well. It is now October and I started college last week. London is full of people from everywhere in the world. I just had not expected to see that, Indians, Arabs, Africans, Chinese, and I don’t know where all the European people come from but they are not all English. When a double-decker bus goes by and you see the faces through the window, it is like a glimpse of a page in an illustrated children’s encyclopaedia under the title People of the World. Everywhere you go,',
+      source: 'SEC Leaving Certificate English 2023 Higher Level, Paper 1, Text 1 — adapted from “Gravel Heart” by Abdulrazak Gurnah — © State Examinations Commission',
+    },
+  },
 ];
 
 /** Subject ids that currently have recovery content (drives the picker). */

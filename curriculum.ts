@@ -409,6 +409,16 @@ export const CURRICULUM: CurriculumSubject[] = [
             "name": "Composition (essay / speech / article / short story)"
           }
         ]
+      },
+      {
+        "id": "english-10",
+        "name": "Comprehending",
+        "subtopics": [
+          {
+            "id": "english-10-0",
+            "name": "Reading & comprehension (Paper 1, Question A)"
+          }
+        ]
       }
     ]
   },
