@@ -203,6 +203,15 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[] }> 
               <span className="text-[11px] font-medium text-zinc-400">{qIndex + 1} / {queue.length}</span>
             </div>
 
+            {/* Figure for figure-attached questions — the real SEC graph/diagram
+                the cue depends on, shown above the tappable stem, with attribution. */}
+            {q.figure && (
+              <figure className="mb-4 rounded-xl border-2 border-[#1A1A1A] dark:border-zinc-700 overflow-hidden bg-white">
+                <img src={q.figure.src} alt={q.figure.alt} loading="lazy" className="w-full h-auto block" />
+                <figcaption className="text-[10px] px-3 py-1.5" style={{ color: INDIGO_DARK_TEXT, backgroundColor: INDIGO_TINT }}>{q.figure.source}</figcaption>
+              </figure>
+            )}
+
             {phase === 'spot' && (
               <p className="text-[12px] font-semibold mb-3" style={{ color: INDIGO_DARK_TEXT }}>
                 Tap the command word — the cue telling you what to actually <span className="italic">do</span>.

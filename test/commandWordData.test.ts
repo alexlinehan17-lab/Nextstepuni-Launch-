@@ -7,6 +7,7 @@
  * cmdIndices, incl. multi-word cues), the subject must be real, both levels must
  * be present, and ids unique.
  */
+import { existsSync } from 'node:fs';
 import { describe, it, expect } from 'vitest';
 import { COMMAND_WORD_QUESTIONS } from '../commandWordData';
 import { CURRICULUM } from '../curriculum';
@@ -49,5 +50,14 @@ describe('Command-Word Reflex stems', () => {
   it('all ids are unique', () => {
     const ids = COMMAND_WORD_QUESTIONS.map((q) => q.id);
     expect(new Set(ids).size).toBe(ids.length);
+  });
+
+  it('every figure points to a committed asset, with alt text + SEC attribution', () => {
+    for (const q of COMMAND_WORD_QUESTIONS.filter((q) => q.figure)) {
+      const f = q.figure!;
+      expect(existsSync('public' + f.src), `${q.id}: figure asset public${f.src} is missing`).toBe(true);
+      expect(f.alt.trim().length, `${q.id}: figure has no alt text`).toBeGreaterThan(0);
+      expect(/SEC|State Examinations/i.test(f.source), `${q.id}: figure source lacks SEC attribution`).toBe(true);
+    }
   });
 });

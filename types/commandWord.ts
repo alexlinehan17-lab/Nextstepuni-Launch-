@@ -40,6 +40,13 @@ export interface CommandWordQuestion {
   source: string;
   /** Marks typically at stake on a question with this cue. */
   marks: number;
+  /**
+   * Optional figure for figure-attached questions — a graph/diagram/map the cue
+   * depends on (e.g. "Examine the graph above…"). Cropped from the real SEC paper
+   * via tools/extract_exam_figure.py to public/exam-figures/; shown above the
+   * tappable stem. `source` MUST carry the SEC attribution.
+   */
+  figure?: { src: string; alt: string; source: string };
 }
 
 /** Persisted under progress/{uid}.commandWordReflex (additive-merge namespace). */
