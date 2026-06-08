@@ -1103,6 +1103,97 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
       source: 'SEC Leaving Certificate English 2023 Ordinary Level, Paper 1, Text 2 — adapted from a speech delivered to graduating students at Syracuse University by George Saunders — © State Examinations Commission',
     },
   },
+  // ── Mathematics (graph backfill — HL+OL) ──
+  {
+    id: 'maths-hl-functions-piecewise-slope-2025',
+    subjectId: 'mathematics', topicId: 'mathematics-4-1',
+    subjectLabel: 'Mathematics', topicLabel: 'Calculus', level: 'higher',
+    gist: 'On a graph, the derivative g\'(x) is just the slope (steepness) of the line at that point. For a graph made of straight line segments, each segment has a single constant slope you can read off directly: slope = rise/run = (change in y) divided by (change in x) between the two endpoints of that segment. A shallow segment has a small slope; a steep segment has a large slope. So a question like \'where is g\'(x) > 2?\' is really asking \'on which part of the graph is the line steeper than a slope of 2?\' You answer it by computing rise-over-run for each segment and comparing - no formula for g(x) needed. Reading a graph this way also lets you evaluate nested values like g(g(3)): work the inside first (find g(3) on the graph), then feed that answer back in as the new input.',
+    oneMove: {
+      label: 'Exam move',
+      text: 'For each straight segment, read off its two endpoints and compute slope = rise/run. The derivative g\'(x) equals that slope along the whole segment - so \'g\'(x) > 2\' picks out the segment whose rise/run beats 2.',
+    },
+    check: {
+      prompt: 'The graph above shows g(x) for 0 <= x <= 4, made of two straight line segments. (a) Using the graph, state the range of values of x for which g\'(x) > 2. (b) Find the value of g(g(3)).',
+      modelAnswer: '(a) Read each segment\'s slope as rise/run. The first segment runs from (0, 0) to (3, 1): slope = (1 - 0)/(3 - 0) = 1/3, which is NOT greater than 2. The second segment runs from (3, 1) to (4, 4): slope = (4 - 1)/(4 - 3) = 3, which IS greater than 2. Since g\'(x) equals the segment\'s slope, g\'(x) > 2 only on the steep second segment: 3 < x <= 4. (b) Work from the inside out. g(3) is the y-value at x = 3, which is the corner point (3, 1), so g(3) = 1. Then g(g(3)) = g(1). On the first segment g(x) = (1/3)x, so g(1) = 1/3. Therefore g(g(3)) = 1/3. (The official marking scheme gives exactly these answers: 3 < x <= 4 for part (a), and g(g(3)) = 1/3 for part (b).)',
+      needed: ['Reading point coordinates off the graph (endpoints of each segment, the corner at (3, 1))', 'Slope of a line = rise/run = (change in y)/(change in x)', 'The derivative g\'(x) of a straight segment equals that segment\'s constant slope', 'Evaluating a function value from a graph by reading the y-value at a given x', 'Composition of functions: work the inside g(3) first, then apply g again to that result'],
+    },
+    source: 'SEC Leaving Certificate Mathematics 2025 Higher Level, Paper 1 Q2(b) — © State Examinations Commission',
+    marksWeight: 2,
+    figure: { src: '/exam-figures/maths/mathematics-2025-hl-piecewise-linear-graph.png', alt: 'Coordinate graph labelled g(x) on x- and y-axes, both running 0 to 4 with gridlines at 1, 2, 3 and 4. The graph of g(x) is made of two straight line segments: a shallow segment rising gently from the origin (0, 0) to the point (3, 1), then a much steeper segment rising from (3, 1) up to (4, 4). The upper end of the steeper segment is labelled g(x).', source: 'SEC Leaving Certificate Mathematics 2025 Higher Level, Paper 1 Q2(b) — © State Examinations Commission' },
+  },
+  {
+    id: 'mg-hl-venn-three-set-independence-2025',
+    subjectId: 'mathematics', topicId: 'mathematics-0-1',
+    subjectLabel: 'Mathematics', topicLabel: 'Concepts of Probability', level: 'higher',
+    gist: 'A three-set Venn diagram splits a survey of 240 people into eight regions: each country alone, each pair-overlap, the triple-overlap in the middle, and the \'none\' region outside all three circles. To find the probability of any event, add up every region inside that circle and divide by the universal total (here 240). For the AND of two events, P(A∩B), you only count the regions where those two circles overlap (including the central triple region). The acid test for independence is whether P(A∩B) equals P(A)·P(B): if multiplying the two separate probabilities reproduces the overlap probability, the events are independent; if not, they are dependent. Independence is a numerical coincidence of the data, not something you can eyeball from the picture, so you must actually compute all three numbers.',
+    oneMove: {
+      label: 'Exam move',
+      text: 'Total each circle from its regions, then test P(A∩B) = P(A)·P(B). Equal means independent; never just guess from the diagram.',
+    },
+    check: {
+      prompt: 'Using the Venn diagram above (240 people surveyed), event A = \'has been to country A\' and event B = \'has been to country B\'. Find P(A), P(B) and P(A∩B), then decide whether A and B are independent events, justifying your answer with the calculation.',
+      modelAnswer: 'n(A) = 23 + 18 + 13 + 6 = 60, so P(A) = 60/240 = 1/4. n(B) = 56 + 18 + 16 + 6 = 96, so P(B) = 96/240 = 2/5. The overlap A∩B is the two regions where the A and B circles cross: 18 + 6 = 24, so P(A∩B) = 24/240 = 1/10. Test for independence: P(A)·P(B) = (1/4)·(2/5) = 2/20 = 1/10. Since P(A)·P(B) = 1/10 = P(A∩B), the events A and B ARE independent.',
+      needed: ['Read each region count from the Venn diagram and add the regions inside a circle to get that event\'s total (n(A) = 23+18+13+6 = 60; n(B) = 56+18+16+6 = 96)', 'Convert counts to probabilities over the universal total of 240: P(A) = 60/240 = 1/4, P(B) = 96/240 = 2/5', 'Identify A∩B as the regions where the A and B circles overlap, including the central triple-overlap: 18 + 6 = 24, so P(A∩B) = 24/240 = 1/10', 'Apply the independence test P(A∩B) = P(A)·P(B): (1/4)·(2/5) = 1/10, which equals P(A∩B), so conclude A and B are independent'],
+    },
+    source: 'SEC Leaving Certificate Mathematics 2025 Higher Level, Paper 2 Q3 — © State Examinations Commission',
+    marksWeight: 30,
+    figure: { src: '/exam-figures/maths/mathematics-2025-hl-venn-three-set.png', alt: 'A three-set Venn diagram inside a rectangle labelled U [240]. Three overlapping ellipses are labelled A, B and C. The region counts are: A only [23], B only [56], C only [41]; A∩B only (not C) [18]; A∩C only (not B) [13]; B∩C only (not A) [16]; the central A∩B∩C region [6]; and outside all three circles [67].', source: 'SEC Leaving Certificate Mathematics 2025 Higher Level, Paper 2 Q3 — © State Examinations Commission' },
+  },
+  {
+    id: 'mg-hl-square-pyramid-faces-2025',
+    subjectId: 'mathematics', topicId: 'mathematics-1-2',
+    subjectLabel: 'Mathematics', topicLabel: 'Trigonometry', level: 'higher',
+    gist: 'A square-based pyramid is a classic 3D problem where the trick is to slice out a flat right-angled triangle hidden inside the solid. The apex P sits directly above O, the centre of the square base, so OP is the vertical height. The diagonals of the base meet at O, and half a diagonal of a square of side a is (a√2)/2 — so for a 6 m base, OB = 3√2 m. Then triangle OPB is right-angled at O, and Pythagoras gives the height: OP² = PB² − OB². Once you can find lengths inside the solid, the slant faces are just triangles you handle with area = ½·a·b·sin C, where C is the included angle between two known sides. Because the four triangular faces are congruent, you work out one face and multiply by four. The whole question is reading the 3D picture, picking the right 2D triangle, and choosing Pythagoras versus the area-with-sine formula for each step.',
+    oneMove: {
+      label: 'Exam move',
+      text: 'Half a square\'s diagonal is (side·√2)/2, so OB = 3√2; then a face area is ½·(base)·(slant edge)·sin(included angle), times 4 for all four faces.',
+    },
+    check: {
+      prompt: 'Using the square-based pyramid above (base ABCD of side 6 m, apex P directly above centre O, with |AP| = |BP| = 11 m): (a) show that |OB| = 3√2 m and hence find the vertical height |OP| in surd form; (b) given that the angle ∠PAB on a triangular face is 74·2°, work out the total area of the four congruent triangular faces, to the nearest m².',
+      modelAnswer: '(a) ABCD is a square of side 6, so its diagonal |AC| = 6√2 and O (where the diagonals meet) is its midpoint, giving |OB| = (6√2)/2 = 3√2 m. Triangle OPB is right-angled at O (P is directly above O), so by Pythagoras |OP|² = |PB|² − |OB|² = 11² − (3√2)² = 121 − 18 = 103. Hence |OP| = √103 m. (b) Each triangular face PAB has sides |AP| = 11 m and |AB| = 6 m with included angle ∠PAB = 74·2°. Area of one face = ½·|AP|·|AB|·sin(∠PAB) = ½ × 11 × 6 × sin 74·2° = 33 × 0·96225… = 31·75… m². The four faces are congruent, so total area = 4 × 31·75… = 127 m² (to the nearest m²).',
+      needed: ['Recognise the base diagonal of the square (side 6) is 6√2 and O is its midpoint, so |OB| = (6√2)/2 = 3√2 m', 'Use Pythagoras in right-angled triangle OPB: |OP|² = |PB|² − |OB|² = 11² − (3√2)² = 121 − 18 = 103, so |OP| = √103 m', 'Apply the area formula ½·a·b·sin C to one triangular face using |AP| = 11, |AB| = 6 and included angle 74·2°: ½ × 11 × 6 × sin 74·2° ≈ 31·75 m²', 'Multiply the single-face area by 4 (the faces are congruent) to get the total ≈ 127 m² to the nearest square metre'],
+    },
+    source: 'SEC Leaving Certificate Mathematics 2025 Higher Level, Paper 2 Q8 — © State Examinations Commission',
+    marksWeight: 50,
+    figure: { src: '/exam-figures/maths/mathematics-2025-hl-square-pyramid.png', alt: 'A 3D square-based pyramid. The square base is labelled A, B, C, D with the diagonals drawn meeting at the centre O. The apex P is at the top, joined to all four base corners; a dashed vertical line runs from P down to O. One slant edge is labelled 11 m and one base edge is labelled 6 m.', source: 'SEC Leaving Certificate Mathematics 2025 Higher Level, Paper 2 Q8 — © State Examinations Commission' },
+  },
+  {
+    id: 'maths-ol-figure-dots-pattern-sequence-2025',
+    subjectId: 'mathematics', topicId: 'mathematics-3-0',
+    subjectLabel: 'Mathematics', topicLabel: 'Expressions', level: 'ordinary',
+    gist: 'A growing pattern turns a picture into a formula. Here dots sit evenly on a circle and EVERY pair of dots is joined by a line segment. Pattern 1 has 2 dots, Pattern 2 has 3 dots, and each later pattern adds one more dot. The number of dots grows by 1 each time (a linear pattern: 2, 3, 4, 5, 6...), so Pattern n has n+1 dots. The number of line segments grows faster because every new dot connects to all the dots already there — that gives a quadratic pattern (1, 3, 6, 10, 15...), the triangular numbers. The exam move is to read the small early pictures, build the table, spot which row is linear and which is quadratic, then push the rule out to a far term (e.g. the 1000th pattern) without drawing it.',
+    oneMove: {
+      label: 'Count, don\'t guess',
+      text: 'To read a \'join every pair of dots\' figure, physically count the segments on the biggest drawn pattern and tally them into the table BEFORE reaching for a formula. With d dots, every dot joins to the other (d−1), and each segment is counted twice, so segments = d(d−1)÷2. Pattern 4 has 5 dots → 5×4÷2 = 10, which matches the 10 lines you can count in the diagram. Confirming the formula against the picture is what stops a careless slip in the later \'find the 1000th term\' part.',
+    },
+    check: {
+      prompt: 'Look at the diagram above. (a) How many line segments are drawn in Pattern 4? (b) Pattern 1 has 2 dots and Pattern 2 has 3 dots; how many dots does Pattern 4 have? (c) Using the rule that each new dot joins to all the others, explain why the number of line segments forms a quadratic (not a linear) pattern.',
+      modelAnswer: '(a) Pattern 4 has 5 dots with every pair joined, so there are 5×4÷2 = 10 line segments — you can count all 10 in the diagram (the 5 outer edges plus the 5 crossing diagonals). (b) The dots go 2, 3, 4, 5... (one more each time), so Pattern 4 has 5 dots. (c) Each pattern adds one dot, and that single new dot must be joined to every dot already present, so the EXTRA segments added grows each step (Pattern 1→2 adds 2, 2→3 adds 3, 3→4 adds 4...). Because the increase itself keeps rising, the totals 1, 3, 6, 10, 15 are a quadratic (triangular-number) pattern, whereas the dots rise by a constant 1 each time and so are linear.',
+      needed: ['Read that the figure joins every pair of dots, and that one dot is added per pattern', 'Count the line segments in the fully-connected Pattern 4 = 10 (5 edges + 5 diagonals)', 'Read the dot count growing by 1 each pattern (2, 3, 4, 5) to get 5 dots in Pattern 4', 'Know that a constant first difference is linear, while a changing first difference is quadratic'],
+    },
+    source: 'SEC Leaving Certificate Mathematics 2025 Ordinary Level, Paper 1 Q9(b)',
+    marksWeight: 10,
+    figure: { src: '/exam-figures/maths/mathematics-2025-ol-dots-pattern-sequence.png', alt: 'A sequence diagram from an SEC exam paper showing four labelled stages of a growing pattern of dots evenly spaced on a circle, with every pair of dots joined by a straight line segment. Pattern 1: 2 dots on a dotted circle joined by 1 horizontal line segment. Pattern 2: 3 dots forming a triangle with 3 line segments. Pattern 3: labelled but left blank (to be completed). Pattern 4: 5 dots evenly spaced on the circle, fully connected by 10 line segments (5 outer pentagon edges plus 5 crossing diagonals forming a pentagram). The number of dots increases by one in each successive pattern.', source: 'SEC Leaving Certificate Mathematics 2025 Ordinary Level, Paper 1 Q9(b) — © State Examinations Commission' },
+  },
+  {
+    id: 'maths-ol-figure-composite-area-perimeter-2021',
+    subjectId: 'mathematics', topicId: 'mathematics-2-3',
+    subjectLabel: 'Mathematics', topicLabel: 'Length, Area & Volume', level: 'ordinary',
+    gist: 'A composite-shape question hands you a figure built from simpler pieces and asks for its total area (and often perimeter). The trick is to break the picture apart, find each piece, then add. Here figure ABCDE is a large square ACDE sitting on the diagonal AC of a smaller square ABCF, and only one measurement is given: the small square has side 2 cm. So |AB| = |BC| = 2 cm. The shared diagonal AC is found with Pythagoras: AC = √(2² + 2²) = √8 cm, and that same √8 is the side of the big square. The whole figure = the big square (area = side² = (√8)² = 8) plus the little triangle ABC below it (half the small square = ½×2×2 = 2). For perimeter you only trace the OUTSIDE edges — the diagonal AC is internal and is NOT counted.',
+    oneMove: {
+      label: 'Pythagoras unlocks the hidden length',
+      text: 'When a composite figure shares a slanted line (a diagonal) and only the perpendicular sides are labelled, use Pythagoras on the labelled sides to get that slant length before doing anything else. Here AC = √(2² + 2²) = √8 cm is the missing link: it is simultaneously the diagonal of the small square AND the side of the large square, so finding it once unlocks both the area (√8 × √8 = 8) and the perimeter (three √8 sides of the big square). Leave it as √8 while substituting — (√8)² collapses neatly to 8 with no rounding error.',
+    },
+    check: {
+      prompt: 'Use the figure above. The smaller square ABCF has a side length of 2 cm, so |AB| = |BC| = 2 cm, and ACDE is a square sitting on the diagonal [AC]. Work out the total area of the figure ABCDE in cm², showing how you split it up.',
+      modelAnswer: 'Split ABCDE into two pieces: the large square ACDE and the triangle ABC below the line AC.  First find the shared length AC using Pythagoras on the small square\'s sides (|AB| = |BC| = 2 cm): AC = √(2² + 2²) = √(4 + 4) = √8 cm. This √8 is the side of the large square ACDE.  Area of large square ACDE = (√8)² = 8 cm². Area of triangle ABC = ½ × base × height = ½ × 2 × 2 = 2 cm² (it is half of the small square ABCF, cut along the diagonal AC).  Total area of ABCDE = 8 + 2 = 10 cm².',
+      needed: ['Split the composite figure into the large square ACDE plus triangle ABC', 'Apply Pythagoras to the two 2 cm sides to get the diagonal/side AC = √8 cm', 'Area of the large square = (√8)² = 8 cm²', 'Area of triangle ABC = ½×2×2 = 2 cm², then add: 8 + 2 = 10 cm²'],
+    },
+    source: 'SEC Leaving Certificate Mathematics 2021 Ordinary Level, Paper 2 Q2(b)',
+    marksWeight: 10,
+    figure: { src: '/exam-figures/maths/mathematics-2021-ol-composite-area-perimeter.png', alt: 'A composite 2D shape from an SEC exam paper, labelled figure ABCDE. A large upright square ACDE forms the upper part, with corners E (top-left), D (top-right), A (bottom-left) and C (bottom-right) of the square. Below the side AC, two slanted equal sides AB and BC drop to a lower vertex B, forming a triangle ABC; a dashed point F at the centre of the figure with dashed lines to A and C marks the apex of the smaller square ABCF, of which triangle ABC is the lower half. The side AB is labelled \'2 cm\'. The diagonal AC is shared between the triangle and the base of the large square.', source: 'SEC Leaving Certificate Mathematics 2021 Ordinary Level, Paper 2 Q2(b) — © State Examinations Commission' },
+  },
 ];
 
 /** Subject ids that currently have recovery content (drives the picker). */
