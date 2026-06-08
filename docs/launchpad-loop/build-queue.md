@@ -5,17 +5,30 @@ _The loop pops the top **ready** item, builds it end-to-end, runs the gate, comm
 
 ## Loop status
 
-- **DONE:** #2 `catch-up-lane` — First-Week Back ✓ (commit `3b02b5f`, gate green, independent review SHIP). Committed to `main`, not yet deployed.
-- **NEXT (ready):** #3 `comeback` — Schedule the Evidence (turn vague missions into typed retrieval/spacing/interleaving actions; fixes the confidence-slider fluency illusion).
-- **Deferred (B4-gated):** #1 college-compass (Open Door income estimate), #28 college-compass (Runway parent-link/push), #33 journey (Choices Wall UGC + aggregates) — collect/expose minors' financial or peer data; the loop will not build them until the B4 privacy gate is decided (a product/ethics call surfaced to the user).
+**Mode:** autonomous, self-paced (user, 2026-06-08) — work down the ready queue, gate + independently verify + commit each to `main`; the user reviews at deploy time. Pause only for irreversible/outward actions.
 
-> **Why not #1 first?** The synthesis ranked College Compass *Open Door* #1 (perfect 5×5), but its income self-estimate collects financial data from minors and intersects the unresolved **B4** blocker. Per CHARTER guardrails (minors'-data = stop-and-surface), the loop defers it and builds the highest-ranked **B4-clean** concept first. A B4-safe slice of Open Door (illustrative bands, no income capture) can be built once decided.
+- **DONE:** #2 `catch-up-lane` — First-Week Back ✓ (commit `3b02b5f`, gate green, independent review SHIP). On `main`, not yet deployed.
+- **NEXT:** #1 `college-compass` — **The Open Door (B4-SAFE variant)**. See the build spec below.
+- **Then:** #3 `comeback` Schedule the Evidence → #4 `career-paths` More-than-one-way-in → #5 `exam-reps` Show Me One → … (table order, skipping the deferred items).
+- **Still deferred (B4-gated, NOT approved):** #28 `college-compass` Runway (parent-link / web-push — capability doesn't exist + intersects B4); #33 `journey` Choices Wall (minors' UGC + cross-student aggregates). Leave parked until B4 is resolved.
+
+### B4-safe Open Door — build spec (user-approved 2026-06-08)
+
+The synthesis ranked Open Door #1 (perfect 5×5 evidence×impact). The user approved a **B4-safe** version that delivers the Destin & Oyserman open-vs-closed-path mechanism **without collecting any financial data from students**. Build:
+
+- **Mistake-first two-doors cost-drop** (the keeper): default view = the "closed door" a student fears (full sticker price = HEA Student Contribution + an accommodation/transport/living estimate, plus the course's top-line points). Then an animation pulls the numbers down, **each falling figure labelled with what removed it** — Free Fees removes tuition, the SUSI maintenance grant removes living costs, HEAR lowers the points bar — revealing the real, lower "open door". Two side-by-side **white** door cards (standard-points door + HEAR lower-points door), tinted fill on the open one. **No coloured left border** (banned).
+- **Illustrative bands only — NO income input.** Present SUSI/Free-Fees thresholds as *general public information* ("students whose family income is under ~€X often qualify for the full maintenance grant — check susi.ie"), never as a household-income self-estimate. **Do not** build content piece (3) the income self-estimate or functionality piece (c) the personalised funding stack from income — those are the B4-blocked parts. **Drop them entirely.**
+- **Every euro figure is a source-stamped estimate** (susi.ie / hea.ie), behind the existing `COMPASS_LAST_VERIFIED` + verify-modal discipline. These figures are content-rot-prone → annual re-check; flag clearly. Research the exact 2026-cycle figures from primary sources before authoring; do not invent.
+- **Terminate in ONE concrete step** (EEF guardrail: never a daydream) — e.g. "Check your SUSI eligibility at susi.ie" / "Ask your guidance counsellor about HEAR".
+- **DEIS framing:** win state = "the door is open", never "you scored highly". HEAR/PLC shown as equally valid routes, not consolation prizes.
+- Reuse existing `HearMeter` bucket primitives + `MoneySorter`; wire the already-collected `targetInstitutionCodes` so the doors reference the student's picked colleges. Persist any new selection through `useCollegeCompass` (additive merge, like `setHearIndicators`).
+- Surface a "door open / partly open / check these three things" status to the GC dashboard via the existing `computeCompassProgress`-style model (no new minors' data).
 
 ## Ranked queue
 
 | # | Status | Tool | Concept | Cx | Why |
 |---|--------|------|---------|----|-----|
-| 1 | ⏸ B4 | `college-compass` | The Open Door — affordability-and-access engine | L | The only concept scoring a perfect 5x5 on evidence AND impact — the brief's primary signal. It IS Destin & Oyserman's open-vs-closed-path manipulation applied to the exact low-income cohort it was demonstrated in, the EEF aspiration cite… |
+| 1 | ▶ NEXT (B4-safe) | `college-compass` | The Open Door — affordability-and-access engine | L | The only concept scoring a perfect 5x5 on evidence AND impact — the brief's primary signal. It IS Destin & Oyserman's open-vs-closed-path manipulation applied to the exact low-income cohort it was demonstrated in, the EEF aspiration cite… |
 | 2 | ✅ DONE | `catch-up-lane` | First-Week Back — a graded re-entry timeline that turns the saved plan into daily if-then actions with the people built in | M | Highest weightedTotal in the set (4.62) and second-highest evidence×impact (4.7x4.8=22.56). Instantiates Gollwitzer/Sheeran if-then (d=.65) plus Zimmerman's full SRL loop on the most vulnerable moment (return after absence) for the core … |
 | 3 | ✔ ready | `comeback` | Schedule the Evidence — missions become retrieval/spacing/interleaving actions, not 'do a past paper' | L | Perfect evidence (5/5) x 4.5 impact = 22.50, on four real, correctly-directed citations whose active ingredients are instantiated not labelled — a 'retrieval' mission is a close-the-book attempt, not a re-show of notes. Fixes the science… |
 | 4 | ✔ ready | `career-paths` | More than one way in — the de-circumscription pathway map | L | KEEPER of the de-circumscription cluster (collapses your-possible-life/More Than One Way In, college-compass/Route Map, future-finder-revamped/The Other Way In). 4.5x4.5 evidence×impact and the single most on-mission concept for the DEIS… |
