@@ -8131,5 +8131,130 @@ export const CURRICULUM: CurriculumSubject[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "irish",
+    "name": "Irish (Gaeilge)",
+    "category": "language",
+    "levels": [
+      "higher",
+      "ordinary"
+    ],
+    "strands": [
+      {
+        "id": "irish-0",
+        "name": "Gramadach (Grammar)",
+        "subtopics": [
+          {
+            "id": "irish-0-0",
+            "name": "Na hAimsirí (Verb Tenses)"
+          },
+          {
+            "id": "irish-0-1",
+            "name": "Séimhiú agus Urú"
+          },
+          {
+            "id": "irish-0-2",
+            "name": "An Modh Coinníollach (Conditional)"
+          },
+          {
+            "id": "irish-0-3",
+            "name": "An Tuiseal Ginideach (Genitive)"
+          },
+          {
+            "id": "irish-0-4",
+            "name": "Na Briathra Neamhrialta (Irregular Verbs)"
+          }
+        ]
+      },
+      {
+        "id": "irish-1",
+        "name": "Léamhthuiscint (Reading Comprehension)",
+        "subtopics": [
+          {
+            "id": "irish-1-0",
+            "name": "Teicníc na Léamhthuisceana"
+          },
+          {
+            "id": "irish-1-1",
+            "name": "Foclóir agus Frásaí"
+          }
+        ]
+      },
+      {
+        "id": "irish-2",
+        "name": "Cluastuiscint (Listening)",
+        "subtopics": [
+          {
+            "id": "irish-2-0",
+            "name": "Teicníc na Cluastuisceana"
+          }
+        ]
+      },
+      {
+        "id": "irish-3",
+        "name": "Ceapadóireacht (Composition)",
+        "subtopics": [
+          {
+            "id": "irish-3-0",
+            "name": "An Aiste"
+          },
+          {
+            "id": "irish-3-1",
+            "name": "An tAlt / Blag"
+          },
+          {
+            "id": "irish-3-2",
+            "name": "An Scéal"
+          },
+          {
+            "id": "irish-3-3",
+            "name": "An Díospóireacht / Óráid"
+          }
+        ]
+      },
+      {
+        "id": "irish-4",
+        "name": "An Bhéaltriail (Oral)",
+        "subtopics": [
+          {
+            "id": "irish-4-0",
+            "name": "An Comhrá"
+          },
+          {
+            "id": "irish-4-1",
+            "name": "An tSraith Pictiúr"
+          }
+        ]
+      },
+      {
+        "id": "irish-5",
+        "name": "Prós (Prose)",
+        "subtopics": [
+          {
+            "id": "irish-5-0",
+            "name": "Prós Ainmnithe (Prescribed Prose)"
+          },
+          {
+            "id": "irish-5-1",
+            "name": "Prós Roghnach (Studied Prose)"
+          }
+        ]
+      },
+      {
+        "id": "irish-6",
+        "name": "Filíocht (Poetry)",
+        "subtopics": [
+          {
+            "id": "irish-6-0",
+            "name": "Filíocht Ainmnithe (Prescribed Poetry)"
+          },
+          {
+            "id": "irish-6-1",
+            "name": "Filíocht Roghnach (Studied Poetry)"
+          }
+        ]
+      }
+    ]
   }
 ];
