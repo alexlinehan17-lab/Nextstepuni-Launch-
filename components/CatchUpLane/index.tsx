@@ -377,11 +377,11 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
                 </figure>
               )}
 
-              {/* Comprehension passage — the real text, shown verbatim in a
-                  scrollable reading panel (under the SEC agreement). */}
+              {/* Comprehension passage — the FULL real text, shown verbatim
+                  (under the SEC agreement). Not clipped: the student sees all of it. */}
               {card.passage && (
                 <div className="mb-5 rounded-xl border-2 border-[#1A1A1A] dark:border-zinc-700 overflow-hidden bg-white">
-                  <div className="max-h-72 overflow-y-auto px-4 py-3.5 text-[14px] leading-relaxed whitespace-pre-line" style={{ color: '#2a2622', fontFamily: "'Source Serif 4', serif" }}>
+                  <div className="px-4 py-3.5 text-[14px] leading-relaxed whitespace-pre-line" style={{ color: '#2a2622', fontFamily: "'Source Serif 4', serif" }}>
                     {card.passage.text}
                   </div>
                   <div className="text-[10px] px-3 py-1.5 border-t border-zinc-100 dark:border-zinc-800" style={{ color: CYAN_DARK_TEXT, backgroundColor: CYAN_TINT }}>{card.passage.source}</div>
