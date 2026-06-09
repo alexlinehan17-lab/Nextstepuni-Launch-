@@ -552,6 +552,26 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
               <p className="font-serif italic text-sm text-zinc-500 leading-relaxed">
                 {selectedTopicData.tip}
               </p>
+
+              {/* Sub-topics — the exact curriculum sub-topics under this strand,
+                  the same nodes Catch-Up Lane and Command-Word use (single source of truth) */}
+              {selectedTopicData.subtopics.length > 0 && (
+                <div className="mt-5 pt-4" style={{ borderTop: '0.5px solid rgba(0,0,0,0.07)' }}>
+                  <p className="text-[11px] text-zinc-400 uppercase tracking-wider mb-2">
+                    Sub-topics ({selectedTopicData.subtopics.length})
+                  </p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {selectedTopicData.subtopics.map((st) => (
+                      <span
+                        key={st.id}
+                        className="text-[12px] px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300"
+                      >
+                        {st.name}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </MotionDiv>
         )}

@@ -35,15 +35,15 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "irish-0-1",
-            "name": "Aithris Filíochta"
+            "name": "Aithris Filiochta (Poetry Reading"
           },
           {
             "id": "irish-0-2",
-            "name": "Sraith Pictiúr"
+            "name": "Sraith Pictiur (Picture Sequence"
           },
           {
             "id": "irish-0-3",
-            "name": "Comhrá / Agallamh"
+            "name": "Comhra Ginearalta (General Conversation"
           },
           {
             "id": "irish-0-4",
@@ -52,6 +52,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "irish-0-5",
             "name": "Foghraíocht agus Blas"
+          },
+          {
+            "id": "irish-0-6",
+            "name": "Ullmhu don Bhealtriail (Oral Prep Strategy)"
           }
         ]
       },
@@ -69,7 +73,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "irish-1-2",
-            "name": "Cuid C — Píosaí Nuachta"
+            "name": "Cuid C - Piosai Nuachta / Comhra Raidio"
           },
           {
             "id": "irish-1-3",
@@ -112,6 +116,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "irish-2-7",
             "name": "Saibhreas na Gaeilge"
+          },
+          {
+            "id": "irish-2-8",
+            "name": "Litir / Litir Fhoirmiuil (Letter)"
           }
         ]
       },
@@ -133,7 +141,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "irish-3-3",
-            "name": "Ceist Ghramadaí / Teanga"
+            "name": "Cruinneas Teanga (Grammar within Leamhthuiscint B)"
           }
         ]
       },
@@ -261,11 +269,11 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "irish-7",
-        "name": "Stair Litríocht na Gaeilge",
+        "name": "Litriocht: Anailis Chomparaideach & Comhthuiscint",
         "subtopics": [
           {
             "id": "irish-7-0",
-            "name": "Stair Litríocht na Gaeilge"
+            "name": "Anailis Theamuil agus Stile (Theme & Technique)"
           },
           {
             "id": "irish-7-1",
@@ -324,7 +332,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "english-6-1",
-            "name": "Shakespearean drama"
+            "name": "Single text drama (often Shakespearean)"
           },
           {
             "id": "english-6-2",
@@ -397,6 +405,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "english-8-1",
             "name": "Prescribed poetry (Ordinary)"
+          },
+          {
+            "id": "english-8-2",
+            "name": "Unseen poetry (Paper 2, response to a previously unseen poem)"
           }
         ]
       },
@@ -406,7 +418,7 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "english-9-1",
-            "name": "Composition (essay / speech / article / short story)"
+            "name": "Composition — choice of formats (essay / personal essay / short story / speech / article / discursive)"
           }
         ]
       },
@@ -417,6 +429,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "english-10-0",
             "name": "Reading & comprehension (Paper 1, Question A)"
+          },
+          {
+            "id": "english-10-1",
+            "name": "Functional writing (Paper 1, Question B)"
           }
         ]
       }
@@ -461,7 +477,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "french-0-6",
-            "name": "Encouraging or Impeding Action"
+            "name": "Persuading and Influencing Others"
           },
           {
             "id": "french-0-7",
@@ -499,11 +515,15 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "french-1-3",
-            "name": "Your Experience of the Language"
+            "name": "Reflecting On Your Own Language Learning"
           },
           {
             "id": "french-1-4",
             "name": "Using Reference Materials"
+          },
+          {
+            "id": "french-1-5",
+            "name": "Grammar and Sentence Structure in Context"
           }
         ]
       },
@@ -530,6 +550,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "french-2-4",
             "name": "Issues Across Cultures"
+          },
+          {
+            "id": "french-2-5",
+            "name": "Francophone World Beyond France"
           }
         ]
       }
@@ -630,7 +654,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "german-2-1",
-            "name": "Modern Literary Texts"
+            "name": "Modern Literary Texts (Kurzgeschichten & Poems)"
           },
           {
             "id": "german-2-2",
@@ -652,19 +676,23 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "german-3-0",
-            "name": "Oral Assessment"
+            "name": "Oral Exam (Mündliche Prüfung)"
           },
           {
             "id": "german-3-1",
-            "name": "Listening Comprehension"
+            "name": "Listening Comprehension (Hörverständnis)"
           },
           {
             "id": "german-3-2",
-            "name": "Reading Comprehension"
+            "name": "Reading Comprehension (Leseverständnis)"
           },
           {
             "id": "german-3-3",
-            "name": "Written Production"
+            "name": "Written Production (Schriftliche Produktion & Äußerung zum Thema)"
+          },
+          {
+            "id": "german-3-4",
+            "name": "Applied Grammar (Angewandte Grammatik)"
           }
         ]
       }
@@ -709,7 +737,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "spanish-0-6",
-            "name": "Influencing a Course of Action"
+            "name": "Transactional Language and Role-Plays"
           },
           {
             "id": "spanish-0-7",
@@ -735,7 +763,7 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "spanish-1-0",
-            "name": "Learning From Target Language Material"
+            "name": "Comprehending Target-Language Material (Aural and Reading)"
           },
           {
             "id": "spanish-1-1",
@@ -765,7 +793,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "spanish-2-1",
-            "name": "Reading Modern Literary Texts"
+            "name": "Reading Modern Literary Texts (Section A Literature Option)"
           },
           {
             "id": "spanish-2-2",
@@ -778,6 +806,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "spanish-2-4",
             "name": "Cross-Cultural Issues"
+          },
+          {
+            "id": "spanish-2-5",
+            "name": "Prescribed Literature and Film for Opinion Writing"
           }
         ]
       }
@@ -794,7 +826,7 @@ export const CURRICULUM: CurriculumSubject[] = [
     "strands": [
       {
         "id": "italian-0",
-        "name": "Basic Communicative Proficiency",
+        "name": "Communicative Proficiency (Speaking, Listening & Writing)",
         "subtopics": [
           {
             "id": "italian-0-0",
@@ -802,7 +834,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "italian-0-1",
-            "name": "Making Plans & Future Action"
+            "name": "Making Plans, Arrangements & Future Action"
           },
           {
             "id": "italian-0-2",
@@ -865,6 +897,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "italian-1-4",
             "name": "Consulting Reference Materials"
+          },
+          {
+            "id": "italian-1-5",
+            "name": "Grammar Accuracy & Self-Correction"
           }
         ]
       },
@@ -878,7 +914,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "italian-2-1",
-            "name": "Reading Modern Literary Texts"
+            "name": "Reading Modern Literary Texts (incl. studied text e.g. Marcovaldo)"
           },
           {
             "id": "italian-2-2",
@@ -951,7 +987,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "russian-0-10",
-            "name": "Encouraging & Impeding Action"
+            "name": "Facilitating, Encouraging or Impeding Action"
           },
           {
             "id": "russian-0-11",
@@ -989,7 +1025,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "russian-1-3",
-            "name": "Writing About Your Experience"
+            "name": "Writing About Your Experience of the Language"
           },
           {
             "id": "russian-1-4",
@@ -1019,7 +1055,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "russian-2-4",
-            "name": "Issues Across Cultural Divisions"
+            "name": "Issues That Transcend Cultural Divisions"
           },
           {
             "id": "russian-2-5",
@@ -1130,7 +1166,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "japanese-1-2",
-            "name": "Relating Language to Attitude"
+            "name": "Relating Language to Attitude and Register"
           },
           {
             "id": "japanese-1-3",
@@ -1170,7 +1206,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "japanese-3",
-        "name": "Writing Systems (Kana and Kanji)",
+        "name": "Writing Systems & Required Kanji",
         "subtopics": [
           {
             "id": "japanese-3-0",
@@ -1183,6 +1219,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "japanese-3-2",
             "name": "Kanji (Required List)"
+          },
+          {
+            "id": "japanese-3-3",
+            "name": "Linguistic Skills: Structures & Grammar"
           }
         ]
       },
@@ -1417,7 +1457,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "mandarin-chinese-2",
-        "name": "Assessment for Certification",
+        "name": "Assessment for Certification (Oral, Aural & Written)",
         "subtopics": [
           {
             "id": "mandarin-chinese-2-0",
@@ -1433,11 +1473,11 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "mandarin-chinese-2-3",
-            "name": "Language Portfolio"
+            "name": "Language Portfolio (Oral Stimulus - Not Graded)"
           },
           {
             "id": "mandarin-chinese-2-4",
-            "name": "Pin Yin & Simplified Characters"
+            "name": "Simplified Characters (Pin Yin Not Assessed)"
           }
         ]
       }
@@ -1563,6 +1603,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "latin-0-26",
             "name": "Prescribed Forms for Examination"
+          },
+          {
+            "id": "latin-0-27",
+            "name": "Unseen Comprehension and Translation (Section B technique)"
           }
         ]
       },
@@ -1638,7 +1682,7 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "latin-2-0",
-            "name": "Capstone Text and Passages"
+            "name": "Capstone Text: Virgil's Aeneid Books 1 & 4 (Dido and Aeneas)"
           },
           {
             "id": "latin-2-1",
@@ -1646,11 +1690,11 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "latin-2-2",
-            "name": "Written Examination (60%)"
+            "name": "Written Examination (60%): Section A Capstone 100m + Section B Unseen 200m"
           },
           {
             "id": "latin-2-3",
-            "name": "Research Study (40%)"
+            "name": "Research Study (40%): ~20-hour written report on a common brief"
           }
         ]
       }
@@ -1671,11 +1715,11 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "ancient-greek-0-0",
-            "name": "Understanding Greek Texts"
+            "name": "Understanding Ancient Greek Texts (element)"
           },
           {
             "id": "ancient-greek-0-1",
-            "name": "1.1 Explore Greek Texts & Genres"
+            "name": "1.1 Explore a Range of Greek Texts & Genres"
           },
           {
             "id": "ancient-greek-0-2",
@@ -1715,7 +1759,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "ancient-greek-0-11",
-            "name": "Language Awareness & Analysis"
+            "name": "Developing Language Awareness & Analytical Skills (element)"
           },
           {
             "id": "ancient-greek-0-12",
@@ -1761,7 +1805,7 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "ancient-greek-1-0",
-            "name": "Ancient Greek Literature"
+            "name": "Ancient Greek Literature (element)"
           },
           {
             "id": "ancient-greek-1-1",
@@ -1789,11 +1833,11 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "ancient-greek-1-7",
-            "name": "2.7 Greek's Continued Importance"
+            "name": "2.7 Continued Importance of Greek (Literature, Learning, Science, Religion)"
           },
           {
             "id": "ancient-greek-1-8",
-            "name": "Hellenic Culture Through Texts"
+            "name": "Hellenic Culture Explored Through Ancient Greek Texts (element)"
           },
           {
             "id": "ancient-greek-1-9",
@@ -1819,7 +1863,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "ancient-greek-2",
-        "name": "Capstone Text & Prescribed Material",
+        "name": "Capstone Text & Prescribed Material (examined in the Written Paper)",
         "subtopics": [
           {
             "id": "ancient-greek-2-0",
@@ -1837,7 +1881,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "ancient-greek-3",
-        "name": "Research Study: Text in Context (40%)",
+        "name": "Research Study: Text in Context (Additional Assessment Component, 40%)",
         "subtopics": [
           {
             "id": "ancient-greek-3-0",
@@ -1890,11 +1934,11 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "hebrew-studies-0-4",
-            "name": "Government and Monarchy: OT Texts"
+            "name": "Government and Monarchy: Old Testament Texts"
           },
           {
             "id": "hebrew-studies-0-5",
-            "name": "Government and Monarchy: Mishnah"
+            "name": "Government and Monarchy: Mishnah Texts"
           }
         ]
       },
@@ -1958,7 +2002,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "hebrew-studies-2-5",
-            "name": "Festivals and Symbols: Mishnah"
+            "name": "Festivals and Symbols: Mishnah Texts"
           }
         ]
       },
@@ -1976,7 +2020,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "hebrew-studies-3-2",
-            "name": "Election and Covenant: Mishnah"
+            "name": "Election and Covenant: Mishnah Texts"
           },
           {
             "id": "hebrew-studies-3-3",
@@ -2041,7 +2085,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "arabic-2",
-        "name": "Assessment for Certification",
+        "name": "Assessment for Certification (New Spec, exam from 2027)",
         "subtopics": [
           {
             "id": "arabic-2-0",
@@ -2062,6 +2106,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "arabic-2-4",
             "name": "Language Portfolio"
+          },
+          {
+            "id": "arabic-2-5",
+            "name": "Written Exam: Reading and Writing Weightings (HL/OL)"
           }
         ]
       },
@@ -2079,7 +2127,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "arabic-3-2",
-            "name": "Scanning & Extracting Information"
+            "name": "Scanning and Extracting Specific Information"
           },
           {
             "id": "arabic-3-3",
@@ -2149,7 +2197,7 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "arabic-6-0",
-            "name": "Extract from the Koran (Qur'an)"
+            "name": "Extract from the Quran"
           },
           {
             "id": "arabic-6-1",
@@ -2162,6 +2210,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "arabic-6-3",
             "name": "Commenting on Set Texts"
+          },
+          {
+            "id": "arabic-6-4",
+            "name": "Answering Two of Three Literature Sections"
           }
         ]
       },
@@ -2218,7 +2270,7 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "classical-studies-0-0",
-            "name": "Types of Heroes and Leaders"
+            "name": "Characteristics and Types of Heroes and Leaders"
           },
           {
             "id": "classical-studies-0-1",
@@ -2252,11 +2304,11 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "classical-studies-1-2",
-            "name": "Prescribed Tragedy"
+            "name": "Prescribed Tragedy (rotating pairing)"
           },
           {
             "id": "classical-studies-1-3",
-            "name": "Roman Spectacle and the Colosseum"
+            "name": "The Colosseum, the Circus Maximus and Roman Spectacle"
           }
         ]
       },
@@ -2270,7 +2322,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "classical-studies-2-1",
-            "name": "Military Exploits of Alexander or Caesar"
+            "name": "Political and Military Exploits of Alexander or Caesar"
           },
           {
             "id": "classical-studies-2-2",
@@ -2282,7 +2334,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "classical-studies-2-4",
-            "name": "Prescribed Literary Sources"
+            "name": "Prescribed Literary Sources (Arrian/Plutarch or Caesar/Suetonius)"
           }
         ]
       },
@@ -2296,7 +2348,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "classical-studies-3-1",
-            "name": "Temples of Greece and Rome"
+            "name": "Temples: Parthenon, Erechtheion, Pantheon and Temple of Vesta"
           },
           {
             "id": "classical-studies-3-2",
@@ -2304,7 +2356,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "classical-studies-3-3",
-            "name": "Philosophy of Mortality and Living Well"
+            "name": "Philosophy of Mortality and Living Well (Plato's Crito, Horace's Odes/Epodes)"
           }
         ]
       }
@@ -2324,11 +2376,11 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "lithuanian-0-0",
-            "name": "Reception: Listening & Reading"
+            "name": "Reception (Listening & Reading)"
           },
           {
             "id": "lithuanian-0-1",
-            "name": "Spoken Interaction"
+            "name": "Interaction (Spoken & Written)"
           },
           {
             "id": "lithuanian-0-2",
@@ -2337,6 +2389,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "lithuanian-0-3",
             "name": "Mediation"
+          },
+          {
+            "id": "lithuanian-0-4",
+            "name": "Pronunciation, Spelling & Grammatical Accuracy"
           }
         ]
       },
@@ -2382,7 +2438,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "polish-0-3",
-            "name": "Mediation"
+            "name": "Mediation (relaying and summarising texts)"
           }
         ]
       },
@@ -2397,12 +2453,16 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "polish-1-1",
             "name": "Pluricultural Competence"
+          },
+          {
+            "id": "polish-1-2",
+            "name": "Cultural and Historical Knowledge of Poland"
           }
         ]
       },
       {
         "id": "polish-2",
-        "name": "Assessment & Language Portfolio",
+        "name": "Exam Components and Language Portfolio",
         "subtopics": [
           {
             "id": "polish-2-0",
@@ -2422,7 +2482,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "polish-2-4",
-            "name": "Language Portfolio"
+            "name": "Language Portfolio (oral stimulus, not marked)"
           }
         ]
       }
@@ -2438,7 +2498,7 @@ export const CURRICULUM: CurriculumSubject[] = [
     "strands": [
       {
         "id": "portuguese-0",
-        "name": "Communicative Language Competence",
+        "name": "Communicative Language Competence (Reception, Interaction, Production, Mediation)",
         "subtopics": [
           {
             "id": "portuguese-0-0",
@@ -2455,6 +2515,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "portuguese-0-3",
             "name": "Mediation"
+          },
+          {
+            "id": "portuguese-0-4",
+            "name": "Language Portfolio (focus of the oral discussion)"
           }
         ]
       },
@@ -2464,11 +2528,11 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "portuguese-1-0",
-            "name": "Plurilingual Competence"
+            "name": "Plurilingual Competence (cross-language decoding & compensation)"
           },
           {
             "id": "portuguese-1-1",
-            "name": "Pluricultural Competence"
+            "name": "Pluricultural Competence (Portuguese-speaking cultures & registers)"
           }
         ]
       }
@@ -2554,11 +2618,19 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "mathematics-2-2",
-            "name": "Arithmetic"
+            "name": "Arithmetic & Applied Arithmetic"
           },
           {
             "id": "mathematics-2-3",
             "name": "Length, Area & Volume"
+          },
+          {
+            "id": "mathematics-2-4",
+            "name": "Sequences & Series"
+          },
+          {
+            "id": "mathematics-2-5",
+            "name": "Financial Maths & Applications"
           }
         ]
       },
@@ -2581,6 +2653,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "mathematics-3-3",
             "name": "Complex Numbers"
+          },
+          {
+            "id": "mathematics-3-4",
+            "name": "Proof by Induction"
           }
         ]
       },
@@ -2789,6 +2865,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "physics-0-12",
             "name": "Simple Harmonic Motion and Hooke's Law (HL)"
+          },
+          {
+            "id": "physics-0-13",
+            "name": "Equations of Motion"
           }
         ]
       },
@@ -2837,6 +2917,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "physics-2-5",
             "name": "Heat Transfer: Radiation"
+          },
+          {
+            "id": "physics-2-6",
+            "name": "Mandatory Experiments (Calorimetry)"
           }
         ]
       },
@@ -2980,7 +3064,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "physics-6-10",
-            "name": "Conduction in Materials"
+            "name": "Conduction in Materials and Semiconductors"
           },
           {
             "id": "physics-6-11",
@@ -3058,7 +3142,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "physics-7-9",
-            "name": "Particle Physics (Option, HL)"
+            "name": "Particle Physics (Option, HL) — Fundamental Forces, Quarks and Accelerators"
           }
         ]
       }
@@ -3170,6 +3254,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "chemistry-3-2",
             "name": "4.3 Volumetric Analysis"
+          },
+          {
+            "id": "chemistry-3-3",
+            "name": "Acid-Base Theories (Bronsted-Lowry, Arrhenius)"
           }
         ]
       },
@@ -3254,6 +3342,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "chemistry-7-1",
             "name": "8.2 Le Chatelier's Principle"
+          },
+          {
+            "id": "chemistry-7-2",
+            "name": "Equilibrium Constant (Kc) Calculations"
           }
         ]
       },
@@ -3281,7 +3373,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "chemistry-9",
-        "name": "Option 1A: Industrial Chemistry",
+        "name": "Option 1A: Additional Industrial Chemistry",
         "subtopics": [
           {
             "id": "chemistry-9-0",
@@ -3339,7 +3431,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "chemistry-12",
-        "name": "Option 2B: Electrochemistry and Metals",
+        "name": "Option 2B: Additional Electrochemistry and the Extraction of Metals",
         "subtopics": [
           {
             "id": "chemistry-12-0",
@@ -3447,6 +3539,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "physics-and-chemistry-1-2",
             "name": "Thermometers and Temperature Scales"
+          },
+          {
+            "id": "physics-and-chemistry-1-3",
+            "name": "Gas Laws and Kinetic Theory"
           }
         ]
       },
@@ -3775,7 +3871,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "biology-2-1",
-            "name": "Organisation and Vascular Structures"
+            "name": "Organisation and the Vascular Structures"
           },
           {
             "id": "biology-2-2",
@@ -3842,7 +3938,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "agricultural-science-1-1",
-            "name": "Properties"
+            "name": "Properties (Overview)"
           },
           {
             "id": "agricultural-science-1-2",
@@ -3918,7 +4014,11 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "agricultural-science-3-5",
-            "name": "Production: Husbandry And Health"
+            "name": "Production: Animal Husbandry & Health"
+          },
+          {
+            "id": "agricultural-science-3-6",
+            "name": "Genetics & Breeding"
           }
         ]
       }
@@ -4122,6 +4222,14 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "computer-science-1-24",
             "name": "Testing Methods"
+          },
+          {
+            "id": "computer-science-1-25",
+            "name": "Recursion"
+          },
+          {
+            "id": "computer-science-1-26",
+            "name": "Cryptography and Encryption"
           }
         ]
       },
@@ -4163,11 +4271,15 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "computer-science-2-8",
-            "name": "ALT4: Embedded Systems"
+            "name": "ALT4: Embedded Systems (micro:bit)"
           },
           {
             "id": "computer-science-2-9",
             "name": "ALT4: Inputs and Outputs"
+          },
+          {
+            "id": "computer-science-2-10",
+            "name": "Computational Thinking Coursework Project (SEC-assessed"
           }
         ]
       }
@@ -4208,7 +4320,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "accounting-0-5",
-            "name": "Fundamental Concepts (SSAP 2)"
+            "name": "Fundamental Accounting Concepts (Going Concern, Accruals, Consistency, Prudence)"
           },
           {
             "id": "accounting-0-6",
@@ -4265,6 +4377,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "accounting-2-3",
             "name": "Suspense Accounts"
+          },
+          {
+            "id": "accounting-2-4",
+            "name": "Correction of Errors and Tabular Statements"
           }
         ]
       },
@@ -4314,7 +4430,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "accounting-5-1",
-            "name": "Stock"
+            "name": "Stock Valuation (FIFO/AVCO, Lower of Cost and NRV)"
           },
           {
             "id": "accounting-5-2",
@@ -4534,6 +4650,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "business-0-10",
             "name": "Consumer and Industrial Law"
+          },
+          {
+            "id": "business-0-11",
+            "name": "Communication and ICT in Business"
           }
         ]
       },
@@ -4597,7 +4717,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "business-2-7",
-            "name": "Management Activities"
+            "name": "Management Activities (Planning, Organising, Controlling)"
           },
           {
             "id": "business-2-8",
@@ -4676,6 +4796,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "business-3-14",
             "name": "Profitability and Liquidity Ratios"
+          },
+          {
+            "id": "business-3-15",
+            "name": "Break-Even Analysis"
           }
         ]
       },
@@ -4734,6 +4858,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "business-4-12",
             "name": "Methods of Expansion"
+          },
+          {
+            "id": "business-4-13",
+            "name": "Sources of Finance (Short, Medium, Long Term)"
           }
         ]
       },
@@ -4866,7 +4994,7 @@ export const CURRICULUM: CurriculumSubject[] = [
     "strands": [
       {
         "id": "economics-0",
-        "name": "Strand 1: What Is Economics?",
+        "name": "Strand 1: What Is Economics About?",
         "subtopics": [
           {
             "id": "economics-0-0",
@@ -4884,7 +5012,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "economics-1",
-        "name": "Strand 2: Economic Decisions",
+        "name": "Strand 2: How Are Economic Decisions Made?",
         "subtopics": [
           {
             "id": "economics-1-0",
@@ -4901,6 +5029,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "economics-1-3",
             "name": "Government Intervention"
+          },
+          {
+            "id": "economics-1-4",
+            "name": "Elasticity (PED, PES, Income & Cross)"
           }
         ]
       },
@@ -4924,7 +5056,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "economics-3",
-        "name": "Strand 4: Policy & Performance",
+        "name": "Strand 4: What Is the Relationship Between Policy and Economic Performance?",
         "subtopics": [
           {
             "id": "economics-3-0",
@@ -4940,17 +5072,21 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "economics-3-3",
-            "name": "Monetary Policy & Prices"
+            "name": "Monetary Policy & Inflation"
           },
           {
             "id": "economics-3-4",
             "name": "Financial Sector"
+          },
+          {
+            "id": "economics-3-5",
+            "name": "Economic Growth"
           }
         ]
       },
       {
         "id": "economics-4",
-        "name": "Strand 5: International Economics",
+        "name": "Strand 5: How Is Our Economy Influenced by International Economics?",
         "subtopics": [
           {
             "id": "economics-4-0",
@@ -4979,7 +5115,7 @@ export const CURRICULUM: CurriculumSubject[] = [
     "strands": [
       {
         "id": "geography-0",
-        "name": "Core Unit 1: Physical Environment",
+        "name": "Core Unit 1: Patterns and Processes in the Physical Environment",
         "subtopics": [
           {
             "id": "geography-0-0",
@@ -5025,11 +5161,11 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "geography-1-2",
-            "name": "The Complexity of Regions (i)"
+            "name": "The Complexity of Regions (i): Subsistence vs Commercial Economies"
           },
           {
             "id": "geography-1-3",
-            "name": "The Complexity of Regions (ii)"
+            "name": "The Complexity of Regions (ii): Urban, Political and Cultural Regions"
           }
         ]
       },
@@ -5060,12 +5196,20 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "geography-2-5",
             "name": "Conclusion and Evaluation"
+          },
+          {
+            "id": "geography-2-6",
+            "name": "Ordnance Survey Maps and Aerial Photograph Interpretation"
+          },
+          {
+            "id": "geography-2-7",
+            "name": "Weather Maps, Synoptic Charts and Data (Graphs and Tables)"
           }
         ]
       },
       {
         "id": "geography-3",
-        "name": "Elective Unit 4: Economic Activities",
+        "name": "Elective Unit 4: Patterns and Processes in Economic Activities",
         "subtopics": [
           {
             "id": "geography-3-0",
@@ -5091,7 +5235,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "geography-4",
-        "name": "Elective Unit 5: Human Environment",
+        "name": "Elective Unit 5: Patterns and Processes in the Human Environment",
         "subtopics": [
           {
             "id": "geography-4-0",
@@ -5183,7 +5327,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "geography-8",
-        "name": "Optional Unit 9: Atmosphere-Ocean",
+        "name": "Optional Unit 9: The Atmosphere-Ocean Environment",
         "subtopics": [
           {
             "id": "geography-8-0",
@@ -5224,7 +5368,7 @@ export const CURRICULUM: CurriculumSubject[] = [
     "strands": [
       {
         "id": "history-0",
-        "name": "Early Modern: Irish History 1494-1815",
+        "name": "Early Modern Field - Ireland, 1494-1815",
         "subtopics": [
           {
             "id": "history-0-0",
@@ -5326,7 +5470,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "history-1",
-        "name": "Early Modern: Europe & Wider World",
+        "name": "Early Modern Field - Europe & the Wider World, 1492-1815",
         "subtopics": [
           {
             "id": "history-1-0",
@@ -5428,7 +5572,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "history-2",
-        "name": "Later Modern: Irish History 1815-1993",
+        "name": "Later Modern Field - Ireland, 1815-1993",
         "subtopics": [
           {
             "id": "history-2-0",
@@ -5448,7 +5592,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "history-2-4",
-            "name": "Political & Social Reform 1870-1914"
+            "name": "Movements for Political & Social Reform 1870-1914"
           },
           {
             "id": "history-2-5",
@@ -5464,7 +5608,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "history-2-8",
-            "name": "Sovereignty & Partition 1912-1949"
+            "name": "Pursuit of Sovereignty & the Impact of Partition 1912-1949"
           },
           {
             "id": "history-2-9",
@@ -5496,7 +5640,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "history-2-16",
-            "name": "Northern Ireland 1949-1993"
+            "name": "Politics & Society in Northern Ireland 1949-1993"
           },
           {
             "id": "history-2-17",
@@ -5512,7 +5656,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "history-2-20",
-            "name": "The Republic of Ireland 1949-1989"
+            "name": "Government, Economy & Society in the Republic of Ireland 1949-1989"
           },
           {
             "id": "history-2-21",
@@ -5530,7 +5674,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "history-3",
-        "name": "Later Modern: Europe & Wider World",
+        "name": "Later Modern Field - Europe & the Wider World, 1815-1993",
         "subtopics": [
           {
             "id": "history-3-0",
@@ -5582,7 +5726,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "history-3-12",
-            "name": "Division & Realignment 1945-1992"
+            "name": "Division & Realignment in Europe 1945-1992"
           },
           {
             "id": "history-3-13",
@@ -5598,7 +5742,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "history-3-16",
-            "name": "Retreat from Empire 1945-1990"
+            "name": "European Retreat from Empire & the Aftermath 1945-1990"
           },
           {
             "id": "history-3-17",
@@ -5683,7 +5827,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "politics-and-society-0-9",
-            "name": "2.6 Media in a Democracy"
+            "name": "2.6 Media, Public Opinion and Democracy"
           },
           {
             "id": "politics-and-society-0-10",
@@ -5821,7 +5965,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "politics-and-society-3-7",
-            "name": "8.1 Acting on Sustainability"
+            "name": "8.1 Acting for Sustainable Development"
           },
           {
             "id": "politics-and-society-3-8",
@@ -5846,7 +5990,7 @@ export const CURRICULUM: CurriculumSubject[] = [
     "strands": [
       {
         "id": "religious-education-0",
-        "name": "Section A: The Search for Meaning",
+        "name": "Section A: The Search for Meaning and Values",
         "subtopics": [
           {
             "id": "religious-education-0-0",
@@ -5888,7 +6032,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "religious-education-1",
-        "name": "Section B: Christianity Origins",
+        "name": "Section B: Christianity: Origins and Contemporary Expressions",
         "subtopics": [
           {
             "id": "religious-education-1-0",
@@ -6064,7 +6208,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "religious-education-5",
-        "name": "Section F: Justice and Peace",
+        "name": "Section F: Issues of Justice and Peace",
         "subtopics": [
           {
             "id": "religious-education-5-0",
@@ -6148,7 +6292,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "religious-education-7",
-        "name": "Section H: The Bible as Sacred Text",
+        "name": "Section H: The Bible: Literature and Sacred Text",
         "subtopics": [
           {
             "id": "religious-education-7-0",
@@ -6190,7 +6334,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "religious-education-8",
-        "name": "Section I: The Irish Experience",
+        "name": "Section I: Religion: the Irish Experience",
         "subtopics": [
           {
             "id": "religious-education-8-0",
@@ -6397,7 +6541,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "art-4-1",
-            "name": "The Renaissance and Mannerism"
+            "name": "The Renaissance and Mannerism (Proto, Early, High)"
           },
           {
             "id": "art-4-2",
@@ -6405,7 +6549,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "art-4-3",
-            "name": "Realism and Impressionism"
+            "name": "Realism, Impressionism and Post-Impressionism"
           },
           {
             "id": "art-4-4",
@@ -6423,7 +6567,7 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "art-5-0",
-            "name": "Pre-Christian Ireland"
+            "name": "Pre-Christian Ireland (c. 4,000 BCE - 500 CE)"
           },
           {
             "id": "art-5-1",
@@ -6461,7 +6605,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "art-6-2",
-            "name": "Art as Social Commentary"
+            "name": "Art as Social Commentary or Commentator"
           },
           {
             "id": "art-6-3",
@@ -6522,7 +6666,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "music-0-9",
-            "name": "Music Technology Systems"
+            "name": "Music Technology Performance"
           },
           {
             "id": "music-0-10",
@@ -6560,7 +6704,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "music-1-4",
-            "name": "Dominant Seventh and Cadential 6/4"
+            "name": "Dominant 7th and Cadential 6/4 Chords"
           },
           {
             "id": "music-1-5",
@@ -6590,7 +6734,7 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "music-2-0",
-            "name": "Prescribed Works"
+            "name": "Prescribed Works (Set Works)"
           },
           {
             "id": "music-2-1",
@@ -6598,7 +6742,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "music-2-2",
-            "name": "Irish Music"
+            "name": "Irish Traditional Music"
           },
           {
             "id": "music-2-3",
@@ -6618,7 +6762,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "music-2-7",
-            "name": "General Listening"
+            "name": "General Listening (Unprepared)"
           },
           {
             "id": "music-2-8",
@@ -6677,7 +6821,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "design-and-communication-graphics-1",
-        "name": "Design Communication and Computer Graphics (Core)",
+        "name": "Communication of Design and Computer Graphics (Core)",
         "subtopics": [
           {
             "id": "design-and-communication-graphics-1-0",
@@ -6693,7 +6837,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "design-and-communication-graphics-1-3",
-            "name": "ICT: CAD Applications"
+            "name": "ICT: CAD Modelling and Applications"
           },
           {
             "id": "design-and-communication-graphics-1-4",
@@ -6764,7 +6908,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "construction-studies-0-4",
-            "name": "Services & External Works"
+            "name": "Services, External Works & Drainage"
           },
           {
             "id": "construction-studies-0-5",
@@ -6772,11 +6916,15 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "construction-studies-0-6",
-            "name": "Illumination in Buildings"
+            "name": "Illumination & Light in Buildings"
           },
           {
             "id": "construction-studies-0-7",
             "name": "Sound in Buildings"
+          },
+          {
+            "id": "construction-studies-0-8",
+            "name": "Sustainability, Passive House & U-Values"
           }
         ]
       },
@@ -6790,7 +6938,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "construction-studies-1-1",
-            "name": "Processes"
+            "name": "Processes & Craft Practices"
           }
         ]
       },
@@ -6845,6 +6993,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "construction-studies-2-11",
             "name": "Building Science: Acoustics"
+          },
+          {
+            "id": "construction-studies-2-12",
+            "name": "Portfolio Design Folio & Three Building Experiments"
           }
         ]
       },
@@ -6925,7 +7077,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "engineering-1",
-        "name": "Core: Manufacturing Techniques",
+        "name": "Core: Manufacturing Techniques and Technology",
         "subtopics": [
           {
             "id": "engineering-1-0",
@@ -7047,7 +7199,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "engineering-4",
-        "name": "Core: Computer Aided Processes",
+        "name": "Core: Computer Aided Processes (CAD/CAM)",
         "subtopics": [
           {
             "id": "engineering-4-0",
@@ -7146,6 +7298,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "engineering-7-3",
             "name": "Gears and Gearing"
+          },
+          {
+            "id": "engineering-7-4",
+            "name": "Cams and Followers"
           }
         ]
       },
@@ -7177,7 +7333,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "engineering-9",
-        "name": "Option: Computer Aided Processes",
+        "name": "Option: Computer Aided Processes (CAD/CAM)",
         "subtopics": [
           {
             "id": "engineering-9-0",
@@ -7307,7 +7463,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "engineering-12",
-        "name": "Option: Manufacturing Techniques",
+        "name": "Option: Manufacturing Techniques and Technology",
         "subtopics": [
           {
             "id": "engineering-12-0",
@@ -7514,11 +7670,11 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "technology-4-0",
-            "name": "Intro to Computer Systems"
+            "name": "Introduction to Computer Systems"
           },
           {
             "id": "technology-4-1",
-            "name": "Skills, Applications and Software"
+            "name": "Skills Development, Applications and Software"
           }
         ]
       },
@@ -7576,7 +7732,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "technology-7-4",
-            "name": "Assembling Pre-designed Circuits"
+            "name": "Assembly of Pre-designed Circuits"
           },
           {
             "id": "technology-7-5",
@@ -7614,7 +7770,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "technology-8-3",
-            "name": "Control and Programmable Devices"
+            "name": "Control; Programmable Devices"
           },
           {
             "id": "technology-8-4",
@@ -7733,7 +7889,7 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "physical-education-0-0",
-            "name": "Topic 1: Learning Skill and Technique"
+            "name": "Topic 1: Learning and Improving Skill and Technique"
           },
           {
             "id": "physical-education-0-1",
@@ -7785,7 +7941,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "physical-education-0-13",
-            "name": "Topic 3: Structures and Strategies"
+            "name": "Topic 3: Structures, Strategies, Roles and Conventions"
           },
           {
             "id": "physical-education-0-14",
@@ -7839,7 +7995,7 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "physical-education-1-0",
-            "name": "Topic 5: Promoting Physical Activity"
+            "name": "Topic 5: Promoting Physical Activity (Compulsory)"
           },
           {
             "id": "physical-education-1-1",
@@ -7859,7 +8015,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "physical-education-1-5",
-            "name": "Topic 6: Ethics and Fair Play"
+            "name": "Topic 6: Ethics and Fair Play (Compulsory)"
           },
           {
             "id": "physical-education-1-6",
@@ -7883,7 +8039,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "physical-education-1-11",
-            "name": "Topic 7: Activity and Inclusion"
+            "name": "Topic 7: Physical Activity and Inclusion (Prescribed - 2 of 4 examined)"
           },
           {
             "id": "physical-education-1-12",
@@ -7903,7 +8059,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "physical-education-1-16",
-            "name": "Topic 8: Technology, Media and Sport"
+            "name": "Topic 8: Technology, Media and Sport (Prescribed - 2 of 4 examined)"
           },
           {
             "id": "physical-education-1-17",
@@ -7915,7 +8071,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "physical-education-1-19",
-            "name": "Topic 9: Gender and Physical Activity"
+            "name": "Topic 9: Gender and Physical Activity (Prescribed - 2 of 4 examined)"
           },
           {
             "id": "physical-education-1-20",
@@ -7931,7 +8087,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "physical-education-1-23",
-            "name": "Topic 10: Business and Enterprise"
+            "name": "Topic 10: Business and Enterprise in Physical Activity and Sport (Prescribed - 2 of 4 examined)"
           },
           {
             "id": "physical-education-1-24",
@@ -7993,7 +8149,7 @@ export const CURRICULUM: CurriculumSubject[] = [
     "strands": [
       {
         "id": "lcvp-link-modules-0",
-        "name": "Link Module 1: World of Work",
+        "name": "Link Module 1: Preparation for the World of Work",
         "subtopics": [
           {
             "id": "lcvp-link-modules-0-0",
@@ -8005,11 +8161,15 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "lcvp-link-modules-0-2",
-            "name": "Unit 3: Career Investigation"
+            "name": "Unit 3: Career Investigation (core portfolio item)"
           },
           {
             "id": "lcvp-link-modules-0-3",
             "name": "Unit 4: Work Placement"
+          },
+          {
+            "id": "lcvp-link-modules-0-4",
+            "name": "Unit 5: Curriculum Vitae & Summary Report (core portfolio items)"
           }
         ]
       },
@@ -8031,7 +8191,11 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "lcvp-link-modules-1-3",
-            "name": "Unit 4: An Enterprise Activity"
+            "name": "Unit 4: An Enterprise Activity (Enterprise Report / Action Plan)"
+          },
+          {
+            "id": "lcvp-link-modules-1-4",
+            "name": "Unit 5: Work Experience Diary, My Own Place & Recorded Interview (optional portfolio items)"
           }
         ]
       }
@@ -8060,7 +8224,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "home-economics-0-2",
-            "name": "Food Science & Food Commodities"
+            "name": "Food Science & Properties of Food"
           },
           {
             "id": "home-economics-0-3",
@@ -8108,7 +8272,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "home-economics-2-2",
-            "name": "Education, Work & Leisure"
+            "name": "Education, Work & Leisure in Society"
           }
         ]
       },
