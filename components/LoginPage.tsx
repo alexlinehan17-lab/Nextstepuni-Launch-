@@ -183,13 +183,6 @@ const GatewayPanel = () => {
 // ── Card wrapper — split panel on desktop, full-width on mobile ──
 const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNode }> = ({ children, devButton }) => (
   <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 light" data-theme="light" style={{ backgroundColor: '#FAFBF6', colorScheme: 'light' }}>
-    <button
-      type="button"
-      className="fixed top-4 left-4 z-50 rounded-xl text-sm font-semibold text-white"
-      style={{ backgroundColor: '#F26B1F', padding: '10px 18px' }}
-    >
-      your experiment worked!
-    </button>
     <MotionDiv
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
