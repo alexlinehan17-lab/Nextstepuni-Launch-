@@ -8386,5 +8386,74 @@ export const CURRICULUM: CurriculumSubject[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "jc-irish",
+    "name": "Irish (Junior Cycle, Gaeilge T2)",
+    "category": "language",
+    "levels": [
+      "higher",
+      "ordinary"
+    ],
+    "strands": [
+      {
+        "id": "jc-irish-0",
+        "name": "Cumas Cumarsáide (Communicative Competence)",
+        "subtopics": [
+          {
+            "id": "jc-irish-0-0",
+            "name": "Éisteacht: Cluastuiscint (Listening)"
+          },
+          {
+            "id": "jc-irish-0-1",
+            "name": "Léamhthuiscint (Reading Comprehension)"
+          },
+          {
+            "id": "jc-irish-0-2",
+            "name": "Litríocht (Studied Literature)"
+          },
+          {
+            "id": "jc-irish-0-3",
+            "name": "Ceapadóireacht (Writing and Composition)"
+          },
+          {
+            "id": "jc-irish-0-4",
+            "name": "Labhairt agus Idirghníomhú Cainte (Speaking and Interaction)"
+          }
+        ]
+      },
+      {
+        "id": "jc-irish-1",
+        "name": "Feasacht Teanga agus Chultúrtha (Language and Cultural Awareness)",
+        "subtopics": [
+          {
+            "id": "jc-irish-1-0",
+            "name": "Cruinneas na Teanga (Language Accuracy: Séimhiú, Urú, Aimsirí)"
+          },
+          {
+            "id": "jc-irish-1-1",
+            "name": "Feasacht Chultúrtha (Cultural Awareness)"
+          },
+          {
+            "id": "jc-irish-1-2",
+            "name": "Feasacht ar an Dátheangachas (Bilingualism Awareness)"
+          }
+        ]
+      },
+      {
+        "id": "jc-irish-2",
+        "name": "Féinfheasacht an Fhoghlaimeora (Learner Self-Awareness)",
+        "subtopics": [
+          {
+            "id": "jc-irish-2-0",
+            "name": "Foghlaim Féinriartha (Self-Directed Learning)"
+          },
+          {
+            "id": "jc-irish-2-1",
+            "name": "Spreagadh Pearsanta i leith na Teanga (Personal Motivation)"
+          }
+        ]
+      }
+    ]
   }
 ];
