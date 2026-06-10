@@ -8628,5 +8628,209 @@ export const CURRICULUM: CurriculumSubject[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "jc-science",
+    "name": "Science (Junior Cycle)",
+    "category": "stem",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "jc-science-0",
+        "name": "Nature of science",
+        "subtopics": [
+          {
+            "id": "jc-science-0-0",
+            "name": "How science works & how ideas change over time"
+          },
+          {
+            "id": "jc-science-0-1",
+            "name": "Asking scientific questions & writing testable hypotheses"
+          },
+          {
+            "id": "jc-science-0-2",
+            "name": "Designing fair tests: variables, controls, reliability, accuracy, precision & safety"
+          },
+          {
+            "id": "jc-science-0-3",
+            "name": "Choosing and using measuring instruments & apparatus"
+          },
+          {
+            "id": "jc-science-0-4",
+            "name": "Recording & representing data: tables, graphs and charts"
+          },
+          {
+            "id": "jc-science-0-5",
+            "name": "Analysing data, spotting patterns & anomalies, drawing & justifying conclusions"
+          },
+          {
+            "id": "jc-science-0-6",
+            "name": "Evaluating sources, reliability, bias & media claims about science"
+          },
+          {
+            "id": "jc-science-0-7",
+            "name": "Science in society: scientists' contributions, ethics & global importance"
+          }
+        ]
+      },
+      {
+        "id": "jc-science-1",
+        "name": "Physical world",
+        "subtopics": [
+          {
+            "id": "jc-science-1-0",
+            "name": "Measuring physical quantities: length, mass, time, temperature, area, volume, density"
+          },
+          {
+            "id": "jc-science-1-1",
+            "name": "Speed, acceleration & motion graphs"
+          },
+          {
+            "id": "jc-science-1-2",
+            "name": "Forces"
+          },
+          {
+            "id": "jc-science-1-3",
+            "name": "Electricity: current, potential difference, resistance & electrical power"
+          },
+          {
+            "id": "jc-science-1-4",
+            "name": "Electric circuits: series, parallel & simple electronic circuits"
+          },
+          {
+            "id": "jc-science-1-5",
+            "name": "Energy conservation, transfer, dissipation & efficiency (Sankey diagrams)"
+          },
+          {
+            "id": "jc-science-1-6",
+            "name": "Technological applications of physics & their impact"
+          },
+          {
+            "id": "jc-science-1-7",
+            "name": "Ethics & sustainability of generating and using electricity"
+          }
+        ]
+      },
+      {
+        "id": "jc-science-2",
+        "name": "Chemical world",
+        "subtopics": [
+          {
+            "id": "jc-science-2-0",
+            "name": "States of matter, the particle model & conservation of mass"
+          },
+          {
+            "id": "jc-science-2-1",
+            "name": "Atomic structure: protons, neutrons, electrons, mass & charge"
+          },
+          {
+            "id": "jc-science-2-2",
+            "name": "Classifying substances: elements, compounds, mixtures, metals & non-metals"
+          },
+          {
+            "id": "jc-science-2-3",
+            "name": "The Periodic Table & chemical formulae"
+          },
+          {
+            "id": "jc-science-2-4",
+            "name": "Properties of materials: solubility, conductivity, melting & boiling points; separation techniques"
+          },
+          {
+            "id": "jc-science-2-5",
+            "name": "Rates of reaction & the variables that affect them"
+          },
+          {
+            "id": "jc-science-2-6",
+            "name": "Acids, bases, indicators & the pH scale"
+          },
+          {
+            "id": "jc-science-2-7",
+            "name": "Energy in reactions: exothermic, endothermic, activation energy & energy profiles"
+          },
+          {
+            "id": "jc-science-2-8",
+            "name": "Sustainability of materials: extraction, use, disposal & recycling"
+          }
+        ]
+      },
+      {
+        "id": "jc-science-3",
+        "name": "Biological world",
+        "subtopics": [
+          {
+            "id": "jc-science-3-0",
+            "name": "Cells: plant & animal cell structure and function"
+          },
+          {
+            "id": "jc-science-3-1",
+            "name": "Reproduction, inheritance & genetics"
+          },
+          {
+            "id": "jc-science-3-2",
+            "name": "Evolution by natural selection & the diversity of life"
+          },
+          {
+            "id": "jc-science-3-3",
+            "name": "Human body systems: digestive, circulatory & respiratory"
+          },
+          {
+            "id": "jc-science-3-4",
+            "name": "Habitats, adaptation, competition & interdependence (habitat studies)"
+          },
+          {
+            "id": "jc-science-3-5",
+            "name": "Human health: nutrition, lifestyle, inherited factors & micro-organisms"
+          },
+          {
+            "id": "jc-science-3-6",
+            "name": "Respiration, photosynthesis & energy flow through ecosystems"
+          },
+          {
+            "id": "jc-science-3-7",
+            "name": "Human sexual reproduction & related ethical and societal issues"
+          },
+          {
+            "id": "jc-science-3-8",
+            "name": "Conserving biodiversity, food production & benefits from ecosystems"
+          }
+        ]
+      },
+      {
+        "id": "jc-science-4",
+        "name": "Earth and space",
+        "subtopics": [
+          {
+            "id": "jc-science-4-0",
+            "name": "The solar system & universe: moons, asteroids, comets, planets, stars & galaxies"
+          },
+          {
+            "id": "jc-science-4-1",
+            "name": "The origin of the universe & comparing Earth with other planets/moons"
+          },
+          {
+            "id": "jc-science-4-2",
+            "name": "The Earth-Sun-Moon system: day & night, seasons, lunar phases & eclipses"
+          },
+          {
+            "id": "jc-science-4-3",
+            "name": "Cycling of matter: the carbon and water cycles"
+          },
+          {
+            "id": "jc-science-4-4",
+            "name": "Energy sources & meeting Earth's current and future energy needs"
+          },
+          {
+            "id": "jc-science-4-5",
+            "name": "Climate, climate change & initiatives to address it"
+          },
+          {
+            "id": "jc-science-4-6",
+            "name": "Space exploration: hazards, benefits & its future role in society"
+          }
+        ]
+      }
+    ]
   }
 ];
