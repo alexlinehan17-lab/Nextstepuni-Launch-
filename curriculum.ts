@@ -9004,5 +9004,155 @@ export const CURRICULUM: CurriculumSubject[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "jc-geography",
+    "name": "Geography (Junior Cycle)",
+    "category": "social-environmental",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "jc-geography-0",
+        "name": "Geographical skills: maps, photos & data",
+        "subtopics": [
+          {
+            "id": "jc-geography-0-0",
+            "name": "OS maps: grid references, scale & distance"
+          },
+          {
+            "id": "jc-geography-0-1",
+            "name": "OS maps: direction, height, relief & slope"
+          },
+          {
+            "id": "jc-geography-0-2",
+            "name": "OS maps: identifying features, sketch maps & settlement patterns"
+          },
+          {
+            "id": "jc-geography-0-3",
+            "name": "Aerial & satellite photo interpretation"
+          },
+          {
+            "id": "jc-geography-0-4",
+            "name": "Climate graphs, charts & data interpretation"
+          }
+        ]
+      },
+      {
+        "id": "jc-geography-1",
+        "name": "Exploring the physical world",
+        "subtopics": [
+          {
+            "id": "jc-geography-1-0",
+            "name": "Plate tectonics: volcanoes, earthquakes & fold mountains"
+          },
+          {
+            "id": "jc-geography-1-1",
+            "name": "Rocks & the rock cycle"
+          },
+          {
+            "id": "jc-geography-1-2",
+            "name": "Weathering & mass movement"
+          },
+          {
+            "id": "jc-geography-1-3",
+            "name": "Soils"
+          },
+          {
+            "id": "jc-geography-1-4",
+            "name": "Rivers, the water cycle, sea & ice: erosion, deposition & landforms"
+          },
+          {
+            "id": "jc-geography-1-5",
+            "name": "Weather, climate & climate of Ireland"
+          },
+          {
+            "id": "jc-geography-1-6",
+            "name": "Energy resources from the physical world"
+          },
+          {
+            "id": "jc-geography-1-7",
+            "name": "Physical processes in a chosen location (fieldwork)"
+          }
+        ]
+      },
+      {
+        "id": "jc-geography-2",
+        "name": "Exploring how we interact with the physical world",
+        "subtopics": [
+          {
+            "id": "jc-geography-2-0",
+            "name": "Living with tectonic hazards & responding to natural disasters"
+          },
+          {
+            "id": "jc-geography-2-1",
+            "name": "Rock exploitation & energy resources: consequences"
+          },
+          {
+            "id": "jc-geography-2-2",
+            "name": "Primary economic activities & the physical landscape"
+          },
+          {
+            "id": "jc-geography-2-3",
+            "name": "Natural resources: water, fish stocks, forestry & soil"
+          },
+          {
+            "id": "jc-geography-2-4",
+            "name": "Secondary economic activity: function & location"
+          },
+          {
+            "id": "jc-geography-2-5",
+            "name": "Climate change: causes & implications"
+          },
+          {
+            "id": "jc-geography-2-6",
+            "name": "Managing surface processes"
+          },
+          {
+            "id": "jc-geography-2-7",
+            "name": "Tourism, transport & the physical world"
+          }
+        ]
+      },
+      {
+        "id": "jc-geography-3",
+        "name": "Exploring people, place and change",
+        "subtopics": [
+          {
+            "id": "jc-geography-3-0",
+            "name": "Population: structure & change (demographic transition)"
+          },
+          {
+            "id": "jc-geography-3-1",
+            "name": "Migration: causes & consequences"
+          },
+          {
+            "id": "jc-geography-3-2",
+            "name": "Settlement: rural & urban location"
+          },
+          {
+            "id": "jc-geography-3-3",
+            "name": "Urbanisation: urban change in an Irish town or city"
+          },
+          {
+            "id": "jc-geography-3-4",
+            "name": "Development & global patterns"
+          },
+          {
+            "id": "jc-geography-3-5",
+            "name": "Life chances in developed & developing countries"
+          },
+          {
+            "id": "jc-geography-3-6",
+            "name": "Development assistance (aid) & interdependence"
+          },
+          {
+            "id": "jc-geography-3-7",
+            "name": "Globalisation: people, settlement & development"
+          }
+        ]
+      }
+    ]
   }
 ];
