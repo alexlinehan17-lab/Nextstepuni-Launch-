@@ -4341,10 +4341,15 @@ export const COMMAND_WORD_QUESTIONS: CommandWordQuestion[] = [
 ];
 
 /** Subject ids that currently have command-word content (drives the picker). */
-export function commandSubjects(): { subjectId: string; subjectLabel: string; count: number }[] {
-  const map = new Map<string, { subjectId: string; subjectLabel: string; count: number }>();
+/** 'junior-cycle' for jc-prefixed subject ids, else 'leaving-cert' — drives the grouped subject picker. */
+export type ExamCycle = 'junior-cycle' | 'leaving-cert';
+export const cycleForSubject = (subjectId: string): ExamCycle =>
+  subjectId.startsWith('jc-') ? 'junior-cycle' : 'leaving-cert';
+
+export function commandSubjects(): { subjectId: string; subjectLabel: string; count: number; cycle: ExamCycle }[] {
+  const map = new Map<string, { subjectId: string; subjectLabel: string; count: number; cycle: ExamCycle }>();
   for (const q of COMMAND_WORD_QUESTIONS) {
-    const e = map.get(q.subjectId) ?? { subjectId: q.subjectId, subjectLabel: q.subjectLabel, count: 0 };
+    const e = map.get(q.subjectId) ?? { subjectId: q.subjectId, subjectLabel: q.subjectLabel, count: 0, cycle: cycleForSubject(q.subjectId) };
     e.count++;
     map.set(q.subjectId, e);
   }

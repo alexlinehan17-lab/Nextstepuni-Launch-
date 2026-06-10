@@ -244,8 +244,8 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
           Pick a subject to catch up on
         </h2>
 
-        <div className="space-y-3">
-          {available.map(s => {
+        {(() => {
+          const renderSubject = (s: typeof available[number]) => {
             const cards = cardsForSubject(s.subjectId).filter(matchesLevel);
             const done = cards.filter(c => recovered.has(c.topicId)).length;
             const isMine = studentSet.has(s.subjectLabel.toLowerCase());
@@ -272,8 +272,23 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
                 <ArrowRight size={18} className="text-zinc-300 dark:text-zinc-600 shrink-0" />
               </button>
             );
-          })}
-        </div>
+          };
+          const jc = available.filter(s => s.cycle === 'junior-cycle');
+          const lc = available.filter(s => s.cycle === 'leaving-cert');
+          // Only split into labelled groups once BOTH cycles have content — otherwise a flat list (no lonely header).
+          if (jc.length === 0 || lc.length === 0) {
+            return <div className="space-y-3">{available.map(renderSubject)}</div>;
+          }
+          const groupLabel = "text-[11px] font-bold uppercase tracking-[0.14em] mb-2.5";
+          return (
+            <>
+              <h3 className={groupLabel} style={{ color: '#9e9186' }}>Junior Cycle</h3>
+              <div className="space-y-3 mb-6">{jc.map(renderSubject)}</div>
+              <h3 className={groupLabel} style={{ color: '#9e9186' }}>Leaving Certificate</h3>
+              <div className="space-y-3">{lc.map(renderSubject)}</div>
+            </>
+          );
+        })()}
 
         {comingSoon.length > 0 && (
           <p className="text-[12px] leading-relaxed mt-5" style={{ color: '#9e9186' }}>

@@ -8638,10 +8638,15 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
 ];
 
 /** Subject ids that currently have recovery content (drives the picker). */
-export function subjectsWithContent(): { subjectId: string; subjectLabel: string; count: number }[] {
-  const map = new Map<string, { subjectId: string; subjectLabel: string; count: number }>();
+/** 'junior-cycle' for jc-prefixed subject ids, else 'leaving-cert' — drives the grouped subject picker. */
+export type ExamCycle = 'junior-cycle' | 'leaving-cert';
+export const cycleForSubject = (subjectId: string): ExamCycle =>
+  subjectId.startsWith('jc-') ? 'junior-cycle' : 'leaving-cert';
+
+export function subjectsWithContent(): { subjectId: string; subjectLabel: string; count: number; cycle: ExamCycle }[] {
+  const map = new Map<string, { subjectId: string; subjectLabel: string; count: number; cycle: ExamCycle }>();
   for (const c of RECOVERY_CARDS) {
-    const e = map.get(c.subjectId) ?? { subjectId: c.subjectId, subjectLabel: c.subjectLabel, count: 0 };
+    const e = map.get(c.subjectId) ?? { subjectId: c.subjectId, subjectLabel: c.subjectLabel, count: 0, cycle: cycleForSubject(c.subjectId) };
     e.count++;
     map.set(c.subjectId, e);
   }
