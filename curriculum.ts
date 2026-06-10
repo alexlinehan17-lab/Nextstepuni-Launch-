@@ -2687,115 +2687,111 @@ export const CURRICULUM: CurriculumSubject[] = [
     "strands": [
       {
         "id": "applied-mathematics-0",
-        "name": "Strand 1: Statistics and Probability",
+        "name": "Strand 1: Mathematical Modelling",
         "subtopics": [
           {
             "id": "applied-mathematics-0-0",
-            "name": "Counting"
+            "name": "The Problem-Solving Cycle"
           },
           {
             "id": "applied-mathematics-0-1",
-            "name": "Concepts of Probability"
+            "name": "Formulating & Translating Problems"
           },
           {
             "id": "applied-mathematics-0-2",
-            "name": "Random Process Outcomes"
-          },
-          {
-            "id": "applied-mathematics-0-3",
-            "name": "Statistical Reasoning"
-          },
-          {
-            "id": "applied-mathematics-0-4",
-            "name": "Collecting and Organising Data"
-          },
-          {
-            "id": "applied-mathematics-0-5",
-            "name": "Representing Data"
-          },
-          {
-            "id": "applied-mathematics-0-6",
-            "name": "Analysing and Interpreting Data"
+            "name": "Computing & Evaluating Solutions"
           }
         ]
       },
       {
         "id": "applied-mathematics-1",
-        "name": "Strand 2: Geometry and Trigonometry",
+        "name": "Strand 2: Networks & Graphs",
         "subtopics": [
           {
             "id": "applied-mathematics-1-0",
-            "name": "Synthetic Geometry"
+            "name": "Graphs, Networks & Adjacency Matrices"
           },
           {
             "id": "applied-mathematics-1-1",
-            "name": "Co-ordinate Geometry"
+            "name": "Minimum Spanning Trees (Kruskal, Prim)"
           },
           {
             "id": "applied-mathematics-1-2",
-            "name": "Trigonometry"
+            "name": "Shortest Paths (Dijkstra)"
           },
           {
             "id": "applied-mathematics-1-3",
-            "name": "Transformation Geometry"
+            "name": "Dynamic Programming (Bellman's Principle)"
+          },
+          {
+            "id": "applied-mathematics-1-4",
+            "name": "Project Scheduling & Critical Path Analysis"
           }
         ]
       },
       {
         "id": "applied-mathematics-2",
-        "name": "Strand 3: Number",
+        "name": "Strand 3: Kinematics, Vectors & Projectiles",
         "subtopics": [
           {
             "id": "applied-mathematics-2-0",
-            "name": "Number Systems"
+            "name": "Linear Motion & Velocity–Time Graphs"
           },
           {
             "id": "applied-mathematics-2-1",
-            "name": "Indices"
+            "name": "Calculus of Motion (Variable Acceleration)"
           },
           {
             "id": "applied-mathematics-2-2",
-            "name": "Arithmetic"
+            "name": "Vectors & Motion in 2D"
           },
           {
             "id": "applied-mathematics-2-3",
-            "name": "Length, Area and Volume"
+            "name": "Projectile Motion"
           }
         ]
       },
       {
         "id": "applied-mathematics-3",
-        "name": "Strand 4: Algebra",
+        "name": "Strand 3: Dynamics — Forces, Energy & Collisions",
         "subtopics": [
           {
             "id": "applied-mathematics-3-0",
-            "name": "Expressions"
+            "name": "Newton's Laws & Connected Particles"
           },
           {
             "id": "applied-mathematics-3-1",
-            "name": "Solving Equations"
+            "name": "Friction & Inclined Planes"
           },
           {
             "id": "applied-mathematics-3-2",
-            "name": "Inequalities"
+            "name": "Momentum, Impulse & Collisions"
           },
           {
             "id": "applied-mathematics-3-3",
-            "name": "Complex Numbers"
+            "name": "Work, Energy & Power"
+          },
+          {
+            "id": "applied-mathematics-3-4",
+            "name": "Circular Motion"
           }
         ]
       },
       {
         "id": "applied-mathematics-4",
-        "name": "Strand 5: Functions",
+        "name": "Strand 4: Modelling a Changing World",
         "subtopics": [
           {
             "id": "applied-mathematics-4-0",
-            "name": "Functions"
+            "name": "Difference Equations & Recurrence Relations"
           },
           {
             "id": "applied-mathematics-4-1",
-            "name": "Calculus"
+            "name": "Growth, Decay & Financial Models"
+          },
+          {
+            "id": "applied-mathematics-4-2",
+            "name": "Differential Equations"
           }
         ]
       }
