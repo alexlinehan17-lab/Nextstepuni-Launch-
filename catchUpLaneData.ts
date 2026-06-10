@@ -6522,10 +6522,10 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     figure: { src: '/exam-figures/construction-studies/cons-ol-timber-decay-wet-vs-dry-rot.png', alt: 'Watercolour-style sketch of a rear-of-house outdoor living space: softwood timber decking laid over wooden joists forms a raised patio with a garden table and chairs, the dwelling\'s sliding glass doors behind, a gravel edge strip and lawn around it — the deck fully exposed to rain and weather.', source: 'SEC Leaving Certificate Construction Studies 2021 Ordinary Level, Q9 — © State Examinations Commission' },
   },
   {
-    id: 'cons-surface-condensation-prevention-ol',
+    id: 'cons-surface-condensation-prevention-hl',
     subjectId: 'construction-studies', topicId: 'construction-studies-0-5',
     subjectLabel: 'Construction Studies', topicLabel: 'Heat & Thermal Effects',
-    focus: 'Surface condensation: where it forms and the three preventions', level: 'ordinary',
+    focus: 'Surface condensation: where it forms and the three preventions', level: 'higher',
     gist: 'Surface condensation happens when warm, moist indoor air touches a cold surface and the water vapour turns back into liquid water. The air inside a heated home holds a lot of water vapour, and the most moisture is produced in kitchens and bathrooms (cooking, kettles, showers). It collects on the coldest spots: single-glazed windows, cold external walls, cold bridges (e.g. an un-insulated lintel or reveal), and on walls hidden behind furniture or in poorly ventilated rooms. Left wet, those surfaces grow black mould, the wallpaper and plaster get damaged, and timber can begin to rot. You beat it three ways together: adequate ventilation to remove the moist air, adequate heating to keep surfaces above the temperature where vapour condenses, and adequate insulation to keep the inside face of walls warm.',
     oneMove: {
       label: 'Vent the moisture at source, not just open a window later',
@@ -6541,7 +6541,7 @@ export const RECOVERY_CARDS: RecoveryCard[] = [
     figure: { src: '/exam-figures/construction-studies/cons-surface-condensation-prevention-ol.png', alt: 'Cutaway 3D sketch of an external masonry wall upgraded with internal insulation: a rigid insulation layer (yellow) and an insulated plasterboard inner lining fixed to the inner face with mechanical fixings, keeping the inside surface warm to resist surface condensation.', source: 'SEC Leaving Certificate Construction Studies 2024 Ordinary Level, Q2(b) — © State Examinations Commission' },
   },
   {
-    id: 'cons-sound-airborne-vs-impact-party-floor-ol',
+    id: 'cons-sound-airborne-vs-impact-party-floor-hl',
     subjectId: 'construction-studies', topicId: 'construction-studies-0-7',
     subjectLabel: 'Construction Studies', topicLabel: 'Sound in Buildings',
     focus: 'Airborne vs impact sound through a floor/party wall', level: 'higher',
