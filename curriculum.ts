@@ -8455,5 +8455,178 @@ export const CURRICULUM: CurriculumSubject[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "jc-mathematics",
+    "name": "Mathematics (Junior Cycle)",
+    "category": "stem",
+    "levels": [
+      "higher",
+      "ordinary"
+    ],
+    "strands": [
+      {
+        "id": "jc-mathematics-0",
+        "name": "Unifying strand (mathematical skills)",
+        "subtopics": [
+          {
+            "id": "jc-mathematics-0-0",
+            "name": "Building blocks (core concepts & procedures)"
+          },
+          {
+            "id": "jc-mathematics-0-1",
+            "name": "Representation (showing maths different ways)"
+          },
+          {
+            "id": "jc-mathematics-0-2",
+            "name": "Connections (within maths and to the real world)"
+          },
+          {
+            "id": "jc-mathematics-0-3",
+            "name": "Problem solving"
+          },
+          {
+            "id": "jc-mathematics-0-4",
+            "name": "Generalisation and proof"
+          },
+          {
+            "id": "jc-mathematics-0-5",
+            "name": "Communication (justifying & explaining)"
+          }
+        ]
+      },
+      {
+        "id": "jc-mathematics-1",
+        "name": "Number",
+        "subtopics": [
+          {
+            "id": "jc-mathematics-1-0",
+            "name": "Number systems & arithmetic operations"
+          },
+          {
+            "id": "jc-mathematics-1-1",
+            "name": "Indices & scientific notation"
+          },
+          {
+            "id": "jc-mathematics-1-2",
+            "name": "Factors, multiples & primes"
+          },
+          {
+            "id": "jc-mathematics-1-3",
+            "name": "Rounding & accuracy"
+          },
+          {
+            "id": "jc-mathematics-1-4",
+            "name": "Fractions, decimals & percentages"
+          },
+          {
+            "id": "jc-mathematics-1-5",
+            "name": "Ratio & proportion"
+          },
+          {
+            "id": "jc-mathematics-1-6",
+            "name": "Financial maths (money problems)"
+          },
+          {
+            "id": "jc-mathematics-1-7",
+            "name": "Sets & Venn diagrams"
+          }
+        ]
+      },
+      {
+        "id": "jc-mathematics-2",
+        "name": "Geometry and trigonometry",
+        "subtopics": [
+          {
+            "id": "jc-mathematics-2-0",
+            "name": "Measure, units & time"
+          },
+          {
+            "id": "jc-mathematics-2-1",
+            "name": "2D shapes: perimeter & area"
+          },
+          {
+            "id": "jc-mathematics-2-2",
+            "name": "3D solids: nets, volume & surface area"
+          },
+          {
+            "id": "jc-mathematics-2-3",
+            "name": "Geometric reasoning, theorems & constructions"
+          },
+          {
+            "id": "jc-mathematics-2-4",
+            "name": "Right-angled triangles & trigonometry"
+          },
+          {
+            "id": "jc-mathematics-2-5",
+            "name": "Co-ordinate geometry of the line"
+          },
+          {
+            "id": "jc-mathematics-2-6",
+            "name": "Transformations & symmetry"
+          }
+        ]
+      },
+      {
+        "id": "jc-mathematics-3",
+        "name": "Algebra and functions",
+        "subtopics": [
+          {
+            "id": "jc-mathematics-3-0",
+            "name": "Patterns, sequences & the nth term"
+          },
+          {
+            "id": "jc-mathematics-3-1",
+            "name": "Expressions, variables & equality"
+          },
+          {
+            "id": "jc-mathematics-3-2",
+            "name": "Manipulating expressions & factorising"
+          },
+          {
+            "id": "jc-mathematics-3-3",
+            "name": "Solving equations"
+          },
+          {
+            "id": "jc-mathematics-3-4",
+            "name": "Inequalities"
+          },
+          {
+            "id": "jc-mathematics-3-5",
+            "name": "Rearranging formulae"
+          },
+          {
+            "id": "jc-mathematics-3-6",
+            "name": "Functions & graphs"
+          }
+        ]
+      },
+      {
+        "id": "jc-mathematics-4",
+        "name": "Statistics and probability",
+        "subtopics": [
+          {
+            "id": "jc-mathematics-4-0",
+            "name": "Counting & sample spaces"
+          },
+          {
+            "id": "jc-mathematics-4-1",
+            "name": "Probability of random events"
+          },
+          {
+            "id": "jc-mathematics-4-2",
+            "name": "The data-handling cycle (statistical investigation)"
+          },
+          {
+            "id": "jc-mathematics-4-3",
+            "name": "Representing data (graphs & charts)"
+          },
+          {
+            "id": "jc-mathematics-4-4",
+            "name": "Summary statistics (averages & spread)"
+          }
+        ]
+      }
+    ]
   }
 ];
