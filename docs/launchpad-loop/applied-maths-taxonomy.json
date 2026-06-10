@@ -1,0 +1,160 @@
+{
+  "subject": "applied-mathematics",
+  "name": "Applied Mathematics",
+  "note": "Draft taxonomy for the CURRENT LC Applied Mathematics specification (NCCA 2021 spec, first examined 2023). Every node carries a specRef quoting the 'STUDENTS LEARN ABOUT' cell it derives from (spec text: /tmp/applied_maths_spec.txt, pages 16-21). The old pre-2023 syllabus (SHM, statics, hydrostatics, moments of inertia, relative velocity as standalone) is deliberately ABSENT. CONVENTION: ids are 0-indexed (applied-mathematics-1 = 'Strand 2'); names carry the spec's 1-indexed strand numbers. TAGGING RULE (verified): 'apply Dijkstra/Kruskal/Prim' cards -> 1-2/1-3; 'classify/justify greedy-vs-DP' cards -> 1-4. Momentum-conservation cards home in 2-4 (p19 outcomes), never 2-6 (p20's energy-only outcomes). LIMITATION: HL-only (bold) outcome status is NOT encoded — the text extraction loses bold; source any level-tagging from the spec PDF itself. VERIFIED 2026-06-10 by a 5-lens adversarial panel (spec-fidelity x2, HL+OL exam coverage 2023-2025 exhaustive, old-spec contamination) + completeness critic: 5/5 pass, 0 blockers — see applied-maths-taxonomy-verify.workflow.js.",
+  "strands": [
+    {
+      "id": "applied-mathematics-0",
+      "name": "Strand 1: Mathematical Modelling",
+      "specRef": "p16 'Strand 1: Mathematical modelling' (the unifying strand)",
+      "subtopics": [
+        {
+          "id": "applied-mathematics-0-0",
+          "name": "The Problem-Solving Cycle",
+          "specRef": "p16 cell 'The problem-solving cycle' — describe a systematic process for solving problems and making decisions"
+        },
+        {
+          "id": "applied-mathematics-0-1",
+          "name": "Formulating Problems",
+          "specRef": "p16 cell 'Formulating problems' — research background, relevant variables, decompose, simplifying assumptions"
+        },
+        {
+          "id": "applied-mathematics-0-2",
+          "name": "Translating Problems into Mathematics",
+          "specRef": "p16 cell 'Translating problems into mathematics' — abstraction, build a solvable model from problem + assumptions"
+        },
+        {
+          "id": "applied-mathematics-0-3",
+          "name": "Computing Solutions",
+          "specRef": "p16 cell 'Computing solutions' — solve with appropriate mathematics + computational technology, interpret in context"
+        },
+        {
+          "id": "applied-mathematics-0-4",
+          "name": "Evaluating Solutions",
+          "specRef": "p16 cell 'Evaluating solutions' — refine/iterate the model, communicate in a written report"
+        }
+      ]
+    },
+    {
+      "id": "applied-mathematics-1",
+      "name": "Strand 2: Mathematical Modelling with Networks and Graphs",
+      "specRef": "p17 'Strand 2: Mathematical modelling with networks and graphs'",
+      "subtopics": [
+        {
+          "id": "applied-mathematics-1-0",
+          "name": "Networks and Their Associated Terminology",
+          "specRef": "p17 cell 'Networks and their associated terminology' — vertex/node, edge/arc, weight, path, cycle; connected/disconnected; directed/undirected"
+        },
+        {
+          "id": "applied-mathematics-1-1",
+          "name": "Matrices, Matrix Algebra and Adjacency",
+          "specRef": "p17 same cell 'Matrices, matrix algebra and adjacency' — adjacency matrix <-> graph, multiply square matrices, interpret the product"
+        },
+        {
+          "id": "applied-mathematics-1-2",
+          "name": "Minimum Spanning Trees (Kruskal and Prim)",
+          "specRef": "p17 cell 'Minimum spanning trees applied to problems involving optimising networks and algorithms associated with finding these (Kruskal, Prim)'"
+        },
+        {
+          "id": "applied-mathematics-1-3",
+          "name": "Dynamic Programming and Shortest Paths (Bellman, Dijkstra)",
+          "specRef": "p17 cell 'Dynamic Programming and shortest paths as applied to multi-stage authentic problems such as stock control, routing problems, allocation of resources, equipment replacement and maintenance' — stage/state/optimal policy, Bellman's Principle of Optimality, Dijkstra's algorithm"
+        },
+        {
+          "id": "applied-mathematics-1-4",
+          "name": "Algorithms: Greedy vs Dynamic Programming",
+          "specRef": "p17 cell 'Algorithms: Dijkstra; Bellman; Kruskal, Prim' — distinguish greedy vs dynamic-programming algorithms, justify correctness/optimality"
+        },
+        {
+          "id": "applied-mathematics-1-5",
+          "name": "Project Scheduling and Critical Paths",
+          "specRef": "p17 cell 'Analysis of project scheduling networks / Project scheduling and its associated terminology' — critical path, early times, late times, floats"
+        }
+      ]
+    },
+    {
+      "id": "applied-mathematics-2",
+      "name": "Strand 3: Mathematically Modelling the Physical World; Kinematics and Dynamics",
+      "specRef": "p18 'Strand 3: Mathematically modelling the physical world; kinematics and dynamics'",
+      "subtopics": [
+        {
+          "id": "applied-mathematics-2-0",
+          "name": "Kinematics: Particle Motion in One Dimension",
+          "specRef": "p18 cell 'Kinematics: Particle motion in one direction' — idealisations; position/displacement/velocity/acceleration/time; s-t and v-t graphs; v=u+at, s=ut+half at^2, v^2=u^2+2as"
+        },
+        {
+          "id": "applied-mathematics-2-1",
+          "name": "Describing Motion with Calculus",
+          "specRef": "p18 second 1D cell — velocity/acceleration as derivatives; chain rule; fundamental theorem of calculus; definite integral as area (Riemann); derive the kinematic formulae using calculus"
+        },
+        {
+          "id": "applied-mathematics-2-2",
+          "name": "Particle Motion in 2D: Vectors and Projectile Motion",
+          "specRef": "p19 cell 'Particle motion in 2D' — vector algebra (addition, scalar multiplication, dot product), vector calculus, components/unit vectors/polar form, projectile motion (time of flight, max height, max range, horizontal planes), Newton's laws in vector form"
+        },
+        {
+          "id": "applied-mathematics-2-3",
+          "name": "Forces, Newton's Laws and Free-Body Diagrams",
+          "specRef": "p19 cell 'Forces acting on a particle' (forces part) — mass; applied/normal reaction/frictional/resistant/tension/gravitational/resultant forces; Newton's laws; free-body diagrams; resultant on horizontal/inclined planes"
+        },
+        {
+          "id": "applied-mathematics-2-4",
+          "name": "Momentum, Impulse and Collisions",
+          "specRef": "p19 same cell (momentum part) — momentum, impulse, conservation of momentum (1D + 2D two-particle), Newton's experimental law, elastic/inelastic collisions, coefficient of restitution, direct + oblique collisions"
+        },
+        {
+          "id": "applied-mathematics-2-5",
+          "name": "Connected Masses, Friction and Drag",
+          "specRef": "p19 same cell (applications part) — connected masses; rough/smooth surfaces; coefficient of friction; drag F prop v^n; integration by parts/substitution for resistive-force problems"
+        },
+        {
+          "id": "applied-mathematics-2-6",
+          "name": "Work, Energy and Conservation",
+          "specRef": "p20 cell 'Work, energy, conservative forces, conservation of energy and momentum' — work-energy model, conservation of energy, work by gravity/variable conservative force/elastic spring or string, GPE + KE"
+        },
+        {
+          "id": "applied-mathematics-2-7",
+          "name": "Circular Motion of a Particle",
+          "specRef": "p20 cell 'Circular Motion of a particle' — dynamics of a particle in a horizontal or vertical circle"
+        },
+        {
+          "id": "applied-mathematics-2-8",
+          "name": "Dimensional Analysis",
+          "specRef": "p20 cell 'Dimensional analysis' — evaluate whether an answer is reasonable by analysing dimensions"
+        }
+      ]
+    },
+    {
+      "id": "applied-mathematics-3",
+      "name": "Strand 4: Mathematically Modelling a Changing World",
+      "specRef": "p21 'Strand 4: Mathematically modelling a changing world'",
+      "subtopics": [
+        {
+          "id": "applied-mathematics-3-0",
+          "name": "Recurrence Relations and Differences",
+          "specRef": "p21 cell 'Recurrence relations' — compute first and higher differences of a sequence"
+        },
+        {
+          "id": "applied-mathematics-3-1",
+          "name": "Modelling Incremental Change with Difference Equations",
+          "specRef": "p21 cell 'Real-world phenomena involving incremental change' — Malthusian/restricted growth, interest/loan payment, supply and demand, spread of diseases; identify/derive/analyse/solve difference equations in context"
+        },
+        {
+          "id": "applied-mathematics-3-2",
+          "name": "Solving Difference Equations (Homogeneous and Inhomogeneous)",
+          "specRef": "p21 cell 'Solving homogeneous and inhomogeneous difference equations numerically, graphically and with the aid of digital technology' — solve linear and non-linear difference equations"
+        },
+        {
+          "id": "applied-mathematics-3-3",
+          "name": "Modelling Continuous Change with Differential Equations",
+          "specRef": "p21 cell 'Analysing real-world phenomena involving continuous change / Predictive nature of differential equations' — identify/derive/interpret differential equations in context (decay, cooling, growth, disease, continuous interest)"
+        },
+        {
+          "id": "applied-mathematics-3-4",
+          "name": "Solving Differential Equations (Separable; Reducible Second-Order)",
+          "specRef": "p21 cell 'Techniques for solving differential equations' — separation of variables, numerical solutions, graphical/qualitative methods; first-order separable + second-order reducible to first-order; interpret solutions in context"
+        }
+      ]
+    }
+  ]
+}
