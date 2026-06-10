@@ -39,10 +39,13 @@ const norm = (s: string) => s.replace(/[^a-zA-Z]/g, '').toLowerCase();
 // ("Science (Junior Cycle)" / "Irish (Gaeilge)") by stripping the trailing cycle
 // parenthetical — otherwise JC students never match the JC-labelled content.
 const baseName = (s: string) => s.toLowerCase().replace(/\s*\([^)]*\)\s*$/, '').trim();
+// Display label with the trailing cycle/variant parenthetical stripped — once the
+// picker is filtered to one cycle, "(Junior Cycle)" / "(Gaeilge)" is redundant.
+const displayName = (label: string) => label.replace(/\s*\([^)]*\)\s*$/, '').trim();
 
 const fade = { initial: { opacity: 0, y: 10 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0, y: -8 }, transition: { duration: 0.22 } };
 
-const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid, studentSubjects }) => {
+const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; studentCycle?: 'junior-cycle' | 'leaving-cert' }> = ({ uid, studentSubjects, studentCycle }) => {
   const { state, isLoaded, recordResult } = useCommandWordReflex(uid);
 
   const [view, setView] = useState<'home' | 'play'>('home');
@@ -56,10 +59,13 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[] }> 
   const [levelFilter, setLevelFilter] = useState<'higher' | 'ordinary'>('higher');
   const atLevel = (q: CommandWordQuestion) => q.level === 'common' || q.level === levelFilter;
 
-  // Subjects with at least one question at the selected level (count = visible).
+  // Subjects with at least one question at the selected level (count = visible),
+  // filtered to the student's own cycle — JC students see only Junior Cycle
+  // subjects, LC students only Leaving Cert. (No studentCycle → show all.)
   const subjects = useMemo(() => commandSubjects()
+    .filter(s => !studentCycle || s.cycle === studentCycle)
     .map(s => ({ ...s, count: questionsForSubject(s.subjectId).filter(q => q.level === 'common' || q.level === levelFilter).length }))
-    .filter(s => s.count > 0), [levelFilter]);
+    .filter(s => s.count > 0), [levelFilter, studentCycle]);
   const studentSet = useMemo(() => new Set((studentSubjects ?? []).map(baseName)), [studentSubjects]);
   const comingSoon = useMemo(
     () => (studentSubjects ?? []).filter(name => !subjects.some(s => baseName(s.subjectLabel) === baseName(name))),
@@ -161,45 +167,40 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[] }> 
         )}
 
         <h2 className="text-[13px] font-bold uppercase tracking-[0.14em] mb-3" style={{ color: '#9e9186' }}>Pick a subject</h2>
-        {(() => {
-          const renderSubject = (s: typeof subjects[number]) => {
-            const isMine = studentSet.has(baseName(s.subjectLabel));
-            return (
-              <button
-                key={s.subjectId}
-                onClick={() => startSubject(s.subjectId)}
-                className="w-full text-left rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46] p-4 flex items-center gap-4 transition-transform hover:-translate-y-0.5"
-              >
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: INDIGO_TINT }}>
-                  <Highlighter size={20} style={{ color: INDIGO }} />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2">
-                    <p className="text-base font-semibold text-zinc-900 dark:text-white" style={{ fontFamily: "'Source Serif 4', serif" }}>{s.subjectLabel}</p>
-                    {isMine && <span className="text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full" style={{ backgroundColor: INDIGO_TINT, color: INDIGO_DARK_TEXT }}>Yours</span>}
+        {/* Subject tiles — the chunky "year-card" style (cream, ink border, hard
+            offset shadow, press animation), in a 2-up grid. The student's own
+            subjects sort first and carry a "Yours" pill. */}
+        <div className="grid grid-cols-2 gap-3">
+          {[...subjects]
+            .sort((a, b) => {
+              const am = studentSet.has(baseName(a.subjectLabel)) ? 0 : 1;
+              const bm = studentSet.has(baseName(b.subjectLabel)) ? 0 : 1;
+              return am - bm || a.subjectLabel.localeCompare(b.subjectLabel);
+            })
+            .map(s => {
+              const isMine = studentSet.has(baseName(s.subjectLabel));
+              return (
+                <button
+                  key={s.subjectId}
+                  onClick={() => startSubject(s.subjectId)}
+                  className="group text-left rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-[#FDF8F0] dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 p-4 flex flex-col gap-2.5 min-h-[124px]"
+                >
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: INDIGO_TINT }}>
+                      <Highlighter size={18} style={{ color: INDIGO }} />
+                    </div>
+                    {isMine && (
+                      <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full" style={{ backgroundColor: INDIGO, color: '#ffffff' }}>Yours</span>
+                    )}
                   </div>
-                  <p className="text-[12px] text-zinc-500">{s.count} real questions</p>
-                </div>
-                <ArrowRight size={18} className="text-zinc-300 dark:text-zinc-600 shrink-0" />
-              </button>
-            );
-          };
-          const jc = subjects.filter(s => s.cycle === 'junior-cycle');
-          const lc = subjects.filter(s => s.cycle === 'leaving-cert');
-          // Only split into labelled groups once BOTH cycles have content — otherwise a flat list (no lonely header).
-          if (jc.length === 0 || lc.length === 0) {
-            return <div className="space-y-3">{subjects.map(renderSubject)}</div>;
-          }
-          const groupLabel = "text-[11px] font-bold uppercase tracking-[0.14em] mb-2.5";
-          return (
-            <>
-              <h3 className={groupLabel} style={{ color: '#9e9186' }}>Junior Cycle</h3>
-              <div className="space-y-3 mb-6">{jc.map(renderSubject)}</div>
-              <h3 className={groupLabel} style={{ color: '#9e9186' }}>Leaving Certificate</h3>
-              <div className="space-y-3">{lc.map(renderSubject)}</div>
-            </>
-          );
-        })()}
+                  <div className="flex-1">
+                    <p className="font-semibold text-[15px] leading-tight text-[#1A1A1A] dark:text-white" style={{ fontFamily: "'Source Serif 4', serif" }}>{displayName(s.subjectLabel)}</p>
+                    <p className="text-[11.5px] mt-1" style={{ color: '#7a7068' }}>{s.count} real {s.count === 1 ? 'question' : 'questions'}</p>
+                  </div>
+                </button>
+              );
+            })}
+        </div>
         {comingSoon.length > 0 && (
           <p className="text-[12px] leading-relaxed mt-5" style={{ color: '#9e9186' }}>More of your subjects are coming — we’re adding them subject by subject.</p>
         )}
