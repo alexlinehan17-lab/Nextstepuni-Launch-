@@ -9154,5 +9154,185 @@ export const CURRICULUM: CurriculumSubject[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "jc-history",
+    "name": "History (Junior Cycle)",
+    "category": "social-environmental",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "jc-history-0",
+        "name": "The nature of history",
+        "subtopics": [
+          {
+            "id": "jc-history-0-0",
+            "name": "Working with sources and evidence (primary vs secondary, usefulness and limitations)"
+          },
+          {
+            "id": "jc-history-0-1",
+            "name": "Detecting bias and propaganda; fact, opinion and viewpoint"
+          },
+          {
+            "id": "jc-history-0-2",
+            "name": "Reading visual sources: photos, cartoons, posters, maps and statistical tables"
+          },
+          {
+            "id": "jc-history-0-3",
+            "name": "Chronology, time and space: timelines, eras and date patterns"
+          },
+          {
+            "id": "jc-history-0-4",
+            "name": "Cause and consequence"
+          },
+          {
+            "id": "jc-history-0-5",
+            "name": "Change and continuity"
+          },
+          {
+            "id": "jc-history-0-6",
+            "name": "Historical significance: why people, events and places are remembered"
+          },
+          {
+            "id": "jc-history-0-7",
+            "name": "Historical empathy and seeing the past from more than one perspective"
+          },
+          {
+            "id": "jc-history-0-8",
+            "name": "The job of the historian, archaeology and dating the past"
+          },
+          {
+            "id": "jc-history-0-9",
+            "name": "Repositories of evidence: museums, archives, libraries and the census"
+          },
+          {
+            "id": "jc-history-0-10",
+            "name": "The big picture: connecting people, issues and events across eras"
+          }
+        ]
+      },
+      {
+        "id": "jc-history-1",
+        "name": "The history of Ireland",
+        "subtopics": [
+          {
+            "id": "jc-history-1-0",
+            "name": "Early Christian Ireland: monasteries, art and the influence of Christianity"
+          },
+          {
+            "id": "jc-history-1-1",
+            "name": "Settlement and plantation, and their impact on Irish identity"
+          },
+          {
+            "id": "jc-history-1-2",
+            "name": "The Great Famine and the Irish Diaspora"
+          },
+          {
+            "id": "jc-history-1-3",
+            "name": "The parliamentary tradition: Irish political leaders and Home Rule"
+          },
+          {
+            "id": "jc-history-1-4",
+            "name": "The physical force tradition and pre-twentieth-century rebellion (e.g. 1798)"
+          },
+          {
+            "id": "jc-history-1-5",
+            "name": "Nationalism, unionism and the struggle for independence, 1911-1923 (1916 Rising, War of Independence, Civil War)"
+          },
+          {
+            "id": "jc-history-1-6",
+            "name": "The impact of the World Wars on Irish people"
+          },
+          {
+            "id": "jc-history-1-7",
+            "name": "How women's lives changed in twentieth-century Ireland"
+          },
+          {
+            "id": "jc-history-1-8",
+            "name": "A sporting, cultural or social movement in Irish life (e.g. the GAA)"
+          },
+          {
+            "id": "jc-history-1-9",
+            "name": "The Northern Ireland Troubles and North-South / Anglo-Irish relations"
+          },
+          {
+            "id": "jc-history-1-10",
+            "name": "The 1960s as a decade of change in Ireland"
+          },
+          {
+            "id": "jc-history-1-11",
+            "name": "Ireland's links with Europe and the European Union"
+          },
+          {
+            "id": "jc-history-1-12",
+            "name": "Local, personal and family history and its wider connections"
+          }
+        ]
+      },
+      {
+        "id": "jc-history-2",
+        "name": "The history of Europe and the wider world",
+        "subtopics": [
+          {
+            "id": "jc-history-2-0",
+            "name": "Early people and an ancient or medieval civilisation (e.g. Egypt, Rome)"
+          },
+          {
+            "id": "jc-history-2-1",
+            "name": "Life and death in medieval times"
+          },
+          {
+            "id": "jc-history-2-2",
+            "name": "The Renaissance: change in the arts and science"
+          },
+          {
+            "id": "jc-history-2-3",
+            "name": "The Reformation and the actions of one Reformer"
+          },
+          {
+            "id": "jc-history-2-4",
+            "name": "Exploration, conquest and colonisation (Portuguese and Spanish)"
+          },
+          {
+            "id": "jc-history-2-5",
+            "name": "A revolution in pre-twentieth-century Europe or the wider world (e.g. American, French)"
+          },
+          {
+            "id": "jc-history-2-6",
+            "name": "Technology and innovation as drivers of historical change (incl. the Industrial Revolution)"
+          },
+          {
+            "id": "jc-history-2-7",
+            "name": "World War One or World War Two: causes, course and impact"
+          },
+          {
+            "id": "jc-history-2-8",
+            "name": "Dictatorship in the twentieth century: life in a fascist and a communist country"
+          },
+          {
+            "id": "jc-history-2-9",
+            "name": "Genocide and the Holocaust"
+          },
+          {
+            "id": "jc-history-2-10",
+            "name": "The Cold War in international relations"
+          },
+          {
+            "id": "jc-history-2-11",
+            "name": "International co-operation: the European Union and the United Nations"
+          },
+          {
+            "id": "jc-history-2-12",
+            "name": "The 1960s as a decade of change in Europe and the wider world"
+          },
+          {
+            "id": "jc-history-2-13",
+            "name": "Patterns of change over time in a chosen theme (crime and punishment, food and drink, work and leisure, fashion, health and medicine)"
+          }
+        ]
+      }
+    ]
   }
 ];
