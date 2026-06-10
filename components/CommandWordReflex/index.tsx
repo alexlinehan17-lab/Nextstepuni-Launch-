@@ -197,7 +197,7 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
                   <button
                     key={s.subjectId}
                     onClick={() => startSubject(s.subjectId)}
-                    className="group flex flex-col items-center justify-center text-center px-3 py-5 min-h-[92px] rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 font-sans transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] bg-[#FDF8F0] dark:bg-zinc-900 text-[#1A1A1A] dark:text-white"
+                    className="group flex flex-col items-center justify-center text-center px-3 py-5 min-h-[92px] rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] bg-[#FDF8F0] text-[#1A1A1A]"
                   >
                     <span className="text-[17px] font-bold leading-tight">{displayName(s.subjectLabel)}</span>
                     <span className="text-[11px] font-medium mt-1 opacity-80">{s.count} real {s.count === 1 ? 'question' : 'questions'}</span>
