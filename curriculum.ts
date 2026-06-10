@@ -5797,7 +5797,7 @@ export const CURRICULUM: CurriculumSubject[] = [
     "strands": [
       {
         "id": "politics-and-society-0",
-        "name": "Strand 1: Power and Decision-Making",
+        "name": "Strand 1: Power and decision-making",
         "subtopics": [
           {
             "id": "politics-and-society-0-0",
@@ -5847,7 +5847,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "politics-and-society-1",
-        "name": "Strand 2: Active Citizenship",
+        "name": "Strand 2: Active citizenship",
         "subtopics": [
           {
             "id": "politics-and-society-1-0",
@@ -5897,7 +5897,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "politics-and-society-2",
-        "name": "Strand 3: Human Rights and Responsibilities",
+        "name": "Strand 3: Human rights and responsibilities",
         "subtopics": [
           {
             "id": "politics-and-society-2-0",
@@ -5943,7 +5943,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "politics-and-society-3",
-        "name": "Strand 4: Globalisation and Localisation",
+        "name": "Strand 4: Globalisation and localisation",
         "subtopics": [
           {
             "id": "politics-and-society-3-0",
