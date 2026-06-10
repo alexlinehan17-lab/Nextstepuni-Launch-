@@ -84,6 +84,8 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
   // ones (e.g. HL-only de Moivre) show only at their level.
   const [levelFilter, setLevelFilter] = useState<'higher' | 'ordinary'>('higher');
   const matchesLevel = (c: RecoveryCard) => c.level === 'common' || c.level === levelFilter;
+  // Subject-picker scope: just the student's chosen subjects, or every subject in their cycle.
+  const [scope, setScope] = useState<'mine' | 'all'>('mine');
 
   const recovered = useMemo(() => new Set(state.recoveredTopicIds), [state.recoveredTopicIds]);
   const shaky = useMemo(() => new Set(state.shakyTopicIds), [state.shakyTopicIds]);
@@ -258,49 +260,49 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
           Pick a subject to catch up on
         </h2>
 
-        {/* Subject tiles — the chunky "year-card" style (cream, ink border, hard
-            offset shadow, press animation), in a 2-up grid. The student's own
-            subjects sort first and carry a "Yours" pill. */}
-        <div className="grid grid-cols-2 gap-3">
-          {[...available]
-            .sort((a, b) => {
-              const am = studentSet.has(baseName(a.subjectLabel)) ? 0 : 1;
-              const bm = studentSet.has(baseName(b.subjectLabel)) ? 0 : 1;
-              return am - bm || a.subjectLabel.localeCompare(b.subjectLabel);
-            })
-            .map(s => {
-              const done = cardsForSubject(s.subjectId).filter(matchesLevel).filter(c => recovered.has(c.topicId)).length;
-              const isMine = studentSet.has(baseName(s.subjectLabel));
-              const pct = s.count > 0 ? Math.round((done / s.count) * 100) : 0;
-              return (
-                <button
-                  key={s.subjectId}
-                  onClick={() => openSubject(s.subjectId)}
-                  className="group text-left rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-[#FDF8F0] dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 p-4 flex flex-col gap-2.5 min-h-[124px]"
-                >
-                  <div className="flex items-start justify-between gap-2">
-                    <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: CYAN_TINT }}>
-                      <BookOpenCheck size={18} style={{ color: CYAN }} />
-                    </div>
-                    {isMine && (
-                      <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full" style={{ backgroundColor: CYAN, color: '#ffffff' }}>Yours</span>
-                    )}
-                  </div>
-                  <div className="flex-1">
-                    <p className="font-semibold text-[15px] leading-tight text-[#1A1A1A] dark:text-white" style={{ fontFamily: "'Source Serif 4', serif" }}>{displayName(s.subjectLabel)}</p>
-                    <p className="text-[11.5px] mt-1" style={{ color: '#7a7068' }}>
-                      {done > 0 ? `${done} of ${s.count} caught up` : `${s.count} ${s.count === 1 ? 'topic' : 'topics'} ready`}
-                    </p>
-                  </div>
-                  {done > 0 && (
-                    <div className="h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: '#ffffff' }}>
-                      <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, backgroundColor: CYAN }} />
-                    </div>
-                  )}
-                </button>
-              );
-            })}
-        </div>
+        {/* My / All toggle (only when the student has subjects with content in
+            this cycle) + subject tiles in the exact year-selection card style. */}
+        {(() => {
+          const mineList = available.filter(s => studentSet.has(baseName(s.subjectLabel)));
+          const hasMine = mineList.length > 0;
+          const list = (hasMine && scope === 'mine' ? mineList : available)
+            .slice()
+            .sort((a, b) => displayName(a.subjectLabel).localeCompare(displayName(b.subjectLabel)));
+          return (
+            <>
+              {hasMine && (
+                <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit mb-4">
+                  {(['mine', 'all'] as const).map(sc => (
+                    <button
+                      key={sc}
+                      onClick={() => setScope(sc)}
+                      className={`px-4 py-1.5 rounded-lg text-[13px] transition-all ${scope === sc ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-semibold shadow-sm' : 'text-zinc-500 dark:text-zinc-400'}`}
+                    >
+                      {sc === 'mine' ? 'My Subjects' : 'All Subjects'}
+                    </button>
+                  ))}
+                </div>
+              )}
+              <div className="grid grid-cols-2 gap-3">
+                {list.map(s => {
+                  const done = cardsForSubject(s.subjectId).filter(matchesLevel).filter(c => recovered.has(c.topicId)).length;
+                  return (
+                    <button
+                      key={s.subjectId}
+                      onClick={() => openSubject(s.subjectId)}
+                      className="group flex flex-col items-center justify-center text-center px-3 py-5 min-h-[92px] rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 font-sans transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] bg-[#FDF8F0] dark:bg-zinc-900 text-[#1A1A1A] dark:text-white"
+                    >
+                      <span className="text-[17px] font-bold leading-tight">{displayName(s.subjectLabel)}</span>
+                      <span className="text-[11px] font-medium mt-1 opacity-80">
+                        {done > 0 ? `${done}/${s.count} caught up` : `${s.count} ${s.count === 1 ? 'topic' : 'topics'}`}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </>
+          );
+        })()}
 
         {comingSoon.length > 0 && (
           <p className="text-[12px] leading-relaxed mt-5" style={{ color: '#9e9186' }}>
