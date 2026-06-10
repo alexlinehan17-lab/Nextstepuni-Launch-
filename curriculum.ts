@@ -8305,5 +8305,86 @@ export const CURRICULUM: CurriculumSubject[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "jc-english",
+    "name": "English (Junior Cycle)",
+    "category": "language",
+    "levels": [
+      "higher",
+      "ordinary"
+    ],
+    "strands": [
+      {
+        "id": "jc-english-0",
+        "name": "Oral Language",
+        "subtopics": [
+          {
+            "id": "jc-english-0-0",
+            "name": "Spoken Communication and Presentation"
+          },
+          {
+            "id": "jc-english-0-1",
+            "name": "Discussion, Debate and Persuasion"
+          },
+          {
+            "id": "jc-english-0-2",
+            "name": "Influence and Register of Spoken Language"
+          }
+        ]
+      },
+      {
+        "id": "jc-english-1",
+        "name": "Reading",
+        "subtopics": [
+          {
+            "id": "jc-english-1-0",
+            "name": "Reading Comprehension (Unseen Texts)"
+          },
+          {
+            "id": "jc-english-1-1",
+            "name": "Studied Fiction (Novel and Short Story)"
+          },
+          {
+            "id": "jc-english-1-2",
+            "name": "Studied Drama and Shakespeare"
+          },
+          {
+            "id": "jc-english-1-3",
+            "name": "Poetry (Studied and Unseen)"
+          },
+          {
+            "id": "jc-english-1-4",
+            "name": "Film Studies"
+          },
+          {
+            "id": "jc-english-1-5",
+            "name": "Responding to Texts (Theme, Character, Author's Craft)"
+          }
+        ]
+      },
+      {
+        "id": "jc-english-2",
+        "name": "Writing",
+        "subtopics": [
+          {
+            "id": "jc-english-2-0",
+            "name": "Functional and Transactional Writing"
+          },
+          {
+            "id": "jc-english-2-1",
+            "name": "Personal and Creative Writing"
+          },
+          {
+            "id": "jc-english-2-2",
+            "name": "Writing About Studied Texts"
+          },
+          {
+            "id": "jc-english-2-3",
+            "name": "Language, Grammar and Structure"
+          }
+        ]
+      }
+    ]
   }
 ];

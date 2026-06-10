@@ -1,0 +1,98 @@
+{
+  "subject": "jc-english",
+  "name": "English (Junior Cycle)",
+  "category": "language",
+  "levels": [
+    "higher",
+    "ordinary"
+  ],
+  "note": "Draft taxonomy for the current JUNIOR CYCLE English specification (NCCA 2015, amended 2018; first examined 2017). Built on the spec's THREE official strands (Oral Language, Reading, Writing); subtopics are the examinable content areas the FINAL EXAM covers, each traceable to the spec's learning outcomes / prescribed material (DES Circular 0014/2022). Oral Language is included for spec fidelity though it is assessed mainly via CBA 1, not the written exam. specRef cites the spec (/tmp/jc_english_spec.txt) or the prescribed-material requirement. VERIFIED 2026-06-10 by a 4-lens adversarial panel (spec fidelity, HL+OL exam coverage 2023-2024, completeness) + critic: 4/4 pass, 0 blockers, 2 specRef-precision fixes applied. specRefs name cohort-volatile prescribed-text lists for provenance only — they are NOT in curriculum.ts (which stores id+name).",
+  "strands": [
+    {
+      "id": "jc-english-0",
+      "name": "Oral Language",
+      "specRef": "spec p.9 'the three strands: Oral Language, Reading, and Writing' — Strand 1 Oral Language (assessed mainly via CBA 1 Oral Communication; included for fidelity)",
+      "subtopics": [
+        {
+          "id": "jc-english-0-0",
+          "name": "Spoken Communication and Presentation",
+          "specRef": "Oral Language LOs on communicating as a speaker — presenting, speaking with control of register and purpose"
+        },
+        {
+          "id": "jc-english-0-1",
+          "name": "Discussion, Debate and Persuasion",
+          "specRef": "Oral Language LOs on discussion, persuading, responding to others in talk"
+        },
+        {
+          "id": "jc-english-0-2",
+          "name": "Influence and Register of Spoken Language",
+          "specRef": "Oral Language element 'Understanding the content and structure of language' — how spoken language varies by audience/purpose/register"
+        }
+      ]
+    },
+    {
+      "id": "jc-english-1",
+      "name": "Reading",
+      "specRef": "spec — Strand 2 Reading (Reading/engaging with texts, Comprehending, Responding); the written exam's comprehension + studied-text sections",
+      "subtopics": [
+        {
+          "id": "jc-english-1-0",
+          "name": "Reading Comprehension (Unseen Texts)",
+          "specRef": "Reading LOs on comprehending unseen literary, non-literary and MULTIMODAL stimulus material (exam Section B / comprehension questions)"
+        },
+        {
+          "id": "jc-english-1-1",
+          "name": "Studied Fiction (Novel and Short Story)",
+          "specRef": "prescribed material: two studied novels + short stories (DES Circular); Reading LOs on responding to studied prose"
+        },
+        {
+          "id": "jc-english-1-2",
+          "name": "Studied Drama and Shakespeare",
+          "specRef": "prescribed material: studied drama; HL ONLY studies a full Shakespeare play (Note 2, spec) from the prescribed list; exam Section A often a Shakespeare/drama extract. NB: the prescribed play/film lists are cohort-refreshed — check the current SEC circular per exam year"
+        },
+        {
+          "id": "jc-english-1-3",
+          "name": "Poetry (Studied and Unseen)",
+          "specRef": "prescribed material: >=16 studied poems; exam tests studied + unseen poetry"
+        },
+        {
+          "id": "jc-english-1-4",
+          "name": "Film Studies",
+          "specRef": "prescribed material: one studied film from the prescribed list (Sing Street, Kes, Hotel Rwanda, etc.); exam tests the studied film as a text"
+        },
+        {
+          "id": "jc-english-1-5",
+          "name": "Responding to Texts (Theme, Character, Author's Craft)",
+          "specRef": "Reading LOs 6-8 under the 'Exploring and using language' element (LO6 character/setting/plot; LO7 value judgements on key moments/character/scene; LO8 author's word choice / figurative language / language patterns)"
+        }
+      ]
+    },
+    {
+      "id": "jc-english-2",
+      "name": "Writing",
+      "specRef": "spec — Strand 3 Writing (composing for purpose/audience; exam's writing tasks across all three sections)",
+      "subtopics": [
+        {
+          "id": "jc-english-2-0",
+          "name": "Functional and Transactional Writing",
+          "specRef": "Writing LOs on writing for a real purpose/audience — speech, letter, report, review, blog, article, instructions (the exam's functional-writing tasks)"
+        },
+        {
+          "id": "jc-english-2-1",
+          "name": "Personal and Creative Writing",
+          "specRef": "Writing LOs on personal, imaginative and creative composition (story, descriptive, personal essay)"
+        },
+        {
+          "id": "jc-english-2-2",
+          "name": "Writing About Studied Texts",
+          "specRef": "Writing + Reading LOs — composing a developed response to a studied novel/play/poem/film (the studied-text written answers in Sections A/C)"
+        },
+        {
+          "id": "jc-english-2-3",
+          "name": "Language, Grammar and Structure",
+          "specRef": "Writing element 'Understanding the content and structure of language' — accuracy of grammar, spelling, punctuation, paragraphing and structuring a piece"
+        }
+      ]
+    }
+  ]
+}
