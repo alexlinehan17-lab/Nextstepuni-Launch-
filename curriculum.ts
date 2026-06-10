@@ -8832,5 +8832,177 @@ export const CURRICULUM: CurriculumSubject[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "jc-business-studies",
+    "name": "Business Studies (Junior Cycle)",
+    "category": "business",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "jc-business-studies-0",
+        "name": "Personal finance",
+        "subtopics": [
+          {
+            "id": "jc-business-studies-0-0",
+            "name": "Managing money: income, expenditure, needs & wants"
+          },
+          {
+            "id": "jc-business-studies-0-1",
+            "name": "Household budgeting & your financial position"
+          },
+          {
+            "id": "jc-business-studies-0-2",
+            "name": "The financial lifecycle: needs at different life stages"
+          },
+          {
+            "id": "jc-business-studies-0-3",
+            "name": "Saving & borrowing: sources, costs, interest & risk"
+          },
+          {
+            "id": "jc-business-studies-0-4",
+            "name": "Insurance: cover for personal needs, premiums & claims"
+          },
+          {
+            "id": "jc-business-studies-0-5",
+            "name": "Personal taxes & charges (PAYE, USC, PRSI, DIRT)"
+          },
+          {
+            "id": "jc-business-studies-0-6",
+            "name": "Wage slips & calculating your take-home pay"
+          },
+          {
+            "id": "jc-business-studies-0-7",
+            "name": "Being an informed consumer: rights & responsibilities"
+          },
+          {
+            "id": "jc-business-studies-0-8",
+            "name": "Consumer agencies, banks & financial institutions"
+          },
+          {
+            "id": "jc-business-studies-0-9",
+            "name": "Ethical & sustainable consumer choices"
+          },
+          {
+            "id": "jc-business-studies-0-10",
+            "name": "How globalisation & technology shape consumer choice"
+          }
+        ]
+      },
+      {
+        "id": "jc-business-studies-1",
+        "name": "Enterprise",
+        "subtopics": [
+          {
+            "id": "jc-business-studies-1-0",
+            "name": "Types of enterprise: financial, cultural & social"
+          },
+          {
+            "id": "jc-business-studies-1-1",
+            "name": "Being enterprising & the role of the entrepreneur"
+          },
+          {
+            "id": "jc-business-studies-1-2",
+            "name": "Forms of business ownership & how a business is set up"
+          },
+          {
+            "id": "jc-business-studies-1-3",
+            "name": "Work, employment & volunteerism"
+          },
+          {
+            "id": "jc-business-studies-1-4",
+            "name": "Rights & responsibilities of employers and employees"
+          },
+          {
+            "id": "jc-business-studies-1-5",
+            "name": "A business and its community: impact & responsibility (CSR)"
+          },
+          {
+            "id": "jc-business-studies-1-6",
+            "name": "Digital technologies in business: rewards & costs"
+          },
+          {
+            "id": "jc-business-studies-1-7",
+            "name": "Market research: field & desk research, target market"
+          },
+          {
+            "id": "jc-business-studies-1-8",
+            "name": "The marketing mix & promoting a product"
+          },
+          {
+            "id": "jc-business-studies-1-9",
+            "name": "Writing a business plan"
+          },
+          {
+            "id": "jc-business-studies-1-10",
+            "name": "Business documents (invoice, quotation, receipt, credit note)"
+          },
+          {
+            "id": "jc-business-studies-1-11",
+            "name": "Cash flow, club/business budgets & sources of finance"
+          },
+          {
+            "id": "jc-business-studies-1-12",
+            "name": "Analysed cash book, ledgers & the trial balance"
+          },
+          {
+            "id": "jc-business-studies-1-13",
+            "name": "Final accounts: trading, profit & loss and financial position"
+          },
+          {
+            "id": "jc-business-studies-1-14",
+            "name": "Interpreting the accounts: analysing financial performance & position"
+          }
+        ]
+      },
+      {
+        "id": "jc-business-studies-2",
+        "name": "Our economy",
+        "subtopics": [
+          {
+            "id": "jc-business-studies-2-0",
+            "name": "Scarcity, choice & opportunity cost"
+          },
+          {
+            "id": "jc-business-studies-2-1",
+            "name": "Economic systems: how resources are distributed"
+          },
+          {
+            "id": "jc-business-studies-2-2",
+            "name": "Supply, demand & how markets set prices"
+          },
+          {
+            "id": "jc-business-studies-2-3",
+            "name": "Government finances: revenue, spending & the National Budget"
+          },
+          {
+            "id": "jc-business-studies-2-4",
+            "name": "Taxation: why we pay tax and how it works"
+          },
+          {
+            "id": "jc-business-studies-2-5",
+            "name": "Economic growth, sustainability & the environment"
+          },
+          {
+            "id": "jc-business-studies-2-6",
+            "name": "International trade & globalisation"
+          },
+          {
+            "id": "jc-business-studies-2-7",
+            "name": "Ireland in the European Union & the eurozone"
+          },
+          {
+            "id": "jc-business-studies-2-8",
+            "name": "Economic indicators: inflation, employment, interest rates"
+          },
+          {
+            "id": "jc-business-studies-2-9",
+            "name": "Current economic issues & government economic policy"
+          }
+        ]
+      }
+    ]
   }
 ];
