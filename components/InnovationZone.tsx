@@ -553,7 +553,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         },
         {
             id: 'catch-up-lane', title: 'Catch-Up Lane', description: 'Missed class? Get caught up, one quick topic at a time.', icon: Waypoints, needsProfile: false,
-            curriculum: 'senior' as const,
+            // 'both': has Junior Cycle AND Leaving Cert content (cycle-grouped picker), so visible to JC and senior users.
+            curriculum: 'both' as const,
             tag: 'Catch up', accentHex: '#0E9AA8', gridClass: 'md:col-span-2',
             iconBg: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-700 dark:text-cyan-300',
             accentBarColor: 'bg-cyan-500', tagBg: 'bg-cyan-100 dark:bg-cyan-900/30', tagText: 'text-cyan-700 dark:text-cyan-400',
@@ -562,7 +563,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         },
         {
             id: 'command-word-reflex', title: 'Command-Word Reflex', description: 'Spot the command word in real questions — and dodge the trap.', icon: Highlighter, needsProfile: false,
-            curriculum: 'senior' as const,
+            // 'both': has Junior Cycle AND Leaving Cert content (cycle-grouped picker), so visible to JC and senior users.
+            curriculum: 'both' as const,
             tag: 'Exam skills', accentHex: '#6366F1', gridClass: 'md:col-span-2',
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-700 dark:text-indigo-300',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
@@ -735,16 +737,17 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     </div>
 
                     {/* Empty state for JC users when no tools are curriculum-visible.
-                        Phase 2 ships 3 JC-visible tools (Spaced Repetition,
-                        Comeback Engine, Subject Explorer). This branch is now
-                        only reachable when the user filters by a category that
-                        contains zero JC-visible tools — so the message reflects
-                        a filter mismatch, not a roadmap gap. */}
+                        JC-visible tools now include the Spaced Repetition Timetable,
+                        Comeback Engine, Subject Explorer, Catch-Up Lane,
+                        Command-Word Reflex, How They Did It and Exploring Options.
+                        This branch is now only reachable when the user filters by a
+                        category that contains zero JC-visible tools — so the message
+                        reflects a filter mismatch, not a roadmap gap. */}
                     {filteredTools.length === 0 && curriculumLevel === 'junior' && (
                       <div className="rounded-2xl p-10 text-center" style={{ backgroundColor: '#FDF8F0', border: '2px solid #1A1A1A' }}>
                         <p className="font-serif text-xl font-bold mb-2 text-[#1A1A1A]">No tools in this category for Junior Cycle yet.</p>
                         <p className="text-sm text-[#78716C] max-w-md mx-auto">
-                          Try a different category, or hit "All" to see the tools we have ready for you — Spaced Repetition Timetable, Comeback Engine, and Subject Explorer.
+                          Try a different category, or hit "All" to see the tools we have ready for you — including Catch-Up Lane, Command-Word Reflex, the Spaced Repetition Timetable and the Comeback Engine.
                         </p>
                       </div>
                     )}

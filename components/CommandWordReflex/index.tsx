@@ -35,6 +35,10 @@ const cardShell =
   'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
 
 const norm = (s: string) => s.replace(/[^a-zA-Z]/g, '').toLowerCase();
+// Match a student's subject name ("Science") to a content subjectLabel
+// ("Science (Junior Cycle)" / "Irish (Gaeilge)") by stripping the trailing cycle
+// parenthetical — otherwise JC students never match the JC-labelled content.
+const baseName = (s: string) => s.toLowerCase().replace(/\s*\([^)]*\)\s*$/, '').trim();
 
 const fade = { initial: { opacity: 0, y: 10 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0, y: -8 }, transition: { duration: 0.22 } };
 
@@ -56,9 +60,9 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[] }> 
   const subjects = useMemo(() => commandSubjects()
     .map(s => ({ ...s, count: questionsForSubject(s.subjectId).filter(q => q.level === 'common' || q.level === levelFilter).length }))
     .filter(s => s.count > 0), [levelFilter]);
-  const studentSet = useMemo(() => new Set((studentSubjects ?? []).map(s => s.toLowerCase())), [studentSubjects]);
+  const studentSet = useMemo(() => new Set((studentSubjects ?? []).map(baseName)), [studentSubjects]);
   const comingSoon = useMemo(
-    () => (studentSubjects ?? []).filter(name => !subjects.some(s => s.subjectLabel.toLowerCase() === name.toLowerCase())),
+    () => (studentSubjects ?? []).filter(name => !subjects.some(s => baseName(s.subjectLabel) === baseName(name))),
     [studentSubjects, subjects],
   );
 
@@ -159,7 +163,7 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[] }> 
         <h2 className="text-[13px] font-bold uppercase tracking-[0.14em] mb-3" style={{ color: '#9e9186' }}>Pick a subject</h2>
         {(() => {
           const renderSubject = (s: typeof subjects[number]) => {
-            const isMine = studentSet.has(s.subjectLabel.toLowerCase());
+            const isMine = studentSet.has(baseName(s.subjectLabel));
             return (
               <button
                 key={s.subjectId}

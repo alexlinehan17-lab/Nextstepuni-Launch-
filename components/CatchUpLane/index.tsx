@@ -38,6 +38,12 @@ const CYAN_DARK_TEXT = '#0A5560';
 const cardShell =
   'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
 
+// Match a student's chosen subject name (e.g. "Science") to a content subjectLabel
+// (e.g. "Science (Junior Cycle)" or "Irish (Gaeilge)") by stripping the trailing
+// cycle/variant parenthetical. Without this, JC students' subjects never match the
+// JC-labelled content, so their built subjects wrongly show as "coming soon".
+const baseName = (s: string) => s.toLowerCase().replace(/\s*\([^)]*\)\s*$/, '').trim();
+
 type View = 'home' | 'queue' | 'unit';
 type Beat = 'gist' | 'move' | 'check' | 'reveal' | 'done';
 
@@ -82,13 +88,13 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
     .map(s => ({ ...s, count: cardsForSubject(s.subjectId).filter(c => c.level === 'common' || c.level === levelFilter).length }))
     .filter(s => s.count > 0), [levelFilter]);
   const studentSet = useMemo(
-    () => new Set((studentSubjects ?? []).map(s => s.toLowerCase())),
+    () => new Set((studentSubjects ?? []).map(baseName)),
     [studentSubjects],
   );
   // Subjects the student takes that we don't have content for yet (honest "coming soon").
   const comingSoon = useMemo(
     () => (studentSubjects ?? []).filter(
-      name => !available.some(a => a.subjectLabel.toLowerCase() === name.toLowerCase()),
+      name => !available.some(a => baseName(a.subjectLabel) === baseName(name)),
     ),
     [studentSubjects, available],
   );
@@ -248,7 +254,7 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ u
           const renderSubject = (s: typeof available[number]) => {
             const cards = cardsForSubject(s.subjectId).filter(matchesLevel);
             const done = cards.filter(c => recovered.has(c.topicId)).length;
-            const isMine = studentSet.has(s.subjectLabel.toLowerCase());
+            const isMine = studentSet.has(baseName(s.subjectLabel));
             return (
               <button
                 key={s.subjectId}
