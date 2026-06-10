@@ -2,6 +2,12 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+> **Read [CONVENTIONS.md](CONVENTIONS.md) first.** It documents how the codebase *actually* works (verified against the
+> code) — component architecture, the visual/aesthetic registers, the Command-Word Reflex + Catch-Up Lane question
+> patterns, the design tokens, Firestore patterns, golden examples, and a "Known inconsistencies" section. This file
+> (CLAUDE.md) is the project/setup guide; CONVENTIONS.md is the build-a-feature guide. **If you learn a convention or
+> correction during a session, add it to CONVENTIONS.md in the same PR.**
+
 ## Project Overview
 
 Nextstepuni is an educational platform ("Learning Lab") that teaches university-bound students advanced learning strategies through interactive modules. It's a React SPA with Firebase backend for auth and data persistence.
@@ -31,10 +37,10 @@ No environment variables are required for the current build. There is no active 
 
 **Entry flow:** `index.html` → `index.tsx` → `App.tsx`
 
-**App.tsx** (~780 lines) is the central orchestrator. It manages:
-- Authentication state via Firebase `onAuthStateChanged`
-- User progress persistence (Firestore `users/{uid}` and `progress/{uid}` collections)
-- Route-like navigation via local state (no router library — views switch based on state)
+**App.tsx** (~780 lines) is a **data-assembly shell**: it pulls from `useProgress()`, runs the gameplay hooks, defines the `handleX` handlers, bundles them into a `routerProps` object, and renders `<AppRouter {...routerProps}/>`. The three cross-cutting concerns live in **contexts**, not App.tsx (see CONVENTIONS.md §1):
+- Authentication + the initial progress read → `contexts/AuthContext.tsx` (`onAuthStateChanged`)
+- Navigation (no router; a `ViewState` reducer + History-API sync) → `contexts/NavigationContext.tsx`; the view switch is `components/AppRouter.tsx`
+- Progress persistence (Firestore `users/{uid}` + `progress/{uid}`) → `contexts/ProgressContext.tsx`
 
 **Root-level modules:**
 - `moduleRegistry.ts` — Lazy-loads ~83 registered modules (≈55 `*Module.tsx` component files; the per-subject modules all share one `SubjectModule.tsx`) + InnovationZone via `React.lazy()` with default imports
@@ -51,16 +57,16 @@ No environment variables are required for the current build. There is no active 
 - `ModuleShared.tsx` — Reusable UI primitives: `Highlight`, `ReadingSection`, `MicroCommitment`, `ActivityRing`
 - `*Module.tsx` (~55 files) — Individual educational modules, each using `ModuleLayout` with default exports
 
-**Module component interface:**
+**Module component interface** — there is **no exported `ModuleProps` type**; every module is an `FC` with this inlined 3-field signature (don't add a `ModuleProps` import):
 ```typescript
-interface ModuleProps {
+{
   onBack: () => void;
   progress: ModuleProgress;                        // { unlockedSection: number }
   onProgressUpdate: (progress: ModuleProgress) => void;
 }
 ```
 
-**7 course categories:** `architecture-mindset`, `science-growth`, `learning-cheat-codes`, `subject-specific-science`, `exam-zone`, `the-shield`, `the-launchpad`
+**5 course categories** (`CategoryType` in `KnowledgeTree.tsx`; `categoryColorMap` in `courseData.ts`): `architecture-mindset`, `science-growth`, `learning-cheat-codes`, `exam-zone`, `subject-specific-science`. (`the-shield` / `the-launchpad` appear in older docs/comments but are not real categories.)
 
 **Navigation flow:** KnowledgeTree (category selection) → Library (module grid) → Module (content sections with progressive unlock)
 
@@ -405,211 +411,3 @@ The library holds two source types per subject/year:
 - `<year>-marking-scheme.{pdf,md}` — SEC marking scheme
 
 Both are examiner-authored and citable. Marking schemes are particularly useful for per-question rules ("Max X SRPs if…", "Apply a *", indicative material lists). Cite as `Marking scheme YYYY` inline.
-
-## ⚠️ Exam Strategiser — REMOVED (redesign in progress)
-
-> The Exam Strategiser tool was removed on 2026-05-31 (it had become
-> overcomplicated and confusing). Deleted: `components/ExamStrategiser/`,
-> `data/examStrategy/`, `data/examQuestions/`, `types/examStrategiser.ts`,
-> `STRATEGISER_MIGRATION.md`. A new, simpler exam-strategy tool is being
-> designed from research. The `examiner-reports/` library + the citation
-> discipline above remain valid and will feed the new tool's agent-forged
-> content pipeline. **Everything from here down describes the removed tool —
-> kept only as redesign reference.**
-
-## Necessary Knowledge tab (removed tool — reference only)
-
-A third peer view inside the Exam Strategiser, alongside Practice and Trap Patterns. It teaches the *hidden curriculum* of the Leaving Cert — command words, marking-scheme grammars, time allocation, examiner pet peeves, SRPs, mark provenance, sanity checks, traps, ceilings, comparative integration, RSR section budgeting, Sciences phrase matching, Languages oral authenticity — material no syllabus covers but every Chief Examiner Report keeps complaining about.
-
-The tab ships in **three groups with intentionally different aesthetic registers and depth**. Read the Aesthetic register section below before editing or adding modules — Stage 1 (Foundations) and Stages 2/3 (Tools / Subject Deep Dives) use different visual systems, and they shouldn't be mixed within a single module.
-
-### Landing taxonomy (Foundations / Tools / Subject Deep Dives)
-
-The landing is grouped into three stage clusters, mapped 1:1 to dossier interactive-concept priority:
-
-- **Foundations (Stage 1)** — five fundamentals every LC student should learn first. Marking-grammar literacy, command-word interpretation, time-per-mark discipline, perennial CER complaints. The quieter Strategiser register.
-- **Tools (Stage 2)** — five mistake-first interactives. Mark provenance, ceiling drops, sanity radar, trap detection. Bold register, animation-as-explanation.
-- **Subject Deep Dives (Stage 3)** — four subject-specific simulators (English / History / Sciences / Languages). The same bold register, denser content. Where teachers can rarely reach — the precise mechanics that separate a top answer from a middle one.
-
-The grouping reflects the dossier's E1-E22 priority ordering plus the user-facing pedagogy (literacy → interactive practice → subject-deep simulation). New modules fit into one of the three groups.
-
-### Architecture
-
-```
-components/ExamStrategiser/
-├── index.tsx                        # routes 'knowledge' view + module sub-views
-└── knowledge/
-    ├── NecessaryKnowledge.tsx       # tab landing — 3 groups + your-patterns panel
-    ├── KnowledgeModuleShell.tsx     # Stage 1 shell (breadcrumb, why-card, summary)
-    ├── QuickCheck.tsx               # Stage 1 reusable multi-choice quiz
-    ├── knowledgePatterns.ts         # cross-module localStorage signals
-    └── modules/
-        # Stage 1 — Foundations (quieter Strategiser register)
-        ├── CommandWordDecoder.tsx           # E1
-        ├── PCLMAllocator.tsx                # E2 (Purpose Ceiling)
-        ├── TimeAllocationCalculator.tsx     # E3 + sunk-cost simulator
-        ├── ExaminerPetPeeveTrainer.tsx      # E12
-        ├── MarkingSchemeGrammarExplainer.tsx
-        # Stage 2 — Tools (bold instrument-panel register)
-        ├── SrpIdentifier.tsx                # E10 — three-phase SRP heat map
-        ├── WorkingShownAllocator.tsx        # E9 — mark provenance ribbons
-        ├── SanityCheckTrainer.tsx           # E6 — absurdity radar SVG
-        ├── SpotTheTrap.tsx                  # E4 — 30-sec timer + pattern card
-        ├── SubTaskCeilingVisualiser.tsx     # E5 — bar-chart ceiling drop
-        # Stage 3 — Subject Deep Dives
-        ├── ComparativeTextsLinker.tsx       # E18 — SVG thread weaver
-        ├── RsrSectionAllocator.tsx          # E19 — word-budget meter + slop
-        ├── PhraseMatch.tsx                  # E17 — phrase constellation
-        └── OralAuthenticityCoach.tsx        # E20 — diagnostic underline layers
-```
-
-Data lives in `data/knowledge/`:
-
-Stage 1:
-- `commandWords.ts` — 13 commands + 4 modifiers (dossier § A1)
-- `examinerPetPeeves.ts` — 12 perennial peeves (§ B1-B11, § D)
-- `subjectMarkingGrammar.ts` — 5 marking architectures (§ A2)
-- `subjectTiming.ts` — 12 subject timing tables (§ A3)
-
-Stage 2:
-- `srpSamples.ts` — 4 paragraphs (Geo / History / Business) with per-sentence SRP classification, `developsFactor` and `buried` flag (§ A2, § B5-B7)
-- `workedQuestions.ts` — 5 worked questions (Maths algebra/geometry, Chemistry mole calc, Physics mechanics, Accounting depreciation) with stepwise mark allocation, slip/blunder variants, and 5 answer paths each (§ A2)
-- `sanityChecks.ts` — 12 absurdity questions (Maths / Chem / Phys / Bio) each with one correct + three absurd candidates, each absurd tagged with its primary catching check (§ C1)
-- `trapCards.ts` — 15 paraphrased past-paper trap cards across 6 subjects + `TRAP_CATEGORY_LABELS` and `TRAP_CATEGORY_FIXES` lookup tables (multiple CERs)
-- `ceilingScenarios.ts` — 4 cap-rule scenarios with sentence-level `isCapTrigger` flag and counterfactual `liftedScore` (§ A2, § A5, § B6, § B7)
-
-Stage 3:
-- `comparativeQuestions.ts` — 6 sample questions across 4 LC English Comparative modes (Theme/Issue, Cultural Context, General Vision, Literary Genre); each question has 3 widely-studied LC English texts (paraphrased descriptors only) plus a curated point bank of 4-6 mixed integrated/serial points with `integratedRewrite` counterfactuals (§ B1, § A5)
-- `rsrConfig.ts` — 4 `RSR_SECTIONS` specs (mark-of-100 + HL/OL word ranges), 4 `SOURCE_EVAL_CHECKS` (Origin/Purpose/Value/Limitations) with signal-pattern arrays + prescriptions, 12 `SLOP_PATTERNS` regexes for Review-of-Process filler detection (§ A2, § B5)
-- `phraseMatch.ts` — 18 questions across Biology / Chemistry / Physics; each question has 2-4 canonical key phrases with 3-7 acceptable paraphrases (substring-tolerant matcher) plus a model paragraph (§ B4)
-- `oralCoach.ts` — language-keyed pattern banks for French / Irish / German / Spanish: `ORAL_PROMPTS` (11 sample prompts), `ROTE_PATTERNS` (~20 regexes), `TENSE_SIGNALS` (per-language tense detection patterns), `GENERIC_NOUN_SIGNALS` (~25 family/place patterns with personalisation prompts), plus paired `SAMPLE_ROTE_ANSWERS` and `POLISHED_EXEMPLARS` for the before/after view (§ B3, § B8)
-
-Types in `types/knowledge.ts`. Every entry carries a `DossierRef { section, page, cite }` for audit traceability.
-
-### Cross-module pattern signals (`knowledgePatterns.ts`)
-
-Several modules write a pattern signal to `localStorage` at their closing screen. The landing reads these and surfaces them on a "Your patterns" panel above the Foundations group:
-
-| Signal | Source module | What it captures |
-|---|---|---|
-| `sanityCheck` | `SanityCheckTrainer` | Weakest of the four checks (OoM / Units / Sign / Sub-Back) by accuracy across the session, plus per-check accuracy map |
-| `spotTrap` | `SpotTheTrap` | Weakest trap category (modifier / plural-singular / etc.) by hit rate, plus per-category accuracy map |
-| `comparative` | `ComparativeTextsLinker` | Last integration ratio (0..100) plus sample size |
-| `ceiling` | `SubTaskCeilingVisualiser` | Number of cap-rule scenarios viewed (0..4) |
-
-Storage key: `nk:patterns:v1`. Latest-write-wins per module — we keep the most recent observation, not a history. The shape is versioned so future migrations can ignore stale data cleanly. The panel renders only insights for which a signal exists; it disappears entirely when the user resets patterns or has run no modules yet.
-
-Adding a new pattern signal: extend `PatternSignals` in `knowledgePatterns.ts`, add a `writePattern('newKey', { ... })` call inside the relevant module's closing screen, and extend `buildInsights()` in `NecessaryKnowledge.tsx` to render the new card with kicker / headline / body / openModuleId.
-
-### Source-of-truth rule
-
-Every claim in the Necessary Knowledge tab traces to `/docs/leaving-cert-knowledge-dossier.md`. The dossier itself draws on SEC marking schemes, Chief Examiner Reports, and NCCA documents. **Do not generate Necessary Knowledge content from your own knowledge of the Leaving Cert** — the dossier is the authority. If a claim does not appear there, flag it rather than write it.
-
-Per-question or per-sample text that paraphrases an SEC paper must stay below the 15-words-verbatim threshold. The data files are the place where this rule is policed; if you find paraphrasing slipping above that threshold, fix the data file, not the rendering component.
-
-### Aesthetic register — two parallel systems
-
-**Stage 1 — Strategiser register** (quieter, matches the rest of `components/ExamStrategiser/`):
-- Cards: `background: #FFFFFF`, `border: 1px solid #EDEBE8`, `border-radius: 16px`
-- Highlight panels (callouts, "Why this matters", outcomes): `background: #FAF7F4`, `border: 1px solid ${ACCENT}33`
-- Sliders: `accent-color: #F26B1F`
-- ACCENT = `#F26B1F` (app-wide — import from `design/tokens.ts` rather than redeclaring locally)
-- All Stage 1 modules share the `KnowledgeModuleShell` wrapper
-
-**Stage 2 / Stage 3 — Brilliant.org / Mercury hybrid** (denser, more instrument-panel):
-- Cards: `background: #FFFFFF`, `border: 2px solid #1a1a1a`, `border-radius: 16px`
-- Cream panels: `background: #FDF8F0` for inset content (rewind tracks, paragraph displays, answer textareas)
-- Inverted insight panels: `background: #1a1a1a`, `color: #FFFFFF`, `#FFD8A8` for warm highlights inside (a soft tan that pairs with the brand orange on dark surfaces — the only off-palette accent permitted there)
-- ACCENT_DARK = `#B54D14`, INK = `#1a1a1a`, WARN = `#A8746E` (warm muted brown for cap/blunder semantics — **not** red)
-- Stage 2/3 modules **do not use** `KnowledgeModuleShell`. They build their own minimal back-bar + hero + content stack so they can be visually denser
-- Framer Motion is used freely for animation-as-explanation: provenance-trail entries, ceiling-drop springs, radar pulses, trap-reveal fades, thread weaving, bar chart drops. Animation must encode meaning — never decorate
-- SVG for diagrammatic interactives: timer rings (`<circle>` with `stroke-dasharray`), absurdity radar (concentric `<rect>` rings), cap line (CSS dashed border), bar chart (`motion.div` height animations), comparative threads (cubic Bézier `<path>` with woven dips), phrase constellation (`<foreignObject>` HTML labels inside SVG starfield)
-- For text-heavy diagnostic surfaces (Oral Coach), use wavy / dashed `text-decoration` underlines as the layer encoding, not coloured backgrounds — readability first
-
-Banned palette colours (orange, amber, bright green, purple, red as a primary) apply across all three stages. Coloured left borders are banned project-wide (memory: `feedback_no_left_borders`); use background tints, full backgrounds, or dot accents instead.
-
-### Stage 2 / Stage 3 visual primitives — what to reuse
-
-Stage 2 and Stage 3 each introduced reusable visual idioms. Stage 3 specifically resisted lifting Stage 2 primitives into a shared `primitives/` folder because each idiom still has only one consumer; pre-emptive abstraction is more expensive than the duplication. **The threshold for lifting is the third consumer**, not the second.
-
-| Idiom | Source module | Reusable for |
-|---|---|---|
-| **Three-phase student-then-examiner heat map** | `SrpIdentifier` | Any module where the educational arc is "predict → reveal → consequence". |
-| **Mark-ribbon stack with running total** | `WorkingShownAllocator` | Any quantitative-marking module where steps accrue marks. The `Ribbon` component's `kind = 'earned' / 'slip' / 'blunder' / 'misread'` directly mirrors the dossier penalty grammar. |
-| **Path-rewind picker with sparkline comparison** | `WorkingShownAllocator` | Any module that has multiple "what a student might do" trajectories with different scores. |
-| **Absurdity radar SVG** | `SanityCheckTrainer` | Any module that needs a colour-keyed pulse around a target element. The four-check colour scheme (TEAL, TEAL_DARK, INK, WARN) is the canonical four-axis palette. |
-| **Reaction-time-aware closing report** | `SanityCheckTrainer` | Any module where speed is a learning signal, not just accuracy. |
-| **Three-state flip card with timer ring** | `SpotTheTrap` | Any module with a "spot it before the reveal" gameplay loop. |
-| **Pattern-break interstitial every N items** | `SpotTheTrap` | Any module long enough to warrant a halfway-through pattern callout. |
-| **Bar-chart ceiling drop with cap line** | `SubTaskCeilingVisualiser` | Any module visualising a marking-scheme cap or band ceiling. |
-| **Sentence-level rewind sequencer** | `SubTaskCeilingVisualiser` | Any module that needs to walk a student backwards through their answer. |
-| **Counterfactual lift animation** | `SubTaskCeilingVisualiser` | Any "what if you had X instead?" recovery interaction. |
-| **Cross-text SVG thread weaver** | `ComparativeTextsLinker` | Any module showing relationships across N parallel columns. The cubic-Bézier with mid-point dip is the woven-feel idiom. |
-| **Two-layer overlay bar (filled fill + outlined target)** | `RsrSectionAllocator` | Any module where progress vs target needs to be visible at a glance. |
-| **Signal-pattern checker with prescription** | `RsrSectionAllocator` (Source Eval + Slop Detector) | Any module that detects keyword patterns in student text and surfaces examiner-voice prescriptions for misses. |
-| **Phrase constellation (SVG starfield with `<foreignObject>` labels + matched-glow halos)** | `PhraseMatch` | Any module where matching against a fixed reference set is the core mechanic. |
-| **Sequence-builder with model-order grading** | `PhraseMatch` (Reverse mode) | Any module where ordering matters as much as completeness. |
-| **Toggleable diagnostic underline layers + tense strip** | `OralAuthenticityCoach` | Any module that overlays multiple independent diagnostic signals onto the same student text without making one cancel the others. |
-| **Before/after compare (paired panes with shared diagnostic layers)** | `OralAuthenticityCoach` | Any module showing the cost/benefit of a rewrite via direct comparison. |
-
-### Adding a new module
-
-1. Author the data in `data/knowledge/<file>.ts`. New types go in `types/knowledge.ts`. Every entry carries a `source: DossierRef`. Re-export from `data/knowledge/index.ts`.
-2. Add the module ID to `KnowledgeModuleId` in `NecessaryKnowledge.tsx` and a tile to `TILES` (set `stage: 1`, `2`, or `3`).
-3. Create the component in `components/ExamStrategiser/knowledge/modules/<ModuleName>.tsx`.
-   - **Stage 1 (Foundations)**: wrap in `<KnowledgeModuleShell>` with `whyThisMatters` and `summary`; close with a 3-question `<QuickCheck>`.
-   - **Stage 2 / Stage 3 (Tools / Subject Deep Dives)**: build a minimal back-bar + hero + dense interactive body. Don't use the Stage 1 shell. Animation must encode meaning.
-4. Wire it into `index.tsx`'s `KnowledgeModuleView` switch.
-5. If the module's closing screen produces a personalised insight, add a `writePattern('<key>', { ... })` call to capture it for the cross-module "Your patterns" panel. See `knowledgePatterns.ts` for the registered keys; extend the `PatternSignals` interface and `buildInsights()` in `NecessaryKnowledge.tsx` to surface it.
-6. `npm run typecheck` + `npm run build` to verify clean.
-7. Commit per module if it's a significant standalone shipment.
-
-### Stage roadmap
-
-The dossier defines E1-E22 interactive concepts.
-
-- **Stage 1 (shipped):** E1 Command Word Decoder, E2 PCLM Allocator, E3 Time-Allocation Calculator, E12 Examiner Pet-Peeve Trainer, Marking-Scheme Grammar Explainer.
-- **Stage 2 (shipped):** E10 SRP Identifier, E9 Working-Shown Allocator, E6 Sanity-Check Trainer, E4 Spot the Trap, E5 Sub-task Ceiling Visualiser.
-- **Stage 3 (shipped):** E18 Comparative Texts Linker (English), E19 RSR Section Allocator (History), E17 Marking-Scheme Phrase Match (Sciences), E20 Oral-Exam Authenticity Coach (Languages — French / Irish / German / Spanish).
-
-### Post-Stage-3 deferred backlog
-
-The following dossier concepts remain candidates for future expansion. Do not build pre-emptively; defer until analytics show which Stage 1-3 modules drive the most engagement and the most measurable score lift. Re-prioritise from there.
-
-- **E22 Time-of-Day Pacing Coach** — real-time exam simulator; gives the student a paper, sets the clock, throws prompts at calculated intervals ("10 minutes left for question 3"; "you should be finishing the comparative now"). Trains internal pacing. Heavy on state management; useful only if students will commit to running a 3-hour mock inside the app.
-- **E15 Genre Identifier (English Question B)** — student is given a Question B prompt; tool asks: is this a letter, blog, podcast, speech, article, diary, editorial? Shows genre conventions, length expectations, common errors per genre. Useful if Composition genre-misjudging shows up as a dominant Stage 1 pattern.
-- **E13 Diagram Annotation Practice (Geography / Biology / Physics)** — student is given an unannotated diagram and a question; must drag annotation labels to correct positions. Distinguishes labelling from annotating. Heavy on diagram authoring; defer until the SRP Identifier surfaces diagram-mark patterns as a real student weak spot.
-- **E11 PCLM Comment Translator (English)** — student pastes a marker comment ("Your purpose drifts in paragraph 3"); tool explains which PCLM band is affected and what to fix. Useful adjunct to the PCLM Allocator (Stage 1) once students start having mock-graded comments to feed in.
-
-When the third consumer of any Stage 2/3 visual primitive lands, lift the primitive into `knowledge/primitives/` *before* duplicating the implementation a third time. The current modules each own their primitives inline because the implementation cost of a generic version is higher than two copies.
-
-## Strategiser content quality rules
-
-Every Strategiser unit must consult the relevant report(s) in /examiner-reports/[subject]/ before generating debrief content. Cite the year inline (e.g. "Chief Examiner 2023 noted...").
-
-Predict questions must test strategic understanding, not content knowledge. Good targets: genre identification, sub-task counting, mark allocation rules, ceiling/cap effects, time allocation, command-word interpretation. Bad: "what's the answer to part (a)" — that's content, not strategy.
-
-Banned generic phrases (treat as failure modes — reject the draft if any appear):
-- "Read the question carefully"
-- "Manage your time"
-- "Show your working"
-- "Plan before you write"
-- Any sentence that could apply to any exam in any subject
-
-Good insights name a specific error pattern, a specific mark allocation rule, or a specific examiner observation. Examples:
-- "Examiners noted in 2022 that candidates who skipped the Personal Response sub-task had their Coherence mark capped at the Purpose level."
-- "1 attempt mark is awarded for writing the correct formula even if you can't complete the calculation."
-- "Examiner reports flag that most lost marks on simultaneous equations come from compounded algebraic slips — substitute back into the original to catch them."
-
-Per-question debrief is mandatory. Flat 'insights' lists are banned.
-
-If you can't find an examiner-sourced insight for a particular point, flag it rather than filling with generic content.
-
-### Schema enforcement
-
-New questions in `data/examQuestions/<subject>.ts` MUST include:
-
-- `biggestMistake`: question-level closing card (`{ title, body, source? }`)
-- `predictPrompts[].debrief`: per-prompt block (`{ strategicPrinciple, commonWrongAnswer: { answer, reason, source? } }`)
-
-Legacy fields (`topAnswerIncludes`, `commonTraps`, `markScheme`) are `@deprecated` and only present so existing questions continue rendering until migrated. Do not use them in new questions. Migration backlog: `/STRATEGISER_MIGRATION.md`.
