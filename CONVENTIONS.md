@@ -57,7 +57,11 @@ do **not** hand-write a per-subject file.
 
 **An Innovation-Zone TOOL** (CommandWordReflex, CatchUpLane, …) is neither a view nor a module. It's a standalone tool
 body rendered inside `InnovationZone`, props `{ uid?: string; studentSubjects?: string[] }`, self-routing via local
-state. See §4.
+state. See §4. Each tool entry in the `InnovationZone.tsx` tools array carries a **`curriculum` tag** — the gate hides any
+tool not tagged `'both'`/`'junior'` from Junior Cycle students (`const tag = t.curriculum ?? 'senior'` — **an absent tag
+defaults to `'senior'`, i.e. JC-invisible**). So a tool that surfaces `jc-` content MUST be tagged `'both'` (or `'junior'`),
+or JC students can't see it. `test/jcToolVisibility.test.ts` enforces this. Subject-name matching across cycles strips the
+trailing parenthetical (`baseName()` → `"Science"` matches `"Science (Junior Cycle)"`).
 
 **Mobile nav** = `MobileBottomNav`, defined inline in `App.tsx:50-102`, 6 tabs, `createPortal`'d to `document.body`
 (so a transformed ancestor can't re-anchor it), `md:hidden`, active when `tab.id===viewState`, hidden on
