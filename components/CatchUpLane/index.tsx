@@ -29,6 +29,8 @@ import { RECOVERY_CARDS, cardsForSubject, subjectsWithContent } from '../../catc
 import { FIRST_WEEK } from '../../comebackData';
 import { type RecoveryCard } from '../../types/catchUpLane';
 import { CURRICULUM } from '../../curriculum';
+import SubjectTilePicker from '../shared/SubjectTilePicker';
+import { baseName, displayName } from '../shared/subjectNames';
 import Comeback from './Comeback';
 
 const CYAN = '#0E9AA8';
@@ -37,12 +39,6 @@ const CYAN_DARK_TEXT = '#0A5560';
 
 const cardShell =
   'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
-
-// Match a student's chosen subject name (e.g. "Science") to a content subjectLabel
-// (e.g. "Science (Junior Cycle)" or "Irish (Gaeilge)") by stripping the trailing
-// cycle/variant parenthetical. Without this, JC students' subjects never match the
-// JC-labelled content, so their built subjects wrongly show as "coming soon".
-const baseName = (s: string) => s.toLowerCase().replace(/\s*\([^)]*\)\s*$/, '').trim();
 
 type View = 'home' | 'queue' | 'unit';
 type Beat = 'gist' | 'move' | 'check' | 'reveal' | 'done';
@@ -63,11 +59,6 @@ const fade = {
   exit: { opacity: 0, y: -8 },
   transition: { duration: 0.22 },
 };
-
-// Strip the trailing cycle/variant parenthetical for display — once the picker
-// is filtered to one cycle, "(Junior Cycle)" / "(Gaeilge)" is redundant noise.
-// "Science (Junior Cycle)" → "Science", "Irish (Gaeilge)" → "Irish".
-const displayName = (label: string) => label.replace(/\s*\([^)]*\)\s*$/, '').trim();
 
 const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentCycle?: 'junior-cycle' | 'leaving-cert' }> = ({ uid, studentSubjects, studentCycle }) => {
   const { state, isLoaded, markRecovered, markShaky, saveComeback, setFirstWeekDay, marksProtected } = useCatchUpLane(uid);
@@ -213,6 +204,20 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
 
   // ───────────────────────── HOME (arm 1: content) ─────────────────────────
   if (view === 'home') {
+    // Picker inputs: cycle/level-filtered subjects sorted by display label, with
+    // the caught-up count in the sublabel; mineIds drives the My/All toggle.
+    const sortedSubjects = available
+      .slice()
+      .sort((a, b) => displayName(a.subjectLabel).localeCompare(displayName(b.subjectLabel)));
+    const pickerSubjects = sortedSubjects.map(s => {
+      const done = cardsForSubject(s.subjectId).filter(matchesLevel).filter(c => recovered.has(c.topicId)).length;
+      return {
+        id: s.subjectId,
+        label: displayName(s.subjectLabel),
+        sublabel: done > 0 ? `${done}/${s.count} caught up` : `${s.count} ${s.count === 1 ? 'topic' : 'topics'}`,
+      };
+    });
+    const mineIds = sortedSubjects.filter(s => studentSet.has(baseName(s.subjectLabel))).map(s => s.subjectId);
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
         <button onClick={() => setArm('hub')} className="flex items-center gap-1.5 text-[13px] font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-4">
@@ -256,53 +261,16 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
           </div>
         )}
 
-        <h2 className="text-[13px] font-bold uppercase tracking-[0.14em] mb-3" style={{ color: '#9e9186' }}>
-          Pick a subject to catch up on
-        </h2>
-
         {/* My / All toggle (only when the student has subjects with content in
             this cycle) + subject tiles in the exact year-selection card style. */}
-        {(() => {
-          const mineList = available.filter(s => studentSet.has(baseName(s.subjectLabel)));
-          const hasMine = mineList.length > 0;
-          const list = (hasMine && scope === 'mine' ? mineList : available)
-            .slice()
-            .sort((a, b) => displayName(a.subjectLabel).localeCompare(displayName(b.subjectLabel)));
-          return (
-            <>
-              {hasMine && (
-                <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit mb-4">
-                  {(['mine', 'all'] as const).map(sc => (
-                    <button
-                      key={sc}
-                      onClick={() => setScope(sc)}
-                      className={`px-4 py-1.5 rounded-lg text-[13px] transition-all ${scope === sc ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-semibold shadow-sm' : 'text-zinc-500 dark:text-zinc-400'}`}
-                    >
-                      {sc === 'mine' ? 'My Subjects' : 'All Subjects'}
-                    </button>
-                  ))}
-                </div>
-              )}
-              <div className="grid grid-cols-2 gap-3">
-                {list.map(s => {
-                  const done = cardsForSubject(s.subjectId).filter(matchesLevel).filter(c => recovered.has(c.topicId)).length;
-                  return (
-                    <button
-                      key={s.subjectId}
-                      onClick={() => openSubject(s.subjectId)}
-                      className="group flex flex-col items-center justify-center text-center px-3 py-5 min-h-[92px] rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] bg-[#FDF8F0] text-[#1A1A1A] hover:bg-[#F26B1F] hover:text-[#FDF8F0] active:bg-[#F26B1F] active:text-[#FDF8F0]"
-                    >
-                      <span className="text-[17px] font-bold leading-tight">{displayName(s.subjectLabel)}</span>
-                      <span className="text-[11px] font-medium mt-1 opacity-80">
-                        {done > 0 ? `${done}/${s.count} caught up` : `${s.count} ${s.count === 1 ? 'topic' : 'topics'}`}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-            </>
-          );
-        })()}
+        <SubjectTilePicker
+          headingLabel="Pick a subject to catch up on"
+          subjects={pickerSubjects}
+          mineIds={mineIds}
+          scope={scope}
+          onScopeChange={setScope}
+          onPick={openSubject}
+        />
 
         {comingSoon.length > 0 && (
           <p className="text-[12px] leading-relaxed mt-5" style={{ color: '#9e9186' }}>

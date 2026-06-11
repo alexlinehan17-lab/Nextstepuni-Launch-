@@ -22,6 +22,8 @@ import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { useCommandWordReflex } from '../../hooks/useCommandWordReflex';
 import { COMMAND_WORD_QUESTIONS, commandSubjects, questionsForSubject } from '../../commandWordData';
 import { type CommandWordQuestion } from '../../types/commandWord';
+import SubjectTilePicker from '../shared/SubjectTilePicker';
+import { baseName, displayName } from '../shared/subjectNames';
 
 const INDIGO = '#6366F1';
 const INDIGO_DARK_TEXT = '#3730A3';
@@ -35,13 +37,6 @@ const cardShell =
   'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
 
 const norm = (s: string) => s.replace(/[^a-zA-Z]/g, '').toLowerCase();
-// Match a student's subject name ("Science") to a content subjectLabel
-// ("Science (Junior Cycle)" / "Irish (Gaeilge)") by stripping the trailing cycle
-// parenthetical — otherwise JC students never match the JC-labelled content.
-const baseName = (s: string) => s.toLowerCase().replace(/\s*\([^)]*\)\s*$/, '').trim();
-// Display label with the trailing cycle/variant parenthetical stripped — once the
-// picker is filtered to one cycle, "(Junior Cycle)" / "(Gaeilge)" is redundant.
-const displayName = (label: string) => label.replace(/\s*\([^)]*\)\s*$/, '').trim();
 
 const fade = { initial: { opacity: 0, y: 10 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0, y: -8 }, transition: { duration: 0.22 } };
 
@@ -130,6 +125,17 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
   // ───────── HOME ─────────
   if (view === 'home') {
     const totalQs = COMMAND_WORD_QUESTIONS.length;
+    // Picker inputs: cycle/level-filtered subjects sorted by display label, with
+    // the question count in the sublabel; mineIds drives the My/All toggle.
+    const sortedSubjects = subjects
+      .slice()
+      .sort((a, b) => displayName(a.subjectLabel).localeCompare(displayName(b.subjectLabel)));
+    const pickerSubjects = sortedSubjects.map(s => ({
+      id: s.subjectId,
+      label: displayName(s.subjectLabel),
+      sublabel: `${s.count} real ${s.count === 1 ? 'question' : 'questions'}`,
+    }));
+    const mineIds = sortedSubjects.filter(s => studentSet.has(baseName(s.subjectLabel))).map(s => s.subjectId);
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
         <p className="text-[15px] leading-relaxed mb-5" style={{ color: '#5a5550', fontFamily: "'DM Sans', sans-serif" }}>
@@ -168,45 +174,16 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
           </div>
         )}
 
-        <h2 className="text-[13px] font-bold uppercase tracking-[0.14em] mb-3" style={{ color: '#9e9186' }}>Pick a subject</h2>
         {/* My / All toggle (only when the student has subjects with content in
             this cycle) + subject tiles in the exact year-selection card style. */}
-        {(() => {
-          const mineList = subjects.filter(s => studentSet.has(baseName(s.subjectLabel)));
-          const hasMine = mineList.length > 0;
-          const list = (hasMine && scope === 'mine' ? mineList : subjects)
-            .slice()
-            .sort((a, b) => displayName(a.subjectLabel).localeCompare(displayName(b.subjectLabel)));
-          return (
-            <>
-              {hasMine && (
-                <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit mb-4">
-                  {(['mine', 'all'] as const).map(sc => (
-                    <button
-                      key={sc}
-                      onClick={() => setScope(sc)}
-                      className={`px-4 py-1.5 rounded-lg text-[13px] transition-all ${scope === sc ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-semibold shadow-sm' : 'text-zinc-500 dark:text-zinc-400'}`}
-                    >
-                      {sc === 'mine' ? 'My Subjects' : 'All Subjects'}
-                    </button>
-                  ))}
-                </div>
-              )}
-              <div className="grid grid-cols-2 gap-3">
-                {list.map(s => (
-                  <button
-                    key={s.subjectId}
-                    onClick={() => startSubject(s.subjectId)}
-                    className="group flex flex-col items-center justify-center text-center px-3 py-5 min-h-[92px] rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] bg-[#FDF8F0] text-[#1A1A1A] hover:bg-[#F26B1F] hover:text-[#FDF8F0] active:bg-[#F26B1F] active:text-[#FDF8F0]"
-                  >
-                    <span className="text-[17px] font-bold leading-tight">{displayName(s.subjectLabel)}</span>
-                    <span className="text-[11px] font-medium mt-1 opacity-80">{s.count} real {s.count === 1 ? 'question' : 'questions'}</span>
-                  </button>
-                ))}
-              </div>
-            </>
-          );
-        })()}
+        <SubjectTilePicker
+          headingLabel="Pick a subject"
+          subjects={pickerSubjects}
+          mineIds={mineIds}
+          scope={scope}
+          onScopeChange={setScope}
+          onPick={startSubject}
+        />
         {comingSoon.length > 0 && (
           <p className="text-[12px] leading-relaxed mt-5" style={{ color: '#9e9186' }}>More of your subjects are coming — we’re adding them subject by subject.</p>
         )}

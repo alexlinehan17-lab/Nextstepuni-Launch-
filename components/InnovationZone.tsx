@@ -8,7 +8,7 @@ import React, { useState, useEffect, useCallback, useRef, useMemo, lazy, Suspens
 import { useToast } from './Toast';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
-import {
+import { FileSearch,
     ArrowLeft,
     Lock, Compass, Target,
     Settings, CalendarDays, Calculator, GitBranch, Rocket,
@@ -38,6 +38,7 @@ const PointsPassport = lazy(() => import('./PointsPassport'));
 const ExamReps = lazy(() => import('./ExamReps'));
 const CatchUpLane = lazy(() => import('./CatchUpLane'));
 const CommandWordReflex = lazy(() => import('./CommandWordReflex'));
+const PaperTrail = lazy(() => import('./PaperTrail'));
 const HowTheyDidIt = lazy(() => import('./HowTheyDidIt'));
 const CareerPaths = lazy(() => import('./CareerPaths'));
 const YourPossibleLife = lazy(() => import('./YourPossibleLife'));
@@ -87,6 +88,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'exam-reps':       { themeColor: '#5E9C7B', eyebrow: 'Technique · Practice',        subtitle: 'One real exam question at a time — marked the examiner’s way, so you see exactly where the marks were.', showHeader: true  },
   'college-compass': { themeColor: '#2A7D6F', eyebrow: 'Plan · Roadmap',              subtitle: 'Your year-by-year runway to college — every CAO, HEAR, DARE and scholarship deadline, in order.', showHeader: false },
   'catch-up-lane':   { themeColor: '#0E9AA8', eyebrow: 'Catch up · Recovery',         subtitle: 'Missed some classes? Pick a subject and get caught up one quick topic at a time — no catch-up is too small.', showHeader: true  },
+  'paper-trail':     { themeColor: '#33658A', eyebrow: 'Understand · Exam archive',   subtitle: 'Every past paper and marking scheme, free — your subjects, your level, three taps.', showHeader: true },
   'command-word-reflex': { themeColor: '#6366F1', eyebrow: 'Technique · Exam skills', subtitle: 'Half of exam technique is reading the question right. Spot the command word in real questions and learn what it’s really asking — and the trap that loses marks.', showHeader: true },
   'how-they-did-it':  { themeColor: '#0E7C6B', eyebrow: 'Mindset · Real stories', subtitle: 'Real people who started where you are — money tight, learning differently, new to the country, first in the family — and the actual moves they made.', showHeader: true },
   'career-paths':     { themeColor: '#0E7C6B', eyebrow: 'Understand · Career discovery', subtitle: 'Real careers — what they pay, the day-to-day, the skills, and the courses that lead there.', showHeader: true },
@@ -562,6 +564,16 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             component: <CatchUpLane uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} />,
         },
         {
+            id: 'paper-trail', title: 'Paper Trail', description: 'Every SEC past paper and marking scheme — three taps away.', icon: FileSearch, needsProfile: false,
+            // 'both': serves Junior Cycle (new-spec) AND Leaving Cert / LCA papers (cycle-filtered picker).
+            curriculum: 'both' as const,
+            tag: 'Exam archive', accentHex: '#33658A', gridClass: 'md:col-span-2',
+            iconBg: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-800 dark:text-sky-300',
+            accentBarColor: 'bg-sky-700', tagBg: 'bg-sky-100 dark:bg-sky-900/30', tagText: 'text-sky-800 dark:text-sky-400',
+            hoverBorder: 'hover:border-sky-400/50 dark:hover:border-sky-500/40',
+            component: <PaperTrail uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentLevels={subjectProfile?.subjects.map(s => ({ name: s.subjectName, level: s.level }))} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} />,
+        },
+        {
             id: 'command-word-reflex', title: 'Command-Word Reflex', description: 'Spot the command word in real questions — and dodge the trap.', icon: Highlighter, needsProfile: false,
             // 'both': has Junior Cycle AND Leaving Cert content (cycle-grouped picker), so visible to JC and senior users.
             curriculum: 'both' as const,
@@ -614,6 +626,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'exam-reps': 'plan',
         'college-compass': 'plan',
         'catch-up-lane': 'plan',
+        'paper-trail': 'understand',
         'command-word-reflex': 'understand',
         'how-they-did-it': 'understand',
         'career-paths': 'understand',

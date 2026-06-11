@@ -33,6 +33,9 @@ export default defineConfig(() => {
             ],
           },
           workbox: {
+        // pdf.js is Paper-Trail-only: keep its ~1.8MB (vendor chunk + worker)
+        // out of the SW precache so non-users never download it.
+        globIgnores: ['**/pdf.worker*.js', '**/vendor-pdfjs*.js'],
             maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
             navigateFallback: 'index.html',
             runtimeCaching: [
@@ -111,6 +114,7 @@ export default defineConfig(() => {
               if (id.includes('node_modules/framer-motion')) return 'vendor-framer';
               if (/node_modules\/(three|@react-three)\//.test(id)) return 'vendor-three';
               if (id.includes('node_modules/jspdf')) return 'vendor-jspdf';
+              if (id.includes('node_modules/pdfjs-dist')) return 'vendor-pdfjs';
             },
           },
         },

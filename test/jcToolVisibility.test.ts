@@ -23,6 +23,7 @@ import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { RECOVERY_CARDS } from '../catchUpLaneData';
+import { PAPER_TRAIL_SUBJECTS } from '../paperTrailData';
 import { COMMAND_WORD_QUESTIONS, cycleForSubject } from '../commandWordData';
 
 // Vitest runs from the repo root, so resolve the source file from process.cwd().
@@ -54,6 +55,7 @@ const JC_VISIBLE = new Set(['both', 'junior']);
 const CONTENT_TOOLS: { id: string; subjectIds: string[] }[] = [
   { id: 'catch-up-lane', subjectIds: RECOVERY_CARDS.map((c) => c.subjectId) },
   { id: 'command-word-reflex', subjectIds: COMMAND_WORD_QUESTIONS.map((q) => q.subjectId) },
+  { id: 'paper-trail', subjectIds: PAPER_TRAIL_SUBJECTS.map((s) => s.id) },
 ];
 
 describe('JC tool visibility', () => {

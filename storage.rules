@@ -1,0 +1,18 @@
+rules_version = '2';
+
+// Paper Trail corpus: published SEC exam papers + marking schemes, mirrored
+// with attribution under the project's SEC rights clearance. These are public
+// documents — world-readable, never client-writable. Uploads happen only via
+// the gcloud pipeline (scripts/paper-trail/), not from the app.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /papers/{allPaths=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+    // Everything else in the bucket: no client access.
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

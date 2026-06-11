@@ -643,9 +643,15 @@ const MarkingSchemeDecoderModule: React.FC<{ onBack: () => void; progress: Modul
                 </div>
               </div>
               <MicroCommitment theme={theme}>
-                <p>Pick your 3 most important subjects. Download each marking scheme from <strong>examinations.ie</strong>. For each subject, find one question type where you are losing marks to technique, not knowledge. Write down what you will do differently.</p>
+                <p>Pick your 3 most important subjects. Open each one in <strong>Paper Trail</strong> (in the Launchpad) — the real paper and its marking scheme, side by side. For each subject, find one question type where you are losing marks to technique, not knowledge. Write down what you will do differently.</p>
               </MicroCommitment>
               <p className="mt-8 text-center font-serif text-lg font-semibold text-zinc-800 dark:text-white">You now know something most students never learn: the examiner is on your side. The marking scheme is their way of telling you exactly what they want. Give it to them.</p>
+              <ToolJumpCard
+                toolId="paper-trail"
+                title="Open the real paper and scheme"
+                description="Paper Trail has every SEC past paper and marking scheme for your subjects — free, in the app, with the scheme one tap from the paper."
+                ctaLabel="Open Paper Trail"
+              />
               <ToolJumpCard
                 toolId="syllabus-xray"
                 title="See where the marks actually live"

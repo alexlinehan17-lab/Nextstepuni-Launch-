@@ -28,3 +28,5 @@ functions/lib/
 
 # Source exam PDFs (read locally to build verbatim cards; not committed)
 exam-papers/
+paper-trail-corpus/
+scripts/paper-trail/out/

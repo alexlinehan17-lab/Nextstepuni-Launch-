@@ -28,6 +28,7 @@ import { useStrategyMastery } from './hooks/useStrategyMastery';
 import { useWeeklyChallenge } from './hooks/useWeeklyChallenge';
 import { useRecommendation } from './hooks/useRecommendation';
 import { useQuests } from './hooks/useQuests';
+import './utils/bootParams'; // eager URL snapshot for deep-link params (must run before NavigationContext rewrites the URL)
 import TrainingPulse from './components/TrainingPulse';
 import AchievementToast from './components/AchievementToast';
 import RankUpModal from './components/RankUpModal';

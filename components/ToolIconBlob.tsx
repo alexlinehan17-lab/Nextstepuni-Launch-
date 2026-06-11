@@ -15,7 +15,7 @@
  *   - IZ active-tool ToolHeader: size=108
  */
 import React from 'react';
-import { type LucideIcon } from 'lucide-react';
+import { FileSearch, type LucideIcon } from 'lucide-react';
 
 export type ToolIconKey =
   | 'journey'
@@ -33,7 +33,8 @@ export type ToolIconKey =
   | 'how-they-did-it'
   | 'career-paths'
   | 'future-finder-revamped'
-  | 'your-possible-life';
+  | 'your-possible-life'
+  | 'paper-trail';
 
 interface ToolIconConfig {
   blob: string;
@@ -106,6 +107,13 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     iconPath: '/assets/tools/college-compass.png',
     blobPath: 'M 6 26 Q 0 52 10 80 Q 26 98 54 94 Q 88 90 96 60 Q 100 28 82 8 Q 56 -4 30 8 Q 12 16 6 26 Z',
     iconScale: 1.0,
+  },
+  'paper-trail': {
+    blob: '#C7D8E8',
+    blobPath: 'M 5 26 Q -1 54 9 80 Q 25 99 53 95 Q 87 91 95 61 Q 101 29 83 9 Q 57 -5 31 5 Q 11 14 5 26 Z',
+    iconScale: 1.0,
+    icon: FileSearch,
+    iconColor: '#33658A',
   },
   'catch-up-lane': {
     blob: '#AEDDE2',
