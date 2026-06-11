@@ -54,6 +54,28 @@ NAME_MERGES = {
     ("lb", "Intro. to Information & Comm. Technology"): "Information & Communication Tech.",
 }
 
+# SEC misfiled these exam papers/answer books in the markingschemes view —
+# never offer them as scheme candidates (content-audited 2026-06-11).
+MISFILED_SCHEMES = {
+    (2011, "LC003ALP100IV.pdf"),  # maths 2011 HL IV P1: exam paper, not scheme
+    (2011, "LC001ALP200IV.pdf"),  # irish 2011 HL IV P2: exam paper
+    (2011, "LC067ALP008IV.pdf"),  # music 2011 HL IV listening: answer booklet
+    (2011, "LC014ALP013EV.pdf"),  # art 2011 HL EV H&A: question paper
+    (2011, "LC014ALP013IV.pdf"),  # art 2011 HL IV H&A: question paper
+    (2011, "LB847CLP000EV.pdf"),  # LCA office admin 2011: written answer book
+}
+
+# Audited pairing corrections: (exam, year, paper fileid) -> scheme fileid.
+PAIR_OVERRIDES = {
+    ("lc", 2011, "LC003ALP100IV.pdf"): "LC003ALP000IV.pdf",
+    ("lc", 2011, "LC001ALP200IV.pdf"): "LC001ALP000IV.pdf",
+    ("lc", 2011, "LC067ALP008IV.pdf"): "LC067ALP000IV.pdf",
+    ("lc", 2011, "LC014ALP013EV.pdf"): "LC014ALP000EV.pdf",
+    ("lc", 2011, "LC014ALP013IV.pdf"): "LC014ALP000IV.pdf",
+    ("lb", 2010, "LB847CLP000EV.pdf"): "LB847CLP016EV.pdf",  # WRITTEN scheme, not TASKS
+    ("lb", 2011, "LB847CLP000EV.pdf"): "LB847CLP016EV.pdf",
+}
+
 # Known archive typos, normalised before decoding (verified by adversarial audit).
 FILEID_FIXES = {
     "LC462CCLP000EV.pdf": "LC462CLP000EV.pdf",  # 2010 LCVP EV scheme: doubled 'C'
@@ -413,8 +435,11 @@ def main():
             issues.sec_id_renames.append(f"{exam} SEC id {sid}: {sorted(names)}")
 
     # ── Attach byte counts / drop failed downloads ───────────────────────────
+    RAW_FILEIDS = {v: k for k, v in FILEID_FIXES.items()}
+
     def doc_for(d):
-        rec = dl.get((d["view"], str(d["year"]), d["fileid"]))
+        rec = (dl.get((d["view"], str(d["year"]), d["fileid"]))
+               or dl.get((d["view"], str(d["year"]), RAW_FILEIDS.get(d["fileid"], ""))))
         if rec is None:
             issues.bytes_pending += 1
             return {"f": d["fileid"], "b": 0}
@@ -474,6 +499,11 @@ def main():
 
     schemes_by_key = defaultdict(list)
     for s in schemes:
+        if (s["year"], s["fileid"]) in MISFILED_SCHEMES:
+            issues.scheme_extras.append(
+                f"{s['exam']} {s['year']} {s['effName']}: MISFILED in archive scheme view "
+                f"(actually a paper/answer book) — excluded: {s['fileid']}")
+            continue
         schemes_by_key[pairkey(s)].append(s)
 
     def scheme_for_paper(p, cands):
@@ -487,6 +517,12 @@ def main():
         then same component family (last two digits), then the whole-level 000
         scheme — and a 'Project Maths' label may never cross the boundary.
         Better unpaired than wrong."""
+        forced = PAIR_OVERRIDES.get((p["exam"], p["year"], p["fileid"]))
+        if forced:
+            for sc in cands:
+                if sc["fileid"] == forced:
+                    return sc
+            return None  # forced target absent: better unpaired than wrong
         pm_p = "project maths" in p["paperLabel"].lower()
         p_comp = p["component"] or ""
         best, best_rank = None, (9, True, "")
