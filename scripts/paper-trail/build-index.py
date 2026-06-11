@@ -46,6 +46,20 @@ LC_YEAR_MIN, LC_YEAR_MAX = 2010, 2025  # also LCA
 JC_YEAR_MAX = 2025
 JC_CANCELLED_YEARS = (2020, 2021)
 JC_CANCELLED_REASON = "Junior Cycle exams were cancelled in 2020 and 2021"
+LCA_CANCELLED_REASON = ("No 2020 LCA written examinations — COVID-19 calculated grades "
+                        "replaced them; nothing in the SEC archive")
+
+# SEC renamed subjects mid-archive; merge so one subject spans its full run.
+NAME_MERGES = {
+    ("lb", "Intro. to Information & Comm. Technology"): "Information & Communication Tech.",
+}
+
+# Known archive typos, normalised before decoding (verified by adversarial audit).
+FILEID_FIXES = {
+    "LC462CCLP000EV.pdf": "LC462CLP000EV.pdf",  # 2010 LCVP EV scheme: doubled 'C'
+}
+# Archive artifacts that are deliberate skips, not decode failures.
+ARTIFACT_RE = re.compile(r"\s(\(2\)|hold)\.pdf$", re.I)
 
 # JC new-spec windows (approved scope), keyed by slug of the SEC subject name.
 JC_WINDOW_START = {"english": 2017, "science": 2019, "business-studies": 2019}
@@ -179,6 +193,7 @@ class Issues:
         self.non_pdf = Counter()                 # ext -> count
         self.non_pdf_rows = defaultdict(int)     # (exam, name, year) -> count
         self.undecodable = []                    # rows we had to drop
+        self.artifacts = []                      # deliberate skips: "(2)"/"hold" uploads
         self.fileid_fallback = []                # decoded from label only (e.g. LCA)
         self.level_disagree = []                 # label vs fileid level
         self.lang_disagree = []                  # label vs fileid lang
@@ -197,10 +212,14 @@ class Issues:
 
 def decode_row(row, issues):
     """Decode one PDF manifest row. Returns dict or None (dropped + reported)."""
-    fileid = row["fileid"].strip()
+    fileid = FILEID_FIXES.get(row["fileid"].strip(), row["fileid"].strip())
     label = html.unescape(row["label"]).strip()
     name = html.unescape(row["subjectName"]).strip()
     exam = row["exam"]
+    name = NAME_MERGES.get((exam, name), name)
+    if ARTIFACT_RE.search(fileid):
+        issues.artifacts.append(f"{exam} {row['year']} {name} {fileid} (duplicate/held upload)")
+        return None
     year = int(row["year"])
     where = f"{exam} {year} {name} {fileid}"
 
@@ -323,12 +342,14 @@ def main():
     subjects_json = {}
     if os.path.exists(SUBJECTS_JSON):
         subjects_json = json.load(open(SUBJECTS_JSON, encoding="utf-8"))
-    listing = defaultdict(set)       # (exam, year) -> set of SEC names (exampapers view)
+    listing = defaultdict(set)         # (exam, year) -> SEC names (exampapers view)
+    schemes_listing = defaultdict(set)  # (exam, year) -> SEC names (markingschemes view)
     for key, subs in subjects_json.items():
         view, exam, year = key.split("|")
-        if view == "exampapers":
-            for _, n in subs:
-                listing[(exam, int(year))].add(html.unescape(n).strip())
+        target = listing if view == "exampapers" else schemes_listing
+        for _, n in subs:
+            nm = html.unescape(n).strip()
+            target[(exam, int(year))].add(NAME_MERGES.get((exam, nm), nm))
 
     crawl_views = sorted({r["view"] for r in rows})
     crawl_span = sorted({(r["exam"], int(r["year"])) for r in rows})
@@ -455,9 +476,36 @@ def main():
     for s in schemes:
         schemes_by_key[pairkey(s)].append(s)
 
-    def primary_scheme(cands):
-        cands = sorted(cands, key=lambda s: (s["modified"], s["component"] != "000", s["fileid"]))
-        return cands[0], cands[1:]
+    def scheme_for_paper(p, cands):
+        """Pick the scheme whose component family matches THIS paper.
+
+        The SEC publishes distinct examinations under one subject-year-level
+        key (e.g. 2010-13 'Project Maths' pilot components 130/230 with their
+        own 030 scheme alongside the standard 100/200 papers with the 000
+        scheme). Component-blind pairing attached the WRONG examination's
+        scheme — caught by adversarial audit. Tiers: exact component match,
+        then same component family (last two digits), then the whole-level 000
+        scheme — and a 'Project Maths' label may never cross the boundary.
+        Better unpaired than wrong."""
+        pm_p = "project maths" in p["paperLabel"].lower()
+        p_comp = p["component"] or ""
+        best, best_rank = None, (9, True, "")
+        for sc in cands:
+            sc_comp = sc["component"] or ""
+            if sc_comp == p_comp:
+                tier = 0
+            elif sc_comp[-2:] == p_comp[-2:] and sc_comp and p_comp:
+                tier = 1
+            elif sc_comp == "000":
+                tier = 2
+            else:
+                continue
+            if ("project maths" in sc["paperLabel"].lower()) != pm_p:
+                continue
+            rank = (tier, sc["modified"], sc["fileid"])
+            if rank < best_rank:
+                best, best_rank = sc, rank
+        return best
 
     papers_by_key = defaultdict(list)
     for p in papers:
@@ -473,18 +521,11 @@ def main():
     for key in sorted(papers_by_key):
         exam, eff_name, year, level, lang = key
         sid = registry[(exam, eff_name)]["id"]
-        scheme_doc = None
-        if key in schemes_by_key:
+        cands = schemes_by_key.get(key, [])
+        if cands:
             paired_keys.add(key)
-            prim, extras = primary_scheme(schemes_by_key[key])
-            for x in extras:
-                issues.scheme_extras.append(
-                    f"{exam} {year} {eff_name} {level}/{lang}: extra scheme {x['fileid']} ({x['paperLabel']})")
-            scheme_doc = doc_for(prim)  # None if its download failed
-            if scheme_doc:
-                _cy = registry[(exam, eff_name)]["cycle"]
-                upload_rows[f"papers/{_cy}/{sid}/{year}/scheme/{prim['fileid']}"] = \
-                    f"paper-trail-corpus/{prim['view']}/{prim['year']}/{prim['fileid']}"
+        used_scheme_ids = set()
+        unscheduled = 0
         group = sorted(papers_by_key[key],
                        key=lambda p: (COMPONENT_ORDER.get(p["component"], 60)
                                       if p["component"] in COMPONENT_ORDER or not (p["component"] or "").isdigit()
@@ -498,8 +539,15 @@ def main():
             _cy = registry[(exam, eff_name)]["cycle"]
             upload_rows[f"papers/{_cy}/{sid}/{year}/paper/{p['fileid']}"] = \
                 f"paper-trail-corpus/{p['view']}/{p['year']}/{p['fileid']}"
-            if scheme_doc:
+            prim = scheme_for_paper(p, cands)
+            scheme_doc = doc_for(prim) if prim else None
+            if prim and scheme_doc:
+                used_scheme_ids.add(id(prim))
+                upload_rows[f"papers/{_cy}/{sid}/{year}/scheme/{prim['fileid']}"] = \
+                    f"paper-trail-corpus/{prim['view']}/{prim['year']}/{prim['fileid']}"
                 item["scheme"] = scheme_doc
+            else:
+                unscheduled += 1
             if p["modified"]:
                 item["modified"] = True
             entries[sid][(year, level, lang)].append(item)
@@ -509,8 +557,13 @@ def main():
             pc = pair_counts[(sid, year, level)]
             pc[0] += 1
             pc[1] += 1 if scheme_doc else 0
-        if scheme_doc is None and entries[sid].get((year, level, lang)):
-            issues.unpaired_papers.append((sid, year, level, lang, len(entries[sid][(year, level, lang)])))
+        for sc in cands:
+            if id(sc) not in used_scheme_ids:
+                issues.scheme_extras.append(
+                    f"{exam} {year} {eff_name} {level}/{lang}: unmatched scheme candidate "
+                    f"{sc['fileid']} ({sc['paperLabel']})")
+        if unscheduled and entries[sid].get((year, level, lang)):
+            issues.unpaired_papers.append((sid, year, level, lang, unscheduled))
 
     for key in sorted(schemes_by_key):
         if key not in paired_keys:
@@ -565,6 +618,9 @@ def main():
             if cycle == "jc" and y in JC_CANCELLED_YEARS:
                 gaps.append({"subjectId": s["id"], "year": y, "reason": JC_CANCELLED_REASON})
                 continue
+            if cycle == "lca" and y == 2020:
+                gaps.append({"subjectId": s["id"], "year": y, "reason": LCA_CANCELLED_REASON})
+                continue
             if (exam, y) not in listing:
                 continue  # year not crawled (partial run) — not a verified gap
             if any(y in decoded_paper_years[(exam, n)] for n in s["origNames"]):
@@ -577,6 +633,9 @@ def main():
                 else:
                     gaps.append({"subjectId": s["id"], "year": y,
                                  "reason": "listed in the SEC archive but no PDF materials were found"})
+            elif schemes_listing.get((exam, y), set()) & s["origNames"]:
+                gaps.append({"subjectId": s["id"], "year": y,
+                             "reason": "no exam paper in the SEC archive for this year — marking scheme only"})
             elif listed_years and listed_years[0] < y < listed_years[-1]:
                 gaps.append({"subjectId": s["id"], "year": y,
                              "reason": "not in the SEC archive subject list for this year"})
@@ -797,6 +856,29 @@ def main():
         w("")
 
     section("Rows dropped as undecodable", issues.undecodable)
+    section("Archive artifacts skipped deliberately ('(2)'/'hold' uploads)", issues.artifacts)
+    w("")
+    w("## Modified (vision-impaired) documents")
+    n_mod = sum(1 for sid in index for e in index[sid] for it in e["papers"] if it.get("modified"))
+    if n_mod:
+        w(f"{n_mod} modified documents indexed.")
+    else:
+        w("None found in the crawled archive views — the `modified` flag is live but unused; "
+          "if the SEC exposes vision-impaired versions elsewhere, they were not enumerated.")
+    w("")
+    w("## Fileid-vs-subject cross-check")
+    code_map = defaultdict(set)
+    for d in decoded:
+        m2 = FILEID_RE.match(d["fileid"])
+        if m2:
+            code_map[(d["exam"], m2.group(2))].add(d["effName"])
+    conflicts = {k: v for k, v in code_map.items() if len(v) > 1}
+    if conflicts:
+        w("CONFLICTS — one SEC subject code decoding to multiple subjects (check for typo'd fileids):")
+        for (exam, code), names in sorted(conflicts.items()):
+            w(f"- {exam} code {code}: {sorted(names)}")
+    else:
+        w("Clean: every SEC subject code maps to exactly one subject per exam.")
     section("Label vs fileid LEVEL disagreements (label wins)", issues.level_disagree)
     section("Label vs fileid LANG disagreements (label wins)", issues.lang_disagree)
     section("Label vs fileid COMPONENT disagreements (label wins)", issues.component_disagree)

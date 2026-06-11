@@ -48,12 +48,26 @@ def main():
     if os.path.exists(STAGE):
         shutil.rmtree(STAGE)
     staged = {"immutable": 0, "current": 0}
+    corrupt = []
     for r in rows:
+        src = os.path.join(REPO, r["local"])
+        with open(src, "rb") as fh:
+            head = fh.read(5)
+            fh.seek(-64, os.SEEK_END if os.path.getsize(src) > 64 else os.SEEK_SET)
+            tail = fh.read()
+        if head != b"%PDF-" or b"%%EOF" not in tail:
+            corrupt.append(r["local"])
+            continue
         bucket_kind = "current" if r["year"] >= CURRENT_YEAR else "immutable"
         dest = os.path.join(STAGE, bucket_kind, r["remote"])
         os.makedirs(os.path.dirname(dest), exist_ok=True)
-        os.link(os.path.join(REPO, r["local"]), dest)
+        os.link(src, dest)
         staged[bucket_kind] += 1
+    if corrupt:
+        print(f"ABORT: {len(corrupt)} corrupt/truncated PDFs — re-download before uploading:")
+        for c in corrupt[:10]:
+            print("  ", c)
+        return 1
     print(f"staged: {staged['immutable']} immutable, {staged['current']} current-year")
 
     for bucket_kind, cache in [
