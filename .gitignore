@@ -30,3 +30,5 @@ functions/lib/
 exam-papers/
 paper-trail-corpus/
 scripts/paper-trail/out/
+
+__pycache__/
