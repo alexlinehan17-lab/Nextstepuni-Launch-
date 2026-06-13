@@ -148,6 +148,20 @@ QA_PASSED_ANSWER_PROFILES = {
     ('finnish', 'higher', 'ev'),
     ('history', 'higher', 'ev'),
     ('hungarian', 'higher', 'ev'),
+    ('jc-business-studies', 'common', 'ev'),
+    ('jc-english', 'higher', 'ev'),
+    ('jc-english', 'ordinary', 'ev'),
+    ('jc-home-economics', 'common', 'ev'),
+    ('jc-home-economics', 'ordinary', 'ev'),
+    ('jc-jewish-studies', 'common', 'ev'),
+    ('jc-mathematics', 'higher', 'ev'),
+    ('jc-mathematics', 'ordinary', 'ev'),
+    ('jc-music', 'common', 'ev'),
+    ('jc-music', 'higher', 'ev'),
+    ('jc-music', 'ordinary', 'ev'),
+    ('jc-religious-education', 'common', 'ev'),
+    ('jc-science', 'common', 'ev'),
+    ('jc-wood-technology', 'common', 'ev'),
     ('latin', 'ordinary', 'ev'),
     ('latvian', 'higher', 'ev'),
     ('lithuanian', 'higher', 'ev'),
@@ -166,7 +180,6 @@ QA_PASSED_ANSWER_PROFILES = {
     ('romanian', 'higher', 'ev'),
     ('slovakian', 'higher', 'ev'),
     ('slovenian', 'higher', 'ev'),
-    ('swedish', 'higher', 'ev'),
 }
 
 # ─── Hand-written subject knowledge ──────────────────────────────────────────

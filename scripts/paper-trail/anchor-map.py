@@ -78,16 +78,22 @@ FILEID_RE = re.compile(r"^(LC|JC|LB)(\d{3})([A-Z])L?P([A-Z0-9]{3})(EV|IV|BV)\.pd
 
 # Scope. SCOPE_CODES None = all subjects; a set = only those SEC codes (used to
 # extend already-verified subjects to more years without re-mapping the rest).
-SCOPE_EXAM = "LC"
-SCOPE_LEVELS = {"A", "G"}           # higher, ordinary
+SCOPE_EXAM = "LC"                   # which cycle to ATTEMPT (set "JC" for a JC wave)
+SCOPE_LEVELS = {"A", "G", "C"}      # higher, ordinary, common
 SCOPE_LANGS = {"EV"}
 SCOPE_YEARS = set(range(2010, 2026))
 SCOPE_CODES = None  # which codes to ATTEMPT this run; None = all not in DONE_CODES
 # Subjects already verified + lit in earlier waves. The engine never re-maps or
 # clears these (their committed sidecars are final), so each new wave is additive.
 DONE_CODES = {
+    # wave 1-2
     "LC003", "LC022", "LC023", "LC024", "LC225", "LC029", "LC014", "LC007",
     "LC559", "LC038", "LC017", "LC049", "LC557", "LC019", "LC553", "LC558",
+    # wave 3
+    "LC004", "LC006", "LC018", "LC021", "LC025", "LC034", "LC223",
+    "LC547", "LC549", "LC550", "LC551", "LC554", "LC567",
+    # wave 4 (Junior Cycle)
+    "JC003", "JC002", "JC057", "JC042", "JC052", "JC223", "JC046", "JC126", "JC565",
 }
 # Aural / unprepared-listening / non-level components never carry page questions.
 SKIP_COMPONENTS = {"A00", "U00"}
