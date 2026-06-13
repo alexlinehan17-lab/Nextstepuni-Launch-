@@ -78,7 +78,7 @@ FILEID_RE = re.compile(r"^(LC|JC|LB)(\d{3})([A-Z])L?P([A-Z0-9]{3})(EV|IV|BV)\.pd
 
 # Scope. SCOPE_CODES None = all subjects; a set = only those SEC codes (used to
 # extend already-verified subjects to more years without re-mapping the rest).
-SCOPE_EXAM = "LC"                   # which cycle to ATTEMPT (set "JC" for a JC wave)
+SCOPE_EXAM = "LC"
 SCOPE_LEVELS = {"A", "G", "C"}      # higher, ordinary, common
 SCOPE_LANGS = {"EV"}
 SCOPE_YEARS = set(range(2010, 2026))
@@ -94,6 +94,9 @@ DONE_CODES = {
     "LC547", "LC549", "LC550", "LC551", "LC554", "LC567",
     # wave 4 (Junior Cycle)
     "JC003", "JC002", "JC057", "JC042", "JC052", "JC223", "JC046", "JC126", "JC565",
+    # wave 6 (Computer Science, JC Geography, LCA)
+    "LC219", "JC005",
+    "LB832", "LB846", "LB810", "LB833", "LB013", "LB847", "LB849", "LB816", "LB835", "LB010", "LB011",
 }
 # Aural / unprepared-listening / non-level components never carry page questions.
 SKIP_COMPONENTS = {"A00", "U00"}
@@ -473,8 +476,14 @@ def build_pairs(rows):
             scheme_users[scheme["fileid"]].append(pd["component"])
         for prow, pd, scheme in paired:
             comps = sorted(set(scheme_users[scheme["fileid"]]))
-            if len(comps) > 1:
-                k = comps.index(pd["component"]) + 1  # 1-based rank → "Paper k"
+            # Only split into Paper 1 / Paper 2 bands when the shared components are
+            # actually Paper-N components (1xx / 2xx, like Maths 100/200). Other
+            # subjects share one scheme across unrelated components (e.g. Computer
+            # Science 038/040, Technology 014/039) with NO 'Paper N' dividers — they
+            # use the whole scheme. Without this, those papers wrongly drop.
+            paper_like = len(comps) > 1 and all(c[:1] in ("1", "2") for c in comps)
+            if paper_like:
+                k = 1 if pd["component"][:1] == "1" else 2  # Paper-1 vs Paper-2 family
                 strat = ("divider", k, pd["component"])
             else:
                 strat = ("whole", pd["component"])
