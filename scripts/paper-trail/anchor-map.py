@@ -193,7 +193,8 @@ def _det_question_word(doc):
         for lw in line_groups(page):
             for i, w in enumerate(lw):
                 word = _deligature(w[4])
-                if word not in ("Question", "QUESTION") or i + 1 >= len(lw):
+                # 'Ceist'/'CEIST' = Irish for 'Question' (Irish-medium IV papers).
+                if word not in ("Question", "QUESTION", "Ceist", "CEIST") or i + 1 >= len(lw):
                     continue
                 m = re.fullmatch(r"(\d+)[.:]?", lw[i + 1][4])  # 'Question 1' / '1.' / '1:'
                 if not m:
@@ -204,7 +205,7 @@ def _det_question_word(doc):
                 # numbered SUMMARY table sits earlier; spread-max then prefers the
                 # real, page-spread solutions over the clustered summary.
                 standalone = len(lw) <= 3
-                if w[0] < LEFT_MARGIN_X or (word == "QUESTION" and standalone):
+                if w[0] < LEFT_MARGIN_X or (word in ("QUESTION", "CEIST") and standalone):
                     hits.append((int(m.group(1)), pi, w[0], w[1] / H))
     return hits
 
@@ -647,11 +648,13 @@ def map_paper(paper_path, scheme_path, band_strategy, fallback_only=False):
 
 # ─── pairing + band strategy ─────────────────────────────────────────────────
 
-def build_pairs(rows, include_done=False):
+def build_pairs(rows, include_done=False, langs=None):
     """[(paperRow, schemeRow, band_strategy, levelCode)] for in-scope papers.
     band_strategy = ('whole', component) or ('divider', k, component).
     include_done=True keeps frozen codes too (the navigation-fallback pass covers
-    their unmapped dropped years)."""
+    their unmapped dropped years). langs overrides SCOPE_LANGS (the fallback pass
+    adds IV/BV — Irish-medium + bilingual papers — for navigation chips)."""
+    langs = langs or SCOPE_LANGS
     papers = defaultdict(list)   # (code, year, level, lang) -> [(row, decoded)]
     schemes = defaultdict(list)
     for r in rows:
@@ -662,7 +665,7 @@ def build_pairs(rows, include_done=False):
             continue  # frozen — lit in an earlier wave, never re-mapped
         if SCOPE_CODES is not None and not include_done and d["code"] not in SCOPE_CODES:
             continue
-        if d["levelCode"] not in SCOPE_LEVELS or d["lang"] not in SCOPE_LANGS:
+        if d["levelCode"] not in SCOPE_LEVELS or d["lang"] not in langs:
             continue
         if int(r["year"]) not in SCOPE_YEARS or d["component"] in SKIP_COMPONENTS:
             continue
@@ -795,7 +798,8 @@ def main():
                     if fn.endswith(".json"):
                         have.add((int(yd), fn[:-5]))
         fb_added = 0
-        for prow, srow, strat, level in sorted(build_pairs(rows, include_done=True),
+        fb_langs = set(SCOPE_LANGS) | {"IV", "BV"}  # + Irish-medium + bilingual papers
+        for prow, srow, strat, level in sorted(build_pairs(rows, include_done=True, langs=fb_langs),
                                                key=lambda p: (int(p[0]["year"]), p[0]["fileid"])):
             year, pfile, sfile = int(prow["year"]), prow["fileid"], srow["fileid"]
             if (year, pfile) in have:
