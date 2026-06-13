@@ -151,7 +151,6 @@ QA_PASSED_ANSWER_PROFILES = {
     ('computer-science', 'ordinary', 'ev'),
     ('construction-studies', 'higher', 'ev'),
     ('construction-studies', 'ordinary', 'ev'),
-    ('croatian', 'higher', 'ev'),
     ('czech', 'higher', 'ev'),
     ('danish', 'higher', 'ev'),
     ('dutch', 'higher', 'ev'),
@@ -192,7 +191,6 @@ QA_PASSED_ANSWER_PROFILES = {
     ('lca-information-and-communication-tech', 'common', 'ev'),
     ('lca-italian', 'common', 'ev'),
     ('lca-office-admin-and-customer', 'common', 'ev'),
-    ('lca-sign-language', 'common', 'ev'),
     ('lithuanian', 'higher', 'ev'),
     ('maltese', 'higher', 'ev'),
     ('mathematics', 'higher', 'ev'),
@@ -207,7 +205,6 @@ QA_PASSED_ANSWER_PROFILES = {
     ('portuguese', 'higher', 'ev'),
     ('religious-education', 'ordinary', 'ev'),
     ('romanian', 'higher', 'ev'),
-    ('slovakian', 'higher', 'ev'),
     ('slovenian', 'higher', 'ev'),
 }
 
