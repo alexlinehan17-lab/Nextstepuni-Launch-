@@ -469,8 +469,10 @@ def fallback_chips(headers, yband, scheme, band_start, band_end,
 
 # ─── per-paper mapping ───────────────────────────────────────────────────────
 
-def map_paper(paper_path, scheme_path, band_strategy):
-    """Returns (sidecar_or_None, stats)."""
+def map_paper(paper_path, scheme_path, band_strategy, fallback_only=False):
+    """Returns (sidecar_or_None, stats). fallback_only skips the precise attempt and
+    emits navigation chips straight away (used to cover already-shipped subjects'
+    dropped years + any paper with no committed map)."""
     stats = {"crop": 0, "pagejump": 0, "omit": 0, "reason": None,
              "detector": None, "conf": 0.0}
 
@@ -513,12 +515,12 @@ def map_paper(paper_path, scheme_path, band_strategy):
     def drop(reason):
         """Drop to the universal navigation fallback (or None if disabled)."""
         stats["reason"] = reason
-        bs, be = (0, len(scheme))
-        if band_strategy[0] != "divider":
-            bs, be = 0, len(scheme)
-        fb = fallback_chips(headers, paper_yband, scheme, bs, be,
+        fb = fallback_chips(headers, paper_yband, scheme, 0, len(scheme),
                             paper_path, scheme_path, band_strategy, stats)
         return (fb, stats)
+
+    if fallback_only:
+        return drop("fallback-only pass")
 
     # Band for this paper within (possibly shared) scheme.
     if band_strategy[0] == "divider":
@@ -645,18 +647,20 @@ def map_paper(paper_path, scheme_path, band_strategy):
 
 # ─── pairing + band strategy ─────────────────────────────────────────────────
 
-def build_pairs(rows):
+def build_pairs(rows, include_done=False):
     """[(paperRow, schemeRow, band_strategy, levelCode)] for in-scope papers.
-    band_strategy = ('whole', component) or ('divider', k, component)."""
+    band_strategy = ('whole', component) or ('divider', k, component).
+    include_done=True keeps frozen codes too (the navigation-fallback pass covers
+    their unmapped dropped years)."""
     papers = defaultdict(list)   # (code, year, level, lang) -> [(row, decoded)]
     schemes = defaultdict(list)
     for r in rows:
         d = decode_fileid(r["fileid"])
         if not d or d["exam"] != SCOPE_EXAM:
             continue
-        if d["code"] in DONE_CODES:
+        if d["code"] in DONE_CODES and not include_done:
             continue  # frozen — lit in an earlier wave, never re-mapped
-        if SCOPE_CODES is not None and d["code"] not in SCOPE_CODES:
+        if SCOPE_CODES is not None and not include_done and d["code"] not in SCOPE_CODES:
             continue
         if d["levelCode"] not in SCOPE_LEVELS or d["lang"] not in SCOPE_LANGS:
             continue
@@ -777,6 +781,43 @@ def main():
         manifest_lines.append({"year": year, "paperFileid": pfile, "schemeFileid": sfile,
                                "mapped": True, "nCrop": st["crop"], "nPagejump": st["pagejump"],
                                "detector": st["detector"]})
+
+    # ── Pass 2: universal navigation fallback for EVERY remaining paper that has a
+    # scheme but no committed map — including already-shipped subjects' dropped
+    # years (frozen codes). Never overwrites an existing sidecar (precise stays
+    # frozen); only fills the gaps so the Answers feature reaches every paper.
+    if UNIVERSAL_FALLBACK:
+        have = set()
+        for yd in (os.listdir(ANSWERS_DIR) if os.path.isdir(ANSWERS_DIR) else []):
+            ydp = os.path.join(ANSWERS_DIR, yd)
+            if yd.isdigit() and os.path.isdir(ydp):
+                for fn in os.listdir(ydp):
+                    if fn.endswith(".json"):
+                        have.add((int(yd), fn[:-5]))
+        fb_added = 0
+        for prow, srow, strat, level in sorted(build_pairs(rows, include_done=True),
+                                               key=lambda p: (int(p[0]["year"]), p[0]["fileid"])):
+            year, pfile, sfile = int(prow["year"]), prow["fileid"], srow["fileid"]
+            if (year, pfile) in have:
+                continue  # already has a precise or fallback map — leave it
+            ppath = corpus_path("exampapers", year, pfile)
+            spath = corpus_path("markingschemes", year, sfile)
+            if not (os.path.exists(ppath) and os.path.exists(spath)):
+                continue
+            sidecar, st = map_paper(ppath, spath, strat, fallback_only=True)
+            if sidecar is None:
+                continue
+            bs, be = sidecar["band"]
+            for q in sidecar["q"]:
+                for seg in q["region"]:
+                    assert bs <= seg["p"] < be, f"{pfile} Q{q['n']} page {seg['p']} escapes band"
+            ydir = os.path.join(ANSWERS_DIR, str(year))
+            os.makedirs(ydir, exist_ok=True)
+            with open(os.path.join(ydir, f"{pfile}.json"), "w", encoding="utf-8") as fh:
+                json.dump(sidecar, fh, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+            have.add((year, pfile))
+            fb_added += 1
+        log(f"  navigation fallback added for {fb_added} dropped-year/unmapped papers")
 
     with open(ANSWERS_MANIFEST, "w", encoding="utf-8") as f:
         for row in sorted(manifest_lines, key=lambda r: (r["year"], r["paperFileid"])):
