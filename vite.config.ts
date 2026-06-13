@@ -39,6 +39,32 @@ export default defineConfig(() => {
             maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
             navigateFallback: 'index.html',
             runtimeCaching: [
+              // Paper Trail answer sidecars — small per-paper coordinate JSON on
+              // Firebase Storage. SWR: serve cache instantly, refetch in the
+              // background so a re-generated map self-updates. Must precede the
+              // PDF rule (both are firebasestorage.googleapis.com origins).
+              {
+                urlPattern: /^https:\/\/firebasestorage\.googleapis\.com\/.*answers.*\.json(\?|$)/i,
+                handler: 'StaleWhileRevalidate',
+                options: { cacheName: 'paper-trail-answers', expiration: { maxEntries: 200, maxAgeSeconds: 60 * 60 * 24 * 30 } },
+              },
+              // Paper Trail marking-scheme/paper PDFs on Firebase Storage.
+              // CacheFirst + rangeRequests so pdf.js range reads (206) are served
+              // from a full cached copy when offline. cacheableResponse statuses
+              // [200] means ONLY a full-file GET (the explicit scheme prefetch the
+              // viewer fires on "Answers") is ever stored — never a partial 206 —
+              // so the offline copy is always complete. Capped + purgeOnQuotaError
+              // because schemes are multi-MB and the device floor is cheap phones.
+              {
+                urlPattern: /^https:\/\/firebasestorage\.googleapis\.com\/.*\.pdf(\?|$)/i,
+                handler: 'CacheFirst',
+                options: {
+                  cacheName: 'paper-trail-pdfs',
+                  rangeRequests: true,
+                  cacheableResponse: { statuses: [200] },
+                  expiration: { maxEntries: 40, maxAgeSeconds: 60 * 60 * 24 * 30, purgeOnQuotaError: true },
+                },
+              },
               // App JS/CSS chunks — network first, fall back to cache
               {
                 urlPattern: /\/assets\/.*\.(js|css)$/i,

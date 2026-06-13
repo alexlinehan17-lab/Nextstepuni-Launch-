@@ -23,9 +23,19 @@ export const paperStoragePath = (
   cycle: PaperCycle,
   subjectId: string,
   year: number,
-  kind: 'paper' | 'scheme',
+  kind: 'paper' | 'scheme' | 'answers',
   fileid: string,
 ) => `papers/${cycle}/${subjectId}/${year}/${kind}/${fileid}`;
+
+/** Storage path for a paper's answer-map sidecar JSON. The object name is the
+ *  paper fileid + ".json" so the service-worker rule (answers.*\.json) and the
+ *  upload pipeline agree. */
+export const paperAnswersPath = (
+  cycle: PaperCycle,
+  subjectId: string,
+  year: number,
+  paperFileid: string,
+) => `papers/${cycle}/${subjectId}/${year}/answers/${paperFileid}.json`;
 
 /** Public REST URL for a corpus document (range-request capable, CORS-open). */
 export const paperUrl = (path: string) =>

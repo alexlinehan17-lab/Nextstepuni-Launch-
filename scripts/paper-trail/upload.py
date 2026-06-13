@@ -28,6 +28,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(os.path.dirname(HERE))
 MANIFEST = os.path.join(HERE, "out", "upload-manifest.jsonl")
+ANSWERS_MANIFEST = os.path.join(HERE, "out", "answers-upload-manifest.jsonl")
 STAGE = os.path.join(HERE, "out", "stage")
 BUCKET = "gs://nextstepuni-app.firebasestorage.app"
 GCLOUD = os.path.expanduser("~/google-cloud-sdk/bin/gcloud")
@@ -85,6 +86,30 @@ def main():
         ).returncode
         if rc != 0:
             print(f"ABORT: gcloud cp failed for {bucket_kind} batch (rc={rc})")
+            return rc
+
+    # Answer-map sidecars (Stage 2.5) — uploaded as application/json, NOT pdf.
+    # Coordinates-only JSON; tiny; may be re-generated, so a 1-day cache. Empty
+    # manifest (no QA-passed profiles yet) is a clean no-op.
+    answer_rows = [json.loads(l) for l in open(ANSWERS_MANIFEST)] if os.path.exists(ANSWERS_MANIFEST) else []
+    if answer_rows:
+        a_missing = [r for r in answer_rows if not os.path.exists(os.path.join(REPO, r["local"]))]
+        if a_missing:
+            print(f"ABORT: {len(a_missing)} answer sidecars missing (run anchor-map.py + build-index.py)")
+            return 1
+        a_stage = os.path.join(STAGE, "answers")
+        for r in answer_rows:
+            dest = os.path.join(a_stage, r["remote"])
+            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            os.link(os.path.join(REPO, r["local"]), dest)
+        print(f"uploading {len(answer_rows)} answer sidecars…")
+        rc = subprocess.run(
+            [GCLOUD, "storage", "cp", "-r", "--cache-control", "public, max-age=86400",
+             "--content-type", "application/json", os.path.join(a_stage, "papers"), f"{BUCKET}/"],
+            cwd=REPO,
+        ).returncode
+        if rc != 0:
+            print(f"ABORT: gcloud cp failed for answer sidecars (rc={rc})")
             return rc
 
     print("verifying remote object count…")

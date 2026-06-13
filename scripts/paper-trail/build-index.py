@@ -116,6 +116,12 @@ ENTRY_NOTES = {
     ("lc", 2021): "adjusted format — COVID years",
 }
 
+# Answer-map (Stage 2.5 / anchor-map.py) QA gate. A (subjectId, level, lang)
+# profile appears here ONLY after its contact-sheet human review passes (Phase 5).
+# Empty = the answer machinery is wired but no `answers` flags ship yet, so the
+# viewer toggle stays absent everywhere. Phase 5 adds e.g. ("mathematics","higher","ev").
+QA_PASSED_ANSWER_PROFILES = set()
+
 # ─── Hand-written subject knowledge ──────────────────────────────────────────
 
 # Profile-picker aliases (components/subjectData.ts LC_SUBJECTS / JC_SUBJECTS)
@@ -361,6 +367,12 @@ def main():
     for d in load_jsonl(DOWNLOADS):
         dl[(d["view"], d["year"], d["fileid"])] = d
 
+    # Stage 2.5 answer maps: papers that anchor-map.py fully mapped.
+    answer_mapped = set()  # (year, paperFileid)
+    for row in load_jsonl(os.path.join(OUT_DIR, "answers-manifest.jsonl")):
+        if row.get("mapped"):
+            answer_mapped.add((int(row["year"]), row["paperFileid"]))
+
     subjects_json = {}
     if os.path.exists(SUBJECTS_JSON):
         subjects_json = json.load(open(SUBJECTS_JSON, encoding="utf-8"))
@@ -553,6 +565,7 @@ def main():
     paired_keys = set()
     pair_counts = defaultdict(lambda: [0, 0])  # (sid, year, level) -> [papers, with-scheme]
     upload_rows = {}  # remote path -> local path (deduped; single source of truth for upload layout)
+    answer_upload_rows = {}  # remote sidecar path -> local sidecar path (QA-passed only)
 
     for key in sorted(papers_by_key):
         exam, eff_name, year, level, lang = key
@@ -586,6 +599,13 @@ def main():
                 unscheduled += 1
             if p["modified"]:
                 item["modified"] = True
+            # Answer-map flag (Stage 2.5) — only for QA-passed grammar profiles,
+            # and only when anchor-map.py actually mapped this paper.
+            if ((year, p["fileid"]) in answer_mapped
+                    and (sid, level, lang) in QA_PASSED_ANSWER_PROFILES):
+                item["answers"] = 1
+                answer_upload_rows[f"papers/{_cy}/{sid}/{year}/answers/{p['fileid']}.json"] = \
+                    os.path.join("scripts", "paper-trail", "answers", str(year), f"{p['fileid']}.json")
             entries[sid][(year, level, lang)].append(item)
             bc = bilingual_counts[(sid, year, level, lang)]
             bc[0] += 1 if p["bilingual"] else 0
@@ -936,6 +956,13 @@ def main():
         for remote in sorted(upload_rows):
             f.write(json.dumps({"remote": remote, "local": upload_rows[remote], "year": int(remote.split("/")[3])}) + "\n")
     log(f"  wrote upload-manifest.jsonl ({len(upload_rows)} objects)")
+    # Answer sidecars upload separately (content-type application/json, not PDF).
+    with open(os.path.join(OUT_DIR, "answers-upload-manifest.jsonl"), "w") as f:
+        for remote in sorted(answer_upload_rows):
+            f.write(json.dumps({"remote": remote, "local": answer_upload_rows[remote], "year": int(remote.split("/")[3])}) + "\n")
+    n_flagged = sum(1 for es in index.values() for e in es for p in e["papers"] if p.get("answers"))
+    log(f"  wrote answers-upload-manifest.jsonl ({len(answer_upload_rows)} sidecars; "
+        f"{n_flagged} papers flagged answers:1)")
     log("DONE")
     return 0
 
