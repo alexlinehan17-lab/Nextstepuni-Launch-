@@ -21,10 +21,15 @@
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
+import { AnimatePresence, useReducedMotion } from 'framer-motion';
 import { ArrowLeft, Download, RotateCcw, Sparkles, X, ZoomIn, ZoomOut } from 'lucide-react';
+import { MotionDiv } from '../Motion';
 import { prettyBytes } from './storage';
 import type { PaperAnswerMap, PaperAnswerQuestion } from '../../types/paperTrail';
 import type { PDFDocumentProxy, PDFPageProxy } from 'pdfjs-dist';
+
+// Sleek glide shared with the GC dashboard student-view tray.
+const GLIDE = { duration: 0.32, ease: [0.16, 1, 0.3, 1] as const };
 
 // ─── pdf.js lazy singleton ──────────────────────────────────
 
@@ -147,6 +152,21 @@ const Viewer: React.FC<ViewerProps> = ({
   const [answerState, setAnswerState] = useState<'idle' | 'loading' | 'error'>('idle');
   const [reveal, setReveal] = useState<PaperAnswerQuestion | null>(null);
   const schemePrefetched = useRef(false);
+
+  // Reveal panel comes up from the bottom on phones, in from the right on
+  // tablet/desktop (≥768px) — same glide as the GC dashboard student view.
+  const reducedMotion = useReducedMotion();
+  const [isWide, setIsWide] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia('(min-width: 768px)').matches,
+  );
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 768px)');
+    const on = () => setIsWide(mq.matches);
+    mq.addEventListener('change', on);
+    return () => mq.removeEventListener('change', on);
+  }, []);
+  const panelHidden = reducedMotion ? { opacity: 0 } : isWide ? { x: '100%' } : { y: '100%' };
+  const panelShown = reducedMotion ? { opacity: 1 } : { x: 0, y: 0 };
   // Ref mirror so the once-mounted Escape handler sees the live reveal state.
   const revealRef = useRef<PaperAnswerQuestion | null>(null);
   revealRef.current = reveal;
@@ -642,90 +662,130 @@ const Viewer: React.FC<ViewerProps> = ({
         </div>
       )}
 
-      {/* Per-question marking-scheme reveal. */}
-      {reveal && (
-        <RevealSheet
-          q={reveal}
-          schemePdf={sessions.current.scheme.pdf}
-          schemeUrl={scheme?.url}
-          schemeErrored={sessions.current.scheme.state === 'error' || sessions.current.scheme.state === 'unsupported'}
-          copyright={answerMap?.copyright}
-          onClose={() => setReveal(null)}
-          onFullScheme={jumpSchemeToPage}
-        />
-      )}
+      {/* Per-question marking-scheme reveal — bottom sheet on phones, right tray
+          on tablet+; same sleek glide as the GC dashboard student view. */}
+      <AnimatePresence>
+        {reveal && (
+          <>
+            <MotionDiv
+              key="reveal-backdrop"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              onClick={() => setReveal(null)}
+              className="fixed inset-0 z-[110] bg-black/40"
+            />
+            <MotionDiv
+              key="reveal-panel"
+              initial={panelHidden}
+              animate={panelShown}
+              exit={panelHidden}
+              transition={GLIDE}
+              role="dialog"
+              aria-modal="true"
+              aria-label={`Marking scheme for Question ${reveal.n}`}
+              style={{ paddingBottom: 'var(--sab, 0px)' }}
+              className={
+                isWide
+                  ? 'fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
+                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
+              }
+            >
+              <RevealContent
+                q={reveal}
+                wide={isWide}
+                reduced={!!reducedMotion}
+                schemePdf={sessions.current.scheme.pdf}
+                schemeUrl={scheme?.url}
+                schemeErrored={sessions.current.scheme.state === 'error' || sessions.current.scheme.state === 'unsupported'}
+                copyright={answerMap?.copyright}
+                onClose={() => setReveal(null)}
+                onFullScheme={jumpSchemeToPage}
+              />
+            </MotionDiv>
+          </>
+        )}
+      </AnimatePresence>
     </div>,
     document.body,
   );
 };
 
-// ─── per-question marking-scheme reveal sheet ───────────────
+// ─── per-question marking-scheme reveal content (inside the glide panel) ─────
 
-const RevealSheet: React.FC<{
+const RevealContent: React.FC<{
   q: PaperAnswerQuestion;
+  wide: boolean;
+  reduced: boolean;
   schemePdf: PDFDocumentProxy | null;
   schemeUrl?: string;
   schemeErrored: boolean;
   copyright?: string;
   onClose: () => void;
   onFullScheme: (page: number) => void;
-}> = ({ q, schemePdf, schemeUrl, schemeErrored, copyright, onClose, onFullScheme }) => {
+}> = ({ q, wide, reduced, schemePdf, schemeUrl, schemeErrored, copyright, onClose, onFullScheme }) => {
   const firstPage = q.region[0]?.p;
   const closeRef = useRef<HTMLButtonElement | null>(null);
   useEffect(() => {
     closeRef.current?.focus();
   }, []);
   return (
-    <div className="fixed inset-0 z-[110] flex flex-col justify-end" role="dialog" aria-modal="true" aria-label={`Marking scheme for Question ${q.n}`}>
-      <button className="absolute inset-0 bg-black/40" aria-label="Close" tabIndex={-1} onClick={onClose} />
-      <div
-        className="relative bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl flex flex-col max-h-[80vh]"
-        style={{ paddingBottom: 'var(--sab, 0px)' }}
-      >
-        <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
-          <div className="flex-1 min-w-0">
-            <p className="text-[14px] font-semibold text-zinc-900 dark:text-white">Question {q.n} · marking scheme</p>
-            <p className="text-[11px] text-zinc-500">How examiners award the marks — not a model answer.</p>
-          </div>
-          <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
-            <X size={18} />
-          </button>
+    <>
+      {!wide && (
+        <div className="shrink-0 flex justify-center pt-2 pb-0.5" aria-hidden>
+          <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
         </div>
-        <div className="overflow-auto overscroll-contain px-3 py-3 bg-zinc-100 dark:bg-zinc-950">
-          {q.mode === 'pagejump' ? (
-            <p className="text-[13px] text-zinc-600 dark:text-zinc-300 text-center py-8 px-4">
-              This question’s answer spans several scheme pages. Open the marking scheme to read it in full.
-            </p>
-          ) : schemeErrored ? (
-            <p className="text-[13px] text-zinc-600 dark:text-zinc-300 text-center py-8 px-4">
-              Couldn’t load the marking scheme. Open it in the Scheme tab instead.
-            </p>
-          ) : schemePdf ? (
-            <CropView pdf={schemePdf} region={q.region} />
-          ) : (
-            <div role="status" aria-live="polite" className="flex flex-col items-center justify-center gap-2 py-10 text-zinc-400">
-              <div className="w-5 h-5 rounded-full border-2 border-zinc-300 border-t-zinc-500 animate-spin" aria-hidden />
-              <span className="text-[12px]">Loading the marking scheme…</span>
-              {schemeUrl && (
-                <a href={schemeUrl} target="_blank" rel="noopener noreferrer" className="text-[12px] underline underline-offset-2">
-                  Taking too long? Open it in your browser
-                </a>
-              )}
-            </div>
-          )}
+      )}
+      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+        <div className="flex-1 min-w-0">
+          <p className="text-[14px] font-semibold text-zinc-900 dark:text-white">Question {q.n} · marking scheme</p>
+          <p className="text-[11px] text-zinc-500">How examiners award the marks — not a model answer.</p>
         </div>
-        <div className="shrink-0 flex items-center justify-between gap-2 px-4 py-2.5 border-t border-zinc-200 dark:border-zinc-800">
-          <span className="text-[10px] text-zinc-400 truncate">{copyright ?? '© State Examinations Commission'}</span>
-          <button
-            onClick={() => firstPage && onFullScheme(firstPage)}
-            disabled={!firstPage}
-            className="shrink-0 px-3 py-1.5 rounded-full text-[12px] font-semibold text-[#F26B1F] bg-[#FDEEDF] disabled:opacity-40"
-          >
-            View full scheme →
-          </button>
-        </div>
+        <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
+          <X size={18} />
+        </button>
       </div>
-    </div>
+      {/* Content settles a beat after the panel lands (premium stagger). */}
+      <MotionDiv
+        initial={reduced ? false : { opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: reduced ? 0 : 0.08, duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
+        className="flex-1 overflow-auto overscroll-contain px-3 py-3 bg-zinc-100 dark:bg-zinc-950"
+      >
+        {q.mode === 'pagejump' ? (
+          <p className="text-[13px] text-zinc-600 dark:text-zinc-300 text-center py-8 px-4">
+            This question’s answer spans several scheme pages. Open the marking scheme to read it in full.
+          </p>
+        ) : schemeErrored ? (
+          <p className="text-[13px] text-zinc-600 dark:text-zinc-300 text-center py-8 px-4">
+            Couldn’t load the marking scheme. Open it in the Scheme tab instead.
+          </p>
+        ) : schemePdf ? (
+          <CropView pdf={schemePdf} region={q.region} />
+        ) : (
+          <div role="status" aria-live="polite" className="flex flex-col items-center justify-center gap-2 py-10 text-zinc-400">
+            <div className="w-5 h-5 rounded-full border-2 border-zinc-300 border-t-zinc-500 animate-spin" aria-hidden />
+            <span className="text-[12px]">Loading the marking scheme…</span>
+            {schemeUrl && (
+              <a href={schemeUrl} target="_blank" rel="noopener noreferrer" className="text-[12px] underline underline-offset-2">
+                Taking too long? Open it in your browser
+              </a>
+            )}
+          </div>
+        )}
+      </MotionDiv>
+      <div className="shrink-0 flex items-center justify-between gap-2 px-4 py-2.5 border-t border-zinc-200 dark:border-zinc-800">
+        <span className="text-[10px] text-zinc-400 truncate">{copyright ?? '© State Examinations Commission'}</span>
+        <button
+          onClick={() => firstPage && onFullScheme(firstPage)}
+          disabled={!firstPage}
+          className="shrink-0 px-3 py-1.5 rounded-full text-[12px] font-semibold text-[#F26B1F] bg-[#FDEEDF] disabled:opacity-40"
+        >
+          View full scheme →
+        </button>
+      </div>
+    </>
   );
 };
 
