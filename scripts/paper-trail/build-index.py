@@ -126,6 +126,7 @@ ENTRY_NOTES = {
 # accounting-style workings, and passage-numbered languages (Croatian, Hungarian,
 # Spanish…) are DEFERRED — they fail semantic alignment and need dedicated grammar.
 QA_PASSED_ANSWER_PROFILES = {
+    ('lca-sign-language', 'common', 'ev'),
     ('croatian', 'higher', 'ev'),
     ('slovakian', 'higher', 'ev'),
     ('agricultural-economics', 'higher', 'ev'),
