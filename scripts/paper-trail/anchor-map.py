@@ -76,11 +76,16 @@ MIN_QUESTIONS = 3        # a paper needs ≥3 clean questions to be worth mappin
 # fileid grammar (mirrors build-index.py): {LC|JC|LB}{SSS}{LVL}L?P{CCC}{LANG}.pdf
 FILEID_RE = re.compile(r"^(LC|JC|LB)(\d{3})([A-Z])L?P([A-Z0-9]{3})(EV|IV|BV)\.pdf$", re.I)
 
-# Wave-1 scope.
+# Scope. SCOPE_CODES None = all subjects; a set = only those SEC codes (used to
+# extend already-verified subjects to more years without re-mapping the rest).
 SCOPE_EXAM = "LC"
 SCOPE_LEVELS = {"A", "G"}           # higher, ordinary
 SCOPE_LANGS = {"EV"}
-SCOPE_YEARS = set(range(2022, 2026))
+SCOPE_YEARS = set(range(2010, 2026))
+SCOPE_CODES = {
+    "LC003", "LC022", "LC023", "LC024", "LC225", "LC029", "LC014", "LC007",
+    "LC559", "LC038", "LC017", "LC049", "LC557", "LC019", "LC553", "LC558",
+}  # wave-1 verified subjects; set to None to attempt every subject
 # Aural / unprepared-listening / non-level components never carry page questions.
 SKIP_COMPONENTS = {"A00", "U00"}
 
@@ -392,6 +397,8 @@ def build_pairs(rows):
     for r in rows:
         d = decode_fileid(r["fileid"])
         if not d or d["exam"] != SCOPE_EXAM:
+            continue
+        if SCOPE_CODES is not None and d["code"] not in SCOPE_CODES:
             continue
         if d["levelCode"] not in SCOPE_LEVELS or d["lang"] not in SCOPE_LANGS:
             continue

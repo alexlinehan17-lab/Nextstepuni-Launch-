@@ -630,11 +630,14 @@ def main():
                 item["modified"] = True
             # Answer-map flag (Stage 2.5) — only for QA-passed grammar profiles,
             # and only when anchor-map.py actually mapped this paper.
+            _sidecar_local = os.path.join("scripts", "paper-trail", "answers", str(year), f"{p['fileid']}.json")
             if ((year, p["fileid"]) in answer_mapped
-                    and (sid, level, lang) in QA_PASSED_ANSWER_PROFILES):
+                    and (sid, level, lang) in QA_PASSED_ANSWER_PROFILES
+                    and os.path.exists(os.path.join(REPO, _sidecar_local))):
+                # File-existence gate: deleting a drifted year's sidecar cleanly
+                # de-flags it even while its profile stays QA-passed.
                 item["answers"] = 1
-                answer_upload_rows[f"papers/{_cy}/{sid}/{year}/answers/{p['fileid']}.json"] = \
-                    os.path.join("scripts", "paper-trail", "answers", str(year), f"{p['fileid']}.json")
+                answer_upload_rows[f"papers/{_cy}/{sid}/{year}/answers/{p['fileid']}.json"] = _sidecar_local
             entries[sid][(year, level, lang)].append(item)
             bc = bilingual_counts[(sid, year, level, lang)]
             bc[0] += 1 if p["bilingual"] else 0
