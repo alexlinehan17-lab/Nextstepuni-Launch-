@@ -101,7 +101,7 @@ SHORT_ANSWER_TIER = True
 # viewer frames it "opens the scheme near Q N — scroll to find it". Precise maps
 # always win; this only fires where the precise path would otherwise drop, and is
 # written to a SEPARATE manifest so build-index flags it distinctly.
-UNIVERSAL_FALLBACK = True
+UNIVERSAL_FALLBACK = False
 # Subjects already verified + lit in earlier waves. The engine never re-maps or
 # clears these (their committed sidecars are final), so each new wave is additive.
 DONE_CODES = {
@@ -648,13 +648,14 @@ def map_paper(paper_path, scheme_path, band_strategy, fallback_only=False):
 
 # ─── pairing + band strategy ─────────────────────────────────────────────────
 
-def build_pairs(rows, include_done=False, langs=None):
+def build_pairs(rows, include_done=False, langs=None, levels=None):
     """[(paperRow, schemeRow, band_strategy, levelCode)] for in-scope papers.
     band_strategy = ('whole', component) or ('divider', k, component).
     include_done=True keeps frozen codes too (the navigation-fallback pass covers
-    their unmapped dropped years). langs overrides SCOPE_LANGS (the fallback pass
-    adds IV/BV — Irish-medium + bilingual papers — for navigation chips)."""
+    their unmapped dropped years). langs/levels override SCOPE_LANGS/SCOPE_LEVELS
+    (the fallback pass adds IV/BV + Foundation papers for navigation chips)."""
     langs = langs or SCOPE_LANGS
+    levels = levels or SCOPE_LEVELS
     papers = defaultdict(list)   # (code, year, level, lang) -> [(row, decoded)]
     schemes = defaultdict(list)
     for r in rows:

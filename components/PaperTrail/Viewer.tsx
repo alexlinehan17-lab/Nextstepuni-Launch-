@@ -740,11 +740,7 @@ const RevealContent: React.FC<{
       <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
         <div className="flex-1 min-w-0">
           <p className="text-[14px] font-semibold text-zinc-900 dark:text-white">Question {q.n} · marking scheme</p>
-          <p className="text-[11px] text-zinc-500">
-            {q.conf < 0.5
-              ? `Opens the scheme near question ${q.n} — scroll to find it.`
-              : 'How examiners award the marks — not a model answer.'}
-          </p>
+          <p className="text-[11px] text-zinc-500">How examiners award the marks — not a model answer.</p>
         </div>
         <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
           <X size={18} />
@@ -757,7 +753,11 @@ const RevealContent: React.FC<{
         transition={{ delay: reduced ? 0 : 0.08, duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
         className="flex-1 overflow-auto overscroll-contain px-3 py-3 bg-zinc-100 dark:bg-zinc-950"
       >
-        {schemeErrored ? (
+        {q.mode === 'pagejump' ? (
+          <p className="text-[13px] text-zinc-600 dark:text-zinc-300 text-center py-8 px-4">
+            This question’s answer spans several scheme pages. Open the marking scheme to read it in full.
+          </p>
+        ) : schemeErrored ? (
           <p className="text-[13px] text-zinc-600 dark:text-zinc-300 text-center py-8 px-4">
             Couldn’t load the marking scheme. Open it in the Scheme tab instead.
           </p>
