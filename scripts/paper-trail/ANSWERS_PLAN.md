@@ -16,6 +16,23 @@ real corpus → synthesis → completeness critic). Approach chosen: **Authentic
    maxEntries/maxAge). Reveals work after one online open. Accepted: caches multi-MB scheme
    PDFs on-device + modest egress, within the €50/mo guard.
 
+## Build status (2026-06-13)
+
+- **Phase 0** ✅ Workbox cache rules for Storage PDFs + sidecars (in the built SW).
+- **Phase 1** ✅ `anchor-map.py` engine — 8/8 Maths HL papers fully mapped, 80/80
+  questions, independently audited (zero mis-anchors), `test_anchor_map.py` gate.
+- **Phase 2** ✅ `PaperAnswerMap` contract + `answers:1` flag + sidecar upload +
+  `test/paperTrailAnswers.test.ts`. Flag gated behind `QA_PASSED_ANSWER_PROFILES`.
+- **Phase 3** ✅ Viewer "Answers" toggle + per-question chips.
+- **Phase 4** ✅ `CropView` scheme-region reveal (visual gate + code review passed).
+- **Phase 5** ⏳ Contact sheet generated (`contact-sheet.py`) — **awaiting human
+  sign-off**. On approval: add `("mathematics","higher","ev")` to
+  `QA_PASSED_ANSWER_PROFILES`, re-run `build-index.py`, commit, `upload.py`, deploy.
+
+Everything above is **committed on main but dark** — `QA_PASSED_ANSWER_PROFILES`
+is empty, so `paperTrailData.ts` carries no flags and users see no change until
+Phase 5 sign-off.
+
 ## The one-sentence idea
 
 An **"Answers"** toggle appears on a paper when we have a verified question-map for it.

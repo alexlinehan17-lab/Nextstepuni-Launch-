@@ -11,21 +11,58 @@ notification sent to the SEC.
 |---|---|---|
 | 1. Enumerate | `enumerate.py` | `out/manifest.jsonl` (authoritative archive catalogue) |
 | 2. Download  | `download.py`  | `paper-trail-corpus/` (gitignored), `out/downloads.jsonl` |
-| 3. Index     | `build-index.py` | `paperTrailData.ts`, `out/index-report.md`, `out/upload-manifest.jsonl` |
-| 4. Upload    | `upload.py`    | `gs://nextstepuni-app.firebasestorage.app/papers/**` |
+| 2.5 Anchor maps | `anchor-map.py` | `answers/<year>/<fileid>.json` (committed), `out/answers-manifest.jsonl`, `out/answers-report.md` |
+| 3. Index     | `build-index.py` | `paperTrailData.ts`, `out/index-report.md`, `out/upload-manifest.jsonl`, `out/answers-upload-manifest.jsonl` |
+| 4. Upload    | `upload.py`    | `gs://nextstepuni-app.firebasestorage.app/papers/**` (PDFs + answer sidecars) |
 
 All stages are resume-safe and idempotent. Stage 1–2 are polite: single-thread,
 ~1.6s delay, exponential backoff, identifying User-Agent with contact address.
 
+## "See the answer" — per-question answer maps (Stage 2.5)
+
+`anchor-map.py` precomputes, per in-scope paper, a coordinates-only sidecar that
+lets the viewer drop a CROP of the real marking-scheme region beside each
+question (see `ANSWERS_PLAN.md` for the full design). It ships NO answer text and
+NO image bytes — only page numbers + fractional rects. Sidecars are **committed**
+generated artifacts (CI/deploy have no corpus), at `scripts/paper-trail/answers/`.
+
+Scope is the per-subject **MARKER GRAMMAR** table in `anchor-map.py` (`GRAMMAR`),
+keyed by `(subjectCode, language)`. Adding a subject = adding a table row + a
+contact-sheet review, never a code change. Current pilot: Leaving Cert
+Mathematics Higher Level, Paper 1 + 2, 2022–2025 EV.
+
+The `answers:1` flag (which makes the viewer toggle appear) is gated TWICE:
+`anchor-map.py` must have mapped the paper, AND its `(subjectId, level, lang)`
+profile must be listed in `QA_PASSED_ANSWER_PROFILES` in `build-index.py`. That
+set is empty until a human signs off the contact sheet — so the machinery can be
+merged dark and lit per-profile later.
+
+**Phase 5 QA gate (per grammar profile, before lighting it):**
+1. `python3 anchor-map.py` → check `out/answers-report.md` is all FULL/PARTIAL, 0 dropped.
+2. `python3 test_anchor_map.py` → the deterministic gate (Q1→one anchor, regions in-band, fractions ∈ [0,1]).
+3. `python3 contact-sheet.py` → `out/contact-sheet.pdf`; a human confirms each paper question lines up with its scheme crop (esp. that P1 and P2 pull DIFFERENT bands of the shared scheme).
+4. On sign-off, add the profile to `QA_PASSED_ANSWER_PROFILES`, re-run `build-index.py`, commit, `upload.py`, deploy.
+
 ## Annual refresh (each autumn, when the new year's papers publish)
 
 1. Add the new year to `YEARS` in `enumerate.py`.
-2. Run stages 1→4 in order (1–2 take a few hours; run overnight).
-3. `npx vitest run` (index integrity + JC guards), commit `paperTrailData.ts`,
+2. Run stages 1→4 in order (1–2 take a few hours; run overnight). Stage 2.5
+   (`anchor-map.py`) runs after download, before index — add the new year to
+   `SCOPE_YEARS` if answer maps should cover it.
+3. `npx vitest run` (index integrity + JC guards + answer-sidecar integrity),
+   commit `paperTrailData.ts` + any new `answers/` sidecars,
    `firebase deploy --only hosting`.
 4. Canary: if stage 1 finds zero files for the new year, the SEC's form/URL
    scheme may have changed — check `enumerate.py`'s field names against the
    live form before assuming the year isn't published.
+5. **Answer-map canary (the grammar-drift guard):** after Stage 2.5, check
+   `out/answers-report.md`. If a subject-grammar profile that previously mapped
+   cleanly now shows **0 anchors / DROP** for the new year, the SEC changed that
+   subject's scheme layout — investigate and re-verify a contact sheet BEFORE the
+   new year's `answers` flags ship. Do not auto-extend a profile to a year that
+   tripped the canary. Marker counts alone don't catch a layout whose anchors
+   merely shifted, so the contact-sheet spot-check for at least one new year per
+   profile stays part of the refresh.
 
 Note: current-year files upload with `max-age=86400` (SEC occasionally
 re-issues schemes); when a year stops being current, the next refresh re-uploads
