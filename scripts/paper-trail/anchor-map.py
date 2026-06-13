@@ -348,21 +348,41 @@ def front_matter_end(scheme, band_start, band_end):
 # practical component (Engineering, DCG…). These pages are non-blank and portrait,
 # so the last question's continuation must stop before them rather than swallow a
 # practical-marking grid as if it were the written answer.
+# Phrases are matched against punctuation-normalised text, so "Practical, Marking
+# Scheme" / "Practical - Marking Scheme" / "Engineering Practical" all reduce to a
+# clean space-separated form before the substring test.
 TAIL_BOUNDARY_PHRASES = (
     "practical marking scheme",
     "coursework marking scheme",
     "practical coursework",
     "project marking scheme",
+    "subjective marking",
 )
+# A "Blank Page" filler carries the literal words rather than empty text, so the
+# empty-text blank test misses it — match the normalised page text exactly.
+BLANK_PAGE_TEXTS = {
+    "", "blank page", "this page is intentionally blank",
+    "this page has been left blank intentionally",
+    "this page has been intentionally left blank",
+    "there is no examination material on this page",
+}
+
+
+def _norm_match(s):
+    """Lowercase + collapse every non-alphanumeric run to a single space."""
+    return re.sub(r"[^a-z0-9]+", " ", _deligature(s).lower()).strip()
 
 
 def is_tail_boundary(page):
-    t = _deligature(page.get_text("text")).lower()
+    t = _norm_match(page.get_text("text"))
     return any(p in t for p in TAIL_BOUNDARY_PHRASES)
 
 
 def is_blank(page):
     """A scheme page carrying no answer content (trailing filler/blank)."""
+    # 'Blank Page' / 'no examination material' notices read as text but are filler.
+    if re.sub(r"\d+", "", _norm_match(page.get_text("text"))).strip() in BLANK_PAGE_TEXTS:
+        return True
     if page.get_text("text").strip():
         return False
     if page.get_images():
