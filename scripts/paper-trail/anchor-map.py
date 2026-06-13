@@ -72,6 +72,8 @@ MAX_REGION_PAGES = 6     # a question's scheme region longer than this → pagej
 DIVIDER_TOP_FRAC = 0.5   # a band divider title sits in the top half of its page
 BLANK_MAX_DRAWINGS = 3   # a filler page may carry a footer rule; a real page many
 MIN_QUESTIONS = 3        # a paper needs ≥3 clean questions to be worth mapping
+HEADER_X_TOL = 22        # header x-jitter within one sequence (SEC indents Q1 under a page title)
+MIN_SPREAD_FRAC = 0.5    # paper chips AND scheme regions must each span ≥ this·N distinct pages
 
 # fileid grammar (mirrors build-index.py): {LC|JC|LB}{SSS}{LVL}L?P{CCC}{LANG}.pdf
 FILEID_RE = re.compile(r"^(LC|JC|LB)(\d{3})([A-Z])L?P([A-Z0-9]{3})(EV|IV|BV)\.pdf$", re.I)
@@ -97,6 +99,8 @@ DONE_CODES = {
     # wave 6 (Computer Science, JC Geography, LCA)
     "LC219", "JC005",
     "LB832", "LB846", "LB810", "LB833", "LB013", "LB847", "LB849", "LB816", "LB835", "LB010", "LB011", "LB850",
+    # wave 7 (Geography Part Two + Engineering, HL+OL — ligature-norm + spread guards)
+    "LC005", "LC027",
 }
 # Aural / unprepared-listening / non-level components never carry page questions.
 SKIP_COMPONENTS = {"A00", "U00"}
@@ -136,6 +140,26 @@ def line_groups(page):
     return list(lines.values())
 
 
+# SEC PDFs frequently extract typographic ligatures as stray glyphs, so the word
+# 'Question' comes out as 'QuesƟon' (ti-ligature) and 'Certificate' as 'Certiϐicate'.
+# Normalise the common ones before matching question-header words — clean PDFs
+# contain none of these so this is a no-op for them.
+_LIGATURES = {
+    "Ɵ": "ti", "Ʃ": "tt", "ϐ": "fi",
+    "ﬀ": "ff", "ﬁ": "fi", "ﬂ": "fl",
+    "ﬃ": "ffi", "ﬄ": "ffl", "ﬅ": "ft", "ﬆ": "st",
+}
+
+
+def _deligature(s):
+    if s.isascii():
+        return s
+    for k, v in _LIGATURES.items():
+        if k in s:
+            s = s.replace(k, v)
+    return s
+
+
 # ─── question-number detectors (return raw [(n, page0, x0, yFrac)]) ──────────
 
 def _det_question_word(doc):
@@ -146,9 +170,11 @@ def _det_question_word(doc):
         H = page.rect.height
         for lw in line_groups(page):
             for i, w in enumerate(lw):
-                if (w[4] in ("Question", "QUESTION") and w[0] < LEFT_MARGIN_X
-                        and i + 1 < len(lw) and re.fullmatch(r"\d+", lw[i + 1][4])):
-                    hits.append((int(lw[i + 1][4]), pi, w[0], w[1] / H))
+                if (_deligature(w[4]) in ("Question", "QUESTION") and w[0] < LEFT_MARGIN_X
+                        and i + 1 < len(lw)):
+                    m = re.fullmatch(r"(\d+)\.?", lw[i + 1][4])  # 'Question 1' or 'Question 1.'
+                    if m:
+                        hits.append((int(m.group(1)), pi, w[0], w[1] / H))
     return hits
 
 
@@ -194,7 +220,7 @@ def best_sequence(hits):
     xs = Counter(round(h[2] / 5) * 5 for h in hits)
     best = None
     for xb, _ in xs.most_common(5):
-        f = [h for h in hits if abs(h[2] - xb) <= 7]
+        f = [h for h in hits if abs(h[2] - xb) <= HEADER_X_TOL]
         f.sort(key=lambda h: (h[1], h[3]))
         first = {}
         for n, pi, x, y in f:
@@ -234,7 +260,7 @@ def _marker_map(hits, band_start, band_end):
     xs = Counter(round(h[2] / 5) * 5 for h in inb)
     best, best_key = {}, (-1, -1)
     for xb, _ in xs.most_common(5):
-        f = [h for h in inb if abs(h[2] - xb) <= 7]
+        f = [h for h in inb if abs(h[2] - xb) <= HEADER_X_TOL]
         f.sort(key=lambda h: (h[1], h[3]))
         starts = [i for i, h in enumerate(f) if h[0] == 1] or [0]
         for si in starts:
@@ -250,10 +276,19 @@ def _marker_map(hits, band_start, band_end):
     return best
 
 
-def detect_scheme_markers(doc, band_start, band_end, want_ns):
-    """The detector whose in-band number-set best covers the paper's questions."""
+def detect_scheme_markers(doc, band_start, band_end, want_ns, paper_det=None):
+    """The detector whose in-band number-set best covers the paper's questions.
+
+    Grammar guard: a 'Question N' scheme marker always heads a major structured
+    answer. A short-answer paper (numbered with a bare 'N.' or 'Q.N') must NOT
+    reconcile against those — its answers live in a compact short-answer key, not
+    the essay solutions. So when the paper is not 'question'-headed we exclude the
+    'question' scheme detector (else e.g. a Geography Part One short-answer book
+    would map onto the Part Two essay scheme and ship a confidently-wrong chip)."""
     best, best_score = {}, -1
-    for _, fn in DETECTORS:
+    for name, fn in DETECTORS:
+        if paper_det is not None and paper_det != "question" and name == "question":
+            continue
         m = _marker_map(fn(doc), band_start, band_end)
         score = len(set(m) & want_ns)
         if score > best_score:
@@ -309,6 +344,23 @@ def front_matter_end(scheme, band_start, band_end):
     return last_fm + 1 if last_fm >= band_start else band_start
 
 
+# Tail appendix that follows the WRITTEN questions in subjects with a coursework /
+# practical component (Engineering, DCG…). These pages are non-blank and portrait,
+# so the last question's continuation must stop before them rather than swallow a
+# practical-marking grid as if it were the written answer.
+TAIL_BOUNDARY_PHRASES = (
+    "practical marking scheme",
+    "coursework marking scheme",
+    "practical coursework",
+    "project marking scheme",
+)
+
+
+def is_tail_boundary(page):
+    t = _deligature(page.get_text("text")).lower()
+    return any(p in t for p in TAIL_BOUNDARY_PHRASES)
+
+
 def is_blank(page):
     """A scheme page carrying no answer content (trailing filler/blank)."""
     if page.get_text("text").strip():
@@ -350,6 +402,14 @@ def map_paper(paper_path, scheme_path, band_strategy):
     want_ns = {h[0] for h in headers}
     N = len(headers)
 
+    # Guard 1 — paper-side spread. If most chips collapse onto one/two pages the
+    # paper has no real per-question headers (the detector matched a contents/
+    # instructions list on the cover). Dropping avoids stacking every chip on the
+    # cover page (old single-booklet Geography, instruction-page papers).
+    if len({h[1] for h in headers}) < max(2, MIN_SPREAD_FRAC * N):
+        stats["reason"] = f"paper headers collapse onto {len({h[1] for h in headers})} pages (chip-on-cover)"
+        return None, stats
+
     # Band for this paper within (possibly shared) scheme.
     if band_strategy[0] == "divider":
         k = band_strategy[1]
@@ -363,7 +423,7 @@ def map_paper(paper_path, scheme_path, band_strategy):
         band_start, band_end = 0, len(scheme)
 
     fm_start = front_matter_end(scheme, band_start, band_end)
-    markers = detect_scheme_markers(scheme, fm_start, band_end, want_ns)
+    markers = detect_scheme_markers(scheme, fm_start, band_end, want_ns, detector)
     matched = sum(1 for n in want_ns if n in markers)
     stats["conf"] = round(matched / N, 3)
     # Strict gate: every paper question must have a scheme marker.
@@ -376,6 +436,15 @@ def map_paper(paper_path, scheme_path, band_strategy):
         stats["reason"] = "scheme markers not monotonic"
         return None, stats
 
+    # Guard 2 — scheme-side spread. If many questions resolve to the same scheme
+    # page the markers collapsed onto a compact short-answer key / summary table,
+    # not per-question solutions (Geography Part One answerbook). Each question
+    # would crop a near-identical band → drop rather than ship look-alike chips.
+    if len({markers[n][0] for n in want_ns}) < max(2, MIN_SPREAD_FRAC * N):
+        stats["reason"] = (f"scheme markers collapse onto "
+                           f"{len({markers[n][0] for n in want_ns})} pages (short-answer key)")
+        return None, stats
+
     # paper question y-band end (next header on same page, else page bottom)
     by_page = defaultdict(list)
     for n, pi, x0, y in headers:
@@ -385,6 +454,16 @@ def map_paper(paper_path, scheme_path, band_strategy):
 
     qout = []
     maxn = max(markers)
+    # The last question has no following marker to bound it. Using the scheme's
+    # last non-blank page over-reaches across appendix/filler pages → the span
+    # blows past MAX_REGION_PAGES and the question degrades to a whole-page jump
+    # that opens at the page TOP (i.e. on the PREVIOUS question's answer when this
+    # question's header sits mid-page). Bound it to the typical per-question span
+    # (median gap between consecutive markers) so it stays a header-anchored crop.
+    sm = sorted(markers)
+    gaps = [markers[sm[i + 1]][0] - markers[sm[i]][0] for i in range(len(sm) - 1)]
+    gaps = [g for g in gaps if g >= 0]
+    typ_span = max(1, min(sorted(gaps)[len(gaps) // 2] if gaps else 1, MAX_REGION_PAGES))
     for n, p_pi, p_x0, p_y in headers:
         same = by_page[p_pi]
         nxt_same = next((yf for yf, nn in same if yf > p_y + 1e-6), 1.0)
@@ -396,7 +475,15 @@ def map_paper(paper_path, scheme_path, band_strategy):
         if end is not None and end > (s_pi, s_yfrac):
             e_pi, e_yfrac = end
         elif n == maxn:
-            e_pi, e_yfrac = last_nonblank_page(scheme, s_pi, band_end), 1.0
+            # Extend only across clean consecutive continuation pages, stopping at
+            # the first blank or rotated page (schemes append landscape marks-total
+            # / filler pages after the last answer — including them forces pagejump).
+            e_pi = s_pi
+            while (e_pi + 1 < band_end and e_pi - s_pi < typ_span
+                   and not is_blank(scheme[e_pi + 1]) and not scheme[e_pi + 1].rotation
+                   and not is_tail_boundary(scheme[e_pi + 1])):
+                e_pi += 1
+            e_yfrac = 1.0
         else:
             degrade = True
             e_pi, e_yfrac = s_pi, 1.0
