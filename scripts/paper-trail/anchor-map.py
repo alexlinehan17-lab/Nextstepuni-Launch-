@@ -610,8 +610,10 @@ def map_paper(paper_path, scheme_path, band_strategy, fallback_only=False):
         elif 0 < span <= MAX_REGION_PAGES:
             region.append({"p": s_pi + 1, "r": [0.0, round(s_yfrac, 4), 1.0, 1.0]})
             for mid in range(s_pi + 1, e_pi):
-                region.append({"p": mid + 1, "r": [0.0, 0.0, 1.0, 1.0]})
-            region.append({"p": e_pi + 1, "r": [0.0, 0.0, 1.0, round(e_yfrac, 4)]})
+                if not is_blank(scheme[mid]):  # never crop a blank scheme page
+                    region.append({"p": mid + 1, "r": [0.0, 0.0, 1.0, 1.0]})
+            if not is_blank(scheme[e_pi]):
+                region.append({"p": e_pi + 1, "r": [0.0, 0.0, 1.0, round(e_yfrac, 4)]})
         else:
             ok = False
 
