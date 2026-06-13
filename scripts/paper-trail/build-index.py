@@ -120,7 +120,7 @@ ENTRY_NOTES = {
 # profile appears here ONLY after its contact-sheet human review passes (Phase 5).
 # Empty = the answer machinery is wired but no `answers` flags ship yet, so the
 # viewer toggle stays absent everywhere. Phase 5 adds e.g. ("mathematics","higher","ev").
-QA_PASSED_ANSWER_PROFILES = set()
+QA_PASSED_ANSWER_PROFILES = {("mathematics", "higher", "ev")}  # PREVIEW: Maths HL pilot
 
 # ─── Hand-written subject knowledge ──────────────────────────────────────────
 

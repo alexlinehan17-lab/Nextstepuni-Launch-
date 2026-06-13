@@ -25,13 +25,16 @@ real corpus → synthesis → completeness critic). Approach chosen: **Authentic
   `test/paperTrailAnswers.test.ts`. Flag gated behind `QA_PASSED_ANSWER_PROFILES`.
 - **Phase 3** ✅ Viewer "Answers" toggle + per-question chips.
 - **Phase 4** ✅ `CropView` scheme-region reveal (visual gate + code review passed).
-- **Phase 5** ⏳ Contact sheet generated (`contact-sheet.py`) — **awaiting human
-  sign-off**. On approval: add `("mathematics","higher","ev")` to
-  `QA_PASSED_ANSWER_PROFILES`, re-run `build-index.py`, commit, `upload.py`, deploy.
+- **Phase 5** ✅ **SHIPPED LIVE (2026-06-13)** — founder approved live deploy (no
+  students until September launch). `("mathematics","higher","ev")` added to
+  `QA_PASSED_ANSWER_PROFILES`; 8 sidecars uploaded to Storage; deployed to
+  `https://nextstepuni-app.web.app`. Maths HL P1+P2 2022–25 now show the Answers
+  toggle; every other paper is unchanged. Founder reviewing live, will advise
+  changes.
 
-Everything above is **committed on main but dark** — `QA_PASSED_ANSWER_PROFILES`
-is empty, so `paperTrailData.ts` carries no flags and users see no change until
-Phase 5 sign-off.
+Coverage beyond the pilot stays narrow-and-slow by design: each new subject is a
+`GRAMMAR` row + a contact-sheet review + adding its profile to
+`QA_PASSED_ANSWER_PROFILES`. Unmapped papers behave exactly as before.
 
 ## The one-sentence idea
 
