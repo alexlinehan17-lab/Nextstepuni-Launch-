@@ -120,7 +120,36 @@ ENTRY_NOTES = {
 # profile appears here ONLY after its contact-sheet human review passes (Phase 5).
 # Empty = the answer machinery is wired but no `answers` flags ship yet, so the
 # viewer toggle stays absent everywhere. Phase 5 adds e.g. ("mathematics","higher","ev").
-QA_PASSED_ANSWER_PROFILES = {("mathematics", "higher", "ev")}  # PREVIEW: Maths HL pilot
+# Wave-1 (2026-06-13): 16 subjects verified by per-subject adversarial agents +
+# region-rect spot-checks against the real PDFs. Sciences/structured + EU
+# languages with clean question↔scheme alignment. Essays (English, History),
+# accounting-style workings, and passage-numbered languages (Croatian, Hungarian,
+# Spanish…) are DEFERRED — they fail semantic alignment and need dedicated grammar.
+QA_PASSED_ANSWER_PROFILES = {
+    ("agricultural-science", "higher", "ev"),
+    ("agricultural-science", "ordinary", "ev"),
+    ("ancient-greek", "higher", "ev"),
+    ("ancient-greek", "ordinary", "ev"),
+    ("art", "higher", "ev"),
+    ("art", "ordinary", "ev"),
+    ("bulgarian", "higher", "ev"),
+    ("chemistry", "higher", "ev"),
+    ("chemistry", "ordinary", "ev"),
+    ("construction-studies", "higher", "ev"),
+    ("danish", "higher", "ev"),
+    ("dutch", "higher", "ev"),
+    ("finnish", "higher", "ev"),
+    ("maltese", "higher", "ev"),
+    ("mathematics", "higher", "ev"),
+    ("mathematics", "ordinary", "ev"),
+    ("modern-greek", "higher", "ev"),
+    ("physical-education", "higher", "ev"),
+    ("physical-education", "ordinary", "ev"),
+    ("physics-and-chemistry", "higher", "ev"),
+    ("physics-and-chemistry", "ordinary", "ev"),
+    ("romanian", "higher", "ev"),
+    ("slovenian", "higher", "ev"),
+}
 
 # ─── Hand-written subject knowledge ──────────────────────────────────────────
 
