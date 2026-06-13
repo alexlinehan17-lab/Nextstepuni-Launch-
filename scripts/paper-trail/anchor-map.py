@@ -93,6 +93,15 @@ SCOPE_CODES = None  # which codes to ATTEMPT this run; None = all not in DONE_CO
 # gate already rejects 2-column interleaved keys. Gated by adversarial verification
 # + QA_PASSED before anything ships.
 SHORT_ANSWER_TIER = True
+# Universal navigation fallback. Goal: EVERY paper that has detectable questions
+# AND a marking scheme gets a per-question chip — even when precise crop/page-jump
+# mapping fails (essays with mixed scheme grammar, languages with aural sections…).
+# It never claims an exact answer (that would be confidently wrong); each chip is a
+# conf=0.3 page-jump to the scheme region PROPORTIONALLY near that question, and the
+# viewer frames it "opens the scheme near Q N — scroll to find it". Precise maps
+# always win; this only fires where the precise path would otherwise drop, and is
+# written to a SEPARATE manifest so build-index flags it distinctly.
+UNIVERSAL_FALLBACK = True
 # Subjects already verified + lit in earlier waves. The engine never re-maps or
 # clears these (their committed sidecars are final), so each new wave is additive.
 DONE_CODES = {
@@ -424,6 +433,40 @@ def last_nonblank_page(doc, start, band_end):
     return e
 
 
+def fallback_chips(headers, yband, scheme, band_start, band_end,
+                   paper_path, scheme_path, band_strategy, stats):
+    """Universal navigation fallback: a per-question chip for every detected paper
+    question, page-jumping PROPORTIONALLY into the scheme's answer region. Never a
+    crop and never an exact-answer claim (conf 0.3) — the viewer frames it as "opens
+    the scheme near Q N". Used only where the precise path drops but the paper has
+    real per-question headers + a scheme."""
+    if not UNIVERSAL_FALLBACK:
+        return None
+    # SEC schemes always open with a cover + a "Note to teachers" page before any
+    # answers, so never let the proportional region start before page 3 (index 2).
+    lo = max(front_matter_end(scheme, band_start, band_end), min(band_start + 2, band_end - 1))
+    hi = last_nonblank_page(scheme, lo, band_end)
+    apages = max(1, hi - lo + 1)
+    hs = sorted(headers, key=lambda h: h[0])
+    N = len(hs)
+    qout = []
+    for idx, (n, p_pi, p_x0, p_y) in enumerate(hs):
+        sp = lo + min(apages - 1, idx * apages // N)
+        if scheme[sp].rotation:
+            sp = next((p for p in range(sp, hi + 1) if not scheme[p].rotation), sp)
+        qout.append({"n": str(n), "pP": p_pi + 1, "pY": yband(p_pi, p_y),
+                     "region": [{"p": sp + 1}], "mode": "pagejump", "conf": 0.3})
+    if not qout:
+        return None
+    stats["pagejump"] = len(qout)
+    stats["fallback"] = True
+    return {"v": SIDECAR_V, "paperFileid": os.path.basename(paper_path),
+            "schemeFileid": os.path.basename(scheme_path),
+            "component": band_strategy[2] if len(band_strategy) > 2 else "",
+            "band": [band_start + 1, band_end + 1], "copyright": COPYRIGHT,
+            "fallback": 1, "q": qout}
+
+
 # ─── per-paper mapping ───────────────────────────────────────────────────────
 
 def map_paper(paper_path, scheme_path, band_strategy):
@@ -456,13 +499,33 @@ def map_paper(paper_path, scheme_path, band_strategy):
         stats["reason"] = f"paper headers collapse onto {paper_pages} pages (chip-on-cover)"
         return None, stats
 
+    # paper question y-band end (next header on same page, else page bottom)
+    by_page = defaultdict(list)
+    for n, pi, x0, y in headers:
+        by_page[pi].append((y, n))
+    for pi in by_page:
+        by_page[pi].sort()
+
+    def paper_yband(p_pi, p_y):
+        nxt = next((yf for yf, nn in by_page[p_pi] if yf > p_y + 1e-6), 1.0)
+        return [round(p_y, 4), round(nxt, 4)]
+
+    def drop(reason):
+        """Drop to the universal navigation fallback (or None if disabled)."""
+        stats["reason"] = reason
+        bs, be = (0, len(scheme))
+        if band_strategy[0] != "divider":
+            bs, be = 0, len(scheme)
+        fb = fallback_chips(headers, paper_yband, scheme, bs, be,
+                            paper_path, scheme_path, band_strategy, stats)
+        return (fb, stats)
+
     # Band for this paper within (possibly shared) scheme.
     if band_strategy[0] == "divider":
         k = band_strategy[1]
         band_start = find_band(scheme, f"Paper {k}")
         if band_start is None:
-            stats["reason"] = f"band 'Paper {k}' not found"
-            return None, stats
+            return drop(f"band 'Paper {k}' not found")
         nxt = find_band(scheme, f"Paper {k + 1}")
         band_end = nxt if (nxt is not None and nxt > band_start) else len(scheme)
     else:
@@ -474,24 +537,11 @@ def map_paper(paper_path, scheme_path, band_strategy):
     stats["conf"] = round(matched / N, 3)
     # Strict gate: every paper question must have a scheme marker.
     if matched < N:
-        stats["reason"] = f"count reconcile {matched}/{N} (detector {detector})"
-        return None, stats
+        return drop(f"count reconcile {matched}/{N} (detector {detector})")
     seq_pts = [markers[n] for n in sorted(markers) if n in want_ns]
     mono = all(seq_pts[i] < seq_pts[i + 1] for i in range(len(seq_pts) - 1))
     if not mono:
-        stats["reason"] = "scheme markers not monotonic"
-        return None, stats
-
-    # paper question y-band end (next header on same page, else page bottom)
-    by_page = defaultdict(list)
-    for n, pi, x0, y in headers:
-        by_page[pi].append((y, n))
-    for pi in by_page:
-        by_page[pi].sort()
-
-    def paper_yband(p_pi, p_y):
-        nxt = next((yf for yf, nn in by_page[p_pi] if yf > p_y + 1e-6), 1.0)
-        return [round(p_y, 4), round(nxt, 4)]
+        return drop("scheme markers not monotonic")
 
     # Guard 2 — scheme-side spread. If many questions resolve to the same scheme
     # page the markers collapsed onto a compact short-answer key / summary table.

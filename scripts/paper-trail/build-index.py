@@ -460,15 +460,22 @@ def main():
     # waves), keyed (year, paperFileid). Scanning the files (not a per-run
     # manifest) means pruning a drifted year's sidecar de-flags it, and each wave
     # only adds files — no manifest bookkeeping.
-    answer_mapped = set()  # (year, paperFileid)
+    answer_mapped = set()    # (year, paperFileid) — verified per-question crop maps
+    answer_fallback = set()  # (year, paperFileid) — universal navigation fallback
     answers_root = os.path.join(HERE, "answers")
     if os.path.isdir(answers_root):
         for yd in os.listdir(answers_root):
             ydp = os.path.join(answers_root, yd)
             if yd.isdigit() and os.path.isdir(ydp):
                 for fn in os.listdir(ydp):
-                    if fn.endswith(".json"):
-                        answer_mapped.add((int(yd), fn[:-5]))  # strip .json → paperFileid
+                    if not fn.endswith(".json"):
+                        continue
+                    key = (int(yd), fn[:-5])  # strip .json → paperFileid
+                    try:
+                        is_fb = json.load(open(os.path.join(ydp, fn))).get("fallback") == 1
+                    except (OSError, json.JSONDecodeError):
+                        is_fb = False
+                    (answer_fallback if is_fb else answer_mapped).add(key)
 
     subjects_json = {}
     if os.path.exists(SUBJECTS_JSON):
@@ -699,11 +706,14 @@ def main():
             # Answer-map flag (Stage 2.5) — only for QA-passed grammar profiles,
             # and only when anchor-map.py actually mapped this paper.
             _sidecar_local = os.path.join("scripts", "paper-trail", "answers", str(year), f"{p['fileid']}.json")
-            if ((year, p["fileid"]) in answer_mapped
-                    and (sid, level, lang) in QA_PASSED_ANSWER_PROFILES
-                    and os.path.exists(os.path.join(REPO, _sidecar_local))):
-                # File-existence gate: deleting a drifted year's sidecar cleanly
-                # de-flags it even while its profile stays QA-passed.
+            _key = (year, p["fileid"])
+            _precise = _key in answer_mapped and (sid, level, lang) in QA_PASSED_ANSWER_PROFILES
+            _fallback = _key in answer_fallback
+            if ((_precise or _fallback) and os.path.exists(os.path.join(REPO, _sidecar_local))):
+                # Precise crop maps are gated by QA_PASSED; the universal navigation
+                # fallback (sidecar "fallback":1) ships ungated — it never claims an
+                # exact answer, just a per-question jump near it. File-existence gate:
+                # deleting a sidecar cleanly de-flags it.
                 item["answers"] = 1
                 answer_upload_rows[f"papers/{_cy}/{sid}/{year}/answers/{p['fileid']}.json"] = _sidecar_local
             entries[sid][(year, level, lang)].append(item)
