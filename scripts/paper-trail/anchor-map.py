@@ -259,6 +259,35 @@ def find_band(scheme, divider_title):
     return None
 
 
+# SEC marking-scheme front-matter boilerplate. Schemes that prefix a numbered
+# general-instructions / outline / summary / contents block reuse 1., 2., 3.…
+# before the real per-question solutions restart — so we skip past it before
+# detecting scheme markers. Clean schemes contain none of these → no change.
+FRONT_MATTER_PHRASES = (
+    "in considering this marking scheme",
+    "only key words are given",
+    "only key phrases are given",
+    "the following points should be noted",
+    "summary of marking scheme",
+    "summary of marks",
+    "outline marking scheme",
+    "general guidelines",
+    "table of contents",
+)
+
+
+def front_matter_end(scheme, band_start, band_end):
+    """First 0-based page of real solutions: skip past any numbered front-matter
+    block (instructions/outline/summary/contents) in the band's first pages.
+    Returns band_start when there is no front matter — unchanged for clean schemes."""
+    last_fm = -1
+    for pi in range(band_start, min(band_start + 8, band_end)):
+        t = scheme[pi].get_text("text").lower()
+        if any(p in t for p in FRONT_MATTER_PHRASES):
+            last_fm = pi
+    return last_fm + 1 if last_fm >= band_start else band_start
+
+
 def is_blank(page):
     """A scheme page carrying no answer content (trailing filler/blank)."""
     if page.get_text("text").strip():
@@ -312,7 +341,8 @@ def map_paper(paper_path, scheme_path, band_strategy):
     else:
         band_start, band_end = 0, len(scheme)
 
-    markers = detect_scheme_markers(scheme, band_start, band_end, want_ns)
+    fm_start = front_matter_end(scheme, band_start, band_end)
+    markers = detect_scheme_markers(scheme, fm_start, band_end, want_ns)
     matched = sum(1 for n in want_ns if n in markers)
     stats["conf"] = round(matched / N, 3)
     # Strict gate: every paper question must have a scheme marker.
