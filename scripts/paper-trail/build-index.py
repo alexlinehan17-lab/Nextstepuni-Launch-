@@ -136,6 +136,7 @@ QA_PASSED_ANSWER_PROFILES = {
     ("chemistry", "higher", "ev"),
     ("chemistry", "ordinary", "ev"),
     ("construction-studies", "higher", "ev"),
+    ("construction-studies", "ordinary", "ev"),
     ("danish", "higher", "ev"),
     ("dutch", "higher", "ev"),
     ("finnish", "higher", "ev"),
