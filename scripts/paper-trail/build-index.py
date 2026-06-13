@@ -126,6 +126,11 @@ ENTRY_NOTES = {
 # accounting-style workings, and passage-numbered languages (Croatian, Hungarian,
 # Spanish…) are DEFERRED — they fail semantic alignment and need dedicated grammar.
 QA_PASSED_ANSWER_PROFILES = {
+    ('agricultural-economics', 'higher', 'ev'),
+    ('agricultural-economics', 'ordinary', 'ev'),
+    ('swedish', 'higher', 'ev'),
+    ('technology', 'higher', 'ev'),
+    ('technology', 'ordinary', 'ev'),
     ('accounting', 'higher', 'ev'),
     ('accounting', 'ordinary', 'ev'),
     ('agricultural-science', 'higher', 'ev'),

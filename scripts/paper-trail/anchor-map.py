@@ -85,6 +85,14 @@ SCOPE_LEVELS = {"A", "G", "C"}      # higher, ordinary, common
 SCOPE_LANGS = {"EV"}
 SCOPE_YEARS = set(range(2010, 2026))
 SCOPE_CODES = None  # which codes to ATTEMPT this run; None = all not in DONE_CODES
+# Short-answer crop tier. When a paper reconciles fully + monotonically but its
+# scheme answers cluster (≈3 per page → fails the scheme-spread crop guard), allow
+# the crop loop to emit a TIGHT per-question Y-band crop within the shared page
+# (Q5 = [y5, y6]) instead of dropping — "click to see what the scheme says" for
+# short-answer subjects (Technology, Ag Economics, Swedish reading…). The monotonic
+# gate already rejects 2-column interleaved keys. Gated by adversarial verification
+# + QA_PASSED before anything ships.
+SHORT_ANSWER_TIER = True
 # Subjects already verified + lit in earlier waves. The engine never re-maps or
 # clears these (their committed sidecars are final), so each new wave is additive.
 DONE_CODES = {
@@ -104,6 +112,8 @@ DONE_CODES = {
     # wave 8 (Applied Maths, Home Ec, English P2, Accounting, Business Section 1 —
     # colon/centered-header detection; per-paper agent-verified subsets only)
     "LC020", "LC098", "LC002", "LC032", "LC033",
+    # wave 9 (short-answer crop tier — Technology, Swedish, Agri Economics)
+    "LC065", "LC039", "LC026",
 }
 # Aural / unprepared-listening / non-level components never carry page questions.
 SKIP_COMPONENTS = {"A00", "U00"}
@@ -437,9 +447,13 @@ def map_paper(paper_path, scheme_path, band_strategy):
     # Guard 1 — paper-side spread. If most chips collapse onto one/two pages the
     # paper has no real per-question headers (the detector matched a contents/
     # instructions list on the cover). Dropping avoids stacking every chip on the
-    # cover page (old single-booklet Geography, instruction-page papers).
-    if len({h[1] for h in headers}) < max(2, MIN_SPREAD_FRAC * N):
-        stats["reason"] = f"paper headers collapse onto {len({h[1] for h in headers})} pages (chip-on-cover)"
+    # cover page (old single-booklet Geography, instruction-page papers). Short-
+    # answer papers legitimately pack many questions per page, so there we only
+    # reject a true single-page collapse (a cover contents list).
+    paper_pages = len({h[1] for h in headers})
+    paper_floor = 2 if SHORT_ANSWER_TIER else max(2, MIN_SPREAD_FRAC * N)
+    if paper_pages < paper_floor:
+        stats["reason"] = f"paper headers collapse onto {paper_pages} pages (chip-on-cover)"
         return None, stats
 
     # Band for this paper within (possibly shared) scheme.
@@ -468,15 +482,6 @@ def map_paper(paper_path, scheme_path, band_strategy):
         stats["reason"] = "scheme markers not monotonic"
         return None, stats
 
-    # Guard 2 — scheme-side spread. If many questions resolve to the same scheme
-    # page the markers collapsed onto a compact short-answer key / summary table,
-    # not per-question solutions (Geography Part One answerbook). Each question
-    # would crop a near-identical band → drop rather than ship look-alike chips.
-    if len({markers[n][0] for n in want_ns}) < max(2, MIN_SPREAD_FRAC * N):
-        stats["reason"] = (f"scheme markers collapse onto "
-                           f"{len({markers[n][0] for n in want_ns})} pages (short-answer key)")
-        return None, stats
-
     # paper question y-band end (next header on same page, else page bottom)
     by_page = defaultdict(list)
     for n, pi, x0, y in headers:
@@ -484,8 +489,26 @@ def map_paper(paper_path, scheme_path, band_strategy):
     for pi in by_page:
         by_page[pi].sort()
 
+    def paper_yband(p_pi, p_y):
+        nxt = next((yf for yf, nn in by_page[p_pi] if yf > p_y + 1e-6), 1.0)
+        return [round(p_y, 4), round(nxt, 4)]
+
+    # Guard 2 — scheme-side spread. If many questions resolve to the same scheme
+    # page the markers collapsed onto a compact short-answer key / summary table.
+    # The monotonic gate above already rejects 2-column interleaved keys, so a
+    # collapse here with monotonic markers is a single-column SHORT-ANSWER key
+    # whose per-question Y positions are distinct — the crop loop below yields a
+    # tight Y-band crop per question (Q5 = [y5, y6] on the shared page). By default
+    # we still drop (conservative); SHORT_ANSWER_TIER lets it crop, gated by
+    # adversarial verification.
+    scheme_spread = len({markers[n][0] for n in want_ns})
+    short_answer = scheme_spread < max(2, MIN_SPREAD_FRAC * N)
+    if short_answer and not SHORT_ANSWER_TIER:
+        stats["reason"] = f"scheme markers collapse onto {scheme_spread} pages (short-answer key)"
+        return None, stats
+
     qout = []
-    maxn = max(markers)
+    maxn = max(want_ns)  # the PAPER's last question (scheme may carry stray markers beyond it)
     # The last question has no following marker to bound it. Using the scheme's
     # last non-blank page over-reaches across appendix/filler pages → the span
     # blows past MAX_REGION_PAGES and the question degrades to a whole-page jump
@@ -502,10 +525,14 @@ def map_paper(paper_path, scheme_path, band_strategy):
         p_yband = [round(p_y, 4), round(nxt_same, 4)]
 
         s_pi, s_yfrac = markers[n]
-        end = markers.get(n + 1)
+        end = markers.get(n + 1) if n + 1 <= maxn else None  # ignore stray > last-paper-Q markers
         degrade = False
         if end is not None and end > (s_pi, s_yfrac):
             e_pi, e_yfrac = end
+        elif n == maxn and short_answer:
+            # A short answer never spans pages — crop to the bottom of its own page
+            # (extending into the next Section would over-run → needless pagejump).
+            e_pi, e_yfrac = s_pi, 1.0
         elif n == maxn:
             # Extend only across clean consecutive continuation pages, stopping at
             # the first blank or rotated page (schemes append landscape marks-total
