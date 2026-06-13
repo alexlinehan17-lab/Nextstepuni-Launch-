@@ -2,13 +2,17 @@
 
 Per-question marking-scheme answer chips. Status of EVERY SEC subject across the three cycles.
 
-**Live: 54 subjects.** The feature needs a clean per-question text anchor on both the paper and the scheme; subjects below it can't are documented with the reason.
+**Live: 62 subjects.** The feature needs a clean per-question text anchor on both the paper and the scheme; subjects below it can't are documented with the reason.
 
 
 ## Leaving Cert
 
-### ✅ Live (32)
-Agricultural Science, Ancient Greek, Art, Biology, Bulgarian, Chemistry, Computer Science, Construction Studies, Croatian, Czech, Danish, Dutch, Economics, **Engineering**, Finnish, **Geography**, History, Hungarian, Latin, Latvian, Lithuanian, Maltese, Mathematics, Modern Greek, Physical Education, Physics, Physics & Chemistry, Portuguese, Religious Education, Romanian, Slovakian, Slovenian
+### ✅ Live (40)
+**Accounting**, Agricultural Science, Ancient Greek, **Applied Mathematics**, Art, Biology, Bulgarian, **Business**, Chemistry, Computer Science, Construction Studies, Croatian, Czech, Danish, Dutch, Economics, **Engineering**, **English**, Finnish, **Geography**, History, **Home Economics S & S**, Hungarian, Latin, Latvian, Lithuanian, Maltese, Mathematics, Modern Greek, Physical Education, Physics, Physics & Chemistry, Portuguese, Religious Education, Romanian, Slovakian, Slovenian, **Swedish**, **Technology**, **Agricultural Economics**
+
+> Wave 9 (2026-06-13): SHORT-ANSWER CROP TIER — per-question tight Y-band crops where scheme answers pack ~3/page. **Technology** HL+OL 2010–2025, **Swedish** HIGHER (reading comprehension), **Agricultural Economics** HL{2010,2015,2019}+OL{2018,2019}. Languages (Spanish/German/Japanese/Russian/French/Polish) dropped by skeptics as aural/coincidental; Italian dropped (section-restart numbering).
+
+> Wave 8 (2026-06-13): per-paper agent-verified subsets. **Applied Mathematics** HL+OL 2010–2022 (clean `N.` worked solutions). **Home Economics** HL+OL 2020–2025 (Section B Q1–5). **English** HIGHER Paper 2 only (2010, 2012–2016 — literature: grade bands + indicative-material lists per essay question; P1 comprehension/composition not mappable). **Accounting** HL 2018 + OL (worked-solution tables w/ per-line marks). **Business** HIGHER Section 1 short-answer (2020–2022) + 2020 long booklet; the other long booklets reuse Section-1 coords and are dropped. Engine gained colon-marker (`QUESTION 1:`) + centered standalone `QUESTION N` header detection.
 
 > Wave 7 (2026-06-13): **Geography** lights the **Part Two** structured/essay booklet (P043) only — Q1–12, HL+OL, 2020–2025 (the modern split-booklet format). The Part One short-answer answerbook collapses onto a 1-page scheme key and is deliberately dropped, and pre-2020 single-booklet years anchor on the cover. **Engineering** lights HL {2015, 2021–2025} and OL {2010, 2011, 2013–2016, 2018, 2019, 2021, 2023–2025}; the dropped years have a scheme summary-table that bleeds into the count and are dropped rather than mis-mapped. Engine gained ligature-mojibake normalisation (`QuesƟon`→`Question`), a short-answer↔structured grammar guard, paper/scheme spread guards (kills chip-on-cover + short-answer-key collapse), and a header-anchored last-question crop that stops at the practical-marking-scheme appendix.
 
@@ -18,20 +22,15 @@ Agricultural Science, Ancient Greek, Art, Biology, Bulgarian, Chemistry, Compute
 - Mandarin Chinese — aural/listening (Mandarin)
 - Office Admin And Customer — no EV pair (LC Office Admin)
 
-### 🔧 Bespoke grammar needed (24) — deferred (wrong-answer risk if rushed)
-- Accounting — workings-table scheme
-- Agricultural Economics — Q20 number mismatch
-- Applied Mathematics — inconsistent page-header framing across years
+### 🔧 Bespoke / short-answer page-jump tier (19) — under verification
+_Wave 9: Technology + Agricultural Economics now generate per-question page-jump maps (short-answer key); under adversarial verification along with the languages (checked for aural/coincidental mismaps)._
 - Arabic — language, no scheme markers
-- Business — Section/Part long-answers reconcile against a summary/marks table, not the real solutions
 - Classical Studies — 9/16 reconcile
-- English — hierarchical Section/Text/QuestionA-B + essays
 - Estonian — language, scheme-grouped answers
 - French — language
 - German — language
 - Hebrew Studies — language
 - History (Early Modern) — wrong scheme-file pairing in corpus
-- Home Economics S & S — Q12 mis-anchor
 - Italian — language off-by-one
 - Japanese — language
 - Link Modules — needs per-subject grammar
@@ -41,7 +40,6 @@ Agricultural Science, Ancient Greek, Art, Biology, Bulgarian, Chemistry, Compute
 - Russian — language
 - Spanish — language section-restart numbering
 - Swedish — non-monotonic Q1-after-Q6
-- Technology — needs per-subject grammar
 - Ukrainian — language reconcile 6/10
 
 ## Junior Cycle
