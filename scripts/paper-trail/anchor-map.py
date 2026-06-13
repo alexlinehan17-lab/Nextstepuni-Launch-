@@ -219,22 +219,34 @@ def detect_paper_headers(doc):
 
 
 def _marker_map(hits, band_start, band_end):
-    """First in-band occurrence of each number at the modal left-margin x →
-    {n: (page0, yFrac)}."""
+    """In-band scheme markers at the modal left-margin x → {n: (page0, yFrac)}.
+
+    Many schemes carry a numbered SUMMARY / marks-allocation table (all of 1..N
+    clustered on 1-3 pages) IN ADDITION to the real per-question solutions
+    (1..N spread across many pages). First-occurrence-per-number grabs the
+    summary. Instead, for each candidate '1' start we build the monotonic
+    increasing-number/increasing-position run and keep the one that SPREADS
+    across the most scheme pages — the real solutions, not the summary. With a
+    single occurrence per number (the common case) this is just first-occurrence."""
     inb = [h for h in hits if band_start <= h[1] < band_end]
     if not inb:
         return {}
     xs = Counter(round(h[2] / 5) * 5 for h in inb)
-    best = {}
+    best, best_key = {}, (-1, -1)
     for xb, _ in xs.most_common(5):
         f = [h for h in inb if abs(h[2] - xb) <= 7]
         f.sort(key=lambda h: (h[1], h[3]))
-        m = {}
-        for n, pi, x, y in f:
-            if n not in m:
-                m[n] = (pi, y)
-        if len(m) > len(best):
-            best = m
+        starts = [i for i, h in enumerate(f) if h[0] == 1] or [0]
+        for si in starts:
+            m, prev, last_n = {}, (-1, -1.0), 0
+            for n, pi, x, y in f[si:]:
+                if n > last_n and (pi, y) > prev and n not in m:
+                    m[n] = (pi, y)
+                    prev, last_n = (pi, y), n
+            # prefer the most page-spread run (real solutions), then the longest
+            key = (len({p for p, _ in m.values()}), len(m))
+            if key > best_key:
+                best, best_key = m, key
     return best
 
 
