@@ -101,6 +101,9 @@ DONE_CODES = {
     "LB832", "LB846", "LB810", "LB833", "LB013", "LB847", "LB849", "LB816", "LB835", "LB010", "LB011", "LB850",
     # wave 7 (Geography Part Two + Engineering, HL+OL — ligature-norm + spread guards)
     "LC005", "LC027",
+    # wave 8 (Applied Maths, Home Ec, English P2, Accounting, Business Section 1 —
+    # colon/centered-header detection; per-paper agent-verified subsets only)
+    "LC020", "LC098", "LC002", "LC032", "LC033",
 }
 # Aural / unprepared-listening / non-level components never carry page questions.
 SKIP_COMPONENTS = {"A00", "U00"}
@@ -170,11 +173,20 @@ def _det_question_word(doc):
         H = page.rect.height
         for lw in line_groups(page):
             for i, w in enumerate(lw):
-                if (_deligature(w[4]) in ("Question", "QUESTION") and w[0] < LEFT_MARGIN_X
-                        and i + 1 < len(lw)):
-                    m = re.fullmatch(r"(\d+)\.?", lw[i + 1][4])  # 'Question 1' or 'Question 1.'
-                    if m:
-                        hits.append((int(m.group(1)), pi, w[0], w[1] / H))
+                word = _deligature(w[4])
+                if word not in ("Question", "QUESTION") or i + 1 >= len(lw):
+                    continue
+                m = re.fullmatch(r"(\d+)[.:]?", lw[i + 1][4])  # 'Question 1' / '1.' / '1:'
+                if not m:
+                    continue
+                # Left-margin header (the common case) OR a CENTERED standalone
+                # 'QUESTION N' header line — some schemes (Business 'Possible
+                # Responses') centre the real solution headers while a left-margin
+                # numbered SUMMARY table sits earlier; spread-max then prefers the
+                # real, page-spread solutions over the clustered summary.
+                standalone = len(lw) <= 3
+                if w[0] < LEFT_MARGIN_X or (word == "QUESTION" and standalone):
+                    hits.append((int(m.group(1)), pi, w[0], w[1] / H))
     return hits
 
 
