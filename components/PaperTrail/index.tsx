@@ -22,7 +22,7 @@ import { ArrowLeft, Clock3, Search } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { baseName, displayName } from '../shared/subjectNames';
 import Viewer from './Viewer';
-import { paperStoragePath, paperUrl, prettyBytes } from './storage';
+import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
 import { usePaperFinder } from '../../hooks/usePaperFinder';
 import { getBootParam } from '../../utils/bootParams';
 import {
@@ -284,6 +284,12 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     const key = recentKey(view.subjectId, view.year, view.level, view.lang, view.item.doc.f);
     const url = (kind: 'paper' | 'scheme', f: string) =>
       paperUrl(paperStoragePath(subj.cycle, subj.id, view.year, kind, f));
+    // The `answers` flag lives on the index, not on the recents snapshot — look
+    // the live item up so the toggle appears even when re-opened from Recents.
+    const liveItem = (PAPER_TRAIL_INDEX[subj.id] ?? [])
+      .find(e => e.year === view.year && e.level === view.level && e.lang === view.lang)
+      ?.papers.find(p => p.doc.f === view.item.doc.f);
+    const hasAnswers = liveItem?.answers === 1 && !!view.item.scheme;
     return (
       <Viewer
         title={`${displayName(subj.name)} · ${view.year}`}
@@ -293,6 +299,9 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
           view.item.scheme
             ? { url: url('scheme', view.item.scheme.f), label: 'Marking scheme', bytes: view.item.scheme.b }
             : undefined
+        }
+        answersUrl={
+          hasAnswers ? paperUrl(paperAnswersPath(subj.cycle, subj.id, view.year, view.item.doc.f)) : undefined
         }
         initialSide={view.side}
         initialPaperPage={view.paperPage ?? 1}

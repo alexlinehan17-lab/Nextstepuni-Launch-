@@ -19,10 +19,11 @@
  *    transforms which would re-anchor position:fixed.
  */
 
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { ArrowLeft, Download, RotateCcw, ZoomIn, ZoomOut } from 'lucide-react';
+import { ArrowLeft, Download, RotateCcw, Sparkles, X, ZoomIn, ZoomOut } from 'lucide-react';
 import { prettyBytes } from './storage';
+import type { PaperAnswerMap, PaperAnswerQuestion } from '../../types/paperTrail';
 import type { PDFDocumentProxy, PDFPageProxy } from 'pdfjs-dist';
 
 // ─── pdf.js lazy singleton ──────────────────────────────────
@@ -85,6 +86,9 @@ interface ViewerProps {
   /** 1-based starting page per side (from recents). */
   initialPaperPage?: number;
   initialSchemePage?: number;
+  /** Storage URL of this paper's PaperAnswerMap sidecar — present only when a
+   *  verified answer map shipped. Drives the "Answers" toggle + question chips. */
+  answersUrl?: string;
   onClose: () => void;
   /** Reports reading position for recents persistence (debounced upstream). */
   onPosition?: (side: 'paper' | 'scheme', page: number) => void;
@@ -127,6 +131,7 @@ const Viewer: React.FC<ViewerProps> = ({
   initialSide = 'paper',
   initialPaperPage = 1,
   initialSchemePage = 1,
+  answersUrl,
   onClose,
   onPosition,
 }) => {
@@ -135,6 +140,30 @@ const Viewer: React.FC<ViewerProps> = ({
   const [epoch, setEpoch] = useState(0); // bumped on resize/rotation → canvases re-render
   const [, forceRender] = useState(0);
   const bump = useCallback(() => forceRender(n => n + 1), []);
+
+  // ── answers (per-question marking-scheme crops) ──
+  const [answersOn, setAnswersOn] = useState(false);
+  const [answerMap, setAnswerMap] = useState<PaperAnswerMap | null>(null);
+  const [answerState, setAnswerState] = useState<'idle' | 'loading' | 'error'>('idle');
+  const [reveal, setReveal] = useState<PaperAnswerQuestion | null>(null);
+  const schemePrefetched = useRef(false);
+  // Ref mirror so the once-mounted Escape handler sees the live reveal state.
+  const revealRef = useRef<PaperAnswerQuestion | null>(null);
+  revealRef.current = reveal;
+  // "View full scheme" jump target, consumed by the side-switch / restore effects.
+  const pendingSchemeJump = useRef<number | null>(null);
+
+  // page → its question anchors, memoised so Page's React.memo holds across
+  // scroll/zoom re-renders (a fresh filter() each render would defeat it).
+  const anchorsByPage = useMemo(() => {
+    const m = new Map<number, PaperAnswerQuestion[]>();
+    if (answerMap) for (const q of answerMap.q) {
+      const list = m.get(q.pP);
+      if (list) list.push(q);
+      else m.set(q.pP, [q]);
+    }
+    return m;
+  }, [answerMap]);
 
   const sessions = useRef<Record<Side, DocSession>>({
     paper: freshSession(initialPaperPage),
@@ -223,6 +252,58 @@ const Viewer: React.FC<ViewerProps> = ({
     [paper, scheme, bump],
   );
 
+  // Turn the answers overlay on/off; lazily fetch the map and warm the scheme
+  // PDF the first time it's enabled (the crop renders from the scheme doc).
+  const toggleAnswers = useCallback(() => {
+    setReveal(null);
+    setAnswersOn(on => {
+      const next = !on;
+      if (next) {
+        if (!answerMap && answerState !== 'loading' && answersUrl) {
+          setAnswerState('loading');
+          fetch(answersUrl)
+            .then(r => (r.ok ? r.json() : Promise.reject(new Error('answers fetch'))))
+            .then((m: PaperAnswerMap) => {
+              if (mountedRef.current) {
+                setAnswerMap(m);
+                setAnswerState('idle');
+              }
+            })
+            .catch(() => mountedRef.current && setAnswerState('error'));
+        }
+        if (scheme && !sessions.current.scheme.pdf && !sessions.current.scheme.task) load('scheme');
+      }
+      return next;
+    });
+  }, [answerMap, answerState, answersUrl, scheme, load]);
+
+  // Reveal one question's scheme crop. On the FIRST reveal, full-GET the scheme
+  // so the CacheFirst (200-only) rule stores a complete copy for offline reveals.
+  const onReveal = useCallback(
+    (q: PaperAnswerQuestion) => {
+      if (scheme && !schemePrefetched.current) {
+        // Mark done only on success, so a failed warm (offline) retries next tap.
+        fetch(scheme.url)
+          .then(() => {
+            schemePrefetched.current = true;
+          })
+          .catch(() => {});
+      }
+      if (scheme && !sessions.current.scheme.pdf && !sessions.current.scheme.task) load('scheme');
+      setReveal(q);
+    },
+    [scheme, load],
+  );
+
+  // Jump the Scheme side to a given page (the "View full scheme" escape hatch).
+  // Records the target in a ref; the single scroll path (side-switch / restore
+  // effects) honours it, so it never fights the saved-scrollTop restore.
+  const jumpSchemeToPage = useCallback((page: number) => {
+    pendingSchemeJump.current = page;
+    setReveal(null);
+    setSide('scheme');
+  }, []);
+
   useEffect(() => {
     mountedRef.current = true;
     load('paper');
@@ -236,6 +317,14 @@ const Viewer: React.FC<ViewerProps> = ({
     };
   }, []);
 
+  // Scroll the active scroller to a given 1-based page.
+  const jumpToPage = useCallback((p: number) => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    const target = el.querySelector<HTMLElement>(`[data-page="${p}"]`);
+    if (target) el.scrollTo({ top: target.offsetTop - 8 });
+  }, []);
+
   // Side switch: lazy-load the scheme, restore that side's scroll position.
   const prevSide = useRef(side);
   useEffect(() => {
@@ -244,18 +333,36 @@ const Viewer: React.FC<ViewerProps> = ({
     if (prevSide.current !== side) {
       prevSide.current = side;
       requestAnimationFrame(() => {
-        if (scrollerRef.current && s.state === 'ready') {
+        if (!scrollerRef.current || s.state !== 'ready') return;
+        // A pending "View full scheme" jump wins over the saved scroll position.
+        if (side === 'scheme' && pendingSchemeJump.current != null) {
+          jumpToPage(pendingSchemeJump.current);
+          pendingSchemeJump.current = null;
+        } else {
           scrollerRef.current.scrollTop = s.scrollTop;
         }
       });
     }
-  }, [side, load]);
+  }, [side, load, jumpToPage]);
+
+  // Closing/leaving a side dismisses any open answer reveal (it belongs to the
+  // paper side and to the question that was tapped).
+  useEffect(() => {
+    setReveal(null);
+  }, [side]);
 
   // Dialog behaviour: focus, Escape, Tab trap; resize/rotation re-render.
   useEffect(() => {
     headerRef.current?.focus();
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onCloseRef.current();
+      if (e.key === 'Escape') {
+        // An open answer reveal swallows Escape; only then does it close the viewer.
+        if (revealRef.current) {
+          setReveal(null);
+          return;
+        }
+        onCloseRef.current();
+      }
       if (e.key === 'Tab' && rootRef.current) {
         const focusables = rootRef.current.querySelectorAll<HTMLElement>(
           'button:not([disabled]), a[href], input, [tabindex]:not([tabindex="-1"])',
@@ -306,16 +413,18 @@ const Viewer: React.FC<ViewerProps> = ({
     }
   }, [side, bump]);
 
-  const jumpToPage = useCallback((p: number) => {
-    const el = scrollerRef.current;
-    if (!el) return;
-    const target = el.querySelector<HTMLElement>(`[data-page="${p}"]`);
-    if (target) el.scrollTo({ top: target.offsetTop - 8 });
-  }, []);
-
-  // Restore the initial page once a side is first ready.
+  // Restore the initial page once a side is first ready — or honour a pending
+  // "View full scheme" jump that arrived before the scheme finished loading.
   useEffect(() => {
-    if (session.state === 'ready' && !restoredRef.current[side]) {
+    if (session.state !== 'ready') return;
+    if (side === 'scheme' && pendingSchemeJump.current != null) {
+      const p = pendingSchemeJump.current;
+      pendingSchemeJump.current = null;
+      restoredRef.current.scheme = true;
+      requestAnimationFrame(() => jumpToPage(p));
+      return;
+    }
+    if (!restoredRef.current[side]) {
       restoredRef.current[side] = true;
       if (session.page > 1) requestAnimationFrame(() => jumpToPage(session.page));
     }
@@ -376,6 +485,19 @@ const Viewer: React.FC<ViewerProps> = ({
               </button>
             </div>
           )}
+          {answersUrl && side === 'paper' && (
+            <button
+              onClick={toggleAnswers}
+              aria-pressed={answersOn}
+              aria-label="Show marking-scheme answers beside each question"
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[13px] font-semibold transition-all ${
+                answersOn ? 'text-white' : 'text-[#F26B1F] bg-[#FDEEDF]'
+              }`}
+              style={answersOn ? { backgroundColor: '#F26B1F', boxShadow: '0 2px 0 #B54D14' } : undefined}
+            >
+              <Sparkles size={14} /> Answers
+            </button>
+          )}
           <a
             href={activeDoc.url}
             target="_blank"
@@ -409,6 +531,8 @@ const Viewer: React.FC<ViewerProps> = ({
                 zoom={zoom}
                 epoch={epoch}
                 observe={observe}
+                anchors={answersOn && side === 'paper' ? anchorsByPage.get(i + 1) : undefined}
+                onReveal={onReveal}
               />
             ))}
           </div>
@@ -506,8 +630,181 @@ const Viewer: React.FC<ViewerProps> = ({
           </div>
         </div>
       )}
+
+      {/* Answers map fetch status (chips appear once ready). */}
+      {answersOn && side === 'paper' && answerState !== 'idle' && (
+        <div
+          role="status"
+          aria-live="polite"
+          className="absolute left-1/2 -translate-x-1/2 bottom-24 z-[60] px-3 py-1.5 rounded-full text-[12px] font-medium bg-zinc-900/90 text-white shadow-lg"
+        >
+          {answerState === 'loading' ? 'Loading answers…' : 'Couldn’t load answers — try again later.'}
+        </div>
+      )}
+
+      {/* Per-question marking-scheme reveal. */}
+      {reveal && (
+        <RevealSheet
+          q={reveal}
+          schemePdf={sessions.current.scheme.pdf}
+          schemeUrl={scheme?.url}
+          schemeErrored={sessions.current.scheme.state === 'error' || sessions.current.scheme.state === 'unsupported'}
+          copyright={answerMap?.copyright}
+          onClose={() => setReveal(null)}
+          onFullScheme={jumpSchemeToPage}
+        />
+      )}
     </div>,
     document.body,
+  );
+};
+
+// ─── per-question marking-scheme reveal sheet ───────────────
+
+const RevealSheet: React.FC<{
+  q: PaperAnswerQuestion;
+  schemePdf: PDFDocumentProxy | null;
+  schemeUrl?: string;
+  schemeErrored: boolean;
+  copyright?: string;
+  onClose: () => void;
+  onFullScheme: (page: number) => void;
+}> = ({ q, schemePdf, schemeUrl, schemeErrored, copyright, onClose, onFullScheme }) => {
+  const firstPage = q.region[0]?.p;
+  const closeRef = useRef<HTMLButtonElement | null>(null);
+  useEffect(() => {
+    closeRef.current?.focus();
+  }, []);
+  return (
+    <div className="fixed inset-0 z-[110] flex flex-col justify-end" role="dialog" aria-modal="true" aria-label={`Marking scheme for Question ${q.n}`}>
+      <button className="absolute inset-0 bg-black/40" aria-label="Close" tabIndex={-1} onClick={onClose} />
+      <div
+        className="relative bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl flex flex-col max-h-[80vh]"
+        style={{ paddingBottom: 'var(--sab, 0px)' }}
+      >
+        <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+          <div className="flex-1 min-w-0">
+            <p className="text-[14px] font-semibold text-zinc-900 dark:text-white">Question {q.n} · marking scheme</p>
+            <p className="text-[11px] text-zinc-500">How examiners award the marks — not a model answer.</p>
+          </div>
+          <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
+            <X size={18} />
+          </button>
+        </div>
+        <div className="overflow-auto overscroll-contain px-3 py-3 bg-zinc-100 dark:bg-zinc-950">
+          {q.mode === 'pagejump' ? (
+            <p className="text-[13px] text-zinc-600 dark:text-zinc-300 text-center py-8 px-4">
+              This question’s answer spans several scheme pages. Open the marking scheme to read it in full.
+            </p>
+          ) : schemeErrored ? (
+            <p className="text-[13px] text-zinc-600 dark:text-zinc-300 text-center py-8 px-4">
+              Couldn’t load the marking scheme. Open it in the Scheme tab instead.
+            </p>
+          ) : schemePdf ? (
+            <CropView pdf={schemePdf} region={q.region} />
+          ) : (
+            <div role="status" aria-live="polite" className="flex flex-col items-center justify-center gap-2 py-10 text-zinc-400">
+              <div className="w-5 h-5 rounded-full border-2 border-zinc-300 border-t-zinc-500 animate-spin" aria-hidden />
+              <span className="text-[12px]">Loading the marking scheme…</span>
+              {schemeUrl && (
+                <a href={schemeUrl} target="_blank" rel="noopener noreferrer" className="text-[12px] underline underline-offset-2">
+                  Taking too long? Open it in your browser
+                </a>
+              )}
+            </div>
+          )}
+        </div>
+        <div className="shrink-0 flex items-center justify-between gap-2 px-4 py-2.5 border-t border-zinc-200 dark:border-zinc-800">
+          <span className="text-[10px] text-zinc-400 truncate">{copyright ?? '© State Examinations Commission'}</span>
+          <button
+            onClick={() => firstPage && onFullScheme(firstPage)}
+            disabled={!firstPage}
+            className="shrink-0 px-3 py-1.5 rounded-full text-[12px] font-semibold text-[#F26B1F] bg-[#FDEEDF] disabled:opacity-40"
+          >
+            View full scheme →
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// ─── clipped scheme-region renderer ─────────────────────────
+//
+// Renders each region segment (a fractional rect of a scheme page) as its own
+// canvas, stacked vertically — the student sees a continuous crop of the real
+// scheme. Reuses the page-render → offscreen → blit pattern and the canvas-pixel
+// clamp from the main viewer.
+
+const CropView: React.FC<{ pdf: PDFDocumentProxy; region: PaperAnswerQuestion['region'] }> = ({ pdf, region }) => {
+  const hostRef = useRef<HTMLDivElement | null>(null);
+  const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    let task: { promise: Promise<void>; cancel: () => void } | null = null;
+    const host = hostRef.current;
+    if (!host) return;
+    host.replaceChildren();
+    setFailed(false);
+    (async () => {
+      try {
+        const cssWidth = Math.min(host.clientWidth || 320, 900);
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        for (const seg of region) {
+          if (cancelled) return;
+          const page = await pdf.getPage(seg.p);
+          if (cancelled) {
+            page.cleanup();
+            return;
+          }
+          const base = page.getViewport({ scale: 1 });
+          const r = seg.r ?? [0, 0, 1, 1];
+          const clipW = (r[2] - r[0]) * base.width;
+          const clipH = (r[3] - r[1]) * base.height;
+          if (clipW <= 0 || clipH <= 0) {
+            page.cleanup();
+            continue;
+          }
+          let scale = (cssWidth / clipW) * dpr;
+          const pixels = clipW * scale * (clipH * scale);
+          if (pixels > MAX_CANVAS_PIXELS) scale *= Math.sqrt(MAX_CANVAS_PIXELS / pixels);
+          const vp = page.getViewport({ scale });
+          const canvas = document.createElement('canvas');
+          canvas.width = Math.floor(clipW * scale);
+          canvas.height = Math.floor(clipH * scale);
+          // Shift the page so the clip rect's top-left lands at canvas (0,0).
+          const transform = [1, 0, 0, 1, -r[0] * base.width * scale, -r[1] * base.height * scale];
+          task = page.render({ canvas, viewport: vp, transform });
+          await task.promise;
+          task = null;
+          if (cancelled) {
+            page.cleanup();
+            return;
+          }
+          canvas.className = 'block w-full h-auto rounded-md shadow-sm mb-2 bg-white';
+          canvas.style.maxWidth = `${Math.floor((clipW * scale) / dpr)}px`;
+          canvas.setAttribute('role', 'img');
+          canvas.setAttribute('aria-label', `Marking scheme page ${seg.p}, shown as an image — © State Examinations Commission`);
+          host.appendChild(canvas);
+          page.cleanup();
+        }
+      } catch (e) {
+        // a cancelled render rejects routinely — only surface real failures
+        if (!cancelled && e instanceof Error && e.name !== 'RenderingCancelledException') setFailed(true);
+      }
+    })();
+    return () => {
+      cancelled = true;
+      task?.cancel();
+    };
+  }, [pdf, region]);
+
+  return (
+    <div>
+      <div ref={hostRef} className="mx-auto max-w-[900px]" />
+      {failed && <p className="text-[12px] text-zinc-500 text-center py-4">Couldn’t render this region — open the full scheme.</p>}
+    </div>
   );
 };
 
@@ -519,7 +816,9 @@ const Page: React.FC<{
   zoom: number;
   epoch: number;
   observe: (el: Element, cb: (near: boolean) => void) => () => void;
-}> = React.memo(({ pdf, pageNumber, zoom, epoch, observe }) => {
+  anchors?: PaperAnswerQuestion[];
+  onReveal?: (q: PaperAnswerQuestion) => void;
+}> = React.memo(({ pdf, pageNumber, zoom, epoch, observe, anchors, onReveal }) => {
   const holderRef = useRef<HTMLDivElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const pageRef = useRef<PDFPageProxy | null>(null);
@@ -601,6 +900,22 @@ const Page: React.FC<{
       aria-label={`Page ${pageNumber}`}
     >
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+      {/* Per-question "See answer" chips — fractional top rides zoom + virtualisation. */}
+      {anchors?.map(q => (
+        <button
+          key={`${q.pP}-${q.n}`}
+          onClick={() => onReveal?.(q)}
+          className="absolute right-0 z-10 flex items-center gap-1 pl-2 pr-2.5 py-1 rounded-l-full text-[11px] font-bold text-white"
+          style={{
+            top: `${Math.min(0.97, Math.max(0, q.pY[0])) * 100}%`,
+            backgroundColor: '#F26B1F',
+            boxShadow: '0 1px 5px rgba(0,0,0,.28)',
+          }}
+          aria-label={`See the marking scheme answer for Question ${q.n}`}
+        >
+          <Sparkles size={11} /> Answer
+        </button>
+      ))}
       {failed && (
         <button
           onClick={() => {
