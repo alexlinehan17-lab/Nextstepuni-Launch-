@@ -96,7 +96,7 @@ DONE_CODES = {
     "JC003", "JC002", "JC057", "JC042", "JC052", "JC223", "JC046", "JC126", "JC565",
     # wave 6 (Computer Science, JC Geography, LCA)
     "LC219", "JC005",
-    "LB832", "LB846", "LB810", "LB833", "LB013", "LB847", "LB849", "LB816", "LB835", "LB010", "LB011",
+    "LB832", "LB846", "LB810", "LB833", "LB013", "LB847", "LB849", "LB816", "LB835", "LB010", "LB011", "LB850",
 }
 # Aural / unprepared-listening / non-level components never carry page questions.
 SKIP_COMPONENTS = {"A00", "U00"}
@@ -276,6 +276,12 @@ FRONT_MATTER_PHRASES = (
     "outline marking scheme",
     "general guidelines",
     "table of contents",
+    # LCA / answer-book instruction pages
+    "candidates must attempt",
+    "candidates should answer",
+    "write your examination number",
+    "write all answers",
+    "general directions",
 )
 
 
