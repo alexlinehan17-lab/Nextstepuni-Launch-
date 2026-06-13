@@ -126,30 +126,47 @@ ENTRY_NOTES = {
 # accounting-style workings, and passage-numbered languages (Croatian, Hungarian,
 # Spanish…) are DEFERRED — they fail semantic alignment and need dedicated grammar.
 QA_PASSED_ANSWER_PROFILES = {
-    ("agricultural-science", "higher", "ev"),
-    ("agricultural-science", "ordinary", "ev"),
-    ("ancient-greek", "higher", "ev"),
-    ("ancient-greek", "ordinary", "ev"),
-    ("art", "higher", "ev"),
-    ("art", "ordinary", "ev"),
-    ("bulgarian", "higher", "ev"),
-    ("chemistry", "higher", "ev"),
-    ("chemistry", "ordinary", "ev"),
-    ("construction-studies", "higher", "ev"),
-    ("construction-studies", "ordinary", "ev"),
-    ("danish", "higher", "ev"),
-    ("dutch", "higher", "ev"),
-    ("finnish", "higher", "ev"),
-    ("maltese", "higher", "ev"),
-    ("mathematics", "higher", "ev"),
-    ("mathematics", "ordinary", "ev"),
-    ("modern-greek", "higher", "ev"),
-    ("physical-education", "higher", "ev"),
-    ("physical-education", "ordinary", "ev"),
-    ("physics-and-chemistry", "higher", "ev"),
-    ("physics-and-chemistry", "ordinary", "ev"),
-    ("romanian", "higher", "ev"),
-    ("slovenian", "higher", "ev"),
+    ('agricultural-science', 'higher', 'ev'),
+    ('agricultural-science', 'ordinary', 'ev'),
+    ('ancient-greek', 'higher', 'ev'),
+    ('ancient-greek', 'ordinary', 'ev'),
+    ('art', 'higher', 'ev'),
+    ('art', 'ordinary', 'ev'),
+    ('biology', 'higher', 'ev'),
+    ('biology', 'ordinary', 'ev'),
+    ('bulgarian', 'higher', 'ev'),
+    ('chemistry', 'higher', 'ev'),
+    ('chemistry', 'ordinary', 'ev'),
+    ('construction-studies', 'higher', 'ev'),
+    ('construction-studies', 'ordinary', 'ev'),
+    ('croatian', 'higher', 'ev'),
+    ('czech', 'higher', 'ev'),
+    ('danish', 'higher', 'ev'),
+    ('dutch', 'higher', 'ev'),
+    ('economics', 'higher', 'ev'),
+    ('economics', 'ordinary', 'ev'),
+    ('finnish', 'higher', 'ev'),
+    ('history', 'higher', 'ev'),
+    ('hungarian', 'higher', 'ev'),
+    ('latin', 'ordinary', 'ev'),
+    ('latvian', 'higher', 'ev'),
+    ('lithuanian', 'higher', 'ev'),
+    ('maltese', 'higher', 'ev'),
+    ('mathematics', 'higher', 'ev'),
+    ('mathematics', 'ordinary', 'ev'),
+    ('modern-greek', 'higher', 'ev'),
+    ('physical-education', 'higher', 'ev'),
+    ('physical-education', 'ordinary', 'ev'),
+    ('physics', 'higher', 'ev'),
+    ('physics', 'ordinary', 'ev'),
+    ('physics-and-chemistry', 'higher', 'ev'),
+    ('physics-and-chemistry', 'ordinary', 'ev'),
+    ('portuguese', 'higher', 'ev'),
+    ('religious-education', 'ordinary', 'ev'),
+    ('romanian', 'higher', 'ev'),
+    ('slovakian', 'higher', 'ev'),
+    ('slovenian', 'higher', 'ev'),
+    ('swedish', 'higher', 'ev'),
 }
 
 # ─── Hand-written subject knowledge ──────────────────────────────────────────
@@ -397,11 +414,19 @@ def main():
     for d in load_jsonl(DOWNLOADS):
         dl[(d["view"], d["year"], d["fileid"])] = d
 
-    # Stage 2.5 answer maps: papers that anchor-map.py fully mapped.
+    # Stage 2.5 answer maps: every COMMITTED per-paper sidecar (cumulative across
+    # waves), keyed (year, paperFileid). Scanning the files (not a per-run
+    # manifest) means pruning a drifted year's sidecar de-flags it, and each wave
+    # only adds files — no manifest bookkeeping.
     answer_mapped = set()  # (year, paperFileid)
-    for row in load_jsonl(os.path.join(OUT_DIR, "answers-manifest.jsonl")):
-        if row.get("mapped"):
-            answer_mapped.add((int(row["year"]), row["paperFileid"]))
+    answers_root = os.path.join(HERE, "answers")
+    if os.path.isdir(answers_root):
+        for yd in os.listdir(answers_root):
+            ydp = os.path.join(answers_root, yd)
+            if yd.isdigit() and os.path.isdir(ydp):
+                for fn in os.listdir(ydp):
+                    if fn.endswith(".json"):
+                        answer_mapped.add((int(yd), fn[:-5]))  # strip .json → paperFileid
 
     subjects_json = {}
     if os.path.exists(SUBJECTS_JSON):

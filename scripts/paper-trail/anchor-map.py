@@ -82,10 +82,13 @@ SCOPE_EXAM = "LC"
 SCOPE_LEVELS = {"A", "G"}           # higher, ordinary
 SCOPE_LANGS = {"EV"}
 SCOPE_YEARS = set(range(2010, 2026))
-SCOPE_CODES = {
+SCOPE_CODES = None  # which codes to ATTEMPT this run; None = all not in DONE_CODES
+# Subjects already verified + lit in earlier waves. The engine never re-maps or
+# clears these (their committed sidecars are final), so each new wave is additive.
+DONE_CODES = {
     "LC003", "LC022", "LC023", "LC024", "LC225", "LC029", "LC014", "LC007",
     "LC559", "LC038", "LC017", "LC049", "LC557", "LC019", "LC553", "LC558",
-}  # wave-1 verified subjects; set to None to attempt every subject
+}
 # Aural / unprepared-listening / non-level components never carry page questions.
 SKIP_COMPONENTS = {"A00", "U00"}
 
@@ -398,6 +401,8 @@ def build_pairs(rows):
         d = decode_fileid(r["fileid"])
         if not d or d["exam"] != SCOPE_EXAM:
             continue
+        if d["code"] in DONE_CODES:
+            continue  # frozen — lit in an earlier wave, never re-mapped
         if SCOPE_CODES is not None and d["code"] not in SCOPE_CODES:
             continue
         if d["levelCode"] not in SCOPE_LEVELS or d["lang"] not in SCOPE_LANGS:
@@ -462,13 +467,17 @@ def main():
     pairs = build_pairs(rows)
     log(f"  in-scope papers: {len(pairs)}")
 
-    # fresh sidecar dir (deterministic; drop stale)
+    # Clear only the sidecars this run will regenerate (in-scope, not frozen) so
+    # earlier waves' committed sidecars survive — each wave is additive.
+    def in_scope_code(code):
+        return code not in DONE_CODES and (SCOPE_CODES is None or code in SCOPE_CODES)
     if os.path.isdir(ANSWERS_DIR):
         for yd in os.listdir(ANSWERS_DIR):
             ydp = os.path.join(ANSWERS_DIR, yd)
             if os.path.isdir(ydp):
                 for fn in os.listdir(ydp):
-                    os.remove(os.path.join(ydp, fn))
+                    if in_scope_code(fn[:5]):
+                        os.remove(os.path.join(ydp, fn))
 
     manifest_lines, report_rows = [], []
     fully = degraded = dropped = 0
