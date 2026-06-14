@@ -163,6 +163,8 @@ QA_PASSED_ANSWER_PROFILES = {
     ('russian', 'higher', 'iv'),
     ('russian', 'ordinary', 'iv'),
     ('spanish', 'higher', 'iv'),
+    ('french', 'higher', 'iv'),
+    ('french', 'ordinary', 'iv'),
     ('biology', 'ordinary', 'iv'),
     ('business', 'ordinary', 'ev'),
     ('english', 'ordinary', 'ev'),
