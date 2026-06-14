@@ -129,6 +129,11 @@ QA_PASSED_ANSWER_PROFILES = {
     # Coverage wave (2026-06-14): JC + LCA + LC Common/extra-year structured
     # subjects, render-verified per-paper (125-agent workflow + adversarial
     # refute, 235 ship / 257 drop). Languages/Art/essays/older-Maths dropped.
+    # Foundation Maths: post-2012 Project-Maths schemes (clean 'Question N' /
+    # 'Model Solution' headers) verify clean; pre-2012 P1/P2-split papers drop
+    # (instruction-preamble collision + cross-band) — 9 ship of 27.
+    ('mathematics', 'foundation', 'ev'),
+    ('mathematics', 'foundation', 'iv'),
     ('biology', 'ordinary', 'iv'),
     ('business', 'ordinary', 'ev'),
     ('english', 'ordinary', 'ev'),
