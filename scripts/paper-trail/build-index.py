@@ -165,6 +165,12 @@ QA_PASSED_ANSWER_PROFILES = {
     ('spanish', 'higher', 'iv'),
     ('french', 'higher', 'iv'),
     ('french', 'ordinary', 'iv'),
+    # Minor EU languages reading wave (2026-06-14): same reading-only approach.
+    ('lithuanian', 'higher', 'iv'),
+    ('lithuanian', 'ordinary', 'ev'),
+    ('lithuanian', 'ordinary', 'iv'),
+    ('polish', 'higher', 'ev'),
+    ('polish', 'ordinary', 'iv'),
     ('biology', 'ordinary', 'iv'),
     ('business', 'ordinary', 'ev'),
     ('english', 'ordinary', 'ev'),
