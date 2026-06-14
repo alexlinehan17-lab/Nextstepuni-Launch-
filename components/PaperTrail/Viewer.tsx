@@ -684,7 +684,7 @@ const Viewer: React.FC<ViewerProps> = ({
               transition={GLIDE}
               role="dialog"
               aria-modal="true"
-              aria-label={`Marking scheme for Question ${reveal.n}`}
+              aria-label={`Marking scheme for ${reveal.label ?? `Question ${reveal.n}`}`}
               style={{ paddingBottom: 'var(--sab, 0px)' }}
               className={
                 isWide
@@ -739,7 +739,7 @@ const RevealContent: React.FC<{
       )}
       <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
         <div className="flex-1 min-w-0">
-          <p className="text-[14px] font-semibold text-zinc-900 dark:text-white">Question {q.n} · marking scheme</p>
+          <p className="text-[14px] font-semibold text-zinc-900 dark:text-white">{q.label ?? `Question ${q.n}`} · marking scheme</p>
           <p className="text-[11px] text-zinc-500">How examiners award the marks — not a model answer.</p>
         </div>
         <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
@@ -971,7 +971,7 @@ const Page: React.FC<{
             backgroundColor: '#F26B1F',
             boxShadow: '0 1px 5px rgba(0,0,0,.28)',
           }}
-          aria-label={`See the marking scheme answer for Question ${q.n}`}
+          aria-label={`See the marking scheme answer for ${q.label ?? `Question ${q.n}`}`}
         >
           <Sparkles size={11} /> Answer
         </button>

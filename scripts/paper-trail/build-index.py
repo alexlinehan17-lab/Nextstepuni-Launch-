@@ -139,6 +139,16 @@ QA_PASSED_ANSWER_PROFILES = {
     # wrongly dropped earlier as "visual". EV maps clean (IV not indexed).
     ('art', 'higher', 'ev'),
     ('art', 'ordinary', 'ev'),
+    # Language READING wave (2026-06-14): reading-comprehension-only maps for the
+    # mainstream languages (lang_reading.py — agent-anchored, aural + composition
+    # sections skipped, section labels for restarting numbers). EV 2016-18 first
+    # batch, render-verified. Aural sections + composition stay unmapped.
+    ('french', 'higher', 'ev'),
+    ('french', 'ordinary', 'ev'),
+    ('german', 'higher', 'ev'),
+    ('german', 'ordinary', 'ev'),
+    ('spanish', 'higher', 'ev'),
+    ('italian', 'ordinary', 'ev'),
     ('biology', 'ordinary', 'iv'),
     ('business', 'ordinary', 'ev'),
     ('english', 'ordinary', 'ev'),

@@ -47,8 +47,13 @@ export interface PaperAnswerSeg {
 /** One question's anchor: where it sits on the paper, and where its answer lives
  *  in the marking scheme. */
 export interface PaperAnswerQuestion {
-  /** Question number as printed, e.g. "1" (string: some subjects use "1a"). */
+  /** Question number as printed, e.g. "1" (string: some subjects use "1a").
+   *  Always a sequential integer for ordering + uniqueness; the human-facing
+   *  label (when it differs, e.g. section-restarting language papers) is `label`. */
   n: string;
+  /** Optional display label shown in the reveal header instead of "Question {n}",
+   *  for papers whose questions restart per section (e.g. "Text II · Q1"). */
+  label?: string;
   /** Paper page the question header is on (1-based). */
   pP: number;
   /** Question's vertical band on that paper page, fractions [start, end]. */
