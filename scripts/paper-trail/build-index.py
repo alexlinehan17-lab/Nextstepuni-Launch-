@@ -153,6 +153,16 @@ QA_PASSED_ANSWER_PROFILES = {
     ('japanese', 'ordinary', 'ev'),
     ('russian', 'higher', 'ev'),
     ('russian', 'ordinary', 'ev'),
+    # IV (Irish-medium) reading: same reading-only approach on the Irish-medium
+    # schemes (recovers the language IV papers the original IV audit dropped as
+    # aural-locked). Lower yield — IV papers are more aural-weighted.
+    ('german', 'higher', 'iv'),
+    ('german', 'ordinary', 'iv'),
+    ('japanese', 'higher', 'iv'),
+    ('japanese', 'ordinary', 'iv'),
+    ('russian', 'higher', 'iv'),
+    ('russian', 'ordinary', 'iv'),
+    ('spanish', 'higher', 'iv'),
     ('biology', 'ordinary', 'iv'),
     ('business', 'ordinary', 'ev'),
     ('english', 'ordinary', 'ev'),
