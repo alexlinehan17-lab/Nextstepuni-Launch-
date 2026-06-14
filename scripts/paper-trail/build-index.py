@@ -134,6 +134,11 @@ QA_PASSED_ANSWER_PROFILES = {
     # (instruction-preamble collision + cross-band) — 9 ship of 27.
     ('mathematics', 'foundation', 'ev'),
     ('mathematics', 'foundation', 'iv'),
+    # Off-limits audit (2026-06-14): Art HISTORY & APPRECIATION is a WRITTEN
+    # paper (component 013) with a real per-question 'Q.N marks & notes' grid —
+    # wrongly dropped earlier as "visual". EV maps clean (IV not indexed).
+    ('art', 'higher', 'ev'),
+    ('art', 'ordinary', 'ev'),
     ('biology', 'ordinary', 'iv'),
     ('business', 'ordinary', 'ev'),
     ('english', 'ordinary', 'ev'),
