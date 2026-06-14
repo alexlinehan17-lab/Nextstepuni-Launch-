@@ -15,7 +15,7 @@
  *   - IZ active-tool ToolHeader: size=108
  */
 import React from 'react';
-import { FileSearch, type LucideIcon } from 'lucide-react';
+import { type LucideIcon } from 'lucide-react';
 
 export type ToolIconKey =
   | 'journey'
@@ -110,10 +110,9 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
   },
   'paper-trail': {
     blob: '#C7D8E8',
+    iconPath: '/assets/tools/paper-trail.png',
     blobPath: 'M 5 26 Q -1 54 9 80 Q 25 99 53 95 Q 87 91 95 61 Q 101 29 83 9 Q 57 -5 31 5 Q 11 14 5 26 Z',
     iconScale: 1.0,
-    icon: FileSearch,
-    iconColor: '#33658A',
   },
   'catch-up-lane': {
     blob: '#AEDDE2',
