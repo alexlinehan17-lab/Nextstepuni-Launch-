@@ -12,7 +12,7 @@ import { FileSearch,
     ArrowLeft,
     Lock, Compass, Target,
     Settings, CalendarDays, Calculator, GitBranch, Rocket,
-    Map, ScanSearch, Dumbbell, Milestone, Waypoints, Highlighter, Users, Briefcase, Sunrise
+    Map, ScanSearch, Milestone, Waypoints, Highlighter, Users, Briefcase, Sunrise
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -35,7 +35,6 @@ const FutureFinderRevamped = lazy(() => import('./FutureFinderRevamped'));
 const CollegeCompass = lazy(() => import('./CollegeCompass'));
 const SyllabusXRay = lazy(() => import('./SyllabusXRay'));
 const PointsPassport = lazy(() => import('./PointsPassport'));
-const ExamReps = lazy(() => import('./ExamReps'));
 const CatchUpLane = lazy(() => import('./CatchUpLane'));
 const CommandWordReflex = lazy(() => import('./CommandWordReflex'));
 const PaperTrail = lazy(() => import('./PaperTrail'));
@@ -534,15 +533,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             accentBarColor: 'bg-sky-500', tagBg: 'bg-sky-100 dark:bg-sky-900/30', tagText: 'text-sky-700 dark:text-sky-400',
             hoverBorder: 'hover:border-sky-400/50 dark:hover:border-sky-500/40',
             component: subjectProfile && user ? <PointsPassport uid={user.uid} profile={subjectProfile} /> : null,
-        },
-        {
-            id: 'exam-reps', title: 'Exam Reps', description: 'One real exam question, marked the examiner’s way.', icon: Dumbbell, needsProfile: false,
-            curriculum: 'senior' as const,
-            tag: 'Practice', accentHex: '#5E9C7B', gridClass: 'md:col-span-2',
-            iconBg: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-700 dark:text-emerald-300',
-            accentBarColor: 'bg-emerald-500', tagBg: 'bg-emerald-100 dark:bg-emerald-900/30', tagText: 'text-emerald-700 dark:text-emerald-400',
-            hoverBorder: 'hover:border-emerald-400/50 dark:hover:border-emerald-500/40',
-            component: <ExamReps uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
         },
         {
             // Senior-cycle only (TY/5th/6th). `seniorYearsOnly` additionally

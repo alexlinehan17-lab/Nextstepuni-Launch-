@@ -13,7 +13,6 @@ import FeedbackQrModal from './FeedbackQrModal';
 import { getAvatarUrl } from '../utils/authUtils';
 import { type CourseData } from './Library';
 import { type UserSettings } from '../types';
-import { type AthleteRank, ATHLETE_RANKS } from '../gamificationConfig';
 import { toDateKey } from './subjectData';
 import { getSubjectHex } from '../utils/subjectColors';
 import { SectionCard } from './SectionCard';
@@ -65,11 +64,10 @@ interface KnowledgeTreeProps {
   questState?: { quest: { title: string; description: string; rewardPoints: number; target: number }; current: number; isCompleted: boolean; isClaimed: boolean; dayNumber: number; isOnboarding: boolean } | null;
   onClaimQuestReward?: () => void;
   onRecommendationAction?: (action: string) => void;
-  onDevRankUp?: (rank: AthleteRank) => void;
 }
 
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, allCourses, onSelectModule: _onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onDevRankUp }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, allCourses, onSelectModule: _onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [feedbackQrOpen, setFeedbackQrOpen] = useState(false);
 
@@ -635,22 +633,6 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
             onClick={onGoToLearningPaths}
           />
         </MotionDiv>
-
-      {/* DEV: Rank Up Tester */}
-      {onDevRankUp && (
-        <div className="flex flex-wrap justify-center gap-2 mt-8 mb-4">
-          {ATHLETE_RANKS.map(rank => (
-            <button
-              key={rank.id}
-              onClick={() => onDevRankUp(rank)}
-              className="px-3 py-1 rounded-full text-[9px] font-mono border transition-colors hover:opacity-80"
-              style={{ color: rank.colorHex, borderColor: rank.colorHex, backgroundColor: `${rank.colorHex}10` }}
-            >
-              {rank.title}
-            </button>
-          ))}
-        </div>
-      )}
 
       </div>
       </div>

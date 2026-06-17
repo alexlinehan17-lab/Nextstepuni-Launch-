@@ -605,7 +605,7 @@ const App: React.FC = () => {
     studentProfile, userProgress, northStar, timetableCompletions,
     pointsData, streak, settings, updateSetting,
     gamification, currentToast,
-    setCurrentToast, setRankUpModal,
+    setCurrentToast,
     studentCourses, completedCount, smartRec, questState,
     claimQuestReward, reloadQuest,
     recommendation, strategyMastery, weeklyChallenge,

@@ -19,7 +19,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import {
   ArrowLeft, ArrowRight, Check, CheckCircle2, Circle, RotateCcw,
-  Sparkles, BookOpenCheck, Heart,
+  Sparkles, BookOpenCheck,
 } from 'lucide-react';
 import { COLORS } from '../../design/tokens';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
@@ -178,7 +178,7 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
           onClick={() => { setArm('content'); setView('home'); }}
           className="w-full text-left rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-5 mb-3 flex items-center gap-4 transition-transform hover:-translate-y-0.5"
         >
-          <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: CYAN_TINT }}><BookOpenCheck size={22} style={{ color: CYAN }} /></div>
+          <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: CYAN_TINT }}><img src="/assets/tools/exam-reps.png" alt="" className="w-16 h-16 object-contain" /></div>
           <div className="flex-1 min-w-0">
             <p className="text-lg font-semibold text-zinc-900 dark:text-white" style={{ fontFamily: "'Source Serif 4', serif" }}>Catch up on what you missed</p>
             <p className="text-[13px] text-zinc-500">Short subject pieces for the classes you missed{recoveredCount > 0 ? ` · ${recoveredCount} recovered` : ''}.</p>
@@ -191,7 +191,7 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
           onClick={() => setArm('comeback')}
           className="w-full text-left rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-5 flex items-center gap-4 transition-transform hover:-translate-y-0.5"
         >
-          <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: CYAN_TINT }}><Heart size={22} style={{ color: CYAN }} /></div>
+          <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: CYAN_TINT }}><img src="/assets/catch-up-comeback.png" alt="" className="w-16 h-16 object-contain" /></div>
           <div className="flex-1 min-w-0">
             <p className="text-lg font-semibold text-zinc-900 dark:text-white" style={{ fontFamily: "'Source Serif 4', serif" }}>Your comeback</p>
             <p className="text-[13px] text-zinc-500">{cb ? (fwComplete ? 'Your first week back — complete. Tap to look back.' : `Day ${fwCurrent?.day} of 5: ${fwCurrent?.title}`) : 'Make the first day back feel smaller — build your plan.'}</p>

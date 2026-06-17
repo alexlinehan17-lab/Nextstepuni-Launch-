@@ -36,7 +36,7 @@ import { type QuestState } from '../hooks/useQuests';
 import { type SmartRecommendation } from '../hooks/useRecommendation';
 import { type StrategyMasteryMap } from '../types';
 import { type WeeklyChallengeState } from '../hooks/useWeeklyChallenge';
-import { type GamificationState, type AthleteRank, type AchievementDefinition } from '../gamificationConfig';
+import { type GamificationState, type AchievementDefinition } from '../gamificationConfig';
 import { type CourseData } from './Library';
 import { doc, setDoc, arrayUnion } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -129,7 +129,6 @@ export interface AppRouterProps {
   };
   currentToast: AchievementDefinition | null;
   setCurrentToast: (toast: AchievementDefinition | null) => void;
-  setRankUpModal: (rank: AthleteRank | null) => void;
 
   // Computed data
   studentCourses: CourseData[];
@@ -192,7 +191,6 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   const {
     studentProfile, userProgress, northStar, timetableCompletions,
     pointsData, streak, settings, updateSetting, gamification,
-    setRankUpModal,
     studentCourses, completedCount, smartRec, questState, claimQuestReward, reloadQuest,
     recommendation, strategyMastery, weeklyChallenge,
     dismissedGuides, handleDismissGuide,
@@ -476,7 +474,6 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       onRecommendationAction={() => {
         handleGoToStudy();
       }}
-      onDevRankUp={(rank) => setRankUpModal(rank)}
     />;
   }
 
