@@ -497,7 +497,11 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
               ? 'Find out which subjects you\'d enjoy in senior cycle.'
               : 'Discover college courses that fit who you are.',
             icon: Compass, needsProfile: true,
-            curriculum: 'both' as const,
+            // TEMP (pre-demo): hidden from Senior Cycle so the old Future Finder
+            // doesn't show alongside the revamped 'future-finder-revamped' tile.
+            // Restricted to 'junior' keeps this tile alive as the JC Subject Explorer.
+            // To fully restore for senior, change back to 'both'.
+            curriculum: 'junior' as const,
             tag: 'Career Discovery', accentHex: '#6366f1', gridClass: 'md:col-span-2',
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
