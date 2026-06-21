@@ -78,11 +78,12 @@ Declare **Data Collected → Linked to the user → used for App Functionality**
 Suggested text:
 > NextStepUni is an educational study app delivered through participating Irish secondary schools for Leaving Certificate students. Accounts are normally provisioned via the school with parental consent obtained at enrolment. For review, a demo account is provided below. The peer features are limited to students within the same school and are supervised by a school guidance counsellor; posted text is profanity-filtered.
 >
-> Demo login: <email> / <password>   ← create a reviewer test account before submitting.
+> Demo login: **appreview@nextstepuni.app** / **NextStep-Demo-2026**
+> (Seeded demo student "Aoife Brennan" — 6th year, 5 subjects, 5 completed modules, populated progress. This is a demo-only account.)
 
 ## Pre-submission asset checklist
 - [ ] App icon 1024×1024 (already in the build) — upload in App Store Connect
-- [ ] iPhone 6.9" or 6.7" screenshots (see captured set)
-- [ ] Privacy Policy URL live (deploy first)
-- [ ] Reviewer demo account created
+- [x] iPhone 6.7" screenshots (1290×2796) captured — `~/Downloads/_cap/ns-shots2/`: `home`, `progress`, `modules-mind`, `launchpad`, `module-interior` (Training Hub). Fully populated via the seeded demo account.
+- [x] **Privacy Policy URL live** — https://nextstepuni-app.web.app/privacy.html (deployed)
+- [x] **Reviewer demo account created + seeded** — appreview@nextstepuni.app / NextStep-Demo-2026
 - [ ] Export-compliance answer (uses HTTPS only → standard exempt encryption)
