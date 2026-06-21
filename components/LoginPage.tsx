@@ -8,8 +8,9 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionP } from './Motion';
 import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check, KeyRound } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
+import { SignInWithApple } from '../utils/signInWithApple';
 import app, { auth, db } from '../firebase';
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail, sendEmailVerification, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail, sendEmailVerification, GoogleAuthProvider, signInWithPopup, OAuthProvider, signInWithCredential } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from '../utils/authUtils';
@@ -20,6 +21,29 @@ import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from
 // WKWebView (no real popup support). We hide the button on native iOS/Android
 // builds until the native @capacitor-firebase/authentication plugin is wired up.
 const SHOW_GOOGLE_SIGN_IN = !Capacitor.isNativePlatform();
+
+// Sign in with Apple uses the native AuthenticationServices sheet (via the
+// @capacitor-community/apple-sign-in plugin), so it is shown ONLY on the native
+// iOS app — exactly where the Google popup flow above is unavailable (WKWebView
+// has no popup). On the web the Firebase popup handles Google instead.
+// Final wiring still needs: the "Sign in with Apple" capability on the App ID
+// and the Apple provider enabled in the Firebase console — both require the
+// company Apple Developer account. See docs/app-store-submission.md.
+const SHOW_APPLE_SIGN_IN = Capacitor.isNativePlatform();
+
+// Apple Sign-In + Firebase replay protection: send Apple a SHA-256 hash of a
+// random nonce, then hand Firebase the *raw* nonce so it can verify the hash in
+// the returned identity token.
+const generateNonce = (length = 32): string => {
+  const charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-._';
+  const bytes = new Uint8Array(length);
+  crypto.getRandomValues(bytes);
+  return Array.from(bytes, (b) => charset[b % charset.length]).join('');
+};
+const sha256Hex = async (input: string): Promise<string> => {
+  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(input));
+  return Array.from(new Uint8Array(digest), (b) => b.toString(16).padStart(2, '0')).join('');
+};
 
 // ── Shared animation tokens ──
 const SPRING_FAST = { type: 'spring' as const, stiffness: 500, damping: 28 };
@@ -69,6 +93,13 @@ const GoogleIcon: React.FC<{ size?: number }> = ({ size = 18 }) => (
     <path d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z" fill="#34A853" />
     <path d="M3.964 10.71c-.18-.54-.282-1.117-.282-1.71 0-.593.102-1.17.282-1.71V4.958H.957C.347 6.173 0 7.548 0 9c0 1.452.348 2.827.957 4.042l3.007-2.332z" fill="#FBBC05" />
     <path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z" fill="#EA4335" />
+  </svg>
+);
+
+// ── Apple logo glyph (white, for the black "Continue with Apple" button) ──
+const AppleIcon: React.FC<{ size?: number }> = ({ size = 18 }) => (
+  <svg width={size} height={size} viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+    <path d="M14.07 11.17c-.02-2.18 1.78-3.23 1.86-3.28-1.01-1.48-2.59-1.69-3.15-1.71-1.34-.14-2.61.79-3.29.79-.68 0-1.72-.77-2.83-.75-1.46.02-2.8.85-3.55 2.16-1.51 2.62-.39 6.5 1.09 8.62.72 1.04 1.58 2.21 2.71 2.17 1.09-.04 1.5-.7 2.82-.7 1.31 0 1.69.7 2.83.68 1.17-.02 1.91-1.06 2.62-2.1.83-1.21 1.17-2.38 1.19-2.44-.03-.01-2.28-.88-2.3-3.47zM11.9 4.56c.6-.73 1.01-1.74.9-2.75-.87.04-1.92.58-2.54 1.3-.55.64-1.04 1.67-.91 2.66.97.08 1.96-.49 2.55-1.21z" fill="#FFFFFF" />
   </svg>
 );
 
@@ -353,6 +384,75 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     setIsLoading(false);
   };
 
+  // ── Sign in with Apple handler (native iOS only) ──
+  const handleAppleSignIn = async () => {
+    setIsLoading(true); setError('');
+    try {
+      const rawNonce = generateNonce();
+      const hashedNonce = await sha256Hex(rawNonce);
+      // Native Apple sign-in via AuthenticationServices (no third-party SDK).
+      // Apple receives the SHA-256 hash of the nonce; Firebase verifies it
+      // against the raw nonce below.
+      const result = await SignInWithApple.authorize({ nonce: hashedNonce });
+      const idToken = result.identityToken;
+      if (!idToken) { setError('Apple sign-in did not return a token. Try again.'); setIsLoading(false); return; }
+
+      // Exchange the Apple identity token for a Firebase session. rawNonce lets
+      // Firebase verify the token's hashed nonce.
+      const provider = new OAuthProvider('apple.com');
+      const credential = provider.credential({ idToken, rawNonce });
+      const cred = await signInWithCredential(auth, credential);
+
+      // Apple returns the user's name ONLY on the first authorization.
+      const appleName = [result.givenName, result.familyName]
+        .filter(Boolean).join(' ').trim();
+
+      const userRef = doc(db, 'users', cred.user.uid);
+      const userDoc = await getDoc(userRef);
+      if (userDoc.exists()) {
+        const data = userDoc.data();
+        handleLoginSuccess({
+          uid: cred.user.uid,
+          name: data.name || appleName || cred.user.displayName || 'Student',
+          avatar: data.avatar || AVATAR_SEEDS[0],
+          isAdmin: data.isAdmin || false,
+          role: data.role || 'student',
+          school: data.school || '',
+          yearGroup: data.yearGroup,
+        });
+      } else {
+        // First-time Apple sign-in: create the user doc (school empty, set later
+        // in-app). Record the policy version under which the account was created,
+        // matching the email-registration flow. NOTE: the explicit in-app
+        // Privacy/Terms acceptance checkbox is not shown on the social path
+        // (same as Google); parental consent is captured at school enrolment
+        // (basis = school-enrolment). See compliance/DPIA.md.
+        const newName = appleName || cred.user.displayName || 'Student';
+        const newAvatar = AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)];
+        await setDoc(userRef, {
+          name: newName,
+          avatar: newAvatar,
+          school: '',
+          consent: {
+            policyVersion: PRIVACY_POLICY_VERSION,
+            acceptedAt: new Date().toISOString(),
+            basis: CONSENT_BASIS,
+          },
+        });
+        handleLoginSuccess({ uid: cred.user.uid, name: newName, avatar: newAvatar, school: '', role: 'student' });
+      }
+    } catch (err: any) {
+      // The plugin rejects with code 'USER_CANCELLED' when the user dismisses the sheet.
+      if (err?.code === 'USER_CANCELLED' || /cancel/i.test(err?.message || '')) {
+        // Silent — user dismissed the Apple sheet
+      } else {
+        console.error('Apple sign-in failed:', err);
+        setError('Could not sign in with Apple. Try again or use email.');
+      }
+    }
+    setIsLoading(false);
+  };
+
   // ── Forgot password handler ──
   const handleForgotPassword = async () => {
     if (!email.trim()) { setError('Please enter your email address.'); return; }
@@ -568,14 +668,16 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // DEV "Skip Login" — drops into a local-only session with uid 'dev-student'
   // that has NO Firebase auth token, so every Firestore read/write is rejected
   // by the security rules (it's a no-data ghost session, useful only for UI
-  // smoke-testing). It must NOT appear on the deployed production WEB app, where
-  // it just traps real users in a broken session. Gate it to the native
-  // Capacitor shell (kept for on-device iOS testing) and local dev hosts; the
-  // deployed Firebase Hosting domain is neither, so the button is stripped
-  // there. (Still remove before an App Store submission.)
+  // smoke-testing). It must NEVER ship in a submitted App Store / production
+  // build — Apple rejects auth-bypass test affordances, and on the web it just
+  // traps real users in a broken session. Note Capacitor's native iOS webview
+  // also serves from `localhost` (capacitor://localhost), so a hostname check
+  // alone is not enough: we additionally require a NON-native platform, which
+  // restricts the button to the local Vite dev server only. The native Archive
+  // (and the deployed web domain) never render it.
   const isLocalHost = typeof window !== 'undefined'
     && /^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location.hostname);
-  const showDevButton = Capacitor.isNativePlatform() || isLocalHost;
+  const showDevButton = !Capacitor.isNativePlatform() && isLocalHost;
   const devButton = showDevButton ? (
     <button onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })} className="mt-6 px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[9px] font-mono hover:bg-red-600/20 transition-colors">
       DEV: Skip Login
@@ -639,6 +741,18 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   >
                     <GoogleIcon />
                     Continue with Google
+                  </MotionButton>
+                )}
+                {SHOW_APPLE_SIGN_IN && (
+                  <MotionButton
+                    whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
+                    onClick={handleAppleSignIn}
+                    disabled={isLoading}
+                    className="w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
+                    style={{ color: '#FFFFFF', backgroundColor: '#000000' }}
+                  >
+                    <AppleIcon />
+                    Continue with Apple
                   </MotionButton>
                 )}
               </div>
@@ -711,6 +825,25 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   >
                     <GoogleIcon />
                     Continue with Google
+                  </MotionButton>
+                </>
+              )}
+              {SHOW_APPLE_SIGN_IN && (
+                <>
+                  <div className="flex items-center gap-4 my-5">
+                    <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
+                    <span className="text-[11px] font-medium" style={{ color: '#9e9186' }}>OR</span>
+                    <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
+                  </div>
+                  <MotionButton
+                    whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
+                    onClick={handleAppleSignIn}
+                    disabled={isLoading}
+                    className="w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
+                    style={{ color: '#FFFFFF', backgroundColor: '#000000' }}
+                  >
+                    <AppleIcon />
+                    Continue with Apple
                   </MotionButton>
                 </>
               )}
