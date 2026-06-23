@@ -15,7 +15,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] Mastering Active Recall — `active-recall.md`
 - [x] Mastering Spaced Repetition — `spaced-repetition.md`
 - [x] Mix It Up (Interleaving) — `interleaving.md`
-- [ ] Overcoming Illusions of Competence
+- [x] Overcoming Illusions of Competence — `illusion-of-competence.md`
 - [ ] Using Feedback Loops
 - [ ] How Your Memory Works
 - [ ] Elaborative Interrogation

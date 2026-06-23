@@ -118,4 +118,22 @@ export const REF = {
     source: 'Psychological Science',
     doi: '10.1111/j.1467-9280.2008.02127.x',
   },
+
+  // Metacognition / illusions of competence; technique reviews
+  koriat2005: {
+    id: 'koriat2005',
+    authors: 'Koriat, A., & Bjork, R. A.',
+    year: 2005,
+    title: "Illusions of competence in monitoring one's knowledge during study",
+    source: 'Journal of Experimental Psychology: Learning, Memory, and Cognition',
+    doi: '10.1037/0278-7393.31.2.187',
+  },
+  dunlosky2013: {
+    id: 'dunlosky2013',
+    authors: 'Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T.',
+    year: 2013,
+    title: "Improving students' learning with effective learning techniques: Promising directions from cognitive and educational psychology",
+    source: 'Psychological Science in the Public Interest',
+    doi: '10.1177/1529100612453266',
+  },
 } satisfies Record<string, Reference>;
