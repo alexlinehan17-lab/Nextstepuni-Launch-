@@ -182,7 +182,20 @@ const GatewayPanel = () => {
 
 // ── Card wrapper — split panel on desktop, full-width on mobile ──
 const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNode }> = ({ children, devButton }) => (
-  <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 light" data-theme="light" style={{ backgroundColor: '#FAFBF6', colorScheme: 'light' }}>
+  <div className="relative min-h-screen flex flex-col items-center justify-center p-4 md:p-8 light" data-theme="light" style={{ backgroundColor: '#FAFBF6', colorScheme: 'light' }}>
+    {/* Brand accent dot — top-left corner */}
+    <div
+      aria-hidden
+      style={{
+        position: 'absolute',
+        top: 20,
+        left: 20,
+        width: 12,
+        height: 12,
+        borderRadius: '9999px',
+        backgroundColor: '#F26B1F',
+      }}
+    />
     <MotionDiv
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
