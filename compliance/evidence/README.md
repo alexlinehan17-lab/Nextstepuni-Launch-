@@ -49,7 +49,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] Controlling the Controllables — `agency-architecture.md`
 - [x] Your Strategic Advantage — `strategic-advantage.md`
 - [x] Self Efficacy — `self-efficacy.md`
-- [ ] Understanding Procrastination and Motivation
+- [x] Understanding Procrastination and Motivation — `procrastination.md`
 - [ ] Reframing Catastrophic Thoughts
 - [ ] Building Emotional Intelligence
 - [ ] Reframing Progress
