@@ -339,4 +339,17 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The specific neurochemical mechanism — that dopamine from praise gets "wired" to effort vs. identity, making the brain "crave effort" — is a popularised just-so story not established in the praise literature. Reframed to the behavioural claim that is supported (person praise is associated with more helpless responses to failure; Mueller & Dweck 1998) without asserting an unverified dopamine pathway. The error-signal claim that follows is kept and cited to Moser et al. 2011.',
     date: '2026-06-23',
   },
+  {
+    id: 'effective-struggle-001',
+    module: 'Effective Struggle',
+    section: 'Step 1 — The Fallacy of Ease (and "The Great Deception" chart)',
+    action: 'reframed',
+    original:
+      'Students who re-read predicted 90% recall but scored 40%. Self-testers predicted 40% but scored 61%. (Chart: "What students predicted" = 90% re-reading vs 40% self-testing.)',
+    reframedTo:
+      'Students who re-read felt more confident but recalled 40% a week later; self-testers felt less sure yet recalled 61%. The chart now shows only the verified one-week retention (40% vs 61%) and notes the re-reading group\'s higher confidence qualitatively.',
+    reason:
+      'The one-week retention figures (40% re-study vs 61% self-testing) are the verified headline result of Roediger & Karpicke (2006, Exp 2) and are kept and cited. But the precise prediction percentages (90% vs 40%) are not the predictions that study reported — its participants\' predicted recall hovered around half, and the paper supports only the qualitative point that re-reading "increased students\' confidence." The fabricated prediction numbers were removed from both the prose and the interactive chart; the confidence/calibration point is retained qualitatively.',
+    date: '2026-06-23',
+  },
 ];

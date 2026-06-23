@@ -13,6 +13,8 @@ import { type ModuleProgress } from '../types';
 import { accentTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { EFFECTIVE_STRUGGLE_REFERENCE_LIST } from '../data/references/effectiveStruggle';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { COLORS } from '../design/tokens';
 
@@ -141,20 +143,21 @@ const StairsEscalator = () => {
 };
 
 const IllusionOfCompetenceChart = () => {
-    const [view, setView] = useState<'prediction' | 'reality'>('prediction');
-    const ssssData = { prediction: 90, reality: 40 };
-    const stttData = { prediction: 40, reality: 61 };
-
-    const passiveH = view === 'prediction' ? ssssData.prediction : ssssData.reality;
-    const activeH = view === 'prediction' ? stttData.prediction : stttData.reality;
+    const [revealed, setRevealed] = useState(false);
+    // Verified figures: Roediger & Karpicke (2006), Experiment 2 — final free
+    // recall one week after study. Repeated study (re-reading) = 40%; repeated
+    // testing (self-testing) = 61%. The re-reading group also reported higher
+    // confidence despite the lower retention (paper's qualitative finding).
+    const passiveH = revealed ? 40 : 0;
+    const activeH = revealed ? 61 : 0;
 
     return (
         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             {/* Section chip + title */}
             <div className="text-center mb-8">
                 <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Research Evidence</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>The Great Deception</h4>
-                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>The gap between what <em>feels</em> effective and what <em>is</em> effective is massive.</p>
+                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Re-reading vs Self-Testing</h4>
+                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Same passage, same study time. Both groups tested one week later.</p>
             </div>
 
             {/* Chart card */}
@@ -171,7 +174,7 @@ const IllusionOfCompetenceChart = () => {
                                 animate={{ height: `${passiveH}%` }}
                                 transition={{ type: 'spring', stiffness: 100 }}
                             >
-                                <span className="absolute top-2 left-0 right-0 text-center font-serif font-bold" style={{ fontSize: 22, color: '#5a5550' }}>{passiveH}%</span>
+                                {revealed && <span className="absolute top-2 left-0 right-0 text-center font-serif font-bold" style={{ fontSize: 22, color: '#5a5550' }}>{passiveH}%</span>}
                             </motion.div>
                         </div>
                         <div style={{ height: 1, backgroundColor: '#d0cdc8' }} />
@@ -188,7 +191,7 @@ const IllusionOfCompetenceChart = () => {
                                 animate={{ height: `${activeH}%` }}
                                 transition={{ type: 'spring', stiffness: 100 }}
                             >
-                                <span className="absolute top-2 left-0 right-0 text-center font-serif font-bold" style={{ fontSize: 22, color: '#FFFFFF' }}>{activeH}%</span>
+                                {revealed && <span className="absolute top-2 left-0 right-0 text-center font-serif font-bold" style={{ fontSize: 22, color: '#FFFFFF' }}>{activeH}%</span>}
                             </motion.div>
                         </div>
                         <div style={{ height: 1, backgroundColor: '#d0cdc8' }} />
@@ -196,51 +199,29 @@ const IllusionOfCompetenceChart = () => {
                 </div>
             </div>
 
-            {/* Toggle buttons */}
-            <div className="flex justify-center gap-2 mt-5">
-                <button
-                    onClick={() => setView('prediction')}
-                    style={{
-                        padding: '10px 20px',
-                        borderRadius: 20,
-                        fontSize: 13,
-                        fontWeight: 600,
-                        backgroundColor: view === 'prediction' ? COLORS.accent : '#FFFFFF',
-                        color: view === 'prediction' ? '#FFFFFF' : '#7a7068',
-                        border: view === 'prediction' ? `2px solid ${COLORS.accent}` : '2px solid #d0cdc8',
-                        cursor: 'pointer',
-                    }}
-                >
-                    What students predicted
-                </button>
-                <button
-                    onClick={() => setView('reality')}
-                    style={{
-                        padding: '10px 20px',
-                        borderRadius: 20,
-                        fontSize: 13,
-                        fontWeight: 600,
-                        backgroundColor: view === 'reality' ? COLORS.accent : '#FFFFFF',
-                        color: view === 'reality' ? '#FFFFFF' : '#7a7068',
-                        border: view === 'reality' ? `2px solid ${COLORS.accent}` : '2px solid #d0cdc8',
-                        cursor: 'pointer',
-                    }}
-                >
-                    Actual test results (1 week later)
-                </button>
-            </div>
+            {/* Reveal button */}
+            {!revealed && (
+                <div className="flex justify-center mt-5">
+                    <button
+                        onClick={() => setRevealed(true)}
+                        style={{ padding: '10px 22px', borderRadius: 20, fontSize: 13, fontWeight: 600, backgroundColor: COLORS.accent, color: '#FFFFFF', border: `2px solid ${COLORS.accent}`, cursor: 'pointer' }}
+                    >
+                        Reveal the one-week results
+                    </button>
+                </div>
+            )}
 
-            {/* Insight callout — only on reality view */}
+            {/* Insight callout */}
             <AnimatePresence>
-                {view === 'reality' && (
+                {revealed && (
                     <motion.div
                         initial={{ opacity: 0, y: 6 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 6 }}
-                        className="mt-4 max-w-lg mx-auto"
+                        className="mt-5 max-w-lg mx-auto"
                         style={{ borderLeft: `3px solid ${COLORS.success}`, backgroundColor: COLORS.successTint, borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
                     >
-                        <p className="text-sm italic" style={{ color: COLORS.successDarkText }}>Active self-testing produces 3× better retention — but most students never use it because it feels harder.</p>
+                        <p className="text-sm italic" style={{ color: COLORS.successDarkText }}>The re-reading group felt more confident — yet a week later they recalled far less. Testing yourself feels harder, and that difficulty is exactly why it sticks.</p>
                     </motion.div>
                 )}
             </AnimatePresence>
@@ -606,6 +587,7 @@ const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress:
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      references={EFFECTIVE_STRUGGLE_REFERENCE_LIST}
       finishButtonText="Embrace the Struggle"
     >
       {(activeSection) => (
@@ -615,7 +597,7 @@ const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress:
               {essentials ? (
                 <>
                   <p>Your brain tricks you. If learning feels easy, you think you are learning well. The opposite is true. Easy learning gets forgotten fast. Hard, effortful learning sticks.</p>
-                  <p>Students who re-read predicted 90% recall but scored 40%. Self-testers predicted 40% but scored 61%. The method that feels worse works better.</p>
+                  <p>In one study, students who re-read felt more confident — but a week later they recalled just 40%. Students who tested themselves felt less sure, yet recalled 61%.<Cite n={1} /> The method that feels worse works better.</p>
                 </>
               ) : (
                 <>
@@ -631,7 +613,7 @@ const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress:
               <StairsEscalator />
               {!essentials && (
                 <>
-                  <p>This isn't just a vibe — it's been tested. In one experiment, students who just re-read their notes predicted they'd remember 90% of it. Students who tested themselves predicted only 40%. But when they were actually tested a week later, the re-readers scored just 40%, while the self-testers scored 61%. The strategy that felt worse was way more effective. Toggle the chart below to see the gap between confidence and reality.</p>
+                  <p>This isn't just a vibe — it's been tested. In one experiment, two groups studied the same material: one re-read it repeatedly, the other read it once and then tested themselves. The re-readers came away feeling more confident they'd remember it. But when both groups were tested a week later, the re-readers scored just 40%, while the self-testers scored 61%.<Cite n={1} /> The strategy that felt worse was the one that worked. The chart below shows that gap between confidence and reality.</p>
                 </>
               )}
               <IllusionOfCompetenceChart />
@@ -641,13 +623,13 @@ const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress:
             <ReadingSection title="Your Brain's Bottleneck." eyebrow="Step 2" icon={Brain} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Your working memory is tiny. It holds 3-5 things at once. Three types of load compete for space: bad load (distractions), fixed load (topic difficulty), and good load (the effort that builds memory).</p>
+                  <p>Your working memory is tiny. It holds only about three to five things at once.<Cite n={3} /> Three types of load compete for space: bad load (distractions), fixed load (topic difficulty), and good load (the effort that builds memory).<Cite n={2} /></p>
                   <p>Cut the bad load. Maximise the good load. That is how you learn efficiently. Use the simulator below to see it in action.</p>
                 </>
               ) : (
                 <>
-                  <p>To understand why difficulty is necessary, you need to know about a bottleneck in your brain called <Highlight description="Think of this as your brain's tiny desk. You can only hold about 3-5 things on it at once. If you pile on too much, stuff falls off and nothing gets learned." theme={theme}>Working Memory</Highlight>. Everything you learn has to pass through it, and if you overload it, learning just stops.</p>
-                  <p>There are three types of "load": <Highlight description="This is the useless stuff clogging up your brain — your phone buzzing, a noisy room, confusing instructions. It's not helping you learn, it's just taking up space. Get rid of as much of it as you can." theme={theme}>Extraneous Load</Highlight> (the bad stuff), <Highlight description="This is just how hard the topic actually is. Probability is harder than basic addition — you can't change that, you just have to work with it." theme={theme}>Intrinsic Load</Highlight> (the topic itself), and <Highlight description="This is the good kind of effort — the mental work that actually builds understanding. Things like testing yourself, explaining ideas out loud, or working through problems. You want as much of this as possible." theme={theme}>Germane Load</Highlight> (the good stuff). The art of learning is to clear out all the 'bad' difficulty so you have enough mental space for the 'good' difficulty that actually builds memory.</p>
+                  <p>To understand why difficulty is necessary, you need to know about a bottleneck in your brain called <Highlight description="Think of this as your brain's tiny desk. You can only hold about 3-5 things on it at once. If you pile on too much, stuff falls off and nothing gets learned." theme={theme}>Working Memory</Highlight>. It can only juggle a handful of things at once,<Cite n={3} /> and if you overload it, learning just stops.</p>
+                  <p>There are three types of "load": <Highlight description="This is the useless stuff clogging up your brain — your phone buzzing, a noisy room, confusing instructions. It's not helping you learn, it's just taking up space. Get rid of as much of it as you can." theme={theme}>Extraneous Load</Highlight> (the bad stuff), <Highlight description="This is just how hard the topic actually is. Probability is harder than basic addition — you can't change that, you just have to work with it." theme={theme}>Intrinsic Load</Highlight> (the topic itself), and <Highlight description="This is the good kind of effort — the mental work that actually builds understanding. Things like testing yourself, explaining ideas out loud, or working through problems. You want as much of this as possible." theme={theme}>Germane Load</Highlight> (the good stuff).<Cite n={2} /> The art of learning is to clear out all the 'bad' difficulty so you have enough mental space for the 'good' difficulty that actually builds memory.</p>
                 </>
               )}
               <CognitiveLoadBalancer />
@@ -672,14 +654,14 @@ const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress:
             <ReadingSection title="The Engine of Memory." eyebrow="Step 4" icon={Puzzle} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Your brain only locks things into long-term memory when they are hard to recall. You need to partially forget before your brain bothers storing it properly. That is why re-reading feels easy but does not work.</p>
-                  <p>Testing yourself feels harder and less confident. But it produces far better results. The struggle to remember is the signal that tells your brain "this matters."</p>
+                  <p>Your brain only locks things into long-term memory when they are hard to recall. You need to partially forget before your brain bothers storing it properly. That is why re-reading feels easy but does not work.<Cite n={4} /></p>
+                  <p>Testing yourself feels harder and less confident. But it produces far better results.<Cite n={1} /> The struggle to remember is the signal that tells your brain "this matters."</p>
                 </>
               ) : (
                 <>
                   <p>So why does the "sweet spot" feel so hard? Because of how memory actually works. It turns out memory has two strengths: <Highlight description="How easily something comes to mind right now. It's high right after you've just read your notes, but it fades fast. This is the one that tricks you into feeling confident." theme={theme}>Retrieval Strength</Highlight> (how easy it is to access now) and <Highlight description="How deeply something is actually locked into your brain for the long haul. This only grows when you struggle to remember something — not when you passively read it again. This is what actual learning looks like." theme={theme}>Storage Strength</Highlight> (how well you've actually learned it).</p>
-                  <p>Here's the paradox: your brain only increases Storage Strength when Retrieval Strength is <em>low</em>. In other words, you have to forget something a little bit before your brain will put in the effort to store it properly for the long term. This is why re-reading your notes feels easy (high retrieval strength) but does nothing for long-term memory. You need the "desirable difficulty" of struggling to remember.</p>
-                  <p>This was proven clearly in <Highlight description="A famous experiment where one group re-read their notes four times, and the other group read once then tested themselves three times. A week later, the self-testers remembered way more — even though the re-readers had felt more confident." theme={theme}>a well-known experiment</Highlight>. Two groups of students studied the same text. One group re-read it four times. The other group read it once and then tested themselves on it three times. After five minutes, the re-readers did slightly better — which makes sense, it was still fresh. But after one week, the results completely flipped: the re-readers had forgotten more than half of the material, while the self-testing group held onto much more. This is the <Highlight description="Testing yourself isn't just a way to check what you know — it's one of the best ways to actually learn. Every time you try to pull something out of your memory, you make that memory stronger. So quizzing yourself beats re-reading every time." theme={theme}>Testing Effect</Highlight> in action.</p>
+                  <p>Here's the paradox: your brain only increases Storage Strength when Retrieval Strength is <em>low</em>. In other words, you have to forget something a little bit before your brain will put in the effort to store it properly for the long term. This is why re-reading your notes feels easy (high retrieval strength) but does nothing for long-term memory. You need the "desirable difficulty" of struggling to remember.<Cite n={4} /></p>
+                  <p>This was shown clearly in <Highlight description="A well-known experiment where one group re-read their notes repeatedly, and the other group read once then tested themselves. A week later, the self-testers remembered far more — even though the re-readers had felt more confident." theme={theme}>a well-known experiment</Highlight>. Two groups of students studied the same text. One group re-read it repeatedly. The other group read it once and then tested themselves on it. After five minutes, the re-readers did slightly better — which makes sense, it was still fresh. But after one week, the results flipped: the re-readers recalled about 40% while the self-testing group held onto 61%.<Cite n={1} /> This is the <Highlight description="Testing yourself isn't just a way to check what you know — it's one of the best ways to actually learn. Every time you try to pull something out of your memory, you make that memory stronger. So quizzing yourself beats re-reading every time." theme={theme}>Testing Effect</Highlight> in action.</p>
                   <p>Here's the kicker: the re-readers were also more <em>confident</em>. They predicted higher scores. They genuinely felt like they knew the material better. But their confidence was completely wrong. The students who struggled through self-testing — who felt less confident, who made mistakes, who found it uncomfortable — were the ones who actually learned. That's the engine of memory: the struggle to pull something out of your brain is the signal that tells it "this matters, lock it in."</p>
                 </>
               )}
@@ -700,13 +682,13 @@ const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress:
               {essentials ? (
                 <>
                   <p>If studying feels hard and frustrating, that means it is working. Your brain is rewiring. Do not stop. Easy study is wasted study.</p>
-                  <p>Regular self-testing also kills exam anxiety. You walk in knowing exactly what you know and where your gaps are. No surprises.</p>
+                  <p>Regular low-stakes self-testing can also ease exam anxiety.<Cite n={5} /> You walk in knowing exactly what you know and where your gaps are. Fewer surprises.</p>
                 </>
               ) : (
                 <>
                   <p>Your brain is lazy by design. It prefers the escalator to the stairs. This means your gut feeling about how well you're learning is basically broken. You have to learn to override it.</p>
                   <p>From now on, when learning feels slow, frustrating, and difficult, that's not a sign you should stop. It's a sign that you're in the sweet spot. It's the feeling of your brain actually rewiring itself. You're not "confused" — you're building real understanding. You're not "slow" — you're building long-term memory. If it feels like a struggle, it's working.</p>
-                  <p>Here's a bonus: regular low-stakes self-testing doesn't just improve your memory — it also crushes exam anxiety. Think about it: anxiety usually comes from uncertainty. You *think* you know the material, but you've never actually tested that belief until the day of the real exam. Quizzing yourself regularly is a form of <Highlight description="Getting honest with yourself about what you actually know vs. what you just think you know. When you quiz yourself regularly, you stop guessing and start knowing exactly where your gaps are — so there are no nasty surprises on exam day." theme={theme}>Metacognitive Calibration</Highlight> — it replaces false confidence with honest self-knowledge. When you test yourself regularly, you walk into the exam knowing exactly what you know and what you don't. No surprises, no panic. You've already faced the hard stuff at home.</p>
+                  <p>Here's a bonus: regular low-stakes self-testing doesn't just improve your memory — classroom studies have found it can also ease exam anxiety.<Cite n={5} /> Think about it: anxiety usually comes from uncertainty. You *think* you know the material, but you've never actually tested that belief until the day of the real exam. Quizzing yourself regularly is a form of <Highlight description="Getting honest with yourself about what you actually know vs. what you just think you know. When you quiz yourself regularly, you stop guessing and start knowing exactly where your gaps are — so there are no nasty surprises on exam day." theme={theme}>Metacognitive Calibration</Highlight> — it replaces false confidence with honest self-knowledge. When you test yourself regularly, you walk into the exam knowing exactly what you know and what you don't. No surprises, no panic. You've already faced the hard stuff at home.</p>
                 </>
               )}
               <MicroCommitment theme={theme}>
