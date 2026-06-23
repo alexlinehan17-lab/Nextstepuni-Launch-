@@ -33,7 +33,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] The Myelin Manual — `myelin-manual.md`
 - [x] The Power of Praise — `praise-protocol.md`
 - [x] Effective Struggle and Growth — `effective-struggle.md`
-- [ ] The Science of Making Mistakes
+- [x] The Science of Making Mistakes — `science-of-mistakes.md`
 - [ ] The Power of "Yet"
 - [ ] Using Controllable Variables to Grow
 - [ ] Linking Study to Future Goals

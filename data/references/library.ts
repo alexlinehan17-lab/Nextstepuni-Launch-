@@ -610,6 +610,14 @@ export const REF = {
     source: 'Developmental Psychology',
     doi: '10.1037/dev0000444',
   },
+  gehring1993: {
+    id: 'gehring1993',
+    authors: 'Gehring, W. J., Goss, B., Coles, M. G. H., Meyer, D. E., & Donchin, E.',
+    year: 1993,
+    title: 'A neural system for error detection and compensation',
+    source: 'Psychological Science',
+    doi: '10.1111/j.1467-9280.1993.tb00586.x',
+  },
   sisk2018: {
     id: 'sisk2018',
     authors: 'Sisk, V. F., Burgoyne, A. P., Sun, J., Butler, J. L., & Macnamara, B. N.',

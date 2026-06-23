@@ -13,6 +13,8 @@ import { type ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { SCIENCE_OF_MISTAKES_REFERENCE_LIST } from '../data/references/scienceOfMistakes';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = redTheme;
@@ -632,6 +634,7 @@ const TheScienceOfMakingMistakesModule: React.FC<{ onBack: () => void; progress:
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      references={SCIENCE_OF_MISTAKES_REFERENCE_LIST}
       finishButtonText="Make Mistakes Count"
     >
       {(activeSection) => (
@@ -640,14 +643,14 @@ const TheScienceOfMakingMistakesModule: React.FC<{ onBack: () => void; progress:
             <ReadingSection title="The Brain's Alarm." eyebrow="Step 1" icon={AlertTriangle} theme={theme}>
               {essentials ? (
                 <>
-                  <p>When you make a mistake, your brain fires an instant alarm called the <Highlight description="An automatic brain signal that fires within 50 milliseconds of an error." theme={theme}>ERN</Highlight>. You do not even notice it happening. Think of it as your brain's smoke detector. This alarm spots the error but does not help you learn. What happens next is the part that matters.</p>
+                  <p>When you make a mistake, your brain fires an instant alarm called the <Highlight description="An automatic brain signal that fires within about a tenth of a second of an error." theme={theme}>ERN</Highlight>.<Cite n={1} /> You do not even notice it happening. Think of it as your brain's smoke detector. This alarm spots the error but does not help you learn. What happens next is the part that matters.</p>
                   <PersonalStory name="Alex" role="Founder, NextStepUni">
                     <p>Failing the Junior Cert was the biggest mistake of my early life. At the time, it felt like a verdict — proof that school wasn't for me. It took me a long time to realise that the failure itself wasn't the problem. The problem was that I looked away from it instead of leaning in. When I finally did lean in, that failure became the single most useful piece of data I ever received.</p>
                   </PersonalStory>
                 </>
               ) : (
                 <>
-                  <p>When you make a mistake — a typo, a wrong turn in a maths problem — your brain picks up on it instantly. Before you even realise what happened, an electrical signal called the <Highlight description="A tiny electrical blip your brain fires off within 50 milliseconds of messing up. It happens before you even realise you made a mistake — it's your brain's automatic 'oh no' moment." theme={theme}>Error-Related Negativity (ERN)</Highlight> fires. It's a super-fast, automatic "uh-oh" moment.</p>
+                  <p>When you make a mistake — a typo, a wrong turn in a maths problem — your brain picks up on it instantly. Before you even realise what happened, an electrical signal called the <Highlight description="A tiny electrical blip your brain fires off within a fraction of a second of messing up. It happens before you even realise you made a mistake — it's your brain's automatic 'oh no' moment." theme={theme}>Error-Related Negativity (ERN)</Highlight> fires.<Cite n={1} /> It's a super-fast, automatic "uh-oh" moment.</p>
                   <p>Think of it as your brain's smoke detector. It's an unconscious alarm that goes off when what you did doesn't match what you meant to do. This signal matters, but it's not the part that actually helps you learn. It's what happens next that makes the real difference.</p>
                   <PersonalStory name="Alex" role="Founder, NextStepUni">
                     <p>Failing the Junior Cert was the biggest mistake of my early life. At the time, it felt like a verdict — proof that school wasn't for me. It took me a long time to realise that the failure itself wasn't the problem. The problem was that I looked away from it instead of leaning in. When I finally did lean in, that failure became the single most useful piece of data I ever received.</p>
@@ -660,12 +663,12 @@ const TheScienceOfMakingMistakesModule: React.FC<{ onBack: () => void; progress:
             <ReadingSection title="The Second Signal." eyebrow="Step 2" icon={Lightbulb} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Half a second later, a second signal called the <Highlight description="A brain signal showing you are consciously paying attention to the mistake." theme={theme}>Pe</Highlight> can fire. This one is not automatic. It means you are paying attention to the error. The bigger your Pe signal, the more likely you are to fix the mistake next time. The ERN is the alarm beeping. The Pe is you getting up to find the smoke.</p>
+                  <p>Half a second later, a second signal called the <Highlight description="A brain signal showing you are consciously paying attention to the mistake." theme={theme}>Pe</Highlight> can fire. This one is not automatic. It means you are paying attention to the error. The bigger your Pe signal, the more likely you are to fix the mistake next time.<Cite n={2} /> The ERN is the alarm beeping. The Pe is you getting up to find the smoke.</p>
                 </>
               ) : (
                 <>
                   <p>About half a second after that first alarm, a second, bigger brainwave can kick in. This is the <Highlight description="A second, bigger brain signal that kicks in about half a second after a mistake. This one means you're actually paying attention to what went wrong. The stronger this signal is, the more likely you are to fix the mistake next time." theme={theme}>Error Positivity (Pe)</Highlight> signal. Unlike the first one, this doesn't happen on autopilot. This is the signal that you're consciously paying attention to the mistake, thinking about it, and actually engaging with it. It's the moment your brain decides to learn from what went wrong.</p>
-                  <p>You can think of it like this: the ERN is the smoke alarm beeping. The Pe is you getting out of bed to find the source of the smoke. The size of your Pe wave literally predicts how likely you are to correct the error and get it right next time. Basically, it's your brain's way of showing that you actually care about what went wrong.</p>
+                  <p>You can think of it like this: the ERN is the smoke alarm beeping. The Pe is you getting out of bed to find the source of the smoke. The size of your Pe wave is linked to how likely you are to correct the error and get it right next time.<Cite n={2} /> Basically, it's your brain's way of showing that you actually care about what went wrong.</p>
                 </>
               )}
               <BrainSignalVisualizer />
@@ -674,11 +677,11 @@ const TheScienceOfMakingMistakesModule: React.FC<{ onBack: () => void; progress:
           {activeSection === 2 && (
             <ReadingSection title="The Mindset Switch." eyebrow="Step 3" icon={ToggleRight} theme={theme}>
               {essentials ? (
-                <p>Your mindset controls the size of that Pe signal. A <Highlight description="Believing you are either smart or not." theme={theme}>Fixed Mindset</Highlight> produces a weak signal. You look away from the mistake because it feels personal. A <Highlight description="Believing you can get smarter through effort." theme={theme}>Growth Mindset</Highlight> produces a strong signal. You lean into the mistake because it is useful information. You actually want to know what went wrong.</p>
+                <p>Your mindset is linked to the size of that Pe signal. A <Highlight description="Believing you are either smart or not." theme={theme}>Fixed Mindset</Highlight> tends to produce a weaker signal. You look away from the mistake because it feels personal. A <Highlight description="Believing you can get smarter through effort." theme={theme}>Growth Mindset</Highlight> tends to produce a stronger signal.<Cite n={2} /> You lean into the mistake because it is useful information. You actually want to know what went wrong.</p>
               ) : (
                 <>
-                  <p>Here's the really interesting part. The size of your Pe wave — that second signal — depends heavily on your mindset. Students with a <Highlight description="The belief that you're either smart or you're not, and nothing can change that. If you think this way, mistakes feel like proof you're not good enough." theme={theme}>Fixed Mindset</Highlight> show a much weaker Pe signal. They hear the alarm, but they quickly look away from the mistake because it feels personal. If "being smart" is your whole identity, then a mistake feels like proof that you're not.</p>
-                  <p>Students with a <Highlight description="The belief that you can get smarter through effort and better strategies. If you think this way, mistakes don't feel like failures — they feel like useful information about what to work on next." theme={theme}>Growth Mindset</Highlight> have a much stronger Pe signal. They lean into the mistake and really focus on it. They get that the error isn't a judgement on how clever they are — it's a clue about what to work on next. They actually want the information that comes from getting it wrong.</p>
+                  <p>Here's the really interesting part. The size of your Pe wave — that second signal — is linked to your mindset. In one study, students with a <Highlight description="The belief that you're either smart or you're not, and nothing can change that. If you think this way, mistakes feel like proof you're not good enough." theme={theme}>Fixed Mindset</Highlight> showed a weaker Pe signal. They hear the alarm, but they quickly look away from the mistake because it feels personal. If "being smart" is your whole identity, then a mistake feels like proof that you're not.</p>
+                  <p>Students with a <Highlight description="The belief that you can get smarter through effort and better strategies. If you think this way, mistakes don't feel like failures — they feel like useful information about what to work on next." theme={theme}>Growth Mindset</Highlight> showed a stronger Pe signal.<Cite n={2} /> They lean into the mistake and really focus on it. They get that the error isn't a judgement on how clever they are — it's a clue about what to work on next. They actually want the information that comes from getting it wrong.</p>
                 </>
               )}
             </ReadingSection>
@@ -687,12 +690,12 @@ const TheScienceOfMakingMistakesModule: React.FC<{ onBack: () => void; progress:
             <ReadingSection title="The High-Stakes Hijack." eyebrow="Step 4" icon={ZapOff} theme={theme}>
                 {essentials ? (
                   <>
-                    <p>Stress can break this whole system. In a high-pressure exam, fear triggers an <Highlight description="When the panicky part of your brain shuts down the logical part." theme={theme}>amygdala hijack</Highlight>. Your logical thinking goes offline. Your Pe signal gets squashed. You stop learning from mistakes and just try to survive. This is why you "go blank" after one bad question. Try the simulator below to see it happen.</p>
+                    <p>Stress can break this whole system. In a high-pressure exam, fear triggers an <Highlight description="When the panicky part of your brain shuts down the logical part." theme={theme}>amygdala hijack</Highlight>. Acute stress weakens the logical, problem-solving part of your brain, so it is much harder to analyse a mistake calmly in the moment.<Cite n={3} /> You stop learning from errors and just try to survive. This is why you "go blank" after one bad question. Try the simulator below to see it happen.</p>
                   </>
                 ) : (
                   <>
                     <p>This whole system can be hijacked by stress. In a high-pressure situation like a big exam, the fear of messing up can trigger an <Highlight description="When the emotional, panicky part of your brain completely takes over and shuts down the calm, logical part. It's why one bad moment in an exam can make your whole brain feel like it's frozen." theme={theme}>amygdala hijack</Highlight>. This floods your brain with stress chemicals that basically put it into panic mode.</p>
-                    <p>When that happens, two things go wrong at once. First, the logical, problem-solving part of your brain gets weaker, making it harder to think straight. Second, that important Pe signal gets squashed. Your brain stops trying to learn from the mistake and just tries to survive the moment. This is exactly why you can "go blank" after one bad question in an exam and feel like you can't recover.</p>
+                    <p>When that happens, the logical, problem-solving part of your brain — the prefrontal cortex — gets weaker under the flood of stress chemicals, making it much harder to think straight and work through an error calmly.<Cite n={3} /> Your brain shifts out of learning-mode and into survival-mode. This is exactly why you can "go blank" after one bad question in an exam and feel like you can't recover.</p>
                   </>
                 )}
                 <AmygdalaHijackSimulator />

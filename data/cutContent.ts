@@ -352,4 +352,17 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The one-week retention figures (40% re-study vs 61% self-testing) are the verified headline result of Roediger & Karpicke (2006, Exp 2) and are kept and cited. But the precise prediction percentages (90% vs 40%) are not the predictions that study reported — its participants\' predicted recall hovered around half, and the paper supports only the qualitative point that re-reading "increased students\' confidence." The fabricated prediction numbers were removed from both the prose and the interactive chart; the confidence/calibration point is retained qualitatively.',
     date: '2026-06-23',
   },
+  {
+    id: 'science-of-mistakes-001',
+    module: 'The Science of Mistakes',
+    section: 'Step 4 — The High-Stakes Hijack',
+    action: 'reframed',
+    original:
+      'When that happens, two things go wrong at once. First, the logical, problem-solving part of your brain gets weaker… Second, that important Pe signal gets squashed.',
+    reframedTo:
+      'Acute stress weakens the prefrontal cortex (the logical, problem-solving part of the brain), making it much harder to analyse a mistake calmly in the moment.',
+    reason:
+      'The claim that exam stress specifically "squashes the Pe signal" is not established — the anxiety/error-monitoring literature is mixed (anxiety often *increases* the earlier ERN), and there is no clean finding that acute exam stress reduces Pe amplitude. The supported mechanism — acute stress impairing prefrontal-cortex function (Arnsten 2009) — is kept and cited; the specific unsupported Pe-under-stress claim was removed.',
+    date: '2026-06-23',
+  },
 ];
