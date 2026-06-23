@@ -41,7 +41,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] The Teaching Effect — `teaching-effect.md`
 
 ### 🧠 Architecture / Mindset (13)
-- [ ] The Driver
+- [x] The Driver — `agency-protocol.md`
 - [ ] The Science of Hope
 - [ ] Affirming Values
 - [ ] Best Possible Self
