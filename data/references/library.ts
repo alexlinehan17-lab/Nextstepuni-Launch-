@@ -354,4 +354,38 @@ export const REF = {
     source: 'Journal of Educational Psychology',
     doi: '10.1037/0022-0663.93.2.346',
   },
+
+  // Attention modes, incubation, mind-wandering, anticipatory aversion
+  raichle2001: {
+    id: 'raichle2001',
+    authors: 'Raichle, M. E., MacLeod, A. M., Snyder, A. Z., Powers, W. J., Gusnard, D. A., & Shulman, G. L.',
+    year: 2001,
+    title: 'A default mode of brain function',
+    source: 'Proceedings of the National Academy of Sciences',
+    doi: '10.1073/pnas.98.2.676',
+  },
+  sio2009: {
+    id: 'sio2009',
+    authors: 'Sio, U. N., & Ormerod, T. C.',
+    year: 2009,
+    title: 'Does incubation enhance problem solving? A meta-analytic review',
+    source: 'Psychological Bulletin',
+    doi: '10.1037/a0014212',
+  },
+  baird2012: {
+    id: 'baird2012',
+    authors: 'Baird, B., Smallwood, J., Mrazek, M. D., Kam, J. W. Y., Franklin, M. S., & Schooler, J. W.',
+    year: 2012,
+    title: 'Inspired by distraction: Mind wandering facilitates creative incubation',
+    source: 'Psychological Science',
+    doi: '10.1177/0956797612446024',
+  },
+  lyons2012: {
+    id: 'lyons2012',
+    authors: 'Lyons, I. M., & Beilock, S. L.',
+    year: 2012,
+    title: 'When math hurts: Math anxiety predicts pain network activation in anticipation of doing math',
+    source: 'PLoS ONE',
+    doi: '10.1371/journal.pone.0048076',
+  },
 } satisfies Record<string, Reference>;

@@ -21,7 +21,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] Elaborative Interrogation — `elaborative-interrogation.md`
 - [x] Cognitive Endurance — `cognitive-endurance.md`
 - [x] Mental Modelling — `mental-modelling.md`
-- [ ] Focused vs Diffuse Mode
+- [x] Focused vs Diffuse Mode — `bimodal-brain.md`
 - [ ] Creating Barriers for Digital Distractions
 - [ ] The Learning Radar
 - [ ] The Note-Taking Paradox

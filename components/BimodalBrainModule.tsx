@@ -15,6 +15,8 @@ import { purpleTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { Cite } from './ModuleReferences';
+import { BIMODAL_BRAIN_REFERENCE_LIST } from '../data/references/bimodalBrain';
 
 const theme = purpleTheme;
 
@@ -401,15 +403,16 @@ const BimodalBrainModule: React.FC<{ onBack: () => void; progress: ModuleProgres
       progress={progress}
       onProgressUpdate={onProgressUpdate}
       finishButtonText="Switch Your Mode"
+      references={BIMODAL_BRAIN_REFERENCE_LIST}
     >
       {(activeSection) => (
         <>
           {activeSection === 0 && (
             <ReadingSection title="Your Brain Has Two Gears." eyebrow="Step 1" icon={Brain} theme={theme}>
               {essentials ? (
-                <p>Your brain has two modes. <Highlight description="When you're fully locked in on something — like working through a maths problem step by step. Your brain is zoomed in and focused on the details." theme={theme}>Focused Mode</Highlight> is your "head down" gear for problems you know how to solve. <Highlight description="When your mind is relaxed and wandering — like daydreaming in the shower. Your brain is making connections in the background that you'd never spot while concentrating hard." theme={theme}>Diffuse Mode</Highlight> is your relaxed gear where your brain connects dots in the background. You need both.</p>
+                <p>Your brain has two modes. <Highlight description="When you're fully locked in on something — like working through a maths problem step by step. Your brain is zoomed in and focused on the details." theme={theme}>Focused Mode</Highlight> is your "head down" gear for problems you know how to solve. <Highlight description="When your mind is relaxed and wandering — like daydreaming in the shower. Your brain is making connections in the background that you'd never spot while concentrating hard." theme={theme}>Diffuse Mode</Highlight> is your relaxed gear where your brain connects dots in the background.<Cite n={1} /> You need both.</p>
               ) : (
-                <p>Here's something most people never get told: your brain doesn't just think one way — it has two completely different modes. <Highlight description="When you're fully locked in on something — like working through a maths problem step by step. Your brain is zoomed in and focused on the details." theme={theme}>Focused Mode</Highlight> is your "head down, get it done" gear. It's what kicks in when you're working through a maths problem you know how to solve. Then there's <Highlight description="When your mind is relaxed and wandering — like daydreaming in the shower. Your brain is making connections in the background that you'd never spot while concentrating hard." theme={theme}>Diffuse Mode</Highlight> — your "chill out and let ideas come to you" gear. It's that relaxed, mind-wandering state where your brain quietly connects dots you didn't even know were there.</p>
+                <p>Here's something most people never get told: your brain doesn't just think one way — it has two completely different modes. <Highlight description="When you're fully locked in on something — like working through a maths problem step by step. Your brain is zoomed in and focused on the details." theme={theme}>Focused Mode</Highlight> is your "head down, get it done" gear. It's what kicks in when you're working through a maths problem you know how to solve. Then there's <Highlight description="When your mind is relaxed and wandering — like daydreaming in the shower. Your brain is making connections in the background that you'd never spot while concentrating hard." theme={theme}>Diffuse Mode</Highlight> — your "chill out and let ideas come to you" gear. It's that relaxed, mind-wandering state where your brain quietly connects dots you didn't even know were there.<Cite n={1} /></p>
               )}
             </ReadingSection>
           )}
@@ -418,7 +421,7 @@ const BimodalBrainModule: React.FC<{ onBack: () => void; progress: ModuleProgres
                 {essentials ? (
                   <>
                     <p>Focused Mode is for step-by-step work. You're practising equations or following methods. But if you hit a wall, this mode works against you. Your thoughts keep bouncing off the same spots.</p>
-                    <p>Diffuse Mode is where "Aha!" moments happen. Your brain links ideas from different places. You can't force it. Go for a walk or stare out the window. When you stop trying, your brain does its best work.</p>
+                    <p>Diffuse Mode is where "Aha!" moments happen. Your brain links ideas from different places.<Cite n={2} /> You can't force it. Go for a walk or stare out the window. When you stop trying, your brain does its best work.</p>
                   </>
                 ) : (
                   <p>Think of Focused Mode like a pinball machine with tightly packed bumpers. Your thoughts bounce around in a small area, working through something familiar step by step. This is the gear you need for practising equations in Maths or balancing reactions in Chemistry — anything where you're following a method you've already learned. It's the mode you're in during a focused study sprint. But here's the catch: if you hit a wall on something new or tricky, this mode can actually work against you. Your thoughts just keep bouncing off the same spots, and you end up more frustrated than when you started.</p>
@@ -428,15 +431,15 @@ const BimodalBrainModule: React.FC<{ onBack: () => void; progress: ModuleProgres
           )}
           {!essentials && activeSection === 2 && (
              <ReadingSection title="Gear Two: The Wandering Mind." eyebrow="Step 3" icon={Lightbulb} theme={theme}>
-                <p>Now picture the pinball machine with the bumpers spread way apart. Your thoughts can travel across your whole brain, linking up ideas from completely different places — maybe something from History clicks with a Biology concept, or a song lyric helps you remember a formula. This is where those "Aha!" moments come from. The thing is, you can't force it. You just have to create the right conditions — go for a walk, have a shower, stare out the window for a bit. When you stop trying so hard, your brain does some of its best work.</p>
+                <p>Now picture the pinball machine with the bumpers spread way apart. Your thoughts can travel across your whole brain, linking up ideas from completely different places — maybe something from History clicks with a Biology concept, or a song lyric helps you remember a formula. This is where those "Aha!" moments come from.<Cite n={2} /> The thing is, you can't force it. You just have to create the right conditions — go for a walk, have a shower, stare out the window for a bit. When you stop trying so hard, your brain does some of its best work.</p>
             </ReadingSection>
           )}
           {(essentials ? activeSection === 2 : activeSection === 3) && (
              <ReadingSection title="Switching Between Gears." eyebrow={essentials ? "Step 3" : "Step 4"} icon={PauseCircle} theme={theme}>
                 {essentials ? (
-                  <p>When you're stuck, step away on purpose. Your brain keeps working in the background. This is the <Highlight description="That thing where the answer just 'pops' into your head after you've walked away from a problem for a while. Your brain was quietly working on it the whole time." theme={theme}>Incubation Effect</Highlight>. Come back and the answer often clicks.</p>
+                  <p>When you're stuck, step away on purpose. Your brain keeps working in the background. This is the <Highlight description="That thing where the answer just 'pops' into your head after you've walked away from a problem for a while. Your brain was quietly working on it the whole time." theme={theme}>Incubation Effect</Highlight>.<Cite n={3} /> Come back and the answer often clicks.</p>
                 ) : (
-                  <p>This is the real skill: knowing when to switch gears. Grind away in Focused Mode on a tough problem. When you hit a wall, step away on purpose — take a break, go for a walk, do something completely different. Here's what's cool: your brain keeps working on the problem in the background even when you're not thinking about it (this is called the <Highlight description="That thing where the answer just 'pops' into your head after you've walked away from a problem for a while. Your brain was quietly working on it the whole time." theme={theme}>Incubation Effect</Highlight>). When you come back to the problem, the answer often just clicks.</p>
+                  <p>This is the real skill: knowing when to switch gears. Grind away in Focused Mode on a tough problem. When you hit a wall, step away on purpose — take a break, go for a walk, do something completely different. Here's what's cool: your brain keeps working on the problem in the background even when you're not thinking about it (this is called the <Highlight description="That thing where the answer just 'pops' into your head after you've walked away from a problem for a while. Your brain was quietly working on it the whole time." theme={theme}>Incubation Effect</Highlight>).<Cite n={3} /> When you come back to the problem, the answer often just clicks.</p>
                 )}
                 <IncubationEffectDemo />
                 <MicroCommitment theme={theme}><p>The next time you're stuck on a homework problem, don't just push harder. Get up and walk around for 5 minutes. You're not giving up — you're using a different part of your brain.</p></MicroCommitment>
@@ -444,7 +447,7 @@ const BimodalBrainModule: React.FC<{ onBack: () => void; progress: ModuleProgres
           )}
           {!essentials && activeSection === 4 && (
             <ReadingSection title="Why We Put Things Off." eyebrow="Step 5" icon={Clock} theme={theme}>
-                <p>Ever notice how the hardest part of studying is just... starting? That's because your brain doesn't like the discomfort of switching into Focused Mode for something hard. It feels painful before you begin, so you scroll your phone instead. The trick? Don't tell yourself you need to study for an hour. Just commit to 5 minutes. That's it. Once you're actually going, the pain fades and it's way easier to keep at it. Starting is always the worst bit — once you're in, you're in.</p>
+                <p>Ever notice how the hardest part of studying is just... starting? That's because your brain doesn't like the discomfort of switching into Focused Mode for something hard. For a task you find aversive, just anticipating it can register as genuine discomfort, so you scroll your phone instead.<Cite n={4} /> The trick? Don't tell yourself you need to study for an hour. Just commit to 5 minutes. That's it. Once you're actually going, the pain fades and it's way easier to keep at it. Starting is always the worst bit — once you're in, you're in.</p>
             </ReadingSection>
           )}
           {(essentials ? activeSection === 3 : activeSection === 5) && (
