@@ -14,7 +14,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 ### 🎯 Learning Cheat Codes (15)
 - [x] Mastering Active Recall — `active-recall.md`
 - [x] Mastering Spaced Repetition — `spaced-repetition.md`
-- [ ] Mix It Up (Interleaving)
+- [x] Mix It Up (Interleaving) — `interleaving.md`
 - [ ] Overcoming Illusions of Competence
 - [ ] Using Feedback Loops
 - [ ] How Your Memory Works

@@ -92,4 +92,30 @@ export const REF = {
     source: 'Psychological Science',
     doi: '10.1111/j.1467-9280.2008.02209.x',
   },
+
+  // Interleaving
+  rohrer2007: {
+    id: 'rohrer2007',
+    authors: 'Rohrer, D., & Taylor, K.',
+    year: 2007,
+    title: 'The shuffling of mathematics problems improves learning',
+    source: 'Instructional Science',
+    doi: '10.1007/s11251-007-9015-8',
+  },
+  rohrer2015: {
+    id: 'rohrer2015',
+    authors: 'Rohrer, D., Dedrick, R. F., & Stershic, S.',
+    year: 2015,
+    title: 'Interleaved practice improves mathematics learning',
+    source: 'Journal of Educational Psychology',
+    doi: '10.1037/edu0000001',
+  },
+  kornell2008: {
+    id: 'kornell2008',
+    authors: 'Kornell, N., & Bjork, R. A.',
+    year: 2008,
+    title: 'Learning concepts and categories: Is spacing the enemy of induction?',
+    source: 'Psychological Science',
+    doi: '10.1111/j.1467-9280.2008.02127.x',
+  },
 } satisfies Record<string, Reference>;

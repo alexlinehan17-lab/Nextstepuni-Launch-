@@ -14,6 +14,8 @@ import { purpleTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { Cite } from './ModuleReferences';
+import { INTERLEAVING_REFERENCE_LIST } from '../data/references/interleaving';
 
 const theme = purpleTheme;
 
@@ -165,7 +167,7 @@ const MasteringInterleavingModule: React.FC<{ onBack: () => void; progress: Modu
   ];
 
   return (
-    <ModuleLayout moduleNumber="03" moduleTitle="Mix It Up" moduleSubtitle="The Topic Salad Method" moduleDescription={`Stop studying one subject for hours on end. Mixing your topics feels harder, but it's the fastest way to build the kind of knowledge that actually holds up under exam pressure.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Shake Up Your Study">
+    <ModuleLayout moduleNumber="03" moduleTitle="Mix It Up" moduleSubtitle="The Topic Salad Method" moduleDescription={`Stop studying one subject for hours on end. Mixing your topics feels harder, but it's the fastest way to build the kind of knowledge that actually holds up under exam pressure.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Shake Up Your Study" references={INTERLEAVING_REFERENCE_LIST}>
       {(activeSection) => (
         <>
           {activeSection === 0 && (
@@ -173,12 +175,12 @@ const MasteringInterleavingModule: React.FC<{ onBack: () => void; progress: Modu
               {essentials ? (
                 <>
                   <p>Most students use <Highlight description="When you study one topic for ages before moving on, like doing Maths all Monday, English all Tuesday, Biology all Wednesday." theme={theme}>Blocked Practice</Highlight> -- one subject per night. It feels productive, but it creates a <Highlight description="That fake 'I totally know this' feeling you get right after studying something, just because it's still fresh in your head." theme={theme}>false sense of confidence</Highlight>.</p>
-                  <p>The exam mixes topics together. If you only practise one type at a time, you never learn to <Highlight description="Being able to look at a question and figure out which approach to use -- like knowing whether you need the chain rule or the product rule." theme={theme}>tell similar problems apart</Highlight>. That's exactly what costs you marks.</p>
+                  <p>The exam mixes topics together. If you only practise one type at a time, you never learn to <Highlight description="Being able to look at a question and figure out which approach to use -- like knowing whether you need the chain rule or the product rule." theme={theme}>tell similar problems apart</Highlight>. That's exactly what costs you marks.<Cite n={1} /></p>
                 </>
               ) : (
                 <>
                   <p>Most students study using <Highlight description="When you study one topic for ages before moving on, like doing Maths all Monday, English all Tuesday, Biology all Wednesday." theme={theme}>Blocked Practice</Highlight>. You spend Monday night on Maths, Tuesday on English, Wednesday on Biology. It feels productive. After three hours of Algebra, you feel like you've nailed it. But that feeling is actually a <Highlight description="That fake 'I totally know this' feeling you get right after studying something, just because it's still fresh in your head." theme={theme}>false sense of confidence</Highlight>.</p>
-                  <p>Here's the problem: your brain isn't being trained for the real exam. The exam doesn't hand you 20 algebra questions in a row. It throws a mix at you. When you practise the same type of question over and over, you never have to figure out <em>what</em> to do, only <em>how</em> to do it. You never build the skill of <Highlight description="Being able to look at a question and figure out which approach to use -- like knowing whether you need the chain rule or the product rule." theme={theme}>telling similar problems apart</Highlight>, and that's exactly what the exam tests.</p>
+                  <p>Here's the problem: your brain isn't being trained for the real exam. The exam doesn't hand you 20 algebra questions in a row. It throws a mix at you. When you practise the same type of question over and over, you never have to figure out <em>what</em> to do, only <em>how</em> to do it. You never build the skill of <Highlight description="Being able to look at a question and figure out which approach to use -- like knowing whether you need the chain rule or the product rule." theme={theme}>telling similar problems apart</Highlight>, and that's exactly what the exam tests.<Cite n={1} /></p>
                 </>
               )}
             </ReadingSection>
@@ -188,12 +190,12 @@ const MasteringInterleavingModule: React.FC<{ onBack: () => void; progress: Modu
               {essentials ? (
                 <>
                   <p>The fix: <Highlight description="Instead of studying one topic for ages, you mix different topics or question types together in the same session." theme={theme}>mix your topics</Highlight>. Think "topic salad" instead of "topic block." Mix everything together.</p>
-                  <p>Two levels: <Highlight description="Mixing different subjects across your week -- like doing Maths, English, and Biology all on Monday evening instead of just one." theme={theme}>mix across subjects</Highlight> in your weekly schedule. <Highlight description="Mixing different topics within one subject session -- like doing a bit of Algebra, then Stats, then Geometry, instead of just Algebra." theme={theme}>Mix within a subject</Highlight> during a single session. The harder it feels, the better it works.</p>
+                  <p>Two levels: <Highlight description="Mixing different subjects across your week -- like doing Maths, English, and Biology all on Monday evening instead of just one." theme={theme}>mix across subjects</Highlight> in your weekly schedule. <Highlight description="Mixing different topics within one subject session -- like doing a bit of Algebra, then Stats, then Geometry, instead of just Algebra." theme={theme}>Mix within a subject</Highlight> during a single session. The harder it feels, the better it works.<Cite n={2} /></p>
                 </>
               ) : (
                 <>
                   <p>The fix is simple but powerful: <Highlight description="Instead of studying one topic for ages, you mix different topics or question types together in the same session." theme={theme}>mixing your topics</Highlight>. Instead of a "topic block," think of your study session as a "topic salad." A fruit salad isn't a pile of apples next to a pile of bananas -- it's all mixed together. Your study should be the same.</p>
-                  <p>This works at two levels. <Highlight description="Mixing different subjects across your week -- like doing Maths, English, and Biology all on Monday evening instead of just one." theme={theme}>Mixing across subjects</Highlight> is about your weekly schedule: instead of one subject for 3 hours, study three subjects for 1 hour each. <Highlight description="Mixing different topics within one subject session -- like doing a bit of Algebra, then Stats, then Geometry, instead of just Algebra." theme={theme}>Mixing within a subject</Highlight> is about shuffling topics <em>within</em> a single study session. This one is harder, but that extra effort is exactly where the real learning happens.</p>
+                  <p>This works at two levels. <Highlight description="Mixing different subjects across your week -- like doing Maths, English, and Biology all on Monday evening instead of just one." theme={theme}>Mixing across subjects</Highlight> is about your weekly schedule: instead of one subject for 3 hours, study three subjects for 1 hour each. <Highlight description="Mixing different topics within one subject session -- like doing a bit of Algebra, then Stats, then Geometry, instead of just Algebra." theme={theme}>Mixing within a subject</Highlight> is about shuffling topics <em>within</em> a single study session. This one is harder, but that extra effort is exactly where the real learning happens.<Cite n={2} /></p>
                 </>
               )}
               <StudyPlannerInteractive />
@@ -203,13 +205,13 @@ const MasteringInterleavingModule: React.FC<{ onBack: () => void; progress: Modu
             <ReadingSection title="Why Harder Feels Better (For Your Brain)." eyebrow="Step 3" icon={Brain} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Switching topics feels harder. That's good. The extra effort is a <Highlight description="When studying feels tougher but that struggle is actually making your memory way stronger in the long run." theme={theme}>good kind of difficulty</Highlight> that builds stronger memory.</p>
-                  <p>When you study similar concepts together, your brain must <Highlight description="When you study similar topics back-to-back, your brain has to figure out what makes each one different -- and that's what helps you pick the right approach in the exam." theme={theme}>spot the differences</Highlight>. You learn when to use each rule. That's exactly what the exam tests.</p>
+                  <p>Switching topics feels harder. That's good. The extra effort is a <Highlight description="When studying feels tougher but that struggle is actually making your memory way stronger in the long run." theme={theme}>good kind of difficulty</Highlight> that builds stronger memory.<Cite n={4} /></p>
+                  <p>When you study similar concepts together, your brain must <Highlight description="When you study similar topics back-to-back, your brain has to figure out what makes each one different -- and that's what helps you pick the right approach in the exam." theme={theme}>spot the differences</Highlight>. You learn when to use each rule. That's exactly what the exam tests.<Cite n={3} /></p>
                 </>
               ) : (
                 <>
-                  <p>Mixing topics feels harder -- and that's the whole point. When you switch from Maths to English, your brain has to work to "reload" a completely different way of thinking. That extra effort is actually a <Highlight description="When studying feels tougher but that struggle is actually making your memory way stronger in the long run." theme={theme}>good kind of difficulty</Highlight>. Studying one thing on repeat feels smooth because it's like re-watching the same scene of a film over and over. Mixing it up forces your brain to keep switching gears, and that builds the mental muscle you need for the exam.</p>
-                  <p>Here's the key idea: when you put similar but different concepts next to each other (like differentiation and integration), your brain is forced to <Highlight description="When you study similar topics back-to-back, your brain has to figure out what makes each one different -- and that's what helps you pick the right approach in the exam." theme={theme}>spot the differences between them</Highlight>. You're not just learning a rule -- you're learning <em>when</em> to use that rule. And that's exactly what the exam asks you to do.</p>
+                  <p>Mixing topics feels harder -- and that's the whole point. When you switch from Maths to English, your brain has to work to "reload" a completely different way of thinking. That extra effort is actually a <Highlight description="When studying feels tougher but that struggle is actually making your memory way stronger in the long run." theme={theme}>good kind of difficulty</Highlight>.<Cite n={4} /> Studying one thing on repeat feels smooth because it's like re-watching the same scene of a film over and over. Mixing it up forces your brain to keep switching gears, and that builds the mental muscle you need for the exam.</p>
+                  <p>Here's the key idea: when you put similar but different concepts next to each other (like differentiation and integration), your brain is forced to <Highlight description="When you study similar topics back-to-back, your brain has to figure out what makes each one different -- and that's what helps you pick the right approach in the exam." theme={theme}>spot the differences between them</Highlight>. You're not just learning a rule -- you're learning <em>when</em> to use that rule. And that's exactly what the exam asks you to do.<Cite n={3} /></p>
                 </>
               )}
               <ProblemTypeSpotter/>
