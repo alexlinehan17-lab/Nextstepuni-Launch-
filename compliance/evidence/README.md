@@ -34,7 +34,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] The Power of Praise — `praise-protocol.md`
 - [x] Effective Struggle and Growth — `effective-struggle.md`
 - [x] The Science of Making Mistakes — `science-of-mistakes.md`
-- [ ] The Power of "Yet"
+- [x] The Power of "Yet" — `power-of-yet.md`
 - [ ] Using Controllable Variables to Grow
 - [ ] Linking Study to Future Goals
 - [ ] The Growth Playbook

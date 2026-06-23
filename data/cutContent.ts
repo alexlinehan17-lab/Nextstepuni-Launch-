@@ -365,4 +365,17 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The claim that exam stress specifically "squashes the Pe signal" is not established — the anxiety/error-monitoring literature is mixed (anxiety often *increases* the earlier ERN), and there is no clean finding that acute exam stress reduces Pe amplitude. The supported mechanism — acute stress impairing prefrontal-cortex function (Arnsten 2009) — is kept and cited; the specific unsupported Pe-under-stress claim was removed.',
     date: '2026-06-23',
   },
+  {
+    id: 'power-of-yet-001',
+    module: 'The Power of "Yet"',
+    section: 'Step 2 — The Software Patch',
+    action: 'reframed',
+    original:
+      'A school in Chicago actually replaced "Fail" grades with "Not Yet" on report cards, and students started trying harder and finishing more work.',
+    reframedTo:
+      'Some schools have even swapped "Fail" grades for "Not Yet" on report cards to send that exact message — a failed test isn\'t a verdict, it\'s just a checkpoint you haven\'t passed yet.',
+    reason:
+      'The "Chicago school" example comes from Carol Dweck\'s 2014 TED talk, not a peer-reviewed study, and the specific causal outcome — that students "started trying harder and finishing more work" — has no verifiable source. The "Not Yet" grading practice is kept as an illustration of the concept, but the unverifiable achievement/effort outcome was removed.',
+    date: '2026-06-23',
+  },
 ];

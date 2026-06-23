@@ -15,6 +15,8 @@ import { type ModuleProgress } from '../types';
 import { yellowTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { POWER_OF_YET_REFERENCE_LIST } from '../data/references/powerOfYet';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = yellowTheme;
@@ -499,6 +501,7 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      references={POWER_OF_YET_REFERENCE_LIST}
       finishButtonText="Add Your 'Yet'"
     >
       {(activeSection) => (
@@ -523,12 +526,12 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
               {essentials ? (
                 <>
                   <p>The fix is one word: <strong>"yet."</strong> Stick it on the end of any "I can't" statement. "I can't do this" becomes "I can't do this... yet." It turns a verdict into a progress update.</p>
-                  <p>A school replaced "Fail" with "Not Yet" and students tried harder. You are not a failure. You are just not finished.</p>
+                  <p>Some schools have even replaced the grade "Fail" with "Not Yet" to send that exact message. You are not a failure. You are just not finished.</p>
                 </>
               ) : (
                 <>
                   <p>The fix is surprisingly simple: the word "yet." Just stick it on the end of any "I can't" statement and the whole meaning changes. "I can't do this" becomes "I can't do this... yet." "I don't understand this" becomes "I don't understand this... yet."</p>
-                  <p>That one word turns a final verdict into a progress update. It reminds you that <Highlight description="Where you are right now isn't where you'll always be. You're just at one point on the journey, not the end of it." theme={theme}>where you are now isn't where you'll stay</Highlight>. A school in Chicago actually replaced "Fail" grades with "Not Yet" on report cards, and students started trying harder and finishing more work. You're not a failure -- you're just not finished.</p>
+                  <p>That one word turns a final verdict into a progress update. It reminds you that <Highlight description="Where you are right now isn't where you'll always be. You're just at one point on the journey, not the end of it." theme={theme}>where you are now isn't where you'll stay</Highlight>. Some schools have even swapped "Fail" grades for "Not Yet" on report cards to send that exact message — a failed test isn't a verdict, it's just a checkpoint you haven't passed yet. You're not a failure -- you're just not finished.</p>
                 </>
               )}
               <MicroCommitment theme={theme}>
@@ -540,13 +543,13 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
             <ReadingSection title="The Brain on 'Yet'." eyebrow="Step 3" icon={Brain} theme={theme}>
               {essentials ? (
                 <>
-                  <p>When you make a mistake, your brain fires an error signal. If you believe you cannot improve, your brain quickly looks away from the mistake. If you believe you can grow, your brain locks on and learns from it.</p>
-                  <p>"Yet" keeps your brain in locked-on mode. It tells your brain to stay focused on the error instead of shutting down.</p>
+                  <p>When you make a mistake, your brain fires an error signal. If you believe you cannot improve, your brain tends to look away from the mistake. If you believe you can grow, your brain tends to lock on and learn from it.<Cite n={1} /></p>
+                  <p>"Yet" helps keep your brain in that locked-on mode. It tells your brain to stay focused on the error instead of shutting down.</p>
                 </>
               ) : (
                 <>
                   <p>This isn't just a feel-good trick -- it actually changes what's happening inside your head. When you make a mistake, your brain fires off an <Highlight description="A burst of brain activity that happens when you notice you've made a mistake. The stronger this signal is, the more your brain is actually paying attention to the error and learning from it." theme={theme}>error-attention signal</Highlight>. It's basically your brain saying, "Hold on, let me look at what went wrong here."</p>
-                  <p>When people believe they can't improve, their brain spots the mistake but then quickly looks away -- like it's trying to protect their ego. But when people believe they can grow, their brain locks onto the mistake and really digs into it. The word "yet" keeps your brain in that locked-on mode. It's like telling your brain, "This isn't over, stay focused," instead of letting it shut down and move on.</p>
+                  <p>In one study, people who believed they couldn't improve showed a weaker version of this signal — their brain spotted the mistake but quickly looked away, as if to protect the ego. People who believed they could grow showed a stronger signal: their brain locked onto the mistake and dug into it.<Cite n={1} /> The word "yet" helps keep your brain in that locked-on mode. It's like telling your brain, "This isn't over, stay focused," instead of letting it shut down and move on.</p>
                 </>
               )}
               <YetReframe />
@@ -555,11 +558,11 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
            {activeSection === 3 && (
             <ReadingSection title="The Action Bridge." eyebrow="Step 4" icon={Link} theme={theme}>
                 {essentials ? (
-                  <p>"Yet" alone is just a nice thought. You need a real plan. The full sentence is: "I can't do this yet, <strong>so I will...</strong>" Follow "yet" with a specific next step. That is the bridge from thinking to action.</p>
+                  <p>"Yet" alone is just a nice thought. You need a real plan. The full sentence is: "I can't do this yet, <strong>so I will...</strong>" Follow "yet" with a specific, concrete next step — vague plans like "try harder" tend to fizzle, while specific ones get done.<Cite n={2} /> That is the bridge from thinking to action.</p>
                 ) : (
                   <>
                     <p>"Yet" is powerful, but on its own it's just a nice thought. To actually make a difference, you need to follow it up with a real plan. That's the crucial third step: the <Highlight description="The specific, concrete thing you're going to do next to move from 'can't do it' to 'can do it'. It stops 'yet' from being empty words and turns it into actual progress." theme={theme}>Bridge to Action</Highlight>.</p>
-                    <p>The full sentence isn't just "I can't do this yet." It's "I can't do this yet, *so I will*..." That extra bit stops "yet" from being an excuse and turns it into a starting point. It connects the positive thinking to an actual next step. Here's the full method:</p>
+                    <p>The full sentence isn't just "I can't do this yet." It's "I can't do this yet, *so I will*..." That extra bit stops "yet" from being an excuse and turns it into a starting point. The key is that the next step is specific and concrete: research on "implementation intentions" finds that naming exactly what you'll do (and when) makes you far more likely to actually do it than a vague "I'll try harder."<Cite n={2} /> Here's the full method:</p>
                   </>
                 )}
                 <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
