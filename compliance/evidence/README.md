@@ -51,7 +51,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] Self Efficacy — `self-efficacy.md`
 - [x] Understanding Procrastination and Motivation — `procrastination.md`
 - [x] Reframing Catastrophic Thoughts — `catastrophic-thinking.md`
-- [ ] Building Emotional Intelligence
+- [x] Building Emotional Intelligence — `emotional-intelligence.md`
 - [ ] Reframing Progress
 - [ ] The Implementation Playbook
 
