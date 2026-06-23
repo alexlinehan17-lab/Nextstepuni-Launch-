@@ -14,6 +14,8 @@ import { cyanTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { Cite } from './ModuleReferences';
+import { MENTAL_MODELLING_REFERENCE_LIST } from '../data/references/mentalModelling';
 
 const theme = cyanTheme;
 
@@ -299,6 +301,7 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
       progress={progress}
       onProgressUpdate={onProgressUpdate}
       finishButtonText="See It Clearly"
+      references={MENTAL_MODELLING_REFERENCE_LIST}
     >
       {(activeSection) => (
         <>
@@ -306,7 +309,7 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
             <ReadingSection title="The Mind's Eye." eyebrow="Step 1" icon={Eye} theme={theme}>
               {essentials ? (
                 <>
-                  <p>In DCG and Engineering, the real skill is seeing shapes in your head before you draw them. This is <Highlight description="Building a 3D picture in your head that you can spin and test." theme={theme}>Mental Modelling</Highlight>. It is actually three skills bundled together:</p>
+                  <p>In DCG and Engineering, the real skill is seeing shapes in your head before you draw them. This is <Highlight description="Building a 3D picture in your head that you can spin and test." theme={theme}>Mental Modelling</Highlight>. It is actually three skills bundled together:<Cite n={1} /><Cite n={2} /></p>
                   <ConceptCardGrid
                     cards={[
                       { number: 1, term: "Spatial Visualisation", description: "The ability to imagine something changing shape step by step — like picturing what happens when you slice through a 3D object, or where two shapes overlap." },
@@ -318,7 +321,7 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
               ) : (
                 <>
                   <p>In subjects like DCG and Engineering, there's a skill nobody actually teaches you — but everyone expects you to have. It's not about what you draw; it's about what you can <em>see</em> in your head before you draw it. This is <Highlight description="Your ability to build a picture in your head — like a 3D model you can spin around, take apart, and test — all without touching a pencil." theme={theme}>Mental Modelling</Highlight>. It's the difference between blindly following steps and truly understanding the shape or mechanism you're working with.</p>
-                  <p>This "seeing in your head" skill isn't just one thing. It's actually a few different skills bundled together. The big three for these subjects are:</p>
+                  <p>This "seeing in your head" skill isn't just one thing. It's actually a few different skills bundled together. The big three for these subjects are:<Cite n={1} /><Cite n={2} /></p>
                   <ConceptCardGrid
                     cards={[
                       { number: 1, term: "Spatial Visualisation", description: "The ability to imagine something changing shape step by step — like picturing what happens when you slice through a 3D object, or where two shapes overlap." },
@@ -406,10 +409,10 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
            {activeSection === 4 && (
             <ReadingSection title="The Procedural Trap." eyebrow="Step 5" icon={AlertTriangle} theme={theme}>
               {essentials ? (
-                <p>The biggest mistake is the <Highlight description="Memorising drawing steps without understanding the 3D shape they represent." theme={theme}>"Procedural Trap."</Highlight> You memorise steps instead of understanding the shape. This works for textbook drawings but breaks on anything new. Examiners call these "conceptual errors."</p>
+                <p>The biggest mistake is the <Highlight description="Memorising drawing steps without understanding the 3D shape they represent." theme={theme}>"Procedural Trap."</Highlight> You memorise steps instead of understanding the shape.<Cite n={3} /> This works for textbook drawings but breaks on anything new. Examiners call these "conceptual errors."</p>
               ) : (
                 <>
-                  <p>The single biggest reason students struggle in DCG and Engineering is the <Highlight description="When you memorise the steps to draw something ('first draw this line, then this arc') without actually understanding why those steps work. You know the recipe but you don't understand the cooking." theme={theme}>"Procedural Trap."</Highlight> You end up treating geometry as a set of rules for drawing lines on paper, instead of understanding that those lines represent real 3D objects in space.</p>
+                  <p>The single biggest reason students struggle in DCG and Engineering is the <Highlight description="When you memorise the steps to draw something ('first draw this line, then this arc') without actually understanding why those steps work. You know the recipe but you don't understand the cooking." theme={theme}>"Procedural Trap."</Highlight> You end up treating geometry as a set of rules for drawing lines on paper, instead of understanding that those lines represent real 3D objects in space.<Cite n={3} /></p>
                   <p>The problem is that this kind of knowledge is fragile. You can perfectly copy a standard drawing from the textbook, but the moment the exam gives you something slightly different, you're lost — because you never actually understood the shape, you just memorised the steps. The examiner reports come back every year saying students make "conceptual errors" — and this is exactly what they're talking about.</p>
                 </>
               )}
@@ -421,9 +424,9 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
            {activeSection === 5 && (
             <ReadingSection title="The Training Plan." eyebrow="Step 6" icon={Pyramid} theme={theme}>
               {essentials ? (
-                <p>You can train this skill. It is not a talent you either have or do not have. The <Highlight description="Start with physical objects, move to predicting on screen, finish picturing shapes from words alone." theme={theme}>Spiral of Visualisation</Highlight> gives you a roadmap. Three phases:</p>
+                <p>You can train this skill. It is not a talent you either have or do not have.<Cite n={4} /> The <Highlight description="Start with physical objects, move to predicting on screen, finish picturing shapes from words alone." theme={theme}>Spiral of Visualisation</Highlight> gives you a roadmap.<Cite n={5} /> Three phases:</p>
               ) : (
-                <p>Here's the good news: this "seeing in your head" skill is something you can actually train — it's not a talent you either have or don't. Like any skill, you build it up gradually, starting easy and working your way to the hard stuff. The <Highlight description="A step-by-step training approach where you start by handling real objects, move on to predicting what things look like on screen, and finish by picturing shapes described only in words — each stage stretching your mind's eye a bit further." theme={theme}>Spiral of Visualisation</Highlight> gives you a roadmap for doing exactly that.</p>
+                <p>Here's the good news: this "seeing in your head" skill is something you can actually train — it's not a talent you either have or don't.<Cite n={4} /> Like any skill, you build it up gradually, starting easy and working your way to the hard stuff. The <Highlight description="A step-by-step training approach where you start by handling real objects, move on to predicting what things look like on screen, and finish by picturing shapes described only in words — each stage stretching your mind's eye a bit further." theme={theme}>Spiral of Visualisation</Highlight> gives you a roadmap for doing exactly that.<Cite n={5} /></p>
               )}
               <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>

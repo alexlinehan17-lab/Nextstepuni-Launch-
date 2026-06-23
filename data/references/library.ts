@@ -312,4 +312,46 @@ export const REF = {
     source: 'Cell Reports Medicine',
     doi: '10.1016/j.xcrm.2022.100895',
   },
+
+  // Spatial cognition / visualisation
+  shepard1971: {
+    id: 'shepard1971',
+    authors: 'Shepard, R. N., & Metzler, J.',
+    year: 1971,
+    title: 'Mental rotation of three-dimensional objects',
+    source: 'Science',
+    doi: '10.1126/science.171.3972.701',
+  },
+  linn1985: {
+    id: 'linn1985',
+    authors: 'Linn, M. C., & Petersen, A. C.',
+    year: 1985,
+    title: 'Emergence and characterization of sex differences in spatial ability: A meta-analysis',
+    source: 'Child Development',
+    doi: '10.2307/1130467',
+  },
+  uttal2013: {
+    id: 'uttal2013',
+    authors: 'Uttal, D. H., Meadow, N. G., Tipton, E., Hand, L. L., Alden, A. R., Warren, C., & Newcombe, N. S.',
+    year: 2013,
+    title: 'The malleability of spatial skills: A meta-analysis of training studies',
+    source: 'Psychological Bulletin',
+    doi: '10.1037/a0028446',
+  },
+  sorby2009: {
+    id: 'sorby2009',
+    authors: 'Sorby, S. A.',
+    year: 2009,
+    title: 'Educational research in developing 3-D spatial skills for engineering students',
+    source: 'International Journal of Science Education',
+    doi: '10.1080/09500690802595839',
+  },
+  rittlejohnson2001: {
+    id: 'rittlejohnson2001',
+    authors: 'Rittle-Johnson, B., Siegler, R. S., & Alibali, M. W.',
+    year: 2001,
+    title: 'Developing conceptual understanding and procedural skill in mathematics: An iterative process',
+    source: 'Journal of Educational Psychology',
+    doi: '10.1037/0022-0663.93.2.346',
+  },
 } satisfies Record<string, Reference>;
