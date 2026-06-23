@@ -72,11 +72,23 @@ const CutEntryCard: React.FC<{ entry: CutContentEntry }> = ({ entry }) => (
       </span>
       <p className="text-[13px] leading-relaxed" style={{ color: '#7a7068' }}>{entry.reason}</p>
     </div>
+
+    {/* Paper to dig out, for awaiting-source items */}
+    {entry.neededSource && (
+      <div className="mt-3 rounded-lg p-3" style={{ backgroundColor: '#FDEEDF', borderLeft: '3px solid #F26B1F' }}>
+        <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#8C3A0E' }}>
+          Find this paper to restore
+        </p>
+        <p className="text-[12px] leading-relaxed" style={{ color: '#8C3A0E' }}>{entry.neededSource}</p>
+      </div>
+    )}
   </div>
 );
 
 const CutContentPage: React.FC<CutContentPageProps> = ({ onBack }) => {
   const entries = CUT_CONTENT;
+  const awaiting = entries.filter(e => e.awaitingSource);
+  const resolved = entries.filter(e => !e.awaitingSource);
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#f0f0f0' }}>
@@ -140,14 +152,41 @@ const CutContentPage: React.FC<CutContentPageProps> = ({ onBack }) => {
           </div>
         ) : (
           <>
-            <p className="text-xs font-bold uppercase tracking-[0.12em] mb-3" style={{ color: '#9e9186' }}>
-              {entries.length} {entries.length === 1 ? 'entry' : 'entries'}
-            </p>
-            <div className="space-y-4">
-              {entries.map(entry => (
-                <CutEntryCard key={entry.id} entry={entry} />
-              ))}
-            </div>
+            {/* Awaiting references — reframed only because a primary source is
+                paywalled; restorable once the PDF is supplied. */}
+            {awaiting.length > 0 && (
+              <section className="mb-8">
+                <div className="rounded-xl p-4 mb-4" style={{ backgroundColor: 'white', border: '2px solid #F26B1F' }}>
+                  <p className="text-xs font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#8C3A0E' }}>
+                    Awaiting references · {awaiting.length}
+                  </p>
+                  <p className="text-[13px] leading-relaxed" style={{ color: '#7a7068' }}>
+                    These statements were reframed <span style={{ fontWeight: 600 }}>only</span> because their source
+                    paper is paywalled and the exact wording couldn&apos;t be verified against the primary source.
+                    Dig out the paper noted on each card and the original can be restored verbatim.
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  {awaiting.map(entry => (
+                    <CutEntryCard key={entry.id} entry={entry} />
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Reframed / removed for good */}
+            {resolved.length > 0 && (
+              <section>
+                <p className="text-xs font-bold uppercase tracking-[0.12em] mb-3" style={{ color: '#9e9186' }}>
+                  Reframed &amp; removed · {resolved.length}
+                </p>
+                <div className="space-y-4">
+                  {resolved.map(entry => (
+                    <CutEntryCard key={entry.id} entry={entry} />
+                  ))}
+                </div>
+              </section>
+            )}
           </>
         )}
       </div>

@@ -40,6 +40,14 @@ export interface CutContentEntry {
   reason: string;
   /** ISO date the cut was made. */
   date: string;
+  /**
+   * True when this was only reframed because a primary source is paywalled /
+   * unconfirmable — the original wording can be RESTORED verbatim once the PDF
+   * is supplied. These surface in their own "Awaiting references" section.
+   */
+  awaitingSource?: boolean;
+  /** The specific paper to dig out to restore the original (shown in the awaiting section). */
+  neededSource?: string;
 }
 
 export const CUT_CONTENT: CutContentEntry[] = [
@@ -55,6 +63,8 @@ export const CUT_CONTENT: CutContentEntry[] = [
     reason:
       'The specific figures (35% / 80%) come from Karpicke & Roediger (2008, Science), which is paywalled with no open-access copy, so the exact numbers could not be verified against the primary source. Reframed to the qualitative finding, which the abstract fully supports. Citation retained (doi:10.1126/science.1152408). Exact figures can be restored if the PDF is supplied.',
     date: '2026-06-23',
+    awaitingSource: true,
+    neededSource: 'Karpicke, J. D., & Roediger, H. L. (2008). The critical importance of retrieval for learning. Science. doi:10.1126/science.1152408',
   },
   {
     id: 'mastering-active-recall-002',
@@ -68,6 +78,8 @@ export const CUT_CONTENT: CutContentEntry[] = [
     reason:
       'The 92%/72% figures trace to Agarwal et al. (2014, JARMAC), which is paywalled and not indexed in open databases. The percentages are corroborated by multiple secondary sources but could not be confirmed against the primary full text, so they were reframed to a qualitative claim the paper supports. Citation retained (doi:10.1016/j.jarmac.2014.07.002).',
     date: '2026-06-23',
+    awaitingSource: true,
+    neededSource: "Agarwal, P. K., D'Antonio, L., Roediger, H. L., McDermott, K. B., & McDaniel, M. A. (2014). Classroom-based programs of retrieval practice reduce middle school and high school students' test anxiety. Journal of Applied Research in Memory and Cognition. doi:10.1016/j.jarmac.2014.07.002",
   },
   {
     id: 'mastering-active-recall-003',
