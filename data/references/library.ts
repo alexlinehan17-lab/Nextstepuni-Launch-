@@ -560,4 +560,22 @@ export const REF = {
     source: 'The Journal of Physiology',
     doi: '10.1113/jphysiol.1973.sp010273',
   },
+
+  // Activity-dependent myelination
+  gibson2014: {
+    id: 'gibson2014',
+    authors: 'Gibson, E. M., Purger, D., Mount, C. W., Goldstein, A. K., Lin, G. L., Wood, L. S., … Monje, M.',
+    year: 2014,
+    title: 'Neuronal activity promotes oligodendrogenesis and adaptive myelination in the mammalian brain',
+    source: 'Science',
+    doi: '10.1126/science.1252304',
+  },
+  mckenzie2014: {
+    id: 'mckenzie2014',
+    authors: 'McKenzie, I. A., Ohayon, D., Li, H., de Faria, J. P., Emery, B., Tohyama, K., & Richardson, W. D.',
+    year: 2014,
+    title: 'Motor skill learning requires active central myelination',
+    source: 'Science',
+    doi: '10.1126/science.1254960',
+  },
 } satisfies Record<string, Reference>;

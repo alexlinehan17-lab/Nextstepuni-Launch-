@@ -30,7 +30,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 
 ### 🌱 Science of Growth (10)
 - [x] Neuroplasticity — `neuroplasticity.md`
-- [ ] The Myelin Manual
+- [x] The Myelin Manual — `myelin-manual.md`
 - [ ] The Power of Praise
 - [ ] Effective Struggle and Growth
 - [ ] The Science of Making Mistakes

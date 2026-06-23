@@ -287,4 +287,30 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The "40%" figures overstate the effect. The underlying studies are real (Godden & Baddeley 1975, doi:10.1111/j.2044-8295.1975.tb01468.x; Smith, Glenberg & Bjork 1978, doi:10.3758/bf03197465), but the meta-analysis (Smith & Vela 2001, doi:10.3758/bf03196157) shows environmental context-dependent memory is real but modest and does not always replicate. Reframed to qualitative, and §4 now states the effect is "modest".',
     date: '2026-06-23',
   },
+  {
+    id: 'myelin-manual-001',
+    module: 'The Myelin Manual',
+    section: 'Step 2 — The Signal of Struggle',
+    action: 'reframed',
+    original:
+      'That feeling of struggle is not failure. It is your brain placing the order for a faster connection. No struggle means no upgrade. … It\'s the physical sensation of your brain placing the order for a faster, better connection.',
+    reframedTo:
+      "That feeling of effortful struggle is a sign you're practising at the right level — the focused, effortful practice that drives these changes. Coasting through easy material does much less.",
+    reason:
+      'Activity-dependent (adaptive) myelination is genuinely supported (Gibson et al. 2014, doi:10.1126/science.1252304; McKenzie et al. 2014, doi:10.1126/science.1254960) — neural activity drives myelination, and effortful practice produces that activity. But the popularised gloss that the *subjective feeling of struggle* is literally "the brain placing the order for myelin" (and "no struggle, no upgrade") overstates the science. Reframed to tie the change to effortful/focused practice (deliberate practice, desirable difficulty) rather than to the sensation of struggle itself.',
+    date: '2026-06-23',
+  },
+  {
+    id: 'myelin-manual-002',
+    module: 'The Myelin Manual',
+    section: 'Step 5 — The Rules of Myelination',
+    action: 'reframed',
+    original:
+      "It's permanent but slow. Once a skill gets wrapped in myelin, it sticks with you for good.",
+    reframedTo:
+      "It's durable but slow. A skill built through proper practice lasts far longer than anything you cram… but brain changes aren't frozen forever: stop practising completely and they gradually fade.",
+    reason:
+      'Claiming skills are "permanent" / "stick for good" contradicts the use-it-or-lose-it evidence in the very previous module (the juggling study, Draganski et al. 2004, showed training-induced brain changes reverse when practice stops). Reframed to "durable but reversible if abandoned" for consistency with the evidence.',
+    date: '2026-06-23',
+  },
 ];
