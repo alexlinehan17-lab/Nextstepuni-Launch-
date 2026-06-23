@@ -10,9 +10,11 @@ claim. Claims that could not be verified against an accessible primary source we
 reframed to the supported version (logged under *Reframed content*) rather than
 cited to an unconfirmed figure.
 
-In-app, references surface to students as faint superscript markers (`Cite`) with a
-quiet "The evidence" list at the foot of each section (`SectionSources`). The
-authoritative reference data lives in `data/references/activeRecall.ts`.
+In-app, references surface to students as faint superscript markers (`Cite`) that map
+to a module-wide **References** button (desktop: beside the progress wheel; mobile:
+top of the Sections drawer) which opens the full source list (`ReferencesModal`). The
+authoritative reference data lives in `data/references/activeRecall.ts`
+(`ACTIVE_RECALL_REFERENCE_LIST` — the order defines the superscript numbering).
 
 ---
 

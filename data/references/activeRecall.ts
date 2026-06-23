@@ -64,13 +64,15 @@ const REFERENCES = {
 
 export const ACTIVE_RECALL_REFERENCES = REFERENCES;
 
-// Per-section reference lists. The order here defines the superscript numbering
-// shown in each section (the <Cite n={…}/> markers map to this order).
-export const AR_SECTION_REFS: Record<string, Reference[]> = {
-  s1: [REFERENCES.rk2006],
-  s2: [REFERENCES.rk2006, REFERENCES.sb2015],
-  s3: [REFERENCES.kr2008],
-  s4: [REFERENCES.butler2010, REFERENCES.kb2011],
-  s5: [REFERENCES.agarwal2014],
-  s6: [REFERENCES.sb2015],
-};
+// Module-wide ordered reference list. The array order defines the superscript
+// numbering used by the inline <Cite n={…}/> markers AND the order shown in the
+// References modal (ModuleLayout). Ordered by first appearance in the module:
+//   1 rk2006 · 2 sb2015 · 3 kr2008 · 4 butler2010 · 5 kb2011 · 6 agarwal2014
+export const ACTIVE_RECALL_REFERENCE_LIST: Reference[] = [
+  REFERENCES.rk2006,
+  REFERENCES.sb2015,
+  REFERENCES.kr2008,
+  REFERENCES.butler2010,
+  REFERENCES.kb2011,
+  REFERENCES.agarwal2014,
+];

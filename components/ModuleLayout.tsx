@@ -5,9 +5,11 @@
 
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ArrowRight, CheckCircle2, Lock, List, X, Palette, Sun, Moon } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CheckCircle2, Lock, List, X, Palette, Sun, Moon, BookOpen } from 'lucide-react';
 import { type ModuleProgress, type SectionDefinition, type ModuleTheme, type CardStyleId } from '../types';
 import { ActivityRing } from './ModuleShared';
+import { ReferencesModal } from './ModuleReferences';
+import { type Reference } from '../data/references/types';
 import { useSettingsContext } from '../contexts/SettingsContext';
 import { CARD_STYLES } from '../themeData';
 import { COLORS } from '../design/tokens';
@@ -69,6 +71,10 @@ interface ModuleLayoutProps {
   /** When essentials mode uses fewer sections, set this to the full section count
    *  so completion is reported correctly against courseData.sectionsCount */
   fullSectionsCount?: number;
+  /** Verified peer-reviewed sources behind the module. When provided, a
+   *  "References" button appears (desktop: by the progress wheel; mobile: top of
+   *  the Sections drawer) opening the references modal. */
+  references?: Reference[];
   children: (activeSection: number) => React.ReactNode;
   // Celebration screen props (optional)
   categoryColor?: string;
@@ -89,6 +95,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   onProgressUpdate,
   finishButtonText = 'Complete Section',
   fullSectionsCount,
+  references,
   children,
   categoryColor,
   modulesCompleted,
@@ -100,6 +107,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
     progress.unlockedSection >= sections.length ? sections.length - 1 : progress.unlockedSection
   );
   const [mobileSectionsOpen, setMobileSectionsOpen] = useState(false);
+  const [referencesOpen, setReferencesOpen] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
   const [showCelebration, setShowCelebration] = useState(false);
   const [pickerOpen, setPickerOpen] = useState(false);
@@ -240,6 +248,14 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
           <p className="text-[11px] font-semibold text-zinc-900 dark:text-white uppercase tracking-widest text-center">Progress</p>
         </div>
 
+        {/* References (verified peer-reviewed sources) */}
+        {references && references.length > 0 && (
+          <button onClick={() => setReferencesOpen(true)} className="w-full mt-4 flex items-center justify-center gap-2 p-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors text-zinc-500 dark:text-zinc-400">
+            <BookOpen size={14} />
+            <span className="text-[10px] font-semibold uppercase tracking-widest">References</span>
+          </button>
+        )}
+
         {/* Floating theme/card picker */}
         {settingsCtx && (
           <div className="relative mt-4" ref={pickerRef}>
@@ -324,6 +340,18 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
                   <X size={16} className="text-zinc-400" />
                 </button>
               </div>
+              {/* References button — below the header, above the steps */}
+              {references && references.length > 0 && (
+                <div className="px-5 pb-3">
+                  <button
+                    onClick={() => { setMobileSectionsOpen(false); setReferencesOpen(true); }}
+                    className="w-full flex items-center justify-center gap-2 p-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors text-zinc-600 dark:text-zinc-300"
+                  >
+                    <BookOpen size={15} />
+                    <span className="text-xs font-semibold uppercase tracking-widest">References</span>
+                  </button>
+                </div>
+              )}
               <div className="px-4 pb-6 space-y-1">
                 {sections.map((section, idx) => {
                   const isUnlocked = idx <= unlockedSection;
@@ -376,6 +404,10 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
           </AnimatePresence>
         </div>
       </main>
+
+      {references && references.length > 0 && (
+        <ReferencesModal open={referencesOpen} onClose={() => setReferencesOpen(false)} references={references} />
+      )}
 
       {showConfetti && <ConfettiOverlay onDone={handleConfettiDone} />}
 
