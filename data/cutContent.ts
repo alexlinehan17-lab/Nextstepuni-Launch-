@@ -196,4 +196,43 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The ~23-minute figure is real (Mark, Gudith & Klocke 2008, doi:10.1145/1357054.1357072 — average time to return to an interrupted task), but the original linearly stacked it (e.g. "3 checks = over an hour lost"), which the study does not support (recovery periods overlap and vary). Reframed to cite the figure accurately and to label the interactive calculator as a simplified illustration rather than a precise measure.',
     date: '2026-06-23',
   },
+  {
+    id: 'learning-radar-001',
+    module: 'The Learning Radar',
+    section: "Step 1 — You Don't Know What You Don't Know",
+    action: 'reframed',
+    original:
+      'Students predicted they would remember 70% of what they studied. They actually remembered 37%. … across over 100 studies, researchers found that the link between how well students think they\'ll do and how they actually do is shockingly weak. Barely better than chance.',
+    reframedTo:
+      'Students routinely predict they\'ll remember far more than they actually do. … across many studies, researchers found that people\'s self-assessments line up only modestly with how they actually perform.',
+    reason:
+      'The specific 70%/37% word-pair figures could not be tied to a verifiable primary source, and "barely better than chance" overstates the evidence — the large metasynthesis of self-insight (Zell & Krizan 2014, doi:10.1177/1745691613518075) finds self-assessments correlate *modestly* (not near-zero) with performance. Reframed to the supported qualitative claim.',
+    date: '2026-06-23',
+  },
+  {
+    id: 'learning-radar-002',
+    module: 'The Learning Radar',
+    section: 'Step 2 — Why the Least Prepared Feel Most Confident (Confidence vs Reality curve)',
+    action: 'reframed',
+    original:
+      'The "Confidence vs. Reality Curve" interactive presented the popular rollercoaster Dunning-Kruger shape (Peak of Overconfidence → Valley of Doubt → Steady Improvement → Realistic Confidence) as how confidence tracks competence.',
+    reframedTo:
+      'Subtitle relabelled: "A simplified illustration of how confidence and real ability can drift apart — not a literal graph of any single study." Prose reflects the actual Kruger & Dunning (1999) finding.',
+    reason:
+      'The popular "valley of despair" rollercoaster curve is an internet meme, not the data from Kruger & Dunning (1999, doi:10.1037/0022-3514.77.6.1121), whose actual finding is that low performers overestimate and top performers slightly underestimate (no valley). The prose was corrected to the real finding and the interactive is now explicitly labelled an illustration rather than the empirical curve.',
+    date: '2026-06-23',
+  },
+  {
+    id: 'learning-radar-003',
+    module: 'The Learning Radar',
+    section: 'Step 6 — The Prediction Game',
+    action: 'reframed',
+    original:
+      'Students who did this improved their prediction accuracy by 50% over a year. This skill transfers across subjects too. … Students who practised predicting in one subject showed better self-awareness in completely unrelated subjects. This isn\'t a trick that only works for one topic — it\'s a general skill.',
+    reframedTo:
+      'Students who do this get noticeably better at predicting their performance over time. The habit tends to carry over to other subjects too. … It behaves less like a one-topic trick and more like a general habit.',
+    reason:
+      'The specific "50% more accurate over a year" figure could not be verified, and the strong cross-subject "transfer" claim overstates a contested area (metacognitive transfer across domains is not firmly established). Reframed to the supported qualitative claim that prediction practice improves calibration and tends to generalise.',
+    date: '2026-06-23',
+  },
 ];

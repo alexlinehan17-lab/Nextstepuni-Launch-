@@ -422,4 +422,30 @@ export const REF = {
     source: 'American Psychologist',
     doi: '10.1037/0003-066x.54.7.493',
   },
+
+  // Metacognition: calibration, self-insight, judgments of learning
+  kruger1999: {
+    id: 'kruger1999',
+    authors: 'Kruger, J., & Dunning, D.',
+    year: 1999,
+    title: "Unskilled and unaware of it: How difficulties in recognizing one's own incompetence lead to inflated self-assessments",
+    source: 'Journal of Personality and Social Psychology',
+    doi: '10.1037/0022-3514.77.6.1121',
+  },
+  zell2014: {
+    id: 'zell2014',
+    authors: 'Zell, E., & Krizan, Z.',
+    year: 2014,
+    title: 'Do people have insight into their abilities? A metasynthesis',
+    source: 'Perspectives on Psychological Science',
+    doi: '10.1177/1745691613518075',
+  },
+  nelson1991: {
+    id: 'nelson1991',
+    authors: 'Nelson, T. O., & Dunlosky, J.',
+    year: 1991,
+    title: "When people's judgments of learning (JOLs) are extremely accurate at predicting subsequent recall: The 'delayed-JOL effect'",
+    source: 'Psychological Science',
+    doi: '10.1111/j.1467-9280.1991.tb00147.x',
+  },
 } satisfies Record<string, Reference>;

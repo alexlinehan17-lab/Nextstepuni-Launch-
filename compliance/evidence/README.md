@@ -23,7 +23,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] Mental Modelling — `mental-modelling.md`
 - [x] Focused vs Diffuse Mode — `bimodal-brain.md`
 - [x] Creating Barriers for Digital Distractions — `digital-distraction.md`
-- [ ] The Learning Radar
+- [x] The Learning Radar — `learning-radar.md`
 - [ ] The Note-Taking Paradox
 - [ ] Cognitive Load
 - [ ] The Context Effect
