@@ -35,7 +35,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] Effective Struggle and Growth — `effective-struggle.md`
 - [x] The Science of Making Mistakes — `science-of-mistakes.md`
 - [x] The Power of "Yet" — `power-of-yet.md`
-- [ ] Using Controllable Variables to Grow
+- [x] Using Controllable Variables to Grow — `controllable-variables.md`
 - [ ] Linking Study to Future Goals
 - [ ] The Growth Playbook
 - [ ] The Teaching Effect

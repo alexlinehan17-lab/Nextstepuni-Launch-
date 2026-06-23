@@ -378,4 +378,30 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The "Chicago school" example comes from Carol Dweck\'s 2014 TED talk, not a peer-reviewed study, and the specific causal outcome — that students "started trying harder and finishing more work" — has no verifiable source. The "Not Yet" grading practice is kept as an illustration of the concept, but the unverifiable achievement/effort outcome was removed.',
     date: '2026-06-23',
   },
+  {
+    id: 'controllable-variables-001',
+    module: 'Using Controllable Variables to Grow',
+    section: 'Step 2 — Sleep',
+    action: 'reframed',
+    original:
+      'After just one week of 5-hour nights, your working memory drops by about 17% — that\'s enough to drop you from an A to a C.',
+    reframedTo:
+      'After just a week of 5-hour nights, your working memory takes a real hit — chronic short sleep builds up a cognitive deficit that keeps growing the longer it drags on.',
+    reason:
+      'The directional claim — chronic sleep restriction progressively impairs working memory / neurobehavioral function — is well established (Van Dongen et al. 2003) and is kept and cited. But the precise "17%" figure and the "A to a C" grade equivalence could not be traced to a specific, locatable paper reporting exactly that, so both were reframed to the supported qualitative claim.',
+    date: '2026-06-23',
+  },
+  {
+    id: 'controllable-variables-002',
+    module: 'Using Controllable Variables to Grow',
+    section: 'Step 2/3 — Sleep simulator & Nutrition',
+    action: 'reframed',
+    original:
+      'Simulator milestones "Working memory reduced by 30%" and "You are now LEGALLY DRUNK in terms of cognitive function"; nutrition text "even mild dehydration (losing just 1% of your body weight in water) is enough to mess with your working memory."',
+    reframedTo:
+      'Simulator now reads "Working memory is now clearly impaired" and "Your impairment now rivals being over the drink-drive limit"; nutrition text reads "even mild dehydration is enough to make it harder to concentrate."',
+    reason:
+      'The "30%" working-memory figure and the precise "1% body-weight dehydration impairs working memory" claim could not be tied to a specific verifiable source, and "legally drunk" is a jurisdiction-specific legal claim. The supported core — prolonged wakefulness produces alcohol-equivalent impairment (Dawson & Reid 1997, who found ~17 h awake ≈ BAC 0.05%) — is kept and cited; the unverifiable precise figures were softened to qualitative statements.',
+    date: '2026-06-23',
+  },
 ];
