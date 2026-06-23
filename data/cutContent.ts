@@ -274,4 +274,17 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The split-attention effect is well established (Chandler & Sweller 1992, doi:10.1111/j.2044-8279.1992.tb01017.x), but the specific "30-50%" range is not a single verifiable figure (effect sizes vary by study and material). Reframed to the supported qualitative claim.',
     date: '2026-06-23',
   },
+  {
+    id: 'context-effect-001',
+    module: 'The Context Effect',
+    section: 'Steps 1 & 2 — Context-dependent memory',
+    action: 'reframed',
+    original:
+      'People tested in the same place they studied recalled 40% more. … students who studied in two different rooms recalled 40% more than those who stayed in one room.',
+    reframedTo:
+      'People tested in the same place they studied tend to recall noticeably more. … students who studied in two different rooms recalled more than those who stayed in one room.',
+    reason:
+      'The "40%" figures overstate the effect. The underlying studies are real (Godden & Baddeley 1975, doi:10.1111/j.2044-8295.1975.tb01468.x; Smith, Glenberg & Bjork 1978, doi:10.3758/bf03197465), but the meta-analysis (Smith & Vela 2001, doi:10.3758/bf03196157) shows environmental context-dependent memory is real but modest and does not always replicate. Reframed to qualitative, and §4 now states the effect is "modest".',
+    date: '2026-06-23',
+  },
 ];

@@ -26,7 +26,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] The Learning Radar — `learning-radar.md`
 - [x] The Note-Taking Paradox — `note-taking-paradox.md`
 - [x] Cognitive Load — `cognitive-load.md`
-- [ ] The Context Effect
+- [x] The Context Effect — `context-effect.md`
 
 ### 🌱 Science of Growth (10)
 - [ ] Neuroplasticity

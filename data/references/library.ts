@@ -500,4 +500,38 @@ export const REF = {
     source: 'Educational Psychologist',
     doi: '10.1207/s15326985ep3801_4',
   },
+
+  // Context-dependent memory; ambient noise
+  godden1975: {
+    id: 'godden1975',
+    authors: 'Godden, D. R., & Baddeley, A. D.',
+    year: 1975,
+    title: 'Context-dependent memory in two natural environments: On land and underwater',
+    source: 'British Journal of Psychology',
+    doi: '10.1111/j.2044-8295.1975.tb01468.x',
+  },
+  smith1978: {
+    id: 'smith1978',
+    authors: 'Smith, S. M., Glenberg, A., & Bjork, R. A.',
+    year: 1978,
+    title: 'Environmental context and human memory',
+    source: 'Memory & Cognition',
+    doi: '10.3758/bf03197465',
+  },
+  smithvela2001: {
+    id: 'smithvela2001',
+    authors: 'Smith, S. M., & Vela, E.',
+    year: 2001,
+    title: 'Environmental context-dependent memory: A review and meta-analysis',
+    source: 'Psychonomic Bulletin & Review',
+    doi: '10.3758/bf03196157',
+  },
+  mehta2012: {
+    id: 'mehta2012',
+    authors: 'Mehta, R., Zhu, R., & Cheema, A.',
+    year: 2012,
+    title: 'Is noise always bad? Exploring the effects of ambient noise on creative cognition',
+    source: 'Journal of Consumer Research',
+    doi: '10.1086/665048',
+  },
 } satisfies Record<string, Reference>;

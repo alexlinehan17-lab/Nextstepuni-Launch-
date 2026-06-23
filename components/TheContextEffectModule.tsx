@@ -12,6 +12,8 @@ import { purpleTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { Cite } from './ModuleReferences';
+import { CONTEXT_EFFECT_REFERENCE_LIST } from '../data/references/contextEffect';
 
 const theme = purpleTheme;
 
@@ -760,6 +762,7 @@ const TheContextEffectModule: React.FC<{ onBack: () => void; progress: ModulePro
       progress={progress}
       onProgressUpdate={onProgressUpdate}
       finishButtonText="Switch It Up"
+      references={CONTEXT_EFFECT_REFERENCE_LIST}
     >
       {(activeSection) => (
         <>
@@ -767,12 +770,12 @@ const TheContextEffectModule: React.FC<{ onBack: () => void; progress: ModulePro
             <ReadingSection title="Why You Blank in the Exam Hall." eyebrow="Step 1" icon={Map} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Your brain links what you learn to where you learn it. The room, the sounds, the lighting all become memory clues. People tested in the same place they studied recalled 40% more.</p>
+                  <p>Your brain links what you learn to where you learn it. The room, the sounds, the lighting all become memory clues. People tested in the same place they studied tend to recall noticeably more.<Cite n={1} /></p>
                   <p>This is why you blank in the exam hall. It strips away every familiar clue your brain was relying on. The knowledge is still there -- your brain just cannot find the path to it.</p>
                 </>
               ) : (
                 <>
-                  <p>In one of psychology's most famous experiments, divers learned word lists either underwater or on dry land, then were tested in either the same or a different environment. The result? Those tested in the <Highlight description="The place where you study — the room, the sounds, the lighting — all get tangled up with what you learn. Your brain links the info to the surroundings, so the same surroundings help you remember." theme={theme}>same environment</Highlight> they learned in recalled about 40% more. Your brain doesn't just store the information — it stores the whole scene around you: the room, the lighting, the sounds, even the smell.</p>
+                  <p>In one of psychology's most famous experiments, divers learned word lists either underwater or on dry land, then were tested in either the same or a different environment. The result? Those tested in the <Highlight description="The place where you study — the room, the sounds, the lighting — all get tangled up with what you learn. Your brain links the info to the surroundings, so the same surroundings help you remember." theme={theme}>same environment</Highlight> they learned in recalled noticeably more than those tested in a different one.<Cite n={1} /> Your brain doesn't just store the information — it stores the whole scene around you: the room, the lighting, the sounds, even the smell.</p>
                   <PersonalStory name="Aoife" role="5th Year, Cork">
                     <p>I used to do all my study in my bedroom with music on. I felt like I knew everything. Then I'd sit down in the exam hall and my mind would just go blank. I couldn't understand it — I'd studied for hours. It was like my brain left everything back in my room.</p>
                   </PersonalStory>
@@ -788,12 +791,12 @@ const TheContextEffectModule: React.FC<{ onBack: () => void; progress: ModulePro
             <ReadingSection title="The 'Switch It Up' Fix." eyebrow="Step 2" icon={Repeat} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Students who studied in two different rooms recalled 40% more than those who stayed in one room. When you study in multiple places, your brain creates <strong>location-proof memories</strong> that work anywhere.</p>
+                  <p>Students who studied in two different rooms recalled more than those who stayed in one room.<Cite n={2} /> When you study in multiple places, your brain creates <strong>location-proof memories</strong> that work anywhere.</p>
                   <p>Each new place adds different connections to the same information. More connections means more ways your brain can find it -- even in an unfamiliar exam hall.</p>
                 </>
               ) : (
                 <>
-                  <p>Researchers found something surprising: students who studied the same material in <Highlight description="When you study the same thing in two different places, your brain can't rely on any single room to help it remember. So it stores the information in a way that works anywhere." theme={theme}>two different rooms</Highlight> recalled about 40% more than those who studied in the same room twice. This seems to go against what we just learned about your brain linking memories to places — but it actually goes one step further.</p>
+                  <p>Researchers found something surprising: students who studied the same material in <Highlight description="When you study the same thing in two different places, your brain can't rely on any single room to help it remember. So it stores the information in a way that works anywhere." theme={theme}>two different rooms</Highlight> recalled more than those who studied in the same room twice.<Cite n={2} /> This seems to go against what we just learned about your brain linking memories to places — but it actually goes one step further.</p>
                   <p>When you study in multiple places, your brain can't rely on any single place as a clue, so it creates <Highlight description="Memories that aren't tied to any one place. Instead of needing your bedroom lamp or the sound of rain to remember, your brain connects the info to the ideas themselves. That makes the knowledge portable — it works anywhere, including the exam hall." theme={theme}>location-proof memories</Highlight>. The knowledge becomes portable — it works anywhere, including an unfamiliar exam hall. Instead of storing "this fact + my bedroom lamp + the sound of rain," your brain stores "this fact + lots of different connections," creating a web of memory paths that doesn't depend on any single place.</p>
                   <p>This is sometimes called the <Highlight description="When you study the same thing in different places, each place adds a new set of connections to that memory. More connections means more ways your brain can find the information later, even in a totally new setting like an exam hall." theme={theme}>variety advantage</Highlight>: different study spots create multiple paths to the same information. Each new place adds a different set of connections — the hum of a cafe, the silence of a library, the kitchen radio in the background. When exam day arrives and none of those specific clues are around, it doesn't matter. Your brain has so many alternative paths that some of them will activate, letting you remember even in a completely new setting.</p>
                 </>
@@ -804,12 +807,12 @@ const TheContextEffectModule: React.FC<{ onBack: () => void; progress: ModulePro
             <ReadingSection title="Does Noise Help or Hurt?" eyebrow="Step 3" icon={Activity} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Moderate background noise boosts creative thinking. But for focused tasks like maths problems or memorisation, quiet is better. The rule is simple: match your noise level to your task.</p>
+                  <p>Moderate background noise can boost creative thinking.<Cite n={3} /> But for focused tasks like maths problems or memorisation, quiet is better. The rule is simple: match your noise level to your task.</p>
                   <p>Reading a chapter for understanding? A cafe might help. Drilling past papers or memorising vocab? You need silence. Choose your environment based on what you are doing.</p>
                 </>
               ) : (
                 <>
-                  <p>Here's a surprising finding: moderate background noise (about the level of a busy cafe) actually <Highlight description="A bit of background buzz — like in a cafe ��� gives your brain just enough of a challenge to push it into bigger-picture thinking. It's not so loud that it distracts you, but it's enough to stop you from getting too narrowly focused." theme={theme}>boosts creative thinking</Highlight> compared to both total silence and loud noise. A bit of background buzz creates just enough of a challenge — a kind of <Highlight description="Sometimes making studying feel a little harder actually helps you learn better in the long run. A small amount of background noise is one example — it slightly disrupts your focus, which pushes your brain into a broader way of thinking that helps with creative tasks." theme={theme}>helpful challenge</Highlight> — to push your thinking from narrow, step-by-step mode into bigger-picture mode.</p>
+                  <p>Here's a surprising finding: moderate background noise (about the level of a busy cafe) can <Highlight description="A bit of background buzz — like in a cafe — gives your brain just enough of a challenge to push it into bigger-picture thinking. It's not so loud that it distracts you, but it's enough to stop you from getting too narrowly focused." theme={theme}>boost creative thinking</Highlight><Cite n={3} /> compared to both total silence and loud noise. A bit of background buzz creates just enough of a challenge — a kind of <Highlight description="Sometimes making studying feel a little harder actually helps you learn better in the long run. A small amount of background noise is one example — it slightly disrupts your focus, which pushes your brain into a broader way of thinking that helps with creative tasks." theme={theme}>helpful challenge</Highlight> — to push your thinking from narrow, step-by-step mode into bigger-picture mode.</p>
                   <p>However, decades of research have shown that for tasks needing focused concentration — like maths problem-solving or detailed memorisation — <Highlight description="Research across many studies found that noise consistently hurts performance on tasks that need careful, focused attention. But for creative or big-picture tasks, a moderate amount of noise can sometimes help." theme={theme}>quiet is better</Highlight>. Noise gets in the way of the careful, step-by-step thinking these tasks need. The practical rule is simple: use moderate noise for understanding and connecting ideas, use silence for memorisation and practice problems.</p>
                   <p>This means your study environment should match your task. Reading a history chapter to understand the big picture? A cafe might actually help your thinking. Drilling past paper questions in maths or memorising vocabulary? You need silence. The environment isn't just a backdrop — it's an active ingredient in how well your brain works. Planning your study sessions around this means deliberately choosing where you work based on what you're working on.</p>
                 </>
@@ -823,13 +826,13 @@ const TheContextEffectModule: React.FC<{ onBack: () => void; progress: ModulePro
               {essentials ? (
                 <>
                   <p>Each new study location wraps your information in different clues. More varied clues means more routes your brain has to find the memory. Think of it as building multiple roads to the same city.</p>
-                  <p>This effect stacks with other good habits like spaced repetition and self-testing. Switching spots is not a replacement for good study techniques -- it is a booster on top of them.</p>
+                  <p>This effect stacks with other good habits like spaced repetition and self-testing.<Cite n={4} /> Switching spots is not a replacement for good study techniques -- it is a booster on top of them.</p>
                 </>
               ) : (
                 <>
                   <p>Here's the science behind it: every time you study the same material in a different place, you create a <Highlight description="Each time you study in a new spot, your brain wraps the information in different surroundings — the sounds, the feel of the chair, the lighting. Each version gives your brain a different path to find that memory later." theme={theme}>new set of connections</Highlight>. Each place adds different clues. The more varied those clues are, the more routes your brain has to find the memory. Think of it like building roads to a city — one road is vulnerable to a single blocked bridge, but five roads from different directions means you can always find a way through.</p>
                   <p>This is why studying the same flashcards on the bus, in your bedroom, and in the library creates stronger memories than studying them three times in the same spot. Each location wraps the information in a different package. The bus adds the rumble of the engine and the movement. Your bedroom adds the familiar sounds of home. The library adds the particular quality of silence and the presence of other students. Each version of the memory is slightly different, and those differences create <Highlight description="Your brain doesn't store memories in just one place — it builds a web of connections. Each time you study in a new spot, you add another thread to that web. More threads means more ways to pull the memory back, so even if one path is blocked, others still work." theme={theme}>backup paths to the same information</Highlight>.</p>
-                  <p>Research has confirmed that studying in different places reliably <Highlight description="Studies show this effect is real and consistent. It's not huge on its own, but it stacks on top of other good study habits like spaced repetition and mixing topics. Together, they make a much bigger difference." theme={theme}>improves how well you remember</Highlight>. The effect is not massive on its own, but it stacks with other good habits like spaced repetition and mixing topics. This is key — switching study spots is not a replacement for other good study strategies; it's a booster. When you combine varied locations with regular self-testing and mixed topics, the combined effect on long-term memory is much bigger than any single trick alone.</p>
+                  <p>Research has confirmed that varying where you study can <Highlight description="A meta-analysis pulling together many studies found this effect is real but modest in size. It's not huge on its own, but it stacks on top of other good study habits like spaced repetition and mixing topics. Together, they make a much bigger difference." theme={theme}>improve how well you remember</Highlight>,<Cite n={4} /> though the effect is modest. The effect is not massive on its own, but it stacks with other good habits like spaced repetition and mixing topics. This is key — switching study spots is not a replacement for other good study strategies; it's a booster. When you combine varied locations with regular self-testing and mixed topics, the combined effect on long-term memory is much bigger than any single trick alone.</p>
                 </>
               )}
             </ReadingSection>
