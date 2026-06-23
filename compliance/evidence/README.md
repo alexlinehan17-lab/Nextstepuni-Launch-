@@ -44,7 +44,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] The Driver — `agency-protocol.md`
 - [x] The Science of Hope — `hope-protocol.md`
 - [x] Affirming Values — `affirming-values.md`
-- [ ] Best Possible Self
+- [x] Best Possible Self — `best-possible-self.md`
 - [ ] The Grammar of Grit
 - [ ] Controlling the Controllables
 - [ ] Your Strategic Advantage

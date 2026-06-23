@@ -12,6 +12,8 @@ import { type ModuleProgress } from '../types';
 import { blueTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { BEST_POSSIBLE_SELF_REFERENCE_LIST } from '../data/references/bestPossibleSelf';
 import { useModuleResponses } from '../hooks/useModuleResponses';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useNorthStar } from '../hooks/useNorthStar';
@@ -97,6 +99,7 @@ const BestPossibleSelfModule: React.FC<{ onBack: () => void; progress: ModulePro
       moduleDescription="Daydreaming about the future feels good — but it can actually kill your motivation. Learn how to turn vague wishes into real plans that stick."
       theme={theme}
       sections={sections}
+      references={BEST_POSSIBLE_SELF_REFERENCE_LIST}
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
@@ -108,12 +111,12 @@ const BestPossibleSelfModule: React.FC<{ onBack: () => void; progress: ModulePro
             <ReadingSection title="The Daydream Problem." eyebrow="Step 1" icon={BatteryWarning} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Here's the trap: daydreaming about success without planning the work actually drains your motivation. Your brain treats the fantasy like it already happened. This is <Highlight description="When you daydream about success without thinking about the work, your brain actually relaxes — as if you've already done it. It feels great in the moment, but it drains the energy you need to actually get started." theme={theme}>positive fantasising</Highlight>.</p>
+                  <p>Here's the trap: daydreaming about success without planning the work actually drains your motivation. Your brain treats the fantasy like it already happened. This is <Highlight description="When you daydream about success without thinking about the work, your brain actually relaxes — as if you've already done it. It feels great in the moment, but it drains the energy you need to actually get started." theme={theme}>positive fantasising</Highlight>.<Cite n={1} /></p>
                   <p>The fix is not to stop dreaming. The fix is to dream smarter.</p>
                 </>
               ) : (
                 <>
-                  <p>We're told to "think positive" and visualise our dreams. But here's the trap: pure <Highlight description="When you daydream about success without thinking about the work, your brain actually relaxes — as if you've already done it. It feels great in the moment, but it drains the energy you need to actually get started." theme={theme}>positive fantasising</Highlight> can backfire. When you spend time daydreaming about acing your exams without thinking about the work involved, your brain treats it like you've already made it. It feels good — but it quietly drains the energy you need to actually get started.</p>
+                  <p>We're told to "think positive" and visualise our dreams. But here's the trap: pure <Highlight description="When you daydream about success without thinking about the work, your brain actually relaxes — as if you've already done it. It feels great in the moment, but it drains the energy you need to actually get started." theme={theme}>positive fantasising</Highlight> can backfire.<Cite n={1} /> When you spend time daydreaming about acing your exams without thinking about the work involved, your brain treats it like you've already made it. It feels good — but it quietly drains the energy you need to actually get started.</p>
                   <p>This is why some of the most ambitious, optimistic students still struggle to follow through. The dreaming itself is eating their motivation. The fix isn't to stop dreaming — it's to dream smarter.</p>
                 </>
               )}
@@ -124,11 +127,11 @@ const BestPossibleSelfModule: React.FC<{ onBack: () => void; progress: ModulePro
               {northStar && (() => { const p = COMPACT_CALLOUT_PLACEMENTS.find(p => p.moduleId === 'best-possible-self-protocol'); return p ? <NorthStarCallout northStar={northStar} variant="compact" message={p.message} /> : null; })()}
               {essentials ? (
                 <>
-                  <p>Write a detailed picture of your life in 5 years. This is the <Highlight description="You write a vivid, detailed description of your future life — the version where things have gone well because you put in the work. Not a vague wish, but a clear picture your brain can actually aim for." theme={theme}>'Best Possible Self'</Highlight> exercise. Be specific: where do you live, what do you do, how do you feel? A vivid target gives your brain something real to aim for.</p>
+                  <p>Write a detailed picture of your life in 5 years. This is the <Highlight description="You write a vivid, detailed description of your future life — the version where things have gone well because you put in the work. Not a vague wish, but a clear picture your brain can actually aim for." theme={theme}>'Best Possible Self'</Highlight> exercise.<Cite n={2} /> Be specific: where do you live, what do you do, how do you feel? A vivid target gives your brain something real to aim for.</p>
                 </>
               ) : (
                 <>
-                  <p>The fix is to dream with purpose. The <Highlight description="You write a vivid, detailed description of your future life — the version where things have gone well because you put in the work. Not a vague wish, but a clear picture your brain can actually aim for." theme={theme}>'Best Possible Self'</Highlight> exercise works like this: instead of a vague "I want to do well," you write a detailed picture of your future life — the version where you've put in the work and things have gone well. The more specific and vivid you make it, the more powerful it is.</p>
+                  <p>The fix is to dream with purpose. The <Highlight description="You write a vivid, detailed description of your future life — the version where things have gone well because you put in the work. Not a vague wish, but a clear picture your brain can actually aim for." theme={theme}>'Best Possible Self'</Highlight> exercise<Cite n={2} /> works like this: instead of a vague "I want to do well," you write a detailed picture of your future life — the version where you've put in the work and things have gone well. The more specific and vivid you make it, the more powerful it is.</p>
                   <p>This isn't about being unrealistic. It's about giving your brain a clear target. A vague dream of "doing well" gives your brain nothing to work with. A detailed picture of who you want to become in 5 years gives it a destination to drive toward.</p>
                   <PersonalStory name="Alex" role="Founder, NextStepUni">
                     <p>I used to daydream constantly about a better life but never did anything about it. It was only when someone asked me to write it down — properly, in detail — that something clicked. Seeing the gap between where I was and where I wanted to be wasn't depressing. It was the first time I felt genuinely motivated, because I could finally see what I was working toward.</p>
@@ -141,10 +144,10 @@ const BestPossibleSelfModule: React.FC<{ onBack: () => void; progress: ModulePro
            {activeSection === 2 && (
             <ReadingSection title="The Reality Check." eyebrow="Step 3" icon={Filter} theme={theme}>
               {essentials ? (
-                <p>After your dream, do a reality check. Ask: "What's standing in my way?" Be honest about internal obstacles. This is <Highlight description="Right after imagining your best future, you immediately think about the real obstacles standing in your way — especially the ones inside you (habits, fears, procrastination). That contrast between dream and reality is what creates the energy to actually act." theme={theme}>Mental Contrasting</Highlight>. The contrast between dream and reality creates real motivation.</p>
+                <p>After your dream, do a reality check. Ask: "What's standing in my way?" Be honest about internal obstacles. This is <Highlight description="Right after imagining your best future, you immediately think about the real obstacles standing in your way — especially the ones inside you (habits, fears, procrastination). That contrast between dream and reality is what creates the energy to actually act." theme={theme}>Mental Contrasting</Highlight>.<Cite n={3} /> The contrast between dream and reality creates real motivation.</p>
               ) : (
                 <>
-                  <p>A vivid dream on its own isn't enough. The crucial next step is to ground it in reality. This is <Highlight description="Right after imagining your best future, you immediately think about the real obstacles standing in your way — especially the ones inside you (habits, fears, procrastination). That contrast between dream and reality is what creates the energy to actually act." theme={theme}>Mental Contrasting</Highlight>.</p>
+                  <p>A vivid dream on its own isn't enough. The crucial next step is to ground it in reality. This is <Highlight description="Right after imagining your best future, you immediately think about the real obstacles standing in your way — especially the ones inside you (habits, fears, procrastination). That contrast between dream and reality is what creates the energy to actually act." theme={theme}>Mental Contrasting</Highlight>.<Cite n={3} /></p>
                   <p>After picturing your Best Possible Self, you ask: "What's actually standing between me and that?" — and you're honest about it. Not "the system is against me" (even if it sometimes is), but the obstacles inside you: the procrastination, the self-doubt, the habit of giving up when things get hard. That contrast — dream vs. reality — is what creates genuine motivation to act.</p>
                 </>
               )}
@@ -183,7 +186,7 @@ const BestPossibleSelfModule: React.FC<{ onBack: () => void; progress: ModulePro
                     </div>
                   </div>
                 </div>
-                <p>That last step is the key. It pre-loads a response so your brain doesn't have to figure it out in the moment. When the obstacle hits, you already know what to do.</p>
+                <p>That last step is the key. The "if [obstacle], then I will [action]" plan is an implementation intention — it pre-loads a response so your brain doesn't have to figure it out in the moment.<Cite n={4} /> When the obstacle hits, you already know what to do.</p>
             </ReadingSection>
           )}
            {activeSection === 4 && (

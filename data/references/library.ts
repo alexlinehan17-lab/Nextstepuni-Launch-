@@ -610,6 +610,22 @@ export const REF = {
     source: 'Developmental Psychology',
     doi: '10.1037/dev0000444',
   },
+  king2001: {
+    id: 'king2001',
+    authors: 'King, L. A.',
+    year: 2001,
+    title: 'The health benefits of writing about life goals',
+    source: 'Personality and Social Psychology Bulletin',
+    doi: '10.1177/0146167201277003',
+  },
+  oettingenMayer2002: {
+    id: 'oettingenMayer2002',
+    authors: 'Oettingen, G., & Mayer, D.',
+    year: 2002,
+    title: 'The motivating function of thinking about the future: Expectations versus fantasies',
+    source: 'Journal of Personality and Social Psychology',
+    doi: '10.1037/0022-3514.83.5.1198',
+  },
   steeleAronson1995: {
     id: 'steeleAronson1995',
     authors: 'Steele, C. M., & Aronson, J.',
