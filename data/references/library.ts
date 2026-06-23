@@ -610,6 +610,22 @@ export const REF = {
     source: 'Developmental Psychology',
     doi: '10.1037/dev0000444',
   },
+  snyder1991: {
+    id: 'snyder1991',
+    authors: 'Snyder, C. R., Harris, C., Anderson, J. R., Holleran, S. A., Irving, L. M., Sigmon, S. T., … Harney, P.',
+    year: 1991,
+    title: 'The will and the ways: Development and validation of an individual-differences measure of hope',
+    source: 'Journal of Personality and Social Psychology',
+    doi: '10.1037/0022-3514.60.4.570',
+  },
+  petersbuchel2010: {
+    id: 'petersbuchel2010',
+    authors: 'Peters, J., & Büchel, C.',
+    year: 2010,
+    title: 'Episodic future thinking reduces reward delay discounting through an enhancement of prefrontal-mediotemporal interactions',
+    source: 'Neuron',
+    doi: '10.1016/j.neuron.2010.03.026',
+  },
   markus1986: {
     id: 'markus1986',
     authors: 'Markus, H., & Nurius, P.',

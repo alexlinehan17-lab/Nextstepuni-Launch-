@@ -417,4 +417,17 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The self-explanation effect is robust and is kept and cited (Chi et al. 1989). But the "82% vs 46%" figures were framed as an explain-vs-read experimental manipulation, whereas Chi et al. (1989) was a correlational study comparing students who spontaneously self-explained more ("good" solvers) with those who did not ("poor" solvers) — so that causal framing and those precise percentages misrepresent the study\'s design. Reframed to the qualitative, accurately-attributed self-explanation effect.',
     date: '2026-06-23',
   },
+  {
+    id: 'hope-protocol-001',
+    module: 'The Science of Hope',
+    section: 'Step 3 — The Science of Willpower',
+    action: 'reframed',
+    original:
+      'Your brain uses Dopamine to create motivation. You can trigger it on demand. … That vivid image fires up your brain\'s reward system and gives you a real motivational boost. (Micro-commitment: "giving your brain a small, upfront hit of dopamine.")',
+    reframedTo:
+      'Your brain\'s reward system drives motivation — and you can switch it on deliberately. … Vividly imagining future success makes that reward feel real now, which boosts your motivation to start. (Micro-commitment: "giving your motivation a small, upfront boost.")',
+    reason:
+      'Episodic future thinking is supported and cited (Peters & Büchel 2010), but that study showed EFT reduces delay discounting via prefrontal-mediotemporal interactions — it did not demonstrate an on-demand "dopamine hit." The specific dopamine-release mechanism was an over-attribution, so the claims were reframed to the supported effect (EFT makes future rewards feel closer and more motivating now) without asserting the unverified neurochemical specifics.',
+    date: '2026-06-23',
+  },
 ];
