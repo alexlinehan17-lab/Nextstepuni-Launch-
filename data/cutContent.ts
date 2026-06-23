@@ -131,4 +131,17 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The "triple" multiplier is not supported as a general figure. The spacing effect itself is robustly evidenced (Cepeda et al. 2006, doi:10.1037/0033-2909.132.3.354), but effect sizes vary widely by interval, so the specific number was reframed to a qualitative claim.',
     date: '2026-06-23',
   },
+  {
+    id: 'how-memory-works-001',
+    module: 'How Your Memory Works',
+    section: 'Step 6 — Your Action Plan (micro-commitment)',
+    action: 'reframed',
+    original:
+      "This single act of 'sleep hygiene' has a bigger impact on your memory than an extra hour of cramming.",
+    reframedTo:
+      "This single act of 'sleep hygiene' protects the deep sleep your memory relies on to lock in what you studied.",
+    reason:
+      'The original made a direct quantitative comparison ("bigger impact than an extra hour of cramming") that is not established by any specific study. The underlying point — sleep is essential for memory consolidation — is well supported (Diekelmann & Born 2010, doi:10.1038/nrn2762), so the claim was reframed to drop the unsupported comparison.',
+    date: '2026-06-23',
+  },
 ];
