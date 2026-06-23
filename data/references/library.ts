@@ -610,6 +610,22 @@ export const REF = {
     source: 'Developmental Psychology',
     doi: '10.1037/dev0000444',
   },
+  bandura1977: {
+    id: 'bandura1977',
+    authors: 'Bandura, A.',
+    year: 1977,
+    title: 'Self-efficacy: Toward a unifying theory of behavioral change',
+    source: 'Psychological Review',
+    doi: '10.1037/0033-295x.84.2.191',
+  },
+  schunk1987: {
+    id: 'schunk1987',
+    authors: 'Schunk, D. H., Hanson, A. R., & Cox, P. D.',
+    year: 1987,
+    title: "Peer-model attributes and children's achievement behaviors",
+    source: 'Journal of Educational Psychology',
+    doi: '10.1037/0022-0663.79.1.54',
+  },
   mcadams2013: {
     id: 'mcadams2013',
     authors: 'McAdams, D. P., & McLean, K. C.',

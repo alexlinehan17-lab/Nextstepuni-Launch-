@@ -14,6 +14,8 @@ import { type ModuleProgress } from '../types';
 import { roseTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { SELF_EFFICACY_REFERENCE_LIST } from '../data/references/selfEfficacy';
 import { useNorthStar } from '../hooks/useNorthStar';
 import NorthStarCallout from './NorthStarCallout';
 import { COLORS } from '../design/tokens';
@@ -351,6 +353,7 @@ const SelfEfficacyModule: React.FC<{ onBack: () => void; progress: ModuleProgres
       moduleDescription={`"Try harder" is useless advice. This module shows you how to actually build real belief in yourself — the kind that sticks.`}
       theme={theme}
       sections={sections}
+      references={SELF_EFFICACY_REFERENCE_LIST}
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
@@ -362,10 +365,10 @@ const SelfEfficacyModule: React.FC<{ onBack: () => void; progress: ModuleProgres
             <>
               <ReadingSection title="The Belief Barrier." eyebrow="Step 1" icon={Brain} theme={theme}>
                 {essentials ? (<>
-                  <p>Your biggest barrier is not talent. It is belief. <Highlight description="Your gut-level belief that you can actually do the thing you're trying to do. It's not about having the skill — it's about trusting yourself to use it when it counts." theme={theme}>Self-efficacy</Highlight> is your gut-level trust that you can do hard things. It drives your effort and how you bounce back.</p>
+                  <p>Your biggest barrier is not talent. It is belief. <Highlight description="Your gut-level belief that you can actually do the thing you're trying to do. It's not about having the skill — it's about trusting yourself to use it when it counts." theme={theme}>Self-efficacy</Highlight> is your gut-level trust that you can do hard things. It drives your effort and how you bounce back.<Cite n={1} /></p>
                   <p>Think of a car with a full tank. If the driver does not believe they can drive, the car goes nowhere. You have the fuel. This module helps you grab the keys.</p>
                 </>) : (<>
-                <p>Let's get one thing straight: the biggest barrier to your success isn't a lack of talent. It's a lack of belief. This core belief in your own ability is called <Highlight description="Your gut-level belief that you can actually do the thing you're trying to do. It's not about having the skill — it's about trusting yourself to use it when it counts." theme={theme}>Self-Efficacy</Highlight>. It's the engine that drives effort, persistence, and how you bounce back from setbacks.</p>
+                <p>Let's get one thing straight: the biggest barrier to your success isn't a lack of talent. It's a lack of belief. This core belief in your own ability is called <Highlight description="Your gut-level belief that you can actually do the thing you're trying to do. It's not about having the skill — it's about trusting yourself to use it when it counts." theme={theme}>Self-Efficacy</Highlight>. It's the engine that drives effort, persistence, and how you bounce back from setbacks.<Cite n={1} /></p>
                 <p>Think of it like this: a car might have a full tank of petrol (your knowledge and skills), but if the driver doesn't believe they can actually drive, the car is going nowhere. For students from tough backgrounds, society often spends years convincing you that you don't belong in the driver's seat. This module is about grabbing the keys.</p>
                 <PersonalStory name="Alex" role="Founder, NextStepUni">
                   <p>Nobody in my life ever told me I was capable of getting top grades. Not because they were cruel — they just didn't have that frame of reference. When you grow up in Togher, "belief in your academic ability" isn't something anyone talks about. I didn't lack talent. I lacked a single person who made me believe the driver's seat was mine to take.</p>
@@ -378,9 +381,9 @@ const SelfEfficacyModule: React.FC<{ onBack: () => void; progress: ModuleProgres
           {activeSection === 1 && (
             <ReadingSection title="How Belief is Built." eyebrow="Step 2" icon={Target} theme={theme}>
                 {essentials ? (
-                  <p>Belief is not magic. It comes from four sources. Your own small wins build it fastest. Watching people like you succeed helps too. Genuine encouragement from people who know you matters. And learning to read your nerves as energy, not weakness, seals it.</p>
+                  <p>Belief is not magic. It comes from four sources.<Cite n={1} /> Your own small wins build it fastest. Watching people like you succeed helps too. Genuine encouragement from people who know you matters. And learning to read your nerves as energy, not weakness, seals it.</p>
                 ) : (
-                <p>So where does this belief come from? It's not magic, and it's not something you're born with. It comes from four main places. Once you know what they are, you can actually start building it on purpose.</p>
+                <p>So where does this belief come from? It's not magic, and it's not something you're born with. It comes from four main places.<Cite n={1} /> Once you know what they are, you can actually start building it on purpose.</p>
                 )}
                 <ConceptCardGrid
                   cards={[
@@ -396,10 +399,10 @@ const SelfEfficacyModule: React.FC<{ onBack: () => void; progress: ModuleProgres
           {activeSection === 2 && (
             <ReadingSection title="The Role Model Myth." eyebrow="Step 3" icon={Shield} theme={theme}>
               {essentials ? (<>
-                <p>Flawless heroes can make you feel worse. Their success looks effortless. The gap feels impossible. Find <Highlight description="Role models who are honest about their struggles and show you how they bounced back. Way more helpful for building your own belief than watching someone who never seemed to struggle." theme={theme}>Coping Models</Highlight> instead. These are people who failed, struggled, and bounced back. Their stories prove struggle is part of the path.</p>
+                <p>Flawless heroes can make you feel worse. Their success looks effortless. The gap feels impossible. Find <Highlight description="Role models who are honest about their struggles and show you how they bounced back. Way more helpful for building your own belief than watching someone who never seemed to struggle." theme={theme}>Coping Models</Highlight> instead. These are people who failed, struggled, and bounced back.<Cite n={2} /> Their stories prove struggle is part of the path.</p>
               </>) : (<>
               <p>We're often told to look up to flawless heroes — the sporting legend, the genius scientist. These are <Highlight description="The kind of role model who makes everything look effortless. Inspiring on the surface, but they can actually make you feel like success is out of reach." theme={theme}>Mastery Models</Highlight>. But here's the thing: they can actually make you feel <em>worse</em> about yourself. Their success looks so effortless that the gap between where you are and where they are feels impossible to close.</p>
-              <p>The better option is to find <Highlight description="Role models who are honest about their struggles and show you how they bounced back. Way more helpful for building your own belief than watching someone who never seemed to struggle." theme={theme}>Coping Models</Highlight>. These are people who are relatable, who fail, and who show you <em>how</em> they get back up. Hearing about how even the most successful people struggled and messed up is far more motivating than just hearing about their wins. It proves that struggle is part of the path, not a sign you're on the wrong one.</p>
+              <p>The better option is to find <Highlight description="Role models who are honest about their struggles and show you how they bounced back. Way more helpful for building your own belief than watching someone who never seemed to struggle." theme={theme}>Coping Models</Highlight>.<Cite n={2} /> These are people who are relatable, who fail, and who show you <em>how</em> they get back up. Hearing about how even the most successful people struggled and messed up is far more motivating than just hearing about their wins. It proves that struggle is part of the path, not a sign you're on the wrong one.</p>
               </>)}
               <RoleModelSelector/>
             </ReadingSection>
@@ -419,10 +422,10 @@ const SelfEfficacyModule: React.FC<{ onBack: () => void; progress: ModuleProgres
           {activeSection === 4 && (
             <ReadingSection title="The Habit Blueprint." eyebrow="Step 5" icon={Settings} theme={theme}>
               {essentials ? (<>
-                <p>Turn what works into tiny habits. Stop relying on willpower. Use <Highlight description="Making the thing you need to do so ridiculously small that you can't say no. When motivation is nowhere to be found, this is how you still get moving." theme={theme}>Micro-Habits</Highlight> to shrink big tasks. Then use "If-Then" plans to run them on autopilot. Example: "If I open my laptop, then I write 3 sentences."</p>
+                <p>Turn what works into tiny habits. Stop relying on willpower. Use <Highlight description="Making the thing you need to do so ridiculously small that you can't say no. When motivation is nowhere to be found, this is how you still get moving." theme={theme}>Micro-Habits</Highlight> to shrink big tasks. Then use "If-Then" plans to run them on autopilot. Example: "If I open my laptop, then I write 3 sentences."<Cite n={3} /></p>
               </>) : (<>
               <p>Once you start seeing the process behind other people's success, the final step is to bring it into your own life. Look at what works for them and turn it into habits you can repeat. The trick is to stop relying on willpower — it always runs out — and instead set up systems that run on autopilot.</p>
-              <p>There are two key tools for this. First, <Highlight description="Making the thing you need to do so ridiculously small that you can't say no. When motivation is nowhere to be found, this is how you still get moving." theme={theme}>Micro-Habits</Highlight>, which break a big action down into something tiny (e.g. "write 2,000 words" becomes "write 3 sentences"). Second, <Highlight description="A dead-simple 'If X happens, Then I do Y' rule that takes the decision-making out of it. You decide once, and then it just happens on autopilot." theme={theme}>Implementation Intentions</Highlight>, which create an "If-Then" plan that puts your micro-habit on autopilot (e.g. "IF I open my laptop, THEN I will write 3 sentences"). This is how you build a system for success, one tiny, automatic step at a time.</p>
+              <p>There are two key tools for this. First, <Highlight description="Making the thing you need to do so ridiculously small that you can't say no. When motivation is nowhere to be found, this is how you still get moving." theme={theme}>Micro-Habits</Highlight>, which break a big action down into something tiny (e.g. "write 2,000 words" becomes "write 3 sentences"). Second, <Highlight description="A dead-simple 'If X happens, Then I do Y' rule that takes the decision-making out of it. You decide once, and then it just happens on autopilot." theme={theme}>Implementation Intentions</Highlight>, which create an "If-Then" plan that puts your micro-habit on autopilot (e.g. "IF I open my laptop, THEN I will write 3 sentences").<Cite n={3} /> This is how you build a system for success, one tiny, automatic step at a time.</p>
               </>)}
               <MicroCommitment theme={theme}>
                 <p>Take one big study goal you have. Now, what's the smallest possible version of it you could do in two minutes? (e.g., "Revise all of Chapter 3" becomes "Read the first paragraph of Chapter 3"). That's your micro-habit.</p>
