@@ -474,4 +474,30 @@ export const REF = {
     source: 'Review of Educational Research',
     doi: '10.3102/00346543076003413',
   },
+
+  // Cognitive load theory
+  sweller1998: {
+    id: 'sweller1998',
+    authors: 'Sweller, J., van Merriënboer, J. J. G., & Paas, F. G. W. C.',
+    year: 1998,
+    title: 'Cognitive architecture and instructional design',
+    source: 'Educational Psychology Review',
+    doi: '10.1023/a:1022193728205',
+  },
+  chandlersweller1992: {
+    id: 'chandlersweller1992',
+    authors: 'Chandler, P., & Sweller, J.',
+    year: 1992,
+    title: 'The split-attention effect as a factor in the design of instruction',
+    source: 'British Journal of Educational Psychology',
+    doi: '10.1111/j.2044-8279.1992.tb01017.x',
+  },
+  kalyuga2003: {
+    id: 'kalyuga2003',
+    authors: 'Kalyuga, S., Ayres, P., Chandler, P., & Sweller, J.',
+    year: 2003,
+    title: 'The expertise reversal effect',
+    source: 'Educational Psychologist',
+    doi: '10.1207/s15326985ep3801_4',
+  },
 } satisfies Record<string, Reference>;

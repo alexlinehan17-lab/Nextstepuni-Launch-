@@ -25,7 +25,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] Creating Barriers for Digital Distractions — `digital-distraction.md`
 - [x] The Learning Radar — `learning-radar.md`
 - [x] The Note-Taking Paradox — `note-taking-paradox.md`
-- [ ] Cognitive Load
+- [x] Cognitive Load — `cognitive-load.md`
 - [ ] The Context Effect
 
 ### 🌱 Science of Growth (10)

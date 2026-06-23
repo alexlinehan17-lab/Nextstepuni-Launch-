@@ -261,4 +261,17 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The specific "30-40%" figure could not be tied to a verifiable source. The underlying generative/encoding benefit of note-taking is well supported (Kiewra 1989, doi:10.1007/bf01326640; depth-of-processing, Craik & Lockhart 1972), so the claim was reframed to the supported qualitative version.',
     date: '2026-06-23',
   },
+  {
+    id: 'cognitive-load-001',
+    module: 'Cognitive Load',
+    section: 'Step 3 — Why Separate Diagrams Kill Learning',
+    action: 'reframed',
+    original:
+      'Students who studied with combined materials performed 30 to 50% better than those who studied the same content with the text and images apart.',
+    reframedTo:
+      'Students who studied with combined materials learned substantially better than those who studied the same content with the text and images apart.',
+    reason:
+      'The split-attention effect is well established (Chandler & Sweller 1992, doi:10.1111/j.2044-8279.1992.tb01017.x), but the specific "30-50%" range is not a single verifiable figure (effect sizes vary by study and material). Reframed to the supported qualitative claim.',
+    date: '2026-06-23',
+  },
 ];
