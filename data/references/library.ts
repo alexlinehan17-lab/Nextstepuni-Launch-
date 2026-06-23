@@ -534,4 +534,30 @@ export const REF = {
     source: 'Journal of Consumer Research',
     doi: '10.1086/665048',
   },
+
+  // Structural neuroplasticity / synaptic plasticity
+  draganski2004: {
+    id: 'draganski2004',
+    authors: 'Draganski, B., Gaser, C., Busch, V., Schuierer, G., Bogdahn, U., & May, A.',
+    year: 2004,
+    title: 'Neuroplasticity: Changes in grey matter induced by training',
+    source: 'Nature',
+    doi: '10.1038/427311a',
+  },
+  scholz2009: {
+    id: 'scholz2009',
+    authors: 'Scholz, J., Klein, M. C., Behrens, T. E. J., & Johansen-Berg, H.',
+    year: 2009,
+    title: 'Training induces changes in white-matter architecture',
+    source: 'Nature Neuroscience',
+    doi: '10.1038/nn.2412',
+  },
+  bliss1973: {
+    id: 'bliss1973',
+    authors: 'Bliss, T. V. P., & Lømo, T.',
+    year: 1973,
+    title: 'Long-lasting potentiation of synaptic transmission in the dentate area of the anaesthetized rabbit following stimulation of the perforant path',
+    source: 'The Journal of Physiology',
+    doi: '10.1113/jphysiol.1973.sp010273',
+  },
 } satisfies Record<string, Reference>;

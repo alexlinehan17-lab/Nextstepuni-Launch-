@@ -29,7 +29,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] The Context Effect — `context-effect.md`
 
 ### 🌱 Science of Growth (10)
-- [ ] Neuroplasticity
+- [x] Neuroplasticity — `neuroplasticity.md`
 - [ ] The Myelin Manual
 - [ ] The Power of Praise
 - [ ] Effective Struggle and Growth
