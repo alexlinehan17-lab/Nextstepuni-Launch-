@@ -47,6 +47,7 @@ const JourneyView = lazy(() => import('./journey/JourneyView'));
 const TrainingHub = lazy(() => import('./TrainingHub'));
 const StudySessionView = lazy(() => import('./study/StudySessionView'));
 const InsightsView = lazy(() => import('./InsightsView'));
+const CutContentPage = lazy(() => import('./CutContentPage'));
 
 /* ── Module Error Boundary ── */
 
@@ -227,6 +228,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     nav.navigateToStudySession();
   };
   const handleGoToInsights = () => { nav.navigateToInsights(); };
+  const handleGoToCutContent = () => { nav.navigateToCutContent(); };
 
   // Firebase password-reset action URL — handled before any auth gating so the
   // user can land here whether or not they're signed in. Triggered by either
@@ -418,6 +420,14 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     );
   }
 
+  if (viewState === 'cut-content') {
+    return (
+      <Suspense fallback={<LoadingSpinner />}>
+        <CutContentPage onBack={handleBackToTree} />
+      </Suspense>
+    );
+  }
+
   if (viewState === 'my-journey') {
     return (
       <Suspense fallback={<LoadingSpinner />}>
@@ -448,6 +458,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       onGoToStudy={handleGoToStudy}
       onGoToInsights={handleGoToInsights}
       onGoToTrainingHub={handleGoToGamificationHub}
+      onGoToCutContent={handleGoToCutContent}
       allCourses={studentCourses}
       onSelectModule={handleSelectModule}
       categoryTitles={categoryTitles}

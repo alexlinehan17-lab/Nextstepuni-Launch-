@@ -7,7 +7,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { MotionDiv } from './Motion';
 import {
   Rocket, ArrowRight, BarChart3, Compass,
-  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell, MessageSquare
+  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell, MessageSquare, Scissors
 } from 'lucide-react';
 import FeedbackQrModal from './FeedbackQrModal';
 import { getAvatarUrl } from '../utils/authUtils';
@@ -40,6 +40,7 @@ interface KnowledgeTreeProps {
   onGoToStudy?: () => void;
   onGoToInsights?: () => void;
   onGoToTrainingHub?: () => void;
+  onGoToCutContent?: () => void;
   onSelectModule: (moduleId: string) => void;
   allCourses: CourseData[];
   categoryTitles: Record<CategoryType, string>;
@@ -67,13 +68,14 @@ interface KnowledgeTreeProps {
 }
 
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, allCourses, onSelectModule: _onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, onGoToCutContent, allCourses, onSelectModule: _onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [feedbackQrOpen, setFeedbackQrOpen] = useState(false);
 
   const sidebarItems = [
     { icon: Home, label: 'Home', onClick: () => {}, active: true },
     { icon: Dumbbell, label: 'Training Hub', onClick: onGoToTrainingHub ?? (() => {}), active: false },
+    { icon: Scissors, label: 'Cut Content', onClick: onGoToCutContent ?? (() => {}), active: false },
     { icon: Mountain, label: 'My Journey', onClick: onGoToJourney, active: false },
     { icon: Timer, label: 'Study Session', onClick: onGoToStudy ?? (() => {}), active: false },
     { icon: BarChart3, label: 'Dashboard', onClick: onGoToDashboard, active: false },
