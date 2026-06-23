@@ -19,7 +19,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] Using Feedback Loops — `feedback-loops.md`
 - [x] How Your Memory Works — `how-memory-works.md`
 - [x] Elaborative Interrogation — `elaborative-interrogation.md`
-- [ ] Cognitive Endurance
+- [x] Cognitive Endurance — `cognitive-endurance.md`
 - [ ] Mental Modelling
 - [ ] Focused vs Diffuse Mode
 - [ ] Creating Barriers for Digital Distractions

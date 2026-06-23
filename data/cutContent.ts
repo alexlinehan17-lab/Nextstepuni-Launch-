@@ -157,4 +157,30 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The specific 72%/37% figures could not be tied to a verifiable primary source. The elaborative-interrogation effect (the "why" question roughly doubling retention vs passive reading) is well evidenced (Stein & Bransford 1979, doi:10.1016/s0022-5371(79)90481-x; Pressley et al. 1987, doi:10.1037/0278-7393.13.2.291; reviewed in Dunlosky et al. 2013), so the claim was reframed to the supported qualitative version. The on-screen demo bars are illustrative only (no numbers shown).',
     date: '2026-06-23',
   },
+  {
+    id: 'cognitive-endurance-001',
+    module: 'Cognitive Endurance',
+    section: 'Step 3 — Fueling the Engine',
+    action: 'reframed',
+    original:
+      'Swishing a sports drink around your mouth for 10 seconds tricks your brain into thinking fuel is on the way. This can give you a real mental boost in the final, gruelling hour of a long exam.',
+    reframedTo:
+      'Swishing a sports drink around your mouth for about 10 seconds activates reward areas in your brain. In endurance exercise this reliably lowers how hard the effort feels; it may give a similar lift in the final, gruelling hour of a long exam, though the evidence for mental tasks is less settled.',
+    reason:
+      'The carbohydrate mouth-rinse effect is established for endurance/physical performance and perceived effort (Chambers, Bridge & Jones 2009, doi:10.1113/jphysiol.2008.164285), but its benefit for sustained cognitive/exam performance is not well established. Reframed to state the evidenced mechanism and flag the uncertainty for mental tasks rather than promising "a real mental boost".',
+    date: '2026-06-23',
+  },
+  {
+    id: 'cognitive-endurance-002',
+    module: 'Cognitive Endurance',
+    section: 'Step 6 — The Recovery Protocol',
+    action: 'reframed',
+    original:
+      'In the crucial break between two exams on the same day, a 20-minute NSDR session is the single most effective way to recharge for the afternoon paper.',
+    reframedTo:
+      'In the crucial break between two exams on the same day, a 20-minute NSDR session is one of the best ways to recharge for the afternoon paper.',
+    reason:
+      'The "single most effective" superlative is not supported — the peer-reviewed evidence base for NSDR / yoga nidra as a recovery tool is still limited. Reframed to a non-superlative recommendation. (Brief structured breathing has stronger support: Balban et al. 2023, doi:10.1016/j.xcrm.2022.100895.)',
+    date: '2026-06-23',
+  },
 ];
