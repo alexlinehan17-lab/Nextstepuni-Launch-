@@ -53,7 +53,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] Reframing Catastrophic Thoughts — `catastrophic-thinking.md`
 - [x] Building Emotional Intelligence — `emotional-intelligence.md`
 - [x] Reframing Progress — `reframing-progress.md`
-- [ ] The Implementation Playbook
+- [x] The Implementation Playbook — `implementation-protocol.md`
 
 ## Group B — Subject & Exam (45) — phase 2
 Grounded in SEC examiner reports & marking schemes (`/examiner-reports/`), not
