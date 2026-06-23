@@ -448,4 +448,30 @@ export const REF = {
     source: 'Psychological Science',
     doi: '10.1111/j.1467-9280.1991.tb00147.x',
   },
+
+  // Note-taking: generative encoding, concept maps
+  mueller2014: {
+    id: 'mueller2014',
+    authors: 'Mueller, P. A., & Oppenheimer, D. M.',
+    year: 2014,
+    title: 'The pen is mightier than the keyboard: Advantages of longhand over laptop note taking',
+    source: 'Psychological Science',
+    doi: '10.1177/0956797614524581',
+  },
+  kiewra1989: {
+    id: 'kiewra1989',
+    authors: 'Kiewra, K. A.',
+    year: 1989,
+    title: 'A review of note-taking: The encoding-storage paradigm and beyond',
+    source: 'Educational Psychology Review',
+    doi: '10.1007/bf01326640',
+  },
+  nesbit2006: {
+    id: 'nesbit2006',
+    authors: 'Nesbit, J. C., & Adesope, O. O.',
+    year: 2006,
+    title: 'Learning with concept and knowledge maps: A meta-analysis',
+    source: 'Review of Educational Research',
+    doi: '10.3102/00346543076003413',
+  },
 } satisfies Record<string, Reference>;

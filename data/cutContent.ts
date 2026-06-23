@@ -235,4 +235,30 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The specific "50% more accurate over a year" figure could not be verified, and the strong cross-subject "transfer" claim overstates a contested area (metacognitive transfer across domains is not firmly established). Reframed to the supported qualitative claim that prediction practice improves calibration and tends to generalise.',
     date: '2026-06-23',
   },
+  {
+    id: 'note-taking-paradox-001',
+    module: 'The Note-Taking Paradox',
+    section: 'Step 1 — The Transcription Trap',
+    action: 'reframed',
+    original:
+      'A famous study compared students who typed their notes on laptops with students who wrote by hand. … when they were tested on questions that needed real understanding, the handwriters crushed it.',
+    reframedTo:
+      'A well-known study compared laptop vs handwritten note-takers … On questions that needed real understanding, the handwriters came out ahead. (Later replications suggest the handwriting-versus-laptop part is less clear-cut than first reported — what matters is whether you copy verbatim or process ideas into your own words, not the device.)',
+    reason:
+      'The original overstated Mueller & Oppenheimer (2014, doi:10.1177/0956797614524581). That study is real, but large replications (e.g. Morehead et al. 2019; Urry et al. 2021) failed to reproduce the conceptual-understanding advantage of longhand. Reframed to emphasise the robust mechanism (verbatim copying vs generative processing) and to flag the replication uncertainty around handwriting vs laptop specifically.',
+    date: '2026-06-23',
+  },
+  {
+    id: 'note-taking-paradox-002',
+    module: 'The Note-Taking Paradox',
+    section: 'Step 2 — Notes That Actually Work',
+    action: 'reframed',
+    original:
+      'Students who paraphrase, summarise, and make connections in their notes consistently outperform word-for-word note-takers by 30-40% on the kinds of questions that actually matter.',
+    reframedTo:
+      'Students who paraphrase, summarise, and make connections in their notes tend to outperform word-for-word note-takers on the kinds of questions that actually matter.',
+    reason:
+      'The specific "30-40%" figure could not be tied to a verifiable source. The underlying generative/encoding benefit of note-taking is well supported (Kiewra 1989, doi:10.1007/bf01326640; depth-of-processing, Craik & Lockhart 1972), so the claim was reframed to the supported qualitative version.',
+    date: '2026-06-23',
+  },
 ];
