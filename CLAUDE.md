@@ -31,6 +31,18 @@ CI (`.github/workflows/ci.yml`) runs `lint` (strict, `--max-warnings 0`) → `ty
 
 No environment variables are required for the current build. There is no active GenAI integration; see `compliance/GEMINI_AUDIT.md` for the audit trail. Any future GenAI integration must go through `compliance/AI_GOVERNANCE_SCHEDULE.md` first.
 
+## Deployment
+
+Pushing to `main` is publishing to the **live app** — there is no separate deploy step. `.github/workflows/deploy.yml` fires on every push to `main` and deploys to Firebase Hosting live (`channelId: live`, project `nextstepuni-app`). `.github/workflows/ci.yml` (lint → typecheck → test → build) runs in parallel, *not* as a pre-deploy gate, so a broken build can reach the live site before CI finishes.
+
+**The "ship it" command.** When the user says **"ship it"**, push the change straight to `main`:
+1. Verify locally first — `npm run typecheck` + `npm run build` (plus `npm run lint` and `npm test` for non-trivial changes). If any fail, STOP and report; do not push.
+2. Commit with a clear, descriptive message.
+3. `git push origin main` (retry with exponential backoff on network errors).
+4. Confirm to the user that it's pushed and deploying.
+
+Treat "ship it" as the user's explicit authorization to push to `main` and deploy live. Without it, keep changes on a branch / PR as normal.
+
 ## Architecture
 
 **Stack:** React 19 + TypeScript, Vite, Tailwind CSS (v3, compiled at build time via PostCSS + autoprefixer — `tailwind.config.ts` + `index.css`, NOT a CDN), Framer Motion, Three.js (@react-three/fiber), Firebase (Auth + Firestore)
