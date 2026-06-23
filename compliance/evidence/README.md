@@ -36,7 +36,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] The Science of Making Mistakes — `science-of-mistakes.md`
 - [x] The Power of "Yet" — `power-of-yet.md`
 - [x] Using Controllable Variables to Grow — `controllable-variables.md`
-- [ ] Linking Study to Future Goals
+- [x] Linking Study to Future Goals — `linking-study-future-goals.md`
 - [ ] The Growth Playbook
 - [ ] The Teaching Effect
 
