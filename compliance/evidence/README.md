@@ -47,7 +47,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] Best Possible Self — `best-possible-self.md`
 - [x] The Grammar of Grit — `grammar-of-grit.md`
 - [x] Controlling the Controllables — `agency-architecture.md`
-- [ ] Your Strategic Advantage
+- [x] Your Strategic Advantage — `strategic-advantage.md`
 - [ ] Self Efficacy
 - [ ] Understanding Procrastination and Motivation
 - [ ] Reframing Catastrophic Thoughts

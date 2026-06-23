@@ -610,6 +610,14 @@ export const REF = {
     source: 'Developmental Psychology',
     doi: '10.1037/dev0000444',
   },
+  mcadams2013: {
+    id: 'mcadams2013',
+    authors: 'McAdams, D. P., & McLean, K. C.',
+    year: 2013,
+    title: 'Narrative identity',
+    source: 'Current Directions in Psychological Science',
+    doi: '10.1177/0963721413475622',
+  },
   weiner1985: {
     id: 'weiner1985',
     authors: 'Weiner, B.',
