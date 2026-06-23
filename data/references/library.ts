@@ -244,4 +244,22 @@ export const REF = {
     source: 'Nature Reviews Neuroscience',
     doi: '10.1038/nrn2639',
   },
+
+  // Elaborative interrogation / elaboration
+  stein1979: {
+    id: 'stein1979',
+    authors: 'Stein, B. S., & Bransford, J. D.',
+    year: 1979,
+    title: 'Constraints on effective elaboration: Effects of precision and subject generation',
+    source: 'Journal of Verbal Learning and Verbal Behavior',
+    doi: '10.1016/s0022-5371(79)90481-x',
+  },
+  pressley1987: {
+    id: 'pressley1987',
+    authors: 'Pressley, M., McDaniel, M. A., Turnure, J. E., Wood, E., & Ahmad, M.',
+    year: 1987,
+    title: 'Generation and precision of elaboration: Effects on intentional and incidental learning',
+    source: 'Journal of Experimental Psychology: Learning, Memory, and Cognition',
+    doi: '10.1037/0278-7393.13.2.291',
+  },
 } satisfies Record<string, Reference>;

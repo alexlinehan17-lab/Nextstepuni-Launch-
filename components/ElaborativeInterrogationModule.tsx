@@ -14,6 +14,8 @@ import { pinkTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { Cite } from './ModuleReferences';
+import { ELABORATIVE_INTERROGATION_REFERENCE_LIST } from '../data/references/elaborativeInterrogation';
 
 const theme = pinkTheme;
 
@@ -258,7 +260,7 @@ const ElaborativeInterrogationModule: React.FC<{ onBack: () => void; progress: M
   ];
 
   return (
-    <ModuleLayout moduleNumber="05" moduleTitle="Elaborative Interrogation" moduleSubtitle={`The "Why" Method`} moduleDescription="Stop just memorising facts and start actually understanding them by asking one simple question: &quot;Why?&quot;. This module shows you how to make what you study stick — and mean something — when it counts." theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Start Asking Why">
+    <ModuleLayout moduleNumber="05" moduleTitle="Elaborative Interrogation" moduleSubtitle={`The "Why" Method`} moduleDescription="Stop just memorising facts and start actually understanding them by asking one simple question: &quot;Why?&quot;. This module shows you how to make what you study stick — and mean something — when it counts." theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Start Asking Why" references={ELABORATIVE_INTERROGATION_REFERENCE_LIST}>
       {(activeSection) => (
         <>
           {activeSection === 0 && (
@@ -266,13 +268,13 @@ const ElaborativeInterrogationModule: React.FC<{ onBack: () => void; progress: M
               {essentials ? (
                 <>
                   <p>After you read a fact, ask yourself "Why is this true?" This forces your brain to connect the new fact to things you already know. That connection is what makes it stick.</p>
-                  <p>Students who asked "Why?" remembered 72% of material. Passive readers remembered only 37%. One simple question nearly doubles your memory.</p>
+                  <p>In classic experiments, students who asked "Why?" remembered far more than passive readers — one simple question can come close to doubling how much sticks.<Cite n={1} /><Cite n={2} /></p>
                 </>
               ) : (
                 <>
                   <p>Learning isn't about absorbing facts — it's about actively connecting them. <Highlight description="A study trick where you come up with an explanation for why something is true. Instead of just reading a fact, you ask 'Why?' and link it to stuff you already know." theme={theme}>Elaborative Interrogation (EI)</Highlight> is a simple but powerful technique that turns you from a passive reader into an active detective. The core of it is asking one simple question: "Why is this true?"</p>
                   <p>When you ask "Why?", you force your brain to dig through what it already knows and find connections. This turns a random, easy-to-forget fact into part of a bigger picture that actually sticks.</p>
-                  <p>Here's a great example. One group of students read a simple sentence like "The hungry man got into the car." A second group was told to ask "Why?" after reading it. This second group came up with a reason ("...to go to a restaurant"), which gave their brains more to hold onto. On a surprise test later, the "Why?" group remembered almost double what the passive readers did (72% vs 37%).</p>
+                  <p>Here's a great example. One group of students read a simple sentence like "The hungry man got into the car." A second group was told to ask "Why?" after reading it. This second group came up with a reason ("...to go to a restaurant"), which gave their brains more to hold onto. On a surprise test later, the "Why?" group remembered close to double what the passive readers did.<Cite n={1} /><Cite n={2} /></p>
                 </>
               )}
               <HungryManExperiment/>
@@ -282,12 +284,12 @@ const ElaborativeInterrogationModule: React.FC<{ onBack: () => void; progress: M
             <ReadingSection title="The Rules of the Road." eyebrow="Step 2" icon={BatteryWarning} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Only use this technique on topics you already know a bit about. If you know nothing, you will just guess wrong. Use it to go deeper, not to start from scratch.</p>
+                  <p>Only use this technique on topics you already know a bit about. If you know nothing, you will just guess wrong.<Cite n={3} /> Use it to go deeper, not to start from scratch.</p>
                   <p>Asking "Why?" takes real mental energy. Save it for when you are fresh. Do not try it when you are exhausted.</p>
                 </>
               ) : (
                 <>
-                  <p>The "Why?" method is powerful, but it works best under the right conditions. First, there's the <Highlight description="Asking 'Why?' works best when you already know a bit about the topic. If you know nothing, you'll just guess — and probably guess wrong. Use it to go deeper, not to learn something brand new." theme={theme}>Prior Knowledge Paradox</Highlight>. If you ask "Why?" about a topic you know nothing about, you'll just make up wrong answers. This technique is for going deeper on stuff you've already started learning, not for meeting a topic for the first time.</p>
+                  <p>The "Why?" method is powerful, but it works best under the right conditions. First, there's the <Highlight description="Asking 'Why?' works best when you already know a bit about the topic. If you know nothing, you'll just guess — and probably guess wrong. Use it to go deeper, not to learn something brand new." theme={theme}>Prior Knowledge Paradox</Highlight>. If you ask "Why?" about a topic you know nothing about, you'll just make up wrong answers. This technique is for going deeper on stuff you've already started learning, not for meeting a topic for the first time.<Cite n={3} /></p>
                   <p>Second, asking "Why?" is mentally tiring. It takes real <Highlight description="The slow, careful kind of thinking where you really have to concentrate. It's the opposite of autopilot — powerful, but it drains your energy fast." theme={theme}>focused thinking</Highlight>. If you try to do it when you're wrecked, your brain runs out of steam — a bit like <Highlight description="When your brain is running on empty. After a long day, you have less mental energy left for hard thinking, so save this technique for when you're fresh." theme={theme}>hitting a wall</Highlight> — and the whole thing becomes less effective. Save it for your best study hours, when you actually have energy.</p>
                 </>
               )}

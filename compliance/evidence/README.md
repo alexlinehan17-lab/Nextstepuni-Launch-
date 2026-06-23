@@ -18,7 +18,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] Overcoming Illusions of Competence — `illusion-of-competence.md`
 - [x] Using Feedback Loops — `feedback-loops.md`
 - [x] How Your Memory Works — `how-memory-works.md`
-- [ ] Elaborative Interrogation
+- [x] Elaborative Interrogation — `elaborative-interrogation.md`
 - [ ] Cognitive Endurance
 - [ ] Mental Modelling
 - [ ] Focused vs Diffuse Mode

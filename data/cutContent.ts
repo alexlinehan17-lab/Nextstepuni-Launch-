@@ -144,4 +144,17 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The original made a direct quantitative comparison ("bigger impact than an extra hour of cramming") that is not established by any specific study. The underlying point — sleep is essential for memory consolidation — is well supported (Diekelmann & Born 2010, doi:10.1038/nrn2762), so the claim was reframed to drop the unsupported comparison.',
     date: '2026-06-23',
   },
+  {
+    id: 'elaborative-interrogation-001',
+    module: 'Elaborative Interrogation',
+    section: 'Step 1 — The "Why" Engine',
+    action: 'reframed',
+    original:
+      'Students who asked "Why?" remembered 72% of material. Passive readers remembered only 37%. … the "Why?" group remembered almost double what the passive readers did (72% vs 37%).',
+    reframedTo:
+      'In classic experiments, students who asked "Why?" remembered far more than passive readers — one simple question can come close to doubling how much sticks.',
+    reason:
+      'The specific 72%/37% figures could not be tied to a verifiable primary source. The elaborative-interrogation effect (the "why" question roughly doubling retention vs passive reading) is well evidenced (Stein & Bransford 1979, doi:10.1016/s0022-5371(79)90481-x; Pressley et al. 1987, doi:10.1037/0278-7393.13.2.291; reviewed in Dunlosky et al. 2013), so the claim was reframed to the supported qualitative version. The on-screen demo bars are illustrative only (no numbers shown).',
+    date: '2026-06-23',
+  },
 ];
