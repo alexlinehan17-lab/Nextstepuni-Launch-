@@ -610,6 +610,14 @@ export const REF = {
     source: 'Developmental Psychology',
     doi: '10.1037/dev0000444',
   },
+  nestojko2014: {
+    id: 'nestojko2014',
+    authors: 'Nestojko, J. F., Bui, D. C., Kornell, N., & Bjork, E. L.',
+    year: 2014,
+    title: 'Expecting to teach enhances learning and organization of knowledge in free recall of text passages',
+    source: 'Memory & Cognition',
+    doi: '10.3758/s13421-014-0416-z',
+  },
   dweckleggett1988: {
     id: 'dweckleggett1988',
     authors: 'Dweck, C. S., & Leggett, E. L.',

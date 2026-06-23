@@ -404,4 +404,17 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The "30%" working-memory figure and the precise "1% body-weight dehydration impairs working memory" claim could not be tied to a specific verifiable source, and "legally drunk" is a jurisdiction-specific legal claim. The supported core — prolonged wakefulness produces alcohol-equivalent impairment (Dawson & Reid 1997, who found ~17 h awake ≈ BAC 0.05%) — is kept and cited; the unverifiable precise figures were softened to qualitative statements.',
     date: '2026-06-23',
   },
+  {
+    id: 'teaching-effect-001',
+    module: 'The Teaching Effect',
+    section: 'Step 3 — You Don\'t Need an Audience',
+    action: 'reframed',
+    original:
+      'In one study with physics students, those who paused after each worked example to explain to themselves why each step was taken solved 82% of new problems on a test. The students who just read through the examples? Only 46%.',
+    reframedTo:
+      'In classic studies with physics students, those who paused after each worked example to explain to themselves why each step was taken went on to solve far more new problems than the students who just read through the examples.',
+    reason:
+      'The self-explanation effect is robust and is kept and cited (Chi et al. 1989). But the "82% vs 46%" figures were framed as an explain-vs-read experimental manipulation, whereas Chi et al. (1989) was a correlational study comparing students who spontaneously self-explained more ("good" solvers) with those who did not ("poor" solvers) — so that causal framing and those precise percentages misrepresent the study\'s design. Reframed to the qualitative, accurately-attributed self-explanation effect.',
+    date: '2026-06-23',
+  },
 ];

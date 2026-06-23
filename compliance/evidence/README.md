@@ -38,7 +38,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] Using Controllable Variables to Grow — `controllable-variables.md`
 - [x] Linking Study to Future Goals — `linking-study-future-goals.md`
 - [x] The Growth Playbook — `growth-mindset.md`
-- [ ] The Teaching Effect
+- [x] The Teaching Effect — `teaching-effect.md`
 
 ### 🧠 Architecture / Mindset (13)
 - [ ] The Driver
