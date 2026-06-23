@@ -50,7 +50,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] Your Strategic Advantage — `strategic-advantage.md`
 - [x] Self Efficacy — `self-efficacy.md`
 - [x] Understanding Procrastination and Motivation — `procrastination.md`
-- [ ] Reframing Catastrophic Thoughts
+- [x] Reframing Catastrophic Thoughts — `catastrophic-thinking.md`
 - [ ] Building Emotional Intelligence
 - [ ] Reframing Progress
 - [ ] The Implementation Playbook

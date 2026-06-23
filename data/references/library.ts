@@ -682,6 +682,14 @@ export const REF = {
     source: 'Journal of Personality and Social Psychology',
     doi: '10.1037/0022-3514.42.2.367',
   },
+  hayes2006: {
+    id: 'hayes2006',
+    authors: 'Hayes, S. C., Luoma, J. B., Bond, F. W., Masuda, A., & Lillis, J.',
+    year: 2006,
+    title: 'Acceptance and commitment therapy: Model, processes and outcomes',
+    source: 'Behaviour Research and Therapy',
+    doi: '10.1016/j.brat.2005.06.006',
+  },
   abramson1978: {
     id: 'abramson1978',
     authors: 'Abramson, L. Y., Seligman, M. E. P., & Teasdale, J. D.',
