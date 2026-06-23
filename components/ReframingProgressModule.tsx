@@ -13,6 +13,8 @@ import { type ModuleProgress } from '../types';
 import { accentTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { REFRAMING_PROGRESS_REFERENCE_LIST } from '../data/references/reframingProgress';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = accentTheme;
@@ -128,19 +130,19 @@ const ReframingProgressModule: React.FC<{ onBack: () => void; progress: ModulePr
   ];
 
   return (
-    <ModuleLayout moduleNumber="10" moduleTitle="Reframing Progress" moduleSubtitle="The Outcome-Based Approach" moduleDescription={`Stop counting hours and start counting wins. This module shows you how to track what actually matters so you can see real progress every single day.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Track Your Wins">
+    <ModuleLayout moduleNumber="10" moduleTitle="Reframing Progress" moduleSubtitle="The Outcome-Based Approach" moduleDescription={`Stop counting hours and start counting wins. This module shows you how to track what actually matters so you can see real progress every single day.`} theme={theme} sections={sections} references={REFRAMING_PROGRESS_REFERENCE_LIST} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Track Your Wins">
       {(activeSection) => (
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Time Trap." eyebrow="Step 1" icon={Target} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Stop counting hours. Start counting results. Sitting at a desk for five hours means nothing if you learned nothing. Ditch <Highlight description="Stuff like re-reading your notes or highlighting everything -- it feels productive but barely sticks. You're just going through the motions." theme={theme}>Naive Practice</Highlight> like re-reading notes. Switch to <Highlight description="Focused practice where you work on the specific things you're weak at and get feedback straight away. It's harder, but it's how you actually improve." theme={theme}>Deliberate Practice</Highlight>. That means working on your weak spots and getting feedback. Write a paragraph and compare it to a H1 answer. That is real progress.</p>
+                  <p>Stop counting hours. Start counting results. Sitting at a desk for five hours means nothing if you learned nothing. Ditch <Highlight description="Stuff like re-reading your notes or highlighting everything -- it feels productive but barely sticks. You're just going through the motions." theme={theme}>Naive Practice</Highlight> like re-reading notes. Switch to <Highlight description="Focused practice where you work on the specific things you're weak at and get feedback straight away. It's harder, but it's how you actually improve." theme={theme}>Deliberate Practice</Highlight>.<Cite n={2} /> That means working on your weak spots and getting feedback. Write a paragraph and compare it to a H1 answer. That is real progress.</p>
                 </>
               ) : (
                 <>
-                  <p>The biggest lie in the Leaving Cert is that "hours logged" equals "wins secured." Sitting at a desk for five hours doesn't mean you learned anything. It leads to burnout and the <Highlight description="That feeling when you read your notes and think 'yeah, I know this' -- but then you can't actually answer the question in the exam. Recognising something is not the same as knowing it." theme={theme}>Illusion of Competence</Highlight>. It's time to flip this on its head.</p>
-                  <p>Instead of measuring time spent, start measuring results. That means ditching <Highlight description="Stuff like re-reading your notes or highlighting everything -- it feels productive but barely sticks. You're just going through the motions." theme={theme}>Naive Practice</Highlight> and switching to <Highlight description="Focused practice where you work on the specific things you're weak at and get feedback straight away. It's harder, but it's how you actually improve." theme={theme}>Deliberate Practice</Highlight>. Naive practice is reading an essay; deliberate practice is writing one paragraph and comparing it to a H1 standard.</p>
+                  <p>The biggest lie in the Leaving Cert is that "hours logged" equals "wins secured." Sitting at a desk for five hours doesn't mean you learned anything. It leads to burnout and the <Highlight description="That feeling when you read your notes and think 'yeah, I know this' -- but then you can't actually answer the question in the exam. Recognising something is not the same as knowing it." theme={theme}>Illusion of Competence</Highlight>.<Cite n={1} /> It's time to flip this on its head.</p>
+                  <p>Instead of measuring time spent, start measuring results. That means ditching <Highlight description="Stuff like re-reading your notes or highlighting everything -- it feels productive but barely sticks. You're just going through the motions." theme={theme}>Naive Practice</Highlight> and switching to <Highlight description="Focused practice where you work on the specific things you're weak at and get feedback straight away. It's harder, but it's how you actually improve." theme={theme}>Deliberate Practice</Highlight>.<Cite n={2} /> Naive practice is reading an essay; deliberate practice is writing one paragraph and comparing it to a H1 standard.</p>
                 </>
               )}
             </ReadingSection>
@@ -177,12 +179,12 @@ const ReframingProgressModule: React.FC<{ onBack: () => void; progress: ModulePr
             <ReadingSection title="The Quest System." eyebrow="Step 4" icon={Gamepad2} theme={theme}>
                 {essentials ? (
                   <>
-                    <p>Turn your study into a game using <Highlight description="Turning your study into something more like a game -- with points, levels, and clear goals. It makes boring work feel more rewarding because you can actually see yourself making progress." theme={theme}>Gamification</Highlight>. Break "doing well" into bite-sized quests. Call them things like "The Poetry Quest" or "The Algebra Boss Battle." This builds <Highlight description="When you focus on actually getting better at something rather than just trying to look smart. If you hit a wall, you see it as a chance to level up, not proof that you're thick." theme={theme}>Mastery Orientation</Highlight>. Challenges become chances to level up. You stop fearing failure and start chasing progress.</p>
+                    <p>Turn your study into a game using <Highlight description="Turning your study into something more like a game -- with points, levels, and clear goals. It makes boring work feel more rewarding because you can actually see yourself making progress." theme={theme}>Gamification</Highlight>. Break "doing well" into bite-sized quests. Call them things like "The Poetry Quest" or "The Algebra Boss Battle." This builds <Highlight description="When you focus on actually getting better at something rather than just trying to look smart. If you hit a wall, you see it as a chance to level up, not proof that you're thick." theme={theme}>Mastery Orientation</Highlight>.<Cite n={3} /> Challenges become chances to level up. You stop fearing failure and start chasing progress.</p>
                   </>
                 ) : (
                   <>
                     <p>Normal study is demotivating because you never feel like you're getting anywhere. <Highlight description="Turning your study into something more like a game -- with points, levels, and clear goals. It makes boring work feel more rewarding because you can actually see yourself making progress." theme={theme}>Gamification</Highlight> gives your brain quick wins so progress feels real and immediate.</p>
-                    <p>The trick is to break the vague goal of "doing well" into specific, bite-sized "quests" (e.g., "The Poetry Quest," "The Algebra Boss Battle"). This builds a <Highlight description="When you focus on actually getting better at something rather than just trying to look smart. If you hit a wall, you see it as a chance to level up, not proof that you're thick." theme={theme}>Mastery Orientation</Highlight>, where challenges feel like chances to level up rather than threats to how smart you are.</p>
+                    <p>The trick is to break the vague goal of "doing well" into specific, bite-sized "quests" (e.g., "The Poetry Quest," "The Algebra Boss Battle"). This builds a <Highlight description="When you focus on actually getting better at something rather than just trying to look smart. If you hit a wall, you see it as a chance to level up, not proof that you're thick." theme={theme}>Mastery Orientation</Highlight>,<Cite n={3} /> where challenges feel like chances to level up rather than threats to how smart you are.</p>
                   </>
                 )}
             </ReadingSection>

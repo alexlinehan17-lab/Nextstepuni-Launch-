@@ -52,7 +52,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] Understanding Procrastination and Motivation — `procrastination.md`
 - [x] Reframing Catastrophic Thoughts — `catastrophic-thinking.md`
 - [x] Building Emotional Intelligence — `emotional-intelligence.md`
-- [ ] Reframing Progress
+- [x] Reframing Progress — `reframing-progress.md`
 - [ ] The Implementation Playbook
 
 ## Group B — Subject & Exam (45) — phase 2
