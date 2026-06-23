@@ -37,7 +37,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] The Power of "Yet" — `power-of-yet.md`
 - [x] Using Controllable Variables to Grow — `controllable-variables.md`
 - [x] Linking Study to Future Goals — `linking-study-future-goals.md`
-- [ ] The Growth Playbook
+- [x] The Growth Playbook — `growth-mindset.md`
 - [ ] The Teaching Effect
 
 ### 🧠 Architecture / Mindset (13)

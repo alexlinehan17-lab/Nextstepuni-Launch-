@@ -610,6 +610,22 @@ export const REF = {
     source: 'Developmental Psychology',
     doi: '10.1037/dev0000444',
   },
+  dweckleggett1988: {
+    id: 'dweckleggett1988',
+    authors: 'Dweck, C. S., & Leggett, E. L.',
+    year: 1988,
+    title: 'A social-cognitive approach to motivation and personality',
+    source: 'Psychological Review',
+    doi: '10.1037/0033-295x.95.2.256',
+  },
+  blackwell2007: {
+    id: 'blackwell2007',
+    authors: 'Blackwell, L. S., Trzesniewski, K. H., & Dweck, C. S.',
+    year: 2007,
+    title: 'Implicit theories of intelligence predict achievement across an adolescent transition: A longitudinal study and an intervention',
+    source: 'Child Development',
+    doi: '10.1111/j.1467-8624.2007.00995.x',
+  },
   wigfield2000: {
     id: 'wigfield2000',
     authors: 'Wigfield, A., & Eccles, J. S.',
