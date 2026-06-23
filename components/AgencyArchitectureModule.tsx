@@ -13,6 +13,8 @@ import { type ModuleProgress } from '../types';
 import { amberTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { AGENCY_ARCHITECTURE_REFERENCE_LIST } from '../data/references/agencyArchitecture';
 import { useModuleResponses } from '../hooks/useModuleResponses';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
@@ -284,6 +286,7 @@ const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleP
       moduleDescription="Learn to distinguish between what you can and cannot control, and rewire your brain to see failure as feedback, not a final verdict."
       theme={theme}
       sections={sections}
+      references={AGENCY_ARCHITECTURE_REFERENCE_LIST}
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
@@ -295,13 +298,13 @@ const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleP
             <ReadingSection title="The Story of Failure." eyebrow="Step 1" icon={Code} theme={theme}>
               {essentials ? (
                 <>
-                  <p>When something goes wrong, your brain writes a story to explain it. That story is called an <Highlight description="The story your brain tells you about why something happened. The kind of story you default to has a huge effect on how motivated and resilient you feel." theme={theme}>attribution</Highlight>. It controls your motivation.</p>
+                  <p>When something goes wrong, your brain writes a story to explain it. That story is called an <Highlight description="The story your brain tells you about why something happened. The kind of story you default to has a huge effect on how motivated and resilient you feel." theme={theme}>attribution</Highlight>.<Cite n={1} /> It controls your motivation.</p>
                   <p>Here's what to do: focus on what you can control. Split everything into two buckets. Things you control (your effort, your strategy). Things you don't (other people, luck). Pour your energy into the first bucket. This is the <Highlight description="A simple but powerful idea: split everything in your life into two buckets — stuff you can actually control (your effort, your attitude) and stuff you can't (other people, external events). Then pour your energy into the first bucket." theme={theme}>Dichotomy of Control</Highlight>.</p>
                 </>
               ) : (
                 <>
                   <p>When something bad happens, your brain instantly writes a story to explain why. This story is called an <Highlight description="The story your brain tells you about why something happened. The kind of story you default to has a huge effect on how motivated and resilient you feel." theme={theme}>attribution</Highlight>. It's the "source code" for your motivation. A resilient mindset isn't about being positive; it's about telling yourself the right kind of story after a failure.</p>
-                  <p>The core principle is to focus on what you can control. This idea is called the <Highlight description="A simple but powerful idea: split everything in your life into two buckets — stuff you can actually control (your effort, your attitude) and stuff you can't (other people, external events). Then pour your energy into the first bucket." theme={theme}>Dichotomy of Control</Highlight>. The research is clear: students who focus their energy on what they can control, and let go of what they can't, are more resilient and academically successful.</p>
+                  <p>The core principle is to focus on what you can control. This idea is called the <Highlight description="A simple but powerful idea: split everything in your life into two buckets — stuff you can actually control (your effort, your attitude) and stuff you can't (other people, external events). Then pour your energy into the first bucket." theme={theme}>Dichotomy of Control</Highlight>. Research on how students explain their results points the same way: those who attribute outcomes to causes they can act on tend to be more resilient and motivated.<Cite n={1} /></p>
                   <PersonalStory name="Alex" role="Founder, NextStepUni">
                     <p>After I failed my Junior Cert, I had a long list of things I couldn't control. Where I grew up, the crowds I'd been in, the things that had happened. In 4th year I made a decision to stop looking at that list. I focused on the one thing I could control: how I studied. I read the academic papers, I built a system, and I worked it every day. That was the only variable I changed — and it changed everything.</p>
                   </PersonalStory>
@@ -311,7 +314,7 @@ const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleP
           )}
           {activeSection === 1 && (
             <ReadingSection title="The Three Dimensions." eyebrow="Step 2" icon={SlidersHorizontal} theme={theme}>
-              <p>{essentials ? 'Your failure story has three parts. Each one changes how you feel.' : 'Every story you tell yourself about a failure can be broken down along three dimensions.'}</p>
+              <p>{essentials ? 'Your failure story has three parts. Each one changes how you feel.' : 'Every story you tell yourself about a failure can be broken down along three dimensions.'}<Cite n={1} /></p>
               <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 {/* Card 1 — Sky */}
                 <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
@@ -346,13 +349,13 @@ const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleP
             <ReadingSection title="The Pessimist's Script." eyebrow="Step 3" icon={UserX} theme={theme}>
               {essentials ? (
                 <>
-                  <p>The most dangerous story says failure is <strong>Internal, Stable, and Uncontrollable</strong>. "I failed because I'm stupid." That leads to <Highlight description="When you've told yourself 'there's no point' so many times that you actually start to believe it. You stop trying — not because you're lazy, but because your brain has convinced itself that nothing you do will make a difference." theme={theme}>Learned Helplessness</Highlight>.</p>
+                  <p>The most dangerous story says failure is <strong>Internal, Stable, and Uncontrollable</strong>. "I failed because I'm stupid." That leads to <Highlight description="When you've told yourself 'there's no point' so many times that you actually start to believe it. You stop trying — not because you're lazy, but because your brain has convinced itself that nothing you do will make a difference." theme={theme}>Learned Helplessness</Highlight>.<Cite n={2} /></p>
                   <p>You stop trying. Not because you're lazy. Your brain concluded that effort is pointless. This pattern kills motivation fast.</p>
                 </>
               ) : (
                 <>
                   <p>The most dangerous story your brain can write is the "pessimistic explanatory style." It attributes failure to causes that are <strong>Internal, Stable, and Uncontrollable</strong>. For example: "I failed the test (bad event) because I am stupid (Internal, Stable, Uncontrollable)."</p>
-                  <p>This kind of thinking is toxic. It leads straight to <Highlight description="When you've told yourself 'there's no point' so many times that you actually start to believe it. You stop trying — not because you're lazy, but because your brain has convinced itself that nothing you do will make a difference." theme={theme}>Learned Helplessness</Highlight>. If you believe the cause of your failure is a permanent, unchangeable part of who you are, then there's no point in trying again. Your motivation collapses, not because you're lazy, but because your brain has logically concluded that effort is futile.</p>
+                  <p>This kind of thinking is toxic. It leads straight to <Highlight description="When you've told yourself 'there's no point' so many times that you actually start to believe it. You stop trying — not because you're lazy, but because your brain has convinced itself that nothing you do will make a difference." theme={theme}>Learned Helplessness</Highlight>.<Cite n={2} /> If you believe the cause of your failure is a permanent, unchangeable part of who you are, then there's no point in trying again. Your motivation collapses, not because you're lazy, but because your brain has logically concluded that effort is futile.</p>
                 </>
               )}
             </ReadingSection>
@@ -361,12 +364,12 @@ const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleP
             <ReadingSection title="The Agency Re-Write." eyebrow="Step 4" icon={Recycle} theme={theme}>
               {essentials ? (
                 <>
-                  <p>You can rewrite this script. This is <Highlight description="Basically, training yourself to change the story you tell about why things went wrong. Instead of jumping to 'I'm useless,' you learn to say 'my approach didn't work — what can I try differently?'" theme={theme}>Attributional Retraining</Highlight>. Shift your explanations to <strong>Internal, Unstable, and Controllable</strong>.</p>
+                  <p>You can rewrite this script. This is <Highlight description="Basically, training yourself to change the story you tell about why things went wrong. Instead of jumping to 'I'm useless,' you learn to say 'my approach didn't work — what can I try differently?'" theme={theme}>Attributional Retraining</Highlight>.<Cite n={3} /> Shift your explanations to <strong>Internal, Unstable, and Controllable</strong>.</p>
                   <p>"I'm stupid" becomes "my strategy didn't work." You still own it. But now you can change it. That turns a dead end into a next step.</p>
                 </>
               ) : (
                 <>
-                  <p>The good news is that you can consciously re-write this script. This is called <Highlight description="Basically, training yourself to change the story you tell about why things went wrong. Instead of jumping to 'I'm useless,' you learn to say 'my approach didn't work — what can I try differently?'" theme={theme}>Attributional Retraining</Highlight>. It genuinely works — students who practise this become more resilient and do better in their exams.</p>
+                  <p>The good news is that you can consciously re-write this script. This is called <Highlight description="Basically, training yourself to change the story you tell about why things went wrong. Instead of jumping to 'I'm useless,' you learn to say 'my approach didn't work — what can I try differently?'" theme={theme}>Attributional Retraining</Highlight>. It genuinely works — in studies, students taught to re-attribute setbacks to changeable causes improved their grades.<Cite n={3} /></p>
                   <p>The goal is to shift your explanations towards causes that are <strong>Internal, Unstable, and Controllable</strong>. "I failed the test because I am stupid" becomes "I failed the test because my <em>strategy</em> was ineffective." The cause is still internal (giving you agency), but it's unstable (you can change your strategy) and controllable. This isn't just wordplay; it's a fundamental shift in your brain's operating system that turns a dead end into a learning opportunity.</p>
                 </>
               )}

@@ -46,7 +46,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] Affirming Values — `affirming-values.md`
 - [x] Best Possible Self — `best-possible-self.md`
 - [x] The Grammar of Grit — `grammar-of-grit.md`
-- [ ] Controlling the Controllables
+- [x] Controlling the Controllables — `agency-architecture.md`
 - [ ] Your Strategic Advantage
 - [ ] Self Efficacy
 - [ ] Understanding Procrastination and Motivation

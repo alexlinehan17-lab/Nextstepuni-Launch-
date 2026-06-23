@@ -610,6 +610,22 @@ export const REF = {
     source: 'Developmental Psychology',
     doi: '10.1037/dev0000444',
   },
+  weiner1985: {
+    id: 'weiner1985',
+    authors: 'Weiner, B.',
+    year: 1985,
+    title: 'An attributional theory of achievement motivation and emotion',
+    source: 'Psychological Review',
+    doi: '10.1037/0033-295x.92.4.548',
+  },
+  wilsonLinville1982: {
+    id: 'wilsonLinville1982',
+    authors: 'Wilson, T. D., & Linville, P. W.',
+    year: 1982,
+    title: 'Improving the academic performance of college freshmen: Attribution therapy revisited',
+    source: 'Journal of Personality and Social Psychology',
+    doi: '10.1037/0022-3514.42.2.367',
+  },
   abramson1978: {
     id: 'abramson1978',
     authors: 'Abramson, L. Y., Seligman, M. E. P., & Teasdale, J. D.',
