@@ -43,7 +43,7 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 ### 🧠 Architecture / Mindset (13)
 - [x] The Driver — `agency-protocol.md`
 - [x] The Science of Hope — `hope-protocol.md`
-- [ ] Affirming Values
+- [x] Affirming Values — `affirming-values.md`
 - [ ] Best Possible Self
 - [ ] The Grammar of Grit
 - [ ] Controlling the Controllables

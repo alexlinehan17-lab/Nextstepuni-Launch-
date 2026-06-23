@@ -13,6 +13,8 @@ import { type ModuleProgress } from '../types';
 import { blueTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { AFFIRMING_VALUES_REFERENCE_LIST } from '../data/references/affirmingValues';
 import { useModuleResponses } from '../hooks/useModuleResponses';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { COLORS } from '../design/tokens';
@@ -358,6 +360,7 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
       theme={theme}
       sections={sections}
       fullSectionsCount={5}
+      references={AFFIRMING_VALUES_REFERENCE_LIST}
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
@@ -370,13 +373,13 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
             <ReadingSection title="The Invisible Threat." eyebrow="Step 1" icon={AlertTriangle} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Here's the thing: in exams, your brain fights two battles. You fight the questions. You also fight a background voice saying "people like me don't get these results." That voice is called <Highlight description="That nagging background voice during an exam that says 'people like me don't get these results.' It's not just nerves — it actually takes up space in your brain, leaving less room for the actual questions." theme={theme}>Stereotype Threat</Highlight>.</p>
-                  <p>It hijacks your working memory. You lose brainpower to anxiety. You know the material, but your brain can't access it properly. This costs you real marks.</p>
+                  <p>Here's the thing: in exams, your brain fights two battles. You fight the questions. You also fight a background voice saying "people like me don't get these results." That voice is called <Highlight description="That nagging background voice during an exam that says 'people like me don't get these results.' It's not just nerves — it actually takes up space in your brain, leaving less room for the actual questions." theme={theme}>Stereotype Threat</Highlight>.<Cite n={1} /></p>
+                  <p>It hijacks your working memory.<Cite n={2} /> You lose brainpower to anxiety. You know the material, but your brain can't access it properly. This costs you real marks.</p>
                 </>
               ) : (
                 <>
-                  <p>In a high-stakes situation like a big exam, your brain is on high alert. For students from disadvantaged backgrounds, there's an extra, invisible threat in the room: the fear that a bad result will confirm what people already think about "people like you." This is called <Highlight description="That nagging background voice during an exam that says 'people like me don't get these results.' It's not just nerves — it actually takes up space in your brain, leaving less room for the actual questions." theme={theme}>Stereotype Threat</Highlight>.</p>
-                  <p>It's like a hidden tax on your brainpower. Part of your working memory gets hijacked by this background anxiety, leaving less room for the actual exam questions. This isn't just "in your head" — it's a real stress response that can cost you marks, even when you know the material perfectly.</p>
+                  <p>In a high-stakes situation like a big exam, your brain is on high alert. For students from disadvantaged backgrounds, there's an extra, invisible threat in the room: the fear that a bad result will confirm what people already think about "people like you." This is called <Highlight description="That nagging background voice during an exam that says 'people like me don't get these results.' It's not just nerves — it actually takes up space in your brain, leaving less room for the actual questions." theme={theme}>Stereotype Threat</Highlight>.<Cite n={1} /></p>
+                  <p>It's like a hidden tax on your brainpower. Part of your working memory gets hijacked by this background anxiety, leaving less room for the actual exam questions.<Cite n={2} /> This isn't just "in your head" — it's a real stress response that can cost you marks, even when you know the material perfectly.</p>
                   <PersonalStory name="Alex" role="Founder, NextStepUni">
                     <p>I know what this feels like. Walking into an exam hall, part of my brain was always running a background programme: "People from Togher don't get these kinds of results." I didn't have a name for it then, but it was stereotype threat. I was fighting the exam and fighting that voice at the same time — and I didn't realise it was costing me marks until I learned the science behind it.</p>
                   </PersonalStory>
@@ -388,26 +391,26 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
           )}
           {!essentials && activeSection === 1 && (
             <ReadingSection title="The Psychological Shield." eyebrow="Step 2" icon={Shield} theme={theme}>
-              <p>Researchers spent years looking for a way to fight this invisible threat. The best solution they found is almost ridiculously simple: a 15-minute writing exercise called <Highlight description="Before a stressful event, you spend 15 minutes writing about what matters most to you — your family, your friends, your creativity. It reminds your brain that you're more than just an exam result, and that frees up the brainpower the threat was stealing." theme={theme}>Self-Affirmation</Highlight>.</p>
+              <p>Researchers spent years looking for a way to fight this invisible threat. The best solution they found is almost ridiculously simple: a 15-minute writing exercise called <Highlight description="Before a stressful event, you spend 15 minutes writing about what matters most to you — your family, your friends, your creativity. It reminds your brain that you're more than just an exam result, and that frees up the brainpower the threat was stealing." theme={theme}>Self-Affirmation</Highlight>.<Cite n={3} /></p>
               <p>It sounds too good to be true, but it works. By writing about what's truly important to you before a stressful event — family, creativity, friendship — you create a mental shield. You remind your brain that your self-worth isn't defined by this one exam. That simple reminder frees up the brainpower that the threat would otherwise steal.</p>
             </ReadingSection>
           )}
           {!essentials && activeSection === 2 && (
             <ReadingSection title="How It Works: The Zoom-Out Effect." eyebrow="Step 3" icon={BrainCircuit} theme={theme}>
-              <p>How can a simple writing exercise have such a powerful effect? It comes down to how your brain handles emotions. When you're scared, your focus narrows — all you can see is the threat. But positive emotions do the opposite: they <Highlight description="When you feel good about who you are, your brain literally opens up. You see more options, think more clearly, and stop fixating on the one thing that's scaring you. It's like going from tunnel vision to a wide-angle lens." theme={theme}>Broaden Your Perspective</Highlight>.</p>
+              <p>How can a simple writing exercise have such a powerful effect? It comes down to how your brain handles emotions. When you're scared, your focus narrows — all you can see is the threat. But positive emotions do the opposite: they <Highlight description="When you feel good about who you are, your brain literally opens up. You see more options, think more clearly, and stop fixating on the one thing that's scaring you. It's like going from tunnel vision to a wide-angle lens." theme={theme}>Broaden Your Perspective</Highlight>.<Cite n={4} /></p>
               <p>When you write about your values, your brain gets a hit of positive emotion — a reminder that you're more than this one exam. That "zooms out" your perspective. Suddenly the exam isn't a life-or-death verdict on your entire identity; it's just one part of a much bigger, more meaningful life. That shift is what reduces the threat and frees up your working memory.</p>
             </ReadingSection>
           )}
           {!essentials && activeSection === 3 && (
             <ReadingSection title="The Real World Data." eyebrow="Step 4" icon={UserCheck} theme={theme}>
-              <p>This isn't just theory — it's been tested in real classrooms. Researchers gave a group of students from disadvantaged backgrounds this exact exercise: 15 minutes of writing about their values, just a few times a year. The result? Their grades jumped significantly — and the effect lasted.</p>
-              <p>Two years later, those students were still outperforming their peers. The exercise had kicked off a positive cycle — better grades led to more confidence, which led to even better grades. And the effect was strongest for the students who were most at risk of underperforming. A 15-minute exercise, a few times a year, changed their trajectory.</p>
+              <p>This isn't just theory — it's been tested in real classrooms. Researchers gave a group of students from disadvantaged backgrounds this exact exercise: 15 minutes of writing about their values, just a few times a year. In that study, their grades rose — and the effect lasted.<Cite n={3} /></p>
+              <p>Two years later, those students were still outperforming their peers. The exercise had kicked off a positive cycle — better grades led to more confidence, which led to even better grades. And the effect was strongest for the students who were most at risk of underperforming.<Cite n={5} /> A 15-minute exercise, a few times a year, changed their trajectory. (Worth knowing: later studies find the effect is real but varies — it works best for the students most under threat, and not in every setting.)</p>
             </ReadingSection>
           )}
           {essentials && activeSection === 1 && (
             <ReadingSection title="The Shield & How It Works." eyebrow="Step 2" icon={Shield} theme={theme}>
-              <p>Write about what matters to you for 15 minutes before an exam. This is called <Highlight description="Before a stressful event, you spend 15 minutes writing about what matters most to you — your family, your friends, your creativity. It reminds your brain that you're more than just an exam result, and that frees up the brainpower the threat was stealing." theme={theme}>Self-Affirmation</Highlight>. You remind your brain that you're more than one exam. That frees up the brainpower the threat was stealing.</p>
-              <p>Writing about your values creates positive emotion. Your perspective zooms out. The exam stops feeling like a verdict on your identity. Students who did this a few times a year saw their grades jump significantly.</p>
+              <p>Write about what matters to you for 15 minutes before an exam. This is called <Highlight description="Before a stressful event, you spend 15 minutes writing about what matters most to you — your family, your friends, your creativity. It reminds your brain that you're more than just an exam result, and that frees up the brainpower the threat was stealing." theme={theme}>Self-Affirmation</Highlight>.<Cite n={3} /> You remind your brain that you're more than one exam. That frees up the brainpower the threat was stealing.</p>
+              <p>Writing about your values creates positive emotion. Your perspective zooms out.<Cite n={4} /> The exam stops feeling like a verdict on your identity. In one study, at-risk students who did this a few times a year saw their grades rise.<Cite n={5} /></p>
             </ReadingSection>
           )}
           {(essentials ? activeSection === 2 : activeSection === 4) && (
