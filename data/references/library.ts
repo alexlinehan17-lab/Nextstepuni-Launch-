@@ -136,4 +136,46 @@ export const REF = {
     source: 'Psychological Science in the Public Interest',
     doi: '10.1177/1529100612453266',
   },
+
+  // Deliberate practice, feedback, error learning, cognitive load, self-explanation
+  ericsson1993: {
+    id: 'ericsson1993',
+    authors: 'Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C.',
+    year: 1993,
+    title: 'The role of deliberate practice in the acquisition of expert performance',
+    source: 'Psychological Review',
+    doi: '10.1037/0033-295x.100.3.363',
+  },
+  hattie2007: {
+    id: 'hattie2007',
+    authors: 'Hattie, J., & Timperley, H.',
+    year: 2007,
+    title: 'The power of feedback',
+    source: 'Review of Educational Research',
+    doi: '10.3102/003465430298487',
+  },
+  metcalfe2017: {
+    id: 'metcalfe2017',
+    authors: 'Metcalfe, J.',
+    year: 2017,
+    title: 'Learning from errors',
+    source: 'Annual Review of Psychology',
+    doi: '10.1146/annurev-psych-010416-044022',
+  },
+  sweller1988: {
+    id: 'sweller1988',
+    authors: 'Sweller, J.',
+    year: 1988,
+    title: 'Cognitive load during problem solving: Effects on learning',
+    source: 'Cognitive Science',
+    doi: '10.1207/s15516709cog1202_4',
+  },
+  chi1989: {
+    id: 'chi1989',
+    authors: 'Chi, M. T. H., Bassok, M., Lewis, M. W., Reimann, P., & Glaser, R.',
+    year: 1989,
+    title: 'Self-explanations: How students study and use examples in learning to solve problems',
+    source: 'Cognitive Science',
+    doi: '10.1016/0364-0213(89)90002-5',
+  },
 } satisfies Record<string, Reference>;
