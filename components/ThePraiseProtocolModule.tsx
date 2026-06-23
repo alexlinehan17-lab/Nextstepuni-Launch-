@@ -14,6 +14,8 @@ import { type ModuleProgress } from '../types';
 import { limeTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { PRAISE_PROTOCOL_REFERENCE_LIST } from '../data/references/praiseProtocol';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = limeTheme;
@@ -639,6 +641,7 @@ const ThePraiseProtocolModule: React.FC<{ onBack: () => void; progress: ModulePr
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      references={PRAISE_PROTOCOL_REFERENCE_LIST}
       finishButtonText="Choose Your Words"
     >
       {(activeSection) => (
@@ -662,12 +665,12 @@ const ThePraiseProtocolModule: React.FC<{ onBack: () => void; progress: ModulePr
             <ReadingSection title="The Praise Experiment." eyebrow="Step 2" icon={BarChart} theme={theme}>
                 {essentials ? (
                   <>
-                    <p>Students aced a test. Half were told "you're smart." Half were told "you worked hard." One sentence changed everything. The "smart" group played it safe and gave up after failure. Nearly 40% lied about their scores. The "hard-working" group chose harder tasks and bounced back. Try the simulation below.</p>
+                    <p>Students aced a test. Half were told "you're smart." Half were told "you worked hard." One sentence changed everything. The "smart" group played it safe and gave up after failure. Nearly 40% lied about their scores.<Cite n={1} /> The "hard-working" group chose harder tasks and bounced back. Try the simulation below.</p>
                   </>
                 ) : (
                   <>
                     <p>Here's an experiment that shows just how powerful one sentence of praise can be. A group of students were all given a test, told they did well, and then given one of two responses: "You must be smart" (Person Praise) or "You must have worked hard" (Process Praise). That's it — one sentence.</p>
-                    <p>The findings were striking. The "smart" kids immediately started playing it safe, choosing easier tasks so they wouldn't risk looking stupid. When they hit a harder problem and failed, they gave up, their scores tanked, and nearly 40% of them lied about how they did. The "hard-working" kids went the other way: they picked harder challenges, actually enjoyed the struggle, bounced back after failing, and were three times more honest about their scores. Let's run the simulation.</p>
+                    <p>The findings were striking. The "smart" kids immediately started playing it safe, choosing easier tasks so they wouldn't risk looking stupid. When they hit a harder problem and failed, they gave up, their scores tanked, and nearly 40% of them lied about how they did.<Cite n={1} /> The "hard-working" kids went the other way: they picked harder challenges, actually enjoyed the struggle, bounced back after failing, and were far more honest about their scores. Let's run the simulation.</p>
                   </>
                 )}
                 <DweckExperimentSimulator />
@@ -677,12 +680,12 @@ const ThePraiseProtocolModule: React.FC<{ onBack: () => void; progress: ModulePr
             <ReadingSection title="The Brain on Praise." eyebrow="Step 3" icon={Brain} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Your brain releases <Highlight description="A feel-good chemical that makes you want to repeat an action." theme={theme}>dopamine</Highlight> when you get praised. Process praise links that feeling to effort. Person praise links it to identity. That is why failure crushes you when you have been told "you're smart." Your brain also fires an error signal when you make mistakes. A <Highlight description="Believing intelligence is fixed." theme={theme}>Fixed Mindset</Highlight> produces a tiny signal. A <Highlight description="Believing intelligence can grow." theme={theme}>Growth Mindset</Highlight> produces a huge one. The bigger the signal, the more you learn.</p>
+                  <p>Praise feels rewarding — but the two types attach that good feeling to different things. Person praise ties it to who you are, so failure feels personal. Process praise ties it to effort, something you can always repeat, so setbacks feel less threatening. That is why the same failure can crush one student and motivate another. Your brain also fires an error signal when you make mistakes. People with a <Highlight description="Believing intelligence is fixed." theme={theme}>Fixed Mindset</Highlight> tend to produce a smaller signal; people with a <Highlight description="Believing intelligence can grow." theme={theme}>Growth Mindset</Highlight> produce a larger one — and a larger signal is linked to learning more from the mistake.<Cite n={2} /></p>
                 </>
               ) : (
                 <>
-                  <p>Why does one sentence make such a big difference? Because the two types of praise light up different parts of your brain. When you get praised, your brain releases <Highlight description="A chemical in your brain that makes you feel good and want to do something again. It's basically your brain's reward signal." theme={theme}>dopamine</Highlight> — the feel-good chemical. Process praise connects that feeling to <em>the work you put in</em>, so your brain starts craving effort. Person praise connects it to <em>who you are</em>, so any failure feels like a personal attack and your motivation crashes.</p>
-                  <p>It goes even deeper than that. When we make a mistake, our brains produce an error signal (called the "Pe wave"). With a <Highlight description="Thinking your intelligence is set in stone. If you believe this, every failure feels like proof you're just not good enough." theme={theme}>Fixed Mindset</Highlight>, that signal is tiny — your brain basically flinches away from the mistake to protect your ego. With a <Highlight description="Thinking your intelligence can grow with effort. If you believe this, failure is just information — a chance to figure out what went wrong and do better." theme={theme}>Growth Mindset</Highlight>, the signal is massive — your brain locks onto the mistake and tries to learn from it.</p>
+                  <p>Why does one sentence make such a big difference? It comes down to what the praise attaches to. Praise feels good — but person praise attaches that feeling to <em>who you are</em>, so any failure can land like a personal attack and motivation crashes. Process praise attaches it to <em>the work you put in</em> — something you can always do again — so setbacks feel less threatening.</p>
+                  <p>There's also a difference in how the brain responds to mistakes. Researchers tracked an error signal in the brain (sometimes called the "Pe wave") and found it was <em>larger</em> in people with a <Highlight description="Thinking your intelligence can grow with effort. If you believe this, failure is just information — a chance to figure out what went wrong and do better." theme={theme}>Growth Mindset</Highlight> than in those with a <Highlight description="Thinking your intelligence is set in stone. If you believe this, every failure feels like proof you're just not good enough." theme={theme}>Fixed Mindset</Highlight> — and a bigger signal went hand in hand with paying more attention to the error and doing better on the next try.<Cite n={2} /></p>
                 </>
               )}
               <ErrorSignalVisualizer />
@@ -692,12 +695,12 @@ const ThePraiseProtocolModule: React.FC<{ onBack: () => void; progress: ModulePr
             <ReadingSection title="The Real World Data." eyebrow="Step 4" icon={User} theme={theme}>
               {essentials ? (
                 <>
-                  <p>A long-term study found that toddlers who got more process praise developed stronger growth mindsets five years later. They did better in Maths and English. The study also found a gender gap. Boys got more process praise from a very young age. Girls got more person praise. This partly explains why some high-achieving girls develop fixed mindsets.</p>
+                  <p>A long-term study found that toddlers who got more process praise developed stronger growth mindsets five years later.<Cite n={3} /> A follow-up found that this early praise predicted better Maths and reading results in fourth grade, with mindset as the link.<Cite n={4} /> The first study also found a gender gap. Boys got more process praise from a very young age. Girls got more person praise. This may be one reason some high-achieving girls develop fixed mindsets.</p>
                 </>
               ) : (
                 <>
-                  <p>This isn't just something that works in a lab. A long-term study followed families from when their kids were toddlers all the way through primary school. It found that the amount of process praise parents used (on average, just 18% of all praise) predicted whether their child would develop a growth mindset five years later. More process praise meant a stronger growth mindset, which led to better results in Maths and English.</p>
-                  <p>The study also found a big gender gap. From as young as 14 months, boys tended to get more process praise ("You built that tower so high!"), while girls were more likely to hear trait-based praise ("You're such a good girl"). This difference in how boys and girls are talked to from a very young age helps explain why high-achieving girls can sometimes be more likely to develop a fixed mindset later on.</p>
+                  <p>This isn't just something that works in a lab. A long-term study followed families from when their kids were toddlers all the way through primary school. It found that the amount of process praise parents used (on average, just 18% of all praise) predicted whether their child would develop a growth mindset five years later.<Cite n={3} /> A follow-up tracked the same children to fourth grade and found that early process praise predicted stronger Maths and reading achievement, with the child's mindset acting as the link between the two.<Cite n={4} /></p>
+                  <p>The first study also found a big gender gap. From as young as 14 months, boys tended to get more process praise ("You built that tower so high!"), while girls were more likely to hear trait-based praise ("You're such a good girl"). This difference in how boys and girls are talked to from a very young age may be one reason high-achieving girls can sometimes be more likely to develop a fixed mindset later on.</p>
                 </>
               )}
             </ReadingSection>

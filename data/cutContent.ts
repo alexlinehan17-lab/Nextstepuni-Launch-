@@ -313,4 +313,30 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'Claiming skills are "permanent" / "stick for good" contradicts the use-it-or-lose-it evidence in the very previous module (the juggling study, Draganski et al. 2004, showed training-induced brain changes reverse when practice stops). Reframed to "durable but reversible if abandoned" for consistency with the evidence.',
     date: '2026-06-23',
   },
+  {
+    id: 'praise-protocol-001',
+    module: 'The Power of Praise',
+    section: 'Step 2 — The Praise Experiment',
+    action: 'reframed',
+    original:
+      'They picked harder challenges, actually enjoyed the struggle, bounced back after failing, and were three times more honest about their scores.',
+    reframedTo:
+      'They picked harder challenges, actually enjoyed the struggle, bounced back after failing, and were far more honest about their scores.',
+    reason:
+      'The underlying study (Mueller & Dweck 1998) reports that nearly 40% of ability-praised children misrepresented their scores — that specific figure is kept and cited. But the precise "three times more honest" ratio is a derived comparison not stated as such in the paper, so the precision was softened to "far more honest" to avoid quoting a number we cannot point to in the source.',
+    date: '2026-06-23',
+  },
+  {
+    id: 'praise-protocol-002',
+    module: 'The Power of Praise',
+    section: 'Step 3 — The Brain on Praise',
+    action: 'reframed',
+    original:
+      "When you get praised, your brain releases dopamine — the feel-good chemical. Process praise connects that feeling to the work you put in, so your brain starts craving effort. Person praise connects it to who you are, so any failure feels like a personal attack and your motivation crashes.",
+    reframedTo:
+      "Praise feels good — but person praise attaches that feeling to who you are, so any failure can land like a personal attack and motivation crashes. Process praise attaches it to the work you put in — something you can always do again — so setbacks feel less threatening.",
+    reason:
+      'The specific neurochemical mechanism — that dopamine from praise gets "wired" to effort vs. identity, making the brain "crave effort" — is a popularised just-so story not established in the praise literature. Reframed to the behavioural claim that is supported (person praise is associated with more helpless responses to failure; Mueller & Dweck 1998) without asserting an unverified dopamine pathway. The error-signal claim that follows is kept and cited to Moser et al. 2011.',
+    date: '2026-06-23',
+  },
 ];
