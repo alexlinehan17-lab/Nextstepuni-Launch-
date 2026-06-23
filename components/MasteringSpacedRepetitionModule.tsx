@@ -16,6 +16,8 @@ import { Highlight, ReadingSection, MicroCommitment, ToolJumpCard } from './Modu
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { COLORS } from '../design/tokens';
+import { Cite } from './ModuleReferences';
+import { SPACED_REPETITION_REFERENCE_LIST } from '../data/references/spacedRepetition';
 
 const theme = skyTheme;
 
@@ -662,17 +664,17 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
   ];
 
   return (
-    <ModuleLayout moduleNumber="02" moduleTitle="Spaced Repetition" moduleSubtitle="The Forgetting Curve Method" moduleDescription={`Stop forgetting what you study. Learn when and how often to review so the stuff you learn actually sticks for your big exams and beyond.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Space It Out">
+    <ModuleLayout moduleNumber="02" moduleTitle="Spaced Repetition" moduleSubtitle="The Forgetting Curve Method" moduleDescription={`Stop forgetting what you study. Learn when and how often to review so the stuff you learn actually sticks for your big exams and beyond.`} theme={theme} sections={sections} onBack={onBack} progress={progress} onProgressUpdate={onProgressUpdate} finishButtonText="Space It Out" references={SPACED_REPETITION_REFERENCE_LIST}>
       {(activeSection) => (
         <>
           {activeSection === 0 && (
             <ReadingSection title="The Forgetting Curve." eyebrow="Step 1" icon={Clock} theme={theme}>
               {essentials ? (
-                <p>Your brain is designed to forget. Without reviewing, you lose 50% of new information within an hour. This is the <Highlight description="The natural pattern where your memory of something new fades quickly over time unless you go back and review it." theme={theme}>Forgetting Curve</Highlight>. To build lasting knowledge, you need to stop it leaking out.</p>
+                <p>Your brain is designed to forget. Without reviewing, memory of new material fades fast — a large share of it can be gone within a day or two.<Cite n={1} /> This is the <Highlight description="The natural pattern where your memory of something new fades quickly over time unless you go back and review it." theme={theme}>Forgetting Curve</Highlight>. To build lasting knowledge, you need to stop it leaking out.</p>
               ) : (
                 <>
                   <p>Your brain is designed to forget. This isn't a flaw -- it's actually a feature. To survive, your brain has to constantly clear out stuff it doesn't think you need. The problem is, it defaults to forgetting almost everything. This is called the <Highlight description="The natural pattern where your memory of something new fades quickly over time unless you go back and review it." theme={theme}>Forgetting Curve</Highlight>.</p>
-                  <p>The curve is brutal. Without reviewing, you can lose over 50% of new information within an hour, and up to 80% within a day. This is why cramming is such a waste of time. To build lasting knowledge, you can't just put information <em>in</em> to your brain; you have to stop it from leaking <em>out</em>.</p>
+                  <p>The curve is brutal. Without reviewing, a large share of new information slips away within the first day or two — classic studies of the forgetting curve, since replicated, show memory dropping sharply soon after learning.<Cite n={1} /> This is why cramming is such a waste of time. To build lasting knowledge, you can't just put information <em>in</em> to your brain; you have to stop it from leaking <em>out</em>.</p>
                 </>
               )}
               <ForgettingCurveVisualizer />
@@ -684,14 +686,14 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
                 <>
                   <p>Cramming tricks you. It's the <Highlight description="The trap where cramming makes you feel like you've nailed it right after studying, but the knowledge falls apart within days -- so you keep cramming because it 'worked' last time." theme={theme}>Cramming Paradox</Highlight>. You feel great right after, but the knowledge vanishes within days.</p>
                   <RetentionCurveComparison />
-                  <p>For the same total study time, <Highlight description="Spreading your study sessions out over time instead of doing it all in one go. It feels slower, but it makes your memory way stronger and longer-lasting." theme={theme}>Spaced Practice</Highlight> can triple how long you remember something.</p>
+                  <p>For the same total study time, <Highlight description="Spreading your study sessions out over time instead of doing it all in one go. It feels slower, but it makes your memory way stronger and longer-lasting." theme={theme}>Spaced Practice</Highlight> can dramatically increase how long you remember something.<Cite n={2} /></p>
                   <CrammingVsSpacingShowdown />
                 </>
               ) : (
                 <>
                   <p>If cramming is so bad, why does everyone do it? Because it tricks you. This is what we call the <Highlight description="The trap where cramming makes you feel like you've nailed it right after studying, but the knowledge falls apart within days -- so you keep cramming because it 'worked' last time." theme={theme}>Cramming Paradox</Highlight>. For tests that happen straight after studying (minutes or hours), cramming actually works. It keeps information floating in your short-term memory, making you feel like you know it all.</p>
                   <RetentionCurveComparison />
-                  <p>This gives you a false sense of security. You score well on the immediate test, which "rewards" the cramming behaviour. But the information never actually makes it into your long-term memory. Here's the thing: for the same amount of study time, <Highlight description="Spreading your study sessions out over time instead of doing it all in one go. It feels slower, but it makes your memory way stronger and longer-lasting." theme={theme}>Spaced Practice</Highlight> can triple how long you actually remember something.</p>
+                  <p>This gives you a false sense of security. You score well on the immediate test, which "rewards" the cramming behaviour. But the information never actually makes it into your long-term memory. Here's the thing: for the same amount of study time, <Highlight description="Spreading your study sessions out over time instead of doing it all in one go. It feels slower, but it makes your memory way stronger and longer-lasting." theme={theme}>Spaced Practice</Highlight> can dramatically improve how long you actually remember something.<Cite n={2} /></p>
                   <CrammingVsSpacingShowdown />
                 </>
               )}
@@ -700,10 +702,10 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
            {activeSection === 2 && (
             <ReadingSection title="The Struggle Sweet Spot." eyebrow="Step 3" icon={Brain} theme={theme}>
               {essentials ? (
-                <p>Spacing works because of <Highlight description="When studying feels a bit harder -- like when you've half-forgotten something and have to really think to recall it -- that extra effort actually makes the memory stick much better." theme={theme}>Desirable Difficulty</Highlight>. You let yourself half-forget. Then when you review, your brain works harder to dig it up. That effort tells your brain to make the memory stronger.</p>
+                <p>Spacing works because of <Highlight description="When studying feels a bit harder -- like when you've half-forgotten something and have to really think to recall it -- that extra effort actually makes the memory stick much better." theme={theme}>Desirable Difficulty</Highlight>.<Cite n={3} /> You let yourself half-forget. Then when you review, your brain works harder to dig it up. That effort tells your brain to make the memory stronger.</p>
               ) : (
                 <>
-                  <p>Why is spacing so much more powerful? Because it uses the "struggle" of forgetting to your advantage. This is the idea behind <Highlight description="When studying feels a bit harder -- like when you've half-forgotten something and have to really think to recall it -- that extra effort actually makes the memory stick much better." theme={theme}>Desirable Difficulty</Highlight>. When you space out your study, you let your memory fade a little on purpose. When you come back to review it, your brain has to work harder to dig it up.</p>
+                  <p>Why is spacing so much more powerful? Because it uses the "struggle" of forgetting to your advantage. This is the idea behind <Highlight description="When studying feels a bit harder -- like when you've half-forgotten something and have to really think to recall it -- that extra effort actually makes the memory stick much better." theme={theme}>Desirable Difficulty</Highlight>.<Cite n={3} /> When you space out your study, you let your memory fade a little on purpose. When you come back to review it, your brain has to work harder to dig it up.</p>
                   <p>That extra effort is a powerful signal. It tells your brain, "This information is important! I had to work hard to find it, so I should make the pathway stronger for next time." Cramming skips this difficulty entirely -- the information is always right there in front of you, so your brain sees no reason to lock it in for the long term.</p>
                 </>
               )}
@@ -712,11 +714,11 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
           {activeSection === 3 && (
             <ReadingSection title="The Best Review Schedule." eyebrow="Step 4" icon={CalendarDays} theme={theme}>
               {essentials ? (
-                <p>Your <Highlight description="The gap between your study sessions. The right gap depends on how far away your test is." theme={theme}>review gap</Highlight> should be 5-20% of the time until your <Highlight description="The time between your last study session and the actual test or exam." theme={theme}>test date</Highlight>. Test in a week? Review every 1-2 days. Big exam in 6 months? Review every 3 weeks.</p>
+                <p>Your <Highlight description="The gap between your study sessions. The right gap depends on how far away your test is." theme={theme}>review gap</Highlight> should be roughly 5-20% of the time until your <Highlight description="The time between your last study session and the actual test or exam." theme={theme}>test date</Highlight>.<Cite n={4} /> Test in a week? Review every 1-2 days. Big exam in 6 months? Review every 3 weeks.</p>
               ) : (
                 <>
                   <p>So, what's the perfect gap between study sessions? There's no single magic number. The <Highlight description="The gap between your study sessions. The right gap depends on how far away your test is." theme={theme}>best review gap</Highlight> depends entirely on when you need to remember the information -- basically, how far away your <Highlight description="The time between your last study session and the actual test or exam." theme={theme}>test date</Highlight> is.</p>
-                  <p>Here's a handy rule of thumb: your review gap should be roughly <strong>5-20%</strong> of the time until the test. For a test in a week, you need a short gap (1-2 days). For a big exam in 6 months, you need a much longer gap (e.g., 3 weeks). This is because a longer gap lets you forget a little more, which makes your brain work harder when you review -- and that extra effort is exactly what locks it in for the long term.</p>
+                  <p>Here's a handy rule of thumb: your review gap should be roughly <strong>5-20%</strong> of the time until the test.<Cite n={4} /> For a test in a week, you need a short gap (1-2 days). For a big exam in 6 months, you need a much longer gap (e.g., 3 weeks). This is because a longer gap lets you forget a little more, which makes your brain work harder when you review -- and that extra effort is exactly what locks it in for the long term.</p>
                 </>
               )}
               <OptimalScheduleCalculator />

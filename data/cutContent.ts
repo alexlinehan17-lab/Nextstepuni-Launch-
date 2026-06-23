@@ -107,4 +107,28 @@ export const CUT_CONTENT: CutContentEntry[] = [
       "The original overstated the science — not all difficulty aids learning, only 'desirable difficulties' (effortful but ultimately successful retrieval). Reframed to the precise concept, supported by Soderstrom & Bjork (2015, doi:10.1177/1745691615569000).",
     date: '2026-06-23',
   },
+  {
+    id: 'spaced-repetition-001',
+    module: 'Spaced Repetition',
+    section: 'Step 1 — The Forgetting Curve',
+    action: 'reframed',
+    original:
+      'Without reviewing, you can lose over 50% of new information within an hour, and up to 80% within a day.',
+    reframedTo:
+      'Without reviewing, a large share of new information slips away within the first day or two — classic studies of the forgetting curve, since replicated, show memory dropping sharply soon after learning.',
+    reason:
+      "The specific figures overstate the evidence — the replicated Ebbinghaus forgetting curve (Murre & Dros 2015, doi:10.1371/journal.pone.0120644) shows a sharp early drop but not ~80% loss within 24 hours. Reframed to a defensible qualitative claim citing the replication.",
+    date: '2026-06-23',
+  },
+  {
+    id: 'spaced-repetition-002',
+    module: 'Spaced Repetition',
+    section: 'Step 2 — The Cramming Paradox',
+    action: 'reframed',
+    original: 'Spaced Practice can triple how long you remember something.',
+    reframedTo: 'Spaced Practice can dramatically increase how long you remember something.',
+    reason:
+      'The "triple" multiplier is not supported as a general figure. The spacing effect itself is robustly evidenced (Cepeda et al. 2006, doi:10.1037/0033-2909.132.3.354), but effect sizes vary widely by interval, so the specific number was reframed to a qualitative claim.',
+    date: '2026-06-23',
+  },
 ];
