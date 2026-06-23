@@ -388,4 +388,38 @@ export const REF = {
     source: 'PLoS ONE',
     doi: '10.1371/journal.pone.0048076',
   },
+
+  // Attention, interruption, adolescent brain, habit/intentions
+  mark2008: {
+    id: 'mark2008',
+    authors: 'Mark, G., Gudith, D., & Klocke, U.',
+    year: 2008,
+    title: 'The cost of interrupted work: More speed and stress',
+    source: 'Proceedings of the SIGCHI Conference on Human Factors in Computing Systems',
+    doi: '10.1145/1357054.1357072',
+  },
+  casey2008: {
+    id: 'casey2008',
+    authors: 'Casey, B. J., Jones, R. M., & Hare, T. A.',
+    year: 2008,
+    title: 'The adolescent brain',
+    source: 'Annals of the New York Academy of Sciences',
+    doi: '10.1196/annals.1440.010',
+  },
+  ward2017: {
+    id: 'ward2017',
+    authors: 'Ward, A. F., Duke, K., Gneezy, A., & Bos, M. W.',
+    year: 2017,
+    title: "Brain drain: The mere presence of one's own smartphone reduces available cognitive capacity",
+    source: 'Journal of the Association for Consumer Research',
+    doi: '10.1086/691462',
+  },
+  gollwitzer1999: {
+    id: 'gollwitzer1999',
+    authors: 'Gollwitzer, P. M.',
+    year: 1999,
+    title: 'Implementation intentions: Strong effects of simple plans',
+    source: 'American Psychologist',
+    doi: '10.1037/0003-066x.54.7.493',
+  },
 } satisfies Record<string, Reference>;

@@ -15,6 +15,8 @@ import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './Mod
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { COLORS } from '../design/tokens';
+import { Cite } from './ModuleReferences';
+import { DIGITAL_DISTRACTION_REFERENCE_LIST } from '../data/references/digitalDistraction';
 
 const theme = slateTheme;
 
@@ -36,7 +38,7 @@ const AttentionDeficitCalculator = () => {
             <div className="text-center mb-6">
                 <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Interactive Calculator</span>
                 <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Attention Deficit Calculator</h4>
-                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Every phone check triggers a ~23 minute attention recovery. How much of your study hour survives?</p>
+                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>After an interruption it can take a while to fully refocus. This is a simplified illustration of how quickly those costs add up.</p>
             </div>
 
             {/* Stat card */}
@@ -372,6 +374,7 @@ const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleP
       progress={progress}
       onProgressUpdate={onProgressUpdate}
       finishButtonText="Take Back Your Focus"
+      references={DIGITAL_DISTRACTION_REFERENCE_LIST}
     >
       {(activeSection) => (
         <>
@@ -379,14 +382,14 @@ const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleP
             <ReadingSection title="Why Your Phone Wins." eyebrow="Step 1" icon={BrainCircuit} theme={theme}>
               {essentials ? (
                 <>
-                  <p>You are not lazy. Your brain's self-control centre is still developing. The reward-seeking part is running full blast. Apps exploit this on purpose.</p>
-                  <p>Every phone check costs you 23 minutes of focus recovery. That means 3 checks per hour leaves almost zero deep work time. You need to make distractions physically harder to reach.</p>
+                  <p>You are not lazy. Your brain's self-control centre is still developing. The reward-seeking part is running full blast.<Cite n={1} /> Apps exploit this on purpose.</p>
+                  <p>After an interruption, research found it can take around 23 minutes to fully refocus<Cite n={2} /> — so frequent phone checks can quietly wreck a whole study session. You need to make distractions physically harder to reach.</p>
                 </>
               ) : (
                 <>
-                  <p>If you can't stop reaching for your phone, that's not because you're lazy or weak. It's because your brain is literally wired to lose this fight right now. The part of your brain that handles <Highlight description="This is the part right behind your forehead that helps you plan ahead, resist impulses, and make good decisions. In your teens, it's still developing -- which is why it's harder to say no to distractions." theme={theme}>self-control and planning</Highlight> isn't fully developed yet, while the part that craves <Highlight description="This is the emotional, reward-seeking part of your brain. It's the bit that lights up when you get a notification or a like. In your teens, it's running the show." theme={theme}>rewards and excitement</Highlight> is running on overdrive.</p>
+                  <p>If you can't stop reaching for your phone, that's not because you're lazy or weak. It's because your brain is literally wired to lose this fight right now. The part of your brain that handles <Highlight description="This is the part right behind your forehead that helps you plan ahead, resist impulses, and make good decisions. In your teens, it's still developing -- which is why it's harder to say no to distractions." theme={theme}>self-control and planning</Highlight> isn't fully developed yet, while the part that craves <Highlight description="This is the emotional, reward-seeking part of your brain. It's the bit that lights up when you get a notification or a like. In your teens, it's running the show." theme={theme}>rewards and excitement</Highlight> is running on overdrive.<Cite n={1} /></p>
                   <p>Apps like TikTok, Instagram, and Snapchat are built to exploit exactly this. They work like <Highlight description="Think of a slot machine -- you never know when you'll hit the jackpot, so you keep pulling the lever. Social media does the same thing with likes and messages. You keep checking because sometimes there's something exciting, and that unpredictability is addictive." theme={theme}>digital slot machines</Highlight>, giving you random hits of likes and messages that keep you coming back.</p>
-                  <p>Here's the real kicker: every time you switch from studying to checking your phone, your brain doesn't just snap back. There's a kind of <Highlight description="When you switch from studying to your phone, your brain doesn't reset instantly. Part of it is still thinking about what you just saw. Research shows it takes about 23 minutes to get properly focused again." theme={theme}>mental hangover</Highlight> that takes about 23 minutes to clear. This module is about taking back control of your own attention -- so your study time actually counts.</p>
+                  <p>Here's the real kicker: every time you switch from studying to checking your phone, your brain doesn't just snap back. There's a kind of <Highlight description="When you switch from studying to your phone, your brain doesn't reset instantly. Part of it is still thinking about what you just saw. Research shows it takes about 23 minutes to get properly focused again." theme={theme}>mental hangover</Highlight> that can take around 23 minutes to clear.<Cite n={2} /> This module is about taking back control of your own attention -- so your study time actually counts.</p>
                   <PersonalStory name="Ciara" role="5th Year, Cork">
                     <p>"I used to think I was just bad at concentrating. Turns out I was checking my phone about 8 times an hour during study. Once I worked out how much focus time I was actually losing, it proper shocked me. I wasn't studying -- I was just sitting at a desk."</p>
                   </PersonalStory>
@@ -429,10 +432,10 @@ const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleP
           {activeSection === 3 && (
             <ReadingSection title="Setting Up Your Space." eyebrow="Step 4" icon={Home} theme={theme}>
               {essentials ? (
-                <p>Just having your phone visible drains your brainpower. Move it out of the room completely. Charge it in the kitchen. Use a cheap clock or watch for time. Out of sight, out of mind actually works.</p>
+                <p>Just having your phone visible drains your brainpower.<Cite n={3} /> Move it out of the room completely. Charge it in the kitchen. Use a cheap clock or watch for time. Out of sight, out of mind actually works.</p>
               ) : (
                 <>
-                  <p>Where you study matters more than you think. Here's a wild fact: just having your phone on the desk -- even face down, even on silent -- <Highlight description="Research from the University of Texas found that just having your phone visible drains your brainpower. Your brain is constantly spending energy resisting the urge to check it, even if you don't realise it. Moving it to another room completely removes that drain." theme={theme}>makes you worse at concentrating</Highlight>. Your brain is quietly fighting the urge to pick it up, and that uses up energy you could be putting into study.</p>
+                  <p>Where you study matters more than you think. Here's a wild fact: just having your phone on the desk -- even face down, even on silent -- <Highlight description="Research from the University of Texas found that just having your phone visible drains your brainpower. Your brain is constantly spending energy resisting the urge to check it, even if you don't realise it. Moving it to another room completely removes that drain." theme={theme}>makes you worse at concentrating</Highlight>.<Cite n={3} /> Your brain is quietly fighting the urge to pick it up, and that uses up energy you could be putting into study.</p>
                   <p>"Out of sight, out of mind" isn't just a saying -- it's how your brain actually works. The fix is dead simple: move your phone out of the room while you study. Charge it in the kitchen or the hall. If you use it to check the time, stick a cheap clock on your desk instead (or use a watch). The less you can see your phone, the less it pulls at your attention.</p>
                 </>
               )}
@@ -443,12 +446,12 @@ const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleP
               {essentials ? (
                 <>
                   <p>Use habit stacking. Attach your new habit to something automatic. Example: "After I get home, phone goes on kitchen charger." No decision needed.</p>
-                  <p>Make if-then plans. Decide in advance what you will do when tempted. Example: "If I want to check Instagram, I will do 5 star jumps." You have already made the choice.</p>
+                  <p>Make if-then plans. Decide in advance what you will do when tempted. Example: "If I want to check Instagram, I will do 5 star jumps."<Cite n={4} /> You have already made the choice.</p>
                 </>
               ) : (
                 <>
                   <p>The best way to beat distractions isn't willpower -- it's making good habits automatic so you don't even have to think about it. The first trick is <Highlight description="You attach a new habit to something you already do every day. The formula: 'After I [thing I always do], I will [new thing].' Because the first habit is automatic, the second one gets pulled along with it." theme={theme}>habit stacking</Highlight>. You pair your new habit with something you already do without thinking. For example: "After I walk in the door from school, I'll put my phone straight on the kitchen charger." You don't have to decide each day -- it just becomes what you do.</p>
-                  <p>The second trick is making <Highlight description="You decide in advance what you'll do when a specific situation happens. The formula: 'If [this happens], then I will [do this].' For example: 'If I feel the urge to check Instagram, I'll stand up and do 5 star jumps.' It takes the decision-making out of the moment when you're tired and your willpower is low." theme={theme}>if-then plans</Highlight>. You decide in advance what you'll do when temptation hits. For example: "If I feel the urge to check Instagram, I'll stand up and do 5 star jumps." The point is that you've already made the decision, so when the moment comes, you don't have to negotiate with your tired brain.</p>
+                  <p>The second trick is making <Highlight description="You decide in advance what you'll do when a specific situation happens. The formula: 'If [this happens], then I will [do this].' For example: 'If I feel the urge to check Instagram, I'll stand up and do 5 star jumps.' It takes the decision-making out of the moment when you're tired and your willpower is low." theme={theme}>if-then plans</Highlight>.<Cite n={4} /> You decide in advance what you'll do when temptation hits. For example: "If I feel the urge to check Instagram, I'll stand up and do 5 star jumps." The point is that you've already made the decision, so when the moment comes, you don't have to negotiate with your tired brain.</p>
                 </>
               )}
             </ReadingSection>

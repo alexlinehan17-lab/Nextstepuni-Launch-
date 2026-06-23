@@ -183,4 +183,17 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The "single most effective" superlative is not supported — the peer-reviewed evidence base for NSDR / yoga nidra as a recovery tool is still limited. Reframed to a non-superlative recommendation. (Brief structured breathing has stronger support: Balban et al. 2023, doi:10.1016/j.xcrm.2022.100895.)',
     date: '2026-06-23',
   },
+  {
+    id: 'digital-distraction-001',
+    module: 'Creating Barriers for Digital Distractions',
+    section: 'Step 1 — Why Your Phone Wins (+ Attention Deficit Calculator)',
+    action: 'reframed',
+    original:
+      'Every phone check costs you 23 minutes of focus recovery. That means 3 checks per hour leaves almost zero deep work time. … [calculator] Every phone check triggers a ~23 minute attention recovery. How much of your study hour survives?',
+    reframedTo:
+      'After an interruption, research found it can take around 23 minutes to fully refocus — so frequent phone checks can quietly wreck a whole study session. … [calculator] After an interruption it can take a while to fully refocus. This is a simplified illustration of how quickly those costs add up.',
+    reason:
+      'The ~23-minute figure is real (Mark, Gudith & Klocke 2008, doi:10.1145/1357054.1357072 — average time to return to an interrupted task), but the original linearly stacked it (e.g. "3 checks = over an hour lost"), which the study does not support (recovery periods overlap and vary). Reframed to cite the figure accurately and to label the interactive calculator as a simplified illustration rather than a precise measure.',
+    date: '2026-06-23',
+  },
 ];
