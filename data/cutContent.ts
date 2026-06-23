@@ -42,6 +42,57 @@ export interface CutContentEntry {
   date: string;
 }
 
-// No content has been cut yet. Entries are appended as the module-by-module
-// retro-sourcing review proceeds.
-export const CUT_CONTENT: CutContentEntry[] = [];
+export const CUT_CONTENT: CutContentEntry[] = [
+  {
+    id: 'mastering-active-recall-001',
+    module: 'Mastering Active Recall',
+    section: "Step 3 — The 'I Know This' Trap",
+    action: 'reframed',
+    original:
+      'Students who stopped testing themselves after one correct answer could only remember about 35% of the material a week later. Students who kept testing themselves on everything remembered about 80% — more than double.',
+    reframedTo:
+      'In a well-known study, students who kept testing themselves on material remembered far more a week later than students who stopped as soon as they got it right once — even though both groups felt just as sure they knew it.',
+    reason:
+      'The specific figures (35% / 80%) come from Karpicke & Roediger (2008, Science), which is paywalled with no open-access copy, so the exact numbers could not be verified against the primary source. Reframed to the qualitative finding, which the abstract fully supports. Citation retained (doi:10.1126/science.1152408). Exact figures can be restored if the PDF is supplied.',
+    date: '2026-06-23',
+  },
+  {
+    id: 'mastering-active-recall-002',
+    module: 'Mastering Active Recall',
+    section: 'Step 5 — The Anxiety Myth',
+    action: 'reframed',
+    original:
+      'An incredible 92% of students said it helped them learn, and 72% said it made them less nervous for big exams.',
+    reframedTo:
+      'The large majority said it helped them learn, and most said it actually made them less nervous for big exams.',
+    reason:
+      'The 92%/72% figures trace to Agarwal et al. (2014, JARMAC), which is paywalled and not indexed in open databases. The percentages are corroborated by multiple secondary sources but could not be confirmed against the primary full text, so they were reframed to a qualitative claim the paper supports. Citation retained (doi:10.1016/j.jarmac.2014.07.002).',
+    date: '2026-06-23',
+  },
+  {
+    id: 'mastering-active-recall-003',
+    module: 'Mastering Active Recall',
+    section: 'Step 6 — Your Recall Toolkit (micro-commitment)',
+    action: 'reframed',
+    original:
+      'For your next study session, try the 20/80 rule. Spend 20% of your time consuming information (reading, watching) and 80% of your time actively recalling it (self-quizzing, explaining it out loud).',
+    reframedTo:
+      'For your next study session, flip the balance: spend most of your time actively recalling (self-quizzing, explaining out loud) rather than re-reading or watching.',
+    reason:
+      'The specific 20/80 ratio is a popularisation with no peer-reviewed empirical basis. The underlying principle (weight study time toward retrieval over restudy) is well supported (Roediger & Karpicke 2006; Karpicke & Roediger 2008), so the advice was reframed to drop the false-precision ratio.',
+    date: '2026-06-23',
+  },
+  {
+    id: 'mastering-active-recall-004',
+    module: 'Mastering Active Recall',
+    section: 'Step 6 — Your Recall Toolkit (Rule 1 card)',
+    action: 'reframed',
+    original:
+      "If It Feels Hard, It's Working — That feeling of struggle when you're trying to remember something? That IS learning happening. If it feels easy, it's probably not doing much.",
+    reframedTo:
+      "A Bit of Struggle Is the Point — When recalling something takes real effort, but you can still manage it, that effort is what builds lasting memory ('desirable difficulties'). If it feels completely effortless, it's probably not doing much.",
+    reason:
+      "The original overstated the science — not all difficulty aids learning, only 'desirable difficulties' (effortful but ultimately successful retrieval). Reframed to the precise concept, supported by Soderstrom & Bjork (2015, doi:10.1177/1745691615569000).",
+    date: '2026-06-23',
+  },
+];

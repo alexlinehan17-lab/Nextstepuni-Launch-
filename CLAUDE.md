@@ -43,6 +43,22 @@ Pushing to `main` is publishing to the **live app** — there is no separate dep
 
 Treat "ship it" as the user's explicit authorization to push to `main` and deploy live. Without it, keep changes on a branch / PR as normal.
 
+## Module accreditation & evidence dossier
+
+The educational modules are being reviewed for accreditation (DCU / Brian MacCraith). The governing rule for **all module content**:
+
+> Only state or advise something where peer-reviewed literature supports it. **Never attach a citation you cannot verify points to a real, locatable paper (a resolvable DOI / database record) that genuinely supports the specific claim.** If a claim can't be backed by a verifiable source, reframe it to non-prescriptive language or cut it — never invent a citation to keep it.
+
+Verify DOIs against CrossRef (`https://api.crossref.org/works/<doi>`) before citing; PubMed, Europe PMC and Unpaywall are available for abstracts/open-access checks. A specific figure whose primary source is paywalled and unconfirmable gets reframed to the qualitative claim the abstract supports.
+
+**When working through OR completing a module's review, you MUST record it in the repo dossier — this is mandatory, not optional:**
+
+1. **Dossier** — create/update `compliance/evidence/<module-slug>.md` with the verified reference table (DOIs + how each was verified) and a claim-by-claim record. This is the document reviewed for accreditation, and it must be written/updated **in the same change** as any content edit — the dossier never lags the app.
+2. **Reference data** — verified sources live in `data/references/<module>.ts` (typed by `data/references/types.ts`), surfaced in-app via `Cite` (faint superscript marker) + `SectionSources` ("The evidence" footer) from `components/ModuleReferences.tsx`. Keep the in-app references and the dossier in sync.
+3. **Cut log** — every removal or reframe is appended to `data/cutContent.ts` (shown on the home-sidebar **Cut Content** page), with the verbatim original, the reframed replacement, and the reason.
+
+Pilot reference implementation: **Mastering Active Recall** (`compliance/evidence/active-recall.md`, `data/references/activeRecall.ts`). Follow its shape for subsequent modules.
+
 ## Architecture
 
 **Stack:** React 19 + TypeScript, Vite, Tailwind CSS (v3, compiled at build time via PostCSS + autoprefixer — `tailwind.config.ts` + `index.css`, NOT a CDN), Framer Motion, Three.js (@react-three/fiber), Firebase (Auth + Firestore)

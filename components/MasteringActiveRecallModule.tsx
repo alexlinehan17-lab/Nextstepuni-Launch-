@@ -14,6 +14,8 @@ import { indigoTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, ToolJumpCard } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { Cite, SectionSources } from './ModuleReferences';
+import { AR_SECTION_REFS } from '../data/references/activeRecall';
 
 const theme = indigoTheme;
 
@@ -135,9 +137,10 @@ const MasteringActiveRecallModule: React.FC<{ onBack: () => void; progress: Modu
               {essentials ? (<>
               <p>Re-reading feels good but your memory collapses within a week. Testing yourself keeps far more in your head. This is the <Highlight description="Your memory naturally fades over time unless you do something about it. Just re-reading your notes barely slows this down at all." theme={theme}>Forgetting Curve</Highlight>. Re-reading is a trap. Self-testing slows down forgetting and changes how much you hold onto.</p>
               </>) : (<>
-              <p>In the last module, we saw that passive review (like re-reading) feels good but leads to poor memory over time. This isn't a small effect — it's a massive one. When you compare students who just re-read their notes to students who tested themselves, the re-readers did slightly better after 5 minutes, but after one week their memory had basically collapsed. The students who tested themselves remembered far more.</p>
+              <p>In the last module, we saw that passive review (like re-reading) feels good but leads to poor memory over time. This isn't a small effect — it's a massive one. When you compare students who just re-read their notes to students who tested themselves, the re-readers did slightly better after a few minutes, but a week later the re-readers had forgotten far more than the students who had tested themselves.<Cite n={1} /></p>
               <p>This is the harsh reality of the <Highlight description="Your memory naturally fades over time unless you do something about it. Just re-reading your notes barely slows this down at all." theme={theme}>Forgetting Curve</Highlight>. The comfort of re-reading is a trap. Testing yourself, on the other hand, does something powerful: it slows down how fast you forget, completely changing how much you actually hold onto.</p>
               </>)}
+              <SectionSources refs={AR_SECTION_REFS.s1} />
             </ReadingSection>
           )}
           {activeSection === 1 && (
@@ -145,20 +148,22 @@ const MasteringActiveRecallModule: React.FC<{ onBack: () => void; progress: Modu
               {essentials ? (<>
               <p>Testing builds stronger memories. This is the <Highlight description="The simple idea that pulling information out of your head makes that memory stronger and longer-lasting than just reading over it again." theme={theme}>Testing Effect</Highlight>. Your memory has two parts: <Highlight description="How deeply something is actually locked into your brain. This is real learning — it's fairly permanent and only gets stronger when you make an effort to remember things." theme={theme}>Storage Strength</Highlight> (how deeply you know it) and <Highlight description="How easily something comes to mind right now. This changes all the time based on what you've looked at recently." theme={theme}>Retrieval Strength</Highlight> (how easily it comes to mind). Re-reading only boosts retrieval. Active recall builds storage. That is real learning.</p>
               </>) : (<>
-              <p>So why is testing yourself so powerful? It's not about checking what you know — it's actually a way of building stronger memories. This is the <Highlight description="The simple idea that pulling information out of your head makes that memory stronger and longer-lasting than just reading over it again." theme={theme}>Testing Effect</Highlight>. To understand why, it helps to think of memory as having two separate parts.</p>
-              <p><Highlight description="How deeply something is actually locked into your brain. This is real learning — it's fairly permanent and only gets stronger when you make an effort to remember things." theme={theme}>Storage Strength</Highlight> is how well you've actually learned something. <Highlight description="How easily something comes to mind right now. This changes all the time based on what you've looked at recently." theme={theme}>Retrieval Strength</Highlight> is how easily you can access it right now. Re-reading makes retrieval strength shoot up (everything looks familiar and easy) but barely touches storage strength. Active recall — especially when it feels hard — is the only thing that seriously builds storage strength.</p>
+              <p>So why is testing yourself so powerful? It's not about checking what you know — it's actually a way of building stronger memories. This is the <Highlight description="The simple idea that pulling information out of your head makes that memory stronger and longer-lasting than just reading over it again." theme={theme}>Testing Effect</Highlight><Cite n={1} />. To understand why, it helps to think of memory as having two separate parts.</p>
+              <p><Highlight description="How deeply something is actually locked into your brain. This is real learning — it's fairly permanent and only gets stronger when you make an effort to remember things." theme={theme}>Storage Strength</Highlight> is how well you've actually learned something. <Highlight description="How easily something comes to mind right now. This changes all the time based on what you've looked at recently." theme={theme}>Retrieval Strength</Highlight> is how easily you can access it right now. Re-reading makes retrieval strength shoot up (everything looks familiar and easy) but barely touches storage strength. Active recall — especially when it feels hard — is the only thing that seriously builds storage strength.<Cite n={2} /></p>
               </>)}
               <StrengthMeter />
+              <SectionSources refs={AR_SECTION_REFS.s2} />
             </ReadingSection>
           )}
           {activeSection === 2 && (
             <ReadingSection title="The 'I Know This' Trap." eyebrow="Step 3" icon={XCircle} theme={theme}>
               {essentials ? (<>
-              <p>Do not stop testing yourself after getting it right once. Students who stopped remembered 35% after a week. Students who kept going remembered 80%. The act of pulling information from your head IS the learning. When you stop testing, you stop learning. Keep going even after you get it right.</p>
+              <p>Do not stop testing yourself after getting it right once. Students who keep testing themselves remember far more a week later than students who stop as soon as they get it right.<Cite n={1} /> The act of pulling information from your head IS the learning. When you stop testing, you stop learning. Keep going even after you get it right.</p>
               </>) : (<>
               <p>One of the most common and damaging student habits is this: "I got it right once, so I'll stop quizzing myself on it and just look over my notes." It feels efficient, but it's actually a trap.</p>
-              <p>Here's what actually happens: continuing to test yourself on a topic, even after you've already gotten it right once, is the most important part of the whole process. Students who stopped testing themselves after one correct answer could only remember about 35% of the material a week later. Students who kept testing themselves on everything remembered about 80% — more than double. The real work of locking things into your memory is done by the act of pulling it from your head. When you stop testing yourself, you stop learning.</p>
+              <p>Here's what actually happens: continuing to test yourself on a topic, even after you've already gotten it right once, is the most important part of the whole process. In a well-known study, students who kept testing themselves on material remembered far more a week later than students who stopped as soon as they got it right once — even though, at the time, both groups felt just as sure they knew it.<Cite n={1} /> The real work of locking things into your memory is done by the act of pulling it from your head. When you stop testing yourself, you stop learning.</p>
               </>)}
+              <SectionSources refs={AR_SECTION_REFS.s3} />
             </ReadingSection>
           )}
            {activeSection === 3 && (
@@ -167,24 +172,26 @@ const MasteringActiveRecallModule: React.FC<{ onBack: () => void; progress: Modu
               <p>Active recall does not just help you parrot facts. It improves your ability to <Highlight description="Being able to take what you learned in one situation and use it in a completely different one. This is the real test of whether you actually understand something." theme={theme}>apply knowledge to new situations</Highlight>. When you pull information from memory, you rebuild it in your own words. Your brain focuses on the key ideas. Your knowledge becomes flexible and works on problems you have never seen before.</p>
               </>) : (<>
               <p>A common worry about active recall is that it only helps you parrot back facts without really understanding them. Not true. Testing yourself actually improves your ability to <Highlight description="Being able to take what you learned in one situation and use it in a completely different one. This is the real test of whether you actually understand something." theme={theme}>apply your knowledge to new situations</Highlight>. Here's why.</p>
-              <p>When you re-read, your brain stores the information exactly as it appears on the page. But when you're forced to pull it from memory, you have to rebuild it in your own words. This makes your brain focus on the key ideas underneath the specific examples. The result? Your knowledge becomes more flexible and easier to use on problems you haven't seen before — like the ones that show up on your exam paper.</p>
+              <p>When you re-read, your brain stores the information exactly as it appears on the page. But when you're forced to pull it from memory, you have to rebuild it in your own words. This makes your brain focus on the key ideas underneath the specific examples. The result? Your knowledge becomes more flexible and easier to use on problems you haven't seen before<Cite n={1} /> — like the ones that show up on your exam paper.<Cite n={2} /></p>
               </>)}
+              <SectionSources refs={AR_SECTION_REFS.s4} />
             </ReadingSection>
           )}
           {activeSection === 4 && (
             <ReadingSection title="The Anxiety Myth." eyebrow="Step 5" icon={HeartPulse} theme={theme}>
               {essentials ? (<>
-              <p>Self-testing feels scary, but 92% of students say it helps them learn. 72% say it makes them less nervous for big exams. It works by <Highlight description="When you test yourself regularly in a low-pressure way, the format starts to feel normal. By the time the real exam comes around, it's not scary — it's just familiar." theme={theme}>getting you used to the format</Highlight> and by <Highlight description="When you test yourself, you get an honest picture of what you know and what you don't. That removes the uncertainty, which is a huge source of exam anxiety." theme={theme}>showing you where you stand</Highlight>. The exam stops being a scary unknown.</p>
+              <p>Self-testing feels scary, but when surveyed, the large majority of students say it helps them learn — and most say it actually makes them less nervous for big exams.<Cite n={1} /> It works by <Highlight description="When you test yourself regularly in a low-pressure way, the format starts to feel normal. By the time the real exam comes around, it's not scary — it's just familiar." theme={theme}>getting you used to the format</Highlight> and by <Highlight description="When you test yourself, you get an honest picture of what you know and what you don't. That removes the uncertainty, which is a huge source of exam anxiety." theme={theme}>showing you where you stand</Highlight>. The exam stops being a scary unknown.</p>
               </>) : (<>
               <p>The biggest barrier to using active recall is fear. It feels like a test, it exposes what you don't know, and that can be stressful. But when large groups of students were asked about frequent, low-stakes quizzing, the results told the opposite story.</p>
-              <p>An incredible 92% of students said it helped them learn, and 72% said it made them <em>less</em> nervous for big exams. It works in two ways: <Highlight description="When you test yourself regularly in a low-pressure way, the format starts to feel normal. By the time the real exam comes around, it's not scary — it's just familiar." theme={theme}>Getting Used to It</Highlight> and <Highlight description="When you test yourself, you get an honest picture of what you know and what you don't. That removes the uncertainty, which is a huge source of exam anxiety." theme={theme}>Knowing Where You Stand</Highlight>. By testing yourself regularly, you take away the surprise. The final exam is no longer a scary unknown — it's just another Tuesday.</p>
+              <p>When those students were surveyed, the large majority said it helped them learn, and most said it actually made them <em>less</em> nervous for big exams.<Cite n={1} /> It works in two ways: <Highlight description="When you test yourself regularly in a low-pressure way, the format starts to feel normal. By the time the real exam comes around, it's not scary — it's just familiar." theme={theme}>Getting Used to It</Highlight> and <Highlight description="When you test yourself, you get an honest picture of what you know and what you don't. That removes the uncertainty, which is a huge source of exam anxiety." theme={theme}>Knowing Where You Stand</Highlight>. By testing yourself regularly, you take away the surprise. The final exam is no longer a scary unknown — it's just another Tuesday.</p>
               </>)}
+              <SectionSources refs={AR_SECTION_REFS.s5} />
             </ReadingSection>
           )}
           {activeSection === 5 && (
             <ReadingSection title="Your Recall Toolkit." eyebrow="Step 6" icon={Wrench} theme={theme}>
               {essentials ? (<>
-              <p>Three rules: if it feels hard, it is working. Never judge your knowledge with the book open. Keep testing even after getting it right. Check how your current methods stack up below.</p>
+              <p>Three rules: a bit of effortful struggle you can still succeed at is what builds memory. Never judge your knowledge with the book open. Keep testing even after getting it right. Check how your current methods stack up below.</p>
               </>) : (<>
               <p>You now get why this works. Active recall is the single most powerful tool you have for studying. To make the most of it, follow three simple rules — and take a look at how your current methods stack up.</p>
               </>)}
@@ -193,8 +200,8 @@ const MasteringActiveRecallModule: React.FC<{ onBack: () => void; progress: Modu
                 <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
                   <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>If It Feels Hard, It's Working</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>That feeling of struggle when you're trying to remember something? That IS learning happening. If it feels easy, it's probably not doing much.</p>
+                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>A Bit of Struggle Is the Point</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>When recalling something takes real effort — but you can still manage it — that effort is what builds lasting memory (researchers call these &ldquo;desirable difficulties&rdquo;).<Cite n={1} /> If it feels completely effortless, it&apos;s probably not doing much.</p>
                   </div>
                 </div>
                 {/* Card 2 — Sunshine */}
@@ -216,7 +223,7 @@ const MasteringActiveRecallModule: React.FC<{ onBack: () => void; progress: Modu
               </div>
               <StudyMethodAuditor />
               <MicroCommitment theme={theme}>
-                <p>For your next study session, try the 20/80 rule. Spend 20% of your time consuming information (reading, watching) and 80% of your time actively recalling it (self-quizzing, explaining it out loud).</p>
+                <p>For your next study session, flip the balance: spend most of your time actively recalling (self-quizzing, explaining out loud) rather than re-reading or watching. The more of your study time goes into pulling information out of your own head, the more of it sticks.</p>
               </MicroCommitment>
               <ToolJumpCard
                 toolId="syllabus-xray"
@@ -224,6 +231,7 @@ const MasteringActiveRecallModule: React.FC<{ onBack: () => void; progress: Modu
                 description="Syllabus X-Ray shows the exact topics most likely to come up. Pick a shaky one and run an active recall session against it now."
                 ctaLabel="Open Syllabus X-Ray"
               />
+              <SectionSources refs={AR_SECTION_REFS.s6} />
             </ReadingSection>
           )}
         </>
