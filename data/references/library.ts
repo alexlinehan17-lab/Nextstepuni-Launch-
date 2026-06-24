@@ -995,6 +995,15 @@ export const REF = {
     doi: '10.1177/0956797617739704',
   },
 
+  buehler1994: {
+    id: 'buehler1994',
+    authors: 'Buehler, R., Griffin, D., & Ross, M.',
+    year: 1994,
+    title: 'Exploring the "planning fallacy": Why people underestimate their task completion times',
+    source: 'Journal of Personality and Social Psychology',
+    doi: '10.1037/0022-3514.67.3.366',
+  },
+
   // ─── Official / examiner-authored sources (Group B: exam & subject modules) ──
   // No DOI; these are the canonical Irish State exam / admissions documents.
   // SEC reports mirrored in-repo under /examiner-reports/ carry a repoPath and
