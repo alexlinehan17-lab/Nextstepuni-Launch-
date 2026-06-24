@@ -288,6 +288,22 @@ export const REF = {
     source: 'Psychological Bulletin',
     doi: '10.1037/a0016570',
   },
+  rupp2009: {
+    id: 'rupp2009',
+    authors: 'Rupp, T. L., Wesensten, N. J., Bliese, P. D., & Balkin, T. J.',
+    year: 2009,
+    title: 'Banking sleep: Realization of benefits during subsequent sleep restriction and recovery',
+    source: 'Sleep',
+    doi: '10.1093/sleep/32.3.311',
+  },
+  xie2013: {
+    id: 'xie2013',
+    authors: 'Xie, L., Kang, H., Xu, Q., Chen, M. J., Liao, Y., Thiyagarajan, M., O’Donnell, J., Christensen, D. J., Nicholson, C., Iliff, J. J., Takano, T., Deane, R., & Nedergaard, M.',
+    year: 2013,
+    title: 'Sleep drives metabolite clearance from the adult brain',
+    source: 'Science',
+    doi: '10.1126/science.1241224',
+  },
   chambers2009: {
     id: 'chambers2009',
     authors: 'Chambers, E. S., Bridge, M. W., & Jones, D. A.',
@@ -319,6 +335,22 @@ export const REF = {
     title: 'Writing about testing worries boosts exam performance in the classroom',
     source: 'Science',
     doi: '10.1126/science.1199427',
+  },
+  hatfield1993: {
+    id: 'hatfield1993',
+    authors: 'Hatfield, E., Cacioppo, J. T., & Rapson, R. L.',
+    year: 1993,
+    title: 'Emotional contagion',
+    source: 'Current Directions in Psychological Science',
+    doi: '10.1111/1467-8721.ep10770953',
+  },
+  micha2011: {
+    id: 'micha2011',
+    authors: 'Micha, R., Rogers, P. J., & Nelson, M.',
+    year: 2011,
+    title: 'Glycaemic index and glycaemic load of breakfast predict cognitive function and mood in school children: A randomised controlled trial',
+    source: 'British Journal of Nutrition',
+    doi: '10.1017/S0007114511002303',
   },
 
   // Spatial cognition / visualisation

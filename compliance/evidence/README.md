@@ -67,7 +67,7 @@ follow-up sourcing pass.
 - [x] The Points Playbook (Leaving Cert Strategy) — `leaving-cert-strategy.md`
 - [x] Reverse Engineering the Exam — `reverse-engineering.md`
 - [x] Exam Hall Strategies — `exam-hall-strategies.md`
-- [ ] Exam Crisis Management
+- [x] Exam Crisis Management — `exam-crisis-management.md`
 - [ ] Game Day
 - [ ] Points Optimization
 - [ ] Marking Scheme Decoder

@@ -11,6 +11,8 @@ import { type ModuleProgress } from '../types';
 import { skyTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { EXAM_CRISIS_MANAGEMENT_REFERENCE_LIST } from '../data/references/examCrisisManagement';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { COLORS } from '../design/tokens';
 
@@ -926,6 +928,7 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      references={EXAM_CRISIS_MANAGEMENT_REFERENCE_LIST}
       finishButtonText="Stay in Control"
     >
       {(activeSection) => (
@@ -934,13 +937,13 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
             <ReadingSection title="Why You 'Go Blank'." eyebrow="Step 1" icon={Cpu} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Going blank is not stupidity. It is a physical stress response. Your alarm brain hijacks your thinking brain. Your memory is still there. The connection is just temporarily cut off.</p>
+                  <p>Going blank is not stupidity. It is a physical stress response. Your alarm brain hijacks your thinking brain.<Cite n={1} /> Your memory is still there. The connection is just temporarily cut off.</p>
                   <p>Understanding this is the first step. Once you know what is happening, you can use the tools in this module to stay in control. Try the simulator and scenario trainer below.</p>
                 </>
               ) : (
                 <>
                   <p>Going "blank" in an exam isn't you being stupid or unprepared. It's a physical stress response. Your brain's alarm system hijacks its thinking centre. To beat it, you need to understand the two modes your brain works in: <Highlight description="Your calm, clear-headed mode. The thinking part of your brain is in charge, so you can reason things out and pull information from memory easily." theme={theme}>Cold Cognition</Highlight> and <Highlight description="Your stressed, panicky mode. The alarm part of your brain takes over, shutting down clear thinking and blocking your access to memories you definitely have." theme={theme}>Hot Cognition</Highlight>.</p>
-                  <p>When you see a question you don't know, your brain can treat it as a threat. This triggers a <Highlight description="When your alarm brain hijacks your thinking brain. Stress hormones flood your system and cut the connection to your memory. You know the stuff -- you just can't reach it." theme={theme}>brain hijack</Highlight>, switching you from "cold" to "hot" mode. Your memory isn't gone; the connection is just temporarily cut off. This isn't a knowledge problem; it's a wiring problem.</p>
+                  <p>When you see a question you don't know, your brain can treat it as a threat. This triggers a <Highlight description="When your alarm brain hijacks your thinking brain. Stress hormones flood your system and cut the connection to your memory. You know the stuff -- you just can't reach it." theme={theme}>brain hijack</Highlight>, switching you from "cold" to "hot" mode. Your memory isn't gone; the connection is just temporarily cut off.<Cite n={1} /> This isn't a knowledge problem; it's a wiring problem.</p>
                   <PersonalStory name="Roisin" role="6th Year, Limerick">
                     <p>In my mocks, I opened the History paper and my mind just went completely white. I'd studied for weeks but I couldn't remember a single date. I sat there for about ten minutes just staring. Afterwards I was in bits -- I thought there was something wrong with me. Turns out it's just what stress does to your brain. Once I learned that, it stopped scaring me so much. In the real exam, the same thing started to happen, but this time I knew what it was and I had a plan.</p>
                   </PersonalStory>
@@ -953,11 +956,11 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
            {activeSection === 1 && (
             <ReadingSection title="The 'Blank Mind' Fix." eyebrow="Step 2" icon={Zap} theme={theme}>
                 {essentials ? (
-                  <p>The fix is physical, not mental. Use the Physiological Sigh: two quick nose inhales, one long mouth exhale. Then ground yourself by noticing what you can see and hear. Then start with the easiest question on the paper. Practice below.</p>
+                  <p>The fix is physical, not mental. Use the Physiological Sigh: two quick nose inhales, one long mouth exhale.<Cite n={2} /> Then ground yourself by noticing what you can see and hear. Then start with the easiest question on the paper. Practice below.</p>
                 ) : (
                   <>
                     <p>Since the problem is physical, the fix has to be physical too. You can't "think" your way out of a panic because the thinking part of your brain is offline. You need to use your body to send a "you're safe" signal to your brain. The idea is simple: <Highlight description="Using your body (like your breathing) to calm your mind, instead of trying to think your way out of panic. Your body can reset your brain faster than your thoughts can." theme={theme}>calm the body first, and the mind follows</Highlight>.</p>
-                    <p>The fastest way to do this is the <Highlight description="A quick breathing trick: two short inhales through your nose, then one long exhale through your mouth. It forces your nervous system to calm down in seconds. Think of it as a hard reset button." theme={theme}>Physiological Sigh</Highlight>. It's your "hard reset" button. Once the panic wave passes, you bring your thinking brain back online with a <Highlight description="The 5-4-3-2-1 trick: name 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, and 1 you can taste. It pulls your brain out of the panic loop and back into the real world." theme={theme}>Sensory Grounding</Highlight> exercise. Finally, you get your brain moving again with an <Highlight description="Find the easiest question on the paper and answer it first. That small success gives your brain a confidence boost and helps clear the stress fog so you can tackle the harder stuff." theme={theme}>'Easy Win'</Highlight>.</p>
+                    <p>The fastest way to do this is the <Highlight description="A quick breathing trick: two short inhales through your nose, then one long exhale through your mouth. It forces your nervous system to calm down in seconds. Think of it as a hard reset button." theme={theme}>Physiological Sigh</Highlight>.<Cite n={2} /> It's your "hard reset" button. Once the panic wave passes, you bring your thinking brain back online with a <Highlight description="The 5-4-3-2-1 trick: name 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, and 1 you can taste. It pulls your brain out of the panic loop and back into the real world." theme={theme}>Sensory Grounding</Highlight> exercise. Finally, you get your brain moving again with an <Highlight description="Find the easiest question on the paper and answer it first. That small success gives your brain a confidence boost and helps clear the stress fog so you can tackle the harder stuff." theme={theme}>'Easy Win'</Highlight>.</p>
                   </>
                 )}
                 <PhysiologicalSighGuide/>
@@ -966,10 +969,10 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
           {activeSection === 2 && (
             <ReadingSection title="Protect Your Head After Exams." eyebrow="Step 3" icon={Shield} theme={theme}>
               {essentials ? (
-                <p>Do not compare answers after an exam. Other people's panic is contagious. Put headphones in, walk away, and protect your energy for the next paper. The exam is done. Let it go.</p>
+                <p>Do not compare answers after an exam. Other people's panic is contagious.<Cite n={3} /> Put headphones in, walk away, and protect your energy for the next paper. The exam is done. Let it go.</p>
               ) : (
                 <>
-                  <p>The crisis doesn't end when you put your pen down. The minutes after an exam are a minefield of <Highlight description="When other people's stress rubs off on you. Standing around after an exam while everyone panics about answers is one of the fastest ways to wreck your head before the next paper." theme={theme}>catching other people's anxiety</Highlight>. Discussing answers with stressed-out friends is one of the worst things you can do. It keeps your stress levels high and stops you recovering for the next exam.</p>
+                  <p>The crisis doesn't end when you put your pen down. The minutes after an exam are a minefield of <Highlight description="When other people's stress rubs off on you. Standing around after an exam while everyone panics about answers is one of the fastest ways to wreck your head before the next paper." theme={theme}>catching other people's anxiety</Highlight>.<Cite n={3} /> Discussing answers with stressed-out friends is one of the worst things you can do. It keeps your stress levels high and stops you recovering for the next exam.</p>
                   <p>That urge to compare answers? It's driven by your brain's <Highlight description="Your brain hates not knowing. After an exam, the uncertainty is torture -- so your brain desperately wants to compare answers to close the loop. But doing that almost always makes you feel worse, not better." theme={theme}>desperation for answers</Highlight>. You have to train yourself to sit with the uncertainty. This means having a strict <Highlight description="A personal rule: walk out of the exam hall and don't discuss the paper with anyone until the entire exam period is over. Put your headphones in, text a mate about something else, just get away from the chat." theme={theme}>"Post-Exam Ban"</Highlight> on discussing the paper. This isn't anti-social; it's protecting your energy for the next exam.</p>
                 </>
               )}
@@ -978,11 +981,11 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
            {activeSection === 3 && (
             <ReadingSection title="Sleep: Your Secret Weapon." eyebrow="Step 4" icon={Moon} theme={theme}>
               {essentials ? (
-                <p>Sleep is your brain's best recovery tool. Bank extra sleep the week before exams. Your brain cleans itself during sleep. Pulling an all-nighter skips that cleanup and leaves you foggy.</p>
+                <p>Sleep is your brain's best recovery tool. Bank extra sleep the week before exams.<Cite n={4} /> Your brain cleans itself during sleep.<Cite n={5} /> Pulling an all-nighter skips that cleanup and leaves you foggy.</p>
               ) : (
                 <>
                   <p>Think of the weeks before your big exams like a championship season. Your brain is the muscle that matters most right now. And sleep is the single best thing you can do for it.</p>
-                  <p>In the week before exams, try <Highlight description="Getting an extra hour of sleep per night in the days before exams. It builds up a reserve so that if you sleep badly the night before a paper, you've got a buffer and your brain still works well." theme={theme}>sleep banking</Highlight> -- getting an extra hour of sleep per night. This builds a reserve that protects you if you sleep badly the night before a paper. While you sleep, your brain also runs its own <Highlight description="While you sleep, your brain literally flushes out the waste that builds up during the day -- the stuff that causes brain fog and makes it hard to concentrate. Pulling an all-nighter means skipping this clean-up." theme={theme}>cleaning cycle</Highlight>, flushing out the waste that causes brain fog. Pulling an all-nighter means skipping that clean-up entirely.</p>
+                  <p>In the week before exams, try <Highlight description="Getting an extra hour of sleep per night in the days before exams. It builds up a reserve so that if you sleep badly the night before a paper, you've got a buffer and your brain still works well." theme={theme}>sleep banking</Highlight> -- getting an extra hour of sleep per night. This builds a reserve that protects you if you sleep badly the night before a paper.<Cite n={4} /> While you sleep, your brain also runs its own <Highlight description="While you sleep, your brain literally flushes out the waste that builds up during the day -- the stuff that causes brain fog and makes it hard to concentrate. Pulling an all-nighter means skipping this clean-up." theme={theme}>cleaning cycle</Highlight>, flushing out the waste that causes brain fog.<Cite n={5} /> Pulling an all-nighter means skipping that clean-up entirely.</p>
                 </>
               )}
             </ReadingSection>
@@ -990,11 +993,11 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
           {activeSection === 4 && (
             <ReadingSection title="Food and Focus." eyebrow="Step 5" icon={Utensils} theme={theme}>
               {essentials ? (
-                <p>Eat slow-release food 3 hours before exams: porridge, wholegrain toast, eggs. Avoid sugar and energy drinks. They crash mid-exam. Cut caffeine the week before so a normal cup on exam morning actually works.</p>
+                <p>Eat slow-release food 3 hours before exams: porridge, wholegrain toast, eggs.<Cite n={6} /> Go easy on sugar and energy drinks -- they can leave your energy dipping partway through. Cut caffeine the week before so a normal cup on exam morning actually works.</p>
               ) : (
                 <>
-                  <p>Your brain runs on sugar from food, but it needs a steady supply, not a sugar rush. <Highlight description="Foods like sweets, white bread, and energy drinks that give you a quick spike of energy followed by a crash. That crash will hit you right in the middle of your exam." theme={theme}>Quick-burn foods</Highlight> (sweets, white bread, energy drinks) cause a crash that will hit you right in the middle of your exam. Your pre-exam meal should be slow-release stuff -- porridge, wholegrain toast, eggs -- about 3 hours before.</p>
-                  <p>You can also use caffeine smartly. <Highlight description="Cutting back on coffee and energy drinks in the week before exams so that when you have a normal cup on exam morning, it actually hits properly instead of barely making a difference." theme={theme}>Caffeine tapering</Highlight> means cutting back on coffee and energy drinks in the week before exams. Then a normal cup on exam morning will actually wake you up properly. If tea is more your thing, even better -- it has a natural ingredient that gives you calm focus without the jitters.</p>
+                  <p>Your brain runs on sugar from food, but it needs a steady supply, not a sugar rush. <Highlight description="Foods like sweets, white bread, and energy drinks that give you a quick spike of energy followed by a dip. That dip can land partway through your exam, just when you need to concentrate." theme={theme}>Quick-burn foods</Highlight> (sweets, white bread, energy drinks) can leave your energy dipping partway through, just when you need it most. A slower-release breakfast -- porridge, wholegrain toast, eggs, about 3 hours before -- is linked to steadier concentration in students through the morning.<Cite n={6} /></p>
+                  <p>You can also use caffeine smartly. <Highlight description="Cutting back on coffee and energy drinks in the week before exams so that when you have a normal cup on exam morning, it actually hits properly instead of barely making a difference." theme={theme}>Caffeine tapering</Highlight> means cutting back on coffee and energy drinks in the week before exams. Then a normal cup on exam morning will actually wake you up properly. If tea is more your thing, many people find it a gentler lift than coffee.</p>
                 </>
               )}
             </ReadingSection>

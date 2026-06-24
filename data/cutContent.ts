@@ -443,4 +443,30 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'SEC Chief Examiner reports repeatedly identify "not answering the question asked / misreading the question" as a leading source of lost marks (verified in the in-repo Business 2015 Chief Examiner report), which supports the general claim. But the specific superlative "#1 cause" ranks it above all other error types, which no single report establishes across subjects — so the ranking was softened to "one of the most common" while keeping the cited examiner-report point.',
     date: '2026-06-24',
   },
+  {
+    id: 'exam-crisis-management-001',
+    module: 'Exam Crisis Management',
+    section: 'Step 5 — Food and Focus',
+    action: 'reframed',
+    original:
+      'Quick-burn foods (sweets, white bread, energy drinks) cause a crash that will hit you right in the middle of your exam.',
+    reframedTo:
+      'Quick-burn foods (sweets, white bread, energy drinks) can leave your energy dipping partway through, just when you need it most. A slower-release breakfast is linked to steadier concentration in students through the morning.',
+    reason:
+      'The RCT evidence (Micha, Rogers & Nelson 2011, Br J Nutr) supports that a lower-GI breakfast yields better cognitive function and mood in school children through the morning. It does not establish a guaranteed mid-exam "crash" caused by quick-burn foods in healthy students, so the deterministic causal claim was softened to a probabilistic "can leave your energy dipping" plus the cited low-GI benefit.',
+    date: '2026-06-24',
+  },
+  {
+    id: 'exam-crisis-management-002',
+    module: 'Exam Crisis Management',
+    section: 'Step 5 — Food and Focus',
+    action: 'reframed',
+    original:
+      'If tea is more your thing, even better -- it has a natural ingredient that gives you calm focus without the jitters.',
+    reframedTo:
+      'If tea is more your thing, many people find it a gentler lift than coffee.',
+    reason:
+      'The implied L-theanine "calm focus" mechanism has supportive but mixed RCT evidence and was not being cited; rather than attach a borderline mechanistic claim or a new source for an aside, it was reframed to a non-prescriptive experiential statement.',
+    date: '2026-06-24',
+  },
 ];
