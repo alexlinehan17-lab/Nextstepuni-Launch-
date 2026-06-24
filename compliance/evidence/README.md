@@ -66,7 +66,7 @@ follow-up sourcing pass.
 ### 🎯 Exam Zone (8)
 - [x] The Points Playbook (Leaving Cert Strategy) — `leaving-cert-strategy.md`
 - [x] Reverse Engineering the Exam — `reverse-engineering.md`
-- [ ] Exam Hall Strategies
+- [x] Exam Hall Strategies — `exam-hall-strategies.md`
 - [ ] Exam Crisis Management
 - [ ] Game Day
 - [ ] Points Optimization

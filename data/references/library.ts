@@ -312,6 +312,14 @@ export const REF = {
     source: 'Cell Reports Medicine',
     doi: '10.1016/j.xcrm.2022.100895',
   },
+  ramirez2011: {
+    id: 'ramirez2011',
+    authors: 'Ramirez, G., & Beilock, S. L.',
+    year: 2011,
+    title: 'Writing about testing worries boosts exam performance in the classroom',
+    source: 'Science',
+    doi: '10.1126/science.1199427',
+  },
 
   // Spatial cognition / visualisation
   shepard1971: {
