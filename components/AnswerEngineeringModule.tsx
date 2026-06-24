@@ -11,6 +11,8 @@ import { type ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { ANSWER_ENGINEERING_REFERENCE_LIST } from '../data/references/answerEngineering';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { COLORS } from '../design/tokens';
 
@@ -641,6 +643,7 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
       moduleDescription="Two students know the same content. One gets a H3, the other gets a H1. The difference is how they structure their answers. This module teaches you the frameworks."
       theme={theme}
       sections={sections}
+      references={ANSWER_ENGINEERING_REFERENCE_LIST}
       fullSectionsCount={7}
       onBack={onBack}
       progress={progress}
@@ -653,13 +656,13 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
             <ReadingSection title="The Structure Gap." eyebrow="01 // The Problem" icon={AlertTriangle} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Two students know the same content. One gets a H3, the other a H1. The difference is <Highlight description="Structure means your answer has a visible architecture that the examiner can follow. Each point is clearly separated, each piece of evidence is connected to a claim, and the logic flows from start to finish." theme={theme}>structure</Highlight>. Examiners spend <Highlight description="SEC examiners work through enormous volumes of scripts during marking conferences. They are experienced, professional, and efficient — but they are human. The easier you make it for them to find your points, the more marks you collect." theme={theme}>2-3 minutes per answer</Highlight>. If they can't find your points, they can't mark them.</p>
+                  <p>Two students know the same content. One gets a H3, the other a H1. The difference is <Highlight description="Structure means your answer has a visible architecture that the examiner can follow. Each point is clearly separated, each piece of evidence is connected to a claim, and the logic flows from start to finish." theme={theme}>structure</Highlight>. Examiners work through <Highlight description="SEC examiners work through enormous volumes of scripts during marking conferences. They are experienced, professional, and efficient — but they are human. The easier you make it for them to find your points, the more marks you collect." theme={theme}>large volumes of scripts under time pressure</Highlight>. If they can't find your points, they can't mark them.<Cite n={1} /> Developed, clearly-made points score where one-word or buried answers do not.<Cite n={2} /></p>
                   <p>This module gives you frameworks for packaging answers. The examiner has a checklist. Make your points visible and you collect every mark.</p>
                 </>
               ) : (
                 <>
                   <p>Two students know the same Biology. One gets a H3, the other gets a H1. The difference is not knowledge — it is <Highlight description="Structure means your answer has a visible architecture that the examiner can follow. Each point is clearly separated, each piece of evidence is connected to a claim, and the logic flows from start to finish." theme={theme}>structure</Highlight>. The H1 student's answers have a visible architecture — the examiner can SEE each point, FIND each piece of evidence, FOLLOW the logic. The H3 student's answer is a wall of text with good ideas buried inside it.</p>
-                  <p>Examiners read <strong>400+ scripts</strong>. They spend <Highlight description="SEC examiners work through enormous volumes of scripts during marking conferences. They are experienced, professional, and efficient — but they are human. The easier you make it for them to find your points, the more marks you collect." theme={theme}>2-3 minutes per answer</Highlight>. If they cannot FIND your points, they cannot MARK your points. This is not about what you know. This is about how you <em>package</em> what you know so the examiner can see every mark you deserve.</p>
+                  <p>Examiners work through <strong>large volumes of scripts</strong> under real time pressure during marking conferences. They give <Highlight description="SEC examiners work through enormous volumes of scripts during marking conferences. They are experienced, professional, and efficient — but they are human. The easier you make it for them to find your points, the more marks you collect." theme={theme}>limited time to each answer</Highlight>. If they cannot FIND your points, they cannot MARK your points.<Cite n={1} /> This is not about what you know. This is about how you <em>package</em> what you know so the examiner can see every mark you deserve. Chief Examiner reports repeatedly reward developed, clearly-structured points over one-word or buried answers.<Cite n={2} /></p>
                   <p>Think of it this way: the examiner has a checklist. For each answer, they are scanning for specific things — a clear point, supporting evidence, a logical connection back to the question. If those things are buried inside a long, unstructured paragraph, some of them will be missed. Not because the examiner is unfair, but because they are human and they are working fast.</p>
                   <p>This module teaches you the <strong>structural frameworks</strong> for building answers — how to organise and construct answers so examiners find every mark. It is the difference between "knowing the content" and "knowing how to package it."</p>
                   <PersonalStory name="Sean, Leaving Cert 2024, Cork">
@@ -719,15 +722,15 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
               />
               {essentials ? (
                 <>
-                  <p>Even if your final answer is wrong, steps 1-3 earn marks independently. In a 25-mark question, the answer is worth only <Highlight description="The final numerical answer in most science and maths questions is worth only 4-5 out of 25 marks. The other 20 marks are for showing your process. Students who jump straight to the answer are skipping 80% of the available marks." theme={theme}>4-5 marks</Highlight>. Show every step.</p>
+                  <p>Even if your final answer is wrong, steps 1-3 earn marks independently. In a 25-mark question, the answer is worth only <Highlight description="The final numerical answer in most science and maths questions is worth only 4-5 out of 25 marks. The other 20 marks are for showing your process. Students who jump straight to the answer are skipping 80% of the available marks." theme={theme}>4-5 marks</Highlight>.<Cite n={1} /> Show every step.</p>
                   <StackBuilder />
-                  <p>The marks beside a question also tell you the <Highlight description="The 'shape' of an answer means its length and structure. A 4-mark answer should look completely different from a 20-mark answer. The marks are a blueprint telling you exactly how much to write and how to organise it." theme={theme}>SHAPE</Highlight> of your answer. 4 marks = 1-2 sentences. 10 marks = a paragraph. 30+ marks = full essay. Match your answer length to the marks.</p>
+                  <p>The marks beside a question also tell you the <Highlight description="The 'shape' of an answer means its length and structure. A 4-mark answer should look completely different from a 20-mark answer. The marks are a blueprint telling you exactly how much to write and how to organise it." theme={theme}>SHAPE</Highlight> of your answer. 4 marks = 1-2 sentences. 10 marks = a paragraph. 30+ marks = full essay. Match your answer length to the marks.<Cite n={1} /></p>
                   <ShapeQuiz />
                 </>
               ) : (
                 <>
                   <p>This pattern earns marks at <strong>EVERY step</strong>. Even if your final answer is wrong, steps 1-3 earn method marks independently.</p>
-                  <p>In a <strong>25-mark Maths question</strong>, the final answer is typically worth only <Highlight description="The final numerical answer in most science and maths questions is worth only 4-5 out of 25 marks. The other 20 marks are for showing your process. Students who jump straight to the answer are skipping 80% of the available marks." theme={theme}>4-5 marks</Highlight>. The other 20 marks are for showing your process. Students who jump to the answer skip 80% of the available marks.</p>
+                  <p>In a <strong>25-mark Maths question</strong>, the final answer is typically worth only <Highlight description="The final numerical answer in most science and maths questions is worth only 4-5 out of 25 marks. The other 20 marks are for showing your process. Students who jump straight to the answer are skipping 80% of the available marks." theme={theme}>4-5 marks</Highlight>. The other 20 marks are for showing your process. Students who jump to the answer skip most of the available marks.<Cite n={1} /></p>
                   <p>Remember the three types of marks from the Marking Scheme Decoder? This structure hits all three: attempt marks for writing the formula, method marks for substituting and solving, and answer marks for the final result.</p>
                   <StackBuilder />
                 </>
@@ -775,7 +778,7 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
                   <span className="text-zinc-600 dark:text-zinc-300">Two developed points. Give EXACTLY two, not three.</span>
                 </div>
               </div>
-              <p>The most common mistake is writing a <Highlight description="Writing too much for a small question wastes time. Writing too little for a big question loses marks. The mark allocation is the examiner's way of telling you exactly how much they expect." theme={theme}>4-mark answer for a 15-mark question</Highlight>, or a 15-mark answer for a 4-mark question. The marks tell you exactly how much to write. Reading them correctly is one of the simplest ways to improve your results.</p>
+              <p>The most common mistake is writing a <Highlight description="Writing too much for a small question wastes time. Writing too little for a big question loses marks. The mark allocation is the examiner's way of telling you exactly how much they expect." theme={theme}>4-mark answer for a 15-mark question</Highlight>, or a 15-mark answer for a 4-mark question. The marks tell you exactly how much to write. Reading them correctly is one of the simplest ways to improve your results.<Cite n={1} /></p>
               <ShapeQuiz />
             </ReadingSection>
           )}
@@ -793,7 +796,7 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
                   { number: 5, term: "Write a concluding sentence", description: "Link back to the question directly. This wraps your answer and shows the examiner you understood the task.", highlight: true },
                 ]}
               />
-              <p>The key insight: a <strong>structured 60% answer scores higher than an unstructured 80% answer</strong>. The examiner can find and award <Highlight description="When your answer is structured with numbered points, definitions, and diagrams, the examiner can see every piece of knowledge you have. When it is buried in a paragraph, they might miss things — and missed points are missed marks." theme={theme}>every point you make</Highlight>, instead of hunting through a paragraph for buried insights.</p>
+              <p>The key insight: a <strong>structured 60% answer scores higher than an unstructured 80% answer</strong>. The examiner can find and award <Highlight description="When your answer is structured with numbered points, definitions, and diagrams, the examiner can see every piece of knowledge you have. When it is buried in a paragraph, they might miss things — and missed points are missed marks." theme={theme}>every point you make</Highlight>, instead of hunting through a paragraph for buried insights.<Cite n={1} /></p>
               <PersonalStory name="Niamh, Leaving Cert 2023, Waterford">
                 <p>"In my Chemistry exam, I got a question I barely knew. I wrote the formula, defined the terms, drew a diagram, and wrote what I did know in numbered points. I got 18 out of 25. My friend who knew more but wrote it as a paragraph got 14."</p>
               </PersonalStory>
@@ -829,7 +832,7 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
                   <p className="text-sm text-zinc-600 dark:text-zinc-300"><strong>Process documentation</strong> — materials, method, outcome, evaluation. Always explain <em>why</em> you chose a material or method, not just what you did.</p>
                 </div>
               </div>
-              <p>This is a reference card, not deep teaching. Bookmark this section and come back to it when you are practising past papers in a specific subject.</p>
+              <p>These command-word structures mirror what the marking schemes and Chief Examiner reports reward — for example, Business answers that State, Explain, and Example a developed point rather than name it in one word.<Cite n={2} /> This is a reference card, not deep teaching. Bookmark this section and come back to it when you are practising past papers in a specific subject.</p>
             </ReadingSection>
           )}
 

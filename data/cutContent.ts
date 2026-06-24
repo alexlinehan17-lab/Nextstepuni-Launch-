@@ -508,4 +508,17 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'SEC Mathematics marking schemes award graduated partial credit via "scales" with low/mid/high partial-credit descriptors; they do not use the acronym "PCLM (Partial Credit Level Marks)". The underlying concept (credit for correct steps even with a wrong final answer) is genuine and verifiable in the schemes, so the glossary item was reframed to the documented partial-credit mechanism and the coined acronym dropped.',
     date: '2026-06-24',
   },
+  {
+    id: 'answer-engineering-001',
+    module: 'Answer Engineering',
+    section: 'Step 1 — The Structure Gap',
+    action: 'reframed',
+    original:
+      'Examiners read 400+ scripts. They spend 2-3 minutes per answer.',
+    reframedTo:
+      'Examiners work through large volumes of scripts under real time pressure during marking conferences. They give limited time to each answer.',
+    reason:
+      'The qualitative point (examiners mark at volume under time pressure, so findable structure matters) is well-supported and emphasised in Chief Examiner reports, but the specific figures "400+ scripts" and "2-3 minutes per answer" could not be verified against a locatable SEC source. The unverifiable precise numbers were removed and the verifiable qualitative claim kept.',
+    date: '2026-06-24',
+  },
 ];

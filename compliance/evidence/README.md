@@ -71,7 +71,7 @@ follow-up sourcing pass.
 - [x] Game Day — `game-day.md`
 - [x] Points Optimization — `points-optimization.md` (H1-rate figures labelled approximate; SEC stats re-verification pending site access)
 - [x] Marking Scheme Decoder — `marking-scheme-decoder.md`
-- [ ] Answer Engineering
+- [x] Answer Engineering — `answer-engineering.md`
 
 ### 📚 Subject-Specific (37) — per-subject SEC reports needed
 Deferred pending subject Chief Examiner reports in `/examiner-reports/` (only Business
