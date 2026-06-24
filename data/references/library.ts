@@ -353,6 +353,40 @@ export const REF = {
     doi: '10.1017/S0007114511002303',
   },
 
+  // Exam-day performance: challenge/threat, forgetting, mental simulation, sleep onset
+  seery2011: {
+    id: 'seery2011',
+    authors: 'Seery, M. D.',
+    year: 2011,
+    title: 'Challenge or threat? Cardiovascular indexes of resilience and vulnerability to potential stress in humans',
+    source: 'Neuroscience & Biobehavioral Reviews',
+    doi: '10.1016/j.neubiorev.2011.03.003',
+  },
+  wixted2004: {
+    id: 'wixted2004',
+    authors: 'Wixted, J. T.',
+    year: 2004,
+    title: 'The psychology and neuroscience of forgetting',
+    source: 'Annual Review of Psychology',
+    doi: '10.1146/annurev.psych.55.090902.141555',
+  },
+  pham1999: {
+    id: 'pham1999',
+    authors: 'Pham, L. B., & Taylor, S. E.',
+    year: 1999,
+    title: 'From thought to action: Effects of process- versus outcome-based mental simulations on performance',
+    source: 'Personality and Social Psychology Bulletin',
+    doi: '10.1177/0146167299025002010',
+  },
+  scullin2018: {
+    id: 'scullin2018',
+    authors: 'Scullin, M. K., Krueger, M. L., Ballard, H. K., Pruett, N., & Bliwise, D. L.',
+    year: 2018,
+    title: 'The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists',
+    source: 'Journal of Experimental Psychology: General',
+    doi: '10.1037/xge0000374',
+  },
+
   // Spatial cognition / visualisation
   shepard1971: {
     id: 'shepard1971',

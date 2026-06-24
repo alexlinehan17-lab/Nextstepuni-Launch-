@@ -469,4 +469,17 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The implied L-theanine "calm focus" mechanism has supportive but mixed RCT evidence and was not being cited; rather than attach a borderline mechanistic claim or a new source for an aside, it was reframed to a non-prescriptive experiential statement.',
     date: '2026-06-24',
   },
+  {
+    id: 'game-day-001',
+    module: 'Game Day: Peak Performance',
+    section: 'Step 3 — The Final Week',
+    action: 'reframed',
+    original:
+      'Cutting your study hours by 40-60% in the final days actually improves your performance because you go in fresh instead of burnt out.',
+    reframedTo:
+      'Cutting your study hours by 40-60% in the final days helps you go in fresh instead of burnt out.',
+    reason:
+      'The athletic taper improving competition performance is established in sport science, but transferring it to a precise "cutting study 40-60% improves exam performance" claim is an extrapolation with no direct study in students. The avoid-burnout rationale is kept; the asserted performance gain was removed so the sentence no longer claims a quantified improvement no source establishes.',
+    date: '2026-06-24',
+  },
 ];

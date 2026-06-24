@@ -68,7 +68,7 @@ follow-up sourcing pass.
 - [x] Reverse Engineering the Exam — `reverse-engineering.md`
 - [x] Exam Hall Strategies — `exam-hall-strategies.md`
 - [x] Exam Crisis Management — `exam-crisis-management.md`
-- [ ] Game Day
+- [x] Game Day — `game-day.md`
 - [ ] Points Optimization
 - [ ] Marking Scheme Decoder
 - [ ] Answer Engineering
