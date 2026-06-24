@@ -55,6 +55,24 @@ cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 - [x] Reframing Progress — `reframing-progress.md`
 - [x] The Implementation Playbook — `implementation-protocol.md`
 
-## Group B — Subject & Exam (45) — phase 2
-Grounded in SEC examiner reports & marking schemes (`/examiner-reports/`), not
-psychology journals. Deferred to a second phase.
+## Group B — Subject & Exam (45)
+Grounded in official Irish State exam / admissions documents (CAO points grid, SEC
+marking schemes & Chief Examiner reports — `/examiner-reports/`), **not** psychology
+journals. The references system supports these via `kind: 'official'` sources
+(`data/references/types.ts`). Note: examinations.ie blocks automated fetches (403), so
+subjects without an in-repo examiner report are flagged in their dossiers for a
+follow-up sourcing pass.
+
+### 🎯 Exam Zone (8)
+- [x] The Points Playbook (Leaving Cert Strategy) — `leaving-cert-strategy.md`
+- [ ] Reverse Engineering the Exam
+- [ ] Exam Hall Strategies
+- [ ] Exam Crisis Management
+- [ ] Game Day
+- [ ] Points Optimization
+- [ ] Marking Scheme Decoder
+- [ ] Answer Engineering
+
+### 📚 Subject-Specific (37) — per-subject SEC reports needed
+Deferred pending subject Chief Examiner reports in `/examiner-reports/` (only Business
+and Maths are currently in-repo).

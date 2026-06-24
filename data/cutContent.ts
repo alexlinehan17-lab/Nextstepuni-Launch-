@@ -430,4 +430,17 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'Episodic future thinking is supported and cited (Peters & Büchel 2010), but that study showed EFT reduces delay discounting via prefrontal-mediotemporal interactions — it did not demonstrate an on-demand "dopamine hit." The specific dopamine-release mechanism was an over-attribution, so the claims were reframed to the supported effect (EFT makes future rewards feel closer and more motivating now) without asserting the unverified neurochemical specifics.',
     date: '2026-06-23',
   },
+  {
+    id: 'leaving-cert-strategy-001',
+    module: 'The Points Playbook (Leaving Cert Strategy)',
+    section: 'Step 5 — Command Word Decoder',
+    action: 'reframed',
+    original:
+      'Misinterpreting this word is the #1 cause of losing marks.',
+    reframedTo:
+      'Misreading what this word is asking for is one of the most common ways students lose marks.',
+    reason:
+      'SEC Chief Examiner reports repeatedly identify "not answering the question asked / misreading the question" as a leading source of lost marks (verified in the in-repo Business 2015 Chief Examiner report), which supports the general claim. But the specific superlative "#1 cause" ranks it above all other error types, which no single report establishes across subjects — so the ranking was softened to "one of the most common" while keeping the cited examiner-report point.',
+    date: '2026-06-24',
+  },
 ];

@@ -60,7 +60,7 @@ export const ReferencesModal: React.FC<{
               </div>
               <div>
                 <h2 className="text-sm font-semibold text-zinc-900 dark:text-white leading-tight">References</h2>
-                <p className="text-[11px] text-zinc-400 dark:text-zinc-500">Peer-reviewed sources behind this module</p>
+                <p className="text-[11px] text-zinc-400 dark:text-zinc-500">Verified sources behind this module</p>
               </div>
             </div>
             <button onClick={onClose} className="p-1.5 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800" aria-label="Close references">
@@ -73,14 +73,25 @@ export const ReferencesModal: React.FC<{
                 <span className="shrink-0 w-5 text-right font-semibold text-zinc-400 dark:text-zinc-500">{i + 1}.</span>
                 <span>
                   {r.authors} ({r.year}). {r.title}. <span className="italic">{r.source}</span>.{' '}
-                  <a
-                    href={`https://doi.org/${r.doi}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline decoration-dotted underline-offset-2 hover:text-[var(--accent-hex)] transition-colors break-all"
-                  >
-                    doi:{r.doi}
-                  </a>
+                  {r.doi ? (
+                    <a
+                      href={`https://doi.org/${r.doi}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-dotted underline-offset-2 hover:text-[var(--accent-hex)] transition-colors break-all"
+                    >
+                      doi:{r.doi}
+                    </a>
+                  ) : r.url ? (
+                    <a
+                      href={r.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-dotted underline-offset-2 hover:text-[var(--accent-hex)] transition-colors break-all"
+                    >
+                      {r.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}
+                    </a>
+                  ) : null}
                 </span>
               </li>
             ))}

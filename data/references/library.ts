@@ -994,4 +994,37 @@ export const REF = {
     source: 'Psychological Science',
     doi: '10.1177/0956797617739704',
   },
+
+  // ─── Official / examiner-authored sources (Group B: exam & subject modules) ──
+  // No DOI; these are the canonical Irish State exam / admissions documents.
+  // SEC reports mirrored in-repo under /examiner-reports/ carry a repoPath and
+  // are directly verifiable; the per-claim record is in the module dossiers.
+  caoPoints: {
+    id: 'caoPoints',
+    authors: 'Central Applications Office',
+    year: 2024,
+    title: 'CAO points calculation grid (common points scale, including the 25-point Higher Level Mathematics bonus and the "best six" rule)',
+    source: 'CAO',
+    kind: 'official',
+    url: 'https://www.cao.ie/index.php?page=points&p=calculation',
+  },
+  secMarkingSchemes: {
+    id: 'secMarkingSchemes',
+    authors: 'State Examinations Commission',
+    year: 2024,
+    title: 'Leaving Certificate marking schemes (component weightings, attempt/partial-credit marking, and subject-specific marking conventions)',
+    source: 'SEC — examinations.ie',
+    kind: 'official',
+    url: 'https://www.examinations.ie/exammaterialarchive/',
+  },
+  secBusiness2015: {
+    id: 'secBusiness2015',
+    authors: 'State Examinations Commission, Chief Examiner',
+    year: 2015,
+    title: 'Leaving Certificate Business — Chief Examiner’s Report (on answering the question asked, developed vs one-word answers, and misreading questions)',
+    source: 'SEC — examinations.ie',
+    kind: 'official',
+    url: 'https://www.examinations.ie/misc-doc/EN-EX-7083525.pdf',
+    repoPath: 'examiner-reports/business/2015-chief-examiner.pdf',
+  },
 } satisfies Record<string, Reference>;
