@@ -11,6 +11,8 @@ import { type ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid, GlossaryGrid, ToolJumpCard } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { MARKING_SCHEME_DECODER_REFERENCE_LIST } from '../data/references/markingSchemeDecoder';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { COLORS } from '../design/tokens';
 
@@ -495,6 +497,7 @@ const MarkingSchemeDecoderModule: React.FC<{ onBack: () => void; progress: Modul
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      references={MARKING_SCHEME_DECODER_REFERENCE_LIST}
       finishButtonText="Decode Every Exam"
     >
       {(activeSection) => (
@@ -502,9 +505,9 @@ const MarkingSchemeDecoderModule: React.FC<{ onBack: () => void; progress: Modul
           {activeSection === 0 && (
             <ReadingSection title="The Examiner's Secret." eyebrow="01 // The Mindset" icon={Eye} theme={theme}>
               {essentials ? (<>
-              <p>Examiners <em>want</em> to give you marks. They use <Highlight description="SEC examiners use positive marking. They scan your answer looking for things that deserve marks, not things to penalise. Every correct point you make earns credit." theme={theme}>positive marking</Highlight>: they reward what is right, ignore what is wrong. The marking scheme is the <Highlight description="The marking scheme tells you exactly what the examiner will look for in your answer. It is the closest thing to an answer key you will ever get before the exam." theme={theme}>answer key published before the exam</Highlight> on examinations.ie. Most students never read one. You should. It tells you exactly what to write.</p>
+              <p>Examiners <em>want</em> to give you marks. They use <Highlight description="SEC examiners use positive marking. They scan your answer looking for things that deserve marks, not things to penalise. Every correct point you make earns credit." theme={theme}>positive marking</Highlight>: they reward what is right, ignore what is wrong.<Cite n={1} /> The marking scheme is the <Highlight description="The marking scheme tells you exactly what the examiner will look for in your answer. It is the closest thing to an answer key you will ever get before the exam." theme={theme}>answer key published before the exam</Highlight> on examinations.ie. Most students never read one. You should. It tells you exactly what to write.</p>
               </>) : (<>
-              <p>Here is something most students never figure out: examiners <em>want</em> to give you marks. The marking scheme is their checklist. They are looking for reasons to <Highlight description="SEC examiners use positive marking. They scan your answer looking for things that deserve marks, not things to penalise. Every correct point you make earns credit." theme={theme}>award marks</Highlight>, not reasons to take them away.</p>
+              <p>Here is something most students never figure out: examiners <em>want</em> to give you marks. The marking scheme is their checklist. They are looking for reasons to <Highlight description="SEC examiners use positive marking. They scan your answer looking for things that deserve marks, not things to penalise. Every correct point you make earns credit." theme={theme}>award marks</Highlight>, not reasons to take them away.<Cite n={1} /></p>
               <p>This changes everything. It means the examiner is on your side. The marking scheme is not a secret document locked away in a vault — it is published on <strong>examinations.ie</strong> every year, for every subject, for every paper. It is literally the <Highlight description="The marking scheme tells you exactly what the examiner will look for in your answer. It is the closest thing to an answer key you will ever get before the exam." theme={theme}>answer key published BEFORE the exam</Highlight>. And yet most students never read one.</p>
               <p>The students who <em>do</em> read marking schemes instantly understand what examiners want. They stop guessing and start giving examiners exactly what they are looking for. That is the edge this module will give you.</p>
               <Highlight description="Examiners use positive marking — they mark what is RIGHT in your answer, not what is wrong. Every relevant point earns credit. A blank answer is the only answer that gets zero." theme={theme}>Positive marking</Highlight> means examiners mark what is right, not what is wrong. If you write three correct points and two incorrect ones, you get marks for the three correct points. The incorrect ones are simply ignored.
@@ -518,7 +521,7 @@ const MarkingSchemeDecoderModule: React.FC<{ onBack: () => void; progress: Modul
           {activeSection === 1 && (
             <ReadingSection title="The Three Types of Marks." eyebrow="02 // The System" icon={Layers} theme={theme}>
               {essentials ? (<>
-              <p>Every mark falls into three types: Attempt (1-3 marks for trying), Method (2-5 marks for showing the right approach), and Answer (2-6 marks for the correct final answer). You can get 15+ marks on a 25-mark Maths question with a wrong final answer if your method is right. Never leave anything blank.</p>
+              <p>Every mark falls into three types: Attempt (1-3 marks for trying), Method (2-5 marks for showing the right approach), and Answer (2-6 marks for the correct final answer). You can get 15+ marks on a 25-mark Maths question with a wrong final answer if your method is right.<Cite n={1} /> Never leave anything blank.</p>
               </>) : (<>
               <p>Every mark in the Leaving Cert falls into one of three categories. Once you understand this system, you will never look at an exam question the same way again.</p>
               </>)}
@@ -530,7 +533,7 @@ const MarkingSchemeDecoderModule: React.FC<{ onBack: () => void; progress: Modul
                 ]}
                 accentNote="Method marks are the most powerful — you can earn the majority of marks on a question without ever reaching the correct answer."
               />
-              <p>Here is the key insight: in a <strong>25-mark Maths question</strong>, you can get <strong>15+ marks with a wrong final answer</strong> if your method is right. The attempt marks and method marks add up fast. This is why leaving a question blank is the worst possible strategy — you are throwing away free marks.</p>
+              <p>Here is the key insight: in a <strong>25-mark Maths question</strong>, you can get <strong>15+ marks with a wrong final answer</strong> if your method is right. The attempt marks and method marks add up fast.<Cite n={1} /> This is why leaving a question blank is the worst possible strategy — you are throwing away free marks.</p>
               <MarkTypeClassifier />
             </ReadingSection>
           )}
@@ -538,9 +541,9 @@ const MarkingSchemeDecoderModule: React.FC<{ onBack: () => void; progress: Modul
           {activeSection === 2 && (
             <ReadingSection title="Reading a Real Marking Scheme." eyebrow="03 // The Decode" icon={FileSearch} theme={theme}>
               {essentials ? (<>
-              <p>Marking schemes use a code. "4M" means 4 method marks. "Or equivalent" means any phrasing works. "Any 3 points" means you choose. "PCLM" means every correct element earns credit. Learn this language and the exam becomes much less mysterious. Try the decoder below.</p>
+              <p>Marking schemes use a code. "4M" means 4 method marks. "Or equivalent" means any phrasing works. "Any 3 points" means you choose. "Partial credit" means each correct step earns its own marks. Learn this language and the exam becomes much less mysterious.<Cite n={1} /> Try the decoder below.</p>
               </>) : (<>
-              <p>SEC marking schemes use specific notation that tells you exactly how marks are allocated. Once you learn to read this language, the exam becomes much less mysterious.</p>
+              <p>SEC marking schemes use specific notation that tells you exactly how marks are allocated.<Cite n={1} /> Once you learn to read this language, the exam becomes much less mysterious.</p>
               </>)}
               <GlossaryGrid
                 items={[
@@ -548,7 +551,7 @@ const MarkingSchemeDecoderModule: React.FC<{ onBack: () => void; progress: Modul
                   { term: "or equivalent", definition: "your phrasing doesn't have to match exactly", explanation: "The examiner accepts any wording that demonstrates the same understanding. This appears hundreds of times across marking schemes — examiners are far more flexible than students realise.", highlight: true },
                   { term: "any 3 points", definition: "literally pick any 3 valid points", explanation: "You do not need the 'best' ones or the ones the teacher highlighted. Any 3 valid points earn full marks." },
                   { term: "fully correct — 10; partially correct — 5", definition: "half-right gets half-marks", explanation: "This is the exam's built-in safety net. A partially correct answer is never zero." },
-                  { term: "PCLM", definition: "Partial Credit Level Marks", explanation: "You get marks for each correct step in your answer independently. Every correct element earns its own credit, regardless of the others." },
+                  { term: "partial credit", definition: "on-the-right-track work earns part-marks", explanation: "SEC schemes (especially Maths) award graduated partial credit — low, mid, or high — for work that uses the right approach, so each correct step earns its own credit regardless of where you end up." },
                 ]}
               />
               <p>The key insight here is that "or equivalent" changes everything. You do not need the textbook phrasing. You need to show understanding in your own words.</p>
@@ -559,9 +562,9 @@ const MarkingSchemeDecoderModule: React.FC<{ onBack: () => void; progress: Modul
           {activeSection === 3 && (
             <ReadingSection title="The Keyword Effect." eyebrow="04 // The Language" icon={Key} theme={theme}>
               {essentials ? (<>
-              <p>Use the exact words from the syllabus. "Light intensity is a <Highlight description="Trigger words are the specific terms from the syllabus and textbook headings that examiners are trained to look for. Using them signals that you have precise knowledge, not just a vague idea." theme={theme}>limiting factor</Highlight>" earns more marks than "the plant needs light." These <Highlight description="When an examiner sees the correct technical term in your answer, it acts like a trigger — they know immediately that you understand the concept and they can award the marks. Vague language makes them hesitate." theme={theme}>trigger words</Highlight> tell the examiner you know the material. When revising, note the exact words in textbook headings and definitions. Use those words in your answers.</p>
+              <p>Use the exact words from the syllabus. "Light intensity is a <Highlight description="Trigger words are the specific terms from the syllabus and textbook headings that examiners are trained to look for. Using them signals that you have precise knowledge, not just a vague idea." theme={theme}>limiting factor</Highlight>" earns more marks than "the plant needs light." These <Highlight description="When an examiner sees the correct technical term in your answer, it acts like a trigger — they know immediately that you understand the concept and they can award the marks. Vague language makes them hesitate." theme={theme}>trigger words</Highlight> tell the examiner you know the material.<Cite n={1} /> When revising, note the exact words in textbook headings and definitions. Use those words in your answers.</p>
               </>) : (<>
-              <p>Examiners scan for specific terminology. A student who writes "the plant needs light" gets fewer marks than one who writes "light intensity is a <Highlight description="Trigger words are the specific terms from the syllabus and textbook headings that examiners are trained to look for. Using them signals that you have precise knowledge, not just a vague idea." theme={theme}>limiting factor</Highlight> in photosynthesis." Same knowledge, completely different marks.</p>
+              <p>Examiners scan for specific terminology. A student who writes "the plant needs light" gets fewer marks than one who writes "light intensity is a <Highlight description="Trigger words are the specific terms from the syllabus and textbook headings that examiners are trained to look for. Using them signals that you have precise knowledge, not just a vague idea." theme={theme}>limiting factor</Highlight> in photosynthesis." Same knowledge, completely different marks.<Cite n={1} /></p>
               <p>This is not about being fancy or using big words for the sake of it. It is about using the <em>exact words</em> from the syllabus and textbook headings. These are the words examiners are trained to look for. They are <Highlight description="When an examiner sees the correct technical term in your answer, it acts like a trigger — they know immediately that you understand the concept and they can award the marks. Vague language makes them hesitate." theme={theme}>trigger words</Highlight> that activate marks.</p>
               <p>Think of it this way: the examiner is reading 500 answers to the same question. They are scanning quickly for evidence that you know the material. When they see the right keyword, it is like a green light — they can immediately award the mark. When they see vague language, they have to slow down and decide whether you really understand it. Make the examiner's job easy and they will make your marks higher.</p>
               <p>The trick is simple: when you are revising, pay attention to the <strong>exact words</strong> used in your textbook headings, diagrams, and definitions. These are the words the examiner is looking for.</p>
@@ -573,11 +576,11 @@ const MarkingSchemeDecoderModule: React.FC<{ onBack: () => void; progress: Modul
           {activeSection === 4 && (
             <ReadingSection title="Attempt Marks: The Free Points." eyebrow="05 // The Safety Net" icon={Shield} theme={theme}>
               {essentials ? (<>
-              <p>Never leave a question blank. Blank = 0 marks always. <Highlight description="Even the most basic attempt at answering — writing a definition, drawing a relevant diagram, restating part of the question — earns attempt marks. These are free points the examiner WANTS to give you." theme={theme}>Any relevant attempt</Highlight> = 1-4 marks. Write the formula, define a key term, or draw a diagram. Leaving 3 questions blank across your exams could cost you 10-15 CAO points. That could be the difference for your course.</p>
+              <p>Never leave a question blank. Blank = 0 marks always. <Highlight description="Even the most basic attempt at answering — writing a definition, drawing a relevant diagram, restating part of the question — earns attempt marks. These are free points the examiner WANTS to give you." theme={theme}>Any relevant attempt</Highlight> = 1-4 marks.<Cite n={1} /> Write the formula, define a key term, or draw a diagram. Leaving 3 questions blank across your exams could cost you 10-15 CAO points.<Cite n={2} /> That could be the difference for your course.</p>
               </>) : (<>
               <p>The most important rule in the Leaving Cert: <strong>NEVER leave a question blank.</strong> Here is why:</p>
-              <p>A blank answer = 0 marks, always. There is no exception. But <Highlight description="Even the most basic attempt at answering — writing a definition, drawing a relevant diagram, restating part of the question — earns attempt marks. These are free points the examiner WANTS to give you." theme={theme}>any relevant attempt</Highlight> = 1-4 marks minimum. It does not matter if your answer is incomplete, partially wrong, or just a starting point. If it shows <em>any</em> relevant knowledge, the examiner will find marks to give you.</p>
-              <p>Consider the maths: in a 6-subject, 2-paper exam, leaving just 3 questions blank could cost you <strong>10-15 CAO points</strong>. That is the difference between getting into your course and missing out. Those "impossible" questions you were going to skip? They are worth attempting.</p>
+              <p>A blank answer = 0 marks, always. There is no exception. But <Highlight description="Even the most basic attempt at answering — writing a definition, drawing a relevant diagram, restating part of the question — earns attempt marks. These are free points the examiner WANTS to give you." theme={theme}>any relevant attempt</Highlight> = 1-4 marks minimum.<Cite n={1} /> It does not matter if your answer is incomplete, partially wrong, or just a starting point. If it shows <em>any</em> relevant knowledge, the examiner will find marks to give you.</p>
+              <p>Consider the maths: in a 6-subject, 2-paper exam, leaving just 3 questions blank could cost you <strong>10-15 CAO points</strong>.<Cite n={2} /> That is the difference between getting into your course and missing out. Those "impossible" questions you were going to skip? They are worth attempting.</p>
               <p>Even writing the <strong>formula you would have used</strong> earns method marks. Even <strong>defining a key term</strong> from the question earns attempt marks. Even <strong>drawing a labelled diagram</strong> related to the topic earns marks. The bar for attempt marks is incredibly low — the examiner just needs to see that you engaged with the question.</p>
               </>)}
               <PersonalStory name="Darragh, Leaving Cert 2023, Limerick">
@@ -592,10 +595,10 @@ const MarkingSchemeDecoderModule: React.FC<{ onBack: () => void; progress: Modul
           {activeSection === 5 && (
             <ReadingSection title="The Presentation Protocol." eyebrow="06 // The Polish" icon={PenTool} theme={theme}>
               {essentials ? (<>
-              <p>Presentation earns marks. Label your diagrams clearly. Number your steps in Maths. Use headings in essays. Underline key terms. Cross out neatly, never scribble. The rule: <Highlight description="Good presentation is not about neatness for its own sake. It is about making it easy for the examiner to see your correct points and award marks. If they cannot find it, they cannot mark it." theme={theme}>if the examiner cannot find it, they cannot mark it</Highlight>. Make their job easy and your marks go up.</p>
+              <p>Presentation earns marks. Label your diagrams clearly. Number your steps in Maths. Use headings in essays. Underline key terms. Cross out neatly, never scribble. The rule: <Highlight description="Good presentation is not about neatness for its own sake. It is about making it easy for the examiner to see your correct points and award marks. If they cannot find it, they cannot mark it." theme={theme}>if the examiner cannot find it, they cannot mark it</Highlight>.<Cite n={1} /> Make their job easy and your marks go up.</p>
               </>) : (<>
               <p>Two students with identical knowledge can get different marks based purely on how they present their answers. Presentation is not about having neat handwriting — it is about making it <em>easy for the examiner to find your marks</em>.</p>
-              <p><strong>Diagrams with labels.</strong> Examiners award marks per label. A diagram of the heart with 6 correct labels earns 6 marks, even if you do not write a single sentence of explanation. Always label diagrams clearly.</p>
+              <p><strong>Diagrams with labels.</strong> Examiners award marks per label.<Cite n={1} /> A diagram of the heart with 6 correct labels earns 6 marks, even if you do not write a single sentence of explanation. Always label diagrams clearly.</p>
               <p><strong>Numbered steps in Maths and Science.</strong> Each step can earn method marks independently. If you write a wall of calculations with no clear steps, the examiner might miss marks you deserve. Number your steps: Step 1, Step 2, Step 3.</p>
               <p><strong>Headings and structure in essays.</strong> Examiners reading their 300th essay that day will find your points faster if you use clear paragraph breaks and topic sentences. Do not make them hunt for your argument.</p>
               <p><strong>Underlining key terms.</strong> This signals to the examiner that you know the terminology. When they see an underlined technical term, it catches their eye and helps them award marks quickly.</p>

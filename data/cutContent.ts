@@ -495,4 +495,17 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The verifiable SEC/Department of Education policy is the gradual unwinding of the post-2020 grade adjustments toward pre-2020 grade profiles; the original "marking standards are tightening / generous adjustments from 2022-2024" framing was tightened to that documented policy (cited to SEC examination statistics) rather than an unsourced claim about marker behaviour.',
     date: '2026-06-24',
   },
+  {
+    id: 'marking-scheme-decoder-001',
+    module: 'The Marking Scheme Decoder',
+    section: 'Step 3 — Reading a Real Marking Scheme',
+    action: 'reframed',
+    original:
+      'PCLM — Partial Credit Level Marks. You get marks for each correct step in your answer independently.',
+    reframedTo:
+      'partial credit — on-the-right-track work earns part-marks. SEC schemes (especially Maths) award graduated partial credit (low, mid, or high) for the right approach, so each correct step earns its own credit.',
+    reason:
+      'SEC Mathematics marking schemes award graduated partial credit via "scales" with low/mid/high partial-credit descriptors; they do not use the acronym "PCLM (Partial Credit Level Marks)". The underlying concept (credit for correct steps even with a wrong final answer) is genuine and verifiable in the schemes, so the glossary item was reframed to the documented partial-credit mechanism and the coined acronym dropped.',
+    date: '2026-06-24',
+  },
 ];
