@@ -69,7 +69,7 @@ follow-up sourcing pass.
 - [x] Exam Hall Strategies — `exam-hall-strategies.md`
 - [x] Exam Crisis Management — `exam-crisis-management.md`
 - [x] Game Day — `game-day.md`
-- [ ] Points Optimization
+- [x] Points Optimization — `points-optimization.md` (H1-rate figures labelled approximate; SEC stats re-verification pending site access)
 - [ ] Marking Scheme Decoder
 - [ ] Answer Engineering
 

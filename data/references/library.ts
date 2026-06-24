@@ -1100,6 +1100,15 @@ export const REF = {
     kind: 'official',
     url: 'https://www.examinations.ie/exammaterialarchive/',
   },
+  secExamStatistics: {
+    id: 'secExamStatistics',
+    authors: 'State Examinations Commission',
+    year: 2024,
+    title: 'Leaving Certificate examination statistics (annual grade distributions by subject and level, including H1 rates)',
+    source: 'SEC — examinations.ie',
+    kind: 'official',
+    url: 'https://www.examinations.ie/statistics/',
+  },
   secBusiness2015: {
     id: 'secBusiness2015',
     authors: 'State Examinations Commission, Chief Examiner',

@@ -482,4 +482,17 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The athletic taper improving competition performance is established in sport science, but transferring it to a precise "cutting study 40-60% improves exam performance" claim is an extrapolation with no direct study in students. The avoid-burnout rationale is kept; the asserted performance gain was removed so the sentence no longer claims a quantified improvement no source establishes.',
     date: '2026-06-24',
   },
+  {
+    id: 'points-optimization-001',
+    module: 'The 625 Blueprint (Points Optimization)',
+    section: 'Step 7 — Your 625 Blueprint',
+    action: 'reframed',
+    original:
+      'marking standards are tightening. The generous adjustments from 2022-2024 are being phased out. You should prepare for tougher marking.',
+    reframedTo:
+      'the post-pandemic grade adjustments are being phased out, so the very high recent H1 rates are expected to ease back toward pre-2020 levels. It is sensible to prepare for tougher marking.',
+    reason:
+      'The verifiable SEC/Department of Education policy is the gradual unwinding of the post-2020 grade adjustments toward pre-2020 grade profiles; the original "marking standards are tightening / generous adjustments from 2022-2024" framing was tightened to that documented policy (cited to SEC examination statistics) rather than an unsourced claim about marker behaviour.',
+    date: '2026-06-24',
+  },
 ];

@@ -14,6 +14,8 @@ import { type ModuleProgress } from '../types';
 import { redTheme } from '../moduleThemes';
 import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ToolJumpCard } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { POINTS_OPTIMIZATION_REFERENCE_LIST } from '../data/references/pointsOptimization';
 import { useModuleResponses } from '../hooks/useModuleResponses';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
@@ -265,6 +267,7 @@ const H1RateDashboard = () => {
           Show all {SUBJECTS_DATA.length} subjects <ChevronDown size={14} />
         </button>
       )}
+      <p className="text-[10px] text-zinc-400 mt-4 text-center leading-relaxed">Approximate H1 rates, indicative of recent SEC Leaving Certificate (Higher Level) grade distributions. Exact figures vary year to year — check the current SEC examination statistics for the latest.</p>
     </div>
   );
 };
@@ -656,6 +659,7 @@ const PointsOptimizationModule: React.FC<{
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      references={POINTS_OPTIMIZATION_REFERENCE_LIST}
       finishButtonText="Maximise Your Points"
     >
       {(activeSection) => (
@@ -664,7 +668,7 @@ const PointsOptimizationModule: React.FC<{
             <ReadingSection title="The 12-Point Cliff." eyebrow="Step 1" icon={TrendingDown} theme={theme}>
               {essentials ? (
                 <>
-                  <p>The most important number: <Highlight description="H1 to H2 costs you 12 points — the steepest drop in the system." theme={theme}>12</Highlight>. That is how many points you lose dropping from H1 to H2. The difference between 89% and 90% is 12 CAO points. No other boundary hits this hard. If you are chasing 625, you cannot afford a single H2 in your best six. Aim for 93-95% in practice as a buffer.</p>
+                  <p>The most important number: <Highlight description="H1 to H2 costs you 12 points — the steepest drop in the system." theme={theme}>12</Highlight>. That is how many points you lose dropping from H1 to H2. The difference between 89% and 90% is 12 CAO points.<Cite n={1} /> No other boundary hits this hard. If you are chasing 625, you cannot afford a single H2 in your best six. Aim for 93-95% in practice as a buffer.</p>
                   <PersonalStory name="Alex" role="Founder, NextStepUni">
                     <p>I went from failing my Junior Cert to nearly 600 points in the Leaving Cert. If someone had shown me this data — how the points really work, the maths bonus, the H1 rates — when I was in 4th year, I would have saved months of wasted effort. The system has rules, and once you understand them, you stop feeling like the game is rigged against you and start playing it smart. That's what this module is for.</p>
                   </PersonalStory>
@@ -672,7 +676,7 @@ const PointsOptimizationModule: React.FC<{
               ) : (
                 <>
                   <p>Here is the single most important number in the Leaving Cert: <Highlight description="Going from an H1 (100 points) to an H2 (88 points) costs you 12 points — that's the biggest single drop between any two passing grades." theme={theme}>12</Highlight>. That's how many points you lose the moment you drop from an H1 to an H2. It's the steepest cliff in the entire grading system.</p>
-                  <p>Think about what that means. The difference between 89% and 90% in a single exam is not 1 point — it's <strong>12 points</strong> on the CAO scale. No other grade boundary hits this hard. The drop from H2 to H3 is 11 points. From H3 to H4, it's also 11. But H1 to H2? That 12-point cliff means that if you're chasing 625, there's almost no room for error. You can't afford a single H2 in your best six subjects.</p>
+                  <p>Think about what that means. The difference between 89% and 90% in a single exam is not 1 point — it's <strong>12 points</strong> on the CAO scale. No other grade boundary hits this hard. The drop from H2 to H3 is 11 points. From H3 to H4, it's also 11. But H1 to H2? That 12-point cliff means that if you're chasing 625, there's almost no room for error.<Cite n={1} /> You can't afford a single H2 in your best six subjects.</p>
                   <p>This isn't about being a perfectionist — it's about understanding how the system actually works. The grading system was redesigned in 2017, but at the very top, it accidentally created the most punishing boundary on the entire scale. A student scoring 89% and a student scoring 90% are separated by a single percentage point — but <strong>12 CAO points</strong>.</p>
                   <PersonalStory name="Alex" role="Founder, NextStepUni">
                     <p>I went from failing my Junior Cert to nearly 600 points in the Leaving Cert. If someone had shown me this data — how the points really work, the maths bonus, the H1 rates — when I was in 4th year, I would have saved months of wasted effort. The system has rules, and once you understand them, you stop feeling like the game is rigged against you and start playing it smart. That's what this module is for.</p>
@@ -690,11 +694,11 @@ const PointsOptimizationModule: React.FC<{
           {activeSection === 1 && (
             <ReadingSection title="The Maths Multiplier." eyebrow="Step 2" icon={Calculator} theme={theme}>
               {essentials ? (
-                <p>HL Maths has a <Highlight description="25 extra CAO points for HL Maths, H6 or above." theme={theme}>25-point bonus</Highlight>. An H1 gives you 125 points. Even an H6 (barely a pass) gives you 71 points — nearly the same as an H3 in any other subject. Every hour in HL Maths is worth more points than any other subject. If you are chasing 625, HL Maths is the foundation.</p>
+                <p>HL Maths has a <Highlight description="25 extra CAO points for HL Maths, H6 or above." theme={theme}>25-point bonus</Highlight>. An H1 gives you 125 points. Even an H6 (barely a pass) gives you 71 points — nearly the same as an H3 in any other subject.<Cite n={1} /> Every hour in HL Maths is worth more points than any other subject. If you are chasing 625, HL Maths is the foundation.</p>
               ) : (
                 <>
                   <p>Higher Level Maths has a secret weapon that no other subject has: the <Highlight description="You get an extra 25 CAO points just for doing Higher Level Maths, as long as you get at least an H6. No other subject gives you this." theme={theme}>25-point bonus</Highlight>. This single rule makes HL Maths the most valuable subject on the Leaving Cert — by a long way.</p>
-                  <p>Let's do the maths on the Maths. An H1 in Higher Level Maths gives you <strong>125 points</strong> (100 + 25 bonus). That's 25% more than the max in any other subject. But the bonus isn't just for top students. An H6 in HL Maths (that's 40-49%, barely a pass) gives you 46 + 25 = <strong>71 points</strong>. That's nearly the same as an H3 (77 points) in any other subject — where you'd need 70-79% to earn a similar reward.</p>
+                  <p>Let's do the maths on the Maths. An H1 in Higher Level Maths gives you <strong>125 points</strong> (100 + 25 bonus). That's 25% more than the max in any other subject. But the bonus isn't just for top students. An H6 in HL Maths (that's 40-49%, barely a pass) gives you 46 + 25 = <strong>71 points</strong>. That's nearly the same as an H3 (77 points) in any other subject — where you'd need 70-79% to earn a similar reward.<Cite n={1} /></p>
                   <p>The bottom line: <strong>every hour you put into HL Maths is worth more points than the same hour in any other subject</strong>. Even if Maths is your weakest subject, the bonus points give you a cushion that makes the extra effort worth it. If you're chasing 625, HL Maths isn't optional — it's the foundation of the whole plan.</p>
                 </>
               )}
@@ -708,10 +712,10 @@ const PointsOptimizationModule: React.FC<{
           {activeSection === 2 && (
             <ReadingSection title="H1 Probability Map." eyebrow="Step 3" icon={BarChart3} theme={theme}>
               {essentials ? (
-                <p>Your <Highlight description="H1 rates vary hugely by subject." theme={theme}>chances of getting an H1</Highlight> depend on the subject. Applied Maths has rates above 25%. Physics and Chemistry sit around 18-22%. English is only 7-11%. Use this data to decide where you spend your study time. Protect subjects with high H1 rates. Put extra effort into exam technique for subjects where H1s are rare.</p>
+                <p>Your <Highlight description="H1 rates vary hugely by subject." theme={theme}>chances of getting an H1</Highlight> depend on the subject. Applied Maths has rates above 25%. Physics and Chemistry sit around 18-22%. English is only 7-11%.<Cite n={2} /> Use this data to decide where you spend your study time. Protect subjects with high H1 rates. Put extra effort into exam technique for subjects where H1s are rare.</p>
               ) : (
                 <>
-                  <p>Not all H1s are created equal. The SEC's own data shows huge differences in the percentage of students who get H1s across different subjects. This isn't necessarily because some subjects are "easier" — it's because your <Highlight description="Your chances of getting an H1 depend on the subject itself — how it's marked, how big the course is, and who else takes it. Some subjects just have way higher H1 rates than others." theme={theme}>chances of getting an H1</Highlight> depend on the subject, how it's marked, and who else takes it.</p>
+                  <p>Not all H1s are created equal. The SEC's own published data shows huge differences in the percentage of students who get H1s across different subjects.<Cite n={2} /> The figures here are approximate, indicative of recent years' distributions. This isn't necessarily because some subjects are "easier" — it's because your <Highlight description="Your chances of getting an H1 depend on the subject itself — how it's marked, how big the course is, and who else takes it. Some subjects just have way higher H1 rates than others." theme={theme}>chances of getting an H1</Highlight> depend on the subject, how it's marked, and who else takes it.</p>
                   <p>Applied Maths consistently sees H1 rates above 25%. The course is focused, the exam is pure problem-solving, and the marking is black and white — you either got it right or you didn't. The students who pick it tend to be strong at maths already, which pushes the rates up — but for anyone decent at maths, it's one of the easiest H1s to get.</p>
                   <p>Physics and Chemistry sit around 18-22%. These subjects reward precision: exact definitions, correct formulae, and mathematical accuracy. The marking schemes are strict. Meanwhile, English — which everyone has to do — historically sits at just 3-5% for H1s (rising to 7-11% recently with grade adjustments). Geography can be as low as 3-4%. When marking is more subjective, your grade depends partly on which examiner reads your paper.</p>
                   <p>This data should shape both your subject choices and, just as importantly, <strong>where you spend your study time</strong>. If you're already taking a subject with a high H1 rate, protect that advantage. If you're in a subject where H1s are rare, you'll need to put extra time into nailing the exam technique to make up for the tougher marking.</p>
@@ -763,12 +767,12 @@ const PointsOptimizationModule: React.FC<{
           {activeSection === 5 && (
             <ReadingSection title="The Surplus Rule." eyebrow="Step 6" icon={Layers} theme={theme}>
               {essentials ? (
-                <p>Marking schemes often list <Highlight description="Write more valid points than needed as a safety net." theme={theme}>more valid answers than required</Highlight>. Write a few extra points as insurance. If two get rejected, you still hit full marks. This works in Biology, Geography, History, and Business. Write the minimum plus three extra. Use the calculator below.</p>
+                <p>Marking schemes often list <Highlight description="Write more valid points than needed as a safety net." theme={theme}>more valid answers than required</Highlight>. Write a few extra points as insurance. If two get rejected, you still hit full marks. This works in Biology, Geography, History, and Business.<Cite n={3} /> Write the minimum plus three extra. Use the calculator below.</p>
               ) : (
                 <>
                   <p>Here's something most students don't know: in many subjects, the marking scheme has <Highlight description="The marking scheme often lists way more valid points than the question actually needs. So you can write extra points as a safety net — if a couple get rejected, the examiner keeps reading until you hit full marks." theme={theme}>more valid answers than the question requires</Highlight>. This is the Surplus Rule, and it's the closest thing to a guaranteed-marks trick in the Leaving Cert.</p>
                   <p>Here's how it works. A 30-mark question in Biology might need 10 Significant Relevant Points (SRPs) at 3 marks each. But the marking scheme might list 20 valid points. If you write exactly 10 and the examiner rejects 2 as incomplete or off-topic, you score 24/30. But if you write 13 points, you've built in a safety net. The examiner reads until they've given you 30 marks, then stops. There's no penalty for writing extra correct information.</p>
-                  <p>This works in Biology, Geography, History, Business, and loads of other subjects that use SRP-based marking. Students who get H1s don't just write the minimum — they write the minimum plus a few extra points as insurance. The exact number depends on the question.</p>
+                  <p>This works in Biology, Geography, History, Business, and loads of other subjects that use SRP-based marking.<Cite n={3} /> Students who get H1s don't just write the minimum — they write the minimum plus a few extra points as insurance. The exact number depends on the question.</p>
                 </>
               )}
               <SurplusCalculator />
@@ -795,7 +799,7 @@ const PointsOptimizationModule: React.FC<{
                   <PersonalStory name="Ciara" role="6th Year, Galway">
                     <p>I was doing seven subjects and putting equal time into all of them. When I actually sat down and looked at the H1 rates and how objective each subject was, I realised I was spending hours on English essays that might get me 2 extra points, while ignoring Applied Maths where the same effort could have got me 12. Once I shifted my study time around, my mock results jumped by nearly 40 points.</p>
                   </PersonalStory>
-                  <p>One more thing: marking standards are tightening. The generous adjustments from 2022-2024 are being phased out. You should prepare for tougher marking. That means aiming for 93-95% in practice to safely clear the 90% H1 threshold on exam day. The buffer is your safety net.</p>
+                  <p>One more thing: the post-pandemic grade adjustments are being phased out, so the very high recent H1 rates are expected to ease back toward pre-2020 levels.<Cite n={2} /> It is sensible to prepare for tougher marking — aiming for 93-95% in practice to safely clear the 90% H1 threshold on exam day. The buffer is your safety net.</p>
                 </>
               )}
               <PortfolioOptimizer savedPortfolio={responses['portfolio']} onSave={(p) => saveResponse('portfolio', p)} />
