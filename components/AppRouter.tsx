@@ -48,6 +48,7 @@ const TrainingHub = lazy(() => import('./TrainingHub'));
 const StudySessionView = lazy(() => import('./study/StudySessionView'));
 const InsightsView = lazy(() => import('./InsightsView'));
 const CutContentPage = lazy(() => import('./CutContentPage'));
+const AccreditationPage = lazy(() => import('./AccreditationPage'));
 
 /* ── Module Error Boundary ── */
 
@@ -229,6 +230,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   };
   const handleGoToInsights = () => { nav.navigateToInsights(); };
   const handleGoToCutContent = () => { nav.navigateToCutContent(); };
+  const handleGoToAccreditation = () => { nav.navigateToAccreditation(); };
 
   // Firebase password-reset action URL — handled before any auth gating so the
   // user can land here whether or not they're signed in. Triggered by either
@@ -428,6 +430,14 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     );
   }
 
+  if (viewState === 'accreditation') {
+    return (
+      <Suspense fallback={<LoadingSpinner />}>
+        <AccreditationPage onBack={handleBackToTree} />
+      </Suspense>
+    );
+  }
+
   if (viewState === 'my-journey') {
     return (
       <Suspense fallback={<LoadingSpinner />}>
@@ -459,6 +469,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       onGoToInsights={handleGoToInsights}
       onGoToTrainingHub={handleGoToGamificationHub}
       onGoToCutContent={handleGoToCutContent}
+      onGoToAccreditation={handleGoToAccreditation}
       allCourses={studentCourses}
       onSelectModule={handleSelectModule}
       categoryTitles={categoryTitles}

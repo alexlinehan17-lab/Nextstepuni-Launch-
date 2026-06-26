@@ -41,6 +41,7 @@ interface KnowledgeTreeProps {
   onGoToInsights?: () => void;
   onGoToTrainingHub?: () => void;
   onGoToCutContent?: () => void;
+  onGoToAccreditation?: () => void;
   onSelectModule: (moduleId: string) => void;
   allCourses: CourseData[];
   categoryTitles: Record<CategoryType, string>;
@@ -68,7 +69,7 @@ interface KnowledgeTreeProps {
 }
 
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, onGoToCutContent, allCourses, onSelectModule: _onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, onGoToCutContent, onGoToAccreditation, allCourses, onSelectModule: _onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [feedbackQrOpen, setFeedbackQrOpen] = useState(false);
 
@@ -76,6 +77,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
     { icon: Home, label: 'Home', onClick: () => {}, active: true },
     { icon: Dumbbell, label: 'Training Hub', onClick: onGoToTrainingHub ?? (() => {}), active: false },
     { icon: Scissors, label: 'Cut Content', onClick: onGoToCutContent ?? (() => {}), active: false },
+    { icon: Award, label: 'Accreditation', onClick: onGoToAccreditation ?? (() => {}), active: false },
     { icon: Mountain, label: 'My Journey', onClick: onGoToJourney, active: false },
     { icon: Timer, label: 'Study Session', onClick: onGoToStudy ?? (() => {}), active: false },
     { icon: BarChart3, label: 'Dashboard', onClick: onGoToDashboard, active: false },
